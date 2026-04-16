@@ -3,6 +3,7 @@ import { useSettingsStore } from '../stores/settingsStore';
 import { exportAllData, importAllData, downloadJson } from '../db/backup';
 import DeckExport from '../components/common/DeckExport';
 import DeckImport from '../components/common/DeckImport';
+import NotificationSettings from '../components/settings/NotificationSettings';
 
 export default function SettingsPage() {
   const { weeklyGoalMinutes, setWeeklyGoal, activeLanguages, addLanguage, removeLanguage, showStressMarks, toggleStressMarks, darkMode, toggleDarkMode, fontSize, setFontSize, ttsRate, setTtsRate, reviewBatchSize, setReviewBatchSize } =
@@ -60,6 +61,9 @@ export default function SettingsPage() {
           </button>
         </div>
       </section>
+
+      {/* Notifications */}
+      <NotificationSettings />
 
       {/* Weekly Goal */}
       <section className="bg-white dark:bg-gray-800 rounded-2xl shadow p-4">

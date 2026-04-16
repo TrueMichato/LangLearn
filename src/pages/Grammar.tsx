@@ -3,17 +3,13 @@ import { useSettingsStore } from '../stores/settingsStore';
 import LessonView from '../components/grammar/LessonView';
 import { getLessonProgress } from '../db/lessons';
 import type { LessonProgress } from '../db/schema';
+import { getLanguageLabel } from '../lib/languages';
 
 interface LessonMeta {
   id: string;
   title: string;
   order: number;
 }
-
-const LANG_LABELS: Record<string, string> = {
-  ja: '🇯🇵 Japanese',
-  ru: '🇷🇺 Russian',
-};
 
 export default function GrammarPage() {
   const activeLanguages = useSettingsStore((s) => s.activeLanguages);
@@ -78,7 +74,7 @@ export default function GrammarPage() {
                 : 'bg-gray-200 dark:bg-gray-700 text-gray-600 dark:text-gray-300 hover:bg-gray-300 dark:hover:bg-gray-600'
             }`}
           >
-            {LANG_LABELS[lang] ?? lang}
+            {getLanguageLabel(lang)}
           </button>
         ))}
       </div>

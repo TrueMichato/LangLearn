@@ -3,11 +3,13 @@ import BottomNav from './BottomNav';
 import StudyTimer from '../common/StudyTimer';
 import { useDarkMode } from '../../hooks/useDarkMode';
 import { useFontSize } from '../../hooks/useFontSize';
+import { useNotificationScheduler } from '../../hooks/useNotificationScheduler';
 import { useSettingsStore } from '../../stores/settingsStore';
 
 export default function Shell() {
   const darkMode = useDarkMode();
   useFontSize();
+  useNotificationScheduler();
   const toggleDarkMode = useSettingsStore((s) => s.toggleDarkMode);
 
   return (

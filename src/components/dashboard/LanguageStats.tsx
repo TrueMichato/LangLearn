@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { db } from '../../db/schema';
 import type { Review } from '../../db/schema';
 import { getWordsByLanguage } from '../../db/words';
+import { getLanguageLabel } from '../../lib/languages';
 
 interface LangStat {
   total: number;
@@ -14,10 +15,6 @@ interface LangStat {
 interface LanguageStatsProps {
   languages: string[];
 }
-
-const LANG_LABELS: Record<string, string> = {
-  ja: '🇯🇵 Japanese',
-  ru: '🇷🇺 Russian',
   en: '🇬🇧 English',
   es: '🇪🇸 Spanish',
   fr: '🇫🇷 French',
