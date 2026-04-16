@@ -7,6 +7,8 @@ interface LessonViewProps {
   lang: string;
   lessonId: string;
   onBack: () => void;
+  lessons: Array<{ id: string; title: string; order: number }>;
+  onNavigate: (lessonId: string) => void;
 }
 
 interface QuizData {
@@ -18,7 +20,7 @@ interface QuizData {
 
 const QUIZ_REGEX = /<!--\s*quiz:(.*?)\s*-->/g;
 
-export default function LessonView({ lang, lessonId, onBack }: LessonViewProps) {
+export default function LessonView({ lang, lessonId, onBack, lessons, onNavigate }: LessonViewProps) {
   const [segments, setSegments] = useState<Array<{ type: 'md'; content: string } | { type: 'quiz'; data: QuizData }>>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(false);
@@ -145,6 +147,36 @@ export default function LessonView({ lang, lessonId, onBack }: LessonViewProps) 
           </p>
         </div>
       )}
+      {(() => {
+        const currentIndex = lessons.findIndex((l) => l.id === lessonId);
+        const prevLesson = currentIndex > 0 ? lessons[currentIndex - 1] : null;
+        const nextLesson = currentIndex < lessons.length - 1 ? lessons[currentIndex + 1] : null;
+        return (
+          <div className="flex justify-between items-center mt-8 pt-4 border-t border-gray-200 dark:border-gray-700">
+            {prevLesson ? (
+              <button
+                onClick={() => onNavigate(prevLesson.id)}
+                className="text-indigo-600 dark:text-indigo-400 text-sm font-medium hover:underline truncate max-w-[40%] text-left"
+              >
+                ← {prevLesson.title}
+              </button>
+            ) : (
+              <div />
+            )}
+            {nextLesson ? (
+              <button
+                onClick={() => onNavigate(nextLesson.id)}
+                disabled={!completed}
+                className={`text-sm font-medium truncate max-w-[40%] text-right ${completed ? 'text-indigo-600 dark:text-indigo-400 hover:underline' : 'text-gray-300 dark:text-gray-600 cursor-not-allowed'}`}
+              >
+                {nextLesson.title} →
+              </button>
+            ) : (
+              <div />
+            )}
+          </div>
+        );
+      })()}
     </div>
   );
 }

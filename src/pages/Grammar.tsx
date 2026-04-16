@@ -53,6 +53,8 @@ export default function GrammarPage() {
         lang={selectedLang}
         lessonId={activeLessonId}
         onBack={() => setActiveLessonId(null)}
+        lessons={lessons}
+        onNavigate={(id) => setActiveLessonId(id)}
       />
     );
   }
@@ -114,11 +116,14 @@ export default function GrammarPage() {
           <div className="space-y-3">
             {lessons.map((lesson) => {
               const lp = progress.get(lesson.id);
+              const prevLesson = lessons.find((l) => l.order === lesson.order - 1);
+              const isLocked = lesson.order > 1 && !progress.get(prevLesson?.id ?? '')?.completed;
               return (
                 <button
                   key={lesson.id}
-                  onClick={() => setActiveLessonId(lesson.id)}
-                  className="w-full text-left bg-white dark:bg-gray-800 rounded-2xl shadow p-4 hover:shadow-md transition-shadow"
+                  disabled={isLocked}
+                  onClick={() => !isLocked && setActiveLessonId(lesson.id)}
+                  className={`w-full text-left bg-white dark:bg-gray-800 rounded-2xl shadow p-4 transition-shadow ${isLocked ? 'opacity-50 cursor-not-allowed' : 'hover:shadow-md'}`}
                 >
                   <div className="flex items-center justify-between">
                     <div>
@@ -128,7 +133,9 @@ export default function GrammarPage() {
                       </p>
                     </div>
                     <div className="flex items-center gap-2">
-                      {lp?.completed ? (
+                      {isLocked ? (
+                        <span className="text-lg">🔒</span>
+                      ) : lp?.completed ? (
                         <>
                           <span className="text-xs font-medium text-indigo-600 dark:text-indigo-400 bg-indigo-50 dark:bg-indigo-950 rounded-full px-2 py-0.5">
                             {lp.quizScore}%
