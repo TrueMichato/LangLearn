@@ -5,7 +5,7 @@ import DeckExport from '../components/common/DeckExport';
 import DeckImport from '../components/common/DeckImport';
 
 export default function SettingsPage() {
-  const { weeklyGoalMinutes, setWeeklyGoal, activeLanguages, addLanguage, removeLanguage, showStressMarks, toggleStressMarks, darkMode, toggleDarkMode } =
+  const { weeklyGoalMinutes, setWeeklyGoal, activeLanguages, addLanguage, removeLanguage, showStressMarks, toggleStressMarks, darkMode, toggleDarkMode, fontSize, setFontSize, ttsRate, setTtsRate, reviewBatchSize, setReviewBatchSize } =
     useSettingsStore();
   const [importStatus, setImportStatus] = useState('');
   const fileInputRef = useRef<HTMLInputElement>(null);
@@ -106,6 +106,67 @@ export default function SettingsPage() {
               </button>
             );
           })}
+        </div>
+      </section>
+
+      {/* Accessibility */}
+      <section className="bg-white dark:bg-gray-800 rounded-2xl shadow p-4 space-y-4">
+        <h3 className="font-semibold text-gray-700 dark:text-gray-200">Accessibility</h3>
+
+        {/* Font Size */}
+        <div>
+          <div className="flex items-center justify-between mb-1">
+            <p className="text-sm text-gray-700 dark:text-gray-200">Content font size</p>
+            <span className="text-sm font-mono text-gray-500 dark:text-gray-400" style={{ fontSize: fontSize + 'px' }}>
+              {fontSize}px
+            </span>
+          </div>
+          <input
+            type="range"
+            min={14}
+            max={24}
+            step={1}
+            value={fontSize}
+            onChange={(e) => setFontSize(Number(e.target.value))}
+            className="w-full accent-indigo-600"
+          />
+        </div>
+
+        {/* TTS Speed */}
+        <div>
+          <div className="flex items-center justify-between mb-1">
+            <p className="text-sm text-gray-700 dark:text-gray-200">TTS speed</p>
+            <span className="text-sm font-mono text-gray-500 dark:text-gray-400">{ttsRate.toFixed(1)}x</span>
+          </div>
+          <input
+            type="range"
+            min={0.5}
+            max={2.0}
+            step={0.1}
+            value={ttsRate}
+            onChange={(e) => setTtsRate(Number(e.target.value))}
+            className="w-full accent-indigo-600"
+          />
+        </div>
+
+        {/* Review Batch Size */}
+        <div>
+          <p className="text-sm text-gray-700 dark:text-gray-200 mb-2">Review batch size</p>
+          <div className="flex gap-2">
+            {[10, 25, 50, 0].map((size) => (
+              <button
+                key={size}
+                onClick={() => setReviewBatchSize(size)}
+                className={`flex-1 py-1.5 rounded-xl text-sm font-semibold transition-colors ${
+                  reviewBatchSize === size
+                    ? 'bg-indigo-600 text-white'
+                    : 'bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-600'
+                }`}
+              >
+                {size === 0 ? 'All' : size}
+              </button>
+            ))}
+          </div>
         </div>
       </section>
 

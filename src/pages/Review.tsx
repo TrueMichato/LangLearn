@@ -3,6 +3,7 @@ import { getDueReviews } from '../db/words';
 import { processReview } from '../db/reviews';
 import { useReviewStore } from '../stores/reviewStore';
 import { useTimerStore } from '../stores/timerStore';
+import { useSettingsStore } from '../stores/settingsStore';
 import Flashcard from '../components/srs/Flashcard';
 import GradeButtons from '../components/srs/GradeButtons';
 import type { SM2Grade } from '../lib/sm2';
@@ -11,7 +12,9 @@ export default function ReviewPage() {
   const { queue, currentIndex, isFlipped, cardsReviewed, setQueue, flip, next, reset } =
     useReviewStore();
   const { isRunning, start } = useTimerStore();
+  const reviewBatchSize = useSettingsStore((s) => s.reviewBatchSize);
   const [loading, setLoading] = useState(true);
+  const [totalDue, setTotalDue] = useState(0);
 
   const loadCards = useCallback(async () => {
     setLoading(true);
@@ -21,9 +24,14 @@ export default function ReviewPage() {
       const j = Math.floor(Math.random() * (i + 1));
       [due[i], due[j]] = [due[j], due[i]];
     }
-    setQueue(due);
+    setTotalDue(due.length);
+    if (reviewBatchSize > 0) {
+      setQueue(due.slice(0, reviewBatchSize));
+    } else {
+      setQueue(due);
+    }
     setLoading(false);
-  }, [setQueue]);
+  }, [setQueue, reviewBatchSize]);
 
   useEffect(() => {
     loadCards();
@@ -93,7 +101,14 @@ export default function ReviewPage() {
   return (
     <div>
       <div className="flex justify-between items-center mb-4">
-        <h2 className="text-lg font-semibold text-gray-700 dark:text-gray-200">Review</h2>
+        <div>
+          <h2 className="text-lg font-semibold text-gray-700 dark:text-gray-200">Review</h2>
+          {reviewBatchSize > 0 && totalDue > queue.length && (
+            <p className="text-xs text-gray-400 dark:text-gray-500">
+              Reviewing {queue.length} of {totalDue} due cards
+            </p>
+          )}
+        </div>
         <span className="text-sm text-gray-400 dark:text-gray-500">
           {currentIndex + 1} / {queue.length}
         </span>

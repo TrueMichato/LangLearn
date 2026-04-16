@@ -1,6 +1,8 @@
 import { create } from 'zustand';
 import { db } from '../db/schema';
 import { calculateTimeXP } from '../lib/xp';
+import { updateDailyActivity } from '../lib/streaks';
+import { useSettingsStore } from './settingsStore';
 
 interface TimerState {
   isRunning: boolean;
@@ -49,6 +51,9 @@ export const useTimerStore = create<TimerState>((set, get) => ({
       durationSeconds: elapsed,
       xpEarned: xp,
     });
+
+    const { weeklyGoalMinutes } = useSettingsStore.getState();
+    await updateDailyActivity({ addSeconds: elapsed, weeklyGoalMinutes });
 
     set({ isRunning: false, elapsed: 0, sessionId: null, activity });
   },

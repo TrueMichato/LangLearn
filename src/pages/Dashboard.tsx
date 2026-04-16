@@ -1,9 +1,10 @@
 import { useState, useEffect } from 'react';
 import { db } from '../db/schema';
-import type { StudySession } from '../db/schema';
+import type { StudySession, DailyActivity } from '../db/schema';
 import { getDueCount } from '../db/reviews';
 import { getTotalWordCount } from '../db/words';
 import { formatStudyTime } from '../lib/xp';
+import { calculateCurrentStreak, calculateLongestStreak } from '../lib/streaks';
 import { useSettingsStore } from '../stores/settingsStore';
 import HeatMap from '../components/dashboard/HeatMap';
 
@@ -18,6 +19,7 @@ interface Stats {
 export default function Dashboard() {
   const [stats, setStats] = useState<Stats | null>(null);
   const [allSessions, setAllSessions] = useState<StudySession[]>([]);
+  const [activities, setActivities] = useState<DailyActivity[]>([]);
   const weeklyGoalMinutes = useSettingsStore((s) => s.weeklyGoalMinutes);
 
   useEffect(() => {
@@ -44,6 +46,9 @@ export default function Dashboard() {
       );
 
       setStats({ totalWords, dueCards, totalStudySeconds, weekStudySeconds, totalXP });
+
+      const dailyActivities = await db.dailyActivity.toArray();
+      setActivities(dailyActivities);
     }
     load();
   }, []);
@@ -62,6 +67,11 @@ export default function Dashboard() {
     Math.round((stats.weekStudySeconds / weeklyGoalSeconds) * 100)
   );
 
+  const currentStreak = calculateCurrentStreak(activities);
+  const longestStreak = calculateLongestStreak(activities);
+  const streakEmoji =
+    currentStreak >= 30 ? '🔥🔥🔥' : currentStreak >= 7 ? '🔥🔥' : '🔥';
+
   return (
     <div>
       <h2 className="text-lg font-semibold text-gray-700 dark:text-gray-200 mb-4">Dashboard</h2>
@@ -75,6 +85,23 @@ export default function Dashboard() {
           icon="⏱️"
         />
         <StatCard label="Total XP" value={stats.totalXP} icon="⭐" />
+      </div>
+
+      <div className="bg-white dark:bg-gray-800 rounded-2xl shadow p-4 mb-6">
+        {currentStreak > 0 ? (
+          <>
+            <p className="text-2xl font-bold text-gray-800 dark:text-gray-100 text-center">
+              {streakEmoji} {currentStreak}-day streak
+            </p>
+            <p className="text-sm text-gray-500 dark:text-gray-400 text-center mt-1">
+              Best: {longestStreak} days
+            </p>
+          </>
+        ) : (
+          <p className="text-lg font-semibold text-gray-700 dark:text-gray-200 text-center">
+            Start your streak today! 💪
+          </p>
+        )}
       </div>
 
       <div className="bg-white dark:bg-gray-800 rounded-2xl shadow p-4">

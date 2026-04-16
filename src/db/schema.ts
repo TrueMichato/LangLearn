@@ -44,12 +44,32 @@ export interface Setting {
   value: string;
 }
 
+export interface DailyActivity {
+  date: string; // YYYY-MM-DD (primary key)
+  studySeconds: number;
+  cardsReviewed: number;
+  wordsAdded: number;
+  goalMet: boolean;
+}
+
+export interface LessonProgress {
+  id: string; // `${language}/${lessonId}` e.g. "ja/particles"
+  language: string;
+  lessonId: string;
+  completed: boolean;
+  quizScore: number; // 0-100 percentage
+  completedAt: string; // ISO date
+  attempts: number;
+}
+
 const db = new Dexie('LangLearnDB') as Dexie & {
   words: EntityTable<Word, 'id'>;
   reviews: EntityTable<Review, 'id'>;
   texts: EntityTable<Text, 'id'>;
   studySessions: EntityTable<StudySession, 'id'>;
   settings: EntityTable<Setting, 'key'>;
+  dailyActivity: EntityTable<DailyActivity, 'date'>;
+  lessonProgress: EntityTable<LessonProgress, 'id'>;
 };
 
 db.version(1).stores({
@@ -58,6 +78,25 @@ db.version(1).stores({
   texts: '++id, language, createdAt',
   studySessions: '++id, startTime, activity',
   settings: 'key',
+});
+
+db.version(2).stores({
+  words: '++id, language, word, createdAt, *tags',
+  reviews: '++id, wordId, nextReviewDate',
+  texts: '++id, language, createdAt',
+  studySessions: '++id, startTime, activity',
+  settings: 'key',
+  dailyActivity: 'date',
+});
+
+db.version(3).stores({
+  words: '++id, language, word, createdAt, *tags',
+  reviews: '++id, wordId, nextReviewDate',
+  texts: '++id, language, createdAt',
+  studySessions: '++id, startTime, activity',
+  settings: 'key',
+  dailyActivity: 'date',
+  lessonProgress: 'id, language, lessonId',
 });
 
 export { db };

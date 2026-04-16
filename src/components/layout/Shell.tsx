@@ -2,10 +2,12 @@ import { Outlet } from 'react-router-dom';
 import BottomNav from './BottomNav';
 import StudyTimer from '../common/StudyTimer';
 import { useDarkMode } from '../../hooks/useDarkMode';
+import { useFontSize } from '../../hooks/useFontSize';
 import { useSettingsStore } from '../../stores/settingsStore';
 
 export default function Shell() {
   const darkMode = useDarkMode();
+  useFontSize();
   const toggleDarkMode = useSettingsStore((s) => s.toggleDarkMode);
 
   return (

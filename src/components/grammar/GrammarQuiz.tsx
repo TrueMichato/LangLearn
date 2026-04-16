@@ -5,14 +5,16 @@ interface GrammarQuizProps {
   question: string;
   options: string[];
   answer: number;
+  onAnswer?: (correct: boolean) => void;
 }
 
-export default function GrammarQuiz({ question, options, answer }: GrammarQuizProps) {
+export default function GrammarQuiz({ question, options, answer, onAnswer }: GrammarQuizProps) {
   const [selected, setSelected] = useState<number | null>(null);
 
   const handleSelect = (index: number) => {
     if (selected !== null) return;
     setSelected(index);
+    onAnswer?.(index === answer);
   };
 
   const isCorrect = selected === answer;

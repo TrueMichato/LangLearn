@@ -25,6 +25,7 @@ export default function FuriganaText({
               key={i}
               onClick={() => onWordClick(token.surface, token.reading, i)}
               className={`${baseClass} ${selectedClass}`}
+              style={{ fontSize: 'var(--app-font-size)' }}
             >
               {token.surface}
               <rp>(</rp>
@@ -43,6 +44,7 @@ export default function FuriganaText({
             key={i}
             onClick={() => onWordClick(token.surface, token.reading, i)}
             className={`${baseClass} ${selectedClass}`}
+            style={{ fontSize: 'var(--app-font-size)' }}
           >
             {token.surface}
           </span>

@@ -21,7 +21,7 @@ export default function Flashcard({ word, isFlipped, onFlip }: FlashcardProps) {
         {word.language}
       </span>
 
-      <p className="text-3xl font-bold text-gray-800 dark:text-gray-100 mb-2 text-center">
+      <p className="text-3xl font-bold text-gray-800 dark:text-gray-100 mb-2 text-center" style={{ fontSize: 'var(--app-font-size)' }}>
         {word.word}
       </p>
 

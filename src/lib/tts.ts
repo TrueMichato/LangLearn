@@ -1,3 +1,5 @@
+import { useSettingsStore } from '../stores/settingsStore';
+
 const LANG_VOICE_MAP: Record<string, string> = {
   ja: 'ja-JP',
   ru: 'ru-RU',
@@ -15,7 +17,7 @@ export function speak(text: string, language: string): void {
   window.speechSynthesis.cancel();
   const utterance = new SpeechSynthesisUtterance(text);
   utterance.lang = LANG_VOICE_MAP[language] ?? language;
-  utterance.rate = 0.9;
+  utterance.rate = useSettingsStore.getState().ttsRate;
   window.speechSynthesis.speak(utterance);
 }
 

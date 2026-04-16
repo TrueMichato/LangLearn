@@ -6,11 +6,17 @@ interface SettingsState {
   activeLanguages: string[];
   showStressMarks: boolean;
   darkMode: boolean;
+  fontSize: number;
+  ttsRate: number;
+  reviewBatchSize: number;
   setWeeklyGoal: (minutes: number) => void;
   addLanguage: (lang: string) => void;
   removeLanguage: (lang: string) => void;
   toggleStressMarks: () => void;
   toggleDarkMode: () => void;
+  setFontSize: (size: number) => void;
+  setTtsRate: (rate: number) => void;
+  setReviewBatchSize: (size: number) => void;
 }
 
 export const useSettingsStore = create<SettingsState>()(
@@ -20,6 +26,9 @@ export const useSettingsStore = create<SettingsState>()(
       activeLanguages: ['ja', 'ru'],
       showStressMarks: true,
       darkMode: false,
+      fontSize: 18,
+      ttsRate: 0.9,
+      reviewBatchSize: 25,
 
       setWeeklyGoal: (minutes) => set({ weeklyGoalMinutes: minutes }),
 
@@ -44,6 +53,10 @@ export const useSettingsStore = create<SettingsState>()(
           document.documentElement.classList.toggle('dark', newMode);
           return { darkMode: newMode };
         }),
+
+      setFontSize: (size) => set({ fontSize: size }),
+      setTtsRate: (rate) => set({ ttsRate: rate }),
+      setReviewBatchSize: (size) => set({ reviewBatchSize: size }),
     }),
     {
       name: 'langlearn-settings',

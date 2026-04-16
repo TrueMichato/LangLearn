@@ -1,6 +1,8 @@
 import { useState, useEffect } from 'react';
 import { useSettingsStore } from '../stores/settingsStore';
 import LessonView from '../components/grammar/LessonView';
+import { getLessonProgress } from '../db/lessons';
+import type { LessonProgress } from '../db/schema';
 
 interface LessonMeta {
   id: string;
@@ -19,6 +21,17 @@ export default function GrammarPage() {
   const [lessons, setLessons] = useState<LessonMeta[]>([]);
   const [loading, setLoading] = useState(true);
   const [activeLessonId, setActiveLessonId] = useState<string | null>(null);
+  const [progress, setProgress] = useState<Map<string, LessonProgress>>(new Map());
+
+  // Load lesson progress whenever language changes or returning from a lesson
+  useEffect(() => {
+    if (activeLessonId) return;
+    getLessonProgress(selectedLang).then((items) => {
+      const map = new Map<string, LessonProgress>();
+      for (const item of items) map.set(item.lessonId, item);
+      setProgress(map);
+    });
+  }, [selectedLang, activeLessonId]);
 
   useEffect(() => {
     setLoading(true);
@@ -78,25 +91,60 @@ export default function GrammarPage() {
           No lessons available for this language yet.
         </p>
       ) : (
-        <div className="space-y-3">
-          {lessons.map((lesson) => (
-            <button
-              key={lesson.id}
-              onClick={() => setActiveLessonId(lesson.id)}
-              className="w-full text-left bg-white dark:bg-gray-800 rounded-2xl shadow p-4 hover:shadow-md transition-shadow"
-            >
-              <div className="flex items-center justify-between">
-                <div>
-                  <p className="font-medium text-gray-800 dark:text-gray-100">{lesson.title}</p>
-                  <p className="text-xs text-gray-400 dark:text-gray-500 mt-1">
-                    Lesson {lesson.order}
-                  </p>
+        <>
+          {/* Progress summary */}
+          {(() => {
+            const completedCount = lessons.filter((l) => progress.get(l.id)?.completed).length;
+            const pct = Math.round((completedCount / lessons.length) * 100);
+            return (
+              <div className="mb-4 rounded-2xl bg-white dark:bg-gray-800 shadow p-4">
+                <p className="text-sm font-medium text-gray-700 dark:text-gray-200 mb-2">
+                  {completedCount}/{lessons.length} lessons completed
+                </p>
+                <div className="w-full h-2 rounded-full bg-gray-200 dark:bg-gray-700 overflow-hidden">
+                  <div
+                    className="h-full rounded-full bg-indigo-500 transition-all"
+                    style={{ width: `${pct}%` }}
+                  />
                 </div>
-                <span className="text-gray-400 dark:text-gray-500 text-lg">→</span>
               </div>
-            </button>
-          ))}
-        </div>
+            );
+          })()}
+
+          <div className="space-y-3">
+            {lessons.map((lesson) => {
+              const lp = progress.get(lesson.id);
+              return (
+                <button
+                  key={lesson.id}
+                  onClick={() => setActiveLessonId(lesson.id)}
+                  className="w-full text-left bg-white dark:bg-gray-800 rounded-2xl shadow p-4 hover:shadow-md transition-shadow"
+                >
+                  <div className="flex items-center justify-between">
+                    <div>
+                      <p className="font-medium text-gray-800 dark:text-gray-100">{lesson.title}</p>
+                      <p className="text-xs text-gray-400 dark:text-gray-500 mt-1">
+                        Lesson {lesson.order}
+                      </p>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      {lp?.completed ? (
+                        <>
+                          <span className="text-xs font-medium text-indigo-600 dark:text-indigo-400 bg-indigo-50 dark:bg-indigo-950 rounded-full px-2 py-0.5">
+                            {lp.quizScore}%
+                          </span>
+                          <span className="text-green-500 text-lg">✅</span>
+                        </>
+                      ) : (
+                        <span className="text-xs text-gray-400 dark:text-gray-500">Not started</span>
+                      )}
+                    </div>
+                  </div>
+                </button>
+              );
+            })}
+          </div>
+        </>
       )}
     </div>
   );

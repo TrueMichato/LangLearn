@@ -1,6 +1,7 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef, useCallback } from 'react';
 import ReactMarkdown from 'react-markdown';
 import GrammarQuiz from './GrammarQuiz';
+import { markLessonComplete, incrementAttempts } from '../../db/lessons';
 
 interface LessonViewProps {
   lang: string;
@@ -21,6 +22,28 @@ export default function LessonView({ lang, lessonId, onBack }: LessonViewProps) 
   const [segments, setSegments] = useState<Array<{ type: 'md'; content: string } | { type: 'quiz'; data: QuizData }>>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(false);
+  const [quizScore, setQuizScore] = useState<{ correct: number; total: number }>({ correct: 0, total: 0 });
+  const [completed, setCompleted] = useState(false);
+  const attemptsIncremented = useRef(false);
+
+  // Count total quizzes in the lesson
+  const totalQuizzes = segments.filter((s) => s.type === 'quiz').length;
+
+  const handleQuizAnswer = useCallback(
+    (correct: boolean) => {
+      setQuizScore((prev) => {
+        const next = { correct: prev.correct + (correct ? 1 : 0), total: prev.total + 1 };
+        // Check if this was the last quiz
+        if (next.total === totalQuizzes) {
+          const score = Math.round((next.correct / next.total) * 100);
+          markLessonComplete(lang, lessonId, score);
+          setCompleted(true);
+        }
+        return next;
+      });
+    },
+    [totalQuizzes, lang, lessonId],
+  );
 
   useEffect(() => {
     setLoading(true);
@@ -59,6 +82,19 @@ export default function LessonView({ lang, lessonId, onBack }: LessonViewProps) 
 
         setSegments(parts);
         setLoading(false);
+
+        // Increment attempts when lesson loads
+        if (!attemptsIncremented.current) {
+          attemptsIncremented.current = true;
+          incrementAttempts(lang, lessonId);
+        }
+
+        // If no quizzes, mark complete immediately
+        const hasQuizzes = parts.some((p) => p.type === 'quiz');
+        if (!hasQuizzes) {
+          markLessonComplete(lang, lessonId, 100);
+          setCompleted(true);
+        }
       })
       .catch(() => {
         setError(true);
@@ -98,10 +134,17 @@ export default function LessonView({ lang, lessonId, onBack }: LessonViewProps) 
           seg.type === 'md' ? (
             <ReactMarkdown key={i}>{seg.content}</ReactMarkdown>
           ) : (
-            <GrammarQuiz key={i} {...seg.data} />
+            <GrammarQuiz key={i} {...seg.data} onAnswer={handleQuizAnswer} />
           )
         )}
       </div>
+      {completed && (
+        <div className="mt-6 rounded-2xl border border-green-300 bg-green-50 dark:bg-green-950 dark:border-green-800 p-4 text-center">
+          <p className="text-green-800 dark:text-green-200 font-semibold">
+            ✅ Lesson complete! Score: {totalQuizzes > 0 ? Math.round((quizScore.correct / quizScore.total) * 100) : 100}%
+          </p>
+        </div>
+      )}
     </div>
   );
 }

@@ -3,9 +3,9 @@ import { NavLink } from 'react-router-dom';
 const links = [
   { to: '/', label: 'Home', icon: '📊' },
   { to: '/review', label: 'Review', icon: '🃏' },
+  { to: '/words', label: 'Words', icon: '📚' },
   { to: '/reader', label: 'Reader', icon: '📖' },
-  { to: '/grammar', label: 'Grammar', icon: '📝' },
-  { to: '/settings', label: 'Settings', icon: '⚙️' },
+  { to: '/more', label: 'More', icon: '☰' },
 ];
 
 export default function BottomNav() {
