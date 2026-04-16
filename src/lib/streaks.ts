@@ -26,32 +26,25 @@ export function calculateCurrentStreak(activities: DailyActivity[]): number {
   const today = new Date();
   today.setHours(0, 0, 0, 0);
 
-  // If today has no activity and yesterday has no activity, streak is 0
   const todayKey = fmtDate(today);
-  if (!metDates.has(todayKey)) {
-    const yesterday = addDays(today, -1);
-    if (!metDates.has(fmtDate(yesterday))) return 0;
+  // If today has no activity at all, start counting from yesterday
+  const startDate = allDates.has(todayKey) ? today : addDays(today, -1);
+
+  // If the start date also has no met goal and no freeze possible, streak is 0
+  if (!metDates.has(fmtDate(startDate)) && !allDates.has(fmtDate(startDate))) {
+    return 0;
   }
 
   let streak = 0;
   let freezesUsed = 0;
-  const cursor = new Date(today);
+  const cursor = new Date(startDate);
 
   for (let i = 0; i < 10000; i++) {
     const key = fmtDate(cursor);
 
     if (metDates.has(key)) {
       streak++;
-    } else if (allDates.has(key) || i === 0) {
-      // Day exists but goal not met, or it's today with no record yet
-      if (canFreeze(cursor, metDates, freezesUsed)) {
-        freezesUsed++;
-        // Don't count the frozen day toward streak length
-      } else {
-        break;
-      }
     } else {
-      // No record at all for this day
       if (canFreeze(cursor, metDates, freezesUsed)) {
         freezesUsed++;
       } else {
