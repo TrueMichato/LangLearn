@@ -1,0 +1,34 @@
+{
+  "id": "family",
+  "words": [
+    { "word": "Мама", "reading": "mama", "meaning": "Mom", "example": "Мама готовит обед.", "exampleMeaning": "Mom is cooking lunch." },
+    { "word": "Папа", "reading": "papa", "meaning": "Dad", "example": "Папа читает газету.", "exampleMeaning": "Dad is reading the newspaper." },
+    { "word": "Брат", "reading": "brat", "meaning": "Brother", "example": "Мой брат учится в школе.", "exampleMeaning": "My brother studies at school." },
+    { "word": "Сестра", "reading": "sestra", "meaning": "Sister", "example": "Моя сестра живёт в Москве.", "exampleMeaning": "My sister lives in Moscow." },
+    { "word": "Бабушка", "reading": "babushka", "meaning": "Grandmother", "example": "Бабушка печёт пирожки.", "exampleMeaning": "Grandmother bakes pies." },
+    { "word": "Дедушка", "reading": "dedushka", "meaning": "Grandfather", "example": "Дедушка рассказывает истории.", "exampleMeaning": "Grandfather tells stories." },
+    { "word": "Сын", "reading": "syn", "meaning": "Son", "example": "Наш сын ходит в детский сад.", "exampleMeaning": "Our son goes to kindergarten." },
+    { "word": "Дочь", "reading": "doch'", "meaning": "Daughter", "example": "Моя дочь любит рисовать.", "exampleMeaning": "My daughter likes to draw." },
+    { "word": "Муж", "reading": "muzh", "meaning": "Husband", "example": "Её муж работает врачом.", "exampleMeaning": "Her husband works as a doctor." },
+    { "word": "Жена", "reading": "zhena", "meaning": "Wife", "example": "Его жена — учительница.", "exampleMeaning": "His wife is a teacher." },
+    { "word": "Семья", "reading": "sem'ya", "meaning": "Family", "example": "У нас большая семья.", "exampleMeaning": "We have a big family." },
+    { "word": "Ребёнок", "reading": "rebyonok", "meaning": "Child", "example": "Ребёнок играет в парке.", "exampleMeaning": "The child is playing in the park." },
+    { "word": "Дети", "reading": "deti", "meaning": "Children", "example": "Дети любят мороженое.", "exampleMeaning": "Children love ice cream." },
+    { "word": "Родители", "reading": "roditeli", "meaning": "Parents", "example": "Мои родители живут в деревне.", "exampleMeaning": "My parents live in the village." },
+    { "word": "Дядя", "reading": "dyadya", "meaning": "Uncle", "example": "Дядя приехал в гости.", "exampleMeaning": "Uncle came to visit." },
+    { "word": "Тётя", "reading": "tyotya", "meaning": "Aunt", "example": "Тётя подарила мне книгу.", "exampleMeaning": "Aunt gave me a book as a gift." }
+  ],
+  "exercises": [
+    { "type": "match", "pairs": 5 },
+    { "type": "fill-blank", "items": [
+      { "sentence": "___ готовит обед.", "answer": "Мама", "hint": "Mom" },
+      { "sentence": "У нас большая ___.", "answer": "Семья", "hint": "Family" },
+      { "sentence": "___ печёт пирожки.", "answer": "Бабушка", "hint": "Grandmother" }
+    ]},
+    { "type": "multiple-choice", "items": [
+      { "question": "What does 'Сестра' mean?", "options": ["Sister", "Brother", "Daughter", "Mother"], "answer": 0 },
+      { "question": "How do you say 'Grandfather' in Russian?", "options": ["Дедушка", "Бабушка", "Папа", "Дядя"], "answer": 0 },
+      { "question": "What does 'Дети' mean?", "options": ["Children", "Parents", "Family", "Brothers"], "answer": 0 }
+    ]}
+  ]
+}

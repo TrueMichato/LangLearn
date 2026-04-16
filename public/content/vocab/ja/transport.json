@@ -1,0 +1,35 @@
+{
+  "id": "ja-vocab-transport",
+  "words": [
+    { "word": "電車", "reading": "densha", "meaning": "train", "example": "電車で会社に行きます。", "exampleMeaning": "I go to work by train." },
+    { "word": "バス", "reading": "basu", "meaning": "bus", "example": "バスに乗ります。", "exampleMeaning": "I ride the bus." },
+    { "word": "車", "reading": "kuruma", "meaning": "car", "example": "車を運転します。", "exampleMeaning": "I drive a car." },
+    { "word": "駅", "reading": "eki", "meaning": "station", "example": "駅はどこですか？", "exampleMeaning": "Where is the station?" },
+    { "word": "飛行機", "reading": "hikouki", "meaning": "airplane", "example": "飛行機で日本に行きます。", "exampleMeaning": "I go to Japan by airplane." },
+    { "word": "自転車", "reading": "jitensha", "meaning": "bicycle", "example": "自転車で学校に行きます。", "exampleMeaning": "I go to school by bicycle." },
+    { "word": "タクシー", "reading": "takushii", "meaning": "taxi", "example": "タクシーを呼びましょう。", "exampleMeaning": "Let's call a taxi." },
+    { "word": "右", "reading": "migi", "meaning": "right", "example": "右に曲がってください。", "exampleMeaning": "Please turn right." },
+    { "word": "左", "reading": "hidari", "meaning": "left", "example": "左に曲がってください。", "exampleMeaning": "Please turn left." },
+    { "word": "まっすぐ", "reading": "massugu", "meaning": "straight", "example": "まっすぐ行ってください。", "exampleMeaning": "Please go straight." },
+    { "word": "近い", "reading": "chikai", "meaning": "near / close", "example": "駅は近いです。", "exampleMeaning": "The station is near." },
+    { "word": "遠い", "reading": "tooi", "meaning": "far", "example": "空港は遠いです。", "exampleMeaning": "The airport is far." },
+    { "word": "道", "reading": "michi", "meaning": "road / street", "example": "この道をまっすぐ行ってください。", "exampleMeaning": "Please go straight on this road." },
+    { "word": "地図", "reading": "chizu", "meaning": "map", "example": "地図を見てください。", "exampleMeaning": "Please look at the map." },
+    { "word": "信号", "reading": "shingou", "meaning": "traffic light", "example": "信号が赤です。", "exampleMeaning": "The traffic light is red." },
+    { "word": "切符", "reading": "kippu", "meaning": "ticket", "example": "切符を買います。", "exampleMeaning": "I buy a ticket." },
+    { "word": "空港", "reading": "kuukou", "meaning": "airport", "example": "空港まで一時間かかります。", "exampleMeaning": "It takes one hour to the airport." }
+  ],
+  "exercises": [
+    { "type": "match", "pairs": 5 },
+    { "type": "fill-blank", "items": [
+      { "sentence": "___で会社に行きます。", "answer": "電車", "hint": "train" },
+      { "sentence": "___に曲がってください。", "answer": "右", "hint": "right" },
+      { "sentence": "___を買います。", "answer": "切符", "hint": "ticket" }
+    ]},
+    { "type": "multiple-choice", "items": [
+      { "question": "「飛行機」はどういう意味ですか？", "options": ["train", "airplane", "bicycle", "car"], "answer": 1 },
+      { "question": "「map」は日本語で何ですか？", "options": ["道", "信号", "地図", "駅"], "answer": 2 },
+      { "question": "「遠い」はどういう意味ですか？", "options": ["near", "straight", "left", "far"], "answer": 3 }
+    ]}
+  ]
+}

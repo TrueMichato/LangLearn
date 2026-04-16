@@ -1,0 +1,35 @@
+{
+  "id": "food",
+  "words": [
+    { "word": "Хлеб", "reading": "khleb", "meaning": "Bread", "example": "Купи хлеб в магазине.", "exampleMeaning": "Buy bread at the store." },
+    { "word": "Молоко", "reading": "moloko", "meaning": "Milk", "example": "Дети пьют молоко утром.", "exampleMeaning": "Children drink milk in the morning." },
+    { "word": "Мясо", "reading": "myaso", "meaning": "Meat", "example": "На обед у нас мясо.", "exampleMeaning": "We have meat for lunch." },
+    { "word": "Рыба", "reading": "ryba", "meaning": "Fish", "example": "Рыба очень полезна.", "exampleMeaning": "Fish is very healthy." },
+    { "word": "Вода", "reading": "voda", "meaning": "Water", "example": "Дайте стакан воды, пожалуйста.", "exampleMeaning": "Give me a glass of water, please." },
+    { "word": "Чай", "reading": "chay", "meaning": "Tea", "example": "Хотите чай с сахаром?", "exampleMeaning": "Would you like tea with sugar?" },
+    { "word": "Кофе", "reading": "kofe", "meaning": "Coffee", "example": "Я пью кофе каждое утро.", "exampleMeaning": "I drink coffee every morning." },
+    { "word": "Суп", "reading": "sup", "meaning": "Soup", "example": "Бабушка варит суп.", "exampleMeaning": "Grandmother is cooking soup." },
+    { "word": "Каша", "reading": "kasha", "meaning": "Porridge", "example": "На завтрак каша с маслом.", "exampleMeaning": "Porridge with butter for breakfast." },
+    { "word": "Овощи", "reading": "ovoshchi", "meaning": "Vegetables", "example": "Овощи полезны для здоровья.", "exampleMeaning": "Vegetables are good for health." },
+    { "word": "Фрукты", "reading": "frukty", "meaning": "Fruits", "example": "Я люблю свежие фрукты.", "exampleMeaning": "I love fresh fruits." },
+    { "word": "Сахар", "reading": "sakhar", "meaning": "Sugar", "example": "Положите сахар в чай.", "exampleMeaning": "Put sugar in the tea." },
+    { "word": "Соль", "reading": "sol'", "meaning": "Salt", "example": "Передайте соль, пожалуйста.", "exampleMeaning": "Pass the salt, please." },
+    { "word": "Масло", "reading": "maslo", "meaning": "Butter / Oil", "example": "Намажь масло на хлеб.", "exampleMeaning": "Spread butter on the bread." },
+    { "word": "Яйцо", "reading": "yaytso", "meaning": "Egg", "example": "На завтрак я ем яйцо.", "exampleMeaning": "I eat an egg for breakfast." },
+    { "word": "Рис", "reading": "ris", "meaning": "Rice", "example": "Рис — популярный гарнир.", "exampleMeaning": "Rice is a popular side dish." },
+    { "word": "Сыр", "reading": "syr", "meaning": "Cheese", "example": "Бутерброд с сыром очень вкусный.", "exampleMeaning": "A sandwich with cheese is very tasty." }
+  ],
+  "exercises": [
+    { "type": "match", "pairs": 5 },
+    { "type": "fill-blank", "items": [
+      { "sentence": "Купи ___ в магазине.", "answer": "Хлеб", "hint": "Bread" },
+      { "sentence": "Хотите ___ с сахаром?", "answer": "Чай", "hint": "Tea" },
+      { "sentence": "___ полезны для здоровья.", "answer": "Овощи", "hint": "Vegetables" }
+    ]},
+    { "type": "multiple-choice", "items": [
+      { "question": "What does 'Молоко' mean?", "options": ["Milk", "Water", "Juice", "Tea"], "answer": 0 },
+      { "question": "How do you say 'Fish' in Russian?", "options": ["Рыба", "Мясо", "Суп", "Каша"], "answer": 0 },
+      { "question": "What is 'Яйцо'?", "options": ["Egg", "Apple", "Cheese", "Bread"], "answer": 0 }
+    ]}
+  ]
+}

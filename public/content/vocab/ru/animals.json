@@ -1,0 +1,34 @@
+{
+  "id": "animals",
+  "words": [
+    { "word": "Собака", "reading": "sobaka", "meaning": "Dog", "example": "Собака бежит по парку.", "exampleMeaning": "The dog is running in the park." },
+    { "word": "Кошка", "reading": "koshka", "meaning": "Cat", "example": "Кошка спит на диване.", "exampleMeaning": "The cat is sleeping on the couch." },
+    { "word": "Птица", "reading": "ptitsa", "meaning": "Bird", "example": "Птица поёт на дереве.", "exampleMeaning": "The bird is singing in the tree." },
+    { "word": "Рыба", "reading": "ryba", "meaning": "Fish", "example": "В озере много рыбы.", "exampleMeaning": "There are many fish in the lake." },
+    { "word": "Лошадь", "reading": "loshad'", "meaning": "Horse", "example": "Лошадь бежит быстро.", "exampleMeaning": "The horse runs fast." },
+    { "word": "Корова", "reading": "korova", "meaning": "Cow", "example": "Корова даёт молоко.", "exampleMeaning": "The cow gives milk." },
+    { "word": "Медведь", "reading": "medved'", "meaning": "Bear", "example": "Медведь живёт в лесу.", "exampleMeaning": "The bear lives in the forest." },
+    { "word": "Волк", "reading": "volk", "meaning": "Wolf", "example": "Волк воет на луну.", "exampleMeaning": "The wolf howls at the moon." },
+    { "word": "Заяц", "reading": "zayats", "meaning": "Hare / Rabbit", "example": "Заяц прыгает по полю.", "exampleMeaning": "The hare is jumping across the field." },
+    { "word": "Лиса", "reading": "lisa", "meaning": "Fox", "example": "Лиса очень хитрая.", "exampleMeaning": "The fox is very cunning." },
+    { "word": "Змея", "reading": "zmeya", "meaning": "Snake", "example": "Змея ползёт по траве.", "exampleMeaning": "The snake is crawling in the grass." },
+    { "word": "Мышь", "reading": "mysh'", "meaning": "Mouse", "example": "Кошка поймала мышь.", "exampleMeaning": "The cat caught a mouse." },
+    { "word": "Слон", "reading": "slon", "meaning": "Elephant", "example": "Слон — самое большое животное.", "exampleMeaning": "The elephant is the biggest animal." },
+    { "word": "Обезьяна", "reading": "obez'yana", "meaning": "Monkey", "example": "Обезьяна ест банан.", "exampleMeaning": "The monkey is eating a banana." },
+    { "word": "Животное", "reading": "zhivotnoye", "meaning": "Animal", "example": "Моё любимое животное — собака.", "exampleMeaning": "My favorite animal is a dog." },
+    { "word": "Курица", "reading": "kuritsa", "meaning": "Chicken", "example": "Курица несёт яйца.", "exampleMeaning": "The chicken lays eggs." }
+  ],
+  "exercises": [
+    { "type": "match", "pairs": 5 },
+    { "type": "fill-blank", "items": [
+      { "sentence": "___ спит на диване.", "answer": "Кошка", "hint": "Cat" },
+      { "sentence": "___ живёт в лесу.", "answer": "Медведь", "hint": "Bear" },
+      { "sentence": "___ даёт молоко.", "answer": "Корова", "hint": "Cow" }
+    ]},
+    { "type": "multiple-choice", "items": [
+      { "question": "What does 'Собака' mean?", "options": ["Dog", "Cat", "Horse", "Wolf"], "answer": 0 },
+      { "question": "How do you say 'Bird' in Russian?", "options": ["Птица", "Рыба", "Змея", "Мышь"], "answer": 0 },
+      { "question": "What is 'Слон'?", "options": ["Elephant", "Bear", "Lion", "Tiger"], "answer": 0 }
+    ]}
+  ]
+}

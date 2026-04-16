@@ -1,0 +1,34 @@
+{
+  "id": "time-routine",
+  "words": [
+    { "word": "Утро", "reading": "utro", "meaning": "Morning", "example": "Утро начинается с кофе.", "exampleMeaning": "The morning starts with coffee." },
+    { "word": "День", "reading": "den'", "meaning": "Day / Afternoon", "example": "Днём я работаю.", "exampleMeaning": "In the afternoon I work." },
+    { "word": "Вечер", "reading": "vecher", "meaning": "Evening", "example": "Вечером мы смотрим телевизор.", "exampleMeaning": "In the evening we watch TV." },
+    { "word": "Ночь", "reading": "noch'", "meaning": "Night", "example": "Спокойной ночи!", "exampleMeaning": "Good night!" },
+    { "word": "Вставать", "reading": "vstavat'", "meaning": "To get up", "example": "Я встаю в семь утра.", "exampleMeaning": "I get up at seven in the morning." },
+    { "word": "Ложиться", "reading": "lozhit'sya", "meaning": "To go to bed", "example": "Дети ложатся спать в девять.", "exampleMeaning": "The children go to bed at nine." },
+    { "word": "Завтракать", "reading": "zavtrakat'", "meaning": "To have breakfast", "example": "Мы завтракаем в восемь.", "exampleMeaning": "We have breakfast at eight." },
+    { "word": "Обедать", "reading": "obedat'", "meaning": "To have lunch", "example": "Мы обедаем в столовой.", "exampleMeaning": "We have lunch in the cafeteria." },
+    { "word": "Ужинать", "reading": "uzhinat'", "meaning": "To have dinner", "example": "Семья ужинает вместе.", "exampleMeaning": "The family has dinner together." },
+    { "word": "Час", "reading": "chas", "meaning": "Hour / O'clock", "example": "Сейчас три часа.", "exampleMeaning": "It is three o'clock now." },
+    { "word": "Минута", "reading": "minuta", "meaning": "Minute", "example": "Подождите одну минуту.", "exampleMeaning": "Wait one minute." },
+    { "word": "Время", "reading": "vremya", "meaning": "Time", "example": "Сколько сейчас времени?", "exampleMeaning": "What time is it now?" },
+    { "word": "Рано", "reading": "rano", "meaning": "Early", "example": "Я встал очень рано.", "exampleMeaning": "I got up very early." },
+    { "word": "Поздно", "reading": "pozdno", "meaning": "Late", "example": "Уже поздно, пора спать.", "exampleMeaning": "It's already late, time to sleep." },
+    { "word": "Всегда", "reading": "vsegda", "meaning": "Always", "example": "Она всегда приходит вовремя.", "exampleMeaning": "She always comes on time." },
+    { "word": "Иногда", "reading": "inogda", "meaning": "Sometimes", "example": "Иногда я гуляю в парке.", "exampleMeaning": "Sometimes I walk in the park." }
+  ],
+  "exercises": [
+    { "type": "match", "pairs": 5 },
+    { "type": "fill-blank", "items": [
+      { "sentence": "Я встаю в семь ___.", "answer": "Утра", "hint": "Morning (genitive)" },
+      { "sentence": "Сколько сейчас ___?", "answer": "Времени", "hint": "Time (genitive)" },
+      { "sentence": "Уже ___, пора спать.", "answer": "Поздно", "hint": "Late" }
+    ]},
+    { "type": "multiple-choice", "items": [
+      { "question": "What does 'Вставать' mean?", "options": ["To get up", "To sit down", "To lie down", "To run"], "answer": 0 },
+      { "question": "How do you say 'Evening' in Russian?", "options": ["Вечер", "Утро", "Ночь", "День"], "answer": 0 },
+      { "question": "What does 'Всегда' mean?", "options": ["Always", "Never", "Sometimes", "Often"], "answer": 0 }
+    ]}
+  ]
+}

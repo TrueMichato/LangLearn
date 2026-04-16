@@ -1,0 +1,34 @@
+{
+  "id": "colors",
+  "words": [
+    { "word": "Красный", "reading": "krasnyy", "meaning": "Red", "example": "У неё красный шарф.", "exampleMeaning": "She has a red scarf." },
+    { "word": "Синий", "reading": "siniy", "meaning": "Blue (dark)", "example": "Синий цвет — мой любимый.", "exampleMeaning": "Blue is my favorite color." },
+    { "word": "Голубой", "reading": "goluboy", "meaning": "Blue (light)", "example": "Небо сегодня голубое.", "exampleMeaning": "The sky is light blue today." },
+    { "word": "Зелёный", "reading": "zelyonyy", "meaning": "Green", "example": "Зелёный свет — можно идти.", "exampleMeaning": "Green light — you can go." },
+    { "word": "Жёлтый", "reading": "zholtyy", "meaning": "Yellow", "example": "Осенью листья жёлтые.", "exampleMeaning": "In autumn the leaves are yellow." },
+    { "word": "Белый", "reading": "belyy", "meaning": "White", "example": "Зимой снег белый.", "exampleMeaning": "In winter the snow is white." },
+    { "word": "Чёрный", "reading": "chornyy", "meaning": "Black", "example": "У него чёрная машина.", "exampleMeaning": "He has a black car." },
+    { "word": "Оранжевый", "reading": "oranzhevyy", "meaning": "Orange", "example": "Апельсин оранжевого цвета.", "exampleMeaning": "An orange is orange in color." },
+    { "word": "Розовый", "reading": "rozovyy", "meaning": "Pink", "example": "Она любит розовые цветы.", "exampleMeaning": "She likes pink flowers." },
+    { "word": "Серый", "reading": "seryy", "meaning": "Gray", "example": "Сегодня серое небо.", "exampleMeaning": "The sky is gray today." },
+    { "word": "Фиолетовый", "reading": "fioletovyy", "meaning": "Purple", "example": "Фиолетовый — красивый цвет.", "exampleMeaning": "Purple is a beautiful color." },
+    { "word": "Коричневый", "reading": "korichnevyy", "meaning": "Brown", "example": "Коричневый медведь живёт в лесу.", "exampleMeaning": "A brown bear lives in the forest." },
+    { "word": "Круг", "reading": "krug", "meaning": "Circle", "example": "Нарисуй круг на бумаге.", "exampleMeaning": "Draw a circle on the paper." },
+    { "word": "Квадрат", "reading": "kvadrat", "meaning": "Square", "example": "Стол имеет форму квадрата.", "exampleMeaning": "The table has a square shape." },
+    { "word": "Треугольник", "reading": "treugol'nik", "meaning": "Triangle", "example": "Крыша дома — треугольник.", "exampleMeaning": "The roof of the house is a triangle." },
+    { "word": "Цвет", "reading": "tsvet", "meaning": "Color", "example": "Какой твой любимый цвет?", "exampleMeaning": "What is your favorite color?" }
+  ],
+  "exercises": [
+    { "type": "match", "pairs": 5 },
+    { "type": "fill-blank", "items": [
+      { "sentence": "Зимой снег ___.", "answer": "Белый", "hint": "White" },
+      { "sentence": "___ свет — можно идти.", "answer": "Зелёный", "hint": "Green" },
+      { "sentence": "Какой твой любимый ___?", "answer": "Цвет", "hint": "Color" }
+    ]},
+    { "type": "multiple-choice", "items": [
+      { "question": "What does 'Красный' mean?", "options": ["Red", "Beautiful", "Big", "Orange"], "answer": 0 },
+      { "question": "How do you say 'Black' in Russian?", "options": ["Чёрный", "Белый", "Синий", "Серый"], "answer": 0 },
+      { "question": "What is 'Круг' in English?", "options": ["Circle", "Square", "Triangle", "Line"], "answer": 0 }
+    ]}
+  ]
+}

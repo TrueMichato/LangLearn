@@ -1,0 +1,35 @@
+{
+  "id": "ja-vocab-weather",
+  "words": [
+    { "word": "天気", "reading": "tenki", "meaning": "weather", "example": "今日の天気はいいです。", "exampleMeaning": "Today's weather is nice." },
+    { "word": "晴れ", "reading": "hare", "meaning": "sunny / clear", "example": "明日は晴れです。", "exampleMeaning": "Tomorrow will be sunny." },
+    { "word": "雨", "reading": "ame", "meaning": "rain", "example": "雨が降っています。", "exampleMeaning": "It is raining." },
+    { "word": "雪", "reading": "yuki", "meaning": "snow", "example": "雪が降っています。", "exampleMeaning": "It is snowing." },
+    { "word": "風", "reading": "kaze", "meaning": "wind", "example": "今日は風が強い。", "exampleMeaning": "The wind is strong today." },
+    { "word": "曇り", "reading": "kumori", "meaning": "cloudy", "example": "今日は曇りです。", "exampleMeaning": "Today is cloudy." },
+    { "word": "春", "reading": "haru", "meaning": "spring", "example": "春は桜がきれいです。", "exampleMeaning": "The cherry blossoms are beautiful in spring." },
+    { "word": "夏", "reading": "natsu", "meaning": "summer", "example": "夏は暑いです。", "exampleMeaning": "Summer is hot." },
+    { "word": "秋", "reading": "aki", "meaning": "autumn / fall", "example": "秋は紅葉がきれいです。", "exampleMeaning": "The autumn leaves are beautiful in fall." },
+    { "word": "冬", "reading": "fuyu", "meaning": "winter", "example": "冬は寒いです。", "exampleMeaning": "Winter is cold." },
+    { "word": "暖かい", "reading": "atatakai", "meaning": "warm", "example": "今日は暖かい。", "exampleMeaning": "Today is warm." },
+    { "word": "涼しい", "reading": "suzushii", "meaning": "cool", "example": "秋は涼しいです。", "exampleMeaning": "Autumn is cool." },
+    { "word": "台風", "reading": "taifuu", "meaning": "typhoon", "example": "台風が来ています。", "exampleMeaning": "A typhoon is coming." },
+    { "word": "空", "reading": "sora", "meaning": "sky", "example": "空がきれいです。", "exampleMeaning": "The sky is beautiful." },
+    { "word": "温度", "reading": "ondo", "meaning": "temperature", "example": "今日の温度は三十度です。", "exampleMeaning": "Today's temperature is 30 degrees." },
+    { "word": "傘", "reading": "kasa", "meaning": "umbrella", "example": "傘を持っていきましょう。", "exampleMeaning": "Let's bring an umbrella." },
+    { "word": "湿度", "reading": "shitsudo", "meaning": "humidity", "example": "日本の夏は湿度が高い。", "exampleMeaning": "Japan's summer has high humidity." }
+  ],
+  "exercises": [
+    { "type": "match", "pairs": 5 },
+    { "type": "fill-blank", "items": [
+      { "sentence": "___が降っています。", "answer": "雨", "hint": "rain" },
+      { "sentence": "___は桜がきれいです。", "answer": "春", "hint": "spring" },
+      { "sentence": "___を持っていきましょう。", "answer": "傘", "hint": "umbrella" }
+    ]},
+    { "type": "multiple-choice", "items": [
+      { "question": "「曇り」はどういう意味ですか？", "options": ["sunny", "cloudy", "rainy", "windy"], "answer": 1 },
+      { "question": "「summer」は日本語で何ですか？", "options": ["春", "秋", "夏", "冬"], "answer": 2 },
+      { "question": "「涼しい」はどういう意味ですか？", "options": ["hot", "warm", "cold", "cool"], "answer": 3 }
+    ]}
+  ]
+}

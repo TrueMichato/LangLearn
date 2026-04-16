@@ -1,0 +1,38 @@
+{
+  "id": "family",
+  "words": [
+    { "word": "お父さん", "reading": "otousan", "meaning": "father (polite)", "example": "お父さんは会社で働いています。", "exampleMeaning": "My father works at a company." },
+    { "word": "父", "reading": "chichi", "meaning": "father (humble)", "example": "父は料理が上手です。", "exampleMeaning": "My father is good at cooking." },
+    { "word": "お母さん", "reading": "okaasan", "meaning": "mother (polite)", "example": "お母さんの料理はおいしいです。", "exampleMeaning": "My mother's cooking is delicious." },
+    { "word": "母", "reading": "haha", "meaning": "mother (humble)", "example": "母は先生です。", "exampleMeaning": "My mother is a teacher." },
+    { "word": "お兄さん", "reading": "oniisan", "meaning": "older brother (polite)", "example": "お兄さんは大学生です。", "exampleMeaning": "My older brother is a university student." },
+    { "word": "兄", "reading": "ani", "meaning": "older brother (humble)", "example": "兄は東京に住んでいます。", "exampleMeaning": "My older brother lives in Tokyo." },
+    { "word": "お姉さん", "reading": "oneesan", "meaning": "older sister (polite)", "example": "お姉さんはピアノが上手です。", "exampleMeaning": "My older sister is good at piano." },
+    { "word": "姉", "reading": "ane", "meaning": "older sister (humble)", "example": "姉は医者です。", "exampleMeaning": "My older sister is a doctor." },
+    { "word": "弟", "reading": "otouto", "meaning": "younger brother", "example": "弟はサッカーが好きです。", "exampleMeaning": "My younger brother likes soccer." },
+    { "word": "妹", "reading": "imouto", "meaning": "younger sister", "example": "妹は高校生です。", "exampleMeaning": "My younger sister is a high school student." },
+    { "word": "おじいさん", "reading": "ojiisan", "meaning": "grandfather", "example": "おじいさんは八十歳です。", "exampleMeaning": "My grandfather is eighty years old." },
+    { "word": "おばあさん", "reading": "obaasan", "meaning": "grandmother", "example": "おばあさんの家に遊びに行きます。", "exampleMeaning": "I will visit my grandmother's house." },
+    { "word": "家族", "reading": "kazoku", "meaning": "family", "example": "家族は五人です。", "exampleMeaning": "There are five people in my family." },
+    { "word": "両親", "reading": "ryoushin", "meaning": "parents", "example": "両親に感謝しています。", "exampleMeaning": "I am grateful to my parents." },
+    { "word": "子供", "reading": "kodomo", "meaning": "child / children", "example": "子供たちが公園で遊んでいます。", "exampleMeaning": "The children are playing in the park." },
+    { "word": "赤ちゃん", "reading": "akachan", "meaning": "baby", "example": "赤ちゃんがかわいいです。", "exampleMeaning": "The baby is cute." },
+    { "word": "夫", "reading": "otto", "meaning": "husband", "example": "夫は毎朝ジョギングをします。", "exampleMeaning": "My husband jogs every morning." },
+    { "word": "妻", "reading": "tsuma", "meaning": "wife", "example": "妻と一緒に旅行しました。", "exampleMeaning": "I traveled together with my wife." },
+    { "word": "息子", "reading": "musuko", "meaning": "son", "example": "息子は来年小学校に入ります。", "exampleMeaning": "My son will enter elementary school next year." },
+    { "word": "娘", "reading": "musume", "meaning": "daughter", "example": "娘は絵を描くのが好きです。", "exampleMeaning": "My daughter likes drawing pictures." }
+  ],
+  "exercises": [
+    { "type": "match", "pairs": 5 },
+    { "type": "fill-blank", "items": [
+      { "sentence": "___は五人です。", "answer": "家族", "hint": "Family" },
+      { "sentence": "___がかわいいです。", "answer": "赤ちゃん", "hint": "Baby" },
+      { "sentence": "___はサッカーが好きです。", "answer": "弟", "hint": "Younger brother" }
+    ]},
+    { "type": "multiple-choice", "items": [
+      { "question": "How do you say 'mother' politely in Japanese?", "options": ["お母さん", "母", "お姉さん", "妻"], "answer": 0 },
+      { "question": "What does 両親 mean?", "options": ["parents", "family", "children", "siblings"], "answer": 0 },
+      { "question": "How do you read 娘?", "options": ["musume", "musuko", "tsuma", "imouto"], "answer": 0 }
+    ]}
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "id": "body",
+  "words": [
+    { "word": "Голова", "reading": "golova", "meaning": "Head", "example": "У меня болит голова.", "exampleMeaning": "I have a headache." },
+    { "word": "Глаза", "reading": "glaza", "meaning": "Eyes", "example": "У неё красивые глаза.", "exampleMeaning": "She has beautiful eyes." },
+    { "word": "Уши", "reading": "ushi", "meaning": "Ears", "example": "Закрой уши, тут громко.", "exampleMeaning": "Cover your ears, it's loud here." },
+    { "word": "Рот", "reading": "rot", "meaning": "Mouth", "example": "Откройте рот, пожалуйста.", "exampleMeaning": "Open your mouth, please." },
+    { "word": "Нос", "reading": "nos", "meaning": "Nose", "example": "У клоуна красный нос.", "exampleMeaning": "The clown has a red nose." },
+    { "word": "Руки", "reading": "ruki", "meaning": "Hands / Arms", "example": "Вымой руки перед едой.", "exampleMeaning": "Wash your hands before eating." },
+    { "word": "Ноги", "reading": "nogi", "meaning": "Legs / Feet", "example": "После прогулки болят ноги.", "exampleMeaning": "My legs hurt after the walk." },
+    { "word": "Сердце", "reading": "serdtse", "meaning": "Heart", "example": "Сердце бьётся быстро.", "exampleMeaning": "The heart is beating fast." },
+    { "word": "Живот", "reading": "zhivot", "meaning": "Stomach / Belly", "example": "У меня болит живот.", "exampleMeaning": "My stomach hurts." },
+    { "word": "Спина", "reading": "spina", "meaning": "Back", "example": "У дедушки болит спина.", "exampleMeaning": "Grandfather's back hurts." },
+    { "word": "Палец", "reading": "palets", "meaning": "Finger / Toe", "example": "Я порезал палец.", "exampleMeaning": "I cut my finger." },
+    { "word": "Волосы", "reading": "volosy", "meaning": "Hair", "example": "У неё длинные волосы.", "exampleMeaning": "She has long hair." },
+    { "word": "Зубы", "reading": "zuby", "meaning": "Teeth", "example": "Чисти зубы два раза в день.", "exampleMeaning": "Brush your teeth twice a day." },
+    { "word": "Шея", "reading": "sheya", "meaning": "Neck", "example": "На шее красивый шарф.", "exampleMeaning": "There is a beautiful scarf on the neck." },
+    { "word": "Плечо", "reading": "plecho", "meaning": "Shoulder", "example": "Он положил руку на плечо.", "exampleMeaning": "He put his hand on the shoulder." },
+    { "word": "Колено", "reading": "koleno", "meaning": "Knee", "example": "Ребёнок упал и ушиб колено.", "exampleMeaning": "The child fell and bruised the knee." }
+  ],
+  "exercises": [
+    { "type": "match", "pairs": 5 },
+    { "type": "fill-blank", "items": [
+      { "sentence": "У меня болит ___.", "answer": "Голова", "hint": "Head" },
+      { "sentence": "Вымой ___ перед едой.", "answer": "Руки", "hint": "Hands" },
+      { "sentence": "Чисти ___ два раза в день.", "answer": "Зубы", "hint": "Teeth" }
+    ]},
+    { "type": "multiple-choice", "items": [
+      { "question": "What does 'Глаза' mean?", "options": ["Eyes", "Ears", "Nose", "Mouth"], "answer": 0 },
+      { "question": "How do you say 'Heart' in Russian?", "options": ["Сердце", "Живот", "Голова", "Спина"], "answer": 0 },
+      { "question": "What is 'Ноги'?", "options": ["Legs / Feet", "Hands / Arms", "Fingers", "Knees"], "answer": 0 }
+    ]}
+  ]
+}

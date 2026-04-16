@@ -1,0 +1,36 @@
+{
+  "id": "ja-vocab-adjectives",
+  "words": [
+    { "word": "大きい", "reading": "ookii", "meaning": "big / large", "example": "この犬は大きい。", "exampleMeaning": "This dog is big." },
+    { "word": "小さい", "reading": "chiisai", "meaning": "small / little", "example": "小さい猫がいます。", "exampleMeaning": "There is a small cat." },
+    { "word": "新しい", "reading": "atarashii", "meaning": "new", "example": "新しい車を買いました。", "exampleMeaning": "I bought a new car." },
+    { "word": "古い", "reading": "furui", "meaning": "old (things)", "example": "これは古い本です。", "exampleMeaning": "This is an old book." },
+    { "word": "高い", "reading": "takai", "meaning": "expensive / tall", "example": "この建物は高い。", "exampleMeaning": "This building is tall." },
+    { "word": "安い", "reading": "yasui", "meaning": "cheap / inexpensive", "example": "このレストランは安い。", "exampleMeaning": "This restaurant is cheap." },
+    { "word": "暑い", "reading": "atsui", "meaning": "hot (weather)", "example": "今日はとても暑い。", "exampleMeaning": "Today is very hot." },
+    { "word": "寒い", "reading": "samui", "meaning": "cold (weather)", "example": "冬は寒い。", "exampleMeaning": "Winter is cold." },
+    { "word": "良い", "reading": "yoi / ii", "meaning": "good", "example": "天気が良い。", "exampleMeaning": "The weather is good." },
+    { "word": "悪い", "reading": "warui", "meaning": "bad", "example": "気分が悪い。", "exampleMeaning": "I feel bad." },
+    { "word": "長い", "reading": "nagai", "meaning": "long", "example": "この川は長い。", "exampleMeaning": "This river is long." },
+    { "word": "短い", "reading": "mijikai", "meaning": "short (length)", "example": "短い映画を見ました。", "exampleMeaning": "I watched a short movie." },
+    { "word": "早い", "reading": "hayai", "meaning": "early / fast", "example": "朝早い時間に起きます。", "exampleMeaning": "I wake up at an early time in the morning." },
+    { "word": "遅い", "reading": "osoi", "meaning": "late / slow", "example": "電車が遅い。", "exampleMeaning": "The train is slow." },
+    { "word": "難しい", "reading": "muzukashii", "meaning": "difficult", "example": "日本語は難しい。", "exampleMeaning": "Japanese is difficult." },
+    { "word": "易しい", "reading": "yasashii", "meaning": "easy / simple", "example": "この問題は易しい。", "exampleMeaning": "This problem is easy." },
+    { "word": "美味しい", "reading": "oishii", "meaning": "delicious", "example": "この料理は美味しい。", "exampleMeaning": "This food is delicious." },
+    { "word": "楽しい", "reading": "tanoshii", "meaning": "fun / enjoyable", "example": "旅行は楽しい。", "exampleMeaning": "Traveling is fun." }
+  ],
+  "exercises": [
+    { "type": "match", "pairs": 5 },
+    { "type": "fill-blank", "items": [
+      { "sentence": "今日はとても___。", "answer": "暑い", "hint": "hot (weather)" },
+      { "sentence": "日本語は___。", "answer": "難しい", "hint": "difficult" },
+      { "sentence": "この猫は___。", "answer": "小さい", "hint": "small" }
+    ]},
+    { "type": "multiple-choice", "items": [
+      { "question": "「高い」はどういう意味ですか？", "options": ["cheap", "expensive / tall", "short", "long"], "answer": 1 },
+      { "question": "「good」は日本語で何ですか？", "options": ["悪い", "早い", "良い", "長い"], "answer": 2 },
+      { "question": "「寒い」はどういう意味ですか？", "options": ["hot", "warm", "cool", "cold (weather)"], "answer": 3 }
+    ]}
+  ]
+}

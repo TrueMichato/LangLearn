@@ -1,0 +1,34 @@
+{
+  "id": "phrases",
+  "words": [
+    { "word": "Пожалуйста", "reading": "pozhaluysta", "meaning": "Please / You're welcome", "example": "Помогите мне, пожалуйста.", "exampleMeaning": "Help me, please." },
+    { "word": "Будьте здоровы", "reading": "bud'te zdorovy", "meaning": "Bless you (after sneezing)", "example": "Апчхи! — Будьте здоровы!", "exampleMeaning": "Achoo! — Bless you!" },
+    { "word": "Ни пуха ни пера", "reading": "ni pukha ni pera", "meaning": "Good luck! (lit. Neither down nor feather)", "example": "Завтра экзамен? Ни пуха ни пера!", "exampleMeaning": "Exam tomorrow? Good luck!" },
+    { "word": "С днём рождения", "reading": "s dnyom rozhdeniya", "meaning": "Happy birthday", "example": "С днём рождения, дорогая!", "exampleMeaning": "Happy birthday, dear!" },
+    { "word": "Приятного аппетита", "reading": "priyatnogo appetita", "meaning": "Bon appétit / Enjoy your meal", "example": "Обед готов. Приятного аппетита!", "exampleMeaning": "Lunch is ready. Enjoy your meal!" },
+    { "word": "Как дела?", "reading": "kak dela?", "meaning": "How are you?", "example": "Привет! Как дела?", "exampleMeaning": "Hi! How are you?" },
+    { "word": "Всё хорошо", "reading": "vsyo khorosho", "meaning": "Everything is fine", "example": "Не волнуйся, всё хорошо.", "exampleMeaning": "Don't worry, everything is fine." },
+    { "word": "Не за что", "reading": "ne za chto", "meaning": "Don't mention it / You're welcome", "example": "Спасибо! — Не за что!", "exampleMeaning": "Thank you! — Don't mention it!" },
+    { "word": "Удачи", "reading": "udachi", "meaning": "Good luck", "example": "Удачи на экзамене!", "exampleMeaning": "Good luck on the exam!" },
+    { "word": "Будь здоров", "reading": "bud' zdorov", "meaning": "Take care / Be healthy (informal)", "example": "Пока, будь здоров!", "exampleMeaning": "Bye, take care!" },
+    { "word": "С Новым годом", "reading": "s Novym godom", "meaning": "Happy New Year", "example": "С Новым годом, друзья!", "exampleMeaning": "Happy New Year, friends!" },
+    { "word": "Молодец", "reading": "molodets", "meaning": "Well done / Good job", "example": "Ты сдал экзамен? Молодец!", "exampleMeaning": "You passed the exam? Well done!" },
+    { "word": "Ничего страшного", "reading": "nichego strashnogo", "meaning": "No big deal / It's okay", "example": "Извините! — Ничего страшного.", "exampleMeaning": "Sorry! — No big deal." },
+    { "word": "Давайте", "reading": "davayte", "meaning": "Let's (do something)", "example": "Давайте начнём урок.", "exampleMeaning": "Let's start the lesson." },
+    { "word": "Конечно", "reading": "konechno", "meaning": "Of course", "example": "Ты поможешь? — Конечно!", "exampleMeaning": "Will you help? — Of course!" },
+    { "word": "К сожалению", "reading": "k sozhaleniyu", "meaning": "Unfortunately", "example": "К сожалению, я не могу прийти.", "exampleMeaning": "Unfortunately, I cannot come." }
+  ],
+  "exercises": [
+    { "type": "match", "pairs": 5 },
+    { "type": "fill-blank", "items": [
+      { "sentence": "Завтра экзамен? ___!", "answer": "Ни пуха ни пера", "hint": "Good luck (idiom)" },
+      { "sentence": "Обед готов. ___!", "answer": "Приятного аппетита", "hint": "Enjoy your meal" },
+      { "sentence": "Ты сдал экзамен? ___!", "answer": "Молодец", "hint": "Well done" }
+    ]},
+    { "type": "multiple-choice", "items": [
+      { "question": "What does 'Ни пуха ни пера' mean?", "options": ["Good luck", "Goodbye", "Happy birthday", "Well done"], "answer": 0 },
+      { "question": "How do you say 'Happy birthday' in Russian?", "options": ["С днём рождения", "С Новым годом", "Будьте здоровы", "Удачи"], "answer": 0 },
+      { "question": "What does 'Конечно' mean?", "options": ["Of course", "Never", "Maybe", "No way"], "answer": 0 }
+    ]}
+  ]
+}

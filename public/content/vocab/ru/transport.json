@@ -1,0 +1,34 @@
+{
+  "id": "transport",
+  "words": [
+    { "word": "Машина", "reading": "mashina", "meaning": "Car", "example": "Я еду на машине.", "exampleMeaning": "I am going by car." },
+    { "word": "Автобус", "reading": "avtobus", "meaning": "Bus", "example": "Автобус приходит через пять минут.", "exampleMeaning": "The bus arrives in five minutes." },
+    { "word": "Поезд", "reading": "poyezd", "meaning": "Train", "example": "Поезд отправляется в шесть.", "exampleMeaning": "The train departs at six." },
+    { "word": "Метро", "reading": "metro", "meaning": "Metro / Subway", "example": "Я езжу на метро каждый день.", "exampleMeaning": "I take the metro every day." },
+    { "word": "Самолёт", "reading": "samolyot", "meaning": "Airplane", "example": "Самолёт летит в Москву.", "exampleMeaning": "The airplane is flying to Moscow." },
+    { "word": "Велосипед", "reading": "velosiped", "meaning": "Bicycle", "example": "Летом я катаюсь на велосипеде.", "exampleMeaning": "In summer I ride a bicycle." },
+    { "word": "Такси", "reading": "taksi", "meaning": "Taxi", "example": "Вызовите такси, пожалуйста.", "exampleMeaning": "Call a taxi, please." },
+    { "word": "Остановка", "reading": "ostanovka", "meaning": "Bus stop", "example": "Остановка находится рядом.", "exampleMeaning": "The bus stop is nearby." },
+    { "word": "Направо", "reading": "napravo", "meaning": "To the right", "example": "Поверните направо на светофоре.", "exampleMeaning": "Turn right at the traffic light." },
+    { "word": "Налево", "reading": "nalevo", "meaning": "To the left", "example": "Аптека налево от магазина.", "exampleMeaning": "The pharmacy is to the left of the store." },
+    { "word": "Прямо", "reading": "pryamo", "meaning": "Straight ahead", "example": "Идите прямо до конца улицы.", "exampleMeaning": "Go straight to the end of the street." },
+    { "word": "Улица", "reading": "ulitsa", "meaning": "Street", "example": "Наша улица очень тихая.", "exampleMeaning": "Our street is very quiet." },
+    { "word": "Дорога", "reading": "doroga", "meaning": "Road", "example": "Будь осторожен на дороге.", "exampleMeaning": "Be careful on the road." },
+    { "word": "Мост", "reading": "most", "meaning": "Bridge", "example": "Перейдите через мост.", "exampleMeaning": "Cross the bridge." },
+    { "word": "Вокзал", "reading": "vokzal", "meaning": "Train station", "example": "Встретимся на вокзале.", "exampleMeaning": "Let's meet at the train station." },
+    { "word": "Билет", "reading": "bilet", "meaning": "Ticket", "example": "Купите билет в кассе.", "exampleMeaning": "Buy a ticket at the ticket office." }
+  ],
+  "exercises": [
+    { "type": "match", "pairs": 5 },
+    { "type": "fill-blank", "items": [
+      { "sentence": "Я еду на ___.", "answer": "Машине", "hint": "Car (prepositional)" },
+      { "sentence": "Поверните ___ на светофоре.", "answer": "Направо", "hint": "To the right" },
+      { "sentence": "___ отправляется в шесть.", "answer": "Поезд", "hint": "Train" }
+    ]},
+    { "type": "multiple-choice", "items": [
+      { "question": "What does 'Автобус' mean?", "options": ["Bus", "Car", "Taxi", "Train"], "answer": 0 },
+      { "question": "How do you say 'Straight ahead' in Russian?", "options": ["Прямо", "Направо", "Налево", "Назад"], "answer": 0 },
+      { "question": "What is 'Самолёт'?", "options": ["Airplane", "Helicopter", "Train", "Ship"], "answer": 0 }
+    ]}
+  ]
+}

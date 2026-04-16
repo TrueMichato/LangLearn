@@ -1,0 +1,34 @@
+{
+  "id": "travel",
+  "words": [
+    { "word": "Путешествие", "reading": "puteshestviye", "meaning": "Travel / Journey", "example": "Путешествие было прекрасным.", "exampleMeaning": "The journey was wonderful." },
+    { "word": "Гостиница", "reading": "gostinitsa", "meaning": "Hotel", "example": "Мы забронировали гостиницу.", "exampleMeaning": "We booked a hotel." },
+    { "word": "Аэропорт", "reading": "aeroport", "meaning": "Airport", "example": "Такси везёт нас в аэропорт.", "exampleMeaning": "The taxi is taking us to the airport." },
+    { "word": "Паспорт", "reading": "pasport", "meaning": "Passport", "example": "Не забудь паспорт дома.", "exampleMeaning": "Don't forget your passport at home." },
+    { "word": "Билет", "reading": "bilet", "meaning": "Ticket", "example": "Я купил билет на самолёт.", "exampleMeaning": "I bought a plane ticket." },
+    { "word": "Чемодан", "reading": "chemodan", "meaning": "Suitcase", "example": "Чемодан уже собран.", "exampleMeaning": "The suitcase is already packed." },
+    { "word": "Виза", "reading": "viza", "meaning": "Visa", "example": "Для поездки нужна виза.", "exampleMeaning": "A visa is needed for the trip." },
+    { "word": "Карта", "reading": "karta", "meaning": "Map", "example": "Посмотри на карту города.", "exampleMeaning": "Look at the city map." },
+    { "word": "Турист", "reading": "turist", "meaning": "Tourist", "example": "Туристы фотографируют памятник.", "exampleMeaning": "Tourists are photographing the monument." },
+    { "word": "Экскурсия", "reading": "ekskursiya", "meaning": "Excursion / Tour", "example": "Мы были на экскурсии в музее.", "exampleMeaning": "We were on a tour at the museum." },
+    { "word": "Пляж", "reading": "plyazh", "meaning": "Beach", "example": "Летом мы ходим на пляж.", "exampleMeaning": "In summer we go to the beach." },
+    { "word": "Музей", "reading": "muzey", "meaning": "Museum", "example": "В музее много картин.", "exampleMeaning": "There are many paintings in the museum." },
+    { "word": "Ресторан", "reading": "restoran", "meaning": "Restaurant", "example": "Давайте поужинаем в ресторане.", "exampleMeaning": "Let's have dinner at a restaurant." },
+    { "word": "Страна", "reading": "strana", "meaning": "Country", "example": "Россия — большая страна.", "exampleMeaning": "Russia is a big country." },
+    { "word": "Город", "reading": "gorod", "meaning": "City", "example": "Москва — красивый город.", "exampleMeaning": "Moscow is a beautiful city." },
+    { "word": "Граница", "reading": "granitsa", "meaning": "Border", "example": "Мы пересекли границу.", "exampleMeaning": "We crossed the border." }
+  ],
+  "exercises": [
+    { "type": "match", "pairs": 5 },
+    { "type": "fill-blank", "items": [
+      { "sentence": "Мы забронировали ___.", "answer": "Гостиницу", "hint": "Hotel (accusative)" },
+      { "sentence": "Не забудь ___ дома.", "answer": "Паспорт", "hint": "Passport" },
+      { "sentence": "Россия — большая ___.", "answer": "Страна", "hint": "Country" }
+    ]},
+    { "type": "multiple-choice", "items": [
+      { "question": "What does 'Чемодан' mean?", "options": ["Suitcase", "Bag", "Wallet", "Backpack"], "answer": 0 },
+      { "question": "How do you say 'Airport' in Russian?", "options": ["Аэропорт", "Вокзал", "Остановка", "Порт"], "answer": 0 },
+      { "question": "What is 'Экскурсия'?", "options": ["Excursion / Tour", "Exercise", "Exam", "Exhibition"], "answer": 0 }
+    ]}
+  ]
+}

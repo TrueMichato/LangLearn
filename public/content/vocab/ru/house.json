@@ -1,0 +1,34 @@
+{
+  "id": "house",
+  "words": [
+    { "word": "Дом", "reading": "dom", "meaning": "House / Home", "example": "Мы живём в большом доме.", "exampleMeaning": "We live in a big house." },
+    { "word": "Комната", "reading": "komnata", "meaning": "Room", "example": "Моя комната очень уютная.", "exampleMeaning": "My room is very cozy." },
+    { "word": "Кухня", "reading": "kukhnya", "meaning": "Kitchen", "example": "Мама готовит на кухне.", "exampleMeaning": "Mom is cooking in the kitchen." },
+    { "word": "Ванная", "reading": "vannaya", "meaning": "Bathroom", "example": "Ванная находится на втором этаже.", "exampleMeaning": "The bathroom is on the second floor." },
+    { "word": "Стол", "reading": "stol", "meaning": "Table", "example": "Книга лежит на столе.", "exampleMeaning": "The book is on the table." },
+    { "word": "Стул", "reading": "stul", "meaning": "Chair", "example": "Садитесь на стул.", "exampleMeaning": "Sit down on the chair." },
+    { "word": "Кровать", "reading": "krovat'", "meaning": "Bed", "example": "Кровать стоит у стены.", "exampleMeaning": "The bed is by the wall." },
+    { "word": "Окно", "reading": "okno", "meaning": "Window", "example": "Откройте окно, пожалуйста.", "exampleMeaning": "Open the window, please." },
+    { "word": "Дверь", "reading": "dver'", "meaning": "Door", "example": "Закройте дверь за собой.", "exampleMeaning": "Close the door behind you." },
+    { "word": "Диван", "reading": "divan", "meaning": "Sofa / Couch", "example": "Кошка спит на диване.", "exampleMeaning": "The cat is sleeping on the sofa." },
+    { "word": "Шкаф", "reading": "shkaf", "meaning": "Wardrobe / Cabinet", "example": "Одежда висит в шкафу.", "exampleMeaning": "The clothes are hanging in the wardrobe." },
+    { "word": "Зеркало", "reading": "zerkalo", "meaning": "Mirror", "example": "Зеркало висит на стене.", "exampleMeaning": "The mirror hangs on the wall." },
+    { "word": "Лампа", "reading": "lampa", "meaning": "Lamp", "example": "Включи лампу, темно.", "exampleMeaning": "Turn on the lamp, it's dark." },
+    { "word": "Пол", "reading": "pol", "meaning": "Floor", "example": "На полу лежит ковёр.", "exampleMeaning": "There is a carpet on the floor." },
+    { "word": "Стена", "reading": "stena", "meaning": "Wall", "example": "На стене висит картина.", "exampleMeaning": "A painting hangs on the wall." },
+    { "word": "Потолок", "reading": "potolok", "meaning": "Ceiling", "example": "Потолок в квартире высокий.", "exampleMeaning": "The ceiling in the apartment is high." }
+  ],
+  "exercises": [
+    { "type": "match", "pairs": 5 },
+    { "type": "fill-blank", "items": [
+      { "sentence": "Книга лежит на ___.", "answer": "Столе", "hint": "Table (prepositional)" },
+      { "sentence": "Откройте ___, пожалуйста.", "answer": "Окно", "hint": "Window" },
+      { "sentence": "Мама готовит на ___.", "answer": "Кухне", "hint": "Kitchen (prepositional)" }
+    ]},
+    { "type": "multiple-choice", "items": [
+      { "question": "What does 'Кровать' mean?", "options": ["Bed", "Table", "Chair", "Sofa"], "answer": 0 },
+      { "question": "How do you say 'Door' in Russian?", "options": ["Дверь", "Окно", "Стена", "Пол"], "answer": 0 },
+      { "question": "What is 'Зеркало'?", "options": ["Mirror", "Window", "Lamp", "Picture"], "answer": 0 }
+    ]}
+  ]
+}

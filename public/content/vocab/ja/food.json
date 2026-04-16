@@ -1,0 +1,35 @@
+{
+  "id": "food",
+  "words": [
+    { "word": "ご飯", "reading": "gohan", "meaning": "rice / meal", "example": "朝ご飯を食べましたか？", "exampleMeaning": "Did you eat breakfast?" },
+    { "word": "パン", "reading": "pan", "meaning": "bread", "example": "毎朝パンを食べます。", "exampleMeaning": "I eat bread every morning." },
+    { "word": "水", "reading": "mizu", "meaning": "water", "example": "水をください。", "exampleMeaning": "Water, please." },
+    { "word": "お茶", "reading": "ocha", "meaning": "tea", "example": "お茶を一杯いかがですか？", "exampleMeaning": "Would you like a cup of tea?" },
+    { "word": "肉", "reading": "niku", "meaning": "meat", "example": "肉と野菜を買いました。", "exampleMeaning": "I bought meat and vegetables." },
+    { "word": "魚", "reading": "sakana", "meaning": "fish", "example": "日本人は魚をよく食べます。", "exampleMeaning": "Japanese people often eat fish." },
+    { "word": "野菜", "reading": "yasai", "meaning": "vegetables", "example": "野菜をもっと食べてください。", "exampleMeaning": "Please eat more vegetables." },
+    { "word": "果物", "reading": "kudamono", "meaning": "fruit", "example": "果物の中でりんごが一番好きです。", "exampleMeaning": "Among fruits, I like apples the most." },
+    { "word": "卵", "reading": "tamago", "meaning": "egg", "example": "卵を二つ使います。", "exampleMeaning": "I will use two eggs." },
+    { "word": "牛乳", "reading": "gyuunyuu", "meaning": "milk", "example": "毎日牛乳を飲みます。", "exampleMeaning": "I drink milk every day." },
+    { "word": "砂糖", "reading": "satou", "meaning": "sugar", "example": "コーヒーに砂糖を入れますか？", "exampleMeaning": "Do you put sugar in your coffee?" },
+    { "word": "塩", "reading": "shio", "meaning": "salt", "example": "塩を少し入れてください。", "exampleMeaning": "Please add a little salt." },
+    { "word": "料理", "reading": "ryouri", "meaning": "cooking / dish", "example": "日本料理が好きです。", "exampleMeaning": "I like Japanese cuisine." },
+    { "word": "味", "reading": "aji", "meaning": "taste / flavor", "example": "この味はどうですか？", "exampleMeaning": "How is the flavor?" },
+    { "word": "おいしい", "reading": "oishii", "meaning": "delicious", "example": "このラーメンはおいしいです。", "exampleMeaning": "This ramen is delicious." },
+    { "word": "甘い", "reading": "amai", "meaning": "sweet", "example": "このケーキは甘いです。", "exampleMeaning": "This cake is sweet." },
+    { "word": "辛い", "reading": "karai", "meaning": "spicy", "example": "カレーは辛いですか？", "exampleMeaning": "Is the curry spicy?" }
+  ],
+  "exercises": [
+    { "type": "match", "pairs": 5 },
+    { "type": "fill-blank", "items": [
+      { "sentence": "___をください。", "answer": "水", "hint": "Water" },
+      { "sentence": "このラーメンは___です。", "answer": "おいしい", "hint": "Delicious" },
+      { "sentence": "コーヒーに___を入れますか？", "answer": "砂糖", "hint": "Sugar" }
+    ]},
+    { "type": "multiple-choice", "items": [
+      { "question": "How do you say 'vegetables' in Japanese?", "options": ["野菜", "果物", "肉", "魚"], "answer": 0 },
+      { "question": "What does 牛乳 mean?", "options": ["milk", "water", "tea", "juice"], "answer": 0 },
+      { "question": "How do you read 卵?", "options": ["tamago", "sakana", "niku", "shio"], "answer": 0 }
+    ]}
+  ]
+}

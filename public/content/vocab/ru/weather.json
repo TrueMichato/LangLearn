@@ -1,0 +1,34 @@
+{
+  "id": "weather",
+  "words": [
+    { "word": "Погода", "reading": "pogoda", "meaning": "Weather", "example": "Какая сегодня погода?", "exampleMeaning": "What is the weather like today?" },
+    { "word": "Солнце", "reading": "solntse", "meaning": "Sun", "example": "Солнце светит ярко.", "exampleMeaning": "The sun is shining brightly." },
+    { "word": "Дождь", "reading": "dozhd'", "meaning": "Rain", "example": "На улице идёт дождь.", "exampleMeaning": "It is raining outside." },
+    { "word": "Снег", "reading": "sneg", "meaning": "Snow", "example": "Зимой идёт снег.", "exampleMeaning": "In winter it snows." },
+    { "word": "Ветер", "reading": "veter", "meaning": "Wind", "example": "Сегодня сильный ветер.", "exampleMeaning": "There is a strong wind today." },
+    { "word": "Облако", "reading": "oblako", "meaning": "Cloud", "example": "На небе белые облака.", "exampleMeaning": "There are white clouds in the sky." },
+    { "word": "Весна", "reading": "vesna", "meaning": "Spring", "example": "Весной всё цветёт.", "exampleMeaning": "In spring everything blooms." },
+    { "word": "Лето", "reading": "leto", "meaning": "Summer", "example": "Летом мы едем на море.", "exampleMeaning": "In summer we go to the sea." },
+    { "word": "Осень", "reading": "osen'", "meaning": "Autumn / Fall", "example": "Осенью листья падают.", "exampleMeaning": "In autumn the leaves fall." },
+    { "word": "Зима", "reading": "zima", "meaning": "Winter", "example": "Зимой очень холодно.", "exampleMeaning": "In winter it is very cold." },
+    { "word": "Тепло", "reading": "teplo", "meaning": "Warm", "example": "Сегодня на улице тепло.", "exampleMeaning": "It is warm outside today." },
+    { "word": "Холодно", "reading": "kholodno", "meaning": "Cold (weather)", "example": "Зимой на улице холодно.", "exampleMeaning": "In winter it is cold outside." },
+    { "word": "Жарко", "reading": "zharko", "meaning": "Hot (weather)", "example": "Летом в городе жарко.", "exampleMeaning": "In summer it is hot in the city." },
+    { "word": "Гроза", "reading": "groza", "meaning": "Thunderstorm", "example": "Вечером будет гроза.", "exampleMeaning": "There will be a thunderstorm in the evening." },
+    { "word": "Туман", "reading": "tuman", "meaning": "Fog", "example": "Утром был густой туман.", "exampleMeaning": "In the morning there was thick fog." },
+    { "word": "Небо", "reading": "nebo", "meaning": "Sky", "example": "Небо сегодня чистое.", "exampleMeaning": "The sky is clear today." }
+  ],
+  "exercises": [
+    { "type": "match", "pairs": 5 },
+    { "type": "fill-blank", "items": [
+      { "sentence": "Какая сегодня ___?", "answer": "Погода", "hint": "Weather" },
+      { "sentence": "На улице идёт ___.", "answer": "Дождь", "hint": "Rain" },
+      { "sentence": "___ очень холодно.", "answer": "Зимой", "hint": "In winter" }
+    ]},
+    { "type": "multiple-choice", "items": [
+      { "question": "What does 'Снег' mean?", "options": ["Snow", "Rain", "Wind", "Sun"], "answer": 0 },
+      { "question": "How do you say 'Summer' in Russian?", "options": ["Лето", "Зима", "Весна", "Осень"], "answer": 0 },
+      { "question": "What is 'Гроза'?", "options": ["Thunderstorm", "Rainbow", "Fog", "Cloud"], "answer": 0 }
+    ]}
+  ]
+}

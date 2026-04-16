@@ -1,0 +1,36 @@
+{
+  "id": "ja-vocab-verbs",
+  "words": [
+    { "word": "する", "reading": "suru", "meaning": "to do", "example": "毎日運動をする。", "exampleMeaning": "I exercise every day." },
+    { "word": "行く", "reading": "iku", "meaning": "to go", "example": "学校に行く。", "exampleMeaning": "I go to school." },
+    { "word": "来る", "reading": "kuru", "meaning": "to come", "example": "友達が家に来る。", "exampleMeaning": "My friend comes to my house." },
+    { "word": "食べる", "reading": "taberu", "meaning": "to eat", "example": "朝ごはんを食べる。", "exampleMeaning": "I eat breakfast." },
+    { "word": "飲む", "reading": "nomu", "meaning": "to drink", "example": "水を飲む。", "exampleMeaning": "I drink water." },
+    { "word": "見る", "reading": "miru", "meaning": "to see / to watch", "example": "テレビを見る。", "exampleMeaning": "I watch TV." },
+    { "word": "聞く", "reading": "kiku", "meaning": "to listen / to ask", "example": "音楽を聞く。", "exampleMeaning": "I listen to music." },
+    { "word": "読む", "reading": "yomu", "meaning": "to read", "example": "本を読む。", "exampleMeaning": "I read a book." },
+    { "word": "書く", "reading": "kaku", "meaning": "to write", "example": "手紙を書く。", "exampleMeaning": "I write a letter." },
+    { "word": "話す", "reading": "hanasu", "meaning": "to speak / to talk", "example": "日本語を話す。", "exampleMeaning": "I speak Japanese." },
+    { "word": "買う", "reading": "kau", "meaning": "to buy", "example": "新しい靴を買う。", "exampleMeaning": "I buy new shoes." },
+    { "word": "作る", "reading": "tsukuru", "meaning": "to make / to create", "example": "料理を作る。", "exampleMeaning": "I make a meal." },
+    { "word": "使う", "reading": "tsukau", "meaning": "to use", "example": "パソコンを使う。", "exampleMeaning": "I use a computer." },
+    { "word": "待つ", "reading": "matsu", "meaning": "to wait", "example": "バスを待つ。", "exampleMeaning": "I wait for the bus." },
+    { "word": "走る", "reading": "hashiru", "meaning": "to run", "example": "公園で走る。", "exampleMeaning": "I run in the park." },
+    { "word": "寝る", "reading": "neru", "meaning": "to sleep", "example": "毎日十時に寝る。", "exampleMeaning": "I sleep at ten every day." },
+    { "word": "起きる", "reading": "okiru", "meaning": "to wake up", "example": "朝早く起きる。", "exampleMeaning": "I wake up early in the morning." },
+    { "word": "歩く", "reading": "aruku", "meaning": "to walk", "example": "駅まで歩く。", "exampleMeaning": "I walk to the station." }
+  ],
+  "exercises": [
+    { "type": "match", "pairs": 5 },
+    { "type": "fill-blank", "items": [
+      { "sentence": "朝ごはんを___。", "answer": "食べる", "hint": "to eat" },
+      { "sentence": "日本語を___。", "answer": "話す", "hint": "to speak" },
+      { "sentence": "本を___。", "answer": "読む", "hint": "to read" }
+    ]},
+    { "type": "multiple-choice", "items": [
+      { "question": "「飲む」はどういう意味ですか？", "options": ["to eat", "to drink", "to read", "to write"], "answer": 1 },
+      { "question": "「to go」は日本語で何ですか？", "options": ["来る", "走る", "行く", "歩く"], "answer": 2 },
+      { "question": "「書く」はどういう意味ですか？", "options": ["to listen", "to speak", "to read", "to write"], "answer": 3 }
+    ]}
+  ]
+}

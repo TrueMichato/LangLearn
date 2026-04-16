@@ -1,0 +1,35 @@
+{
+  "id": "ja-vocab-house",
+  "words": [
+    { "word": "家", "reading": "ie", "meaning": "house / home", "example": "私の家は駅の近くです。", "exampleMeaning": "My house is near the station." },
+    { "word": "部屋", "reading": "heya", "meaning": "room", "example": "この部屋は広い。", "exampleMeaning": "This room is spacious." },
+    { "word": "台所", "reading": "daidokoro", "meaning": "kitchen", "example": "台所で料理を作ります。", "exampleMeaning": "I cook in the kitchen." },
+    { "word": "お風呂", "reading": "ofuro", "meaning": "bath / bathroom", "example": "毎日お風呂に入ります。", "exampleMeaning": "I take a bath every day." },
+    { "word": "トイレ", "reading": "toire", "meaning": "toilet / restroom", "example": "トイレはどこですか？", "exampleMeaning": "Where is the restroom?" },
+    { "word": "テーブル", "reading": "teeburu", "meaning": "table", "example": "テーブルの上に花があります。", "exampleMeaning": "There are flowers on the table." },
+    { "word": "椅子", "reading": "isu", "meaning": "chair", "example": "椅子に座ってください。", "exampleMeaning": "Please sit on the chair." },
+    { "word": "窓", "reading": "mado", "meaning": "window", "example": "窓を開けてください。", "exampleMeaning": "Please open the window." },
+    { "word": "ドア", "reading": "doa", "meaning": "door", "example": "ドアを閉めてください。", "exampleMeaning": "Please close the door." },
+    { "word": "庭", "reading": "niwa", "meaning": "garden / yard", "example": "庭に木があります。", "exampleMeaning": "There is a tree in the garden." },
+    { "word": "ベッド", "reading": "beddo", "meaning": "bed", "example": "ベッドで寝ます。", "exampleMeaning": "I sleep in bed." },
+    { "word": "冷蔵庫", "reading": "reizouko", "meaning": "refrigerator", "example": "冷蔵庫に牛乳があります。", "exampleMeaning": "There is milk in the refrigerator." },
+    { "word": "電気", "reading": "denki", "meaning": "electricity / light", "example": "電気をつけてください。", "exampleMeaning": "Please turn on the light." },
+    { "word": "鍵", "reading": "kagi", "meaning": "key / lock", "example": "鍵をかけましたか？", "exampleMeaning": "Did you lock the door?" },
+    { "word": "玄関", "reading": "genkan", "meaning": "entrance / front door", "example": "玄関で靴を脱ぎます。", "exampleMeaning": "I take off my shoes at the entrance." },
+    { "word": "壁", "reading": "kabe", "meaning": "wall", "example": "壁に絵がかけてあります。", "exampleMeaning": "A picture is hanging on the wall." },
+    { "word": "階段", "reading": "kaidan", "meaning": "stairs", "example": "階段を上ります。", "exampleMeaning": "I go up the stairs." }
+  ],
+  "exercises": [
+    { "type": "match", "pairs": 5 },
+    { "type": "fill-blank", "items": [
+      { "sentence": "___で料理を作ります。", "answer": "台所", "hint": "kitchen" },
+      { "sentence": "___を開けてください。", "answer": "窓", "hint": "window" },
+      { "sentence": "___で靴を脱ぎます。", "answer": "玄関", "hint": "entrance" }
+    ]},
+    { "type": "multiple-choice", "items": [
+      { "question": "「冷蔵庫」はどういう意味ですか？", "options": ["kitchen", "refrigerator", "bathroom", "bedroom"], "answer": 1 },
+      { "question": "「chair」は日本語で何ですか？", "options": ["窓", "ドア", "椅子", "壁"], "answer": 2 },
+      { "question": "「鍵」はどういう意味ですか？", "options": ["window", "stairs", "wall", "key"], "answer": 3 }
+    ]}
+  ]
+}

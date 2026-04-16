@@ -1,0 +1,34 @@
+{
+  "id": "school-work",
+  "words": [
+    { "word": "Школа", "reading": "shkola", "meaning": "School", "example": "Дети идут в школу.", "exampleMeaning": "The children are going to school." },
+    { "word": "Учитель", "reading": "uchitel'", "meaning": "Teacher (male)", "example": "Учитель объясняет урок.", "exampleMeaning": "The teacher is explaining the lesson." },
+    { "word": "Ученик", "reading": "uchenik", "meaning": "Student / Pupil", "example": "Ученик отвечает на вопрос.", "exampleMeaning": "The student is answering the question." },
+    { "word": "Работа", "reading": "rabota", "meaning": "Work / Job", "example": "Я иду на работу.", "exampleMeaning": "I am going to work." },
+    { "word": "Офис", "reading": "ofis", "meaning": "Office", "example": "Офис находится в центре города.", "exampleMeaning": "The office is in the city center." },
+    { "word": "Урок", "reading": "urok", "meaning": "Lesson", "example": "Урок начинается в девять.", "exampleMeaning": "The lesson starts at nine." },
+    { "word": "Экзамен", "reading": "ekzamen", "meaning": "Exam", "example": "Завтра у нас экзамен.", "exampleMeaning": "Tomorrow we have an exam." },
+    { "word": "Книга", "reading": "kniga", "meaning": "Book", "example": "Я читаю интересную книгу.", "exampleMeaning": "I am reading an interesting book." },
+    { "word": "Тетрадь", "reading": "tetrad'", "meaning": "Notebook", "example": "Запишите в тетрадь.", "exampleMeaning": "Write it in your notebook." },
+    { "word": "Ручка", "reading": "ruchka", "meaning": "Pen", "example": "Дайте мне ручку, пожалуйста.", "exampleMeaning": "Give me a pen, please." },
+    { "word": "Карандаш", "reading": "karandash", "meaning": "Pencil", "example": "Рисуй карандашом.", "exampleMeaning": "Draw with a pencil." },
+    { "word": "Задача", "reading": "zadacha", "meaning": "Task / Problem", "example": "Решите эту задачу.", "exampleMeaning": "Solve this problem." },
+    { "word": "Домашнее задание", "reading": "domashneye zadaniye", "meaning": "Homework", "example": "Ты сделал домашнее задание?", "exampleMeaning": "Did you do your homework?" },
+    { "word": "Класс", "reading": "klass", "meaning": "Class / Classroom", "example": "В классе тридцать учеников.", "exampleMeaning": "There are thirty students in the class." },
+    { "word": "Университет", "reading": "universitet", "meaning": "University", "example": "Она учится в университете.", "exampleMeaning": "She studies at the university." },
+    { "word": "Компьютер", "reading": "komp'yuter", "meaning": "Computer", "example": "Я работаю за компьютером.", "exampleMeaning": "I work at the computer." }
+  ],
+  "exercises": [
+    { "type": "match", "pairs": 5 },
+    { "type": "fill-blank", "items": [
+      { "sentence": "Дети идут в ___.", "answer": "Школу", "hint": "School (accusative)" },
+      { "sentence": "___ начинается в девять.", "answer": "Урок", "hint": "Lesson" },
+      { "sentence": "Завтра у нас ___.", "answer": "Экзамен", "hint": "Exam" }
+    ]},
+    { "type": "multiple-choice", "items": [
+      { "question": "What does 'Учитель' mean?", "options": ["Teacher", "Student", "Director", "Doctor"], "answer": 0 },
+      { "question": "How do you say 'Book' in Russian?", "options": ["Книга", "Тетрадь", "Ручка", "Задача"], "answer": 0 },
+      { "question": "What is 'Домашнее задание'?", "options": ["Homework", "Classroom", "Textbook", "Schedule"], "answer": 0 }
+    ]}
+  ]
+}

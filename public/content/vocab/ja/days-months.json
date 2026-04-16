@@ -1,0 +1,35 @@
+{
+  "id": "days-months",
+  "words": [
+    { "word": "月曜日", "reading": "getsuyoubi", "meaning": "Monday", "example": "月曜日は仕事があります。", "exampleMeaning": "I have work on Monday." },
+    { "word": "火曜日", "reading": "kayoubi", "meaning": "Tuesday", "example": "火曜日にテニスをします。", "exampleMeaning": "I play tennis on Tuesday." },
+    { "word": "水曜日", "reading": "suiyoubi", "meaning": "Wednesday", "example": "水曜日は休みです。", "exampleMeaning": "Wednesday is my day off." },
+    { "word": "木曜日", "reading": "mokuyoubi", "meaning": "Thursday", "example": "木曜日に映画を見ます。", "exampleMeaning": "I watch a movie on Thursday." },
+    { "word": "金曜日", "reading": "kinyoubi", "meaning": "Friday", "example": "金曜日の夜は楽しいです。", "exampleMeaning": "Friday nights are fun." },
+    { "word": "土曜日", "reading": "doyoubi", "meaning": "Saturday", "example": "土曜日に買い物に行きます。", "exampleMeaning": "I go shopping on Saturday." },
+    { "word": "日曜日", "reading": "nichiyoubi", "meaning": "Sunday", "example": "日曜日は家族と過ごします。", "exampleMeaning": "I spend Sunday with my family." },
+    { "word": "今日", "reading": "kyou", "meaning": "today", "example": "今日はいい天気ですね。", "exampleMeaning": "It's nice weather today, isn't it?" },
+    { "word": "明日", "reading": "ashita", "meaning": "tomorrow", "example": "明日、学校に行きます。", "exampleMeaning": "I will go to school tomorrow." },
+    { "word": "昨日", "reading": "kinou", "meaning": "yesterday", "example": "昨日は雨でした。", "exampleMeaning": "It rained yesterday." },
+    { "word": "一月", "reading": "ichigatsu", "meaning": "January", "example": "一月はお正月があります。", "exampleMeaning": "New Year's is in January." },
+    { "word": "四月", "reading": "shigatsu", "meaning": "April", "example": "四月に桜が咲きます。", "exampleMeaning": "Cherry blossoms bloom in April." },
+    { "word": "七月", "reading": "shichigatsu", "meaning": "July", "example": "七月は暑いです。", "exampleMeaning": "July is hot." },
+    { "word": "十二月", "reading": "juunigatsu", "meaning": "December", "example": "十二月にクリスマスがあります。", "exampleMeaning": "Christmas is in December." },
+    { "word": "週", "reading": "shuu", "meaning": "week", "example": "今週は忙しいです。", "exampleMeaning": "This week is busy." },
+    { "word": "月", "reading": "tsuki / gatsu", "meaning": "month / moon", "example": "来月、旅行に行きます。", "exampleMeaning": "I will go on a trip next month." },
+    { "word": "年", "reading": "nen / toshi", "meaning": "year", "example": "今年は二〇二四年です。", "exampleMeaning": "This year is 2024." }
+  ],
+  "exercises": [
+    { "type": "match", "pairs": 5 },
+    { "type": "fill-blank", "items": [
+      { "sentence": "___はいい天気ですね。", "answer": "今日", "hint": "Today" },
+      { "sentence": "___に桜が咲きます。", "answer": "四月", "hint": "April" },
+      { "sentence": "___は雨でした。", "answer": "昨日", "hint": "Yesterday" }
+    ]},
+    { "type": "multiple-choice", "items": [
+      { "question": "How do you say 'Monday' in Japanese?", "options": ["月曜日", "火曜日", "金曜日", "日曜日"], "answer": 0 },
+      { "question": "What does 明日 mean?", "options": ["tomorrow", "today", "yesterday", "next week"], "answer": 0 },
+      { "question": "Which month is 七月?", "options": ["July", "June", "September", "October"], "answer": 0 }
+    ]}
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "id": "verbs",
+  "words": [
+    { "word": "Делать", "reading": "delat'", "meaning": "To do / To make", "example": "Что ты делаешь?", "exampleMeaning": "What are you doing?" },
+    { "word": "Идти", "reading": "idti", "meaning": "To go (on foot)", "example": "Я иду в магазин.", "exampleMeaning": "I am going to the store." },
+    { "word": "Есть", "reading": "yest'", "meaning": "To eat", "example": "Мы едим в ресторане.", "exampleMeaning": "We are eating at a restaurant." },
+    { "word": "Пить", "reading": "pit'", "meaning": "To drink", "example": "Я пью воду каждый день.", "exampleMeaning": "I drink water every day." },
+    { "word": "Читать", "reading": "chitat'", "meaning": "To read", "example": "Она любит читать книги.", "exampleMeaning": "She loves to read books." },
+    { "word": "Писать", "reading": "pisat'", "meaning": "To write", "example": "Он пишет письмо другу.", "exampleMeaning": "He is writing a letter to a friend." },
+    { "word": "Говорить", "reading": "govorit'", "meaning": "To speak / To say", "example": "Вы говорите по-русски?", "exampleMeaning": "Do you speak Russian?" },
+    { "word": "Видеть", "reading": "videt'", "meaning": "To see", "example": "Я вижу красивый закат.", "exampleMeaning": "I see a beautiful sunset." },
+    { "word": "Слышать", "reading": "slyshat'", "meaning": "To hear", "example": "Ты слышишь музыку?", "exampleMeaning": "Do you hear the music?" },
+    { "word": "Знать", "reading": "znat'", "meaning": "To know", "example": "Я знаю ответ.", "exampleMeaning": "I know the answer." },
+    { "word": "Хотеть", "reading": "khotet'", "meaning": "To want", "example": "Я хочу спать.", "exampleMeaning": "I want to sleep." },
+    { "word": "Мочь", "reading": "moch'", "meaning": "To be able to / Can", "example": "Ты можешь мне помочь?", "exampleMeaning": "Can you help me?" },
+    { "word": "Работать", "reading": "rabotat'", "meaning": "To work", "example": "Он работает в офисе.", "exampleMeaning": "He works in an office." },
+    { "word": "Жить", "reading": "zhit'", "meaning": "To live", "example": "Мы живём в Москве.", "exampleMeaning": "We live in Moscow." },
+    { "word": "Любить", "reading": "lyubit'", "meaning": "To love / To like", "example": "Я люблю свою семью.", "exampleMeaning": "I love my family." },
+    { "word": "Учить", "reading": "uchit'", "meaning": "To learn / To teach", "example": "Я учу русский язык.", "exampleMeaning": "I am learning Russian." },
+    { "word": "Спать", "reading": "spat'", "meaning": "To sleep", "example": "Дети спят в своей комнате.", "exampleMeaning": "The children are sleeping in their room." }
+  ],
+  "exercises": [
+    { "type": "match", "pairs": 5 },
+    { "type": "fill-blank", "items": [
+      { "sentence": "Вы ___ по-русски?", "answer": "Говорите", "hint": "To speak (formal you)" },
+      { "sentence": "Она любит ___ книги.", "answer": "Читать", "hint": "To read" },
+      { "sentence": "Я ___ русский язык.", "answer": "Учу", "hint": "To learn (I form)" }
+    ]},
+    { "type": "multiple-choice", "items": [
+      { "question": "What does 'Писать' mean?", "options": ["To write", "To read", "To speak", "To see"], "answer": 0 },
+      { "question": "How do you say 'To want' in Russian?", "options": ["Хотеть", "Мочь", "Знать", "Делать"], "answer": 0 },
+      { "question": "What does 'Жить' mean?", "options": ["To live", "To give", "To eat", "To go"], "answer": 0 }
+    ]}
+  ]
+}

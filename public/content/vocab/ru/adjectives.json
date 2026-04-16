@@ -1,0 +1,34 @@
+{
+  "id": "adjectives",
+  "words": [
+    { "word": "Большой", "reading": "bol'shoy", "meaning": "Big / Large", "example": "Это большой дом.", "exampleMeaning": "This is a big house." },
+    { "word": "Маленький", "reading": "malen'kiy", "meaning": "Small / Little", "example": "У нас маленькая кошка.", "exampleMeaning": "We have a small cat." },
+    { "word": "Новый", "reading": "novyy", "meaning": "New", "example": "Он купил новый телефон.", "exampleMeaning": "He bought a new phone." },
+    { "word": "Старый", "reading": "staryy", "meaning": "Old", "example": "Это старый город.", "exampleMeaning": "This is an old city." },
+    { "word": "Хороший", "reading": "khoroshiy", "meaning": "Good", "example": "Сегодня хороший день.", "exampleMeaning": "Today is a good day." },
+    { "word": "Плохой", "reading": "plokhoy", "meaning": "Bad", "example": "Плохая погода за окном.", "exampleMeaning": "Bad weather outside the window." },
+    { "word": "Красивый", "reading": "krasivyy", "meaning": "Beautiful / Handsome", "example": "Какой красивый город!", "exampleMeaning": "What a beautiful city!" },
+    { "word": "Быстрый", "reading": "bystryy", "meaning": "Fast / Quick", "example": "Он очень быстрый бегун.", "exampleMeaning": "He is a very fast runner." },
+    { "word": "Медленный", "reading": "medlennyy", "meaning": "Slow", "example": "Черепаха очень медленная.", "exampleMeaning": "The turtle is very slow." },
+    { "word": "Горячий", "reading": "goryachiy", "meaning": "Hot", "example": "Суп ещё горячий.", "exampleMeaning": "The soup is still hot." },
+    { "word": "Холодный", "reading": "kholodnyy", "meaning": "Cold", "example": "Зимой вода холодная.", "exampleMeaning": "In winter the water is cold." },
+    { "word": "Длинный", "reading": "dlinnyy", "meaning": "Long", "example": "Это очень длинная дорога.", "exampleMeaning": "This is a very long road." },
+    { "word": "Короткий", "reading": "korotkiy", "meaning": "Short", "example": "Лето было коротким.", "exampleMeaning": "The summer was short." },
+    { "word": "Тяжёлый", "reading": "tyazhyolyy", "meaning": "Heavy / Difficult", "example": "Этот чемодан очень тяжёлый.", "exampleMeaning": "This suitcase is very heavy." },
+    { "word": "Лёгкий", "reading": "lyogkiy", "meaning": "Light / Easy", "example": "Задание было лёгким.", "exampleMeaning": "The task was easy." },
+    { "word": "Важный", "reading": "vazhnyy", "meaning": "Important", "example": "Это очень важный вопрос.", "exampleMeaning": "This is a very important question." }
+  ],
+  "exercises": [
+    { "type": "match", "pairs": 5 },
+    { "type": "fill-blank", "items": [
+      { "sentence": "Это ___ дом.", "answer": "Большой", "hint": "Big" },
+      { "sentence": "Сегодня ___ день.", "answer": "Хороший", "hint": "Good" },
+      { "sentence": "Какой ___ город!", "answer": "Красивый", "hint": "Beautiful" }
+    ]},
+    { "type": "multiple-choice", "items": [
+      { "question": "What does 'Маленький' mean?", "options": ["Small", "Big", "Old", "New"], "answer": 0 },
+      { "question": "How do you say 'Cold' in Russian?", "options": ["Холодный", "Горячий", "Быстрый", "Медленный"], "answer": 0 },
+      { "question": "What is the opposite of 'Длинный' (Long)?", "options": ["Короткий", "Большой", "Тяжёлый", "Быстрый"], "answer": 0 }
+    ]}
+  ]
+}

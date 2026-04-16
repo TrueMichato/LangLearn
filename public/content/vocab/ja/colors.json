@@ -1,0 +1,34 @@
+{
+  "id": "colors",
+  "words": [
+    { "word": "赤い", "reading": "akai", "meaning": "red", "example": "赤いりんごが好きです。", "exampleMeaning": "I like red apples." },
+    { "word": "青い", "reading": "aoi", "meaning": "blue", "example": "空は青いです。", "exampleMeaning": "The sky is blue." },
+    { "word": "白い", "reading": "shiroi", "meaning": "white", "example": "白い雪が降っています。", "exampleMeaning": "White snow is falling." },
+    { "word": "黒い", "reading": "kuroi", "meaning": "black", "example": "黒い猫がいます。", "exampleMeaning": "There is a black cat." },
+    { "word": "緑", "reading": "midori", "meaning": "green", "example": "緑のお茶を飲みます。", "exampleMeaning": "I drink green tea." },
+    { "word": "黄色い", "reading": "kiiroi", "meaning": "yellow", "example": "黄色い花がきれいです。", "exampleMeaning": "The yellow flowers are beautiful." },
+    { "word": "茶色い", "reading": "chairoi", "meaning": "brown", "example": "茶色い犬を飼っています。", "exampleMeaning": "I have a brown dog." },
+    { "word": "ピンク", "reading": "pinku", "meaning": "pink", "example": "ピンクのドレスを着ています。", "exampleMeaning": "She is wearing a pink dress." },
+    { "word": "オレンジ", "reading": "orenji", "meaning": "orange", "example": "オレンジのジュースを飲みました。", "exampleMeaning": "I drank orange juice." },
+    { "word": "紫", "reading": "murasaki", "meaning": "purple", "example": "紫の花が咲いています。", "exampleMeaning": "Purple flowers are blooming." },
+    { "word": "丸い", "reading": "marui", "meaning": "round / circular", "example": "丸いボールで遊びます。", "exampleMeaning": "I play with a round ball." },
+    { "word": "四角い", "reading": "shikakui", "meaning": "square / rectangular", "example": "四角いテーブルがあります。", "exampleMeaning": "There is a square table." },
+    { "word": "三角", "reading": "sankaku", "meaning": "triangle", "example": "三角のおにぎりを作りました。", "exampleMeaning": "I made a triangular rice ball." },
+    { "word": "色", "reading": "iro", "meaning": "color", "example": "何色が好きですか？", "exampleMeaning": "What color do you like?" },
+    { "word": "形", "reading": "katachi", "meaning": "shape", "example": "この形はおもしろいです。", "exampleMeaning": "This shape is interesting." },
+    { "word": "灰色", "reading": "haiiro", "meaning": "gray", "example": "灰色の雲が出ています。", "exampleMeaning": "Gray clouds are appearing." }
+  ],
+  "exercises": [
+    { "type": "match", "pairs": 5 },
+    { "type": "fill-blank", "items": [
+      { "sentence": "空は___です。", "answer": "青い", "hint": "Blue" },
+      { "sentence": "何___が好きですか？", "answer": "色", "hint": "Color" },
+      { "sentence": "___のおにぎりを作りました。", "answer": "三角", "hint": "Triangle" }
+    ]},
+    { "type": "multiple-choice", "items": [
+      { "question": "How do you say 'red' in Japanese?", "options": ["赤い", "青い", "白い", "黒い"], "answer": 0 },
+      { "question": "What does 丸い mean?", "options": ["round", "square", "triangle", "color"], "answer": 0 },
+      { "question": "How do you read 紫?", "options": ["murasaki", "midori", "chairoi", "haiiro"], "answer": 0 }
+    ]}
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "id": "body",
+  "words": [
+    { "word": "頭", "reading": "atama", "meaning": "head", "example": "頭が痛いです。", "exampleMeaning": "I have a headache." },
+    { "word": "目", "reading": "me", "meaning": "eye", "example": "目が大きいですね。", "exampleMeaning": "Your eyes are big, aren't they?" },
+    { "word": "耳", "reading": "mimi", "meaning": "ear", "example": "耳で音を聞きます。", "exampleMeaning": "We hear sounds with our ears." },
+    { "word": "口", "reading": "kuchi", "meaning": "mouth", "example": "口を大きく開けてください。", "exampleMeaning": "Please open your mouth wide." },
+    { "word": "鼻", "reading": "hana", "meaning": "nose", "example": "鼻が高いですね。", "exampleMeaning": "You have a tall nose." },
+    { "word": "手", "reading": "te", "meaning": "hand", "example": "手を洗ってください。", "exampleMeaning": "Please wash your hands." },
+    { "word": "足", "reading": "ashi", "meaning": "foot / leg", "example": "足が速いですね。", "exampleMeaning": "You're fast on your feet!" },
+    { "word": "指", "reading": "yubi", "meaning": "finger / toe", "example": "指を怪我しました。", "exampleMeaning": "I injured my finger." },
+    { "word": "心", "reading": "kokoro", "meaning": "heart / mind", "example": "心が温かい人です。", "exampleMeaning": "They are a warm-hearted person." },
+    { "word": "お腹", "reading": "onaka", "meaning": "stomach / belly", "example": "お腹がすきました。", "exampleMeaning": "I'm hungry." },
+    { "word": "背中", "reading": "senaka", "meaning": "back", "example": "背中が痛いです。", "exampleMeaning": "My back hurts." },
+    { "word": "肩", "reading": "kata", "meaning": "shoulder", "example": "肩がこっています。", "exampleMeaning": "My shoulders are stiff." },
+    { "word": "髪", "reading": "kami", "meaning": "hair", "example": "髪を切りました。", "exampleMeaning": "I got a haircut." },
+    { "word": "顔", "reading": "kao", "meaning": "face", "example": "顔を洗いましょう。", "exampleMeaning": "Let's wash our face." },
+    { "word": "体", "reading": "karada", "meaning": "body", "example": "体に気をつけてください。", "exampleMeaning": "Please take care of your body." },
+    { "word": "歯", "reading": "ha", "meaning": "tooth / teeth", "example": "毎日歯を磨きます。", "exampleMeaning": "I brush my teeth every day." },
+    { "word": "首", "reading": "kubi", "meaning": "neck", "example": "首が痛いです。", "exampleMeaning": "My neck hurts." }
+  ],
+  "exercises": [
+    { "type": "match", "pairs": 5 },
+    { "type": "fill-blank", "items": [
+      { "sentence": "___を洗ってください。", "answer": "手", "hint": "Hand" },
+      { "sentence": "___がすきました。", "answer": "お腹", "hint": "Stomach" },
+      { "sentence": "毎日___を磨きます。", "answer": "歯", "hint": "Teeth" }
+    ]},
+    { "type": "multiple-choice", "items": [
+      { "question": "How do you say 'eye' in Japanese?", "options": ["目", "耳", "口", "鼻"], "answer": 0 },
+      { "question": "What does 心 mean?", "options": ["heart / mind", "stomach", "head", "body"], "answer": 0 },
+      { "question": "How do you read 肩?", "options": ["kata", "kami", "kao", "kubi"], "answer": 0 }
+    ]}
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "id": "numbers",
+  "words": [
+    { "word": "Один", "reading": "odin", "meaning": "One", "example": "Один билет, пожалуйста.", "exampleMeaning": "One ticket, please." },
+    { "word": "Два", "reading": "dva", "meaning": "Two", "example": "У меня два брата.", "exampleMeaning": "I have two brothers." },
+    { "word": "Три", "reading": "tri", "meaning": "Three", "example": "Три чашки чая.", "exampleMeaning": "Three cups of tea." },
+    { "word": "Четыре", "reading": "chetyre", "meaning": "Four", "example": "В комнате четыре стула.", "exampleMeaning": "There are four chairs in the room." },
+    { "word": "Пять", "reading": "pyat'", "meaning": "Five", "example": "Мне пять лет.", "exampleMeaning": "I am five years old." },
+    { "word": "Шесть", "reading": "shest'", "meaning": "Six", "example": "Шесть дней в неделе рабочих.", "exampleMeaning": "Six days in the week are working days." },
+    { "word": "Семь", "reading": "sem'", "meaning": "Seven", "example": "В неделе семь дней.", "exampleMeaning": "There are seven days in a week." },
+    { "word": "Восемь", "reading": "vosem'", "meaning": "Eight", "example": "Урок начинается в восемь.", "exampleMeaning": "The lesson starts at eight." },
+    { "word": "Девять", "reading": "devyat'", "meaning": "Nine", "example": "Девять студентов в классе.", "exampleMeaning": "Nine students in the class." },
+    { "word": "Десять", "reading": "desyat'", "meaning": "Ten", "example": "Десять минут до начала.", "exampleMeaning": "Ten minutes until the start." },
+    { "word": "Двадцать", "reading": "dvadtsat'", "meaning": "Twenty", "example": "Ему двадцать лет.", "exampleMeaning": "He is twenty years old." },
+    { "word": "Тридцать", "reading": "tridtsat'", "meaning": "Thirty", "example": "Тридцать градусов на улице.", "exampleMeaning": "It is thirty degrees outside." },
+    { "word": "Пятьдесят", "reading": "pyat'desyat", "meaning": "Fifty", "example": "Пятьдесят рублей за кофе.", "exampleMeaning": "Fifty rubles for coffee." },
+    { "word": "Сто", "reading": "sto", "meaning": "One hundred", "example": "Сто страниц в книге.", "exampleMeaning": "One hundred pages in the book." },
+    { "word": "Ноль", "reading": "nol'", "meaning": "Zero", "example": "На улице ноль градусов.", "exampleMeaning": "It is zero degrees outside." },
+    { "word": "Первый", "reading": "pervyy", "meaning": "First", "example": "Это мой первый урок.", "exampleMeaning": "This is my first lesson." },
+    { "word": "Второй", "reading": "vtoroy", "meaning": "Second", "example": "Второй этаж, пожалуйста.", "exampleMeaning": "Second floor, please." }
+  ],
+  "exercises": [
+    { "type": "match", "pairs": 5 },
+    { "type": "fill-blank", "items": [
+      { "sentence": "У меня ___ брата.", "answer": "Два", "hint": "Two" },
+      { "sentence": "В неделе ___ дней.", "answer": "Семь", "hint": "Seven" },
+      { "sentence": "___ страниц в книге.", "answer": "Сто", "hint": "One hundred" }
+    ]},
+    { "type": "multiple-choice", "items": [
+      { "question": "How do you say 'Five' in Russian?", "options": ["Пять", "Три", "Семь", "Десять"], "answer": 0 },
+      { "question": "What does 'Двадцать' mean?", "options": ["Twenty", "Twelve", "Two hundred", "Two"], "answer": 0 },
+      { "question": "How do you say 'First' in Russian?", "options": ["Первый", "Один", "Второй", "Десять"], "answer": 0 }
+    ]}
+  ]
+}

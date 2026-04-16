@@ -1,3 +1,10 @@
 [
-  { "id": "greetings", "title": "Greetings & Introductions", "order": 1, "wordCount": 15, "level": "beginner" }
+  { "id": "greetings", "title": "Greetings & Introductions", "order": 1, "wordCount": 15, "level": "beginner" },
+  { "id": "numbers", "title": "Numbers 1-100", "order": 2, "wordCount": 18, "level": "beginner" },
+  { "id": "days-months", "title": "Days & Months", "order": 3, "wordCount": 17, "level": "beginner" },
+  { "id": "colors", "title": "Colors & Shapes", "order": 4, "wordCount": 16, "level": "beginner" },
+  { "id": "family", "title": "Family Members", "order": 5, "wordCount": 20, "level": "beginner" },
+  { "id": "food", "title": "Food & Drink", "order": 6, "wordCount": 17, "level": "beginner" },
+  { "id": "animals", "title": "Animals", "order": 7, "wordCount": 16, "level": "beginner" },
+  { "id": "body", "title": "Body Parts", "order": 8, "wordCount": 17, "level": "beginner" }
 ]

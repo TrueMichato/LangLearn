@@ -1,0 +1,34 @@
+{
+  "id": "animals",
+  "words": [
+    { "word": "犬", "reading": "inu", "meaning": "dog", "example": "犬と散歩に行きます。", "exampleMeaning": "I go for a walk with my dog." },
+    { "word": "猫", "reading": "neko", "meaning": "cat", "example": "猫が窓の近くで寝ています。", "exampleMeaning": "The cat is sleeping near the window." },
+    { "word": "鳥", "reading": "tori", "meaning": "bird", "example": "鳥が空を飛んでいます。", "exampleMeaning": "A bird is flying in the sky." },
+    { "word": "魚", "reading": "sakana", "meaning": "fish", "example": "川に魚がたくさんいます。", "exampleMeaning": "There are many fish in the river." },
+    { "word": "馬", "reading": "uma", "meaning": "horse", "example": "馬に乗ったことがありますか？", "exampleMeaning": "Have you ever ridden a horse?" },
+    { "word": "牛", "reading": "ushi", "meaning": "cow", "example": "牧場に牛がいます。", "exampleMeaning": "There are cows on the farm." },
+    { "word": "豚", "reading": "buta", "meaning": "pig", "example": "豚は頭がいい動物です。", "exampleMeaning": "Pigs are smart animals." },
+    { "word": "うさぎ", "reading": "usagi", "meaning": "rabbit", "example": "うさぎの耳は長いです。", "exampleMeaning": "Rabbits have long ears." },
+    { "word": "猿", "reading": "saru", "meaning": "monkey", "example": "山に猿がいました。", "exampleMeaning": "There were monkeys in the mountains." },
+    { "word": "象", "reading": "zou", "meaning": "elephant", "example": "象は大きい動物です。", "exampleMeaning": "Elephants are large animals." },
+    { "word": "虫", "reading": "mushi", "meaning": "insect / bug", "example": "子供は虫が好きです。", "exampleMeaning": "Children like insects." },
+    { "word": "蛇", "reading": "hebi", "meaning": "snake", "example": "蛇は足がありません。", "exampleMeaning": "Snakes do not have legs." },
+    { "word": "鹿", "reading": "shika", "meaning": "deer", "example": "奈良には鹿がたくさんいます。", "exampleMeaning": "There are many deer in Nara." },
+    { "word": "熊", "reading": "kuma", "meaning": "bear", "example": "山で熊に気をつけてください。", "exampleMeaning": "Please watch out for bears in the mountains." },
+    { "word": "動物", "reading": "doubutsu", "meaning": "animal", "example": "動物園に行きましょう。", "exampleMeaning": "Let's go to the zoo." },
+    { "word": "ペット", "reading": "petto", "meaning": "pet", "example": "ペットを飼っていますか？", "exampleMeaning": "Do you have a pet?" }
+  ],
+  "exercises": [
+    { "type": "match", "pairs": 5 },
+    { "type": "fill-blank", "items": [
+      { "sentence": "___と散歩に行きます。", "answer": "犬", "hint": "Dog" },
+      { "sentence": "___園に行きましょう。", "answer": "動物", "hint": "Animal" },
+      { "sentence": "奈良には___がたくさんいます。", "answer": "鹿", "hint": "Deer" }
+    ]},
+    { "type": "multiple-choice", "items": [
+      { "question": "How do you say 'cat' in Japanese?", "options": ["猫", "犬", "鳥", "馬"], "answer": 0 },
+      { "question": "What does 象 mean?", "options": ["elephant", "bear", "monkey", "pig"], "answer": 0 },
+      { "question": "How do you read 蛇?", "options": ["hebi", "mushi", "shika", "saru"], "answer": 0 }
+    ]}
+  ]
+}

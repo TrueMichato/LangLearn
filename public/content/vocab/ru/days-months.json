@@ -1,0 +1,36 @@
+{
+  "id": "days-months",
+  "words": [
+    { "word": "Понедельник", "reading": "ponedel'nik", "meaning": "Monday", "example": "Понедельник — первый день недели.", "exampleMeaning": "Monday is the first day of the week." },
+    { "word": "Вторник", "reading": "vtornik", "meaning": "Tuesday", "example": "Во вторник у меня урок.", "exampleMeaning": "On Tuesday I have a lesson." },
+    { "word": "Среда", "reading": "sreda", "meaning": "Wednesday", "example": "В среду мы идём в кино.", "exampleMeaning": "On Wednesday we are going to the cinema." },
+    { "word": "Четверг", "reading": "chetverg", "meaning": "Thursday", "example": "Четверг — мой любимый день.", "exampleMeaning": "Thursday is my favorite day." },
+    { "word": "Пятница", "reading": "pyatnitsa", "meaning": "Friday", "example": "В пятницу мы отдыхаем.", "exampleMeaning": "On Friday we rest." },
+    { "word": "Суббота", "reading": "subbota", "meaning": "Saturday", "example": "В субботу я гуляю в парке.", "exampleMeaning": "On Saturday I walk in the park." },
+    { "word": "Воскресенье", "reading": "voskresen'ye", "meaning": "Sunday", "example": "В воскресенье магазины закрыты.", "exampleMeaning": "On Sunday the shops are closed." },
+    { "word": "Январь", "reading": "yanvar'", "meaning": "January", "example": "Январь — первый месяц года.", "exampleMeaning": "January is the first month of the year." },
+    { "word": "Март", "reading": "mart", "meaning": "March", "example": "В марте начинается весна.", "exampleMeaning": "In March spring begins." },
+    { "word": "Май", "reading": "may", "meaning": "May", "example": "В мае много праздников.", "exampleMeaning": "In May there are many holidays." },
+    { "word": "Июль", "reading": "iyul'", "meaning": "July", "example": "Июль — самый жаркий месяц.", "exampleMeaning": "July is the hottest month." },
+    { "word": "Сентябрь", "reading": "sentyabr'", "meaning": "September", "example": "В сентябре начинается школа.", "exampleMeaning": "In September school starts." },
+    { "word": "Декабрь", "reading": "dekabr'", "meaning": "December", "example": "В декабре мы празднуем Новый год.", "exampleMeaning": "In December we celebrate New Year." },
+    { "word": "Сегодня", "reading": "segodnya", "meaning": "Today", "example": "Сегодня хорошая погода.", "exampleMeaning": "Today the weather is good." },
+    { "word": "Завтра", "reading": "zavtra", "meaning": "Tomorrow", "example": "Завтра будет дождь.", "exampleMeaning": "Tomorrow it will rain." },
+    { "word": "Вчера", "reading": "vchera", "meaning": "Yesterday", "example": "Вчера я был в музее.", "exampleMeaning": "Yesterday I was at the museum." },
+    { "word": "Неделя", "reading": "nedelya", "meaning": "Week", "example": "На этой неделе много работы.", "exampleMeaning": "This week there is a lot of work." },
+    { "word": "Месяц", "reading": "mesyats", "meaning": "Month", "example": "Один месяц — это мало.", "exampleMeaning": "One month is not much." }
+  ],
+  "exercises": [
+    { "type": "match", "pairs": 5 },
+    { "type": "fill-blank", "items": [
+      { "sentence": "___ — первый день недели.", "answer": "Понедельник", "hint": "Monday" },
+      { "sentence": "___ хорошая погода.", "answer": "Сегодня", "hint": "Today" },
+      { "sentence": "В ___ начинается весна.", "answer": "Марте", "hint": "March (prepositional)" }
+    ]},
+    { "type": "multiple-choice", "items": [
+      { "question": "What day is 'Пятница'?", "options": ["Friday", "Thursday", "Saturday", "Wednesday"], "answer": 0 },
+      { "question": "How do you say 'Tomorrow' in Russian?", "options": ["Завтра", "Сегодня", "Вчера", "Потом"], "answer": 0 },
+      { "question": "What month is 'Январь'?", "options": ["January", "June", "July", "February"], "answer": 0 }
+    ]}
+  ]
+}

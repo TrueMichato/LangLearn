@@ -1,0 +1,35 @@
+{
+  "id": "ja-vocab-school-work",
+  "words": [
+    { "word": "学校", "reading": "gakkou", "meaning": "school", "example": "毎日学校に行きます。", "exampleMeaning": "I go to school every day." },
+    { "word": "先生", "reading": "sensei", "meaning": "teacher", "example": "先生はとても優しいです。", "exampleMeaning": "The teacher is very kind." },
+    { "word": "学生", "reading": "gakusei", "meaning": "student", "example": "私は大学の学生です。", "exampleMeaning": "I am a university student." },
+    { "word": "会社", "reading": "kaisha", "meaning": "company", "example": "会社で働いています。", "exampleMeaning": "I work at a company." },
+    { "word": "仕事", "reading": "shigoto", "meaning": "work / job", "example": "仕事は何ですか？", "exampleMeaning": "What is your job?" },
+    { "word": "勉強", "reading": "benkyou", "meaning": "study", "example": "日本語を勉強しています。", "exampleMeaning": "I am studying Japanese." },
+    { "word": "テスト", "reading": "tesuto", "meaning": "test / exam", "example": "明日テストがあります。", "exampleMeaning": "There is a test tomorrow." },
+    { "word": "教室", "reading": "kyoushitsu", "meaning": "classroom", "example": "教室に学生がいます。", "exampleMeaning": "There are students in the classroom." },
+    { "word": "本", "reading": "hon", "meaning": "book", "example": "図書館で本を借ります。", "exampleMeaning": "I borrow books from the library." },
+    { "word": "ペン", "reading": "pen", "meaning": "pen", "example": "ペンで名前を書きます。", "exampleMeaning": "I write my name with a pen." },
+    { "word": "ノート", "reading": "nooto", "meaning": "notebook", "example": "ノートにメモを取ります。", "exampleMeaning": "I take notes in my notebook." },
+    { "word": "宿題", "reading": "shukudai", "meaning": "homework", "example": "宿題を忘れました。", "exampleMeaning": "I forgot my homework." },
+    { "word": "授業", "reading": "jugyou", "meaning": "class / lesson", "example": "授業は九時に始まります。", "exampleMeaning": "Class starts at nine o'clock." },
+    { "word": "質問", "reading": "shitsumon", "meaning": "question", "example": "質問がありますか？", "exampleMeaning": "Do you have any questions?" },
+    { "word": "答え", "reading": "kotae", "meaning": "answer", "example": "答えがわかりません。", "exampleMeaning": "I don't know the answer." },
+    { "word": "辞書", "reading": "jisho", "meaning": "dictionary", "example": "辞書で言葉を調べます。", "exampleMeaning": "I look up words in the dictionary." },
+    { "word": "黒板", "reading": "kokuban", "meaning": "blackboard", "example": "先生が黒板に書きます。", "exampleMeaning": "The teacher writes on the blackboard." }
+  ],
+  "exercises": [
+    { "type": "match", "pairs": 5 },
+    { "type": "fill-blank", "items": [
+      { "sentence": "日本語を___しています。", "answer": "勉強", "hint": "study" },
+      { "sentence": "明日___があります。", "answer": "テスト", "hint": "test" },
+      { "sentence": "___を忘れました。", "answer": "宿題", "hint": "homework" }
+    ]},
+    { "type": "multiple-choice", "items": [
+      { "question": "「会社」はどういう意味ですか？", "options": ["school", "company", "classroom", "library"], "answer": 1 },
+      { "question": "「teacher」は日本語で何ですか？", "options": ["学生", "仕事", "先生", "授業"], "answer": 2 },
+      { "question": "「質問」はどういう意味ですか？", "options": ["answer", "homework", "test", "question"], "answer": 3 }
+    ]}
+  ]
+}

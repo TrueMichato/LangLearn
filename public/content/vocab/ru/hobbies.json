@@ -1,0 +1,34 @@
+{
+  "id": "hobbies",
+  "words": [
+    { "word": "Хобби", "reading": "khobbi", "meaning": "Hobby", "example": "Моё хобби — рисование.", "exampleMeaning": "My hobby is drawing." },
+    { "word": "Кино", "reading": "kino", "meaning": "Cinema / Movie", "example": "Пойдём в кино вечером.", "exampleMeaning": "Let's go to the cinema in the evening." },
+    { "word": "Музыка", "reading": "muzyka", "meaning": "Music", "example": "Я слушаю музыку каждый день.", "exampleMeaning": "I listen to music every day." },
+    { "word": "Футбол", "reading": "futbol", "meaning": "Football / Soccer", "example": "Мальчики играют в футбол.", "exampleMeaning": "The boys are playing football." },
+    { "word": "Плавать", "reading": "plavat'", "meaning": "To swim", "example": "Летом мы плаваем в озере.", "exampleMeaning": "In summer we swim in the lake." },
+    { "word": "Бегать", "reading": "begat'", "meaning": "To run", "example": "Я бегаю по утрам.", "exampleMeaning": "I run in the mornings." },
+    { "word": "Танцевать", "reading": "tantsevat'", "meaning": "To dance", "example": "Она любит танцевать.", "exampleMeaning": "She loves to dance." },
+    { "word": "Рисовать", "reading": "risovat'", "meaning": "To draw / To paint", "example": "Дети рисуют в альбоме.", "exampleMeaning": "The children are drawing in the album." },
+    { "word": "Петь", "reading": "pet'", "meaning": "To sing", "example": "Она красиво поёт.", "exampleMeaning": "She sings beautifully." },
+    { "word": "Играть", "reading": "igrat'", "meaning": "To play", "example": "Дети играют в парке.", "exampleMeaning": "The children are playing in the park." },
+    { "word": "Фотография", "reading": "fotografiya", "meaning": "Photography / Photo", "example": "Фотография — моё увлечение.", "exampleMeaning": "Photography is my passion." },
+    { "word": "Готовить", "reading": "gotovit'", "meaning": "To cook", "example": "Я люблю готовить ужин.", "exampleMeaning": "I like to cook dinner." },
+    { "word": "Гулять", "reading": "gulyat'", "meaning": "To walk / To stroll", "example": "Мы гуляем в парке каждый вечер.", "exampleMeaning": "We walk in the park every evening." },
+    { "word": "Книга", "reading": "kniga", "meaning": "Book", "example": "Я читаю интересную книгу.", "exampleMeaning": "I am reading an interesting book." },
+    { "word": "Спорт", "reading": "sport", "meaning": "Sport", "example": "Спорт полезен для здоровья.", "exampleMeaning": "Sport is good for health." },
+    { "word": "Шахматы", "reading": "shakhmaty", "meaning": "Chess", "example": "Дедушка играет в шахматы.", "exampleMeaning": "Grandfather plays chess." }
+  ],
+  "exercises": [
+    { "type": "match", "pairs": 5 },
+    { "type": "fill-blank", "items": [
+      { "sentence": "Пойдём в ___ вечером.", "answer": "Кино", "hint": "Cinema" },
+      { "sentence": "Я ___ по утрам.", "answer": "Бегаю", "hint": "To run (I form)" },
+      { "sentence": "Она любит ___.", "answer": "Танцевать", "hint": "To dance" }
+    ]},
+    { "type": "multiple-choice", "items": [
+      { "question": "What does 'Плавать' mean?", "options": ["To swim", "To run", "To fly", "To jump"], "answer": 0 },
+      { "question": "How do you say 'Music' in Russian?", "options": ["Музыка", "Кино", "Спорт", "Книга"], "answer": 0 },
+      { "question": "What is 'Шахматы'?", "options": ["Chess", "Checkers", "Cards", "Dominoes"], "answer": 0 }
+    ]}
+  ]
+}

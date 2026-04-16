@@ -1,0 +1,34 @@
+{
+  "id": "emotions",
+  "words": [
+    { "word": "Радость", "reading": "radost'", "meaning": "Joy / Happiness", "example": "Дети прыгают от радости.", "exampleMeaning": "The children are jumping with joy." },
+    { "word": "Грусть", "reading": "grust'", "meaning": "Sadness", "example": "В его глазах была грусть.", "exampleMeaning": "There was sadness in his eyes." },
+    { "word": "Злость", "reading": "zlost'", "meaning": "Anger", "example": "Не говори в злости.", "exampleMeaning": "Don't speak in anger." },
+    { "word": "Счастье", "reading": "schast'ye", "meaning": "Happiness / Fortune", "example": "Счастье — это быть рядом с семьёй.", "exampleMeaning": "Happiness is being close to family." },
+    { "word": "Любовь", "reading": "lyubov'", "meaning": "Love", "example": "Любовь делает нас сильнее.", "exampleMeaning": "Love makes us stronger." },
+    { "word": "Страх", "reading": "strakh", "meaning": "Fear", "example": "Он преодолел свой страх.", "exampleMeaning": "He overcame his fear." },
+    { "word": "Удивление", "reading": "udivleniye", "meaning": "Surprise", "example": "Какое приятное удивление!", "exampleMeaning": "What a pleasant surprise!" },
+    { "word": "Надежда", "reading": "nadezhda", "meaning": "Hope", "example": "Надежда умирает последней.", "exampleMeaning": "Hope dies last." },
+    { "word": "Скука", "reading": "skuka", "meaning": "Boredom", "example": "От скуки он начал рисовать.", "exampleMeaning": "Out of boredom he started drawing." },
+    { "word": "Гордость", "reading": "gordost'", "meaning": "Pride", "example": "Родители полны гордости.", "exampleMeaning": "The parents are full of pride." },
+    { "word": "Счастливый", "reading": "schastlivyy", "meaning": "Happy", "example": "Я очень счастливый человек.", "exampleMeaning": "I am a very happy person." },
+    { "word": "Грустный", "reading": "grustnyy", "meaning": "Sad", "example": "Почему ты такой грустный?", "exampleMeaning": "Why are you so sad?" },
+    { "word": "Весёлый", "reading": "vesyolyy", "meaning": "Cheerful / Funny", "example": "Он очень весёлый человек.", "exampleMeaning": "He is a very cheerful person." },
+    { "word": "Спокойный", "reading": "spokoynyy", "meaning": "Calm / Peaceful", "example": "Будь спокойным, всё будет хорошо.", "exampleMeaning": "Be calm, everything will be fine." },
+    { "word": "Усталый", "reading": "ustalyy", "meaning": "Tired", "example": "Я очень усталый после работы.", "exampleMeaning": "I am very tired after work." },
+    { "word": "Волноваться", "reading": "volnovat'sya", "meaning": "To worry", "example": "Не волнуйся, всё хорошо.", "exampleMeaning": "Don't worry, everything is fine." }
+  ],
+  "exercises": [
+    { "type": "match", "pairs": 5 },
+    { "type": "fill-blank", "items": [
+      { "sentence": "Дети прыгают от ___.", "answer": "Радости", "hint": "Joy (genitive)" },
+      { "sentence": "Не ___, всё хорошо.", "answer": "Волнуйся", "hint": "To worry (imperative)" },
+      { "sentence": "Почему ты такой ___?", "answer": "Грустный", "hint": "Sad" }
+    ]},
+    { "type": "multiple-choice", "items": [
+      { "question": "What does 'Любовь' mean?", "options": ["Love", "Joy", "Fear", "Hope"], "answer": 0 },
+      { "question": "How do you say 'Fear' in Russian?", "options": ["Страх", "Злость", "Грусть", "Скука"], "answer": 0 },
+      { "question": "What does 'Счастливый' mean?", "options": ["Happy", "Sad", "Tired", "Angry"], "answer": 0 }
+    ]}
+  ]
+}
