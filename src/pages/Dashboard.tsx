@@ -7,6 +7,7 @@ import { formatStudyTime } from '../lib/xp';
 import { calculateCurrentStreak, calculateLongestStreak } from '../lib/streaks';
 import { useSettingsStore } from '../stores/settingsStore';
 import HeatMap from '../components/dashboard/HeatMap';
+import AddWordModal from '../components/srs/AddWordModal';
 
 interface Stats {
   totalWords: number;
@@ -21,6 +22,7 @@ export default function Dashboard() {
   const [allSessions, setAllSessions] = useState<StudySession[]>([]);
   const [activities, setActivities] = useState<DailyActivity[]>([]);
   const weeklyGoalMinutes = useSettingsStore((s) => s.weeklyGoalMinutes);
+  const [showAddModal, setShowAddModal] = useState(false);
 
   useEffect(() => {
     async function load() {
@@ -86,6 +88,22 @@ export default function Dashboard() {
         />
         <StatCard label="Total XP" value={stats.totalXP} icon="⭐" />
       </div>
+
+      {stats.totalWords === 0 && (
+        <div className="bg-indigo-50 dark:bg-indigo-900/30 border border-indigo-200 dark:border-indigo-800 rounded-2xl p-4 mb-6 text-center">
+          <p className="text-indigo-800 dark:text-indigo-200 font-semibold">
+            Get started by adding your first word ✨
+          </p>
+          <button
+            onClick={() => setShowAddModal(true)}
+            className="mt-2 px-4 py-2 rounded-xl bg-indigo-600 text-white font-semibold hover:bg-indigo-700 transition-colors"
+          >
+            ➕ Add a word
+          </button>
+        </div>
+      )}
+
+      <AddWordModal isOpen={showAddModal} onClose={() => setShowAddModal(false)} />
 
       <div className="bg-white dark:bg-gray-800 rounded-2xl shadow p-4 mb-6">
         {currentStreak > 0 ? (

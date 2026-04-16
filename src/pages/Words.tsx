@@ -3,6 +3,7 @@ import SearchBar from '../components/common/SearchBar';
 import { searchWords, updateWord, deleteWord, type WordFilter } from '../db/words';
 import { db, type Word, type Review } from '../db/schema';
 import { useSettingsStore } from '../stores/settingsStore';
+import AddWordModal from '../components/srs/AddWordModal';
 
 type StatusFilter = 'all' | 'learning' | 'mature' | 'due';
 
@@ -45,6 +46,7 @@ export default function WordsPage() {
   const [editForm, setEditForm] = useState({ word: '', reading: '', meaning: '', tags: '' });
   const [deleteConfirmId, setDeleteConfirmId] = useState<number | null>(null);
   const [loading, setLoading] = useState(true);
+  const [showAddModal, setShowAddModal] = useState(false);
 
   const load = useCallback(async () => {
     setLoading(true);
@@ -353,6 +355,20 @@ export default function WordsPage() {
           })}
         </div>
       )}
+
+      {/* FAB */}
+      <button
+        onClick={() => setShowAddModal(true)}
+        className="fixed bottom-24 right-4 w-14 h-14 rounded-full bg-indigo-600 text-white text-2xl shadow-lg hover:bg-indigo-700 active:scale-95 transition-all flex items-center justify-center z-40"
+        aria-label="Add word"
+      >
+        +
+      </button>
+
+      <AddWordModal
+        isOpen={showAddModal}
+        onClose={() => { setShowAddModal(false); load(); }}
+      />
     </div>
   );
 }

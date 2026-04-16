@@ -1,12 +1,20 @@
 import { create } from 'zustand';
 import type { Word, Review } from '../db/schema';
+import type { CardType } from '../lib/card-types';
+
+export interface QueueItem {
+  word: Word;
+  review: Review;
+  cardType: CardType;
+  distractors?: string[];
+}
 
 interface ReviewSessionState {
-  queue: Array<{ word: Word; review: Review }>;
+  queue: QueueItem[];
   currentIndex: number;
   isFlipped: boolean;
   cardsReviewed: number;
-  setQueue: (items: Array<{ word: Word; review: Review }>) => void;
+  setQueue: (items: QueueItem[]) => void;
   flip: () => void;
   next: () => void;
   reset: () => void;
