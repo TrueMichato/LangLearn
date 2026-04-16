@@ -1,4 +1,20 @@
 [
   { "id": "cases", "title": "Noun Cases Overview", "order": 1 },
-  { "id": "verb-aspects", "title": "Perfective vs Imperfective", "order": 2 }
+  { "id": "verb-aspects", "title": "Perfective vs Imperfective", "order": 2 },
+  { "id": "gender", "title": "Gender & Agreement", "order": 3 },
+  { "id": "nominative-accusative", "title": "Nominative & Accusative Cases", "order": 4 },
+  { "id": "genitive", "title": "Genitive Case (Родительный падеж)", "order": 5 },
+  { "id": "dative", "title": "Dative Case (Дательный падеж)", "order": 6 },
+  { "id": "instrumental", "title": "Instrumental Case (Творительный падеж)", "order": 7 },
+  { "id": "prepositional", "title": "Prepositional Case (Предложный падеж)", "order": 8 },
+  { "id": "conjugation", "title": "Verb Conjugation (Present Tense)", "order": 9 },
+  { "id": "past-future", "title": "Past Tense & Future Tense", "order": 10 },
+  { "id": "motion", "title": "Motion Verbs (идти/ходить)", "order": 11 },
+  { "id": "reflexive", "title": "Reflexive Verbs (-ся/-сь)", "order": 12 },
+  { "id": "adjective-declension", "title": "Adjective Declension", "order": 13 },
+  { "id": "pronouns", "title": "Pronouns & Possessives", "order": 14 },
+  { "id": "numbers", "title": "Numbers & Counting", "order": 15 },
+  { "id": "comparatives", "title": "Comparatives & Superlatives", "order": 16 },
+  { "id": "conjunctions", "title": "Conjunctions & Complex Sentences", "order": 17 },
+  { "id": "expressions", "title": "Common Expressions & Idioms", "order": 18 }
 ]
