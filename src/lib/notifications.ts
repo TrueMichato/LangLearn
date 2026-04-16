@@ -21,14 +21,14 @@ export function showNotification(title: string, options?: NotificationOptions): 
   if ('serviceWorker' in navigator && navigator.serviceWorker.controller) {
     navigator.serviceWorker.ready.then((registration) => {
       registration.showNotification(title, {
-        icon: '/langlearn/pwa-192x192.png',
-        badge: '/langlearn/pwa-192x192.png',
+        icon: '/LangLearn/pwa-192x192.png',
+        badge: '/LangLearn/pwa-192x192.png',
         ...options,
       });
     });
   } else {
     new Notification(title, {
-      icon: '/langlearn/pwa-192x192.png',
+      icon: '/LangLearn/pwa-192x192.png',
       ...options,
     });
   }

@@ -25,7 +25,7 @@ function initTokenizer(): Promise<void> {
 
   initPromise = new Promise((resolve, reject) => {
     kuromoji
-      .builder({ dicPath: '/langlearn/dict/' })
+      .builder({ dicPath: '/LangLearn/dict/' })
       .build((err, built) => {
         if (err) {
           initPromise = null;
