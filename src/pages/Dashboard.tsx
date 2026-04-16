@@ -7,6 +7,7 @@ import { formatStudyTime } from '../lib/xp';
 import { calculateCurrentStreak, calculateLongestStreak } from '../lib/streaks';
 import { useSettingsStore } from '../stores/settingsStore';
 import HeatMap from '../components/dashboard/HeatMap';
+import StudyPlan from '../components/dashboard/StudyPlan';
 import AddWordModal from '../components/srs/AddWordModal';
 
 interface Stats {
@@ -77,6 +78,13 @@ export default function Dashboard() {
   return (
     <div>
       <h2 className="text-lg font-semibold text-gray-700 dark:text-gray-200 mb-4">Dashboard</h2>
+
+      <StudyPlan
+        dueCards={stats.dueCards}
+        weekStudySeconds={stats.weekStudySeconds}
+        weeklyGoalSeconds={weeklyGoalMinutes * 60}
+        currentStreak={currentStreak}
+      />
 
       <div className="grid grid-cols-2 gap-3 mb-6">
         <StatCard label="Words Learned" value={stats.totalWords} icon="📚" />
