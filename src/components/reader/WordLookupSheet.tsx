@@ -6,7 +6,8 @@ interface WordLookupSheetProps {
   word: string;
   language: string;
   initialReading?: string;
-  onAdd: (word: string, reading: string, meaning: string) => void;
+  contextSentence?: string;
+  onAdd: (word: string, reading: string, meaning: string, contextSentence: string) => void;
   onClose: () => void;
 }
 
@@ -14,6 +15,7 @@ export default function WordLookupSheet({
   word,
   language,
   initialReading = '',
+  contextSentence = '',
   onAdd,
   onClose,
 }: WordLookupSheetProps) {
@@ -88,6 +90,9 @@ export default function WordLookupSheet({
             ✕
           </button>
         </div>
+        {contextSentence && (
+          <p className="text-sm text-gray-500 italic mb-3">"{contextSentence}"</p>
+        )}
         <input
           type="text"
           placeholder="Reading / pronunciation"
@@ -103,7 +108,7 @@ export default function WordLookupSheet({
           className="w-full px-3 py-2 border border-gray-300 rounded-lg mb-3 focus:outline-none focus:ring-2 focus:ring-indigo-300"
         />
         <button
-          onClick={() => onAdd(word, reading, meaning)}
+          onClick={() => onAdd(word, reading, meaning, contextSentence)}
           disabled={!meaning}
           className="w-full bg-green-600 text-white py-2 rounded-xl font-semibold hover:bg-green-700 transition-colors disabled:opacity-40"
         >

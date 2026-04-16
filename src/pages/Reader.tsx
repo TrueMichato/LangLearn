@@ -2,10 +2,12 @@ import { useState } from 'react';
 import { db } from '../db/schema';
 import { addWord } from '../db/words';
 import { useTimerStore } from '../stores/timerStore';
+import { useSettingsStore } from '../stores/settingsStore';
 import WordLookupSheet from '../components/reader/WordLookupSheet';
 import { tokenizeJapanese } from '../lib/tokenizer';
 import type { Token } from '../lib/tokenizer';
 import FuriganaText from '../components/reader/FuriganaText';
+import { applyStress } from '../lib/russian-stress';
 import { splitSentences, findSentenceAt, type SentenceSpan } from '../lib/sentences';
 
 export default function ReaderPage() {
@@ -23,6 +25,7 @@ export default function ReaderPage() {
   const [selectedReading, setSelectedReading] = useState('');
   const [selectedSentence, setSelectedSentence] = useState('');
   const { isRunning, start } = useTimerStore();
+  const { showStressMarks } = useSettingsStore();
 
   const handleImport = async () => {
     if (!text.trim()) return;
@@ -175,7 +178,10 @@ export default function ReaderPage() {
         <button
           onClick={() => {
             setTokens([]);
+            setTokenOffsets([]);
             setJaTokens([]);
+            setJaTokenOffsets([]);
+            setSentences([]);
             setText('');
             setTitle('');
             setSavedTextId(null);
@@ -203,13 +209,16 @@ export default function ReaderPage() {
             <span
               key={i}
               onClick={() => {
-                if (token.trim()) setSelectedWord(token);
+                if (token.trim()) {
+                  setSelectedWord(token);
+                  setSelectedSentence(findSentenceAt(sentences, tokenOffsets[i] ?? 0));
+                }
               }}
               className={`cursor-pointer transition-colors hover:bg-indigo-100 rounded px-0.5 ${
                 selectedWord === token ? 'bg-indigo-200' : ''
               }`}
             >
-              {token}
+              {showStressMarks && language === 'ru' ? applyStress(token) : token}
             </span>
           ))
         )}
@@ -220,6 +229,7 @@ export default function ReaderPage() {
           word={selectedWord}
           language={language}
           initialReading={selectedReading}
+          contextSentence={selectedSentence}
           onAdd={handleAddWord}
           onClose={() => setSelectedWord(null)}
         />

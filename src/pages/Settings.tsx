@@ -5,7 +5,7 @@ import DeckExport from '../components/common/DeckExport';
 import DeckImport from '../components/common/DeckImport';
 
 export default function SettingsPage() {
-  const { weeklyGoalMinutes, setWeeklyGoal, activeLanguages, addLanguage, removeLanguage } =
+  const { weeklyGoalMinutes, setWeeklyGoal, activeLanguages, addLanguage, removeLanguage, showStressMarks, toggleStressMarks } =
     useSettingsStore();
   const [importStatus, setImportStatus] = useState('');
   const fileInputRef = useRef<HTMLInputElement>(null);
@@ -99,6 +99,33 @@ export default function SettingsPage() {
         <hr className="border-gray-200 dark:border-gray-700" />
         <DeckImport />
       </section>
+
+      {/* Russian Features */}
+      {activeLanguages.includes('ru') && (
+        <section className="bg-white dark:bg-gray-800 rounded-2xl shadow p-4">
+          <h3 className="font-semibold text-gray-700 dark:text-gray-200 mb-2">Russian Features</h3>
+          <div className="flex items-center justify-between">
+            <div>
+              <p className="text-sm text-gray-700 dark:text-gray-200">Show stress marks (ударе&#x0301;ние)</p>
+              <p className="text-xs text-gray-500 dark:text-gray-400">Display accent marks on stressed vowels in the Reader</p>
+            </div>
+            <button
+              onClick={toggleStressMarks}
+              className={`relative inline-flex h-6 w-11 items-center rounded-full transition-colors ${
+                showStressMarks ? 'bg-indigo-600' : 'bg-gray-300 dark:bg-gray-600'
+              }`}
+              role="switch"
+              aria-checked={showStressMarks}
+            >
+              <span
+                className={`inline-block h-4 w-4 transform rounded-full bg-white transition-transform ${
+                  showStressMarks ? 'translate-x-6' : 'translate-x-1'
+                }`}
+              />
+            </button>
+          </div>
+        </section>
+      )}
 
       {/* Backup */}
       <section className="bg-white rounded-2xl shadow p-4">

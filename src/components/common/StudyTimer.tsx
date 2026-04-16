@@ -20,7 +20,7 @@ export default function StudyTimer() {
       <div className="flex gap-2">
         <button
           onClick={() => start('srs')}
-          className="text-xs bg-indigo-100 text-indigo-700 px-3 py-1 rounded-full hover:bg-indigo-200 transition-colors"
+          className="text-xs bg-indigo-100 dark:bg-indigo-900 text-indigo-700 dark:text-indigo-300 px-3 py-1 rounded-full hover:bg-indigo-200 dark:hover:bg-indigo-800 transition-colors"
         >
           ▶ Start studying
         </button>
@@ -30,13 +30,13 @@ export default function StudyTimer() {
 
   return (
     <div className="flex items-center gap-3">
-      <span className="text-xs text-gray-500 capitalize">{activity}</span>
-      <span className="text-sm font-mono font-semibold text-indigo-600">
+      <span className="text-xs text-gray-500 dark:text-gray-400 capitalize">{activity}</span>
+      <span className="text-sm font-mono font-semibold text-indigo-600 dark:text-indigo-400">
         {formatStudyTime(elapsed)}
       </span>
       <button
         onClick={stop}
-        className="text-xs bg-red-100 text-red-700 px-3 py-1 rounded-full hover:bg-red-200 transition-colors"
+        className="text-xs bg-red-100 dark:bg-red-900 text-red-700 dark:text-red-300 px-3 py-1 rounded-full hover:bg-red-200 dark:hover:bg-red-800 transition-colors"
       >
         ⏹ Stop
       </button>

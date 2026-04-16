@@ -3,7 +3,7 @@ import type { Token } from '../../lib/tokenizer';
 interface FuriganaTextProps {
   tokens: Token[];
   selectedWord: string | null;
-  onWordClick: (surface: string, reading: string) => void;
+  onWordClick: (surface: string, reading: string, tokenIndex: number) => void;
 }
 
 export default function FuriganaText({
@@ -23,7 +23,7 @@ export default function FuriganaText({
           return (
             <ruby
               key={i}
-              onClick={() => onWordClick(token.surface, token.reading)}
+              onClick={() => onWordClick(token.surface, token.reading, i)}
               className={`${baseClass} ${selectedClass}`}
             >
               {token.surface}
@@ -41,7 +41,7 @@ export default function FuriganaText({
         return (
           <span
             key={i}
-            onClick={() => onWordClick(token.surface, token.reading)}
+            onClick={() => onWordClick(token.surface, token.reading, i)}
             className={`${baseClass} ${selectedClass}`}
           >
             {token.surface}
