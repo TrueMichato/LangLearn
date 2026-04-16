@@ -1,4 +1,20 @@
 [
   { "id": "particles", "title": "Basic Particles (は、が、を、に、で)", "order": 1 },
-  { "id": "verb-forms", "title": "Verb Forms (ます、て、た)", "order": 2 }
+  { "id": "verb-forms", "title": "Verb Forms (ます、て、た)", "order": 2 },
+  { "id": "adjectives", "title": "Adjective Types (い vs な adjectives)", "order": 3 },
+  { "id": "counters", "title": "Counting & Counters (一つ、一人、一匹)", "order": 4 },
+  { "id": "giving-receiving", "title": "Giving & Receiving (あげる、もらう、くれる)", "order": 5 },
+  { "id": "potential", "title": "Potential Form (食べられる)", "order": 6 },
+  { "id": "conditional", "title": "Conditional Forms (たら、ば、なら、と)", "order": 7 },
+  { "id": "passive", "title": "Passive Voice (食べられる)", "order": 8 },
+  { "id": "causative", "title": "Causative Form (食べさせる)", "order": 9 },
+  { "id": "honorific", "title": "Honorific & Humble Speech (敬語)", "order": 10 },
+  { "id": "relative-clauses", "title": "Relative Clauses", "order": 11 },
+  { "id": "desire", "title": "Expressing Desire (たい、ほしい)", "order": 12 },
+  { "id": "quoting", "title": "Quoting & Reported Speech (と言う)", "order": 13 },
+  { "id": "comparatives", "title": "Comparative & Superlative (より、一番)", "order": 14 },
+  { "id": "time-expressions", "title": "Time Expressions & Frequency", "order": 15 },
+  { "id": "conjunctions", "title": "Conjunctions & Connectors", "order": 16 },
+  { "id": "sentence-particles", "title": "Sentence-Ending Particles (ね、よ、な)", "order": 17 },
+  { "id": "patterns", "title": "Useful Grammar Patterns", "order": 18 }
 ]
