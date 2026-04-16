@@ -25,7 +25,6 @@ export default function MatchExercise({ words, pairCount, onComplete }: Props) {
   const [matched, setMatched] = useState<Set<string>>(new Set());
   const [wrong, setWrong] = useState<string | null>(null);
   const [correct, setCorrect] = useState(0);
-  const [attempts, setAttempts] = useState(0);
 
   function handleWordTap(word: string) {
     if (matched.has(word)) return;
@@ -36,8 +35,6 @@ export default function MatchExercise({ words, pairCount, onComplete }: Props) {
   function handleMeaningTap(meaning: string, word: string) {
     if (matched.has(word)) return;
     if (!selectedWord) return;
-
-    setAttempts((a) => a + 1);
 
     if (selectedWord === word) {
       setMatched((prev) => new Set([...prev, word]));

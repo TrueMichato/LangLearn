@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from 'react';
-import type { VocabLesson, VocabWord, VocabExercise } from '../../types/vocab';
+import type { VocabLesson, VocabExercise } from '../../types/vocab';
 import { speak } from '../../lib/tts';
 import { addWord, wordExists } from '../../db/words';
 import { markLessonComplete } from '../../db/lessons';
