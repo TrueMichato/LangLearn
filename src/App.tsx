@@ -6,7 +6,7 @@ import ReaderPage from './pages/Reader';
 import GrammarPage from './pages/Grammar';
 import SettingsPage from './pages/Settings';
 import WordsPage from './pages/Words';
-import MorePage from './pages/More';
+import LearnPage from './pages/Learn';
 import OnboardingOverlay from './components/onboarding/OnboardingOverlay';
 import { useSettingsStore } from './stores/settingsStore';
 import ErrorBoundary from './components/common/ErrorBoundary';
@@ -27,7 +27,7 @@ export default function App() {
             <Route path="/reader" element={<ReaderPage />} />
             <Route path="/grammar" element={<GrammarPage />} />
             <Route path="/settings" element={<SettingsPage />} />
-            <Route path="/more" element={<MorePage />} />
+            <Route path="/learn" element={<LearnPage />} />
           </Route>
         </Routes>
       </HashRouter>

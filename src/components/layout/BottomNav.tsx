@@ -6,7 +6,7 @@ const links = [
   { to: '/review', label: 'Review', icon: '🃏' },
   { to: '/words', label: 'Words', icon: '📚' },
   { to: '/reader', label: 'Reader', icon: '📖' },
-  { to: '/more', label: 'More', icon: '☰' },
+  { to: '/learn', label: 'Learn', icon: '🎓' },
 ];
 
 export default function BottomNav() {

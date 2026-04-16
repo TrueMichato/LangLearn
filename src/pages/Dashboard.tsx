@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import { db } from '../db/schema';
 import type { StudySession, DailyActivity } from '../db/schema';
 import { getDueCount } from '../db/reviews';
@@ -79,7 +80,16 @@ export default function Dashboard() {
 
   return (
     <div>
-      <h2 className="text-lg font-semibold text-gray-700 dark:text-gray-200 mb-4">Dashboard</h2>
+      <div className="flex items-center justify-between mb-4">
+        <h2 className="text-lg font-semibold text-gray-700 dark:text-gray-200">Dashboard</h2>
+        <Link
+          to="/settings"
+          className="p-2 rounded-full hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors"
+          aria-label="Settings"
+        >
+          <span className="text-xl">⚙️</span>
+        </Link>
+      </div>
 
       <StudyPlan
         dueCards={stats.dueCards}
