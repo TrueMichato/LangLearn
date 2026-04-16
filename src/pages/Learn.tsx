@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import { useSettingsStore } from '../stores/settingsStore';
 import { getAlphabetsForLanguage } from '../data/alphabets';
+import { getLanguageLabel } from '../lib/languages';
 
 export default function LearnPage() {
   const activeLanguages = useSettingsStore((s) => s.activeLanguages);
@@ -25,17 +26,24 @@ export default function LearnPage() {
 
         {/* Letter Practice */}
         {languagesWithLetters.length > 0 ? (
-          <Link
-            to={`/letters/${languagesWithLetters[0]}`}
-            className="flex items-center gap-4 p-4 bg-white dark:bg-gray-800 rounded-2xl shadow hover:shadow-md transition-shadow"
-          >
-            <span className="text-3xl">🔤</span>
-            <div>
-              <p className="font-semibold text-gray-800 dark:text-gray-100">Letter Practice</p>
-              <p className="text-sm text-gray-500 dark:text-gray-400">Learn Hiragana, Katakana, Cyrillic</p>
-            </div>
-            <span className="ml-auto text-gray-400 dark:text-gray-500">→</span>
-          </Link>
+          languagesWithLetters.map((lang) => {
+            const alphabets = getAlphabetsForLanguage(lang);
+            const subtitle = alphabets.map((a) => a.name).join(', ');
+            return (
+              <Link
+                key={lang}
+                to={`/letters/${lang}`}
+                className="flex items-center gap-4 p-4 bg-white dark:bg-gray-800 rounded-2xl shadow hover:shadow-md transition-shadow"
+              >
+                <span className="text-3xl">🔤</span>
+                <div>
+                  <p className="font-semibold text-gray-800 dark:text-gray-100">{getLanguageLabel(lang)} Letters</p>
+                  <p className="text-sm text-gray-500 dark:text-gray-400">{subtitle}</p>
+                </div>
+                <span className="ml-auto text-gray-400 dark:text-gray-500">→</span>
+              </Link>
+            );
+          })
         ) : (
           <div className="flex items-center gap-4 p-4 bg-white dark:bg-gray-800 rounded-2xl shadow opacity-50">
             <span className="text-3xl">🔤</span>
