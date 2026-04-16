@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { db } from '../db/schema';
 import { addWord } from '../db/words';
 import { useTimerStore } from '../stores/timerStore';
-import { speak, isTTSSupported } from '../lib/tts';
+import WordLookupSheet from '../components/reader/WordLookupSheet';
 
 export default function ReaderPage() {
   const [text, setText] = useState('');
@@ -11,8 +11,6 @@ export default function ReaderPage() {
   const [savedTextId, setSavedTextId] = useState<number | null>(null);
   const [tokens, setTokens] = useState<string[]>([]);
   const [selectedWord, setSelectedWord] = useState<string | null>(null);
-  const [meaning, setMeaning] = useState('');
-  const [reading, setReading] = useState('');
   const { isRunning, start } = useTimerStore();
 
   const handleImport = async () => {
@@ -37,14 +35,14 @@ export default function ReaderPage() {
     }
   };
 
-  const handleAddWord = async () => {
-    if (!selectedWord || !meaning) return;
+  const handleAddWord = async (word: string, reading: string, meaning: string) => {
+    if (!word || !meaning) return;
 
     if (!isRunning) start('reading');
 
     await addWord({
       language,
-      word: selectedWord,
+      word,
       reading,
       meaning,
       contextSentence: '',
@@ -53,8 +51,6 @@ export default function ReaderPage() {
     });
 
     setSelectedWord(null);
-    setMeaning('');
-    setReading('');
   };
 
   if (tokens.length === 0) {
@@ -140,50 +136,12 @@ export default function ReaderPage() {
       </div>
 
       {selectedWord && (
-        <div className="fixed inset-x-0 bottom-0 bg-white border-t border-gray-200 rounded-t-2xl shadow-xl p-4 pb-[calc(1rem+env(safe-area-inset-bottom))] z-50">
-          <div className="max-w-lg mx-auto">
-            <div className="flex items-center justify-between mb-3">
-              <div className="flex items-center gap-2">
-                <span className="text-xl font-bold">{selectedWord}</span>
-                {isTTSSupported() && (
-                  <button
-                    onClick={() => speak(selectedWord, language)}
-                    className="text-lg hover:scale-110 transition-transform"
-                  >
-                    🔊
-                  </button>
-                )}
-              </div>
-              <button
-                onClick={() => setSelectedWord(null)}
-                className="text-gray-400 hover:text-gray-600"
-              >
-                ✕
-              </button>
-            </div>
-            <input
-              type="text"
-              placeholder="Reading / pronunciation"
-              value={reading}
-              onChange={(e) => setReading(e.target.value)}
-              className="w-full px-3 py-2 border border-gray-300 rounded-lg mb-2 focus:outline-none focus:ring-2 focus:ring-indigo-300"
-            />
-            <input
-              type="text"
-              placeholder="Meaning / translation"
-              value={meaning}
-              onChange={(e) => setMeaning(e.target.value)}
-              className="w-full px-3 py-2 border border-gray-300 rounded-lg mb-3 focus:outline-none focus:ring-2 focus:ring-indigo-300"
-            />
-            <button
-              onClick={handleAddWord}
-              disabled={!meaning}
-              className="w-full bg-green-600 text-white py-2 rounded-xl font-semibold hover:bg-green-700 transition-colors disabled:opacity-40"
-            >
-              + Add to SRS
-            </button>
-          </div>
-        </div>
+        <WordLookupSheet
+          word={selectedWord}
+          language={language}
+          onAdd={handleAddWord}
+          onClose={() => setSelectedWord(null)}
+        />
       )}
     </div>
   );
