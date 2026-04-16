@@ -1,4 +1,5 @@
-import { useEffect, useState, useCallback } from 'react';
+import { useEffect, useState, useCallback, useMemo } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { getDueReviews, getRandomWords } from '../db/words';
 import { processReview } from '../db/reviews';
 import { useReviewStore, type QueueItem } from '../stores/reviewStore';
@@ -12,6 +13,7 @@ import GradeButtons from '../components/srs/GradeButtons';
 import AddWordModal from '../components/srs/AddWordModal';
 import { assignCardType, selectDistractors } from '../lib/card-types';
 import type { SM2Grade } from '../lib/sm2';
+import { useKeyboardShortcuts } from '../hooks/useKeyboardShortcuts';
 
 const CARD_TYPE_LABELS: Record<string, string> = {
   classic: 'Classic',
@@ -25,6 +27,7 @@ export default function ReviewPage() {
     useReviewStore();
   const { isRunning, start } = useTimerStore();
   const reviewBatchSize = useSettingsStore((s) => s.reviewBatchSize);
+  const navigate = useNavigate();
   const [loading, setLoading] = useState(true);
   const [totalDue, setTotalDue] = useState(0);
   const [showAddModal, setShowAddModal] = useState(false);
@@ -84,6 +87,33 @@ export default function ReviewPage() {
     next();
   };
 
+  const current = currentIndex < queue.length ? queue[currentIndex] : undefined;
+  const isMC = current?.cardType === 'multiple-choice';
+  const canGrade = isFlipped && !isMC;
+
+  const GRADE_MAP: Record<string, SM2Grade> = { '1': 0, '2': 3, '3': 4, '4': 5 };
+
+  const shortcuts = useMemo(() => {
+    const map: Record<string, () => void> = {
+      Escape: () => navigate('/'),
+    };
+
+    if (current && !isMC && !isFlipped) {
+      map['Space'] = flip;
+    }
+
+    if (canGrade) {
+      for (const [key, grade] of Object.entries(GRADE_MAP)) {
+        map[key] = () => handleGrade(grade);
+      }
+    }
+
+    return map;
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [isFlipped, isMC, canGrade, current, navigate]);
+
+  useKeyboardShortcuts(shortcuts, !loading && !showAddModal);
+
   if (loading) {
     return (
       <div className="flex items-center justify-center h-64">
@@ -135,7 +165,8 @@ export default function ReviewPage() {
     );
   }
 
-  const current = queue[currentIndex];
+  // `current` already computed above; safe to use after the length guard
+  const activeCard = current!;
 
   return (
     <div>
@@ -155,36 +186,63 @@ export default function ReviewPage() {
 
       <div className="flex justify-center mb-2">
         <span className="text-xs px-2.5 py-0.5 rounded-full bg-gray-100 dark:bg-gray-700 text-gray-500 dark:text-gray-400">
-          {CARD_TYPE_LABELS[current.cardType]}
+          {CARD_TYPE_LABELS[activeCard.cardType]}
         </span>
       </div>
 
-      {current.cardType === 'reverse' && (
+      {activeCard.cardType === 'reverse' && (
         <>
-          <ReverseCard word={current.word} isFlipped={isFlipped} onFlip={flip} />
-          {isFlipped && <GradeButtons onGrade={handleGrade} />}
+          <ReverseCard word={activeCard.word} isFlipped={isFlipped} onFlip={flip} />
+          {isFlipped && (
+            <>
+              <GradeButtons onGrade={handleGrade} />
+              <div className="hidden sm:flex justify-center gap-4 mt-2 text-xs text-gray-400 dark:text-gray-500">
+                <span>Space: flip</span>
+                <span>1-4: grade</span>
+                <span>Esc: exit</span>
+              </div>
+            </>
+          )}
         </>
       )}
 
-      {current.cardType === 'listening' && (
+      {activeCard.cardType === 'listening' && (
         <>
-          <ListeningCard word={current.word} isFlipped={isFlipped} onFlip={flip} />
-          {isFlipped && <GradeButtons onGrade={handleGrade} />}
+          <ListeningCard word={activeCard.word} isFlipped={isFlipped} onFlip={flip} />
+          {isFlipped && (
+            <>
+              <GradeButtons onGrade={handleGrade} />
+              <div className="hidden sm:flex justify-center gap-4 mt-2 text-xs text-gray-400 dark:text-gray-500">
+                <span>Space: flip</span>
+                <span>1-4: grade</span>
+                <span>Esc: exit</span>
+              </div>
+            </>
+          )}
         </>
       )}
 
-      {current.cardType === 'multiple-choice' && current.distractors && (
+      {activeCard.cardType === 'multiple-choice' && activeCard.distractors && (
         <MultipleChoiceCard
-          word={current.word}
-          distractors={current.distractors}
+          word={activeCard.word}
+          distractors={activeCard.distractors}
           onGrade={handleGrade}
         />
       )}
 
-      {current.cardType === 'classic' && (
+      {activeCard.cardType === 'classic' && (
         <>
-          <Flashcard word={current.word} isFlipped={isFlipped} onFlip={flip} />
-          {isFlipped && <GradeButtons onGrade={handleGrade} />}
+          <Flashcard word={activeCard.word} isFlipped={isFlipped} onFlip={flip} />
+          {isFlipped && (
+            <>
+              <GradeButtons onGrade={handleGrade} />
+              <div className="hidden sm:flex justify-center gap-4 mt-2 text-xs text-gray-400 dark:text-gray-500">
+                <span>Space: flip</span>
+                <span>1-4: grade</span>
+                <span>Esc: exit</span>
+              </div>
+            </>
+          )}
         </>
       )}
 
