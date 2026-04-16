@@ -1,16 +1,22 @@
-import { useState } from 'react';
-import { db } from '../db/schema';
+import { useState, useEffect } from 'react';
+import { db, type Text as TextRecord } from '../db/schema';
 import { addWord } from '../db/words';
+import { getTextCount } from '../db/texts';
 import { useTimerStore } from '../stores/timerStore';
 import { useSettingsStore } from '../stores/settingsStore';
 import WordLookupSheet from '../components/reader/WordLookupSheet';
+import TextLibrary from '../components/reader/TextLibrary';
 import { tokenizeJapanese } from '../lib/tokenizer';
 import type { Token } from '../lib/tokenizer';
 import FuriganaText from '../components/reader/FuriganaText';
 import { applyStress } from '../lib/russian-stress';
 import { splitSentences, findSentenceAt, type SentenceSpan } from '../lib/sentences';
 
+type Tab = 'import' | 'library';
+
 export default function ReaderPage() {
+  const [tab, setTab] = useState<Tab>('import');
+  const [tabReady, setTabReady] = useState(false);
   const [text, setText] = useState('');
   const [title, setTitle] = useState('');
   const [language, setLanguage] = useState('ja');
@@ -26,6 +32,81 @@ export default function ReaderPage() {
   const [selectedSentence, setSelectedSentence] = useState('');
   const { isRunning, start } = useTimerStore();
   const { showStressMarks } = useSettingsStore();
+
+  // Default to Library tab if texts exist
+  useEffect(() => {
+    getTextCount().then((count) => {
+      setTab(count > 0 ? 'library' : 'import');
+      setTabReady(true);
+    });
+  }, []);
+
+  function resetReadingState() {
+    setTokens([]);
+    setTokenOffsets([]);
+    setJaTokens([]);
+    setJaTokenOffsets([]);
+    setSentences([]);
+    setText('');
+    setTitle('');
+    setSavedTextId(null);
+    setSelectedWord(null);
+    setSelectedReading('');
+    setSelectedSentence('');
+  }
+
+  function switchTab(newTab: Tab) {
+    if (newTab === tab) return;
+    resetReadingState();
+    setTab(newTab);
+  }
+
+  async function openTextFromLibrary(record: TextRecord) {
+    resetReadingState();
+    setText(record.content);
+    setTitle(record.title);
+    setLanguage(record.language);
+    setSavedTextId(record.id ?? null);
+    setSentences(splitSentences(record.content));
+
+    if (record.language === 'ja') {
+      setIsTokenizing(true);
+      try {
+        const result = await tokenizeJapanese(record.content);
+        setJaTokens(result);
+        const offsets: number[] = [];
+        let pos = 0;
+        for (const t of result) {
+          offsets.push(pos);
+          pos += t.surface.length;
+        }
+        setJaTokenOffsets(offsets);
+      } catch {
+        const chars = record.content.split('');
+        setTokens(chars);
+        setTokenOffsets(chars.map((_, i) => i));
+      } finally {
+        setIsTokenizing(false);
+      }
+    } else {
+      const isCJK = /[\u3000-\u9fff\uf900-\ufaff]/.test(record.content);
+      let rawTokens: string[];
+      if (isCJK) {
+        rawTokens = record.content.split('');
+      } else {
+        rawTokens = record.content.split(/(\s+)/).filter((t) => t.trim());
+      }
+      const offsets: number[] = [];
+      let pos = 0;
+      for (const t of rawTokens) {
+        const idx = record.content.indexOf(t, pos);
+        offsets.push(idx >= 0 ? idx : pos);
+        pos = (idx >= 0 ? idx : pos) + t.length;
+      }
+      setTokens(rawTokens);
+      setTokenOffsets(offsets);
+    }
+  }
 
   const handleImport = async () => {
     if (!text.trim()) return;
@@ -103,6 +184,34 @@ export default function ReaderPage() {
 
   const hasTokens = tokens.length > 0 || jaTokens.length > 0;
 
+  if (!tabReady) return null;
+
+  // Tab toggle (shown only when not in reading view and not tokenizing)
+  const tabToggle = !hasTokens && !isTokenizing ? (
+    <div className="flex bg-gray-100 dark:bg-gray-700 rounded-xl p-1 mb-4">
+      <button
+        onClick={() => switchTab('import')}
+        className={`flex-1 py-2 text-sm font-medium rounded-lg transition-colors ${
+          tab === 'import'
+            ? 'bg-white dark:bg-gray-800 text-indigo-600 dark:text-indigo-400 shadow-sm'
+            : 'text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-300'
+        }`}
+      >
+        Import
+      </button>
+      <button
+        onClick={() => switchTab('library')}
+        className={`flex-1 py-2 text-sm font-medium rounded-lg transition-colors ${
+          tab === 'library'
+            ? 'bg-white dark:bg-gray-800 text-indigo-600 dark:text-indigo-400 shadow-sm'
+            : 'text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-300'
+        }`}
+      >
+        Library
+      </button>
+    </div>
+  ) : null;
+
   return isTokenizing ? (
     <div className="flex flex-col items-center justify-center py-16 gap-3">
       <svg
@@ -131,6 +240,10 @@ export default function ReaderPage() {
       <h2 className="text-lg font-semibold text-gray-700 dark:text-gray-200 mb-4">
         Immersion Reader
       </h2>
+      {tabToggle}
+      {tab === 'library' ? (
+        <TextLibrary onSelectText={openTextFromLibrary} />
+      ) : (
       <div className="space-y-3">
         <input
           type="text"
@@ -168,6 +281,7 @@ export default function ReaderPage() {
           Start Reading
         </button>
       </div>
+      )}
     </div>
   ) : (
     <div>
@@ -177,14 +291,8 @@ export default function ReaderPage() {
         </h2>
         <button
           onClick={() => {
-            setTokens([]);
-            setTokenOffsets([]);
-            setJaTokens([]);
-            setJaTokenOffsets([]);
-            setSentences([]);
-            setText('');
-            setTitle('');
-            setSavedTextId(null);
+            resetReadingState();
+            getTextCount().then((count) => setTab(count > 0 ? 'library' : 'import'));
           }}
           className="text-sm text-indigo-600 dark:text-indigo-400 hover:underline"
         >
@@ -192,7 +300,7 @@ export default function ReaderPage() {
         </button>
       </div>
 
-      <div className="bg-white dark:bg-gray-800 rounded-2xl shadow p-4 leading-relaxed text-lg dark:text-gray-100">
+      <div className="bg-white dark:bg-gray-800 rounded-2xl shadow p-4 leading-relaxed dark:text-gray-100" style={{ fontSize: 'var(--app-font-size)' }}>
         {jaTokens.length > 0 ? (
           <FuriganaText
             tokens={jaTokens}
