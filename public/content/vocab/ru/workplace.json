@@ -1,0 +1,38 @@
+{
+  "id": "workplace",
+  "words": [
+    { "word": "Совещание", "reading": "soveshchaniye", "meaning": "Meeting", "example": "Совещание начнётся в два часа.", "exampleMeaning": "The meeting will start at two o'clock." },
+    { "word": "Начальник", "reading": "nachalnik", "meaning": "Boss / Manager", "example": "Начальник одобрил проект.", "exampleMeaning": "The boss approved the project." },
+    { "word": "Работа", "reading": "rabota", "meaning": "Work / Job", "example": "Я нашёл хорошую работу.", "exampleMeaning": "I found a good job." },
+    { "word": "Офис", "reading": "ofis", "meaning": "Office", "example": "Наш офис в центре города.", "exampleMeaning": "Our office is in the city center." },
+    { "word": "Зарплата", "reading": "zarplata", "meaning": "Salary", "example": "Зарплату выплачивают в конце месяца.", "exampleMeaning": "Salary is paid at the end of the month." },
+    { "word": "Коллега", "reading": "kollega", "meaning": "Colleague", "example": "Мой коллега помог мне.", "exampleMeaning": "My colleague helped me." },
+    { "word": "Договор", "reading": "dogovor", "meaning": "Contract / Agreement", "example": "Мы подписали договор.", "exampleMeaning": "We signed the contract." },
+    { "word": "Отпуск", "reading": "otpusk", "meaning": "Vacation / Leave", "example": "Я ухожу в отпуск на неделю.", "exampleMeaning": "I'm going on vacation for a week." },
+    { "word": "Собеседование", "reading": "sobesedovaniye", "meaning": "Job interview", "example": "У меня собеседование завтра.", "exampleMeaning": "I have a job interview tomorrow." },
+    { "word": "Проект", "reading": "proyekt", "meaning": "Project", "example": "Проект нужно сдать до пятницы.", "exampleMeaning": "The project must be submitted by Friday." },
+    { "word": "Задача", "reading": "zadacha", "meaning": "Task / Assignment", "example": "У меня много задач на сегодня.", "exampleMeaning": "I have many tasks for today." },
+    { "word": "Отчёт", "reading": "otchyot", "meaning": "Report", "example": "Подготовьте отчёт к понедельнику.", "exampleMeaning": "Prepare the report by Monday." },
+    { "word": "Клиент", "reading": "kliyent", "meaning": "Client / Customer", "example": "Клиент остался доволен.", "exampleMeaning": "The client was satisfied." },
+    { "word": "Резюме", "reading": "rezyume", "meaning": "Resume / CV", "example": "Отправьте резюме по электронной почте.", "exampleMeaning": "Send your resume by email." },
+    { "word": "Командировка", "reading": "komandirovka", "meaning": "Business trip", "example": "Он уехал в командировку.", "exampleMeaning": "He went on a business trip." },
+    { "word": "Увольнение", "reading": "uvolneniye", "meaning": "Dismissal / Firing", "example": "Увольнение стало неожиданностью.", "exampleMeaning": "The dismissal was unexpected." }
+  ],
+  "exercises": [
+    { "type": "match", "pairs": 6 },
+    { "type": "fill-blank", "items": [
+      { "sentence": "___ начнётся в два часа.", "answer": "Совещание", "hint": "Meeting" },
+      { "sentence": "Я нашёл хорошую ___.", "answer": "Работу", "hint": "Work / Job (accusative)" },
+      { "sentence": "Мы подписали ___.", "answer": "Договор", "hint": "Contract / Agreement" },
+      { "sentence": "У меня ___ завтра.", "answer": "Собеседование", "hint": "Job interview" },
+      { "sentence": "Подготовьте ___ к понедельнику.", "answer": "Отчёт", "hint": "Report" }
+    ]},
+    { "type": "multiple-choice", "items": [
+      { "question": "What does 'Начальник' mean?", "options": ["Boss / Manager", "Teacher", "Director", "President"], "answer": 0 },
+      { "question": "How do you say 'Salary' in Russian?", "options": ["Зарплата", "Деньги", "Доход", "Премия"], "answer": 0 },
+      { "question": "What is 'Командировка'?", "options": ["Business trip", "Vacation", "Meeting", "Conference"], "answer": 0 },
+      { "question": "What does 'Резюме' mean?", "options": ["Resume / CV", "Report", "Contract", "Application"], "answer": 0 },
+      { "question": "How do you say 'Colleague' in Russian?", "options": ["Коллега", "Клиент", "Начальник", "Партнёр"], "answer": 0 }
+    ]}
+  ]
+}

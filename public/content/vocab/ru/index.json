@@ -18,5 +18,15 @@
   { "id": "emotions", "title": "Emotions & Feelings", "order": 17, "wordCount": 16, "level": "beginner" },
   { "id": "hobbies", "title": "Hobbies & Sports", "order": 18, "wordCount": 16, "level": "beginner" },
   { "id": "travel", "title": "Travel & Tourism", "order": 19, "wordCount": 16, "level": "beginner" },
-  { "id": "phrases", "title": "Common Phrases & Idioms", "order": 20, "wordCount": 16, "level": "beginner" }
+  { "id": "phrases", "title": "Common Phrases & Idioms", "order": 20, "wordCount": 16, "level": "beginner" },
+  { "id": "technology", "title": "Technology & Internet", "order": 21, "wordCount": 16, "level": "beginner" },
+  { "id": "nature-seasons", "title": "Nature & Seasons", "order": 22, "wordCount": 16, "level": "beginner" },
+  { "id": "clothing", "title": "Clothing & Accessories", "order": 23, "wordCount": 16, "level": "beginner" },
+  { "id": "health", "title": "Health & Medicine", "order": 24, "wordCount": 16, "level": "beginner" },
+  { "id": "sports", "title": "Sports & Exercise", "order": 25, "wordCount": 16, "level": "beginner" },
+  { "id": "music-art", "title": "Music & Art", "order": 26, "wordCount": 16, "level": "beginner" },
+  { "id": "restaurant", "title": "At the Restaurant", "order": 27, "wordCount": 16, "level": "beginner" },
+  { "id": "directions", "title": "Directions & Locations", "order": 28, "wordCount": 16, "level": "beginner" },
+  { "id": "feelings", "title": "Feelings & Personality", "order": 29, "wordCount": 16, "level": "beginner" },
+  { "id": "workplace", "title": "Workplace & Business", "order": 30, "wordCount": 16, "level": "beginner" }
 ]

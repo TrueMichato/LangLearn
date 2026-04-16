@@ -1,0 +1,38 @@
+{
+  "id": "nature-seasons",
+  "words": [
+    { "word": "Весна", "reading": "vesna", "meaning": "Spring", "example": "Весна — моё любимое время года.", "exampleMeaning": "Spring is my favorite season." },
+    { "word": "Лето", "reading": "leto", "meaning": "Summer", "example": "Летом мы ездим на дачу.", "exampleMeaning": "In summer we go to the dacha." },
+    { "word": "Осень", "reading": "osen", "meaning": "Autumn / Fall", "example": "Осенью листья становятся жёлтыми.", "exampleMeaning": "In autumn the leaves turn yellow." },
+    { "word": "Зима", "reading": "zima", "meaning": "Winter", "example": "Зимой очень холодно.", "exampleMeaning": "In winter it's very cold." },
+    { "word": "Море", "reading": "more", "meaning": "Sea", "example": "Мы отдыхали на море.", "exampleMeaning": "We vacationed at the sea." },
+    { "word": "Гора", "reading": "gora", "meaning": "Mountain", "example": "Эта гора очень высокая.", "exampleMeaning": "This mountain is very high." },
+    { "word": "Река", "reading": "reka", "meaning": "River", "example": "Река течёт через город.", "exampleMeaning": "The river flows through the city." },
+    { "word": "Озеро", "reading": "ozero", "meaning": "Lake", "example": "Озеро Байкал — самое глубокое.", "exampleMeaning": "Lake Baikal is the deepest." },
+    { "word": "Лес", "reading": "les", "meaning": "Forest", "example": "В лесу много грибов.", "exampleMeaning": "There are many mushrooms in the forest." },
+    { "word": "Цветок", "reading": "tsvetok", "meaning": "Flower", "example": "Этот цветок очень красивый.", "exampleMeaning": "This flower is very beautiful." },
+    { "word": "Дерево", "reading": "derevo", "meaning": "Tree", "example": "Под деревом сидит кот.", "exampleMeaning": "A cat is sitting under the tree." },
+    { "word": "Трава", "reading": "trava", "meaning": "Grass", "example": "Трава зелёная и мягкая.", "exampleMeaning": "The grass is green and soft." },
+    { "word": "Небо", "reading": "nebo", "meaning": "Sky", "example": "Небо сегодня голубое.", "exampleMeaning": "The sky is blue today." },
+    { "word": "Звезда", "reading": "zvezda", "meaning": "Star", "example": "На небе много звёзд.", "exampleMeaning": "There are many stars in the sky." },
+    { "word": "Луна", "reading": "luna", "meaning": "Moon", "example": "Луна светит ярко.", "exampleMeaning": "The moon shines brightly." },
+    { "word": "Солнце", "reading": "solntse", "meaning": "Sun", "example": "Солнце встаёт рано.", "exampleMeaning": "The sun rises early." }
+  ],
+  "exercises": [
+    { "type": "match", "pairs": 6 },
+    { "type": "fill-blank", "items": [
+      { "sentence": "___ — моё любимое время года.", "answer": "Весна", "hint": "Spring" },
+      { "sentence": "Мы отдыхали на ___.", "answer": "Море", "hint": "Sea (prepositional)" },
+      { "sentence": "___ течёт через город.", "answer": "Река", "hint": "River" },
+      { "sentence": "___ сегодня голубое.", "answer": "Небо", "hint": "Sky" },
+      { "sentence": "В ___ много грибов.", "answer": "Лесу", "hint": "Forest (prepositional)" }
+    ]},
+    { "type": "multiple-choice", "items": [
+      { "question": "What does 'Осень' mean?", "options": ["Autumn / Fall", "Spring", "Summer", "Winter"], "answer": 0 },
+      { "question": "How do you say 'Mountain' in Russian?", "options": ["Гора", "Река", "Море", "Озеро"], "answer": 0 },
+      { "question": "What is 'Звезда'?", "options": ["Star", "Moon", "Sun", "Sky"], "answer": 0 },
+      { "question": "What does 'Дерево' mean?", "options": ["Tree", "Flower", "Grass", "Forest"], "answer": 0 },
+      { "question": "How do you say 'Lake' in Russian?", "options": ["Озеро", "Море", "Река", "Пруд"], "answer": 0 }
+    ]}
+  ]
+}

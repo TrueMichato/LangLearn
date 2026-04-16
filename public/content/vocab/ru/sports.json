@@ -1,0 +1,38 @@
+{
+  "id": "sports",
+  "words": [
+    { "word": "Футбол", "reading": "futbol", "meaning": "Football / Soccer", "example": "Мы играем в футбол каждую субботу.", "exampleMeaning": "We play football every Saturday." },
+    { "word": "Бег", "reading": "beg", "meaning": "Running", "example": "Бег полезен для здоровья.", "exampleMeaning": "Running is good for health." },
+    { "word": "Плавание", "reading": "plavaniye", "meaning": "Swimming", "example": "Плавание — мой любимый вид спорта.", "exampleMeaning": "Swimming is my favorite sport." },
+    { "word": "Мяч", "reading": "myach", "meaning": "Ball", "example": "Передай мне мяч!", "exampleMeaning": "Pass me the ball!" },
+    { "word": "Команда", "reading": "komanda", "meaning": "Team", "example": "Наша команда выиграла матч.", "exampleMeaning": "Our team won the match." },
+    { "word": "Тренер", "reading": "trener", "meaning": "Coach / Trainer", "example": "Тренер объяснил упражнение.", "exampleMeaning": "The coach explained the exercise." },
+    { "word": "Тренировка", "reading": "trenirovka", "meaning": "Training / Workout", "example": "Тренировка начинается в шесть.", "exampleMeaning": "The training starts at six." },
+    { "word": "Стадион", "reading": "stadion", "meaning": "Stadium", "example": "На стадионе много болельщиков.", "exampleMeaning": "There are many fans at the stadium." },
+    { "word": "Победа", "reading": "pobeda", "meaning": "Victory / Win", "example": "Победа досталась нам нелегко.", "exampleMeaning": "The victory didn't come easily." },
+    { "word": "Матч", "reading": "match", "meaning": "Match / Game", "example": "Матч закончился вничью.", "exampleMeaning": "The match ended in a draw." },
+    { "word": "Бассейн", "reading": "basseyn", "meaning": "Swimming pool", "example": "Я хожу в бассейн три раза в неделю.", "exampleMeaning": "I go to the pool three times a week." },
+    { "word": "Хоккей", "reading": "hokkey", "meaning": "Hockey", "example": "Хоккей — популярный спорт в России.", "exampleMeaning": "Hockey is a popular sport in Russia." },
+    { "word": "Теннис", "reading": "tennis", "meaning": "Tennis", "example": "Мы играли в теннис утром.", "exampleMeaning": "We played tennis in the morning." },
+    { "word": "Велосипед", "reading": "velosiped", "meaning": "Bicycle", "example": "Я катаюсь на велосипеде в парке.", "exampleMeaning": "I ride my bicycle in the park." },
+    { "word": "Спортзал", "reading": "sportzal", "meaning": "Gym", "example": "Он ходит в спортзал каждый день.", "exampleMeaning": "He goes to the gym every day." },
+    { "word": "Чемпион", "reading": "chempion", "meaning": "Champion", "example": "Она стала чемпионом мира.", "exampleMeaning": "She became the world champion." }
+  ],
+  "exercises": [
+    { "type": "match", "pairs": 6 },
+    { "type": "fill-blank", "items": [
+      { "sentence": "Мы играем в ___ каждую субботу.", "answer": "Футбол", "hint": "Football / Soccer" },
+      { "sentence": "Наша ___ выиграла матч.", "answer": "Команда", "hint": "Team" },
+      { "sentence": "___ начинается в шесть.", "answer": "Тренировка", "hint": "Training / Workout" },
+      { "sentence": "Я хожу в ___ три раза в неделю.", "answer": "Бассейн", "hint": "Swimming pool" },
+      { "sentence": "Он ходит в ___ каждый день.", "answer": "Спортзал", "hint": "Gym" }
+    ]},
+    { "type": "multiple-choice", "items": [
+      { "question": "What does 'Плавание' mean?", "options": ["Swimming", "Running", "Diving", "Sailing"], "answer": 0 },
+      { "question": "How do you say 'Coach' in Russian?", "options": ["Тренер", "Игрок", "Судья", "Команда"], "answer": 0 },
+      { "question": "What is 'Победа'?", "options": ["Victory / Win", "Defeat", "Draw", "Game"], "answer": 0 },
+      { "question": "What does 'Велосипед' mean?", "options": ["Bicycle", "Motorcycle", "Car", "Scooter"], "answer": 0 },
+      { "question": "How do you say 'Stadium' in Russian?", "options": ["Стадион", "Спортзал", "Бассейн", "Арена"], "answer": 0 }
+    ]}
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "id": "technology",
+  "words": [
+    { "word": "Компьютер", "reading": "kompyuter", "meaning": "Computer", "example": "Мой компьютер работает быстро.", "exampleMeaning": "My computer works fast." },
+    { "word": "Интернет", "reading": "internet", "meaning": "Internet", "example": "Без интернета сложно работать.", "exampleMeaning": "It's hard to work without the internet." },
+    { "word": "Телефон", "reading": "telefon", "meaning": "Phone", "example": "Я забыл телефон дома.", "exampleMeaning": "I forgot my phone at home." },
+    { "word": "Экран", "reading": "ekran", "meaning": "Screen", "example": "Экран слишком яркий.", "exampleMeaning": "The screen is too bright." },
+    { "word": "Клавиатура", "reading": "klaviatura", "meaning": "Keyboard", "example": "Эта клавиатура очень удобная.", "exampleMeaning": "This keyboard is very comfortable." },
+    { "word": "Мышка", "reading": "myshka", "meaning": "Mouse (computer)", "example": "Мышка перестала работать.", "exampleMeaning": "The mouse stopped working." },
+    { "word": "Пароль", "reading": "parol", "meaning": "Password", "example": "Не забудь свой пароль.", "exampleMeaning": "Don't forget your password." },
+    { "word": "Сайт", "reading": "sayt", "meaning": "Website", "example": "Этот сайт очень полезный.", "exampleMeaning": "This website is very useful." },
+    { "word": "Программа", "reading": "programma", "meaning": "Program / Application", "example": "Я установил новую программу.", "exampleMeaning": "I installed a new program." },
+    { "word": "Файл", "reading": "fayl", "meaning": "File", "example": "Сохрани файл на диске.", "exampleMeaning": "Save the file to the disk." },
+    { "word": "Сообщение", "reading": "soobshcheniye", "meaning": "Message", "example": "Я отправил тебе сообщение.", "exampleMeaning": "I sent you a message." },
+    { "word": "Сеть", "reading": "set", "meaning": "Network", "example": "Сеть работает медленно.", "exampleMeaning": "The network is running slowly." },
+    { "word": "Принтер", "reading": "printer", "meaning": "Printer", "example": "Принтер закончил печать.", "exampleMeaning": "The printer finished printing." },
+    { "word": "Зарядка", "reading": "zaryadka", "meaning": "Charger", "example": "Дай мне зарядку для телефона.", "exampleMeaning": "Give me the phone charger." },
+    { "word": "Ноутбук", "reading": "noutbuk", "meaning": "Laptop", "example": "Я работаю на ноутбуке.", "exampleMeaning": "I work on a laptop." },
+    { "word": "Приложение", "reading": "prilozheniye", "meaning": "App / Application", "example": "Скачай это приложение.", "exampleMeaning": "Download this app." }
+  ],
+  "exercises": [
+    { "type": "match", "pairs": 6 },
+    { "type": "fill-blank", "items": [
+      { "sentence": "Я забыл ___ дома.", "answer": "Телефон", "hint": "Phone" },
+      { "sentence": "Без ___ сложно работать.", "answer": "Интернета", "hint": "Internet (genitive)" },
+      { "sentence": "Сохрани ___ на диске.", "answer": "Файл", "hint": "File" },
+      { "sentence": "Не забудь свой ___.", "answer": "Пароль", "hint": "Password" },
+      { "sentence": "Я работаю на ___.", "answer": "Ноутбуке", "hint": "Laptop (prepositional)" }
+    ]},
+    { "type": "multiple-choice", "items": [
+      { "question": "What does 'Клавиатура' mean?", "options": ["Keyboard", "Screen", "Mouse", "Printer"], "answer": 0 },
+      { "question": "How do you say 'Website' in Russian?", "options": ["Сайт", "Сеть", "Файл", "Экран"], "answer": 0 },
+      { "question": "What is 'Сообщение'?", "options": ["Message", "Program", "Password", "Network"], "answer": 0 },
+      { "question": "What does 'Зарядка' mean?", "options": ["Charger", "Battery", "Cable", "Plug"], "answer": 0 },
+      { "question": "How do you say 'Laptop' in Russian?", "options": ["Ноутбук", "Компьютер", "Планшет", "Телефон"], "answer": 0 }
+    ]}
+  ]
+}

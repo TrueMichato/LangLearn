@@ -1,0 +1,38 @@
+{
+  "id": "clothing",
+  "words": [
+    { "word": "Рубашка", "reading": "rubashka", "meaning": "Shirt", "example": "Эта рубашка тебе идёт.", "exampleMeaning": "This shirt suits you." },
+    { "word": "Брюки", "reading": "bryuki", "meaning": "Trousers / Pants", "example": "Мне нужны новые брюки.", "exampleMeaning": "I need new trousers." },
+    { "word": "Обувь", "reading": "obuv", "meaning": "Footwear / Shoes", "example": "Сними обувь у входа.", "exampleMeaning": "Take off your shoes at the entrance." },
+    { "word": "Куртка", "reading": "kurtka", "meaning": "Jacket", "example": "Надень куртку, на улице холодно.", "exampleMeaning": "Put on a jacket, it's cold outside." },
+    { "word": "Платье", "reading": "platye", "meaning": "Dress", "example": "Она купила красивое платье.", "exampleMeaning": "She bought a beautiful dress." },
+    { "word": "Юбка", "reading": "yubka", "meaning": "Skirt", "example": "Юбка слишком короткая.", "exampleMeaning": "The skirt is too short." },
+    { "word": "Шапка", "reading": "shapka", "meaning": "Hat / Cap", "example": "Зимой нужно носить шапку.", "exampleMeaning": "In winter you need to wear a hat." },
+    { "word": "Перчатки", "reading": "perchatki", "meaning": "Gloves", "example": "Я потерял свои перчатки.", "exampleMeaning": "I lost my gloves." },
+    { "word": "Шарф", "reading": "sharf", "meaning": "Scarf", "example": "Этот шарф очень тёплый.", "exampleMeaning": "This scarf is very warm." },
+    { "word": "Носки", "reading": "noski", "meaning": "Socks", "example": "Где мои чистые носки?", "exampleMeaning": "Where are my clean socks?" },
+    { "word": "Пальто", "reading": "palto", "meaning": "Coat", "example": "Пальто висит в шкафу.", "exampleMeaning": "The coat is hanging in the closet." },
+    { "word": "Костюм", "reading": "kostyum", "meaning": "Suit", "example": "Он пришёл в деловом костюме.", "exampleMeaning": "He came in a business suit." },
+    { "word": "Футболка", "reading": "futbolka", "meaning": "T-shirt", "example": "Летом я ношу футболку.", "exampleMeaning": "In summer I wear a T-shirt." },
+    { "word": "Джинсы", "reading": "dzhinsy", "meaning": "Jeans", "example": "Эти джинсы мне малы.", "exampleMeaning": "These jeans are too small for me." },
+    { "word": "Ремень", "reading": "remen", "meaning": "Belt", "example": "Тебе нужен ремень к брюкам.", "exampleMeaning": "You need a belt for the trousers." },
+    { "word": "Кроссовки", "reading": "krossovki", "meaning": "Sneakers", "example": "Я бегаю в кроссовках.", "exampleMeaning": "I run in sneakers." }
+  ],
+  "exercises": [
+    { "type": "match", "pairs": 6 },
+    { "type": "fill-blank", "items": [
+      { "sentence": "Надень ___, на улице холодно.", "answer": "Куртку", "hint": "Jacket (accusative)" },
+      { "sentence": "Эта ___ тебе идёт.", "answer": "Рубашка", "hint": "Shirt" },
+      { "sentence": "Зимой нужно носить ___.", "answer": "Шапку", "hint": "Hat (accusative)" },
+      { "sentence": "Я потерял свои ___.", "answer": "Перчатки", "hint": "Gloves" },
+      { "sentence": "Она купила красивое ___.", "answer": "Платье", "hint": "Dress" }
+    ]},
+    { "type": "multiple-choice", "items": [
+      { "question": "What does 'Брюки' mean?", "options": ["Trousers / Pants", "Shirt", "Skirt", "Jacket"], "answer": 0 },
+      { "question": "How do you say 'Scarf' in Russian?", "options": ["Шарф", "Шапка", "Шорты", "Шуба"], "answer": 0 },
+      { "question": "What is 'Кроссовки'?", "options": ["Sneakers", "Boots", "Sandals", "Slippers"], "answer": 0 },
+      { "question": "What does 'Пальто' mean?", "options": ["Coat", "Dress", "Suit", "Jacket"], "answer": 0 },
+      { "question": "How do you say 'Jeans' in Russian?", "options": ["Джинсы", "Брюки", "Шорты", "Юбка"], "answer": 0 }
+    ]}
+  ]
+}

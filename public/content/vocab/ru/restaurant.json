@@ -1,0 +1,38 @@
+{
+  "id": "restaurant",
+  "words": [
+    { "word": "Меню", "reading": "menyu", "meaning": "Menu", "example": "Можно посмотреть меню?", "exampleMeaning": "Can I see the menu?" },
+    { "word": "Заказ", "reading": "zakaz", "meaning": "Order", "example": "Ваш заказ будет готов через десять минут.", "exampleMeaning": "Your order will be ready in ten minutes." },
+    { "word": "Счёт", "reading": "shchyot", "meaning": "Bill / Check", "example": "Принесите, пожалуйста, счёт.", "exampleMeaning": "Bring the bill, please." },
+    { "word": "Официант", "reading": "ofitsiant", "meaning": "Waiter", "example": "Официант принёс наш заказ.", "exampleMeaning": "The waiter brought our order." },
+    { "word": "Блюдо", "reading": "blyudo", "meaning": "Dish (food)", "example": "Это блюдо очень вкусное.", "exampleMeaning": "This dish is very tasty." },
+    { "word": "Порция", "reading": "portsiya", "meaning": "Portion / Serving", "example": "Порция была большая.", "exampleMeaning": "The portion was large." },
+    { "word": "Чаевые", "reading": "chayevye", "meaning": "Tip (gratuity)", "example": "Мы оставили чаевые.", "exampleMeaning": "We left a tip." },
+    { "word": "Столик", "reading": "stolik", "meaning": "Table (at a restaurant)", "example": "Я забронировал столик на двоих.", "exampleMeaning": "I reserved a table for two." },
+    { "word": "Напиток", "reading": "napitok", "meaning": "Drink / Beverage", "example": "Какой напиток вы хотите?", "exampleMeaning": "What drink would you like?" },
+    { "word": "Десерт", "reading": "desert", "meaning": "Dessert", "example": "На десерт у нас мороженое.", "exampleMeaning": "For dessert we have ice cream." },
+    { "word": "Вилка", "reading": "vilka", "meaning": "Fork", "example": "Дайте мне, пожалуйста, вилку.", "exampleMeaning": "Give me a fork, please." },
+    { "word": "Нож", "reading": "nozh", "meaning": "Knife", "example": "Нож лежит справа от тарелки.", "exampleMeaning": "The knife is to the right of the plate." },
+    { "word": "Ложка", "reading": "lozhka", "meaning": "Spoon", "example": "Мне нужна ложка для супа.", "exampleMeaning": "I need a spoon for the soup." },
+    { "word": "Тарелка", "reading": "tarelka", "meaning": "Plate", "example": "Тарелка стоит на столе.", "exampleMeaning": "The plate is on the table." },
+    { "word": "Салфетка", "reading": "salfetka", "meaning": "Napkin", "example": "Передайте мне салфетку.", "exampleMeaning": "Pass me a napkin." },
+    { "word": "Бронирование", "reading": "bronirovaniye", "meaning": "Reservation", "example": "У вас есть бронирование?", "exampleMeaning": "Do you have a reservation?" }
+  ],
+  "exercises": [
+    { "type": "match", "pairs": 6 },
+    { "type": "fill-blank", "items": [
+      { "sentence": "Можно посмотреть ___?", "answer": "Меню", "hint": "Menu" },
+      { "sentence": "Принесите, пожалуйста, ___.", "answer": "Счёт", "hint": "Bill / Check" },
+      { "sentence": "Я забронировал ___ на двоих.", "answer": "Столик", "hint": "Table" },
+      { "sentence": "___ принёс наш заказ.", "answer": "Официант", "hint": "Waiter" },
+      { "sentence": "Мне нужна ___ для супа.", "answer": "Ложка", "hint": "Spoon" }
+    ]},
+    { "type": "multiple-choice", "items": [
+      { "question": "What does 'Чаевые' mean?", "options": ["Tip (gratuity)", "Tea", "Change", "Receipt"], "answer": 0 },
+      { "question": "How do you say 'Fork' in Russian?", "options": ["Вилка", "Ложка", "Нож", "Тарелка"], "answer": 0 },
+      { "question": "What is 'Блюдо'?", "options": ["Dish (food)", "Plate", "Bowl", "Cup"], "answer": 0 },
+      { "question": "What does 'Напиток' mean?", "options": ["Drink / Beverage", "Snack", "Dessert", "Appetizer"], "answer": 0 },
+      { "question": "How do you say 'Reservation' in Russian?", "options": ["Бронирование", "Заказ", "Столик", "Меню"], "answer": 0 }
+    ]}
+  ]
+}

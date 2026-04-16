@@ -1,0 +1,38 @@
+{
+  "id": "directions",
+  "words": [
+    { "word": "Направо", "reading": "napravo", "meaning": "To the right", "example": "Поверните направо на перекрёстке.", "exampleMeaning": "Turn right at the intersection." },
+    { "word": "Налево", "reading": "nalevo", "meaning": "To the left", "example": "Магазин находится налево.", "exampleMeaning": "The store is to the left." },
+    { "word": "Прямо", "reading": "pryamo", "meaning": "Straight ahead", "example": "Идите прямо до светофора.", "exampleMeaning": "Go straight ahead to the traffic light." },
+    { "word": "Перекрёсток", "reading": "perekryostok", "meaning": "Intersection / Crossroads", "example": "На перекрёстке поверните налево.", "exampleMeaning": "Turn left at the intersection." },
+    { "word": "Светофор", "reading": "svetofor", "meaning": "Traffic light", "example": "Остановитесь на светофоре.", "exampleMeaning": "Stop at the traffic light." },
+    { "word": "Рядом", "reading": "ryadom", "meaning": "Nearby / Next to", "example": "Аптека рядом с банком.", "exampleMeaning": "The pharmacy is next to the bank." },
+    { "word": "Далеко", "reading": "daleko", "meaning": "Far away", "example": "Аэропорт далеко от центра.", "exampleMeaning": "The airport is far from the center." },
+    { "word": "Близко", "reading": "blizko", "meaning": "Close / Near", "example": "Школа находится близко.", "exampleMeaning": "The school is close by." },
+    { "word": "Угол", "reading": "ugol", "meaning": "Corner", "example": "Кафе находится за углом.", "exampleMeaning": "The café is around the corner." },
+    { "word": "Мост", "reading": "most", "meaning": "Bridge", "example": "Перейдите через мост.", "exampleMeaning": "Cross the bridge." },
+    { "word": "Площадь", "reading": "ploshchad", "meaning": "Square (city)", "example": "Красная площадь — символ Москвы.", "exampleMeaning": "Red Square is a symbol of Moscow." },
+    { "word": "Остановка", "reading": "ostanovka", "meaning": "Bus stop", "example": "Остановка находится через дорогу.", "exampleMeaning": "The bus stop is across the road." },
+    { "word": "Вход", "reading": "vkhod", "meaning": "Entrance", "example": "Вход в здание слева.", "exampleMeaning": "The entrance to the building is on the left." },
+    { "word": "Выход", "reading": "vykhod", "meaning": "Exit", "example": "Где выход из метро?", "exampleMeaning": "Where is the metro exit?" },
+    { "word": "Напротив", "reading": "naprotiv", "meaning": "Opposite / Across from", "example": "Банк напротив почты.", "exampleMeaning": "The bank is across from the post office." },
+    { "word": "Между", "reading": "mezhdu", "meaning": "Between", "example": "Парк между школой и больницей.", "exampleMeaning": "The park is between the school and the hospital." }
+  ],
+  "exercises": [
+    { "type": "match", "pairs": 6 },
+    { "type": "fill-blank", "items": [
+      { "sentence": "Поверните ___ на перекрёстке.", "answer": "Направо", "hint": "To the right" },
+      { "sentence": "Идите ___ до светофора.", "answer": "Прямо", "hint": "Straight ahead" },
+      { "sentence": "Аптека ___ с банком.", "answer": "Рядом", "hint": "Nearby / Next to" },
+      { "sentence": "Аэропорт ___ от центра.", "answer": "Далеко", "hint": "Far away" },
+      { "sentence": "Где ___ из метро?", "answer": "Выход", "hint": "Exit" }
+    ]},
+    { "type": "multiple-choice", "items": [
+      { "question": "What does 'Светофор' mean?", "options": ["Traffic light", "Crossroads", "Road sign", "Bridge"], "answer": 0 },
+      { "question": "How do you say 'Entrance' in Russian?", "options": ["Вход", "Выход", "Дверь", "Ворота"], "answer": 0 },
+      { "question": "What is 'Площадь'?", "options": ["Square (city)", "Street", "Park", "Building"], "answer": 0 },
+      { "question": "What does 'Напротив' mean?", "options": ["Opposite / Across from", "Nearby", "Behind", "Above"], "answer": 0 },
+      { "question": "How do you say 'Bridge' in Russian?", "options": ["Мост", "Дорога", "Улица", "Тоннель"], "answer": 0 }
+    ]}
+  ]
+}

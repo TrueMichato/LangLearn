@@ -1,0 +1,38 @@
+{
+  "id": "music-art",
+  "words": [
+    { "word": "Музыка", "reading": "muzyka", "meaning": "Music", "example": "Я люблю слушать музыку.", "exampleMeaning": "I love listening to music." },
+    { "word": "Песня", "reading": "pesnya", "meaning": "Song", "example": "Эта песня очень популярная.", "exampleMeaning": "This song is very popular." },
+    { "word": "Картина", "reading": "kartina", "meaning": "Painting / Picture", "example": "Картина висит на стене.", "exampleMeaning": "The painting hangs on the wall." },
+    { "word": "Концерт", "reading": "kontsert", "meaning": "Concert", "example": "Мы идём на концерт вечером.", "exampleMeaning": "We are going to a concert tonight." },
+    { "word": "Гитара", "reading": "gitara", "meaning": "Guitar", "example": "Он играет на гитаре.", "exampleMeaning": "He plays the guitar." },
+    { "word": "Пианино", "reading": "pianino", "meaning": "Piano", "example": "Она учится играть на пианино.", "exampleMeaning": "She is learning to play the piano." },
+    { "word": "Театр", "reading": "teatr", "meaning": "Theater", "example": "Мы были в театре вчера.", "exampleMeaning": "We were at the theater yesterday." },
+    { "word": "Художник", "reading": "khudozhnik", "meaning": "Artist / Painter", "example": "Художник рисует портрет.", "exampleMeaning": "The artist is painting a portrait." },
+    { "word": "Певец", "reading": "pevets", "meaning": "Singer (male)", "example": "Этот певец очень известный.", "exampleMeaning": "This singer is very famous." },
+    { "word": "Танец", "reading": "tanets", "meaning": "Dance", "example": "Она исполнила красивый танец.", "exampleMeaning": "She performed a beautiful dance." },
+    { "word": "Скрипка", "reading": "skripka", "meaning": "Violin", "example": "Скрипка звучит прекрасно.", "exampleMeaning": "The violin sounds wonderful." },
+    { "word": "Выставка", "reading": "vystavka", "meaning": "Exhibition", "example": "На выставке много картин.", "exampleMeaning": "There are many paintings at the exhibition." },
+    { "word": "Скульптура", "reading": "skulptura", "meaning": "Sculpture", "example": "Эта скульптура из мрамора.", "exampleMeaning": "This sculpture is made of marble." },
+    { "word": "Барабан", "reading": "baraban", "meaning": "Drum", "example": "Мальчик играет на барабане.", "exampleMeaning": "The boy plays the drum." },
+    { "word": "Оркестр", "reading": "orkestr", "meaning": "Orchestra", "example": "Оркестр играет симфонию.", "exampleMeaning": "The orchestra is playing a symphony." },
+    { "word": "Фотография", "reading": "fotografiya", "meaning": "Photography / Photograph", "example": "Фотография получилась отличной.", "exampleMeaning": "The photograph turned out great." }
+  ],
+  "exercises": [
+    { "type": "match", "pairs": 6 },
+    { "type": "fill-blank", "items": [
+      { "sentence": "Я люблю слушать ___.", "answer": "Музыку", "hint": "Music (accusative)" },
+      { "sentence": "___ висит на стене.", "answer": "Картина", "hint": "Painting / Picture" },
+      { "sentence": "Мы идём на ___ вечером.", "answer": "Концерт", "hint": "Concert" },
+      { "sentence": "___ рисует портрет.", "answer": "Художник", "hint": "Artist / Painter" },
+      { "sentence": "___ играет симфонию.", "answer": "Оркестр", "hint": "Orchestra" }
+    ]},
+    { "type": "multiple-choice", "items": [
+      { "question": "What does 'Песня' mean?", "options": ["Song", "Music", "Dance", "Poem"], "answer": 0 },
+      { "question": "How do you say 'Violin' in Russian?", "options": ["Скрипка", "Гитара", "Пианино", "Барабан"], "answer": 0 },
+      { "question": "What is 'Выставка'?", "options": ["Exhibition", "Theater", "Concert", "Gallery"], "answer": 0 },
+      { "question": "What does 'Художник' mean?", "options": ["Artist / Painter", "Singer", "Dancer", "Musician"], "answer": 0 },
+      { "question": "How do you say 'Theater' in Russian?", "options": ["Театр", "Кино", "Цирк", "Музей"], "answer": 0 }
+    ]}
+  ]
+}

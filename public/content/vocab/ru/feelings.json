@@ -1,0 +1,38 @@
+{
+  "id": "feelings",
+  "words": [
+    { "word": "Добрый", "reading": "dobryy", "meaning": "Kind / Good-natured", "example": "Он очень добрый человек.", "exampleMeaning": "He is a very kind person." },
+    { "word": "Строгий", "reading": "strogiy", "meaning": "Strict", "example": "Наш учитель строгий, но справедливый.", "exampleMeaning": "Our teacher is strict but fair." },
+    { "word": "Грустный", "reading": "grustnyy", "meaning": "Sad", "example": "Почему ты такой грустный?", "exampleMeaning": "Why are you so sad?" },
+    { "word": "Весёлый", "reading": "vesyolyy", "meaning": "Cheerful / Merry", "example": "Она всегда весёлая.", "exampleMeaning": "She is always cheerful." },
+    { "word": "Умный", "reading": "umnyy", "meaning": "Smart / Clever", "example": "Это умный мальчик.", "exampleMeaning": "This is a smart boy." },
+    { "word": "Ленивый", "reading": "lenivyy", "meaning": "Lazy", "example": "Не будь таким ленивым!", "exampleMeaning": "Don't be so lazy!" },
+    { "word": "Смелый", "reading": "smelyy", "meaning": "Brave / Bold", "example": "Пожарный был очень смелым.", "exampleMeaning": "The firefighter was very brave." },
+    { "word": "Честный", "reading": "chestnyy", "meaning": "Honest", "example": "Она всегда честная с нами.", "exampleMeaning": "She is always honest with us." },
+    { "word": "Терпеливый", "reading": "terpelivyy", "meaning": "Patient", "example": "Врач должен быть терпеливым.", "exampleMeaning": "A doctor must be patient." },
+    { "word": "Вежливый", "reading": "vezhlivyy", "meaning": "Polite", "example": "Будьте вежливы с гостями.", "exampleMeaning": "Be polite with guests." },
+    { "word": "Гордый", "reading": "gordyy", "meaning": "Proud", "example": "Родители гордые за сына.", "exampleMeaning": "The parents are proud of their son." },
+    { "word": "Скромный", "reading": "skromnyy", "meaning": "Modest / Humble", "example": "Она очень скромная девушка.", "exampleMeaning": "She is a very modest girl." },
+    { "word": "Жадный", "reading": "zhadnyy", "meaning": "Greedy", "example": "Не будь жадным, поделись!", "exampleMeaning": "Don't be greedy, share!" },
+    { "word": "Щедрый", "reading": "shchedryy", "meaning": "Generous", "example": "Бабушка очень щедрая.", "exampleMeaning": "Grandmother is very generous." },
+    { "word": "Застенчивый", "reading": "zastenchivyy", "meaning": "Shy", "example": "Ребёнок очень застенчивый.", "exampleMeaning": "The child is very shy." },
+    { "word": "Общительный", "reading": "obshchitelnyy", "meaning": "Sociable / Outgoing", "example": "Мой друг очень общительный.", "exampleMeaning": "My friend is very sociable." }
+  ],
+  "exercises": [
+    { "type": "match", "pairs": 6 },
+    { "type": "fill-blank", "items": [
+      { "sentence": "Он очень ___ человек.", "answer": "Добрый", "hint": "Kind / Good-natured" },
+      { "sentence": "Почему ты такой ___?", "answer": "Грустный", "hint": "Sad" },
+      { "sentence": "Не будь таким ___!", "answer": "Ленивым", "hint": "Lazy (instrumental)" },
+      { "sentence": "Будьте ___ с гостями.", "answer": "Вежливы", "hint": "Polite (short form)" },
+      { "sentence": "Бабушка очень ___.", "answer": "Щедрая", "hint": "Generous (feminine)" }
+    ]},
+    { "type": "multiple-choice", "items": [
+      { "question": "What does 'Строгий' mean?", "options": ["Strict", "Strong", "Strange", "Stubborn"], "answer": 0 },
+      { "question": "How do you say 'Brave' in Russian?", "options": ["Смелый", "Сильный", "Скромный", "Строгий"], "answer": 0 },
+      { "question": "What is 'Застенчивый'?", "options": ["Shy", "Proud", "Jealous", "Rude"], "answer": 0 },
+      { "question": "What does 'Честный' mean?", "options": ["Honest", "Cheerful", "Calm", "Curious"], "answer": 0 },
+      { "question": "How do you say 'Generous' in Russian?", "options": ["Щедрый", "Жадный", "Добрый", "Вежливый"], "answer": 0 }
+    ]}
+  ]
+}

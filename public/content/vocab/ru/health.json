@@ -1,0 +1,38 @@
+{
+  "id": "health",
+  "words": [
+    { "word": "Больница", "reading": "bolnitsa", "meaning": "Hospital", "example": "Его отвезли в больницу.", "exampleMeaning": "He was taken to the hospital." },
+    { "word": "Лекарство", "reading": "lekarstvo", "meaning": "Medicine / Medication", "example": "Примите лекарство после еды.", "exampleMeaning": "Take the medicine after eating." },
+    { "word": "Врач", "reading": "vrach", "meaning": "Doctor", "example": "Врач принимает с утра.", "exampleMeaning": "The doctor sees patients in the morning." },
+    { "word": "Здоровье", "reading": "zdorovye", "meaning": "Health", "example": "Здоровье — самое важное.", "exampleMeaning": "Health is the most important thing." },
+    { "word": "Болезнь", "reading": "bolezn", "meaning": "Disease / Illness", "example": "Эта болезнь хорошо лечится.", "exampleMeaning": "This disease is easily treatable." },
+    { "word": "Температура", "reading": "temperatura", "meaning": "Temperature / Fever", "example": "У меня высокая температура.", "exampleMeaning": "I have a high temperature." },
+    { "word": "Аптека", "reading": "apteka", "meaning": "Pharmacy", "example": "Аптека находится за углом.", "exampleMeaning": "The pharmacy is around the corner." },
+    { "word": "Рецепт", "reading": "retsept", "meaning": "Prescription", "example": "Врач выписал рецепт.", "exampleMeaning": "The doctor wrote a prescription." },
+    { "word": "Боль", "reading": "bol", "meaning": "Pain", "example": "Боль прошла после таблетки.", "exampleMeaning": "The pain went away after the pill." },
+    { "word": "Таблетка", "reading": "tabletka", "meaning": "Pill / Tablet", "example": "Выпей таблетку от головы.", "exampleMeaning": "Take a pill for your headache." },
+    { "word": "Медсестра", "reading": "medsestra", "meaning": "Nurse", "example": "Медсестра сделала укол.", "exampleMeaning": "The nurse gave an injection." },
+    { "word": "Укол", "reading": "ukol", "meaning": "Injection / Shot", "example": "Мне сделали укол в плечо.", "exampleMeaning": "I got a shot in my shoulder." },
+    { "word": "Кашель", "reading": "kashel", "meaning": "Cough", "example": "У ребёнка сильный кашель.", "exampleMeaning": "The child has a bad cough." },
+    { "word": "Насморк", "reading": "nasmork", "meaning": "Runny nose / Cold", "example": "У меня насморк и горло болит.", "exampleMeaning": "I have a runny nose and a sore throat." },
+    { "word": "Простуда", "reading": "prostuda", "meaning": "Cold (illness)", "example": "Я простудился на прошлой неделе.", "exampleMeaning": "I caught a cold last week." },
+    { "word": "Скорая помощь", "reading": "skoraya pomoshch", "meaning": "Ambulance", "example": "Вызовите скорую помощь!", "exampleMeaning": "Call an ambulance!" }
+  ],
+  "exercises": [
+    { "type": "match", "pairs": 6 },
+    { "type": "fill-blank", "items": [
+      { "sentence": "Его отвезли в ___.", "answer": "Больницу", "hint": "Hospital (accusative)" },
+      { "sentence": "Примите ___ после еды.", "answer": "Лекарство", "hint": "Medicine" },
+      { "sentence": "У меня высокая ___.", "answer": "Температура", "hint": "Temperature / Fever" },
+      { "sentence": "___ находится за углом.", "answer": "Аптека", "hint": "Pharmacy" },
+      { "sentence": "___ прошла после таблетки.", "answer": "Боль", "hint": "Pain" }
+    ]},
+    { "type": "multiple-choice", "items": [
+      { "question": "What does 'Врач' mean?", "options": ["Doctor", "Nurse", "Patient", "Pharmacist"], "answer": 0 },
+      { "question": "How do you say 'Pharmacy' in Russian?", "options": ["Аптека", "Больница", "Клиника", "Магазин"], "answer": 0 },
+      { "question": "What is 'Кашель'?", "options": ["Cough", "Fever", "Pain", "Cold"], "answer": 0 },
+      { "question": "What does 'Рецепт' mean?", "options": ["Prescription", "Recipe", "Receipt", "Report"], "answer": 0 },
+      { "question": "How do you say 'Ambulance' in Russian?", "options": ["Скорая помощь", "Больница", "Полиция", "Пожарная"], "answer": 0 }
+    ]}
+  ]
+}
