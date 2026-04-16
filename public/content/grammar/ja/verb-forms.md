@@ -72,3 +72,9 @@ The **た form** follows the exact same pattern as the て form — just replace
 1. Start by memorizing the て form rules — た form comes free once you know て form.
 2. Practice converting verbs from dictionary form to ます, て, and た forms daily.
 3. Listen for these forms in native content — they appear constantly in conversation.
+
+## Sources
+
+- [Tae Kim's  Verb Basics](https://guidetojapanese.org/learn/grammar/verbgroups)Guide 
+- [ Verb Conjugation](https://www.imabi.net/thebasicconjugations.htm)Imabi 
+- [JLPT  Verb Forms](https://jlptsensei.com/japanese-verb-conjugation-forms/)Sensei 

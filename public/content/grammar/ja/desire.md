@@ -153,3 +153,9 @@ To express that you want **someone else** to do something, use **て-form + ほ�
 <!-- quiz:{"type":"multiple-choice","question":"'友達に来てほしいです' means:","options":["I want to come to my friend","My friend wants to come","I want my friend to come","I came for my friend"],"answer":2} -->
 
 Remember: Japanese is careful about expressing other people's inner feelings. Use たがる/ほしがる for third persons, or quote them with と言っている!
+
+## Sources
+
+- [Tae Kim's  Desire](https://guidetojapanese.org/learn/grammar/desire)Guide 
+- [ Imabi  & ](https://www.imabi.net/desirewant.htm)
+- [Maggie  Sensei  Form](https://maggiesensei.com/2010/11/29/how-to-use-tai-form/)

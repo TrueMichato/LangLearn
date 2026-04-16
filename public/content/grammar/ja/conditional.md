@@ -170,3 +170,9 @@ You can use negative forms with all four:
 | と | dictionary form + と | Automatic/natural results |
 
 Start with たら as your default — it works in the most situations. As you gain experience, you will develop a feel for when the others are more natural.
+
+## Sources
+
+- [Tae Kim's  Conditionals](https://guidetojapanese.org/learn/grammar/conditional)Guide 
+- [ Conditionals](https://www.imabi.net/conditionalsi.htm)Imabi 
+- [JLPT  Conditional Forms](https://jlptsensei.com/japanese-conditional-form-ba-tara-nara-to/)Sensei 

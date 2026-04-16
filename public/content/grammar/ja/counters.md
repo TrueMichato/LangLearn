@@ -215,3 +215,9 @@ Use the question words:
 | 冊(さつ) | Books/bound items | 本を三冊 |
 
 When in doubt, you can often use the つ counter — native speakers will understand you even if a more specific counter exists!
+
+## Sources
+
+- [Tae Kim's  Counting](https://guidetojapanese.org/learn/grammar/counting)Guide 
+- [ Counters](https://www.imabi.net/counters.htm)Imabi 
+- [JLPT  Japanese Counters](https://jlptsensei.com/japanese-counters-list/)Sensei 

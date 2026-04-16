@@ -138,3 +138,9 @@ The passive form behaves like a Group 2 verb:
 - In formal writing and news, direct passive is used heavily.
 - Remember: the doer is marked with に, the affected person is the topic/subject.
 - Pay attention to context to distinguish passive from potential in Group 2 verbs.
+
+## Sources
+
+- [Tae Kim's  Passive Form](https://guidetojapanese.org/learn/grammar/causepass)Guide 
+- [ The Passive](https://www.imabi.net/thepassive.htm)Imabi 
+- [ Passive Voice](https://www.wasabi-jpn.com/japanese-grammar/japanese-passive-voice/)Wasabi 

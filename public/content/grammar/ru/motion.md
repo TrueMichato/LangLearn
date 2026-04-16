@@ -307,3 +307,9 @@ For example, with вы- (out):
 3. Adding a **prefix** to the unidirectional stem creates a **perfective** verb; adding it to the multidirectional stem creates an **imperfective** verb.
 4. Each prefix has a consistent spatial meaning (вы- = out, при- = arrival, у- = away, в- = in, пере- = across, про- = through).
 5. In the **past tense**, multidirectional verbs often imply a **round trip** (went and came back).
+
+## Sources
+
+- [Master  Verbs of Motion](https://masterrussian.com/aa031400a.shtml)Russian 
+- [Russian  Motion Verbs](https://www.russianlessons.net/grammar/verbs_motion.php)Lessons 
+- [Russian Grammar Wiki](https://en.wikipedia.org/wiki/Russian_grammar)

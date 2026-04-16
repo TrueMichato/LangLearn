@@ -151,3 +151,9 @@ While modern Japanese is becoming more gender-neutral, some particles still carr
 - Practice combining: よね is extremely common
 - Listen for regional differences — Kansai speakers use particles differently
 - Don't overthink gender rules — context and tone matter more
+
+## Sources
+
+- [Tae Kim's  Sentence-Ending Particles](https://guidetojapanese.org/learn/grammar/question)Guide 
+- [ Sentence-Ending Particles](https://www.imabi.net/sentencefinalparticles.htm)Imabi 
+- [Maggie  Sentence-Ending Particles](https://maggiesensei.com/2022/01/09/sentence-ending-particles/)Sensei 

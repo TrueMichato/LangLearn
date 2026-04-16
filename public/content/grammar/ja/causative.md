@@ -149,3 +149,9 @@ Group 1 verbs often use a shorter form: **〜a + される**
 | Causative-passive | Was made to do (unwilling) | 食べさせられる |
 
 The causative is one of the more complex verb forms, but it appears constantly in daily life — from parenting ("make them eat vegetables") to business ("please let me explain"). Practice forming it with verbs you already know!
+
+## Sources
+
+- [Tae Kim's  Causative Form](https://guidetojapanese.org/learn/grammar/causepass)Guide 
+- [ The Causative](https://www.imabi.net/thecausative.htm)Imabi 
+- [ Causative Form](https://www.wasabi-jpn.com/japanese-grammar/japanese-causative-form/)Wasabi 

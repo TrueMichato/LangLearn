@@ -220,3 +220,9 @@ The second noun goes into the **genitive case**:
 5. Irregular comparatives (лучше, хуже, больше, меньше) are extremely common — learn them by heart!
 
 <!-- quiz:{"type":"multiple-choice","question":"How do you say 'the most interesting' using the compound superlative?","options":["интереснейший","наиболее интересный","самый интересный","более интересный"],"answer":2} -->
+
+## Sources
+
+- [Master  Comparatives](https://masterrussian.com/aa060800a.shtml)Russian 
+- [Russian  Comparatives](https://www.russianlessons.net/grammar/adjectives_comparative.php)Lessons 
+- [Learn Russian  Grammar Tables](https://learnrussian.rt.com/grammar-tables/)RT 

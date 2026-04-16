@@ -311,3 +311,9 @@ Demonstrative pronouns point to specific nouns. **Этот** means "this" (near)
 4. **Свой** is a reflexive possessive meaning "one's own" — critical in the third person to avoid ambiguity.
 5. **Этот** (this) and **тот** (that) decline like adjectives and agree with their noun.
 6. Never use **ихний** — the correct possessive is simply **их**.
+
+## Sources
+
+- [Master  Pronouns](https://masterrussian.com/aa052600a.shtml)Russian 
+- [Russian  Pronouns](https://www.russianlessons.net/grammar/pronouns.php)Lessons 
+- [My  Russian Pronouns](https://mylanguages.org/russian_pronouns.php)Languages 

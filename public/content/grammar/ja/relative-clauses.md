@@ -133,3 +133,9 @@ The particle **の** can replace the noun in some relative clause patterns:
 - Clauses can be as long as needed — just keep them before the noun
 
 Practice by describing things around you: "the coffee I'm drinking," "the chair I'm sitting on," "the friend who called me." Think of the Japanese clause and put it before the noun!
+
+## Sources
+
+- [Tae Kim's  Relative Clauses](https://guidetojapanese.org/learn/grammar/clause)Guide 
+- [ Relative Clauses](https://www.imabi.net/relativeclauses.htm)Imabi 
+- [ Relative Clauses](https://www.wasabi-jpn.com/japanese-grammar/japanese-relative-clause/)Wasabi 

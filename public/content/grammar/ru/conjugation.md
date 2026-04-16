@@ -385,3 +385,9 @@ This verb uses **1st conjugation endings** in the singular and **2nd conjugation
 **Они читают и пишут по-русски.** *(Oni chitayut i pishut po-russki.)* — They read and write in Russian.
 
 <!-- quiz:{"type":"multiple-choice","question":"Which verb has a MIXED conjugation (1st conj. in singular, 2nd in plural)?","options":["читать","говорить","хотеть","знать"],"answer":2} -->
+
+## Sources
+
+- [Master  Verb Conjugation](https://masterrussian.com/aa081200a.shtml)Russian 
+- [Russian  Verb Conjugation](https://www.russianlessons.net/grammar/verbs_conjugation.php)Lessons 
+- [Learn Russian  Verb Tables](https://learnrussian.rt.com/grammar-tables/)RT 

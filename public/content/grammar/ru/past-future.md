@@ -368,3 +368,9 @@ The verb **быть** (to be) is unique — in the present tense it is usually o
 <!-- quiz:{"type":"multiple-choice","question":"Which form correctly expresses 'She was walking home'?","options":["Она шёл домой.","Она шла домой.","Она шло домой.","Она шли домой."],"answer":1} -->
 
 <!-- quiz:{"type":"multiple-choice","question":"How do you form the compound future of an imperfective verb?","options":["Conjugate the verb directly","Use стать + infinitive","Use буду/будешь/будет... + infinitive","Add -ся to the verb"],"answer":2} -->
+
+## Sources
+
+- [Master  Past Tense](https://masterrussian.com/aa082600a.shtml)Russian 
+- [Russian  Past & Future Tense](https://www.russianlessons.net/grammar/verbs_past.php)Lessons 
+- [Russian for  Verb Tenses](https://www.russianforfree.com/grammar.php)Free 

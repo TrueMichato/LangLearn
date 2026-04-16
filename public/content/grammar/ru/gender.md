@@ -332,3 +332,9 @@ Here is a quick-reference chart to help you identify gender:
 5. Adjectives change their ending to match the noun's gender: **-ый/-ой/-ий** (m), **-ая/-яя** (f), **-ое/-ее** (n).
 6. Past tense verbs also agree with gender: **-л** (m), **-ла** (f), **-ло** (n).
 7. A few nouns ending in **-а/-я** that refer to males are grammatically masculine (папа, дядя).
+
+## Sources
+
+- [Master  Noun Gender](https://masterrussian.com/aa072000e.shtml)Russian 
+- [Russian  Gender](https://www.russianlessons.net/grammar/nouns_gender.php)Lessons 
+- [My  Russian Gender](https://mylanguages.org/russian_nouns.php)Languages 

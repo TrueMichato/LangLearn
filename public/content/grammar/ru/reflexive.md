@@ -276,3 +276,9 @@ Reflexive verbs are also used to form **passive** constructions and **impersonal
 4. Many verbs **change meaning** when -ся is added (находить → находиться).
 5. Conjugation follows the same pattern as non-reflexive verbs — just append the reflexive suffix.
 6. In **нравиться** constructions, the thing that is liked is the **subject** (and must agree with the verb).
+
+## Sources
+
+- [Master  Reflexive Verbs](https://masterrussian.com/aa090800a.shtml)Russian 
+- [Russian  Reflexive Verbs](https://www.russianlessons.net/grammar/verbs_reflexive.php)Lessons 
+- [My  Russian Verbs](https://mylanguages.org/russian_verbs.php)Languages 

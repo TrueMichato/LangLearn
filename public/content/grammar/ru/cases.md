@@ -75,3 +75,9 @@ The **prepositional** case is always used with a preposition (в, на, о/об)
 2. **Start with accusative and genitive** — they are the most common after nominative.
 3. **Practice with real sentences** from your reading material.
 4. Cases may seem overwhelming at first, but patterns emerge quickly with practice!
+
+## Sources
+
+- [Master  Russian Cases](https://masterrussian.com/aa071600a.shtml)Russian 
+- [Russian  Case System](https://www.russianlessons.net/grammar/nouns_cases.php)Lessons 
+- [Learn Russian  Grammar Tables](https://learnrussian.rt.com/grammar-tables/)RT 

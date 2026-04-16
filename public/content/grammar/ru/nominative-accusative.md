@@ -319,3 +319,9 @@ Adjectives also change form in the accusative. The rules mirror the noun rules:
 6. Neuter nouns do **not change** in the accusative.
 7. Use **в/на + accusative** for direction of motion.
 8. Adjectives follow the same animate/inanimate logic as nouns.
+
+## Sources
+
+- [Master  Nominative Case](https://masterrussian.com/aa062000a.shtml)Russian 
+- [Master  Accusative Case](https://masterrussian.com/aa071800a.shtml)Russian 
+- [Russian  Nominative & Accusative](https://www.russianlessons.net/grammar/nouns_cases.php)Lessons 

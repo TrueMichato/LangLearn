@@ -159,3 +159,9 @@ For Group 2 verbs, the potential and passive forms look the same (食べられ�
 | Irregular 来る | 来られる | 来る → 来られる |
 
 Remember: the potential form lets you express what you **can** and **cannot** do. Practice converting your favorite verbs!
+
+## Sources
+
+- [Tae Kim's  Potential Form](https://guidetojapanese.org/learn/grammar/potential)Guide 
+- [ The Potential](https://www.imabi.net/thepotential.htm)Imabi 
+- [ Potential Form](https://www.wasabi-jpn.com/japanese-grammar/potential-form/)Wasabi 

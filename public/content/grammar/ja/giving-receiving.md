@@ -146,3 +146,9 @@ These verbs combine with the **て-form** of other verbs to express doing favors
 | 〜てもらう | I have someone do | Request/favor received | 教えてもらう |
 
 Mastering these three verbs is essential for natural Japanese — they come up in almost every daily conversation!
+
+## Sources
+
+- [Tae Kim's  Giving & Receiving](https://guidetojapanese.org/learn/grammar/favors)Guide 
+- [ Giving & Receiving](https://www.imabi.net/givingreceiving.htm)Imabi 
+](https://maggiesensei.com/2011/12/09/how-to-use-ageru-morau-kureru/)

@@ -319,3 +319,9 @@ Many everyday phrases use the genitive case:
 6. Common prepositions: **из, от, до, без, у** all require genitive.
 7. Quantity words (**много, мало, сколько**) take genitive plural.
 8. Adjective genitive endings: masculine/neuter **-ого/-его**, feminine **-ой/-ей**.
+
+## Sources
+
+- [Master  Genitive Case](https://masterrussian.com/aa070600a.shtml)Russian 
+- [Russian  Genitive Case](https://www.russianlessons.net/grammar/nouns_genitive.php)Lessons 
+- [Learn Russian  Genitive](https://learnrussian.rt.com/grammar-tables/)RT 

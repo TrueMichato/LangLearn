@@ -304,3 +304,9 @@ Here are the most essential expressions to memorize first:
 5. Russian colloquialisms add color but use them only in appropriate informal settings!
 
 <!-- quiz:{"type":"multiple-choice","question":"What does 'Ничего себе!' express?","options":["Sadness","Anger","Surprise or amazement","Agreement"],"answer":2} -->
+
+## Sources
+
+- [Master  Common Expressions](https://masterrussian.com/blcommon.shtml)Russian 
+- [Russian for  Useful Phrases](https://www.russianforfree.com/grammar.php)Free 
+- [My  Russian Phrases](https://mylanguages.org/russian_phrases.php)Languages 

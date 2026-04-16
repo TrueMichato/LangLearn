@@ -367,3 +367,9 @@ Here are everyday phrases that use the dative case:
 7. Impersonal constructions use dative: мне холодно, мне нужно, мне можно.
 8. Prepositions **к** (toward) and **по** (along/about) take the dative.
 9. Adjective dative endings: masculine/neuter **-ому/-ему**, feminine **-ой/-ей**.
+
+## Sources
+
+- [Master  Dative Case](https://masterrussian.com/aa071200a.shtml)Russian 
+- [Russian  Dative Case](https://www.russianlessons.net/grammar/nouns_dative.php)Lessons 
+- [Russian for  Dative](https://www.russianforfree.com/grammar.php)Free 

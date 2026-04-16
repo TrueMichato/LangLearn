@@ -131,3 +131,9 @@ To say two things are roughly equal:
 | 同じくらい | About the same | 同じくらい好き |
 
 Practice comparing things around you: your favorite foods, cities you know, languages you're studying!
+
+## Sources
+
+- [Tae Kim's  Comparisons](https://guidetojapanese.org/learn/grammar/comparison)Guide 
+- [ Comparatives](https://www.imabi.net/comparatives.htm)Imabi 
+- [ Comparative & Superlative](https://www.wasabi-jpn.com/japanese-grammar/comparative-and-superlative/)Wasabi 

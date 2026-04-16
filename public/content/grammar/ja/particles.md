@@ -57,3 +57,9 @@ The particle **で** indicates where an action takes place or the means by which
 | で | Location/means | 図書館**で**勉強します |
 
 Practice using these particles in your own sentences. Pay attention to them when reading — they will appear in almost every sentence you encounter!
+
+## Sources
+
+- [Tae Kim's  Particles](https://guidetojapanese.org/learn/grammar/particlesintro)Guide 
+- [ Basic Particles](https://www.imabi.net/theparticles.htm)Imabi 
+- [JLPT  Particle Cheatsheet](https://jlptsensei.com/japanese-particles-cheatsheet/)Sensei 

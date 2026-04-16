@@ -74,3 +74,9 @@ Common ways to form perfective verbs:
 - Process/habit/duration → imperfective. Result/completion/single event → perfective.
 
 With practice, choosing the right aspect will become intuitive!
+
+## Sources
+
+- [Master  Verb Aspect](https://masterrussian.com/aa081600a.shtml)Russian 
+- [Russian  Verb Aspects](https://www.russianlessons.net/grammar/verbs_aspect.php)Lessons 
+- [Russian for  Verb Aspect](https://www.russianforfree.com/grammar.php)Free 

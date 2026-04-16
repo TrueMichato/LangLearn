@@ -157,3 +157,9 @@ Japanese frequency adverbs tell you **how often** something happens.
 | Verb stem + ながら | While (simultaneously) | 聞きながら |
 
 Combine these patterns with frequency adverbs to describe your daily routine in natural Japanese!
+
+## Sources
+
+- [Tae Kim's  Time Expressions](https://guidetojapanese.org/learn/grammar/timeactions)Guide 
+- [ Time Expressions](https://www.imabi.net/timeexpressions.htm)Imabi 
+- [JLPT  Time Grammar](https://jlptsensei.com/japanese-grammar/time-expressions/)Sensei 

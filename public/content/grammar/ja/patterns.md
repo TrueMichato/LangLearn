@@ -182,3 +182,10 @@ Both express conjecture based on observation.
 <!-- quiz:{"type":"multiple-choice","question":"'そんなはずがない' means:","options":["That should happen","That's expected","There's no way / That can't be","That seems right"],"answer":2} -->
 
 These patterns appear constantly in everyday Japanese. Practice using them in your own sentences and you will sound much more natural!
+
+## Sources
+
+- [Tae Kim's  Grammar](https://guidetojapanese.org/learn/grammar/)Guide 
+- [ Grammar Patterns](https://www.imabi.net/)Imabi 
+- [JLPT  Grammar List](https://jlptsensei.com/jlpt-grammar-list/)Sensei 
+- [ Grammar Guide](https://www.wasabi-jpn.com/japanese-grammar/)Wasabi 

@@ -149,3 +149,9 @@ When quoting a question, use **か** before と:
 | 〜という [noun] | Called/named | 寿司という食べ物 |
 
 Practice by reporting things you hear throughout the day: 友達が〜と言っていた, テレビで〜と言っていた, ニュースで〜と聞いた!
+
+## Sources
+
+- [Tae Kim's  Quotation](https://guidetojapanese.org/learn/grammar/quotation)Guide 
+- [ Quoting](https://www.imabi.net/quoting.htm)Imabi 
+- [JLPT  Sensei ](https://jlptsensei.com/learn-japanese-grammar/toiu-meaning/)

@@ -289,3 +289,9 @@ To determine which declension pattern an adjective follows, look at the **last c
 4. **Short-form** adjectives are used as predicates and show temporary states. Some (рад, должен) only have short forms.
 5. Adjectives must always **agree** with their noun in gender, number, and case.
 6. The **accusative** form depends on animacy for masculine singular and all plurals.
+
+## Sources
+
+- [Master  Adjective Declension](https://masterrussian.com/aa060200a.shtml)Russian 
+- [Russian  Adjectives](https://www.russianlessons.net/grammar/adjectives.php)Lessons 
+- [Learn Russian  Adjective Tables](https://learnrussian.rt.com/grammar-tables/)RT 

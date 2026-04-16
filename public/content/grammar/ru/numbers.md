@@ -241,3 +241,9 @@ Here are the key rules to remember:
 7. **Dates** use neuter ordinal + genitive of the month
 
 Keep practicing with real-world numbers — prices, ages, addresses, and phone numbers — to build fluency with Russian counting!
+
+## Sources
+
+- [Master  Numbers](https://masterrussian.com/aa112400a.shtml)Russian 
+- [Russian  Numbers](https://www.russianlessons.net/grammar/numbers.php)Lessons 
+- [Russian for  Numbers](https://www.russianforfree.com/grammar.php)Free 

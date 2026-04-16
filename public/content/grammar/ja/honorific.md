@@ -191,3 +191,10 @@ Used to describe **your own actions** when speaking to someone you respect. You 
 - Listen to customer service interactions for real-world examples
 - Don't worry about perfecting 敬語 immediately — even native speakers sometimes struggle with it!
 - Focus on the most common patterns: いただく, させていただく, and the お〜になる/お〜する patterns
+
+## Sources
+
+- [Tae Kim's  Honorific & Humble](https://guidetojapanese.org/learn/grammar/honorific)Guide 
+- [ Keigo](https://www.imabi.net/keigoi.htm)Imabi 
+- [Maggie  Keigo](https://maggiesensei.com/2010/01/26/japanese-keigo-polite-speech/)Sensei 
+- [Japanese  Keigo](https://www.japaneseprofessor.com/lessons/beginning/keigo-overview/)Professor 

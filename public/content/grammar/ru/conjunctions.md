@@ -268,3 +268,9 @@ Russian punctuation follows strict, rule-based conventions:
 5. Practice building complex sentences — they are the hallmark of fluent Russian!
 
 <!-- quiz:{"type":"multiple-choice","question":"What is the difference between 'а' and 'но'?","options":["'А' is formal, 'но' is informal","'А' shows contrast, 'но' shows contradiction","'А' means 'or', 'но' means 'and'","There is no difference"],"answer":1} -->
+
+## Sources
+
+- [Master  Conjunctions](https://masterrussian.com/aa050400a.shtml)Russian 
+- [Russian  Conjunctions](https://www.russianlessons.net/grammar/conjunctions.php)Lessons 
+- [Russian Grammar Wiki](https://en.wikipedia.org/wiki/Russian_grammar)

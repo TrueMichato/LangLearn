@@ -197,3 +197,9 @@ Change to **〜で**:
 - When you see a new adjective, always check if it is い or な — this determines how it conjugates.
 - Remember the exceptions: きれい, 有名, 嫌い(きらい) look like い-adjectives but are な-adjectives.
 - Practice conjugating both types until it becomes automatic!
+
+## Sources
+
+- [Tae Kim's  Adjectives](https://guidetojapanese.org/learn/grammar/adjectives)Guide 
+- [ Adjectives](https://www.imabi.net/adjectivesi.htm)Imabi 
+- [ Japanese Adjectives](https://www.wasabi-jpn.com/japanese-grammar/japanese-adjectives/)Wasabi 

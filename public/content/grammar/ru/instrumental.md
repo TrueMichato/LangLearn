@@ -312,3 +312,9 @@ Remember the key uses of the instrumental case:
 4. **Location** — with за, перед, между, над, под: *за столом, перед домом*
 
 <!-- quiz:{"type":"multiple-choice","question":"Which sentence means 'She became a teacher'?","options":["Она стала учительница.","Она стала учительницу.","Она стала учительницей.","Она стала учительнице."],"answer":2} -->
+
+## Sources
+
+- [Master  Instrumental Case](https://masterrussian.com/aa072400a.shtml)Russian 
+- [Russian  Instrumental Case](https://www.russianlessons.net/grammar/nouns_instrumental.php)Lessons 
+- [Learn Russian  Instrumental](https://learnrussian.rt.com/grammar-tables/)RT 

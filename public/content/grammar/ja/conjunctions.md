@@ -146,3 +146,9 @@ Start a new sentence with a contrast:
 | でも / しかし | However | でも、話せない |
 
 Master these connectors and your Japanese sentences will flow naturally from one idea to the next!
+
+## Sources
+
+- [Tae Kim's  Conjunctions](https://guidetojapanese.org/learn/grammar/compound)Guide 
+- [ Conjunctions](https://www.imabi.net/conjunctions.htm)Imabi 
+- [ Japanese Conjunctions](https://www.wasabi-jpn.com/japanese-grammar/japanese-conjunction/)Wasabi 
