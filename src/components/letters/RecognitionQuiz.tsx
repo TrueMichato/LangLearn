@@ -180,10 +180,20 @@ export default function RecognitionQuiz({ characters, alphabetName, language, on
       {/* Question */}
       <div className="text-center py-4">
         {currentRound.type === 'char-to-romanji' && (
-          <span className="text-7xl">{currentQuestion.char}</span>
+          <>
+            <span className="text-7xl">{currentQuestion.char}</span>
+            {currentQuestion.meaning && (
+              <p className="text-sm text-gray-400 dark:text-gray-500 mt-1">{currentQuestion.meaning}</p>
+            )}
+          </>
         )}
         {currentRound.type === 'romanji-to-char' && (
-          <span className="text-4xl font-bold text-gray-800 dark:text-gray-100">{currentQuestion.romanji}</span>
+          <>
+            <span className="text-4xl font-bold text-gray-800 dark:text-gray-100">{currentQuestion.romanji}</span>
+            {currentQuestion.meaning && (
+              <p className="text-sm text-gray-400 dark:text-gray-500 mt-1">{currentQuestion.meaning}</p>
+            )}
+          </>
         )}
         {currentRound.type === 'listen-to-char' && (
           <button

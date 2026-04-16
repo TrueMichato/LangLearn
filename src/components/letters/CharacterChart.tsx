@@ -42,6 +42,7 @@ export default function CharacterChart({ characters, alphabetName, language, pro
                   >
                     <span className="text-2xl leading-tight">{c.char}</span>
                     <span className="text-xs text-gray-500 dark:text-gray-400 mt-0.5">{c.romanji}</span>
+                    {c.meaning && <span className="text-[10px] text-gray-400 dark:text-gray-500 leading-tight">{c.meaning}</span>}
                   </button>
                 );
               })}

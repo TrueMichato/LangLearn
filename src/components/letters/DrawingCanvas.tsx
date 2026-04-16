@@ -274,6 +274,7 @@ export default function DrawingCanvas({ characters, alphabetName, language, onPr
       <div className="text-center">
         <span className="text-6xl">{current.char}</span>
         <p className="text-lg text-gray-500 dark:text-gray-400 mt-1">{current.romanji}</p>
+        {current.meaning && <p className="text-sm text-gray-400 dark:text-gray-500">{current.meaning}</p>}
         <p className="text-xs text-gray-400 dark:text-gray-500">{current.strokes} strokes</p>
       </div>
 

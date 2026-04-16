@@ -3,6 +3,7 @@ export interface Character {
   romanji: string;
   group: string;
   strokes: number;
+  meaning?: string;
 }
 
 export const HIRAGANA: Character[] = [
