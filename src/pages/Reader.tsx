@@ -72,81 +72,73 @@ export default function ReaderPage() {
 
   const hasTokens = tokens.length > 0 || jaTokens.length > 0;
 
-  if (isTokenizing) {
-    return (
-      <div className="flex flex-col items-center justify-center py-16 gap-3">
-        <svg
-          className="animate-spin h-8 w-8 text-indigo-600"
-          viewBox="0 0 24 24"
-          fill="none"
+  return isTokenizing ? (
+    <div className="flex flex-col items-center justify-center py-16 gap-3">
+      <svg
+        className="animate-spin h-8 w-8 text-indigo-600"
+        viewBox="0 0 24 24"
+        fill="none"
+      >
+        <circle
+          className="opacity-25"
+          cx="12"
+          cy="12"
+          r="10"
+          stroke="currentColor"
+          strokeWidth="4"
+        />
+        <path
+          className="opacity-75"
+          fill="currentColor"
+          d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4z"
+        />
+      </svg>
+      <p className="text-gray-500 text-sm">Parsing Japanese text…</p>
+    </div>
+  ) : !hasTokens ? (
+    <div>
+      <h2 className="text-lg font-semibold text-gray-700 mb-4">
+        Immersion Reader
+      </h2>
+      <div className="space-y-3">
+        <input
+          type="text"
+          placeholder="Title (optional)"
+          value={title}
+          onChange={(e) => setTitle(e.target.value)}
+          className="w-full px-4 py-2 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-indigo-300"
+        />
+        <select
+          value={language}
+          onChange={(e) => setLanguage(e.target.value)}
+          className="w-full px-4 py-2 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-indigo-300"
         >
-          <circle
-            className="opacity-25"
-            cx="12"
-            cy="12"
-            r="10"
-            stroke="currentColor"
-            strokeWidth="4"
-          />
-          <path
-            className="opacity-75"
-            fill="currentColor"
-            d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4z"
-          />
-        </svg>
-        <p className="text-gray-500 text-sm">Parsing Japanese text…</p>
+          <option value="ja">Japanese 🇯🇵</option>
+          <option value="ru">Russian 🇷🇺</option>
+          <option value="en">English 🇬🇧</option>
+          <option value="es">Spanish 🇪🇸</option>
+          <option value="fr">French 🇫🇷</option>
+          <option value="de">German 🇩🇪</option>
+          <option value="zh">Chinese 🇨🇳</option>
+          <option value="ko">Korean 🇰🇷</option>
+        </select>
+        <textarea
+          placeholder="Paste your text here..."
+          value={text}
+          onChange={(e) => setText(e.target.value)}
+          rows={8}
+          className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-indigo-300 resize-none"
+        />
+        <button
+          onClick={handleImport}
+          disabled={!text.trim()}
+          className="w-full bg-indigo-600 text-white py-3 rounded-xl font-semibold hover:bg-indigo-700 transition-colors disabled:opacity-40"
+        >
+          Start Reading
+        </button>
       </div>
-    );
-  }
-
-  if (!hasTokens) {
-    return (
-      <div>
-        <h2 className="text-lg font-semibold text-gray-700 mb-4">
-          Immersion Reader
-        </h2>
-        <div className="space-y-3">
-          <input
-            type="text"
-            placeholder="Title (optional)"
-            value={title}
-            onChange={(e) => setTitle(e.target.value)}
-            className="w-full px-4 py-2 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-indigo-300"
-          />
-          <select
-            value={language}
-            onChange={(e) => setLanguage(e.target.value)}
-            className="w-full px-4 py-2 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-indigo-300"
-          >
-            <option value="ja">Japanese 🇯🇵</option>
-            <option value="ru">Russian 🇷🇺</option>
-            <option value="en">English 🇬🇧</option>
-            <option value="es">Spanish 🇪🇸</option>
-            <option value="fr">French 🇫🇷</option>
-            <option value="de">German 🇩🇪</option>
-            <option value="zh">Chinese 🇨🇳</option>
-            <option value="ko">Korean 🇰🇷</option>
-          </select>
-          <textarea
-            placeholder="Paste your text here..."
-            value={text}
-            onChange={(e) => setText(e.target.value)}
-            rows={8}
-            className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-indigo-300 resize-none"
-          />
-          <button
-            onClick={handleImport}
-            disabled={!text.trim()}
-            className="w-full bg-indigo-600 text-white py-3 rounded-xl font-semibold hover:bg-indigo-700 transition-colors disabled:opacity-40"
-          >
-            Start Reading
-          </button>
-        </div>
-      </div>
-    );
-  }
-
-  return (
+    </div>
+  ) : (
     <div>
       <div className="flex justify-between items-center mb-4">
         <h2 className="text-lg font-semibold text-gray-700">
