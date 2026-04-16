@@ -1,9 +1,11 @@
 import { useState, useEffect } from 'react';
 import { db } from '../db/schema';
+import type { StudySession } from '../db/schema';
 import { getDueCount } from '../db/reviews';
 import { getTotalWordCount } from '../db/words';
 import { formatStudyTime } from '../lib/xp';
 import { useSettingsStore } from '../stores/settingsStore';
+import HeatMap from '../components/dashboard/HeatMap';
 
 interface Stats {
   totalWords: number;
@@ -15,6 +17,7 @@ interface Stats {
 
 export default function Dashboard() {
   const [stats, setStats] = useState<Stats | null>(null);
+  const [allSessions, setAllSessions] = useState<StudySession[]>([]);
   const weeklyGoalMinutes = useSettingsStore((s) => s.weeklyGoalMinutes);
 
   useEffect(() => {
@@ -23,6 +26,7 @@ export default function Dashboard() {
       const dueCards = await getDueCount();
 
       const sessions = await db.studySessions.toArray();
+      setAllSessions(sessions);
       const totalStudySeconds = sessions.reduce(
         (sum, s) => sum + s.durationSeconds,
         0
@@ -92,6 +96,13 @@ export default function Dashboard() {
             ? '🎉 Goal reached this week!'
             : `${weeklyProgress}% — keep it up!`}
         </p>
+      </div>
+
+      <div className="bg-white dark:bg-gray-900 rounded-2xl shadow p-4 mt-4">
+        <h3 className="font-semibold text-gray-700 dark:text-gray-300 mb-3">
+          Study Activity
+        </h3>
+        <HeatMap studySessions={allSessions} />
       </div>
     </div>
   );

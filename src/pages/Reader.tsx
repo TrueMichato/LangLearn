@@ -6,6 +6,7 @@ import WordLookupSheet from '../components/reader/WordLookupSheet';
 import { tokenizeJapanese } from '../lib/tokenizer';
 import type { Token } from '../lib/tokenizer';
 import FuriganaText from '../components/reader/FuriganaText';
+import { splitSentences, findSentenceAt, type SentenceSpan } from '../lib/sentences';
 
 export default function ReaderPage() {
   const [text, setText] = useState('');
@@ -13,10 +14,14 @@ export default function ReaderPage() {
   const [language, setLanguage] = useState('ja');
   const [savedTextId, setSavedTextId] = useState<number | null>(null);
   const [tokens, setTokens] = useState<string[]>([]);
+  const [tokenOffsets, setTokenOffsets] = useState<number[]>([]);
   const [jaTokens, setJaTokens] = useState<Token[]>([]);
+  const [jaTokenOffsets, setJaTokenOffsets] = useState<number[]>([]);
+  const [sentences, setSentences] = useState<SentenceSpan[]>([]);
   const [isTokenizing, setIsTokenizing] = useState(false);
   const [selectedWord, setSelectedWord] = useState<string | null>(null);
   const [selectedReading, setSelectedReading] = useState('');
+  const [selectedSentence, setSelectedSentence] = useState('');
   const { isRunning, start } = useTimerStore();
 
   const handleImport = async () => {
@@ -30,28 +35,51 @@ export default function ReaderPage() {
     }) as number;
     setSavedTextId(id);
 
+    setSentences(splitSentences(text));
+
     if (language === 'ja') {
       setIsTokenizing(true);
       try {
         const result = await tokenizeJapanese(text);
         setJaTokens(result);
+        // Compute character offsets for each Japanese token
+        const offsets: number[] = [];
+        let pos = 0;
+        for (const t of result) {
+          offsets.push(pos);
+          pos += t.surface.length;
+        }
+        setJaTokenOffsets(offsets);
       } catch {
         // Fallback to character-level split if tokenizer fails
-        setTokens(text.split(''));
+        const chars = text.split('');
+        setTokens(chars);
+        setTokenOffsets(chars.map((_, i) => i));
       } finally {
         setIsTokenizing(false);
       }
     } else {
       const isCJK = /[\u3000-\u9fff\uf900-\ufaff]/.test(text);
+      let rawTokens: string[];
       if (isCJK) {
-        setTokens(text.split(''));
+        rawTokens = text.split('');
       } else {
-        setTokens(text.split(/(\s+)/).filter((t) => t.trim()));
+        rawTokens = text.split(/(\s+)/).filter((t) => t.trim());
       }
+      // Compute character offsets by finding each token in the text
+      const offsets: number[] = [];
+      let pos = 0;
+      for (const t of rawTokens) {
+        const idx = text.indexOf(t, pos);
+        offsets.push(idx >= 0 ? idx : pos);
+        pos = (idx >= 0 ? idx : pos) + t.length;
+      }
+      setTokens(rawTokens);
+      setTokenOffsets(offsets);
     }
   };
 
-  const handleAddWord = async (word: string, reading: string, meaning: string) => {
+  const handleAddWord = async (word: string, reading: string, meaning: string, contextSentence: string) => {
     if (!word || !meaning) return;
 
     if (!isRunning) start('reading');
@@ -61,7 +89,7 @@ export default function ReaderPage() {
       word,
       reading,
       meaning,
-      contextSentence: '',
+      contextSentence,
       sourceTextId: savedTextId,
       tags: [],
     });
@@ -163,9 +191,11 @@ export default function ReaderPage() {
           <FuriganaText
             tokens={jaTokens}
             selectedWord={selectedWord}
-            onWordClick={(surface, reading) => {
+            onWordClick={(surface, reading, tokenIndex) => {
               setSelectedWord(surface);
               setSelectedReading(reading);
+              const offset = jaTokenOffsets[tokenIndex] ?? 0;
+              setSelectedSentence(findSentenceAt(sentences, offset));
             }}
           />
         ) : (

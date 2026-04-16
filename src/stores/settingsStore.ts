@@ -4,9 +4,11 @@ import { persist, createJSONStorage } from 'zustand/middleware';
 interface SettingsState {
   weeklyGoalMinutes: number;
   activeLanguages: string[];
+  showStressMarks: boolean;
   setWeeklyGoal: (minutes: number) => void;
   addLanguage: (lang: string) => void;
   removeLanguage: (lang: string) => void;
+  toggleStressMarks: () => void;
 }
 
 export const useSettingsStore = create<SettingsState>()(

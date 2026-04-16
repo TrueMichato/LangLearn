@@ -64,3 +64,8 @@ export async function getTotalWordCount(language?: string): Promise<number> {
   }
   return db.words.count();
 }
+
+export async function wordExists(word: string, language: string): Promise<boolean> {
+  const match = await db.words.where({ word, language }).first();
+  return !!match;
+}

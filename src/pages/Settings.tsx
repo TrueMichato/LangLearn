@@ -1,6 +1,8 @@
 import { useState, useRef } from 'react';
 import { useSettingsStore } from '../stores/settingsStore';
 import { exportAllData, importAllData, downloadJson } from '../db/backup';
+import DeckExport from '../components/common/DeckExport';
+import DeckImport from '../components/common/DeckImport';
 
 export default function SettingsPage() {
   const { weeklyGoalMinutes, setWeeklyGoal, activeLanguages, addLanguage, removeLanguage } =
@@ -88,6 +90,14 @@ export default function SettingsPage() {
             );
           })}
         </div>
+      </section>
+
+      {/* Decks */}
+      <section className="bg-white dark:bg-gray-900 rounded-2xl shadow p-4 space-y-4">
+        <h3 className="font-semibold text-gray-700 dark:text-gray-200 mb-2">Decks</h3>
+        <DeckExport />
+        <hr className="border-gray-200 dark:border-gray-700" />
+        <DeckImport />
       </section>
 
       {/* Backup */}
