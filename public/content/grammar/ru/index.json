@@ -16,5 +16,12 @@
   { "id": "numbers", "title": "Numbers & Counting", "order": 15 },
   { "id": "comparatives", "title": "Comparatives & Superlatives", "order": 16 },
   { "id": "conjunctions", "title": "Conjunctions & Complex Sentences", "order": 17 },
-  { "id": "expressions", "title": "Common Expressions & Idioms", "order": 18 }
+  { "id": "expressions", "title": "Common Expressions & Idioms", "order": 18 },
+  { "id": "imperative", "title": "Imperative Mood (Повелительное наклонение)", "order": 19 },
+  { "id": "prefixes", "title": "Verbal Prefixes (в-, вы-, при-, у-)", "order": 20 },
+  { "id": "participles", "title": "Participles (Причастия)", "order": 21 },
+  { "id": "gerunds", "title": "Verbal Adverbs / Gerunds (Деепричастия)", "order": 22 },
+  { "id": "conditional", "title": "Conditional Mood (бы)", "order": 23 },
+  { "id": "indirect-speech", "title": "Indirect Speech & Reported Questions", "order": 24 },
+  { "id": "word-order", "title": "Word Order & Emphasis", "order": 25 }
 ]
