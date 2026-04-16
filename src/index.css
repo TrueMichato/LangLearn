@@ -4,3 +4,8 @@
 :root {
   --app-font-size: 18px;
 }
+
+@keyframes slideUp {
+  from { transform: translateY(1rem); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
