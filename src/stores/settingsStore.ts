@@ -9,6 +9,7 @@ interface SettingsState {
   fontSize: number;
   ttsRate: number;
   reviewBatchSize: number;
+  onboardingComplete: boolean;
   setWeeklyGoal: (minutes: number) => void;
   addLanguage: (lang: string) => void;
   removeLanguage: (lang: string) => void;
@@ -17,6 +18,7 @@ interface SettingsState {
   setFontSize: (size: number) => void;
   setTtsRate: (rate: number) => void;
   setReviewBatchSize: (size: number) => void;
+  completeOnboarding: () => void;
 }
 
 export const useSettingsStore = create<SettingsState>()(
@@ -29,6 +31,7 @@ export const useSettingsStore = create<SettingsState>()(
       fontSize: 18,
       ttsRate: 0.9,
       reviewBatchSize: 25,
+      onboardingComplete: false,
 
       setWeeklyGoal: (minutes) => set({ weeklyGoalMinutes: minutes }),
 
@@ -57,6 +60,7 @@ export const useSettingsStore = create<SettingsState>()(
       setFontSize: (size) => set({ fontSize: size }),
       setTtsRate: (rate) => set({ ttsRate: rate }),
       setReviewBatchSize: (size) => set({ reviewBatchSize: size }),
+      completeOnboarding: () => set({ onboardingComplete: true }),
     }),
     {
       name: 'langlearn-settings',
