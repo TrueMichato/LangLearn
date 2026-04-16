@@ -5,7 +5,7 @@ import DeckExport from '../components/common/DeckExport';
 import DeckImport from '../components/common/DeckImport';
 
 export default function SettingsPage() {
-  const { weeklyGoalMinutes, setWeeklyGoal, activeLanguages, addLanguage, removeLanguage, showStressMarks, toggleStressMarks } =
+  const { weeklyGoalMinutes, setWeeklyGoal, activeLanguages, addLanguage, removeLanguage, showStressMarks, toggleStressMarks, darkMode, toggleDarkMode } =
     useSettingsStore();
   const [importStatus, setImportStatus] = useState('');
   const fileInputRef = useRef<HTMLInputElement>(null);
@@ -42,11 +42,28 @@ export default function SettingsPage() {
 
   return (
     <div className="space-y-6">
-      <h2 className="text-lg font-semibold text-gray-700">Settings</h2>
+      <h2 className="text-lg font-semibold text-gray-700 dark:text-gray-200">Settings</h2>
+
+      {/* Theme */}
+      <section className="bg-white dark:bg-gray-800 rounded-2xl shadow p-4">
+        <div className="flex items-center justify-between">
+          <div>
+            <h3 className="font-semibold text-gray-700 dark:text-gray-200">Theme</h3>
+            <p className="text-sm text-gray-500 dark:text-gray-400">{darkMode ? 'Dark mode' : 'Light mode'}</p>
+          </div>
+          <button
+            onClick={toggleDarkMode}
+            className="text-2xl p-2 rounded-full hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors"
+            aria-label="Toggle dark mode"
+          >
+            {darkMode ? '☀️' : '🌙'}
+          </button>
+        </div>
+      </section>
 
       {/* Weekly Goal */}
-      <section className="bg-white rounded-2xl shadow p-4">
-        <h3 className="font-semibold text-gray-700 mb-2">Weekly Study Goal</h3>
+      <section className="bg-white dark:bg-gray-800 rounded-2xl shadow p-4">
+        <h3 className="font-semibold text-gray-700 dark:text-gray-200 mb-2">Weekly Study Goal</h3>
         <div className="flex items-center gap-3">
           <input
             type="range"
@@ -57,7 +74,7 @@ export default function SettingsPage() {
             onChange={(e) => setWeeklyGoal(Number(e.target.value))}
             className="flex-1 accent-indigo-600"
           />
-          <span className="text-sm font-mono w-16 text-right">
+          <span className="text-sm font-mono w-16 text-right dark:text-gray-300">
             {weeklyGoalMinutes >= 60
               ? `${Math.floor(weeklyGoalMinutes / 60)}h${weeklyGoalMinutes % 60 ? ` ${weeklyGoalMinutes % 60}m` : ''}`
               : `${weeklyGoalMinutes}m`}
@@ -66,8 +83,8 @@ export default function SettingsPage() {
       </section>
 
       {/* Languages */}
-      <section className="bg-white rounded-2xl shadow p-4">
-        <h3 className="font-semibold text-gray-700 mb-2">Active Languages</h3>
+      <section className="bg-white dark:bg-gray-800 rounded-2xl shadow p-4">
+        <h3 className="font-semibold text-gray-700 dark:text-gray-200 mb-2">Active Languages</h3>
         <div className="flex flex-wrap gap-2">
           {languageOptions.map((lang) => {
             const isActive = activeLanguages.includes(lang.code);
@@ -82,7 +99,7 @@ export default function SettingsPage() {
                 className={`px-3 py-1.5 rounded-full text-sm transition-colors ${
                   isActive
                     ? 'bg-indigo-600 text-white'
-                    : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
+                    : 'bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-600'
                 }`}
               >
                 {lang.name}
@@ -93,7 +110,7 @@ export default function SettingsPage() {
       </section>
 
       {/* Decks */}
-      <section className="bg-white dark:bg-gray-900 rounded-2xl shadow p-4 space-y-4">
+      <section className="bg-white dark:bg-gray-800 rounded-2xl shadow p-4 space-y-4">
         <h3 className="font-semibold text-gray-700 dark:text-gray-200 mb-2">Decks</h3>
         <DeckExport />
         <hr className="border-gray-200 dark:border-gray-700" />
@@ -128,18 +145,18 @@ export default function SettingsPage() {
       )}
 
       {/* Backup */}
-      <section className="bg-white rounded-2xl shadow p-4">
-        <h3 className="font-semibold text-gray-700 mb-2">Data Backup</h3>
+      <section className="bg-white dark:bg-gray-800 rounded-2xl shadow p-4">
+        <h3 className="font-semibold text-gray-700 dark:text-gray-200 mb-2">Data Backup</h3>
         <div className="space-y-2">
           <button
             onClick={handleExport}
-            className="w-full bg-indigo-100 text-indigo-700 py-2 rounded-xl font-semibold hover:bg-indigo-200 transition-colors"
+            className="w-full bg-indigo-100 dark:bg-indigo-900 text-indigo-700 dark:text-indigo-300 py-2 rounded-xl font-semibold hover:bg-indigo-200 dark:hover:bg-indigo-800 transition-colors"
           >
             📥 Export all data
           </button>
           <button
             onClick={() => fileInputRef.current?.click()}
-            className="w-full bg-gray-100 text-gray-700 py-2 rounded-xl font-semibold hover:bg-gray-200 transition-colors"
+            className="w-full bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 py-2 rounded-xl font-semibold hover:bg-gray-200 dark:hover:bg-gray-600 transition-colors"
           >
             📤 Import from file
           </button>

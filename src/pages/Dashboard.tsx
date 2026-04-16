@@ -51,7 +51,7 @@ export default function Dashboard() {
   if (!stats) {
     return (
       <div className="flex items-center justify-center h-64">
-        <p className="text-gray-400">Loading...</p>
+        <p className="text-gray-400 dark:text-gray-500">Loading...</p>
       </div>
     );
   }
@@ -64,7 +64,7 @@ export default function Dashboard() {
 
   return (
     <div>
-      <h2 className="text-lg font-semibold text-gray-700 mb-4">Dashboard</h2>
+      <h2 className="text-lg font-semibold text-gray-700 dark:text-gray-200 mb-4">Dashboard</h2>
 
       <div className="grid grid-cols-2 gap-3 mb-6">
         <StatCard label="Words Learned" value={stats.totalWords} icon="📚" />
@@ -77,29 +77,29 @@ export default function Dashboard() {
         <StatCard label="Total XP" value={stats.totalXP} icon="⭐" />
       </div>
 
-      <div className="bg-white rounded-2xl shadow p-4">
+      <div className="bg-white dark:bg-gray-800 rounded-2xl shadow p-4">
         <div className="flex justify-between items-center mb-2">
-          <h3 className="font-semibold text-gray-700">Weekly Goal</h3>
-          <span className="text-sm text-gray-500">
+          <h3 className="font-semibold text-gray-700 dark:text-gray-200">Weekly Goal</h3>
+          <span className="text-sm text-gray-500 dark:text-gray-400">
             {formatStudyTime(stats.weekStudySeconds)} /{' '}
             {formatStudyTime(weeklyGoalSeconds)}
           </span>
         </div>
-        <div className="w-full bg-gray-200 rounded-full h-3">
+        <div className="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-3">
           <div
             className="bg-indigo-500 h-3 rounded-full transition-all duration-500"
             style={{ width: `${weeklyProgress}%` }}
           />
         </div>
-        <p className="text-xs text-gray-400 mt-2 text-center">
+        <p className="text-xs text-gray-400 dark:text-gray-500 mt-2 text-center">
           {weeklyProgress >= 100
             ? '🎉 Goal reached this week!'
             : `${weeklyProgress}% — keep it up!`}
         </p>
       </div>
 
-      <div className="bg-white dark:bg-gray-900 rounded-2xl shadow p-4 mt-4">
-        <h3 className="font-semibold text-gray-700 dark:text-gray-300 mb-3">
+      <div className="bg-white dark:bg-gray-800 rounded-2xl shadow p-4 mt-4">
+        <h3 className="font-semibold text-gray-700 dark:text-gray-200 mb-3">
           Study Activity
         </h3>
         <HeatMap studySessions={allSessions} />
@@ -118,10 +118,10 @@ function StatCard({
   icon: string;
 }) {
   return (
-    <div className="bg-white rounded-2xl shadow p-4 text-center">
+    <div className="bg-white dark:bg-gray-800 rounded-2xl shadow p-4 text-center">
       <span className="text-2xl">{icon}</span>
-      <p className="text-2xl font-bold text-gray-800 mt-1">{value}</p>
-      <p className="text-xs text-gray-500">{label}</p>
+      <p className="text-2xl font-bold text-gray-800 dark:text-gray-100 mt-1">{value}</p>
+      <p className="text-xs text-gray-500 dark:text-gray-400">{label}</p>
     </div>
   );
 }

@@ -13,20 +13,20 @@ export default function Flashcard({ word, isFlipped, onFlip }: FlashcardProps) {
       onClick={!isFlipped ? onFlip : undefined}
       className={`w-full min-h-[240px] rounded-2xl shadow-lg p-6 flex flex-col items-center justify-center transition-all duration-300 ${
         isFlipped
-          ? 'bg-white border border-green-200'
-          : 'bg-white border border-indigo-200 cursor-pointer hover:shadow-xl'
+          ? 'bg-white dark:bg-gray-800 border border-green-200 dark:border-green-700'
+          : 'bg-white dark:bg-gray-800 border border-indigo-200 dark:border-indigo-700 cursor-pointer hover:shadow-xl'
       }`}
     >
-      <span className="text-xs text-gray-400 uppercase tracking-wide mb-2">
+      <span className="text-xs text-gray-400 dark:text-gray-500 uppercase tracking-wide mb-2">
         {word.language}
       </span>
 
-      <p className="text-3xl font-bold text-gray-800 mb-2 text-center">
+      <p className="text-3xl font-bold text-gray-800 dark:text-gray-100 mb-2 text-center">
         {word.word}
       </p>
 
       {word.reading && (
-        <p className="text-sm text-gray-500 mb-2">{word.reading}</p>
+        <p className="text-sm text-gray-500 dark:text-gray-400 mb-2">{word.reading}</p>
       )}
 
       {isTTSSupported() && (
@@ -44,15 +44,15 @@ export default function Flashcard({ word, isFlipped, onFlip }: FlashcardProps) {
 
       {isFlipped ? (
         <div className="mt-2 text-center">
-          <p className="text-xl text-green-700 font-semibold">{word.meaning}</p>
+          <p className="text-xl text-green-700 dark:text-green-400 font-semibold">{word.meaning}</p>
           {word.contextSentence && (
-            <p className="text-sm text-gray-500 mt-3 italic">
+            <p className="text-sm text-gray-500 dark:text-gray-400 mt-3 italic">
               "{word.contextSentence}"
             </p>
           )}
         </div>
       ) : (
-        <p className="text-sm text-indigo-400 mt-4">Tap to reveal</p>
+        <p className="text-sm text-indigo-400 dark:text-indigo-300 mt-4">Tap to reveal</p>
       )}
     </div>
   );

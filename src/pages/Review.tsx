@@ -50,7 +50,7 @@ export default function ReviewPage() {
   if (loading) {
     return (
       <div className="flex items-center justify-center h-64">
-        <p className="text-gray-400">Loading cards...</p>
+        <p className="text-gray-400 dark:text-gray-500">Loading cards...</p>
       </div>
     );
   }
@@ -59,8 +59,8 @@ export default function ReviewPage() {
     return (
       <div className="flex flex-col items-center justify-center h-64 text-center">
         <p className="text-5xl mb-4">🎉</p>
-        <p className="text-xl font-semibold text-gray-700">No cards to review!</p>
-        <p className="text-gray-500 mt-2">
+        <p className="text-xl font-semibold text-gray-700 dark:text-gray-200">No cards to review!</p>
+        <p className="text-gray-500 dark:text-gray-400 mt-2">
           Add words from the Reader or check back later.
         </p>
       </div>
@@ -71,8 +71,8 @@ export default function ReviewPage() {
     return (
       <div className="flex flex-col items-center justify-center h-64 text-center">
         <p className="text-5xl mb-4">✨</p>
-        <p className="text-xl font-semibold text-gray-700">Session complete!</p>
-        <p className="text-gray-500 mt-2">
+        <p className="text-xl font-semibold text-gray-700 dark:text-gray-200">Session complete!</p>
+        <p className="text-gray-500 dark:text-gray-400 mt-2">
           You reviewed {cardsReviewed} cards. Great effort!
         </p>
         <button
@@ -93,8 +93,8 @@ export default function ReviewPage() {
   return (
     <div>
       <div className="flex justify-between items-center mb-4">
-        <h2 className="text-lg font-semibold text-gray-700">Review</h2>
-        <span className="text-sm text-gray-400">
+        <h2 className="text-lg font-semibold text-gray-700 dark:text-gray-200">Review</h2>
+        <span className="text-sm text-gray-400 dark:text-gray-500">
           {currentIndex + 1} / {queue.length}
         </span>
       </div>
@@ -103,7 +103,7 @@ export default function ReviewPage() {
 
       {isFlipped && <GradeButtons onGrade={handleGrade} />}
 
-      <p className="text-center text-xs text-gray-400 mt-6">
+      <p className="text-center text-xs text-gray-400 dark:text-gray-500 mt-6">
         No worries if you didn't know — it'll come back later 💪
       </p>
     </div>

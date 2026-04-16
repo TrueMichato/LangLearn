@@ -37,11 +37,11 @@ export default function WordLookupSheet({
   };
 
   return (
-    <div className="fixed inset-x-0 bottom-0 bg-white border-t border-gray-200 rounded-t-2xl shadow-xl p-4 pb-[calc(1rem+env(safe-area-inset-bottom))] z-50">
+    <div className="fixed inset-x-0 bottom-0 bg-white dark:bg-gray-900 border-t border-gray-200 dark:border-gray-700 rounded-t-2xl shadow-xl p-4 pb-[calc(1rem+env(safe-area-inset-bottom))] z-50">
       <div className="max-w-lg mx-auto">
         <div className="flex items-center justify-between mb-3">
           <div className="flex items-center gap-2">
-            <span className="text-xl font-bold">{word}</span>
+            <span className="text-xl font-bold dark:text-gray-100">{word}</span>
             {isTTSSupported() && (
               <button
                 onClick={() => speak(word, language)}
@@ -53,7 +53,7 @@ export default function WordLookupSheet({
             <button
               onClick={handleLookup}
               disabled={loading}
-              className="text-sm bg-indigo-100 text-indigo-700 px-2 py-1 rounded-lg hover:bg-indigo-200 transition-colors disabled:opacity-50"
+              className="text-sm bg-indigo-100 dark:bg-indigo-900 text-indigo-700 dark:text-indigo-300 px-2 py-1 rounded-lg hover:bg-indigo-200 dark:hover:bg-indigo-800 transition-colors disabled:opacity-50"
             >
               {loading ? (
                 <span className="inline-flex items-center gap-1">
@@ -85,7 +85,7 @@ export default function WordLookupSheet({
           </div>
           <button
             onClick={onClose}
-            className="text-gray-400 hover:text-gray-600"
+            className="text-gray-400 hover:text-gray-600 dark:hover:text-gray-300"
           >
             ✕
           </button>
@@ -98,14 +98,14 @@ export default function WordLookupSheet({
           placeholder="Reading / pronunciation"
           value={reading}
           onChange={(e) => setReading(e.target.value)}
-          className="w-full px-3 py-2 border border-gray-300 rounded-lg mb-2 focus:outline-none focus:ring-2 focus:ring-indigo-300"
+          className="w-full px-3 py-2 border border-gray-300 dark:border-gray-600 rounded-lg mb-2 focus:outline-none focus:ring-2 focus:ring-indigo-300 dark:focus:ring-indigo-700 bg-white dark:bg-gray-800 dark:text-gray-100"
         />
         <input
           type="text"
           placeholder="Meaning / translation"
           value={meaning}
           onChange={(e) => setMeaning(e.target.value)}
-          className="w-full px-3 py-2 border border-gray-300 rounded-lg mb-3 focus:outline-none focus:ring-2 focus:ring-indigo-300"
+          className="w-full px-3 py-2 border border-gray-300 dark:border-gray-600 rounded-lg mb-3 focus:outline-none focus:ring-2 focus:ring-indigo-300 dark:focus:ring-indigo-700 bg-white dark:bg-gray-800 dark:text-gray-100"
         />
         <button
           onClick={() => onAdd(word, reading, meaning, contextSentence)}

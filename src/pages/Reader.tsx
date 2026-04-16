@@ -124,11 +124,11 @@ export default function ReaderPage() {
           d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4z"
         />
       </svg>
-      <p className="text-gray-500 text-sm">Parsing Japanese text…</p>
+      <p className="text-gray-500 dark:text-gray-400 text-sm">Parsing Japanese text…</p>
     </div>
   ) : !hasTokens ? (
     <div>
-      <h2 className="text-lg font-semibold text-gray-700 mb-4">
+      <h2 className="text-lg font-semibold text-gray-700 dark:text-gray-200 mb-4">
         Immersion Reader
       </h2>
       <div className="space-y-3">
@@ -137,12 +137,12 @@ export default function ReaderPage() {
           placeholder="Title (optional)"
           value={title}
           onChange={(e) => setTitle(e.target.value)}
-          className="w-full px-4 py-2 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-indigo-300"
+          className="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-xl focus:outline-none focus:ring-2 focus:ring-indigo-300 dark:focus:ring-indigo-700 bg-white dark:bg-gray-800 dark:text-gray-100"
         />
         <select
           value={language}
           onChange={(e) => setLanguage(e.target.value)}
-          className="w-full px-4 py-2 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-indigo-300"
+          className="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-xl focus:outline-none focus:ring-2 focus:ring-indigo-300 dark:focus:ring-indigo-700 bg-white dark:bg-gray-800 dark:text-gray-100"
         >
           <option value="ja">Japanese 🇯🇵</option>
           <option value="ru">Russian 🇷🇺</option>
@@ -158,7 +158,7 @@ export default function ReaderPage() {
           value={text}
           onChange={(e) => setText(e.target.value)}
           rows={8}
-          className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-indigo-300 resize-none"
+          className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-xl focus:outline-none focus:ring-2 focus:ring-indigo-300 dark:focus:ring-indigo-700 resize-none bg-white dark:bg-gray-800 dark:text-gray-100"
         />
         <button
           onClick={handleImport}
@@ -172,7 +172,7 @@ export default function ReaderPage() {
   ) : (
     <div>
       <div className="flex justify-between items-center mb-4">
-        <h2 className="text-lg font-semibold text-gray-700">
+        <h2 className="text-lg font-semibold text-gray-700 dark:text-gray-200">
           {title || 'Reading'}
         </h2>
         <button
@@ -186,13 +186,13 @@ export default function ReaderPage() {
             setTitle('');
             setSavedTextId(null);
           }}
-          className="text-sm text-indigo-600 hover:underline"
+          className="text-sm text-indigo-600 dark:text-indigo-400 hover:underline"
         >
           ← New text
         </button>
       </div>
 
-      <div className="bg-white rounded-2xl shadow p-4 leading-relaxed text-lg">
+      <div className="bg-white dark:bg-gray-800 rounded-2xl shadow p-4 leading-relaxed text-lg dark:text-gray-100">
         {jaTokens.length > 0 ? (
           <FuriganaText
             tokens={jaTokens}
@@ -214,8 +214,8 @@ export default function ReaderPage() {
                   setSelectedSentence(findSentenceAt(sentences, tokenOffsets[i] ?? 0));
                 }
               }}
-              className={`cursor-pointer transition-colors hover:bg-indigo-100 rounded px-0.5 ${
-                selectedWord === token ? 'bg-indigo-200' : ''
+              className={`cursor-pointer transition-colors hover:bg-indigo-100 dark:hover:bg-indigo-900 rounded px-0.5 ${
+                selectedWord === token ? 'bg-indigo-200 dark:bg-indigo-800' : ''
               }`}
             >
               {showStressMarks && language === 'ru' ? applyStress(token) : token}
