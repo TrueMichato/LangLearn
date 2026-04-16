@@ -7,6 +7,8 @@ import GrammarPage from './pages/Grammar';
 import SettingsPage from './pages/Settings';
 import WordsPage from './pages/Words';
 import LearnPage from './pages/Learn';
+import VocabLessons from './pages/VocabLessons';
+import LetterPractice from './pages/LetterPractice';
 import OnboardingOverlay from './components/onboarding/OnboardingOverlay';
 import { useSettingsStore } from './stores/settingsStore';
 import ErrorBoundary from './components/common/ErrorBoundary';
@@ -28,6 +30,8 @@ export default function App() {
             <Route path="/grammar" element={<GrammarPage />} />
             <Route path="/settings" element={<SettingsPage />} />
             <Route path="/learn" element={<LearnPage />} />
+            <Route path="/vocab-lessons" element={<VocabLessons />} />
+            <Route path="/letters/:lang" element={<LetterPractice />} />
           </Route>
         </Routes>
       </HashRouter>

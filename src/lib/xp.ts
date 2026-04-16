@@ -1,6 +1,8 @@
 const XP_PER_5_MINUTES = 10;
 const XP_PER_REVIEW = 2;
 const XP_PER_WORD_ADDED = 5;
+export const XP_PER_VOCAB_LESSON = 25;
+export const XP_PER_EXERCISE_CORRECT = 2;
 export const XP_PER_CHARACTER_PRACTICE = 5;
 export const XP_PER_QUIZ_CORRECT = 3;
 
