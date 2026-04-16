@@ -1,0 +1,34 @@
+{
+  "id": "hobbies",
+  "words": [
+    { "word": "趣味", "reading": "shumi", "meaning": "hobby", "example": "趣味は何ですか。", "exampleMeaning": "What is your hobby?" },
+    { "word": "映画", "reading": "eiga", "meaning": "movie", "example": "週末に映画を見ます。", "exampleMeaning": "I watch movies on the weekend." },
+    { "word": "音楽", "reading": "ongaku", "meaning": "music", "example": "音楽を聴くのが好きです。", "exampleMeaning": "I like listening to music." },
+    { "word": "サッカー", "reading": "sakkaa", "meaning": "soccer", "example": "サッカーをしましょう。", "exampleMeaning": "Let's play soccer." },
+    { "word": "泳ぐ", "reading": "oyogu", "meaning": "to swim", "example": "プールで泳ぎます。", "exampleMeaning": "I swim in the pool." },
+    { "word": "走る", "reading": "hashiru", "meaning": "to run", "example": "毎朝公園で走ります。", "exampleMeaning": "I run in the park every morning." },
+    { "word": "写真", "reading": "shashin", "meaning": "photograph", "example": "きれいな写真を撮りました。", "exampleMeaning": "I took a beautiful photograph." },
+    { "word": "ゲーム", "reading": "geemu", "meaning": "game", "example": "友達とゲームをします。", "exampleMeaning": "I play games with friends." },
+    { "word": "料理", "reading": "ryouri", "meaning": "cooking", "example": "料理が上手です。", "exampleMeaning": "You are good at cooking." },
+    { "word": "旅行", "reading": "ryokou", "meaning": "travel", "example": "来月旅行に行きます。", "exampleMeaning": "I'm going on a trip next month." },
+    { "word": "絵", "reading": "e", "meaning": "picture/painting", "example": "絵を描くのが好きです。", "exampleMeaning": "I like drawing pictures." },
+    { "word": "歌う", "reading": "utau", "meaning": "to sing", "example": "カラオケで歌います。", "exampleMeaning": "I sing at karaoke." },
+    { "word": "踊る", "reading": "odoru", "meaning": "to dance", "example": "一緒に踊りましょう。", "exampleMeaning": "Let's dance together." },
+    { "word": "読書", "reading": "dokusho", "meaning": "reading books", "example": "読書は私の趣味です。", "exampleMeaning": "Reading books is my hobby." },
+    { "word": "テニス", "reading": "tenisu", "meaning": "tennis", "example": "日曜日にテニスをします。", "exampleMeaning": "I play tennis on Sundays." },
+    { "word": "散歩", "reading": "sanpo", "meaning": "walk/stroll", "example": "夕方に散歩します。", "exampleMeaning": "I take a walk in the evening." }
+  ],
+  "exercises": [
+    { "type": "match", "pairs": 5 },
+    { "type": "fill-blank", "items": [
+      { "sentence": "___は何ですか。", "answer": "趣味", "hint": "hobby" },
+      { "sentence": "プールで___ぎます。", "answer": "泳", "hint": "to swim" },
+      { "sentence": "カラオケで___います。", "answer": "歌", "hint": "to sing" }
+    ]},
+    { "type": "multiple-choice", "items": [
+      { "question": "「散歩」はどういう意味ですか。", "options": ["running", "swimming", "walk/stroll", "dancing"], "answer": 2 },
+      { "question": "「読書」は英語で何ですか。", "options": ["writing", "reading books", "cooking", "traveling"], "answer": 1 },
+      { "question": "「料理」はどういう意味ですか。", "options": ["travel", "music", "cooking", "photography"], "answer": 2 }
+    ]}
+  ]
+}

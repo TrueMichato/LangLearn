@@ -1,0 +1,34 @@
+{
+  "id": "emotions",
+  "words": [
+    { "word": "嬉しい", "reading": "ureshii", "meaning": "happy/glad", "example": "プレゼントをもらって嬉しいです。", "exampleMeaning": "I'm happy to receive a present." },
+    { "word": "悲しい", "reading": "kanashii", "meaning": "sad", "example": "映画を見て悲しくなりました。", "exampleMeaning": "I became sad after watching the movie." },
+    { "word": "怒る", "reading": "okoru", "meaning": "to get angry", "example": "先生が怒りました。", "exampleMeaning": "The teacher got angry." },
+    { "word": "楽しい", "reading": "tanoshii", "meaning": "fun/enjoyable", "example": "旅行はとても楽しいです。", "exampleMeaning": "Traveling is very fun." },
+    { "word": "心配", "reading": "shinpai", "meaning": "worry", "example": "試験のことが心配です。", "exampleMeaning": "I'm worried about the exam." },
+    { "word": "寂しい", "reading": "sabishii", "meaning": "lonely", "example": "一人で寂しいです。", "exampleMeaning": "I'm lonely by myself." },
+    { "word": "怖い", "reading": "kowai", "meaning": "scary", "example": "この映画は怖いです。", "exampleMeaning": "This movie is scary." },
+    { "word": "恥ずかしい", "reading": "hazukashii", "meaning": "embarrassing", "example": "みんなの前で歌うのは恥ずかしいです。", "exampleMeaning": "Singing in front of everyone is embarrassing." },
+    { "word": "驚く", "reading": "odoroku", "meaning": "to be surprised", "example": "そのニュースに驚きました。", "exampleMeaning": "I was surprised by that news." },
+    { "word": "疲れる", "reading": "tsukareru", "meaning": "to get tired", "example": "今日はとても疲れました。", "exampleMeaning": "I'm very tired today." },
+    { "word": "元気", "reading": "genki", "meaning": "energetic/healthy", "example": "お元気ですか。", "exampleMeaning": "How are you?" },
+    { "word": "幸せ", "reading": "shiawase", "meaning": "happiness", "example": "家族と一緒にいると幸せです。", "exampleMeaning": "I'm happy when I'm with my family." },
+    { "word": "気持ち", "reading": "kimochi", "meaning": "feeling", "example": "気持ちを伝えたいです。", "exampleMeaning": "I want to express my feelings." },
+    { "word": "泣く", "reading": "naku", "meaning": "to cry", "example": "赤ちゃんが泣いています。", "exampleMeaning": "The baby is crying." },
+    { "word": "笑う", "reading": "warau", "meaning": "to laugh", "example": "みんなで笑いました。", "exampleMeaning": "Everyone laughed together." },
+    { "word": "好き", "reading": "suki", "meaning": "like", "example": "猫が好きです。", "exampleMeaning": "I like cats." }
+  ],
+  "exercises": [
+    { "type": "match", "pairs": 5 },
+    { "type": "fill-blank", "items": [
+      { "sentence": "映画を見て___くなりました。", "answer": "悲し", "hint": "sad" },
+      { "sentence": "今日はとても___ました。", "answer": "疲れ", "hint": "to get tired" },
+      { "sentence": "猫が___です。", "answer": "好き", "hint": "like" }
+    ]},
+    { "type": "multiple-choice", "items": [
+      { "question": "「嬉しい」はどういう意味ですか。", "options": ["sad", "angry", "happy/glad", "scary"], "answer": 2 },
+      { "question": "「泣く」の反対は何ですか。", "options": ["怒る", "笑う", "走る", "寝る"], "answer": 1 },
+      { "question": "「元気」はどういう意味ですか。", "options": ["tired", "lonely", "worried", "energetic/healthy"], "answer": 3 }
+    ]}
+  ]
+}

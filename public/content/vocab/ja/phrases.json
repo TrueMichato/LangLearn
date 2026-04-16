@@ -1,0 +1,33 @@
+{
+  "id": "phrases",
+  "words": [
+    { "word": "よろしくお願いします", "reading": "yoroshiku onegai shimasu", "meaning": "Please take care of it", "example": "初めまして、よろしくお願いします。", "exampleMeaning": "Nice to meet you, please take care of me." },
+    { "word": "お疲れ様です", "reading": "otsukaresama desu", "meaning": "Good work/Thanks for your hard work", "example": "今日もお疲れ様です。", "exampleMeaning": "Good work today as well." },
+    { "word": "いただきます", "reading": "itadakimasu", "meaning": "Let's eat/I humbly receive", "example": "ご飯の前にいただきますと言います。", "exampleMeaning": "We say 'itadakimasu' before eating." },
+    { "word": "ごちそうさまでした", "reading": "gochisousama deshita", "meaning": "Thanks for the meal", "example": "食べた後にごちそうさまでしたと言います。", "exampleMeaning": "We say 'gochisousama deshita' after eating." },
+    { "word": "お邪魔します", "reading": "ojama shimasu", "meaning": "Pardon the intrusion", "example": "友達の家に入る時、お邪魔しますと言います。", "exampleMeaning": "When entering a friend's house, we say 'ojama shimasu'." },
+    { "word": "頑張って", "reading": "ganbatte", "meaning": "Do your best", "example": "試験の前に友達に頑張ってと言いました。", "exampleMeaning": "I said 'do your best' to my friend before the exam." },
+    { "word": "気をつけて", "reading": "ki wo tsukete", "meaning": "Be careful", "example": "雨の日は気をつけてください。", "exampleMeaning": "Please be careful on rainy days." },
+    { "word": "お大事に", "reading": "odaiji ni", "meaning": "Take care of yourself", "example": "風邪を引いた友達にお大事にと言いました。", "exampleMeaning": "I said 'take care' to my friend who caught a cold." },
+    { "word": "しょうがない", "reading": "shouganai", "meaning": "It can't be helped", "example": "雨が降っているから、しょうがないです。", "exampleMeaning": "It's raining, so it can't be helped." },
+    { "word": "お久しぶり", "reading": "ohisashiburi", "meaning": "Long time no see", "example": "お久しぶりですね、元気でしたか。", "exampleMeaning": "Long time no see, have you been well?" },
+    { "word": "ただいま", "reading": "tadaima", "meaning": "I'm home", "example": "家に帰った時、ただいまと言います。", "exampleMeaning": "When I get home, I say 'tadaima'." },
+    { "word": "おかえりなさい", "reading": "okaerinasai", "meaning": "Welcome home", "example": "家族がただいまと言ったら、おかえりなさいと答えます。", "exampleMeaning": "When a family member says 'tadaima', we reply 'okaerinasai'." },
+    { "word": "いってきます", "reading": "ittekimasu", "meaning": "I'm heading out", "example": "朝、家を出る時にいってきますと言います。", "exampleMeaning": "In the morning, we say 'ittekimasu' when leaving home." },
+    { "word": "いってらっしゃい", "reading": "itterasshai", "meaning": "Have a safe trip", "example": "いってきますと言われたら、いってらっしゃいと答えます。", "exampleMeaning": "When someone says 'ittekimasu', we reply 'itterasshai'." },
+    { "word": "お先に失礼します", "reading": "osaki ni shitsurei shimasu", "meaning": "Excuse me for leaving first", "example": "先に帰る時、お先に失礼しますと言います。", "exampleMeaning": "When leaving before others, we say 'osaki ni shitsurei shimasu'." }
+  ],
+  "exercises": [
+    { "type": "match", "pairs": 5 },
+    { "type": "fill-blank", "items": [
+      { "sentence": "家に帰った時、___と言います。", "answer": "ただいま", "hint": "I'm home" },
+      { "sentence": "ご飯の前に___と言います。", "answer": "いただきます", "hint": "Let's eat/I humbly receive" },
+      { "sentence": "試験の前に友達に___と言いました。", "answer": "頑張って", "hint": "Do your best" }
+    ]},
+    { "type": "multiple-choice", "items": [
+      { "question": "「ただいま」の返事は何ですか。", "options": ["いってらっしゃい", "おかえりなさい", "お疲れ様です", "お大事に"], "answer": 1 },
+      { "question": "食べた後に何と言いますか。", "options": ["いただきます", "ごちそうさまでした", "お邪魔します", "よろしくお願いします"], "answer": 1 },
+      { "question": "「いってきます」の返事は何ですか。", "options": ["ただいま", "おかえりなさい", "いってらっしゃい", "お疲れ様です"], "answer": 2 }
+    ]}
+  ]
+}

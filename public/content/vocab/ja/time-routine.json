@@ -1,0 +1,35 @@
+{
+  "id": "time-routine",
+  "words": [
+    { "word": "朝", "reading": "asa", "meaning": "morning", "example": "朝は涼しいです。", "exampleMeaning": "Mornings are cool." },
+    { "word": "昼", "reading": "hiru", "meaning": "noon", "example": "昼に友達と会います。", "exampleMeaning": "I will meet a friend at noon." },
+    { "word": "夜", "reading": "yoru", "meaning": "night", "example": "夜は静かです。", "exampleMeaning": "Nights are quiet." },
+    { "word": "起きる", "reading": "okiru", "meaning": "to wake up", "example": "毎朝六時に起きます。", "exampleMeaning": "I wake up at 6 every morning." },
+    { "word": "寝る", "reading": "neru", "meaning": "to sleep", "example": "十一時に寝ます。", "exampleMeaning": "I go to sleep at 11." },
+    { "word": "時", "reading": "ji", "meaning": "hour/o'clock", "example": "今は三時です。", "exampleMeaning": "It is 3 o'clock now." },
+    { "word": "分", "reading": "fun", "meaning": "minute", "example": "十五分かかります。", "exampleMeaning": "It takes 15 minutes." },
+    { "word": "半", "reading": "han", "meaning": "half", "example": "七時半に出かけます。", "exampleMeaning": "I leave at 7:30." },
+    { "word": "午前", "reading": "gozen", "meaning": "AM", "example": "午前中に勉強します。", "exampleMeaning": "I study in the morning." },
+    { "word": "午後", "reading": "gogo", "meaning": "PM", "example": "午後は仕事があります。", "exampleMeaning": "I have work in the afternoon." },
+    { "word": "毎日", "reading": "mainichi", "meaning": "every day", "example": "毎日日本語を勉強します。", "exampleMeaning": "I study Japanese every day." },
+    { "word": "時間", "reading": "jikan", "meaning": "time/hour", "example": "時間がありません。", "exampleMeaning": "I don't have time." },
+    { "word": "朝ご飯", "reading": "asagohan", "meaning": "breakfast", "example": "朝ご飯にパンを食べます。", "exampleMeaning": "I eat bread for breakfast." },
+    { "word": "昼ご飯", "reading": "hirugohan", "meaning": "lunch", "example": "昼ご飯を一緒に食べましょう。", "exampleMeaning": "Let's eat lunch together." },
+    { "word": "晩ご飯", "reading": "bangohan", "meaning": "dinner", "example": "晩ご飯は何ですか。", "exampleMeaning": "What's for dinner?" },
+    { "word": "歯を磨く", "reading": "ha wo migaku", "meaning": "to brush teeth", "example": "朝と夜に歯を磨きます。", "exampleMeaning": "I brush my teeth in the morning and at night." },
+    { "word": "シャワー", "reading": "shawaa", "meaning": "shower", "example": "朝シャワーを浴びます。", "exampleMeaning": "I take a shower in the morning." }
+  ],
+  "exercises": [
+    { "type": "match", "pairs": 5 },
+    { "type": "fill-blank", "items": [
+      { "sentence": "毎朝六時に___ます。", "answer": "起き", "hint": "to wake up" },
+      { "sentence": "___に友達と会います。", "answer": "昼", "hint": "noon" },
+      { "sentence": "___日本語を勉強します。", "answer": "毎日", "hint": "every day" }
+    ]},
+    { "type": "multiple-choice", "items": [
+      { "question": "「午前」はどういう意味ですか。", "options": ["PM", "AM", "noon", "midnight"], "answer": 1 },
+      { "question": "「晩ご飯」は英語で何ですか。", "options": ["breakfast", "lunch", "snack", "dinner"], "answer": 3 },
+      { "question": "「寝る」の反対は何ですか。", "options": ["走る", "起きる", "食べる", "飲む"], "answer": 1 }
+    ]}
+  ]
+}

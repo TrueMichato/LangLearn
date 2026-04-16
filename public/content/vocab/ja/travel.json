@@ -1,0 +1,34 @@
+{
+  "id": "travel",
+  "words": [
+    { "word": "旅行", "reading": "ryokou", "meaning": "travel", "example": "日本に旅行したいです。", "exampleMeaning": "I want to travel to Japan." },
+    { "word": "ホテル", "reading": "hoteru", "meaning": "hotel", "example": "駅の近くのホテルに泊まります。", "exampleMeaning": "I'm staying at a hotel near the station." },
+    { "word": "空港", "reading": "kuukou", "meaning": "airport", "example": "空港までバスで行きます。", "exampleMeaning": "I go to the airport by bus." },
+    { "word": "パスポート", "reading": "pasupooto", "meaning": "passport", "example": "パスポートを見せてください。", "exampleMeaning": "Please show your passport." },
+    { "word": "切符", "reading": "kippu", "meaning": "ticket", "example": "切符を買いました。", "exampleMeaning": "I bought a ticket." },
+    { "word": "予約", "reading": "yoyaku", "meaning": "reservation", "example": "レストランを予約しました。", "exampleMeaning": "I made a restaurant reservation." },
+    { "word": "観光", "reading": "kankou", "meaning": "sightseeing", "example": "京都で観光します。", "exampleMeaning": "I will go sightseeing in Kyoto." },
+    { "word": "お土産", "reading": "omiyage", "meaning": "souvenir", "example": "お土産を買いたいです。", "exampleMeaning": "I want to buy souvenirs." },
+    { "word": "荷物", "reading": "nimotsu", "meaning": "luggage", "example": "荷物が多いです。", "exampleMeaning": "I have a lot of luggage." },
+    { "word": "出発", "reading": "shuppatsu", "meaning": "departure", "example": "出発は朝八時です。", "exampleMeaning": "The departure is at 8 AM." },
+    { "word": "到着", "reading": "touchaku", "meaning": "arrival", "example": "到着は午後三時です。", "exampleMeaning": "The arrival is at 3 PM." },
+    { "word": "海外", "reading": "kaigai", "meaning": "overseas", "example": "海外に行ったことがありますか。", "exampleMeaning": "Have you been overseas?" },
+    { "word": "案内", "reading": "annai", "meaning": "guidance/information", "example": "案内所はどこですか。", "exampleMeaning": "Where is the information desk?" },
+    { "word": "写真", "reading": "shashin", "meaning": "photo", "example": "写真を撮ってもいいですか。", "exampleMeaning": "May I take a photo?" },
+    { "word": "地図", "reading": "chizu", "meaning": "map", "example": "地図を見てください。", "exampleMeaning": "Please look at the map." },
+    { "word": "両替", "reading": "ryougae", "meaning": "currency exchange", "example": "両替はどこでできますか。", "exampleMeaning": "Where can I exchange currency?" }
+  ],
+  "exercises": [
+    { "type": "match", "pairs": 5 },
+    { "type": "fill-blank", "items": [
+      { "sentence": "___を見せてください。", "answer": "パスポート", "hint": "passport" },
+      { "sentence": "___が多いです。", "answer": "荷物", "hint": "luggage" },
+      { "sentence": "京都で___します。", "answer": "観光", "hint": "sightseeing" }
+    ]},
+    { "type": "multiple-choice", "items": [
+      { "question": "「予約」はどういう意味ですか。", "options": ["departure", "arrival", "reservation", "sightseeing"], "answer": 2 },
+      { "question": "「お土産」は英語で何ですか。", "options": ["luggage", "ticket", "map", "souvenir"], "answer": 3 },
+      { "question": "「出発」の反対は何ですか。", "options": ["観光", "到着", "案内", "両替"], "answer": 1 }
+    ]}
+  ]
+}

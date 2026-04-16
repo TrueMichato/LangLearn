@@ -6,5 +6,17 @@
   { "id": "family", "title": "Family Members", "order": 5, "wordCount": 20, "level": "beginner" },
   { "id": "food", "title": "Food & Drink", "order": 6, "wordCount": 17, "level": "beginner" },
   { "id": "animals", "title": "Animals", "order": 7, "wordCount": 16, "level": "beginner" },
-  { "id": "body", "title": "Body Parts", "order": 8, "wordCount": 17, "level": "beginner" }
+  { "id": "body", "title": "Body Parts", "order": 8, "wordCount": 17, "level": "beginner" },
+  { "id": "verbs", "title": "Common Verbs", "order": 9, "wordCount": 18, "level": "beginner" },
+  { "id": "adjectives", "title": "Common Adjectives", "order": 10, "wordCount": 18, "level": "beginner" },
+  { "id": "house", "title": "Around the House", "order": 11, "wordCount": 17, "level": "beginner" },
+  { "id": "school-work", "title": "At School & Work", "order": 12, "wordCount": 17, "level": "beginner" },
+  { "id": "transport", "title": "Transportation & Directions", "order": 13, "wordCount": 17, "level": "beginner" },
+  { "id": "weather", "title": "Weather & Seasons", "order": 14, "wordCount": 17, "level": "beginner" },
+  { "id": "shopping", "title": "Shopping & Money", "order": 15, "wordCount": 16, "level": "beginner" },
+  { "id": "time-routine", "title": "Time & Daily Routine", "order": 16, "wordCount": 17, "level": "beginner" },
+  { "id": "emotions", "title": "Emotions & Feelings", "order": 17, "wordCount": 16, "level": "beginner" },
+  { "id": "hobbies", "title": "Hobbies & Sports", "order": 18, "wordCount": 16, "level": "beginner" },
+  { "id": "travel", "title": "Travel & Tourism", "order": 19, "wordCount": 16, "level": "beginner" },
+  { "id": "phrases", "title": "Common Phrases & Idioms", "order": 20, "wordCount": 15, "level": "beginner" }
 ]

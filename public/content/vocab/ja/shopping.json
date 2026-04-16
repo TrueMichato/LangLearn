@@ -1,0 +1,34 @@
+{
+  "id": "shopping",
+  "words": [
+    { "word": "店", "reading": "mise", "meaning": "store", "example": "この店は大きいです。", "exampleMeaning": "This store is big." },
+    { "word": "買う", "reading": "kau", "meaning": "to buy", "example": "新しい本を買います。", "exampleMeaning": "I will buy a new book." },
+    { "word": "売る", "reading": "uru", "meaning": "to sell", "example": "この店は花を売っています。", "exampleMeaning": "This store sells flowers." },
+    { "word": "円", "reading": "en", "meaning": "yen", "example": "これは五百円です。", "exampleMeaning": "This is 500 yen." },
+    { "word": "高い", "reading": "takai", "meaning": "expensive", "example": "このバッグは高いです。", "exampleMeaning": "This bag is expensive." },
+    { "word": "安い", "reading": "yasui", "meaning": "cheap", "example": "この服は安いです。", "exampleMeaning": "These clothes are cheap." },
+    { "word": "お金", "reading": "okane", "meaning": "money", "example": "お金が足りません。", "exampleMeaning": "I don't have enough money." },
+    { "word": "財布", "reading": "saifu", "meaning": "wallet", "example": "財布をかばんに入れました。", "exampleMeaning": "I put my wallet in my bag." },
+    { "word": "クレジットカード", "reading": "kurejitto kaado", "meaning": "credit card", "example": "クレジットカードで払えますか。", "exampleMeaning": "Can I pay with a credit card?" },
+    { "word": "レジ", "reading": "reji", "meaning": "register/checkout", "example": "レジはあちらです。", "exampleMeaning": "The checkout is over there." },
+    { "word": "値段", "reading": "nedan", "meaning": "price", "example": "この値段は高すぎます。", "exampleMeaning": "This price is too high." },
+    { "word": "お釣り", "reading": "otsuri", "meaning": "change", "example": "お釣りをもらいました。", "exampleMeaning": "I received my change." },
+    { "word": "商品", "reading": "shouhin", "meaning": "product", "example": "新しい商品が届きました。", "exampleMeaning": "New products have arrived." },
+    { "word": "セール", "reading": "seeru", "meaning": "sale", "example": "今日はセールの日です。", "exampleMeaning": "Today is a sale day." },
+    { "word": "支払い", "reading": "shiharai", "meaning": "payment", "example": "支払いは現金でお願いします。", "exampleMeaning": "Please pay in cash." },
+    { "word": "袋", "reading": "fukuro", "meaning": "bag", "example": "袋はいりますか。", "exampleMeaning": "Do you need a bag?" }
+  ],
+  "exercises": [
+    { "type": "match", "pairs": 5 },
+    { "type": "fill-blank", "items": [
+      { "sentence": "この___は大きいです。", "answer": "店", "hint": "store" },
+      { "sentence": "___が足りません。", "answer": "お金", "hint": "money" },
+      { "sentence": "このバッグは___です。", "answer": "高い", "hint": "expensive" }
+    ]},
+    { "type": "multiple-choice", "items": [
+      { "question": "「安い」はどういう意味ですか。", "options": ["expensive", "cheap", "big", "small"], "answer": 1 },
+      { "question": "お店でお金を払う場所は何ですか。", "options": ["財布", "セール", "レジ", "袋"], "answer": 2 },
+      { "question": "「買う」の反対は何ですか。", "options": ["売る", "走る", "作る", "帰る"], "answer": 0 }
+    ]}
+  ]
+}
