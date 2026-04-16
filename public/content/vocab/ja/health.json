@@ -1,0 +1,38 @@
+{
+  "id": "health",
+  "words": [
+    { "word": "病院", "reading": "びょういん", "meaning": "Hospital", "example": "病院に行かなければなりません。", "exampleMeaning": "I have to go to the hospital." },
+    { "word": "薬", "reading": "くすり", "meaning": "Medicine", "example": "毎日薬を飲んでいます。", "exampleMeaning": "I take medicine every day." },
+    { "word": "医者", "reading": "いしゃ", "meaning": "Doctor", "example": "医者に診てもらいました。", "exampleMeaning": "I was examined by a doctor." },
+    { "word": "熱", "reading": "ねつ", "meaning": "Fever", "example": "熱が高いので休みます。", "exampleMeaning": "I'll rest because I have a high fever." },
+    { "word": "風邪", "reading": "かぜ", "meaning": "Cold (illness)", "example": "風邪を引いてしまいました。", "exampleMeaning": "I caught a cold." },
+    { "word": "頭痛", "reading": "ずつう", "meaning": "Headache", "example": "頭痛がひどいです。", "exampleMeaning": "I have a terrible headache." },
+    { "word": "歯医者", "reading": "はいしゃ", "meaning": "Dentist", "example": "歯医者に行くのが怖いです。", "exampleMeaning": "I'm scared of going to the dentist." },
+    { "word": "注射", "reading": "ちゅうしゃ", "meaning": "Injection/Shot", "example": "注射は少し痛いです。", "exampleMeaning": "Injections hurt a little." },
+    { "word": "健康", "reading": "けんこう", "meaning": "Health", "example": "健康のために運動しています。", "exampleMeaning": "I exercise for my health." },
+    { "word": "怪我", "reading": "けが", "meaning": "Injury", "example": "サッカーで怪我をしました。", "exampleMeaning": "I got injured playing soccer." },
+    { "word": "痛い", "reading": "いたい", "meaning": "Painful/It hurts", "example": "お腹が痛いです。", "exampleMeaning": "My stomach hurts." },
+    { "word": "咳", "reading": "せき", "meaning": "Cough", "example": "咳が止まりません。", "exampleMeaning": "My cough won't stop." },
+    { "word": "アレルギー", "reading": "あれるぎー", "meaning": "Allergy", "example": "花粉のアレルギーがあります。", "exampleMeaning": "I have a pollen allergy." },
+    { "word": "体温", "reading": "たいおん", "meaning": "Body temperature", "example": "体温を測ってください。", "exampleMeaning": "Please take your temperature." },
+    { "word": "入院", "reading": "にゅういん", "meaning": "Hospitalization", "example": "祖母が入院しています。", "exampleMeaning": "My grandmother is hospitalized." },
+    { "word": "治る", "reading": "なおる", "meaning": "To be cured/To heal", "example": "風邪が治りました。", "exampleMeaning": "My cold is cured." }
+  ],
+  "exercises": [
+    { "type": "match", "pairs": 5 },
+    { "type": "fill-blank", "items": [
+      { "sentence": "___を引いてしまいました。", "answer": "風邪", "hint": "Cold (illness)" },
+      { "sentence": "毎日___を飲んでいます。", "answer": "薬", "hint": "Medicine" },
+      { "sentence": "___に診てもらいました。", "answer": "医者", "hint": "Doctor" },
+      { "sentence": "お腹が___です。", "answer": "痛い", "hint": "Painful" },
+      { "sentence": "___のために運動しています。", "answer": "健康", "hint": "Health" }
+    ]},
+    { "type": "multiple-choice", "items": [
+      { "question": "歯が痛い時、どこに行きますか。", "options": ["病院", "歯医者", "薬局", "学校"], "answer": 1 },
+      { "question": "「ねつ」はどれですか。", "options": ["咳", "怪我", "熱", "頭痛"], "answer": 2 },
+      { "question": "花粉症は何の一種ですか。", "options": ["風邪", "怪我", "アレルギー", "頭痛"], "answer": 2 },
+      { "question": "病院に泊まることを何と言いますか。", "options": ["注射", "入院", "体温", "健康"], "answer": 1 },
+      { "question": "風邪が良くなることを何と言いますか。", "options": ["痛い", "治る", "引く", "測る"], "answer": 1 }
+    ]}
+  ]
+}

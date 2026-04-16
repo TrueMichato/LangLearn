@@ -1,0 +1,38 @@
+{
+  "id": "music-art",
+  "words": [
+    { "word": "音楽", "reading": "おんがく", "meaning": "Music", "example": "音楽を聴くのが好きです。", "exampleMeaning": "I like listening to music." },
+    { "word": "歌", "reading": "うた", "meaning": "Song", "example": "この歌はとても有名です。", "exampleMeaning": "This song is very famous." },
+    { "word": "歌う", "reading": "うたう", "meaning": "To sing", "example": "カラオケで歌いましょう。", "exampleMeaning": "Let's sing karaoke." },
+    { "word": "絵", "reading": "え", "meaning": "Picture/Painting", "example": "友達が絵を描いてくれました。", "exampleMeaning": "My friend drew a picture for me." },
+    { "word": "描く", "reading": "えがく", "meaning": "To draw/To paint", "example": "子供が花の絵を描きました。", "exampleMeaning": "The child drew a picture of a flower." },
+    { "word": "ピアノ", "reading": "ぴあの", "meaning": "Piano", "example": "五歳からピアノを弾いています。", "exampleMeaning": "I've been playing piano since I was five." },
+    { "word": "ギター", "reading": "ぎたー", "meaning": "Guitar", "example": "ギターを弾けるようになりたいです。", "exampleMeaning": "I want to learn to play guitar." },
+    { "word": "楽器", "reading": "がっき", "meaning": "Musical instrument", "example": "何か楽器を弾けますか。", "exampleMeaning": "Can you play any musical instrument?" },
+    { "word": "コンサート", "reading": "こんさーと", "meaning": "Concert", "example": "来月コンサートに行きます。", "exampleMeaning": "I'm going to a concert next month." },
+    { "word": "踊る", "reading": "おどる", "meaning": "To dance", "example": "一緒に踊りませんか。", "exampleMeaning": "Would you like to dance together?" },
+    { "word": "美術館", "reading": "びじゅつかん", "meaning": "Art museum", "example": "週末に美術館に行きました。", "exampleMeaning": "I went to the art museum on the weekend." },
+    { "word": "写真", "reading": "しゃしん", "meaning": "Photograph", "example": "趣味は写真を撮ることです。", "exampleMeaning": "My hobby is taking photographs." },
+    { "word": "映画", "reading": "えいが", "meaning": "Movie/Film", "example": "新しい映画を見に行きましょう。", "exampleMeaning": "Let's go see a new movie." },
+    { "word": "演奏", "reading": "えんそう", "meaning": "Musical performance", "example": "すばらしい演奏でした。", "exampleMeaning": "It was a wonderful performance." },
+    { "word": "作品", "reading": "さくひん", "meaning": "Work of art", "example": "この作品はとても美しいです。", "exampleMeaning": "This work of art is very beautiful." },
+    { "word": "展覧会", "reading": "てんらんかい", "meaning": "Exhibition", "example": "来週展覧会があります。", "exampleMeaning": "There's an exhibition next week." }
+  ],
+  "exercises": [
+    { "type": "match", "pairs": 5 },
+    { "type": "fill-blank", "items": [
+      { "sentence": "___を聴くのが好きです。", "answer": "音楽", "hint": "Music" },
+      { "sentence": "カラオケで___ましょう。", "answer": "歌い", "hint": "To sing" },
+      { "sentence": "五歳から___を弾いています。", "answer": "ピアノ", "hint": "Piano" },
+      { "sentence": "週末に___に行きました。", "answer": "美術館", "hint": "Art museum" },
+      { "sentence": "子供が花の___を描きました。", "answer": "絵", "hint": "Picture" }
+    ]},
+    { "type": "multiple-choice", "items": [
+      { "question": "ピアノやギターは何ですか。", "options": ["音楽", "楽器", "歌", "演奏"], "answer": 1 },
+      { "question": "絵や彫刻を見る場所はどこですか。", "options": ["映画館", "コンサート", "美術館", "体育館"], "answer": 2 },
+      { "question": "「うたう」はどれですか。", "options": ["踊る", "描く", "歌う", "弾く"], "answer": 2 },
+      { "question": "音楽を生で聴くイベントを何と言いますか。", "options": ["展覧会", "コンサート", "映画", "美術館"], "answer": 1 },
+      { "question": "「さくひん」の意味は何ですか。", "options": ["Concert", "Exhibition", "Work of art", "Performance"], "answer": 2 }
+    ]}
+  ]
+}

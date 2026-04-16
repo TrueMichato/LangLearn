@@ -1,0 +1,39 @@
+{
+  "id": "nature-weather",
+  "words": [
+    { "word": "春", "reading": "はる", "meaning": "Spring", "example": "春は桜がきれいです。", "exampleMeaning": "Cherry blossoms are beautiful in spring." },
+    { "word": "夏", "reading": "なつ", "meaning": "Summer", "example": "夏は海に行きたいです。", "exampleMeaning": "I want to go to the sea in summer." },
+    { "word": "秋", "reading": "あき", "meaning": "Autumn/Fall", "example": "秋は紅葉がきれいです。", "exampleMeaning": "The autumn leaves are beautiful in fall." },
+    { "word": "冬", "reading": "ふゆ", "meaning": "Winter", "example": "冬は雪が降ります。", "exampleMeaning": "It snows in winter." },
+    { "word": "海", "reading": "うみ", "meaning": "Sea/Ocean", "example": "海で泳ぎました。", "exampleMeaning": "I swam in the sea." },
+    { "word": "空", "reading": "そら", "meaning": "Sky", "example": "今日の空はとてもきれいです。", "exampleMeaning": "Today's sky is very beautiful." },
+    { "word": "山", "reading": "やま", "meaning": "Mountain", "example": "週末に山に登りました。", "exampleMeaning": "I climbed a mountain on the weekend." },
+    { "word": "川", "reading": "かわ", "meaning": "River", "example": "川で魚を釣りました。", "exampleMeaning": "I caught fish in the river." },
+    { "word": "森", "reading": "もり", "meaning": "Forest", "example": "森の中を散歩しました。", "exampleMeaning": "I took a walk in the forest." },
+    { "word": "花", "reading": "はな", "meaning": "Flower", "example": "庭にきれいな花が咲いています。", "exampleMeaning": "Beautiful flowers are blooming in the garden." },
+    { "word": "木", "reading": "き", "meaning": "Tree", "example": "大きな木の下で休みました。", "exampleMeaning": "I rested under a big tree." },
+    { "word": "星", "reading": "ほし", "meaning": "Star", "example": "夜空に星がたくさん見えます。", "exampleMeaning": "I can see many stars in the night sky." },
+    { "word": "月", "reading": "つき", "meaning": "Moon", "example": "今夜の月はとても明るいです。", "exampleMeaning": "Tonight's moon is very bright." },
+    { "word": "太陽", "reading": "たいよう", "meaning": "Sun", "example": "太陽が出ています。", "exampleMeaning": "The sun is out." },
+    { "word": "島", "reading": "しま", "meaning": "Island", "example": "日本は島国です。", "exampleMeaning": "Japan is an island nation." },
+    { "word": "湖", "reading": "みずうみ", "meaning": "Lake", "example": "湖のそばでキャンプをしました。", "exampleMeaning": "We camped by the lake." },
+    { "word": "虹", "reading": "にじ", "meaning": "Rainbow", "example": "雨の後に虹が出ました。", "exampleMeaning": "A rainbow appeared after the rain." }
+  ],
+  "exercises": [
+    { "type": "match", "pairs": 5 },
+    { "type": "fill-blank", "items": [
+      { "sentence": "___は桜がきれいです。", "answer": "春", "hint": "Spring" },
+      { "sentence": "___で泳ぎました。", "answer": "海", "hint": "Sea" },
+      { "sentence": "夜空に___がたくさん見えます。", "answer": "星", "hint": "Star" },
+      { "sentence": "___は雪が降ります。", "answer": "冬", "hint": "Winter" },
+      { "sentence": "大きな___の下で休みました。", "answer": "木", "hint": "Tree" }
+    ]},
+    { "type": "multiple-choice", "items": [
+      { "question": "「はる」はどの季節ですか。", "options": ["夏", "秋", "冬", "春"], "answer": 3 },
+      { "question": "夜空に光っているものは何ですか。", "options": ["太陽", "虹", "星", "花"], "answer": 2 },
+      { "question": "「みずうみ」はどれですか。", "options": ["海", "川", "湖", "島"], "answer": 2 },
+      { "question": "日本は何国ですか。", "options": ["山国", "島国", "森国", "湖国"], "answer": 1 },
+      { "question": "紅葉がきれいな季節はいつですか。", "options": ["春", "夏", "秋", "冬"], "answer": 2 }
+    ]}
+  ]
+}

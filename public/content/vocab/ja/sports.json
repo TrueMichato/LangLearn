@@ -1,0 +1,38 @@
+{
+  "id": "sports",
+  "words": [
+    { "word": "サッカー", "reading": "さっかー", "meaning": "Soccer/Football", "example": "サッカーの試合を見ました。", "exampleMeaning": "I watched a soccer match." },
+    { "word": "野球", "reading": "やきゅう", "meaning": "Baseball", "example": "日本では野球が人気です。", "exampleMeaning": "Baseball is popular in Japan." },
+    { "word": "泳ぐ", "reading": "およぐ", "meaning": "To swim", "example": "毎朝プールで泳ぎます。", "exampleMeaning": "I swim in the pool every morning." },
+    { "word": "走る", "reading": "はしる", "meaning": "To run", "example": "公園で走るのが好きです。", "exampleMeaning": "I like running in the park." },
+    { "word": "試合", "reading": "しあい", "meaning": "Match/Game", "example": "明日大事な試合があります。", "exampleMeaning": "There's an important match tomorrow." },
+    { "word": "選手", "reading": "せんしゅ", "meaning": "Player/Athlete", "example": "あの選手はとても速いです。", "exampleMeaning": "That athlete is very fast." },
+    { "word": "チーム", "reading": "ちーむ", "meaning": "Team", "example": "私たちのチームが勝ちました。", "exampleMeaning": "Our team won." },
+    { "word": "練習", "reading": "れんしゅう", "meaning": "Practice", "example": "毎日練習しています。", "exampleMeaning": "I practice every day." },
+    { "word": "体育館", "reading": "たいいくかん", "meaning": "Gymnasium", "example": "体育館でバスケットボールをします。", "exampleMeaning": "We play basketball in the gymnasium." },
+    { "word": "テニス", "reading": "てにす", "meaning": "Tennis", "example": "週末にテニスをしませんか。", "exampleMeaning": "Would you like to play tennis this weekend?" },
+    { "word": "バスケットボール", "reading": "ばすけっとぼーる", "meaning": "Basketball", "example": "バスケットボールは背が高い人が多いです。", "exampleMeaning": "There are many tall people in basketball." },
+    { "word": "勝つ", "reading": "かつ", "meaning": "To win", "example": "今日の試合に勝ちました。", "exampleMeaning": "We won today's match." },
+    { "word": "負ける", "reading": "まける", "meaning": "To lose", "example": "残念ですが負けました。", "exampleMeaning": "Unfortunately, we lost." },
+    { "word": "応援", "reading": "おうえん", "meaning": "Cheering/Support", "example": "みんなでチームを応援しました。", "exampleMeaning": "We all cheered for the team." },
+    { "word": "プール", "reading": "ぷーる", "meaning": "Pool", "example": "夏はプールに行きます。", "exampleMeaning": "I go to the pool in summer." },
+    { "word": "運動", "reading": "うんどう", "meaning": "Exercise", "example": "毎日運動するのは大切です。", "exampleMeaning": "It's important to exercise every day." }
+  ],
+  "exercises": [
+    { "type": "match", "pairs": 5 },
+    { "type": "fill-blank", "items": [
+      { "sentence": "日本では___が人気です。", "answer": "野球", "hint": "Baseball" },
+      { "sentence": "毎朝プールで___ます。", "answer": "泳ぎ", "hint": "To swim" },
+      { "sentence": "毎日___しています。", "answer": "練習", "hint": "Practice" },
+      { "sentence": "今日の試合に___ました。", "answer": "勝ち", "hint": "To win" },
+      { "sentence": "毎日___するのは大切です。", "answer": "運動", "hint": "Exercise" }
+    ]},
+    { "type": "multiple-choice", "items": [
+      { "question": "スポーツをする人を何と言いますか。", "options": ["チーム", "選手", "応援", "練習"], "answer": 1 },
+      { "question": "プールでするスポーツは何ですか。", "options": ["サッカー", "野球", "水泳", "テニス"], "answer": 2 },
+      { "question": "「まける」の意味は何ですか。", "options": ["To win", "To run", "To swim", "To lose"], "answer": 3 },
+      { "question": "バスケットボールをする場所はどこですか。", "options": ["プール", "公園", "体育館", "海"], "answer": 2 },
+      { "question": "「しあい」はどれですか。", "options": ["練習", "試合", "応援", "運動"], "answer": 1 }
+    ]}
+  ]
+}

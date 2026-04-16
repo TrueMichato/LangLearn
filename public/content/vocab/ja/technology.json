@@ -1,0 +1,38 @@
+{
+  "id": "technology",
+  "words": [
+    { "word": "コンピュータ", "reading": "こんぴゅーた", "meaning": "Computer", "example": "新しいコンピュータを買いました。", "exampleMeaning": "I bought a new computer." },
+    { "word": "インターネット", "reading": "いんたーねっと", "meaning": "Internet", "example": "インターネットで調べました。", "exampleMeaning": "I looked it up on the internet." },
+    { "word": "電話", "reading": "でんわ", "meaning": "Phone/Telephone", "example": "友達に電話をかけました。", "exampleMeaning": "I called my friend on the phone." },
+    { "word": "携帯電話", "reading": "けいたいでんわ", "meaning": "Mobile phone", "example": "携帯電話を忘れてしまいました。", "exampleMeaning": "I forgot my mobile phone." },
+    { "word": "メール", "reading": "めーる", "meaning": "Email", "example": "先生にメールを送りました。", "exampleMeaning": "I sent an email to my teacher." },
+    { "word": "写真", "reading": "しゃしん", "meaning": "Photo/Photograph", "example": "携帯電話で写真を撮りました。", "exampleMeaning": "I took a photo with my phone." },
+    { "word": "動画", "reading": "どうが", "meaning": "Video", "example": "面白い動画を見ました。", "exampleMeaning": "I watched a funny video." },
+    { "word": "検索", "reading": "けんさく", "meaning": "Search", "example": "インターネットで検索してください。", "exampleMeaning": "Please search on the internet." },
+    { "word": "画面", "reading": "がめん", "meaning": "Screen", "example": "画面が大きいほうが見やすいです。", "exampleMeaning": "A bigger screen is easier to see." },
+    { "word": "パスワード", "reading": "ぱすわーど", "meaning": "Password", "example": "パスワードを忘れないでください。", "exampleMeaning": "Please don't forget your password." },
+    { "word": "アプリ", "reading": "あぷり", "meaning": "App/Application", "example": "新しいアプリをダウンロードしました。", "exampleMeaning": "I downloaded a new app." },
+    { "word": "データ", "reading": "でーた", "meaning": "Data", "example": "大切なデータを保存しました。", "exampleMeaning": "I saved the important data." },
+    { "word": "ウェブサイト", "reading": "うぇぶさいと", "meaning": "Website", "example": "そのウェブサイトはとても便利です。", "exampleMeaning": "That website is very convenient." },
+    { "word": "プログラム", "reading": "ぷろぐらむ", "meaning": "Program", "example": "新しいプログラムを作っています。", "exampleMeaning": "I am making a new program." },
+    { "word": "ダウンロード", "reading": "だうんろーど", "meaning": "Download", "example": "音楽をダウンロードしました。", "exampleMeaning": "I downloaded music." },
+    { "word": "接続", "reading": "せつぞく", "meaning": "Connection", "example": "インターネットの接続が遅いです。", "exampleMeaning": "The internet connection is slow." }
+  ],
+  "exercises": [
+    { "type": "match", "pairs": 5 },
+    { "type": "fill-blank", "items": [
+      { "sentence": "___で調べました。", "answer": "インターネット", "hint": "Internet" },
+      { "sentence": "友達に___をかけました。", "answer": "電話", "hint": "Phone" },
+      { "sentence": "新しい___をダウンロードしました。", "answer": "アプリ", "hint": "App" },
+      { "sentence": "___を忘れないでください。", "answer": "パスワード", "hint": "Password" },
+      { "sentence": "携帯電話で___を撮りました。", "answer": "写真", "hint": "Photo" }
+    ]},
+    { "type": "multiple-choice", "items": [
+      { "question": "インターネットで情報を探すことを何と言いますか。", "options": ["接続", "検索", "ダウンロード", "データ"], "answer": 1 },
+      { "question": "スマートフォンのアプリケーションの略は何ですか。", "options": ["メール", "アプリ", "プログラム", "データ"], "answer": 1 },
+      { "question": "コンピュータの見る部分を何と言いますか。", "options": ["動画", "写真", "画面", "接続"], "answer": 2 },
+      { "question": "「けいたいでんわ」はどれですか。", "options": ["電話", "携帯電話", "コンピュータ", "メール"], "answer": 1 },
+      { "question": "ウェブサイトを見るために必要なものは何ですか。", "options": ["写真", "動画", "インターネット", "パスワード"], "answer": 2 }
+    ]}
+  ]
+}

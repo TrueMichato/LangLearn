@@ -1,0 +1,38 @@
+{
+  "id": "clothing",
+  "words": [
+    { "word": "シャツ", "reading": "しゃつ", "meaning": "Shirt", "example": "白いシャツを着ています。", "exampleMeaning": "I am wearing a white shirt." },
+    { "word": "ズボン", "reading": "ずぼん", "meaning": "Pants/Trousers", "example": "新しいズボンを買いました。", "exampleMeaning": "I bought new pants." },
+    { "word": "靴", "reading": "くつ", "meaning": "Shoes", "example": "新しい靴を履いています。", "exampleMeaning": "I am wearing new shoes." },
+    { "word": "帽子", "reading": "ぼうし", "meaning": "Hat/Cap", "example": "暑いので帽子をかぶりました。", "exampleMeaning": "I wore a hat because it's hot." },
+    { "word": "コート", "reading": "こーと", "meaning": "Coat", "example": "冬はコートを着ます。", "exampleMeaning": "I wear a coat in winter." },
+    { "word": "スカート", "reading": "すかーと", "meaning": "Skirt", "example": "赤いスカートが好きです。", "exampleMeaning": "I like red skirts." },
+    { "word": "ネクタイ", "reading": "ねくたい", "meaning": "Necktie", "example": "仕事でネクタイをします。", "exampleMeaning": "I wear a necktie at work." },
+    { "word": "靴下", "reading": "くつした", "meaning": "Socks", "example": "靴下が片方ありません。", "exampleMeaning": "I'm missing one sock." },
+    { "word": "手袋", "reading": "てぶくろ", "meaning": "Gloves", "example": "寒いので手袋をしています。", "exampleMeaning": "I'm wearing gloves because it's cold." },
+    { "word": "眼鏡", "reading": "めがね", "meaning": "Glasses", "example": "眼鏡をかけないと見えません。", "exampleMeaning": "I can't see without glasses." },
+    { "word": "腕時計", "reading": "うでどけい", "meaning": "Wristwatch", "example": "父に腕時計をもらいました。", "exampleMeaning": "I received a wristwatch from my father." },
+    { "word": "かばん", "reading": "かばん", "meaning": "Bag", "example": "かばんに本を入れました。", "exampleMeaning": "I put the book in my bag." },
+    { "word": "傘", "reading": "かさ", "meaning": "Umbrella", "example": "雨なので傘を持って行きます。", "exampleMeaning": "It's raining so I'll take an umbrella." },
+    { "word": "指輪", "reading": "ゆびわ", "meaning": "Ring", "example": "きれいな指輪をしています。", "exampleMeaning": "She is wearing a beautiful ring." },
+    { "word": "着る", "reading": "きる", "meaning": "To wear (upper body)", "example": "今日はセーターを着ます。", "exampleMeaning": "I'll wear a sweater today." },
+    { "word": "履く", "reading": "はく", "meaning": "To wear (lower body/feet)", "example": "新しい靴を履きます。", "exampleMeaning": "I'll put on new shoes." }
+  ],
+  "exercises": [
+    { "type": "match", "pairs": 5 },
+    { "type": "fill-blank", "items": [
+      { "sentence": "白い___を着ています。", "answer": "シャツ", "hint": "Shirt" },
+      { "sentence": "新しい___を履いています。", "answer": "靴", "hint": "Shoes" },
+      { "sentence": "寒いので___をしています。", "answer": "手袋", "hint": "Gloves" },
+      { "sentence": "雨なので___を持って行きます。", "answer": "傘", "hint": "Umbrella" },
+      { "sentence": "暑いので___をかぶりました。", "answer": "帽子", "hint": "Hat" }
+    ]},
+    { "type": "multiple-choice", "items": [
+      { "question": "足に身につけるものはどれですか。", "options": ["帽子", "ネクタイ", "靴", "手袋"], "answer": 2 },
+      { "question": "「くつした」はどれですか。", "options": ["靴", "靴下", "手袋", "指輪"], "answer": 1 },
+      { "question": "目が悪い人が使うものは何ですか。", "options": ["腕時計", "帽子", "眼鏡", "指輪"], "answer": 2 },
+      { "question": "シャツを身につけることを何と言いますか。", "options": ["履く", "着る", "かぶる", "する"], "answer": 1 },
+      { "question": "冬に着る長い上着は何ですか。", "options": ["シャツ", "スカート", "コート", "ネクタイ"], "answer": 2 }
+    ]}
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "id": "workplace",
+  "words": [
+    { "word": "会議", "reading": "かいぎ", "meaning": "Meeting", "example": "午後三時から会議があります。", "exampleMeaning": "There's a meeting from 3 PM." },
+    { "word": "社長", "reading": "しゃちょう", "meaning": "Company president", "example": "社長に挨拶をしました。", "exampleMeaning": "I greeted the company president." },
+    { "word": "仕事", "reading": "しごと", "meaning": "Work/Job", "example": "仕事が終わったら連絡します。", "exampleMeaning": "I'll contact you when work is done." },
+    { "word": "会社", "reading": "かいしゃ", "meaning": "Company", "example": "大きい会社で働いています。", "exampleMeaning": "I work at a big company." },
+    { "word": "社員", "reading": "しゃいん", "meaning": "Employee", "example": "この会社には百人の社員がいます。", "exampleMeaning": "This company has 100 employees." },
+    { "word": "上司", "reading": "じょうし", "meaning": "Boss/Superior", "example": "上司に報告しなければなりません。", "exampleMeaning": "I have to report to my boss." },
+    { "word": "同僚", "reading": "どうりょう", "meaning": "Colleague", "example": "同僚と一緒に昼ご飯を食べました。", "exampleMeaning": "I ate lunch with my colleague." },
+    { "word": "名刺", "reading": "めいし", "meaning": "Business card", "example": "名刺を交換しましょう。", "exampleMeaning": "Let's exchange business cards." },
+    { "word": "残業", "reading": "ざんぎょう", "meaning": "Overtime work", "example": "今日は残業しなければなりません。", "exampleMeaning": "I have to work overtime today." },
+    { "word": "出張", "reading": "しゅっちょう", "meaning": "Business trip", "example": "来週大阪に出張します。", "exampleMeaning": "I'm going on a business trip to Osaka next week." },
+    { "word": "給料", "reading": "きゅうりょう", "meaning": "Salary", "example": "来月から給料が上がります。", "exampleMeaning": "My salary will increase from next month." },
+    { "word": "休憩", "reading": "きゅうけい", "meaning": "Break/Rest", "example": "少し休憩しましょう。", "exampleMeaning": "Let's take a short break." },
+    { "word": "書類", "reading": "しょるい", "meaning": "Documents", "example": "書類を提出してください。", "exampleMeaning": "Please submit the documents." },
+    { "word": "面接", "reading": "めんせつ", "meaning": "Interview", "example": "明日面接があります。", "exampleMeaning": "I have an interview tomorrow." },
+    { "word": "プロジェクト", "reading": "ぷろじぇくと", "meaning": "Project", "example": "新しいプロジェクトが始まりました。", "exampleMeaning": "A new project has started." },
+    { "word": "締め切り", "reading": "しめきり", "meaning": "Deadline", "example": "締め切りは金曜日です。", "exampleMeaning": "The deadline is Friday." }
+  ],
+  "exercises": [
+    { "type": "match", "pairs": 5 },
+    { "type": "fill-blank", "items": [
+      { "sentence": "午後三時から___があります。", "answer": "会議", "hint": "Meeting" },
+      { "sentence": "大きい___で働いています。", "answer": "会社", "hint": "Company" },
+      { "sentence": "___を交換しましょう。", "answer": "名刺", "hint": "Business card" },
+      { "sentence": "今日は___しなければなりません。", "answer": "残業", "hint": "Overtime" },
+      { "sentence": "___は金曜日です。", "answer": "締め切り", "hint": "Deadline" }
+    ]},
+    { "type": "multiple-choice", "items": [
+      { "question": "会社の一番上の人を何と言いますか。", "options": ["社員", "同僚", "上司", "社長"], "answer": 3 },
+      { "question": "「ざんぎょう」はどれですか。", "options": ["出張", "残業", "休憩", "給料"], "answer": 1 },
+      { "question": "仕事のために他の場所に行くことを何と言いますか。", "options": ["残業", "休憩", "出張", "面接"], "answer": 2 },
+      { "question": "毎月もらうお金を何と言いますか。", "options": ["名刺", "書類", "締め切り", "給料"], "answer": 3 },
+      { "question": "「どうりょう」の意味は何ですか。", "options": ["Boss", "Employee", "Colleague", "President"], "answer": 2 }
+    ]}
+  ]
+}

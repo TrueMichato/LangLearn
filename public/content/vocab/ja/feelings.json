@@ -1,0 +1,38 @@
+{
+  "id": "feelings",
+  "words": [
+    { "word": "優しい", "reading": "やさしい", "meaning": "Kind/Gentle", "example": "彼女はとても優しい人です。", "exampleMeaning": "She is a very kind person." },
+    { "word": "厳しい", "reading": "きびしい", "meaning": "Strict/Harsh", "example": "先生は厳しいですが、いい先生です。", "exampleMeaning": "The teacher is strict but a good teacher." },
+    { "word": "寂しい", "reading": "さびしい", "meaning": "Lonely", "example": "一人で寂しいです。", "exampleMeaning": "I'm lonely being alone." },
+    { "word": "恥ずかしい", "reading": "はずかしい", "meaning": "Embarrassed/Shy", "example": "みんなの前で話すのは恥ずかしいです。", "exampleMeaning": "It's embarrassing to speak in front of everyone." },
+    { "word": "懐かしい", "reading": "なつかしい", "meaning": "Nostalgic", "example": "この写真を見ると懐かしいです。", "exampleMeaning": "Looking at this photo makes me feel nostalgic." },
+    { "word": "真面目", "reading": "まじめ", "meaning": "Serious/Earnest", "example": "彼はとても真面目な学生です。", "exampleMeaning": "He is a very serious student." },
+    { "word": "明るい", "reading": "あかるい", "meaning": "Bright/Cheerful", "example": "彼女は明るい性格です。", "exampleMeaning": "She has a cheerful personality." },
+    { "word": "大人しい", "reading": "おとなしい", "meaning": "Quiet/Gentle", "example": "あの子はとても大人しいです。", "exampleMeaning": "That child is very quiet." },
+    { "word": "勇気", "reading": "ゆうき", "meaning": "Courage", "example": "勇気を出して話しかけました。", "exampleMeaning": "I gathered my courage and spoke to them." },
+    { "word": "自信", "reading": "じしん", "meaning": "Confidence", "example": "自信を持ってください。", "exampleMeaning": "Please have confidence." },
+    { "word": "我慢", "reading": "がまん", "meaning": "Patience/Endurance", "example": "もう少し我慢してください。", "exampleMeaning": "Please be patient a little longer." },
+    { "word": "感動", "reading": "かんどう", "meaning": "Being moved/Impressed", "example": "映画に感動しました。", "exampleMeaning": "I was moved by the movie." },
+    { "word": "不安", "reading": "ふあん", "meaning": "Anxiety/Worry", "example": "試験の結果が不安です。", "exampleMeaning": "I'm anxious about the exam results." },
+    { "word": "誇り", "reading": "ほこり", "meaning": "Pride", "example": "日本の文化に誇りを持っています。", "exampleMeaning": "I take pride in Japanese culture." },
+    { "word": "思いやり", "reading": "おもいやり", "meaning": "Consideration/Compassion", "example": "思いやりのある人になりたいです。", "exampleMeaning": "I want to become a considerate person." },
+    { "word": "緊張", "reading": "きんちょう", "meaning": "Nervous/Tension", "example": "面接の前に緊張しました。", "exampleMeaning": "I was nervous before the interview." }
+  ],
+  "exercises": [
+    { "type": "match", "pairs": 5 },
+    { "type": "fill-blank", "items": [
+      { "sentence": "彼女はとても___人です。", "answer": "優しい", "hint": "Kind" },
+      { "sentence": "一人で___です。", "answer": "寂しい", "hint": "Lonely" },
+      { "sentence": "___を出して話しかけました。", "answer": "勇気", "hint": "Courage" },
+      { "sentence": "面接の前に___しました。", "answer": "緊張", "hint": "Nervous" },
+      { "sentence": "もう少し___してください。", "answer": "我慢", "hint": "Patience" }
+    ]},
+    { "type": "multiple-choice", "items": [
+      { "question": "「やさしい」はどれですか。", "options": ["厳しい", "優しい", "寂しい", "恥ずかしい"], "answer": 1 },
+      { "question": "昔を思い出して感じる気持ちは何ですか。", "options": ["寂しい", "恥ずかしい", "懐かしい", "不安"], "answer": 2 },
+      { "question": "「まじめ」の意味は何ですか。", "options": ["Kind", "Serious", "Cheerful", "Quiet"], "answer": 1 },
+      { "question": "映画を見て心が動かされたことを何と言いますか。", "options": ["緊張", "不安", "我慢", "感動"], "answer": 3 },
+      { "question": "「きびしい」はどれですか。", "options": ["優しい", "明るい", "厳しい", "大人しい"], "answer": 2 }
+    ]}
+  ]
+}

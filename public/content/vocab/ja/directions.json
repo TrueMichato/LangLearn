@@ -1,0 +1,38 @@
+{
+  "id": "directions",
+  "words": [
+    { "word": "右", "reading": "みぎ", "meaning": "Right", "example": "次の角を右に曲がってください。", "exampleMeaning": "Please turn right at the next corner." },
+    { "word": "左", "reading": "ひだり", "meaning": "Left", "example": "左に郵便局があります。", "exampleMeaning": "There's a post office on the left." },
+    { "word": "まっすぐ", "reading": "まっすぐ", "meaning": "Straight", "example": "この道をまっすぐ行ってください。", "exampleMeaning": "Please go straight on this road." },
+    { "word": "前", "reading": "まえ", "meaning": "Front/In front of", "example": "駅の前にバス停があります。", "exampleMeaning": "There's a bus stop in front of the station." },
+    { "word": "後ろ", "reading": "うしろ", "meaning": "Behind/Back", "example": "学校の後ろに公園があります。", "exampleMeaning": "There's a park behind the school." },
+    { "word": "隣", "reading": "となり", "meaning": "Next to/Beside", "example": "銀行の隣にコンビニがあります。", "exampleMeaning": "There's a convenience store next to the bank." },
+    { "word": "近く", "reading": "ちかく", "meaning": "Near/Nearby", "example": "駅の近くに住んでいます。", "exampleMeaning": "I live near the station." },
+    { "word": "遠い", "reading": "とおい", "meaning": "Far", "example": "空港はここから遠いです。", "exampleMeaning": "The airport is far from here." },
+    { "word": "交差点", "reading": "こうさてん", "meaning": "Intersection", "example": "交差点を渡ってください。", "exampleMeaning": "Please cross the intersection." },
+    { "word": "信号", "reading": "しんごう", "meaning": "Traffic light", "example": "信号が青になったら渡ります。", "exampleMeaning": "I'll cross when the light turns green." },
+    { "word": "角", "reading": "かど", "meaning": "Corner", "example": "角を曲がると見えます。", "exampleMeaning": "You'll see it when you turn the corner." },
+    { "word": "橋", "reading": "はし", "meaning": "Bridge", "example": "橋を渡ってください。", "exampleMeaning": "Please cross the bridge." },
+    { "word": "地図", "reading": "ちず", "meaning": "Map", "example": "地図を見せてください。", "exampleMeaning": "Please show me the map." },
+    { "word": "道", "reading": "みち", "meaning": "Road/Path", "example": "この道は駅に続いています。", "exampleMeaning": "This road leads to the station." },
+    { "word": "向かい", "reading": "むかい", "meaning": "Opposite/Across from", "example": "向かいにレストランがあります。", "exampleMeaning": "There's a restaurant across the street." },
+    { "word": "曲がる", "reading": "まがる", "meaning": "To turn", "example": "二つ目の角を左に曲がってください。", "exampleMeaning": "Please turn left at the second corner." }
+  ],
+  "exercises": [
+    { "type": "match", "pairs": 5 },
+    { "type": "fill-blank", "items": [
+      { "sentence": "次の角を___に曲がってください。", "answer": "右", "hint": "Right" },
+      { "sentence": "この道を___行ってください。", "answer": "まっすぐ", "hint": "Straight" },
+      { "sentence": "駅の___にバス停があります。", "answer": "前", "hint": "Front" },
+      { "sentence": "___を見せてください。", "answer": "地図", "hint": "Map" },
+      { "sentence": "___が青になったら渡ります。", "answer": "信号", "hint": "Traffic light" }
+    ]},
+    { "type": "multiple-choice", "items": [
+      { "question": "「ひだり」はどれですか。", "options": ["右", "左", "前", "後ろ"], "answer": 1 },
+      { "question": "二つの道が交わる場所を何と言いますか。", "options": ["角", "橋", "交差点", "信号"], "answer": 2 },
+      { "question": "川を渡るために使うものは何ですか。", "options": ["道", "橋", "角", "信号"], "answer": 1 },
+      { "question": "「とおい」の反対は何ですか。", "options": ["隣", "近い", "前", "後ろ"], "answer": 1 },
+      { "question": "「まがる」の意味は何ですか。", "options": ["To cross", "To walk", "To turn", "To stop"], "answer": 2 }
+    ]}
+  ]
+}

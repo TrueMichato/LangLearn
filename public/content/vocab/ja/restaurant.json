@@ -1,0 +1,39 @@
+{
+  "id": "restaurant",
+  "words": [
+    { "word": "メニュー", "reading": "めにゅー", "meaning": "Menu", "example": "メニューを見せてください。", "exampleMeaning": "Please show me the menu." },
+    { "word": "注文", "reading": "ちゅうもん", "meaning": "Order", "example": "注文してもいいですか。", "exampleMeaning": "May I order?" },
+    { "word": "会計", "reading": "かいけい", "meaning": "Bill/Check", "example": "会計をお願いします。", "exampleMeaning": "The check, please." },
+    { "word": "予約", "reading": "よやく", "meaning": "Reservation", "example": "レストランを予約しました。", "exampleMeaning": "I made a reservation at the restaurant." },
+    { "word": "席", "reading": "せき", "meaning": "Seat", "example": "窓側の席がいいです。", "exampleMeaning": "I'd like a window seat." },
+    { "word": "店員", "reading": "てんいん", "meaning": "Store clerk/Waiter", "example": "店員さんを呼びましょう。", "exampleMeaning": "Let's call the waiter." },
+    { "word": "料理", "reading": "りょうり", "meaning": "Cooking/Dish", "example": "この料理はおいしいです。", "exampleMeaning": "This dish is delicious." },
+    { "word": "飲み物", "reading": "のみもの", "meaning": "Drink/Beverage", "example": "飲み物は何にしますか。", "exampleMeaning": "What would you like to drink?" },
+    { "word": "デザート", "reading": "でざーと", "meaning": "Dessert", "example": "デザートにケーキを食べました。", "exampleMeaning": "I had cake for dessert." },
+    { "word": "おすすめ", "reading": "おすすめ", "meaning": "Recommendation", "example": "今日のおすすめは何ですか。", "exampleMeaning": "What's today's recommendation?" },
+    { "word": "定食", "reading": "ていしょく", "meaning": "Set meal", "example": "焼き魚定食をお願いします。", "exampleMeaning": "I'll have the grilled fish set meal." },
+    { "word": "お箸", "reading": "おはし", "meaning": "Chopsticks", "example": "お箸の使い方を教えてください。", "exampleMeaning": "Please teach me how to use chopsticks." },
+    { "word": "お皿", "reading": "おさら", "meaning": "Plate/Dish", "example": "お皿を下げてもいいですか。", "exampleMeaning": "May I clear the plates?" },
+    { "word": "お水", "reading": "おみず", "meaning": "Water", "example": "お水をお願いします。", "exampleMeaning": "Water, please." },
+    { "word": "美味しい", "reading": "おいしい", "meaning": "Delicious", "example": "この寿司はとても美味しいです。", "exampleMeaning": "This sushi is very delicious." },
+    { "word": "辛い", "reading": "からい", "meaning": "Spicy", "example": "この料理は辛いですか。", "exampleMeaning": "Is this dish spicy?" },
+    { "word": "お会計", "reading": "おかいけい", "meaning": "Check (polite)", "example": "お会計は別々でお願いします。", "exampleMeaning": "Separate checks, please." }
+  ],
+  "exercises": [
+    { "type": "match", "pairs": 5 },
+    { "type": "fill-blank", "items": [
+      { "sentence": "___を見せてください。", "answer": "メニュー", "hint": "Menu" },
+      { "sentence": "___をお願いします。", "answer": "会計", "hint": "Bill" },
+      { "sentence": "レストランを___しました。", "answer": "予約", "hint": "Reservation" },
+      { "sentence": "今日の___は何ですか。", "answer": "おすすめ", "hint": "Recommendation" },
+      { "sentence": "この料理は___ですか。", "answer": "辛い", "hint": "Spicy" }
+    ]},
+    { "type": "multiple-choice", "items": [
+      { "question": "レストランで食べたい物を伝えることを何と言いますか。", "options": ["予約", "会計", "注文", "おすすめ"], "answer": 2 },
+      { "question": "「おいしい」の意味は何ですか。", "options": ["Spicy", "Sweet", "Delicious", "Salty"], "answer": 2 },
+      { "question": "日本料理を食べる時に使うものは何ですか。", "options": ["お皿", "お箸", "お水", "メニュー"], "answer": 1 },
+      { "question": "食事の後に食べる甘いものを何と言いますか。", "options": ["定食", "料理", "飲み物", "デザート"], "answer": 3 },
+      { "question": "レストランで働いている人を何と言いますか。", "options": ["店員", "選手", "医者", "先生"], "answer": 0 }
+    ]}
+  ]
+}
