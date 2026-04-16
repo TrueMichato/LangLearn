@@ -99,4 +99,14 @@ db.version(3).stores({
   lessonProgress: 'id, language, lessonId',
 });
 
+db.version(4).stores({
+  words: '++id, [language+createdAt], language, word, createdAt, *tags',
+  reviews: '++id, [wordId+nextReviewDate], wordId, nextReviewDate',
+  texts: '++id, language, createdAt',
+  studySessions: '++id, startTime, activity',
+  settings: 'key',
+  dailyActivity: 'date, goalMet',
+  lessonProgress: 'id, language, lessonId',
+});
+
 export { db };
