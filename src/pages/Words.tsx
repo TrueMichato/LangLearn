@@ -4,6 +4,7 @@ import { searchWords, updateWord, deleteWord, type WordFilter } from '../db/word
 import { db, type Word, type Review } from '../db/schema';
 import { useSettingsStore } from '../stores/settingsStore';
 import AddWordModal from '../components/srs/AddWordModal';
+import { getLanguageLabel } from '../lib/languages';
 
 type StatusFilter = 'all' | 'learning' | 'mature' | 'due';
 
@@ -136,7 +137,7 @@ export default function WordsPage() {
             className={`${chipBase} ${language === lang ? chipActive : chipInactive}`}
             onClick={() => setLanguage(lang === language ? undefined : lang)}
           >
-            {lang.toUpperCase()}
+            {getLanguageLabel(lang)}
           </button>
         ))}
       </div>

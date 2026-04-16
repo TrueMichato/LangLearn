@@ -3,6 +3,7 @@ import { useSettingsStore } from '../../stores/settingsStore';
 import { exportDeck } from '../../lib/decks';
 import { downloadJson } from '../../db/backup';
 import { db } from '../../db/schema';
+import { getLanguageLabel } from '../../lib/languages';
 
 export default function DeckExport() {
   const { activeLanguages } = useSettingsStore();
@@ -55,7 +56,7 @@ export default function DeckExport() {
       >
         <option value="">Select language</option>
         {activeLanguages.map((lang) => (
-          <option key={lang} value={lang}>{lang.toUpperCase()}</option>
+          <option key={lang} value={lang}>{getLanguageLabel(lang)}</option>
         ))}
       </select>
 

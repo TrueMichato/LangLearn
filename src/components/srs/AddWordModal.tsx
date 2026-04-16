@@ -3,6 +3,7 @@ import { useSettingsStore } from '../../stores/settingsStore';
 import { addWord } from '../../db/words';
 import { lookupWord } from '../../lib/dictionary';
 import { speak, isTTSSupported } from '../../lib/tts';
+import { getLanguageLabel } from '../../lib/languages';
 
 interface AddWordModalProps {
   isOpen: boolean;
@@ -127,7 +128,7 @@ export default function AddWordModal({ isOpen, onClose }: AddWordModalProps) {
             >
               {activeLanguages.map((lang) => (
                 <option key={lang} value={lang}>
-                  {lang.toUpperCase()}
+                  {getLanguageLabel(lang)}
                 </option>
               ))}
             </select>

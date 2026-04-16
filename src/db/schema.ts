@@ -62,6 +62,17 @@ export interface LessonProgress {
   attempts: number;
 }
 
+export interface CharacterProgress {
+  id: string;           // `${language}/${alphabetName}/${char}` e.g. "ja/Hiragana/あ"
+  language: string;
+  character: string;
+  romanji: string;
+  correctCount: number;
+  totalAttempts: number;
+  lastPracticed: string; // ISO date
+  mastery: 'new' | 'learning' | 'mastered';
+}
+
 const db = new Dexie('LangLearnDB') as Dexie & {
   words: EntityTable<Word, 'id'>;
   reviews: EntityTable<Review, 'id'>;
@@ -70,6 +81,7 @@ const db = new Dexie('LangLearnDB') as Dexie & {
   settings: EntityTable<Setting, 'key'>;
   dailyActivity: EntityTable<DailyActivity, 'date'>;
   lessonProgress: EntityTable<LessonProgress, 'id'>;
+  characterProgress: EntityTable<CharacterProgress, 'id'>;
 };
 
 db.version(1).stores({
@@ -107,6 +119,17 @@ db.version(4).stores({
   settings: 'key',
   dailyActivity: 'date, goalMet',
   lessonProgress: 'id, language, lessonId',
+});
+
+db.version(5).stores({
+  words: '++id, [language+createdAt], language, word, createdAt, *tags',
+  reviews: '++id, [wordId+nextReviewDate], wordId, nextReviewDate',
+  texts: '++id, language, createdAt',
+  studySessions: '++id, startTime, activity',
+  settings: 'key',
+  dailyActivity: 'date, goalMet',
+  lessonProgress: 'id, language, lessonId',
+  characterProgress: 'id, language, mastery',
 });
 
 export { db };

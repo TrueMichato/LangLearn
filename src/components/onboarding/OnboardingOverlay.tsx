@@ -1,10 +1,8 @@
 import { useState, useRef } from 'react';
 import { useSettingsStore } from '../../stores/settingsStore';
+import { LANGUAGES } from '../../lib/languages';
 
-const KNOWN_LANGUAGES = [
-  { code: 'ja', label: 'Japanese 🇯🇵' },
-  { code: 'ru', label: 'Russian 🇷🇺' },
-];
+const KNOWN_LANGUAGES = Object.values(LANGUAGES).map(l => ({ code: l.code, label: `${l.name} ${l.flag}` }));
 
 const TOTAL_STEPS = 4;
 

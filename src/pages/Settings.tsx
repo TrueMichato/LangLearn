@@ -4,6 +4,7 @@ import { exportAllData, importAllData, downloadJson } from '../db/backup';
 import DeckExport from '../components/common/DeckExport';
 import DeckImport from '../components/common/DeckImport';
 import NotificationSettings from '../components/settings/NotificationSettings';
+import { LANGUAGES, getLanguageLabel } from '../lib/languages';
 
 export default function SettingsPage() {
   const { weeklyGoalMinutes, setWeeklyGoal, activeLanguages, addLanguage, removeLanguage, showStressMarks, toggleStressMarks, darkMode, toggleDarkMode, fontSize, setFontSize, ttsRate, setTtsRate, reviewBatchSize, setReviewBatchSize } =
@@ -30,16 +31,7 @@ export default function SettingsPage() {
     }
   };
 
-  const languageOptions = [
-    { code: 'ja', name: 'Japanese 🇯🇵' },
-    { code: 'ru', name: 'Russian 🇷🇺' },
-    { code: 'en', name: 'English 🇬🇧' },
-    { code: 'es', name: 'Spanish 🇪🇸' },
-    { code: 'fr', name: 'French 🇫🇷' },
-    { code: 'de', name: 'German 🇩🇪' },
-    { code: 'zh', name: 'Chinese 🇨🇳' },
-    { code: 'ko', name: 'Korean 🇰🇷' },
-  ];
+  const languageOptions = Object.values(LANGUAGES);
 
   return (
     <div className="space-y-6">
@@ -106,7 +98,7 @@ export default function SettingsPage() {
                     : 'bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-600'
                 }`}
               >
-                {lang.name}
+                {getLanguageLabel(lang.code)}
               </button>
             );
           })}

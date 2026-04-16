@@ -15,23 +15,6 @@ interface LangStat {
 interface LanguageStatsProps {
   languages: string[];
 }
-  en: '🇬🇧 English',
-  es: '🇪🇸 Spanish',
-  fr: '🇫🇷 French',
-  de: '🇩🇪 German',
-  zh: '🇨🇳 Chinese',
-  ko: '🇰🇷 Korean',
-  pt: '🇧🇷 Portuguese',
-  it: '🇮🇹 Italian',
-  ar: '🇸🇦 Arabic',
-  hi: '🇮🇳 Hindi',
-  tr: '🇹🇷 Turkish',
-  pl: '🇵🇱 Polish',
-  nl: '🇳🇱 Dutch',
-  sv: '🇸🇪 Swedish',
-  uk: '🇺🇦 Ukrainian',
-  he: '🇮🇱 Hebrew',
-};
 
 function getHealthIndicator(ease: number): { label: string; emoji: string } {
   if (ease >= 2.5) return { label: 'Great', emoji: '💚' };
@@ -95,7 +78,7 @@ export default function LanguageStats({ languages }: LanguageStatsProps) {
       <div className="grid grid-cols-1 gap-3">
         {languages.map((lang) => {
           const stat = langStats.get(lang);
-          const label = LANG_LABELS[lang] ?? lang.toUpperCase();
+          const label = getLanguageLabel(lang);
 
           if (!stat || stat.total === 0) {
             return (

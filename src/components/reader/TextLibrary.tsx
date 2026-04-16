@@ -2,17 +2,7 @@ import { useState, useEffect } from 'react';
 import type { Text } from '../../db/schema';
 import { getAllTexts, deleteText } from '../../db/texts';
 import { relativeDate } from '../../lib/dates';
-
-const LANGUAGE_LABELS: Record<string, string> = {
-  ja: '🇯🇵 JA',
-  ru: '🇷🇺 RU',
-  en: '🇬🇧 EN',
-  es: '🇪🇸 ES',
-  fr: '🇫🇷 FR',
-  de: '🇩🇪 DE',
-  zh: '🇨🇳 ZH',
-  ko: '🇰🇷 KO',
-};
+import { getLanguageLabel } from '../../lib/languages';
 
 const LANGUAGE_COLORS: Record<string, string> = {
   ja: 'bg-red-100 text-red-700 dark:bg-red-900 dark:text-red-300',
@@ -82,7 +72,7 @@ export default function TextLibrary({ onSelectText }: TextLibraryProps) {
         <option value="">All languages</option>
         {uniqueLangs.map((lang) => (
           <option key={lang} value={lang}>
-            {LANGUAGE_LABELS[lang] || lang.toUpperCase()}
+            {getLanguageLabel(lang)}
           </option>
         ))}
       </select>
@@ -112,7 +102,7 @@ export default function TextLibrary({ onSelectText }: TextLibraryProps) {
                         LANGUAGE_COLORS[t.language] || 'bg-gray-100 text-gray-700 dark:bg-gray-700 dark:text-gray-300'
                       }`}
                     >
-                      {LANGUAGE_LABELS[t.language] || t.language.toUpperCase()}
+                      {getLanguageLabel(t.language)}
                     </span>
                   </div>
                   <p className="text-sm text-gray-500 dark:text-gray-400 line-clamp-2 mb-2">

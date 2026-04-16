@@ -1,0 +1,33 @@
+{
+  "id": "greetings",
+  "words": [
+    { "word": "こんにちは", "reading": "konnichiwa", "meaning": "Hello (daytime)", "example": "こんにちは、元気ですか？", "exampleMeaning": "Hello, how are you?" },
+    { "word": "おはようございます", "reading": "ohayou gozaimasu", "meaning": "Good morning (polite)", "example": "おはようございます、先生。", "exampleMeaning": "Good morning, teacher." },
+    { "word": "こんばんは", "reading": "konbanwa", "meaning": "Good evening", "example": "こんばんは、お元気ですか？", "exampleMeaning": "Good evening, how are you?" },
+    { "word": "さようなら", "reading": "sayounara", "meaning": "Goodbye", "example": "さようなら、また明日。", "exampleMeaning": "Goodbye, see you tomorrow." },
+    { "word": "ありがとうございます", "reading": "arigatou gozaimasu", "meaning": "Thank you (polite)", "example": "手伝ってくれて、ありがとうございます。", "exampleMeaning": "Thank you for helping me." },
+    { "word": "すみません", "reading": "sumimasen", "meaning": "Excuse me / Sorry", "example": "すみません、駅はどこですか？", "exampleMeaning": "Excuse me, where is the station?" },
+    { "word": "はい", "reading": "hai", "meaning": "Yes", "example": "はい、分かりました。", "exampleMeaning": "Yes, I understand." },
+    { "word": "いいえ", "reading": "iie", "meaning": "No", "example": "いいえ、結構です。", "exampleMeaning": "No, that's fine." },
+    { "word": "お願いします", "reading": "onegai shimasu", "meaning": "Please", "example": "水をお願いします。", "exampleMeaning": "Water, please." },
+    { "word": "はじめまして", "reading": "hajimemashite", "meaning": "Nice to meet you", "example": "はじめまして、田中です。", "exampleMeaning": "Nice to meet you, I'm Tanaka." },
+    { "word": "どうぞよろしく", "reading": "douzo yoroshiku", "meaning": "Please treat me well", "example": "どうぞよろしくお願いします。", "exampleMeaning": "I look forward to working with you." },
+    { "word": "お元気ですか", "reading": "ogenki desu ka", "meaning": "How are you?", "example": "お元気ですか？ — 元気です。", "exampleMeaning": "How are you? — I'm fine." },
+    { "word": "名前", "reading": "namae", "meaning": "Name", "example": "お名前は何ですか？", "exampleMeaning": "What is your name?" },
+    { "word": "私", "reading": "watashi", "meaning": "I / Me", "example": "私は学生です。", "exampleMeaning": "I am a student." },
+    { "word": "友達", "reading": "tomodachi", "meaning": "Friend", "example": "彼は私の友達です。", "exampleMeaning": "He is my friend." }
+  ],
+  "exercises": [
+    { "type": "match", "pairs": 5 },
+    { "type": "fill-blank", "items": [
+      { "sentence": "___、元気ですか？", "answer": "こんにちは", "hint": "Hello (daytime)" },
+      { "sentence": "手伝ってくれて、___。", "answer": "ありがとうございます", "hint": "Thank you (polite)" },
+      { "sentence": "___、駅はどこですか？", "answer": "すみません", "hint": "Excuse me" }
+    ]},
+    { "type": "multiple-choice", "items": [
+      { "question": "How do you say 'Nice to meet you'?", "options": ["はじめまして", "さようなら", "すみません", "ありがとう"], "answer": 0 },
+      { "question": "What does 'お願いします' mean?", "options": ["Please", "Thank you", "Sorry", "Hello"], "answer": 0 },
+      { "question": "How do you say 'Goodbye'?", "options": ["さようなら", "こんにちは", "おはよう", "こんばんは"], "answer": 0 }
+    ]}
+  ]
+}

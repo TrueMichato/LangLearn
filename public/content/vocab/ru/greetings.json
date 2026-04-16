@@ -1,0 +1,33 @@
+{
+  "id": "greetings",
+  "words": [
+    { "word": "Здравствуйте", "reading": "zdravstvuyte", "meaning": "Hello (formal)", "example": "Здравствуйте, как дела?", "exampleMeaning": "Hello, how are you?" },
+    { "word": "Привет", "reading": "privet", "meaning": "Hi (informal)", "example": "Привет, как дела?", "exampleMeaning": "Hi, how are you?" },
+    { "word": "Доброе утро", "reading": "dobroye utro", "meaning": "Good morning", "example": "Доброе утро, коллеги!", "exampleMeaning": "Good morning, colleagues!" },
+    { "word": "Добрый вечер", "reading": "dobryy vecher", "meaning": "Good evening", "example": "Добрый вечер, друзья.", "exampleMeaning": "Good evening, friends." },
+    { "word": "До свидания", "reading": "do svidaniya", "meaning": "Goodbye (formal)", "example": "До свидания, увидимся завтра.", "exampleMeaning": "Goodbye, see you tomorrow." },
+    { "word": "Пока", "reading": "poka", "meaning": "Bye (informal)", "example": "Пока, до завтра!", "exampleMeaning": "Bye, see you tomorrow!" },
+    { "word": "Спасибо", "reading": "spasibo", "meaning": "Thank you", "example": "Спасибо за помощь.", "exampleMeaning": "Thank you for the help." },
+    { "word": "Пожалуйста", "reading": "pozhaluysta", "meaning": "Please / You're welcome", "example": "Пожалуйста, помогите мне.", "exampleMeaning": "Please help me." },
+    { "word": "Извините", "reading": "izvinite", "meaning": "Excuse me / Sorry", "example": "Извините, где метро?", "exampleMeaning": "Excuse me, where is the metro?" },
+    { "word": "Да", "reading": "da", "meaning": "Yes", "example": "Да, я понимаю.", "exampleMeaning": "Yes, I understand." },
+    { "word": "Нет", "reading": "net", "meaning": "No", "example": "Нет, спасибо.", "exampleMeaning": "No, thank you." },
+    { "word": "Очень приятно", "reading": "ochen' priyatno", "meaning": "Nice to meet you", "example": "Очень приятно познакомиться.", "exampleMeaning": "Very nice to meet you." },
+    { "word": "Как вас зовут?", "reading": "kak vas zovut?", "meaning": "What is your name?", "example": "Как вас зовут? — Меня зовут Анна.", "exampleMeaning": "What is your name? — My name is Anna." },
+    { "word": "Друг", "reading": "drug", "meaning": "Friend", "example": "Он мой лучший друг.", "exampleMeaning": "He is my best friend." },
+    { "word": "Я", "reading": "ya", "meaning": "I / Me", "example": "Я студент.", "exampleMeaning": "I am a student." }
+  ],
+  "exercises": [
+    { "type": "match", "pairs": 5 },
+    { "type": "fill-blank", "items": [
+      { "sentence": "___, как дела?", "answer": "Привет", "hint": "Hi (informal)" },
+      { "sentence": "___ за помощь.", "answer": "Спасибо", "hint": "Thank you" },
+      { "sentence": "___, где метро?", "answer": "Извините", "hint": "Excuse me" }
+    ]},
+    { "type": "multiple-choice", "items": [
+      { "question": "How do you say 'Nice to meet you'?", "options": ["Очень приятно", "До свидания", "Извините", "Спасибо"], "answer": 0 },
+      { "question": "What does 'Пожалуйста' mean?", "options": ["Please / You're welcome", "Thank you", "Sorry", "Hello"], "answer": 0 },
+      { "question": "How do you say 'Goodbye' formally?", "options": ["До свидания", "Привет", "Доброе утро", "Добрый вечер"], "answer": 0 }
+    ]}
+  ]
+}

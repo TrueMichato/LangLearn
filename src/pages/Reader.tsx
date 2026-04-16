@@ -11,6 +11,7 @@ import type { Token } from '../lib/tokenizer';
 import FuriganaText from '../components/reader/FuriganaText';
 import { applyStress } from '../lib/russian-stress';
 import { splitSentences, findSentenceAt, type SentenceSpan } from '../lib/sentences';
+import { getLanguageLabel } from '../lib/languages';
 
 type Tab = 'import' | 'library';
 
@@ -19,7 +20,8 @@ export default function ReaderPage() {
   const [tabReady, setTabReady] = useState(false);
   const [text, setText] = useState('');
   const [title, setTitle] = useState('');
-  const [language, setLanguage] = useState('ja');
+  const activeLanguages = useSettingsStore((s) => s.activeLanguages);
+  const [language, setLanguage] = useState(activeLanguages[0] ?? 'ja');
   const [savedTextId, setSavedTextId] = useState<number | null>(null);
   const [tokens, setTokens] = useState<string[]>([]);
   const [tokenOffsets, setTokenOffsets] = useState<number[]>([]);
@@ -257,14 +259,9 @@ export default function ReaderPage() {
           onChange={(e) => setLanguage(e.target.value)}
           className="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-xl focus:outline-none focus:ring-2 focus:ring-indigo-300 dark:focus:ring-indigo-700 bg-white dark:bg-gray-800 dark:text-gray-100"
         >
-          <option value="ja">Japanese 🇯🇵</option>
-          <option value="ru">Russian 🇷🇺</option>
-          <option value="en">English 🇬🇧</option>
-          <option value="es">Spanish 🇪🇸</option>
-          <option value="fr">French 🇫🇷</option>
-          <option value="de">German 🇩🇪</option>
-          <option value="zh">Chinese 🇨🇳</option>
-          <option value="ko">Korean 🇰🇷</option>
+          {activeLanguages.map((code) => (
+            <option key={code} value={code}>{getLanguageLabel(code)}</option>
+          ))}
         </select>
         <textarea
           placeholder="Paste your text here..."

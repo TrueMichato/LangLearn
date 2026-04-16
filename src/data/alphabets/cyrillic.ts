@@ -1,0 +1,40 @@
+import type { Character } from './hiragana';
+
+export const CYRILLIC: Character[] = [
+  // Vowels
+  { char: 'А', romanji: 'a', group: 'Vowels', strokes: 3 },
+  { char: 'Е', romanji: 'ye', group: 'Vowels', strokes: 2 },
+  { char: 'Ё', romanji: 'yo', group: 'Vowels', strokes: 2 },
+  { char: 'И', romanji: 'i', group: 'Vowels', strokes: 3 },
+  { char: 'О', romanji: 'o', group: 'Vowels', strokes: 1 },
+  { char: 'У', romanji: 'u', group: 'Vowels', strokes: 2 },
+  { char: 'Ы', romanji: 'y', group: 'Vowels', strokes: 3 },
+  { char: 'Э', romanji: 'e', group: 'Vowels', strokes: 2 },
+  { char: 'Ю', romanji: 'yu', group: 'Vowels', strokes: 3 },
+  { char: 'Я', romanji: 'ya', group: 'Vowels', strokes: 3 },
+  // Consonants
+  { char: 'Б', romanji: 'b', group: 'Consonants', strokes: 2 },
+  { char: 'В', romanji: 'v', group: 'Consonants', strokes: 2 },
+  { char: 'Г', romanji: 'g', group: 'Consonants', strokes: 2 },
+  { char: 'Д', romanji: 'd', group: 'Consonants', strokes: 3 },
+  { char: 'Ж', romanji: 'zh', group: 'Consonants', strokes: 3 },
+  { char: 'З', romanji: 'z', group: 'Consonants', strokes: 1 },
+  { char: 'Й', romanji: 'j', group: 'Consonants', strokes: 3 },
+  { char: 'К', romanji: 'k', group: 'Consonants', strokes: 3 },
+  { char: 'Л', romanji: 'l', group: 'Consonants', strokes: 3 },
+  { char: 'М', romanji: 'm', group: 'Consonants', strokes: 4 },
+  { char: 'Н', romanji: 'n', group: 'Consonants', strokes: 3 },
+  { char: 'П', romanji: 'p', group: 'Consonants', strokes: 3 },
+  { char: 'Р', romanji: 'r', group: 'Consonants', strokes: 2 },
+  { char: 'С', romanji: 's', group: 'Consonants', strokes: 1 },
+  { char: 'Т', romanji: 't', group: 'Consonants', strokes: 2 },
+  { char: 'Ф', romanji: 'f', group: 'Consonants', strokes: 3 },
+  { char: 'Х', romanji: 'kh', group: 'Consonants', strokes: 2 },
+  { char: 'Ц', romanji: 'ts', group: 'Consonants', strokes: 3 },
+  { char: 'Ч', romanji: 'ch', group: 'Consonants', strokes: 2 },
+  { char: 'Ш', romanji: 'sh', group: 'Consonants', strokes: 3 },
+  { char: 'Щ', romanji: 'shch', group: 'Consonants', strokes: 3 },
+  // Signs
+  { char: 'Ъ', romanji: 'hard sign', group: 'Signs', strokes: 2 },
+  { char: 'Ь', romanji: 'soft sign', group: 'Signs', strokes: 2 },
+];
