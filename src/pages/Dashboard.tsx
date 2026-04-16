@@ -7,6 +7,7 @@ import { formatStudyTime } from '../lib/xp';
 import { calculateCurrentStreak, calculateLongestStreak } from '../lib/streaks';
 import { useSettingsStore } from '../stores/settingsStore';
 import HeatMap from '../components/dashboard/HeatMap';
+import LanguageStats from '../components/dashboard/LanguageStats';
 import StudyPlan from '../components/dashboard/StudyPlan';
 import AddWordModal from '../components/srs/AddWordModal';
 
@@ -23,6 +24,7 @@ export default function Dashboard() {
   const [allSessions, setAllSessions] = useState<StudySession[]>([]);
   const [activities, setActivities] = useState<DailyActivity[]>([]);
   const weeklyGoalMinutes = useSettingsStore((s) => s.weeklyGoalMinutes);
+  const activeLanguages = useSettingsStore((s) => s.activeLanguages);
   const [showAddModal, setShowAddModal] = useState(false);
 
   useEffect(() => {
@@ -112,6 +114,10 @@ export default function Dashboard() {
       )}
 
       <AddWordModal isOpen={showAddModal} onClose={() => setShowAddModal(false)} />
+
+      {stats.totalWords > 0 && (
+        <LanguageStats languages={activeLanguages} />
+      )}
 
       <div className="bg-white dark:bg-gray-800 rounded-2xl shadow p-4 mb-6">
         {currentStreak > 0 ? (
