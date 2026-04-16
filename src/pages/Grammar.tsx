@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { useSettingsStore } from '../stores/settingsStore';
 import LessonView from '../components/grammar/LessonView';
 import { getLessonProgress } from '../db/lessons';
@@ -12,6 +13,7 @@ interface LessonMeta {
 }
 
 export default function GrammarPage() {
+  const navigate = useNavigate();
   const activeLanguages = useSettingsStore((s) => s.activeLanguages);
   const [selectedLang, setSelectedLang] = useState(activeLanguages[0] ?? 'ja');
   const [lessons, setLessons] = useState<LessonMeta[]>([]);
@@ -57,6 +59,14 @@ export default function GrammarPage() {
 
   return (
     <div>
+      {!activeLessonId && (
+        <button
+          onClick={() => navigate('/learn')}
+          className="text-indigo-600 dark:text-indigo-400 text-sm font-medium mb-3 hover:underline"
+        >
+          ← Back to Learn
+        </button>
+      )}
       <h2 className="text-lg font-semibold text-gray-700 dark:text-gray-200 mb-4">Grammar Guide</h2>
 
       {/* Language tabs */}

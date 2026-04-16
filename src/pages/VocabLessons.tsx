@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { useSettingsStore } from '../stores/settingsStore';
 import { getLessonProgress } from '../db/lessons';
 import { getLanguageLabel } from '../lib/languages';
@@ -7,6 +8,7 @@ import type { VocabLessonMeta } from '../types/vocab';
 import type { LessonProgress } from '../db/schema';
 
 export default function VocabLessons() {
+  const navigate = useNavigate();
   const activeLanguages = useSettingsStore((s) => s.activeLanguages);
   const [selectedLang, setSelectedLang] = useState(activeLanguages[0] ?? 'ja');
   const [lessons, setLessons] = useState<VocabLessonMeta[]>([]);
@@ -78,6 +80,14 @@ export default function VocabLessons() {
 
   return (
     <div>
+      {!activeLessonId && (
+        <button
+          onClick={() => navigate('/learn')}
+          className="text-indigo-600 dark:text-indigo-400 text-sm font-medium mb-3 hover:underline"
+        >
+          ← Back to Learn
+        </button>
+      )}
       <h2 className="text-lg font-semibold text-gray-700 dark:text-gray-200 mb-4">Vocabulary Lessons</h2>
 
       {/* Language tabs */}
