@@ -5,6 +5,7 @@ import { lookupWord } from '../../lib/dictionary';
 interface WordLookupSheetProps {
   word: string;
   language: string;
+  initialReading?: string;
   onAdd: (word: string, reading: string, meaning: string) => void;
   onClose: () => void;
 }
@@ -12,10 +13,11 @@ interface WordLookupSheetProps {
 export default function WordLookupSheet({
   word,
   language,
+  initialReading = '',
   onAdd,
   onClose,
 }: WordLookupSheetProps) {
-  const [reading, setReading] = useState('');
+  const [reading, setReading] = useState(initialReading);
   const [meaning, setMeaning] = useState('');
   const [loading, setLoading] = useState(false);
 
