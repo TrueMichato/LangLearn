@@ -154,10 +154,33 @@ export default function DrawingCanvas({ characters, alphabetName, language, onPr
   useEffect(() => {
     setScoreResult(null);
     setIsGraded(false);
+    setSrsToast(false);
   }, [currentIndex]);
 
   // Cleanup timers on unmount
   useEffect(() => clearTimers, [clearTimers]);
+
+  async function createSrsCardIfNeeded(char: Character) {
+    try {
+      const exists = await wordExists(char.char, language);
+      if (!exists) {
+        const meaning = char.meaning || char.romanji;
+        await addWord({
+          word: char.char,
+          reading: char.romanji,
+          meaning,
+          language,
+          contextSentence: `Reading: ${char.romanji}${char.meaning ? ` (${char.meaning})` : ''}`,
+          sourceTextId: null,
+          tags: ['letters'],
+        });
+        setSrsToast(true);
+        setTimeout(() => setSrsToast(false), 1500);
+      }
+    } catch {
+      // Don't block the UI on SRS card creation failure
+    }
+  }
 
   function startTimer() {
     if (!hasStartedTimer && !timerIsRunning) {
@@ -231,6 +254,10 @@ export default function DrawingCanvas({ characters, alphabetName, language, onPr
     });
     setIsGraded(true);
 
+    if (!passed) {
+      createSrsCardIfNeeded(current);
+    }
+
     advanceTimerRef.current = setTimeout(() => {
       setCurrentIndex((i) => i + 1);
     }, ADVANCE_DELAY_MS);
@@ -259,6 +286,9 @@ export default function DrawingCanvas({ characters, alphabetName, language, onPr
     const id = `${language}/${alphabetName}/${current.char}`;
     await updateCharacterProgress(id, language, current.char, current.romanji, correct);
     onProgress();
+    if (!correct) {
+      createSrsCardIfNeeded(current);
+    }
     advanceTimerRef.current = setTimeout(() => {
       setCurrentIndex((i) => i + 1);
     }, ADVANCE_DELAY_MS);
@@ -312,6 +342,13 @@ export default function DrawingCanvas({ characters, alphabetName, language, onPr
           }`}
         >
           {scoreResult.passed ? `Great! (${scoreResult.score}%)` : `Try again (${scoreResult.score}%)`}
+        </div>
+      )}
+
+      {/* SRS card added toast */}
+      {srsToast && (
+        <div className="fixed top-4 left-4 bg-amber-500 text-white px-4 py-2 rounded-xl shadow-lg text-sm font-medium z-50">
+          Added to review deck
         </div>
       )}
 
