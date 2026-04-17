@@ -9,10 +9,11 @@ import WordsPage from './pages/Words';
 import LearnPage from './pages/Learn';
 import VocabLessons from './pages/VocabLessons';
 import LetterPractice from './pages/LetterPractice';
+import ConjugationsPage from './pages/Conjugations';
 import SentenceBuilderPage from './pages/SentenceBuilder';
 import AnalyticsPage from './pages/Analytics';
 import TestsPage from './pages/Tests';
-import AnalyticsPage from './pages/Analytics';
+import DailyChallengePage from './pages/DailyChallenge';
 import OnboardingOverlay from './components/onboarding/OnboardingOverlay';
 import { useSettingsStore } from './stores/settingsStore';
 import ErrorBoundary from './components/common/ErrorBoundary';
@@ -36,10 +37,11 @@ export default function App() {
             <Route path="/learn" element={<LearnPage />} />
             <Route path="/vocab-lessons" element={<VocabLessons />} />
             <Route path="/letters/:lang" element={<LetterPractice />} />
+            <Route path="/conjugations" element={<ConjugationsPage />} />
             <Route path="/sentence-builder" element={<SentenceBuilderPage />} />
             <Route path="/analytics" element={<AnalyticsPage />} />
             <Route path="/tests" element={<TestsPage />} />
-            <Route path="/analytics" element={<AnalyticsPage />} />
+            <Route path="/daily-challenge" element={<DailyChallengePage />} />
           </Route>
         </Routes>
       </HashRouter>
