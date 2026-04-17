@@ -9,6 +9,7 @@ import WordsPage from './pages/Words';
 import LearnPage from './pages/Learn';
 import VocabLessons from './pages/VocabLessons';
 import LetterPractice from './pages/LetterPractice';
+import ListeningPage from './pages/Listening';
 import ConjugationsPage from './pages/Conjugations';
 import SentenceBuilderPage from './pages/SentenceBuilder';
 import AnalyticsPage from './pages/Analytics';
@@ -37,6 +38,7 @@ export default function App() {
             <Route path="/learn" element={<LearnPage />} />
             <Route path="/vocab-lessons" element={<VocabLessons />} />
             <Route path="/letters/:lang" element={<LetterPractice />} />
+            <Route path="/listening" element={<ListeningPage />} />
             <Route path="/conjugations" element={<ConjugationsPage />} />
             <Route path="/sentence-builder" element={<SentenceBuilderPage />} />
             <Route path="/analytics" element={<AnalyticsPage />} />

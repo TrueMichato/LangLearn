@@ -5,6 +5,7 @@ import { db, type Word, type Review } from '../db/schema';
 import { useSettingsStore } from '../stores/settingsStore';
 import AddWordModal from '../components/srs/AddWordModal';
 import { getLanguageLabel } from '../lib/languages';
+import StudySets from '../components/words/StudySets';
 
 type StatusFilter = 'all' | 'learning' | 'mature' | 'due';
 
@@ -120,6 +121,8 @@ export default function WordsPage() {
           {results.length} word{results.length !== 1 ? 's' : ''}
         </span>
       </div>
+
+      <StudySets />
 
       <SearchBar value={search} onChange={setSearch} placeholder="Search words…" />
 

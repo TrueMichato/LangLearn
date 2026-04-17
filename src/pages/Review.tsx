@@ -1,10 +1,12 @@
 import { useEffect, useState, useCallback, useMemo } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, useSearchParams } from 'react-router-dom';
 import { getDueReviews, getRandomWords } from '../db/words';
 import { processReview } from '../db/reviews';
 import { useReviewStore, type QueueItem } from '../stores/reviewStore';
 import { useTimerStore } from '../stores/timerStore';
 import { useSettingsStore } from '../stores/settingsStore';
+import { useStudySetsStore } from '../stores/studySetsStore';
+import { getFilteredReviewQueue } from '../lib/filtered-review';
 import Flashcard from '../components/srs/Flashcard';
 import ReverseCard from '../components/srs/ReverseCard';
 import ListeningCard from '../components/srs/ListeningCard';
@@ -30,13 +32,23 @@ export default function ReviewPage() {
   const { isRunning, start } = useTimerStore();
   const reviewBatchSize = useSettingsStore((s) => s.reviewBatchSize);
   const navigate = useNavigate();
+  const [searchParams] = useSearchParams();
+  const setId = searchParams.get('set');
+  const studySet = useStudySetsStore((s) => s.sets.find((ss) => ss.id === setId));
   const [loading, setLoading] = useState(true);
   const [totalDue, setTotalDue] = useState(0);
   const [showAddModal, setShowAddModal] = useState(false);
 
   const loadCards = useCallback(async () => {
     setLoading(true);
-    const due = await getDueReviews();
+
+    let due: Array<{ word: import('../db/schema').Word; review: import('../db/schema').Review }>;
+    if (setId) {
+      due = await getFilteredReviewQueue(setId);
+    } else {
+      due = await getDueReviews();
+    }
+
     // Shuffle
     for (let i = due.length - 1; i > 0; i--) {
       const j = Math.floor(Math.random() * (i + 1));
@@ -69,7 +81,7 @@ export default function ReviewPage() {
 
     setQueue(items);
     setLoading(false);
-  }, [setQueue, reviewBatchSize]);
+  }, [setQueue, reviewBatchSize, setId]);
 
   useEffect(() => {
     loadCards();
@@ -178,7 +190,9 @@ export default function ReviewPage() {
     <div>
       <div className="flex justify-between items-center mb-4">
         <div>
-          <h2 className="text-lg font-semibold text-gray-700 dark:text-gray-200">Review</h2>
+          <h2 className="text-lg font-semibold text-gray-700 dark:text-gray-200">
+            {studySet ? `Review: ${studySet.name}` : 'Review'}
+          </h2>
           {reviewBatchSize > 0 && totalDue > queue.length && (
             <p className="text-xs text-gray-400 dark:text-gray-500">
               Reviewing {queue.length} of {totalDue} due cards
