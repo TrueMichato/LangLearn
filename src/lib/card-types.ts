@@ -1,7 +1,7 @@
-export type CardType = 'classic' | 'reverse' | 'listening' | 'multiple-choice';
+export type CardType = 'classic' | 'reverse' | 'listening' | 'multiple-choice' | 'cloze';
 
-const LEARNING_TYPES: CardType[] = ['classic', 'reverse'];
-const ALL_TYPES: CardType[] = ['classic', 'reverse', 'listening', 'multiple-choice'];
+const LEARNING_TYPES: CardType[] = ['classic', 'reverse', 'cloze'];
+const ALL_TYPES: CardType[] = ['classic', 'reverse', 'listening', 'multiple-choice', 'cloze'];
 
 /** Assign a card type based on review maturity */
 export function assignCardType(repetitions: number): CardType {

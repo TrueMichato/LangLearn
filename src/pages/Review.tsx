@@ -9,6 +9,7 @@ import Flashcard from '../components/srs/Flashcard';
 import ReverseCard from '../components/srs/ReverseCard';
 import ListeningCard from '../components/srs/ListeningCard';
 import MultipleChoiceCard from '../components/srs/MultipleChoiceCard';
+import ClozeCard from '../components/srs/ClozeCard';
 import GradeButtons from '../components/srs/GradeButtons';
 import AddWordModal from '../components/srs/AddWordModal';
 import { assignCardType, selectDistractors } from '../lib/card-types';
@@ -20,6 +21,7 @@ const CARD_TYPE_LABELS: Record<string, string> = {
   reverse: 'Reverse',
   listening: 'Listening',
   'multiple-choice': 'Pick the meaning',
+  cloze: 'Fill in the blank',
 };
 
 export default function ReviewPage() {
@@ -49,6 +51,10 @@ export default function ReviewPage() {
       let cardType = assignCardType(item.review.repetitions);
 
       let distractors: string[] | undefined;
+      if (cardType === 'cloze' && !item.word.contextSentence && item.word.word.length <= 2) {
+        cardType = 'classic';
+      }
+
       if (cardType === 'multiple-choice') {
         const others = await getRandomWords(item.word.language, [item.word.id!], 6);
         if (others.length < 3) {
@@ -88,8 +94,8 @@ export default function ReviewPage() {
   };
 
   const current = currentIndex < queue.length ? queue[currentIndex] : undefined;
-  const isMC = current?.cardType === 'multiple-choice';
-  const canGrade = isFlipped && !isMC;
+  const isSelfGrading = current?.cardType === 'multiple-choice' || current?.cardType === 'cloze';
+  const canGrade = isFlipped && !isSelfGrading;
 
   const GRADE_MAP: Record<string, SM2Grade> = { '1': 0, '2': 3, '3': 4, '4': 5 };
 
@@ -98,7 +104,7 @@ export default function ReviewPage() {
       Escape: () => navigate('/'),
     };
 
-    if (current && !isMC && !isFlipped) {
+    if (current && !isSelfGrading && !isFlipped) {
       map['Space'] = flip;
     }
 
@@ -110,7 +116,7 @@ export default function ReviewPage() {
 
     return map;
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [isFlipped, isMC, canGrade, current, navigate]);
+  }, [isFlipped, isSelfGrading, canGrade, current, navigate]);
 
   useKeyboardShortcuts(shortcuts, !loading && !showAddModal);
 
@@ -228,6 +234,10 @@ export default function ReviewPage() {
           distractors={activeCard.distractors}
           onGrade={handleGrade}
         />
+      )}
+
+      {activeCard.cardType === 'cloze' && (
+        <ClozeCard word={activeCard.word} onGrade={handleGrade} />
       )}
 
       {activeCard.cardType === 'classic' && (
