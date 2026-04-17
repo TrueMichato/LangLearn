@@ -10,8 +10,8 @@ describe('assignCardType', () => {
     expect(assignCardType(1)).toBe('classic');
   });
 
-  it('returns classic or reverse for repetitions 2-3', () => {
-    const allowed = new Set(['classic', 'reverse']);
+  it('returns classic, reverse, or cloze for repetitions 2-3', () => {
+    const allowed = new Set(['classic', 'reverse', 'cloze']);
     for (let i = 0; i < 50; i++) {
       expect(allowed.has(assignCardType(2))).toBe(true);
       expect(allowed.has(assignCardType(3))).toBe(true);
@@ -19,7 +19,7 @@ describe('assignCardType', () => {
   });
 
   it('returns any type for repetitions 4+', () => {
-    const allowed = new Set(['classic', 'reverse', 'listening', 'multiple-choice']);
+    const allowed = new Set(['classic', 'reverse', 'listening', 'multiple-choice', 'cloze']);
     const seen = new Set<string>();
     for (let i = 0; i < 200; i++) {
       seen.add(assignCardType(10));
