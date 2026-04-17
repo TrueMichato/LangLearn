@@ -1,0 +1,38 @@
+{
+  "id": "cooking",
+  "words": [
+    { "word": "料理", "reading": "りょうり", "meaning": "Cooking/Cuisine", "example": "料理が上手になりたいです。", "exampleMeaning": "I want to become good at cooking." },
+    { "word": "焼く", "reading": "やく", "meaning": "To grill/bake", "example": "魚を焼きました。", "exampleMeaning": "I grilled the fish." },
+    { "word": "切る", "reading": "きる", "meaning": "To cut", "example": "野菜を小さく切ってください。", "exampleMeaning": "Please cut the vegetables into small pieces." },
+    { "word": "煮る", "reading": "にる", "meaning": "To boil/simmer", "example": "三十分煮てください。", "exampleMeaning": "Please simmer for 30 minutes." },
+    { "word": "揚げる", "reading": "あげる", "meaning": "To deep-fry", "example": "天ぷらを揚げました。", "exampleMeaning": "I deep-fried tempura." },
+    { "word": "炒める", "reading": "いためる", "meaning": "To stir-fry", "example": "野菜を炒めましょう。", "exampleMeaning": "Let's stir-fry the vegetables." },
+    { "word": "味", "reading": "あじ", "meaning": "Taste/Flavor", "example": "この味が好きです。", "exampleMeaning": "I like this flavor." },
+    { "word": "材料", "reading": "ざいりょう", "meaning": "Ingredients", "example": "材料を全部準備しました。", "exampleMeaning": "I prepared all the ingredients." },
+    { "word": "レシピ", "reading": "れしぴ", "meaning": "Recipe", "example": "新しいレシピを試しました。", "exampleMeaning": "I tried a new recipe." },
+    { "word": "鍋", "reading": "なべ", "meaning": "Pot/Pan", "example": "大きい鍋でスープを作ります。", "exampleMeaning": "I make soup in a big pot." },
+    { "word": "包丁", "reading": "ほうちょう", "meaning": "Kitchen knife", "example": "包丁を使うときは気をつけてください。", "exampleMeaning": "Please be careful when using a kitchen knife." },
+    { "word": "冷蔵庫", "reading": "れいぞうこ", "meaning": "Refrigerator", "example": "牛乳を冷蔵庫に入れてください。", "exampleMeaning": "Please put the milk in the refrigerator." },
+    { "word": "調味料", "reading": "ちょうみりょう", "meaning": "Seasoning", "example": "調味料を加えて味を整えます。", "exampleMeaning": "Add seasonings to adjust the taste." },
+    { "word": "蒸す", "reading": "むす", "meaning": "To steam", "example": "野菜を蒸すと栄養が残ります。", "exampleMeaning": "Steaming vegetables preserves nutrients." },
+    { "word": "混ぜる", "reading": "まぜる", "meaning": "To mix", "example": "よく混ぜてください。", "exampleMeaning": "Please mix well." },
+    { "word": "フライパン", "reading": "ふらいぱん", "meaning": "Frying pan", "example": "フライパンを温めてから油を入れます。", "exampleMeaning": "Heat the frying pan before adding oil." }
+  ],
+  "exercises": [
+    { "type": "match", "pairs": 5 },
+    { "type": "fill-blank", "items": [
+      { "sentence": "魚を___ました。", "answer": "焼き", "hint": "Grilled" },
+      { "sentence": "野菜を小さく___てください。", "answer": "切っ", "hint": "Cut" },
+      { "sentence": "___を全部準備しました。", "answer": "材料", "hint": "Ingredients" },
+      { "sentence": "牛乳を___に入れてください。", "answer": "冷蔵庫", "hint": "Refrigerator" },
+      { "sentence": "よく___てください。", "answer": "混ぜ", "hint": "Mix" }
+    ]},
+    { "type": "multiple-choice", "items": [
+      { "question": "食べ物を油の中で料理することを何と言いますか。", "options": ["焼く", "煮る", "揚げる", "蒸す"], "answer": 2 },
+      { "question": "「ほうちょう」はどれですか。", "options": ["鍋", "包丁", "フライパン", "冷蔵庫"], "answer": 1 },
+      { "question": "料理を作るために必要なものを何と言いますか。", "options": ["調味料", "レシピ", "材料", "味"], "answer": 2 },
+      { "question": "水の中で料理することを何と言いますか。", "options": ["焼く", "炒める", "蒸す", "煮る"], "answer": 3 },
+      { "question": "「ちょうみりょう」の意味は何ですか。", "options": ["Recipe", "Seasoning", "Ingredient", "Flavor"], "answer": 1 }
+    ]}
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "id": "banking",
+  "words": [
+    { "word": "Банк", "reading": "bank", "meaning": "Bank", "example": "Банк открывается в девять утра.", "exampleMeaning": "The bank opens at nine in the morning." },
+    { "word": "Счёт", "reading": "schyot", "meaning": "Account", "example": "Я открыл новый банковский счёт.", "exampleMeaning": "I opened a new bank account." },
+    { "word": "Сбережения", "reading": "sberezheniya", "meaning": "Savings", "example": "Она откладывает деньги на сбережения.", "exampleMeaning": "She puts money into savings." },
+    { "word": "Кредит", "reading": "kredit", "meaning": "Loan / Credit", "example": "Они взяли кредит на квартиру.", "exampleMeaning": "They took a loan for an apartment." },
+    { "word": "Процент", "reading": "protsent", "meaning": "Interest / Percent", "example": "Процент по вкладу — пять годовых.", "exampleMeaning": "The interest on the deposit is five percent per year." },
+    { "word": "Банкомат", "reading": "bankomat", "meaning": "ATM", "example": "Снимите деньги в банкомате.", "exampleMeaning": "Withdraw money at the ATM." },
+    { "word": "Перевод", "reading": "perevod", "meaning": "Transfer", "example": "Я сделал перевод на ваш счёт.", "exampleMeaning": "I made a transfer to your account." },
+    { "word": "Валюта", "reading": "valyuta", "meaning": "Currency", "example": "Какая валюта в этой стране?", "exampleMeaning": "What currency is used in this country?" },
+    { "word": "Долг", "reading": "dolg", "meaning": "Debt", "example": "Нужно вернуть долг до конца месяца.", "exampleMeaning": "You need to pay back the debt by the end of the month." },
+    { "word": "Вклад", "reading": "vklad", "meaning": "Deposit", "example": "Я открыл вклад в банке.", "exampleMeaning": "I opened a deposit at the bank." },
+    { "word": "Наличные", "reading": "nalichnye", "meaning": "Cash", "example": "У меня нет наличных, только карта.", "exampleMeaning": "I don't have cash, only a card." },
+    { "word": "Квитанция", "reading": "kvitantsiya", "meaning": "Receipt", "example": "Сохраните квитанцию об оплате.", "exampleMeaning": "Keep the payment receipt." },
+    { "word": "Ипотека", "reading": "ipoteka", "meaning": "Mortgage", "example": "Ипотека рассчитана на двадцать лет.", "exampleMeaning": "The mortgage is for twenty years." },
+    { "word": "Обмен", "reading": "obmen", "meaning": "Exchange", "example": "Где можно сделать обмен валюты?", "exampleMeaning": "Where can I exchange currency?" },
+    { "word": "Платёж", "reading": "platyozh", "meaning": "Payment", "example": "Ежемесячный платёж составляет пять тысяч.", "exampleMeaning": "The monthly payment is five thousand." },
+    { "word": "Страховка", "reading": "strakhovka", "meaning": "Insurance", "example": "Страховка покрывает все расходы.", "exampleMeaning": "The insurance covers all expenses." }
+  ],
+  "exercises": [
+    { "type": "match", "pairs": 6 },
+    { "type": "fill-blank", "items": [
+      { "sentence": "Я открыл новый банковский ___.", "answer": "Счёт", "hint": "Account" },
+      { "sentence": "Они взяли ___ на квартиру.", "answer": "Кредит", "hint": "Loan / Credit" },
+      { "sentence": "Снимите деньги в ___.", "answer": "Банкомате", "hint": "ATM (prepositional)" },
+      { "sentence": "Нужно вернуть ___ до конца месяца.", "answer": "Долг", "hint": "Debt" },
+      { "sentence": "Где можно сделать ___ валюты?", "answer": "Обмен", "hint": "Exchange" }
+    ]},
+    { "type": "multiple-choice", "items": [
+      { "question": "What does 'Сбережения' mean?", "options": ["Savings", "Spending", "Salary", "Shopping"], "answer": 0 },
+      { "question": "How do you say 'ATM' in Russian?", "options": ["Банкомат", "Банк", "Автомат", "Терминал"], "answer": 0 },
+      { "question": "What is 'Ипотека'?", "options": ["Mortgage", "Insurance", "Loan", "Tax"], "answer": 0 },
+      { "question": "What does 'Наличные' mean?", "options": ["Cash", "Card", "Check", "Coins"], "answer": 0 },
+      { "question": "How do you say 'Receipt' in Russian?", "options": ["Квитанция", "Квартира", "Карточка", "Копейка"], "answer": 0 }
+    ]}
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "id": "education",
+  "words": [
+    { "word": "授業", "reading": "じゅぎょう", "meaning": "Class/Lesson", "example": "今日の授業は面白かったです。", "exampleMeaning": "Today's class was interesting." },
+    { "word": "試験", "reading": "しけん", "meaning": "Exam", "example": "来週試験があります。", "exampleMeaning": "There's an exam next week." },
+    { "word": "宿題", "reading": "しゅくだい", "meaning": "Homework", "example": "宿題を忘れてしまいました。", "exampleMeaning": "I forgot my homework." },
+    { "word": "教科書", "reading": "きょうかしょ", "meaning": "Textbook", "example": "教科書を開いてください。", "exampleMeaning": "Please open your textbook." },
+    { "word": "卒業", "reading": "そつぎょう", "meaning": "Graduation", "example": "三月に卒業します。", "exampleMeaning": "I will graduate in March." },
+    { "word": "入学", "reading": "にゅうがく", "meaning": "Enrollment", "example": "四月に大学に入学しました。", "exampleMeaning": "I enrolled in university in April." },
+    { "word": "成績", "reading": "せいせき", "meaning": "Grades", "example": "成績がとても良かったです。", "exampleMeaning": "My grades were very good." },
+    { "word": "先輩", "reading": "せんぱい", "meaning": "Senior student", "example": "先輩に勉強を教えてもらいました。", "exampleMeaning": "A senior student helped me study." },
+    { "word": "後輩", "reading": "こうはい", "meaning": "Junior student", "example": "後輩にアドバイスをしました。", "exampleMeaning": "I gave advice to a junior student." },
+    { "word": "科目", "reading": "かもく", "meaning": "Subject", "example": "好きな科目は数学です。", "exampleMeaning": "My favorite subject is math." },
+    { "word": "黒板", "reading": "こくばん", "meaning": "Blackboard", "example": "先生が黒板に書きました。", "exampleMeaning": "The teacher wrote on the blackboard." },
+    { "word": "図書館", "reading": "としょかん", "meaning": "Library", "example": "図書館で本を借りました。", "exampleMeaning": "I borrowed a book from the library." },
+    { "word": "教室", "reading": "きょうしつ", "meaning": "Classroom", "example": "教室に入ってください。", "exampleMeaning": "Please enter the classroom." },
+    { "word": "復習", "reading": "ふくしゅう", "meaning": "Review/Revision", "example": "毎日復習することが大切です。", "exampleMeaning": "It's important to review every day." },
+    { "word": "予習", "reading": "よしゅう", "meaning": "Preparation/Preview", "example": "明日の授業の予習をしました。", "exampleMeaning": "I prepared for tomorrow's class." },
+    { "word": "奨学金", "reading": "しょうがくきん", "meaning": "Scholarship", "example": "奨学金をもらって大学に通っています。", "exampleMeaning": "I attend university on a scholarship." }
+  ],
+  "exercises": [
+    { "type": "match", "pairs": 5 },
+    { "type": "fill-blank", "items": [
+      { "sentence": "来週___があります。", "answer": "試験", "hint": "Exam" },
+      { "sentence": "___を忘れてしまいました。", "answer": "宿題", "hint": "Homework" },
+      { "sentence": "三月に___します。", "answer": "卒業", "hint": "Graduation" },
+      { "sentence": "___で本を借りました。", "answer": "図書館", "hint": "Library" },
+      { "sentence": "毎日___することが大切です。", "answer": "復習", "hint": "Review" }
+    ]},
+    { "type": "multiple-choice", "items": [
+      { "question": "学校で勉強する部屋を何と言いますか。", "options": ["図書館", "教室", "教科書", "黒板"], "answer": 1 },
+      { "question": "「せいせき」はどれですか。", "options": ["授業", "試験", "成績", "科目"], "answer": 2 },
+      { "question": "自分より上の学年の人を何と言いますか。", "options": ["後輩", "先輩", "同僚", "上司"], "answer": 1 },
+      { "question": "授業の前に勉強することを何と言いますか。", "options": ["復習", "宿題", "予習", "試験"], "answer": 2 },
+      { "question": "「しょうがくきん」の意味は何ですか。", "options": ["Tuition", "Scholarship", "Textbook", "Grade"], "answer": 1 }
+    ]}
+  ]
+}

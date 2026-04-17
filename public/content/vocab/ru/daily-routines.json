@@ -1,0 +1,38 @@
+{
+  "id": "daily-routines",
+  "words": [
+    { "word": "Просыпаться", "reading": "prosypatsya", "meaning": "To wake up", "example": "Я просыпаюсь в семь утра.", "exampleMeaning": "I wake up at seven in the morning." },
+    { "word": "Чистить зубы", "reading": "chistit zuby", "meaning": "To brush teeth", "example": "Нужно чистить зубы два раза в день.", "exampleMeaning": "You need to brush your teeth twice a day." },
+    { "word": "Ездить", "reading": "yezdit", "meaning": "To go (by transport) / To commute", "example": "Я езжу на работу на автобусе.", "exampleMeaning": "I commute to work by bus." },
+    { "word": "Умываться", "reading": "umyvatsya", "meaning": "To wash (one's face)", "example": "Утром я умываюсь холодной водой.", "exampleMeaning": "In the morning I wash my face with cold water." },
+    { "word": "Одеваться", "reading": "odevatsya", "meaning": "To get dressed", "example": "Она быстро оделась и вышла.", "exampleMeaning": "She quickly got dressed and went out." },
+    { "word": "Завтракать", "reading": "zavtrakat", "meaning": "To have breakfast", "example": "Мы завтракаем в восемь часов.", "exampleMeaning": "We have breakfast at eight o'clock." },
+    { "word": "Обедать", "reading": "obedat", "meaning": "To have lunch", "example": "Я обедаю в столовой.", "exampleMeaning": "I have lunch in the cafeteria." },
+    { "word": "Ужинать", "reading": "uzhinat", "meaning": "To have dinner", "example": "Семья ужинает вместе каждый вечер.", "exampleMeaning": "The family has dinner together every evening." },
+    { "word": "Ложиться спать", "reading": "lozhitsya spat", "meaning": "To go to bed", "example": "Дети ложатся спать в девять.", "exampleMeaning": "The children go to bed at nine." },
+    { "word": "Принимать душ", "reading": "prinimat dush", "meaning": "To take a shower", "example": "Я принимаю душ каждое утро.", "exampleMeaning": "I take a shower every morning." },
+    { "word": "Гулять", "reading": "gulyat", "meaning": "To walk / To go for a walk", "example": "По вечерам мы гуляем в парке.", "exampleMeaning": "In the evenings we walk in the park." },
+    { "word": "Убирать", "reading": "ubirat", "meaning": "To clean / To tidy up", "example": "По субботам я убираю квартиру.", "exampleMeaning": "On Saturdays I clean the apartment." },
+    { "word": "Будильник", "reading": "budilnik", "meaning": "Alarm clock", "example": "Будильник звонит в шесть утра.", "exampleMeaning": "The alarm clock rings at six in the morning." },
+    { "word": "Привычка", "reading": "privychka", "meaning": "Habit", "example": "Это полезная привычка.", "exampleMeaning": "This is a useful habit." },
+    { "word": "Расчёска", "reading": "raschyoska", "meaning": "Comb / Hairbrush", "example": "Где моя расчёска?", "exampleMeaning": "Where is my comb?" },
+    { "word": "Зарядка", "reading": "zaryadka", "meaning": "Morning exercise", "example": "Каждое утро я делаю зарядку.", "exampleMeaning": "Every morning I do exercises." }
+  ],
+  "exercises": [
+    { "type": "match", "pairs": 6 },
+    { "type": "fill-blank", "items": [
+      { "sentence": "Я ___ в семь утра.", "answer": "Просыпаюсь", "hint": "To wake up (1st person)" },
+      { "sentence": "Нужно ___ два раза в день.", "answer": "Чистить зубы", "hint": "To brush teeth" },
+      { "sentence": "Мы ___ в восемь часов.", "answer": "Завтракаем", "hint": "To have breakfast (1st person plural)" },
+      { "sentence": "Дети ___ в девять.", "answer": "Ложатся спать", "hint": "To go to bed (3rd person plural)" },
+      { "sentence": "___ звонит в шесть утра.", "answer": "Будильник", "hint": "Alarm clock" }
+    ]},
+    { "type": "multiple-choice", "items": [
+      { "question": "What does 'Умываться' mean?", "options": ["To wash one's face", "To swim", "To shower", "To clean"], "answer": 0 },
+      { "question": "How do you say 'To have lunch' in Russian?", "options": ["Обедать", "Ужинать", "Завтракать", "Есть"], "answer": 0 },
+      { "question": "What is 'Зарядка'?", "options": ["Morning exercise", "Battery", "Phone charger", "Warm-up"], "answer": 0 },
+      { "question": "What does 'Привычка' mean?", "options": ["Habit", "Practice", "Routine", "Schedule"], "answer": 0 },
+      { "question": "How do you say 'To get dressed' in Russian?", "options": ["Одеваться", "Умываться", "Ложиться", "Собираться"], "answer": 0 }
+    ]}
+  ]
+}

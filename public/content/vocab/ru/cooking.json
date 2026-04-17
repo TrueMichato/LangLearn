@@ -1,0 +1,38 @@
+{
+  "id": "cooking",
+  "words": [
+    { "word": "Готовить", "reading": "gotovit", "meaning": "To cook / To prepare", "example": "Мама готовит ужин на кухне.", "exampleMeaning": "Mom is cooking dinner in the kitchen." },
+    { "word": "Жарить", "reading": "zharit", "meaning": "To fry", "example": "Он жарит картошку на сковороде.", "exampleMeaning": "He is frying potatoes in the pan." },
+    { "word": "Резать", "reading": "rezat", "meaning": "To cut / To slice", "example": "Резать лук — неприятное занятие.", "exampleMeaning": "Cutting onions is an unpleasant task." },
+    { "word": "Варить", "reading": "varit", "meaning": "To boil", "example": "Нужно варить яйца десять минут.", "exampleMeaning": "You need to boil eggs for ten minutes." },
+    { "word": "Рецепт", "reading": "retsept", "meaning": "Recipe", "example": "Дай мне рецепт этого торта.", "exampleMeaning": "Give me the recipe for this cake." },
+    { "word": "Сковорода", "reading": "skovoroda", "meaning": "Frying pan", "example": "Разогрей сковороду перед жаркой.", "exampleMeaning": "Heat the frying pan before frying." },
+    { "word": "Кастрюля", "reading": "kastryulya", "meaning": "Pot / Saucepan", "example": "Налей воду в кастрюлю.", "exampleMeaning": "Pour water into the pot." },
+    { "word": "Духовка", "reading": "dukhovka", "meaning": "Oven", "example": "Поставь пирог в духовку.", "exampleMeaning": "Put the pie in the oven." },
+    { "word": "Специи", "reading": "spetsii", "meaning": "Spices", "example": "Добавь специи по вкусу.", "exampleMeaning": "Add spices to taste." },
+    { "word": "Мешать", "reading": "meshat", "meaning": "To stir", "example": "Мешай суп, чтобы не пригорел.", "exampleMeaning": "Stir the soup so it doesn't burn." },
+    { "word": "Печь", "reading": "pech", "meaning": "To bake", "example": "Бабушка любит печь пироги.", "exampleMeaning": "Grandma likes to bake pies." },
+    { "word": "Нож", "reading": "nozh", "meaning": "Knife", "example": "Будь осторожен с ножом.", "exampleMeaning": "Be careful with the knife." },
+    { "word": "Разделочная доска", "reading": "razdelochnaya doska", "meaning": "Cutting board", "example": "Режь овощи на разделочной доске.", "exampleMeaning": "Cut vegetables on the cutting board." },
+    { "word": "Ингредиент", "reading": "ingredient", "meaning": "Ingredient", "example": "Все ингредиенты есть в холодильнике.", "exampleMeaning": "All the ingredients are in the fridge." },
+    { "word": "Тушить", "reading": "tushit", "meaning": "To stew / To braise", "example": "Тушить мясо нужно на медленном огне.", "exampleMeaning": "You need to stew meat on low heat." },
+    { "word": "Посуда", "reading": "posuda", "meaning": "Dishes / Cookware", "example": "После ужина нужно помыть посуду.", "exampleMeaning": "After dinner you need to wash the dishes." }
+  ],
+  "exercises": [
+    { "type": "match", "pairs": 6 },
+    { "type": "fill-blank", "items": [
+      { "sentence": "Мама ___ ужин на кухне.", "answer": "Готовит", "hint": "To cook / To prepare" },
+      { "sentence": "Он ___ картошку на сковороде.", "answer": "Жарит", "hint": "To fry" },
+      { "sentence": "Нужно ___ яйца десять минут.", "answer": "Варить", "hint": "To boil" },
+      { "sentence": "Поставь пирог в ___.", "answer": "Духовку", "hint": "Oven (accusative)" },
+      { "sentence": "Бабушка любит ___ пироги.", "answer": "Печь", "hint": "To bake" }
+    ]},
+    { "type": "multiple-choice", "items": [
+      { "question": "What does 'Сковорода' mean?", "options": ["Frying pan", "Pot", "Oven", "Plate"], "answer": 0 },
+      { "question": "How do you say 'Recipe' in Russian?", "options": ["Рецепт", "Ресторан", "Результат", "Режим"], "answer": 0 },
+      { "question": "What is 'Кастрюля'?", "options": ["Pot / Saucepan", "Frying pan", "Bowl", "Cup"], "answer": 0 },
+      { "question": "What does 'Резать' mean?", "options": ["To cut / To slice", "To cook", "To fry", "To stir"], "answer": 0 },
+      { "question": "How do you say 'Spices' in Russian?", "options": ["Специи", "Соль", "Сахар", "Соус"], "answer": 0 }
+    ]}
+  ]
+}

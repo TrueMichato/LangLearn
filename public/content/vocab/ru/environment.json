@@ -1,0 +1,38 @@
+{
+  "id": "environment",
+  "words": [
+    { "word": "Окружающая среда", "reading": "okruzhayushchaya sreda", "meaning": "Environment", "example": "Мы должны защищать окружающую среду.", "exampleMeaning": "We must protect the environment." },
+    { "word": "Природа", "reading": "priroda", "meaning": "Nature", "example": "Природа в этом месте очень красивая.", "exampleMeaning": "Nature in this place is very beautiful." },
+    { "word": "Земля", "reading": "zemlya", "meaning": "Earth / Land", "example": "Земля — наш общий дом.", "exampleMeaning": "Earth is our common home." },
+    { "word": "Загрязнение", "reading": "zagryazneniye", "meaning": "Pollution", "example": "Загрязнение воздуха — серьёзная проблема.", "exampleMeaning": "Air pollution is a serious problem." },
+    { "word": "Переработка", "reading": "pererabotka", "meaning": "Recycling", "example": "Переработка мусора помогает природе.", "exampleMeaning": "Recycling waste helps nature." },
+    { "word": "Климат", "reading": "klimat", "meaning": "Climate", "example": "Климат на планете меняется.", "exampleMeaning": "The climate on the planet is changing." },
+    { "word": "Лес", "reading": "les", "meaning": "Forest", "example": "В лесу живут разные животные.", "exampleMeaning": "Various animals live in the forest." },
+    { "word": "Океан", "reading": "okean", "meaning": "Ocean", "example": "Океан покрывает большую часть Земли.", "exampleMeaning": "The ocean covers most of the Earth." },
+    { "word": "Энергия", "reading": "energiya", "meaning": "Energy", "example": "Солнечная энергия — возобновляемый ресурс.", "exampleMeaning": "Solar energy is a renewable resource." },
+    { "word": "Отходы", "reading": "otkhody", "meaning": "Waste", "example": "Отходы нужно утилизировать правильно.", "exampleMeaning": "Waste must be disposed of properly." },
+    { "word": "Вымирание", "reading": "vymiraniye", "meaning": "Extinction", "example": "Многие виды находятся под угрозой вымирания.", "exampleMeaning": "Many species are threatened with extinction." },
+    { "word": "Экология", "reading": "ekologiya", "meaning": "Ecology", "example": "Экология изучает взаимодействие организмов.", "exampleMeaning": "Ecology studies the interaction of organisms." },
+    { "word": "Засуха", "reading": "zasukha", "meaning": "Drought", "example": "Засуха уничтожила урожай.", "exampleMeaning": "The drought destroyed the harvest." },
+    { "word": "Наводнение", "reading": "navodneniye", "meaning": "Flood", "example": "Наводнение затопило несколько деревень.", "exampleMeaning": "The flood flooded several villages." },
+    { "word": "Солнечная батарея", "reading": "solnechnaya batareya", "meaning": "Solar panel", "example": "На крыше установили солнечные батареи.", "exampleMeaning": "Solar panels were installed on the roof." },
+    { "word": "Ресурс", "reading": "resurs", "meaning": "Resource", "example": "Природные ресурсы нужно беречь.", "exampleMeaning": "Natural resources must be conserved." }
+  ],
+  "exercises": [
+    { "type": "match", "pairs": 6 },
+    { "type": "fill-blank", "items": [
+      { "sentence": "Мы должны защищать ___.", "answer": "Окружающую среду", "hint": "Environment (accusative)" },
+      { "sentence": "___ воздуха — серьёзная проблема.", "answer": "Загрязнение", "hint": "Pollution" },
+      { "sentence": "___ на планете меняется.", "answer": "Климат", "hint": "Climate" },
+      { "sentence": "___ уничтожила урожай.", "answer": "Засуха", "hint": "Drought" },
+      { "sentence": "Природные ___ нужно беречь.", "answer": "Ресурсы", "hint": "Resources" }
+    ]},
+    { "type": "multiple-choice", "items": [
+      { "question": "What does 'Переработка' mean?", "options": ["Recycling", "Processing", "Reworking", "Translation"], "answer": 0 },
+      { "question": "How do you say 'Forest' in Russian?", "options": ["Лес", "Поле", "Сад", "Парк"], "answer": 0 },
+      { "question": "What is 'Наводнение'?", "options": ["Flood", "Drought", "Storm", "Earthquake"], "answer": 0 },
+      { "question": "What does 'Вымирание' mean?", "options": ["Extinction", "Survival", "Evolution", "Migration"], "answer": 0 },
+      { "question": "How do you say 'Ocean' in Russian?", "options": ["Океан", "Озеро", "Река", "Море"], "answer": 0 }
+    ]}
+  ]
+}

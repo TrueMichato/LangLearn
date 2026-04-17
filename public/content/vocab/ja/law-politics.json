@@ -1,0 +1,38 @@
+{
+  "id": "law-politics",
+  "words": [
+    { "word": "法律", "reading": "ほうりつ", "meaning": "Law", "example": "新しい法律ができました。", "exampleMeaning": "A new law was made." },
+    { "word": "政治", "reading": "せいじ", "meaning": "Politics", "example": "政治に興味がありますか。", "exampleMeaning": "Are you interested in politics?" },
+    { "word": "選挙", "reading": "せんきょ", "meaning": "Election", "example": "来月選挙があります。", "exampleMeaning": "There's an election next month." },
+    { "word": "国会", "reading": "こっかい", "meaning": "Parliament/Diet", "example": "国会で新しい法律を決めます。", "exampleMeaning": "New laws are decided in parliament." },
+    { "word": "大統領", "reading": "だいとうりょう", "meaning": "President", "example": "大統領がスピーチをしました。", "exampleMeaning": "The president gave a speech." },
+    { "word": "首相", "reading": "しゅしょう", "meaning": "Prime minister", "example": "日本の首相が会見を開きました。", "exampleMeaning": "Japan's prime minister held a press conference." },
+    { "word": "裁判", "reading": "さいばん", "meaning": "Trial/Court case", "example": "裁判は三か月続きました。", "exampleMeaning": "The trial lasted three months." },
+    { "word": "憲法", "reading": "けんぽう", "meaning": "Constitution", "example": "憲法は国の基本的な法律です。", "exampleMeaning": "The constitution is a country's fundamental law." },
+    { "word": "投票", "reading": "とうひょう", "meaning": "Voting", "example": "十八歳から投票できます。", "exampleMeaning": "You can vote from age 18." },
+    { "word": "権利", "reading": "けんり", "meaning": "Right/Rights", "example": "すべての人に権利があります。", "exampleMeaning": "All people have rights." },
+    { "word": "義務", "reading": "ぎむ", "meaning": "Duty/Obligation", "example": "税金を払うのは義務です。", "exampleMeaning": "Paying taxes is an obligation." },
+    { "word": "市民", "reading": "しみん", "meaning": "Citizen", "example": "市民の意見を聞きました。", "exampleMeaning": "They listened to the citizens' opinions." },
+    { "word": "政党", "reading": "せいとう", "meaning": "Political party", "example": "いくつかの政党が選挙に参加しました。", "exampleMeaning": "Several political parties participated in the election." },
+    { "word": "弁護士", "reading": "べんごし", "meaning": "Lawyer", "example": "弁護士に相談しました。", "exampleMeaning": "I consulted a lawyer." },
+    { "word": "犯罪", "reading": "はんざい", "meaning": "Crime", "example": "犯罪を減らすために何ができますか。", "exampleMeaning": "What can we do to reduce crime?" },
+    { "word": "税金", "reading": "ぜいきん", "meaning": "Tax", "example": "来年から税金が上がります。", "exampleMeaning": "Taxes will increase from next year." }
+  ],
+  "exercises": [
+    { "type": "match", "pairs": 5 },
+    { "type": "fill-blank", "items": [
+      { "sentence": "来月___があります。", "answer": "選挙", "hint": "Election" },
+      { "sentence": "___に相談しました。", "answer": "弁護士", "hint": "Lawyer" },
+      { "sentence": "十八歳から___できます。", "answer": "投票", "hint": "Voting" },
+      { "sentence": "税金を払うのは___です。", "answer": "義務", "hint": "Duty" },
+      { "sentence": "新しい___ができました。", "answer": "法律", "hint": "Law" }
+    ]},
+    { "type": "multiple-choice", "items": [
+      { "question": "日本で法律を決める場所を何と言いますか。", "options": ["裁判", "選挙", "国会", "政党"], "answer": 2 },
+      { "question": "「さいばん」はどれですか。", "options": ["選挙", "裁判", "犯罪", "憲法"], "answer": 1 },
+      { "question": "国の一番大切な法律を何と言いますか。", "options": ["権利", "義務", "法律", "憲法"], "answer": 3 },
+      { "question": "悪いことをすることを何と言いますか。", "options": ["政治", "犯罪", "裁判", "義務"], "answer": 1 },
+      { "question": "「ぜいきん」の意味は何ですか。", "options": ["Rights", "Duty", "Tax", "Law"], "answer": 2 }
+    ]}
+  ]
+}

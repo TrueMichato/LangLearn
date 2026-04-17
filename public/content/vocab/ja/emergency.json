@@ -1,0 +1,38 @@
+{
+  "id": "emergency",
+  "words": [
+    { "word": "地震", "reading": "じしん", "meaning": "Earthquake", "example": "昨日大きい地震がありました。", "exampleMeaning": "There was a big earthquake yesterday." },
+    { "word": "避難", "reading": "ひなん", "meaning": "Evacuation", "example": "すぐに避難してください。", "exampleMeaning": "Please evacuate immediately." },
+    { "word": "救急車", "reading": "きゅうきゅうしゃ", "meaning": "Ambulance", "example": "救急車を呼んでください。", "exampleMeaning": "Please call an ambulance." },
+    { "word": "消防車", "reading": "しょうぼうしゃ", "meaning": "Fire truck", "example": "消防車が来ました。", "exampleMeaning": "The fire truck arrived." },
+    { "word": "警察", "reading": "けいさつ", "meaning": "Police", "example": "警察に連絡しました。", "exampleMeaning": "I contacted the police." },
+    { "word": "津波", "reading": "つなみ", "meaning": "Tsunami", "example": "津波警報が出ました。", "exampleMeaning": "A tsunami warning was issued." },
+    { "word": "火事", "reading": "かじ", "meaning": "Fire", "example": "火事だ！逃げてください。", "exampleMeaning": "Fire! Please escape." },
+    { "word": "台風", "reading": "たいふう", "meaning": "Typhoon", "example": "台風が近づいています。", "exampleMeaning": "A typhoon is approaching." },
+    { "word": "非常口", "reading": "ひじょうぐち", "meaning": "Emergency exit", "example": "非常口の場所を確認してください。", "exampleMeaning": "Please check the location of the emergency exit." },
+    { "word": "応急処置", "reading": "おうきゅうしょち", "meaning": "First aid", "example": "応急処置の方法を知っていますか。", "exampleMeaning": "Do you know how to give first aid?" },
+    { "word": "防災", "reading": "ぼうさい", "meaning": "Disaster prevention", "example": "防災訓練に参加しました。", "exampleMeaning": "I participated in a disaster prevention drill." },
+    { "word": "安全", "reading": "あんぜん", "meaning": "Safety", "example": "安全な場所に移動してください。", "exampleMeaning": "Please move to a safe place." },
+    { "word": "危険", "reading": "きけん", "meaning": "Danger", "example": "ここは危険です。", "exampleMeaning": "This place is dangerous." },
+    { "word": "停電", "reading": "ていでん", "meaning": "Power outage", "example": "地震の後に停電しました。", "exampleMeaning": "There was a power outage after the earthquake." },
+    { "word": "避難所", "reading": "ひなんじょ", "meaning": "Evacuation shelter", "example": "近くの避難所に行きました。", "exampleMeaning": "I went to the nearby evacuation shelter." },
+    { "word": "備蓄", "reading": "びちく", "meaning": "Emergency supplies", "example": "水と食料を備蓄しています。", "exampleMeaning": "I keep emergency supplies of water and food." }
+  ],
+  "exercises": [
+    { "type": "match", "pairs": 5 },
+    { "type": "fill-blank", "items": [
+      { "sentence": "昨日大きい___がありました。", "answer": "地震", "hint": "Earthquake" },
+      { "sentence": "___を呼んでください。", "answer": "救急車", "hint": "Ambulance" },
+      { "sentence": "___に連絡しました。", "answer": "警察", "hint": "Police" },
+      { "sentence": "___の場所を確認してください。", "answer": "非常口", "hint": "Emergency exit" },
+      { "sentence": "___な場所に移動してください。", "answer": "安全", "hint": "Safe" }
+    ]},
+    { "type": "multiple-choice", "items": [
+      { "question": "地震の後に海から来る大きい波を何と言いますか。", "options": ["台風", "火事", "津波", "停電"], "answer": 2 },
+      { "question": "「ひなん」はどれですか。", "options": ["避難", "防災", "危険", "安全"], "answer": 0 },
+      { "question": "けがをした人を助ける最初の方法を何と言いますか。", "options": ["防災", "備蓄", "応急処置", "避難所"], "answer": 2 },
+      { "question": "電気が使えなくなることを何と言いますか。", "options": ["火事", "危険", "台風", "停電"], "answer": 3 },
+      { "question": "「ぼうさい」の意味は何ですか。", "options": ["Evacuation", "Disaster prevention", "Emergency exit", "First aid"], "answer": 1 }
+    ]}
+  ]
+}

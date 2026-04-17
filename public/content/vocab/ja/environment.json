@@ -1,0 +1,38 @@
+{
+  "id": "environment",
+  "words": [
+    { "word": "環境", "reading": "かんきょう", "meaning": "Environment", "example": "環境を守ることが大切です。", "exampleMeaning": "It's important to protect the environment." },
+    { "word": "自然", "reading": "しぜん", "meaning": "Nature", "example": "自然の中で遊ぶのが好きです。", "exampleMeaning": "I like playing in nature." },
+    { "word": "地球", "reading": "ちきゅう", "meaning": "Earth", "example": "地球は青い星です。", "exampleMeaning": "The Earth is a blue planet." },
+    { "word": "温暖化", "reading": "おんだんか", "meaning": "Global warming", "example": "温暖化が問題になっています。", "exampleMeaning": "Global warming has become a problem." },
+    { "word": "リサイクル", "reading": "りさいくる", "meaning": "Recycling", "example": "ペットボトルをリサイクルします。", "exampleMeaning": "I recycle plastic bottles." },
+    { "word": "汚染", "reading": "おせん", "meaning": "Pollution", "example": "空気の汚染が心配です。", "exampleMeaning": "I'm worried about air pollution." },
+    { "word": "エネルギー", "reading": "えねるぎー", "meaning": "Energy", "example": "再生可能エネルギーを使いましょう。", "exampleMeaning": "Let's use renewable energy." },
+    { "word": "森林", "reading": "しんりん", "meaning": "Forest", "example": "森林が減っています。", "exampleMeaning": "Forests are decreasing." },
+    { "word": "絶滅", "reading": "ぜつめつ", "meaning": "Extinction", "example": "多くの動物が絶滅の危機にあります。", "exampleMeaning": "Many animals are in danger of extinction." },
+    { "word": "ゴミ", "reading": "ごみ", "meaning": "Garbage/Trash", "example": "ゴミを分別してください。", "exampleMeaning": "Please sort your garbage." },
+    { "word": "太陽光", "reading": "たいようこう", "meaning": "Solar light", "example": "太陽光で電気を作ります。", "exampleMeaning": "We generate electricity from solar light." },
+    { "word": "二酸化炭素", "reading": "にさんかたんそ", "meaning": "Carbon dioxide", "example": "二酸化炭素を減らす必要があります。", "exampleMeaning": "We need to reduce carbon dioxide." },
+    { "word": "生態系", "reading": "せいたいけい", "meaning": "Ecosystem", "example": "生態系を守ることが重要です。", "exampleMeaning": "It's important to protect the ecosystem." },
+    { "word": "節約", "reading": "せつやく", "meaning": "Conservation/Saving", "example": "水を節約しましょう。", "exampleMeaning": "Let's conserve water." },
+    { "word": "災害", "reading": "さいがい", "meaning": "Natural disaster", "example": "災害に備えることが大切です。", "exampleMeaning": "It's important to prepare for natural disasters." },
+    { "word": "植物", "reading": "しょくぶつ", "meaning": "Plant", "example": "植物に水をあげてください。", "exampleMeaning": "Please water the plants." }
+  ],
+  "exercises": [
+    { "type": "match", "pairs": 5 },
+    { "type": "fill-blank", "items": [
+      { "sentence": "___を守ることが大切です。", "answer": "環境", "hint": "Environment" },
+      { "sentence": "___が問題になっています。", "answer": "温暖化", "hint": "Global warming" },
+      { "sentence": "ペットボトルを___します。", "answer": "リサイクル", "hint": "Recycling" },
+      { "sentence": "ゴミを___してください。", "answer": "分別", "hint": "Sort" },
+      { "sentence": "水を___しましょう。", "answer": "節約", "hint": "Conserve" }
+    ]},
+    { "type": "multiple-choice", "items": [
+      { "question": "私たちが住んでいる星を何と言いますか。", "options": ["自然", "環境", "地球", "森林"], "answer": 2 },
+      { "question": "「おせん」はどれですか。", "options": ["汚染", "温暖化", "絶滅", "災害"], "answer": 0 },
+      { "question": "動物や植物がいなくなることを何と言いますか。", "options": ["汚染", "災害", "絶滅", "節約"], "answer": 2 },
+      { "question": "太陽の光でエネルギーを作ることに関係するのはどれですか。", "options": ["二酸化炭素", "太陽光", "森林", "生態系"], "answer": 1 },
+      { "question": "「さいがい」の意味は何ですか。", "options": ["Pollution", "Extinction", "Natural disaster", "Ecosystem"], "answer": 2 }
+    ]}
+  ]
+}

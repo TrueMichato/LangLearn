@@ -1,0 +1,38 @@
+{
+  "id": "opinions",
+  "words": [
+    { "word": "Мнение", "reading": "mneniye", "meaning": "Opinion", "example": "У каждого своё мнение.", "exampleMeaning": "Everyone has their own opinion." },
+    { "word": "Согласен", "reading": "soglasen", "meaning": "Agree / Agreed", "example": "Я полностью согласен с вами.", "exampleMeaning": "I completely agree with you." },
+    { "word": "Против", "reading": "protiv", "meaning": "Against", "example": "Я против этого решения.", "exampleMeaning": "I am against this decision." },
+    { "word": "Считать", "reading": "schitat", "meaning": "To consider / To think", "example": "Я считаю, что это правильно.", "exampleMeaning": "I think this is correct." },
+    { "word": "Спорить", "reading": "sporit", "meaning": "To argue / To debate", "example": "Не стоит спорить о политике.", "exampleMeaning": "It's not worth arguing about politics." },
+    { "word": "Обсуждать", "reading": "obsuzhdad", "meaning": "To discuss", "example": "Давайте обсудим этот вопрос.", "exampleMeaning": "Let's discuss this question." },
+    { "word": "Точка зрения", "reading": "tochka zreniya", "meaning": "Point of view", "example": "Я понимаю вашу точку зрения.", "exampleMeaning": "I understand your point of view." },
+    { "word": "Предложение", "reading": "predlozheniye", "meaning": "Suggestion / Proposal", "example": "У меня есть предложение.", "exampleMeaning": "I have a suggestion." },
+    { "word": "Доказательство", "reading": "dokazatelstvo", "meaning": "Proof / Evidence", "example": "Где доказательства вашей правоты?", "exampleMeaning": "Where is the proof you are right?" },
+    { "word": "Убеждать", "reading": "ubezhdat", "meaning": "To convince / To persuade", "example": "Он пытается убедить меня.", "exampleMeaning": "He is trying to convince me." },
+    { "word": "Возражать", "reading": "vozrazhat", "meaning": "To object", "example": "Никто не возражал против плана.", "exampleMeaning": "Nobody objected to the plan." },
+    { "word": "Поддерживать", "reading": "podderzhivat", "meaning": "To support", "example": "Я поддерживаю эту идею.", "exampleMeaning": "I support this idea." },
+    { "word": "Критика", "reading": "kritika", "meaning": "Criticism", "example": "Критика была справедливой.", "exampleMeaning": "The criticism was fair." },
+    { "word": "Вывод", "reading": "vyvod", "meaning": "Conclusion", "example": "Какой вывод можно сделать?", "exampleMeaning": "What conclusion can be drawn?" },
+    { "word": "Компромисс", "reading": "kompromiss", "meaning": "Compromise", "example": "Нужно найти компромисс.", "exampleMeaning": "We need to find a compromise." },
+    { "word": "Аргумент", "reading": "argument", "meaning": "Argument / Point", "example": "Это сильный аргумент.", "exampleMeaning": "This is a strong argument." }
+  ],
+  "exercises": [
+    { "type": "match", "pairs": 6 },
+    { "type": "fill-blank", "items": [
+      { "sentence": "У каждого своё ___.", "answer": "Мнение", "hint": "Opinion" },
+      { "sentence": "Я полностью ___ с вами.", "answer": "Согласен", "hint": "Agree" },
+      { "sentence": "Давайте ___ этот вопрос.", "answer": "Обсудим", "hint": "To discuss (1st person plural)" },
+      { "sentence": "Нужно найти ___.", "answer": "Компромисс", "hint": "Compromise" },
+      { "sentence": "Это сильный ___.", "answer": "Аргумент", "hint": "Argument / Point" }
+    ]},
+    { "type": "multiple-choice", "items": [
+      { "question": "What does 'Точка зрения' mean?", "options": ["Point of view", "Point of no return", "Eyesight", "Focus"], "answer": 0 },
+      { "question": "How do you say 'To argue' in Russian?", "options": ["Спорить", "Говорить", "Кричать", "Ругать"], "answer": 0 },
+      { "question": "What is 'Доказательство'?", "options": ["Proof / Evidence", "Document", "Declaration", "Description"], "answer": 0 },
+      { "question": "What does 'Возражать' mean?", "options": ["To object", "To agree", "To return", "To answer"], "answer": 0 },
+      { "question": "How do you say 'Conclusion' in Russian?", "options": ["Вывод", "Выход", "Ввод", "Вход"], "answer": 0 }
+    ]}
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "id": "daily-routines",
+  "words": [
+    { "word": "起きる", "reading": "おきる", "meaning": "To wake up", "example": "毎朝六時に起きます。", "exampleMeaning": "I wake up at 6 every morning." },
+    { "word": "歯磨き", "reading": "はみがき", "meaning": "Brushing teeth", "example": "朝と夜に歯磨きをします。", "exampleMeaning": "I brush my teeth morning and night." },
+    { "word": "通勤", "reading": "つうきん", "meaning": "Commuting", "example": "通勤に一時間かかります。", "exampleMeaning": "My commute takes one hour." },
+    { "word": "着替える", "reading": "きがえる", "meaning": "To change clothes", "example": "帰ったらすぐ着替えます。", "exampleMeaning": "I change clothes as soon as I get home." },
+    { "word": "洗濯", "reading": "せんたく", "meaning": "Laundry", "example": "週末に洗濯をします。", "exampleMeaning": "I do laundry on weekends." },
+    { "word": "掃除", "reading": "そうじ", "meaning": "Cleaning", "example": "毎日部屋の掃除をしています。", "exampleMeaning": "I clean my room every day." },
+    { "word": "散歩", "reading": "さんぽ", "meaning": "Walk/Stroll", "example": "夕方に散歩します。", "exampleMeaning": "I take a walk in the evening." },
+    { "word": "入浴", "reading": "にゅうよく", "meaning": "Bathing", "example": "寝る前に入浴します。", "exampleMeaning": "I take a bath before bed." },
+    { "word": "目覚まし", "reading": "めざまし", "meaning": "Alarm clock", "example": "目覚ましを七時にセットしました。", "exampleMeaning": "I set the alarm for 7 o'clock." },
+    { "word": "支度", "reading": "したく", "meaning": "Preparation/Getting ready", "example": "出かける支度をしています。", "exampleMeaning": "I'm getting ready to go out." },
+    { "word": "昼寝", "reading": "ひるね", "meaning": "Nap", "example": "日曜日に昼寝をします。", "exampleMeaning": "I take a nap on Sundays." },
+    { "word": "化粧", "reading": "けしょう", "meaning": "Makeup", "example": "毎朝化粧をしてから出かけます。", "exampleMeaning": "I put on makeup every morning before going out." },
+    { "word": "日課", "reading": "にっか", "meaning": "Daily routine", "example": "ジョギングが日課です。", "exampleMeaning": "Jogging is part of my daily routine." },
+    { "word": "家事", "reading": "かじ", "meaning": "Housework", "example": "家事を分担しています。", "exampleMeaning": "We share the housework." },
+    { "word": "寝る", "reading": "ねる", "meaning": "To sleep/go to bed", "example": "いつも十一時に寝ます。", "exampleMeaning": "I always go to bed at 11." },
+    { "word": "身支度", "reading": "みじたく", "meaning": "Getting dressed/ready", "example": "朝の身支度に三十分かかります。", "exampleMeaning": "It takes 30 minutes to get ready in the morning." }
+  ],
+  "exercises": [
+    { "type": "match", "pairs": 5 },
+    { "type": "fill-blank", "items": [
+      { "sentence": "毎朝六時に___ます。", "answer": "起き", "hint": "Wake up" },
+      { "sentence": "___に一時間かかります。", "answer": "通勤", "hint": "Commuting" },
+      { "sentence": "週末に___をします。", "answer": "洗濯", "hint": "Laundry" },
+      { "sentence": "寝る前に___します。", "answer": "入浴", "hint": "Bathing" },
+      { "sentence": "いつも十一時に___ます。", "answer": "寝", "hint": "Go to bed" }
+    ]},
+    { "type": "multiple-choice", "items": [
+      { "question": "部屋をきれいにすることを何と言いますか。", "options": ["洗濯", "掃除", "家事", "支度"], "answer": 1 },
+      { "question": "「めざまし」はどれですか。", "options": ["昼寝", "日課", "目覚まし", "身支度"], "answer": 2 },
+      { "question": "昼間に少し寝ることを何と言いますか。", "options": ["入浴", "昼寝", "散歩", "寝る"], "answer": 1 },
+      { "question": "毎日する仕事のことを何と言いますか。", "options": ["支度", "化粧", "家事", "日課"], "answer": 3 },
+      { "question": "「せんたく」の意味は何ですか。", "options": ["Cleaning", "Laundry", "Bathing", "Commuting"], "answer": 1 }
+    ]}
+  ]
+}

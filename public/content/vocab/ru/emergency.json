@@ -1,0 +1,38 @@
+{
+  "id": "emergency",
+  "words": [
+    { "word": "Землетрясение", "reading": "zemletryaseniye", "meaning": "Earthquake", "example": "Землетрясение произошло ночью.", "exampleMeaning": "The earthquake happened at night." },
+    { "word": "Эвакуация", "reading": "evakuatsiya", "meaning": "Evacuation", "example": "Началась срочная эвакуация здания.", "exampleMeaning": "An urgent evacuation of the building began." },
+    { "word": "Скорая помощь", "reading": "skoraya pomoshch", "meaning": "Ambulance", "example": "Вызовите скорую помощь!", "exampleMeaning": "Call an ambulance!" },
+    { "word": "Пожар", "reading": "pozhar", "meaning": "Fire", "example": "Пожар потушили за два часа.", "exampleMeaning": "The fire was put out in two hours." },
+    { "word": "Спасатель", "reading": "spasatel", "meaning": "Rescuer", "example": "Спасатели помогли пострадавшим.", "exampleMeaning": "The rescuers helped the victims." },
+    { "word": "Опасность", "reading": "opasnost", "meaning": "Danger", "example": "Здесь есть опасность обвала.", "exampleMeaning": "There is a danger of collapse here." },
+    { "word": "Первая помощь", "reading": "pervaya pomoshch", "meaning": "First aid", "example": "Каждый должен знать правила первой помощи.", "exampleMeaning": "Everyone should know the rules of first aid." },
+    { "word": "Полиция", "reading": "politsiya", "meaning": "Police", "example": "Полиция приехала через пять минут.", "exampleMeaning": "The police arrived in five minutes." },
+    { "word": "Пострадавший", "reading": "postradavshiy", "meaning": "Victim / Injured person", "example": "Пострадавших доставили в больницу.", "exampleMeaning": "The victims were taken to the hospital." },
+    { "word": "Сирена", "reading": "sirena", "meaning": "Siren", "example": "Сирена предупредила жителей об опасности.", "exampleMeaning": "The siren warned the residents of danger." },
+    { "word": "Наводнение", "reading": "navodneniye", "meaning": "Flood", "example": "После дождей началось наводнение.", "exampleMeaning": "After the rains a flood began." },
+    { "word": "Огнетушитель", "reading": "ognetushitel", "meaning": "Fire extinguisher", "example": "Огнетушитель висит в коридоре.", "exampleMeaning": "The fire extinguisher is hanging in the hallway." },
+    { "word": "Убежище", "reading": "ubezhishche", "meaning": "Shelter", "example": "Люди укрылись в убежище.", "exampleMeaning": "People took shelter in the refuge." },
+    { "word": "Вызов", "reading": "vyzov", "meaning": "Emergency call", "example": "Диспетчер принял вызов.", "exampleMeaning": "The dispatcher received the emergency call." },
+    { "word": "Авария", "reading": "avariya", "meaning": "Accident / Crash", "example": "На дороге произошла авария.", "exampleMeaning": "An accident occurred on the road." },
+    { "word": "Безопасность", "reading": "bezopasnost", "meaning": "Safety / Security", "example": "Безопасность пассажиров — наш приоритет.", "exampleMeaning": "Passenger safety is our priority." }
+  ],
+  "exercises": [
+    { "type": "match", "pairs": 6 },
+    { "type": "fill-blank", "items": [
+      { "sentence": "Вызовите ___!", "answer": "Скорую помощь", "hint": "Ambulance (accusative)" },
+      { "sentence": "___ потушили за два часа.", "answer": "Пожар", "hint": "Fire" },
+      { "sentence": "___ приехала через пять минут.", "answer": "Полиция", "hint": "Police" },
+      { "sentence": "___ висит в коридоре.", "answer": "Огнетушитель", "hint": "Fire extinguisher" },
+      { "sentence": "___ пассажиров — наш приоритет.", "answer": "Безопасность", "hint": "Safety" }
+    ]},
+    { "type": "multiple-choice", "items": [
+      { "question": "What does 'Землетрясение' mean?", "options": ["Earthquake", "Thunderstorm", "Flood", "Tornado"], "answer": 0 },
+      { "question": "How do you say 'Rescuer' in Russian?", "options": ["Спасатель", "Полицейский", "Пожарный", "Врач"], "answer": 0 },
+      { "question": "What is 'Убежище'?", "options": ["Shelter", "Building", "Basement", "Hospital"], "answer": 0 },
+      { "question": "What does 'Авария' mean?", "options": ["Accident / Crash", "Adventure", "Avenue", "Aviation"], "answer": 0 },
+      { "question": "How do you say 'Danger' in Russian?", "options": ["Опасность", "Осторожность", "Ответственность", "Очередь"], "answer": 0 }
+    ]}
+  ]
+}

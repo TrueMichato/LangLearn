@@ -1,0 +1,38 @@
+{
+  "id": "media",
+  "words": [
+    { "word": "新聞", "reading": "しんぶん", "meaning": "Newspaper", "example": "毎朝新聞を読みます。", "exampleMeaning": "I read the newspaper every morning." },
+    { "word": "ニュース", "reading": "にゅーす", "meaning": "News", "example": "テレビでニュースを見ました。", "exampleMeaning": "I watched the news on TV." },
+    { "word": "記事", "reading": "きじ", "meaning": "Article", "example": "面白い記事を見つけました。", "exampleMeaning": "I found an interesting article." },
+    { "word": "放送", "reading": "ほうそう", "meaning": "Broadcast", "example": "この番組は毎週放送されます。", "exampleMeaning": "This program is broadcast every week." },
+    { "word": "番組", "reading": "ばんぐみ", "meaning": "Program/Show", "example": "好きな番組は何ですか。", "exampleMeaning": "What's your favorite program?" },
+    { "word": "広告", "reading": "こうこく", "meaning": "Advertisement", "example": "電車の中に広告がたくさんあります。", "exampleMeaning": "There are many advertisements on the train." },
+    { "word": "雑誌", "reading": "ざっし", "meaning": "Magazine", "example": "ファッション雑誌を買いました。", "exampleMeaning": "I bought a fashion magazine." },
+    { "word": "記者", "reading": "きしゃ", "meaning": "Reporter/Journalist", "example": "記者が事件について報告しました。", "exampleMeaning": "The reporter covered the incident." },
+    { "word": "取材", "reading": "しゅざい", "meaning": "Coverage/Interview", "example": "取材のために現場に行きました。", "exampleMeaning": "I went to the scene for coverage." },
+    { "word": "情報", "reading": "じょうほう", "meaning": "Information", "example": "正しい情報を探しています。", "exampleMeaning": "I'm looking for accurate information." },
+    { "word": "報道", "reading": "ほうどう", "meaning": "News reporting", "example": "事故の報道を見ました。", "exampleMeaning": "I saw the news report about the accident." },
+    { "word": "出版", "reading": "しゅっぱん", "meaning": "Publishing", "example": "新しい本が出版されました。", "exampleMeaning": "A new book was published." },
+    { "word": "視聴者", "reading": "しちょうしゃ", "meaning": "Viewer/Audience", "example": "この番組の視聴者は多いです。", "exampleMeaning": "This program has many viewers." },
+    { "word": "インタビュー", "reading": "いんたびゅー", "meaning": "Interview", "example": "有名人にインタビューしました。", "exampleMeaning": "I interviewed a celebrity." },
+    { "word": "速報", "reading": "そくほう", "meaning": "Breaking news", "example": "速報が入りました。", "exampleMeaning": "Breaking news just came in." },
+    { "word": "動画", "reading": "どうが", "meaning": "Video", "example": "面白い動画を見つけました。", "exampleMeaning": "I found a funny video." }
+  ],
+  "exercises": [
+    { "type": "match", "pairs": 5 },
+    { "type": "fill-blank", "items": [
+      { "sentence": "毎朝___を読みます。", "answer": "新聞", "hint": "Newspaper" },
+      { "sentence": "面白い___を見つけました。", "answer": "記事", "hint": "Article" },
+      { "sentence": "好きな___は何ですか。", "answer": "番組", "hint": "Program" },
+      { "sentence": "正しい___を探しています。", "answer": "情報", "hint": "Information" },
+      { "sentence": "新しい本が___されました。", "answer": "出版", "hint": "Published" }
+    ]},
+    { "type": "multiple-choice", "items": [
+      { "question": "ニュースを伝える仕事の人を何と言いますか。", "options": ["視聴者", "記者", "広告", "出版"], "answer": 1 },
+      { "question": "「ほうそう」はどれですか。", "options": ["報道", "放送", "速報", "番組"], "answer": 1 },
+      { "question": "テレビを見る人を何と言いますか。", "options": ["記者", "視聴者", "取材", "番組"], "answer": 1 },
+      { "question": "とても急いで伝えるニュースを何と言いますか。", "options": ["報道", "記事", "速報", "情報"], "answer": 2 },
+      { "question": "「こうこく」の意味は何ですか。", "options": ["Article", "Broadcast", "Advertisement", "Magazine"], "answer": 2 }
+    ]}
+  ]
+}

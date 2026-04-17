@@ -28,5 +28,15 @@
   { "id": "restaurant", "title": "At the Restaurant", "order": 27, "wordCount": 16, "level": "beginner" },
   { "id": "directions", "title": "Directions & Locations", "order": 28, "wordCount": 16, "level": "beginner" },
   { "id": "feelings", "title": "Feelings & Personality", "order": 29, "wordCount": 16, "level": "beginner" },
-  { "id": "workplace", "title": "Workplace & Business", "order": 30, "wordCount": 16, "level": "beginner" }
+  { "id": "workplace", "title": "Workplace & Business", "order": 30, "wordCount": 16, "level": "beginner" },
+  { "id": "education", "title": "Education & School Life", "order": 31, "wordCount": 16, "level": "beginner" },
+  { "id": "law-politics", "title": "Law & Government", "order": 32, "wordCount": 16, "level": "beginner" },
+  { "id": "cooking", "title": "Cooking & Kitchen", "order": 33, "wordCount": 16, "level": "beginner" },
+  { "id": "banking", "title": "Banking & Finance", "order": 34, "wordCount": 16, "level": "beginner" },
+  { "id": "media", "title": "Media & News", "order": 35, "wordCount": 16, "level": "beginner" },
+  { "id": "environment", "title": "Environment & Earth", "order": 36, "wordCount": 16, "level": "beginner" },
+  { "id": "celebrations", "title": "Festivals & Celebrations", "order": 37, "wordCount": 16, "level": "beginner" },
+  { "id": "daily-routines", "title": "Daily Routines & Habits", "order": 38, "wordCount": 16, "level": "beginner" },
+  { "id": "opinions", "title": "Opinions & Discussion", "order": 39, "wordCount": 16, "level": "beginner" },
+  { "id": "emergency", "title": "Emergency & Safety", "order": 40, "wordCount": 16, "level": "beginner" }
 ]

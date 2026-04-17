@@ -1,0 +1,38 @@
+{
+  "id": "education",
+  "words": [
+    { "word": "Урок", "reading": "urok", "meaning": "Lesson", "example": "Урок начинается в девять утра.", "exampleMeaning": "The lesson starts at nine in the morning." },
+    { "word": "Экзамен", "reading": "ekzamen", "meaning": "Exam", "example": "Экзамен будет на следующей неделе.", "exampleMeaning": "The exam will be next week." },
+    { "word": "Домашнее задание", "reading": "domashneye zadaniye", "meaning": "Homework", "example": "Я забыл сделать домашнее задание.", "exampleMeaning": "I forgot to do the homework." },
+    { "word": "Учитель", "reading": "uchitel", "meaning": "Teacher", "example": "Учитель объяснил новую тему.", "exampleMeaning": "The teacher explained the new topic." },
+    { "word": "Ученик", "reading": "uchenik", "meaning": "Student / Pupil", "example": "В классе тридцать учеников.", "exampleMeaning": "There are thirty students in the class." },
+    { "word": "Оценка", "reading": "otsenka", "meaning": "Grade / Mark", "example": "Я получил хорошую оценку.", "exampleMeaning": "I got a good grade." },
+    { "word": "Тетрадь", "reading": "tetrad", "meaning": "Notebook", "example": "Запишите это в тетрадь.", "exampleMeaning": "Write it down in the notebook." },
+    { "word": "Учебник", "reading": "uchebnik", "meaning": "Textbook", "example": "Откройте учебник на странице двадцать.", "exampleMeaning": "Open the textbook to page twenty." },
+    { "word": "Расписание", "reading": "raspisaniye", "meaning": "Schedule / Timetable", "example": "Расписание уроков висит на стене.", "exampleMeaning": "The class schedule is hanging on the wall." },
+    { "word": "Каникулы", "reading": "kanikuly", "meaning": "School holidays", "example": "Летние каникулы длятся три месяца.", "exampleMeaning": "Summer holidays last three months." },
+    { "word": "Библиотека", "reading": "biblioteka", "meaning": "Library", "example": "Я занимаюсь в библиотеке.", "exampleMeaning": "I study in the library." },
+    { "word": "Предмет", "reading": "predmet", "meaning": "Subject", "example": "Математика — мой любимый предмет.", "exampleMeaning": "Math is my favorite subject." },
+    { "word": "Доска", "reading": "doska", "meaning": "Blackboard", "example": "Учитель пишет на доске.", "exampleMeaning": "The teacher writes on the blackboard." },
+    { "word": "Знание", "reading": "znaniye", "meaning": "Knowledge", "example": "Знание — это сила.", "exampleMeaning": "Knowledge is power." },
+    { "word": "Диплом", "reading": "diplom", "meaning": "Diploma / Degree", "example": "Она получила диплом с отличием.", "exampleMeaning": "She received her diploma with honors." },
+    { "word": "Перемена", "reading": "peremena", "meaning": "Break / Recess", "example": "На перемене дети играют во дворе.", "exampleMeaning": "During recess the children play in the yard." }
+  ],
+  "exercises": [
+    { "type": "match", "pairs": 6 },
+    { "type": "fill-blank", "items": [
+      { "sentence": "___ начинается в девять утра.", "answer": "Урок", "hint": "Lesson" },
+      { "sentence": "Я забыл сделать ___.", "answer": "Домашнее задание", "hint": "Homework" },
+      { "sentence": "Откройте ___ на странице двадцать.", "answer": "Учебник", "hint": "Textbook" },
+      { "sentence": "Математика — мой любимый ___.", "answer": "Предмет", "hint": "Subject" },
+      { "sentence": "Она получила ___ с отличием.", "answer": "Диплом", "hint": "Diploma / Degree" }
+    ]},
+    { "type": "multiple-choice", "items": [
+      { "question": "What does 'Экзамен' mean?", "options": ["Exam", "Exercise", "Example", "Experiment"], "answer": 0 },
+      { "question": "How do you say 'Notebook' in Russian?", "options": ["Тетрадь", "Учебник", "Книга", "Блокнот"], "answer": 0 },
+      { "question": "What is 'Каникулы'?", "options": ["School holidays", "Weekend", "Vacation", "Festival"], "answer": 0 },
+      { "question": "What does 'Оценка' mean?", "options": ["Grade / Mark", "Opinion", "Price", "Review"], "answer": 0 },
+      { "question": "How do you say 'Library' in Russian?", "options": ["Библиотека", "Магазин", "Аптека", "Школа"], "answer": 0 }
+    ]}
+  ]
+}

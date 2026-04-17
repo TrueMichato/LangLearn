@@ -1,0 +1,38 @@
+{
+  "id": "law-politics",
+  "words": [
+    { "word": "Закон", "reading": "zakon", "meaning": "Law", "example": "Все граждане должны соблюдать закон.", "exampleMeaning": "All citizens must obey the law." },
+    { "word": "Политика", "reading": "politika", "meaning": "Politics / Policy", "example": "Он интересуется политикой.", "exampleMeaning": "He is interested in politics." },
+    { "word": "Выборы", "reading": "vybory", "meaning": "Elections", "example": "Выборы пройдут в марте.", "exampleMeaning": "The elections will be held in March." },
+    { "word": "Правительство", "reading": "pravitelstvo", "meaning": "Government", "example": "Правительство приняло новый закон.", "exampleMeaning": "The government passed a new law." },
+    { "word": "Президент", "reading": "prezident", "meaning": "President", "example": "Президент выступил с речью.", "exampleMeaning": "The president gave a speech." },
+    { "word": "Суд", "reading": "sud", "meaning": "Court", "example": "Дело рассматривается в суде.", "exampleMeaning": "The case is being heard in court." },
+    { "word": "Гражданин", "reading": "grazhdanin", "meaning": "Citizen", "example": "Каждый гражданин имеет право голоса.", "exampleMeaning": "Every citizen has the right to vote." },
+    { "word": "Конституция", "reading": "konstitutsiya", "meaning": "Constitution", "example": "Конституция гарантирует свободу слова.", "exampleMeaning": "The constitution guarantees freedom of speech." },
+    { "word": "Депутат", "reading": "deputat", "meaning": "Deputy / Legislator", "example": "Депутат представляет интересы народа.", "exampleMeaning": "The deputy represents the interests of the people." },
+    { "word": "Право", "reading": "pravo", "meaning": "Right / Law", "example": "У каждого человека есть право на образование.", "exampleMeaning": "Every person has the right to education." },
+    { "word": "Налог", "reading": "nalog", "meaning": "Tax", "example": "Нужно заплатить налог до апреля.", "exampleMeaning": "You need to pay the tax by April." },
+    { "word": "Партия", "reading": "partiya", "meaning": "Party (political)", "example": "Он вступил в политическую партию.", "exampleMeaning": "He joined a political party." },
+    { "word": "Голосование", "reading": "golosovaniye", "meaning": "Voting", "example": "Голосование проходит анонимно.", "exampleMeaning": "Voting takes place anonymously." },
+    { "word": "Адвокат", "reading": "advokat", "meaning": "Lawyer", "example": "Адвокат защищает подсудимого.", "exampleMeaning": "The lawyer defends the defendant." },
+    { "word": "Свобода", "reading": "svoboda", "meaning": "Freedom", "example": "Свобода слова — важное право.", "exampleMeaning": "Freedom of speech is an important right." },
+    { "word": "Штраф", "reading": "shtraf", "meaning": "Fine / Penalty", "example": "Он получил штраф за нарушение.", "exampleMeaning": "He received a fine for the violation." }
+  ],
+  "exercises": [
+    { "type": "match", "pairs": 6 },
+    { "type": "fill-blank", "items": [
+      { "sentence": "Все граждане должны соблюдать ___.", "answer": "Закон", "hint": "Law" },
+      { "sentence": "___ пройдут в марте.", "answer": "Выборы", "hint": "Elections" },
+      { "sentence": "___ приняло новый закон.", "answer": "Правительство", "hint": "Government" },
+      { "sentence": "Дело рассматривается в ___.", "answer": "Суде", "hint": "Court (prepositional)" },
+      { "sentence": "___ слова — важное право.", "answer": "Свобода", "hint": "Freedom" }
+    ]},
+    { "type": "multiple-choice", "items": [
+      { "question": "What does 'Выборы' mean?", "options": ["Elections", "Choice", "Selection", "Exam"], "answer": 0 },
+      { "question": "How do you say 'Lawyer' in Russian?", "options": ["Адвокат", "Судья", "Депутат", "Врач"], "answer": 0 },
+      { "question": "What is 'Конституция'?", "options": ["Constitution", "Construction", "Consultation", "Convention"], "answer": 0 },
+      { "question": "What does 'Налог' mean?", "options": ["Tax", "Salary", "Bonus", "Debt"], "answer": 0 },
+      { "question": "How do you say 'Citizen' in Russian?", "options": ["Гражданин", "Человек", "Житель", "Народ"], "answer": 0 }
+    ]}
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "id": "opinions",
+  "words": [
+    { "word": "意見", "reading": "いけん", "meaning": "Opinion", "example": "あなたの意見を聞かせてください。", "exampleMeaning": "Please tell me your opinion." },
+    { "word": "賛成", "reading": "さんせい", "meaning": "Agreement/Approval", "example": "その考えに賛成です。", "exampleMeaning": "I agree with that idea." },
+    { "word": "反対", "reading": "はんたい", "meaning": "Opposition/Disagreement", "example": "その計画に反対します。", "exampleMeaning": "I oppose that plan." },
+    { "word": "議論", "reading": "ぎろん", "meaning": "Discussion/Debate", "example": "みんなで議論しましょう。", "exampleMeaning": "Let's discuss together." },
+    { "word": "理由", "reading": "りゆう", "meaning": "Reason", "example": "理由を教えてください。", "exampleMeaning": "Please tell me the reason." },
+    { "word": "主張", "reading": "しゅちょう", "meaning": "Claim/Assertion", "example": "自分の主張をはっきり言いました。", "exampleMeaning": "I clearly stated my claim." },
+    { "word": "批判", "reading": "ひはん", "meaning": "Criticism", "example": "批判を受けました。", "exampleMeaning": "I received criticism." },
+    { "word": "提案", "reading": "ていあん", "meaning": "Proposal/Suggestion", "example": "新しい提案があります。", "exampleMeaning": "I have a new proposal." },
+    { "word": "結論", "reading": "けつろん", "meaning": "Conclusion", "example": "最後に結論を出しました。", "exampleMeaning": "We reached a conclusion at the end." },
+    { "word": "立場", "reading": "たちば", "meaning": "Position/Standpoint", "example": "相手の立場を考えましょう。", "exampleMeaning": "Let's consider the other person's standpoint." },
+    { "word": "説明", "reading": "せつめい", "meaning": "Explanation", "example": "もう一度説明してください。", "exampleMeaning": "Please explain one more time." },
+    { "word": "比較", "reading": "ひかく", "meaning": "Comparison", "example": "二つの案を比較しました。", "exampleMeaning": "I compared the two proposals." },
+    { "word": "根拠", "reading": "こんきょ", "meaning": "Evidence/Basis", "example": "根拠を示してください。", "exampleMeaning": "Please show your evidence." },
+    { "word": "妥協", "reading": "だきょう", "meaning": "Compromise", "example": "お互いに妥協が必要です。", "exampleMeaning": "Both sides need to compromise." },
+    { "word": "納得", "reading": "なっとく", "meaning": "Acceptance/Understanding", "example": "やっと納得しました。", "exampleMeaning": "I finally understood and accepted it." },
+    { "word": "矛盾", "reading": "むじゅん", "meaning": "Contradiction", "example": "話に矛盾があります。", "exampleMeaning": "There's a contradiction in the story." }
+  ],
+  "exercises": [
+    { "type": "match", "pairs": 5 },
+    { "type": "fill-blank", "items": [
+      { "sentence": "あなたの___を聞かせてください。", "answer": "意見", "hint": "Opinion" },
+      { "sentence": "その考えに___です。", "answer": "賛成", "hint": "Agreement" },
+      { "sentence": "___を教えてください。", "answer": "理由", "hint": "Reason" },
+      { "sentence": "新しい___があります。", "answer": "提案", "hint": "Proposal" },
+      { "sentence": "最後に___を出しました。", "answer": "結論", "hint": "Conclusion" }
+    ]},
+    { "type": "multiple-choice", "items": [
+      { "question": "ある考えに「いいえ」と言うことを何と言いますか。", "options": ["賛成", "反対", "妥協", "納得"], "answer": 1 },
+      { "question": "「ぎろん」はどれですか。", "options": ["意見", "議論", "批判", "説明"], "answer": 1 },
+      { "question": "自分の考えを強く言うことを何と言いますか。", "options": ["提案", "比較", "主張", "妥協"], "answer": 2 },
+      { "question": "話の中で合わないところを何と言いますか。", "options": ["根拠", "矛盾", "結論", "立場"], "answer": 1 },
+      { "question": "「だきょう」の意味は何ですか。", "options": ["Criticism", "Evidence", "Compromise", "Conclusion"], "answer": 2 }
+    ]}
+  ]
+}

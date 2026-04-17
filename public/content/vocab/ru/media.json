@@ -1,0 +1,38 @@
+{
+  "id": "media",
+  "words": [
+    { "word": "Газета", "reading": "gazeta", "meaning": "Newspaper", "example": "Дедушка читает газету каждое утро.", "exampleMeaning": "Grandpa reads the newspaper every morning." },
+    { "word": "Новости", "reading": "novosti", "meaning": "News", "example": "Ты смотрел новости сегодня?", "exampleMeaning": "Did you watch the news today?" },
+    { "word": "Статья", "reading": "statya", "meaning": "Article", "example": "Я прочитал интересную статью.", "exampleMeaning": "I read an interesting article." },
+    { "word": "Журналист", "reading": "zhurnalist", "meaning": "Journalist", "example": "Журналист берёт интервью у политика.", "exampleMeaning": "The journalist is interviewing a politician." },
+    { "word": "Телевидение", "reading": "televideniye", "meaning": "Television", "example": "Телевидение — популярный источник информации.", "exampleMeaning": "Television is a popular source of information." },
+    { "word": "Радио", "reading": "radio", "meaning": "Radio", "example": "Я слушаю радио в машине.", "exampleMeaning": "I listen to the radio in the car." },
+    { "word": "Реклама", "reading": "reklama", "meaning": "Advertisement / Advertising", "example": "Реклама прервала фильм.", "exampleMeaning": "The advertisement interrupted the movie." },
+    { "word": "Канал", "reading": "kanal", "meaning": "Channel", "example": "Переключи на другой канал.", "exampleMeaning": "Switch to a different channel." },
+    { "word": "Интервью", "reading": "intervyu", "meaning": "Interview", "example": "Он дал интервью газете.", "exampleMeaning": "He gave an interview to the newspaper." },
+    { "word": "Редактор", "reading": "redaktor", "meaning": "Editor", "example": "Редактор проверяет текст статьи.", "exampleMeaning": "The editor checks the text of the article." },
+    { "word": "Публикация", "reading": "publikatsiya", "meaning": "Publication", "example": "Публикация вышла вчера.", "exampleMeaning": "The publication came out yesterday." },
+    { "word": "Заголовок", "reading": "zagolovok", "meaning": "Headline / Title", "example": "Заголовок привлёк моё внимание.", "exampleMeaning": "The headline caught my attention." },
+    { "word": "Репортаж", "reading": "reportazh", "meaning": "Report / Coverage", "example": "Репортаж показали в вечерних новостях.", "exampleMeaning": "The report was shown on the evening news." },
+    { "word": "Журнал", "reading": "zhurnal", "meaning": "Magazine", "example": "Она купила модный журнал.", "exampleMeaning": "She bought a fashion magazine." },
+    { "word": "Подписка", "reading": "podpiska", "meaning": "Subscription", "example": "Я оформил подписку на газету.", "exampleMeaning": "I subscribed to the newspaper." },
+    { "word": "Прямой эфир", "reading": "pryamoy efir", "meaning": "Live broadcast", "example": "Матч показывают в прямом эфире.", "exampleMeaning": "The match is shown live." }
+  ],
+  "exercises": [
+    { "type": "match", "pairs": 6 },
+    { "type": "fill-blank", "items": [
+      { "sentence": "Дедушка читает ___ каждое утро.", "answer": "Газету", "hint": "Newspaper (accusative)" },
+      { "sentence": "Я прочитал интересную ___.", "answer": "Статью", "hint": "Article (accusative)" },
+      { "sentence": "___ прервала фильм.", "answer": "Реклама", "hint": "Advertisement" },
+      { "sentence": "___ привлёк моё внимание.", "answer": "Заголовок", "hint": "Headline" },
+      { "sentence": "Матч показывают в ___.", "answer": "Прямом эфире", "hint": "Live broadcast (prepositional)" }
+    ]},
+    { "type": "multiple-choice", "items": [
+      { "question": "What does 'Журналист' mean?", "options": ["Journalist", "Magazine", "Journal", "Editor"], "answer": 0 },
+      { "question": "How do you say 'Channel' in Russian?", "options": ["Канал", "Кабель", "Камера", "Кассета"], "answer": 0 },
+      { "question": "What is 'Подписка'?", "options": ["Subscription", "Signature", "Writing", "Post"], "answer": 0 },
+      { "question": "What does 'Репортаж' mean?", "options": ["Report / Coverage", "Repair", "Repetition", "Result"], "answer": 0 },
+      { "question": "How do you say 'News' in Russian?", "options": ["Новости", "Новинки", "Нового", "Новизна"], "answer": 0 }
+    ]}
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "id": "banking",
+  "words": [
+    { "word": "銀行", "reading": "ぎんこう", "meaning": "Bank", "example": "銀行に行ってきます。", "exampleMeaning": "I'm going to the bank." },
+    { "word": "口座", "reading": "こうざ", "meaning": "Bank account", "example": "新しい口座を開きました。", "exampleMeaning": "I opened a new bank account." },
+    { "word": "貯金", "reading": "ちょきん", "meaning": "Savings", "example": "毎月貯金しています。", "exampleMeaning": "I save money every month." },
+    { "word": "振り込み", "reading": "ふりこみ", "meaning": "Bank transfer", "example": "家賃を振り込みました。", "exampleMeaning": "I transferred the rent payment." },
+    { "word": "引き出す", "reading": "ひきだす", "meaning": "To withdraw", "example": "ATMでお金を引き出しました。", "exampleMeaning": "I withdrew money from the ATM." },
+    { "word": "預ける", "reading": "あずける", "meaning": "To deposit", "example": "お金を銀行に預けました。", "exampleMeaning": "I deposited money at the bank." },
+    { "word": "利息", "reading": "りそく", "meaning": "Interest", "example": "この口座の利息は低いです。", "exampleMeaning": "The interest on this account is low." },
+    { "word": "ローン", "reading": "ろーん", "meaning": "Loan", "example": "家のローンを払っています。", "exampleMeaning": "I'm paying a home loan." },
+    { "word": "現金", "reading": "げんきん", "meaning": "Cash", "example": "現金で払いますか。", "exampleMeaning": "Will you pay with cash?" },
+    { "word": "クレジットカード", "reading": "くれじっとかーど", "meaning": "Credit card", "example": "クレジットカードで払えますか。", "exampleMeaning": "Can I pay by credit card?" },
+    { "word": "手数料", "reading": "てすうりょう", "meaning": "Fee/Commission", "example": "振り込みの手数料は二百円です。", "exampleMeaning": "The transfer fee is 200 yen." },
+    { "word": "残高", "reading": "ざんだか", "meaning": "Balance", "example": "口座の残高を確認しました。", "exampleMeaning": "I checked my account balance." },
+    { "word": "為替", "reading": "かわせ", "meaning": "Exchange rate", "example": "今日の為替はいくらですか。", "exampleMeaning": "What's today's exchange rate?" },
+    { "word": "領収書", "reading": "りょうしゅうしょ", "meaning": "Receipt", "example": "領収書をください。", "exampleMeaning": "Please give me a receipt." },
+    { "word": "預金", "reading": "よきん", "meaning": "Deposit/Savings", "example": "定期預金を始めました。", "exampleMeaning": "I started a fixed-term deposit." },
+    { "word": "送金", "reading": "そうきん", "meaning": "Remittance", "example": "海外に送金しました。", "exampleMeaning": "I sent money overseas." }
+  ],
+  "exercises": [
+    { "type": "match", "pairs": 5 },
+    { "type": "fill-blank", "items": [
+      { "sentence": "新しい___を開きました。", "answer": "口座", "hint": "Bank account" },
+      { "sentence": "毎月___しています。", "answer": "貯金", "hint": "Savings" },
+      { "sentence": "ATMでお金を___ました。", "answer": "引き出し", "hint": "Withdrew" },
+      { "sentence": "___で払いますか。", "answer": "現金", "hint": "Cash" },
+      { "sentence": "口座の___を確認しました。", "answer": "残高", "hint": "Balance" }
+    ]},
+    { "type": "multiple-choice", "items": [
+      { "question": "お金を銀行に入れることを何と言いますか。", "options": ["引き出す", "預ける", "振り込み", "送金"], "answer": 1 },
+      { "question": "「てすうりょう」はどれですか。", "options": ["利息", "手数料", "残高", "為替"], "answer": 1 },
+      { "question": "家を買うために銀行から借りるお金を何と言いますか。", "options": ["貯金", "現金", "ローン", "預金"], "answer": 2 },
+      { "question": "他の人の口座にお金を送ることを何と言いますか。", "options": ["引き出す", "預ける", "振り込み", "貯金"], "answer": 2 },
+      { "question": "「りょうしゅうしょ」の意味は何ですか。", "options": ["Balance", "Receipt", "Interest", "Fee"], "answer": 1 }
+    ]}
+  ]
+}

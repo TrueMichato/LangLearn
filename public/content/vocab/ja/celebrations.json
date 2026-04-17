@@ -1,0 +1,38 @@
+{
+  "id": "celebrations",
+  "words": [
+    { "word": "祭り", "reading": "まつり", "meaning": "Festival", "example": "夏に祭りに行きました。", "exampleMeaning": "I went to a festival in summer." },
+    { "word": "正月", "reading": "しょうがつ", "meaning": "New Year", "example": "正月に家族と過ごします。", "exampleMeaning": "I spend New Year with family." },
+    { "word": "花見", "reading": "はなみ", "meaning": "Cherry blossom viewing", "example": "春に花見をしましょう。", "exampleMeaning": "Let's go cherry blossom viewing in spring." },
+    { "word": "七夕", "reading": "たなばた", "meaning": "Star Festival", "example": "七夕に願い事を書きます。", "exampleMeaning": "We write wishes on Tanabata." },
+    { "word": "お盆", "reading": "おぼん", "meaning": "Obon Festival", "example": "お盆に実家に帰ります。", "exampleMeaning": "I go back to my hometown during Obon." },
+    { "word": "年賀状", "reading": "ねんがじょう", "meaning": "New Year's card", "example": "年賀状を五十枚書きました。", "exampleMeaning": "I wrote 50 New Year's cards." },
+    { "word": "お祝い", "reading": "おいわい", "meaning": "Celebration", "example": "誕生日のお祝いをしました。", "exampleMeaning": "We had a birthday celebration." },
+    { "word": "花火", "reading": "はなび", "meaning": "Fireworks", "example": "夏に花火大会があります。", "exampleMeaning": "There's a fireworks festival in summer." },
+    { "word": "お守り", "reading": "おまもり", "meaning": "Charm/Amulet", "example": "神社でお守りを買いました。", "exampleMeaning": "I bought a charm at the shrine." },
+    { "word": "初詣", "reading": "はつもうで", "meaning": "New Year's shrine visit", "example": "一月に初詣に行きます。", "exampleMeaning": "I go to the shrine for New Year's visit in January." },
+    { "word": "成人式", "reading": "せいじんしき", "meaning": "Coming-of-age ceremony", "example": "二十歳の時に成人式がありました。", "exampleMeaning": "There was a coming-of-age ceremony when I turned 20." },
+    { "word": "餅", "reading": "もち", "meaning": "Rice cake", "example": "正月に餅を食べます。", "exampleMeaning": "We eat rice cakes on New Year." },
+    { "word": "浴衣", "reading": "ゆかた", "meaning": "Yukata (summer kimono)", "example": "祭りに浴衣を着ました。", "exampleMeaning": "I wore a yukata to the festival." },
+    { "word": "神社", "reading": "じんじゃ", "meaning": "Shrine", "example": "近くの神社にお参りしました。", "exampleMeaning": "I visited the nearby shrine." },
+    { "word": "おせち料理", "reading": "おせちりょうり", "meaning": "New Year dishes", "example": "おせち料理を作りました。", "exampleMeaning": "I prepared New Year dishes." },
+    { "word": "盆踊り", "reading": "ぼんおどり", "meaning": "Bon dance", "example": "盆踊りに参加しました。", "exampleMeaning": "I participated in the Bon dance." }
+  ],
+  "exercises": [
+    { "type": "match", "pairs": 5 },
+    { "type": "fill-blank", "items": [
+      { "sentence": "夏に___に行きました。", "answer": "祭り", "hint": "Festival" },
+      { "sentence": "春に___をしましょう。", "answer": "花見", "hint": "Cherry blossom viewing" },
+      { "sentence": "___に願い事を書きます。", "answer": "七夕", "hint": "Star Festival" },
+      { "sentence": "神社で___を買いました。", "answer": "お守り", "hint": "Charm" },
+      { "sentence": "正月に___を食べます。", "answer": "餅", "hint": "Rice cake" }
+    ]},
+    { "type": "multiple-choice", "items": [
+      { "question": "一月一日に神社に行くことを何と言いますか。", "options": ["花見", "お盆", "初詣", "成人式"], "answer": 2 },
+      { "question": "「はなび」はどれですか。", "options": ["花見", "花火", "祭り", "盆踊り"], "answer": 1 },
+      { "question": "正月に送るカードを何と言いますか。", "options": ["お守り", "お祝い", "年賀状", "おせち料理"], "answer": 2 },
+      { "question": "夏に着る軽い着物を何と言いますか。", "options": ["浴衣", "お守り", "餅", "花火"], "answer": 0 },
+      { "question": "「せいじんしき」の意味は何ですか。", "options": ["New Year", "Coming-of-age ceremony", "Festival", "Shrine visit"], "answer": 1 }
+    ]}
+  ]
+}

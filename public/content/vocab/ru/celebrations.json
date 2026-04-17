@@ -1,0 +1,38 @@
+{
+  "id": "celebrations",
+  "words": [
+    { "word": "Праздник", "reading": "prazdnik", "meaning": "Holiday / Festival", "example": "Праздник отмечают всей семьёй.", "exampleMeaning": "The holiday is celebrated with the whole family." },
+    { "word": "Новый год", "reading": "novyy god", "meaning": "New Year", "example": "Новый год — самый любимый праздник.", "exampleMeaning": "New Year is the most beloved holiday." },
+    { "word": "Свадьба", "reading": "svadba", "meaning": "Wedding", "example": "Свадьба состоится в июне.", "exampleMeaning": "The wedding will take place in June." },
+    { "word": "День рождения", "reading": "den rozhdeniya", "meaning": "Birthday", "example": "Мой день рождения в октябре.", "exampleMeaning": "My birthday is in October." },
+    { "word": "Подарок", "reading": "podarok", "meaning": "Gift / Present", "example": "Спасибо за замечательный подарок.", "exampleMeaning": "Thank you for the wonderful gift." },
+    { "word": "Торт", "reading": "tort", "meaning": "Cake", "example": "Мама испекла торт на день рождения.", "exampleMeaning": "Mom baked a cake for the birthday." },
+    { "word": "Поздравление", "reading": "pozdravleniye", "meaning": "Congratulations / Greeting", "example": "Я послал поздравление по почте.", "exampleMeaning": "I sent congratulations by mail." },
+    { "word": "Фейерверк", "reading": "feyerverk", "meaning": "Fireworks", "example": "Фейерверк осветил ночное небо.", "exampleMeaning": "The fireworks lit up the night sky." },
+    { "word": "Традиция", "reading": "traditsiya", "meaning": "Tradition", "example": "У нас есть семейная традиция.", "exampleMeaning": "We have a family tradition." },
+    { "word": "Гость", "reading": "gost", "meaning": "Guest", "example": "Мы ждём гостей к семи часам.", "exampleMeaning": "We are expecting guests by seven o'clock." },
+    { "word": "Ёлка", "reading": "yolka", "meaning": "Christmas tree / New Year tree", "example": "Дети украшают ёлку игрушками.", "exampleMeaning": "The children decorate the tree with ornaments." },
+    { "word": "Маскарад", "reading": "maskarad", "meaning": "Masquerade / Costume party", "example": "На маскараде все были в костюмах.", "exampleMeaning": "Everyone was in costumes at the masquerade." },
+    { "word": "Тост", "reading": "tost", "meaning": "Toast (celebratory)", "example": "Он произнёс тост за здоровье.", "exampleMeaning": "He made a toast to good health." },
+    { "word": "Юбилей", "reading": "yubiley", "meaning": "Anniversary / Jubilee", "example": "Они отмечают золотой юбилей.", "exampleMeaning": "They are celebrating a golden anniversary." },
+    { "word": "Украшение", "reading": "ukrasheniye", "meaning": "Decoration / Ornament", "example": "Украшения для праздника уже готовы.", "exampleMeaning": "The decorations for the celebration are ready." },
+    { "word": "Приглашение", "reading": "priglasheniye", "meaning": "Invitation", "example": "Я получил приглашение на свадьбу.", "exampleMeaning": "I received an invitation to the wedding." }
+  ],
+  "exercises": [
+    { "type": "match", "pairs": 6 },
+    { "type": "fill-blank", "items": [
+      { "sentence": "___ — самый любимый праздник.", "answer": "Новый год", "hint": "New Year" },
+      { "sentence": "___ состоится в июне.", "answer": "Свадьба", "hint": "Wedding" },
+      { "sentence": "Спасибо за замечательный ___.", "answer": "Подарок", "hint": "Gift / Present" },
+      { "sentence": "Дети украшают ___ игрушками.", "answer": "Ёлку", "hint": "New Year tree (accusative)" },
+      { "sentence": "Я получил ___ на свадьбу.", "answer": "Приглашение", "hint": "Invitation" }
+    ]},
+    { "type": "multiple-choice", "items": [
+      { "question": "What does 'Фейерверк' mean?", "options": ["Fireworks", "Fireplace", "Festival", "Fairy tale"], "answer": 0 },
+      { "question": "How do you say 'Guest' in Russian?", "options": ["Гость", "Друг", "Сосед", "Родственник"], "answer": 0 },
+      { "question": "What is 'Юбилей'?", "options": ["Anniversary / Jubilee", "Birthday", "Wedding", "Holiday"], "answer": 0 },
+      { "question": "What does 'Традиция' mean?", "options": ["Tradition", "Translation", "Transaction", "Transition"], "answer": 0 },
+      { "question": "How do you say 'Cake' in Russian?", "options": ["Торт", "Хлеб", "Пирог", "Булка"], "answer": 0 }
+    ]}
+  ]
+}
