@@ -29,6 +29,7 @@ export default function VocabLessonView({ lang, lessonId, onBack }: Props) {
   const [wordCardIdx, setWordCardIdx] = useState(0);
   const [addingWords, setAddingWords] = useState(false);
   const [wordsAdded, setWordsAdded] = useState(false);
+  const [savedWords, setSavedWords] = useState<Record<string, 'saving' | 'saved' | 'exists'>>({});
   const timerStarted = useRef(false);
   const start = useTimerStore((s) => s.start);
   const stop = useTimerStore((s) => s.stop);
@@ -55,6 +56,42 @@ export default function VocabLessonView({ lang, lessonId, onBack }: Props) {
       }
     };
   }, [lesson, start, stop]);
+
+  // Check which words already exist in SRS when lesson loads
+  useEffect(() => {
+    if (!lesson) return;
+    (async () => {
+      const existing: Record<string, 'exists'> = {};
+      for (const w of lesson.words) {
+        if (await wordExists(w.word, lang)) {
+          existing[w.word] = 'exists';
+        }
+      }
+      if (Object.keys(existing).length > 0) {
+        setSavedWords((prev) => ({ ...prev, ...existing }));
+      }
+    })();
+  }, [lesson, lang]);
+
+  async function handleSaveWord(w: VocabLesson['words'][number]) {
+    if (savedWords[w.word]) return;
+    setSavedWords((prev) => ({ ...prev, [w.word]: 'saving' }));
+    const exists = await wordExists(w.word, lang);
+    if (exists) {
+      setSavedWords((prev) => ({ ...prev, [w.word]: 'exists' }));
+      return;
+    }
+    await addWord({
+      language: lang,
+      word: w.word,
+      reading: w.reading,
+      meaning: w.meaning,
+      contextSentence: w.example,
+      sourceTextId: null,
+      tags: ['vocab-lesson', lessonId],
+    });
+    setSavedWords((prev) => ({ ...prev, [w.word]: 'saved' }));
+  }
 
   if (loading) {
     return (
@@ -150,6 +187,27 @@ export default function VocabLessonView({ lang, lessonId, onBack }: Props) {
             </button>
             <p className="text-lg text-gray-500 dark:text-gray-400">{word.reading}</p>
             <p className="text-xl font-semibold text-indigo-600 dark:text-indigo-400">{word.meaning}</p>
+            <button
+              onClick={() => handleSaveWord(word)}
+              disabled={!!savedWords[word.word]}
+              className={`inline-flex items-center gap-1 px-3 py-1.5 rounded-lg text-sm font-medium transition-colors min-h-[36px] ${
+                savedWords[word.word] === 'saved'
+                  ? 'bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-300'
+                  : savedWords[word.word] === 'exists'
+                    ? 'bg-gray-100 dark:bg-gray-700 text-gray-500 dark:text-gray-400'
+                    : savedWords[word.word] === 'saving'
+                      ? 'bg-gray-100 dark:bg-gray-700 text-gray-400'
+                      : 'bg-indigo-50 dark:bg-indigo-900/30 text-indigo-600 dark:text-indigo-400 hover:bg-indigo-100 dark:hover:bg-indigo-900/50'
+              }`}
+            >
+              {savedWords[word.word] === 'saved'
+                ? '✓ Saved'
+                : savedWords[word.word] === 'exists'
+                  ? '✓ Already saved'
+                  : savedWords[word.word] === 'saving'
+                    ? 'Saving…'
+                    : '➕ Save to flashcards'}
+            </button>
           </div>
 
           <div className="mt-5 pt-4 border-t border-gray-100 dark:border-gray-700">
