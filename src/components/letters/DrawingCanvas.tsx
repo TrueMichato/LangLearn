@@ -105,16 +105,19 @@ export default function DrawingCanvas({ characters, alphabetName, language, onPr
     if (!ctx) return;
 
     const dpr = window.devicePixelRatio || 1;
-    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    // Use CSS dimensions (context is already scaled by dpr)
+    const cssW = canvas.width / dpr;
+    const cssH = canvas.height / dpr;
+    ctx.clearRect(0, 0, cssW, cssH);
 
     if (showGuide) {
       ctx.save();
-      ctx.font = `${150 * dpr}px serif`;
+      ctx.font = '150px serif';
       const isDark = document.documentElement.classList.contains('dark');
       ctx.fillStyle = isDark ? 'rgba(200, 200, 200, 0.3)' : 'rgba(180, 180, 180, 0.2)';
       ctx.textAlign = 'center';
       ctx.textBaseline = 'middle';
-      ctx.fillText(current.char, canvas.width / 2, canvas.height / 2);
+      ctx.fillText(current.char, cssW / 2, cssH / 2);
       ctx.restore();
     }
   }, [showGuide, current.char]);
