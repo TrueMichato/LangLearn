@@ -1,29 +1,177 @@
 [
-  { "id": "particles", "title": "Basic Particles (は、が、を、に、で)", "order": 1 },
-  { "id": "verb-forms", "title": "Verb Forms (ます、て、た)", "order": 2 },
-  { "id": "adjectives", "title": "Adjective Types (い vs な adjectives)", "order": 3 },
-  { "id": "counters", "title": "Counting & Counters (一つ、一人、一匹)", "order": 4 },
-  { "id": "giving-receiving", "title": "Giving & Receiving (あげる、もらう、くれる)", "order": 5 },
-  { "id": "potential", "title": "Potential Form (食べられる)", "order": 6 },
-  { "id": "conditional", "title": "Conditional Forms (たら、ば、なら、と)", "order": 7 },
-  { "id": "passive", "title": "Passive Voice (食べられる)", "order": 8 },
-  { "id": "causative", "title": "Causative Form (食べさせる)", "order": 9 },
-  { "id": "honorific", "title": "Honorific & Humble Speech (敬語)", "order": 10 },
-  { "id": "relative-clauses", "title": "Relative Clauses", "order": 11 },
-  { "id": "desire", "title": "Expressing Desire (たい、ほしい)", "order": 12 },
-  { "id": "quoting", "title": "Quoting & Reported Speech (と言う)", "order": 13 },
-  { "id": "comparatives", "title": "Comparative & Superlative (より、一番)", "order": 14 },
-  { "id": "time-expressions", "title": "Time Expressions & Frequency", "order": 15 },
-  { "id": "conjunctions", "title": "Conjunctions & Connectors", "order": 16 },
-  { "id": "sentence-particles", "title": "Sentence-Ending Particles (ね、よ、な)", "order": 17 },
-  { "id": "patterns", "title": "Useful Grammar Patterns", "order": 18 },
-  { "id": "transitive-intransitive", "title": "Transitive & Intransitive Verbs (開ける/開く)", "order": 19 },
-  { "id": "nominalizers", "title": "Nominalizers (の、こと)", "order": 20 },
-  { "id": "volitional", "title": "Volitional Form (食べよう、行こう)", "order": 21 },
-  { "id": "imperative", "title": "Imperative & Prohibitive (食べろ、食べるな)", "order": 22 },
-  { "id": "hearsay", "title": "Hearsay & Appearance (そうだ、ようだ、らしい)", "order": 23 },
-  { "id": "temo", "title": "Even if / Although (ても、のに、けど)", "order": 24 },
-  { "id": "compound-verbs", "title": "Compound Verbs (始める、続ける、終わる)", "order": 25 },
-  { "id": "purpose", "title": "Expressing Purpose (ために、ように、のに)", "order": 32 },
-  { "id": "while-during", "title": "While & During (ながら、間に、うちに)", "order": 33 }
+  {
+    "id": "particles",
+    "title": "Basic Particles (は、が、を、に、で)",
+    "order": 1
+  },
+  {
+    "id": "verb-forms",
+    "title": "Verb Forms (ます、て、た)",
+    "order": 2
+  },
+  {
+    "id": "adjectives",
+    "title": "Adjective Types (い vs な adjectives)",
+    "order": 3
+  },
+  {
+    "id": "counters",
+    "title": "Counting & Counters (一つ、一人、一匹)",
+    "order": 4
+  },
+  {
+    "id": "giving-receiving",
+    "title": "Giving & Receiving (あげる、もらう、くれる)",
+    "order": 5
+  },
+  {
+    "id": "potential",
+    "title": "Potential Form (食べられる)",
+    "order": 6
+  },
+  {
+    "id": "conditional",
+    "title": "Conditional Forms (たら、ば、なら、と)",
+    "order": 7
+  },
+  {
+    "id": "passive",
+    "title": "Passive Voice (食べられる)",
+    "order": 8
+  },
+  {
+    "id": "causative",
+    "title": "Causative Form (食べさせる)",
+    "order": 9
+  },
+  {
+    "id": "honorific",
+    "title": "Honorific & Humble Speech (敬語)",
+    "order": 10
+  },
+  {
+    "id": "relative-clauses",
+    "title": "Relative Clauses",
+    "order": 11
+  },
+  {
+    "id": "desire",
+    "title": "Expressing Desire (たい、ほしい)",
+    "order": 12
+  },
+  {
+    "id": "quoting",
+    "title": "Quoting & Reported Speech (と言う)",
+    "order": 13
+  },
+  {
+    "id": "comparatives",
+    "title": "Comparative & Superlative (より、一番)",
+    "order": 14
+  },
+  {
+    "id": "time-expressions",
+    "title": "Time Expressions & Frequency",
+    "order": 15
+  },
+  {
+    "id": "conjunctions",
+    "title": "Conjunctions & Connectors",
+    "order": 16
+  },
+  {
+    "id": "sentence-particles",
+    "title": "Sentence-Ending Particles (ね、よ、な)",
+    "order": 17
+  },
+  {
+    "id": "patterns",
+    "title": "Useful Grammar Patterns",
+    "order": 18
+  },
+  {
+    "id": "transitive-intransitive",
+    "title": "Transitive & Intransitive Verbs (開ける/開く)",
+    "order": 19
+  },
+  {
+    "id": "nominalizers",
+    "title": "Nominalizers (の、こと)",
+    "order": 20
+  },
+  {
+    "id": "volitional",
+    "title": "Volitional Form (食べよう、行こう)",
+    "order": 21
+  },
+  {
+    "id": "imperative",
+    "title": "Imperative & Prohibitive (食べろ、食べるな)",
+    "order": 22
+  },
+  {
+    "id": "hearsay",
+    "title": "Hearsay & Appearance (そうだ、ようだ、らしい)",
+    "order": 23
+  },
+  {
+    "id": "temo",
+    "title": "Even if / Although (ても、のに、けど)",
+    "order": 24
+  },
+  {
+    "id": "compound-verbs",
+    "title": "Compound Verbs (始める、続ける、終わる)",
+    "order": 25
+  },
+  {
+    "id": "te-form-uses",
+    "title": "て-Form Advanced Uses (ている、てある、ておく)",
+    "order": 26
+  },
+  {
+    "id": "permission-prohibition",
+    "title": "Permission & Prohibition (てもいい、てはいけない)",
+    "order": 27
+  },
+  {
+    "id": "obligation",
+    "title": "Obligation & Necessity (なければならない、べき)",
+    "order": 28
+  },
+  {
+    "id": "try-attempt",
+    "title": "Trying & Attempting (てみる、ようとする)",
+    "order": 29
+  },
+  {
+    "id": "become-change",
+    "title": "Becoming & Changing (になる、くなる、にする)",
+    "order": 30
+  },
+  {
+    "id": "giving-actions",
+    "title": "Giving & Receiving Actions (てあげる、てもらう、てくれる)",
+    "order": 31
+  },
+  {
+    "id": "purpose",
+    "title": "Expressing Purpose (ために、ように、のに)",
+    "order": 32
+  },
+  {
+    "id": "while-during",
+    "title": "While & During (ながら、間に、うちに)",
+    "order": 33
+  },
+  {
+    "id": "respect-humble",
+    "title": "Advanced Keigo Patterns (お〜になる、お〜する)",
+    "order": 34
+  },
+  {
+    "id": "formal-written",
+    "title": "Formal & Written Japanese (において、に関して、に対して)",
+    "order": 35
+  }
 ]
