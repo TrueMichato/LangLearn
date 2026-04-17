@@ -2,7 +2,9 @@ import { useRef, useState, useEffect, useCallback } from 'react';
 import type { Character } from '../../data/alphabets';
 import { updateCharacterProgress } from '../../db/characters';
 import { addWord, wordExists } from '../../db/words';
+import { XP_PER_CHARACTER_PRACTICE } from '../../lib/xp';
 import { useTimerStore } from '../../stores/timerStore';
+import { useXPStore } from '../../stores/xpStore';
 
 interface Props {
   characters: Character[];
@@ -254,6 +256,10 @@ export default function DrawingCanvas({ characters, alphabetName, language, onPr
     });
     setIsGraded(true);
 
+    if (passed) {
+      useXPStore.getState().addXP(XP_PER_CHARACTER_PRACTICE);
+    }
+
     if (!passed) {
       createSrsCardIfNeeded(current);
     }
@@ -286,6 +292,9 @@ export default function DrawingCanvas({ characters, alphabetName, language, onPr
     const id = `${language}/${alphabetName}/${current.char}`;
     await updateCharacterProgress(id, language, current.char, current.romanji, correct);
     onProgress();
+    if (correct) {
+      useXPStore.getState().addXP(XP_PER_CHARACTER_PRACTICE);
+    }
     if (!correct) {
       createSrsCardIfNeeded(current);
     }

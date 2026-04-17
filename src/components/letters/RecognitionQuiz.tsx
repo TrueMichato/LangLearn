@@ -5,6 +5,7 @@ import { addWord, wordExists } from '../../db/words';
 import { speak } from '../../lib/tts';
 import { XP_PER_QUIZ_CORRECT } from '../../lib/xp';
 import { useTimerStore } from '../../stores/timerStore';
+import { useXPStore } from '../../stores/xpStore';
 
 interface Props {
   characters: Character[];
@@ -92,6 +93,7 @@ export default function RecognitionQuiz({ characters, alphabetName, language, on
     if (correct) {
       setScore((s) => s + 1);
       setTotalScore((s) => s + 1);
+      useXPStore.getState().addXP(XP_PER_QUIZ_CORRECT);
       setXpToast(true);
       setTimeout(() => setXpToast(false), 1200);
     } else {

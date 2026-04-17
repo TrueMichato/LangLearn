@@ -4,6 +4,7 @@ import { speak } from '../../lib/tts';
 import { addWord, wordExists } from '../../db/words';
 import { markLessonComplete } from '../../db/lessons';
 import { useTimerStore } from '../../stores/timerStore';
+import { useXPStore } from '../../stores/xpStore';
 import MatchExercise from './MatchExercise';
 import FillBlankExercise from './FillBlankExercise';
 import VocabQuiz from './VocabQuiz';
@@ -133,6 +134,8 @@ export default function VocabLessonView({ lang, lessonId, onBack }: Props) {
       const finalTotal = totalQuestions + questionCount;
       const score = finalTotal > 0 ? Math.round((finalCorrect / finalTotal) * 100) : 100;
       markLessonComplete(lang, `vocab/${lessonId}`, score);
+      const xp = XP_PER_VOCAB_LESSON + finalCorrect * XP_PER_EXERCISE_CORRECT;
+      useXPStore.getState().addXP(xp);
       setStep('summary');
     } else {
       setExerciseIdx(nextIdx);

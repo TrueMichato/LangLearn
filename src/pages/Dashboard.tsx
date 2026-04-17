@@ -7,6 +7,7 @@ import { getTotalWordCount } from '../db/words';
 import { formatStudyTime } from '../lib/xp';
 import { calculateCurrentStreak, calculateLongestStreak } from '../lib/streaks';
 import { useSettingsStore } from '../stores/settingsStore';
+import { useXPStore } from '../stores/xpStore';
 import HeatMap from '../components/dashboard/HeatMap';
 import LanguageStats from '../components/dashboard/LanguageStats';
 import StudyPlan from '../components/dashboard/StudyPlan';
@@ -17,7 +18,7 @@ interface Stats {
   dueCards: number;
   totalStudySeconds: number;
   weekStudySeconds: number;
-  totalXP: number;
+  timeXP: number;
 }
 
 export default function Dashboard() {
@@ -26,6 +27,7 @@ export default function Dashboard() {
   const [activities, setActivities] = useState<DailyActivity[]>([]);
   const weeklyGoalMinutes = useSettingsStore((s) => s.weeklyGoalMinutes);
   const activeLanguages = useSettingsStore((s) => s.activeLanguages);
+  const bonusXP = useXPStore((s) => s.bonusXP);
   const [showAddModal, setShowAddModal] = useState(false);
 
   useEffect(() => {
@@ -39,7 +41,7 @@ export default function Dashboard() {
         (sum, s) => sum + s.durationSeconds,
         0
       );
-      const totalXP = sessions.reduce((sum, s) => sum + s.xpEarned, 0);
+      const timeXP = sessions.reduce((sum, s) => sum + s.xpEarned, 0);
 
       const weekAgo = new Date();
       weekAgo.setDate(weekAgo.getDate() - 7);
@@ -51,7 +53,7 @@ export default function Dashboard() {
         0
       );
 
-      setStats({ totalWords, dueCards, totalStudySeconds, weekStudySeconds, totalXP });
+      setStats({ totalWords, dueCards, totalStudySeconds, weekStudySeconds, timeXP });
 
       const dailyActivities = await db.dailyActivity.toArray();
       setActivities(dailyActivities);
@@ -106,7 +108,7 @@ export default function Dashboard() {
           value={formatStudyTime(stats.totalStudySeconds)}
           icon="⏱️"
         />
-        <StatCard label="Total XP" value={stats.totalXP} icon="⭐" />
+        <StatCard label="Total XP" value={stats.timeXP + bonusXP} icon="⭐" />
       </div>
 
       {stats.totalWords === 0 && (
