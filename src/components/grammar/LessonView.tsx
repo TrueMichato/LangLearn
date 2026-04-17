@@ -1,7 +1,8 @@
-import { useState, useEffect, useRef, useCallback } from 'react';
+import { useState, useEffect, useRef, useCallback, type ReactNode } from 'react';
 import ReactMarkdown from 'react-markdown';
 import GrammarQuiz from './GrammarQuiz';
 import { markLessonComplete, incrementAttempts } from '../../db/lessons';
+import { addWord } from '../../db/words';
 
 interface LessonViewProps {
   lang: string;
@@ -19,6 +20,96 @@ interface QuizData {
 }
 
 const QUIZ_REGEX = /<!--\s*quiz:(.*?)\s*-->/g;
+
+/** Extract target sentence, romanization, and English translation from a markdown list item. */
+function parseExampleSentence(children: ReactNode): {
+  word: string;
+  reading: string;
+  meaning: string;
+  fullText: string;
+} | null {
+  // Flatten children text content
+  const extractText = (node: ReactNode): string => {
+    if (typeof node === 'string') return node;
+    if (typeof node === 'number') return String(node);
+    if (Array.isArray(node)) return node.map(extractText).join('');
+    if (node && typeof node === 'object' && 'props' in node) {
+      return extractText((node as { props: { children?: ReactNode } }).props.children ?? '');
+    }
+    return '';
+  };
+
+  const text = extractText(children).trim();
+  // Match: TargetSentence (romanization) — English translation
+  // The bold markers are already stripped by react-markdown, so we look for the text pattern.
+  // Pattern: start with text, then (romanization), then — or - followed by English
+  const match = text.match(/^(.+?)\s*\(([^)]+)\)\s*[—–-]\s*(.+)$/);
+  if (!match) return null;
+
+  const word = match[1].trim();
+  const reading = match[2].trim();
+  const meaning = match[3].trim();
+
+  // Sanity: word should be non-latin (has CJK/Cyrillic/etc) or at least non-empty
+  if (!word || !meaning) return null;
+
+  return { word, reading, meaning, fullText: text };
+}
+
+function SaveFlashcardButton({
+  word,
+  reading,
+  meaning,
+  fullText,
+  lang,
+}: {
+  word: string;
+  reading: string;
+  meaning: string;
+  fullText: string;
+  lang: string;
+}) {
+  const [state, setState] = useState<'idle' | 'saving' | 'saved'>('idle');
+
+  const handleClick = async (e: React.MouseEvent) => {
+    e.stopPropagation();
+    if (state !== 'idle') return;
+    setState('saving');
+    try {
+      await addWord({
+        word,
+        reading,
+        meaning,
+        language: lang,
+        contextSentence: fullText,
+        sourceTextId: null,
+        tags: ['grammar'],
+      });
+      setState('saved');
+    } catch {
+      setState('idle');
+    }
+  };
+
+  if (state === 'saved') {
+    return (
+      <span className="inline-flex items-center ml-1.5 text-green-600 dark:text-green-400 text-xs font-medium select-none">
+        ✓
+      </span>
+    );
+  }
+
+  return (
+    <button
+      onClick={handleClick}
+      disabled={state === 'saving'}
+      title="Save as flashcard"
+      className="inline-flex items-center ml-1.5 text-indigo-500 dark:text-indigo-400 hover:text-indigo-700 dark:hover:text-indigo-300 text-xs opacity-60 hover:opacity-100 transition-opacity cursor-pointer select-none disabled:opacity-30"
+    >
+      ➕
+    </button>
+  );
+}
 
 export default function LessonView({ lang, lessonId, onBack, lessons, onNavigate }: LessonViewProps) {
   const [segments, setSegments] = useState<Array<{ type: 'md'; content: string } | { type: 'quiz'; data: QuizData }>>([]);
@@ -134,7 +225,25 @@ export default function LessonView({ lang, lessonId, onBack, lessons, onNavigate
       <div className="prose prose-sm max-w-none dark:prose-invert">
         {segments.map((seg, i) =>
           seg.type === 'md' ? (
-            <ReactMarkdown key={i}>{seg.content}</ReactMarkdown>
+            <ReactMarkdown
+              key={i}
+              components={{
+                li: ({ children, ...props }) => {
+                  const parsed = parseExampleSentence(children);
+                  if (parsed) {
+                    return (
+                      <li {...props}>
+                        {children}
+                        <SaveFlashcardButton {...parsed} lang={lang} />
+                      </li>
+                    );
+                  }
+                  return <li {...props}>{children}</li>;
+                },
+              }}
+            >
+              {seg.content}
+            </ReactMarkdown>
           ) : (
             <GrammarQuiz key={i} {...seg.data} onAnswer={handleQuizAnswer} />
           )
