@@ -50,6 +50,7 @@ export interface DailyActivity {
   cardsReviewed: number;
   wordsAdded: number;
   goalMet: boolean;
+  challengeComplete?: boolean;
 }
 
 export interface LessonProgress {
@@ -73,6 +74,23 @@ export interface CharacterProgress {
   mastery: 'new' | 'learning' | 'mastered';
 }
 
+export interface TestHistory {
+  id?: number;
+  language: string;
+  type: 'vocabulary' | 'grammar' | 'mixed' | 'full';
+  score: number;         // 0-100
+  level: string;         // 'beginner' | 'elementary' | 'intermediate' | 'advanced'
+  totalQuestions: number;
+  correctAnswers: number;
+  durationSeconds: number;
+  date: string;          // ISO date
+}
+
+export interface Badge {
+  id: string;            // e.g. 'xp-100', 'streak-7', 'kanji-50'
+  unlockedAt: string;    // ISO date
+}
+
 const db = new Dexie('LangLearnDB') as Dexie & {
   words: EntityTable<Word, 'id'>;
   reviews: EntityTable<Review, 'id'>;
@@ -82,6 +100,8 @@ const db = new Dexie('LangLearnDB') as Dexie & {
   dailyActivity: EntityTable<DailyActivity, 'date'>;
   lessonProgress: EntityTable<LessonProgress, 'id'>;
   characterProgress: EntityTable<CharacterProgress, 'id'>;
+  testHistory: EntityTable<TestHistory, 'id'>;
+  badges: EntityTable<Badge, 'id'>;
 };
 
 db.version(1).stores({
@@ -130,6 +150,19 @@ db.version(5).stores({
   dailyActivity: 'date, goalMet',
   lessonProgress: 'id, language, lessonId',
   characterProgress: 'id, language, mastery',
+});
+
+db.version(6).stores({
+  words: '++id, [language+createdAt], language, word, createdAt, *tags',
+  reviews: '++id, [wordId+nextReviewDate], wordId, nextReviewDate',
+  texts: '++id, language, createdAt',
+  studySessions: '++id, startTime, activity',
+  settings: 'key',
+  dailyActivity: 'date, goalMet, challengeComplete',
+  lessonProgress: 'id, language, lessonId',
+  characterProgress: 'id, language, mastery',
+  testHistory: '++id, language, type, score, date',
+  badges: 'id, unlockedAt',
 });
 
 export { db };
