@@ -40,7 +40,7 @@ export default function CharacterChart({ characters, alphabetName, language, pro
                     onClick={() => speak(c.char, language)}
                     className={`flex flex-col items-center justify-center p-2 rounded-xl border transition-colors active:scale-95 ${masteryColor(p?.mastery)}`}
                   >
-                    <span className="text-2xl leading-tight">{c.char}</span>
+                    <span className="text-2xl leading-tight text-gray-900 dark:text-gray-100">{c.char}</span>
                     <span className="text-xs text-gray-500 dark:text-gray-400 mt-0.5">{c.romanji}</span>
                     {c.meaning && <span className="text-[10px] text-gray-400 dark:text-gray-500 leading-tight">{c.meaning}</span>}
                   </button>

@@ -1,6 +1,7 @@
 import { useState, useCallback, useMemo } from 'react';
 import type { Character } from '../../data/alphabets';
 import { updateCharacterProgress } from '../../db/characters';
+import { addWord, wordExists } from '../../db/words';
 import { speak } from '../../lib/tts';
 import { XP_PER_QUIZ_CORRECT } from '../../lib/xp';
 import { useTimerStore } from '../../stores/timerStore';
@@ -49,6 +50,7 @@ export default function RecognitionQuiz({ characters, alphabetName, language, on
   const [showResult, setShowResult] = useState(false);
   const [finished, setFinished] = useState(false);
   const [xpToast, setXpToast] = useState(false);
+  const [srsToast, setSrsToast] = useState(false);
   const [hasStartedTimer, setHasStartedTimer] = useState(false);
   const timerStart = useTimerStore((s) => s.start);
   const timerIsRunning = useTimerStore((s) => s.isRunning);
@@ -92,6 +94,29 @@ export default function RecognitionQuiz({ characters, alphabetName, language, on
       setTotalScore((s) => s + 1);
       setXpToast(true);
       setTimeout(() => setXpToast(false), 1200);
+    } else {
+      // Auto-create SRS card for incorrect answers
+      (async () => {
+        try {
+          const exists = await wordExists(currentQuestion.char, language);
+          if (!exists) {
+            const meaning = currentQuestion.meaning || currentQuestion.romanji;
+            await addWord({
+              word: currentQuestion.char,
+              reading: currentQuestion.romanji,
+              meaning,
+              language,
+              contextSentence: `Reading: ${currentQuestion.romanji}${currentQuestion.meaning ? ` (${currentQuestion.meaning})` : ''}`,
+              sourceTextId: null,
+              tags: ['letters'],
+            });
+            setSrsToast(true);
+            setTimeout(() => setSrsToast(false), 1500);
+          }
+        } catch {
+          // Don't block the UI on SRS card creation failure
+        }
+      })();
     }
 
     onProgress();
@@ -181,7 +206,7 @@ export default function RecognitionQuiz({ characters, alphabetName, language, on
       <div className="text-center py-4">
         {currentRound.type === 'char-to-romanji' && (
           <>
-            <span className="text-7xl">{currentQuestion.char}</span>
+            <span className="text-7xl text-gray-900 dark:text-gray-100">{currentQuestion.char}</span>
             {currentQuestion.meaning && (
               <p className="text-sm text-gray-400 dark:text-gray-500 mt-1">{currentQuestion.meaning}</p>
             )}
@@ -251,6 +276,13 @@ export default function RecognitionQuiz({ characters, alphabetName, language, on
       {xpToast && (
         <div className="fixed top-4 right-4 bg-indigo-600 text-white px-4 py-2 rounded-xl shadow-lg text-sm font-medium animate-bounce z-50">
           +{XP_PER_QUIZ_CORRECT} XP
+        </div>
+      )}
+
+      {/* SRS card added toast */}
+      {srsToast && (
+        <div className="fixed top-4 left-4 bg-amber-500 text-white px-4 py-2 rounded-xl shadow-lg text-sm font-medium z-50">
+          Added to review deck
         </div>
       )}
     </div>

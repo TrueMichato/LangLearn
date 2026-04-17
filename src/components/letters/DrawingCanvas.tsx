@@ -1,6 +1,7 @@
 import { useRef, useState, useEffect, useCallback } from 'react';
 import type { Character } from '../../data/alphabets';
 import { updateCharacterProgress } from '../../db/characters';
+import { addWord, wordExists } from '../../db/words';
 import { useTimerStore } from '../../stores/timerStore';
 
 interface Props {
@@ -86,6 +87,7 @@ export default function DrawingCanvas({ characters, alphabetName, language, onPr
   const [hasStartedTimer, setHasStartedTimer] = useState(false);
   const [scoreResult, setScoreResult] = useState<ScoreResult>(null);
   const [isGraded, setIsGraded] = useState(false);
+  const [srsToast, setSrsToast] = useState(false);
   const orderedChars = useRef(prioritizeCharacters(characters));
   const debounceTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
   const advanceTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
@@ -106,7 +108,8 @@ export default function DrawingCanvas({ characters, alphabetName, language, onPr
     if (showGuide) {
       ctx.save();
       ctx.font = `${150 * dpr}px serif`;
-      ctx.fillStyle = 'rgba(180, 180, 180, 0.2)';
+      const isDark = document.documentElement.classList.contains('dark');
+      ctx.fillStyle = isDark ? 'rgba(200, 200, 200, 0.3)' : 'rgba(180, 180, 180, 0.2)';
       ctx.textAlign = 'center';
       ctx.textBaseline = 'middle';
       ctx.fillText(current.char, canvas.width / 2, canvas.height / 2);
@@ -272,7 +275,7 @@ export default function DrawingCanvas({ characters, alphabetName, language, onPr
     <div className="space-y-3">
       {/* Target character */}
       <div className="text-center">
-        <span className="text-6xl">{current.char}</span>
+        <span className="text-6xl text-gray-900 dark:text-gray-100">{current.char}</span>
         <p className="text-lg text-gray-500 dark:text-gray-400 mt-1">{current.romanji}</p>
         {current.meaning && <p className="text-sm text-gray-400 dark:text-gray-500">{current.meaning}</p>}
         <p className="text-xs text-gray-400 dark:text-gray-500">{current.strokes} strokes</p>
