@@ -5,11 +5,14 @@ import { useDarkMode } from '../../hooks/useDarkMode';
 import { useFontSize } from '../../hooks/useFontSize';
 import { useNotificationScheduler } from '../../hooks/useNotificationScheduler';
 import { useSettingsStore } from '../../stores/settingsStore';
+import BadgeToast from '../badges/BadgeToast';
+import { useBadgeChecker } from '../../hooks/useBadgeChecker';
 
 export default function Shell() {
   const darkMode = useDarkMode();
   useFontSize();
   useNotificationScheduler();
+  useBadgeChecker();
   const toggleDarkMode = useSettingsStore((s) => s.toggleDarkMode);
 
   return (
@@ -32,6 +35,7 @@ export default function Shell() {
       <main className="max-w-lg mx-auto px-4 py-4">
         <Outlet />
       </main>
+      <BadgeToast />
       <BottomNav />
     </div>
   );

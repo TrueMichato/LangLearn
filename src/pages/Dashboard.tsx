@@ -12,6 +12,7 @@ import HeatMap from '../components/dashboard/HeatMap';
 import LanguageStats from '../components/dashboard/LanguageStats';
 import StudyPlan from '../components/dashboard/StudyPlan';
 import AddWordModal from '../components/srs/AddWordModal';
+import BadgeCollection from '../components/badges/BadgeCollection';
 
 interface Stats {
   totalWords: number;
@@ -147,6 +148,8 @@ export default function Dashboard() {
           </p>
         )}
       </div>
+
+      <BadgeCollection />
 
       <div className="bg-white dark:bg-gray-800 rounded-2xl shadow p-4">
         <div className="flex justify-between items-center mb-2">
