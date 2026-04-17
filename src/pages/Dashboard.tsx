@@ -13,6 +13,7 @@ import LanguageStats from '../components/dashboard/LanguageStats';
 import StudyPlan from '../components/dashboard/StudyPlan';
 import AddWordModal from '../components/srs/AddWordModal';
 import BadgeCollection from '../components/badges/BadgeCollection';
+import DailyChallengeCard from '../components/dashboard/DailyChallengeCard';
 
 interface Stats {
   totalWords: number;
@@ -101,6 +102,8 @@ export default function Dashboard() {
         currentStreak={currentStreak}
       />
 
+      <DailyChallengeCard />
+
       <div className="grid grid-cols-2 gap-3 mb-6">
         <StatCard label="Words Learned" value={stats.totalWords} icon="📚" />
         <StatCard label="Cards Due" value={stats.dueCards} icon="🃏" />
@@ -111,6 +114,38 @@ export default function Dashboard() {
         />
         <StatCard label="Total XP" value={stats.timeXP + bonusXP} icon="⭐" />
       </div>
+
+      <Link
+        to="/analytics"
+        className="block bg-white dark:bg-gray-800 rounded-2xl shadow p-4 mb-6 hover:shadow-md transition-shadow"
+      >
+        <div className="flex items-center justify-between">
+          <div className="flex items-center gap-3">
+            <span className="text-2xl">📈</span>
+            <div>
+              <p className="font-semibold text-gray-800 dark:text-gray-100">SRS Analytics</p>
+              <p className="text-sm text-gray-500 dark:text-gray-400">View detailed review statistics</p>
+            </div>
+          </div>
+          <span className="text-gray-400">→</span>
+        </div>
+      </Link>
+
+      <Link
+        to="/analytics"
+        className="block bg-white dark:bg-gray-800 rounded-2xl shadow p-4 mb-6 hover:shadow-md transition-shadow"
+      >
+        <div className="flex items-center justify-between">
+          <div className="flex items-center gap-3">
+            <span className="text-2xl">📈</span>
+            <div>
+              <p className="font-semibold text-gray-800 dark:text-gray-100">SRS Analytics</p>
+              <p className="text-sm text-gray-500 dark:text-gray-400">View detailed review statistics</p>
+            </div>
+          </div>
+          <span className="text-gray-400">→</span>
+        </div>
+      </Link>
 
       {stats.totalWords === 0 && (
         <div className="bg-indigo-50 dark:bg-indigo-900/30 border border-indigo-200 dark:border-indigo-800 rounded-2xl p-4 mb-6 text-center">
