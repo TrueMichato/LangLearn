@@ -23,5 +23,7 @@
   { "id": "imperative", "title": "Imperative & Prohibitive (食べろ、食べるな)", "order": 22 },
   { "id": "hearsay", "title": "Hearsay & Appearance (そうだ、ようだ、らしい)", "order": 23 },
   { "id": "temo", "title": "Even if / Although (ても、のに、けど)", "order": 24 },
-  { "id": "compound-verbs", "title": "Compound Verbs (始める、続ける、終わる)", "order": 25 }
+  { "id": "compound-verbs", "title": "Compound Verbs (始める、続ける、終わる)", "order": 25 },
+  { "id": "purpose", "title": "Expressing Purpose (ために、ように、のに)", "order": 32 },
+  { "id": "while-during", "title": "While & During (ながら、間に、うちに)", "order": 33 }
 ]
