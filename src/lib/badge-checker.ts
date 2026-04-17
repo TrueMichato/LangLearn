@@ -35,15 +35,18 @@ export function checkBadges(stats: BadgeCheckStats): string[] {
 }
 
 export async function gatherBadgeStats(): Promise<BadgeCheckStats> {
-  const [sessions, words, reviews, activities, lessons, characters] =
+  const [sessions, words, allReviews, activities, allLessons, characters] =
     await Promise.all([
       db.studySessions.toArray(),
       db.words.count(),
-      db.reviews.where('repetitions').above(0).count(),
+      db.reviews.toArray(),
       db.dailyActivity.toArray(),
-      db.lessonProgress.where('completed').equals(1).count(),
+      db.lessonProgress.toArray(),
       db.characterProgress.where('mastery').equals('mastered').count(),
     ]);
+
+  const reviews = allReviews.filter((r) => r.repetitions > 0).length;
+  const lessons = allLessons.filter((l) => l.completed).length;
 
   const timeXP = sessions.reduce((sum, s) => sum + s.xpEarned, 0);
   const bonusXP = useXPStore.getState().bonusXP;

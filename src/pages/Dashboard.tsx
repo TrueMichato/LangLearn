@@ -131,22 +131,6 @@ export default function Dashboard() {
         </div>
       </Link>
 
-      <Link
-        to="/analytics"
-        className="block bg-white dark:bg-gray-800 rounded-2xl shadow p-4 mb-6 hover:shadow-md transition-shadow"
-      >
-        <div className="flex items-center justify-between">
-          <div className="flex items-center gap-3">
-            <span className="text-2xl">📈</span>
-            <div>
-              <p className="font-semibold text-gray-800 dark:text-gray-100">SRS Analytics</p>
-              <p className="text-sm text-gray-500 dark:text-gray-400">View detailed review statistics</p>
-            </div>
-          </div>
-          <span className="text-gray-400">→</span>
-        </div>
-      </Link>
-
       {stats.totalWords === 0 && (
         <div className="bg-indigo-50 dark:bg-indigo-900/30 border border-indigo-200 dark:border-indigo-800 rounded-2xl p-4 mb-6 text-center">
           <p className="text-indigo-800 dark:text-indigo-200 font-semibold">
