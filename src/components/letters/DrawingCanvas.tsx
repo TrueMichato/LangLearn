@@ -321,7 +321,7 @@ export default function DrawingCanvas({ characters, alphabetName, language, onPr
       </div>
 
       {/* Canvas */}
-      <div className="relative">
+      <div className="relative w-full max-w-sm mx-auto">
         <canvas
           ref={canvasRef}
           className="w-full aspect-square rounded-2xl border-2 border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-900 touch-none cursor-crosshair"
@@ -333,13 +333,13 @@ export default function DrawingCanvas({ characters, alphabetName, language, onPr
           onTouchMove={handleMove}
           onTouchEnd={handleEnd}
         />
-        {/* Hidden reference canvas for pixel comparison */}
-        <canvas
-          ref={refCanvasRef}
-          className="hidden"
-          aria-hidden="true"
-        />
       </div>
+      {/* Hidden reference canvas for pixel comparison — outside layout flow */}
+      <canvas
+        ref={refCanvasRef}
+        style={{ position: 'absolute', left: '-9999px', top: '-9999px' }}
+        aria-hidden="true"
+      />
 
       {/* Score result banner */}
       {scoreResult && (
