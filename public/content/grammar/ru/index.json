@@ -23,5 +23,15 @@
   { "id": "gerunds", "title": "Verbal Adverbs / Gerunds (Деепричастия)", "order": 22 },
   { "id": "conditional", "title": "Conditional Mood (бы)", "order": 23 },
   { "id": "indirect-speech", "title": "Indirect Speech & Reported Questions", "order": 24 },
-  { "id": "word-order", "title": "Word Order & Emphasis", "order": 25 }
+  { "id": "word-order", "title": "Word Order & Emphasis", "order": 25 },
+  { "id": "short-adjectives", "title": "Short-Form Adjectives (Краткие прилагательные)", "order": 26 },
+  { "id": "verbs-of-motion-prefixed", "title": "Prefixed Verbs of Motion (пойти, уйти, прийти)", "order": 27 },
+  { "id": "negation", "title": "Negation Patterns (не, ни, нет, никогда)", "order": 28 },
+  { "id": "relative-pronouns", "title": "Relative Pronouns (который, что, где, куда)", "order": 29 },
+  { "id": "time-clauses", "title": "Time Clauses (когда, пока, после того как)", "order": 30 },
+  { "id": "subjunctive", "title": "Subjunctive Mood (бы in Complex Sentences)", "order": 31 },
+  { "id": "passive-constructions", "title": "Passive Constructions & Impersonal Sentences", "order": 32 },
+  { "id": "aspect-pairs", "title": "Aspect Pairs in Detail (покупать/купить patterns)", "order": 33 },
+  { "id": "prepositions-advanced", "title": "Advanced Prepositions (благодаря, несмотря на, в течение)", "order": 34 },
+  { "id": "register-formality", "title": "Register & Formality (ты/Вы, formal vs informal)", "order": 35 }
 ]
