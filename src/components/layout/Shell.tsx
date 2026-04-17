@@ -1,6 +1,8 @@
+import { useState } from 'react';
 import { Outlet } from 'react-router-dom';
 import BottomNav from './BottomNav';
 import StudyTimer from '../common/StudyTimer';
+import DictionaryModal from '../dictionary/DictionaryModal';
 import { useDarkMode } from '../../hooks/useDarkMode';
 import { useFontSize } from '../../hooks/useFontSize';
 import { useNotificationScheduler } from '../../hooks/useNotificationScheduler';
@@ -14,6 +16,7 @@ export default function Shell() {
   useNotificationScheduler();
   useBadgeChecker();
   const toggleDarkMode = useSettingsStore((s) => s.toggleDarkMode);
+  const [showDictionary, setShowDictionary] = useState(false);
 
   return (
     <div className="min-h-screen bg-slate-50 dark:bg-gray-950 pb-20">
@@ -22,6 +25,13 @@ export default function Shell() {
           <h1 className="text-lg font-bold text-indigo-600 dark:text-indigo-400">🌱 LangLearn</h1>
           <div className="flex items-center gap-2">
             <StudyTimer />
+            <button
+              onClick={() => setShowDictionary(true)}
+              className="text-lg p-1 rounded-full hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors"
+              aria-label="Search dictionary"
+            >
+              🔍
+            </button>
             <button
               onClick={toggleDarkMode}
               className="text-lg p-1 rounded-full hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors"
@@ -36,6 +46,7 @@ export default function Shell() {
         <Outlet />
       </main>
       <BadgeToast />
+      <DictionaryModal isOpen={showDictionary} onClose={() => setShowDictionary(false)} />
       <BottomNav />
     </div>
   );
