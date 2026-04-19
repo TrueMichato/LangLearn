@@ -56,6 +56,17 @@ function CharacterDetail({ char, language, onClose }: { char: Character; languag
           🔊 Play sound
         </button>
 
+        {char.imageUrl && (
+          <div className="flex justify-center">
+            <img
+              src={char.imageUrl}
+              alt={`Mnemonic for ${char.char}`}
+              className="max-w-[200px] max-h-[160px] rounded-xl"
+              loading="lazy"
+            />
+          </div>
+        )}
+
         {char.hint && (
           <p className="text-sm text-indigo-600 dark:text-indigo-400">
             <span className="font-semibold">💡 Hint:</span> {char.hint}

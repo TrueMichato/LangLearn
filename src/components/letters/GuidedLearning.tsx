@@ -329,6 +329,16 @@ export default function GuidedLearning({ characters, alphabetName, language, onP
           <p className="text-2xl font-bold text-indigo-600 dark:text-indigo-400 mb-2">
             {char.romanji}
           </p>
+          {char.imageUrl && (
+            <div className="flex justify-center mb-3">
+              <img
+                src={char.imageUrl}
+                alt={`Mnemonic for ${char.char}`}
+                className="max-w-[180px] max-h-[140px] rounded-xl"
+                loading="lazy"
+              />
+            </div>
+          )}
           {char.hint && (
             <p className="text-sm text-slate-600 dark:text-slate-300 mb-1 italic">
               💡 {char.hint}
