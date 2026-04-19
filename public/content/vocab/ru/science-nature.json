@@ -1,0 +1,130 @@
+{
+  "id": "science-nature",
+  "words": [
+    {
+      "word": "Исследование",
+      "reading": "Issledovaniye",
+      "meaning": "Research / study",
+      "example": "Учёные провели исследование влияния климата на здоровье.",
+      "exampleMeaning": "Scientists conducted a study on the impact of climate on health."
+    },
+    {
+      "word": "Открытие",
+      "reading": "Otkrytiye",
+      "meaning": "Discovery",
+      "example": "Открытие новой планеты стало мировой сенсацией.",
+      "exampleMeaning": "The discovery of a new planet became a worldwide sensation."
+    },
+    {
+      "word": "Эксперимент",
+      "reading": "Eksperiment",
+      "meaning": "Experiment",
+      "example": "Эксперимент подтвердил гипотезу учёных.",
+      "exampleMeaning": "The experiment confirmed the scientists' hypothesis."
+    },
+    {
+      "word": "Гипотеза",
+      "reading": "Gipoteza",
+      "meaning": "Hypothesis",
+      "example": "Нужны дополнительные данные, чтобы проверить эту гипотезу.",
+      "exampleMeaning": "Additional data is needed to test this hypothesis."
+    },
+    {
+      "word": "Доказательство",
+      "reading": "Dokazatelstvo",
+      "meaning": "Proof / evidence",
+      "example": "Учёные нашли доказательства существования воды на Марсе.",
+      "exampleMeaning": "Scientists found evidence of water on Mars."
+    },
+    {
+      "word": "Атмосфера",
+      "reading": "Atmosfera",
+      "meaning": "Atmosphere",
+      "example": "Атмосфера Земли защищает нас от космического излучения.",
+      "exampleMeaning": "Earth's atmosphere protects us from cosmic radiation."
+    },
+    {
+      "word": "Климат",
+      "reading": "Klimat",
+      "meaning": "Climate",
+      "example": "Климат на планете меняется из-за деятельности человека.",
+      "exampleMeaning": "The planet's climate is changing due to human activity."
+    },
+    {
+      "word": "Вещество",
+      "reading": "Veshchestvo",
+      "meaning": "Substance",
+      "example": "Это вещество используется в производстве лекарств.",
+      "exampleMeaning": "This substance is used in the production of medicine."
+    },
+    {
+      "word": "Энергия",
+      "reading": "Energiya",
+      "meaning": "Energy",
+      "example": "Солнечная энергия — один из возобновляемых источников.",
+      "exampleMeaning": "Solar energy is one of the renewable sources."
+    },
+    {
+      "word": "Молекула",
+      "reading": "Molekula",
+      "meaning": "Molecule",
+      "example": "Молекула воды состоит из двух атомов водорода и одного атома кислорода.",
+      "exampleMeaning": "A water molecule consists of two hydrogen atoms and one oxygen atom."
+    },
+    {
+      "word": "Организм",
+      "reading": "Organizm",
+      "meaning": "Organism",
+      "example": "Каждый живой организм приспосабливается к среде обитания.",
+      "exampleMeaning": "Every living organism adapts to its habitat."
+    },
+    {
+      "word": "Эволюция",
+      "reading": "Evolyutsiya",
+      "meaning": "Evolution",
+      "example": "Теория эволюции объясняет развитие живых существ.",
+      "exampleMeaning": "The theory of evolution explains the development of living beings."
+    },
+    {
+      "word": "Вселенная",
+      "reading": "Vselennaya",
+      "meaning": "Universe",
+      "example": "Вселенная возникла около четырнадцати миллиардов лет назад.",
+      "exampleMeaning": "The universe originated about fourteen billion years ago."
+    },
+    {
+      "word": "Тяготение",
+      "reading": "Tyagoteniye",
+      "meaning": "Gravity / gravitation",
+      "example": "Закон всемирного тяготения был открыт Ньютоном.",
+      "exampleMeaning": "The law of universal gravitation was discovered by Newton."
+    },
+    {
+      "word": "Излучение",
+      "reading": "Izlucheniye",
+      "meaning": "Radiation",
+      "example": "Ультрафиолетовое излучение может быть опасно для кожи.",
+      "exampleMeaning": "Ultraviolet radiation can be dangerous for the skin."
+    },
+    {
+      "word": "Экосистема",
+      "reading": "Ekosistema",
+      "meaning": "Ecosystem",
+      "example": "Загрязнение рек разрушает водные экосистемы.",
+      "exampleMeaning": "River pollution destroys aquatic ecosystems."
+    }
+  ],
+  "exercises": [
+    { "type": "match", "pairs": 5 },
+    { "type": "fill-blank", "items": [
+      { "sentence": "___ подтвердил гипотезу учёных.", "answer": "Эксперимент", "hint": "Experiment" },
+      { "sentence": "Закон всемирного ___ был открыт Ньютоном.", "answer": "тяготения", "hint": "Gravity (genitive)" },
+      { "sentence": "___ Земли защищает нас от космического излучения.", "answer": "Атмосфера", "hint": "Atmosphere" }
+    ]},
+    { "type": "multiple-choice", "items": [
+      { "question": "What does 'Вселенная' mean?", "options": ["Universe", "Atmosphere", "Ecosystem", "Galaxy"], "answer": 0 },
+      { "question": "What is 'Доказательство'?", "options": ["Proof / Evidence", "Experiment", "Hypothesis", "Discovery"], "answer": 0 },
+      { "question": "What does 'Экосистема' mean?", "options": ["Ecosystem", "Organism", "Evolution", "Climate"], "answer": 0 }
+    ]}
+  ]
+}
