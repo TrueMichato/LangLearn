@@ -307,6 +307,19 @@ export default function RecognitionQuiz({ characters, alphabetName, language, on
         })}
       </div>
 
+      {/* Mnemonic hint on wrong answer */}
+      {showResult && selected && !isCorrect && currentQuestion.mnemonic && (
+        <div className="bg-indigo-50 dark:bg-indigo-900/30 rounded-xl p-3 text-sm text-indigo-700 dark:text-indigo-300">
+          {currentQuestion.hint && (
+            <p className="font-medium mb-1">💡 Remember: {currentQuestion.hint}</p>
+          )}
+          <p>{currentQuestion.mnemonic}</p>
+          {currentQuestion.source && (
+            <p className="text-xs text-slate-400 dark:text-slate-500 mt-1 italic">From Tofugu.com</p>
+          )}
+        </div>
+      )}
+
       {/* Score */}
       <p className="text-center text-sm text-slate-500 dark:text-slate-400">
         Score: {score}/{questionIndex + (showResult ? 1 : 0)}
