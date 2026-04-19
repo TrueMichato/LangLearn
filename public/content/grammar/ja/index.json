@@ -1006,5 +1006,75 @@
     "order": 154,
     "group": "Other Grammar",
     "source": "tofugu"
+  },
+  {
+    "id": "tofugu-verb-conjugation-groups",
+    "title": "Verb Conjugation Groups (Godan/Ichidan/Irregular)",
+    "order": 155,
+    "group": "Verb Forms",
+    "source": "tofugu"
+  },
+  {
+    "id": "tofugu-transitivity",
+    "title": "Transitive & Intransitive Verbs",
+    "order": 156,
+    "group": "Verb Forms",
+    "source": "tofugu"
+  },
+  {
+    "id": "tofugu-sentences-and-clauses",
+    "title": "Building Sentences and Clauses",
+    "order": 157,
+    "group": "Other Grammar",
+    "source": "tofugu"
+  },
+  {
+    "id": "tofugu-plural-and-quantity",
+    "title": "Plural and Quantity",
+    "order": 158,
+    "group": "Other Grammar",
+    "source": "tofugu"
+  },
+  {
+    "id": "tofugu-personal-pronouns",
+    "title": "Personal Pronouns",
+    "order": 159,
+    "group": "Pronouns",
+    "source": "tofugu"
+  },
+  {
+    "id": "tofugu-numbers-and-counters",
+    "title": "Numbers and Counters",
+    "order": 160,
+    "group": "Other Grammar",
+    "source": "tofugu"
+  },
+  {
+    "id": "tofugu-noun",
+    "title": "Nouns — Overview",
+    "order": 161,
+    "group": "Other Grammar",
+    "source": "tofugu"
+  },
+  {
+    "id": "tofugu-na-adjective",
+    "title": "な-Adjectives — Overview",
+    "order": 162,
+    "group": "Adjective Forms",
+    "source": "tofugu"
+  },
+  {
+    "id": "tofugu-kosoado",
+    "title": "こそあど言葉 (Ko-So-A-Do Words) — Overview",
+    "order": 163,
+    "group": "Ko-So-A-Do Words",
+    "source": "tofugu"
+  },
+  {
+    "id": "tofugu-date-and-time",
+    "title": "Date and Time",
+    "order": 164,
+    "group": "Other Grammar",
+    "source": "tofugu"
   }
 ]

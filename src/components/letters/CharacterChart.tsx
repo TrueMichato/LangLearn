@@ -56,6 +56,17 @@ function CharacterDetail({ char, language, onClose }: { char: Character; languag
           🔊 Play sound
         </button>
 
+        {char.imageUrl && (
+          <div className="flex justify-center">
+            <img
+              src={char.imageUrl}
+              alt={`Mnemonic for ${char.char}`}
+              className="max-w-[200px] max-h-[160px] rounded-xl"
+              loading="lazy"
+            />
+          </div>
+        )}
+
         {char.hint && (
           <p className="text-sm text-indigo-600 dark:text-indigo-400">
             <span className="font-semibold">💡 Hint:</span> {char.hint}
@@ -69,6 +80,12 @@ function CharacterDetail({ char, language, onClose }: { char: Character; languag
         {char.radicals && char.radicals.length > 0 && (
           <p className="text-sm text-slate-700 dark:text-slate-300">
             <span className="font-semibold">📦 Radicals:</span> {char.radicals.join(' + ')}
+          </p>
+        )}
+
+        {(char.onyomi?.length || char.kunyomi?.length) && (
+          <p className="text-xs text-slate-400 dark:text-slate-500 mt-2">
+            <span className="font-semibold">On&apos;yomi</span> = Chinese reading (compounds) · <span className="font-semibold">Kun&apos;yomi</span> = Japanese reading (standalone)
           </p>
         )}
 
