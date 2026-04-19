@@ -39,12 +39,12 @@ export default function FillBlankExercise({ items, onComplete }: Props) {
 
   return (
     <div>
-      <p className="text-sm font-medium text-gray-600 dark:text-gray-300 mb-4">
+      <p className="text-sm font-medium text-slate-600 dark:text-slate-300 mb-4">
         Fill in the blank ({current + 1}/{items.length})
       </p>
 
-      <div className="bg-white dark:bg-gray-800 rounded-2xl shadow p-5 mb-4">
-        <p className="text-lg text-gray-800 dark:text-gray-100 text-center leading-relaxed">
+      <div className="bg-white dark:bg-slate-800 rounded-2xl shadow p-5 mb-4 border-l-4 border-rose-400 dark:border-rose-500">
+        <p className="text-lg text-slate-800 dark:text-slate-100 text-center leading-relaxed">
           {item.sentence}
         </p>
       </div>
@@ -87,20 +87,20 @@ export default function FillBlankExercise({ items, onComplete }: Props) {
             onChange={(e) => setInput(e.target.value)}
             onKeyDown={(e) => e.key === 'Enter' && handleCheck()}
             placeholder="Type your answer..."
-            className="w-full px-4 py-3 rounded-xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 text-gray-800 dark:text-gray-100 focus:ring-2 focus:ring-indigo-400 focus:outline-none min-h-[44px]"
+            className="w-full px-4 py-3 rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 text-slate-800 dark:text-slate-100 focus:ring-2 focus:ring-indigo-400 focus:outline-none min-h-[44px]"
             autoFocus
           />
           <div className="flex gap-2">
             <button
               onClick={() => setShowHint(true)}
-              className="flex-1 py-3 rounded-xl bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300 font-medium hover:bg-gray-200 dark:hover:bg-gray-600 transition-colors min-h-[44px]"
+              className="flex-1 py-3 rounded-xl bg-slate-100 dark:bg-slate-700 text-slate-600 dark:text-slate-300 font-medium hover:bg-slate-200 dark:hover:bg-slate-600 transition-colors min-h-[44px] press-feedback"
             >
               Show Hint
             </button>
             <button
               onClick={handleCheck}
               disabled={!input.trim()}
-              className="flex-1 py-3 rounded-xl bg-indigo-600 text-white font-medium hover:bg-indigo-700 transition-colors disabled:opacity-50 min-h-[44px]"
+              className="flex-1 py-3 rounded-xl bg-indigo-600 text-white font-medium hover:bg-indigo-700 transition-colors disabled:opacity-50 min-h-[44px] press-feedback"
             >
               Check
             </button>
