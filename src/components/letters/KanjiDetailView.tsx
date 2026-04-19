@@ -30,6 +30,8 @@ export default function KanjiDetailView({ character, language, onClose }: Props)
       language,
       tags: ['kanji'],
       type: 'letter',
+      contextSentence: character.mnemonic ?? `Reading: ${character.romanji}${character.meaning ? ` (${character.meaning})` : ''}`,
+      sourceTextId: null,
     });
     setAdded(true);
   }
