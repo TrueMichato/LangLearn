@@ -9,6 +9,7 @@ export interface Word {
   contextSentence: string;
   sourceTextId: number | null;
   tags: string[];
+  type: 'word' | 'letter';
   createdAt: string;
 }
 
@@ -163,6 +164,25 @@ db.version(6).stores({
   characterProgress: 'id, language, mastery',
   testHistory: '++id, language, type, score, date',
   badges: 'id, unlockedAt',
+});
+
+db.version(7).stores({
+  words: '++id, [language+createdAt], language, word, createdAt, *tags, type',
+  reviews: '++id, [wordId+nextReviewDate], wordId, nextReviewDate',
+  texts: '++id, language, createdAt',
+  studySessions: '++id, startTime, activity',
+  settings: 'key',
+  dailyActivity: 'date, goalMet, challengeComplete',
+  lessonProgress: 'id, language, lessonId',
+  characterProgress: 'id, language, mastery',
+  testHistory: '++id, language, type, score, date',
+  badges: 'id, unlockedAt',
+}).upgrade((tx) => {
+  return tx.table('words').toCollection().modify((word) => {
+    if (!word.type) {
+      word.type = word.tags?.includes('letters') ? 'letter' : 'word';
+    }
+  });
 });
 
 export { db };

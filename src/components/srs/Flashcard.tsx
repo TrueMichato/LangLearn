@@ -25,7 +25,7 @@ export default function Flashcard({ word, isFlipped, onFlip }: FlashcardProps) {
         {word.word}
       </p>
 
-      {word.reading && (
+      {word.reading && word.type !== 'letter' && (
         <p className="text-sm text-gray-500 dark:text-gray-400 mb-2">{word.reading}</p>
       )}
 
