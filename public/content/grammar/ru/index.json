@@ -33,5 +33,7 @@
   { "id": "passive-constructions", "title": "Passive Constructions & Impersonal Sentences", "order": 32 },
   { "id": "aspect-pairs", "title": "Aspect Pairs in Detail (покупать/купить patterns)", "order": 33 },
   { "id": "prepositions-advanced", "title": "Advanced Prepositions (благодаря, несмотря на, в течение)", "order": 34 },
-  { "id": "register-formality", "title": "Register & Formality (ты/Вы, formal vs informal)", "order": 35 }
+  { "id": "register-formality", "title": "Register & Formality (ты/Вы, formal vs informal)", "order": 35 },
+  { "id": "culture-context", "title": "Russian Culture & Context for Language Learners", "order": 36 },
+  { "id": "resources", "title": "Learning Resources: A Curated Study Guide", "order": 37 }
 ]
