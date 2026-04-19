@@ -16,18 +16,19 @@ import StudyCard from '../components/srs/StudyCard';
 import GradeButtons from '../components/srs/GradeButtons';
 import AddWordModal from '../components/srs/AddWordModal';
 import PracticeModeSelector from '../components/srs/PracticeModeSelector';
+import { SkeletonFlashcard } from '../components/common/Skeleton';
 import { assignCardType, selectDistractors } from '../lib/card-types';
 import type { CardType } from '../lib/card-types';
 import type { SM2Grade } from '../lib/sm2';
 import { useKeyboardShortcuts } from '../hooks/useKeyboardShortcuts';
 
-const CARD_TYPE_LABELS: Record<string, string> = {
-  classic: 'Classic',
-  reverse: 'Reverse',
-  listening: 'Listening',
-  'multiple-choice': 'Pick the meaning',
-  cloze: 'Fill in the blank',
-  study: 'Study',
+const CARD_TYPE_LABELS: Record<string, { label: string; bg: string }> = {
+  classic: { label: 'Classic', bg: 'bg-indigo-100 text-indigo-700 dark:bg-indigo-900/50 dark:text-indigo-300' },
+  reverse: { label: 'Reverse', bg: 'bg-violet-100 text-violet-700 dark:bg-violet-900/50 dark:text-violet-300' },
+  listening: { label: 'Listening', bg: 'bg-teal-100 text-teal-700 dark:bg-teal-900/50 dark:text-teal-300' },
+  'multiple-choice': { label: 'Pick the meaning', bg: 'bg-amber-100 text-amber-700 dark:bg-amber-900/50 dark:text-amber-300' },
+  cloze: { label: 'Fill in the blank', bg: 'bg-rose-100 text-rose-700 dark:bg-rose-900/50 dark:text-rose-300' },
+  study: { label: 'Study', bg: 'bg-slate-100 text-slate-700 dark:bg-slate-700 dark:text-slate-300' },
 };
 
 function applyPracticeMode(_baseType: CardType, mode: PracticeMode): CardType {
@@ -55,6 +56,8 @@ export default function ReviewPage() {
   const [loading, setLoading] = useState(true);
   const [totalDue, setTotalDue] = useState(0);
   const [showAddModal, setShowAddModal] = useState(false);
+
+  const [shaking, setShaking] = useState(false);
 
   const loadCards = useCallback(async (mode?: PracticeMode) => {
     setLoading(true);
@@ -125,6 +128,8 @@ export default function ReviewPage() {
       const updated = [...queue];
       updated.push(current);
       useReviewStore.setState({ queue: updated });
+      setShaking(true);
+      setTimeout(() => setShaking(false), 500);
     }
 
     next();
@@ -160,8 +165,17 @@ export default function ReviewPage() {
 
   if (loading) {
     return (
-      <div className="flex items-center justify-center h-64">
-        <p className="text-gray-400 dark:text-gray-500">Loading cards...</p>
+      <div className="space-y-4">
+        <div className="flex justify-between items-center mb-4">
+          <div className="skeleton h-6 w-1/3" />
+          <div className="skeleton h-4 w-12" />
+        </div>
+        <SkeletonFlashcard />
+        <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 mt-4">
+          {[0, 1, 2, 3].map((i) => (
+            <div key={i} className="skeleton rounded-xl min-h-[52px]" />
+          ))}
+        </div>
       </div>
     );
   }
@@ -195,19 +209,21 @@ export default function ReviewPage() {
   if (currentIndex >= queue.length) {
     return (
       <div className="flex flex-col items-center justify-center h-64 text-center">
-        <p className="text-5xl mb-4">✨</p>
-        <p className="text-xl font-semibold text-gray-700 dark:text-gray-200">Session complete!</p>
-        <p className="text-gray-500 dark:text-gray-400 mt-2">
-          You reviewed {cardsReviewed} cards. Great effort!
+        <p className="text-6xl mb-4 animate-[pop_0.5s_ease-out]">🎉</p>
+        <p className="text-2xl font-bold mb-1 bg-gradient-to-r from-indigo-500 to-violet-500 bg-clip-text text-transparent">
+          Session Complete!
+        </p>
+        <p className="text-slate-500 dark:text-slate-400 mt-2 animate-[countUp_0.3s_ease-out]">
+          You reviewed <span className="font-semibold text-slate-700 dark:text-slate-200">{cardsReviewed}</span> cards. Great effort!
         </p>
         <button
           onClick={() => {
             reset();
             loadCards();
           }}
-          className="mt-4 bg-indigo-600 text-white px-6 py-2 rounded-xl hover:bg-indigo-700 transition-colors"
+          className="mt-5 gradient-primary text-white px-6 py-2.5 rounded-xl press-feedback hover:opacity-90 transition-opacity font-medium"
         >
-          Review again
+          🔁 Review Again
         </button>
       </div>
     );
@@ -217,29 +233,48 @@ export default function ReviewPage() {
 
   return (
     <div>
-      <div className="flex justify-between items-center mb-4">
+      <div className="flex justify-between items-center mb-2">
         <div>
-          <h2 className="text-lg font-semibold text-gray-700 dark:text-gray-200">
+          <h2 className="text-lg font-semibold text-slate-700 dark:text-slate-200">
             {studySet ? `Review: ${studySet.name}` : 'Review'}
           </h2>
           {reviewBatchSize > 0 && totalDue > queue.length && (
-            <p className="text-xs text-gray-400 dark:text-gray-500">
+            <p className="text-xs text-slate-400 dark:text-slate-500">
               Reviewing {queue.length} of {totalDue} due cards
             </p>
           )}
         </div>
-        <span className="text-sm text-gray-400 dark:text-gray-500">
+        <span className="text-sm text-slate-400 dark:text-slate-500">
           {currentIndex + 1} / {queue.length}
         </span>
       </div>
 
-      <div className="flex justify-center mb-2">
-        <span className="text-xs px-2.5 py-0.5 rounded-full bg-gray-100 dark:bg-gray-700 text-gray-500 dark:text-gray-400">
-          {CARD_TYPE_LABELS[activeCard.cardType] ?? activeCard.cardType}
+      {/* Progress bar */}
+      <div className="relative w-full bg-slate-200 dark:bg-slate-700 rounded-full h-2.5 mb-4 overflow-hidden">
+        <div
+          className="h-2.5 rounded-full bg-gradient-to-r from-indigo-500 to-violet-500 transition-all duration-500"
+          style={{ width: `${Math.round(((currentIndex) / queue.length) * 100)}%` }}
+        />
+        <span className="absolute inset-0 flex items-center justify-center text-[9px] font-medium text-slate-600 dark:text-slate-300 leading-none">
+          {Math.round(((currentIndex) / queue.length) * 100)}%
         </span>
       </div>
 
-      {activeCard.cardType === ('study' as CardType) && (
+      <div className="flex justify-center mb-2">
+        {(() => {
+          const typeInfo = CARD_TYPE_LABELS[activeCard.cardType];
+          const bg = typeInfo?.bg ?? 'bg-slate-100 text-slate-500 dark:bg-slate-700 dark:text-slate-400';
+          const label = typeInfo?.label ?? activeCard.cardType;
+          return (
+            <span className={`text-xs px-2.5 py-0.5 rounded-full font-medium ${bg}`}>
+              {label}
+            </span>
+          );
+        })()}
+      </div>
+
+      <div className={shaking ? 'animate-[shake_0.5s_ease-in-out]' : ''}>
+        {activeCard.cardType === ('study' as CardType) && (
         <>
           <StudyCard word={activeCard.word} />
           <GradeButtons onGrade={handleGrade} />
@@ -252,7 +287,7 @@ export default function ReviewPage() {
           {isFlipped && (
             <>
               <GradeButtons onGrade={handleGrade} />
-              <div className="hidden sm:flex justify-center gap-4 mt-2 text-xs text-gray-400 dark:text-gray-500">
+              <div className="hidden sm:flex justify-center gap-4 mt-2 text-xs text-slate-400 dark:text-slate-500">
                 <span>Space: flip</span>
                 <span>1-4: grade</span>
                 <span>Esc: exit</span>
@@ -268,7 +303,7 @@ export default function ReviewPage() {
           {isFlipped && (
             <>
               <GradeButtons onGrade={handleGrade} />
-              <div className="hidden sm:flex justify-center gap-4 mt-2 text-xs text-gray-400 dark:text-gray-500">
+              <div className="hidden sm:flex justify-center gap-4 mt-2 text-xs text-slate-400 dark:text-slate-500">
                 <span>Space: flip</span>
                 <span>1-4: grade</span>
                 <span>Esc: exit</span>
@@ -296,7 +331,7 @@ export default function ReviewPage() {
           {isFlipped && (
             <>
               <GradeButtons onGrade={handleGrade} />
-              <div className="hidden sm:flex justify-center gap-4 mt-2 text-xs text-gray-400 dark:text-gray-500">
+              <div className="hidden sm:flex justify-center gap-4 mt-2 text-xs text-slate-400 dark:text-slate-500">
                 <span>Space: flip</span>
                 <span>1-4: grade</span>
                 <span>Esc: exit</span>
@@ -305,8 +340,9 @@ export default function ReviewPage() {
           )}
         </>
       )}
+      </div>
 
-      <p className="text-center text-xs text-gray-400 dark:text-gray-500 mt-6">
+      <p className="text-center text-xs text-slate-400 dark:text-slate-500 mt-6">
         No worries if you didn't know — it'll come back later 💪
       </p>
     </div>
