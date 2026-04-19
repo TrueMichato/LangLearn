@@ -219,4 +219,113 @@ export const ruPassages: ListeningPassage[] = [
       { question: 'What future exploration plans are mentioned?', options: ['Jupiter and Saturn', 'Moon and Mars', 'Venus and Mercury', 'Asteroids and comets'], correctIndex: 1 },
     ],
   },
+
+  // ── Dialogues — Easy ───────────────────────────────────
+  {
+    id: 'ru-dlg-easy-1',
+    title: 'At the Bakery',
+    text: '— Здравствуйте! Дайте, пожалуйста, два батона и булочку.\n— Пожалуйста. Ещё что-нибудь?\n— Нет, спасибо. Сколько стоит?\n— Сто двадцать рублей.\n— Вот, пожалуйста.\n— Спасибо, до свидания!',
+    difficulty: 'easy',
+    questions: [
+      { question: 'What does the customer buy?', options: ['A loaf and a cake', 'Two loaves and a bun', 'Bread and butter', 'Three buns'], correctIndex: 1 },
+      { question: 'How much does it cost?', options: ['100 rubles', '120 rubles', '150 rubles', '200 rubles'], correctIndex: 1 },
+    ],
+  },
+  {
+    id: 'ru-dlg-easy-2',
+    title: 'Meeting a Friend',
+    text: '— Привет, Маша! Как дела?\n— Привет! Хорошо, спасибо. А у тебя?\n— Тоже хорошо. Куда идёшь?\n— В библиотеку. Мне нужно вернуть книгу.\n— Понятно. Увидимся позже!\n— Пока!',
+    difficulty: 'easy',
+    questions: [
+      { question: 'Where is Masha going?', options: ['To the store', 'To the library', 'To a café', 'Home'], correctIndex: 1 },
+      { question: 'Why is she going there?', options: ['To study', 'To return a book', 'To meet a friend', 'To borrow a book'], correctIndex: 1 },
+    ],
+  },
+  {
+    id: 'ru-dlg-easy-3',
+    title: 'Ordering Tea',
+    text: '— Можно чай, пожалуйста?\n— Чёрный или зелёный?\n— Зелёный. С лимоном.\n— Конечно. Сахар нужен?\n— Нет, без сахара, спасибо.\n— Пожалуйста, ваш чай.',
+    difficulty: 'easy',
+    questions: [
+      { question: 'What kind of tea does the person order?', options: ['Black with sugar', 'Green with lemon', 'Black with lemon', 'Green with honey'], correctIndex: 1 },
+      { question: 'Does the person want sugar?', options: ['Yes, one spoon', 'Yes, two spoons', 'No', 'They did not say'], correctIndex: 2 },
+    ],
+  },
+  {
+    id: 'ru-dlg-easy-4',
+    title: 'What Time Is It?',
+    text: '— Извините, вы не подскажете, который час?\n— Сейчас три часа.\n— Спасибо! А когда закрывается магазин?\n— В шесть вечера.\n— Хорошо, значит, я успею. Спасибо!',
+    difficulty: 'easy',
+    questions: [
+      { question: 'What time is it now?', options: ['1 o\'clock', '2 o\'clock', '3 o\'clock', '5 o\'clock'], correctIndex: 2 },
+      { question: 'When does the store close?', options: ['At 5 pm', 'At 6 pm', 'At 7 pm', 'At 8 pm'], correctIndex: 1 },
+    ],
+  },
+  {
+    id: 'ru-dlg-easy-5',
+    title: 'Bus Stop',
+    text: '— Скажите, этот автобус идёт до центра?\n— Нет, вам нужен автобус номер пять.\n— А где остановка?\n— Через дорогу, напротив аптеки.\n— Спасибо большое!\n— Не за что!',
+    difficulty: 'easy',
+    questions: [
+      { question: 'Does this bus go to the center?', options: ['Yes, it does', 'No, you need bus number 5', 'No, you need bus number 3', 'Yes, but only on weekdays'], correctIndex: 1 },
+      { question: 'Where is the correct bus stop?', options: ['Next to the bank', 'Across the road, opposite the pharmacy', 'Around the corner', 'At the train station'], correctIndex: 1 },
+    ],
+  },
+
+  // ── Dialogues — Medium ─────────────────────────────────
+  {
+    id: 'ru-dlg-med-1',
+    title: 'At a Hotel',
+    text: '— Добрый день! Я бы хотел забронировать номер.\n— Здравствуйте! На какие даты?\n— С двадцатого по двадцать пятое июля. На пять ночей.\n— Вам одноместный или двухместный номер?\n— Двухместный, пожалуйста. С видом на море, если можно.\n— Есть номер на третьем этаже. Стоимость — четыре тысячи рублей за ночь. Завтрак включён.\n— Отлично, я возьму.',
+    difficulty: 'medium',
+    questions: [
+      { question: 'How many nights is the reservation for?', options: ['3 nights', '4 nights', '5 nights', '7 nights'], correctIndex: 2 },
+      { question: 'What kind of room does the guest want?', options: ['Single with city view', 'Double with sea view', 'Single with sea view', 'Double with city view'], correctIndex: 1 },
+      { question: 'Is breakfast included?', options: ['No, it costs extra', 'Yes, it is included', 'Only on weekends', 'It is not mentioned'], correctIndex: 1 },
+    ],
+  },
+  {
+    id: 'ru-dlg-med-2',
+    title: 'At the Doctor',
+    text: '— Здравствуйте, доктор.\n— Здравствуйте. Что вас беспокоит?\n— У меня болит горло и температура. Кашель тоже есть.\n— Когда это началось?\n— Три дня назад. Сначала просто горло болело, а вчера поднялась температура.\n— Давайте посмотрим. Откройте рот, скажите «а». Да, горло красное. Я выпишу вам лекарство. Принимайте три раза в день после еды.\n— Спасибо, доктор. А на работу можно ходить?\n— Лучше отдохните дома два-три дня.',
+    difficulty: 'medium',
+    questions: [
+      { question: 'What are the patient\'s symptoms?', options: ['Headache and nausea', 'Sore throat, fever, and cough', 'Back pain and dizziness', 'Stomachache and weakness'], correctIndex: 1 },
+      { question: 'When did the symptoms start?', options: ['Yesterday', '3 days ago', 'A week ago', '5 days ago'], correctIndex: 1 },
+      { question: 'How often should the patient take the medicine?', options: ['Once a day before bed', 'Twice a day before meals', 'Three times a day after meals', 'Four times a day with water'], correctIndex: 2 },
+    ],
+  },
+  {
+    id: 'ru-dlg-med-3',
+    title: 'Buying Train Tickets',
+    text: '— Мне, пожалуйста, два билета до Санкт-Петербурга.\n— На какой поезд? Есть утренний в девять тридцать и вечерний в двадцать два ноль-ноль.\n— На утренний, пожалуйста. Купе или плацкарт — что дешевле?\n— Плацкарт дешевле. Два билета в плацкарт — три тысячи двести рублей.\n— Хорошо, давайте плацкарт. Можно оплатить картой?\n— Да, конечно. Вот ваши билеты. Поезд отправляется с третьей платформы.',
+    difficulty: 'medium',
+    questions: [
+      { question: 'Where are the travelers going?', options: ['Moscow', 'St. Petersburg', 'Kazan', 'Novosibirsk'], correctIndex: 1 },
+      { question: 'Which train do they choose?', options: ['Evening at 22:00', 'Morning at 9:30', 'Afternoon at 14:00', 'Night at 1:00'], correctIndex: 1 },
+      { question: 'Which platform does the train depart from?', options: ['First', 'Second', 'Third', 'Fifth'], correctIndex: 2 },
+    ],
+  },
+  {
+    id: 'ru-dlg-med-4',
+    title: 'Phone Call About a Job',
+    text: '— Алло, здравствуйте! Я звоню по объявлению о вакансии менеджера.\n— Здравствуйте! Да, вакансия ещё актуальна. У вас есть опыт работы?\n— Да, я работал менеджером три года в компании «Вектор».\n— Хорошо. Вы можете прийти на собеседование в среду в десять утра?\n— Да, конечно. А какой адрес?\n— Улица Ленина, дом пятнадцать, офис триста два. Третий этаж.\n— Спасибо, я буду. До свидания!',
+    difficulty: 'medium',
+    questions: [
+      { question: 'What position is the caller applying for?', options: ['Accountant', 'Manager', 'Developer', 'Designer'], correctIndex: 1 },
+      { question: 'How many years of experience does the caller have?', options: ['1 year', '2 years', '3 years', '5 years'], correctIndex: 2 },
+      { question: 'When is the interview?', options: ['Monday at 9 am', 'Tuesday at 11 am', 'Wednesday at 10 am', 'Thursday at 2 pm'], correctIndex: 2 },
+    ],
+  },
+  {
+    id: 'ru-dlg-med-5',
+    title: 'At the Restaurant',
+    text: '— Добрый вечер! Столик на двоих, пожалуйста.\n— Конечно, прошу вас. Вот меню.\n— Спасибо. Что вы порекомендуете?\n— Сегодня очень вкусный борщ. И котлеты по-киевски — наше фирменное блюдо.\n— Тогда мне борщ и котлету. А тебе?\n— А мне салат «Цезарь» и рыбу на гриле, пожалуйста.\n— Что будете пить?\n— Два стакана сока, пожалуйста. Апельсиновый.\n— Хорошо, заказ принят. Минут двадцать подождите.',
+    difficulty: 'medium',
+    questions: [
+      { question: 'How many people are dining?', options: ['1', '2', '3', '4'], correctIndex: 1 },
+      { question: 'What does the first person order for food?', options: ['Salad and fish', 'Borscht and chicken Kiev', 'Steak and potatoes', 'Soup and pasta'], correctIndex: 1 },
+      { question: 'What do they order to drink?', options: ['Two cups of coffee', 'Two glasses of orange juice', 'A bottle of water', 'Tea and lemonade'], correctIndex: 1 },
+    ],
+  },
 ];
