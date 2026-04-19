@@ -1,6 +1,6 @@
-import { useState, useEffect, useRef } from 'react';
-import type { VocabLesson, VocabExercise } from '../../types/vocab';
-import { speak } from '../../lib/tts';
+import { useState, useEffect, useRef, useMemo } from 'react';
+import type { VocabLesson, VocabExercise, TypingItem, ListeningItem } from '../../types/vocab';
+import { speak, TTS_SPEEDS, type TTSSpeed } from '../../lib/tts';
 import { addWord, wordExists } from '../../db/words';
 import { markLessonComplete } from '../../db/lessons';
 import { useTimerStore } from '../../stores/timerStore';
@@ -9,9 +9,43 @@ import MatchExercise from './MatchExercise';
 import FillBlankExercise from './FillBlankExercise';
 import VocabQuiz from './VocabQuiz';
 import { SkeletonList } from '../common/Skeleton';
+import TypingExercise from './TypingExercise';
+import ListeningExercise from './ListeningExercise';
+import ClickableText from './ClickableText';
 
 const XP_PER_VOCAB_LESSON = 25;
 const XP_PER_EXERCISE_CORRECT = 2;
+
+function shuffle<T>(arr: T[]): T[] {
+  const a = [...arr];
+  for (let i = a.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [a[i], a[j]] = [a[j], a[i]];
+  }
+  return a;
+}
+
+function generateTypingExercise(words: VocabLesson['words']): VocabExercise {
+  const selected = shuffle(words).slice(0, Math.min(4, words.length));
+  const items: TypingItem[] = selected.map((w) => ({
+    prompt: w.meaning,
+    answer: w.word,
+    hint: w.word[0] + '…',
+  }));
+  return { type: 'typing', items };
+}
+
+function generateListeningExercise(words: VocabLesson['words']): VocabExercise {
+  const selected = shuffle(words).slice(0, Math.min(4, words.length));
+  const items: ListeningItem[] = selected.map((w) => {
+    const distractors = shuffle(words.filter((o) => o.word !== w.word))
+      .slice(0, 3)
+      .map((o) => o.meaning);
+    const options = shuffle([w.meaning, ...distractors]);
+    return { word: w.word, options, answer: options.indexOf(w.meaning) };
+  });
+  return { type: 'listening', items };
+}
 
 type Step = 'words' | 'exercise' | 'summary';
 
@@ -32,6 +66,7 @@ export default function VocabLessonView({ lang, lessonId, onBack }: Props) {
   const [addingWords, setAddingWords] = useState(false);
   const [wordsAdded, setWordsAdded] = useState(false);
   const [savedWords, setSavedWords] = useState<Record<string, 'saving' | 'saved' | 'exists'>>({});
+  const [ttsSpeed, setTtsSpeed] = useState<TTSSpeed>(0.75);
   const timerStarted = useRef(false);
   const start = useTimerStore((s) => s.start);
   const stop = useTimerStore((s) => s.stop);
@@ -115,7 +150,12 @@ export default function VocabLessonView({ lang, lessonId, onBack }: Props) {
     );
   }
 
-  const exercises = lesson.exercises;
+  const exercises: VocabExercise[] = useMemo(() => [
+    ...lesson.exercises,
+    ...(lesson.words.length >= 4
+      ? [generateTypingExercise(lesson.words), generateListeningExercise(lesson.words)]
+      : []),
+  ], [lesson]);
   const currentExercise: VocabExercise | undefined = exercises[exerciseIdx];
 
   function handleExerciseComplete(correct: number) {
@@ -184,12 +224,32 @@ export default function VocabLessonView({ lang, lessonId, onBack }: Props) {
         <div className="bg-white dark:bg-slate-800 rounded-2xl shadow-lg p-6 mb-4">
           <div className="text-center space-y-3">
             <p className="text-3xl font-bold text-slate-800 dark:text-slate-100">{word.word}</p>
-            <button
-              onClick={() => speak(word.word, lang)}
-              className="inline-flex items-center gap-1 text-indigo-500 hover:text-indigo-600 transition-colors min-h-[44px]"
-            >
-              🔊 Listen
-            </button>
+            <div className="inline-flex items-center gap-1">
+              <button
+                onClick={() => speak(word.word, lang, ttsSpeed)}
+                className="inline-flex items-center gap-1 text-indigo-500 hover:text-indigo-600 transition-colors min-h-[44px] px-2"
+              >
+                🔊 Listen
+              </button>
+              <div className="flex items-center bg-slate-100 dark:bg-slate-700 rounded-lg overflow-hidden">
+                {TTS_SPEEDS.map((s) => (
+                  <button
+                    key={s.value}
+                    onClick={() => {
+                      setTtsSpeed(s.value);
+                      speak(word.word, lang, s.value);
+                    }}
+                    className={`px-2 py-1 text-xs font-medium transition-colors min-h-[32px] ${
+                      ttsSpeed === s.value
+                        ? 'bg-indigo-600 text-white'
+                        : 'text-slate-600 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-600'
+                    }`}
+                  >
+                    {s.label}
+                  </button>
+                ))}
+              </div>
+            </div>
             <p className="text-lg text-slate-500 dark:text-slate-400">{word.reading}</p>
             <p className="text-xl font-semibold text-indigo-600 dark:text-indigo-400">{word.meaning}</p>
             <button
@@ -216,8 +276,14 @@ export default function VocabLessonView({ lang, lessonId, onBack }: Props) {
           </div>
 
           <div className="mt-5 pt-4 border-t border-slate-100 dark:border-slate-700">
-            <p className="text-sm text-slate-500 dark:text-slate-400 mb-1">Example:</p>
-            <p className="text-base text-slate-800 dark:text-slate-100">{word.example}</p>
+            <p className="text-sm text-slate-500 dark:text-slate-400 mb-1">
+              Example <span className="text-xs">(tap words to look up)</span>:
+            </p>
+            <ClickableText
+              text={word.example}
+              language={lang}
+              className="text-base text-slate-800 dark:text-slate-100"
+            />
             <p className="text-sm text-slate-500 dark:text-slate-400 mt-1">{word.exampleMeaning}</p>
           </div>
         </div>
@@ -294,6 +360,12 @@ export default function VocabLessonView({ lang, lessonId, onBack }: Props) {
         )}
         {currentExercise.type === 'multiple-choice' && (
           <VocabQuiz items={currentExercise.items} onComplete={handleExerciseComplete} />
+        )}
+        {currentExercise.type === 'typing' && (
+          <TypingExercise items={currentExercise.items} onComplete={handleExerciseComplete} />
+        )}
+        {currentExercise.type === 'listening' && (
+          <ListeningExercise items={currentExercise.items} language={lang} onComplete={handleExerciseComplete} />
         )}
       </div>
     );

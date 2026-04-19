@@ -13,6 +13,11 @@ interface SettingsState {
   notificationsEnabled: boolean;
   dailyReminderTime: string;
   dueCardAlerts: boolean;
+  dueCardThreshold: number;
+  quietHoursStart: string;
+  quietHoursEnd: string;
+  streakReminders: boolean;
+  weeklyDigest: boolean;
   setWeeklyGoal: (minutes: number) => void;
   addLanguage: (lang: string) => void;
   removeLanguage: (lang: string) => void;
@@ -25,6 +30,11 @@ interface SettingsState {
   setNotificationsEnabled: (enabled: boolean) => void;
   setDailyReminderTime: (time: string) => void;
   setDueCardAlerts: (enabled: boolean) => void;
+  setDueCardThreshold: (threshold: number) => void;
+  setQuietHoursStart: (time: string) => void;
+  setQuietHoursEnd: (time: string) => void;
+  setStreakReminders: (enabled: boolean) => void;
+  setWeeklyDigest: (enabled: boolean) => void;
 }
 
 export const useSettingsStore = create<SettingsState>()(
@@ -41,6 +51,11 @@ export const useSettingsStore = create<SettingsState>()(
       notificationsEnabled: false,
       dailyReminderTime: '09:00',
       dueCardAlerts: true,
+      dueCardThreshold: 10,
+      quietHoursStart: '22:00',
+      quietHoursEnd: '07:00',
+      streakReminders: true,
+      weeklyDigest: true,
 
       setWeeklyGoal: (minutes) => set({ weeklyGoalMinutes: minutes }),
 
@@ -73,6 +88,11 @@ export const useSettingsStore = create<SettingsState>()(
       setNotificationsEnabled: (enabled) => set({ notificationsEnabled: enabled }),
       setDailyReminderTime: (time) => set({ dailyReminderTime: time }),
       setDueCardAlerts: (enabled) => set({ dueCardAlerts: enabled }),
+      setDueCardThreshold: (threshold) => set({ dueCardThreshold: threshold }),
+      setQuietHoursStart: (time) => set({ quietHoursStart: time }),
+      setQuietHoursEnd: (time) => set({ quietHoursEnd: time }),
+      setStreakReminders: (enabled) => set({ streakReminders: enabled }),
+      setWeeklyDigest: (enabled) => set({ weeklyDigest: enabled }),
     }),
     {
       name: 'langlearn-settings',
