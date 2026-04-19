@@ -2,6 +2,7 @@ import { useState } from 'react';
 import type { Character } from '../../data/alphabets';
 import type { CharacterProgress } from '../../db/schema';
 import { speak } from '../../lib/tts';
+import KanjiDetailView from './KanjiDetailView';
 
 interface Props {
   characters: Character[];
@@ -151,7 +152,11 @@ export default function CharacterChart({ characters, alphabetName, language, pro
       </div>
 
       {selectedChar && (
-        <CharacterDetail char={selectedChar} language={language} onClose={() => setSelectedChar(null)} />
+        selectedChar.radicals || selectedChar.exampleWords ? (
+          <KanjiDetailView character={selectedChar} language={language} onClose={() => setSelectedChar(null)} />
+        ) : (
+          <CharacterDetail char={selectedChar} language={language} onClose={() => setSelectedChar(null)} />
+        )
       )}
     </div>
   );
