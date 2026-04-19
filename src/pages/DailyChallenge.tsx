@@ -119,7 +119,7 @@ export default function DailyChallengePage() {
   // --- Not Started ---
   if (state === 'not-started') {
     return (
-      <div className="max-w-md mx-auto">
+      <div className="max-w-md mx-auto page-enter">
         <Link
           to="/"
           className="text-sm text-indigo-600 dark:text-indigo-400 hover:underline mb-4 inline-block"
@@ -127,12 +127,12 @@ export default function DailyChallengePage() {
           ← Back to Dashboard
         </Link>
 
-        <div className="bg-white dark:bg-gray-800 rounded-2xl shadow p-6 text-center">
-          <p className="text-sm text-gray-500 dark:text-gray-400 mb-1">{todayDate}</p>
-          <h1 className="text-2xl font-bold text-gray-800 dark:text-gray-100 mb-2">
+        <div className="bg-white dark:bg-slate-800 rounded-2xl shadow p-6 text-center">
+          <p className="text-sm text-slate-500 dark:text-slate-400 mb-1">{todayDate}</p>
+          <h1 className="text-2xl font-bold text-slate-800 dark:text-slate-100 mb-2">
             🎯 Daily Challenge
           </h1>
-          <p className="text-gray-600 dark:text-gray-300 mb-6">
+          <p className="text-slate-600 dark:text-slate-300 mb-6">
             Answer 7 questions across vocabulary, grammar, and characters.
             Earn <span className="font-semibold text-indigo-600 dark:text-indigo-400">1.5× XP</span> today!
           </p>
@@ -147,13 +147,13 @@ export default function DailyChallengePage() {
 
           {activeLanguages.length > 1 && (
             <div className="mb-4">
-              <label className="block text-sm font-medium text-gray-600 dark:text-gray-400 mb-1">
+              <label className="block text-sm font-medium text-slate-600 dark:text-slate-400 mb-1">
                 Language
               </label>
               <select
                 value={language}
                 onChange={(e) => setLanguage(e.target.value)}
-                className="w-full px-3 py-2 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 text-gray-800 dark:text-gray-100"
+                className="w-full px-3 py-2 rounded-lg border border-gray-300 dark:border-white/10 bg-white dark:bg-slate-700 text-slate-800 dark:text-slate-100"
               >
                 {activeLanguages.map((l) => (
                   <option key={l} value={l}>
@@ -167,7 +167,7 @@ export default function DailyChallengePage() {
           <button
             onClick={startChallenge}
             disabled={loading}
-            className="w-full py-3 rounded-xl bg-indigo-600 text-white font-semibold hover:bg-indigo-700 transition-colors disabled:opacity-50"
+            className="w-full py-3 rounded-xl bg-indigo-600 text-white font-semibold hover:bg-indigo-700 press-feedback transition-colors disabled:opacity-50"
           >
             {loading ? 'Generating...' : alreadyComplete ? 'Retry Challenge' : 'Start Challenge'}
           </button>
@@ -182,20 +182,20 @@ export default function DailyChallengePage() {
     const progress = ((currentIndex) / questions.length) * 100;
 
     return (
-      <div className="max-w-md mx-auto">
-        <div className="bg-white dark:bg-gray-800 rounded-2xl shadow p-6">
+      <div className="max-w-md mx-auto page-enter">
+        <div className="bg-white dark:bg-slate-800 rounded-2xl shadow p-6">
           {/* Header */}
           <div className="flex justify-between items-center mb-2">
-            <span className="text-sm font-medium text-gray-500 dark:text-gray-400">
+            <span className="text-sm font-medium text-slate-500 dark:text-slate-400">
               Question {currentIndex + 1} / {questions.length}
             </span>
-            <span className="text-xs px-2 py-1 rounded-full bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300 capitalize">
+            <span className="text-xs px-2 py-1 rounded-full bg-slate-100 dark:bg-slate-700 text-slate-600 dark:text-slate-300 capitalize">
               {question.type}
             </span>
           </div>
 
           {/* Progress bar */}
-          <div className="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2 mb-6">
+          <div className="w-full bg-slate-200 dark:bg-slate-700 rounded-full h-2 mb-6">
             <div
               className="bg-indigo-500 h-2 rounded-full transition-all duration-300"
               style={{ width: `${progress}%` }}
@@ -203,7 +203,7 @@ export default function DailyChallengePage() {
           </div>
 
           {/* Question */}
-          <h2 className="text-lg font-semibold text-gray-800 dark:text-gray-100 mb-6 text-center">
+          <h2 className="text-lg font-semibold text-slate-800 dark:text-slate-100 mb-6 text-center">
             {question.question}
           </h2>
 
@@ -216,7 +216,7 @@ export default function DailyChallengePage() {
               if (selectedOption === null) {
                 // Not yet answered
                 btnClass +=
-                  'border-gray-200 dark:border-gray-600 bg-gray-50 dark:bg-gray-700 text-gray-800 dark:text-gray-100 hover:border-indigo-400 hover:bg-indigo-50 dark:hover:bg-indigo-900/30';
+                  'border-gray-200 dark:border-white/10 bg-slate-50 dark:bg-slate-700 text-slate-800 dark:text-slate-100 hover:border-indigo-400 hover:bg-indigo-50 dark:hover:bg-indigo-900/30';
               } else if (idx === question.correctIndex) {
                 // Correct answer (always show green)
                 btnClass +=
@@ -227,7 +227,7 @@ export default function DailyChallengePage() {
                   'border-red-500 bg-red-100 dark:bg-red-900/50 text-red-800 dark:text-red-200';
               } else {
                 btnClass +=
-                  'border-gray-200 dark:border-gray-600 bg-gray-50 dark:bg-gray-700 text-gray-400 dark:text-gray-500';
+                  'border-gray-200 dark:border-white/10 bg-slate-50 dark:bg-slate-700 text-slate-400 dark:text-slate-500';
               }
 
               return (
@@ -256,7 +256,7 @@ export default function DailyChallengePage() {
                 {isCorrect ? '✅ Correct!' : '❌ Incorrect'}
               </p>
               {question.explanation && (
-                <p className="text-sm text-gray-500 dark:text-gray-400 mt-1">
+                <p className="text-sm text-slate-500 dark:text-slate-400 mt-1">
                   {question.explanation}
                 </p>
               )}
@@ -269,10 +269,10 @@ export default function DailyChallengePage() {
 
   // --- Complete ---
   return (
-    <div className="max-w-md mx-auto">
-      <div className="bg-white dark:bg-gray-800 rounded-2xl shadow p-6 text-center">
+    <div className="max-w-md mx-auto page-enter">
+      <div className="bg-white dark:bg-slate-800 rounded-2xl shadow p-6 text-center">
         <div className="text-5xl mb-4">🎉</div>
-        <h1 className="text-2xl font-bold text-gray-800 dark:text-gray-100 mb-2">
+        <h1 className="text-2xl font-bold text-slate-800 dark:text-slate-100 mb-2">
           Daily Challenge Complete!
         </h1>
 
@@ -280,7 +280,7 @@ export default function DailyChallengePage() {
           <p className="text-3xl font-bold text-indigo-600 dark:text-indigo-400">
             {score} / {questions.length}
           </p>
-          <p className="text-sm text-gray-500 dark:text-gray-400 mt-1">
+          <p className="text-sm text-slate-500 dark:text-slate-400 mt-1">
             questions correct
           </p>
         </div>
@@ -289,14 +289,14 @@ export default function DailyChallengePage() {
           <p className="text-2xl font-bold text-yellow-600 dark:text-yellow-400">
             +{xpEarned} XP
           </p>
-          <p className="text-xs text-gray-500 dark:text-gray-400 mt-1">
+          <p className="text-xs text-slate-500 dark:text-slate-400 mt-1">
             (base 30 + {score * 5} bonus) × 1.5 multiplier
           </p>
         </div>
 
         <Link
           to="/"
-          className="inline-block w-full py-3 rounded-xl bg-indigo-600 text-white font-semibold hover:bg-indigo-700 transition-colors"
+          className="inline-block w-full py-3 rounded-xl bg-indigo-600 text-white font-semibold hover:bg-indigo-700 press-feedback transition-colors"
         >
           Back to Dashboard
         </Link>

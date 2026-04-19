@@ -11,10 +11,10 @@ export default function Flashcard({ word, isFlipped, onFlip }: FlashcardProps) {
   return (
     <div
       onClick={!isFlipped ? onFlip : undefined}
-      className={`w-full min-h-[240px] rounded-2xl shadow-lg p-6 flex flex-col items-center justify-center transition-all duration-300 ${
+      className={`w-full min-h-[240px] rounded-2xl p-6 flex flex-col items-center justify-center transition-all duration-300 ${
         isFlipped
-          ? 'bg-white dark:bg-gray-800 border border-green-200 dark:border-green-700'
-          : 'bg-white dark:bg-gray-800 border border-indigo-200 dark:border-indigo-700 cursor-pointer hover:shadow-xl'
+          ? 'bg-white dark:bg-slate-800 border-2 border-emerald-300/60 dark:border-emerald-700/40 shadow-lg'
+          : 'bg-white dark:bg-slate-800 border-2 border-indigo-200/60 dark:border-indigo-800/40 shadow-lg cursor-pointer hover:shadow-xl'
       }`}
     >
       <span className="text-xs text-gray-400 dark:text-gray-500 uppercase tracking-wide mb-2">

@@ -3,6 +3,7 @@ import ReactMarkdown from 'react-markdown';
 import GrammarQuiz from './GrammarQuiz';
 import { markLessonComplete, incrementAttempts } from '../../db/lessons';
 import { addWord } from '../../db/words';
+import { SkeletonList } from '../common/Skeleton';
 
 interface LessonViewProps {
   lang: string;
@@ -197,8 +198,9 @@ export default function LessonView({ lang, lessonId, onBack, lessons, onNavigate
 
   if (loading) {
     return (
-      <div className="flex items-center justify-center h-64">
-        <p className="text-gray-400 dark:text-gray-500">Loading lesson...</p>
+      <div className="space-y-4">
+        <div className="skeleton h-4 w-24" />
+        <SkeletonList count={3} />
       </div>
     );
   }
@@ -206,22 +208,35 @@ export default function LessonView({ lang, lessonId, onBack, lessons, onNavigate
   if (error) {
     return (
       <div className="text-center py-12">
-        <p className="text-gray-500 dark:text-gray-400 mb-4">Lesson not found.</p>
-        <button onClick={onBack} className="text-indigo-600 dark:text-indigo-400 font-medium">
+        <p className="text-slate-500 dark:text-slate-400 mb-4">Lesson not found.</p>
+        <button onClick={onBack} className="text-indigo-600 dark:text-indigo-400 font-medium press-feedback">
           ← Back to lessons
         </button>
       </div>
     );
   }
 
+  const quizProgressPct = totalQuizzes > 0 ? Math.round((quizScore.total / totalQuizzes) * 100) : 0;
+
   return (
     <div>
       <button
         onClick={onBack}
-        className="text-indigo-600 dark:text-indigo-400 font-medium text-sm mb-4 hover:underline"
+        className="text-indigo-600 dark:text-indigo-400 font-medium text-sm mb-4 hover:underline press-feedback"
       >
         ← Back to lessons
       </button>
+
+      {/* Quiz progress bar */}
+      {totalQuizzes > 0 && (
+        <div className="w-full h-1.5 rounded-full bg-slate-200 dark:bg-slate-700 overflow-hidden mb-4">
+          <div
+            className="h-full rounded-full bg-gradient-to-r from-indigo-500 to-violet-500 transition-all duration-500"
+            style={{ width: `${quizProgressPct}%` }}
+          />
+        </div>
+      )}
+
       <div className="prose prose-sm max-w-none dark:prose-invert">
         {segments.map((seg, i) =>
           seg.type === 'md' ? (
@@ -245,7 +260,9 @@ export default function LessonView({ lang, lessonId, onBack, lessons, onNavigate
               {seg.content}
             </ReactMarkdown>
           ) : (
-            <GrammarQuiz key={i} {...seg.data} onAnswer={handleQuizAnswer} />
+            <div key={i} className="my-6 border-l-4 border-indigo-400 dark:border-indigo-500 bg-indigo-50 dark:bg-indigo-950/30 rounded-r-2xl pl-0">
+              <GrammarQuiz {...seg.data} onAnswer={handleQuizAnswer} />
+            </div>
           )
         )}
       </div>
@@ -261,11 +278,11 @@ export default function LessonView({ lang, lessonId, onBack, lessons, onNavigate
         const prevLesson = currentIndex > 0 ? lessons[currentIndex - 1] : null;
         const nextLesson = currentIndex < lessons.length - 1 ? lessons[currentIndex + 1] : null;
         return (
-          <div className="flex justify-between items-center mt-8 pt-4 border-t border-gray-200 dark:border-gray-700">
+          <div className="flex justify-between items-center mt-8 pt-4 border-t border-slate-200 dark:border-slate-700">
             {prevLesson ? (
               <button
                 onClick={() => onNavigate(prevLesson.id)}
-                className="text-indigo-600 dark:text-indigo-400 text-sm font-medium hover:underline truncate max-w-[40%] text-left"
+                className="text-indigo-600 dark:text-indigo-400 text-sm font-medium hover:underline truncate max-w-[40%] text-left press-feedback"
               >
                 ← {prevLesson.title}
               </button>
@@ -276,7 +293,7 @@ export default function LessonView({ lang, lessonId, onBack, lessons, onNavigate
               <button
                 onClick={() => onNavigate(nextLesson.id)}
                 disabled={!completed}
-                className={`text-sm font-medium truncate max-w-[40%] text-right ${completed ? 'text-indigo-600 dark:text-indigo-400 hover:underline' : 'text-gray-300 dark:text-gray-600 cursor-not-allowed'}`}
+                className={`text-sm font-medium truncate max-w-[40%] text-right press-feedback ${completed ? 'text-indigo-600 dark:text-indigo-400 hover:underline' : 'text-slate-300 dark:text-slate-600 cursor-not-allowed'}`}
               >
                 {nextLesson.title} →
               </button>

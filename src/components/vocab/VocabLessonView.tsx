@@ -8,6 +8,7 @@ import { useXPStore } from '../../stores/xpStore';
 import MatchExercise from './MatchExercise';
 import FillBlankExercise from './FillBlankExercise';
 import VocabQuiz from './VocabQuiz';
+import { SkeletonList } from '../common/Skeleton';
 import TypingExercise from './TypingExercise';
 import ListeningExercise from './ListeningExercise';
 import ClickableText from './ClickableText';
@@ -131,8 +132,9 @@ export default function VocabLessonView({ lang, lessonId, onBack }: Props) {
 
   if (loading) {
     return (
-      <div className="flex items-center justify-center h-40">
-        <p className="text-gray-400 dark:text-gray-500">Loading lesson...</p>
+      <div className="space-y-4">
+        <div className="skeleton h-4 w-24" />
+        <SkeletonList count={3} />
       </div>
     );
   }
@@ -140,7 +142,7 @@ export default function VocabLessonView({ lang, lessonId, onBack }: Props) {
   if (!lesson) {
     return (
       <div className="text-center py-8">
-        <p className="text-gray-500 dark:text-gray-400 mb-4">Lesson not found.</p>
+        <p className="text-slate-500 dark:text-slate-400 mb-4">Lesson not found.</p>
         <button onClick={onBack} className="text-indigo-600 dark:text-indigo-400 font-medium">
           ← Back to lessons
         </button>
@@ -214,14 +216,14 @@ export default function VocabLessonView({ lang, lessonId, onBack }: Props) {
           <button onClick={onBack} className="text-indigo-600 dark:text-indigo-400 font-medium text-sm">
             ← Back
           </button>
-          <span className="text-sm text-gray-400 dark:text-gray-500">
+          <span className="text-sm text-slate-400 dark:text-slate-500">
             {wordCardIdx + 1} / {lesson.words.length}
           </span>
         </div>
 
-        <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-lg p-6 mb-4">
+        <div className="bg-white dark:bg-slate-800 rounded-2xl shadow-lg p-6 mb-4">
           <div className="text-center space-y-3">
-            <p className="text-3xl font-bold text-gray-800 dark:text-gray-100">{word.word}</p>
+            <p className="text-3xl font-bold text-slate-800 dark:text-slate-100">{word.word}</p>
             <div className="inline-flex items-center gap-1">
               <button
                 onClick={() => speak(word.word, lang, ttsSpeed)}
@@ -229,7 +231,7 @@ export default function VocabLessonView({ lang, lessonId, onBack }: Props) {
               >
                 🔊 Listen
               </button>
-              <div className="flex items-center bg-gray-100 dark:bg-gray-700 rounded-lg overflow-hidden">
+              <div className="flex items-center bg-slate-100 dark:bg-slate-700 rounded-lg overflow-hidden">
                 {TTS_SPEEDS.map((s) => (
                   <button
                     key={s.value}
@@ -240,7 +242,7 @@ export default function VocabLessonView({ lang, lessonId, onBack }: Props) {
                     className={`px-2 py-1 text-xs font-medium transition-colors min-h-[32px] ${
                       ttsSpeed === s.value
                         ? 'bg-indigo-600 text-white'
-                        : 'text-gray-600 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-600'
+                        : 'text-slate-600 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-600'
                     }`}
                   >
                     {s.label}
@@ -248,7 +250,7 @@ export default function VocabLessonView({ lang, lessonId, onBack }: Props) {
                 ))}
               </div>
             </div>
-            <p className="text-lg text-gray-500 dark:text-gray-400">{word.reading}</p>
+            <p className="text-lg text-slate-500 dark:text-slate-400">{word.reading}</p>
             <p className="text-xl font-semibold text-indigo-600 dark:text-indigo-400">{word.meaning}</p>
             <button
               onClick={() => handleSaveWord(word)}
@@ -257,9 +259,9 @@ export default function VocabLessonView({ lang, lessonId, onBack }: Props) {
                 savedWords[word.word] === 'saved'
                   ? 'bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-300'
                   : savedWords[word.word] === 'exists'
-                    ? 'bg-gray-100 dark:bg-gray-700 text-gray-500 dark:text-gray-400'
+                    ? 'bg-slate-100 dark:bg-slate-700 text-slate-500 dark:text-slate-400'
                     : savedWords[word.word] === 'saving'
-                      ? 'bg-gray-100 dark:bg-gray-700 text-gray-400'
+                      ? 'bg-slate-100 dark:bg-slate-700 text-slate-400'
                       : 'bg-indigo-50 dark:bg-indigo-900/30 text-indigo-600 dark:text-indigo-400 hover:bg-indigo-100 dark:hover:bg-indigo-900/50'
               }`}
             >
@@ -273,16 +275,16 @@ export default function VocabLessonView({ lang, lessonId, onBack }: Props) {
             </button>
           </div>
 
-          <div className="mt-5 pt-4 border-t border-gray-100 dark:border-gray-700">
-            <p className="text-sm text-gray-500 dark:text-gray-400 mb-1">
+          <div className="mt-5 pt-4 border-t border-slate-100 dark:border-slate-700">
+            <p className="text-sm text-slate-500 dark:text-slate-400 mb-1">
               Example <span className="text-xs">(tap words to look up)</span>:
             </p>
             <ClickableText
               text={word.example}
               language={lang}
-              className="text-base text-gray-800 dark:text-gray-100"
+              className="text-base text-slate-800 dark:text-slate-100"
             />
-            <p className="text-sm text-gray-500 dark:text-gray-400 mt-1">{word.exampleMeaning}</p>
+            <p className="text-sm text-slate-500 dark:text-slate-400 mt-1">{word.exampleMeaning}</p>
           </div>
         </div>
 
@@ -296,7 +298,7 @@ export default function VocabLessonView({ lang, lessonId, onBack }: Props) {
                   ? 'bg-indigo-500'
                   : i < wordCardIdx
                     ? 'bg-indigo-300 dark:bg-indigo-700'
-                    : 'bg-gray-200 dark:bg-gray-700'
+                    : 'bg-slate-200 dark:bg-slate-700'
               }`}
             />
           ))}
@@ -306,7 +308,7 @@ export default function VocabLessonView({ lang, lessonId, onBack }: Props) {
           <button
             onClick={() => setWordCardIdx((i) => Math.max(0, i - 1))}
             disabled={wordCardIdx === 0}
-            className="flex-1 py-3 rounded-xl bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300 font-medium disabled:opacity-40 min-h-[44px]"
+            className="flex-1 py-3 rounded-xl bg-slate-100 dark:bg-slate-700 text-slate-600 dark:text-slate-300 font-medium disabled:opacity-40 min-h-[44px]"
           >
             ← Previous
           </button>
@@ -338,7 +340,7 @@ export default function VocabLessonView({ lang, lessonId, onBack }: Props) {
           <button onClick={onBack} className="text-indigo-600 dark:text-indigo-400 font-medium text-sm">
             ← Back
           </button>
-          <span className="text-sm text-gray-400 dark:text-gray-500">
+          <span className="text-sm text-slate-400 dark:text-slate-500">
             Exercise {exerciseIdx + 1} / {exercises.length}
           </span>
         </div>
@@ -376,13 +378,13 @@ export default function VocabLessonView({ lang, lessonId, onBack }: Props) {
   return (
     <div className="text-center py-6">
       <p className="text-4xl mb-3">🎉</p>
-      <h2 className="text-2xl font-bold text-gray-800 dark:text-gray-100 mb-2">Lesson Complete!</h2>
+      <h2 className="text-2xl font-bold text-slate-800 dark:text-slate-100 mb-2">Lesson Complete!</h2>
 
-      <div className="bg-white dark:bg-gray-800 rounded-2xl shadow p-5 mb-4 space-y-2">
-        <p className="text-gray-600 dark:text-gray-300">
+      <div className="bg-white dark:bg-slate-800 rounded-2xl shadow p-5 mb-4 space-y-2">
+        <p className="text-slate-600 dark:text-slate-300">
           Score: <span className="font-bold text-indigo-600 dark:text-indigo-400">{totalCorrect}/{totalQuestions}</span> correct ({score}%)
         </p>
-        <p className="text-gray-600 dark:text-gray-300">
+        <p className="text-slate-600 dark:text-slate-300">
           XP earned: <span className="font-bold text-yellow-600 dark:text-yellow-400">+{xpEarned} XP</span>
         </p>
       </div>
@@ -410,7 +412,7 @@ export default function VocabLessonView({ lang, lessonId, onBack }: Props) {
             timerStarted.current = false;
             onBack();
           }}
-          className="w-full py-3 rounded-xl bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300 font-medium hover:bg-gray-200 dark:hover:bg-gray-600 transition-colors min-h-[44px]"
+          className="w-full py-3 rounded-xl bg-slate-100 dark:bg-slate-700 text-slate-600 dark:text-slate-300 font-medium hover:bg-slate-200 dark:hover:bg-slate-600 transition-colors min-h-[44px]"
         >
           ← Back to Lessons
         </button>

@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useMemo } from 'react';
 import { Link } from 'react-router-dom';
 import { db } from '../db/schema';
 import type { StudySession, DailyActivity } from '../db/schema';
@@ -14,6 +14,7 @@ import StudyPlan from '../components/dashboard/StudyPlan';
 import AddWordModal from '../components/srs/AddWordModal';
 import BadgeCollection from '../components/badges/BadgeCollection';
 import DailyChallengeCard from '../components/dashboard/DailyChallengeCard';
+import { PageSkeleton } from '../components/common/Skeleton';
 
 interface Stats {
   totalWords: number;
@@ -21,6 +22,13 @@ interface Stats {
   totalStudySeconds: number;
   weekStudySeconds: number;
   timeXP: number;
+}
+
+function getGreeting(): { text: string; emoji: string } {
+  const hour = new Date().getHours();
+  if (hour >= 5 && hour <= 11) return { text: 'Good morning', emoji: '🌅' };
+  if (hour >= 12 && hour <= 17) return { text: 'Good afternoon', emoji: '☀️' };
+  return { text: 'Good evening', emoji: '🌙' };
 }
 
 export default function Dashboard() {
@@ -31,6 +39,7 @@ export default function Dashboard() {
   const activeLanguages = useSettingsStore((s) => s.activeLanguages);
   const bonusXP = useXPStore((s) => s.bonusXP);
   const [showAddModal, setShowAddModal] = useState(false);
+  const greeting = useMemo(getGreeting, []);
 
   useEffect(() => {
     async function load() {
@@ -64,11 +73,7 @@ export default function Dashboard() {
   }, []);
 
   if (!stats) {
-    return (
-      <div className="flex items-center justify-center h-64">
-        <p className="text-gray-400 dark:text-gray-500">Loading...</p>
-      </div>
-    );
+    return <PageSkeleton />;
   }
 
   const weeklyGoalSeconds = weeklyGoalMinutes * 60;
@@ -77,14 +82,20 @@ export default function Dashboard() {
   const longestStreak = calculateLongestStreak(activities);
   const streakEmoji =
     currentStreak >= 30 ? '🔥🔥🔥' : currentStreak >= 7 ? '🔥🔥' : '🔥';
+  const isMilestone = currentStreak >= 100 || currentStreak === 30 || currentStreak === 7;
 
   return (
-    <div>
+    <div className="page-enter">
       <div className="flex items-center justify-between mb-4">
-        <h2 className="text-lg font-semibold text-gray-700 dark:text-gray-200">Dashboard</h2>
+        <div>
+          <p className="text-lg font-semibold text-slate-700 dark:text-slate-200">
+            {greeting.text} {greeting.emoji}
+          </p>
+          <h2 className="text-sm text-slate-500 dark:text-slate-400">Dashboard</h2>
+        </div>
         <Link
           to="/settings"
-          className="p-2 rounded-full hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors"
+          className="p-2 rounded-full hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors"
           aria-label="Settings"
         >
           <span className="text-xl">⚙️</span>
@@ -101,29 +112,49 @@ export default function Dashboard() {
       <DailyChallengeCard />
 
       <div className="grid grid-cols-2 gap-3 mb-6">
-        <StatCard label="Words Learned" value={stats.totalWords} icon="📚" />
-        <StatCard label="Cards Due" value={stats.dueCards} icon="🃏" />
+        <StatCard
+          label="Words Learned"
+          value={stats.totalWords}
+          icon="📚"
+          gradient="from-violet-50 to-purple-50 dark:from-violet-950/30 dark:to-purple-950/30"
+          accent="border-l-violet-400 dark:border-l-violet-500"
+        />
+        <StatCard
+          label="Cards Due"
+          value={stats.dueCards}
+          icon="🃏"
+          gradient="from-amber-50 to-orange-50 dark:from-amber-950/30 dark:to-orange-950/30"
+          accent="border-l-amber-400 dark:border-l-amber-500"
+        />
         <StatCard
           label="Total Study Time"
           value={formatStudyTime(stats.totalStudySeconds)}
           icon="⏱️"
+          gradient="from-blue-50 to-cyan-50 dark:from-blue-950/30 dark:to-cyan-950/30"
+          accent="border-l-blue-400 dark:border-l-blue-500"
         />
-        <StatCard label="Total XP" value={stats.timeXP + bonusXP} icon="⭐" />
+        <StatCard
+          label="Total XP"
+          value={stats.timeXP + bonusXP}
+          icon="⭐"
+          gradient="from-emerald-50 to-teal-50 dark:from-emerald-950/30 dark:to-teal-950/30"
+          accent="border-l-emerald-400 dark:border-l-emerald-500"
+        />
       </div>
 
       <Link
         to="/analytics"
-        className="block bg-white dark:bg-gray-800 rounded-2xl shadow p-4 mb-6 hover:shadow-md transition-shadow"
+        className="block bg-white dark:bg-slate-800/90 rounded-2xl shadow p-4 mb-6 hover:shadow-md transition-shadow"
       >
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-3">
             <span className="text-2xl">📈</span>
             <div>
-              <p className="font-semibold text-gray-800 dark:text-gray-100">SRS Analytics</p>
-              <p className="text-sm text-gray-500 dark:text-gray-400">View detailed review statistics</p>
+              <p className="font-semibold text-slate-800 dark:text-slate-100">SRS Analytics</p>
+              <p className="text-sm text-slate-500 dark:text-slate-400">View detailed review statistics</p>
             </div>
           </div>
-          <span className="text-gray-400">→</span>
+          <span className="text-slate-400 dark:text-slate-500">→</span>
         </div>
       </Link>
 
@@ -147,18 +178,24 @@ export default function Dashboard() {
         <LanguageStats languages={activeLanguages} />
       )}
 
-      <div className="bg-white dark:bg-gray-800 rounded-2xl shadow p-4 mb-6">
+      <div className="bg-white dark:bg-slate-800/90 rounded-2xl shadow p-4 mb-6">
         {currentStreak > 0 ? (
           <>
-            <p className="text-2xl font-bold text-gray-800 dark:text-gray-100 text-center">
-              {streakEmoji} {currentStreak}-day streak
+            <p className="text-2xl font-bold text-slate-800 dark:text-slate-100 text-center">
+              <span
+                className="inline-block animate-[wiggle_1s_ease-in-out_infinite]"
+                style={isMilestone ? { filter: 'drop-shadow(0 0 8px #f59e0b) drop-shadow(0 0 16px #f97316)' } : undefined}
+              >
+                {streakEmoji}
+              </span>{' '}
+              {currentStreak}-day streak
             </p>
-            <p className="text-sm text-gray-500 dark:text-gray-400 text-center mt-1">
+            <p className="text-sm text-slate-500 dark:text-slate-400 text-center mt-1">
               Best: {longestStreak} days
             </p>
           </>
         ) : (
-          <p className="text-lg font-semibold text-gray-700 dark:text-gray-200 text-center">
+          <p className="text-lg font-semibold text-slate-700 dark:text-slate-200 text-center">
             Start your streak today! 💪
           </p>
         )}
@@ -166,8 +203,8 @@ export default function Dashboard() {
 
       <BadgeCollection />
 
-      <div className="bg-white dark:bg-gray-800 rounded-2xl shadow p-4 mt-4">
-        <h3 className="font-semibold text-gray-700 dark:text-gray-200 mb-3">
+      <div className="bg-white dark:bg-slate-800/90 rounded-2xl shadow p-4 mt-4">
+        <h3 className="font-semibold text-slate-700 dark:text-slate-200 mb-3">
           Study Activity
         </h3>
         <HeatMap studySessions={allSessions} />
@@ -180,16 +217,20 @@ function StatCard({
   label,
   value,
   icon,
+  gradient,
+  accent,
 }: {
   label: string;
   value: string | number;
   icon: string;
+  gradient: string;
+  accent: string;
 }) {
   return (
-    <div className="bg-white dark:bg-gray-800 rounded-2xl shadow p-4 text-center">
+    <div className={`bg-gradient-to-br ${gradient} border-l-4 ${accent} rounded-2xl shadow p-4 text-center`}>
       <span className="text-2xl">{icon}</span>
-      <p className="text-2xl font-bold text-gray-800 dark:text-gray-100 mt-1">{value}</p>
-      <p className="text-xs text-gray-500 dark:text-gray-400">{label}</p>
+      <p className="text-2xl font-bold text-slate-800 dark:text-slate-100 mt-1">{value}</p>
+      <p className="text-xs text-slate-500 dark:text-slate-400">{label}</p>
     </div>
   );
 }

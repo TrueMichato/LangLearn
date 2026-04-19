@@ -13,7 +13,7 @@ export default function SegmentedBar({ segments }: SegmentedBarProps) {
 
   if (total === 0) {
     return (
-      <p className="text-sm text-gray-400 dark:text-gray-500 text-center py-4">
+      <p className="text-sm text-slate-400 dark:text-slate-500 text-center py-4">
         No data yet
       </p>
     );
@@ -22,7 +22,7 @@ export default function SegmentedBar({ segments }: SegmentedBarProps) {
   return (
     <div>
       {/* Bar */}
-      <div className="flex h-8 rounded-full overflow-hidden bg-gray-200 dark:bg-gray-700">
+      <div className="flex h-8 rounded-full overflow-hidden bg-slate-200 dark:bg-slate-700">
         {segments.map((seg) => {
           const pct = (seg.value / total) * 100;
           if (pct === 0) return null;
@@ -49,7 +49,7 @@ export default function SegmentedBar({ segments }: SegmentedBarProps) {
             <span
               className={`inline-block w-3 h-3 rounded-full ${seg.color}`}
             />
-            <span className="text-xs text-gray-600 dark:text-gray-300">
+            <span className="text-xs text-slate-600 dark:text-slate-300">
               {seg.label}: {seg.value}
             </span>
           </div>

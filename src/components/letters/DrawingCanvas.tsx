@@ -318,17 +318,17 @@ export default function DrawingCanvas({ characters, alphabetName, language, onPr
     <div className="space-y-3">
       {/* Target character */}
       <div className="text-center">
-        <span className="text-6xl text-gray-900 dark:text-gray-100">{current.char}</span>
-        <p className="text-lg text-gray-500 dark:text-gray-400 mt-1">{current.romanji}</p>
-        {current.meaning && <p className="text-sm text-gray-400 dark:text-gray-500">{current.meaning}</p>}
-        <p className="text-xs text-gray-400 dark:text-gray-500">{current.strokes} strokes</p>
+        <span className="text-6xl text-slate-900 dark:text-slate-100">{current.char}</span>
+        <p className="text-lg text-slate-500 dark:text-slate-400 mt-1">{current.romanji}</p>
+        {current.meaning && <p className="text-sm text-slate-400 dark:text-slate-500">{current.meaning}</p>}
+        <p className="text-xs text-slate-400 dark:text-slate-500">{current.strokes} strokes</p>
       </div>
 
       {/* Canvas */}
-      <div className="relative w-full max-w-sm mx-auto">
+      <div className="relative w-full max-w-sm mx-auto rounded-2xl border-2 border-slate-200 dark:border-slate-700 shadow-inner">
         <canvas
           ref={canvasRef}
-          className="w-full aspect-square rounded-2xl border-2 border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-900 touch-none cursor-crosshair"
+          className="w-full aspect-square rounded-2xl bg-white dark:bg-slate-900 touch-none cursor-crosshair"
           onMouseDown={handleStart}
           onMouseMove={handleMove}
           onMouseUp={handleEnd}
@@ -350,7 +350,7 @@ export default function DrawingCanvas({ characters, alphabetName, language, onPr
         <div
           className={`text-center py-2 rounded-xl font-medium text-sm ${
             scoreResult.passed
-              ? 'bg-green-100 dark:bg-green-900/40 text-green-700 dark:text-green-300'
+              ? 'bg-emerald-100 dark:bg-emerald-900/40 text-emerald-700 dark:text-emerald-300'
               : 'bg-orange-100 dark:bg-orange-900/40 text-orange-700 dark:text-orange-300'
           }`}
         >
@@ -367,7 +367,7 @@ export default function DrawingCanvas({ characters, alphabetName, language, onPr
 
       {/* Controls */}
       <div className="flex items-center justify-between">
-        <label className="flex items-center gap-2 text-sm text-gray-600 dark:text-gray-400">
+        <label className="flex items-center gap-2 text-sm text-slate-600 dark:text-slate-400">
           <input
             type="checkbox"
             checked={showGuide}
@@ -380,14 +380,14 @@ export default function DrawingCanvas({ characters, alphabetName, language, onPr
           {!isGraded && (
             <button
               onClick={handleCheck}
-              className="px-3 py-1.5 text-sm rounded-lg bg-blue-500 text-white hover:bg-blue-600 transition-colors font-medium"
+              className="px-3 py-1.5 text-sm rounded-lg bg-blue-500 text-white hover:bg-blue-600 transition-colors font-medium press-feedback"
             >
               Check
             </button>
           )}
           <button
             onClick={handleClear}
-            className="px-3 py-1.5 text-sm rounded-lg bg-gray-200 dark:bg-gray-700 text-gray-600 dark:text-gray-300 hover:bg-gray-300 dark:hover:bg-gray-600 transition-colors"
+            className="px-3 py-1.5 text-sm rounded-lg bg-slate-200 dark:bg-slate-700 text-slate-600 dark:text-slate-300 hover:bg-slate-300 dark:hover:bg-slate-600 transition-colors press-feedback"
           >
             Clear
           </button>
@@ -399,20 +399,20 @@ export default function DrawingCanvas({ characters, alphabetName, language, onPr
         <div className="flex justify-center gap-4">
           <button
             onClick={() => handleManualGrade(false)}
-            className="text-xs text-gray-400 dark:text-gray-500 hover:text-red-500 dark:hover:text-red-400 transition-colors underline"
+            className="text-xs text-slate-400 dark:text-slate-500 hover:text-red-500 dark:hover:text-red-400 transition-colors underline press-feedback"
           >
             Skip
           </button>
           <button
             onClick={() => handleManualGrade(true)}
-            className="text-xs text-gray-400 dark:text-gray-500 hover:text-green-500 dark:hover:text-green-400 transition-colors underline"
+            className="text-xs text-slate-400 dark:text-slate-500 hover:text-emerald-500 dark:hover:text-emerald-400 transition-colors underline press-feedback"
           >
             I got it
           </button>
         </div>
       )}
 
-      <p className="text-xs text-center text-gray-400 dark:text-gray-500">
+      <p className="text-xs text-center text-slate-400 dark:text-slate-500">
         Character {(currentIndex % orderedChars.current.length) + 1} of {orderedChars.current.length}
       </p>
     </div>

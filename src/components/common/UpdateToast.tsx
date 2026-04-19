@@ -12,7 +12,7 @@ export default function UpdateToast() {
   if (!needRefresh || dismissed) return null;
 
   return (
-    <div className="fixed bottom-20 left-4 right-4 z-50 animate-[slideUp_0.3s_ease-out] rounded-xl bg-white p-4 shadow-lg dark:bg-slate-800">
+    <div className="fixed bottom-20 left-4 right-4 z-50 animate-[slideUp_0.3s_ease-out] glass rounded-2xl shadow-lg border border-slate-200/60 dark:border-white/10 p-4">
       <p className="text-sm font-medium text-slate-800 dark:text-slate-100">
         A new version is available
       </p>
@@ -20,14 +20,14 @@ export default function UpdateToast() {
         <button
           type="button"
           onClick={() => updateServiceWorker(true)}
-          className="rounded-lg bg-indigo-600 px-3 py-1.5 text-sm font-medium text-white hover:bg-indigo-700"
+          className="gradient-primary text-white rounded-xl press-feedback px-3 py-1.5 text-sm font-medium"
         >
           Update
         </button>
         <button
           type="button"
           onClick={() => setDismissed(true)}
-          className="rounded-lg px-3 py-1.5 text-sm font-medium text-slate-600 hover:bg-slate-100 dark:text-slate-300 dark:hover:bg-slate-700"
+          className="rounded-xl px-3 py-1.5 text-sm font-medium text-slate-600 hover:bg-slate-100 dark:text-slate-300 dark:hover:bg-slate-700 press-feedback"
         >
           Later
         </button>

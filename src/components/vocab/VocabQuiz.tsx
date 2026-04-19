@@ -34,26 +34,26 @@ export default function VocabQuiz({ items, onComplete }: Props) {
 
   return (
     <div>
-      <p className="text-sm font-medium text-gray-600 dark:text-gray-300 mb-4">
+      <p className="text-sm font-medium text-slate-600 dark:text-slate-300 mb-4">
         Quiz ({current + 1}/{items.length})
       </p>
 
-      <div className="bg-white dark:bg-gray-800 rounded-2xl shadow p-5 mb-4">
-        <p className="text-lg font-medium text-gray-800 dark:text-gray-100 text-center">
+      <div className="bg-white dark:bg-slate-800 rounded-2xl shadow p-5 mb-4 border-l-4 border-rose-400 dark:border-rose-500">
+        <p className="text-lg font-medium text-slate-800 dark:text-slate-100 text-center">
           {item.question}
         </p>
       </div>
 
       <div className="space-y-2">
         {item.options.map((option, idx) => {
-          let style = 'bg-white dark:bg-gray-800 text-gray-800 dark:text-gray-100 shadow hover:shadow-md';
+          let style = 'bg-white dark:bg-slate-800 text-slate-800 dark:text-slate-100 shadow hover:shadow-md';
           if (selected !== null) {
             if (idx === item.answer) {
               style = 'bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-300 ring-2 ring-green-400';
             } else if (idx === selected && idx !== item.answer) {
               style = 'bg-red-100 dark:bg-red-900/30 text-red-700 dark:text-red-300 ring-2 ring-red-400';
             } else {
-              style = 'bg-gray-50 dark:bg-gray-800/50 text-gray-400 dark:text-gray-500';
+              style = 'bg-slate-50 dark:bg-slate-800/50 text-slate-400 dark:text-slate-500';
             }
           }
 
@@ -62,7 +62,7 @@ export default function VocabQuiz({ items, onComplete }: Props) {
               key={idx}
               onClick={() => handleSelect(idx)}
               disabled={selected !== null}
-              className={`w-full min-h-[44px] px-4 py-3 rounded-xl text-left font-medium transition-all duration-300 ${style}`}
+              className={`w-full min-h-[44px] px-4 py-3 rounded-xl text-left font-medium transition-all duration-300 press-feedback ${style}`}
             >
               {option}
             </button>

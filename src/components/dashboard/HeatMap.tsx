@@ -16,11 +16,11 @@ const GAP = 2;
 const WEEKS = 12;
 
 function getColorClass(minutes: number): string {
-  if (minutes === 0) return 'bg-gray-100 dark:bg-gray-800';
-  if (minutes <= 15) return 'bg-green-200 dark:bg-green-900';
-  if (minutes <= 30) return 'bg-green-400 dark:bg-green-700';
-  if (minutes <= 60) return 'bg-green-500 dark:bg-green-500';
-  return 'bg-green-700 dark:bg-green-400';
+  if (minutes === 0) return 'bg-slate-100 dark:bg-slate-800';
+  if (minutes <= 15) return 'bg-indigo-200 dark:bg-indigo-900';
+  if (minutes <= 30) return 'bg-indigo-400 dark:bg-indigo-700';
+  if (minutes <= 60) return 'bg-indigo-500 dark:bg-indigo-500';
+  return 'bg-indigo-600 dark:bg-indigo-400';
 }
 
 function formatDate(d: Date): string {
@@ -109,7 +109,7 @@ export default function HeatMap({ studySessions }: HeatMapProps) {
             return (
               <div
                 key={`month-${col}`}
-                className="text-[10px] text-gray-500 dark:text-gray-400 leading-none"
+                className="text-[10px] text-slate-500 dark:text-slate-400 leading-none"
                 style={{ height: 14 }}
               >
                 {label?.label ?? ''}
@@ -123,7 +123,7 @@ export default function HeatMap({ studySessions }: HeatMapProps) {
               {/* Day label */}
               <div
                 key={`label-${row}`}
-                className="text-[10px] text-gray-500 dark:text-gray-400 flex items-center"
+                className="text-[10px] text-slate-500 dark:text-slate-400 flex items-center"
                 style={{ height: CELL_SIZE }}
               >
                 {DAY_LABELS.find((d) => d.index === row)?.label ?? ''}
@@ -142,12 +142,12 @@ export default function HeatMap({ studySessions }: HeatMapProps) {
                 }
                 const mins = minutesByDate.get(cell.key) ?? 0;
                 const minsRounded = Math.round(mins);
-                const tooltip = `${cell.date.toLocaleDateString()}: ${minsRounded} min`;
+                const tooltip = `${cell.date.toLocaleDateString()} — ${minsRounded} min studied`;
                 return (
                   <div
                     key={cell.key}
                     title={tooltip}
-                    className={`rounded-sm ${getColorClass(mins)}`}
+                    className={`rounded-sm ${getColorClass(mins)} cursor-default hover:ring-1 hover:ring-indigo-400 dark:hover:ring-indigo-500 transition-shadow`}
                     style={{ width: CELL_SIZE, height: CELL_SIZE }}
                   />
                 );
@@ -158,14 +158,14 @@ export default function HeatMap({ studySessions }: HeatMapProps) {
       </div>
 
       {/* Legend */}
-      <div className="flex items-center gap-1 mt-3 text-[10px] text-gray-500 dark:text-gray-400 justify-end">
+      <div className="flex items-center gap-1 mt-3 text-[10px] text-slate-500 dark:text-slate-400 justify-end">
         <span>Less</span>
         {[
-          'bg-gray-100 dark:bg-gray-800',
-          'bg-green-200 dark:bg-green-900',
-          'bg-green-400 dark:bg-green-700',
-          'bg-green-500 dark:bg-green-500',
-          'bg-green-700 dark:bg-green-400',
+          'bg-slate-100 dark:bg-slate-800',
+          'bg-indigo-200 dark:bg-indigo-900',
+          'bg-indigo-400 dark:bg-indigo-700',
+          'bg-indigo-500 dark:bg-indigo-500',
+          'bg-indigo-600 dark:bg-indigo-400',
         ].map((cls, i) => (
           <div
             key={i}

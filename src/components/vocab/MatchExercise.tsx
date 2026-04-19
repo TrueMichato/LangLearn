@@ -53,10 +53,10 @@ export default function MatchExercise({ words, pairCount, onComplete }: Props) {
 
   return (
     <div>
-      <p className="text-sm font-medium text-gray-600 dark:text-gray-300 mb-4">
+      <p className="text-sm font-medium text-slate-600 dark:text-slate-300 mb-4">
         Match each word with its meaning ({matched.size}/{pairCount})
       </p>
-      <div className="grid grid-cols-2 gap-3">
+      <div className="grid grid-cols-2 gap-3 bg-white dark:bg-slate-800 rounded-2xl shadow p-4 border-l-4 border-rose-400 dark:border-rose-500">
         {/* Words column */}
         <div className="space-y-2">
           {shuffledWords.map((w) => {
@@ -67,12 +67,12 @@ export default function MatchExercise({ words, pairCount, onComplete }: Props) {
                 key={w.word}
                 onClick={() => handleWordTap(w.word)}
                 disabled={isMatched}
-                className={`w-full min-h-[44px] px-3 py-2 rounded-xl text-sm font-medium transition-all duration-300 ${
+                className={`w-full min-h-[44px] px-3 py-2 rounded-xl text-sm font-medium transition-all duration-300 press-feedback ${
                   isMatched
                     ? 'bg-green-100 dark:bg-green-900/30 text-green-600 dark:text-green-400 scale-95 opacity-60'
                     : isSelected
                       ? 'bg-indigo-100 dark:bg-indigo-900/40 text-indigo-700 dark:text-indigo-300 ring-2 ring-indigo-400'
-                      : 'bg-white dark:bg-gray-800 text-gray-800 dark:text-gray-100 shadow hover:shadow-md'
+                      : 'bg-white dark:bg-slate-800 text-slate-800 dark:text-slate-100 shadow hover:shadow-md'
                 }`}
               >
                 {isMatched && <span className="mr-1">✓</span>}
@@ -92,12 +92,12 @@ export default function MatchExercise({ words, pairCount, onComplete }: Props) {
                 key={w.meaning}
                 onClick={() => handleMeaningTap(w.meaning, w.word)}
                 disabled={isMatched}
-                className={`w-full min-h-[44px] px-3 py-2 rounded-xl text-sm transition-all duration-300 ${
+                className={`w-full min-h-[44px] px-3 py-2 rounded-xl text-sm transition-all duration-300 press-feedback ${
                   isMatched
                     ? 'bg-green-100 dark:bg-green-900/30 text-green-600 dark:text-green-400 scale-95 opacity-60'
                     : isWrong
                       ? 'bg-red-100 dark:bg-red-900/30 text-red-600 dark:text-red-400 animate-pulse'
-                      : 'bg-white dark:bg-gray-800 text-gray-800 dark:text-gray-100 shadow hover:shadow-md'
+                      : 'bg-white dark:bg-slate-800 text-slate-800 dark:text-slate-100 shadow hover:shadow-md'
                 }`}
               >
                 {isMatched && <span className="mr-1">✓</span>}

@@ -37,11 +37,11 @@ export default function WordLookupSheet({
   };
 
   return (
-    <div className="fixed inset-x-0 bottom-0 bg-white dark:bg-gray-900 border-t border-gray-200 dark:border-gray-700 rounded-t-2xl shadow-xl p-4 pb-[calc(1rem+env(safe-area-inset-bottom))] z-50">
+    <div className="fixed inset-x-0 bottom-0 bg-white dark:bg-slate-900 border-t border-slate-200 dark:border-slate-700 rounded-t-2xl shadow-lg p-4 pb-[calc(1rem+env(safe-area-inset-bottom))] z-50 animate-[slideUp_0.2s_ease-out]">
       <div className="max-w-lg mx-auto">
         <div className="flex items-center justify-between mb-3">
           <div className="flex items-center gap-2">
-            <span className="text-xl font-bold dark:text-gray-100">{word}</span>
+            <span className="text-xl font-bold dark:text-slate-100">{word}</span>
             {isTTSSupported() && (
               <button
                 onClick={() => speak(word, language)}
@@ -85,32 +85,32 @@ export default function WordLookupSheet({
           </div>
           <button
             onClick={onClose}
-            className="text-gray-400 hover:text-gray-600 dark:hover:text-gray-300"
+            className="text-slate-400 hover:text-slate-600 dark:hover:text-slate-300 press-feedback"
           >
             ✕
           </button>
         </div>
         {contextSentence && (
-          <p className="text-sm text-gray-500 italic mb-3">"{contextSentence}"</p>
+          <p className="text-sm text-slate-500 dark:text-slate-400 italic mb-3">"{contextSentence}"</p>
         )}
         <input
           type="text"
           placeholder="Reading / pronunciation"
           value={reading}
           onChange={(e) => setReading(e.target.value)}
-          className="w-full px-3 py-2 border border-gray-300 dark:border-gray-600 rounded-lg mb-2 focus:outline-none focus:ring-2 focus:ring-indigo-300 dark:focus:ring-indigo-700 bg-white dark:bg-gray-800 dark:text-gray-100"
+          className="w-full px-3 py-2 border border-slate-300 dark:border-slate-600 rounded-lg mb-2 focus:outline-none focus:ring-2 focus:ring-indigo-300 dark:focus:ring-indigo-700 bg-white dark:bg-slate-800 dark:text-slate-100"
         />
         <input
           type="text"
           placeholder="Meaning / translation"
           value={meaning}
           onChange={(e) => setMeaning(e.target.value)}
-          className="w-full px-3 py-2 border border-gray-300 dark:border-gray-600 rounded-lg mb-3 focus:outline-none focus:ring-2 focus:ring-indigo-300 dark:focus:ring-indigo-700 bg-white dark:bg-gray-800 dark:text-gray-100"
+          className="w-full px-3 py-2 border border-slate-300 dark:border-slate-600 rounded-lg mb-3 focus:outline-none focus:ring-2 focus:ring-indigo-300 dark:focus:ring-indigo-700 bg-white dark:bg-slate-800 dark:text-slate-100"
         />
         <button
           onClick={() => onAdd(word, reading, meaning, contextSentence)}
           disabled={!meaning}
-          className="w-full bg-green-600 text-white py-2 rounded-xl font-semibold hover:bg-green-700 transition-colors disabled:opacity-40"
+          className="w-full bg-emerald-600 text-white py-2 rounded-xl font-semibold hover:bg-emerald-700 transition-colors disabled:opacity-40 press-feedback"
         >
           + Add to SRS
         </button>
