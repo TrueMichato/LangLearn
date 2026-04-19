@@ -41,7 +41,29 @@ export interface MCExercise {
   items: MCItem[];
 }
 
-export type VocabExercise = MatchExercise | FillBlankExercise | MCExercise;
+export interface TypingItem {
+  prompt: string;
+  answer: string;
+  hint: string;
+}
+
+export interface TypingExercise {
+  type: 'typing';
+  items: TypingItem[];
+}
+
+export interface ListeningItem {
+  word: string;
+  options: string[];
+  answer: number;
+}
+
+export interface ListeningExercise {
+  type: 'listening';
+  items: ListeningItem[];
+}
+
+export type VocabExercise = MatchExercise | FillBlankExercise | MCExercise | TypingExercise | ListeningExercise;
 
 export interface VocabLesson {
   id: string;
