@@ -100,6 +100,10 @@ export default function KanjiDetailView({ character, language, onClose }: Props)
           (character.kunyomi && character.kunyomi.length > 0)) && (
           <div className="space-y-2">
             <h3 className="text-sm font-semibold text-slate-700 dark:text-slate-200">🔤 Readings</h3>
+            <p className="text-xs text-slate-400 dark:text-slate-500">
+              <strong>On&apos;yomi</strong> — Chinese-derived reading, used in compound words (jukugo).{' '}
+              <strong>Kun&apos;yomi</strong> — native Japanese reading, used alone or with okurigana.
+            </p>
             <div className="grid grid-cols-2 gap-3">
               <div>
                 <p className="text-xs font-medium text-slate-500 dark:text-slate-400">On&apos;yomi</p>

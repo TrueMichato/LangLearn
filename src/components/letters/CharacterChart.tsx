@@ -72,6 +72,12 @@ function CharacterDetail({ char, language, onClose }: { char: Character; languag
           </p>
         )}
 
+        {(char.onyomi?.length || char.kunyomi?.length) && (
+          <p className="text-xs text-slate-400 dark:text-slate-500 mt-2">
+            <span className="font-semibold">On&apos;yomi</span> = Chinese reading (compounds) · <span className="font-semibold">Kun&apos;yomi</span> = Japanese reading (standalone)
+          </p>
+        )}
+
         {char.onyomi && char.onyomi.length > 0 && (
           <p className="text-sm text-slate-700 dark:text-slate-300">
             <span className="font-semibold">On&apos;yomi:</span> {char.onyomi.join(', ')}

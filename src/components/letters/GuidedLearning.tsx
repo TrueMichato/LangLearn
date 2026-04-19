@@ -325,7 +325,7 @@ export default function GuidedLearning({ characters, alphabetName, language, onP
 
         {/* Card */}
         <div className="bg-white dark:bg-slate-800 rounded-2xl shadow p-6 text-center">
-          <p className="text-7xl mb-4 select-none">{char.char}</p>
+          <p className="text-7xl mb-4 select-none text-slate-900 dark:text-slate-100">{char.char}</p>
           <p className="text-2xl font-bold text-indigo-600 dark:text-indigo-400 mb-2">
             {char.romanji}
           </p>
@@ -419,7 +419,7 @@ export default function GuidedLearning({ characters, alphabetName, language, onP
           <p className="text-sm text-slate-500 dark:text-slate-400 mb-2">
             What is the reading of:
           </p>
-          <p className="text-6xl mb-4 select-none">{q.character.char}</p>
+          <p className="text-6xl mb-4 select-none text-slate-900 dark:text-slate-100">{q.character.char}</p>
         </div>
 
         {/* Options */}
@@ -500,7 +500,7 @@ export default function GuidedLearning({ characters, alphabetName, language, onP
                 key={c.char}
                 className="text-center p-2 bg-slate-50 dark:bg-slate-700 rounded-lg"
               >
-                <p className="text-2xl">{c.char}</p>
+                <p className="text-2xl text-slate-900 dark:text-slate-100">{c.char}</p>
                 <p className="text-sm text-indigo-600 dark:text-indigo-400 font-medium">
                   {c.romanji}
                 </p>
