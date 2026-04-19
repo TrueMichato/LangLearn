@@ -5,10 +5,11 @@ import { getCharacterProgress } from '../db/characters';
 import CharacterChart from '../components/letters/CharacterChart';
 import DrawingCanvas from '../components/letters/DrawingCanvas';
 import RecognitionQuiz from '../components/letters/RecognitionQuiz';
+import GuidedLearning from '../components/letters/GuidedLearning';
 import { SkeletonCard, SkeletonList } from '../components/common/Skeleton';
 import type { CharacterProgress } from '../db/schema';
 
-type PracticeMode = 'chart' | 'draw' | 'quiz';
+type PracticeMode = 'chart' | 'draw' | 'quiz' | 'learn';
 
 export default function LetterPractice() {
   const { lang = 'ja' } = useParams();
@@ -80,6 +81,7 @@ export default function LetterPractice() {
       <div className="flex gap-2 mb-4">
         {(
           [
+            ['learn', '📖 Learn'],
             ['chart', '📊 Chart'],
             ['draw', '✏️ Draw'],
             ['quiz', '🧠 Quiz'],
@@ -106,6 +108,14 @@ export default function LetterPractice() {
         </div>
       ) : (
         <>
+          {mode === 'learn' && (
+            <GuidedLearning
+              characters={currentAlphabet.characters}
+              alphabetName={currentAlphabet.name}
+              language={lang}
+              onProgress={refreshProgress}
+            />
+          )}
           {mode === 'chart' && (
             <CharacterChart
               characters={currentAlphabet.characters}
