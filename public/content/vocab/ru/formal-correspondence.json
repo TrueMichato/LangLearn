@@ -1,0 +1,130 @@
+{
+  "id": "formal-correspondence",
+  "words": [
+    {
+      "word": "Уважаемый",
+      "reading": "Uvazhayemyy",
+      "meaning": "Dear / Respected (formal address)",
+      "example": "Уважаемый Иван Петрович, благодарим вас за письмо.",
+      "exampleMeaning": "Dear Ivan Petrovich, thank you for your letter."
+    },
+    {
+      "word": "Обращаться",
+      "reading": "Obrashchatsya",
+      "meaning": "To address / to contact",
+      "example": "По всем вопросам обращайтесь в приёмную.",
+      "exampleMeaning": "For all inquiries, please contact the reception office."
+    },
+    {
+      "word": "Прошу",
+      "reading": "Proshu",
+      "meaning": "I request / I kindly ask",
+      "example": "Прошу рассмотреть моё заявление в кратчайшие сроки.",
+      "exampleMeaning": "I request that my application be reviewed as soon as possible."
+    },
+    {
+      "word": "В связи с",
+      "reading": "V svyazi s",
+      "meaning": "In connection with / due to",
+      "example": "В связи с переездом офиса, совещание перенесено.",
+      "exampleMeaning": "Due to the office relocation, the meeting has been postponed."
+    },
+    {
+      "word": "Согласно",
+      "reading": "Soglasno",
+      "meaning": "According to / in accordance with",
+      "example": "Согласно договору, оплата производится ежемесячно.",
+      "exampleMeaning": "According to the contract, payment is made monthly."
+    },
+    {
+      "word": "Предоставить",
+      "reading": "Predostavit",
+      "meaning": "To provide / to furnish",
+      "example": "Просим предоставить документы до пятницы.",
+      "exampleMeaning": "Please provide the documents by Friday."
+    },
+    {
+      "word": "Подтвердить",
+      "reading": "Podtverdit",
+      "meaning": "To confirm",
+      "example": "Прошу подтвердить получение данного письма.",
+      "exampleMeaning": "Please confirm the receipt of this letter."
+    },
+    {
+      "word": "Сообщить",
+      "reading": "Soobshchit",
+      "meaning": "To inform / to notify",
+      "example": "Сообщаем вам о результатах рассмотрения.",
+      "exampleMeaning": "We inform you of the results of the review."
+    },
+    {
+      "word": "Рассмотреть",
+      "reading": "Rassmotret",
+      "meaning": "To consider / to review",
+      "example": "Комиссия обязуется рассмотреть все предложения.",
+      "exampleMeaning": "The commission undertakes to review all proposals."
+    },
+    {
+      "word": "Заявление",
+      "reading": "Zayavleniye",
+      "meaning": "Application / formal statement",
+      "example": "Я подал заявление на отпуск.",
+      "exampleMeaning": "I submitted a leave application."
+    },
+    {
+      "word": "Договор",
+      "reading": "Dogovor",
+      "meaning": "Contract / agreement",
+      "example": "Стороны подписали договор о сотрудничестве.",
+      "exampleMeaning": "The parties signed a cooperation agreement."
+    },
+    {
+      "word": "Отчёт",
+      "reading": "Otchyot",
+      "meaning": "Report",
+      "example": "Отчёт за квартал будет готов к понедельнику.",
+      "exampleMeaning": "The quarterly report will be ready by Monday."
+    },
+    {
+      "word": "Совещание",
+      "reading": "Soveshchaniye",
+      "meaning": "Meeting / conference",
+      "example": "Совещание назначено на десять утра.",
+      "exampleMeaning": "The meeting is scheduled for ten in the morning."
+    },
+    {
+      "word": "Повестка дня",
+      "reading": "Povestka dnya",
+      "meaning": "Agenda",
+      "example": "В повестке дня три основных вопроса.",
+      "exampleMeaning": "There are three main items on the agenda."
+    },
+    {
+      "word": "Протокол",
+      "reading": "Protokol",
+      "meaning": "Minutes / protocol",
+      "example": "Секретарь ведёт протокол совещания.",
+      "exampleMeaning": "The secretary is keeping the meeting minutes."
+    },
+    {
+      "word": "С уважением",
+      "reading": "S uvazheniyem",
+      "meaning": "Sincerely / With respect (closing)",
+      "example": "С уважением, Анна Смирнова, директор отдела.",
+      "exampleMeaning": "Sincerely, Anna Smirnova, department director."
+    }
+  ],
+  "exercises": [
+    { "type": "match", "pairs": 5 },
+    { "type": "fill-blank", "items": [
+      { "sentence": "___ Иван Петрович, благодарим вас за письмо.", "answer": "Уважаемый", "hint": "Dear / Respected (formal)" },
+      { "sentence": "___ договору, оплата производится ежемесячно.", "answer": "Согласно", "hint": "According to" },
+      { "sentence": "Прошу ___ получение данного письма.", "answer": "подтвердить", "hint": "To confirm" }
+    ]},
+    { "type": "multiple-choice", "items": [
+      { "question": "What does 'Повестка дня' mean?", "options": ["Agenda", "Report", "Contract", "Minutes"], "answer": 0 },
+      { "question": "How do you close a formal Russian letter?", "options": ["С уважением", "До свидания", "Пока", "Всего хорошего"], "answer": 0 },
+      { "question": "What does 'Договор' mean?", "options": ["Contract / Agreement", "Report", "Application", "Meeting"], "answer": 0 }
+    ]}
+  ]
+}

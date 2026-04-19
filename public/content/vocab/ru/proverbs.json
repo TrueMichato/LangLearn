@@ -1,0 +1,130 @@
+{
+  "id": "proverbs",
+  "words": [
+    {
+      "word": "Без труда не выловишь и рыбку из пруда",
+      "reading": "Bez truda ne vylovish i rybku iz pruda",
+      "meaning": "No pain, no gain (lit: Without effort you won't catch a fish from a pond)",
+      "example": "Хочешь выучить язык? Без труда не выловишь и рыбку из пруда — занимайся каждый день.",
+      "exampleMeaning": "Want to learn a language? No pain, no gain — study every day."
+    },
+    {
+      "word": "Повторение — мать учения",
+      "reading": "Povtoreniye — mat ucheniya",
+      "meaning": "Practice makes perfect (lit: Repetition is the mother of learning)",
+      "example": "Повтори слова ещё раз. Повторение — мать учения.",
+      "exampleMeaning": "Repeat the words one more time. Practice makes perfect."
+    },
+    {
+      "word": "Век живи — век учись",
+      "reading": "Vek zhivi — vek uchis",
+      "meaning": "Live and learn (lit: Live a century, learn a century)",
+      "example": "В восемьдесят лет он начал учить китайский. Век живи — век учись!",
+      "exampleMeaning": "At eighty he started learning Chinese. Live and learn!"
+    },
+    {
+      "word": "Утро вечера мудренее",
+      "reading": "Utro vechera mudreneye",
+      "meaning": "Sleep on it (lit: Morning is wiser than evening)",
+      "example": "Не принимай решение сейчас. Утро вечера мудренее.",
+      "exampleMeaning": "Don't make a decision now. Sleep on it."
+    },
+    {
+      "word": "Не всё то золото, что блестит",
+      "reading": "Ne vsyo to zoloto, chto blestit",
+      "meaning": "All that glitters is not gold",
+      "example": "Эта работа кажется идеальной, но не всё то золото, что блестит.",
+      "exampleMeaning": "This job seems perfect, but all that glitters is not gold."
+    },
+    {
+      "word": "Тише едешь — дальше будешь",
+      "reading": "Tishe yedesh — dalshe budesh",
+      "meaning": "Slow and steady wins the race (lit: Drive quieter, you'll go further)",
+      "example": "Не торопись с проектом. Тише едешь — дальше будешь.",
+      "exampleMeaning": "Don't rush the project. Slow and steady wins the race."
+    },
+    {
+      "word": "Семь раз отмерь, один раз отрежь",
+      "reading": "Sem raz otmer, odin raz otrezh",
+      "meaning": "Measure twice, cut once (lit: Measure seven times, cut once)",
+      "example": "Прежде чем подписать контракт, проверь всё. Семь раз отмерь, один раз отрежь.",
+      "exampleMeaning": "Before signing the contract, check everything. Measure twice, cut once."
+    },
+    {
+      "word": "Друзья познаются в беде",
+      "reading": "Druzya poznayutsya v bede",
+      "meaning": "A friend in need is a friend indeed (lit: Friends are known in trouble)",
+      "example": "Когда я заболел, только Маша помогла мне. Друзья познаются в беде.",
+      "exampleMeaning": "When I got sick, only Masha helped me. A friend in need is a friend indeed."
+    },
+    {
+      "word": "Лучше поздно, чем никогда",
+      "reading": "Luchshe pozdno, chem nikogda",
+      "meaning": "Better late than never",
+      "example": "Ты наконец начал заниматься спортом? Лучше поздно, чем никогда!",
+      "exampleMeaning": "You finally started exercising? Better late than never!"
+    },
+    {
+      "word": "На вкус и цвет товарищей нет",
+      "reading": "Na vkus i tsvet tovarishchey net",
+      "meaning": "There's no accounting for taste (lit: In taste and color there are no comrades)",
+      "example": "Тебе нравится эта музыка? Ну, на вкус и цвет товарищей нет.",
+      "exampleMeaning": "You like this music? Well, there's no accounting for taste."
+    },
+    {
+      "word": "Яблоко от яблони недалеко падает",
+      "reading": "Yabloko ot yabloni nedaleko padayet",
+      "meaning": "The apple doesn't fall far from the tree",
+      "example": "Он стал врачом, как и его отец. Яблоко от яблони недалеко падает.",
+      "exampleMeaning": "He became a doctor, just like his father. The apple doesn't fall far from the tree."
+    },
+    {
+      "word": "В гостях хорошо, а дома лучше",
+      "reading": "V gostyakh khorosho, a doma luchshe",
+      "meaning": "There's no place like home (lit: It's good visiting, but home is better)",
+      "example": "Отпуск был отличный, но в гостях хорошо, а дома лучше.",
+      "exampleMeaning": "The vacation was great, but there's no place like home."
+    },
+    {
+      "word": "Кто рано встаёт, тому Бог подаёт",
+      "reading": "Kto rano vstayot, tomu Bog podayot",
+      "meaning": "The early bird catches the worm (lit: God gives to those who wake up early)",
+      "example": "Вставай пораньше! Кто рано встаёт, тому Бог подаёт.",
+      "exampleMeaning": "Get up earlier! The early bird catches the worm."
+    },
+    {
+      "word": "Не имей сто рублей, а имей сто друзей",
+      "reading": "Ne imey sto rubley, a imey sto druzey",
+      "meaning": "A friend is worth more than money (lit: Don't have a hundred rubles, have a hundred friends)",
+      "example": "Друзья помогли ему найти работу. Не имей сто рублей, а имей сто друзей.",
+      "exampleMeaning": "Friends helped him find a job. A friend is worth more than money."
+    },
+    {
+      "word": "Слово — серебро, молчание — золото",
+      "reading": "Slovo — serebro, molchaniye — zoloto",
+      "meaning": "Speech is silver, silence is golden",
+      "example": "Иногда лучше промолчать. Слово — серебро, молчание — золото.",
+      "exampleMeaning": "Sometimes it's better to stay silent. Speech is silver, silence is golden."
+    },
+    {
+      "word": "Один в поле не воин",
+      "reading": "Odin v pole ne voin",
+      "meaning": "One man is no warrior — teamwork matters (lit: One person in the field is not a warrior)",
+      "example": "Давайте работать вместе. Один в поле не воин.",
+      "exampleMeaning": "Let's work together. One man is no warrior."
+    }
+  ],
+  "exercises": [
+    { "type": "match", "pairs": 5 },
+    { "type": "fill-blank", "items": [
+      { "sentence": "Не торопись. ___ — дальше будешь.", "answer": "Тише едешь", "hint": "Slow and steady..." },
+      { "sentence": "Вставай пораньше! Кто рано встаёт, тому ___.", "answer": "Бог подаёт", "hint": "...catches the worm" },
+      { "sentence": "Повтори ещё раз. ___ — мать учения.", "answer": "Повторение", "hint": "Practice makes perfect" }
+    ]},
+    { "type": "multiple-choice", "items": [
+      { "question": "What does 'Без труда не выловишь и рыбку из пруда' mean?", "options": ["No pain, no gain", "Better late than never", "Live and learn", "Sleep on it"], "answer": 0 },
+      { "question": "Which proverb means 'The apple doesn't fall far from the tree'?", "options": ["Яблоко от яблони недалеко падает", "Один в поле не воин", "Утро вечера мудренее", "Друзья познаются в беде"], "answer": 0 },
+      { "question": "What does 'Слово — серебро, молчание — золото' advise?", "options": ["Silence is often better than speaking", "Money is more important than words", "Gold is better than silver", "Actions speak louder than words"], "answer": 0 }
+    ]}
+  ]
+}

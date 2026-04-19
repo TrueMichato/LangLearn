@@ -1,0 +1,34 @@
+{
+  "id": "prefixed-verbs",
+  "words": [
+    { "word": "выйти", "reading": "vyyti", "meaning": "to go out, to exit (pf) — prefix вы- (out) + идти", "example": "Он вышел из дома рано утром.", "exampleMeaning": "He went out of the house early in the morning." },
+    { "word": "прийти", "reading": "priyti", "meaning": "to arrive, to come (pf) — prefix при- (arrival) + идти", "example": "Она пришла домой в шесть часов.", "exampleMeaning": "She came home at six o'clock." },
+    { "word": "уйти", "reading": "uyti", "meaning": "to leave, to go away (pf) — prefix у- (away) + идти", "example": "Он ушёл с работы раньше обычного.", "exampleMeaning": "He left work earlier than usual." },
+    { "word": "войти", "reading": "voyti", "meaning": "to enter, to come in (pf) — prefix в- (into) + идти", "example": "Пожалуйста, войдите в комнату.", "exampleMeaning": "Please come into the room." },
+    { "word": "перейти", "reading": "pereyti", "meaning": "to cross, to go across (pf) — prefix пере- (across) + идти", "example": "Нужно перейти дорогу на зелёный свет.", "exampleMeaning": "You need to cross the road at a green light." },
+    { "word": "пройти", "reading": "proyti", "meaning": "to pass through, to walk past (pf) — prefix про- (through) + идти", "example": "Мы прошли мимо парка.", "exampleMeaning": "We walked past the park." },
+    { "word": "выехать", "reading": "vyyekhat'", "meaning": "to drive out, to depart by vehicle (pf) — prefix вы- (out) + ехать", "example": "Мы выехали из города в семь утра.", "exampleMeaning": "We drove out of the city at seven in the morning." },
+    { "word": "приехать", "reading": "priyekhat'", "meaning": "to arrive by vehicle (pf) — prefix при- (arrival) + ехать", "example": "Они приехали из Петербурга вчера.", "exampleMeaning": "They arrived from St. Petersburg yesterday." },
+    { "word": "уехать", "reading": "uyekhat'", "meaning": "to drive away, to leave by vehicle (pf) — prefix у- (away) + ехать", "example": "Она уехала в другой город.", "exampleMeaning": "She left for another city." },
+    { "word": "подойти", "reading": "podoyti", "meaning": "to approach, to come up to (pf) — prefix под- (toward) + идти", "example": "Он подошёл к окну и посмотрел на улицу.", "exampleMeaning": "He approached the window and looked at the street." },
+    { "word": "отойти", "reading": "otoyti", "meaning": "to step away, to move back (pf) — prefix от- (away from) + идти", "example": "Отойдите от края платформы.", "exampleMeaning": "Step away from the edge of the platform." },
+    { "word": "зайти", "reading": "zayti", "meaning": "to drop by, to stop in (pf) — prefix за- (behind/by) + идти", "example": "Зайди ко мне после работы.", "exampleMeaning": "Drop by my place after work." },
+    { "word": "обойти", "reading": "oboyti", "meaning": "to go around, to bypass (pf) — prefix об- (around) + идти", "example": "Нам пришлось обойти здание.", "exampleMeaning": "We had to go around the building." },
+    { "word": "дойти", "reading": "doyti", "meaning": "to reach, to walk to (pf) — prefix до- (up to) + идти", "example": "Мы дошли до станции за десять минут.", "exampleMeaning": "We reached the station in ten minutes." },
+    { "word": "найти", "reading": "nayti", "meaning": "to find (pf) — prefix на- + идти (historically)", "example": "Я нашёл ключи на столе.", "exampleMeaning": "I found the keys on the table." },
+    { "word": "пойти", "reading": "poyti", "meaning": "to set off, to start going (pf) — prefix по- (start of motion) + идти", "example": "Давай пойдём в кино сегодня.", "exampleMeaning": "Let's go to the movies today." }
+  ],
+  "exercises": [
+    { "type": "match", "pairs": 5 },
+    { "type": "fill-blank", "items": [
+      { "sentence": "Он ___ из дома в восемь утра. (went out)", "answer": "вышел", "hint": "to go out (pf, past masc)" },
+      { "sentence": "Мы ___ до станции за пять минут. (reached)", "answer": "дошли", "hint": "to reach (pf, past plural)" },
+      { "sentence": "Она ___ домой поздно вечером. (arrived, on foot)", "answer": "пришла", "hint": "to arrive (pf, past fem)" }
+    ]},
+    { "type": "multiple-choice", "items": [
+      { "question": "What does the prefix 'при-' add to a motion verb?", "options": ["Arrival, coming to", "Departure, leaving", "Crossing over", "Going around"], "answer": 0 },
+      { "question": "What does 'зайти' mean?", "options": ["To drop by, to stop in", "To go out", "To cross over", "To find"], "answer": 0 },
+      { "question": "Which verb means 'to approach'?", "options": ["подойти", "отойти", "дойти", "обойти"], "answer": 0 }
+    ]}
+  ]
+}

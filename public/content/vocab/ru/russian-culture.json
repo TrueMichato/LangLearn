@@ -1,0 +1,34 @@
+{
+  "id": "russian-culture",
+  "words": [
+    { "word": "дача", "reading": "dacha", "meaning": "country house / dacha — a rural cottage for weekends and summer", "example": "Летом мы ездим на дачу каждые выходные.", "exampleMeaning": "In summer we go to the dacha every weekend." },
+    { "word": "баня", "reading": "banya", "meaning": "Russian bathhouse / sauna — traditional steam bath with birch branches", "example": "По субботам мы ходим в баню.", "exampleMeaning": "On Saturdays we go to the bathhouse." },
+    { "word": "самовар", "reading": "samovar", "meaning": "samovar — traditional Russian tea urn", "example": "Бабушка всегда ставила самовар для гостей.", "exampleMeaning": "Grandma always set up the samovar for guests." },
+    { "word": "блины", "reading": "bliny", "meaning": "blini / Russian crepes — thin pancakes, often with smetana or caviar", "example": "На Масленицу все пекут блины.", "exampleMeaning": "During Maslenitsa everyone makes blini." },
+    { "word": "матрёшка", "reading": "matryoshka", "meaning": "matryoshka / nesting doll — wooden dolls nested inside each other", "example": "Матрёшка — один из символов России.", "exampleMeaning": "The matryoshka is one of the symbols of Russia." },
+    { "word": "валенки", "reading": "valenki", "meaning": "valenki — traditional Russian felt boots for winter", "example": "В деревне зимой все носят валенки.", "exampleMeaning": "In the village everyone wears valenki in winter." },
+    { "word": "ушанка", "reading": "ushanka", "meaning": "ushanka — fur hat with ear flaps", "example": "В мороз без ушанки не обойтись.", "exampleMeaning": "You can't do without an ushanka in the frost." },
+    { "word": "Масленица", "reading": "Maslenitsa", "meaning": "Maslenitsa — Butter Week, a spring festival before Lent", "example": "Масленица — весёлый праздник с блинами и гуляниями.", "exampleMeaning": "Maslenitsa is a fun holiday with blini and festivities." },
+    { "word": "тройка", "reading": "troyka", "meaning": "troika — a traditional three-horse sleigh; also means 'three'", "example": "Зимой катались на тройке по снегу.", "exampleMeaning": "In winter they rode a troika through the snow." },
+    { "word": "пельмени", "reading": "pel'meni", "meaning": "pelmeni — Russian dumplings filled with meat", "example": "Пельмени — любимое блюдо многих русских.", "exampleMeaning": "Pelmeni are a favorite dish of many Russians." },
+    { "word": "борщ", "reading": "borshch", "meaning": "borscht — beetroot soup, a staple of Russian cuisine", "example": "Мама варит борщ каждую неделю.", "exampleMeaning": "Mom makes borscht every week." },
+    { "word": "квас", "reading": "kvas", "meaning": "kvass — traditional fermented drink made from bread", "example": "Летом все пьют холодный квас.", "exampleMeaning": "In summer everyone drinks cold kvass." },
+    { "word": "балалайка", "reading": "balalajka", "meaning": "balalaika — a triangular three-stringed Russian instrument", "example": "Он играет на балалайке с детства.", "exampleMeaning": "He has been playing the balalaika since childhood." },
+    { "word": "Кремль", "reading": "Kreml'", "meaning": "Kremlin — a fortified complex; most famously the Moscow Kremlin", "example": "Красная площадь находится рядом с Кремлём.", "exampleMeaning": "Red Square is next to the Kremlin." },
+    { "word": "берёзка", "reading": "beryozka", "meaning": "birch tree (diminutive) — a symbol of Russia", "example": "Белые берёзки растут по всей России.", "exampleMeaning": "White birch trees grow all over Russia." },
+    { "word": "Дед Мороз", "reading": "Ded Moroz", "meaning": "Grandfather Frost — the Russian equivalent of Santa Claus", "example": "Дед Мороз приносит подарки на Новый год.", "exampleMeaning": "Grandfather Frost brings presents on New Year's." }
+  ],
+  "exercises": [
+    { "type": "match", "pairs": 5 },
+    { "type": "fill-blank", "items": [
+      { "sentence": "На ___ все пекут блины. (Maslenitsa)", "answer": "Масленицу", "hint": "Butter Week (accusative)" },
+      { "sentence": "___ приносит подарки на Новый год. (Grandfather Frost)", "answer": "Дед Мороз", "hint": "Russian Santa Claus" },
+      { "sentence": "Мама варит ___ каждую неделю. (borscht)", "answer": "борщ", "hint": "beetroot soup" }
+    ]},
+    { "type": "multiple-choice", "items": [
+      { "question": "What is a 'дача'?", "options": ["A country house for weekends", "A type of soup", "A musical instrument", "A winter hat"], "answer": 0 },
+      { "question": "What are 'пельмени'?", "options": ["Russian dumplings", "Felt boots", "Nesting dolls", "A fermented drink"], "answer": 0 },
+      { "question": "What is 'квас'?", "options": ["A fermented bread drink", "A type of tea", "A musical instrument", "A fur hat"], "answer": 0 }
+    ]}
+  ]
+}

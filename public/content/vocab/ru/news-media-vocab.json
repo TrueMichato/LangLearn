@@ -1,0 +1,130 @@
+{
+  "id": "news-media-vocab",
+  "words": [
+    {
+      "word": "Выборы",
+      "reading": "Vybory",
+      "meaning": "Elections",
+      "example": "Выборы президента состоятся в марте.",
+      "exampleMeaning": "The presidential elections will take place in March."
+    },
+    {
+      "word": "Правительство",
+      "reading": "Pravitelstvo",
+      "meaning": "Government",
+      "example": "Правительство приняло новый закон об образовании.",
+      "exampleMeaning": "The government passed a new education law."
+    },
+    {
+      "word": "Закон",
+      "reading": "Zakon",
+      "meaning": "Law",
+      "example": "Новый закон вступит в силу с первого января.",
+      "exampleMeaning": "The new law will take effect from January first."
+    },
+    {
+      "word": "Бюджет",
+      "reading": "Byudzhet",
+      "meaning": "Budget",
+      "example": "Государственный бюджет на этот год увеличился.",
+      "exampleMeaning": "The state budget for this year has increased."
+    },
+    {
+      "word": "Экономика",
+      "reading": "Ekonomika",
+      "meaning": "Economy",
+      "example": "Экономика страны растёт третий год подряд.",
+      "exampleMeaning": "The country's economy has been growing for the third year in a row."
+    },
+    {
+      "word": "Политика",
+      "reading": "Politika",
+      "meaning": "Politics / policy",
+      "example": "Внешняя политика государства направлена на сотрудничество.",
+      "exampleMeaning": "The state's foreign policy is aimed at cooperation."
+    },
+    {
+      "word": "Реформа",
+      "reading": "Reforma",
+      "meaning": "Reform",
+      "example": "Реформа здравоохранения обсуждается в парламенте.",
+      "exampleMeaning": "Healthcare reform is being discussed in parliament."
+    },
+    {
+      "word": "Протест",
+      "reading": "Protest",
+      "meaning": "Protest",
+      "example": "Тысячи людей вышли на протест в центре города.",
+      "exampleMeaning": "Thousands of people came out to protest in the city center."
+    },
+    {
+      "word": "Санкции",
+      "reading": "Sanktsii",
+      "meaning": "Sanctions",
+      "example": "Санкции повлияли на импорт товаров.",
+      "exampleMeaning": "Sanctions have affected the import of goods."
+    },
+    {
+      "word": "Переговоры",
+      "reading": "Peregovory",
+      "meaning": "Negotiations",
+      "example": "Переговоры между странами продолжаются уже неделю.",
+      "exampleMeaning": "Negotiations between the countries have been going on for a week."
+    },
+    {
+      "word": "Заявление",
+      "reading": "Zayavleniye",
+      "meaning": "Statement / declaration",
+      "example": "Министр сделал официальное заявление для прессы.",
+      "exampleMeaning": "The minister made an official statement to the press."
+    },
+    {
+      "word": "Расследование",
+      "reading": "Rassledovaniye",
+      "meaning": "Investigation",
+      "example": "Полиция ведёт расследование по делу о коррупции.",
+      "exampleMeaning": "The police are conducting an investigation into the corruption case."
+    },
+    {
+      "word": "Кризис",
+      "reading": "Krizis",
+      "meaning": "Crisis",
+      "example": "Экономический кризис затронул многие отрасли.",
+      "exampleMeaning": "The economic crisis has affected many industries."
+    },
+    {
+      "word": "Рост",
+      "reading": "Rost",
+      "meaning": "Growth",
+      "example": "Эксперты прогнозируют рост экономики на три процента.",
+      "exampleMeaning": "Experts forecast economic growth of three percent."
+    },
+    {
+      "word": "Безработица",
+      "reading": "Bezrabotitsa",
+      "meaning": "Unemployment",
+      "example": "Уровень безработицы снизился до пяти процентов.",
+      "exampleMeaning": "The unemployment rate has dropped to five percent."
+    },
+    {
+      "word": "Инфляция",
+      "reading": "Inflyatsiya",
+      "meaning": "Inflation",
+      "example": "Центральный банк борется с инфляцией.",
+      "exampleMeaning": "The central bank is fighting inflation."
+    }
+  ],
+  "exercises": [
+    { "type": "match", "pairs": 5 },
+    { "type": "fill-blank", "items": [
+      { "sentence": "___ президента состоятся в марте.", "answer": "Выборы", "hint": "Elections" },
+      { "sentence": "Центральный банк борется с ___.", "answer": "инфляцией", "hint": "Inflation (instrumental case)" },
+      { "sentence": "Полиция ведёт ___ по делу о коррупции.", "answer": "расследование", "hint": "Investigation" }
+    ]},
+    { "type": "multiple-choice", "items": [
+      { "question": "What does 'Правительство' mean?", "options": ["Government", "Parliament", "President", "Ministry"], "answer": 0 },
+      { "question": "What is 'Безработица'?", "options": ["Unemployment", "Inflation", "Crisis", "Budget"], "answer": 0 },
+      { "question": "What does 'Переговоры' mean?", "options": ["Negotiations", "Elections", "Protests", "Reforms"], "answer": 0 }
+    ]}
+  ]
+}

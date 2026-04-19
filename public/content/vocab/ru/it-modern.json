@@ -1,0 +1,34 @@
+{
+  "id": "it-modern",
+  "words": [
+    { "word": "скачать", "reading": "skachat'", "meaning": "to download", "example": "Скачай это приложение на телефон.", "exampleMeaning": "Download this app to your phone." },
+    { "word": "загрузить", "reading": "zagruzit'", "meaning": "to upload / to load", "example": "Я загрузил фотографии в облако.", "exampleMeaning": "I uploaded the photos to the cloud." },
+    { "word": "приложение", "reading": "prilozheniye", "meaning": "app / application", "example": "Это приложение помогает учить языки.", "exampleMeaning": "This app helps with learning languages." },
+    { "word": "пароль", "reading": "parol'", "meaning": "password", "example": "Не забудь сменить пароль.", "exampleMeaning": "Don't forget to change your password." },
+    { "word": "сайт", "reading": "sayt", "meaning": "website", "example": "Информация есть на нашем сайте.", "exampleMeaning": "The information is on our website." },
+    { "word": "ссылка", "reading": "ssylka", "meaning": "link", "example": "Отправь мне ссылку на статью.", "exampleMeaning": "Send me the link to the article." },
+    { "word": "поиск", "reading": "poisk", "meaning": "search", "example": "Введите запрос в строку поиска.", "exampleMeaning": "Enter a query in the search bar." },
+    { "word": "обновление", "reading": "obnovleniye", "meaning": "update", "example": "Вышло новое обновление системы.", "exampleMeaning": "A new system update has been released." },
+    { "word": "подписка", "reading": "podpiska", "meaning": "subscription", "example": "Моя подписка заканчивается в следующем месяце.", "exampleMeaning": "My subscription expires next month." },
+    { "word": "уведомление", "reading": "uvedomleniye", "meaning": "notification", "example": "Я отключил уведомления на телефоне.", "exampleMeaning": "I turned off notifications on my phone." },
+    { "word": "облако", "reading": "oblako", "meaning": "cloud (tech / storage)", "example": "Все файлы хранятся в облаке.", "exampleMeaning": "All files are stored in the cloud." },
+    { "word": "аккаунт", "reading": "akkaunt", "meaning": "account", "example": "Создай новый аккаунт на этом сайте.", "exampleMeaning": "Create a new account on this website." },
+    { "word": "настройки", "reading": "nastroyki", "meaning": "settings", "example": "Можно изменить язык в настройках.", "exampleMeaning": "You can change the language in settings." },
+    { "word": "данные", "reading": "dannyye", "meaning": "data", "example": "Не передавайте личные данные незнакомцам.", "exampleMeaning": "Don't share personal data with strangers." },
+    { "word": "сеть", "reading": "set'", "meaning": "network", "example": "Здесь нет доступа к сети.", "exampleMeaning": "There's no network access here." },
+    { "word": "безопасность", "reading": "bezopasnost'", "meaning": "security", "example": "Безопасность данных — это приоритет.", "exampleMeaning": "Data security is a priority." }
+  ],
+  "exercises": [
+    { "type": "match", "pairs": 5 },
+    { "type": "fill-blank", "items": [
+      { "sentence": "Не забудь сменить ___. (password)", "answer": "пароль", "hint": "password" },
+      { "sentence": "Все файлы хранятся в ___. (the cloud)", "answer": "облаке", "hint": "cloud (prepositional)" },
+      { "sentence": "Отправь мне ___ на статью. (link)", "answer": "ссылку", "hint": "link (accusative)" }
+    ]},
+    { "type": "multiple-choice", "items": [
+      { "question": "What does 'скачать' mean?", "options": ["To download", "To upload", "To delete", "To search"], "answer": 0 },
+      { "question": "What does 'уведомление' mean?", "options": ["Notification", "Update", "Subscription", "Settings"], "answer": 0 },
+      { "question": "What does 'безопасность' mean?", "options": ["Security", "Network", "Data", "Account"], "answer": 0 }
+    ]}
+  ]
+}

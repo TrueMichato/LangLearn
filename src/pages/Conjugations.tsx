@@ -6,10 +6,11 @@ import { getLanguageLabel } from '../lib/languages';
 import { JA_VERBS, JA_FORM_LABELS, type JaFormName } from '../data/conjugations/ja-verbs';
 import { RU_VERBS, RU_VERB_FORM_LABELS, type RuVerbFormName } from '../data/conjugations/ru-verbs';
 import { RU_NOUNS, RU_CASE_LABELS, type RuCaseName } from '../data/conjugations/ru-nouns';
+import { RU_ADJECTIVES, RU_ADJ_CASE_LABELS, type RuAdjectiveCaseName } from '../data/conjugations/ru-adjectives';
 import TileDrill, { type DrillQuestion } from '../components/drills/TileDrill';
 import TypeDrill from '../components/drills/TypeDrill';
 
-type Category = 'ja-verbs' | 'ru-verbs' | 'ru-nouns';
+type Category = 'ja-verbs' | 'ru-verbs' | 'ru-nouns' | 'ru-adjectives';
 type DrillMode = 'tiles' | 'type';
 
 const CATEGORIES: Record<string, { value: Category; label: string }[]> = {
@@ -17,6 +18,7 @@ const CATEGORIES: Record<string, { value: Category; label: string }[]> = {
   ru: [
     { value: 'ru-verbs', label: 'Verb Conjugation' },
     { value: 'ru-nouns', label: 'Noun Declension' },
+    { value: 'ru-adjectives', label: 'Adjective Declension' },
   ],
 };
 
@@ -41,6 +43,8 @@ function getFormOptions(category: Category): { value: string; label: string }[] 
       return Object.entries(RU_VERB_FORM_LABELS).map(([value, label]) => ({ value, label }));
     case 'ru-nouns':
       return Object.entries(RU_CASE_LABELS).map(([value, label]) => ({ value, label }));
+    case 'ru-adjectives':
+      return Object.entries(RU_ADJ_CASE_LABELS).map(([value, label]) => ({ value, label }));
   }
 }
 
@@ -70,7 +74,7 @@ function buildQuestions(category: Category, selectedForms: string[]): DrillQuest
         });
       }
     }
-  } else {
+  } else if (category === 'ru-nouns') {
     const cases = selectedForms as RuCaseName[];
     for (const noun of RU_NOUNS) {
       for (const c of cases) {
@@ -84,6 +88,21 @@ function buildQuestions(category: Category, selectedForms: string[]): DrillQuest
           correctAnswer: noun.declensions[c].plural,
           language: 'ru',
         });
+      }
+    }
+  } else if (category === 'ru-adjectives') {
+    const cases = selectedForms as RuAdjectiveCaseName[];
+    const genders = ['masculine', 'feminine', 'neuter', 'plural'] as const;
+    const genderLabels = { masculine: 'masc.', feminine: 'fem.', neuter: 'neut.', plural: 'pl.' };
+    for (const adj of RU_ADJECTIVES) {
+      for (const c of cases) {
+        for (const g of genders) {
+          questions.push({
+            prompt: `${adj.masculine_nom} (${adj.meaning}) → ${RU_ADJ_CASE_LABELS[c]} ${genderLabels[g]}`,
+            correctAnswer: adj.declensions[c][g],
+            language: 'ru',
+          });
+        }
       }
     }
   }
@@ -282,7 +301,7 @@ export default function ConjugationsPage() {
       <div className="bg-white dark:bg-slate-800 rounded-2xl shadow p-4 space-y-3">
         <div className="flex items-center justify-between">
           <label className="text-sm font-medium text-slate-600 dark:text-slate-300">
-            {category === 'ru-nouns' ? 'Cases' : 'Forms'} to practice
+            {category === 'ru-nouns' || category === 'ru-adjectives' ? 'Cases' : 'Forms'} to practice
           </label>
           <button
             onClick={selectAllForms}
@@ -345,7 +364,7 @@ export default function ConjugationsPage() {
       </button>
       {selectedForms.size === 0 && (
         <p className="text-center text-sm text-slate-400 dark:text-slate-500">
-          Select at least one {category === 'ru-nouns' ? 'case' : 'form'} to begin
+          Select at least one {category === 'ru-nouns' || category === 'ru-adjectives' ? 'case' : 'form'} to begin
         </p>
       )}
     </div>

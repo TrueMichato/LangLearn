@@ -1,0 +1,130 @@
+{
+  "id": "literature-arts",
+  "words": [
+    {
+      "word": "Роман",
+      "reading": "Roman",
+      "meaning": "Novel",
+      "example": "Этот роман считается шедевром русской литературы.",
+      "exampleMeaning": "This novel is considered a masterpiece of Russian literature."
+    },
+    {
+      "word": "Повесть",
+      "reading": "Povest",
+      "meaning": "Novella / long story",
+      "example": "Повесть Пушкина «Капитанская дочка» входит в школьную программу.",
+      "exampleMeaning": "Pushkin's novella 'The Captain's Daughter' is part of the school curriculum."
+    },
+    {
+      "word": "Рассказ",
+      "reading": "Rasskaz",
+      "meaning": "Short story",
+      "example": "Чехов написал множество коротких рассказов.",
+      "exampleMeaning": "Chekhov wrote many short stories."
+    },
+    {
+      "word": "Стихотворение",
+      "reading": "Stikhotvoreniye",
+      "meaning": "Poem",
+      "example": "Она прочитала стихотворение наизусть.",
+      "exampleMeaning": "She recited the poem by heart."
+    },
+    {
+      "word": "Автор",
+      "reading": "Avtor",
+      "meaning": "Author",
+      "example": "Автор этой книги получил литературную премию.",
+      "exampleMeaning": "The author of this book received a literary prize."
+    },
+    {
+      "word": "Герой",
+      "reading": "Geroy",
+      "meaning": "Hero / protagonist",
+      "example": "Главный герой романа — молодой студент.",
+      "exampleMeaning": "The protagonist of the novel is a young student."
+    },
+    {
+      "word": "Сюжет",
+      "reading": "Syuzhet",
+      "meaning": "Plot",
+      "example": "Сюжет фильма основан на реальных событиях.",
+      "exampleMeaning": "The plot of the film is based on real events."
+    },
+    {
+      "word": "Глава",
+      "reading": "Glava",
+      "meaning": "Chapter",
+      "example": "Я прочитал только первую главу этой книги.",
+      "exampleMeaning": "I only read the first chapter of this book."
+    },
+    {
+      "word": "Цитата",
+      "reading": "Tsitata",
+      "meaning": "Quote / quotation",
+      "example": "Эта цитата из Достоевского стала крылатым выражением.",
+      "exampleMeaning": "This quote from Dostoevsky has become a famous expression."
+    },
+    {
+      "word": "Произведение",
+      "reading": "Proizvedeniye",
+      "meaning": "Work / piece (literary or artistic)",
+      "example": "Это произведение было написано в девятнадцатом веке.",
+      "exampleMeaning": "This work was written in the nineteenth century."
+    },
+    {
+      "word": "Жанр",
+      "reading": "Zhanr",
+      "meaning": "Genre",
+      "example": "Какой жанр литературы вы предпочитаете?",
+      "exampleMeaning": "What genre of literature do you prefer?"
+    },
+    {
+      "word": "Критика",
+      "reading": "Kritika",
+      "meaning": "Criticism / critique",
+      "example": "Критика высоко оценила новый спектакль.",
+      "exampleMeaning": "Critics highly praised the new performance."
+    },
+    {
+      "word": "Вдохновение",
+      "reading": "Vdokhnoveniye",
+      "meaning": "Inspiration",
+      "example": "Природа была главным источником вдохновения для поэта.",
+      "exampleMeaning": "Nature was the poet's main source of inspiration."
+    },
+    {
+      "word": "Творчество",
+      "reading": "Tvorchestvo",
+      "meaning": "Creative work / oeuvre",
+      "example": "Творчество Толстого изучают во всём мире.",
+      "exampleMeaning": "Tolstoy's creative works are studied worldwide."
+    },
+    {
+      "word": "Выставка",
+      "reading": "Vystavka",
+      "meaning": "Exhibition",
+      "example": "В музее открылась выставка современного искусства.",
+      "exampleMeaning": "A contemporary art exhibition opened at the museum."
+    },
+    {
+      "word": "Спектакль",
+      "reading": "Spektakl",
+      "meaning": "Performance / play (theatrical)",
+      "example": "Спектакль произвёл на зрителей огромное впечатление.",
+      "exampleMeaning": "The performance made a huge impression on the audience."
+    }
+  ],
+  "exercises": [
+    { "type": "match", "pairs": 5 },
+    { "type": "fill-blank", "items": [
+      { "sentence": "Чехов написал множество коротких ___.", "answer": "рассказов", "hint": "Short stories (genitive plural)" },
+      { "sentence": "Главный ___ романа — молодой студент.", "answer": "герой", "hint": "Hero / protagonist" },
+      { "sentence": "___ Толстого изучают во всём мире.", "answer": "Творчество", "hint": "Creative work / oeuvre" }
+    ]},
+    { "type": "multiple-choice", "items": [
+      { "question": "What does 'Произведение' mean?", "options": ["Work / piece (literary)", "Author", "Chapter", "Plot"], "answer": 0 },
+      { "question": "What is 'Стихотворение'?", "options": ["Poem", "Novel", "Short story", "Novella"], "answer": 0 },
+      { "question": "What does 'Вдохновение' mean?", "options": ["Inspiration", "Criticism", "Exhibition", "Genre"], "answer": 0 }
+    ]}
+  ]
+}

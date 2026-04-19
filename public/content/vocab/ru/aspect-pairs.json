@@ -1,0 +1,34 @@
+{
+  "id": "aspect-pairs",
+  "words": [
+    { "word": "делать / сделать", "reading": "delat' / sdelat'", "meaning": "to do (impf) / to do (pf) — imperfective for ongoing/repeated, perfective for completed action", "example": "Я делаю домашнее задание каждый день. Вчера я сделал всё за час.", "exampleMeaning": "I do homework every day. Yesterday I did everything in an hour." },
+    { "word": "читать / прочитать", "reading": "chitat' / prochitat'", "meaning": "to read (impf) / to read (pf) — imperfective for process, perfective for finishing", "example": "Она читала книгу весь вечер. Она прочитала книгу за неделю.", "exampleMeaning": "She was reading a book all evening. She finished reading the book in a week." },
+    { "word": "писать / написать", "reading": "pisat' / napisat'", "meaning": "to write (impf) / to write (pf) — imperfective for process, perfective for completing", "example": "Он писал письмо два часа. Он написал письмо и отправил его.", "exampleMeaning": "He was writing a letter for two hours. He wrote the letter and sent it." },
+    { "word": "покупать / купить", "reading": "pokupat' / kupit'", "meaning": "to buy (impf) / to buy (pf) — imperfective for habitual buying, perfective for a specific purchase", "example": "Мы покупаем хлеб каждое утро. Мы купили новую машину.", "exampleMeaning": "We buy bread every morning. We bought a new car." },
+    { "word": "говорить / сказать", "reading": "govorit' / skazat'", "meaning": "to speak/say (impf) / to say (pf) — imperfective for ongoing speech, perfective for a single statement", "example": "Он говорил долго. Он сказал мне правду.", "exampleMeaning": "He spoke for a long time. He told me the truth." },
+    { "word": "открывать / открыть", "reading": "otkryvat' / otkryt'", "meaning": "to open (impf) / to open (pf) — imperfective for repeated/habitual, perfective for one-time action", "example": "Магазин открывают каждый день в девять. Она открыла окно.", "exampleMeaning": "The store opens every day at nine. She opened the window." },
+    { "word": "закрывать / закрыть", "reading": "zakryvat' / zakryt'", "meaning": "to close (impf) / to close (pf) — imperfective for process or habit, perfective for completion", "example": "Не закрывайте дверь, пожалуйста. Он закрыл книгу и встал.", "exampleMeaning": "Don't close the door, please. He closed the book and stood up." },
+    { "word": "давать / дать", "reading": "davat' / dat'", "meaning": "to give (impf) / to give (pf) — imperfective for repeated giving, perfective for a single act", "example": "Мама давала мне деньги каждую неделю. Дай мне, пожалуйста, воды.", "exampleMeaning": "Mom used to give me money every week. Give me some water, please." },
+    { "word": "брать / взять", "reading": "brat' / vzyat'", "meaning": "to take (impf) / to take (pf) — imperfective for habitual, perfective for a completed action", "example": "Я всегда беру зонт с собой. Возьми эту книгу.", "exampleMeaning": "I always take an umbrella with me. Take this book." },
+    { "word": "решать / решить", "reading": "reshat' / reshit'", "meaning": "to decide/solve (impf) / to decide/solve (pf) — imperfective for process, perfective for result", "example": "Мы долго решали эту задачу. Мы решили поехать в отпуск.", "exampleMeaning": "We were solving this problem for a long time. We decided to go on vacation." },
+    { "word": "начинать / начать", "reading": "nachinat' / nachat'", "meaning": "to begin (impf) / to begin (pf) — imperfective for repeated starts, perfective for a specific start", "example": "Занятия начинаются в восемь. Он начал новый проект.", "exampleMeaning": "Classes begin at eight. He started a new project." },
+    { "word": "понимать / понять", "reading": "ponimat' / ponyat'", "meaning": "to understand (impf) / to understand (pf) — imperfective for ongoing state, perfective for sudden realization", "example": "Я не понимаю этот текст. Наконец я понял, что он имел в виду.", "exampleMeaning": "I don't understand this text. I finally understood what he meant." },
+    { "word": "учить / выучить", "reading": "uchit' / vyuchit'", "meaning": "to learn/study (impf) / to learn (pf) — imperfective for process, perfective for mastering", "example": "Я учу русский язык три года. Она выучила все слова к экзамену.", "exampleMeaning": "I have been studying Russian for three years. She learned all the words for the exam." },
+    { "word": "готовить / приготовить", "reading": "gotovit' / prigotovit'", "meaning": "to prepare/cook (impf) / to prepare/cook (pf) — imperfective for process, perfective for result", "example": "Бабушка готовила обед два часа. Она приготовила вкусный борщ.", "exampleMeaning": "Grandma was cooking lunch for two hours. She made a delicious borscht." },
+    { "word": "получать / получить", "reading": "poluchat' / poluchit'", "meaning": "to receive (impf) / to receive (pf) — imperfective for habitual, perfective for a specific receipt", "example": "Я получаю зарплату каждый месяц. Она получила письмо от друга.", "exampleMeaning": "I receive my salary every month. She received a letter from a friend." },
+    { "word": "менять / поменять", "reading": "menyat' / pomenyat'", "meaning": "to change (impf) / to change (pf) — imperfective for ongoing/repeated, perfective for completed change", "example": "Он часто меняет работу. Я поменял пароль.", "exampleMeaning": "He often changes jobs. I changed the password." }
+  ],
+  "exercises": [
+    { "type": "match", "pairs": 5 },
+    { "type": "fill-blank", "items": [
+      { "sentence": "Я ___ русский язык каждый день. (study, imperfective)", "answer": "учу", "hint": "to learn/study (impf)" },
+      { "sentence": "Вчера она ___ новую книгу. (bought, perfective)", "answer": "купила", "hint": "to buy (pf, past feminine)" },
+      { "sentence": "Мы ___ эту задачу и нашли ответ. (solved, perfective)", "answer": "решили", "hint": "to solve (pf, past plural)" }
+    ]},
+    { "type": "multiple-choice", "items": [
+      { "question": "Which verb is perfective: 'читать' or 'прочитать'?", "options": ["прочитать", "читать", "Both are perfective", "Neither is perfective"], "answer": 0 },
+      { "question": "What aspect would you use for 'I read every day'?", "options": ["Imperfective (читаю)", "Perfective (прочитаю)", "Either one works", "Neither works"], "answer": 0 },
+      { "question": "What does 'Она написала письмо' mean?", "options": ["She wrote (finished) the letter", "She was writing a letter", "She will write a letter", "She writes letters"], "answer": 0 }
+    ]}
+  ]
+}

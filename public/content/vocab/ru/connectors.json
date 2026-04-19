@@ -1,0 +1,34 @@
+{
+  "id": "connectors",
+  "words": [
+    { "word": "однако", "reading": "odnako", "meaning": "however", "example": "Он устал, однако продолжил работать.", "exampleMeaning": "He was tired, however he continued working." },
+    { "word": "тем не менее", "reading": "tem ne meneye", "meaning": "nevertheless", "example": "Погода была плохая. Тем не менее мы пошли гулять.", "exampleMeaning": "The weather was bad. Nevertheless, we went for a walk." },
+    { "word": "к тому же", "reading": "k tomu zhe", "meaning": "moreover / besides", "example": "Он умный, к тому же очень трудолюбивый.", "exampleMeaning": "He is smart, and moreover very hardworking." },
+    { "word": "поэтому", "reading": "poetomu", "meaning": "therefore / that's why", "example": "Шёл дождь, поэтому мы остались дома.", "exampleMeaning": "It was raining, so we stayed home." },
+    { "word": "кроме того", "reading": "krome togo", "meaning": "besides / in addition", "example": "Он знает английский. Кроме того, он учит французский.", "exampleMeaning": "He knows English. Besides, he is learning French." },
+    { "word": "во-первых", "reading": "vo-pervykh", "meaning": "firstly", "example": "Во-первых, это слишком дорого.", "exampleMeaning": "Firstly, it's too expensive." },
+    { "word": "во-вторых", "reading": "vo-vtorykh", "meaning": "secondly", "example": "Во-вторых, у нас нет времени.", "exampleMeaning": "Secondly, we don't have time." },
+    { "word": "с одной стороны", "reading": "s odnoy storony", "meaning": "on one hand", "example": "С одной стороны, это хорошая идея.", "exampleMeaning": "On one hand, it's a good idea." },
+    { "word": "с другой стороны", "reading": "s drugoy storony", "meaning": "on the other hand", "example": "С другой стороны, это потребует много времени.", "exampleMeaning": "On the other hand, it will require a lot of time." },
+    { "word": "то есть", "reading": "to yest'", "meaning": "that is / i.e.", "example": "Он вегетарианец, то есть не ест мясо.", "exampleMeaning": "He is a vegetarian, that is, he doesn't eat meat." },
+    { "word": "например", "reading": "naprimer", "meaning": "for example", "example": "Есть много способов, например, можно пойти пешком.", "exampleMeaning": "There are many ways, for example, you can walk." },
+    { "word": "в общем", "reading": "v obshchem", "meaning": "in general / overall", "example": "В общем, всё прошло хорошо.", "exampleMeaning": "In general, everything went well." },
+    { "word": "таким образом", "reading": "takim obrazom", "meaning": "thus / in this way", "example": "Таким образом, мы решили проблему.", "exampleMeaning": "Thus, we solved the problem." },
+    { "word": "на самом деле", "reading": "na samom dele", "meaning": "in fact / actually", "example": "На самом деле, это не так сложно.", "exampleMeaning": "In fact, it's not that difficult." },
+    { "word": "по-моему", "reading": "po-moyemu", "meaning": "in my opinion", "example": "По-моему, это лучший вариант.", "exampleMeaning": "In my opinion, this is the best option." },
+    { "word": "к сожалению", "reading": "k sozhaleniyu", "meaning": "unfortunately", "example": "К сожалению, магазин уже закрыт.", "exampleMeaning": "Unfortunately, the store is already closed." }
+  ],
+  "exercises": [
+    { "type": "match", "pairs": 5 },
+    { "type": "fill-blank", "items": [
+      { "sentence": "Шёл дождь, ___ мы остались дома. (therefore)", "answer": "поэтому", "hint": "therefore" },
+      { "sentence": "___, магазин уже закрыт. (Unfortunately)", "answer": "К сожалению", "hint": "unfortunately" },
+      { "sentence": "___, это не так сложно. (In fact)", "answer": "На самом деле", "hint": "in fact / actually" }
+    ]},
+    { "type": "multiple-choice", "items": [
+      { "question": "What does 'тем не менее' mean?", "options": ["Nevertheless", "Therefore", "Moreover", "In general"], "answer": 0 },
+      { "question": "How do you say 'in my opinion' in Russian?", "options": ["По-моему", "Например", "Однако", "Таким образом"], "answer": 0 },
+      { "question": "What does 'к тому же' mean?", "options": ["Moreover / besides", "On the other hand", "That is", "Unfortunately"], "answer": 0 }
+    ]}
+  ]
+}

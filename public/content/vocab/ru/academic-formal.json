@@ -1,0 +1,34 @@
+{
+  "id": "academic-formal",
+  "words": [
+    { "word": "исследование", "reading": "issledovaniye", "meaning": "research / study", "example": "Учёные провели важное исследование.", "exampleMeaning": "The scientists conducted an important study." },
+    { "word": "развитие", "reading": "razvitiye", "meaning": "development", "example": "Развитие технологий меняет мир.", "exampleMeaning": "The development of technology is changing the world." },
+    { "word": "значение", "reading": "znacheniye", "meaning": "meaning / significance", "example": "Какое значение имеет это слово?", "exampleMeaning": "What is the meaning of this word?" },
+    { "word": "общество", "reading": "obshchestvo", "meaning": "society", "example": "Современное общество быстро меняется.", "exampleMeaning": "Modern society is changing rapidly." },
+    { "word": "образование", "reading": "obrazovaniye", "meaning": "education", "example": "Образование играет важную роль в жизни человека.", "exampleMeaning": "Education plays an important role in a person's life." },
+    { "word": "условие", "reading": "usloviye", "meaning": "condition / requirement", "example": "При каких условиях это возможно?", "exampleMeaning": "Under what conditions is this possible?" },
+    { "word": "способ", "reading": "sposob", "meaning": "method / way", "example": "Есть несколько способов решить эту задачу.", "exampleMeaning": "There are several ways to solve this problem." },
+    { "word": "результат", "reading": "rezul'tat", "meaning": "result", "example": "Результаты экзамена будут завтра.", "exampleMeaning": "The exam results will be tomorrow." },
+    { "word": "причина", "reading": "prichina", "meaning": "reason / cause", "example": "Какова причина вашего опоздания?", "exampleMeaning": "What is the reason for your being late?" },
+    { "word": "возможность", "reading": "vozmozhnost'", "meaning": "opportunity / possibility", "example": "У нас есть возможность учиться за границей.", "exampleMeaning": "We have the opportunity to study abroad." },
+    { "word": "влияние", "reading": "vliyaniye", "meaning": "influence / impact", "example": "Интернет оказал большое влияние на общество.", "exampleMeaning": "The internet has had a great impact on society." },
+    { "word": "решение", "reading": "resheniye", "meaning": "decision / solution", "example": "Мы приняли важное решение.", "exampleMeaning": "We made an important decision." },
+    { "word": "современный", "reading": "sovremennyy", "meaning": "modern / contemporary", "example": "Современные технологии упрощают жизнь.", "exampleMeaning": "Modern technologies simplify life." },
+    { "word": "необходимый", "reading": "neobkhodimyy", "meaning": "necessary / essential", "example": "Это необходимый шаг для успеха.", "exampleMeaning": "This is a necessary step for success." },
+    { "word": "основной", "reading": "osnovnoy", "meaning": "main / basic / fundamental", "example": "Основная идея проекта — улучшить образование.", "exampleMeaning": "The main idea of the project is to improve education." },
+    { "word": "различный", "reading": "razlichnyy", "meaning": "various / different", "example": "Мы рассмотрели различные варианты.", "exampleMeaning": "We considered various options." }
+  ],
+  "exercises": [
+    { "type": "match", "pairs": 5 },
+    { "type": "fill-blank", "items": [
+      { "sentence": "Учёные провели важное ___. (research)", "answer": "исследование", "hint": "research / study" },
+      { "sentence": "Какова ___ вашего опоздания? (reason)", "answer": "причина", "hint": "reason / cause" },
+      { "sentence": "Мы приняли важное ___. (decision)", "answer": "решение", "hint": "decision / solution" }
+    ]},
+    { "type": "multiple-choice", "items": [
+      { "question": "What does 'образование' mean?", "options": ["Education", "Society", "Development", "Research"], "answer": 0 },
+      { "question": "What does 'необходимый' mean?", "options": ["Necessary / essential", "Modern", "Various", "Main"], "answer": 0 },
+      { "question": "What does 'влияние' mean?", "options": ["Influence / impact", "Opportunity", "Condition", "Result"], "answer": 0 }
+    ]}
+  ]
+}
