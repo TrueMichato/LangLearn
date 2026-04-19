@@ -173,13 +173,13 @@ export default function TestsPage() {
   // ─── SETUP ────────────────────────────────────────────
   if (phase === 'setup') {
     return (
-      <div>
-        <h2 className="text-lg font-semibold text-gray-700 dark:text-gray-200 mb-4">Proficiency Tests</h2>
+      <div className="page-enter">
+        <h2 className="text-lg font-semibold text-slate-700 dark:text-slate-200 mb-4">Proficiency Tests</h2>
 
         <div className="space-y-4">
           {/* Language selector */}
-          <div className="bg-white dark:bg-gray-800 rounded-2xl shadow p-4">
-            <label className="block text-sm font-medium text-gray-600 dark:text-gray-300 mb-2">Language</label>
+          <div className="bg-white dark:bg-slate-800 rounded-2xl shadow p-4">
+            <label className="block text-sm font-medium text-slate-600 dark:text-slate-300 mb-2">Language</label>
             <div className="flex flex-wrap gap-2">
               {activeLanguages.map((l) => (
                 <button
@@ -188,7 +188,7 @@ export default function TestsPage() {
                   className={`px-4 py-2 rounded-xl text-sm font-medium transition-colors ${
                     language === l
                       ? 'bg-indigo-600 text-white'
-                      : 'bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-600'
+                      : 'bg-slate-100 dark:bg-slate-700 text-slate-700 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-600'
                   }`}
                 >
                   {getLanguageLabel(l)}
@@ -198,8 +198,8 @@ export default function TestsPage() {
           </div>
 
           {/* Test type */}
-          <div className="bg-white dark:bg-gray-800 rounded-2xl shadow p-4">
-            <label className="block text-sm font-medium text-gray-600 dark:text-gray-300 mb-2">Test Type</label>
+          <div className="bg-white dark:bg-slate-800 rounded-2xl shadow p-4">
+            <label className="block text-sm font-medium text-slate-600 dark:text-slate-300 mb-2">Test Type</label>
             <div className="grid grid-cols-2 gap-2">
               {(Object.keys(TEST_LABELS) as TestType[]).map((t) => (
                 <button
@@ -208,7 +208,7 @@ export default function TestsPage() {
                   className={`px-4 py-2 rounded-xl text-sm font-medium transition-colors ${
                     testType === t
                       ? 'bg-indigo-600 text-white'
-                      : 'bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-600'
+                      : 'bg-slate-100 dark:bg-slate-700 text-slate-700 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-600'
                   }`}
                 >
                   {TEST_LABELS[t]}
@@ -218,8 +218,8 @@ export default function TestsPage() {
           </div>
 
           {/* Time limit */}
-          <div className="bg-white dark:bg-gray-800 rounded-2xl shadow p-4">
-            <label className="block text-sm font-medium text-gray-600 dark:text-gray-300 mb-2">Time Limit</label>
+          <div className="bg-white dark:bg-slate-800 rounded-2xl shadow p-4">
+            <label className="block text-sm font-medium text-slate-600 dark:text-slate-300 mb-2">Time Limit</label>
             <div className="flex gap-2">
               {TIME_OPTIONS.map((opt) => (
                 <button
@@ -228,7 +228,7 @@ export default function TestsPage() {
                   className={`px-4 py-2 rounded-xl text-sm font-medium transition-colors ${
                     timeLimit === opt.value
                       ? 'bg-indigo-600 text-white'
-                      : 'bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-600'
+                      : 'bg-slate-100 dark:bg-slate-700 text-slate-700 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-600'
                   }`}
                 >
                   {opt.label}
@@ -239,25 +239,25 @@ export default function TestsPage() {
 
           <button
             onClick={handleStart}
-            className="w-full bg-indigo-600 text-white px-5 py-3 rounded-xl hover:bg-indigo-700 font-semibold text-lg transition-colors"
+            className="w-full bg-indigo-600 text-white px-5 py-3 rounded-xl hover:bg-indigo-700 font-semibold text-lg press-feedback transition-colors"
           >
             Start Test
           </button>
 
           {/* History */}
           {history.length > 0 && (
-            <div className="bg-white dark:bg-gray-800 rounded-2xl shadow p-4">
-              <h3 className="text-sm font-semibold text-gray-700 dark:text-gray-200 mb-3">Recent Results</h3>
+            <div className="bg-white dark:bg-slate-800 rounded-2xl shadow p-4">
+              <h3 className="text-sm font-semibold text-slate-700 dark:text-slate-200 mb-3">Recent Results</h3>
               <div className="space-y-2">
                 {history.map((h) => (
                   <div key={h.id} className="flex items-center justify-between text-sm">
-                    <div className="text-gray-600 dark:text-gray-400">
+                    <div className="text-slate-600 dark:text-slate-400">
                       <span className="capitalize">{h.type}</span>
                       <span className="mx-1">·</span>
                       <span>{new Date(h.date).toLocaleDateString()}</span>
                     </div>
                     <div className="flex items-center gap-2">
-                      <span className="font-medium text-gray-800 dark:text-gray-100">{h.score}%</span>
+                      <span className="font-medium text-slate-800 dark:text-slate-100">{h.score}%</span>
                       <span className={`text-xs px-2 py-0.5 rounded-full capitalize ${levelColor(h.level)}`}>
                         {h.level}
                       </span>
@@ -275,9 +275,20 @@ export default function TestsPage() {
   // ─── LOADING ──────────────────────────────────────────
   if (phase === 'loading') {
     return (
-      <div className="flex flex-col items-center justify-center py-20">
-        <div className="animate-spin rounded-full h-12 w-12 border-4 border-indigo-200 border-t-indigo-600 mb-4" />
-        <p className="text-gray-500 dark:text-gray-400">Generating questions…</p>
+      <div className="page-enter space-y-6">
+        <div className="skeleton h-6 w-1/3" />
+        <div className="space-y-4">
+          <div className="rounded-2xl bg-white dark:bg-slate-800/90 shadow p-6 space-y-3">
+            <div className="skeleton h-3 w-1/4" />
+            <div className="skeleton h-5 w-3/4" />
+            <div className="space-y-3 mt-4">
+              <div className="skeleton h-12 w-full rounded-xl" />
+              <div className="skeleton h-12 w-full rounded-xl" />
+              <div className="skeleton h-12 w-full rounded-xl" />
+              <div className="skeleton h-12 w-full rounded-xl" />
+            </div>
+          </div>
+        </div>
       </div>
     );
   }
@@ -288,30 +299,30 @@ export default function TestsPage() {
     const progress = ((currentIndex) / questions.length) * 100;
 
     return (
-      <div>
+      <div className="page-enter">
         {/* Header bar */}
         <div className="flex items-center justify-between mb-4">
-          <span className="text-sm font-medium text-gray-500 dark:text-gray-400">
+          <span className="text-sm font-medium text-slate-500 dark:text-slate-400">
             {currentIndex + 1} / {questions.length}
           </span>
           {timeLimit > 0 && (
-            <span className={`text-sm font-mono font-medium ${secondsLeft < 60 ? 'text-red-500' : 'text-gray-600 dark:text-gray-300'}`}>
+            <span className={`text-sm font-mono font-medium ${secondsLeft < 60 ? 'text-red-500' : 'text-slate-600 dark:text-slate-300'}`}>
               ⏱ {formatTime(secondsLeft)}
             </span>
           )}
         </div>
 
         {/* Progress bar */}
-        <div className="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2 mb-6">
+        <div className="w-full bg-slate-200 dark:bg-slate-700 rounded-full h-2 mb-6">
           <div className="bg-indigo-600 h-2 rounded-full transition-all" style={{ width: `${progress}%` }} />
         </div>
 
         {/* Question card */}
-        <div className="bg-white dark:bg-gray-800 rounded-2xl shadow p-6 mb-4">
+        <div className="bg-white dark:bg-slate-800 rounded-2xl shadow p-6 mb-4">
           <span className="text-xs font-medium uppercase tracking-wider text-indigo-500 mb-2 block">
             {q.category}
           </span>
-          <p className="text-lg font-semibold text-gray-800 dark:text-gray-100 mb-6">{q.question}</p>
+          <p className="text-lg font-semibold text-slate-800 dark:text-slate-100 mb-6">{q.question}</p>
 
           <div className="space-y-3">
             {q.options.map((opt, i) => {
@@ -323,11 +334,11 @@ export default function TestsPage() {
                 } else if (i === selectedOption && i !== q.correctIndex) {
                   btnClass += 'border-red-500 bg-red-50 dark:bg-red-900/30 text-red-700 dark:text-red-300';
                 } else {
-                  btnClass += 'border-gray-200 dark:border-gray-600 text-gray-400 dark:text-gray-500';
+                  btnClass += 'border-gray-200 dark:border-white/10 text-slate-400 dark:text-slate-500';
                 }
               } else {
                 btnClass +=
-                  'border-gray-200 dark:border-gray-600 text-gray-700 dark:text-gray-200 hover:border-indigo-400 hover:bg-indigo-50 dark:hover:bg-indigo-900/20';
+                  'border-gray-200 dark:border-white/10 text-slate-700 dark:text-slate-200 hover:border-indigo-400 hover:bg-indigo-50 dark:hover:bg-indigo-900/20';
               }
 
               return (
@@ -347,41 +358,41 @@ export default function TestsPage() {
     const testLevel = getTestLevel(result.score);
 
     return (
-      <div>
-        <h2 className="text-lg font-semibold text-gray-700 dark:text-gray-200 mb-4">Test Complete!</h2>
+      <div className="page-enter">
+        <h2 className="text-lg font-semibold text-slate-700 dark:text-slate-200 mb-4">Test Complete!</h2>
 
-        <div className="bg-white dark:bg-gray-800 rounded-2xl shadow p-6 mb-4 text-center">
+        <div className="bg-white dark:bg-slate-800 rounded-2xl shadow p-6 mb-4 text-center">
           <div className="text-5xl font-bold text-indigo-600 mb-2">{result.score}%</div>
           <div className={`inline-block text-sm font-semibold px-3 py-1 rounded-full capitalize mb-4 ${levelColor(testLevel.level)}`}>
             {testLevel.label}
           </div>
-          <div className="text-sm text-gray-500 dark:text-gray-400 mb-1">
+          <div className="text-sm text-slate-500 dark:text-slate-400 mb-1">
             JLPT {testLevel.jlpt} · CEFR {testLevel.cefr}
           </div>
         </div>
 
         <div className="grid grid-cols-3 gap-3 mb-4">
-          <div className="bg-white dark:bg-gray-800 rounded-2xl shadow p-4 text-center">
-            <div className="text-2xl font-bold text-gray-800 dark:text-gray-100">
+          <div className="bg-white dark:bg-slate-800 rounded-2xl shadow p-4 text-center">
+            <div className="text-2xl font-bold text-slate-800 dark:text-slate-100">
               {result.correctAnswers}/{result.totalQuestions}
             </div>
-            <div className="text-xs text-gray-500 dark:text-gray-400">Correct</div>
+            <div className="text-xs text-slate-500 dark:text-slate-400">Correct</div>
           </div>
-          <div className="bg-white dark:bg-gray-800 rounded-2xl shadow p-4 text-center">
-            <div className="text-2xl font-bold text-gray-800 dark:text-gray-100">
+          <div className="bg-white dark:bg-slate-800 rounded-2xl shadow p-4 text-center">
+            <div className="text-2xl font-bold text-slate-800 dark:text-slate-100">
               {formatTime(result.durationSeconds)}
             </div>
-            <div className="text-xs text-gray-500 dark:text-gray-400">Time</div>
+            <div className="text-xs text-slate-500 dark:text-slate-400">Time</div>
           </div>
-          <div className="bg-white dark:bg-gray-800 rounded-2xl shadow p-4 text-center">
+          <div className="bg-white dark:bg-slate-800 rounded-2xl shadow p-4 text-center">
             <div className="text-2xl font-bold text-amber-500">+{xpEarned}</div>
-            <div className="text-xs text-gray-500 dark:text-gray-400">XP</div>
+            <div className="text-xs text-slate-500 dark:text-slate-400">XP</div>
           </div>
         </div>
 
         <button
           onClick={handleRestart}
-          className="w-full bg-indigo-600 text-white px-5 py-3 rounded-xl hover:bg-indigo-700 font-semibold transition-colors"
+          className="w-full bg-indigo-600 text-white px-5 py-3 rounded-xl hover:bg-indigo-700 font-semibold press-feedback transition-colors"
         >
           Take Another Test
         </button>
@@ -397,6 +408,6 @@ function levelColor(level: string): string {
     case 'advanced': return 'bg-purple-100 dark:bg-purple-900/40 text-purple-700 dark:text-purple-300';
     case 'intermediate': return 'bg-blue-100 dark:bg-blue-900/40 text-blue-700 dark:text-blue-300';
     case 'elementary': return 'bg-green-100 dark:bg-green-900/40 text-green-700 dark:text-green-300';
-    default: return 'bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300';
+    default: return 'bg-slate-100 dark:bg-slate-700 text-slate-700 dark:text-slate-300';
   }
 }

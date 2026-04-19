@@ -167,12 +167,12 @@ export default function ConjugationsPage() {
   // No supported languages active
   if (supportedActive.length === 0) {
     return (
-      <div className="text-center py-12">
+      <div className="text-center py-12 page-enter">
         <p className="text-5xl mb-4">🔄</p>
-        <h2 className="text-lg font-semibold text-gray-700 dark:text-gray-200 mb-2">
+        <h2 className="text-lg font-semibold text-slate-700 dark:text-slate-200 mb-2">
           Conjugation Drills
         </h2>
-        <p className="text-gray-500 dark:text-gray-400">
+        <p className="text-slate-500 dark:text-slate-400">
           Add Japanese or Russian in Settings to unlock conjugation drills.
         </p>
       </div>
@@ -184,19 +184,19 @@ export default function ConjugationsPage() {
     const xp = 20 + 3 * result.correct;
     const pct = Math.round((result.correct / result.total) * 100);
     return (
-      <div className="max-w-md mx-auto space-y-6 py-4">
-        <div className="bg-white dark:bg-gray-800 rounded-2xl shadow p-6 text-center space-y-4">
+      <div className="max-w-md mx-auto space-y-6 py-4 page-enter">
+        <div className="bg-white dark:bg-slate-800 rounded-2xl shadow p-6 text-center space-y-4">
           <p className="text-5xl">{pct >= 80 ? '🎉' : pct >= 50 ? '👍' : '💪'}</p>
-          <h2 className="text-xl font-bold text-gray-800 dark:text-gray-100">Drill Complete!</h2>
+          <h2 className="text-xl font-bold text-slate-800 dark:text-slate-100">Drill Complete!</h2>
           <p className="text-3xl font-bold text-indigo-600 dark:text-indigo-400">
             {result.correct} / {result.total}
           </p>
-          <p className="text-sm text-gray-500 dark:text-gray-400">{pct}% correct</p>
+          <p className="text-sm text-slate-500 dark:text-slate-400">{pct}% correct</p>
           <p className="text-sm font-medium text-yellow-600 dark:text-yellow-400">+{xp} XP</p>
         </div>
         <button
           onClick={resetDrill}
-          className="w-full bg-indigo-600 text-white px-5 py-2 rounded-xl hover:bg-indigo-700 transition-colors"
+          className="w-full bg-indigo-600 text-white px-5 py-2 rounded-xl hover:bg-indigo-700 press-feedback transition-colors"
         >
           Back to Setup
         </button>
@@ -207,10 +207,10 @@ export default function ConjugationsPage() {
   // Drill mode
   if (drilling && questions.length > 0) {
     return (
-      <div className="max-w-md mx-auto py-4">
+      <div className="max-w-md mx-auto py-4 page-enter">
         <button
           onClick={resetDrill}
-          className="mb-4 text-sm text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-200"
+          className="mb-4 text-sm text-slate-500 dark:text-slate-400 hover:text-slate-700 dark:hover:text-slate-200"
         >
           ← Back
         </button>
@@ -225,14 +225,14 @@ export default function ConjugationsPage() {
 
   // Setup
   return (
-    <div className="max-w-md mx-auto space-y-6">
-      <h2 className="text-lg font-semibold text-gray-700 dark:text-gray-200">
+    <div className="max-w-md mx-auto space-y-6 page-enter">
+      <h2 className="text-lg font-semibold text-slate-700 dark:text-slate-200">
         Conjugation Drills
       </h2>
 
       {/* Language selector */}
-      <div className="bg-white dark:bg-gray-800 rounded-2xl shadow p-4 space-y-2">
-        <label className="text-sm font-medium text-gray-600 dark:text-gray-300">Language</label>
+      <div className="bg-white dark:bg-slate-800 rounded-2xl shadow p-4 space-y-2">
+        <label className="text-sm font-medium text-slate-600 dark:text-slate-300">Language</label>
         <div className="flex gap-2 flex-wrap">
           {supportedActive.map((lang) => (
             <button
@@ -241,7 +241,7 @@ export default function ConjugationsPage() {
               className={`px-4 py-2 rounded-xl text-sm font-medium transition-colors ${
                 language === lang
                   ? 'bg-indigo-600 text-white'
-                  : 'bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-600'
+                  : 'bg-slate-100 dark:bg-slate-700 text-slate-700 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-600'
               }`}
             >
               {getLanguageLabel(lang)}
@@ -252,8 +252,8 @@ export default function ConjugationsPage() {
 
       {/* Category selector */}
       {CATEGORIES[language] && (
-        <div className="bg-white dark:bg-gray-800 rounded-2xl shadow p-4 space-y-2">
-          <label className="text-sm font-medium text-gray-600 dark:text-gray-300">Category</label>
+        <div className="bg-white dark:bg-slate-800 rounded-2xl shadow p-4 space-y-2">
+          <label className="text-sm font-medium text-slate-600 dark:text-slate-300">Category</label>
           <div className="flex gap-2 flex-wrap">
             {CATEGORIES[language].map((cat) => (
               <button
@@ -262,7 +262,7 @@ export default function ConjugationsPage() {
                 className={`px-4 py-2 rounded-xl text-sm font-medium transition-colors ${
                   category === cat.value
                     ? 'bg-indigo-600 text-white'
-                    : 'bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-600'
+                    : 'bg-slate-100 dark:bg-slate-700 text-slate-700 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-600'
                 }`}
               >
                 {cat.label}
@@ -273,9 +273,9 @@ export default function ConjugationsPage() {
       )}
 
       {/* Form/case filter */}
-      <div className="bg-white dark:bg-gray-800 rounded-2xl shadow p-4 space-y-3">
+      <div className="bg-white dark:bg-slate-800 rounded-2xl shadow p-4 space-y-3">
         <div className="flex items-center justify-between">
-          <label className="text-sm font-medium text-gray-600 dark:text-gray-300">
+          <label className="text-sm font-medium text-slate-600 dark:text-slate-300">
             {category === 'ru-nouns' ? 'Cases' : 'Forms'} to practice
           </label>
           <button
@@ -293,7 +293,7 @@ export default function ConjugationsPage() {
               className={`px-3 py-1.5 rounded-lg text-sm transition-colors ${
                 selectedForms.has(f.value)
                   ? 'bg-indigo-100 dark:bg-indigo-900 text-indigo-700 dark:text-indigo-300 border border-indigo-300 dark:border-indigo-700'
-                  : 'bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-400 border border-transparent'
+                  : 'bg-slate-100 dark:bg-slate-700 text-slate-600 dark:text-slate-400 border border-transparent'
               }`}
             >
               {f.label}
@@ -303,15 +303,15 @@ export default function ConjugationsPage() {
       </div>
 
       {/* Mode toggle */}
-      <div className="bg-white dark:bg-gray-800 rounded-2xl shadow p-4 space-y-2">
-        <label className="text-sm font-medium text-gray-600 dark:text-gray-300">Mode</label>
+      <div className="bg-white dark:bg-slate-800 rounded-2xl shadow p-4 space-y-2">
+        <label className="text-sm font-medium text-slate-600 dark:text-slate-300">Mode</label>
         <div className="flex gap-2">
           <button
             onClick={() => setMode('tiles')}
             className={`flex-1 px-4 py-2 rounded-xl text-sm font-medium transition-colors ${
               mode === 'tiles'
                 ? 'bg-indigo-600 text-white'
-                : 'bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-600'
+                : 'bg-slate-100 dark:bg-slate-700 text-slate-700 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-600'
             }`}
           >
             🧩 Tiles (Beginner)
@@ -321,7 +321,7 @@ export default function ConjugationsPage() {
             className={`flex-1 px-4 py-2 rounded-xl text-sm font-medium transition-colors ${
               mode === 'type'
                 ? 'bg-indigo-600 text-white'
-                : 'bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-600'
+                : 'bg-slate-100 dark:bg-slate-700 text-slate-700 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-600'
             }`}
           >
             ⌨️ Type (Advanced)
@@ -333,12 +333,12 @@ export default function ConjugationsPage() {
       <button
         onClick={startDrill}
         disabled={selectedForms.size === 0}
-        className="w-full bg-indigo-600 text-white px-5 py-3 rounded-xl hover:bg-indigo-700 disabled:opacity-50 disabled:cursor-not-allowed transition-colors font-semibold text-lg"
+        className="w-full bg-indigo-600 text-white px-5 py-3 rounded-xl hover:bg-indigo-700 disabled:opacity-50 disabled:cursor-not-allowed press-feedback transition-colors font-semibold text-lg"
       >
         Start Drill
       </button>
       {selectedForms.size === 0 && (
-        <p className="text-center text-sm text-gray-400 dark:text-gray-500">
+        <p className="text-center text-sm text-slate-400 dark:text-slate-500">
           Select at least one {category === 'ru-nouns' ? 'case' : 'form'} to begin
         </p>
       )}

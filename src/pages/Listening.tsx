@@ -157,12 +157,12 @@ export default function ListeningPage() {
 
   if (supportedLanguages.length === 0) {
     return (
-      <div className="text-center py-12">
+      <div className="text-center py-12 page-enter">
         <p className="text-4xl mb-4">🎧</p>
-        <p className="text-gray-600 dark:text-gray-300 mb-2">
+        <p className="text-slate-600 dark:text-slate-300 mb-2">
           Listening practice is available for Japanese and Russian.
         </p>
-        <p className="text-sm text-gray-500 dark:text-gray-400 mb-6">
+        <p className="text-sm text-slate-500 dark:text-slate-400 mb-6">
           Add one of these languages in Settings to get started.
         </p>
         <Link to="/settings" className="text-indigo-600 dark:text-indigo-400 font-medium">
@@ -176,13 +176,13 @@ export default function ListeningPage() {
 
   if (screen === 'setup') {
     return (
-      <div>
-        <h2 className="text-lg font-semibold text-gray-700 dark:text-gray-200 mb-6">
+      <div className="page-enter">
+        <h2 className="text-lg font-semibold text-slate-700 dark:text-slate-200 mb-6">
           🎧 Listening Practice
         </h2>
 
         {/* Language */}
-        <label className="block text-sm font-medium text-gray-600 dark:text-gray-300 mb-1">
+        <label className="block text-sm font-medium text-slate-600 dark:text-slate-300 mb-1">
           Language
         </label>
         <div className="flex gap-2 mb-6">
@@ -193,7 +193,7 @@ export default function ListeningPage() {
               className={`px-4 py-2 rounded-xl text-sm font-medium transition-colors ${
                 language === l
                   ? 'bg-indigo-600 text-white'
-                  : 'bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-200'
+                  : 'bg-slate-100 dark:bg-slate-700 text-slate-700 dark:text-slate-200'
               }`}
             >
               {getLanguageLabel(l)}
@@ -202,7 +202,7 @@ export default function ListeningPage() {
         </div>
 
         {/* Difficulty */}
-        <label className="block text-sm font-medium text-gray-600 dark:text-gray-300 mb-1">
+        <label className="block text-sm font-medium text-slate-600 dark:text-slate-300 mb-1">
           Difficulty
         </label>
         <div className="flex gap-2 mb-8">
@@ -213,7 +213,7 @@ export default function ListeningPage() {
               className={`px-4 py-2 rounded-xl text-sm font-medium capitalize transition-colors ${
                 difficulty === d
                   ? 'bg-indigo-600 text-white'
-                  : 'bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-200'
+                  : 'bg-slate-100 dark:bg-slate-700 text-slate-700 dark:text-slate-200'
               }`}
             >
               {d}
@@ -224,7 +224,7 @@ export default function ListeningPage() {
         <button
           onClick={startPractice}
           disabled={!language}
-          className="w-full py-3 rounded-2xl bg-indigo-600 text-white font-semibold text-lg disabled:opacity-50 hover:bg-indigo-700 transition-colors"
+          className="w-full py-3 rounded-2xl bg-indigo-600 text-white font-semibold text-lg disabled:opacity-50 hover:bg-indigo-700 press-feedback transition-colors"
         >
           Start Listening Practice
         </button>
@@ -236,15 +236,15 @@ export default function ListeningPage() {
 
   if (screen === 'practice' && passage) {
     return (
-      <div>
+      <div className="page-enter">
         <button onClick={handleBack} className="text-sm text-indigo-600 dark:text-indigo-400 mb-4">
           ← Back
         </button>
 
-        <h3 className="text-lg font-semibold text-gray-800 dark:text-gray-100 mb-1">
+        <h3 className="text-lg font-semibold text-slate-800 dark:text-slate-100 mb-1">
           {passage.title}
         </h3>
-        <span className="inline-block text-xs px-2 py-0.5 rounded-full bg-gray-200 dark:bg-gray-700 text-gray-600 dark:text-gray-300 capitalize mb-6">
+        <span className="inline-block text-xs px-2 py-0.5 rounded-full bg-slate-200 dark:bg-slate-700 text-slate-600 dark:text-slate-300 capitalize mb-6">
           {passage.difficulty}
         </span>
 
@@ -253,7 +253,7 @@ export default function ListeningPage() {
           <button
             onClick={handlePlay}
             disabled={isPlaying}
-            className="w-16 h-16 rounded-full bg-indigo-600 text-white flex items-center justify-center text-2xl shadow-lg hover:bg-indigo-700 disabled:opacity-60 transition-colors"
+            className="w-16 h-16 rounded-full bg-indigo-600 text-white flex items-center justify-center text-2xl shadow-lg hover:bg-indigo-700 disabled:opacity-60 press-feedback transition-colors"
           >
             {isPlaying ? '⏸️' : '▶️'}
           </button>
@@ -267,7 +267,7 @@ export default function ListeningPage() {
           </button>
 
           {playsLeft > 0 && (
-            <p className="text-xs text-gray-500 dark:text-gray-400">
+            <p className="text-xs text-slate-500 dark:text-slate-400">
               Listen {playsLeft} more {playsLeft === 1 ? 'time' : 'times'}
             </p>
           )}
@@ -282,7 +282,7 @@ export default function ListeningPage() {
               className={`px-3 py-1 rounded-lg text-sm font-medium transition-colors ${
                 speed === s
                   ? 'bg-indigo-600 text-white'
-                  : 'bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-200'
+                  : 'bg-slate-100 dark:bg-slate-700 text-slate-700 dark:text-slate-200'
               }`}
             >
               {s}x
@@ -293,7 +293,7 @@ export default function ListeningPage() {
         {hasPlayed && (
           <button
             onClick={goToQuestions}
-            className="w-full py-3 rounded-2xl bg-indigo-600 text-white font-semibold hover:bg-indigo-700 transition-colors"
+            className="w-full py-3 rounded-2xl bg-indigo-600 text-white font-semibold hover:bg-indigo-700 press-feedback transition-colors"
           >
             Answer Questions →
           </button>
@@ -309,19 +309,19 @@ export default function ListeningPage() {
     const selected = answers[qIndex];
 
     return (
-      <div>
-        <p className="text-xs text-gray-500 dark:text-gray-400 mb-2">
+      <div className="page-enter">
+        <p className="text-xs text-slate-500 dark:text-slate-400 mb-2">
           Question {qIndex + 1} / {passage.questions.length}
         </p>
 
-        <p className="text-lg font-semibold text-gray-800 dark:text-gray-100 mb-6">
+        <p className="text-lg font-semibold text-slate-800 dark:text-slate-100 mb-6">
           {q.question}
         </p>
 
         <div className="space-y-3 mb-6">
           {q.options.map((opt, i) => {
             let style =
-              'bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 text-gray-800 dark:text-gray-100';
+              'bg-white dark:bg-slate-800 border border-gray-200 dark:border-white/10 text-slate-800 dark:text-slate-100';
             if (revealed) {
               if (i === q.correctIndex) {
                 style = 'bg-green-100 dark:bg-green-900 border border-green-500 text-green-800 dark:text-green-200';
@@ -348,7 +348,7 @@ export default function ListeningPage() {
         {revealed && (
           <button
             onClick={nextQuestion}
-            className="w-full py-3 rounded-2xl bg-indigo-600 text-white font-semibold hover:bg-indigo-700 transition-colors"
+            className="w-full py-3 rounded-2xl bg-indigo-600 text-white font-semibold hover:bg-indigo-700 press-feedback transition-colors"
           >
             {qIndex + 1 < passage.questions.length ? 'Next Question →' : 'See Results'}
           </button>
@@ -366,12 +366,12 @@ export default function ListeningPage() {
     );
 
     return (
-      <div className="text-center py-6">
+      <div className="text-center py-6 page-enter">
         <p className="text-4xl mb-4">🎉</p>
-        <h3 className="text-xl font-bold text-gray-800 dark:text-gray-100 mb-2">
+        <h3 className="text-xl font-bold text-slate-800 dark:text-slate-100 mb-2">
           Practice Complete!
         </h3>
-        <p className="text-gray-600 dark:text-gray-300 mb-1">
+        <p className="text-slate-600 dark:text-slate-300 mb-1">
           Score: {correct} / {passage.questions.length} correct
         </p>
         <p className="text-indigo-600 dark:text-indigo-400 font-semibold mb-8">
@@ -381,13 +381,13 @@ export default function ListeningPage() {
         <div className="flex gap-3">
           <button
             onClick={handleBack}
-            className="flex-1 py-3 rounded-2xl border border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-200 font-semibold hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors"
+            className="flex-1 py-3 rounded-2xl border border-gray-300 dark:border-white/10 text-slate-700 dark:text-slate-200 font-semibold hover:bg-slate-50 dark:hover:bg-slate-800 press-feedback transition-colors"
           >
             Back
           </button>
           <button
             onClick={handleNextPassage}
-            className="flex-1 py-3 rounded-2xl bg-indigo-600 text-white font-semibold hover:bg-indigo-700 transition-colors"
+            className="flex-1 py-3 rounded-2xl bg-indigo-600 text-white font-semibold hover:bg-indigo-700 press-feedback transition-colors"
           >
             Next Passage
           </button>

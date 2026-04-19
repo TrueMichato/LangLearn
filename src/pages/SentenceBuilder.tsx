@@ -79,12 +79,12 @@ export default function SentenceBuilderPage() {
   // ── Setup ──
   if (phase === 'setup') {
     return (
-      <div className="max-w-md mx-auto space-y-6">
-        <h2 className="text-lg font-semibold text-gray-700 dark:text-gray-200">✍️ Sentence Builder</h2>
+      <div className="max-w-md mx-auto space-y-6 page-enter">
+        <h2 className="text-lg font-semibold text-slate-700 dark:text-slate-200">✍️ Sentence Builder</h2>
 
         {/* Language */}
         <div>
-          <label className="block text-sm font-medium text-gray-600 dark:text-gray-400 mb-1">Language</label>
+          <label className="block text-sm font-medium text-slate-600 dark:text-slate-400 mb-1">Language</label>
           <div className="flex gap-2">
             {supportedLanguages.length > 0 ? (
               supportedLanguages.map((l) => (
@@ -92,28 +92,28 @@ export default function SentenceBuilderPage() {
                   key={l}
                   onClick={() => setLanguage(l)}
                   className={`px-4 py-2 rounded-xl text-sm font-medium transition-colors ${
-                    language === l ? 'bg-indigo-600 text-white' : 'bg-white dark:bg-gray-700 text-gray-700 dark:text-gray-300 border border-gray-300 dark:border-gray-600'
+                    language === l ? 'bg-indigo-600 text-white' : 'bg-white dark:bg-slate-700 text-slate-700 dark:text-slate-300 border border-gray-300 dark:border-white/10'
                   }`}
                 >
                   {getLanguageLabel(l)}
                 </button>
               ))
             ) : (
-              <p className="text-sm text-gray-500 dark:text-gray-400">Add Japanese or Russian in Settings to use Sentence Builder.</p>
+              <p className="text-sm text-slate-500 dark:text-slate-400">Add Japanese or Russian in Settings to use Sentence Builder.</p>
             )}
           </div>
         </div>
 
         {/* Mode */}
         <div>
-          <label className="block text-sm font-medium text-gray-600 dark:text-gray-400 mb-1">Mode</label>
+          <label className="block text-sm font-medium text-slate-600 dark:text-slate-400 mb-1">Mode</label>
           <div className="flex gap-2">
             {(['tiles', 'type'] as const).map((m) => (
               <button
                 key={m}
                 onClick={() => setMode(m)}
                 className={`px-4 py-2 rounded-xl text-sm font-medium transition-colors ${
-                  mode === m ? 'bg-indigo-600 text-white' : 'bg-white dark:bg-gray-700 text-gray-700 dark:text-gray-300 border border-gray-300 dark:border-gray-600'
+                  mode === m ? 'bg-indigo-600 text-white' : 'bg-white dark:bg-slate-700 text-slate-700 dark:text-slate-300 border border-gray-300 dark:border-white/10'
                 }`}
               >
                 {m === 'tiles' ? '🧩 Tiles' : '⌨️ Type'}
@@ -124,14 +124,14 @@ export default function SentenceBuilderPage() {
 
         {/* Difficulty */}
         <div>
-          <label className="block text-sm font-medium text-gray-600 dark:text-gray-400 mb-1">Difficulty</label>
+          <label className="block text-sm font-medium text-slate-600 dark:text-slate-400 mb-1">Difficulty</label>
           <div className="flex flex-wrap gap-2">
             {(['all', 'easy', 'medium', 'hard'] as const).map((d) => (
               <button
                 key={d}
                 onClick={() => setDifficulty(d)}
                 className={`px-4 py-2 rounded-xl text-sm font-medium capitalize transition-colors ${
-                  difficulty === d ? 'bg-indigo-600 text-white' : 'bg-white dark:bg-gray-700 text-gray-700 dark:text-gray-300 border border-gray-300 dark:border-gray-600'
+                  difficulty === d ? 'bg-indigo-600 text-white' : 'bg-white dark:bg-slate-700 text-slate-700 dark:text-slate-300 border border-gray-300 dark:border-white/10'
                 }`}
               >
                 {d}
@@ -144,7 +144,7 @@ export default function SentenceBuilderPage() {
         <button
           onClick={startSession}
           disabled={supportedLanguages.length === 0}
-          className="w-full py-3 bg-indigo-600 text-white rounded-xl font-semibold hover:bg-indigo-700 transition-colors disabled:opacity-40"
+          className="w-full py-3 bg-indigo-600 text-white rounded-xl font-semibold hover:bg-indigo-700 press-feedback transition-colors disabled:opacity-40"
         >
           Start Practice
         </button>
@@ -156,19 +156,19 @@ export default function SentenceBuilderPage() {
   if (phase === 'summary') {
     const xp = 20 + score * 3;
     return (
-      <div className="max-w-md mx-auto text-center space-y-6">
-        <h2 className="text-2xl font-bold text-gray-800 dark:text-gray-100">Session Complete!</h2>
+      <div className="max-w-md mx-auto text-center space-y-6 page-enter">
+        <h2 className="text-2xl font-bold text-slate-800 dark:text-slate-100">Session Complete!</h2>
         <p className="text-5xl">🎉</p>
-        <p className="text-lg text-gray-700 dark:text-gray-300">
+        <p className="text-lg text-slate-700 dark:text-slate-300">
           Score: <span className="font-bold text-indigo-600 dark:text-indigo-400">{score}</span> / {sessionSentences.length}
         </p>
-        <p className="text-sm text-gray-500 dark:text-gray-400">+{xp} XP earned</p>
+        <p className="text-sm text-slate-500 dark:text-slate-400">+{xp} XP earned</p>
 
         <div className="flex flex-col gap-3">
-          <button onClick={restart} className="w-full py-3 bg-indigo-600 text-white rounded-xl font-semibold hover:bg-indigo-700 transition-colors">
+          <button onClick={restart} className="w-full py-3 bg-indigo-600 text-white rounded-xl font-semibold hover:bg-indigo-700 press-feedback transition-colors">
             Practice Again
           </button>
-          <Link to="/learn" className="w-full py-3 bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded-xl font-semibold hover:bg-gray-300 dark:hover:bg-gray-600 transition-colors inline-block">
+          <Link to="/learn" className="w-full py-3 bg-slate-200 dark:bg-slate-700 text-slate-700 dark:text-slate-300 rounded-xl font-semibold hover:bg-slate-300 dark:hover:bg-slate-600 press-feedback transition-colors inline-block">
             ← Back
           </Link>
         </div>
@@ -179,15 +179,15 @@ export default function SentenceBuilderPage() {
   // ── Session ──
   const currentSentence = sessionSentences[currentIdx];
   return (
-    <div className="max-w-md mx-auto space-y-4">
+    <div className="max-w-md mx-auto space-y-4 page-enter">
       {/* Progress */}
-      <div className="flex items-center justify-between text-sm text-gray-500 dark:text-gray-400">
+      <div className="flex items-center justify-between text-sm text-slate-500 dark:text-slate-400">
         <span>
           Question {currentIdx + 1} / {sessionSentences.length}
         </span>
         <span>Score: {score}</span>
       </div>
-      <div className="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2">
+      <div className="w-full bg-slate-200 dark:bg-slate-700 rounded-full h-2">
         <div className="bg-indigo-600 h-2 rounded-full transition-all" style={{ width: `${((currentIdx + 1) / sessionSentences.length) * 100}%` }} />
       </div>
 

@@ -34,15 +34,19 @@ export default function BadgeToast() {
           : 'opacity-0 -translate-y-4 pointer-events-none'
       }`}
     >
-      <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-lg border border-indigo-200 dark:border-indigo-700 px-5 py-3 flex items-center gap-3">
-        <span className="text-3xl">{badge.icon}</span>
+      <div className="relative overflow-hidden bg-gradient-to-r from-amber-100 to-yellow-100 dark:from-amber-900/50 dark:to-yellow-900/50 rounded-2xl shadow-lg border border-amber-300 dark:border-amber-700 px-5 py-3 flex items-center gap-3 animate-[pulseGlow_1.5s_ease-in-out_3]">
+        <span className="text-3xl animate-[pop_0.5s_ease-out]">{badge.icon}</span>
         <div>
-          <p className="text-xs font-semibold text-indigo-500 dark:text-indigo-400 uppercase tracking-wide">
+          <p className="text-xs font-semibold text-amber-600 dark:text-amber-400 uppercase tracking-wide">
             Achievement Unlocked!
           </p>
-          <p className="font-bold text-gray-800 dark:text-gray-100">
+          <p className="font-bold text-slate-800 dark:text-slate-100">
             {badge.name}
           </p>
+        </div>
+        {/* Auto-dismiss countdown bar */}
+        <div className="absolute bottom-0 left-0 right-0 h-1">
+          <div className="h-full bg-amber-400 dark:bg-amber-500 animate-[dismissCountdown_4s_linear_forwards]" />
         </div>
       </div>
     </div>
