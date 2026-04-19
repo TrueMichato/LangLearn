@@ -17,11 +17,21 @@ interface Props {
 type Round = 'char-to-romanji' | 'romanji-to-char' | 'listen-to-char';
 
 const QUESTIONS_PER_ROUND = 10;
-const ROUNDS: { type: Round; label: string }[] = [
-  { type: 'char-to-romanji', label: 'Character → Romanji' },
-  { type: 'romanji-to-char', label: 'Romanji → Character' },
-  { type: 'listen-to-char', label: 'Listen → Character' },
-];
+
+function getTransliterationLabel(language: string): string {
+  if (language === 'ja') return 'Romaji';
+  if (language === 'ru') return 'Latin';
+  return 'Transliteration';
+}
+
+function getRounds(language: string): { type: Round; label: string }[] {
+  const label = getTransliterationLabel(language);
+  return [
+    { type: 'char-to-romanji', label: `Character → ${label}` },
+    { type: 'romanji-to-char', label: `${label} → Character` },
+    { type: 'listen-to-char', label: 'Listen → Character' },
+  ];
+}
 
 function shuffle<T>(arr: T[]): T[] {
   const a = [...arr];
@@ -56,6 +66,8 @@ export default function RecognitionQuiz({ characters, alphabetName, language, on
   const timerStart = useTimerStore((s) => s.start);
   const timerIsRunning = useTimerStore((s) => s.isRunning);
 
+  const rounds = useMemo(() => getRounds(language), [language]);
+
   const questions = useMemo(
     () => generateQuestions(characters, QUESTIONS_PER_ROUND),
     // eslint-disable-next-line react-hooks/exhaustive-deps
@@ -63,7 +75,7 @@ export default function RecognitionQuiz({ characters, alphabetName, language, on
   );
 
   const currentQuestion = questions[questionIndex];
-  const currentRound = ROUNDS[roundIndex];
+  const currentRound = rounds[roundIndex];
 
   const options = useMemo(() => {
     if (!currentQuestion) return [];
@@ -108,6 +120,7 @@ export default function RecognitionQuiz({ characters, alphabetName, language, on
               reading: currentQuestion.romanji,
               meaning,
               language,
+              type: 'letter',
               contextSentence: `Reading: ${currentQuestion.romanji}${currentQuestion.meaning ? ` (${currentQuestion.meaning})` : ''}`,
               sourceTextId: null,
               tags: ['letters'],
@@ -128,7 +141,7 @@ export default function RecognitionQuiz({ characters, alphabetName, language, on
       setShowResult(false);
 
       if (questionIndex + 1 >= questions.length) {
-        if (roundIndex + 1 >= ROUNDS.length) {
+        if (roundIndex + 1 >= rounds.length) {
           setFinished(true);
         } else {
           setRoundIndex((r) => r + 1);
@@ -157,7 +170,7 @@ export default function RecognitionQuiz({ characters, alphabetName, language, on
   }
 
   if (finished) {
-    const totalQuestions = ROUNDS.length * QUESTIONS_PER_ROUND;
+    const totalQuestions = rounds.length * QUESTIONS_PER_ROUND;
     return (
       <div className="text-center py-8 space-y-4">
         <p className="text-5xl">🎉</p>
@@ -165,7 +178,7 @@ export default function RecognitionQuiz({ characters, alphabetName, language, on
           Quiz Complete!
         </p>
         <p className="text-lg text-gray-600 dark:text-gray-300">
-          {totalScore}/{Math.min(totalQuestions, characters.length * ROUNDS.length)} correct
+          {totalScore}/{Math.min(totalQuestions, characters.length * rounds.length)} correct
         </p>
         <p className="text-sm text-indigo-600 dark:text-indigo-400">
           +{totalScore * XP_PER_QUIZ_CORRECT} XP earned

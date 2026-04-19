@@ -175,6 +175,7 @@ export default function DrawingCanvas({ characters, alphabetName, language, onPr
           reading: char.romanji,
           meaning,
           language,
+          type: 'letter',
           contextSentence: `Reading: ${char.romanji}${char.meaning ? ` (${char.meaning})` : ''}`,
           sourceTextId: null,
           tags: ['letters'],

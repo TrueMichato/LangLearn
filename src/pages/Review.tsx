@@ -2,7 +2,7 @@ import { useEffect, useState, useCallback, useMemo } from 'react';
 import { useNavigate, useSearchParams } from 'react-router-dom';
 import { getDueReviews, getRandomWords } from '../db/words';
 import { processReview } from '../db/reviews';
-import { useReviewStore, type QueueItem } from '../stores/reviewStore';
+import { useReviewStore, type QueueItem, type PracticeMode } from '../stores/reviewStore';
 import { useTimerStore } from '../stores/timerStore';
 import { useSettingsStore } from '../stores/settingsStore';
 import { useStudySetsStore } from '../stores/studySetsStore';
@@ -12,9 +12,12 @@ import ReverseCard from '../components/srs/ReverseCard';
 import ListeningCard from '../components/srs/ListeningCard';
 import MultipleChoiceCard from '../components/srs/MultipleChoiceCard';
 import ClozeCard from '../components/srs/ClozeCard';
+import StudyCard from '../components/srs/StudyCard';
 import GradeButtons from '../components/srs/GradeButtons';
 import AddWordModal from '../components/srs/AddWordModal';
+import PracticeModeSelector from '../components/srs/PracticeModeSelector';
 import { assignCardType, selectDistractors } from '../lib/card-types';
+import type { CardType } from '../lib/card-types';
 import type { SM2Grade } from '../lib/sm2';
 import { useKeyboardShortcuts } from '../hooks/useKeyboardShortcuts';
 
@@ -24,10 +27,24 @@ const CARD_TYPE_LABELS: Record<string, string> = {
   listening: 'Listening',
   'multiple-choice': 'Pick the meaning',
   cloze: 'Fill in the blank',
+  study: 'Study',
 };
 
+function applyPracticeMode(_baseType: CardType, mode: PracticeMode): CardType {
+  switch (mode) {
+    case 'word-to-meaning':
+      return 'classic';
+    case 'meaning-to-word':
+      return 'reverse';
+    case 'both':
+      return 'study' as CardType;
+    case 'random':
+      return Math.random() < 0.5 ? 'classic' : 'reverse';
+  }
+}
+
 export default function ReviewPage() {
-  const { queue, currentIndex, isFlipped, cardsReviewed, setQueue, flip, next, reset } =
+  const { queue, currentIndex, isFlipped, cardsReviewed, practiceMode, setQueue, flip, next, reset, setPracticeMode } =
     useReviewStore();
   const { isRunning, start } = useTimerStore();
   const reviewBatchSize = useSettingsStore((s) => s.reviewBatchSize);
@@ -39,7 +56,7 @@ export default function ReviewPage() {
   const [totalDue, setTotalDue] = useState(0);
   const [showAddModal, setShowAddModal] = useState(false);
 
-  const loadCards = useCallback(async () => {
+  const loadCards = useCallback(async (mode?: PracticeMode) => {
     setLoading(true);
 
     let due: Array<{ word: import('../db/schema').Word; review: import('../db/schema').Review }>;
@@ -57,10 +74,14 @@ export default function ReviewPage() {
     setTotalDue(due.length);
     const batch = reviewBatchSize > 0 ? due.slice(0, reviewBatchSize) : due;
 
+    const activeMode = mode ?? practiceMode;
+
     // Assign card types and prepare distractors
     const items: QueueItem[] = [];
     for (const item of batch) {
-      let cardType = assignCardType(item.review.repetitions);
+      let cardType = activeMode
+        ? applyPracticeMode(assignCardType(item.review.repetitions), activeMode)
+        : assignCardType(item.review.repetitions);
 
       let distractors: string[] | undefined;
       if (cardType === 'cloze' && !item.word.contextSentence && item.word.word.length <= 2) {
@@ -81,11 +102,16 @@ export default function ReviewPage() {
 
     setQueue(items);
     setLoading(false);
-  }, [setQueue, reviewBatchSize, setId]);
+  }, [setQueue, reviewBatchSize, setId, practiceMode]);
 
   useEffect(() => {
     loadCards();
   }, [loadCards]);
+
+  const handleSelectMode = (mode: PracticeMode) => {
+    setPracticeMode(mode);
+    loadCards(mode);
+  };
 
   const handleGrade = async (grade: SM2Grade) => {
     const current = queue[currentIndex];
@@ -96,7 +122,6 @@ export default function ReviewPage() {
     await processReview(current.review.id, grade);
 
     if (grade < 3) {
-      // Put failed card at end of queue
       const updated = [...queue];
       updated.push(current);
       useReviewStore.setState({ queue: updated });
@@ -106,7 +131,8 @@ export default function ReviewPage() {
   };
 
   const current = currentIndex < queue.length ? queue[currentIndex] : undefined;
-  const isSelfGrading = current?.cardType === 'multiple-choice' || current?.cardType === 'cloze';
+  const isStudyMode = current?.cardType === ('study' as CardType);
+  const isSelfGrading = current?.cardType === 'multiple-choice' || current?.cardType === 'cloze' || isStudyMode;
   const canGrade = isFlipped && !isSelfGrading;
 
   const GRADE_MAP: Record<string, SM2Grade> = { '1': 0, '2': 3, '3': 4, '4': 5 };
@@ -162,6 +188,10 @@ export default function ReviewPage() {
     );
   }
 
+  if (!practiceMode) {
+    return <PracticeModeSelector onSelect={handleSelectMode} />;
+  }
+
   if (currentIndex >= queue.length) {
     return (
       <div className="flex flex-col items-center justify-center h-64 text-center">
@@ -183,7 +213,6 @@ export default function ReviewPage() {
     );
   }
 
-  // `current` already computed above; safe to use after the length guard
   const activeCard = current!;
 
   return (
@@ -206,9 +235,16 @@ export default function ReviewPage() {
 
       <div className="flex justify-center mb-2">
         <span className="text-xs px-2.5 py-0.5 rounded-full bg-gray-100 dark:bg-gray-700 text-gray-500 dark:text-gray-400">
-          {CARD_TYPE_LABELS[activeCard.cardType]}
+          {CARD_TYPE_LABELS[activeCard.cardType] ?? activeCard.cardType}
         </span>
       </div>
+
+      {activeCard.cardType === ('study' as CardType) && (
+        <>
+          <StudyCard word={activeCard.word} />
+          <GradeButtons onGrade={handleGrade} />
+        </>
+      )}
 
       {activeCard.cardType === 'reverse' && (
         <>

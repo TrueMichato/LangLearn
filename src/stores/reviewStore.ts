@@ -2,6 +2,8 @@ import { create } from 'zustand';
 import type { Word, Review } from '../db/schema';
 import type { CardType } from '../lib/card-types';
 
+export type PracticeMode = 'word-to-meaning' | 'meaning-to-word' | 'both' | 'random';
+
 export interface QueueItem {
   word: Word;
   review: Review;
@@ -14,10 +16,12 @@ interface ReviewSessionState {
   currentIndex: number;
   isFlipped: boolean;
   cardsReviewed: number;
+  practiceMode: PracticeMode | null;
   setQueue: (items: QueueItem[]) => void;
   flip: () => void;
   next: () => void;
   reset: () => void;
+  setPracticeMode: (mode: PracticeMode) => void;
 }
 
 export const useReviewStore = create<ReviewSessionState>((set) => ({
@@ -25,6 +29,7 @@ export const useReviewStore = create<ReviewSessionState>((set) => ({
   currentIndex: 0,
   isFlipped: false,
   cardsReviewed: 0,
+  practiceMode: null,
 
   setQueue: (items) =>
     set({ queue: items, currentIndex: 0, isFlipped: false, cardsReviewed: 0 }),
@@ -39,5 +44,7 @@ export const useReviewStore = create<ReviewSessionState>((set) => ({
     })),
 
   reset: () =>
-    set({ queue: [], currentIndex: 0, isFlipped: false, cardsReviewed: 0 }),
+    set({ queue: [], currentIndex: 0, isFlipped: false, cardsReviewed: 0, practiceMode: null }),
+
+  setPracticeMode: (mode) => set({ practiceMode: mode }),
 }));

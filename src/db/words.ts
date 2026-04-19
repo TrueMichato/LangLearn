@@ -1,10 +1,11 @@
 import { db, type Word, type Review } from './schema';
 
 export async function addWord(
-  word: Omit<Word, 'id' | 'createdAt'>
+  word: Omit<Word, 'id' | 'createdAt' | 'type'> & { type?: Word['type'] }
 ): Promise<number> {
   const id = await db.words.add({
     ...word,
+    type: word.type ?? 'word',
     createdAt: new Date().toISOString(),
   }) as number;
 
