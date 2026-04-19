@@ -1,4 +1,5 @@
 import { useState, useMemo, useCallback } from 'react';
+import { Link } from 'react-router-dom';
 import { useSettingsStore } from '../stores/settingsStore';
 import { useXPStore } from '../stores/xpStore';
 import { getLanguageLabel } from '../lib/languages';
@@ -226,9 +227,14 @@ export default function ConjugationsPage() {
   // Setup
   return (
     <div className="max-w-md mx-auto space-y-6 page-enter">
-      <h2 className="text-lg font-semibold text-slate-700 dark:text-slate-200">
-        Conjugation Drills
-      </h2>
+      <div>
+        <Link to="/learn" className="text-indigo-600 dark:text-indigo-400 text-sm font-medium mb-3 hover:underline press-feedback inline-block">
+          ← Back to Learn
+        </Link>
+        <h2 className="text-lg font-semibold text-slate-700 dark:text-slate-200">
+          Conjugation Drills
+        </h2>
+      </div>
 
       {/* Language selector */}
       <div className="bg-white dark:bg-slate-800 rounded-2xl shadow p-4 space-y-2">

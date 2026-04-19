@@ -177,6 +177,9 @@ export default function ListeningPage() {
   if (screen === 'setup') {
     return (
       <div className="page-enter">
+        <Link to="/learn" className="text-indigo-600 dark:text-indigo-400 text-sm font-medium mb-3 hover:underline press-feedback inline-block">
+          ← Back to Learn
+        </Link>
         <h2 className="text-lg font-semibold text-slate-700 dark:text-slate-200 mb-6">
           🎧 Listening Practice
         </h2>
