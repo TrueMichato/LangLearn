@@ -1,7 +1,7 @@
 import { HIRAGANA } from './hiragana';
 import { KATAKANA } from './katakana';
 import { KANJI } from './kanji';
-import { CYRILLIC } from './cyrillic';
+import { CYRILLIC, CYRILLIC_LOWERCASE } from './cyrillic';
 import type { Character } from './hiragana';
 
 export type { Character };
@@ -13,7 +13,8 @@ export const ALPHABET_DATA: Record<string, { name: string; characters: Character
     { name: 'Kanji (N5)', characters: KANJI },
   ],
   ru: [
-    { name: 'Cyrillic', characters: CYRILLIC },
+    { name: 'Cyrillic (Uppercase)', characters: CYRILLIC },
+    { name: 'Cyrillic (Lowercase)', characters: CYRILLIC_LOWERCASE },
   ],
 };
 
