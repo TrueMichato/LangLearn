@@ -4,65 +4,73 @@ export interface Character {
   group: string;
   strokes: number;
   meaning?: string;
+  // Mnemonic learning support (Tofugu-sourced content marked with source: 'tofugu')
+  mnemonic?: string;
+  hint?: string;
+  radicals?: string[];
+  onyomi?: string[];
+  kunyomi?: string[];
+  exampleWords?: { word: string; reading: string; meaning: string }[];
+  source?: string;
 }
 
 export const HIRAGANA: Character[] = [
   // Vowels
-  { char: 'あ', romanji: 'a', group: 'Vowels', strokes: 3 },
-  { char: 'い', romanji: 'i', group: 'Vowels', strokes: 2 },
-  { char: 'う', romanji: 'u', group: 'Vowels', strokes: 2 },
-  { char: 'え', romanji: 'e', group: 'Vowels', strokes: 2 },
-  { char: 'お', romanji: 'o', group: 'Vowels', strokes: 3 },
+  { char: 'あ', romanji: 'a', group: 'Vowels', strokes: 3, hint: 'A', mnemonic: "Find the capital A inside of it. This A will tell you that this kana is also 'a'. There is another similar kana, お, but that one doesn't have an A in it.", source: 'tofugu' },
+  { char: 'い', romanji: 'i', group: 'Vowels', strokes: 2, hint: 'eels', mnemonic: "Think of a couple of eels hanging out. They're upright because they're trying to mimic the letter 'i' which also stands upright.", source: 'tofugu' },
+  { char: 'う', romanji: 'u', group: 'Vowels', strokes: 2, hint: 'U', mnemonic: "Notice the U shape right in it! It's sideways but it's there. Be careful, there's another similar hiragana, つ, but that one isn't wearing a hat like U (you) are.", source: 'tofugu' },
+  { char: 'え', romanji: 'e', group: 'Vowels', strokes: 2, hint: 'exotic bird', mnemonic: 'Think of it like an exotic bird. The feathery thing on its head gives it away that it\'s exotic. It also lays exotic eggs.', source: 'tofugu' },
+  { char: 'お', romanji: 'o', group: 'Vowels', strokes: 3, hint: 'o o', mnemonic: "Can you see the letter 'o' in here, two times? This one looks similar to あ, except there are two letter 'o' symbols visible in there.", source: 'tofugu' },
   // K-row
-  { char: 'か', romanji: 'ka', group: 'K-row', strokes: 3 },
-  { char: 'き', romanji: 'ki', group: 'K-row', strokes: 4 },
-  { char: 'く', romanji: 'ku', group: 'K-row', strokes: 1 },
-  { char: 'け', romanji: 'ke', group: 'K-row', strokes: 3 },
-  { char: 'こ', romanji: 'ko', group: 'K-row', strokes: 2 },
+  { char: 'か', romanji: 'ka', group: 'K-row', strokes: 3, hint: 'mosquito', mnemonic: "See how this kana looks like a mosquito? Mosquitos happen to be called か (ka) in Japanese. You also say 'cut it out, darn mosquito!' when they try to suck your blood.", source: 'tofugu' },
+  { char: 'き', romanji: 'ki', group: 'K-row', strokes: 4, hint: 'key', mnemonic: 'Notice how much it resembles a key.', source: 'tofugu' },
+  { char: 'く', romanji: 'ku', group: 'K-row', strokes: 1, hint: 'cuckoo', mnemonic: "Think of this kana being the mouth of a coo-coo / cuckoo bird popping out saying 'ku ku, ku ku!'", source: 'tofugu' },
+  { char: 'け', romanji: 'ke', group: 'K-row', strokes: 3, hint: 'kelp', mnemonic: 'See how this kana resembles some wiggly kelp?', source: 'tofugu' },
+  { char: 'こ', romanji: 'ko', group: 'K-row', strokes: 2, hint: 'co-habitation', mnemonic: 'A couple of co-habitation worms. They\'re so happy together, co-habitating the same area!', source: 'tofugu' },
   // S-row
-  { char: 'さ', romanji: 'sa', group: 'S-row', strokes: 3 },
-  { char: 'し', romanji: 'shi', group: 'S-row', strokes: 1 },
-  { char: 'す', romanji: 'su', group: 'S-row', strokes: 2 },
-  { char: 'せ', romanji: 'se', group: 'S-row', strokes: 3 },
-  { char: 'そ', romanji: 'so', group: 'S-row', strokes: 1 },
+  { char: 'さ', romanji: 'sa', group: 'S-row', strokes: 3, hint: 'salsa', mnemonic: 'Notice how this kana looks like two hands stirring a bowl of salsa. This salsa is so chunky and thick, you need two hands just to stir it!', source: 'tofugu' },
+  { char: 'し', romanji: 'shi', group: 'S-row', strokes: 1, hint: "shepherd's crook", mnemonic: "This kana looks like a giant shepherd's crook used to herd sheep.", source: 'tofugu' },
+  { char: 'す', romanji: 'su', group: 'S-row', strokes: 2, hint: 'swing', mnemonic: "See the swing doing a loop-dee-loop throwing that poor kid off of it? Imagine him screaming 'I'M GONNA SUE SOMEBODY FOR THIS!' as he flies off.", source: 'tofugu' },
+  { char: 'せ', romanji: 'se', group: 'S-row', strokes: 3, hint: 'sell', mnemonic: "This kana looks like a mouth with a big vampire fang in it. Someone's trying to sell you a set of vampire teeth because they are just so sexy!", source: 'tofugu' },
+  { char: 'そ', romanji: 'so', group: 'S-row', strokes: 1, hint: 'soda', mnemonic: 'See how this kana looks like a mouth slurping soda?', source: 'tofugu' },
   // T-row
-  { char: 'た', romanji: 'ta', group: 'T-row', strokes: 4 },
-  { char: 'ち', romanji: 'chi', group: 'T-row', strokes: 2 },
-  { char: 'つ', romanji: 'tsu', group: 'T-row', strokes: 1 },
-  { char: 'て', romanji: 'te', group: 'T-row', strokes: 1 },
-  { char: 'と', romanji: 'to', group: 'T-row', strokes: 2 },
+  { char: 'た', romanji: 'ta', group: 'T-row', strokes: 4, hint: 'taco', mnemonic: "Use your imagination and see this kana as a fork, taco, and lime garnish for your taco. You're eating a taco with a fork? That's a bit weird, but you do you.", source: 'tofugu' },
+  { char: 'ち', romanji: 'chi', group: 'T-row', strokes: 2, hint: 'cheese', mnemonic: "You know when someone tells you to say 'cheese' when taking a picture? This kana looks like that forced smile you have to make every time you're in a group photo.", source: 'tofugu' },
+  { char: 'つ', romanji: 'tsu', group: 'T-row', strokes: 1, hint: 'tsunami', mnemonic: "Look at the swoosh of this hiragana. Doesn't it look like a big wave, or tsunami?", source: 'tofugu' },
+  { char: 'て', romanji: 'te', group: 'T-row', strokes: 1, hint: 'telescope', mnemonic: "Can you see a good ol' telescope? It's a hand-held one! In Japanese, 'hand' is て (te). That should help you remember this kana looks like an old-school hand(te)-held telescope.", source: 'tofugu' },
+  { char: 'と', romanji: 'to', group: 'T-row', strokes: 2, hint: 'toe', mnemonic: 'This kana looks just like someone\'s toe with a little nail or splinter in it. Imagine how much this would hurt if it was your toe!', source: 'tofugu' },
   // N-row
-  { char: 'な', romanji: 'na', group: 'N-row', strokes: 4 },
-  { char: 'に', romanji: 'ni', group: 'N-row', strokes: 3 },
-  { char: 'ぬ', romanji: 'nu', group: 'N-row', strokes: 2 },
-  { char: 'ね', romanji: 'ne', group: 'N-row', strokes: 2 },
-  { char: 'の', romanji: 'no', group: 'N-row', strokes: 1 },
+  { char: 'な', romanji: 'na', group: 'N-row', strokes: 4, hint: 'knot', mnemonic: "This kana looks like a complicated knot. 'Na' what a difficult knot to untie!", source: 'tofugu' },
+  { char: 'に', romanji: 'ni', group: 'N-row', strokes: 3, hint: 'needle', mnemonic: 'See the needles? There are two vertical lines that look like a pair of needles next to a thread.', source: 'tofugu' },
+  { char: 'ぬ', romanji: 'nu', group: 'N-row', strokes: 2, hint: 'noodles', mnemonic: 'This kana has a big loopy thing at the end, like noodles being twirled around on chopsticks.', source: 'tofugu' },
+  { char: 'ね', romanji: 'ne', group: 'N-row', strokes: 2, hint: 'Nessie', mnemonic: 'Nessie, the Loch Ness Monster, swam to Japan and surfaced! Can you see her long neck sticking out of the water?', source: 'tofugu' },
+  { char: 'の', romanji: 'no', group: 'N-row', strokes: 1, hint: 'no', mnemonic: "This kana looks like a 'No' sign. You can see the circle with a diagonal line going through it.", source: 'tofugu' },
   // H-row
-  { char: 'は', romanji: 'ha', group: 'H-row', strokes: 3 },
-  { char: 'ひ', romanji: 'hi', group: 'H-row', strokes: 1 },
-  { char: 'ふ', romanji: 'fu', group: 'H-row', strokes: 4 },
-  { char: 'へ', romanji: 'he', group: 'H-row', strokes: 1 },
-  { char: 'ほ', romanji: 'ho', group: 'H-row', strokes: 4 },
+  { char: 'は', romanji: 'ha', group: 'H-row', strokes: 3, hint: 'hat', mnemonic: 'Ha! This kana is shaped like a laughing person wearing a big hat. Ha ha ha!', source: 'tofugu' },
+  { char: 'ひ', romanji: 'hi', group: 'H-row', strokes: 1, hint: 'he laughs', mnemonic: "He is laughing. 'Hee hee hee.' Can you see the smiley mouth?", source: 'tofugu' },
+  { char: 'ふ', romanji: 'fu', group: 'H-row', strokes: 4, hint: 'Mt. Fuji', mnemonic: 'This character looks like Mt. Fuji with a little puff of cloud over the top.', source: 'tofugu' },
+  { char: 'へ', romanji: 'he', group: 'H-row', strokes: 1, hint: 'hill', mnemonic: "This is a simple hill shape. 'Hey, look at that hill!'", source: 'tofugu' },
+  { char: 'ほ', romanji: 'ho', group: 'H-row', strokes: 4, hint: 'hopscotch', mnemonic: 'A person playing hopscotch. You can see the grid and a little person there.', source: 'tofugu' },
   // M-row
-  { char: 'ま', romanji: 'ma', group: 'M-row', strokes: 3 },
-  { char: 'み', romanji: 'mi', group: 'M-row', strokes: 2 },
-  { char: 'む', romanji: 'mu', group: 'M-row', strokes: 3 },
-  { char: 'め', romanji: 'me', group: 'M-row', strokes: 2 },
-  { char: 'も', romanji: 'mo', group: 'M-row', strokes: 3 },
+  { char: 'ま', romanji: 'ma', group: 'M-row', strokes: 3, hint: 'mama', mnemonic: 'Think of a mama holding her baby. See the arms wrapping around?', source: 'tofugu' },
+  { char: 'み', romanji: 'mi', group: 'M-row', strokes: 2, hint: '21', mnemonic: "See the number 21 in this kana? MI-21. A blackjack dealer at a table would say 'twenty-one!'", source: 'tofugu' },
+  { char: 'む', romanji: 'mu', group: 'M-row', strokes: 3, hint: 'moo', mnemonic: "This looks like a cow's face — 'Moo!'", source: 'tofugu' },
+  { char: 'め', romanji: 'me', group: 'M-row', strokes: 2, hint: 'eye', mnemonic: 'This looks like an eye (目/め means eye in Japanese). See the round shape?', source: 'tofugu' },
+  { char: 'も', romanji: 'mo', group: 'M-row', strokes: 3, hint: 'more', mnemonic: "This kana wants MORE hooks — look at all those hooks! Mo' hooks, mo' problems.", source: 'tofugu' },
   // Y-row
-  { char: 'や', romanji: 'ya', group: 'Y-row', strokes: 3 },
-  { char: 'ゆ', romanji: 'yu', group: 'Y-row', strokes: 2 },
-  { char: 'よ', romanji: 'yo', group: 'Y-row', strokes: 2 },
+  { char: 'や', romanji: 'ya', group: 'Y-row', strokes: 3, hint: 'yak', mnemonic: "This looks like a yak with horns — 'Ya know, I'm a yak!'", source: 'tofugu' },
+  { char: 'ゆ', romanji: 'yu', group: 'Y-row', strokes: 2, hint: 'U-turn fish', mnemonic: "A fish making a U-turn — 'yuu' turn!", source: 'tofugu' },
+  { char: 'よ', romanji: 'yo', group: 'Y-row', strokes: 2, hint: 'yo-yo', mnemonic: "This looks like a yo-yo dangling on its string. 'Yo!' what a cool yo-yo.", source: 'tofugu' },
   // R-row
-  { char: 'ら', romanji: 'ra', group: 'R-row', strokes: 2 },
-  { char: 'り', romanji: 'ri', group: 'R-row', strokes: 2 },
-  { char: 'る', romanji: 'ru', group: 'R-row', strokes: 1 },
-  { char: 'れ', romanji: 're', group: 'R-row', strokes: 2 },
-  { char: 'ろ', romanji: 'ro', group: 'R-row', strokes: 1 },
+  { char: 'ら', romanji: 'ra', group: 'R-row', strokes: 2, hint: 'rapper', mnemonic: "A rapper holding a microphone — 'Ra-ra-ra!' Drop the beat!", source: 'tofugu' },
+  { char: 'り', romanji: 'ri', group: 'R-row', strokes: 2, hint: 'reeds', mnemonic: 'Two reeds blowing in the wind by a river.', source: 'tofugu' },
+  { char: 'る', romanji: 'ru', group: 'R-row', strokes: 1, hint: 'loop', mnemonic: 'This kana has a big loop at the bottom — following a looping route.', source: 'tofugu' },
+  { char: 'れ', romanji: 're', group: 'R-row', strokes: 2, hint: 'ramp', mnemonic: "This kana looks like someone going up a ramp. 'Re-ally steep ramp!'", source: 'tofugu' },
+  { char: 'ろ', romanji: 'ro', group: 'R-row', strokes: 1, hint: 'road', mnemonic: "A simple winding road — 'ro-ad' ahead!", source: 'tofugu' },
   // W-row + N
-  { char: 'わ', romanji: 'wa', group: 'W-row', strokes: 2 },
-  { char: 'を', romanji: 'wo', group: 'W-row', strokes: 3 },
-  { char: 'ん', romanji: 'n', group: 'W-row', strokes: 1 },
+  { char: 'わ', romanji: 'wa', group: 'W-row', strokes: 2, hint: 'wave', mnemonic: "A wave curling over — 'Wa!' watch out for that wave!", source: 'tofugu' },
+  { char: 'を', romanji: 'wo', group: 'W-row', strokes: 3, hint: 'acrobat', mnemonic: "An acrobat doing a balancing act. This kana is used only as a particle (like 'wo').", source: 'tofugu' },
+  { char: 'ん', romanji: 'n', group: 'W-row', strokes: 1, hint: 'end', mnemonic: "The last hiragana character — it looks like a smooth curve that says 'the end.' N marks the end of the basic hiragana!", source: 'tofugu' },
   // Dakuten
   { char: 'が', romanji: 'ga', group: 'Dakuten', strokes: 5 },
   { char: 'ぎ', romanji: 'gi', group: 'Dakuten', strokes: 6 },
