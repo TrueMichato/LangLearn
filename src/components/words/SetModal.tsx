@@ -90,47 +90,47 @@ export default function SetModal({ isOpen, onClose, editingSet }: SetModalProps)
 
   return (
     <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50 p-4">
-      <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-xl w-full max-w-md max-h-[90vh] overflow-y-auto">
+      <div className="bg-white dark:bg-slate-800 rounded-2xl shadow-xl w-full max-w-md max-h-[90vh] overflow-y-auto">
         <div className="p-5 space-y-4">
-          <h2 className="text-lg font-bold text-gray-900 dark:text-gray-100">
+          <h2 className="text-lg font-bold text-slate-900 dark:text-slate-100">
             {editingSet ? 'Edit Study Set' : 'Create Study Set'}
           </h2>
 
           {/* Name */}
           <div>
-            <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">
+            <label className="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-1">
               Name
             </label>
             <input
               value={name}
               onChange={(e) => setName(e.target.value)}
               placeholder="e.g. JLPT N5 Verbs"
-              className="w-full px-3 py-2 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 text-gray-900 dark:text-gray-100"
+              className="w-full px-3 py-2 rounded-lg border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-700 text-slate-900 dark:text-slate-100"
             />
           </div>
 
           {/* Description */}
           <div>
-            <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">
-              Description <span className="text-gray-400">(optional)</span>
+            <label className="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-1">
+              Description <span className="text-slate-400">(optional)</span>
             </label>
             <input
               value={description}
               onChange={(e) => setDescription(e.target.value)}
               placeholder="Short description"
-              className="w-full px-3 py-2 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 text-gray-900 dark:text-gray-100"
+              className="w-full px-3 py-2 rounded-lg border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-700 text-slate-900 dark:text-slate-100"
             />
           </div>
 
           {/* Language filter */}
           <div>
-            <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">
-              Language <span className="text-gray-400">(optional)</span>
+            <label className="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-1">
+              Language <span className="text-slate-400">(optional)</span>
             </label>
             <select
               value={language}
               onChange={(e) => setLanguage(e.target.value)}
-              className="w-full px-3 py-2 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 text-gray-900 dark:text-gray-100"
+              className="w-full px-3 py-2 rounded-lg border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-700 text-slate-900 dark:text-slate-100"
             >
               <option value="">All languages</option>
               {activeLanguages.map((lang) => (
@@ -143,11 +143,11 @@ export default function SetModal({ isOpen, onClose, editingSet }: SetModalProps)
 
           {/* Tags */}
           <div>
-            <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">
-              Tags <span className="text-gray-400">(word must have ALL selected)</span>
+            <label className="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-1">
+              Tags <span className="text-slate-400">(word must have ALL selected)</span>
             </label>
             {allTags.length === 0 ? (
-              <p className="text-sm text-gray-400 dark:text-gray-500">
+              <p className="text-sm text-slate-400 dark:text-slate-500">
                 No tags found. Add tags to your words first.
               </p>
             ) : (
@@ -158,7 +158,7 @@ export default function SetModal({ isOpen, onClose, editingSet }: SetModalProps)
                     className={`inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-sm cursor-pointer select-none transition-colors ${
                       selectedTags.includes(tag)
                         ? 'bg-indigo-100 dark:bg-indigo-900 text-indigo-700 dark:text-indigo-300'
-                        : 'bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-400'
+                        : 'bg-slate-100 dark:bg-slate-700 text-slate-600 dark:text-slate-400'
                     }`}
                   >
                     <input
@@ -175,7 +175,7 @@ export default function SetModal({ isOpen, onClose, editingSet }: SetModalProps)
           </div>
 
           {/* Preview */}
-          <div className="text-sm text-gray-500 dark:text-gray-400">
+          <div className="text-sm text-slate-500 dark:text-slate-400">
             {previewCount !== null
               ? `${previewCount} word${previewCount !== 1 ? 's' : ''} match${previewCount === 1 ? 'es' : ''}`
               : 'Select tags to preview'}
@@ -185,7 +185,7 @@ export default function SetModal({ isOpen, onClose, editingSet }: SetModalProps)
           <div className="flex justify-end gap-2 pt-2">
             <button
               onClick={onClose}
-              className="px-4 py-2 rounded-lg bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 text-sm hover:bg-gray-200 dark:hover:bg-gray-600"
+              className="px-4 py-2 rounded-lg bg-slate-100 dark:bg-slate-700 text-slate-700 dark:text-slate-300 text-sm hover:bg-slate-200 dark:hover:bg-slate-600"
             >
               Cancel
             </button>

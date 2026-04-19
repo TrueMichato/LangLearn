@@ -4,7 +4,8 @@ import { searchWords, updateWord, deleteWord, type WordFilter } from '../db/word
 import { db, type Word, type Review } from '../db/schema';
 import { useSettingsStore } from '../stores/settingsStore';
 import AddWordModal from '../components/srs/AddWordModal';
-import { getLanguageLabel } from '../lib/languages';
+import { getLanguageLabel, getLanguageFlag } from '../lib/languages';
+import { SkeletonList } from '../components/common/Skeleton';
 import StudySets from '../components/words/StudySets';
 
 type StatusFilter = 'all' | 'learning' | 'mature' | 'due';
@@ -23,7 +24,7 @@ const LANG_COLORS: Record<string, string> = {
 };
 
 function langColor(lang: string) {
-  return LANG_COLORS[lang] ?? 'bg-gray-100 text-gray-800 dark:bg-gray-700 dark:text-gray-200';
+  return LANG_COLORS[lang] ?? 'bg-slate-100 text-slate-800 dark:bg-slate-700 dark:text-slate-200';
 }
 
 function formatDate(iso: string) {
@@ -33,6 +34,22 @@ function formatDate(iso: string) {
 
 function isDue(nextReviewDate: string) {
   return nextReviewDate <= new Date().toISOString();
+}
+
+function EaseDots({ ease }: { ease: number }) {
+  // red < 2.0, yellow 2.0–2.7, green > 2.7
+  const color = (threshold: number) => {
+    if (ease >= threshold) return 'bg-emerald-400 dark:bg-emerald-500';
+    if (ease >= threshold - 0.7) return 'bg-amber-400 dark:bg-amber-500';
+    return 'bg-red-400 dark:bg-red-500';
+  };
+  return (
+    <span className="inline-flex gap-0.5" title={`Ease: ${ease.toFixed(2)}`}>
+      <span className={`w-1.5 h-1.5 rounded-full ${ease >= 1.5 ? color(1.5) : 'bg-slate-300 dark:bg-slate-600'}`} />
+      <span className={`w-1.5 h-1.5 rounded-full ${ease >= 2.2 ? color(2.2) : 'bg-slate-300 dark:bg-slate-600'}`} />
+      <span className={`w-1.5 h-1.5 rounded-full ${ease >= 2.8 ? color(2.8) : 'bg-slate-300 dark:bg-slate-600'}`} />
+    </span>
+  );
 }
 
 export default function WordsPage() {
@@ -108,16 +125,16 @@ export default function WordsPage() {
   }
 
   const chipBase =
-    'px-3 py-1 rounded-full text-sm font-medium transition-colors cursor-pointer select-none';
+    'px-3 py-1 rounded-full text-sm font-medium transition-colors cursor-pointer select-none press-feedback';
   const chipActive = 'bg-indigo-600 text-white';
   const chipInactive =
-    'bg-gray-100 text-gray-700 dark:bg-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-600';
+    'bg-slate-100 text-slate-700 dark:bg-slate-700 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-600';
 
   return (
     <div className="p-4 max-w-lg mx-auto pb-24 space-y-3">
       <div className="flex items-center justify-between">
-        <h1 className="text-2xl font-bold text-gray-900 dark:text-gray-100">Words</h1>
-        <span className="text-sm text-gray-500 dark:text-gray-400">
+        <h1 className="text-2xl font-bold text-slate-900 dark:text-slate-100">Words</h1>
+        <span className="text-sm text-slate-500 dark:text-slate-400">
           {results.length} word{results.length !== 1 ? 's' : ''}
         </span>
       </div>
@@ -163,7 +180,7 @@ export default function WordsPage() {
             setSortBy(sb as WordFilter['sortBy']);
             setSortDir(sd as WordFilter['sortDir']);
           }}
-          className="ml-auto text-sm bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-600 rounded-lg px-2 py-1 text-gray-700 dark:text-gray-300"
+          className="ml-auto text-sm bg-white dark:bg-slate-800 border border-slate-300 dark:border-slate-600 rounded-lg px-2 py-1 text-slate-700 dark:text-slate-300"
         >
           <option value="createdAt-desc">Newest</option>
           <option value="createdAt-asc">Oldest</option>
@@ -175,13 +192,19 @@ export default function WordsPage() {
 
       {/* Word list */}
       {loading ? (
-        <div className="text-center py-12 text-gray-400 dark:text-gray-500">Loading…</div>
+        <SkeletonList count={5} />
       ) : results.length === 0 ? (
-        <div className="text-center py-12">
-          <p className="text-4xl mb-3">📚</p>
-          <p className="text-gray-500 dark:text-gray-400">
-            No words yet! Head to the Reader to start building your vocabulary.
+        <div className="text-center py-16">
+          <p className="text-5xl mb-2">📚✨</p>
+          <p className="text-slate-500 dark:text-slate-400 mb-4">
+            No words yet! Start building your vocabulary.
           </p>
+          <button
+            onClick={() => setShowAddModal(true)}
+            className="px-5 py-2.5 rounded-xl bg-indigo-600 text-white font-medium hover:bg-indigo-700 transition-colors press-feedback"
+          >
+            Add your first words!
+          </button>
         </div>
       ) : (
         <div className="space-y-2">
@@ -192,25 +215,27 @@ export default function WordsPage() {
             return (
               <div
                 key={word.id}
-                className="bg-white dark:bg-gray-800 rounded-xl border border-gray-200 dark:border-gray-700 overflow-hidden"
+                className="bg-white dark:bg-slate-800 rounded-xl border border-slate-200 dark:border-slate-700 overflow-hidden hover:bg-slate-50 dark:hover:bg-slate-800/50 transition-colors"
               >
                 {/* Collapsed row */}
                 <button
-                  className="w-full text-left p-3 flex items-start gap-3"
+                  className="w-full text-left p-3 flex items-start gap-3 press-feedback"
                   onClick={() => setExpandedId(isExpanded ? null : word.id!)}
                 >
                   <div className="flex-1 min-w-0">
                     <div className="flex items-baseline gap-2">
-                      <span className="text-lg font-semibold text-gray-900 dark:text-gray-100">
+                      <span className="text-sm mr-0.5">{getLanguageFlag(word.language)}</span>
+                      <span className="text-lg font-semibold text-slate-900 dark:text-slate-100">
                         {word.word}
                       </span>
                       {word.reading && (
-                        <span className="text-sm text-gray-400 dark:text-gray-500">
+                        <span className="text-sm text-slate-400 dark:text-slate-500">
                           {word.reading}
                         </span>
                       )}
+                      <EaseDots ease={review.ease} />
                     </div>
-                    <div className="text-sm text-gray-600 dark:text-gray-400 truncate">
+                    <div className="text-sm text-slate-600 dark:text-slate-400 truncate">
                       {word.meaning}
                     </div>
                     {word.tags.length > 0 && (
@@ -218,7 +243,7 @@ export default function WordsPage() {
                         {word.tags.map((t) => (
                           <span
                             key={t}
-                            className="text-xs px-1.5 py-0.5 rounded bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-400"
+                            className="text-xs px-1.5 py-0.5 rounded bg-slate-100 dark:bg-slate-700 text-slate-600 dark:text-slate-400"
                           >
                             {t}
                           </span>
@@ -235,7 +260,7 @@ export default function WordsPage() {
                         Due now
                       </span>
                     ) : (
-                      <span className="text-xs text-gray-400 dark:text-gray-500">
+                      <span className="text-xs text-slate-400 dark:text-slate-500">
                         {formatDate(review.nextReviewDate)}
                       </span>
                     )}
@@ -244,29 +269,29 @@ export default function WordsPage() {
 
                 {/* Expanded section */}
                 {isExpanded && (
-                  <div className="border-t border-gray-100 dark:border-gray-700 p-3 space-y-3">
+                  <div className="border-t border-slate-100 dark:border-slate-700 p-3 space-y-3">
                     {isEditing ? (
                       <div className="space-y-2">
                         <input
-                          className="w-full px-2 py-1 rounded border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 text-gray-900 dark:text-gray-100"
+                          className="w-full px-2 py-1 rounded border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-700 text-slate-900 dark:text-slate-100"
                           value={editForm.word}
                           onChange={(e) => setEditForm((f) => ({ ...f, word: e.target.value }))}
                           placeholder="Word"
                         />
                         <input
-                          className="w-full px-2 py-1 rounded border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 text-gray-900 dark:text-gray-100"
+                          className="w-full px-2 py-1 rounded border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-700 text-slate-900 dark:text-slate-100"
                           value={editForm.reading}
                           onChange={(e) => setEditForm((f) => ({ ...f, reading: e.target.value }))}
                           placeholder="Reading"
                         />
                         <input
-                          className="w-full px-2 py-1 rounded border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 text-gray-900 dark:text-gray-100"
+                          className="w-full px-2 py-1 rounded border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-700 text-slate-900 dark:text-slate-100"
                           value={editForm.meaning}
                           onChange={(e) => setEditForm((f) => ({ ...f, meaning: e.target.value }))}
                           placeholder="Meaning"
                         />
                         <input
-                          className="w-full px-2 py-1 rounded border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 text-gray-900 dark:text-gray-100"
+                          className="w-full px-2 py-1 rounded border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-700 text-slate-900 dark:text-slate-100"
                           value={editForm.tags}
                           onChange={(e) => setEditForm((f) => ({ ...f, tags: e.target.value }))}
                           placeholder="Tags (comma-separated)"
@@ -274,13 +299,13 @@ export default function WordsPage() {
                         <div className="flex gap-2">
                           <button
                             onClick={() => saveEdit(word.id!)}
-                            className="px-3 py-1 rounded bg-indigo-600 text-white text-sm hover:bg-indigo-700"
+                            className="px-3 py-1 rounded bg-indigo-600 text-white text-sm hover:bg-indigo-700 press-feedback"
                           >
                             Save
                           </button>
                           <button
                             onClick={() => setEditingId(null)}
-                            className="px-3 py-1 rounded bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-300 text-sm"
+                            className="px-3 py-1 rounded bg-slate-200 dark:bg-slate-700 text-slate-700 dark:text-slate-300 text-sm press-feedback"
                           >
                             Cancel
                           </button>
@@ -290,15 +315,15 @@ export default function WordsPage() {
                       <>
                         {word.contextSentence && (
                           <div>
-                            <span className="text-xs font-medium text-gray-500 dark:text-gray-400">
+                            <span className="text-xs font-medium text-slate-500 dark:text-slate-400">
                               Context
                             </span>
-                            <p className="text-sm text-gray-700 dark:text-gray-300">
+                            <p className="text-sm text-slate-700 dark:text-slate-300">
                               {word.contextSentence}
                             </p>
                           </div>
                         )}
-                        <div className="grid grid-cols-3 gap-2 text-xs text-gray-500 dark:text-gray-400">
+                        <div className="grid grid-cols-3 gap-2 text-xs text-slate-500 dark:text-slate-400">
                           <div>
                             <div className="font-medium">Ease</div>
                             <div>{review.ease.toFixed(2)}</div>
@@ -315,13 +340,13 @@ export default function WordsPage() {
                         <div className="flex gap-2 pt-1">
                           <button
                             onClick={() => startEdit({ word, review })}
-                            className="px-3 py-1 rounded bg-indigo-100 dark:bg-indigo-900 text-indigo-700 dark:text-indigo-300 text-sm hover:bg-indigo-200 dark:hover:bg-indigo-800"
+                            className="px-3 py-1 rounded bg-indigo-100 dark:bg-indigo-900 text-indigo-700 dark:text-indigo-300 text-sm hover:bg-indigo-200 dark:hover:bg-indigo-800 press-feedback"
                           >
                             Edit
                           </button>
                           <button
                             onClick={() => resetProgress(word.id!)}
-                            className="px-3 py-1 rounded bg-amber-100 dark:bg-amber-900 text-amber-700 dark:text-amber-300 text-sm hover:bg-amber-200 dark:hover:bg-amber-800"
+                            className="px-3 py-1 rounded bg-amber-100 dark:bg-amber-900 text-amber-700 dark:text-amber-300 text-sm hover:bg-amber-200 dark:hover:bg-amber-800 press-feedback"
                           >
                             Reset progress
                           </button>
@@ -330,13 +355,13 @@ export default function WordsPage() {
                               <span className="text-xs text-red-600 dark:text-red-400">Delete?</span>
                               <button
                                 onClick={() => handleDelete(word.id!)}
-                                className="px-2 py-1 rounded bg-red-600 text-white text-xs hover:bg-red-700"
+                                className="px-2 py-1 rounded bg-red-600 text-white text-xs hover:bg-red-700 press-feedback"
                               >
                                 Yes
                               </button>
                               <button
                                 onClick={() => setDeleteConfirmId(null)}
-                                className="px-2 py-1 rounded bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-300 text-xs"
+                                className="px-2 py-1 rounded bg-slate-200 dark:bg-slate-700 text-slate-700 dark:text-slate-300 text-xs press-feedback"
                               >
                                 No
                               </button>
@@ -344,7 +369,7 @@ export default function WordsPage() {
                           ) : (
                             <button
                               onClick={() => setDeleteConfirmId(word.id!)}
-                              className="px-3 py-1 rounded bg-red-100 dark:bg-red-900 text-red-700 dark:text-red-300 text-sm hover:bg-red-200 dark:hover:bg-red-800"
+                              className="px-3 py-1 rounded bg-red-100 dark:bg-red-900 text-red-700 dark:text-red-300 text-sm hover:bg-red-200 dark:hover:bg-red-800 press-feedback"
                             >
                               Delete
                             </button>
@@ -363,7 +388,7 @@ export default function WordsPage() {
       {/* FAB */}
       <button
         onClick={() => setShowAddModal(true)}
-        className="fixed bottom-24 right-4 w-14 h-14 rounded-full bg-indigo-600 text-white text-2xl shadow-lg hover:bg-indigo-700 active:scale-95 transition-all flex items-center justify-center z-40"
+        className="fixed bottom-24 right-4 w-14 h-14 rounded-full bg-indigo-600 text-white text-2xl shadow-lg hover:bg-indigo-700 active:scale-95 transition-all flex items-center justify-center z-40 press-feedback"
         aria-label="Add word"
       >
         +

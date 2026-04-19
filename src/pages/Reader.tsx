@@ -12,6 +12,7 @@ import FuriganaText from '../components/reader/FuriganaText';
 import { applyStress } from '../lib/russian-stress';
 import { splitSentences, findSentenceAt, type SentenceSpan } from '../lib/sentences';
 import { getLanguageLabel } from '../lib/languages';
+import { SkeletonCard, SkeletonList } from '../components/common/Skeleton';
 
 type Tab = 'import' | 'library';
 
@@ -190,23 +191,23 @@ export default function ReaderPage() {
 
   // Tab toggle (shown only when not in reading view and not tokenizing)
   const tabToggle = !hasTokens && !isTokenizing ? (
-    <div className="flex bg-gray-100 dark:bg-gray-700 rounded-xl p-1 mb-4">
+    <div className="flex bg-slate-100 dark:bg-slate-800 rounded-xl p-1 mb-4">
       <button
         onClick={() => switchTab('import')}
-        className={`flex-1 py-2 text-sm font-medium rounded-lg transition-colors ${
+        className={`flex-1 py-2 text-sm font-medium rounded-lg transition-colors press-feedback ${
           tab === 'import'
-            ? 'bg-white dark:bg-gray-800 text-indigo-600 dark:text-indigo-400 shadow-sm'
-            : 'text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-300'
+            ? 'bg-white dark:bg-slate-700 text-indigo-600 dark:text-indigo-400 shadow-sm'
+            : 'text-slate-500 dark:text-slate-400 hover:text-slate-700 dark:hover:text-slate-300'
         }`}
       >
         Import
       </button>
       <button
         onClick={() => switchTab('library')}
-        className={`flex-1 py-2 text-sm font-medium rounded-lg transition-colors ${
+        className={`flex-1 py-2 text-sm font-medium rounded-lg transition-colors press-feedback ${
           tab === 'library'
-            ? 'bg-white dark:bg-gray-800 text-indigo-600 dark:text-indigo-400 shadow-sm'
-            : 'text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-300'
+            ? 'bg-white dark:bg-slate-700 text-indigo-600 dark:text-indigo-400 shadow-sm'
+            : 'text-slate-500 dark:text-slate-400 hover:text-slate-700 dark:hover:text-slate-300'
         }`}
       >
         Library
@@ -215,31 +216,35 @@ export default function ReaderPage() {
   ) : null;
 
   return isTokenizing ? (
-    <div className="flex flex-col items-center justify-center py-16 gap-3">
-      <svg
-        className="animate-spin h-8 w-8 text-indigo-600"
-        viewBox="0 0 24 24"
-        fill="none"
-      >
-        <circle
-          className="opacity-25"
-          cx="12"
-          cy="12"
-          r="10"
-          stroke="currentColor"
-          strokeWidth="4"
-        />
-        <path
-          className="opacity-75"
-          fill="currentColor"
-          d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4z"
-        />
-      </svg>
-      <p className="text-gray-500 dark:text-gray-400 text-sm">Parsing Japanese text…</p>
+    <div className="space-y-6 py-8">
+      <div className="flex flex-col items-center justify-center gap-3">
+        <svg
+          className="animate-spin h-8 w-8 text-indigo-600"
+          viewBox="0 0 24 24"
+          fill="none"
+        >
+          <circle
+            className="opacity-25"
+            cx="12"
+            cy="12"
+            r="10"
+            stroke="currentColor"
+            strokeWidth="4"
+          />
+          <path
+            className="opacity-75"
+            fill="currentColor"
+            d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4z"
+          />
+        </svg>
+        <p className="text-slate-500 dark:text-slate-400 text-sm">Parsing Japanese text…</p>
+      </div>
+      <SkeletonCard />
+      <SkeletonList count={2} />
     </div>
   ) : !hasTokens ? (
     <div>
-      <h2 className="text-lg font-semibold text-gray-700 dark:text-gray-200 mb-4">
+      <h2 className="text-lg font-semibold text-slate-700 dark:text-slate-200 mb-4">
         Immersion Reader
       </h2>
       {tabToggle}
@@ -252,28 +257,35 @@ export default function ReaderPage() {
           placeholder="Title (optional)"
           value={title}
           onChange={(e) => setTitle(e.target.value)}
-          className="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-xl focus:outline-none focus:ring-2 focus:ring-indigo-300 dark:focus:ring-indigo-700 bg-white dark:bg-gray-800 dark:text-gray-100"
+          className="w-full px-4 py-2 border border-slate-300 dark:border-slate-600 rounded-xl focus:outline-none focus:ring-2 focus:ring-indigo-300 dark:focus:ring-indigo-700 bg-white dark:bg-slate-800 dark:text-slate-100"
         />
-        <select
-          value={language}
-          onChange={(e) => setLanguage(e.target.value)}
-          className="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-xl focus:outline-none focus:ring-2 focus:ring-indigo-300 dark:focus:ring-indigo-700 bg-white dark:bg-gray-800 dark:text-gray-100"
-        >
+        {/* Language pill selector */}
+        <div className="flex gap-1 bg-slate-100 dark:bg-slate-800 rounded-xl p-1">
           {activeLanguages.map((code) => (
-            <option key={code} value={code}>{getLanguageLabel(code)}</option>
+            <button
+              key={code}
+              onClick={() => setLanguage(code)}
+              className={`flex-1 py-2 px-3 text-sm font-medium rounded-lg transition-colors press-feedback ${
+                language === code
+                  ? 'bg-white dark:bg-slate-700 text-indigo-600 dark:text-indigo-400 shadow-sm'
+                  : 'text-slate-500 dark:text-slate-400 hover:text-slate-700 dark:hover:text-slate-300'
+              }`}
+            >
+              {getLanguageLabel(code)}
+            </button>
           ))}
-        </select>
+        </div>
         <textarea
           placeholder="Paste your text here..."
           value={text}
           onChange={(e) => setText(e.target.value)}
           rows={8}
-          className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-xl focus:outline-none focus:ring-2 focus:ring-indigo-300 dark:focus:ring-indigo-700 resize-none bg-white dark:bg-gray-800 dark:text-gray-100"
+          className="w-full px-4 py-3 border border-slate-300 dark:border-slate-600 rounded-xl focus:outline-none focus:ring-2 focus:ring-indigo-300 dark:focus:ring-indigo-700 resize-none bg-white dark:bg-slate-800 dark:text-slate-100"
         />
         <button
           onClick={handleImport}
           disabled={!text.trim()}
-          className="w-full bg-indigo-600 text-white py-3 rounded-xl font-semibold hover:bg-indigo-700 transition-colors disabled:opacity-40"
+          className="w-full bg-indigo-600 text-white py-3 rounded-xl font-semibold hover:bg-indigo-700 transition-colors disabled:opacity-40 press-feedback"
         >
           Start Reading
         </button>
@@ -283,7 +295,7 @@ export default function ReaderPage() {
   ) : (
     <div>
       <div className="flex justify-between items-center mb-4">
-        <h2 className="text-lg font-semibold text-gray-700 dark:text-gray-200">
+        <h2 className="text-lg font-semibold text-slate-700 dark:text-slate-200">
           {title || 'Reading'}
         </h2>
         <button
@@ -291,13 +303,13 @@ export default function ReaderPage() {
             resetReadingState();
             getTextCount().then((count) => setTab(count > 0 ? 'library' : 'import'));
           }}
-          className="text-sm text-indigo-600 dark:text-indigo-400 hover:underline"
+          className="text-sm text-indigo-600 dark:text-indigo-400 hover:underline press-feedback"
         >
           ← New text
         </button>
       </div>
 
-      <div className="bg-white dark:bg-gray-800 rounded-2xl shadow p-4 leading-relaxed dark:text-gray-100" style={{ fontSize: 'var(--app-font-size)' }}>
+      <div className="bg-white dark:bg-slate-800 rounded-2xl shadow p-4 leading-relaxed text-[1.1rem] dark:text-slate-100" style={{ fontSize: 'var(--app-font-size)' }}>
         {jaTokens.length > 0 ? (
           <FuriganaText
             tokens={jaTokens}

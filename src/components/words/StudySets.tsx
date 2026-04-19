@@ -67,21 +67,21 @@ export default function StudySets() {
         className="flex items-center justify-between w-full"
         onClick={() => setCollapsed(!collapsed)}
       >
-        <h2 className="text-lg font-semibold text-gray-900 dark:text-gray-100">
+        <h2 className="text-lg font-semibold text-slate-900 dark:text-slate-100">
           📚 Study Sets
         </h2>
-        <span className="text-gray-400 dark:text-gray-500 text-sm">
+        <span className="text-slate-400 dark:text-slate-500 text-sm">
           {collapsed ? '▶' : '▼'}
         </span>
       </button>
 
       {!collapsed && (
         <div className="space-y-3">
-          {/* Smart sets */}
+          {/* Smart sets — horizontal scroll pills */}
           {smartSets.length > 0 && (
-            <div className="space-y-2">
+            <div className="flex gap-2 overflow-x-auto snap-x snap-mandatory pb-1 -mx-1 px-1">
               {smartSets.map(({ set, wordCount, dueCount }) => (
-                <SetCard
+                <SetPill
                   key={set.id}
                   set={set}
                   wordCount={wordCount}
@@ -92,26 +92,25 @@ export default function StudySets() {
             </div>
           )}
 
-          {/* Custom sets */}
+          {/* Custom sets — horizontal scroll pills */}
           {customSets.length > 0 && (
-            <div className="space-y-2">
+            <div className="flex gap-2 overflow-x-auto snap-x snap-mandatory pb-1 -mx-1 px-1">
               {customSets.map(({ set, wordCount, dueCount }) => (
-                <div key={set.id}>
-                  <SetCard
-                    set={set}
-                    wordCount={wordCount}
-                    dueCount={dueCount}
-                    onReview={() => handleReview(set.id)}
-                    onEdit={() => handleEdit(set)}
-                    onDelete={
-                      deleteConfirmId === set.id
-                        ? () => handleDelete(set.id)
-                        : () => setDeleteConfirmId(set.id)
-                    }
-                    deleteConfirm={deleteConfirmId === set.id}
-                    onDeleteCancel={() => setDeleteConfirmId(null)}
-                  />
-                </div>
+                <SetPill
+                  key={set.id}
+                  set={set}
+                  wordCount={wordCount}
+                  dueCount={dueCount}
+                  onReview={() => handleReview(set.id)}
+                  onEdit={() => handleEdit(set)}
+                  onDelete={
+                    deleteConfirmId === set.id
+                      ? () => handleDelete(set.id)
+                      : () => setDeleteConfirmId(set.id)
+                  }
+                  deleteConfirm={deleteConfirmId === set.id}
+                  onDeleteCancel={() => setDeleteConfirmId(null)}
+                />
               ))}
             </div>
           )}
@@ -119,7 +118,7 @@ export default function StudySets() {
           {/* Create button */}
           <button
             onClick={handleCreate}
-            className="w-full py-2.5 rounded-2xl border-2 border-dashed border-gray-300 dark:border-gray-600 text-gray-500 dark:text-gray-400 text-sm font-medium hover:border-indigo-400 hover:text-indigo-500 dark:hover:border-indigo-500 dark:hover:text-indigo-400 transition-colors"
+            className="w-full py-2.5 rounded-2xl border-2 border-dashed border-slate-300 dark:border-slate-600 text-slate-500 dark:text-slate-400 text-sm font-medium hover:border-indigo-400 hover:text-indigo-500 dark:hover:border-indigo-500 dark:hover:text-indigo-400 transition-colors press-feedback"
           >
             ➕ Create Set
           </button>
@@ -150,7 +149,7 @@ interface SetCardProps {
   onDeleteCancel?: () => void;
 }
 
-function SetCard({
+function SetPill({
   set,
   wordCount,
   dueCount,
@@ -160,63 +159,71 @@ function SetCard({
   deleteConfirm,
   onDeleteCancel,
 }: SetCardProps) {
-  const badgeClass =
-    set.type === 'smart'
-      ? 'bg-blue-100 dark:bg-blue-900 text-blue-700 dark:text-blue-300 px-2 py-0.5 rounded-full text-xs'
-      : 'bg-purple-100 dark:bg-purple-900 text-purple-700 dark:text-purple-300 px-2 py-0.5 rounded-full text-xs';
+  const isActive = dueCount > 0;
 
   return (
-    <div className="bg-white dark:bg-gray-800 rounded-2xl shadow p-4">
-      <div className="flex items-start justify-between gap-3">
-        <div className="flex-1 min-w-0">
-          <div className="flex items-center gap-2 mb-1">
-            <h3 className="font-semibold text-gray-900 dark:text-gray-100 truncate">
-              {set.name}
-            </h3>
-            <span className={badgeClass}>{set.type}</span>
-          </div>
-          {set.description && (
-            <p className="text-sm text-gray-500 dark:text-gray-400 mb-2">
-              {set.description}
-            </p>
-          )}
-          <div className="flex items-center gap-3 text-xs text-gray-400 dark:text-gray-500">
-            <span>{wordCount} word{wordCount !== 1 ? 's' : ''}</span>
-            <span>{dueCount} due</span>
-          </div>
-        </div>
-
-        <button
-          onClick={onReview}
-          className="shrink-0 px-3 py-1.5 rounded-lg bg-indigo-600 text-white text-sm font-medium hover:bg-indigo-700 transition-colors"
-        >
-          Review
-        </button>
+    <div
+      className={`snap-start shrink-0 rounded-2xl shadow p-3 min-w-[180px] max-w-[220px] flex flex-col gap-2 ${
+        isActive
+          ? 'gradient-primary text-white'
+          : 'bg-white dark:bg-slate-800 text-slate-900 dark:text-slate-100'
+      }`}
+    >
+      <div className="flex items-center gap-1.5">
+        <h3 className="font-semibold text-sm truncate">{set.name}</h3>
+        <span className={`text-[10px] px-1.5 py-0.5 rounded-full shrink-0 ${
+          isActive
+            ? 'bg-white/20 text-white'
+            : set.type === 'smart'
+              ? 'bg-blue-100 dark:bg-blue-900 text-blue-700 dark:text-blue-300'
+              : 'bg-purple-100 dark:bg-purple-900 text-purple-700 dark:text-purple-300'
+        }`}>
+          {set.type}
+        </span>
       </div>
 
-      {/* Edit/Delete for custom sets */}
+      <div className={`flex items-center gap-2 text-xs ${isActive ? 'text-white/80' : 'text-slate-400 dark:text-slate-500'}`}>
+        <span>{wordCount} words</span>
+        <span>{dueCount} due</span>
+      </div>
+
+      <button
+        onClick={onReview}
+        className={`w-full py-1.5 rounded-lg text-xs font-medium transition-colors press-feedback ${
+          isActive
+            ? 'bg-white/20 hover:bg-white/30 text-white'
+            : 'bg-indigo-600 hover:bg-indigo-700 text-white'
+        }`}
+      >
+        Review
+      </button>
+
       {set.type === 'custom' && (
-        <div className="flex gap-2 mt-3 pt-2 border-t border-gray-100 dark:border-gray-700">
+        <div className={`flex gap-1.5 pt-1 border-t ${isActive ? 'border-white/20' : 'border-slate-100 dark:border-slate-700'}`}>
           {onEdit && (
             <button
               onClick={onEdit}
-              className="text-xs px-2 py-1 rounded bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-400 hover:bg-gray-200 dark:hover:bg-gray-600"
+              className={`text-[10px] px-1.5 py-0.5 rounded press-feedback ${
+                isActive ? 'bg-white/15 text-white/80 hover:bg-white/25' : 'bg-slate-100 dark:bg-slate-700 text-slate-600 dark:text-slate-400 hover:bg-slate-200 dark:hover:bg-slate-600'
+              }`}
             >
               Edit
             </button>
           )}
           {deleteConfirm ? (
             <div className="flex items-center gap-1">
-              <span className="text-xs text-red-600 dark:text-red-400">Delete?</span>
+              <span className={`text-[10px] ${isActive ? 'text-white/80' : 'text-red-600 dark:text-red-400'}`}>Delete?</span>
               <button
                 onClick={onDelete}
-                className="text-xs px-2 py-1 rounded bg-red-600 text-white hover:bg-red-700"
+                className="text-[10px] px-1.5 py-0.5 rounded bg-red-600 text-white hover:bg-red-700 press-feedback"
               >
                 Yes
               </button>
               <button
                 onClick={onDeleteCancel}
-                className="text-xs px-2 py-1 rounded bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-300"
+                className={`text-[10px] px-1.5 py-0.5 rounded press-feedback ${
+                  isActive ? 'bg-white/15 text-white/80' : 'bg-slate-200 dark:bg-slate-700 text-slate-700 dark:text-slate-300'
+                }`}
               >
                 No
               </button>
@@ -225,7 +232,9 @@ function SetCard({
             onDelete && (
               <button
                 onClick={onDelete}
-                className="text-xs px-2 py-1 rounded bg-red-100 dark:bg-red-900 text-red-700 dark:text-red-300 hover:bg-red-200 dark:hover:bg-red-800"
+                className={`text-[10px] px-1.5 py-0.5 rounded press-feedback ${
+                  isActive ? 'bg-white/15 text-white/80 hover:bg-white/25' : 'bg-red-100 dark:bg-red-900 text-red-700 dark:text-red-300 hover:bg-red-200 dark:hover:bg-red-800'
+                }`}
               >
                 Delete
               </button>

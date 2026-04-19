@@ -7,7 +7,7 @@ import { getLanguageLabel } from '../../lib/languages';
 const LANGUAGE_COLORS: Record<string, string> = {
   ja: 'bg-red-100 text-red-700 dark:bg-red-900 dark:text-red-300',
   ru: 'bg-blue-100 text-blue-700 dark:bg-blue-900 dark:text-blue-300',
-  en: 'bg-gray-100 text-gray-700 dark:bg-gray-700 dark:text-gray-300',
+  en: 'bg-slate-100 text-slate-700 dark:bg-slate-700 dark:text-slate-300',
   es: 'bg-yellow-100 text-yellow-700 dark:bg-yellow-900 dark:text-yellow-300',
   fr: 'bg-indigo-100 text-indigo-700 dark:bg-indigo-900 dark:text-indigo-300',
   de: 'bg-orange-100 text-orange-700 dark:bg-orange-900 dark:text-orange-300',
@@ -54,7 +54,7 @@ export default function TextLibrary({ onSelectText }: TextLibraryProps) {
     return (
       <div className="flex flex-col items-center justify-center py-16 text-center">
         <p className="text-4xl mb-3">📚</p>
-        <p className="text-gray-500 dark:text-gray-400">
+        <p className="text-slate-500 dark:text-slate-400">
           No saved texts yet. Import something to read!
         </p>
       </div>
@@ -63,23 +63,36 @@ export default function TextLibrary({ onSelectText }: TextLibraryProps) {
 
   return (
     <div className="space-y-3">
-      {/* Language filter */}
-      <select
-        value={filterLang}
-        onChange={(e) => setFilterLang(e.target.value)}
-        className="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-xl focus:outline-none focus:ring-2 focus:ring-indigo-300 dark:focus:ring-indigo-700 bg-white dark:bg-gray-800 dark:text-gray-100 text-sm"
-      >
-        <option value="">All languages</option>
+      {/* Language filter — pill tabs */}
+      <div className="flex gap-1 bg-slate-100 dark:bg-slate-800 rounded-xl p-1 overflow-x-auto">
+        <button
+          onClick={() => setFilterLang('')}
+          className={`shrink-0 py-1.5 px-3 text-sm font-medium rounded-lg transition-colors press-feedback ${
+            !filterLang
+              ? 'bg-white dark:bg-slate-700 text-indigo-600 dark:text-indigo-400 shadow-sm'
+              : 'text-slate-500 dark:text-slate-400 hover:text-slate-700 dark:hover:text-slate-300'
+          }`}
+        >
+          All
+        </button>
         {uniqueLangs.map((lang) => (
-          <option key={lang} value={lang}>
+          <button
+            key={lang}
+            onClick={() => setFilterLang(lang)}
+            className={`shrink-0 py-1.5 px-3 text-sm font-medium rounded-lg transition-colors press-feedback ${
+              filterLang === lang
+                ? 'bg-white dark:bg-slate-700 text-indigo-600 dark:text-indigo-400 shadow-sm'
+                : 'text-slate-500 dark:text-slate-400 hover:text-slate-700 dark:hover:text-slate-300'
+            }`}
+          >
             {getLanguageLabel(lang)}
-          </option>
+          </button>
         ))}
-      </select>
+      </div>
 
       {texts.length === 0 && filterLang ? (
         <div className="flex flex-col items-center justify-center py-12 text-center">
-          <p className="text-gray-500 dark:text-gray-400 text-sm">
+          <p className="text-slate-500 dark:text-slate-400 text-sm">
             No texts found for this language.
           </p>
         </div>
@@ -88,28 +101,28 @@ export default function TextLibrary({ onSelectText }: TextLibraryProps) {
           {texts.map((t) => (
             <div
               key={t.id}
-              className="bg-white dark:bg-gray-800 rounded-2xl shadow p-4 cursor-pointer hover:shadow-md transition-shadow"
+              className="bg-white dark:bg-slate-800 rounded-2xl shadow p-4 cursor-pointer hover:shadow-md transition-shadow"
               onClick={() => onSelectText(t)}
             >
               <div className="flex items-start justify-between gap-2">
                 <div className="flex-1 min-w-0">
                   <div className="flex items-center gap-2 mb-1">
-                    <h3 className="font-bold text-gray-800 dark:text-gray-100 truncate">
+                    <h3 className="font-bold text-slate-800 dark:text-slate-100 truncate">
                       {t.title}
                     </h3>
                     <span
                       className={`text-xs px-2 py-0.5 rounded-full font-medium shrink-0 ${
-                        LANGUAGE_COLORS[t.language] || 'bg-gray-100 text-gray-700 dark:bg-gray-700 dark:text-gray-300'
+                        LANGUAGE_COLORS[t.language] || 'bg-slate-100 text-slate-700 dark:bg-slate-700 dark:text-slate-300'
                       }`}
                     >
                       {getLanguageLabel(t.language)}
                     </span>
                   </div>
-                  <p className="text-sm text-gray-500 dark:text-gray-400 line-clamp-2 mb-2">
+                  <p className="text-sm text-slate-500 dark:text-slate-400 line-clamp-2 mb-2">
                     {t.content.slice(0, 100)}
                     {t.content.length > 100 ? '…' : ''}
                   </p>
-                  <div className="flex items-center gap-3 text-xs text-gray-400 dark:text-gray-500">
+                  <div className="flex items-center gap-3 text-xs text-slate-400 dark:text-slate-500">
                     <span>{relativeDate(t.createdAt)}</span>
                     <span>
                       {wordCount(t.content, t.language)}{' '}
@@ -122,21 +135,21 @@ export default function TextLibrary({ onSelectText }: TextLibraryProps) {
                     e.stopPropagation();
                     setConfirmDeleteId(confirmDeleteId === t.id! ? null : t.id!);
                   }}
-                  className="text-gray-400 hover:text-red-500 dark:text-gray-500 dark:hover:text-red-400 transition-colors p-1 shrink-0"
+                  className="text-slate-400 hover:text-red-500 dark:text-slate-500 dark:hover:text-red-400 transition-colors p-1 shrink-0 press-feedback"
                   aria-label="Delete text"
                 >
                   🗑️
                 </button>
               </div>
               {confirmDeleteId === t.id && (
-                <div className="mt-2 flex items-center gap-2 pt-2 border-t border-gray-100 dark:border-gray-700">
+                <div className="mt-2 flex items-center gap-2 pt-2 border-t border-slate-100 dark:border-slate-700">
                   <span className="text-sm text-red-600 dark:text-red-400">Delete this text?</span>
                   <button
                     onClick={(e) => {
                       e.stopPropagation();
                       handleDelete(t.id!);
                     }}
-                    className="text-sm bg-red-600 text-white px-3 py-1 rounded-lg hover:bg-red-700 transition-colors"
+                    className="text-sm bg-red-600 text-white px-3 py-1 rounded-lg hover:bg-red-700 transition-colors press-feedback"
                   >
                     Delete
                   </button>
@@ -145,7 +158,7 @@ export default function TextLibrary({ onSelectText }: TextLibraryProps) {
                       e.stopPropagation();
                       setConfirmDeleteId(null);
                     }}
-                    className="text-sm text-gray-500 dark:text-gray-400 hover:underline"
+                    className="text-sm text-slate-500 dark:text-slate-400 hover:underline press-feedback"
                   >
                     Cancel
                   </button>

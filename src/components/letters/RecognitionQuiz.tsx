@@ -63,6 +63,7 @@ export default function RecognitionQuiz({ characters, alphabetName, language, on
   const [xpToast, setXpToast] = useState(false);
   const [srsToast, setSrsToast] = useState(false);
   const [hasStartedTimer, setHasStartedTimer] = useState(false);
+  const [flashOverlay, setFlashOverlay] = useState<'correct' | 'wrong' | null>(null);
   const timerStart = useTimerStore((s) => s.start);
   const timerIsRunning = useTimerStore((s) => s.isRunning);
 
@@ -98,6 +99,10 @@ export default function RecognitionQuiz({ characters, alphabetName, language, on
     const correct = option.char === currentQuestion.char;
     setSelected(option.char);
     setShowResult(true);
+
+    // Flash overlay
+    setFlashOverlay(correct ? 'correct' : 'wrong');
+    setTimeout(() => setFlashOverlay(null), 800);
 
     const id = `${language}/${alphabetName}/${currentQuestion.char}`;
     await updateCharacterProgress(id, language, currentQuestion.char, currentQuestion.romanji, correct);
@@ -174,10 +179,10 @@ export default function RecognitionQuiz({ characters, alphabetName, language, on
     return (
       <div className="text-center py-8 space-y-4">
         <p className="text-5xl">🎉</p>
-        <p className="text-xl font-semibold text-gray-800 dark:text-gray-100">
+        <p className="text-xl font-semibold text-slate-800 dark:text-slate-100">
           Quiz Complete!
         </p>
-        <p className="text-lg text-gray-600 dark:text-gray-300">
+        <p className="text-lg text-slate-600 dark:text-slate-300">
           {totalScore}/{Math.min(totalQuestions, characters.length * rounds.length)} correct
         </p>
         <p className="text-sm text-indigo-600 dark:text-indigo-400">
@@ -185,7 +190,7 @@ export default function RecognitionQuiz({ characters, alphabetName, language, on
         </p>
         <button
           onClick={handleRestart}
-          className="px-6 py-2.5 rounded-xl bg-indigo-600 text-white font-medium hover:bg-indigo-700 transition-colors"
+          className="px-6 py-2.5 rounded-xl bg-indigo-600 text-white font-medium hover:bg-indigo-700 transition-colors press-feedback"
         >
           Try Again
         </button>
@@ -198,19 +203,39 @@ export default function RecognitionQuiz({ characters, alphabetName, language, on
   const isCorrect = selected === currentQuestion.char;
 
   return (
-    <div className="space-y-4">
+    <div className="relative space-y-4">
+      {/* Flash overlay for correct/wrong */}
+      {flashOverlay && (
+        <div
+          className={`absolute inset-0 z-30 flex items-center justify-center rounded-2xl pointer-events-none animate-[fadeIn_0.15s_ease-out] ${
+            flashOverlay === 'correct'
+              ? 'bg-emerald-500/20 dark:bg-emerald-500/15'
+              : 'bg-red-500/20 dark:bg-red-500/15'
+          }`}
+          style={{ animation: 'fadeIn 0.15s ease-out, fadeIn 0.3s ease-in 0.5s reverse forwards' }}
+        >
+          <span className={`text-5xl font-bold ${
+            flashOverlay === 'correct'
+              ? 'text-emerald-600 dark:text-emerald-400'
+              : 'text-red-600 dark:text-red-400'
+          }`}>
+            {flashOverlay === 'correct' ? '✓' : '✗'}
+          </span>
+        </div>
+      )}
+
       {/* Round indicator */}
       <div className="flex items-center justify-between text-sm">
-        <span className="text-gray-500 dark:text-gray-400">
+        <span className="text-slate-500 dark:text-slate-400">
           Round {roundIndex + 1}/3: {currentRound.label}
         </span>
-        <span className="text-gray-500 dark:text-gray-400">
+        <span className="text-slate-500 dark:text-slate-400">
           {questionIndex + 1}/{questions.length}
         </span>
       </div>
 
       {/* Progress bar */}
-      <div className="h-1.5 bg-gray-200 dark:bg-gray-700 rounded-full overflow-hidden">
+      <div className="h-1.5 bg-slate-200 dark:bg-slate-700 rounded-full overflow-hidden">
         <div
           className="h-full bg-indigo-600 transition-all duration-300"
           style={{ width: `${((questionIndex + 1) / questions.length) * 100}%` }}
@@ -221,24 +246,24 @@ export default function RecognitionQuiz({ characters, alphabetName, language, on
       <div className="text-center py-4">
         {currentRound.type === 'char-to-romanji' && (
           <>
-            <span className="text-7xl text-gray-900 dark:text-gray-100">{currentQuestion.char}</span>
+            <span className="text-7xl text-slate-900 dark:text-slate-100">{currentQuestion.char}</span>
             {currentQuestion.meaning && (
-              <p className="text-sm text-gray-400 dark:text-gray-500 mt-1">{currentQuestion.meaning}</p>
+              <p className="text-sm text-slate-400 dark:text-slate-500 mt-1">{currentQuestion.meaning}</p>
             )}
           </>
         )}
         {currentRound.type === 'romanji-to-char' && (
           <>
-            <span className="text-4xl font-bold text-gray-800 dark:text-gray-100">{currentQuestion.romanji}</span>
+            <span className="text-4xl font-bold text-slate-800 dark:text-slate-100">{currentQuestion.romanji}</span>
             {currentQuestion.meaning && (
-              <p className="text-sm text-gray-400 dark:text-gray-500 mt-1">{currentQuestion.meaning}</p>
+              <p className="text-sm text-slate-400 dark:text-slate-500 mt-1">{currentQuestion.meaning}</p>
             )}
           </>
         )}
         {currentRound.type === 'listen-to-char' && (
           <button
             onClick={playAudio}
-            className="text-6xl p-4 rounded-full bg-indigo-100 dark:bg-indigo-900/40 hover:bg-indigo-200 dark:hover:bg-indigo-900/60 transition-colors"
+            className="text-6xl p-4 rounded-full bg-indigo-100 dark:bg-indigo-900/40 hover:bg-indigo-200 dark:hover:bg-indigo-900/60 transition-colors press-feedback"
           >
             🔊
           </button>
@@ -247,7 +272,7 @@ export default function RecognitionQuiz({ characters, alphabetName, language, on
 
       {/* Auto-play TTS for listen round */}
       {currentRound.type === 'listen-to-char' && (
-        <p className="text-center text-sm text-gray-400 dark:text-gray-500">Tap to hear again</p>
+        <p className="text-center text-sm text-slate-400 dark:text-slate-500">Tap to hear again</p>
       )}
 
       {/* Options */}
@@ -256,10 +281,10 @@ export default function RecognitionQuiz({ characters, alphabetName, language, on
           const isThis = selected === option.char;
           const isCorrectAnswer = option.char === currentQuestion.char;
 
-          let btnClass = 'bg-white dark:bg-gray-800 border-gray-200 dark:border-gray-700 text-gray-800 dark:text-gray-100';
+          let btnClass = 'bg-white dark:bg-slate-800 border-slate-200 dark:border-slate-700 text-slate-800 dark:text-slate-100';
           if (showResult) {
             if (isCorrectAnswer) {
-              btnClass = 'bg-green-100 dark:bg-green-900/50 border-green-400 dark:border-green-600 text-green-800 dark:text-green-200';
+              btnClass = 'bg-emerald-100 dark:bg-emerald-900/50 border-emerald-400 dark:border-emerald-600 text-emerald-800 dark:text-emerald-200';
             } else if (isThis && !isCorrect) {
               btnClass = 'bg-red-100 dark:bg-red-900/50 border-red-400 dark:border-red-600 text-red-800 dark:text-red-200';
             }
@@ -272,7 +297,7 @@ export default function RecognitionQuiz({ characters, alphabetName, language, on
               key={option.char}
               onClick={() => handleAnswer(option)}
               disabled={showResult}
-              className={`p-4 rounded-xl border-2 font-medium text-xl transition-colors ${btnClass} ${
+              className={`p-4 rounded-xl border-2 font-medium text-xl transition-colors press-feedback ${btnClass} ${
                 !showResult ? 'hover:border-indigo-400 dark:hover:border-indigo-500 active:scale-95' : ''
               }`}
             >
@@ -283,7 +308,7 @@ export default function RecognitionQuiz({ characters, alphabetName, language, on
       </div>
 
       {/* Score */}
-      <p className="text-center text-sm text-gray-500 dark:text-gray-400">
+      <p className="text-center text-sm text-slate-500 dark:text-slate-400">
         Score: {score}/{questionIndex + (showResult ? 1 : 0)}
       </p>
 
