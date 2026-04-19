@@ -13,7 +13,7 @@ export default function LineChart({
 }: LineChartProps) {
   if (data.length === 0) {
     return (
-      <p className="text-sm text-gray-400 dark:text-gray-500 text-center py-8">
+      <p className="text-sm text-slate-400 dark:text-slate-500 text-center py-8">
         No data yet
       </p>
     );
@@ -60,14 +60,15 @@ export default function LineChart({
             x2={chartWidth - padding.right}
             y1={tick.y}
             y2={tick.y}
-            className="stroke-gray-200 dark:stroke-gray-700"
+            className="stroke-slate-200 dark:stroke-slate-700"
             strokeWidth={1}
+            strokeDasharray="4 4"
           />
           <text
             x={padding.left - 6}
             y={tick.y + 4}
             textAnchor="end"
-            className="fill-gray-400 dark:fill-gray-500"
+            className="fill-slate-400 dark:fill-slate-500"
             fontSize={10}
           >
             {tick.value}{unit}
@@ -105,7 +106,7 @@ export default function LineChart({
             x={p.x}
             y={chartHeight - 4}
             textAnchor="middle"
-            className="fill-gray-400 dark:fill-gray-500"
+            className="fill-slate-400 dark:fill-slate-500"
             fontSize={9}
           >
             {p.label}

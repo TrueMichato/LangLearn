@@ -32,6 +32,12 @@ function shortDate(iso: string): string {
   return `${d.getMonth() + 1}/${d.getDate()}`;
 }
 
+function getDifficultyColor(ease: number): string {
+  if (ease < 1.8) return 'bg-red-500';
+  if (ease < 2.2) return 'bg-amber-500';
+  return 'bg-yellow-500';
+}
+
 export default function AnalyticsPage() {
   const [data, setData] = useState<AnalyticsData | null>(null);
 
@@ -53,8 +59,26 @@ export default function AnalyticsPage() {
 
   if (!data) {
     return (
-      <div className="flex items-center justify-center h-64">
-        <p className="text-gray-400 dark:text-gray-500">Loading analytics…</p>
+      <div className="space-y-4 page-enter">
+        <div className="flex items-center gap-3 mb-4">
+          <div className="skeleton h-8 w-8 rounded-full" />
+          <div className="skeleton h-6 w-40" />
+        </div>
+        <div className="grid grid-cols-2 gap-3">
+          {[1, 2, 3, 4].map((i) => (
+            <div key={i} className="bg-white dark:bg-slate-800/90 rounded-2xl shadow-sm border border-slate-200/60 dark:border-white/10 p-4">
+              <div className="skeleton h-6 w-6 mx-auto mb-2 rounded" />
+              <div className="skeleton h-7 w-16 mx-auto mb-1" />
+              <div className="skeleton h-3 w-20 mx-auto" />
+            </div>
+          ))}
+        </div>
+        {[1, 2, 3].map((i) => (
+          <div key={i} className="bg-white dark:bg-slate-800/90 rounded-2xl shadow-sm border border-slate-200/60 dark:border-white/10 p-4">
+            <div className="skeleton h-5 w-40 mb-3" />
+            <div className="skeleton h-[180px] w-full" />
+          </div>
+        ))}
       </div>
     );
   }
@@ -62,17 +86,17 @@ export default function AnalyticsPage() {
   const { retention, forecast, weakest, mastery, studyTime, stats } = data;
 
   return (
-    <div>
+    <div className="page-enter">
       {/* Header */}
       <div className="flex items-center gap-3 mb-4">
         <Link
           to="/"
-          className="p-2 rounded-full hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors"
+          className="p-2 rounded-full hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors"
           aria-label="Back"
         >
           ←
         </Link>
-        <h2 className="text-lg font-semibold text-gray-700 dark:text-gray-200">
+        <h2 className="text-lg font-semibold text-slate-700 dark:text-slate-200">
           📈 SRS Analytics
         </h2>
       </div>
@@ -111,7 +135,6 @@ export default function AnalyticsPage() {
             label: shortDate(f.date),
             value: f.count,
           }))}
-          color="bg-indigo-500"
         />
       </Section>
 
@@ -133,7 +156,7 @@ export default function AnalyticsPage() {
             label: shortDate(s.date),
             value: s.minutes,
           }))}
-          color="bg-green-500"
+          gradient="green"
           unit="m"
         />
       </Section>
@@ -141,34 +164,37 @@ export default function AnalyticsPage() {
       {/* Weakest Words */}
       <Section title="Weakest Words">
         {weakest.length === 0 ? (
-          <p className="text-sm text-gray-400 dark:text-gray-500 text-center py-4">
+          <p className="text-sm text-slate-400 dark:text-slate-500 text-center py-4">
             No reviews yet — add some words to get started!
           </p>
         ) : (
-          <div className="divide-y divide-gray-100 dark:divide-gray-700">
+          <div className="divide-y divide-slate-100 dark:divide-slate-700">
             {weakest.map(({ word, review }) => (
               <div
                 key={review.id}
-                className="flex items-center justify-between py-2"
+                className="flex items-center justify-between py-2 px-1 -mx-1 rounded-lg hover:bg-slate-50 dark:hover:bg-slate-800/50 transition-colors"
               >
-                <div className="min-w-0">
-                  <p className="font-medium text-gray-800 dark:text-gray-100 truncate">
-                    {word.word}
-                    {word.reading && (
-                      <span className="text-xs text-gray-400 ml-1">
-                        ({word.reading})
-                      </span>
-                    )}
-                  </p>
-                  <p className="text-xs text-gray-500 dark:text-gray-400 truncate">
-                    {word.meaning}
-                  </p>
+                <div className="flex items-center gap-2 min-w-0">
+                  <span className={`inline-block w-2 h-2 rounded-full shrink-0 ${getDifficultyColor(review.ease)}`} />
+                  <div className="min-w-0">
+                    <p className="font-medium text-slate-800 dark:text-slate-100 truncate">
+                      {word.word}
+                      {word.reading && (
+                        <span className="text-xs text-slate-400 dark:text-slate-500 ml-1">
+                          ({word.reading})
+                        </span>
+                      )}
+                    </p>
+                    <p className="text-xs text-slate-500 dark:text-slate-400 truncate">
+                      {word.meaning}
+                    </p>
+                  </div>
                 </div>
                 <div className="text-right shrink-0 ml-3">
-                  <p className="text-sm font-semibold text-red-500">
+                  <p className="text-sm font-semibold text-red-500 dark:text-red-400">
                     {review.ease.toFixed(2)}
                   </p>
-                  <p className="text-xs text-gray-400 dark:text-gray-500">
+                  <p className="text-xs text-slate-400 dark:text-slate-500">
                     {review.lastReviewDate
                       ? shortDate(review.lastReviewDate)
                       : 'Never'}
@@ -191,8 +217,8 @@ function Section({
   children: React.ReactNode;
 }) {
   return (
-    <div className="bg-white dark:bg-gray-800 rounded-2xl shadow p-4 mb-4">
-      <h3 className="font-semibold text-gray-700 dark:text-gray-200 mb-3">
+    <div className="bg-white dark:bg-slate-800/90 rounded-2xl shadow-sm border border-slate-200/60 dark:border-white/10 p-4 mb-4">
+      <h3 className="font-semibold text-slate-700 dark:text-slate-200 mb-3">
         {title}
       </h3>
       {children}
@@ -210,12 +236,12 @@ function StatCard({
   value: string | number;
 }) {
   return (
-    <div className="bg-white dark:bg-gray-800 rounded-2xl shadow p-4 text-center">
+    <div className="bg-white dark:bg-slate-800/90 rounded-2xl shadow-sm border border-slate-200/60 dark:border-white/10 p-4 text-center">
       <span className="text-2xl">{icon}</span>
-      <p className="text-2xl font-bold text-gray-800 dark:text-gray-100 mt-1">
+      <p className="text-2xl font-bold text-slate-800 dark:text-slate-100 mt-1 animate-[countUp_0.3s_ease-out]">
         {value}
       </p>
-      <p className="text-xs text-gray-500 dark:text-gray-400">{label}</p>
+      <p className="text-xs text-slate-500 dark:text-slate-400">{label}</p>
     </div>
   );
 }

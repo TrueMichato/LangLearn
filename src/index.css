@@ -1,11 +1,225 @@
 @import "tailwindcss";
 @custom-variant dark (&:where(.dark, .dark *));
 
+/* ── Design Tokens ────────────────────────────────────────── */
 :root {
   --app-font-size: 18px;
+
+  /* Primary palette */
+  --color-primary: 79 70 229;       /* indigo-600 */
+  --color-primary-light: 99 102 241; /* indigo-500 */
+  --color-accent: 139 92 246;       /* violet-500 */
+
+  /* Semantic */
+  --color-success: 34 197 94;       /* green-500 */
+  --color-warning: 245 158 11;      /* amber-500 */
+  --color-danger: 239 68 68;        /* red-500 */
+
+  /* Surfaces */
+  --surface-page: 248 250 252;      /* slate-50 */
+  --surface-card: 255 255 255;
+  --surface-glass: 255 255 255 / 0.8;
+  --border-color: 226 232 240;      /* slate-200 */
 }
 
+.dark {
+  --surface-page: 2 6 23;           /* slate-950 */
+  --surface-card: 30 41 59 / 0.9;   /* slate-800/90 */
+  --surface-glass: 15 23 42 / 0.8;  /* slate-900/80 */
+  --border-color: 255 255 255 / 0.1;
+}
+
+/* ── Keyframe Animations ──────────────────────────────────── */
 @keyframes slideUp {
   from { transform: translateY(1rem); opacity: 0; }
   to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes scaleIn {
+  from { transform: scale(0.9); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+@keyframes pop {
+  0% { transform: scale(0); }
+  70% { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
+
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+@keyframes confetti {
+  0% { transform: translateY(0) rotate(0deg); opacity: 1; }
+  100% { transform: translateY(-80px) rotate(360deg); opacity: 0; }
+}
+
+@keyframes flipX {
+  0% { transform: perspective(600px) rotateY(0deg); }
+  100% { transform: perspective(600px) rotateY(180deg); }
+}
+
+@keyframes pulseGlow {
+  0%, 100% { box-shadow: 0 0 0 0 rgb(var(--color-primary) / 0.4); }
+  50% { box-shadow: 0 0 12px 4px rgb(var(--color-primary) / 0.2); }
+}
+
+@keyframes wiggle {
+  0%, 100% { transform: rotate(0deg); }
+  25% { transform: rotate(-6deg); }
+  75% { transform: rotate(6deg); }
+}
+
+@keyframes floatUp {
+  0% { transform: translateY(0); opacity: 1; }
+  100% { transform: translateY(-40px); opacity: 0; }
+}
+
+@keyframes countUp {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes dismissCountdown {
+  from { width: 100%; }
+  to { width: 0%; }
+}
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  20% { transform: translateX(-6px); }
+  40% { transform: translateX(6px); }
+  60% { transform: translateX(-4px); }
+  80% { transform: translateX(4px); }
+}
+
+@keyframes slideDown {
+  from { transform: translateY(-1rem); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+/* ── Utility Classes ──────────────────────────────────────── */
+
+/* Glass morphism surface */
+.glass {
+  background: rgb(var(--surface-glass));
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+}
+
+/* Shimmer skeleton */
+.skeleton {
+  background: linear-gradient(90deg, #e2e8f0 25%, #f1f5f9 50%, #e2e8f0 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.5s ease-in-out infinite;
+  border-radius: 0.5rem;
+}
+
+.dark .skeleton {
+  background: linear-gradient(90deg, #1e293b 25%, #334155 50%, #1e293b 75%);
+  background-size: 200% 100%;
+}
+
+/* 3D flip container */
+.flip-container {
+  perspective: 800px;
+}
+
+.flip-card {
+  transition: transform 0.4s ease-out;
+  transform-style: preserve-3d;
+}
+
+.flip-card.flipped {
+  transform: rotateY(180deg);
+}
+
+.flip-face {
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+.flip-back {
+  transform: rotateY(180deg);
+}
+
+/* Button press feedback */
+.press-feedback:active {
+  transform: scale(0.97);
+  transition: transform 0.1s ease;
+}
+
+/* Accent glow (dark mode buttons) */
+.dark .glow-primary {
+  box-shadow: 0 0 16px rgb(var(--color-primary) / 0.25);
+}
+
+/* Gradient accent backgrounds */
+.gradient-primary {
+  background: linear-gradient(135deg, #6366f1, #8b5cf6);
+}
+
+.gradient-success {
+  background: linear-gradient(135deg, #22c55e, #10b981);
+}
+
+.gradient-warning {
+  background: linear-gradient(135deg, #f59e0b, #f97316);
+}
+
+.gradient-danger {
+  background: linear-gradient(135deg, #ef4444, #f43f5e);
+}
+
+/* Page entrance animation */
+.page-enter {
+  animation: fadeIn 0.2s ease-out;
+}
+
+/* Shimmer button effect (onboarding "Get Started") */
+.shimmer-btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(255, 255, 255, 0.2) 50%,
+    transparent 100%
+  );
+  animation: shimmerSweep 2.5s ease-in-out infinite;
+}
+
+@keyframes shimmerSweep {
+  0% { left: -100%; }
+  50%, 100% { left: 100%; }
+}
+
+/* Focus ring */
+.focus-ring:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 2px rgb(var(--color-primary) / 0.5), 0 0 0 4px rgb(var(--color-primary) / 0.15);
+  border-radius: inherit;
+}
+
+/* Scroll-triggered fade-in (applied via JS IntersectionObserver) */
+.reveal {
+  opacity: 0;
+  transform: translateY(12px);
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
 }
