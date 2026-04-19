@@ -1,0 +1,34 @@
+{
+  "id": "motion-verbs-vocab",
+  "words": [
+    { "word": "идти", "reading": "idti", "meaning": "to go on foot (unidirectional) — one specific trip in one direction", "example": "Я иду в школу.", "exampleMeaning": "I am going to school (right now, on foot)." },
+    { "word": "ходить", "reading": "khodit'", "meaning": "to go on foot (multidirectional) — repeated trips or round trips", "example": "Я хожу в школу каждый день.", "exampleMeaning": "I go to school every day." },
+    { "word": "ехать", "reading": "yekhat'", "meaning": "to go by vehicle (unidirectional) — one specific trip", "example": "Мы едем на работу на автобусе.", "exampleMeaning": "We are going to work by bus (right now)." },
+    { "word": "ездить", "reading": "yezdit'", "meaning": "to go by vehicle (multidirectional) — repeated trips", "example": "Она ездит в Москву каждый месяц.", "exampleMeaning": "She goes to Moscow every month." },
+    { "word": "бежать", "reading": "bezhat'", "meaning": "to run (unidirectional) — running in one direction right now", "example": "Мальчик бежит к маме.", "exampleMeaning": "The boy is running to his mom." },
+    { "word": "бегать", "reading": "begat'", "meaning": "to run (multidirectional) — running around, habitual running", "example": "Я бегаю в парке каждое утро.", "exampleMeaning": "I run in the park every morning." },
+    { "word": "лететь", "reading": "letet'", "meaning": "to fly (unidirectional) — flying in one direction right now", "example": "Самолёт летит в Париж.", "exampleMeaning": "The plane is flying to Paris." },
+    { "word": "летать", "reading": "letat'", "meaning": "to fly (multidirectional) — flying around, repeated flights", "example": "Птицы летают над озером.", "exampleMeaning": "Birds fly over the lake." },
+    { "word": "плыть", "reading": "plyt'", "meaning": "to swim/sail (unidirectional) — swimming in one direction", "example": "Лодка плывёт по реке.", "exampleMeaning": "The boat is sailing along the river." },
+    { "word": "плавать", "reading": "plavat'", "meaning": "to swim/sail (multidirectional) — swimming around, habitual", "example": "Дети плавают в бассейне каждую субботу.", "exampleMeaning": "The children swim in the pool every Saturday." },
+    { "word": "нести", "reading": "nesti", "meaning": "to carry (unidirectional, on foot) — carrying something somewhere right now", "example": "Он несёт тяжёлую сумку.", "exampleMeaning": "He is carrying a heavy bag." },
+    { "word": "носить", "reading": "nosit'", "meaning": "to carry (multidirectional) — carrying repeatedly or wearing", "example": "Она всегда носит очки.", "exampleMeaning": "She always wears glasses." },
+    { "word": "вести", "reading": "vesti", "meaning": "to lead/drive (unidirectional) — leading someone somewhere right now", "example": "Мама ведёт ребёнка в садик.", "exampleMeaning": "Mom is taking the child to kindergarten." },
+    { "word": "водить", "reading": "vodit'", "meaning": "to lead/drive (multidirectional) — leading repeatedly, driving (a car)", "example": "Он хорошо водит машину.", "exampleMeaning": "He drives a car well." },
+    { "word": "везти", "reading": "vezti", "meaning": "to transport (unidirectional) — transporting somewhere right now", "example": "Грузовик везёт товары в магазин.", "exampleMeaning": "The truck is transporting goods to the store." },
+    { "word": "возить", "reading": "vozit'", "meaning": "to transport (multidirectional) — transporting repeatedly", "example": "Эта компания возит грузы по всей стране.", "exampleMeaning": "This company transports cargo across the whole country." }
+  ],
+  "exercises": [
+    { "type": "match", "pairs": 5 },
+    { "type": "fill-blank", "items": [
+      { "sentence": "Я ___ в школу каждый день. (go on foot, repeated)", "answer": "хожу", "hint": "multidirectional, on foot" },
+      { "sentence": "Самолёт ___ в Москву. (fly, right now, one direction)", "answer": "летит", "hint": "unidirectional, flying" },
+      { "sentence": "Она хорошо ___ машину. (drives, habitual)", "answer": "водит", "hint": "multidirectional, to drive" }
+    ]},
+    { "type": "multiple-choice", "items": [
+      { "question": "Which verb means 'going on foot right now in one direction'?", "options": ["идти", "ходить", "ехать", "ездить"], "answer": 0 },
+      { "question": "'Я бегаю в парке каждое утро' — why use 'бегать' here?", "options": ["It's a repeated/habitual action", "It's happening right now", "It's a one-time event", "It describes a past action"], "answer": 0 },
+      { "question": "What is the multidirectional pair of 'везти'?", "options": ["возить", "водить", "носить", "ездить"], "answer": 0 }
+    ]}
+  ]
+}

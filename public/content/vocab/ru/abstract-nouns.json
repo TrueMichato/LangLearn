@@ -1,0 +1,34 @@
+{
+  "id": "abstract-nouns",
+  "words": [
+    { "word": "счастье", "reading": "schast'ye", "meaning": "happiness", "example": "Счастье — это когда тебя понимают.", "exampleMeaning": "Happiness is when people understand you." },
+    { "word": "свобода", "reading": "svoboda", "meaning": "freedom", "example": "Свобода слова — важное право.", "exampleMeaning": "Freedom of speech is an important right." },
+    { "word": "правда", "reading": "pravda", "meaning": "truth", "example": "Скажи мне правду.", "exampleMeaning": "Tell me the truth." },
+    { "word": "ложь", "reading": "lozh'", "meaning": "lie / falsehood", "example": "Он не терпит лжи.", "exampleMeaning": "He cannot stand lies." },
+    { "word": "надежда", "reading": "nadezhda", "meaning": "hope", "example": "Надежда умирает последней.", "exampleMeaning": "Hope dies last. (Russian proverb)" },
+    { "word": "память", "reading": "pamyat'", "meaning": "memory", "example": "У неё отличная память.", "exampleMeaning": "She has an excellent memory." },
+    { "word": "мечта", "reading": "mechta", "meaning": "dream (aspiration)", "example": "Моя мечта — путешествовать по миру.", "exampleMeaning": "My dream is to travel the world." },
+    { "word": "опыт", "reading": "opyt", "meaning": "experience", "example": "У него большой опыт работы.", "exampleMeaning": "He has a lot of work experience." },
+    { "word": "знание", "reading": "znaniye", "meaning": "knowledge", "example": "Знание — сила.", "exampleMeaning": "Knowledge is power." },
+    { "word": "ошибка", "reading": "oshibka", "meaning": "mistake / error", "example": "Не бойтесь делать ошибки.", "exampleMeaning": "Don't be afraid to make mistakes." },
+    { "word": "победа", "reading": "pobeda", "meaning": "victory", "example": "Это была великая победа.", "exampleMeaning": "It was a great victory." },
+    { "word": "дружба", "reading": "druzhba", "meaning": "friendship", "example": "Настоящая дружба — это редкость.", "exampleMeaning": "True friendship is rare." },
+    { "word": "любовь", "reading": "lyubov'", "meaning": "love", "example": "Любовь — самое сильное чувство.", "exampleMeaning": "Love is the strongest feeling." },
+    { "word": "страх", "reading": "strakh", "meaning": "fear", "example": "Он преодолел свой страх высоты.", "exampleMeaning": "He overcame his fear of heights." },
+    { "word": "удача", "reading": "udacha", "meaning": "luck / good fortune", "example": "Желаю тебе удачи!", "exampleMeaning": "I wish you good luck!" },
+    { "word": "совесть", "reading": "sovest'", "meaning": "conscience", "example": "У него чистая совесть.", "exampleMeaning": "He has a clear conscience." }
+  ],
+  "exercises": [
+    { "type": "match", "pairs": 5 },
+    { "type": "fill-blank", "items": [
+      { "sentence": "___ — сила. (Knowledge)", "answer": "Знание", "hint": "knowledge" },
+      { "sentence": "Скажи мне ___. (the truth)", "answer": "правду", "hint": "truth (accusative)" },
+      { "sentence": "Желаю тебе ___! (good luck)", "answer": "удачи", "hint": "luck (genitive)" }
+    ]},
+    { "type": "multiple-choice", "items": [
+      { "question": "What does 'мечта' mean?", "options": ["Dream (aspiration)", "Memory", "Hope", "Happiness"], "answer": 0 },
+      { "question": "What is the Russian proverb 'Надежда умирает последней'?", "options": ["Hope dies last", "Knowledge is power", "Love conquers all", "Truth will prevail"], "answer": 0 },
+      { "question": "What does 'совесть' mean?", "options": ["Conscience", "Consciousness", "Freedom", "Friendship"], "answer": 0 }
+    ]}
+  ]
+}

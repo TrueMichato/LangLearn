@@ -1,0 +1,34 @@
+{
+  "id": "slang-colloquial",
+  "words": [
+    { "word": "ладно", "reading": "ladno", "meaning": "okay / alright / fine", "example": "Ладно, я согласен.", "exampleMeaning": "Okay, I agree." },
+    { "word": "блин", "reading": "blin", "meaning": "darn / shoot (mild expletive, lit. 'pancake')", "example": "Блин, я забыл ключи!", "exampleMeaning": "Darn, I forgot my keys!" },
+    { "word": "типа", "reading": "tipa", "meaning": "like / sort of (filler word)", "example": "Он типа не понял.", "exampleMeaning": "He, like, didn't understand." },
+    { "word": "круто", "reading": "kruto", "meaning": "cool / awesome", "example": "Это так круто!", "exampleMeaning": "That's so cool!" },
+    { "word": "отлично", "reading": "otlichno", "meaning": "excellent / great", "example": "Отлично, встретимся в семь!", "exampleMeaning": "Great, let's meet at seven!" },
+    { "word": "ужас", "reading": "uzhas", "meaning": "terrible / horror (as exclamation)", "example": "Какой ужас, что случилось?", "exampleMeaning": "How terrible, what happened?" },
+    { "word": "ничего себе", "reading": "nichego sebe", "meaning": "wow / no way (surprise)", "example": "Ничего себе, ты это сам сделал?", "exampleMeaning": "No way, you did this yourself?" },
+    { "word": "давай", "reading": "davay", "meaning": "let's / come on / go ahead", "example": "Давай сходим в кафе!", "exampleMeaning": "Let's go to a café!" },
+    { "word": "кайф", "reading": "kayf", "meaning": "pleasure / buzz / enjoyment (slang)", "example": "Какой кайф лежать на пляже!", "exampleMeaning": "What a pleasure to lie on the beach!" },
+    { "word": "прикольно", "reading": "prikol'no", "meaning": "cool / fun / amusing", "example": "Прикольно, расскажи ещё!", "exampleMeaning": "Cool, tell me more!" },
+    { "word": "зависнуть", "reading": "zavisnut'", "meaning": "to hang out / to freeze up (computer)", "example": "Давай зависнем у меня дома.", "exampleMeaning": "Let's hang out at my place." },
+    { "word": "разобраться", "reading": "razobrat'sya", "meaning": "to figure out / to sort out", "example": "Я разберусь с этой проблемой.", "exampleMeaning": "I'll figure out this problem." },
+    { "word": "забить", "reading": "zabit'", "meaning": "to not care about / to blow off (slang)", "example": "Забей, это не важно.", "exampleMeaning": "Forget it, it's not important." },
+    { "word": "подкатить", "reading": "podkatit'", "meaning": "to hit on someone / to make a move (slang)", "example": "Он пытался к ней подкатить на вечеринке.", "exampleMeaning": "He tried to hit on her at the party." },
+    { "word": "капец", "reading": "kapets", "meaning": "wow / disaster (slang exclamation)", "example": "Капец, я опоздал на поезд!", "exampleMeaning": "Oh no, I missed the train!" },
+    { "word": "нормально", "reading": "normal'no", "meaning": "fine / okay / normal (casual response)", "example": "— Как дела? — Нормально.", "exampleMeaning": "— How are you? — Fine." }
+  ],
+  "exercises": [
+    { "type": "match", "pairs": 5 },
+    { "type": "fill-blank", "items": [
+      { "sentence": "___, я забыл телефон! (Darn)", "answer": "Блин", "hint": "mild expletive" },
+      { "sentence": "___ сходим в кино! (Let's)", "answer": "Давай", "hint": "let's / come on" },
+      { "sentence": "— Как дела? — ___. (Fine, casual)", "answer": "Нормально", "hint": "fine / normal" }
+    ]},
+    { "type": "multiple-choice", "items": [
+      { "question": "What does 'ничего себе' express?", "options": ["Surprise (wow / no way)", "Anger", "Sadness", "Agreement"], "answer": 0 },
+      { "question": "What does 'забей' mean in slang?", "options": ["Forget it / don't worry about it", "Remember it", "Write it down", "Say it again"], "answer": 0 },
+      { "question": "What does 'круто' mean?", "options": ["Cool / awesome", "Terrible", "Weird", "Boring"], "answer": 0 }
+    ]}
+  ]
+}

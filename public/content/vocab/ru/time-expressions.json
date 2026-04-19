@@ -1,0 +1,34 @@
+{
+  "id": "time-expressions",
+  "words": [
+    { "word": "когда", "reading": "kogda", "meaning": "when", "example": "Когда ты придёшь?", "exampleMeaning": "When will you come?" },
+    { "word": "пока", "reading": "poka", "meaning": "while / yet / for now", "example": "Пока мы ждали, начался дождь.", "exampleMeaning": "While we were waiting, it started to rain." },
+    { "word": "после того как", "reading": "posle togo kak", "meaning": "after (conjunction)", "example": "После того как он ушёл, мы продолжили работу.", "exampleMeaning": "After he left, we continued working." },
+    { "word": "перед тем как", "reading": "pered tem kak", "meaning": "before (conjunction)", "example": "Перед тем как уйти, он попрощался со всеми.", "exampleMeaning": "Before leaving, he said goodbye to everyone." },
+    { "word": "в то время как", "reading": "v to vremya kak", "meaning": "while / whereas", "example": "Она работала, в то время как он отдыхал.", "exampleMeaning": "She was working, while he was resting." },
+    { "word": "через", "reading": "cherez", "meaning": "in (after a period of time) / through", "example": "Я вернусь через час.", "exampleMeaning": "I'll be back in an hour." },
+    { "word": "назад", "reading": "nazad", "meaning": "ago", "example": "Мы встретились два года назад.", "exampleMeaning": "We met two years ago." },
+    { "word": "с тех пор", "reading": "s tekh por", "meaning": "since then", "example": "Он уехал в 2020 году, и с тех пор мы не виделись.", "exampleMeaning": "He left in 2020, and we haven't seen each other since then." },
+    { "word": "до сих пор", "reading": "do sikh por", "meaning": "until now / still", "example": "Я до сих пор помню этот день.", "exampleMeaning": "I still remember that day." },
+    { "word": "тем временем", "reading": "tem vremenem", "meaning": "meanwhile", "example": "Мама готовила обед. Тем временем дети играли во дворе.", "exampleMeaning": "Mom was making lunch. Meanwhile the children were playing in the yard." },
+    { "word": "скоро", "reading": "skoro", "meaning": "soon", "example": "Скоро наступит лето.", "exampleMeaning": "Summer will come soon." },
+    { "word": "давно", "reading": "davno", "meaning": "long ago / for a long time", "example": "Мы давно не виделись!", "exampleMeaning": "We haven't seen each other for a long time!" },
+    { "word": "наконец", "reading": "nakonets", "meaning": "finally / at last", "example": "Наконец мы добрались до дома.", "exampleMeaning": "We finally made it home." },
+    { "word": "вдруг", "reading": "vdrug", "meaning": "suddenly", "example": "Вдруг зазвонил телефон.", "exampleMeaning": "Suddenly the phone rang." },
+    { "word": "однажды", "reading": "odnazhdy", "meaning": "once / one day", "example": "Однажды он решил поехать в Россию.", "exampleMeaning": "One day he decided to go to Russia." },
+    { "word": "ежедневно", "reading": "yezhednevno", "meaning": "daily", "example": "Он ежедневно занимается спортом.", "exampleMeaning": "He exercises daily." }
+  ],
+  "exercises": [
+    { "type": "match", "pairs": 5 },
+    { "type": "fill-blank", "items": [
+      { "sentence": "Я вернусь ___ два часа. (in, after a period)", "answer": "через", "hint": "in (time)" },
+      { "sentence": "___ зазвонил телефон. (Suddenly)", "answer": "Вдруг", "hint": "suddenly" },
+      { "sentence": "Мы встретились три года ___. (ago)", "answer": "назад", "hint": "ago" }
+    ]},
+    { "type": "multiple-choice", "items": [
+      { "question": "What does 'до сих пор' mean?", "options": ["Until now / still", "Since then", "Long ago", "Meanwhile"], "answer": 0 },
+      { "question": "How do you say 'I'll be back in an hour'?", "options": ["Я вернусь через час", "Я вернусь час назад", "Я вернусь когда час", "Я вернусь пока час"], "answer": 0 },
+      { "question": "What does 'однажды' mean?", "options": ["Once / one day", "Daily", "Finally", "Suddenly"], "answer": 0 }
+    ]}
+  ]
+}
