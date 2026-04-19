@@ -218,4 +218,116 @@ export const RU_NOUNS: RuNoun[] = [
       prepositional: { singular: 'пути', plural: 'путях' },
     },
   },
+  // Irregular plural (дети)
+  {
+    nominative: 'ребёнок',
+    meaning: 'child',
+    gender: 'masculine',
+    declensions: {
+      nominative: { singular: 'ребёнок', plural: 'дети' },
+      genitive: { singular: 'ребёнка', plural: 'детей' },
+      dative: { singular: 'ребёнку', plural: 'детям' },
+      accusative: { singular: 'ребёнка', plural: 'детей' },
+      instrumental: { singular: 'ребёнком', plural: 'детьми' },
+      prepositional: { singular: 'ребёнке', plural: 'детях' },
+    },
+  },
+  // Irregular plural (люди)
+  {
+    nominative: 'человек',
+    meaning: 'person',
+    gender: 'masculine',
+    declensions: {
+      nominative: { singular: 'человек', plural: 'люди' },
+      genitive: { singular: 'человека', plural: 'людей' },
+      dative: { singular: 'человеку', plural: 'людям' },
+      accusative: { singular: 'человека', plural: 'людей' },
+      instrumental: { singular: 'человеком', plural: 'людьми' },
+      prepositional: { singular: 'человеке', plural: 'людях' },
+    },
+  },
+  // Feminine, stress shift
+  {
+    nominative: 'рука',
+    meaning: 'hand / arm',
+    gender: 'feminine',
+    declensions: {
+      nominative: { singular: 'рука', plural: 'руки' },
+      genitive: { singular: 'руки', plural: 'рук' },
+      dative: { singular: 'руке', plural: 'рукам' },
+      accusative: { singular: 'руку', plural: 'руки' },
+      instrumental: { singular: 'рукой', plural: 'руками' },
+      prepositional: { singular: 'руке', plural: 'руках' },
+    },
+  },
+  // Feminine, stress shift
+  {
+    nominative: 'нога',
+    meaning: 'leg / foot',
+    gender: 'feminine',
+    declensions: {
+      nominative: { singular: 'нога', plural: 'ноги' },
+      genitive: { singular: 'ноги', plural: 'ног' },
+      dative: { singular: 'ноге', plural: 'ногам' },
+      accusative: { singular: 'ногу', plural: 'ноги' },
+      instrumental: { singular: 'ногой', plural: 'ногами' },
+      prepositional: { singular: 'ноге', plural: 'ногах' },
+    },
+  },
+  // Irregular genitive plural (глаз)
+  {
+    nominative: 'глаз',
+    meaning: 'eye',
+    gender: 'masculine',
+    declensions: {
+      nominative: { singular: 'глаз', plural: 'глаза' },
+      genitive: { singular: 'глаза', plural: 'глаз' },
+      dative: { singular: 'глазу', plural: 'глазам' },
+      accusative: { singular: 'глаз', plural: 'глаза' },
+      instrumental: { singular: 'глазом', plural: 'глазами' },
+      prepositional: { singular: 'глазе', plural: 'глазах' },
+    },
+  },
+  // Irregular plural (братья)
+  {
+    nominative: 'брат',
+    meaning: 'brother',
+    gender: 'masculine',
+    declensions: {
+      nominative: { singular: 'брат', plural: 'братья' },
+      genitive: { singular: 'брата', plural: 'братьев' },
+      dative: { singular: 'брату', plural: 'братьям' },
+      accusative: { singular: 'брата', plural: 'братьев' },
+      instrumental: { singular: 'братом', plural: 'братьями' },
+      prepositional: { singular: 'брате', plural: 'братьях' },
+    },
+  },
+  // Neuter, irregular plural (деревья)
+  {
+    nominative: 'дерево',
+    meaning: 'tree',
+    gender: 'neuter',
+    declensions: {
+      nominative: { singular: 'дерево', plural: 'деревья' },
+      genitive: { singular: 'дерева', plural: 'деревьев' },
+      dative: { singular: 'дереву', plural: 'деревьям' },
+      accusative: { singular: 'дерево', plural: 'деревья' },
+      instrumental: { singular: 'деревом', plural: 'деревьями' },
+      prepositional: { singular: 'дереве', plural: 'деревьях' },
+    },
+  },
+  // Feminine, stress shift + plural stem change
+  {
+    nominative: 'сестра',
+    meaning: 'sister',
+    gender: 'feminine',
+    declensions: {
+      nominative: { singular: 'сестра', plural: 'сёстры' },
+      genitive: { singular: 'сестры', plural: 'сестёр' },
+      dative: { singular: 'сестре', plural: 'сёстрам' },
+      accusative: { singular: 'сестру', plural: 'сестёр' },
+      instrumental: { singular: 'сестрой', plural: 'сёстрами' },
+      prepositional: { singular: 'сестре', plural: 'сёстрах' },
+    },
+  },
 ];
