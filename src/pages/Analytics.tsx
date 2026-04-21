@@ -45,7 +45,7 @@ export default function AnalyticsPage() {
 
   useEffect(() => {
     async function load() {
-      const [retention, forecast, weakest, mastery, studyTime, stats] =
+      const [retention, forecast, weakest, mastery, studyTime, stats, activityBalance] =
         await Promise.all([
           getRetentionData(30),
           getReviewForecast(7),
@@ -53,8 +53,9 @@ export default function AnalyticsPage() {
           getMasteryDistribution(),
           getStudyTimeTrend(14),
           getOverallStats(),
+          getActivityBalance(30),
         ]);
-      setData({ retention, forecast, weakest, mastery, studyTime, stats });
+      setData({ retention, forecast, weakest, mastery, studyTime, stats, activityBalance });
     }
     load();
   }, []);
@@ -85,7 +86,7 @@ export default function AnalyticsPage() {
     );
   }
 
-  const { retention, forecast, weakest, mastery, studyTime, stats } = data;
+  const { retention, forecast, weakest, mastery, studyTime, stats, activityBalance } = data;
 
   return (
     <div className="page-enter">
