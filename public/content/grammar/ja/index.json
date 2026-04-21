@@ -1076,5 +1076,80 @@
     "order": 164,
     "group": "Other Grammar",
     "source": "tofugu"
+  },
+  {
+    "id": "taekim-state-of-being",
+    "title": "Declaring with だ — The State-of-Being (Tae Kim)",
+    "order": 165
+  },
+  {
+    "id": "taekim-particles-intro",
+    "title": "Core Particle Foundations — は, も, が (Tae Kim)",
+    "order": 166
+  },
+  {
+    "id": "taekim-adjectives-conjugation",
+    "title": "Adjective Conjugation — い vs な (Tae Kim)",
+    "order": 167
+  },
+  {
+    "id": "taekim-verb-classification",
+    "title": "Understanding Verb Types — る, う, Irregular (Tae Kim)",
+    "order": 168
+  },
+  {
+    "id": "taekim-negative-verbs",
+    "title": "Negative Verb Conjugation — ない Form (Tae Kim)",
+    "order": 169
+  },
+  {
+    "id": "taekim-past-verbs",
+    "title": "Past Tense Verbs — た Form (Tae Kim)",
+    "order": 170
+  },
+  {
+    "id": "taekim-particles-advanced",
+    "title": "Particle Deep Dive — を, に, で, へ, から, まで, の (Tae Kim)",
+    "order": 171
+  },
+  {
+    "id": "taekim-polite-form",
+    "title": "Polite Speech — ます / です (Tae Kim)",
+    "order": 172
+  },
+  {
+    "id": "taekim-addressing",
+    "title": "Names, Titles & Pronouns (Tae Kim)",
+    "order": 173
+  },
+  {
+    "id": "taekim-question-words",
+    "title": "Questions & Interrogatives (Tae Kim)",
+    "order": 174
+  },
+  {
+    "id": "taekim-compound-sentences",
+    "title": "Connecting Sentences (て-form, から, ので, けど, し, のに)",
+    "order": 165
+  },
+  {
+    "id": "taekim-desire-volition",
+    "title": "Expressing Wants & Intentions (たい, ほしい, よう, つもり)",
+    "order": 166
+  },
+  {
+    "id": "taekim-relative-clauses-practical",
+    "title": "Noun Modification with Clauses (Relative Clauses)",
+    "order": 167
+  },
+  {
+    "id": "taekim-giving-receiving-depth",
+    "title": "Giving & Receiving Actions (てあげる, てくれる, てもらう)",
+    "order": 168
+  },
+  {
+    "id": "taekim-formal-casual-spectrum",
+    "title": "Speech Level Overview (Casual ↔ Formal)",
+    "order": 169
   }
 ]
