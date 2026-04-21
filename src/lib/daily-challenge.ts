@@ -1,4 +1,5 @@
 import { db } from '../db/schema';
+import { getLessonProgress } from '../db/lessons';
 import { getAlphabetsForLanguage } from '../data/alphabets';
 import type { Character } from '../data/alphabets';
 
@@ -128,11 +129,18 @@ async function generateVocabQuestions(
     if (questions.length >= count) return questions.slice(0, count);
   }
 
-  // Fall back to vocab lesson files
+  // Fall back to vocab lesson files (only completed lessons)
   const vocabIndex = await fetchVocabIndex(lang);
   if (vocabIndex.length === 0) return questions;
 
-  const selectedLessons = pickRandom(vocabIndex, Math.min(3, vocabIndex.length), rand);
+  const progress = await getLessonProgress(lang);
+  const completedVocabIds = new Set(
+    progress.filter((p) => p.completed && p.lessonId.startsWith('vocab/')).map((p) => p.lessonId.replace('vocab/', ''))
+  );
+  const completedLessons = vocabIndex.filter((entry) => completedVocabIds.has(entry.id));
+  if (completedLessons.length === 0) return questions;
+
+  const selectedLessons = pickRandom(completedLessons, Math.min(3, completedLessons.length), rand);
 
   const allWords: VocabWord[] = [];
   for (const entry of selectedLessons) {
@@ -178,7 +186,14 @@ async function generateGrammarQuestions(
     const grammarIndex: { id: string }[] = await res.json();
     if (grammarIndex.length === 0) return [];
 
-    const selectedLessons = pickRandom(grammarIndex, Math.min(4, grammarIndex.length), rand);
+    const progress = await getLessonProgress(lang);
+    const completedGrammarIds = new Set(
+      progress.filter((p) => p.completed && p.lessonId.startsWith('grammar/')).map((p) => p.lessonId.replace('grammar/', ''))
+    );
+    const completedLessons = grammarIndex.filter((entry) => completedGrammarIds.has(entry.id));
+    if (completedLessons.length === 0) return [];
+
+    const selectedLessons = pickRandom(completedLessons, Math.min(4, completedLessons.length), rand);
     const allQuizzes: GrammarQuiz[] = [];
 
     for (const entry of selectedLessons) {
