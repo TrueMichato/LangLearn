@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { useSettingsStore } from '../stores/settingsStore';
 import { getAlphabetsForLanguage } from '../data/alphabets';
 import { getLanguageLabel } from '../lib/languages';
+import ExternalResources from '../components/common/ExternalResources';
 
 interface ActivityCard {
   to: string;
@@ -184,6 +185,8 @@ export default function LearnPage() {
           </React.Fragment>
         ))}
       </div>
+
+      <ExternalResources />
     </div>
   );
 }
