@@ -48,5 +48,15 @@
   { "id": "airport-hotel", "title": "Airport & Hotel", "order": 47, "wordCount": 16, "level": "intermediate" },
   { "id": "train-bus", "title": "Public Transportation", "order": 48, "wordCount": 16, "level": "intermediate" },
   { "id": "doctor-pharmacy", "title": "Medical & Pharmacy", "order": 49, "wordCount": 16, "level": "intermediate" },
-  { "id": "post-office-bank", "title": "Post Office & Bank", "order": 50, "wordCount": 16, "level": "intermediate" }
+  { "id": "post-office-bank", "title": "Post Office & Bank", "order": 50, "wordCount": 16, "level": "intermediate" },
+  { "id": "emotions-advanced", "title": "Nuanced Emotions", "order": 51, "wordCount": 16, "level": "intermediate" },
+  { "id": "onomatopoeia", "title": "Japanese Onomatopoeia", "order": 52, "wordCount": 16, "level": "intermediate" },
+  { "id": "compound-verbs-vocab", "title": "Common Compound Verbs", "order": 53, "wordCount": 16, "level": "intermediate" },
+  { "id": "formal-expressions", "title": "Formal Set Expressions", "order": 54, "wordCount": 16, "level": "intermediate" },
+  { "id": "internet-slang", "title": "Modern Casual Japanese", "order": 55, "wordCount": 16, "level": "intermediate" },
+  { "id": "n3-verbs", "title": "JLPT N3 Verbs", "order": 56, "wordCount": 16, "level": "advanced" },
+  { "id": "n3-nouns", "title": "JLPT N3 Abstract Nouns", "order": 57, "wordCount": 16, "level": "advanced" },
+  { "id": "idioms-proverbs", "title": "Japanese Idioms & Proverbs", "order": 58, "wordCount": 16, "level": "advanced" },
+  { "id": "news-vocabulary", "title": "NHK News Vocabulary", "order": 59, "wordCount": 16, "level": "advanced" },
+  { "id": "literary-expressions", "title": "Written & Literary Vocabulary", "order": 60, "wordCount": 16, "level": "advanced" }
 ]
