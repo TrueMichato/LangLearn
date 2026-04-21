@@ -1,5 +1,6 @@
 import { useState, useEffect, useRef, useCallback, type ReactNode } from 'react';
 import ReactMarkdown from 'react-markdown';
+import remarkGfm from 'remark-gfm';
 import GrammarQuiz from './GrammarQuiz';
 import { markLessonComplete, incrementAttempts } from '../../db/lessons';
 import { addWord } from '../../db/words';
@@ -242,6 +243,7 @@ export default function LessonView({ lang, lessonId, onBack, lessons, onNavigate
           seg.type === 'md' ? (
             <ReactMarkdown
               key={i}
+              remarkPlugins={[remarkGfm]}
               components={{
                 li: ({ children, ...props }) => {
                   const parsed = parseExampleSentence(children);

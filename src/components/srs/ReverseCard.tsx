@@ -25,14 +25,13 @@ export default function ReverseCard({ word, isFlipped, onFlip }: ReverseCardProp
         {word.meaning}
       </p>
 
-      {word.contextSentence && (
-        <p className="text-sm text-gray-500 dark:text-gray-400 mb-3 italic text-center">
-          "{word.contextSentence}"
-        </p>
-      )}
-
       {isFlipped ? (
         <div className="mt-2 text-center">
+          {word.contextSentence && (
+            <p className="text-sm text-gray-500 dark:text-gray-400 mb-3 italic text-center">
+              "{word.contextSentence}"
+            </p>
+          )}
           <p className="text-3xl font-bold text-green-700 dark:text-green-400 mb-1">
             {word.word}
           </p>

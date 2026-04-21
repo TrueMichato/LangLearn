@@ -139,6 +139,17 @@ export default function VocabLessonView({ lang, lessonId, onBack }: Props) {
     );
   }
 
+  const exercises: VocabExercise[] = useMemo(() => {
+    if (!lesson) return [];
+    return [
+      ...lesson.exercises,
+      ...(lesson.words.length >= 4
+        ? [generateTypingExercise(lesson.words), generateListeningExercise(lesson.words)]
+        : []),
+    ];
+  }, [lesson]);
+  const currentExercise: VocabExercise | undefined = exercises[exerciseIdx];
+
   if (!lesson) {
     return (
       <div className="text-center py-8">
@@ -149,14 +160,6 @@ export default function VocabLessonView({ lang, lessonId, onBack }: Props) {
       </div>
     );
   }
-
-  const exercises: VocabExercise[] = useMemo(() => [
-    ...lesson.exercises,
-    ...(lesson.words.length >= 4
-      ? [generateTypingExercise(lesson.words), generateListeningExercise(lesson.words)]
-      : []),
-  ], [lesson]);
-  const currentExercise: VocabExercise | undefined = exercises[exerciseIdx];
 
   function handleExerciseComplete(correct: number) {
     const ex = exercises[exerciseIdx];
