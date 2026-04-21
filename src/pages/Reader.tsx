@@ -17,6 +17,7 @@ import ComprehensionIndicator from '../components/reader/ComprehensionIndicator'
 import { getKnownWordSet } from '../lib/text-analysis';
 import { parseWithIchiMoe, getIchiMoeUrl, type IchiMoeWord } from '../lib/ichimoe';
 import WordDefinitions from '../components/reader/WordDefinitions';
+import { parseSrt, srtToText } from '../lib/srt-parser';
 
 type Tab = 'import' | 'library';
 
@@ -323,13 +324,40 @@ export default function ReaderPage() {
           rows={8}
           className="w-full px-4 py-3 border border-slate-300 dark:border-slate-600 rounded-xl focus:outline-none focus:ring-2 focus:ring-indigo-300 dark:focus:ring-indigo-700 resize-none bg-white dark:bg-slate-800 dark:text-slate-100"
         />
-        <button
-          onClick={handleImport}
-          disabled={!text.trim()}
-          className="w-full bg-indigo-600 text-white py-3 rounded-xl font-semibold hover:bg-indigo-700 transition-colors disabled:opacity-40 press-feedback"
-        >
-          Start Reading
-        </button>
+        <div className="flex gap-2">
+          <button
+            onClick={handleImport}
+            disabled={!text.trim()}
+            className="flex-1 bg-indigo-600 text-white py-3 rounded-xl font-semibold hover:bg-indigo-700 transition-colors disabled:opacity-40 press-feedback"
+          >
+            Start Reading
+          </button>
+          <label className="flex items-center justify-center gap-1.5 px-4 py-3 bg-white dark:bg-slate-800 border border-slate-300 dark:border-slate-600 rounded-xl font-medium text-slate-700 dark:text-slate-200 hover:bg-slate-50 dark:hover:bg-slate-700 transition-colors cursor-pointer press-feedback min-h-[44px]">
+            <span>📄</span>
+            <span className="text-sm">.srt</span>
+            <input
+              type="file"
+              accept=".srt"
+              className="hidden"
+              onChange={(e) => {
+                const file = e.target.files?.[0];
+                if (!file) return;
+                const reader = new FileReader();
+                reader.onload = (ev) => {
+                  const content = ev.target?.result;
+                  if (typeof content !== 'string') return;
+                  const segments = parseSrt(content);
+                  if (segments.length === 0) return;
+                  const combined = srtToText(segments);
+                  setText(combined);
+                  setTitle(file.name.replace(/\.srt$/i, ''));
+                };
+                reader.readAsText(file);
+                e.target.value = '';
+              }}
+            />
+          </label>
+        </div>
       </div>
       )}
     </div>

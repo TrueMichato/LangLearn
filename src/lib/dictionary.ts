@@ -62,6 +62,40 @@ async function lookupGeneric(
   }
 }
 
+async function lookupGlosbe(
+  word: string,
+  sourceLang: string,
+): Promise<DictionaryResult | null> {
+  const { signal, clear } = withTimeout(5000);
+  try {
+    const res = await fetch(
+      `https://glosbe.com/gapi/translate?from=${encodeURIComponent(sourceLang)}&dest=en&format=json&phrase=${encodeURIComponent(word)}`,
+      { signal },
+    );
+    if (!res.ok) return null;
+    const json = await res.json();
+    const meanings: string[] = [];
+    const tuc = json?.tuc;
+    if (Array.isArray(tuc)) {
+      for (const entry of tuc.slice(0, 3)) {
+        const phrase = entry?.phrase?.text;
+        if (phrase) meanings.push(phrase);
+        const meaning = entry?.meanings?.[0]?.text;
+        if (!phrase && meaning) {
+          const stripped = meaning.replace(/<[^>]*>/g, '');
+          if (stripped) meanings.push(stripped);
+        }
+      }
+    }
+    if (meanings.length === 0) return null;
+    return { word, reading: '', meanings };
+  } catch {
+    return null;
+  } finally {
+    clear();
+  }
+}
+
 export async function lookupWord(
   word: string,
   language: string,
@@ -69,5 +103,8 @@ export async function lookupWord(
   if (language === 'ja') {
     return lookupJisho(word);
   }
-  return lookupGeneric(word, language);
+  // Try Free Dictionary API first, fall back to Glosbe
+  const generic = await lookupGeneric(word, language);
+  if (generic && generic.meanings.length > 0) return generic;
+  return lookupGlosbe(word, language);
 }

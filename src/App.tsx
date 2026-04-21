@@ -15,6 +15,8 @@ import SentenceBuilderPage from './pages/SentenceBuilder';
 import AnalyticsPage from './pages/Analytics';
 import TestsPage from './pages/Tests';
 import DailyChallengePage from './pages/DailyChallenge';
+import ClozePracticePage from './pages/ClozePractice';
+import MinimalPairsPage from './pages/MinimalPairs';
 import OnboardingOverlay from './components/onboarding/OnboardingOverlay';
 import { useSettingsStore } from './stores/settingsStore';
 import ErrorBoundary from './components/common/ErrorBoundary';
@@ -44,6 +46,8 @@ export default function App() {
             <Route path="/analytics" element={<AnalyticsPage />} />
             <Route path="/tests" element={<TestsPage />} />
             <Route path="/daily-challenge" element={<DailyChallengePage />} />
+            <Route path="/cloze-practice" element={<ClozePracticePage />} />
+            <Route path="/minimal-pairs" element={<MinimalPairsPage />} />
           </Route>
         </Routes>
       </HashRouter>
