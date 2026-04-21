@@ -130,15 +130,6 @@ export default function VocabLessonView({ lang, lessonId, onBack }: Props) {
     setSavedWords((prev) => ({ ...prev, [w.word]: 'saved' }));
   }
 
-  if (loading) {
-    return (
-      <div className="space-y-4">
-        <div className="skeleton h-4 w-24" />
-        <SkeletonList count={3} />
-      </div>
-    );
-  }
-
   const exercises: VocabExercise[] = useMemo(() => {
     if (!lesson) return [];
     return [
@@ -149,6 +140,15 @@ export default function VocabLessonView({ lang, lessonId, onBack }: Props) {
     ];
   }, [lesson]);
   const currentExercise: VocabExercise | undefined = exercises[exerciseIdx];
+
+  if (loading) {
+    return (
+      <div className="space-y-4">
+        <div className="skeleton h-4 w-24" />
+        <SkeletonList count={3} />
+      </div>
+    );
+  }
 
   if (!lesson) {
     return (
