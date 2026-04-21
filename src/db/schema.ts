@@ -185,4 +185,17 @@ db.version(7).stores({
   });
 });
 
+db.version(8).stores({
+  words: '++id, [language+createdAt], [word+language], language, word, createdAt, *tags, type',
+  reviews: '++id, [wordId+nextReviewDate], wordId, nextReviewDate',
+  texts: '++id, language, createdAt',
+  studySessions: '++id, startTime, activity',
+  settings: 'key',
+  dailyActivity: 'date, goalMet, challengeComplete',
+  lessonProgress: 'id, language, lessonId',
+  characterProgress: 'id, language, mastery',
+  testHistory: '++id, language, type, score, date',
+  badges: 'id, unlockedAt',
+});
+
 export { db };
