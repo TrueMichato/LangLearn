@@ -8,6 +8,7 @@ import { getLanguageLabel, getLanguageFlag } from '../lib/languages';
 import { SkeletonList } from '../components/common/Skeleton';
 import StudySets from '../components/words/StudySets';
 import { getFrequencyRank, getFrequencyTier, getFrequencyLabel, type FrequencyTier } from '../data/frequency';
+import { getForvoUrl } from '../lib/forvo';
 
 type StatusFilter = 'all' | 'learning' | 'mature' | 'due';
 
@@ -360,13 +361,23 @@ export default function WordsPage() {
                             <div>{formatDate(word.createdAt)}</div>
                           </div>
                         </div>
-                        <div className="flex gap-2 pt-1">
+                        <div className="flex gap-2 flex-wrap pt-1">
                           <button
                             onClick={() => startEdit({ word, review })}
                             className="px-3 py-1 rounded bg-indigo-100 dark:bg-indigo-900 text-indigo-700 dark:text-indigo-300 text-sm hover:bg-indigo-200 dark:hover:bg-indigo-800 press-feedback"
                           >
                             Edit
                           </button>
+                          {getForvoUrl(word.word, word.language) && (
+                            <a
+                              href={getForvoUrl(word.word, word.language)!}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="px-3 py-1 rounded bg-emerald-100 dark:bg-emerald-900/50 text-emerald-700 dark:text-emerald-300 text-sm hover:bg-emerald-200 dark:hover:bg-emerald-800 press-feedback inline-flex items-center gap-1"
+                            >
+                              🎙️ Forvo
+                            </a>
+                          )}
                           <button
                             onClick={() => resetProgress(word.id!)}
                             className="px-3 py-1 rounded bg-amber-100 dark:bg-amber-900 text-amber-700 dark:text-amber-300 text-sm hover:bg-amber-200 dark:hover:bg-amber-800 press-feedback"

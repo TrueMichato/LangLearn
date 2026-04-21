@@ -46,6 +46,8 @@ export default function ReaderPage() {
   const [ichiMoeCorsBlocked, setIchiMoeCorsBlocked] = useState(false);
   const [ichiMoeLoading, setIchiMoeLoading] = useState(false);
   const [ichiMoeOpen, setIchiMoeOpen] = useState(false);
+  const [translation, setTranslation] = useState('');
+  const [showBilingual, setShowBilingual] = useState(false);
 
   // Load known words when highlighting is toggled on or text/language changes
   const refreshKnownWords = useCallback(async () => {
@@ -82,6 +84,8 @@ export default function ReaderPage() {
     setIchiMoeCorsBlocked(false);
     setIchiMoeLoading(false);
     setIchiMoeOpen(false);
+    setTranslation('');
+    setShowBilingual(false);
   }
 
   function switchTab(newTab: Tab) {
@@ -324,6 +328,13 @@ export default function ReaderPage() {
           rows={8}
           className="w-full px-4 py-3 border border-slate-300 dark:border-slate-600 rounded-xl focus:outline-none focus:ring-2 focus:ring-indigo-300 dark:focus:ring-indigo-700 resize-none bg-white dark:bg-slate-800 dark:text-slate-100"
         />
+        <textarea
+          placeholder="Translation (optional — for bilingual reading)"
+          value={translation}
+          onChange={(e) => setTranslation(e.target.value)}
+          rows={3}
+          className="w-full px-4 py-3 border border-slate-300 dark:border-slate-600 rounded-xl focus:outline-none focus:ring-2 focus:ring-indigo-300 dark:focus:ring-indigo-700 resize-none bg-white dark:bg-slate-800 dark:text-slate-100 text-sm"
+        />
         <div className="flex gap-2">
           <button
             onClick={handleImport}
@@ -385,6 +396,19 @@ export default function ReaderPage() {
         onToggleHighlight={() => setHighlightKnown((v) => !v)}
       />
 
+      {translation.trim() && (
+        <button
+          onClick={() => setShowBilingual((v) => !v)}
+          className={`mb-3 flex items-center gap-1.5 text-sm font-medium px-3 py-1.5 rounded-full transition-colors press-feedback min-h-[44px] ${
+            showBilingual
+              ? 'bg-indigo-600 text-white'
+              : 'bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400 hover:bg-slate-200 dark:hover:bg-slate-700'
+          }`}
+        >
+          <span>🔀</span> Bilingual
+        </button>
+      )}
+
       <div className="bg-white dark:bg-slate-800 rounded-2xl shadow p-4 leading-relaxed text-[1.1rem] dark:text-slate-100" style={{ fontSize: 'var(--app-font-size)' }}>
         {jaTokens.length > 0 ? (
           <FuriganaText
@@ -421,6 +445,20 @@ export default function ReaderPage() {
           })
         )}
       </div>
+
+      {/* Bilingual translation panel */}
+      {showBilingual && translation.trim() && (
+        <div className="bg-amber-50 dark:bg-amber-900/20 rounded-2xl shadow p-4 mt-3 leading-relaxed text-sm text-slate-700 dark:text-slate-300 border border-amber-200 dark:border-amber-800/50">
+          <div className="flex items-center gap-1.5 text-xs font-medium text-amber-700 dark:text-amber-400 mb-2">
+            <span>🌐</span> Translation
+          </div>
+          {translation.split('\n').map((line, i) => (
+            <p key={i} className={line.trim() ? 'mb-1' : 'mb-3'}>
+              {line || '\u00A0'}
+            </p>
+          ))}
+        </div>
+      )}
 
       {/* ichi.moe parse section — Japanese only */}
       {language === 'ja' && (

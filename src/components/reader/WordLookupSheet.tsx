@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { speak, isTTSSupported } from '../../lib/tts';
 import { lookupWord } from '../../lib/dictionary';
+import { getForvoUrl } from '../../lib/forvo';
 
 interface WordLookupSheetProps {
   word: string;
@@ -49,6 +50,17 @@ export default function WordLookupSheet({
               >
                 🔊
               </button>
+            )}
+            {getForvoUrl(word, language) && (
+              <a
+                href={getForvoUrl(word, language)!}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-xs bg-emerald-100 dark:bg-emerald-900/50 text-emerald-700 dark:text-emerald-300 px-2 py-1 rounded-lg hover:bg-emerald-200 dark:hover:bg-emerald-800 transition-colors"
+                title="Hear native pronunciation on Forvo"
+              >
+                🎙️ Forvo
+              </a>
             )}
             <button
               onClick={handleLookup}
