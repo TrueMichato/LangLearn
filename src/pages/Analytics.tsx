@@ -7,6 +7,7 @@ import {
   getMasteryDistribution,
   getStudyTimeTrend,
   getOverallStats,
+  getActivityBalance,
 } from '../lib/analytics';
 import type { Word, Review } from '../db/schema';
 import LineChart from '../components/analytics/LineChart';
@@ -25,6 +26,7 @@ interface AnalyticsData {
     averageEase: number;
     totalStudyMinutes: number;
   };
+  activityBalance: { activity: string; minutes: number }[];
 }
 
 function shortDate(iso: string): string {

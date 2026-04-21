@@ -18,6 +18,7 @@ interface SettingsState {
   quietHoursEnd: string;
   streakReminders: boolean;
   weeklyDigest: boolean;
+  showContextOnCards: boolean;
   setWeeklyGoal: (minutes: number) => void;
   addLanguage: (lang: string) => void;
   removeLanguage: (lang: string) => void;
@@ -35,6 +36,7 @@ interface SettingsState {
   setQuietHoursEnd: (time: string) => void;
   setStreakReminders: (enabled: boolean) => void;
   setWeeklyDigest: (enabled: boolean) => void;
+  setShowContextOnCards: (enabled: boolean) => void;
 }
 
 export const useSettingsStore = create<SettingsState>()(
@@ -56,6 +58,7 @@ export const useSettingsStore = create<SettingsState>()(
       quietHoursEnd: '07:00',
       streakReminders: true,
       weeklyDigest: true,
+      showContextOnCards: true,
 
       setWeeklyGoal: (minutes) => set({ weeklyGoalMinutes: minutes }),
 
@@ -93,6 +96,7 @@ export const useSettingsStore = create<SettingsState>()(
       setQuietHoursEnd: (time) => set({ quietHoursEnd: time }),
       setStreakReminders: (enabled) => set({ streakReminders: enabled }),
       setWeeklyDigest: (enabled) => set({ weeklyDigest: enabled }),
+      setShowContextOnCards: (enabled) => set({ showContextOnCards: enabled }),
     }),
     {
       name: 'langlearn-settings',
