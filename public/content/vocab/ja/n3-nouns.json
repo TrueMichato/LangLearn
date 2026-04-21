@@ -1,0 +1,34 @@
+{
+  "id": "n3-nouns",
+  "words": [
+    { "word": "影響", "reading": "eikyou", "meaning": "influence/effect", "example": "環境問題は生活に影響を与えます。", "exampleMeaning": "Environmental issues affect our lives." },
+    { "word": "関係", "reading": "kankei", "meaning": "relationship/connection", "example": "二人の関係は良好です。", "exampleMeaning": "The relationship between the two is good." },
+    { "word": "状況", "reading": "joukyou", "meaning": "situation/circumstances", "example": "現在の状況を説明してください。", "exampleMeaning": "Please explain the current situation." },
+    { "word": "可能性", "reading": "kanousei", "meaning": "possibility", "example": "成功の可能性は高いです。", "exampleMeaning": "The possibility of success is high." },
+    { "word": "責任", "reading": "sekinin", "meaning": "responsibility", "example": "それは私の責任です。", "exampleMeaning": "That is my responsibility." },
+    { "word": "経験", "reading": "keiken", "meaning": "experience", "example": "海外での経験が役に立ちました。", "exampleMeaning": "My overseas experience was useful." },
+    { "word": "傾向", "reading": "keikou", "meaning": "tendency/trend", "example": "最近、若者にその傾向が見られます。", "exampleMeaning": "Recently, that trend can be seen among young people." },
+    { "word": "価値", "reading": "kachi", "meaning": "value/worth", "example": "この絵は歴史的な価値があります。", "exampleMeaning": "This painting has historical value." },
+    { "word": "印象", "reading": "inshou", "meaning": "impression", "example": "彼女は良い印象を与えました。", "exampleMeaning": "She gave a good impression." },
+    { "word": "意識", "reading": "ishiki", "meaning": "consciousness/awareness", "example": "環境への意識が高まっています。", "exampleMeaning": "Environmental awareness is growing." },
+    { "word": "対象", "reading": "taishou", "meaning": "target/object/subject", "example": "この調査の対象は大学生です。", "exampleMeaning": "The subjects of this survey are university students." },
+    { "word": "背景", "reading": "haikei", "meaning": "background", "example": "事件の背景を調べています。", "exampleMeaning": "We are investigating the background of the incident." },
+    { "word": "環境", "reading": "kankyou", "meaning": "environment", "example": "環境を守ることが大切です。", "exampleMeaning": "It is important to protect the environment." },
+    { "word": "条件", "reading": "jouken", "meaning": "condition/requirement", "example": "契約の条件を確認しました。", "exampleMeaning": "I confirmed the conditions of the contract." },
+    { "word": "効果", "reading": "kouka", "meaning": "effect/result", "example": "この薬の効果は高いです。", "exampleMeaning": "The effect of this medicine is strong." },
+    { "word": "判断", "reading": "handan", "meaning": "judgment/decision", "example": "正しい判断をするのは難しいです。", "exampleMeaning": "It's difficult to make the right judgment." }
+  ],
+  "exercises": [
+    { "type": "match", "pairs": 5 },
+    { "type": "fill-blank", "items": [
+      { "sentence": "それは私の___です。", "answer": "責任", "hint": "responsibility" },
+      { "sentence": "成功の___は高いです。", "answer": "可能性", "hint": "possibility" },
+      { "sentence": "___を守ることが大切です。", "answer": "環境", "hint": "environment" }
+    ]},
+    { "type": "multiple-choice", "items": [
+      { "question": "What does 傾向 mean?", "options": ["value", "impression", "tendency/trend", "judgment"], "answer": 2 },
+      { "question": "Which word means 'consciousness/awareness'?", "options": ["意識", "印象", "影響", "背景"], "answer": 0 },
+      { "question": "What does 対象 mean?", "options": ["background", "condition", "effect", "target/subject"], "answer": 3 }
+    ]}
+  ]
+}

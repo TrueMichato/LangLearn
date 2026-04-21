@@ -1,0 +1,34 @@
+{
+  "id": "train-bus",
+  "words": [
+    { "word": "改札口", "reading": "kaisatsuguchi", "meaning": "ticket gate", "example": "改札口でICカードをタッチした。", "exampleMeaning": "I tapped my IC card at the ticket gate." },
+    { "word": "定期券", "reading": "teikiken", "meaning": "commuter pass", "example": "定期券を更新した。", "exampleMeaning": "I renewed my commuter pass." },
+    { "word": "乗り換え", "reading": "norikae", "meaning": "transfer (between lines)", "example": "次の駅で乗り換えてください。", "exampleMeaning": "Please transfer at the next station." },
+    { "word": "各駅停車", "reading": "kakueki teisha", "meaning": "local train (stops at every station)", "example": "各駅停車で行くと時間がかかる。", "exampleMeaning": "It takes time if you go by local train." },
+    { "word": "急行", "reading": "kyuukou", "meaning": "express (train)", "example": "急行に乗れば早く着く。", "exampleMeaning": "You'll arrive faster if you take the express." },
+    { "word": "特急", "reading": "tokkyuu", "meaning": "limited express", "example": "特急は別料金がかかる。", "exampleMeaning": "The limited express costs an extra fare." },
+    { "word": "終電", "reading": "shuuden", "meaning": "last train", "example": "終電に間に合った。", "exampleMeaning": "I made it to the last train." },
+    { "word": "始発", "reading": "shihatsu", "meaning": "first train", "example": "始発は五時です。", "exampleMeaning": "The first train is at five o'clock." },
+    { "word": "片道", "reading": "katamichi", "meaning": "one-way", "example": "片道切符を買った。", "exampleMeaning": "I bought a one-way ticket." },
+    { "word": "往復", "reading": "oufuku", "meaning": "round trip", "example": "往復切符のほうがお得です。", "exampleMeaning": "A round-trip ticket is a better deal." },
+    { "word": "時刻表", "reading": "jikokuhyou", "meaning": "timetable / schedule", "example": "時刻表を確認した。", "exampleMeaning": "I checked the timetable." },
+    { "word": "遅延", "reading": "chien", "meaning": "delay", "example": "電車が遅延している。", "exampleMeaning": "The train is delayed." },
+    { "word": "運休", "reading": "unkyuu", "meaning": "service suspension", "example": "台風で電車が運休になった。", "exampleMeaning": "Trains were suspended due to the typhoon." },
+    { "word": "バス停", "reading": "basutei", "meaning": "bus stop", "example": "バス停で十分待った。", "exampleMeaning": "I waited ten minutes at the bus stop." },
+    { "word": "降りる", "reading": "oriru", "meaning": "to get off (a vehicle)", "example": "次の駅で降りる。", "exampleMeaning": "I get off at the next station." },
+    { "word": "乗る", "reading": "noru", "meaning": "to board / to ride", "example": "バスに乗る。", "exampleMeaning": "I ride the bus." }
+  ],
+  "exercises": [
+    { "type": "match", "pairs": 5 },
+    { "type": "fill-blank", "items": [
+      { "sentence": "次の駅で___てください。", "answer": "乗り換え", "hint": "transfer" },
+      { "sentence": "___に間に合った。", "answer": "終電", "hint": "last train" },
+      { "sentence": "___を確認した。", "answer": "時刻表", "hint": "timetable" }
+    ]},
+    { "type": "multiple-choice", "items": [
+      { "question": "「改札口」はどういう意味ですか？", "options": ["bus stop", "platform", "ticket gate", "exit"], "answer": 2 },
+      { "question": "「round trip」は日本語で何ですか？", "options": ["片道", "往復", "乗り換え", "始発"], "answer": 1 },
+      { "question": "「遅延」はどういう意味ですか？", "options": ["suspension", "express", "first train", "delay"], "answer": 3 }
+    ]}
+  ]
+}

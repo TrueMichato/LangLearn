@@ -1,0 +1,34 @@
+{
+  "id": "news-vocabulary",
+  "words": [
+    { "word": "政府", "reading": "seifu", "meaning": "government", "example": "政府は新しい政策を発表しました。", "exampleMeaning": "The government announced a new policy." },
+    { "word": "選挙", "reading": "senkyo", "meaning": "election", "example": "来月、選挙が行われます。", "exampleMeaning": "An election will be held next month." },
+    { "word": "事件", "reading": "jiken", "meaning": "incident/case", "example": "昨夜、大きな事件がありました。", "exampleMeaning": "There was a major incident last night." },
+    { "word": "被害", "reading": "higai", "meaning": "damage/harm", "example": "台風の被害が広がっています。", "exampleMeaning": "The damage from the typhoon is spreading." },
+    { "word": "対策", "reading": "taisaku", "meaning": "countermeasure/response", "example": "地震への対策が必要です。", "exampleMeaning": "Earthquake countermeasures are necessary." },
+    { "word": "発表", "reading": "happyou", "meaning": "announcement/presentation", "example": "研究の結果を発表しました。", "exampleMeaning": "We announced the research results." },
+    { "word": "調査", "reading": "chousa", "meaning": "investigation/survey", "example": "警察が事件を調査しています。", "exampleMeaning": "The police are investigating the case." },
+    { "word": "方針", "reading": "houshin", "meaning": "policy/course of action", "example": "会社の方針が変わりました。", "exampleMeaning": "The company's policy has changed." },
+    { "word": "景気", "reading": "keiki", "meaning": "economic conditions/business climate", "example": "景気が回復してきました。", "exampleMeaning": "The economy has been recovering." },
+    { "word": "支援", "reading": "shien", "meaning": "support/aid", "example": "被災地に支援を送りました。", "exampleMeaning": "We sent aid to the disaster area." },
+    { "word": "交渉", "reading": "koushou", "meaning": "negotiation", "example": "両国間の交渉が続いています。", "exampleMeaning": "Negotiations between the two countries continue." },
+    { "word": "協力", "reading": "kyouryoku", "meaning": "cooperation", "example": "国際的な協力が求められています。", "exampleMeaning": "International cooperation is being sought." },
+    { "word": "実施する", "reading": "jisshi suru", "meaning": "to implement/carry out", "example": "新しい制度を来月実施します。", "exampleMeaning": "We will implement the new system next month." },
+    { "word": "検討する", "reading": "kentou suru", "meaning": "to examine/consider", "example": "その提案を検討しています。", "exampleMeaning": "We are considering that proposal." },
+    { "word": "規制", "reading": "kisei", "meaning": "regulation/restriction", "example": "新しい規制が導入されました。", "exampleMeaning": "New regulations have been introduced." },
+    { "word": "改善", "reading": "kaizen", "meaning": "improvement", "example": "サービスの改善に取り組んでいます。", "exampleMeaning": "We are working on service improvement." }
+  ],
+  "exercises": [
+    { "type": "match", "pairs": 5 },
+    { "type": "fill-blank", "items": [
+      { "sentence": "___は新しい政策を発表しました。", "answer": "政府", "hint": "government" },
+      { "sentence": "台風の___が広がっています。", "answer": "被害", "hint": "damage" },
+      { "sentence": "サービスの___に取り組んでいます。", "answer": "改善", "hint": "improvement" }
+    ]},
+    { "type": "multiple-choice", "items": [
+      { "question": "What does 調査 mean?", "options": ["negotiation", "investigation/survey", "announcement", "regulation"], "answer": 1 },
+      { "question": "Which word means 'economic conditions'?", "options": ["方針", "規制", "景気", "対策"], "answer": 2 },
+      { "question": "What does 実施する mean?", "options": ["to consider", "to negotiate", "to implement", "to announce"], "answer": 2 }
+    ]}
+  ]
+}

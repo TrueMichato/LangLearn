@@ -1,0 +1,34 @@
+{
+  "id": "n4-verbs",
+  "words": [
+    { "word": "届ける", "reading": "todokeru", "meaning": "to deliver", "example": "荷物を届ける。", "exampleMeaning": "I deliver the package." },
+    { "word": "届く", "reading": "todoku", "meaning": "to arrive / to reach", "example": "手紙が届く。", "exampleMeaning": "The letter arrives." },
+    { "word": "集める", "reading": "atsumeru", "meaning": "to collect / to gather", "example": "切手を集める。", "exampleMeaning": "I collect stamps." },
+    { "word": "決める", "reading": "kimeru", "meaning": "to decide", "example": "旅行の日程を決める。", "exampleMeaning": "I decide the travel schedule." },
+    { "word": "説明する", "reading": "setsumei suru", "meaning": "to explain", "example": "先生がルールを説明する。", "exampleMeaning": "The teacher explains the rules." },
+    { "word": "準備する", "reading": "junbi suru", "meaning": "to prepare", "example": "パーティーの準備をする。", "exampleMeaning": "I prepare for the party." },
+    { "word": "相談する", "reading": "soudan suru", "meaning": "to consult / to discuss", "example": "友達に相談する。", "exampleMeaning": "I consult with my friend." },
+    { "word": "紹介する", "reading": "shoukai suru", "meaning": "to introduce", "example": "新しい社員を紹介する。", "exampleMeaning": "I introduce the new employee." },
+    { "word": "比べる", "reading": "kuraberu", "meaning": "to compare", "example": "二つの商品を比べる。", "exampleMeaning": "I compare two products." },
+    { "word": "調べる", "reading": "shiraberu", "meaning": "to investigate / to look up", "example": "インターネットで調べる。", "exampleMeaning": "I look it up on the internet." },
+    { "word": "込む", "reading": "komu", "meaning": "to be crowded", "example": "電車が込んでいる。", "exampleMeaning": "The train is crowded." },
+    { "word": "足りる", "reading": "tariru", "meaning": "to be enough / to suffice", "example": "お金が足りる。", "exampleMeaning": "There is enough money." },
+    { "word": "慣れる", "reading": "nareru", "meaning": "to get used to", "example": "日本の生活に慣れる。", "exampleMeaning": "I get used to life in Japan." },
+    { "word": "似る", "reading": "niru", "meaning": "to resemble", "example": "彼は父親に似ている。", "exampleMeaning": "He resembles his father." },
+    { "word": "太る", "reading": "futoru", "meaning": "to gain weight", "example": "食べすぎて太る。", "exampleMeaning": "I gain weight from eating too much." },
+    { "word": "痩せる", "reading": "yaseru", "meaning": "to lose weight", "example": "運動して痩せる。", "exampleMeaning": "I lose weight by exercising." }
+  ],
+  "exercises": [
+    { "type": "match", "pairs": 5 },
+    { "type": "fill-blank", "items": [
+      { "sentence": "インターネットで___。", "answer": "調べる", "hint": "to look up / investigate" },
+      { "sentence": "旅行の日程を___。", "answer": "決める", "hint": "to decide" },
+      { "sentence": "日本の生活に___。", "answer": "慣れる", "hint": "to get used to" }
+    ]},
+    { "type": "multiple-choice", "items": [
+      { "question": "「届ける」はどういう意味ですか？", "options": ["to arrive", "to deliver", "to collect", "to compare"], "answer": 1 },
+      { "question": "「to prepare」は日本語で何ですか？", "options": ["説明する", "相談する", "準備する", "紹介する"], "answer": 2 },
+      { "question": "「痩せる」はどういう意味ですか？", "options": ["to gain weight", "to get used to", "to be crowded", "to lose weight"], "answer": 3 }
+    ]}
+  ]
+}

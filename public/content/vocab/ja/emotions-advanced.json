@@ -1,0 +1,34 @@
+{
+  "id": "emotions-advanced",
+  "words": [
+    { "word": "感動する", "reading": "kandou suru", "meaning": "to be moved/impressed", "example": "その映画に感動しました。", "exampleMeaning": "I was deeply moved by that movie." },
+    { "word": "落ち込む", "reading": "ochikоmu", "meaning": "to feel down", "example": "試験に落ちて落ち込んでいます。", "exampleMeaning": "I'm feeling down because I failed the exam." },
+    { "word": "焦る", "reading": "aseru", "meaning": "to feel rushed/anxious", "example": "時間がなくて焦っています。", "exampleMeaning": "I'm feeling anxious because there's no time." },
+    { "word": "懐かしい", "reading": "natsukashii", "meaning": "nostalgic", "example": "この曲を聞くと懐かしいです。", "exampleMeaning": "I feel nostalgic when I hear this song." },
+    { "word": "イライラする", "reading": "iraira suru", "meaning": "to be irritated", "example": "渋滞でイライラしています。", "exampleMeaning": "I'm irritated because of the traffic jam." },
+    { "word": "うんざりする", "reading": "unzari suru", "meaning": "to be fed up", "example": "毎日の残業にうんざりしています。", "exampleMeaning": "I'm fed up with the daily overtime." },
+    { "word": "ワクワクする", "reading": "wakuwaku suru", "meaning": "to be excited/thrilled", "example": "旅行の前日はワクワクします。", "exampleMeaning": "I get excited the day before a trip." },
+    { "word": "ドキドキする", "reading": "dokidoki suru", "meaning": "heart pounding", "example": "発表の前にドキドキしました。", "exampleMeaning": "My heart was pounding before the presentation." },
+    { "word": "ホッとする", "reading": "hotto suru", "meaning": "to feel relieved", "example": "無事に着いてホッとしました。", "exampleMeaning": "I felt relieved when we arrived safely." },
+    { "word": "照れる", "reading": "tereru", "meaning": "to feel shy/embarrassed", "example": "褒められて照れました。", "exampleMeaning": "I felt shy when I was complimented." },
+    { "word": "惨めな", "reading": "mijime na", "meaning": "miserable", "example": "一人ぼっちで惨めな気持ちになった。", "exampleMeaning": "I felt miserable being all alone." },
+    { "word": "切ない", "reading": "setsunai", "meaning": "bittersweet/sad", "example": "別れの場面が切ないです。", "exampleMeaning": "The parting scene is bittersweet." },
+    { "word": "微妙な", "reading": "bimyou na", "meaning": "subtle/iffy", "example": "その提案はちょっと微妙ですね。", "exampleMeaning": "That proposal is a bit iffy, isn't it?" },
+    { "word": "爽やかな", "reading": "sawayaka na", "meaning": "refreshing", "example": "爽やかな朝の空気が気持ちいい。", "exampleMeaning": "The refreshing morning air feels great." },
+    { "word": "穏やかな", "reading": "odayaka na", "meaning": "calm/gentle", "example": "穏やかな海を眺めています。", "exampleMeaning": "I'm gazing at the calm sea." },
+    { "word": "がっかりする", "reading": "gakkari suru", "meaning": "to be disappointed", "example": "結果を聞いてがっかりしました。", "exampleMeaning": "I was disappointed when I heard the results." }
+  ],
+  "exercises": [
+    { "type": "match", "pairs": 5 },
+    { "type": "fill-blank", "items": [
+      { "sentence": "その映画に___しました。", "answer": "感動", "hint": "to be moved/impressed" },
+      { "sentence": "旅行の前日は___します。", "answer": "ワクワク", "hint": "excited/thrilled" },
+      { "sentence": "結果を聞いて___しました。", "answer": "がっかり", "hint": "disappointed" }
+    ]},
+    { "type": "multiple-choice", "items": [
+      { "question": "What does 懐かしい mean?", "options": ["irritated", "nostalgic", "miserable", "refreshing"], "answer": 1 },
+      { "question": "Which word means 'to feel relieved'?", "options": ["焦る", "照れる", "ホッとする", "落ち込む"], "answer": 2 },
+      { "question": "What does 切ない mean?", "options": ["calm/gentle", "bittersweet/sad", "subtle/iffy", "fed up"], "answer": 1 }
+    ]}
+  ]
+}

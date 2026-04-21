@@ -1,0 +1,34 @@
+{
+  "id": "academic",
+  "words": [
+    { "word": "研究", "reading": "kenkyuu", "meaning": "research", "example": "大学で研究をしている。", "exampleMeaning": "I am doing research at the university." },
+    { "word": "論文", "reading": "ronbun", "meaning": "thesis / academic paper", "example": "論文を書き終えた。", "exampleMeaning": "I finished writing the thesis." },
+    { "word": "実験", "reading": "jikken", "meaning": "experiment", "example": "化学の実験をした。", "exampleMeaning": "I did a chemistry experiment." },
+    { "word": "結果", "reading": "kekka", "meaning": "result / outcome", "example": "試験の結果が出た。", "exampleMeaning": "The exam results came out." },
+    { "word": "問題", "reading": "mondai", "meaning": "problem / question", "example": "数学の問題を解いた。", "exampleMeaning": "I solved the math problem." },
+    { "word": "答え", "reading": "kotae", "meaning": "answer", "example": "正しい答えを見つけた。", "exampleMeaning": "I found the correct answer." },
+    { "word": "成績", "reading": "seiseki", "meaning": "grades / academic results", "example": "今学期の成績が良かった。", "exampleMeaning": "My grades were good this semester." },
+    { "word": "卒業", "reading": "sotsugyou", "meaning": "graduation", "example": "来年大学を卒業する。", "exampleMeaning": "I will graduate from university next year." },
+    { "word": "入学", "reading": "nyuugaku", "meaning": "enrollment / admission", "example": "四月に入学する。", "exampleMeaning": "I enroll in April." },
+    { "word": "奨学金", "reading": "shougakukin", "meaning": "scholarship", "example": "奨学金をもらっている。", "exampleMeaning": "I am receiving a scholarship." },
+    { "word": "教科書", "reading": "kyoukasho", "meaning": "textbook", "example": "教科書を忘れてしまった。", "exampleMeaning": "I forgot my textbook." },
+    { "word": "宿題", "reading": "shukudai", "meaning": "homework", "example": "宿題を提出した。", "exampleMeaning": "I submitted my homework." },
+    { "word": "試験", "reading": "shiken", "meaning": "exam / test", "example": "来週試験がある。", "exampleMeaning": "There is an exam next week." },
+    { "word": "復習", "reading": "fukushuu", "meaning": "review / revision", "example": "毎日復習をする。", "exampleMeaning": "I review every day." },
+    { "word": "予習", "reading": "yoshuu", "meaning": "preview / preparation", "example": "授業の前に予習をする。", "exampleMeaning": "I prepare before class." },
+    { "word": "授業", "reading": "jugyou", "meaning": "class / lesson", "example": "今日の授業は面白かった。", "exampleMeaning": "Today's class was interesting." }
+  ],
+  "exercises": [
+    { "type": "match", "pairs": 5 },
+    { "type": "fill-blank", "items": [
+      { "sentence": "来週___がある。", "answer": "試験", "hint": "exam" },
+      { "sentence": "大学で___をしている。", "answer": "研究", "hint": "research" },
+      { "sentence": "___を提出した。", "answer": "宿題", "hint": "homework" }
+    ]},
+    { "type": "multiple-choice", "items": [
+      { "question": "「論文」はどういう意味ですか？", "options": ["textbook", "thesis / paper", "homework", "experiment"], "answer": 1 },
+      { "question": "「graduation」は日本語で何ですか？", "options": ["入学", "卒業", "授業", "試験"], "answer": 1 },
+      { "question": "「予習」はどういう意味ですか？", "options": ["review", "research", "preparation", "result"], "answer": 2 }
+    ]}
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "id": "onomatopoeia",
+  "words": [
+    { "word": "ゴロゴロ", "reading": "gorogoro", "meaning": "rumbling/lazing around", "example": "休みの日はゴロゴロしています。", "exampleMeaning": "I laze around on my days off." },
+    { "word": "ドキドキ", "reading": "dokidoki", "meaning": "heart pounding", "example": "告白する前にドキドキしていた。", "exampleMeaning": "My heart was pounding before confessing." },
+    { "word": "ワクワク", "reading": "wakuwaku", "meaning": "excited/thrilled", "example": "遠足の前の日はワクワクします。", "exampleMeaning": "I get excited the day before a field trip." },
+    { "word": "ペラペラ", "reading": "perapera", "meaning": "fluently", "example": "彼女は英語がペラペラです。", "exampleMeaning": "She speaks English fluently." },
+    { "word": "ピカピカ", "reading": "pikapika", "meaning": "sparkling/shiny", "example": "新しい車がピカピカに光っている。", "exampleMeaning": "The new car is sparkling and shiny." },
+    { "word": "フワフワ", "reading": "fuwafuwa", "meaning": "fluffy/soft", "example": "このパンケーキはフワフワです。", "exampleMeaning": "These pancakes are fluffy." },
+    { "word": "バタバタ", "reading": "batabata", "meaning": "bustling/hectic", "example": "朝はいつもバタバタしています。", "exampleMeaning": "Mornings are always hectic." },
+    { "word": "ニコニコ", "reading": "nikoniko", "meaning": "smiling/beaming", "example": "おばあちゃんはいつもニコニコしている。", "exampleMeaning": "Grandma is always smiling." },
+    { "word": "シーン", "reading": "shiin", "meaning": "dead silence", "example": "教室がシーンと静まり返った。", "exampleMeaning": "The classroom fell dead silent." },
+    { "word": "ザーザー", "reading": "zaazaa", "meaning": "pouring rain", "example": "外はザーザー降っています。", "exampleMeaning": "It's pouring rain outside." },
+    { "word": "ガタガタ", "reading": "gatagata", "meaning": "rattling/shaking", "example": "地震で窓がガタガタ揺れた。", "exampleMeaning": "The windows rattled and shook in the earthquake." },
+    { "word": "ボロボロ", "reading": "boroboro", "meaning": "worn out/tattered", "example": "この靴はもうボロボロです。", "exampleMeaning": "These shoes are already worn out." },
+    { "word": "キラキラ", "reading": "kirakira", "meaning": "glittering/sparkling", "example": "星がキラキラ輝いています。", "exampleMeaning": "The stars are glittering." },
+    { "word": "モチモチ", "reading": "mochimochi", "meaning": "chewy/springy", "example": "このお餅はモチモチしている。", "exampleMeaning": "This mochi is nice and chewy." },
+    { "word": "サラサラ", "reading": "sarasara", "meaning": "smooth/flowing", "example": "彼女の髪はサラサラです。", "exampleMeaning": "Her hair is silky smooth." },
+    { "word": "ジメジメ", "reading": "jimejime", "meaning": "humid/damp", "example": "梅雨の時期はジメジメしている。", "exampleMeaning": "It's humid during the rainy season." }
+  ],
+  "exercises": [
+    { "type": "match", "pairs": 5 },
+    { "type": "fill-blank", "items": [
+      { "sentence": "彼女は英語が___です。", "answer": "ペラペラ", "hint": "fluently" },
+      { "sentence": "星が___輝いています。", "answer": "キラキラ", "hint": "glittering" },
+      { "sentence": "朝はいつも___しています。", "answer": "バタバタ", "hint": "bustling/hectic" }
+    ]},
+    { "type": "multiple-choice", "items": [
+      { "question": "Which onomatopoeia describes fluffy texture?", "options": ["モチモチ", "フワフワ", "サラサラ", "ボロボロ"], "answer": 1 },
+      { "question": "What does ゴロゴロ mean?", "options": ["sparkling", "rumbling/lazing", "pouring rain", "smiling"], "answer": 1 },
+      { "question": "Which word describes dead silence?", "options": ["ザーザー", "ガタガタ", "シーン", "ジメジメ"], "answer": 2 }
+    ]}
+  ]
+}

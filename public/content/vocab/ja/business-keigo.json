@@ -1,0 +1,34 @@
+{
+  "id": "business-keigo",
+  "words": [
+    { "word": "お世話になっております", "reading": "osewa ni natte orimasu", "meaning": "thank you for your patronage", "example": "いつもお世話になっております。", "exampleMeaning": "Thank you for your continued support." },
+    { "word": "承知しました", "reading": "shouchi shimashita", "meaning": "understood / acknowledged", "example": "はい、承知しました。", "exampleMeaning": "Yes, understood." },
+    { "word": "失礼します", "reading": "shitsurei shimasu", "meaning": "excuse me (formal)", "example": "お先に失礼します。", "exampleMeaning": "Excuse me for leaving first." },
+    { "word": "恐れ入りますが", "reading": "osore irimasu ga", "meaning": "I'm sorry but... (humble)", "example": "恐れ入りますが、もう一度お願いします。", "exampleMeaning": "I'm sorry, but could you say that once more?" },
+    { "word": "申し訳ございません", "reading": "moushiwake gozaimasen", "meaning": "I sincerely apologize", "example": "ご迷惑をかけて申し訳ございません。", "exampleMeaning": "I sincerely apologize for the inconvenience." },
+    { "word": "かしこまりました", "reading": "kashikomarimashita", "meaning": "certainly / understood (very formal)", "example": "かしこまりました。すぐにお持ちします。", "exampleMeaning": "Certainly. I will bring it right away." },
+    { "word": "ご確認ください", "reading": "go-kakunin kudasai", "meaning": "please confirm / please check", "example": "書類をご確認ください。", "exampleMeaning": "Please check the documents." },
+    { "word": "ご連絡いたします", "reading": "go-renraku itashimasu", "meaning": "I will contact you (humble)", "example": "結果が出たらご連絡いたします。", "exampleMeaning": "I will contact you when the results are out." },
+    { "word": "お待ちしております", "reading": "omachi shite orimasu", "meaning": "we look forward to / we await you", "example": "ご来店をお待ちしております。", "exampleMeaning": "We look forward to your visit." },
+    { "word": "担当者", "reading": "tantousha", "meaning": "person in charge", "example": "担当者に確認します。", "exampleMeaning": "I will check with the person in charge." },
+    { "word": "取引先", "reading": "torihikisaki", "meaning": "business partner / client company", "example": "取引先と打ち合わせがある。", "exampleMeaning": "I have a meeting with our business partner." },
+    { "word": "会議室", "reading": "kaigishitsu", "meaning": "meeting room / conference room", "example": "会議室を予約した。", "exampleMeaning": "I reserved the meeting room." },
+    { "word": "出張", "reading": "shutchou", "meaning": "business trip", "example": "来週大阪に出張する。", "exampleMeaning": "I will go on a business trip to Osaka next week." },
+    { "word": "残業", "reading": "zangyou", "meaning": "overtime work", "example": "今日は残業しなければならない。", "exampleMeaning": "I have to work overtime today." },
+    { "word": "有給休暇", "reading": "yuukyuu kyuuka", "meaning": "paid leave / paid vacation", "example": "有給休暇を取りたい。", "exampleMeaning": "I want to take paid leave." },
+    { "word": "書類", "reading": "shorui", "meaning": "document / paperwork", "example": "書類に署名してください。", "exampleMeaning": "Please sign the documents." }
+  ],
+  "exercises": [
+    { "type": "match", "pairs": 5 },
+    { "type": "fill-blank", "items": [
+      { "sentence": "___を予約した。", "answer": "会議室", "hint": "meeting room" },
+      { "sentence": "来週大阪に___する。", "answer": "出張", "hint": "business trip" },
+      { "sentence": "___に署名してください。", "answer": "書類", "hint": "document(s)" }
+    ]},
+    { "type": "multiple-choice", "items": [
+      { "question": "「承知しました」はどういう意味ですか？", "options": ["I apologize", "understood", "excuse me", "please confirm"], "answer": 1 },
+      { "question": "「overtime work」は日本語で何ですか？", "options": ["出張", "有給休暇", "残業", "取引先"], "answer": 2 },
+      { "question": "「担当者」はどういう意味ですか？", "options": ["business partner", "meeting room", "document", "person in charge"], "answer": 3 }
+    ]}
+  ]
+}

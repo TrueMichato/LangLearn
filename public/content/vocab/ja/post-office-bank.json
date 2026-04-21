@@ -1,0 +1,34 @@
+{
+  "id": "post-office-bank",
+  "words": [
+    { "word": "口座", "reading": "kouza", "meaning": "bank account", "example": "銀行で口座を開いた。", "exampleMeaning": "I opened a bank account." },
+    { "word": "振り込み", "reading": "furikomi", "meaning": "bank transfer", "example": "家賃を振り込みで払った。", "exampleMeaning": "I paid the rent by bank transfer." },
+    { "word": "ATM", "reading": "eitiemu", "meaning": "ATM", "example": "ATMでお金を下ろした。", "exampleMeaning": "I withdrew money from the ATM." },
+    { "word": "引き出す", "reading": "hikidasu", "meaning": "to withdraw (money)", "example": "五万円を引き出した。", "exampleMeaning": "I withdrew 50,000 yen." },
+    { "word": "預金", "reading": "yokin", "meaning": "deposit / savings", "example": "預金の残高を確認した。", "exampleMeaning": "I checked my savings balance." },
+    { "word": "手数料", "reading": "tesuuryou", "meaning": "handling fee / commission", "example": "振り込みの手数料は三百円です。", "exampleMeaning": "The transfer fee is 300 yen." },
+    { "word": "小包", "reading": "kozutsumi", "meaning": "package / parcel", "example": "海外に小包を送った。", "exampleMeaning": "I sent a package overseas." },
+    { "word": "速達", "reading": "sokutatsu", "meaning": "express mail", "example": "速達で手紙を出した。", "exampleMeaning": "I sent the letter by express mail." },
+    { "word": "書留", "reading": "kakitome", "meaning": "registered mail", "example": "大事な書類は書留で送る。", "exampleMeaning": "I send important documents by registered mail." },
+    { "word": "届け出", "reading": "todokede", "meaning": "notification / official report", "example": "転居届け出を出した。", "exampleMeaning": "I submitted a change-of-address notification." },
+    { "word": "証明書", "reading": "shoumeisho", "meaning": "certificate / proof", "example": "卒業証明書を発行してもらった。", "exampleMeaning": "I had my graduation certificate issued." },
+    { "word": "届く", "reading": "todoku", "meaning": "to arrive / to reach", "example": "荷物が届いた。", "exampleMeaning": "The package arrived." },
+    { "word": "届ける", "reading": "todokeru", "meaning": "to deliver / to report", "example": "忘れ物を届ける。", "exampleMeaning": "I deliver the lost item." },
+    { "word": "申込書", "reading": "moushikomisho", "meaning": "application form", "example": "申込書に記入した。", "exampleMeaning": "I filled out the application form." },
+    { "word": "身分証明書", "reading": "mibun shoumeisho", "meaning": "identification card", "example": "身分証明書を提示してください。", "exampleMeaning": "Please present your identification." },
+    { "word": "住所変更", "reading": "juusho henkou", "meaning": "address change", "example": "住所変更の手続きをした。", "exampleMeaning": "I completed the address change procedure." }
+  ],
+  "exercises": [
+    { "type": "match", "pairs": 5 },
+    { "type": "fill-blank", "items": [
+      { "sentence": "銀行で___を開いた。", "answer": "口座", "hint": "bank account" },
+      { "sentence": "大事な書類は___で送る。", "answer": "書留", "hint": "registered mail" },
+      { "sentence": "___に記入した。", "answer": "申込書", "hint": "application form" }
+    ]},
+    { "type": "multiple-choice", "items": [
+      { "question": "「振り込み」はどういう意味ですか？", "options": ["withdrawal", "bank transfer", "savings", "fee"], "answer": 1 },
+      { "question": "「express mail」は日本語で何ですか？", "options": ["書留", "小包", "速達", "届け出"], "answer": 2 },
+      { "question": "「手数料」はどういう意味ですか？", "options": ["deposit", "certificate", "application form", "handling fee"], "answer": 3 }
+    ]}
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "id": "internet-slang",
+  "words": [
+    { "word": "草", "reading": "kusa", "meaning": "lol (from www = 笑)", "example": "この動画マジで草。", "exampleMeaning": "This video is seriously lol." },
+    { "word": "マジ", "reading": "maji", "meaning": "seriously/really", "example": "マジで言ってるの？", "exampleMeaning": "Are you serious?" },
+    { "word": "ヤバい", "reading": "yabai", "meaning": "amazing/terrible (context-dependent)", "example": "このケーキ、ヤバいくらい美味しい。", "exampleMeaning": "This cake is insanely delicious." },
+    { "word": "エモい", "reading": "emoi", "meaning": "emotional/aesthetic", "example": "この夕日エモいね。", "exampleMeaning": "This sunset is so aesthetic." },
+    { "word": "ウケる", "reading": "ukeru", "meaning": "hilarious/that's funny", "example": "その話ウケるんだけど。", "exampleMeaning": "That story is hilarious." },
+    { "word": "ワロタ", "reading": "warota", "meaning": "I laughed (past tense slang of 笑う)", "example": "電車で見てワロタ。", "exampleMeaning": "I saw it on the train and laughed." },
+    { "word": "リア充", "reading": "riajuu", "meaning": "someone with a fulfilling real life", "example": "あのカップルはリア充だね。", "exampleMeaning": "That couple really has it all." },
+    { "word": "推し", "reading": "oshi", "meaning": "one's favorite idol/character", "example": "推しの新曲が出ました。", "exampleMeaning": "My favorite idol's new song came out." },
+    { "word": "沼", "reading": "numa", "meaning": "being obsessed (lit. swamp)", "example": "このゲームは沼すぎる。", "exampleMeaning": "This game is way too addictive." },
+    { "word": "ガチ", "reading": "gachi", "meaning": "for real/serious", "example": "ガチで頑張ります。", "exampleMeaning": "I'll seriously do my best." },
+    { "word": "それな", "reading": "sorena", "meaning": "that's so true/I agree", "example": "「今日暑いね。」「それな。」", "exampleMeaning": "'It's hot today.' 'So true.'" },
+    { "word": "わかりみ", "reading": "wakarimi", "meaning": "I totally understand (slang)", "example": "その気持ち、わかりみが深い。", "exampleMeaning": "I deeply understand that feeling." },
+    { "word": "神", "reading": "kami", "meaning": "godlike/amazing", "example": "この曲は神すぎる。", "exampleMeaning": "This song is absolutely godlike." },
+    { "word": "鬼", "reading": "oni", "meaning": "extremely/demon-level", "example": "鬼のように忙しい。", "exampleMeaning": "I'm insanely busy." },
+    { "word": "バズる", "reading": "bazuru", "meaning": "to go viral", "example": "あの投稿がバズった。", "exampleMeaning": "That post went viral." },
+    { "word": "タイパ", "reading": "taipa", "meaning": "time performance/efficiency", "example": "タイパを考えて動画は倍速で見ます。", "exampleMeaning": "For time efficiency, I watch videos at double speed." }
+  ],
+  "exercises": [
+    { "type": "match", "pairs": 5 },
+    { "type": "fill-blank", "items": [
+      { "sentence": "この動画___で草。", "answer": "マジ", "hint": "seriously/really" },
+      { "sentence": "あの投稿が___った。", "answer": "バズ", "hint": "to go viral" },
+      { "sentence": "___の新曲が出ました。", "answer": "推し", "hint": "one's favorite idol/character" }
+    ]},
+    { "type": "multiple-choice", "items": [
+      { "question": "Why does 草 mean 'lol'?", "options": ["It looks like grass blowing in the wind", "www (笑) looks like grass (草) growing", "It's the kanji for laughter", "It comes from an anime"], "answer": 1 },
+      { "question": "What does リア充 mean?", "options": ["a social media influencer", "someone with a fulfilling real life", "a reality TV fan", "a real estate agent"], "answer": 1 },
+      { "question": "What does ヤバい express?", "options": ["only something terrible", "only something amazing", "both amazing and terrible depending on context", "indifference"], "answer": 2 }
+    ]}
+  ]
+}

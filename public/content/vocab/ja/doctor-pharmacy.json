@@ -1,0 +1,34 @@
+{
+  "id": "doctor-pharmacy",
+  "words": [
+    { "word": "症状", "reading": "shoujou", "meaning": "symptoms", "example": "症状を医者に伝えた。", "exampleMeaning": "I described my symptoms to the doctor." },
+    { "word": "熱がある", "reading": "netsu ga aru", "meaning": "to have a fever", "example": "昨日から熱がある。", "exampleMeaning": "I have had a fever since yesterday." },
+    { "word": "咳", "reading": "seki", "meaning": "cough", "example": "咳が止まらない。", "exampleMeaning": "I can't stop coughing." },
+    { "word": "頭痛", "reading": "zutsuu", "meaning": "headache", "example": "ひどい頭痛がする。", "exampleMeaning": "I have a terrible headache." },
+    { "word": "腹痛", "reading": "fukutsuu", "meaning": "stomachache", "example": "朝から腹痛がする。", "exampleMeaning": "I have had a stomachache since morning." },
+    { "word": "処方箋", "reading": "shohousen", "meaning": "prescription", "example": "医者が処方箋を書いてくれた。", "exampleMeaning": "The doctor wrote me a prescription." },
+    { "word": "薬局", "reading": "yakkyoku", "meaning": "pharmacy / drugstore", "example": "薬局で薬を買った。", "exampleMeaning": "I bought medicine at the pharmacy." },
+    { "word": "飲み薬", "reading": "nomigusuri", "meaning": "oral medicine", "example": "飲み薬を一日三回飲む。", "exampleMeaning": "I take oral medicine three times a day." },
+    { "word": "塗り薬", "reading": "nurigusuri", "meaning": "topical medicine / ointment", "example": "塗り薬を傷に塗った。", "exampleMeaning": "I applied ointment to the wound." },
+    { "word": "アレルギー", "reading": "arerugii", "meaning": "allergy", "example": "花粉のアレルギーがある。", "exampleMeaning": "I have a pollen allergy." },
+    { "word": "保険証", "reading": "hokenshou", "meaning": "insurance card", "example": "保険証を持ってきてください。", "exampleMeaning": "Please bring your insurance card." },
+    { "word": "診察", "reading": "shinsatsu", "meaning": "medical examination", "example": "午前中に診察を受けた。", "exampleMeaning": "I had a medical examination in the morning." },
+    { "word": "血液検査", "reading": "ketsueki kensa", "meaning": "blood test", "example": "血液検査の結果が出た。", "exampleMeaning": "The blood test results came out." },
+    { "word": "入院する", "reading": "nyuuin suru", "meaning": "to be hospitalized", "example": "手術のために入院する。", "exampleMeaning": "I will be hospitalized for surgery." },
+    { "word": "退院する", "reading": "taiin suru", "meaning": "to be discharged (from hospital)", "example": "来週退院する予定です。", "exampleMeaning": "I am scheduled to be discharged next week." },
+    { "word": "救急車", "reading": "kyuukyuusha", "meaning": "ambulance", "example": "すぐに救急車を呼んでください。", "exampleMeaning": "Please call an ambulance immediately." }
+  ],
+  "exercises": [
+    { "type": "match", "pairs": 5 },
+    { "type": "fill-blank", "items": [
+      { "sentence": "___で薬を買った。", "answer": "薬局", "hint": "pharmacy" },
+      { "sentence": "___を医者に伝えた。", "answer": "症状", "hint": "symptoms" },
+      { "sentence": "すぐに___を呼んでください。", "answer": "救急車", "hint": "ambulance" }
+    ]},
+    { "type": "multiple-choice", "items": [
+      { "question": "「処方箋」はどういう意味ですか？", "options": ["pharmacy", "prescription", "insurance card", "blood test"], "answer": 1 },
+      { "question": "「to be hospitalized」は日本語で何ですか？", "options": ["退院する", "診察する", "入院する", "検査する"], "answer": 2 },
+      { "question": "「頭痛」はどういう意味ですか？", "options": ["stomachache", "cough", "fever", "headache"], "answer": 3 }
+    ]}
+  ]
+}

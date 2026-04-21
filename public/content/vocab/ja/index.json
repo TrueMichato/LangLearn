@@ -38,5 +38,15 @@
   { "id": "celebrations", "title": "Festivals & Celebrations", "order": 37, "wordCount": 16, "level": "beginner" },
   { "id": "daily-routines", "title": "Daily Routines & Habits", "order": 38, "wordCount": 16, "level": "beginner" },
   { "id": "opinions", "title": "Opinions & Discussion", "order": 39, "wordCount": 16, "level": "beginner" },
-  { "id": "emergency", "title": "Emergency & Safety", "order": 40, "wordCount": 16, "level": "beginner" }
+  { "id": "emergency", "title": "Emergency & Safety", "order": 40, "wordCount": 16, "level": "beginner" },
+  { "id": "n4-verbs", "title": "JLPT N4 Common Verbs", "order": 41, "wordCount": 16, "level": "intermediate" },
+  { "id": "n4-adjectives", "title": "JLPT N4 Adjectives", "order": 42, "wordCount": 16, "level": "intermediate" },
+  { "id": "n4-nouns-people", "title": "N4 People & Occupations", "order": 43, "wordCount": 16, "level": "intermediate" },
+  { "id": "n4-nouns-places", "title": "N4 Places & Buildings", "order": 44, "wordCount": 16, "level": "intermediate" },
+  { "id": "academic", "title": "Academic & Study Vocabulary", "order": 45, "wordCount": 16, "level": "intermediate" },
+  { "id": "business-keigo", "title": "Business Japanese & Keigo", "order": 46, "wordCount": 16, "level": "intermediate" },
+  { "id": "airport-hotel", "title": "Airport & Hotel", "order": 47, "wordCount": 16, "level": "intermediate" },
+  { "id": "train-bus", "title": "Public Transportation", "order": 48, "wordCount": 16, "level": "intermediate" },
+  { "id": "doctor-pharmacy", "title": "Medical & Pharmacy", "order": 49, "wordCount": 16, "level": "intermediate" },
+  { "id": "post-office-bank", "title": "Post Office & Bank", "order": 50, "wordCount": 16, "level": "intermediate" }
 ]

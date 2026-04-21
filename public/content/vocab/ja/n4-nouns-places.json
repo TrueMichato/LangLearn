@@ -1,0 +1,34 @@
+{
+  "id": "n4-nouns-places",
+  "words": [
+    { "word": "交差点", "reading": "kousaten", "meaning": "intersection / crossroads", "example": "交差点を右に曲がってください。", "exampleMeaning": "Please turn right at the intersection." },
+    { "word": "信号", "reading": "shingou", "meaning": "traffic light", "example": "信号が赤になった。", "exampleMeaning": "The traffic light turned red." },
+    { "word": "橋", "reading": "hashi", "meaning": "bridge", "example": "大きな橋を渡った。", "exampleMeaning": "I crossed a big bridge." },
+    { "word": "港", "reading": "minato", "meaning": "port / harbor", "example": "港に船が止まっている。", "exampleMeaning": "A ship is docked at the harbor." },
+    { "word": "寺", "reading": "tera", "meaning": "Buddhist temple", "example": "京都の寺を見学した。", "exampleMeaning": "I visited a temple in Kyoto." },
+    { "word": "神社", "reading": "jinja", "meaning": "Shinto shrine", "example": "お正月に神社へ行く。", "exampleMeaning": "I go to a shrine on New Year's." },
+    { "word": "美術館", "reading": "bijutsukan", "meaning": "art museum", "example": "美術館で絵を見た。", "exampleMeaning": "I saw paintings at the art museum." },
+    { "word": "動物園", "reading": "doubutsuen", "meaning": "zoo", "example": "子供と動物園に行った。", "exampleMeaning": "I went to the zoo with my child." },
+    { "word": "遊園地", "reading": "yuuenchi", "meaning": "amusement park", "example": "遊園地でジェットコースターに乗った。", "exampleMeaning": "I rode a roller coaster at the amusement park." },
+    { "word": "工場", "reading": "koujou", "meaning": "factory", "example": "この工場で車を作っている。", "exampleMeaning": "They make cars at this factory." },
+    { "word": "市役所", "reading": "shiyakusho", "meaning": "city hall", "example": "市役所で書類を提出した。", "exampleMeaning": "I submitted documents at city hall." },
+    { "word": "交番", "reading": "kouban", "meaning": "police box", "example": "交番で道を聞いた。", "exampleMeaning": "I asked for directions at the police box." },
+    { "word": "踏切", "reading": "fumikiri", "meaning": "railroad crossing", "example": "踏切で電車を待った。", "exampleMeaning": "I waited for the train at the railroad crossing." },
+    { "word": "駐車場", "reading": "chuushajou", "meaning": "parking lot", "example": "駐車場が満車だった。", "exampleMeaning": "The parking lot was full." },
+    { "word": "広場", "reading": "hiroba", "meaning": "plaza / public square", "example": "広場で祭りが行われた。", "exampleMeaning": "A festival was held at the plaza." },
+    { "word": "地下", "reading": "chika", "meaning": "underground / basement", "example": "お店は地下にあります。", "exampleMeaning": "The shop is in the basement." }
+  ],
+  "exercises": [
+    { "type": "match", "pairs": 5 },
+    { "type": "fill-blank", "items": [
+      { "sentence": "___を右に曲がってください。", "answer": "交差点", "hint": "intersection" },
+      { "sentence": "京都の___を見学した。", "answer": "寺", "hint": "temple" },
+      { "sentence": "___が満車だった。", "answer": "駐車場", "hint": "parking lot" }
+    ]},
+    { "type": "multiple-choice", "items": [
+      { "question": "「信号」はどういう意味ですか？", "options": ["bridge", "intersection", "traffic light", "harbor"], "answer": 2 },
+      { "question": "「zoo」は日本語で何ですか？", "options": ["美術館", "遊園地", "工場", "動物園"], "answer": 3 },
+      { "question": "「交番」はどういう意味ですか？", "options": ["city hall", "police box", "factory", "railroad crossing"], "answer": 1 }
+    ]}
+  ]
+}

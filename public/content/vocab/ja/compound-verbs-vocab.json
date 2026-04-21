@@ -1,0 +1,34 @@
+{
+  "id": "compound-verbs-vocab",
+  "words": [
+    { "word": "飛び出す", "reading": "tobidasu", "meaning": "to jump out", "example": "猫が急に飛び出してきた。", "exampleMeaning": "A cat suddenly jumped out." },
+    { "word": "走り出す", "reading": "hashiridasu", "meaning": "to break into a run", "example": "子供たちが走り出した。", "exampleMeaning": "The children broke into a run." },
+    { "word": "持ち上げる", "reading": "mochiageru", "meaning": "to lift up", "example": "重い箱を持ち上げました。", "exampleMeaning": "I lifted up the heavy box." },
+    { "word": "取り出す", "reading": "toridasu", "meaning": "to take out", "example": "カバンから本を取り出した。", "exampleMeaning": "I took a book out of my bag." },
+    { "word": "引き受ける", "reading": "hikiukeru", "meaning": "to undertake/accept", "example": "その仕事を引き受けました。", "exampleMeaning": "I undertook that job." },
+    { "word": "落ち着く", "reading": "ochitsuku", "meaning": "to calm down", "example": "深呼吸して落ち着いてください。", "exampleMeaning": "Take a deep breath and calm down." },
+    { "word": "見つける", "reading": "mitsukeru", "meaning": "to find/discover", "example": "やっと鍵を見つけました。", "exampleMeaning": "I finally found the key." },
+    { "word": "見つかる", "reading": "mitsukaru", "meaning": "to be found", "example": "財布が見つかってよかった。", "exampleMeaning": "I'm glad the wallet was found." },
+    { "word": "思い出す", "reading": "omoidasu", "meaning": "to recall/remember", "example": "昔のことを思い出しました。", "exampleMeaning": "I recalled things from the past." },
+    { "word": "振り返る", "reading": "furikaeru", "meaning": "to look back", "example": "一年を振り返ってみましょう。", "exampleMeaning": "Let's look back on the year." },
+    { "word": "立ち上がる", "reading": "tachiagaru", "meaning": "to stand up", "example": "椅子から立ち上がりました。", "exampleMeaning": "I stood up from the chair." },
+    { "word": "飛び込む", "reading": "tobikomu", "meaning": "to dive in/jump in", "example": "プールに飛び込んだ。", "exampleMeaning": "I dived into the pool." },
+    { "word": "追いかける", "reading": "oikakeru", "meaning": "to chase", "example": "犬がボールを追いかけている。", "exampleMeaning": "The dog is chasing the ball." },
+    { "word": "話し合う", "reading": "hanashiau", "meaning": "to discuss", "example": "チームで話し合いましょう。", "exampleMeaning": "Let's discuss it as a team." },
+    { "word": "受け取る", "reading": "uketoru", "meaning": "to receive", "example": "荷物を受け取りました。", "exampleMeaning": "I received the package." },
+    { "word": "打ち合わせ", "reading": "uchiawase", "meaning": "meeting/discussion", "example": "午後から打ち合わせがあります。", "exampleMeaning": "There's a meeting from the afternoon." }
+  ],
+  "exercises": [
+    { "type": "match", "pairs": 5 },
+    { "type": "fill-blank", "items": [
+      { "sentence": "やっと鍵を___ました。", "answer": "見つけ", "hint": "to find/discover" },
+      { "sentence": "昔のことを___ました。", "answer": "思い出し", "hint": "to recall" },
+      { "sentence": "チームで___ましょう。", "answer": "話し合い", "hint": "to discuss" }
+    ]},
+    { "type": "multiple-choice", "items": [
+      { "question": "What does 飛び出す mean?", "options": ["to dive in", "to jump out", "to stand up", "to chase"], "answer": 1 },
+      { "question": "Which verb means 'to calm down'?", "options": ["振り返る", "落ち着く", "引き受ける", "取り出す"], "answer": 1 },
+      { "question": "What is the difference between 見つける and 見つかる?", "options": ["見つける is transitive (to find), 見つかる is intransitive (to be found)", "They mean the same thing", "見つかる is more polite", "見つける is passive"], "answer": 0 }
+    ]}
+  ]
+}

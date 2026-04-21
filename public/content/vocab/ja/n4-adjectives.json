@@ -1,0 +1,34 @@
+{
+  "id": "n4-adjectives",
+  "words": [
+    { "word": "素晴らしい", "reading": "subarashii", "meaning": "wonderful / splendid", "example": "素晴らしい景色ですね。", "exampleMeaning": "What a wonderful view." },
+    { "word": "厳しい", "reading": "kibishii", "meaning": "strict / severe", "example": "先生はとても厳しい。", "exampleMeaning": "The teacher is very strict." },
+    { "word": "恥ずかしい", "reading": "hazukashii", "meaning": "embarrassing / shy", "example": "みんなの前で歌うのは恥ずかしい。", "exampleMeaning": "Singing in front of everyone is embarrassing." },
+    { "word": "珍しい", "reading": "mezurashii", "meaning": "rare / unusual", "example": "珍しい花を見つけた。", "exampleMeaning": "I found a rare flower." },
+    { "word": "複雑な", "reading": "fukuzatsu na", "meaning": "complex / complicated", "example": "この問題は複雑だ。", "exampleMeaning": "This problem is complicated." },
+    { "word": "簡単な", "reading": "kantan na", "meaning": "simple / easy", "example": "この料理は簡単だ。", "exampleMeaning": "This dish is easy to make." },
+    { "word": "丁寧な", "reading": "teinei na", "meaning": "polite / careful", "example": "丁寧な言葉を使ってください。", "exampleMeaning": "Please use polite language." },
+    { "word": "正確な", "reading": "seikaku na", "meaning": "accurate / precise", "example": "正確な時間を教えてください。", "exampleMeaning": "Please tell me the exact time." },
+    { "word": "適当な", "reading": "tekitou na", "meaning": "appropriate / random", "example": "適当な答えを書いた。", "exampleMeaning": "I wrote a random answer." },
+    { "word": "特別な", "reading": "tokubetsu na", "meaning": "special", "example": "今日は特別な日です。", "exampleMeaning": "Today is a special day." },
+    { "word": "必要な", "reading": "hitsuyou na", "meaning": "necessary / needed", "example": "パスポートが必要です。", "exampleMeaning": "A passport is necessary." },
+    { "word": "不便な", "reading": "fuben na", "meaning": "inconvenient", "example": "この場所は交通が不便だ。", "exampleMeaning": "This place has inconvenient transportation." },
+    { "word": "残念な", "reading": "zannen na", "meaning": "regrettable / unfortunate", "example": "試合に負けて残念だ。", "exampleMeaning": "It's unfortunate that we lost the game." },
+    { "word": "自由な", "reading": "jiyuu na", "meaning": "free / unrestricted", "example": "自由な時間がほしい。", "exampleMeaning": "I want free time." },
+    { "word": "真面目な", "reading": "majime na", "meaning": "serious / diligent", "example": "彼は真面目な学生だ。", "exampleMeaning": "He is a diligent student." },
+    { "word": "上手な", "reading": "jouzu na", "meaning": "skillful / good at", "example": "彼女は料理が上手だ。", "exampleMeaning": "She is good at cooking." }
+  ],
+  "exercises": [
+    { "type": "match", "pairs": 5 },
+    { "type": "fill-blank", "items": [
+      { "sentence": "今日は___日です。", "answer": "特別な", "hint": "special" },
+      { "sentence": "パスポートが___です。", "answer": "必要", "hint": "necessary" },
+      { "sentence": "先生はとても___。", "answer": "厳しい", "hint": "strict" }
+    ]},
+    { "type": "multiple-choice", "items": [
+      { "question": "「素晴らしい」はどういう意味ですか？", "options": ["strict", "wonderful", "rare", "embarrassing"], "answer": 1 },
+      { "question": "「complicated」は日本語で何ですか？", "options": ["簡単な", "複雑な", "正確な", "適当な"], "answer": 1 },
+      { "question": "「真面目な」はどういう意味ですか？", "options": ["free", "inconvenient", "special", "serious / diligent"], "answer": 3 }
+    ]}
+  ]
+}

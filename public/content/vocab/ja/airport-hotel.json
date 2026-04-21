@@ -1,0 +1,34 @@
+{
+  "id": "airport-hotel",
+  "words": [
+    { "word": "パスポート", "reading": "pasupooto", "meaning": "passport", "example": "パスポートを見せてください。", "exampleMeaning": "Please show your passport." },
+    { "word": "搭乗券", "reading": "toujouken", "meaning": "boarding pass", "example": "搭乗券を印刷した。", "exampleMeaning": "I printed the boarding pass." },
+    { "word": "税関", "reading": "zeikan", "meaning": "customs", "example": "税関で荷物を検査された。", "exampleMeaning": "My luggage was inspected at customs." },
+    { "word": "入国審査", "reading": "nyuukoku shinsa", "meaning": "immigration inspection", "example": "入国審査に時間がかかった。", "exampleMeaning": "Immigration took a long time." },
+    { "word": "手荷物", "reading": "tenimotsu", "meaning": "carry-on luggage / hand baggage", "example": "手荷物は一つまでです。", "exampleMeaning": "You may have one carry-on item." },
+    { "word": "預ける", "reading": "azukeru", "meaning": "to check in (luggage) / to deposit", "example": "スーツケースを預ける。", "exampleMeaning": "I check in my suitcase." },
+    { "word": "出発", "reading": "shuppatsu", "meaning": "departure", "example": "出発の時間は九時です。", "exampleMeaning": "The departure time is nine o'clock." },
+    { "word": "到着", "reading": "touchaku", "meaning": "arrival", "example": "飛行機が到着した。", "exampleMeaning": "The airplane has arrived." },
+    { "word": "チェックイン", "reading": "chekkuin", "meaning": "check-in", "example": "ホテルにチェックインした。", "exampleMeaning": "I checked in at the hotel." },
+    { "word": "チェックアウト", "reading": "chekkuauto", "meaning": "checkout", "example": "チェックアウトは十一時までです。", "exampleMeaning": "Checkout is by eleven o'clock." },
+    { "word": "予約", "reading": "yoyaku", "meaning": "reservation / booking", "example": "ホテルの予約をした。", "exampleMeaning": "I made a hotel reservation." },
+    { "word": "フロント", "reading": "furonto", "meaning": "front desk / reception", "example": "フロントで鍵をもらった。", "exampleMeaning": "I received the key at the front desk." },
+    { "word": "ツインルーム", "reading": "tsuinruumu", "meaning": "twin room", "example": "ツインルームを予約した。", "exampleMeaning": "I reserved a twin room." },
+    { "word": "朝食付き", "reading": "choushoku tsuki", "meaning": "breakfast included", "example": "朝食付きのプランにした。", "exampleMeaning": "I chose the plan with breakfast included." },
+    { "word": "両替", "reading": "ryougae", "meaning": "currency exchange", "example": "空港で両替した。", "exampleMeaning": "I exchanged currency at the airport." },
+    { "word": "観光案内所", "reading": "kankou annaijo", "meaning": "tourist information center", "example": "観光案内所で地図をもらった。", "exampleMeaning": "I got a map at the tourist information center." }
+  ],
+  "exercises": [
+    { "type": "match", "pairs": 5 },
+    { "type": "fill-blank", "items": [
+      { "sentence": "___を見せてください。", "answer": "パスポート", "hint": "passport" },
+      { "sentence": "ホテルの___をした。", "answer": "予約", "hint": "reservation" },
+      { "sentence": "空港で___した。", "answer": "両替", "hint": "currency exchange" }
+    ]},
+    { "type": "multiple-choice", "items": [
+      { "question": "「搭乗券」はどういう意味ですか？", "options": ["passport", "customs", "boarding pass", "luggage"], "answer": 2 },
+      { "question": "「arrival」は日本語で何ですか？", "options": ["出発", "到着", "予約", "両替"], "answer": 1 },
+      { "question": "「フロント」はどういう意味ですか？", "options": ["twin room", "breakfast", "front desk", "tourist center"], "answer": 2 }
+    ]}
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "id": "n3-verbs",
+  "words": [
+    { "word": "認める", "reading": "mitomeru", "meaning": "to acknowledge/admit", "example": "彼は自分の間違いを認めました。", "exampleMeaning": "He acknowledged his own mistake." },
+    { "word": "含む", "reading": "fukumu", "meaning": "to include/contain", "example": "この料金は税を含んでいます。", "exampleMeaning": "This price includes tax." },
+    { "word": "示す", "reading": "shimesu", "meaning": "to show/indicate", "example": "データが結果を示しています。", "exampleMeaning": "The data indicates the results." },
+    { "word": "生じる", "reading": "shoujiru", "meaning": "to occur/arise", "example": "問題が生じました。", "exampleMeaning": "A problem has arisen." },
+    { "word": "求める", "reading": "motomeru", "meaning": "to seek/demand", "example": "社会は変化を求めている。", "exampleMeaning": "Society is seeking change." },
+    { "word": "与える", "reading": "ataeru", "meaning": "to give/provide", "example": "子供たちに良い影響を与えたい。", "exampleMeaning": "I want to give a good influence to children." },
+    { "word": "応じる", "reading": "oujiru", "meaning": "to respond/comply", "example": "要求に応じることにしました。", "exampleMeaning": "I decided to comply with the request." },
+    { "word": "従う", "reading": "shitagau", "meaning": "to obey/follow", "example": "ルールに従ってください。", "exampleMeaning": "Please follow the rules." },
+    { "word": "果たす", "reading": "hatasu", "meaning": "to fulfill/accomplish", "example": "約束を果たしました。", "exampleMeaning": "I fulfilled my promise." },
+    { "word": "抱える", "reading": "kakaeru", "meaning": "to hold/have (a problem)", "example": "彼は多くの問題を抱えています。", "exampleMeaning": "He has many problems." },
+    { "word": "怒る", "reading": "okoru", "meaning": "to get angry", "example": "母は私に怒りました。", "exampleMeaning": "My mother got angry at me." },
+    { "word": "異なる", "reading": "kotonaru", "meaning": "to differ/be different", "example": "二つの意見は大きく異なります。", "exampleMeaning": "The two opinions differ greatly." },
+    { "word": "伴う", "reading": "tomonau", "meaning": "to accompany/involve", "example": "成長には痛みが伴います。", "exampleMeaning": "Growth involves pain." },
+    { "word": "覆す", "reading": "kutsugaesu", "meaning": "to overturn/reverse", "example": "裁判の判決を覆しました。", "exampleMeaning": "The court verdict was overturned." },
+    { "word": "補う", "reading": "oginau", "meaning": "to supplement/make up for", "example": "不足分をサプリメントで補っています。", "exampleMeaning": "I'm supplementing the deficiency with vitamins." },
+    { "word": "妨げる", "reading": "samatageru", "meaning": "to hinder/obstruct", "example": "騒音が集中を妨げます。", "exampleMeaning": "Noise hinders concentration." }
+  ],
+  "exercises": [
+    { "type": "match", "pairs": 5 },
+    { "type": "fill-blank", "items": [
+      { "sentence": "ルールに___ってください。", "answer": "従", "hint": "to obey/follow" },
+      { "sentence": "約束を___しました。", "answer": "果た", "hint": "to fulfill" },
+      { "sentence": "この料金は税を___でいます。", "answer": "含ん", "hint": "to include" }
+    ]},
+    { "type": "multiple-choice", "items": [
+      { "question": "What does 生じる mean?", "options": ["to hinder", "to occur/arise", "to supplement", "to overturn"], "answer": 1 },
+      { "question": "Which verb means 'to seek/demand'?", "options": ["与える", "認める", "求める", "示す"], "answer": 2 },
+      { "question": "What does 妨げる mean?", "options": ["to accompany", "to differ", "to fulfill", "to hinder/obstruct"], "answer": 3 }
+    ]}
+  ]
+}

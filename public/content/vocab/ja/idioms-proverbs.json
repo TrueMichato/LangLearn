@@ -1,0 +1,34 @@
+{
+  "id": "idioms-proverbs",
+  "words": [
+    { "word": "猿も木から落ちる", "reading": "saru mo ki kara ochiru", "meaning": "even monkeys fall from trees (everyone makes mistakes)", "example": "あの先生でも間違えるなんて、猿も木から落ちるね。", "exampleMeaning": "Even that teacher makes mistakes — even experts slip up." },
+    { "word": "七転び八起き", "reading": "nana korobi ya oki", "meaning": "fall seven times, get up eight (perseverance)", "example": "七転び八起きの精神で頑張ろう。", "exampleMeaning": "Let's do our best with a never-give-up spirit." },
+    { "word": "石の上にも三年", "reading": "ishi no ue ni mo san nen", "meaning": "perseverance prevails (sit on a stone for 3 years)", "example": "石の上にも三年、続ければ上手になるよ。", "exampleMeaning": "If you keep at it, you'll get better — patience pays off." },
+    { "word": "出る杭は打たれる", "reading": "deru kui wa utareru", "meaning": "the nail that sticks up gets hammered down", "example": "日本では出る杭は打たれると言われます。", "exampleMeaning": "In Japan, they say the nail that sticks up gets hammered down." },
+    { "word": "花より団子", "reading": "hana yori dango", "meaning": "function over beauty (dumplings over flowers)", "example": "花見に行ったけど、花より団子だった。", "exampleMeaning": "We went cherry blossom viewing, but we cared more about the food." },
+    { "word": "猫の手も借りたい", "reading": "neko no te mo karitai", "meaning": "so busy you'd even borrow a cat's paws", "example": "年末は猫の手も借りたいほど忙しいです。", "exampleMeaning": "At year's end, I'm so busy I'd even borrow a cat's paws." },
+    { "word": "目から鱗", "reading": "me kara uroko", "meaning": "scales fall from one's eyes (a revelation)", "example": "その説明を聞いて、目から鱗が落ちました。", "exampleMeaning": "After hearing that explanation, it was a real eye-opener." },
+    { "word": "一石二鳥", "reading": "isseki nichou", "meaning": "killing two birds with one stone", "example": "運動しながら音楽を聞くのは一石二鳥です。", "exampleMeaning": "Listening to music while exercising is killing two birds with one stone." },
+    { "word": "三日坊主", "reading": "mikka bouzu", "meaning": "a quitter (gives up after 3 days)", "example": "日記を始めたけど三日坊主で終わった。", "exampleMeaning": "I started a diary but gave up after three days." },
+    { "word": "馬の耳に念仏", "reading": "uma no mimi ni nenbutsu", "meaning": "preaching to deaf ears (a prayer to a horse's ear)", "example": "彼に注意しても馬の耳に念仏だ。", "exampleMeaning": "Warning him is like preaching to deaf ears." },
+    { "word": "井の中の蛙", "reading": "i no naka no kawazu", "meaning": "a frog in a well (narrow-minded)", "example": "海外に出て、自分が井の中の蛙だと気づいた。", "exampleMeaning": "After going abroad, I realized I had been narrow-minded." },
+    { "word": "急がば回れ", "reading": "isogaba maware", "meaning": "haste makes waste (if in a hurry, take the long way)", "example": "急がば回れで、丁寧にやりましょう。", "exampleMeaning": "Haste makes waste — let's do it carefully." },
+    { "word": "千里の道も一歩から", "reading": "senri no michi mo ippo kara", "meaning": "a journey of 1000 miles begins with one step", "example": "千里の道も一歩から、まず始めてみよう。", "exampleMeaning": "A journey of a thousand miles begins with one step — let's just start." },
+    { "word": "習うより慣れろ", "reading": "narau yori narero", "meaning": "practice makes perfect (learn by doing)", "example": "習うより慣れろで、実際にやってみましょう。", "exampleMeaning": "Practice makes perfect — let's actually try it." },
+    { "word": "情けは人の為ならず", "reading": "nasake wa hito no tame narazu", "meaning": "kindness is its own reward (kindness comes back to you)", "example": "情けは人の為ならず、親切にしよう。", "exampleMeaning": "Kindness is its own reward — let's be kind." },
+    { "word": "腹八分目", "reading": "hara hachibunme", "meaning": "eat until 80% full (moderation in eating)", "example": "健康のために腹八分目を心がけています。", "exampleMeaning": "For my health, I try to eat only until 80% full." }
+  ],
+  "exercises": [
+    { "type": "match", "pairs": 5 },
+    { "type": "fill-blank", "items": [
+      { "sentence": "運動しながら音楽を聞くのは___です。", "answer": "一石二鳥", "hint": "killing two birds with one stone" },
+      { "sentence": "日記を始めたけど___で終わった。", "answer": "三日坊主", "hint": "a quitter" },
+      { "sentence": "彼に注意しても___だ。", "answer": "馬の耳に念仏", "hint": "preaching to deaf ears" }
+    ]},
+    { "type": "multiple-choice", "items": [
+      { "question": "What does 猿も木から落ちる mean?", "options": ["monkeys are clumsy", "even experts make mistakes", "practice makes perfect", "be careful of heights"], "answer": 1 },
+      { "question": "Which proverb means 'haste makes waste'?", "options": ["花より団子", "急がば回れ", "七転び八起き", "腹八分目"], "answer": 1 },
+      { "question": "What does 井の中の蛙 describe?", "options": ["someone who loves nature", "a narrow-minded person", "a strong swimmer", "someone who is patient"], "answer": 1 }
+    ]}
+  ]
+}

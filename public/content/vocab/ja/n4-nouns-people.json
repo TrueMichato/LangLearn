@@ -1,0 +1,34 @@
+{
+  "id": "n4-nouns-people",
+  "words": [
+    { "word": "会社員", "reading": "kaishain", "meaning": "company employee", "example": "兄は会社員です。", "exampleMeaning": "My older brother is a company employee." },
+    { "word": "社長", "reading": "shachou", "meaning": "company president / CEO", "example": "社長に会いました。", "exampleMeaning": "I met the company president." },
+    { "word": "部長", "reading": "buchou", "meaning": "department head", "example": "部長が会議を始めた。", "exampleMeaning": "The department head started the meeting." },
+    { "word": "課長", "reading": "kachou", "meaning": "section chief", "example": "課長に報告した。", "exampleMeaning": "I reported to the section chief." },
+    { "word": "警察官", "reading": "keisatsukan", "meaning": "police officer", "example": "警察官に道を聞いた。", "exampleMeaning": "I asked a police officer for directions." },
+    { "word": "消防士", "reading": "shouboushi", "meaning": "firefighter", "example": "消防士が火を消した。", "exampleMeaning": "The firefighter put out the fire." },
+    { "word": "看護師", "reading": "kangoshi", "meaning": "nurse", "example": "看護師が体温を測った。", "exampleMeaning": "The nurse took my temperature." },
+    { "word": "弁護士", "reading": "bengoshi", "meaning": "lawyer", "example": "弁護士に相談した。", "exampleMeaning": "I consulted with a lawyer." },
+    { "word": "公務員", "reading": "koumuin", "meaning": "civil servant", "example": "姉は公務員として働いている。", "exampleMeaning": "My older sister works as a civil servant." },
+    { "word": "お客さん", "reading": "okyakusan", "meaning": "customer / guest", "example": "お客さんがたくさん来た。", "exampleMeaning": "Many customers came." },
+    { "word": "隣の人", "reading": "tonari no hito", "meaning": "neighbor / person next to you", "example": "隣の人に挨拶した。", "exampleMeaning": "I greeted my neighbor." },
+    { "word": "先輩", "reading": "senpai", "meaning": "senior (at school/work)", "example": "先輩にアドバイスをもらった。", "exampleMeaning": "I got advice from my senior." },
+    { "word": "後輩", "reading": "kouhai", "meaning": "junior (at school/work)", "example": "後輩に仕事を教えた。", "exampleMeaning": "I taught my junior the work." },
+    { "word": "独身", "reading": "dokushin", "meaning": "single / unmarried", "example": "彼はまだ独身です。", "exampleMeaning": "He is still single." },
+    { "word": "夫婦", "reading": "fuufu", "meaning": "married couple", "example": "あの夫婦はいつも仲がいい。", "exampleMeaning": "That married couple always gets along well." },
+    { "word": "親戚", "reading": "shinseki", "meaning": "relative", "example": "お正月に親戚が集まる。", "exampleMeaning": "Relatives gather on New Year's." }
+  ],
+  "exercises": [
+    { "type": "match", "pairs": 5 },
+    { "type": "fill-blank", "items": [
+      { "sentence": "___に道を聞いた。", "answer": "警察官", "hint": "police officer" },
+      { "sentence": "___にアドバイスをもらった。", "answer": "先輩", "hint": "senior" },
+      { "sentence": "お正月に___が集まる。", "answer": "親戚", "hint": "relative(s)" }
+    ]},
+    { "type": "multiple-choice", "items": [
+      { "question": "「社長」はどういう意味ですか？", "options": ["section chief", "department head", "company president", "employee"], "answer": 2 },
+      { "question": "「nurse」は日本語で何ですか？", "options": ["弁護士", "消防士", "公務員", "看護師"], "answer": 3 },
+      { "question": "「後輩」はどういう意味ですか？", "options": ["senior", "junior", "neighbor", "relative"], "answer": 1 }
+    ]}
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "id": "literary-expressions",
+  "words": [
+    { "word": "物語", "reading": "monogatari", "meaning": "tale/story", "example": "この物語は千年前に書かれました。", "exampleMeaning": "This tale was written a thousand years ago." },
+    { "word": "描く", "reading": "egaku", "meaning": "to depict/draw", "example": "作者は戦争の悲惨さを描いています。", "exampleMeaning": "The author depicts the horrors of war." },
+    { "word": "語る", "reading": "kataru", "meaning": "to narrate/tell", "example": "祖父は昔の話を語ってくれました。", "exampleMeaning": "My grandfather narrated stories of the past." },
+    { "word": "寂しさ", "reading": "sabishisa", "meaning": "loneliness", "example": "秋の夕暮れに寂しさを感じます。", "exampleMeaning": "I feel loneliness in the autumn dusk." },
+    { "word": "儚い", "reading": "hakanai", "meaning": "fleeting/ephemeral", "example": "桜の美しさは儚いです。", "exampleMeaning": "The beauty of cherry blossoms is fleeting." },
+    { "word": "美しさ", "reading": "utsukushisa", "meaning": "beauty", "example": "自然の美しさに心を打たれました。", "exampleMeaning": "I was struck by the beauty of nature." },
+    { "word": "哀れ", "reading": "aware", "meaning": "pathos/pity (mono no aware)", "example": "落ちた花びらに哀れを感じます。", "exampleMeaning": "I feel pathos in the fallen petals." },
+    { "word": "荘厳な", "reading": "sougon na", "meaning": "solemn/majestic", "example": "荘厳な雰囲気の中で式が行われました。", "exampleMeaning": "The ceremony was held in a solemn atmosphere." },
+    { "word": "華やかな", "reading": "hanayaka na", "meaning": "gorgeous/splendid", "example": "華やかな衣装が舞台を彩りました。", "exampleMeaning": "Gorgeous costumes adorned the stage." },
+    { "word": "趣", "reading": "omomuki", "meaning": "taste/elegance/charm", "example": "この庭には日本の趣があります。", "exampleMeaning": "This garden has a Japanese elegance to it." },
+    { "word": "風情", "reading": "fuuzei", "meaning": "charm/atmosphere", "example": "古い町並みに風情を感じます。", "exampleMeaning": "I feel a certain charm in the old townscape." },
+    { "word": "余韻", "reading": "yoin", "meaning": "lingering impression/aftertaste", "example": "映画の余韻がまだ残っています。", "exampleMeaning": "The lingering impression of the movie still remains." },
+    { "word": "情緒", "reading": "joucho", "meaning": "emotion/sentiment/atmosphere", "example": "京都は情緒のある街です。", "exampleMeaning": "Kyoto is a city full of atmosphere." },
+    { "word": "奥深い", "reading": "okufukai", "meaning": "profound/deep", "example": "日本文化は奥深いです。", "exampleMeaning": "Japanese culture is profound." },
+    { "word": "佇まい", "reading": "tatazumai", "meaning": "appearance/bearing/presence", "example": "古い寺の静かな佇まいが美しい。", "exampleMeaning": "The quiet bearing of the old temple is beautiful." },
+    { "word": "静寂", "reading": "seijaku", "meaning": "silence/tranquility", "example": "森の静寂に包まれました。", "exampleMeaning": "I was enveloped in the silence of the forest." }
+  ],
+  "exercises": [
+    { "type": "match", "pairs": 5 },
+    { "type": "fill-blank", "items": [
+      { "sentence": "桜の美しさは___です。", "answer": "儚い", "hint": "fleeting/ephemeral" },
+      { "sentence": "映画の___がまだ残っています。", "answer": "余韻", "hint": "lingering impression" },
+      { "sentence": "日本文化は___です。", "answer": "奥深い", "hint": "profound" }
+    ]},
+    { "type": "multiple-choice", "items": [
+      { "question": "What does 哀れ (aware) relate to in Japanese aesthetics?", "options": ["anger at injustice", "the pathos of things (mono no aware)", "celebration of beauty", "fear of the unknown"], "answer": 1 },
+      { "question": "Which word means 'charm/atmosphere'?", "options": ["趣", "風情", "情緒", "all of these have similar meanings"], "answer": 3 },
+      { "question": "What does 儚い mean?", "options": ["beautiful", "fleeting/ephemeral", "solemn", "profound"], "answer": 1 }
+    ]}
+  ]
+}

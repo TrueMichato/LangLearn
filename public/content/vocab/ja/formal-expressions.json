@@ -1,0 +1,34 @@
+{
+  "id": "formal-expressions",
+  "words": [
+    { "word": "以上です", "reading": "ijou desu", "meaning": "that is all", "example": "報告は以上です。", "exampleMeaning": "That is all for the report." },
+    { "word": "以下の通り", "reading": "ika no toori", "meaning": "as follows", "example": "結果は以下の通りです。", "exampleMeaning": "The results are as follows." },
+    { "word": "～に関して", "reading": "~ni kanshite", "meaning": "regarding", "example": "この件に関してご連絡します。", "exampleMeaning": "I will contact you regarding this matter." },
+    { "word": "～について", "reading": "~ni tsuite", "meaning": "about/concerning", "example": "日本の文化について学んでいます。", "exampleMeaning": "I am studying about Japanese culture." },
+    { "word": "～によると", "reading": "~ni yoru to", "meaning": "according to", "example": "天気予報によると明日は雨です。", "exampleMeaning": "According to the weather forecast, it will rain tomorrow." },
+    { "word": "～に基づいて", "reading": "~ni motozuite", "meaning": "based on", "example": "データに基づいて判断します。", "exampleMeaning": "I will make a judgment based on the data." },
+    { "word": "～にもかかわらず", "reading": "~ni mo kakawarazu", "meaning": "despite/in spite of", "example": "努力にもかかわらず失敗しました。", "exampleMeaning": "Despite my efforts, I failed." },
+    { "word": "～を通じて", "reading": "~wo tsuujite", "meaning": "through/via", "example": "インターネットを通じて情報を得ます。", "exampleMeaning": "I obtain information through the internet." },
+    { "word": "～において", "reading": "~ni oite", "meaning": "at/in (formal)", "example": "この分野において日本は先進的です。", "exampleMeaning": "Japan is advanced in this field." },
+    { "word": "～に対して", "reading": "~ni taishite", "meaning": "toward/against", "example": "その提案に対して反対意見が出ました。", "exampleMeaning": "Opposing opinions arose against the proposal." },
+    { "word": "～に伴って", "reading": "~ni tomonatte", "meaning": "along with/accompanying", "example": "人口増加に伴って問題が増えた。", "exampleMeaning": "Problems increased along with population growth." },
+    { "word": "～を踏まえて", "reading": "~wo fumaete", "meaning": "based on/considering", "example": "昨年の結果を踏まえて計画を立てました。", "exampleMeaning": "We made plans based on last year's results." },
+    { "word": "～に応じて", "reading": "~ni oujite", "meaning": "in accordance with", "example": "状況に応じて対応します。", "exampleMeaning": "We will respond in accordance with the situation." },
+    { "word": "～に際して", "reading": "~ni saishite", "meaning": "on the occasion of", "example": "ご出発に際してお気をつけて。", "exampleMeaning": "Please take care on the occasion of your departure." },
+    { "word": "～を除いて", "reading": "~wo nozoite", "meaning": "except for/excluding", "example": "月曜日を除いて毎日営業しています。", "exampleMeaning": "We are open every day except Monday." },
+    { "word": "何卒", "reading": "nanitozo", "meaning": "please (very formal)", "example": "何卒よろしくお願いいたします。", "exampleMeaning": "I humbly ask for your kind consideration." }
+  ],
+  "exercises": [
+    { "type": "match", "pairs": 5 },
+    { "type": "fill-blank", "items": [
+      { "sentence": "天気予報___明日は雨です。", "answer": "によると", "hint": "according to" },
+      { "sentence": "データ___判断します。", "answer": "に基づいて", "hint": "based on" },
+      { "sentence": "月曜日___毎日営業しています。", "answer": "を除いて", "hint": "except for" }
+    ]},
+    { "type": "multiple-choice", "items": [
+      { "question": "What does ～にもかかわらず mean?", "options": ["according to", "despite", "based on", "through"], "answer": 1 },
+      { "question": "Which expression means 'on the occasion of'?", "options": ["～に応じて", "～において", "～に際して", "～に伴って"], "answer": 2 },
+      { "question": "What does 何卒 express?", "options": ["apology", "very formal 'please'", "gratitude", "farewell"], "answer": 1 }
+    ]}
+  ]
+}
