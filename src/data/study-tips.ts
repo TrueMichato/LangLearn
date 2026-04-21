@@ -196,6 +196,32 @@ export const studyTips: StudyTip[] = [
     category: 'technique',
     condition: { context: 'dashboard' },
   },
+  {
+    id: 'immersion-time',
+    text: 'Even 10 minutes of daily immersion (reading, listening) builds familiarity faster than cramming.',
+    category: 'technique',
+  },
+  {
+    id: 'production-vs-recognition',
+    text: "Recognition comes first, production later. Don't stress about not being able to recall words you can recognize.",
+    category: 'vocabulary',
+  },
+  {
+    id: 'grammar-through-examples',
+    text: 'Learn grammar through many examples, not rules. If you see a pattern enough times, it clicks naturally.',
+    category: 'technique',
+  },
+  {
+    id: 'kanji-radicals',
+    text: 'Break kanji into radicals — each kanji is a combination of simpler parts you already know.',
+    category: 'technique',
+    condition: { context: 'letters' },
+  },
+  {
+    id: 'celebrate-progress',
+    text: 'Compare yourself to where you were a month ago, not to native speakers. Every word counts! 🎉',
+    category: 'motivation',
+  },
 ];
 
 export function getRandomTip(category?: string): StudyTip {
