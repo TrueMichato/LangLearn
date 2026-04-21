@@ -7,6 +7,7 @@ import AddWordModal from '../components/srs/AddWordModal';
 import { getLanguageLabel, getLanguageFlag } from '../lib/languages';
 import { SkeletonList } from '../components/common/Skeleton';
 import StudySets from '../components/words/StudySets';
+import { getFrequencyRank, getFrequencyTier, getFrequencyLabel, type FrequencyTier } from '../data/frequency';
 
 type StatusFilter = 'all' | 'learning' | 'mature' | 'due';
 
@@ -48,6 +49,26 @@ function EaseDots({ ease }: { ease: number }) {
       <span className={`w-1.5 h-1.5 rounded-full ${ease >= 1.5 ? color(1.5) : 'bg-slate-300 dark:bg-slate-600'}`} />
       <span className={`w-1.5 h-1.5 rounded-full ${ease >= 2.2 ? color(2.2) : 'bg-slate-300 dark:bg-slate-600'}`} />
       <span className={`w-1.5 h-1.5 rounded-full ${ease >= 2.8 ? color(2.8) : 'bg-slate-300 dark:bg-slate-600'}`} />
+    </span>
+  );
+}
+
+const TIER_COLORS: Record<FrequencyTier, string> = {
+  essential: 'bg-yellow-100 dark:bg-yellow-900/40 text-yellow-800 dark:text-yellow-200',
+  common: 'bg-green-100 dark:bg-green-900/40 text-green-800 dark:text-green-200',
+  intermediate: 'bg-blue-100 dark:bg-blue-900/40 text-blue-800 dark:text-blue-200',
+  advanced: 'bg-purple-100 dark:bg-purple-900/40 text-purple-800 dark:text-purple-200',
+  unknown: '',
+};
+
+function FrequencyBadge({ word, language }: { word: string; language: string }) {
+  const rank = getFrequencyRank(word, language);
+  const tier = getFrequencyTier(rank);
+  if (tier === 'unknown') return null;
+  const label = getFrequencyLabel(tier);
+  return (
+    <span className={`text-xs px-2 py-0.5 rounded-full font-medium ${TIER_COLORS[tier]}`}>
+      {label}
     </span>
   );
 }
@@ -187,6 +208,7 @@ export default function WordsPage() {
           <option value="word-asc">A → Z</option>
           <option value="word-desc">Z → A</option>
           <option value="nextReview-asc">Due soonest</option>
+          <option value="frequency-asc">Frequency</option>
         </select>
       </div>
 
@@ -223,7 +245,7 @@ export default function WordsPage() {
                   onClick={() => setExpandedId(isExpanded ? null : word.id!)}
                 >
                   <div className="flex-1 min-w-0">
-                    <div className="flex items-baseline gap-2">
+                    <div className="flex items-baseline gap-2 flex-wrap">
                       <span className="text-sm mr-0.5">{getLanguageFlag(word.language)}</span>
                       <span className="text-lg font-semibold text-slate-900 dark:text-slate-100">
                         {word.word}
@@ -234,6 +256,7 @@ export default function WordsPage() {
                         </span>
                       )}
                       <EaseDots ease={review.ease} />
+                      <FrequencyBadge word={word.word} language={word.language} />
                     </div>
                     <div className="text-sm text-slate-600 dark:text-slate-400 truncate">
                       {word.meaning}

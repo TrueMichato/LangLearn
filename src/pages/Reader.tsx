@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useCallback } from 'react';
 import { db, type Text as TextRecord } from '../db/schema';
 import { addWord } from '../db/words';
 import { getTextCount } from '../db/texts';
@@ -13,6 +13,8 @@ import { applyStress } from '../lib/russian-stress';
 import { splitSentences, findSentenceAt, type SentenceSpan } from '../lib/sentences';
 import { getLanguageLabel } from '../lib/languages';
 import { SkeletonCard, SkeletonList } from '../components/common/Skeleton';
+import ComprehensionIndicator from '../components/reader/ComprehensionIndicator';
+import { getKnownWordSet } from '../lib/text-analysis';
 
 type Tab = 'import' | 'library';
 
@@ -35,6 +37,19 @@ export default function ReaderPage() {
   const [selectedSentence, setSelectedSentence] = useState('');
   const { isRunning, start } = useTimerStore();
   const { showStressMarks } = useSettingsStore();
+  const [highlightKnown, setHighlightKnown] = useState(false);
+  const [knownWordSet, setKnownWordSet] = useState<Set<string>>(new Set());
+
+  // Load known words when highlighting is toggled on or text/language changes
+  const refreshKnownWords = useCallback(async () => {
+    if (!highlightKnown) return;
+    const known = await getKnownWordSet(language);
+    setKnownWordSet(known);
+  }, [highlightKnown, language]);
+
+  useEffect(() => {
+    refreshKnownWords();
+  }, [refreshKnownWords]);
 
   // Default to Library tab if texts exist
   useEffect(() => {
@@ -183,6 +198,8 @@ export default function ReaderPage() {
 
     setSelectedWord(null);
     setSelectedReading('');
+    // Refresh known word set so highlight updates after mining
+    refreshKnownWords();
   };
 
   const hasTokens = tokens.length > 0 || jaTokens.length > 0;
@@ -309,6 +326,13 @@ export default function ReaderPage() {
         </button>
       </div>
 
+      <ComprehensionIndicator
+        text={text}
+        language={language}
+        highlightEnabled={highlightKnown}
+        onToggleHighlight={() => setHighlightKnown((v) => !v)}
+      />
+
       <div className="bg-white dark:bg-slate-800 rounded-2xl shadow p-4 leading-relaxed text-[1.1rem] dark:text-slate-100" style={{ fontSize: 'var(--app-font-size)' }}>
         {jaTokens.length > 0 ? (
           <FuriganaText
@@ -320,9 +344,13 @@ export default function ReaderPage() {
               const offset = jaTokenOffsets[tokenIndex] ?? 0;
               setSelectedSentence(findSentenceAt(sentences, offset));
             }}
+            highlightKnown={highlightKnown}
+            knownWords={knownWordSet}
           />
         ) : (
-          tokens.map((token, i) => (
+          tokens.map((token, i) => {
+            const isKnown = highlightKnown && knownWordSet.has(token.toLowerCase());
+            return (
             <span
               key={i}
               onClick={() => {
@@ -333,11 +361,12 @@ export default function ReaderPage() {
               }}
               className={`cursor-pointer transition-colors hover:bg-indigo-100 dark:hover:bg-indigo-900 rounded px-0.5 ${
                 selectedWord === token ? 'bg-indigo-200 dark:bg-indigo-800' : ''
-              }`}
+              }${isKnown ? ' bg-green-50 dark:bg-green-900/20' : ''}`}
             >
               {showStressMarks && language === 'ru' ? applyStress(token) : token}
             </span>
-          ))
+            );
+          })
         )}
       </div>
 

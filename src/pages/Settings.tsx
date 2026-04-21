@@ -4,6 +4,7 @@ import { exportAllData, importAllData, downloadJson } from '../db/backup';
 import DeckExport from '../components/common/DeckExport';
 import DeckImport from '../components/common/DeckImport';
 import NotificationSettings from '../components/settings/NotificationSettings';
+import ImmersionSection from '../components/settings/ImmersionSection';
 import { LANGUAGES, getLanguageLabel } from '../lib/languages';
 
 function SectionHeading({ icon, label }: { icon: string; label: string }) {
@@ -233,6 +234,9 @@ export default function SettingsPage() {
           </div>
         </section>
       )}
+
+      {/* Immersion Ideas */}
+      <ImmersionSection />
 
       {/* Backup */}
       <section className={sectionCard}>

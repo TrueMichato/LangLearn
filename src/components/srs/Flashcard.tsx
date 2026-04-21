@@ -1,5 +1,23 @@
 import type { Word } from '../../db/schema';
 import { speak, isTTSSupported } from '../../lib/tts';
+import { useSettingsStore } from '../../stores/settingsStore';
+
+function HighlightedContext({ sentence, word }: { sentence: string; word: string }) {
+  const idx = sentence.toLowerCase().indexOf(word.toLowerCase());
+  if (idx === -1) {
+    return <>{sentence}</>;
+  }
+  const before = sentence.slice(0, idx);
+  const match = sentence.slice(idx, idx + word.length);
+  const after = sentence.slice(idx + word.length);
+  return (
+    <>
+      {before}
+      <span className="font-bold text-gray-800 dark:text-gray-100 not-italic">{match}</span>
+      {after}
+    </>
+  );
+}
 
 interface FlashcardProps {
   word: Word;
@@ -8,6 +26,8 @@ interface FlashcardProps {
 }
 
 export default function Flashcard({ word, isFlipped, onFlip }: FlashcardProps) {
+  const showContext = useSettingsStore((s) => s.showContextOnCards);
+
   return (
     <div
       onClick={!isFlipped ? onFlip : undefined}
@@ -19,6 +39,9 @@ export default function Flashcard({ word, isFlipped, onFlip }: FlashcardProps) {
     >
       <span className="text-xs text-gray-400 dark:text-gray-500 uppercase tracking-wide mb-2">
         {word.language}
+        {word.contextSentence && showContext && (
+          <span className="ml-1" title="Has context sentence">📝</span>
+        )}
       </span>
 
       <p className="text-3xl font-bold text-gray-800 dark:text-gray-100 mb-2 text-center" style={{ fontSize: 'var(--app-font-size)' }}>
@@ -40,6 +63,12 @@ export default function Flashcard({ word, isFlipped, onFlip }: FlashcardProps) {
         >
           🔊
         </button>
+      )}
+
+      {!isFlipped && showContext && word.contextSentence && (
+        <p className="text-base text-gray-600 dark:text-gray-300 mt-3 italic text-center">
+          "<HighlightedContext sentence={word.contextSentence} word={word.word} />"
+        </p>
       )}
 
       {isFlipped ? (

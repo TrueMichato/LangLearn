@@ -146,6 +146,58 @@ export async function getStudyTimeTrend(
   }));
 }
 
+/** 7-day retention rate as a single percentage + review count. */
+export async function get7DayRetention(): Promise<{
+  percent: number;
+  reviewCount: number;
+}> {
+  const start = daysAgo(7);
+  const startStr = toDateString(start);
+  const reviews = await db.reviews.toArray();
+
+  let total = 0;
+  let correct = 0;
+
+  for (const r of reviews) {
+    if (!r.lastReviewDate) continue;
+    if (r.lastReviewDate.slice(0, 10) < startStr) continue;
+    total++;
+    if (r.repetitions > 0 && r.ease >= 2.5) {
+      correct++;
+    }
+  }
+
+  return {
+    percent: total > 0 ? Math.round((correct / total) * 100) : 0,
+    reviewCount: total,
+  };
+}
+
+/** Time spent per activity type over the last N days. */
+export async function getActivityBalance(
+  days: number
+): Promise<{ activity: string; minutes: number }[]> {
+  const start = daysAgo(days);
+  const startStr = toDateString(start);
+  const sessions = await db.studySessions.toArray();
+
+  const buckets = new Map<string, number>();
+
+  for (const s of sessions) {
+    if (!s.startTime) continue;
+    if (s.startTime.slice(0, 10) < startStr) continue;
+    const key = s.activity;
+    buckets.set(key, (buckets.get(key) ?? 0) + s.durationSeconds);
+  }
+
+  return Array.from(buckets.entries())
+    .map(([activity, seconds]) => ({
+      activity,
+      minutes: Math.round(seconds / 60),
+    }))
+    .sort((a, b) => b.minutes - a.minutes);
+}
+
 /** Aggregate stats for the summary section. */
 export async function getOverallStats(): Promise<{
   totalWords: number;

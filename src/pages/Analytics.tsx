@@ -7,6 +7,7 @@ import {
   getMasteryDistribution,
   getStudyTimeTrend,
   getOverallStats,
+  getActivityBalance,
 } from '../lib/analytics';
 import type { Word, Review } from '../db/schema';
 import LineChart from '../components/analytics/LineChart';
@@ -25,6 +26,7 @@ interface AnalyticsData {
     averageEase: number;
     totalStudyMinutes: number;
   };
+  activityBalance: { activity: string; minutes: number }[];
 }
 
 function shortDate(iso: string): string {
@@ -43,7 +45,7 @@ export default function AnalyticsPage() {
 
   useEffect(() => {
     async function load() {
-      const [retention, forecast, weakest, mastery, studyTime, stats] =
+      const [retention, forecast, weakest, mastery, studyTime, stats, activityBalance] =
         await Promise.all([
           getRetentionData(30),
           getReviewForecast(7),
@@ -51,8 +53,9 @@ export default function AnalyticsPage() {
           getMasteryDistribution(),
           getStudyTimeTrend(14),
           getOverallStats(),
+          getActivityBalance(30),
         ]);
-      setData({ retention, forecast, weakest, mastery, studyTime, stats });
+      setData({ retention, forecast, weakest, mastery, studyTime, stats, activityBalance });
     }
     load();
   }, []);
@@ -83,7 +86,7 @@ export default function AnalyticsPage() {
     );
   }
 
-  const { retention, forecast, weakest, mastery, studyTime, stats } = data;
+  const { retention, forecast, weakest, mastery, studyTime, stats, activityBalance } = data;
 
   return (
     <div className="page-enter">
@@ -160,6 +163,9 @@ export default function AnalyticsPage() {
           unit="m"
         />
       </Section>
+
+      {/* Activity Balance */}
+      <ActivityBalanceSection data={activityBalance} />
 
       {/* Weakest Words */}
       <Section title="Weakest Words">
@@ -243,5 +249,86 @@ function StatCard({
       </p>
       <p className="text-xs text-slate-500 dark:text-slate-400">{label}</p>
     </div>
+  );
+}
+
+const ACTIVITY_COLORS: Record<string, string> = {
+  srs: 'bg-indigo-500',
+  reading: 'bg-emerald-500',
+  grammar: 'bg-amber-500',
+};
+
+const ACTIVITY_LABELS: Record<string, string> = {
+  srs: 'Flashcard Review',
+  reading: 'Reading',
+  grammar: 'Grammar',
+};
+
+function getActivityRecommendation(
+  data: { activity: string; minutes: number }[]
+): string | null {
+  const total = data.reduce((sum, d) => sum + d.minutes, 0);
+  if (total === 0) return null;
+
+  for (const d of data) {
+    const pct = (d.minutes / total) * 100;
+    if (pct > 70) {
+      const label = ACTIVITY_LABELS[d.activity] ?? d.activity;
+      const others = data
+        .filter((o) => o.activity !== d.activity)
+        .map((o) => ACTIVITY_LABELS[o.activity] ?? o.activity);
+      const suggestion = others.length > 0 ? others[0] : 'other activities';
+      return `Your study is heavily focused on ${label}. Try mixing in some ${suggestion} for better results!`;
+    }
+  }
+
+  const hasReading = data.find((d) => d.activity === 'reading');
+  const readingPct = hasReading ? (hasReading.minutes / total) * 100 : 0;
+  if (readingPct < 10) {
+    return 'Consider spending more time with the Reader — input is the #1 driver of language acquisition';
+  }
+
+  const hasSrs = data.find((d) => d.activity === 'srs');
+  const srsPct = hasSrs ? (hasSrs.minutes / total) * 100 : 0;
+  if (srsPct < 10) {
+    return 'Regular flashcard review helps lock in vocabulary. Try to review your due cards daily!';
+  }
+
+  return null;
+}
+
+function ActivityBalanceSection({
+  data,
+}: {
+  data: { activity: string; minutes: number }[];
+}) {
+  const total = data.reduce((sum, d) => sum + d.minutes, 0);
+  const recommendation = getActivityRecommendation(data);
+
+  return (
+    <Section title="Activity Balance (30 days)">
+      {total === 0 ? (
+        <p className="text-sm text-slate-400 dark:text-slate-500 text-center py-4">
+          No study sessions recorded yet
+        </p>
+      ) : (
+        <>
+          <SegmentedBar
+            segments={data.map((d) => ({
+              label: ACTIVITY_LABELS[d.activity] ?? d.activity,
+              value: d.minutes,
+              color: ACTIVITY_COLORS[d.activity] ?? 'bg-slate-400',
+            }))}
+          />
+          {recommendation && (
+            <div className="mt-3 bg-amber-50 dark:bg-amber-900/30 border border-amber-200 dark:border-amber-800/50 rounded-xl p-3">
+              <p className="text-xs text-amber-800 dark:text-amber-200">
+                💡 {recommendation}
+              </p>
+            </div>
+          )}
+        </>
+      )}
+    </Section>
   );
 }

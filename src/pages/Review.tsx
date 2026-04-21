@@ -7,6 +7,7 @@ import { useTimerStore } from '../stores/timerStore';
 import { useSettingsStore } from '../stores/settingsStore';
 import { useStudySetsStore } from '../stores/studySetsStore';
 import { getFilteredReviewQueue } from '../lib/filtered-review';
+import { get7DayRetention } from '../lib/analytics';
 import Flashcard from '../components/srs/Flashcard';
 import ReverseCard from '../components/srs/ReverseCard';
 import ListeningCard from '../components/srs/ListeningCard';
@@ -58,6 +59,11 @@ export default function ReviewPage() {
   const [showAddModal, setShowAddModal] = useState(false);
 
   const [shaking, setShaking] = useState(false);
+  const [retention, setRetention] = useState<{ percent: number; reviewCount: number } | null>(null);
+
+  useEffect(() => {
+    get7DayRetention().then(setRetention);
+  }, []);
 
   const loadCards = useCallback(async (mode?: PracticeMode) => {
     setLoading(true);
@@ -203,7 +209,14 @@ export default function ReviewPage() {
   }
 
   if (!practiceMode) {
-    return <PracticeModeSelector onSelect={handleSelectMode} />;
+    return (
+      <div>
+        <PracticeModeSelector onSelect={handleSelectMode} />
+        {retention && retention.reviewCount >= 10 && (
+          <RetentionCard percent={retention.percent} />
+        )}
+      </div>
+    );
   }
 
   if (currentIndex >= queue.length) {
@@ -344,6 +357,41 @@ export default function ReviewPage() {
 
       <p className="text-center text-xs text-slate-400 dark:text-slate-500 mt-6">
         No worries if you didn't know — it'll come back later 💪
+      </p>
+    </div>
+  );
+}
+
+function RetentionCard({ percent }: { percent: number }) {
+  let color: string;
+  let emoji: string;
+  let message: string;
+
+  if (percent < 75) {
+    color = 'bg-red-100 dark:bg-red-900/40 border-red-200 dark:border-red-800/50';
+    emoji = '⚠️';
+    message = 'Consider slowing down on new cards to catch up';
+  } else if (percent < 85) {
+    color = 'bg-amber-50 dark:bg-amber-900/30 border-amber-200 dark:border-amber-800/50';
+    emoji = '📉';
+    message = 'A bit low — try reviewing more frequently';
+  } else if (percent <= 95) {
+    color = 'bg-green-50 dark:bg-green-900/30 border-green-200 dark:border-green-800/50';
+    emoji = '✅';
+    message = 'Right in the sweet spot!';
+  } else {
+    color = 'bg-amber-50 dark:bg-amber-900/30 border-amber-200 dark:border-amber-800/50';
+    emoji = '📈';
+    message = 'Very high — consider adding more new cards';
+  }
+
+  return (
+    <div className={`${color} border rounded-xl p-3 mt-4 max-w-sm mx-auto`}>
+      <p className="text-sm font-medium text-slate-700 dark:text-slate-200 text-center">
+        Your 7-day retention: {percent}% {emoji}
+      </p>
+      <p className="text-xs text-slate-500 dark:text-slate-400 text-center mt-1">
+        {message}
       </p>
     </div>
   );

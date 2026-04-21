@@ -14,7 +14,10 @@ import StudyPlan from '../components/dashboard/StudyPlan';
 import AddWordModal from '../components/srs/AddWordModal';
 import BadgeCollection from '../components/badges/BadgeCollection';
 import DailyChallengeCard from '../components/dashboard/DailyChallengeCard';
+import SuggestedNext from '../components/dashboard/SuggestedNext';
+import Milestones from '../components/dashboard/Milestones';
 import { PageSkeleton } from '../components/common/Skeleton';
+import StudyTip from '../components/common/StudyTip';
 
 interface Stats {
   totalWords: number;
@@ -110,6 +113,12 @@ export default function Dashboard() {
       />
 
       <DailyChallengeCard />
+
+      <SuggestedNext />
+
+      <Milestones />
+
+      <StudyTip context="dashboard" className="mb-6" />
 
       <div className="grid grid-cols-2 gap-3 mb-6">
         <StatCard
