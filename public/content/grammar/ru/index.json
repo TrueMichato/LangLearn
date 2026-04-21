@@ -39,5 +39,11 @@
   { "id": "prepositions-advanced", "title": "Advanced Prepositions (благодаря, несмотря на, в течение)", "order": 38 },
   { "id": "register-formality", "title": "Register & Formality (ты/Вы, formal vs informal)", "order": 39 },
   { "id": "culture-context", "title": "Russian Culture & Context for Language Learners", "order": 40 },
-  { "id": "resources", "title": "Learning Resources: A Curated Study Guide", "order": 41 }
+  { "id": "resources", "title": "Learning Resources: A Curated Study Guide", "order": 41 },
+  { "id": "diminutives", "title": "Diminutives & Augmentatives (Уменьшительные и увеличительные)", "order": 42 },
+  { "id": "numbers-with-cases", "title": "Numbers with Cases (Числа с падежами)", "order": 43 },
+  { "id": "aspect-practical", "title": "Choosing Verb Aspect: A Practical Guide (Выбор вида глагола)", "order": 44 },
+  { "id": "common-mistakes", "title": "Common Mistakes by English Speakers (Типичные ошибки англоговорящих)", "order": 45 },
+  { "id": "formal-writing", "title": "Formal Writing & Correspondence (Деловая переписка)", "order": 46 },
+  { "id": "verbal-nouns", "title": "Verbal Nouns & Nominalization (Отглагольные существительные)", "order": 47 }
 ]

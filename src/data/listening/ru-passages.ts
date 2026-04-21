@@ -72,6 +72,56 @@ export const ruPassages: ListeningPassage[] = [
       { question: 'How far is it?', options: ['2 minutes', '5 minutes', '10 minutes', '15 minutes'], correctIndex: 1 },
     ],
   },
+  {
+    id: 'ru-easy-8',
+    title: 'Ordering at a Café',
+    text: 'Здравствуйте! Мне, пожалуйста, чай с лимоном и кусочек торта. Сколько стоит? Триста рублей. Вот, пожалуйста.',
+    difficulty: 'easy',
+    questions: [
+      { question: 'What did they order?', options: ['Coffee and a cookie', 'Tea and a piece of cake', 'Juice and a sandwich', 'Water and a pastry'], correctIndex: 1 },
+      { question: 'How much did it cost?', options: ['200 rubles', '250 rubles', '300 rubles', '350 rubles'], correctIndex: 2 },
+    ],
+  },
+  {
+    id: 'ru-easy-9',
+    title: 'Asking for Directions',
+    text: 'Извините, вы не знаете, где станция метро? Идите прямо, потом поверните налево. Там будет станция метро. Спасибо большое!',
+    difficulty: 'easy',
+    questions: [
+      { question: 'What are they looking for?', options: ['A bus stop', 'A metro station', 'A train station', 'A taxi stand'], correctIndex: 1 },
+      { question: 'Where should they turn?', options: ['Right', 'Left', 'Go straight only', 'Turn around'], correctIndex: 1 },
+    ],
+  },
+  {
+    id: 'ru-easy-10',
+    title: 'Buying a Metro Ticket',
+    text: 'Мне два билета на метро, пожалуйста. Один билет стоит шестьдесят рублей. Два билета — сто двадцать рублей. Вот ваши билеты.',
+    difficulty: 'easy',
+    questions: [
+      { question: 'How many tickets did they buy?', options: ['1', '2', '3', '4'], correctIndex: 1 },
+      { question: 'How much do the tickets cost in total?', options: ['60 rubles', '100 rubles', '120 rubles', '150 rubles'], correctIndex: 2 },
+    ],
+  },
+  {
+    id: 'ru-easy-11',
+    title: 'Making a Phone Call',
+    text: 'Алло, привет! Давай встретимся сегодня. Во сколько? В пять часов. Где? У кинотеатра. Хорошо, договорились!',
+    difficulty: 'easy',
+    questions: [
+      { question: 'When will they meet?', options: ['At 3 o\'clock', 'At 4 o\'clock', 'At 5 o\'clock', 'At 6 o\'clock'], correctIndex: 2 },
+      { question: 'Where will they meet?', options: ['At the park', 'At the café', 'At the cinema', 'At the station'], correctIndex: 2 },
+    ],
+  },
+  {
+    id: 'ru-easy-12',
+    title: 'Introducing a Friend',
+    text: 'Познакомьтесь, это мой друг Дмитрий. Он работает программистом. Мы учились вместе в университете. Приятно познакомиться!',
+    difficulty: 'easy',
+    questions: [
+      { question: 'What is the friend\'s name?', options: ['Andrei', 'Dmitry', 'Sergei', 'Ivan'], correctIndex: 1 },
+      { question: 'What does the friend do?', options: ['Teacher', 'Doctor', 'Programmer', 'Engineer'], correctIndex: 2 },
+    ],
+  },
 
   // ── Medium ────────────────────────────────────────────
   {
@@ -151,6 +201,56 @@ export const ruPassages: ListeningPassage[] = [
       { question: 'What is planned for Sunday?', options: ['Visiting family', 'Cleaning and laundry', 'Going to church', 'Studying'], correctIndex: 1 },
     ],
   },
+  {
+    id: 'ru-med-8',
+    title: 'At the Doctor\'s Office',
+    text: 'Доктор, я плохо себя чувствую. У меня сильная боль в животе с самого утра. Вчера вечером я съел что-то несвежее. Температура нормальная, но меня тошнит. Я рекомендую вам пить больше воды и принять это лекарство.',
+    difficulty: 'medium',
+    questions: [
+      { question: 'What is wrong with the patient?', options: ['Headache', 'Stomach pain', 'Sore throat', 'Back pain'], correctIndex: 1 },
+      { question: 'What does the doctor recommend?', options: ['Rest at home for a week', 'Drink more water and take medicine', 'Go to the hospital immediately', 'Stop eating for a day'], correctIndex: 1 },
+    ],
+  },
+  {
+    id: 'ru-med-9',
+    title: 'Booking a Hotel Room',
+    text: 'Здравствуйте, я хотел бы забронировать номер в вашей гостинице. На сколько ночей? На три ночи, с пятницы по понедельник. Вам нужен одноместный или двухместный? Одноместный, пожалуйста. Стоимость — две с половиной тысячи рублей за ночь.',
+    difficulty: 'medium',
+    questions: [
+      { question: 'For how many nights is the reservation?', options: ['2 nights', '3 nights', '5 nights', '7 nights'], correctIndex: 1 },
+      { question: 'What type of room do they want?', options: ['Double', 'Single', 'Suite', 'Family room'], correctIndex: 1 },
+    ],
+  },
+  {
+    id: 'ru-med-10',
+    title: 'Job Interview',
+    text: 'Расскажите о себе. Я закончил университет три года назад и работал бухгалтером в небольшой фирме. Сейчас я ищу работу в крупной компании. Почему вы хотите работать у нас? Мне нравится ваша команда, и я хочу развиваться в области финансов.',
+    difficulty: 'medium',
+    questions: [
+      { question: 'What position did the candidate previously hold?', options: ['Manager', 'Programmer', 'Accountant', 'Designer'], correctIndex: 2 },
+      { question: 'How much work experience does the candidate have?', options: ['1 year', '2 years', '3 years', '5 years'], correctIndex: 2 },
+    ],
+  },
+  {
+    id: 'ru-med-11',
+    title: 'Planning the Weekend',
+    text: 'Что будем делать в субботу? Давай пойдём в музей, там открылась новая выставка. Отличная идея! А во сколько встретимся? Давай в двенадцать часов у входа. После музея можем пообедать в кафе рядом.',
+    difficulty: 'medium',
+    questions: [
+      { question: 'What do they plan to do?', options: ['Go to the cinema', 'Go to a museum', 'Visit friends', 'Go shopping'], correctIndex: 1 },
+      { question: 'When will they meet?', options: ['At 10 AM', 'At 11 AM', 'At noon', 'At 1 PM'], correctIndex: 2 },
+    ],
+  },
+  {
+    id: 'ru-med-12',
+    title: 'At the Supermarket',
+    text: 'Нам нужно купить продукты на неделю. Возьмём молоко, хлеб, курицу и овощи. Ещё нужен рис и масло. Сколько всё стоит? Итого тысяча восемьсот рублей. Можно оплатить картой?',
+    difficulty: 'medium',
+    questions: [
+      { question: 'What are they buying?', options: ['Snacks for a party', 'Groceries for the week', 'Ingredients for one dinner', 'Food for a picnic'], correctIndex: 1 },
+      { question: 'How much does it cost in total?', options: ['1,500 rubles', '1,800 rubles', '2,000 rubles', '2,500 rubles'], correctIndex: 1 },
+    ],
+  },
 
   // ── Hard ───────────────────────────────────────────────
   {
@@ -217,6 +317,56 @@ export const ruPassages: ListeningPassage[] = [
       { question: 'Who was the first person in space?', options: ['Leonov', 'Gagarin', 'Tereshkova', 'Korolev'], correctIndex: 1 },
       { question: 'Where does Russia send cosmonauts today?', options: ['The Moon', 'Mars', 'International Space Station', 'Venus'], correctIndex: 2 },
       { question: 'What future exploration plans are mentioned?', options: ['Jupiter and Saturn', 'Moon and Mars', 'Venus and Mercury', 'Asteroids and comets'], correctIndex: 1 },
+    ],
+  },
+  {
+    id: 'ru-hard-7',
+    title: 'A News Report',
+    text: 'В Москве в эту субботу состоится ежегодный фестиваль «Городские огни». Мероприятие пройдёт на Тверской улице с шести часов вечера до полуночи. Организаторы обещают живую музыку, театральные представления и гастрономическую ярмарку. Ожидается, что фестиваль посетят более пятидесяти тысяч человек. Вход на все площадки бесплатный.',
+    difficulty: 'hard',
+    questions: [
+      { question: 'What is the event?', options: ['A sports tournament', 'A city lights festival', 'A political rally', 'A trade fair'], correctIndex: 1 },
+      { question: 'When does it take place?', options: ['Friday morning', 'Saturday evening to midnight', 'Sunday afternoon', 'All weekend'], correctIndex: 1 },
+    ],
+  },
+  {
+    id: 'ru-hard-8',
+    title: 'A Book Discussion',
+    text: 'Ты уже прочитал «Мастера и Маргариту» Булгакова? Да, закончил на прошлой неделе. По-моему, это гениальный роман. Особенно мне понравились главы про Воланда и его свиту. А мне показалось, что сюжет слишком сложный — слишком много переплетающихся линий и скрытых смыслов.',
+    difficulty: 'hard',
+    questions: [
+      { question: 'What book are they discussing?', options: ['War and Peace', 'The Master and Margarita', 'Crime and Punishment', 'Anna Karenina'], correctIndex: 1 },
+      { question: 'What does one person think about the book?', options: ['It is boring', 'The plot is too complex', 'It is too short', 'The characters are weak'], correctIndex: 1 },
+    ],
+  },
+  {
+    id: 'ru-hard-9',
+    title: 'Environmental Concerns',
+    text: 'Одной из главных экологических проблем в России является загрязнение озера Байкал. Промышленные предприятия, расположенные поблизости, десятилетиями сбрасывали отходы в озеро. Экологи предлагают ужесточить законодательство и обязать заводы устанавливать современные очистные фильтры. Кроме того, необходимо развивать экологический туризм, приносящий доход местным жителям без вреда для природы.',
+    difficulty: 'hard',
+    questions: [
+      { question: 'What environmental issue is discussed?', options: ['Air pollution in Moscow', 'Pollution of Lake Baikal', 'Deforestation in Siberia', 'Oil spills in the Arctic'], correctIndex: 1 },
+      { question: 'What solution is proposed?', options: ['Close all factories', 'Stricter legislation and modern filters', 'Relocate local residents', 'Ban all tourism'], correctIndex: 1 },
+    ],
+  },
+  {
+    id: 'ru-hard-10',
+    title: 'Tech Support Call',
+    text: 'Добрый день, техническая поддержка. Чем могу помочь? У меня не работает интернет с самого утра. Роутер включён, но индикатор мигает красным. Попробуйте, пожалуйста, отключить роутер от сети на тридцать секунд, а затем включить снова. Если это не поможет, мы отправим к вам специалиста завтра в первой половине дня.',
+    difficulty: 'hard',
+    questions: [
+      { question: 'What is the problem?', options: ['TV is not working', 'Internet is not working', 'Phone has no signal', 'Computer crashed'], correctIndex: 1 },
+      { question: 'What should the user try first?', options: ['Call back later', 'Restart the router', 'Buy a new router', 'Check the cables'], correctIndex: 1 },
+    ],
+  },
+  {
+    id: 'ru-hard-11',
+    title: 'Business Meeting',
+    text: 'Коллеги, давайте обсудим статус проекта по разработке нового мобильного приложения. На данный момент мы завершили дизайн интерфейса и начали программирование. Срок сдачи проекта — первое марта. Однако, учитывая задержки с тестированием, нам, возможно, придётся перенести дедлайн на две недели. Предлагаю назначить дополнительных тестировщиков.',
+    difficulty: 'hard',
+    questions: [
+      { question: 'What is the project about?', options: ['A website redesign', 'A mobile app development', 'A marketing campaign', 'A database migration'], correctIndex: 1 },
+      { question: 'When is the original deadline?', options: ['February 1', 'March 1', 'April 1', 'May 1'], correctIndex: 1 },
     ],
   },
 

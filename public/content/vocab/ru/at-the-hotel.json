@@ -1,0 +1,36 @@
+{
+  "id": "at-the-hotel",
+  "words": [
+    { "word": "Гостиница", "reading": "gostinitsa", "meaning": "Hotel", "example": "Гостиница находится в центре города.", "exampleMeaning": "The hotel is in the city center." },
+    { "word": "Номер", "reading": "nomer", "meaning": "Room", "example": "Мы забронировали номер на двоих.", "exampleMeaning": "We booked a room for two." },
+    { "word": "Бронирование", "reading": "bronirovaniye", "meaning": "Reservation / Booking", "example": "Бронирование подтверждено по электронной почте.", "exampleMeaning": "The reservation is confirmed by email." },
+    { "word": "Ключ", "reading": "klyuch", "meaning": "Key", "example": "Возьмите ключ от номера.", "exampleMeaning": "Take the room key." },
+    { "word": "Этаж", "reading": "etazh", "meaning": "Floor / Story", "example": "Наш номер на третьем этаже.", "exampleMeaning": "Our room is on the third floor." },
+    { "word": "Лифт", "reading": "lift", "meaning": "Elevator", "example": "Лифт находится в конце коридора.", "exampleMeaning": "The elevator is at the end of the hallway." },
+    { "word": "Стойка", "reading": "stoyka", "meaning": "Reception desk", "example": "Обратитесь на стойку регистрации.", "exampleMeaning": "Go to the reception desk." },
+    { "word": "Завтрак", "reading": "zavtrak", "meaning": "Breakfast", "example": "Завтрак включён в стоимость.", "exampleMeaning": "Breakfast is included in the price." },
+    { "word": "Уборка", "reading": "uborka", "meaning": "Cleaning / Housekeeping", "example": "Уборка номера проводится каждый день.", "exampleMeaning": "Room cleaning is done every day." },
+    { "word": "Полотенце", "reading": "polotentse", "meaning": "Towel", "example": "В ванной чистые полотенца.", "exampleMeaning": "There are clean towels in the bathroom." },
+    { "word": "Кровать", "reading": "krovat'", "meaning": "Bed", "example": "Кровать очень удобная.", "exampleMeaning": "The bed is very comfortable." },
+    { "word": "Душ", "reading": "dush", "meaning": "Shower", "example": "Я хочу принять душ.", "exampleMeaning": "I want to take a shower." },
+    { "word": "Кондиционер", "reading": "konditsioner", "meaning": "Air conditioner", "example": "Включите кондиционер, пожалуйста.", "exampleMeaning": "Turn on the air conditioner, please." },
+    { "word": "Выселение", "reading": "vyseleniye", "meaning": "Check-out", "example": "Выселение до двенадцати часов.", "exampleMeaning": "Check-out is before twelve o'clock." },
+    { "word": "Заселение", "reading": "zaseleniye", "meaning": "Check-in", "example": "Заселение начинается с двух часов дня.", "exampleMeaning": "Check-in starts at two in the afternoon." },
+    { "word": "Обслуживание", "reading": "obsluzhivaniye", "meaning": "Service", "example": "Обслуживание в этой гостинице отличное.", "exampleMeaning": "The service in this hotel is excellent." }
+  ],
+  "exercises": [
+    { "type": "match", "pairs": 5 },
+    { "type": "fill-blank", "items": [
+      { "sentence": "Мы забронировали ___ на двоих.", "answer": "Номер", "hint": "Room" },
+      { "sentence": "Возьмите ___ от номера.", "answer": "Ключ", "hint": "Key" },
+      { "sentence": "___ включён в стоимость.", "answer": "Завтрак", "hint": "Breakfast" },
+      { "sentence": "___ до двенадцати часов.", "answer": "Выселение", "hint": "Check-out" }
+    ]},
+    { "type": "multiple-choice", "items": [
+      { "question": "What does 'Бронирование' mean?", "options": ["Reservation", "Registration", "Renovation", "Payment"], "answer": 0 },
+      { "question": "How do you say 'Towel' in Russian?", "options": ["Полотенце", "Подушка", "Одеяло", "Простыня"], "answer": 0 },
+      { "question": "What is 'Заселение'?", "options": ["Check-in", "Check-out", "Booking", "Cleaning"], "answer": 0 },
+      { "question": "What does 'Кондиционер' mean?", "options": ["Air conditioner", "Heater", "Fan", "Refrigerator"], "answer": 0 }
+    ]}
+  ]
+}

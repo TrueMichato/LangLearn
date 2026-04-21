@@ -1,0 +1,36 @@
+{
+  "id": "vegetables",
+  "words": [
+    { "word": "Огурец", "reading": "ogurets", "meaning": "Cucumber", "example": "Огурец хрустит на зубах.", "exampleMeaning": "The cucumber crunches between the teeth." },
+    { "word": "Помидор", "reading": "pomidor", "meaning": "Tomato", "example": "Помидор покраснел на грядке.", "exampleMeaning": "The tomato turned red on the garden bed." },
+    { "word": "Картофель", "reading": "kartofel'", "meaning": "Potato", "example": "Картофель — основа русской кухни.", "exampleMeaning": "Potato is the basis of Russian cuisine." },
+    { "word": "Морковь", "reading": "morkov'", "meaning": "Carrot", "example": "Морковь полезна для зрения.", "exampleMeaning": "Carrots are good for eyesight." },
+    { "word": "Капуста", "reading": "kapusta", "meaning": "Cabbage", "example": "Из капусты делают салат.", "exampleMeaning": "Salad is made from cabbage." },
+    { "word": "Лук", "reading": "luk", "meaning": "Onion", "example": "От лука текут слёзы.", "exampleMeaning": "Onions make you cry." },
+    { "word": "Перец", "reading": "perets", "meaning": "Pepper", "example": "Красный перец очень острый.", "exampleMeaning": "Red pepper is very spicy." },
+    { "word": "Свёкла", "reading": "svyokla", "meaning": "Beetroot", "example": "Из свёклы готовят борщ.", "exampleMeaning": "Borscht is made from beetroot." },
+    { "word": "Баклажан", "reading": "baklazhan", "meaning": "Eggplant", "example": "Баклажан жарят на масле.", "exampleMeaning": "Eggplant is fried in oil." },
+    { "word": "Кабачок", "reading": "kabachok", "meaning": "Zucchini", "example": "Кабачок растёт в огороде.", "exampleMeaning": "Zucchini grows in the garden." },
+    { "word": "Тыква", "reading": "tykva", "meaning": "Pumpkin", "example": "Осенью собирают тыкву.", "exampleMeaning": "Pumpkins are harvested in autumn." },
+    { "word": "Чеснок", "reading": "chesnok", "meaning": "Garlic", "example": "Чеснок добавляют в суп.", "exampleMeaning": "Garlic is added to soup." },
+    { "word": "Редис", "reading": "redis", "meaning": "Radish", "example": "Редис растёт быстро.", "exampleMeaning": "Radishes grow quickly." },
+    { "word": "Горох", "reading": "gorokh", "meaning": "Peas", "example": "Дети любят зелёный горох.", "exampleMeaning": "Children love green peas." },
+    { "word": "Фасоль", "reading": "fasol'", "meaning": "Beans", "example": "Фасоль богата белком.", "exampleMeaning": "Beans are rich in protein." },
+    { "word": "Брокколи", "reading": "brokkoli", "meaning": "Broccoli", "example": "Брокколи очень полезна.", "exampleMeaning": "Broccoli is very healthy." }
+  ],
+  "exercises": [
+    { "type": "match", "pairs": 5 },
+    { "type": "fill-blank", "items": [
+      { "sentence": "___ — основа русской кухни.", "answer": "Картофель", "hint": "Potato" },
+      { "sentence": "От ___ текут слёзы.", "answer": "Лука", "hint": "Onion (genitive)" },
+      { "sentence": "Из ___ готовят борщ.", "answer": "Свёклы", "hint": "Beetroot (genitive)" },
+      { "sentence": "Осенью собирают ___.", "answer": "Тыкву", "hint": "Pumpkin (accusative)" }
+    ]},
+    { "type": "multiple-choice", "items": [
+      { "question": "What does 'Огурец' mean?", "options": ["Cucumber", "Zucchini", "Celery", "Lettuce"], "answer": 0 },
+      { "question": "How do you say 'Cabbage' in Russian?", "options": ["Капуста", "Картофель", "Морковь", "Свёкла"], "answer": 0 },
+      { "question": "What is 'Баклажан'?", "options": ["Eggplant", "Pumpkin", "Zucchini", "Pepper"], "answer": 0 },
+      { "question": "What does 'Фасоль' mean?", "options": ["Beans", "Peas", "Lentils", "Rice"], "answer": 0 }
+    ]}
+  ]
+}

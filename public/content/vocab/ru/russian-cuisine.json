@@ -1,0 +1,38 @@
+{
+  "id": "russian-cuisine",
+  "words": [
+    { "word": "Борщ", "reading": "borshch", "meaning": "Borscht (beet soup)", "example": "Борщ со сметаной — классика.", "exampleMeaning": "Borscht with sour cream is a classic." },
+    { "word": "Щи", "reading": "shchi", "meaning": "Shchi (cabbage soup)", "example": "Щи варят из свежей капусты.", "exampleMeaning": "Shchi is made from fresh cabbage." },
+    { "word": "Пельмени", "reading": "pel'meni", "meaning": "Pelmeni (dumplings)", "example": "Пельмени лепят всей семьёй.", "exampleMeaning": "The whole family makes pelmeni together." },
+    { "word": "Блины", "reading": "bliny", "meaning": "Blini (pancakes)", "example": "Блины едят на Масленицу.", "exampleMeaning": "Blini are eaten during Maslenitsa." },
+    { "word": "Каша", "reading": "kasha", "meaning": "Kasha (porridge)", "example": "Гречневая каша — русский завтрак.", "exampleMeaning": "Buckwheat porridge is a Russian breakfast." },
+    { "word": "Окрошка", "reading": "okroshka", "meaning": "Okroshka (cold soup)", "example": "Окрошку готовят летом.", "exampleMeaning": "Okroshka is prepared in summer." },
+    { "word": "Солянка", "reading": "solyanka", "meaning": "Solyanka (thick spicy soup)", "example": "Солянка — густой суп с мясом.", "exampleMeaning": "Solyanka is a thick soup with meat." },
+    { "word": "Пирожки", "reading": "pirozhki", "meaning": "Pirozhki (stuffed buns)", "example": "Бабушка печёт пирожки с капустой.", "exampleMeaning": "Grandma bakes pirozhki with cabbage." },
+    { "word": "Винегрет", "reading": "vinegret", "meaning": "Vinegret (beet salad)", "example": "Винегрет — популярный зимний салат.", "exampleMeaning": "Vinegret is a popular winter salad." },
+    { "word": "Сырники", "reading": "syrniki", "meaning": "Syrniki (cottage cheese pancakes)", "example": "Сырники подают со сметаной.", "exampleMeaning": "Syrniki are served with sour cream." },
+    { "word": "Оладьи", "reading": "olad'yi", "meaning": "Oladyi (thick pancakes)", "example": "Оладьи пекут из кефира.", "exampleMeaning": "Oladyi are made from kefir." },
+    { "word": "Голубцы", "reading": "golubtsy", "meaning": "Golubtsy (stuffed cabbage rolls)", "example": "Голубцы тушат в томатном соусе.", "exampleMeaning": "Golubtsy are stewed in tomato sauce." },
+    { "word": "Кулебяка", "reading": "kulebyaka", "meaning": "Kulebyaka (layered pie)", "example": "Кулебяка — праздничный пирог.", "exampleMeaning": "Kulebyaka is a festive pie." },
+    { "word": "Уха", "reading": "ukha", "meaning": "Ukha (fish soup)", "example": "Уху варят из свежей рыбы.", "exampleMeaning": "Ukha is made from fresh fish." },
+    { "word": "Квас", "reading": "kvas", "meaning": "Kvass (fermented drink)", "example": "Холодный квас утоляет жажду.", "exampleMeaning": "Cold kvass quenches thirst." },
+    { "word": "Сметана", "reading": "smetana", "meaning": "Sour cream", "example": "Сметану добавляют в борщ.", "exampleMeaning": "Sour cream is added to borscht." }
+  ],
+  "exercises": [
+    { "type": "match", "pairs": 5 },
+    { "type": "fill-blank", "items": [
+      { "sentence": "___ со сметаной — классика.", "answer": "Борщ", "hint": "Borscht" },
+      { "sentence": "___ лепят всей семьёй.", "answer": "Пельмени", "hint": "Dumplings" },
+      { "sentence": "___ едят на Масленицу.", "answer": "Блины", "hint": "Pancakes" },
+      { "sentence": "Бабушка печёт ___ с капустой.", "answer": "Пирожки", "hint": "Stuffed buns" },
+      { "sentence": "___ добавляют в борщ.", "answer": "Сметану", "hint": "Sour cream (accusative)" }
+    ]},
+    { "type": "multiple-choice", "items": [
+      { "question": "What is 'Окрошка'?", "options": ["Cold soup", "Hot soup", "Salad", "Stew"], "answer": 0 },
+      { "question": "What does 'Сырники' mean?", "options": ["Cottage cheese pancakes", "Cheese rolls", "Cheese pie", "Cheese soup"], "answer": 0 },
+      { "question": "How do you say 'Stuffed cabbage rolls' in Russian?", "options": ["Голубцы", "Пельмени", "Пирожки", "Вареники"], "answer": 0 },
+      { "question": "What is 'Уха'?", "options": ["Fish soup", "Meat soup", "Mushroom soup", "Vegetable soup"], "answer": 0 },
+      { "question": "What does 'Кулебяка' mean?", "options": ["Layered pie", "Flat bread", "Sweet cake", "Meat stew"], "answer": 0 }
+    ]}
+  ]
+}

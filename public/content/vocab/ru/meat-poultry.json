@@ -1,0 +1,36 @@
+{
+  "id": "meat-poultry",
+  "words": [
+    { "word": "Мясо", "reading": "myaso", "meaning": "Meat", "example": "Мясо жарится на сковороде.", "exampleMeaning": "The meat is frying in the pan." },
+    { "word": "Говядина", "reading": "govyadina", "meaning": "Beef", "example": "Говядина — самое популярное мясо.", "exampleMeaning": "Beef is the most popular meat." },
+    { "word": "Свинина", "reading": "svinina", "meaning": "Pork", "example": "Свинина хорошо сочетается с яблоками.", "exampleMeaning": "Pork goes well with apples." },
+    { "word": "Курица", "reading": "kuritsa", "meaning": "Chicken", "example": "Курица варится в кастрюле.", "exampleMeaning": "The chicken is boiling in the pot." },
+    { "word": "Баранина", "reading": "baranina", "meaning": "Lamb", "example": "Баранина популярна на Кавказе.", "exampleMeaning": "Lamb is popular in the Caucasus." },
+    { "word": "Телятина", "reading": "telyatina", "meaning": "Veal", "example": "Телятина — нежное мясо.", "exampleMeaning": "Veal is a tender meat." },
+    { "word": "Ветчина", "reading": "vetchina", "meaning": "Ham", "example": "Бутерброд с ветчиной на завтрак.", "exampleMeaning": "A ham sandwich for breakfast." },
+    { "word": "Сосиска", "reading": "sosiska", "meaning": "Sausage (small)", "example": "Дети любят сосиски.", "exampleMeaning": "Children love sausages." },
+    { "word": "Колбаса", "reading": "kolbasa", "meaning": "Sausage (large)", "example": "Купи колбасу в магазине.", "exampleMeaning": "Buy sausage at the store." },
+    { "word": "Бекон", "reading": "bekon", "meaning": "Bacon", "example": "Бекон жарят на завтрак.", "exampleMeaning": "Bacon is fried for breakfast." },
+    { "word": "Индейка", "reading": "indeyka", "meaning": "Turkey", "example": "Индейку готовят на праздник.", "exampleMeaning": "Turkey is prepared for the holiday." },
+    { "word": "Утка", "reading": "utka", "meaning": "Duck", "example": "Утка с яблоками — вкусное блюдо.", "exampleMeaning": "Duck with apples is a delicious dish." },
+    { "word": "Фарш", "reading": "farsh", "meaning": "Ground meat", "example": "Из фарша лепят котлеты.", "exampleMeaning": "Cutlets are shaped from ground meat." },
+    { "word": "Котлета", "reading": "kotleta", "meaning": "Cutlet / Patty", "example": "Мама готовит котлеты на ужин.", "exampleMeaning": "Mom is making cutlets for dinner." },
+    { "word": "Шашлык", "reading": "shashlyk", "meaning": "Shashlik / Kebab", "example": "Мы жарим шашлык на природе.", "exampleMeaning": "We grill shashlik outdoors." },
+    { "word": "Стейк", "reading": "steyk", "meaning": "Steak", "example": "Стейк прожарен до средней степени.", "exampleMeaning": "The steak is cooked medium." }
+  ],
+  "exercises": [
+    { "type": "match", "pairs": 5 },
+    { "type": "fill-blank", "items": [
+      { "sentence": "___ жарится на сковороде.", "answer": "Мясо", "hint": "Meat" },
+      { "sentence": "Мы жарим ___ на природе.", "answer": "Шашлык", "hint": "Kebab" },
+      { "sentence": "Из ___ лепят котлеты.", "answer": "Фарша", "hint": "Ground meat (genitive)" },
+      { "sentence": "___ варится в кастрюле.", "answer": "Курица", "hint": "Chicken" }
+    ]},
+    { "type": "multiple-choice", "items": [
+      { "question": "What does 'Говядина' mean?", "options": ["Beef", "Pork", "Lamb", "Veal"], "answer": 0 },
+      { "question": "How do you say 'Turkey' in Russian?", "options": ["Индейка", "Утка", "Курица", "Гусь"], "answer": 0 },
+      { "question": "What is 'Колбаса'?", "options": ["Sausage", "Ham", "Bacon", "Salami"], "answer": 0 },
+      { "question": "What does 'Шашлык' mean?", "options": ["Kebab", "Steak", "Cutlet", "Roast"], "answer": 0 }
+    ]}
+  ]
+}

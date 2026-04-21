@@ -1,0 +1,36 @@
+{
+  "id": "fruits-berries",
+  "words": [
+    { "word": "Яблоко", "reading": "yabloko", "meaning": "Apple", "example": "Яблоко лежит на столе.", "exampleMeaning": "The apple is on the table." },
+    { "word": "Груша", "reading": "grusha", "meaning": "Pear", "example": "Эта груша очень сладкая.", "exampleMeaning": "This pear is very sweet." },
+    { "word": "Банан", "reading": "banan", "meaning": "Banana", "example": "Обезьяна ест банан.", "exampleMeaning": "The monkey is eating a banana." },
+    { "word": "Апельсин", "reading": "apel'sin", "meaning": "Orange", "example": "Я выжал сок из апельсина.", "exampleMeaning": "I squeezed juice from an orange." },
+    { "word": "Виноград", "reading": "vinograd", "meaning": "Grapes", "example": "Виноград растёт на юге.", "exampleMeaning": "Grapes grow in the south." },
+    { "word": "Клубника", "reading": "klubnika", "meaning": "Strawberry", "example": "Клубника со сливками — мой любимый десерт.", "exampleMeaning": "Strawberries with cream is my favorite dessert." },
+    { "word": "Малина", "reading": "malina", "meaning": "Raspberry", "example": "Бабушка варит варенье из малины.", "exampleMeaning": "Grandma makes jam from raspberries." },
+    { "word": "Лимон", "reading": "limon", "meaning": "Lemon", "example": "Положи лимон в чай.", "exampleMeaning": "Put a lemon in the tea." },
+    { "word": "Арбуз", "reading": "arbuz", "meaning": "Watermelon", "example": "Летом мы едим арбуз.", "exampleMeaning": "In summer we eat watermelon." },
+    { "word": "Персик", "reading": "persik", "meaning": "Peach", "example": "Персик очень сочный.", "exampleMeaning": "The peach is very juicy." },
+    { "word": "Вишня", "reading": "vishnya", "meaning": "Cherry", "example": "В саду цветёт вишня.", "exampleMeaning": "The cherry tree is blooming in the garden." },
+    { "word": "Слива", "reading": "sliva", "meaning": "Plum", "example": "Слива упала с дерева.", "exampleMeaning": "The plum fell from the tree." },
+    { "word": "Ананас", "reading": "ananas", "meaning": "Pineapple", "example": "Ананас — тропический фрукт.", "exampleMeaning": "Pineapple is a tropical fruit." },
+    { "word": "Мандарин", "reading": "mandarin", "meaning": "Tangerine", "example": "На Новый год мы покупаем мандарины.", "exampleMeaning": "For New Year we buy tangerines." },
+    { "word": "Черника", "reading": "chernika", "meaning": "Blueberry", "example": "Черника полезна для зрения.", "exampleMeaning": "Blueberries are good for eyesight." },
+    { "word": "Смородина", "reading": "smorodina", "meaning": "Currant", "example": "Мы собираем смородину в саду.", "exampleMeaning": "We pick currants in the garden." }
+  ],
+  "exercises": [
+    { "type": "match", "pairs": 5 },
+    { "type": "fill-blank", "items": [
+      { "sentence": "___ лежит на столе.", "answer": "Яблоко", "hint": "Apple" },
+      { "sentence": "Летом мы едим ___.", "answer": "Арбуз", "hint": "Watermelon" },
+      { "sentence": "Положи ___ в чай.", "answer": "Лимон", "hint": "Lemon" },
+      { "sentence": "Бабушка варит варенье из ___.", "answer": "Малины", "hint": "Raspberries (genitive)" }
+    ]},
+    { "type": "multiple-choice", "items": [
+      { "question": "What does 'Клубника' mean?", "options": ["Strawberry", "Raspberry", "Blueberry", "Currant"], "answer": 0 },
+      { "question": "How do you say 'Pear' in Russian?", "options": ["Груша", "Слива", "Вишня", "Персик"], "answer": 0 },
+      { "question": "What is 'Виноград'?", "options": ["Grapes", "Raisins", "Wine", "Berries"], "answer": 0 },
+      { "question": "What does 'Мандарин' mean?", "options": ["Tangerine", "Orange", "Lemon", "Grapefruit"], "answer": 0 }
+    ]}
+  ]
+}

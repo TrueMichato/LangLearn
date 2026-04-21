@@ -1,0 +1,38 @@
+{
+  "id": "phone-messaging",
+  "words": [
+    { "word": "Звонок", "reading": "zvonok", "meaning": "Call / Ring", "example": "Я пропустил ваш звонок.", "exampleMeaning": "I missed your call." },
+    { "word": "Сообщение", "reading": "soobshcheniye", "meaning": "Message", "example": "Отправь мне сообщение.", "exampleMeaning": "Send me a message." },
+    { "word": "Трубка", "reading": "trubka", "meaning": "Receiver / Handset", "example": "Возьми трубку, тебе звонят.", "exampleMeaning": "Pick up the phone, someone is calling you." },
+    { "word": "Набрать", "reading": "nabrat'", "meaning": "To dial", "example": "Набери этот номер.", "exampleMeaning": "Dial this number." },
+    { "word": "Ответить", "reading": "otvetit'", "meaning": "To answer", "example": "Он не ответил на звонок.", "exampleMeaning": "He didn't answer the call." },
+    { "word": "Перезвонить", "reading": "perezvonit'", "meaning": "To call back", "example": "Я перезвоню вам через час.", "exampleMeaning": "I will call you back in an hour." },
+    { "word": "Связь", "reading": "svyaz'", "meaning": "Connection / Signal", "example": "Здесь плохая связь.", "exampleMeaning": "The connection is bad here." },
+    { "word": "Сигнал", "reading": "signal", "meaning": "Signal", "example": "Нет сигнала в метро.", "exampleMeaning": "There is no signal in the metro." },
+    { "word": "Абонент", "reading": "abonent", "meaning": "Subscriber / Caller", "example": "Абонент временно недоступен.", "exampleMeaning": "The subscriber is temporarily unavailable." },
+    { "word": "Голосовая", "reading": "golosovaya", "meaning": "Voicemail", "example": "Оставьте голосовое сообщение.", "exampleMeaning": "Leave a voicemail." },
+    { "word": "Почта", "reading": "pochta", "meaning": "Mail / Email", "example": "Проверь электронную почту.", "exampleMeaning": "Check your email." },
+    { "word": "Приложение", "reading": "prilozheniye", "meaning": "App / Application", "example": "Скачай это приложение.", "exampleMeaning": "Download this app." },
+    { "word": "Уведомление", "reading": "uvedomleniye", "meaning": "Notification", "example": "Пришло новое уведомление.", "exampleMeaning": "A new notification arrived." },
+    { "word": "Батарея", "reading": "batareya", "meaning": "Battery", "example": "Батарея почти разряжена.", "exampleMeaning": "The battery is almost dead." },
+    { "word": "Зарядка", "reading": "zaryadka", "meaning": "Charger / Charging", "example": "Дай мне зарядку для телефона.", "exampleMeaning": "Give me a phone charger." },
+    { "word": "Интернет", "reading": "internet", "meaning": "Internet", "example": "Интернет работает медленно.", "exampleMeaning": "The internet is working slowly." }
+  ],
+  "exercises": [
+    { "type": "match", "pairs": 5 },
+    { "type": "fill-blank", "items": [
+      { "sentence": "Я пропустил ваш ___.", "answer": "Звонок", "hint": "Call" },
+      { "sentence": "___ почти разряжена.", "answer": "Батарея", "hint": "Battery" },
+      { "sentence": "Здесь плохая ___.", "answer": "Связь", "hint": "Connection" },
+      { "sentence": "Скачай это ___.", "answer": "Приложение", "hint": "App" },
+      { "sentence": "Я ___ вам через час.", "answer": "Перезвоню", "hint": "Will call back" }
+    ]},
+    { "type": "multiple-choice", "items": [
+      { "question": "What does 'Абонент' mean?", "options": ["Subscriber", "Operator", "Manager", "Assistant"], "answer": 0 },
+      { "question": "How do you say 'Notification' in Russian?", "options": ["Уведомление", "Сообщение", "Объявление", "Предупреждение"], "answer": 0 },
+      { "question": "What is 'Зарядка'?", "options": ["Charger", "Battery", "Cable", "Adapter"], "answer": 0 },
+      { "question": "What does 'Трубка' mean?", "options": ["Receiver / Handset", "Phone case", "Screen", "Speaker"], "answer": 0 },
+      { "question": "How do you say 'To dial' in Russian?", "options": ["Набрать", "Ответить", "Звонить", "Писать"], "answer": 0 }
+    ]}
+  ]
+}

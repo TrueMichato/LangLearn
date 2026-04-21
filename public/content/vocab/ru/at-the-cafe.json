@@ -1,0 +1,36 @@
+{
+  "id": "at-the-cafe",
+  "words": [
+    { "word": "Меню", "reading": "menyu", "meaning": "Menu", "example": "Можно посмотреть меню?", "exampleMeaning": "May I see the menu?" },
+    { "word": "Счёт", "reading": "schyot", "meaning": "Bill / Check", "example": "Принесите счёт, пожалуйста.", "exampleMeaning": "Bring the bill, please." },
+    { "word": "Официант", "reading": "ofitsiant", "meaning": "Waiter", "example": "Официант принял наш заказ.", "exampleMeaning": "The waiter took our order." },
+    { "word": "Заказ", "reading": "zakaz", "meaning": "Order", "example": "Ваш заказ будет готов через десять минут.", "exampleMeaning": "Your order will be ready in ten minutes." },
+    { "word": "Блюдо", "reading": "blyudo", "meaning": "Dish / Course", "example": "Это блюдо дня.", "exampleMeaning": "This is the dish of the day." },
+    { "word": "Порция", "reading": "portsiya", "meaning": "Portion / Serving", "example": "Порция слишком маленькая.", "exampleMeaning": "The portion is too small." },
+    { "word": "Чаевые", "reading": "chayevye", "meaning": "Tip / Gratuity", "example": "Мы оставили чаевые официанту.", "exampleMeaning": "We left a tip for the waiter." },
+    { "word": "Завтрак", "reading": "zavtrak", "meaning": "Breakfast", "example": "Завтрак подают с семи до десяти.", "exampleMeaning": "Breakfast is served from seven to ten." },
+    { "word": "Обед", "reading": "obed", "meaning": "Lunch", "example": "На обед я ем суп.", "exampleMeaning": "For lunch I eat soup." },
+    { "word": "Ужин", "reading": "uzhin", "meaning": "Dinner", "example": "Ужин будет в восемь часов.", "exampleMeaning": "Dinner will be at eight o'clock." },
+    { "word": "Десерт", "reading": "desert", "meaning": "Dessert", "example": "На десерт — мороженое.", "exampleMeaning": "For dessert — ice cream." },
+    { "word": "Напиток", "reading": "napitok", "meaning": "Drink / Beverage", "example": "Какой напиток вы хотите?", "exampleMeaning": "What drink would you like?" },
+    { "word": "Салат", "reading": "salat", "meaning": "Salad", "example": "Салат из свежих овощей.", "exampleMeaning": "A salad of fresh vegetables." },
+    { "word": "Суп", "reading": "sup", "meaning": "Soup", "example": "Суп дня — борщ.", "exampleMeaning": "The soup of the day is borscht." },
+    { "word": "Гарнир", "reading": "garnir", "meaning": "Side dish", "example": "Какой гарнир вы предпочитаете?", "exampleMeaning": "What side dish do you prefer?" },
+    { "word": "Добавка", "reading": "dobavka", "meaning": "Second helping / Refill", "example": "Можно добавку супа?", "exampleMeaning": "May I have a second helping of soup?" }
+  ],
+  "exercises": [
+    { "type": "match", "pairs": 5 },
+    { "type": "fill-blank", "items": [
+      { "sentence": "Принесите ___, пожалуйста.", "answer": "Счёт", "hint": "Bill" },
+      { "sentence": "___ принял наш заказ.", "answer": "Официант", "hint": "Waiter" },
+      { "sentence": "Можно посмотреть ___?", "answer": "Меню", "hint": "Menu" },
+      { "sentence": "Мы оставили ___ официанту.", "answer": "Чаевые", "hint": "Tip" }
+    ]},
+    { "type": "multiple-choice", "items": [
+      { "question": "What does 'Гарнир' mean?", "options": ["Side dish", "Main course", "Appetizer", "Dessert"], "answer": 0 },
+      { "question": "How do you say 'Dinner' in Russian?", "options": ["Ужин", "Обед", "Завтрак", "Полдник"], "answer": 0 },
+      { "question": "What is 'Добавка'?", "options": ["Second helping", "Recipe", "Ingredient", "Seasoning"], "answer": 0 },
+      { "question": "What does 'Чаевые' mean?", "options": ["Tip / Gratuity", "Tea leaves", "Change", "Receipt"], "answer": 0 }
+    ]}
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "id": "formal-introductions",
+  "words": [
+    { "word": "Знакомство", "reading": "znakomstvo", "meaning": "Introduction / Acquaintance", "example": "Приятно начать знакомство.", "exampleMeaning": "Nice to make your acquaintance." },
+    { "word": "Представление", "reading": "predstavleniye", "meaning": "Introduction / Presentation", "example": "Начнём с представления участников.", "exampleMeaning": "Let's start with introducing the participants." },
+    { "word": "Коллега", "reading": "kollega", "meaning": "Colleague", "example": "Это мой коллега Иван.", "exampleMeaning": "This is my colleague Ivan." },
+    { "word": "Должность", "reading": "dolzhnost'", "meaning": "Position / Title", "example": "Какую должность вы занимаете?", "exampleMeaning": "What position do you hold?" },
+    { "word": "Компания", "reading": "kompaniya", "meaning": "Company", "example": "Я работаю в крупной компании.", "exampleMeaning": "I work at a large company." },
+    { "word": "Приятно", "reading": "priyatno", "meaning": "Pleased / Nice", "example": "Очень приятно познакомиться.", "exampleMeaning": "Very pleased to meet you." },
+    { "word": "Рад", "reading": "rad", "meaning": "Glad / Happy", "example": "Рад вас видеть!", "exampleMeaning": "Glad to see you!" },
+    { "word": "Позвольте", "reading": "pozvol'te", "meaning": "Allow me / Permit me", "example": "Позвольте представиться.", "exampleMeaning": "Allow me to introduce myself." },
+    { "word": "Разрешите", "reading": "razreshite", "meaning": "Allow me (formal)", "example": "Разрешите войти.", "exampleMeaning": "Allow me to enter." },
+    { "word": "Уважаемый", "reading": "uvazhaemyy", "meaning": "Dear / Respected", "example": "Уважаемый Иван Петрович!", "exampleMeaning": "Dear Ivan Petrovich!" },
+    { "word": "Господин", "reading": "gospodin", "meaning": "Mr. / Sir", "example": "Господин Иванов, добро пожаловать.", "exampleMeaning": "Mr. Ivanov, welcome." },
+    { "word": "Госпожа", "reading": "gospozha", "meaning": "Mrs. / Madam", "example": "Госпожа Петрова, прошу вас.", "exampleMeaning": "Mrs. Petrova, please go ahead." },
+    { "word": "Визитка", "reading": "vizitka", "meaning": "Business card", "example": "Вот моя визитка.", "exampleMeaning": "Here is my business card." },
+    { "word": "Встреча", "reading": "vstrecha", "meaning": "Meeting", "example": "Встреча назначена на три часа.", "exampleMeaning": "The meeting is scheduled for three o'clock." },
+    { "word": "Переговоры", "reading": "peregovory", "meaning": "Negotiations", "example": "Переговоры прошли успешно.", "exampleMeaning": "The negotiations went successfully." },
+    { "word": "Партнёр", "reading": "partnyor", "meaning": "Partner", "example": "Наш партнёр приехал из Германии.", "exampleMeaning": "Our partner arrived from Germany." }
+  ],
+  "exercises": [
+    { "type": "match", "pairs": 5 },
+    { "type": "fill-blank", "items": [
+      { "sentence": "Очень ___ познакомиться.", "answer": "Приятно", "hint": "Pleased" },
+      { "sentence": "___ представиться.", "answer": "Позвольте", "hint": "Allow me" },
+      { "sentence": "Вот моя ___.", "answer": "Визитка", "hint": "Business card" },
+      { "sentence": "___ назначена на три часа.", "answer": "Встреча", "hint": "Meeting" }
+    ]},
+    { "type": "multiple-choice", "items": [
+      { "question": "What does 'Уважаемый' mean?", "options": ["Dear / Respected", "Kind", "Famous", "Important"], "answer": 0 },
+      { "question": "How do you say 'Colleague' in Russian?", "options": ["Коллега", "Партнёр", "Сотрудник", "Начальник"], "answer": 0 },
+      { "question": "What is 'Переговоры'?", "options": ["Negotiations", "Conversation", "Argument", "Presentation"], "answer": 0 },
+      { "question": "What does 'Госпожа' mean?", "options": ["Mrs. / Madam", "Miss", "Lady", "Princess"], "answer": 0 }
+    ]}
+  ]
+}

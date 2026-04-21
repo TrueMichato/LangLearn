@@ -1,0 +1,38 @@
+{
+  "id": "at-the-doctor",
+  "words": [
+    { "word": "Врач", "reading": "vrach", "meaning": "Doctor", "example": "Врач осмотрел пациента.", "exampleMeaning": "The doctor examined the patient." },
+    { "word": "Больница", "reading": "bol'nitsa", "meaning": "Hospital", "example": "Больница работает круглосуточно.", "exampleMeaning": "The hospital operates around the clock." },
+    { "word": "Боль", "reading": "bol'", "meaning": "Pain", "example": "Я чувствую сильную боль.", "exampleMeaning": "I feel a strong pain." },
+    { "word": "Голова", "reading": "golova", "meaning": "Head", "example": "У меня болит голова.", "exampleMeaning": "I have a headache." },
+    { "word": "Горло", "reading": "gorlo", "meaning": "Throat", "example": "У меня болит горло.", "exampleMeaning": "I have a sore throat." },
+    { "word": "Температура", "reading": "temperatura", "meaning": "Temperature / Fever", "example": "У ребёнка высокая температура.", "exampleMeaning": "The child has a high temperature." },
+    { "word": "Кашель", "reading": "kashel'", "meaning": "Cough", "example": "Кашель не проходит уже неделю.", "exampleMeaning": "The cough hasn't gone away for a week." },
+    { "word": "Рецепт", "reading": "retsept", "meaning": "Prescription", "example": "Врач выписал рецепт.", "exampleMeaning": "The doctor wrote a prescription." },
+    { "word": "Таблетка", "reading": "tabletka", "meaning": "Pill / Tablet", "example": "Принимайте таблетку три раза в день.", "exampleMeaning": "Take the pill three times a day." },
+    { "word": "Аптека", "reading": "apteka", "meaning": "Pharmacy", "example": "Аптека находится за углом.", "exampleMeaning": "The pharmacy is around the corner." },
+    { "word": "Осмотр", "reading": "osmotr", "meaning": "Examination / Checkup", "example": "Осмотр занял полчаса.", "exampleMeaning": "The examination took half an hour." },
+    { "word": "Анализ", "reading": "analiz", "meaning": "Test / Analysis", "example": "Нужно сдать анализ крови.", "exampleMeaning": "You need to take a blood test." },
+    { "word": "Здоровье", "reading": "zdorov'ye", "meaning": "Health", "example": "Здоровье — самое важное.", "exampleMeaning": "Health is the most important thing." },
+    { "word": "Болезнь", "reading": "bolezn'", "meaning": "Illness / Disease", "example": "Эта болезнь хорошо лечится.", "exampleMeaning": "This illness is easily treatable." },
+    { "word": "Лекарство", "reading": "lekarstvo", "meaning": "Medicine / Medication", "example": "Лекарство продаётся по рецепту.", "exampleMeaning": "The medicine is sold by prescription." },
+    { "word": "Скорая", "reading": "skoraya", "meaning": "Ambulance", "example": "Вызовите скорую помощь!", "exampleMeaning": "Call an ambulance!" }
+  ],
+  "exercises": [
+    { "type": "match", "pairs": 5 },
+    { "type": "fill-blank", "items": [
+      { "sentence": "У меня болит ___.", "answer": "Голова", "hint": "Head" },
+      { "sentence": "___ выписал рецепт.", "answer": "Врач", "hint": "Doctor" },
+      { "sentence": "___ находится за углом.", "answer": "Аптека", "hint": "Pharmacy" },
+      { "sentence": "Нужно сдать ___ крови.", "answer": "Анализ", "hint": "Test" },
+      { "sentence": "Принимайте ___ три раза в день.", "answer": "Таблетку", "hint": "Pill (accusative)" }
+    ]},
+    { "type": "multiple-choice", "items": [
+      { "question": "What does 'Кашель' mean?", "options": ["Cough", "Sneeze", "Fever", "Rash"], "answer": 0 },
+      { "question": "How do you say 'Prescription' in Russian?", "options": ["Рецепт", "Анализ", "Осмотр", "Диагноз"], "answer": 0 },
+      { "question": "What is 'Больница'?", "options": ["Hospital", "Clinic", "Pharmacy", "Laboratory"], "answer": 0 },
+      { "question": "What does 'Лекарство' mean?", "options": ["Medicine", "Symptom", "Bandage", "Injection"], "answer": 0 },
+      { "question": "How do you say 'Health' in Russian?", "options": ["Здоровье", "Болезнь", "Лечение", "Здание"], "answer": 0 }
+    ]}
+  ]
+}

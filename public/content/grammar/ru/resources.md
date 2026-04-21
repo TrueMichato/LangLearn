@@ -13,8 +13,16 @@ These structured courses are excellent starting points for self-study:
 - **learnrussian.rt.com** — Class-style interactive lessons with native audio recordings
 - **russianforfree.com** — Good audio content with a simple, easy-to-navigate layout
 - **mezhdunami.org** *(Между нами)* — A free, comprehensive immersive textbook modeled after a US college Russian course — one of the best free resources available
+- **learnrussianstepbystep.com** — 137 structured lessons on grammar and vocabulary with audio, organized progressively from alphabet to advanced grammar
 
 > **Tip:** Don't try to use all of these at once. Pick one main course and stick with it. Use others as supplementary reference when you need a different explanation of a concept.
+
+---
+
+## Phrasebooks & Structured Courses
+
+- **Book2 / 50languages.com** — 100 free phrasebook-style lessons for English-to-Russian learners, with MP3 audio by native speakers. Great for building practical conversational skills
+- **RussianLessons.net Vocabulary** — Extensive categorized vocabulary lists (food, drinks, body parts, etc.) with Russian audio — excellent supplementary resource for building topic-specific vocabulary
 
 ---
 
@@ -59,6 +67,7 @@ Having the right dictionary makes all the difference. Bookmark these:
 - **Yandex Translate** — Higher-quality Russian translations than most alternatives; handles context well
 - **MasterRussian Verb Conjugations** — The best free reference for Russian verb forms across all tenses and aspects
 - **Forvo** — Native speaker pronunciations of virtually any Russian word — hear how real people say it
+- **RussianForFree.com Dialogues** — Graded dialogues (beginner to advanced) with audio and translations, plus grammar exercises organized by level
 
 > **Tip:** Use ReversoContext alongside a standard dictionary. Seeing a word in 10 different sentences teaches you more than memorizing one definition.
 
@@ -81,6 +90,12 @@ Reading is one of the most effective ways to build vocabulary naturally.
 
 ---
 
+## Flashcard Decks & Sentence Practice
+
+- **5000 Russian Sentences (Anki deck)** — 5000 sentences sorted from easiest to hardest based on word frequency analysis. Available as a free Anki deck at [ankiweb.net/shared/info/1555716615](https://ankiweb.net/shared/info/1555716615). Excellent for graduated reading and sentence comprehension practice
+
+---
+
 ## Listening Resources
 
 Training your ear is essential — Russian sounds very different from how it looks on paper.
@@ -88,6 +103,7 @@ Training your ear is essential — Russian sounds very different from how it loo
 - **News in Slow Russian** — Current events spoken at a learner-friendly pace — great for intermediate learners
 - **russianpodcast.eu** — A collection of Russian podcast episodes with transcripts
 - **Эхо Москвы** *(Ekho Moskvy)* — Radio interviews WITH full transcripts — invaluable for comprehension practice because you can listen first, then check your understanding
+- **GLOSS (gloss.dliflc.edu)** — Grammar notes and graded listening materials from the Defense Language Institute, organized by level. Includes Russian content with audio and transcripts. (Note: site may not work on all browsers)
 
 ### Listening Strategy
 

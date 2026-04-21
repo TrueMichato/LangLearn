@@ -1,0 +1,37 @@
+{
+  "id": "nuts-grains-spices",
+  "words": [
+    { "word": "Орех", "reading": "orekh", "meaning": "Nut", "example": "Орехи полезны для мозга.", "exampleMeaning": "Nuts are good for the brain." },
+    { "word": "Арахис", "reading": "arakhis", "meaning": "Peanut", "example": "Арахис добавляют в салат.", "exampleMeaning": "Peanuts are added to salad." },
+    { "word": "Миндаль", "reading": "mindal'", "meaning": "Almond", "example": "Миндаль используют в выпечке.", "exampleMeaning": "Almonds are used in baking." },
+    { "word": "Рис", "reading": "ris", "meaning": "Rice", "example": "Рис варится двадцать минут.", "exampleMeaning": "Rice cooks for twenty minutes." },
+    { "word": "Гречка", "reading": "grechka", "meaning": "Buckwheat", "example": "Гречка — любимая крупа в России.", "exampleMeaning": "Buckwheat is the favorite grain in Russia." },
+    { "word": "Овёс", "reading": "ovyos", "meaning": "Oats", "example": "Овёс используют для каши.", "exampleMeaning": "Oats are used for porridge." },
+    { "word": "Мука", "reading": "muka", "meaning": "Flour", "example": "Из муки пекут хлеб.", "exampleMeaning": "Bread is baked from flour." },
+    { "word": "Соль", "reading": "sol'", "meaning": "Salt", "example": "Добавь немного соли.", "exampleMeaning": "Add a little salt." },
+    { "word": "Сахар", "reading": "sakhar", "meaning": "Sugar", "example": "Сахар вреден для зубов.", "exampleMeaning": "Sugar is bad for teeth." },
+    { "word": "Перец", "reading": "perets", "meaning": "Pepper (spice)", "example": "Чёрный перец улучшает вкус.", "exampleMeaning": "Black pepper improves the taste." },
+    { "word": "Корица", "reading": "koritsa", "meaning": "Cinnamon", "example": "Корица пахнет приятно.", "exampleMeaning": "Cinnamon smells pleasant." },
+    { "word": "Имбирь", "reading": "imbir'", "meaning": "Ginger", "example": "Чай с имбирём согревает.", "exampleMeaning": "Tea with ginger warms you up." },
+    { "word": "Укроп", "reading": "ukrop", "meaning": "Dill", "example": "Укроп кладут в салат.", "exampleMeaning": "Dill is put into salad." },
+    { "word": "Петрушка", "reading": "petrushka", "meaning": "Parsley", "example": "Петрушка украшает блюдо.", "exampleMeaning": "Parsley decorates the dish." },
+    { "word": "Чеснок", "reading": "chesnok", "meaning": "Garlic", "example": "Чеснок помогает от простуды.", "exampleMeaning": "Garlic helps against colds." },
+    { "word": "Горчица", "reading": "gorchitsa", "meaning": "Mustard", "example": "Горчицу подают к мясу.", "exampleMeaning": "Mustard is served with meat." }
+  ],
+  "exercises": [
+    { "type": "match", "pairs": 5 },
+    { "type": "fill-blank", "items": [
+      { "sentence": "___ — любимая крупа в России.", "answer": "Гречка", "hint": "Buckwheat" },
+      { "sentence": "Из ___ пекут хлеб.", "answer": "Муки", "hint": "Flour (genitive)" },
+      { "sentence": "Чай с ___ согревает.", "answer": "Имбирём", "hint": "Ginger (instrumental)" },
+      { "sentence": "___ пахнет приятно.", "answer": "Корица", "hint": "Cinnamon" },
+      { "sentence": "___ полезны для мозга.", "answer": "Орехи", "hint": "Nuts" }
+    ]},
+    { "type": "multiple-choice", "items": [
+      { "question": "What does 'Гречка' mean?", "options": ["Buckwheat", "Barley", "Wheat", "Oats"], "answer": 0 },
+      { "question": "How do you say 'Dill' in Russian?", "options": ["Укроп", "Петрушка", "Базилик", "Мята"], "answer": 0 },
+      { "question": "What is 'Миндаль'?", "options": ["Almond", "Walnut", "Peanut", "Cashew"], "answer": 0 },
+      { "question": "What does 'Горчица' mean?", "options": ["Mustard", "Ketchup", "Mayonnaise", "Vinegar"], "answer": 0 }
+    ]}
+  ]
+}

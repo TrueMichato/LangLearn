@@ -1,0 +1,38 @@
+{
+  "id": "asking-for-help",
+  "words": [
+    { "word": "Помощь", "reading": "pomoshch'", "meaning": "Help / Assistance", "example": "Мне нужна ваша помощь.", "exampleMeaning": "I need your help." },
+    { "word": "Помогите", "reading": "pomogite", "meaning": "Help! (imperative)", "example": "Помогите мне, пожалуйста!", "exampleMeaning": "Help me, please!" },
+    { "word": "Пожалуйста", "reading": "pozhaluysta", "meaning": "Please / You're welcome", "example": "Скажите, пожалуйста, где метро?", "exampleMeaning": "Tell me, please, where is the metro?" },
+    { "word": "Извините", "reading": "izvinite", "meaning": "Excuse me / Sorry", "example": "Извините, я опоздал.", "exampleMeaning": "Sorry, I'm late." },
+    { "word": "Простите", "reading": "prostite", "meaning": "Forgive me / Pardon", "example": "Простите за беспокойство.", "exampleMeaning": "Pardon me for the trouble." },
+    { "word": "Подскажите", "reading": "podskazhite", "meaning": "Could you tell me", "example": "Подскажите, как пройти к вокзалу?", "exampleMeaning": "Could you tell me how to get to the station?" },
+    { "word": "Можно", "reading": "mozhno", "meaning": "May I / Is it allowed", "example": "Можно войти?", "exampleMeaning": "May I come in?" },
+    { "word": "Нельзя", "reading": "nel'zya", "meaning": "It is not allowed / Cannot", "example": "Здесь нельзя курить.", "exampleMeaning": "Smoking is not allowed here." },
+    { "word": "Проблема", "reading": "problema", "meaning": "Problem", "example": "У меня проблема с телефоном.", "exampleMeaning": "I have a problem with my phone." },
+    { "word": "Нужно", "reading": "nuzhno", "meaning": "It is necessary / Need to", "example": "Нужно вызвать врача.", "exampleMeaning": "It is necessary to call a doctor." },
+    { "word": "Срочно", "reading": "srochno", "meaning": "Urgently", "example": "Мне срочно нужен врач.", "exampleMeaning": "I urgently need a doctor." },
+    { "word": "Опасно", "reading": "opasno", "meaning": "Dangerous", "example": "Здесь опасно ходить ночью.", "exampleMeaning": "It's dangerous to walk here at night." },
+    { "word": "Полиция", "reading": "politsiya", "meaning": "Police", "example": "Вызовите полицию!", "exampleMeaning": "Call the police!" },
+    { "word": "Скорая", "reading": "skoraya", "meaning": "Ambulance", "example": "Скорая приехала быстро.", "exampleMeaning": "The ambulance arrived quickly." },
+    { "word": "Пожарные", "reading": "pozharnye", "meaning": "Fire department / Firefighters", "example": "Пожарные тушат огонь.", "exampleMeaning": "The firefighters are putting out the fire." },
+    { "word": "Спасите", "reading": "spasite", "meaning": "Save me! / Rescue!", "example": "Спасите, я тону!", "exampleMeaning": "Help, I'm drowning!" }
+  ],
+  "exercises": [
+    { "type": "match", "pairs": 5 },
+    { "type": "fill-blank", "items": [
+      { "sentence": "___, я опоздал.", "answer": "Извините", "hint": "Excuse me" },
+      { "sentence": "Здесь ___ курить.", "answer": "Нельзя", "hint": "It is not allowed" },
+      { "sentence": "Вызовите ___!", "answer": "Полицию", "hint": "Police (accusative)" },
+      { "sentence": "Мне ___ нужен врач.", "answer": "Срочно", "hint": "Urgently" },
+      { "sentence": "___, как пройти к вокзалу?", "answer": "Подскажите", "hint": "Could you tell me" }
+    ]},
+    { "type": "multiple-choice", "items": [
+      { "question": "What does 'Нельзя' mean?", "options": ["It is not allowed", "It is possible", "It is necessary", "It is easy"], "answer": 0 },
+      { "question": "How do you say 'Ambulance' in Russian?", "options": ["Скорая", "Полиция", "Пожарные", "Врач"], "answer": 0 },
+      { "question": "What is 'Подскажите'?", "options": ["Could you tell me", "Listen", "Look", "Wait"], "answer": 0 },
+      { "question": "What does 'Опасно' mean?", "options": ["Dangerous", "Safe", "Careful", "Quiet"], "answer": 0 },
+      { "question": "How do you say 'Help!' in Russian?", "options": ["Помогите", "Простите", "Извините", "Спасибо"], "answer": 0 }
+    ]}
+  ]
+}

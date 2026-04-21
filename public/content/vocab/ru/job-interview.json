@@ -1,0 +1,38 @@
+{
+  "id": "job-interview",
+  "words": [
+    { "word": "Собеседование", "reading": "sobesedovaniye", "meaning": "Job interview", "example": "Собеседование назначено на завтра.", "exampleMeaning": "The interview is scheduled for tomorrow." },
+    { "word": "Резюме", "reading": "rezyume", "meaning": "Resume / CV", "example": "Отправьте резюме по электронной почте.", "exampleMeaning": "Send your resume by email." },
+    { "word": "Опыт", "reading": "opyt", "meaning": "Experience", "example": "У меня пять лет опыта работы.", "exampleMeaning": "I have five years of work experience." },
+    { "word": "Образование", "reading": "obrazovaniye", "meaning": "Education", "example": "Какое у вас образование?", "exampleMeaning": "What is your education?" },
+    { "word": "Зарплата", "reading": "zarplata", "meaning": "Salary", "example": "Зарплату выплачивают два раза в месяц.", "exampleMeaning": "The salary is paid twice a month." },
+    { "word": "Должность", "reading": "dolzhnost'", "meaning": "Position / Job title", "example": "Я претендую на должность менеджера.", "exampleMeaning": "I am applying for the manager position." },
+    { "word": "Обязанности", "reading": "obyazannosti", "meaning": "Duties / Responsibilities", "example": "Какие обязанности у этой должности?", "exampleMeaning": "What are the duties of this position?" },
+    { "word": "Навыки", "reading": "navyki", "meaning": "Skills", "example": "Какие навыки вам нужны?", "exampleMeaning": "What skills do you need?" },
+    { "word": "Карьера", "reading": "kar'yera", "meaning": "Career", "example": "Он строит успешную карьеру.", "exampleMeaning": "He is building a successful career." },
+    { "word": "Стажировка", "reading": "stazhirovka", "meaning": "Internship", "example": "Стажировка длится три месяца.", "exampleMeaning": "The internship lasts three months." },
+    { "word": "Увольнение", "reading": "uvol'neniye", "meaning": "Dismissal / Termination", "example": "Увольнение стало неожиданностью.", "exampleMeaning": "The dismissal was a surprise." },
+    { "word": "Повышение", "reading": "povysheniye", "meaning": "Promotion", "example": "Она получила повышение.", "exampleMeaning": "She received a promotion." },
+    { "word": "График", "reading": "grafik", "meaning": "Schedule", "example": "У нас гибкий график работы.", "exampleMeaning": "We have a flexible work schedule." },
+    { "word": "Отпуск", "reading": "otpusk", "meaning": "Vacation / Leave", "example": "Отпуск начинается через неделю.", "exampleMeaning": "Vacation starts in a week." },
+    { "word": "Сотрудник", "reading": "sotrudnik", "meaning": "Employee", "example": "В компании сто сотрудников.", "exampleMeaning": "The company has one hundred employees." },
+    { "word": "Руководитель", "reading": "rukovoditel'", "meaning": "Manager / Supervisor", "example": "Руководитель проводит совещание.", "exampleMeaning": "The manager is holding a meeting." }
+  ],
+  "exercises": [
+    { "type": "match", "pairs": 5 },
+    { "type": "fill-blank", "items": [
+      { "sentence": "___ назначено на завтра.", "answer": "Собеседование", "hint": "Interview" },
+      { "sentence": "Отправьте ___ по электронной почте.", "answer": "Резюме", "hint": "Resume" },
+      { "sentence": "Она получила ___.", "answer": "Повышение", "hint": "Promotion" },
+      { "sentence": "У нас гибкий ___ работы.", "answer": "График", "hint": "Schedule" },
+      { "sentence": "___ длится три месяца.", "answer": "Стажировка", "hint": "Internship" }
+    ]},
+    { "type": "multiple-choice", "items": [
+      { "question": "What does 'Обязанности' mean?", "options": ["Duties", "Abilities", "Goals", "Benefits"], "answer": 0 },
+      { "question": "How do you say 'Salary' in Russian?", "options": ["Зарплата", "Деньги", "Премия", "Бюджет"], "answer": 0 },
+      { "question": "What is 'Увольнение'?", "options": ["Dismissal", "Promotion", "Transfer", "Retirement"], "answer": 0 },
+      { "question": "What does 'Руководитель' mean?", "options": ["Manager / Supervisor", "Secretary", "Intern", "Accountant"], "answer": 0 },
+      { "question": "How do you say 'Skills' in Russian?", "options": ["Навыки", "Знания", "Умения", "Способности"], "answer": 0 }
+    ]}
+  ]
+}

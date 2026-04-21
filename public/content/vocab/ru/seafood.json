@@ -1,0 +1,38 @@
+{
+  "id": "seafood",
+  "words": [
+    { "word": "Рыба", "reading": "ryba", "meaning": "Fish", "example": "Рыба плавает в реке.", "exampleMeaning": "The fish swims in the river." },
+    { "word": "Лосось", "reading": "losos'", "meaning": "Salmon", "example": "Лосось — дорогая рыба.", "exampleMeaning": "Salmon is an expensive fish." },
+    { "word": "Тунец", "reading": "tunets", "meaning": "Tuna", "example": "Тунец продаётся в консервах.", "exampleMeaning": "Tuna is sold in cans." },
+    { "word": "Креветка", "reading": "krevetka", "meaning": "Shrimp", "example": "Креветки подают с лимоном.", "exampleMeaning": "Shrimp is served with lemon." },
+    { "word": "Краб", "reading": "krab", "meaning": "Crab", "example": "Краб живёт в море.", "exampleMeaning": "The crab lives in the sea." },
+    { "word": "Кальмар", "reading": "kal'mar", "meaning": "Squid", "example": "Кальмар — популярная закуска.", "exampleMeaning": "Squid is a popular appetizer." },
+    { "word": "Устрица", "reading": "ustritsa", "meaning": "Oyster", "example": "Устрицы считаются деликатесом.", "exampleMeaning": "Oysters are considered a delicacy." },
+    { "word": "Сельдь", "reading": "sel'd'", "meaning": "Herring", "example": "Сельдь под шубой — русский салат.", "exampleMeaning": "Herring under a fur coat is a Russian salad." },
+    { "word": "Форель", "reading": "forel'", "meaning": "Trout", "example": "Форель водится в горных реках.", "exampleMeaning": "Trout is found in mountain rivers." },
+    { "word": "Окунь", "reading": "okun'", "meaning": "Perch", "example": "Окунь — пресноводная рыба.", "exampleMeaning": "Perch is a freshwater fish." },
+    { "word": "Щука", "reading": "shchuka", "meaning": "Pike", "example": "Щука — хищная рыба.", "exampleMeaning": "Pike is a predatory fish." },
+    { "word": "Треска", "reading": "treska", "meaning": "Cod", "example": "Треску запекают в духовке.", "exampleMeaning": "Cod is baked in the oven." },
+    { "word": "Мидия", "reading": "midiya", "meaning": "Mussel", "example": "Мидии готовят в белом вине.", "exampleMeaning": "Mussels are cooked in white wine." },
+    { "word": "Икра", "reading": "ikra", "meaning": "Caviar", "example": "Красная икра — символ праздника.", "exampleMeaning": "Red caviar is a symbol of celebration." },
+    { "word": "Осётр", "reading": "osyotr", "meaning": "Sturgeon", "example": "Осётр живёт очень долго.", "exampleMeaning": "Sturgeon lives for a very long time." },
+    { "word": "Камбала", "reading": "kambala", "meaning": "Flounder", "example": "Камбала — плоская рыба.", "exampleMeaning": "Flounder is a flat fish." }
+  ],
+  "exercises": [
+    { "type": "match", "pairs": 5 },
+    { "type": "fill-blank", "items": [
+      { "sentence": "___ плавает в реке.", "answer": "Рыба", "hint": "Fish" },
+      { "sentence": "Красная ___ — символ праздника.", "answer": "Икра", "hint": "Caviar" },
+      { "sentence": "___ под шубой — русский салат.", "answer": "Сельдь", "hint": "Herring" },
+      { "sentence": "___ — дорогая рыба.", "answer": "Лосось", "hint": "Salmon" },
+      { "sentence": "___ подают с лимоном.", "answer": "Креветки", "hint": "Shrimp (plural)" }
+    ]},
+    { "type": "multiple-choice", "items": [
+      { "question": "What does 'Кальмар' mean?", "options": ["Squid", "Octopus", "Shrimp", "Crab"], "answer": 0 },
+      { "question": "How do you say 'Trout' in Russian?", "options": ["Форель", "Треска", "Сельдь", "Щука"], "answer": 0 },
+      { "question": "What is 'Устрица'?", "options": ["Oyster", "Mussel", "Clam", "Snail"], "answer": 0 },
+      { "question": "What does 'Щука' mean?", "options": ["Pike", "Perch", "Carp", "Catfish"], "answer": 0 },
+      { "question": "How do you say 'Sturgeon' in Russian?", "options": ["Осётр", "Окунь", "Лосось", "Тунец"], "answer": 0 }
+    ]}
+  ]
+}

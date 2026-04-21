@@ -1,0 +1,36 @@
+{
+  "id": "drinks-beverages",
+  "words": [
+    { "word": "Вода", "reading": "voda", "meaning": "Water", "example": "Пей больше воды.", "exampleMeaning": "Drink more water." },
+    { "word": "Чай", "reading": "chay", "meaning": "Tea", "example": "Чай с мёдом лечит простуду.", "exampleMeaning": "Tea with honey cures a cold." },
+    { "word": "Кофе", "reading": "kofe", "meaning": "Coffee", "example": "Кофе бодрит по утрам.", "exampleMeaning": "Coffee energizes in the mornings." },
+    { "word": "Сок", "reading": "sok", "meaning": "Juice", "example": "Апельсиновый сок очень вкусный.", "exampleMeaning": "Orange juice is very tasty." },
+    { "word": "Молоко", "reading": "moloko", "meaning": "Milk", "example": "Дети пьют молоко на ночь.", "exampleMeaning": "Children drink milk at night." },
+    { "word": "Кефир", "reading": "kefir", "meaning": "Kefir", "example": "Кефир полезен для пищеварения.", "exampleMeaning": "Kefir is good for digestion." },
+    { "word": "Лимонад", "reading": "limonad", "meaning": "Lemonade", "example": "В жару пьют холодный лимонад.", "exampleMeaning": "In the heat people drink cold lemonade." },
+    { "word": "Компот", "reading": "kompot", "meaning": "Compote", "example": "Бабушка варит компот из ягод.", "exampleMeaning": "Grandma makes compote from berries." },
+    { "word": "Квас", "reading": "kvas", "meaning": "Kvass", "example": "Квас — традиционный русский напиток.", "exampleMeaning": "Kvass is a traditional Russian drink." },
+    { "word": "Какао", "reading": "kakao", "meaning": "Cocoa / Hot chocolate", "example": "Зимой дети пьют горячее какао.", "exampleMeaning": "In winter children drink hot cocoa." },
+    { "word": "Пиво", "reading": "pivo", "meaning": "Beer", "example": "Пиво подают холодным.", "exampleMeaning": "Beer is served cold." },
+    { "word": "Вино", "reading": "vino", "meaning": "Wine", "example": "Красное вино подходит к мясу.", "exampleMeaning": "Red wine goes with meat." },
+    { "word": "Водка", "reading": "vodka", "meaning": "Vodka", "example": "Водка — крепкий напиток.", "exampleMeaning": "Vodka is a strong drink." },
+    { "word": "Коктейль", "reading": "kokteyl'", "meaning": "Cocktail", "example": "Она заказала фруктовый коктейль.", "exampleMeaning": "She ordered a fruit cocktail." },
+    { "word": "Минералка", "reading": "mineralka", "meaning": "Mineral water", "example": "Дайте бутылку минералки.", "exampleMeaning": "Give me a bottle of mineral water." },
+    { "word": "Смузи", "reading": "smuzi", "meaning": "Smoothie", "example": "Смузи из банана и клубники.", "exampleMeaning": "A banana and strawberry smoothie." }
+  ],
+  "exercises": [
+    { "type": "match", "pairs": 5 },
+    { "type": "fill-blank", "items": [
+      { "sentence": "___ бодрит по утрам.", "answer": "Кофе", "hint": "Coffee" },
+      { "sentence": "___ — традиционный русский напиток.", "answer": "Квас", "hint": "Kvass" },
+      { "sentence": "Дети пьют ___ на ночь.", "answer": "Молоко", "hint": "Milk" },
+      { "sentence": "Красное ___ подходит к мясу.", "answer": "Вино", "hint": "Wine" }
+    ]},
+    { "type": "multiple-choice", "items": [
+      { "question": "What does 'Кефир' mean?", "options": ["Kefir", "Yogurt", "Cream", "Buttermilk"], "answer": 0 },
+      { "question": "How do you say 'Juice' in Russian?", "options": ["Сок", "Сироп", "Суп", "Соус"], "answer": 0 },
+      { "question": "What is 'Компот'?", "options": ["Compote", "Jam", "Marmalade", "Jelly"], "answer": 0 },
+      { "question": "What does 'Минералка' mean?", "options": ["Mineral water", "Soda", "Sparkling wine", "Spring water"], "answer": 0 }
+    ]}
+  ]
+}

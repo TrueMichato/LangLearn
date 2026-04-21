@@ -1,0 +1,38 @@
+{
+  "id": "at-the-airport",
+  "words": [
+    { "word": "Аэропорт", "reading": "aeroport", "meaning": "Airport", "example": "Аэропорт находится за городом.", "exampleMeaning": "The airport is outside the city." },
+    { "word": "Самолёт", "reading": "samolyot", "meaning": "Airplane", "example": "Самолёт вылетает в шесть утра.", "exampleMeaning": "The airplane departs at six in the morning." },
+    { "word": "Рейс", "reading": "reys", "meaning": "Flight", "example": "Мой рейс задержали на два часа.", "exampleMeaning": "My flight was delayed by two hours." },
+    { "word": "Посадка", "reading": "posadka", "meaning": "Boarding", "example": "Посадка начинается через полчаса.", "exampleMeaning": "Boarding begins in half an hour." },
+    { "word": "Багаж", "reading": "bagazh", "meaning": "Luggage / Baggage", "example": "Мой багаж потерялся.", "exampleMeaning": "My luggage got lost." },
+    { "word": "Паспорт", "reading": "pasport", "meaning": "Passport", "example": "Покажите ваш паспорт.", "exampleMeaning": "Show your passport." },
+    { "word": "Виза", "reading": "viza", "meaning": "Visa", "example": "Виза действительна три месяца.", "exampleMeaning": "The visa is valid for three months." },
+    { "word": "Таможня", "reading": "tamozhnya", "meaning": "Customs", "example": "На таможне проверяют багаж.", "exampleMeaning": "At customs they check the luggage." },
+    { "word": "Регистрация", "reading": "registratsiya", "meaning": "Check-in", "example": "Регистрация на рейс уже открыта.", "exampleMeaning": "Check-in for the flight is already open." },
+    { "word": "Выход", "reading": "vykhod", "meaning": "Gate / Exit", "example": "Посадка у выхода номер пять.", "exampleMeaning": "Boarding is at gate number five." },
+    { "word": "Задержка", "reading": "zaderzhka", "meaning": "Delay", "example": "Задержка рейса из-за погоды.", "exampleMeaning": "The flight delay is due to weather." },
+    { "word": "Прибытие", "reading": "pribytiye", "meaning": "Arrival", "example": "Время прибытия — десять часов.", "exampleMeaning": "The arrival time is ten o'clock." },
+    { "word": "Отправление", "reading": "otpravleniye", "meaning": "Departure", "example": "Табло отправления в зале.", "exampleMeaning": "The departure board is in the hall." },
+    { "word": "Пересадка", "reading": "peresadka", "meaning": "Transfer / Layover", "example": "У нас пересадка в Москве.", "exampleMeaning": "We have a layover in Moscow." },
+    { "word": "Билет", "reading": "bilet", "meaning": "Ticket", "example": "Я купил билет онлайн.", "exampleMeaning": "I bought the ticket online." },
+    { "word": "Терминал", "reading": "terminal", "meaning": "Terminal", "example": "Международный терминал слева.", "exampleMeaning": "The international terminal is on the left." }
+  ],
+  "exercises": [
+    { "type": "match", "pairs": 5 },
+    { "type": "fill-blank", "items": [
+      { "sentence": "Мой ___ потерялся.", "answer": "Багаж", "hint": "Luggage" },
+      { "sentence": "___ на рейс уже открыта.", "answer": "Регистрация", "hint": "Check-in" },
+      { "sentence": "У нас ___ в Москве.", "answer": "Пересадка", "hint": "Transfer" },
+      { "sentence": "Покажите ваш ___.", "answer": "Паспорт", "hint": "Passport" },
+      { "sentence": "___ начинается через полчаса.", "answer": "Посадка", "hint": "Boarding" }
+    ]},
+    { "type": "multiple-choice", "items": [
+      { "question": "What does 'Таможня' mean?", "options": ["Customs", "Gate", "Terminal", "Counter"], "answer": 0 },
+      { "question": "How do you say 'Delay' in Russian?", "options": ["Задержка", "Посадка", "Пересадка", "Отправление"], "answer": 0 },
+      { "question": "What is 'Прибытие'?", "options": ["Arrival", "Departure", "Transfer", "Boarding"], "answer": 0 },
+      { "question": "What does 'Рейс' mean?", "options": ["Flight", "Trip", "Route", "Journey"], "answer": 0 },
+      { "question": "How do you say 'Terminal' in Russian?", "options": ["Терминал", "Выход", "Вокзал", "Зал"], "answer": 0 }
+    ]}
+  ]
+}

@@ -330,4 +330,46 @@ export const RU_NOUNS: RuNoun[] = [
       prepositional: { singular: 'сестре', plural: 'сёстрах' },
     },
   },
+  // Neuter, regular
+  {
+    nominative: 'место',
+    meaning: 'place',
+    gender: 'neuter',
+    declensions: {
+      nominative: { singular: 'место', plural: 'места' },
+      genitive: { singular: 'места', plural: 'мест' },
+      dative: { singular: 'месту', plural: 'местам' },
+      accusative: { singular: 'место', plural: 'места' },
+      instrumental: { singular: 'местом', plural: 'местами' },
+      prepositional: { singular: 'месте', plural: 'местах' },
+    },
+  },
+  // Feminine, soft-stem, 3rd declension
+  {
+    nominative: 'дверь',
+    meaning: 'door',
+    gender: 'feminine',
+    declensions: {
+      nominative: { singular: 'дверь', plural: 'двери' },
+      genitive: { singular: 'двери', plural: 'дверей' },
+      dative: { singular: 'двери', plural: 'дверям' },
+      accusative: { singular: 'дверь', plural: 'двери' },
+      instrumental: { singular: 'дверью', plural: 'дверьми' },
+      prepositional: { singular: 'двери', plural: 'дверях' },
+    },
+  },
+  // Feminine, soft-stem, 3rd declension
+  {
+    nominative: 'тетрадь',
+    meaning: 'notebook',
+    gender: 'feminine',
+    declensions: {
+      nominative: { singular: 'тетрадь', plural: 'тетради' },
+      genitive: { singular: 'тетради', plural: 'тетрадей' },
+      dative: { singular: 'тетради', plural: 'тетрадям' },
+      accusative: { singular: 'тетрадь', plural: 'тетради' },
+      instrumental: { singular: 'тетрадью', plural: 'тетрадями' },
+      prepositional: { singular: 'тетради', plural: 'тетрадях' },
+    },
+  },
 ];

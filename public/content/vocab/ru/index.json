@@ -53,5 +53,20 @@
   { "id": "formal-correspondence", "title": "Formal Correspondence", "order": 52, "wordCount": 16, "level": "advanced" },
   { "id": "news-media-vocab", "title": "News & Media Vocabulary", "order": 53, "wordCount": 16, "level": "advanced" },
   { "id": "literature-arts", "title": "Literature & Arts", "order": 54, "wordCount": 16, "level": "advanced" },
-  { "id": "science-nature", "title": "Science & Nature", "order": 55, "wordCount": 16, "level": "advanced" }
+  { "id": "science-nature", "title": "Science & Nature", "order": 55, "wordCount": 16, "level": "advanced" },
+  { "id": "fruits-berries", "title": "Fruits & Berries", "order": 56, "wordCount": 16, "level": "beginner" },
+  { "id": "vegetables", "title": "Vegetables", "order": 57, "wordCount": 16, "level": "beginner" },
+  { "id": "seafood", "title": "Fish & Seafood", "order": 58, "wordCount": 16, "level": "intermediate" },
+  { "id": "meat-poultry", "title": "Meat & Poultry", "order": 59, "wordCount": 16, "level": "elementary" },
+  { "id": "nuts-grains-spices", "title": "Nuts, Grains & Spices", "order": 60, "wordCount": 16, "level": "intermediate" },
+  { "id": "drinks-beverages", "title": "Drinks & Beverages", "order": 61, "wordCount": 16, "level": "beginner" },
+  { "id": "at-the-cafe", "title": "At the Café", "order": 62, "wordCount": 16, "level": "beginner" },
+  { "id": "asking-for-help", "title": "Asking for Help", "order": 63, "wordCount": 16, "level": "beginner" },
+  { "id": "at-the-airport", "title": "At the Airport", "order": 64, "wordCount": 16, "level": "elementary" },
+  { "id": "at-the-hotel", "title": "At the Hotel", "order": 65, "wordCount": 16, "level": "elementary" },
+  { "id": "at-the-doctor", "title": "At the Doctor", "order": 66, "wordCount": 16, "level": "elementary" },
+  { "id": "russian-cuisine", "title": "Russian Cuisine", "order": 67, "wordCount": 16, "level": "intermediate" },
+  { "id": "formal-introductions", "title": "Formal Introductions", "order": 68, "wordCount": 16, "level": "beginner" },
+  { "id": "phone-messaging", "title": "Phone & Messaging", "order": 69, "wordCount": 16, "level": "intermediate" },
+  { "id": "job-interview", "title": "Job Interview", "order": 70, "wordCount": 16, "level": "advanced" }
 ]
