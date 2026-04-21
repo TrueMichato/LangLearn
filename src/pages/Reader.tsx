@@ -15,6 +15,8 @@ import { getLanguageLabel } from '../lib/languages';
 import { SkeletonCard, SkeletonList } from '../components/common/Skeleton';
 import ComprehensionIndicator from '../components/reader/ComprehensionIndicator';
 import { getKnownWordSet } from '../lib/text-analysis';
+import { parseWithIchiMoe, getIchiMoeUrl, type IchiMoeWord } from '../lib/ichimoe';
+import WordDefinitions from '../components/reader/WordDefinitions';
 
 type Tab = 'import' | 'library';
 
@@ -39,6 +41,10 @@ export default function ReaderPage() {
   const { showStressMarks } = useSettingsStore();
   const [highlightKnown, setHighlightKnown] = useState(false);
   const [knownWordSet, setKnownWordSet] = useState<Set<string>>(new Set());
+  const [ichiMoeWords, setIchiMoeWords] = useState<IchiMoeWord[]>([]);
+  const [ichiMoeCorsBlocked, setIchiMoeCorsBlocked] = useState(false);
+  const [ichiMoeLoading, setIchiMoeLoading] = useState(false);
+  const [ichiMoeOpen, setIchiMoeOpen] = useState(false);
 
   // Load known words when highlighting is toggled on or text/language changes
   const refreshKnownWords = useCallback(async () => {
@@ -71,6 +77,10 @@ export default function ReaderPage() {
     setSelectedWord(null);
     setSelectedReading('');
     setSelectedSentence('');
+    setIchiMoeWords([]);
+    setIchiMoeCorsBlocked(false);
+    setIchiMoeLoading(false);
+    setIchiMoeOpen(false);
   }
 
   function switchTab(newTab: Tab) {
@@ -200,6 +210,20 @@ export default function ReaderPage() {
     setSelectedReading('');
     // Refresh known word set so highlight updates after mining
     refreshKnownWords();
+  };
+
+  const handleParseWithIchiMoe = async () => {
+    if (!text.trim() || language !== 'ja') return;
+    setIchiMoeLoading(true);
+    setIchiMoeCorsBlocked(false);
+    setIchiMoeOpen(true);
+    try {
+      const result = await parseWithIchiMoe(text);
+      setIchiMoeWords(result.words);
+      setIchiMoeCorsBlocked(result.corsBlocked);
+    } finally {
+      setIchiMoeLoading(false);
+    }
   };
 
   const hasTokens = tokens.length > 0 || jaTokens.length > 0;
@@ -369,6 +393,86 @@ export default function ReaderPage() {
           })
         )}
       </div>
+
+      {/* ichi.moe parse section — Japanese only */}
+      {language === 'ja' && (
+        <div className="mt-3">
+          {!ichiMoeOpen ? (
+            <button
+              onClick={handleParseWithIchiMoe}
+              className="w-full flex items-center justify-center gap-2 bg-white dark:bg-slate-800 text-indigo-600 dark:text-indigo-400 border border-indigo-200 dark:border-indigo-800 py-2.5 rounded-xl font-medium hover:bg-indigo-50 dark:hover:bg-slate-700 transition-colors press-feedback min-h-[44px]"
+            >
+              <span>📖</span>
+              <span>Parse with definitions</span>
+            </button>
+          ) : ichiMoeLoading ? (
+            <div className="bg-white dark:bg-slate-800 rounded-xl shadow p-4 flex items-center justify-center gap-2">
+              <svg
+                className="animate-spin h-5 w-5 text-indigo-600"
+                viewBox="0 0 24 24"
+                fill="none"
+              >
+                <circle
+                  className="opacity-25"
+                  cx="12"
+                  cy="12"
+                  r="10"
+                  stroke="currentColor"
+                  strokeWidth="4"
+                />
+                <path
+                  className="opacity-75"
+                  fill="currentColor"
+                  d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4z"
+                />
+              </svg>
+              <span className="text-sm text-slate-500 dark:text-slate-400">
+                Fetching definitions from ichi.moe…
+              </span>
+            </div>
+          ) : ichiMoeCorsBlocked ? (
+            <div className="bg-amber-50 dark:bg-amber-900/30 border border-amber-200 dark:border-amber-800 rounded-xl p-4">
+              <p className="text-sm text-amber-800 dark:text-amber-200 mb-2">
+                Direct access to ichi.moe is blocked by the browser (CORS). You can parse this text manually:
+              </p>
+              <a
+                href={getIchiMoeUrl(text)}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1 text-sm font-medium text-indigo-600 dark:text-indigo-400 hover:underline min-h-[44px]"
+              >
+                Open in ichi.moe ↗
+              </a>
+              <button
+                onClick={() => setIchiMoeOpen(false)}
+                className="block mt-2 text-xs text-slate-400 dark:text-slate-500 hover:text-slate-600 dark:hover:text-slate-300"
+              >
+                Dismiss
+              </button>
+            </div>
+          ) : (
+            <div>
+              <div className="flex items-center justify-between mb-2">
+                <span className="text-xs text-slate-400 dark:text-slate-500">
+                  Powered by ichi.moe
+                </span>
+                <button
+                  onClick={() => setIchiMoeOpen(false)}
+                  className="text-xs text-slate-400 dark:text-slate-500 hover:text-slate-600 dark:hover:text-slate-300 press-feedback"
+                >
+                  Hide
+                </button>
+              </div>
+              <WordDefinitions
+                words={ichiMoeWords}
+                language={language}
+                sourceTextId={savedTextId}
+                onWordAdded={refreshKnownWords}
+              />
+            </div>
+          )}
+        </div>
+      )}
 
       {selectedWord && (
         <WordLookupSheet
