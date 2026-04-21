@@ -1,4 +1,5 @@
 import { db, type Word, type Review } from './schema';
+import { getFrequencyRank } from '../data/frequency';
 
 export async function addWord(
   word: Omit<Word, 'id' | 'createdAt' | 'type'> & { type?: Word['type'] }
@@ -76,7 +77,7 @@ export interface WordFilter {
   search?: string;
   status?: 'learning' | 'mature' | 'due';
   tag?: string;
-  sortBy?: 'createdAt' | 'word' | 'nextReview';
+  sortBy?: 'createdAt' | 'word' | 'nextReview' | 'frequency';
   sortDir?: 'asc' | 'desc';
 }
 
@@ -127,6 +128,11 @@ export async function searchWords(
     if (sortBy === 'createdAt') cmp = a.word.createdAt.localeCompare(b.word.createdAt);
     else if (sortBy === 'word') cmp = a.word.word.localeCompare(b.word.word);
     else if (sortBy === 'nextReview') cmp = a.review.nextReviewDate.localeCompare(b.review.nextReviewDate);
+    else if (sortBy === 'frequency') {
+      const ra = getFrequencyRank(a.word.word, a.word.language) ?? Infinity;
+      const rb = getFrequencyRank(b.word.word, b.word.language) ?? Infinity;
+      cmp = ra - rb;
+    }
     return cmp * dir;
   });
 
