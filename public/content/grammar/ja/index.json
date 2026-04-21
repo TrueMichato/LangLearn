@@ -1130,26 +1130,26 @@
   {
     "id": "taekim-compound-sentences",
     "title": "Connecting Sentences (て-form, から, ので, けど, し, のに)",
-    "order": 165
+    "order": 175
   },
   {
     "id": "taekim-desire-volition",
     "title": "Expressing Wants & Intentions (たい, ほしい, よう, つもり)",
-    "order": 166
+    "order": 176
   },
   {
     "id": "taekim-relative-clauses-practical",
     "title": "Noun Modification with Clauses (Relative Clauses)",
-    "order": 167
+    "order": 177
   },
   {
     "id": "taekim-giving-receiving-depth",
     "title": "Giving & Receiving Actions (てあげる, てくれる, てもらう)",
-    "order": 168
+    "order": 178
   },
   {
     "id": "taekim-formal-casual-spectrum",
     "title": "Speech Level Overview (Casual ↔ Formal)",
-    "order": 169
+    "order": 179
   }
 ]
