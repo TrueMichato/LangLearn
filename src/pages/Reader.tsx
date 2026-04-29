@@ -51,11 +51,15 @@ export default function ReaderPage() {
   const [translation, setTranslation] = useState('');
   const [showBilingual, setShowBilingual] = useState(false);
 
-  // Load known words when highlighting is toggled on or text/language changes
+  // Load known words and word status map when highlighting is toggled on or text/language changes
   const refreshKnownWords = useCallback(async () => {
     if (!highlightKnown) return;
-    const known = await getKnownWordSet(language);
+    const [known, statusMap] = await Promise.all([
+      getKnownWordSet(language),
+      buildWordStatusMap(language),
+    ]);
     setKnownWordSet(known);
+    setWordStatusMap(statusMap);
   }, [highlightKnown, language]);
 
   useEffect(() => {
@@ -82,6 +86,7 @@ export default function ReaderPage() {
     setSelectedWord(null);
     setSelectedReading('');
     setSelectedSentence('');
+    setWordStatusMap(null);
     setIchiMoeWords([]);
     setIchiMoeCorsBlocked(false);
     setIchiMoeLoading(false);
@@ -450,6 +455,7 @@ export default function ReaderPage() {
         language={language}
         highlightEnabled={highlightKnown}
         onToggleHighlight={() => setHighlightKnown((v) => !v)}
+        wordStatusMap={wordStatusMap ?? undefined}
       />
 
       {translation.trim() && (
@@ -478,10 +484,17 @@ export default function ReaderPage() {
             }}
             highlightKnown={highlightKnown}
             knownWords={knownWordSet}
+            wordStatusMap={wordStatusMap ?? undefined}
+            statusHighlight={highlightKnown && !!wordStatusMap}
           />
         ) : (
           tokens.map((token, i) => {
-            const isKnown = highlightKnown && knownWordSet.has(token.toLowerCase());
+            const isSelected = selectedWord === token;
+            const useStatus = highlightKnown && wordStatusMap && token.trim();
+            const statusClass = useStatus && !isSelected
+              ? getStatusColor(wordStatusMap!.getStatus(token))
+              : '';
+            const isKnown = !useStatus && highlightKnown && knownWordSet.has(token.toLowerCase());
             return (
             <span
               key={i}
@@ -492,8 +505,8 @@ export default function ReaderPage() {
                 }
               }}
               className={`cursor-pointer transition-colors hover:bg-indigo-100 dark:hover:bg-indigo-900 rounded px-0.5 ${
-                selectedWord === token ? 'bg-indigo-200 dark:bg-indigo-800' : ''
-              }${isKnown ? ' bg-green-50 dark:bg-green-900/20' : ''}`}
+                isSelected ? 'bg-indigo-200 dark:bg-indigo-800' : ''
+              }${isKnown ? ' bg-green-50 dark:bg-green-900/20' : ''} ${statusClass}`}
             >
               {showStressMarks && language === 'ru' ? applyStress(token) : token}
             </span>
@@ -604,6 +617,7 @@ export default function ReaderPage() {
           contextSentence={selectedSentence}
           onAdd={handleAddWord}
           onClose={() => setSelectedWord(null)}
+          wordStatusMap={wordStatusMap ?? undefined}
         />
       )}
     </div>
