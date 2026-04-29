@@ -2,6 +2,8 @@ import { useNavigate } from 'react-router-dom';
 
 interface StudyPlanProps {
   dueCards: number;
+  todayStudySeconds: number;
+  dailyGoalSeconds: number;
   weekStudySeconds: number;
   weeklyGoalSeconds: number;
   currentStreak: number;
@@ -59,6 +61,8 @@ function ProgressRing({ percentage }: { percentage: number }) {
 
 export default function StudyPlan({
   dueCards,
+  todayStudySeconds,
+  dailyGoalSeconds,
   weekStudySeconds,
   weeklyGoalSeconds,
   currentStreak,
@@ -69,6 +73,12 @@ export default function StudyPlan({
   const goalMinutes = Math.round(weeklyGoalSeconds / 60);
   const percentage = goalMinutes > 0
     ? Math.min(100, Math.round((weekStudySeconds / weeklyGoalSeconds) * 100))
+    : 0;
+
+  const todayMinutes = Math.round(todayStudySeconds / 60);
+  const dailyMinutes = Math.round(dailyGoalSeconds / 60);
+  const todayPct = dailyGoalSeconds > 0
+    ? Math.min(100, Math.round((todayStudySeconds / dailyGoalSeconds) * 100))
     : 0;
 
   return (
@@ -87,6 +97,11 @@ export default function StudyPlan({
             All caught up! 🎉 No cards due right now
           </p>
         )}
+
+        <div className="flex items-center gap-3 text-sm text-slate-600 dark:text-slate-300">
+          <ProgressRing percentage={todayPct} />
+          <span>🎯 {todayMinutes}m / {dailyMinutes}m today</span>
+        </div>
 
         <div className="flex items-center gap-3 text-sm text-slate-600 dark:text-slate-300">
           <ProgressRing percentage={percentage} />

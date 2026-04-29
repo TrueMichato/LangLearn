@@ -100,7 +100,9 @@ export async function updateDailyActivity(updates: {
   addSeconds?: number;
   addCardsReviewed?: number;
   addWordsAdded?: number;
-  weeklyGoalMinutes: number;
+  /** Daily target in minutes. If omitted, falls back to weeklyGoalMinutes/7 for backward compatibility. */
+  dailyGoalMinutes?: number;
+  weeklyGoalMinutes?: number;
 }): Promise<void> {
   const record = await getTodayActivity();
 
@@ -108,8 +110,10 @@ export async function updateDailyActivity(updates: {
   record.cardsReviewed += updates.addCardsReviewed ?? 0;
   record.wordsAdded += updates.addWordsAdded ?? 0;
 
-  // daily target = weeklyGoalMinutes * 60 / 7 seconds
-  const dailyTargetSeconds = (updates.weeklyGoalMinutes * 60) / 7;
+  const dailyTargetSeconds =
+    updates.dailyGoalMinutes != null
+      ? updates.dailyGoalMinutes * 60
+      : ((updates.weeklyGoalMinutes ?? 0) * 60) / 7;
   record.goalMet = record.studySeconds >= dailyTargetSeconds;
 
   await db.dailyActivity.put(record);

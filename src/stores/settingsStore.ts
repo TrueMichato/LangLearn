@@ -1,8 +1,10 @@
 import { create } from 'zustand';
 import { persist, createJSONStorage } from 'zustand/middleware';
+import { PRESETS, type NotificationPreset } from '../lib/notification-presets';
 
 interface SettingsState {
   weeklyGoalMinutes: number;
+  dailyGoalMinutes: number;
   activeLanguages: string[];
   showStressMarks: boolean;
   darkMode: boolean;
@@ -17,9 +19,18 @@ interface SettingsState {
   quietHoursStart: string;
   quietHoursEnd: string;
   streakReminders: boolean;
+  streakReminderMinDays: number;
   weeklyDigest: boolean;
   showContextOnCards: boolean;
+  // New notification-system fields
+  notificationPreset: NotificationPreset;
+  dailyNotificationBudget: number;
+  comebackNudges: boolean;
+  slippingWarnings: boolean;
+  dailyGoalMetCelebration: boolean;
+  streakMilestoneAlerts: boolean;
   setWeeklyGoal: (minutes: number) => void;
+  setDailyGoal: (minutes: number) => void;
   addLanguage: (lang: string) => void;
   removeLanguage: (lang: string) => void;
   toggleStressMarks: () => void;
@@ -35,14 +46,22 @@ interface SettingsState {
   setQuietHoursStart: (time: string) => void;
   setQuietHoursEnd: (time: string) => void;
   setStreakReminders: (enabled: boolean) => void;
+  setStreakReminderMinDays: (n: number) => void;
   setWeeklyDigest: (enabled: boolean) => void;
   setShowContextOnCards: (enabled: boolean) => void;
+  setNotificationPreset: (preset: NotificationPreset) => void;
+  setDailyNotificationBudget: (n: number) => void;
+  setComebackNudges: (enabled: boolean) => void;
+  setSlippingWarnings: (enabled: boolean) => void;
+  setDailyGoalMetCelebration: (enabled: boolean) => void;
+  setStreakMilestoneAlerts: (enabled: boolean) => void;
 }
 
 export const useSettingsStore = create<SettingsState>()(
   persist(
     (set) => ({
       weeklyGoalMinutes: 60,
+      dailyGoalMinutes: 5,
       activeLanguages: ['ja', 'ru'],
       showStressMarks: true,
       darkMode: false,
@@ -52,15 +71,14 @@ export const useSettingsStore = create<SettingsState>()(
       onboardingComplete: false,
       notificationsEnabled: false,
       dailyReminderTime: '09:00',
-      dueCardAlerts: true,
-      dueCardThreshold: 10,
       quietHoursStart: '22:00',
       quietHoursEnd: '07:00',
-      streakReminders: true,
-      weeklyDigest: true,
       showContextOnCards: true,
+      notificationPreset: 'balanced' as NotificationPreset,
+      ...PRESETS.balanced,
 
       setWeeklyGoal: (minutes) => set({ weeklyGoalMinutes: minutes }),
+      setDailyGoal: (minutes) => set({ dailyGoalMinutes: minutes }),
 
       addLanguage: (lang) =>
         set((s) => ({
@@ -90,13 +108,26 @@ export const useSettingsStore = create<SettingsState>()(
       completeOnboarding: () => set({ onboardingComplete: true }),
       setNotificationsEnabled: (enabled) => set({ notificationsEnabled: enabled }),
       setDailyReminderTime: (time) => set({ dailyReminderTime: time }),
-      setDueCardAlerts: (enabled) => set({ dueCardAlerts: enabled }),
-      setDueCardThreshold: (threshold) => set({ dueCardThreshold: threshold }),
+      setDueCardAlerts: (enabled) => set({ dueCardAlerts: enabled, notificationPreset: 'custom' }),
+      setDueCardThreshold: (threshold) => set({ dueCardThreshold: threshold, notificationPreset: 'custom' }),
       setQuietHoursStart: (time) => set({ quietHoursStart: time }),
       setQuietHoursEnd: (time) => set({ quietHoursEnd: time }),
-      setStreakReminders: (enabled) => set({ streakReminders: enabled }),
-      setWeeklyDigest: (enabled) => set({ weeklyDigest: enabled }),
+      setStreakReminders: (enabled) => set({ streakReminders: enabled, notificationPreset: 'custom' }),
+      setStreakReminderMinDays: (n) => set({ streakReminderMinDays: n, notificationPreset: 'custom' }),
+      setWeeklyDigest: (enabled) => set({ weeklyDigest: enabled, notificationPreset: 'custom' }),
       setShowContextOnCards: (enabled) => set({ showContextOnCards: enabled }),
+      setNotificationPreset: (preset) => {
+        if (preset === 'custom') {
+          set({ notificationPreset: 'custom' });
+        } else {
+          set({ notificationPreset: preset, ...PRESETS[preset] });
+        }
+      },
+      setDailyNotificationBudget: (n) => set({ dailyNotificationBudget: n, notificationPreset: 'custom' }),
+      setComebackNudges: (enabled) => set({ comebackNudges: enabled, notificationPreset: 'custom' }),
+      setSlippingWarnings: (enabled) => set({ slippingWarnings: enabled, notificationPreset: 'custom' }),
+      setDailyGoalMetCelebration: (enabled) => set({ dailyGoalMetCelebration: enabled, notificationPreset: 'custom' }),
+      setStreakMilestoneAlerts: (enabled) => set({ streakMilestoneAlerts: enabled, notificationPreset: 'custom' }),
     }),
     {
       name: 'langlearn-settings',

@@ -47,7 +47,7 @@ const sectionCard =
   'bg-white dark:bg-slate-800/90 rounded-2xl shadow-sm border border-slate-200/60 dark:border-white/10 p-4';
 
 export default function SettingsPage() {
-  const { weeklyGoalMinutes, setWeeklyGoal, activeLanguages, addLanguage, removeLanguage, showStressMarks, toggleStressMarks, darkMode, toggleDarkMode, fontSize, setFontSize, ttsRate, setTtsRate, reviewBatchSize, setReviewBatchSize } =
+  const { weeklyGoalMinutes, setWeeklyGoal, dailyGoalMinutes, setDailyGoal, activeLanguages, addLanguage, removeLanguage, showStressMarks, toggleStressMarks, darkMode, toggleDarkMode, fontSize, setFontSize, ttsRate, setTtsRate, reviewBatchSize, setReviewBatchSize } =
     useSettingsStore();
   const [importStatus, setImportStatus] = useState('');
   const fileInputRef = useRef<HTMLInputElement>(null);
@@ -101,6 +101,26 @@ export default function SettingsPage() {
       {/* Languages */}
       <section className={sectionCard}>
         <SectionHeading icon="🌐" label="Languages" />
+
+        {/* Daily Study Goal */}
+        <p className="text-sm font-medium text-slate-700 dark:text-slate-200 mb-1">Daily Study Goal</p>
+        <p className="text-xs text-slate-500 dark:text-slate-400 mb-2">
+          A small daily target builds the habit. Tiny is fine — even 5 minutes counts.
+        </p>
+        <div className="flex items-center gap-3 mb-4">
+          <input
+            type="range"
+            min={2}
+            max={60}
+            step={1}
+            value={dailyGoalMinutes}
+            onChange={(e) => setDailyGoal(Number(e.target.value))}
+            className="flex-1 accent-indigo-600 dark:accent-indigo-400"
+          />
+          <span className="text-sm font-mono w-16 text-right text-slate-600 dark:text-slate-300 bg-slate-100 dark:bg-slate-700/60 rounded-lg px-2 py-0.5">
+            {dailyGoalMinutes}m
+          </span>
+        </div>
 
         {/* Weekly Study Goal */}
         <p className="text-sm font-medium text-slate-700 dark:text-slate-200 mb-1">Weekly Study Goal</p>

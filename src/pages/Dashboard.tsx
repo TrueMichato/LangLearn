@@ -39,6 +39,7 @@ export default function Dashboard() {
   const [allSessions, setAllSessions] = useState<StudySession[]>([]);
   const [activities, setActivities] = useState<DailyActivity[]>([]);
   const weeklyGoalMinutes = useSettingsStore((s) => s.weeklyGoalMinutes);
+  const dailyGoalMinutes = useSettingsStore((s) => s.dailyGoalMinutes);
   const activeLanguages = useSettingsStore((s) => s.activeLanguages);
   const bonusXP = useXPStore((s) => s.bonusXP);
   const [showAddModal, setShowAddModal] = useState(false);
@@ -107,6 +108,8 @@ export default function Dashboard() {
 
       <StudyPlan
         dueCards={stats.dueCards}
+        todayStudySeconds={activities.find((a) => a.date === new Date().toISOString().slice(0, 10))?.studySeconds ?? 0}
+        dailyGoalSeconds={dailyGoalMinutes * 60}
         weekStudySeconds={stats.weekStudySeconds}
         weeklyGoalSeconds={weeklyGoalSeconds}
         currentStreak={currentStreak}

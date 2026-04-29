@@ -4,7 +4,10 @@ import {
   requestNotificationPermission,
   getNotificationPermission,
   isNotificationSupported,
+  supportsNotificationTriggers,
 } from '../../lib/notifications';
+import { fireTestNotification } from '../../lib/notification-scheduler';
+import type { NotificationPreset } from '../../lib/notification-presets';
 
 function Toggle({
   checked,
@@ -34,42 +37,71 @@ function Toggle({
   );
 }
 
+const PRESET_LABELS: Record<NotificationPreset, string> = {
+  gentle: 'Gentle',
+  balanced: 'Balanced',
+  persistent: 'Persistent',
+  custom: 'Custom',
+};
+
+const PRESET_HELP: Record<NotificationPreset, string> = {
+  gentle: 'One reminder a day. Weekly digest. No nags.',
+  balanced: 'Daily anchor + smart nudges when slipping. Up to 3/day.',
+  persistent: 'Maximum support — daily, due-card, streak, milestones. Up to 5/day.',
+  custom: 'Your own mix.',
+};
+
 export default function NotificationSettings() {
   const {
     notificationsEnabled,
     setNotificationsEnabled,
     dailyReminderTime,
     setDailyReminderTime,
-    dueCardAlerts,
-    setDueCardAlerts,
-    dueCardThreshold,
-    setDueCardThreshold,
     quietHoursStart,
     setQuietHoursStart,
     quietHoursEnd,
     setQuietHoursEnd,
+    notificationPreset,
+    setNotificationPreset,
+    dailyNotificationBudget,
+    setDailyNotificationBudget,
+    dueCardAlerts,
+    setDueCardAlerts,
+    dueCardThreshold,
+    setDueCardThreshold,
     streakReminders,
     setStreakReminders,
+    streakReminderMinDays,
+    setStreakReminderMinDays,
     weeklyDigest,
     setWeeklyDigest,
+    comebackNudges,
+    setComebackNudges,
+    slippingWarnings,
+    setSlippingWarnings,
+    dailyGoalMetCelebration,
+    setDailyGoalMetCelebration,
+    streakMilestoneAlerts,
+    setStreakMilestoneAlerts,
   } = useSettingsStore();
   const [permissionError, setPermissionError] = useState('');
+  const [showAdvanced, setShowAdvanced] = useState(false);
 
   const permission = getNotificationPermission();
+  const triggersOk = supportsNotificationTriggers();
 
   async function handleToggle() {
     if (notificationsEnabled) {
       setNotificationsEnabled(false);
       return;
     }
-
     setPermissionError('');
     const granted = await requestNotificationPermission();
     if (granted) {
       setNotificationsEnabled(true);
     } else {
       setPermissionError(
-        'Notification permission was denied. Please enable it in your browser settings.'
+        'Notification permission was denied. Enable it in your browser settings.'
       );
     }
   }
@@ -102,7 +134,7 @@ export default function NotificationSettings() {
           <p className="text-xs text-slate-500 dark:text-slate-400">
             {permission === 'denied'
               ? 'Blocked by browser — check site settings'
-              : 'Study reminders and due card alerts'}
+              : 'Habit-supporting reminders & nudges'}
           </p>
         </div>
         <Toggle
@@ -120,10 +152,24 @@ export default function NotificationSettings() {
 
       {notificationsEnabled && (
         <>
-          {/* Daily reminder time */}
+          {/* Background-support hint */}
+          <p className={`text-xs rounded-lg px-3 py-2 ${
+            triggersOk
+              ? 'bg-emerald-50 dark:bg-emerald-900/30 text-emerald-700 dark:text-emerald-300'
+              : 'bg-amber-50 dark:bg-amber-900/30 text-amber-700 dark:text-amber-300'
+          }`}>
+            {triggersOk
+              ? '✓ Background reminders supported — you\'ll be notified even with the app closed.'
+              : 'ℹ This browser doesn\'t support scheduled background notifications. Reminders fire while the app is open or as in-app catch-up nudges next time you visit. Installing LangLearn as an app helps.'}
+          </p>
+
+          {/* Daily anchor time */}
           <div>
             <p className="text-sm text-slate-700 dark:text-slate-200 mb-1">
-              Daily reminder time
+              Daily anchor time
+            </p>
+            <p className="text-xs text-slate-500 dark:text-slate-400 mb-2">
+              Same time every day builds the habit fastest.
             </p>
             <input
               type="time"
@@ -133,122 +179,219 @@ export default function NotificationSettings() {
             />
           </div>
 
+          {/* Intensity preset */}
+          <div>
+            <p className="text-sm text-slate-700 dark:text-slate-200 mb-1">
+              Intensity
+            </p>
+            <div className="flex gap-2 flex-wrap">
+              {(['gentle', 'balanced', 'persistent', 'custom'] as NotificationPreset[]).map((p) => (
+                <button
+                  key={p}
+                  onClick={() => setNotificationPreset(p)}
+                  className={`px-3 py-1.5 rounded-full text-sm font-medium transition-colors min-h-[36px] ${
+                    notificationPreset === p
+                      ? 'gradient-primary text-white'
+                      : 'bg-slate-100 dark:bg-slate-700 text-slate-700 dark:text-slate-200 hover:bg-slate-200 dark:hover:bg-slate-600'
+                  }`}
+                  aria-pressed={notificationPreset === p}
+                >
+                  {PRESET_LABELS[p]}
+                </button>
+              ))}
+            </div>
+            <p className="text-xs text-slate-500 dark:text-slate-400 mt-2">
+              {PRESET_HELP[notificationPreset]}
+            </p>
+          </div>
+
           {/* Quiet hours */}
           <div>
-            <p className="text-sm text-gray-700 dark:text-gray-200 mb-1">
+            <p className="text-sm text-slate-700 dark:text-slate-200 mb-1">
               Quiet hours
             </p>
-            <p className="text-xs text-gray-500 dark:text-gray-400 mb-2">
-              No notifications during this window
+            <p className="text-xs text-slate-500 dark:text-slate-400 mb-2">
+              No notifications during this window.
             </p>
             <div className="flex items-center gap-2">
               <input
                 type="time"
                 value={quietHoursStart}
                 onChange={(e) => setQuietHoursStart(e.target.value)}
-                className="px-3 py-2 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 text-gray-900 dark:text-gray-100 focus:outline-none focus:ring-2 focus:ring-indigo-500"
+                className="px-3 py-2 rounded-lg border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-700 text-slate-900 dark:text-slate-100 focus:outline-none focus:ring-2 focus:ring-indigo-500"
               />
-              <span className="text-sm text-gray-500 dark:text-gray-400">to</span>
+              <span className="text-sm text-slate-500 dark:text-slate-400">to</span>
               <input
                 type="time"
                 value={quietHoursEnd}
                 onChange={(e) => setQuietHoursEnd(e.target.value)}
-                className="px-3 py-2 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 text-gray-900 dark:text-gray-100 focus:outline-none focus:ring-2 focus:ring-indigo-500"
+                className="px-3 py-2 rounded-lg border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-700 text-slate-900 dark:text-slate-100 focus:outline-none focus:ring-2 focus:ring-indigo-500"
               />
             </div>
           </div>
 
-          {/* Due card alerts toggle */}
-          <div className="flex items-center justify-between">
-            <div>
-              <p className="text-sm text-slate-700 dark:text-slate-200">
-                Due card alerts
-              </p>
-              <p className="text-xs text-slate-500 dark:text-slate-400">
-                Notify when cards pile up
-              </p>
+          {/* Daily budget */}
+          <div>
+            <div className="flex items-center justify-between mb-1">
+              <p className="text-sm text-slate-700 dark:text-slate-200">Max notifications per day</p>
+              <span className="text-sm font-mono text-slate-600 dark:text-slate-300 bg-slate-100 dark:bg-slate-700/60 rounded-lg px-2 py-0.5">
+                {dailyNotificationBudget}
+              </span>
             </div>
-            <Toggle
-              checked={dueCardAlerts}
-              onChange={() => setDueCardAlerts(!dueCardAlerts)}
+            <input
+              type="range"
+              min={1}
+              max={5}
+              step={1}
+              value={dailyNotificationBudget}
+              onChange={(e) => setDailyNotificationBudget(Number(e.target.value))}
+              className="w-full accent-indigo-600 dark:accent-indigo-400"
             />
           </div>
 
-          {/* Due card threshold */}
-          {dueCardAlerts && (
-            <div>
-              <p className="text-sm text-gray-700 dark:text-gray-200 mb-1">
-                Alert threshold
-              </p>
-              <div className="flex gap-2">
-                {[5, 10, 25, 50].map((n) => (
-                  <button
-                    key={n}
-                    onClick={() => setDueCardThreshold(n)}
-                    className={`px-3 py-1.5 rounded-lg text-sm font-medium transition-colors min-h-[36px] ${
-                      dueCardThreshold === n
-                        ? 'bg-indigo-600 text-white'
-                        : 'bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-600'
-                    }`}
-                  >
-                    {n}+ cards
-                  </button>
-                ))}
+          {/* Test button */}
+          <button
+            onClick={() => fireTestNotification()}
+            className="w-full bg-indigo-100 dark:bg-indigo-900/50 text-indigo-700 dark:text-indigo-300 py-2 rounded-xl font-semibold hover:bg-indigo-200 dark:hover:bg-indigo-800 transition-colors press-feedback"
+          >
+            🔔 Send test notification
+          </button>
+
+          {/* Advanced */}
+          <button
+            onClick={() => setShowAdvanced((v) => !v)}
+            className="w-full text-left text-sm font-medium text-slate-600 dark:text-slate-300 hover:text-slate-800 dark:hover:text-slate-100 flex items-center justify-between py-1"
+          >
+            <span>Advanced — fine-tune categories</span>
+            <span>{showAdvanced ? '▾' : '▸'}</span>
+          </button>
+
+          {showAdvanced && (
+            <div className="space-y-4 border-t border-slate-200 dark:border-slate-700 pt-4">
+              {/* Cards due */}
+              <div className="flex items-center justify-between">
+                <div>
+                  <p className="text-sm text-slate-700 dark:text-slate-200">Due-card alerts</p>
+                  <p className="text-xs text-slate-500 dark:text-slate-400">
+                    A mid-day pulse when reviews pile up.
+                  </p>
+                </div>
+                <Toggle checked={dueCardAlerts} onChange={() => setDueCardAlerts(!dueCardAlerts)} />
+              </div>
+              {dueCardAlerts && (
+                <div>
+                  <p className="text-sm text-slate-700 dark:text-slate-200 mb-1">Alert threshold</p>
+                  <div className="flex gap-2">
+                    {[5, 10, 25, 50].map((n) => (
+                      <button
+                        key={n}
+                        onClick={() => setDueCardThreshold(n)}
+                        className={`px-3 py-1.5 rounded-lg text-sm font-medium transition-colors min-h-[36px] ${
+                          dueCardThreshold === n
+                            ? 'bg-indigo-600 text-white'
+                            : 'bg-slate-100 dark:bg-slate-700 text-slate-600 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-600'
+                        }`}
+                      >
+                        {n}+ cards
+                      </button>
+                    ))}
+                  </div>
+                </div>
+              )}
+
+              {/* Streak protection */}
+              <div className="flex items-center justify-between">
+                <div>
+                  <p className="text-sm text-slate-700 dark:text-slate-200">Streak protection</p>
+                  <p className="text-xs text-slate-500 dark:text-slate-400">
+                    Evening reminder when your streak is at risk.
+                  </p>
+                </div>
+                <Toggle checked={streakReminders} onChange={() => setStreakReminders(!streakReminders)} />
+              </div>
+              {streakReminders && (
+                <div>
+                  <p className="text-sm text-slate-700 dark:text-slate-200 mb-1">Min streak length to protect</p>
+                  <div className="flex gap-2">
+                    {[1, 3, 7].map((n) => (
+                      <button
+                        key={n}
+                        onClick={() => setStreakReminderMinDays(n)}
+                        className={`px-3 py-1.5 rounded-lg text-sm font-medium transition-colors min-h-[36px] ${
+                          streakReminderMinDays === n
+                            ? 'bg-indigo-600 text-white'
+                            : 'bg-slate-100 dark:bg-slate-700 text-slate-600 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-600'
+                        }`}
+                      >
+                        {n}+ day{n > 1 ? 's' : ''}
+                      </button>
+                    ))}
+                  </div>
+                </div>
+              )}
+
+              {/* Comeback */}
+              <div className="flex items-center justify-between">
+                <div>
+                  <p className="text-sm text-slate-700 dark:text-slate-200">Comeback nudges</p>
+                  <p className="text-xs text-slate-500 dark:text-slate-400">
+                    Warm welcome after 2+ days away (in-app).
+                  </p>
+                </div>
+                <Toggle checked={comebackNudges} onChange={() => setComebackNudges(!comebackNudges)} />
+              </div>
+
+              {/* Slipping */}
+              <div className="flex items-center justify-between">
+                <div>
+                  <p className="text-sm text-slate-700 dark:text-slate-200">Mid-week slipping warning</p>
+                  <p className="text-xs text-slate-500 dark:text-slate-400">
+                    Wednesday check-in if behind on weekly goal.
+                  </p>
+                </div>
+                <Toggle checked={slippingWarnings} onChange={() => setSlippingWarnings(!slippingWarnings)} />
+              </div>
+
+              {/* Goal met */}
+              <div className="flex items-center justify-between">
+                <div>
+                  <p className="text-sm text-slate-700 dark:text-slate-200">Daily goal celebration</p>
+                  <p className="text-xs text-slate-500 dark:text-slate-400">
+                    A small ✅ when you hit today's target.
+                  </p>
+                </div>
+                <Toggle
+                  checked={dailyGoalMetCelebration}
+                  onChange={() => setDailyGoalMetCelebration(!dailyGoalMetCelebration)}
+                />
+              </div>
+
+              {/* Milestones */}
+              <div className="flex items-center justify-between">
+                <div>
+                  <p className="text-sm text-slate-700 dark:text-slate-200">Streak milestones</p>
+                  <p className="text-xs text-slate-500 dark:text-slate-400">
+                    3 / 7 / 14 / 30 / 60 / 100-day celebrations.
+                  </p>
+                </div>
+                <Toggle
+                  checked={streakMilestoneAlerts}
+                  onChange={() => setStreakMilestoneAlerts(!streakMilestoneAlerts)}
+                />
+              </div>
+
+              {/* Weekly digest */}
+              <div className="flex items-center justify-between">
+                <div>
+                  <p className="text-sm text-slate-700 dark:text-slate-200">Weekly summary</p>
+                  <p className="text-xs text-slate-500 dark:text-slate-400">
+                    Sunday-evening recap of your week.
+                  </p>
+                </div>
+                <Toggle checked={weeklyDigest} onChange={() => setWeeklyDigest(!weeklyDigest)} />
               </div>
             </div>
           )}
-
-          {/* Streak reminders */}
-          <div className="flex items-center justify-between">
-            <div>
-              <p className="text-sm text-gray-700 dark:text-gray-200">
-                Streak protection
-              </p>
-              <p className="text-xs text-gray-500 dark:text-gray-400">
-                Evening reminder if you haven't studied today
-              </p>
-            </div>
-            <button
-              onClick={() => setStreakReminders(!streakReminders)}
-              className={`relative inline-flex h-6 w-11 items-center rounded-full transition-colors ${
-                streakReminders ? 'bg-indigo-600' : 'bg-gray-300 dark:bg-gray-600'
-              }`}
-              role="switch"
-              aria-checked={streakReminders}
-            >
-              <span
-                className={`inline-block h-4 w-4 transform rounded-full bg-white transition-transform ${
-                  streakReminders ? 'translate-x-6' : 'translate-x-1'
-                }`}
-              />
-            </button>
-          </div>
-
-          {/* Weekly digest */}
-          <div className="flex items-center justify-between">
-            <div>
-              <p className="text-sm text-gray-700 dark:text-gray-200">
-                Weekly summary
-              </p>
-              <p className="text-xs text-gray-500 dark:text-gray-400">
-                Progress summary on Sunday evenings
-              </p>
-            </div>
-            <button
-              onClick={() => setWeeklyDigest(!weeklyDigest)}
-              className={`relative inline-flex h-6 w-11 items-center rounded-full transition-colors ${
-                weeklyDigest ? 'bg-indigo-600' : 'bg-gray-300 dark:bg-gray-600'
-              }`}
-              role="switch"
-              aria-checked={weeklyDigest}
-            >
-              <span
-                className={`inline-block h-4 w-4 transform rounded-full bg-white transition-transform ${
-                  weeklyDigest ? 'translate-x-6' : 'translate-x-1'
-                }`}
-              />
-            </button>
-          </div>
         </>
       )}
     </section>

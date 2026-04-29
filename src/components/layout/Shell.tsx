@@ -9,6 +9,7 @@ import { useNotificationScheduler } from '../../hooks/useNotificationScheduler';
 import { useSettingsStore } from '../../stores/settingsStore';
 import BadgeToast from '../badges/BadgeToast';
 import { useBadgeChecker } from '../../hooks/useBadgeChecker';
+import InAppNudgeStack from '../common/InAppNudgeStack';
 
 export default function Shell() {
   const darkMode = useDarkMode();
@@ -48,6 +49,7 @@ export default function Shell() {
         </div>
       </main>
       <BadgeToast />
+      <InAppNudgeStack />
       <DictionaryModal isOpen={showDictionary} onClose={() => setShowDictionary(false)} />
       <BottomNav />
     </div>

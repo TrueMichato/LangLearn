@@ -52,8 +52,8 @@ export const useTimerStore = create<TimerState>((set, get) => ({
       xpEarned: xp,
     });
 
-    const { weeklyGoalMinutes } = useSettingsStore.getState();
-    await updateDailyActivity({ addSeconds: elapsed, weeklyGoalMinutes });
+    const { dailyGoalMinutes } = useSettingsStore.getState();
+    await updateDailyActivity({ addSeconds: elapsed, dailyGoalMinutes });
 
     set({ isRunning: false, elapsed: 0, sessionId: null, activity });
   },
