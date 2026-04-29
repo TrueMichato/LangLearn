@@ -1,0 +1,15 @@
+import { jaLyrics } from './ja-lyrics';
+import { ruLyrics } from './ru-lyrics';
+import type { Song } from './types';
+
+export type { Song, LyricLine, SongVocab } from './types';
+
+export const allLyrics: Song[] = [...jaLyrics, ...ruLyrics];
+
+export function getLyricsByLanguage(language: string): Song[] {
+  return allLyrics.filter((s) => s.language === language);
+}
+
+export function getSongById(id: string): Song | undefined {
+  return allLyrics.find((s) => s.id === id);
+}

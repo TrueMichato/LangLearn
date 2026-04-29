@@ -129,6 +129,14 @@ export default function LearnPage() {
           borderColor: 'border-teal-400 dark:border-teal-500',
           bgColor: 'bg-teal-100 dark:bg-teal-900/40',
         },
+        {
+          to: '/lyrics',
+          emoji: '🎵',
+          title: 'Music',
+          subtitle: 'Learn through song lyrics',
+          borderColor: 'border-pink-300 dark:border-pink-700',
+          bgColor: 'bg-pink-50 dark:bg-pink-950/30',
+        },
       ],
     },
     {

@@ -18,6 +18,7 @@ import DailyChallengePage from './pages/DailyChallenge';
 import ClozePracticePage from './pages/ClozePractice';
 import MinimalPairsPage from './pages/MinimalPairs';
 import TranslationPracticePage from './pages/TranslationPractice';
+import LyricsPage from './pages/Lyrics';
 import OnboardingOverlay from './components/onboarding/OnboardingOverlay';
 import { useSettingsStore } from './stores/settingsStore';
 import ErrorBoundary from './components/common/ErrorBoundary';
@@ -49,6 +50,7 @@ export default function App() {
             <Route path="/daily-challenge" element={<DailyChallengePage />} />
             <Route path="/cloze-practice" element={<ClozePracticePage />} />
             <Route path="/minimal-pairs" element={<MinimalPairsPage />} />
+            <Route path="/lyrics" element={<LyricsPage />} />
             <Route path="/translation" element={<TranslationPracticePage />} />
           </Route>
         </Routes>
