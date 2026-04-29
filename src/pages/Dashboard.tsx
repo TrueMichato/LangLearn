@@ -16,6 +16,7 @@ import BadgeCollection from '../components/badges/BadgeCollection';
 import DailyChallengeCard from '../components/dashboard/DailyChallengeCard';
 import SuggestedNext from '../components/dashboard/SuggestedNext';
 import Milestones from '../components/dashboard/Milestones';
+import VocabSizeCard from '../components/dashboard/VocabSizeCard';
 import { PageSkeleton } from '../components/common/Skeleton';
 import StudyTip from '../components/common/StudyTip';
 
@@ -153,6 +154,8 @@ export default function Dashboard() {
           accent="border-l-emerald-400 dark:border-l-emerald-500"
         />
       </div>
+
+      <VocabSizeCard />
 
       <Link
         to="/analytics"

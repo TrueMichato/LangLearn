@@ -139,8 +139,73 @@ export async function searchWords(
   return results;
 }
 
+export interface WordCountByLanguage {
+  language: string;
+  known: number;
+  learning: number;
+  total: number;
+}
+
+export async function getKnownWordCount(language?: string): Promise<WordCountByLanguage[]> {
+  const words = language
+    ? await db.words.where('language').equals(language).toArray()
+    : await db.words.toArray();
+
+  const reviews = await db.reviews.toArray();
+  const reviewByWordId = new Map(reviews.map((r) => [r.wordId, r]));
+
+  const grouped = new Map<string, { known: number; learning: number; total: number }>();
+
+  for (const word of words) {
+    const lang = word.language;
+    if (!grouped.has(lang)) {
+      grouped.set(lang, { known: 0, learning: 0, total: 0 });
+    }
+    const counts = grouped.get(lang)!;
+    counts.total++;
+
+    const review = reviewByWordId.get(word.id!);
+    if (review) {
+      if (review.interval >= 21) {
+        counts.known++;
+      } else {
+        counts.learning++;
+      }
+    }
+  }
+
+  return Array.from(grouped.entries()).map(([lang, counts]) => ({
+    language: lang,
+    ...counts,
+  }));
+}
+
 export async function updateWord(id: number, updates: Partial<Word>): Promise<void> {
   await db.words.update(id, updates);
+}
+
+export async function bulkAddWords(
+  words: Omit<Word, 'id' | 'createdAt'>[]
+): Promise<number> {
+  let added = 0;
+  await db.transaction('rw', [db.words, db.reviews], async () => {
+    for (const w of words) {
+      const id = (await db.words.add({
+        ...w,
+        createdAt: new Date().toISOString(),
+      })) as number;
+      await db.reviews.add({
+        wordId: id,
+        ease: 2.5,
+        interval: 0,
+        repetitions: 0,
+        nextReviewDate: new Date().toISOString(),
+        lastReviewDate: new Date().toISOString(),
+      });
+      added++;
+    }
+  });
+  return added;
 }
 
 export async function getRandomWords(
