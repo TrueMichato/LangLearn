@@ -4,32 +4,49 @@ import { isNotificationSupported } from '../lib/notifications';
 import { refreshNotifications, tickInApp } from '../lib/notification-scheduler';
 
 export function useNotificationScheduler() {
-  // Pull every notification-relevant setting so the effect re-runs on change.
-  const prefs = useSettingsStore((s) => ({
-    notificationsEnabled: s.notificationsEnabled,
-    dailyReminderTime: s.dailyReminderTime,
-    quietHoursStart: s.quietHoursStart,
-    quietHoursEnd: s.quietHoursEnd,
-    dailyNotificationBudget: s.dailyNotificationBudget,
-    dueCardAlerts: s.dueCardAlerts,
-    dueCardThreshold: s.dueCardThreshold,
-    streakReminders: s.streakReminders,
-    streakReminderMinDays: s.streakReminderMinDays,
-    weeklyDigest: s.weeklyDigest,
-    comebackNudges: s.comebackNudges,
-    slippingWarnings: s.slippingWarnings,
-    dailyGoalMetCelebration: s.dailyGoalMetCelebration,
-    streakMilestoneAlerts: s.streakMilestoneAlerts,
-    dailyGoalMinutes: s.dailyGoalMinutes,
-    weeklyGoalMinutes: s.weeklyGoalMinutes,
-  }));
-  const intervalRef = useRef<number | null>(null);
+  // Subscribe to each setting individually so Zustand can use referential
+  // equality on primitives. Returning a fresh object from a selector causes
+  // an infinite render loop (React error #185).
+  const notificationsEnabled = useSettingsStore((s) => s.notificationsEnabled);
+  const dailyReminderTime = useSettingsStore((s) => s.dailyReminderTime);
+  const quietHoursStart = useSettingsStore((s) => s.quietHoursStart);
+  const quietHoursEnd = useSettingsStore((s) => s.quietHoursEnd);
+  const dailyNotificationBudget = useSettingsStore((s) => s.dailyNotificationBudget);
+  const dueCardAlerts = useSettingsStore((s) => s.dueCardAlerts);
+  const dueCardThreshold = useSettingsStore((s) => s.dueCardThreshold);
+  const streakReminders = useSettingsStore((s) => s.streakReminders);
+  const streakReminderMinDays = useSettingsStore((s) => s.streakReminderMinDays);
+  const weeklyDigest = useSettingsStore((s) => s.weeklyDigest);
+  const comebackNudges = useSettingsStore((s) => s.comebackNudges);
+  const slippingWarnings = useSettingsStore((s) => s.slippingWarnings);
+  const dailyGoalMetCelebration = useSettingsStore((s) => s.dailyGoalMetCelebration);
+  const streakMilestoneAlerts = useSettingsStore((s) => s.streakMilestoneAlerts);
+  const dailyGoalMinutes = useSettingsStore((s) => s.dailyGoalMinutes);
+  const weeklyGoalMinutes = useSettingsStore((s) => s.weeklyGoalMinutes);
 
-  // Stable JSON-key for the effect deps.
-  const prefsKey = JSON.stringify(prefs);
+  const intervalRef = useRef<number | null>(null);
 
   useEffect(() => {
     if (!isNotificationSupported()) return;
+
+    const prefs = {
+      notificationsEnabled,
+      dailyReminderTime,
+      quietHoursStart,
+      quietHoursEnd,
+      dailyNotificationBudget,
+      dueCardAlerts,
+      dueCardThreshold,
+      streakReminders,
+      streakReminderMinDays,
+      weeklyDigest,
+      comebackNudges,
+      slippingWarnings,
+      dailyGoalMetCelebration,
+      streakMilestoneAlerts,
+      dailyGoalMinutes,
+      weeklyGoalMinutes,
+    };
 
     const run = async () => {
       await refreshNotifications(prefs);
@@ -48,8 +65,23 @@ export function useNotificationScheduler() {
       if (intervalRef.current) clearInterval(intervalRef.current);
       document.removeEventListener('visibilitychange', onVisibility);
     };
-    // prefs is captured by closure; key triggers re-subscription on changes.
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [prefsKey]);
+  }, [
+    notificationsEnabled,
+    dailyReminderTime,
+    quietHoursStart,
+    quietHoursEnd,
+    dailyNotificationBudget,
+    dueCardAlerts,
+    dueCardThreshold,
+    streakReminders,
+    streakReminderMinDays,
+    weeklyDigest,
+    comebackNudges,
+    slippingWarnings,
+    dailyGoalMetCelebration,
+    streakMilestoneAlerts,
+    dailyGoalMinutes,
+    weeklyGoalMinutes,
+  ]);
 }
 
