@@ -1,0 +1,94 @@
+{
+  "texts": [
+    {
+      "id": "self-intro-ru",
+      "title": "Знакомство",
+      "titleEn": "Getting to Know You",
+      "difficulty": "easy",
+      "wordCount": 80,
+      "tags": ["daily-life", "conversation"],
+      "description": "A simple self-introduction in Russian"
+    },
+    {
+      "id": "my-city",
+      "title": "Мой город",
+      "titleEn": "My City",
+      "difficulty": "easy",
+      "wordCount": 100,
+      "tags": ["daily-life"],
+      "description": "A description of a hometown"
+    },
+    {
+      "id": "at-the-market",
+      "title": "На рынке",
+      "titleEn": "At the Market",
+      "difficulty": "easy",
+      "wordCount": 90,
+      "tags": ["daily-life", "conversation"],
+      "description": "A dialogue about shopping at a Russian market"
+    },
+    {
+      "id": "russian-holidays",
+      "title": "Русские праздники",
+      "titleEn": "Russian Holidays",
+      "difficulty": "medium",
+      "wordCount": 200,
+      "tags": ["culture"],
+      "description": "An overview of major Russian holidays and traditions"
+    },
+    {
+      "id": "kolobok",
+      "title": "Колобок",
+      "titleEn": "Kolobok (The Bread Roll)",
+      "difficulty": "medium",
+      "wordCount": 220,
+      "tags": ["folklore", "narrative"],
+      "description": "A beloved Russian folk tale about a runaway bread roll"
+    },
+    {
+      "id": "moscow",
+      "title": "Москва — столица России",
+      "titleEn": "Moscow — Capital of Russia",
+      "difficulty": "medium",
+      "wordCount": 200,
+      "tags": ["travel", "culture"],
+      "description": "A travel-style article about Moscow's main attractions"
+    },
+    {
+      "id": "russian-cuisine",
+      "title": "Русская кухня",
+      "titleEn": "Russian Cuisine",
+      "difficulty": "medium",
+      "wordCount": 180,
+      "tags": ["culture", "food"],
+      "description": "An article about traditional Russian dishes"
+    },
+    {
+      "id": "teremok",
+      "title": "Теремок",
+      "titleEn": "Teremok (The Little House)",
+      "difficulty": "medium",
+      "wordCount": 250,
+      "tags": ["folklore", "narrative"],
+      "description": "A classic Russian fairy tale about animals sharing a tiny house"
+    },
+    {
+      "id": "russian-nature",
+      "title": "Природа России",
+      "titleEn": "Nature of Russia",
+      "difficulty": "hard",
+      "wordCount": 300,
+      "tags": ["nature", "geography"],
+      "description": "An essay about Russia's diverse natural landscapes"
+    },
+    {
+      "id": "letter-home",
+      "title": "Письмо домой",
+      "titleEn": "A Letter Home",
+      "difficulty": "hard",
+      "wordCount": 280,
+      "tags": ["daily-life", "narrative"],
+      "description": "A personal letter from someone studying abroad"
+    }
+  ]
+}

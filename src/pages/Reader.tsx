@@ -141,6 +141,60 @@ export default function ReaderPage() {
     }
   }
 
+  async function openCuratedText(id: string, lang: string, curatedTitle: string) {
+    resetReadingState();
+    setIsTokenizing(true);
+    setLanguage(lang);
+    setTitle(curatedTitle);
+
+    try {
+      const res = await fetch(`${import.meta.env.BASE_URL}content/reading/${lang}/${id}.txt`);
+      if (!res.ok) throw new Error('Failed to load text');
+      const content = await res.text();
+      setText(content);
+      setSentences(splitSentences(content));
+
+      if (lang === 'ja') {
+        try {
+          const result = await tokenizeJapanese(content);
+          setJaTokens(result);
+          const offsets: number[] = [];
+          let pos = 0;
+          for (const t of result) {
+            offsets.push(pos);
+            pos += t.surface.length;
+          }
+          setJaTokenOffsets(offsets);
+        } catch {
+          const chars = content.split('');
+          setTokens(chars);
+          setTokenOffsets(chars.map((_, i) => i));
+        }
+      } else {
+        const isCJK = /[\u3000-\u9fff\uf900-\ufaff]/.test(content);
+        let rawTokens: string[];
+        if (isCJK) {
+          rawTokens = content.split('');
+        } else {
+          rawTokens = content.split(/(\s+)/).filter((t) => t.trim());
+        }
+        const offsets: number[] = [];
+        let pos = 0;
+        for (const t of rawTokens) {
+          const idx = content.indexOf(t, pos);
+          offsets.push(idx >= 0 ? idx : pos);
+          pos = (idx >= 0 ? idx : pos) + t.length;
+        }
+        setTokens(rawTokens);
+        setTokenOffsets(offsets);
+      }
+    } catch {
+      resetReadingState();
+    } finally {
+      setIsTokenizing(false);
+    }
+  }
+
   const handleImport = async () => {
     if (!text.trim()) return;
 
@@ -295,7 +349,7 @@ export default function ReaderPage() {
       </h2>
       {tabToggle}
       {tab === 'library' ? (
-        <TextLibrary onSelectText={openTextFromLibrary} />
+        <TextLibrary onSelectText={openTextFromLibrary} onSelectCurated={openCuratedText} />
       ) : (
       <div className="space-y-3">
         <input

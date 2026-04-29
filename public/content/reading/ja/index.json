@@ -1,0 +1,94 @@
+{
+  "texts": [
+    {
+      "id": "self-intro",
+      "title": "自己紹介",
+      "titleEn": "Self-Introduction",
+      "difficulty": "easy",
+      "wordCount": 80,
+      "tags": ["daily-life", "conversation"],
+      "description": "A simple self-introduction covering name, hobbies, and daily life"
+    },
+    {
+      "id": "my-day",
+      "title": "私の一日",
+      "titleEn": "My Day",
+      "difficulty": "easy",
+      "wordCount": 100,
+      "tags": ["daily-life"],
+      "description": "A description of a typical day from morning to evening"
+    },
+    {
+      "id": "at-the-store",
+      "title": "お店で買い物",
+      "titleEn": "Shopping at the Store",
+      "difficulty": "easy",
+      "wordCount": 90,
+      "tags": ["daily-life", "conversation"],
+      "description": "A dialogue about shopping at a convenience store"
+    },
+    {
+      "id": "seasons",
+      "title": "日本の四季",
+      "titleEn": "The Four Seasons of Japan",
+      "difficulty": "medium",
+      "wordCount": 180,
+      "tags": ["culture", "nature"],
+      "description": "An article about the four seasons in Japan and their cultural significance"
+    },
+    {
+      "id": "momotaro",
+      "title": "桃太郎",
+      "titleEn": "Momotaro (Peach Boy)",
+      "difficulty": "medium",
+      "wordCount": 250,
+      "tags": ["folklore", "narrative"],
+      "description": "The classic Japanese folk tale about a boy born from a peach"
+    },
+    {
+      "id": "tanabata",
+      "title": "七夕の伝説",
+      "titleEn": "The Legend of Tanabata",
+      "difficulty": "medium",
+      "wordCount": 200,
+      "tags": ["folklore", "culture"],
+      "description": "The romantic legend behind the Tanabata star festival"
+    },
+    {
+      "id": "tokyo-travel",
+      "title": "東京旅行ガイド",
+      "titleEn": "Tokyo Travel Guide",
+      "difficulty": "medium",
+      "wordCount": 220,
+      "tags": ["travel", "culture"],
+      "description": "A travel guide covering must-see places in Tokyo"
+    },
+    {
+      "id": "school-life",
+      "title": "日本の学校生活",
+      "titleEn": "School Life in Japan",
+      "difficulty": "medium",
+      "wordCount": 200,
+      "tags": ["culture", "daily-life"],
+      "description": "An article about what school life is like in Japan"
+    },
+    {
+      "id": "technology",
+      "title": "日本のテクノロジー",
+      "titleEn": "Technology in Japan",
+      "difficulty": "hard",
+      "wordCount": 300,
+      "tags": ["technology", "culture"],
+      "description": "An essay about Japan's role in technology and innovation"
+    },
+    {
+      "id": "letter-to-friend",
+      "title": "友達への手紙",
+      "titleEn": "A Letter to a Friend",
+      "difficulty": "hard",
+      "wordCount": 280,
+      "tags": ["daily-life", "narrative"],
+      "description": "A personal letter describing life events and future plans"
+    }
+  ]
+}
