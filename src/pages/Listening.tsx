@@ -5,6 +5,7 @@ import { useXPStore } from '../stores/xpStore';
 import { getLanguageLabel } from '../lib/languages';
 import { jaPassages } from '../data/listening/ja-passages';
 import { ruPassages } from '../data/listening/ru-passages';
+import DictationDrill from '../components/drills/DictationDrill';
 import type { ListeningPassage, ListeningQuestion } from '../data/listening/ja-passages';
 
 // ── helpers ─────────────────────────────────────────────
@@ -31,7 +32,8 @@ function speakWithSpeed(text: string, language: string, rate: number): Promise<v
 }
 
 type Difficulty = 'easy' | 'medium' | 'hard' | 'all';
-type Screen = 'setup' | 'practice' | 'questions' | 'summary';
+type Mode = 'comprehension' | 'dictation';
+type Screen = 'setup' | 'practice' | 'questions' | 'summary' | 'dictation' | 'dictation-summary';
 
 // ── component ───────────────────────────────────────────
 
@@ -41,6 +43,7 @@ export default function ListeningPage() {
 
   const [language, setLanguage] = useState(supportedLanguages[0] ?? '');
   const [difficulty, setDifficulty] = useState<Difficulty>('all');
+  const [mode, setMode] = useState<Mode>('comprehension');
   const [screen, setScreen] = useState<Screen>('setup');
   const [passage, setPassage] = useState<ListeningPassage | null>(null);
   const [usedIds, setUsedIds] = useState<Set<string>>(new Set());
@@ -58,6 +61,9 @@ export default function ListeningPage() {
 
   // summary
   const [xpAwarded, setXpAwarded] = useState(0);
+
+  // dictation summary
+  const [dictationStats, setDictationStats] = useState<{ correct: number; total: number; xpEarned: number } | null>(null);
 
   // Cancel any ongoing speech when leaving the page
   useEffect(() => {
@@ -84,6 +90,10 @@ export default function ListeningPage() {
   // ── handlers ──────────────────────────────────────────
 
   function startPractice() {
+    if (mode === 'dictation') {
+      setScreen('dictation');
+      return;
+    }
     const p = pickPassage();
     if (!p) return;
     setPassage(p);
@@ -204,6 +214,29 @@ export default function ListeningPage() {
           ))}
         </div>
 
+        {/* Mode */}
+        <label className="block text-sm font-medium text-slate-600 dark:text-slate-300 mb-1">
+          Mode
+        </label>
+        <div className="flex gap-2 mb-6">
+          {([
+            { key: 'comprehension' as Mode, label: '🎧 Comprehension' },
+            { key: 'dictation' as Mode, label: '✍️ Dictation' },
+          ]).map(({ key, label }) => (
+            <button
+              key={key}
+              onClick={() => setMode(key)}
+              className={`px-4 py-2 rounded-xl text-sm font-medium transition-colors min-h-[44px] ${
+                mode === key
+                  ? 'bg-indigo-600 text-white'
+                  : 'bg-slate-100 dark:bg-slate-700 text-slate-700 dark:text-slate-200'
+              }`}
+            >
+              {label}
+            </button>
+          ))}
+        </div>
+
         {/* Difficulty */}
         <label className="block text-sm font-medium text-slate-600 dark:text-slate-300 mb-1">
           Difficulty
@@ -229,7 +262,7 @@ export default function ListeningPage() {
           disabled={!language}
           className="w-full py-3 rounded-2xl bg-indigo-600 text-white font-semibold text-lg disabled:opacity-50 hover:bg-indigo-700 press-feedback transition-colors"
         >
-          Start Listening Practice
+          {mode === 'dictation' ? 'Start Dictation Practice' : 'Start Listening Practice'}
         </button>
       </div>
     );

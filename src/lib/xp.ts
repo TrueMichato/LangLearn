@@ -7,6 +7,8 @@ export const XP_PER_CHARACTER_PRACTICE = 5;
 export const XP_PER_QUIZ_CORRECT = 3;
 export const XP_PER_CLOZE_CORRECT = 3;
 export const XP_CLOZE_BASE = 20;
+export const XP_DICTATION_BASE = 15;
+export const XP_PER_DICTATION_CORRECT = 5;
 
 export function calculateTimeXP(durationSeconds: number): number {
   const fiveMinBlocks = Math.floor(durationSeconds / 300);

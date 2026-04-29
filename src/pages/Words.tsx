@@ -4,6 +4,7 @@ import { searchWords, updateWord, deleteWord, type WordFilter } from '../db/word
 import { db, type Word, type Review } from '../db/schema';
 import { useSettingsStore } from '../stores/settingsStore';
 import AddWordModal from '../components/srs/AddWordModal';
+import CSVImport from '../components/common/CSVImport';
 import { getLanguageLabel, getLanguageFlag } from '../lib/languages';
 import { SkeletonList } from '../components/common/Skeleton';
 import StudySets from '../components/words/StudySets';
@@ -88,6 +89,7 @@ export default function WordsPage() {
   const [deleteConfirmId, setDeleteConfirmId] = useState<number | null>(null);
   const [loading, setLoading] = useState(true);
   const [showAddModal, setShowAddModal] = useState(false);
+  const [showCSVImport, setShowCSVImport] = useState(false);
 
   const load = useCallback(async () => {
     setLoading(true);
@@ -156,9 +158,18 @@ export default function WordsPage() {
     <div className="p-4 max-w-lg mx-auto pb-24 space-y-3">
       <div className="flex items-center justify-between">
         <h1 className="text-2xl font-bold text-slate-900 dark:text-slate-100">Words</h1>
-        <span className="text-sm text-slate-500 dark:text-slate-400">
-          {results.length} word{results.length !== 1 ? 's' : ''}
-        </span>
+        <div className="flex items-center gap-2">
+          <button
+            onClick={() => setShowCSVImport(true)}
+            className="px-3 py-1.5 rounded-xl bg-slate-100 dark:bg-slate-700 text-slate-700 dark:text-slate-300 text-sm font-medium hover:bg-slate-200 dark:hover:bg-slate-600 transition-colors min-h-[44px] press-feedback flex items-center gap-1"
+            aria-label="Import CSV"
+          >
+            📥 Import
+          </button>
+          <span className="text-sm text-slate-500 dark:text-slate-400">
+            {results.length} word{results.length !== 1 ? 's' : ''}
+          </span>
+        </div>
       </div>
 
       <StudySets />
@@ -431,6 +442,12 @@ export default function WordsPage() {
       <AddWordModal
         isOpen={showAddModal}
         onClose={() => { setShowAddModal(false); load(); }}
+      />
+
+      <CSVImport
+        isOpen={showCSVImport}
+        onClose={() => { setShowCSVImport(false); load(); }}
+        onImportComplete={() => load()}
       />
     </div>
   );

@@ -10,6 +10,8 @@ import {
   getActivityBalance,
 } from '../lib/analytics';
 import type { Word, Review } from '../db/schema';
+import { useSettingsStore } from '../stores/settingsStore';
+import { getLanguageLabel } from '../lib/languages';
 import LineChart from '../components/analytics/LineChart';
 import BarChart from '../components/analytics/BarChart';
 import SegmentedBar from '../components/analytics/SegmentedBar';
@@ -42,23 +44,26 @@ function getDifficultyColor(ease: number): string {
 
 export default function AnalyticsPage() {
   const [data, setData] = useState<AnalyticsData | null>(null);
+  const [selectedLang, setSelectedLang] = useState<string | undefined>(undefined);
+  const activeLanguages = useSettingsStore((s) => s.activeLanguages);
 
   useEffect(() => {
+    setData(null);
     async function load() {
       const [retention, forecast, weakest, mastery, studyTime, stats, activityBalance] =
         await Promise.all([
-          getRetentionData(30),
-          getReviewForecast(7),
-          getWeakestWords(10),
-          getMasteryDistribution(),
+          getRetentionData(30, selectedLang),
+          getReviewForecast(7, selectedLang),
+          getWeakestWords(10, selectedLang),
+          getMasteryDistribution(selectedLang),
           getStudyTimeTrend(14),
-          getOverallStats(),
+          getOverallStats(selectedLang),
           getActivityBalance(30),
         ]);
       setData({ retention, forecast, weakest, mastery, studyTime, stats, activityBalance });
     }
     load();
-  }, []);
+  }, [selectedLang]);
 
   if (!data) {
     return (
@@ -102,6 +107,33 @@ export default function AnalyticsPage() {
         <h2 className="text-lg font-semibold text-slate-700 dark:text-slate-200">
           📈 SRS Analytics
         </h2>
+      </div>
+
+      {/* Language Filter Tabs */}
+      <div className="flex gap-2 overflow-x-auto pb-2 mb-4">
+        <button
+          onClick={() => setSelectedLang(undefined)}
+          className={`px-4 py-1.5 rounded-full text-sm font-medium whitespace-nowrap transition-colors ${
+            selectedLang === undefined
+              ? 'bg-indigo-600 text-white'
+              : 'bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300'
+          }`}
+        >
+          All Languages
+        </button>
+        {activeLanguages.map((lang) => (
+          <button
+            key={lang}
+            onClick={() => setSelectedLang(lang)}
+            className={`px-4 py-1.5 rounded-full text-sm font-medium whitespace-nowrap transition-colors ${
+              selectedLang === lang
+                ? 'bg-indigo-600 text-white'
+                : 'bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300'
+            }`}
+          >
+            {getLanguageLabel(lang)}
+          </button>
+        ))}
       </div>
 
       {/* Overall Stats Summary */}
@@ -153,7 +185,7 @@ export default function AnalyticsPage() {
       </Section>
 
       {/* Study Time Trend */}
-      <Section title="Study Time (14 days)">
+      <Section title={`Study Time (14 days)${selectedLang ? ' — all languages' : ''}`}>
         <BarChart
           data={studyTime.map((s) => ({
             label: shortDate(s.date),
@@ -165,7 +197,7 @@ export default function AnalyticsPage() {
       </Section>
 
       {/* Activity Balance */}
-      <ActivityBalanceSection data={activityBalance} />
+      <ActivityBalanceSection data={activityBalance} allLanguages={!!selectedLang} />
 
       {/* Weakest Words */}
       <Section title="Weakest Words">
@@ -299,14 +331,16 @@ function getActivityRecommendation(
 
 function ActivityBalanceSection({
   data,
+  allLanguages,
 }: {
   data: { activity: string; minutes: number }[];
+  allLanguages?: boolean;
 }) {
   const total = data.reduce((sum, d) => sum + d.minutes, 0);
   const recommendation = getActivityRecommendation(data);
 
   return (
-    <Section title="Activity Balance (30 days)">
+    <Section title={`Activity Balance (30 days)${allLanguages ? ' — all languages' : ''}`}>
       {total === 0 ? (
         <p className="text-sm text-slate-400 dark:text-slate-500 text-center py-4">
           No study sessions recorded yet

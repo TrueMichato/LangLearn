@@ -12,12 +12,24 @@ function daysAgo(n: number): Date {
   return d;
 }
 
+/** Get word IDs for a specific language (for filtering reviews). */
+async function getWordIdsForLanguage(language: string): Promise<Set<number>> {
+  const ids = await db.words.where('language').equals(language).primaryKeys();
+  return new Set(ids as number[]);
+}
+
 /** Retention (% correct) per day for the last N days. */
 export async function getRetentionData(
-  days: number
+  days: number,
+  language?: string
 ): Promise<{ date: string; percent: number }[]> {
   const start = daysAgo(days);
-  const reviews = await db.reviews.toArray();
+  let reviews = await db.reviews.toArray();
+
+  if (language) {
+    const wordIds = await getWordIdsForLanguage(language);
+    reviews = reviews.filter(r => wordIds.has(r.wordId));
+  }
 
   // Bucket reviews by lastReviewDate
   const buckets = new Map<string, { total: number; correct: number }>();
@@ -48,11 +60,17 @@ export async function getRetentionData(
 
 /** Number of cards due each day for the next N days. */
 export async function getReviewForecast(
-  days: number
+  days: number,
+  language?: string
 ): Promise<{ date: string; count: number }[]> {
   const today = new Date();
   today.setHours(0, 0, 0, 0);
-  const reviews = await db.reviews.toArray();
+  let reviews = await db.reviews.toArray();
+
+  if (language) {
+    const wordIds = await getWordIdsForLanguage(language);
+    reviews = reviews.filter(r => wordIds.has(r.wordId));
+  }
 
   const buckets = new Map<string, number>();
   for (let i = 0; i < days; i++) {
@@ -81,9 +99,16 @@ export async function getReviewForecast(
 
 /** Top N weakest words (lowest ease factor). */
 export async function getWeakestWords(
-  limit: number
+  limit: number,
+  language?: string
 ): Promise<Array<{ word: Word; review: Review }>> {
-  const reviews = await db.reviews.toArray();
+  let reviews = await db.reviews.toArray();
+
+  if (language) {
+    const wordIds = await getWordIdsForLanguage(language);
+    reviews = reviews.filter(r => wordIds.has(r.wordId));
+  }
+
   // Sort by ease ascending (weakest first)
   reviews.sort((a, b) => a.ease - b.ease);
   const top = reviews.slice(0, limit);
@@ -99,12 +124,18 @@ export async function getWeakestWords(
 }
 
 /** Distribution of cards by mastery level. */
-export async function getMasteryDistribution(): Promise<{
+export async function getMasteryDistribution(language?: string): Promise<{
   new: number;
   learning: number;
   mastered: number;
 }> {
-  const reviews = await db.reviews.toArray();
+  let reviews = await db.reviews.toArray();
+
+  if (language) {
+    const wordIds = await getWordIdsForLanguage(language);
+    reviews = reviews.filter(r => wordIds.has(r.wordId));
+  }
+
   let newCount = 0;
   let learning = 0;
   let mastered = 0;
@@ -147,13 +178,18 @@ export async function getStudyTimeTrend(
 }
 
 /** 7-day retention rate as a single percentage + review count. */
-export async function get7DayRetention(): Promise<{
+export async function get7DayRetention(language?: string): Promise<{
   percent: number;
   reviewCount: number;
 }> {
   const start = daysAgo(7);
   const startStr = toDateString(start);
-  const reviews = await db.reviews.toArray();
+  let reviews = await db.reviews.toArray();
+
+  if (language) {
+    const wordIds = await getWordIdsForLanguage(language);
+    reviews = reviews.filter(r => wordIds.has(r.wordId));
+  }
 
   let total = 0;
   let correct = 0;
@@ -199,30 +235,38 @@ export async function getActivityBalance(
 }
 
 /** Aggregate stats for the summary section. */
-export async function getOverallStats(): Promise<{
+export async function getOverallStats(language?: string): Promise<{
   totalWords: number;
   totalReviews: number;
   averageEase: number;
   totalStudyMinutes: number;
 }> {
   const [words, reviews, sessions] = await Promise.all([
-    db.words.count(),
+    language
+      ? db.words.where('language').equals(language).count()
+      : db.words.count(),
     db.reviews.toArray(),
     db.studySessions.toArray(),
   ]);
+
+  let filteredReviews = reviews;
+  if (language) {
+    const wordIds = await getWordIdsForLanguage(language);
+    filteredReviews = reviews.filter(r => wordIds.has(r.wordId));
+  }
 
   const totalStudySeconds = sessions.reduce(
     (sum, s) => sum + s.durationSeconds,
     0
   );
   const averageEase =
-    reviews.length > 0
-      ? reviews.reduce((sum, r) => sum + r.ease, 0) / reviews.length
+    filteredReviews.length > 0
+      ? filteredReviews.reduce((sum, r) => sum + r.ease, 0) / filteredReviews.length
       : 0;
 
   return {
     totalWords: words,
-    totalReviews: reviews.length,
+    totalReviews: filteredReviews.length,
     averageEase: Math.round(averageEase * 100) / 100,
     totalStudyMinutes: Math.round(totalStudySeconds / 60),
   };
