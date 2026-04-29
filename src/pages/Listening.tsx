@@ -432,5 +432,58 @@ export default function ListeningPage() {
     );
   }
 
+  // ── DICTATION ──────────────────────────────────────────
+
+  if (screen === 'dictation') {
+    return (
+      <DictationDrill
+        language={language}
+        difficulty={difficulty}
+        onComplete={(stats) => {
+          setDictationStats(stats);
+          setScreen('dictation-summary');
+        }}
+        onBack={handleBack}
+      />
+    );
+  }
+
+  // ── DICTATION SUMMARY ────────────────────────────────
+
+  if (screen === 'dictation-summary' && dictationStats) {
+    return (
+      <div className="text-center py-6 page-enter">
+        <p className="text-4xl mb-4">🎉</p>
+        <h3 className="text-xl font-bold text-slate-800 dark:text-slate-100 mb-2">
+          Dictation Complete!
+        </h3>
+        <p className="text-slate-600 dark:text-slate-300 mb-1">
+          {dictationStats.correct} / {dictationStats.total} sentences with ≥80% accuracy
+        </p>
+        <p className="text-indigo-600 dark:text-indigo-400 font-semibold mb-8">
+          +{dictationStats.xpEarned} XP earned
+        </p>
+
+        <div className="flex gap-3">
+          <button
+            onClick={handleBack}
+            className="flex-1 py-3 rounded-2xl border border-gray-300 dark:border-white/10 text-slate-700 dark:text-slate-200 font-semibold hover:bg-slate-50 dark:hover:bg-slate-800 press-feedback transition-colors min-h-[44px]"
+          >
+            Back
+          </button>
+          <button
+            onClick={() => {
+              setDictationStats(null);
+              setScreen('dictation');
+            }}
+            className="flex-1 py-3 rounded-2xl bg-indigo-600 text-white font-semibold hover:bg-indigo-700 press-feedback transition-colors min-h-[44px]"
+          >
+            Try Again
+          </button>
+        </div>
+      </div>
+    );
+  }
+
   return null;
 }
