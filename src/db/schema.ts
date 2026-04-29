@@ -38,6 +38,9 @@ export interface StudySession {
   durationSeconds: number;
   activity: 'srs' | 'reading' | 'grammar';
   xpEarned: number;
+  language?: string;
+  wordCount?: number;
+  title?: string;
 }
 
 export interface Setting {

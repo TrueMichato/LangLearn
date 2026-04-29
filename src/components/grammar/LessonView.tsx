@@ -24,6 +24,75 @@ interface QuizData {
 }
 
 const QUIZ_REGEX = /<!--\s*quiz:(.*?)\s*-->/g;
+const GRAMMAR_CARD_REGEX = /<!--\s*grammar-card:\s*(.*?)\s*-->/g;
+
+interface GrammarCardData {
+  rule: string;
+  hint?: string;
+  example?: string;
+  answer?: string;
+  explanation: string;
+}
+
+/** Extract grammar-card blocks from lesson markdown. */
+function extractGrammarCards(md: string): GrammarCardData[] {
+  const cards: GrammarCardData[] = [];
+  GRAMMAR_CARD_REGEX.lastIndex = 0;
+  let match: RegExpExecArray | null;
+  while ((match = GRAMMAR_CARD_REGEX.exec(md)) !== null) {
+    try {
+      cards.push(JSON.parse(match[1]) as GrammarCardData);
+    } catch { /* skip malformed blocks */ }
+  }
+  return cards;
+}
+
+/** Auto-generate grammar cards from quiz data when no explicit grammar-card blocks exist. */
+function cardsFromQuizzes(quizzes: QuizData[], lessonTitle: string): GrammarCardData[] {
+  return quizzes.map((q) => ({
+    rule: lessonTitle,
+    hint: q.question,
+    example: q.question,
+    answer: q.options[q.answer],
+    explanation: `Correct answer: ${q.options[q.answer]}`,
+  }));
+}
+
+/** Add grammar Word entries for SRS review, skipping duplicates. */
+async function createGrammarCards(
+  cards: GrammarCardData[],
+  lang: string,
+  lessonId: string,
+): Promise<number> {
+  // Check if cards for this lesson already exist (match by tags)
+  const existing = await db.words
+    .where('type')
+    .equals('grammar')
+    .filter((w) => w.tags.includes(lessonId) && w.language === lang)
+    .count();
+  if (existing > 0) return 0;
+
+  let added = 0;
+  for (const card of cards) {
+    await addWord({
+      word: card.rule,
+      reading: card.hint ?? '',
+      meaning: card.explanation,
+      language: lang,
+      contextSentence: card.answer ?? card.example ?? '',
+      sourceTextId: null,
+      tags: ['grammar', lessonId],
+      type: 'grammar',
+    });
+    added++;
+  }
+
+  if (added > 0) {
+    useXPStore.getState().addXP(added * 5);
+  }
+
+  return added;
+}
 
 /** Extract target sentence, romanization, and English translation from a markdown list item. */
 function parseExampleSentence(children: ReactNode): {
@@ -121,10 +190,37 @@ export default function LessonView({ lang, lessonId, onBack, lessons, onNavigate
   const [error, setError] = useState(false);
   const [quizScore, setQuizScore] = useState<{ correct: number; total: number }>({ correct: 0, total: 0 });
   const [completed, setCompleted] = useState(false);
+  const [grammarCardsAdded, setGrammarCardsAdded] = useState(0);
   const attemptsIncremented = useRef(false);
+  const rawMarkdown = useRef<string>('');
 
   // Count total quizzes in the lesson
   const totalQuizzes = segments.filter((s) => s.type === 'quiz').length;
+  const lessonTitle = lessons.find((l) => l.id === lessonId)?.title ?? lessonId;
+
+  /** Extract and save grammar cards from the lesson content. */
+  const extractAndSaveGrammarCards = useCallback(async () => {
+    const md = rawMarkdown.current;
+    if (!md) return;
+
+    // Try explicit grammar-card blocks first
+    let cards = extractGrammarCards(md);
+
+    // Fall back to auto-generating from quizzes
+    if (cards.length === 0) {
+      const quizzes = segments
+        .filter((s): s is { type: 'quiz'; data: QuizData } => s.type === 'quiz')
+        .map((s) => s.data);
+      if (quizzes.length > 0) {
+        cards = cardsFromQuizzes(quizzes, lessonTitle);
+      }
+    }
+
+    if (cards.length > 0) {
+      const added = await createGrammarCards(cards, lang, lessonId);
+      if (added > 0) setGrammarCardsAdded(added);
+    }
+  }, [lang, lessonId, lessonTitle, segments]);
 
   const handleQuizAnswer = useCallback(
     (correct: boolean) => {
@@ -135,11 +231,12 @@ export default function LessonView({ lang, lessonId, onBack, lessons, onNavigate
           const score = Math.round((next.correct / next.total) * 100);
           markLessonComplete(lang, lessonId, score);
           setCompleted(true);
+          extractAndSaveGrammarCards();
         }
         return next;
       });
     },
-    [totalQuizzes, lang, lessonId],
+    [totalQuizzes, lang, lessonId, extractAndSaveGrammarCards],
   );
 
   useEffect(() => {
@@ -152,6 +249,7 @@ export default function LessonView({ lang, lessonId, onBack, lessons, onNavigate
         return res.text();
       })
       .then((md) => {
+        rawMarkdown.current = md;
         const parts: typeof segments = [];
         let lastIndex = 0;
 
@@ -186,11 +284,17 @@ export default function LessonView({ lang, lessonId, onBack, lessons, onNavigate
           incrementAttempts(lang, lessonId);
         }
 
-        // If no quizzes, mark complete immediately
+        // If no quizzes, mark complete immediately and extract grammar cards
         const hasQuizzes = parts.some((p) => p.type === 'quiz');
         if (!hasQuizzes) {
           markLessonComplete(lang, lessonId, 100);
           setCompleted(true);
+          const cards = extractGrammarCards(md);
+          if (cards.length > 0) {
+            createGrammarCards(cards, lang, lessonId).then((added) => {
+              if (added > 0) setGrammarCardsAdded(added);
+            });
+          }
         }
       })
       .catch(() => {
@@ -275,6 +379,11 @@ export default function LessonView({ lang, lessonId, onBack, lessons, onNavigate
           <p className="text-green-800 dark:text-green-200 font-semibold">
             ✅ Lesson complete! Score: {totalQuizzes > 0 ? Math.round((quizScore.correct / quizScore.total) * 100) : 100}%
           </p>
+          {grammarCardsAdded > 0 && (
+            <p className="text-violet-700 dark:text-violet-300 text-sm mt-2 font-medium">
+              🃏 Added {grammarCardsAdded} grammar point{grammarCardsAdded > 1 ? 's' : ''} for SRS review
+            </p>
+          )}
         </div>
       )}
       {(() => {

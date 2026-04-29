@@ -140,6 +140,12 @@ by Wasabi – Learn Japanese Online
 
 <!-- quiz: {"type":"multiple-choice","question":"What does \"木村さんはお好み焼きを食べたいと言っていた。\" mean?","options":["Kimura-san was saying he wants to eat okonomiyaki.","I want to go to a bathroom.","I want to become a pilot.","I heard that Tanaka-san wants to go get a drink with Kimura-san."],"answer":0} -->
 
+<!-- grammar-card: {"rule":"〜たい","hint":"Express desire/want to do something","example":"日本に＿＿たい。","answer":"日本に行きたい。","explanation":"Attach たい to the verb masu-stem to express wanting to do something. E.g. 食べます → 食べたい (want to eat)."} -->
+
+<!-- grammar-card: {"rule":"〜たいと言っていた","hint":"Report someone else's desire","example":"木村さんはお好み焼きを食べたい＿＿。","answer":"木村さんはお好み焼きを食べたいと言っていた。","explanation":"Use と言っていた after 〜たい to report what someone else said they wanted to do."} -->
+
+<!-- grammar-card: {"rule":"〜たそうだ","hint":"Express that someone appears to want something","example":"田中さんは帰り＿＿。","answer":"田中さんは帰りたそうだ。","explanation":"Use 〜たそうだ (remove い, add そうだ) to say 'it looks like someone wants to…' based on observation."} -->
+
 ## Sources
 
 - [Tofugu](https://www.tofugu.com/japanese-grammar/tai-form/)

@@ -29,6 +29,10 @@ The particle **を** marks the **direct object** — the thing being acted upon.
 
 <!-- quiz:{"type":"multiple-choice","question":"Which particle marks the direct object?","options":["は","が","を","に"],"answer":2} -->
 
+<!-- grammar-card: {"rule":"は (topic marker)","hint":"Mark the topic of a sentence","example":"私＿＿学生です。","answer":"私は学生です。","explanation":"は marks the topic — what you're talking about. Think of it as 'As for X, …'. Written は but pronounced 'wa'."} -->
+
+<!-- grammar-card: {"rule":"が (subject marker)","hint":"Mark the subject or introduce new information","example":"猫＿＿います。","answer":"猫がいます。","explanation":"が marks the subject, especially for new information or emphasis. Use は for known topics, が for new subjects."} -->
+
 ## に (ni) — Direction / Target / Time
 
 The particle **に** has several uses: indicating direction, target of an action, location of existence, or specific time.
@@ -45,6 +49,10 @@ The particle **で** indicates where an action takes place or the means by which
 - **バスで行きます。** (Basu de ikimasu.) — I go by bus. *(means)*
 
 <!-- quiz:{"type":"multiple-choice","question":"'図書館で勉強します' — what does で indicate here?","options":["Direction","Direct object","Location of action","Time"],"answer":2} -->
+
+<!-- grammar-card: {"rule":"を (direct object marker)","hint":"Mark what is being acted upon","example":"水＿＿飲みます。","answer":"水を飲みます。","explanation":"を marks the direct object of a verb — the thing being acted upon. E.g. 本を読みます (I read a book)."} -->
+
+<!-- grammar-card: {"rule":"で (location/means marker)","hint":"Indicate where an action happens or means used","example":"図書館＿＿勉強します。","answer":"図書館で勉強します。","explanation":"で indicates the location of an action or means by which something is done. E.g. バスで行きます (go by bus)."} -->
 
 ## Summary
 
