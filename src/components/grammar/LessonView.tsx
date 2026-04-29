@@ -4,6 +4,8 @@ import remarkGfm from 'remark-gfm';
 import GrammarQuiz from './GrammarQuiz';
 import { markLessonComplete, incrementAttempts } from '../../db/lessons';
 import { addWord } from '../../db/words';
+import { db } from '../../db/schema';
+import { useXPStore } from '../../stores/xpStore';
 import { SkeletonList } from '../common/Skeleton';
 
 interface LessonViewProps {

@@ -1,10 +1,11 @@
-export type CardType = 'classic' | 'reverse' | 'listening' | 'multiple-choice' | 'cloze';
+export type CardType = 'classic' | 'reverse' | 'listening' | 'multiple-choice' | 'cloze' | 'grammar';
 
 const LEARNING_TYPES: CardType[] = ['classic', 'reverse', 'cloze'];
 const ALL_TYPES: CardType[] = ['classic', 'reverse', 'listening', 'multiple-choice', 'cloze'];
 
-/** Assign a card type based on review maturity */
-export function assignCardType(repetitions: number): CardType {
+/** Assign a card type based on review maturity and word type */
+export function assignCardType(repetitions: number, wordType?: string): CardType {
+  if (wordType === 'grammar') return 'grammar';
   if (repetitions <= 1) return 'classic';
   if (repetitions <= 3) return LEARNING_TYPES[Math.floor(Math.random() * LEARNING_TYPES.length)];
   return ALL_TYPES[Math.floor(Math.random() * ALL_TYPES.length)];

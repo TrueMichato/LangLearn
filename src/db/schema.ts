@@ -9,7 +9,7 @@ export interface Word {
   contextSentence: string;
   sourceTextId: number | null;
   tags: string[];
-  type: 'word' | 'letter';
+  type: 'word' | 'letter' | 'grammar';
   createdAt: string;
 }
 

@@ -13,6 +13,7 @@ import ReverseCard from '../components/srs/ReverseCard';
 import ListeningCard from '../components/srs/ListeningCard';
 import MultipleChoiceCard from '../components/srs/MultipleChoiceCard';
 import ClozeCard from '../components/srs/ClozeCard';
+import GrammarCard from '../components/srs/GrammarCard';
 import StudyCard from '../components/srs/StudyCard';
 import GradeButtons from '../components/srs/GradeButtons';
 import AddWordModal from '../components/srs/AddWordModal';
@@ -29,6 +30,7 @@ const CARD_TYPE_LABELS: Record<string, { label: string; bg: string }> = {
   listening: { label: 'Listening', bg: 'bg-teal-100 text-teal-700 dark:bg-teal-900/50 dark:text-teal-300' },
   'multiple-choice': { label: 'Pick the meaning', bg: 'bg-amber-100 text-amber-700 dark:bg-amber-900/50 dark:text-amber-300' },
   cloze: { label: 'Fill in the blank', bg: 'bg-rose-100 text-rose-700 dark:bg-rose-900/50 dark:text-rose-300' },
+  grammar: { label: 'Grammar', bg: 'bg-violet-100 text-violet-700 dark:bg-violet-900/50 dark:text-violet-300' },
   study: { label: 'Study', bg: 'bg-slate-100 text-slate-700 dark:bg-slate-700 dark:text-slate-300' },
 };
 
@@ -89,8 +91,13 @@ export default function ReviewPage() {
     const items: QueueItem[] = [];
     for (const item of batch) {
       let cardType = activeMode
-        ? applyPracticeMode(assignCardType(item.review.repetitions), activeMode)
-        : assignCardType(item.review.repetitions);
+        ? applyPracticeMode(assignCardType(item.review.repetitions, item.word.type), activeMode)
+        : assignCardType(item.review.repetitions, item.word.type);
+
+      // Grammar words always use grammar card type regardless of practice mode
+      if (item.word.type === 'grammar') {
+        cardType = 'grammar';
+      }
 
       let distractors: string[] | undefined;
       if (cardType === 'cloze' && !item.word.contextSentence && item.word.word.length <= 2) {
@@ -341,6 +348,22 @@ export default function ReviewPage() {
       {activeCard.cardType === 'classic' && (
         <>
           <Flashcard word={activeCard.word} isFlipped={isFlipped} onFlip={flip} />
+          {isFlipped && (
+            <>
+              <GradeButtons onGrade={handleGrade} />
+              <div className="hidden sm:flex justify-center gap-4 mt-2 text-xs text-slate-400 dark:text-slate-500">
+                <span>Space: flip</span>
+                <span>1-4: grade</span>
+                <span>Esc: exit</span>
+              </div>
+            </>
+          )}
+        </>
+      )}
+
+      {activeCard.cardType === 'grammar' && (
+        <>
+          <GrammarCard word={activeCard.word} isFlipped={isFlipped} onFlip={flip} />
           {isFlipped && (
             <>
               <GradeButtons onGrade={handleGrade} />

@@ -2,6 +2,8 @@ import { useState } from 'react';
 import { speak, isTTSSupported } from '../../lib/tts';
 import { lookupWord } from '../../lib/dictionary';
 import { getForvoUrl } from '../../lib/forvo';
+import type { WordStatusMap } from '../../lib/word-status';
+import { getStatusLabel, getStatusBadgeClass } from '../../lib/word-status';
 
 interface WordLookupSheetProps {
   word: string;
@@ -10,6 +12,7 @@ interface WordLookupSheetProps {
   contextSentence?: string;
   onAdd: (word: string, reading: string, meaning: string, contextSentence: string) => void;
   onClose: () => void;
+  wordStatusMap?: WordStatusMap;
 }
 
 export default function WordLookupSheet({
@@ -19,6 +22,7 @@ export default function WordLookupSheet({
   contextSentence = '',
   onAdd,
   onClose,
+  wordStatusMap,
 }: WordLookupSheetProps) {
   const [reading, setReading] = useState(initialReading);
   const [meaning, setMeaning] = useState('');
@@ -43,6 +47,11 @@ export default function WordLookupSheet({
         <div className="flex items-center justify-between mb-3">
           <div className="flex items-center gap-2">
             <span className="text-xl font-bold dark:text-slate-100">{word}</span>
+            {wordStatusMap && (
+              <span className={`text-xs font-medium px-2 py-0.5 rounded-full ${getStatusBadgeClass(wordStatusMap.getStatus(word))}`}>
+                {getStatusLabel(wordStatusMap.getStatus(word))}
+              </span>
+            )}
             {isTTSSupported() && (
               <button
                 onClick={() => speak(word, language)}

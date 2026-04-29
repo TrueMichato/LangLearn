@@ -1,5 +1,6 @@
 import { useState, useEffect, useCallback } from 'react';
 import { analyzeText, type TextAnalysis } from '../../lib/text-analysis';
+import type { WordStatusMap } from '../../lib/word-status';
 
 interface ComprehensionIndicatorProps {
   text: string;
@@ -7,6 +8,8 @@ interface ComprehensionIndicatorProps {
   /** When true, known-word highlighting is active */
   highlightEnabled: boolean;
   onToggleHighlight: () => void;
+  /** Optional word status map for richer stats */
+  wordStatusMap?: WordStatusMap;
 }
 
 const levelConfig = {
@@ -37,6 +40,7 @@ export default function ComprehensionIndicator({
   language,
   highlightEnabled,
   onToggleHighlight,
+  wordStatusMap,
 }: ComprehensionIndicatorProps) {
   const [analysis, setAnalysis] = useState<TextAnalysis | null>(null);
   const [loading, setLoading] = useState(true);
@@ -110,6 +114,28 @@ export default function ComprehensionIndicator({
       <div className={`inline-block text-xs font-medium rounded-md px-2 py-0.5 mt-2 ${config.color}`}>
         {config.label}
       </div>
+
+      {/* Word status legend */}
+      {highlightEnabled && wordStatusMap && (
+        <div className="flex flex-wrap items-center gap-x-3 gap-y-1 mt-2 text-xs text-gray-600 dark:text-gray-400">
+          <span className="flex items-center gap-1">
+            <span className="inline-block w-2.5 h-2.5 rounded-sm bg-yellow-200 dark:bg-yellow-800" />
+            New
+          </span>
+          <span className="flex items-center gap-1">
+            <span className="inline-block w-2.5 h-2.5 rounded-sm bg-orange-200 dark:bg-orange-800" />
+            Learning
+          </span>
+          <span className="flex items-center gap-1">
+            <span className="inline-block w-2.5 h-2.5 rounded-sm bg-blue-200 dark:bg-blue-800" />
+            Seen
+          </span>
+          <span className="flex items-center gap-1">
+            <span className="inline-block w-2.5 h-2.5 rounded-sm bg-gray-100 dark:bg-gray-700 border border-gray-300 dark:border-gray-600" />
+            Known
+          </span>
+        </div>
+      )}
 
       {/* High-frequency unknown words */}
       {analysis.unknownHighFrequency.length > 0 && (

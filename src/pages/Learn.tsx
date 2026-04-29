@@ -167,6 +167,14 @@ export default function LearnPage() {
           borderColor: 'border-pink-400 dark:border-pink-500',
           bgColor: 'bg-pink-100 dark:bg-pink-900/40',
         },
+        {
+          to: '/translation',
+          emoji: '✍️',
+          title: 'Translation',
+          subtitle: 'Translate sentences to practice output',
+          borderColor: 'border-teal-300 dark:border-teal-700',
+          bgColor: 'bg-teal-50 dark:bg-teal-950/30',
+        },
       ],
     },
     {

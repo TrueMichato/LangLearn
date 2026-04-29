@@ -15,6 +15,7 @@ import { getLanguageLabel } from '../lib/languages';
 import { SkeletonCard, SkeletonList } from '../components/common/Skeleton';
 import ComprehensionIndicator from '../components/reader/ComprehensionIndicator';
 import { getKnownWordSet } from '../lib/text-analysis';
+import { buildWordStatusMap, type WordStatusMap, getStatusColor } from '../lib/word-status';
 import { parseWithIchiMoe, getIchiMoeUrl, type IchiMoeWord } from '../lib/ichimoe';
 import WordDefinitions from '../components/reader/WordDefinitions';
 import { parseSrt, srtToText } from '../lib/srt-parser';
@@ -42,6 +43,7 @@ export default function ReaderPage() {
   const { showStressMarks } = useSettingsStore();
   const [highlightKnown, setHighlightKnown] = useState(false);
   const [knownWordSet, setKnownWordSet] = useState<Set<string>>(new Set());
+  const [wordStatusMap, setWordStatusMap] = useState<WordStatusMap | null>(null);
   const [ichiMoeWords, setIchiMoeWords] = useState<IchiMoeWord[]>([]);
   const [ichiMoeCorsBlocked, setIchiMoeCorsBlocked] = useState(false);
   const [ichiMoeLoading, setIchiMoeLoading] = useState(false);
