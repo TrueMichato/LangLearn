@@ -1,4 +1,4 @@
-import { useState, useEffect, useCallback } from 'react';
+import { useState, useEffect, useCallback, useRef } from 'react';
 import { db, type Text as TextRecord } from '../db/schema';
 import { addWord } from '../db/words';
 import { getTextCount } from '../db/texts';
@@ -51,6 +51,38 @@ export default function ReaderPage() {
   const [translation, setTranslation] = useState('');
   const [showBilingual, setShowBilingual] = useState(false);
 
+  // Reading session tracking
+  const readingStartRef = useRef<number | null>(null);
+  const readingMetaRef = useRef<{ language: string; wordCount: number; title: string } | null>(null);
+
+  const logReadingSession = useCallback(async () => {
+    const startTime = readingStartRef.current;
+    const meta = readingMetaRef.current;
+    if (!startTime || !meta) return;
+
+    const durationSeconds = Math.round((Date.now() - startTime) / 1000);
+    readingStartRef.current = null;
+    readingMetaRef.current = null;
+
+    if (durationSeconds < 10) return;
+
+    await db.studySessions.add({
+      startTime: new Date(startTime).toISOString(),
+      endTime: new Date().toISOString(),
+      durationSeconds,
+      activity: 'reading',
+      xpEarned: 0,
+      language: meta.language,
+      wordCount: meta.wordCount,
+      title: meta.title,
+    });
+  }, []);
+
+  // Log reading session on unmount (navigating away from Reader page)
+  useEffect(() => {
+    return () => { logReadingSession(); };
+  }, [logReadingSession]);
+
   // Load known words and word status map when highlighting is toggled on or text/language changes
   const refreshKnownWords = useCallback(async () => {
     if (!highlightKnown) return;
@@ -75,6 +107,7 @@ export default function ReaderPage() {
   }, []);
 
   function resetReadingState() {
+    logReadingSession();
     setTokens([]);
     setTokenOffsets([]);
     setJaTokens([]);
@@ -108,6 +141,11 @@ export default function ReaderPage() {
     setLanguage(record.language);
     setSavedTextId(record.id ?? null);
     setSentences(splitSentences(record.content));
+
+    // Start tracking reading session
+    const wordCount = record.content.split(/\s+/).filter(Boolean).length;
+    readingStartRef.current = Date.now();
+    readingMetaRef.current = { language: record.language, wordCount, title: record.title };
 
     if (record.language === 'ja') {
       setIsTokenizing(true);
@@ -160,6 +198,11 @@ export default function ReaderPage() {
       const content = await res.text();
       setText(content);
       setSentences(splitSentences(content));
+
+      // Start tracking reading session
+      const wordCount = content.split(/\s+/).filter(Boolean).length;
+      readingStartRef.current = Date.now();
+      readingMetaRef.current = { language: lang, wordCount, title: curatedTitle };
 
       if (lang === 'ja') {
         try {
@@ -214,6 +257,11 @@ export default function ReaderPage() {
     setSavedTextId(id);
 
     setSentences(splitSentences(text));
+
+    // Start tracking reading session
+    const wordCount = text.split(/\s+/).filter(Boolean).length;
+    readingStartRef.current = Date.now();
+    readingMetaRef.current = { language, wordCount, title: title || 'Untitled' };
 
     if (language === 'ja') {
       setIsTokenizing(true);

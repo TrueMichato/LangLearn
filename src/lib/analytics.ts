@@ -271,3 +271,53 @@ export async function getOverallStats(language?: string): Promise<{
     totalStudyMinutes: Math.round(totalStudySeconds / 60),
   };
 }
+
+/** Reading stats from studySessions with activity === 'reading'. */
+export async function getReadingStats(language?: string): Promise<{
+  totalTextsRead: number;
+  totalReadingMinutes: number;
+  averageSessionMinutes: number;
+  readingByDay: { date: string; minutes: number; texts: number }[];
+}> {
+  const sessions = await db.studySessions
+    .where('activity')
+    .equals('reading')
+    .toArray();
+
+  const filtered = language
+    ? sessions.filter(s => s.language === language)
+    : sessions;
+
+  const totalTextsRead = filtered.length;
+  const totalSeconds = filtered.reduce((sum, s) => sum + s.durationSeconds, 0);
+  const totalReadingMinutes = Math.round(totalSeconds / 60);
+  const averageSessionMinutes =
+    totalTextsRead > 0 ? Math.round(totalSeconds / totalTextsRead / 60) : 0;
+
+  // Last 14 days bucketed
+  const start = daysAgo(14);
+  const buckets = new Map<string, { minutes: number; texts: number }>();
+  for (let i = 0; i < 14; i++) {
+    const d = new Date(start);
+    d.setDate(d.getDate() + i);
+    buckets.set(toDateString(d), { minutes: 0, texts: 0 });
+  }
+
+  for (const s of filtered) {
+    if (!s.startTime) continue;
+    const key = s.startTime.slice(0, 10);
+    const bucket = buckets.get(key);
+    if (bucket) {
+      bucket.minutes += s.durationSeconds;
+      bucket.texts += 1;
+    }
+  }
+
+  const readingByDay = Array.from(buckets.entries()).map(([date, data]) => ({
+    date,
+    minutes: Math.round(data.minutes / 60),
+    texts: data.texts,
+  }));
+
+  return { totalTextsRead, totalReadingMinutes, averageSessionMinutes, readingByDay };
+}

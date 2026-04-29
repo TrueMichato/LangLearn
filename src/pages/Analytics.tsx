@@ -8,6 +8,7 @@ import {
   getStudyTimeTrend,
   getOverallStats,
   getActivityBalance,
+  getReadingStats,
 } from '../lib/analytics';
 import type { Word, Review } from '../db/schema';
 import { useSettingsStore } from '../stores/settingsStore';
@@ -29,6 +30,12 @@ interface AnalyticsData {
     totalStudyMinutes: number;
   };
   activityBalance: { activity: string; minutes: number }[];
+  reading: {
+    totalTextsRead: number;
+    totalReadingMinutes: number;
+    averageSessionMinutes: number;
+    readingByDay: { date: string; minutes: number; texts: number }[];
+  };
 }
 
 function shortDate(iso: string): string {
@@ -50,7 +57,7 @@ export default function AnalyticsPage() {
   useEffect(() => {
     setData(null);
     async function load() {
-      const [retention, forecast, weakest, mastery, studyTime, stats, activityBalance] =
+      const [retention, forecast, weakest, mastery, studyTime, stats, activityBalance, reading] =
         await Promise.all([
           getRetentionData(30, selectedLang),
           getReviewForecast(7, selectedLang),
@@ -59,8 +66,9 @@ export default function AnalyticsPage() {
           getStudyTimeTrend(14),
           getOverallStats(selectedLang),
           getActivityBalance(30),
+          getReadingStats(selectedLang),
         ]);
-      setData({ retention, forecast, weakest, mastery, studyTime, stats, activityBalance });
+      setData({ retention, forecast, weakest, mastery, studyTime, stats, activityBalance, reading });
     }
     load();
   }, [selectedLang]);
@@ -91,7 +99,7 @@ export default function AnalyticsPage() {
     );
   }
 
-  const { retention, forecast, weakest, mastery, studyTime, stats, activityBalance } = data;
+  const { retention, forecast, weakest, mastery, studyTime, stats, activityBalance, reading } = data;
 
   return (
     <div className="page-enter">
@@ -194,6 +202,47 @@ export default function AnalyticsPage() {
           gradient="green"
           unit="m"
         />
+      </Section>
+
+      {/* Reading Stats */}
+      <Section title="📖 Reading">
+        {reading.totalTextsRead === 0 ? (
+          <p className="text-sm text-slate-400 dark:text-slate-500 text-center py-4">
+            Start reading in the Reader to see your stats here! 📖
+          </p>
+        ) : (
+          <>
+            <div className="grid grid-cols-2 gap-3 mb-4">
+              <div className="bg-slate-50 dark:bg-slate-700/50 rounded-xl p-3 text-center">
+                <span className="text-lg">📚</span>
+                <p className="text-xl font-bold text-slate-800 dark:text-slate-100 mt-1">
+                  {reading.totalTextsRead}
+                </p>
+                <p className="text-xs text-slate-500 dark:text-slate-400">Texts Read</p>
+              </div>
+              <div className="bg-slate-50 dark:bg-slate-700/50 rounded-xl p-3 text-center">
+                <span className="text-lg">⏱️</span>
+                <p className="text-xl font-bold text-slate-800 dark:text-slate-100 mt-1">
+                  {reading.totalReadingMinutes >= 60
+                    ? `${Math.floor(reading.totalReadingMinutes / 60)}h ${reading.totalReadingMinutes % 60}m`
+                    : `${reading.totalReadingMinutes}m`}
+                </p>
+                <p className="text-xs text-slate-500 dark:text-slate-400">Reading Time</p>
+              </div>
+            </div>
+            <h4 className="text-sm font-medium text-slate-600 dark:text-slate-300 mb-2">
+              Reading Activity (14 days)
+            </h4>
+            <BarChart
+              data={reading.readingByDay.map((d) => ({
+                label: shortDate(d.date),
+                value: d.minutes,
+              }))}
+              gradient="green"
+              unit="m"
+            />
+          </>
+        )}
       </Section>
 
       {/* Activity Balance */}
