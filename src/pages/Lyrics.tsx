@@ -155,6 +155,7 @@ function LyricsViewer({
   onBack: () => void;
 }) {
   const [showReading, setShowReading] = useState(true);
+  const [showRomaji, setShowRomaji] = useState(false);
   const [showTranslation, setShowTranslation] = useState(false);
   const [highlightedLine, setHighlightedLine] = useState<number | null>(null);
   const [addedWords, setAddedWords] = useState<Set<string>>(new Set());
@@ -247,6 +248,18 @@ function LyricsViewer({
         >
           {showReading ? '✓ Reading' : '○ Reading'}
         </button>
+        {song.lines.some((l) => l.romaji) && (
+          <button
+            onClick={() => setShowRomaji((v) => !v)}
+            className={`px-4 py-2 rounded-xl text-sm font-medium min-h-[44px] transition-colors ${
+              showRomaji
+                ? 'bg-pink-600 text-white'
+                : 'bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300'
+            }`}
+          >
+            {showRomaji ? '✓ Romaji' : '○ Romaji'}
+          </button>
+        )}
         <button
           onClick={() => setShowTranslation((v) => !v)}
           className={`px-4 py-2 rounded-xl text-sm font-medium min-h-[44px] transition-colors ${
@@ -277,6 +290,11 @@ function LyricsViewer({
             {showReading && (
               <p className="text-sm text-gray-500 dark:text-gray-400 mt-0.5">
                 {line.reading}
+              </p>
+            )}
+            {showRomaji && line.romaji && (
+              <p className="text-sm text-indigo-500 dark:text-indigo-400 mt-0.5 font-mono">
+                {line.romaji}
               </p>
             )}
             {showTranslation && (

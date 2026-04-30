@@ -1,6 +1,7 @@
 export interface LyricLine {
   original: string;
   reading: string;
+  romaji?: string;
   translation: string;
 }
 

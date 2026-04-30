@@ -2,16 +2,6 @@ export function isNotificationSupported(): boolean {
   return typeof window !== 'undefined' && 'Notification' in window;
 }
 
-export function supportsNotificationTriggers(): boolean {
-  if (!isNotificationSupported()) return false;
-  // Chromium-only experimental API
-  return (
-    typeof window !== 'undefined' &&
-    'TimestampTrigger' in window &&
-    'showTrigger' in (Notification.prototype as object)
-  );
-}
-
 export async function requestNotificationPermission(): Promise<boolean> {
   if (!isNotificationSupported()) return false;
   if (Notification.permission === 'granted') return true;
@@ -53,52 +43,70 @@ export function showNotification(title: string, options?: NotificationOptions): 
   }
 }
 
-/**
- * Schedule a notification for a future timestamp. Uses the experimental
- * Notification Triggers API where available so it fires even when the app
- * is closed; otherwise returns false (caller should fall back to in-app
- * scheduling / catch-up).
- */
-export async function scheduleNotification(
-  title: string,
-  whenMs: number,
-  options?: NotificationOptions
-): Promise<boolean> {
-  if (!supportsNotificationTriggers()) return false;
-  if (Notification.permission !== 'granted') return false;
+/** Cancel any pending/shown notifications matching a tag. */
+export async function cancelNotificationsByTag(tag: string): Promise<void> {
+  const registration = await getRegistration();
+  if (!registration) return;
+  try {
+    const list = await registration.getNotifications({ tag });
+    list.forEach((n) => n.close());
+  } catch {
+    // ignore
+  }
+}
+
+// ─── Periodic Background Sync ───
+
+export function supportsPeriodicSync(): boolean {
+  if (typeof navigator === 'undefined') return false;
+  if (!('serviceWorker' in navigator)) return false;
+  return 'periodicSync' in (ServiceWorkerRegistration.prototype);
+}
+
+export async function isPeriodicSyncRegistered(): Promise<boolean> {
+  if (!supportsPeriodicSync()) return false;
   const registration = await getRegistration();
   if (!registration) return false;
   try {
-    // TimestampTrigger is non-standard; cast through any to satisfy TS.
-    const TimestampTriggerCtor = (window as unknown as {
-      TimestampTrigger: new (ts: number) => unknown;
-    }).TimestampTrigger;
-    await registration.showNotification(title, {
-      icon: '/LangLearn/pwa-192x192.png',
-      badge: '/LangLearn/pwa-192x192.png',
-      ...options,
-      // @ts-expect-error showTrigger is not in the standard NotificationOptions type
-      showTrigger: new TimestampTriggerCtor(whenMs),
-    });
-    return true;
+    const tags = await (registration as unknown as { periodicSync: { getTags(): Promise<string[]> } }).periodicSync.getTags();
+    return tags.includes('langlearn-check-notifications');
   } catch {
     return false;
   }
 }
 
-/** Cancel any pending (scheduled or shown) notifications matching a tag. */
-export async function cancelNotificationsByTag(tag: string): Promise<void> {
+/**
+ * Register periodic background sync. Browser wakes the SW periodically
+ * (min ~4h for high-engagement sites) so it can check state and show notifications.
+ * Only works on Chromium with PWA installed.
+ */
+export async function registerPeriodicSync(): Promise<boolean> {
+  if (!supportsPeriodicSync()) return false;
+  const registration = await getRegistration();
+  if (!registration) return false;
+  try {
+    const ps = (registration as unknown as {
+      periodicSync: { register(tag: string, opts: { minInterval: number }): Promise<void> };
+    }).periodicSync;
+    await ps.register('langlearn-check-notifications', {
+      minInterval: 4 * 60 * 60 * 1000, // 4 hours (browser decides actual frequency)
+    });
+    return true;
+  } catch {
+    // Permission denied or not supported in this context
+    return false;
+  }
+}
+
+export async function unregisterPeriodicSync(): Promise<void> {
+  if (!supportsPeriodicSync()) return;
   const registration = await getRegistration();
   if (!registration) return;
   try {
-    // includeTriggered: true returns scheduled-but-not-yet-shown notifications
-    // in browsers that support Notification Triggers.
-    const list = await registration.getNotifications({
-      tag,
-      // @ts-expect-error includeTriggered is non-standard
-      includeTriggered: true,
-    });
-    list.forEach((n) => n.close());
+    const ps = (registration as unknown as {
+      periodicSync: { unregister(tag: string): Promise<void> };
+    }).periodicSync;
+    await ps.unregister('langlearn-check-notifications');
   } catch {
     // ignore
   }

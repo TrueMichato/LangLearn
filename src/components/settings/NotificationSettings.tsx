@@ -1,10 +1,11 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { useSettingsStore } from '../../stores/settingsStore';
 import {
   requestNotificationPermission,
   getNotificationPermission,
   isNotificationSupported,
-  supportsNotificationTriggers,
+  supportsPeriodicSync,
+  isPeriodicSyncRegistered,
 } from '../../lib/notifications';
 import { fireTestNotification } from '../../lib/notification-scheduler';
 import type { NotificationPreset } from '../../lib/notification-presets';
@@ -86,9 +87,18 @@ export default function NotificationSettings() {
   } = useSettingsStore();
   const [permissionError, setPermissionError] = useState('');
   const [showAdvanced, setShowAdvanced] = useState(false);
+  const [bgSyncActive, setBgSyncActive] = useState(false);
 
   const permission = getNotificationPermission();
-  const triggersOk = supportsNotificationTriggers();
+  const periodicSyncSupported = supportsPeriodicSync();
+
+  useEffect(() => {
+    if (periodicSyncSupported && notificationsEnabled) {
+      isPeriodicSyncRegistered().then(setBgSyncActive);
+    } else {
+      setBgSyncActive(false);
+    }
+  }, [periodicSyncSupported, notificationsEnabled]);
 
   async function handleToggle() {
     if (notificationsEnabled) {
@@ -154,13 +164,15 @@ export default function NotificationSettings() {
         <>
           {/* Background-support hint */}
           <p className={`text-xs rounded-lg px-3 py-2 ${
-            triggersOk
+            bgSyncActive
               ? 'bg-emerald-50 dark:bg-emerald-900/30 text-emerald-700 dark:text-emerald-300'
               : 'bg-amber-50 dark:bg-amber-900/30 text-amber-700 dark:text-amber-300'
           }`}>
-            {triggersOk
-              ? '✓ Background reminders supported — you\'ll be notified even with the app closed.'
-              : 'ℹ This browser doesn\'t support scheduled background notifications. Reminders fire while the app is open or as in-app catch-up nudges next time you visit. Installing LangLearn as an app helps.'}
+            {bgSyncActive
+              ? '✓ Background reminders active — you\'ll be notified even with the app closed.'
+              : periodicSyncSupported
+                ? 'ℹ Background sync available but not yet registered. It will activate on next settings save.'
+                : 'ℹ Background notifications require Chrome/Edge with LangLearn installed as an app. Meanwhile, reminders fire while the app is open or as catch-up nudges next time you visit.'}
           </p>
 
           {/* Daily anchor time */}

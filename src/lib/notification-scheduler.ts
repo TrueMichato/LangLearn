@@ -3,10 +3,10 @@ import { getDueCount } from '../db/reviews';
 import { calculateCurrentStreak, todayStr } from './streaks';
 import {
   cancelNotificationsByTag,
-  scheduleNotification,
   showNotification,
   isNotificationSupported,
-  supportsNotificationTriggers,
+  registerPeriodicSync,
+  supportsPeriodicSync,
 } from './notifications';
 import {
   computeUpcomingNotifications,
@@ -230,6 +230,14 @@ export async function refreshNotifications(prefs: FullPrefs): Promise<void> {
       return;
     }
 
+    // Register periodic background sync for background notifications (Chromium + installed PWA)
+    if (supportsPeriodicSync()) {
+      await registerPeriodicSync();
+    }
+
+    // Mirror prefs to IndexedDB so SW can read them
+    await mirrorPrefsToIDB(prefs);
+
     const state = await gatherState(prefs);
     const now = new Date();
     const planned = computeUpcomingNotifications(state, prefs, now);
@@ -242,12 +250,10 @@ export async function refreshNotifications(prefs: FullPrefs): Promise<void> {
       }
     }
 
-    const triggersOk = supportsNotificationTriggers();
     const scheduled: ScheduledNotification[] = [];
 
     for (const n of planned) {
-      // Don't try to schedule things further than 7 days out — service workers
-      // can lose pending triggers across long gaps.
+      // Don't track things further than 7 days out
       const tooFar = n.whenMs - now.getTime() > 7 * 24 * 60 * 60 * 1000;
       if (tooFar) continue;
 
@@ -257,24 +263,14 @@ export async function refreshNotifications(prefs: FullPrefs): Promise<void> {
         showNotification(n.title, { body: n.body, tag: n.tag });
         recordFired(n);
         if (n.category === 'streak-milestone') {
-          // Tag derived as `streak-milestone-<N>` — extract N.
           const m = Number(n.tag.split('-').pop());
           if (Number.isFinite(m)) addCelebratedMilestone(m);
         }
         continue;
       }
 
-      if (triggersOk) {
-        const ok = await scheduleNotification(n.title, n.whenMs, {
-          body: n.body,
-          tag: n.tag,
-        });
-        if (ok) scheduled.push(n);
-        else scheduled.push(n); // keep for in-app fallback even if triggers failed
-      } else {
-        // No background scheduling — keep in plan; in-app interval + catch-up handles it.
-        scheduled.push(n);
-      }
+      // Keep in plan for in-app fallback tick (periodic sync handles background)
+      scheduled.push(n);
     }
 
     writeJSON(PLAN_KEY, {
@@ -283,6 +279,27 @@ export async function refreshNotifications(prefs: FullPrefs): Promise<void> {
     } satisfies PersistedPlan);
   } finally {
     inFlight = false;
+  }
+}
+
+/** Mirror notification prefs to IndexedDB so the service worker can access them. */
+async function mirrorPrefsToIDB(prefs: FullPrefs): Promise<void> {
+  try {
+    await db.settings.put({
+      key: 'notification-prefs',
+      value: JSON.stringify({
+        notificationsEnabled: prefs.notificationsEnabled,
+        dailyReminderTime: prefs.dailyReminderTime,
+        quietHoursStart: prefs.quietHoursStart,
+        quietHoursEnd: prefs.quietHoursEnd,
+        dailyNotificationBudget: prefs.dailyNotificationBudget,
+        streakReminders: prefs.streakReminders,
+        streakReminderMinDays: prefs.streakReminderMinDays,
+        dailyGoalMinutes: prefs.dailyGoalMinutes,
+      }),
+    });
+  } catch {
+    // Non-critical — SW just won't have fresh prefs
   }
 }
 
@@ -297,7 +314,6 @@ export async function tickInApp(prefs: FullPrefs): Promise<void> {
   if (!plan) return;
   const now = Date.now();
   const fired = getFired();
-  const triggersOk = supportsNotificationTriggers();
 
   for (const n of plan.notifications) {
     if (fired.tags.includes(n.tag)) continue;
@@ -306,11 +322,11 @@ export async function tickInApp(prefs: FullPrefs): Promise<void> {
     const overdueMs = now - n.whenMs;
     const veryOverdue = overdueMs > 4 * 60 * 60 * 1000; // > 4h late
 
-    if (!triggersOk && !veryOverdue) {
-      // Fallback fire as a real notification (browser is open right now).
+    if (!veryOverdue) {
+      // Fire as a real notification (browser is open right now).
       showNotification(n.title, { body: n.body, tag: n.tag });
       recordFired(n);
-    } else if (n.important && veryOverdue) {
+    } else if (n.important) {
       // Catch-up: surface as an in-app nudge instead of a stale notification.
       useNudgeStore.getState().push({
         id: `catchup-${n.tag}`,
@@ -318,10 +334,6 @@ export async function tickInApp(prefs: FullPrefs): Promise<void> {
         body: n.body,
         tone: n.category === 'comeback' || n.category === 'daily-cue' ? 'warm' : 'info',
       });
-      // Record as fired so we don't loop on it.
-      recordFired(n);
-    } else if (triggersOk) {
-      // Triggers should have handled it; mark fired to avoid re-evaluation.
       recordFired(n);
     }
   }
