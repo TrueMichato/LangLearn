@@ -12,7 +12,7 @@ LangLearn is a local-first Progressive Web App for learning languages (Japanese,
 |-------|------|-------|
 | Framework | React 19 + TypeScript 6 | Vite 8 bundler |
 | Styling | Tailwind CSS v4 | Class-based dark mode |
-| Database | Dexie.js v4 (IndexedDB) | Schema v7, 10 tables |
+| Database | Dexie.js v4 (IndexedDB) | Schema v8, 10 tables |
 | State | Zustand | localStorage persistence |
 | Routing | react-router-dom HashRouter | Required for GitHub Pages |
 | PWA | vite-plugin-pwa | registerType: 'prompt' |
@@ -23,7 +23,7 @@ LangLearn is a local-first Progressive Web App for learning languages (Japanese,
 ```
 npm run build     # tsc -b && vite build
 npx tsc --noEmit  # Type-check only
-npm test          # vitest run (45 tests)
+npm test          # vitest run (67 tests)
 npm run dev       # Dev server
 npm run lint      # ESLint
 ```
@@ -43,42 +43,45 @@ npm run lint      # ESLint
 
 ```
 src/
-├── App.tsx              # Router (15 routes), ErrorBoundary wrapper
-├── pages/               # 15 route pages
-│   ├── Dashboard.tsx    # Home — stats, streak, weekly goal, badges, heat map
-│   ├── Review.tsx       # SRS review — 5 card types, keyboard shortcuts
-│   ├── Words.tsx        # Vocabulary browser — search, filter, study sets
-│   ├── Reader.tsx       # Immersion reader — furigana, stress marks, word mining
-│   ├── Learn.tsx        # Hub → Grammar, Letters, Vocab, Sentences, Conjugations, Listening, Tests
-│   ├── Grammar.tsx      # Grammar lesson browser + LessonView
+├── App.tsx              # Router (19 routes), ErrorBoundary wrapper
+├── pages/               # 19 route pages
+│   ├── Dashboard.tsx    # Home — stats, vocab size widget, streak, badges, heat map
+│   ├── Review.tsx       # SRS review — 6 card types (incl. grammar), keyboard shortcuts
+│   ├── Words.tsx        # Vocabulary browser — search, filter, study sets, CSV import
+│   ├── Reader.tsx       # Immersion reader — furigana, word status highlighting, word mining
+│   ├── Learn.tsx        # Hub → Grammar, Letters, Vocab, Sentences, Conjugations, Listening, Music, Translation, Tests
+│   ├── Grammar.tsx      # Grammar lesson browser + LessonView (auto-creates SRS grammar cards)
 │   ├── VocabLessons.tsx # Vocabulary lesson browser
 │   ├── LetterPractice.tsx # Letter chart/draw/quiz per alphabet
 │   ├── Tests.tsx        # Proficiency tests (vocab/grammar/mixed/full)
 │   ├── Conjugations.tsx # Verb conjugation & noun declension drills
 │   ├── SentenceBuilder.tsx # Tile/typing sentence practice
-│   ├── Listening.tsx    # TTS passages + comprehension
+│   ├── Listening.tsx    # TTS passages + comprehension + dictation mode
+│   ├── Lyrics.tsx       # Song lyrics learning (anime openings, popular songs)
+│   ├── TranslationPractice.tsx # English→target language translation with self-assessment
 │   ├── DailyChallenge.tsx # Daily mixed challenge (1.5x XP)
-│   ├── Analytics.tsx    # SRS analytics (SVG/CSS charts)
+│   ├── Analytics.tsx    # Per-language analytics + reading stats (SVG/CSS charts)
 │   └── Settings.tsx     # App config
-├── components/          # 16 directories (layout, srs, grammar, vocab, letters, reader, dashboard, badges, analytics, dictionary, drills, sentences, words, settings, onboarding, common)
+├── components/          # 17 directories (layout, srs, grammar, vocab, letters, reader, dashboard, badges, analytics, dictionary, drills, sentences, words, lyrics, settings, onboarding, common)
 ├── stores/              # 6 Zustand stores: settings, timer, review, xp, badge, studySets
-├── lib/                 # 21 utility modules (sm2, card-types, xp, streaks, languages, dictionary, tts, tokenizer, analytics, badge-checker, daily-challenge, test-questions, notifications, etc.)
-├── db/                  # schema.ts (interfaces + migrations), words.ts, reviews.ts, lessons.ts, characters.ts, texts.ts, backup.ts
-├── data/                # Static content: alphabets/, badges.ts, conjugations/, listening/, sentences/
+├── lib/                 # 23 utility modules (sm2, card-types, xp, streaks, languages, dictionary, tts, tokenizer, analytics, badge-checker, daily-challenge, test-questions, notifications, text-diff, word-status, etc.)
+├── db/                  # schema.ts (interfaces + migrations), words.ts (incl. bulkAddWords), reviews.ts, lessons.ts, characters.ts, texts.ts, backup.ts
+├── data/                # Static content: alphabets/, badges.ts, conjugations/, listening/, sentences/, lyrics/
 ├── hooks/               # useBadgeChecker, useDarkMode, useDueCount, useFontSize, useKeyboardShortcuts, useNotificationScheduler
 ├── types/               # vocab.ts (VocabLesson types)
 └── workers/             # kuromoji.worker.ts (Japanese tokenizer)
 
 public/content/          # Runtime-fetched lesson content
-├── grammar/{ja,ru}/     # 35 lessons each: index.json + *.md (with <!-- quiz: {...} --> blocks)
+├── grammar/{ja,ru}/     # 35 lessons each: index.json + *.md (with <!-- quiz: {...} --> and <!-- grammar-card: {...} --> blocks)
 ├── vocab/{ja,ru}/       # 40 lessons each: index.json + *.json (words + exercises)
+├── reading/{ja,ru}/     # 10 curated texts each: index.json + *.txt (3 difficulty levels)
 └── dict/                # Kuromoji dictionary files
 ```
 
-## Database Schema (v7) — Indexed Fields
+## Database Schema (v8) — Indexed Fields
 
 ```
-words:             ++id, [language+createdAt], language, word, createdAt, *tags, type
+words:             ++id, [language+createdAt], [word+language], language, word, createdAt, *tags, type
 reviews:           ++id, [wordId+nextReviewDate], wordId, nextReviewDate
 texts:             ++id, language, createdAt
 studySessions:     ++id, startTime, activity
@@ -90,19 +93,23 @@ testHistory:       ++id, language, type, score, date
 badges:            id, unlockedAt
 ```
 
-Key interfaces: `Word` (id, language, word, reading, meaning, contextSentence, tags, type:'word'|'letter'), `Review` (wordId, ease, interval, repetitions, nextReviewDate), `LessonProgress` (id='{lang}/{lessonId}', completed, quizScore, attempts), `CharacterProgress` (id='{lang}/{alphabet}/{char}', mastery:'new'|'learning'|'mastered'), `TestHistory` (language, type, score, level), `DailyActivity` (date, studySeconds, cardsReviewed, goalMet, challengeComplete).
+Key interfaces: `Word` (id, language, word, reading, meaning, contextSentence, tags, type:'word'|'letter'|'grammar'), `Review` (wordId, ease, interval, repetitions, nextReviewDate), `LessonProgress` (id='{lang}/{lessonId}', completed, quizScore, attempts), `CharacterProgress` (id='{lang}/{alphabet}/{char}', mastery:'new'|'learning'|'mastered'), `TestHistory` (language, type, score, level), `DailyActivity` (date, studySeconds, cardsReviewed, goalMet, challengeComplete).
 
 ## SRS System
 
-SM-2 algorithm in `src/lib/sm2.ts`. Grade 0-2 resets card; grade 3-5 advances interval. 5 card types assigned by repetition count: classic (rep 0+), reverse/cloze (rep 2+), listening/MC (rep 4+). MC and cloze auto-grade; others show manual grade buttons. Failed cards re-queue to end.
+SM-2 algorithm in `src/lib/sm2.ts`. Grade 0-2 resets card; grade 3-5 advances interval. 6 card types: classic (rep 0+), reverse/cloze (rep 2+), listening/MC (rep 4+), grammar (always for type='grammar'). MC and cloze auto-grade; others show manual grade buttons. Failed cards re-queue to end. Grammar cards auto-created from `<!-- grammar-card: {...} -->` blocks in lessons on completion.
 
 ## XP Constants (src/lib/xp.ts)
 
-Time: 10 XP/5min | Review: 2/card | Word added: 5 | Vocab lesson: 25 | Test: 30+3/correct | Conjugation: 20+3/correct | Sentence: 20+3/correct | Listening: 25+5/correct | Daily challenge: 1.5x multiplier | Letter practice: 5/practiced+3/quiz correct
+Time: 10 XP/5min | Review: 2/card | Word added: 5 | Vocab lesson: 25 | Test: 30+3/correct | Conjugation: 20+3/correct | Sentence: 20+3/correct | Listening: 25+5/correct | Daily challenge: 1.5x multiplier | Letter practice: 5/practiced+3/quiz correct | Dictation: 15+5/correct | Translation: 20+5/correct+2/partial | Lyrics: 25+3/vocab added
 
 ## Content Formats
 
-**Grammar lessons** (`.md`): Markdown with `<!-- quiz: {"type":"multiple-choice","question":"...","options":[...],"answer":0} -->` comment blocks. End with `## Sources` section.
+**Grammar lessons** (`.md`): Markdown with `<!-- quiz: {"type":"multiple-choice","question":"...","options":[...],"answer":0} -->` comment blocks. Also supports `<!-- grammar-card: {"rule":"...","hint":"...","example":"...","answer":"...","explanation":"..."} -->` blocks for SRS grammar cards. End with `## Sources` section.
+
+**Curated reading texts** (`.txt`): Plain text files in `public/content/reading/{lang}/`. Index file lists texts with id, title, titleEn, difficulty, wordCount, tags, description.
+
+**Song lyrics** (`src/data/lyrics/`): TypeScript data files with `Song` interface: id, title, titleRomanized, artist, context, language, difficulty, lines (original/reading/translation), vocab (word/reading/meaning).
 
 **Vocab lessons** (`.json`): `{ id, words: [{word, reading, meaning, example, exampleMeaning}], exercises: [{type:'match'|'fill-blank'|'multiple-choice', ...}] }`
 
@@ -129,4 +136,5 @@ Error:    bg-red-100 dark:bg-red-900/50 text-red-800 dark:text-red-200
 - `vite-plugin-pwa` peer dep conflict with Vite 8 — use `--legacy-peer-deps`
 - Kuromoji externalizes `path` module — harmless build warning
 - Chunk size >500KB warning — could use code splitting
-- `Word.type` added in v7 — older data backfilled via migration
+- `Word.type` added in v7 — older data backfilled via migration. Extended to `'grammar'` for grammar review cards
+- Analytics supports per-language filtering via optional `language` parameter
