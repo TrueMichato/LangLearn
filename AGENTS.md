@@ -66,7 +66,7 @@ src/
 ├── stores/              # 6 Zustand stores: settings, timer, review, xp, badge, studySets
 ├── lib/                 # 23 utility modules (sm2, card-types, xp, streaks, languages, dictionary, tts, tokenizer, analytics, badge-checker, daily-challenge, test-questions, notifications, text-diff, word-status, etc.)
 ├── db/                  # schema.ts (interfaces + migrations), words.ts (incl. bulkAddWords), reviews.ts, lessons.ts, characters.ts, texts.ts, backup.ts
-├── data/                # Static content: alphabets/, badges.ts, conjugations/, listening/, sentences/, lyrics/
+├── data/                # Static content: alphabets/, badges.ts, conjugations/, listening/, sentences/, lyrics/, lyrics/
 ├── hooks/               # useBadgeChecker, useDarkMode, useDueCount, useFontSize, useKeyboardShortcuts, useNotificationScheduler
 ├── types/               # vocab.ts (VocabLesson types)
 └── workers/             # kuromoji.worker.ts (Japanese tokenizer)
