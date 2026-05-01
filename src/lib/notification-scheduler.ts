@@ -23,6 +23,7 @@ const FIRED_KEY = 'langlearn-notification-fired';
 const SNOOZE_KEY = 'langlearn-notification-snooze';
 const MILESTONES_KEY = 'langlearn-celebrated-milestones';
 const DISMISS_KEY = 'langlearn-notification-dismiss-stats';
+const SHOWN_NUDGES_KEY = 'langlearn-shown-nudges';
 
 interface PersistedPlan {
   scheduledAtMs: number;
@@ -93,6 +94,28 @@ function addCelebratedMilestone(m: number) {
   if (!list.includes(m)) {
     list.push(m);
     writeJSON(MILESTONES_KEY, list);
+  }
+}
+
+interface ShownNudgesRecord {
+  date: string;
+  ids: string[];
+}
+
+function hasNudgeBeenShown(id: string): boolean {
+  const record = readJSON<ShownNudgesRecord | null>(SHOWN_NUDGES_KEY, null);
+  if (!record || record.date !== todayStr()) return false;
+  return record.ids.includes(id);
+}
+
+function markNudgeShown(id: string): void {
+  const today = todayStr();
+  const record = readJSON<ShownNudgesRecord | null>(SHOWN_NUDGES_KEY, null);
+  if (!record || record.date !== today) {
+    writeJSON(SHOWN_NUDGES_KEY, { date: today, ids: [id] });
+  } else if (!record.ids.includes(id)) {
+    record.ids.push(id);
+    writeJSON(SHOWN_NUDGES_KEY, record);
   }
 }
 
@@ -340,25 +363,29 @@ export async function tickInApp(prefs: FullPrefs): Promise<void> {
 
   // Comeback nudge: if user has been gone ≥2 days, surface in-app on first open.
   if (prefs.comebackNudges) {
-    const activities = await db.dailyActivity.toArray().catch(() => []);
-    const lastActive = activities
-      .filter((a) => (a.studySeconds ?? 0) > 0)
-      .map((a) => a.date)
-      .sort()
-      .pop();
-    if (lastActive) {
-      const last = new Date(lastActive + 'T00:00:00');
-      const today = new Date();
-      today.setHours(0, 0, 0, 0);
-      const days = Math.floor((today.getTime() - last.getTime()) / 86400000);
-      if (days >= 2 && days <= 14) {
-        const id = `comeback-${todayStr()}`;
-        useNudgeStore.getState().push({
-          id,
-          title: 'Welcome back 🌱',
-          body: `It's been ${days} days. Even 2 minutes today restarts the habit.`,
-          tone: 'warm',
-        });
+    const comebackId = `comeback-${todayStr()}`;
+    // Only show once per day — persist across dismissals
+    if (!hasNudgeBeenShown(comebackId)) {
+      const activities = await db.dailyActivity.toArray().catch(() => []);
+      const lastActive = activities
+        .filter((a) => (a.studySeconds ?? 0) > 0)
+        .map((a) => a.date)
+        .sort()
+        .pop();
+      if (lastActive) {
+        const last = new Date(lastActive + 'T00:00:00');
+        const today = new Date();
+        today.setHours(0, 0, 0, 0);
+        const days = Math.floor((today.getTime() - last.getTime()) / 86400000);
+        if (days >= 2 && days <= 14) {
+          markNudgeShown(comebackId);
+          useNudgeStore.getState().push({
+            id: comebackId,
+            title: 'Welcome back 🌱',
+            body: `It's been ${days} days. Even 2 minutes today restarts the habit.`,
+            tone: 'warm',
+          });
+        }
       }
     }
   }

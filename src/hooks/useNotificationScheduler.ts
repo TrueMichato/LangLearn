@@ -1,6 +1,6 @@
 import { useEffect, useRef } from 'react';
 import { useSettingsStore } from '../stores/settingsStore';
-import { isNotificationSupported } from '../lib/notifications';
+import { isNotificationSupported, requestNotificationPermission } from '../lib/notifications';
 import { refreshNotifications, tickInApp } from '../lib/notification-scheduler';
 
 export function useNotificationScheduler() {
@@ -25,6 +25,14 @@ export function useNotificationScheduler() {
   const weeklyGoalMinutes = useSettingsStore((s) => s.weeklyGoalMinutes);
 
   const intervalRef = useRef<number | null>(null);
+
+  // Auto-request notification permission when notifications are enabled
+  useEffect(() => {
+    if (!notificationsEnabled || !isNotificationSupported()) return;
+    if (Notification.permission === 'default') {
+      requestNotificationPermission();
+    }
+  }, [notificationsEnabled]);
 
   useEffect(() => {
     if (!isNotificationSupported()) return;

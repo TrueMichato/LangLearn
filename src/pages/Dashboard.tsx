@@ -1,4 +1,4 @@
-import { useState, useEffect, useMemo } from 'react';
+import { useState, useEffect, useCallback, useMemo } from 'react';
 import { Link } from 'react-router-dom';
 import { db } from '../db/schema';
 import type { StudySession, DailyActivity } from '../db/schema';
@@ -46,36 +46,49 @@ export default function Dashboard() {
   const [showAddModal, setShowAddModal] = useState(false);
   const greeting = useMemo(getGreeting, []);
 
-  useEffect(() => {
-    async function load() {
-      const totalWords = await getTotalWordCount();
-      const dueCards = await getDueCount();
+  const loadData = useCallback(async () => {
+    const totalWords = await getTotalWordCount();
+    const dueCards = await getDueCount();
 
-      const sessions = await db.studySessions.toArray();
-      setAllSessions(sessions);
-      const totalStudySeconds = sessions.reduce(
-        (sum, s) => sum + s.durationSeconds,
-        0
-      );
-      const timeXP = sessions.reduce((sum, s) => sum + s.xpEarned, 0);
+    const sessions = await db.studySessions.toArray();
+    setAllSessions(sessions);
+    const totalStudySeconds = sessions.reduce(
+      (sum, s) => sum + s.durationSeconds,
+      0
+    );
+    const timeXP = sessions.reduce((sum, s) => sum + s.xpEarned, 0);
 
-      const weekAgo = new Date();
-      weekAgo.setDate(weekAgo.getDate() - 7);
-      const weekSessions = sessions.filter(
-        (s) => new Date(s.startTime) >= weekAgo
-      );
-      const weekStudySeconds = weekSessions.reduce(
-        (sum, s) => sum + s.durationSeconds,
-        0
-      );
+    const weekAgo = new Date();
+    weekAgo.setDate(weekAgo.getDate() - 7);
+    const weekSessions = sessions.filter(
+      (s) => new Date(s.startTime) >= weekAgo
+    );
+    const weekStudySeconds = weekSessions.reduce(
+      (sum, s) => sum + s.durationSeconds,
+      0
+    );
 
-      setStats({ totalWords, dueCards, totalStudySeconds, weekStudySeconds, timeXP });
+    setStats({ totalWords, dueCards, totalStudySeconds, weekStudySeconds, timeXP });
 
-      const dailyActivities = await db.dailyActivity.toArray();
-      setActivities(dailyActivities);
-    }
-    load();
+    const dailyActivities = await db.dailyActivity.toArray();
+    setActivities(dailyActivities);
   }, []);
+
+  // Load on mount
+  useEffect(() => {
+    loadData();
+  }, [loadData]);
+
+  // Reload when page becomes visible (user returns from another tab/page)
+  useEffect(() => {
+    const onVisibility = () => {
+      if (document.visibilityState === 'visible') {
+        loadData();
+      }
+    };
+    document.addEventListener('visibilitychange', onVisibility);
+    return () => document.removeEventListener('visibilitychange', onVisibility);
+  }, [loadData]);
 
   if (!stats) {
     return <PageSkeleton />;

@@ -33,13 +33,25 @@ export function showNotification(title: string, options?: NotificationOptions): 
         icon: '/LangLearn/pwa-192x192.png',
         badge: '/LangLearn/pwa-192x192.png',
         ...options,
+      }).catch((err) => {
+        console.warn('[LangLearn] SW showNotification failed:', err);
+        // Fallback to Notification API
+        try {
+          new Notification(title, { icon: '/LangLearn/pwa-192x192.png', ...options });
+        } catch { /* ignore */ }
       });
+    }).catch((err) => {
+      console.warn('[LangLearn] SW ready failed:', err);
     });
   } else {
-    new Notification(title, {
-      icon: '/LangLearn/pwa-192x192.png',
-      ...options,
-    });
+    try {
+      new Notification(title, {
+        icon: '/LangLearn/pwa-192x192.png',
+        ...options,
+      });
+    } catch (err) {
+      console.warn('[LangLearn] Notification constructor failed:', err);
+    }
   }
 }
 
