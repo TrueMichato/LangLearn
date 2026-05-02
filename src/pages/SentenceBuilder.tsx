@@ -5,6 +5,7 @@ import { useXPStore } from '../stores/xpStore';
 import { getLanguageLabel } from '../lib/languages';
 import { jaSentences } from '../data/sentences/ja-sentences';
 import { ruSentences } from '../data/sentences/ru-sentences';
+import { ptSentences } from '../data/sentences/pt-sentences';
 import type { PracticeSentence } from '../data/sentences/ja-sentences';
 import TileBuilder from '../components/sentences/TileBuilder';
 import TypeBuilder from '../components/sentences/TypeBuilder';
@@ -15,10 +16,14 @@ type Phase = 'setup' | 'session' | 'summary';
 
 const SENTENCES_PER_SESSION = 10;
 
+const SENTENCE_DATA: Record<string, PracticeSentence[]> = {
+  ja: jaSentences,
+  ru: ruSentences,
+  pt: ptSentences,
+};
+
 function getSentences(lang: string): PracticeSentence[] {
-  if (lang === 'ja') return jaSentences;
-  if (lang === 'ru') return ruSentences;
-  return [];
+  return SENTENCE_DATA[lang] ?? [];
 }
 
 function shuffle<T>(arr: T[]): T[] {
@@ -32,7 +37,7 @@ function shuffle<T>(arr: T[]): T[] {
 
 export default function SentenceBuilderPage() {
   const activeLanguages = useSettingsStore((s) => s.activeLanguages);
-  const supportedLanguages = activeLanguages.filter((l) => l === 'ja' || l === 'ru');
+  const supportedLanguages = activeLanguages.filter((l) => !!SENTENCE_DATA[l]);
 
   const [phase, setPhase] = useState<Phase>('setup');
   const [language, setLanguage] = useState(supportedLanguages[0] ?? 'ja');

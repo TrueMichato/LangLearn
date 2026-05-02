@@ -1,0 +1,94 @@
+{
+  "texts": [
+    {
+      "id": "self-intro-pt",
+      "title": "Apresentação",
+      "titleEn": "Self-Introduction",
+      "difficulty": "easy",
+      "wordCount": 80,
+      "tags": ["daily-life", "conversation"],
+      "description": "A simple self-introduction in Brazilian Portuguese"
+    },
+    {
+      "id": "my-day",
+      "title": "Meu Dia",
+      "titleEn": "My Day",
+      "difficulty": "easy",
+      "wordCount": 100,
+      "tags": ["daily-life"],
+      "description": "A typical day in São Paulo from morning to evening"
+    },
+    {
+      "id": "at-the-market",
+      "title": "Na Feira",
+      "titleEn": "At the Market",
+      "difficulty": "easy",
+      "wordCount": 90,
+      "tags": ["daily-life", "conversation"],
+      "description": "A dialogue about shopping at a Brazilian open-air market"
+    },
+    {
+      "id": "carnival",
+      "title": "O Carnaval Brasileiro",
+      "titleEn": "Brazilian Carnival",
+      "difficulty": "medium",
+      "wordCount": 200,
+      "tags": ["culture", "traditions"],
+      "description": "An article about Brazilian Carnival traditions and celebrations"
+    },
+    {
+      "id": "saci-perere",
+      "title": "O Saci-Pererê",
+      "titleEn": "The Saci-Pererê",
+      "difficulty": "medium",
+      "wordCount": 220,
+      "tags": ["culture", "folklore"],
+      "description": "The folk tale of the one-legged trickster from Brazilian folklore"
+    },
+    {
+      "id": "rio-de-janeiro",
+      "title": "Rio de Janeiro",
+      "titleEn": "Rio de Janeiro",
+      "difficulty": "medium",
+      "wordCount": 200,
+      "tags": ["travel", "geography"],
+      "description": "A travel guide about Rio de Janeiro's famous attractions"
+    },
+    {
+      "id": "brazilian-food",
+      "title": "Comida Brasileira",
+      "titleEn": "Brazilian Food",
+      "difficulty": "medium",
+      "wordCount": 180,
+      "tags": ["culture", "food"],
+      "description": "An article about traditional Brazilian cuisine and regional dishes"
+    },
+    {
+      "id": "school-life",
+      "title": "A Vida Escolar",
+      "titleEn": "School Life",
+      "difficulty": "medium",
+      "wordCount": 200,
+      "tags": ["education", "daily-life"],
+      "description": "What school life is like in Brazil"
+    },
+    {
+      "id": "technology-brazil",
+      "title": "Tecnologia no Brasil",
+      "titleEn": "Technology in Brazil",
+      "difficulty": "hard",
+      "wordCount": 300,
+      "tags": ["technology", "business"],
+      "description": "An article about technology startups and innovation in Brazil"
+    },
+    {
+      "id": "letter-friend",
+      "title": "Carta para um Amigo",
+      "titleEn": "Letter to a Friend",
+      "difficulty": "hard",
+      "wordCount": 280,
+      "tags": ["correspondence", "travel"],
+      "description": "A personal letter from someone visiting Brazil for the first time"
+    }
+  ]
+}

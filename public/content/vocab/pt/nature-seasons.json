@@ -1,0 +1,136 @@
+{
+  "id": "nature-seasons",
+  "words": [
+    {
+      "word": "árvore",
+      "reading": "AR-voh-ree",
+      "meaning": "tree",
+      "example": "Essa árvore tem mais de cem anos.",
+      "exampleMeaning": "This tree is over a hundred years old."
+    },
+    {
+      "word": "flor",
+      "reading": "FLOHR",
+      "meaning": "flower",
+      "example": "Comprei flores para minha mãe.",
+      "exampleMeaning": "I bought flowers for my mom."
+    },
+    {
+      "word": "rio",
+      "reading": "HEE-oo",
+      "meaning": "river",
+      "example": "O rio Amazonas é o maior do mundo.",
+      "exampleMeaning": "The Amazon River is the largest in the world."
+    },
+    {
+      "word": "mar",
+      "reading": "MAR",
+      "meaning": "sea",
+      "example": "O mar está muito bonito hoje.",
+      "exampleMeaning": "The sea is very beautiful today."
+    },
+    {
+      "word": "montanha",
+      "reading": "mon-TAH-nyah",
+      "meaning": "mountain",
+      "example": "Nós subimos a montanha ontem.",
+      "exampleMeaning": "We climbed the mountain yesterday."
+    },
+    {
+      "word": "floresta",
+      "reading": "floh-REHS-tah",
+      "meaning": "forest",
+      "example": "A floresta amazônica é muito importante.",
+      "exampleMeaning": "The Amazon forest is very important."
+    },
+    {
+      "word": "lago",
+      "reading": "LAH-goo",
+      "meaning": "lake",
+      "example": "Vamos pescar no lago amanhã.",
+      "exampleMeaning": "Let's go fishing at the lake tomorrow."
+    },
+    {
+      "word": "cachoeira",
+      "reading": "kah-shoh-AY-rah",
+      "meaning": "waterfall",
+      "example": "Visitamos uma cachoeira linda no fim de semana.",
+      "exampleMeaning": "We visited a beautiful waterfall on the weekend."
+    },
+    {
+      "word": "praia",
+      "reading": "PRAH-yah",
+      "meaning": "beach",
+      "example": "Vou à praia todos os domingos no verão.",
+      "exampleMeaning": "I go to the beach every Sunday in summer."
+    },
+    {
+      "word": "ilha",
+      "reading": "EE-lyah",
+      "meaning": "island",
+      "example": "Queremos visitar uma ilha paradisíaca.",
+      "exampleMeaning": "We want to visit a paradise island."
+    },
+    {
+      "word": "campo",
+      "reading": "KAM-poo",
+      "meaning": "field / countryside",
+      "example": "Meus avós moram no campo.",
+      "exampleMeaning": "My grandparents live in the countryside."
+    },
+    {
+      "word": "terra",
+      "reading": "TEH-hah",
+      "meaning": "earth / land / soil",
+      "example": "A terra aqui é muito fértil.",
+      "exampleMeaning": "The soil here is very fertile."
+    },
+    {
+      "word": "céu",
+      "reading": "SEH-oo",
+      "meaning": "sky",
+      "example": "O céu está cheio de estrelas.",
+      "exampleMeaning": "The sky is full of stars."
+    },
+    {
+      "word": "estrela",
+      "reading": "ehs-TREH-lah",
+      "meaning": "star",
+      "example": "Consegui ver uma estrela cadente ontem.",
+      "exampleMeaning": "I managed to see a shooting star yesterday."
+    },
+    {
+      "word": "lua",
+      "reading": "LOO-ah",
+      "meaning": "moon",
+      "example": "A lua cheia está linda esta noite.",
+      "exampleMeaning": "The full moon is beautiful tonight."
+    },
+    {
+      "word": "areia",
+      "reading": "ah-RAY-ah",
+      "meaning": "sand",
+      "example": "As crianças estão brincando na areia.",
+      "exampleMeaning": "The children are playing in the sand."
+    }
+  ],
+  "exercises": [
+    { "type": "match", "pairs": 5 },
+    {
+      "type": "fill-blank",
+      "items": [
+        { "sentence": "O ___ está cheio de estrelas.", "answer": "céu", "hint": "what you see when you look up" },
+        { "sentence": "Visitamos uma ___ linda no fim de semana.", "answer": "cachoeira", "hint": "water falling from a height" },
+        { "sentence": "Meus avós moram no ___.", "answer": "campo", "hint": "rural area, countryside" }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "items": [
+        { "question": "What does 'ilha' mean?", "options": ["lake", "river", "island", "beach"], "answer": 2 },
+        { "question": "What does 'floresta' mean?", "options": ["flower", "forest", "field", "mountain"], "answer": 1 },
+        { "question": "What does 'areia' mean?", "options": ["sand", "stone", "water", "earth"], "answer": 0 }
+      ]
+    }
+  ]
+}

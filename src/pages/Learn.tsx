@@ -92,7 +92,7 @@ export default function LearnPage() {
             to: '#',
             emoji: '🔤',
             title: 'Letter Practice',
-            subtitle: 'Add Japanese or Russian',
+            subtitle: 'Add a language with a letter system',
             borderColor: 'border-violet-400 dark:border-violet-500',
             bgColor: 'bg-violet-100 dark:bg-violet-900/40',
             disabled: true,

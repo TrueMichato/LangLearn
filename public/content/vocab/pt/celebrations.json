@@ -1,0 +1,136 @@
+{
+  "id": "celebrations",
+  "words": [
+    {
+      "word": "Carnaval",
+      "reading": "kar-nah-VAW",
+      "meaning": "Carnival",
+      "example": "O Carnaval do Rio de Janeiro é famoso no mundo todo.",
+      "exampleMeaning": "Rio de Janeiro's Carnival is famous worldwide."
+    },
+    {
+      "word": "Natal",
+      "reading": "nah-TAW",
+      "meaning": "Christmas",
+      "example": "No Natal, a família toda se reúne.",
+      "exampleMeaning": "At Christmas, the whole family gets together."
+    },
+    {
+      "word": "Páscoa",
+      "reading": "PAHS-koh-ah",
+      "meaning": "Easter",
+      "example": "Na Páscoa, as crianças ganham ovos de chocolate.",
+      "exampleMeaning": "At Easter, children get chocolate eggs."
+    },
+    {
+      "word": "Ano Novo",
+      "reading": "AH-noo NOH-voo",
+      "meaning": "New Year",
+      "example": "No Ano Novo, muita gente vai à praia.",
+      "exampleMeaning": "On New Year's, many people go to the beach."
+    },
+    {
+      "word": "festa junina",
+      "reading": "FEHS-tah zhoo-NEE-nah",
+      "meaning": "June festival (harvest celebration)",
+      "example": "A festa junina tem comidas típicas como paçoca e canjica.",
+      "exampleMeaning": "The June festival has typical foods like paçoca and canjica."
+    },
+    {
+      "word": "aniversário",
+      "reading": "ah-nee-ver-SAH-ree-oo",
+      "meaning": "birthday",
+      "example": "Meu aniversário é em julho.",
+      "exampleMeaning": "My birthday is in July."
+    },
+    {
+      "word": "casamento",
+      "reading": "kah-zah-MEN-too",
+      "meaning": "wedding",
+      "example": "O casamento vai ser na praia.",
+      "exampleMeaning": "The wedding will be at the beach."
+    },
+    {
+      "word": "batizado",
+      "reading": "bah-chee-ZAH-doo",
+      "meaning": "baptism / christening",
+      "example": "O batizado do bebê será no domingo.",
+      "exampleMeaning": "The baby's baptism will be on Sunday."
+    },
+    {
+      "word": "formatura",
+      "reading": "for-mah-TOO-rah",
+      "meaning": "graduation (ceremony)",
+      "example": "A festa de formatura foi incrível.",
+      "exampleMeaning": "The graduation party was incredible."
+    },
+    {
+      "word": "churrasco",
+      "reading": "shoo-HAHS-koo",
+      "meaning": "barbecue",
+      "example": "Vamos fazer um churrasco no domingo.",
+      "exampleMeaning": "Let's have a barbecue on Sunday."
+    },
+    {
+      "word": "feriado",
+      "reading": "feh-ree-AH-doo",
+      "meaning": "holiday (public)",
+      "example": "Segunda-feira é feriado nacional.",
+      "exampleMeaning": "Monday is a national holiday."
+    },
+    {
+      "word": "fogos de artifício",
+      "reading": "FOH-gohs jee ar-chee-FEE-see-oo",
+      "meaning": "fireworks",
+      "example": "Os fogos de artifício no Ano Novo são lindos.",
+      "exampleMeaning": "The New Year's fireworks are beautiful."
+    },
+    {
+      "word": "desfile",
+      "reading": "dehs-FEE-lee",
+      "meaning": "parade",
+      "example": "O desfile das escolas de samba é emocionante.",
+      "exampleMeaning": "The samba school parade is exciting."
+    },
+    {
+      "word": "fantasia",
+      "reading": "fan-tah-ZEE-ah",
+      "meaning": "costume (for celebrations)",
+      "example": "Ela usou uma fantasia de super-heroína no Carnaval.",
+      "exampleMeaning": "She wore a superheroine costume at Carnival."
+    },
+    {
+      "word": "bloco",
+      "reading": "BLOH-koo",
+      "meaning": "street party / Carnival block",
+      "example": "Vamos ao bloco de Carnaval no centro.",
+      "exampleMeaning": "Let's go to the Carnival street party downtown."
+    },
+    {
+      "word": "samba",
+      "reading": "SAM-bah",
+      "meaning": "samba (music/dance)",
+      "example": "O samba é um dos símbolos culturais do Brasil.",
+      "exampleMeaning": "Samba is one of Brazil's cultural symbols."
+    }
+  ],
+  "exercises": [
+    { "type": "match", "pairs": 5 },
+    {
+      "type": "fill-blank",
+      "items": [
+        { "sentence": "No ___, a família toda se reúne.", "answer": "Natal", "hint": "December 25th celebration" },
+        { "sentence": "Vamos fazer um ___ no domingo.", "answer": "churrasco", "hint": "Brazilian-style outdoor grilling" },
+        { "sentence": "Ela usou uma ___ de super-heroína no Carnaval.", "answer": "fantasia", "hint": "outfit worn for a celebration" }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "items": [
+        { "question": "What is a 'bloco' during Carnival?", "options": ["a building", "a street party", "a costume", "a float"], "answer": 1 },
+        { "question": "What is 'festa junina'?", "options": ["New Year's party", "June harvest festival", "birthday party", "wedding"], "answer": 1 },
+        { "question": "What does 'feriado' mean?", "options": ["weekend", "vacation", "public holiday", "festival"], "answer": 2 }
+      ]
+    }
+  ]
+}

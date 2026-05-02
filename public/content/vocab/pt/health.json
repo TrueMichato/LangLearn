@@ -1,0 +1,136 @@
+{
+  "id": "health",
+  "words": [
+    {
+      "word": "médico",
+      "reading": "MEH-jee-koo",
+      "meaning": "doctor",
+      "example": "Preciso marcar uma consulta com o médico.",
+      "exampleMeaning": "I need to schedule an appointment with the doctor."
+    },
+    {
+      "word": "hospital",
+      "reading": "ohs-pee-TAW",
+      "meaning": "hospital",
+      "example": "Ele foi levado ao hospital de ambulância.",
+      "exampleMeaning": "He was taken to the hospital by ambulance."
+    },
+    {
+      "word": "remédio",
+      "reading": "heh-MEH-jee-oo",
+      "meaning": "medicine / remedy",
+      "example": "Não esqueça de tomar o remédio.",
+      "exampleMeaning": "Don't forget to take your medicine."
+    },
+    {
+      "word": "dor",
+      "reading": "DOR",
+      "meaning": "pain",
+      "example": "Estou com dor de cabeça.",
+      "exampleMeaning": "I have a headache."
+    },
+    {
+      "word": "febre",
+      "reading": "FEH-bree",
+      "meaning": "fever",
+      "example": "A criança está com febre alta.",
+      "exampleMeaning": "The child has a high fever."
+    },
+    {
+      "word": "gripe",
+      "reading": "GREE-pee",
+      "meaning": "flu",
+      "example": "Peguei uma gripe forte no inverno.",
+      "exampleMeaning": "I caught a bad flu in winter."
+    },
+    {
+      "word": "tosse",
+      "reading": "TOH-see",
+      "meaning": "cough",
+      "example": "Essa tosse já dura uma semana.",
+      "exampleMeaning": "This cough has lasted a week already."
+    },
+    {
+      "word": "farmácia",
+      "reading": "far-MAH-see-ah",
+      "meaning": "pharmacy",
+      "example": "Vou à farmácia comprar remédio.",
+      "exampleMeaning": "I'm going to the pharmacy to buy medicine."
+    },
+    {
+      "word": "receita",
+      "reading": "heh-SAY-tah",
+      "meaning": "prescription",
+      "example": "O médico me deu uma receita para o antibiótico.",
+      "exampleMeaning": "The doctor gave me a prescription for the antibiotic."
+    },
+    {
+      "word": "exame",
+      "reading": "eh-ZAH-mee",
+      "meaning": "exam / medical test",
+      "example": "Fiz um exame de sangue ontem.",
+      "exampleMeaning": "I did a blood test yesterday."
+    },
+    {
+      "word": "vacina",
+      "reading": "vah-SEE-nah",
+      "meaning": "vaccine",
+      "example": "Tomei a vacina contra a gripe.",
+      "exampleMeaning": "I got the flu vaccine."
+    },
+    {
+      "word": "alergia",
+      "reading": "ah-lehr-ZHEE-ah",
+      "meaning": "allergy",
+      "example": "Tenho alergia a poeira.",
+      "exampleMeaning": "I'm allergic to dust."
+    },
+    {
+      "word": "doença",
+      "reading": "doh-EHN-sah",
+      "meaning": "disease / illness",
+      "example": "Essa doença pode ser prevenida com vacina.",
+      "exampleMeaning": "This disease can be prevented with a vaccine."
+    },
+    {
+      "word": "saúde",
+      "reading": "sah-OO-jee",
+      "meaning": "health",
+      "example": "A saúde é o bem mais importante.",
+      "exampleMeaning": "Health is the most important thing."
+    },
+    {
+      "word": "emergência",
+      "reading": "eh-mer-ZHEHN-see-ah",
+      "meaning": "emergency",
+      "example": "Ligue para a emergência imediatamente.",
+      "exampleMeaning": "Call the emergency right away."
+    },
+    {
+      "word": "ambulância",
+      "reading": "am-boo-LAN-see-ah",
+      "meaning": "ambulance",
+      "example": "A ambulância chegou em cinco minutos.",
+      "exampleMeaning": "The ambulance arrived in five minutes."
+    }
+  ],
+  "exercises": [
+    { "type": "match", "pairs": 5 },
+    {
+      "type": "fill-blank",
+      "items": [
+        { "sentence": "Não esqueça de tomar o ___.", "answer": "remédio", "hint": "something you take when sick" },
+        { "sentence": "Tomei a ___ contra a gripe.", "answer": "vacina", "hint": "injection for disease prevention" },
+        { "sentence": "Estou com ___ de cabeça.", "answer": "dor", "hint": "unpleasant physical sensation" }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "items": [
+        { "question": "What does 'farmácia' mean?", "options": ["hospital", "clinic", "pharmacy", "lab"], "answer": 2 },
+        { "question": "What does 'receita' mean?", "options": ["recipe", "prescription", "exam", "cure"], "answer": 1 },
+        { "question": "What does 'febre' mean?", "options": ["cough", "pain", "allergy", "fever"], "answer": 3 }
+      ]
+    }
+  ]
+}

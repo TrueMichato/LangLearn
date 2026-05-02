@@ -1,0 +1,34 @@
+{
+  "id": "colors",
+  "words": [
+    { "word": "vermelho", "reading": "ver-meh-lyoo", "meaning": "red", "example": "O carro vermelho é muito bonito.", "exampleMeaning": "The red car is very beautiful." },
+    { "word": "azul", "reading": "ah-zoow", "meaning": "blue", "example": "O céu está azul hoje.", "exampleMeaning": "The sky is blue today." },
+    { "word": "verde", "reading": "ver-jee", "meaning": "green", "example": "A grama está bem verde.", "exampleMeaning": "The grass is very green." },
+    { "word": "amarelo", "reading": "ah-mah-reh-loo", "meaning": "yellow", "example": "As bananas são amarelas.", "exampleMeaning": "The bananas are yellow." },
+    { "word": "preto", "reading": "preh-too", "meaning": "black", "example": "Eu gosto de café preto.", "exampleMeaning": "I like black coffee." },
+    { "word": "branco", "reading": "brahn-koo", "meaning": "white", "example": "A parede é branca.", "exampleMeaning": "The wall is white." },
+    { "word": "marrom", "reading": "mah-hong", "meaning": "brown", "example": "O cachorro marrom é do vizinho.", "exampleMeaning": "The brown dog belongs to the neighbor." },
+    { "word": "rosa", "reading": "hoh-zah", "meaning": "pink", "example": "Ela comprou uma blusa rosa.", "exampleMeaning": "She bought a pink blouse." },
+    { "word": "roxo", "reading": "hoh-shoo", "meaning": "purple", "example": "As flores roxas são lindas.", "exampleMeaning": "The purple flowers are beautiful." },
+    { "word": "laranja", "reading": "lah-rahn-zhah", "meaning": "orange", "example": "Eu quero o suco de laranja.", "exampleMeaning": "I want the orange juice." },
+    { "word": "cinza", "reading": "seen-zah", "meaning": "gray", "example": "O gato cinza dormiu no sofá.", "exampleMeaning": "The gray cat slept on the couch." },
+    { "word": "dourado", "reading": "doh-rah-doo", "meaning": "golden", "example": "Ela usa um colar dourado.", "exampleMeaning": "She wears a golden necklace." },
+    { "word": "prateado", "reading": "prah-teh-ah-doo", "meaning": "silver", "example": "O anel prateado é novo.", "exampleMeaning": "The silver ring is new." },
+    { "word": "claro", "reading": "klah-roo", "meaning": "light (color)", "example": "Eu prefiro azul claro.", "exampleMeaning": "I prefer light blue." },
+    { "word": "escuro", "reading": "esh-koo-roo", "meaning": "dark (color)", "example": "O quarto está muito escuro.", "exampleMeaning": "The room is very dark." },
+    { "word": "círculo", "reading": "seer-koo-loo", "meaning": "circle", "example": "Desenhe um círculo no papel.", "exampleMeaning": "Draw a circle on the paper." }
+  ],
+  "exercises": [
+    { "type": "match", "pairs": 5 },
+    { "type": "fill-blank", "items": [
+      { "sentence": "O céu está ___ hoje.", "answer": "azul", "hint": "blue" },
+      { "sentence": "Eu gosto de café ___.", "answer": "preto", "hint": "black" },
+      { "sentence": "As bananas são ___.", "answer": "amarelas", "hint": "yellow (feminine plural)" }
+    ]},
+    { "type": "multiple-choice", "items": [
+      { "question": "What color is 'vermelho'?", "options": ["blue", "green", "red", "yellow"], "answer": 2 },
+      { "question": "What does 'branco' mean?", "options": ["black", "white", "brown", "gray"], "answer": 1 },
+      { "question": "How do you say 'green' in Portuguese?", "options": ["azul", "roxo", "verde", "amarelo"], "answer": 2 }
+    ]}
+  ]
+}

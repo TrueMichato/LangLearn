@@ -1,0 +1,136 @@
+{
+  "id": "feelings",
+  "words": [
+    {
+      "word": "alegre",
+      "reading": "ah-LEH-gree",
+      "meaning": "cheerful / happy",
+      "example": "Ela está muito alegre hoje.",
+      "exampleMeaning": "She is very cheerful today."
+    },
+    {
+      "word": "ansioso",
+      "reading": "an-see-OH-zoo",
+      "meaning": "anxious",
+      "example": "Estou ansioso para a viagem.",
+      "exampleMeaning": "I'm anxious about the trip."
+    },
+    {
+      "word": "frustrado",
+      "reading": "froos-TRAH-doo",
+      "meaning": "frustrated",
+      "example": "Ele ficou frustrado com o resultado.",
+      "exampleMeaning": "He was frustrated with the result."
+    },
+    {
+      "word": "grato",
+      "reading": "GRAH-too",
+      "meaning": "grateful",
+      "example": "Sou grato por tudo que você fez.",
+      "exampleMeaning": "I'm grateful for everything you did."
+    },
+    {
+      "word": "saudade",
+      "reading": "saw-DAH-jee",
+      "meaning": "longing / missing someone",
+      "example": "Sinto muita saudade da minha família.",
+      "exampleMeaning": "I miss my family a lot."
+    },
+    {
+      "word": "solidão",
+      "reading": "soh-lee-DAHW",
+      "meaning": "loneliness",
+      "example": "A solidão pode ser difícil às vezes.",
+      "exampleMeaning": "Loneliness can be difficult sometimes."
+    },
+    {
+      "word": "esperança",
+      "reading": "ehs-peh-RAN-sah",
+      "meaning": "hope",
+      "example": "Nunca perca a esperança.",
+      "exampleMeaning": "Never lose hope."
+    },
+    {
+      "word": "coragem",
+      "reading": "koh-RAH-zheem",
+      "meaning": "courage",
+      "example": "É preciso coragem para mudar de vida.",
+      "exampleMeaning": "It takes courage to change your life."
+    },
+    {
+      "word": "vergonha",
+      "reading": "ver-GOH-nyah",
+      "meaning": "shame / embarrassment",
+      "example": "Ele sentiu vergonha de pedir ajuda.",
+      "exampleMeaning": "He felt embarrassed to ask for help."
+    },
+    {
+      "word": "ciúme",
+      "reading": "see-OO-mee",
+      "meaning": "jealousy",
+      "example": "Ciúme demais faz mal ao relacionamento.",
+      "exampleMeaning": "Too much jealousy is bad for a relationship."
+    },
+    {
+      "word": "empatia",
+      "reading": "em-pah-CHEE-ah",
+      "meaning": "empathy",
+      "example": "Ter empatia é importante para entender os outros.",
+      "exampleMeaning": "Having empathy is important to understand others."
+    },
+    {
+      "word": "confiança",
+      "reading": "kon-fee-AN-sah",
+      "meaning": "confidence / trust",
+      "example": "A confiança se constrói com o tempo.",
+      "exampleMeaning": "Trust is built over time."
+    },
+    {
+      "word": "paciência",
+      "reading": "pah-see-EN-see-ah",
+      "meaning": "patience",
+      "example": "Tenha paciência, vai dar certo.",
+      "exampleMeaning": "Have patience, it will work out."
+    },
+    {
+      "word": "determinação",
+      "reading": "deh-ter-mee-nah-SAHW",
+      "meaning": "determination",
+      "example": "Sua determinação é admirável.",
+      "exampleMeaning": "Your determination is admirable."
+    },
+    {
+      "word": "curiosidade",
+      "reading": "koo-ree-oh-zee-DAH-jee",
+      "meaning": "curiosity",
+      "example": "A curiosidade é o início do aprendizado.",
+      "exampleMeaning": "Curiosity is the beginning of learning."
+    },
+    {
+      "word": "admiração",
+      "reading": "ad-mee-rah-SAHW",
+      "meaning": "admiration",
+      "example": "Tenho grande admiração pelo meu professor.",
+      "exampleMeaning": "I have great admiration for my teacher."
+    }
+  ],
+  "exercises": [
+    { "type": "match", "pairs": 5 },
+    {
+      "type": "fill-blank",
+      "items": [
+        { "sentence": "Sinto muita ___ da minha família.", "answer": "saudade", "hint": "uniquely Portuguese word for missing someone" },
+        { "sentence": "Nunca perca a ___.", "answer": "esperança", "hint": "belief that good things will happen" },
+        { "sentence": "Tenha ___, vai dar certo.", "answer": "paciência", "hint": "ability to wait calmly" }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "items": [
+        { "question": "What does 'saudade' mean?", "options": ["sadness", "longing / missing", "health", "greeting"], "answer": 1 },
+        { "question": "What does 'vergonha' mean?", "options": ["anger", "courage", "shame", "pride"], "answer": 2 },
+        { "question": "What does 'coragem' mean?", "options": ["curiosity", "patience", "hope", "courage"], "answer": 3 }
+      ]
+    }
+  ]
+}

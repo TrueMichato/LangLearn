@@ -1,0 +1,35 @@
+{
+  "id": "days-months",
+  "words": [
+    { "word": "segunda-feira", "reading": "seh-goon-dah fay-rah", "meaning": "Monday", "example": "Segunda-feira eu começo a trabalhar cedo.", "exampleMeaning": "On Monday I start working early." },
+    { "word": "terça-feira", "reading": "ter-sah fay-rah", "meaning": "Tuesday", "example": "Terça-feira tenho aula de português.", "exampleMeaning": "On Tuesday I have Portuguese class." },
+    { "word": "quarta-feira", "reading": "kwar-tah fay-rah", "meaning": "Wednesday", "example": "Quarta-feira é o meio da semana.", "exampleMeaning": "Wednesday is the middle of the week." },
+    { "word": "quinta-feira", "reading": "keen-tah fay-rah", "meaning": "Thursday", "example": "Na quinta-feira vou ao médico.", "exampleMeaning": "On Thursday I'm going to the doctor." },
+    { "word": "sexta-feira", "reading": "shesh-tah fay-rah", "meaning": "Friday", "example": "Sexta-feira é dia de pizza!", "exampleMeaning": "Friday is pizza day!" },
+    { "word": "sábado", "reading": "sah-bah-doo", "meaning": "Saturday", "example": "No sábado vou à praia.", "exampleMeaning": "On Saturday I'm going to the beach." },
+    { "word": "domingo", "reading": "doh-meen-goo", "meaning": "Sunday", "example": "Domingo é dia de descanso.", "exampleMeaning": "Sunday is a day of rest." },
+    { "word": "janeiro", "reading": "zhah-nay-roo", "meaning": "January", "example": "Janeiro é o primeiro mês do ano.", "exampleMeaning": "January is the first month of the year." },
+    { "word": "junho", "reading": "zhoo-nyoo", "meaning": "June", "example": "Em junho começa o inverno no Brasil.", "exampleMeaning": "In June winter starts in Brazil." },
+    { "word": "dezembro", "reading": "deh-zem-broo", "meaning": "December", "example": "O Natal é em dezembro.", "exampleMeaning": "Christmas is in December." },
+    { "word": "hoje", "reading": "oh-zhee", "meaning": "today", "example": "Hoje está um dia bonito.", "exampleMeaning": "Today is a beautiful day." },
+    { "word": "amanhã", "reading": "ah-mahn-yah", "meaning": "tomorrow", "example": "Amanhã vou viajar para o Rio.", "exampleMeaning": "Tomorrow I'm traveling to Rio." },
+    { "word": "ontem", "reading": "on-teng", "meaning": "yesterday", "example": "Ontem eu fui ao cinema.", "exampleMeaning": "Yesterday I went to the movies." },
+    { "word": "semana", "reading": "seh-mah-nah", "meaning": "week", "example": "Esta semana está muito corrida.", "exampleMeaning": "This week is very busy." },
+    { "word": "mês", "reading": "mehsh", "meaning": "month", "example": "Este mês vou economizar dinheiro.", "exampleMeaning": "This month I'm going to save money." },
+    { "word": "ano", "reading": "ah-noo", "meaning": "year", "example": "Feliz ano novo!", "exampleMeaning": "Happy new year!" },
+    { "word": "feriado", "reading": "feh-ree-ah-doo", "meaning": "holiday", "example": "Amanhã é feriado nacional.", "exampleMeaning": "Tomorrow is a national holiday." }
+  ],
+  "exercises": [
+    { "type": "match", "pairs": 5 },
+    { "type": "fill-blank", "items": [
+      { "sentence": "___ é o primeiro mês do ano.", "answer": "Janeiro", "hint": "January" },
+      { "sentence": "___ eu fui ao cinema.", "answer": "Ontem", "hint": "yesterday" },
+      { "sentence": "No ___ vou à praia.", "answer": "sábado", "hint": "Saturday" }
+    ]},
+    { "type": "multiple-choice", "items": [
+      { "question": "What day is 'segunda-feira'?", "options": ["Sunday", "Monday", "Tuesday", "Wednesday"], "answer": 1 },
+      { "question": "What does 'amanhã' mean?", "options": ["yesterday", "today", "tomorrow", "next week"], "answer": 2 },
+      { "question": "Which month is 'dezembro'?", "options": ["November", "October", "January", "December"], "answer": 3 }
+    ]}
+  ]
+}

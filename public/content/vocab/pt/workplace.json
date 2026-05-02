@@ -1,0 +1,136 @@
+{
+  "id": "workplace",
+  "words": [
+    {
+      "word": "reunião",
+      "reading": "heh-oo-nee-AHWN",
+      "meaning": "meeting",
+      "example": "A reunião começa às dez horas.",
+      "exampleMeaning": "The meeting starts at ten o'clock."
+    },
+    {
+      "word": "projeto",
+      "reading": "proh-ZHEH-too",
+      "meaning": "project",
+      "example": "Estamos trabalhando em um projeto novo.",
+      "exampleMeaning": "We are working on a new project."
+    },
+    {
+      "word": "prazo",
+      "reading": "PRAH-zoo",
+      "meaning": "deadline",
+      "example": "O prazo para entregar o relatório é sexta.",
+      "exampleMeaning": "The deadline to submit the report is Friday."
+    },
+    {
+      "word": "relatório",
+      "reading": "heh-lah-TOH-ree-oo",
+      "meaning": "report",
+      "example": "Preciso terminar o relatório até amanhã.",
+      "exampleMeaning": "I need to finish the report by tomorrow."
+    },
+    {
+      "word": "meta",
+      "reading": "MEH-tah",
+      "meaning": "goal / target",
+      "example": "Conseguimos bater a meta de vendas.",
+      "exampleMeaning": "We managed to hit the sales target."
+    },
+    {
+      "word": "equipe",
+      "reading": "eh-KEE-pee",
+      "meaning": "team / staff",
+      "example": "Nossa equipe trabalha muito bem junto.",
+      "exampleMeaning": "Our team works very well together."
+    },
+    {
+      "word": "cargo",
+      "reading": "KAR-goo",
+      "meaning": "position / job title",
+      "example": "Ela ocupa o cargo de diretora.",
+      "exampleMeaning": "She holds the position of director."
+    },
+    {
+      "word": "contrato",
+      "reading": "kon-TRAH-too",
+      "meaning": "contract",
+      "example": "Assinei o contrato de trabalho hoje.",
+      "exampleMeaning": "I signed the work contract today."
+    },
+    {
+      "word": "entrevista",
+      "reading": "en-treh-VEES-tah",
+      "meaning": "interview",
+      "example": "Tenho uma entrevista de emprego amanhã.",
+      "exampleMeaning": "I have a job interview tomorrow."
+    },
+    {
+      "word": "currículo",
+      "reading": "koo-HEE-koo-loo",
+      "meaning": "résumé / CV",
+      "example": "Atualizei meu currículo ontem.",
+      "exampleMeaning": "I updated my résumé yesterday."
+    },
+    {
+      "word": "promoção",
+      "reading": "proh-moh-SAHW",
+      "meaning": "promotion",
+      "example": "Recebi uma promoção no trabalho.",
+      "exampleMeaning": "I got a promotion at work."
+    },
+    {
+      "word": "demissão",
+      "reading": "deh-mee-SAHW",
+      "meaning": "dismissal / resignation",
+      "example": "Ele pediu demissão na semana passada.",
+      "exampleMeaning": "He resigned last week."
+    },
+    {
+      "word": "férias",
+      "reading": "FEH-ree-ahs",
+      "meaning": "vacation / holidays",
+      "example": "Minhas férias começam em dezembro.",
+      "exampleMeaning": "My vacation starts in December."
+    },
+    {
+      "word": "salário",
+      "reading": "sah-LAH-ree-oo",
+      "meaning": "salary",
+      "example": "O salário é pago no quinto dia útil.",
+      "exampleMeaning": "The salary is paid on the fifth business day."
+    },
+    {
+      "word": "horário",
+      "reading": "oh-RAH-ree-oo",
+      "meaning": "schedule / working hours",
+      "example": "Meu horário de trabalho é das oito às cinco.",
+      "exampleMeaning": "My work schedule is from eight to five."
+    },
+    {
+      "word": "plantão",
+      "reading": "plan-TAHW",
+      "meaning": "shift / on-call duty",
+      "example": "Ele trabalha de plantão à noite.",
+      "exampleMeaning": "He works the night shift."
+    }
+  ],
+  "exercises": [
+    { "type": "match", "pairs": 5 },
+    {
+      "type": "fill-blank",
+      "items": [
+        { "sentence": "O ___ para entregar o relatório é sexta.", "answer": "prazo", "hint": "time limit for completing something" },
+        { "sentence": "Tenho uma ___ de emprego amanhã.", "answer": "entrevista", "hint": "formal meeting for a job application" },
+        { "sentence": "Minhas ___ começam em dezembro.", "answer": "férias", "hint": "time off from work" }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "items": [
+        { "question": "What does 'currículo' mean?", "options": ["contract", "résumé", "salary", "promotion"], "answer": 1 },
+        { "question": "What does 'plantão' mean?", "options": ["plan", "shift / on-call", "overtime", "holiday"], "answer": 1 },
+        { "question": "What does 'demissão' mean?", "options": ["promotion", "hiring", "dismissal", "meeting"], "answer": 2 }
+      ]
+    }
+  ]
+}

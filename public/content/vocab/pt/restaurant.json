@@ -1,0 +1,136 @@
+{
+  "id": "restaurant",
+  "words": [
+    {
+      "word": "garçom",
+      "reading": "gar-SOHM",
+      "meaning": "waiter",
+      "example": "O garçom trouxe o cardápio rapidamente.",
+      "exampleMeaning": "The waiter brought the menu quickly."
+    },
+    {
+      "word": "cardápio",
+      "reading": "kar-DAH-pee-oo",
+      "meaning": "menu",
+      "example": "Posso ver o cardápio, por favor?",
+      "exampleMeaning": "Can I see the menu, please?"
+    },
+    {
+      "word": "prato",
+      "reading": "PRAH-too",
+      "meaning": "dish / plate",
+      "example": "O prato do dia é frango grelhado.",
+      "exampleMeaning": "The dish of the day is grilled chicken."
+    },
+    {
+      "word": "bebida",
+      "reading": "beh-BEE-dah",
+      "meaning": "drink / beverage",
+      "example": "Que bebida você gostaria?",
+      "exampleMeaning": "What drink would you like?"
+    },
+    {
+      "word": "sobremesa",
+      "reading": "soh-breh-MEH-zah",
+      "meaning": "dessert",
+      "example": "A sobremesa é pudim de leite.",
+      "exampleMeaning": "The dessert is milk pudding."
+    },
+    {
+      "word": "conta",
+      "reading": "KON-tah",
+      "meaning": "bill / check",
+      "example": "A conta, por favor.",
+      "exampleMeaning": "The check, please."
+    },
+    {
+      "word": "gorjeta",
+      "reading": "gor-ZHEH-tah",
+      "meaning": "tip (gratuity)",
+      "example": "Deixei uma gorjeta de dez por cento.",
+      "exampleMeaning": "I left a ten percent tip."
+    },
+    {
+      "word": "reserva",
+      "reading": "heh-ZEHR-vah",
+      "meaning": "reservation",
+      "example": "Fiz uma reserva para duas pessoas.",
+      "exampleMeaning": "I made a reservation for two people."
+    },
+    {
+      "word": "entrada",
+      "reading": "en-TRAH-dah",
+      "meaning": "appetizer / starter",
+      "example": "De entrada, vou querer uma salada.",
+      "exampleMeaning": "As a starter, I'll have a salad."
+    },
+    {
+      "word": "prato principal",
+      "reading": "PRAH-too preen-see-PAW",
+      "meaning": "main course",
+      "example": "O prato principal é uma picanha com arroz.",
+      "exampleMeaning": "The main course is picanha steak with rice."
+    },
+    {
+      "word": "acompanhamento",
+      "reading": "ah-kom-pah-nyah-MEN-too",
+      "meaning": "side dish",
+      "example": "O acompanhamento é arroz e feijão.",
+      "exampleMeaning": "The side dish is rice and beans."
+    },
+    {
+      "word": "porção",
+      "reading": "por-SAHW",
+      "meaning": "portion / shared plate",
+      "example": "Vamos pedir uma porção de batata frita.",
+      "exampleMeaning": "Let's order a portion of French fries."
+    },
+    {
+      "word": "copo",
+      "reading": "KOH-poo",
+      "meaning": "glass (drinking)",
+      "example": "Um copo de água, por favor.",
+      "exampleMeaning": "A glass of water, please."
+    },
+    {
+      "word": "guardanapo",
+      "reading": "gwar-dah-NAH-poo",
+      "meaning": "napkin",
+      "example": "Preciso de mais guardanapos.",
+      "exampleMeaning": "I need more napkins."
+    },
+    {
+      "word": "talheres",
+      "reading": "tah-LYEH-rees",
+      "meaning": "cutlery / silverware",
+      "example": "Os talheres estão na gaveta da cozinha.",
+      "exampleMeaning": "The cutlery is in the kitchen drawer."
+    },
+    {
+      "word": "comanda",
+      "reading": "koh-MAN-dah",
+      "meaning": "order tab / order slip",
+      "example": "O garçom anotou o pedido na comanda.",
+      "exampleMeaning": "The waiter wrote the order on the tab."
+    }
+  ],
+  "exercises": [
+    { "type": "match", "pairs": 5 },
+    {
+      "type": "fill-blank",
+      "items": [
+        { "sentence": "Posso ver o ___, por favor?", "answer": "cardápio", "hint": "list of food and drinks at a restaurant" },
+        { "sentence": "A ___, por favor.", "answer": "conta", "hint": "what you pay at the end of a meal" },
+        { "sentence": "Fiz uma ___ para duas pessoas.", "answer": "reserva", "hint": "booking a table in advance" }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "items": [
+        { "question": "What does 'gorjeta' mean?", "options": ["dessert", "tip", "appetizer", "bill"], "answer": 1 },
+        { "question": "What does 'sobremesa' mean?", "options": ["main course", "side dish", "dessert", "appetizer"], "answer": 2 },
+        { "question": "What does 'talheres' mean?", "options": ["napkins", "plates", "glasses", "cutlery"], "answer": 3 }
+      ]
+    }
+  ]
+}

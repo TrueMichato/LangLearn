@@ -1,0 +1,136 @@
+{
+  "id": "education",
+  "words": [
+    {
+      "word": "universidade",
+      "reading": "oo-nee-ver-see-DAH-jee",
+      "meaning": "university",
+      "example": "Estudo na Universidade de São Paulo.",
+      "exampleMeaning": "I study at the University of São Paulo."
+    },
+    {
+      "word": "faculdade",
+      "reading": "fah-koo-DAH-jee",
+      "meaning": "college / university (informal)",
+      "example": "Ela entrou na faculdade este ano.",
+      "exampleMeaning": "She started college this year."
+    },
+    {
+      "word": "vestibular",
+      "reading": "vehs-chee-boo-LAR",
+      "meaning": "university entrance exam",
+      "example": "O vestibular é muito difícil no Brasil.",
+      "exampleMeaning": "The entrance exam is very difficult in Brazil."
+    },
+    {
+      "word": "nota",
+      "reading": "NOH-tah",
+      "meaning": "grade / mark",
+      "example": "Tirei uma nota boa na prova.",
+      "exampleMeaning": "I got a good grade on the test."
+    },
+    {
+      "word": "diploma",
+      "reading": "jee-PLOH-mah",
+      "meaning": "diploma / degree",
+      "example": "Recebi meu diploma na formatura.",
+      "exampleMeaning": "I received my diploma at graduation."
+    },
+    {
+      "word": "formatura",
+      "reading": "for-mah-TOO-rah",
+      "meaning": "graduation",
+      "example": "A formatura vai ser em dezembro.",
+      "exampleMeaning": "The graduation will be in December."
+    },
+    {
+      "word": "pesquisa",
+      "reading": "pehs-KEE-zah",
+      "meaning": "research",
+      "example": "Faço pesquisa na área de biologia.",
+      "exampleMeaning": "I do research in the field of biology."
+    },
+    {
+      "word": "bolsa",
+      "reading": "BOW-sah",
+      "meaning": "scholarship",
+      "example": "Consegui uma bolsa de estudos.",
+      "exampleMeaning": "I got a scholarship."
+    },
+    {
+      "word": "disciplina",
+      "reading": "jees-see-PLEE-nah",
+      "meaning": "course / subject (academic)",
+      "example": "Estou matriculado em seis disciplinas este semestre.",
+      "exampleMeaning": "I'm enrolled in six courses this semester."
+    },
+    {
+      "word": "seminário",
+      "reading": "seh-mee-NAH-ree-oo",
+      "meaning": "seminar / presentation",
+      "example": "Temos um seminário para apresentar na quarta.",
+      "exampleMeaning": "We have a seminar to present on Wednesday."
+    },
+    {
+      "word": "biblioteca",
+      "reading": "bee-blee-oh-TEH-kah",
+      "meaning": "library",
+      "example": "Vou estudar na biblioteca esta tarde.",
+      "exampleMeaning": "I'm going to study at the library this afternoon."
+    },
+    {
+      "word": "laboratório",
+      "reading": "lah-boh-rah-TOH-ree-oo",
+      "meaning": "laboratory",
+      "example": "O laboratório de química fica no segundo andar.",
+      "exampleMeaning": "The chemistry lab is on the second floor."
+    },
+    {
+      "word": "estágio",
+      "reading": "ehs-TAH-zhee-oo",
+      "meaning": "internship",
+      "example": "Comecei meu estágio em uma empresa de tecnologia.",
+      "exampleMeaning": "I started my internship at a tech company."
+    },
+    {
+      "word": "mestrado",
+      "reading": "mehs-TRAH-doo",
+      "meaning": "master's degree",
+      "example": "Ela está fazendo mestrado em educação.",
+      "exampleMeaning": "She is doing a master's degree in education."
+    },
+    {
+      "word": "doutorado",
+      "reading": "doh-too-RAH-doo",
+      "meaning": "doctorate / PhD",
+      "example": "Ele terminou o doutorado em cinco anos.",
+      "exampleMeaning": "He finished his PhD in five years."
+    },
+    {
+      "word": "reitor",
+      "reading": "hay-TOR",
+      "meaning": "university chancellor / president",
+      "example": "O reitor discursou na cerimônia de formatura.",
+      "exampleMeaning": "The chancellor spoke at the graduation ceremony."
+    }
+  ],
+  "exercises": [
+    { "type": "match", "pairs": 5 },
+    {
+      "type": "fill-blank",
+      "items": [
+        { "sentence": "O ___ é muito difícil no Brasil.", "answer": "vestibular", "hint": "exam to enter university" },
+        { "sentence": "Consegui uma ___ de estudos.", "answer": "bolsa", "hint": "financial aid for students" },
+        { "sentence": "Vou estudar na ___ esta tarde.", "answer": "biblioteca", "hint": "place with books for reading and study" }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "items": [
+        { "question": "What does 'estágio' mean?", "options": ["stage", "internship", "semester", "degree"], "answer": 1 },
+        { "question": "What does 'mestrado' mean?", "options": ["doctorate", "bachelor's", "master's degree", "diploma"], "answer": 2 },
+        { "question": "What does 'vestibular' mean?", "options": ["graduation", "entrance exam", "scholarship", "laboratory"], "answer": 1 }
+      ]
+    }
+  ]
+}

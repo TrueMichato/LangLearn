@@ -1,0 +1,34 @@
+{
+  "id": "school-work",
+  "words": [
+    { "word": "escola", "reading": "esh-koh-lah", "meaning": "school", "example": "As crianças vão à escola de manhã.", "exampleMeaning": "The children go to school in the morning." },
+    { "word": "professor", "reading": "proh-feh-sor", "meaning": "teacher (male)", "example": "O professor explicou a lição.", "exampleMeaning": "The teacher explained the lesson." },
+    { "word": "aluno", "reading": "ah-loo-noo", "meaning": "student (male)", "example": "O aluno fez todas as tarefas.", "exampleMeaning": "The student did all the homework." },
+    { "word": "livro", "reading": "lee-vroo", "meaning": "book", "example": "Eu estou lendo um livro muito bom.", "exampleMeaning": "I'm reading a very good book." },
+    { "word": "caderno", "reading": "kah-der-noo", "meaning": "notebook", "example": "Anote a resposta no caderno.", "exampleMeaning": "Write the answer in the notebook." },
+    { "word": "caneta", "reading": "kah-neh-tah", "meaning": "pen", "example": "Você tem uma caneta que eu possa usar?", "exampleMeaning": "Do you have a pen I can use?" },
+    { "word": "prova", "reading": "proh-vah", "meaning": "test / exam", "example": "A prova de matemática é amanhã.", "exampleMeaning": "The math test is tomorrow." },
+    { "word": "aula", "reading": "ow-lah", "meaning": "class / lesson", "example": "A aula de história é muito interessante.", "exampleMeaning": "The history class is very interesting." },
+    { "word": "trabalho", "reading": "trah-bah-lyoo", "meaning": "work / job", "example": "Eu gosto do meu trabalho.", "exampleMeaning": "I like my job." },
+    { "word": "escritório", "reading": "esh-kree-toh-ryoo", "meaning": "office", "example": "O escritório fica no centro da cidade.", "exampleMeaning": "The office is in the city center." },
+    { "word": "computador", "reading": "kohm-poo-tah-dor", "meaning": "computer", "example": "Eu uso o computador para trabalhar.", "exampleMeaning": "I use the computer to work." },
+    { "word": "reunião", "reading": "heh-oo-nee-ahng", "meaning": "meeting", "example": "Temos uma reunião às duas horas.", "exampleMeaning": "We have a meeting at two o'clock." },
+    { "word": "chefe", "reading": "sheh-fee", "meaning": "boss", "example": "Meu chefe é muito exigente.", "exampleMeaning": "My boss is very demanding." },
+    { "word": "empresa", "reading": "em-preh-zah", "meaning": "company", "example": "A empresa tem duzentos funcionários.", "exampleMeaning": "The company has two hundred employees." },
+    { "word": "salário", "reading": "sah-lah-ryoo", "meaning": "salary", "example": "O salário é pago todo mês.", "exampleMeaning": "The salary is paid every month." },
+    { "word": "colega", "reading": "koh-leh-gah", "meaning": "colleague", "example": "Meu colega me ajudou com o projeto.", "exampleMeaning": "My colleague helped me with the project." }
+  ],
+  "exercises": [
+    { "type": "match", "pairs": 5 },
+    { "type": "fill-blank", "items": [
+      { "sentence": "A ___ de matemática é amanhã.", "answer": "prova", "hint": "test" },
+      { "sentence": "Eu uso o ___ para trabalhar.", "answer": "computador", "hint": "computer" },
+      { "sentence": "Temos uma ___ às duas horas.", "answer": "reunião", "hint": "meeting" }
+    ]},
+    { "type": "multiple-choice", "items": [
+      { "question": "What does 'escola' mean?", "options": ["office", "school", "company", "class"], "answer": 1 },
+      { "question": "How do you say 'book' in Portuguese?", "options": ["caderno", "caneta", "livro", "prova"], "answer": 2 },
+      { "question": "What is 'chefe'?", "options": ["colleague", "student", "teacher", "boss"], "answer": 3 }
+    ]}
+  ]
+}

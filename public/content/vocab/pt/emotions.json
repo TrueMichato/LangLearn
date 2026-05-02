@@ -1,0 +1,34 @@
+{
+  "id": "emotions",
+  "words": [
+    { "word": "feliz", "reading": "feh-leez", "meaning": "happy", "example": "Eu estou muito feliz com a notícia.", "exampleMeaning": "I am very happy with the news." },
+    { "word": "triste", "reading": "trees-chee", "meaning": "sad", "example": "Ela ficou triste com a despedida.", "exampleMeaning": "She was sad about the farewell." },
+    { "word": "com raiva", "reading": "kohm hah-ee-vah", "meaning": "angry", "example": "Ele está com raiva do vizinho.", "exampleMeaning": "He is angry at the neighbor." },
+    { "word": "nervoso", "reading": "ner-voh-zoo", "meaning": "nervous", "example": "Eu fico nervoso antes das provas.", "exampleMeaning": "I get nervous before exams." },
+    { "word": "calmo", "reading": "kahl-moo", "meaning": "calm", "example": "Fique calmo, vai dar tudo certo.", "exampleMeaning": "Stay calm, everything will be fine." },
+    { "word": "animado", "reading": "ah-nee-mah-doo", "meaning": "excited", "example": "Estamos animados para a festa!", "exampleMeaning": "We are excited for the party!" },
+    { "word": "entediado", "reading": "en-teh-jee-ah-doo", "meaning": "bored", "example": "As crianças estão entediadas em casa.", "exampleMeaning": "The children are bored at home." },
+    { "word": "surpreso", "reading": "soor-preh-zoo", "meaning": "surprised", "example": "Eu fiquei surpreso com o presente.", "exampleMeaning": "I was surprised by the gift." },
+    { "word": "cansado", "reading": "kahn-sah-doo", "meaning": "tired", "example": "Estou muito cansado depois do trabalho.", "exampleMeaning": "I'm very tired after work." },
+    { "word": "preocupado", "reading": "preh-oh-koo-pah-doo", "meaning": "worried", "example": "Ela está preocupada com a prova.", "exampleMeaning": "She is worried about the exam." },
+    { "word": "com medo", "reading": "kohm meh-doo", "meaning": "afraid / scared", "example": "O menino está com medo do escuro.", "exampleMeaning": "The boy is afraid of the dark." },
+    { "word": "orgulhoso", "reading": "or-goo-lyoh-zoo", "meaning": "proud", "example": "A mãe está orgulhosa do filho.", "exampleMeaning": "The mother is proud of her son." },
+    { "word": "envergonhado", "reading": "en-ver-goh-nyah-doo", "meaning": "embarrassed", "example": "Ele ficou envergonhado na frente de todos.", "exampleMeaning": "He was embarrassed in front of everyone." },
+    { "word": "apaixonado", "reading": "ah-pah-ee-shoh-nah-doo", "meaning": "in love", "example": "Eles estão apaixonados um pelo outro.", "exampleMeaning": "They are in love with each other." },
+    { "word": "confuso", "reading": "kon-foo-zoo", "meaning": "confused", "example": "Eu fiquei confuso com as instruções.", "exampleMeaning": "I was confused by the instructions." },
+    { "word": "aliviado", "reading": "ah-lee-vee-ah-doo", "meaning": "relieved", "example": "Fiquei aliviado quando o resultado saiu.", "exampleMeaning": "I was relieved when the result came out." }
+  ],
+  "exercises": [
+    { "type": "match", "pairs": 5 },
+    { "type": "fill-blank", "items": [
+      { "sentence": "Eu estou muito ___ com a notícia.", "answer": "feliz", "hint": "happy" },
+      { "sentence": "Fique ___, vai dar tudo certo.", "answer": "calmo", "hint": "calm" },
+      { "sentence": "Estou muito ___ depois do trabalho.", "answer": "cansado", "hint": "tired" }
+    ]},
+    { "type": "multiple-choice", "items": [
+      { "question": "What does 'triste' mean?", "options": ["happy", "sad", "angry", "tired"], "answer": 1 },
+      { "question": "How do you say 'surprised' in Portuguese?", "options": ["nervoso", "confuso", "surpreso", "animado"], "answer": 2 },
+      { "question": "What does 'com medo' mean?", "options": ["proud", "bored", "in love", "afraid"], "answer": 3 }
+    ]}
+  ]
+}

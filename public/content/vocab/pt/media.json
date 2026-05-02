@@ -1,0 +1,136 @@
+{
+  "id": "media",
+  "words": [
+    {
+      "word": "jornal",
+      "reading": "zhor-NAW",
+      "meaning": "newspaper",
+      "example": "Leio o jornal todas as manhãs.",
+      "exampleMeaning": "I read the newspaper every morning."
+    },
+    {
+      "word": "notícia",
+      "reading": "noh-CHEE-see-ah",
+      "meaning": "news",
+      "example": "Você viu a notícia sobre o terremoto?",
+      "exampleMeaning": "Did you see the news about the earthquake?"
+    },
+    {
+      "word": "repórter",
+      "reading": "heh-POR-ter",
+      "meaning": "reporter",
+      "example": "O repórter entrevistou o prefeito.",
+      "exampleMeaning": "The reporter interviewed the mayor."
+    },
+    {
+      "word": "entrevista",
+      "reading": "en-treh-VEES-tah",
+      "meaning": "interview",
+      "example": "A entrevista foi ao vivo na televisão.",
+      "exampleMeaning": "The interview was live on television."
+    },
+    {
+      "word": "reportagem",
+      "reading": "heh-por-TAH-zheem",
+      "meaning": "report / news story",
+      "example": "A reportagem sobre a Amazônia ganhou um prêmio.",
+      "exampleMeaning": "The report about the Amazon won an award."
+    },
+    {
+      "word": "revista",
+      "reading": "heh-VEES-tah",
+      "meaning": "magazine",
+      "example": "Comprei uma revista de moda.",
+      "exampleMeaning": "I bought a fashion magazine."
+    },
+    {
+      "word": "programa",
+      "reading": "proh-GRAH-mah",
+      "meaning": "program / show",
+      "example": "Meu programa favorito passa às nove.",
+      "exampleMeaning": "My favorite show is on at nine."
+    },
+    {
+      "word": "podcast",
+      "reading": "POD-kest",
+      "meaning": "podcast",
+      "example": "Ouço podcasts sobre história no caminho do trabalho.",
+      "exampleMeaning": "I listen to podcasts about history on my way to work."
+    },
+    {
+      "word": "rede social",
+      "reading": "HEH-jee soh-see-AW",
+      "meaning": "social media",
+      "example": "As redes sociais mudaram a forma de comunicação.",
+      "exampleMeaning": "Social media changed the way we communicate."
+    },
+    {
+      "word": "viral",
+      "reading": "vee-RAW",
+      "meaning": "viral",
+      "example": "O vídeo ficou viral em poucas horas.",
+      "exampleMeaning": "The video went viral in just a few hours."
+    },
+    {
+      "word": "compartilhar",
+      "reading": "kom-par-chee-LYAR",
+      "meaning": "to share",
+      "example": "Vou compartilhar esse artigo com vocês.",
+      "exampleMeaning": "I'll share this article with you all."
+    },
+    {
+      "word": "curtir",
+      "reading": "koor-CHEER",
+      "meaning": "to like (social media)",
+      "example": "Muita gente curtiu a publicação.",
+      "exampleMeaning": "A lot of people liked the post."
+    },
+    {
+      "word": "seguir",
+      "reading": "seh-GEER",
+      "meaning": "to follow",
+      "example": "Me segue lá no Instagram.",
+      "exampleMeaning": "Follow me on Instagram."
+    },
+    {
+      "word": "publicar",
+      "reading": "poo-blee-KAR",
+      "meaning": "to publish / to post",
+      "example": "Ela publicou um artigo na revista.",
+      "exampleMeaning": "She published an article in the magazine."
+    },
+    {
+      "word": "manchete",
+      "reading": "man-SHEH-chee",
+      "meaning": "headline",
+      "example": "A manchete do jornal chamou atenção.",
+      "exampleMeaning": "The newspaper headline caught attention."
+    },
+    {
+      "word": "colunista",
+      "reading": "koh-loo-NEES-tah",
+      "meaning": "columnist",
+      "example": "O colunista escreveu sobre política.",
+      "exampleMeaning": "The columnist wrote about politics."
+    }
+  ],
+  "exercises": [
+    { "type": "match", "pairs": 5 },
+    {
+      "type": "fill-blank",
+      "items": [
+        { "sentence": "O vídeo ficou ___ em poucas horas.", "answer": "viral", "hint": "spreading rapidly online" },
+        { "sentence": "Me ___ lá no Instagram.", "answer": "segue", "hint": "subscribe to someone's content" },
+        { "sentence": "A ___ do jornal chamou atenção.", "answer": "manchete", "hint": "title of a news article" }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "items": [
+        { "question": "What does 'curtir' mean in social media?", "options": ["to share", "to comment", "to like", "to follow"], "answer": 2 },
+        { "question": "What does 'reportagem' mean?", "options": ["reporter", "news story", "newspaper", "magazine"], "answer": 1 },
+        { "question": "What does 'compartilhar' mean?", "options": ["to compare", "to share", "to compete", "to publish"], "answer": 1 }
+      ]
+    }
+  ]
+}

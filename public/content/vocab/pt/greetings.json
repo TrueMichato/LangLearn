@@ -1,0 +1,33 @@
+{
+  "id": "greetings",
+  "words": [
+    { "word": "bom dia", "reading": "bom jee-ah", "meaning": "good morning", "example": "Bom dia! Como você está?", "exampleMeaning": "Good morning! How are you?" },
+    { "word": "boa tarde", "reading": "boh-ah tar-jee", "meaning": "good afternoon", "example": "Boa tarde, senhora. Posso ajudar?", "exampleMeaning": "Good afternoon, ma'am. Can I help?" },
+    { "word": "boa noite", "reading": "boh-ah noy-chee", "meaning": "good evening / good night", "example": "Boa noite! Durma bem.", "exampleMeaning": "Good night! Sleep well." },
+    { "word": "olá", "reading": "oh-lah", "meaning": "hello", "example": "Olá, tudo bem com você?", "exampleMeaning": "Hello, is everything ok with you?" },
+    { "word": "tchau", "reading": "chow", "meaning": "bye", "example": "Tchau, gente! Até amanhã!", "exampleMeaning": "Bye, everyone! See you tomorrow!" },
+    { "word": "até logo", "reading": "ah-teh loh-goo", "meaning": "see you later", "example": "Preciso ir. Até logo!", "exampleMeaning": "I need to go. See you later!" },
+    { "word": "obrigado", "reading": "oh-bree-gah-doo", "meaning": "thank you (said by males)", "example": "Muito obrigado pela ajuda!", "exampleMeaning": "Thank you very much for the help!" },
+    { "word": "obrigada", "reading": "oh-bree-gah-dah", "meaning": "thank you (said by females)", "example": "Obrigada por tudo!", "exampleMeaning": "Thank you for everything!" },
+    { "word": "de nada", "reading": "jee nah-dah", "meaning": "you're welcome", "example": "De nada, foi um prazer ajudar.", "exampleMeaning": "You're welcome, it was a pleasure to help." },
+    { "word": "por favor", "reading": "por fah-vor", "meaning": "please", "example": "Um café, por favor.", "exampleMeaning": "A coffee, please." },
+    { "word": "com licença", "reading": "kohm lee-sen-sah", "meaning": "excuse me", "example": "Com licença, onde fica o banheiro?", "exampleMeaning": "Excuse me, where is the bathroom?" },
+    { "word": "desculpa", "reading": "jehs-kool-pah", "meaning": "sorry", "example": "Desculpa, eu não sabia.", "exampleMeaning": "Sorry, I didn't know." },
+    { "word": "tudo bem", "reading": "too-doo beng", "meaning": "everything is fine / how are you", "example": "Tudo bem? — Tudo bem!", "exampleMeaning": "How are you? — I'm fine!" },
+    { "word": "prazer", "reading": "prah-zer", "meaning": "nice to meet you / pleasure", "example": "Prazer em conhecer você!", "exampleMeaning": "Nice to meet you!" },
+    { "word": "até amanhã", "reading": "ah-teh ah-mahn-yah", "meaning": "see you tomorrow", "example": "Até amanhã na aula!", "exampleMeaning": "See you tomorrow in class!" }
+  ],
+  "exercises": [
+    { "type": "match", "pairs": 5 },
+    { "type": "fill-blank", "items": [
+      { "sentence": "___, como você está?", "answer": "Bom dia", "hint": "morning greeting" },
+      { "sentence": "Um café, ___.", "answer": "por favor", "hint": "please" },
+      { "sentence": "___, onde fica o banheiro?", "answer": "Com licença", "hint": "excuse me" }
+    ]},
+    { "type": "multiple-choice", "items": [
+      { "question": "What does 'obrigado' mean?", "options": ["goodbye", "thank you", "please", "sorry"], "answer": 1 },
+      { "question": "How do you say 'good night' in Portuguese?", "options": ["bom dia", "boa tarde", "boa noite", "olá"], "answer": 2 },
+      { "question": "What does 'de nada' mean?", "options": ["sorry", "please", "hello", "you're welcome"], "answer": 3 }
+    ]}
+  ]
+}

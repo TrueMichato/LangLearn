@@ -1,0 +1,34 @@
+{
+  "id": "body",
+  "words": [
+    { "word": "cabeça", "reading": "kah-beh-sah", "meaning": "head", "example": "Estou com dor de cabeça.", "exampleMeaning": "I have a headache." },
+    { "word": "olho", "reading": "oh-lyoo", "meaning": "eye", "example": "Ela tem olhos verdes.", "exampleMeaning": "She has green eyes." },
+    { "word": "nariz", "reading": "nah-reez", "meaning": "nose", "example": "Meu nariz está entupido.", "exampleMeaning": "My nose is stuffy." },
+    { "word": "boca", "reading": "boh-kah", "meaning": "mouth", "example": "Abra a boca, por favor.", "exampleMeaning": "Open your mouth, please." },
+    { "word": "orelha", "reading": "oh-reh-lyah", "meaning": "ear", "example": "Ela usa brincos nas orelhas.", "exampleMeaning": "She wears earrings on her ears." },
+    { "word": "mão", "reading": "mahng", "meaning": "hand", "example": "Lave as mãos antes de comer.", "exampleMeaning": "Wash your hands before eating." },
+    { "word": "braço", "reading": "brah-soo", "meaning": "arm", "example": "Ele quebrou o braço jogando futebol.", "exampleMeaning": "He broke his arm playing soccer." },
+    { "word": "perna", "reading": "per-nah", "meaning": "leg", "example": "Minhas pernas estão cansadas de correr.", "exampleMeaning": "My legs are tired from running." },
+    { "word": "pé", "reading": "peh", "meaning": "foot", "example": "Eu machuquei o pé na escada.", "exampleMeaning": "I hurt my foot on the stairs." },
+    { "word": "dedo", "reading": "deh-doo", "meaning": "finger / toe", "example": "Cortei o dedo na cozinha.", "exampleMeaning": "I cut my finger in the kitchen." },
+    { "word": "cabelo", "reading": "kah-beh-loo", "meaning": "hair", "example": "Ela tem cabelo longo e bonito.", "exampleMeaning": "She has long and beautiful hair." },
+    { "word": "dente", "reading": "den-chee", "meaning": "tooth", "example": "Escove os dentes três vezes por dia.", "exampleMeaning": "Brush your teeth three times a day." },
+    { "word": "peito", "reading": "pay-too", "meaning": "chest", "example": "Ele sentiu uma dor no peito.", "exampleMeaning": "He felt a pain in his chest." },
+    { "word": "costas", "reading": "kohs-tahs", "meaning": "back", "example": "Minhas costas doem depois do trabalho.", "exampleMeaning": "My back hurts after work." },
+    { "word": "joelho", "reading": "zhoo-eh-lyoo", "meaning": "knee", "example": "Ela ralou o joelho na queda.", "exampleMeaning": "She scraped her knee in the fall." },
+    { "word": "ombro", "reading": "om-broo", "meaning": "shoulder", "example": "Ele carregou a mochila no ombro.", "exampleMeaning": "He carried the backpack on his shoulder." }
+  ],
+  "exercises": [
+    { "type": "match", "pairs": 5 },
+    { "type": "fill-blank", "items": [
+      { "sentence": "Estou com dor de ___.", "answer": "cabeça", "hint": "head" },
+      { "sentence": "Lave as ___ antes de comer.", "answer": "mãos", "hint": "hands" },
+      { "sentence": "Escove os ___ três vezes por dia.", "answer": "dentes", "hint": "teeth" }
+    ]},
+    { "type": "multiple-choice", "items": [
+      { "question": "What does 'olho' mean?", "options": ["ear", "eye", "nose", "mouth"], "answer": 1 },
+      { "question": "How do you say 'leg' in Portuguese?", "options": ["braço", "mão", "perna", "pé"], "answer": 2 },
+      { "question": "What is 'joelho'?", "options": ["shoulder", "back", "chest", "knee"], "answer": 3 }
+    ]}
+  ]
+}

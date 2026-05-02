@@ -1,0 +1,137 @@
+{
+  "id": "daily-routines",
+  "words": [
+    {
+      "word": "acordar",
+      "reading": "ah-kor-DAR",
+      "meaning": "to wake up",
+      "example": "Acordo às seis da manhã todos os dias.",
+      "exampleMeaning": "I wake up at six in the morning every day."
+    },
+    {
+      "word": "escovar os dentes",
+      "reading": "ehs-koh-VAR ohs DEN-chees",
+      "meaning": "to brush one's teeth",
+      "example": "Escovo os dentes três vezes ao dia.",
+      "exampleMeaning": "I brush my teeth three times a day."
+    },
+    {
+      "word": "pentear",
+      "reading": "pen-tee-AR",
+      "meaning": "to comb / to brush (hair)",
+      "example": "Preciso pentear o cabelo antes de sair.",
+      "exampleMeaning": "I need to comb my hair before going out."
+    },
+    {
+      "word": "se vestir",
+      "reading": "see vehs-CHEER",
+      "meaning": "to get dressed",
+      "example": "Ele se veste rapidamente de manhã.",
+      "exampleMeaning": "He gets dressed quickly in the morning."
+    },
+    {
+      "word": "café da manhã",
+      "reading": "kah-FEH dah mah-NYAH",
+      "meaning": "breakfast",
+      "example": "O café da manhã é a refeição mais importante.",
+      "exampleMeaning": "Breakfast is the most important meal."
+    },
+    {
+      "word": "sair de casa",
+      "reading": "sah-EER jee KAH-zah",
+      "meaning": "to leave home",
+      "example": "Saio de casa às sete e meia.",
+      "exampleMeaning": "I leave home at seven thirty."
+    },
+    {
+      "word": "pegar o ônibus",
+      "reading": "peh-GAR oo OH-nee-boos",
+      "meaning": "to take the bus",
+      "example": "Pego o ônibus na esquina da minha rua.",
+      "exampleMeaning": "I take the bus at the corner of my street."
+    },
+    {
+      "word": "trabalhar",
+      "reading": "trah-bah-LYAR",
+      "meaning": "to work",
+      "example": "Trabalho das nove às seis.",
+      "exampleMeaning": "I work from nine to six."
+    },
+    {
+      "word": "almoçar",
+      "reading": "aw-moh-SAR",
+      "meaning": "to have lunch",
+      "example": "Almoço no restaurante perto do escritório.",
+      "exampleMeaning": "I have lunch at the restaurant near the office."
+    },
+    {
+      "word": "voltar para casa",
+      "reading": "vow-TAR PAH-rah KAH-zah",
+      "meaning": "to go back home",
+      "example": "Volto para casa às sete da noite.",
+      "exampleMeaning": "I go back home at seven in the evening."
+    },
+    {
+      "word": "descansar",
+      "reading": "dehs-kan-SAR",
+      "meaning": "to rest",
+      "example": "Preciso descansar um pouco depois do trabalho.",
+      "exampleMeaning": "I need to rest a bit after work."
+    },
+    {
+      "word": "jantar",
+      "reading": "zhan-TAR",
+      "meaning": "to have dinner",
+      "example": "Jantamos em família todas as noites.",
+      "exampleMeaning": "We have dinner as a family every night."
+    },
+    {
+      "word": "assistir TV",
+      "reading": "ah-sees-CHEER teh-VEH",
+      "meaning": "to watch TV",
+      "example": "Gosto de assistir TV depois do jantar.",
+      "exampleMeaning": "I like to watch TV after dinner."
+    },
+    {
+      "word": "dormir",
+      "reading": "dor-MEER",
+      "meaning": "to sleep",
+      "example": "Durmo às onze da noite.",
+      "exampleMeaning": "I go to sleep at eleven at night."
+    },
+    {
+      "word": "passear",
+      "reading": "pah-see-AR",
+      "meaning": "to go for a walk / to stroll",
+      "example": "Gosto de passear no parque à tarde.",
+      "exampleMeaning": "I like to go for a walk in the park in the afternoon."
+    },
+    {
+      "word": "fazer exercício",
+      "reading": "fah-ZEHR eh-zer-SEE-see-oo",
+      "meaning": "to exercise",
+      "example": "Faço exercício de manhã antes do café.",
+      "exampleMeaning": "I exercise in the morning before breakfast."
+    }
+  ],
+  "exercises": [
+    { "type": "match", "pairs": 5 },
+    {
+      "type": "fill-blank",
+      "items": [
+        { "sentence": "O ___ é a refeição mais importante.", "answer": "café da manhã", "hint": "first meal of the day" },
+        { "sentence": "___ às seis da manhã todos os dias.", "answer": "Acordo", "hint": "to open your eyes and start the day" },
+        { "sentence": "Preciso ___ um pouco depois do trabalho.", "answer": "descansar", "hint": "to relax and recover energy" },
+        { "sentence": "___ às onze da noite.", "answer": "Durmo", "hint": "to close your eyes at night" }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "items": [
+        { "question": "What does 'almoçar' mean?", "options": ["to have breakfast", "to have lunch", "to have dinner", "to snack"], "answer": 1 },
+        { "question": "What does 'passear' mean?", "options": ["to pass", "to go for a walk", "to run", "to drive"], "answer": 1 },
+        { "question": "What does 'pegar o ônibus' mean?", "options": ["to drive a car", "to walk", "to take the bus", "to ride a bike"], "answer": 2 }
+      ]
+    }
+  ]
+}

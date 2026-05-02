@@ -1,0 +1,34 @@
+{
+  "id": "time-routine",
+  "words": [
+    { "word": "hora", "reading": "oh-rah", "meaning": "hour / time", "example": "Que horas são?", "exampleMeaning": "What time is it?" },
+    { "word": "minuto", "reading": "mee-noo-too", "meaning": "minute", "example": "Espere cinco minutos, por favor.", "exampleMeaning": "Wait five minutes, please." },
+    { "word": "manhã", "reading": "mahn-yahng", "meaning": "morning", "example": "Eu corro toda manhã no parque.", "exampleMeaning": "I run every morning in the park." },
+    { "word": "tarde", "reading": "tar-jee", "meaning": "afternoon", "example": "À tarde eu estudo português.", "exampleMeaning": "In the afternoon I study Portuguese." },
+    { "word": "noite", "reading": "noy-chee", "meaning": "night / evening", "example": "À noite eu gosto de ler.", "exampleMeaning": "At night I like to read." },
+    { "word": "acordar", "reading": "ah-kor-dar", "meaning": "to wake up", "example": "Eu acordo às seis da manhã.", "exampleMeaning": "I wake up at six in the morning." },
+    { "word": "levantar", "reading": "leh-vahn-tar", "meaning": "to get up", "example": "É difícil levantar cedo no inverno.", "exampleMeaning": "It's hard to get up early in winter." },
+    { "word": "tomar banho", "reading": "toh-mar bahn-yoo", "meaning": "to take a shower", "example": "Eu tomo banho antes do café.", "exampleMeaning": "I take a shower before breakfast." },
+    { "word": "café da manhã", "reading": "kah-feh dah mahn-yahng", "meaning": "breakfast", "example": "O café da manhã é a refeição mais importante.", "exampleMeaning": "Breakfast is the most important meal." },
+    { "word": "almoço", "reading": "ahw-moh-soo", "meaning": "lunch", "example": "O almoço é servido ao meio-dia.", "exampleMeaning": "Lunch is served at noon." },
+    { "word": "jantar", "reading": "zhahn-tar", "meaning": "dinner", "example": "O jantar é às oito da noite.", "exampleMeaning": "Dinner is at eight in the evening." },
+    { "word": "deitar", "reading": "day-tar", "meaning": "to lie down / to go to bed", "example": "Eu me deito às dez da noite.", "exampleMeaning": "I go to bed at ten at night." },
+    { "word": "cedo", "reading": "seh-doo", "meaning": "early", "example": "Eu cheguei cedo ao trabalho.", "exampleMeaning": "I arrived early at work." },
+    { "word": "tarde", "reading": "tar-jee", "meaning": "late", "example": "Ele chegou tarde para a reunião.", "exampleMeaning": "He arrived late for the meeting." },
+    { "word": "sempre", "reading": "sem-pree", "meaning": "always", "example": "Eu sempre tomo café de manhã.", "exampleMeaning": "I always have coffee in the morning." },
+    { "word": "nunca", "reading": "noon-kah", "meaning": "never", "example": "Ele nunca chega atrasado.", "exampleMeaning": "He never arrives late." }
+  ],
+  "exercises": [
+    { "type": "match", "pairs": 5 },
+    { "type": "fill-blank", "items": [
+      { "sentence": "Eu ___ às seis da manhã.", "answer": "acordo", "hint": "to wake up (1st person)" },
+      { "sentence": "O ___ é servido ao meio-dia.", "answer": "almoço", "hint": "lunch" },
+      { "sentence": "Eu ___ tomo café de manhã.", "answer": "sempre", "hint": "always" }
+    ]},
+    { "type": "multiple-choice", "items": [
+      { "question": "What does 'café da manhã' mean?", "options": ["lunch", "breakfast", "dinner", "coffee"], "answer": 1 },
+      { "question": "How do you say 'to take a shower' in Portuguese?", "options": ["deitar", "levantar", "tomar banho", "acordar"], "answer": 2 },
+      { "question": "What does 'nunca' mean?", "options": ["always", "sometimes", "early", "never"], "answer": 3 }
+    ]}
+  ]
+}

@@ -1,0 +1,136 @@
+{
+  "id": "clothing",
+  "words": [
+    {
+      "word": "camisa",
+      "reading": "kah-MEE-zah",
+      "meaning": "shirt",
+      "example": "Essa camisa combina com a calça.",
+      "exampleMeaning": "This shirt matches the pants."
+    },
+    {
+      "word": "calça",
+      "reading": "KAW-sah",
+      "meaning": "pants / trousers",
+      "example": "Comprei uma calça jeans nova.",
+      "exampleMeaning": "I bought new jeans."
+    },
+    {
+      "word": "vestido",
+      "reading": "vehs-CHEE-doo",
+      "meaning": "dress",
+      "example": "Ela usou um vestido vermelho na festa.",
+      "exampleMeaning": "She wore a red dress to the party."
+    },
+    {
+      "word": "sapato",
+      "reading": "sah-PAH-too",
+      "meaning": "shoe",
+      "example": "Preciso comprar um sapato novo para o trabalho.",
+      "exampleMeaning": "I need to buy new shoes for work."
+    },
+    {
+      "word": "tênis",
+      "reading": "TEH-nees",
+      "meaning": "sneakers / tennis shoes",
+      "example": "Vou usar tênis para caminhar.",
+      "exampleMeaning": "I'll wear sneakers for walking."
+    },
+    {
+      "word": "saia",
+      "reading": "SAH-yah",
+      "meaning": "skirt",
+      "example": "A saia ficou muito bonita nela.",
+      "exampleMeaning": "The skirt looked very nice on her."
+    },
+    {
+      "word": "bermuda",
+      "reading": "ber-MOO-dah",
+      "meaning": "shorts",
+      "example": "No verão eu só uso bermuda.",
+      "exampleMeaning": "In summer I only wear shorts."
+    },
+    {
+      "word": "jaqueta",
+      "reading": "zhah-KEH-tah",
+      "meaning": "jacket",
+      "example": "Leve uma jaqueta porque vai esfriar.",
+      "exampleMeaning": "Bring a jacket because it's going to get cold."
+    },
+    {
+      "word": "boné",
+      "reading": "boh-NEH",
+      "meaning": "cap / baseball cap",
+      "example": "Ele sempre usa boné quando sai de casa.",
+      "exampleMeaning": "He always wears a cap when he leaves the house."
+    },
+    {
+      "word": "cinto",
+      "reading": "SEEN-too",
+      "meaning": "belt",
+      "example": "Esse cinto combina com o sapato.",
+      "exampleMeaning": "This belt matches the shoes."
+    },
+    {
+      "word": "meia",
+      "reading": "MAY-ah",
+      "meaning": "sock / stocking",
+      "example": "Cadê a outra meia? Só achei uma.",
+      "exampleMeaning": "Where's the other sock? I only found one."
+    },
+    {
+      "word": "cueca",
+      "reading": "koo-EH-kah",
+      "meaning": "men's underwear",
+      "example": "Preciso comprar cuecas novas.",
+      "exampleMeaning": "I need to buy new underwear."
+    },
+    {
+      "word": "roupa",
+      "reading": "HOH-pah",
+      "meaning": "clothes / clothing",
+      "example": "Vou lavar roupa no sábado.",
+      "exampleMeaning": "I'll do laundry on Saturday."
+    },
+    {
+      "word": "chapéu",
+      "reading": "shah-PEH-oo",
+      "meaning": "hat",
+      "example": "Use um chapéu para se proteger do sol.",
+      "exampleMeaning": "Wear a hat to protect yourself from the sun."
+    },
+    {
+      "word": "óculos",
+      "reading": "OH-koo-lohs",
+      "meaning": "glasses / eyeglasses",
+      "example": "Esqueci meus óculos em casa.",
+      "exampleMeaning": "I forgot my glasses at home."
+    },
+    {
+      "word": "chinelo",
+      "reading": "shee-NEH-loo",
+      "meaning": "flip-flops / sandals",
+      "example": "No Brasil, muita gente usa chinelo todo dia.",
+      "exampleMeaning": "In Brazil, many people wear flip-flops every day."
+    }
+  ],
+  "exercises": [
+    { "type": "match", "pairs": 5 },
+    {
+      "type": "fill-blank",
+      "items": [
+        { "sentence": "Leve uma ___ porque vai esfriar.", "answer": "jaqueta", "hint": "outerwear for cold weather" },
+        { "sentence": "Esqueci meus ___ em casa.", "answer": "óculos", "hint": "worn on the face to see better" },
+        { "sentence": "Vou lavar ___ no sábado.", "answer": "roupa", "hint": "general term for what you wear" }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "items": [
+        { "question": "What does 'chinelo' mean?", "options": ["hat", "belt", "flip-flops", "socks"], "answer": 2 },
+        { "question": "What does 'bermuda' mean?", "options": ["pants", "shorts", "skirt", "dress"], "answer": 1 },
+        { "question": "What does 'boné' mean?", "options": ["shoe", "cap", "jacket", "shirt"], "answer": 1 }
+      ]
+    }
+  ]
+}

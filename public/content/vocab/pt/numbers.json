@@ -1,0 +1,36 @@
+{
+  "id": "numbers",
+  "words": [
+    { "word": "zero", "reading": "zeh-roo", "meaning": "zero", "example": "O placar está zero a zero.", "exampleMeaning": "The score is zero to zero." },
+    { "word": "um", "reading": "oong", "meaning": "one", "example": "Eu tenho um irmão.", "exampleMeaning": "I have one brother." },
+    { "word": "dois", "reading": "doysh", "meaning": "two", "example": "Nós temos dois gatos.", "exampleMeaning": "We have two cats." },
+    { "word": "três", "reading": "trehsh", "meaning": "three", "example": "São três horas da tarde.", "exampleMeaning": "It's three o'clock in the afternoon." },
+    { "word": "quatro", "reading": "kwah-troo", "meaning": "four", "example": "A mesa tem quatro cadeiras.", "exampleMeaning": "The table has four chairs." },
+    { "word": "cinco", "reading": "seen-koo", "meaning": "five", "example": "Eu trabalho cinco dias por semana.", "exampleMeaning": "I work five days a week." },
+    { "word": "seis", "reading": "saysh", "meaning": "six", "example": "O jogo começa às seis.", "exampleMeaning": "The game starts at six." },
+    { "word": "sete", "reading": "seh-chee", "meaning": "seven", "example": "A semana tem sete dias.", "exampleMeaning": "The week has seven days." },
+    { "word": "oito", "reading": "oy-too", "meaning": "eight", "example": "Eu acordo às oito da manhã.", "exampleMeaning": "I wake up at eight in the morning." },
+    { "word": "nove", "reading": "noh-vee", "meaning": "nine", "example": "Faltam nove dias para o Natal.", "exampleMeaning": "There are nine days until Christmas." },
+    { "word": "dez", "reading": "dehz", "meaning": "ten", "example": "Eu comprei dez ovos.", "exampleMeaning": "I bought ten eggs." },
+    { "word": "vinte", "reading": "veen-chee", "meaning": "twenty", "example": "Ela tem vinte anos.", "exampleMeaning": "She is twenty years old." },
+    { "word": "trinta", "reading": "treen-tah", "meaning": "thirty", "example": "Trinta minutos é meia hora.", "exampleMeaning": "Thirty minutes is half an hour." },
+    { "word": "cinquenta", "reading": "seen-kwen-tah", "meaning": "fifty", "example": "A conta deu cinquenta reais.", "exampleMeaning": "The bill came to fifty reais." },
+    { "word": "cem", "reading": "seng", "meaning": "one hundred", "example": "Cem pessoas vieram à festa.", "exampleMeaning": "One hundred people came to the party." },
+    { "word": "mil", "reading": "meew", "meaning": "one thousand", "example": "O celular custou mil reais.", "exampleMeaning": "The phone cost one thousand reais." },
+    { "word": "primeiro", "reading": "pree-may-roo", "meaning": "first", "example": "Ele chegou em primeiro lugar.", "exampleMeaning": "He arrived in first place." },
+    { "word": "segundo", "reading": "seh-goon-doo", "meaning": "second", "example": "Moro no segundo andar.", "exampleMeaning": "I live on the second floor." }
+  ],
+  "exercises": [
+    { "type": "match", "pairs": 5 },
+    { "type": "fill-blank", "items": [
+      { "sentence": "Eu tenho ___ irmãos.", "answer": "dois", "hint": "two" },
+      { "sentence": "A semana tem ___ dias.", "answer": "sete", "hint": "seven" },
+      { "sentence": "Ela tem ___ anos.", "answer": "vinte", "hint": "twenty" }
+    ]},
+    { "type": "multiple-choice", "items": [
+      { "question": "What number is 'cinco'?", "options": ["three", "four", "five", "six"], "answer": 2 },
+      { "question": "How do you say 'one hundred' in Portuguese?", "options": ["mil", "cem", "dez", "cinquenta"], "answer": 1 },
+      { "question": "What does 'primeiro' mean?", "options": ["second", "third", "last", "first"], "answer": 3 }
+    ]}
+  ]
+}

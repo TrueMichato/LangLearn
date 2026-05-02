@@ -1,0 +1,34 @@
+{
+  "id": "animals",
+  "words": [
+    { "word": "cachorro", "reading": "kah-shoh-hoo", "meaning": "dog", "example": "O cachorro está brincando no quintal.", "exampleMeaning": "The dog is playing in the yard." },
+    { "word": "gato", "reading": "gah-too", "meaning": "cat", "example": "O gato dormiu em cima da cama.", "exampleMeaning": "The cat slept on top of the bed." },
+    { "word": "pássaro", "reading": "pah-sah-roo", "meaning": "bird", "example": "O pássaro está cantando na árvore.", "exampleMeaning": "The bird is singing in the tree." },
+    { "word": "peixe", "reading": "pay-shee", "meaning": "fish", "example": "O peixe nada no rio.", "exampleMeaning": "The fish swims in the river." },
+    { "word": "cavalo", "reading": "kah-vah-loo", "meaning": "horse", "example": "O cavalo corre muito rápido.", "exampleMeaning": "The horse runs very fast." },
+    { "word": "vaca", "reading": "vah-kah", "meaning": "cow", "example": "A vaca dá leite toda manhã.", "exampleMeaning": "The cow gives milk every morning." },
+    { "word": "porco", "reading": "por-koo", "meaning": "pig", "example": "O porco vive na fazenda.", "exampleMeaning": "The pig lives on the farm." },
+    { "word": "galinha", "reading": "gah-lee-nyah", "meaning": "chicken / hen", "example": "A galinha botou três ovos.", "exampleMeaning": "The hen laid three eggs." },
+    { "word": "macaco", "reading": "mah-kah-koo", "meaning": "monkey", "example": "O macaco subiu na árvore rapidinho.", "exampleMeaning": "The monkey climbed the tree quickly." },
+    { "word": "cobra", "reading": "koh-brah", "meaning": "snake", "example": "Cuidado! Tem uma cobra no caminho.", "exampleMeaning": "Careful! There is a snake on the path." },
+    { "word": "papagaio", "reading": "pah-pah-gah-yoo", "meaning": "parrot", "example": "O papagaio repete tudo que ouve.", "exampleMeaning": "The parrot repeats everything it hears." },
+    { "word": "tartaruga", "reading": "tar-tah-roo-gah", "meaning": "turtle", "example": "A tartaruga anda devagar.", "exampleMeaning": "The turtle walks slowly." },
+    { "word": "coelho", "reading": "kweh-lyoo", "meaning": "rabbit", "example": "O coelho comeu a cenoura.", "exampleMeaning": "The rabbit ate the carrot." },
+    { "word": "borboleta", "reading": "bor-boh-leh-tah", "meaning": "butterfly", "example": "A borboleta pousou na flor.", "exampleMeaning": "The butterfly landed on the flower." },
+    { "word": "jacaré", "reading": "zhah-kah-reh", "meaning": "alligator", "example": "O jacaré vive no Pantanal.", "exampleMeaning": "The alligator lives in the Pantanal." },
+    { "word": "onça", "reading": "on-sah", "meaning": "jaguar", "example": "A onça-pintada é um símbolo do Brasil.", "exampleMeaning": "The jaguar is a symbol of Brazil." }
+  ],
+  "exercises": [
+    { "type": "match", "pairs": 5 },
+    { "type": "fill-blank", "items": [
+      { "sentence": "O ___ está brincando no quintal.", "answer": "cachorro", "hint": "dog" },
+      { "sentence": "A ___ pousou na flor.", "answer": "borboleta", "hint": "butterfly" },
+      { "sentence": "O ___ repete tudo que ouve.", "answer": "papagaio", "hint": "parrot" }
+    ]},
+    { "type": "multiple-choice", "items": [
+      { "question": "What animal is 'gato'?", "options": ["dog", "bird", "cat", "horse"], "answer": 2 },
+      { "question": "What does 'jacaré' mean?", "options": ["parrot", "alligator", "snake", "monkey"], "answer": 1 },
+      { "question": "How do you say 'horse' in Portuguese?", "options": ["vaca", "porco", "galinha", "cavalo"], "answer": 3 }
+    ]}
+  ]
+}

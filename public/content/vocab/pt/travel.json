@@ -1,0 +1,34 @@
+{
+  "id": "travel",
+  "words": [
+    { "word": "viagem", "reading": "vee-ah-zheng", "meaning": "trip / travel", "example": "A viagem para Salvador foi incrível.", "exampleMeaning": "The trip to Salvador was incredible." },
+    { "word": "aeroporto", "reading": "ah-eh-roh-por-too", "meaning": "airport", "example": "Chegamos ao aeroporto duas horas antes do voo.", "exampleMeaning": "We arrived at the airport two hours before the flight." },
+    { "word": "hotel", "reading": "oh-tehw", "meaning": "hotel", "example": "O hotel fica perto da praia.", "exampleMeaning": "The hotel is close to the beach." },
+    { "word": "passaporte", "reading": "pah-sah-por-chee", "meaning": "passport", "example": "Não esqueça o passaporte em casa.", "exampleMeaning": "Don't forget the passport at home." },
+    { "word": "mala", "reading": "mah-lah", "meaning": "suitcase", "example": "Eu já arrumei a mala para a viagem.", "exampleMeaning": "I already packed the suitcase for the trip." },
+    { "word": "passagem", "reading": "pah-sah-zheng", "meaning": "ticket (travel)", "example": "As passagens de avião estão caras.", "exampleMeaning": "The plane tickets are expensive." },
+    { "word": "reserva", "reading": "heh-zer-vah", "meaning": "reservation", "example": "Eu fiz a reserva do hotel pela internet.", "exampleMeaning": "I made the hotel reservation online." },
+    { "word": "turista", "reading": "too-rees-tah", "meaning": "tourist", "example": "Muitos turistas visitam o Rio de Janeiro.", "exampleMeaning": "Many tourists visit Rio de Janeiro." },
+    { "word": "guia", "reading": "gee-ah", "meaning": "guide", "example": "O guia turístico conhece a cidade inteira.", "exampleMeaning": "The tour guide knows the entire city." },
+    { "word": "praia", "reading": "prah-ee-ah", "meaning": "beach", "example": "A praia de Copacabana é famosa no mundo.", "exampleMeaning": "Copacabana Beach is famous in the world." },
+    { "word": "montanha", "reading": "mon-tahn-yah", "meaning": "mountain", "example": "A montanha tem uma vista linda.", "exampleMeaning": "The mountain has a beautiful view." },
+    { "word": "museu", "reading": "moo-zeh-oo", "meaning": "museum", "example": "Nós visitamos o museu de arte.", "exampleMeaning": "We visited the art museum." },
+    { "word": "restaurante", "reading": "hesh-tow-rahn-chee", "meaning": "restaurant", "example": "Vamos jantar naquele restaurante.", "exampleMeaning": "Let's have dinner at that restaurant." },
+    { "word": "mapa", "reading": "mah-pah", "meaning": "map", "example": "Olhe no mapa para encontrar o caminho.", "exampleMeaning": "Look at the map to find the way." },
+    { "word": "câmbio", "reading": "kahm-bee-oo", "meaning": "currency exchange", "example": "Preciso trocar dólares na casa de câmbio.", "exampleMeaning": "I need to exchange dollars at the currency exchange." },
+    { "word": "voo", "reading": "voh-oo", "meaning": "flight", "example": "O voo dura quatro horas.", "exampleMeaning": "The flight lasts four hours." }
+  ],
+  "exercises": [
+    { "type": "match", "pairs": 5 },
+    { "type": "fill-blank", "items": [
+      { "sentence": "Não esqueça o ___ em casa.", "answer": "passaporte", "hint": "passport" },
+      { "sentence": "Eu já arrumei a ___ para a viagem.", "answer": "mala", "hint": "suitcase" },
+      { "sentence": "Eu fiz a ___ do hotel pela internet.", "answer": "reserva", "hint": "reservation" }
+    ]},
+    { "type": "multiple-choice", "items": [
+      { "question": "What does 'viagem' mean?", "options": ["flight", "trip", "ticket", "hotel"], "answer": 1 },
+      { "question": "How do you say 'beach' in Portuguese?", "options": ["montanha", "museu", "praia", "mapa"], "answer": 2 },
+      { "question": "What is 'câmbio'?", "options": ["ticket", "passport", "suitcase", "currency exchange"], "answer": 3 }
+    ]}
+  ]
+}

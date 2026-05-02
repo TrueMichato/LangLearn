@@ -1,0 +1,34 @@
+{
+  "id": "transport",
+  "words": [
+    { "word": "ônibus", "reading": "oh-nee-boosh", "meaning": "bus", "example": "Eu pego o ônibus para ir ao trabalho.", "exampleMeaning": "I take the bus to go to work." },
+    { "word": "carro", "reading": "kah-hoo", "meaning": "car", "example": "O carro dele é vermelho.", "exampleMeaning": "His car is red." },
+    { "word": "metrô", "reading": "meh-troh", "meaning": "subway / metro", "example": "O metrô é o transporte mais rápido.", "exampleMeaning": "The subway is the fastest transportation." },
+    { "word": "avião", "reading": "ah-vee-ahng", "meaning": "airplane", "example": "O avião decolou às oito horas.", "exampleMeaning": "The airplane took off at eight o'clock." },
+    { "word": "trem", "reading": "treng", "meaning": "train", "example": "O trem para São Paulo sai às seis.", "exampleMeaning": "The train to São Paulo leaves at six." },
+    { "word": "bicicleta", "reading": "bee-see-kleh-tah", "meaning": "bicycle", "example": "Eu vou de bicicleta para a escola.", "exampleMeaning": "I go to school by bicycle." },
+    { "word": "táxi", "reading": "tah-ksee", "meaning": "taxi", "example": "Vamos pegar um táxi para o hotel.", "exampleMeaning": "Let's take a taxi to the hotel." },
+    { "word": "motorista", "reading": "moh-toh-rees-tah", "meaning": "driver", "example": "O motorista do ônibus é muito simpático.", "exampleMeaning": "The bus driver is very friendly." },
+    { "word": "passageiro", "reading": "pah-sah-zhay-roo", "meaning": "passenger", "example": "O avião leva trezentos passageiros.", "exampleMeaning": "The airplane carries three hundred passengers." },
+    { "word": "parada", "reading": "pah-rah-dah", "meaning": "stop (bus stop)", "example": "A parada de ônibus é na esquina.", "exampleMeaning": "The bus stop is at the corner." },
+    { "word": "estação", "reading": "esh-tah-sahng", "meaning": "station", "example": "A estação de trem fica perto daqui.", "exampleMeaning": "The train station is near here." },
+    { "word": "rua", "reading": "hoo-ah", "meaning": "street", "example": "Eu moro na Rua das Flores.", "exampleMeaning": "I live on Flores Street." },
+    { "word": "avenida", "reading": "ah-veh-nee-dah", "meaning": "avenue", "example": "A Avenida Paulista é muito famosa.", "exampleMeaning": "Paulista Avenue is very famous." },
+    { "word": "semáforo", "reading": "seh-mah-foh-roo", "meaning": "traffic light", "example": "Pare no semáforo vermelho.", "exampleMeaning": "Stop at the red traffic light." },
+    { "word": "estacionamento", "reading": "esh-tah-see-oh-nah-men-too", "meaning": "parking lot", "example": "O estacionamento está cheio.", "exampleMeaning": "The parking lot is full." },
+    { "word": "trânsito", "reading": "trahn-zee-too", "meaning": "traffic", "example": "O trânsito em São Paulo é terrível.", "exampleMeaning": "The traffic in São Paulo is terrible." }
+  ],
+  "exercises": [
+    { "type": "match", "pairs": 5 },
+    { "type": "fill-blank", "items": [
+      { "sentence": "Eu pego o ___ para ir ao trabalho.", "answer": "ônibus", "hint": "bus" },
+      { "sentence": "O ___ em São Paulo é terrível.", "answer": "trânsito", "hint": "traffic" },
+      { "sentence": "Pare no ___ vermelho.", "answer": "semáforo", "hint": "traffic light" }
+    ]},
+    { "type": "multiple-choice", "items": [
+      { "question": "What does 'metrô' mean?", "options": ["bus", "subway", "train", "taxi"], "answer": 1 },
+      { "question": "How do you say 'airplane' in Portuguese?", "options": ["trem", "carro", "avião", "bicicleta"], "answer": 2 },
+      { "question": "What is 'estação'?", "options": ["street", "parking lot", "avenue", "station"], "answer": 3 }
+    ]}
+  ]
+}
