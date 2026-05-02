@@ -33,5 +33,8 @@
   { "id": "futuro-subjuntivo", "title": "Future Subjunctive (Futuro do Subjuntivo)", "order": 32 },
   { "id": "advanced-prepositions", "title": "Advanced Prepositions & Conjunctions", "order": 33 },
   { "id": "brazilian-vs-european", "title": "Brazilian vs European Portuguese", "order": 34 },
-  { "id": "register-formality", "title": "Register & Formality (você/tu, formal writing)", "order": 35 }
+  { "id": "register-formality", "title": "Register & Formality (você/tu, formal writing)", "order": 35 },
+  { "id": "adverbs", "title": "Adverbs (Advérbios)", "order": 36 },
+  { "id": "negation", "title": "Negation Patterns (Padrões de Negação)", "order": 37 },
+  { "id": "cognates", "title": "English-Portuguese Cognates & False Friends", "order": 38 }
 ]

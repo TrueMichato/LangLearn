@@ -38,5 +38,6 @@
   { "id": "celebrations", "title": "Festivals & Celebrations", "order": 37, "wordCount": 16, "level": "intermediate" },
   { "id": "daily-routines", "title": "Daily Routines & Habits", "order": 38, "wordCount": 16, "level": "beginner" },
   { "id": "opinions", "title": "Opinions & Discussion", "order": 39, "wordCount": 16, "level": "intermediate" },
-  { "id": "emergency", "title": "Emergency & Safety", "order": 40, "wordCount": 16, "level": "intermediate" }
+  { "id": "emergency", "title": "Emergency & Safety", "order": 40, "wordCount": 16, "level": "intermediate" },
+  { "id": "cognates", "title": "Cognates & False Friends", "order": 41, "wordCount": 16, "level": "beginner" }
 ]

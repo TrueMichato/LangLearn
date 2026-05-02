@@ -1,0 +1,36 @@
+{
+  "id": "cognates",
+  "words": [
+    { "word": "universidade", "reading": "oo-nee-vehr-see-dah-jee", "meaning": "university", "example": "Eu estudo na universidade federal.", "exampleMeaning": "I study at the federal university." },
+    { "word": "telefone", "reading": "teh-leh-foh-nee", "meaning": "telephone", "example": "O meu telefone está tocando.", "exampleMeaning": "My telephone is ringing." },
+    { "word": "hospital", "reading": "osh-pee-taw", "meaning": "hospital", "example": "Ele foi levado ao hospital.", "exampleMeaning": "He was taken to the hospital." },
+    { "word": "problema", "reading": "proh-bleh-mah", "meaning": "problem", "example": "Não tem problema nenhum.", "exampleMeaning": "There's no problem at all." },
+    { "word": "música", "reading": "moo-zee-kah", "meaning": "music", "example": "Eu adoro música brasileira.", "exampleMeaning": "I love Brazilian music." },
+    { "word": "restaurante", "reading": "heh-stow-rahn-chee", "meaning": "restaurant", "example": "Vamos jantar naquele restaurante.", "exampleMeaning": "Let's have dinner at that restaurant." },
+    { "word": "natural", "reading": "nah-too-raw", "meaning": "natural", "example": "O suco é natural, sem açúcar.", "exampleMeaning": "The juice is natural, without sugar." },
+    { "word": "famoso", "reading": "fah-moh-zoo", "meaning": "famous", "example": "O Rio de Janeiro é famoso no mundo todo.", "exampleMeaning": "Rio de Janeiro is famous all over the world." },
+    { "word": "pretender", "reading": "preh-ten-dehr", "meaning": "to intend / to plan (NOT to pretend)", "example": "Eu pretendo viajar no próximo mês.", "exampleMeaning": "I intend to travel next month." },
+    { "word": "puxar", "reading": "poo-shar", "meaning": "to pull (NOT to push)", "example": "Puxe a porta para abrir.", "exampleMeaning": "Pull the door to open it." },
+    { "word": "atualmente", "reading": "ah-too-aw-men-chee", "meaning": "currently / nowadays (NOT actually)", "example": "Atualmente, eu trabalho de casa.", "exampleMeaning": "Currently, I work from home." },
+    { "word": "parentes", "reading": "pah-ren-cheez", "meaning": "relatives (NOT parents)", "example": "Meus parentes moram no interior.", "exampleMeaning": "My relatives live in the countryside." },
+    { "word": "livraria", "reading": "lee-vrah-ree-ah", "meaning": "bookstore (NOT library)", "example": "Comprei esse livro na livraria.", "exampleMeaning": "I bought this book at the bookstore." },
+    { "word": "costume", "reading": "kosh-too-mee", "meaning": "habit / custom (NOT costume)", "example": "É costume tomar café depois do almoço.", "exampleMeaning": "It's a custom to have coffee after lunch." },
+    { "word": "sensível", "reading": "sen-see-vew", "meaning": "sensitive (NOT sensible)", "example": "Ela é muito sensível a críticas.", "exampleMeaning": "She is very sensitive to criticism." },
+    { "word": "fábrica", "reading": "fah-bree-kah", "meaning": "factory (NOT fabric)", "example": "A fábrica produz carros.", "exampleMeaning": "The factory produces cars." }
+  ],
+  "exercises": [
+    { "type": "match", "pairs": 5 },
+    { "type": "fill-blank", "items": [
+      { "sentence": "Eu ___ viajar para o Brasil. (I intend to...)", "answer": "pretendo", "hint": "false friend: looks like 'pretend'" },
+      { "sentence": "___ a porta, não empurre! (Pull the door)", "answer": "Puxe", "hint": "false friend: looks like 'push'" },
+      { "sentence": "Comprei um livro na ___. (bookstore)", "answer": "livraria", "hint": "false friend: looks like 'library'" },
+      { "sentence": "A ___ brasileira é famosa. (music)", "answer": "música", "hint": "true cognate from English" }
+    ]},
+    { "type": "multiple-choice", "items": [
+      { "question": "What does 'parentes' mean?", "options": ["parents", "relatives", "partners", "patients"], "answer": 1 },
+      { "question": "What does 'fábrica' mean?", "options": ["fabric store", "factory", "fabrication", "fashion"], "answer": 1 },
+      { "question": "'Atualmente' means:", "options": ["actually", "currently", "automatically", "actively"], "answer": 1 },
+      { "question": "Which is a TRUE cognate (same meaning)?", "options": ["costume (costume)", "pretender (pretend)", "hospital (hospital)", "sensível (sensible)"], "answer": 2 }
+    ]}
+  ]
+}
