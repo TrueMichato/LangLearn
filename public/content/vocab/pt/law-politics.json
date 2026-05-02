@@ -1,0 +1,137 @@
+{
+  "id": "law-politics",
+  "words": [
+    {
+      "word": "lei",
+      "reading": "LAY",
+      "meaning": "law",
+      "example": "Essa lei foi aprovada pelo congresso.",
+      "exampleMeaning": "This law was approved by congress."
+    },
+    {
+      "word": "direito",
+      "reading": "jee-RAY-too",
+      "meaning": "right / law (field)",
+      "example": "Todo cidadão tem direito à educação.",
+      "exampleMeaning": "Every citizen has the right to education."
+    },
+    {
+      "word": "advogado",
+      "reading": "ad-voh-GAH-doo",
+      "meaning": "lawyer",
+      "example": "Preciso falar com meu advogado.",
+      "exampleMeaning": "I need to talk to my lawyer."
+    },
+    {
+      "word": "juiz",
+      "reading": "ZHOO-eez",
+      "meaning": "judge",
+      "example": "O juiz deu a sentença final.",
+      "exampleMeaning": "The judge gave the final sentence."
+    },
+    {
+      "word": "tribunal",
+      "reading": "tree-boo-NAW",
+      "meaning": "court / tribunal",
+      "example": "O caso vai ser julgado no tribunal.",
+      "exampleMeaning": "The case will be judged in court."
+    },
+    {
+      "word": "processo",
+      "reading": "proh-SEH-soo",
+      "meaning": "lawsuit / legal process",
+      "example": "Ela abriu um processo contra a empresa.",
+      "exampleMeaning": "She filed a lawsuit against the company."
+    },
+    {
+      "word": "votação",
+      "reading": "voh-tah-SAHW",
+      "meaning": "voting / vote",
+      "example": "A votação é obrigatória no Brasil.",
+      "exampleMeaning": "Voting is mandatory in Brazil."
+    },
+    {
+      "word": "eleição",
+      "reading": "eh-lay-SAHW",
+      "meaning": "election",
+      "example": "As eleições acontecem a cada quatro anos.",
+      "exampleMeaning": "Elections happen every four years."
+    },
+    {
+      "word": "presidente",
+      "reading": "preh-zee-DEN-chee",
+      "meaning": "president",
+      "example": "O presidente fez um discurso na televisão.",
+      "exampleMeaning": "The president gave a speech on television."
+    },
+    {
+      "word": "deputado",
+      "reading": "deh-poo-TAH-doo",
+      "meaning": "congressman / representative",
+      "example": "O deputado votou a favor do projeto de lei.",
+      "exampleMeaning": "The congressman voted in favor of the bill."
+    },
+    {
+      "word": "senador",
+      "reading": "seh-nah-DOR",
+      "meaning": "senator",
+      "example": "O senador apresentou uma nova proposta.",
+      "exampleMeaning": "The senator presented a new proposal."
+    },
+    {
+      "word": "partido",
+      "reading": "par-CHEE-doo",
+      "meaning": "political party",
+      "example": "Ele é filiado a um partido político.",
+      "exampleMeaning": "He is affiliated with a political party."
+    },
+    {
+      "word": "constituição",
+      "reading": "kon-stee-too-ee-SAHW",
+      "meaning": "constitution",
+      "example": "A constituição garante os direitos dos cidadãos.",
+      "exampleMeaning": "The constitution guarantees citizens' rights."
+    },
+    {
+      "word": "imposto",
+      "reading": "eem-POHS-too",
+      "meaning": "tax",
+      "example": "Os impostos no Brasil são muito altos.",
+      "exampleMeaning": "Taxes in Brazil are very high."
+    },
+    {
+      "word": "cidadão",
+      "reading": "see-dah-DAHW",
+      "meaning": "citizen",
+      "example": "Todo cidadão tem deveres e direitos.",
+      "exampleMeaning": "Every citizen has duties and rights."
+    },
+    {
+      "word": "governo",
+      "reading": "goh-VEHR-noo",
+      "meaning": "government",
+      "example": "O governo anunciou novas medidas econômicas.",
+      "exampleMeaning": "The government announced new economic measures."
+    }
+  ],
+  "exercises": [
+    { "type": "match", "pairs": 5 },
+    {
+      "type": "fill-blank",
+      "items": [
+        { "sentence": "A ___ é obrigatória no Brasil.", "answer": "votação", "hint": "the act of choosing a candidate" },
+        { "sentence": "Preciso falar com meu ___.", "answer": "advogado", "hint": "professional who practices law" },
+        { "sentence": "Os ___ no Brasil são muito altos.", "answer": "impostos", "hint": "money paid to the government" },
+        { "sentence": "O ___ anunciou novas medidas econômicas.", "answer": "governo", "hint": "group that runs a country" }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "items": [
+        { "question": "What does 'juiz' mean?", "options": ["jury", "lawyer", "judge", "senator"], "answer": 2 },
+        { "question": "What does 'deputado' mean?", "options": ["senator", "congressman", "mayor", "governor"], "answer": 1 },
+        { "question": "What does 'constituição' mean?", "options": ["constitution", "institution", "contribution", "construction"], "answer": 0 }
+      ]
+    }
+  ]
+}

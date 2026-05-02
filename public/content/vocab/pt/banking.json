@@ -1,0 +1,136 @@
+{
+  "id": "banking",
+  "words": [
+    {
+      "word": "banco",
+      "reading": "BAN-koo",
+      "meaning": "bank",
+      "example": "Preciso ir ao banco pagar uma conta.",
+      "exampleMeaning": "I need to go to the bank to pay a bill."
+    },
+    {
+      "word": "conta",
+      "reading": "KON-tah",
+      "meaning": "account",
+      "example": "Abri uma conta no banco ontem.",
+      "exampleMeaning": "I opened a bank account yesterday."
+    },
+    {
+      "word": "poupança",
+      "reading": "poh-PAN-sah",
+      "meaning": "savings (account)",
+      "example": "Guardo dinheiro na poupança todo mês.",
+      "exampleMeaning": "I save money in my savings account every month."
+    },
+    {
+      "word": "investimento",
+      "reading": "een-vehs-chee-MEN-too",
+      "meaning": "investment",
+      "example": "Esse investimento rende bem.",
+      "exampleMeaning": "This investment pays well."
+    },
+    {
+      "word": "empréstimo",
+      "reading": "em-PREHS-chee-moo",
+      "meaning": "loan",
+      "example": "Pedi um empréstimo para comprar um carro.",
+      "exampleMeaning": "I took out a loan to buy a car."
+    },
+    {
+      "word": "juros",
+      "reading": "ZHOO-rohs",
+      "meaning": "interest (financial)",
+      "example": "Os juros do cartão de crédito são muito altos.",
+      "exampleMeaning": "Credit card interest rates are very high."
+    },
+    {
+      "word": "transferência",
+      "reading": "trans-feh-REN-see-ah",
+      "meaning": "transfer (banking)",
+      "example": "Fiz uma transferência para a conta dele.",
+      "exampleMeaning": "I made a transfer to his account."
+    },
+    {
+      "word": "depósito",
+      "reading": "deh-POH-zee-too",
+      "meaning": "deposit",
+      "example": "O depósito já foi realizado.",
+      "exampleMeaning": "The deposit has already been made."
+    },
+    {
+      "word": "saque",
+      "reading": "SAH-kee",
+      "meaning": "withdrawal",
+      "example": "Fiz um saque de duzentos reais.",
+      "exampleMeaning": "I made a withdrawal of two hundred reais."
+    },
+    {
+      "word": "PIX",
+      "reading": "PEEKS",
+      "meaning": "PIX (instant payment system)",
+      "example": "Me manda um PIX que eu te pago agora.",
+      "exampleMeaning": "Send me a PIX and I'll pay you now."
+    },
+    {
+      "word": "boleto",
+      "reading": "boh-LEH-too",
+      "meaning": "payment slip / bill",
+      "example": "Paguei o boleto antes do vencimento.",
+      "exampleMeaning": "I paid the bill before the due date."
+    },
+    {
+      "word": "fatura",
+      "reading": "fah-TOO-rah",
+      "meaning": "credit card statement / invoice",
+      "example": "A fatura do cartão chegou muito alta este mês.",
+      "exampleMeaning": "The credit card statement was very high this month."
+    },
+    {
+      "word": "crédito",
+      "reading": "KREH-jee-too",
+      "meaning": "credit",
+      "example": "Prefiro pagar no crédito em três vezes.",
+      "exampleMeaning": "I prefer to pay with credit in three installments."
+    },
+    {
+      "word": "débito",
+      "reading": "DEH-bee-too",
+      "meaning": "debit",
+      "example": "Vou pagar no débito.",
+      "exampleMeaning": "I'll pay with debit."
+    },
+    {
+      "word": "parcela",
+      "reading": "par-SEH-lah",
+      "meaning": "installment",
+      "example": "Dividi a compra em doze parcelas.",
+      "exampleMeaning": "I split the purchase into twelve installments."
+    },
+    {
+      "word": "câmbio",
+      "reading": "KAM-bee-oo",
+      "meaning": "exchange rate / currency exchange",
+      "example": "O câmbio do dólar está alto.",
+      "exampleMeaning": "The dollar exchange rate is high."
+    }
+  ],
+  "exercises": [
+    { "type": "match", "pairs": 5 },
+    {
+      "type": "fill-blank",
+      "items": [
+        { "sentence": "Guardo dinheiro na ___ todo mês.", "answer": "poupança", "hint": "type of account for saving money" },
+        { "sentence": "Dividi a compra em doze ___.", "answer": "parcelas", "hint": "monthly payment portions" },
+        { "sentence": "O ___ do dólar está alto.", "answer": "câmbio", "hint": "rate for converting currencies" }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "items": [
+        { "question": "What does 'boleto' mean?", "options": ["ticket", "payment slip", "receipt", "coupon"], "answer": 1 },
+        { "question": "What does 'saque' mean?", "options": ["deposit", "transfer", "withdrawal", "loan"], "answer": 2 },
+        { "question": "What is 'PIX'?", "options": ["a bank name", "a credit card", "an instant payment system", "an ATM"], "answer": 2 }
+      ]
+    }
+  ]
+}

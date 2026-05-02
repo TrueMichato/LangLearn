@@ -1,0 +1,137 @@
+{
+  "id": "cooking",
+  "words": [
+    {
+      "word": "receita",
+      "reading": "heh-SAY-tah",
+      "meaning": "recipe",
+      "example": "Achei uma receita de bolo de cenoura na internet.",
+      "exampleMeaning": "I found a carrot cake recipe on the internet."
+    },
+    {
+      "word": "ingrediente",
+      "reading": "een-greh-jee-EN-chee",
+      "meaning": "ingredient",
+      "example": "Precisamos comprar os ingredientes para o jantar.",
+      "exampleMeaning": "We need to buy the ingredients for dinner."
+    },
+    {
+      "word": "tempero",
+      "reading": "tem-PEH-roo",
+      "meaning": "seasoning / spice",
+      "example": "Essa comida precisa de mais tempero.",
+      "exampleMeaning": "This food needs more seasoning."
+    },
+    {
+      "word": "panela",
+      "reading": "pah-NEH-lah",
+      "meaning": "pot / saucepan",
+      "example": "Coloque a água na panela para ferver.",
+      "exampleMeaning": "Put the water in the pot to boil."
+    },
+    {
+      "word": "frigideira",
+      "reading": "free-zhee-DAY-rah",
+      "meaning": "frying pan",
+      "example": "Frite os ovos na frigideira.",
+      "exampleMeaning": "Fry the eggs in the frying pan."
+    },
+    {
+      "word": "forno",
+      "reading": "FOR-noo",
+      "meaning": "oven",
+      "example": "Preaqueça o forno a 180 graus.",
+      "exampleMeaning": "Preheat the oven to 180 degrees."
+    },
+    {
+      "word": "assar",
+      "reading": "ah-SAR",
+      "meaning": "to bake / to roast",
+      "example": "Vou assar um frango para o almoço.",
+      "exampleMeaning": "I'm going to roast a chicken for lunch."
+    },
+    {
+      "word": "fritar",
+      "reading": "free-TAR",
+      "meaning": "to fry",
+      "example": "Não é saudável fritar tudo em óleo.",
+      "exampleMeaning": "It's not healthy to fry everything in oil."
+    },
+    {
+      "word": "cozinhar",
+      "reading": "koh-zee-NYAR",
+      "meaning": "to cook",
+      "example": "Minha mãe adora cozinhar nos fins de semana.",
+      "exampleMeaning": "My mom loves to cook on weekends."
+    },
+    {
+      "word": "cortar",
+      "reading": "kor-TAR",
+      "meaning": "to cut / to chop",
+      "example": "Corte os legumes em pedaços pequenos.",
+      "exampleMeaning": "Cut the vegetables into small pieces."
+    },
+    {
+      "word": "misturar",
+      "reading": "mees-too-RAR",
+      "meaning": "to mix / to stir",
+      "example": "Misture todos os ingredientes na tigela.",
+      "exampleMeaning": "Mix all the ingredients in the bowl."
+    },
+    {
+      "word": "ferver",
+      "reading": "fer-VEHR",
+      "meaning": "to boil",
+      "example": "Espere a água ferver antes de colocar o macarrão.",
+      "exampleMeaning": "Wait for the water to boil before adding the pasta."
+    },
+    {
+      "word": "grelhar",
+      "reading": "greh-LYAR",
+      "meaning": "to grill",
+      "example": "Vamos grelhar a carne na churrasqueira.",
+      "exampleMeaning": "Let's grill the meat on the barbecue."
+    },
+    {
+      "word": "refogar",
+      "reading": "heh-foh-GAR",
+      "meaning": "to sauté",
+      "example": "Refogue a cebola e o alho antes de adicionar o tomate.",
+      "exampleMeaning": "Sauté the onion and garlic before adding the tomato."
+    },
+    {
+      "word": "massa",
+      "reading": "MAH-sah",
+      "meaning": "dough / pasta",
+      "example": "A massa do pão precisa descansar por uma hora.",
+      "exampleMeaning": "The bread dough needs to rest for one hour."
+    },
+    {
+      "word": "molho",
+      "reading": "MOH-lyoo",
+      "meaning": "sauce",
+      "example": "O molho de tomate está pronto.",
+      "exampleMeaning": "The tomato sauce is ready."
+    }
+  ],
+  "exercises": [
+    { "type": "match", "pairs": 5 },
+    {
+      "type": "fill-blank",
+      "items": [
+        { "sentence": "Preaqueça o ___ a 180 graus.", "answer": "forno", "hint": "appliance for baking" },
+        { "sentence": "Essa comida precisa de mais ___.", "answer": "tempero", "hint": "what adds flavor to food" },
+        { "sentence": "___ os legumes em pedaços pequenos.", "answer": "Corte", "hint": "use a knife to divide" },
+        { "sentence": "O ___ de tomate está pronto.", "answer": "molho", "hint": "liquid condiment for food" }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "items": [
+        { "question": "What does 'refogar' mean?", "options": ["to boil", "to grill", "to sauté", "to bake"], "answer": 2 },
+        { "question": "What does 'frigideira' mean?", "options": ["fridge", "frying pan", "oven", "pot"], "answer": 1 },
+        { "question": "What does 'massa' mean?", "options": ["meat", "dough / pasta", "sauce", "seasoning"], "answer": 1 }
+      ]
+    }
+  ]
+}

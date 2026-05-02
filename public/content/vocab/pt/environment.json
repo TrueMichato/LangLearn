@@ -1,0 +1,136 @@
+{
+  "id": "environment",
+  "words": [
+    {
+      "word": "meio ambiente",
+      "reading": "MAY-oo am-bee-EN-chee",
+      "meaning": "environment",
+      "example": "Precisamos proteger o meio ambiente.",
+      "exampleMeaning": "We need to protect the environment."
+    },
+    {
+      "word": "poluição",
+      "reading": "poh-loo-ee-SAHW",
+      "meaning": "pollution",
+      "example": "A poluição do ar é um problema grave.",
+      "exampleMeaning": "Air pollution is a serious problem."
+    },
+    {
+      "word": "reciclagem",
+      "reading": "heh-see-KLAH-zheem",
+      "meaning": "recycling",
+      "example": "A reciclagem ajuda a reduzir o lixo.",
+      "exampleMeaning": "Recycling helps reduce waste."
+    },
+    {
+      "word": "desmatamento",
+      "reading": "dehs-mah-tah-MEN-too",
+      "meaning": "deforestation",
+      "example": "O desmatamento na Amazônia preocupa o mundo.",
+      "exampleMeaning": "Deforestation in the Amazon worries the world."
+    },
+    {
+      "word": "sustentável",
+      "reading": "soos-ten-TAH-vew",
+      "meaning": "sustainable",
+      "example": "Precisamos de um desenvolvimento sustentável.",
+      "exampleMeaning": "We need sustainable development."
+    },
+    {
+      "word": "aquecimento global",
+      "reading": "ah-keh-see-MEN-too gloh-BAW",
+      "meaning": "global warming",
+      "example": "O aquecimento global afeta todo o planeta.",
+      "exampleMeaning": "Global warming affects the entire planet."
+    },
+    {
+      "word": "energia renovável",
+      "reading": "eh-ner-ZHEE-ah heh-noh-VAH-vew",
+      "meaning": "renewable energy",
+      "example": "O Brasil investe em energia renovável.",
+      "exampleMeaning": "Brazil invests in renewable energy."
+    },
+    {
+      "word": "fauna",
+      "reading": "FAW-nah",
+      "meaning": "fauna / animal life",
+      "example": "A fauna brasileira é muito diversa.",
+      "exampleMeaning": "Brazilian fauna is very diverse."
+    },
+    {
+      "word": "flora",
+      "reading": "FLOH-rah",
+      "meaning": "flora / plant life",
+      "example": "A flora do cerrado é única.",
+      "exampleMeaning": "The cerrado's flora is unique."
+    },
+    {
+      "word": "biodiversidade",
+      "reading": "bee-oh-jee-ver-see-DAH-jee",
+      "meaning": "biodiversity",
+      "example": "A biodiversidade da Amazônia é incrível.",
+      "exampleMeaning": "The Amazon's biodiversity is incredible."
+    },
+    {
+      "word": "Amazônia",
+      "reading": "ah-mah-ZOH-nee-ah",
+      "meaning": "Amazon (rainforest)",
+      "example": "A Amazônia é o pulmão do mundo.",
+      "exampleMeaning": "The Amazon is the lung of the world."
+    },
+    {
+      "word": "cerrado",
+      "reading": "seh-HAH-doo",
+      "meaning": "cerrado (Brazilian savanna)",
+      "example": "O cerrado ocupa grande parte do Brasil central.",
+      "exampleMeaning": "The cerrado covers a large part of central Brazil."
+    },
+    {
+      "word": "pantanal",
+      "reading": "pan-tah-NAW",
+      "meaning": "Pantanal (wetlands)",
+      "example": "O Pantanal é a maior área úmida do mundo.",
+      "exampleMeaning": "The Pantanal is the largest wetland in the world."
+    },
+    {
+      "word": "lixo",
+      "reading": "LEE-shoo",
+      "meaning": "trash / garbage",
+      "example": "Não jogue lixo no chão.",
+      "exampleMeaning": "Don't throw trash on the ground."
+    },
+    {
+      "word": "reflorestamento",
+      "reading": "heh-floh-rehs-tah-MEN-too",
+      "meaning": "reforestation",
+      "example": "O projeto de reflorestamento plantou mil árvores.",
+      "exampleMeaning": "The reforestation project planted a thousand trees."
+    },
+    {
+      "word": "preservação",
+      "reading": "preh-zer-vah-SAHW",
+      "meaning": "preservation / conservation",
+      "example": "A preservação da natureza é responsabilidade de todos.",
+      "exampleMeaning": "The preservation of nature is everyone's responsibility."
+    }
+  ],
+  "exercises": [
+    { "type": "match", "pairs": 5 },
+    {
+      "type": "fill-blank",
+      "items": [
+        { "sentence": "O ___ na Amazônia preocupa o mundo.", "answer": "desmatamento", "hint": "clearing of forests" },
+        { "sentence": "A ___ ajuda a reduzir o lixo.", "answer": "reciclagem", "hint": "reusing materials instead of discarding" },
+        { "sentence": "Não jogue ___ no chão.", "answer": "lixo", "hint": "waste, garbage" }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "items": [
+        { "question": "What does 'sustentável' mean?", "options": ["substantial", "sustainable", "supportive", "sufficient"], "answer": 1 },
+        { "question": "What is the 'Pantanal'?", "options": ["a mountain range", "a desert", "a wetland", "a river"], "answer": 2 },
+        { "question": "What does 'poluição' mean?", "options": ["population", "pollution", "policy", "position"], "answer": 1 }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,137 @@
+{
+  "id": "emergency",
+  "words": [
+    {
+      "word": "emergência",
+      "reading": "eh-mer-ZHEHN-see-ah",
+      "meaning": "emergency",
+      "example": "Ligue para o número de emergência.",
+      "exampleMeaning": "Call the emergency number."
+    },
+    {
+      "word": "socorro",
+      "reading": "soh-KOH-hoo",
+      "meaning": "help! / rescue",
+      "example": "Socorro! Alguém me ajude!",
+      "exampleMeaning": "Help! Somebody help me!"
+    },
+    {
+      "word": "bombeiro",
+      "reading": "bom-BAY-roo",
+      "meaning": "firefighter",
+      "example": "Os bombeiros apagaram o incêndio rapidamente.",
+      "exampleMeaning": "The firefighters put out the fire quickly."
+    },
+    {
+      "word": "polícia",
+      "reading": "poh-LEE-see-ah",
+      "meaning": "police",
+      "example": "Chamei a polícia depois do assalto.",
+      "exampleMeaning": "I called the police after the robbery."
+    },
+    {
+      "word": "SAMU",
+      "reading": "SAH-moo",
+      "meaning": "SAMU (emergency medical service)",
+      "example": "O SAMU atende emergências pelo telefone 192.",
+      "exampleMeaning": "SAMU handles emergencies through phone number 192."
+    },
+    {
+      "word": "acidente",
+      "reading": "ah-see-DEN-chee",
+      "meaning": "accident",
+      "example": "Houve um acidente de trânsito na avenida.",
+      "exampleMeaning": "There was a traffic accident on the avenue."
+    },
+    {
+      "word": "incêndio",
+      "reading": "een-SEN-jee-oo",
+      "meaning": "fire (destructive)",
+      "example": "O incêndio destruiu o prédio inteiro.",
+      "exampleMeaning": "The fire destroyed the entire building."
+    },
+    {
+      "word": "assalto",
+      "reading": "ah-SAW-too",
+      "meaning": "robbery / mugging",
+      "example": "Ela foi vítima de um assalto no centro.",
+      "exampleMeaning": "She was a victim of a robbery downtown."
+    },
+    {
+      "word": "perigo",
+      "reading": "peh-REE-goo",
+      "meaning": "danger",
+      "example": "Cuidado! Há perigo de desabamento.",
+      "exampleMeaning": "Careful! There is danger of collapse."
+    },
+    {
+      "word": "primeiros socorros",
+      "reading": "pree-MAY-rohs soh-KOH-hohs",
+      "meaning": "first aid",
+      "example": "Todos deveriam aprender primeiros socorros.",
+      "exampleMeaning": "Everyone should learn first aid."
+    },
+    {
+      "word": "extintor",
+      "reading": "ehs-cheen-TOR",
+      "meaning": "fire extinguisher",
+      "example": "O extintor está no corredor do andar.",
+      "exampleMeaning": "The fire extinguisher is in the hallway on this floor."
+    },
+    {
+      "word": "saída de emergência",
+      "reading": "sah-EE-dah jee eh-mer-ZHEHN-see-ah",
+      "meaning": "emergency exit",
+      "example": "A saída de emergência fica no final do corredor.",
+      "exampleMeaning": "The emergency exit is at the end of the hallway."
+    },
+    {
+      "word": "resgate",
+      "reading": "hehs-GAH-chee",
+      "meaning": "rescue",
+      "example": "A equipe de resgate salvou todas as vítimas.",
+      "exampleMeaning": "The rescue team saved all the victims."
+    },
+    {
+      "word": "urgente",
+      "reading": "oor-ZHEN-chee",
+      "meaning": "urgent",
+      "example": "A situação é urgente, precisamos agir agora.",
+      "exampleMeaning": "The situation is urgent, we need to act now."
+    },
+    {
+      "word": "ambulância",
+      "reading": "am-boo-LAN-see-ah",
+      "meaning": "ambulance",
+      "example": "A ambulância levou o paciente ao hospital.",
+      "exampleMeaning": "The ambulance took the patient to the hospital."
+    },
+    {
+      "word": "delegacia",
+      "reading": "deh-leh-gah-SEE-ah",
+      "meaning": "police station",
+      "example": "Fui à delegacia registrar um boletim de ocorrência.",
+      "exampleMeaning": "I went to the police station to file a report."
+    }
+  ],
+  "exercises": [
+    { "type": "match", "pairs": 5 },
+    {
+      "type": "fill-blank",
+      "items": [
+        { "sentence": "Os ___ apagaram o incêndio rapidamente.", "answer": "bombeiros", "hint": "professionals who fight fires" },
+        { "sentence": "Fui à ___ registrar um boletim de ocorrência.", "answer": "delegacia", "hint": "place where police work" },
+        { "sentence": "A situação é ___, precisamos agir agora.", "answer": "urgente", "hint": "requiring immediate action" },
+        { "sentence": "___! Alguém me ajude!", "answer": "Socorro", "hint": "cry for help" }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "items": [
+        { "question": "What does 'extintor' mean?", "options": ["exit sign", "fire extinguisher", "alarm", "hose"], "answer": 1 },
+        { "question": "What does 'assalto' mean?", "options": ["assault", "accident", "robbery", "fire"], "answer": 2 },
+        { "question": "What is 'SAMU'?", "options": ["police force", "fire department", "emergency medical service", "security agency"], "answer": 2 }
+      ]
+    }
+  ]
+}

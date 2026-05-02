@@ -1,0 +1,136 @@
+{
+  "id": "opinions",
+  "words": [
+    {
+      "word": "concordar",
+      "reading": "kon-kor-DAR",
+      "meaning": "to agree",
+      "example": "Concordo totalmente com você.",
+      "exampleMeaning": "I totally agree with you."
+    },
+    {
+      "word": "discordar",
+      "reading": "jees-kor-DAR",
+      "meaning": "to disagree",
+      "example": "Discordo dessa opinião.",
+      "exampleMeaning": "I disagree with that opinion."
+    },
+    {
+      "word": "achar",
+      "reading": "ah-SHAR",
+      "meaning": "to think / to believe (opinion)",
+      "example": "Eu acho que ele tem razão.",
+      "exampleMeaning": "I think he's right."
+    },
+    {
+      "word": "acreditar",
+      "reading": "ah-kreh-jee-TAR",
+      "meaning": "to believe",
+      "example": "Acredito que podemos melhorar.",
+      "exampleMeaning": "I believe we can improve."
+    },
+    {
+      "word": "opinar",
+      "reading": "oh-pee-NAR",
+      "meaning": "to give an opinion",
+      "example": "Todo mundo tem o direito de opinar.",
+      "exampleMeaning": "Everyone has the right to give an opinion."
+    },
+    {
+      "word": "argumentar",
+      "reading": "ar-goo-men-TAR",
+      "meaning": "to argue / to make a case",
+      "example": "Ele argumentou bem durante o debate.",
+      "exampleMeaning": "He argued well during the debate."
+    },
+    {
+      "word": "debater",
+      "reading": "deh-bah-TEHR",
+      "meaning": "to debate",
+      "example": "Precisamos debater esse assunto com calma.",
+      "exampleMeaning": "We need to debate this topic calmly."
+    },
+    {
+      "word": "ponto de vista",
+      "reading": "PON-too jee VEES-tah",
+      "meaning": "point of view",
+      "example": "Respeito o seu ponto de vista.",
+      "exampleMeaning": "I respect your point of view."
+    },
+    {
+      "word": "na minha opinião",
+      "reading": "nah MEE-nyah oh-pee-nee-AHWN",
+      "meaning": "in my opinion",
+      "example": "Na minha opinião, o filme foi ótimo.",
+      "exampleMeaning": "In my opinion, the movie was great."
+    },
+    {
+      "word": "com certeza",
+      "reading": "kom ser-TEH-zah",
+      "meaning": "certainly / for sure",
+      "example": "Com certeza vou à sua festa.",
+      "exampleMeaning": "I'll definitely go to your party."
+    },
+    {
+      "word": "talvez",
+      "reading": "taw-VEHZ",
+      "meaning": "maybe / perhaps",
+      "example": "Talvez eu vá ao cinema amanhã.",
+      "exampleMeaning": "Maybe I'll go to the movies tomorrow."
+    },
+    {
+      "word": "depende",
+      "reading": "deh-PEN-jee",
+      "meaning": "it depends",
+      "example": "Depende do horário que eu sair do trabalho.",
+      "exampleMeaning": "It depends on what time I leave work."
+    },
+    {
+      "word": "sem dúvida",
+      "reading": "sem DOO-vee-dah",
+      "meaning": "without a doubt",
+      "example": "Sem dúvida, este é o melhor restaurante da cidade.",
+      "exampleMeaning": "Without a doubt, this is the best restaurant in the city."
+    },
+    {
+      "word": "pelo contrário",
+      "reading": "PEH-loo kon-TRAH-ree-oo",
+      "meaning": "on the contrary",
+      "example": "Não estou cansado. Pelo contrário, estou cheio de energia.",
+      "exampleMeaning": "I'm not tired. On the contrary, I'm full of energy."
+    },
+    {
+      "word": "por outro lado",
+      "reading": "por OH-troo LAH-doo",
+      "meaning": "on the other hand",
+      "example": "O trabalho é difícil. Por outro lado, paga bem.",
+      "exampleMeaning": "The work is hard. On the other hand, it pays well."
+    },
+    {
+      "word": "de qualquer forma",
+      "reading": "jee kwaw-KEHR FOR-mah",
+      "meaning": "in any case / anyway",
+      "example": "De qualquer forma, agradeço pela ajuda.",
+      "exampleMeaning": "In any case, I appreciate the help."
+    }
+  ],
+  "exercises": [
+    { "type": "match", "pairs": 5 },
+    {
+      "type": "fill-blank",
+      "items": [
+        { "sentence": "___ totalmente com você.", "answer": "Concordo", "hint": "to have the same opinion as someone" },
+        { "sentence": "___ eu vá ao cinema amanhã.", "answer": "Talvez", "hint": "expressing uncertainty" },
+        { "sentence": "Respeito o seu ___.", "answer": "ponto de vista", "hint": "way of seeing things" }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "items": [
+        { "question": "What does 'discordar' mean?", "options": ["to discuss", "to discard", "to disagree", "to discover"], "answer": 2 },
+        { "question": "What does 'sem dúvida' mean?", "options": ["without doubt", "with difficulty", "sometimes", "maybe"], "answer": 0 },
+        { "question": "What does 'pelo contrário' mean?", "options": ["for example", "on the contrary", "in addition", "at least"], "answer": 1 }
+      ]
+    }
+  ]
+}

@@ -9,6 +9,7 @@ const LANG_VOICE_MAP: Record<string, string> = {
   de: 'de-DE',
   zh: 'zh-CN',
   ko: 'ko-KR',
+  pt: 'pt-BR',
 };
 
 export function speak(text: string, language: string, rateOverride?: number): void {
