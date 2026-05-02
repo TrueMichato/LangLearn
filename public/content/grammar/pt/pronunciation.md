@@ -131,6 +131,47 @@ These are digraphs (two letters making one sound):
 
 <!-- grammar-card: {"rule":"LH sounds like 'ly', NH sounds like 'ny'","hint":"These digraphs are unique to Portuguese","example":"fi___o (son), vi___o (wine)","answer":"filho, vinho","explanation":"LH produces a palatalized 'l' (like 'million') and NH produces a palatalized 'n' (like 'canyon')."} -->
 
+## Diphthongs
+
+Diphthongs are two vowels pronounced together as one syllable. Portuguese has many:
+
+### Common Diphthongs
+
+| Diphthong | Sound | Example |
+|-----------|-------|---------|
+| **ai** | like "eye" | **pai** (pah-ee) — father |
+| **ei** | like "ay" in "day" | **leite** (lay-chee) — milk |
+| **oi** | like "oy" in "toy" | **noite** (noy-chee) — night |
+| **au** | like "ow" in "cow" | **mau** (mow) — bad |
+| **eu** | "ay-oo" | **meu** (may-oo) — my |
+| **ou** | like "oh" | **outro** (oh-troo) — other |
+| **ão** | nasal "ow" | **não** (now̃) — no |
+| **ãe** | nasal "ay" | **mãe** (mah-eẽ̯) — mother |
+| **õe** | nasal "oy" | **põe** (poỹ̯) — puts |
+
+### Vowel Combinations (Hiatus)
+
+These are NOT diphthongs — each vowel is a separate syllable:
+
+- **ia** — "ee-ah": **dia** (jee-ah) — day
+- **io** — "ee-oh": **rio** (hee-oo) — river
+- **ua** — "oo-ah": **água** (ah-gwah) — water
+- **ue** — "oo-eh": **frequente** (freh-kwen-chee) — frequent
+
+### Digraphs (Two Letters, One Sound)
+
+| Digraph | Sound | Example |
+|---------|-------|---------|
+| **ch** | "sh" as in "shoe" | **chave** (shah-vee) — key |
+| **lh** | "ly" as in "million" | **trabalho** (trah-bah-lyoo) — work |
+| **nh** | "ny" as in "canyon" | **amanhã** (ah-mah-nyah) — tomorrow |
+| **rr** | "h" as in "hat" | **carro** (kah-hoo) — car |
+| **ss** | "s" as in "miss" | **pássaro** (pah-sah-roo) — bird |
+| **qu** | "k" before e/i | **que** (kee) — what |
+| **gu** | "g" before e/i | **guerra** (geh-hah) — war |
+
+<!-- quiz: {"type":"multiple-choice","question":"How is the diphthong 'ão' pronounced?","options":["Like 'ow' in 'cow' (nasal)","Like 'ah-oh'","Like 'ay-oh'","Like 'oo' in 'moon'"],"answer":0} -->
+
 ## Stress Rules
 
 Portuguese has predictable stress patterns:

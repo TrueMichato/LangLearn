@@ -174,6 +174,58 @@ const RESOURCES: Record<string, ResourceCategory[]> = {
           url: 'http://www.bbc.co.uk/portuguese',
           description: 'Current news articles in Portuguese — great for reading practice.',
         },
+        {
+          name: 'Fluent in 3 Months — Portuguese',
+          url: 'http://www.fluentin3months.com/portuguese-after-spanish/',
+          description: 'Practical tips for learning Portuguese, especially if you know Spanish.',
+        },
+      ],
+    },
+    {
+      label: 'Practice & Flashcards',
+      emoji: '🃏',
+      resources: [
+        {
+          name: 'Memrise — Basic Brazilian Portuguese',
+          url: 'http://www.memrise.com/course/78992/learn-basic-brazilian-portuguese/',
+          description: 'Free flashcard-based course for beginner Brazilian Portuguese.',
+        },
+        {
+          name: 'Memrise — 1000 Words of Portuguese',
+          url: 'http://www.memrise.com/course/593/1000-words-of-elementary-portuguese-brasil/',
+          description: '1,000 essential words of elementary Brazilian Portuguese.',
+        },
+        {
+          name: 'GLOSS',
+          url: 'https://gloss.dliflc.edu/',
+          description: 'Audio and transcript resources for Brazilian and European Portuguese.',
+        },
+      ],
+    },
+    {
+      label: 'Radio & TV',
+      emoji: '📺',
+      resources: [
+        {
+          name: 'Rádios EBC',
+          url: 'http://radios.ebc.com.br/sites/_radios/player_streamer/index.html?emissora=radio-nacional-do-rio-de-janeiro#',
+          description: 'Brazilian public radio stations — listen to live Portuguese broadcasts.',
+        },
+        {
+          name: 'TV Brasil',
+          url: 'http://www.ebc.com.br/tvbrasil-ao-vivo',
+          description: 'Brazilian public TV — live programming for immersion.',
+        },
+        {
+          name: 'RTP Play (Portugal)',
+          url: 'http://www.rtp.pt/play/direto/rtp1',
+          description: 'Portuguese TV/radio streaming — compare European Portuguese.',
+        },
+        {
+          name: 'Latin American Media',
+          url: 'http://lanic.utexas.edu/la/region/television/',
+          description: 'Directory of Latin American TV stations and media resources.',
+        },
       ],
     },
     {
