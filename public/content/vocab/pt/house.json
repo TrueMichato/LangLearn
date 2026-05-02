@@ -1,0 +1,34 @@
+{
+  "id": "house",
+  "words": [
+    { "word": "casa", "reading": "kah-zah", "meaning": "house / home", "example": "Minha casa fica perto do parque.", "exampleMeaning": "My house is near the park." },
+    { "word": "quarto", "reading": "kwar-too", "meaning": "bedroom / room", "example": "O quarto dele é muito organizado.", "exampleMeaning": "His bedroom is very organized." },
+    { "word": "cozinha", "reading": "koh-zee-nyah", "meaning": "kitchen", "example": "Minha mãe está na cozinha.", "exampleMeaning": "My mother is in the kitchen." },
+    { "word": "banheiro", "reading": "bahn-yay-roo", "meaning": "bathroom", "example": "O banheiro fica no final do corredor.", "exampleMeaning": "The bathroom is at the end of the hallway." },
+    { "word": "sala", "reading": "sah-lah", "meaning": "living room", "example": "Vamos assistir TV na sala.", "exampleMeaning": "Let's watch TV in the living room." },
+    { "word": "janela", "reading": "zhah-neh-lah", "meaning": "window", "example": "Abra a janela para entrar ar fresco.", "exampleMeaning": "Open the window to let in fresh air." },
+    { "word": "porta", "reading": "por-tah", "meaning": "door", "example": "Feche a porta, por favor.", "exampleMeaning": "Close the door, please." },
+    { "word": "mesa", "reading": "meh-zah", "meaning": "table", "example": "A comida está na mesa.", "exampleMeaning": "The food is on the table." },
+    { "word": "cadeira", "reading": "kah-day-rah", "meaning": "chair", "example": "Sente na cadeira e descanse.", "exampleMeaning": "Sit on the chair and rest." },
+    { "word": "cama", "reading": "kah-mah", "meaning": "bed", "example": "Eu arrumo a cama todo dia.", "exampleMeaning": "I make the bed every day." },
+    { "word": "sofá", "reading": "soh-fah", "meaning": "couch / sofa", "example": "Ele dormiu no sofá da sala.", "exampleMeaning": "He slept on the living room couch." },
+    { "word": "geladeira", "reading": "zheh-lah-day-rah", "meaning": "refrigerator", "example": "Tem leite na geladeira.", "exampleMeaning": "There's milk in the refrigerator." },
+    { "word": "fogão", "reading": "foh-gahng", "meaning": "stove", "example": "Cuidado, o fogão está quente.", "exampleMeaning": "Careful, the stove is hot." },
+    { "word": "escada", "reading": "esh-kah-dah", "meaning": "stairs / staircase", "example": "Suba a escada até o segundo andar.", "exampleMeaning": "Go up the stairs to the second floor." },
+    { "word": "telhado", "reading": "teh-lyah-doo", "meaning": "roof", "example": "O telhado precisa de conserto.", "exampleMeaning": "The roof needs repair." },
+    { "word": "jardim", "reading": "zhar-jeeng", "meaning": "garden", "example": "As flores do jardim estão lindas.", "exampleMeaning": "The flowers in the garden are beautiful." }
+  ],
+  "exercises": [
+    { "type": "match", "pairs": 5 },
+    { "type": "fill-blank", "items": [
+      { "sentence": "Minha mãe está na ___.", "answer": "cozinha", "hint": "kitchen" },
+      { "sentence": "Feche a ___, por favor.", "answer": "porta", "hint": "door" },
+      { "sentence": "A comida está na ___.", "answer": "mesa", "hint": "table" }
+    ]},
+    { "type": "multiple-choice", "items": [
+      { "question": "What does 'geladeira' mean?", "options": ["stove", "refrigerator", "table", "chair"], "answer": 1 },
+      { "question": "How do you say 'bedroom' in Portuguese?", "options": ["sala", "cozinha", "quarto", "banheiro"], "answer": 2 },
+      { "question": "What is 'jardim'?", "options": ["roof", "stairs", "window", "garden"], "answer": 3 }
+    ]}
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "id": "verbs",
+  "words": [
+    { "word": "falar", "reading": "fah-lar", "meaning": "to speak / to talk", "example": "Eu falo português e inglês.", "exampleMeaning": "I speak Portuguese and English." },
+    { "word": "comer", "reading": "koh-mer", "meaning": "to eat", "example": "Nós comemos juntos todo dia.", "exampleMeaning": "We eat together every day." },
+    { "word": "beber", "reading": "beh-ber", "meaning": "to drink", "example": "Você quer beber alguma coisa?", "exampleMeaning": "Do you want to drink something?" },
+    { "word": "dormir", "reading": "dor-meer", "meaning": "to sleep", "example": "Eu preciso dormir mais cedo.", "exampleMeaning": "I need to sleep earlier." },
+    { "word": "trabalhar", "reading": "trah-bah-lyar", "meaning": "to work", "example": "Ela trabalha em um hospital.", "exampleMeaning": "She works at a hospital." },
+    { "word": "estudar", "reading": "esh-too-dar", "meaning": "to study", "example": "Eu estudo português todos os dias.", "exampleMeaning": "I study Portuguese every day." },
+    { "word": "morar", "reading": "moh-rar", "meaning": "to live (reside)", "example": "Eu moro no Brasil há cinco anos.", "exampleMeaning": "I've lived in Brazil for five years." },
+    { "word": "gostar", "reading": "gohs-tar", "meaning": "to like", "example": "Eu gosto muito de música brasileira.", "exampleMeaning": "I really like Brazilian music." },
+    { "word": "precisar", "reading": "preh-see-zar", "meaning": "to need", "example": "Eu preciso comprar comida.", "exampleMeaning": "I need to buy food." },
+    { "word": "querer", "reading": "keh-rer", "meaning": "to want", "example": "Eu quero aprender a dançar samba.", "exampleMeaning": "I want to learn to dance samba." },
+    { "word": "poder", "reading": "poh-der", "meaning": "to be able to / can", "example": "Você pode me ajudar?", "exampleMeaning": "Can you help me?" },
+    { "word": "saber", "reading": "sah-ber", "meaning": "to know", "example": "Eu sei onde fica a padaria.", "exampleMeaning": "I know where the bakery is." },
+    { "word": "fazer", "reading": "fah-zer", "meaning": "to do / to make", "example": "O que você vai fazer hoje?", "exampleMeaning": "What are you going to do today?" },
+    { "word": "ir", "reading": "eer", "meaning": "to go", "example": "Eu vou ao supermercado agora.", "exampleMeaning": "I'm going to the supermarket now." },
+    { "word": "vir", "reading": "veer", "meaning": "to come", "example": "Venha aqui, por favor!", "exampleMeaning": "Come here, please!" },
+    { "word": "dar", "reading": "dar", "meaning": "to give", "example": "Ela deu um presente para a mãe.", "exampleMeaning": "She gave a gift to her mother." },
+    { "word": "pegar", "reading": "peh-gar", "meaning": "to grab / to take", "example": "Pega o ônibus na esquina.", "exampleMeaning": "Take the bus at the corner." }
+  ],
+  "exercises": [
+    { "type": "match", "pairs": 5 },
+    { "type": "fill-blank", "items": [
+      { "sentence": "Eu ___ português e inglês.", "answer": "falo", "hint": "to speak (1st person)" },
+      { "sentence": "Eu ___ ao supermercado agora.", "answer": "vou", "hint": "to go (1st person)" },
+      { "sentence": "Você ___ me ajudar?", "answer": "pode", "hint": "to be able to (3rd person)" },
+      { "sentence": "Eu ___ comprar comida.", "answer": "preciso", "hint": "to need (1st person)" }
+    ]},
+    { "type": "multiple-choice", "items": [
+      { "question": "What does 'comer' mean?", "options": ["to drink", "to eat", "to sleep", "to work"], "answer": 1 },
+      { "question": "How do you say 'to want' in Portuguese?", "options": ["poder", "saber", "querer", "gostar"], "answer": 2 },
+      { "question": "What does 'fazer' mean?", "options": ["to give", "to come", "to go", "to do / to make"], "answer": 3 }
+    ]}
+  ]
+}

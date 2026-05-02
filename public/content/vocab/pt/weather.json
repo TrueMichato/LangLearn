@@ -1,0 +1,34 @@
+{
+  "id": "weather",
+  "words": [
+    { "word": "sol", "reading": "sohw", "meaning": "sun", "example": "O sol está muito forte hoje.", "exampleMeaning": "The sun is very strong today." },
+    { "word": "chuva", "reading": "shoo-vah", "meaning": "rain", "example": "A chuva não para desde ontem.", "exampleMeaning": "The rain hasn't stopped since yesterday." },
+    { "word": "vento", "reading": "ven-too", "meaning": "wind", "example": "O vento está muito forte na praia.", "exampleMeaning": "The wind is very strong at the beach." },
+    { "word": "nuvem", "reading": "noo-veng", "meaning": "cloud", "example": "O céu está cheio de nuvens.", "exampleMeaning": "The sky is full of clouds." },
+    { "word": "neve", "reading": "neh-vee", "meaning": "snow", "example": "No sul do Brasil às vezes cai neve.", "exampleMeaning": "In the south of Brazil it sometimes snows." },
+    { "word": "calor", "reading": "kah-lor", "meaning": "heat / hot weather", "example": "Que calor! Vamos tomar um sorvete.", "exampleMeaning": "It's so hot! Let's have an ice cream." },
+    { "word": "frio", "reading": "free-oo", "meaning": "cold weather", "example": "Está fazendo muito frio hoje.", "exampleMeaning": "It's very cold today." },
+    { "word": "tempestade", "reading": "tem-pehs-tah-jee", "meaning": "storm", "example": "Vai ter tempestade à noite.", "exampleMeaning": "There will be a storm tonight." },
+    { "word": "trovão", "reading": "troh-vahng", "meaning": "thunder", "example": "O trovão assustou as crianças.", "exampleMeaning": "The thunder scared the children." },
+    { "word": "relâmpago", "reading": "heh-lahm-pah-goo", "meaning": "lightning", "example": "O relâmpago iluminou o céu.", "exampleMeaning": "The lightning lit up the sky." },
+    { "word": "úmido", "reading": "oo-mee-doo", "meaning": "humid", "example": "O clima no Rio é muito úmido.", "exampleMeaning": "The climate in Rio is very humid." },
+    { "word": "seco", "reading": "seh-koo", "meaning": "dry", "example": "O ar está muito seco em Brasília.", "exampleMeaning": "The air is very dry in Brasília." },
+    { "word": "nublado", "reading": "noo-blah-doo", "meaning": "cloudy", "example": "O dia está nublado, mas não vai chover.", "exampleMeaning": "The day is cloudy, but it won't rain." },
+    { "word": "ensolarado", "reading": "en-soh-lah-rah-doo", "meaning": "sunny", "example": "Que dia ensolarado e bonito!", "exampleMeaning": "What a sunny and beautiful day!" },
+    { "word": "chover", "reading": "shoh-ver", "meaning": "to rain", "example": "Vai chover à tarde, leve o guarda-chuva.", "exampleMeaning": "It's going to rain in the afternoon, take the umbrella." },
+    { "word": "nevar", "reading": "neh-var", "meaning": "to snow", "example": "Nunca nevou na minha cidade.", "exampleMeaning": "It has never snowed in my city." }
+  ],
+  "exercises": [
+    { "type": "match", "pairs": 5 },
+    { "type": "fill-blank", "items": [
+      { "sentence": "O ___ está muito forte hoje.", "answer": "sol", "hint": "sun" },
+      { "sentence": "Que ___! Vamos tomar um sorvete.", "answer": "calor", "hint": "heat" },
+      { "sentence": "Vai ___ à tarde, leve o guarda-chuva.", "answer": "chover", "hint": "to rain" }
+    ]},
+    { "type": "multiple-choice", "items": [
+      { "question": "What does 'chuva' mean?", "options": ["wind", "rain", "snow", "cloud"], "answer": 1 },
+      { "question": "How do you say 'cloudy' in Portuguese?", "options": ["ensolarado", "úmido", "nublado", "seco"], "answer": 2 },
+      { "question": "What is 'tempestade'?", "options": ["thunder", "lightning", "wind", "storm"], "answer": 3 }
+    ]}
+  ]
+}

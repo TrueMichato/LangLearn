@@ -1,0 +1,136 @@
+{
+  "id": "music-art",
+  "words": [
+    {
+      "word": "música",
+      "reading": "MOO-zee-kah",
+      "meaning": "music / song",
+      "example": "Adoro ouvir música enquanto trabalho.",
+      "exampleMeaning": "I love listening to music while I work."
+    },
+    {
+      "word": "canção",
+      "reading": "kan-SAHW",
+      "meaning": "song",
+      "example": "Essa canção é muito bonita.",
+      "exampleMeaning": "This song is very beautiful."
+    },
+    {
+      "word": "cantor",
+      "reading": "kan-TOR",
+      "meaning": "singer (male)",
+      "example": "O cantor fez um show incrível.",
+      "exampleMeaning": "The singer put on an incredible show."
+    },
+    {
+      "word": "violão",
+      "reading": "vee-oh-LAHW",
+      "meaning": "acoustic guitar",
+      "example": "Estou aprendendo a tocar violão.",
+      "exampleMeaning": "I'm learning to play acoustic guitar."
+    },
+    {
+      "word": "piano",
+      "reading": "pee-AH-noo",
+      "meaning": "piano",
+      "example": "Ela toca piano desde criança.",
+      "exampleMeaning": "She has played piano since childhood."
+    },
+    {
+      "word": "bateria",
+      "reading": "bah-teh-REE-ah",
+      "meaning": "drums (instrument)",
+      "example": "O baterista tocou bateria a noite toda.",
+      "exampleMeaning": "The drummer played drums all night."
+    },
+    {
+      "word": "show",
+      "reading": "SHOH",
+      "meaning": "show / concert",
+      "example": "Vamos ao show de samba no sábado.",
+      "exampleMeaning": "Let's go to the samba show on Saturday."
+    },
+    {
+      "word": "palco",
+      "reading": "PAW-koo",
+      "meaning": "stage",
+      "example": "Os músicos subiram ao palco às oito.",
+      "exampleMeaning": "The musicians went on stage at eight."
+    },
+    {
+      "word": "pintura",
+      "reading": "peen-TOO-rah",
+      "meaning": "painting",
+      "example": "Essa pintura foi feita por um artista local.",
+      "exampleMeaning": "This painting was made by a local artist."
+    },
+    {
+      "word": "escultura",
+      "reading": "ehs-koo-TOO-rah",
+      "meaning": "sculpture",
+      "example": "A escultura de bronze fica na praça central.",
+      "exampleMeaning": "The bronze sculpture is in the main square."
+    },
+    {
+      "word": "teatro",
+      "reading": "tee-AH-troo",
+      "meaning": "theater",
+      "example": "Fomos ao teatro assistir uma peça.",
+      "exampleMeaning": "We went to the theater to watch a play."
+    },
+    {
+      "word": "dança",
+      "reading": "DAN-sah",
+      "meaning": "dance",
+      "example": "A dança é uma forma de expressão artística.",
+      "exampleMeaning": "Dance is a form of artistic expression."
+    },
+    {
+      "word": "cinema",
+      "reading": "see-NEH-mah",
+      "meaning": "cinema / movies",
+      "example": "Vamos ao cinema hoje à noite?",
+      "exampleMeaning": "Shall we go to the movies tonight?"
+    },
+    {
+      "word": "artista",
+      "reading": "ar-CHEES-tah",
+      "meaning": "artist",
+      "example": "Ela é uma artista muito talentosa.",
+      "exampleMeaning": "She is a very talented artist."
+    },
+    {
+      "word": "museu",
+      "reading": "moo-ZEH-oo",
+      "meaning": "museum",
+      "example": "Visitamos o museu de arte moderna.",
+      "exampleMeaning": "We visited the modern art museum."
+    },
+    {
+      "word": "exposição",
+      "reading": "ehs-poh-zee-SAHW",
+      "meaning": "exhibition",
+      "example": "A exposição de fotografia está aberta até março.",
+      "exampleMeaning": "The photography exhibition is open until March."
+    }
+  ],
+  "exercises": [
+    { "type": "match", "pairs": 5 },
+    {
+      "type": "fill-blank",
+      "items": [
+        { "sentence": "Estou aprendendo a tocar ___.", "answer": "violão", "hint": "stringed instrument, acoustic" },
+        { "sentence": "Fomos ao ___ assistir uma peça.", "answer": "teatro", "hint": "place for live performances" },
+        { "sentence": "Visitamos o ___ de arte moderna.", "answer": "museu", "hint": "place that displays art and history" }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "items": [
+        { "question": "What does 'palco' mean?", "options": ["park", "stage", "painting", "museum"], "answer": 1 },
+        { "question": "What does 'exposição' mean?", "options": ["explosion", "exhibition", "expression", "exposure"], "answer": 1 },
+        { "question": "What does 'canção' mean?", "options": ["singer", "dance", "song", "concert"], "answer": 2 }
+      ]
+    }
+  ]
+}

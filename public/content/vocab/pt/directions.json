@@ -1,0 +1,136 @@
+{
+  "id": "directions",
+  "words": [
+    {
+      "word": "direita",
+      "reading": "jee-RAY-tah",
+      "meaning": "right",
+      "example": "Vire à direita no próximo semáforo.",
+      "exampleMeaning": "Turn right at the next traffic light."
+    },
+    {
+      "word": "esquerda",
+      "reading": "ehs-KEHR-dah",
+      "meaning": "left",
+      "example": "A padaria fica à esquerda.",
+      "exampleMeaning": "The bakery is on the left."
+    },
+    {
+      "word": "reto",
+      "reading": "HEH-too",
+      "meaning": "straight ahead",
+      "example": "Siga reto por duas quadras.",
+      "exampleMeaning": "Go straight for two blocks."
+    },
+    {
+      "word": "perto",
+      "reading": "PEHR-too",
+      "meaning": "near / close",
+      "example": "O supermercado fica perto da minha casa.",
+      "exampleMeaning": "The supermarket is near my house."
+    },
+    {
+      "word": "longe",
+      "reading": "LON-zhee",
+      "meaning": "far",
+      "example": "A estação de metrô é longe daqui?",
+      "exampleMeaning": "Is the subway station far from here?"
+    },
+    {
+      "word": "em frente",
+      "reading": "em FREN-chee",
+      "meaning": "in front of / across from",
+      "example": "O banco fica em frente ao parque.",
+      "exampleMeaning": "The bank is across from the park."
+    },
+    {
+      "word": "atrás",
+      "reading": "ah-TRAHS",
+      "meaning": "behind",
+      "example": "O estacionamento fica atrás do prédio.",
+      "exampleMeaning": "The parking lot is behind the building."
+    },
+    {
+      "word": "ao lado",
+      "reading": "aw LAH-doo",
+      "meaning": "next to / beside",
+      "example": "A farmácia fica ao lado do mercado.",
+      "exampleMeaning": "The pharmacy is next to the market."
+    },
+    {
+      "word": "entre",
+      "reading": "EN-tree",
+      "meaning": "between",
+      "example": "O restaurante fica entre o banco e a loja.",
+      "exampleMeaning": "The restaurant is between the bank and the store."
+    },
+    {
+      "word": "esquina",
+      "reading": "ehs-KEE-nah",
+      "meaning": "corner (street)",
+      "example": "A loja fica na esquina da rua.",
+      "exampleMeaning": "The store is on the street corner."
+    },
+    {
+      "word": "cruzamento",
+      "reading": "kroo-zah-MEN-too",
+      "meaning": "intersection / crossroads",
+      "example": "Cuidado no cruzamento, é perigoso.",
+      "exampleMeaning": "Be careful at the intersection, it's dangerous."
+    },
+    {
+      "word": "quadra",
+      "reading": "KWAH-drah",
+      "meaning": "block (city)",
+      "example": "Ande duas quadras e vire à direita.",
+      "exampleMeaning": "Walk two blocks and turn right."
+    },
+    {
+      "word": "endereço",
+      "reading": "en-deh-REH-soo",
+      "meaning": "address",
+      "example": "Qual é o seu endereço?",
+      "exampleMeaning": "What is your address?"
+    },
+    {
+      "word": "bairro",
+      "reading": "BAH-ee-hoo",
+      "meaning": "neighborhood",
+      "example": "Moro em um bairro tranquilo.",
+      "exampleMeaning": "I live in a quiet neighborhood."
+    },
+    {
+      "word": "centro",
+      "reading": "SEN-troo",
+      "meaning": "downtown / city center",
+      "example": "Vou ao centro fazer compras.",
+      "exampleMeaning": "I'm going downtown to shop."
+    },
+    {
+      "word": "periferia",
+      "reading": "peh-ree-feh-REE-ah",
+      "meaning": "outskirts / suburbs",
+      "example": "Muitas pessoas moram na periferia da cidade.",
+      "exampleMeaning": "Many people live on the outskirts of the city."
+    }
+  ],
+  "exercises": [
+    { "type": "match", "pairs": 5 },
+    {
+      "type": "fill-blank",
+      "items": [
+        { "sentence": "Vire à ___ no próximo semáforo.", "answer": "direita", "hint": "opposite of left" },
+        { "sentence": "Siga ___ por duas quadras.", "answer": "reto", "hint": "continue without turning" },
+        { "sentence": "Qual é o seu ___?", "answer": "endereço", "hint": "where you live, street and number" }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "items": [
+        { "question": "What does 'esquina' mean?", "options": ["block", "corner", "intersection", "square"], "answer": 1 },
+        { "question": "What does 'bairro' mean?", "options": ["building", "street", "neighborhood", "city"], "answer": 2 },
+        { "question": "What does 'atrás' mean?", "options": ["in front", "next to", "between", "behind"], "answer": 3 }
+      ]
+    }
+  ]
+}

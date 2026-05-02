@@ -1,0 +1,34 @@
+{
+  "id": "adjectives",
+  "words": [
+    { "word": "grande", "reading": "grahn-jee", "meaning": "big / large", "example": "A casa é muito grande.", "exampleMeaning": "The house is very big." },
+    { "word": "pequeno", "reading": "peh-keh-noo", "meaning": "small / little", "example": "O apartamento é pequeno, mas aconchegante.", "exampleMeaning": "The apartment is small but cozy." },
+    { "word": "bonito", "reading": "boh-nee-too", "meaning": "beautiful / handsome", "example": "Que lugar bonito!", "exampleMeaning": "What a beautiful place!" },
+    { "word": "feio", "reading": "fay-oo", "meaning": "ugly", "example": "Esse prédio é muito feio.", "exampleMeaning": "That building is very ugly." },
+    { "word": "bom", "reading": "bohng", "meaning": "good", "example": "A comida desse restaurante é muito boa.", "exampleMeaning": "The food at this restaurant is very good." },
+    { "word": "mau", "reading": "mahw", "meaning": "bad / evil", "example": "Ele não é mau, só está cansado.", "exampleMeaning": "He's not bad, just tired." },
+    { "word": "quente", "reading": "ken-chee", "meaning": "hot", "example": "O café está quente demais.", "exampleMeaning": "The coffee is too hot." },
+    { "word": "frio", "reading": "free-oo", "meaning": "cold", "example": "Hoje está muito frio lá fora.", "exampleMeaning": "Today it's very cold outside." },
+    { "word": "novo", "reading": "noh-voo", "meaning": "new / young", "example": "Comprei um celular novo.", "exampleMeaning": "I bought a new phone." },
+    { "word": "velho", "reading": "veh-lyoo", "meaning": "old", "example": "Esse carro é muito velho.", "exampleMeaning": "This car is very old." },
+    { "word": "rápido", "reading": "hah-pee-doo", "meaning": "fast", "example": "O trem é mais rápido que o ônibus.", "exampleMeaning": "The train is faster than the bus." },
+    { "word": "lento", "reading": "len-too", "meaning": "slow", "example": "A internet está muito lenta hoje.", "exampleMeaning": "The internet is very slow today." },
+    { "word": "fácil", "reading": "fah-seew", "meaning": "easy", "example": "Essa lição é bem fácil.", "exampleMeaning": "This lesson is quite easy." },
+    { "word": "difícil", "reading": "jee-fee-seew", "meaning": "difficult", "example": "A prova foi muito difícil.", "exampleMeaning": "The test was very difficult." },
+    { "word": "caro", "reading": "kah-roo", "meaning": "expensive", "example": "Esse restaurante é muito caro.", "exampleMeaning": "This restaurant is very expensive." },
+    { "word": "barato", "reading": "bah-rah-too", "meaning": "cheap", "example": "A feira tem frutas baratas.", "exampleMeaning": "The market has cheap fruit." }
+  ],
+  "exercises": [
+    { "type": "match", "pairs": 5 },
+    { "type": "fill-blank", "items": [
+      { "sentence": "A casa é muito ___.", "answer": "grande", "hint": "big" },
+      { "sentence": "O café está ___ demais.", "answer": "quente", "hint": "hot" },
+      { "sentence": "A prova foi muito ___.", "answer": "difícil", "hint": "difficult" }
+    ]},
+    { "type": "multiple-choice", "items": [
+      { "question": "What does 'barato' mean?", "options": ["expensive", "cheap", "big", "small"], "answer": 1 },
+      { "question": "What is the opposite of 'quente'?", "options": ["bom", "novo", "frio", "velho"], "answer": 2 },
+      { "question": "How do you say 'fast' in Portuguese?", "options": ["lento", "fácil", "difícil", "rápido"], "answer": 3 }
+    ]}
+  ]
+}

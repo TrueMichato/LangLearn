@@ -1,0 +1,137 @@
+{
+  "id": "technology",
+  "words": [
+    {
+      "word": "computador",
+      "reading": "kom-poo-tah-DOR",
+      "meaning": "computer",
+      "example": "Eu preciso do meu computador para trabalhar.",
+      "exampleMeaning": "I need my computer to work."
+    },
+    {
+      "word": "celular",
+      "reading": "seh-loo-LAR",
+      "meaning": "cell phone",
+      "example": "Meu celular está sem bateria.",
+      "exampleMeaning": "My cell phone is out of battery."
+    },
+    {
+      "word": "internet",
+      "reading": "een-ter-NEH-chee",
+      "meaning": "internet",
+      "example": "A internet está muito lenta hoje.",
+      "exampleMeaning": "The internet is very slow today."
+    },
+    {
+      "word": "aplicativo",
+      "reading": "ah-plee-kah-CHEE-voo",
+      "meaning": "app / application",
+      "example": "Baixei um aplicativo novo para estudar.",
+      "exampleMeaning": "I downloaded a new app to study."
+    },
+    {
+      "word": "site",
+      "reading": "SAI-chee",
+      "meaning": "website",
+      "example": "Esse site tem muitas informações úteis.",
+      "exampleMeaning": "This website has a lot of useful information."
+    },
+    {
+      "word": "e-mail",
+      "reading": "ee-MAY-oo",
+      "meaning": "email",
+      "example": "Você recebeu meu e-mail?",
+      "exampleMeaning": "Did you receive my email?"
+    },
+    {
+      "word": "senha",
+      "reading": "SEH-nyah",
+      "meaning": "password",
+      "example": "Esqueci minha senha do banco.",
+      "exampleMeaning": "I forgot my bank password."
+    },
+    {
+      "word": "tela",
+      "reading": "TEH-lah",
+      "meaning": "screen",
+      "example": "A tela do meu celular quebrou.",
+      "exampleMeaning": "My phone screen broke."
+    },
+    {
+      "word": "teclado",
+      "reading": "teh-KLAH-doo",
+      "meaning": "keyboard",
+      "example": "Comprei um teclado sem fio.",
+      "exampleMeaning": "I bought a wireless keyboard."
+    },
+    {
+      "word": "mouse",
+      "reading": "MAW-zee",
+      "meaning": "mouse (computer)",
+      "example": "O mouse parou de funcionar.",
+      "exampleMeaning": "The mouse stopped working."
+    },
+    {
+      "word": "rede social",
+      "reading": "HEH-jee soh-see-AW",
+      "meaning": "social media / social network",
+      "example": "Ele passa muito tempo nas redes sociais.",
+      "exampleMeaning": "He spends too much time on social media."
+    },
+    {
+      "word": "download",
+      "reading": "down-LOH-jee",
+      "meaning": "download",
+      "example": "O download do arquivo demorou muito.",
+      "exampleMeaning": "The file download took a long time."
+    },
+    {
+      "word": "wifi",
+      "reading": "WAI-fai",
+      "meaning": "wifi",
+      "example": "Qual é a senha do wifi?",
+      "exampleMeaning": "What is the wifi password?"
+    },
+    {
+      "word": "bateria",
+      "reading": "bah-teh-REE-ah",
+      "meaning": "battery",
+      "example": "A bateria do notebook acabou.",
+      "exampleMeaning": "The laptop battery died."
+    },
+    {
+      "word": "carregador",
+      "reading": "kah-heh-gah-DOR",
+      "meaning": "charger",
+      "example": "Você pode me emprestar seu carregador?",
+      "exampleMeaning": "Can you lend me your charger?"
+    },
+    {
+      "word": "fone de ouvido",
+      "reading": "FOH-nee jee oh-VEE-doo",
+      "meaning": "headphones / earbuds",
+      "example": "Eu uso fone de ouvido para ouvir música no ônibus.",
+      "exampleMeaning": "I use headphones to listen to music on the bus."
+    }
+  ],
+  "exercises": [
+    { "type": "match", "pairs": 5 },
+    {
+      "type": "fill-blank",
+      "items": [
+        { "sentence": "Esqueci minha ___ do banco.", "answer": "senha", "hint": "secret code to access accounts" },
+        { "sentence": "A ___ do meu celular quebrou.", "answer": "tela", "hint": "display surface of a device" },
+        { "sentence": "Meu ___ está sem bateria.", "answer": "celular", "hint": "portable phone" },
+        { "sentence": "Comprei um ___ sem fio.", "answer": "teclado", "hint": "device with keys for typing" }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "items": [
+        { "question": "What does 'carregador' mean?", "options": ["screen", "charger", "keyboard", "battery"], "answer": 1 },
+        { "question": "What does 'aplicativo' mean?", "options": ["application", "website", "download", "email"], "answer": 0 },
+        { "question": "What does 'fone de ouvido' mean?", "options": ["microphone", "speaker", "headphones", "charger"], "answer": 2 }
+      ]
+    }
+  ]
+}

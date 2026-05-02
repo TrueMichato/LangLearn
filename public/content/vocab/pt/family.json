@@ -1,0 +1,34 @@
+{
+  "id": "family",
+  "words": [
+    { "word": "pai", "reading": "pah-ee", "meaning": "father", "example": "Meu pai trabalha em um banco.", "exampleMeaning": "My father works at a bank." },
+    { "word": "mãe", "reading": "mahng-ee", "meaning": "mother", "example": "Minha mãe cozinha muito bem.", "exampleMeaning": "My mother cooks very well." },
+    { "word": "filho", "reading": "fee-lyoo", "meaning": "son", "example": "O filho dele é muito inteligente.", "exampleMeaning": "His son is very smart." },
+    { "word": "filha", "reading": "fee-lyah", "meaning": "daughter", "example": "A filha deles estuda medicina.", "exampleMeaning": "Their daughter studies medicine." },
+    { "word": "irmão", "reading": "eer-mahng", "meaning": "brother", "example": "Meu irmão mais velho mora em São Paulo.", "exampleMeaning": "My older brother lives in São Paulo." },
+    { "word": "irmã", "reading": "eer-mahng", "meaning": "sister", "example": "Minha irmã é professora.", "exampleMeaning": "My sister is a teacher." },
+    { "word": "avô", "reading": "ah-voh", "meaning": "grandfather", "example": "Meu avô conta muitas histórias.", "exampleMeaning": "My grandfather tells many stories." },
+    { "word": "avó", "reading": "ah-voh", "meaning": "grandmother", "example": "Minha avó faz o melhor bolo.", "exampleMeaning": "My grandmother makes the best cake." },
+    { "word": "tio", "reading": "chee-oo", "meaning": "uncle", "example": "Meu tio mora no Rio de Janeiro.", "exampleMeaning": "My uncle lives in Rio de Janeiro." },
+    { "word": "tia", "reading": "chee-ah", "meaning": "aunt", "example": "Minha tia é muito engraçada.", "exampleMeaning": "My aunt is very funny." },
+    { "word": "primo", "reading": "pree-moo", "meaning": "cousin (male)", "example": "Meu primo vem nos visitar no Natal.", "exampleMeaning": "My cousin is coming to visit us at Christmas." },
+    { "word": "marido", "reading": "mah-ree-doo", "meaning": "husband", "example": "O marido dela é médico.", "exampleMeaning": "Her husband is a doctor." },
+    { "word": "esposa", "reading": "esh-poh-zah", "meaning": "wife", "example": "Minha esposa gosta de viajar.", "exampleMeaning": "My wife likes to travel." },
+    { "word": "sogro", "reading": "soh-groo", "meaning": "father-in-law", "example": "Meu sogro é muito simpático.", "exampleMeaning": "My father-in-law is very nice." },
+    { "word": "neto", "reading": "neh-too", "meaning": "grandson", "example": "O neto dela tem três anos.", "exampleMeaning": "Her grandson is three years old." },
+    { "word": "enteado", "reading": "en-teh-ah-doo", "meaning": "stepson", "example": "O enteado dele é muito educado.", "exampleMeaning": "His stepson is very polite." }
+  ],
+  "exercises": [
+    { "type": "match", "pairs": 5 },
+    { "type": "fill-blank", "items": [
+      { "sentence": "Meu ___ trabalha em um banco.", "answer": "pai", "hint": "father" },
+      { "sentence": "Minha ___ cozinha muito bem.", "answer": "mãe", "hint": "mother" },
+      { "sentence": "Meu ___ mais velho mora em São Paulo.", "answer": "irmão", "hint": "brother" }
+    ]},
+    { "type": "multiple-choice", "items": [
+      { "question": "What does 'avó' mean?", "options": ["grandfather", "grandmother", "aunt", "uncle"], "answer": 1 },
+      { "question": "How do you say 'wife' in Portuguese?", "options": ["marido", "filha", "esposa", "irmã"], "answer": 2 },
+      { "question": "What does 'primo' mean?", "options": ["brother", "uncle", "nephew", "cousin"], "answer": 3 }
+    ]}
+  ]
+}

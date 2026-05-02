@@ -1,0 +1,35 @@
+{
+  "id": "food",
+  "words": [
+    { "word": "arroz", "reading": "ah-hohz", "meaning": "rice", "example": "O arroz com feijão é o prato mais popular do Brasil.", "exampleMeaning": "Rice and beans is the most popular dish in Brazil." },
+    { "word": "feijão", "reading": "fay-zhahng", "meaning": "beans", "example": "Hoje o feijão está muito gostoso.", "exampleMeaning": "Today the beans are very tasty." },
+    { "word": "carne", "reading": "kar-nee", "meaning": "meat", "example": "Eu gosto de carne grelhada.", "exampleMeaning": "I like grilled meat." },
+    { "word": "frango", "reading": "frahn-goo", "meaning": "chicken", "example": "Vamos fazer frango assado no jantar.", "exampleMeaning": "We're going to make roasted chicken for dinner." },
+    { "word": "peixe", "reading": "pay-shee", "meaning": "fish", "example": "Na sexta-feira comemos peixe.", "exampleMeaning": "On Friday we eat fish." },
+    { "word": "pão", "reading": "pahng", "meaning": "bread", "example": "Eu como pão com manteiga de manhã.", "exampleMeaning": "I eat bread with butter in the morning." },
+    { "word": "leite", "reading": "lay-chee", "meaning": "milk", "example": "As crianças bebem leite todo dia.", "exampleMeaning": "The children drink milk every day." },
+    { "word": "café", "reading": "kah-feh", "meaning": "coffee", "example": "Eu preciso de um café para acordar.", "exampleMeaning": "I need a coffee to wake up." },
+    { "word": "suco", "reading": "soo-koo", "meaning": "juice", "example": "Quero um suco de laranja, por favor.", "exampleMeaning": "I want an orange juice, please." },
+    { "word": "água", "reading": "ah-gwah", "meaning": "water", "example": "Beba muita água durante o dia.", "exampleMeaning": "Drink lots of water during the day." },
+    { "word": "fruta", "reading": "froo-tah", "meaning": "fruit", "example": "Comer fruta faz bem para a saúde.", "exampleMeaning": "Eating fruit is good for your health." },
+    { "word": "legumes", "reading": "leh-goo-meesh", "meaning": "vegetables", "example": "Os legumes estão frescos hoje.", "exampleMeaning": "The vegetables are fresh today." },
+    { "word": "queijo", "reading": "kay-zhoo", "meaning": "cheese", "example": "Minas Gerais é famoso pelo queijo.", "exampleMeaning": "Minas Gerais is famous for its cheese." },
+    { "word": "ovo", "reading": "oh-voo", "meaning": "egg", "example": "Eu quero um ovo frito, por favor.", "exampleMeaning": "I want a fried egg, please." },
+    { "word": "sal", "reading": "sahw", "meaning": "salt", "example": "A comida precisa de mais sal.", "exampleMeaning": "The food needs more salt." },
+    { "word": "açúcar", "reading": "ah-soo-kar", "meaning": "sugar", "example": "Você quer açúcar no café?", "exampleMeaning": "Do you want sugar in your coffee?" },
+    { "word": "manteiga", "reading": "mahn-tay-gah", "meaning": "butter", "example": "Passe manteiga no pão.", "exampleMeaning": "Spread butter on the bread." }
+  ],
+  "exercises": [
+    { "type": "match", "pairs": 5 },
+    { "type": "fill-blank", "items": [
+      { "sentence": "O ___ com feijão é o prato mais popular.", "answer": "arroz", "hint": "rice" },
+      { "sentence": "Beba muita ___ durante o dia.", "answer": "água", "hint": "water" },
+      { "sentence": "Eu preciso de um ___ para acordar.", "answer": "café", "hint": "coffee" }
+    ]},
+    { "type": "multiple-choice", "items": [
+      { "question": "What does 'frango' mean?", "options": ["fish", "chicken", "meat", "rice"], "answer": 1 },
+      { "question": "How do you say 'bread' in Portuguese?", "options": ["pão", "queijo", "ovo", "sal"], "answer": 0 },
+      { "question": "What is 'suco'?", "options": ["milk", "water", "coffee", "juice"], "answer": 3 }
+    ]}
+  ]
+}

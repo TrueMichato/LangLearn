@@ -1,0 +1,136 @@
+{
+  "id": "sports",
+  "words": [
+    {
+      "word": "futebol",
+      "reading": "foo-teh-BOW",
+      "meaning": "soccer / football",
+      "example": "O futebol é o esporte mais popular do Brasil.",
+      "exampleMeaning": "Soccer is the most popular sport in Brazil."
+    },
+    {
+      "word": "vôlei",
+      "reading": "VOH-lay",
+      "meaning": "volleyball",
+      "example": "Jogamos vôlei na praia.",
+      "exampleMeaning": "We played volleyball at the beach."
+    },
+    {
+      "word": "basquete",
+      "reading": "bahs-KEH-chee",
+      "meaning": "basketball",
+      "example": "Ele joga basquete na escola.",
+      "exampleMeaning": "He plays basketball at school."
+    },
+    {
+      "word": "natação",
+      "reading": "nah-tah-SAHW",
+      "meaning": "swimming",
+      "example": "Faço natação três vezes por semana.",
+      "exampleMeaning": "I swim three times a week."
+    },
+    {
+      "word": "corrida",
+      "reading": "koh-HEE-dah",
+      "meaning": "running / race",
+      "example": "Vou participar de uma corrida de rua.",
+      "exampleMeaning": "I'm going to participate in a street race."
+    },
+    {
+      "word": "academia",
+      "reading": "ah-kah-DEH-mee-ah",
+      "meaning": "gym",
+      "example": "Vou à academia todo dia de manhã.",
+      "exampleMeaning": "I go to the gym every morning."
+    },
+    {
+      "word": "treino",
+      "reading": "TRAY-noo",
+      "meaning": "training / workout",
+      "example": "O treino de hoje foi muito puxado.",
+      "exampleMeaning": "Today's workout was really tough."
+    },
+    {
+      "word": "time",
+      "reading": "CHEE-mee",
+      "meaning": "team",
+      "example": "Meu time favorito ganhou o campeonato.",
+      "exampleMeaning": "My favorite team won the championship."
+    },
+    {
+      "word": "jogador",
+      "reading": "zhoh-gah-DOR",
+      "meaning": "player",
+      "example": "Ele é o melhor jogador do time.",
+      "exampleMeaning": "He is the best player on the team."
+    },
+    {
+      "word": "gol",
+      "reading": "GOW",
+      "meaning": "goal (sports)",
+      "example": "O atacante fez três gols no jogo.",
+      "exampleMeaning": "The striker scored three goals in the game."
+    },
+    {
+      "word": "campeonato",
+      "reading": "kam-pee-oh-NAH-too",
+      "meaning": "championship",
+      "example": "O campeonato brasileiro começa em abril.",
+      "exampleMeaning": "The Brazilian championship starts in April."
+    },
+    {
+      "word": "torcedor",
+      "reading": "tor-seh-DOR",
+      "meaning": "fan / supporter",
+      "example": "Os torcedores lotaram o estádio.",
+      "exampleMeaning": "The fans filled the stadium."
+    },
+    {
+      "word": "quadra",
+      "reading": "KWAH-drah",
+      "meaning": "court (sports)",
+      "example": "Reservei a quadra de tênis para as cinco.",
+      "exampleMeaning": "I booked the tennis court for five o'clock."
+    },
+    {
+      "word": "estádio",
+      "reading": "ehs-TAH-jee-oo",
+      "meaning": "stadium",
+      "example": "O estádio do Maracanã é enorme.",
+      "exampleMeaning": "The Maracanã stadium is huge."
+    },
+    {
+      "word": "medalha",
+      "reading": "meh-DAH-lyah",
+      "meaning": "medal",
+      "example": "Ela ganhou a medalha de ouro na natação.",
+      "exampleMeaning": "She won the gold medal in swimming."
+    },
+    {
+      "word": "vitória",
+      "reading": "vee-TOH-ree-ah",
+      "meaning": "victory",
+      "example": "Foi uma vitória importante para o time.",
+      "exampleMeaning": "It was an important victory for the team."
+    }
+  ],
+  "exercises": [
+    { "type": "match", "pairs": 5 },
+    {
+      "type": "fill-blank",
+      "items": [
+        { "sentence": "O ___ de hoje foi muito puxado.", "answer": "treino", "hint": "exercise session / workout" },
+        { "sentence": "Os ___ lotaram o estádio.", "answer": "torcedores", "hint": "people who cheer for a team" },
+        { "sentence": "Ela ganhou a ___ de ouro na natação.", "answer": "medalha", "hint": "award for winning a competition" }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "items": [
+        { "question": "What does 'academia' mean?", "options": ["academy", "gym", "school", "stadium"], "answer": 1 },
+        { "question": "What does 'quadra' mean?", "options": ["field", "court", "pool", "track"], "answer": 1 },
+        { "question": "What does 'torcedor' mean?", "options": ["coach", "referee", "player", "fan"], "answer": 3 }
+      ]
+    }
+  ]
+}

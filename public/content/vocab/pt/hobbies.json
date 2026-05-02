@@ -1,0 +1,34 @@
+{
+  "id": "hobbies",
+  "words": [
+    { "word": "futebol", "reading": "foo-teh-bohw", "meaning": "soccer / football", "example": "O futebol é o esporte mais popular do Brasil.", "exampleMeaning": "Soccer is the most popular sport in Brazil." },
+    { "word": "nadar", "reading": "nah-dar", "meaning": "to swim", "example": "Eu gosto de nadar na piscina.", "exampleMeaning": "I like to swim in the pool." },
+    { "word": "correr", "reading": "koh-her", "meaning": "to run", "example": "Eu corro no parque todo domingo.", "exampleMeaning": "I run in the park every Sunday." },
+    { "word": "dançar", "reading": "dahn-sar", "meaning": "to dance", "example": "Ela dança samba muito bem.", "exampleMeaning": "She dances samba very well." },
+    { "word": "cantar", "reading": "kahn-tar", "meaning": "to sing", "example": "Ele canta no chuveiro todo dia.", "exampleMeaning": "He sings in the shower every day." },
+    { "word": "cozinhar", "reading": "koh-zee-nyar", "meaning": "to cook", "example": "Eu adoro cozinhar no fim de semana.", "exampleMeaning": "I love to cook on the weekend." },
+    { "word": "ler", "reading": "lehr", "meaning": "to read", "example": "Eu leio um livro por mês.", "exampleMeaning": "I read one book per month." },
+    { "word": "jogar", "reading": "zhoh-gar", "meaning": "to play (game/sport)", "example": "As crianças jogam videogame à tarde.", "exampleMeaning": "The children play video games in the afternoon." },
+    { "word": "assistir", "reading": "ah-sees-cheer", "meaning": "to watch", "example": "Eu gosto de assistir filmes à noite.", "exampleMeaning": "I like to watch movies at night." },
+    { "word": "viajar", "reading": "vee-ah-zhar", "meaning": "to travel", "example": "Nós viajamos para o Nordeste nas férias.", "exampleMeaning": "We traveled to the Northeast on vacation." },
+    { "word": "pintar", "reading": "peen-tar", "meaning": "to paint", "example": "Ela pinta quadros muito bonitos.", "exampleMeaning": "She paints very beautiful paintings." },
+    { "word": "fotografar", "reading": "foh-toh-grah-far", "meaning": "to photograph", "example": "Eu gosto de fotografar paisagens.", "exampleMeaning": "I like to photograph landscapes." },
+    { "word": "pescar", "reading": "pehs-kar", "meaning": "to fish", "example": "Meu avô gosta de pescar no rio.", "exampleMeaning": "My grandfather likes to fish in the river." },
+    { "word": "surfar", "reading": "soor-far", "meaning": "to surf", "example": "As ondas são boas para surfar hoje.", "exampleMeaning": "The waves are good for surfing today." },
+    { "word": "acampar", "reading": "ah-kahm-par", "meaning": "to camp", "example": "Vamos acampar na serra no feriado.", "exampleMeaning": "We're going camping in the mountains on the holiday." },
+    { "word": "tocar violão", "reading": "toh-kar vee-oh-lahng", "meaning": "to play guitar", "example": "Ele toca violão na praia.", "exampleMeaning": "He plays guitar at the beach." }
+  ],
+  "exercises": [
+    { "type": "match", "pairs": 5 },
+    { "type": "fill-blank", "items": [
+      { "sentence": "O ___ é o esporte mais popular do Brasil.", "answer": "futebol", "hint": "soccer" },
+      { "sentence": "Ela ___ samba muito bem.", "answer": "dança", "hint": "to dance (3rd person)" },
+      { "sentence": "Eu gosto de ___ filmes à noite.", "answer": "assistir", "hint": "to watch" }
+    ]},
+    { "type": "multiple-choice", "items": [
+      { "question": "What does 'nadar' mean?", "options": ["to run", "to swim", "to dance", "to sing"], "answer": 1 },
+      { "question": "How do you say 'to cook' in Portuguese?", "options": ["cantar", "pintar", "cozinhar", "pescar"], "answer": 2 },
+      { "question": "What does 'viajar' mean?", "options": ["to read", "to play", "to watch", "to travel"], "answer": 3 }
+    ]}
+  ]
+}

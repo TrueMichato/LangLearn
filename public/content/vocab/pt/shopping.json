@@ -1,0 +1,34 @@
+{
+  "id": "shopping",
+  "words": [
+    { "word": "loja", "reading": "loh-zhah", "meaning": "store / shop", "example": "A loja abre às nove da manhã.", "exampleMeaning": "The store opens at nine in the morning." },
+    { "word": "mercado", "reading": "mer-kah-doo", "meaning": "market / supermarket", "example": "Eu vou ao mercado comprar frutas.", "exampleMeaning": "I'm going to the market to buy fruit." },
+    { "word": "preço", "reading": "preh-soo", "meaning": "price", "example": "Qual é o preço dessa camisa?", "exampleMeaning": "What is the price of this shirt?" },
+    { "word": "dinheiro", "reading": "jeen-yay-roo", "meaning": "money", "example": "Eu não tenho dinheiro suficiente.", "exampleMeaning": "I don't have enough money." },
+    { "word": "cartão", "reading": "kar-tahng", "meaning": "card (credit/debit)", "example": "Posso pagar com cartão?", "exampleMeaning": "Can I pay with a card?" },
+    { "word": "troco", "reading": "troh-koo", "meaning": "change (money)", "example": "Você tem troco para cem reais?", "exampleMeaning": "Do you have change for one hundred reais?" },
+    { "word": "desconto", "reading": "jehs-kon-too", "meaning": "discount", "example": "Essa loja dá desconto para estudantes.", "exampleMeaning": "This store gives discounts for students." },
+    { "word": "conta", "reading": "kon-tah", "meaning": "bill / check", "example": "A conta do restaurante ficou cara.", "exampleMeaning": "The restaurant bill was expensive." },
+    { "word": "caixa", "reading": "kah-ee-shah", "meaning": "cashier / checkout", "example": "Pague no caixa, por favor.", "exampleMeaning": "Pay at the cashier, please." },
+    { "word": "comprar", "reading": "kohm-prar", "meaning": "to buy", "example": "Eu quero comprar um presente.", "exampleMeaning": "I want to buy a gift." },
+    { "word": "vender", "reading": "ven-der", "meaning": "to sell", "example": "Ele vende frutas na feira.", "exampleMeaning": "He sells fruit at the market." },
+    { "word": "pagar", "reading": "pah-gar", "meaning": "to pay", "example": "Eu já paguei a conta.", "exampleMeaning": "I already paid the bill." },
+    { "word": "barato", "reading": "bah-rah-too", "meaning": "cheap", "example": "Esse mercado é mais barato.", "exampleMeaning": "This market is cheaper." },
+    { "word": "caro", "reading": "kah-roo", "meaning": "expensive", "example": "As roupas aqui são muito caras.", "exampleMeaning": "The clothes here are very expensive." },
+    { "word": "promoção", "reading": "proh-moh-sahng", "meaning": "sale / promotion", "example": "Tem muita promoção na Black Friday.", "exampleMeaning": "There are many sales on Black Friday." },
+    { "word": "sacola", "reading": "sah-koh-lah", "meaning": "bag (shopping)", "example": "Você precisa de sacola?", "exampleMeaning": "Do you need a bag?" }
+  ],
+  "exercises": [
+    { "type": "match", "pairs": 5 },
+    { "type": "fill-blank", "items": [
+      { "sentence": "Posso pagar com ___?", "answer": "cartão", "hint": "card" },
+      { "sentence": "Qual é o ___ dessa camisa?", "answer": "preço", "hint": "price" },
+      { "sentence": "Tem muita ___ na Black Friday.", "answer": "promoção", "hint": "sale" }
+    ]},
+    { "type": "multiple-choice", "items": [
+      { "question": "What does 'dinheiro' mean?", "options": ["card", "money", "change", "price"], "answer": 1 },
+      { "question": "How do you say 'to buy' in Portuguese?", "options": ["vender", "pagar", "comprar", "trocar"], "answer": 2 },
+      { "question": "What is 'desconto'?", "options": ["bill", "change", "bag", "discount"], "answer": 3 }
+    ]}
+  ]
+}

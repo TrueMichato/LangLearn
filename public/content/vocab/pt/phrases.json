@@ -1,0 +1,35 @@
+{
+  "id": "phrases",
+  "words": [
+    { "word": "tudo bem", "reading": "too-doo beng", "meaning": "all good / how are you", "example": "Tudo bem? — Tudo bem, e você?", "exampleMeaning": "How are you? — I'm fine, and you?" },
+    { "word": "com certeza", "reading": "kohm ser-teh-zah", "meaning": "for sure / certainly", "example": "Você vem à festa? — Com certeza!", "exampleMeaning": "Are you coming to the party? — For sure!" },
+    { "word": "que legal", "reading": "kee leh-gahw", "meaning": "how cool / awesome", "example": "Você vai viajar? Que legal!", "exampleMeaning": "You're going to travel? How cool!" },
+    { "word": "beleza", "reading": "beh-leh-zah", "meaning": "cool / alright (slang)", "example": "Nos vemos amanhã? — Beleza!", "exampleMeaning": "See you tomorrow? — Alright!" },
+    { "word": "não sei", "reading": "nahng say", "meaning": "I don't know", "example": "Não sei onde ele mora.", "exampleMeaning": "I don't know where he lives." },
+    { "word": "faz tempo", "reading": "fahz tem-poo", "meaning": "it's been a while", "example": "Faz tempo que não vejo a Maria.", "exampleMeaning": "It's been a while since I've seen Maria." },
+    { "word": "deu certo", "reading": "deh-oo ser-too", "meaning": "it worked out", "example": "O plano deu certo no final.", "exampleMeaning": "The plan worked out in the end." },
+    { "word": "por acaso", "reading": "por ah-kah-zoo", "meaning": "by chance / by any chance", "example": "Você tem um lápis, por acaso?", "exampleMeaning": "Do you have a pencil, by any chance?" },
+    { "word": "de jeito nenhum", "reading": "jee zhay-too neh-nyoom", "meaning": "no way / absolutely not", "example": "Vou desistir? De jeito nenhum!", "exampleMeaning": "Am I going to give up? No way!" },
+    { "word": "cada vez mais", "reading": "kah-dah vezh mah-eesh", "meaning": "more and more", "example": "Ele está ficando cada vez mais forte.", "exampleMeaning": "He is getting stronger and stronger." },
+    { "word": "aos poucos", "reading": "owsh poh-koosh", "meaning": "little by little", "example": "Aos poucos eu estou aprendendo português.", "exampleMeaning": "Little by little I'm learning Portuguese." },
+    { "word": "na verdade", "reading": "nah ver-dah-jee", "meaning": "actually / in fact", "example": "Na verdade, eu prefiro ficar em casa.", "exampleMeaning": "Actually, I prefer to stay at home." },
+    { "word": "de repente", "reading": "jee heh-pen-chee", "meaning": "suddenly / maybe (colloquial)", "example": "De repente começou a chover.", "exampleMeaning": "Suddenly it started to rain." },
+    { "word": "por enquanto", "reading": "por en-kwahn-too", "meaning": "for now", "example": "Por enquanto, vou ficar aqui.", "exampleMeaning": "For now, I'm going to stay here." },
+    { "word": "sem dúvida", "reading": "seng doo-vee-dah", "meaning": "without a doubt", "example": "Esse é, sem dúvida, o melhor restaurante.", "exampleMeaning": "This is, without a doubt, the best restaurant." },
+    { "word": "pelo menos", "reading": "peh-loo meh-noosh", "meaning": "at least", "example": "Pelo menos tente uma vez.", "exampleMeaning": "At least try once." }
+  ],
+  "exercises": [
+    { "type": "match", "pairs": 5 },
+    { "type": "fill-blank", "items": [
+      { "sentence": "___! Eu estou bem, e você?", "answer": "Tudo bem", "hint": "all good / how are you" },
+      { "sentence": "___ eu estou aprendendo português.", "answer": "Aos poucos", "hint": "little by little" },
+      { "sentence": "___, eu prefiro ficar em casa.", "answer": "Na verdade", "hint": "actually" },
+      { "sentence": "Vou desistir? ___!", "answer": "De jeito nenhum", "hint": "no way" }
+    ]},
+    { "type": "multiple-choice", "items": [
+      { "question": "What does 'com certeza' mean?", "options": ["maybe", "for sure", "no way", "I don't know"], "answer": 1 },
+      { "question": "What does 'que legal' express?", "options": ["sadness", "anger", "enthusiasm / how cool", "confusion"], "answer": 2 },
+      { "question": "What does 'faz tempo' mean?", "options": ["it's early", "it's late", "it's cold", "it's been a while"], "answer": 3 }
+    ]}
+  ]
+}
