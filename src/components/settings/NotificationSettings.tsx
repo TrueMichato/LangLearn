@@ -4,11 +4,12 @@ import {
   requestNotificationPermission,
   getNotificationPermission,
   isNotificationSupported,
-  supportsPeriodicSync,
-  isPeriodicSyncRegistered,
+  getBackgroundNotificationStatus,
+  type BackgroundNotifStatus,
 } from '../../lib/notifications';
 import { fireTestNotification } from '../../lib/notification-scheduler';
 import type { NotificationPreset } from '../../lib/notification-presets';
+import { usePWAInstall } from '../../hooks/usePWAInstall';
 
 function Toggle({
   checked,
@@ -87,18 +88,16 @@ export default function NotificationSettings() {
   } = useSettingsStore();
   const [permissionError, setPermissionError] = useState('');
   const [showAdvanced, setShowAdvanced] = useState(false);
-  const [bgSyncActive, setBgSyncActive] = useState(false);
+  const [bgStatus, setBgStatus] = useState<BackgroundNotifStatus>('not-supported');
+  const { status: pwaStatus, promptInstall } = usePWAInstall();
 
   const permission = getNotificationPermission();
-  const periodicSyncSupported = supportsPeriodicSync();
 
   useEffect(() => {
-    if (periodicSyncSupported && notificationsEnabled) {
-      isPeriodicSyncRegistered().then(setBgSyncActive);
-    } else {
-      setBgSyncActive(false);
+    if (notificationsEnabled) {
+      getBackgroundNotificationStatus().then(setBgStatus);
     }
-  }, [periodicSyncSupported, notificationsEnabled]);
+  }, [notificationsEnabled]);
 
   async function handleToggle() {
     if (notificationsEnabled) {
@@ -162,18 +161,44 @@ export default function NotificationSettings() {
 
       {notificationsEnabled && (
         <>
-          {/* Background-support hint */}
-          <p className={`text-xs rounded-lg px-3 py-2 ${
-            bgSyncActive
+          {/* Background notification status */}
+          <div className={`text-xs rounded-lg px-3 py-2 space-y-2 ${
+            bgStatus === 'active'
               ? 'bg-emerald-50 dark:bg-emerald-900/30 text-emerald-700 dark:text-emerald-300'
-              : 'bg-amber-50 dark:bg-amber-900/30 text-amber-700 dark:text-amber-300'
+              : bgStatus === 'not-installed'
+                ? 'bg-amber-50 dark:bg-amber-900/30 text-amber-700 dark:text-amber-300'
+                : 'bg-slate-50 dark:bg-slate-700/50 text-slate-600 dark:text-slate-300'
           }`}>
-            {bgSyncActive
-              ? '✓ Background reminders active — you\'ll be notified even with the app closed.'
-              : periodicSyncSupported
-                ? 'ℹ Background sync available but not yet registered. It will activate on next settings save.'
-                : 'ℹ Background notifications require Chrome/Edge with LangLearn installed as an app. Meanwhile, reminders fire while the app is open or as catch-up nudges next time you visit.'}
-          </p>
+            {bgStatus === 'active' && (
+              <p>✅ Background reminders active — you'll be notified even with the app closed.</p>
+            )}
+            {bgStatus === 'not-installed' && (
+              <>
+                <p>📲 Install LangLearn as an app to receive notifications even when the browser is closed.</p>
+                {pwaStatus === 'installable' && (
+                  <button
+                    onClick={async () => {
+                      const accepted = await promptInstall();
+                      if (accepted) {
+                        // Re-check status after install
+                        const s = await getBackgroundNotificationStatus();
+                        setBgStatus(s);
+                      }
+                    }}
+                    className="mt-1 gradient-primary text-white text-xs font-semibold px-3 py-1.5 rounded-lg press-feedback"
+                  >
+                    Install LangLearn
+                  </button>
+                )}
+              </>
+            )}
+            {bgStatus === 'not-registered' && (
+              <p>⏳ Background sync available but not yet registered. It will activate shortly.</p>
+            )}
+            {bgStatus === 'not-supported' && (
+              <p>ℹ️ Background notifications require Chrome or Edge with LangLearn installed as an app. Meanwhile, reminders fire while the app is open or as catch-up nudges next time you visit.</p>
+            )}
+          </div>
 
           {/* Daily anchor time */}
           <div>

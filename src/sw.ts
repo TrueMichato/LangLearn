@@ -21,6 +21,13 @@ interface NotificationPrefsBlob {
   streakReminders: boolean;
   streakReminderMinDays: number;
   dailyGoalMinutes: number;
+  dueCardAlerts: boolean;
+  dueCardThreshold: number;
+  slippingWarnings: boolean;
+  weeklyDigest: boolean;
+  dailyGoalMetCelebration: boolean;
+  streakMilestoneAlerts: boolean;
+  weeklyGoalMinutes: number;
 }
 
 interface DailyActivityRow {
@@ -97,6 +104,65 @@ async function getRecentActivity(db: IDBDatabase, days: number): Promise<DailyAc
       req.onerror = () => resolve([]);
     } catch {
       resolve([]);
+    }
+  });
+}
+
+async function getDueReviewCount(db: IDBDatabase): Promise<number> {
+  const today = new Date().toISOString().slice(0, 10);
+  return new Promise((resolve) => {
+    try {
+      const tx = db.transaction('reviews', 'readonly');
+      const store = tx.objectStore('reviews');
+      const index = store.index('nextReviewDate');
+      const range = IDBKeyRange.upperBound(today);
+      const req = index.count(range);
+      req.onsuccess = () => resolve(req.result ?? 0);
+      req.onerror = () => resolve(0);
+    } catch {
+      resolve(0);
+    }
+  });
+}
+
+function getWeekStudySeconds(activities: DailyActivityRow[]): number {
+  const now = new Date();
+  const dow = (now.getDay() + 6) % 7; // 0 = Monday
+  const monday = new Date(now);
+  monday.setDate(now.getDate() - dow);
+  monday.setHours(0, 0, 0, 0);
+  const mondayStr = monday.toISOString().slice(0, 10);
+  return activities
+    .filter((a) => a.date >= mondayStr)
+    .reduce((sum, a) => sum + (a.studySeconds ?? 0), 0);
+}
+
+const CELEBRATED_KEY = 'sw-celebrated-milestones';
+const STREAK_MILESTONES = [3, 7, 14, 30, 60, 100, 200, 365];
+
+async function getCelebratedMilestones(db: IDBDatabase): Promise<number[]> {
+  const raw = await getSettingValue(db, CELEBRATED_KEY);
+  if (!raw) return [];
+  try {
+    return JSON.parse(raw) as number[];
+  } catch {
+    return [];
+  }
+}
+
+async function addCelebratedMilestone(db: IDBDatabase, milestone: number): Promise<void> {
+  const list = await getCelebratedMilestones(db);
+  if (list.includes(milestone)) return;
+  list.push(milestone);
+  return new Promise((resolve) => {
+    try {
+      const tx = db.transaction('settings', 'readwrite');
+      const store = tx.objectStore('settings');
+      store.put({ key: CELEBRATED_KEY, value: JSON.stringify(list) });
+      tx.oncomplete = () => resolve();
+      tx.onerror = () => resolve();
+    } catch {
+      resolve();
     }
   });
 }
@@ -211,12 +277,20 @@ async function handlePeriodicSync(): Promise<void> {
     // Determine which notification to show (priority order)
     const notification = await pickNotification(db, prefs, now, hasStudiedToday);
     if (notification) {
+      // Map notification tags to relevant deep-link pages
+      let url = '/LangLearn/';
+      if (notification.tag.startsWith('langlearn-cards-due') || notification.tag.startsWith('langlearn-daily-cue')) {
+        url = '/LangLearn/#/review';
+      } else if (notification.tag.startsWith('langlearn-weekly-digest') || notification.tag.startsWith('langlearn-slipping')) {
+        url = '/LangLearn/#/analytics';
+      }
+
       await self.registration.showNotification(notification.title, {
         body: notification.body,
         icon: '/LangLearn/pwa-192x192.png',
         badge: '/LangLearn/pwa-192x192.png',
         tag: notification.tag,
-        data: { url: '/LangLearn/' },
+        data: { url },
       });
       await incrementSWFired(db);
     }
@@ -237,13 +311,16 @@ async function pickNotification(
   now: Date,
   hasStudiedToday: boolean,
 ): Promise<NotifPayload | null> {
+  const nowMin = now.getHours() * 60 + now.getMinutes();
+  const recentActivity = await getRecentActivity(db, 30);
+  const streak = calculateStreak(recentActivity);
+  const todayActivity = await getTodayActivity(db);
+
   // 1. Daily cue — show if within 2h window of reminder time and haven't studied
   if (!hasStudiedToday) {
     const [rh, rm] = prefs.dailyReminderTime.split(':').map(Number);
     const reminderMin = rh * 60 + rm;
-    const nowMin = now.getHours() * 60 + now.getMinutes();
     const diff = nowMin - reminderMin;
-    // Show if we're 0-120 min past the reminder time (browser may wake SW late)
     if (diff >= 0 && diff <= 120) {
       return {
         title: 'Time to practice 🌱',
@@ -253,10 +330,8 @@ async function pickNotification(
     }
   }
 
-  // 2. Streak-at-risk — show in the evening (after 18:00) if no study today and streak ≥ min
+  // 2. Streak-at-risk — evening (≥18:00), no study today, streak ≥ min
   if (prefs.streakReminders && !hasStudiedToday && now.getHours() >= 18) {
-    const recentActivity = await getRecentActivity(db, 30);
-    const streak = calculateStreak(recentActivity);
     if (streak >= prefs.streakReminderMinDays) {
       return {
         title: `${streak}-day streak at risk 🔥`,
@@ -266,9 +341,73 @@ async function pickNotification(
     }
   }
 
-  // 3. Comeback — if no study in 2+ days
+  // 3. Cards-due — mid-day pulse when reviews pile up
+  if (prefs.dueCardAlerts) {
+    const dueCount = await getDueReviewCount(db);
+    if (dueCount >= prefs.dueCardThreshold && now.getHours() >= 11 && now.getHours() <= 20) {
+      return {
+        title: 'Cards waiting 🃏',
+        body: `${dueCount} cards ready — a few minutes clears the queue.`,
+        tag: `langlearn-cards-due-${now.toISOString().slice(0, 10)}`,
+      };
+    }
+  }
+
+  // 4. Slipping warning — Wednesday evening if behind on weekly goal
+  if (prefs.slippingWarnings && prefs.weeklyGoalMinutes > 0 && now.getDay() === 3 && now.getHours() >= 19) {
+    const weekSeconds = getWeekStudySeconds(recentActivity);
+    const weekGoalSeconds = prefs.weeklyGoalMinutes * 60;
+    if (weekGoalSeconds > 0 && weekSeconds / weekGoalSeconds < 0.3) {
+      return {
+        title: 'Half-week check-in 📊',
+        body: 'Light week so far — a short session today gets you back on pace.',
+        tag: `langlearn-slipping-${now.toISOString().slice(0, 10)}`,
+      };
+    }
+  }
+
+  // 5. Weekly digest — Sunday evening
+  if (prefs.weeklyDigest && now.getDay() === 0 && now.getHours() >= 18) {
+    const weekSeconds = getWeekStudySeconds(recentActivity);
+    const minutes = Math.round(weekSeconds / 60);
+    const weekGoalSeconds = prefs.weeklyGoalMinutes * 60;
+    const body = weekGoalSeconds > 0 && weekSeconds >= weekGoalSeconds
+      ? `You hit your weekly goal — ${minutes} minutes! 🎉`
+      : `${minutes} minutes this week. New week, fresh start.`;
+    return {
+      title: 'Weekly summary 📊',
+      body,
+      tag: `langlearn-weekly-digest-${now.toISOString().slice(0, 10)}`,
+    };
+  }
+
+  // 6. Daily goal met celebration
+  if (prefs.dailyGoalMetCelebration && todayActivity?.goalMet) {
+    return {
+      title: 'Daily goal met! ✅',
+      body: 'Nice work — every day counts.',
+      tag: `langlearn-goal-met-${now.toISOString().slice(0, 10)}`,
+    };
+  }
+
+  // 7. Streak milestone
+  if (prefs.streakMilestoneAlerts && streak > 0) {
+    const celebrated = await getCelebratedMilestones(db);
+    const milestone = STREAK_MILESTONES.find(
+      (m) => streak >= m && !celebrated.includes(m)
+    );
+    if (milestone) {
+      await addCelebratedMilestone(db, milestone);
+      return {
+        title: `${milestone}-day streak! 🔥`,
+        body: 'Consistency is the whole game. Take a bow.',
+        tag: `langlearn-milestone-${milestone}`,
+      };
+    }
+  }
+
+  // 8. Comeback — 2+ days inactive
   if (!hasStudiedToday) {
-    const recentActivity = await getRecentActivity(db, 14);
     const lastActive = recentActivity
       .filter((a) => a.studySeconds > 0)
       .map((a) => a.date)
