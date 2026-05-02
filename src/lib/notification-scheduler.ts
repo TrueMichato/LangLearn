@@ -255,7 +255,10 @@ export async function refreshNotifications(prefs: FullPrefs): Promise<void> {
 
     // Register periodic background sync for background notifications (Chromium + installed PWA)
     if (supportsPeriodicSync()) {
-      await registerPeriodicSync();
+      const registered = await registerPeriodicSync();
+      if (!registered) {
+        console.info('[LangLearn] Periodic sync registration failed — background notifications unavailable');
+      }
     }
 
     // Mirror prefs to IndexedDB so SW can read them
@@ -305,8 +308,9 @@ export async function refreshNotifications(prefs: FullPrefs): Promise<void> {
   }
 }
 
-/** Mirror notification prefs to IndexedDB so the service worker can access them. */
-async function mirrorPrefsToIDB(prefs: FullPrefs): Promise<void> {
+/** Mirror notification prefs to IndexedDB so the service worker can access them.
+ *  Exported so it can be called from the visibility-change handler and settings subscriber. */
+export async function mirrorPrefsToIDB(prefs: FullPrefs): Promise<void> {
   try {
     await db.settings.put({
       key: 'notification-prefs',
@@ -319,6 +323,13 @@ async function mirrorPrefsToIDB(prefs: FullPrefs): Promise<void> {
         streakReminders: prefs.streakReminders,
         streakReminderMinDays: prefs.streakReminderMinDays,
         dailyGoalMinutes: prefs.dailyGoalMinutes,
+        dueCardAlerts: prefs.dueCardAlerts,
+        dueCardThreshold: prefs.dueCardThreshold,
+        slippingWarnings: prefs.slippingWarnings,
+        weeklyDigest: prefs.weeklyDigest,
+        dailyGoalMetCelebration: prefs.dailyGoalMetCelebration,
+        streakMilestoneAlerts: prefs.streakMilestoneAlerts,
+        weeklyGoalMinutes: prefs.weeklyGoalMinutes,
       }),
     });
   } catch {
@@ -400,3 +411,36 @@ export async function fireTestNotification(): Promise<void> {
 }
 
 export { STREAK_MILESTONES };
+
+// ─── Auto-mirror prefs to IDB whenever notification settings change ───
+import { useSettingsStore } from '../stores/settingsStore';
+
+const NOTIFICATION_KEYS: (keyof ReturnType<typeof useSettingsStore.getState>)[] = [
+  'notificationsEnabled', 'dailyReminderTime', 'quietHoursStart', 'quietHoursEnd',
+  'dailyNotificationBudget', 'dueCardAlerts', 'dueCardThreshold', 'streakReminders',
+  'streakReminderMinDays', 'weeklyDigest', 'comebackNudges', 'slippingWarnings',
+  'dailyGoalMetCelebration', 'streakMilestoneAlerts', 'dailyGoalMinutes', 'weeklyGoalMinutes',
+];
+
+useSettingsStore.subscribe((state, prevState) => {
+  const changed = NOTIFICATION_KEYS.some((k) => state[k] !== prevState[k]);
+  if (!changed) return;
+  void mirrorPrefsToIDB({
+    notificationsEnabled: state.notificationsEnabled,
+    dailyReminderTime: state.dailyReminderTime,
+    quietHoursStart: state.quietHoursStart,
+    quietHoursEnd: state.quietHoursEnd,
+    dailyNotificationBudget: state.dailyNotificationBudget,
+    dueCardAlerts: state.dueCardAlerts,
+    dueCardThreshold: state.dueCardThreshold,
+    streakReminders: state.streakReminders,
+    streakReminderMinDays: state.streakReminderMinDays,
+    weeklyDigest: state.weeklyDigest,
+    comebackNudges: state.comebackNudges,
+    slippingWarnings: state.slippingWarnings,
+    dailyGoalMetCelebration: state.dailyGoalMetCelebration,
+    streakMilestoneAlerts: state.streakMilestoneAlerts,
+    dailyGoalMinutes: state.dailyGoalMinutes,
+    weeklyGoalMinutes: state.weeklyGoalMinutes,
+  });
+});

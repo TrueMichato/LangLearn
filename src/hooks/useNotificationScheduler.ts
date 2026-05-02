@@ -1,7 +1,30 @@
 import { useEffect, useRef } from 'react';
 import { useSettingsStore } from '../stores/settingsStore';
 import { isNotificationSupported, requestNotificationPermission } from '../lib/notifications';
-import { refreshNotifications, tickInApp } from '../lib/notification-scheduler';
+import { refreshNotifications, tickInApp, mirrorPrefsToIDB } from '../lib/notification-scheduler';
+import type { FullPrefs } from '../lib/notification-scheduler';
+
+function buildPrefs(): FullPrefs {
+  const s = useSettingsStore.getState();
+  return {
+    notificationsEnabled: s.notificationsEnabled,
+    dailyReminderTime: s.dailyReminderTime,
+    quietHoursStart: s.quietHoursStart,
+    quietHoursEnd: s.quietHoursEnd,
+    dailyNotificationBudget: s.dailyNotificationBudget,
+    dueCardAlerts: s.dueCardAlerts,
+    dueCardThreshold: s.dueCardThreshold,
+    streakReminders: s.streakReminders,
+    streakReminderMinDays: s.streakReminderMinDays,
+    weeklyDigest: s.weeklyDigest,
+    comebackNudges: s.comebackNudges,
+    slippingWarnings: s.slippingWarnings,
+    dailyGoalMetCelebration: s.dailyGoalMetCelebration,
+    streakMilestoneAlerts: s.streakMilestoneAlerts,
+    dailyGoalMinutes: s.dailyGoalMinutes,
+    weeklyGoalMinutes: s.weeklyGoalMinutes,
+  };
+}
 
 export function useNotificationScheduler() {
   // Subscribe to each setting individually so Zustand can use referential
@@ -64,14 +87,28 @@ export function useNotificationScheduler() {
     void run();
 
     intervalRef.current = window.setInterval(run, 5 * 60 * 1000);
+
+    // On visibility change: run when visible, mirror prefs to IDB when hidden
     const onVisibility = () => {
-      if (document.visibilityState === 'visible') void run();
+      if (document.visibilityState === 'visible') {
+        void run();
+      } else {
+        // App going to background — push fresh prefs to IDB so SW has them
+        void mirrorPrefsToIDB(buildPrefs());
+      }
     };
     document.addEventListener('visibilitychange', onVisibility);
+
+    // Last-chance sync before unload
+    const onBeforeUnload = () => {
+      void mirrorPrefsToIDB(buildPrefs());
+    };
+    window.addEventListener('beforeunload', onBeforeUnload);
 
     return () => {
       if (intervalRef.current) clearInterval(intervalRef.current);
       document.removeEventListener('visibilitychange', onVisibility);
+      window.removeEventListener('beforeunload', onBeforeUnload);
     };
   }, [
     notificationsEnabled,

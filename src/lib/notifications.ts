@@ -91,6 +91,7 @@ export async function isPeriodicSyncRegistered(): Promise<boolean> {
  * Register periodic background sync. Browser wakes the SW periodically
  * (min ~4h for high-engagement sites) so it can check state and show notifications.
  * Only works on Chromium with PWA installed.
+ * Returns true if registration succeeded.
  */
 export async function registerPeriodicSync(): Promise<boolean> {
   if (!supportsPeriodicSync()) return false;
@@ -122,5 +123,25 @@ export async function unregisterPeriodicSync(): Promise<void> {
   } catch {
     // ignore
   }
+}
+
+export type BackgroundNotifStatus =
+  | 'active'            // Periodic sync registered and working
+  | 'not-installed'     // Browser supports it but PWA not installed
+  | 'not-registered'    // Installed but registration pending/failed
+  | 'not-supported';    // Browser doesn't support periodic sync
+
+/** Determine the current background notification capability status. */
+export async function getBackgroundNotificationStatus(): Promise<BackgroundNotifStatus> {
+  if (!supportsPeriodicSync()) return 'not-supported';
+
+  const isInstalled =
+    window.matchMedia('(display-mode: standalone)').matches ||
+    (navigator as unknown as { standalone?: boolean }).standalone === true;
+
+  if (!isInstalled) return 'not-installed';
+
+  const registered = await isPeriodicSyncRegistered();
+  return registered ? 'active' : 'not-registered';
 }
 
