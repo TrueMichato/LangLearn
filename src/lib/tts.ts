@@ -12,28 +12,75 @@ const LANG_VOICE_MAP: Record<string, string> = {
   pt: 'pt-BR',
 };
 
+// ─── Voice loading ───
+// Chrome Android requires voices to be loaded before speak() works.
+// getVoices() returns [] until voiceschanged fires. We trigger loading
+// at module init and provide a promise to wait on before first speak.
+
+let voicesReady = false;
+// eslint-disable-next-line @typescript-eslint/no-empty-function
+let resolveVoices: () => void = () => {};
+const voicesPromise = new Promise<void>((resolve) => {
+  resolveVoices = resolve;
+});
+
+function onVoicesLoaded(): void {
+  if (voicesReady) return;
+  const voices = window.speechSynthesis.getVoices();
+  if (voices.length > 0) {
+    voicesReady = true;
+    resolveVoices();
+  }
+}
+
+if (typeof window !== 'undefined' && 'speechSynthesis' in window) {
+  // Trigger initial load
+  const initial = window.speechSynthesis.getVoices();
+  if (initial.length > 0) {
+    voicesReady = true;
+    resolveVoices();
+  }
+  // Listen for async load (required on Chrome Android)
+  window.speechSynthesis.onvoiceschanged = onVoicesLoaded;
+}
+
+/**
+ * Wait for voices to be available, with a timeout fallback.
+ * Returns true if voices loaded, false if timed out.
+ */
+async function ensureVoices(timeoutMs = 2000): Promise<boolean> {
+  if (voicesReady) return true;
+  // Poke getVoices() to trigger loading
+  window.speechSynthesis.getVoices();
+  return Promise.race([
+    voicesPromise.then(() => true),
+    new Promise<boolean>((r) => setTimeout(() => r(false), timeoutMs)),
+  ]);
+}
+
 /**
  * Speak text aloud.
- * Intentionally kept simple — the original minimal approach that used to work.
- * Chrome Android standalone has quirks with explicit .voice assignment and
- * .cancel()→.speak() timing, so we avoid both when possible.
+ * If voices haven't loaded yet, waits briefly for them.
  */
-export function speak(text: string, language: string, rateOverride?: number): void {
+export async function speak(text: string, language: string, rateOverride?: number): Promise<void> {
   if (!('speechSynthesis' in window)) return;
 
   const synth = window.speechSynthesis;
   const rate = rateOverride ?? useSettingsStore.getState().ttsRate ?? 0.9;
 
-  // Only cancel if something is actively playing
+  // Ensure voices are available
+  await ensureVoices();
+
+  // Cancel any ongoing speech
   if (synth.speaking || synth.pending) {
     synth.cancel();
+    // Small delay after cancel to let engine reset
+    await new Promise((r) => setTimeout(r, 50));
   }
 
   const utterance = new SpeechSynthesisUtterance(text);
   utterance.lang = LANG_VOICE_MAP[language] ?? language;
   utterance.rate = rate;
-  // Do NOT set utterance.voice — let the engine pick. Explicit voice
-  // assignment causes synthesis-failed on some Android Chrome versions.
 
   synth.speak(utterance);
 }
@@ -47,17 +94,22 @@ export function speakWithSpeed(text: string, language: string, rate: number): Pr
 
     const synth = window.speechSynthesis;
 
-    if (synth.speaking || synth.pending) {
-      synth.cancel();
-    }
+    // Ensure voices loaded, then speak
+    ensureVoices().then(() => {
+      if (synth.speaking || synth.pending) {
+        synth.cancel();
+      }
 
-    const utterance = new SpeechSynthesisUtterance(text);
-    utterance.lang = LANG_VOICE_MAP[language] ?? language;
-    utterance.rate = rate;
-    utterance.onend = () => resolve();
-    utterance.onerror = () => resolve();
+      const utterance = new SpeechSynthesisUtterance(text);
+      utterance.lang = LANG_VOICE_MAP[language] ?? language;
+      utterance.rate = rate;
+      utterance.onend = () => resolve();
+      utterance.onerror = () => resolve();
 
-    synth.speak(utterance);
+      // Small delay after cancel if needed
+      const delay = (synth.speaking || synth.pending) ? 50 : 0;
+      setTimeout(() => synth.speak(utterance), delay);
+    });
   });
 }
 
@@ -136,6 +188,10 @@ export async function diagnoseTTS(language: string): Promise<TTSDiagnostics> {
   }
 
   const synth = window.speechSynthesis;
+
+  // Wait for voices to load (critical on Chrome Android)
+  const voicesLoaded = await ensureVoices(3000);
+
   const allVoices = synth.getVoices();
   const bcp47 = LANG_VOICE_MAP[language] ?? language;
   const prefix = language.slice(0, 2).toLowerCase();
@@ -144,6 +200,11 @@ export async function diagnoseTTS(language: string): Promise<TTSDiagnostics> {
 
   const testText = language === 'ja' ? 'こんにちは' : language === 'ru' ? 'Привет' : 'Hello';
   const tests: DiagResult[] = [];
+
+  // Report voice loading status
+  if (!voicesLoaded) {
+    tests.push({ label: 'voices-load', result: 'error', error: `voices did not load (${allVoices.length} found)` });
+  }
 
   // Test 1: Minimal — just lang, default rate, no explicit voice
   synth.cancel();
