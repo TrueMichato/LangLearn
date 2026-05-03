@@ -1,4 +1,3 @@
-import { useEffect } from 'react';
 import type { Word } from '../../db/schema';
 import { speak, isTTSSupported } from '../../lib/tts';
 
@@ -9,12 +8,6 @@ interface ListeningCardProps {
 }
 
 export default function ListeningCard({ word, isFlipped, onFlip }: ListeningCardProps) {
-  useEffect(() => {
-    if (isTTSSupported()) {
-      speak(word.word, word.language);
-    }
-  }, [word.word, word.language]);
-
   if (!isTTSSupported()) {
     return (
       <div className="w-full min-h-[240px] rounded-2xl shadow-lg p-6 flex flex-col items-center justify-center bg-white dark:bg-gray-800 border border-yellow-200 dark:border-yellow-700">
@@ -46,7 +39,7 @@ export default function ListeningCard({ word, isFlipped, onFlip }: ListeningCard
   return (
     <div
       onClick={!isFlipped ? onFlip : undefined}
-      className={`w-full min-h-[240px] rounded-2xl p-6 flex flex-col items-center justify-center transition-all duration-300 ${
+      className={`w-full min-h-[240px] rounded-2xl p-6 flex flex-col items-center justify-center overflow-hidden transition-all duration-300 ${
         isFlipped
           ? 'bg-white dark:bg-slate-800 border-2 border-emerald-300/60 dark:border-emerald-700/40 shadow-lg'
           : 'bg-white dark:bg-slate-800 border-2 border-indigo-200/60 dark:border-indigo-800/40 shadow-lg cursor-pointer hover:shadow-xl'
@@ -66,7 +59,7 @@ export default function ListeningCard({ word, isFlipped, onFlip }: ListeningCard
         }}
         className="text-sm bg-teal-100 dark:bg-teal-900 text-teal-700 dark:text-teal-300 px-4 py-1.5 rounded-lg hover:bg-teal-200 dark:hover:bg-teal-800 transition-colors mb-3"
       >
-        Replay
+        ▶ Play
       </button>
 
       {isFlipped ? (

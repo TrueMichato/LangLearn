@@ -34,7 +34,7 @@ export default function MultipleChoiceCard({ word, distractors, onGrade }: Multi
   };
 
   return (
-    <div className="w-full min-h-[240px] rounded-2xl shadow-lg p-6 flex flex-col items-center justify-center bg-white dark:bg-gray-800 border border-amber-200 dark:border-amber-700">
+    <div className="w-full min-h-[240px] rounded-2xl shadow-lg p-6 flex flex-col items-center justify-center overflow-hidden bg-white dark:bg-gray-800 border border-amber-200 dark:border-amber-700">
       <span className="text-xs text-gray-400 dark:text-gray-500 uppercase tracking-wide mb-2">
         {word.language}
       </span>

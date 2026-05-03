@@ -43,7 +43,7 @@ export default function ClozeCard({ word, onGrade }: ClozeCardProps) {
   };
 
   return (
-    <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-lg p-6">
+    <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-lg p-6 overflow-hidden">
       {hasCloze ? (
         <p className="text-lg text-gray-800 dark:text-gray-100 text-center leading-relaxed mb-6">
           {beforeBlank}
