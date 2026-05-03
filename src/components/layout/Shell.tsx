@@ -20,7 +20,7 @@ export default function Shell() {
   const [showDictionary, setShowDictionary] = useState(false);
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-slate-50 to-slate-100 dark:from-slate-950 dark:to-slate-900 pb-[calc(5rem+env(safe-area-inset-bottom))]">
+    <div className="min-h-screen bg-gradient-to-b from-slate-50 to-slate-100 dark:from-slate-950 dark:to-slate-900 pb-[calc(5rem_+_env(safe-area-inset-bottom))]">
       <header className="sticky top-0 glass border-b border-slate-200/60 dark:border-white/10 z-40 pt-[env(safe-area-inset-top)]">
         <div className="max-w-lg mx-auto flex items-center justify-between px-4 py-3">
           <h1 className="text-lg font-bold bg-gradient-to-r from-indigo-600 to-violet-500 dark:from-indigo-400 dark:to-violet-400 bg-clip-text text-transparent">🌱 LangLearn</h1>
