@@ -12,32 +12,66 @@ const LANG_VOICE_MAP: Record<string, string> = {
   pt: 'pt-BR',
 };
 
-// Chrome Android standalone PWA requires speechSynthesis.speak() to run
-// synchronously inside a user-gesture callback. setTimeout(fn, 0) breaks
-// the gesture chain, silently dropping the utterance.
-//
-// Strategy:
-//  - First call: speak() synchronously (no cancel needed) — gesture preserved.
-//  - Subsequent calls while still speaking: cancel(), then setTimeout to give
-//    the engine time to reset before re-speaking.
-//  - Warm-up: use AudioContext unlock on first touch (more reliable than an
-//    empty SpeechSynthesisUtterance which some engines ignore).
+// ─── Voice loading ───
+// Chrome Android (especially standalone PWA) loads voices asynchronously.
+// Speaking before voices are loaded silently fails. We eagerly load voices
+// and cache them by language prefix.
+
+const voiceCache = new Map<string, SpeechSynthesisVoice>();
+let voicesLoaded = false;
+
+function loadVoices(): void {
+  if (!('speechSynthesis' in window)) return;
+  const voices = window.speechSynthesis.getVoices();
+  if (voices.length === 0) return;
+  voicesLoaded = true;
+  voiceCache.clear();
+  for (const voice of voices) {
+    // Store first voice found for each language prefix (e.g. "ja", "ru", "en")
+    const prefix = voice.lang.slice(0, 2).toLowerCase();
+    if (!voiceCache.has(prefix)) {
+      voiceCache.set(prefix, voice);
+    }
+  }
+}
+
+if (typeof window !== 'undefined' && 'speechSynthesis' in window) {
+  // Try immediately (voices may already be cached in browser mode)
+  loadVoices();
+  // Also listen for async load (standalone PWA mode)
+  window.speechSynthesis.addEventListener?.('voiceschanged', loadVoices);
+  // Fallback: some browsers use onvoiceschanged property instead of addEventListener
+  if (!window.speechSynthesis.addEventListener) {
+    window.speechSynthesis.onvoiceschanged = loadVoices;
+  }
+}
+
+// ─── Audio context unlock ───
+// Some Android browsers require an audio context unlock from a user gesture
+// before any audio (including speech synthesis) will play.
 
 let audioUnlocked = false;
 
 function unlockAudio(): void {
   if (audioUnlocked) return;
   audioUnlocked = true;
+  // Force voices to load on first interaction too
+  loadVoices();
   try {
-    const ctx = new (window.AudioContext || (window as unknown as Record<string, typeof AudioContext>).webkitAudioContext)();
-    const buf = ctx.createBuffer(1, 1, 22050);
-    const src = ctx.createBufferSource();
-    src.buffer = buf;
-    src.connect(ctx.destination);
-    src.start(0);
-    ctx.resume().catch(() => {});
+    const Ctx = window.AudioContext || (window as unknown as Record<string, typeof AudioContext>).webkitAudioContext;
+    if (Ctx) {
+      const ctx = new Ctx();
+      const buf = ctx.createBuffer(1, 1, 22050);
+      const src = ctx.createBufferSource();
+      src.buffer = buf;
+      src.connect(ctx.destination);
+      src.start(0);
+      ctx.resume().catch(() => {});
+      // Close after a short time to free resources
+      setTimeout(() => ctx.close().catch(() => {}), 1000);
+    }
   } catch {
-    // AudioContext not available — not critical
+    // Not critical
   }
 }
 
@@ -46,10 +80,37 @@ if (typeof document !== 'undefined') {
   document.addEventListener('touchstart', unlockAudio, { once: true });
 }
 
+// ─── Core speak logic ───
+
+function getVoiceForLang(language: string): SpeechSynthesisVoice | null {
+  // Try cached voice for the 2-letter prefix
+  const prefix = language.slice(0, 2).toLowerCase();
+  if (voiceCache.has(prefix)) return voiceCache.get(prefix)!;
+
+  // Voices might not have loaded yet — try a synchronous getVoices() call
+  if (!voicesLoaded) loadVoices();
+  return voiceCache.get(prefix) ?? null;
+}
+
 function doSpeak(utterance: SpeechSynthesisUtterance): void {
   const synth = window.speechSynthesis;
   if (synth.paused) synth.resume();
   synth.speak(utterance);
+}
+
+function createUtterance(text: string, language: string, rate: number): SpeechSynthesisUtterance {
+  const utterance = new SpeechSynthesisUtterance(text);
+  const bcp47 = LANG_VOICE_MAP[language] ?? language;
+  utterance.lang = bcp47;
+  utterance.rate = rate;
+
+  // Explicitly set voice — critical for Android PWA where lang-only may fail
+  const voice = getVoiceForLang(language);
+  if (voice) {
+    utterance.voice = voice;
+  }
+
+  return utterance;
 }
 
 /**
@@ -63,9 +124,7 @@ export function speak(text: string, language: string, rateOverride?: number): vo
   const synth = window.speechSynthesis;
   const rate = rateOverride ?? useSettingsStore.getState().ttsRate ?? 0.9;
 
-  const utterance = new SpeechSynthesisUtterance(text);
-  utterance.lang = LANG_VOICE_MAP[language] ?? language;
-  utterance.rate = rate;
+  const utterance = createUtterance(text, language, rate);
   utterance.onerror = (e) => {
     if (e.error !== 'interrupted') {
       console.warn('[TTS] error:', e.error, 'text:', text.slice(0, 40));
@@ -74,10 +133,8 @@ export function speak(text: string, language: string, rateOverride?: number): vo
 
   if (synth.speaking || synth.pending) {
     synth.cancel();
-    // Delay only after cancel — engine needs time to reset
-    setTimeout(() => doSpeak(utterance), 60);
+    setTimeout(() => doSpeak(utterance), 80);
   } else {
-    // Synchronous — preserves user gesture chain
     doSpeak(utterance);
   }
 }
@@ -92,9 +149,7 @@ export function speakWithSpeed(text: string, language: string, rate: number): Pr
 
     const synth = window.speechSynthesis;
 
-    const utterance = new SpeechSynthesisUtterance(text);
-    utterance.lang = LANG_VOICE_MAP[language] ?? language;
-    utterance.rate = rate;
+    const utterance = createUtterance(text, language, rate);
     utterance.onend = () => resolve();
     utterance.onerror = (e) => {
       if (e.error !== 'interrupted') {
@@ -105,7 +160,7 @@ export function speakWithSpeed(text: string, language: string, rate: number): Pr
 
     if (synth.speaking || synth.pending) {
       synth.cancel();
-      setTimeout(() => doSpeak(utterance), 60);
+      setTimeout(() => doSpeak(utterance), 80);
     } else {
       doSpeak(utterance);
     }
