@@ -6,6 +6,7 @@ import DeckImport from '../components/common/DeckImport';
 import NotificationSettings from '../components/settings/NotificationSettings';
 import ImmersionSection from '../components/settings/ImmersionSection';
 import { LANGUAGES, getLanguageLabel } from '../lib/languages';
+import { diagnoseTTS } from '../lib/tts';
 
 function SectionHeading({ icon, label }: { icon: string; label: string }) {
   return (
@@ -286,6 +287,60 @@ export default function SettingsPage() {
           )}
         </div>
       </section>
+
+      {/* TTS Diagnostics */}
+      <TTSDiagPanel />
     </div>
+  );
+}
+
+function TTSDiagPanel() {
+  const [result, setResult] = useState<Awaited<ReturnType<typeof diagnoseTTS>> | null>(null);
+  const [testing, setTesting] = useState(false);
+  const languages = useSettingsStore((s) => s.activeLanguages);
+  const lang = languages[0] ?? 'en';
+
+  const runTest = async () => {
+    setTesting(true);
+    setResult(null);
+    try {
+      const r = await diagnoseTTS(lang);
+      setResult(r);
+    } catch (e) {
+      setResult({
+        supported: false, voiceCount: 0, voicesForLang: [], selectedVoice: null,
+        speakResult: 'error', error: String(e), displayMode: 'unknown',
+      });
+    }
+    setTesting(false);
+  };
+
+  return (
+    <section className="card p-4 space-y-3">
+      <SectionHeading icon="🔊" label="TTS Diagnostics" />
+      <p className="text-xs text-slate-500 dark:text-slate-400">
+        Tap below to test text-to-speech for {getLanguageLabel(lang)}.
+      </p>
+      <button
+        onClick={runTest}
+        disabled={testing}
+        className="w-full gradient-primary text-white py-2 rounded-xl font-semibold hover:opacity-90 transition-opacity press-feedback disabled:opacity-50"
+      >
+        {testing ? '⏳ Testing…' : '▶ Test TTS'}
+      </button>
+      {result && (
+        <div className="bg-slate-100 dark:bg-slate-700 rounded-xl p-3 text-xs font-mono space-y-1 text-slate-700 dark:text-slate-300 break-all">
+          <p>mode: {result.displayMode}</p>
+          <p>supported: {String(result.supported)}</p>
+          <p>voices total: {result.voiceCount}</p>
+          <p>voices for {lang}: {result.voicesForLang.length > 0 ? result.voicesForLang.join(', ') : '(none)'}</p>
+          <p>selected: {result.selectedVoice ?? '(none)'}</p>
+          <p className={result.speakResult === 'started' ? 'text-green-600 dark:text-green-400 font-bold' : 'text-red-600 dark:text-red-400 font-bold'}>
+            result: {result.speakResult}
+          </p>
+          {result.error && <p>detail: {result.error}</p>}
+        </div>
+      )}
+    </section>
   );
 }

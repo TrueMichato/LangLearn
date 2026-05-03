@@ -178,3 +178,103 @@ export type TTSSpeed = (typeof TTS_SPEEDS)[number]['value'];
 export function isTTSSupported(): boolean {
   return 'speechSynthesis' in window;
 }
+
+/**
+ * Run TTS diagnostics — returns a detailed status object and attempts
+ * to speak a test phrase. Designed for the Settings page debug panel.
+ */
+export async function diagnoseTTS(language: string): Promise<{
+  supported: boolean;
+  voiceCount: number;
+  voicesForLang: string[];
+  selectedVoice: string | null;
+  speakResult: 'started' | 'error' | 'timeout' | 'not-supported';
+  error?: string;
+  displayMode: string;
+}> {
+  const displayMode = window.matchMedia?.('(display-mode: standalone)').matches
+    ? 'standalone'
+    : window.matchMedia?.('(display-mode: browser)').matches
+      ? 'browser'
+      : 'unknown';
+
+  if (!('speechSynthesis' in window)) {
+    return {
+      supported: false, voiceCount: 0, voicesForLang: [], selectedVoice: null,
+      speakResult: 'not-supported', displayMode,
+    };
+  }
+
+  const synth = window.speechSynthesis;
+
+  // Force a fresh voice load
+  loadVoices();
+  const allVoices = synth.getVoices();
+  const bcp47 = LANG_VOICE_MAP[language] ?? language;
+  const prefix = language.slice(0, 2).toLowerCase();
+  const langVoices = allVoices.filter(v => v.lang.toLowerCase().startsWith(prefix));
+  const selectedVoice = getVoiceForLang(language);
+
+  const testText = language === 'ja' ? 'テスト' : language === 'ru' ? 'Тест' : 'Test';
+
+  return new Promise((resolve) => {
+    synth.cancel();
+
+    setTimeout(() => {
+      const utterance = new SpeechSynthesisUtterance(testText);
+      utterance.lang = bcp47;
+      utterance.rate = 0.9;
+      if (selectedVoice) utterance.voice = selectedVoice;
+
+      let resolved = false;
+
+      utterance.onstart = () => {
+        if (!resolved) {
+          resolved = true;
+          resolve({
+            supported: true,
+            voiceCount: allVoices.length,
+            voicesForLang: langVoices.map(v => `${v.name} (${v.lang})`),
+            selectedVoice: selectedVoice ? `${selectedVoice.name} (${selectedVoice.lang})` : null,
+            speakResult: 'started',
+            displayMode,
+          });
+        }
+      };
+
+      utterance.onerror = (e) => {
+        if (!resolved) {
+          resolved = true;
+          resolve({
+            supported: true,
+            voiceCount: allVoices.length,
+            voicesForLang: langVoices.map(v => `${v.name} (${v.lang})`),
+            selectedVoice: selectedVoice ? `${selectedVoice.name} (${selectedVoice.lang})` : null,
+            speakResult: 'error',
+            error: e.error,
+            displayMode,
+          });
+        }
+      };
+
+      // Timeout: if neither onstart nor onerror fires within 3s
+      setTimeout(() => {
+        if (!resolved) {
+          resolved = true;
+          resolve({
+            supported: true,
+            voiceCount: allVoices.length,
+            voicesForLang: langVoices.map(v => `${v.name} (${v.lang})`),
+            selectedVoice: selectedVoice ? `${selectedVoice.name} (${selectedVoice.lang})` : null,
+            speakResult: 'timeout',
+            error: `speaking=${synth.speaking}, pending=${synth.pending}, paused=${synth.paused}`,
+            displayMode,
+          });
+        }
+      }, 3000);
+
+      if (synth.paused) synth.resume();
+      synth.speak(utterance);
+    }, 100);
+  });
+}
