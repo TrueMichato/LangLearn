@@ -12,130 +12,89 @@ const LANG_VOICE_MAP: Record<string, string> = {
   pt: 'pt-BR',
 };
 
-// Voice cache — eagerly populated via voiceschanged event.
-// On Android PWA standalone mode, getVoices() returns [] until this fires.
-let cachedVoices: SpeechSynthesisVoice[] = [];
-let voicesLoaded = false;
+// Chrome Android (especially in standalone PWA mode) needs a one-time
+// "warm-up" speak on the first user gesture to unlock the speech engine.
+let warmedUp = false;
 
-function loadVoices(): void {
-  if (!('speechSynthesis' in window)) return;
-  const voices = window.speechSynthesis.getVoices();
-  if (voices.length > 0) {
-    cachedVoices = voices;
-    voicesLoaded = true;
-  }
+function warmUp(): void {
+  if (warmedUp || !('speechSynthesis' in window)) return;
+  const u = new SpeechSynthesisUtterance('');
+  u.volume = 0;
+  u.onerror = () => {}; // swallow warm-up errors
+  window.speechSynthesis.speak(u);
+  warmedUp = true;
 }
 
-// Eagerly load voices and listen for the async voiceschanged event
-if (typeof window !== 'undefined' && 'speechSynthesis' in window) {
-  loadVoices();
-  window.speechSynthesis.addEventListener('voiceschanged', loadVoices);
+if (typeof document !== 'undefined') {
+  document.addEventListener('click', warmUp, { once: true });
+  document.addEventListener('touchstart', warmUp, { once: true });
 }
 
-/** Find the best matching voice for a language code. */
-export function findVoice(langCode: string): SpeechSynthesisVoice | null {
-  const bcp = LANG_VOICE_MAP[langCode] ?? langCode;
-  // Exact match on BCP-47 tag (e.g. "ja-JP")
-  const exact = cachedVoices.find((v) => v.lang === bcp);
-  if (exact) return exact;
-  // Prefix match (e.g. "ja-JP" matches voice with lang "ja")
-  const prefix = bcp.split('-')[0];
-  const partial = cachedVoices.find((v) => v.lang.startsWith(prefix));
-  return partial ?? null;
-}
-
-function doSpeak(text: string, language: string, rate: number): void {
-  // Only cancel if actively speaking/pending — calling cancel() when idle
-  // puts Chrome Android PWA into a broken state that silently drops utterances
-  if (window.speechSynthesis.speaking || window.speechSynthesis.pending) {
-    window.speechSynthesis.cancel();
-  }
-  // Wake up engine if Chrome put it to sleep (idle timeout workaround)
-  if (window.speechSynthesis.paused) {
-    window.speechSynthesis.resume();
-  }
-  const utterance = new SpeechSynthesisUtterance(text);
-  utterance.lang = LANG_VOICE_MAP[language] ?? language;
-  utterance.rate = rate || 0.9;
-  const voice = findVoice(language);
-  if (voice) utterance.voice = voice;
-  window.speechSynthesis.speak(utterance);
-}
-
+/**
+ * Speak text aloud. Uses a short delay after cancel() to work around
+ * a Chrome Android bug where cancel + immediate speak silently drops
+ * the utterance.
+ */
 export function speak(text: string, language: string, rateOverride?: number): void {
   if (!('speechSynthesis' in window)) return;
 
-  const rate = rateOverride ?? useSettingsStore.getState().ttsRate;
+  const synth = window.speechSynthesis;
+  const rate = rateOverride ?? useSettingsStore.getState().ttsRate ?? 0.9;
 
-  if (voicesLoaded) {
-    doSpeak(text, language, rate);
-    return;
+  // Cancel previous speech only if needed
+  const needsCancel = synth.speaking || synth.pending;
+  if (needsCancel) {
+    synth.cancel();
   }
 
-  // Voices not loaded yet — try a synchronous refresh, then retry after voiceschanged
-  loadVoices();
-  if (voicesLoaded) {
-    doSpeak(text, language, rate);
-    return;
-  }
+  // Chrome Android: small delay after cancel lets the engine reset properly
+  const delay = needsCancel ? 50 : 0;
 
-  // Last resort: wait briefly for voiceschanged then retry once
-  const onReady = () => {
-    window.speechSynthesis.removeEventListener('voiceschanged', onReady);
-    clearTimeout(timeout);
-    loadVoices();
-    doSpeak(text, language, rate);
-  };
-  window.speechSynthesis.addEventListener('voiceschanged', onReady);
-  // Fallback: if voiceschanged never fires, try anyway after 300ms
-  const timeout = window.setTimeout(() => {
-    window.speechSynthesis.removeEventListener('voiceschanged', onReady);
-    loadVoices();
-    doSpeak(text, language, rate);
-  }, 300);
+  setTimeout(() => {
+    if (synth.paused) synth.resume();
+
+    const utterance = new SpeechSynthesisUtterance(text);
+    utterance.lang = LANG_VOICE_MAP[language] ?? language;
+    utterance.rate = rate;
+    utterance.onerror = (e) => {
+      console.warn('[TTS] error:', e.error, 'text:', text.slice(0, 40));
+    };
+
+    synth.speak(utterance);
+  }, delay);
 }
 
 /**
  * Speak with a specific speed and return a Promise that resolves when done.
- * Use this for sequential TTS playback (e.g. Listening page passages).
+ * Used for sequential TTS playback (Listening page, Dictation drills).
  */
 export function speakWithSpeed(text: string, language: string, rate: number): Promise<void> {
   return new Promise((resolve) => {
     if (!('speechSynthesis' in window)) { resolve(); return; }
 
-    const fire = () => {
-      if (window.speechSynthesis.speaking || window.speechSynthesis.pending) {
-        window.speechSynthesis.cancel();
-      }
-      if (window.speechSynthesis.paused) {
-        window.speechSynthesis.resume();
-      }
+    const synth = window.speechSynthesis;
+
+    const needsCancel = synth.speaking || synth.pending;
+    if (needsCancel) {
+      synth.cancel();
+    }
+
+    const delay = needsCancel ? 50 : 0;
+
+    setTimeout(() => {
+      if (synth.paused) synth.resume();
+
       const utterance = new SpeechSynthesisUtterance(text);
       utterance.lang = LANG_VOICE_MAP[language] ?? language;
       utterance.rate = rate;
-      const voice = findVoice(language);
-      if (voice) utterance.voice = voice;
       utterance.onend = () => resolve();
-      utterance.onerror = () => resolve();
-      window.speechSynthesis.speak(utterance);
-    };
+      utterance.onerror = (e) => {
+        console.warn('[TTS] error:', e.error, 'text:', text.slice(0, 40));
+        resolve();
+      };
 
-    if (voicesLoaded) { fire(); return; }
-    loadVoices();
-    if (voicesLoaded) { fire(); return; }
-
-    const onReady = () => {
-      window.speechSynthesis.removeEventListener('voiceschanged', onReady);
-      clearTimeout(timeout);
-      loadVoices();
-      fire();
-    };
-    window.speechSynthesis.addEventListener('voiceschanged', onReady);
-    const timeout = window.setTimeout(() => {
-      window.speechSynthesis.removeEventListener('voiceschanged', onReady);
-      loadVoices();
-      fire();
-    }, 300);
+      synth.speak(utterance);
+    }, delay);
   });
 }
 

@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { createPortal } from 'react-dom';
 import type { Character } from '../../data/alphabets';
 import type { CharacterProgress } from '../../db/schema';
 import { speak } from '../../lib/tts';
@@ -168,12 +169,13 @@ export default function CharacterChart({ characters, alphabetName, language, pro
         <span className="flex items-center gap-1"><span className="w-3 h-3 rounded bg-emerald-200 dark:bg-emerald-800 inline-block" /> Mastered</span>
       </div>
 
-      {selectedChar && (
+      {selectedChar && createPortal(
         selectedChar.radicals || selectedChar.exampleWords ? (
           <KanjiDetailView character={selectedChar} language={language} onClose={() => setSelectedChar(null)} />
         ) : (
           <CharacterDetail char={selectedChar} language={language} onClose={() => setSelectedChar(null)} />
-        )
+        ),
+        document.body
       )}
     </div>
   );

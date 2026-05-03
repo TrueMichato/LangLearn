@@ -7,6 +7,11 @@
   --app-font-size: 18px;
   overflow-wrap: break-word;
 
+  /* Safe area insets for standalone PWA mode (viewport-fit=cover) */
+  --safe-top: env(safe-area-inset-top, 0px);
+  --safe-bottom: env(safe-area-inset-bottom, 0px);
+  --nav-height: 5rem;
+
   /* Primary palette */
   --color-primary: 79 70 229;       /* indigo-600 */
   --color-primary-light: 99 102 241; /* indigo-500 */
