@@ -11,6 +11,8 @@ export interface BadgeCheckStats {
   totalWords: number;
   completedLessons: number;
   masteredKanji: number;
+  completedChallenges: number;
+  savedTexts: number;
 }
 
 export function checkBadges(stats: BadgeCheckStats): string[] {
@@ -28,6 +30,8 @@ export function checkBadges(stats: BadgeCheckStats): string[] {
         case 'words': return stats.totalWords >= threshold;
         case 'lessons': return stats.completedLessons >= threshold;
         case 'kanji': return stats.masteredKanji >= threshold;
+        case 'challenges': return stats.completedChallenges >= threshold;
+        case 'texts': return stats.savedTexts >= threshold;
         default: return false;
       }
     })
@@ -35,7 +39,7 @@ export function checkBadges(stats: BadgeCheckStats): string[] {
 }
 
 export async function gatherBadgeStats(): Promise<BadgeCheckStats> {
-  const [sessions, words, allReviews, activities, allLessons, characters] =
+  const [sessions, words, allReviews, activities, allLessons, characters, texts] =
     await Promise.all([
       db.studySessions.toArray(),
       db.words.count(),
@@ -43,10 +47,12 @@ export async function gatherBadgeStats(): Promise<BadgeCheckStats> {
       db.dailyActivity.toArray(),
       db.lessonProgress.toArray(),
       db.characterProgress.where('mastery').equals('mastered').count(),
+      db.texts.count(),
     ]);
 
   const reviews = allReviews.filter((r) => r.repetitions > 0).length;
   const lessons = allLessons.filter((l) => l.completed).length;
+  const challenges = activities.filter((a) => a.challengeComplete).length;
 
   const timeXP = sessions.reduce((sum, s) => sum + s.xpEarned, 0);
   const bonusXP = useXPStore.getState().bonusXP;
@@ -58,5 +64,7 @@ export async function gatherBadgeStats(): Promise<BadgeCheckStats> {
     totalWords: words,
     completedLessons: lessons,
     masteredKanji: characters,
+    completedChallenges: challenges,
+    savedTexts: texts,
   };
 }
