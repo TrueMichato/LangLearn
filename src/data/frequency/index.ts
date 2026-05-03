@@ -1,10 +1,12 @@
 import { jaFrequencyMap } from './ja-frequency';
 import { ruFrequencyMap } from './ru-frequency';
+import { ptFrequencyMap } from './pt-frequency';
 
 export function getFrequencyRank(word: string, language: string): number | undefined {
   switch (language) {
     case 'ja': return jaFrequencyMap.get(word);
     case 'ru': return ruFrequencyMap.get(word);
+    case 'pt': return ptFrequencyMap.get(word);
     default: return undefined;
   }
 }
@@ -31,3 +33,4 @@ export function getFrequencyLabel(tier: string): string {
 
 export { jaFrequencyMap } from './ja-frequency';
 export { ruFrequencyMap } from './ru-frequency';
+export { ptFrequencyMap } from './pt-frequency';

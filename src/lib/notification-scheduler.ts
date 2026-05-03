@@ -411,36 +411,3 @@ export async function fireTestNotification(): Promise<void> {
 }
 
 export { STREAK_MILESTONES };
-
-// ─── Auto-mirror prefs to IDB whenever notification settings change ───
-import { useSettingsStore } from '../stores/settingsStore';
-
-const NOTIFICATION_KEYS: (keyof ReturnType<typeof useSettingsStore.getState>)[] = [
-  'notificationsEnabled', 'dailyReminderTime', 'quietHoursStart', 'quietHoursEnd',
-  'dailyNotificationBudget', 'dueCardAlerts', 'dueCardThreshold', 'streakReminders',
-  'streakReminderMinDays', 'weeklyDigest', 'comebackNudges', 'slippingWarnings',
-  'dailyGoalMetCelebration', 'streakMilestoneAlerts', 'dailyGoalMinutes', 'weeklyGoalMinutes',
-];
-
-useSettingsStore.subscribe((state, prevState) => {
-  const changed = NOTIFICATION_KEYS.some((k) => state[k] !== prevState[k]);
-  if (!changed) return;
-  void mirrorPrefsToIDB({
-    notificationsEnabled: state.notificationsEnabled,
-    dailyReminderTime: state.dailyReminderTime,
-    quietHoursStart: state.quietHoursStart,
-    quietHoursEnd: state.quietHoursEnd,
-    dailyNotificationBudget: state.dailyNotificationBudget,
-    dueCardAlerts: state.dueCardAlerts,
-    dueCardThreshold: state.dueCardThreshold,
-    streakReminders: state.streakReminders,
-    streakReminderMinDays: state.streakReminderMinDays,
-    weeklyDigest: state.weeklyDigest,
-    comebackNudges: state.comebackNudges,
-    slippingWarnings: state.slippingWarnings,
-    dailyGoalMetCelebration: state.dailyGoalMetCelebration,
-    streakMilestoneAlerts: state.streakMilestoneAlerts,
-    dailyGoalMinutes: state.dailyGoalMinutes,
-    weeklyGoalMinutes: state.weeklyGoalMinutes,
-  });
-});

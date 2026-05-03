@@ -3,7 +3,7 @@ export interface LanguageInfo {
   name: string;
   flag: string;
   nativeName: string;
-  hasLetterSystem?: 'hiragana-katakana' | 'cyrillic' | 'hanzi' | 'hangul';
+  hasLetterSystem?: 'hiragana-katakana' | 'cyrillic' | 'hanzi' | 'hangul' | 'latin-accents';
 }
 
 export const LANGUAGES: Record<string, LanguageInfo> = {
@@ -15,7 +15,7 @@ export const LANGUAGES: Record<string, LanguageInfo> = {
   de: { code: 'de', name: 'German', flag: '🇩🇪', nativeName: 'Deutsch' },
   zh: { code: 'zh', name: 'Chinese', flag: '🇨🇳', nativeName: '中文', hasLetterSystem: 'hanzi' },
   ko: { code: 'ko', name: 'Korean', flag: '🇰🇷', nativeName: '한국어', hasLetterSystem: 'hangul' },
-  pt: { code: 'pt', name: 'Portuguese', flag: '🇧🇷', nativeName: 'Português' },
+  pt: { code: 'pt', name: 'Portuguese', flag: '🇧🇷', nativeName: 'Português', hasLetterSystem: 'latin-accents' },
 };
 
 export const ALL_LANGUAGE_CODES = Object.keys(LANGUAGES);
