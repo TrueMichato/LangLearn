@@ -104,6 +104,11 @@ export function clampOutOfQuietHours(when: Date, start: string, end: string): Da
   return result;
 }
 
+// Grace period: notifications whose scheduled time has passed by less than
+// this amount are still included in the plan so the 5-minute tick interval
+// can catch and fire them via the "dueNow" path.
+const GRACE_MS = 10 * 60 * 1000; // 10 minutes
+
 function dateOnly(d: Date): Date {
   const x = new Date(d);
   x.setHours(0, 0, 0, 0);
@@ -153,7 +158,7 @@ export function computeUpcomingNotifications(
       prefs.quietHoursStart,
       prefs.quietHoursEnd
     );
-    if (cueAt.getTime() <= now.getTime()) continue; // already passed today
+    if (cueAt.getTime() < now.getTime() - GRACE_MS) continue; // well past — skip
 
     if (isSnoozed('daily-cue', cueAt.getTime())) continue;
 
@@ -193,7 +198,7 @@ export function computeUpcomingNotifications(
       const hh = Math.floor(targetMin / 60);
       const mm = targetMin % 60;
       const at = atTime(day, `${String(hh).padStart(2, '0')}:${String(mm).padStart(2, '0')}`);
-      if (at.getTime() <= now.getTime()) continue;
+      if (at.getTime() < now.getTime() - GRACE_MS) continue;
       // Only worth scheduling if today's goal isn't already met (for d === 0)
       if (d === 0 && state.todayGoalMet) continue;
       if (isSnoozed('streak-at-risk', at.getTime())) continue;
@@ -220,7 +225,7 @@ export function computeUpcomingNotifications(
       const mm = targetMin % 60;
       let at = atTime(day, `${String(hh).padStart(2, '0')}:${String(mm).padStart(2, '0')}`);
       at = clampOutOfQuietHours(at, prefs.quietHoursStart, prefs.quietHoursEnd);
-      if (at.getTime() <= now.getTime()) continue;
+      if (at.getTime() < now.getTime() - GRACE_MS) continue;
       if (isSnoozed('cards-due', at.getTime())) continue;
       out.push({
         category: 'cards-due',
@@ -245,7 +250,7 @@ export function computeUpcomingNotifications(
         prefs.quietHoursStart,
         prefs.quietHoursEnd
       );
-      if (at.getTime() <= now.getTime()) continue;
+      if (at.getTime() < now.getTime() - GRACE_MS) continue;
       // For "today" decision, check current weekly progress.
       // For future Wednesdays we still schedule (it'll be re-evaluated on refresh).
       if (d === 0) {
@@ -275,7 +280,7 @@ export function computeUpcomingNotifications(
         prefs.quietHoursStart,
         prefs.quietHoursEnd
       );
-      if (at.getTime() <= now.getTime()) continue;
+      if (at.getTime() < now.getTime() - GRACE_MS) continue;
       if (isSnoozed('weekly-digest', at.getTime())) continue;
       const minutes = Math.round(state.weekStudySeconds / 60);
       out.push({

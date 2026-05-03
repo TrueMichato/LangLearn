@@ -91,8 +91,10 @@ export function useNotificationScheduler() {
     };
 
     const run = async () => {
-      await refreshNotifications(prefs);
+      // Fire due notifications from the existing plan BEFORE refreshing,
+      // so past-due notifications aren't lost when the plan is replaced.
       await tickInApp(prefs);
+      await refreshNotifications(prefs);
     };
 
     void run();

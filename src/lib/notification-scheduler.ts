@@ -267,11 +267,14 @@ export async function refreshNotifications(prefs: FullPrefs): Promise<void> {
     const state = await gatherState(prefs);
     const now = new Date();
     const planned = computeUpcomingNotifications(state, prefs, now);
+    const fired = getFired();
 
-    // Cancel previously-scheduled notifications we own.
+    // Cancel previously-scheduled notifications we own (skip already-fired tags
+    // so we don't dismiss a notification the user is still looking at).
     const prev = readJSON<PersistedPlan | null>(PLAN_KEY, null);
     if (prev) {
       for (const n of prev.notifications) {
+        if (fired.tags.includes(n.tag)) continue;
         await cancelNotificationsByTag(n.tag);
       }
     }
@@ -279,11 +282,14 @@ export async function refreshNotifications(prefs: FullPrefs): Promise<void> {
     const scheduled: ScheduledNotification[] = [];
 
     for (const n of planned) {
+      // Already fired today — skip
+      if (fired.tags.includes(n.tag)) continue;
+
       // Don't track things further than 7 days out
       const tooFar = n.whenMs - now.getTime() > 7 * 24 * 60 * 60 * 1000;
       if (tooFar) continue;
 
-      // Streak milestones and goal-met are essentially "now" — show immediately.
+      // Due now (or recently past within the grace period) — fire immediately.
       const dueNow = n.whenMs - now.getTime() < 30_000;
       if (dueNow) {
         showNotification(n.title, { body: n.body, tag: n.tag });
