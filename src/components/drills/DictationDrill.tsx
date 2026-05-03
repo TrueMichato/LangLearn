@@ -5,6 +5,7 @@ import { XP_DICTATION_BASE, XP_PER_DICTATION_CORRECT } from '../../lib/xp';
 import { jaPassages } from '../../data/listening/ja-passages';
 import { ruPassages } from '../../data/listening/ru-passages';
 import { ptPassages } from '../../data/listening/pt-passages';
+import { speakWithSpeed } from '../../lib/tts';
 import type { ListeningPassage } from '../../data/listening/ja-passages';
 import type { DiffResult } from '../../lib/text-diff';
 
@@ -26,19 +27,7 @@ interface DictationDrillProps {
   onBack: () => void;
 }
 
-function speakSentence(text: string, language: string, rate: number): Promise<void> {
-  return new Promise((resolve) => {
-    if (!('speechSynthesis' in window)) { resolve(); return; }
-    window.speechSynthesis.cancel();
-    const utterance = new SpeechSynthesisUtterance(text);
-    const LANG_MAP: Record<string, string> = { ja: 'ja-JP', ru: 'ru-RU' };
-    utterance.lang = LANG_MAP[language] ?? language;
-    utterance.rate = rate;
-    utterance.onend = () => resolve();
-    utterance.onerror = () => resolve();
-    window.speechSynthesis.speak(utterance);
-  });
-}
+
 
 function extractSentences(passages: ListeningPassage[], difficulty: string): string[] {
   const filtered = difficulty === 'all'
@@ -98,7 +87,7 @@ export default function DictationDrill({ language, difficulty, onComplete, onBac
     if (isPlaying || playsLeft <= 0) return;
     setIsPlaying(true);
     setPlaysLeft((n) => n - 1);
-    await speakSentence(currentSentence, language, speed);
+    await speakWithSpeed(currentSentence, language, speed);
     setIsPlaying(false);
   }, [isPlaying, playsLeft, currentSentence, language, speed]);
 

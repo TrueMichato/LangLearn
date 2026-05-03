@@ -45,10 +45,18 @@ export function findVoice(langCode: string): SpeechSynthesisVoice | null {
 }
 
 function doSpeak(text: string, language: string, rate: number): void {
-  window.speechSynthesis.cancel();
+  // Only cancel if actively speaking/pending — calling cancel() when idle
+  // puts Chrome Android PWA into a broken state that silently drops utterances
+  if (window.speechSynthesis.speaking || window.speechSynthesis.pending) {
+    window.speechSynthesis.cancel();
+  }
+  // Wake up engine if Chrome put it to sleep (idle timeout workaround)
+  if (window.speechSynthesis.paused) {
+    window.speechSynthesis.resume();
+  }
   const utterance = new SpeechSynthesisUtterance(text);
   utterance.lang = LANG_VOICE_MAP[language] ?? language;
-  utterance.rate = rate;
+  utterance.rate = rate || 0.9;
   const voice = findVoice(language);
   if (voice) utterance.voice = voice;
   window.speechSynthesis.speak(utterance);
@@ -96,7 +104,12 @@ export function speakWithSpeed(text: string, language: string, rate: number): Pr
     if (!('speechSynthesis' in window)) { resolve(); return; }
 
     const fire = () => {
-      window.speechSynthesis.cancel();
+      if (window.speechSynthesis.speaking || window.speechSynthesis.pending) {
+        window.speechSynthesis.cancel();
+      }
+      if (window.speechSynthesis.paused) {
+        window.speechSynthesis.resume();
+      }
       const utterance = new SpeechSynthesisUtterance(text);
       utterance.lang = LANG_VOICE_MAP[language] ?? language;
       utterance.rate = rate;
