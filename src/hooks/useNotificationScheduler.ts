@@ -57,6 +57,17 @@ export function useNotificationScheduler() {
     }
   }, [notificationsEnabled]);
 
+  // Mirror prefs to IDB immediately whenever any notification setting changes,
+  // so the service worker always has fresh prefs for background notifications.
+  useEffect(() => {
+    void mirrorPrefsToIDB(buildPrefs());
+  }, [
+    notificationsEnabled, dailyReminderTime, quietHoursStart, quietHoursEnd,
+    dailyNotificationBudget, dueCardAlerts, dueCardThreshold, streakReminders,
+    streakReminderMinDays, weeklyDigest, comebackNudges, slippingWarnings,
+    dailyGoalMetCelebration, streakMilestoneAlerts, dailyGoalMinutes, weeklyGoalMinutes,
+  ]);
+
   useEffect(() => {
     if (!isNotificationSupported()) return;
 
