@@ -7,6 +7,7 @@ import { jaPassages } from '../data/listening/ja-passages';
 import { ruPassages } from '../data/listening/ru-passages';
 import { ptPassages } from '../data/listening/pt-passages';
 import DictationDrill from '../components/drills/DictationDrill';
+import { speakWithSpeed } from '../lib/tts';
 import type { ListeningPassage, ListeningQuestion } from '../data/listening/ja-passages';
 
 // ── helpers ─────────────────────────────────────────────
@@ -18,20 +19,6 @@ const LANG_PASSAGES: Record<string, ListeningPassage[]> = {
 };
 
 const SPEED_OPTIONS = [0.5, 0.75, 1.0, 1.25] as const;
-
-function speakWithSpeed(text: string, language: string, rate: number): Promise<void> {
-  return new Promise((resolve) => {
-    if (!('speechSynthesis' in window)) { resolve(); return; }
-    window.speechSynthesis.cancel();
-    const utterance = new SpeechSynthesisUtterance(text);
-    const LANG_MAP: Record<string, string> = { ja: 'ja-JP', ru: 'ru-RU', pt: 'pt-BR' };
-    utterance.lang = LANG_MAP[language] ?? language;
-    utterance.rate = rate;
-    utterance.onend = () => resolve();
-    utterance.onerror = () => resolve();
-    window.speechSynthesis.speak(utterance);
-  });
-}
 
 type Difficulty = 'easy' | 'medium' | 'hard' | 'all';
 type Mode = 'comprehension' | 'dictation';

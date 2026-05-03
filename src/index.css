@@ -5,6 +5,8 @@
 /* ── Design Tokens ────────────────────────────────────────── */
 :root {
   --app-font-size: 18px;
+  overflow-wrap: break-word;
+  word-break: break-word;
 
   /* Primary palette */
   --color-primary: 79 70 229;       /* indigo-600 */
