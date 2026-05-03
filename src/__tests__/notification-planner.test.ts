@@ -79,13 +79,34 @@ describe('computeUpcomingNotifications', () => {
     expect(today!.important).toBe(true);
   });
 
-  it('skips today\'s daily cue if it has already passed', () => {
+  it('skips today\'s daily cue if it has already passed beyond the grace period', () => {
     const lateNow = new Date('2026-01-05T20:00:00');
     const result = computeUpcomingNotifications(baseState(), basePrefs(), lateNow);
     // First daily-cue should be tomorrow at 09:00
     const cues = result.filter((n) => n.category === 'daily-cue');
     expect(cues.length).toBeGreaterThan(0);
     expect(new Date(cues[0].whenMs).getDate()).toBe(6);
+  });
+
+  it('includes today\'s daily cue if it passed within the grace period', () => {
+    // 09:00 daily cue, now is 09:07 — within 10 min grace
+    const justPast = new Date('2026-01-05T09:07:00');
+    const result = computeUpcomingNotifications(baseState(), basePrefs(), justPast);
+    const todayCue = result.find(
+      (n) => n.category === 'daily-cue' && new Date(n.whenMs).getDate() === 5
+    );
+    expect(todayCue).toBeDefined();
+    expect(todayCue!.whenMs).toBeLessThan(justPast.getTime());
+  });
+
+  it('excludes today\'s daily cue if it passed well beyond the grace period', () => {
+    // 09:00 daily cue, now is 09:15 — beyond 10 min grace
+    const wellPast = new Date('2026-01-05T09:15:00');
+    const result = computeUpcomingNotifications(baseState(), basePrefs(), wellPast);
+    const todayCue = result.find(
+      (n) => n.category === 'daily-cue' && new Date(n.whenMs).getDate() === 5
+    );
+    expect(todayCue).toBeUndefined();
   });
 
   it('respects daily notification budget', () => {
