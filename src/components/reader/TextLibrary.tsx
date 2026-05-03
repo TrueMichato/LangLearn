@@ -14,6 +14,7 @@ const LANGUAGE_COLORS: Record<string, string> = {
   de: 'bg-orange-100 text-orange-700 dark:bg-orange-900 dark:text-orange-300',
   zh: 'bg-emerald-100 text-emerald-700 dark:bg-emerald-900 dark:text-emerald-300',
   ko: 'bg-purple-100 text-purple-700 dark:bg-purple-900 dark:text-purple-300',
+  pt: 'bg-green-100 text-green-700 dark:bg-green-900 dark:text-green-300',
 };
 
 const DIFFICULTY_COLORS: Record<string, string> = {
@@ -56,7 +57,7 @@ export default function TextLibrary({ onSelectText, onSelectCurated }: TextLibra
 
   // Curated library state
   const activeLanguages = useSettingsStore((s) => s.activeLanguages);
-  const curatedLangs = activeLanguages.filter((l) => ['ja', 'ru'].includes(l));
+  const curatedLangs = activeLanguages.filter((l) => ['ja', 'ru', 'pt'].includes(l));
   const [curatedLang, setCuratedLang] = useState<string>(curatedLangs[0] ?? 'ja');
   const [curatedTexts, setCuratedTexts] = useState<CuratedText[]>([]);
   const [curatedLoading, setCuratedLoading] = useState(false);
@@ -138,7 +139,7 @@ export default function TextLibrary({ onSelectText, onSelectCurated }: TextLibra
 
       {subTab === 'curated' ? (
         <CuratedLibrary
-          langs={curatedLangs.length > 0 ? curatedLangs : ['ja', 'ru']}
+          langs={curatedLangs.length > 0 ? curatedLangs : ['ja', 'ru', 'pt']}
           currentLang={curatedLang}
           onChangeLang={setCuratedLang}
           texts={filteredCurated}

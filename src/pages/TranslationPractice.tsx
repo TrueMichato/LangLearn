@@ -5,6 +5,7 @@ import { useXPStore } from '../stores/xpStore';
 import { getLanguageLabel } from '../lib/languages';
 import { jaSentences } from '../data/sentences/ja-sentences';
 import { ruSentences } from '../data/sentences/ru-sentences';
+import { ptSentences } from '../data/sentences/pt-sentences';
 import type { PracticeSentence } from '../data/sentences/ja-sentences';
 import {
   XP_TRANSLATION_BASE,
@@ -33,6 +34,7 @@ const GRADE_POINTS: Record<Grade, number> = {
 function getSentences(lang: string): PracticeSentence[] {
   if (lang === 'ja') return jaSentences;
   if (lang === 'ru') return ruSentences;
+  if (lang === 'pt') return ptSentences;
   return [];
 }
 
@@ -47,7 +49,7 @@ function shuffle<T>(arr: T[]): T[] {
 
 export default function TranslationPracticePage() {
   const activeLanguages = useSettingsStore((s) => s.activeLanguages);
-  const supportedLanguages = activeLanguages.filter((l) => l === 'ja' || l === 'ru');
+  const supportedLanguages = activeLanguages.filter((l) => l === 'ja' || l === 'ru' || l === 'pt');
 
   const [phase, setPhase] = useState<Phase>('setup');
   const [language, setLanguage] = useState(supportedLanguages[0] ?? 'ja');

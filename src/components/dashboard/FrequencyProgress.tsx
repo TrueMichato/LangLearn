@@ -9,7 +9,7 @@ interface LangCoverage {
   top500: number;
 }
 
-const SUPPORTED_LANGUAGES = ['ja', 'ru'];
+const SUPPORTED_LANGUAGES = ['ja', 'ru', 'pt'];
 
 interface FrequencyProgressProps {
   languages: string[];
