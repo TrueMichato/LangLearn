@@ -297,8 +297,8 @@ export default function SettingsPage() {
 function TTSDiagPanel() {
   const [result, setResult] = useState<Awaited<ReturnType<typeof diagnoseTTS>> | null>(null);
   const [testing, setTesting] = useState(false);
-  const languages = useSettingsStore((s) => s.activeLanguages);
-  const lang = languages[0] ?? 'en';
+  const activeLanguages = useSettingsStore((s) => s.activeLanguages);
+  const lang = activeLanguages[0] ?? 'en';
 
   const runTest = async () => {
     setTesting(true);
@@ -308,8 +308,9 @@ function TTSDiagPanel() {
       setResult(r);
     } catch (e) {
       setResult({
-        supported: false, voiceCount: 0, voicesForLang: [], selectedVoice: null,
-        speakResult: 'error', error: String(e), displayMode: 'unknown',
+        supported: false, voiceCount: 0, voicesForLang: [],
+        tests: [{ label: 'exception', result: 'error', error: String(e) }],
+        displayMode: 'unknown',
       });
     }
     setTesting(false);
@@ -319,26 +320,32 @@ function TTSDiagPanel() {
     <section className="card p-4 space-y-3">
       <SectionHeading icon="🔊" label="TTS Diagnostics" />
       <p className="text-xs text-slate-500 dark:text-slate-400">
-        Tap below to test text-to-speech for {getLanguageLabel(lang)}.
+        Runs 4 TTS tests with different configurations for {getLanguageLabel(lang)}.
       </p>
       <button
         onClick={runTest}
         disabled={testing}
         className="w-full gradient-primary text-white py-2 rounded-xl font-semibold hover:opacity-90 transition-opacity press-feedback disabled:opacity-50"
       >
-        {testing ? '⏳ Testing…' : '▶ Test TTS'}
+        {testing ? '⏳ Running tests…' : '▶ Run TTS Tests'}
       </button>
       {result && (
-        <div className="bg-slate-100 dark:bg-slate-700 rounded-xl p-3 text-xs font-mono space-y-1 text-slate-700 dark:text-slate-300 break-all">
+        <div className="bg-slate-100 dark:bg-slate-700 rounded-xl p-3 text-xs font-mono space-y-2 text-slate-700 dark:text-slate-300 break-all">
           <p>mode: {result.displayMode}</p>
-          <p>supported: {String(result.supported)}</p>
-          <p>voices total: {result.voiceCount}</p>
-          <p>voices for {lang}: {result.voicesForLang.length > 0 ? result.voicesForLang.join(', ') : '(none)'}</p>
-          <p>selected: {result.selectedVoice ?? '(none)'}</p>
-          <p className={result.speakResult === 'started' ? 'text-green-600 dark:text-green-400 font-bold' : 'text-red-600 dark:text-red-400 font-bold'}>
-            result: {result.speakResult}
-          </p>
-          {result.error && <p>detail: {result.error}</p>}
+          <p>voices: {result.voiceCount} total, {result.voicesForLang.length} for {lang}</p>
+          {result.voicesForLang.length > 0 && (
+            <p className="text-[10px]">{result.voicesForLang.join(', ')}</p>
+          )}
+          <hr className="border-slate-300 dark:border-slate-600" />
+          {result.tests.map((t, i) => (
+            <div key={i} className="pl-2 border-l-2 border-slate-400 dark:border-slate-500">
+              <p className={t.result === 'started' ? 'text-green-600 dark:text-green-400 font-bold' : 'text-red-600 dark:text-red-400 font-bold'}>
+                Test {i + 1}: {t.result}
+              </p>
+              <p className="text-[10px] opacity-75">{t.label}</p>
+              {t.error && <p className="text-[10px]">↳ {t.error}</p>}
+            </div>
+          ))}
         </div>
       )}
     </section>

@@ -12,111 +12,11 @@ const LANG_VOICE_MAP: Record<string, string> = {
   pt: 'pt-BR',
 };
 
-// ─── Voice loading ───
-// Chrome Android (especially standalone PWA) loads voices asynchronously.
-// Speaking before voices are loaded silently fails. We eagerly load voices
-// and cache them by language prefix.
-
-const voiceCache = new Map<string, SpeechSynthesisVoice>();
-let voicesLoaded = false;
-
-function loadVoices(): void {
-  if (!('speechSynthesis' in window)) return;
-  const voices = window.speechSynthesis.getVoices();
-  if (voices.length === 0) return;
-  voicesLoaded = true;
-  voiceCache.clear();
-  for (const voice of voices) {
-    // Store first voice found for each language prefix (e.g. "ja", "ru", "en")
-    const prefix = voice.lang.slice(0, 2).toLowerCase();
-    if (!voiceCache.has(prefix)) {
-      voiceCache.set(prefix, voice);
-    }
-  }
-}
-
-if (typeof window !== 'undefined' && 'speechSynthesis' in window) {
-  // Try immediately (voices may already be cached in browser mode)
-  loadVoices();
-  // Also listen for async load (standalone PWA mode)
-  window.speechSynthesis.addEventListener?.('voiceschanged', loadVoices);
-  // Fallback: some browsers use onvoiceschanged property instead of addEventListener
-  if (!window.speechSynthesis.addEventListener) {
-    window.speechSynthesis.onvoiceschanged = loadVoices;
-  }
-}
-
-// ─── Audio context unlock ───
-// Some Android browsers require an audio context unlock from a user gesture
-// before any audio (including speech synthesis) will play.
-
-let audioUnlocked = false;
-
-function unlockAudio(): void {
-  if (audioUnlocked) return;
-  audioUnlocked = true;
-  // Force voices to load on first interaction too
-  loadVoices();
-  try {
-    const Ctx = window.AudioContext || (window as unknown as Record<string, typeof AudioContext>).webkitAudioContext;
-    if (Ctx) {
-      const ctx = new Ctx();
-      const buf = ctx.createBuffer(1, 1, 22050);
-      const src = ctx.createBufferSource();
-      src.buffer = buf;
-      src.connect(ctx.destination);
-      src.start(0);
-      ctx.resume().catch(() => {});
-      // Close after a short time to free resources
-      setTimeout(() => ctx.close().catch(() => {}), 1000);
-    }
-  } catch {
-    // Not critical
-  }
-}
-
-if (typeof document !== 'undefined') {
-  document.addEventListener('click', unlockAudio, { once: true });
-  document.addEventListener('touchstart', unlockAudio, { once: true });
-}
-
-// ─── Core speak logic ───
-
-function getVoiceForLang(language: string): SpeechSynthesisVoice | null {
-  // Try cached voice for the 2-letter prefix
-  const prefix = language.slice(0, 2).toLowerCase();
-  if (voiceCache.has(prefix)) return voiceCache.get(prefix)!;
-
-  // Voices might not have loaded yet — try a synchronous getVoices() call
-  if (!voicesLoaded) loadVoices();
-  return voiceCache.get(prefix) ?? null;
-}
-
-function doSpeak(utterance: SpeechSynthesisUtterance): void {
-  const synth = window.speechSynthesis;
-  if (synth.paused) synth.resume();
-  synth.speak(utterance);
-}
-
-function createUtterance(text: string, language: string, rate: number): SpeechSynthesisUtterance {
-  const utterance = new SpeechSynthesisUtterance(text);
-  const bcp47 = LANG_VOICE_MAP[language] ?? language;
-  utterance.lang = bcp47;
-  utterance.rate = rate;
-
-  // Explicitly set voice — critical for Android PWA where lang-only may fail
-  const voice = getVoiceForLang(language);
-  if (voice) {
-    utterance.voice = voice;
-  }
-
-  return utterance;
-}
-
 /**
- * Speak text aloud. Keeps the call synchronous within the user gesture
- * when nothing is currently playing (the common case for button taps).
- * Only defers via setTimeout when we need to cancel ongoing speech first.
+ * Speak text aloud.
+ * Intentionally kept simple — the original minimal approach that used to work.
+ * Chrome Android standalone has quirks with explicit .voice assignment and
+ * .cancel()→.speak() timing, so we avoid both when possible.
  */
 export function speak(text: string, language: string, rateOverride?: number): void {
   if (!('speechSynthesis' in window)) return;
@@ -124,24 +24,22 @@ export function speak(text: string, language: string, rateOverride?: number): vo
   const synth = window.speechSynthesis;
   const rate = rateOverride ?? useSettingsStore.getState().ttsRate ?? 0.9;
 
-  const utterance = createUtterance(text, language, rate);
-  utterance.onerror = (e) => {
-    if (e.error !== 'interrupted') {
-      console.warn('[TTS] error:', e.error, 'text:', text.slice(0, 40));
-    }
-  };
-
+  // Only cancel if something is actively playing
   if (synth.speaking || synth.pending) {
     synth.cancel();
-    setTimeout(() => doSpeak(utterance), 80);
-  } else {
-    doSpeak(utterance);
   }
+
+  const utterance = new SpeechSynthesisUtterance(text);
+  utterance.lang = LANG_VOICE_MAP[language] ?? language;
+  utterance.rate = rate;
+  // Do NOT set utterance.voice — let the engine pick. Explicit voice
+  // assignment causes synthesis-failed on some Android Chrome versions.
+
+  synth.speak(utterance);
 }
 
 /**
  * Speak with a specific speed and return a Promise that resolves when done.
- * Used for sequential TTS playback (Listening page, Dictation drills).
  */
 export function speakWithSpeed(text: string, language: string, rate: number): Promise<void> {
   return new Promise((resolve) => {
@@ -149,21 +47,17 @@ export function speakWithSpeed(text: string, language: string, rate: number): Pr
 
     const synth = window.speechSynthesis;
 
-    const utterance = createUtterance(text, language, rate);
-    utterance.onend = () => resolve();
-    utterance.onerror = (e) => {
-      if (e.error !== 'interrupted') {
-        console.warn('[TTS] error:', e.error, 'text:', text.slice(0, 40));
-      }
-      resolve();
-    };
-
     if (synth.speaking || synth.pending) {
       synth.cancel();
-      setTimeout(() => doSpeak(utterance), 80);
-    } else {
-      doSpeak(utterance);
     }
+
+    const utterance = new SpeechSynthesisUtterance(text);
+    utterance.lang = LANG_VOICE_MAP[language] ?? language;
+    utterance.rate = rate;
+    utterance.onend = () => resolve();
+    utterance.onerror = () => resolve();
+
+    synth.speak(utterance);
   });
 }
 
@@ -179,19 +73,58 @@ export function isTTSSupported(): boolean {
   return 'speechSynthesis' in window;
 }
 
-/**
- * Run TTS diagnostics — returns a detailed status object and attempts
- * to speak a test phrase. Designed for the Settings page debug panel.
- */
-export async function diagnoseTTS(language: string): Promise<{
+// ─── Diagnostics (used by Settings page) ───
+
+interface DiagResult {
+  label: string;
+  result: 'started' | 'error' | 'timeout';
+  error?: string;
+}
+
+export interface TTSDiagnostics {
+  displayMode: string;
   supported: boolean;
   voiceCount: number;
   voicesForLang: string[];
-  selectedVoice: string | null;
-  speakResult: 'started' | 'error' | 'timeout' | 'not-supported';
-  error?: string;
-  displayMode: string;
-}> {
+  tests: DiagResult[];
+}
+
+function testSpeak(opts: {
+  text: string;
+  lang?: string;
+  voice?: SpeechSynthesisVoice;
+  rate?: number;
+}): Promise<DiagResult & { label: string }> {
+  return new Promise((resolve) => {
+    const synth = window.speechSynthesis;
+    const label = [
+      opts.lang ? `lang=${opts.lang}` : 'no-lang',
+      opts.voice ? `voice=${opts.voice.name}` : 'no-voice',
+      `rate=${opts.rate ?? 1}`,
+      `"${opts.text}"`,
+    ].join(', ');
+
+    const utterance = new SpeechSynthesisUtterance(opts.text);
+    if (opts.lang) utterance.lang = opts.lang;
+    if (opts.voice) utterance.voice = opts.voice;
+    if (opts.rate) utterance.rate = opts.rate;
+
+    let resolved = false;
+    const done = (r: DiagResult) => { if (!resolved) { resolved = true; resolve({ ...r, label }); } };
+
+    utterance.onstart = () => done({ label, result: 'started' });
+    utterance.onerror = (e) => done({ label, result: 'error', error: e.error });
+    setTimeout(() => done({
+      label,
+      result: 'timeout',
+      error: `speaking=${synth.speaking}, pending=${synth.pending}, paused=${synth.paused}`,
+    }), 3000);
+
+    synth.speak(utterance);
+  });
+}
+
+export async function diagnoseTTS(language: string): Promise<TTSDiagnostics> {
   const displayMode = window.matchMedia?.('(display-mode: standalone)').matches
     ? 'standalone'
     : window.matchMedia?.('(display-mode: browser)').matches
@@ -199,82 +132,46 @@ export async function diagnoseTTS(language: string): Promise<{
       : 'unknown';
 
   if (!('speechSynthesis' in window)) {
-    return {
-      supported: false, voiceCount: 0, voicesForLang: [], selectedVoice: null,
-      speakResult: 'not-supported', displayMode,
-    };
+    return { displayMode, supported: false, voiceCount: 0, voicesForLang: [], tests: [] };
   }
 
   const synth = window.speechSynthesis;
-
-  // Force a fresh voice load
-  loadVoices();
   const allVoices = synth.getVoices();
   const bcp47 = LANG_VOICE_MAP[language] ?? language;
   const prefix = language.slice(0, 2).toLowerCase();
   const langVoices = allVoices.filter(v => v.lang.toLowerCase().startsWith(prefix));
-  const selectedVoice = getVoiceForLang(language);
+  const firstVoice = langVoices[0] ?? null;
 
-  const testText = language === 'ja' ? 'テスト' : language === 'ru' ? 'Тест' : 'Test';
+  const testText = language === 'ja' ? 'こんにちは' : language === 'ru' ? 'Привет' : 'Hello';
+  const tests: DiagResult[] = [];
 
-  return new Promise((resolve) => {
+  // Test 1: Minimal — just lang, default rate, no explicit voice
+  synth.cancel();
+  await new Promise(r => setTimeout(r, 100));
+  tests.push(await testSpeak({ text: testText, lang: bcp47 }));
+
+  // Test 2: With explicit voice
+  if (firstVoice) {
     synth.cancel();
+    await new Promise(r => setTimeout(r, 100));
+    tests.push(await testSpeak({ text: testText, lang: bcp47, voice: firstVoice, rate: 0.9 }));
+  }
 
-    setTimeout(() => {
-      const utterance = new SpeechSynthesisUtterance(testText);
-      utterance.lang = bcp47;
-      utterance.rate = 0.9;
-      if (selectedVoice) utterance.voice = selectedVoice;
+  // Test 3: English fallback (to check if TTS works at all)
+  synth.cancel();
+  await new Promise(r => setTimeout(r, 100));
+  tests.push(await testSpeak({ text: 'Hello', lang: 'en-US', rate: 1.0 }));
 
-      let resolved = false;
+  // Test 4: Completely bare — no lang, no voice, no rate
+  synth.cancel();
+  await new Promise(r => setTimeout(r, 100));
+  tests.push(await testSpeak({ text: 'Test' }));
 
-      utterance.onstart = () => {
-        if (!resolved) {
-          resolved = true;
-          resolve({
-            supported: true,
-            voiceCount: allVoices.length,
-            voicesForLang: langVoices.map(v => `${v.name} (${v.lang})`),
-            selectedVoice: selectedVoice ? `${selectedVoice.name} (${selectedVoice.lang})` : null,
-            speakResult: 'started',
-            displayMode,
-          });
-        }
-      };
-
-      utterance.onerror = (e) => {
-        if (!resolved) {
-          resolved = true;
-          resolve({
-            supported: true,
-            voiceCount: allVoices.length,
-            voicesForLang: langVoices.map(v => `${v.name} (${v.lang})`),
-            selectedVoice: selectedVoice ? `${selectedVoice.name} (${selectedVoice.lang})` : null,
-            speakResult: 'error',
-            error: e.error,
-            displayMode,
-          });
-        }
-      };
-
-      // Timeout: if neither onstart nor onerror fires within 3s
-      setTimeout(() => {
-        if (!resolved) {
-          resolved = true;
-          resolve({
-            supported: true,
-            voiceCount: allVoices.length,
-            voicesForLang: langVoices.map(v => `${v.name} (${v.lang})`),
-            selectedVoice: selectedVoice ? `${selectedVoice.name} (${selectedVoice.lang})` : null,
-            speakResult: 'timeout',
-            error: `speaking=${synth.speaking}, pending=${synth.pending}, paused=${synth.paused}`,
-            displayMode,
-          });
-        }
-      }, 3000);
-
-      if (synth.paused) synth.resume();
-      synth.speak(utterance);
-    }, 100);
-  });
+  return {
+    displayMode,
+    supported: true,
+    voiceCount: allVoices.length,
+    voicesForLang: langVoices.map(v => `${v.name} (${v.lang})`),
+    tests,
+  };
 }
