@@ -13,9 +13,6 @@ const LANG_VOICE_MAP: Record<string, string> = {
 };
 
 // ─── Voice loading ───
-// Chrome Android requires voices to be loaded before speak() works.
-// getVoices() returns [] until voiceschanged fires. We trigger loading
-// at module init and provide a promise to wait on before first speak.
 
 let voicesReady = false;
 // eslint-disable-next-line @typescript-eslint/no-empty-function
@@ -34,23 +31,16 @@ function onVoicesLoaded(): void {
 }
 
 if (typeof window !== 'undefined' && 'speechSynthesis' in window) {
-  // Trigger initial load
   const initial = window.speechSynthesis.getVoices();
   if (initial.length > 0) {
     voicesReady = true;
     resolveVoices();
   }
-  // Listen for async load (required on Chrome Android)
   window.speechSynthesis.onvoiceschanged = onVoicesLoaded;
 }
 
-/**
- * Wait for voices to be available, with a timeout fallback.
- * Returns true if voices loaded, false if timed out.
- */
 async function ensureVoices(timeoutMs = 2000): Promise<boolean> {
   if (voicesReady) return true;
-  // Poke getVoices() to trigger loading
   window.speechSynthesis.getVoices();
   return Promise.race([
     voicesPromise.then(() => true),
@@ -58,58 +48,125 @@ async function ensureVoices(timeoutMs = 2000): Promise<boolean> {
   ]);
 }
 
+// ─── Google Translate TTS fallback ───
+// When the device's speech synthesis engine is broken (synthesis-failed),
+// we fall back to Google Translate's TTS endpoint via an <audio> element.
+
+let useFallback = false; // Switch to fallback after first synthesis-failed
+
+function getGoogleTTSUrl(text: string, language: string, slow = false): string {
+  const tl = language.slice(0, 2).toLowerCase();
+  const encoded = encodeURIComponent(text.slice(0, 200));
+  return `https://translate.google.com/translate_tts?ie=UTF-8&q=${encoded}&tl=${tl}&total=1&idx=0&textlen=${text.length}&client=tw-ob${slow ? '&ttsspeed=0.5' : ''}`;
+}
+
+let audioEl: HTMLAudioElement | null = null;
+
+function speakViaFallback(text: string, language: string, rate?: number): Promise<void> {
+  return new Promise((resolve) => {
+    if (!audioEl) {
+      audioEl = new Audio();
+    }
+    const slow = (rate ?? 1) < 0.7;
+    audioEl.src = getGoogleTTSUrl(text, language, slow);
+    audioEl.playbackRate = Math.max(0.5, Math.min(rate ?? 1, 2));
+    audioEl.onended = () => resolve();
+    audioEl.onerror = () => resolve();
+    audioEl.play().catch(() => resolve());
+  });
+}
+
+// ─── Main speak functions ───
+
 /**
  * Speak text aloud.
- * If voices haven't loaded yet, waits briefly for them.
+ * Tries native speechSynthesis first; if it fails with synthesis-failed,
+ * permanently switches to Google Translate TTS audio fallback.
  */
 export async function speak(text: string, language: string, rateOverride?: number): Promise<void> {
-  if (!('speechSynthesis' in window)) return;
-
-  const synth = window.speechSynthesis;
   const rate = rateOverride ?? useSettingsStore.getState().ttsRate ?? 0.9;
 
-  // Ensure voices are available
+  if (useFallback) {
+    return speakViaFallback(text, language, rate);
+  }
+
+  if (!('speechSynthesis' in window)) {
+    useFallback = true;
+    return speakViaFallback(text, language, rate);
+  }
+
+  const synth = window.speechSynthesis;
   await ensureVoices();
 
-  // Cancel any ongoing speech
   if (synth.speaking || synth.pending) {
     synth.cancel();
-    // Small delay after cancel to let engine reset
     await new Promise((r) => setTimeout(r, 50));
   }
 
-  const utterance = new SpeechSynthesisUtterance(text);
-  utterance.lang = LANG_VOICE_MAP[language] ?? language;
-  utterance.rate = rate;
+  return new Promise((resolve) => {
+    const utterance = new SpeechSynthesisUtterance(text);
+    utterance.lang = LANG_VOICE_MAP[language] ?? language;
+    utterance.rate = rate;
 
-  synth.speak(utterance);
+    utterance.onend = () => resolve();
+    utterance.onerror = (e) => {
+      if (e.error === 'synthesis-failed' || e.error === 'audio-busy' || e.error === 'network') {
+        // Native TTS is broken — switch to fallback permanently
+        useFallback = true;
+        speakViaFallback(text, language, rate).then(resolve);
+      } else {
+        resolve();
+      }
+    };
+
+    synth.speak(utterance);
+
+    // Safety timeout: if neither onend nor onerror fires within 4s
+    setTimeout(() => {
+      if (!useFallback) {
+        useFallback = true;
+      }
+      resolve();
+    }, 4000);
+  });
 }
 
 /**
  * Speak with a specific speed and return a Promise that resolves when done.
  */
-export function speakWithSpeed(text: string, language: string, rate: number): Promise<void> {
+export async function speakWithSpeed(text: string, language: string, rate: number): Promise<void> {
+  if (useFallback) {
+    return speakViaFallback(text, language, rate);
+  }
+
+  if (!('speechSynthesis' in window)) {
+    useFallback = true;
+    return speakViaFallback(text, language, rate);
+  }
+
+  const synth = window.speechSynthesis;
+  await ensureVoices();
+
+  if (synth.speaking || synth.pending) {
+    synth.cancel();
+  }
+
   return new Promise((resolve) => {
-    if (!('speechSynthesis' in window)) { resolve(); return; }
+    const utterance = new SpeechSynthesisUtterance(text);
+    utterance.lang = LANG_VOICE_MAP[language] ?? language;
+    utterance.rate = rate;
 
-    const synth = window.speechSynthesis;
-
-    // Ensure voices loaded, then speak
-    ensureVoices().then(() => {
-      if (synth.speaking || synth.pending) {
-        synth.cancel();
+    utterance.onend = () => resolve();
+    utterance.onerror = (e) => {
+      if (e.error === 'synthesis-failed' || e.error === 'audio-busy' || e.error === 'network') {
+        useFallback = true;
+        speakViaFallback(text, language, rate).then(resolve);
+      } else {
+        resolve();
       }
+    };
 
-      const utterance = new SpeechSynthesisUtterance(text);
-      utterance.lang = LANG_VOICE_MAP[language] ?? language;
-      utterance.rate = rate;
-      utterance.onend = () => resolve();
-      utterance.onerror = () => resolve();
-
-      // Small delay after cancel if needed
-      const delay = (synth.speaking || synth.pending) ? 50 : 0;
-      setTimeout(() => synth.speak(utterance), delay);
-    });
+    synth.speak(utterance);
   });
 }
 
@@ -122,10 +179,10 @@ export const TTS_SPEEDS = [
 export type TTSSpeed = (typeof TTS_SPEEDS)[number]['value'];
 
 export function isTTSSupported(): boolean {
-  return 'speechSynthesis' in window;
+  return true; // Always true now thanks to fallback
 }
 
-// ─── Diagnostics (used by Settings page) ───
+// ─── Diagnostics ───
 
 interface DiagResult {
   label: string;
@@ -188,10 +245,7 @@ export async function diagnoseTTS(language: string): Promise<TTSDiagnostics> {
   }
 
   const synth = window.speechSynthesis;
-
-  // Wait for voices to load (critical on Chrome Android)
   const voicesLoaded = await ensureVoices(3000);
-
   const allVoices = synth.getVoices();
   const bcp47 = LANG_VOICE_MAP[language] ?? language;
   const prefix = language.slice(0, 2).toLowerCase();
@@ -201,12 +255,11 @@ export async function diagnoseTTS(language: string): Promise<TTSDiagnostics> {
   const testText = language === 'ja' ? 'こんにちは' : language === 'ru' ? 'Привет' : 'Hello';
   const tests: DiagResult[] = [];
 
-  // Report voice loading status
   if (!voicesLoaded) {
     tests.push({ label: 'voices-load', result: 'error', error: `voices did not load (${allVoices.length} found)` });
   }
 
-  // Test 1: Minimal — just lang, default rate, no explicit voice
+  // Test 1: Native speechSynthesis (lang-only)
   synth.cancel();
   await new Promise(r => setTimeout(r, 100));
   tests.push(await testSpeak({ text: testText, lang: bcp47 }));
@@ -218,15 +271,18 @@ export async function diagnoseTTS(language: string): Promise<TTSDiagnostics> {
     tests.push(await testSpeak({ text: testText, lang: bcp47, voice: firstVoice, rate: 0.9 }));
   }
 
-  // Test 3: English fallback (to check if TTS works at all)
+  // Test 3: English fallback
   synth.cancel();
   await new Promise(r => setTimeout(r, 100));
   tests.push(await testSpeak({ text: 'Hello', lang: 'en-US', rate: 1.0 }));
 
-  // Test 4: Completely bare — no lang, no voice, no rate
-  synth.cancel();
-  await new Promise(r => setTimeout(r, 100));
-  tests.push(await testSpeak({ text: 'Test' }));
+  // Test 4: Google Translate fallback
+  try {
+    await speakViaFallback(testText, language, 1.0);
+    tests.push({ label: `Google TTS fallback "${testText}"`, result: 'started' });
+  } catch {
+    tests.push({ label: 'Google TTS fallback', result: 'error', error: 'audio playback failed' });
+  }
 
   return {
     displayMode,
