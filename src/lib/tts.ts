@@ -12,28 +12,50 @@ const LANG_VOICE_MAP: Record<string, string> = {
   pt: 'pt-BR',
 };
 
-// Chrome Android (especially in standalone PWA mode) needs a one-time
-// "warm-up" speak on the first user gesture to unlock the speech engine.
-let warmedUp = false;
+// Chrome Android standalone PWA requires speechSynthesis.speak() to run
+// synchronously inside a user-gesture callback. setTimeout(fn, 0) breaks
+// the gesture chain, silently dropping the utterance.
+//
+// Strategy:
+//  - First call: speak() synchronously (no cancel needed) — gesture preserved.
+//  - Subsequent calls while still speaking: cancel(), then setTimeout to give
+//    the engine time to reset before re-speaking.
+//  - Warm-up: use AudioContext unlock on first touch (more reliable than an
+//    empty SpeechSynthesisUtterance which some engines ignore).
 
-function warmUp(): void {
-  if (warmedUp || !('speechSynthesis' in window)) return;
-  const u = new SpeechSynthesisUtterance('');
-  u.volume = 0;
-  u.onerror = () => {}; // swallow warm-up errors
-  window.speechSynthesis.speak(u);
-  warmedUp = true;
+let audioUnlocked = false;
+
+function unlockAudio(): void {
+  if (audioUnlocked) return;
+  audioUnlocked = true;
+  try {
+    const ctx = new (window.AudioContext || (window as unknown as Record<string, typeof AudioContext>).webkitAudioContext)();
+    const buf = ctx.createBuffer(1, 1, 22050);
+    const src = ctx.createBufferSource();
+    src.buffer = buf;
+    src.connect(ctx.destination);
+    src.start(0);
+    ctx.resume().catch(() => {});
+  } catch {
+    // AudioContext not available — not critical
+  }
 }
 
 if (typeof document !== 'undefined') {
-  document.addEventListener('click', warmUp, { once: true });
-  document.addEventListener('touchstart', warmUp, { once: true });
+  document.addEventListener('click', unlockAudio, { once: true });
+  document.addEventListener('touchstart', unlockAudio, { once: true });
+}
+
+function doSpeak(utterance: SpeechSynthesisUtterance): void {
+  const synth = window.speechSynthesis;
+  if (synth.paused) synth.resume();
+  synth.speak(utterance);
 }
 
 /**
- * Speak text aloud. Uses a short delay after cancel() to work around
- * a Chrome Android bug where cancel + immediate speak silently drops
- * the utterance.
+ * Speak text aloud. Keeps the call synchronous within the user gesture
+ * when nothing is currently playing (the common case for button taps).
+ * Only defers via setTimeout when we need to cancel ongoing speech first.
  */
 export function speak(text: string, language: string, rateOverride?: number): void {
   if (!('speechSynthesis' in window)) return;
@@ -41,27 +63,23 @@ export function speak(text: string, language: string, rateOverride?: number): vo
   const synth = window.speechSynthesis;
   const rate = rateOverride ?? useSettingsStore.getState().ttsRate ?? 0.9;
 
-  // Cancel previous speech only if needed
-  const needsCancel = synth.speaking || synth.pending;
-  if (needsCancel) {
-    synth.cancel();
-  }
-
-  // Chrome Android: small delay after cancel lets the engine reset properly
-  const delay = needsCancel ? 50 : 0;
-
-  setTimeout(() => {
-    if (synth.paused) synth.resume();
-
-    const utterance = new SpeechSynthesisUtterance(text);
-    utterance.lang = LANG_VOICE_MAP[language] ?? language;
-    utterance.rate = rate;
-    utterance.onerror = (e) => {
+  const utterance = new SpeechSynthesisUtterance(text);
+  utterance.lang = LANG_VOICE_MAP[language] ?? language;
+  utterance.rate = rate;
+  utterance.onerror = (e) => {
+    if (e.error !== 'interrupted') {
       console.warn('[TTS] error:', e.error, 'text:', text.slice(0, 40));
-    };
+    }
+  };
 
-    synth.speak(utterance);
-  }, delay);
+  if (synth.speaking || synth.pending) {
+    synth.cancel();
+    // Delay only after cancel — engine needs time to reset
+    setTimeout(() => doSpeak(utterance), 60);
+  } else {
+    // Synchronous — preserves user gesture chain
+    doSpeak(utterance);
+  }
 }
 
 /**
@@ -74,27 +92,23 @@ export function speakWithSpeed(text: string, language: string, rate: number): Pr
 
     const synth = window.speechSynthesis;
 
-    const needsCancel = synth.speaking || synth.pending;
-    if (needsCancel) {
-      synth.cancel();
-    }
-
-    const delay = needsCancel ? 50 : 0;
-
-    setTimeout(() => {
-      if (synth.paused) synth.resume();
-
-      const utterance = new SpeechSynthesisUtterance(text);
-      utterance.lang = LANG_VOICE_MAP[language] ?? language;
-      utterance.rate = rate;
-      utterance.onend = () => resolve();
-      utterance.onerror = (e) => {
+    const utterance = new SpeechSynthesisUtterance(text);
+    utterance.lang = LANG_VOICE_MAP[language] ?? language;
+    utterance.rate = rate;
+    utterance.onend = () => resolve();
+    utterance.onerror = (e) => {
+      if (e.error !== 'interrupted') {
         console.warn('[TTS] error:', e.error, 'text:', text.slice(0, 40));
-        resolve();
-      };
+      }
+      resolve();
+    };
 
-      synth.speak(utterance);
-    }, delay);
+    if (synth.speaking || synth.pending) {
+      synth.cancel();
+      setTimeout(() => doSpeak(utterance), 60);
+    } else {
+      doSpeak(utterance);
+    }
   });
 }
 
