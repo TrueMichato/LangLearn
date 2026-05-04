@@ -362,7 +362,7 @@ export default function GuidedLearning({ characters, alphabetName, language, onP
         {/* Buttons */}
         <div className="flex gap-3">
           <button
-            onClick={() => speak(char.char, language)}
+            onClick={() => speak(char.pronunciation ?? char.char, language)}
             className="flex-1 bg-slate-100 dark:bg-slate-700 text-slate-700 dark:text-slate-200 px-5 py-2 rounded-xl font-medium min-h-[44px] press-feedback hover:bg-slate-200 dark:hover:bg-slate-600 transition-colors"
           >
             🔊 Listen
