@@ -9,6 +9,8 @@ const CATEGORY_LABELS: Record<BadgeDefinition['category'], string> = {
   vocabulary: '📚 Vocabulary',
   lessons: '📘 Lessons',
   kanji: '漢 Kanji',
+  'letters-ja': 'あ Japanese Kana',
+  'letters-ru': 'Б Russian Letters',
   'daily-challenge': '🎯 Daily Challenges',
   reading: '📖 Reading',
 };
@@ -20,6 +22,8 @@ const CATEGORY_ORDER: BadgeDefinition['category'][] = [
   'vocabulary',
   'lessons',
   'kanji',
+  'letters-ja',
+  'letters-ru',
   'daily-challenge',
   'reading',
 ];

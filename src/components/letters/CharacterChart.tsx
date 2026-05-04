@@ -51,7 +51,7 @@ function CharacterDetail({ char, language, onClose }: { char: Character; languag
         </div>
 
         <button
-          onClick={() => speak(char.char, language)}
+          onClick={() => speak(char.pronunciation ?? char.char, language)}
           className="mx-auto flex items-center gap-2 px-4 py-2 rounded-xl bg-indigo-600 text-white text-sm font-medium hover:bg-indigo-700 transition-colors press-feedback"
         >
           🔊 Play sound
@@ -148,7 +148,7 @@ export default function CharacterChart({ characters, alphabetName, language, pro
                   <button
                     key={c.char}
                     onClick={() => {
-                      speak(c.char, language);
+                      speak(c.pronunciation ?? c.char, language);
                       setSelectedChar(c);
                     }}
                     className={`flex flex-col items-center justify-center p-2 rounded-xl transition-all duration-300 active:scale-95 hover:scale-105 hover:shadow-md press-feedback ${masteryColor(p?.mastery)}`}

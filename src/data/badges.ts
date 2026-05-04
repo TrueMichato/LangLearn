@@ -3,9 +3,9 @@ export interface BadgeDefinition {
   name: string;
   description: string;
   icon: string;
-  category: 'xp' | 'streak' | 'reviews' | 'vocabulary' | 'lessons' | 'kanji' | 'daily-challenge' | 'reading';
+  category: 'xp' | 'streak' | 'reviews' | 'vocabulary' | 'lessons' | 'kanji' | 'letters-ja' | 'letters-ru' | 'daily-challenge' | 'reading';
   condition: {
-    type: 'xp' | 'streak' | 'reviews' | 'words' | 'lessons' | 'kanji' | 'challenges' | 'texts';
+    type: 'xp' | 'streak' | 'reviews' | 'words' | 'lessons' | 'kanji' | 'letters-ja' | 'letters-ru' | 'challenges' | 'texts';
     threshold: number;
   };
 }
@@ -60,6 +60,16 @@ export const BADGES: BadgeDefinition[] = [
   { id: 'kanji-50', name: 'Kanji Student', description: 'Master 50 kanji', icon: '字', category: 'kanji', condition: { type: 'kanji', threshold: 50 } },
   { id: 'kanji-100', name: 'Kanji Warrior', description: 'Master 100 kanji', icon: '刀', category: 'kanji', condition: { type: 'kanji', threshold: 100 } },
   { id: 'kanji-200', name: 'Kanji Sage', description: 'Master 200 kanji', icon: '龍', category: 'kanji', condition: { type: 'kanji', threshold: 200 } },
+
+  // Japanese Kana Badges (Hiragana + Katakana)
+  { id: 'letters-ja-10', name: 'Kana Starter', description: 'Master 10 Japanese kana', icon: 'あ', category: 'letters-ja', condition: { type: 'letters-ja', threshold: 10 } },
+  { id: 'letters-ja-46', name: 'Hiragana Hero', description: 'Master 46 Japanese kana', icon: 'か', category: 'letters-ja', condition: { type: 'letters-ja', threshold: 46 } },
+  { id: 'letters-ja-92', name: 'Kana Master', description: 'Master 92 Japanese kana', icon: 'カ', category: 'letters-ja', condition: { type: 'letters-ja', threshold: 92 } },
+
+  // Russian Letter Badges (Cyrillic)
+  { id: 'letters-ru-10', name: 'Cyrillic Starter', description: 'Master 10 Russian letters', icon: 'Б', category: 'letters-ru', condition: { type: 'letters-ru', threshold: 10 } },
+  { id: 'letters-ru-33', name: 'Alphabet Complete', description: 'Master 33 Russian letters', icon: 'Я', category: 'letters-ru', condition: { type: 'letters-ru', threshold: 33 } },
+  { id: 'letters-ru-50', name: 'Cyrillic Expert', description: 'Master 50 Russian letters', icon: 'Ж', category: 'letters-ru', condition: { type: 'letters-ru', threshold: 50 } },
 
   // Daily Challenge Badges
   { id: 'challenges-1', name: 'Challenge Accepted', description: 'Complete 1 daily challenge', icon: '🎯', category: 'daily-challenge', condition: { type: 'challenges', threshold: 1 } },

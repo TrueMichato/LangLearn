@@ -4,6 +4,8 @@ export interface Character {
   group: string;
   strokes: number;
   meaning?: string;
+  /** TTS pronunciation override — spoken instead of char when provided */
+  pronunciation?: string;
   // Mnemonic learning support (Tofugu-sourced content marked with source: 'tofugu')
   mnemonic?: string;
   hint?: string;

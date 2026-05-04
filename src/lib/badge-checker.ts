@@ -11,6 +11,8 @@ export interface BadgeCheckStats {
   totalWords: number;
   completedLessons: number;
   masteredKanji: number;
+  masteredLettersJa: number;
+  masteredLettersRu: number;
   completedChallenges: number;
   savedTexts: number;
 }
@@ -30,6 +32,8 @@ export function checkBadges(stats: BadgeCheckStats): string[] {
         case 'words': return stats.totalWords >= threshold;
         case 'lessons': return stats.completedLessons >= threshold;
         case 'kanji': return stats.masteredKanji >= threshold;
+        case 'letters-ja': return stats.masteredLettersJa >= threshold;
+        case 'letters-ru': return stats.masteredLettersRu >= threshold;
         case 'challenges': return stats.completedChallenges >= threshold;
         case 'texts': return stats.savedTexts >= threshold;
         default: return false;
@@ -39,20 +43,27 @@ export function checkBadges(stats: BadgeCheckStats): string[] {
 }
 
 export async function gatherBadgeStats(): Promise<BadgeCheckStats> {
-  const [sessions, words, allReviews, activities, allLessons, characters, texts] =
+  const [sessions, words, allReviews, activities, allLessons, masteredChars, texts] =
     await Promise.all([
       db.studySessions.toArray(),
       db.words.count(),
       db.reviews.toArray(),
       db.dailyActivity.toArray(),
       db.lessonProgress.toArray(),
-      db.characterProgress.where('mastery').equals('mastered').count(),
+      db.characterProgress.where('mastery').equals('mastered').toArray(),
       db.texts.count(),
     ]);
 
   const reviews = allReviews.filter((r) => r.repetitions > 0).length;
   const lessons = allLessons.filter((l) => l.completed).length;
   const challenges = activities.filter((a) => a.challengeComplete).length;
+
+  // Count mastered characters per language/alphabet
+  const masteredKanji = masteredChars.filter((c) => c.id.startsWith('ja/Kanji')).length;
+  const masteredLettersJa = masteredChars.filter(
+    (c) => c.id.startsWith('ja/') && !c.id.startsWith('ja/Kanji'),
+  ).length;
+  const masteredLettersRu = masteredChars.filter((c) => c.id.startsWith('ru/')).length;
 
   const timeXP = sessions.reduce((sum, s) => sum + s.xpEarned, 0);
   const bonusXP = useXPStore.getState().bonusXP;
@@ -63,7 +74,9 @@ export async function gatherBadgeStats(): Promise<BadgeCheckStats> {
     totalReviews: reviews,
     totalWords: words,
     completedLessons: lessons,
-    masteredKanji: characters,
+    masteredKanji,
+    masteredLettersJa,
+    masteredLettersRu,
     completedChallenges: challenges,
     savedTexts: texts,
   };

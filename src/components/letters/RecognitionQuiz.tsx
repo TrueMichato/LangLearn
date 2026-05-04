@@ -170,7 +170,7 @@ export default function RecognitionQuiz({ characters, alphabetName, language, on
   // Play TTS for listen round
   function playAudio() {
     if (currentQuestion) {
-      speak(currentQuestion.char, language);
+      speak(currentQuestion.pronunciation ?? currentQuestion.char, language);
     }
   }
 

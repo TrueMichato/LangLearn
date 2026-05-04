@@ -143,7 +143,7 @@ export default function KanjiDetailView({ character, language, onClose }: Props)
         {/* Action buttons */}
         <div className="flex items-center gap-3 pt-1">
           <button
-            onClick={() => speak(character.char, language)}
+            onClick={() => speak(character.pronunciation ?? character.char, language)}
             className="bg-slate-100 dark:bg-slate-700 rounded-xl px-5 py-2 text-sm font-medium text-slate-700 dark:text-slate-200 hover:bg-slate-200 dark:hover:bg-slate-600 transition-colors min-h-[44px] press-feedback"
           >
             🔊 Listen
