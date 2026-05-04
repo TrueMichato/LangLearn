@@ -2,6 +2,7 @@ import type { PracticeMode } from '../../stores/reviewStore';
 
 interface Props {
   onSelect: (mode: PracticeMode) => void;
+  retention?: { percent: number; reviewCount: number } | null;
 }
 
 const MODES: { mode: PracticeMode; label: string; emoji: string; description: string }[] = [
@@ -11,9 +12,9 @@ const MODES: { mode: PracticeMode; label: string; emoji: string; description: st
   { mode: 'both', label: 'Study (Both sides)', emoji: '👀', description: 'See everything for review' },
 ];
 
-export default function PracticeModeSelector({ onSelect }: Props) {
+export default function PracticeModeSelector({ onSelect, retention }: Props) {
   return (
-    <div className="flex flex-col items-center justify-center h-64">
+    <div className="flex flex-col items-center py-6">
       <h2 className="text-lg font-semibold text-gray-700 dark:text-gray-200 mb-1">
         How do you want to practice?
       </h2>
@@ -35,6 +36,44 @@ export default function PracticeModeSelector({ onSelect }: Props) {
           </button>
         ))}
       </div>
+      {retention && retention.reviewCount >= 10 && (
+        <RetentionCard percent={retention.percent} />
+      )}
+    </div>
+  );
+}
+
+function RetentionCard({ percent }: { percent: number }) {
+  let color: string;
+  let emoji: string;
+  let message: string;
+
+  if (percent < 75) {
+    color = 'bg-red-100 dark:bg-red-900/40 border-red-200 dark:border-red-800/50';
+    emoji = '⚠️';
+    message = 'Consider slowing down on new cards to catch up';
+  } else if (percent < 85) {
+    color = 'bg-amber-50 dark:bg-amber-900/30 border-amber-200 dark:border-amber-800/50';
+    emoji = '📉';
+    message = 'A bit low — try reviewing more frequently';
+  } else if (percent <= 95) {
+    color = 'bg-green-50 dark:bg-green-900/30 border-green-200 dark:border-green-800/50';
+    emoji = '✅';
+    message = 'Right in the sweet spot!';
+  } else {
+    color = 'bg-amber-50 dark:bg-amber-900/30 border-amber-200 dark:border-amber-800/50';
+    emoji = '📈';
+    message = 'Very high — consider adding more new cards';
+  }
+
+  return (
+    <div className={`${color} border rounded-xl p-3 mt-4 max-w-sm mx-auto`}>
+      <p className="text-sm font-medium text-slate-700 dark:text-slate-200 text-center">
+        Your 7-day retention: {percent}% {emoji}
+      </p>
+      <p className="text-xs text-slate-500 dark:text-slate-400 text-center mt-1">
+        {message}
+      </p>
     </div>
   );
 }

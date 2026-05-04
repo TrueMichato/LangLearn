@@ -5,7 +5,7 @@ import type { StudySession, DailyActivity } from '../db/schema';
 import { getDueCount } from '../db/reviews';
 import { getTotalWordCount } from '../db/words';
 import { formatStudyTime } from '../lib/xp';
-import { calculateCurrentStreak, calculateLongestStreak } from '../lib/streaks';
+import { calculateCurrentStreak, calculateLongestStreak, todayStr } from '../lib/streaks';
 import { useSettingsStore } from '../stores/settingsStore';
 import { useXPStore } from '../stores/xpStore';
 import HeatMap from '../components/dashboard/HeatMap';
@@ -122,7 +122,7 @@ export default function Dashboard() {
 
       <StudyPlan
         dueCards={stats.dueCards}
-        todayStudySeconds={activities.find((a) => a.date === new Date().toISOString().slice(0, 10))?.studySeconds ?? 0}
+        todayStudySeconds={activities.find((a) => a.date === todayStr())?.studySeconds ?? 0}
         dailyGoalSeconds={dailyGoalMinutes * 60}
         weekStudySeconds={stats.weekStudySeconds}
         weeklyGoalSeconds={weeklyGoalSeconds}

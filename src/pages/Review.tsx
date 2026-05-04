@@ -8,6 +8,7 @@ import { useSettingsStore } from '../stores/settingsStore';
 import { useStudySetsStore } from '../stores/studySetsStore';
 import { getFilteredReviewQueue } from '../lib/filtered-review';
 import { get7DayRetention } from '../lib/analytics';
+import { getLanguageFlag } from '../lib/languages';
 import Flashcard from '../components/srs/Flashcard';
 import ReverseCard from '../components/srs/ReverseCard';
 import ListeningCard from '../components/srs/ListeningCard';
@@ -52,6 +53,7 @@ export default function ReviewPage() {
     useReviewStore();
   const { isRunning, start } = useTimerStore();
   const reviewBatchSize = useSettingsStore((s) => s.reviewBatchSize);
+  const activeLanguages = useSettingsStore((s) => s.activeLanguages);
   const navigate = useNavigate();
   const [searchParams] = useSearchParams();
   const setId = searchParams.get('set');
@@ -62,6 +64,8 @@ export default function ReviewPage() {
 
   const [shaking, setShaking] = useState(false);
   const [retention, setRetention] = useState<{ percent: number; reviewCount: number } | null>(null);
+  // Language filter: null = per-language (default), 'all' = cross-language
+  const [reviewLanguage, setReviewLanguage] = useState<string | null>(null);
 
   useEffect(() => {
     get7DayRetention().then(setRetention);
@@ -73,7 +77,19 @@ export default function ReviewPage() {
     let due: Array<{ word: import('../db/schema').Word; review: import('../db/schema').Review }>;
     if (setId) {
       due = await getFilteredReviewQueue(setId);
+    } else if (reviewLanguage && reviewLanguage !== 'all') {
+      // Single language selected
+      due = await getDueReviews(reviewLanguage);
+    } else if (!reviewLanguage) {
+      // Default: only cards from active languages
+      const allDue: typeof due = [];
+      for (const lang of activeLanguages) {
+        const langDue = await getDueReviews(lang);
+        allDue.push(...langDue);
+      }
+      due = allDue;
     } else {
+      // 'all' — cross-language
       due = await getDueReviews();
     }
 
@@ -118,7 +134,7 @@ export default function ReviewPage() {
 
     setQueue(items);
     setLoading(false);
-  }, [setQueue, reviewBatchSize, setId, practiceMode]);
+  }, [setQueue, reviewBatchSize, setId, practiceMode, reviewLanguage, activeLanguages]);
 
   useEffect(() => {
     loadCards();
@@ -127,6 +143,15 @@ export default function ReviewPage() {
   const handleSelectMode = (mode: PracticeMode) => {
     setPracticeMode(mode);
     loadCards(mode);
+  };
+
+  const handleExit = () => {
+    reset();
+    navigate('/');
+  };
+
+  const handleLanguageChange = (lang: string | null) => {
+    setReviewLanguage(lang);
   };
 
   const handleGrade = async (grade: SM2Grade) => {
@@ -157,7 +182,7 @@ export default function ReviewPage() {
 
   const shortcuts = useMemo(() => {
     const map: Record<string, () => void> = {
-      Escape: () => navigate('/'),
+      Escape: handleExit,
     };
 
     if (current && !isSelfGrading && !isFlipped) {
@@ -218,10 +243,45 @@ export default function ReviewPage() {
   if (!practiceMode) {
     return (
       <div>
-        <PracticeModeSelector onSelect={handleSelectMode} />
-        {retention && retention.reviewCount >= 10 && (
-          <RetentionCard percent={retention.percent} />
+        {/* Language filter — only when user has multiple active languages and no study set */}
+        {!setId && activeLanguages.length > 1 && (
+          <div className="flex items-center justify-center gap-2 mb-2 flex-wrap">
+            <button
+              onClick={() => handleLanguageChange(null)}
+              className={`px-3 py-1.5 rounded-lg text-sm font-medium transition-colors ${
+                reviewLanguage === null
+                  ? 'bg-indigo-600 text-white'
+                  : 'border border-slate-300 dark:border-slate-600 text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-700'
+              }`}
+            >
+              My Languages
+            </button>
+            {activeLanguages.map((lang) => (
+              <button
+                key={lang}
+                onClick={() => handleLanguageChange(lang)}
+                className={`px-3 py-1.5 rounded-lg text-sm font-medium transition-colors ${
+                  reviewLanguage === lang
+                    ? 'bg-indigo-600 text-white'
+                    : 'border border-slate-300 dark:border-slate-600 text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-700'
+                }`}
+              >
+                {getLanguageFlag(lang)} {lang.toUpperCase()}
+              </button>
+            ))}
+            <button
+              onClick={() => handleLanguageChange('all')}
+              className={`px-3 py-1.5 rounded-lg text-sm font-medium transition-colors ${
+                reviewLanguage === 'all'
+                  ? 'bg-indigo-600 text-white'
+                  : 'border border-slate-300 dark:border-slate-600 text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-700'
+              }`}
+            >
+              🌐 All
+            </button>
+          </div>
         )}
+        <PracticeModeSelector onSelect={handleSelectMode} retention={retention} />
       </div>
     );
   }
@@ -254,15 +314,24 @@ export default function ReviewPage() {
   return (
     <div>
       <div className="flex justify-between items-center mb-2">
-        <div>
-          <h2 className="text-lg font-semibold text-slate-700 dark:text-slate-200">
-            {studySet ? `Review: ${studySet.name}` : 'Review'}
-          </h2>
-          {reviewBatchSize > 0 && totalDue > queue.length && (
-            <p className="text-xs text-slate-400 dark:text-slate-500">
-              Reviewing {queue.length} of {totalDue} due cards
-            </p>
-          )}
+        <div className="flex items-center gap-2">
+          <button
+            onClick={handleExit}
+            className="p-1.5 -ml-1.5 rounded-lg text-slate-400 hover:text-slate-600 dark:text-slate-500 dark:hover:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-700 transition-colors"
+            aria-label="Exit review"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+          </button>
+          <div>
+            <h2 className="text-lg font-semibold text-slate-700 dark:text-slate-200">
+              {studySet ? `Review: ${studySet.name}` : 'Review'}
+            </h2>
+            {reviewBatchSize > 0 && totalDue > queue.length && (
+              <p className="text-xs text-slate-400 dark:text-slate-500">
+                Reviewing {queue.length} of {totalDue} due cards
+              </p>
+            )}
+          </div>
         </div>
         <span className="text-sm text-slate-400 dark:text-slate-500">
           {currentIndex + 1} / {queue.length}
@@ -380,41 +449,6 @@ export default function ReviewPage() {
 
       <p className="text-center text-xs text-slate-400 dark:text-slate-500 mt-6">
         No worries if you didn't know — it'll come back later 💪
-      </p>
-    </div>
-  );
-}
-
-function RetentionCard({ percent }: { percent: number }) {
-  let color: string;
-  let emoji: string;
-  let message: string;
-
-  if (percent < 75) {
-    color = 'bg-red-100 dark:bg-red-900/40 border-red-200 dark:border-red-800/50';
-    emoji = '⚠️';
-    message = 'Consider slowing down on new cards to catch up';
-  } else if (percent < 85) {
-    color = 'bg-amber-50 dark:bg-amber-900/30 border-amber-200 dark:border-amber-800/50';
-    emoji = '📉';
-    message = 'A bit low — try reviewing more frequently';
-  } else if (percent <= 95) {
-    color = 'bg-green-50 dark:bg-green-900/30 border-green-200 dark:border-green-800/50';
-    emoji = '✅';
-    message = 'Right in the sweet spot!';
-  } else {
-    color = 'bg-amber-50 dark:bg-amber-900/30 border-amber-200 dark:border-amber-800/50';
-    emoji = '📈';
-    message = 'Very high — consider adding more new cards';
-  }
-
-  return (
-    <div className={`${color} border rounded-xl p-3 mt-4 max-w-sm mx-auto`}>
-      <p className="text-sm font-medium text-slate-700 dark:text-slate-200 text-center">
-        Your 7-day retention: {percent}% {emoji}
-      </p>
-      <p className="text-xs text-slate-500 dark:text-slate-400 text-center mt-1">
-        {message}
       </p>
     </div>
   );
