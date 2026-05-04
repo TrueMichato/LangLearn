@@ -108,26 +108,31 @@ export async function speak(text: string, language: string, rateOverride?: numbe
     utterance.lang = LANG_VOICE_MAP[language] ?? language;
     utterance.rate = rate;
 
-    utterance.onend = () => resolve();
+    // Try to pick an explicit voice for better cross-browser reliability
+    const voices = synth.getVoices();
+    const prefix = language.slice(0, 2).toLowerCase();
+    const langVoice = voices.find(v => v.lang.toLowerCase().startsWith(prefix));
+    if (langVoice) utterance.voice = langVoice;
+
+    let settled = false;
+    const settle = () => { if (!settled) { settled = true; resolve(); } };
+
+    utterance.onend = settle;
     utterance.onerror = (e) => {
       if (e.error === 'synthesis-failed' || e.error === 'audio-busy' || e.error === 'network') {
         // Native TTS is broken — switch to fallback permanently
         useFallback = true;
-        speakViaFallback(text, language, rate).then(resolve);
+        if (!settled) { settled = true; speakViaFallback(text, language, rate).then(resolve); }
       } else {
-        resolve();
+        settle();
       }
     };
 
     synth.speak(utterance);
 
-    // Safety timeout: if neither onend nor onerror fires within 4s
-    setTimeout(() => {
-      if (!useFallback) {
-        useFallback = true;
-      }
-      resolve();
-    }, 4000);
+    // Safety timeout: resolve the promise but do NOT flip to fallback permanently.
+    // Only actual synthesis errors should trigger the permanent fallback switch.
+    setTimeout(settle, 8000);
   });
 }
 
