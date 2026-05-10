@@ -102,7 +102,7 @@ export async function registerPeriodicSync(): Promise<boolean> {
       periodicSync: { register(tag: string, opts: { minInterval: number }): Promise<void> };
     }).periodicSync;
     await ps.register('langlearn-check-notifications', {
-      minInterval: 4 * 60 * 60 * 1000, // 4 hours (browser decides actual frequency)
+      minInterval: 60 * 60 * 1000, // 1 hour hint (browser enforces its own floor; lower hint = sooner wake when budget allows)
     });
     return true;
   } catch {
@@ -125,14 +125,100 @@ export async function unregisterPeriodicSync(): Promise<void> {
   }
 }
 
+// ─── Notification Triggers (TimestampTrigger) ───
+//
+// When supported (Chromium with experimental-web-platform-features flag, or
+// some Chromium variants by default), we can pre-schedule a notification with
+// `showTrigger: new TimestampTrigger(whenMs)`. The browser fires it at the
+// scheduled wall-clock time even if the SW has been evicted and the page is
+// closed. This is the only "while-closed" mechanism available without a
+// server, so we use it as the primary path on supported browsers.
+
+export function supportsNotificationTriggers(): boolean {
+  if (typeof window === 'undefined') return false;
+  if (!('Notification' in window)) return false;
+  // The spec exposes TimestampTrigger as a global constructor and lists
+  // `showTrigger` in the NotificationOptions. Some Chromium versions expose
+  // one without the other — require both.
+  return (
+    'TimestampTrigger' in window &&
+    'showTrigger' in (Notification.prototype as unknown as Record<string, unknown>)
+  );
+}
+
+interface TriggeredNotificationOptions extends NotificationOptions {
+  showTrigger?: unknown;
+}
+
+/**
+ * Schedule a notification to fire at `whenMs` (wall-clock). Uses
+ * TimestampTrigger so the browser fires it even if the SW/page is closed.
+ *
+ * Returns true if the trigger was registered, false otherwise (caller can
+ * fall back to other mechanisms).
+ */
+export async function scheduleTriggeredNotification(
+  title: string,
+  whenMs: number,
+  options: NotificationOptions & { tag: string },
+): Promise<boolean> {
+  if (!supportsNotificationTriggers()) return false;
+  if (Notification.permission !== 'granted') return false;
+  const registration = await getRegistration();
+  if (!registration) return false;
+
+  try {
+    const TriggerCtor = (window as unknown as {
+      TimestampTrigger: new (timestamp: number) => unknown;
+    }).TimestampTrigger;
+    const opts: TriggeredNotificationOptions = {
+      icon: '/LangLearn/pwa-192x192.png',
+      badge: '/LangLearn/pwa-192x192.png',
+      ...options,
+      showTrigger: new TriggerCtor(whenMs),
+    };
+    await registration.showNotification(title, opts as NotificationOptions);
+    return true;
+  } catch (err) {
+    console.warn('[LangLearn] scheduleTriggeredNotification failed:', err);
+    return false;
+  }
+}
+
+/**
+ * List currently-pending notifications that have a `showTrigger` set
+ * (i.e. were registered via TimestampTrigger and have not yet fired).
+ * Used to dedupe and clean up stale triggers across plan refreshes.
+ */
+export async function listPendingTriggeredTags(prefix?: string): Promise<string[]> {
+  if (!supportsNotificationTriggers()) return [];
+  const registration = await getRegistration();
+  if (!registration) return [];
+  try {
+    const all = await registration.getNotifications({ includeTriggered: true } as unknown as GetNotificationOptions);
+    return all
+      .filter((n) => 'showTrigger' in n && (n as unknown as { showTrigger?: unknown }).showTrigger != null)
+      .map((n) => n.tag)
+      .filter((tag): tag is string => !!tag && (!prefix || tag.startsWith(prefix)));
+  } catch {
+    return [];
+  }
+}
+
 export type BackgroundNotifStatus =
-  | 'active'            // Periodic sync registered and working
-  | 'not-installed'     // Browser supports it but PWA not installed
+  | 'triggers-active'   // Notification Triggers — closed-app reliable
+  | 'sync-active'       // Periodic sync registered (best effort)
+  | 'not-installed'     // Browser supports periodic sync but PWA not installed
   | 'not-registered'    // Installed but registration pending/failed
-  | 'not-supported';    // Browser doesn't support periodic sync
+  | 'not-supported';    // Browser doesn't support either path
 
 /** Determine the current background notification capability status. */
 export async function getBackgroundNotificationStatus(): Promise<BackgroundNotifStatus> {
+  // Triggers take priority — they actually work while closed when available.
+  if (supportsNotificationTriggers() && Notification.permission === 'granted') {
+    return 'triggers-active';
+  }
+
   if (!supportsPeriodicSync()) return 'not-supported';
 
   const isInstalled =
@@ -142,6 +228,50 @@ export async function getBackgroundNotificationStatus(): Promise<BackgroundNotif
   if (!isInstalled) return 'not-installed';
 
   const registered = await isPeriodicSyncRegistered();
-  return registered ? 'active' : 'not-registered';
+  return registered ? 'sync-active' : 'not-registered';
+}
+
+/** Read the last time the SW was woken by periodic sync (from IDB).
+ *  Returns null if never recorded or unsupported. */
+export async function getLastSyncWake(): Promise<number | null> {
+  if (typeof indexedDB === 'undefined') return null;
+  return new Promise((resolve) => {
+    try {
+      const req = indexedDB.open('LangLearnDB');
+      req.onsuccess = () => {
+        const db = req.result;
+        try {
+          const tx = db.transaction('settings', 'readonly');
+          const store = tx.objectStore('settings');
+          const get = store.get('last-sync-wake');
+          get.onsuccess = () => {
+            const val = get.result?.value;
+            if (!val) {
+              resolve(null);
+            } else {
+              const n = Number(val);
+              resolve(Number.isFinite(n) ? n : null);
+            }
+            db.close();
+          };
+          get.onerror = () => {
+            resolve(null);
+            db.close();
+          };
+        } catch {
+          resolve(null);
+          try { db.close(); } catch { /* ignore */ }
+        }
+      };
+      req.onerror = () => resolve(null);
+      req.onupgradeneeded = () => {
+        // Don't create stores here — bail.
+        req.transaction?.abort();
+        resolve(null);
+      };
+    } catch {
+      resolve(null);
+    }
+  });
 }
 

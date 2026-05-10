@@ -5,7 +5,6 @@ import { getLanguageLabel } from '../lib/languages';
 import { speak } from '../lib/tts';
 import { jaMinimalPairs, ruMinimalPairs, ptMinimalPairs } from '../data/minimal-pairs';
 import type { MinimalPair } from '../data/minimal-pairs';
-
 type Phase = 'setup' | 'session' | 'summary';
 
 const CATEGORIES: Record<string, string> = {
@@ -65,16 +64,49 @@ export default function MinimalPairsPage() {
   const [showingPair, setShowingPair] = useState(false);
   const [streak, setStreak] = useState(0);
   const [bestStreak, setBestStreak] = useState(0);
-  const feedbackTimer = useRef<ReturnType<typeof setTimeout>>(null);
+  const feedbackTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
+  const autoplayTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
+  /** Monotonic playback id — only the latest call may actually invoke speak(). */
+  const playbackId = useRef(0);
 
   const current = queue[index] ?? null;
 
+  const cancelPendingAudio = useCallback(() => {
+    if (autoplayTimer.current) {
+      clearTimeout(autoplayTimer.current);
+      autoplayTimer.current = null;
+    }
+    if (feedbackTimer.current) {
+      clearTimeout(feedbackTimer.current);
+      feedbackTimer.current = null;
+    }
+    // Invalidate any in-flight speak() promise.
+    playbackId.current += 1;
+    if (typeof window !== 'undefined' && 'speechSynthesis' in window) {
+      window.speechSynthesis.cancel();
+    }
+  }, []);
+
   const playAudio = useCallback((pair: MinimalPair, which: 'a' | 'b') => {
+    cancelPendingAudio();
+    const myId = ++playbackId.current;
     const word = which === 'a' ? pair.wordA : pair.wordB;
-    speak(word, language);
-  }, [language]);
+    // Defer one frame so the synth.cancel() above fully drains before we speak again.
+    autoplayTimer.current = setTimeout(() => {
+      if (playbackId.current !== myId) return;
+      void speak(word, language);
+    }, 60);
+  }, [language, cancelPendingAudio]);
+
+  // Cancel any in-flight audio when the page unmounts.
+  useEffect(() => {
+    return () => {
+      cancelPendingAudio();
+    };
+  }, [cancelPendingAudio]);
 
   const startSession = () => {
+    cancelPendingAudio();
     const allPairs = getPairsForLanguage(language);
     const filtered = selectedCategories.size > 0
       ? allPairs.filter((p) => selectedCategories.has(p.category))
@@ -95,8 +127,8 @@ export default function MinimalPairsPage() {
     setCorrectAnswer(ans);
     setPhase('session');
 
-    // Play the target word after a short delay
-    setTimeout(() => {
+    // Play the target word after a short delay so React commits and any prior audio drains.
+    autoplayTimer.current = setTimeout(() => {
       const pair = shuffled[0];
       if (pair) playAudio(pair, ans);
     }, 400);
@@ -119,7 +151,7 @@ export default function MinimalPairsPage() {
   };
 
   const nextPair = useCallback(() => {
-    if (feedbackTimer.current) clearTimeout(feedbackTimer.current);
+    cancelPendingAudio();
     const nextIdx = index + 1;
     if (nextIdx >= queue.length) {
       // Session complete
@@ -136,11 +168,11 @@ export default function MinimalPairsPage() {
     const ans: 'a' | 'b' = Math.random() < 0.5 ? 'a' : 'b';
     setCorrectAnswer(ans);
 
-    setTimeout(() => {
+    autoplayTimer.current = setTimeout(() => {
       const pair = queue[nextIdx];
       if (pair) playAudio(pair, ans);
     }, 400);
-  }, [index, queue, score, answered, correctAnswer, bestStreak, playAudio]);
+  }, [index, queue, score, answered, correctAnswer, playAudio, cancelPendingAudio]);
 
   // Keyboard shortcuts
   useEffect(() => {
@@ -401,14 +433,14 @@ export default function MinimalPairsPage() {
               onClick={() => playAudio(current, 'a')}
               className="text-sm text-indigo-600 dark:text-indigo-400 hover:underline press-feedback min-h-[44px] flex items-center gap-1"
             >
-              🔊 {current.wordA}
+              🔊 A: {current.wordA}
             </button>
             <span className="text-gray-300 dark:text-gray-600">|</span>
             <button
               onClick={() => playAudio(current, 'b')}
               className="text-sm text-indigo-600 dark:text-indigo-400 hover:underline press-feedback min-h-[44px] flex items-center gap-1"
             >
-              🔊 {current.wordB}
+              🔊 B: {current.wordB}
             </button>
           </div>
 

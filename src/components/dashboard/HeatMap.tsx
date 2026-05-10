@@ -109,8 +109,8 @@ export default function HeatMap({ studySessions }: HeatMapProps) {
             return (
               <div
                 key={`month-${col}`}
-                className="text-[10px] text-slate-500 dark:text-slate-400 leading-none"
-                style={{ height: 14 }}
+                className="text-[10px] text-slate-500 dark:text-slate-400 leading-none whitespace-nowrap overflow-visible pointer-events-none"
+                style={{ height: 14, lineHeight: '14px' }}
               >
                 {label?.label ?? ''}
               </div>

@@ -49,5 +49,4 @@ export const jaMinimalPairs: MinimalPair[] = [
   { id: 'ja-27', wordA: 'りょう', wordB: 'りょ', readingA: 'ryō', readingB: 'ryo', meaningA: 'dormitory', meaningB: 'abbreviation', hint: 'long vs short', category: 'similar-sounds' },
   { id: 'ja-28', wordA: 'びょういん', wordB: 'びよういん', readingA: 'byōin', readingB: 'biyōin', meaningA: 'hospital', meaningB: 'beauty salon', hint: 'byō vs biyō', category: 'similar-sounds' },
   { id: 'ja-29', wordA: 'じゅう', wordB: 'じゅ', readingA: 'jū', readingB: 'ju', meaningA: 'ten', meaningB: 'spell/curse', hint: 'long vs short u', category: 'similar-sounds' },
-  { id: 'ja-30', wordA: 'ちゅうい', wordB: 'ちゅい', readingA: 'chūi', readingB: 'chui', meaningA: 'attention', meaningB: '(no meaning)', hint: 'long vs short u', category: 'similar-sounds' },
 ];

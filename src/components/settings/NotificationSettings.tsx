@@ -5,9 +5,10 @@ import {
   getNotificationPermission,
   isNotificationSupported,
   getBackgroundNotificationStatus,
+  getLastSyncWake,
   type BackgroundNotifStatus,
 } from '../../lib/notifications';
-import { fireTestNotification } from '../../lib/notification-scheduler';
+import { fireTestNotification, fireDelayedTestNotification } from '../../lib/notification-scheduler';
 import type { NotificationPreset } from '../../lib/notification-presets';
 import { usePWAInstall } from '../../hooks/usePWAInstall';
 
@@ -89,6 +90,8 @@ export default function NotificationSettings() {
   const [permissionError, setPermissionError] = useState('');
   const [showAdvanced, setShowAdvanced] = useState(false);
   const [bgStatus, setBgStatus] = useState<BackgroundNotifStatus>('not-supported');
+  const [lastSyncWake, setLastSyncWake] = useState<number | null>(null);
+  const [testFeedback, setTestFeedback] = useState('');
   const { status: pwaStatus, promptInstall } = usePWAInstall();
 
   const permission = getNotificationPermission();
@@ -96,6 +99,7 @@ export default function NotificationSettings() {
   useEffect(() => {
     if (notificationsEnabled) {
       getBackgroundNotificationStatus().then(setBgStatus);
+      getLastSyncWake().then(setLastSyncWake);
     }
   }, [notificationsEnabled]);
 
@@ -161,26 +165,38 @@ export default function NotificationSettings() {
 
       {notificationsEnabled && (
         <>
-          {/* Background notification status */}
+          {/* Background notification status — three-tier */}
           <div className={`text-xs rounded-lg px-3 py-2 space-y-2 ${
-            bgStatus === 'active'
+            bgStatus === 'triggers-active'
               ? 'bg-emerald-50 dark:bg-emerald-900/30 text-emerald-700 dark:text-emerald-300'
-              : bgStatus === 'not-installed'
-                ? 'bg-amber-50 dark:bg-amber-900/30 text-amber-700 dark:text-amber-300'
-                : 'bg-slate-50 dark:bg-slate-700/50 text-slate-600 dark:text-slate-300'
+              : bgStatus === 'sync-active'
+                ? 'bg-sky-50 dark:bg-sky-900/30 text-sky-700 dark:text-sky-300'
+                : bgStatus === 'not-installed'
+                  ? 'bg-amber-50 dark:bg-amber-900/30 text-amber-700 dark:text-amber-300'
+                  : 'bg-slate-50 dark:bg-slate-700/50 text-slate-600 dark:text-slate-300'
           }`}>
-            {bgStatus === 'active' && (
-              <p>✅ Background reminders active — you'll be notified even with the app closed.</p>
+            {bgStatus === 'triggers-active' && (
+              <p>✅ Pre-scheduled background notifications active — your browser will fire upcoming reminders even with LangLearn closed.</p>
+            )}
+            {bgStatus === 'sync-active' && (
+              <>
+                <p>📶 Best-effort background sync registered. Your OS decides when to wake the app — usually every few hours, sometimes not at all on mobile. Reminders also fire whenever you open LangLearn.</p>
+                {lastSyncWake && (
+                  <p className="opacity-80">Last background wake: {new Date(lastSyncWake).toLocaleString()}</p>
+                )}
+                {!lastSyncWake && (
+                  <p className="opacity-80">Last background wake: never recorded yet — keep using the app to build OS engagement.</p>
+                )}
+              </>
             )}
             {bgStatus === 'not-installed' && (
               <>
-                <p>📲 Install LangLearn as an app to receive notifications even when the browser is closed.</p>
+                <p>📲 Install LangLearn as an app to unlock background reminders on this browser.</p>
                 {pwaStatus === 'installable' && (
                   <button
                     onClick={async () => {
                       const accepted = await promptInstall();
                       if (accepted) {
-                        // Re-check status after install
                         const s = await getBackgroundNotificationStatus();
                         setBgStatus(s);
                       }
@@ -193,10 +209,27 @@ export default function NotificationSettings() {
               </>
             )}
             {bgStatus === 'not-registered' && (
-              <p>⏳ Background sync available but not yet registered. It will activate shortly.</p>
+              <p>⏳ Background sync available but not yet registered. It will activate shortly — try reopening LangLearn.</p>
             )}
             {bgStatus === 'not-supported' && (
-              <p>ℹ️ Background notifications require Chrome or Edge with LangLearn installed as an app. Meanwhile, reminders fire while the app is open or as catch-up nudges next time you visit.</p>
+              <>
+                <p>ℹ️ This browser can't fire reminders while LangLearn is closed.</p>
+                <p className="opacity-80">
+                  Real "while-closed" notifications need either Chromium with{' '}
+                  <a
+                    href="chrome://flags/#enable-experimental-web-platform-features"
+                    onClick={(e) => e.preventDefault()}
+                    className="underline cursor-default"
+                    title="Open chrome://flags and enable 'Experimental Web Platform features' (paste the URL into your address bar)"
+                  >
+                    Notification Triggers enabled
+                  </a>{' '}
+                  or a Web Push backend (not yet built). Firefox and iOS Safari don't currently support periodic background sync.
+                </p>
+                <p className="opacity-80">
+                  In the meantime: reminders fire while LangLearn is open, and missed important ones surface as in-app nudges next time you visit.
+                </p>
+              </>
             )}
           </div>
 
@@ -286,13 +319,36 @@ export default function NotificationSettings() {
             />
           </div>
 
-          {/* Test button */}
-          <button
-            onClick={() => fireTestNotification()}
-            className="w-full bg-indigo-100 dark:bg-indigo-900/50 text-indigo-700 dark:text-indigo-300 py-2 rounded-xl font-semibold hover:bg-indigo-200 dark:hover:bg-indigo-800 transition-colors press-feedback"
-          >
-            🔔 Send test notification
-          </button>
+          {/* Test buttons */}
+          <div className="space-y-2">
+            <button
+              onClick={() => {
+                setTestFeedback('');
+                fireTestNotification();
+              }}
+              className="w-full bg-indigo-100 dark:bg-indigo-900/50 text-indigo-700 dark:text-indigo-300 py-2 rounded-xl font-semibold hover:bg-indigo-200 dark:hover:bg-indigo-800 transition-colors press-feedback"
+            >
+              🔔 Send test notification (now)
+            </button>
+            <button
+              onClick={async () => {
+                const result = await fireDelayedTestNotification();
+                if (result === 'triggered') {
+                  setTestFeedback('Scheduled for 60 s from now via TimestampTrigger. Close the tab/app to verify it fires while closed.');
+                } else if (result === 'fallback') {
+                  setTestFeedback('This browser does not support background scheduling — the test will only fire if you keep LangLearn open.');
+                } else {
+                  setTestFeedback('Notifications are not granted on this device.');
+                }
+              }}
+              className="w-full bg-slate-100 dark:bg-slate-700/60 text-slate-700 dark:text-slate-200 py-2 rounded-xl font-semibold hover:bg-slate-200 dark:hover:bg-slate-600 transition-colors press-feedback"
+            >
+              ⏱ Schedule test for 60 s (verify while-closed)
+            </button>
+            {testFeedback && (
+              <p className="text-xs text-slate-500 dark:text-slate-400 px-1">{testFeedback}</p>
+            )}
+          </div>
 
           {/* Advanced */}
           <button

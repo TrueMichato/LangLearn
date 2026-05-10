@@ -1,6 +1,11 @@
 import { useEffect, useRef } from 'react';
 import { useSettingsStore } from '../stores/settingsStore';
-import { isNotificationSupported, requestNotificationPermission } from '../lib/notifications';
+import {
+  isNotificationSupported,
+  requestNotificationPermission,
+  registerPeriodicSync,
+  supportsPeriodicSync,
+} from '../lib/notifications';
 import { refreshNotifications, tickInApp, mirrorPrefsToIDB } from '../lib/notification-scheduler';
 import type { FullPrefs } from '../lib/notification-scheduler';
 
@@ -105,6 +110,12 @@ export function useNotificationScheduler() {
     const onVisibility = () => {
       if (document.visibilityState === 'visible') {
         void run();
+        // Re-register periodic sync each time the user comes back. The browser
+        // sometimes drops registrations and only re-registering "warm" sites
+        // earns wake budget. Cheap no-op when already registered.
+        if (supportsPeriodicSync() && prefs.notificationsEnabled) {
+          void registerPeriodicSync();
+        }
       } else {
         // App going to background — push fresh prefs to IDB so SW has them
         void mirrorPrefsToIDB(buildPrefs());

@@ -94,39 +94,104 @@ async function createGrammarCards(
   return added;
 }
 
-/** Extract target sentence, romanization, and English translation from a markdown list item. */
+/** Extract target sentence/word, romanization, and English translation from a markdown list item.
+ *
+ * Only matches list items that begin with a `<strong>` element (i.e. start with **bold**),
+ * to avoid false positives on prose like "Other adjectives: red, blue (синий)…".
+ *
+ * Recognises two shapes:
+ *  1. Single word:    `**WORD(READING)** — meaning`           (Japanese style)
+ *  2. Sentence:       `**Sentence.** (reading) — meaning`     (RU/PT style; reading optional)
+ */
 function parseExampleSentence(children: ReactNode): {
   word: string;
   reading: string;
   meaning: string;
   fullText: string;
+  isSentence: boolean;
 } | null {
-  // Flatten children text content
-  const extractText = (node: ReactNode): string => {
+  const nodeText = (node: ReactNode): string => {
     if (typeof node === 'string') return node;
     if (typeof node === 'number') return String(node);
-    if (Array.isArray(node)) return node.map(extractText).join('');
+    if (Array.isArray(node)) return node.map(nodeText).join('');
     if (node && typeof node === 'object' && 'props' in node) {
-      return extractText((node as { props: { children?: ReactNode } }).props.children ?? '');
+      return nodeText((node as { props: { children?: ReactNode } }).props.children ?? '');
     }
     return '';
   };
 
-  const text = extractText(children).trim();
-  // Match: TargetSentence (romanization) — English translation
-  // The bold markers are already stripped by react-markdown, so we look for the text pattern.
-  // Pattern: start with text, then (romanization), then — or - followed by English
-  const match = text.match(/^(.+?)\s*\(([^)]+)\)\s*[—–-]\s*(.+)$/);
-  if (!match) return null;
+  const isStrong = (node: ReactNode): boolean =>
+    !!(node && typeof node === 'object' && 'type' in node &&
+       (node as { type: unknown }).type === 'strong');
 
-  const word = match[1].trim();
-  const reading = match[2].trim();
-  const meaning = match[3].trim();
+  const arr: ReactNode[] = Array.isArray(children) ? (children as ReactNode[]) : [children];
 
-  // Sanity: word should be non-latin (has CJK/Cyrillic/etc) or at least non-empty
-  if (!word || !meaning) return null;
+  let strongIdx = -1;
+  for (let i = 0; i < arr.length; i++) {
+    if (isStrong(arr[i])) { strongIdx = i; break; }
+  }
+  if (strongIdx === -1) return null;
 
-  return { word, reading, meaning, fullText: text };
+  // Reject items that have prose before the first <strong> (e.g. "Other adjectives: ...")
+  const before = arr.slice(0, strongIdx).map(nodeText).join('');
+  if (before.trim() !== '') return null;
+
+  const boldText = nodeText(arr[strongIdx]).trim();
+  const afterText = arr.slice(strongIdx + 1).map(nodeText).join('').trim();
+  if (!boldText) return null;
+
+  // Shape 1: bold contains "WORD(READING)" — single-word entry (typical Japanese)
+  const inlineReading = boldText.match(/^([^()]+?)\s*\(([^()]+)\)\s*$/);
+  if (inlineReading) {
+    const word = inlineReading[1].trim();
+    const reading = inlineReading[2].trim();
+    const meaningMatch = afterText.match(/^[—–-]\s*(.+)$/);
+    if (!word || !meaningMatch) return null;
+    const meaning = meaningMatch[1].trim();
+    if (!meaning) return null;
+    return {
+      word,
+      reading,
+      meaning,
+      fullText: `${boldText} — ${meaning}`,
+      isSentence: false,
+    };
+  }
+
+  // Shape 2: sentence with reading after the bold span
+  const sentenceWithReading = afterText.match(/^\(([^)]+)\)\s*[—–-]\s*(.+)$/);
+  if (sentenceWithReading) {
+    const word = boldText;
+    const reading = sentenceWithReading[1].trim();
+    const meaning = sentenceWithReading[2].trim();
+    if (!word || !meaning) return null;
+    return {
+      word,
+      reading,
+      meaning,
+      fullText: `${word} (${reading}) — ${meaning}`,
+      isSentence: true,
+    };
+  }
+
+  // Shape 2b: sentence/word without parenthetical reading
+  const sentenceNoReading = afterText.match(/^[—–-]\s*(.+)$/);
+  if (sentenceNoReading) {
+    const word = boldText;
+    const meaning = sentenceNoReading[1].trim();
+    if (!word || !meaning) return null;
+    // Treat as sentence if it contains whitespace; otherwise as a single word.
+    const isSentence = /\s/.test(word);
+    return {
+      word,
+      reading: '',
+      meaning,
+      fullText: `${word} — ${meaning}`,
+      isSentence,
+    };
+  }
+
+  return null;
 }
 
 function SaveFlashcardButton({
@@ -135,12 +200,14 @@ function SaveFlashcardButton({
   meaning,
   fullText,
   lang,
+  isSentence,
 }: {
   word: string;
   reading: string;
   meaning: string;
   fullText: string;
   lang: string;
+  isSentence: boolean;
 }) {
   const [state, setState] = useState<'idle' | 'saving' | 'saved'>('idle');
 
@@ -154,9 +221,9 @@ function SaveFlashcardButton({
         reading,
         meaning,
         language: lang,
-        contextSentence: fullText,
+        contextSentence: isSentence ? word : fullText,
         sourceTextId: null,
-        tags: ['grammar'],
+        tags: isSentence ? ['grammar', 'sentence'] : ['grammar'],
       });
       setState('saved');
     } catch {

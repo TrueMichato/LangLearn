@@ -63,6 +63,20 @@ async function getSettingValue(db: IDBDatabase, key: string): Promise<string | n
   });
 }
 
+async function putSettingValue(db: IDBDatabase, key: string, value: string): Promise<void> {
+  return new Promise((resolve) => {
+    try {
+      const tx = db.transaction('settings', 'readwrite');
+      const store = tx.objectStore('settings');
+      store.put({ key, value });
+      tx.oncomplete = () => resolve();
+      tx.onerror = () => resolve();
+    } catch {
+      resolve();
+    }
+  });
+}
+
 async function getNotificationPrefs(db: IDBDatabase): Promise<NotificationPrefsBlob | null> {
   const raw = await getSettingValue(db, 'notification-prefs');
   if (!raw) return null;
@@ -259,6 +273,10 @@ async function handlePeriodicSync(): Promise<void> {
   }
 
   try {
+    // Always record the wake time so the app UI can prove the OS is firing
+    // this handler — even if no notification ends up being shown.
+    await putSettingValue(db, 'last-sync-wake', String(Date.now()));
+
     const prefs = await getNotificationPrefs(db);
     if (!prefs || !prefs.notificationsEnabled) return;
 
