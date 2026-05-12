@@ -1,0 +1,36 @@
+{
+  "id": "public-transport",
+  "words": [
+    { "word": "el metro", "reading": "ehl MEH-troh", "meaning": "the subway / metro", "example": "Tomo el metro todos los días.", "exampleMeaning": "I take the subway every day." },
+    { "word": "el autobús", "reading": "ehl ow-toh-BOOS", "meaning": "the bus (also 'el bus'; 'el camión' in Mexico)", "example": "El autobús pasa cada diez minutos.", "exampleMeaning": "The bus comes every ten minutes." },
+    { "word": "el camión", "reading": "ehl kah-MYOHN", "meaning": "the bus (Mexico) / truck (general LatAm)", "example": "Subí al camión en la esquina.", "exampleMeaning": "I got on the bus at the corner." },
+    { "word": "el tren", "reading": "ehl trehn", "meaning": "the train", "example": "El tren llega a las siete.", "exampleMeaning": "The train arrives at seven." },
+    { "word": "la parada", "reading": "lah pah-RAH-dah", "meaning": "the stop (bus/metro stop)", "example": "Mi parada es la próxima.", "exampleMeaning": "My stop is the next one." },
+    { "word": "la estación", "reading": "lah ehs-tah-SYOHN", "meaning": "the station", "example": "Nos vemos en la estación central.", "exampleMeaning": "See you at the central station." },
+    { "word": "el boleto", "reading": "ehl boh-LEH-toh", "meaning": "the ticket (LatAm; 'el billete' in Spain, 'el pasaje' in some regions)", "example": "Compra un boleto sencillo.", "exampleMeaning": "Buy a one-way ticket." },
+    { "word": "el transbordo", "reading": "ehl trahns-BOHR-doh", "meaning": "the transfer (between lines)", "example": "Tienes que hacer un transbordo en la línea dos.", "exampleMeaning": "You have to make a transfer on line two." },
+    { "word": "el abono mensual", "reading": "ehl ah-BOH-noh mehn-SWAHL", "meaning": "the monthly pass", "example": "El abono mensual sale más barato.", "exampleMeaning": "The monthly pass works out cheaper." },
+    { "word": "la tarjeta", "reading": "lah tar-HEH-tah", "meaning": "the (transit) card", "example": "Recarga la tarjeta en la máquina.", "exampleMeaning": "Reload the card at the machine." },
+    { "word": "el andén", "reading": "ehl ahn-DEHN", "meaning": "the platform", "example": "El tren llega al andén tres.", "exampleMeaning": "The train arrives at platform three." },
+    { "word": "la ventanilla", "reading": "lah vehn-tah-NEE-yah", "meaning": "the ticket window", "example": "Pregunta en la ventanilla.", "exampleMeaning": "Ask at the ticket window." },
+    { "word": "el conductor", "reading": "ehl kohn-dook-TOHR", "meaning": "the driver (m.); 'la conductora' (f.)", "example": "El conductor anunció la parada.", "exampleMeaning": "The driver announced the stop." },
+    { "word": "el pasajero", "reading": "ehl pah-sah-HEH-roh", "meaning": "the passenger (m.); 'la pasajera' (f.)", "example": "Cada pasajero debe validar su boleto.", "exampleMeaning": "Each passenger must validate their ticket." },
+    { "word": "la hora pico", "reading": "lah OH-rah PEE-koh", "meaning": "rush hour (LatAm; 'hora punta' in Spain)", "example": "Evita el metro en la hora pico.", "exampleMeaning": "Avoid the metro during rush hour." },
+    { "word": "el retraso", "reading": "ehl rreh-TRAH-soh", "meaning": "the delay", "example": "Hay un retraso de quince minutos.", "exampleMeaning": "There is a fifteen-minute delay." },
+    { "word": "la próxima estación", "reading": "lah PROHK-see-mah ehs-tah-SYOHN", "meaning": "the next station", "example": "La próxima estación es Reforma.", "exampleMeaning": "The next station is Reforma." }
+  ],
+  "exercises": [
+    { "type": "match", "pairs": 5 },
+    { "type": "fill-blank", "items": [
+      { "sentence": "Tomo el ___ todos los días al trabajo.", "answer": "metro", "hint": "subway" },
+      { "sentence": "Compra un ___ sencillo.", "answer": "boleto", "hint": "ticket (LatAm)" },
+      { "sentence": "El tren llega al ___ tres.", "answer": "andén", "hint": "platform" },
+      { "sentence": "Evita el metro en la hora ___.", "answer": "pico", "hint": "rush ___" }
+    ]},
+    { "type": "multiple-choice", "items": [
+      { "question": "What is 'el transbordo'?", "options": ["the transfer", "the platform", "the driver", "the delay"], "answer": 0 },
+      { "question": "What does 'el abono mensual' mean?", "options": ["the daily ticket", "the monthly pass", "the transit card", "the next station"], "answer": 1 },
+      { "question": "What does 'el camión' mean in Mexico?", "options": ["the train", "the subway", "the bus", "the platform"], "answer": 2 }
+    ]}
+  ]
+}

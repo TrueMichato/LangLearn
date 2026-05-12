@@ -1,0 +1,36 @@
+{
+  "id": "at-the-post-office",
+  "words": [
+    { "word": "el correo", "reading": "ehl koh-RREH-oh", "meaning": "the post office / mail", "example": "Voy al correo a enviar un paquete.", "exampleMeaning": "I'm going to the post office to send a package." },
+    { "word": "el sello", "reading": "ehl SEH-yoh", "meaning": "the stamp (Spain); 'la estampilla' is preferred in LatAm", "example": "Necesito un sello para esta carta.", "exampleMeaning": "I need a stamp for this letter." },
+    { "word": "la estampilla", "reading": "lah ehs-tahm-PEE-yah", "meaning": "the stamp (LatAm)", "example": "Compré varias estampillas para los sobres.", "exampleMeaning": "I bought several stamps for the envelopes." },
+    { "word": "el sobre", "reading": "ehl SOH-breh", "meaning": "the envelope", "example": "Escribe la dirección en el sobre.", "exampleMeaning": "Write the address on the envelope." },
+    { "word": "el paquete", "reading": "ehl pah-KEH-teh", "meaning": "the package / parcel", "example": "El paquete llegó esta mañana.", "exampleMeaning": "The package arrived this morning." },
+    { "word": "el envío certificado", "reading": "ehl ehn-VEE-oh sehr-tee-fee-KAH-doh", "meaning": "the certified / registered shipment", "example": "Lo mandé por envío certificado.", "exampleMeaning": "I sent it by certified mail." },
+    { "word": "el código postal", "reading": "ehl KOH-dee-goh pohs-TAHL", "meaning": "the postal / ZIP code", "example": "No sé el código postal de su barrio.", "exampleMeaning": "I don't know the postal code of his neighborhood." },
+    { "word": "la dirección", "reading": "lah dee-rehk-SYOHN", "meaning": "the address", "example": "Apunta mi dirección, por favor.", "exampleMeaning": "Write down my address, please." },
+    { "word": "el remitente", "reading": "ehl rreh-mee-TEHN-teh", "meaning": "the sender", "example": "El remitente vive en Lima.", "exampleMeaning": "The sender lives in Lima." },
+    { "word": "el destinatario", "reading": "ehl dehs-tee-nah-TAH-ryoh", "meaning": "the recipient / addressee", "example": "El destinatario tiene que firmar.", "exampleMeaning": "The recipient has to sign." },
+    { "word": "la mensajería", "reading": "lah mehn-sah-heh-REE-ah", "meaning": "the courier service", "example": "Usamos una mensajería privada.", "exampleMeaning": "We use a private courier service." },
+    { "word": "la tarifa", "reading": "lah tah-REE-fah", "meaning": "the rate / fee", "example": "La tarifa depende del peso.", "exampleMeaning": "The rate depends on the weight." },
+    { "word": "la recogida", "reading": "lah rreh-koh-HEE-dah", "meaning": "the pickup / collection", "example": "La recogida es a las cinco.", "exampleMeaning": "The pickup is at five." },
+    { "word": "la entrega", "reading": "lah ehn-TREH-gah", "meaning": "the delivery", "example": "La entrega tarda tres días.", "exampleMeaning": "Delivery takes three days." },
+    { "word": "la ventanilla", "reading": "lah vehn-tah-NEE-yah", "meaning": "the (service) window / counter", "example": "Pague en la ventanilla número dos.", "exampleMeaning": "Pay at window number two." },
+    { "word": "el formulario", "reading": "ehl fohr-moo-LAH-ryoh", "meaning": "the form", "example": "Llene este formulario, por favor.", "exampleMeaning": "Please fill out this form." },
+    { "word": "pesar", "reading": "peh-SAR", "meaning": "to weigh", "example": "Voy a pesar el paquete primero.", "exampleMeaning": "I'm going to weigh the package first." }
+  ],
+  "exercises": [
+    { "type": "match", "pairs": 5 },
+    { "type": "fill-blank", "items": [
+      { "sentence": "Necesito un ___ para enviar la carta.", "answer": "sello", "hint": "stamp" },
+      { "sentence": "Escribe la dirección en el ___.", "answer": "sobre", "hint": "envelope" },
+      { "sentence": "Voy a ___ el paquete para saber la tarifa.", "answer": "pesar", "hint": "to weigh" },
+      { "sentence": "Llene este ___, por favor.", "answer": "formulario", "hint": "form to complete" }
+    ]},
+    { "type": "multiple-choice", "items": [
+      { "question": "What is 'el remitente'?", "options": ["the sender", "the recipient", "the stamp", "the package"], "answer": 0 },
+      { "question": "What does 'la entrega' mean?", "options": ["the pickup", "the delivery", "the rate", "the form"], "answer": 1 },
+      { "question": "What is 'el código postal'?", "options": ["the address", "the courier service", "the postal code", "the envelope"], "answer": 2 }
+    ]}
+  ]
+}

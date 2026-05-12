@@ -154,6 +154,42 @@
       "description": "The journalist meets the last resident of the ghost town and learns the truth, in a story rich with past tenses and subjunctive"
     },
     {
+      "id": "pueblo-fantasma-parte3",
+      "title": "El Pueblo Fantasma — Parte 3",
+      "titleEn": "The Ghost Town — Part 3",
+      "difficulty": "medium",
+      "wordCount": 240,
+      "tags": ["narrative", "mystery", "serial"],
+      "description": "Marta explores the abandoned town with the old man (Part 3 of 6)"
+    },
+    {
+      "id": "pueblo-fantasma-parte4",
+      "title": "El Pueblo Fantasma — Parte 4",
+      "titleEn": "The Ghost Town — Part 4",
+      "difficulty": "hard",
+      "wordCount": 280,
+      "tags": ["narrative", "mystery", "serial"],
+      "description": "A discovery shifts Marta's understanding (Part 4 of 6)"
+    },
+    {
+      "id": "pueblo-fantasma-parte5",
+      "title": "El Pueblo Fantasma — Parte 5",
+      "titleEn": "The Ghost Town — Part 5",
+      "difficulty": "hard",
+      "wordCount": 280,
+      "tags": ["narrative", "mystery", "serial"],
+      "description": "Revelations and a moral choice (Part 5 of 6)"
+    },
+    {
+      "id": "pueblo-fantasma-parte6",
+      "title": "El Pueblo Fantasma — Parte 6",
+      "titleEn": "The Ghost Town — Part 6 (Conclusion)",
+      "difficulty": "hard",
+      "wordCount": 280,
+      "tags": ["narrative", "mystery", "serial"],
+      "description": "Resolution and aftermath — the serial concludes (Part 6 of 6)"
+    },
+    {
       "id": "rima-becquer",
       "title": "Volverán las Oscuras Golondrinas",
       "titleEn": "Will Return the Dark Swallows",
@@ -161,6 +197,60 @@
       "wordCount": 120,
       "tags": ["literature", "poetry", "classic"],
       "description": "A short introduction to Bécquer's Rima LIII with the opening stanzas and an annotated explanation"
+    },
+    {
+      "id": "climate-easy",
+      "title": "El Cambio Climático (Nivel Fácil)",
+      "titleEn": "Climate Change (Easy Level)",
+      "difficulty": "easy",
+      "wordCount": 80,
+      "tags": ["environment", "climate", "graded-easy", "graded-climate"],
+      "description": "Same topic at three reading levels — easy version covers the basics of climate change in Latin America"
+    },
+    {
+      "id": "climate-medium",
+      "title": "El Cambio Climático (Nivel Medio)",
+      "titleEn": "Climate Change (Medium Level)",
+      "difficulty": "medium",
+      "wordCount": 200,
+      "tags": ["environment", "climate", "graded-medium", "graded-climate"],
+      "description": "Same topic at three reading levels — medium version adds regional examples and policy"
+    },
+    {
+      "id": "climate-hard",
+      "title": "El Cambio Climático (Nivel Avanzado)",
+      "titleEn": "Climate Change (Advanced Level)",
+      "difficulty": "hard",
+      "wordCount": 300,
+      "tags": ["environment", "climate", "graded-hard", "graded-climate"],
+      "description": "Same topic at three reading levels — hard version uses subjunctive and complex syntax"
+    },
+    {
+      "id": "precolumbian-easy",
+      "title": "Las Civilizaciones Precolombinas (Nivel Fácil)",
+      "titleEn": "Pre-Columbian Civilizations (Easy Level)",
+      "difficulty": "easy",
+      "wordCount": 80,
+      "tags": ["history", "culture", "graded-easy", "graded-precolumbian"],
+      "description": "Same topic at three reading levels — easy version introduces Maya, Aztec, and Inca"
+    },
+    {
+      "id": "precolumbian-medium",
+      "title": "Las Civilizaciones Precolombinas (Nivel Medio)",
+      "titleEn": "Pre-Columbian Civilizations (Medium Level)",
+      "difficulty": "medium",
+      "wordCount": 200,
+      "tags": ["history", "culture", "graded-medium", "graded-precolumbian"],
+      "description": "Same topic at three reading levels — medium version covers each civilization in detail"
+    },
+    {
+      "id": "precolumbian-hard",
+      "title": "Las Civilizaciones Precolombinas (Nivel Avanzado)",
+      "titleEn": "Pre-Columbian Civilizations (Advanced Level)",
+      "difficulty": "hard",
+      "wordCount": 300,
+      "tags": ["history", "culture", "graded-hard", "graded-precolumbian"],
+      "description": "Same topic at three reading levels — hard version uses academic register and decolonial framing"
     }
   ]
 }

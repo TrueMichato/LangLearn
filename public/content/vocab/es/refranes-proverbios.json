@@ -1,0 +1,190 @@
+{
+  "id": "refranes-proverbios",
+  "words": [
+    {
+      "word": "En boca cerrada no entran moscas",
+      "reading": "ehn BOH-kah seh-RRAH-dah noh EHN-trahn MOHS-kahs",
+      "meaning": "Silence is golden / Loose lips sink ships (lit. 'Flies don't enter a closed mouth')",
+      "example": "No le cuentes el secreto a nadie: en boca cerrada no entran moscas.",
+      "exampleMeaning": "Don't tell the secret to anyone: silence is golden."
+    },
+    {
+      "word": "A mal tiempo, buena cara",
+      "reading": "ah mahl TYEHM-poh, BWEH-nah KAH-rah",
+      "meaning": "Put on a brave face (lit. 'To bad weather, a good face')",
+      "example": "Sé que perdiste el trabajo, pero a mal tiempo, buena cara.",
+      "exampleMeaning": "I know you lost your job, but put on a brave face."
+    },
+    {
+      "word": "No hay mal que por bien no venga",
+      "reading": "noh ai mahl keh por byehn noh BEHN-gah",
+      "meaning": "Every cloud has a silver lining (lit. 'There's no evil that doesn't bring some good')",
+      "example": "Me cancelaron el vuelo, pero conocí a mi pareja en el aeropuerto. No hay mal que por bien no venga.",
+      "exampleMeaning": "My flight got canceled, but I met my partner at the airport. Every cloud has a silver lining."
+    },
+    {
+      "word": "Más vale tarde que nunca",
+      "reading": "mahs BAH-leh TAR-deh keh NOON-kah",
+      "meaning": "Better late than never",
+      "example": "Por fin entregaste el informe; más vale tarde que nunca.",
+      "exampleMeaning": "You finally turned in the report; better late than never."
+    },
+    {
+      "word": "A caballo regalado no le mires el diente",
+      "reading": "ah kah-BAH-yoh rreh-gah-LAH-doh noh leh MEE-rehs ehl DYEHN-teh",
+      "meaning": "Don't look a gift horse in the mouth",
+      "example": "Ana se quejó del regalo. —¡A caballo regalado no le mires el diente!",
+      "exampleMeaning": "Ana complained about the gift. —Don't look a gift horse in the mouth!"
+    },
+    {
+      "word": "Quien madruga, Dios le ayuda",
+      "reading": "kyehn mah-DROO-gah, DYOHS leh ah-YOO-dah",
+      "meaning": "The early bird gets the worm (lit. 'God helps those who rise early')",
+      "example": "Me levanto a las cinco para estudiar: quien madruga, Dios le ayuda.",
+      "exampleMeaning": "I get up at five to study: the early bird gets the worm."
+    },
+    {
+      "word": "En casa de herrero, cuchillo de palo",
+      "reading": "ehn KAH-sah deh eh-RREH-roh, koo-CHEE-yoh deh PAH-loh",
+      "meaning": "The cobbler's children have no shoes (lit. 'In the blacksmith's house, a wooden knife')",
+      "example": "Es dentista pero no lleva a sus hijos al dentista: en casa de herrero, cuchillo de palo.",
+      "exampleMeaning": "He's a dentist but doesn't take his kids to one: the cobbler's children have no shoes."
+    },
+    {
+      "word": "Más vale pájaro en mano que ciento volando",
+      "reading": "mahs BAH-leh PAH-hah-roh ehn MAH-noh keh SYEHN-toh boh-LAHN-doh",
+      "meaning": "A bird in the hand is worth two in the bush (lit. 'Better one bird in hand than a hundred flying')",
+      "example": "Acepta la oferta segura; más vale pájaro en mano que ciento volando.",
+      "exampleMeaning": "Take the safe offer; a bird in the hand is worth two in the bush."
+    },
+    {
+      "word": "A buen entendedor, pocas palabras bastan",
+      "reading": "ah bwehn ehn-tehn-deh-DOR, POH-kahs pah-LAH-brahs BAHS-tahn",
+      "meaning": "A word to the wise is enough (lit. 'For a good listener, few words suffice')",
+      "example": "Ya te dije lo que pienso; a buen entendedor, pocas palabras bastan.",
+      "exampleMeaning": "I've already told you what I think; a word to the wise is enough."
+    },
+    {
+      "word": "Dime con quién andas y te diré quién eres",
+      "reading": "DEE-meh kohn kyehn AHN-dahs ee teh dee-REH kyehn EH-rehs",
+      "meaning": "You are who you hang with (lit. 'Tell me who you walk with and I'll tell you who you are')",
+      "example": "Cuida tus amistades: dime con quién andas y te diré quién eres.",
+      "exampleMeaning": "Watch your friendships: you are who you hang with."
+    },
+    {
+      "word": "Camarón que se duerme se lo lleva la corriente",
+      "reading": "kah-mah-ROHN keh seh DWEHR-meh seh loh YEH-bah lah koh-RRYEHN-teh",
+      "meaning": "You snooze, you lose (lit. 'The shrimp that sleeps gets carried away by the current') — Latin American",
+      "example": "Aplica ya a la beca: camarón que se duerme se lo lleva la corriente.",
+      "exampleMeaning": "Apply for the scholarship now: you snooze, you lose."
+    },
+    {
+      "word": "Más vale prevenir que curar",
+      "reading": "mahs BAH-leh preh-beh-NEER keh koo-RAR",
+      "meaning": "An ounce of prevention is worth a pound of cure (lit. 'Better to prevent than to cure')",
+      "example": "Vacúnate a tiempo: más vale prevenir que curar.",
+      "exampleMeaning": "Get vaccinated on time: an ounce of prevention is worth a pound of cure."
+    },
+    {
+      "word": "El que mucho abarca poco aprieta",
+      "reading": "ehl keh MOO-choh ah-BAR-kah POH-koh ah-PRYEH-tah",
+      "meaning": "Don't bite off more than you can chew (lit. 'He who grasps much, squeezes little')",
+      "example": "No te apuntes a tantos cursos; el que mucho abarca poco aprieta.",
+      "exampleMeaning": "Don't sign up for so many courses; don't bite off more than you can chew."
+    },
+    {
+      "word": "No por mucho madrugar amanece más temprano",
+      "reading": "noh por MOO-choh mah-droo-GAR ah-mah-NEH-seh mahs tehm-PRAH-noh",
+      "meaning": "Things happen in their own time (lit. 'Just because you rise early doesn't mean dawn comes sooner')",
+      "example": "Tranquilo, no acabarás antes por correr; no por mucho madrugar amanece más temprano.",
+      "exampleMeaning": "Relax, you won't finish sooner by rushing; things happen in their own time."
+    },
+    {
+      "word": "Hablando del rey de Roma, por la puerta asoma",
+      "reading": "ah-BLAHN-doh dehl rray deh RROH-mah, por lah PWEHR-tah ah-SOH-mah",
+      "meaning": "Speak of the devil (lit. 'Speaking of the king of Rome, he appears at the door')",
+      "example": "¡Mira, ahí viene Luis! Hablando del rey de Roma, por la puerta asoma.",
+      "exampleMeaning": "Look, here comes Luis! Speak of the devil."
+    },
+    {
+      "word": "Cría cuervos y te sacarán los ojos",
+      "reading": "KREE-ah KWEHR-bohs ee teh sah-kah-RAHN lohs OH-hohs",
+      "meaning": "No good deed goes unpunished (lit. 'Raise crows and they'll peck out your eyes')",
+      "example": "Lo ayudé toda la vida y mira cómo me paga: cría cuervos y te sacarán los ojos.",
+      "exampleMeaning": "I helped him his whole life and look how he repays me: no good deed goes unpunished."
+    },
+    {
+      "word": "Donde manda capitán no manda marinero",
+      "reading": "DOHN-deh MAHN-dah kah-pee-TAHN noh MAHN-dah mah-ree-NEH-roh",
+      "meaning": "Rank has its privileges / The boss is the boss (lit. 'Where the captain commands, the sailor doesn't')",
+      "example": "Aquí decido yo; donde manda capitán no manda marinero.",
+      "exampleMeaning": "I decide here; the boss is the boss."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "En boca ___ no entran moscas.",
+          "answer": "cerrada",
+          "hint": "closed (fem.)"
+        },
+        {
+          "sentence": "Más vale ___ que nunca.",
+          "answer": "tarde",
+          "hint": "late"
+        },
+        {
+          "sentence": "A caballo regalado no le mires el ___.",
+          "answer": "diente",
+          "hint": "tooth"
+        },
+        {
+          "sentence": "Quien madruga, ___ le ayuda.",
+          "answer": "Dios",
+          "hint": "God"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "items": [
+        {
+          "question": "What does 'Más vale pájaro en mano que ciento volando' mean?",
+          "options": [
+            "Birds of a feather flock together",
+            "A bird in the hand is worth two in the bush",
+            "The early bird gets the worm",
+            "Kill two birds with one stone"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What does 'En casa de herrero, cuchillo de palo' mean?",
+          "options": [
+            "Practice makes perfect",
+            "Don't judge a book by its cover",
+            "The cobbler's children have no shoes",
+            "Too many cooks spoil the broth"
+          ],
+          "answer": 2
+        },
+        {
+          "question": "What does 'Camarón que se duerme se lo lleva la corriente' mean?",
+          "options": [
+            "Still waters run deep",
+            "Let sleeping dogs lie",
+            "Go with the flow",
+            "You snooze, you lose"
+          ],
+          "answer": 3
+        }
+      ]
+    }
+  ]
+}

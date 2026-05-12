@@ -1,0 +1,183 @@
+{
+  "id": "animal-idioms",
+  "words": [
+    {
+      "word": "ser un lince",
+      "reading": "sehr oon LEEN-seh",
+      "meaning": "to be sharp / very clever",
+      "example": "Para los negocios, Marta es un lince.",
+      "exampleMeaning": "When it comes to business, Marta is sharp."
+    },
+    {
+      "word": "estar como una cabra",
+      "reading": "ehs-TAHR KOH-moh OO-nah KAH-brah",
+      "meaning": "to be crazy",
+      "example": "Mi tío está como una cabra, pero lo adoro.",
+      "exampleMeaning": "My uncle is crazy, but I adore him."
+    },
+    {
+      "word": "ser un gallina",
+      "reading": "sehr oon gah-YEE-nah",
+      "meaning": "to be a coward",
+      "example": "No seas gallina y tírate al agua.",
+      "exampleMeaning": "Don't be a coward and jump in the water."
+    },
+    {
+      "word": "llevar una vida de perros",
+      "reading": "yeh-BAHR OO-nah BEE-dah deh PEH-rrohs",
+      "meaning": "to lead a miserable life",
+      "example": "Desde que perdió el trabajo lleva una vida de perros.",
+      "exampleMeaning": "Since he lost his job, he's been leading a miserable life."
+    },
+    {
+      "word": "tener vista de águila",
+      "reading": "teh-NEHR BEES-tah deh AH-gee-lah",
+      "meaning": "to have eagle eyes",
+      "example": "Mi abuela tiene vista de águila — ve todo.",
+      "exampleMeaning": "My grandma has eagle eyes — she sees everything."
+    },
+    {
+      "word": "ser un burro",
+      "reading": "sehr oon BOO-rroh",
+      "meaning": "to be stupid / stubborn",
+      "example": "No seas burro, escúchame.",
+      "exampleMeaning": "Don't be stubborn, listen to me."
+    },
+    {
+      "word": "hablar como un loro",
+      "reading": "ah-BLAHR KOH-moh oon LOH-roh",
+      "meaning": "to talk nonstop",
+      "example": "Mi hermana habla como un loro.",
+      "exampleMeaning": "My sister talks nonstop."
+    },
+    {
+      "word": "ser una rata",
+      "reading": "sehr OO-nah RRAH-tah",
+      "meaning": "to be stingy / cheap",
+      "example": "No invitó a nadie. Es una rata.",
+      "exampleMeaning": "He didn't treat anyone. He's stingy."
+    },
+    {
+      "word": "tener memoria de elefante",
+      "reading": "teh-NEHR meh-MOH-ryah deh eh-leh-FAHN-teh",
+      "meaning": "to have an excellent memory",
+      "example": "Recuerda todo desde niño. Tiene memoria de elefante.",
+      "exampleMeaning": "He remembers everything from childhood. He has an elephant's memory."
+    },
+    {
+      "word": "dar gato por liebre",
+      "reading": "dahr GAH-toh por LYEH-breh",
+      "meaning": "to swindle (give cat instead of hare)",
+      "example": "En ese mercado te dan gato por liebre, ten cuidado.",
+      "exampleMeaning": "At that market they'll cheat you, be careful."
+    },
+    {
+      "word": "matar dos pájaros de un tiro",
+      "reading": "mah-TAHR dohs PAH-hah-rohs deh oon TEE-roh",
+      "meaning": "to kill two birds with one stone",
+      "example": "Si voy al banco y de paso al mercado, mato dos pájaros de un tiro.",
+      "exampleMeaning": "If I go to the bank and stop by the market, I kill two birds with one stone."
+    },
+    {
+      "word": "ser la oveja negra",
+      "reading": "sehr lah oh-BEH-hah NEH-grah",
+      "meaning": "to be the black sheep",
+      "example": "Es el único músico de una familia de abogados — es la oveja negra.",
+      "exampleMeaning": "He's the only musician in a family of lawyers — he's the black sheep."
+    },
+    {
+      "word": "estar más perdido que un pulpo en un garaje",
+      "reading": "ehs-TAHR mahs pehr-DEE-doh keh oon POOL-poh ehn oon gah-RAH-heh",
+      "meaning": "to be totally lost (more lost than an octopus in a garage)",
+      "example": "En la clase de física estoy más perdida que un pulpo en un garaje.",
+      "exampleMeaning": "In physics class I'm totally lost."
+    },
+    {
+      "word": "ser un cerdo",
+      "reading": "sehr oon SEHR-doh",
+      "meaning": "to be filthy / disgusting",
+      "example": "Limpia tu cuarto, no seas cerdo.",
+      "exampleMeaning": "Clean your room, don't be filthy."
+    },
+    {
+      "word": "ser un águila",
+      "reading": "sehr oon AH-gee-lah",
+      "meaning": "to be very smart (also: ser un lince)",
+      "example": "En matemáticas es un águila.",
+      "exampleMeaning": "He's a whiz at math."
+    },
+    {
+      "word": "tener la mosca tras la oreja",
+      "reading": "teh-NEHR lah MOHS-kah trahs lah oh-REH-hah",
+      "meaning": "to be suspicious",
+      "example": "Tengo la mosca tras la oreja con su excusa.",
+      "exampleMeaning": "I'm suspicious about his excuse."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "Mi tío está como una ___ , pero lo adoro.",
+          "answer": "cabra",
+          "hint": "goat — used for craziness"
+        },
+        {
+          "sentence": "Si voy al banco y de paso al mercado, mato dos ___ de un tiro.",
+          "answer": "pájaros",
+          "hint": "the birds in 'kill two birds with one stone'"
+        },
+        {
+          "sentence": "Mi abuela tiene vista de ___ — ve todo.",
+          "answer": "águila",
+          "hint": "an eagle — eagle eyes"
+        },
+        {
+          "sentence": "Es el único músico de una familia de abogados — es la oveja ___.",
+          "answer": "negra",
+          "hint": "the black ___ of the family"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "items": [
+        {
+          "question": "What does 'ser un lince' mean?",
+          "options": [
+            "to be very lazy",
+            "to be very clever",
+            "to be very loud",
+            "to be very tall"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "Which idiom means 'to swindle / cheat someone'?",
+          "options": [
+            "tener memoria de elefante",
+            "hablar como un loro",
+            "dar gato por liebre",
+            "ser una rata"
+          ],
+          "answer": 2
+        },
+        {
+          "question": "What does 'hablar como un loro' mean?",
+          "options": [
+            "to whisper softly",
+            "to talk nonstop",
+            "to speak a foreign language",
+            "to refuse to talk"
+          ],
+          "answer": 1
+        }
+      ]
+    }
+  ]
+}

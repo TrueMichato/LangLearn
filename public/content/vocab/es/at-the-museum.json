@@ -1,0 +1,35 @@
+{
+  "id": "at-the-museum",
+  "words": [
+    { "word": "el museo", "reading": "ehl moo-SEH-oh", "meaning": "the museum", "example": "El museo abre a las diez.", "exampleMeaning": "The museum opens at ten." },
+    { "word": "la entrada", "reading": "lah ehn-TRAH-dah", "meaning": "the ticket / entrance (LatAm also 'el boleto')", "example": "Compré la entrada por internet.", "exampleMeaning": "I bought the ticket online." },
+    { "word": "la audioguía", "reading": "lah ow-dyoh-GEE-ah", "meaning": "the audio guide", "example": "La audioguía está en español e inglés.", "exampleMeaning": "The audio guide is in Spanish and English." },
+    { "word": "la exposición", "reading": "lah ehks-poh-see-SYOHN", "meaning": "the exhibition", "example": "La exposición termina el domingo.", "exampleMeaning": "The exhibition ends on Sunday." },
+    { "word": "la pintura", "reading": "lah peen-TOO-rah", "meaning": "the painting", "example": "Esta pintura es del siglo dieciocho.", "exampleMeaning": "This painting is from the eighteenth century." },
+    { "word": "la escultura", "reading": "lah ehs-kool-TOO-rah", "meaning": "the sculpture", "example": "La escultura está hecha de mármol.", "exampleMeaning": "The sculpture is made of marble." },
+    { "word": "el cuadro", "reading": "ehl KWAH-droh", "meaning": "the picture / framed painting", "example": "Me encanta ese cuadro al fondo.", "exampleMeaning": "I love that picture in the back." },
+    { "word": "el artista", "reading": "ehl ar-TEES-tah", "meaning": "the artist (m.); 'la artista' (f.)", "example": "El artista nació en Sevilla.", "exampleMeaning": "The artist was born in Seville." },
+    { "word": "la obra de arte", "reading": "lah OH-brah deh AR-teh", "meaning": "the work of art", "example": "Cada obra de arte cuenta una historia.", "exampleMeaning": "Each work of art tells a story." },
+    { "word": "la galería", "reading": "lah gah-leh-REE-ah", "meaning": "the gallery", "example": "Pasamos por la galería principal.", "exampleMeaning": "We went through the main gallery." },
+    { "word": "el guía", "reading": "ehl GEE-ah", "meaning": "the guide (m.); 'la guía' (f.)", "example": "El guía explica muy bien.", "exampleMeaning": "The guide explains very well." },
+    { "word": "gratis", "reading": "GRAH-tees", "meaning": "free (also 'entrada libre' = free entry)", "example": "Los domingos la entrada es gratis.", "exampleMeaning": "On Sundays admission is free." },
+    { "word": "el descuento de estudiante", "reading": "ehl dehs-KWEHN-toh deh ehs-too-DYAHN-teh", "meaning": "the student discount", "example": "¿Hay descuento de estudiante?", "exampleMeaning": "Is there a student discount?" },
+    { "word": "la taquilla", "reading": "lah tah-KEE-yah", "meaning": "the ticket booth / box office", "example": "Las entradas se compran en la taquilla.", "exampleMeaning": "Tickets are bought at the box office." },
+    { "word": "prohibido tocar", "reading": "proh-ee-BEE-doh toh-KAR", "meaning": "do not touch (lit. forbidden to touch)", "example": "El cartel dice 'prohibido tocar'.", "exampleMeaning": "The sign says 'do not touch'." },
+    { "word": "no se permite tomar fotos", "reading": "noh seh pehr-MEE-teh toh-MAR FOH-tohs", "meaning": "no photos allowed", "example": "En esta sala no se permite tomar fotos.", "exampleMeaning": "In this room photos are not allowed." }
+  ],
+  "exercises": [
+    { "type": "match", "pairs": 5 },
+    { "type": "fill-blank", "items": [
+      { "sentence": "Compré la ___ por internet.", "answer": "entrada", "hint": "ticket" },
+      { "sentence": "La ___ está hecha de mármol.", "answer": "escultura", "hint": "3D art piece" },
+      { "sentence": "Los domingos la entrada es ___.", "answer": "gratis", "hint": "no cost" },
+      { "sentence": "Las entradas se compran en la ___.", "answer": "taquilla", "hint": "box office" }
+    ]},
+    { "type": "multiple-choice", "items": [
+      { "question": "What is 'la audioguía'?", "options": ["the audio guide", "the gallery", "the ticket", "the artist"], "answer": 0 },
+      { "question": "What does 'la obra de arte' mean?", "options": ["the gallery", "the work of art", "the exhibition", "the sculpture"], "answer": 1 },
+      { "question": "What does 'prohibido tocar' mean?", "options": ["please touch", "free entry", "do not touch", "no photos"], "answer": 2 }
+    ]}
+  ]
+}

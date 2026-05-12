@@ -1,0 +1,183 @@
+{
+  "id": "food-idioms",
+  "words": [
+    {
+      "word": "ser pan comido",
+      "reading": "sehr pahn koh-MEE-doh",
+      "meaning": "to be a piece of cake (easy)",
+      "example": "El examen fue pan comido.",
+      "exampleMeaning": "The exam was a piece of cake."
+    },
+    {
+      "word": "ser harina de otro costal",
+      "reading": "sehr ah-REE-nah deh OH-troh kohs-TAHL",
+      "meaning": "to be a different matter entirely",
+      "example": "Eso es harina de otro costal, no lo discutimos ahora.",
+      "exampleMeaning": "That's a different matter entirely, we won't discuss it now."
+    },
+    {
+      "word": "importar un pimiento",
+      "reading": "eem-pohr-TAHR oon pee-MYEHN-toh",
+      "meaning": "to not care at all",
+      "example": "Me importa un pimiento lo que piense.",
+      "exampleMeaning": "I don't care at all what he thinks."
+    },
+    {
+      "word": "estar como un fideo",
+      "reading": "ehs-TAHR KOH-moh oon fee-DEH-oh",
+      "meaning": "to be very skinny",
+      "example": "Está como un fideo desde que empezó la dieta.",
+      "exampleMeaning": "She's been very skinny since she started the diet."
+    },
+    {
+      "word": "dar calabazas",
+      "reading": "dahr kah-lah-BAH-sahs",
+      "meaning": "to reject (a love interest) / to flunk",
+      "example": "Le pidió matrimonio y ella le dio calabazas.",
+      "exampleMeaning": "He proposed and she turned him down."
+    },
+    {
+      "word": "ponerse rojo como un tomate",
+      "reading": "poh-NEHR-seh RROH-hoh KOH-moh oon toh-MAH-teh",
+      "meaning": "to blush deeply",
+      "example": "Cuando ella le habló se puso rojo como un tomate.",
+      "exampleMeaning": "When she spoke to him he turned red as a tomato."
+    },
+    {
+      "word": "estar de mala leche",
+      "reading": "ehs-TAHR deh MAH-lah LEH-cheh",
+      "meaning": "to be in a bad mood / mean-spirited",
+      "example": "Mejor no le hables hoy, está de mala leche.",
+      "exampleMeaning": "Better not talk to him today, he's in a bad mood."
+    },
+    {
+      "word": "estar como una sopa",
+      "reading": "ehs-TAHR KOH-moh OO-nah SOH-pah",
+      "meaning": "to be soaking wet",
+      "example": "Salí sin paraguas y llegué a casa hecho una sopa.",
+      "exampleMeaning": "I went out without an umbrella and got home soaking wet."
+    },
+    {
+      "word": "ser un melón",
+      "reading": "sehr oon meh-LOHN",
+      "meaning": "to be a dunce",
+      "example": "No seas melón, es obvio.",
+      "exampleMeaning": "Don't be a dunce, it's obvious."
+    },
+    {
+      "word": "ser un bombón",
+      "reading": "sehr oon bohm-BOHN",
+      "meaning": "to be very attractive",
+      "example": "Su novia es un bombón.",
+      "exampleMeaning": "His girlfriend is gorgeous."
+    },
+    {
+      "word": "irse a freír espárragos",
+      "reading": "EER-seh ah freh-EER ehs-PAH-rrah-gohs",
+      "meaning": "to get lost (rude)",
+      "example": "¡Vete a freír espárragos!",
+      "exampleMeaning": "Get lost!"
+    },
+    {
+      "word": "estar en el ajo",
+      "reading": "ehs-TAHR ehn ehl AH-hoh",
+      "meaning": "to be in the know",
+      "example": "Pregúntale a Marta, ella está en el ajo.",
+      "exampleMeaning": "Ask Marta — she's in the know."
+    },
+    {
+      "word": "pedir peras al olmo",
+      "reading": "peh-DEER PEH-rahs ahl OHL-moh",
+      "meaning": "to ask the impossible",
+      "example": "Pedirle puntualidad es como pedir peras al olmo.",
+      "exampleMeaning": "Asking him to be punctual is asking the impossible."
+    },
+    {
+      "word": "ser una berza",
+      "reading": "sehr OO-nah BEHR-sah",
+      "meaning": "to be a fool",
+      "example": "Qué berza eres, lo dejaste todo desordenado.",
+      "exampleMeaning": "What a fool you are, you left everything a mess."
+    },
+    {
+      "word": "costar un huevo",
+      "reading": "kohs-TAHR oon WEH-boh",
+      "meaning": "to cost a fortune (colloquial, mildly vulgar)",
+      "example": "Ese piso cuesta un huevo.",
+      "exampleMeaning": "That apartment costs a fortune."
+    },
+    {
+      "word": "darle vuelta a la tortilla",
+      "reading": "DAHR-leh BWEHL-tah ah lah tohr-TEE-yah",
+      "meaning": "to turn the tables",
+      "example": "El equipo perdía 2-0 pero le dio vuelta a la tortilla en el segundo tiempo.",
+      "exampleMeaning": "The team was losing 2-0 but turned the tables in the second half."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "El examen fue ___ comido.",
+          "answer": "pan",
+          "hint": "bread — 'eaten ___' = piece of cake"
+        },
+        {
+          "sentence": "Cuando ella le habló se puso rojo como un ___.",
+          "answer": "tomate",
+          "hint": "the red salad vegetable"
+        },
+        {
+          "sentence": "Me importa un ___ lo que piense.",
+          "answer": "pimiento",
+          "hint": "a pepper — 'I care a ___' (sarcastic)"
+        },
+        {
+          "sentence": "Pedirle puntualidad es como pedir ___ al olmo.",
+          "answer": "peras",
+          "hint": "the fruit you can't ask an elm tree for"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "items": [
+        {
+          "question": "What does 'ser pan comido' mean?",
+          "options": [
+            "to be hungry",
+            "to be a piece of cake (easy)",
+            "to be stale",
+            "to be on a diet"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "Which idiom means 'to turn the tables'?",
+          "options": [
+            "estar como una sopa",
+            "dar calabazas",
+            "darle vuelta a la tortilla",
+            "estar en el ajo"
+          ],
+          "answer": 2
+        },
+        {
+          "question": "What does 'estar de mala leche' mean?",
+          "options": [
+            "to be lactose intolerant",
+            "to be in a bad mood",
+            "to be sick",
+            "to be very lucky"
+          ],
+          "answer": 1
+        }
+      ]
+    }
+  ]
+}

@@ -48,5 +48,10 @@
   { "id": "lo-neuter", "title": "Lo + Adjetivo (The Neuter Article 'Lo')", "order": 47 },
   { "id": "modal-verbs", "title": "Modal Verbs Compared (deber, tener que, hay que, haber de)", "order": 48 },
   { "id": "stressed-possessives", "title": "Stressed Possessives (el mío, la tuya, etc.)", "order": 49 },
-  { "id": "apocopation", "title": "Apocopation (buen, gran, san, primer, etc.)", "order": 50 }
+  { "id": "apocopation", "title": "Apocopation (buen, gran, san, primer, etc.)", "order": 50 },
+  { "id": "refranes-as-grammar", "title": "Refranes as Grammar (Proverbs Illustrate Structure)", "order": 51 },
+  { "id": "cheatsheet-verb-tenses", "title": "Cheat Sheet: All Verb Tenses (One-Page Summary)", "order": 52 },
+  { "id": "cheatsheet-accent-rules", "title": "Cheat Sheet: Accent Marks (Tildes) — All Rules", "order": 53 },
+  { "id": "cheatsheet-ser-estar-haber", "title": "Cheat Sheet: Ser / Estar / Haber Compared", "order": 54 },
+  { "id": "cheatsheet-subjunctive-triggers", "title": "Cheat Sheet: Subjunctive Triggers (WEIRDO)", "order": 55 }
 ]

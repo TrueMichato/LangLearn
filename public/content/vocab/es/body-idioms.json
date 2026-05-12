@@ -1,0 +1,183 @@
+{
+  "id": "body-idioms",
+  "words": [
+    {
+      "word": "tomar el pelo",
+      "reading": "toh-MAHR ehl PEH-loh",
+      "meaning": "to tease / pull someone's leg",
+      "example": "¿En serio o me estás tomando el pelo?",
+      "exampleMeaning": "Seriously, or are you pulling my leg?"
+    },
+    {
+      "word": "no tener pelos en la lengua",
+      "reading": "noh teh-NEHR PEH-lohs ehn lah LEHN-gwah",
+      "meaning": "to be very frank / outspoken",
+      "example": "Mi jefa no tiene pelos en la lengua, te dice todo a la cara.",
+      "exampleMeaning": "My boss is very frank — she tells you everything to your face."
+    },
+    {
+      "word": "costar un ojo de la cara",
+      "reading": "kohs-TAHR oon OH-hoh deh lah KAH-rah",
+      "meaning": "to cost an arm and a leg",
+      "example": "Ese coche cuesta un ojo de la cara.",
+      "exampleMeaning": "That car costs an arm and a leg."
+    },
+    {
+      "word": "hablar por los codos",
+      "reading": "ah-BLAHR por lohs KOH-dohs",
+      "meaning": "to talk excessively",
+      "example": "Mi vecina habla por los codos en el ascensor.",
+      "exampleMeaning": "My neighbor talks nonstop in the elevator."
+    },
+    {
+      "word": "estar hasta las narices",
+      "reading": "ehs-TAHR AHS-tah lahs nah-REE-sehs",
+      "meaning": "to be fed up",
+      "example": "Estoy hasta las narices del tráfico.",
+      "exampleMeaning": "I'm fed up with the traffic."
+    },
+    {
+      "word": "meter la pata",
+      "reading": "meh-TEHR lah PAH-tah",
+      "meaning": "to mess up / put your foot in your mouth",
+      "example": "Metí la pata cuando le pregunté por su ex.",
+      "exampleMeaning": "I messed up when I asked about her ex."
+    },
+    {
+      "word": "echar una mano",
+      "reading": "eh-CHAHR OO-nah MAH-noh",
+      "meaning": "to lend a hand",
+      "example": "¿Me echas una mano con estas cajas?",
+      "exampleMeaning": "Can you give me a hand with these boxes?"
+    },
+    {
+      "word": "estar con el agua al cuello",
+      "reading": "ehs-TAHR kohn ehl AH-gwah ahl KWEH-yoh",
+      "meaning": "to be in over one's head",
+      "example": "Con las deudas estamos con el agua al cuello.",
+      "exampleMeaning": "With the debts we're in over our heads."
+    },
+    {
+      "word": "irse de la lengua",
+      "reading": "EER-seh deh lah LEHN-gwah",
+      "meaning": "to spill the beans",
+      "example": "Se fue de la lengua y contó el secreto.",
+      "exampleMeaning": "He spilled the beans and told the secret."
+    },
+    {
+      "word": "tener cara dura",
+      "reading": "teh-NEHR KAH-rah DOO-rah",
+      "meaning": "to be brazen / cheeky",
+      "example": "Tiene cara dura: llegó tarde y pidió ascenso.",
+      "exampleMeaning": "He's brazen: he arrived late and asked for a promotion."
+    },
+    {
+      "word": "poner el grito en el cielo",
+      "reading": "poh-NEHR ehl GREE-toh ehn ehl SYEH-loh",
+      "meaning": "to hit the roof / make a scene",
+      "example": "Mi mamá puso el grito en el cielo cuando vio mis notas.",
+      "exampleMeaning": "My mom hit the roof when she saw my grades."
+    },
+    {
+      "word": "no dar pie con bola",
+      "reading": "noh dahr pyeh kohn BOH-lah",
+      "meaning": "to not get anything right",
+      "example": "Hoy no doy pie con bola en el trabajo.",
+      "exampleMeaning": "Today I can't get anything right at work."
+    },
+    {
+      "word": "ponerse las pilas",
+      "reading": "poh-NEHR-seh lahs PEE-lahs",
+      "meaning": "to get one's act together",
+      "example": "Si quieres aprobar, ponte las pilas ya.",
+      "exampleMeaning": "If you want to pass, get your act together now."
+    },
+    {
+      "word": "estirar la pata",
+      "reading": "ehs-tee-RAHR lah PAH-tah",
+      "meaning": "to kick the bucket (die — colloquial)",
+      "example": "Mi tatarabuelo estiró la pata a los 102 años.",
+      "exampleMeaning": "My great-great-grandfather kicked the bucket at 102."
+    },
+    {
+      "word": "dormir a pierna suelta",
+      "reading": "dohr-MEER ah PYEHR-nah SWEHL-tah",
+      "meaning": "to sleep like a log",
+      "example": "Después del viaje dormí a pierna suelta toda la noche.",
+      "exampleMeaning": "After the trip I slept like a log all night."
+    },
+    {
+      "word": "lavarse las manos",
+      "reading": "lah-BAHR-seh lahs MAH-nohs",
+      "meaning": "to wash one's hands of something",
+      "example": "Cuando hay un problema, él se lava las manos.",
+      "exampleMeaning": "When there's a problem, he washes his hands of it."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "¿Me echas una ___ con estas cajas?",
+          "answer": "mano",
+          "hint": "the body part you 'lend' when helping"
+        },
+        {
+          "sentence": "Estoy hasta las ___ del tráfico.",
+          "answer": "narices",
+          "hint": "noses — to be fed up 'up to the ___'"
+        },
+        {
+          "sentence": "Si quieres aprobar, ponte las ___ ya.",
+          "answer": "pilas",
+          "hint": "batteries — 'put on your ___' to get going"
+        },
+        {
+          "sentence": "Ese coche cuesta un ___ de la cara.",
+          "answer": "ojo",
+          "hint": "an eye — 'an ___ of the face'"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "items": [
+        {
+          "question": "What does 'tomar el pelo' mean?",
+          "options": [
+            "to pull someone's leg / tease",
+            "to comb one's hair",
+            "to get a haircut",
+            "to pay attention"
+          ],
+          "answer": 0
+        },
+        {
+          "question": "Which idiom means 'to spill the beans'?",
+          "options": [
+            "meter la pata",
+            "irse de la lengua",
+            "echar una mano",
+            "lavarse las manos"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What does 'dormir a pierna suelta' mean?",
+          "options": [
+            "to have insomnia",
+            "to sleep poorly",
+            "to sleep like a log",
+            "to take a short nap"
+          ],
+          "answer": 2
+        }
+      ]
+    }
+  ]
+}

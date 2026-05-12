@@ -1,0 +1,35 @@
+{
+  "id": "at-the-gas-station",
+  "words": [
+    { "word": "la gasolinera", "reading": "lah gah-soh-lee-NEH-rah", "meaning": "the gas station (general LatAm; 'la bomba' in parts of Central America/Colombia)", "example": "Pasemos por la gasolinera antes de salir.", "exampleMeaning": "Let's stop at the gas station before leaving." },
+    { "word": "la gasolina", "reading": "lah gah-soh-LEE-nah", "meaning": "gasoline (general; 'la nafta' in Argentina/Uruguay)", "example": "La gasolina está cara este mes.", "exampleMeaning": "Gasoline is expensive this month." },
+    { "word": "sin plomo", "reading": "seen PLOH-moh", "meaning": "unleaded", "example": "Lléneme el tanque con sin plomo, por favor.", "exampleMeaning": "Fill the tank with unleaded, please." },
+    { "word": "llenar el tanque", "reading": "yeh-NAR ehl TAHN-keh", "meaning": "to fill the tank", "example": "Voy a llenar el tanque antes del viaje.", "exampleMeaning": "I'm going to fill the tank before the trip." },
+    { "word": "el surtidor", "reading": "ehl soor-tee-DOHR", "meaning": "the pump (fuel dispenser)", "example": "El surtidor número tres no funciona.", "exampleMeaning": "Pump number three doesn't work." },
+    { "word": "el neumático", "reading": "ehl neh-oo-MAH-tee-koh", "meaning": "the tire (also 'la llanta' in LatAm)", "example": "Tengo un neumático pinchado.", "exampleMeaning": "I have a flat tire." },
+    { "word": "el aceite", "reading": "ehl ah-SEY-teh", "meaning": "the oil", "example": "El motor necesita aceite nuevo.", "exampleMeaning": "The engine needs new oil." },
+    { "word": "la presión de las llantas", "reading": "lah preh-SYOHN deh lahs YAHN-tahs", "meaning": "the tire pressure", "example": "Revisa la presión de las llantas.", "exampleMeaning": "Check the tire pressure." },
+    { "word": "lavar el carro", "reading": "lah-VAR ehl KAH-rroh", "meaning": "to wash the car (LatAm 'carro'; 'coche' elsewhere)", "example": "Quiero lavar el carro aquí mismo.", "exampleMeaning": "I want to wash the car right here." },
+    { "word": "la manguera", "reading": "lah mahn-GEH-rah", "meaning": "the hose", "example": "Pásame la manguera, por favor.", "exampleMeaning": "Pass me the hose, please." },
+    { "word": "el recibo", "reading": "ehl rreh-SEE-boh", "meaning": "the receipt", "example": "¿Me da el recibo, por favor?", "exampleMeaning": "Can you give me the receipt, please?" },
+    { "word": "el motor", "reading": "ehl moh-TOHR", "meaning": "the engine / motor", "example": "El motor hace un ruido raro.", "exampleMeaning": "The engine is making a strange noise." },
+    { "word": "la batería", "reading": "lah bah-teh-REE-ah", "meaning": "the battery", "example": "La batería está descargada.", "exampleMeaning": "The battery is dead." },
+    { "word": "el parabrisas", "reading": "ehl pah-rah-BREE-sahs", "meaning": "the windshield", "example": "Tengo que limpiar el parabrisas.", "exampleMeaning": "I have to clean the windshield." },
+    { "word": "el limpiaparabrisas", "reading": "ehl leem-pyah-pah-rah-BREE-sahs", "meaning": "the windshield wiper", "example": "Mi limpiaparabrisas no funciona bien.", "exampleMeaning": "My windshield wiper doesn't work well." },
+    { "word": "el cambio de aceite", "reading": "ehl KAHM-byoh deh ah-SEY-teh", "meaning": "the oil change", "example": "Necesito un cambio de aceite pronto.", "exampleMeaning": "I need an oil change soon." }
+  ],
+  "exercises": [
+    { "type": "match", "pairs": 5 },
+    { "type": "fill-blank", "items": [
+      { "sentence": "Voy a ___ el tanque antes del viaje.", "answer": "llenar", "hint": "to fill" },
+      { "sentence": "El motor necesita ___ nuevo.", "answer": "aceite", "hint": "oil" },
+      { "sentence": "Tengo un ___ pinchado.", "answer": "neumático", "hint": "tire (Spain term)" },
+      { "sentence": "¿Me da el ___, por favor?", "answer": "recibo", "hint": "proof of payment" }
+    ]},
+    { "type": "multiple-choice", "items": [
+      { "question": "What does 'sin plomo' mean?", "options": ["unleaded", "premium", "diesel", "regular"], "answer": 0 },
+      { "question": "What is 'el surtidor'?", "options": ["the hose", "the pump", "the receipt", "the battery"], "answer": 1 },
+      { "question": "What does 'la batería' mean?", "options": ["the engine", "the windshield", "the battery", "the tire"], "answer": 2 }
+    ]}
+  ]
+}

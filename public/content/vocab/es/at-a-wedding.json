@@ -1,0 +1,35 @@
+{
+  "id": "at-a-wedding",
+  "words": [
+    { "word": "la boda", "reading": "lah BOH-dah", "meaning": "the wedding", "example": "La boda es el sábado.", "exampleMeaning": "The wedding is on Saturday." },
+    { "word": "los novios", "reading": "lohs NOH-vyohs", "meaning": "the bride and groom / the couple", "example": "Los novios se ven muy felices.", "exampleMeaning": "The bride and groom look very happy." },
+    { "word": "la novia", "reading": "lah NOH-vyah", "meaning": "the bride / girlfriend", "example": "La novia llegó tarde a la iglesia.", "exampleMeaning": "The bride arrived late at the church." },
+    { "word": "el novio", "reading": "ehl NOH-vyoh", "meaning": "the groom / boyfriend", "example": "El novio estaba muy nervioso.", "exampleMeaning": "The groom was very nervous." },
+    { "word": "la iglesia", "reading": "lah ee-GLEH-syah", "meaning": "the church / ceremony venue", "example": "La ceremonia fue en la iglesia del pueblo.", "exampleMeaning": "The ceremony was at the town church." },
+    { "word": "el padrino", "reading": "ehl pah-DREE-noh", "meaning": "the godfather / best man", "example": "El padrino dio un discurso emotivo.", "exampleMeaning": "The best man gave an emotional speech." },
+    { "word": "la madrina", "reading": "lah mah-DREE-nah", "meaning": "the godmother / maid of honor", "example": "Su tía será la madrina.", "exampleMeaning": "Her aunt will be the maid of honor." },
+    { "word": "el anillo", "reading": "ehl ah-NEE-yoh", "meaning": "the ring (also 'la alianza' = wedding band)", "example": "El anillo es de oro blanco.", "exampleMeaning": "The ring is white gold." },
+    { "word": "el banquete", "reading": "ehl bahn-KEH-teh", "meaning": "the banquet / reception (also 'la recepción')", "example": "El banquete fue en un hotel.", "exampleMeaning": "The reception was at a hotel." },
+    { "word": "el ramo de novia", "reading": "ehl RRAH-moh deh NOH-vyah", "meaning": "the bridal bouquet", "example": "Atrapé el ramo de novia.", "exampleMeaning": "I caught the bridal bouquet." },
+    { "word": "el vestido de novia", "reading": "ehl vehs-TEE-doh deh NOH-vyah", "meaning": "the wedding dress", "example": "El vestido de novia era precioso.", "exampleMeaning": "The wedding dress was beautiful." },
+    { "word": "el cura", "reading": "ehl KOO-rah", "meaning": "the priest (also 'el sacerdote')", "example": "El cura los casó esta mañana.", "exampleMeaning": "The priest married them this morning." },
+    { "word": "el brindis", "reading": "ehl BREEN-dees", "meaning": "the toast", "example": "Hagamos un brindis por los novios.", "exampleMeaning": "Let's make a toast to the bride and groom." },
+    { "word": "el baile", "reading": "ehl BAI-leh", "meaning": "the dance / party portion (also 'la fiesta')", "example": "El baile duró hasta el amanecer.", "exampleMeaning": "The dance lasted until dawn." },
+    { "word": "la luna de miel", "reading": "lah LOO-nah deh MYEHL", "meaning": "the honeymoon", "example": "Se van de luna de miel a México.", "exampleMeaning": "They're going on their honeymoon to Mexico." },
+    { "word": "casarse", "reading": "kah-SAR-seh", "meaning": "to get married", "example": "Se van a casar en junio.", "exampleMeaning": "They are going to get married in June." }
+  ],
+  "exercises": [
+    { "type": "match", "pairs": 5 },
+    { "type": "fill-blank", "items": [
+      { "sentence": "La ___ es el sábado.", "answer": "boda", "hint": "wedding" },
+      { "sentence": "El ___ es de oro blanco.", "answer": "anillo", "hint": "ring" },
+      { "sentence": "Hagamos un ___ por los novios.", "answer": "brindis", "hint": "toast" },
+      { "sentence": "Se van de ___ de miel a México.", "answer": "luna", "hint": "honey___" }
+    ]},
+    { "type": "multiple-choice", "items": [
+      { "question": "What is 'la madrina'?", "options": ["the maid of honor", "the bride", "the priest", "the groom"], "answer": 0 },
+      { "question": "What does 'el banquete' mean?", "options": ["the toast", "the reception", "the church", "the dance"], "answer": 1 },
+      { "question": "What does 'casarse' mean?", "options": ["to dance", "to celebrate", "to get married", "to toast"], "answer": 2 }
+    ]}
+  ]
+}

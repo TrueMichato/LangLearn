@@ -369,5 +369,75 @@
     "order": 53,
     "wordCount": 16,
     "level": "advanced"
+  },
+  {
+    "id": "refranes-proverbios",
+    "title": "Refranes & Proverbios (Spanish Proverbs)",
+    "order": 54,
+    "wordCount": 17,
+    "level": "intermediate"
+  },
+  {
+    "id": "at-the-post-office",
+    "title": "At the Post Office (Phrasebook)",
+    "order": 55,
+    "wordCount": 17,
+    "level": "intermediate"
+  },
+  {
+    "id": "at-the-gym",
+    "title": "At the Gym (Phrasebook)",
+    "order": 56,
+    "wordCount": 17,
+    "level": "beginner"
+  },
+  {
+    "id": "at-the-gas-station",
+    "title": "At the Gas Station (Phrasebook)",
+    "order": 57,
+    "wordCount": 16,
+    "level": "intermediate"
+  },
+  {
+    "id": "at-a-wedding",
+    "title": "At a Wedding (Phrasebook)",
+    "order": 58,
+    "wordCount": 16,
+    "level": "beginner"
+  },
+  {
+    "id": "at-the-museum",
+    "title": "At the Museum (Phrasebook)",
+    "order": 59,
+    "wordCount": 16,
+    "level": "intermediate"
+  },
+  {
+    "id": "public-transport",
+    "title": "Public Transport (Phrasebook)",
+    "order": 60,
+    "wordCount": 17,
+    "level": "beginner"
+  },
+  {
+    "id": "animal-idioms",
+    "title": "Animal Idioms (Modismos con Animales)",
+    "order": 61,
+    "wordCount": 16,
+    "level": "intermediate"
+  },
+  {
+    "id": "body-idioms",
+    "title": "Body Part Idioms (Modismos del Cuerpo)",
+    "order": 62,
+    "wordCount": 16,
+    "level": "intermediate"
+  },
+  {
+    "id": "food-idioms",
+    "title": "Food Idioms (Modismos Gastronómicos)",
+    "order": 63,
+    "wordCount": 16,
+    "level": "intermediate"
   }
 ]

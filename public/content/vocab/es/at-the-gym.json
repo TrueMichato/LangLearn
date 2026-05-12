@@ -1,0 +1,36 @@
+{
+  "id": "at-the-gym",
+  "words": [
+    { "word": "el gimnasio", "reading": "ehl heem-NAH-syoh", "meaning": "the gym", "example": "Voy al gimnasio tres veces por semana.", "exampleMeaning": "I go to the gym three times a week." },
+    { "word": "las pesas", "reading": "lahs PEH-sahs", "meaning": "the weights / dumbbells", "example": "Levanto pesas para los brazos.", "exampleMeaning": "I lift weights for my arms." },
+    { "word": "la cinta de correr", "reading": "lah SEEN-tah deh koh-RREHR", "meaning": "the treadmill (also 'la trotadora' in some LatAm regions)", "example": "Camino media hora en la cinta de correr.", "exampleMeaning": "I walk half an hour on the treadmill." },
+    { "word": "la trotadora", "reading": "lah troh-tah-DOH-rah", "meaning": "the treadmill (LatAm, esp. Chile/Andes)", "example": "La trotadora está ocupada.", "exampleMeaning": "The treadmill is taken." },
+    { "word": "los abdominales", "reading": "lohs ahb-doh-mee-NAH-lehs", "meaning": "sit-ups / abs", "example": "Hago abdominales todas las mañanas.", "exampleMeaning": "I do sit-ups every morning." },
+    { "word": "calentar", "reading": "kah-lehn-TAR", "meaning": "to warm up", "example": "Hay que calentar antes de correr.", "exampleMeaning": "You have to warm up before running." },
+    { "word": "estirarse", "reading": "ehs-tee-RAR-seh", "meaning": "to stretch", "example": "Me gusta estirarme al terminar.", "exampleMeaning": "I like to stretch when I finish." },
+    { "word": "sudar", "reading": "soo-DAR", "meaning": "to sweat", "example": "Sudé mucho en la clase de spinning.", "exampleMeaning": "I sweated a lot in the spinning class." },
+    { "word": "entrenar", "reading": "ehn-treh-NAR", "meaning": "to train / work out", "example": "Entreno con mi amigo los martes.", "exampleMeaning": "I work out with my friend on Tuesdays." },
+    { "word": "el casillero", "reading": "ehl kah-see-YEH-roh", "meaning": "the locker", "example": "Dejé mi mochila en el casillero.", "exampleMeaning": "I left my backpack in the locker." },
+    { "word": "la toalla", "reading": "lah toh-AH-yah", "meaning": "the towel", "example": "Trae una toalla para el sudor.", "exampleMeaning": "Bring a towel for the sweat." },
+    { "word": "la membresía", "reading": "lah mehm-breh-SEE-ah", "meaning": "the membership (also 'la cuota')", "example": "Mi membresía vence en marzo.", "exampleMeaning": "My membership expires in March." },
+    { "word": "el entrenador", "reading": "ehl ehn-treh-nah-DOHR", "meaning": "the trainer / coach (m.); 'la entrenadora' (f.)", "example": "Mi entrenador es muy exigente.", "exampleMeaning": "My trainer is very demanding." },
+    { "word": "el cardio", "reading": "ehl KAR-dyoh", "meaning": "cardio", "example": "Hago cardio veinte minutos.", "exampleMeaning": "I do cardio for twenty minutes." },
+    { "word": "la fuerza", "reading": "lah FWEHR-sah", "meaning": "strength", "example": "Trabajo la fuerza con pesas pesadas.", "exampleMeaning": "I work on strength with heavy weights." },
+    { "word": "los vestuarios", "reading": "lohs vehs-TWAH-ryohs", "meaning": "the locker rooms (also 'los vestidores' in LatAm)", "example": "Los vestuarios están al fondo.", "exampleMeaning": "The locker rooms are at the back." },
+    { "word": "ducharse", "reading": "doo-CHAR-seh", "meaning": "to shower / take a shower", "example": "Me ducho después de entrenar.", "exampleMeaning": "I shower after working out." }
+  ],
+  "exercises": [
+    { "type": "match", "pairs": 5 },
+    { "type": "fill-blank", "items": [
+      { "sentence": "Voy al ___ tres veces por semana.", "answer": "gimnasio", "hint": "the gym" },
+      { "sentence": "Hay que ___ antes de correr.", "answer": "calentar", "hint": "to warm up" },
+      { "sentence": "Dejé mi mochila en el ___.", "answer": "casillero", "hint": "where you store things" },
+      { "sentence": "Me ___ después de entrenar.", "answer": "ducho", "hint": "to shower (yo form)" }
+    ]},
+    { "type": "multiple-choice", "items": [
+      { "question": "What is 'las pesas'?", "options": ["the weights", "the treadmill", "the towel", "the locker"], "answer": 0 },
+      { "question": "What does 'sudar' mean?", "options": ["to stretch", "to sweat", "to train", "to warm up"], "answer": 1 },
+      { "question": "What is 'la membresía'?", "options": ["the trainer", "the locker room", "the membership", "the strength"], "answer": 2 }
+    ]}
+  ]
+}
