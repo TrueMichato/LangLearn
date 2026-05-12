@@ -9,6 +9,12 @@ import {
   type BackgroundNotifStatus,
 } from '../../lib/notifications';
 import { fireTestNotification, fireDelayedTestNotification } from '../../lib/notification-scheduler';
+import {
+  isCloudPushConfigured,
+  hasActivePushSubscription,
+  sendTestPush,
+  getLastWorkerCheck,
+} from '../../lib/push-subscription';
 import type { NotificationPreset } from '../../lib/notification-presets';
 import { usePWAInstall } from '../../hooks/usePWAInstall';
 
@@ -86,22 +92,32 @@ export default function NotificationSettings() {
     setDailyGoalMetCelebration,
     streakMilestoneAlerts,
     setStreakMilestoneAlerts,
+    cloudRemindersEnabled,
+    setCloudRemindersEnabled,
   } = useSettingsStore();
   const [permissionError, setPermissionError] = useState('');
   const [showAdvanced, setShowAdvanced] = useState(false);
   const [bgStatus, setBgStatus] = useState<BackgroundNotifStatus>('not-supported');
   const [lastSyncWake, setLastSyncWake] = useState<number | null>(null);
   const [testFeedback, setTestFeedback] = useState('');
+  const [cloudActive, setCloudActive] = useState(false);
+  const [lastWorkerCheck, setLastWorkerCheck] = useState<number | null>(null);
   const { status: pwaStatus, promptInstall } = usePWAInstall();
 
   const permission = getNotificationPermission();
+  const cloudConfigured = isCloudPushConfigured();
 
   useEffect(() => {
     if (notificationsEnabled) {
-      getBackgroundNotificationStatus().then(setBgStatus);
-      getLastSyncWake().then(setLastSyncWake);
+      void (async () => {
+        const active = await hasActivePushSubscription();
+        setCloudActive(active);
+        setBgStatus(await getBackgroundNotificationStatus(active));
+        setLastSyncWake(await getLastSyncWake());
+        setLastWorkerCheck(await getLastWorkerCheck());
+      })();
     }
-  }, [notificationsEnabled]);
+  }, [notificationsEnabled, cloudRemindersEnabled]);
 
   async function handleToggle() {
     if (notificationsEnabled) {
@@ -167,14 +183,27 @@ export default function NotificationSettings() {
         <>
           {/* Background notification status — three-tier */}
           <div className={`text-xs rounded-lg px-3 py-2 space-y-2 ${
-            bgStatus === 'triggers-active'
+            bgStatus === 'cloud-active'
               ? 'bg-emerald-50 dark:bg-emerald-900/30 text-emerald-700 dark:text-emerald-300'
-              : bgStatus === 'sync-active'
-                ? 'bg-sky-50 dark:bg-sky-900/30 text-sky-700 dark:text-sky-300'
-                : bgStatus === 'not-installed'
-                  ? 'bg-amber-50 dark:bg-amber-900/30 text-amber-700 dark:text-amber-300'
-                  : 'bg-slate-50 dark:bg-slate-700/50 text-slate-600 dark:text-slate-300'
+              : bgStatus === 'triggers-active'
+                ? 'bg-emerald-50 dark:bg-emerald-900/30 text-emerald-700 dark:text-emerald-300'
+                : bgStatus === 'sync-active'
+                  ? 'bg-sky-50 dark:bg-sky-900/30 text-sky-700 dark:text-sky-300'
+                  : bgStatus === 'not-installed'
+                    ? 'bg-amber-50 dark:bg-amber-900/30 text-amber-700 dark:text-amber-300'
+                    : 'bg-slate-50 dark:bg-slate-700/50 text-slate-600 dark:text-slate-300'
           }`}>
+            {bgStatus === 'cloud-active' && (
+              <>
+                <p>✅ Cloud reminders active — works on every browser, even fully closed. Pushed from your own LangLearn worker on a 15-minute cadence.</p>
+                {lastWorkerCheck != null && lastWorkerCheck > 0 && (
+                  <p className="opacity-80">Last server-side check: {new Date(lastWorkerCheck).toLocaleString()}</p>
+                )}
+                {(lastWorkerCheck == null || lastWorkerCheck === 0) && (
+                  <p className="opacity-80">Last server-side check: pending — usually arrives within 15 min of subscribing.</p>
+                )}
+              </>
+            )}
             {bgStatus === 'triggers-active' && (
               <p>✅ Pre-scheduled background notifications active — your browser will fire upcoming reminders even with LangLearn closed.</p>
             )}
@@ -232,6 +261,36 @@ export default function NotificationSettings() {
               </>
             )}
           </div>
+
+          {/* Cloud reminders sub-toggle */}
+          {cloudConfigured && (
+            <div className="rounded-lg border border-slate-200 dark:border-slate-700 px-3 py-2 space-y-2">
+              <div className="flex items-center justify-between">
+                <div className="pr-3">
+                  <p className="text-sm text-slate-700 dark:text-slate-200">Use cloud reminders</p>
+                  <p className="text-xs text-slate-500 dark:text-slate-400">
+                    The only way to get reliable notifications when LangLearn is fully closed.
+                    Your subscription, prefs, and a tiny progress blob (streak, due count, today's
+                    minutes) are stored on the LangLearn push worker. <strong>No vocabulary,
+                    no answers, no review history</strong> ever leaves the device.
+                  </p>
+                </div>
+                <Toggle
+                  checked={cloudRemindersEnabled}
+                  onChange={() => setCloudRemindersEnabled(!cloudRemindersEnabled)}
+                />
+              </div>
+            </div>
+          )}
+          {!cloudConfigured && (
+            <p className="text-xs text-slate-500 dark:text-slate-400">
+              Cloud reminders aren't configured for this build. Deploy
+              {' '}<code className="font-mono">infra/push-worker</code>{' '}and set
+              {' '}<code className="font-mono">VITE_VAPID_PUBLIC</code>{' '}/
+              {' '}<code className="font-mono">VITE_PUSH_API_URL</code>{' '}
+              to enable them.
+            </p>
+          )}
 
           {/* Daily anchor time */}
           <div>
@@ -330,6 +389,23 @@ export default function NotificationSettings() {
             >
               🔔 Send test notification (now)
             </button>
+            {cloudConfigured && cloudRemindersEnabled && (
+              <button
+                onClick={async () => {
+                  setTestFeedback('Sending…');
+                  const result = await sendTestPush();
+                  setTestFeedback(result.message);
+                  if (result.ok) {
+                    // Worker likely just ticked — refresh diagnostic.
+                    setLastWorkerCheck(await getLastWorkerCheck());
+                  }
+                }}
+                disabled={!cloudActive}
+                className="w-full bg-emerald-100 dark:bg-emerald-900/40 text-emerald-700 dark:text-emerald-300 py-2 rounded-xl font-semibold hover:bg-emerald-200 dark:hover:bg-emerald-800 transition-colors press-feedback disabled:opacity-50 disabled:cursor-not-allowed"
+              >
+                ☁ Send a test push from the server
+              </button>
+            )}
             <button
               onClick={async () => {
                 const result = await fireDelayedTestNotification();

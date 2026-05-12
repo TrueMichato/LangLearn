@@ -448,6 +448,59 @@ async function pickNotification(
   return null;
 }
 
+// ─── Push handlers (Web Push from the worker) ───
+
+interface PushPayload {
+  title?: string;
+  body?: string;
+  tag?: string;
+  url?: string;
+}
+
+self.addEventListener('push', (event: PushEvent) => {
+  let payload: PushPayload = {};
+  try {
+    payload = (event.data?.json() as PushPayload) ?? {};
+  } catch {
+    const text = event.data?.text();
+    if (text) payload = { title: 'LangLearn', body: text };
+  }
+  const title = payload.title ?? 'LangLearn';
+  const body = payload.body ?? '';
+  const tag = payload.tag ?? `langlearn-push-${Date.now()}`;
+  const url = payload.url ?? '/LangLearn/';
+
+  event.waitUntil(
+    self.registration.showNotification(title, {
+      body,
+      tag,
+      icon: '/LangLearn/pwa-192x192.png',
+      badge: '/LangLearn/pwa-192x192.png',
+      data: { url },
+    }),
+  );
+});
+
+// Browsers occasionally rotate push endpoints; when they do they fire this
+// event with the new subscription. We can't talk to the worker from here
+// (no VAPID key, no API URL — those live in the page bundle), so we just
+// stash a flag the page can pick up on next launch and re-subscribe.
+self.addEventListener('pushsubscriptionchange' as keyof ServiceWorkerGlobalScopeEventMap, ((event: Event) => {
+  const ev = event as ExtendableEvent;
+  ev.waitUntil((async () => {
+    try {
+      const db = await openDB();
+      try {
+        await putSettingValue(db, 'push-subscription-changed-at', String(Date.now()));
+      } finally {
+        db.close();
+      }
+    } catch {
+      /* ignore */
+    }
+  })());
+}) as EventListener);
+
 // ─── Notification click handler ───
 
 self.addEventListener('notificationclick', (event: NotificationEvent) => {

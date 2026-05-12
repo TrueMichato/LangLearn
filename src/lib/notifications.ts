@@ -206,15 +206,20 @@ export async function listPendingTriggeredTags(prefix?: string): Promise<string[
 }
 
 export type BackgroundNotifStatus =
+  | 'cloud-active'      // Web Push from our own worker — works on every browser, fully closed
   | 'triggers-active'   // Notification Triggers — closed-app reliable
   | 'sync-active'       // Periodic sync registered (best effort)
   | 'not-installed'     // Browser supports periodic sync but PWA not installed
   | 'not-registered'    // Installed but registration pending/failed
   | 'not-supported';    // Browser doesn't support either path
 
-/** Determine the current background notification capability status. */
-export async function getBackgroundNotificationStatus(): Promise<BackgroundNotifStatus> {
-  // Triggers take priority — they actually work while closed when available.
+/** Determine the current background notification capability status.
+ *  `cloudActive` should be true when the page has a registered push
+ *  subscription with the worker. Caller checks via `hasActivePushSubscription`. */
+export async function getBackgroundNotificationStatus(cloudActive = false): Promise<BackgroundNotifStatus> {
+  if (cloudActive && Notification.permission === 'granted') return 'cloud-active';
+
+  // Triggers next — useful when cloud isn't active.
   if (supportsNotificationTriggers() && Notification.permission === 'granted') {
     return 'triggers-active';
   }

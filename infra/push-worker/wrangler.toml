@@ -1,0 +1,26 @@
+name = "langlearn-push"
+main = "src/index.ts"
+compatibility_date = "2025-01-01"
+compatibility_flags = ["nodejs_compat"]
+
+# KV namespace for subscription storage. Create with:
+#   npx wrangler kv namespace create SUBS
+# then paste the returned id here.
+[[kv_namespaces]]
+binding = "SUBS"
+id = "1831e2b1724f4df0a8ecabdddb06b90e"
+
+# Cron trigger — runs the planner every 15 minutes.
+# Cloudflare's free tier minimum cadence is 1 minute; 15 keeps us well under
+# any quota and matches the planner's coarse time resolution.
+[triggers]
+crons = ["*/15 * * * *"]
+
+# VAPID_PUBLIC is non-secret (sent to clients). VAPID_SUBJECT is a mailto: or
+# https: URL identifying the application server (required by the Web Push spec).
+# Set the public values here; set VAPID_PRIVATE via:
+#   npx wrangler secret put VAPID_PRIVATE
+[vars]
+VAPID_PUBLIC = "BLbc10_ZvnLwk6FRrGvwsdkJit45fiba-iPxp6wqICHGMruqvxnG8I8mWPIKzToukTR_OBY5iinXWft7_KVu1ug"
+VAPID_SUBJECT = "mailto:truemichato@github.com"
+ALLOWED_ORIGINS = "https://truemichato.github.io,http://localhost:5173"

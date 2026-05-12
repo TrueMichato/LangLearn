@@ -138,3 +138,14 @@ Error:    bg-red-100 dark:bg-red-900/50 text-red-800 dark:text-red-200
 - Chunk size >500KB warning — could use code splitting
 - `Word.type` added in v7 — older data backfilled via migration. Extended to `'grammar'` for grammar review cards
 - Analytics supports per-language filtering via optional `language` parameter
+
+## Notifications
+
+Three-tier delivery (see `docs/notifications.md` for full details):
+
+1. **Cloud reminders** — Web Push from `infra/push-worker/` (Cloudflare Worker + KV + 15-min cron). The only mechanism that fires reliably while the app is fully closed across browsers/iOS. Requires `VITE_VAPID_PUBLIC` + `VITE_PUSH_API_URL` env vars at build time.
+2. **TimestampTrigger** — pre-scheduled client-side notifications. Chromium with experimental flag only. Suppressed when cloud is active to avoid double-firing.
+3. **Periodic Background Sync** — installed Chromium PWAs only, best-effort.
+
+Client lifecycle lives in `src/lib/push-subscription.ts` and `src/hooks/useNotificationScheduler.ts`. Settings UI: `src/components/settings/NotificationSettings.tsx` (cloud sub-toggle, three test buttons, status tier display, privacy copy). Worker stores subscription + prefs + a small state blob (streak, due count, today's minutes, etc.) — **never** vocabulary, answers, or review history.
+

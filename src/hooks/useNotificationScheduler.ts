@@ -8,6 +8,13 @@ import {
 } from '../lib/notifications';
 import { refreshNotifications, tickInApp, mirrorPrefsToIDB } from '../lib/notification-scheduler';
 import type { FullPrefs } from '../lib/notification-scheduler';
+import {
+  ensurePushSubscription,
+  syncPushPrefs,
+  disablePush,
+  isCloudPushConfigured,
+  hasActivePushSubscription,
+} from '../lib/push-subscription';
 
 function buildPrefs(): FullPrefs {
   const s = useSettingsStore.getState();
@@ -51,6 +58,7 @@ export function useNotificationScheduler() {
   const streakMilestoneAlerts = useSettingsStore((s) => s.streakMilestoneAlerts);
   const dailyGoalMinutes = useSettingsStore((s) => s.dailyGoalMinutes);
   const weeklyGoalMinutes = useSettingsStore((s) => s.weeklyGoalMinutes);
+  const cloudRemindersEnabled = useSettingsStore((s) => s.cloudRemindersEnabled);
 
   const intervalRef = useRef<number | null>(null);
 
@@ -66,12 +74,37 @@ export function useNotificationScheduler() {
   // so the service worker always has fresh prefs for background notifications.
   useEffect(() => {
     void mirrorPrefsToIDB(buildPrefs());
+    // Sync to cloud worker too — debounced.
+    if (notificationsEnabled && cloudRemindersEnabled) {
+      syncPushPrefs(buildPrefs());
+    }
   }, [
     notificationsEnabled, dailyReminderTime, quietHoursStart, quietHoursEnd,
     dailyNotificationBudget, dueCardAlerts, dueCardThreshold, streakReminders,
     streakReminderMinDays, weeklyDigest, comebackNudges, slippingWarnings,
     dailyGoalMetCelebration, streakMilestoneAlerts, dailyGoalMinutes, weeklyGoalMinutes,
+    cloudRemindersEnabled,
   ]);
+
+  // Cloud subscription lifecycle: subscribe when the master toggle + cloud
+  // toggle are both on, unsubscribe when either turns off.
+  useEffect(() => {
+    if (!isCloudPushConfigured()) return;
+    let cancelled = false;
+    const run = async () => {
+      if (notificationsEnabled && cloudRemindersEnabled) {
+        // Wait one tick for permission UI before subscribing.
+        await new Promise((r) => setTimeout(r, 250));
+        if (cancelled) return;
+        if (Notification.permission !== 'granted') return;
+        await ensurePushSubscription(buildPrefs());
+      } else if (await hasActivePushSubscription()) {
+        await disablePush();
+      }
+    };
+    void run();
+    return () => { cancelled = true; };
+  }, [notificationsEnabled, cloudRemindersEnabled]);
 
   useEffect(() => {
     if (!isNotificationSupported()) return;

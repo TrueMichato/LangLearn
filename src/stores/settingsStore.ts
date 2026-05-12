@@ -29,6 +29,7 @@ interface SettingsState {
   slippingWarnings: boolean;
   dailyGoalMetCelebration: boolean;
   streakMilestoneAlerts: boolean;
+  cloudRemindersEnabled: boolean;
   setWeeklyGoal: (minutes: number) => void;
   setDailyGoal: (minutes: number) => void;
   addLanguage: (lang: string) => void;
@@ -55,6 +56,7 @@ interface SettingsState {
   setSlippingWarnings: (enabled: boolean) => void;
   setDailyGoalMetCelebration: (enabled: boolean) => void;
   setStreakMilestoneAlerts: (enabled: boolean) => void;
+  setCloudRemindersEnabled: (enabled: boolean) => void;
 }
 
 export const useSettingsStore = create<SettingsState>()(
@@ -76,6 +78,7 @@ export const useSettingsStore = create<SettingsState>()(
       showContextOnCards: true,
       notificationPreset: 'balanced' as NotificationPreset,
       ...PRESETS.balanced,
+      cloudRemindersEnabled: true,
 
       setWeeklyGoal: (minutes) => set({ weeklyGoalMinutes: minutes }),
       setDailyGoal: (minutes) => set({ dailyGoalMinutes: minutes }),
@@ -128,6 +131,7 @@ export const useSettingsStore = create<SettingsState>()(
       setSlippingWarnings: (enabled) => set({ slippingWarnings: enabled, notificationPreset: 'custom' }),
       setDailyGoalMetCelebration: (enabled) => set({ dailyGoalMetCelebration: enabled, notificationPreset: 'custom' }),
       setStreakMilestoneAlerts: (enabled) => set({ streakMilestoneAlerts: enabled, notificationPreset: 'custom' }),
+      setCloudRemindersEnabled: (enabled) => set({ cloudRemindersEnabled: enabled }),
     }),
     {
       name: 'langlearn-settings',

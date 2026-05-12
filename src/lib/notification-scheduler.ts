@@ -22,6 +22,15 @@ import {
 import type { NotificationPrefs } from './notification-presets';
 import { useNudgeStore } from '../stores/nudgeStore';
 
+async function hasCloudPushEndpoint(): Promise<boolean> {
+  try {
+    const row = await db.settings.get('push-endpoint');
+    return !!row?.value;
+  } catch {
+    return false;
+  }
+}
+
 const PLAN_KEY = 'langlearn-notification-plan-v2';
 const FIRED_KEY = 'langlearn-notification-fired';
 const SNOOZE_KEY = 'langlearn-notification-snooze';
@@ -174,7 +183,7 @@ function friendlyCategory(cat: NotificationCategory): string {
   }
 }
 
-async function gatherState(prefs: NotificationPrefs): Promise<SchedulerState> {
+export async function gatherState(prefs: NotificationPrefs): Promise<SchedulerState> {
   const dueCount = await getDueCount().catch(() => 0);
   const activities = await db.dailyActivity.toArray().catch(() => []);
   const currentStreak = calculateCurrentStreak(activities);
@@ -300,7 +309,7 @@ export async function refreshNotifications(prefs: FullPrefs): Promise<void> {
       }
     }
 
-    const useTriggers = supportsNotificationTriggers();
+    const useTriggers = supportsNotificationTriggers() && !(await hasCloudPushEndpoint());
 
     // When triggers are supported we register notifications with the browser
     // up front and let it fire them while closed. We track which tags we
