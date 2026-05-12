@@ -1,0 +1,183 @@
+{
+  "id": "sports",
+  "words": [
+    {
+      "word": "deporte",
+      "reading": "deh-POR-teh",
+      "meaning": "sport",
+      "example": "Practicar deporte es importante.",
+      "exampleMeaning": "Doing sports is important."
+    },
+    {
+      "word": "equipo",
+      "reading": "eh-KEE-poh",
+      "meaning": "team",
+      "example": "Mi equipo ganó el partido.",
+      "exampleMeaning": "My team won the game."
+    },
+    {
+      "word": "partido",
+      "reading": "par-TEE-doh",
+      "meaning": "match / game",
+      "example": "El partido empieza a las ocho.",
+      "exampleMeaning": "The game starts at eight."
+    },
+    {
+      "word": "jugador",
+      "reading": "hoo-gah-DOR",
+      "meaning": "player",
+      "example": "El jugador anotó un gol.",
+      "exampleMeaning": "The player scored a goal."
+    },
+    {
+      "word": "entrenador",
+      "reading": "ehn-treh-nah-DOR",
+      "meaning": "coach",
+      "example": "El entrenador es muy estricto.",
+      "exampleMeaning": "The coach is very strict."
+    },
+    {
+      "word": "pelota",
+      "reading": "peh-LOH-tah",
+      "meaning": "ball",
+      "example": "La pelota está afuera.",
+      "exampleMeaning": "The ball is outside."
+    },
+    {
+      "word": "gimnasio",
+      "reading": "heem-NAH-syoh",
+      "meaning": "gym",
+      "example": "Voy al gimnasio tres veces por semana.",
+      "exampleMeaning": "I go to the gym three times a week."
+    },
+    {
+      "word": "correr",
+      "reading": "koh-RREHR",
+      "meaning": "to run",
+      "example": "Corro cinco kilómetros al día.",
+      "exampleMeaning": "I run five kilometers a day."
+    },
+    {
+      "word": "nadar",
+      "reading": "nah-DAR",
+      "meaning": "to swim",
+      "example": "Nado en la piscina los lunes.",
+      "exampleMeaning": "I swim at the pool on Mondays."
+    },
+    {
+      "word": "saltar",
+      "reading": "sahl-TAR",
+      "meaning": "to jump",
+      "example": "Saltó muy alto.",
+      "exampleMeaning": "He jumped very high."
+    },
+    {
+      "word": "ganar",
+      "reading": "gah-NAR",
+      "meaning": "to win",
+      "example": "Queremos ganar el campeonato.",
+      "exampleMeaning": "We want to win the championship."
+    },
+    {
+      "word": "perder",
+      "reading": "pehr-DEHR",
+      "meaning": "to lose",
+      "example": "Es horrible perder así.",
+      "exampleMeaning": "It’s awful to lose like that."
+    },
+    {
+      "word": "entrenar",
+      "reading": "ehn-treh-NAR",
+      "meaning": "to train",
+      "example": "Entreno todos los días.",
+      "exampleMeaning": "I train every day."
+    },
+    {
+      "word": "ejercicio",
+      "reading": "eh-hehr-SEE-syoh",
+      "meaning": "exercise",
+      "example": "El ejercicio es bueno para la salud.",
+      "exampleMeaning": "Exercise is good for health."
+    },
+    {
+      "word": "cancha",
+      "reading": "KAHN-chah",
+      "meaning": "court / field",
+      "example": "La cancha está llena.",
+      "exampleMeaning": "The field is full."
+    },
+    {
+      "word": "campeonato",
+      "reading": "kahm-peh-oh-NAH-toh",
+      "meaning": "championship",
+      "example": "Ganamos el campeonato nacional.",
+      "exampleMeaning": "We won the national championship."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "Voy al ___ tres veces por semana.",
+          "answer": "gimnasio",
+          "hint": "place to work out"
+        },
+        {
+          "sentence": "Mi ___ ganó el partido.",
+          "answer": "equipo",
+          "hint": "group of players"
+        },
+        {
+          "sentence": "___ cinco kilómetros al día.",
+          "answer": "Corro",
+          "hint": "I run"
+        },
+        {
+          "sentence": "El ___ es muy estricto.",
+          "answer": "entrenador",
+          "hint": "team leader/teacher"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "items": [
+        {
+          "question": "What does ‘nadar’ mean?",
+          "options": [
+            "to run",
+            "to swim",
+            "to jump",
+            "to win"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "Which means ‘ball’?",
+          "options": [
+            "cancha",
+            "pelota",
+            "equipo",
+            "partido"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What is ‘ganar’?",
+          "options": [
+            "to lose",
+            "to win",
+            "to train",
+            "to play"
+          ],
+          "answer": 1
+        }
+      ]
+    }
+  ]
+}

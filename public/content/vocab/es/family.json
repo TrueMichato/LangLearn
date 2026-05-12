@@ -1,0 +1,183 @@
+{
+  "id": "family",
+  "words": [
+    {
+      "word": "familia",
+      "reading": "fah-MEE-lyah",
+      "meaning": "family",
+      "example": "Mi familia es grande.",
+      "exampleMeaning": "My family is big."
+    },
+    {
+      "word": "padre",
+      "reading": "PAH-dreh",
+      "meaning": "father",
+      "example": "Mi padre trabaja en un banco.",
+      "exampleMeaning": "My father works at a bank."
+    },
+    {
+      "word": "madre",
+      "reading": "MAH-dreh",
+      "meaning": "mother",
+      "example": "Mi madre cocina muy bien.",
+      "exampleMeaning": "My mother cooks very well."
+    },
+    {
+      "word": "papá",
+      "reading": "pah-PAH",
+      "meaning": "dad",
+      "example": "¡Hola, papá!",
+      "exampleMeaning": "Hi, Dad!"
+    },
+    {
+      "word": "mamá",
+      "reading": "mah-MAH",
+      "meaning": "mom",
+      "example": "Mamá, te quiero mucho.",
+      "exampleMeaning": "Mom, I love you a lot."
+    },
+    {
+      "word": "hermano",
+      "reading": "ehr-MAH-noh",
+      "meaning": "brother",
+      "example": "Tengo un hermano menor.",
+      "exampleMeaning": "I have a younger brother."
+    },
+    {
+      "word": "hermana",
+      "reading": "ehr-MAH-nah",
+      "meaning": "sister",
+      "example": "Mi hermana estudia medicina.",
+      "exampleMeaning": "My sister studies medicine."
+    },
+    {
+      "word": "hijo",
+      "reading": "EE-hoh",
+      "meaning": "son",
+      "example": "Mi hijo tiene cinco años.",
+      "exampleMeaning": "My son is five years old."
+    },
+    {
+      "word": "hija",
+      "reading": "EE-hah",
+      "meaning": "daughter",
+      "example": "Su hija es muy inteligente.",
+      "exampleMeaning": "His daughter is very intelligent."
+    },
+    {
+      "word": "abuelo",
+      "reading": "ah-BWEH-loh",
+      "meaning": "grandfather",
+      "example": "Mi abuelo es de México.",
+      "exampleMeaning": "My grandfather is from Mexico."
+    },
+    {
+      "word": "abuela",
+      "reading": "ah-BWEH-lah",
+      "meaning": "grandmother",
+      "example": "Mi abuela hace los mejores tamales.",
+      "exampleMeaning": "My grandma makes the best tamales."
+    },
+    {
+      "word": "tío",
+      "reading": "TEE-oh",
+      "meaning": "uncle",
+      "example": "Mi tío vive en Argentina.",
+      "exampleMeaning": "My uncle lives in Argentina."
+    },
+    {
+      "word": "tía",
+      "reading": "TEE-ah",
+      "meaning": "aunt",
+      "example": "Voy a visitar a mi tía.",
+      "exampleMeaning": "I’m going to visit my aunt."
+    },
+    {
+      "word": "primo",
+      "reading": "PREE-moh",
+      "meaning": "cousin (m)",
+      "example": "Mi primo juega fútbol conmigo.",
+      "exampleMeaning": "My cousin plays soccer with me."
+    },
+    {
+      "word": "esposo",
+      "reading": "ehs-POH-soh",
+      "meaning": "husband",
+      "example": "Mi esposo es ingeniero.",
+      "exampleMeaning": "My husband is an engineer."
+    },
+    {
+      "word": "esposa",
+      "reading": "ehs-POH-sah",
+      "meaning": "wife",
+      "example": "Su esposa se llama Laura.",
+      "exampleMeaning": "His wife’s name is Laura."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "Mi ___ cocina muy bien. (mother)",
+          "answer": "madre",
+          "hint": "female parent"
+        },
+        {
+          "sentence": "Mi ___ tiene cinco años. (son)",
+          "answer": "hijo",
+          "hint": "male child"
+        },
+        {
+          "sentence": "Mi ___ es de México.",
+          "answer": "abuelo",
+          "hint": "father’s father"
+        },
+        {
+          "sentence": "Voy a visitar a mi ___.",
+          "answer": "tía",
+          "hint": "mother’s sister"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "items": [
+        {
+          "question": "What does ‘hermana’ mean?",
+          "options": [
+            "brother",
+            "sister",
+            "aunt",
+            "cousin"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "How do you say ‘grandmother’ in Spanish?",
+          "options": [
+            "abuelo",
+            "abuela",
+            "tía",
+            "madre"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What does ‘primo’ mean?",
+          "options": [
+            "nephew",
+            "uncle",
+            "cousin",
+            "brother"
+          ],
+          "answer": 2
+        }
+      ]
+    }
+  ]
+}

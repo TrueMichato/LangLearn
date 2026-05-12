@@ -1,0 +1,183 @@
+{
+  "id": "emergency",
+  "words": [
+    {
+      "word": "emergencia",
+      "reading": "eh-mehr-HEHN-syah",
+      "meaning": "emergency",
+      "example": "Llama en caso de emergencia.",
+      "exampleMeaning": "Call in case of emergency."
+    },
+    {
+      "word": "ayuda",
+      "reading": "ah-YOO-dah",
+      "meaning": "help",
+      "example": "¡Necesito ayuda!",
+      "exampleMeaning": "I need help!"
+    },
+    {
+      "word": "socorro",
+      "reading": "soh-KOH-rroh",
+      "meaning": "help (cry)",
+      "example": "¡Socorro! ¡Auxilio!",
+      "exampleMeaning": "Help!"
+    },
+    {
+      "word": "peligro",
+      "reading": "peh-LEE-groh",
+      "meaning": "danger",
+      "example": "Cuidado, hay peligro.",
+      "exampleMeaning": "Careful, there’s danger."
+    },
+    {
+      "word": "policía",
+      "reading": "poh-lee-SEE-ah",
+      "meaning": "police",
+      "example": "Llamé a la policía.",
+      "exampleMeaning": "I called the police."
+    },
+    {
+      "word": "bombero",
+      "reading": "bohm-BEH-roh",
+      "meaning": "firefighter",
+      "example": "Los bomberos llegaron rápido.",
+      "exampleMeaning": "The firefighters arrived fast."
+    },
+    {
+      "word": "ambulancia",
+      "reading": "ahm-boo-LAHN-syah",
+      "meaning": "ambulance",
+      "example": "La ambulancia se llevó al herido.",
+      "exampleMeaning": "The ambulance took the injured man."
+    },
+    {
+      "word": "accidente",
+      "reading": "ahk-see-DEHN-teh",
+      "meaning": "accident",
+      "example": "Hubo un accidente en la calle.",
+      "exampleMeaning": "There was an accident on the street."
+    },
+    {
+      "word": "incendio",
+      "reading": "een-SEHN-dyoh",
+      "meaning": "fire (blaze)",
+      "example": "El incendio destruyó la casa.",
+      "exampleMeaning": "The fire destroyed the house."
+    },
+    {
+      "word": "terremoto",
+      "reading": "teh-rreh-MOH-toh",
+      "meaning": "earthquake",
+      "example": "El terremoto duró un minuto.",
+      "exampleMeaning": "The earthquake lasted a minute."
+    },
+    {
+      "word": "robo",
+      "reading": "RROH-boh",
+      "meaning": "robbery",
+      "example": "Reportamos el robo.",
+      "exampleMeaning": "We reported the robbery."
+    },
+    {
+      "word": "ladrón",
+      "reading": "lah-DROHN",
+      "meaning": "thief",
+      "example": "El ladrón corrió por la calle.",
+      "exampleMeaning": "The thief ran down the street."
+    },
+    {
+      "word": "herido",
+      "reading": "eh-REE-doh",
+      "meaning": "injured (person)",
+      "example": "El herido fue al hospital.",
+      "exampleMeaning": "The injured man went to the hospital."
+    },
+    {
+      "word": "rescate",
+      "reading": "rrehs-KAH-teh",
+      "meaning": "rescue",
+      "example": "El rescate fue exitoso.",
+      "exampleMeaning": "The rescue was successful."
+    },
+    {
+      "word": "cuidado",
+      "reading": "kwee-DAH-doh",
+      "meaning": "care / careful",
+      "example": "¡Cuidado, está caliente!",
+      "exampleMeaning": "Careful, it’s hot!"
+    },
+    {
+      "word": "urgente",
+      "reading": "oor-HEHN-teh",
+      "meaning": "urgent",
+      "example": "Es un mensaje urgente.",
+      "exampleMeaning": "It’s an urgent message."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "¡Necesito ___!",
+          "answer": "ayuda",
+          "hint": "help"
+        },
+        {
+          "sentence": "Llamé a la ___.",
+          "answer": "policía",
+          "hint": "law enforcement"
+        },
+        {
+          "sentence": "Hubo un ___ en la calle.",
+          "answer": "accidente",
+          "hint": "crash"
+        },
+        {
+          "sentence": "Es un mensaje ___.",
+          "answer": "urgente",
+          "hint": "urgent"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "items": [
+        {
+          "question": "What does ‘bombero’ mean?",
+          "options": [
+            "police",
+            "firefighter",
+            "doctor",
+            "soldier"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "Which is a natural disaster?",
+          "options": [
+            "robo",
+            "terremoto",
+            "ladrón",
+            "rescate"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What is ‘peligro’?",
+          "options": [
+            "help",
+            "danger",
+            "rescue",
+            "care"
+          ],
+          "answer": 1
+        }
+      ]
+    }
+  ]
+}

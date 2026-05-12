@@ -1,0 +1,183 @@
+{
+  "id": "house",
+  "words": [
+    {
+      "word": "casa",
+      "reading": "KAH-sah",
+      "meaning": "house",
+      "example": "Mi casa es pequeña pero cómoda.",
+      "exampleMeaning": "My house is small but cozy."
+    },
+    {
+      "word": "cuarto",
+      "reading": "KWAR-toh",
+      "meaning": "room",
+      "example": "Mi cuarto está al fondo.",
+      "exampleMeaning": "My room is at the back."
+    },
+    {
+      "word": "sala",
+      "reading": "SAH-lah",
+      "meaning": "living room",
+      "example": "La sala tiene un sofá grande.",
+      "exampleMeaning": "The living room has a big sofa."
+    },
+    {
+      "word": "cocina",
+      "reading": "koh-SEE-nah",
+      "meaning": "kitchen",
+      "example": "Mi mamá está en la cocina.",
+      "exampleMeaning": "My mom is in the kitchen."
+    },
+    {
+      "word": "baño",
+      "reading": "BAH-nyoh",
+      "meaning": "bathroom",
+      "example": "El baño está a la derecha.",
+      "exampleMeaning": "The bathroom is on the right."
+    },
+    {
+      "word": "puerta",
+      "reading": "PWEHR-tah",
+      "meaning": "door",
+      "example": "Cierra la puerta, por favor.",
+      "exampleMeaning": "Close the door, please."
+    },
+    {
+      "word": "ventana",
+      "reading": "behn-TAH-nah",
+      "meaning": "window",
+      "example": "Abre la ventana, hace calor.",
+      "exampleMeaning": "Open the window, it’s hot."
+    },
+    {
+      "word": "mesa",
+      "reading": "MEH-sah",
+      "meaning": "table",
+      "example": "Pon los platos en la mesa.",
+      "exampleMeaning": "Put the plates on the table."
+    },
+    {
+      "word": "silla",
+      "reading": "SEE-yah",
+      "meaning": "chair",
+      "example": "Esta silla es muy cómoda.",
+      "exampleMeaning": "This chair is very comfortable."
+    },
+    {
+      "word": "cama",
+      "reading": "KAH-mah",
+      "meaning": "bed",
+      "example": "La cama es muy suave.",
+      "exampleMeaning": "The bed is very soft."
+    },
+    {
+      "word": "sofá",
+      "reading": "soh-FAH",
+      "meaning": "sofa",
+      "example": "Me senté en el sofá a ver tele.",
+      "exampleMeaning": "I sat on the sofa to watch TV."
+    },
+    {
+      "word": "refrigerador",
+      "reading": "rreh-free-heh-rah-DOR",
+      "meaning": "refrigerator",
+      "example": "El refrigerador está vacío.",
+      "exampleMeaning": "The fridge is empty."
+    },
+    {
+      "word": "televisión",
+      "reading": "teh-leh-bee-SYOHN",
+      "meaning": "television",
+      "example": "La televisión está prendida.",
+      "exampleMeaning": "The TV is on."
+    },
+    {
+      "word": "llave",
+      "reading": "YAH-beh",
+      "meaning": "key",
+      "example": "Perdí las llaves del carro.",
+      "exampleMeaning": "I lost my car keys."
+    },
+    {
+      "word": "pared",
+      "reading": "pah-REHD",
+      "meaning": "wall",
+      "example": "Colgué un cuadro en la pared.",
+      "exampleMeaning": "I hung a picture on the wall."
+    },
+    {
+      "word": "jardín",
+      "reading": "har-DEEN",
+      "meaning": "garden",
+      "example": "El jardín tiene muchas flores.",
+      "exampleMeaning": "The garden has lots of flowers."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "Cierra la ___, por favor.",
+          "answer": "puerta",
+          "hint": "entrance to room"
+        },
+        {
+          "sentence": "Mi mamá está en la ___.",
+          "answer": "cocina",
+          "hint": "where food is prepared"
+        },
+        {
+          "sentence": "Perdí las ___ del carro.",
+          "answer": "llaves",
+          "hint": "what opens locks"
+        },
+        {
+          "sentence": "La ___ es muy suave.",
+          "answer": "cama",
+          "hint": "where you sleep"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "items": [
+        {
+          "question": "What does ‘ventana’ mean?",
+          "options": [
+            "door",
+            "window",
+            "wall",
+            "roof"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "Which room is ‘baño’?",
+          "options": [
+            "kitchen",
+            "bedroom",
+            "bathroom",
+            "garden"
+          ],
+          "answer": 2
+        },
+        {
+          "question": "What is ‘sofá’?",
+          "options": [
+            "table",
+            "chair",
+            "sofa",
+            "bed"
+          ],
+          "answer": 2
+        }
+      ]
+    }
+  ]
+}

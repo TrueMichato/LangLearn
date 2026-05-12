@@ -1,0 +1,183 @@
+{
+  "id": "transport",
+  "words": [
+    {
+      "word": "carro",
+      "reading": "KAH-rroh",
+      "meaning": "car",
+      "example": "Mi carro es rojo.",
+      "exampleMeaning": "My car is red."
+    },
+    {
+      "word": "camión",
+      "reading": "kah-MYOHN",
+      "meaning": "truck / bus (Mexico)",
+      "example": "El camión llega a las siete.",
+      "exampleMeaning": "The bus arrives at seven."
+    },
+    {
+      "word": "autobús",
+      "reading": "ow-toh-BOOS",
+      "meaning": "bus",
+      "example": "Tomo el autobús al trabajo.",
+      "exampleMeaning": "I take the bus to work."
+    },
+    {
+      "word": "tren",
+      "reading": "trehn",
+      "meaning": "train",
+      "example": "El tren sale a las ocho.",
+      "exampleMeaning": "The train leaves at eight."
+    },
+    {
+      "word": "avión",
+      "reading": "ah-BYOHN",
+      "meaning": "airplane",
+      "example": "El avión despega pronto.",
+      "exampleMeaning": "The plane takes off soon."
+    },
+    {
+      "word": "bicicleta",
+      "reading": "bee-see-KLEH-tah",
+      "meaning": "bicycle",
+      "example": "Voy en bicicleta a clase.",
+      "exampleMeaning": "I go to class by bicycle."
+    },
+    {
+      "word": "moto",
+      "reading": "MOH-toh",
+      "meaning": "motorcycle",
+      "example": "Mi primo tiene una moto.",
+      "exampleMeaning": "My cousin has a motorcycle."
+    },
+    {
+      "word": "taxi",
+      "reading": "TAHK-see",
+      "meaning": "taxi",
+      "example": "Llamemos un taxi.",
+      "exampleMeaning": "Let’s call a taxi."
+    },
+    {
+      "word": "metro",
+      "reading": "MEH-troh",
+      "meaning": "subway",
+      "example": "El metro es rápido y barato.",
+      "exampleMeaning": "The subway is fast and cheap."
+    },
+    {
+      "word": "barco",
+      "reading": "BAR-koh",
+      "meaning": "boat",
+      "example": "El barco cruza el río.",
+      "exampleMeaning": "The boat crosses the river."
+    },
+    {
+      "word": "aeropuerto",
+      "reading": "ah-eh-roh-PWEHR-toh",
+      "meaning": "airport",
+      "example": "Llegamos al aeropuerto temprano.",
+      "exampleMeaning": "We arrived at the airport early."
+    },
+    {
+      "word": "estación",
+      "reading": "ehs-tah-SYOHN",
+      "meaning": "station",
+      "example": "La estación está cerca.",
+      "exampleMeaning": "The station is nearby."
+    },
+    {
+      "word": "boleto",
+      "reading": "boh-LEH-toh",
+      "meaning": "ticket",
+      "example": "Compré el boleto en línea.",
+      "exampleMeaning": "I bought the ticket online."
+    },
+    {
+      "word": "parada",
+      "reading": "pah-RAH-dah",
+      "meaning": "stop (bus stop)",
+      "example": "La parada está en la esquina.",
+      "exampleMeaning": "The stop is on the corner."
+    },
+    {
+      "word": "camino",
+      "reading": "kah-MEE-noh",
+      "meaning": "road / way",
+      "example": "El camino es largo.",
+      "exampleMeaning": "The road is long."
+    },
+    {
+      "word": "semáforo",
+      "reading": "seh-MAH-foh-roh",
+      "meaning": "traffic light",
+      "example": "El semáforo está en rojo.",
+      "exampleMeaning": "The light is red."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "Tomo el ___ al trabajo.",
+          "answer": "autobús",
+          "hint": "public road vehicle"
+        },
+        {
+          "sentence": "Compré el ___ en línea.",
+          "answer": "boleto",
+          "hint": "what you need to ride"
+        },
+        {
+          "sentence": "El ___ está en rojo.",
+          "answer": "semáforo",
+          "hint": "traffic signal"
+        },
+        {
+          "sentence": "Mi ___ es rojo.",
+          "answer": "carro",
+          "hint": "LatAm word for car"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "items": [
+        {
+          "question": "What does ‘avión’ mean?",
+          "options": [
+            "train",
+            "boat",
+            "airplane",
+            "bus"
+          ],
+          "answer": 2
+        },
+        {
+          "question": "Where do planes land?",
+          "options": [
+            "estación",
+            "aeropuerto",
+            "parada",
+            "semáforo"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What is ‘metro’?",
+          "options": [
+            "taxi",
+            "subway",
+            "train",
+            "bike"
+          ],
+          "answer": 1
+        }
+      ]
+    }
+  ]
+}

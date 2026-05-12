@@ -1,0 +1,183 @@
+{
+  "id": "education",
+  "words": [
+    {
+      "word": "universidad",
+      "reading": "oo-nee-behr-see-DAHD",
+      "meaning": "university",
+      "example": "Estudio en la universidad pública.",
+      "exampleMeaning": "I study at the public university."
+    },
+    {
+      "word": "carrera",
+      "reading": "kah-RREH-rah",
+      "meaning": "degree / career",
+      "example": "Estudia la carrera de derecho.",
+      "exampleMeaning": "He’s studying law."
+    },
+    {
+      "word": "título",
+      "reading": "TEE-too-loh",
+      "meaning": "diploma / degree",
+      "example": "Me dieron el título ayer.",
+      "exampleMeaning": "They gave me my degree yesterday."
+    },
+    {
+      "word": "beca",
+      "reading": "BEH-kah",
+      "meaning": "scholarship",
+      "example": "Gané una beca completa.",
+      "exampleMeaning": "I won a full scholarship."
+    },
+    {
+      "word": "asignatura",
+      "reading": "ah-seeg-nah-TOO-rah",
+      "meaning": "subject",
+      "example": "Mi asignatura favorita es historia.",
+      "exampleMeaning": "My favorite subject is history."
+    },
+    {
+      "word": "profesor",
+      "reading": "proh-feh-SOR",
+      "meaning": "professor",
+      "example": "El profesor explica muy bien.",
+      "exampleMeaning": "The professor explains well."
+    },
+    {
+      "word": "alumno",
+      "reading": "ah-LOOM-noh",
+      "meaning": "pupil / student",
+      "example": "Los alumnos son aplicados.",
+      "exampleMeaning": "The students are diligent."
+    },
+    {
+      "word": "biblioteca",
+      "reading": "bee-blee-oh-TEH-kah",
+      "meaning": "library",
+      "example": "Estudio en la biblioteca.",
+      "exampleMeaning": "I study at the library."
+    },
+    {
+      "word": "apuntes",
+      "reading": "ah-POON-tehs",
+      "meaning": "notes",
+      "example": "Préstame tus apuntes.",
+      "exampleMeaning": "Lend me your notes."
+    },
+    {
+      "word": "nota",
+      "reading": "NOH-tah",
+      "meaning": "grade",
+      "example": "Saqué buena nota en el examen.",
+      "exampleMeaning": "I got a good grade on the test."
+    },
+    {
+      "word": "aprobar",
+      "reading": "ah-proh-BAR",
+      "meaning": "to pass",
+      "example": "Aprobé el examen final.",
+      "exampleMeaning": "I passed the final exam."
+    },
+    {
+      "word": "reprobar",
+      "reading": "rreh-proh-BAR",
+      "meaning": "to fail",
+      "example": "No quiero reprobar la materia.",
+      "exampleMeaning": "I don’t want to fail the class."
+    },
+    {
+      "word": "estudiar",
+      "reading": "ehs-too-DYAR",
+      "meaning": "to study",
+      "example": "Estudio cuatro horas al día.",
+      "exampleMeaning": "I study four hours a day."
+    },
+    {
+      "word": "aprender",
+      "reading": "ah-prehn-DEHR",
+      "meaning": "to learn",
+      "example": "Aprendo español en línea.",
+      "exampleMeaning": "I learn Spanish online."
+    },
+    {
+      "word": "graduarse",
+      "reading": "grah-DWAR-seh",
+      "meaning": "to graduate",
+      "example": "Me gradúo el próximo año.",
+      "exampleMeaning": "I graduate next year."
+    },
+    {
+      "word": "inscribirse",
+      "reading": "een-skree-BEER-seh",
+      "meaning": "to enroll",
+      "example": "Me inscribí en el curso.",
+      "exampleMeaning": "I enrolled in the course."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "Estudio en la ___ pública.",
+          "answer": "universidad",
+          "hint": "higher education place"
+        },
+        {
+          "sentence": "Gané una ___ completa.",
+          "answer": "beca",
+          "hint": "financial aid"
+        },
+        {
+          "sentence": "Saqué buena ___ en el examen.",
+          "answer": "nota",
+          "hint": "grade"
+        },
+        {
+          "sentence": "Me ___ el próximo año.",
+          "answer": "gradúo",
+          "hint": "to graduate (1st person)"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "items": [
+        {
+          "question": "What does ‘biblioteca’ mean?",
+          "options": [
+            "classroom",
+            "library",
+            "office",
+            "dorm"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "Which means ‘to study’?",
+          "options": [
+            "aprender",
+            "estudiar",
+            "graduarse",
+            "aprobar"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What is ‘alumno’?",
+          "options": [
+            "professor",
+            "pupil",
+            "principal",
+            "tutor"
+          ],
+          "answer": 1
+        }
+      ]
+    }
+  ]
+}

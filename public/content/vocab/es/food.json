@@ -1,0 +1,190 @@
+{
+  "id": "food",
+  "words": [
+    {
+      "word": "comida",
+      "reading": "koh-MEE-dah",
+      "meaning": "food / meal",
+      "example": "La comida está deliciosa.",
+      "exampleMeaning": "The food is delicious."
+    },
+    {
+      "word": "agua",
+      "reading": "AH-gwah",
+      "meaning": "water",
+      "example": "Quiero un vaso de agua.",
+      "exampleMeaning": "I want a glass of water."
+    },
+    {
+      "word": "pan",
+      "reading": "pahn",
+      "meaning": "bread",
+      "example": "Compré pan en la panadería.",
+      "exampleMeaning": "I bought bread at the bakery."
+    },
+    {
+      "word": "arroz",
+      "reading": "ah-RROHS",
+      "meaning": "rice",
+      "example": "El arroz con frijoles es típico.",
+      "exampleMeaning": "Rice and beans is typical."
+    },
+    {
+      "word": "frijoles",
+      "reading": "free-HOH-lehs",
+      "meaning": "beans",
+      "example": "Me encantan los frijoles negros.",
+      "exampleMeaning": "I love black beans."
+    },
+    {
+      "word": "carne",
+      "reading": "KAR-neh",
+      "meaning": "meat",
+      "example": "No como carne los lunes.",
+      "exampleMeaning": "I don’t eat meat on Mondays."
+    },
+    {
+      "word": "pollo",
+      "reading": "POH-yoh",
+      "meaning": "chicken",
+      "example": "El pollo asado es mi favorito.",
+      "exampleMeaning": "Roast chicken is my favorite."
+    },
+    {
+      "word": "pescado",
+      "reading": "pehs-KAH-doh",
+      "meaning": "fish",
+      "example": "El pescado está fresco hoy.",
+      "exampleMeaning": "The fish is fresh today."
+    },
+    {
+      "word": "queso",
+      "reading": "KEH-soh",
+      "meaning": "cheese",
+      "example": "Me gusta el queso fresco.",
+      "exampleMeaning": "I like fresh cheese."
+    },
+    {
+      "word": "leche",
+      "reading": "LEH-cheh",
+      "meaning": "milk",
+      "example": "Tomo leche con el café.",
+      "exampleMeaning": "I drink milk with coffee."
+    },
+    {
+      "word": "jugo",
+      "reading": "HOO-goh",
+      "meaning": "juice",
+      "example": "Un jugo de naranja, por favor.",
+      "exampleMeaning": "An orange juice, please."
+    },
+    {
+      "word": "café",
+      "reading": "kah-FEH",
+      "meaning": "coffee",
+      "example": "Necesito un café por la mañana.",
+      "exampleMeaning": "I need a coffee in the morning."
+    },
+    {
+      "word": "huevo",
+      "reading": "WEH-boh",
+      "meaning": "egg",
+      "example": "Desayuno huevos con tocino.",
+      "exampleMeaning": "I eat eggs with bacon for breakfast."
+    },
+    {
+      "word": "fruta",
+      "reading": "FROO-tah",
+      "meaning": "fruit",
+      "example": "Como fruta todos los días.",
+      "exampleMeaning": "I eat fruit every day."
+    },
+    {
+      "word": "verdura",
+      "reading": "behr-DOO-rah",
+      "meaning": "vegetable",
+      "example": "Las verduras son saludables.",
+      "exampleMeaning": "Vegetables are healthy."
+    },
+    {
+      "word": "papas",
+      "reading": "PAH-pahs",
+      "meaning": "potatoes",
+      "example": "Me encantan las papas fritas.",
+      "exampleMeaning": "I love french fries."
+    },
+    {
+      "word": "sopa",
+      "reading": "SOH-pah",
+      "meaning": "soup",
+      "example": "La sopa está caliente.",
+      "exampleMeaning": "The soup is hot."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "Quiero un vaso de ___.",
+          "answer": "agua",
+          "hint": "clear liquid drink"
+        },
+        {
+          "sentence": "Un ___ de naranja, por favor.",
+          "answer": "jugo",
+          "hint": "fruit drink"
+        },
+        {
+          "sentence": "Me encantan las ___ fritas.",
+          "answer": "papas",
+          "hint": "LatAm word for potatoes"
+        },
+        {
+          "sentence": "Compré ___ en la panadería.",
+          "answer": "pan",
+          "hint": "bakery item"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "items": [
+        {
+          "question": "What does ‘pollo’ mean?",
+          "options": [
+            "fish",
+            "chicken",
+            "beef",
+            "pork"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What is ‘leche’?",
+          "options": [
+            "milk",
+            "juice",
+            "water",
+            "coffee"
+          ],
+          "answer": 0
+        },
+        {
+          "question": "What does ‘verdura’ mean?",
+          "options": [
+            "fruit",
+            "meat",
+            "vegetable",
+            "bread"
+          ],
+          "answer": 2
+        }
+      ]
+    }
+  ]
+}

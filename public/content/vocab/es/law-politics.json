@@ -1,0 +1,183 @@
+{
+  "id": "law-politics",
+  "words": [
+    {
+      "word": "gobierno",
+      "reading": "goh-BYEHR-noh",
+      "meaning": "government",
+      "example": "El gobierno anunció un plan.",
+      "exampleMeaning": "The government announced a plan."
+    },
+    {
+      "word": "presidente",
+      "reading": "preh-see-DEHN-teh",
+      "meaning": "president",
+      "example": "El presidente dio un discurso.",
+      "exampleMeaning": "The president gave a speech."
+    },
+    {
+      "word": "político",
+      "reading": "poh-LEE-tee-koh",
+      "meaning": "politician",
+      "example": "El político visitó el pueblo.",
+      "exampleMeaning": "The politician visited the town."
+    },
+    {
+      "word": "partido",
+      "reading": "par-TEE-doh",
+      "meaning": "party (political)",
+      "example": "Apoyo a otro partido.",
+      "exampleMeaning": "I support a different party."
+    },
+    {
+      "word": "voto",
+      "reading": "BOH-toh",
+      "meaning": "vote",
+      "example": "Mi voto cuenta.",
+      "exampleMeaning": "My vote counts."
+    },
+    {
+      "word": "elecciones",
+      "reading": "eh-lehk-SYOH-nehs",
+      "meaning": "elections",
+      "example": "Las elecciones son en junio.",
+      "exampleMeaning": "The elections are in June."
+    },
+    {
+      "word": "ley",
+      "reading": "lehy",
+      "meaning": "law",
+      "example": "La nueva ley entró en vigor.",
+      "exampleMeaning": "The new law took effect."
+    },
+    {
+      "word": "derecho",
+      "reading": "deh-REH-choh",
+      "meaning": "right / law",
+      "example": "Es nuestro derecho votar.",
+      "exampleMeaning": "It’s our right to vote."
+    },
+    {
+      "word": "juez",
+      "reading": "hwehs",
+      "meaning": "judge",
+      "example": "El juez tomó una decisión.",
+      "exampleMeaning": "The judge made a decision."
+    },
+    {
+      "word": "abogado",
+      "reading": "ah-boh-GAH-doh",
+      "meaning": "lawyer",
+      "example": "Mi abogado me defendió.",
+      "exampleMeaning": "My lawyer defended me."
+    },
+    {
+      "word": "tribunal",
+      "reading": "tree-boo-NAHL",
+      "meaning": "court",
+      "example": "El tribunal está cerrado hoy.",
+      "exampleMeaning": "The court is closed today."
+    },
+    {
+      "word": "justicia",
+      "reading": "hoos-TEE-syah",
+      "meaning": "justice",
+      "example": "Queremos justicia para todos.",
+      "exampleMeaning": "We want justice for all."
+    },
+    {
+      "word": "libertad",
+      "reading": "lee-behr-TAHD",
+      "meaning": "freedom",
+      "example": "La libertad es un derecho.",
+      "exampleMeaning": "Freedom is a right."
+    },
+    {
+      "word": "protesta",
+      "reading": "proh-TEHS-tah",
+      "meaning": "protest",
+      "example": "Hubo una protesta pacífica.",
+      "exampleMeaning": "There was a peaceful protest."
+    },
+    {
+      "word": "discurso",
+      "reading": "dees-KOOR-soh",
+      "meaning": "speech",
+      "example": "El discurso fue muy emotivo.",
+      "exampleMeaning": "The speech was very emotional."
+    },
+    {
+      "word": "senador",
+      "reading": "seh-nah-DOR",
+      "meaning": "senator",
+      "example": "El senador apoya la reforma.",
+      "exampleMeaning": "The senator supports the reform."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "El ___ anunció un plan.",
+          "answer": "gobierno",
+          "hint": "ruling body"
+        },
+        {
+          "sentence": "Mi ___ cuenta.",
+          "answer": "voto",
+          "hint": "what you cast in elections"
+        },
+        {
+          "sentence": "La nueva ___ entró en vigor.",
+          "answer": "ley",
+          "hint": "rule passed by government"
+        },
+        {
+          "sentence": "Mi ___ me defendió.",
+          "answer": "abogado",
+          "hint": "legal representative"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "items": [
+        {
+          "question": "What does ‘juez’ mean?",
+          "options": [
+            "lawyer",
+            "judge",
+            "senator",
+            "citizen"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "Which means ‘elections’?",
+          "options": [
+            "partido",
+            "elecciones",
+            "voto",
+            "discurso"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What is ‘libertad’?",
+          "options": [
+            "justice",
+            "law",
+            "freedom",
+            "vote"
+          ],
+          "answer": 2
+        }
+      ]
+    }
+  ]
+}

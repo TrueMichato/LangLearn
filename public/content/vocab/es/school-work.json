@@ -1,0 +1,183 @@
+{
+  "id": "school-work",
+  "words": [
+    {
+      "word": "escuela",
+      "reading": "ehs-KWEH-lah",
+      "meaning": "school",
+      "example": "Los niños van a la escuela.",
+      "exampleMeaning": "The kids go to school."
+    },
+    {
+      "word": "clase",
+      "reading": "KLAH-seh",
+      "meaning": "class",
+      "example": "La clase empieza a las nueve.",
+      "exampleMeaning": "Class starts at nine."
+    },
+    {
+      "word": "maestro",
+      "reading": "mah-EHS-troh",
+      "meaning": "teacher (m)",
+      "example": "El maestro explica muy bien.",
+      "exampleMeaning": "The teacher explains very well."
+    },
+    {
+      "word": "maestra",
+      "reading": "mah-EHS-trah",
+      "meaning": "teacher (f)",
+      "example": "Mi maestra es muy amable.",
+      "exampleMeaning": "My teacher is very kind."
+    },
+    {
+      "word": "estudiante",
+      "reading": "ehs-too-DYAHN-teh",
+      "meaning": "student",
+      "example": "Soy estudiante de medicina.",
+      "exampleMeaning": "I am a medical student."
+    },
+    {
+      "word": "libro",
+      "reading": "LEE-broh",
+      "meaning": "book",
+      "example": "Necesito el libro de matemáticas.",
+      "exampleMeaning": "I need the math book."
+    },
+    {
+      "word": "cuaderno",
+      "reading": "kwah-DEHR-noh",
+      "meaning": "notebook",
+      "example": "Olvidé mi cuaderno en casa.",
+      "exampleMeaning": "I left my notebook at home."
+    },
+    {
+      "word": "lápiz",
+      "reading": "LAH-pees",
+      "meaning": "pencil",
+      "example": "¿Me prestas un lápiz?",
+      "exampleMeaning": "Can you lend me a pencil?"
+    },
+    {
+      "word": "tarea",
+      "reading": "tah-REH-ah",
+      "meaning": "homework",
+      "example": "Tengo mucha tarea esta noche.",
+      "exampleMeaning": "I have a lot of homework tonight."
+    },
+    {
+      "word": "examen",
+      "reading": "ehk-SAH-mehn",
+      "meaning": "exam",
+      "example": "El examen es el viernes.",
+      "exampleMeaning": "The exam is on Friday."
+    },
+    {
+      "word": "oficina",
+      "reading": "oh-fee-SEE-nah",
+      "meaning": "office",
+      "example": "Mi oficina está en el centro.",
+      "exampleMeaning": "My office is downtown."
+    },
+    {
+      "word": "trabajo",
+      "reading": "trah-BAH-hoh",
+      "meaning": "work / job",
+      "example": "Voy al trabajo en metro.",
+      "exampleMeaning": "I take the subway to work."
+    },
+    {
+      "word": "jefe",
+      "reading": "HEH-feh",
+      "meaning": "boss",
+      "example": "Mi jefe es muy exigente.",
+      "exampleMeaning": "My boss is very demanding."
+    },
+    {
+      "word": "compañero",
+      "reading": "kohm-pah-NYEH-roh",
+      "meaning": "coworker / classmate",
+      "example": "Mi compañero me ayuda con la tarea.",
+      "exampleMeaning": "My classmate helps me with homework."
+    },
+    {
+      "word": "computadora",
+      "reading": "kohm-poo-tah-DOH-rah",
+      "meaning": "computer",
+      "example": "Trabajo todo el día en la computadora.",
+      "exampleMeaning": "I work all day on the computer."
+    },
+    {
+      "word": "reunión",
+      "reading": "rreh-oo-NYOHN",
+      "meaning": "meeting",
+      "example": "Tengo una reunión a las tres.",
+      "exampleMeaning": "I have a meeting at three."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "Tengo mucha ___ esta noche.",
+          "answer": "tarea",
+          "hint": "what students do at home"
+        },
+        {
+          "sentence": "Trabajo en la ___.",
+          "answer": "computadora",
+          "hint": "LatAm word for computer"
+        },
+        {
+          "sentence": "Mi ___ es muy exigente.",
+          "answer": "jefe",
+          "hint": "person in charge at work"
+        },
+        {
+          "sentence": "El ___ es el viernes.",
+          "answer": "examen",
+          "hint": "test"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "items": [
+        {
+          "question": "What does ‘libro’ mean?",
+          "options": [
+            "notebook",
+            "book",
+            "pencil",
+            "test"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "Which is a place to study?",
+          "options": [
+            "oficina",
+            "escuela",
+            "jefe",
+            "reunión"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What is ‘reunión’?",
+          "options": [
+            "exam",
+            "class",
+            "meeting",
+            "homework"
+          ],
+          "answer": 2
+        }
+      ]
+    }
+  ]
+}

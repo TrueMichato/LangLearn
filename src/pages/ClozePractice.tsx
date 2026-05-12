@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { useSettingsStore } from '../stores/settingsStore';
 import { useXPStore } from '../stores/xpStore';
 import { getLanguageLabel } from '../lib/languages';
-import { jaClozeSentences, ruClozeSentences, ptClozeSentences } from '../data/cloze';
+import { jaClozeSentences, ruClozeSentences, ptClozeSentences, esClozeSentences } from '../data/cloze';
 import type { ClozeSentence } from '../data/cloze';
 import { speak } from '../lib/tts';
 
@@ -18,6 +18,7 @@ function getClozeSentences(lang: string): ClozeSentence[] {
   if (lang === 'ja') return jaClozeSentences;
   if (lang === 'ru') return ruClozeSentences;
   if (lang === 'pt') return ptClozeSentences;
+  if (lang === 'es') return esClozeSentences;
   return [];
 }
 
@@ -41,7 +42,7 @@ function buildClozeDisplay(sentence: string, blankedWord: string) {
 
 export default function ClozePracticePage() {
   const activeLanguages = useSettingsStore((s) => s.activeLanguages);
-  const supportedLanguages = activeLanguages.filter((l) => l === 'ja' || l === 'ru' || l === 'pt');
+  const supportedLanguages = activeLanguages.filter((l) => l === 'ja' || l === 'ru' || l === 'pt' || l === 'es');
 
   const [phase, setPhase] = useState<Phase>('setup');
   const [language, setLanguage] = useState(supportedLanguages[0] ?? 'ja');

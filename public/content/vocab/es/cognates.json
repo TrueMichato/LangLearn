@@ -1,0 +1,183 @@
+{
+  "id": "cognates",
+  "words": [
+    {
+      "word": "hotel",
+      "reading": "oh-TEHL",
+      "meaning": "hotel",
+      "example": "Reservé un hotel céntrico.",
+      "exampleMeaning": "I booked a central hotel."
+    },
+    {
+      "word": "chocolate",
+      "reading": "choh-koh-LAH-teh",
+      "meaning": "chocolate",
+      "example": "Me encanta el chocolate.",
+      "exampleMeaning": "I love chocolate."
+    },
+    {
+      "word": "animal",
+      "reading": "ah-nee-MAHL",
+      "meaning": "animal",
+      "example": "El león es un animal salvaje.",
+      "exampleMeaning": "The lion is a wild animal."
+    },
+    {
+      "word": "familia",
+      "reading": "fah-MEE-lyah",
+      "meaning": "family",
+      "example": "Mi familia vive en Texas.",
+      "exampleMeaning": "My family lives in Texas."
+    },
+    {
+      "word": "música",
+      "reading": "MOO-see-kah",
+      "meaning": "music",
+      "example": "La música pop es popular.",
+      "exampleMeaning": "Pop music is popular."
+    },
+    {
+      "word": "idea",
+      "reading": "ee-DEH-ah",
+      "meaning": "idea",
+      "example": "Tengo una buena idea.",
+      "exampleMeaning": "I have a good idea."
+    },
+    {
+      "word": "teléfono",
+      "reading": "teh-LEH-foh-noh",
+      "meaning": "telephone",
+      "example": "Pásame el teléfono.",
+      "exampleMeaning": "Pass me the phone."
+    },
+    {
+      "word": "error",
+      "reading": "eh-RROR",
+      "meaning": "error",
+      "example": "Cometí un error.",
+      "exampleMeaning": "I made a mistake."
+    },
+    {
+      "word": "actor",
+      "reading": "ahk-TOR",
+      "meaning": "actor",
+      "example": "Ese actor es famoso.",
+      "exampleMeaning": "That actor is famous."
+    },
+    {
+      "word": "doctor",
+      "reading": "dohk-TOR",
+      "meaning": "doctor",
+      "example": "El doctor llegó a tiempo.",
+      "exampleMeaning": "The doctor arrived on time."
+    },
+    {
+      "word": "embarazada",
+      "reading": "ehm-bah-rah-SAH-dah",
+      "meaning": "pregnant (false friend!)",
+      "example": "Mi prima está embarazada.",
+      "exampleMeaning": "My cousin is pregnant."
+    },
+    {
+      "word": "éxito",
+      "reading": "EHK-see-toh",
+      "meaning": "success (not exit!)",
+      "example": "Tuvo mucho éxito.",
+      "exampleMeaning": "He had a lot of success."
+    },
+    {
+      "word": "librería",
+      "reading": "lee-breh-REE-ah",
+      "meaning": "bookstore (not library!)",
+      "example": "La librería tiene libros nuevos.",
+      "exampleMeaning": "The bookstore has new books."
+    },
+    {
+      "word": "sopa",
+      "reading": "SOH-pah",
+      "meaning": "soup (not soap!)",
+      "example": "La sopa está caliente.",
+      "exampleMeaning": "The soup is hot."
+    },
+    {
+      "word": "pariente",
+      "reading": "pah-RYEHN-teh",
+      "meaning": "relative (not parent!)",
+      "example": "Es un pariente lejano.",
+      "exampleMeaning": "He’s a distant relative."
+    },
+    {
+      "word": "asistir",
+      "reading": "ah-sees-TEER",
+      "meaning": "to attend (not assist!)",
+      "example": "Voy a asistir a la junta.",
+      "exampleMeaning": "I’m going to attend the meeting."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "Mi prima está ___.",
+          "answer": "embarazada",
+          "hint": "common false friend: pregnant"
+        },
+        {
+          "sentence": "La ___ tiene libros nuevos.",
+          "answer": "librería",
+          "hint": "bookstore, not library"
+        },
+        {
+          "sentence": "Tuvo mucho ___.",
+          "answer": "éxito",
+          "hint": "success, not exit"
+        },
+        {
+          "sentence": "Voy a ___ a la junta.",
+          "answer": "asistir",
+          "hint": "attend, not assist"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "items": [
+        {
+          "question": "What does ‘embarazada’ actually mean?",
+          "options": [
+            "embarrassed",
+            "pregnant",
+            "tired",
+            "busy"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What does ‘éxito’ mean?",
+          "options": [
+            "exit",
+            "success",
+            "exile",
+            "exam"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What does ‘sopa’ mean?",
+          "options": [
+            "soap",
+            "soup",
+            "sofa",
+            "sop"
+          ],
+          "answer": 1
+        }
+      ]
+    }
+  ]
+}

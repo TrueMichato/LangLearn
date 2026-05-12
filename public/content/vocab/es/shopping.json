@@ -1,0 +1,183 @@
+{
+  "id": "shopping",
+  "words": [
+    {
+      "word": "tienda",
+      "reading": "TYEHN-dah",
+      "meaning": "store",
+      "example": "La tienda abre a las nueve.",
+      "exampleMeaning": "The store opens at nine."
+    },
+    {
+      "word": "mercado",
+      "reading": "mehr-KAH-doh",
+      "meaning": "market",
+      "example": "Compro frutas en el mercado.",
+      "exampleMeaning": "I buy fruit at the market."
+    },
+    {
+      "word": "supermercado",
+      "reading": "soo-pehr-mehr-KAH-doh",
+      "meaning": "supermarket",
+      "example": "Voy al supermercado los sábados.",
+      "exampleMeaning": "I go to the supermarket on Saturdays."
+    },
+    {
+      "word": "precio",
+      "reading": "PREH-syoh",
+      "meaning": "price",
+      "example": "¿Cuál es el precio?",
+      "exampleMeaning": "What’s the price?"
+    },
+    {
+      "word": "dinero",
+      "reading": "dee-NEH-roh",
+      "meaning": "money",
+      "example": "No tengo mucho dinero.",
+      "exampleMeaning": "I don’t have much money."
+    },
+    {
+      "word": "barato",
+      "reading": "bah-RAH-toh",
+      "meaning": "cheap",
+      "example": "Este vestido es muy barato.",
+      "exampleMeaning": "This dress is very cheap."
+    },
+    {
+      "word": "caro",
+      "reading": "KAH-roh",
+      "meaning": "expensive",
+      "example": "El reloj es muy caro.",
+      "exampleMeaning": "The watch is very expensive."
+    },
+    {
+      "word": "descuento",
+      "reading": "dehs-KWEHN-toh",
+      "meaning": "discount",
+      "example": "Hay un descuento del 20%.",
+      "exampleMeaning": "There’s a 20% discount."
+    },
+    {
+      "word": "oferta",
+      "reading": "oh-FEHR-tah",
+      "meaning": "sale / offer",
+      "example": "Hay oferta en zapatos.",
+      "exampleMeaning": "There’s a sale on shoes."
+    },
+    {
+      "word": "comprar",
+      "reading": "kohm-PRAR",
+      "meaning": "to buy",
+      "example": "Quiero comprar un regalo.",
+      "exampleMeaning": "I want to buy a gift."
+    },
+    {
+      "word": "vender",
+      "reading": "behn-DEHR",
+      "meaning": "to sell",
+      "example": "Venden tacos en la esquina.",
+      "exampleMeaning": "They sell tacos on the corner."
+    },
+    {
+      "word": "pagar",
+      "reading": "pah-GAR",
+      "meaning": "to pay",
+      "example": "¿Cómo quieres pagar?",
+      "exampleMeaning": "How do you want to pay?"
+    },
+    {
+      "word": "tarjeta",
+      "reading": "tar-HEH-tah",
+      "meaning": "card",
+      "example": "Pago con tarjeta de crédito.",
+      "exampleMeaning": "I pay with a credit card."
+    },
+    {
+      "word": "efectivo",
+      "reading": "eh-fehk-TEE-boh",
+      "meaning": "cash",
+      "example": "¿Aceptan efectivo?",
+      "exampleMeaning": "Do you take cash?"
+    },
+    {
+      "word": "recibo",
+      "reading": "rreh-SEE-boh",
+      "meaning": "receipt",
+      "example": "Guarda el recibo, por favor.",
+      "exampleMeaning": "Keep the receipt, please."
+    },
+    {
+      "word": "cliente",
+      "reading": "KLYEHN-teh",
+      "meaning": "customer",
+      "example": "El cliente siempre tiene la razón.",
+      "exampleMeaning": "The customer is always right."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "¿Cuál es el ___?",
+          "answer": "precio",
+          "hint": "cost"
+        },
+        {
+          "sentence": "Pago con ___ de crédito.",
+          "answer": "tarjeta",
+          "hint": "plastic payment"
+        },
+        {
+          "sentence": "¿Aceptan ___?",
+          "answer": "efectivo",
+          "hint": "paper money"
+        },
+        {
+          "sentence": "Hay un ___ del 20%.",
+          "answer": "descuento",
+          "hint": "price reduction"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "items": [
+        {
+          "question": "What does ‘caro’ mean?",
+          "options": [
+            "cheap",
+            "expensive",
+            "free",
+            "small"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "Which means ‘to buy’?",
+          "options": [
+            "vender",
+            "pagar",
+            "comprar",
+            "tener"
+          ],
+          "answer": 2
+        },
+        {
+          "question": "What is ‘tienda’?",
+          "options": [
+            "market",
+            "store",
+            "bank",
+            "office"
+          ],
+          "answer": 1
+        }
+      ]
+    }
+  ]
+}

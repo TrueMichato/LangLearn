@@ -1,0 +1,183 @@
+{
+  "id": "clothing",
+  "words": [
+    {
+      "word": "ropa",
+      "reading": "RROH-pah",
+      "meaning": "clothes",
+      "example": "Lavo la ropa los sábados.",
+      "exampleMeaning": "I do laundry on Saturdays."
+    },
+    {
+      "word": "camisa",
+      "reading": "kah-MEE-sah",
+      "meaning": "shirt",
+      "example": "Esta camisa es de algodón.",
+      "exampleMeaning": "This shirt is cotton."
+    },
+    {
+      "word": "camiseta",
+      "reading": "kah-mee-SEH-tah",
+      "meaning": "t-shirt",
+      "example": "Me puse una camiseta blanca.",
+      "exampleMeaning": "I put on a white t-shirt."
+    },
+    {
+      "word": "pantalón",
+      "reading": "pahn-tah-LOHN",
+      "meaning": "pants",
+      "example": "El pantalón me queda apretado.",
+      "exampleMeaning": "The pants are tight on me."
+    },
+    {
+      "word": "falda",
+      "reading": "FAHL-dah",
+      "meaning": "skirt",
+      "example": "Lleva una falda larga.",
+      "exampleMeaning": "She’s wearing a long skirt."
+    },
+    {
+      "word": "vestido",
+      "reading": "behs-TEE-doh",
+      "meaning": "dress",
+      "example": "Compré un vestido azul.",
+      "exampleMeaning": "I bought a blue dress."
+    },
+    {
+      "word": "chaqueta",
+      "reading": "chah-KEH-tah",
+      "meaning": "jacket",
+      "example": "Hace frío, ponte chaqueta.",
+      "exampleMeaning": "It’s cold, put on a jacket."
+    },
+    {
+      "word": "abrigo",
+      "reading": "ah-BREE-goh",
+      "meaning": "coat",
+      "example": "El abrigo es de lana.",
+      "exampleMeaning": "The coat is wool."
+    },
+    {
+      "word": "suéter",
+      "reading": "SWEH-tehr",
+      "meaning": "sweater",
+      "example": "Tejió un suéter para mí.",
+      "exampleMeaning": "She knitted a sweater for me."
+    },
+    {
+      "word": "zapato",
+      "reading": "sah-PAH-toh",
+      "meaning": "shoe",
+      "example": "Los zapatos están sucios.",
+      "exampleMeaning": "The shoes are dirty."
+    },
+    {
+      "word": "bota",
+      "reading": "BOH-tah",
+      "meaning": "boot",
+      "example": "Uso botas en invierno.",
+      "exampleMeaning": "I wear boots in winter."
+    },
+    {
+      "word": "sandalia",
+      "reading": "sahn-DAH-lyah",
+      "meaning": "sandal",
+      "example": "En verano uso sandalias.",
+      "exampleMeaning": "In summer I wear sandals."
+    },
+    {
+      "word": "sombrero",
+      "reading": "sohm-BREH-roh",
+      "meaning": "hat",
+      "example": "El sombrero me protege del sol.",
+      "exampleMeaning": "The hat protects me from the sun."
+    },
+    {
+      "word": "gorra",
+      "reading": "GOH-rrah",
+      "meaning": "cap",
+      "example": "Lleva una gorra azul.",
+      "exampleMeaning": "He wears a blue cap."
+    },
+    {
+      "word": "bolso",
+      "reading": "BOHL-soh",
+      "meaning": "bag / purse",
+      "example": "El bolso es de cuero.",
+      "exampleMeaning": "The bag is leather."
+    },
+    {
+      "word": "cinturón",
+      "reading": "seen-too-ROHN",
+      "meaning": "belt",
+      "example": "Necesito un cinturón nuevo.",
+      "exampleMeaning": "I need a new belt."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "Hace frío, ponte ___.",
+          "answer": "chaqueta",
+          "hint": "outer garment"
+        },
+        {
+          "sentence": "Compré un ___ azul.",
+          "answer": "vestido",
+          "hint": "one-piece outfit"
+        },
+        {
+          "sentence": "En verano uso ___.",
+          "answer": "sandalias",
+          "hint": "open footwear"
+        },
+        {
+          "sentence": "Lavo la ___ los sábados.",
+          "answer": "ropa",
+          "hint": "general word for clothes"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "items": [
+        {
+          "question": "What does ‘zapato’ mean?",
+          "options": [
+            "shirt",
+            "shoe",
+            "hat",
+            "belt"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "Which is a head item?",
+          "options": [
+            "bota",
+            "sombrero",
+            "falda",
+            "bolso"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What is ‘suéter’?",
+          "options": [
+            "shirt",
+            "sweater",
+            "skirt",
+            "dress"
+          ],
+          "answer": 1
+        }
+      ]
+    }
+  ]
+}

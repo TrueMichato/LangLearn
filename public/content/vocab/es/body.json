@@ -1,0 +1,183 @@
+{
+  "id": "body",
+  "words": [
+    {
+      "word": "cabeza",
+      "reading": "kah-BEH-sah",
+      "meaning": "head",
+      "example": "Me duele la cabeza.",
+      "exampleMeaning": "My head hurts."
+    },
+    {
+      "word": "cara",
+      "reading": "KAH-rah",
+      "meaning": "face",
+      "example": "Su cara es bonita.",
+      "exampleMeaning": "Her face is pretty."
+    },
+    {
+      "word": "ojo",
+      "reading": "OH-hoh",
+      "meaning": "eye",
+      "example": "Tengo los ojos verdes.",
+      "exampleMeaning": "I have green eyes."
+    },
+    {
+      "word": "oreja",
+      "reading": "oh-REH-hah",
+      "meaning": "ear",
+      "example": "Me lastimé la oreja.",
+      "exampleMeaning": "I hurt my ear."
+    },
+    {
+      "word": "nariz",
+      "reading": "nah-REES",
+      "meaning": "nose",
+      "example": "Tu nariz está fría.",
+      "exampleMeaning": "Your nose is cold."
+    },
+    {
+      "word": "boca",
+      "reading": "BOH-kah",
+      "meaning": "mouth",
+      "example": "Abre la boca, por favor.",
+      "exampleMeaning": "Open your mouth, please."
+    },
+    {
+      "word": "diente",
+      "reading": "DYEHN-teh",
+      "meaning": "tooth",
+      "example": "Me duele un diente.",
+      "exampleMeaning": "One of my teeth hurts."
+    },
+    {
+      "word": "cuello",
+      "reading": "KWEH-yoh",
+      "meaning": "neck",
+      "example": "La bufanda calienta el cuello.",
+      "exampleMeaning": "The scarf warms the neck."
+    },
+    {
+      "word": "hombro",
+      "reading": "OHM-broh",
+      "meaning": "shoulder",
+      "example": "Me duele el hombro derecho.",
+      "exampleMeaning": "My right shoulder hurts."
+    },
+    {
+      "word": "brazo",
+      "reading": "BRAH-soh",
+      "meaning": "arm",
+      "example": "Levanta el brazo.",
+      "exampleMeaning": "Raise your arm."
+    },
+    {
+      "word": "mano",
+      "reading": "MAH-noh",
+      "meaning": "hand",
+      "example": "Lávate las manos.",
+      "exampleMeaning": "Wash your hands."
+    },
+    {
+      "word": "dedo",
+      "reading": "DEH-doh",
+      "meaning": "finger",
+      "example": "Me corté el dedo.",
+      "exampleMeaning": "I cut my finger."
+    },
+    {
+      "word": "pierna",
+      "reading": "PYEHR-nah",
+      "meaning": "leg",
+      "example": "Tengo las piernas cansadas.",
+      "exampleMeaning": "My legs are tired."
+    },
+    {
+      "word": "rodilla",
+      "reading": "rroh-DEE-yah",
+      "meaning": "knee",
+      "example": "Me lastimé la rodilla jugando.",
+      "exampleMeaning": "I hurt my knee playing."
+    },
+    {
+      "word": "pie",
+      "reading": "pyeh",
+      "meaning": "foot",
+      "example": "Tengo los pies fríos.",
+      "exampleMeaning": "My feet are cold."
+    },
+    {
+      "word": "espalda",
+      "reading": "ehs-PAHL-dah",
+      "meaning": "back",
+      "example": "Me duele la espalda.",
+      "exampleMeaning": "My back hurts."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "Me duele la ___.",
+          "answer": "cabeza",
+          "hint": "top of body"
+        },
+        {
+          "sentence": "Lávate las ___.",
+          "answer": "manos",
+          "hint": "what you use to hold things"
+        },
+        {
+          "sentence": "Tengo los ___ verdes.",
+          "answer": "ojos",
+          "hint": "organs of sight"
+        },
+        {
+          "sentence": "Me lastimé la ___ jugando.",
+          "answer": "rodilla",
+          "hint": "joint in middle of leg"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "items": [
+        {
+          "question": "What does ‘boca’ mean?",
+          "options": [
+            "nose",
+            "mouth",
+            "ear",
+            "eye"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "Which body part is ‘pie’?",
+          "options": [
+            "hand",
+            "foot",
+            "arm",
+            "leg"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What is ‘espalda’?",
+          "options": [
+            "chest",
+            "back",
+            "stomach",
+            "neck"
+          ],
+          "answer": 1
+        }
+      ]
+    }
+  ]
+}

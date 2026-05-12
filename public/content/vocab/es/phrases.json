@@ -1,0 +1,183 @@
+{
+  "id": "phrases",
+  "words": [
+    {
+      "word": "está chévere",
+      "reading": "ehs-TAH cheh-BEH-reh",
+      "meaning": "it’s cool / great",
+      "example": "Esa idea está chévere.",
+      "exampleMeaning": "That idea is cool."
+    },
+    {
+      "word": "qué padre",
+      "reading": "keh PAH-dreh",
+      "meaning": "how cool (Mexico)",
+      "example": "¡Qué padre tu carro nuevo!",
+      "exampleMeaning": "How cool, your new car!"
+    },
+    {
+      "word": "vale la pena",
+      "reading": "BAH-leh lah PEH-nah",
+      "meaning": "it’s worth it",
+      "example": "La película vale la pena.",
+      "exampleMeaning": "The movie is worth it."
+    },
+    {
+      "word": "echar de menos",
+      "reading": "eh-CHAR deh MEH-nohs",
+      "meaning": "to miss",
+      "example": "Te echo de menos.",
+      "exampleMeaning": "I miss you."
+    },
+    {
+      "word": "darse cuenta",
+      "reading": "DAR-seh KWEHN-tah",
+      "meaning": "to realize",
+      "example": "Me di cuenta tarde.",
+      "exampleMeaning": "I realized too late."
+    },
+    {
+      "word": "tener ganas",
+      "reading": "teh-NEHR GAH-nahs",
+      "meaning": "to feel like",
+      "example": "Tengo ganas de un café.",
+      "exampleMeaning": "I feel like a coffee."
+    },
+    {
+      "word": "no hay de qué",
+      "reading": "noh ahy deh keh",
+      "meaning": "don’t mention it",
+      "example": "—Gracias. —No hay de qué.",
+      "exampleMeaning": "Thanks. Don’t mention it."
+    },
+    {
+      "word": "por supuesto",
+      "reading": "por soo-PWEHS-toh",
+      "meaning": "of course",
+      "example": "Por supuesto que te ayudo.",
+      "exampleMeaning": "Of course I’ll help you."
+    },
+    {
+      "word": "ni modo",
+      "reading": "nee MOH-doh",
+      "meaning": "oh well (Mexico)",
+      "example": "Llovió, ni modo.",
+      "exampleMeaning": "It rained, oh well."
+    },
+    {
+      "word": "a poco",
+      "reading": "ah POH-koh",
+      "meaning": "really? (Mexico)",
+      "example": "¿A poco no sabías?",
+      "exampleMeaning": "You really didn’t know?"
+    },
+    {
+      "word": "estar de acuerdo",
+      "reading": "ehs-TAR deh ah-KWEHR-doh",
+      "meaning": "to agree",
+      "example": "Estoy de acuerdo contigo.",
+      "exampleMeaning": "I agree with you."
+    },
+    {
+      "word": "dar igual",
+      "reading": "dar ee-GWAHL",
+      "meaning": "to not matter",
+      "example": "Me da igual.",
+      "exampleMeaning": "I don’t care."
+    },
+    {
+      "word": "en serio",
+      "reading": "ehn SEH-ryoh",
+      "meaning": "seriously",
+      "example": "¿En serio te dijo eso?",
+      "exampleMeaning": "Did he really say that?"
+    },
+    {
+      "word": "vale",
+      "reading": "BAH-leh",
+      "meaning": "okay (Spain) / it’s fine",
+      "example": "Vale, nos vemos a las cinco.",
+      "exampleMeaning": "Okay, see you at five."
+    },
+    {
+      "word": "al rato",
+      "reading": "ahl RRAH-toh",
+      "meaning": "in a bit",
+      "example": "Te llamo al rato.",
+      "exampleMeaning": "I’ll call you in a bit."
+    },
+    {
+      "word": "hacer caso",
+      "reading": "ah-SEHR KAH-soh",
+      "meaning": "to pay attention",
+      "example": "Hazme caso, por favor.",
+      "exampleMeaning": "Listen to me, please."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "Te ___ de menos.",
+          "answer": "echo",
+          "hint": "to miss"
+        },
+        {
+          "sentence": "___ que te ayudo.",
+          "answer": "Por supuesto",
+          "hint": "of course"
+        },
+        {
+          "sentence": "Estoy de ___ contigo.",
+          "answer": "acuerdo",
+          "hint": "to agree"
+        },
+        {
+          "sentence": "Tengo ___ de un café.",
+          "answer": "ganas",
+          "hint": "feel like"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "items": [
+        {
+          "question": "What does ‘está chévere’ mean?",
+          "options": [
+            "it’s bad",
+            "it’s cool",
+            "it’s late",
+            "it’s mine"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "Which means ‘of course’?",
+          "options": [
+            "ni modo",
+            "por supuesto",
+            "al rato",
+            "en serio"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What does ‘me da igual’ mean?",
+          "options": [
+            "I love it",
+            "I hate it",
+            "I don’t care",
+            "I don’t know"
+          ],
+          "answer": 2
+        }
+      ]
+    }
+  ]
+}

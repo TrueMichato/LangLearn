@@ -1,0 +1,183 @@
+{
+  "id": "celebrations",
+  "words": [
+    {
+      "word": "fiesta",
+      "reading": "FYEHS-tah",
+      "meaning": "party",
+      "example": "La fiesta empieza a las nueve.",
+      "exampleMeaning": "The party starts at nine."
+    },
+    {
+      "word": "cumpleaños",
+      "reading": "koom-pleh-AH-nyohs",
+      "meaning": "birthday",
+      "example": "Hoy es mi cumpleaños.",
+      "exampleMeaning": "Today is my birthday."
+    },
+    {
+      "word": "regalo",
+      "reading": "rreh-GAH-loh",
+      "meaning": "gift",
+      "example": "Te tengo un regalo.",
+      "exampleMeaning": "I have a gift for you."
+    },
+    {
+      "word": "pastel",
+      "reading": "pahs-TEHL",
+      "meaning": "cake",
+      "example": "El pastel está delicioso.",
+      "exampleMeaning": "The cake is delicious."
+    },
+    {
+      "word": "vela",
+      "reading": "BEH-lah",
+      "meaning": "candle",
+      "example": "Sopla las velas.",
+      "exampleMeaning": "Blow out the candles."
+    },
+    {
+      "word": "globo",
+      "reading": "GLOH-boh",
+      "meaning": "balloon",
+      "example": "Compramos muchos globos.",
+      "exampleMeaning": "We bought a lot of balloons."
+    },
+    {
+      "word": "Navidad",
+      "reading": "nah-bee-DAHD",
+      "meaning": "Christmas",
+      "example": "La Navidad es mi fiesta favorita.",
+      "exampleMeaning": "Christmas is my favorite holiday."
+    },
+    {
+      "word": "Año Nuevo",
+      "reading": "AH-nyoh NWEH-boh",
+      "meaning": "New Year",
+      "example": "Celebramos el Año Nuevo en familia.",
+      "exampleMeaning": "We celebrate New Year as a family."
+    },
+    {
+      "word": "Pascua",
+      "reading": "PAHS-kwah",
+      "meaning": "Easter",
+      "example": "En Pascua comemos chocolate.",
+      "exampleMeaning": "At Easter we eat chocolate."
+    },
+    {
+      "word": "Día de Muertos",
+      "reading": "DEE-ah deh MWEHR-tohs",
+      "meaning": "Day of the Dead",
+      "example": "El Día de Muertos es el 2 de noviembre.",
+      "exampleMeaning": "Day of the Dead is November 2nd."
+    },
+    {
+      "word": "boda",
+      "reading": "BOH-dah",
+      "meaning": "wedding",
+      "example": "Fui a una boda hermosa.",
+      "exampleMeaning": "I went to a beautiful wedding."
+    },
+    {
+      "word": "aniversario",
+      "reading": "ah-nee-behr-SAH-ryoh",
+      "meaning": "anniversary",
+      "example": "Es nuestro aniversario hoy.",
+      "exampleMeaning": "Today is our anniversary."
+    },
+    {
+      "word": "celebrar",
+      "reading": "seh-leh-BRAR",
+      "meaning": "to celebrate",
+      "example": "Vamos a celebrar tu logro.",
+      "exampleMeaning": "Let’s celebrate your achievement."
+    },
+    {
+      "word": "felicidades",
+      "reading": "feh-lee-see-DAH-dehs",
+      "meaning": "congratulations",
+      "example": "¡Felicidades por tu boda!",
+      "exampleMeaning": "Congratulations on your wedding!"
+    },
+    {
+      "word": "brindis",
+      "reading": "BREEN-dees",
+      "meaning": "toast (drink)",
+      "example": "Hagamos un brindis.",
+      "exampleMeaning": "Let’s make a toast."
+    },
+    {
+      "word": "feria",
+      "reading": "FEH-ryah",
+      "meaning": "fair",
+      "example": "La feria del pueblo es divertida.",
+      "exampleMeaning": "The town fair is fun."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "Hoy es mi ___.",
+          "answer": "cumpleaños",
+          "hint": "annual personal celebration"
+        },
+        {
+          "sentence": "Sopla las ___.",
+          "answer": "velas",
+          "hint": "candles on a cake"
+        },
+        {
+          "sentence": "Es nuestro ___ hoy.",
+          "answer": "aniversario",
+          "hint": "anniversary"
+        },
+        {
+          "sentence": "¡___ por tu boda!",
+          "answer": "Felicidades",
+          "hint": "congratulations"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "items": [
+        {
+          "question": "What does ‘regalo’ mean?",
+          "options": [
+            "gift",
+            "cake",
+            "party",
+            "candle"
+          ],
+          "answer": 0
+        },
+        {
+          "question": "Which holiday is in December?",
+          "options": [
+            "Pascua",
+            "Navidad",
+            "Día de Muertos",
+            "feria"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What is ‘boda’?",
+          "options": [
+            "birthday",
+            "wedding",
+            "party",
+            "toast"
+          ],
+          "answer": 1
+        }
+      ]
+    }
+  ]
+}

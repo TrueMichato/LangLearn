@@ -1,0 +1,183 @@
+{
+  "id": "music-art",
+  "words": [
+    {
+      "word": "música",
+      "reading": "MOO-see-kah",
+      "meaning": "music",
+      "example": "La música clásica me relaja.",
+      "exampleMeaning": "Classical music relaxes me."
+    },
+    {
+      "word": "canción",
+      "reading": "kahn-SYOHN",
+      "meaning": "song",
+      "example": "Esta canción me encanta.",
+      "exampleMeaning": "I love this song."
+    },
+    {
+      "word": "cantante",
+      "reading": "kahn-TAHN-teh",
+      "meaning": "singer",
+      "example": "La cantante tiene una voz hermosa.",
+      "exampleMeaning": "The singer has a beautiful voice."
+    },
+    {
+      "word": "banda",
+      "reading": "BAHN-dah",
+      "meaning": "band",
+      "example": "Mi banda favorita es de Argentina.",
+      "exampleMeaning": "My favorite band is from Argentina."
+    },
+    {
+      "word": "concierto",
+      "reading": "kohn-SYEHR-toh",
+      "meaning": "concert",
+      "example": "Fuimos al concierto de Shakira.",
+      "exampleMeaning": "We went to the Shakira concert."
+    },
+    {
+      "word": "instrumento",
+      "reading": "een-stroo-MEHN-toh",
+      "meaning": "instrument",
+      "example": "¿Tocas algún instrumento?",
+      "exampleMeaning": "Do you play any instrument?"
+    },
+    {
+      "word": "guitarra",
+      "reading": "gee-TAH-rrah",
+      "meaning": "guitar",
+      "example": "Aprendo a tocar la guitarra.",
+      "exampleMeaning": "I’m learning to play guitar."
+    },
+    {
+      "word": "piano",
+      "reading": "PYAH-noh",
+      "meaning": "piano",
+      "example": "El piano es muy difícil.",
+      "exampleMeaning": "The piano is very hard."
+    },
+    {
+      "word": "tambor",
+      "reading": "tahm-BOR",
+      "meaning": "drum",
+      "example": "El tambor marca el ritmo.",
+      "exampleMeaning": "The drum sets the rhythm."
+    },
+    {
+      "word": "arte",
+      "reading": "AR-teh",
+      "meaning": "art",
+      "example": "El arte expresa emociones.",
+      "exampleMeaning": "Art expresses emotions."
+    },
+    {
+      "word": "pintura",
+      "reading": "peen-TOO-rah",
+      "meaning": "painting",
+      "example": "Esa pintura es de Frida.",
+      "exampleMeaning": "That painting is by Frida."
+    },
+    {
+      "word": "pintor",
+      "reading": "peen-TOR",
+      "meaning": "painter",
+      "example": "El pintor vendió todas sus obras.",
+      "exampleMeaning": "The painter sold all his works."
+    },
+    {
+      "word": "museo",
+      "reading": "moo-SEH-oh",
+      "meaning": "museum",
+      "example": "El museo abre los domingos.",
+      "exampleMeaning": "The museum is open on Sundays."
+    },
+    {
+      "word": "obra",
+      "reading": "OH-brah",
+      "meaning": "artwork",
+      "example": "Esta obra es famosa.",
+      "exampleMeaning": "This artwork is famous."
+    },
+    {
+      "word": "teatro",
+      "reading": "teh-AH-troh",
+      "meaning": "theater",
+      "example": "Fuimos al teatro anoche.",
+      "exampleMeaning": "We went to the theater last night."
+    },
+    {
+      "word": "escultura",
+      "reading": "ehs-kool-TOO-rah",
+      "meaning": "sculpture",
+      "example": "La escultura está en el parque.",
+      "exampleMeaning": "The sculpture is in the park."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "Aprendo a tocar la ___.",
+          "answer": "guitarra",
+          "hint": "stringed instrument"
+        },
+        {
+          "sentence": "Fuimos al ___ de Shakira.",
+          "answer": "concierto",
+          "hint": "live music event"
+        },
+        {
+          "sentence": "Esa ___ es de Frida.",
+          "answer": "pintura",
+          "hint": "painting"
+        },
+        {
+          "sentence": "El ___ abre los domingos.",
+          "answer": "museo",
+          "hint": "place with art exhibits"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "items": [
+        {
+          "question": "What does ‘canción’ mean?",
+          "options": [
+            "band",
+            "song",
+            "singer",
+            "dance"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "Which is an instrument?",
+          "options": [
+            "museo",
+            "pintura",
+            "piano",
+            "obra"
+          ],
+          "answer": 2
+        },
+        {
+          "question": "What is ‘pintor’?",
+          "options": [
+            "singer",
+            "painter",
+            "dancer",
+            "writer"
+          ],
+          "answer": 1
+        }
+      ]
+    }
+  ]
+}

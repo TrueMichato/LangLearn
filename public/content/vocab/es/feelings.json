@@ -1,0 +1,183 @@
+{
+  "id": "feelings",
+  "words": [
+    {
+      "word": "personalidad",
+      "reading": "pehr-soh-nah-lee-DAHD",
+      "meaning": "personality",
+      "example": "Tiene una personalidad fuerte.",
+      "exampleMeaning": "He has a strong personality."
+    },
+    {
+      "word": "amable",
+      "reading": "ah-MAH-bleh",
+      "meaning": "kind",
+      "example": "La señora es muy amable.",
+      "exampleMeaning": "The lady is very kind."
+    },
+    {
+      "word": "simpático",
+      "reading": "seem-PAH-tee-koh",
+      "meaning": "nice / friendly",
+      "example": "Tu hermano es muy simpático.",
+      "exampleMeaning": "Your brother is very friendly."
+    },
+    {
+      "word": "tímido",
+      "reading": "TEE-mee-doh",
+      "meaning": "shy",
+      "example": "Soy un poco tímida con desconocidos.",
+      "exampleMeaning": "I’m a bit shy with strangers."
+    },
+    {
+      "word": "valiente",
+      "reading": "bah-LYEHN-teh",
+      "meaning": "brave",
+      "example": "El bombero es muy valiente.",
+      "exampleMeaning": "The firefighter is very brave."
+    },
+    {
+      "word": "honesto",
+      "reading": "oh-NEHS-toh",
+      "meaning": "honest",
+      "example": "Prefiero ser honesto siempre.",
+      "exampleMeaning": "I prefer to always be honest."
+    },
+    {
+      "word": "paciente",
+      "reading": "pah-SYEHN-teh",
+      "meaning": "patient",
+      "example": "Mi mamá es muy paciente.",
+      "exampleMeaning": "My mom is very patient."
+    },
+    {
+      "word": "generoso",
+      "reading": "heh-neh-ROH-soh",
+      "meaning": "generous",
+      "example": "Es generoso con sus amigos.",
+      "exampleMeaning": "He is generous with his friends."
+    },
+    {
+      "word": "inteligente",
+      "reading": "een-teh-lee-HEHN-teh",
+      "meaning": "intelligent",
+      "example": "Mi hija es muy inteligente.",
+      "exampleMeaning": "My daughter is very intelligent."
+    },
+    {
+      "word": "chistoso",
+      "reading": "chees-TOH-soh",
+      "meaning": "funny",
+      "example": "Mi tío es muy chistoso.",
+      "exampleMeaning": "My uncle is very funny."
+    },
+    {
+      "word": "serio",
+      "reading": "SEH-ryoh",
+      "meaning": "serious",
+      "example": "El profesor es muy serio.",
+      "exampleMeaning": "The professor is very serious."
+    },
+    {
+      "word": "flojo",
+      "reading": "FLOH-hoh",
+      "meaning": "lazy",
+      "example": "No seas flojo, levántate.",
+      "exampleMeaning": "Don’t be lazy, get up."
+    },
+    {
+      "word": "trabajador",
+      "reading": "trah-bah-hah-DOR",
+      "meaning": "hardworking",
+      "example": "Él es muy trabajador.",
+      "exampleMeaning": "He is very hardworking."
+    },
+    {
+      "word": "confiado",
+      "reading": "kohn-FYAH-doh",
+      "meaning": "confident",
+      "example": "Está confiado en el examen.",
+      "exampleMeaning": "He’s confident about the test."
+    },
+    {
+      "word": "celoso",
+      "reading": "seh-LOH-soh",
+      "meaning": "jealous",
+      "example": "Está celoso de su hermano.",
+      "exampleMeaning": "He is jealous of his brother."
+    },
+    {
+      "word": "orgulloso",
+      "reading": "or-goo-YOH-soh",
+      "meaning": "proud",
+      "example": "Estoy orgullosa de mis hijos.",
+      "exampleMeaning": "I’m proud of my kids."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "La señora es muy ___.",
+          "answer": "amable",
+          "hint": "kind"
+        },
+        {
+          "sentence": "Soy un poco ___ con desconocidos.",
+          "answer": "tímida",
+          "hint": "shy (female)"
+        },
+        {
+          "sentence": "Mi tío es muy ___.",
+          "answer": "chistoso",
+          "hint": "funny"
+        },
+        {
+          "sentence": "No seas ___, levántate.",
+          "answer": "flojo",
+          "hint": "lazy"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "items": [
+        {
+          "question": "What does ‘valiente’ mean?",
+          "options": [
+            "shy",
+            "brave",
+            "lazy",
+            "sad"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "Which is positive?",
+          "options": [
+            "flojo",
+            "celoso",
+            "generoso",
+            "tímido"
+          ],
+          "answer": 2
+        },
+        {
+          "question": "What is ‘honesto’?",
+          "options": [
+            "lazy",
+            "funny",
+            "honest",
+            "serious"
+          ],
+          "answer": 2
+        }
+      ]
+    }
+  ]
+}

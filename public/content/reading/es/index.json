@@ -1,0 +1,94 @@
+{
+  "texts": [
+    {
+      "id": "self-intro-es",
+      "title": "Presentación",
+      "titleEn": "Self-Introduction",
+      "difficulty": "easy",
+      "wordCount": 80,
+      "tags": ["daily-life", "conversation"],
+      "description": "A simple self-introduction in neutral Spanish from a young woman in Mexico City"
+    },
+    {
+      "id": "mi-dia",
+      "title": "Mi Día",
+      "titleEn": "My Day",
+      "difficulty": "easy",
+      "wordCount": 100,
+      "tags": ["daily-life"],
+      "description": "A typical weekday from morning to evening in present tense"
+    },
+    {
+      "id": "en-el-mercado",
+      "title": "En el Mercado",
+      "titleEn": "At the Market",
+      "difficulty": "easy",
+      "wordCount": 90,
+      "tags": ["daily-life", "conversation"],
+      "description": "A short dialogue about buying fruit and bargaining at a Mexican market"
+    },
+    {
+      "id": "dia-de-muertos",
+      "title": "El Día de los Muertos",
+      "titleEn": "The Day of the Dead",
+      "difficulty": "medium",
+      "wordCount": 200,
+      "tags": ["culture", "traditions"],
+      "description": "An explanation of the Mexican Day of the Dead, with ofrendas, cempasúchil and pan de muerto"
+    },
+    {
+      "id": "la-llorona",
+      "title": "La Llorona",
+      "titleEn": "The Weeping Woman",
+      "difficulty": "medium",
+      "wordCount": 220,
+      "tags": ["culture", "folklore"],
+      "description": "A retelling of the colonial-era legend of the wailing woman who wanders the rivers"
+    },
+    {
+      "id": "ciudad-de-mexico",
+      "title": "Ciudad de México",
+      "titleEn": "Mexico City",
+      "difficulty": "medium",
+      "wordCount": 200,
+      "tags": ["travel", "geography"],
+      "description": "A travel guide to Mexico City's main sights, food and cultural calendar"
+    },
+    {
+      "id": "comida-mexicana",
+      "title": "Comida Mexicana",
+      "titleEn": "Mexican Food",
+      "difficulty": "medium",
+      "wordCount": 180,
+      "tags": ["culture", "food"],
+      "description": "An article about traditional Mexican cuisine and its regional variations"
+    },
+    {
+      "id": "la-vida-escolar",
+      "title": "La Vida Escolar",
+      "titleEn": "School Life",
+      "difficulty": "medium",
+      "wordCount": 200,
+      "tags": ["education", "daily-life"],
+      "description": "How primary and secondary school works for kids in Mexico and Latin America"
+    },
+    {
+      "id": "tecnologia-en-latinoamerica",
+      "title": "Tecnología en Latinoamérica",
+      "titleEn": "Technology in Latin America",
+      "difficulty": "hard",
+      "wordCount": 300,
+      "tags": ["technology", "business"],
+      "description": "An article about the rise of tech startups and fintech across Latin America"
+    },
+    {
+      "id": "carta-amigo",
+      "title": "Carta a un Amigo",
+      "titleEn": "Letter to a Friend",
+      "difficulty": "hard",
+      "wordCount": 280,
+      "tags": ["correspondence", "travel"],
+      "description": "A personal letter from someone visiting Buenos Aires for the first time"
+    }
+  ]
+}

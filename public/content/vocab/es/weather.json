@@ -1,0 +1,183 @@
+{
+  "id": "weather",
+  "words": [
+    {
+      "word": "clima",
+      "reading": "KLEE-mah",
+      "meaning": "weather / climate",
+      "example": "¿Cómo está el clima hoy?",
+      "exampleMeaning": "How’s the weather today?"
+    },
+    {
+      "word": "sol",
+      "reading": "sohl",
+      "meaning": "sun",
+      "example": "Hoy hay mucho sol.",
+      "exampleMeaning": "Today is very sunny."
+    },
+    {
+      "word": "lluvia",
+      "reading": "YOO-byah",
+      "meaning": "rain",
+      "example": "La lluvia no para.",
+      "exampleMeaning": "The rain won’t stop."
+    },
+    {
+      "word": "nieve",
+      "reading": "NYEH-beh",
+      "meaning": "snow",
+      "example": "La nieve cubre las montañas.",
+      "exampleMeaning": "Snow covers the mountains."
+    },
+    {
+      "word": "viento",
+      "reading": "BYEHN-toh",
+      "meaning": "wind",
+      "example": "El viento es muy fuerte.",
+      "exampleMeaning": "The wind is very strong."
+    },
+    {
+      "word": "nube",
+      "reading": "NOO-beh",
+      "meaning": "cloud",
+      "example": "Hay muchas nubes en el cielo.",
+      "exampleMeaning": "There are many clouds in the sky."
+    },
+    {
+      "word": "tormenta",
+      "reading": "tor-MEHN-tah",
+      "meaning": "storm",
+      "example": "Viene una tormenta grande.",
+      "exampleMeaning": "A big storm is coming."
+    },
+    {
+      "word": "calor",
+      "reading": "kah-LOR",
+      "meaning": "heat",
+      "example": "Hace mucho calor en verano.",
+      "exampleMeaning": "It’s very hot in summer."
+    },
+    {
+      "word": "frío",
+      "reading": "FREE-oh",
+      "meaning": "cold",
+      "example": "En invierno hace frío.",
+      "exampleMeaning": "In winter it’s cold."
+    },
+    {
+      "word": "húmedo",
+      "reading": "OO-meh-doh",
+      "meaning": "humid",
+      "example": "El clima está muy húmedo.",
+      "exampleMeaning": "It’s very humid."
+    },
+    {
+      "word": "seco",
+      "reading": "SEH-koh",
+      "meaning": "dry",
+      "example": "El desierto es seco.",
+      "exampleMeaning": "The desert is dry."
+    },
+    {
+      "word": "primavera",
+      "reading": "pree-mah-BEH-rah",
+      "meaning": "spring",
+      "example": "En primavera florecen las flores.",
+      "exampleMeaning": "In spring flowers bloom."
+    },
+    {
+      "word": "verano",
+      "reading": "beh-RAH-noh",
+      "meaning": "summer",
+      "example": "El verano es mi estación favorita.",
+      "exampleMeaning": "Summer is my favorite season."
+    },
+    {
+      "word": "otoño",
+      "reading": "oh-TOH-nyoh",
+      "meaning": "autumn",
+      "example": "Las hojas caen en otoño.",
+      "exampleMeaning": "Leaves fall in autumn."
+    },
+    {
+      "word": "invierno",
+      "reading": "een-BYEHR-noh",
+      "meaning": "winter",
+      "example": "El invierno es muy frío aquí.",
+      "exampleMeaning": "Winter is very cold here."
+    },
+    {
+      "word": "paraguas",
+      "reading": "pah-RAH-gwahs",
+      "meaning": "umbrella",
+      "example": "Lleva un paraguas, va a llover.",
+      "exampleMeaning": "Take an umbrella, it’s going to rain."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "Hace mucho ___ en verano.",
+          "answer": "calor",
+          "hint": "high temperature"
+        },
+        {
+          "sentence": "Lleva un ___, va a llover.",
+          "answer": "paraguas",
+          "hint": "protects from rain"
+        },
+        {
+          "sentence": "La ___ cubre las montañas.",
+          "answer": "nieve",
+          "hint": "frozen white precipitation"
+        },
+        {
+          "sentence": "Las hojas caen en ___.",
+          "answer": "otoño",
+          "hint": "fall season"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "items": [
+        {
+          "question": "What does ‘lluvia’ mean?",
+          "options": [
+            "snow",
+            "rain",
+            "wind",
+            "sun"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "Which season is ‘invierno’?",
+          "options": [
+            "spring",
+            "summer",
+            "autumn",
+            "winter"
+          ],
+          "answer": 3
+        },
+        {
+          "question": "What is ‘viento’?",
+          "options": [
+            "cloud",
+            "wind",
+            "storm",
+            "heat"
+          ],
+          "answer": 1
+        }
+      ]
+    }
+  ]
+}

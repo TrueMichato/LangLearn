@@ -1,0 +1,183 @@
+{
+  "id": "adjectives",
+  "words": [
+    {
+      "word": "grande",
+      "reading": "GRAHN-deh",
+      "meaning": "big",
+      "example": "La casa es grande.",
+      "exampleMeaning": "The house is big."
+    },
+    {
+      "word": "pequeño",
+      "reading": "peh-KEH-nyoh",
+      "meaning": "small",
+      "example": "El gato es pequeño.",
+      "exampleMeaning": "The cat is small."
+    },
+    {
+      "word": "bueno",
+      "reading": "BWEH-noh",
+      "meaning": "good",
+      "example": "Es un libro muy bueno.",
+      "exampleMeaning": "It’s a very good book."
+    },
+    {
+      "word": "malo",
+      "reading": "MAH-loh",
+      "meaning": "bad",
+      "example": "El clima está malo hoy.",
+      "exampleMeaning": "The weather is bad today."
+    },
+    {
+      "word": "bonito",
+      "reading": "boh-NEE-toh",
+      "meaning": "pretty",
+      "example": "¡Qué bonito vestido!",
+      "exampleMeaning": "What a pretty dress!"
+    },
+    {
+      "word": "feo",
+      "reading": "FEH-oh",
+      "meaning": "ugly",
+      "example": "El cuadro me parece feo.",
+      "exampleMeaning": "I think the painting is ugly."
+    },
+    {
+      "word": "alto",
+      "reading": "AHL-toh",
+      "meaning": "tall",
+      "example": "Mi hermano es muy alto.",
+      "exampleMeaning": "My brother is very tall."
+    },
+    {
+      "word": "bajo",
+      "reading": "BAH-hoh",
+      "meaning": "short",
+      "example": "Soy un poco bajo.",
+      "exampleMeaning": "I’m a bit short."
+    },
+    {
+      "word": "rápido",
+      "reading": "RRAH-pee-doh",
+      "meaning": "fast",
+      "example": "El tren es rápido.",
+      "exampleMeaning": "The train is fast."
+    },
+    {
+      "word": "lento",
+      "reading": "LEHN-toh",
+      "meaning": "slow",
+      "example": "El internet está lento hoy.",
+      "exampleMeaning": "The internet is slow today."
+    },
+    {
+      "word": "fácil",
+      "reading": "FAH-seel",
+      "meaning": "easy",
+      "example": "Este examen es fácil.",
+      "exampleMeaning": "This test is easy."
+    },
+    {
+      "word": "difícil",
+      "reading": "dee-FEE-seel",
+      "meaning": "difficult",
+      "example": "El chino es muy difícil.",
+      "exampleMeaning": "Chinese is very difficult."
+    },
+    {
+      "word": "caliente",
+      "reading": "kah-LYEHN-teh",
+      "meaning": "hot",
+      "example": "El café está caliente.",
+      "exampleMeaning": "The coffee is hot."
+    },
+    {
+      "word": "frío",
+      "reading": "FREE-oh",
+      "meaning": "cold",
+      "example": "El agua está fría.",
+      "exampleMeaning": "The water is cold."
+    },
+    {
+      "word": "nuevo",
+      "reading": "NWEH-boh",
+      "meaning": "new",
+      "example": "Tengo un carro nuevo.",
+      "exampleMeaning": "I have a new car."
+    },
+    {
+      "word": "viejo",
+      "reading": "BYEH-hoh",
+      "meaning": "old",
+      "example": "Esa casa es muy vieja.",
+      "exampleMeaning": "That house is very old."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "La casa es ___.",
+          "answer": "grande",
+          "hint": "opposite of small"
+        },
+        {
+          "sentence": "El café está ___.",
+          "answer": "caliente",
+          "hint": "high temperature"
+        },
+        {
+          "sentence": "El chino es muy ___.",
+          "answer": "difícil",
+          "hint": "not easy"
+        },
+        {
+          "sentence": "Tengo un carro ___.",
+          "answer": "nuevo",
+          "hint": "not used"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "items": [
+        {
+          "question": "What does ‘rápido’ mean?",
+          "options": [
+            "slow",
+            "fast",
+            "easy",
+            "hard"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "Which word means ‘ugly’?",
+          "options": [
+            "bonito",
+            "feo",
+            "bueno",
+            "alto"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What is the opposite of ‘viejo’?",
+          "options": [
+            "malo",
+            "nuevo",
+            "caliente",
+            "grande"
+          ],
+          "answer": 1
+        }
+      ]
+    }
+  ]
+}

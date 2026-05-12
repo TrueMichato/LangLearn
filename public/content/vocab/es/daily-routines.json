@@ -1,0 +1,183 @@
+{
+  "id": "daily-routines",
+  "words": [
+    {
+      "word": "rutina",
+      "reading": "rroo-TEE-nah",
+      "meaning": "routine",
+      "example": "Mi rutina es muy ordenada.",
+      "exampleMeaning": "My routine is very organized."
+    },
+    {
+      "word": "despertarse",
+      "reading": "dehs-pehr-TAR-seh",
+      "meaning": "to wake up",
+      "example": "Me despierto a las seis.",
+      "exampleMeaning": "I wake up at six."
+    },
+    {
+      "word": "levantarse",
+      "reading": "leh-bahn-TAR-seh",
+      "meaning": "to get up",
+      "example": "Me levanto enseguida.",
+      "exampleMeaning": "I get up right away."
+    },
+    {
+      "word": "bañarse",
+      "reading": "bah-NYAR-seh",
+      "meaning": "to shower / bathe",
+      "example": "Me baño todas las mañanas.",
+      "exampleMeaning": "I shower every morning."
+    },
+    {
+      "word": "cepillarse",
+      "reading": "seh-pee-YAR-seh",
+      "meaning": "to brush (oneself)",
+      "example": "Me cepillo los dientes después.",
+      "exampleMeaning": "I brush my teeth afterward."
+    },
+    {
+      "word": "vestirse",
+      "reading": "behs-TEER-seh",
+      "meaning": "to get dressed",
+      "example": "Me visto rápido.",
+      "exampleMeaning": "I get dressed quickly."
+    },
+    {
+      "word": "desayunar",
+      "reading": "deh-sah-yoo-NAR",
+      "meaning": "to eat breakfast",
+      "example": "Desayuno cereal con leche.",
+      "exampleMeaning": "I eat cereal with milk."
+    },
+    {
+      "word": "almorzar",
+      "reading": "ahl-mor-SAR",
+      "meaning": "to eat lunch",
+      "example": "Almuerzo a las dos.",
+      "exampleMeaning": "I eat lunch at two."
+    },
+    {
+      "word": "cenar",
+      "reading": "seh-NAR",
+      "meaning": "to eat dinner",
+      "example": "Cenamos en familia.",
+      "exampleMeaning": "We have dinner together."
+    },
+    {
+      "word": "trabajar",
+      "reading": "trah-bah-HAR",
+      "meaning": "to work",
+      "example": "Trabajo de nueve a seis.",
+      "exampleMeaning": "I work nine to six."
+    },
+    {
+      "word": "estudiar",
+      "reading": "ehs-too-DYAR",
+      "meaning": "to study",
+      "example": "Estudio por la tarde.",
+      "exampleMeaning": "I study in the afternoon."
+    },
+    {
+      "word": "regresar",
+      "reading": "rreh-greh-SAR",
+      "meaning": "to return",
+      "example": "Regreso a casa a las siete.",
+      "exampleMeaning": "I get home at seven."
+    },
+    {
+      "word": "descansar",
+      "reading": "dehs-kahn-SAR",
+      "meaning": "to rest",
+      "example": "Descanso en el sofá.",
+      "exampleMeaning": "I rest on the couch."
+    },
+    {
+      "word": "acostarse",
+      "reading": "ah-kohs-TAR-seh",
+      "meaning": "to go to bed",
+      "example": "Me acuesto a las once.",
+      "exampleMeaning": "I go to bed at eleven."
+    },
+    {
+      "word": "dormir",
+      "reading": "dor-MEER",
+      "meaning": "to sleep",
+      "example": "Duermo ocho horas.",
+      "exampleMeaning": "I sleep eight hours."
+    },
+    {
+      "word": "soñar",
+      "reading": "soh-NYAR",
+      "meaning": "to dream",
+      "example": "Anoche soñé con el mar.",
+      "exampleMeaning": "Last night I dreamt of the sea."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "Me ___ a las seis.",
+          "answer": "despierto",
+          "hint": "to wake up (yo)"
+        },
+        {
+          "sentence": "Me ___ los dientes después.",
+          "answer": "cepillo",
+          "hint": "to brush (yo)"
+        },
+        {
+          "sentence": "Me ___ a las once.",
+          "answer": "acuesto",
+          "hint": "to go to bed (yo)"
+        },
+        {
+          "sentence": "___ ocho horas.",
+          "answer": "Duermo",
+          "hint": "I sleep"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "items": [
+        {
+          "question": "What does ‘desayunar’ mean?",
+          "options": [
+            "to eat lunch",
+            "to eat dinner",
+            "to eat breakfast",
+            "to drink"
+          ],
+          "answer": 2
+        },
+        {
+          "question": "Which means ‘to rest’?",
+          "options": [
+            "descansar",
+            "dormir",
+            "soñar",
+            "regresar"
+          ],
+          "answer": 0
+        },
+        {
+          "question": "What is ‘vestirse’?",
+          "options": [
+            "to wash",
+            "to dress",
+            "to wake",
+            "to walk"
+          ],
+          "answer": 1
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,183 @@
+{
+  "id": "animals",
+  "words": [
+    {
+      "word": "perro",
+      "reading": "PEH-rroh",
+      "meaning": "dog",
+      "example": "Mi perro se llama Max.",
+      "exampleMeaning": "My dog’s name is Max."
+    },
+    {
+      "word": "gato",
+      "reading": "GAH-toh",
+      "meaning": "cat",
+      "example": "El gato duerme en el sofá.",
+      "exampleMeaning": "The cat sleeps on the couch."
+    },
+    {
+      "word": "pájaro",
+      "reading": "PAH-hah-roh",
+      "meaning": "bird",
+      "example": "Un pájaro canta en el árbol.",
+      "exampleMeaning": "A bird sings in the tree."
+    },
+    {
+      "word": "pez",
+      "reading": "pehs",
+      "meaning": "fish (alive)",
+      "example": "Hay un pez en la pecera.",
+      "exampleMeaning": "There is a fish in the tank."
+    },
+    {
+      "word": "caballo",
+      "reading": "kah-BAH-yoh",
+      "meaning": "horse",
+      "example": "El caballo corre rápido.",
+      "exampleMeaning": "The horse runs fast."
+    },
+    {
+      "word": "vaca",
+      "reading": "BAH-kah",
+      "meaning": "cow",
+      "example": "La vaca da leche.",
+      "exampleMeaning": "The cow gives milk."
+    },
+    {
+      "word": "cerdo",
+      "reading": "SEHR-doh",
+      "meaning": "pig",
+      "example": "El cerdo es rosado.",
+      "exampleMeaning": "The pig is pink."
+    },
+    {
+      "word": "gallina",
+      "reading": "gah-YEE-nah",
+      "meaning": "hen",
+      "example": "La gallina puso un huevo.",
+      "exampleMeaning": "The hen laid an egg."
+    },
+    {
+      "word": "oveja",
+      "reading": "oh-BEH-hah",
+      "meaning": "sheep",
+      "example": "La oveja tiene lana suave.",
+      "exampleMeaning": "The sheep has soft wool."
+    },
+    {
+      "word": "ratón",
+      "reading": "rrah-TOHN",
+      "meaning": "mouse",
+      "example": "Hay un ratón en la cocina.",
+      "exampleMeaning": "There is a mouse in the kitchen."
+    },
+    {
+      "word": "conejo",
+      "reading": "koh-NEH-hoh",
+      "meaning": "rabbit",
+      "example": "El conejo come zanahorias.",
+      "exampleMeaning": "The rabbit eats carrots."
+    },
+    {
+      "word": "león",
+      "reading": "leh-OHN",
+      "meaning": "lion",
+      "example": "El león es el rey de la selva.",
+      "exampleMeaning": "The lion is the king of the jungle."
+    },
+    {
+      "word": "elefante",
+      "reading": "eh-leh-FAHN-teh",
+      "meaning": "elephant",
+      "example": "El elefante es enorme.",
+      "exampleMeaning": "The elephant is huge."
+    },
+    {
+      "word": "oso",
+      "reading": "OH-soh",
+      "meaning": "bear",
+      "example": "El oso vive en el bosque.",
+      "exampleMeaning": "The bear lives in the forest."
+    },
+    {
+      "word": "serpiente",
+      "reading": "sehr-PYEHN-teh",
+      "meaning": "snake",
+      "example": "La serpiente es peligrosa.",
+      "exampleMeaning": "The snake is dangerous."
+    },
+    {
+      "word": "mariposa",
+      "reading": "mah-ree-POH-sah",
+      "meaning": "butterfly",
+      "example": "La mariposa es muy colorida.",
+      "exampleMeaning": "The butterfly is very colorful."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "Mi ___ se llama Max.",
+          "answer": "perro",
+          "hint": "man’s best friend"
+        },
+        {
+          "sentence": "La ___ da leche.",
+          "answer": "vaca",
+          "hint": "farm animal"
+        },
+        {
+          "sentence": "El ___ come zanahorias.",
+          "answer": "conejo",
+          "hint": "hops, has long ears"
+        },
+        {
+          "sentence": "La ___ es muy colorida.",
+          "answer": "mariposa",
+          "hint": "flying insect"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "items": [
+        {
+          "question": "What does ‘gato’ mean?",
+          "options": [
+            "dog",
+            "cat",
+            "horse",
+            "mouse"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "Which animal is ‘león’?",
+          "options": [
+            "tiger",
+            "lion",
+            "bear",
+            "wolf"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What is ‘pájaro’?",
+          "options": [
+            "fish",
+            "bird",
+            "snake",
+            "butterfly"
+          ],
+          "answer": 1
+        }
+      ]
+    }
+  ]
+}

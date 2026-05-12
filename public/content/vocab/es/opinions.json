@@ -1,0 +1,183 @@
+{
+  "id": "opinions",
+  "words": [
+    {
+      "word": "opinión",
+      "reading": "oh-pee-NYOHN",
+      "meaning": "opinion",
+      "example": "Respeto tu opinión.",
+      "exampleMeaning": "I respect your opinion."
+    },
+    {
+      "word": "creer",
+      "reading": "kreh-EHR",
+      "meaning": "to believe",
+      "example": "Creo que tienes razón.",
+      "exampleMeaning": "I think you’re right."
+    },
+    {
+      "word": "pensar",
+      "reading": "pehn-SAR",
+      "meaning": "to think",
+      "example": "¿Qué piensas tú?",
+      "exampleMeaning": "What do you think?"
+    },
+    {
+      "word": "estar de acuerdo",
+      "reading": "ehs-TAR deh ah-KWEHR-doh",
+      "meaning": "to agree",
+      "example": "Estoy de acuerdo contigo.",
+      "exampleMeaning": "I agree with you."
+    },
+    {
+      "word": "no estar de acuerdo",
+      "reading": "noh ehs-TAR deh ah-KWEHR-doh",
+      "meaning": "to disagree",
+      "example": "No estoy de acuerdo en eso.",
+      "exampleMeaning": "I don’t agree on that."
+    },
+    {
+      "word": "discutir",
+      "reading": "dees-koo-TEER",
+      "meaning": "to argue",
+      "example": "No quiero discutir contigo.",
+      "exampleMeaning": "I don’t want to argue with you."
+    },
+    {
+      "word": "debate",
+      "reading": "deh-BAH-teh",
+      "meaning": "debate",
+      "example": "El debate fue interesante.",
+      "exampleMeaning": "The debate was interesting."
+    },
+    {
+      "word": "argumento",
+      "reading": "ar-goo-MEHN-toh",
+      "meaning": "argument",
+      "example": "Tu argumento es válido.",
+      "exampleMeaning": "Your argument is valid."
+    },
+    {
+      "word": "razón",
+      "reading": "rrah-SOHN",
+      "meaning": "reason",
+      "example": "Tienes razón en eso.",
+      "exampleMeaning": "You’re right about that."
+    },
+    {
+      "word": "verdad",
+      "reading": "behr-DAHD",
+      "meaning": "truth",
+      "example": "La verdad siempre sale.",
+      "exampleMeaning": "The truth always comes out."
+    },
+    {
+      "word": "mentira",
+      "reading": "mehn-TEE-rah",
+      "meaning": "lie",
+      "example": "Eso es una mentira.",
+      "exampleMeaning": "That’s a lie."
+    },
+    {
+      "word": "punto de vista",
+      "reading": "POON-toh deh BEES-tah",
+      "meaning": "point of view",
+      "example": "Es otro punto de vista.",
+      "exampleMeaning": "It’s another point of view."
+    },
+    {
+      "word": "quizás",
+      "reading": "kee-SAHS",
+      "meaning": "maybe",
+      "example": "Quizás venga mañana.",
+      "exampleMeaning": "Maybe I’ll come tomorrow."
+    },
+    {
+      "word": "claro",
+      "reading": "KLAH-roh",
+      "meaning": "of course / clear",
+      "example": "Claro que sí.",
+      "exampleMeaning": "Of course."
+    },
+    {
+      "word": "por ejemplo",
+      "reading": "por eh-HEHM-ploh",
+      "meaning": "for example",
+      "example": "Por ejemplo, este caso.",
+      "exampleMeaning": "For example, this case."
+    },
+    {
+      "word": "en cambio",
+      "reading": "ehn KAHM-byoh",
+      "meaning": "on the other hand",
+      "example": "En cambio, yo prefiero esto.",
+      "exampleMeaning": "On the other hand, I prefer this."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "___ que tienes razón.",
+          "answer": "Creo",
+          "hint": "I believe"
+        },
+        {
+          "sentence": "Estoy de ___ contigo.",
+          "answer": "acuerdo",
+          "hint": "to agree"
+        },
+        {
+          "sentence": "Tienes ___ en eso.",
+          "answer": "razón",
+          "hint": "to be right"
+        },
+        {
+          "sentence": "___ venga mañana.",
+          "answer": "Quizás",
+          "hint": "maybe"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "items": [
+        {
+          "question": "What does ‘mentira’ mean?",
+          "options": [
+            "truth",
+            "lie",
+            "reason",
+            "debate"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "Which means ‘to think’?",
+          "options": [
+            "discutir",
+            "pensar",
+            "creer",
+            "hablar"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What is ‘claro’?",
+          "options": [
+            "dark",
+            "wrong",
+            "of course",
+            "maybe"
+          ],
+          "answer": 2
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,183 @@
+{
+  "id": "restaurant",
+  "words": [
+    {
+      "word": "restaurante",
+      "reading": "rrehs-tow-RAHN-teh",
+      "meaning": "restaurant",
+      "example": "Cenamos en un restaurante italiano.",
+      "exampleMeaning": "We had dinner at an Italian restaurant."
+    },
+    {
+      "word": "mesero",
+      "reading": "meh-SEH-roh",
+      "meaning": "waiter",
+      "example": "El mesero fue muy amable.",
+      "exampleMeaning": "The waiter was very kind."
+    },
+    {
+      "word": "menú",
+      "reading": "meh-NOO",
+      "meaning": "menu",
+      "example": "¿Me trae el menú, por favor?",
+      "exampleMeaning": "Can you bring the menu, please?"
+    },
+    {
+      "word": "plato",
+      "reading": "PLAH-toh",
+      "meaning": "dish",
+      "example": "El plato del día son enchiladas.",
+      "exampleMeaning": "The dish of the day is enchiladas."
+    },
+    {
+      "word": "entrada",
+      "reading": "ehn-TRAH-dah",
+      "meaning": "appetizer",
+      "example": "De entrada pedimos guacamole.",
+      "exampleMeaning": "For appetizer we ordered guacamole."
+    },
+    {
+      "word": "postre",
+      "reading": "POHS-treh",
+      "meaning": "dessert",
+      "example": "¿Qué hay de postre?",
+      "exampleMeaning": "What’s for dessert?"
+    },
+    {
+      "word": "bebida",
+      "reading": "beh-BEE-dah",
+      "meaning": "drink",
+      "example": "¿Qué bebida quiere?",
+      "exampleMeaning": "What drink would you like?"
+    },
+    {
+      "word": "cuenta",
+      "reading": "KWEHN-tah",
+      "meaning": "bill / check",
+      "example": "La cuenta, por favor.",
+      "exampleMeaning": "The check, please."
+    },
+    {
+      "word": "propina",
+      "reading": "proh-PEE-nah",
+      "meaning": "tip",
+      "example": "Dejé buena propina al mesero.",
+      "exampleMeaning": "I left a good tip for the waiter."
+    },
+    {
+      "word": "reservación",
+      "reading": "rreh-sehr-bah-SYOHN",
+      "meaning": "reservation",
+      "example": "Hice una reservación para las ocho.",
+      "exampleMeaning": "I made a reservation for eight."
+    },
+    {
+      "word": "delicioso",
+      "reading": "deh-lee-SYOH-soh",
+      "meaning": "delicious",
+      "example": "La comida estuvo deliciosa.",
+      "exampleMeaning": "The food was delicious."
+    },
+    {
+      "word": "picante",
+      "reading": "pee-KAHN-teh",
+      "meaning": "spicy",
+      "example": "La salsa está muy picante.",
+      "exampleMeaning": "The salsa is very spicy."
+    },
+    {
+      "word": "vegetariano",
+      "reading": "beh-heh-tah-RYAH-noh",
+      "meaning": "vegetarian",
+      "example": "Soy vegetariano desde hace años.",
+      "exampleMeaning": "I’ve been vegetarian for years."
+    },
+    {
+      "word": "ordenar",
+      "reading": "or-deh-NAR",
+      "meaning": "to order",
+      "example": "¿Ya van a ordenar?",
+      "exampleMeaning": "Are you ready to order?"
+    },
+    {
+      "word": "probar",
+      "reading": "proh-BAR",
+      "meaning": "to taste / to try",
+      "example": "Quiero probar el ceviche.",
+      "exampleMeaning": "I want to try the ceviche."
+    },
+    {
+      "word": "servilleta",
+      "reading": "sehr-bee-YEH-tah",
+      "meaning": "napkin",
+      "example": "¿Me puede traer una servilleta?",
+      "exampleMeaning": "Can you bring me a napkin?"
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "La ___, por favor.",
+          "answer": "cuenta",
+          "hint": "the bill"
+        },
+        {
+          "sentence": "¿Me trae el ___?",
+          "answer": "menú",
+          "hint": "list of dishes"
+        },
+        {
+          "sentence": "La salsa está muy ___.",
+          "answer": "picante",
+          "hint": "hot spicy"
+        },
+        {
+          "sentence": "Hice una ___ para las ocho.",
+          "answer": "reservación",
+          "hint": "to book a table"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "items": [
+        {
+          "question": "Who serves the food?",
+          "options": [
+            "mesero",
+            "jefe",
+            "chef",
+            "cliente"
+          ],
+          "answer": 0
+        },
+        {
+          "question": "What does ‘postre’ mean?",
+          "options": [
+            "appetizer",
+            "main",
+            "dessert",
+            "drink"
+          ],
+          "answer": 2
+        },
+        {
+          "question": "Which means ‘to order’?",
+          "options": [
+            "probar",
+            "ordenar",
+            "pagar",
+            "comer"
+          ],
+          "answer": 1
+        }
+      ]
+    }
+  ]
+}

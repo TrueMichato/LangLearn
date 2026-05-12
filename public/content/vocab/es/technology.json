@@ -1,0 +1,183 @@
+{
+  "id": "technology",
+  "words": [
+    {
+      "word": "computadora",
+      "reading": "kohm-poo-tah-DOH-rah",
+      "meaning": "computer",
+      "example": "Mi computadora es nueva.",
+      "exampleMeaning": "My computer is new."
+    },
+    {
+      "word": "celular",
+      "reading": "seh-loo-LAR",
+      "meaning": "cell phone",
+      "example": "Olvidé el celular en casa.",
+      "exampleMeaning": "I forgot my phone at home."
+    },
+    {
+      "word": "teléfono",
+      "reading": "teh-LEH-foh-noh",
+      "meaning": "telephone",
+      "example": "El teléfono está sonando.",
+      "exampleMeaning": "The phone is ringing."
+    },
+    {
+      "word": "internet",
+      "reading": "een-tehr-NEHT",
+      "meaning": "internet",
+      "example": "No hay internet en el hotel.",
+      "exampleMeaning": "There’s no internet at the hotel."
+    },
+    {
+      "word": "correo",
+      "reading": "koh-RREH-oh",
+      "meaning": "email",
+      "example": "Te mando el archivo por correo.",
+      "exampleMeaning": "I’ll send the file by email."
+    },
+    {
+      "word": "mensaje",
+      "reading": "mehn-SAH-heh",
+      "meaning": "message",
+      "example": "Te dejé un mensaje.",
+      "exampleMeaning": "I left you a message."
+    },
+    {
+      "word": "pantalla",
+      "reading": "pahn-TAH-yah",
+      "meaning": "screen",
+      "example": "La pantalla está rota.",
+      "exampleMeaning": "The screen is broken."
+    },
+    {
+      "word": "teclado",
+      "reading": "teh-KLAH-doh",
+      "meaning": "keyboard",
+      "example": "El teclado es inalámbrico.",
+      "exampleMeaning": "The keyboard is wireless."
+    },
+    {
+      "word": "contraseña",
+      "reading": "kohn-trah-SEH-nyah",
+      "meaning": "password",
+      "example": "Olvidé mi contraseña.",
+      "exampleMeaning": "I forgot my password."
+    },
+    {
+      "word": "aplicación",
+      "reading": "ah-plee-kah-SYOHN",
+      "meaning": "app",
+      "example": "Descargué una aplicación nueva.",
+      "exampleMeaning": "I downloaded a new app."
+    },
+    {
+      "word": "red",
+      "reading": "rrehd",
+      "meaning": "network",
+      "example": "La red wifi está lenta.",
+      "exampleMeaning": "The wifi network is slow."
+    },
+    {
+      "word": "archivo",
+      "reading": "ar-CHEE-boh",
+      "meaning": "file",
+      "example": "Guarda el archivo, por favor.",
+      "exampleMeaning": "Save the file, please."
+    },
+    {
+      "word": "descargar",
+      "reading": "dehs-kar-GAR",
+      "meaning": "to download",
+      "example": "Voy a descargar la película.",
+      "exampleMeaning": "I’m going to download the movie."
+    },
+    {
+      "word": "navegar",
+      "reading": "nah-beh-GAR",
+      "meaning": "to browse",
+      "example": "Navego en internet por horas.",
+      "exampleMeaning": "I browse the internet for hours."
+    },
+    {
+      "word": "hacer clic",
+      "reading": "ah-SEHR kleek",
+      "meaning": "to click",
+      "example": "Haz clic en el botón verde.",
+      "exampleMeaning": "Click the green button."
+    },
+    {
+      "word": "redes sociales",
+      "reading": "RREH-dehs soh-SYAH-lehs",
+      "meaning": "social media",
+      "example": "Paso mucho tiempo en redes sociales.",
+      "exampleMeaning": "I spend a lot of time on social media."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "Olvidé mi ___.",
+          "answer": "contraseña",
+          "hint": "secret login word"
+        },
+        {
+          "sentence": "Te mando el archivo por ___.",
+          "answer": "correo",
+          "hint": "electronic mail"
+        },
+        {
+          "sentence": "Olvidé el ___ en casa.",
+          "answer": "celular",
+          "hint": "LatAm word for cell phone"
+        },
+        {
+          "sentence": "Voy a ___ la película.",
+          "answer": "descargar",
+          "hint": "to get from internet"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "items": [
+        {
+          "question": "What does ‘pantalla’ mean?",
+          "options": [
+            "keyboard",
+            "screen",
+            "mouse",
+            "speaker"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "Which means ‘app’?",
+          "options": [
+            "archivo",
+            "red",
+            "aplicación",
+            "correo"
+          ],
+          "answer": 2
+        },
+        {
+          "question": "What is ‘navegar’?",
+          "options": [
+            "to save",
+            "to delete",
+            "to browse",
+            "to type"
+          ],
+          "answer": 2
+        }
+      ]
+    }
+  ]
+}

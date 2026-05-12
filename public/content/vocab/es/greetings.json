@@ -1,0 +1,176 @@
+{
+  "id": "greetings",
+  "words": [
+    {
+      "word": "hola",
+      "reading": "OH-lah",
+      "meaning": "hello",
+      "example": "¡Hola! ¿Cómo estás?",
+      "exampleMeaning": "Hello! How are you?"
+    },
+    {
+      "word": "buenos días",
+      "reading": "BWEH-nohs DEE-ahs",
+      "meaning": "good morning",
+      "example": "Buenos días, profesor.",
+      "exampleMeaning": "Good morning, teacher."
+    },
+    {
+      "word": "buenas tardes",
+      "reading": "BWEH-nahs TAR-dehs",
+      "meaning": "good afternoon",
+      "example": "Buenas tardes, señora.",
+      "exampleMeaning": "Good afternoon, ma’am."
+    },
+    {
+      "word": "buenas noches",
+      "reading": "BWEH-nahs NOH-chehs",
+      "meaning": "good evening / good night",
+      "example": "Buenas noches, que descanses.",
+      "exampleMeaning": "Good night, rest well."
+    },
+    {
+      "word": "adiós",
+      "reading": "ah-DYOHS",
+      "meaning": "goodbye",
+      "example": "¡Adiós! Nos vemos mañana.",
+      "exampleMeaning": "Goodbye! See you tomorrow."
+    },
+    {
+      "word": "chao",
+      "reading": "chow",
+      "meaning": "bye",
+      "example": "Chao, cuídate mucho.",
+      "exampleMeaning": "Bye, take care."
+    },
+    {
+      "word": "hasta luego",
+      "reading": "AHS-tah LWEH-goh",
+      "meaning": "see you later",
+      "example": "Tengo que irme, hasta luego.",
+      "exampleMeaning": "I have to go, see you later."
+    },
+    {
+      "word": "hasta mañana",
+      "reading": "AHS-tah mah-NYAH-nah",
+      "meaning": "see you tomorrow",
+      "example": "Hasta mañana en la clase.",
+      "exampleMeaning": "See you tomorrow in class."
+    },
+    {
+      "word": "gracias",
+      "reading": "GRAH-syahs",
+      "meaning": "thank you",
+      "example": "Muchas gracias por tu ayuda.",
+      "exampleMeaning": "Thank you very much for your help."
+    },
+    {
+      "word": "de nada",
+      "reading": "deh NAH-dah",
+      "meaning": "you’re welcome",
+      "example": "—Gracias. —De nada.",
+      "exampleMeaning": "Thanks. You’re welcome."
+    },
+    {
+      "word": "por favor",
+      "reading": "por fah-VOR",
+      "meaning": "please",
+      "example": "Un café, por favor.",
+      "exampleMeaning": "A coffee, please."
+    },
+    {
+      "word": "perdón",
+      "reading": "pehr-DOHN",
+      "meaning": "sorry / excuse me",
+      "example": "Perdón, no te escuché.",
+      "exampleMeaning": "Sorry, I didn’t hear you."
+    },
+    {
+      "word": "disculpe",
+      "reading": "dees-KOOL-peh",
+      "meaning": "excuse me (formal)",
+      "example": "Disculpe, ¿dónde está el baño?",
+      "exampleMeaning": "Excuse me, where is the bathroom?"
+    },
+    {
+      "word": "mucho gusto",
+      "reading": "MOO-choh GOOS-toh",
+      "meaning": "nice to meet you",
+      "example": "Mucho gusto, soy Ana.",
+      "exampleMeaning": "Nice to meet you, I’m Ana."
+    },
+    {
+      "word": "¿cómo estás?",
+      "reading": "KOH-moh ehs-TAHS",
+      "meaning": "how are you?",
+      "example": "Hola Juan, ¿cómo estás?",
+      "exampleMeaning": "Hi Juan, how are you?"
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "___, ¿cómo estás?",
+          "answer": "Hola",
+          "hint": "informal greeting"
+        },
+        {
+          "sentence": "Un café, ___.",
+          "answer": "por favor",
+          "hint": "please"
+        },
+        {
+          "sentence": "___, ¿dónde está el baño?",
+          "answer": "Disculpe",
+          "hint": "formal excuse me"
+        },
+        {
+          "sentence": "Muchas ___ por todo.",
+          "answer": "gracias",
+          "hint": "thanks"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "items": [
+        {
+          "question": "What does ‘gracias’ mean?",
+          "options": [
+            "sorry",
+            "thank you",
+            "hello",
+            "please"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "How do you say ‘good night’ in Spanish?",
+          "options": [
+            "buenos días",
+            "buenas tardes",
+            "buenas noches",
+            "adiós"
+          ],
+          "answer": 2
+        },
+        {
+          "question": "What does ‘de nada’ mean?",
+          "options": [
+            "sorry",
+            "please",
+            "hello",
+            "you’re welcome"
+          ],
+          "answer": 3
+        }
+      ]
+    }
+  ]
+}

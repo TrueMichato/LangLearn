@@ -1,0 +1,183 @@
+{
+  "id": "time-routine",
+  "words": [
+    {
+      "word": "hora",
+      "reading": "OH-rah",
+      "meaning": "hour / time",
+      "example": "¿Qué hora es?",
+      "exampleMeaning": "What time is it?"
+    },
+    {
+      "word": "minuto",
+      "reading": "mee-NOO-toh",
+      "meaning": "minute",
+      "example": "Espera un minuto.",
+      "exampleMeaning": "Wait a minute."
+    },
+    {
+      "word": "segundo",
+      "reading": "seh-GOON-doh",
+      "meaning": "second",
+      "example": "Solo tardo un segundo.",
+      "exampleMeaning": "I’ll only take a second."
+    },
+    {
+      "word": "mañana",
+      "reading": "mah-NYAH-nah",
+      "meaning": "morning",
+      "example": "Desayuno por la mañana.",
+      "exampleMeaning": "I have breakfast in the morning."
+    },
+    {
+      "word": "tarde",
+      "reading": "TAR-deh",
+      "meaning": "afternoon",
+      "example": "Trabajo por la tarde.",
+      "exampleMeaning": "I work in the afternoon."
+    },
+    {
+      "word": "noche",
+      "reading": "NOH-cheh",
+      "meaning": "night",
+      "example": "Por la noche leo un libro.",
+      "exampleMeaning": "At night I read a book."
+    },
+    {
+      "word": "hoy",
+      "reading": "oy",
+      "meaning": "today",
+      "example": "Hoy es viernes.",
+      "exampleMeaning": "Today is Friday."
+    },
+    {
+      "word": "ayer",
+      "reading": "ah-YEHR",
+      "meaning": "yesterday",
+      "example": "Ayer fui al cine.",
+      "exampleMeaning": "Yesterday I went to the movies."
+    },
+    {
+      "word": "mañana",
+      "reading": "mah-NYAH-nah",
+      "meaning": "tomorrow",
+      "example": "Mañana voy al doctor.",
+      "exampleMeaning": "Tomorrow I go to the doctor."
+    },
+    {
+      "word": "semana",
+      "reading": "seh-MAH-nah",
+      "meaning": "week",
+      "example": "La semana pasada llovió mucho.",
+      "exampleMeaning": "It rained a lot last week."
+    },
+    {
+      "word": "mes",
+      "reading": "mehs",
+      "meaning": "month",
+      "example": "Este mes empecé el gimnasio.",
+      "exampleMeaning": "This month I started the gym."
+    },
+    {
+      "word": "año",
+      "reading": "AH-nyoh",
+      "meaning": "year",
+      "example": "El año tiene doce meses.",
+      "exampleMeaning": "The year has twelve months."
+    },
+    {
+      "word": "temprano",
+      "reading": "tehm-PRAH-noh",
+      "meaning": "early",
+      "example": "Me levanto temprano.",
+      "exampleMeaning": "I get up early."
+    },
+    {
+      "word": "tarde",
+      "reading": "TAR-deh",
+      "meaning": "late",
+      "example": "Llegué tarde al trabajo.",
+      "exampleMeaning": "I got to work late."
+    },
+    {
+      "word": "despertarse",
+      "reading": "dehs-pehr-TAR-seh",
+      "meaning": "to wake up",
+      "example": "Me despierto a las seis.",
+      "exampleMeaning": "I wake up at six."
+    },
+    {
+      "word": "dormir",
+      "reading": "dor-MEER",
+      "meaning": "to sleep",
+      "example": "Duermo ocho horas.",
+      "exampleMeaning": "I sleep eight hours."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "¿Qué ___ es?",
+          "answer": "hora",
+          "hint": "time of day"
+        },
+        {
+          "sentence": "Me ___ a las seis.",
+          "answer": "despierto",
+          "hint": "to wake up (1st person)"
+        },
+        {
+          "sentence": "___ fui al cine.",
+          "answer": "Ayer",
+          "hint": "the day before today"
+        },
+        {
+          "sentence": "Llegué ___ al trabajo.",
+          "answer": "tarde",
+          "hint": "not early"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "items": [
+        {
+          "question": "What does ‘noche’ mean?",
+          "options": [
+            "morning",
+            "afternoon",
+            "night",
+            "week"
+          ],
+          "answer": 2
+        },
+        {
+          "question": "Which means ‘year’?",
+          "options": [
+            "mes",
+            "semana",
+            "año",
+            "día"
+          ],
+          "answer": 2
+        },
+        {
+          "question": "What is ‘dormir’?",
+          "options": [
+            "to wake",
+            "to sleep",
+            "to rest",
+            "to dream"
+          ],
+          "answer": 1
+        }
+      ]
+    }
+  ]
+}

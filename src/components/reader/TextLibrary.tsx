@@ -57,7 +57,7 @@ export default function TextLibrary({ onSelectText, onSelectCurated }: TextLibra
 
   // Curated library state
   const activeLanguages = useSettingsStore((s) => s.activeLanguages);
-  const curatedLangs = activeLanguages.filter((l) => ['ja', 'ru', 'pt'].includes(l));
+  const curatedLangs = activeLanguages.filter((l) => ['ja', 'ru', 'pt', 'es'].includes(l));
   const [curatedLang, setCuratedLang] = useState<string>(curatedLangs[0] ?? 'ja');
   const [curatedTexts, setCuratedTexts] = useState<CuratedText[]>([]);
   const [curatedLoading, setCuratedLoading] = useState(false);
@@ -139,7 +139,7 @@ export default function TextLibrary({ onSelectText, onSelectCurated }: TextLibra
 
       {subTab === 'curated' ? (
         <CuratedLibrary
-          langs={curatedLangs.length > 0 ? curatedLangs : ['ja', 'ru', 'pt']}
+          langs={curatedLangs.length > 0 ? curatedLangs : ['ja', 'ru', 'pt', 'es']}
           currentLang={curatedLang}
           onChangeLang={setCuratedLang}
           texts={filteredCurated}

@@ -1,0 +1,190 @@
+{
+  "id": "verbs",
+  "words": [
+    {
+      "word": "ser",
+      "reading": "sehr",
+      "meaning": "to be (permanent)",
+      "example": "Yo soy estudiante.",
+      "exampleMeaning": "I am a student."
+    },
+    {
+      "word": "estar",
+      "reading": "ehs-TAR",
+      "meaning": "to be (state)",
+      "example": "Estoy cansado hoy.",
+      "exampleMeaning": "I am tired today."
+    },
+    {
+      "word": "tener",
+      "reading": "teh-NEHR",
+      "meaning": "to have",
+      "example": "Tengo dos hermanos.",
+      "exampleMeaning": "I have two siblings."
+    },
+    {
+      "word": "hacer",
+      "reading": "ah-SEHR",
+      "meaning": "to do / to make",
+      "example": "¿Qué haces el sábado?",
+      "exampleMeaning": "What are you doing Saturday?"
+    },
+    {
+      "word": "ir",
+      "reading": "eer",
+      "meaning": "to go",
+      "example": "Voy al supermercado.",
+      "exampleMeaning": "I am going to the supermarket."
+    },
+    {
+      "word": "venir",
+      "reading": "beh-NEER",
+      "meaning": "to come",
+      "example": "¿Vienes a la fiesta?",
+      "exampleMeaning": "Are you coming to the party?"
+    },
+    {
+      "word": "decir",
+      "reading": "deh-SEER",
+      "meaning": "to say",
+      "example": "¿Qué dices?",
+      "exampleMeaning": "What are you saying?"
+    },
+    {
+      "word": "ver",
+      "reading": "behr",
+      "meaning": "to see",
+      "example": "No veo nada sin lentes.",
+      "exampleMeaning": "I can’t see anything without glasses."
+    },
+    {
+      "word": "comer",
+      "reading": "koh-MEHR",
+      "meaning": "to eat",
+      "example": "Vamos a comer pizza.",
+      "exampleMeaning": "We’re going to eat pizza."
+    },
+    {
+      "word": "beber",
+      "reading": "beh-BEHR",
+      "meaning": "to drink",
+      "example": "¿Quieres beber algo?",
+      "exampleMeaning": "Do you want to drink something?"
+    },
+    {
+      "word": "hablar",
+      "reading": "ah-BLAR",
+      "meaning": "to speak",
+      "example": "Hablo español e inglés.",
+      "exampleMeaning": "I speak Spanish and English."
+    },
+    {
+      "word": "escuchar",
+      "reading": "ehs-koo-CHAR",
+      "meaning": "to listen",
+      "example": "Escucho música todos los días.",
+      "exampleMeaning": "I listen to music every day."
+    },
+    {
+      "word": "leer",
+      "reading": "leh-EHR",
+      "meaning": "to read",
+      "example": "Me gusta leer novelas.",
+      "exampleMeaning": "I like to read novels."
+    },
+    {
+      "word": "escribir",
+      "reading": "ehs-kree-BEER",
+      "meaning": "to write",
+      "example": "Escribo en mi diario cada noche.",
+      "exampleMeaning": "I write in my journal every night."
+    },
+    {
+      "word": "vivir",
+      "reading": "bee-BEER",
+      "meaning": "to live",
+      "example": "Vivo en la ciudad.",
+      "exampleMeaning": "I live in the city."
+    },
+    {
+      "word": "trabajar",
+      "reading": "trah-bah-HAR",
+      "meaning": "to work",
+      "example": "Trabajo en una oficina.",
+      "exampleMeaning": "I work in an office."
+    },
+    {
+      "word": "manejar",
+      "reading": "mah-neh-HAR",
+      "meaning": "to drive",
+      "example": "Manejo a la escuela cada día.",
+      "exampleMeaning": "I drive to school every day."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "___ en una oficina.",
+          "answer": "Trabajo",
+          "hint": "I work"
+        },
+        {
+          "sentence": "¿Quieres ___ algo?",
+          "answer": "beber",
+          "hint": "to drink"
+        },
+        {
+          "sentence": "___ español e inglés.",
+          "answer": "Hablo",
+          "hint": "I speak"
+        },
+        {
+          "sentence": "Vamos a ___ pizza.",
+          "answer": "comer",
+          "hint": "to eat"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "items": [
+        {
+          "question": "What does ‘leer’ mean?",
+          "options": [
+            "to read",
+            "to write",
+            "to speak",
+            "to listen"
+          ],
+          "answer": 0
+        },
+        {
+          "question": "Which verb means ‘to drive’?",
+          "options": [
+            "caminar",
+            "manejar",
+            "correr",
+            "volar"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What does ‘vivir’ mean?",
+          "options": [
+            "to die",
+            "to live",
+            "to work",
+            "to study"
+          ],
+          "answer": 1
+        }
+      ]
+    }
+  ]
+}

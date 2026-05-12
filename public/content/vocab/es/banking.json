@@ -1,0 +1,183 @@
+{
+  "id": "banking",
+  "words": [
+    {
+      "word": "banco",
+      "reading": "BAHN-koh",
+      "meaning": "bank",
+      "example": "El banco abre a las nueve.",
+      "exampleMeaning": "The bank opens at nine."
+    },
+    {
+      "word": "cuenta",
+      "reading": "KWEHN-tah",
+      "meaning": "account",
+      "example": "Abrí una cuenta de ahorros.",
+      "exampleMeaning": "I opened a savings account."
+    },
+    {
+      "word": "cajero",
+      "reading": "kah-HEH-roh",
+      "meaning": "ATM / teller",
+      "example": "El cajero está descompuesto.",
+      "exampleMeaning": "The ATM is broken."
+    },
+    {
+      "word": "depósito",
+      "reading": "deh-POH-see-toh",
+      "meaning": "deposit",
+      "example": "Hice un depósito en efectivo.",
+      "exampleMeaning": "I made a cash deposit."
+    },
+    {
+      "word": "retiro",
+      "reading": "rreh-TEE-roh",
+      "meaning": "withdrawal",
+      "example": "Necesito hacer un retiro.",
+      "exampleMeaning": "I need to make a withdrawal."
+    },
+    {
+      "word": "préstamo",
+      "reading": "PREHS-tah-moh",
+      "meaning": "loan",
+      "example": "Pedí un préstamo al banco.",
+      "exampleMeaning": "I asked the bank for a loan."
+    },
+    {
+      "word": "interés",
+      "reading": "een-teh-REHS",
+      "meaning": "interest",
+      "example": "La tasa de interés es alta.",
+      "exampleMeaning": "The interest rate is high."
+    },
+    {
+      "word": "hipoteca",
+      "reading": "ee-poh-TEH-kah",
+      "meaning": "mortgage",
+      "example": "Pagamos la hipoteca cada mes.",
+      "exampleMeaning": "We pay the mortgage every month."
+    },
+    {
+      "word": "factura",
+      "reading": "fahk-TOO-rah",
+      "meaning": "bill / invoice",
+      "example": "Llegó la factura del agua.",
+      "exampleMeaning": "The water bill arrived."
+    },
+    {
+      "word": "impuesto",
+      "reading": "eem-PWEHS-toh",
+      "meaning": "tax",
+      "example": "Hay que pagar los impuestos.",
+      "exampleMeaning": "We have to pay taxes."
+    },
+    {
+      "word": "moneda",
+      "reading": "moh-NEH-dah",
+      "meaning": "currency",
+      "example": "La moneda local es el peso.",
+      "exampleMeaning": "The local currency is the peso."
+    },
+    {
+      "word": "billete",
+      "reading": "bee-YEH-teh",
+      "meaning": "bill (note)",
+      "example": "Necesito cambio para un billete grande.",
+      "exampleMeaning": "I need change for a large bill."
+    },
+    {
+      "word": "ahorrar",
+      "reading": "ah-oh-RRAR",
+      "meaning": "to save",
+      "example": "Trato de ahorrar cada mes.",
+      "exampleMeaning": "I try to save every month."
+    },
+    {
+      "word": "invertir",
+      "reading": "een-behr-TEER",
+      "meaning": "to invest",
+      "example": "Quiero invertir en bienes raíces.",
+      "exampleMeaning": "I want to invest in real estate."
+    },
+    {
+      "word": "deuda",
+      "reading": "DEH-oo-dah",
+      "meaning": "debt",
+      "example": "Pagué toda mi deuda.",
+      "exampleMeaning": "I paid off all my debt."
+    },
+    {
+      "word": "presupuesto",
+      "reading": "preh-soo-PWEHS-toh",
+      "meaning": "budget",
+      "example": "Hago un presupuesto mensual.",
+      "exampleMeaning": "I make a monthly budget."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "Abrí una ___ de ahorros.",
+          "answer": "cuenta",
+          "hint": "bank account"
+        },
+        {
+          "sentence": "Pedí un ___ al banco.",
+          "answer": "préstamo",
+          "hint": "borrowed money"
+        },
+        {
+          "sentence": "Hay que pagar los ___.",
+          "answer": "impuestos",
+          "hint": "government fees"
+        },
+        {
+          "sentence": "Trato de ___ cada mes.",
+          "answer": "ahorrar",
+          "hint": "to put money aside"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "items": [
+        {
+          "question": "What does ‘cajero’ mean?",
+          "options": [
+            "bank",
+            "ATM",
+            "bill",
+            "tax"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "Which means ‘debt’?",
+          "options": [
+            "ahorro",
+            "deuda",
+            "interés",
+            "moneda"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What is ‘factura’?",
+          "options": [
+            "bill",
+            "coin",
+            "loan",
+            "tip"
+          ],
+          "answer": 0
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,183 @@
+{
+  "id": "emotions",
+  "words": [
+    {
+      "word": "feliz",
+      "reading": "feh-LEES",
+      "meaning": "happy",
+      "example": "Estoy muy feliz hoy.",
+      "exampleMeaning": "I am very happy today."
+    },
+    {
+      "word": "triste",
+      "reading": "TREES-teh",
+      "meaning": "sad",
+      "example": "Se ve triste, ¿qué pasa?",
+      "exampleMeaning": "You look sad, what’s wrong?"
+    },
+    {
+      "word": "enojado",
+      "reading": "eh-noh-HAH-doh",
+      "meaning": "angry",
+      "example": "Mi papá está enojado.",
+      "exampleMeaning": "My dad is angry."
+    },
+    {
+      "word": "contento",
+      "reading": "kohn-TEHN-toh",
+      "meaning": "glad / content",
+      "example": "Estoy contenta con mi trabajo.",
+      "exampleMeaning": "I’m content with my job."
+    },
+    {
+      "word": "emocionado",
+      "reading": "eh-moh-syoh-NAH-doh",
+      "meaning": "excited",
+      "example": "Estoy emocionado por el viaje.",
+      "exampleMeaning": "I’m excited about the trip."
+    },
+    {
+      "word": "nervioso",
+      "reading": "nehr-BYOH-soh",
+      "meaning": "nervous",
+      "example": "Estoy nervioso por el examen.",
+      "exampleMeaning": "I’m nervous about the exam."
+    },
+    {
+      "word": "cansado",
+      "reading": "kahn-SAH-doh",
+      "meaning": "tired",
+      "example": "Estoy muy cansado, voy a dormir.",
+      "exampleMeaning": "I’m very tired, I’m going to sleep."
+    },
+    {
+      "word": "aburrido",
+      "reading": "ah-boo-RREE-doh",
+      "meaning": "bored",
+      "example": "La película estaba aburrida.",
+      "exampleMeaning": "The movie was boring."
+    },
+    {
+      "word": "asustado",
+      "reading": "ah-soos-TAH-doh",
+      "meaning": "scared",
+      "example": "El niño está asustado.",
+      "exampleMeaning": "The boy is scared."
+    },
+    {
+      "word": "orgulloso",
+      "reading": "or-goo-YOH-soh",
+      "meaning": "proud",
+      "example": "Estoy orgulloso de ti.",
+      "exampleMeaning": "I’m proud of you."
+    },
+    {
+      "word": "amor",
+      "reading": "ah-MOR",
+      "meaning": "love",
+      "example": "El amor es lo más importante.",
+      "exampleMeaning": "Love is the most important."
+    },
+    {
+      "word": "miedo",
+      "reading": "MYEH-doh",
+      "meaning": "fear",
+      "example": "Le tengo miedo a las alturas.",
+      "exampleMeaning": "I’m afraid of heights."
+    },
+    {
+      "word": "sorpresa",
+      "reading": "sor-PREH-sah",
+      "meaning": "surprise",
+      "example": "¡Qué sorpresa verte aquí!",
+      "exampleMeaning": "What a surprise to see you here!"
+    },
+    {
+      "word": "llorar",
+      "reading": "yoh-RAR",
+      "meaning": "to cry",
+      "example": "El bebé empezó a llorar.",
+      "exampleMeaning": "The baby started crying."
+    },
+    {
+      "word": "reír",
+      "reading": "rreh-EER",
+      "meaning": "to laugh",
+      "example": "No paramos de reír.",
+      "exampleMeaning": "We couldn’t stop laughing."
+    },
+    {
+      "word": "extrañar",
+      "reading": "ehks-trah-NYAR",
+      "meaning": "to miss someone",
+      "example": "Extraño mucho a mi familia.",
+      "exampleMeaning": "I miss my family a lot."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "Estoy muy ___ hoy.",
+          "answer": "feliz",
+          "hint": "positive emotion"
+        },
+        {
+          "sentence": "Le tengo ___ a las alturas.",
+          "answer": "miedo",
+          "hint": "fear"
+        },
+        {
+          "sentence": "___ mucho a mi familia.",
+          "answer": "Extraño",
+          "hint": "to miss someone"
+        },
+        {
+          "sentence": "Estoy ___ por el examen.",
+          "answer": "nervioso",
+          "hint": "before a test"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "items": [
+        {
+          "question": "What does ‘triste’ mean?",
+          "options": [
+            "happy",
+            "sad",
+            "angry",
+            "tired"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "Which is ‘to laugh’?",
+          "options": [
+            "llorar",
+            "reír",
+            "gritar",
+            "sonreír"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What is ‘amor’?",
+          "options": [
+            "hate",
+            "love",
+            "fear",
+            "joy"
+          ],
+          "answer": 1
+        }
+      ]
+    }
+  ]
+}

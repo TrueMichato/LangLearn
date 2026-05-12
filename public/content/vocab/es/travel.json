@@ -1,0 +1,183 @@
+{
+  "id": "travel",
+  "words": [
+    {
+      "word": "viaje",
+      "reading": "BYAH-heh",
+      "meaning": "trip",
+      "example": "Tengo un viaje a Perú la próxima semana.",
+      "exampleMeaning": "I have a trip to Peru next week."
+    },
+    {
+      "word": "vuelo",
+      "reading": "BWEH-loh",
+      "meaning": "flight",
+      "example": "El vuelo sale a las seis.",
+      "exampleMeaning": "The flight leaves at six."
+    },
+    {
+      "word": "maleta",
+      "reading": "mah-LEH-tah",
+      "meaning": "suitcase",
+      "example": "Olvidé empacar la maleta.",
+      "exampleMeaning": "I forgot to pack my suitcase."
+    },
+    {
+      "word": "pasaporte",
+      "reading": "pah-sah-POR-teh",
+      "meaning": "passport",
+      "example": "¿Trajiste tu pasaporte?",
+      "exampleMeaning": "Did you bring your passport?"
+    },
+    {
+      "word": "hotel",
+      "reading": "oh-TEHL",
+      "meaning": "hotel",
+      "example": "Reservé un hotel en la playa.",
+      "exampleMeaning": "I booked a hotel by the beach."
+    },
+    {
+      "word": "reserva",
+      "reading": "rreh-SEHR-bah",
+      "meaning": "reservation",
+      "example": "Tengo una reserva a tu nombre.",
+      "exampleMeaning": "I have a reservation under your name."
+    },
+    {
+      "word": "turista",
+      "reading": "too-REES-tah",
+      "meaning": "tourist",
+      "example": "Hay muchos turistas en el centro.",
+      "exampleMeaning": "There are lots of tourists downtown."
+    },
+    {
+      "word": "mapa",
+      "reading": "MAH-pah",
+      "meaning": "map",
+      "example": "Necesito un mapa de la ciudad.",
+      "exampleMeaning": "I need a map of the city."
+    },
+    {
+      "word": "playa",
+      "reading": "PLAH-yah",
+      "meaning": "beach",
+      "example": "La playa es hermosa al atardecer.",
+      "exampleMeaning": "The beach is gorgeous at sunset."
+    },
+    {
+      "word": "montaña",
+      "reading": "mohn-TAH-nyah",
+      "meaning": "mountain",
+      "example": "Subimos la montaña ayer.",
+      "exampleMeaning": "We climbed the mountain yesterday."
+    },
+    {
+      "word": "ciudad",
+      "reading": "syoo-DAHD",
+      "meaning": "city",
+      "example": "La ciudad es muy grande.",
+      "exampleMeaning": "The city is very big."
+    },
+    {
+      "word": "pueblo",
+      "reading": "PWEH-bloh",
+      "meaning": "town / village",
+      "example": "Mi familia vive en un pueblo pequeño.",
+      "exampleMeaning": "My family lives in a small town."
+    },
+    {
+      "word": "frontera",
+      "reading": "frohn-TEH-rah",
+      "meaning": "border",
+      "example": "Cruzamos la frontera sin problemas.",
+      "exampleMeaning": "We crossed the border with no issues."
+    },
+    {
+      "word": "moneda",
+      "reading": "moh-NEH-dah",
+      "meaning": "currency / coin",
+      "example": "¿Cuál es la moneda de Chile?",
+      "exampleMeaning": "What’s the currency of Chile?"
+    },
+    {
+      "word": "embajada",
+      "reading": "ehm-bah-HAH-dah",
+      "meaning": "embassy",
+      "example": "La embajada queda cerca del parque.",
+      "exampleMeaning": "The embassy is near the park."
+    },
+    {
+      "word": "aduana",
+      "reading": "ah-DWAH-nah",
+      "meaning": "customs",
+      "example": "Esperamos en la aduana una hora.",
+      "exampleMeaning": "We waited at customs for an hour."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "Reservé un ___ en la playa.",
+          "answer": "hotel",
+          "hint": "place to stay"
+        },
+        {
+          "sentence": "¿Trajiste tu ___?",
+          "answer": "pasaporte",
+          "hint": "travel document"
+        },
+        {
+          "sentence": "El ___ sale a las seis.",
+          "answer": "vuelo",
+          "hint": "airplane trip"
+        },
+        {
+          "sentence": "La ___ es hermosa al atardecer.",
+          "answer": "playa",
+          "hint": "sandy shore"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "items": [
+        {
+          "question": "What does ‘maleta’ mean?",
+          "options": [
+            "ticket",
+            "suitcase",
+            "map",
+            "hotel"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "Which means ‘mountain’?",
+          "options": [
+            "playa",
+            "ciudad",
+            "montaña",
+            "pueblo"
+          ],
+          "answer": 2
+        },
+        {
+          "question": "What is ‘turista’?",
+          "options": [
+            "guide",
+            "tourist",
+            "driver",
+            "pilot"
+          ],
+          "answer": 1
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,190 @@
+{
+  "id": "days-months",
+  "words": [
+    {
+      "word": "lunes",
+      "reading": "LOO-nehs",
+      "meaning": "Monday",
+      "example": "El lunes empiezo el trabajo.",
+      "exampleMeaning": "Monday I start the job."
+    },
+    {
+      "word": "martes",
+      "reading": "MAR-tehs",
+      "meaning": "Tuesday",
+      "example": "Los martes tengo clase de yoga.",
+      "exampleMeaning": "On Tuesdays I have yoga class."
+    },
+    {
+      "word": "miércoles",
+      "reading": "MYEHR-koh-lehs",
+      "meaning": "Wednesday",
+      "example": "Nos vemos el miércoles.",
+      "exampleMeaning": "See you on Wednesday."
+    },
+    {
+      "word": "jueves",
+      "reading": "HWEH-behs",
+      "meaning": "Thursday",
+      "example": "El jueves es mi cumpleaños.",
+      "exampleMeaning": "Thursday is my birthday."
+    },
+    {
+      "word": "viernes",
+      "reading": "BYEHR-nehs",
+      "meaning": "Friday",
+      "example": "Los viernes salgo con amigos.",
+      "exampleMeaning": "On Fridays I go out with friends."
+    },
+    {
+      "word": "sábado",
+      "reading": "SAH-bah-doh",
+      "meaning": "Saturday",
+      "example": "El sábado vamos a la playa.",
+      "exampleMeaning": "Saturday we’re going to the beach."
+    },
+    {
+      "word": "domingo",
+      "reading": "doh-MEEN-goh",
+      "meaning": "Sunday",
+      "example": "El domingo descanso en casa.",
+      "exampleMeaning": "On Sunday I rest at home."
+    },
+    {
+      "word": "enero",
+      "reading": "eh-NEH-roh",
+      "meaning": "January",
+      "example": "En enero hace mucho frío.",
+      "exampleMeaning": "In January it’s very cold."
+    },
+    {
+      "word": "febrero",
+      "reading": "feh-BREH-roh",
+      "meaning": "February",
+      "example": "Mi cumpleaños es en febrero.",
+      "exampleMeaning": "My birthday is in February."
+    },
+    {
+      "word": "marzo",
+      "reading": "MAR-soh",
+      "meaning": "March",
+      "example": "En marzo empieza la primavera.",
+      "exampleMeaning": "Spring begins in March."
+    },
+    {
+      "word": "mayo",
+      "reading": "MAH-yoh",
+      "meaning": "May",
+      "example": "Las flores florecen en mayo.",
+      "exampleMeaning": "Flowers bloom in May."
+    },
+    {
+      "word": "julio",
+      "reading": "HOO-lyoh",
+      "meaning": "July",
+      "example": "En julio viajo a México.",
+      "exampleMeaning": "In July I travel to Mexico."
+    },
+    {
+      "word": "septiembre",
+      "reading": "sehp-TYEHM-breh",
+      "meaning": "September",
+      "example": "Las clases empiezan en septiembre.",
+      "exampleMeaning": "Classes start in September."
+    },
+    {
+      "word": "octubre",
+      "reading": "ohk-TOO-breh",
+      "meaning": "October",
+      "example": "En octubre celebramos Halloween.",
+      "exampleMeaning": "In October we celebrate Halloween."
+    },
+    {
+      "word": "diciembre",
+      "reading": "dee-SYEHM-breh",
+      "meaning": "December",
+      "example": "Diciembre es mi mes favorito.",
+      "exampleMeaning": "December is my favorite month."
+    },
+    {
+      "word": "hoy",
+      "reading": "oy",
+      "meaning": "today",
+      "example": "Hoy es un buen día.",
+      "exampleMeaning": "Today is a good day."
+    },
+    {
+      "word": "mañana",
+      "reading": "mah-NYAH-nah",
+      "meaning": "tomorrow",
+      "example": "Mañana tengo un examen.",
+      "exampleMeaning": "Tomorrow I have a test."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "El ___ vamos a la playa.",
+          "answer": "sábado",
+          "hint": "weekend day"
+        },
+        {
+          "sentence": "Mi cumpleaños es en ___.",
+          "answer": "febrero",
+          "hint": "second month"
+        },
+        {
+          "sentence": "___ tengo un examen.",
+          "answer": "Mañana",
+          "hint": "the day after today"
+        },
+        {
+          "sentence": "Los ___ salgo con amigos.",
+          "answer": "viernes",
+          "hint": "end of work week"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "items": [
+        {
+          "question": "Which day comes after ‘martes’?",
+          "options": [
+            "lunes",
+            "miércoles",
+            "jueves",
+            "viernes"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What month is ‘julio’?",
+          "options": [
+            "June",
+            "July",
+            "August",
+            "September"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What does ‘hoy’ mean?",
+          "options": [
+            "yesterday",
+            "today",
+            "tomorrow",
+            "tonight"
+          ],
+          "answer": 1
+        }
+      ]
+    }
+  ]
+}

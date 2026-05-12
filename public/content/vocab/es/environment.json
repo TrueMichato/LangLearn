@@ -1,0 +1,183 @@
+{
+  "id": "environment",
+  "words": [
+    {
+      "word": "medio ambiente",
+      "reading": "MEH-dyoh ahm-BYEHN-teh",
+      "meaning": "environment",
+      "example": "Cuidemos el medio ambiente.",
+      "exampleMeaning": "Let’s take care of the environment."
+    },
+    {
+      "word": "contaminación",
+      "reading": "kohn-tah-mee-nah-SYOHN",
+      "meaning": "pollution",
+      "example": "La contaminación del aire es grave.",
+      "exampleMeaning": "Air pollution is serious."
+    },
+    {
+      "word": "basura",
+      "reading": "bah-SOO-rah",
+      "meaning": "garbage",
+      "example": "Saca la basura, por favor.",
+      "exampleMeaning": "Take out the trash, please."
+    },
+    {
+      "word": "reciclaje",
+      "reading": "rreh-see-KLAH-heh",
+      "meaning": "recycling",
+      "example": "El reciclaje ayuda al planeta.",
+      "exampleMeaning": "Recycling helps the planet."
+    },
+    {
+      "word": "reciclar",
+      "reading": "rreh-see-KLAR",
+      "meaning": "to recycle",
+      "example": "Hay que reciclar el plástico.",
+      "exampleMeaning": "We have to recycle plastic."
+    },
+    {
+      "word": "planeta",
+      "reading": "plah-NEH-tah",
+      "meaning": "planet",
+      "example": "El planeta se está calentando.",
+      "exampleMeaning": "The planet is warming."
+    },
+    {
+      "word": "cambio climático",
+      "reading": "KAHM-byoh klee-MAH-tee-koh",
+      "meaning": "climate change",
+      "example": "El cambio climático es real.",
+      "exampleMeaning": "Climate change is real."
+    },
+    {
+      "word": "calentamiento global",
+      "reading": "kah-lehn-tah-MYEHN-toh gloh-BAHL",
+      "meaning": "global warming",
+      "example": "El calentamiento global preocupa.",
+      "exampleMeaning": "Global warming is worrying."
+    },
+    {
+      "word": "energía",
+      "reading": "eh-nehr-HEE-ah",
+      "meaning": "energy",
+      "example": "La energía solar es limpia.",
+      "exampleMeaning": "Solar energy is clean."
+    },
+    {
+      "word": "renovable",
+      "reading": "rreh-noh-BAH-bleh",
+      "meaning": "renewable",
+      "example": "Apoyo la energía renovable.",
+      "exampleMeaning": "I support renewable energy."
+    },
+    {
+      "word": "especie",
+      "reading": "ehs-PEH-syeh",
+      "meaning": "species",
+      "example": "La especie está en peligro.",
+      "exampleMeaning": "The species is endangered."
+    },
+    {
+      "word": "extinción",
+      "reading": "ehks-teen-SYOHN",
+      "meaning": "extinction",
+      "example": "Hay animales en extinción.",
+      "exampleMeaning": "There are animals facing extinction."
+    },
+    {
+      "word": "deforestación",
+      "reading": "deh-foh-rehs-tah-SYOHN",
+      "meaning": "deforestation",
+      "example": "La deforestación destruye bosques.",
+      "exampleMeaning": "Deforestation destroys forests."
+    },
+    {
+      "word": "ecológico",
+      "reading": "eh-koh-LOH-hee-koh",
+      "meaning": "eco-friendly",
+      "example": "Compro productos ecológicos.",
+      "exampleMeaning": "I buy eco-friendly products."
+    },
+    {
+      "word": "sostenible",
+      "reading": "sohs-teh-NEE-bleh",
+      "meaning": "sustainable",
+      "example": "Queremos un futuro sostenible.",
+      "exampleMeaning": "We want a sustainable future."
+    },
+    {
+      "word": "huella",
+      "reading": "WEH-yah",
+      "meaning": "footprint",
+      "example": "Mi huella de carbono es baja.",
+      "exampleMeaning": "My carbon footprint is low."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "Cuidemos el ___ ambiente.",
+          "answer": "medio",
+          "hint": "environment"
+        },
+        {
+          "sentence": "Hay que ___ el plástico.",
+          "answer": "reciclar",
+          "hint": "to recycle"
+        },
+        {
+          "sentence": "La ___ del aire es grave.",
+          "answer": "contaminación",
+          "hint": "pollution"
+        },
+        {
+          "sentence": "El ___ climático es real.",
+          "answer": "cambio",
+          "hint": "change"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "items": [
+        {
+          "question": "What does ‘basura’ mean?",
+          "options": [
+            "plant",
+            "garbage",
+            "planet",
+            "energy"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "Which means ‘renewable’?",
+          "options": [
+            "ecológico",
+            "sostenible",
+            "renovable",
+            "limpio"
+          ],
+          "answer": 2
+        },
+        {
+          "question": "What is ‘extinción’?",
+          "options": [
+            "recycling",
+            "extinction",
+            "pollution",
+            "warming"
+          ],
+          "answer": 1
+        }
+      ]
+    }
+  ]
+}

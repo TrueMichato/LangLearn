@@ -1,0 +1,183 @@
+{
+  "id": "media",
+  "words": [
+    {
+      "word": "noticia",
+      "reading": "noh-TEE-syah",
+      "meaning": "news item",
+      "example": "Vi una noticia importante.",
+      "exampleMeaning": "I saw an important news story."
+    },
+    {
+      "word": "noticias",
+      "reading": "noh-TEE-syahs",
+      "meaning": "news",
+      "example": "Veo las noticias por la noche.",
+      "exampleMeaning": "I watch the news at night."
+    },
+    {
+      "word": "periódico",
+      "reading": "peh-RYOH-dee-koh",
+      "meaning": "newspaper",
+      "example": "Compro el periódico todos los días.",
+      "exampleMeaning": "I buy the newspaper every day."
+    },
+    {
+      "word": "revista",
+      "reading": "rreh-BEES-tah",
+      "meaning": "magazine",
+      "example": "Esta revista trae buenos reportajes.",
+      "exampleMeaning": "This magazine has good features."
+    },
+    {
+      "word": "reportero",
+      "reading": "rreh-por-TEH-roh",
+      "meaning": "reporter",
+      "example": "El reportero entrevistó al alcalde.",
+      "exampleMeaning": "The reporter interviewed the mayor."
+    },
+    {
+      "word": "canal",
+      "reading": "kah-NAHL",
+      "meaning": "channel",
+      "example": "Cambia al canal cinco.",
+      "exampleMeaning": "Switch to channel five."
+    },
+    {
+      "word": "programa",
+      "reading": "proh-GRAH-mah",
+      "meaning": "program",
+      "example": "Mi programa favorito empieza pronto.",
+      "exampleMeaning": "My favorite program starts soon."
+    },
+    {
+      "word": "entrevista",
+      "reading": "ehn-treh-BEES-tah",
+      "meaning": "interview",
+      "example": "La entrevista fue corta.",
+      "exampleMeaning": "The interview was short."
+    },
+    {
+      "word": "reportaje",
+      "reading": "rreh-por-TAH-heh",
+      "meaning": "report",
+      "example": "El reportaje fue muy completo.",
+      "exampleMeaning": "The report was thorough."
+    },
+    {
+      "word": "publicidad",
+      "reading": "poo-blee-see-DAHD",
+      "meaning": "advertising",
+      "example": "La publicidad está por todos lados.",
+      "exampleMeaning": "Advertising is everywhere."
+    },
+    {
+      "word": "anuncio",
+      "reading": "ah-NOON-syoh",
+      "meaning": "ad / announcement",
+      "example": "Vi un anuncio raro.",
+      "exampleMeaning": "I saw a strange ad."
+    },
+    {
+      "word": "redes sociales",
+      "reading": "RREH-dehs soh-SYAH-lehs",
+      "meaning": "social media",
+      "example": "Las redes sociales influyen mucho.",
+      "exampleMeaning": "Social media has a lot of influence."
+    },
+    {
+      "word": "influencer",
+      "reading": "een-FLOO-ehn-sehr",
+      "meaning": "influencer",
+      "example": "Esa influencer es de Colombia.",
+      "exampleMeaning": "That influencer is from Colombia."
+    },
+    {
+      "word": "podcast",
+      "reading": "POHD-kahst",
+      "meaning": "podcast",
+      "example": "Escucho un podcast cada mañana.",
+      "exampleMeaning": "I listen to a podcast every morning."
+    },
+    {
+      "word": "censura",
+      "reading": "sehn-SOO-rah",
+      "meaning": "censorship",
+      "example": "La censura limita la prensa.",
+      "exampleMeaning": "Censorship limits the press."
+    },
+    {
+      "word": "prensa",
+      "reading": "PREHN-sah",
+      "meaning": "the press",
+      "example": "La prensa cubrió el evento.",
+      "exampleMeaning": "The press covered the event."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "Veo las ___ por la noche.",
+          "answer": "noticias",
+          "hint": "TV news"
+        },
+        {
+          "sentence": "Cambia al ___ cinco.",
+          "answer": "canal",
+          "hint": "TV station number"
+        },
+        {
+          "sentence": "Escucho un ___ cada mañana.",
+          "answer": "podcast",
+          "hint": "audio program"
+        },
+        {
+          "sentence": "Compro el ___ todos los días.",
+          "answer": "periódico",
+          "hint": "daily print news"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "items": [
+        {
+          "question": "What does ‘reportero’ mean?",
+          "options": [
+            "actor",
+            "reporter",
+            "editor",
+            "reader"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "Which is print media?",
+          "options": [
+            "canal",
+            "revista",
+            "podcast",
+            "redes"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What is ‘entrevista’?",
+          "options": [
+            "ad",
+            "interview",
+            "report",
+            "channel"
+          ],
+          "answer": 1
+        }
+      ]
+    }
+  ]
+}

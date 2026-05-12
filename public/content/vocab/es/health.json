@@ -1,0 +1,183 @@
+{
+  "id": "health",
+  "words": [
+    {
+      "word": "salud",
+      "reading": "sah-LOOD",
+      "meaning": "health",
+      "example": "La salud es lo primero.",
+      "exampleMeaning": "Health comes first."
+    },
+    {
+      "word": "doctor",
+      "reading": "dohk-TOR",
+      "meaning": "doctor",
+      "example": "El doctor llegó tarde.",
+      "exampleMeaning": "The doctor arrived late."
+    },
+    {
+      "word": "enfermera",
+      "reading": "ehn-fehr-MEH-rah",
+      "meaning": "nurse",
+      "example": "La enfermera me tomó la presión.",
+      "exampleMeaning": "The nurse took my blood pressure."
+    },
+    {
+      "word": "hospital",
+      "reading": "ohs-pee-TAHL",
+      "meaning": "hospital",
+      "example": "Mi hermano trabaja en el hospital.",
+      "exampleMeaning": "My brother works at the hospital."
+    },
+    {
+      "word": "farmacia",
+      "reading": "far-MAH-syah",
+      "meaning": "pharmacy",
+      "example": "La farmacia abre las 24 horas.",
+      "exampleMeaning": "The pharmacy is open 24 hours."
+    },
+    {
+      "word": "medicina",
+      "reading": "meh-dee-SEE-nah",
+      "meaning": "medicine",
+      "example": "Tomo esta medicina por la noche.",
+      "exampleMeaning": "I take this medicine at night."
+    },
+    {
+      "word": "receta",
+      "reading": "rreh-SEH-tah",
+      "meaning": "prescription",
+      "example": "Necesito una receta médica.",
+      "exampleMeaning": "I need a prescription."
+    },
+    {
+      "word": "enfermo",
+      "reading": "ehn-FEHR-moh",
+      "meaning": "sick",
+      "example": "Me siento enfermo.",
+      "exampleMeaning": "I feel sick."
+    },
+    {
+      "word": "dolor",
+      "reading": "doh-LOR",
+      "meaning": "pain",
+      "example": "Tengo dolor de cabeza.",
+      "exampleMeaning": "I have a headache."
+    },
+    {
+      "word": "fiebre",
+      "reading": "FYEH-breh",
+      "meaning": "fever",
+      "example": "Mi hija tiene fiebre.",
+      "exampleMeaning": "My daughter has a fever."
+    },
+    {
+      "word": "tos",
+      "reading": "tohs",
+      "meaning": "cough",
+      "example": "La tos no me deja dormir.",
+      "exampleMeaning": "The cough won’t let me sleep."
+    },
+    {
+      "word": "gripe",
+      "reading": "GREE-peh",
+      "meaning": "flu",
+      "example": "Tengo gripe desde el lunes.",
+      "exampleMeaning": "I’ve had the flu since Monday."
+    },
+    {
+      "word": "cita",
+      "reading": "SEE-tah",
+      "meaning": "appointment",
+      "example": "Tengo cita con el dentista.",
+      "exampleMeaning": "I have a dental appointment."
+    },
+    {
+      "word": "cirugía",
+      "reading": "see-roo-HEE-ah",
+      "meaning": "surgery",
+      "example": "La cirugía duró tres horas.",
+      "exampleMeaning": "The surgery lasted three hours."
+    },
+    {
+      "word": "herida",
+      "reading": "eh-REE-dah",
+      "meaning": "wound / injury",
+      "example": "Se hizo una herida pequeña.",
+      "exampleMeaning": "He got a small wound."
+    },
+    {
+      "word": "vacuna",
+      "reading": "bah-KOO-nah",
+      "meaning": "vaccine",
+      "example": "Ya me puse la vacuna.",
+      "exampleMeaning": "I already got the vaccine."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "Tengo ___ de cabeza.",
+          "answer": "dolor",
+          "hint": "aching feeling"
+        },
+        {
+          "sentence": "Mi hija tiene ___.",
+          "answer": "fiebre",
+          "hint": "high body temperature"
+        },
+        {
+          "sentence": "Necesito una ___ médica.",
+          "answer": "receta",
+          "hint": "doctor’s order for medicine"
+        },
+        {
+          "sentence": "Tengo ___ con el dentista.",
+          "answer": "cita",
+          "hint": "appointment"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "items": [
+        {
+          "question": "Where do you buy medicine?",
+          "options": [
+            "hospital",
+            "farmacia",
+            "cita",
+            "salud"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What does ‘enfermo’ mean?",
+          "options": [
+            "well",
+            "sick",
+            "strong",
+            "tired"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "Which is ‘cough’?",
+          "options": [
+            "dolor",
+            "tos",
+            "herida",
+            "fiebre"
+          ],
+          "answer": 1
+        }
+      ]
+    }
+  ]
+}

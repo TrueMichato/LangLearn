@@ -1,0 +1,183 @@
+{
+  "id": "nature-seasons",
+  "words": [
+    {
+      "word": "naturaleza",
+      "reading": "nah-too-rah-LEH-sah",
+      "meaning": "nature",
+      "example": "Me encanta la naturaleza.",
+      "exampleMeaning": "I love nature."
+    },
+    {
+      "word": "árbol",
+      "reading": "AR-bohl",
+      "meaning": "tree",
+      "example": "El árbol da sombra.",
+      "exampleMeaning": "The tree gives shade."
+    },
+    {
+      "word": "flor",
+      "reading": "flor",
+      "meaning": "flower",
+      "example": "Las flores huelen rico.",
+      "exampleMeaning": "The flowers smell nice."
+    },
+    {
+      "word": "hoja",
+      "reading": "OH-hah",
+      "meaning": "leaf",
+      "example": "La hoja cayó del árbol.",
+      "exampleMeaning": "The leaf fell from the tree."
+    },
+    {
+      "word": "río",
+      "reading": "RREE-oh",
+      "meaning": "river",
+      "example": "El río pasa por el pueblo.",
+      "exampleMeaning": "The river runs through the town."
+    },
+    {
+      "word": "lago",
+      "reading": "LAH-goh",
+      "meaning": "lake",
+      "example": "El lago está congelado.",
+      "exampleMeaning": "The lake is frozen."
+    },
+    {
+      "word": "mar",
+      "reading": "mar",
+      "meaning": "sea",
+      "example": "El mar está tranquilo hoy.",
+      "exampleMeaning": "The sea is calm today."
+    },
+    {
+      "word": "bosque",
+      "reading": "BOHS-keh",
+      "meaning": "forest",
+      "example": "El bosque tiene muchos pinos.",
+      "exampleMeaning": "The forest has many pines."
+    },
+    {
+      "word": "selva",
+      "reading": "SEHL-bah",
+      "meaning": "jungle",
+      "example": "La selva amazónica es enorme.",
+      "exampleMeaning": "The Amazon jungle is huge."
+    },
+    {
+      "word": "desierto",
+      "reading": "deh-SYEHR-toh",
+      "meaning": "desert",
+      "example": "El desierto es muy seco.",
+      "exampleMeaning": "The desert is very dry."
+    },
+    {
+      "word": "roca",
+      "reading": "RROH-kah",
+      "meaning": "rock",
+      "example": "Me senté en una roca grande.",
+      "exampleMeaning": "I sat on a big rock."
+    },
+    {
+      "word": "arena",
+      "reading": "ah-REH-nah",
+      "meaning": "sand",
+      "example": "Los niños juegan en la arena.",
+      "exampleMeaning": "The kids play in the sand."
+    },
+    {
+      "word": "cielo",
+      "reading": "SYEH-loh",
+      "meaning": "sky",
+      "example": "El cielo está despejado.",
+      "exampleMeaning": "The sky is clear."
+    },
+    {
+      "word": "estrella",
+      "reading": "ehs-TREH-yah",
+      "meaning": "star",
+      "example": "Veo una estrella fugaz.",
+      "exampleMeaning": "I see a shooting star."
+    },
+    {
+      "word": "luna",
+      "reading": "LOO-nah",
+      "meaning": "moon",
+      "example": "La luna llena es hermosa.",
+      "exampleMeaning": "The full moon is beautiful."
+    },
+    {
+      "word": "paisaje",
+      "reading": "pahy-SAH-heh",
+      "meaning": "landscape",
+      "example": "El paisaje es increíble.",
+      "exampleMeaning": "The landscape is incredible."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "El ___ pasa por el pueblo.",
+          "answer": "río",
+          "hint": "flowing water"
+        },
+        {
+          "sentence": "La ___ llena es hermosa.",
+          "answer": "luna",
+          "hint": "satellite in the sky"
+        },
+        {
+          "sentence": "Los niños juegan en la ___.",
+          "answer": "arena",
+          "hint": "beach material"
+        },
+        {
+          "sentence": "Me encanta la ___.",
+          "answer": "naturaleza",
+          "hint": "outdoors"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "items": [
+        {
+          "question": "What does ‘bosque’ mean?",
+          "options": [
+            "desert",
+            "sea",
+            "forest",
+            "sky"
+          ],
+          "answer": 2
+        },
+        {
+          "question": "Which is ‘sky’?",
+          "options": [
+            "lago",
+            "cielo",
+            "arena",
+            "flor"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What is ‘árbol’?",
+          "options": [
+            "leaf",
+            "flower",
+            "tree",
+            "rock"
+          ],
+          "answer": 2
+        }
+      ]
+    }
+  ]
+}

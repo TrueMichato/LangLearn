@@ -1,0 +1,183 @@
+{
+  "id": "workplace",
+  "words": [
+    {
+      "word": "empresa",
+      "reading": "ehm-PREH-sah",
+      "meaning": "company",
+      "example": "Mi empresa tiene cien empleados.",
+      "exampleMeaning": "My company has 100 employees."
+    },
+    {
+      "word": "empleado",
+      "reading": "ehm-pleh-AH-doh",
+      "meaning": "employee",
+      "example": "Soy empleado del gobierno.",
+      "exampleMeaning": "I’m a government employee."
+    },
+    {
+      "word": "jefe",
+      "reading": "HEH-feh",
+      "meaning": "boss",
+      "example": "Mi jefe está de vacaciones.",
+      "exampleMeaning": "My boss is on vacation."
+    },
+    {
+      "word": "gerente",
+      "reading": "heh-REHN-teh",
+      "meaning": "manager",
+      "example": "Hablé con el gerente.",
+      "exampleMeaning": "I spoke with the manager."
+    },
+    {
+      "word": "colega",
+      "reading": "koh-LEH-gah",
+      "meaning": "colleague",
+      "example": "Mis colegas son agradables.",
+      "exampleMeaning": "My colleagues are nice."
+    },
+    {
+      "word": "puesto",
+      "reading": "PWEHS-toh",
+      "meaning": "position / job",
+      "example": "Me ofrecieron un puesto nuevo.",
+      "exampleMeaning": "They offered me a new position."
+    },
+    {
+      "word": "contrato",
+      "reading": "kohn-TRAH-toh",
+      "meaning": "contract",
+      "example": "Firmé el contrato ayer.",
+      "exampleMeaning": "I signed the contract yesterday."
+    },
+    {
+      "word": "sueldo",
+      "reading": "SWEHL-doh",
+      "meaning": "salary",
+      "example": "El sueldo está bien.",
+      "exampleMeaning": "The salary is good."
+    },
+    {
+      "word": "horario",
+      "reading": "oh-RAH-ryoh",
+      "meaning": "schedule",
+      "example": "Mi horario cambia cada semana.",
+      "exampleMeaning": "My schedule changes every week."
+    },
+    {
+      "word": "hora extra",
+      "reading": "OH-rah EHKS-trah",
+      "meaning": "overtime",
+      "example": "Hice horas extras anoche.",
+      "exampleMeaning": "I worked overtime last night."
+    },
+    {
+      "word": "vacaciones",
+      "reading": "bah-kah-SYOH-nehs",
+      "meaning": "vacation",
+      "example": "Tomo vacaciones en julio.",
+      "exampleMeaning": "I take vacation in July."
+    },
+    {
+      "word": "renunciar",
+      "reading": "rreh-noon-SYAR",
+      "meaning": "to resign",
+      "example": "Pienso renunciar el viernes.",
+      "exampleMeaning": "I plan to resign Friday."
+    },
+    {
+      "word": "contratar",
+      "reading": "kohn-trah-TAR",
+      "meaning": "to hire",
+      "example": "Van a contratar a tres personas.",
+      "exampleMeaning": "They’re going to hire three people."
+    },
+    {
+      "word": "despedir",
+      "reading": "dehs-peh-DEER",
+      "meaning": "to fire",
+      "example": "No quiero despedir a nadie.",
+      "exampleMeaning": "I don’t want to fire anyone."
+    },
+    {
+      "word": "proyecto",
+      "reading": "proh-YEHK-toh",
+      "meaning": "project",
+      "example": "El proyecto está atrasado.",
+      "exampleMeaning": "The project is behind."
+    },
+    {
+      "word": "cliente",
+      "reading": "KLYEHN-teh",
+      "meaning": "client",
+      "example": "El cliente está enojado.",
+      "exampleMeaning": "The client is upset."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "Firmé el ___ ayer.",
+          "answer": "contrato",
+          "hint": "employment agreement"
+        },
+        {
+          "sentence": "El ___ está bien.",
+          "answer": "sueldo",
+          "hint": "monthly pay"
+        },
+        {
+          "sentence": "Tomo ___ en julio.",
+          "answer": "vacaciones",
+          "hint": "time off"
+        },
+        {
+          "sentence": "Hablé con el ___.",
+          "answer": "gerente",
+          "hint": "department head"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "items": [
+        {
+          "question": "What does ‘empleado’ mean?",
+          "options": [
+            "boss",
+            "employee",
+            "client",
+            "owner"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "Which means ‘to hire’?",
+          "options": [
+            "despedir",
+            "renunciar",
+            "contratar",
+            "pagar"
+          ],
+          "answer": 2
+        },
+        {
+          "question": "What is ‘sueldo’?",
+          "options": [
+            "hour",
+            "salary",
+            "project",
+            "position"
+          ],
+          "answer": 1
+        }
+      ]
+    }
+  ]
+}

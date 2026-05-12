@@ -1,0 +1,183 @@
+{
+  "id": "colors",
+  "words": [
+    {
+      "word": "rojo",
+      "reading": "ROH-hoh",
+      "meaning": "red",
+      "example": "El carro es rojo.",
+      "exampleMeaning": "The car is red."
+    },
+    {
+      "word": "azul",
+      "reading": "ah-SOOL",
+      "meaning": "blue",
+      "example": "El cielo está azul hoy.",
+      "exampleMeaning": "The sky is blue today."
+    },
+    {
+      "word": "verde",
+      "reading": "BEHR-deh",
+      "meaning": "green",
+      "example": "Me gusta el té verde.",
+      "exampleMeaning": "I like green tea."
+    },
+    {
+      "word": "amarillo",
+      "reading": "ah-mah-REE-yoh",
+      "meaning": "yellow",
+      "example": "El sol es amarillo.",
+      "exampleMeaning": "The sun is yellow."
+    },
+    {
+      "word": "negro",
+      "reading": "NEH-groh",
+      "meaning": "black",
+      "example": "Tengo un gato negro.",
+      "exampleMeaning": "I have a black cat."
+    },
+    {
+      "word": "blanco",
+      "reading": "BLAHN-koh",
+      "meaning": "white",
+      "example": "La nieve es blanca.",
+      "exampleMeaning": "Snow is white."
+    },
+    {
+      "word": "rosa",
+      "reading": "ROH-sah",
+      "meaning": "pink",
+      "example": "Me regaló una rosa rosa.",
+      "exampleMeaning": "He gave me a pink rose."
+    },
+    {
+      "word": "morado",
+      "reading": "moh-RAH-doh",
+      "meaning": "purple",
+      "example": "Mi vestido es morado.",
+      "exampleMeaning": "My dress is purple."
+    },
+    {
+      "word": "naranja",
+      "reading": "nah-RAHN-hah",
+      "meaning": "orange",
+      "example": "La naranja es naranja.",
+      "exampleMeaning": "The orange is orange."
+    },
+    {
+      "word": "gris",
+      "reading": "grees",
+      "meaning": "gray",
+      "example": "El día está gris.",
+      "exampleMeaning": "It’s a gray day."
+    },
+    {
+      "word": "café",
+      "reading": "kah-FEH",
+      "meaning": "brown",
+      "example": "Sus ojos son color café.",
+      "exampleMeaning": "Her eyes are brown."
+    },
+    {
+      "word": "círculo",
+      "reading": "SEER-koo-loh",
+      "meaning": "circle",
+      "example": "Dibujé un círculo.",
+      "exampleMeaning": "I drew a circle."
+    },
+    {
+      "word": "cuadrado",
+      "reading": "kwah-DRAH-doh",
+      "meaning": "square",
+      "example": "La caja es un cuadrado.",
+      "exampleMeaning": "The box is a square."
+    },
+    {
+      "word": "triángulo",
+      "reading": "tree-AHN-goo-loh",
+      "meaning": "triangle",
+      "example": "El triángulo tiene tres lados.",
+      "exampleMeaning": "The triangle has three sides."
+    },
+    {
+      "word": "estrella",
+      "reading": "ehs-TREH-yah",
+      "meaning": "star",
+      "example": "La estrella brilla en el cielo.",
+      "exampleMeaning": "The star shines in the sky."
+    },
+    {
+      "word": "corazón",
+      "reading": "koh-rah-SOHN",
+      "meaning": "heart",
+      "example": "Le dibujé un corazón.",
+      "exampleMeaning": "I drew her a heart."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "El cielo está ___.",
+          "answer": "azul",
+          "hint": "color of the sky"
+        },
+        {
+          "sentence": "La nieve es ___.",
+          "answer": "blanca",
+          "hint": "color of snow"
+        },
+        {
+          "sentence": "El triángulo tiene tres ___.",
+          "answer": "lados",
+          "hint": "sides"
+        },
+        {
+          "sentence": "Tengo un gato ___.",
+          "answer": "negro",
+          "hint": "dark color"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "items": [
+        {
+          "question": "What color is ‘verde’?",
+          "options": [
+            "blue",
+            "green",
+            "red",
+            "yellow"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What shape is ‘cuadrado’?",
+          "options": [
+            "circle",
+            "triangle",
+            "square",
+            "star"
+          ],
+          "answer": 2
+        },
+        {
+          "question": "What does ‘corazón’ mean?",
+          "options": [
+            "star",
+            "heart",
+            "square",
+            "circle"
+          ],
+          "answer": 1
+        }
+      ]
+    }
+  ]
+}

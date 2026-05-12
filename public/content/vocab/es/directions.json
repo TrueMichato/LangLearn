@@ -1,0 +1,183 @@
+{
+  "id": "directions",
+  "words": [
+    {
+      "word": "derecha",
+      "reading": "deh-REH-chah",
+      "meaning": "right",
+      "example": "Gira a la derecha en la esquina.",
+      "exampleMeaning": "Turn right at the corner."
+    },
+    {
+      "word": "izquierda",
+      "reading": "ees-KYEHR-dah",
+      "meaning": "left",
+      "example": "La farmacia está a la izquierda.",
+      "exampleMeaning": "The pharmacy is on the left."
+    },
+    {
+      "word": "recto",
+      "reading": "RREHK-toh",
+      "meaning": "straight",
+      "example": "Sigue recto dos cuadras.",
+      "exampleMeaning": "Go straight for two blocks."
+    },
+    {
+      "word": "cerca",
+      "reading": "SEHR-kah",
+      "meaning": "near",
+      "example": "El parque está cerca.",
+      "exampleMeaning": "The park is nearby."
+    },
+    {
+      "word": "lejos",
+      "reading": "LEH-hohs",
+      "meaning": "far",
+      "example": "La playa está lejos de aquí.",
+      "exampleMeaning": "The beach is far from here."
+    },
+    {
+      "word": "arriba",
+      "reading": "ah-RREE-bah",
+      "meaning": "up / above",
+      "example": "El baño está arriba.",
+      "exampleMeaning": "The bathroom is upstairs."
+    },
+    {
+      "word": "abajo",
+      "reading": "ah-BAH-hoh",
+      "meaning": "down / below",
+      "example": "La cocina está abajo.",
+      "exampleMeaning": "The kitchen is downstairs."
+    },
+    {
+      "word": "aquí",
+      "reading": "ah-KEE",
+      "meaning": "here",
+      "example": "Vivo aquí desde 2020.",
+      "exampleMeaning": "I’ve lived here since 2020."
+    },
+    {
+      "word": "allá",
+      "reading": "ah-YAH",
+      "meaning": "over there",
+      "example": "Allá está mi casa.",
+      "exampleMeaning": "My house is over there."
+    },
+    {
+      "word": "esquina",
+      "reading": "ehs-KEE-nah",
+      "meaning": "corner",
+      "example": "Te espero en la esquina.",
+      "exampleMeaning": "I’ll wait for you on the corner."
+    },
+    {
+      "word": "cuadra",
+      "reading": "KWAH-drah",
+      "meaning": "block",
+      "example": "Vive a tres cuadras de aquí.",
+      "exampleMeaning": "He lives three blocks from here."
+    },
+    {
+      "word": "calle",
+      "reading": "KAH-yeh",
+      "meaning": "street",
+      "example": "La calle es muy estrecha.",
+      "exampleMeaning": "The street is very narrow."
+    },
+    {
+      "word": "avenida",
+      "reading": "ah-beh-NEE-dah",
+      "meaning": "avenue",
+      "example": "La avenida principal está cerrada.",
+      "exampleMeaning": "The main avenue is closed."
+    },
+    {
+      "word": "cruzar",
+      "reading": "kroo-SAR",
+      "meaning": "to cross",
+      "example": "Cruza el puente con cuidado.",
+      "exampleMeaning": "Cross the bridge carefully."
+    },
+    {
+      "word": "seguir",
+      "reading": "seh-GEER",
+      "meaning": "to follow / continue",
+      "example": "Sigue las indicaciones.",
+      "exampleMeaning": "Follow the directions."
+    },
+    {
+      "word": "llegar",
+      "reading": "yeh-GAR",
+      "meaning": "to arrive",
+      "example": "Llegamos en cinco minutos.",
+      "exampleMeaning": "We’ll arrive in five minutes."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "Gira a la ___ en la esquina.",
+          "answer": "derecha",
+          "hint": "opposite of left"
+        },
+        {
+          "sentence": "Sigue ___ dos cuadras.",
+          "answer": "recto",
+          "hint": "straight ahead"
+        },
+        {
+          "sentence": "Vive a tres ___ de aquí.",
+          "answer": "cuadras",
+          "hint": "street segments"
+        },
+        {
+          "sentence": "La playa está ___ de aquí.",
+          "answer": "lejos",
+          "hint": "opposite of near"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "items": [
+        {
+          "question": "What does ‘izquierda’ mean?",
+          "options": [
+            "right",
+            "left",
+            "up",
+            "down"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "Which means ‘near’?",
+          "options": [
+            "lejos",
+            "cerca",
+            "arriba",
+            "abajo"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What is ‘cruzar’?",
+          "options": [
+            "to follow",
+            "to arrive",
+            "to cross",
+            "to turn"
+          ],
+          "answer": 2
+        }
+      ]
+    }
+  ]
+}

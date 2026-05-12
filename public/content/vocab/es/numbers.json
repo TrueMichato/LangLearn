@@ -1,0 +1,197 @@
+{
+  "id": "numbers",
+  "words": [
+    {
+      "word": "cero",
+      "reading": "SEH-roh",
+      "meaning": "zero",
+      "example": "El termómetro marca cero grados.",
+      "exampleMeaning": "The thermometer reads zero degrees."
+    },
+    {
+      "word": "uno",
+      "reading": "OO-noh",
+      "meaning": "one",
+      "example": "Solo me queda uno.",
+      "exampleMeaning": "I only have one left."
+    },
+    {
+      "word": "dos",
+      "reading": "dohs",
+      "meaning": "two",
+      "example": "Tengo dos hermanos.",
+      "exampleMeaning": "I have two brothers."
+    },
+    {
+      "word": "tres",
+      "reading": "trehs",
+      "meaning": "three",
+      "example": "Son las tres de la tarde.",
+      "exampleMeaning": "It’s three in the afternoon."
+    },
+    {
+      "word": "cuatro",
+      "reading": "KWAH-troh",
+      "meaning": "four",
+      "example": "La mesa tiene cuatro patas.",
+      "exampleMeaning": "The table has four legs."
+    },
+    {
+      "word": "cinco",
+      "reading": "SEEN-koh",
+      "meaning": "five",
+      "example": "Llego en cinco minutos.",
+      "exampleMeaning": "I’ll arrive in five minutes."
+    },
+    {
+      "word": "seis",
+      "reading": "sehys",
+      "meaning": "six",
+      "example": "Trabajo seis días a la semana.",
+      "exampleMeaning": "I work six days a week."
+    },
+    {
+      "word": "siete",
+      "reading": "SYEH-teh",
+      "meaning": "seven",
+      "example": "Mi hijo tiene siete años.",
+      "exampleMeaning": "My son is seven years old."
+    },
+    {
+      "word": "ocho",
+      "reading": "OH-choh",
+      "meaning": "eight",
+      "example": "Cenamos a las ocho.",
+      "exampleMeaning": "We have dinner at eight."
+    },
+    {
+      "word": "nueve",
+      "reading": "NWEH-beh",
+      "meaning": "nine",
+      "example": "Faltan nueve días para mi cumpleaños.",
+      "exampleMeaning": "Nine days until my birthday."
+    },
+    {
+      "word": "diez",
+      "reading": "dyehs",
+      "meaning": "ten",
+      "example": "Te doy diez pesos.",
+      "exampleMeaning": "I’ll give you ten pesos."
+    },
+    {
+      "word": "veinte",
+      "reading": "BEYN-teh",
+      "meaning": "twenty",
+      "example": "Tengo veinte dólares.",
+      "exampleMeaning": "I have twenty dollars."
+    },
+    {
+      "word": "treinta",
+      "reading": "TREYN-tah",
+      "meaning": "thirty",
+      "example": "Mi mamá tiene treinta y ocho años.",
+      "exampleMeaning": "My mom is thirty-eight."
+    },
+    {
+      "word": "cuarenta",
+      "reading": "kwah-REHN-tah",
+      "meaning": "forty",
+      "example": "El boleto cuesta cuarenta pesos.",
+      "exampleMeaning": "The ticket costs forty pesos."
+    },
+    {
+      "word": "cincuenta",
+      "reading": "seen-KWEHN-tah",
+      "meaning": "fifty",
+      "example": "Esperé cincuenta minutos.",
+      "exampleMeaning": "I waited fifty minutes."
+    },
+    {
+      "word": "setenta",
+      "reading": "seh-TEHN-tah",
+      "meaning": "seventy",
+      "example": "Mi abuelo tiene setenta años.",
+      "exampleMeaning": "My grandpa is seventy."
+    },
+    {
+      "word": "cien",
+      "reading": "syehn",
+      "meaning": "one hundred",
+      "example": "Necesito cien dólares.",
+      "exampleMeaning": "I need a hundred dollars."
+    },
+    {
+      "word": "mil",
+      "reading": "meel",
+      "meaning": "one thousand",
+      "example": "El carro vale mil dólares.",
+      "exampleMeaning": "The car is worth a thousand dollars."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "Tengo ___ hermanos. (2)",
+          "answer": "dos",
+          "hint": "number 2"
+        },
+        {
+          "sentence": "Son las ___ de la tarde. (3)",
+          "answer": "tres",
+          "hint": "number 3"
+        },
+        {
+          "sentence": "Necesito ___ dólares. (100)",
+          "answer": "cien",
+          "hint": "number 100"
+        },
+        {
+          "sentence": "Mi abuelo tiene ___ años. (70)",
+          "answer": "setenta",
+          "hint": "number 70"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "items": [
+        {
+          "question": "What number is ‘cinco’?",
+          "options": [
+            "3",
+            "4",
+            "5",
+            "6"
+          ],
+          "answer": 2
+        },
+        {
+          "question": "How do you say ’30’ in Spanish?",
+          "options": [
+            "veinte",
+            "treinta",
+            "cuarenta",
+            "cincuenta"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What does ‘mil’ mean?",
+          "options": [
+            "10",
+            "100",
+            "1,000",
+            "10,000"
+          ],
+          "answer": 2
+        }
+      ]
+    }
+  ]
+}

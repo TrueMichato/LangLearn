@@ -1,0 +1,183 @@
+{
+  "id": "hobbies",
+  "words": [
+    {
+      "word": "pasatiempo",
+      "reading": "pah-sah-TYEHM-poh",
+      "meaning": "hobby",
+      "example": "Mi pasatiempo favorito es leer.",
+      "exampleMeaning": "My favorite hobby is reading."
+    },
+    {
+      "word": "música",
+      "reading": "MOO-see-kah",
+      "meaning": "music",
+      "example": "Escucho música todos los días.",
+      "exampleMeaning": "I listen to music every day."
+    },
+    {
+      "word": "película",
+      "reading": "peh-LEE-koo-lah",
+      "meaning": "movie",
+      "example": "Vamos a ver una película.",
+      "exampleMeaning": "Let’s watch a movie."
+    },
+    {
+      "word": "libro",
+      "reading": "LEE-broh",
+      "meaning": "book",
+      "example": "Leo un libro a la semana.",
+      "exampleMeaning": "I read a book a week."
+    },
+    {
+      "word": "videojuego",
+      "reading": "bee-deh-oh-HWEH-goh",
+      "meaning": "video game",
+      "example": "Mi hermano juega videojuegos.",
+      "exampleMeaning": "My brother plays video games."
+    },
+    {
+      "word": "fútbol",
+      "reading": "FOOT-bohl",
+      "meaning": "soccer",
+      "example": "Juego fútbol los domingos.",
+      "exampleMeaning": "I play soccer on Sundays."
+    },
+    {
+      "word": "básquetbol",
+      "reading": "BAHS-keht-bohl",
+      "meaning": "basketball",
+      "example": "El básquetbol es mi deporte.",
+      "exampleMeaning": "Basketball is my sport."
+    },
+    {
+      "word": "natación",
+      "reading": "nah-tah-SYOHN",
+      "meaning": "swimming",
+      "example": "Practico natación los martes.",
+      "exampleMeaning": "I swim on Tuesdays."
+    },
+    {
+      "word": "correr",
+      "reading": "koh-RREHR",
+      "meaning": "to run",
+      "example": "Salgo a correr por la mañana.",
+      "exampleMeaning": "I go running in the morning."
+    },
+    {
+      "word": "bailar",
+      "reading": "bahy-LAR",
+      "meaning": "to dance",
+      "example": "Me encanta bailar salsa.",
+      "exampleMeaning": "I love dancing salsa."
+    },
+    {
+      "word": "cantar",
+      "reading": "kahn-TAR",
+      "meaning": "to sing",
+      "example": "Canto en la ducha.",
+      "exampleMeaning": "I sing in the shower."
+    },
+    {
+      "word": "cocinar",
+      "reading": "koh-see-NAR",
+      "meaning": "to cook",
+      "example": "Me gusta cocinar los fines de semana.",
+      "exampleMeaning": "I like to cook on weekends."
+    },
+    {
+      "word": "pintar",
+      "reading": "peen-TAR",
+      "meaning": "to paint",
+      "example": "Pinta acuarelas como hobby.",
+      "exampleMeaning": "She paints watercolors as a hobby."
+    },
+    {
+      "word": "viajar",
+      "reading": "byah-HAR",
+      "meaning": "to travel",
+      "example": "Viajar es mi pasión.",
+      "exampleMeaning": "Traveling is my passion."
+    },
+    {
+      "word": "fotografía",
+      "reading": "foh-toh-grah-FEE-ah",
+      "meaning": "photography",
+      "example": "Estudio fotografía.",
+      "exampleMeaning": "I study photography."
+    },
+    {
+      "word": "jugar",
+      "reading": "hoo-GAR",
+      "meaning": "to play",
+      "example": "Los niños juegan en el parque.",
+      "exampleMeaning": "The kids play in the park."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "Juego ___ los domingos.",
+          "answer": "fútbol",
+          "hint": "popular sport with a ball"
+        },
+        {
+          "sentence": "Me encanta ___ salsa.",
+          "answer": "bailar",
+          "hint": "dance verb"
+        },
+        {
+          "sentence": "Mi ___ favorito es leer.",
+          "answer": "pasatiempo",
+          "hint": "hobby"
+        },
+        {
+          "sentence": "Salgo a ___ por la mañana.",
+          "answer": "correr",
+          "hint": "run"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "items": [
+        {
+          "question": "What does ‘cantar’ mean?",
+          "options": [
+            "to dance",
+            "to sing",
+            "to play",
+            "to paint"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "Which is a sport?",
+          "options": [
+            "película",
+            "natación",
+            "libro",
+            "música"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What is ‘viajar’?",
+          "options": [
+            "to cook",
+            "to travel",
+            "to read",
+            "to run"
+          ],
+          "answer": 1
+        }
+      ]
+    }
+  ]
+}

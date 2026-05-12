@@ -1,0 +1,183 @@
+{
+  "id": "cooking",
+  "words": [
+    {
+      "word": "cocina",
+      "reading": "koh-SEE-nah",
+      "meaning": "kitchen / cuisine",
+      "example": "La cocina mexicana es famosa.",
+      "exampleMeaning": "Mexican cuisine is famous."
+    },
+    {
+      "word": "receta",
+      "reading": "rreh-SEH-tah",
+      "meaning": "recipe",
+      "example": "Sigo la receta de mi abuela.",
+      "exampleMeaning": "I follow my grandma’s recipe."
+    },
+    {
+      "word": "ingrediente",
+      "reading": "een-greh-DYEHN-teh",
+      "meaning": "ingredient",
+      "example": "Falta un ingrediente clave.",
+      "exampleMeaning": "We’re missing a key ingredient."
+    },
+    {
+      "word": "sartén",
+      "reading": "sar-TEHN",
+      "meaning": "frying pan",
+      "example": "La sartén está caliente.",
+      "exampleMeaning": "The pan is hot."
+    },
+    {
+      "word": "olla",
+      "reading": "OH-yah",
+      "meaning": "pot",
+      "example": "La olla tiene sopa.",
+      "exampleMeaning": "The pot has soup."
+    },
+    {
+      "word": "cuchillo",
+      "reading": "koo-CHEE-yoh",
+      "meaning": "knife",
+      "example": "Cuidado con el cuchillo.",
+      "exampleMeaning": "Be careful with the knife."
+    },
+    {
+      "word": "tenedor",
+      "reading": "teh-neh-DOR",
+      "meaning": "fork",
+      "example": "Me hace falta un tenedor.",
+      "exampleMeaning": "I need a fork."
+    },
+    {
+      "word": "cuchara",
+      "reading": "koo-CHAH-rah",
+      "meaning": "spoon",
+      "example": "La cuchara es de madera.",
+      "exampleMeaning": "The spoon is wooden."
+    },
+    {
+      "word": "horno",
+      "reading": "OR-noh",
+      "meaning": "oven",
+      "example": "El horno está a 200 grados.",
+      "exampleMeaning": "The oven is at 200 degrees."
+    },
+    {
+      "word": "estufa",
+      "reading": "ehs-TOO-fah",
+      "meaning": "stove",
+      "example": "La estufa es de gas.",
+      "exampleMeaning": "The stove is gas."
+    },
+    {
+      "word": "hervir",
+      "reading": "ehr-BEER",
+      "meaning": "to boil",
+      "example": "Hierve el agua para el té.",
+      "exampleMeaning": "Boil the water for tea."
+    },
+    {
+      "word": "freír",
+      "reading": "freh-EER",
+      "meaning": "to fry",
+      "example": "Voy a freír los huevos.",
+      "exampleMeaning": "I’m going to fry the eggs."
+    },
+    {
+      "word": "hornear",
+      "reading": "or-neh-AR",
+      "meaning": "to bake",
+      "example": "Mi hija ama hornear galletas.",
+      "exampleMeaning": "My daughter loves baking cookies."
+    },
+    {
+      "word": "mezclar",
+      "reading": "mehs-KLAR",
+      "meaning": "to mix",
+      "example": "Mezcla la harina con el azúcar.",
+      "exampleMeaning": "Mix the flour with the sugar."
+    },
+    {
+      "word": "sal",
+      "reading": "sahl",
+      "meaning": "salt",
+      "example": "Le falta sal a la sopa.",
+      "exampleMeaning": "The soup needs salt."
+    },
+    {
+      "word": "aceite",
+      "reading": "ah-SEY-teh",
+      "meaning": "oil",
+      "example": "Usa aceite de oliva.",
+      "exampleMeaning": "Use olive oil."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "Sigo la ___ de mi abuela.",
+          "answer": "receta",
+          "hint": "recipe"
+        },
+        {
+          "sentence": "Le falta ___ a la sopa.",
+          "answer": "sal",
+          "hint": "seasoning"
+        },
+        {
+          "sentence": "Hierve el ___ para el té.",
+          "answer": "agua",
+          "hint": "liquid you boil"
+        },
+        {
+          "sentence": "Voy a ___ los huevos.",
+          "answer": "freír",
+          "hint": "cook in oil"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "items": [
+        {
+          "question": "What does ‘cuchillo’ mean?",
+          "options": [
+            "fork",
+            "spoon",
+            "knife",
+            "plate"
+          ],
+          "answer": 2
+        },
+        {
+          "question": "Which is for baking?",
+          "options": [
+            "sartén",
+            "horno",
+            "olla",
+            "estufa"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What is ‘aceite’?",
+          "options": [
+            "salt",
+            "sugar",
+            "oil",
+            "water"
+          ],
+          "answer": 2
+        }
+      ]
+    }
+  ]
+}
