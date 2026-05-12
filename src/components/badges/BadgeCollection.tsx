@@ -1,8 +1,9 @@
-import { useState } from 'react';
-import { BADGES, type BadgeDefinition } from '../../data/badges';
+import { useState, useMemo } from 'react';
+import { BADGES, type BadgeCategory, type BadgeDefinition } from '../../data/badges';
 import { useBadgeStore } from '../../stores/badgeStore';
+import { useSettingsStore } from '../../stores/settingsStore';
 
-const CATEGORY_LABELS: Record<BadgeDefinition['category'], string> = {
+const CATEGORY_LABELS: Record<BadgeCategory, string> = {
   xp: '⭐ XP Milestones',
   streak: '🔥 Streaks',
   reviews: '📝 Reviews',
@@ -11,35 +12,54 @@ const CATEGORY_LABELS: Record<BadgeDefinition['category'], string> = {
   kanji: '漢 Kanji',
   'letters-ja': 'あ Japanese Kana',
   'letters-ru': 'Б Russian Letters',
+  'letters-pt': 'á Portuguese Letters',
   'daily-challenge': '🎯 Daily Challenges',
   reading: '📖 Reading',
+  'vocabulary-lang': '🗂️ Vocabulary by Language',
+  'lessons-lang': '🎓 Lessons by Language',
+  'tests-lang': '🏅 Proficiency Tests',
 };
 
-const CATEGORY_ORDER: BadgeDefinition['category'][] = [
+const CATEGORY_ORDER: BadgeCategory[] = [
   'xp',
   'streak',
   'reviews',
   'vocabulary',
+  'vocabulary-lang',
   'lessons',
+  'lessons-lang',
+  'tests-lang',
   'kanji',
   'letters-ja',
   'letters-ru',
+  'letters-pt',
   'daily-challenge',
   'reading',
 ];
 
 export default function BadgeCollection() {
   const unlockedBadges = useBadgeStore((s) => s.unlockedBadges);
+  const activeLanguages = useSettingsStore((s) => s.activeLanguages);
   const [selectedBadge, setSelectedBadge] = useState<string | null>(null);
+
+  const visibleBadges = useMemo<BadgeDefinition[]>(() => {
+    const active = new Set(activeLanguages);
+    return BADGES.filter((b) => {
+      if (!b.language) return true;
+      // Show language-locked badges only when their language is active,
+      // but always keep an already-earned badge visible so accomplishments persist.
+      return active.has(b.language) || b.id in unlockedBadges;
+    });
+  }, [activeLanguages, unlockedBadges]);
 
   const grouped = CATEGORY_ORDER.map((cat) => ({
     category: cat,
     label: CATEGORY_LABELS[cat],
-    badges: BADGES.filter((b) => b.category === cat),
-  }));
+    badges: visibleBadges.filter((b) => b.category === cat),
+  })).filter((g) => g.badges.length > 0);
 
-  const total = BADGES.length;
-  const unlocked = Object.keys(unlockedBadges).length;
+  const total = visibleBadges.length;
+  const unlocked = visibleBadges.filter((b) => b.id in unlockedBadges).length;
 
   const selected = selectedBadge
     ? BADGES.find((b) => b.id === selectedBadge)

@@ -1,12 +1,14 @@
 import { useEffect, useRef } from 'react';
 import { checkBadges, gatherBadgeStats } from '../lib/badge-checker';
 import { useBadgeStore } from '../stores/badgeStore';
+import { useSettingsStore } from '../stores/settingsStore';
 import { db } from '../db/schema';
 
 const CHECK_INTERVAL_MS = 30_000;
 
 export function useBadgeChecker() {
   const unlockBadge = useBadgeStore((s) => s.unlockBadge);
+  const activeLanguages = useSettingsStore((s) => s.activeLanguages);
   const running = useRef(false);
 
   useEffect(() => {
@@ -15,7 +17,7 @@ export function useBadgeChecker() {
       running.current = true;
       try {
         const stats = await gatherBadgeStats();
-        const newBadgeIds = checkBadges(stats);
+        const newBadgeIds = checkBadges(stats, activeLanguages);
 
         for (const id of newBadgeIds) {
           unlockBadge(id);
@@ -29,5 +31,5 @@ export function useBadgeChecker() {
     run();
     const timer = setInterval(run, CHECK_INTERVAL_MS);
     return () => clearInterval(timer);
-  }, [unlockBadge]);
+  }, [unlockBadge, activeLanguages]);
 }
