@@ -1,0 +1,35 @@
+{
+  "id": "at-the-airport",
+  "words": [
+    { "word": "el vuelo", "reading": "ehl VWEH-loh", "meaning": "the flight", "example": "Mi vuelo sale a las ocho.", "exampleMeaning": "My flight leaves at eight." },
+    { "word": "el aeropuerto", "reading": "ehl ah-eh-roh-PWEHR-toh", "meaning": "the airport", "example": "El aeropuerto está lejos del centro.", "exampleMeaning": "The airport is far from downtown." },
+    { "word": "la maleta", "reading": "lah mah-LEH-tah", "meaning": "the suitcase", "example": "Mi maleta pesa mucho.", "exampleMeaning": "My suitcase is very heavy." },
+    { "word": "el equipaje", "reading": "ehl eh-kee-PAH-heh", "meaning": "the luggage", "example": "Perdí mi equipaje en el viaje.", "exampleMeaning": "I lost my luggage on the trip." },
+    { "word": "la puerta de embarque", "reading": "lah PWEHR-tah deh ehm-BAR-keh", "meaning": "the boarding gate", "example": "La puerta de embarque es la doce.", "exampleMeaning": "The boarding gate is number twelve." },
+    { "word": "el pasaporte", "reading": "ehl pah-sah-POR-teh", "meaning": "the passport", "example": "Necesito renovar mi pasaporte.", "exampleMeaning": "I need to renew my passport." },
+    { "word": "la tarjeta de embarque", "reading": "lah tar-HEH-tah deh ehm-BAR-keh", "meaning": "the boarding pass", "example": "Muestre su tarjeta de embarque, por favor.", "exampleMeaning": "Please show your boarding pass." },
+    { "word": "el control de seguridad", "reading": "ehl kohn-TROHL deh seh-goo-ree-DAHD", "meaning": "the security check", "example": "El control de seguridad fue rápido.", "exampleMeaning": "The security check was quick." },
+    { "word": "el retraso", "reading": "ehl reh-TRAH-soh", "meaning": "the delay", "example": "Hay un retraso de dos horas.", "exampleMeaning": "There is a two-hour delay." },
+    { "word": "aterrizar", "reading": "ah-teh-rree-SAR", "meaning": "to land", "example": "El avión va a aterrizar pronto.", "exampleMeaning": "The plane is going to land soon." },
+    { "word": "despegar", "reading": "dehs-peh-GAR", "meaning": "to take off", "example": "El vuelo despega a las nueve.", "exampleMeaning": "The flight takes off at nine." },
+    { "word": "facturar", "reading": "fahk-too-RAR", "meaning": "to check in (luggage)", "example": "Voy a facturar mi maleta.", "exampleMeaning": "I'm going to check in my suitcase." },
+    { "word": "la aduana", "reading": "lah ah-DWAH-nah", "meaning": "the customs", "example": "Pasamos por la aduana sin problema.", "exampleMeaning": "We passed through customs without a problem." },
+    { "word": "el pasajero", "reading": "ehl pah-sah-HEH-roh", "meaning": "the passenger", "example": "El pasajero olvidó su bolso.", "exampleMeaning": "The passenger forgot his bag." },
+    { "word": "la tripulación", "reading": "lah tree-poo-lah-SYOHN", "meaning": "the crew", "example": "La tripulación fue muy amable.", "exampleMeaning": "The crew was very friendly." },
+    { "word": "el destino", "reading": "ehl dehs-TEE-noh", "meaning": "the destination", "example": "Nuestro destino es Madrid.", "exampleMeaning": "Our destination is Madrid." }
+  ],
+  "exercises": [
+    { "type": "match", "pairs": 5 },
+    { "type": "fill-blank", "items": [
+      { "sentence": "Mi ___ sale a las ocho.", "answer": "vuelo", "hint": "flight" },
+      { "sentence": "Necesito renovar mi ___.", "answer": "pasaporte", "hint": "travel document" },
+      { "sentence": "El avión va a ___ pronto.", "answer": "aterrizar", "hint": "to land" },
+      { "sentence": "Voy a ___ mi maleta.", "answer": "facturar", "hint": "to check in luggage" }
+    ]},
+    { "type": "multiple-choice", "items": [
+      { "question": "What is 'el vuelo'?", "options": ["the flight", "the train", "the boat", "the bus"], "answer": 0 },
+      { "question": "What does 'despegar' mean?", "options": ["to land", "to take off", "to board", "to delay"], "answer": 1 },
+      { "question": "What is 'la aduana'?", "options": ["the gate", "the crew", "the customs", "the luggage"], "answer": 2 }
+    ]}
+  ]
+}

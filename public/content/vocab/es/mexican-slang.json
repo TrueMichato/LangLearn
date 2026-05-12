@@ -1,0 +1,36 @@
+{
+  "id": "mexican-slang",
+  "words": [
+    { "word": "¿qué onda?", "reading": "keh OHN-dah", "meaning": "what's up?", "example": "¿Qué onda, cuate?", "exampleMeaning": "What's up, dude?" },
+    { "word": "neta", "reading": "NEH-tah", "meaning": "truth / really", "example": "¿Neta? No lo puedo creer.", "exampleMeaning": "Really? I can't believe it." },
+    { "word": "chido", "reading": "CHEE-doh", "meaning": "cool", "example": "¡Qué chido tu coche!", "exampleMeaning": "Your car is so cool!" },
+    { "word": "padre", "reading": "PAH-dreh", "meaning": "cool / awesome", "example": "La fiesta estuvo muy padre.", "exampleMeaning": "The party was really awesome." },
+    { "word": "órale", "reading": "OH-rah-leh", "meaning": "wow / come on / okay", "example": "¡Órale, qué buena idea!", "exampleMeaning": "Wow, what a good idea!" },
+    { "word": "güey / wey", "reading": "gway", "meaning": "dude (informal, can be vulgar)", "example": "Ya vámonos, güey.", "exampleMeaning": "Let's go now, dude." },
+    { "word": "no manches", "reading": "noh MAHN-chehs", "meaning": "no way / you're kidding", "example": "¡No manches, ganaste la lotería!", "exampleMeaning": "No way, you won the lottery!" },
+    { "word": "la chamba", "reading": "lah CHAHM-bah", "meaning": "the job / work", "example": "Tengo mucha chamba hoy.", "exampleMeaning": "I have a lot of work today." },
+    { "word": "la lana", "reading": "lah LAH-nah", "meaning": "the money", "example": "No tengo lana este mes.", "exampleMeaning": "I have no money this month." },
+    { "word": "el pedo", "reading": "ehl PEH-doh", "meaning": "the problem (vulgar)", "example": "No hay pedo, todo bien.", "exampleMeaning": "No problem, it's all good." },
+    { "word": "ahorita", "reading": "ah-oh-REE-tah", "meaning": "right now (flexible)", "example": "Ahorita te llamo.", "exampleMeaning": "I'll call you in a bit." },
+    { "word": "el cuate", "reading": "ehl KWAH-teh", "meaning": "the friend / buddy", "example": "Es mi cuate de la escuela.", "exampleMeaning": "He's my buddy from school." },
+    { "word": "aguas", "reading": "AH-gwahs", "meaning": "watch out!", "example": "¡Aguas con ese perro!", "exampleMeaning": "Watch out for that dog!" },
+    { "word": "fresa", "reading": "FREH-sah", "meaning": "preppy / posh", "example": "Habla muy fresa esa chica.", "exampleMeaning": "That girl talks really preppy." },
+    { "word": "naco", "reading": "NAH-koh", "meaning": "tacky (derogatory)", "example": "Ese estilo es muy naco.", "exampleMeaning": "That style is really tacky." },
+    { "word": "no mames", "reading": "noh MAH-mehs", "meaning": "no way! (vulgar)", "example": "¡No mames, eso es increíble!", "exampleMeaning": "No way, that's incredible!" },
+    { "word": "la chela", "reading": "lah CHEH-lah", "meaning": "the beer", "example": "Vamos por unas chelas.", "exampleMeaning": "Let's go grab some beers." }
+  ],
+  "exercises": [
+    { "type": "match", "pairs": 5 },
+    { "type": "fill-blank", "items": [
+      { "sentence": "¿Qué ___, cuate?", "answer": "onda", "hint": "what's up" },
+      { "sentence": "Tengo mucha ___ hoy.", "answer": "chamba", "hint": "work" },
+      { "sentence": "Vamos por unas ___.", "answer": "chelas", "hint": "beers" },
+      { "sentence": "¡___ con ese perro!", "answer": "Aguas", "hint": "watch out" }
+    ]},
+    { "type": "multiple-choice", "items": [
+      { "question": "What does 'chido' mean?", "options": ["expensive", "cool", "ugly", "old"], "answer": 1 },
+      { "question": "In Mexican slang, 'la lana' means…", "options": ["the wool", "the money", "the work", "the time"], "answer": 1 },
+      { "question": "What does 'ahorita' typically imply?", "options": ["never", "yesterday", "right now (flexible)", "tomorrow"], "answer": 2 }
+    ]}
+  ]
+}

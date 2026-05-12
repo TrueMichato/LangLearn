@@ -34,4 +34,16 @@ export const esMinimalPairs: MinimalPair[] = [
   { id: 'es-18', wordA: 'papa', wordB: 'papá', readingA: 'PAH-pah', readingB: 'pah-PAH', meaningA: 'pope / potato', meaningB: 'dad', hint: 'Stress on first vs last syllable — the accent mark changes meaning.', category: 'accent-stress' },
   { id: 'es-19', wordA: 'esta', wordB: 'está', readingA: 'EHS-tah', readingB: 'ehs-TAH', meaningA: 'this (demonstrative)', meaningB: 'is (estar)', hint: 'Stress on first vs last syllable — accent mark distinguishes word class.', category: 'accent-stress' },
   { id: 'es-20', wordA: 'termino', wordB: 'terminó', readingA: 'tehr-MEE-noh', readingB: 'tehr-mee-NOH', meaningA: 'I finish', meaningB: 'he/she finished', hint: 'Stress shift changes person and tense — present 1st vs preterite 3rd.', category: 'accent-stress' },
+
+  // v2 additions
+  { id: 'es-21', wordA: 'cabo', wordB: 'cavo', readingA: 'KAH-boh', readingB: 'KAH-boh', meaningA: 'cape, end', meaningB: 'I dig', hint: 'b vs v — pronounced identically in modern Spanish but spelled differently (common spelling pitfall).', category: 'b-v' },
+  { id: 'es-22', wordA: 'bota', wordB: 'vota', readingA: 'BOH-tah', readingB: 'BOH-tah', meaningA: 'boot', meaningB: 'he/she votes', hint: 'b vs v — homophones; only context distinguishes them.', category: 'b-v' },
+  { id: 'es-23', wordA: 'sabia', wordB: 'savia', readingA: 'SAH-byah', readingB: 'SAH-byah', meaningA: 'wise (fem.)', meaningB: 'sap (of a plant)', hint: 'b vs v — identical pronunciation [ˈsa.βja]; the spelling is the only clue.', category: 'b-v' },
+  { id: 'es-24', wordA: 'casar', wordB: 'cazar', readingA: 'kah-SAR', readingB: 'kah-SAR', meaningA: 'to marry', meaningB: 'to hunt', hint: 's vs z — merged in LatAm seseo (both kah-SAR); distinguished in Spain (kah-THAR).', category: 'c-z-s' },
+  { id: 'es-25', wordA: 'cocer', wordB: 'coser', readingA: 'koh-SEHR', readingB: 'koh-SEHR', meaningA: 'to cook / boil', meaningB: 'to sew', hint: 'c (before e) vs s — homophones in LatAm seseo; distinguished in Spain (koh-THEHR vs koh-SEHR).', category: 'c-z-s' },
+  { id: 'es-26', wordA: 'mono', wordB: 'moño', readingA: 'MOH-noh', readingB: 'MOH-nyoh', meaningA: 'monkey', meaningB: 'hair bun', hint: 'n vs ñ — the tilde adds a palatal "ny" glide.', category: 'n-ñ' },
+  { id: 'es-27', wordA: 'pena', wordB: 'peña', readingA: 'PEH-nah', readingB: 'PEH-nyah', meaningA: 'sorrow, pity', meaningB: 'boulder, rock / social club', hint: 'n vs ñ — the tilde changes both sound and meaning.', category: 'n-ñ' },
+  { id: 'es-28', wordA: 'amargo', wordB: 'amarro', readingA: 'ah-MAR-goh', readingB: 'ah-MAH-rroh', meaningA: 'bitter', meaningB: 'I moor / tie up', hint: 'Different consonant cluster — rg (tap + g) vs rr (trill); both stress the second syllable.', category: 'rolled' },
+  { id: 'es-29', wordA: 'ahora', wordB: 'ahorra', readingA: 'ah-OH-rah', readingB: 'ah-OH-rrah', meaningA: 'now', meaningB: 'he/she saves (money)', hint: 'Single r (tap) vs rr (trill) — silent h in both; only the trill distinguishes them.', category: 'rolled' },
+  { id: 'es-30', wordA: 'mas', wordB: 'más', readingA: 'mahs', readingB: 'MAHS', meaningA: 'but (archaic/literary)', meaningB: 'more', hint: 'Written accent (tilde diacrítica) distinguishes stressed "más" (more) from unstressed conjunction "mas" (but).', category: 'accent-stress' },
 ];

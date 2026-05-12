@@ -1,0 +1,36 @@
+{
+  "id": "argentinian-slang",
+  "words": [
+    { "word": "che", "reading": "cheh", "meaning": "hey / dude (opener)", "example": "Che, ¿cómo andás?", "exampleMeaning": "Hey, how's it going?" },
+    { "word": "boludo", "reading": "boh-LOO-doh", "meaning": "dude (context-dependent, can be vulgar)", "example": "¿Qué hacés, boludo?", "exampleMeaning": "What are you doing, dude?" },
+    { "word": "el laburo", "reading": "ehl lah-BOO-roh", "meaning": "the work / job", "example": "Tengo mucho laburo esta semana.", "exampleMeaning": "I have a lot of work this week." },
+    { "word": "la guita", "reading": "lah GEE-tah", "meaning": "the money", "example": "No me queda guita.", "exampleMeaning": "I have no money left." },
+    { "word": "el pibe", "reading": "ehl PEE-beh", "meaning": "the kid / guy", "example": "Ese pibe juega bien al fútbol.", "exampleMeaning": "That kid plays soccer well." },
+    { "word": "la piba", "reading": "lah PEE-bah", "meaning": "the girl", "example": "La piba estudia conmigo.", "exampleMeaning": "The girl studies with me." },
+    { "word": "el bondi", "reading": "ehl BOHN-dee", "meaning": "the bus", "example": "Voy en el bondi al centro.", "exampleMeaning": "I take the bus downtown." },
+    { "word": "morfar", "reading": "mor-FAR", "meaning": "to eat", "example": "Vamos a morfar algo.", "exampleMeaning": "Let's go eat something." },
+    { "word": "el quilombo", "reading": "ehl kee-LOHM-boh", "meaning": "the mess / chaos", "example": "¡Qué quilombo hay en la calle!", "exampleMeaning": "What a mess on the street!" },
+    { "word": "copado", "reading": "koh-PAH-doh", "meaning": "cool", "example": "Está muy copado el bar.", "exampleMeaning": "The bar is really cool." },
+    { "word": "zarpado", "reading": "sar-PAH-doh", "meaning": "awesome / over the top", "example": "Tu idea está zarpada.", "exampleMeaning": "Your idea is awesome." },
+    { "word": "la gauchada", "reading": "lah gow-CHAH-dah", "meaning": "the favor", "example": "Hacéme una gauchada.", "exampleMeaning": "Do me a favor." },
+    { "word": "la mina", "reading": "lah MEE-nah", "meaning": "the girl / woman", "example": "Esa mina es muy simpática.", "exampleMeaning": "That woman is really nice." },
+    { "word": "el pucho", "reading": "ehl POO-choh", "meaning": "the cigarette", "example": "¿Tenés un pucho?", "exampleMeaning": "Do you have a cigarette?" },
+    { "word": "trucho", "reading": "TROO-choh", "meaning": "fake", "example": "Ese reloj es trucho.", "exampleMeaning": "That watch is fake." },
+    { "word": "bárbaro", "reading": "BAR-bah-roh", "meaning": "great", "example": "¡Bárbaro! Nos vemos el sábado.", "exampleMeaning": "Great! See you Saturday." },
+    { "word": "engrupir", "reading": "ehn-groo-PEER", "meaning": "to deceive / lie", "example": "No me trates de engrupir.", "exampleMeaning": "Don't try to deceive me." }
+  ],
+  "exercises": [
+    { "type": "match", "pairs": 5 },
+    { "type": "fill-blank", "items": [
+      { "sentence": "___, ¿cómo andás?", "answer": "Che", "hint": "Argentinian opener" },
+      { "sentence": "Tengo mucho ___ esta semana.", "answer": "laburo", "hint": "work" },
+      { "sentence": "Voy en el ___ al centro.", "answer": "bondi", "hint": "city bus" },
+      { "sentence": "No me queda ___.", "answer": "guita", "hint": "money" }
+    ]},
+    { "type": "multiple-choice", "items": [
+      { "question": "What does 'morfar' mean?", "options": ["to sleep", "to eat", "to work", "to walk"], "answer": 1 },
+      { "question": "What is 'el quilombo'?", "options": ["the party", "the mess", "the job", "the favor"], "answer": 1 },
+      { "question": "What does 'trucho' mean?", "options": ["fake", "expensive", "broken", "stolen"], "answer": 0 }
+    ]}
+  ]
+}

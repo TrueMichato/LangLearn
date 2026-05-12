@@ -217,4 +217,147 @@ export const esPassages: ListeningPassage[] = [
       { question: "What is the speaker's conclusion?", options: ['Learning a language is quick if you have talent', 'Learning a language never truly ends, which is why it is worthwhile', 'Only children can learn languages well', 'Reading novels is the only effective method'], correctIndex: 1 },
     ],
   },
+  // --- Easy (v2 additions) ---
+  {
+    id: 'es-easy-8',
+    title: 'At the Pharmacy in Bogotá',
+    text: 'Buenos días. Tengo gripa y necesito algo para la tos y el dolor de cabeza. ¿Tiene fiebre? Sí, un poco, treinta y ocho grados. Le recomiendo este jarabe para la tos y estas pastillas para el dolor. Tome una pastilla cada ocho horas con comida. ¿Cuánto cuesta todo? Veinticinco mil pesos. Aquí tiene. Muchas gracias, que se mejore pronto.',
+    difficulty: 'easy',
+    questions: [
+      { question: 'Why does the customer go to the pharmacy?', options: ['To buy vitamins', 'They have a cold and headache', 'To pick up a prescription for a friend', 'To buy bandages'], correctIndex: 1 },
+      { question: 'How often should the pills be taken?', options: ['Every four hours', 'Every six hours', 'Every eight hours with food', 'Once a day before sleep'], correctIndex: 2 },
+    ],
+  },
+  {
+    id: 'es-easy-9',
+    title: 'A Phone Call to a Friend',
+    text: '¿Aló, Marta? Hola, soy Diego. ¿Quieres ir al cine esta noche? Hay una película nueva a las ocho. Sí, me encantaría. ¿Dónde nos vemos? En la entrada del centro comercial, a las siete y media. Perfecto, así tomamos un café antes. Después de la película podemos cenar pizza. Buena idea. Nos vemos luego, ¡hasta pronto!',
+    difficulty: 'easy',
+    questions: [
+      { question: 'What does Diego invite Marta to do?', options: ['Go to a concert', 'Go to the cinema tonight', 'Have dinner at his house', 'Go shopping'], correctIndex: 1 },
+      { question: 'Where will they meet?', options: ['At the cinema box office', 'At the entrance of the shopping mall', 'At a café downtown', "At Marta's house"], correctIndex: 1 },
+    ],
+  },
+  {
+    id: 'es-easy-10',
+    title: 'My House in Buenos Aires',
+    text: 'Vivo en un departamento en el barrio de Palermo, en Buenos Aires. Es pequeño pero muy cómodo. Tiene dos habitaciones, una cocina, un baño y un balcón con plantas. Desde el balcón veo la calle y los árboles. Mi barrio es tranquilo y tiene muchos cafés y librerías. Me gusta caminar por la plaza los fines de semana.',
+    difficulty: 'easy',
+    questions: [
+      { question: 'In which neighborhood does the speaker live?', options: ['Recoleta', 'Palermo', 'San Telmo', 'Belgrano'], correctIndex: 1 },
+      { question: 'What does the speaker like to do on weekends?', options: ['Cook at home', 'Walk in the plaza', 'Visit the cinema', 'Take the bus to the center'], correctIndex: 1 },
+    ],
+  },
+  {
+    id: 'es-easy-11',
+    title: 'My Favorite Hobby',
+    text: 'Mi pasatiempo favorito es la pintura. Cada sábado por la tarde voy a una clase pequeña cerca de mi casa. Pinto paisajes y retratos con acuarela. Cuando pinto, me siento tranquila y feliz. También me gusta visitar museos para ver obras de artistas famosos. Algún día quiero hacer una exposición con mis cuadros.',
+    difficulty: 'easy',
+    questions: [
+      { question: 'What is the speaker’s favorite hobby?', options: ['Dancing', 'Painting', 'Playing soccer', 'Photography'], correctIndex: 1 },
+      { question: 'What does the speaker hope to do one day?', options: ['Teach a painting class', 'Have an exhibition of her paintings', 'Travel to Paris', 'Sell her paintings online'], correctIndex: 1 },
+    ],
+  },
+  // --- Medium (v2 additions) ---
+  {
+    id: 'es-medium-8',
+    title: 'A Trip to the Andes',
+    text: 'El año pasado viajé con mi hermano a los Andes peruanos. Salimos desde Cusco temprano por la mañana en un autobús que subía por carreteras de montaña muy estrechas. Después de cuatro horas llegamos a un pueblo pequeño donde una familia local nos ofreció una sopa caliente de quinoa. La altura me afectó al principio: tenía dolor de cabeza y respiraba con dificultad, pero me adapté en un par de días. Caminamos por senderos antiguos hasta unas ruinas incas casi vacías de turistas. Nunca olvidaré el silencio del valle ni la amabilidad de la gente que conocimos en el camino.',
+    difficulty: 'medium',
+    questions: [
+      { question: 'How did the speaker feel when they first arrived at altitude?', options: ['Energetic and happy', 'They had a headache and difficulty breathing', 'Cold but otherwise fine', 'Hungry but healthy'], correctIndex: 1 },
+      { question: 'What did the local family offer them?', options: ['A guided tour', 'A hot quinoa soup', 'A place to sleep', 'Coca tea'], correctIndex: 1 },
+    ],
+  },
+  {
+    id: 'es-medium-9',
+    title: 'How to Make Empanadas',
+    text: 'Las empanadas son uno de los platos más queridos de Argentina. Para prepararlas en casa, primero hay que hacer el relleno. Yo siempre uso carne picada, cebolla, pimiento y un poco de comino. Cocino todo en una sartén durante quince minutos y dejo que se enfríe. Mientras tanto, estiro la masa con un rodillo y corto círculos. Pongo una cucharada de relleno en cada círculo, doblo la masa y cierro los bordes con el famoso "repulgue". Por último, las pinto con huevo batido y las horneo a doscientos grados durante veinte minutos. Cuando están doradas, las sirvo con una copa de vino tinto. ¡Quedan deliciosas y son ideales para compartir!',
+    difficulty: 'medium',
+    questions: [
+      { question: 'What is the first step in the recipe?', options: ['Rolling out the dough', 'Preparing the filling', 'Beating the egg', 'Cutting the circles'], correctIndex: 1 },
+      { question: 'At what temperature are the empanadas baked?', options: ['One hundred fifty degrees', 'One hundred eighty degrees', 'Two hundred degrees', 'Two hundred fifty degrees'], correctIndex: 2 },
+    ],
+  },
+  {
+    id: 'es-medium-10',
+    title: 'Las Posadas in Mexico',
+    text: 'En México, la Navidad empieza antes del veinticinco de diciembre con una tradición llamada las Posadas. Durante nueve noches, del dieciséis al veinticuatro, los vecinos se reúnen para representar el viaje de María y José buscando alojamiento en Belén. Un grupo camina por la calle con velas y cantan pidiendo posada, mientras otro grupo, dentro de la casa, responde cantando que no hay lugar. Al final, las puertas se abren y todos entran a celebrar. Cuando era niña, mi abuela siempre preparaba ponche caliente con frutas y tamales para los invitados. Después rompíamos una piñata con forma de estrella y los niños recogíamos dulces del suelo entre risas. Era una de las épocas más alegres del año.',
+    difficulty: 'medium',
+    questions: [
+      { question: 'How many nights do the Posadas last?', options: ['Seven nights', 'Nine nights', 'Twelve nights', 'Three nights'], correctIndex: 1 },
+      { question: 'What does the speaker remember her grandmother preparing?', options: ['Hot chocolate and bread', 'Hot fruit punch and tamales', 'Roast turkey', 'Coffee and cookies'], correctIndex: 1 },
+    ],
+  },
+  {
+    id: 'es-medium-11',
+    title: 'My Best Friend and Why',
+    text: 'Mi mejor amiga se llama Lucía y la conozco desde el colegio. Nos sentamos juntas en clase de matemáticas cuando teníamos doce años y desde entonces somos inseparables. Lo que más me gusta de ella es que siempre escucha sin juzgar. Cuando tuve una época difícil después de mudarme de ciudad, me llamaba todas las noches para preguntarme cómo estaba. También es muy divertida: nadie cuenta historias como ella. Aunque ahora vivimos en países distintos, intentamos vernos por lo menos una vez al año. La amistad verdadera, creo yo, no depende de la distancia sino del tiempo que uno está dispuesto a dedicar al otro.',
+    difficulty: 'medium',
+    questions: [
+      { question: 'How did the speaker meet Lucía?', options: ['At university', 'At a summer camp', 'In school math class when they were twelve', 'Through a mutual friend'], correctIndex: 2 },
+      { question: 'What does the speaker value most about Lucía?', options: ['Her sense of style', 'That she listens without judging', 'Her cooking skills', 'Her academic talent'], correctIndex: 1 },
+    ],
+  },
+  {
+    id: 'es-medium-12',
+    title: 'Small Talk in a Madrid Café',
+    text: '¡Hola Carlos! ¿Qué tal el fin de semana? Pues mira, regular. Fui al pueblo de mis padres porque mi madre cumplía años, pero el viaje en coche fue un desastre por el tráfico. ¿Y tú? Yo me quedé en Madrid. El sábado fui al Retiro a correr y luego cené con unos amigos en La Latina. Suena mucho mejor que mi fin de semana. Oye, ¿al final has hablado con el jefe sobre las vacaciones? Sí, ayer mismo. Me dijo que en agosto no hay problema, pero que debería avisar al equipo cuanto antes. Pues yo todavía no he decidido nada, a ver si me organizo esta semana. ¿Pedimos otro café antes de volver a la oficina?',
+    difficulty: 'medium',
+    questions: [
+      { question: "Why did Carlos's weekend go badly?", options: ['He got sick', 'There was heavy traffic on the drive to his parents’ village', 'He had to work overtime', 'His car broke down'], correctIndex: 1 },
+      { question: 'What did the boss say about August vacation?', options: ['It is not allowed this year', "It is fine but he should notify the team soon", 'Only one week is permitted', 'He has to take it in July instead'], correctIndex: 1 },
+    ],
+  },
+  // --- Hard (v2 additions) ---
+  {
+    id: 'es-hard-8',
+    title: 'Climate Change in Latin America',
+    text: 'Pocas regiones del mundo enfrentan los efectos del cambio climático con tanta crudeza como América Latina. Desde los glaciares andinos que retroceden año tras año hasta las sequías prolongadas que castigan el corredor seco centroamericano, los signos están a la vista de cualquiera que quiera mirar. No se trata únicamente de un problema ambiental: cuando un campesino guatemalteco pierde su cosecha por tercera vez consecutiva, lo que se quiebra no es solo el ciclo agrícola, sino también el tejido social de comunidades enteras que terminan migrando hacia el norte. Si los gobiernos de la región actuaran de manera coordinada, sería posible mitigar lo peor; sin embargo, mientras prevalezcan los intereses de corto plazo, el continente seguirá pagando un precio desproporcionado por una crisis que apenas ha contribuido a generar. Quizá lo más urgente no sea esperar acuerdos internacionales perfectos, sino que cada país asuma que adaptarse al nuevo clima ya no es una opción, sino una condición de supervivencia.',
+    difficulty: 'hard',
+    questions: [
+      { question: "What example does the author give of climate change's impact?", options: ['Hurricanes destroying coastal cities', 'Andean glaciers retreating and droughts in Central America', 'Rising temperatures in the Amazon basin', 'Forest fires in Patagonia'], correctIndex: 1 },
+      { question: 'What does the author argue is most urgent?', options: ['Waiting for perfect international agreements', 'That each country accept that adapting is a condition of survival', 'Building more dams across the region', 'Banning all fossil fuel extraction immediately'], correctIndex: 1 },
+    ],
+  },
+  {
+    id: 'es-hard-9',
+    title: 'Profile of a Mexico City CEO',
+    text: 'A sus treinta y cuatro años, Mariana Robles dirige una de las startups de logística más prometedoras de Ciudad de México. Su empresa, fundada hace apenas cinco años en un pequeño despacho en la colonia Roma, hoy opera en seis países de la región y emplea a más de cuatrocientas personas. "Nunca imaginé que creciéramos tan rápido", confiesa Robles durante una entrevista en sus nuevas oficinas, "pero también es cierto que no habríamos llegado aquí si no hubiéramos cometido muchísimos errores al principio". Estudió ingeniería industrial en la UNAM y trabajó durante varios años en una multinacional alemana antes de atreverse a emprender. Según los analistas, lo que distingue a su compañía no es la tecnología en sí, sino la capacidad de adaptar soluciones globales al complejo entramado regulatorio latinoamericano. La próxima ronda de inversión, prevista para el próximo trimestre, podría convertir a la empresa en el primer unicornio mexicano del sector. Robles, sin embargo, prefiere no hablar de cifras: "Lo importante es que cuando un cliente en Lima o en Bogotá pulsa un botón, su paquete llegue puntual. Lo demás es ruido".',
+    difficulty: 'hard',
+    questions: [
+      { question: 'According to analysts, what distinguishes her company?', options: ['Its cutting-edge proprietary technology', 'Its ability to adapt global solutions to Latin American regulations', 'Its very low prices', 'Its strong marketing campaigns'], correctIndex: 1 },
+      { question: 'How does Robles explain the company’s rapid growth?', options: ['By a brilliant initial business plan', 'By admitting they made many mistakes at the beginning', 'By generous government support', 'By copying competitors abroad'], correctIndex: 1 },
+    ],
+  },
+  {
+    id: 'es-hard-10',
+    title: 'A Brief History of Flamenco',
+    text: 'El flamenco, declarado Patrimonio Cultural Inmaterial de la Humanidad por la Unesco en 2010, hunde sus raíces en la Andalucía del siglo XVIII, aunque sus orígenes exactos siguen siendo objeto de debate entre historiadores. Lo que sí parece claro es que nació del encuentro entre varias tradiciones: la música gitana traída desde el subcontinente indio, los cantos sefardíes, los ritmos moriscos heredados de Al-Ándalus y la música popular de los pueblos andaluces. Durante mucho tiempo se interpretó en patios, ventas y reuniones familiares, lejos de los escenarios oficiales. No fue hasta finales del siglo XIX, con la aparición de los célebres cafés cantantes, cuando el flamenco empezó a profesionalizarse. Si bien algunos puristas lamentan que el género se haya convertido hoy en un espectáculo turístico, otros sostienen que sin esa apertura difícilmente habría sobrevivido. Figuras como Camarón de la Isla o Paco de Lucía supieron renovarlo sin traicionarlo, fusionándolo con el jazz, el blues e incluso la música árabe. El flamenco, lejos de ser un fósil, sigue siendo un arte vivo que cambia con cada generación.',
+    difficulty: 'hard',
+    questions: [
+      { question: 'What does the article say about the origins of flamenco?', options: ['It was invented in the 19th century by Camarón', 'It emerged in 18th-century Andalusia from a mix of traditions', 'It comes purely from Moorish music', 'It was created in the cafés cantantes of Madrid'], correctIndex: 1 },
+      { question: 'What is the author’s view on flamenco today?', options: ['It has become a lifeless fossil', 'It remains a living art that renews itself with each generation', 'It should be protected from any modern influence', 'It is in danger of disappearing within a few decades'], correctIndex: 1 },
+    ],
+  },
+  {
+    id: 'es-hard-11',
+    title: 'Why I Learned Spanish',
+    text: 'Cuando me preguntan por qué decidí aprender español, suelo dar respuestas distintas según el día. A veces digo que fue por motivos prácticos: quería leer a Borges en su lengua original, o entender las letras de las canciones que tanto me gustaban. Otras veces respondo que fue casi por casualidad, porque una amiga me invitó a un curso intensivo en Salamanca y no supe decirle que no. Pero si fuera completamente honesto conmigo mismo, admitiría que aprendí español porque quería convertirme en alguien ligeramente distinto. En mi lengua materna me sentía atrapado en costumbres y formas de pensar que ya no me servían; el español me ofreció, sin pedirlo, un terreno nuevo donde podía ser más curioso, más paciente y menos cínico. No diría que aprender un idioma cambia la personalidad de raíz, pero sí abre puertas internas que uno ignoraba. Hoy, después de varios años, sigo cometiendo errores que me hacen reír. Y cada vez que pienso en dejar de estudiar, recuerdo que sin el español me habría quedado con una versión más pobre y más estrecha de mí mismo.',
+    difficulty: 'hard',
+    questions: [
+      { question: 'What does the speaker present as the deepest reason for learning Spanish?', options: ['Career advancement in international business', 'A wish to become a slightly different version of himself', 'A desire to live permanently in Spain', 'Family heritage on his mother’s side'], correctIndex: 1 },
+      { question: 'What does the speaker think about making mistakes today?', options: ['They embarrass him deeply', 'They make him laugh and motivate him to keep going', 'They prove that he should stop studying', 'They no longer happen to him'], correctIndex: 1 },
+    ],
+  },
+  {
+    id: 'es-hard-12',
+    title: 'A Childhood Memory',
+    text: 'Hay un recuerdo que vuelve siempre que cierro los ojos en verano: la casa de mis abuelos en un pueblo del interior, con su patio de baldosas calientes y el limonero que se inclinaba sobre el pozo. Yo debía de tener siete u ocho años. Mi abuelo, que ya casi no hablaba por culpa de una vieja enfermedad, me llevaba de la mano hasta la huerta cuando el sol empezaba a bajar. Allí me enseñaba en silencio a reconocer las hojas del tomate, a oler la albahaca, a entender cuándo un higo estaba listo para caer. Mi abuela, mientras tanto, nos llamaba desde la cocina con esa voz que parecía no haber envejecido nunca. Comíamos en el patio bajo una bombilla amarillenta rodeada de mosquitos y, después, ella me contaba historias de cuando era joven, historias que entonces me parecían exageradas y que ahora, ya adulto, intuyo que se quedaban cortas. Si pudiera volver a cualquier lugar del mundo, no elegiría una ciudad ni un país: elegiría aquella media hora dorada antes de la cena, cuando todavía estaban todos vivos y el verano parecía infinito.',
+    difficulty: 'hard',
+    questions: [
+      { question: 'What did the grandfather teach the speaker in the garden?', options: ['How to play music', 'How to recognize plants and tell when figs were ripe', 'How to read old books', 'How to swim in the well'], correctIndex: 1 },
+      { question: 'If the speaker could return anywhere, where would he go?', options: ['To his grandparents’ village in winter', 'To the half hour before dinner when everyone was still alive', 'To a city he visited as a teenager', 'To the school where he grew up'], correctIndex: 1 },
+    ],
+  },
 ];

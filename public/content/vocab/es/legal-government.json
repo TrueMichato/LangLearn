@@ -1,0 +1,35 @@
+{
+  "id": "legal-government",
+  "words": [
+    { "word": "la ley", "reading": "lah lay", "meaning": "the law", "example": "Hay que respetar la ley.", "exampleMeaning": "One must respect the law." },
+    { "word": "el / la juez(a)", "reading": "ehl / lah HWEHS / HWEH-sah", "meaning": "the judge", "example": "La jueza dictó sentencia.", "exampleMeaning": "The judge handed down a sentence." },
+    { "word": "el tribunal", "reading": "ehl tree-boo-NAHL", "meaning": "the court", "example": "El caso llegó al tribunal supremo.", "exampleMeaning": "The case reached the supreme court." },
+    { "word": "el / la abogado(a)", "reading": "ehl / lah ah-boh-GAH-doh / ah-boh-GAH-dah", "meaning": "the lawyer", "example": "Mi abogada es muy competente.", "exampleMeaning": "My lawyer is very competent." },
+    { "word": "el / la fiscal", "reading": "ehl / lah fees-KAHL", "meaning": "the prosecutor", "example": "El fiscal presentó las pruebas.", "exampleMeaning": "The prosecutor presented the evidence." },
+    { "word": "demandar", "reading": "deh-mahn-DAR", "meaning": "to sue", "example": "Decidieron demandar a la empresa.", "exampleMeaning": "They decided to sue the company." },
+    { "word": "el contrato", "reading": "ehl kohn-TRAH-toh", "meaning": "the contract", "example": "Firmamos un contrato legal.", "exampleMeaning": "We signed a legal contract." },
+    { "word": "el testamento", "reading": "ehl tehs-tah-MEHN-toh", "meaning": "the will", "example": "Mi abuelo dejó un testamento.", "exampleMeaning": "My grandfather left a will." },
+    { "word": "la herencia", "reading": "lah eh-REHN-syah", "meaning": "the inheritance", "example": "Recibió una gran herencia.", "exampleMeaning": "He received a large inheritance." },
+    { "word": "los derechos", "reading": "lohs deh-REH-chohs", "meaning": "the rights", "example": "Todos tenemos derechos humanos.", "exampleMeaning": "We all have human rights." },
+    { "word": "el ayuntamiento", "reading": "ehl ah-yoon-tah-MYEHN-toh", "meaning": "the city hall (Spain)", "example": "El ayuntamiento aprobó la ley.", "exampleMeaning": "The city hall approved the law." },
+    { "word": "la alcaldía", "reading": "lah ahl-kahl-DEE-ah", "meaning": "the mayor's office (Latin America)", "example": "Trabaja en la alcaldía local.", "exampleMeaning": "He works at the local mayor's office." },
+    { "word": "las elecciones", "reading": "lahs eh-lehk-SYOH-nehs", "meaning": "the elections", "example": "Las elecciones son en octubre.", "exampleMeaning": "The elections are in October." },
+    { "word": "votar", "reading": "boh-TAR", "meaning": "to vote", "example": "Es importante votar.", "exampleMeaning": "It's important to vote." },
+    { "word": "el partido político", "reading": "ehl par-TEE-doh poh-LEE-tee-koh", "meaning": "the political party", "example": "Hay varios partidos políticos.", "exampleMeaning": "There are several political parties." },
+    { "word": "la constitución", "reading": "lah kohns-tee-too-SYOHN", "meaning": "the constitution", "example": "La constitución protege nuestros derechos.", "exampleMeaning": "The constitution protects our rights." }
+  ],
+  "exercises": [
+    { "type": "match", "pairs": 5 },
+    { "type": "fill-blank", "items": [
+      { "sentence": "Hay que respetar la ___.", "answer": "ley", "hint": "the law" },
+      { "sentence": "Decidieron ___ a la empresa.", "answer": "demandar", "hint": "take to court" },
+      { "sentence": "Es importante ___.", "answer": "votar", "hint": "cast a ballot" },
+      { "sentence": "Mi abuelo dejó un ___.", "answer": "testamento", "hint": "legal will" }
+    ]},
+    { "type": "multiple-choice", "items": [
+      { "question": "What is 'el / la fiscal'?", "options": ["the judge", "the lawyer", "the prosecutor", "the witness"], "answer": 2 },
+      { "question": "What does 'la herencia' mean?", "options": ["the lawsuit", "the inheritance", "the bribe", "the heritage site"], "answer": 1 },
+      { "question": "What is 'la alcaldía'?", "options": ["the courthouse", "the mayor's office", "the parliament", "the embassy"], "answer": 1 }
+    ]}
+  ]
+}

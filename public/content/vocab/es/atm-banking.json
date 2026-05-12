@@ -1,0 +1,35 @@
+{
+  "id": "atm-banking",
+  "words": [
+    { "word": "el cajero automático", "reading": "ehl kah-HEH-roh ow-toh-MAH-tee-koh", "meaning": "the ATM", "example": "Hay un cajero automático en la esquina.", "exampleMeaning": "There's an ATM on the corner." },
+    { "word": "retirar", "reading": "reh-tee-RAR", "meaning": "to withdraw", "example": "Quiero retirar cien euros.", "exampleMeaning": "I want to withdraw one hundred euros." },
+    { "word": "sacar dinero", "reading": "sah-KAR dee-NEH-roh", "meaning": "to take out money", "example": "Voy a sacar dinero del cajero.", "exampleMeaning": "I'm going to take money out of the ATM." },
+    { "word": "la cuenta corriente", "reading": "lah KWEHN-tah koh-RYEHN-teh", "meaning": "the checking account", "example": "Abrí una cuenta corriente.", "exampleMeaning": "I opened a checking account." },
+    { "word": "la cuenta de ahorros", "reading": "lah KWEHN-tah deh ah-OH-rrohs", "meaning": "the savings account", "example": "Tengo dinero en mi cuenta de ahorros.", "exampleMeaning": "I have money in my savings account." },
+    { "word": "ingresar", "reading": "een-greh-SAR", "meaning": "to deposit", "example": "Voy a ingresar el cheque.", "exampleMeaning": "I'm going to deposit the check." },
+    { "word": "la tarjeta de débito", "reading": "lah tar-HEH-tah deh DEH-bee-toh", "meaning": "the debit card", "example": "Pagué con la tarjeta de débito.", "exampleMeaning": "I paid with the debit card." },
+    { "word": "la tarjeta de crédito", "reading": "lah tar-HEH-tah deh KREH-dee-toh", "meaning": "the credit card", "example": "No acepto tarjetas de crédito.", "exampleMeaning": "I don't accept credit cards." },
+    { "word": "el PIN", "reading": "ehl peen", "meaning": "the PIN", "example": "Olvidé mi PIN.", "exampleMeaning": "I forgot my PIN." },
+    { "word": "el saldo", "reading": "ehl SAHL-doh", "meaning": "the balance", "example": "Quiero consultar mi saldo.", "exampleMeaning": "I want to check my balance." },
+    { "word": "la transferencia", "reading": "lah trahns-feh-REHN-syah", "meaning": "the transfer", "example": "Hice una transferencia bancaria.", "exampleMeaning": "I made a bank transfer." },
+    { "word": "el préstamo", "reading": "ehl PREHS-tah-moh", "meaning": "the loan", "example": "Pedí un préstamo al banco.", "exampleMeaning": "I asked the bank for a loan." },
+    { "word": "los intereses", "reading": "lohs een-teh-REH-sehs", "meaning": "the interest", "example": "Los intereses son altos.", "exampleMeaning": "The interest is high." },
+    { "word": "la sucursal", "reading": "lah soo-koor-SAHL", "meaning": "the branch", "example": "Hay una sucursal cerca de aquí.", "exampleMeaning": "There's a branch nearby." },
+    { "word": "el extracto", "reading": "ehl ehks-TRAHK-toh", "meaning": "the bank statement", "example": "Recibo el extracto cada mes.", "exampleMeaning": "I receive the statement every month." },
+    { "word": "el cambio de divisas", "reading": "ehl KAHM-byoh deh dee-BEE-sahs", "meaning": "the currency exchange", "example": "¿Dónde hay cambio de divisas?", "exampleMeaning": "Where's a currency exchange?" }
+  ],
+  "exercises": [
+    { "type": "match", "pairs": 5 },
+    { "type": "fill-blank", "items": [
+      { "sentence": "Quiero ___ cien euros.", "answer": "retirar", "hint": "take out" },
+      { "sentence": "Olvidé mi ___.", "answer": "PIN", "hint": "4-digit code" },
+      { "sentence": "Pedí un ___ al banco.", "answer": "préstamo", "hint": "borrowed money" },
+      { "sentence": "Hice una ___ bancaria.", "answer": "transferencia", "hint": "money sent between accounts" }
+    ]},
+    { "type": "multiple-choice", "items": [
+      { "question": "What is 'el saldo'?", "options": ["the loan", "the balance", "the interest", "the deposit"], "answer": 1 },
+      { "question": "What does 'ingresar' mean here?", "options": ["to withdraw", "to deposit", "to transfer", "to spend"], "answer": 1 },
+      { "question": "What is 'el extracto'?", "options": ["the receipt", "the bank statement", "the loan agreement", "the credit limit"], "answer": 1 }
+    ]}
+  ]
+}

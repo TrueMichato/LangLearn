@@ -1,0 +1,35 @@
+{
+  "id": "at-the-doctor",
+  "words": [
+    { "word": "doler", "reading": "doh-LEHR", "meaning": "to hurt", "example": "Me duele la cabeza.", "exampleMeaning": "My head hurts." },
+    { "word": "la cita", "reading": "lah SEE-tah", "meaning": "the appointment", "example": "Tengo una cita con el médico.", "exampleMeaning": "I have a doctor's appointment." },
+    { "word": "los síntomas", "reading": "lohs SEEN-toh-mahs", "meaning": "the symptoms", "example": "Describa sus síntomas, por favor.", "exampleMeaning": "Please describe your symptoms." },
+    { "word": "la receta", "reading": "lah reh-SEH-tah", "meaning": "the prescription", "example": "El doctor me dio una receta.", "exampleMeaning": "The doctor gave me a prescription." },
+    { "word": "la fiebre", "reading": "lah FYEH-breh", "meaning": "the fever", "example": "Tengo fiebre desde anoche.", "exampleMeaning": "I've had a fever since last night." },
+    { "word": "el resfriado", "reading": "ehl rehs-free-AH-doh", "meaning": "the cold", "example": "Estoy con un resfriado fuerte.", "exampleMeaning": "I have a bad cold." },
+    { "word": "la tos", "reading": "lah TOHS", "meaning": "the cough", "example": "Tengo una tos persistente.", "exampleMeaning": "I have a persistent cough." },
+    { "word": "la presión arterial", "reading": "lah preh-SYOHN ar-teh-RYAHL", "meaning": "the blood pressure", "example": "Su presión arterial está alta.", "exampleMeaning": "Your blood pressure is high." },
+    { "word": "el análisis de sangre", "reading": "ehl ah-NAH-lee-sees deh SAHN-greh", "meaning": "the blood test", "example": "Necesita un análisis de sangre.", "exampleMeaning": "You need a blood test." },
+    { "word": "recetar", "reading": "reh-seh-TAR", "meaning": "to prescribe", "example": "La doctora me recetó antibióticos.", "exampleMeaning": "The doctor prescribed me antibiotics." },
+    { "word": "la pastilla", "reading": "lah pahs-TEE-yah", "meaning": "the pill", "example": "Tome una pastilla cada ocho horas.", "exampleMeaning": "Take one pill every eight hours." },
+    { "word": "el jarabe", "reading": "ehl hah-RAH-beh", "meaning": "the syrup", "example": "Este jarabe es para la tos.", "exampleMeaning": "This syrup is for the cough." },
+    { "word": "la urgencia", "reading": "lah oor-HEHN-syah", "meaning": "the emergency", "example": "Lo llevaron a urgencias.", "exampleMeaning": "They took him to the emergency room." },
+    { "word": "embarazada", "reading": "ehm-bah-rah-SAH-dah", "meaning": "pregnant", "example": "Mi hermana está embarazada.", "exampleMeaning": "My sister is pregnant." },
+    { "word": "el seguro médico", "reading": "ehl seh-GOO-roh MEH-dee-koh", "meaning": "the medical insurance", "example": "Mi seguro médico cubre la consulta.", "exampleMeaning": "My medical insurance covers the visit." },
+    { "word": "vacunarse", "reading": "bah-koo-NAR-seh", "meaning": "to get vaccinated", "example": "Es importante vacunarse cada año.", "exampleMeaning": "It's important to get vaccinated every year." }
+  ],
+  "exercises": [
+    { "type": "match", "pairs": 5 },
+    { "type": "fill-blank", "items": [
+      { "sentence": "Me ___ la cabeza.", "answer": "duele", "hint": "hurts" },
+      { "sentence": "Tengo ___ desde anoche.", "answer": "fiebre", "hint": "high temperature" },
+      { "sentence": "El doctor me dio una ___.", "answer": "receta", "hint": "prescription" },
+      { "sentence": "Es importante ___ cada año.", "answer": "vacunarse", "hint": "to get a shot" }
+    ]},
+    { "type": "multiple-choice", "items": [
+      { "question": "What is 'la tos'?", "options": ["the fever", "the cough", "the cold", "the pill"], "answer": 1 },
+      { "question": "What does 'embarazada' mean?", "options": ["embarrassed", "pregnant", "sick", "tired"], "answer": 1 },
+      { "question": "What is 'el jarabe'?", "options": ["the pill", "the syrup", "the prescription", "the syringe"], "answer": 1 }
+    ]}
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "id": "false-friends-extended",
+  "words": [
+    { "word": "embarazada", "reading": "ehm-bah-rah-SAH-dah", "meaning": "pregnant (NOT embarrassed)", "example": "Mi prima está embarazada.", "exampleMeaning": "My cousin is pregnant." },
+    { "word": "éxito", "reading": "EHK-see-toh", "meaning": "success (NOT exit)", "example": "La fiesta fue un éxito.", "exampleMeaning": "The party was a success." },
+    { "word": "constipado", "reading": "kohns-tee-PAH-doh", "meaning": "with a cold (NOT constipated)", "example": "Estoy constipado y con tos.", "exampleMeaning": "I have a cold and a cough." },
+    { "word": "sensible", "reading": "sehn-SEE-bleh", "meaning": "sensitive (NOT sensible)", "example": "Es una persona muy sensible.", "exampleMeaning": "He is a very sensitive person." },
+    { "word": "la ropa", "reading": "lah RROH-pah", "meaning": "clothes (NOT rope)", "example": "Voy a lavar la ropa.", "exampleMeaning": "I'm going to wash the clothes." },
+    { "word": "la librería", "reading": "lah lee-breh-REE-ah", "meaning": "bookstore (NOT library)", "example": "Compré un libro en la librería.", "exampleMeaning": "I bought a book at the bookstore." },
+    { "word": "la carpeta", "reading": "lah kar-PEH-tah", "meaning": "folder (NOT carpet)", "example": "Pon los papeles en la carpeta.", "exampleMeaning": "Put the papers in the folder." },
+    { "word": "asistir a", "reading": "ah-sees-TEER ah", "meaning": "to attend (NOT to assist)", "example": "Voy a asistir a la conferencia.", "exampleMeaning": "I'm going to attend the conference." },
+    { "word": "molestar", "reading": "moh-lehs-TAR", "meaning": "to bother (NOT to molest)", "example": "No quiero molestar.", "exampleMeaning": "I don't want to bother you." },
+    { "word": "realizar", "reading": "rreh-ah-lee-SAR", "meaning": "to carry out (NOT to realize)", "example": "Vamos a realizar el proyecto.", "exampleMeaning": "We're going to carry out the project." },
+    { "word": "introducir", "reading": "een-troh-doo-SEER", "meaning": "to insert (NOT to introduce a person)", "example": "Introduce la moneda en la máquina.", "exampleMeaning": "Insert the coin into the machine." },
+    { "word": "recordar", "reading": "rreh-kor-DAR", "meaning": "to remember (NOT to record)", "example": "No puedo recordar su nombre.", "exampleMeaning": "I can't remember his name." },
+    { "word": "los parientes", "reading": "lohs pah-RYEHN-tehs", "meaning": "relatives (NOT parents)", "example": "Mis parientes viven en España.", "exampleMeaning": "My relatives live in Spain." },
+    { "word": "pretender", "reading": "preh-tehn-DEHR", "meaning": "to intend (NOT to pretend)", "example": "Pretendo terminar hoy.", "exampleMeaning": "I intend to finish today." },
+    { "word": "el suceso", "reading": "ehl soo-SEH-soh", "meaning": "event (NOT success)", "example": "El suceso ocurrió ayer.", "exampleMeaning": "The event happened yesterday." },
+    { "word": "discutir", "reading": "dees-koo-TEER", "meaning": "to argue (NOT to discuss calmly)", "example": "Discutimos por una tontería.", "exampleMeaning": "We argued over something silly." },
+    { "word": "actualmente", "reading": "ahk-twahl-MEHN-teh", "meaning": "currently (NOT actually)", "example": "Actualmente vivo en Madrid.", "exampleMeaning": "I currently live in Madrid." },
+    { "word": "enviar", "reading": "ehn-BYAR", "meaning": "to send (NOT envy)", "example": "Voy a enviar el correo ahora.", "exampleMeaning": "I'm going to send the email now." }
+  ],
+  "exercises": [
+    { "type": "match", "pairs": 6 },
+    { "type": "fill-blank", "items": [
+      { "sentence": "Compré un libro en la ___.", "answer": "librería", "hint": "bookstore" },
+      { "sentence": "Voy a ___ a la conferencia.", "answer": "asistir", "hint": "attend" },
+      { "sentence": "No puedo ___ su nombre.", "answer": "recordar", "hint": "remember" },
+      { "sentence": "___ vivo en Madrid.", "answer": "Actualmente", "hint": "currently" }
+    ]},
+    { "type": "multiple-choice", "items": [
+      { "question": "'Embarazada' means…", "options": ["embarrassed", "pregnant", "tired", "lost"], "answer": 1 },
+      { "question": "'Éxito' means…", "options": ["exit", "exam", "success", "exit door"], "answer": 2 },
+      { "question": "'Sensible' means…", "options": ["sensible / reasonable", "sensitive", "silent", "simple"], "answer": 1 }
+    ]}
+  ]
+}

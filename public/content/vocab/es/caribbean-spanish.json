@@ -1,0 +1,35 @@
+{
+  "id": "caribbean-spanish",
+  "words": [
+    { "word": "chévere", "reading": "CHEH-beh-reh", "meaning": "cool (Venezuelan)", "example": "¡Qué chévere tu camisa!", "exampleMeaning": "Your shirt is so cool!" },
+    { "word": "bacán", "reading": "bah-KAHN", "meaning": "cool (Cuban)", "example": "El concierto estuvo bacán.", "exampleMeaning": "The concert was awesome." },
+    { "word": "la guagua", "reading": "lah GWAH-gwah", "meaning": "the bus (Caribbean)", "example": "Tomé la guagua a La Habana.", "exampleMeaning": "I took the bus to Havana." },
+    { "word": "parquear", "reading": "par-keh-AR", "meaning": "to park (Anglicism)", "example": "Voy a parquear el carro aquí.", "exampleMeaning": "I'm going to park the car here." },
+    { "word": "el chamaco", "reading": "ehl chah-MAH-koh", "meaning": "the kid", "example": "El chamaco juega en el patio.", "exampleMeaning": "The kid is playing in the yard." },
+    { "word": "el chinchorro", "reading": "ehl cheen-CHOH-rroh", "meaning": "the hammock", "example": "Me duermo en el chinchorro.", "exampleMeaning": "I fall asleep in the hammock." },
+    { "word": "enchilarse", "reading": "ehn-chee-LAR-seh", "meaning": "to get angry (PR)", "example": "No te enchile por eso.", "exampleMeaning": "Don't get mad about that." },
+    { "word": "brutal", "reading": "broo-TAHL", "meaning": "awesome (PR/DR)", "example": "Esa canción está brutal.", "exampleMeaning": "That song is awesome." },
+    { "word": "guapo", "reading": "GWAH-poh", "meaning": "tough / brave (Cuban)", "example": "Ese tipo se cree muy guapo.", "exampleMeaning": "That guy thinks he's really tough." },
+    { "word": "el reguetón", "reading": "ehl reh-geh-TOHN", "meaning": "the reggaeton (genre)", "example": "Me encanta bailar reguetón.", "exampleMeaning": "I love dancing reggaeton." },
+    { "word": "ajá", "reading": "ah-HAH", "meaning": "yeah / uh-huh", "example": "—¿Vienes? —Ajá.", "exampleMeaning": "—Are you coming? —Yeah." },
+    { "word": "¿cómo es la vaina?", "reading": "KOH-moh ehs lah BAI-nah", "meaning": "how are things? (colloquial)", "example": "¡Oye, hermano! ¿Cómo es la vaina?", "exampleMeaning": "Hey, brother! How are things?" },
+    { "word": "tirar", "reading": "tee-RAR", "meaning": "to hang out / throw", "example": "Vamos a tirar en la playa.", "exampleMeaning": "Let's hang out at the beach." },
+    { "word": "el / la pana", "reading": "ehl / lah PAH-nah", "meaning": "the close friend (DR/PR)", "example": "Ella es mi pana del alma.", "exampleMeaning": "She's my best friend." },
+    { "word": "la ñapa", "reading": "lah NYAH-pah", "meaning": "a little extra (Venezuelan)", "example": "El vendedor me dio una ñapa.", "exampleMeaning": "The vendor gave me a little extra." },
+    { "word": "el pin", "reading": "ehl peen", "meaning": "a tiny bit (Cuban)", "example": "Dame un pin de café.", "exampleMeaning": "Give me a tiny bit of coffee." }
+  ],
+  "exercises": [
+    { "type": "match", "pairs": 5 },
+    { "type": "fill-blank", "items": [
+      { "sentence": "¡Qué ___ tu camisa!", "answer": "chévere", "hint": "Venezuelan 'cool'" },
+      { "sentence": "Tomé la ___ a La Habana.", "answer": "guagua", "hint": "Caribbean bus" },
+      { "sentence": "Ella es mi ___ del alma.", "answer": "pana", "hint": "best friend" },
+      { "sentence": "Me encanta bailar ___.", "answer": "reguetón", "hint": "Caribbean music genre" }
+    ]},
+    { "type": "multiple-choice", "items": [
+      { "question": "What is 'el chinchorro'?", "options": ["the bus", "the hammock", "the kid", "the song"], "answer": 1 },
+      { "question": "What does 'bacán' mean?", "options": ["bad", "cool", "boring", "tasty"], "answer": 1 },
+      { "question": "What is 'la ñapa'?", "options": ["a discount", "a little extra given for free", "a tip", "a coin"], "answer": 1 }
+    ]}
+  ]
+}

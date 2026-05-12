@@ -36,5 +36,17 @@
   { "id": "register-formality", "title": "Register & Formality (tú/usted/vosotros)", "order": 35 },
   { "id": "adverbs", "title": "Adverbs (Adverbios) & -mente Endings", "order": 36 },
   { "id": "negation", "title": "Negation & Double Negatives (no, nada, nunca, nadie)", "order": 37 },
-  { "id": "cognates", "title": "English-Spanish Cognates & False Friends", "order": 38 }
+  { "id": "cognates", "title": "English-Spanish Cognates & False Friends", "order": 38 },
+  { "id": "saber-vs-conocer", "title": "Saber vs Conocer (Two Verbs for 'To Know')", "order": 39 },
+  { "id": "pedir-vs-preguntar", "title": "Pedir vs Preguntar (Two Verbs for 'To Ask')", "order": 40 },
+  { "id": "ser-estar-advanced", "title": "Ser vs Estar — Advanced Distinctions", "order": 41 },
+  { "id": "acabar-de", "title": "Acabar de + Infinitivo (Just Did Something)", "order": 42 },
+  { "id": "llevar-gerundio", "title": "Llevar + Gerundio (Have Been Doing X for Time)", "order": 43 },
+  { "id": "hace-que-time", "title": "Hace + Time + Que / Desde Hace (Time Expressions)", "order": 44 },
+  { "id": "soler-habits", "title": "Soler + Infinitivo (Habitual Actions)", "order": 45 },
+  { "id": "volver-a", "title": "Volver a + Infinitivo (Doing Something Again)", "order": 46 },
+  { "id": "lo-neuter", "title": "Lo + Adjetivo (The Neuter Article 'Lo')", "order": 47 },
+  { "id": "modal-verbs", "title": "Modal Verbs Compared (deber, tener que, hay que, haber de)", "order": 48 },
+  { "id": "stressed-possessives", "title": "Stressed Possessives (el mío, la tuya, etc.)", "order": 49 },
+  { "id": "apocopation", "title": "Apocopation (buen, gran, san, primer, etc.)", "order": 50 }
 ]

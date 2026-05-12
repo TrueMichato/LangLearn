@@ -1,0 +1,35 @@
+{
+  "id": "business-meeting",
+  "words": [
+    { "word": "la reunión", "reading": "lah reh-oo-NYOHN", "meaning": "the meeting", "example": "La reunión empieza a las diez.", "exampleMeaning": "The meeting starts at ten." },
+    { "word": "la agenda", "reading": "lah ah-HEHN-dah", "meaning": "the agenda", "example": "Revisemos la agenda primero.", "exampleMeaning": "Let's review the agenda first." },
+    { "word": "la presentación", "reading": "lah preh-sehn-tah-SYOHN", "meaning": "the presentation", "example": "Voy a preparar la presentación.", "exampleMeaning": "I'm going to prepare the presentation." },
+    { "word": "el cliente", "reading": "ehl klee-EHN-teh", "meaning": "the client", "example": "El cliente llega mañana.", "exampleMeaning": "The client arrives tomorrow." },
+    { "word": "el contrato", "reading": "ehl kohn-TRAH-toh", "meaning": "the contract", "example": "Firmamos el contrato la semana pasada.", "exampleMeaning": "We signed the contract last week." },
+    { "word": "la propuesta", "reading": "lah proh-PWEHS-tah", "meaning": "the proposal", "example": "Aceptaron nuestra propuesta.", "exampleMeaning": "They accepted our proposal." },
+    { "word": "el plazo", "reading": "ehl PLAH-soh", "meaning": "the deadline", "example": "El plazo vence el viernes.", "exampleMeaning": "The deadline is Friday." },
+    { "word": "el presupuesto", "reading": "ehl preh-soo-PWEHS-toh", "meaning": "the budget", "example": "El presupuesto es limitado.", "exampleMeaning": "The budget is limited." },
+    { "word": "negociar", "reading": "neh-goh-SYAR", "meaning": "to negotiate", "example": "Tenemos que negociar el precio.", "exampleMeaning": "We need to negotiate the price." },
+    { "word": "acordar", "reading": "ah-kor-DAR", "meaning": "to agree on", "example": "Acordamos los términos.", "exampleMeaning": "We agreed on the terms." },
+    { "word": "el informe", "reading": "ehl een-FOR-meh", "meaning": "the report", "example": "El informe está listo.", "exampleMeaning": "The report is ready." },
+    { "word": "los resultados", "reading": "lohs reh-sool-TAH-dohs", "meaning": "the results", "example": "Los resultados son positivos.", "exampleMeaning": "The results are positive." },
+    { "word": "el balance", "reading": "ehl bah-LAHN-seh", "meaning": "the balance sheet", "example": "Revisamos el balance del trimestre.", "exampleMeaning": "We reviewed the quarterly balance sheet." },
+    { "word": "el director", "reading": "ehl dee-rehk-TOR", "meaning": "the director", "example": "El director aprobó el plan.", "exampleMeaning": "The director approved the plan." },
+    { "word": "la sucursal", "reading": "lah soo-koor-SAHL", "meaning": "the branch (office)", "example": "Abriremos una sucursal en Lima.", "exampleMeaning": "We'll open a branch in Lima." },
+    { "word": "el correo electrónico", "reading": "ehl koh-RREH-oh eh-lehk-TROH-nee-koh", "meaning": "the email", "example": "Te envío el correo electrónico hoy.", "exampleMeaning": "I'll send you the email today." }
+  ],
+  "exercises": [
+    { "type": "match", "pairs": 5 },
+    { "type": "fill-blank", "items": [
+      { "sentence": "La ___ empieza a las diez.", "answer": "reunión", "hint": "meeting" },
+      { "sentence": "El ___ vence el viernes.", "answer": "plazo", "hint": "deadline" },
+      { "sentence": "Tenemos que ___ el precio.", "answer": "negociar", "hint": "discuss terms" },
+      { "sentence": "El ___ es limitado.", "answer": "presupuesto", "hint": "money available" }
+    ]},
+    { "type": "multiple-choice", "items": [
+      { "question": "What is 'la propuesta'?", "options": ["the report", "the proposal", "the project", "the price"], "answer": 1 },
+      { "question": "What does 'acordar' mean?", "options": ["to remember", "to record", "to agree on", "to refuse"], "answer": 2 },
+      { "question": "What is 'la sucursal'?", "options": ["the headquarters", "the branch office", "the warehouse", "the meeting room"], "answer": 1 }
+    ]}
+  ]
+}

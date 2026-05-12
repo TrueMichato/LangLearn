@@ -285,5 +285,89 @@
     "order": 41,
     "wordCount": 16,
     "level": "beginner"
+  },
+  {
+    "id": "at-the-airport",
+    "title": "At the Airport (Phrasebook)",
+    "order": 42,
+    "wordCount": 16,
+    "level": "beginner"
+  },
+  {
+    "id": "at-the-hotel",
+    "title": "At the Hotel (Phrasebook)",
+    "order": 43,
+    "wordCount": 16,
+    "level": "beginner"
+  },
+  {
+    "id": "at-the-doctor",
+    "title": "At the Doctor (Phrasebook)",
+    "order": 44,
+    "wordCount": 16,
+    "level": "intermediate"
+  },
+  {
+    "id": "renting-apartment",
+    "title": "Renting an Apartment (Phrasebook)",
+    "order": 45,
+    "wordCount": 16,
+    "level": "intermediate"
+  },
+  {
+    "id": "business-meeting",
+    "title": "Business Meeting (Phrasebook)",
+    "order": 46,
+    "wordCount": 16,
+    "level": "intermediate"
+  },
+  {
+    "id": "atm-banking",
+    "title": "ATM & Banking (Phrasebook)",
+    "order": 47,
+    "wordCount": 16,
+    "level": "intermediate"
+  },
+  {
+    "id": "mexican-slang",
+    "title": "Mexican Slang & Modismos",
+    "order": 48,
+    "wordCount": 17,
+    "level": "intermediate"
+  },
+  {
+    "id": "argentinian-slang",
+    "title": "Argentinian Slang (Lunfardo)",
+    "order": 49,
+    "wordCount": 17,
+    "level": "intermediate"
+  },
+  {
+    "id": "caribbean-spanish",
+    "title": "Caribbean Spanish Vocabulary",
+    "order": 50,
+    "wordCount": 16,
+    "level": "intermediate"
+  },
+  {
+    "id": "false-friends-extended",
+    "title": "False Friends Extended",
+    "order": 51,
+    "wordCount": 18,
+    "level": "beginner"
+  },
+  {
+    "id": "professional-business",
+    "title": "Professional & Business Vocabulary",
+    "order": 52,
+    "wordCount": 17,
+    "level": "intermediate"
+  },
+  {
+    "id": "legal-government",
+    "title": "Legal & Government Vocabulary",
+    "order": 53,
+    "wordCount": 16,
+    "level": "advanced"
   }
 ]

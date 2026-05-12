@@ -89,6 +89,78 @@
       "wordCount": 280,
       "tags": ["correspondence", "travel"],
       "description": "A personal letter from someone visiting Buenos Aires for the first time"
+    },
+    {
+      "id": "el-raton-perez",
+      "title": "El Ratón Pérez",
+      "titleEn": "The Mouse Pérez",
+      "difficulty": "easy",
+      "wordCount": 100,
+      "tags": ["children", "folklore", "traditions"],
+      "description": "The Hispanic version of the tooth fairy: a little mouse who collects baby teeth and leaves a coin"
+    },
+    {
+      "id": "la-tortuga-y-la-liebre",
+      "title": "La Tortuga y la Liebre",
+      "titleEn": "The Tortoise and the Hare",
+      "difficulty": "easy",
+      "wordCount": 110,
+      "tags": ["children", "fable"],
+      "description": "A simple retelling of Aesop's classic fable, ending with the moral that slow and steady wins the race"
+    },
+    {
+      "id": "el-cumpleanos-sorpresa",
+      "title": "El Cumpleaños Sorpresa",
+      "titleEn": "The Surprise Birthday",
+      "difficulty": "easy",
+      "wordCount": 90,
+      "tags": ["children", "daily-life"],
+      "description": "A child and his dad prepare a surprise birthday party at home for mom"
+    },
+    {
+      "id": "tango-buenos-aires",
+      "title": "El Tango en Buenos Aires",
+      "titleEn": "Tango in Buenos Aires",
+      "difficulty": "medium",
+      "wordCount": 200,
+      "tags": ["culture", "music", "history"],
+      "description": "A magazine-style article on the origins of tango, its great figures and its UNESCO recognition"
+    },
+    {
+      "id": "frida-kahlo",
+      "title": "Frida Kahlo: Pintora Mexicana",
+      "titleEn": "Frida Kahlo: Mexican Painter",
+      "difficulty": "medium",
+      "wordCount": 200,
+      "tags": ["culture", "biography", "art"],
+      "description": "A short biography of Frida Kahlo, from her accident in Coyoacán to her global fame"
+    },
+    {
+      "id": "pueblo-fantasma-parte1",
+      "title": "El Pueblo Fantasma — Parte 1",
+      "titleEn": "The Ghost Town — Part 1",
+      "difficulty": "medium",
+      "wordCount": 220,
+      "tags": ["narrative", "mystery", "serial"],
+      "description": "A young journalist drives into an abandoned northern mining town and finds an unexpected light in one window"
+    },
+    {
+      "id": "pueblo-fantasma-parte2",
+      "title": "El Pueblo Fantasma — Parte 2",
+      "titleEn": "The Ghost Town — Part 2",
+      "difficulty": "hard",
+      "wordCount": 280,
+      "tags": ["narrative", "mystery", "serial"],
+      "description": "The journalist meets the last resident of the ghost town and learns the truth, in a story rich with past tenses and subjunctive"
+    },
+    {
+      "id": "rima-becquer",
+      "title": "Volverán las Oscuras Golondrinas",
+      "titleEn": "Will Return the Dark Swallows",
+      "difficulty": "hard",
+      "wordCount": 120,
+      "tags": ["literature", "poetry", "classic"],
+      "description": "A short introduction to Bécquer's Rima LIII with the opening stanzas and an annotated explanation"
     }
   ]
 }

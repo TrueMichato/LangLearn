@@ -1,0 +1,35 @@
+{
+  "id": "renting-apartment",
+  "words": [
+    { "word": "el alquiler", "reading": "ehl ahl-kee-LEHR", "meaning": "the rent", "example": "El alquiler es muy caro en esta zona.", "exampleMeaning": "Rent is very expensive in this area." },
+    { "word": "el contrato", "reading": "ehl kohn-TRAH-toh", "meaning": "the contract", "example": "Hay que firmar el contrato hoy.", "exampleMeaning": "We have to sign the contract today." },
+    { "word": "el depósito", "reading": "ehl deh-POH-see-toh", "meaning": "the deposit", "example": "Pagué un mes de depósito.", "exampleMeaning": "I paid one month's deposit." },
+    { "word": "el dueño", "reading": "ehl DWEH-nyoh", "meaning": "the owner / landlord", "example": "El dueño vive en otro país.", "exampleMeaning": "The owner lives in another country." },
+    { "word": "el inquilino", "reading": "ehl een-kee-LEE-noh", "meaning": "the tenant", "example": "El inquilino paga el primero de mes.", "exampleMeaning": "The tenant pays on the first of the month." },
+    { "word": "los servicios incluidos", "reading": "lohs sehr-BEE-syohs een-KLOO-ee-dohs", "meaning": "utilities included", "example": "El piso tiene los servicios incluidos.", "exampleMeaning": "The flat has utilities included." },
+    { "word": "amueblado", "reading": "ah-mweh-BLAH-doh", "meaning": "furnished", "example": "Busco un piso amueblado.", "exampleMeaning": "I'm looking for a furnished flat." },
+    { "word": "las facturas", "reading": "lahs fahk-TOO-rahs", "meaning": "the bills", "example": "Las facturas llegan cada mes.", "exampleMeaning": "The bills come every month." },
+    { "word": "mudarse", "reading": "moo-DAR-seh", "meaning": "to move (house)", "example": "Nos vamos a mudar en junio.", "exampleMeaning": "We're going to move in June." },
+    { "word": "mensual", "reading": "mehn-SWAHL", "meaning": "monthly", "example": "El pago es mensual.", "exampleMeaning": "The payment is monthly." },
+    { "word": "firmar", "reading": "feer-MAR", "meaning": "to sign", "example": "Tienes que firmar aquí.", "exampleMeaning": "You have to sign here." },
+    { "word": "las normas", "reading": "lahs NOR-mahs", "meaning": "the rules", "example": "Lee las normas del edificio.", "exampleMeaning": "Read the building rules." },
+    { "word": "la comunidad de vecinos", "reading": "lah koh-moo-nee-DAHD deh beh-SEE-nohs", "meaning": "the homeowners association", "example": "La comunidad de vecinos se reúne mañana.", "exampleMeaning": "The homeowners association meets tomorrow." },
+    { "word": "la fianza", "reading": "lah FYAHN-sah", "meaning": "the security deposit", "example": "Te devolverán la fianza al final.", "exampleMeaning": "They'll return the security deposit at the end." },
+    { "word": "los gastos comunes", "reading": "lohs GAHS-tohs koh-MOO-nehs", "meaning": "the common fees", "example": "Los gastos comunes incluyen la limpieza.", "exampleMeaning": "The common fees include cleaning." },
+    { "word": "anunciar", "reading": "ah-noon-SYAR", "meaning": "to advertise / list", "example": "Voy a anunciar el piso en internet.", "exampleMeaning": "I'm going to list the flat online." }
+  ],
+  "exercises": [
+    { "type": "match", "pairs": 5 },
+    { "type": "fill-blank", "items": [
+      { "sentence": "El ___ es muy caro en esta zona.", "answer": "alquiler", "hint": "monthly housing fee" },
+      { "sentence": "Tienes que ___ aquí.", "answer": "firmar", "hint": "put your signature" },
+      { "sentence": "Nos vamos a ___ en junio.", "answer": "mudar", "hint": "change homes" },
+      { "sentence": "Busco un piso ___.", "answer": "amueblado", "hint": "with furniture" }
+    ]},
+    { "type": "multiple-choice", "items": [
+      { "question": "What is 'el inquilino'?", "options": ["the owner", "the tenant", "the neighbor", "the agent"], "answer": 1 },
+      { "question": "What does 'mensual' mean?", "options": ["weekly", "yearly", "monthly", "daily"], "answer": 2 },
+      { "question": "What is 'la fianza'?", "options": ["the rent", "the security deposit", "the contract", "the bill"], "answer": 1 }
+    ]}
+  ]
+}

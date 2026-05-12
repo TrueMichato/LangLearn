@@ -1,0 +1,35 @@
+{
+  "id": "at-the-hotel",
+  "words": [
+    { "word": "la habitación", "reading": "lah ah-bee-tah-SYOHN", "meaning": "the room", "example": "Mi habitación tiene vista al mar.", "exampleMeaning": "My room has a sea view." },
+    { "word": "la reserva", "reading": "lah reh-SEHR-bah", "meaning": "the reservation", "example": "Tengo una reserva a nombre de López.", "exampleMeaning": "I have a reservation under López." },
+    { "word": "registrarse", "reading": "reh-hees-TRAR-seh", "meaning": "to check in", "example": "Voy a registrarme en el hotel.", "exampleMeaning": "I'm going to check in at the hotel." },
+    { "word": "la llave", "reading": "lah YAH-beh", "meaning": "the key", "example": "Perdí la llave de la habitación.", "exampleMeaning": "I lost the room key." },
+    { "word": "la tarjeta", "reading": "lah tar-HEH-tah", "meaning": "the keycard", "example": "La tarjeta abre la puerta.", "exampleMeaning": "The keycard opens the door." },
+    { "word": "el ascensor", "reading": "ehl ah-sehn-SOR", "meaning": "the elevator", "example": "El ascensor está al fondo.", "exampleMeaning": "The elevator is at the back." },
+    { "word": "el desayuno incluido", "reading": "ehl deh-sah-YOO-noh een-KLOO-ee-doh", "meaning": "breakfast included", "example": "La tarifa tiene desayuno incluido.", "exampleMeaning": "The rate includes breakfast." },
+    { "word": "la recepción", "reading": "lah reh-sehp-SYOHN", "meaning": "the reception", "example": "Pregunte en la recepción.", "exampleMeaning": "Ask at the reception." },
+    { "word": "el conserje", "reading": "ehl kohn-SEHR-heh", "meaning": "the concierge", "example": "El conserje nos recomendó un restaurante.", "exampleMeaning": "The concierge recommended a restaurant." },
+    { "word": "la piscina", "reading": "lah pee-SEE-nah", "meaning": "the pool", "example": "La piscina abre a las nueve.", "exampleMeaning": "The pool opens at nine." },
+    { "word": "el wifi", "reading": "ehl WEE-fee", "meaning": "the Wi-Fi", "example": "¿Cuál es la contraseña del wifi?", "exampleMeaning": "What's the Wi-Fi password?" },
+    { "word": "la habitación doble", "reading": "lah ah-bee-tah-SYOHN DOH-bleh", "meaning": "the double room", "example": "Reservamos una habitación doble.", "exampleMeaning": "We booked a double room." },
+    { "word": "la cama matrimonial", "reading": "lah KAH-mah mah-tree-moh-NYAHL", "meaning": "the queen/king bed", "example": "Prefiero una cama matrimonial.", "exampleMeaning": "I prefer a queen-size bed." },
+    { "word": "el cargo", "reading": "ehl KAR-goh", "meaning": "the charge", "example": "Hay un cargo extra por el minibar.", "exampleMeaning": "There's an extra charge for the minibar." },
+    { "word": "dejar la habitación", "reading": "deh-HAR lah ah-bee-tah-SYOHN", "meaning": "to check out", "example": "Debo dejar la habitación antes del mediodía.", "exampleMeaning": "I must check out before noon." },
+    { "word": "el servicio a la habitación", "reading": "ehl sehr-BEE-syoh ah lah ah-bee-tah-SYOHN", "meaning": "room service", "example": "Pedí el servicio a la habitación.", "exampleMeaning": "I ordered room service." }
+  ],
+  "exercises": [
+    { "type": "match", "pairs": 5 },
+    { "type": "fill-blank", "items": [
+      { "sentence": "Tengo una ___ a nombre de López.", "answer": "reserva", "hint": "booking" },
+      { "sentence": "¿Cuál es la contraseña del ___?", "answer": "wifi", "hint": "internet" },
+      { "sentence": "Debo dejar la ___ antes del mediodía.", "answer": "habitación", "hint": "room" },
+      { "sentence": "Pregunte en la ___.", "answer": "recepción", "hint": "front desk" }
+    ]},
+    { "type": "multiple-choice", "items": [
+      { "question": "What does 'registrarse' mean?", "options": ["to check out", "to check in", "to reserve", "to pay"], "answer": 1 },
+      { "question": "What is 'la llave'?", "options": ["the lock", "the door", "the key", "the bed"], "answer": 2 },
+      { "question": "Where do you swim?", "options": ["la recepción", "la piscina", "el ascensor", "la cama"], "answer": 1 }
+    ]}
+  ]
+}

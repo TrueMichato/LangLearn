@@ -1,0 +1,36 @@
+{
+  "id": "professional-business",
+  "words": [
+    { "word": "la empresa", "reading": "lah ehm-PREH-sah", "meaning": "the company", "example": "Trabajo en una empresa grande.", "exampleMeaning": "I work at a large company." },
+    { "word": "el / la jefe(a)", "reading": "ehl / lah HEH-feh / HEH-fah", "meaning": "the boss", "example": "Mi jefa es muy exigente.", "exampleMeaning": "My boss is very demanding." },
+    { "word": "el / la gerente", "reading": "ehl / lah heh-REHN-teh", "meaning": "the manager", "example": "Hable con el gerente, por favor.", "exampleMeaning": "Please speak with the manager." },
+    { "word": "los recursos humanos", "reading": "lohs reh-KOOR-sohs oo-MAH-nohs", "meaning": "human resources", "example": "Envía el currículum a recursos humanos.", "exampleMeaning": "Send your CV to HR." },
+    { "word": "el currículum vitae", "reading": "ehl koo-RREE-koo-loom BEE-tai", "meaning": "the résumé / CV", "example": "Actualicé mi currículum vitae.", "exampleMeaning": "I updated my CV." },
+    { "word": "la entrevista", "reading": "lah ehn-treh-BEES-tah", "meaning": "the interview", "example": "Tengo una entrevista el lunes.", "exampleMeaning": "I have an interview on Monday." },
+    { "word": "el contrato laboral", "reading": "ehl kohn-TRAH-toh lah-boh-RAHL", "meaning": "the employment contract", "example": "Firmé el contrato laboral ayer.", "exampleMeaning": "I signed the employment contract yesterday." },
+    { "word": "la nómina", "reading": "lah NOH-mee-nah", "meaning": "the payroll / payslip", "example": "Recibo la nómina cada mes.", "exampleMeaning": "I receive my payslip every month." },
+    { "word": "el salario", "reading": "ehl sah-LAH-ryoh", "meaning": "the salary", "example": "El salario es competitivo.", "exampleMeaning": "The salary is competitive." },
+    { "word": "los beneficios", "reading": "lohs beh-neh-FEE-syohs", "meaning": "the benefits", "example": "La empresa ofrece muchos beneficios.", "exampleMeaning": "The company offers many benefits." },
+    { "word": "ascender", "reading": "ah-sehn-DEHR", "meaning": "to get promoted", "example": "Ascendió a directora.", "exampleMeaning": "She got promoted to director." },
+    { "word": "despedir", "reading": "dehs-peh-DEER", "meaning": "to fire", "example": "Lo van a despedir mañana.", "exampleMeaning": "They're going to fire him tomorrow." },
+    { "word": "dimitir", "reading": "dee-mee-TEER", "meaning": "to resign", "example": "Decidí dimitir del puesto.", "exampleMeaning": "I decided to resign from the position." },
+    { "word": "la jubilación", "reading": "lah hoo-bee-lah-SYOHN", "meaning": "the retirement", "example": "Llegó a la jubilación con honores.", "exampleMeaning": "He reached retirement with honors." },
+    { "word": "el sindicato", "reading": "ehl seen-dee-KAH-toh", "meaning": "the labor union", "example": "El sindicato negocia los salarios.", "exampleMeaning": "The union negotiates salaries." },
+    { "word": "el / la colega", "reading": "ehl / lah koh-LEH-gah", "meaning": "the colleague", "example": "Mis colegas son muy amables.", "exampleMeaning": "My colleagues are very kind." },
+    { "word": "la sucursal", "reading": "lah soo-koor-SAHL", "meaning": "the branch office", "example": "Trabajo en la sucursal de Madrid.", "exampleMeaning": "I work at the Madrid branch." }
+  ],
+  "exercises": [
+    { "type": "match", "pairs": 5 },
+    { "type": "fill-blank", "items": [
+      { "sentence": "Tengo una ___ el lunes.", "answer": "entrevista", "hint": "job interview" },
+      { "sentence": "Recibo la ___ cada mes.", "answer": "nómina", "hint": "payslip" },
+      { "sentence": "Decidí ___ del puesto.", "answer": "dimitir", "hint": "quit voluntarily" },
+      { "sentence": "Actualicé mi ___.", "answer": "currículum", "hint": "CV / résumé" }
+    ]},
+    { "type": "multiple-choice", "items": [
+      { "question": "What does 'ascender' mean here?", "options": ["to climb", "to get promoted", "to resign", "to retire"], "answer": 1 },
+      { "question": "What is 'el / la colega'?", "options": ["the boss", "the colleague", "the client", "the intern"], "answer": 1 },
+      { "question": "What does 'la jubilación' mean?", "options": ["the vacation", "the bonus", "the retirement", "the layoff"], "answer": 2 }
+    ]}
+  ]
+}
