@@ -6,7 +6,10 @@
       "titleEn": "Self-Introduction",
       "difficulty": "easy",
       "wordCount": 80,
-      "tags": ["daily-life", "conversation"],
+      "tags": [
+        "daily-life",
+        "conversation"
+      ],
       "description": "A simple self-introduction in neutral Spanish from a young woman in Mexico City"
     },
     {
@@ -15,7 +18,9 @@
       "titleEn": "My Day",
       "difficulty": "easy",
       "wordCount": 100,
-      "tags": ["daily-life"],
+      "tags": [
+        "daily-life"
+      ],
       "description": "A typical weekday from morning to evening in present tense"
     },
     {
@@ -24,7 +29,10 @@
       "titleEn": "At the Market",
       "difficulty": "easy",
       "wordCount": 90,
-      "tags": ["daily-life", "conversation"],
+      "tags": [
+        "daily-life",
+        "conversation"
+      ],
       "description": "A short dialogue about buying fruit and bargaining at a Mexican market"
     },
     {
@@ -33,7 +41,10 @@
       "titleEn": "The Day of the Dead",
       "difficulty": "medium",
       "wordCount": 200,
-      "tags": ["culture", "traditions"],
+      "tags": [
+        "culture",
+        "traditions"
+      ],
       "description": "An explanation of the Mexican Day of the Dead, with ofrendas, cempasúchil and pan de muerto"
     },
     {
@@ -42,7 +53,10 @@
       "titleEn": "The Weeping Woman",
       "difficulty": "medium",
       "wordCount": 220,
-      "tags": ["culture", "folklore"],
+      "tags": [
+        "culture",
+        "folklore"
+      ],
       "description": "A retelling of the colonial-era legend of the wailing woman who wanders the rivers"
     },
     {
@@ -51,7 +65,10 @@
       "titleEn": "Mexico City",
       "difficulty": "medium",
       "wordCount": 200,
-      "tags": ["travel", "geography"],
+      "tags": [
+        "travel",
+        "geography"
+      ],
       "description": "A travel guide to Mexico City's main sights, food and cultural calendar"
     },
     {
@@ -60,7 +77,10 @@
       "titleEn": "Mexican Food",
       "difficulty": "medium",
       "wordCount": 180,
-      "tags": ["culture", "food"],
+      "tags": [
+        "culture",
+        "food"
+      ],
       "description": "An article about traditional Mexican cuisine and its regional variations"
     },
     {
@@ -69,7 +89,10 @@
       "titleEn": "School Life",
       "difficulty": "medium",
       "wordCount": 200,
-      "tags": ["education", "daily-life"],
+      "tags": [
+        "education",
+        "daily-life"
+      ],
       "description": "How primary and secondary school works for kids in Mexico and Latin America"
     },
     {
@@ -78,7 +101,10 @@
       "titleEn": "Technology in Latin America",
       "difficulty": "hard",
       "wordCount": 300,
-      "tags": ["technology", "business"],
+      "tags": [
+        "technology",
+        "business"
+      ],
       "description": "An article about the rise of tech startups and fintech across Latin America"
     },
     {
@@ -87,7 +113,10 @@
       "titleEn": "Letter to a Friend",
       "difficulty": "hard",
       "wordCount": 280,
-      "tags": ["correspondence", "travel"],
+      "tags": [
+        "correspondence",
+        "travel"
+      ],
       "description": "A personal letter from someone visiting Buenos Aires for the first time"
     },
     {
@@ -96,7 +125,11 @@
       "titleEn": "The Mouse Pérez",
       "difficulty": "easy",
       "wordCount": 100,
-      "tags": ["children", "folklore", "traditions"],
+      "tags": [
+        "children",
+        "folklore",
+        "traditions"
+      ],
       "description": "The Hispanic version of the tooth fairy: a little mouse who collects baby teeth and leaves a coin"
     },
     {
@@ -105,7 +138,10 @@
       "titleEn": "The Tortoise and the Hare",
       "difficulty": "easy",
       "wordCount": 110,
-      "tags": ["children", "fable"],
+      "tags": [
+        "children",
+        "fable"
+      ],
       "description": "A simple retelling of Aesop's classic fable, ending with the moral that slow and steady wins the race"
     },
     {
@@ -114,7 +150,10 @@
       "titleEn": "The Surprise Birthday",
       "difficulty": "easy",
       "wordCount": 90,
-      "tags": ["children", "daily-life"],
+      "tags": [
+        "children",
+        "daily-life"
+      ],
       "description": "A child and his dad prepare a surprise birthday party at home for mom"
     },
     {
@@ -123,7 +162,11 @@
       "titleEn": "Tango in Buenos Aires",
       "difficulty": "medium",
       "wordCount": 200,
-      "tags": ["culture", "music", "history"],
+      "tags": [
+        "culture",
+        "music",
+        "history"
+      ],
       "description": "A magazine-style article on the origins of tango, its great figures and its UNESCO recognition"
     },
     {
@@ -132,7 +175,11 @@
       "titleEn": "Frida Kahlo: Mexican Painter",
       "difficulty": "medium",
       "wordCount": 200,
-      "tags": ["culture", "biography", "art"],
+      "tags": [
+        "culture",
+        "biography",
+        "art"
+      ],
       "description": "A short biography of Frida Kahlo, from her accident in Coyoacán to her global fame"
     },
     {
@@ -141,7 +188,11 @@
       "titleEn": "The Ghost Town — Part 1",
       "difficulty": "medium",
       "wordCount": 220,
-      "tags": ["narrative", "mystery", "serial"],
+      "tags": [
+        "narrative",
+        "mystery",
+        "serial"
+      ],
       "description": "A young journalist drives into an abandoned northern mining town and finds an unexpected light in one window"
     },
     {
@@ -150,7 +201,11 @@
       "titleEn": "The Ghost Town — Part 2",
       "difficulty": "hard",
       "wordCount": 280,
-      "tags": ["narrative", "mystery", "serial"],
+      "tags": [
+        "narrative",
+        "mystery",
+        "serial"
+      ],
       "description": "The journalist meets the last resident of the ghost town and learns the truth, in a story rich with past tenses and subjunctive"
     },
     {
@@ -159,7 +214,11 @@
       "titleEn": "The Ghost Town — Part 3",
       "difficulty": "medium",
       "wordCount": 240,
-      "tags": ["narrative", "mystery", "serial"],
+      "tags": [
+        "narrative",
+        "mystery",
+        "serial"
+      ],
       "description": "Marta explores the abandoned town with the old man (Part 3 of 6)"
     },
     {
@@ -168,7 +227,11 @@
       "titleEn": "The Ghost Town — Part 4",
       "difficulty": "hard",
       "wordCount": 280,
-      "tags": ["narrative", "mystery", "serial"],
+      "tags": [
+        "narrative",
+        "mystery",
+        "serial"
+      ],
       "description": "A discovery shifts Marta's understanding (Part 4 of 6)"
     },
     {
@@ -177,7 +240,11 @@
       "titleEn": "The Ghost Town — Part 5",
       "difficulty": "hard",
       "wordCount": 280,
-      "tags": ["narrative", "mystery", "serial"],
+      "tags": [
+        "narrative",
+        "mystery",
+        "serial"
+      ],
       "description": "Revelations and a moral choice (Part 5 of 6)"
     },
     {
@@ -186,7 +253,11 @@
       "titleEn": "The Ghost Town — Part 6 (Conclusion)",
       "difficulty": "hard",
       "wordCount": 280,
-      "tags": ["narrative", "mystery", "serial"],
+      "tags": [
+        "narrative",
+        "mystery",
+        "serial"
+      ],
       "description": "Resolution and aftermath — the serial concludes (Part 6 of 6)"
     },
     {
@@ -195,7 +266,11 @@
       "titleEn": "Will Return the Dark Swallows",
       "difficulty": "hard",
       "wordCount": 120,
-      "tags": ["literature", "poetry", "classic"],
+      "tags": [
+        "literature",
+        "poetry",
+        "classic"
+      ],
       "description": "A short introduction to Bécquer's Rima LIII with the opening stanzas and an annotated explanation"
     },
     {
@@ -204,7 +279,12 @@
       "titleEn": "Climate Change (Easy Level)",
       "difficulty": "easy",
       "wordCount": 80,
-      "tags": ["environment", "climate", "graded-easy", "graded-climate"],
+      "tags": [
+        "environment",
+        "climate",
+        "graded-easy",
+        "graded-climate"
+      ],
       "description": "Same topic at three reading levels — easy version covers the basics of climate change in Latin America"
     },
     {
@@ -213,7 +293,12 @@
       "titleEn": "Climate Change (Medium Level)",
       "difficulty": "medium",
       "wordCount": 200,
-      "tags": ["environment", "climate", "graded-medium", "graded-climate"],
+      "tags": [
+        "environment",
+        "climate",
+        "graded-medium",
+        "graded-climate"
+      ],
       "description": "Same topic at three reading levels — medium version adds regional examples and policy"
     },
     {
@@ -222,7 +307,12 @@
       "titleEn": "Climate Change (Advanced Level)",
       "difficulty": "hard",
       "wordCount": 300,
-      "tags": ["environment", "climate", "graded-hard", "graded-climate"],
+      "tags": [
+        "environment",
+        "climate",
+        "graded-hard",
+        "graded-climate"
+      ],
       "description": "Same topic at three reading levels — hard version uses subjunctive and complex syntax"
     },
     {
@@ -231,7 +321,12 @@
       "titleEn": "Pre-Columbian Civilizations (Easy Level)",
       "difficulty": "easy",
       "wordCount": 80,
-      "tags": ["history", "culture", "graded-easy", "graded-precolumbian"],
+      "tags": [
+        "history",
+        "culture",
+        "graded-easy",
+        "graded-precolumbian"
+      ],
       "description": "Same topic at three reading levels — easy version introduces Maya, Aztec, and Inca"
     },
     {
@@ -240,7 +335,12 @@
       "titleEn": "Pre-Columbian Civilizations (Medium Level)",
       "difficulty": "medium",
       "wordCount": 200,
-      "tags": ["history", "culture", "graded-medium", "graded-precolumbian"],
+      "tags": [
+        "history",
+        "culture",
+        "graded-medium",
+        "graded-precolumbian"
+      ],
       "description": "Same topic at three reading levels — medium version covers each civilization in detail"
     },
     {
@@ -249,8 +349,89 @@
       "titleEn": "Pre-Columbian Civilizations (Advanced Level)",
       "difficulty": "hard",
       "wordCount": 300,
-      "tags": ["history", "culture", "graded-hard", "graded-precolumbian"],
+      "tags": [
+        "history",
+        "culture",
+        "graded-hard",
+        "graded-precolumbian"
+      ],
       "description": "Same topic at three reading levels — hard version uses academic register and decolonial framing"
+    },
+    {
+      "id": "cervantes-molinos",
+      "title": "Don Quijote: La Aventura de los Molinos (Cervantes)",
+      "titleEn": "Don Quixote: The Windmill Adventure",
+      "difficulty": "hard",
+      "wordCount": 330,
+      "tags": [
+        "literature",
+        "prose",
+        "classic",
+        "spain",
+        "cervantes"
+      ],
+      "description": "Cervantes' iconic windmill scene from Don Quixote Part I Chapter VIII (1605), with annotations of archaic forms"
+    },
+    {
+      "id": "sor-juana-hombres-necios",
+      "title": "Hombres Necios (Sor Juana Inés de la Cruz)",
+      "titleEn": "Foolish Men (Sor Juana)",
+      "difficulty": "hard",
+      "wordCount": 280,
+      "tags": [
+        "literature",
+        "poetry",
+        "classic",
+        "mexico",
+        "feminism",
+        "baroque"
+      ],
+      "description": "Opening quatrains of Sor Juana's 1690s proto-feminist poem with cultural and structural commentary"
+    },
+    {
+      "id": "marti-versos-sencillos",
+      "title": "Versos Sencillos (José Martí)",
+      "titleEn": "Simple Verses (Martí)",
+      "difficulty": "hard",
+      "wordCount": 300,
+      "tags": [
+        "literature",
+        "poetry",
+        "classic",
+        "cuba",
+        "independence"
+      ],
+      "description": "Opening stanzas of Martí's 1891 poem cycle — source of the song Guantanamera"
+    },
+    {
+      "id": "martin-fierro",
+      "title": "El Gaucho Martín Fierro (José Hernández)",
+      "titleEn": "The Gaucho Martín Fierro",
+      "difficulty": "hard",
+      "wordCount": 340,
+      "tags": [
+        "literature",
+        "poetry",
+        "classic",
+        "argentina",
+        "gaucho"
+      ],
+      "description": "Opening sextets of Argentina's 1872 national poem with gauchesque-Spanish annotation"
+    },
+    {
+      "id": "dario-sonatina",
+      "title": "Sonatina (Rubén Darío)",
+      "titleEn": "Sonatina (Darío)",
+      "difficulty": "hard",
+      "wordCount": 310,
+      "tags": [
+        "literature",
+        "poetry",
+        "classic",
+        "nicaragua",
+        "modernism"
+      ],
+      "description": "The famous opening sextets of Darío's 1896 modernist masterpiece with metrical and historical context"
     }
   ]
 }
