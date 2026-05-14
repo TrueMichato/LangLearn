@@ -143,7 +143,7 @@ Error:    bg-red-100 dark:bg-red-900/50 text-red-800 dark:text-red-200
 
 Three-tier delivery (see `docs/notifications.md` for full details):
 
-1. **Cloud reminders** — Web Push from `infra/push-worker/` (Cloudflare Worker + KV + 15-min cron). The only mechanism that fires reliably while the app is fully closed across browsers/iOS. Requires `VITE_VAPID_PUBLIC` + `VITE_PUSH_API_URL` env vars at build time.
+1. **Cloud reminders** — Web Push from `infra/push-worker/` (Cloudflare Worker + KV + 5-min cron). The only mechanism that fires reliably while the app is fully closed across browsers/iOS. Requires `VITE_VAPID_PUBLIC` + `VITE_PUSH_API_URL` env vars at build time. **TZ-aware**: client sends `prefs.timezone` (IANA name); worker schedules wall-clock times in the user's TZ via `tz.ts` helpers. Worker also recovers from stale per-subscription state by zeroing day-scoped fields when `lastActiveDate < todayLocal`.
 2. **TimestampTrigger** — pre-scheduled client-side notifications. Chromium with experimental flag only. Suppressed when cloud is active to avoid double-firing.
 3. **Periodic Background Sync** — installed Chromium PWAs only, best-effort.
 

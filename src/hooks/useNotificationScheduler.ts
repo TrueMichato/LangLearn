@@ -18,6 +18,12 @@ import {
 
 function buildPrefs(): FullPrefs {
   const s = useSettingsStore.getState();
+  let timezone = 'UTC';
+  try {
+    timezone = Intl.DateTimeFormat().resolvedOptions().timeZone || 'UTC';
+  } catch {
+    // ignore — keep UTC fallback
+  }
   return {
     notificationsEnabled: s.notificationsEnabled,
     dailyReminderTime: s.dailyReminderTime,
@@ -35,6 +41,7 @@ function buildPrefs(): FullPrefs {
     streakMilestoneAlerts: s.streakMilestoneAlerts,
     dailyGoalMinutes: s.dailyGoalMinutes,
     weeklyGoalMinutes: s.weeklyGoalMinutes,
+    timezone,
   };
 }
 

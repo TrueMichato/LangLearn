@@ -1,4 +1,11 @@
 import type { NotificationPrefs } from './notification-presets';
+import {
+  partsInTz,
+  wallClockToUtcMs,
+  localDateKey,
+  daysBetweenIso,
+  defaultTz,
+} from './tz';
 
 /**
  * Categories of habit-supporting notifications. Each has a stable `tag`
@@ -81,8 +88,10 @@ function parseHM(s: string): number {
   return (h || 0) * 60 + (m || 0);
 }
 
-export function isInQuietHours(now: Date, start: string, end: string): boolean {
-  const cur = now.getHours() * 60 + now.getMinutes();
+export function isInQuietHours(now: Date, start: string, end: string, tz?: string): boolean {
+  const z = tz ?? defaultTz();
+  const p = partsInTz(now.getTime(), z);
+  const cur = p.hour * 60 + p.minute;
   const s = parseHM(start);
   const e = parseHM(end);
   if (s === e) return false;
@@ -92,16 +101,20 @@ export function isInQuietHours(now: Date, start: string, end: string): boolean {
 }
 
 /** Round forward to the end of the quiet window if `when` falls inside it. */
-export function clampOutOfQuietHours(when: Date, start: string, end: string): Date {
-  if (!isInQuietHours(when, start, end)) return when;
-  const result = new Date(when);
+export function clampOutOfQuietHours(when: Date, start: string, end: string, tz?: string): Date {
+  const z = tz ?? defaultTz();
+  if (!isInQuietHours(when, start, end, z)) return when;
+  const wp = partsInTz(when.getTime(), z);
   const [eh, em] = end.split(':').map(Number);
-  result.setHours(eh, em, 0, 0);
-  // If the end time is earlier in the day than `when`, push to next day
-  if (result.getTime() <= when.getTime()) {
-    result.setDate(result.getDate() + 1);
+  // Build the local wall-clock end-of-quiet on the same local day.
+  let endMs = wallClockToUtcMs(wp.year, wp.month, wp.day, eh, em, z);
+  if (endMs <= when.getTime()) {
+    // End is earlier in the wall-clock day than `when` — push to next local day.
+    const next = new Date(when.getTime() + 86_400_000);
+    const np = partsInTz(next.getTime(), z);
+    endMs = wallClockToUtcMs(np.year, np.month, np.day, eh, em, z);
   }
-  return result;
+  return new Date(endMs);
 }
 
 // Grace period: notifications whose scheduled time has passed by less than
@@ -109,22 +122,21 @@ export function clampOutOfQuietHours(when: Date, start: string, end: string): Da
 // can catch and fire them via the "dueNow" path.
 const GRACE_MS = 10 * 60 * 1000; // 10 minutes
 
-function dateOnly(d: Date): Date {
-  const x = new Date(d);
-  x.setHours(0, 0, 0, 0);
-  return x;
-}
-
-function atTime(day: Date, hm: string): Date {
+/** Returns the UTC ms instant of `hm` wall-clock on the local date that contains `dayMs`. */
+function atTime(dayMs: number, hm: string, tz: string): number {
   const [h, m] = hm.split(':').map(Number);
-  const x = new Date(day);
-  x.setHours(h, m, 0, 0);
-  return x;
+  const p = partsInTz(dayMs, tz);
+  return wallClockToUtcMs(p.year, p.month, p.day, h, m, tz);
 }
 
-function daysBetween(aIso: string, b: Date): number {
-  const a = new Date(aIso + 'T00:00:00');
-  return Math.floor((dateOnly(b).getTime() - dateOnly(a).getTime()) / 86400000);
+function daysBetween(aIso: string, b: Date, tz: string): number {
+  return daysBetweenIso(aIso, localDateKey(b.getTime(), tz));
+}
+
+/** Adds `n` calendar days in the user's TZ; returns the UTC ms anchor at local 00:00. */
+function addDaysLocal(baseMs: number, n: number, tz: string): number {
+  const p = partsInTz(baseMs, tz);
+  return wallClockToUtcMs(p.year, p.month, p.day + n, 0, 0, tz);
 }
 
 /**
@@ -136,12 +148,14 @@ export function computeUpcomingNotifications(
   state: SchedulerState,
   prefs: NotificationPrefs,
   now: Date,
-  horizonDays = 7
+  horizonDays = 7,
+  tz?: string
 ): ScheduledNotification[] {
   if (!prefs.notificationsEnabled) return [];
 
+  const z = tz ?? prefs.timezone ?? defaultTz();
   const out: ScheduledNotification[] = [];
-  const seed = now.getDate(); // stable per-day variety
+  const seed = partsInTz(now.getTime(), z).day; // stable per-day variety
 
   // helper: skip if category is snoozed at `whenMs`
   const isSnoozed = (cat: NotificationCategory, whenMs: number) => {
@@ -151,12 +165,12 @@ export function computeUpcomingNotifications(
 
   // -------- Daily cue --------
   for (let d = 0; d < horizonDays; d++) {
-    const day = new Date(now);
-    day.setDate(day.getDate() + d);
+    const dayMs = addDaysLocal(now.getTime(), d, z);
     const cueAt = clampOutOfQuietHours(
-      atTime(day, prefs.dailyReminderTime),
+      new Date(atTime(dayMs, prefs.dailyReminderTime, z)),
       prefs.quietHoursStart,
-      prefs.quietHoursEnd
+      prefs.quietHoursEnd,
+      z
     );
     if (cueAt.getTime() < now.getTime() - GRACE_MS) continue; // well past — skip
 
@@ -165,7 +179,7 @@ export function computeUpcomingNotifications(
     const isToday = d === 0;
     const skippedYesterday =
       state.lastActiveDate != null &&
-      daysBetween(state.lastActiveDate, now) >= 2;
+      daysBetween(state.lastActiveDate, now, z) >= 2;
 
     const title = pick(DAILY_TITLES, seed + d);
     const body = isToday && state.dueCount > 0
@@ -176,7 +190,7 @@ export function computeUpcomingNotifications(
 
     out.push({
       category: 'daily-cue',
-      tag: `daily-cue-${day.toISOString().slice(0, 10)}`,
+      tag: `daily-cue-${localDateKey(dayMs, z)}`,
       whenMs: cueAt.getTime(),
       title,
       body,
@@ -190,21 +204,20 @@ export function computeUpcomingNotifications(
     state.currentStreak >= prefs.streakReminderMinDays
   ) {
     for (let d = 0; d < horizonDays; d++) {
-      const day = new Date(now);
-      day.setDate(day.getDate() + d);
+      const dayMs = addDaysLocal(now.getTime(), d, z);
       // Fire 2 hours before quiet hours start, but not before 19:00
       const quietStartMin = parseHM(prefs.quietHoursStart);
       const targetMin = Math.max(19 * 60, quietStartMin - 120);
       const hh = Math.floor(targetMin / 60);
       const mm = targetMin % 60;
-      const at = atTime(day, `${String(hh).padStart(2, '0')}:${String(mm).padStart(2, '0')}`);
+      const at = new Date(atTime(dayMs, `${String(hh).padStart(2, '0')}:${String(mm).padStart(2, '0')}`, z));
       if (at.getTime() < now.getTime() - GRACE_MS) continue;
       // Only worth scheduling if today's goal isn't already met (for d === 0)
       if (d === 0 && state.todayGoalMet) continue;
       if (isSnoozed('streak-at-risk', at.getTime())) continue;
       out.push({
         category: 'streak-at-risk',
-        tag: `streak-at-risk-${day.toISOString().slice(0, 10)}`,
+        tag: `streak-at-risk-${localDateKey(dayMs, z)}`,
         whenMs: at.getTime(),
         title: pick(STREAK_AT_RISK_TITLES, seed + d),
         body: `${state.currentStreak}-day streak — a 5-minute session protects it.`,
@@ -217,19 +230,18 @@ export function computeUpcomingNotifications(
   if (prefs.dueCardAlerts && state.dueCount >= prefs.dueCardThreshold) {
     // Schedule one mid-day pulse, far enough from the daily cue to not double-up.
     for (let d = 0; d < Math.min(horizonDays, 3); d++) {
-      const day = new Date(now);
-      day.setDate(day.getDate() + d);
+      const dayMs = addDaysLocal(now.getTime(), d, z);
       const cueMin = parseHM(prefs.dailyReminderTime);
       const targetMin = (cueMin + 6 * 60) % (24 * 60); // ~6h after daily cue
       const hh = Math.floor(targetMin / 60);
       const mm = targetMin % 60;
-      let at = atTime(day, `${String(hh).padStart(2, '0')}:${String(mm).padStart(2, '0')}`);
-      at = clampOutOfQuietHours(at, prefs.quietHoursStart, prefs.quietHoursEnd);
+      let at = new Date(atTime(dayMs, `${String(hh).padStart(2, '0')}:${String(mm).padStart(2, '0')}`, z));
+      at = clampOutOfQuietHours(at, prefs.quietHoursStart, prefs.quietHoursEnd, z);
       if (at.getTime() < now.getTime() - GRACE_MS) continue;
       if (isSnoozed('cards-due', at.getTime())) continue;
       out.push({
         category: 'cards-due',
-        tag: `cards-due-${day.toISOString().slice(0, 10)}`,
+        tag: `cards-due-${localDateKey(dayMs, z)}`,
         whenMs: at.getTime(),
         title: pick(DUE_TITLES, seed + d),
         body: `${state.dueCount} cards ready — a few minutes clears the queue.`,
@@ -241,14 +253,14 @@ export function computeUpcomingNotifications(
   // -------- Slipping warning (Wednesday evening if <30% of weekly goal) --------
   if (prefs.slippingWarnings && state.weeklyGoalSeconds > 0) {
     for (let d = 0; d < horizonDays; d++) {
-      const day = new Date(now);
-      day.setDate(day.getDate() + d);
-      // 3 = Wednesday in JS Date (Sun=0)
-      if (day.getDay() !== 3) continue;
+      const dayMs = addDaysLocal(now.getTime(), d, z);
+      // 3 = Wednesday (Sun=0)
+      if (partsInTz(dayMs, z).weekday !== 3) continue;
       const at = clampOutOfQuietHours(
-        atTime(day, '19:30'),
+        new Date(atTime(dayMs, '19:30', z)),
         prefs.quietHoursStart,
-        prefs.quietHoursEnd
+        prefs.quietHoursEnd,
+        z
       );
       if (at.getTime() < now.getTime() - GRACE_MS) continue;
       // For "today" decision, check current weekly progress.
@@ -260,7 +272,7 @@ export function computeUpcomingNotifications(
       if (isSnoozed('slipping', at.getTime())) continue;
       out.push({
         category: 'slipping',
-        tag: `slipping-${day.toISOString().slice(0, 10)}`,
+        tag: `slipping-${localDateKey(dayMs, z)}`,
         whenMs: at.getTime(),
         title: 'Half-week check-in 📊',
         body: 'Light week so far — a short session today gets you back on pace.',
@@ -272,20 +284,20 @@ export function computeUpcomingNotifications(
   // -------- Weekly digest (Sunday 19:00) --------
   if (prefs.weeklyDigest) {
     for (let d = 0; d < horizonDays; d++) {
-      const day = new Date(now);
-      day.setDate(day.getDate() + d);
-      if (day.getDay() !== 0) continue;
+      const dayMs = addDaysLocal(now.getTime(), d, z);
+      if (partsInTz(dayMs, z).weekday !== 0) continue;
       const at = clampOutOfQuietHours(
-        atTime(day, '19:00'),
+        new Date(atTime(dayMs, '19:00', z)),
         prefs.quietHoursStart,
-        prefs.quietHoursEnd
+        prefs.quietHoursEnd,
+        z
       );
       if (at.getTime() < now.getTime() - GRACE_MS) continue;
       if (isSnoozed('weekly-digest', at.getTime())) continue;
       const minutes = Math.round(state.weekStudySeconds / 60);
       out.push({
         category: 'weekly-digest',
-        tag: `weekly-digest-${day.toISOString().slice(0, 10)}`,
+        tag: `weekly-digest-${localDateKey(dayMs, z)}`,
         whenMs: at.getTime(),
         title: 'Weekly summary 📊',
         body:
@@ -327,7 +339,7 @@ export function computeUpcomingNotifications(
     if (!isSnoozed('daily-goal-met', at.getTime())) {
       out.push({
         category: 'daily-goal-met',
-        tag: `daily-goal-met-${now.toISOString().slice(0, 10)}`,
+        tag: `daily-goal-met-${localDateKey(now.getTime(), z)}`,
         whenMs: at.getTime(),
         title: 'Daily goal met! ✅',
         body: 'Nice work — every day counts.',
@@ -339,17 +351,16 @@ export function computeUpcomingNotifications(
   // Sort chronologically, then enforce daily budget.
   out.sort((a, b) => a.whenMs - b.whenMs);
 
-  const fmt = (ms: number) => new Date(ms).toISOString().slice(0, 10);
   const perDay = new Map<string, number>();
   // Seed today's count with already-fired notifications
   perDay.set(
-    fmt(now.getTime()),
+    localDateKey(now.getTime(), z),
     Object.values(state.todayFiredCounts).reduce<number>((a, b) => a + (b ?? 0), 0)
   );
 
   const filtered: ScheduledNotification[] = [];
   for (const n of out) {
-    const key = fmt(n.whenMs);
+    const key = localDateKey(n.whenMs, z);
     const count = perDay.get(key) ?? 0;
     if (count >= prefs.dailyNotificationBudget) continue;
     perDay.set(key, count + 1);

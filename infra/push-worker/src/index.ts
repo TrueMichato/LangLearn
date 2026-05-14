@@ -22,6 +22,7 @@ import {
   type PushSubscriptionJSON,
   type VapidConfig,
 } from './push';
+import { localDateKey, daysBetweenIso } from './tz';
 
 interface Env {
   SUBS: KVNamespace;
@@ -46,23 +47,34 @@ const HISTORY_RETENTION_DAYS = 7;
 
 // ────────────────────────── helpers ──────────────────────────
 
-function todayKey(now = new Date()): string {
-  return now.toISOString().slice(0, 10);
+function tzOf(prefs: NotificationPrefs): string {
+  return prefs.timezone || 'UTC';
 }
 
-function trimHistory(h: Record<string, string[]>, now = new Date()): Record<string, string[]> {
-  const cutoff = new Date(now);
-  cutoff.setDate(cutoff.getDate() - HISTORY_RETENTION_DAYS);
-  const cutoffKey = cutoff.toISOString().slice(0, 10);
+function todayKey(now: Date, tz: string): string {
+  return localDateKey(now.getTime(), tz);
+}
+
+function trimHistory(
+  h: Record<string, string[]>,
+  now: Date,
+  tz: string
+): Record<string, string[]> {
+  const today = todayKey(now, tz);
   const out: Record<string, string[]> = {};
   for (const [k, v] of Object.entries(h)) {
-    if (k >= cutoffKey) out[k] = v;
+    // Keep keys within the retention window (whole calendar days).
+    if (daysBetweenIso(k, today) <= HISTORY_RETENTION_DAYS) out[k] = v;
   }
   return out;
 }
 
-function todayFiredCounts(history: Record<string, string[]>, now: Date): Partial<Record<NotificationCategory, number>> {
-  const tags = history[todayKey(now)] ?? [];
+function todayFiredCounts(
+  history: Record<string, string[]>,
+  now: Date,
+  tz: string
+): Partial<Record<NotificationCategory, number>> {
+  const tags = history[todayKey(now, tz)] ?? [];
   const counts: Partial<Record<NotificationCategory, number>> = {};
   for (const tag of tags) {
     const cat = inferCategory(tag);
@@ -325,13 +337,34 @@ async function processSubscription(env: Env, key: string, now: Date): Promise<vo
     return;
   }
 
+  const tz = tzOf(record.prefs);
+
+  // Stale-state recovery: when the user hasn't opened the app today (in their
+  // own TZ), the persisted "today"-scoped fields reflect yesterday's session
+  // and would suppress today's planning (e.g. todayGoalMet=true → streak-at-
+  // risk skipped). Construct a planner-only view that zeroes them. The stored
+  // record.state is left untouched so the next /api/sync still merges truth.
+  const today = todayKey(now, tz);
+  const lastActive = record.state.lastActiveDate;
+  const isStaleDay = lastActive != null && lastActive < today;
+  const isStaleWeek =
+    lastActive != null && daysBetweenIso(lastActive, today) >= 7;
+
+  const baseState: Omit<SchedulerState, 'todayFiredCounts'> = isStaleDay
+    ? {
+        ...record.state,
+        todayStudySeconds: 0,
+        todayGoalMet: false,
+        weekStudySeconds: isStaleWeek ? 0 : record.state.weekStudySeconds,
+      }
+    : record.state;
+
   const state: SchedulerState = {
-    ...record.state,
-    todayFiredCounts: todayFiredCounts(record.firedHistory, now),
+    ...baseState,
+    todayFiredCounts: todayFiredCounts(record.firedHistory, now, tz),
   };
 
   const planned = computeUpcomingNotifications(state, record.prefs, now);
-  const today = todayKey(now);
   const firedToday = new Set(record.firedHistory[today] ?? []);
 
   for (const n of planned) {
@@ -353,7 +386,7 @@ async function processSubscription(env: Env, key: string, now: Date): Promise<vo
   }
 
   record.firedHistory[today] = Array.from(firedToday);
-  record.firedHistory = trimHistory(record.firedHistory, now);
+  record.firedHistory = trimHistory(record.firedHistory, now, tz);
   record.lastWorkerCheck = Date.now();
   // Always persist so lastWorkerCheck advances — the UI uses it to show
   // freshness, and clients ask for it back via the next /api/sync response.

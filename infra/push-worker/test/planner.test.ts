@@ -74,4 +74,55 @@ describe('worker planner port', () => {
     const out = computeUpcomingNotifications(state, basePrefs, now);
     expect(out.find((n) => n.category === 'streak-milestone')).toBeUndefined();
   });
+
+  // ───── TZ-aware scheduling (the bug fix) ─────
+
+  it('schedules daily cue at the configured local time when timezone is set', () => {
+    // Israel is UTC+2 in January (no DST). 09:00 local = 07:00 UTC.
+    const prefs = { ...basePrefs, timezone: 'Asia/Jerusalem' };
+    const now = new Date('2025-01-10T05:00:00Z'); // 07:00 local
+    const out = computeUpcomingNotifications(baseState, prefs, now);
+    const cue = out.find((n) => n.category === 'daily-cue');
+    expect(cue).toBeDefined();
+    // 09:00 Asia/Jerusalem on 2025-01-10 = 07:00 UTC
+    expect(new Date(cue!.whenMs).toISOString()).toBe('2025-01-10T07:00:00.000Z');
+    expect(cue!.tag).toBe('daily-cue-2025-01-10');
+  });
+
+  it('schedules daily cue across DST boundary in Asia/Jerusalem', () => {
+    // 2025 spring-forward in Israel: Mar 28 02:00 → 03:00 (UTC+2 → UTC+3).
+    // A cue at 09:00 local on Mar 29 → 06:00 UTC (not 07:00).
+    const prefs = { ...basePrefs, timezone: 'Asia/Jerusalem' };
+    const now = new Date('2025-03-29T05:30:00Z'); // 08:30 local
+    const out = computeUpcomingNotifications(baseState, prefs, now);
+    const cue = out.find((n) => n.category === 'daily-cue');
+    expect(cue).toBeDefined();
+    expect(new Date(cue!.whenMs).toISOString()).toBe('2025-03-29T06:00:00.000Z');
+  });
+
+  it('quiet-hours clamp respects the user TZ, not UTC', () => {
+    // User in Israel (UTC+2 in winter), quiet 22:00–07:00.
+    // 19:00 local Sun is *not* in quiet hours, so weekly digest is unaffected.
+    const prefs = { ...basePrefs, timezone: 'Asia/Jerusalem' };
+    // 2025-01-12 is a Sunday. 19:00 local = 17:00 UTC.
+    const now = new Date('2025-01-12T16:30:00Z'); // 18:30 local Sunday
+    const out = computeUpcomingNotifications(baseState, prefs, now);
+    const digest = out.find((n) => n.category === 'weekly-digest');
+    expect(digest).toBeDefined();
+    expect(new Date(digest!.whenMs).toISOString()).toBe('2025-01-12T17:00:00.000Z');
+    expect(digest!.tag).toBe('weekly-digest-2025-01-12');
+  });
+
+  it('daily-cue tag rolls over at the user-local midnight, not UTC midnight', () => {
+    // Israel UTC+2 in January. 23:30 local = 21:30 UTC.
+    // Worker tick at 22:30 UTC = 00:30 next day local → tag should reflect the *next* day.
+    const prefs = { ...basePrefs, timezone: 'Asia/Jerusalem' };
+    const now = new Date('2025-01-10T22:30:00Z'); // 2025-01-11 00:30 local
+    const out = computeUpcomingNotifications(baseState, prefs, now);
+    const todayCue = out.find((n) => n.category === 'daily-cue');
+    expect(todayCue).toBeDefined();
+    // The cue for d=0 should be 09:00 local on 2025-01-11 = 07:00 UTC
+    expect(todayCue!.tag).toBe('daily-cue-2025-01-11');
+    expect(new Date(todayCue!.whenMs).toISOString()).toBe('2025-01-11T07:00:00.000Z');
+  });
 });

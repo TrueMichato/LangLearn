@@ -10,11 +10,12 @@ compatibility_flags = ["nodejs_compat"]
 binding = "SUBS"
 id = "1831e2b1724f4df0a8ecabdddb06b90e"
 
-# Cron trigger — runs the planner every 15 minutes.
-# Cloudflare's free tier minimum cadence is 1 minute; 15 keeps us well under
-# any quota and matches the planner's coarse time resolution.
+# Cron trigger — runs the planner every 5 minutes.
+# Cloudflare's free tier minimum cadence is 1 minute. With GRACE_MS=10min in
+# the planner, a 5-min cron ensures any due notification fires within ~5 min
+# of its target, instead of the ~25-min worst case under the previous */15.
 [triggers]
-crons = ["*/15 * * * *"]
+crons = ["*/5 * * * *"]
 
 # VAPID_PUBLIC is non-secret (sent to clients). VAPID_SUBJECT is a mailto: or
 # https: URL identifying the application server (required by the Web Push spec).

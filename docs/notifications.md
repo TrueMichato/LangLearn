@@ -101,6 +101,39 @@ every 5 minutes while the app is open, and on every visibilitychange→visible.
 This is the only mechanism that *always* works (because the app is, by
 definition, open).
 
+## Timezones
+
+Cloudflare Workers run in UTC. The notification planner schedules wall-clock
+times (`dailyReminderTime`, quiet hours, hard-coded `19:00`/`19:30` evening
+slots), so without TZ awareness everything would fire at the *UTC* wall-clock
+— for a user in Israel (UTC+2/+3) that means a "09:00 reminder" arrives at
+noon, and the `19:00` weekly digest lands at 22:00 right inside default quiet
+hours and gets clamped out of the day.
+
+To fix this, the client populates `prefs.timezone` from
+`Intl.DateTimeFormat().resolvedOptions().timeZone` and includes it in every
+`/api/subscribe` and `/api/sync` payload. Both planner copies (`src/lib/
+notification-planner.ts` and `infra/push-worker/src/planner.ts`) use shared
+TZ helpers in `tz.ts` (`partsInTz`, `wallClockToUtcMs`, `localDateKey`,
+`daysBetweenIso`) to interpret all wall-clock math in the user's TZ. The
+worker's `firedHistory` keys also roll over at the user's local midnight,
+not UTC midnight.
+
+If a user changes their OS timezone (or travels), they should open the app
+once to re-sync `prefs.timezone` to the worker.
+
+### Stale-state recovery
+
+The worker's per-subscription `state` blob (`todayStudySeconds`, `todayGoalMet`,
+`weekStudySeconds`, …) is only refreshed when the client calls `/api/sync`.
+On days the user never opens the app, the persisted snapshot reflects
+yesterday's numbers — `todayGoalMet=true` would suppress the streak-at-risk
+nudge today. `processSubscription` therefore checks
+`state.lastActiveDate < localDateKey(now, tz)` and constructs a planner-only
+view that zeroes the day-scoped fields (and week-scoped fields when ≥7 days
+have elapsed). The persisted record is left untouched so the next real sync
+still merges truth.
+
 ## Files
 
 - `src/lib/notifications.ts` — permission, supports/registers periodic sync,

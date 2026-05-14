@@ -18,6 +18,14 @@ export interface NotificationPrefs {
   slippingWarnings: boolean;
   dailyGoalMetCelebration: boolean;
   streakMilestoneAlerts: boolean;
+
+  /**
+   * IANA timezone (e.g. "Asia/Jerusalem"). Optional — when missing the planner
+   * falls back to the runtime's TZ. The client always populates it via
+   * Intl.DateTimeFormat().resolvedOptions().timeZone so the worker (which is
+   * UTC) schedules at the correct local wall-clock.
+   */
+  timezone?: string;
 }
 
 export type PresetFields = Omit<
