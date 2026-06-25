@@ -9,6 +9,7 @@ import { useStudySetsStore } from '../stores/studySetsStore';
 import { getFilteredReviewQueue } from '../lib/filtered-review';
 import { getMistakeDeck, getLeechWordIds } from '../lib/mistakes';
 import { getTopicDeck } from '../lib/grammar-topics';
+import { composeAdaptiveBatch } from '../lib/adaptive';
 import { get7DayRetention } from '../lib/analytics';
 import { getLanguageFlag } from '../lib/languages';
 import Flashcard from '../components/srs/Flashcard';
@@ -56,6 +57,7 @@ export default function ReviewPage() {
   const { isRunning, start } = useTimerStore();
   const reviewBatchSize = useSettingsStore((s) => s.reviewBatchSize);
   const activeLanguages = useSettingsStore((s) => s.activeLanguages);
+  const adaptiveReview = useSettingsStore((s) => s.adaptiveReview);
   const navigate = useNavigate();
   const [searchParams] = useSearchParams();
   const setId = searchParams.get('set');
@@ -108,7 +110,16 @@ export default function ReviewPage() {
       [due[i], due[j]] = [due[j], due[i]];
     }
     setTotalDue(due.length);
-    const batch = reviewBatchSize > 0 ? due.slice(0, reviewBatchSize) : due;
+
+    // Adaptive composition weights the standard due queue toward weaker cards.
+    // Purpose-built decks (mistakes, topic, study set) already curate their items.
+    const isCuratedDeck = isMistakeDeck || !!topicId || !!setId;
+    const batch =
+      adaptiveReview && !isCuratedDeck
+        ? composeAdaptiveBatch(due, reviewBatchSize)
+        : reviewBatchSize > 0
+          ? due.slice(0, reviewBatchSize)
+          : due;
 
     const activeMode = mode ?? practiceMode;
 
@@ -154,7 +165,7 @@ export default function ReviewPage() {
 
     setQueue(items);
     setLoading(false);
-  }, [setQueue, reviewBatchSize, setId, practiceMode, reviewLanguage, activeLanguages, isMistakeDeck, topicId]);
+  }, [setQueue, reviewBatchSize, setId, practiceMode, reviewLanguage, activeLanguages, isMistakeDeck, topicId, adaptiveReview]);
 
   useEffect(() => {
     loadCards();

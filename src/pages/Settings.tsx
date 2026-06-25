@@ -48,7 +48,7 @@ const sectionCard =
   'bg-white dark:bg-slate-800/90 rounded-2xl shadow-sm border border-slate-200/60 dark:border-white/10 p-4';
 
 export default function SettingsPage() {
-  const { weeklyGoalMinutes, setWeeklyGoal, dailyGoalMinutes, setDailyGoal, activeLanguages, addLanguage, removeLanguage, showStressMarks, toggleStressMarks, darkMode, toggleDarkMode, fontSize, setFontSize, ttsRate, setTtsRate, reviewBatchSize, setReviewBatchSize } =
+  const { weeklyGoalMinutes, setWeeklyGoal, dailyGoalMinutes, setDailyGoal, activeLanguages, addLanguage, removeLanguage, showStressMarks, toggleStressMarks, darkMode, toggleDarkMode, fontSize, setFontSize, ttsRate, setTtsRate, reviewBatchSize, setReviewBatchSize, adaptiveReview, toggleAdaptiveReview } =
     useSettingsStore();
   const [importStatus, setImportStatus] = useState('');
   const fileInputRef = useRef<HTMLInputElement>(null);
@@ -231,6 +231,17 @@ export default function SettingsPage() {
               </button>
             ))}
           </div>
+        </div>
+
+        {/* Adaptive review */}
+        <div className="flex items-center justify-between">
+          <div className="pr-3">
+            <p className="text-sm text-slate-700 dark:text-slate-200">Adaptive review focus</p>
+            <p className="text-xs text-slate-500 dark:text-slate-400">
+              Gently weight each session toward cards you find tricky. No penalties — just a little extra practice where it helps.
+            </p>
+          </div>
+          <Toggle checked={adaptiveReview} onChange={toggleAdaptiveReview} />
         </div>
       </section>
 

@@ -30,6 +30,7 @@ interface SettingsState {
   weeklyWordGoal: number;
   weeklyReviewGoal: number;
   weeklyLessonGoal: number;
+  adaptiveReview: boolean;
   // New notification-system fields
   notificationPreset: NotificationPreset;
   dailyNotificationBudget: number;
@@ -65,6 +66,7 @@ interface SettingsState {
   setWeeklyWordGoal: (n: number) => void;
   setWeeklyReviewGoal: (n: number) => void;
   setWeeklyLessonGoal: (n: number) => void;
+  toggleAdaptiveReview: () => void;
   setNotificationPreset: (preset: NotificationPreset) => void;
   setDailyNotificationBudget: (n: number) => void;
   setComebackNudges: (enabled: boolean) => void;
@@ -97,6 +99,7 @@ export const useSettingsStore = create<SettingsState>()(
       weeklyWordGoal: 20,
       weeklyReviewGoal: 50,
       weeklyLessonGoal: 2,
+      adaptiveReview: true,
       notificationPreset: 'balanced' as NotificationPreset,
       ...PRESETS.balanced,
       cloudRemindersEnabled: true,
@@ -156,6 +159,7 @@ export const useSettingsStore = create<SettingsState>()(
       setWeeklyWordGoal: (n) => set({ weeklyWordGoal: n }),
       setWeeklyReviewGoal: (n) => set({ weeklyReviewGoal: n }),
       setWeeklyLessonGoal: (n) => set({ weeklyLessonGoal: n }),
+      toggleAdaptiveReview: () => set((s) => ({ adaptiveReview: !s.adaptiveReview })),
       setNotificationPreset: (preset) => {
         if (preset === 'custom') {
           set({ notificationPreset: 'custom' });
