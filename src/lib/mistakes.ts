@@ -86,3 +86,43 @@ export function countLapsesByWord(logs: ReviewLogEntry[]): Map<number, number> {
   }
   return counts;
 }
+
+export const DEFAULT_LEECH_THRESHOLD = 4;
+
+/**
+ * Leeches: words that have been failed at least `threshold` times in total.
+ * These are the cards a learner keeps tripping on — surfaced gently for extra
+ * support, never as a penalty.
+ */
+export async function getLeeches(
+  languages?: string[],
+  threshold = DEFAULT_LEECH_THRESHOLD
+): Promise<Array<{ word: Word; review: Review; lapses: number }>> {
+  const logs = await db.reviewLog.toArray();
+  const langSet = languages && languages.length > 0 ? new Set(languages) : null;
+  const relevant = langSet ? logs.filter((l) => langSet.has(l.language)) : logs;
+
+  const counts = countLapsesByWord(relevant);
+  const result: Array<{ word: Word; review: Review; lapses: number }> = [];
+
+  for (const [wordId, lapses] of counts) {
+    if (lapses < threshold) continue;
+    const word = await db.words.get(wordId);
+    if (!word) continue;
+    if (langSet && !langSet.has(word.language)) continue;
+    const review = await db.reviews.where('wordId').equals(wordId).first();
+    if (!review) continue;
+    result.push({ word, review, lapses });
+  }
+
+  return result.sort((a, b) => b.lapses - a.lapses);
+}
+
+/** Set of wordIds currently flagged as leeches (for quick lookup in the UI). */
+export async function getLeechWordIds(
+  languages?: string[],
+  threshold = DEFAULT_LEECH_THRESHOLD
+): Promise<Set<number>> {
+  const leeches = await getLeeches(languages, threshold);
+  return new Set(leeches.map((l) => l.word.id!));
+}

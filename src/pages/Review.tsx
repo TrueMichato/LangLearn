@@ -7,7 +7,7 @@ import { useTimerStore } from '../stores/timerStore';
 import { useSettingsStore } from '../stores/settingsStore';
 import { useStudySetsStore } from '../stores/studySetsStore';
 import { getFilteredReviewQueue } from '../lib/filtered-review';
-import { getMistakeDeck } from '../lib/mistakes';
+import { getMistakeDeck, getLeechWordIds } from '../lib/mistakes';
 import { get7DayRetention } from '../lib/analytics';
 import { getLanguageFlag } from '../lib/languages';
 import Flashcard from '../components/srs/Flashcard';
@@ -108,6 +108,11 @@ export default function ReviewPage() {
 
     const activeMode = mode ?? practiceMode;
 
+    // Leeches get the gentler, auto-graded multiple-choice variant for support.
+    const leechIds = await getLeechWordIds(
+      reviewLanguage && reviewLanguage !== 'all' ? [reviewLanguage] : activeLanguages
+    );
+
     // Assign card types and prepare distractors
     const items: QueueItem[] = [];
     for (const item of batch) {
@@ -118,6 +123,12 @@ export default function ReviewPage() {
       // Grammar words always use grammar card type regardless of practice mode
       if (item.word.type === 'grammar') {
         cardType = 'grammar';
+      } else if (
+        leechIds.has(item.word.id!) &&
+        (cardType === 'classic' || cardType === 'reverse')
+      ) {
+        // Offer a gentler recognition card for cards the learner keeps missing.
+        cardType = 'multiple-choice';
       }
 
       let distractors: string[] | undefined;
