@@ -6,6 +6,7 @@ import { markLessonComplete, incrementAttempts } from '../../db/lessons';
 import { addWord } from '../../db/words';
 import { db } from '../../db/schema';
 import { useXPStore } from '../../stores/xpStore';
+import { buildGrammarCardFields, type GrammarCardSource } from '../../lib/grammar-cards';
 import { SkeletonList } from '../common/Skeleton';
 
 interface LessonViewProps {
@@ -26,32 +27,23 @@ interface QuizData {
 const QUIZ_REGEX = /<!--\s*quiz:(.*?)\s*-->/g;
 const GRAMMAR_CARD_REGEX = /<!--\s*grammar-card:\s*(.*?)\s*-->/g;
 
-interface GrammarCardData {
-  rule: string;
-  hint?: string;
-  example?: string;
-  answer?: string;
-  explanation: string;
-}
-
 /** Extract grammar-card blocks from lesson markdown. */
-function extractGrammarCards(md: string): GrammarCardData[] {
-  const cards: GrammarCardData[] = [];
+function extractGrammarCards(md: string): GrammarCardSource[] {
+  const cards: GrammarCardSource[] = [];
   GRAMMAR_CARD_REGEX.lastIndex = 0;
   let match: RegExpExecArray | null;
   while ((match = GRAMMAR_CARD_REGEX.exec(md)) !== null) {
     try {
-      cards.push(JSON.parse(match[1]) as GrammarCardData);
+      cards.push(JSON.parse(match[1]) as GrammarCardSource);
     } catch { /* skip malformed blocks */ }
   }
   return cards;
 }
 
 /** Auto-generate grammar cards from quiz data when no explicit grammar-card blocks exist. */
-function cardsFromQuizzes(quizzes: QuizData[], lessonTitle: string): GrammarCardData[] {
+function cardsFromQuizzes(quizzes: QuizData[], lessonTitle: string): GrammarCardSource[] {
   return quizzes.map((q) => ({
     rule: lessonTitle,
-    hint: q.question,
     example: q.question,
     answer: q.options[q.answer],
     explanation: `Correct answer: ${q.options[q.answer]}`,
@@ -60,7 +52,7 @@ function cardsFromQuizzes(quizzes: QuizData[], lessonTitle: string): GrammarCard
 
 /** Add grammar Word entries for SRS review, skipping duplicates. */
 async function createGrammarCards(
-  cards: GrammarCardData[],
+  cards: GrammarCardSource[],
   lang: string,
   lessonId: string,
 ): Promise<number> {
@@ -74,12 +66,11 @@ async function createGrammarCards(
 
   let added = 0;
   for (const card of cards) {
+    const fields = buildGrammarCardFields(card);
+    if (!fields) continue;
     await addWord({
-      word: card.rule,
-      reading: card.hint ?? '',
-      meaning: card.explanation,
+      ...fields,
       language: lang,
-      contextSentence: card.answer ?? card.example ?? '',
       sourceTextId: null,
       tags: ['grammar', lessonId],
       type: 'grammar',

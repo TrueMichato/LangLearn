@@ -1,4 +1,5 @@
 import type { Word } from '../../db/schema';
+import { fillBlank, hasBlank } from '../../lib/grammar-cards';
 
 interface GrammarCardProps {
   word: Word;
@@ -6,20 +7,13 @@ interface GrammarCardProps {
   onFlip: () => void;
 }
 
-/** Replace the grammar point in the example sentence with a blank placeholder. */
-function blankOut(sentence: string, rule: string): string {
-  if (!sentence || !rule) return sentence;
-  // Try exact match first, then case-insensitive
-  const idx = sentence.indexOf(rule);
-  if (idx !== -1) {
-    return sentence.slice(0, idx) + '＿＿' + sentence.slice(idx + rule.length);
-  }
-  return sentence;
-}
-
 export default function GrammarCard({ word, isFlipped, onFlip }: GrammarCardProps) {
-  const blankedSentence = blankOut(word.contextSentence, word.word);
-  const hasBlanked = blankedSentence !== word.contextSentence;
+  // Front shows the prompt (example sentence with a blank, or a question) and an optional hint —
+  // never the answer (word.word) or the grammar rule.
+  const prompt = word.contextSentence;
+  const answer = word.word;
+  const promptHasBlank = hasBlank(prompt);
+  const filledSentence = fillBlank(prompt, answer);
 
   return (
     <div
@@ -36,48 +30,60 @@ export default function GrammarCard({ word, isFlipped, onFlip }: GrammarCardProp
       </span>
 
       {!isFlipped ? (
-        /* Front: question side */
+        /* Front: question side — prompt + hint only */
         <div className="text-center space-y-3 w-full">
-          <p className="text-2xl font-bold text-violet-700 dark:text-violet-300" style={{ fontSize: 'var(--app-font-size)' }}>
-            {word.word}
-          </p>
-
           {word.reading && (
             <p className="text-sm text-gray-500 dark:text-gray-400 italic">
               {word.reading}
             </p>
           )}
 
-          {word.contextSentence && (
-            <div className="mt-4 bg-violet-50 dark:bg-violet-950/30 rounded-xl px-4 py-3">
-              <p className="text-base text-gray-700 dark:text-gray-200">
-                {hasBlanked ? blankedSentence : word.contextSentence}
+          {prompt ? (
+            <div className="mt-2 bg-violet-50 dark:bg-violet-950/30 rounded-xl px-4 py-3">
+              <p
+                className="text-base text-gray-700 dark:text-gray-200"
+                style={{ fontSize: 'var(--app-font-size)' }}
+              >
+                {prompt}
               </p>
             </div>
+          ) : (
+            <p className="text-base text-gray-500 dark:text-gray-400">
+              {promptHasBlank ? 'Fill in the blank' : 'Recall the grammar point'}
+            </p>
           )}
 
           <p className="text-sm text-violet-400 dark:text-violet-300 mt-4">Tap to reveal</p>
         </div>
       ) : (
-        /* Back: answer side */
+        /* Back: answer side — answer, filled sentence, rule, explanation */
         <div className="text-center space-y-3 w-full">
-          <p className="text-2xl font-bold text-violet-700 dark:text-violet-300" style={{ fontSize: 'var(--app-font-size)' }}>
-            {word.word}
+          <p
+            className="text-2xl font-bold text-green-700 dark:text-green-400"
+            style={{ fontSize: 'var(--app-font-size)' }}
+          >
+            {answer}
           </p>
 
-          {word.contextSentence && (
+          {promptHasBlank && (
             <div className="mt-2 bg-violet-50 dark:bg-violet-950/30 rounded-xl px-4 py-3">
               <p className="text-base text-gray-800 dark:text-gray-100 font-medium">
-                {word.contextSentence}
+                {filledSentence}
               </p>
             </div>
           )}
 
-          <div className="mt-3">
-            <p className="text-lg text-green-700 dark:text-green-400 font-semibold">
+          {word.grammarRule && (
+            <p className="text-sm text-violet-700 dark:text-violet-300 font-medium mt-2">
+              {word.grammarRule}
+            </p>
+          )}
+
+          {word.meaning && (
+            <p className="text-sm text-gray-600 dark:text-gray-300 mt-1">
               {word.meaning}
             </p>
-          </div>
+          )}
         </div>
       )}
     </div>

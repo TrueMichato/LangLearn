@@ -92,6 +92,9 @@ export async function searchWords(
 
   let words = await wordsQuery.toArray();
 
+  // Grammar cards are SRS-only and not part of the vocabulary browser.
+  words = words.filter((w) => w.type !== 'grammar');
+
   if (filter.search) {
     const q = filter.search.toLowerCase();
     words = words.filter(
