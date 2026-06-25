@@ -196,4 +196,33 @@ describe('explicit streak freezes', () => {
     ];
     expect(computeFreezesToSpend(activities, 1)).toEqual([]);
   });
+
+  it('computeFreezesToSpend never spends a freeze on the in-progress day', () => {
+    // Studied a little today but goal not met yet, and no prior history.
+    const activities = [makeActivity(daysAgo(0), false)];
+    expect(computeFreezesToSpend(activities, 2)).toEqual([]);
+  });
+
+  it('computeFreezesToSpend does not spend on a trailing gap with no older met day', () => {
+    // Active but unmet on every day, and no met day anywhere to anchor a streak.
+    const activities = [
+      makeActivity(daysAgo(0), false),
+      makeActivity(daysAgo(1), false),
+      makeActivity(daysAgo(2), false),
+    ];
+    expect(computeFreezesToSpend(activities, 3)).toEqual([]);
+  });
+
+  it('computeFreezesToSpend bridges only the interior gap that reaches a met day', () => {
+    // today met, yesterday missed (bridge it), 2-ago met, 3-ago missed with
+    // no older met day (must NOT be bridged).
+    const activities = [
+      makeActivity(daysAgo(0), true),
+      makeActivity(daysAgo(1), false),
+      makeActivity(daysAgo(2), true),
+      makeActivity(daysAgo(3), false),
+    ];
+    expect(computeFreezesToSpend(activities, 3)).toEqual([daysAgo(1)]);
+  });
 });
+

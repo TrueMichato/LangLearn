@@ -42,8 +42,8 @@ export function calculateCurrentStreak(
   today.setHours(0, 0, 0, 0);
 
   const todayKey = fmtDate(today);
-  // If today has no activity at all, start counting from yesterday
-  const startDate = allDates.has(todayKey) ? today : addDays(today, -1);
+  // Today is in-progress: it anchors the streak only once its goal is met.
+  const startDate = metDates.has(todayKey) ? today : addDays(today, -1);
 
   // If the start date also has no met goal and no freeze possible, streak is 0
   if (!metDates.has(fmtDate(startDate)) && !allDates.has(fmtDate(startDate))) {
@@ -152,7 +152,6 @@ export function computeFreezesToSpend(
   const metDates = new Set(
     activities.filter((a) => a.goalMet).map((a) => a.date)
   );
-  const allDates = new Set(activities.map((a) => a.date));
   const frozenDates = new Set(
     activities.filter((a) => a.freezeUsed).map((a) => a.date)
   );
@@ -163,31 +162,31 @@ export function computeFreezesToSpend(
 
   const today = new Date();
   today.setHours(0, 0, 0, 0);
-  const todayKey = fmtDate(today);
-  const startDate = allDates.has(todayKey) ? today : addDays(today, -1);
 
-  if (!metDates.has(fmtDate(startDate)) && !allDates.has(fmtDate(startDate))) {
-    return [];
-  }
-
-  const toSpend: string[] = [];
+  // Freezes only ever bridge *past* missed days; today is in-progress and is
+  // never paid for. A tentative freeze is committed only once the backward walk
+  // reaches an older met day — otherwise it would protect no streak.
+  const committed: string[] = [];
+  let pending: string[] = [];
   let freezesUsed = 0;
   let remaining = availableFreezes;
-  const cursor = new Date(startDate);
+  const cursor = addDays(today, -1);
 
   for (let i = 0; i < 10000; i++) {
     const key = fmtDate(cursor);
     if (key < earliestDate) break;
 
     if (metDates.has(key)) {
-      // met — continue
+      // A met day justifies every tentative freeze since the last met day.
+      committed.push(...pending);
+      pending = [];
     } else if (canFreeze(cursor, metDates, freezesUsed)) {
       freezesUsed++;
     } else if (frozenDates.has(key)) {
-      // already paid
+      // Already paid for on a previous reconcile.
     } else if (remaining > 0) {
       remaining--;
-      toSpend.push(key);
+      pending.push(key);
     } else {
       break;
     }
@@ -195,7 +194,9 @@ export function computeFreezesToSpend(
     cursor.setDate(cursor.getDate() - 1);
   }
 
-  return toSpend;
+  // Any still-pending days form a trailing gap that connects to no older met
+  // day, so they protect no streak and must not consume a freeze.
+  return committed;
 }
 
 /**
