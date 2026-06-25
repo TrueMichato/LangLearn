@@ -10,6 +10,8 @@ export interface Word {
   sourceTextId: number | null;
   tags: string[];
   type: 'word' | 'letter' | 'grammar';
+  /** For grammar cards: the grammar rule/point, shown only on the answer side. */
+  grammarRule?: string;
   createdAt: string;
 }
 
@@ -227,6 +229,23 @@ db.version(9).stores({
   testHistory: '++id, language, type, score, date',
   badges: 'id, unlockedAt',
   reviewLog: '++id, reviewId, wordId, isLapse, [language+date], date',
+}).upgrade(async (tx) => {
+  // Grammar cards created before the field realignment stored the rule in `word`
+  // and the answer in `contextSentence`, which leaked the answer onto the question
+  // side. They are identifiable by the absence of `grammarRule`. Remove them (and
+  // their reviews) so they regenerate with the corrected mapping on next lesson review.
+  const wordsTable = tx.table('words');
+  const reviewsTable = tx.table('reviews');
+  const stale = await wordsTable
+    .where('type')
+    .equals('grammar')
+    .filter((w: { grammarRule?: string }) => w.grammarRule === undefined)
+    .toArray();
+  const staleIds = stale.map((w: { id?: number }) => w.id).filter((id): id is number => id != null);
+  if (staleIds.length > 0) {
+    await wordsTable.bulkDelete(staleIds);
+    await reviewsTable.where('wordId').anyOf(staleIds).delete();
+  }
 });
 
 export { db };
