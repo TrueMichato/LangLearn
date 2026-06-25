@@ -20,8 +20,8 @@ export function topicIdFromTags(tags: string[]): string | null {
 
 /**
  * Pure helper: aggregate grammar-card performance by topic id.
- * A card counts as "strong" when its review ease >= 2.5 with at least one rep —
- * the same correctness signal used elsewhere in analytics.
+ *  A card counts as "strong" when it has at least one rep and looks well-retained:
+ *  FSRS difficulty <= 5 when present, otherwise SM-2 ease >= 2.5.
  */
 export function summarizeTopics(
   words: Word[],
@@ -29,6 +29,11 @@ export function summarizeTopics(
   lapsesByWord: Map<number, number>
 ): TopicRetention[] {
   const groups = new Map<string, TopicRetention>();
+
+  const isStrong = (review: Review): boolean => {
+    if (review.repetitions <= 0) return false;
+    return review.difficulty != null ? review.difficulty <= 5 : review.ease >= 2.5;
+  };
 
   for (const word of words) {
     if (word.type !== 'grammar') continue;
@@ -51,7 +56,7 @@ export function summarizeTopics(
 
     entry.cardCount++;
     const review = reviewByWordId.get(word.id!);
-    if (review && review.repetitions > 0 && review.ease >= 2.5) {
+    if (review && isStrong(review)) {
       entry.strongCount++;
     }
     entry.lapses += lapsesByWord.get(word.id!) ?? 0;

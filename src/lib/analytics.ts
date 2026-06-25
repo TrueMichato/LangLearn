@@ -109,8 +109,8 @@ export async function getWeakestWords(
     reviews = reviews.filter(r => wordIds.has(r.wordId));
   }
 
-  // Sort by ease ascending (weakest first)
-  reviews.sort((a, b) => a.ease - b.ease);
+  // Sort weakest first, preferring FSRS difficulty when present, else SM-2 ease.
+  reviews.sort((a, b) => reviewWeakness(b) - reviewWeakness(a));
   const top = reviews.slice(0, limit);
 
   const result: Array<{ word: Word; review: Review }> = [];
@@ -121,6 +121,16 @@ export async function getWeakestWords(
     }
   }
   return result;
+}
+
+/**
+ * Scheduler-agnostic weakness score (higher = weaker, ~1..10).
+ * Uses FSRS difficulty when a card has it; otherwise maps SM-2 ease
+ * (~1.3 hard .. ~3.0 easy) onto the same 10..1 scale.
+ */
+export function reviewWeakness(review: Pick<Review, 'ease' | 'difficulty'>): number {
+  if (review.difficulty != null) return review.difficulty;
+  return 11 - ((review.ease - 1.3) / (3.0 - 1.3)) * 9;
 }
 
 /** Distribution of cards by mastery level. */

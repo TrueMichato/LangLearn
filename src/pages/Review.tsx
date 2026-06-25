@@ -58,6 +58,8 @@ export default function ReviewPage() {
   const reviewBatchSize = useSettingsStore((s) => s.reviewBatchSize);
   const activeLanguages = useSettingsStore((s) => s.activeLanguages);
   const adaptiveReview = useSettingsStore((s) => s.adaptiveReview);
+  const scheduler = useSettingsStore((s) => s.scheduler);
+  const fsrsRequestRetention = useSettingsStore((s) => s.fsrsRequestRetention);
   const navigate = useNavigate();
   const [searchParams] = useSearchParams();
   const setId = searchParams.get('set');
@@ -191,7 +193,10 @@ export default function ReviewPage() {
 
     if (!isRunning) start('srs');
 
-    await processReview(current.review.id, grade);
+    await processReview(current.review.id, grade, {
+      scheduler,
+      requestRetention: fsrsRequestRetention,
+    });
 
     if (grade < 3) {
       const updated = [...queue];

@@ -21,6 +21,8 @@ export interface Review {
   repetitions: number;
   nextReviewDate: string;
   lastReviewDate: string;
+  stability?: number;   // FSRS only; non-indexed, no migration needed
+  difficulty?: number;  // FSRS only; 1..10
 }
 
 export interface Text {

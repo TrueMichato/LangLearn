@@ -31,6 +31,8 @@ interface SettingsState {
   weeklyReviewGoal: number;
   weeklyLessonGoal: number;
   adaptiveReview: boolean;
+  scheduler: 'sm2' | 'fsrs';
+  fsrsRequestRetention: number;
   // New notification-system fields
   notificationPreset: NotificationPreset;
   dailyNotificationBudget: number;
@@ -67,6 +69,8 @@ interface SettingsState {
   setWeeklyReviewGoal: (n: number) => void;
   setWeeklyLessonGoal: (n: number) => void;
   toggleAdaptiveReview: () => void;
+  setScheduler: (scheduler: 'sm2' | 'fsrs') => void;
+  setFsrsRequestRetention: (retention: number) => void;
   setNotificationPreset: (preset: NotificationPreset) => void;
   setDailyNotificationBudget: (n: number) => void;
   setComebackNudges: (enabled: boolean) => void;
@@ -100,6 +104,8 @@ export const useSettingsStore = create<SettingsState>()(
       weeklyReviewGoal: 50,
       weeklyLessonGoal: 2,
       adaptiveReview: true,
+      scheduler: 'sm2',
+      fsrsRequestRetention: 0.9,
       notificationPreset: 'balanced' as NotificationPreset,
       ...PRESETS.balanced,
       cloudRemindersEnabled: true,
@@ -160,6 +166,8 @@ export const useSettingsStore = create<SettingsState>()(
       setWeeklyReviewGoal: (n) => set({ weeklyReviewGoal: n }),
       setWeeklyLessonGoal: (n) => set({ weeklyLessonGoal: n }),
       toggleAdaptiveReview: () => set((s) => ({ adaptiveReview: !s.adaptiveReview })),
+      setScheduler: (scheduler) => set({ scheduler }),
+      setFsrsRequestRetention: (fsrsRequestRetention) => set({ fsrsRequestRetention }),
       setNotificationPreset: (preset) => {
         if (preset === 'custom') {
           set({ notificationPreset: 'custom' });
