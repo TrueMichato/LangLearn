@@ -3,6 +3,7 @@ import {
   todayStr,
   calculateCurrentStreak,
   calculateLongestStreak,
+  computeFreezesToSpend,
 } from '../lib/streaks';
 import type { DailyActivity } from '../db/schema';
 
@@ -130,5 +131,69 @@ describe('calculateLongestStreak', () => {
       makeActivity('2024-01-02', false),
     ];
     expect(calculateLongestStreak(activities)).toBe(0);
+  });
+});
+
+describe('explicit streak freezes', () => {
+  function frozen(date: string): DailyActivity {
+    return { date, studySeconds: 0, cardsReviewed: 0, wordsAdded: 0, goalMet: false, freezeUsed: true };
+  }
+
+  it('does not bridge a broken streak when no freezes available', () => {
+    const activities = [
+      makeActivity(daysAgo(0), true),
+      makeActivity(daysAgo(1), false),
+      makeActivity(daysAgo(2), true),
+    ];
+    expect(calculateCurrentStreak(activities, 0)).toBe(1);
+  });
+
+  it('bridges a single missed day using an available freeze', () => {
+    const activities = [
+      makeActivity(daysAgo(0), true),
+      makeActivity(daysAgo(1), false),
+      makeActivity(daysAgo(2), true),
+    ];
+    // freeze bridges day 1; streak counts met days only (today + 2-ago)
+    expect(calculateCurrentStreak(activities, 1)).toBe(2);
+  });
+
+  it('treats an already-paid (freezeUsed) gap as non-breaking', () => {
+    const activities = [
+      makeActivity(daysAgo(0), true),
+      frozen(daysAgo(1)),
+      makeActivity(daysAgo(2), true),
+    ];
+    expect(calculateCurrentStreak(activities, 0)).toBe(2);
+  });
+
+  it('stops once freezes run out', () => {
+    const activities = [
+      makeActivity(daysAgo(0), true),
+      makeActivity(daysAgo(1), false),
+      makeActivity(daysAgo(2), true),
+      makeActivity(daysAgo(3), false),
+      makeActivity(daysAgo(4), true),
+    ];
+    expect(calculateCurrentStreak(activities, 1)).toBe(2);
+  });
+
+  it('computeFreezesToSpend returns gap days to mark, capped by availability', () => {
+    const activities = [
+      makeActivity(daysAgo(0), true),
+      makeActivity(daysAgo(1), false),
+      makeActivity(daysAgo(2), true),
+    ];
+    expect(computeFreezesToSpend(activities, 1)).toEqual([daysAgo(1)]);
+    expect(computeFreezesToSpend(activities, 0)).toEqual([]);
+  });
+
+  it('computeFreezesToSpend skips already-frozen days', () => {
+    const activities = [
+      makeActivity(daysAgo(0), true),
+      frozen(daysAgo(1)),
+      makeActivity(daysAgo(2), true),
+    ];
+    expect(computeFreezesToSpend(activities, 1)).toEqual([]);
   });
 });

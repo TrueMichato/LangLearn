@@ -7,6 +7,7 @@ import { useTimerStore } from '../stores/timerStore';
 import { useSettingsStore } from '../stores/settingsStore';
 import { useStudySetsStore } from '../stores/studySetsStore';
 import { getFilteredReviewQueue } from '../lib/filtered-review';
+import { getMistakeDeck } from '../lib/mistakes';
 import { get7DayRetention } from '../lib/analytics';
 import { getLanguageFlag } from '../lib/languages';
 import Flashcard from '../components/srs/Flashcard';
@@ -57,6 +58,8 @@ export default function ReviewPage() {
   const navigate = useNavigate();
   const [searchParams] = useSearchParams();
   const setId = searchParams.get('set');
+  const deck = searchParams.get('deck');
+  const isMistakeDeck = deck === 'mistakes';
   const studySet = useStudySetsStore((s) => s.sets.find((ss) => ss.id === setId));
   const [loading, setLoading] = useState(true);
   const [totalDue, setTotalDue] = useState(0);
@@ -75,7 +78,9 @@ export default function ReviewPage() {
     setLoading(true);
 
     let due: Array<{ word: import('../db/schema').Word; review: import('../db/schema').Review }>;
-    if (setId) {
+    if (isMistakeDeck) {
+      due = await getMistakeDeck(reviewLanguage && reviewLanguage !== 'all' ? [reviewLanguage] : activeLanguages);
+    } else if (setId) {
       due = await getFilteredReviewQueue(setId);
     } else if (reviewLanguage && reviewLanguage !== 'all') {
       // Single language selected
@@ -134,7 +139,7 @@ export default function ReviewPage() {
 
     setQueue(items);
     setLoading(false);
-  }, [setQueue, reviewBatchSize, setId, practiceMode, reviewLanguage, activeLanguages]);
+  }, [setQueue, reviewBatchSize, setId, practiceMode, reviewLanguage, activeLanguages, isMistakeDeck]);
 
   useEffect(() => {
     loadCards();
@@ -219,6 +224,23 @@ export default function ReviewPage() {
   }
 
   if (queue.length === 0) {
+    if (isMistakeDeck) {
+      return (
+        <div className="flex flex-col items-center justify-center h-64 text-center">
+          <p className="text-5xl mb-4">✨</p>
+          <p className="text-xl font-semibold text-gray-700 dark:text-gray-200">No misses to fix!</p>
+          <p className="text-gray-500 dark:text-gray-400 mt-2">
+            You've cleared your recent slip-ups. Beautiful work. 💪
+          </p>
+          <button
+            onClick={() => navigate('/review')}
+            className="mt-4 bg-indigo-600 text-white px-5 py-2 rounded-xl hover:bg-indigo-700 transition-colors"
+          >
+            Go to Review
+          </button>
+        </div>
+      );
+    }
     return (
       <div className="flex flex-col items-center justify-center h-64 text-center">
         <p className="text-5xl mb-4">🎉</p>
@@ -324,7 +346,7 @@ export default function ReviewPage() {
           </button>
           <div>
             <h2 className="text-lg font-semibold text-slate-700 dark:text-slate-200">
-              {studySet ? `Review: ${studySet.name}` : 'Review'}
+              {isMistakeDeck ? '💪 Fix your misses' : studySet ? `Review: ${studySet.name}` : 'Review'}
             </h2>
             {reviewBatchSize > 0 && totalDue > queue.length && (
               <p className="text-xs text-slate-400 dark:text-slate-500">

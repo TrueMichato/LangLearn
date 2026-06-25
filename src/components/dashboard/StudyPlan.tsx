@@ -7,6 +7,7 @@ interface StudyPlanProps {
   weekStudySeconds: number;
   weeklyGoalSeconds: number;
   currentStreak: number;
+  streakFreezes?: number;
 }
 
 function ProgressRing({ percentage }: { percentage: number }) {
@@ -66,6 +67,7 @@ export default function StudyPlan({
   weekStudySeconds,
   weeklyGoalSeconds,
   currentStreak,
+  streakFreezes,
 }: StudyPlanProps) {
   const navigate = useNavigate();
 
@@ -108,10 +110,20 @@ export default function StudyPlan({
           <span>⏱️ {minutesStudied}m / {goalMinutes}m weekly goal</span>
         </div>
 
-        <p className="text-sm text-slate-600 dark:text-slate-300">
-          {currentStreak > 0
-            ? `🔥 ${currentStreak}-day streak`
-            : 'Start your streak today! 💪'}
+        <p className="text-sm text-slate-600 dark:text-slate-300 flex items-center gap-2 flex-wrap">
+          <span>
+            {currentStreak > 0
+              ? `🔥 ${currentStreak}-day streak`
+              : 'Start your streak today! 💪'}
+          </span>
+          {streakFreezes != null && streakFreezes > 0 && (
+            <span
+              className="inline-flex items-center gap-1 text-xs px-2 py-0.5 rounded-full bg-sky-100 text-sky-700 dark:bg-sky-900/50 dark:text-sky-300"
+              title="Freeze days protect your streak if you miss a day"
+            >
+              🧊 ×{streakFreezes}
+            </span>
+          )}
         </p>
       </div>
 

@@ -2,6 +2,8 @@ import { create } from 'zustand';
 import { persist, createJSONStorage } from 'zustand/middleware';
 import { PRESETS, type NotificationPreset } from '../lib/notification-presets';
 
+const MAX_STREAK_FREEZES = 3;
+
 interface SettingsState {
   weeklyGoalMinutes: number;
   dailyGoalMinutes: number;
@@ -22,6 +24,8 @@ interface SettingsState {
   streakReminderMinDays: number;
   weeklyDigest: boolean;
   showContextOnCards: boolean;
+  streakFreezes: number;
+  lastFreezeGrantMilestone: number;
   // New notification-system fields
   notificationPreset: NotificationPreset;
   dailyNotificationBudget: number;
@@ -50,6 +54,9 @@ interface SettingsState {
   setStreakReminderMinDays: (n: number) => void;
   setWeeklyDigest: (enabled: boolean) => void;
   setShowContextOnCards: (enabled: boolean) => void;
+  setStreakFreezes: (n: number) => void;
+  consumeStreakFreezes: (n: number) => void;
+  grantStreakFreeze: (milestone: number) => void;
   setNotificationPreset: (preset: NotificationPreset) => void;
   setDailyNotificationBudget: (n: number) => void;
   setComebackNudges: (enabled: boolean) => void;
@@ -76,6 +83,8 @@ export const useSettingsStore = create<SettingsState>()(
       quietHoursStart: '22:00',
       quietHoursEnd: '07:00',
       showContextOnCards: true,
+      streakFreezes: 2,
+      lastFreezeGrantMilestone: 0,
       notificationPreset: 'balanced' as NotificationPreset,
       ...PRESETS.balanced,
       cloudRemindersEnabled: true,
@@ -119,6 +128,18 @@ export const useSettingsStore = create<SettingsState>()(
       setStreakReminderMinDays: (n) => set({ streakReminderMinDays: n, notificationPreset: 'custom' }),
       setWeeklyDigest: (enabled) => set({ weeklyDigest: enabled, notificationPreset: 'custom' }),
       setShowContextOnCards: (enabled) => set({ showContextOnCards: enabled }),
+      setStreakFreezes: (n) => set({ streakFreezes: Math.max(0, Math.min(MAX_STREAK_FREEZES, n)) }),
+      consumeStreakFreezes: (n) =>
+        set((s) => ({ streakFreezes: Math.max(0, s.streakFreezes - n) })),
+      grantStreakFreeze: (milestone) =>
+        set((s) =>
+          milestone > s.lastFreezeGrantMilestone
+            ? {
+                streakFreezes: Math.min(MAX_STREAK_FREEZES, s.streakFreezes + 1),
+                lastFreezeGrantMilestone: milestone,
+              }
+            : {}
+        ),
       setNotificationPreset: (preset) => {
         if (preset === 'custom') {
           set({ notificationPreset: 'custom' });

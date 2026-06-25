@@ -55,6 +55,7 @@ export interface DailyActivity {
   wordsAdded: number;
   goalMet: boolean;
   challengeComplete?: boolean;
+  freezeUsed?: boolean; // an explicit streak freeze was spent to bridge this missed day
 }
 
 export interface LessonProgress {
@@ -95,6 +96,16 @@ export interface Badge {
   unlockedAt: string;    // ISO date
 }
 
+export interface ReviewLogEntry {
+  id?: number;
+  reviewId: number;
+  wordId: number;
+  language: string;
+  grade: number;         // SM-2 grade 0-5
+  isLapse: boolean;      // grade < 3
+  date: string;          // ISO date of the grade event
+}
+
 const db = new Dexie('LangLearnDB') as Dexie & {
   words: EntityTable<Word, 'id'>;
   reviews: EntityTable<Review, 'id'>;
@@ -106,6 +117,7 @@ const db = new Dexie('LangLearnDB') as Dexie & {
   characterProgress: EntityTable<CharacterProgress, 'id'>;
   testHistory: EntityTable<TestHistory, 'id'>;
   badges: EntityTable<Badge, 'id'>;
+  reviewLog: EntityTable<ReviewLogEntry, 'id'>;
 };
 
 db.version(1).stores({
@@ -199,6 +211,20 @@ db.version(8).stores({
   characterProgress: 'id, language, mastery',
   testHistory: '++id, language, type, score, date',
   badges: 'id, unlockedAt',
+});
+
+db.version(9).stores({
+  words: '++id, [language+createdAt], [word+language], language, word, createdAt, *tags, type',
+  reviews: '++id, [wordId+nextReviewDate], wordId, nextReviewDate',
+  texts: '++id, language, createdAt',
+  studySessions: '++id, startTime, activity',
+  settings: 'key',
+  dailyActivity: 'date, goalMet, challengeComplete',
+  lessonProgress: 'id, language, lessonId',
+  characterProgress: 'id, language, mastery',
+  testHistory: '++id, language, type, score, date',
+  badges: 'id, unlockedAt',
+  reviewLog: '++id, reviewId, wordId, isLapse, [language+date], date',
 });
 
 export { db };

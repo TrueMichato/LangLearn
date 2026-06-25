@@ -27,6 +27,17 @@ export async function processReview(
   };
 
   await db.reviews.put(updated);
+
+  const word = await db.words.get(review.wordId);
+  await db.reviewLog.add({
+    reviewId,
+    wordId: review.wordId,
+    language: word?.language ?? '',
+    grade,
+    isLapse: grade < 3,
+    date: now.toISOString(),
+  });
+
   return updated;
 }
 
