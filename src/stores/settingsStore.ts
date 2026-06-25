@@ -27,6 +27,9 @@ interface SettingsState {
   streakFreezes: number;
   lastFreezeGrantMilestone: number;
   lastRecapShownWeek: string;
+  weeklyWordGoal: number;
+  weeklyReviewGoal: number;
+  weeklyLessonGoal: number;
   // New notification-system fields
   notificationPreset: NotificationPreset;
   dailyNotificationBudget: number;
@@ -59,6 +62,9 @@ interface SettingsState {
   consumeStreakFreezes: (n: number) => void;
   grantStreakFreeze: (milestone: number) => void;
   setLastRecapShownWeek: (week: string) => void;
+  setWeeklyWordGoal: (n: number) => void;
+  setWeeklyReviewGoal: (n: number) => void;
+  setWeeklyLessonGoal: (n: number) => void;
   setNotificationPreset: (preset: NotificationPreset) => void;
   setDailyNotificationBudget: (n: number) => void;
   setComebackNudges: (enabled: boolean) => void;
@@ -88,6 +94,9 @@ export const useSettingsStore = create<SettingsState>()(
       streakFreezes: 2,
       lastFreezeGrantMilestone: 0,
       lastRecapShownWeek: '',
+      weeklyWordGoal: 20,
+      weeklyReviewGoal: 50,
+      weeklyLessonGoal: 2,
       notificationPreset: 'balanced' as NotificationPreset,
       ...PRESETS.balanced,
       cloudRemindersEnabled: true,
@@ -144,6 +153,9 @@ export const useSettingsStore = create<SettingsState>()(
             : {}
         ),
       setLastRecapShownWeek: (week) => set({ lastRecapShownWeek: week }),
+      setWeeklyWordGoal: (n) => set({ weeklyWordGoal: n }),
+      setWeeklyReviewGoal: (n) => set({ weeklyReviewGoal: n }),
+      setWeeklyLessonGoal: (n) => set({ weeklyLessonGoal: n }),
       setNotificationPreset: (preset) => {
         if (preset === 'custom') {
           set({ notificationPreset: 'custom' });

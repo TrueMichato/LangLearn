@@ -16,6 +16,7 @@ import BadgeCollection from '../components/badges/BadgeCollection';
 import DailyChallengeCard from '../components/dashboard/DailyChallengeCard';
 import MistakeDeckCard from '../components/dashboard/MistakeDeckCard';
 import ReviewForecast from '../components/dashboard/ReviewForecast';
+import WeeklyGoals from '../components/dashboard/WeeklyGoals';
 import WeeklyRecapModal from '../components/dashboard/WeeklyRecapModal';
 import SuggestedNext from '../components/dashboard/SuggestedNext';
 import Milestones from '../components/dashboard/Milestones';
@@ -156,6 +157,8 @@ export default function Dashboard() {
       />
 
       <MistakeDeckCard />
+
+      <WeeklyGoals />
 
       <DailyChallengeCard />
 
