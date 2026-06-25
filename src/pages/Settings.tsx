@@ -48,7 +48,7 @@ const sectionCard =
   'bg-white dark:bg-slate-800/90 rounded-2xl shadow-sm border border-slate-200/60 dark:border-white/10 p-4';
 
 export default function SettingsPage() {
-  const { weeklyGoalMinutes, setWeeklyGoal, dailyGoalMinutes, setDailyGoal, activeLanguages, addLanguage, removeLanguage, showStressMarks, toggleStressMarks, darkMode, toggleDarkMode, fontSize, setFontSize, ttsRate, setTtsRate, reviewBatchSize, setReviewBatchSize } =
+  const { weeklyGoalMinutes, setWeeklyGoal, dailyGoalMinutes, setDailyGoal, activeLanguages, addLanguage, removeLanguage, showStressMarks, toggleStressMarks, darkMode, toggleDarkMode, fontSize, setFontSize, ttsRate, setTtsRate, reviewBatchSize, setReviewBatchSize, adaptiveReview, toggleAdaptiveReview, scheduler, setScheduler, fsrsRequestRetention, setFsrsRequestRetention } =
     useSettingsStore();
   const [importStatus, setImportStatus] = useState('');
   const fileInputRef = useRef<HTMLInputElement>(null);
@@ -231,6 +231,67 @@ export default function SettingsPage() {
               </button>
             ))}
           </div>
+        </div>
+
+        {/* Adaptive review */}
+        <div className="flex items-center justify-between">
+          <div className="pr-3">
+            <p className="text-sm text-slate-700 dark:text-slate-200">Adaptive review focus</p>
+            <p className="text-xs text-slate-500 dark:text-slate-400">
+              Gently weight each session toward cards you find tricky. No penalties — just a little extra practice where it helps.
+            </p>
+          </div>
+          <Toggle checked={adaptiveReview} onChange={toggleAdaptiveReview} />
+        </div>
+
+        {/* Scheduler */}
+        <div>
+          <p className="text-sm text-slate-700 dark:text-slate-200 mb-1">Scheduling algorithm</p>
+          <p className="text-xs text-slate-500 dark:text-slate-400 mb-2">
+            SM-2 is the classic, predictable scheduler. FSRS adapts intervals to how well you
+            actually remember each card — often fewer reviews for the same recall.
+          </p>
+          <div className="flex gap-2">
+            {([
+              { value: 'sm2', label: 'SM-2' },
+              { value: 'fsrs', label: 'FSRS' },
+            ] as const).map((opt) => (
+              <button
+                key={opt.value}
+                onClick={() => setScheduler(opt.value)}
+                className={`flex-1 py-1.5 rounded-xl text-sm font-semibold transition-all duration-200 press-feedback ${
+                  scheduler === opt.value
+                    ? 'gradient-primary text-white shadow-sm'
+                    : 'bg-slate-100 dark:bg-slate-700 text-slate-600 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-600'
+                }`}
+              >
+                {opt.label}
+              </button>
+            ))}
+          </div>
+          {scheduler === 'fsrs' && (
+            <div className="mt-3">
+              <div className="flex items-center justify-between mb-1">
+                <p className="text-sm text-slate-700 dark:text-slate-200">Target retention</p>
+                <span className="text-sm font-semibold text-indigo-600 dark:text-indigo-300 tabular-nums">
+                  {Math.round(fsrsRequestRetention * 100)}%
+                </span>
+              </div>
+              <input
+                type="range"
+                min={0.8}
+                max={0.97}
+                step={0.01}
+                value={fsrsRequestRetention}
+                onChange={(e) => setFsrsRequestRetention(parseFloat(e.target.value))}
+                className="w-full accent-indigo-600"
+              />
+              <p className="text-xs text-slate-500 dark:text-slate-400 mt-1">
+                Higher means more frequent reviews and stronger recall; lower means fewer reviews.
+                Switching schedulers is safe — your existing cards carry over.
+              </p>
+            </div>
+          )}
         </div>
       </section>
 

@@ -141,10 +141,12 @@ export async function getStudySuggestions(
     });
   }
 
-  // 7. Weak words — low ease
+  // 7. Weak words — low ease (SM-2) or high difficulty (FSRS)
   const allReviews = await db.reviews.toArray();
   const weakWords = allReviews.filter(
-    (r) => r.ease < 1.5 && r.repetitions > 0,
+    (r) =>
+      r.repetitions > 0 &&
+      (r.difficulty != null ? r.difficulty >= 7 : r.ease < 1.5),
   );
   if (weakWords.length >= 3) {
     suggestions.push({

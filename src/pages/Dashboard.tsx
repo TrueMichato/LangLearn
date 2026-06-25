@@ -5,7 +5,7 @@ import type { StudySession, DailyActivity } from '../db/schema';
 import { getDueCount } from '../db/reviews';
 import { getTotalWordCount } from '../db/words';
 import { formatStudyTime } from '../lib/xp';
-import { calculateCurrentStreak, calculateLongestStreak, todayStr } from '../lib/streaks';
+import { calculateCurrentStreak, calculateLongestStreak, todayStr, reconcileFreezes } from '../lib/streaks';
 import { useSettingsStore } from '../stores/settingsStore';
 import { useXPStore } from '../stores/xpStore';
 import HeatMap from '../components/dashboard/HeatMap';
@@ -14,6 +14,10 @@ import StudyPlan from '../components/dashboard/StudyPlan';
 import AddWordModal from '../components/srs/AddWordModal';
 import BadgeCollection from '../components/badges/BadgeCollection';
 import DailyChallengeCard from '../components/dashboard/DailyChallengeCard';
+import MistakeDeckCard from '../components/dashboard/MistakeDeckCard';
+import ReviewForecast from '../components/dashboard/ReviewForecast';
+import WeeklyGoals from '../components/dashboard/WeeklyGoals';
+import WeeklyRecapModal from '../components/dashboard/WeeklyRecapModal';
 import SuggestedNext from '../components/dashboard/SuggestedNext';
 import Milestones from '../components/dashboard/Milestones';
 import VocabSizeCard from '../components/dashboard/VocabSizeCard';
@@ -42,6 +46,9 @@ export default function Dashboard() {
   const weeklyGoalMinutes = useSettingsStore((s) => s.weeklyGoalMinutes);
   const dailyGoalMinutes = useSettingsStore((s) => s.dailyGoalMinutes);
   const activeLanguages = useSettingsStore((s) => s.activeLanguages);
+  const streakFreezes = useSettingsStore((s) => s.streakFreezes);
+  const consumeStreakFreezes = useSettingsStore((s) => s.consumeStreakFreezes);
+  const grantStreakFreeze = useSettingsStore((s) => s.grantStreakFreeze);
   const bonusXP = useXPStore((s) => s.bonusXP);
   const [showAddModal, setShowAddModal] = useState(false);
   const greeting = useMemo(getGreeting, []);
@@ -71,8 +78,16 @@ export default function Dashboard() {
     setStats({ totalWords, dueCards, totalStudySeconds, weekStudySeconds, timeXP });
 
     const dailyActivities = await db.dailyActivity.toArray();
-    setActivities(dailyActivities);
-  }, []);
+
+    // Spend explicit streak freezes on any missed days that need bridging.
+    const spent = await reconcileFreezes(streakFreezes);
+    if (spent > 0) {
+      consumeStreakFreezes(spent);
+      setActivities(await db.dailyActivity.toArray());
+    } else {
+      setActivities(dailyActivities);
+    }
+  }, [streakFreezes, consumeStreakFreezes]);
 
   // Load on mount
   useEffect(() => {
@@ -90,20 +105,31 @@ export default function Dashboard() {
     return () => document.removeEventListener('visibilitychange', onVisibility);
   }, [loadData]);
 
+  // Grant a bonus freeze when reaching a streak milestone (idempotent via store).
+  useEffect(() => {
+    if (activities.length === 0) return;
+    const streak = calculateCurrentStreak(activities, streakFreezes);
+    for (const milestone of [7, 30, 100]) {
+      if (streak >= milestone) grantStreakFreeze(milestone);
+    }
+  }, [activities, streakFreezes, grantStreakFreeze]);
+
   if (!stats) {
     return <PageSkeleton />;
   }
 
   const weeklyGoalSeconds = weeklyGoalMinutes * 60;
 
-  const currentStreak = calculateCurrentStreak(activities);
+  const currentStreak = calculateCurrentStreak(activities, streakFreezes);
   const longestStreak = calculateLongestStreak(activities);
+
   const streakEmoji =
     currentStreak >= 30 ? '🔥🔥🔥' : currentStreak >= 7 ? '🔥🔥' : '🔥';
   const isMilestone = currentStreak >= 100 || currentStreak === 30 || currentStreak === 7;
 
   return (
     <div className="page-enter">
+      <WeeklyRecapModal />
       <div className="flex items-center justify-between mb-4">
         <div>
           <p className="text-lg font-semibold text-slate-700 dark:text-slate-200">
@@ -127,9 +153,16 @@ export default function Dashboard() {
         weekStudySeconds={stats.weekStudySeconds}
         weeklyGoalSeconds={weeklyGoalSeconds}
         currentStreak={currentStreak}
+        streakFreezes={streakFreezes}
       />
 
+      <MistakeDeckCard />
+
+      <WeeklyGoals />
+
       <DailyChallengeCard />
+
+      <ReviewForecast />
 
       <SuggestedNext />
 

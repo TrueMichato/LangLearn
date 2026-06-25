@@ -16,6 +16,8 @@ import { getLanguageLabel } from '../lib/languages';
 import LineChart from '../components/analytics/LineChart';
 import BarChart from '../components/analytics/BarChart';
 import SegmentedBar from '../components/analytics/SegmentedBar';
+import TopicHeatmap from '../components/analytics/TopicHeatmap';
+import NextFocusCard from '../components/analytics/NextFocusCard';
 
 interface AnalyticsData {
   retention: { date: string; percent: number }[];
@@ -144,6 +146,9 @@ export default function AnalyticsPage() {
         ))}
       </div>
 
+      {/* What should I do next? */}
+      <NextFocusCard language={selectedLang} />
+
       {/* Overall Stats Summary */}
       <div className="grid grid-cols-2 gap-3 mb-4">
         <StatCard icon="📚" label="Total Words" value={stats.totalWords} />
@@ -191,6 +196,9 @@ export default function AnalyticsPage() {
           ]}
         />
       </Section>
+
+      {/* Grammar topic heatmap */}
+      <TopicHeatmap language={selectedLang} />
 
       {/* Study Time Trend */}
       <Section title={`Study Time (14 days)${selectedLang ? ' — all languages' : ''}`}>
@@ -252,7 +260,7 @@ export default function AnalyticsPage() {
       <Section title="Weakest Words">
         {weakest.length === 0 ? (
           <p className="text-sm text-slate-400 dark:text-slate-500 text-center py-4">
-            No reviews yet — add some words to get started!
+            No reviews yet — add a few words and they'll show up here. You've got this! 💛
           </p>
         ) : (
           <div className="divide-y divide-slate-100 dark:divide-slate-700">

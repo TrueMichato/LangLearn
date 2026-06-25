@@ -12,23 +12,38 @@ export function todayStr(): string {
 
 /**
  * Calculate current streak: consecutive days backward from today where goalMet.
- * Allows 1 "freeze" per 7-day window — if 6+ of the last 7 days have goalMet,
- * a single missed day doesn't break the streak.
+ *
+ * Two layers of forgiveness (kind learning):
+ *  1. Implicit auto-freeze — allows 1 "freeze" per 7-day window when 6+ of the
+ *     last 7 days have goalMet.
+ *  2. Explicit freezes — a missed day is also bridged if it was already paid for
+ *     with a freeze (`freezeUsed` on its activity record), or if the caller still
+ *     has `availableFreezes` to spend proactively.
  */
-export function calculateCurrentStreak(activities: DailyActivity[]): number {
+export function calculateCurrentStreak(
+  activities: DailyActivity[],
+  availableFreezes = 0
+): number {
   if (activities.length === 0) return 0;
 
   const metDates = new Set(
     activities.filter((a) => a.goalMet).map((a) => a.date)
   );
   const allDates = new Set(activities.map((a) => a.date));
+  const frozenDates = new Set(
+    activities.filter((a) => a.freezeUsed).map((a) => a.date)
+  );
+  const earliestDate = activities.reduce(
+    (min, a) => (a.date < min ? a.date : min),
+    activities[0].date
+  );
 
   const today = new Date();
   today.setHours(0, 0, 0, 0);
 
   const todayKey = fmtDate(today);
-  // If today has no activity at all, start counting from yesterday
-  const startDate = allDates.has(todayKey) ? today : addDays(today, -1);
+  // Today is in-progress: it anchors the streak only once its goal is met.
+  const startDate = metDates.has(todayKey) ? today : addDays(today, -1);
 
   // If the start date also has no met goal and no freeze possible, streak is 0
   if (!metDates.has(fmtDate(startDate)) && !allDates.has(fmtDate(startDate))) {
@@ -37,19 +52,23 @@ export function calculateCurrentStreak(activities: DailyActivity[]): number {
 
   let streak = 0;
   let freezesUsed = 0;
+  let explicitRemaining = availableFreezes;
   const cursor = new Date(startDate);
 
   for (let i = 0; i < 10000; i++) {
     const key = fmtDate(cursor);
+    if (key < earliestDate) break;
 
     if (metDates.has(key)) {
       streak++;
+    } else if (canFreeze(cursor, metDates, freezesUsed)) {
+      freezesUsed++;
+    } else if (frozenDates.has(key)) {
+      // Already bridged with an explicit freeze on a previous reconcile
+    } else if (explicitRemaining > 0) {
+      explicitRemaining--;
     } else {
-      if (canFreeze(cursor, metDates, freezesUsed)) {
-        freezesUsed++;
-      } else {
-        break;
-      }
+      break;
     }
 
     cursor.setDate(cursor.getDate() - 1);
@@ -119,7 +138,99 @@ export async function updateDailyActivity(updates: {
   await db.dailyActivity.put(record);
 }
 
-// --- helpers ---
+/**
+ * Pure helper: walking backward from today, return the gap dates that an
+ * explicit freeze would need to bridge (i.e. not met, not auto-frozen, not
+ * already paid for) up to `availableFreezes`. Used to persist freeze spending.
+ */
+export function computeFreezesToSpend(
+  activities: DailyActivity[],
+  availableFreezes: number
+): string[] {
+  if (availableFreezes <= 0 || activities.length === 0) return [];
+
+  const metDates = new Set(
+    activities.filter((a) => a.goalMet).map((a) => a.date)
+  );
+  const frozenDates = new Set(
+    activities.filter((a) => a.freezeUsed).map((a) => a.date)
+  );
+  const earliestDate = activities.reduce(
+    (min, a) => (a.date < min ? a.date : min),
+    activities[0].date
+  );
+
+  const today = new Date();
+  today.setHours(0, 0, 0, 0);
+
+  // Freezes only ever bridge *past* missed days; today is in-progress and is
+  // never paid for. A tentative freeze is committed only once the backward walk
+  // reaches an older met day — otherwise it would protect no streak.
+  const committed: string[] = [];
+  let pending: string[] = [];
+  let freezesUsed = 0;
+  let remaining = availableFreezes;
+  const cursor = addDays(today, -1);
+
+  for (let i = 0; i < 10000; i++) {
+    const key = fmtDate(cursor);
+    if (key < earliestDate) break;
+
+    if (metDates.has(key)) {
+      // A met day justifies every tentative freeze since the last met day.
+      committed.push(...pending);
+      pending = [];
+    } else if (canFreeze(cursor, metDates, freezesUsed)) {
+      freezesUsed++;
+    } else if (frozenDates.has(key)) {
+      // Already paid for on a previous reconcile.
+    } else if (remaining > 0) {
+      remaining--;
+      pending.push(key);
+    } else {
+      break;
+    }
+
+    cursor.setDate(cursor.getDate() - 1);
+  }
+
+  // Any still-pending days form a trailing gap that connects to no older met
+  // day, so they protect no streak and must not consume a freeze.
+  return committed;
+}
+
+/**
+ * Persist explicit-freeze spending: marks bridged gap days with `freezeUsed`
+ * and returns how many freezes were consumed so the caller can decrement the
+ * user's freeze inventory. Only spends a freeze on a day with an existing
+ * activity record OR creates a minimal frozen record for it.
+ */
+export async function reconcileFreezes(
+  availableFreezes: number
+): Promise<number> {
+  const activities = await db.dailyActivity.toArray();
+  const toSpend = computeFreezesToSpend(activities, availableFreezes);
+  if (toSpend.length === 0) return 0;
+
+  for (const date of toSpend) {
+    const existing = await db.dailyActivity.get(date);
+    if (existing) {
+      existing.freezeUsed = true;
+      await db.dailyActivity.put(existing);
+    } else {
+      await db.dailyActivity.put({
+        date,
+        studySeconds: 0,
+        cardsReviewed: 0,
+        wordsAdded: 0,
+        goalMet: false,
+        freezeUsed: true,
+      });
+    }
+  }
+
+  return toSpend.length;
+}
 
 function fmtDate(d: Date): string {
   const yyyy = d.getFullYear();

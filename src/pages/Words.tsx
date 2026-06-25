@@ -10,6 +10,7 @@ import { SkeletonList } from '../components/common/Skeleton';
 import StudySets from '../components/words/StudySets';
 import { getFrequencyRank, getFrequencyTier, getFrequencyLabel, type FrequencyTier } from '../data/frequency';
 import { getForvoUrl } from '../lib/forvo';
+import { getLeechWordIds } from '../lib/mistakes';
 
 type StatusFilter = 'all' | 'learning' | 'mature' | 'due';
 
@@ -90,6 +91,7 @@ export default function WordsPage() {
   const [loading, setLoading] = useState(true);
   const [showAddModal, setShowAddModal] = useState(false);
   const [showCSVImport, setShowCSVImport] = useState(false);
+  const [leechIds, setLeechIds] = useState<Set<number>>(new Set());
 
   const load = useCallback(async () => {
     setLoading(true);
@@ -102,6 +104,7 @@ export default function WordsPage() {
     };
     const data = await searchWords(filter);
     setResults(data);
+    setLeechIds(await getLeechWordIds(language ? [language] : undefined));
     setLoading(false);
   }, [language, search, status, sortBy, sortDir]);
 
@@ -269,6 +272,14 @@ export default function WordsPage() {
                       )}
                       <EaseDots ease={review.ease} />
                       <FrequencyBadge word={word.word} language={word.language} />
+                      {leechIds.has(word.id!) && (
+                        <span
+                          className="text-xs px-1.5 py-0.5 rounded-full bg-amber-100 text-amber-800 dark:bg-amber-900/50 dark:text-amber-200 font-medium"
+                          title="You've slipped on this one a few times — it'll get easier with practice"
+                        >
+                          ⚠️ Needs attention
+                        </span>
+                      )}
                     </div>
                     <div className="text-sm text-slate-600 dark:text-slate-400 truncate">
                       {word.meaning}
