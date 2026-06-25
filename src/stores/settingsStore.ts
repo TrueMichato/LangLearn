@@ -26,6 +26,7 @@ interface SettingsState {
   showContextOnCards: boolean;
   streakFreezes: number;
   lastFreezeGrantMilestone: number;
+  lastRecapShownWeek: string;
   // New notification-system fields
   notificationPreset: NotificationPreset;
   dailyNotificationBudget: number;
@@ -57,6 +58,7 @@ interface SettingsState {
   setStreakFreezes: (n: number) => void;
   consumeStreakFreezes: (n: number) => void;
   grantStreakFreeze: (milestone: number) => void;
+  setLastRecapShownWeek: (week: string) => void;
   setNotificationPreset: (preset: NotificationPreset) => void;
   setDailyNotificationBudget: (n: number) => void;
   setComebackNudges: (enabled: boolean) => void;
@@ -85,6 +87,7 @@ export const useSettingsStore = create<SettingsState>()(
       showContextOnCards: true,
       streakFreezes: 2,
       lastFreezeGrantMilestone: 0,
+      lastRecapShownWeek: '',
       notificationPreset: 'balanced' as NotificationPreset,
       ...PRESETS.balanced,
       cloudRemindersEnabled: true,
@@ -140,6 +143,7 @@ export const useSettingsStore = create<SettingsState>()(
               }
             : {}
         ),
+      setLastRecapShownWeek: (week) => set({ lastRecapShownWeek: week }),
       setNotificationPreset: (preset) => {
         if (preset === 'custom') {
           set({ notificationPreset: 'custom' });

@@ -16,6 +16,7 @@ import BadgeCollection from '../components/badges/BadgeCollection';
 import DailyChallengeCard from '../components/dashboard/DailyChallengeCard';
 import MistakeDeckCard from '../components/dashboard/MistakeDeckCard';
 import ReviewForecast from '../components/dashboard/ReviewForecast';
+import WeeklyRecapModal from '../components/dashboard/WeeklyRecapModal';
 import SuggestedNext from '../components/dashboard/SuggestedNext';
 import Milestones from '../components/dashboard/Milestones';
 import VocabSizeCard from '../components/dashboard/VocabSizeCard';
@@ -127,6 +128,7 @@ export default function Dashboard() {
 
   return (
     <div className="page-enter">
+      <WeeklyRecapModal />
       <div className="flex items-center justify-between mb-4">
         <div>
           <p className="text-lg font-semibold text-slate-700 dark:text-slate-200">
