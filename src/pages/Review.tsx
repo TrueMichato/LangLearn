@@ -8,6 +8,7 @@ import { useSettingsStore } from '../stores/settingsStore';
 import { useStudySetsStore } from '../stores/studySetsStore';
 import { getFilteredReviewQueue } from '../lib/filtered-review';
 import { getMistakeDeck, getLeechWordIds } from '../lib/mistakes';
+import { getTopicDeck } from '../lib/grammar-topics';
 import { get7DayRetention } from '../lib/analytics';
 import { getLanguageFlag } from '../lib/languages';
 import Flashcard from '../components/srs/Flashcard';
@@ -60,6 +61,7 @@ export default function ReviewPage() {
   const setId = searchParams.get('set');
   const deck = searchParams.get('deck');
   const isMistakeDeck = deck === 'mistakes';
+  const topicId = deck === 'topic' ? searchParams.get('topic') : null;
   const studySet = useStudySetsStore((s) => s.sets.find((ss) => ss.id === setId));
   const [loading, setLoading] = useState(true);
   const [totalDue, setTotalDue] = useState(0);
@@ -78,7 +80,9 @@ export default function ReviewPage() {
     setLoading(true);
 
     let due: Array<{ word: import('../db/schema').Word; review: import('../db/schema').Review }>;
-    if (isMistakeDeck) {
+    if (topicId) {
+      due = await getTopicDeck(topicId, reviewLanguage && reviewLanguage !== 'all' ? reviewLanguage : undefined);
+    } else if (isMistakeDeck) {
       due = await getMistakeDeck(reviewLanguage && reviewLanguage !== 'all' ? [reviewLanguage] : activeLanguages);
     } else if (setId) {
       due = await getFilteredReviewQueue(setId);
@@ -150,7 +154,7 @@ export default function ReviewPage() {
 
     setQueue(items);
     setLoading(false);
-  }, [setQueue, reviewBatchSize, setId, practiceMode, reviewLanguage, activeLanguages, isMistakeDeck]);
+  }, [setQueue, reviewBatchSize, setId, practiceMode, reviewLanguage, activeLanguages, isMistakeDeck, topicId]);
 
   useEffect(() => {
     loadCards();
@@ -357,7 +361,7 @@ export default function ReviewPage() {
           </button>
           <div>
             <h2 className="text-lg font-semibold text-slate-700 dark:text-slate-200">
-              {isMistakeDeck ? '💪 Fix your misses' : studySet ? `Review: ${studySet.name}` : 'Review'}
+              {isMistakeDeck ? '💪 Fix your misses' : topicId ? `🎯 ${topicId}` : studySet ? `Review: ${studySet.name}` : 'Review'}
             </h2>
             {reviewBatchSize > 0 && totalDue > queue.length && (
               <p className="text-xs text-slate-400 dark:text-slate-500">

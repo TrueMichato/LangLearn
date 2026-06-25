@@ -16,6 +16,7 @@ import { getLanguageLabel } from '../lib/languages';
 import LineChart from '../components/analytics/LineChart';
 import BarChart from '../components/analytics/BarChart';
 import SegmentedBar from '../components/analytics/SegmentedBar';
+import TopicHeatmap from '../components/analytics/TopicHeatmap';
 
 interface AnalyticsData {
   retention: { date: string; percent: number }[];
@@ -191,6 +192,9 @@ export default function AnalyticsPage() {
           ]}
         />
       </Section>
+
+      {/* Grammar topic heatmap */}
+      <TopicHeatmap language={selectedLang} />
 
       {/* Study Time Trend */}
       <Section title={`Study Time (14 days)${selectedLang ? ' — all languages' : ''}`}>
