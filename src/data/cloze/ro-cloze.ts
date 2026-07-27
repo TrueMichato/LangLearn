@@ -72,4 +72,16 @@ export const roClozeSentences: ClozeSentence[] = [
   { id: 'ro-c058', target: 'Trenul a sosit cu o întârziere de o oră', english: 'The train arrived with a one-hour delay', blankedWord: 'întârziere', blankedReading: 'uhn-tuhr-zee-EH-reh', frequencyRank: 58, difficulty: 'advanced' },
   { id: 'ro-c059', target: 'Copacul acesta are peste o sută de ani', english: 'This tree is over a hundred years old', blankedWord: 'Copacul', blankedReading: 'koh-PAH-kool', frequencyRank: 59, difficulty: 'intermediate' },
   { id: 'ro-c060', target: 'Fiecare are dreptul la o educație bună', english: 'Everyone has the right to a good education', blankedWord: 'educație', blankedReading: 'eh-doo-KAH-tsee-eh', frequencyRank: 60, difficulty: 'advanced' },
+
+  // ── Set 7 (high-frequency words) ──
+  { id: 'ro-c061', target: 'Nu am spus nimic despre asta', english: 'I said nothing about that', blankedWord: 'nimic', blankedReading: 'nee-MEEK', frequencyRank: 61, difficulty: 'beginner' },
+  { id: 'ro-c062', target: 'A trecut mult timp de atunci', english: 'A lot of time has passed since then', blankedWord: 'timp', blankedReading: 'teemp', frequencyRank: 62, difficulty: 'beginner' },
+  { id: 'ro-c063', target: 'Toate florile au înflorit în grădină', english: 'All the flowers have bloomed in the garden', blankedWord: 'Toate', blankedReading: 'TWAH-teh', frequencyRank: 63, difficulty: 'beginner' },
+  { id: 'ro-c064', target: 'Nimeni nu știe răspunsul corect', english: 'Nobody knows the correct answer', blankedWord: 'Nimeni', blankedReading: 'NEE-men', frequencyRank: 64, difficulty: 'intermediate' },
+  { id: 'ro-c065', target: 'El este cel mai bun elev din clasă', english: 'He is the best pupil in the class', blankedWord: 'cel', blankedReading: 'chel', frequencyRank: 65, difficulty: 'intermediate' },
+  { id: 'ro-c066', target: 'Ea vorbește mereu despre familia ei', english: 'She always talks about her family', blankedWord: 'despre', blankedReading: 'DES-preh', frequencyRank: 66, difficulty: 'intermediate' },
+  { id: 'ro-c067', target: 'După masă mergem la o plimbare', english: 'After the meal we go for a walk', blankedWord: 'După', blankedReading: 'DOO-puh', frequencyRank: 67, difficulty: 'intermediate' },
+  { id: 'ro-c068', target: 'Am nevoie de mai mult timp', english: 'I need more time', blankedWord: 'nevoie', blankedReading: 'neh-VOH-yeh', frequencyRank: 68, difficulty: 'intermediate' },
+  { id: 'ro-c069', target: 'Cred că mâine va fi o zi frumoasă', english: 'I think tomorrow will be a beautiful day', blankedWord: 'Cred', blankedReading: 'kred', frequencyRank: 69, difficulty: 'advanced' },
+  { id: 'ro-c070', target: 'Trebuie să plecăm chiar acum', english: 'We must leave right now', blankedWord: 'chiar', blankedReading: 'kyar', frequencyRank: 70, difficulty: 'advanced' },
 ];

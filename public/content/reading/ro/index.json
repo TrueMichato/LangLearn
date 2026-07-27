@@ -385,6 +385,30 @@
         "traditions"
       ],
       "description": "An informative text about the tradition of hospitality in Romanian culture (bread and salt, țuică)."
+    },
+    {
+      "id": "la-steaua",
+      "title": "La steaua",
+      "titleEn": "To the Star",
+      "difficulty": "hard",
+      "wordCount": 71,
+      "tags": [
+        "literature",
+        "poetry"
+      ],
+      "description": "Mihai Eminescu’s famous public-domain poem about starlight and lost love (verbatim, ro.wikisource.org)."
+    },
+    {
+      "id": "lacul",
+      "title": "Lacul",
+      "titleEn": "The Lake",
+      "difficulty": "hard",
+      "wordCount": 91,
+      "tags": [
+        "literature",
+        "poetry"
+      ],
+      "description": "Mihai Eminescu’s beloved public-domain poem set by a lake in the forest (verbatim, ro.wikisource.org)."
     }
   ]
 }
