@@ -42,4 +42,10 @@ export const roMinimalPairs: MinimalPair[] = [
   { id: 'ro-28', wordA: 'bere', wordB: 'pere', readingA: 'BEH-reh', readingB: 'PEH-reh', meaningA: 'beer', meaningB: 'pears', hint: 'b vs p', category: 'consonant' },
   { id: 'ro-29', wordA: 'pui', wordB: 'cui', readingA: 'pooy', readingB: 'kooy', meaningA: 'chicken / young', meaningB: 'nail', hint: 'p vs k', category: 'consonant' },
   { id: 'ro-30', wordA: 'soare', wordB: 'sare', readingA: 'SWAH-reh', readingB: 'SAH-reh', meaningA: 'sun', meaningB: 'salt', hint: 'oa (diphthong) vs a', category: 'i-diphthong' },
+  { id: 'ro-31', wordA: 'toc', wordB: 'doc', readingA: 'tok', readingB: 'dok', meaningA: 'heel / door frame', meaningB: 'dock / denim', hint: 't vs d', category: 'consonant' },
+  { id: 'ro-32', wordA: 'vin', wordB: 'fin', readingA: 'veen', readingB: 'feen', meaningA: 'wine', meaningB: 'fine / godson', hint: 'v vs f', category: 'consonant' },
+  { id: 'ro-33', wordA: 'pod', wordB: 'pot', readingA: 'pod', readingB: 'pot', meaningA: 'bridge', meaningB: 'I can', hint: 'final d vs t', category: 'consonant' },
+  { id: 'ro-34', wordA: 'masă', wordB: 'casă', readingA: 'MAH-suh', readingB: 'KAH-suh', meaningA: 'table', meaningB: 'house', hint: 'm vs c', category: 'consonant' },
+  { id: 'ro-35', wordA: 'bec', wordB: 'sec', readingA: 'bek', readingB: 'sek', meaningA: 'lightbulb', meaningB: 'dry', hint: 'b vs s', category: 'consonant' },
+  { id: 'ro-36', wordA: 'joc', wordB: 'foc', readingA: 'zhok', readingB: 'fok', meaningA: 'dance / game', meaningB: 'fire', hint: 'j (zh) vs f', category: 'consonant' },
 ];

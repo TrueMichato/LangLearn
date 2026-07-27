@@ -228,5 +228,25 @@
     "id": "impersonal-constructions",
     "title": "Impersonal Constructions (îmi place, îmi trebuie, mi-e frig)",
     "order": 46
+  },
+  {
+    "id": "indefinite-pronouns",
+    "title": "Indefinite & Negative Pronouns (cineva, ceva, nimeni, nimic, tot, fiecare, oricine)",
+    "order": 47
+  },
+  {
+    "id": "presumptive-mood",
+    "title": "The Presumptive Mood (o fi, o fi făcând)",
+    "order": 48
+  },
+  {
+    "id": "reported-speech",
+    "title": "Reported Speech & Indirect Questions",
+    "order": 49
+  },
+  {
+    "id": "word-formation",
+    "title": "Word Formation: Prefixes & Suffixes",
+    "order": 50
   }
 ]

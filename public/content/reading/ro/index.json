@@ -336,6 +336,43 @@
         "traditions"
       ],
       "description": "Romanian winter customs from Saint Nicholas and carols to New Year and Epiphany."
+    },
+    {
+      "id": "interviu-de-angajare",
+      "title": "Un interviu de angajare",
+      "titleEn": "A Job Interview",
+      "difficulty": "medium",
+      "wordCount": 157,
+      "tags": [
+        "daily-life",
+        "conversation",
+        "work"
+      ],
+      "description": "A realistic job-interview dialogue with common questions and answers."
+    },
+    {
+      "id": "cum-sa-te-descurci-in-bucuresti",
+      "title": "Cum să te descurci în București",
+      "titleEn": "Getting Around Bucharest",
+      "difficulty": "medium",
+      "wordCount": 142,
+      "tags": [
+        "travel",
+        "daily-life"
+      ],
+      "description": "A practical guide to public transport and getting around the Romanian capital."
+    },
+    {
+      "id": "legenda-babei-dochia",
+      "title": "Legenda Babei Dochia",
+      "titleEn": "The Legend of Baba Dochia",
+      "difficulty": "medium",
+      "wordCount": 173,
+      "tags": [
+        "culture",
+        "legend"
+      ],
+      "description": "A retelling of the Romanian legend that explains the changeable weather of early March."
     }
   ]
 }
