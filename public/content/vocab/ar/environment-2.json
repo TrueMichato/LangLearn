@@ -1,0 +1,183 @@
+{
+  "id": "environment-2",
+  "words": [
+    {
+      "word": "الاِسْتِدَامَةُ",
+      "reading": "al-istidāmatu",
+      "meaning": "sustainability",
+      "example": "الاِسْتِدَامَةُ هَدَفٌ أَسَاسِيٌّ لِلْمَدِينَةِ.",
+      "exampleMeaning": "Sustainability is a basic goal for the city."
+    },
+    {
+      "word": "إِعَادَةُ التَّدْوِيرِ",
+      "reading": "iʿādatu at-tadwīri",
+      "meaning": "recycling",
+      "example": "إِعَادَةُ التَّدْوِيرِ تُقَلِّلُ النُّفَايَاتِ فِي الحَيِّ.",
+      "exampleMeaning": "Recycling reduces waste in the neighborhood."
+    },
+    {
+      "word": "الطَّاقَةُ المُتَجَدِّدَةُ",
+      "reading": "aṭ-ṭāqatu al-mutajaddidatu",
+      "meaning": "renewable energy",
+      "example": "الطَّاقَةُ المُتَجَدِّدَةُ تَدْعَمُ المُسْتَقْبَلَ النَّظِيفَ.",
+      "exampleMeaning": "Renewable energy supports a clean future."
+    },
+    {
+      "word": "البَصْمَةُ الكَرْبُونِيَّةُ",
+      "reading": "al-baṣmatu al-karbūniyyatu",
+      "meaning": "carbon footprint",
+      "example": "البَصْمَةُ الكَرْبُونِيَّةُ تَنْخَفِضُ مَعَ النَّقْلِ العَامِّ.",
+      "exampleMeaning": "The carbon footprint decreases with public transport."
+    },
+    {
+      "word": "الاِنْبِعَاثَاتُ",
+      "reading": "al-inbiʿāthātu",
+      "meaning": "emissions",
+      "example": "الاِنْبِعَاثَاتُ الصِّنَاعِيَّةُ تَحْتَاجُ إِلَى رَقَابَةٍ.",
+      "exampleMeaning": "Industrial emissions need monitoring."
+    },
+    {
+      "word": "التَّنَوُّعُ الحَيَوِيُّ",
+      "reading": "at-tanawwuʿu al-ḥayawiyyu",
+      "meaning": "biodiversity",
+      "example": "التَّنَوُّعُ الحَيَوِيُّ يَحْمِي تَوَازُنَ الغَابَةِ.",
+      "exampleMeaning": "Biodiversity protects the balance of the forest."
+    },
+    {
+      "word": "المَحْمِيَّةُ الطَّبِيعِيَّةُ",
+      "reading": "al-maḥmiyyatu aṭ-ṭabīʿiyyatu",
+      "meaning": "nature reserve",
+      "example": "المَحْمِيَّةُ الطَّبِيعِيَّةُ تَحْفَظُ الحَيَوَانَاتِ النَّادِرَةَ.",
+      "exampleMeaning": "The nature reserve preserves rare animals."
+    },
+    {
+      "word": "التَّصَحُّرُ",
+      "reading": "at-taṣaḥḥuru",
+      "meaning": "desertification",
+      "example": "التَّصَحُّرُ يُهَدِّدُ الأَرَاضِيَ الزِّرَاعِيَّةَ.",
+      "exampleMeaning": "Desertification threatens agricultural lands."
+    },
+    {
+      "word": "التَّلَوُّثُ البَحْرِيُّ",
+      "reading": "at-talawwuthu al-baḥriyyu",
+      "meaning": "marine pollution",
+      "example": "التَّلَوُّثُ البَحْرِيُّ يَضُرُّ الشِّعَابَ المَرْجَانِيَّةَ.",
+      "exampleMeaning": "Marine pollution harms coral reefs."
+    },
+    {
+      "word": "النُّفَايَاتُ الإِلِكْتْرُونِيَّةُ",
+      "reading": "an-nufāyātu al-iliktrūniyyatu",
+      "meaning": "electronic waste",
+      "example": "النُّفَايَاتُ الإِلِكْتْرُونِيَّةُ تَحْتَوِي عَلَى مَعَادِنَ خَطِرَةٍ.",
+      "exampleMeaning": "Electronic waste contains dangerous metals."
+    },
+    {
+      "word": "تَرْشِيدُ المِيَاهِ",
+      "reading": "tarshīdu al-miyāhi",
+      "meaning": "water conservation",
+      "example": "تَرْشِيدُ المِيَاهِ يَبْدَأُ مِنَ البَيْتِ.",
+      "exampleMeaning": "Water conservation begins at home."
+    },
+    {
+      "word": "الاِقْتِصَادُ الدَّائِرِيُّ",
+      "reading": "al-iqtiṣādu ad-dāʾiriyyu",
+      "meaning": "circular economy",
+      "example": "الاِقْتِصَادُ الدَّائِرِيُّ يُعِيدُ اسْتِخْدَامَ المَوَادِّ.",
+      "exampleMeaning": "The circular economy reuses materials."
+    },
+    {
+      "word": "التَّشْجِيرُ",
+      "reading": "at-tashjīru",
+      "meaning": "tree planting / afforestation",
+      "example": "التَّشْجِيرُ يُلَطِّفُ الهَوَاءَ فِي الشَّوَارِعِ.",
+      "exampleMeaning": "Tree planting softens the air in the streets."
+    },
+    {
+      "word": "المَبْنَى الأَخْضَرُ",
+      "reading": "al-mabnā al-ʾakhḍaru",
+      "meaning": "green building",
+      "example": "المَبْنَى الأَخْضَرُ يَسْتَهْلِكُ طَاقَةً أَقَلَّ.",
+      "exampleMeaning": "The green building consumes less energy."
+    },
+    {
+      "word": "الحِيَادُ الكَرْبُونِيُّ",
+      "reading": "al-ḥiyādu al-karbūniyyu",
+      "meaning": "carbon neutrality",
+      "example": "الحِيَادُ الكَرْبُونِيُّ يَتَطَلَّبُ خُطَّةً طَوِيلَةَ المَدَى.",
+      "exampleMeaning": "Carbon neutrality requires a long-term plan."
+    },
+    {
+      "word": "الحَوْكَمَةُ البِيئِيَّةُ",
+      "reading": "al-ḥawkamatu al-bīʾiyyatu",
+      "meaning": "environmental governance",
+      "example": "الحَوْكَمَةُ البِيئِيَّةُ تُحَسِّنُ قَرَارَاتِ الشَّرِكَاتِ.",
+      "exampleMeaning": "Environmental governance improves companies’ decisions."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "___ هَدَفٌ أَسَاسِيٌّ لِلْمَدِينَةِ.",
+          "answer": "الاِسْتِدَامَةُ",
+          "hint": "sustainability"
+        },
+        {
+          "sentence": "___ تُقَلِّلُ النُّفَايَاتِ فِي الحَيِّ.",
+          "answer": "إِعَادَةُ التَّدْوِيرِ",
+          "hint": "recycling"
+        },
+        {
+          "sentence": "___ تَدْعَمُ المُسْتَقْبَلَ النَّظِيفَ.",
+          "answer": "الطَّاقَةُ المُتَجَدِّدَةُ",
+          "hint": "renewable energy"
+        },
+        {
+          "sentence": "___ تَنْخَفِضُ مَعَ النَّقْلِ العَامِّ.",
+          "answer": "البَصْمَةُ الكَرْبُونِيَّةُ",
+          "hint": "carbon footprint"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "items": [
+        {
+          "question": "What does ‘الاِسْتِدَامَةُ’ mean?",
+          "options": [
+            "recycling",
+            "sustainability",
+            "renewable energy",
+            "carbon footprint"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What does ‘إِعَادَةُ التَّدْوِيرِ’ mean?",
+          "options": [
+            "renewable energy",
+            "recycling",
+            "carbon footprint",
+            "emissions"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What does ‘الطَّاقَةُ المُتَجَدِّدَةُ’ mean?",
+          "options": [
+            "carbon footprint",
+            "renewable energy",
+            "emissions",
+            "biodiversity"
+          ],
+          "answer": 1
+        }
+      ]
+    }
+  ]
+}

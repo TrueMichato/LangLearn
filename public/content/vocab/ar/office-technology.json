@@ -1,0 +1,183 @@
+{
+  "id": "office-technology",
+  "words": [
+    {
+      "word": "الحَاسُوبُ المَحْمُولُ",
+      "reading": "al-ḥāsūbu al-maḥmūlu",
+      "meaning": "laptop computer",
+      "example": "الحَاسُوبُ المَحْمُولُ خَفِيفٌ فِي الحَقِيبَةِ.",
+      "exampleMeaning": "The laptop is light in the bag."
+    },
+    {
+      "word": "الحَاسُوبُ المَكْتَبِيُّ",
+      "reading": "al-ḥāsūbu al-maktabiyyu",
+      "meaning": "desktop computer",
+      "example": "الحَاسُوبُ المَكْتَبِيُّ قَوِيٌّ لِلْعَمَلِ.",
+      "exampleMeaning": "The desktop computer is powerful for work."
+    },
+    {
+      "word": "الشَّاشَةُ",
+      "reading": "ash-shāshatu",
+      "meaning": "monitor / screen",
+      "example": "الشَّاشَةُ وَاضِحَةٌ أَمَامَ المُوَظَّفِ.",
+      "exampleMeaning": "The monitor is clear in front of the employee."
+    },
+    {
+      "word": "لَوْحَةُ المَفَاتِيحِ",
+      "reading": "lawḥatu al-mafātīḥi",
+      "meaning": "keyboard",
+      "example": "لَوْحَةُ المَفَاتِيحِ جَدِيدَةٌ عَلَى المَكْتَبِ.",
+      "exampleMeaning": "The keyboard is new on the desk."
+    },
+    {
+      "word": "الفَأْرَةُ",
+      "reading": "al-faʾratu",
+      "meaning": "computer mouse",
+      "example": "الفَأْرَةُ السِّلْكِيَّةُ رَخِيصَةٌ وَعَمَلِيَّةٌ.",
+      "exampleMeaning": "The wired mouse is cheap and practical."
+    },
+    {
+      "word": "الطَّابِعَةُ",
+      "reading": "aṭ-ṭābiʿatu",
+      "meaning": "printer",
+      "example": "الطَّابِعَةُ تَطْبَعُ التَّقْرِيرَ بِلَوْنٍ أَسْوَدَ.",
+      "exampleMeaning": "The printer prints the report in black."
+    },
+    {
+      "word": "المَاسِحُ الضَّوْئِيُّ",
+      "reading": "al-māsiḥu aḍ-ḍawʾiyyu",
+      "meaning": "scanner",
+      "example": "المَاسِحُ الضَّوْئِيُّ يَحْفَظُ الوَثَائِقَ رَقْمِيًّا.",
+      "exampleMeaning": "The scanner saves documents digitally."
+    },
+    {
+      "word": "جِهَازُ العَرْضِ",
+      "reading": "jihāzu al-ʿarḍi",
+      "meaning": "projector",
+      "example": "جِهَازُ العَرْضِ جَاهِزٌ لِلْمُحَاضَرَةِ.",
+      "exampleMeaning": "The projector is ready for the lecture."
+    },
+    {
+      "word": "سَمَّاعَةُ الرَّأْسِ",
+      "reading": "sammāʿatu ar-raʾsi",
+      "meaning": "headset",
+      "example": "سَمَّاعَةُ الرَّأْسِ تُسَاعِدُ فِي الاِجْتِمَاعِ عَنْ بُعْدٍ.",
+      "exampleMeaning": "The headset helps in the remote meeting."
+    },
+    {
+      "word": "المِلَفُّ",
+      "reading": "al-milaffu",
+      "meaning": "file",
+      "example": "المِلَفُّ مَحْفُوظٌ فِي المُجَلَّدِ الصَّحِيحِ.",
+      "exampleMeaning": "The file is saved in the correct folder."
+    },
+    {
+      "word": "المُجَلَّدُ",
+      "reading": "al-mujalladu",
+      "meaning": "folder",
+      "example": "المُجَلَّدُ يَحْتَوِي عَلَى صُوَرِ المَشْرُوعِ.",
+      "exampleMeaning": "The folder contains the project photos."
+    },
+    {
+      "word": "الدَّبَّاسَةُ",
+      "reading": "ad-dabbāsatu",
+      "meaning": "stapler",
+      "example": "الدَّبَّاسَةُ تَجْمَعُ الأَوْرَاقَ بِسُرْعَةٍ.",
+      "exampleMeaning": "The stapler gathers the papers quickly."
+    },
+    {
+      "word": "المِشْبَكُ الوَرَقِيُّ",
+      "reading": "al-mishbaku al-waraqiyyu",
+      "meaning": "paper clip",
+      "example": "المِشْبَكُ الوَرَقِيُّ يُثَبِّتُ الإِيصَالَ مَعَ الطَّلَبِ.",
+      "exampleMeaning": "The paper clip fastens the receipt to the request."
+    },
+    {
+      "word": "القَلَمُ الجَافُّ",
+      "reading": "al-qalamu al-jāffu",
+      "meaning": "ballpoint pen",
+      "example": "القَلَمُ الجَافُّ مَوْجُودٌ فِي الدُّرْجِ.",
+      "exampleMeaning": "The ballpoint pen is in the drawer."
+    },
+    {
+      "word": "المُفَكِّرَةُ",
+      "reading": "al-mufakkiratu",
+      "meaning": "planner / notebook",
+      "example": "المُفَكِّرَةُ تُنَظِّمُ مَهَامَّ الأُسْبُوعِ.",
+      "exampleMeaning": "The planner organizes the week’s tasks."
+    },
+    {
+      "word": "الشَّاحِنُ",
+      "reading": "ash-shāḥinu",
+      "meaning": "charger",
+      "example": "الشَّاحِنُ مَوْصُولٌ بِالقَابِسِ.",
+      "exampleMeaning": "The charger is connected to the socket."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "___ خَفِيفٌ فِي الحَقِيبَةِ.",
+          "answer": "الحَاسُوبُ المَحْمُولُ",
+          "hint": "laptop computer"
+        },
+        {
+          "sentence": "___ قَوِيٌّ لِلْعَمَلِ.",
+          "answer": "الحَاسُوبُ المَكْتَبِيُّ",
+          "hint": "desktop computer"
+        },
+        {
+          "sentence": "___ وَاضِحَةٌ أَمَامَ المُوَظَّفِ.",
+          "answer": "الشَّاشَةُ",
+          "hint": "monitor / screen"
+        },
+        {
+          "sentence": "___ جَدِيدَةٌ عَلَى المَكْتَبِ.",
+          "answer": "لَوْحَةُ المَفَاتِيحِ",
+          "hint": "keyboard"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "items": [
+        {
+          "question": "What does ‘الحَاسُوبُ المَحْمُولُ’ mean?",
+          "options": [
+            "desktop computer",
+            "laptop computer",
+            "monitor / screen",
+            "keyboard"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What does ‘الحَاسُوبُ المَكْتَبِيُّ’ mean?",
+          "options": [
+            "monitor / screen",
+            "desktop computer",
+            "keyboard",
+            "computer mouse"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What does ‘الشَّاشَةُ’ mean?",
+          "options": [
+            "keyboard",
+            "monitor / screen",
+            "computer mouse",
+            "printer"
+          ],
+          "answer": 1
+        }
+      ]
+    }
+  ]
+}

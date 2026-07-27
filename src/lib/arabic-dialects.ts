@@ -13,7 +13,7 @@
  * stream, one streak and one SRS deck per learner.
  */
 
-export type DialectCode = 'msa' | 'egyptian' | 'levantine' | 'gulf' | 'maghrebi';
+export type DialectCode = 'msa' | 'egyptian' | 'levantine' | 'gulf' | 'iraqi' | 'maghrebi';
 
 export interface DialectInfo {
   code: DialectCode;
@@ -60,6 +60,14 @@ export const DIALECTS: Record<DialectCode, DialectInfo> = {
     flag: '🇸🇦',
     blurb: 'Spoken around the Arabian Gulf, closest of the dialects to MSA. ق is kept as /g/; ك can soften to "ch".',
     region: 'Saudi, UAE, Kuwait, Qatar, Bahrain, Oman',
+  },
+  iraqi: {
+    code: 'iraqi',
+    name: 'Iraqi (Mesopotamian)',
+    nativeName: 'العِراقي',
+    flag: '🇮🇶',
+    blurb: 'Spoken across Iraq, blending Gulf and Levantine features. ق is often /g/; "shlōnak?" = how are you, "aku/māku" = there is/isn\'t.',
+    region: 'Iraq & parts of eastern Syria',
   },
   maghrebi: {
     code: 'maghrebi',

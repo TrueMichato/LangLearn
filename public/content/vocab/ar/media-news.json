@@ -1,0 +1,183 @@
+{
+  "id": "media-news",
+  "words": [
+    {
+      "word": "وَسَائِلُ الإِعْلَامِ",
+      "reading": "wasāʾilu al-iʿlāmi",
+      "meaning": "media outlets",
+      "example": "وَسَائِلُ الإِعْلَامِ تُؤَثِّرُ فِي الرَّأْيِ العَامِّ.",
+      "exampleMeaning": "Media outlets influence public opinion."
+    },
+    {
+      "word": "نَشْرَةُ الأَخْبَارِ",
+      "reading": "nashratu al-ʾakhbāri",
+      "meaning": "news bulletin",
+      "example": "نَشْرَةُ الأَخْبَارِ تَبْدَأُ فِي الثَّامِنَةِ.",
+      "exampleMeaning": "The news bulletin starts at eight."
+    },
+    {
+      "word": "العُنْوَانُ الرَّئِيسِيُّ",
+      "reading": "al-ʿunwānu ar-raʾīsiyyu",
+      "meaning": "main headline",
+      "example": "العُنْوَانُ الرَّئِيسِيُّ ظَهَرَ عَلَى الصَّفْحَةِ الأُولَى.",
+      "exampleMeaning": "The main headline appeared on the front page."
+    },
+    {
+      "word": "المُرَاسِلُ",
+      "reading": "al-murāsilu",
+      "meaning": "correspondent",
+      "example": "المُرَاسِلُ نَقَلَ الخَبَرَ مِنَ المَيْدَانِ.",
+      "exampleMeaning": "The correspondent reported the news from the field."
+    },
+    {
+      "word": "المُحَرِّرُ",
+      "reading": "al-muḥarriru",
+      "meaning": "editor",
+      "example": "المُحَرِّرُ رَاجَعَ النَّصَّ قَبْلَ النَّشْرِ.",
+      "exampleMeaning": "The editor reviewed the text before publication."
+    },
+    {
+      "word": "المَقَالُ الاِفْتِتَاحِيُّ",
+      "reading": "al-maqālu al-iftitāḥiyyu",
+      "meaning": "editorial",
+      "example": "المَقَالُ الاِفْتِتَاحِيُّ يَعْرِضُ رَأْيَ الصَّحِيفَةِ.",
+      "exampleMeaning": "The editorial presents the newspaper’s opinion."
+    },
+    {
+      "word": "المُقَابَلَةُ",
+      "reading": "al-muqābalatu",
+      "meaning": "interview",
+      "example": "المُقَابَلَةُ مَعَ الوَزِيرِ كَانَتْ طَوِيلَةً.",
+      "exampleMeaning": "The interview with the minister was long."
+    },
+    {
+      "word": "المَصْدَرُ",
+      "reading": "al-maṣdaru",
+      "meaning": "source",
+      "example": "المَصْدَرُ المَوْثُوقُ يُقَوِّي الخَبَرَ.",
+      "exampleMeaning": "A reliable source strengthens the news item."
+    },
+    {
+      "word": "التَّحَقُّقُ مِنَ الحَقَائِقِ",
+      "reading": "at-taḥaqququ mina al-ḥaqāʾiqi",
+      "meaning": "fact-checking",
+      "example": "التَّحَقُّقُ مِنَ الحَقَائِقِ يَحْمِي القَارِئَ مِنَ الشَّائِعَاتِ.",
+      "exampleMeaning": "Fact-checking protects the reader from rumors."
+    },
+    {
+      "word": "الأَخْبَارُ العَاجِلَةُ",
+      "reading": "al-ʾakhbāru al-ʿājilatu",
+      "meaning": "breaking news",
+      "example": "الأَخْبَارُ العَاجِلَةُ قَاطَعَتِ البَرْنَامَجَ.",
+      "exampleMeaning": "Breaking news interrupted the program."
+    },
+    {
+      "word": "المُؤْتَمَرُ الصَّحَفِيُّ",
+      "reading": "al-muʾtamaru aṣ-ṣaḥafiyyu",
+      "meaning": "press conference",
+      "example": "المُؤْتَمَرُ الصَّحَفِيُّ عُقِدَ بَعْدَ الاِجْتِمَاعِ.",
+      "exampleMeaning": "The press conference was held after the meeting."
+    },
+    {
+      "word": "الصِّحَافَةُ الاِسْتِقْصَائِيَّةُ",
+      "reading": "aṣ-ṣiḥāfatu al-istiqṣāʾiyyatu",
+      "meaning": "investigative journalism",
+      "example": "الصِّحَافَةُ الاِسْتِقْصَائِيَّةُ كَشَفَتْ مَلَفًّا خَطِيرًا.",
+      "exampleMeaning": "Investigative journalism uncovered a serious file."
+    },
+    {
+      "word": "الرَّقَابَةُ",
+      "reading": "ar-raqābatu",
+      "meaning": "censorship",
+      "example": "الرَّقَابَةُ تُقَيِّدُ حُرِّيَّةَ التَّعْبِيرِ.",
+      "exampleMeaning": "Censorship restricts freedom of expression."
+    },
+    {
+      "word": "التَّضْلِيلُ الإِعْلَامِيُّ",
+      "reading": "at-taḍlīlu al-iʿlāmiyyu",
+      "meaning": "media disinformation",
+      "example": "التَّضْلِيلُ الإِعْلَامِيُّ يَنْتَشِرُ عَبْرَ المِنَصَّاتِ.",
+      "exampleMeaning": "Media disinformation spreads through platforms."
+    },
+    {
+      "word": "البَثُّ المُبَاشِرُ",
+      "reading": "al-baththu al-mubāshiru",
+      "meaning": "live broadcast",
+      "example": "البَثُّ المُبَاشِرُ نَقَلَ الحَدَثَ لَحْظَةً بِلَحْظَةٍ.",
+      "exampleMeaning": "The live broadcast carried the event moment by moment."
+    },
+    {
+      "word": "حُرِّيَّةُ الصِّحَافَةِ",
+      "reading": "ḥurriyyatu aṣ-ṣiḥāfati",
+      "meaning": "freedom of the press",
+      "example": "حُرِّيَّةُ الصِّحَافَةِ ضَرُورِيَّةٌ لِلْمُجْتَمَعِ.",
+      "exampleMeaning": "Freedom of the press is necessary for society."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "___ تُؤَثِّرُ فِي الرَّأْيِ العَامِّ.",
+          "answer": "وَسَائِلُ الإِعْلَامِ",
+          "hint": "media outlets"
+        },
+        {
+          "sentence": "___ تَبْدَأُ فِي الثَّامِنَةِ.",
+          "answer": "نَشْرَةُ الأَخْبَارِ",
+          "hint": "news bulletin"
+        },
+        {
+          "sentence": "___ ظَهَرَ عَلَى الصَّفْحَةِ الأُولَى.",
+          "answer": "العُنْوَانُ الرَّئِيسِيُّ",
+          "hint": "main headline"
+        },
+        {
+          "sentence": "___ نَقَلَ الخَبَرَ مِنَ المَيْدَانِ.",
+          "answer": "المُرَاسِلُ",
+          "hint": "correspondent"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "items": [
+        {
+          "question": "What does ‘وَسَائِلُ الإِعْلَامِ’ mean?",
+          "options": [
+            "news bulletin",
+            "media outlets",
+            "main headline",
+            "correspondent"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What does ‘نَشْرَةُ الأَخْبَارِ’ mean?",
+          "options": [
+            "main headline",
+            "news bulletin",
+            "correspondent",
+            "editor"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What does ‘العُنْوَانُ الرَّئِيسِيُّ’ mean?",
+          "options": [
+            "correspondent",
+            "main headline",
+            "editor",
+            "editorial"
+          ],
+          "answer": 1
+        }
+      ]
+    }
+  ]
+}

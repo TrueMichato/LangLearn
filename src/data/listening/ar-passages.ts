@@ -310,4 +310,60 @@ export const arPassages: ListeningPassage[] = [
       { question: 'In which fields did they add discoveries?', options: ['Only poetry', 'Medicine, astronomy and mathematics', 'Only law', 'Painting'], correctIndex: 1 },
     ],
   },
+
+  // ── Easy (batch 4) ──
+  {
+    id: 'ar-easy-13',
+    title: 'Numbers and Time',
+    text: 'أَسْتَيْقِظُ في السّاعةِ السّادِسةِ والنِّصْف. أَتَناوَلُ فَطُوري في السّابِعة، وأَبْدَأُ العَمَلَ في الثّامِنة. في الواحِدةِ ظُهْرًا أَتَناوَلُ الغَداء. هذا هو رُوتِيني اليَوْميّ.',
+    difficulty: 'easy',
+    questions: [
+      { question: 'When does the speaker wake up?', options: ['At six', 'At half past six', 'At seven', 'At eight'], correctIndex: 1 },
+      { question: 'When do they start work?', options: ['At seven', 'At eight', 'At one', 'At half past six'], correctIndex: 1 },
+    ],
+  },
+  {
+    id: 'ar-easy-14',
+    title: 'My School',
+    text: 'مَدْرَسَتي كَبِيرة وجَمِيلة. فيها عِشْرُونَ صَفًّا ومَكْتَبةٌ واسِعة ومَلْعَبٌ لِكُرةِ القَدَم. مُعَلِّمُونا لُطَفاء، ومادَّتي المُفَضَّلة هي العُلُوم. أَذْهَبُ إلى المَدْرَسةِ كُلَّ يَوْمٍ ما عَدا الجُمُعةَ والسَّبْت.',
+    difficulty: 'easy',
+    questions: [
+      { question: 'How many classrooms does the school have?', options: ['Ten', 'Fifteen', 'Twenty', 'Thirty'], correctIndex: 2 },
+      { question: "What is the speaker's favourite subject?", options: ['Maths', 'Science', 'History', 'Arabic'], correctIndex: 1 },
+    ],
+  },
+
+  // ── Medium (batch 4) ──
+  {
+    id: 'ar-med-11',
+    title: 'Booking a Hotel',
+    text: 'مَساءَ الخَيْر، أُرِيدُ أن أَحْجِزَ غُرْفةً لِشَخْصَيْنِ لِثَلاثِ لَيالٍ. هل يُوجَدُ إفْطارٌ مَجّانيّ؟ وكَم سِعْرُ اللَّيْلةِ الواحِدة؟ نَحْنُ سَنَصِلُ يَوْمَ الخَمِيسِ مَساءً، ونُغادِرُ يَوْمَ الأحَد.',
+    difficulty: 'medium',
+    questions: [
+      { question: 'How many nights does the speaker want to book?', options: ['One', 'Two', 'Three', 'A week'], correctIndex: 2 },
+      { question: 'What does the speaker ask about?', options: ['A gym', 'Free breakfast and the price', 'A swimming pool', 'Parking'], correctIndex: 1 },
+    ],
+  },
+  {
+    id: 'ar-med-12',
+    title: 'A Childhood Memory',
+    text: 'حِينَ كُنْتُ صَغِيرًا، كُنّا نَقْضي الصَّيْفَ في قَرْيةِ جَدّي قُرْبَ البَحْر. كُنْتُ أَلْعَبُ مَع أَبْناءِ عَمّي طَوالَ النَّهار، ونَسْبَحُ في الماءِ البارِد. أَتَذَكَّرُ رائِحةَ خُبْزِ جَدَّتي، وما زِلْتُ أَحِنُّ إلى تِلْكَ الأيّام.',
+    difficulty: 'medium',
+    questions: [
+      { question: 'Where did the speaker spend the summer?', options: ["At grandfather's village near the sea", 'In the city', 'In the mountains', 'Abroad'], correctIndex: 0 },
+      { question: 'What does the speaker still remember?', options: ["Grandmother's bread smell", 'The school', 'The traffic', 'A film'], correctIndex: 0 },
+    ],
+  },
+
+  // ── Hard (batch 4) ──
+  {
+    id: 'ar-hard-8',
+    title: 'Water in the Arab World',
+    text: 'تُعَدُّ نُدْرةُ المِياهِ مِن أَكْبَرِ التَّحَدِّياتِ التي تُواجِهُ العالَمَ العَرَبيّ. فَمُعْظَمُ دُوَلِ المِنْطَقةِ تَقَعُ في مَناطِقَ جافّةٍ أو شِبْهِ جافّة، وتَعْتَمِدُ على أَنْهارٍ قَلِيلةٍ ومِياهٍ جَوْفيّة. لِذلك تَسْعى الحُكُوماتُ إلى تَحْلِيةِ مِياهِ البَحْرِ وتَرْشِيدِ الاسْتِهْلاك، لِأنَّ الماءَ أَساسُ الحَياةِ والتَّنْمِية.',
+    difficulty: 'hard',
+    questions: [
+      { question: 'Why is water scarce in most of the region?', options: ['Too many rivers', 'It lies in dry or semi-dry areas', 'It is too cold', 'People waste rain'], correctIndex: 1 },
+      { question: 'What are governments doing about it?', options: ['Nothing', 'Desalinating seawater and rationalizing use', 'Importing rivers', 'Building more cities'], correctIndex: 1 },
+    ],
+  },
 ];

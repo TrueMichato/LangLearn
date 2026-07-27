@@ -406,5 +406,77 @@
     "title": "Negation Across Dialects (mā…sh, mish, mū)",
     "order": 68,
     "group": "🗣️ Colloquial & Dialects"
+  },
+  {
+    "id": "numbers-agreement",
+    "title": "Number–Noun Agreement 3–10 (the \"reverse agreement\" / polarity rule)",
+    "order": 69,
+    "group": "🔢 Structure & Nuance"
+  },
+  {
+    "id": "numbers-11-99",
+    "title": "Numbers 11–99 & Their Endings",
+    "order": 70,
+    "group": "🔢 Structure & Nuance"
+  },
+  {
+    "id": "ordinal-numbers",
+    "title": "Ordinal Numbers (al-awwal, ath-thānī…) & Dates",
+    "order": 71,
+    "group": "🔢 Structure & Nuance"
+  },
+  {
+    "id": "fractions-time",
+    "title": "Fractions, Percentages & Telling Time in Words (Tafqit-informed)",
+    "order": 72,
+    "group": "🔢 Structure & Nuance"
+  },
+  {
+    "id": "five-nouns",
+    "title": "The Five Nouns (al-asmāʾ al-khamsa: abū, akhū, ḥamū, fū, dhū)",
+    "order": 73,
+    "group": "🔢 Structure & Nuance"
+  },
+  {
+    "id": "diptotes",
+    "title": "Diptotes (al-mamnūʿ min aṣ-ṣarf)",
+    "order": 74,
+    "group": "🔢 Structure & Nuance"
+  },
+  {
+    "id": "word-order",
+    "title": "Verbal vs Nominal Sentence Word Order",
+    "order": 75,
+    "group": "🔢 Structure & Nuance"
+  },
+  {
+    "id": "agreement-rules",
+    "title": "Agreement Rules: Gender, Number & the Non-Human Plural",
+    "order": 76,
+    "group": "🔢 Structure & Nuance"
+  },
+  {
+    "id": "hal-vs-tamyiz",
+    "title": "Ḥāl vs Tamyīz: Two Accusatives Compared",
+    "order": 77,
+    "group": "🔢 Structure & Nuance"
+  },
+  {
+    "id": "kana-inna-sisters-deep",
+    "title": "kāna & inna Sisters in Depth",
+    "order": 78,
+    "group": "🔤 Verbs"
+  },
+  {
+    "id": "masdar-mimi",
+    "title": "The Mīmī Verbal Noun & Nouns of Place/Time (mafʿal)",
+    "order": 79,
+    "group": "🔤 Verbs"
+  },
+  {
+    "id": "dialect-future-continuous",
+    "title": "Dialect Future & Continuous (raḥ/ḥa-, ʿam, da-)",
+    "order": 80,
+    "group": "🗣️ Colloquial & Dialects"
   }
 ]

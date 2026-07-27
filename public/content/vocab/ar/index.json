@@ -574,5 +574,101 @@
     "wordCount": 16,
     "level": "intermediate",
     "dialect": "gulf"
+  },
+  {
+    "id": "ordinal-fractions",
+    "title": "Ordinals, Fractions & Percentages",
+    "order": 73,
+    "wordCount": 16,
+    "level": "beginner",
+    "dialect": "msa"
+  },
+  {
+    "id": "dates-calendar",
+    "title": "Dates & the Calendar",
+    "order": 74,
+    "wordCount": 16,
+    "level": "beginner",
+    "dialect": "msa"
+  },
+  {
+    "id": "professions-2",
+    "title": "More Professions & Workplaces",
+    "order": 75,
+    "wordCount": 16,
+    "level": "intermediate",
+    "dialect": "msa"
+  },
+  {
+    "id": "feelings-3",
+    "title": "Character & Personality Traits",
+    "order": 76,
+    "wordCount": 16,
+    "level": "intermediate",
+    "dialect": "msa"
+  },
+  {
+    "id": "weather-climate",
+    "title": "Weather & Climate in Detail",
+    "order": 77,
+    "wordCount": 16,
+    "level": "intermediate",
+    "dialect": "msa"
+  },
+  {
+    "id": "kitchen-tableware",
+    "title": "Tableware & Kitchen Utensils",
+    "order": 78,
+    "wordCount": 16,
+    "level": "intermediate",
+    "dialect": "msa"
+  },
+  {
+    "id": "vehicles-transport-2",
+    "title": "Vehicles & Getting Around",
+    "order": 79,
+    "wordCount": 16,
+    "level": "intermediate",
+    "dialect": "msa"
+  },
+  {
+    "id": "office-technology",
+    "title": "Office Technology & Stationery",
+    "order": 80,
+    "wordCount": 16,
+    "level": "intermediate",
+    "dialect": "msa"
+  },
+  {
+    "id": "environment-2",
+    "title": "Environment & Sustainability",
+    "order": 81,
+    "wordCount": 16,
+    "level": "advanced",
+    "dialect": "msa"
+  },
+  {
+    "id": "media-news",
+    "title": "Media, News & Journalism",
+    "order": 82,
+    "wordCount": 16,
+    "level": "advanced",
+    "dialect": "msa"
+  },
+  {
+    "id": "academic-subjects",
+    "title": "School & University Subjects",
+    "order": 83,
+    "wordCount": 16,
+    "level": "intermediate",
+    "dialect": "msa"
+  },
+  {
+    "id": "iraqi-phrases",
+    "title": "Iraqi Arabic Everyday Phrases",
+    "order": 84,
+    "wordCount": 16,
+    "level": "intermediate",
+    "dialect": "iraqi"
   }
 ]

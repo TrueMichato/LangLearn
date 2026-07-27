@@ -1,0 +1,183 @@
+{
+  "id": "ordinal-fractions",
+  "words": [
+    {
+      "word": "الأَوَّلُ",
+      "reading": "al-ʾawwalu",
+      "meaning": "first",
+      "example": "جَاءَ الطَّالِبُ الأَوَّلُ إِلَى الصَّفِّ.",
+      "exampleMeaning": "The first student came to class."
+    },
+    {
+      "word": "الثَّانِي",
+      "reading": "ath-thānī",
+      "meaning": "second",
+      "example": "قَرَأْتُ الفَصْلَ الثَّانِي مِنَ الكِتَابِ.",
+      "exampleMeaning": "I read the second chapter of the book."
+    },
+    {
+      "word": "الثَّالِثُ",
+      "reading": "ath-thālithu",
+      "meaning": "third",
+      "example": "فَازَ الفَرِيقُ الثَّالِثُ بِالجَائِزَةِ.",
+      "exampleMeaning": "The third team won the prize."
+    },
+    {
+      "word": "الرَّابِعُ",
+      "reading": "ar-rābiʿu",
+      "meaning": "fourth",
+      "example": "هَذَا هُوَ الرَّابِعُ فِي القَائِمَةِ.",
+      "exampleMeaning": "This is the fourth one on the list."
+    },
+    {
+      "word": "الخَامِسُ",
+      "reading": "al-khāmisu",
+      "meaning": "fifth",
+      "example": "وَصَلَ الضَّيْفُ الخَامِسُ بَعْدَ الظُّهْرِ.",
+      "exampleMeaning": "The fifth guest arrived after noon."
+    },
+    {
+      "word": "النِّصْفُ",
+      "reading": "an-niṣfu",
+      "meaning": "half",
+      "example": "النِّصْفُ كَافٍ لِتَجْرِبَةِ الوَصْفَةِ.",
+      "exampleMeaning": "Half is enough for trying the recipe."
+    },
+    {
+      "word": "الثُّلُثُ",
+      "reading": "ath-thuluthu",
+      "meaning": "one third",
+      "example": "الثُّلُثُ جُزْءٌ مُهِمٌّ مِنَ المَبْلَغِ.",
+      "exampleMeaning": "One third is an important part of the amount."
+    },
+    {
+      "word": "الرُّبْعُ",
+      "reading": "ar-rubʿu",
+      "meaning": "quarter / one fourth",
+      "example": "الرُّبْعُ الأَوَّلُ مِنَ السَّنَةِ مُزْدَحِمٌ.",
+      "exampleMeaning": "The first quarter of the year is busy."
+    },
+    {
+      "word": "الخُمْسُ",
+      "reading": "al-khumsu",
+      "meaning": "one fifth",
+      "example": "الخُمْسُ مِنَ الدَّخْلِ يَذْهَبُ إِلَى الاِدِّخَارِ.",
+      "exampleMeaning": "One fifth of the income goes to savings."
+    },
+    {
+      "word": "النِّسْبَةُ المِئَوِيَّةُ",
+      "reading": "an-nisbatu al-miʾawiyyatu",
+      "meaning": "percentage",
+      "example": "النِّسْبَةُ المِئَوِيَّةُ تُظْهِرُ النَّتِيجَةَ بِوُضُوحٍ.",
+      "exampleMeaning": "The percentage shows the result clearly."
+    },
+    {
+      "word": "بِالمِئَةِ",
+      "reading": "bi-l-miʾati",
+      "meaning": "percent",
+      "example": "زَادَتِ المَبِيعَاتُ عَشَرَةً بِالمِئَةِ.",
+      "exampleMeaning": "Sales increased by ten percent."
+    },
+    {
+      "word": "الفَاصِلَةُ العَشْرِيَّةُ",
+      "reading": "al-fāṣilatu al-ʿashriyyatu",
+      "meaning": "decimal point",
+      "example": "الفَاصِلَةُ العَشْرِيَّةُ تُغَيِّرُ قِيمَةَ الرَّقْمِ.",
+      "exampleMeaning": "The decimal point changes the value of the number."
+    },
+    {
+      "word": "الكَسْرُ",
+      "reading": "al-kasru",
+      "meaning": "fraction",
+      "example": "الكَسْرُ مَكْتُوبٌ فَوْقَ الخَطِّ وَتَحْتَهُ.",
+      "exampleMeaning": "The fraction is written above and below the line."
+    },
+    {
+      "word": "العَدَدُ التَّرْتِيبِيُّ",
+      "reading": "al-ʿadadu at-tartībiyyu",
+      "meaning": "ordinal number",
+      "example": "العَدَدُ التَّرْتِيبِيُّ يُحَدِّدُ المَوْقِعَ لَا الكَمِّيَّةَ.",
+      "exampleMeaning": "An ordinal number specifies position, not quantity."
+    },
+    {
+      "word": "المُعَدَّلُ",
+      "reading": "al-muʿaddalu",
+      "meaning": "rate / average",
+      "example": "المُعَدَّلُ اليَوْمِيُّ لِلْقِرَاءَةِ مُرْتَفِعٌ.",
+      "exampleMeaning": "The daily reading rate is high."
+    },
+    {
+      "word": "النِّصْفُ الثَّانِي",
+      "reading": "an-niṣfu ath-thānī",
+      "meaning": "second half",
+      "example": "النِّصْفُ الثَّانِي مِنَ المُبَارَاةِ كَانَ أَسْرَعَ.",
+      "exampleMeaning": "The second half of the match was faster."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "جَاءَ الطَّالِبُ ___ إِلَى الصَّفِّ.",
+          "answer": "الأَوَّلُ",
+          "hint": "first"
+        },
+        {
+          "sentence": "قَرَأْتُ الفَصْلَ ___ مِنَ الكِتَابِ.",
+          "answer": "الثَّانِي",
+          "hint": "second"
+        },
+        {
+          "sentence": "فَازَ الفَرِيقُ ___ بِالجَائِزَةِ.",
+          "answer": "الثَّالِثُ",
+          "hint": "third"
+        },
+        {
+          "sentence": "هَذَا هُوَ ___ فِي القَائِمَةِ.",
+          "answer": "الرَّابِعُ",
+          "hint": "fourth"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "items": [
+        {
+          "question": "What does ‘الأَوَّلُ’ mean?",
+          "options": [
+            "second",
+            "first",
+            "third",
+            "fourth"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What does ‘الثَّانِي’ mean?",
+          "options": [
+            "third",
+            "second",
+            "fourth",
+            "fifth"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What does ‘الثَّالِثُ’ mean?",
+          "options": [
+            "fourth",
+            "third",
+            "fifth",
+            "half"
+          ],
+          "answer": 1
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,183 @@
+{
+  "id": "professions-2",
+  "words": [
+    {
+      "word": "المُهَنْدِسُ المِعْمَارِيُّ",
+      "reading": "al-muhandisu al-miʿmāriyyu",
+      "meaning": "architect",
+      "example": "المُهَنْدِسُ المِعْمَارِيُّ صَمَّمَ المَكْتَبَ الجَدِيدَ.",
+      "exampleMeaning": "The architect designed the new office."
+    },
+    {
+      "word": "المُحَاسِبُ",
+      "reading": "al-muḥāsibu",
+      "meaning": "accountant",
+      "example": "المُحَاسِبُ يُرَاجِعُ الفَوَاتِيرَ كُلَّ صَبَاحٍ.",
+      "exampleMeaning": "The accountant reviews the invoices every morning."
+    },
+    {
+      "word": "المُحَامِي",
+      "reading": "al-muḥāmī",
+      "meaning": "lawyer",
+      "example": "المُحَامِي يَشْرَحُ العَقْدَ لِلْعَمِيلِ.",
+      "exampleMeaning": "The lawyer explains the contract to the client."
+    },
+    {
+      "word": "الصَّحَفِيُّ",
+      "reading": "aṣ-ṣaḥafiyyu",
+      "meaning": "journalist",
+      "example": "الصَّحَفِيُّ يَكْتُبُ تَقْرِيرًا عَنِ الاِقْتِصَادِ.",
+      "exampleMeaning": "The journalist writes a report about the economy."
+    },
+    {
+      "word": "المُتَرْجِمُ",
+      "reading": "al-mutarjimu",
+      "meaning": "translator",
+      "example": "المُتَرْجِمُ يَنْقُلُ الخِطَابَ إِلَى العَرَبِيَّةِ.",
+      "exampleMeaning": "The translator renders the speech into Arabic."
+    },
+    {
+      "word": "المُصَمِّمُ",
+      "reading": "al-muṣammimu",
+      "meaning": "designer",
+      "example": "المُصَمِّمُ يَخْتَارُ الأَلْوَانَ لِلْمَوْقِعِ.",
+      "exampleMeaning": "The designer chooses the colors for the website."
+    },
+    {
+      "word": "المُبَرْمِجُ",
+      "reading": "al-mubarmiju",
+      "meaning": "programmer",
+      "example": "المُبَرْمِجُ يُصْلِحُ الخَطَأَ فِي التَّطْبِيقِ.",
+      "exampleMeaning": "The programmer fixes the bug in the app."
+    },
+    {
+      "word": "المُصَوِّرُ",
+      "reading": "al-muṣawwiru",
+      "meaning": "photographer",
+      "example": "المُصَوِّرُ يَلْتَقِطُ صُوَرًا لِلْمَعْرِضِ.",
+      "exampleMeaning": "The photographer takes photos for the exhibition."
+    },
+    {
+      "word": "الصَّيْدَلِيُّ",
+      "reading": "aṣ-ṣaydalīyyu",
+      "meaning": "pharmacist",
+      "example": "الصَّيْدَلِيُّ يُرَتِّبُ الأَدْوِيَةَ عَلَى الرَّفِّ.",
+      "exampleMeaning": "The pharmacist arranges the medicines on the shelf."
+    },
+    {
+      "word": "المُمَرِّضُ",
+      "reading": "al-mumarridu",
+      "meaning": "nurse",
+      "example": "المُمَرِّضُ يَقِيسُ ضَغْطَ المَرِيضِ بِهُدُوءٍ.",
+      "exampleMeaning": "The nurse measures the patient’s blood pressure calmly."
+    },
+    {
+      "word": "رَائِدُ الأَعْمَالِ",
+      "reading": "rāʾidu al-ʾaʿmāli",
+      "meaning": "entrepreneur",
+      "example": "رَائِدُ الأَعْمَالِ يَبْحَثُ عَنْ سُوقٍ جَدِيدَةٍ.",
+      "exampleMeaning": "The entrepreneur looks for a new market."
+    },
+    {
+      "word": "المُخْتَبَرُ",
+      "reading": "al-mukhtabaru",
+      "meaning": "laboratory",
+      "example": "المُخْتَبَرُ مُجَهَّزٌ لِلتَّجَارِبِ الدَّقِيقَةِ.",
+      "exampleMeaning": "The laboratory is equipped for precise experiments."
+    },
+    {
+      "word": "الوِرْشَةُ",
+      "reading": "al-wirshatu",
+      "meaning": "workshop",
+      "example": "الوِرْشَةُ تَحْتَوِي عَلَى أَدَوَاتٍ مُتَنَوِّعَةٍ.",
+      "exampleMeaning": "The workshop contains various tools."
+    },
+    {
+      "word": "المَكْتَبُ الهَنْدَسِيُّ",
+      "reading": "al-maktabu al-handasiyyu",
+      "meaning": "engineering office",
+      "example": "المَكْتَبُ الهَنْدَسِيُّ قَرِيبٌ مِنَ المَشْرُوعِ.",
+      "exampleMeaning": "The engineering office is close to the project."
+    },
+    {
+      "word": "غُرْفَةُ الِاجْتِمَاعِ",
+      "reading": "ghurfatu al-ijtimāʿi",
+      "meaning": "meeting room",
+      "example": "غُرْفَةُ الِاجْتِمَاعِ مَحْجُوزَةٌ بَعْدَ الظُّهْرِ.",
+      "exampleMeaning": "The meeting room is reserved after noon."
+    },
+    {
+      "word": "قِسْمُ المَوَارِدِ البَشَرِيَّةِ",
+      "reading": "qismu al-mawāridi al-bashariyyati",
+      "meaning": "human resources department",
+      "example": "قِسْمُ المَوَارِدِ البَشَرِيَّةِ يُنَظِّمُ المُقَابَلَاتِ.",
+      "exampleMeaning": "The human resources department organizes the interviews."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "___ صَمَّمَ المَكْتَبَ الجَدِيدَ.",
+          "answer": "المُهَنْدِسُ المِعْمَارِيُّ",
+          "hint": "architect"
+        },
+        {
+          "sentence": "___ يُرَاجِعُ الفَوَاتِيرَ كُلَّ صَبَاحٍ.",
+          "answer": "المُحَاسِبُ",
+          "hint": "accountant"
+        },
+        {
+          "sentence": "___ يَشْرَحُ العَقْدَ لِلْعَمِيلِ.",
+          "answer": "المُحَامِي",
+          "hint": "lawyer"
+        },
+        {
+          "sentence": "___ يَكْتُبُ تَقْرِيرًا عَنِ الاِقْتِصَادِ.",
+          "answer": "الصَّحَفِيُّ",
+          "hint": "journalist"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "items": [
+        {
+          "question": "What does ‘المُهَنْدِسُ المِعْمَارِيُّ’ mean?",
+          "options": [
+            "accountant",
+            "architect",
+            "lawyer",
+            "journalist"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What does ‘المُحَاسِبُ’ mean?",
+          "options": [
+            "lawyer",
+            "accountant",
+            "journalist",
+            "translator"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What does ‘المُحَامِي’ mean?",
+          "options": [
+            "journalist",
+            "lawyer",
+            "translator",
+            "designer"
+          ],
+          "answer": 1
+        }
+      ]
+    }
+  ]
+}

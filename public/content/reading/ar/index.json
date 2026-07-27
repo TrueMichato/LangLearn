@@ -314,6 +314,138 @@
       ],
       "description": "A historical sketch of coffee’s journey from Yemen and Ethiopia to global café culture.",
       "wordCount": 170
+    },
+    {
+      "id": "dialogue-introductions",
+      "title": "تَعارُف بَيْنَ صَدِيقَيْن",
+      "titleEn": "Two Friends Meet",
+      "difficulty": "easy",
+      "tags": [
+        "daily-life",
+        "conversation",
+        "dialogue"
+      ],
+      "description": "A friendly first meeting between two students who discover shared interests.",
+      "wordCount": 81
+    },
+    {
+      "id": "dialogue-restaurant",
+      "title": "في المَطْعَم: حِوار",
+      "titleEn": "At the Restaurant",
+      "difficulty": "easy",
+      "tags": [
+        "daily-life",
+        "conversation",
+        "dialogue",
+        "food"
+      ],
+      "description": "A useful customer-and-waiter dialogue for ordering a simple meal.",
+      "wordCount": 85
+    },
+    {
+      "id": "dialogue-directions",
+      "title": "السُّؤالُ عَن الطَّرِيق",
+      "titleEn": "Asking for Directions",
+      "difficulty": "easy",
+      "tags": [
+        "daily-life",
+        "conversation",
+        "dialogue",
+        "travel"
+      ],
+      "description": "A practical street dialogue about finding a station and taking a bus.",
+      "wordCount": 78
+    },
+    {
+      "id": "my-school",
+      "title": "مَدْرَسَتي",
+      "titleEn": "My School",
+      "difficulty": "easy",
+      "tags": [
+        "daily-life",
+        "education"
+      ],
+      "description": "A warm beginner text about school, classes, friends, and daily learning.",
+      "wordCount": 76
+    },
+    {
+      "id": "dialogue-job-interview",
+      "title": "مُقابَلة عَمَل",
+      "titleEn": "A Job Interview",
+      "difficulty": "medium",
+      "tags": [
+        "conversation",
+        "dialogue",
+        "education",
+        "daily-life"
+      ],
+      "description": "A respectful interview dialogue about experience, motivation, and workplace habits.",
+      "wordCount": 121
+    },
+    {
+      "id": "the-desert",
+      "title": "الصَّحْراءُ العَرَبِيّة",
+      "titleEn": "The Arabian Desert",
+      "difficulty": "medium",
+      "tags": [
+        "nature",
+        "geography",
+        "culture"
+      ],
+      "description": "A descriptive text about desert landscapes, hidden life, travel, and memory.",
+      "wordCount": 120
+    },
+    {
+      "id": "a-childhood-memory",
+      "title": "ذِكْرى مِن الطُّفُولة",
+      "titleEn": "A Childhood Memory",
+      "difficulty": "medium",
+      "tags": [
+        "daily-life",
+        "culture"
+      ],
+      "description": "A nostalgic memory of summer days, grandparents, fields, and warm bread.",
+      "wordCount": 121
+    },
+    {
+      "id": "arabic-calligraphy-art",
+      "title": "فَنُّ الزَّخْرَفة",
+      "titleEn": "The Art of Arabic Ornamentation",
+      "difficulty": "medium",
+      "tags": [
+        "culture",
+        "history"
+      ],
+      "description": "An accessible explanation of Arabic ornamentation, geometry, letters, and design.",
+      "wordCount": 120
+    },
+    {
+      "id": "the-house-of-wisdom",
+      "title": "بَيْتُ الحِكْمة",
+      "titleEn": "The House of Wisdom",
+      "difficulty": "hard",
+      "tags": [
+        "history",
+        "science",
+        "culture",
+        "education"
+      ],
+      "description": "A historical overview of Baghdad’s translation culture and the growth of knowledge.",
+      "wordCount": 170
+    },
+    {
+      "id": "climate-and-water",
+      "title": "المُناخُ والماء في العالَمِ العَرَبيّ",
+      "titleEn": "Climate & Water in the Arab World",
+      "difficulty": "hard",
+      "tags": [
+        "science",
+        "nature",
+        "geography",
+        "culture"
+      ],
+      "description": "A reflective text on climate, water scarcity, traditional knowledge, and sustainable choices.",
+      "wordCount": 170
     }
   ]
 }

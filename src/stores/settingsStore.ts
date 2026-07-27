@@ -35,7 +35,7 @@ interface SettingsState {
   fsrsRequestRetention: number;
   // Arabic dialect overlay — MSA is the shared core; a chosen dialect + optional
   // colloquial focus surface dialect-tagged content on top of it.
-  arabicDialect: 'msa' | 'egyptian' | 'levantine' | 'gulf' | 'maghrebi';
+  arabicDialect: 'msa' | 'egyptian' | 'levantine' | 'gulf' | 'iraqi' | 'maghrebi';
   arabicColloquialFocus: boolean;
   // New notification-system fields
   notificationPreset: NotificationPreset;
@@ -75,7 +75,7 @@ interface SettingsState {
   toggleAdaptiveReview: () => void;
   setScheduler: (scheduler: 'sm2' | 'fsrs') => void;
   setFsrsRequestRetention: (retention: number) => void;
-  setArabicDialect: (dialect: 'msa' | 'egyptian' | 'levantine' | 'gulf' | 'maghrebi') => void;
+  setArabicDialect: (dialect: 'msa' | 'egyptian' | 'levantine' | 'gulf' | 'iraqi' | 'maghrebi') => void;
   setArabicColloquialFocus: (enabled: boolean) => void;
   setNotificationPreset: (preset: NotificationPreset) => void;
   setDailyNotificationBudget: (n: number) => void;

@@ -91,4 +91,25 @@ export const arClozeSentences: ClozeSentence[] = [
   { id: 'ar-c068', target: 'تُسْهِمُ التِّجارةُ في ازْدِهارِ الاقْتِصاد', english: 'Trade contributes to the prosperity of the economy', blankedWord: 'الاقْتِصاد', blankedReading: 'al-iqtiṣād', frequencyRank: 300, difficulty: 'advanced' },
   { id: 'ar-c069', target: 'يَعْتَمِدُ النَّجاحُ على الصَّبْرِ والمُثابَرة', english: 'Success depends on patience and perseverance', blankedWord: 'يَعْتَمِدُ', blankedReading: 'yaʿtamidu', frequencyRank: 300, difficulty: 'advanced' },
   { id: 'ar-c070', target: 'لا يُمْكِنُ إنْكارُ أَثَرِ التَّعْليمِ في المُجْتَمَع', english: "One cannot deny education's impact on society", blankedWord: 'المُجْتَمَع', blankedReading: 'al-mujtamaʿ', frequencyRank: 130, difficulty: 'advanced' },
+
+  // ── Beginner (batch 4) ──
+  { id: 'ar-c071', target: 'الغُرْفةُ الأُولى على اليَمِين', english: 'The first room is on the right', blankedWord: 'الأُولى', blankedReading: 'al-ūlā', frequencyRank: 45, difficulty: 'beginner' },
+  { id: 'ar-c072', target: 'عِنْدي مَوْعِدٌ في السّاعةِ الثّالِثة', english: 'I have an appointment at three o’clock', blankedWord: 'الثّالِثة', blankedReading: 'ath-thālitha', frequencyRank: 90, difficulty: 'beginner' },
+  { id: 'ar-c073', target: 'اِشْتَرَيْتُ نِصْفَ كِيلو مِن التُّفّاح', english: 'I bought half a kilo of apples', blankedWord: 'نِصْفَ', blankedReading: 'niṣf', frequencyRank: 288, difficulty: 'beginner' },
+  { id: 'ar-c074', target: 'الطَّقْسُ اليَوْمَ غائِمٌ قَلِيلًا', english: 'The weather today is a bit cloudy', blankedWord: 'غائِم', blankedReading: 'ghāʾim', frequencyRank: 300, difficulty: 'beginner' },
+  { id: 'ar-c075', target: 'يَعْمَلُ أَبي مُهَنْدِسًا مِعْماريًّا', english: 'My father works as an architect', blankedWord: 'مِعْماريًّا', blankedReading: 'miʿmāriyyan', frequencyRank: 300, difficulty: 'beginner' },
+
+  // ── Intermediate (batch 4) ──
+  { id: 'ar-c076', target: 'شاهَدْنا فِيلْمًا رائِعًا في السِّينَما', english: 'We watched a wonderful film at the cinema', blankedWord: 'شاهَدْنا', blankedReading: 'shāhadnā', frequencyRank: 246, difficulty: 'intermediate' },
+  { id: 'ar-c077', target: 'تَقَعُ العِراقُ في قَلْبِ الشَّرْقِ الأوْسَط', english: 'Iraq lies in the heart of the Middle East', blankedWord: 'العِراقُ', blankedReading: 'al-ʿirāq', frequencyRank: 80, difficulty: 'intermediate' },
+  { id: 'ar-c078', target: 'يَحْتَفِلُ النّاسُ بِالعِيدِ كُلَّ عام', english: 'People celebrate the feast every year', blankedWord: 'يَحْتَفِلُ', blankedReading: 'yaḥtafilu', frequencyRank: 250, difficulty: 'intermediate' },
+  { id: 'ar-c079', target: 'أَحْتاجُ إلى ثُلُثِ الكَمِّيّةِ فَقَط', english: 'I only need a third of the amount', blankedWord: 'ثُلُثِ', blankedReading: 'thuluth', frequencyRank: 300, difficulty: 'intermediate' },
+  { id: 'ar-c080', target: 'تَبادَلَ الزَّعِيمانِ وُجْهاتِ النَّظَر', english: 'The two leaders exchanged points of view', blankedWord: 'تَبادَلَ', blankedReading: 'tabādala', frequencyRank: 300, difficulty: 'intermediate' },
+
+  // ── Advanced (batch 4) ──
+  { id: 'ar-c081', target: 'يُعَدُّ نَهْرُ النِّيلِ أَطْوَلَ أَنْهارِ العالَم', english: 'The Nile is considered the longest river in the world', blankedWord: 'أَطْوَلَ', blankedReading: 'aṭwal', frequencyRank: 300, difficulty: 'advanced' },
+  { id: 'ar-c082', target: 'أَسْهَمَت الحَضارةُ العَرَبِيّةُ في تَقَدُّمِ العِلْم', english: 'Arab civilization contributed to the advance of science', blankedWord: 'الحَضارةُ', blankedReading: 'al-ḥaḍāra', frequencyRank: 273, difficulty: 'advanced' },
+  { id: 'ar-c083', target: 'تُواجِهُ المِنْطَقةُ تَحَدِّياتٍ مُناخيّةً كَبِيرة', english: 'The region faces major climate challenges', blankedWord: 'تُواجِهُ', blankedReading: 'tuwājihu', frequencyRank: 300, difficulty: 'advanced' },
+  { id: 'ar-c084', target: 'مِن واجِبِنا أن نَنْقُلَ التُّراثَ لِلأجْيال', english: 'It is our duty to pass on heritage to the generations', blankedWord: 'الأجْيال', blankedReading: 'al-ajyāl', frequencyRank: 300, difficulty: 'advanced' },
+  { id: 'ar-c085', target: 'كُلَّما زادَ العِلْمُ، اتَّسَعَت المَسْؤُوليّة', english: 'The more knowledge grows, the greater the responsibility', blankedWord: 'اتَّسَعَت', blankedReading: 'ittasaʿat', frequencyRank: 300, difficulty: 'advanced' },
 ];
