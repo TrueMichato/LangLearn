@@ -318,5 +318,141 @@
     "wordCount": 16,
     "level": "intermediate",
     "dialect": "all"
+  },
+  {
+    "id": "kitchen",
+    "title": "Kitchen & Cooking",
+    "order": 41,
+    "wordCount": 16,
+    "level": "beginner",
+    "dialect": "msa"
+  },
+  {
+    "id": "office-work",
+    "title": "Office & Business",
+    "order": 42,
+    "wordCount": 16,
+    "level": "intermediate",
+    "dialect": "msa"
+  },
+  {
+    "id": "sports-fitness",
+    "title": "Sports & Fitness",
+    "order": 43,
+    "wordCount": 16,
+    "level": "intermediate",
+    "dialect": "msa"
+  },
+  {
+    "id": "internet-social",
+    "title": "Internet & Social Media",
+    "order": 44,
+    "wordCount": 16,
+    "level": "intermediate",
+    "dialect": "msa"
+  },
+  {
+    "id": "money-banking",
+    "title": "Money & Banking",
+    "order": 45,
+    "wordCount": 16,
+    "level": "intermediate",
+    "dialect": "msa"
+  },
+  {
+    "id": "medical-pharmacy",
+    "title": "Medical & Pharmacy",
+    "order": 46,
+    "wordCount": 16,
+    "level": "intermediate",
+    "dialect": "msa"
+  },
+  {
+    "id": "common-verbs-3",
+    "title": "Common Verbs III",
+    "order": 47,
+    "wordCount": 16,
+    "level": "intermediate",
+    "dialect": "msa"
+  },
+  {
+    "id": "idioms-proverbs",
+    "title": "Idioms & Proverbs (al-amthāl)",
+    "order": 48,
+    "wordCount": 16,
+    "level": "advanced",
+    "dialect": "msa"
+  },
+  {
+    "id": "religion-holidays",
+    "title": "Religion, Holidays & Celebrations",
+    "order": 49,
+    "wordCount": 16,
+    "level": "intermediate",
+    "dialect": "msa"
+  },
+  {
+    "id": "arts-cinema",
+    "title": "Arts, Music & Cinema",
+    "order": 50,
+    "wordCount": 16,
+    "level": "intermediate",
+    "dialect": "msa"
+  },
+  {
+    "id": "science-environment",
+    "title": "Science & Environment",
+    "order": 51,
+    "wordCount": 16,
+    "level": "advanced",
+    "dialect": "msa"
+  },
+  {
+    "id": "descriptions",
+    "title": "More Adjectives & Descriptions",
+    "order": 52,
+    "wordCount": 16,
+    "level": "intermediate",
+    "dialect": "msa"
+  },
+  {
+    "id": "particles-connectors",
+    "title": "Particles & Connectors",
+    "order": 53,
+    "wordCount": 16,
+    "level": "intermediate",
+    "dialect": "msa"
+  },
+  {
+    "id": "islamic-months-zodiac",
+    "title": "Islamic Months & the Zodiac",
+    "order": 54,
+    "wordCount": 16,
+    "level": "intermediate",
+    "dialect": "msa"
+  },
+  {
+    "id": "maghrebi-phrases",
+    "title": "Maghrebi (Darija) Everyday Phrases",
+    "order": 55,
+    "wordCount": 16,
+    "level": "intermediate",
+    "dialect": "maghrebi"
+  },
+  {
+    "id": "egyptian-phrases-2",
+    "title": "More Egyptian Phrases",
+    "order": 56,
+    "wordCount": 16,
+    "level": "intermediate",
+    "dialect": "egyptian"
+  },
+  {
+    "id": "levantine-phrases-2",
+    "title": "More Levantine Phrases",
+    "order": 57,
+    "wordCount": 16,
+    "level": "intermediate",
+    "dialect": "levantine"
   }
 ]

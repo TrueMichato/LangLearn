@@ -1,0 +1,183 @@
+{
+  "id": "descriptions",
+  "words": [
+    {
+      "word": "وَاسِعٌ",
+      "reading": "wāsiʿun",
+      "meaning": "spacious / wide",
+      "example": "الْبَيْتُ وَاسِعٌ وَمُرِيحٌ.",
+      "exampleMeaning": "The house is spacious and comfortable."
+    },
+    {
+      "word": "ضَيِّقٌ",
+      "reading": "ḍayyiqun",
+      "meaning": "narrow / tight",
+      "example": "الشَّارِعُ ضَيِّقٌ فِي الْحَيِّ الْقَدِيمِ.",
+      "exampleMeaning": "The street is narrow in the old neighborhood."
+    },
+    {
+      "word": "عَمِيقٌ",
+      "reading": "ʿamīqun",
+      "meaning": "deep",
+      "example": "الْبِئْرُ عَمِيقٌ جِدًّا.",
+      "exampleMeaning": "The well is very deep."
+    },
+    {
+      "word": "سَطْحِيٌّ",
+      "reading": "saṭḥiyyun",
+      "meaning": "shallow / superficial",
+      "example": "الْجُرْحُ سَطْحِيٌّ وَلَا خَطَرَ فِيهِ.",
+      "exampleMeaning": "The wound is shallow and not dangerous."
+    },
+    {
+      "word": "لَامِعٌ",
+      "reading": "lāmiʿun",
+      "meaning": "shiny",
+      "example": "الْمَعْدِنُ لَامِعٌ تَحْتَ الشَّمْسِ.",
+      "exampleMeaning": "The metal is shiny under the sun."
+    },
+    {
+      "word": "بَاهِتٌ",
+      "reading": "bāhitun",
+      "meaning": "faded / dull",
+      "example": "لَوْنُ الْقَمِيصِ بَاهِتٌ بَعْدَ غَسْلٍ كَثِيرٍ.",
+      "exampleMeaning": "The shirt's color is faded after much washing."
+    },
+    {
+      "word": "هَادِئٌ",
+      "reading": "hādiʾun",
+      "meaning": "quiet / calm",
+      "example": "الْمَكَانُ هَادِئٌ فِي الصَّبَاحِ.",
+      "exampleMeaning": "The place is quiet in the morning."
+    },
+    {
+      "word": "صَاخِبٌ",
+      "reading": "ṣākhibun",
+      "meaning": "noisy",
+      "example": "السُّوقُ صَاخِبٌ فِي الْمَسَاءِ.",
+      "exampleMeaning": "The market is noisy in the evening."
+    },
+    {
+      "word": "مُعَقَّدٌ",
+      "reading": "muʿaqqadun",
+      "meaning": "complicated",
+      "example": "السُّؤَالُ مُعَقَّدٌ وَلٰكِنَّهُ مُهِمٌّ.",
+      "exampleMeaning": "The question is complicated but important."
+    },
+    {
+      "word": "بَسِيطٌ",
+      "reading": "basīṭun",
+      "meaning": "simple",
+      "example": "الْحَلُّ بَسِيطٌ وَوَاضِحٌ.",
+      "exampleMeaning": "The solution is simple and clear."
+    },
+    {
+      "word": "مُفِيدٌ",
+      "reading": "mufīdun",
+      "meaning": "useful",
+      "example": "هٰذَا الْكِتَابُ مُفِيدٌ لِلْمُبْتَدِئِينَ.",
+      "exampleMeaning": "This book is useful for beginners."
+    },
+    {
+      "word": "ضَارٌّ",
+      "reading": "ḍārrun",
+      "meaning": "harmful",
+      "example": "الدُّخَانُ ضَارٌّ بِالصِّحَّةِ.",
+      "exampleMeaning": "Smoke is harmful to health."
+    },
+    {
+      "word": "مُنَظَّمٌ",
+      "reading": "munaẓẓamun",
+      "meaning": "organized",
+      "example": "الْمَلَفُّ مُنَظَّمٌ حَسَبَ التَّارِيخِ.",
+      "exampleMeaning": "The file is organized by date."
+    },
+    {
+      "word": "عَشْوَائِيٌّ",
+      "reading": "ʿashwāʾiyyun",
+      "meaning": "random",
+      "example": "اِخْتِيَارُ الْأَسْمَاءِ عَشْوَائِيٌّ فِي هٰذِهِ التَّجْرِبَةِ.",
+      "exampleMeaning": "The selection is random in this experiment."
+    },
+    {
+      "word": "دَقِيقٌ",
+      "reading": "daqīqun",
+      "meaning": "precise",
+      "example": "الْوَصْفُ دَقِيقٌ وَشَامِلٌ.",
+      "exampleMeaning": "The description is precise and comprehensive."
+    },
+    {
+      "word": "غَامِضٌ",
+      "reading": "ghāmiḍun",
+      "meaning": "unclear / mysterious",
+      "example": "النَّصُّ غَامِضٌ بِدُونِ سِيَاقٍ.",
+      "exampleMeaning": "The text is unclear without context."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "الْبَيْتُ ___ وَمُرِيحٌ.",
+          "answer": "وَاسِعٌ",
+          "hint": "spacious / wide"
+        },
+        {
+          "sentence": "الشَّارِعُ ___ فِي الْحَيِّ الْقَدِيمِ.",
+          "answer": "ضَيِّقٌ",
+          "hint": "narrow / tight"
+        },
+        {
+          "sentence": "الْبِئْرُ ___ جِدًّا.",
+          "answer": "عَمِيقٌ",
+          "hint": "deep"
+        },
+        {
+          "sentence": "الْجُرْحُ ___ وَلَا خَطَرَ فِيهِ.",
+          "answer": "سَطْحِيٌّ",
+          "hint": "shallow / superficial"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "items": [
+        {
+          "question": "What does ‘وَاسِعٌ’ mean?",
+          "options": [
+            "narrow / tight",
+            "spacious / wide",
+            "shallow / superficial",
+            "shiny"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What does ‘ضَيِّقٌ’ mean?",
+          "options": [
+            "deep",
+            "narrow / tight",
+            "shiny",
+            "faded / dull"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What does ‘عَمِيقٌ’ mean?",
+          "options": [
+            "shallow / superficial",
+            "deep",
+            "faded / dull",
+            "quiet / calm"
+          ],
+          "answer": 1
+        }
+      ]
+    }
+  ]
+}

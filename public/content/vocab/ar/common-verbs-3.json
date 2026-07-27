@@ -1,0 +1,183 @@
+{
+  "id": "common-verbs-3",
+  "words": [
+    {
+      "word": "يَبْدَأُ",
+      "reading": "yabdaʾu",
+      "meaning": "to begin",
+      "example": "يَبْدَأُ الدَّرْسُ فِي الْعَاشِرَةِ.",
+      "exampleMeaning": "The lesson begins at ten."
+    },
+    {
+      "word": "يُنْهِي",
+      "reading": "yunhī",
+      "meaning": "to finish",
+      "example": "يُنْهِي الطَّالِبُ وَاجِبَهُ قَبْلَ النَّوْمِ.",
+      "exampleMeaning": "The student finishes his homework before sleep."
+    },
+    {
+      "word": "يَنْتَظِرُ",
+      "reading": "yantaẓiru",
+      "meaning": "to wait",
+      "example": "يَنْتَظِرُ الْمُسَافِرُ الْحَافِلَةَ.",
+      "exampleMeaning": "The traveler waits for the bus."
+    },
+    {
+      "word": "يَحْتَاجُ",
+      "reading": "yaḥtāju",
+      "meaning": "to need",
+      "example": "يَحْتَاجُ الْمَشْرُوعُ إِلَى وَقْتٍ أَكْثَرَ.",
+      "exampleMeaning": "The project needs more time."
+    },
+    {
+      "word": "يَسْتَطِيعُ",
+      "reading": "yastaṭīʿu",
+      "meaning": "to be able",
+      "example": "تَسْتَطِيعُ نُورٌ أَنْ تَقْرَأَ النَّصَّ بِسُرْعَةٍ.",
+      "exampleMeaning": "Noor can read the text quickly."
+    },
+    {
+      "word": "يُحَاوِلُ",
+      "reading": "yuḥāwilu",
+      "meaning": "to try",
+      "example": "يُحَاوِلُ أَحْمَدُ حَلَّ الْمَسْأَلَةِ.",
+      "exampleMeaning": "Ahmad tries to solve the problem."
+    },
+    {
+      "word": "يَنْجَحُ",
+      "reading": "yanjaḥu",
+      "meaning": "to succeed",
+      "example": "يَنْجَحُ الطَّالِبُ بِالْمُثَابَرَةِ.",
+      "exampleMeaning": "The student succeeds through perseverance."
+    },
+    {
+      "word": "يَفْشَلُ",
+      "reading": "yafshalu",
+      "meaning": "to fail",
+      "example": "قَدْ يَفْشَلُ الْمَرْءُ ثُمَّ يَتَعَلَّمُ.",
+      "exampleMeaning": "A person may fail and then learn."
+    },
+    {
+      "word": "يَخْتَارُ",
+      "reading": "yakhtāru",
+      "meaning": "to choose",
+      "example": "يَخْتَارُ الطِّفْلُ قِصَّةً قَصِيرَةً.",
+      "exampleMeaning": "The child chooses a short story."
+    },
+    {
+      "word": "يُقَرِّرُ",
+      "reading": "yuqarriru",
+      "meaning": "to decide",
+      "example": "يُقَرِّرُ الْفَرِيقُ مَوْعِدَ اِجْتِمَاعِهِ.",
+      "exampleMeaning": "The team decides the meeting time."
+    },
+    {
+      "word": "يَشْرَحُ",
+      "reading": "yashraḥu",
+      "meaning": "to explain",
+      "example": "تَشْرَحُ الْمُعَلِّمَةُ الْقَاعِدَةَ بِوُضُوحٍ.",
+      "exampleMeaning": "The teacher explains the rule clearly."
+    },
+    {
+      "word": "يُسَاعِدُ",
+      "reading": "yusāʿidu",
+      "meaning": "to help",
+      "example": "يُسَاعِدُ الْجَارُ الْمَرْأَةَ الْكَبِيرَةَ.",
+      "exampleMeaning": "The neighbor helps the elderly woman."
+    },
+    {
+      "word": "يَتَذَكَّرُ",
+      "reading": "yatadhakkaru",
+      "meaning": "to remember",
+      "example": "يَتَذَكَّرُ سَامِي اسْمَ الشَّارِعِ.",
+      "exampleMeaning": "Sami remembers the street name."
+    },
+    {
+      "word": "يَنْسَى",
+      "reading": "yansā",
+      "meaning": "to forget",
+      "example": "تَنْسَى لَيْلَى الْمِفْتَاحَ أَحْيَانًا.",
+      "exampleMeaning": "Layla sometimes forgets the key."
+    },
+    {
+      "word": "يُصْلِحُ",
+      "reading": "yuṣliḥu",
+      "meaning": "to repair",
+      "example": "يُصْلِحُ الْفَنِّيُّ الْحَاسُوبَ.",
+      "exampleMeaning": "The technician repairs the computer."
+    },
+    {
+      "word": "يَبْحَثُ",
+      "reading": "yabḥathu",
+      "meaning": "to search",
+      "example": "يَبْحَثُ الْبَاحِثُ عَنْ مَعْلُومَةٍ دَقِيقَةٍ.",
+      "exampleMeaning": "The researcher searches for precise information."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "___ الدَّرْسُ فِي الْعَاشِرَةِ.",
+          "answer": "يَبْدَأُ",
+          "hint": "to begin"
+        },
+        {
+          "sentence": "___ الطَّالِبُ وَاجِبَهُ قَبْلَ النَّوْمِ.",
+          "answer": "يُنْهِي",
+          "hint": "to finish"
+        },
+        {
+          "sentence": "___ الْمُسَافِرُ الْحَافِلَةَ.",
+          "answer": "يَنْتَظِرُ",
+          "hint": "to wait"
+        },
+        {
+          "sentence": "___ الْمَشْرُوعُ إِلَى وَقْتٍ أَكْثَرَ.",
+          "answer": "يَحْتَاجُ",
+          "hint": "to need"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "items": [
+        {
+          "question": "What does ‘يَبْدَأُ’ mean?",
+          "options": [
+            "to finish",
+            "to begin",
+            "to need",
+            "to be able"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What does ‘يُنْهِي’ mean?",
+          "options": [
+            "to wait",
+            "to finish",
+            "to be able",
+            "to try"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What does ‘يَنْتَظِرُ’ mean?",
+          "options": [
+            "to need",
+            "to wait",
+            "to try",
+            "to succeed"
+          ],
+          "answer": 1
+        }
+      ]
+    }
+  ]
+}

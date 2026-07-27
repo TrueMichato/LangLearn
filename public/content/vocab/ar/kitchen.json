@@ -1,0 +1,183 @@
+{
+  "id": "kitchen",
+  "words": [
+    {
+      "word": "مَطْبَخٌ",
+      "reading": "maṭbakhun",
+      "meaning": "kitchen",
+      "example": "الْمَطْبَخُ نَظِيفٌ وَمُرَتَّبٌ.",
+      "exampleMeaning": "The kitchen is clean and tidy."
+    },
+    {
+      "word": "طَنْجَرَةٌ",
+      "reading": "ṭanjaratun",
+      "meaning": "pot",
+      "example": "وَضَعَتْ أُمِّي الطَّنْجَرَةَ عَلَى النَّارِ.",
+      "exampleMeaning": "My mother put the pot on the fire."
+    },
+    {
+      "word": "مِقْلَاةٌ",
+      "reading": "miqlātun",
+      "meaning": "frying pan",
+      "example": "الْمِقْلَاةُ سَاخِنَةٌ جِدًّا.",
+      "exampleMeaning": "The frying pan is very hot."
+    },
+    {
+      "word": "سِكِّينٌ",
+      "reading": "sikkīnun",
+      "meaning": "knife",
+      "example": "يَقْطَعُ الطَّاهِي الْخُضَارَ بِسِكِّينٍ حَادٍّ.",
+      "exampleMeaning": "The cook cuts vegetables with a sharp knife."
+    },
+    {
+      "word": "مِلْعَقَةٌ",
+      "reading": "milʿaqatun",
+      "meaning": "spoon",
+      "example": "أُحَرِّكُ الشُّورْبَةَ بِمِلْعَقَةٍ كَبِيرَةٍ.",
+      "exampleMeaning": "I stir the soup with a large spoon."
+    },
+    {
+      "word": "شَوْكَةٌ",
+      "reading": "shawkatun",
+      "meaning": "fork",
+      "example": "الشَّوْكَةُ جَانِبَ الصَّحْنِ.",
+      "exampleMeaning": "The fork is beside the plate."
+    },
+    {
+      "word": "صَحْنٌ",
+      "reading": "ṣaḥnun",
+      "meaning": "plate",
+      "example": "الصَّحْنُ مَلِيءٌ بِالأَرُزِّ.",
+      "exampleMeaning": "The plate is full of rice."
+    },
+    {
+      "word": "كُوبٌ",
+      "reading": "kūbun",
+      "meaning": "cup",
+      "example": "شَرِبَتْ لَيْلَى كُوبًا مِنَ الْمَاءِ.",
+      "exampleMeaning": "Layla drank a cup of water."
+    },
+    {
+      "word": "فُرْنٌ",
+      "reading": "furnun",
+      "meaning": "oven",
+      "example": "الْخُبْزُ فِي الْفُرْنِ.",
+      "exampleMeaning": "The bread is in the oven."
+    },
+    {
+      "word": "ثَلَّاجَةٌ",
+      "reading": "thallājatun",
+      "meaning": "refrigerator",
+      "example": "الثَّلَّاجَةُ تَحْفَظُ الطَّعَامَ بَارِدًا.",
+      "exampleMeaning": "The refrigerator keeps the food cold."
+    },
+    {
+      "word": "يَطْبُخُ",
+      "reading": "yaṭbukhu",
+      "meaning": "to cook",
+      "example": "يَطْبُخُ أَخِي حَسَاءً لَذِيذًا.",
+      "exampleMeaning": "My brother cooks a delicious soup."
+    },
+    {
+      "word": "يَغْلِي",
+      "reading": "yaghlī",
+      "meaning": "to boil",
+      "example": "يَغْلِي الْمَاءُ بَعْدَ دَقَائِقَ قَلِيلَةٍ.",
+      "exampleMeaning": "The water boils after a few minutes."
+    },
+    {
+      "word": "يَقْلِي",
+      "reading": "yaqlī",
+      "meaning": "to fry",
+      "example": "يَقْلِي الطَّاهِي السَّمَكَ بِزَيْتٍ قَلِيلٍ.",
+      "exampleMeaning": "The cook fries the fish with a little oil."
+    },
+    {
+      "word": "يَخْبِزُ",
+      "reading": "yakhbizu",
+      "meaning": "to bake",
+      "example": "تَخْبِزُ الْجَدَّةُ خُبْزًا طَازَجًا.",
+      "exampleMeaning": "The grandmother bakes fresh bread."
+    },
+    {
+      "word": "وَصْفَةٌ",
+      "reading": "waṣfatun",
+      "meaning": "recipe",
+      "example": "هٰذِهِ وَصْفَةٌ سَهْلَةٌ لِلْحَلْوَى.",
+      "exampleMeaning": "This is an easy recipe for dessert."
+    },
+    {
+      "word": "تَوَابِلُ",
+      "reading": "tawābilu",
+      "meaning": "spices",
+      "example": "أَضَافَ الطَّاهِي تَوَابِلَ عَطِرَةً.",
+      "exampleMeaning": "The cook added fragrant spices."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "___ نَظِيفٌ وَمُرَتَّبٌ.",
+          "answer": "مَطْبَخٌ",
+          "hint": "kitchen"
+        },
+        {
+          "sentence": "___ عَلَى النَّارِ.",
+          "answer": "طَنْجَرَةٌ",
+          "hint": "pot"
+        },
+        {
+          "sentence": "___ سَاخِنَةٌ جِدًّا.",
+          "answer": "مِقْلَاةٌ",
+          "hint": "frying pan"
+        },
+        {
+          "sentence": "___ حَادٌّ وَصَغِيرٌ.",
+          "answer": "سِكِّينٌ",
+          "hint": "knife"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "items": [
+        {
+          "question": "What does ‘مَطْبَخٌ’ mean?",
+          "options": [
+            "pot",
+            "kitchen",
+            "knife",
+            "spoon"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What does ‘طَنْجَرَةٌ’ mean?",
+          "options": [
+            "frying pan",
+            "pot",
+            "spoon",
+            "fork"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What does ‘مِقْلَاةٌ’ mean?",
+          "options": [
+            "knife",
+            "frying pan",
+            "fork",
+            "plate"
+          ],
+          "answer": 1
+        }
+      ]
+    }
+  ]
+}

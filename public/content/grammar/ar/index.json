@@ -214,5 +214,107 @@
     "title": "Everyday Phrases, Politeness & Greetings",
     "order": 36,
     "group": "🗣️ Colloquial & Dialects"
+  },
+  {
+    "id": "active-participle",
+    "title": "The Active Participle (ism al-fāʿil)",
+    "order": 37,
+    "group": "🔤 Verbs"
+  },
+  {
+    "id": "passive-participle",
+    "title": "The Passive Participle (ism al-mafʿūl)",
+    "order": 38,
+    "group": "🔤 Verbs"
+  },
+  {
+    "id": "masdar",
+    "title": "The Verbal Noun (al-Maṣdar)",
+    "order": 39,
+    "group": "🔤 Verbs"
+  },
+  {
+    "id": "passive-voice",
+    "title": "The Passive Voice (al-Mabnī li-l-Majhūl)",
+    "order": 40,
+    "group": "🔤 Verbs"
+  },
+  {
+    "id": "subjunctive-jussive",
+    "title": "Present Moods: Subjunctive & Jussive (naṣb & jazm)",
+    "order": 41,
+    "group": "🔤 Verbs"
+  },
+  {
+    "id": "hollow-verbs",
+    "title": "Hollow Verbs (weak middle: qāla, kāna)",
+    "order": 42,
+    "group": "🔤 Verbs"
+  },
+  {
+    "id": "defective-verbs",
+    "title": "Defective Verbs (weak final: mashā, daʿā)",
+    "order": 43,
+    "group": "🔤 Verbs"
+  },
+  {
+    "id": "assimilated-doubled-verbs",
+    "title": "Assimilated & Doubled Verbs (waṣala, radda)",
+    "order": 44,
+    "group": "🔤 Verbs"
+  },
+  {
+    "id": "broken-plural-patterns",
+    "title": "Broken Plural Patterns",
+    "order": 45,
+    "group": "🔢 Structure & Nuance"
+  },
+  {
+    "id": "nisba",
+    "title": "Nisba (Relative) Adjectives (-iyy)",
+    "order": 46,
+    "group": "🔢 Structure & Nuance"
+  },
+  {
+    "id": "diminutive",
+    "title": "The Diminutive (at-Taṣghīr)",
+    "order": 47,
+    "group": "🔢 Structure & Nuance"
+  },
+  {
+    "id": "expressing-possession",
+    "title": "Expressing \"to have\" (ʿinda, laday, li-)",
+    "order": 48,
+    "group": "🔢 Structure & Nuance"
+  },
+  {
+    "id": "exception",
+    "title": "Exception (al-Istithnāʾ with illā)",
+    "order": 49,
+    "group": "🔢 Structure & Nuance"
+  },
+  {
+    "id": "tamyiz",
+    "title": "Specification (at-Tamyīz)",
+    "order": 50,
+    "group": "🔢 Structure & Nuance"
+  },
+  {
+    "id": "numbers-in-words",
+    "title": "Writing Numbers in Words (the agreement rules; inspired by tafqit.com https://tafqit.com)",
+    "order": 51,
+    "group": "🔢 Structure & Nuance"
+  },
+  {
+    "id": "connectors",
+    "title": "Connectors & Discourse Particles (fa-, thumma, li-anna, likay, lākinna, bal)",
+    "order": 52,
+    "group": "🔢 Structure & Nuance"
+  },
+  {
+    "id": "maghrebi-basics",
+    "title": "Maghrebi (Darija) Essentials (Moroccan/Algerian; kan- present prefix, negation ma...sh, French loanwords)",
+    "order": 53,
+    "group": "🗣️ Colloquial & Dialects"
   }
 ]

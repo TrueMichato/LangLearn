@@ -1,0 +1,183 @@
+{
+  "id": "sports-fitness",
+  "words": [
+    {
+      "word": "رِيَاضَةٌ",
+      "reading": "riyāḍatun",
+      "meaning": "sport",
+      "example": "الرِّيَاضَةُ مُفِيدَةٌ لِلْجِسْمِ وَالْعَقْلِ.",
+      "exampleMeaning": "Sport is useful for the body and mind."
+    },
+    {
+      "word": "تَمْرِينٌ",
+      "reading": "tamrīnun",
+      "meaning": "exercise / training",
+      "example": "يَبْدَأُ التَّمْرِينُ بَعْدَ الْإِحْمَاءِ.",
+      "exampleMeaning": "The exercise begins after the warm-up."
+    },
+    {
+      "word": "لَاعِبٌ",
+      "reading": "lāʿibun",
+      "meaning": "player",
+      "example": "اللَّاعِبُ سَرِيعٌ وَمَاهِرٌ.",
+      "exampleMeaning": "The player is fast and skillful."
+    },
+    {
+      "word": "فَرِيقٌ",
+      "reading": "farīqun",
+      "meaning": "team",
+      "example": "فَازَ الْفَرِيقُ بِالْمُبَارَاةِ.",
+      "exampleMeaning": "The team won the match."
+    },
+    {
+      "word": "مُبَارَاةٌ",
+      "reading": "mubārātun",
+      "meaning": "match / game",
+      "example": "شَاهَدْنَا مُبَارَاةً مُثِيرَةً أَمْسِ.",
+      "exampleMeaning": "We watched an exciting match yesterday."
+    },
+    {
+      "word": "كُرَةُ الْقَدَمِ",
+      "reading": "kuratu l-qadami",
+      "meaning": "soccer / football",
+      "example": "كُرَةُ الْقَدَمِ شَعْبِيَّةٌ فِي بِلَادٍ كَثِيرَةٍ.",
+      "exampleMeaning": "Soccer is popular in many countries."
+    },
+    {
+      "word": "كُرَةُ السَّلَّةِ",
+      "reading": "kuratu s-sallati",
+      "meaning": "basketball",
+      "example": "يَلْعَبُ أَخِي كُرَةَ السَّلَّةِ فِي النَّادِي.",
+      "exampleMeaning": "My brother plays basketball at the club."
+    },
+    {
+      "word": "سِبَاحَةٌ",
+      "reading": "sibāḥatun",
+      "meaning": "swimming",
+      "example": "السِّبَاحَةُ تُقَوِّي الظَّهْرَ.",
+      "exampleMeaning": "Swimming strengthens the back."
+    },
+    {
+      "word": "جَرْيٌ",
+      "reading": "jaryun",
+      "meaning": "running",
+      "example": "الْجَرْيُ فِي الصَّبَاحِ يُنَشِّطُنِي.",
+      "exampleMeaning": "Running in the morning energizes me."
+    },
+    {
+      "word": "دَرَّاجَةٌ",
+      "reading": "darrājatun",
+      "meaning": "bicycle",
+      "example": "رَكِبَتْ نُورٌ دَرَّاجَةً فِي الْحَدِيقَةِ.",
+      "exampleMeaning": "Noor rode a bicycle in the park."
+    },
+    {
+      "word": "صَالَةُ الْأَلْعَابِ",
+      "reading": "ṣālatu l-ʾalʿābi",
+      "meaning": "gym",
+      "example": "أَذْهَبُ إِلَى صَالَةِ الْأَلْعَابِ ثَلَاثَ مَرَّاتٍ أُسْبُوعِيًّا.",
+      "exampleMeaning": "I go to the gym three times a week."
+    },
+    {
+      "word": "لِيَاقَةٌ",
+      "reading": "liyāqatun",
+      "meaning": "fitness",
+      "example": "تَحْتَاجُ اللِّيَاقَةُ إِلَى صَبْرٍ وَانْتِظَامٍ.",
+      "exampleMeaning": "Fitness requires patience and consistency."
+    },
+    {
+      "word": "قُوَّةٌ",
+      "reading": "quwwatun",
+      "meaning": "strength",
+      "example": "تَزِيدُ هٰذِهِ التَّمَارِينُ الْقُوَّةَ.",
+      "exampleMeaning": "These exercises increase strength."
+    },
+    {
+      "word": "يَتَدَرَّبُ",
+      "reading": "yatadarrabu",
+      "meaning": "to train",
+      "example": "يَتَدَرَّبُ الْفَرِيقُ قَبْلَ الْمُبَارَاةِ.",
+      "exampleMeaning": "The team trains before the match."
+    },
+    {
+      "word": "يَفُوزُ",
+      "reading": "yafūzu",
+      "meaning": "to win",
+      "example": "يَفُوزُ اللَّاعِبُ عِنْدَمَا يُرَكِّزُ جَيِّدًا.",
+      "exampleMeaning": "The player wins when he focuses well."
+    },
+    {
+      "word": "يَخْسَرُ",
+      "reading": "yakhsaru",
+      "meaning": "to lose",
+      "example": "قَدْ يَخْسَرُ الْفَرِيقُ وَيَتَعَلَّمُ مِنَ الْخَطَإِ.",
+      "exampleMeaning": "The team may lose and learn from the mistake."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "___ مُفِيدَةٌ لِلْجِسْمِ وَالْعَقْلِ.",
+          "answer": "رِيَاضَةٌ",
+          "hint": "sport"
+        },
+        {
+          "sentence": "يَبْدَأُ ___ بَعْدَ الْإِحْمَاءِ.",
+          "answer": "تَمْرِينٌ",
+          "hint": "exercise / training"
+        },
+        {
+          "sentence": "___ سَرِيعٌ وَمَاهِرٌ.",
+          "answer": "لَاعِبٌ",
+          "hint": "player"
+        },
+        {
+          "sentence": "فَازَ ___ بِالْمُبَارَاةِ.",
+          "answer": "فَرِيقٌ",
+          "hint": "team"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "items": [
+        {
+          "question": "What does ‘رِيَاضَةٌ’ mean?",
+          "options": [
+            "exercise / training",
+            "sport",
+            "team",
+            "match / game"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What does ‘تَمْرِينٌ’ mean?",
+          "options": [
+            "player",
+            "exercise / training",
+            "match / game",
+            "soccer / football"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What does ‘لَاعِبٌ’ mean?",
+          "options": [
+            "team",
+            "player",
+            "soccer / football",
+            "basketball"
+          ],
+          "answer": 1
+        }
+      ]
+    }
+  ]
+}

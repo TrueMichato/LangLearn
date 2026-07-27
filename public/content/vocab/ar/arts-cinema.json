@@ -1,0 +1,183 @@
+{
+  "id": "arts-cinema",
+  "words": [
+    {
+      "word": "فَنٌّ",
+      "reading": "fannun",
+      "meaning": "art",
+      "example": "الْفَنُّ يُعَبِّرُ عَنِ الْمَشَاعِرِ.",
+      "exampleMeaning": "Art expresses feelings."
+    },
+    {
+      "word": "لَوْحَةٌ",
+      "reading": "lawḥatun",
+      "meaning": "painting",
+      "example": "تَعْرِضُ الْمُتْحَفُ لَوْحَةً جَمِيلَةً.",
+      "exampleMeaning": "The museum displays a beautiful painting."
+    },
+    {
+      "word": "مَعْرِضٌ",
+      "reading": "maʿriḍun",
+      "meaning": "exhibition",
+      "example": "زُرْنَا مَعْرِضًا لِلْفَنِّ الْحَدِيثِ.",
+      "exampleMeaning": "We visited an exhibition of modern art."
+    },
+    {
+      "word": "مُوسِيقَى",
+      "reading": "mūsīqā",
+      "meaning": "music",
+      "example": "الْمُوسِيقَى هَادِئَةٌ فِي الْمَقْهَى.",
+      "exampleMeaning": "The music is calm in the café."
+    },
+    {
+      "word": "أُغْنِيَةٌ",
+      "reading": "ʾughniyatun",
+      "meaning": "song",
+      "example": "سَمِعْتُ أُغْنِيَةً قَدِيمَةً فِي السَّيَّارَةِ.",
+      "exampleMeaning": "I heard an old song in the car."
+    },
+    {
+      "word": "عَزْفٌ",
+      "reading": "ʿazfun",
+      "meaning": "instrumental playing",
+      "example": "عَزْفُ الْعُودِ جَمِيلٌ فِي الْحَفْلِ.",
+      "exampleMeaning": "The oud playing is beautiful at the concert."
+    },
+    {
+      "word": "سِينَمَا",
+      "reading": "sīnamā",
+      "meaning": "cinema",
+      "example": "نَذْهَبُ إِلَى السِّينَمَا كُلَّ شَهْرٍ.",
+      "exampleMeaning": "We go to the cinema every month."
+    },
+    {
+      "word": "فِيلْمٌ",
+      "reading": "fīlmun",
+      "meaning": "film / movie",
+      "example": "شَاهَدْنَا فِيلْمًا قَصِيرًا عَنِ الْبَحْرِ.",
+      "exampleMeaning": "We watched a short film about the sea."
+    },
+    {
+      "word": "مُمَثِّلٌ",
+      "reading": "mumaththilun",
+      "meaning": "actor",
+      "example": "الْمُمَثِّلُ أَدَّى دَوْرًا صَعْبًا.",
+      "exampleMeaning": "The actor performed a difficult role."
+    },
+    {
+      "word": "مُخْرِجٌ",
+      "reading": "mukhrijun",
+      "meaning": "director",
+      "example": "اِخْتَارَ الْمُخْرِجُ مَكَانًا قَدِيمًا لِلتَّصْوِيرِ.",
+      "exampleMeaning": "The director chose an old place for filming."
+    },
+    {
+      "word": "مَسْرَحٌ",
+      "reading": "masraḥun",
+      "meaning": "theater",
+      "example": "الْمَسْرَحُ مَلِيءٌ بِالْجُمْهُورِ.",
+      "exampleMeaning": "The theater is full of the audience."
+    },
+    {
+      "word": "تَذْكِرَةٌ",
+      "reading": "tadhkiratun",
+      "meaning": "ticket",
+      "example": "اِشْتَرَيْتُ تَذْكِرَةً لِلْحَفْلِ.",
+      "exampleMeaning": "I bought a ticket for the concert."
+    },
+    {
+      "word": "جُمْهُورٌ",
+      "reading": "jumhūrun",
+      "meaning": "audience",
+      "example": "صَفَّقَ الْجُمْهُورُ بَعْدَ الْعَرْضِ.",
+      "exampleMeaning": "The audience applauded after the show."
+    },
+    {
+      "word": "مَشْهَدٌ",
+      "reading": "mashhadun",
+      "meaning": "scene",
+      "example": "هٰذَا الْمَشْهَدُ مُؤَثِّرٌ جِدًّا.",
+      "exampleMeaning": "This scene is very moving."
+    },
+    {
+      "word": "يَرْسُمُ",
+      "reading": "yarsumu",
+      "meaning": "to draw / paint",
+      "example": "يَرْسُمُ الطِّفْلُ بَيْتًا صَغِيرًا.",
+      "exampleMeaning": "The child draws a small house."
+    },
+    {
+      "word": "يُصَوِّرُ",
+      "reading": "yuṣawwiru",
+      "meaning": "to film / photograph",
+      "example": "يُصَوِّرُ الْفَنَّانُ الشَّارِعَ عِنْدَ الْغُرُوبِ.",
+      "exampleMeaning": "The artist photographs the street at sunset."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "___ يُعَبِّرُ عَنِ الْمَشَاعِرِ.",
+          "answer": "فَنٌّ",
+          "hint": "art"
+        },
+        {
+          "sentence": "___ جَمِيلَةٌ فِي الْمُتْحَفِ.",
+          "answer": "لَوْحَةٌ",
+          "hint": "painting"
+        },
+        {
+          "sentence": "___ جَدِيدٌ لِلْفَنِّ الْحَدِيثِ.",
+          "answer": "مَعْرِضٌ",
+          "hint": "exhibition"
+        },
+        {
+          "sentence": "___ هَادِئَةٌ فِي الْمَقْهَى.",
+          "answer": "مُوسِيقَى",
+          "hint": "music"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "items": [
+        {
+          "question": "What does ‘فَنٌّ’ mean?",
+          "options": [
+            "painting",
+            "art",
+            "music",
+            "song"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What does ‘لَوْحَةٌ’ mean?",
+          "options": [
+            "exhibition",
+            "painting",
+            "song",
+            "instrumental playing"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What does ‘مَعْرِضٌ’ mean?",
+          "options": [
+            "music",
+            "exhibition",
+            "instrumental playing",
+            "cinema"
+          ],
+          "answer": 1
+        }
+      ]
+    }
+  ]
+}

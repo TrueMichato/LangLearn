@@ -188,4 +188,60 @@ export const arPassages: ListeningPassage[] = [
       { question: 'What does the passage urge us to do?', options: ['Drink more water', 'Rationalize consumption and conserve water', 'Build more dams', 'Move to cities'], correctIndex: 1 },
     ],
   },
+
+  // ── Easy (batch 2) ──
+  {
+    id: 'ar-easy-8',
+    title: 'Ordering at a Café',
+    text: 'أهْلًا وسَهْلًا! أُرِيدُ كوبًا مِن الشّاي بِالنَّعْناع، ومِن فَضْلِك قِطْعة صَغِيرة مِن الكَعْك. أنا لا أُحِبُّ السُّكَّر كَثِيرًا، فَقَط مِلْعَقة واحِدة. شُكْرًا جَزِيلًا لَك.',
+    difficulty: 'easy',
+    questions: [
+      { question: 'What does the speaker order to drink?', options: ['Coffee', 'Mint tea', 'Orange juice', 'Water'], correctIndex: 1 },
+      { question: 'How much sugar does the speaker want?', options: ['None', 'One spoon', 'Two spoons', 'A lot'], correctIndex: 1 },
+    ],
+  },
+  {
+    id: 'ar-easy-9',
+    title: 'My Hobbies',
+    text: 'في وَقْتِ فَراغي أُحِبُّ أن أقْرَأَ الكُتُب وأسْتَمِعَ إلى المُوسِيقى. في نِهاية الأُسْبُوع ألْعَبُ كُرة القَدَم مَع أصْدِقائي في الحَدِيقة. أُحِبُّ أيْضًا الطَّبْخ والرَّسْم.',
+    difficulty: 'easy',
+    questions: [
+      { question: 'What does the speaker do on the weekend?', options: ['Study', 'Play football with friends', 'Watch TV', 'Sleep'], correctIndex: 1 },
+      { question: 'Which hobby is NOT mentioned?', options: ['Reading', 'Cooking', 'Swimming', 'Drawing'], correctIndex: 2 },
+    ],
+  },
+
+  // ── Medium (batch 2) ──
+  {
+    id: 'ar-med-7',
+    title: 'A Job Interview',
+    text: 'صَباح الخَيْر. اسْمي أحْمَد، وقَد دَرَسْتُ الهَنْدَسة في جامِعة القاهِرة. عَمِلْتُ ثَلاث سَنَوات في شَرِكة كَبِيرة، وأُجِيدُ اللُّغة الإنْجِلِيزيّة والحاسُوب. أبْحَثُ الآن عَن فُرْصة جَدِيدة أتَعَلَّمُ فيها وأُطَوِّرُ مَهاراتي.',
+    difficulty: 'medium',
+    questions: [
+      { question: 'What did the speaker study?', options: ['Medicine', 'Engineering', 'Law', 'Business'], correctIndex: 1 },
+      { question: 'How many years of experience does he have?', options: ['One', 'Two', 'Three', 'Five'], correctIndex: 2 },
+    ],
+  },
+  {
+    id: 'ar-med-8',
+    title: 'Giving Directions',
+    text: 'عَفْوًا، كَيْفَ أَصِلُ إلى المَتْحَف؟ اِمْشِ مُسْتَقِيمًا حَتّى نِهاية الشّارِع، ثُمّ انْعَطِفْ يَمِينًا عِنْدَ المَصْرِف. المَتْحَف على يَسارِك، بِجانِبِ الحَدِيقة الكَبِيرة. إنّه قَرِيب، عَشْر دَقائِق سَيْرًا على الأقْدام.',
+    difficulty: 'medium',
+    questions: [
+      { question: 'Where should you turn right?', options: ['At the museum', 'At the bank', 'At the garden', 'At the end of the bridge'], correctIndex: 1 },
+      { question: 'How far away is the museum?', options: ['One hour', 'Ten minutes on foot', 'Two kilometers', 'Very far'], correctIndex: 1 },
+    ],
+  },
+
+  // ── Hard (batch 2) ──
+  {
+    id: 'ar-hard-6',
+    title: 'Technology and Society',
+    text: 'غَيَّرَت التِّكْنُولوجيا الحَدِيثة طَريقة تَواصُلِنا وعَمَلِنا بِشَكْل جَذْريّ. فَبِفَضْلِ الهَواتِف الذَّكِيّة والإنْتَرْنِت، أصْبَحَ بِإمْكانِنا الوُصُولُ إلى المَعْلُومات في لَحَظات. ومَع ذلك، يُحَذِّرُ بَعْضُ الخُبَراء مِن الإفْراطِ في اسْتِخْدامِها، لأنّه قَد يُؤَثِّرُ على العَلاقاتِ الإنْسانيّة والصِّحّةِ النَّفْسيّة.',
+    difficulty: 'hard',
+    questions: [
+      { question: 'What has modern technology changed radically?', options: ['The weather', 'The way we communicate and work', 'The price of food', 'The population'], correctIndex: 1 },
+      { question: 'What do some experts warn about?', options: ['Buying new phones', 'Overusing technology', 'Slow internet', 'Learning to code'], correctIndex: 1 },
+    ],
+  },
 ];

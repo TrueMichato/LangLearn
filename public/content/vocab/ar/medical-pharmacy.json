@@ -1,0 +1,183 @@
+{
+  "id": "medical-pharmacy",
+  "words": [
+    {
+      "word": "صَيْدَلِيَّةٌ",
+      "reading": "ṣaydaliyyatun",
+      "meaning": "pharmacy",
+      "example": "الصَّيْدَلِيَّةُ قَرِيبَةٌ مِنَ الْمُسْتَشْفَى.",
+      "exampleMeaning": "The pharmacy is near the hospital."
+    },
+    {
+      "word": "دَوَاءٌ",
+      "reading": "dawāʾun",
+      "meaning": "medicine",
+      "example": "تَنَاوَلَ الْمَرِيضُ الدَّوَاءَ بَعْدَ الطَّعَامِ.",
+      "exampleMeaning": "The patient took the medicine after food."
+    },
+    {
+      "word": "وَصْفَةٌ طِبِّيَّةٌ",
+      "reading": "waṣfatun ṭibbiyyatun",
+      "meaning": "medical prescription",
+      "example": "كَتَبَ الطَّبِيبُ وَصْفَةً طِبِّيَّةً وَاضِحَةً.",
+      "exampleMeaning": "The doctor wrote a clear prescription."
+    },
+    {
+      "word": "حَبَّةٌ",
+      "reading": "ḥabbatun",
+      "meaning": "pill",
+      "example": "أَخَذَتْ مَرْيَمُ حَبَّةً وَاحِدَةً مَسَاءً.",
+      "exampleMeaning": "Maryam took one pill in the evening."
+    },
+    {
+      "word": "شَرَابٌ",
+      "reading": "sharābun",
+      "meaning": "syrup",
+      "example": "الشَّرَابُ مُفِيدٌ لِلسُّعَالِ.",
+      "exampleMeaning": "The syrup is useful for the cough."
+    },
+    {
+      "word": "مِرْهَمٌ",
+      "reading": "mirhamun",
+      "meaning": "ointment",
+      "example": "وَضَعَ الصَّيْدَلَانِيُّ مِرْهَمًا عَلَى الْجُرْحِ.",
+      "exampleMeaning": "The pharmacist put ointment on the wound."
+    },
+    {
+      "word": "ضِمَادٌ",
+      "reading": "ḍimādun",
+      "meaning": "bandage",
+      "example": "يُغَطِّي الضِّمَادُ الْجُرْحَ الصَّغِيرَ.",
+      "exampleMeaning": "The bandage covers the small wound."
+    },
+    {
+      "word": "حُمَّى",
+      "reading": "ḥummā",
+      "meaning": "fever",
+      "example": "لِلطِّفْلِ حُمَّى خَفِيفَةٌ اللَّيْلَةَ.",
+      "exampleMeaning": "The child has a mild fever tonight."
+    },
+    {
+      "word": "سُعَالٌ",
+      "reading": "suʿālun",
+      "meaning": "cough",
+      "example": "السُّعَالُ مُزْعِجٌ فِي اللَّيْلِ.",
+      "exampleMeaning": "The cough is annoying at night."
+    },
+    {
+      "word": "صُدَاعٌ",
+      "reading": "ṣudāʿun",
+      "meaning": "headache",
+      "example": "عِنْدِي صُدَاعٌ بَعْدَ الْعَمَلِ.",
+      "exampleMeaning": "I have a headache after work."
+    },
+    {
+      "word": "أَلَمٌ",
+      "reading": "ʾalamun",
+      "meaning": "pain",
+      "example": "شَعَرَ الرَّجُلُ بِأَلَمٍ فِي ظَهْرِهِ.",
+      "exampleMeaning": "The man felt pain in his back."
+    },
+    {
+      "word": "مِقْيَاسُ حَرَارَةٍ",
+      "reading": "miqyāsu ḥarāratin",
+      "meaning": "thermometer",
+      "example": "اِسْتَخْدَمَتِ الْمُمَرِّضَةُ مِقْيَاسَ حَرَارَةٍ.",
+      "exampleMeaning": "The nurse used a thermometer."
+    },
+    {
+      "word": "طَبِيبٌ",
+      "reading": "ṭabībun",
+      "meaning": "doctor",
+      "example": "فَحَصَ الطَّبِيبُ الْمَرِيضَ بِعِنَايَةٍ.",
+      "exampleMeaning": "The doctor examined the patient carefully."
+    },
+    {
+      "word": "صَيْدَلَانِيٌّ",
+      "reading": "ṣaydālāniyyun",
+      "meaning": "pharmacist",
+      "example": "نَصَحَ الصَّيْدَلَانِيُّ الْمَرِيضَ بِالرَّاحَةِ.",
+      "exampleMeaning": "The pharmacist advised the patient to rest."
+    },
+    {
+      "word": "يَفْحَصُ",
+      "reading": "yafḥaṣu",
+      "meaning": "to examine",
+      "example": "يَفْحَصُ الطَّبِيبُ الضَّغْطَ وَالْحَرَارَةَ.",
+      "exampleMeaning": "The doctor examines the blood pressure and temperature."
+    },
+    {
+      "word": "يَتَنَاوَلُ",
+      "reading": "yatanāwalu",
+      "meaning": "to take / consume",
+      "example": "يَتَنَاوَلُ الْمَرِيضُ الدَّوَاءَ مَرَّتَيْنِ يَوْمِيًّا.",
+      "exampleMeaning": "The patient takes the medicine twice daily."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "___ قَرِيبَةٌ مِنَ الْمُسْتَشْفَى.",
+          "answer": "صَيْدَلِيَّةٌ",
+          "hint": "pharmacy"
+        },
+        {
+          "sentence": "هٰذَا ___ لِلْمَرِيضِ.",
+          "answer": "دَوَاءٌ",
+          "hint": "medicine"
+        },
+        {
+          "sentence": "___ وَاضِحَةٌ مِنَ الطَّبِيبِ.",
+          "answer": "وَصْفَةٌ طِبِّيَّةٌ",
+          "hint": "medical prescription"
+        },
+        {
+          "sentence": "___ وَاحِدَةٌ عَلَى الطَّاوِلَةِ.",
+          "answer": "حَبَّةٌ",
+          "hint": "pill"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "items": [
+        {
+          "question": "What does ‘صَيْدَلِيَّةٌ’ mean?",
+          "options": [
+            "medicine",
+            "pharmacy",
+            "pill",
+            "syrup"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What does ‘دَوَاءٌ’ mean?",
+          "options": [
+            "medical prescription",
+            "medicine",
+            "syrup",
+            "ointment"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What does ‘وَصْفَةٌ طِبِّيَّةٌ’ mean?",
+          "options": [
+            "pill",
+            "medical prescription",
+            "ointment",
+            "bandage"
+          ],
+          "answer": 1
+        }
+      ]
+    }
+  ]
+}

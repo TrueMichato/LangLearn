@@ -31,4 +31,22 @@ export const arMinimalPairs: MinimalPair[] = [
   { id: 'ar-18', wordA: 'عالِم', wordB: 'عالَم', readingA: 'ʿālim', readingB: 'ʿālam', meaningA: 'scholar', meaningB: 'world', hint: 'Vowel quality on the second syllable: -im vs -am.', category: 'vowel-length' },
   { id: 'ar-19', wordA: 'جَمَل', wordB: 'جَمِيل', readingA: 'jamal', readingB: 'jamīl', meaningA: 'camel', meaningB: 'beautiful', hint: 'Short a vs long ī.', category: 'vowel-length' },
   { id: 'ar-20', wordA: 'دَرَسَ', wordB: 'دارِس', readingA: 'darasa', readingB: 'dāris', meaningA: 'he studied', meaningB: 'a student / one studying', hint: 'Long ā (dā-) marks the active participle.', category: 'vowel-length' },
+
+  // ── Emphatic vs plain (batch 2) ──
+  { id: 'ar-21', wordA: 'تابَ', wordB: 'طابَ', readingA: 'tāba', readingB: 'ṭāba', meaningA: 'he repented', meaningB: 'it became good', hint: 'Plain ت vs emphatic ط (repeat of the key contrast).', category: 'emphatic' },
+  { id: 'ar-22', wordA: 'سَنّ', wordB: 'صَنّ', readingA: 'sann', readingB: 'ṣann', meaningA: 'to sharpen', meaningB: '(rare root)', hint: 'Plain س vs emphatic ص.', category: 'emphatic' },
+  { id: 'ar-23', wordA: 'دِين', wordB: 'ضِدّ', readingA: 'dīn', readingB: 'ḍidd', meaningA: 'religion', meaningB: 'opposite', hint: 'Plain د vs emphatic ض — feel the tongue heaviness on ض.', category: 'emphatic' },
+
+  // ── Throat letters (batch 2) ──
+  { id: 'ar-24', wordA: 'حَجّ', wordB: 'هَجّ', readingA: 'ḥajj', readingB: 'hajj', meaningA: 'pilgrimage', meaningB: '(to rush)', hint: 'ح (deep, constricted) vs ه (light "h").', category: 'throat' },
+  { id: 'ar-25', wordA: 'عَمّ', wordB: 'أَمّ', readingA: 'ʿamm', readingB: 'ʾumm', meaningA: 'paternal uncle', meaningB: 'mother', hint: 'ع (pharyngeal) vs hamza — a very common confusion.', category: 'throat' },
+  { id: 'ar-26', wordA: 'سَعى', wordB: 'سَأَل', readingA: 'saʿā', readingB: 'saʾal', meaningA: 'he strove', meaningB: 'he asked', hint: 'ع vs hamza in medial position.', category: 'throat' },
+
+  // ── Similar consonants (batch 2) ──
+  { id: 'ar-27', wordA: 'كَتَبَ', wordB: 'قَطَعَ', readingA: 'kataba', readingB: 'qaṭaʿa', meaningA: 'he wrote', meaningB: 'he cut', hint: 'ك (front k) vs ق (deep, uvular).', category: 'similar' },
+  { id: 'ar-28', wordA: 'غالِب', wordB: 'خالِد', readingA: 'ghālib', readingB: 'khālid', meaningA: 'victorious', meaningB: 'eternal (a name)', hint: 'غ (voiced gh) vs خ (voiceless kh).', category: 'similar' },
+
+  // ── Vowel length (batch 2) ──
+  { id: 'ar-29', wordA: 'سَلَم', wordB: 'سَلام', readingA: 'salam', readingB: 'salām', meaningA: 'peace (short)', meaningB: 'peace / greeting', hint: 'Short a vs long ā on the final syllable.', category: 'vowel-length' },
+  { id: 'ar-30', wordA: 'مَلِك', wordB: 'مالِك', readingA: 'malik', readingB: 'mālik', meaningA: 'king', meaningB: 'owner', hint: 'Long ā (mā-) marks the active participle "owner".', category: 'vowel-length' },
 ];

@@ -1,0 +1,183 @@
+{
+  "id": "money-banking",
+  "words": [
+    {
+      "word": "نُقُودٌ",
+      "reading": "nuqūdun",
+      "meaning": "money",
+      "example": "النُّقُودُ فِي الْمَحْفَظَةِ.",
+      "exampleMeaning": "The money is in the wallet."
+    },
+    {
+      "word": "مَصْرِفٌ",
+      "reading": "maṣrifun",
+      "meaning": "bank",
+      "example": "ذَهَبَ خَالِدٌ إِلَى الْمَصْرِفِ صَبَاحًا.",
+      "exampleMeaning": "Khalid went to the bank in the morning."
+    },
+    {
+      "word": "حِسَابٌ مَصْرِفِيٌّ",
+      "reading": "ḥisābun maṣrifiyyun",
+      "meaning": "bank account",
+      "example": "فَتَحَتْ نُورٌ حِسَابًا مَصْرِفِيًّا جَدِيدًا.",
+      "exampleMeaning": "Noor opened a new bank account."
+    },
+    {
+      "word": "بِطَاقَةٌ اِئْتِمَانِيَّةٌ",
+      "reading": "biṭāqatun iʾtimāniyyatun",
+      "meaning": "credit card",
+      "example": "أَسْتَخْدِمُ بِطَاقَةً اِئْتِمَانِيَّةً عِنْدَ السَّفَرِ.",
+      "exampleMeaning": "I use a credit card when traveling."
+    },
+    {
+      "word": "نَقْدٌ",
+      "reading": "naqdun",
+      "meaning": "cash",
+      "example": "دَفَعَ الزَّبُونُ نَقْدًا فِي السُّوقِ.",
+      "exampleMeaning": "The customer paid cash in the market."
+    },
+    {
+      "word": "عُمْلَةٌ",
+      "reading": "ʿumlatun",
+      "meaning": "currency",
+      "example": "تَغَيَّرَتْ قِيمَةُ الْعُمْلَةِ هٰذَا الْأُسْبُوعَ.",
+      "exampleMeaning": "The currency's value changed this week."
+    },
+    {
+      "word": "سِعْرٌ",
+      "reading": "siʿrun",
+      "meaning": "price",
+      "example": "سِعْرُ الْكِتَابِ مُنَاسِبٌ.",
+      "exampleMeaning": "The price of the book is reasonable."
+    },
+    {
+      "word": "ضَرِيبَةٌ",
+      "reading": "ḍarībatun",
+      "meaning": "tax",
+      "example": "تُضَافُ ضَرِيبَةٌ إِلَى الْفَاتُورَةِ.",
+      "exampleMeaning": "A tax is added to the bill."
+    },
+    {
+      "word": "قَرْضٌ",
+      "reading": "qarḍun",
+      "meaning": "loan",
+      "example": "طَلَبَتِ الشَّرِكَةُ قَرْضًا صَغِيرًا.",
+      "exampleMeaning": "The company requested a small loan."
+    },
+    {
+      "word": "فَائِدَةٌ",
+      "reading": "fāʾidatun",
+      "meaning": "interest / benefit",
+      "example": "نَاقَشَ الْمُدِيرُ نِسْبَةَ الْفَائِدَةِ.",
+      "exampleMeaning": "The manager discussed the interest rate."
+    },
+    {
+      "word": "تَحْوِيلٌ",
+      "reading": "taḥwīlun",
+      "meaning": "transfer",
+      "example": "أَجْرَيْتُ تَحْوِيلًا إِلَى حِسَابِ أَخِي.",
+      "exampleMeaning": "I made a transfer to my brother's account."
+    },
+    {
+      "word": "إِيصَالٌ",
+      "reading": "ʾīṣālun",
+      "meaning": "receipt",
+      "example": "اِحْتَفَظْ بِالْإِيصَالِ بَعْدَ الدَّفْعِ.",
+      "exampleMeaning": "Keep the receipt after payment."
+    },
+    {
+      "word": "يَدْفَعُ",
+      "reading": "yadfaʿu",
+      "meaning": "to pay",
+      "example": "يَدْفَعُ سَامِي الْفَاتُورَةَ بِالْبِطَاقَةِ.",
+      "exampleMeaning": "Sami pays the bill by card."
+    },
+    {
+      "word": "يَسْحَبُ",
+      "reading": "yasḥabu",
+      "meaning": "to withdraw",
+      "example": "يَسْحَبُ الْعَمِيلُ نُقُودًا مِنَ الصَّرَّافِ.",
+      "exampleMeaning": "The client withdraws money from the ATM."
+    },
+    {
+      "word": "يُودِعُ",
+      "reading": "yūdiʿu",
+      "meaning": "to deposit",
+      "example": "تُودِعُ لَيْلَى رَاتِبَهَا فِي الْمَصْرِفِ.",
+      "exampleMeaning": "Layla deposits her salary in the bank."
+    },
+    {
+      "word": "يَدَّخِرُ",
+      "reading": "yaddakhiru",
+      "meaning": "to save money",
+      "example": "يَدَّخِرُ الطَّالِبُ جُزْءًا مِنْ مَصْرُوفِهِ.",
+      "exampleMeaning": "The student saves part of his allowance."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "___ فِي الْمَحْفَظَةِ.",
+          "answer": "نُقُودٌ",
+          "hint": "money"
+        },
+        {
+          "sentence": "___ قَرِيبٌ مِنَ الْبَيْتِ.",
+          "answer": "مَصْرِفٌ",
+          "hint": "bank"
+        },
+        {
+          "sentence": "لَدَى نُورٍ ___ جَدِيدٌ.",
+          "answer": "حِسَابٌ مَصْرِفِيٌّ",
+          "hint": "bank account"
+        },
+        {
+          "sentence": "___ مُفِيدَةٌ عِنْدَ السَّفَرِ.",
+          "answer": "بِطَاقَةٌ اِئْتِمَانِيَّةٌ",
+          "hint": "credit card"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "items": [
+        {
+          "question": "What does ‘نُقُودٌ’ mean?",
+          "options": [
+            "bank",
+            "money",
+            "credit card",
+            "cash"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What does ‘مَصْرِفٌ’ mean?",
+          "options": [
+            "bank account",
+            "bank",
+            "cash",
+            "currency"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What does ‘حِسَابٌ مَصْرِفِيٌّ’ mean?",
+          "options": [
+            "credit card",
+            "bank account",
+            "currency",
+            "price"
+          ],
+          "answer": 1
+        }
+      ]
+    }
+  ]
+}
