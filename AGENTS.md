@@ -4,7 +4,7 @@ IMPORTANT: Prefer retrieval-led reasoning over pre-training-led reasoning for an
 
 ## Project Overview
 
-LangLearn is a local-first Progressive Web App for learning languages (Japanese, Russian, Portuguese, extensible). "Kind learning" philosophy — rewards effort, no penalties for mistakes. Deployed at `https://truemichato.github.io/LangLearn/`.
+LangLearn is a local-first Progressive Web App for learning languages (Japanese, Russian, Portuguese, Spanish, Arabic, extensible). "Kind learning" philosophy — rewards effort, no penalties for mistakes. Deployed at `https://truemichato.github.io/LangLearn/`.
 
 ## Tech Stack
 
@@ -32,7 +32,9 @@ npm run lint      # ESLint
 
 1. **Content fetching** — ALWAYS prefix with `import.meta.env.BASE_URL`: `` fetch(`${import.meta.env.BASE_URL}content/grammar/ja/index.json`) ``
 2. **Dark mode** — Every component MUST have `dark:` variants on all colors. Black text on dark bg is the #1 recurring bug.
-3. **Language codes** — Use 2-letter codes internally (`ja`, `ru`, `pt`). Display via `getLanguageLabel(code)` from `src/lib/languages.ts`. Never hardcode "Japanese" or "JA".
+3. **Language codes** — Use 2-letter codes internally (`ja`, `ru`, `pt`, `es`, `ar`). Display via `getLanguageLabel(code)` from `src/lib/languages.ts`. Never hardcode "Japanese" or "JA".
+   - **RTL** — Arabic (`ar`) is right-to-left. Set `rtl: true` on the language in `src/lib/languages.ts` and mark every element that renders *target-language* text with `dir` via `isRTL`/`rtlProps` from `src/lib/rtl.ts` (flashcards, reader, grammar examples, sentence tiles, cloze, vocab, dictation, translation, lyrics). Leave English-primary grammar prose LTR.
+   - **Arabic dialects** — one `ar` code = MSA shared core; `arabicDialect` + `arabicColloquialFocus` settings surface dialect-tagged content (see `src/lib/arabic-dialects.ts`). Dialect vocab lessons carry a `dialect` field in their index entry.
 4. **DB queries** — Only `.where()` on INDEXED fields. Non-indexed → `.toArray()` then `.filter()`. Check `src/db/schema.ts` for indexes.
 5. **DB migrations** — Never modify existing version stores. Always add `db.version(N+1)`.
 6. **XP recording** — Two sources: timer auto-records to `studySessions` table; bonus XP via `useXPStore.getState().addXP(amount)`. Dashboard sums both.
@@ -72,9 +74,9 @@ src/
 └── workers/             # kuromoji.worker.ts (Japanese tokenizer)
 
 public/content/          # Runtime-fetched lesson content
-├── grammar/{ja,ru,pt}/   # 35 lessons each: index.json + *.md (with <!-- quiz: {...} --> and <!-- grammar-card: {...} --> blocks)
-├── vocab/{ja,ru,pt}/     # 40 lessons each: index.json + *.json (words + exercises)
-├── reading/{ja,ru,pt}/   # 10 curated texts each: index.json + *.txt (3 difficulty levels)
+├── grammar/{ja,ru,pt,es,ar}/   # 35+ lessons each: index.json + *.md (with <!-- quiz: {...} --> and <!-- grammar-card: {...} --> blocks). grammar-card blocks are SRS metadata, stripped from display by LessonView.
+├── vocab/{ja,ru,pt,es,ar}/     # 40 lessons each: index.json + *.json (words + exercises)
+├── reading/{ja,ru,pt,es,ar}/   # 10 curated texts each: index.json + *.txt (3 difficulty levels)
 └── dict/                # Kuromoji dictionary files
 ```
 
@@ -113,7 +115,7 @@ Time: 10 XP/5min | Review: 2/card | Word added: 5 | Vocab lesson: 25 | Test: 30+
 
 **Vocab lessons** (`.json`): `{ id, words: [{word, reading, meaning, example, exampleMeaning}], exercises: [{type:'match'|'fill-blank'|'multiple-choice', ...}] }`
 
-**Alphabets** (`src/data/alphabets/`): `{ char, romanji, group, strokes?, meaning? }` — Hiragana(81), Katakana(80), Kanji(403 N5+N4+N3), Cyrillic(33)
+**Alphabets** (`src/data/alphabets/`): `{ char, romanji, group, strokes?, meaning? }` — Hiragana(81), Katakana(80), Kanji(403 N5+N4+N3), Cyrillic(33), Arabic(28 letters + harakat + hamza/special forms + numerals)
 
 ## Navigation
 
