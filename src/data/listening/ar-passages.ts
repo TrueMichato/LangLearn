@@ -366,4 +366,50 @@ export const arPassages: ListeningPassage[] = [
       { question: 'What are governments doing about it?', options: ['Nothing', 'Desalinating seawater and rationalizing use', 'Importing rivers', 'Building more cities'], correctIndex: 1 },
     ],
   },
+
+  // ── Easy (batch 5) ──
+  {
+    id: 'ar-easy-15',
+    title: 'At the Pharmacy',
+    text: 'مَساءَ الخَيْر، أَشْعُرُ بِصُداعٍ وأَلَمٍ في الحَلْق. هل عِنْدَكُم دَواءٌ مُناسِب؟ وكَم مَرّةً آخُذُه في اليَوْم؟ شُكْرًا، وأُرِيدُ أيْضًا عُلْبةَ مَناديل.',
+    difficulty: 'easy',
+    questions: [
+      { question: 'What is the speaker complaining about?', options: ['A stomachache', 'A headache and sore throat', 'A broken leg', 'A toothache'], correctIndex: 1 },
+      { question: 'What else does the speaker want?', options: ['A box of tissues', 'A bottle of water', 'A newspaper', 'A bandage'], correctIndex: 0 },
+    ],
+  },
+  {
+    id: 'ar-easy-16',
+    title: 'The Little Cat',
+    text: 'عِنْدي قِطّةٌ صَغِيرةٌ اسْمُها لُولُو. لَوْنُها أَبْيَضُ وعَيْناها زَرْقاوان. تُحِبُّ أن تَنامَ في الشَّمْسِ وتَلْعَبَ بِالكُرة. كُلَّ صَباحٍ تَنْتَظِرُني عِنْدَ الباب.',
+    difficulty: 'easy',
+    questions: [
+      { question: 'What colour is the cat?', options: ['Black', 'White', 'Brown', 'Grey'], correctIndex: 1 },
+      { question: 'What does the cat like to do?', options: ['Swim', 'Sleep in the sun and play with a ball', 'Climb trees', 'Hide'], correctIndex: 1 },
+    ],
+  },
+
+  // ── Medium (batch 5) ──
+  {
+    id: 'ar-med-13',
+    title: 'Planning a Trip',
+    text: 'قَرَّرْنا أنا وأَصْدِقائي أن نُسافِرَ إلى المَغْرِبِ في الصَّيْف. سَنَزُورُ مَدِينةَ فاس، ونَتَجَوَّلُ في أَسْواقِها القَدِيمة، ونَتَذَوَّقُ الطَّعامَ المَغْرِبيّ. حَجَزْنا الفُنْدُقَ وتَذاكِرَ الطّائِرةِ مُبَكِّرًا لِنُوَفِّرَ المال.',
+    difficulty: 'medium',
+    questions: [
+      { question: 'Where are they travelling?', options: ['Egypt', 'Morocco', 'Jordan', 'Iraq'], correctIndex: 1 },
+      { question: 'Why did they book early?', options: ['To get better seats', 'To save money', 'It was required', 'To avoid the heat'], correctIndex: 1 },
+    ],
+  },
+
+  // ── Hard (batch 5) ──
+  {
+    id: 'ar-hard-9',
+    title: 'The Value of Dialects',
+    text: 'كَثِيرًا ما يَظُنُّ المُتَعَلِّمُونَ أنَّ الفُصْحى وَحْدَها هي العَرَبِيّةُ الحَقِيقيّة، لكِنَّ اللَّهَجاتِ المَحَلِّيّةَ لا تَقِلُّ غِنًى ولا أَهَمّيّة. فَهي لُغةُ البَيْتِ والشّارِعِ والأُغْنِية، وتَحْمِلُ رُوحَ كُلِّ بَلَد. لِذلك يَنْصَحُ الخُبَراءُ بِتَعَلُّمِ الفُصْحى لِلقِراءةِ والكِتابة، ولَهْجةٍ واحِدةٍ لِلحَياةِ اليَوْميّة.',
+    difficulty: 'hard',
+    questions: [
+      { question: 'What do learners often mistakenly think?', options: ['Dialects are easy', 'Only Fuṣḥā is "real" Arabic', 'Arabic has no dialects', 'Everyone speaks MSA'], correctIndex: 1 },
+      { question: 'What do experts recommend?', options: ['Learning only MSA', 'Learning MSA for reading/writing and one dialect for daily life', 'Avoiding dialects', 'Learning all dialects at once'], correctIndex: 1 },
+    ],
+  },
 ];

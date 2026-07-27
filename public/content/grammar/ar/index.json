@@ -478,5 +478,65 @@
     "title": "Dialect Future & Continuous (raḥ/ḥa-, ʿam, da-)",
     "order": 80,
     "group": "🗣️ Colloquial & Dialects"
+  },
+  {
+    "id": "hamza-spelling",
+    "title": "Spelling the Hamza (its seats: أ إ ؤ ئ ء and the rules)",
+    "order": 81,
+    "group": "🏗️ Foundations"
+  },
+  {
+    "id": "taa-marbuta-maftuha",
+    "title": "Tāʾ Marbūṭa vs the Open Tāʾ",
+    "order": 82,
+    "group": "🏗️ Foundations"
+  },
+  {
+    "id": "sun-moon-letters",
+    "title": "Sun & Moon Letters in Depth (assimilation of the article)",
+    "order": 83,
+    "group": "🏗️ Foundations"
+  },
+  {
+    "id": "the-many-alifs",
+    "title": "The Many Alifs (madda آ, maqṣūra ى, waṣla ٱ, dagger alif)",
+    "order": 84,
+    "group": "🏗️ Foundations"
+  },
+  {
+    "id": "common-mistakes",
+    "title": "Common Learner Mistakes & How to Avoid Them",
+    "order": 85,
+    "group": "🔢 Structure & Nuance"
+  },
+  {
+    "id": "loanwords-arabization",
+    "title": "Loanwords & Arabization (taʿrīb)",
+    "order": 86,
+    "group": "🔢 Structure & Nuance"
+  },
+  {
+    "id": "false-friends",
+    "title": "False Friends between Arabic and English",
+    "order": 87,
+    "group": "🔢 Structure & Nuance"
+  },
+  {
+    "id": "politeness-register",
+    "title": "Politeness, Register & Forms of Address (ḥaḍratak, sayyid…)",
+    "order": 88,
+    "group": "🔢 Structure & Nuance"
+  },
+  {
+    "id": "arabizi-chat",
+    "title": "Reading Romanized Arabic & the Chat Alphabet (Arabizi: 3=ع, 7=ح, 2=ء, 9=ص)",
+    "order": 89,
+    "group": "🗣️ Colloquial & Dialects"
+  },
+  {
+    "id": "dialect-comparison",
+    "title": "One Phrase, Six Dialects (compare a few everyday phrases across MSA, Egyptian, Levantine, Gulf, Iraqi, Maghrebi in a table)",
+    "order": 90,
+    "group": "🗣️ Colloquial & Dialects"
   }
 ]

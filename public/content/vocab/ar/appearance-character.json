@@ -1,0 +1,183 @@
+{
+  "id": "appearance-character",
+  "words": [
+    {
+      "word": "طَوِيلٌ",
+      "reading": "ṭawīlun",
+      "meaning": "tall",
+      "example": "الطَّالِبُ طَوِيلٌ وَنَشِيطٌ.",
+      "exampleMeaning": "The student is tall and active."
+    },
+    {
+      "word": "قَصِيرٌ",
+      "reading": "qaṣīrun",
+      "meaning": "short",
+      "example": "هٰذَا الْمَمَرُّ قَصِيرٌ جِدًّا.",
+      "exampleMeaning": "This corridor is very short."
+    },
+    {
+      "word": "نَحِيفٌ",
+      "reading": "naḥīfun",
+      "meaning": "slender / thin",
+      "example": "أَخِي نَحِيفٌ لٰكِنَّهُ قَوِيٌّ.",
+      "exampleMeaning": "My brother is slender, but he is strong."
+    },
+    {
+      "word": "مُمْتَلِئٌ",
+      "reading": "mumtaliʾun",
+      "meaning": "plump / full-figured",
+      "example": "الرَّجُلُ مُمْتَلِئٌ وَوَدُودٌ.",
+      "exampleMeaning": "The man is plump and friendly."
+    },
+    {
+      "word": "أَنِيقٌ",
+      "reading": "ʾanīqun",
+      "meaning": "elegant",
+      "example": "الضَّيْفُ أَنِيقٌ فِي مَلَابِسِهِ.",
+      "exampleMeaning": "The guest is elegant in his clothes."
+    },
+    {
+      "word": "أَشْقَرُ",
+      "reading": "ʾashqaru",
+      "meaning": "blond",
+      "example": "لَهُ شَعْرٌ أَشْقَرُ طَوِيلٌ.",
+      "exampleMeaning": "He has long blond hair."
+    },
+    {
+      "word": "أَسْمَرُ",
+      "reading": "ʾasmaru",
+      "meaning": "brown-skinned / tanned",
+      "example": "وَجْهُهَا أَسْمَرُ مِنَ الشَّمْسِ.",
+      "exampleMeaning": "Her face is tanned from the sun."
+    },
+    {
+      "word": "وَدُودٌ",
+      "reading": "wadūdun",
+      "meaning": "friendly",
+      "example": "جَارُنَا وَدُودٌ مَعَ الْجَمِيعِ.",
+      "exampleMeaning": "Our neighbor is friendly with everyone."
+    },
+    {
+      "word": "هَادِئٌ",
+      "reading": "hādiʾun",
+      "meaning": "calm",
+      "example": "الْبَحْرُ هَادِئٌ هٰذَا الصَّبَاحَ.",
+      "exampleMeaning": "The sea is calm this morning."
+    },
+    {
+      "word": "جَرِيءٌ",
+      "reading": "jarīʾun",
+      "meaning": "bold",
+      "example": "الطِّفْلُ جَرِيءٌ فِي السُّؤَالِ.",
+      "exampleMeaning": "The child is bold in asking questions."
+    },
+    {
+      "word": "مُتَوَاضِعٌ",
+      "reading": "mutawāḍiʿun",
+      "meaning": "humble",
+      "example": "الْعَالِمُ مُتَوَاضِعٌ مَعَ طُلَّابِهِ.",
+      "exampleMeaning": "The scholar is humble with his students."
+    },
+    {
+      "word": "عَنِيدٌ",
+      "reading": "ʿanīdun",
+      "meaning": "stubborn",
+      "example": "هٰذَا الْحِصَانُ عَنِيدٌ أَحْيَانًا.",
+      "exampleMeaning": "This horse is stubborn sometimes."
+    },
+    {
+      "word": "صَبُورٌ",
+      "reading": "ṣabūrun",
+      "meaning": "patient",
+      "example": "الطَّبِيبُ صَبُورٌ مَعَ الْمَرْضَى.",
+      "exampleMeaning": "The doctor is patient with the patients."
+    },
+    {
+      "word": "مَرِحٌ",
+      "reading": "mariḥun",
+      "meaning": "cheerful",
+      "example": "صَدِيقِي مَرِحٌ فِي الرِّحْلَةِ.",
+      "exampleMeaning": "My friend is cheerful on the trip."
+    },
+    {
+      "word": "جَادٌّ",
+      "reading": "jāddun",
+      "meaning": "serious",
+      "example": "الْمُدِيرُ جَادٌّ فِي الْعَمَلِ.",
+      "exampleMeaning": "The manager is serious at work."
+    },
+    {
+      "word": "لَطِيفٌ",
+      "reading": "laṭīfun",
+      "meaning": "kind / pleasant",
+      "example": "الْمُعَلِّمُ لَطِيفٌ مَعَ الْأَطْفَالِ.",
+      "exampleMeaning": "The teacher is kind with the children."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "الطَّالِبُ ___ وَنَشِيطٌ.",
+          "answer": "طَوِيلٌ",
+          "hint": "tall"
+        },
+        {
+          "sentence": "هٰذَا الْمَمَرُّ ___ جِدًّا.",
+          "answer": "قَصِيرٌ",
+          "hint": "short"
+        },
+        {
+          "sentence": "أَخِي ___ لٰكِنَّهُ قَوِيٌّ.",
+          "answer": "نَحِيفٌ",
+          "hint": "slender / thin"
+        },
+        {
+          "sentence": "الرَّجُلُ ___ وَوَدُودٌ.",
+          "answer": "مُمْتَلِئٌ",
+          "hint": "plump / full-figured"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "items": [
+        {
+          "question": "What does ‘طَوِيلٌ’ mean?",
+          "options": [
+            "short",
+            "tall",
+            "slender / thin",
+            "plump / full-figured"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What does ‘قَصِيرٌ’ mean?",
+          "options": [
+            "slender / thin",
+            "short",
+            "plump / full-figured",
+            "elegant"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What does ‘نَحِيفٌ’ mean?",
+          "options": [
+            "plump / full-figured",
+            "slender / thin",
+            "elegant",
+            "blond"
+          ],
+          "answer": 1
+        }
+      ]
+    }
+  ]
+}

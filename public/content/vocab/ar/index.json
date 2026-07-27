@@ -670,5 +670,85 @@
     "wordCount": 16,
     "level": "intermediate",
     "dialect": "iraqi"
+  },
+  {
+    "id": "common-verbs-4",
+    "title": "Common Verbs IV",
+    "order": 85,
+    "wordCount": 16,
+    "level": "intermediate",
+    "dialect": "msa"
+  },
+  {
+    "id": "appearance-character",
+    "title": "Appearance & Character",
+    "order": 86,
+    "wordCount": 16,
+    "level": "intermediate",
+    "dialect": "msa"
+  },
+  {
+    "id": "abstract-concepts",
+    "title": "Abstract Concepts: freedom, justice, hope",
+    "order": 87,
+    "wordCount": 16,
+    "level": "advanced",
+    "dialect": "msa"
+  },
+  {
+    "id": "household-chores",
+    "title": "Household Chores & Daily Actions",
+    "order": 88,
+    "wordCount": 16,
+    "level": "beginner",
+    "dialect": "msa"
+  },
+  {
+    "id": "fashion-accessories",
+    "title": "Fashion & Accessories",
+    "order": 89,
+    "wordCount": 16,
+    "level": "intermediate",
+    "dialect": "msa"
+  },
+  {
+    "id": "tourism-sightseeing",
+    "title": "Tourism & Sightseeing",
+    "order": 90,
+    "wordCount": 16,
+    "level": "intermediate",
+    "dialect": "msa"
+  },
+  {
+    "id": "finance-economy",
+    "title": "Finance & the Economy",
+    "order": 91,
+    "wordCount": 16,
+    "level": "advanced",
+    "dialect": "msa"
+  },
+  {
+    "id": "wellbeing-fitness",
+    "title": "Well-being & Fitness",
+    "order": 92,
+    "wordCount": 16,
+    "level": "intermediate",
+    "dialect": "msa"
+  },
+  {
+    "id": "discourse-linkers",
+    "title": "Discourse Linkers & Connecting Words",
+    "order": 93,
+    "wordCount": 16,
+    "level": "advanced",
+    "dialect": "msa"
+  },
+  {
+    "id": "dialect-greetings-compare",
+    "title": "Greetings & Small Talk Across Dialects",
+    "order": 94,
+    "wordCount": 16,
+    "level": "intermediate",
+    "dialect": "all"
   }
 ]

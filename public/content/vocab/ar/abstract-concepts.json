@@ -1,0 +1,183 @@
+{
+  "id": "abstract-concepts",
+  "words": [
+    {
+      "word": "حُرِّيَّةٌ",
+      "reading": "ḥurriyyatun",
+      "meaning": "freedom",
+      "example": "حُرِّيَّةٌ مَسْؤُولَةٌ أَفْضَلُ مِنْ فَوْضَى.",
+      "exampleMeaning": "Responsible freedom is better than chaos."
+    },
+    {
+      "word": "عَدَالَةٌ",
+      "reading": "ʿadālatun",
+      "meaning": "justice",
+      "example": "عَدَالَةٌ بِلَا رَحْمَةٍ قَاسِيَةٌ.",
+      "exampleMeaning": "Justice without mercy is harsh."
+    },
+    {
+      "word": "أَمَلٌ",
+      "reading": "ʾamalun",
+      "meaning": "hope",
+      "example": "أَمَلٌ صَادِقٌ يُقَوِّي الْقَلْبَ.",
+      "exampleMeaning": "Sincere hope strengthens the heart."
+    },
+    {
+      "word": "كَرَامَةٌ",
+      "reading": "karāmatun",
+      "meaning": "dignity",
+      "example": "كَرَامَةٌ إِنْسَانِيَّةٌ حَقٌّ لِكُلِّ شَخْصٍ.",
+      "exampleMeaning": "Human dignity is a right for every person."
+    },
+    {
+      "word": "مُسَاوَاةٌ",
+      "reading": "musāwātun",
+      "meaning": "equality",
+      "example": "مُسَاوَاةٌ حَقِيقِيَّةٌ تَحْتَاجُ إِلَى قَانُونٍ عَادِلٍ.",
+      "exampleMeaning": "True equality needs a just law."
+    },
+    {
+      "word": "مَسْؤُولِيَّةٌ",
+      "reading": "masʾūliyyatun",
+      "meaning": "responsibility",
+      "example": "مَسْؤُولِيَّةٌ مُشْتَرَكَةٌ تَقَعُ عَلَى الْجَمِيعِ.",
+      "exampleMeaning": "Shared responsibility falls on everyone."
+    },
+    {
+      "word": "تَضَامُنٌ",
+      "reading": "taḍāmunun",
+      "meaning": "solidarity",
+      "example": "تَضَامُنٌ قَوِيٌّ يَظْهَرُ وَقْتَ الْأَزْمَةِ.",
+      "exampleMeaning": "Strong solidarity appears in a time of crisis."
+    },
+    {
+      "word": "تَسَامُحٌ",
+      "reading": "tasāmuḥun",
+      "meaning": "tolerance",
+      "example": "تَسَامُحٌ صَادِقٌ يَفْتَحُ بَابَ الْحِوَارِ.",
+      "exampleMeaning": "Sincere tolerance opens the door to dialogue."
+    },
+    {
+      "word": "هُوِيَّةٌ",
+      "reading": "huwiyyatun",
+      "meaning": "identity",
+      "example": "هُوِيَّةٌ ثَقَافِيَّةٌ تَجْمَعُ النَّاسَ.",
+      "exampleMeaning": "A cultural identity brings people together."
+    },
+    {
+      "word": "ذَاكِرَةٌ",
+      "reading": "dhākiratun",
+      "meaning": "memory",
+      "example": "ذَاكِرَةٌ جَمْعِيَّةٌ تَحْفَظُ التَّجَارِبَ.",
+      "exampleMeaning": "A collective memory preserves experiences."
+    },
+    {
+      "word": "وَعْيٌ",
+      "reading": "waʿyun",
+      "meaning": "awareness",
+      "example": "وَعْيٌ عَامٌّ يُسَاعِدُ عَلَى التَّغْيِيرِ.",
+      "exampleMeaning": "Public awareness helps with change."
+    },
+    {
+      "word": "تَقَدُّمٌ",
+      "reading": "taqaddumun",
+      "meaning": "progress",
+      "example": "تَقَدُّمٌ عِلْمِيٌّ يَخْدِمُ الْمُجْتَمَعَ.",
+      "exampleMeaning": "Scientific progress serves society."
+    },
+    {
+      "word": "إِصْلَاحٌ",
+      "reading": "ʾiṣlāḥun",
+      "meaning": "reform",
+      "example": "إِصْلَاحٌ هَادِئٌ يُحَسِّنُ الْمُؤَسَّسَاتِ.",
+      "exampleMeaning": "Calm reform improves institutions."
+    },
+    {
+      "word": "اِسْتِقْلَالٌ",
+      "reading": "istiqlālun",
+      "meaning": "independence",
+      "example": "اِسْتِقْلَالٌ حَقِيقِيٌّ يَحْتَاجُ إِلَى عَمَلٍ.",
+      "exampleMeaning": "True independence needs work."
+    },
+    {
+      "word": "حِوَارٌ",
+      "reading": "ḥiwārun",
+      "meaning": "dialogue",
+      "example": "حِوَارٌ مُحْتَرَمٌ يُقَرِّبُ الْآرَاءَ.",
+      "exampleMeaning": "Respectful dialogue brings opinions closer."
+    },
+    {
+      "word": "مَصِيرٌ",
+      "reading": "maṣīrun",
+      "meaning": "destiny / fate",
+      "example": "مَصِيرٌ مُشْتَرَكٌ يَرْبِطُ بَيْنَ الشُّعُوبِ.",
+      "exampleMeaning": "A shared destiny connects peoples."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "___ مَسْؤُولَةٌ أَفْضَلُ مِنْ فَوْضَى.",
+          "answer": "حُرِّيَّةٌ",
+          "hint": "freedom"
+        },
+        {
+          "sentence": "___ بِلَا رَحْمَةٍ قَاسِيَةٌ.",
+          "answer": "عَدَالَةٌ",
+          "hint": "justice"
+        },
+        {
+          "sentence": "___ صَادِقٌ يُقَوِّي الْقَلْبَ.",
+          "answer": "أَمَلٌ",
+          "hint": "hope"
+        },
+        {
+          "sentence": "___ إِنْسَانِيَّةٌ حَقٌّ لِكُلِّ شَخْصٍ.",
+          "answer": "كَرَامَةٌ",
+          "hint": "dignity"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "items": [
+        {
+          "question": "What does ‘حُرِّيَّةٌ’ mean?",
+          "options": [
+            "justice",
+            "freedom",
+            "hope",
+            "dignity"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What does ‘عَدَالَةٌ’ mean?",
+          "options": [
+            "hope",
+            "justice",
+            "dignity",
+            "equality"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What does ‘أَمَلٌ’ mean?",
+          "options": [
+            "dignity",
+            "hope",
+            "equality",
+            "responsibility"
+          ],
+          "answer": 1
+        }
+      ]
+    }
+  ]
+}

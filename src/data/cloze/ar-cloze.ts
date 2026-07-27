@@ -112,4 +112,22 @@ export const arClozeSentences: ClozeSentence[] = [
   { id: 'ar-c083', target: 'تُواجِهُ المِنْطَقةُ تَحَدِّياتٍ مُناخيّةً كَبِيرة', english: 'The region faces major climate challenges', blankedWord: 'تُواجِهُ', blankedReading: 'tuwājihu', frequencyRank: 300, difficulty: 'advanced' },
   { id: 'ar-c084', target: 'مِن واجِبِنا أن نَنْقُلَ التُّراثَ لِلأجْيال', english: 'It is our duty to pass on heritage to the generations', blankedWord: 'الأجْيال', blankedReading: 'al-ajyāl', frequencyRank: 300, difficulty: 'advanced' },
   { id: 'ar-c085', target: 'كُلَّما زادَ العِلْمُ، اتَّسَعَت المَسْؤُوليّة', english: 'The more knowledge grows, the greater the responsibility', blankedWord: 'اتَّسَعَت', blankedReading: 'ittasaʿat', frequencyRank: 300, difficulty: 'advanced' },
+
+  // ── Beginner (batch 5) ──
+  { id: 'ar-c086', target: 'كَتَبْتُ اسْمي بِالهَمْزة', english: 'I wrote my name with a hamza', blankedWord: 'الهَمْزة', blankedReading: 'al-hamza', frequencyRank: 300, difficulty: 'beginner' },
+  { id: 'ar-c087', target: 'المَدْرَسةُ قَرِيبةٌ مِن البَيْت', english: 'The school is near the house', blankedWord: 'المَدْرَسةُ', blankedReading: 'al-madrasa', frequencyRank: 95, difficulty: 'beginner' },
+  { id: 'ar-c088', target: 'أُحِبُّ القَهْوةَ بِدُونِ سُكَّر', english: 'I like coffee without sugar', blankedWord: 'بِدُونِ', blankedReading: 'bidūni', frequencyRank: 51, difficulty: 'beginner' },
+  { id: 'ar-c089', target: 'الشَّمْسُ تُشْرِقُ مِن الشَّرْق', english: 'The sun rises from the east', blankedWord: 'تُشْرِقُ', blankedReading: 'tushriqu', frequencyRank: 227, difficulty: 'beginner' },
+
+  // ── Intermediate (batch 5) ──
+  { id: 'ar-c090', target: 'تُكْتَبُ الهَمْزةُ على الياء أحْيانًا', english: 'The hamza is sometimes written on a yāʾ', blankedWord: 'تُكْتَبُ', blankedReading: 'tuktabu', frequencyRank: 167, difficulty: 'intermediate' },
+  { id: 'ar-c091', target: 'يُسَمّى هذا الحَرْفُ "حَرْفًا شَمْسيًّا"', english: 'This letter is called a "sun letter"', blankedWord: 'شَمْسيًّا', blankedReading: 'shamsiyyan', frequencyRank: 300, difficulty: 'intermediate' },
+  { id: 'ar-c092', target: 'يَخْتَلِفُ النُّطْقُ مِن لَهْجةٍ إلى أُخْرى', english: 'Pronunciation differs from one dialect to another', blankedWord: 'لَهْجةٍ', blankedReading: 'lahja', frequencyRank: 300, difficulty: 'intermediate' },
+  { id: 'ar-c093', target: 'مِن المُهِمِّ احْتِرامُ آدابِ الحِوار', english: 'It is important to respect the etiquette of dialogue', blankedWord: 'آدابِ', blankedReading: 'ādāb', frequencyRank: 300, difficulty: 'intermediate' },
+
+  // ── Advanced (batch 5) ──
+  { id: 'ar-c094', target: 'تَحْتَوي العَرَبِيّةُ على كَلِماتٍ كَثِيرةٍ مُعَرَّبة', english: 'Arabic contains many Arabized (loan) words', blankedWord: 'مُعَرَّبة', blankedReading: 'muʿarraba', frequencyRank: 300, difficulty: 'advanced' },
+  { id: 'ar-c095', target: 'يُفَضِّلُ البَعْضُ اسْتِخْدامَ اللُّغةِ الرَّسْميّة', english: 'Some prefer using the formal language', blankedWord: 'الرَّسْميّة', blankedReading: 'ar-rasmiyya', frequencyRank: 300, difficulty: 'advanced' },
+  { id: 'ar-c096', target: 'لا تَقِلُّ اللَّهَجاتُ أَهَمّيّةً عَن الفُصْحى', english: 'Dialects are no less important than the standard', blankedWord: 'أَهَمّيّةً', blankedReading: 'ahammiyyatan', frequencyRank: 293, difficulty: 'advanced' },
+  { id: 'ar-c097', target: 'يَنْصَحُ الخُبَراءُ بِالقِراءةِ اليَوْميّة', english: 'Experts advise daily reading', blankedWord: 'يَنْصَحُ', blankedReading: 'yanṣaḥu', frequencyRank: 300, difficulty: 'advanced' },
 ];

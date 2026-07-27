@@ -335,6 +335,37 @@ const RESOURCES: Record<string, ResourceCategory[]> = {
       ],
     },
     {
+      label: 'News, Media & Audio',
+      emoji: '📻',
+      resources: [
+        {
+          name: 'Al Jazeera',
+          url: 'https://www.aljazeera.net/',
+          description: 'Major Arabic news site — clear MSA headlines, articles and video for reading & listening.',
+        },
+        {
+          name: 'BBC Arabic',
+          url: 'https://www.bbc.com/arabic',
+          description: 'World news in accessible Modern Standard Arabic, with audio and video.',
+        },
+        {
+          name: 'Al-Bab — Arab newspapers',
+          url: 'http://www.al-bab.com/arab/newspapers.htm',
+          description: 'A directory of Arabic newspapers across the region for authentic reading.',
+        },
+        {
+          name: 'SBS Arabic',
+          url: 'https://www.sbs.com.au/language/arabic',
+          description: 'News and podcasts in Arabic, produced for a diaspora audience.',
+        },
+        {
+          name: 'Arabic Music Radio',
+          url: 'https://tunein.com/radio/Arabic-g135/',
+          description: 'A collection of live Arabic radio stations — great passive listening.',
+        },
+      ],
+    },
+    {
       label: 'Dialects (Colloquial)',
       emoji: '🗣️',
       resources: [

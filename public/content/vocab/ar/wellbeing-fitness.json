@@ -1,0 +1,183 @@
+{
+  "id": "wellbeing-fitness",
+  "words": [
+    {
+      "word": "رَفَاهِيَةٌ",
+      "reading": "rafāhiyatun",
+      "meaning": "well-being",
+      "example": "رَفَاهِيَةٌ حَقِيقِيَّةٌ تَبْدَأُ بِصِحَّةٍ جَيِّدَةٍ.",
+      "exampleMeaning": "True well-being begins with good health."
+    },
+    {
+      "word": "لِيَاقَةٌ",
+      "reading": "liyāqatun",
+      "meaning": "fitness",
+      "example": "لِيَاقَةٌ عَالِيَةٌ تَحْتَاجُ إِلَى تَدْرِيبٍ مُنْتَظِمٍ.",
+      "exampleMeaning": "High fitness needs regular training."
+    },
+    {
+      "word": "تَمْرِينٌ",
+      "reading": "tamrīnun",
+      "meaning": "exercise",
+      "example": "تَمْرِينٌ قَصِيرٌ يُنَشِّطُ الْجِسْمَ.",
+      "exampleMeaning": "A short exercise energizes the body."
+    },
+    {
+      "word": "تَمَدُّدٌ",
+      "reading": "tamaddudun",
+      "meaning": "stretching",
+      "example": "تَمَدُّدٌ هَادِئٌ يُرِيحُ الْعَضَلَاتِ.",
+      "exampleMeaning": "Gentle stretching relaxes the muscles."
+    },
+    {
+      "word": "تَأَمُّلٌ",
+      "reading": "taʾammulun",
+      "meaning": "meditation",
+      "example": "تَأَمُّلٌ يَوْمِيٌّ يُهَدِّئُ الذِّهْنَ.",
+      "exampleMeaning": "Daily meditation calms the mind."
+    },
+    {
+      "word": "تَنَفُّسٌ",
+      "reading": "tanaffusun",
+      "meaning": "breathing",
+      "example": "تَنَفُّسٌ عَمِيقٌ يُقَلِّلُ التَّوَتُّرَ.",
+      "exampleMeaning": "Deep breathing reduces tension."
+    },
+    {
+      "word": "نَوْمٌ",
+      "reading": "nawmun",
+      "meaning": "sleep",
+      "example": "نَوْمٌ كَافٍ يَدْعَمُ الذَّاكِرَةَ.",
+      "exampleMeaning": "Enough sleep supports memory."
+    },
+    {
+      "word": "تَغْذِيَةٌ",
+      "reading": "taghdhiyatun",
+      "meaning": "nutrition",
+      "example": "تَغْذِيَةٌ مُتَوَازِنَةٌ تُقَوِّي الْمَنَاعَةَ.",
+      "exampleMeaning": "Balanced nutrition strengthens immunity."
+    },
+    {
+      "word": "تَوَازُنٌ",
+      "reading": "tawāzunun",
+      "meaning": "balance",
+      "example": "تَوَازُنٌ جَيِّدٌ يَمْنَعُ الْإِصَابَاتِ.",
+      "exampleMeaning": "Good balance prevents injuries."
+    },
+    {
+      "word": "طَاقَةٌ",
+      "reading": "ṭāqatun",
+      "meaning": "energy",
+      "example": "طَاقَةٌ إِيجَابِيَّةٌ تَرْفَعُ الْمَعْنَوِيَّاتِ.",
+      "exampleMeaning": "Positive energy raises morale."
+    },
+    {
+      "word": "رَاحَةٌ",
+      "reading": "rāḥatun",
+      "meaning": "rest",
+      "example": "رَاحَةٌ قَصِيرَةٌ بَيْنَ الْأَعْمَالِ مُفِيدَةٌ.",
+      "exampleMeaning": "A short rest between tasks is useful."
+    },
+    {
+      "word": "إِجْهَادٌ",
+      "reading": "ʾijhādun",
+      "meaning": "stress / strain",
+      "example": "إِجْهَادٌ مُسْتَمِرٌّ يُؤَثِّرُ فِي النَّوْمِ.",
+      "exampleMeaning": "Constant stress affects sleep."
+    },
+    {
+      "word": "اِسْتِرْخَاءٌ",
+      "reading": "istirkhāʾun",
+      "meaning": "relaxation",
+      "example": "اِسْتِرْخَاءٌ عَمِيقٌ يَأْتِي بَعْدَ التَّمْرِينِ.",
+      "exampleMeaning": "Deep relaxation comes after exercise."
+    },
+    {
+      "word": "عَادَةٌ",
+      "reading": "ʿādatun",
+      "meaning": "habit",
+      "example": "عَادَةٌ صِحِّيَّةٌ صَغِيرَةٌ تُغَيِّرُ الْيَوْمَ.",
+      "exampleMeaning": "A small healthy habit changes the day."
+    },
+    {
+      "word": "خُطَّةٌ صِحِّيَّةٌ",
+      "reading": "khuṭṭatun ṣiḥḥiyyatun",
+      "meaning": "health plan",
+      "example": "خُطَّةٌ صِحِّيَّةٌ تُنَظِّمُ الطَّعَامَ وَالنَّوْمَ.",
+      "exampleMeaning": "A health plan organizes food and sleep."
+    },
+    {
+      "word": "مَشْيٌ",
+      "reading": "mashyun",
+      "meaning": "walking",
+      "example": "مَشْيٌ يَوْمِيٌّ يُنَشِّطُ الْقَلْبَ.",
+      "exampleMeaning": "Daily walking energizes the heart."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "___ حَقِيقِيَّةٌ تَبْدَأُ بِصِحَّةٍ جَيِّدَةٍ.",
+          "answer": "رَفَاهِيَةٌ",
+          "hint": "well-being"
+        },
+        {
+          "sentence": "___ عَالِيَةٌ تَحْتَاجُ إِلَى تَدْرِيبٍ مُنْتَظِمٍ.",
+          "answer": "لِيَاقَةٌ",
+          "hint": "fitness"
+        },
+        {
+          "sentence": "___ قَصِيرٌ يُنَشِّطُ الْجِسْمَ.",
+          "answer": "تَمْرِينٌ",
+          "hint": "exercise"
+        },
+        {
+          "sentence": "___ هَادِئٌ يُرِيحُ الْعَضَلَاتِ.",
+          "answer": "تَمَدُّدٌ",
+          "hint": "stretching"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "items": [
+        {
+          "question": "What does ‘رَفَاهِيَةٌ’ mean?",
+          "options": [
+            "fitness",
+            "well-being",
+            "exercise",
+            "stretching"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What does ‘لِيَاقَةٌ’ mean?",
+          "options": [
+            "exercise",
+            "fitness",
+            "stretching",
+            "meditation"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What does ‘تَمْرِينٌ’ mean?",
+          "options": [
+            "stretching",
+            "exercise",
+            "meditation",
+            "breathing"
+          ],
+          "answer": 1
+        }
+      ]
+    }
+  ]
+}

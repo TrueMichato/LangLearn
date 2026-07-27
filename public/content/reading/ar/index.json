@@ -446,6 +446,110 @@
       ],
       "description": "A reflective text on climate, water scarcity, traditional knowledge, and sustainable choices.",
       "wordCount": 170
+    },
+    {
+      "id": "graded-the-cat",
+      "title": "القِطّةُ الصَّغِيرة",
+      "titleEn": "The Little Cat",
+      "difficulty": "easy",
+      "tags": [
+        "daily-life",
+        "graded-reader"
+      ],
+      "description": "A very simple graded reader about a small cat and its daily routine.",
+      "wordCount": 66
+    },
+    {
+      "id": "graded-the-garden",
+      "title": "في الحَدِيقة",
+      "titleEn": "In the Garden",
+      "difficulty": "easy",
+      "tags": [
+        "daily-life",
+        "graded-reader"
+      ],
+      "description": "A controlled beginner text about a quiet visit to the garden.",
+      "wordCount": 71
+    },
+    {
+      "id": "dialogue-at-the-pharmacy",
+      "title": "في الصَّيْدَليّة: حِوار",
+      "titleEn": "At the Pharmacy",
+      "difficulty": "easy",
+      "tags": [
+        "daily-life",
+        "conversation",
+        "dialogue",
+        "health"
+      ],
+      "description": "A practical beginner dialogue for asking about headache medicine at a pharmacy.",
+      "wordCount": 72
+    },
+    {
+      "id": "dialogue-planning-a-trip",
+      "title": "نُخَطِّطُ لِرِحْلة",
+      "titleEn": "Planning a Trip",
+      "difficulty": "medium",
+      "tags": [
+        "conversation",
+        "dialogue",
+        "travel",
+        "daily-life"
+      ],
+      "description": "Two friends choose a destination, transport, and supplies for a short trip.",
+      "wordCount": 129
+    },
+    {
+      "id": "the-arab-league",
+      "title": "جامِعةُ الدُّوَلِ العَرَبِيّة",
+      "titleEn": "The Arab League",
+      "difficulty": "medium",
+      "tags": [
+        "culture",
+        "history",
+        "society"
+      ],
+      "description": "An informational overview of the Arab League, its purpose, and its challenges.",
+      "wordCount": 120
+    },
+    {
+      "id": "a-traditional-recipe",
+      "title": "وَصْفةُ المَقْلُوبة",
+      "titleEn": "A Traditional Recipe",
+      "difficulty": "medium",
+      "tags": [
+        "food",
+        "culture",
+        "daily-life"
+      ],
+      "description": "A step-by-step cultural recipe for preparing and serving maqluba.",
+      "wordCount": 128
+    },
+    {
+      "id": "proverbs-and-wisdom",
+      "title": "أَمْثالٌ وحِكَم",
+      "titleEn": "Proverbs & Wisdom",
+      "difficulty": "hard",
+      "tags": [
+        "culture",
+        "proverb",
+        "education"
+      ],
+      "description": "A short essay explaining five familiar Arabic proverbs and the values behind them.",
+      "wordCount": 175
+    },
+    {
+      "id": "reading-and-society",
+      "title": "القِراءةُ والمُجْتَمَع",
+      "titleEn": "Reading & Society",
+      "difficulty": "hard",
+      "tags": [
+        "education",
+        "society",
+        "culture"
+      ],
+      "description": "An opinion essay about reading as a social habit that strengthens dialogue and imagination.",
+      "wordCount": 171
     }
   ]
 }
