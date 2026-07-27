@@ -412,4 +412,120 @@ export const arPassages: ListeningPassage[] = [
       { question: 'What do experts recommend?', options: ['Learning only MSA', 'Learning MSA for reading/writing and one dialect for daily life', 'Avoiding dialects', 'Learning all dialects at once'], correctIndex: 1 },
     ],
   },
+
+  // ── Easy (batch 6) ──
+  {
+    id: 'ar-easy-17',
+    title: 'At the Market',
+    text: 'ذَهَبْتُ إلى السُّوقِ صَباحًا لِأشْتَرِيَ الفَواكِه. اِشْتَرَيْتُ تُفّاحًا وبُرْتُقالًا ومَوْزًا. البائِعُ كانَ لَطِيفًا وأعْطانِي سِعْرًا جَيِّدًا. دَفَعْتُ عَشَرَةَ دَنانِيرَ وعُدْتُ إلى البَيْتِ سَعِيدًا.',
+    difficulty: 'easy',
+    questions: [
+      { question: 'When did the speaker go to the market?', options: ['In the evening', 'In the morning', 'At night', 'At noon'], correctIndex: 1 },
+      { question: 'How much did the speaker pay?', options: ['Five dinars', 'Ten dinars', 'Twenty dinars', 'Two dinars'], correctIndex: 1 },
+    ],
+  },
+  {
+    id: 'ar-easy-18',
+    title: 'Morning Routine',
+    text: 'أسْتَيْقِظُ كُلَّ يَوْمٍ في السّاعةِ السّادِسة. أغْسِلُ وَجْهِي وأتَناوَلُ الفَطُور. ثُمَّ أشْرَبُ فِنْجانَ قَهْوةٍ وأذْهَبُ إلى العَمَل. أُحِبُّ الصَّباحَ لِأنَّهُ هادِئٌ ومُنْعِش.',
+    difficulty: 'easy',
+    questions: [
+      { question: 'What time does the speaker wake up?', options: ['Five', 'Six', 'Seven', 'Eight'], correctIndex: 1 },
+      { question: 'Why does the speaker like the morning?', options: ['It is noisy', 'It is quiet and refreshing', 'It is warm', 'It is short'], correctIndex: 1 },
+    ],
+  },
+  {
+    id: 'ar-easy-19',
+    title: 'A Phone Call',
+    text: 'مَرْحَبًا يا سامِي! هل أنتَ مَشْغُولٌ غَدًا؟ أُرِيدُ أن نَلْتَقِيَ في المَقْهى في السّاعةِ الخامِسة. سَنَشْرَبُ الشّايَ ونَتَحَدَّثُ قَلِيلًا. أراكَ غَدًا، مَعَ السَّلامة.',
+    difficulty: 'easy',
+    questions: [
+      { question: 'Where do they want to meet?', options: ['At the café', 'At the park', 'At home', 'At the office'], correctIndex: 0 },
+      { question: 'At what time?', options: ['Four', 'Five', 'Six', 'Seven'], correctIndex: 1 },
+    ],
+  },
+  {
+    id: 'ar-easy-20',
+    title: 'The Library',
+    text: 'المَكْتَبةُ قَرِيبةٌ مِن بَيْتِي. أذْهَبُ إلَيْها كُلَّ أُسْبُوعٍ لِأسْتَعِيرَ الكُتُب. الجَوُّ هُناكَ هادِئٌ ومُناسِبٌ لِلقِراءة. أُفَضِّلُ كُتُبَ التّارِيخِ والعُلُوم.',
+    difficulty: 'easy',
+    questions: [
+      { question: 'How often does the speaker go to the library?', options: ['Every day', 'Every week', 'Every month', 'Rarely'], correctIndex: 1 },
+      { question: 'What kinds of books does the speaker prefer?', options: ['Novels and poetry', 'History and science', 'Cooking', "Children's books"], correctIndex: 1 },
+    ],
+  },
+
+  // ── Medium (batch 6) ──
+  {
+    id: 'ar-med-14',
+    title: 'A Trip to the Museum',
+    text: 'في نِهايةِ الأُسْبُوعِ زُرْتُ المَتْحَفَ الوَطَنِيَّ مَعَ أصْدِقائِي. شاهَدْنا قِطَعًا أثَريّةً قَدِيمةً ولَوْحاتٍ جَمِيلة. شَرَحَ لَنا الدَّلِيلُ تارِيخَ كُلِّ قِطْعةٍ بِالتَّفْصِيل. تَعَلَّمْتُ الكَثِيرَ عَن حَضاراتِ المِنْطَقة. كانَتْ رِحْلةً مُمْتِعةً ومُفِيدة.',
+    difficulty: 'medium',
+    questions: [
+      { question: 'When did they visit the museum?', options: ['On a weekday', 'On the weekend', 'At midnight', 'During a holiday abroad'], correctIndex: 1 },
+      { question: 'Who explained the history of each piece?', options: ['A teacher', 'A guide', 'A friend', 'A student'], correctIndex: 1 },
+    ],
+  },
+  {
+    id: 'ar-med-15',
+    title: 'Learning to Cook',
+    text: 'بَدَأْتُ أتَعَلَّمُ الطَّبْخَ مِن أُمِّي هذا العام. في البِدايةِ كُنْتُ أُخْطِئُ كَثِيرًا، لكِنِّي تَحَسَّنْتُ مَعَ الوَقْت. الآنَ أسْتَطِيعُ أن أُحَضِّرَ عِدّةَ أطْباقٍ لَذِيذة. أكْثَرُ ما أُحِبُّ طَبْخَهُ هو الأُرْزُ بِالخُضار. الطَّبْخُ هِوايةٌ جَمِيلةٌ تُرِيحُ النَّفْس.',
+    difficulty: 'medium',
+    questions: [
+      { question: 'From whom did the speaker learn to cook?', options: ['Father', 'Mother', 'A friend', 'A chef'], correctIndex: 1 },
+      { question: 'What does the speaker most like to cook?', options: ['Meat', 'Rice with vegetables', 'Soup', 'Bread'], correctIndex: 1 },
+    ],
+  },
+  {
+    id: 'ar-med-16',
+    title: 'The New Neighbor',
+    text: 'اِنْتَقَلَ جارٌ جَدِيدٌ إلى الشَّقّةِ المُجاوِرة الأُسْبُوعَ الماضي. هو طالِبٌ جامِعِيٌّ يَدْرُسُ الهَنْدَسة. رَحَّبْنا بِهِ ودَعَوْناهُ لِتَناوُلِ العَشاء. تَحَدَّثْنا عَن دِراسَتِهِ وعَن مَدِينَتِهِ. أصْبَحْنا أصْدِقاءَ بِسُرْعة.',
+    difficulty: 'medium',
+    questions: [
+      { question: 'What does the new neighbor study?', options: ['Medicine', 'Engineering', 'Law', 'Art'], correctIndex: 1 },
+      { question: 'What did they invite him for?', options: ['Coffee', 'Dinner', 'A trip', 'A game'], correctIndex: 1 },
+    ],
+  },
+  {
+    id: 'ar-med-17',
+    title: 'A Rainy Day Plan',
+    text: 'كانَ مِنَ المُفْتَرَضِ أن نَذْهَبَ إلى الشّاطِئِ اليَوْم، لكِنَّ المَطَرَ لَم يَتَوَقَّفْ مُنْذُ الصَّباح. لِذلك قَرَّرْنا أن نَبْقى في البَيْت. شاهَدْنا فِيلْمًا وأعْدَدْنا الفُشارَ ولَعِبْنا بَعْضَ الألْعاب. رَغْمَ تَغْيِيرِ الخُطّة، قَضَيْنا وَقْتًا مُمْتِعًا مَعًا.',
+    difficulty: 'medium',
+    questions: [
+      { question: 'Why did they change their plan?', options: ['It was too hot', 'It kept raining', 'They were tired', 'The beach was closed'], correctIndex: 1 },
+      { question: 'What did they do instead?', options: ['Went shopping', 'Stayed home and watched a film', 'Visited a friend', 'Went to a museum'], correctIndex: 1 },
+    ],
+  },
+
+  // ── Hard (batch 6) ──
+  {
+    id: 'ar-hard-10',
+    title: 'The Importance of Reading',
+    text: 'تُعَدُّ القِراءةُ مِن أهَمِّ العاداتِ الَّتِي يَنْبَغِي أن يَكْتَسِبَها الإنْسانُ مُنْذُ الصِّغَر. فَهي تُوَسِّعُ المَدارِكَ وتُغْنِي المُفْرَداتِ وتُنَمِّي الخَيال. كما أنَّها تُساعِدُ على فَهْمِ الثَّقافاتِ المُخْتَلِفة والتَّفْكِيرِ النَّقْدِيّ. ومَع اِنْتِشارِ الشّاشاتِ، صارَ تَخْصِيصُ وَقْتٍ يَوْمِيٍّ لِلقِراءةِ أكْثَرَ أهَمّيّةً مِن أيِّ وَقْتٍ مَضى. لِذلك يَنْصَحُ التَّرْبَوِيُّونَ بِتَشْجِيعِ الأطْفالِ على القِراءةِ الحُرّةِ بَدَلًا مِن إجْبارِهِم.',
+    difficulty: 'hard',
+    questions: [
+      { question: 'According to the text, what does reading develop?', options: ['Only memory', 'Perception, vocabulary and imagination', 'Only reading speed', 'Physical strength'], correctIndex: 1 },
+      { question: 'What do educators recommend?', options: ['Forcing children to read', 'Encouraging free reading instead of forcing', 'Banning all screens', 'Reading only textbooks'], correctIndex: 1 },
+    ],
+  },
+  {
+    id: 'ar-hard-11',
+    title: 'Saving Water',
+    text: 'المِياهُ العَذْبةُ مَوْرِدٌ ثَمِينٌ ومَحْدُودٌ، ومَعَ ازْدِيادِ عَدَدِ السُّكّانِ وتَغَيُّرِ المُناخِ، أصْبَحَ الحِفاظُ عَلَيْها ضَرُورةً مُلِحّة. يُمْكِنُ لِكُلِّ فَرْدٍ أن يُساهِمَ بِخُطُواتٍ بَسِيطة، مِثْلَ إغْلاقِ الصُّنْبُورِ أثْناءَ تَنْظِيفِ الأسْنان، وإصْلاحِ التَّسَرُّبات، وإعادةِ اسْتِخْدامِ مِياهِ الغَسِيلِ لِلرَّيّ. إنَّ المَسْؤُوليّةَ مُشْتَرَكةٌ بَيْنَ الأفْرادِ والحُكُومات، فَالماءُ أساسُ الحَياةِ كُلِّها.',
+    difficulty: 'hard',
+    questions: [
+      { question: 'Why has conserving water become urgent?', options: ['Prices rose', 'Population growth and climate change', 'It tastes bad', 'Wells dried up completely'], correctIndex: 1 },
+      { question: 'Which is a suggested simple step?', options: ['Drinking less water', 'Closing the tap while brushing teeth', 'Buying bottled water', 'Moving to a city'], correctIndex: 1 },
+    ],
+  },
+  {
+    id: 'ar-hard-12',
+    title: 'The Story of Coffee',
+    text: 'يُقالُ إنَّ القَهْوةَ اكْتُشِفَتْ في مِنْطَقةِ الحَبَشةِ قَبْلَ قُرُونٍ عَدِيدة، ثُمَّ اِنْتَقَلَتْ زِراعَتُها وشُرْبُها إلى اليَمَنِ حَيْثُ ازْدَهَرَتْ. ومِن مِيناءِ المُخا اليَمَنِيِّ انْتَشَرَتْ إلى بَقِيّةِ العالَم. صارَتِ المَقاهِي أماكِنَ لِلِّقاءِ وتَبادُلِ الأفْكار، حَتّى سُمِّيَتْ أحْيانًا مَدارِسَ الحُكَماء. واليَوْمَ تُعَدُّ القَهْوةُ مِن أكْثَرِ المَشْرُوباتِ شَعْبيّةً حَوْلَ العالَم.',
+    difficulty: 'hard',
+    questions: [
+      { question: 'Where is coffee said to have been discovered?', options: ['Yemen', 'The Abyssinia region', 'Brazil', 'Turkey'], correctIndex: 1 },
+      { question: 'From which port did coffee spread to the world?', options: ['Aden', 'Mokha (al-Mukhā)', 'Jeddah', 'Basra'], correctIndex: 1 },
+    ],
+  },
 ];
