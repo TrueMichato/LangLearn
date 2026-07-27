@@ -1,0 +1,178 @@
+{
+  "id": "social-media",
+  "words": [
+    {
+      "word": "cont",
+      "reading": "kont",
+      "meaning": "account",
+      "example": "Am creat un cont nou pentru aplicație.",
+      "exampleMeaning": "I created a new account for the app."
+    },
+    {
+      "word": "profil",
+      "reading": "pro-feel",
+      "meaning": "profile",
+      "example": "Profilul meu are o fotografie clară.",
+      "exampleMeaning": "My profile has a clear photo."
+    },
+    {
+      "word": "parolă",
+      "reading": "pah-ro-luh",
+      "meaning": "password",
+      "example": "Alege o parolă puternică.",
+      "exampleMeaning": "Choose a strong password."
+    },
+    {
+      "word": "utilizator",
+      "reading": "oo-tee-lee-zah-tor",
+      "meaning": "user",
+      "example": "Fiecare utilizator poate schimba setările.",
+      "exampleMeaning": "Each user can change the settings."
+    },
+    {
+      "word": "aplicație",
+      "reading": "ah-plee-kah-tsee-eh",
+      "meaning": "app / application",
+      "example": "Deschid aplicația pe telefon.",
+      "exampleMeaning": "I open the app on the phone."
+    },
+    {
+      "word": "postare",
+      "reading": "pos-tah-reh",
+      "meaning": "post",
+      "example": "Scriu o postare scurtă despre călătorie.",
+      "exampleMeaning": "I write a short post about travel."
+    },
+    {
+      "word": "comentariu",
+      "reading": "ko-men-tah-ree-oo",
+      "meaning": "comment",
+      "example": "Las un comentariu politicos la fotografie.",
+      "exampleMeaning": "I leave a polite comment on the photo."
+    },
+    {
+      "word": "apreciere",
+      "reading": "ah-preh-chee-eh-reh",
+      "meaning": "like / appreciation",
+      "example": "O apreciere arată că îți place postarea.",
+      "exampleMeaning": "A like shows that you enjoy the post."
+    },
+    {
+      "word": "distribuire",
+      "reading": "dees-tree-boo-ee-reh",
+      "meaning": "share",
+      "example": "Dau distribuire unui anunț important.",
+      "exampleMeaning": "I share an important announcement."
+    },
+    {
+      "word": "urmăritor",
+      "reading": "oor-muh-ree-tor",
+      "meaning": "follower",
+      "example": "Un urmăritor nou mi-a citit profilul.",
+      "exampleMeaning": "A new follower read my profile."
+    },
+    {
+      "word": "notificare",
+      "reading": "no-tee-fee-kah-reh",
+      "meaning": "notification",
+      "example": "Am primit o notificare de la aplicație.",
+      "exampleMeaning": "I received a notification from the app."
+    },
+    {
+      "word": "fotografie",
+      "reading": "fo-to-grah-fee-eh",
+      "meaning": "photograph / photo",
+      "example": "Încarc o fotografie cu pisica mea.",
+      "exampleMeaning": "I upload a photo of my cat."
+    },
+    {
+      "word": "videoclip",
+      "reading": "vee-deh-oh-kleep",
+      "meaning": "video clip",
+      "example": "Trimitem un videoclip scurt prietenilor.",
+      "exampleMeaning": "We send a short video clip to friends."
+    },
+    {
+      "word": "link",
+      "reading": "link",
+      "meaning": "link",
+      "example": "Deschid linkul primit de la coleg.",
+      "exampleMeaning": "I open the link received from a colleague."
+    },
+    {
+      "word": "hashtag",
+      "reading": "hash-tag",
+      "meaning": "hashtag",
+      "example": "Hashtagul ajută oamenii să găsească postarea.",
+      "exampleMeaning": "The hashtag helps people find the post."
+    },
+    {
+      "word": "a posta",
+      "reading": "ah pos-tah",
+      "meaning": "to post",
+      "example": "A posta zilnic cere timp.",
+      "exampleMeaning": "Posting daily takes time."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "Am uitat ___ pentru contul meu.",
+          "answer": "parola",
+          "hint": "password"
+        },
+        {
+          "sentence": "Las un ___ politicos la postare.",
+          "answer": "comentariu",
+          "hint": "comment"
+        },
+        {
+          "sentence": "Am primit o ___ pe telefon.",
+          "answer": "notificare",
+          "hint": "notification"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "items": [
+        {
+          "question": "What does 'profil' mean?",
+          "options": [
+            "profile",
+            "password",
+            "video clip",
+            "account"
+          ],
+          "answer": 0
+        },
+        {
+          "question": "How do you say 'follower' in Romanian?",
+          "options": [
+            "postare",
+            "hashtag",
+            "urmăritor",
+            "link"
+          ],
+          "answer": 2
+        },
+        {
+          "question": "What does 'a posta' mean?",
+          "options": [
+            "to follow",
+            "to comment",
+            "to share",
+            "to post"
+          ],
+          "answer": 3
+        }
+      ]
+    }
+  ]
+}

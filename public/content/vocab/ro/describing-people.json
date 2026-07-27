@@ -1,0 +1,178 @@
+{
+  "id": "describing-people",
+  "words": [
+    {
+      "word": "înalt",
+      "reading": "uhn-alt",
+      "meaning": "tall",
+      "example": "Fratele meu este înalt și joacă baschet.",
+      "exampleMeaning": "My brother is tall and plays basketball."
+    },
+    {
+      "word": "scund",
+      "reading": "skoond",
+      "meaning": "short",
+      "example": "Băiatul scund stă în față.",
+      "exampleMeaning": "The short boy stands in front."
+    },
+    {
+      "word": "slab",
+      "reading": "slahb",
+      "meaning": "thin / slim",
+      "example": "El este slab, dar sănătos.",
+      "exampleMeaning": "He is thin, but healthy."
+    },
+    {
+      "word": "gras",
+      "reading": "grahs",
+      "meaning": "fat / heavyset",
+      "example": "Bărbatul gras poartă o geacă albastră.",
+      "exampleMeaning": "The heavyset man wears a blue jacket."
+    },
+    {
+      "word": "blond",
+      "reading": "blond",
+      "meaning": "blond",
+      "example": "Copilul blond are o șapcă roșie.",
+      "exampleMeaning": "The blond child has a red cap."
+    },
+    {
+      "word": "brunet",
+      "reading": "broo-net",
+      "meaning": "brunette / dark-haired",
+      "example": "Prietenul meu brunet poartă ochelari.",
+      "exampleMeaning": "My dark-haired friend wears glasses."
+    },
+    {
+      "word": "tânăr",
+      "reading": "tuh-nuhr",
+      "meaning": "young",
+      "example": "Un student tânăr citește în parc.",
+      "exampleMeaning": "A young student reads in the park."
+    },
+    {
+      "word": "bătrân",
+      "reading": "buh-truhn",
+      "meaning": "old / elderly",
+      "example": "Vecinul bătrân merge încet.",
+      "exampleMeaning": "The elderly neighbor walks slowly."
+    },
+    {
+      "word": "frumos",
+      "reading": "froo-mos",
+      "meaning": "beautiful / handsome",
+      "example": "Actorul este frumos în fotografia nouă.",
+      "exampleMeaning": "The actor is handsome in the new photo."
+    },
+    {
+      "word": "urât",
+      "reading": "oo-ruht",
+      "meaning": "ugly",
+      "example": "Personajul urât este totuși amuzant.",
+      "exampleMeaning": "The ugly character is still funny."
+    },
+    {
+      "word": "ochi albaștri",
+      "reading": "okee ahl-bash-tree",
+      "meaning": "blue eyes",
+      "example": "Fata are ochi albaștri.",
+      "exampleMeaning": "The girl has blue eyes."
+    },
+    {
+      "word": "păr lung",
+      "reading": "puhr loong",
+      "meaning": "long hair",
+      "example": "Ea are păr lung și drept.",
+      "exampleMeaning": "She has long, straight hair."
+    },
+    {
+      "word": "barbă",
+      "reading": "bar-buh",
+      "meaning": "beard",
+      "example": "Bunicul poartă barbă albă.",
+      "exampleMeaning": "Grandpa wears a white beard."
+    },
+    {
+      "word": "chel",
+      "reading": "kel",
+      "meaning": "bald",
+      "example": "Un bărbat chel zâmbește la cameră.",
+      "exampleMeaning": "A bald man smiles at the camera."
+    },
+    {
+      "word": "drăguț",
+      "reading": "druh-goots",
+      "meaning": "cute / nice-looking",
+      "example": "Copilul este drăguț când zâmbește.",
+      "exampleMeaning": "The child is cute when he smiles."
+    },
+    {
+      "word": "zâmbitor",
+      "reading": "zuhm-bee-tor",
+      "meaning": "smiling / cheerful-looking",
+      "example": "Vânzătorul zâmbitor ne salută.",
+      "exampleMeaning": "The smiling seller greets us."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "Fata are ___ și drept.",
+          "answer": "păr lung",
+          "hint": "long hair"
+        },
+        {
+          "sentence": "Bărbatul ___ poartă o pălărie.",
+          "answer": "chel",
+          "hint": "bald"
+        },
+        {
+          "sentence": "Vecinul ___ merge încet.",
+          "answer": "bătrân",
+          "hint": "elderly"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "items": [
+        {
+          "question": "What does 'înalt' mean?",
+          "options": [
+            "short",
+            "tall",
+            "young",
+            "bald"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "How do you say 'blue eyes' in Romanian?",
+          "options": [
+            "ochi albaștri",
+            "păr lung",
+            "barbă",
+            "brunet"
+          ],
+          "answer": 0
+        },
+        {
+          "question": "What does 'zâmbitor' mean?",
+          "options": [
+            "ugly",
+            "thin",
+            "blond",
+            "smiling / cheerful-looking"
+          ],
+          "answer": 3
+        }
+      ]
+    }
+  ]
+}
