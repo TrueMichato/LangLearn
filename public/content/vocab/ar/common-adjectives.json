@@ -1,0 +1,183 @@
+{
+  "id": "common-adjectives",
+  "words": [
+    {
+      "word": "كَبِيرٌ",
+      "reading": "kabīrun",
+      "meaning": "big / large",
+      "example": "الْبَيْتُ كَبِيرٌ وَجَمِيلٌ.",
+      "exampleMeaning": "The house is big and beautiful."
+    },
+    {
+      "word": "صَغِيرٌ",
+      "reading": "ṣaghīrun",
+      "meaning": "small",
+      "example": "الْقِطُّ صَغِيرٌ جِدًّا.",
+      "exampleMeaning": "The cat is very small."
+    },
+    {
+      "word": "جَيِّدٌ",
+      "reading": "jayyidun",
+      "meaning": "good",
+      "example": "هٰذَا كِتَابٌ جَيِّدٌ.",
+      "exampleMeaning": "This is a good book."
+    },
+    {
+      "word": "سَيِّئٌ",
+      "reading": "sayyiʾun",
+      "meaning": "bad",
+      "example": "الطَّعَامُ سَيِّئٌ الْيَوْمَ.",
+      "exampleMeaning": "The food is bad today."
+    },
+    {
+      "word": "جَمِيلٌ",
+      "reading": "jamīlun",
+      "meaning": "beautiful",
+      "example": "الْمَنْظَرُ جَمِيلٌ.",
+      "exampleMeaning": "The view is beautiful."
+    },
+    {
+      "word": "قَبِيحٌ",
+      "reading": "qabīḥun",
+      "meaning": "ugly",
+      "example": "هٰذَا الرَّسْمُ قَبِيحٌ.",
+      "exampleMeaning": "This drawing is ugly."
+    },
+    {
+      "word": "طَوِيلٌ",
+      "reading": "ṭawīlun",
+      "meaning": "long / tall",
+      "example": "الشَّارِعُ طَوِيلٌ.",
+      "exampleMeaning": "The street is long."
+    },
+    {
+      "word": "قَصِيرٌ",
+      "reading": "qaṣīrun",
+      "meaning": "short",
+      "example": "الدَّرْسُ قَصِيرٌ.",
+      "exampleMeaning": "The lesson is short."
+    },
+    {
+      "word": "سَرِيعٌ",
+      "reading": "sarīʿun",
+      "meaning": "fast",
+      "example": "الْقِطَارُ سَرِيعٌ.",
+      "exampleMeaning": "The train is fast."
+    },
+    {
+      "word": "بَطِيءٌ",
+      "reading": "baṭīʾun",
+      "meaning": "slow",
+      "example": "الْحَاسُوبُ بَطِيءٌ.",
+      "exampleMeaning": "The computer is slow."
+    },
+    {
+      "word": "سَهْلٌ",
+      "reading": "sahlun",
+      "meaning": "easy",
+      "example": "السُّؤَالُ سَهْلٌ.",
+      "exampleMeaning": "The question is easy."
+    },
+    {
+      "word": "صَعْبٌ",
+      "reading": "ṣaʿbun",
+      "meaning": "difficult",
+      "example": "الِامْتِحَانُ صَعْبٌ.",
+      "exampleMeaning": "The exam is difficult."
+    },
+    {
+      "word": "حَارٌّ",
+      "reading": "ḥārrun",
+      "meaning": "hot",
+      "example": "الشَّايُ حَارٌّ.",
+      "exampleMeaning": "The tea is hot."
+    },
+    {
+      "word": "بَارِدٌ",
+      "reading": "bāridun",
+      "meaning": "cold",
+      "example": "الْمَاءُ بَارِدٌ.",
+      "exampleMeaning": "The water is cold."
+    },
+    {
+      "word": "جَدِيدٌ",
+      "reading": "jadīdun",
+      "meaning": "new",
+      "example": "الْهَاتِفُ جَدِيدٌ.",
+      "exampleMeaning": "The phone is new."
+    },
+    {
+      "word": "قَدِيمٌ",
+      "reading": "qadīmun",
+      "meaning": "old",
+      "example": "السُّوقُ قَدِيمٌ.",
+      "exampleMeaning": "The market is old."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "الْبَيْتُ ___ وَجَمِيلٌ.",
+          "answer": "كَبِيرٌ",
+          "hint": "big / large"
+        },
+        {
+          "sentence": "الْقِطُّ ___ جِدًّا.",
+          "answer": "صَغِيرٌ",
+          "hint": "small"
+        },
+        {
+          "sentence": "هٰذَا كِتَابٌ ___.",
+          "answer": "جَيِّدٌ",
+          "hint": "good"
+        },
+        {
+          "sentence": "الطَّعَامُ ___ الْيَوْمَ.",
+          "answer": "سَيِّئٌ",
+          "hint": "bad"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "items": [
+        {
+          "question": "What does ‘كَبِيرٌ’ mean?",
+          "options": [
+            "small",
+            "big / large",
+            "good",
+            "bad"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What does ‘صَغِيرٌ’ mean?",
+          "options": [
+            "good",
+            "small",
+            "bad",
+            "beautiful"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What does ‘جَيِّدٌ’ mean?",
+          "options": [
+            "bad",
+            "good",
+            "beautiful",
+            "ugly"
+          ],
+          "answer": 1
+        }
+      ]
+    }
+  ]
+}

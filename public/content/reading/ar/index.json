@@ -1,0 +1,129 @@
+{
+  "texts": [
+    {
+      "id": "self-intro-ar",
+      "title": "تَعارُف",
+      "titleEn": "Self-Introduction",
+      "difficulty": "easy",
+      "tags": [
+        "daily-life",
+        "conversation",
+        "family"
+      ],
+      "description": "A young person introduces themself, their job, city, and family.",
+      "wordCount": 61
+    },
+    {
+      "id": "yawmi",
+      "title": "يَوْمِي",
+      "titleEn": "My Day",
+      "difficulty": "easy",
+      "tags": [
+        "daily-life"
+      ],
+      "description": "A simple present-tense description of an ordinary daily routine.",
+      "wordCount": 63
+    },
+    {
+      "id": "usrati",
+      "title": "عائِلَتِي",
+      "titleEn": "My Family",
+      "difficulty": "easy",
+      "tags": [
+        "family",
+        "daily-life"
+      ],
+      "description": "A learner-friendly description of family members and their personalities.",
+      "wordCount": 61
+    },
+    {
+      "id": "fi-l-matam",
+      "title": "فِي المَطْعَم",
+      "titleEn": "At the Restaurant",
+      "difficulty": "medium",
+      "tags": [
+        "food",
+        "conversation",
+        "daily-life"
+      ],
+      "description": "A narrated restaurant scene with a short ordering dialogue.",
+      "wordCount": 112
+    },
+    {
+      "id": "rihla-ila-dubai",
+      "title": "رِحْلة إِلى دُبَي",
+      "titleEn": "A Trip to Dubai",
+      "difficulty": "medium",
+      "tags": [
+        "travel",
+        "culture"
+      ],
+      "description": "A past-tense travel narrative about visiting Dubai for the first time.",
+      "wordCount": 113
+    },
+    {
+      "id": "madinati",
+      "title": "مَدِينَتِي",
+      "titleEn": "My City",
+      "difficulty": "medium",
+      "tags": [
+        "daily-life",
+        "travel",
+        "culture"
+      ],
+      "description": "A warm description of a city, its neighborhoods, landmarks, and daily rhythms.",
+      "wordCount": 113
+    },
+    {
+      "id": "al-qahwa-al-arabiyya",
+      "title": "القَهْوة العَرَبِيّة",
+      "titleEn": "Arabic Coffee & Hospitality",
+      "difficulty": "medium",
+      "tags": [
+        "culture",
+        "food",
+        "daily-life"
+      ],
+      "description": "A cultural piece about Arabic coffee and the customs of hospitality.",
+      "wordCount": 122
+    },
+    {
+      "id": "nawadir-juha",
+      "title": "نَوادِر جُحا",
+      "titleEn": "The Tales of Juha",
+      "difficulty": "hard",
+      "tags": [
+        "folktale",
+        "culture"
+      ],
+      "description": "A gentle humorous folk-style anecdote about Juha and his famously clever foolishness.",
+      "wordCount": 177
+    },
+    {
+      "id": "tarikh-al-khatt",
+      "title": "تارِيخ الخَطّ العَرَبِيّ",
+      "titleEn": "A History of Arabic Calligraphy",
+      "difficulty": "hard",
+      "tags": [
+        "history",
+        "culture",
+        "language"
+      ],
+      "description": "An introduction to the development and beauty of Arabic calligraphy.",
+      "wordCount": 172
+    },
+    {
+      "id": "al-lugha-al-arabiyya",
+      "title": "اللُّغة العَرَبِيّة",
+      "titleEn": "The Arabic Language",
+      "difficulty": "hard",
+      "tags": [
+        "language",
+        "culture",
+        "history"
+      ],
+      "description": "A higher-level overview of Arabic, its dialects, written form, and global reach.",
+      "wordCount": 172
+    }
+  ]
+}

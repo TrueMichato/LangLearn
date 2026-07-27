@@ -1,0 +1,183 @@
+{
+  "id": "people-pronouns",
+  "words": [
+    {
+      "word": "أَنَا",
+      "reading": "ʾanā",
+      "meaning": "I",
+      "example": "أَنَا طَالِبٌ جَدِيدٌ.",
+      "exampleMeaning": "I am a new student."
+    },
+    {
+      "word": "أَنْتَ",
+      "reading": "ʾanta",
+      "meaning": "you (masculine singular)",
+      "example": "أَنْتَ صَدِيقِي.",
+      "exampleMeaning": "You are my friend."
+    },
+    {
+      "word": "أَنْتِ",
+      "reading": "ʾanti",
+      "meaning": "you (feminine singular)",
+      "example": "أَنْتِ طَالِبَةٌ مُجْتَهِدَةٌ.",
+      "exampleMeaning": "You are a hardworking student."
+    },
+    {
+      "word": "هُوَ",
+      "reading": "huwa",
+      "meaning": "he",
+      "example": "هُوَ مُعَلِّمٌ لَطِيفٌ.",
+      "exampleMeaning": "He is a kind teacher."
+    },
+    {
+      "word": "هِيَ",
+      "reading": "hiya",
+      "meaning": "she",
+      "example": "هِيَ طَبِيبَةٌ مَاهِرَةٌ.",
+      "exampleMeaning": "She is a skilled doctor."
+    },
+    {
+      "word": "نَحْنُ",
+      "reading": "naḥnu",
+      "meaning": "we",
+      "example": "نَحْنُ فِي الْمَكْتَبَةِ.",
+      "exampleMeaning": "We are in the library."
+    },
+    {
+      "word": "أَنْتُمْ",
+      "reading": "ʾantum",
+      "meaning": "you (plural)",
+      "example": "أَنْتُمْ أَصْدِقَاءُ طَيِّبُونَ.",
+      "exampleMeaning": "You are good friends."
+    },
+    {
+      "word": "هُمْ",
+      "reading": "hum",
+      "meaning": "they (masculine/mixed)",
+      "example": "هُمْ فِي الصَّفِّ الآنَ.",
+      "exampleMeaning": "They are in class now."
+    },
+    {
+      "word": "شَخْصٌ",
+      "reading": "shakhṣun",
+      "meaning": "person",
+      "example": "فِي الْغُرْفَةِ شَخْصٌ وَاحِدٌ.",
+      "exampleMeaning": "There is one person in the room."
+    },
+    {
+      "word": "نَاسٌ",
+      "reading": "nāsun",
+      "meaning": "people",
+      "example": "فِي السُّوقِ نَاسٌ كَثِيرُونَ.",
+      "exampleMeaning": "There are many people in the market."
+    },
+    {
+      "word": "رَجُلٌ",
+      "reading": "rajulun",
+      "meaning": "man",
+      "example": "ذٰلِكَ رَجُلٌ طَوِيلٌ.",
+      "exampleMeaning": "That is a tall man."
+    },
+    {
+      "word": "اِمْرَأَةٌ",
+      "reading": "imraʾatun",
+      "meaning": "woman",
+      "example": "هٰذِهِ اِمْرَأَةٌ قَوِيَّةٌ.",
+      "exampleMeaning": "This is a strong woman."
+    },
+    {
+      "word": "وَلَدٌ",
+      "reading": "waladun",
+      "meaning": "boy",
+      "example": "الْوَلَدُ يَلْعَبُ فِي الْحَدِيقَةِ.",
+      "exampleMeaning": "The boy is playing in the garden."
+    },
+    {
+      "word": "بِنْتٌ",
+      "reading": "bintun",
+      "meaning": "girl",
+      "example": "الْبِنْتُ تَقْرَأُ كِتَابًا.",
+      "exampleMeaning": "The girl is reading a book."
+    },
+    {
+      "word": "صَدِيقٌ",
+      "reading": "ṣadīqun",
+      "meaning": "friend (male)",
+      "example": "صَدِيقٌ قَدِيمٌ زَارَنِي.",
+      "exampleMeaning": "An old friend visited me."
+    },
+    {
+      "word": "جَارٌ",
+      "reading": "jārun",
+      "meaning": "neighbor",
+      "example": "جَارٌ لَطِيفٌ يَسْكُنُ قُرْبَنَا.",
+      "exampleMeaning": "A kind neighbor lives near us."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "___ طَالِبٌ جَدِيدٌ.",
+          "answer": "أَنَا",
+          "hint": "I"
+        },
+        {
+          "sentence": "___ صَدِيقِي.",
+          "answer": "أَنْتَ",
+          "hint": "you"
+        },
+        {
+          "sentence": "___ طَالِبَةٌ مُجْتَهِدَةٌ.",
+          "answer": "أَنْتِ",
+          "hint": "you"
+        },
+        {
+          "sentence": "___ مُعَلِّمٌ لَطِيفٌ.",
+          "answer": "هُوَ",
+          "hint": "he"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "items": [
+        {
+          "question": "What does ‘أَنَا’ mean?",
+          "options": [
+            "you (masculine singular)",
+            "I",
+            "you (feminine singular)",
+            "he"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What does ‘أَنْتَ’ mean?",
+          "options": [
+            "you (feminine singular)",
+            "you (masculine singular)",
+            "he",
+            "she"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What does ‘أَنْتِ’ mean?",
+          "options": [
+            "he",
+            "you (feminine singular)",
+            "she",
+            "we"
+          ],
+          "answer": 1
+        }
+      ]
+    }
+  ]
+}

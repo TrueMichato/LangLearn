@@ -1,0 +1,183 @@
+{
+  "id": "food-drink",
+  "words": [
+    {
+      "word": "خُبْزٌ",
+      "reading": "khubzun",
+      "meaning": "bread",
+      "example": "خُبْزٌ طَازَجٌ عَلَى الطَّاوِلَةِ.",
+      "exampleMeaning": "Fresh bread is on the table."
+    },
+    {
+      "word": "مَاءٌ",
+      "reading": "māʾun",
+      "meaning": "water",
+      "example": "مَاءٌ بَارِدٌ فِي الْكُوبِ.",
+      "exampleMeaning": "Cold water is in the cup."
+    },
+    {
+      "word": "شَايٌ",
+      "reading": "shāyun",
+      "meaning": "tea",
+      "example": "شَايٌ سَاخِنٌ بَعْدَ الْغَدَاءِ.",
+      "exampleMeaning": "Hot tea after lunch."
+    },
+    {
+      "word": "قَهْوَةٌ",
+      "reading": "qahwatun",
+      "meaning": "coffee",
+      "example": "قَهْوَةٌ مُرَّةٌ فِي الصَّبَاحِ.",
+      "exampleMeaning": "Bitter coffee in the morning."
+    },
+    {
+      "word": "حَلِيبٌ",
+      "reading": "ḥalībun",
+      "meaning": "milk",
+      "example": "الطِّفْلُ يَشْرَبُ حَلِيبًا.",
+      "exampleMeaning": "The child drinks milk."
+    },
+    {
+      "word": "أَرُزٌّ",
+      "reading": "ʾaruzzun",
+      "meaning": "rice",
+      "example": "نَأْكُلُ أَرُزًّا مَعَ الدَّجَاجِ.",
+      "exampleMeaning": "We eat rice with chicken."
+    },
+    {
+      "word": "لَحْمٌ",
+      "reading": "laḥmun",
+      "meaning": "meat",
+      "example": "اللَّحْمُ عَلَى الصَّحْنِ.",
+      "exampleMeaning": "The meat is on the plate."
+    },
+    {
+      "word": "دَجَاجٌ",
+      "reading": "dajājun",
+      "meaning": "chicken",
+      "example": "الدَّجَاجُ لَذِيذٌ الْيَوْمَ.",
+      "exampleMeaning": "The chicken is delicious today."
+    },
+    {
+      "word": "سَمَكٌ",
+      "reading": "samakun",
+      "meaning": "fish",
+      "example": "السَّمَكُ طَازَجٌ فِي السُّوقِ.",
+      "exampleMeaning": "The fish is fresh in the market."
+    },
+    {
+      "word": "بَيْضٌ",
+      "reading": "bayḍun",
+      "meaning": "eggs",
+      "example": "الْبَيْضُ فِي الْمَطْبَخِ.",
+      "exampleMeaning": "The eggs are in the kitchen."
+    },
+    {
+      "word": "جُبْنٌ",
+      "reading": "jubnun",
+      "meaning": "cheese",
+      "example": "الْجُبْنُ مَعَ الْخُبْزِ.",
+      "exampleMeaning": "The cheese is with the bread."
+    },
+    {
+      "word": "سُكَّرٌ",
+      "reading": "sukkarun",
+      "meaning": "sugar",
+      "example": "أُضِيفُ سُكَّرًا إِلَى الشَّايِ.",
+      "exampleMeaning": "I add sugar to the tea."
+    },
+    {
+      "word": "مِلْحٌ",
+      "reading": "milḥun",
+      "meaning": "salt",
+      "example": "الْمِلْحُ قَلِيلٌ فِي الطَّعَامِ.",
+      "exampleMeaning": "There is little salt in the food."
+    },
+    {
+      "word": "عَسَلٌ",
+      "reading": "ʿasalun",
+      "meaning": "honey",
+      "example": "الْعَسَلُ حُلْوٌ جِدًّا.",
+      "exampleMeaning": "Honey is very sweet."
+    },
+    {
+      "word": "حَسَاءٌ",
+      "reading": "ḥasāʾun",
+      "meaning": "soup",
+      "example": "الْحَسَاءُ سَاخِنٌ.",
+      "exampleMeaning": "The soup is hot."
+    },
+    {
+      "word": "عَصِيرٌ",
+      "reading": "ʿaṣīrun",
+      "meaning": "juice",
+      "example": "عَصِيرٌ بُرْتُقَالِيٌّ لَذِيذٌ.",
+      "exampleMeaning": "Orange juice is delicious."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "___ طَازَجٌ عَلَى الطَّاوِلَةِ.",
+          "answer": "خُبْزٌ",
+          "hint": "bread"
+        },
+        {
+          "sentence": "___ بَارِدٌ فِي الْكُوبِ.",
+          "answer": "مَاءٌ",
+          "hint": "water"
+        },
+        {
+          "sentence": "___ سَاخِنٌ بَعْدَ الْغَدَاءِ.",
+          "answer": "شَايٌ",
+          "hint": "tea"
+        },
+        {
+          "sentence": "___ مُرَّةٌ فِي الصَّبَاحِ.",
+          "answer": "قَهْوَةٌ",
+          "hint": "coffee"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "items": [
+        {
+          "question": "What does ‘خُبْزٌ’ mean?",
+          "options": [
+            "water",
+            "bread",
+            "tea",
+            "coffee"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What does ‘مَاءٌ’ mean?",
+          "options": [
+            "tea",
+            "water",
+            "coffee",
+            "milk"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What does ‘شَايٌ’ mean?",
+          "options": [
+            "coffee",
+            "tea",
+            "milk",
+            "rice"
+          ],
+          "answer": 1
+        }
+      ]
+    }
+  ]
+}

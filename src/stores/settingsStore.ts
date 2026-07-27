@@ -33,6 +33,10 @@ interface SettingsState {
   adaptiveReview: boolean;
   scheduler: 'sm2' | 'fsrs';
   fsrsRequestRetention: number;
+  // Arabic dialect overlay — MSA is the shared core; a chosen dialect + optional
+  // colloquial focus surface dialect-tagged content on top of it.
+  arabicDialect: 'msa' | 'egyptian' | 'levantine' | 'gulf' | 'maghrebi';
+  arabicColloquialFocus: boolean;
   // New notification-system fields
   notificationPreset: NotificationPreset;
   dailyNotificationBudget: number;
@@ -71,6 +75,8 @@ interface SettingsState {
   toggleAdaptiveReview: () => void;
   setScheduler: (scheduler: 'sm2' | 'fsrs') => void;
   setFsrsRequestRetention: (retention: number) => void;
+  setArabicDialect: (dialect: 'msa' | 'egyptian' | 'levantine' | 'gulf' | 'maghrebi') => void;
+  setArabicColloquialFocus: (enabled: boolean) => void;
   setNotificationPreset: (preset: NotificationPreset) => void;
   setDailyNotificationBudget: (n: number) => void;
   setComebackNudges: (enabled: boolean) => void;
@@ -106,6 +112,8 @@ export const useSettingsStore = create<SettingsState>()(
       adaptiveReview: true,
       scheduler: 'sm2',
       fsrsRequestRetention: 0.9,
+      arabicDialect: 'msa',
+      arabicColloquialFocus: false,
       notificationPreset: 'balanced' as NotificationPreset,
       ...PRESETS.balanced,
       cloudRemindersEnabled: true,
@@ -168,6 +176,8 @@ export const useSettingsStore = create<SettingsState>()(
       toggleAdaptiveReview: () => set((s) => ({ adaptiveReview: !s.adaptiveReview })),
       setScheduler: (scheduler) => set({ scheduler }),
       setFsrsRequestRetention: (fsrsRequestRetention) => set({ fsrsRequestRetention }),
+      setArabicDialect: (arabicDialect) => set({ arabicDialect }),
+      setArabicColloquialFocus: (arabicColloquialFocus) => set({ arabicColloquialFocus }),
       setNotificationPreset: (preset) => {
         if (preset === 'custom') {
           set({ notificationPreset: 'custom' });

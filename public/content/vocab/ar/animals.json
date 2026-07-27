@@ -1,0 +1,183 @@
+{
+  "id": "animals",
+  "words": [
+    {
+      "word": "قِطٌّ",
+      "reading": "qiṭṭun",
+      "meaning": "cat",
+      "example": "قِطٌّ صَغِيرٌ يَنَامُ.",
+      "exampleMeaning": "A small cat is sleeping."
+    },
+    {
+      "word": "كَلْبٌ",
+      "reading": "kalbun",
+      "meaning": "dog",
+      "example": "كَلْبٌ وَفِيٌّ يَحْرُسُ الْبَيْتَ.",
+      "exampleMeaning": "A loyal dog guards the house."
+    },
+    {
+      "word": "طَائِرٌ",
+      "reading": "ṭāʾirun",
+      "meaning": "bird",
+      "example": "طَائِرٌ جَمِيلٌ فَوْقَ الشَّجَرَةِ.",
+      "exampleMeaning": "A beautiful bird is above the tree."
+    },
+    {
+      "word": "سَمَكَةٌ",
+      "reading": "samakah",
+      "meaning": "fish",
+      "example": "سَمَكَةٌ صَغِيرَةٌ فِي الْمَاءِ.",
+      "exampleMeaning": "A small fish is in the water."
+    },
+    {
+      "word": "حِصَانٌ",
+      "reading": "ḥiṣānun",
+      "meaning": "horse",
+      "example": "الْحِصَانُ سَرِيعٌ.",
+      "exampleMeaning": "The horse is fast."
+    },
+    {
+      "word": "بَقَرَةٌ",
+      "reading": "baqaratun",
+      "meaning": "cow",
+      "example": "الْبَقَرَةُ تُعْطِي حَلِيبًا.",
+      "exampleMeaning": "The cow gives milk."
+    },
+    {
+      "word": "خَرُوفٌ",
+      "reading": "kharūfun",
+      "meaning": "sheep",
+      "example": "الْخَرُوفُ أَبْيَضُ.",
+      "exampleMeaning": "The sheep is white."
+    },
+    {
+      "word": "دَجَاجَةٌ",
+      "reading": "dajājatun",
+      "meaning": "hen",
+      "example": "الدَّجَاجَةُ فِي الْحَدِيقَةِ.",
+      "exampleMeaning": "The hen is in the garden."
+    },
+    {
+      "word": "جَمَلٌ",
+      "reading": "jamalun",
+      "meaning": "camel",
+      "example": "الْجَمَلُ فِي الصَّحْرَاءِ.",
+      "exampleMeaning": "The camel is in the desert."
+    },
+    {
+      "word": "أَسَدٌ",
+      "reading": "ʾasadun",
+      "meaning": "lion",
+      "example": "الْأَسَدُ قَوِيٌّ.",
+      "exampleMeaning": "The lion is strong."
+    },
+    {
+      "word": "فِيلٌ",
+      "reading": "fīlun",
+      "meaning": "elephant",
+      "example": "الْفِيلُ كَبِيرٌ جِدًّا.",
+      "exampleMeaning": "The elephant is very large."
+    },
+    {
+      "word": "قِرْدٌ",
+      "reading": "qirdun",
+      "meaning": "monkey",
+      "example": "الْقِرْدُ فَوْقَ الشَّجَرَةِ.",
+      "exampleMeaning": "The monkey is above the tree."
+    },
+    {
+      "word": "أَرْنَبٌ",
+      "reading": "ʾarnabun",
+      "meaning": "rabbit",
+      "example": "الْأَرْنَبُ أَبْيَضُ وَسَرِيعٌ.",
+      "exampleMeaning": "The rabbit is white and fast."
+    },
+    {
+      "word": "ثَعْلَبٌ",
+      "reading": "thaʿlabun",
+      "meaning": "fox",
+      "example": "الثَّعْلَبُ ذَكِيٌّ.",
+      "exampleMeaning": "The fox is clever."
+    },
+    {
+      "word": "ذِئْبٌ",
+      "reading": "dhiʾbun",
+      "meaning": "wolf",
+      "example": "الذِّئْبُ فِي الْغَابَةِ.",
+      "exampleMeaning": "The wolf is in the forest."
+    },
+    {
+      "word": "نَحْلَةٌ",
+      "reading": "naḥlatun",
+      "meaning": "bee",
+      "example": "النَّحْلَةُ عَلَى الزَّهْرَةِ.",
+      "exampleMeaning": "The bee is on the flower."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "___ صَغِيرٌ يَنَامُ.",
+          "answer": "قِطٌّ",
+          "hint": "cat"
+        },
+        {
+          "sentence": "___ وَفِيٌّ يَحْرُسُ الْبَيْتَ.",
+          "answer": "كَلْبٌ",
+          "hint": "dog"
+        },
+        {
+          "sentence": "___ جَمِيلٌ فَوْقَ الشَّجَرَةِ.",
+          "answer": "طَائِرٌ",
+          "hint": "bird"
+        },
+        {
+          "sentence": "___ صَغِيرَةٌ فِي الْمَاءِ.",
+          "answer": "سَمَكَةٌ",
+          "hint": "fish"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "items": [
+        {
+          "question": "What does ‘قِطٌّ’ mean?",
+          "options": [
+            "dog",
+            "cat",
+            "bird",
+            "fish"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What does ‘كَلْبٌ’ mean?",
+          "options": [
+            "bird",
+            "dog",
+            "fish",
+            "horse"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What does ‘طَائِرٌ’ mean?",
+          "options": [
+            "fish",
+            "bird",
+            "horse",
+            "cow"
+          ],
+          "answer": 1
+        }
+      ]
+    }
+  ]
+}

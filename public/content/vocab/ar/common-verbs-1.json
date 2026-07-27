@@ -1,0 +1,183 @@
+{
+  "id": "common-verbs-1",
+  "words": [
+    {
+      "word": "يَذْهَبُ",
+      "reading": "yadhhabu",
+      "meaning": "to go",
+      "example": "يَذْهَبُ الطَّالِبُ إِلَى الْمَدْرَسَةِ.",
+      "exampleMeaning": "The student goes to school."
+    },
+    {
+      "word": "يَأْتِي",
+      "reading": "yaʾtī",
+      "meaning": "to come",
+      "example": "يَأْتِي الْمُعَلِّمُ مُبَكِّرًا.",
+      "exampleMeaning": "The teacher comes early."
+    },
+    {
+      "word": "يَأْكُلُ",
+      "reading": "yaʾkulu",
+      "meaning": "to eat",
+      "example": "يَأْكُلُ الْوَلَدُ خُبْزًا.",
+      "exampleMeaning": "The boy eats bread."
+    },
+    {
+      "word": "يَشْرَبُ",
+      "reading": "yashrabu",
+      "meaning": "to drink",
+      "example": "يَشْرَبُ الطِّفْلُ مَاءً.",
+      "exampleMeaning": "The child drinks water."
+    },
+    {
+      "word": "يَقْرَأُ",
+      "reading": "yaqraʾu",
+      "meaning": "to read",
+      "example": "يَقْرَأُ أَحْمَدُ كِتَابًا.",
+      "exampleMeaning": "Ahmad reads a book."
+    },
+    {
+      "word": "يَكْتُبُ",
+      "reading": "yaktubu",
+      "meaning": "to write",
+      "example": "يَكْتُبُ الطَّالِبُ جَوَابًا.",
+      "exampleMeaning": "The student writes an answer."
+    },
+    {
+      "word": "يَسْمَعُ",
+      "reading": "yasmaʿu",
+      "meaning": "to hear / listen",
+      "example": "يَسْمَعُ الْأَبُ صَوْتًا.",
+      "exampleMeaning": "The father hears a sound."
+    },
+    {
+      "word": "يَتَكَلَّمُ",
+      "reading": "yatakallamu",
+      "meaning": "to speak",
+      "example": "يَتَكَلَّمُ الْمُدَرِّسُ بِبُطْءٍ.",
+      "exampleMeaning": "The teacher speaks slowly."
+    },
+    {
+      "word": "يَرَى",
+      "reading": "yarā",
+      "meaning": "to see",
+      "example": "يَرَى الطِّفْلُ قِطًّا.",
+      "exampleMeaning": "The child sees a cat."
+    },
+    {
+      "word": "يَعْرِفُ",
+      "reading": "yaʿrifu",
+      "meaning": "to know",
+      "example": "يَعْرِفُ صَدِيقِي الطَّرِيقَ.",
+      "exampleMeaning": "My friend knows the road."
+    },
+    {
+      "word": "يَفْهَمُ",
+      "reading": "yafhamu",
+      "meaning": "to understand",
+      "example": "يَفْهَمُ الطَّالِبُ السُّؤَالَ.",
+      "exampleMeaning": "The student understands the question."
+    },
+    {
+      "word": "يَفْتَحُ",
+      "reading": "yaftaḥu",
+      "meaning": "to open",
+      "example": "يَفْتَحُ الْوَلَدُ الْبَابَ.",
+      "exampleMeaning": "The boy opens the door."
+    },
+    {
+      "word": "يُغْلِقُ",
+      "reading": "yughliqu",
+      "meaning": "to close",
+      "example": "يُغْلِقُ الْمُدِيرُ النَّافِذَةَ.",
+      "exampleMeaning": "The manager closes the window."
+    },
+    {
+      "word": "يَجْلِسُ",
+      "reading": "yajlisu",
+      "meaning": "to sit",
+      "example": "يَجْلِسُ الطَّالِبُ عَلَى الْكُرْسِيِّ.",
+      "exampleMeaning": "The student sits on the chair."
+    },
+    {
+      "word": "يَقِفُ",
+      "reading": "yaqifu",
+      "meaning": "to stand",
+      "example": "يَقِفُ النَّادِلُ قُرْبَ الطَّاوِلَةِ.",
+      "exampleMeaning": "The waiter stands near the table."
+    },
+    {
+      "word": "يَنَامُ",
+      "reading": "yanāmu",
+      "meaning": "to sleep",
+      "example": "يَنَامُ الطِّفْلُ فِي السَّرِيرِ.",
+      "exampleMeaning": "The child sleeps in the bed."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "___ الطَّالِبُ إِلَى الْمَدْرَسَةِ.",
+          "answer": "يَذْهَبُ",
+          "hint": "to go"
+        },
+        {
+          "sentence": "___ الْمُعَلِّمُ مُبَكِّرًا.",
+          "answer": "يَأْتِي",
+          "hint": "to come"
+        },
+        {
+          "sentence": "___ الْوَلَدُ خُبْزًا.",
+          "answer": "يَأْكُلُ",
+          "hint": "to eat"
+        },
+        {
+          "sentence": "___ الطِّفْلُ مَاءً.",
+          "answer": "يَشْرَبُ",
+          "hint": "to drink"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "items": [
+        {
+          "question": "What does ‘يَذْهَبُ’ mean?",
+          "options": [
+            "to come",
+            "to go",
+            "to eat",
+            "to drink"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What does ‘يَأْتِي’ mean?",
+          "options": [
+            "to eat",
+            "to come",
+            "to drink",
+            "to read"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What does ‘يَأْكُلُ’ mean?",
+          "options": [
+            "to drink",
+            "to eat",
+            "to read",
+            "to write"
+          ],
+          "answer": 1
+        }
+      ]
+    }
+  ]
+}

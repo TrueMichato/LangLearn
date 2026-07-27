@@ -1,5 +1,6 @@
 import type { Word } from '../../db/schema';
 import { speak, isTTSSupported } from '../../lib/tts';
+import { rtlProps } from '../../lib/rtl';
 
 interface ListeningCardProps {
   word: Word;
@@ -14,7 +15,7 @@ export default function ListeningCard({ word, isFlipped, onFlip }: ListeningCard
         <p className="text-sm text-yellow-600 dark:text-yellow-400 mb-2">
           TTS not available — showing classic card
         </p>
-        <p className="text-3xl font-bold text-gray-800 dark:text-gray-100 mb-2 text-center">
+        <p className="text-3xl font-bold text-gray-800 dark:text-gray-100 mb-2 text-center" {...rtlProps(word.language)}>
           {word.word}
         </p>
         {word.reading && (
@@ -64,7 +65,7 @@ export default function ListeningCard({ word, isFlipped, onFlip }: ListeningCard
 
       {isFlipped ? (
         <div className="mt-2 text-center">
-          <p className="text-3xl font-bold text-green-700 dark:text-green-400 mb-1">
+          <p className="text-3xl font-bold text-green-700 dark:text-green-400 mb-1" {...rtlProps(word.language)}>
             {word.word}
           </p>
           {word.reading && (

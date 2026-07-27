@@ -1,0 +1,183 @@
+{
+  "id": "time-expressions",
+  "words": [
+    {
+      "word": "الْيَوْمَ",
+      "reading": "al-yawma",
+      "meaning": "today",
+      "example": "الْيَوْمَ أَدْرُسُ الْعَرَبِيَّةَ.",
+      "exampleMeaning": "Today I study Arabic."
+    },
+    {
+      "word": "غَدًا",
+      "reading": "ghadan",
+      "meaning": "tomorrow",
+      "example": "غَدًا أَزُورُ صَدِيقِي.",
+      "exampleMeaning": "Tomorrow I visit my friend."
+    },
+    {
+      "word": "أَمْسِ",
+      "reading": "ʾamsi",
+      "meaning": "yesterday",
+      "example": "أَمْسِ قَرَأْتُ كِتَابًا.",
+      "exampleMeaning": "Yesterday I read a book."
+    },
+    {
+      "word": "الآنَ",
+      "reading": "al-ʾāna",
+      "meaning": "now",
+      "example": "الآنَ نَكْتُبُ الدَّرْسَ.",
+      "exampleMeaning": "Now we write the lesson."
+    },
+    {
+      "word": "دَائِمًا",
+      "reading": "dāʾiman",
+      "meaning": "always",
+      "example": "أَشْرَبُ الْمَاءَ دَائِمًا.",
+      "exampleMeaning": "I always drink water."
+    },
+    {
+      "word": "أَحْيَانًا",
+      "reading": "ʾaḥyānan",
+      "meaning": "sometimes",
+      "example": "أَمْشِي إِلَى الْعَمَلِ أَحْيَانًا.",
+      "exampleMeaning": "I sometimes walk to work."
+    },
+    {
+      "word": "أَبَدًا",
+      "reading": "ʾabadan",
+      "meaning": "never / ever",
+      "example": "لَا أَتَأَخَّرُ أَبَدًا.",
+      "exampleMeaning": "I am never late."
+    },
+    {
+      "word": "قَرِيبًا",
+      "reading": "qarīban",
+      "meaning": "soon",
+      "example": "سَنَسَافِرُ قَرِيبًا.",
+      "exampleMeaning": "We will travel soon."
+    },
+    {
+      "word": "بَعْدَ قَلِيلٍ",
+      "reading": "baʿda qalīlin",
+      "meaning": "in a little while",
+      "example": "سَيَصِلُ بَعْدَ قَلِيلٍ.",
+      "exampleMeaning": "He will arrive in a little while."
+    },
+    {
+      "word": "قَبْلَ قَلِيلٍ",
+      "reading": "qabla qalīlin",
+      "meaning": "a little while ago",
+      "example": "وَصَلَ قَبْلَ قَلِيلٍ.",
+      "exampleMeaning": "He arrived a little while ago."
+    },
+    {
+      "word": "مُنْذُ",
+      "reading": "mundhu",
+      "meaning": "since",
+      "example": "أَسْكُنُ هُنَا مُنْذُ سَنَةٍ.",
+      "exampleMeaning": "I have lived here for a year."
+    },
+    {
+      "word": "خِلَالَ",
+      "reading": "khilāla",
+      "meaning": "during",
+      "example": "أَقْرَأُ خِلَالَ الرِّحْلَةِ.",
+      "exampleMeaning": "I read during the trip."
+    },
+    {
+      "word": "بَعْدَ",
+      "reading": "baʿda",
+      "meaning": "after",
+      "example": "نَأْكُلُ بَعْدَ الدَّرْسِ.",
+      "exampleMeaning": "We eat after the lesson."
+    },
+    {
+      "word": "قَبْلَ",
+      "reading": "qabla",
+      "meaning": "before",
+      "example": "أَصِلُ قَبْلَ السَّاعَةِ الثَّامِنَةِ.",
+      "exampleMeaning": "I arrive before eight o’clock."
+    },
+    {
+      "word": "كُلَّ يَوْمٍ",
+      "reading": "kulla yawmin",
+      "meaning": "every day",
+      "example": "أُرَاجِعُ كُلَّ يَوْمٍ.",
+      "exampleMeaning": "I review every day."
+    },
+    {
+      "word": "مَرَّةً أُخْرَى",
+      "reading": "marratan ʾukhrā",
+      "meaning": "again / one more time",
+      "example": "اِقْرَأْ مَرَّةً أُخْرَى.",
+      "exampleMeaning": "Read one more time."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "___ أَدْرُسُ الْعَرَبِيَّةَ.",
+          "answer": "الْيَوْمَ",
+          "hint": "today"
+        },
+        {
+          "sentence": "___ أَزُورُ صَدِيقِي.",
+          "answer": "غَدًا",
+          "hint": "tomorrow"
+        },
+        {
+          "sentence": "___ قَرَأْتُ كِتَابًا.",
+          "answer": "أَمْسِ",
+          "hint": "yesterday"
+        },
+        {
+          "sentence": "___ نَكْتُبُ الدَّرْسَ.",
+          "answer": "الآنَ",
+          "hint": "now"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "items": [
+        {
+          "question": "What does ‘الْيَوْمَ’ mean?",
+          "options": [
+            "tomorrow",
+            "today",
+            "yesterday",
+            "now"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What does ‘غَدًا’ mean?",
+          "options": [
+            "yesterday",
+            "tomorrow",
+            "now",
+            "always"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What does ‘أَمْسِ’ mean?",
+          "options": [
+            "now",
+            "yesterday",
+            "always",
+            "sometimes"
+          ],
+          "answer": 1
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,183 @@
+{
+  "id": "emotions",
+  "words": [
+    {
+      "word": "فَرَحٌ",
+      "reading": "faraḥun",
+      "meaning": "joy",
+      "example": "فَرَحٌ كَبِيرٌ فِي الْبَيْتِ.",
+      "exampleMeaning": "Great joy is in the house."
+    },
+    {
+      "word": "حُزْنٌ",
+      "reading": "ḥuznun",
+      "meaning": "sadness",
+      "example": "حُزْنٌ خَفِيفٌ ظَهَرَ عَلَى وَجْهِهِ.",
+      "exampleMeaning": "A slight sadness appeared on his face."
+    },
+    {
+      "word": "غَضَبٌ",
+      "reading": "ghaḍabun",
+      "meaning": "anger",
+      "example": "غَضَبٌ شَدِيدٌ لَا يُسَاعِدُ.",
+      "exampleMeaning": "Strong anger does not help."
+    },
+    {
+      "word": "خَوْفٌ",
+      "reading": "khawfun",
+      "meaning": "fear",
+      "example": "خَوْفٌ قَلِيلٌ طَبِيعِيٌّ.",
+      "exampleMeaning": "A little fear is natural."
+    },
+    {
+      "word": "قَلَقٌ",
+      "reading": "qalaqun",
+      "meaning": "worry / anxiety",
+      "example": "الْقَلَقُ قَبْلَ الِامْتِحَانِ عَادِيٌّ.",
+      "exampleMeaning": "Worry before the exam is normal."
+    },
+    {
+      "word": "دَهْشَةٌ",
+      "reading": "dahshatun",
+      "meaning": "surprise",
+      "example": "الدَّهْشَةُ عَلَى وُجُوهِهِمْ وَاضِحَةٌ.",
+      "exampleMeaning": "Surprise is clear on their faces."
+    },
+    {
+      "word": "حُبٌّ",
+      "reading": "ḥubbun",
+      "meaning": "love",
+      "example": "الْحُبُّ يَجْمَعُ الْعَائِلَةَ.",
+      "exampleMeaning": "Love brings the family together."
+    },
+    {
+      "word": "كُرْهٌ",
+      "reading": "kurhun",
+      "meaning": "hatred / dislike",
+      "example": "الْكُرْهُ يُتْعِبُ الْقَلْبَ.",
+      "exampleMeaning": "Hatred tires the heart."
+    },
+    {
+      "word": "أَمَلٌ",
+      "reading": "ʾamalun",
+      "meaning": "hope",
+      "example": "الْأَمَلُ قَوِيٌّ فِي الصُّبْحِ.",
+      "exampleMeaning": "Hope is strong in the morning."
+    },
+    {
+      "word": "خَيْبَةٌ",
+      "reading": "khaybatun",
+      "meaning": "disappointment",
+      "example": "الْخَيْبَةُ بَعْدَ الْخَسَارَةِ صَعْبَةٌ.",
+      "exampleMeaning": "Disappointment after loss is hard."
+    },
+    {
+      "word": "فَخْرٌ",
+      "reading": "fakhrun",
+      "meaning": "pride",
+      "example": "الْفَخْرُ ظَاهِرٌ فِي كَلَامِهَا.",
+      "exampleMeaning": "Pride is clear in her speech."
+    },
+    {
+      "word": "خَجَلٌ",
+      "reading": "khajalun",
+      "meaning": "shyness / embarrassment",
+      "example": "الْخَجَلُ أَحْيَانًا جَمِيلٌ.",
+      "exampleMeaning": "Shyness is sometimes beautiful."
+    },
+    {
+      "word": "رَاحَةٌ",
+      "reading": "rāḥatun",
+      "meaning": "comfort / relief",
+      "example": "الرَّاحَةُ بَعْدَ الْعَمَلِ مُهِمَّةٌ.",
+      "exampleMeaning": "Rest after work is important."
+    },
+    {
+      "word": "تَعَبٌ",
+      "reading": "taʿabun",
+      "meaning": "tiredness",
+      "example": "التَّعَبُ بَعْدَ السَّفَرِ طَبِيعِيٌّ.",
+      "exampleMeaning": "Tiredness after travel is natural."
+    },
+    {
+      "word": "شَوْقٌ",
+      "reading": "shawqun",
+      "meaning": "longing",
+      "example": "الشَّوْقُ إِلَى الْأَهْلِ كَبِيرٌ.",
+      "exampleMeaning": "Longing for family is great."
+    },
+    {
+      "word": "هُدُوءٌ",
+      "reading": "hudūʾun",
+      "meaning": "calm",
+      "example": "الْهُدُوءُ فِي الْغُرْفَةِ مُرِيحٌ.",
+      "exampleMeaning": "The calm in the room is comfortable."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "___ كَبِيرٌ فِي الْبَيْتِ.",
+          "answer": "فَرَحٌ",
+          "hint": "joy"
+        },
+        {
+          "sentence": "___ خَفِيفٌ ظَهَرَ عَلَى وَجْهِهِ.",
+          "answer": "حُزْنٌ",
+          "hint": "sadness"
+        },
+        {
+          "sentence": "___ شَدِيدٌ لَا يُسَاعِدُ.",
+          "answer": "غَضَبٌ",
+          "hint": "anger"
+        },
+        {
+          "sentence": "___ قَلِيلٌ طَبِيعِيٌّ.",
+          "answer": "خَوْفٌ",
+          "hint": "fear"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "items": [
+        {
+          "question": "What does ‘فَرَحٌ’ mean?",
+          "options": [
+            "sadness",
+            "joy",
+            "anger",
+            "fear"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What does ‘حُزْنٌ’ mean?",
+          "options": [
+            "anger",
+            "sadness",
+            "fear",
+            "worry / anxiety"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What does ‘غَضَبٌ’ mean?",
+          "options": [
+            "fear",
+            "anger",
+            "worry / anxiety",
+            "surprise"
+          ],
+          "answer": 1
+        }
+      ]
+    }
+  ]
+}

@@ -1,5 +1,6 @@
 import type { Word } from '../../db/schema';
 import { speak, isTTSSupported } from '../../lib/tts';
+import { rtlProps } from '../../lib/rtl';
 
 interface ReverseCardProps {
   word: Word;
@@ -28,11 +29,11 @@ export default function ReverseCard({ word, isFlipped, onFlip }: ReverseCardProp
       {isFlipped ? (
         <div className="mt-2 text-center">
           {word.contextSentence && (
-            <p className="text-sm text-gray-500 dark:text-gray-400 mb-3 italic text-center">
+            <p className="text-sm text-gray-500 dark:text-gray-400 mb-3 italic text-center" {...rtlProps(word.language)}>
               "{word.contextSentence}"
             </p>
           )}
-          <p className="text-3xl font-bold text-green-700 dark:text-green-400 mb-1">
+          <p className="text-3xl font-bold text-green-700 dark:text-green-400 mb-1" {...rtlProps(word.language)}>
             {word.word}
           </p>
           {word.reading && (

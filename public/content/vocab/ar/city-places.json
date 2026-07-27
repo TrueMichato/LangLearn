@@ -1,0 +1,183 @@
+{
+  "id": "city-places",
+  "words": [
+    {
+      "word": "مَدِينَةٌ",
+      "reading": "madīnatun",
+      "meaning": "city",
+      "example": "مَدِينَةٌ كَبِيرَةٌ عَلَى السَّاحِلِ.",
+      "exampleMeaning": "A large city is on the coast."
+    },
+    {
+      "word": "قَرْيَةٌ",
+      "reading": "qaryatun",
+      "meaning": "village",
+      "example": "قَرْيَةٌ صَغِيرَةٌ بَيْنَ الْجِبَالِ.",
+      "exampleMeaning": "A small village is between the mountains."
+    },
+    {
+      "word": "شَارِعٌ",
+      "reading": "shāriʿun",
+      "meaning": "street",
+      "example": "شَارِعٌ طَوِيلٌ أَمَامَ الْبَيْتِ.",
+      "exampleMeaning": "A long street is in front of the house."
+    },
+    {
+      "word": "سُوقٌ",
+      "reading": "sūqun",
+      "meaning": "market",
+      "example": "سُوقٌ قَدِيمٌ فِي الْمَرْكَزِ.",
+      "exampleMeaning": "An old market is in the center."
+    },
+    {
+      "word": "مَسْجِدٌ",
+      "reading": "masjidun",
+      "meaning": "mosque",
+      "example": "الْمَسْجِدُ قَرِيبٌ مِنْ بَيْتِي.",
+      "exampleMeaning": "The mosque is near my house."
+    },
+    {
+      "word": "كَنِيسَةٌ",
+      "reading": "kanīsatun",
+      "meaning": "church",
+      "example": "الْكَنِيسَةُ قَدِيمَةٌ.",
+      "exampleMeaning": "The church is old."
+    },
+    {
+      "word": "مُسْتَشْفًى",
+      "reading": "mustashfan",
+      "meaning": "hospital",
+      "example": "الْمُسْتَشْفَى كَبِيرٌ وَنَظِيفٌ.",
+      "exampleMeaning": "The hospital is large and clean."
+    },
+    {
+      "word": "صَيْدَلِيَّةٌ",
+      "reading": "ṣaydaliyyatun",
+      "meaning": "pharmacy",
+      "example": "الصَّيْدَلِيَّةُ مَفْتُوحَةٌ.",
+      "exampleMeaning": "The pharmacy is open."
+    },
+    {
+      "word": "مَطْعَمٌ",
+      "reading": "maṭʿamun",
+      "meaning": "restaurant",
+      "example": "الْمَطْعَمُ مُزْدَحِمٌ.",
+      "exampleMeaning": "The restaurant is crowded."
+    },
+    {
+      "word": "مَقْهًى",
+      "reading": "maqhan",
+      "meaning": "café",
+      "example": "الْمَقْهَى هَادِئٌ.",
+      "exampleMeaning": "The café is quiet."
+    },
+    {
+      "word": "فُنْدُقٌ",
+      "reading": "funduqun",
+      "meaning": "hotel",
+      "example": "الْفُنْدُقُ قَرِيبٌ مِنَ الْمَطَارِ.",
+      "exampleMeaning": "The hotel is near the airport."
+    },
+    {
+      "word": "مَحَطَّةٌ",
+      "reading": "maḥaṭṭatun",
+      "meaning": "station",
+      "example": "الْمَحَطَّةُ بَعِيدَةٌ قَلِيلًا.",
+      "exampleMeaning": "The station is a little far."
+    },
+    {
+      "word": "مَصْرِفٌ",
+      "reading": "maṣrifun",
+      "meaning": "bank",
+      "example": "الْمَصْرِفُ فِي الشَّارِعِ الرَّئِيسِيِّ.",
+      "exampleMeaning": "The bank is on the main street."
+    },
+    {
+      "word": "بَرِيدٌ",
+      "reading": "barīdun",
+      "meaning": "post office / mail",
+      "example": "الْبَرِيدُ بِجَانِبِ السُّوقِ.",
+      "exampleMeaning": "The post office is next to the market."
+    },
+    {
+      "word": "مَتْحَفٌ",
+      "reading": "matḥafun",
+      "meaning": "museum",
+      "example": "الْمَتْحَفُ مُمْتِعٌ.",
+      "exampleMeaning": "The museum is enjoyable."
+    },
+    {
+      "word": "مَطَارٌ",
+      "reading": "maṭārun",
+      "meaning": "airport",
+      "example": "الْمَطَارُ خَارِجَ الْمَدِينَةِ.",
+      "exampleMeaning": "The airport is outside the city."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "___ كَبِيرَةٌ عَلَى السَّاحِلِ.",
+          "answer": "مَدِينَةٌ",
+          "hint": "city"
+        },
+        {
+          "sentence": "___ صَغِيرَةٌ بَيْنَ الْجِبَالِ.",
+          "answer": "قَرْيَةٌ",
+          "hint": "village"
+        },
+        {
+          "sentence": "___ طَوِيلٌ أَمَامَ الْبَيْتِ.",
+          "answer": "شَارِعٌ",
+          "hint": "street"
+        },
+        {
+          "sentence": "___ قَدِيمٌ فِي الْمَرْكَزِ.",
+          "answer": "سُوقٌ",
+          "hint": "market"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "items": [
+        {
+          "question": "What does ‘مَدِينَةٌ’ mean?",
+          "options": [
+            "village",
+            "city",
+            "street",
+            "market"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What does ‘قَرْيَةٌ’ mean?",
+          "options": [
+            "street",
+            "village",
+            "market",
+            "mosque"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What does ‘شَارِعٌ’ mean?",
+          "options": [
+            "market",
+            "street",
+            "mosque",
+            "church"
+          ],
+          "answer": 1
+        }
+      ]
+    }
+  ]
+}

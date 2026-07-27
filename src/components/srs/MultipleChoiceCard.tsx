@@ -2,6 +2,7 @@ import { useState } from 'react';
 import type { Word } from '../../db/schema';
 import type { SM2Grade } from '../../lib/sm2';
 import { shuffle } from '../../lib/card-types';
+import { rtlProps } from '../../lib/rtl';
 
 interface MultipleChoiceCardProps {
   word: Word;
@@ -39,7 +40,7 @@ export default function MultipleChoiceCard({ word, distractors, onGrade }: Multi
         {word.language}
       </span>
 
-      <p className="text-3xl font-bold text-gray-800 dark:text-gray-100 mb-1 text-center">
+      <p className="text-3xl font-bold text-gray-800 dark:text-gray-100 mb-1 text-center" {...rtlProps(word.language)}>
         {word.word}
       </p>
 

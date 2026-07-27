@@ -1,0 +1,183 @@
+{
+  "id": "levantine-phrases",
+  "words": [
+    {
+      "word": "كِيفَك؟",
+      "reading": "kīfak?",
+      "meaning": "how are you? (Levantine; MSA: kayfa ḥāluka)",
+      "example": "كِيفَك؟ أَنَا مْنِيحْ.",
+      "exampleMeaning": "How are you? I am fine."
+    },
+    {
+      "word": "شُو؟",
+      "reading": "shū?",
+      "meaning": "what? (Levantine; MSA: mādhā)",
+      "example": "شُو؟ مَا سْمِعْتِكْ.",
+      "exampleMeaning": "What? I did not hear you."
+    },
+    {
+      "word": "وَيْنْ؟",
+      "reading": "wēn?",
+      "meaning": "where? (Levantine; MSA: ʾayna)",
+      "example": "وَيْنْ؟ بَدِّي أَعْرِفْ الطَّرِيقْ.",
+      "exampleMeaning": "Where? I want to know the way."
+    },
+    {
+      "word": "لَيْشْ؟",
+      "reading": "lēsh?",
+      "meaning": "why? (Levantine; MSA: limādhā)",
+      "example": "لَيْشْ؟ فِي مُشْكِلَة؟",
+      "exampleMeaning": "Why? Is there a problem?"
+    },
+    {
+      "word": "إِيمْتَى؟",
+      "reading": "ēmtā?",
+      "meaning": "when? (Levantine; MSA: matā)",
+      "example": "إِيمْتَى الدَّرْسْ؟",
+      "exampleMeaning": "When is the lesson?"
+    },
+    {
+      "word": "هَلَّق",
+      "reading": "hallaʾ",
+      "meaning": "now (Levantine)",
+      "example": "هَلَّق بَدِّي أَرُوحْ.",
+      "exampleMeaning": "Now I want to go."
+    },
+    {
+      "word": "بُكْرَا",
+      "reading": "bukra",
+      "meaning": "tomorrow (Levantine)",
+      "example": "بُكْرَا عِنْدِنَا شُغْلْ.",
+      "exampleMeaning": "Tomorrow we have work."
+    },
+    {
+      "word": "مْنِيحْ",
+      "reading": "mnīḥ",
+      "meaning": "good / fine (Levantine)",
+      "example": "الْجَوّ مْنِيحْ الْيَوْمْ.",
+      "exampleMeaning": "The weather is good today."
+    },
+    {
+      "word": "تَمَامْ",
+      "reading": "tamām",
+      "meaning": "okay / all right (Levantine)",
+      "example": "تَمَامْ، نِتْقَابَلْ بَعْدَيْنْ.",
+      "exampleMeaning": "Okay, we meet later."
+    },
+    {
+      "word": "بَدِّي",
+      "reading": "baddī",
+      "meaning": "I want (Levantine)",
+      "example": "بَدِّي قَهْوَة بِلَا سُكَّرْ.",
+      "exampleMeaning": "I want coffee without sugar."
+    },
+    {
+      "word": "مَا فِي",
+      "reading": "mā fī",
+      "meaning": "there is not / no (Levantine)",
+      "example": "مَا فِي وَقْتْ كْتِيرْ.",
+      "exampleMeaning": "There is not much time."
+    },
+    {
+      "word": "يَلَّا",
+      "reading": "yallā",
+      "meaning": "come on / let’s go (Levantine/all)",
+      "example": "يَلَّا نِطْلَعْ هَلَّق.",
+      "exampleMeaning": "Come on, let’s go now."
+    },
+    {
+      "word": "عَنْ جَدّ",
+      "reading": "ʿan jadd",
+      "meaning": "really? / seriously (Levantine)",
+      "example": "عَنْ جَدّ هٰذَا الْخَبَرْ؟",
+      "exampleMeaning": "Is this news really true?"
+    },
+    {
+      "word": "زَكِيّ",
+      "reading": "zakī",
+      "meaning": "delicious (Levantine)",
+      "example": "الطَّعَامْ زَكِيّ كْتِيرْ.",
+      "exampleMeaning": "The food is very delicious."
+    },
+    {
+      "word": "كْتِيرْ",
+      "reading": "ktīr",
+      "meaning": "very / a lot (Levantine)",
+      "example": "أَنَا مَبْسُوطْ كْتِيرْ.",
+      "exampleMeaning": "I am very happy."
+    },
+    {
+      "word": "مَرْحَبَا",
+      "reading": "marḥaba",
+      "meaning": "hello (Levantine)",
+      "example": "مَرْحَبَا، نَوَّرْتْ الْبَيْتْ.",
+      "exampleMeaning": "Hello, you lit up the house."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "___ أَنَا مْنِيحْ.",
+          "answer": "كِيفَك؟",
+          "hint": "how are you?"
+        },
+        {
+          "sentence": "___ مَا سْمِعْتِكْ.",
+          "answer": "شُو؟",
+          "hint": "what?"
+        },
+        {
+          "sentence": "___ بَدِّي أَعْرِفْ الطَّرِيقْ.",
+          "answer": "وَيْنْ؟",
+          "hint": "where?"
+        },
+        {
+          "sentence": "___ فِي مُشْكِلَة؟",
+          "answer": "لَيْشْ؟",
+          "hint": "why?"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "items": [
+        {
+          "question": "What does ‘كِيفَك؟’ mean?",
+          "options": [
+            "what? (Levantine; MSA: mādhā)",
+            "how are you? (Levantine; MSA: kayfa ḥāluka)",
+            "where? (Levantine; MSA: ʾayna)",
+            "why? (Levantine; MSA: limādhā)"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What does ‘شُو؟’ mean?",
+          "options": [
+            "where? (Levantine; MSA: ʾayna)",
+            "what? (Levantine; MSA: mādhā)",
+            "why? (Levantine; MSA: limādhā)",
+            "when? (Levantine; MSA: matā)"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What does ‘وَيْنْ؟’ mean?",
+          "options": [
+            "why? (Levantine; MSA: limādhā)",
+            "where? (Levantine; MSA: ʾayna)",
+            "when? (Levantine; MSA: matā)",
+            "now (Levantine)"
+          ],
+          "answer": 1
+        }
+      ]
+    }
+  ]
+}

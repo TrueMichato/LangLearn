@@ -1,0 +1,183 @@
+{
+  "id": "house-furniture",
+  "words": [
+    {
+      "word": "بَيْتٌ",
+      "reading": "baytun",
+      "meaning": "house",
+      "example": "بَيْتٌ صَغِيرٌ فِي الْقَرْيَةِ.",
+      "exampleMeaning": "A small house is in the village."
+    },
+    {
+      "word": "شَقَّةٌ",
+      "reading": "shaqqatun",
+      "meaning": "apartment",
+      "example": "شَقَّةٌ جَدِيدَةٌ فِي الْمَدِينَةِ.",
+      "exampleMeaning": "A new apartment is in the city."
+    },
+    {
+      "word": "غُرْفَةٌ",
+      "reading": "ghurfatun",
+      "meaning": "room",
+      "example": "غُرْفَةٌ هَادِئَةٌ لِلدِّرَاسَةِ.",
+      "exampleMeaning": "A quiet room for studying."
+    },
+    {
+      "word": "بَابٌ",
+      "reading": "bābun",
+      "meaning": "door",
+      "example": "بَابٌ مَفْتُوحٌ أَمَامَنَا.",
+      "exampleMeaning": "An open door is in front of us."
+    },
+    {
+      "word": "نَافِذَةٌ",
+      "reading": "nāfidhatun",
+      "meaning": "window",
+      "example": "النَّافِذَةُ قَرِيبَةٌ مِنَ السَّرِيرِ.",
+      "exampleMeaning": "The window is near the bed."
+    },
+    {
+      "word": "مَطْبَخٌ",
+      "reading": "maṭbakhun",
+      "meaning": "kitchen",
+      "example": "الْمَطْبَخُ نَظِيفٌ جِدًّا.",
+      "exampleMeaning": "The kitchen is very clean."
+    },
+    {
+      "word": "حَمَّامٌ",
+      "reading": "ḥammāmun",
+      "meaning": "bathroom",
+      "example": "الْحَمَّامُ فِي آخِرِ الْمَمَرِّ.",
+      "exampleMeaning": "The bathroom is at the end of the hall."
+    },
+    {
+      "word": "سَرِيرٌ",
+      "reading": "sarīrun",
+      "meaning": "bed",
+      "example": "السَّرِيرُ مُرِيحٌ.",
+      "exampleMeaning": "The bed is comfortable."
+    },
+    {
+      "word": "كُرْسِيٌّ",
+      "reading": "kursiyyun",
+      "meaning": "chair",
+      "example": "الْكُرْسِيُّ تَحْتَ النَّافِذَةِ.",
+      "exampleMeaning": "The chair is under the window."
+    },
+    {
+      "word": "طَاوِلَةٌ",
+      "reading": "ṭāwilatun",
+      "meaning": "table",
+      "example": "الطَّاوِلَةُ فِي وَسَطِ الْغُرْفَةِ.",
+      "exampleMeaning": "The table is in the middle of the room."
+    },
+    {
+      "word": "أَرِيكَةٌ",
+      "reading": "ʾarīkatun",
+      "meaning": "sofa",
+      "example": "الْأَرِيكَةُ كَبِيرَةٌ وَمُرِيحَةٌ.",
+      "exampleMeaning": "The sofa is large and comfortable."
+    },
+    {
+      "word": "خِزَانَةٌ",
+      "reading": "khizānatun",
+      "meaning": "closet / cabinet",
+      "example": "الْخِزَانَةُ مَلِيئَةٌ بِالْمَلَابِسِ.",
+      "exampleMeaning": "The closet is full of clothes."
+    },
+    {
+      "word": "مِصْبَاحٌ",
+      "reading": "miṣbāḥun",
+      "meaning": "lamp",
+      "example": "الْمِصْبَاحُ فَوْقَ الْمَكْتَبِ.",
+      "exampleMeaning": "The lamp is above the desk."
+    },
+    {
+      "word": "مِرْآةٌ",
+      "reading": "mirʾātun",
+      "meaning": "mirror",
+      "example": "الْمِرْآةُ عَلَى الْجِدَارِ.",
+      "exampleMeaning": "The mirror is on the wall."
+    },
+    {
+      "word": "سَجَّادَةٌ",
+      "reading": "sajjādatun",
+      "meaning": "rug",
+      "example": "السَّجَّادَةُ حَمْرَاءُ.",
+      "exampleMeaning": "The rug is red."
+    },
+    {
+      "word": "مِفْتَاحٌ",
+      "reading": "miftāḥun",
+      "meaning": "key",
+      "example": "الْمِفْتَاحُ عَلَى الطَّاوِلَةِ.",
+      "exampleMeaning": "The key is on the table."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "___ صَغِيرٌ فِي الْقَرْيَةِ.",
+          "answer": "بَيْتٌ",
+          "hint": "house"
+        },
+        {
+          "sentence": "___ جَدِيدَةٌ فِي الْمَدِينَةِ.",
+          "answer": "شَقَّةٌ",
+          "hint": "apartment"
+        },
+        {
+          "sentence": "___ هَادِئَةٌ لِلدِّرَاسَةِ.",
+          "answer": "غُرْفَةٌ",
+          "hint": "room"
+        },
+        {
+          "sentence": "___ مَفْتُوحٌ أَمَامَنَا.",
+          "answer": "بَابٌ",
+          "hint": "door"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "items": [
+        {
+          "question": "What does ‘بَيْتٌ’ mean?",
+          "options": [
+            "apartment",
+            "house",
+            "room",
+            "door"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What does ‘شَقَّةٌ’ mean?",
+          "options": [
+            "room",
+            "apartment",
+            "door",
+            "window"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What does ‘غُرْفَةٌ’ mean?",
+          "options": [
+            "door",
+            "room",
+            "window",
+            "kitchen"
+          ],
+          "answer": 1
+        }
+      ]
+    }
+  ]
+}

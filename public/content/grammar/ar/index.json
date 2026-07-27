@@ -1,0 +1,218 @@
+[
+  {
+    "id": "arabic-script",
+    "title": "The Arabic Script: How Letters Join",
+    "order": 1,
+    "group": "🏗️ Foundations"
+  },
+  {
+    "id": "pronunciation",
+    "title": "The Sounds of Arabic (emphatics, ʿayn, throat letters)",
+    "order": 2,
+    "group": "🏗️ Foundations"
+  },
+  {
+    "id": "harakat",
+    "title": "Short Vowels, Sukūn & Shadda (Tashkīl)",
+    "order": 3,
+    "group": "🏗️ Foundations"
+  },
+  {
+    "id": "definite-article",
+    "title": "The Article al- & Sun/Moon Letters",
+    "order": 4,
+    "group": "🏗️ Foundations"
+  },
+  {
+    "id": "gender",
+    "title": "Grammatical Gender & Tāʾ Marbūṭa",
+    "order": 5,
+    "group": "🏗️ Foundations"
+  },
+  {
+    "id": "nominal-sentence",
+    "title": "The Nominal Sentence (there is no present \"to be\")",
+    "order": 6,
+    "group": "🏗️ Foundations"
+  },
+  {
+    "id": "pronouns",
+    "title": "Personal Pronouns",
+    "order": 7,
+    "group": "🏗️ Foundations"
+  },
+  {
+    "id": "attached-pronouns",
+    "title": "Attached (Possessive & Object) Pronouns",
+    "order": 8,
+    "group": "🏗️ Foundations"
+  },
+  {
+    "id": "demonstratives",
+    "title": "Demonstratives (hādhā / hādhihi / dhālika)",
+    "order": 9,
+    "group": "🏗️ Foundations"
+  },
+  {
+    "id": "prepositions",
+    "title": "Prepositions (fī, ʿalā, min, ilā, maʿa, bi-, li-)",
+    "order": 10,
+    "group": "🏗️ Foundations"
+  },
+  {
+    "id": "adjectives",
+    "title": "Adjectives & Agreement",
+    "order": 11,
+    "group": "🏗️ Foundations"
+  },
+  {
+    "id": "idafa",
+    "title": "The Iḍāfa Construct (Possession)",
+    "order": 12,
+    "group": "🏗️ Foundations"
+  },
+  {
+    "id": "plurals",
+    "title": "Plurals: Sound & Broken",
+    "order": 13,
+    "group": "🏗️ Foundations"
+  },
+  {
+    "id": "present-tense",
+    "title": "The Present Tense (al-Muḍāriʿ)",
+    "order": 14,
+    "group": "🔤 Verbs"
+  },
+  {
+    "id": "past-tense",
+    "title": "The Past Tense (al-Māḍī)",
+    "order": 15,
+    "group": "🔤 Verbs"
+  },
+  {
+    "id": "root-system",
+    "title": "The Root & Pattern System",
+    "order": 16,
+    "group": "🔤 Verbs"
+  },
+  {
+    "id": "verb-forms",
+    "title": "The Ten Verb Forms (al-Awzān)",
+    "order": 17,
+    "group": "🔤 Verbs"
+  },
+  {
+    "id": "negation",
+    "title": "Negation (lā, mā, lam, lan, laysa)",
+    "order": 18,
+    "group": "🔤 Verbs"
+  },
+  {
+    "id": "future",
+    "title": "The Future (sa- / sawfa)",
+    "order": 19,
+    "group": "🔤 Verbs"
+  },
+  {
+    "id": "imperative",
+    "title": "The Imperative (al-Amr)",
+    "order": 20,
+    "group": "🔤 Verbs"
+  },
+  {
+    "id": "kana-sisters",
+    "title": "kāna & Her Sisters (past & becoming)",
+    "order": 21,
+    "group": "🔤 Verbs"
+  },
+  {
+    "id": "inna-sisters",
+    "title": "inna & Her Sisters",
+    "order": 22,
+    "group": "🔤 Verbs"
+  },
+  {
+    "id": "questions",
+    "title": "Question Words (mā, man, ayna, matā, kayfa, kam, limādhā)",
+    "order": 23,
+    "group": "🔢 Structure & Nuance"
+  },
+  {
+    "id": "numbers",
+    "title": "Numbers & Counting (the agreement quirks)",
+    "order": 24,
+    "group": "🔢 Structure & Nuance"
+  },
+  {
+    "id": "dual",
+    "title": "The Dual (al-Muthannā)",
+    "order": 25,
+    "group": "🔢 Structure & Nuance"
+  },
+  {
+    "id": "cases",
+    "title": "Case Endings (al-Iʿrāb): nominative, accusative, genitive",
+    "order": 26,
+    "group": "🔢 Structure & Nuance"
+  },
+  {
+    "id": "object-accusative",
+    "title": "The Direct Object & Accusative (naṣb)",
+    "order": 27,
+    "group": "🔢 Structure & Nuance"
+  },
+  {
+    "id": "relative",
+    "title": "Relative Clauses (alladhī / allatī)",
+    "order": 28,
+    "group": "🔢 Structure & Nuance"
+  },
+  {
+    "id": "comparative",
+    "title": "Comparative & Superlative (afʿal)",
+    "order": 29,
+    "group": "🔢 Structure & Nuance"
+  },
+  {
+    "id": "conditionals",
+    "title": "Conditional Sentences (idhā, law, in)",
+    "order": 30,
+    "group": "🔢 Structure & Nuance"
+  },
+  {
+    "id": "adverbs-haal",
+    "title": "Adverbs & the Ḥāl (circumstantial)",
+    "order": 31,
+    "group": "🔢 Structure & Nuance"
+  },
+  {
+    "id": "msa-vs-dialects",
+    "title": "MSA vs Dialects: What Actually Changes",
+    "order": 32,
+    "group": "🗣️ Colloquial & Dialects"
+  },
+  {
+    "id": "egyptian-basics",
+    "title": "Egyptian Arabic Essentials (bi- present, ج=g, ق=ʾ)",
+    "order": 33,
+    "group": "🗣️ Colloquial & Dialects"
+  },
+  {
+    "id": "levantine-basics",
+    "title": "Levantine Arabic Essentials (ʿam + verb, badd-)",
+    "order": 34,
+    "group": "🗣️ Colloquial & Dialects"
+  },
+  {
+    "id": "gulf-basics",
+    "title": "Gulf Arabic Essentials (khaleeji)",
+    "order": 35,
+    "group": "🗣️ Colloquial & Dialects"
+  },
+  {
+    "id": "everyday-phrases",
+    "title": "Everyday Phrases, Politeness & Greetings",
+    "order": 36,
+    "group": "🗣️ Colloquial & Dialects"
+  }
+]

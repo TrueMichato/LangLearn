@@ -1,0 +1,183 @@
+{
+  "id": "colloquial-verbs",
+  "words": [
+    {
+      "word": "بَدِّي",
+      "reading": "baddī",
+      "meaning": "I want (Levantine)",
+      "example": "بَدِّي أَتْعَلَّمْ عَرَبِي.",
+      "exampleMeaning": "I want to learn Arabic."
+    },
+    {
+      "word": "عَايِزْ",
+      "reading": "ʿāyiz",
+      "meaning": "I want / wanting (Egyptian masculine)",
+      "example": "عَايِزْ أَشْرَبْ قَهْوَة.",
+      "exampleMeaning": "I want to drink coffee."
+    },
+    {
+      "word": "أَبِي",
+      "reading": "abī",
+      "meaning": "I want (Gulf)",
+      "example": "أَبِي أَرُوحْ الْمَكْتَبْ.",
+      "exampleMeaning": "I want to go to the office."
+    },
+    {
+      "word": "رَايِحْ",
+      "reading": "rāyiḥ",
+      "meaning": "going (colloquial masculine)",
+      "example": "رَايِحْ عَ الْبَيْتْ هَلَّق.",
+      "exampleMeaning": "I am going home now."
+    },
+    {
+      "word": "جَايّ",
+      "reading": "jāyy",
+      "meaning": "coming (colloquial masculine)",
+      "example": "أَنَا جَايّ بَعْد خَمْس دَقَايِقْ.",
+      "exampleMeaning": "I am coming after five minutes."
+    },
+    {
+      "word": "بَاكُلْ",
+      "reading": "bākul",
+      "meaning": "I eat / I am eating (Egyptian)",
+      "example": "بَاكُلْ خُبْز وَجُبْن.",
+      "exampleMeaning": "I am eating bread and cheese."
+    },
+    {
+      "word": "بَشْرَبْ",
+      "reading": "bashrab",
+      "meaning": "I drink / I am drinking (Egyptian)",
+      "example": "بَشْرَبْ شَاي مِنْ غَيْر سُكَّرْ.",
+      "exampleMeaning": "I am drinking tea without sugar."
+    },
+    {
+      "word": "بَحِبّ",
+      "reading": "baḥibb",
+      "meaning": "I like / love (colloquial)",
+      "example": "بَحِبّ الْقِرَاءَة كْتِيرْ.",
+      "exampleMeaning": "I like reading a lot."
+    },
+    {
+      "word": "بِعْرَفْ",
+      "reading": "biʿraf",
+      "meaning": "I know (colloquial)",
+      "example": "بِعْرَفْ الطَّرِيقْ لِلْمَحَطَّة.",
+      "exampleMeaning": "I know the way to the station."
+    },
+    {
+      "word": "بِفْهَمْ",
+      "reading": "bifham",
+      "meaning": "I understand (colloquial)",
+      "example": "بِفْهَمْ عَلَيْك بِسُرْعَة.",
+      "exampleMeaning": "I understand you quickly."
+    },
+    {
+      "word": "اِسْتَنَّى",
+      "reading": "istannā",
+      "meaning": "wait (colloquial)",
+      "example": "اِسْتَنَّى دَقِيقَة وَاحِدَة.",
+      "exampleMeaning": "Wait one minute."
+    },
+    {
+      "word": "شُوفْ",
+      "reading": "shūf",
+      "meaning": "look / see (colloquial)",
+      "example": "شُوفْ الصُّورَة عَلَى الْهَاتِفْ.",
+      "exampleMeaning": "Look at the picture on the phone."
+    },
+    {
+      "word": "هَاتْ",
+      "reading": "hāt",
+      "meaning": "bring / give me (colloquial)",
+      "example": "هَاتْ الْكِتَابْ مِنْ فَضْلَك.",
+      "exampleMeaning": "Bring the book, please."
+    },
+    {
+      "word": "خُدْ",
+      "reading": "khud",
+      "meaning": "take (Egyptian/all)",
+      "example": "خُدْ التَّذْكِرَة مِنْ هُنَا.",
+      "exampleMeaning": "Take the ticket from here."
+    },
+    {
+      "word": "خَلِّي",
+      "reading": "khallī",
+      "meaning": "let / keep (colloquial)",
+      "example": "خَلِّي الْبَابْ مَفْتُوحْ.",
+      "exampleMeaning": "Keep the door open."
+    },
+    {
+      "word": "اِحْكِي",
+      "reading": "iḥkī",
+      "meaning": "speak / tell (Levantine)",
+      "example": "اِحْكِي مَعِي بِبُطْء.",
+      "exampleMeaning": "Speak with me slowly."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "___ أَتْعَلَّمْ عَرَبِي.",
+          "answer": "بَدِّي",
+          "hint": "I want"
+        },
+        {
+          "sentence": "___ أَشْرَبْ قَهْوَة.",
+          "answer": "عَايِزْ",
+          "hint": "I want / wanting"
+        },
+        {
+          "sentence": "___ أَرُوحْ الْمَكْتَبْ.",
+          "answer": "أَبِي",
+          "hint": "I want"
+        },
+        {
+          "sentence": "___ عَ الْبَيْتْ هَلَّق.",
+          "answer": "رَايِحْ",
+          "hint": "going"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "items": [
+        {
+          "question": "What does ‘بَدِّي’ mean?",
+          "options": [
+            "I want / wanting (Egyptian masculine)",
+            "I want (Levantine)",
+            "I want (Gulf)",
+            "going (colloquial masculine)"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What does ‘عَايِزْ’ mean?",
+          "options": [
+            "I want (Gulf)",
+            "I want / wanting (Egyptian masculine)",
+            "going (colloquial masculine)",
+            "coming (colloquial masculine)"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What does ‘أَبِي’ mean?",
+          "options": [
+            "going (colloquial masculine)",
+            "I want (Gulf)",
+            "coming (colloquial masculine)",
+            "I eat / I am eating (Egyptian)"
+          ],
+          "answer": 1
+        }
+      ]
+    }
+  ]
+}

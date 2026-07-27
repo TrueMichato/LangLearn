@@ -26,3 +26,5 @@ dev-dist/
 
 infra/push-worker/vapid.json
 .env.example
+# impeccable design-hook local cache
+.impeccable/

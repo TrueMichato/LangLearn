@@ -4,6 +4,7 @@ import { KANJI } from './kanji';
 import { CYRILLIC, CYRILLIC_LOWERCASE } from './cyrillic';
 import { PT_ACCENTED_VOWELS, PT_UPPERCASE_ACCENTS } from './portuguese';
 import { ES_ACCENTED_VOWELS, ES_SPECIAL_LETTERS, ES_UPPERCASE_ACCENTS } from './spanish';
+import { ARABIC_LETTERS, ARABIC_HARAKAT, ARABIC_SPECIAL, ARABIC_NUMERALS } from './arabic';
 import type { Character } from './hiragana';
 
 export type { Character };
@@ -26,6 +27,12 @@ export const ALPHABET_DATA: Record<string, { name: string; characters: Character
     { name: 'Accents & Diacritics', characters: ES_ACCENTED_VOWELS },
     { name: 'Ñ, ¿¡ & Special Letters', characters: ES_SPECIAL_LETTERS },
     { name: 'Uppercase Accents', characters: ES_UPPERCASE_ACCENTS },
+  ],
+  ar: [
+    { name: 'Alphabet (28 Letters)', characters: ARABIC_LETTERS },
+    { name: 'Vowels & Marks (Ḥarakāt)', characters: ARABIC_HARAKAT },
+    { name: 'Hamza & Special Forms', characters: ARABIC_SPECIAL },
+    { name: 'Numerals (٠–٩)', characters: ARABIC_NUMERALS },
   ],
 };
 

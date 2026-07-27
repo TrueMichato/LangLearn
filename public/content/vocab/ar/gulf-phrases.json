@@ -1,0 +1,183 @@
+{
+  "id": "gulf-phrases",
+  "words": [
+    {
+      "word": "شْلُونَك؟",
+      "reading": "shlōnak?",
+      "meaning": "how are you? (Gulf; MSA: kayfa ḥāluka)",
+      "example": "شْلُونَك؟ أَنَا زِينْ.",
+      "exampleMeaning": "How are you? I am fine."
+    },
+    {
+      "word": "شْخْبَارَك؟",
+      "reading": "shkhbārak?",
+      "meaning": "what is your news? (Gulf greeting)",
+      "example": "شْخْبَارَك؟ كُلّ شَيْ زِينْ.",
+      "exampleMeaning": "How are things? Everything is fine."
+    },
+    {
+      "word": "زِينْ",
+      "reading": "zēn",
+      "meaning": "good / fine (Gulf)",
+      "example": "زِينْ، نِشُوفَكْ بَاكِرْ.",
+      "exampleMeaning": "Good, we will see you tomorrow."
+    },
+    {
+      "word": "وَيْنْ؟",
+      "reading": "wēn?",
+      "meaning": "where? (Gulf; MSA: ʾayna)",
+      "example": "وَيْنْ؟ السُّوقْ قَرِيبْ؟",
+      "exampleMeaning": "Where? Is the market near?"
+    },
+    {
+      "word": "لِيشْ؟",
+      "reading": "līsh?",
+      "meaning": "why? (Gulf; MSA: limādhā)",
+      "example": "لِيشْ أَنْتَ مُسْتَعْجِلْ؟",
+      "exampleMeaning": "Why are you in a hurry?"
+    },
+    {
+      "word": "أَبِي",
+      "reading": "abī",
+      "meaning": "I want (Gulf)",
+      "example": "أَبِي مَايْ بَارِدْ.",
+      "exampleMeaning": "I want cold water."
+    },
+    {
+      "word": "مَا عَلَيْك أَمْر",
+      "reading": "mā ʿalayk amr",
+      "meaning": "please / if you do not mind (Gulf)",
+      "example": "مَا عَلَيْك أَمْر، عَطْنِي الْقَائِمَة.",
+      "exampleMeaning": "Please, give me the menu."
+    },
+    {
+      "word": "يِمْكِنْ",
+      "reading": "yimkin",
+      "meaning": "maybe / possible (Gulf)",
+      "example": "يِمْكِنْ نُسَافِرْ بَاكِرْ.",
+      "exampleMeaning": "Maybe we travel tomorrow."
+    },
+    {
+      "word": "حِينْ",
+      "reading": "ḥīn",
+      "meaning": "now (Gulf)",
+      "example": "حِينْ أَنَا فِي الْمَكْتَبْ.",
+      "exampleMeaning": "Now I am in the office."
+    },
+    {
+      "word": "بَاكِرْ",
+      "reading": "bāchir",
+      "meaning": "tomorrow (Gulf)",
+      "example": "بَاكِرْ عِنْدِي دَوَامْ.",
+      "exampleMeaning": "Tomorrow I have work."
+    },
+    {
+      "word": "وَايِدْ",
+      "reading": "wāyid",
+      "meaning": "very / a lot (Gulf)",
+      "example": "الطَّعَامْ زِينْ وَايِدْ.",
+      "exampleMeaning": "The food is very good."
+    },
+    {
+      "word": "خَلَاصْ",
+      "reading": "khalāṣ",
+      "meaning": "finished / okay (Gulf/all)",
+      "example": "خَلَاصْ، نِرْجَعْ الْبَيْتْ.",
+      "exampleMeaning": "Okay, we go back home."
+    },
+    {
+      "word": "عَفْيَة",
+      "reading": "ʿāfiya",
+      "meaning": "thanks / well done (Gulf)",
+      "example": "عَفْيَة عَلَيْك، شُغْلَك زِينْ.",
+      "exampleMeaning": "Well done, your work is good."
+    },
+    {
+      "word": "دَرْبَك خَضَرْ",
+      "reading": "darbak khaḍar",
+      "meaning": "safe travels (Gulf)",
+      "example": "دَرْبَك خَضَرْ فِي السَّفَرْ.",
+      "exampleMeaning": "Safe travels on the trip."
+    },
+    {
+      "word": "مَحَلّ",
+      "reading": "maḥall",
+      "meaning": "shop (Gulf/all)",
+      "example": "الْمَحَلّ قَرِيبْ مِنَ الْبَيْتْ.",
+      "exampleMeaning": "The shop is near the house."
+    },
+    {
+      "word": "بَرُوحْ",
+      "reading": "barūḥ",
+      "meaning": "I will go (Gulf)",
+      "example": "بَرُوحْ الْمَطَارْ بَعْد شْوَي.",
+      "exampleMeaning": "I will go to the airport in a little while."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "___ أَنَا زِينْ.",
+          "answer": "شْلُونَك؟",
+          "hint": "how are you?"
+        },
+        {
+          "sentence": "___ كُلّ شَيْ زِينْ.",
+          "answer": "شْخْبَارَك؟",
+          "hint": "what is your news?"
+        },
+        {
+          "sentence": "___، نِشُوفَكْ بَاكِرْ.",
+          "answer": "زِينْ",
+          "hint": "good / fine"
+        },
+        {
+          "sentence": "___ السُّوقْ قَرِيبْ؟",
+          "answer": "وَيْنْ؟",
+          "hint": "where?"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "items": [
+        {
+          "question": "What does ‘شْلُونَك؟’ mean?",
+          "options": [
+            "what is your news? (Gulf greeting)",
+            "how are you? (Gulf; MSA: kayfa ḥāluka)",
+            "good / fine (Gulf)",
+            "where? (Gulf; MSA: ʾayna)"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What does ‘شْخْبَارَك؟’ mean?",
+          "options": [
+            "good / fine (Gulf)",
+            "what is your news? (Gulf greeting)",
+            "where? (Gulf; MSA: ʾayna)",
+            "why? (Gulf; MSA: limādhā)"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What does ‘زِينْ’ mean?",
+          "options": [
+            "where? (Gulf; MSA: ʾayna)",
+            "good / fine (Gulf)",
+            "why? (Gulf; MSA: limādhā)",
+            "I want (Gulf)"
+          ],
+          "answer": 1
+        }
+      ]
+    }
+  ]
+}

@@ -1,6 +1,7 @@
 import type { Word } from '../../db/schema';
 import { speak, isTTSSupported } from '../../lib/tts';
 import { useSettingsStore } from '../../stores/settingsStore';
+import { rtlProps } from '../../lib/rtl';
 
 function HighlightedContext({ sentence, word }: { sentence: string; word: string }) {
   const idx = sentence.toLowerCase().indexOf(word.toLowerCase());
@@ -44,7 +45,7 @@ export default function Flashcard({ word, isFlipped, onFlip }: FlashcardProps) {
         )}
       </span>
 
-      <p className="text-3xl font-bold text-gray-800 dark:text-gray-100 mb-2 text-center" style={{ fontSize: 'var(--app-font-size)' }}>
+      <p className="text-3xl font-bold text-gray-800 dark:text-gray-100 mb-2 text-center" style={{ fontSize: 'var(--app-font-size)' }} {...rtlProps(word.language)}>
         {word.word}
       </p>
 
@@ -66,7 +67,7 @@ export default function Flashcard({ word, isFlipped, onFlip }: FlashcardProps) {
       )}
 
       {!isFlipped && showContext && word.contextSentence && (
-        <p className="text-base text-gray-600 dark:text-gray-300 mt-3 italic text-center">
+        <p className="text-base text-gray-600 dark:text-gray-300 mt-3 italic text-center" {...rtlProps(word.language)}>
           "<HighlightedContext sentence={word.contextSentence} word={word.word} />"
         </p>
       )}
@@ -75,7 +76,7 @@ export default function Flashcard({ word, isFlipped, onFlip }: FlashcardProps) {
         <div className="mt-2 text-center">
           <p className="text-xl text-green-700 dark:text-green-400 font-semibold">{word.meaning}</p>
           {word.contextSentence && (
-            <p className="text-sm text-gray-500 dark:text-gray-400 mt-3 italic">
+            <p className="text-sm text-gray-500 dark:text-gray-400 mt-3 italic" {...rtlProps(word.language)}>
               "{word.contextSentence}"
             </p>
           )}

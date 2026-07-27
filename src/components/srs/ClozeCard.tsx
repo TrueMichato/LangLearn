@@ -1,6 +1,7 @@
 import { useState, useRef, useEffect } from 'react';
 import type { Word } from '../../db/schema';
 import type { SM2Grade } from '../../lib/sm2';
+import { rtlProps } from '../../lib/rtl';
 
 interface ClozeCardProps {
   word: Word;
@@ -45,7 +46,7 @@ export default function ClozeCard({ word, onGrade }: ClozeCardProps) {
   return (
     <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-lg p-6">
       {hasCloze ? (
-        <p className="text-lg text-gray-800 dark:text-gray-100 text-center leading-relaxed mb-6">
+        <p className="text-lg text-gray-800 dark:text-gray-100 text-center leading-relaxed mb-6" {...rtlProps(word.language)}>
           {beforeBlank}
           <span className="inline-block border-b-2 border-indigo-400 px-4 min-w-[60px]">
             {answered ? word.word : '___'}
@@ -93,6 +94,7 @@ export default function ClozeCard({ word, onGrade }: ClozeCardProps) {
             onKeyDown={handleKeyDown}
             placeholder="Type the missing word…"
             className="flex-1 border border-gray-300 dark:border-gray-600 rounded-xl px-4 py-2 bg-white dark:bg-gray-700 text-gray-800 dark:text-gray-100"
+            {...rtlProps(word.language)}
           />
           <button
             onClick={handleSubmit}

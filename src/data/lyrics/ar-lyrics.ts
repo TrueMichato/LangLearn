@@ -1,0 +1,133 @@
+import type { Song } from './types';
+
+// Arabic songs for learning — deliberately TRADITIONAL, folk, or purpose-written
+// educational pieces that are in the public domain (or original to this app), so
+// no copyrighted lyrics are reproduced. Each is warm, singable and useful for
+// beginners. Transliteration is scholarly; translations are literal-ish.
+export const arLyrics: Song[] = [
+  {
+    id: 'ar-talaa-al-badr',
+    title: 'طَلَعَ البَدْرُ عَلَيْنا',
+    titleRomanized: 'Ṭalaʿa al-Badru ʿAlaynā',
+    artist: 'Traditional (7th century)',
+    context: 'One of the oldest surviving Arabic songs — a traditional welcome sung, by tradition, to greet a traveller. Centuries old and in the public domain. A gentle introduction to classical rhythm.',
+    language: 'ar',
+    difficulty: 'medium',
+    lines: [
+      { original: 'طَلَعَ البَدْرُ عَلَيْنا', reading: 'ṭalaʿa al-badru ʿalaynā', translation: 'The full moon rose over us' },
+      { original: 'مِن ثَنِيّاتِ الوَداع', reading: 'min thaniyyāti l-wadāʿ', translation: 'from the valley of farewell' },
+      { original: 'وَجَبَ الشُّكْرُ عَلَيْنا', reading: 'wajaba sh-shukru ʿalaynā', translation: 'gratitude became due upon us' },
+      { original: 'ما دَعا لِلّهِ داع', reading: 'mā daʿā lillāhi dāʿ', translation: 'as long as a caller calls to God' },
+    ],
+    vocab: [
+      { word: 'بَدْر', reading: 'badr', meaning: 'full moon' },
+      { word: 'طَلَعَ', reading: 'ṭalaʿa', meaning: 'to rise (of the sun/moon)' },
+      { word: 'وَداع', reading: 'wadāʿ', meaning: 'farewell, parting' },
+      { word: 'شُكْر', reading: 'shukr', meaning: 'gratitude, thanks' },
+    ],
+  },
+  {
+    id: 'ar-alphabet-song',
+    title: 'أُغْنِية الحُرُوف',
+    titleRomanized: 'Ughniyat al-Ḥurūf',
+    artist: 'Educational (traditional)',
+    context: 'The classic way Arabic children first chant the alphabet. Sing it to fix the order and names of the letters in your memory.',
+    language: 'ar',
+    difficulty: 'easy',
+    lines: [
+      { original: 'أَلِف، باء، تاء، ثاء', reading: 'alif, bāʾ, tāʾ, thāʾ', translation: 'alif, baa, taa, thaa' },
+      { original: 'جِيم، حاء، خاء', reading: 'jīm, ḥāʾ, khāʾ', translation: 'jeem, ḥaa, khaa' },
+      { original: 'دال، ذال، راء، زاي', reading: 'dāl, dhāl, rāʾ, zāy', translation: 'daal, dhaal, raa, zaay' },
+      { original: 'سِين، شِين، صاد، ضاد', reading: 'sīn, shīn, ṣād, ḍād', translation: 'seen, sheen, ṣaad, ḍaad' },
+      { original: 'طاء، ظاء، عَيْن، غَيْن', reading: 'ṭāʾ, ẓāʾ, ʿayn, ghayn', translation: 'ṭaa, ẓaa, ʿayn, ghayn' },
+      { original: 'فاء، قاف، كاف، لام', reading: 'fāʾ, qāf, kāf, lām', translation: 'faa, qaaf, kaaf, laam' },
+      { original: 'مِيم، نُون، هاء، واو، ياء', reading: 'mīm, nūn, hāʾ, wāw, yāʾ', translation: 'meem, noon, haa, waaw, yaa' },
+    ],
+    vocab: [
+      { word: 'حَرْف', reading: 'ḥarf', meaning: 'letter (pl. ḥurūf)' },
+      { word: 'أُغْنِية', reading: 'ughniya', meaning: 'song' },
+    ],
+  },
+  {
+    id: 'ar-counting-song',
+    title: 'أَعُدُّ إلى عَشَرة',
+    titleRomanized: 'Aʿuddu ilā ʿAshara',
+    artist: 'Educational',
+    context: 'A simple counting rhyme to lock in the numbers one to ten. Clap along on each number.',
+    language: 'ar',
+    difficulty: 'easy',
+    lines: [
+      { original: 'واحِد، اثْنان، ثَلاثة', reading: 'wāḥid, ithnān, thalātha', translation: 'one, two, three' },
+      { original: 'أَرْبَعة، خَمْسة، سِتّة', reading: 'arbaʿa, khamsa, sitta', translation: 'four, five, six' },
+      { original: 'سَبْعة، ثَمانِية، تِسْعة', reading: 'sabʿa, thamāniya, tisʿa', translation: 'seven, eight, nine' },
+      { original: 'وعَشَرة، أَحْسَنْتَ يا صَدِيقي!', reading: 'wa-ʿashara, aḥsanta yā ṣadīqī!', translation: 'and ten — well done, my friend!' },
+    ],
+    vocab: [
+      { word: 'أَعُدُّ', reading: 'aʿuddu', meaning: 'I count' },
+      { word: 'عَشَرة', reading: 'ʿashara', meaning: 'ten' },
+      { word: 'أَحْسَنْتَ', reading: 'aḥsanta', meaning: 'well done! (to a male)' },
+    ],
+  },
+  {
+    id: 'ar-days-song',
+    title: 'أَيّامُ الأُسْبُوع',
+    titleRomanized: 'Ayyām al-Usbūʿ',
+    artist: 'Educational',
+    context: 'A little song for the seven days of the week. Note that the Arabic week begins on Sunday (al-aḥad = "the first").',
+    language: 'ar',
+    difficulty: 'easy',
+    lines: [
+      { original: 'الأَحَد ثُمّ الاثْنَيْن', reading: 'al-aḥad thumma l-ithnayn', translation: 'Sunday then Monday' },
+      { original: 'الثُّلاثاء والأَرْبِعاء', reading: 'ath-thulāthāʾ wa-l-arbiʿāʾ', translation: 'Tuesday and Wednesday' },
+      { original: 'الخَمِيس ثُمّ الجُمُعة', reading: 'al-khamīs thumma l-jumuʿa', translation: 'Thursday then Friday' },
+      { original: 'والسَّبْت آخِرُ المَساء', reading: 'wa-s-sabt ākhiru l-masāʾ', translation: 'and Saturday, the last evening' },
+    ],
+    vocab: [
+      { word: 'أُسْبُوع', reading: 'usbūʿ', meaning: 'week' },
+      { word: 'يَوْم', reading: 'yawm', meaning: 'day' },
+      { word: 'الجُمُعة', reading: 'al-jumuʿa', meaning: 'Friday' },
+    ],
+  },
+  {
+    id: 'ar-nami-nami',
+    title: 'نامِي نامِي',
+    titleRomanized: 'Nāmī Nāmī',
+    artist: 'Traditional folk lullaby',
+    context: 'A traditional Levantine lullaby sung to soothe a child to sleep. The tune and words are folk heritage, passed down and belonging to no one author.',
+    language: 'ar',
+    difficulty: 'easy',
+    lines: [
+      { original: 'نامِي نامِي يا صَغِيري', reading: 'nāmī nāmī yā ṣaghīrī', translation: 'Sleep, sleep, my little one' },
+      { original: 'نامِي واحْلَمي بالخَيْر', reading: 'nāmī wa-ḥlamī bi-l-khayr', translation: 'sleep and dream of good things' },
+      { original: 'يا حَبِيبي يا عُيُوني', reading: 'yā ḥabībī yā ʿuyūnī', translation: 'my love, my eyes (dearest)' },
+      { original: 'نامِي والقَمَرُ سَهْران', reading: 'nāmī wa-l-qamaru sahrān', translation: 'sleep, while the moon stays awake' },
+    ],
+    vocab: [
+      { word: 'نامِي', reading: 'nāmī', meaning: 'sleep! (to a girl)' },
+      { word: 'صَغِير', reading: 'ṣaghīr', meaning: 'small, little one' },
+      { word: 'حَبِيب', reading: 'ḥabīb', meaning: 'beloved, dear' },
+      { word: 'قَمَر', reading: 'qamar', meaning: 'moon' },
+    ],
+  },
+  {
+    id: 'ar-greeting-song',
+    title: 'صَباحُ الخَيْر',
+    titleRomanized: 'Ṣabāḥ al-Khayr',
+    artist: 'Educational',
+    context: 'A cheerful greeting song to practise the most common daily hellos and how to ask how someone is.',
+    language: 'ar',
+    difficulty: 'easy',
+    lines: [
+      { original: 'صَباحُ الخَيْر يا أَصْحابي', reading: 'ṣabāḥu l-khayri yā aṣḥābī', translation: 'Good morning, my friends' },
+      { original: 'صَباحُ النُّورِ والوُرُود', reading: 'ṣabāḥu n-nūri wa-l-wurūd', translation: 'a morning of light and roses' },
+      { original: 'كَيْفَ حالُكَ؟ كَيْفَ حالُكِ؟', reading: 'kayfa ḥāluka? kayfa ḥāluki?', translation: 'how are you? (to him / to her)' },
+      { original: 'أنا بِخَيْر، والحَمْدُ لِلّه', reading: 'anā bi-khayr, wa-l-ḥamdu lillāh', translation: "I'm well, praise be to God" },
+    ],
+    vocab: [
+      { word: 'صَباح', reading: 'ṣabāḥ', meaning: 'morning' },
+      { word: 'كَيْفَ حالُك', reading: 'kayfa ḥāluk', meaning: 'how are you?' },
+      { word: 'بِخَيْر', reading: 'bi-khayr', meaning: 'well, fine' },
+      { word: 'الحَمْدُ لِلّه', reading: 'al-ḥamdu lillāh', meaning: 'praise be to God (thank God)' },
+    ],
+  },
+];

@@ -245,6 +245,102 @@ const RESOURCES: Record<string, ResourceCategory[]> = {
       ],
     },
   ],
+  ar: [
+    {
+      label: 'Grammar & Learning',
+      emoji: '📖',
+      resources: [
+        {
+          name: 'Madinah Arabic',
+          url: 'https://www.madinaharabic.com/',
+          description: 'Two free structured courses from the Arabic alphabet through grammar.',
+        },
+        {
+          name: 'Language Transfer — Arabic',
+          url: 'https://www.languagetransfer.org/',
+          description: 'Free all-audio "Introduction to Arabic" course that builds intuition step by step.',
+        },
+        {
+          name: 'ArabicOnline.eu',
+          url: 'http://www.arabiconline.eu/',
+          description: 'EU-funded course and resources for Modern Standard Arabic.',
+        },
+        {
+          name: 'Learning Arabic — Al Jazeera',
+          url: 'http://learning.aljazeera.net/arabic',
+          description: 'Guides, articles and resources for learners from Al Jazeera.',
+        },
+      ],
+    },
+    {
+      label: 'Dictionaries & Tools',
+      emoji: '🔍',
+      resources: [
+        {
+          name: 'Qutrub — Verb Conjugator',
+          url: 'https://qutrub.arabeyes.org/',
+          description: 'Conjugate any Arabic verb across all tenses and persons.',
+        },
+        {
+          name: 'Mo3jam — Dialect Dictionary',
+          url: 'https://ar.mo3jam.com/',
+          description: 'Crowd-sourced dictionary of colloquial words across Arabic dialects.',
+        },
+        {
+          name: 'Tafqit — Numbers to Words',
+          url: 'https://tafqit.com/',
+          description: 'Convert any number into fully spelled-out (and correctly inflected) Arabic.',
+        },
+        {
+          name: 'Reverso Context (English–Arabic)',
+          url: 'https://context.reverso.net/translation/english-arabic/',
+          description: 'See words and phrases translated in real bilingual example sentences.',
+        },
+        {
+          name: 'Forvo — Arabic',
+          url: 'https://forvo.com/languages/ar/',
+          description: 'Hear any word pronounced by native speakers from different regions.',
+        },
+      ],
+    },
+    {
+      label: 'Grammar & Vocab References',
+      emoji: '🔤',
+      resources: [
+        {
+          name: 'Arabic — Desert Sky',
+          url: 'http://arabic.desert-sky.net/',
+          description: 'Clear MSA grammar and vocabulary reference (with Egyptian notes).',
+        },
+        {
+          name: 'Lisaan Masry',
+          url: 'http://www.lisaanmasry.com/',
+          description: 'Egyptian Arabic grammar guide and dictionary for colloquial learners.',
+        },
+        {
+          name: 'Book2 — Arabic (MSA)',
+          url: 'https://www.goethe-verlag.com/book2/EM/',
+          description: 'Free phrasebook course with audio across 100 everyday topics.',
+        },
+      ],
+    },
+    {
+      label: 'Community',
+      emoji: '🌐',
+      resources: [
+        {
+          name: 'r/learn_arabic',
+          url: 'https://www.reddit.com/r/learn_arabic/',
+          description: 'Active community and resource wiki for Arabic learners of all levels.',
+        },
+        {
+          name: 'r/arabic',
+          url: 'https://www.reddit.com/r/arabic/',
+          description: 'General Arabic subreddit — great for questions answered by fluent speakers.',
+        },
+      ],
+    },
+  ],
 };
 
 export default function ExternalResources() {

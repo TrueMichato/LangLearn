@@ -1,0 +1,183 @@
+{
+  "id": "days-months",
+  "words": [
+    {
+      "word": "يَوْمٌ",
+      "reading": "yawmun",
+      "meaning": "day",
+      "example": "يَوْمٌ جَدِيدٌ يَبْدَأُ الآنَ.",
+      "exampleMeaning": "A new day begins now."
+    },
+    {
+      "word": "أُسْبُوعٌ",
+      "reading": "ʾusbūʿun",
+      "meaning": "week",
+      "example": "أُسْبُوعٌ وَاحِدٌ فِي الْخُطَّةِ.",
+      "exampleMeaning": "One week is in the plan."
+    },
+    {
+      "word": "شَهْرٌ",
+      "reading": "shahrun",
+      "meaning": "month",
+      "example": "شَهْرٌ طَوِيلٌ يَنْتَهِي الْيَوْمَ.",
+      "exampleMeaning": "A long month ends today."
+    },
+    {
+      "word": "سَنَةٌ",
+      "reading": "sanatun",
+      "meaning": "year",
+      "example": "سَنَةٌ جَدِيدَةٌ تَبْدَأُ قَرِيبًا.",
+      "exampleMeaning": "A new year begins soon."
+    },
+    {
+      "word": "السَّبْتُ",
+      "reading": "as-sabtu",
+      "meaning": "Saturday",
+      "example": "السَّبْتُ يَوْمُ عُطْلَةٍ.",
+      "exampleMeaning": "Saturday is a holiday."
+    },
+    {
+      "word": "الْأَحَدُ",
+      "reading": "al-ʾaḥadu",
+      "meaning": "Sunday",
+      "example": "الْأَحَدُ بَدْءُ الْأُسْبُوعِ.",
+      "exampleMeaning": "Sunday is the start of the week."
+    },
+    {
+      "word": "الِاثْنَيْنِ",
+      "reading": "al-ithnayni",
+      "meaning": "Monday",
+      "example": "الِاثْنَيْنِ يَوْمُ دَرْسٍ.",
+      "exampleMeaning": "Monday is a lesson day."
+    },
+    {
+      "word": "الثُّلَاثَاءُ",
+      "reading": "ath-thulāthāʾu",
+      "meaning": "Tuesday",
+      "example": "الثُّلَاثَاءُ مُنَاسِبٌ لِلزِّيَارَةِ.",
+      "exampleMeaning": "Tuesday is suitable for a visit."
+    },
+    {
+      "word": "الْأَرْبِعَاءُ",
+      "reading": "al-ʾarbiʿāʾu",
+      "meaning": "Wednesday",
+      "example": "الْأَرْبِعَاءُ فِي وَسَطِ الْأُسْبُوعِ.",
+      "exampleMeaning": "Wednesday is in the middle of the week."
+    },
+    {
+      "word": "الْخَمِيسُ",
+      "reading": "al-khamīsu",
+      "meaning": "Thursday",
+      "example": "الْخَمِيسُ قَبْلَ الْجُمُعَةِ.",
+      "exampleMeaning": "Thursday is before Friday."
+    },
+    {
+      "word": "الْجُمُعَةُ",
+      "reading": "al-jumuʿatu",
+      "meaning": "Friday",
+      "example": "الْجُمُعَةُ يَوْمٌ مُبَارَكٌ.",
+      "exampleMeaning": "Friday is a blessed day."
+    },
+    {
+      "word": "الرَّبِيعُ",
+      "reading": "ar-rabīʿu",
+      "meaning": "spring",
+      "example": "الرَّبِيعُ فَصْلٌ جَمِيلٌ.",
+      "exampleMeaning": "Spring is a beautiful season."
+    },
+    {
+      "word": "الصَّيْفُ",
+      "reading": "aṣ-ṣayfu",
+      "meaning": "summer",
+      "example": "الصَّيْفُ حَارٌّ هُنَا.",
+      "exampleMeaning": "Summer is hot here."
+    },
+    {
+      "word": "الْخَرِيفُ",
+      "reading": "al-kharīfu",
+      "meaning": "autumn",
+      "example": "الْخَرِيفُ فَصْلُ الْأَوْرَاقِ.",
+      "exampleMeaning": "Autumn is the season of leaves."
+    },
+    {
+      "word": "الشِّتَاءُ",
+      "reading": "ash-shitāʾu",
+      "meaning": "winter",
+      "example": "الشِّتَاءُ بَارِدٌ جِدًّا.",
+      "exampleMeaning": "Winter is very cold."
+    },
+    {
+      "word": "الْيَوْمَ",
+      "reading": "al-yawma",
+      "meaning": "today",
+      "example": "الْيَوْمَ عِنْدِي دَرْسٌ.",
+      "exampleMeaning": "Today I have a lesson."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "___ جَدِيدٌ يَبْدَأُ الآنَ.",
+          "answer": "يَوْمٌ",
+          "hint": "day"
+        },
+        {
+          "sentence": "___ وَاحِدٌ فِي الْخُطَّةِ.",
+          "answer": "أُسْبُوعٌ",
+          "hint": "week"
+        },
+        {
+          "sentence": "___ طَوِيلٌ يَنْتَهِي الْيَوْمَ.",
+          "answer": "شَهْرٌ",
+          "hint": "month"
+        },
+        {
+          "sentence": "___ جَدِيدَةٌ تَبْدَأُ قَرِيبًا.",
+          "answer": "سَنَةٌ",
+          "hint": "year"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "items": [
+        {
+          "question": "What does ‘يَوْمٌ’ mean?",
+          "options": [
+            "week",
+            "day",
+            "month",
+            "year"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What does ‘أُسْبُوعٌ’ mean?",
+          "options": [
+            "month",
+            "week",
+            "year",
+            "Saturday"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What does ‘شَهْرٌ’ mean?",
+          "options": [
+            "year",
+            "month",
+            "Saturday",
+            "Sunday"
+          ],
+          "answer": 1
+        }
+      ]
+    }
+  ]
+}

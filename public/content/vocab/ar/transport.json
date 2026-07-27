@@ -1,0 +1,183 @@
+{
+  "id": "transport",
+  "words": [
+    {
+      "word": "سَيَّارَةٌ",
+      "reading": "sayyāratun",
+      "meaning": "car",
+      "example": "سَيَّارَةٌ حَمْرَاءُ أَمَامَ الْبَيْتِ.",
+      "exampleMeaning": "A red car is in front of the house."
+    },
+    {
+      "word": "حَافِلَةٌ",
+      "reading": "ḥāfilatun",
+      "meaning": "bus",
+      "example": "حَافِلَةٌ كَبِيرَةٌ تَقِفُ هُنَا.",
+      "exampleMeaning": "A large bus stops here."
+    },
+    {
+      "word": "قِطَارٌ",
+      "reading": "qiṭārun",
+      "meaning": "train",
+      "example": "قِطَارٌ سَرِيعٌ يَصِلُ الآنَ.",
+      "exampleMeaning": "A fast train is arriving now."
+    },
+    {
+      "word": "طَائِرَةٌ",
+      "reading": "ṭāʾiratun",
+      "meaning": "airplane",
+      "example": "طَائِرَةٌ جَدِيدَةٌ فِي الْمَطَارِ.",
+      "exampleMeaning": "A new airplane is at the airport."
+    },
+    {
+      "word": "سَفِينَةٌ",
+      "reading": "safīnatun",
+      "meaning": "ship",
+      "example": "السَّفِينَةُ فِي الْبَحْرِ.",
+      "exampleMeaning": "The ship is in the sea."
+    },
+    {
+      "word": "دَرَّاجَةٌ",
+      "reading": "darrājatun",
+      "meaning": "bicycle",
+      "example": "الدَّرَّاجَةُ خَفِيفَةٌ.",
+      "exampleMeaning": "The bicycle is light."
+    },
+    {
+      "word": "دَرَّاجَةٌ نَارِيَّةٌ",
+      "reading": "darrājatun nāriyyatun",
+      "meaning": "motorcycle",
+      "example": "دَرَّاجَةٌ نَارِيَّةٌ سَرِيعَةٌ فِي الشَّارِعِ.",
+      "exampleMeaning": "A fast motorcycle is in the street."
+    },
+    {
+      "word": "سَيَّارَةُ أُجْرَةٍ",
+      "reading": "sayyāratu ʾujratin",
+      "meaning": "taxi",
+      "example": "سَيَّارَةُ أُجْرَةٍ أَمَامَ الْفُنْدُقِ.",
+      "exampleMeaning": "A taxi is in front of the hotel."
+    },
+    {
+      "word": "مِتْرُو",
+      "reading": "mitrū",
+      "meaning": "metro",
+      "example": "الْمِتْرُو سَرِيعٌ فِي الْمَدِينَةِ.",
+      "exampleMeaning": "The metro is fast in the city."
+    },
+    {
+      "word": "تَذْكِرَةٌ",
+      "reading": "tadhkiratun",
+      "meaning": "ticket",
+      "example": "التَّذْكِرَةُ فِي جَيْبِي.",
+      "exampleMeaning": "The ticket is in my pocket."
+    },
+    {
+      "word": "مَحَطَّةٌ",
+      "reading": "maḥaṭṭatun",
+      "meaning": "station",
+      "example": "الْمَحَطَّةُ مُزْدَحِمَةٌ.",
+      "exampleMeaning": "The station is crowded."
+    },
+    {
+      "word": "رِحْلَةٌ",
+      "reading": "riḥlatun",
+      "meaning": "trip / flight",
+      "example": "الرِّحْلَةُ قَصِيرَةٌ.",
+      "exampleMeaning": "The trip is short."
+    },
+    {
+      "word": "سَائِقٌ",
+      "reading": "sāʾiqun",
+      "meaning": "driver",
+      "example": "السَّائِقُ هَادِئٌ.",
+      "exampleMeaning": "The driver is calm."
+    },
+    {
+      "word": "طَرِيقٌ",
+      "reading": "ṭarīqun",
+      "meaning": "road",
+      "example": "الطَّرِيقُ مُزْدَحِمٌ الْيَوْمَ.",
+      "exampleMeaning": "The road is crowded today."
+    },
+    {
+      "word": "مَرْكَبَةٌ",
+      "reading": "markabatun",
+      "meaning": "vehicle",
+      "example": "الْمَرْكَبَةُ جَدِيدَةٌ.",
+      "exampleMeaning": "The vehicle is new."
+    },
+    {
+      "word": "مِقْعَدٌ",
+      "reading": "miqʿadun",
+      "meaning": "seat",
+      "example": "الْمِقْعَدُ قُرْبَ النَّافِذَةِ.",
+      "exampleMeaning": "The seat is near the window."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "___ حَمْرَاءُ أَمَامَ الْبَيْتِ.",
+          "answer": "سَيَّارَةٌ",
+          "hint": "car"
+        },
+        {
+          "sentence": "___ كَبِيرَةٌ تَقِفُ هُنَا.",
+          "answer": "حَافِلَةٌ",
+          "hint": "bus"
+        },
+        {
+          "sentence": "___ سَرِيعٌ يَصِلُ الآنَ.",
+          "answer": "قِطَارٌ",
+          "hint": "train"
+        },
+        {
+          "sentence": "___ جَدِيدَةٌ فِي الْمَطَارِ.",
+          "answer": "طَائِرَةٌ",
+          "hint": "airplane"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "items": [
+        {
+          "question": "What does ‘سَيَّارَةٌ’ mean?",
+          "options": [
+            "bus",
+            "car",
+            "train",
+            "airplane"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What does ‘حَافِلَةٌ’ mean?",
+          "options": [
+            "train",
+            "bus",
+            "airplane",
+            "ship"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What does ‘قِطَارٌ’ mean?",
+          "options": [
+            "airplane",
+            "train",
+            "ship",
+            "bicycle"
+          ],
+          "answer": 1
+        }
+      ]
+    }
+  ]
+}

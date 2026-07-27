@@ -1,0 +1,183 @@
+{
+  "id": "egyptian-phrases",
+  "words": [
+    {
+      "word": "إِزَّيَّك؟",
+      "reading": "izzayyak?",
+      "meaning": "how are you? (Egyptian; MSA: kayfa ḥāluka)",
+      "example": "إِزَّيَّك؟ أَنَا كُوَيِّسْ.",
+      "exampleMeaning": "How are you? I am fine."
+    },
+    {
+      "word": "عَامِل إِيهْ؟",
+      "reading": "ʿāmil ēh?",
+      "meaning": "how are you doing? (Egyptian)",
+      "example": "عَامِل إِيهْ؟ كُلُّه تَمَامْ.",
+      "exampleMeaning": "How are you doing? Everything is fine."
+    },
+    {
+      "word": "كُوَيِّسْ",
+      "reading": "kuwayyis",
+      "meaning": "good / fine (Egyptian)",
+      "example": "كُوَيِّسْ، أَنَا فِي الْبَيْتْ.",
+      "exampleMeaning": "Good, I am at home."
+    },
+    {
+      "word": "مِشْ",
+      "reading": "mish",
+      "meaning": "not (Egyptian)",
+      "example": "مِشْ مُشْكِلَة، نِتْكَلِّمْ بُكْرَة.",
+      "exampleMeaning": "No problem, we will talk tomorrow."
+    },
+    {
+      "word": "أَيُوهْ",
+      "reading": "aywa",
+      "meaning": "yes (Egyptian)",
+      "example": "أَيُوهْ، أَنَا جَاهِزْ.",
+      "exampleMeaning": "Yes, I am ready."
+    },
+    {
+      "word": "لَأ",
+      "reading": "laʾ",
+      "meaning": "no (Egyptian)",
+      "example": "لَأ، مِشْ عَايِزْ شَاي.",
+      "exampleMeaning": "No, I do not want tea."
+    },
+    {
+      "word": "مَعَ السَّلَامَة",
+      "reading": "maʿa s-salāma",
+      "meaning": "goodbye (Egyptian/MSA)",
+      "example": "مَعَ السَّلَامَة، أَشُوفَكْ بَعْدَيْنْ.",
+      "exampleMeaning": "Goodbye, I will see you later."
+    },
+    {
+      "word": "بُكْرَة",
+      "reading": "bukra",
+      "meaning": "tomorrow (Egyptian; MSA: ghadan)",
+      "example": "بُكْرَة عِنْدِي شُغْلْ.",
+      "exampleMeaning": "Tomorrow I have work."
+    },
+    {
+      "word": "دِلْوَقْتِي",
+      "reading": "dilwaʾti",
+      "meaning": "now (Egyptian; MSA: al-ʾān)",
+      "example": "دِلْوَقْتِي أَنَا مَشْغُولْ.",
+      "exampleMeaning": "Now I am busy."
+    },
+    {
+      "word": "فِينْ؟",
+      "reading": "fēn?",
+      "meaning": "where? (Egyptian; MSA: ʾayna)",
+      "example": "فِينْ الْمَحَطَّة؟",
+      "exampleMeaning": "Where is the station?"
+    },
+    {
+      "word": "لِيهْ؟",
+      "reading": "līh?",
+      "meaning": "why? (Egyptian; MSA: limādhā)",
+      "example": "لِيهْ أَنْتَ زَعْلَانْ؟",
+      "exampleMeaning": "Why are you upset?"
+    },
+    {
+      "word": "عَايِزْ",
+      "reading": "ʿāyiz",
+      "meaning": "want (male speaker; Egyptian)",
+      "example": "أَنَا عَايِزْ قَهْوَة.",
+      "exampleMeaning": "I want coffee."
+    },
+    {
+      "word": "مُمْكِنْ",
+      "reading": "mumkin",
+      "meaning": "possible / may I? (Egyptian/MSA)",
+      "example": "مُمْكِنْ تِسَاعِدْنِي؟",
+      "exampleMeaning": "Can you help me?"
+    },
+    {
+      "word": "فُلّ",
+      "reading": "full",
+      "meaning": "great / excellent (Egyptian)",
+      "example": "الدَّرْسْ فُلّ النَّهَارْدَه.",
+      "exampleMeaning": "The lesson is great today."
+    },
+    {
+      "word": "بَاشَا",
+      "reading": "bāshā",
+      "meaning": "friendly sir / buddy (Egyptian)",
+      "example": "تَمَامْ يَا بَاشَا.",
+      "exampleMeaning": "All right, buddy."
+    },
+    {
+      "word": "مَيَّة",
+      "reading": "mayya",
+      "meaning": "water (Egyptian; MSA: māʾ)",
+      "example": "عَايِزْ مَيَّة بَارْدَة.",
+      "exampleMeaning": "I want cold water."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "___ أَنَا كُوَيِّسْ.",
+          "answer": "إِزَّيَّك؟",
+          "hint": "how are you?"
+        },
+        {
+          "sentence": "___ كُلُّه تَمَامْ.",
+          "answer": "عَامِل إِيهْ؟",
+          "hint": "how are you doing?"
+        },
+        {
+          "sentence": "___، أَنَا فِي الْبَيْتْ.",
+          "answer": "كُوَيِّسْ",
+          "hint": "good / fine"
+        },
+        {
+          "sentence": "___ مُشْكِلَة، نِتْكَلِّمْ بُكْرَة.",
+          "answer": "مِشْ",
+          "hint": "not"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "items": [
+        {
+          "question": "What does ‘إِزَّيَّك؟’ mean?",
+          "options": [
+            "how are you doing? (Egyptian)",
+            "how are you? (Egyptian; MSA: kayfa ḥāluka)",
+            "good / fine (Egyptian)",
+            "not (Egyptian)"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What does ‘عَامِل إِيهْ؟’ mean?",
+          "options": [
+            "good / fine (Egyptian)",
+            "how are you doing? (Egyptian)",
+            "not (Egyptian)",
+            "yes (Egyptian)"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What does ‘كُوَيِّسْ’ mean?",
+          "options": [
+            "not (Egyptian)",
+            "good / fine (Egyptian)",
+            "yes (Egyptian)",
+            "no (Egyptian)"
+          ],
+          "answer": 1
+        }
+      ]
+    }
+  ]
+}

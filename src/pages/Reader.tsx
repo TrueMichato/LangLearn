@@ -12,6 +12,7 @@ import FuriganaText from '../components/reader/FuriganaText';
 import { applyStress } from '../lib/russian-stress';
 import { splitSentences, findSentenceAt, type SentenceSpan } from '../lib/sentences';
 import { getLanguageLabel } from '../lib/languages';
+import { isRTL } from '../lib/rtl';
 import { SkeletonCard, SkeletonList } from '../components/common/Skeleton';
 import ComprehensionIndicator from '../components/reader/ComprehensionIndicator';
 import { getKnownWordSet } from '../lib/text-analysis';
@@ -519,7 +520,7 @@ export default function ReaderPage() {
         </button>
       )}
 
-      <div className="bg-white dark:bg-slate-800 rounded-2xl shadow p-4 leading-relaxed text-[1.1rem] dark:text-slate-100" style={{ fontSize: 'var(--app-font-size)' }}>
+      <div className="bg-white dark:bg-slate-800 rounded-2xl shadow p-4 leading-relaxed text-[1.1rem] dark:text-slate-100" style={{ fontSize: 'var(--app-font-size)' }} dir={isRTL(language) ? 'rtl' : undefined}>
         {jaTokens.length > 0 ? (
           <FuriganaText
             tokens={jaTokens}

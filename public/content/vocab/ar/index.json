@@ -1,0 +1,322 @@
+[
+  {
+    "id": "greetings",
+    "title": "Greetings & Politeness",
+    "order": 1,
+    "wordCount": 16,
+    "level": "beginner",
+    "dialect": "msa"
+  },
+  {
+    "id": "people-pronouns",
+    "title": "People & Pronouns",
+    "order": 2,
+    "wordCount": 16,
+    "level": "beginner",
+    "dialect": "msa"
+  },
+  {
+    "id": "numbers-1-20",
+    "title": "Numbers 1–20",
+    "order": 3,
+    "wordCount": 18,
+    "level": "beginner",
+    "dialect": "msa"
+  },
+  {
+    "id": "numbers-large",
+    "title": "Numbers 20–1000",
+    "order": 4,
+    "wordCount": 16,
+    "level": "beginner",
+    "dialect": "msa"
+  },
+  {
+    "id": "days-months",
+    "title": "Days, Months & Seasons",
+    "order": 5,
+    "wordCount": 16,
+    "level": "beginner",
+    "dialect": "msa"
+  },
+  {
+    "id": "time",
+    "title": "Telling Time",
+    "order": 6,
+    "wordCount": 16,
+    "level": "beginner",
+    "dialect": "msa"
+  },
+  {
+    "id": "colors",
+    "title": "Colors & Shapes",
+    "order": 7,
+    "wordCount": 16,
+    "level": "beginner",
+    "dialect": "msa"
+  },
+  {
+    "id": "family",
+    "title": "Family Members",
+    "order": 8,
+    "wordCount": 16,
+    "level": "beginner",
+    "dialect": "msa"
+  },
+  {
+    "id": "body",
+    "title": "The Body",
+    "order": 9,
+    "wordCount": 16,
+    "level": "beginner",
+    "dialect": "msa"
+  },
+  {
+    "id": "food-drink",
+    "title": "Food & Drink",
+    "order": 10,
+    "wordCount": 16,
+    "level": "beginner",
+    "dialect": "msa"
+  },
+  {
+    "id": "fruits-vegetables",
+    "title": "Fruits & Vegetables",
+    "order": 11,
+    "wordCount": 16,
+    "level": "beginner",
+    "dialect": "msa"
+  },
+  {
+    "id": "house-furniture",
+    "title": "House & Furniture",
+    "order": 12,
+    "wordCount": 16,
+    "level": "beginner",
+    "dialect": "msa"
+  },
+  {
+    "id": "clothing",
+    "title": "Clothing",
+    "order": 13,
+    "wordCount": 16,
+    "level": "beginner",
+    "dialect": "msa"
+  },
+  {
+    "id": "animals",
+    "title": "Animals",
+    "order": 14,
+    "wordCount": 16,
+    "level": "beginner",
+    "dialect": "msa"
+  },
+  {
+    "id": "weather-nature",
+    "title": "Weather & Nature",
+    "order": 15,
+    "wordCount": 16,
+    "level": "beginner",
+    "dialect": "msa"
+  },
+  {
+    "id": "school",
+    "title": "School & Study",
+    "order": 16,
+    "wordCount": 16,
+    "level": "beginner",
+    "dialect": "msa"
+  },
+  {
+    "id": "city-places",
+    "title": "City & Places",
+    "order": 17,
+    "wordCount": 16,
+    "level": "beginner",
+    "dialect": "msa"
+  },
+  {
+    "id": "directions",
+    "title": "Directions & Location",
+    "order": 18,
+    "wordCount": 16,
+    "level": "beginner",
+    "dialect": "msa"
+  },
+  {
+    "id": "transport",
+    "title": "Transportation",
+    "order": 19,
+    "wordCount": 16,
+    "level": "beginner",
+    "dialect": "msa"
+  },
+  {
+    "id": "shopping-money",
+    "title": "Shopping & Money",
+    "order": 20,
+    "wordCount": 16,
+    "level": "beginner",
+    "dialect": "msa"
+  },
+  {
+    "id": "restaurant-cafe",
+    "title": "Restaurant & Café",
+    "order": 21,
+    "wordCount": 16,
+    "level": "beginner",
+    "dialect": "msa"
+  },
+  {
+    "id": "common-verbs-1",
+    "title": "Common Verbs I",
+    "order": 22,
+    "wordCount": 16,
+    "level": "beginner",
+    "dialect": "msa"
+  },
+  {
+    "id": "common-adjectives",
+    "title": "Common Adjectives",
+    "order": 23,
+    "wordCount": 16,
+    "level": "beginner",
+    "dialect": "msa"
+  },
+  {
+    "id": "opposites",
+    "title": "Opposites (Adjective Pairs)",
+    "order": 24,
+    "wordCount": 16,
+    "level": "beginner",
+    "dialect": "msa"
+  },
+  {
+    "id": "work-professions",
+    "title": "Work & Professions",
+    "order": 25,
+    "wordCount": 16,
+    "level": "intermediate",
+    "dialect": "msa"
+  },
+  {
+    "id": "travel-airport",
+    "title": "Travel & Airport",
+    "order": 26,
+    "wordCount": 16,
+    "level": "intermediate",
+    "dialect": "msa"
+  },
+  {
+    "id": "health-doctor",
+    "title": "Health & the Doctor",
+    "order": 27,
+    "wordCount": 16,
+    "level": "intermediate",
+    "dialect": "msa"
+  },
+  {
+    "id": "common-verbs-2",
+    "title": "Common Verbs II",
+    "order": 28,
+    "wordCount": 16,
+    "level": "intermediate",
+    "dialect": "msa"
+  },
+  {
+    "id": "emotions",
+    "title": "Feelings & Emotions",
+    "order": 29,
+    "wordCount": 16,
+    "level": "intermediate",
+    "dialect": "msa"
+  },
+  {
+    "id": "question-connectors",
+    "title": "Question & Connector Words",
+    "order": 30,
+    "wordCount": 16,
+    "level": "intermediate",
+    "dialect": "msa"
+  },
+  {
+    "id": "time-expressions",
+    "title": "Time Expressions & Adverbs",
+    "order": 31,
+    "wordCount": 16,
+    "level": "intermediate",
+    "dialect": "msa"
+  },
+  {
+    "id": "technology",
+    "title": "Technology & Phone",
+    "order": 32,
+    "wordCount": 16,
+    "level": "intermediate",
+    "dialect": "msa"
+  },
+  {
+    "id": "hobbies-sports",
+    "title": "Hobbies & Sports",
+    "order": 33,
+    "wordCount": 16,
+    "level": "intermediate",
+    "dialect": "msa"
+  },
+  {
+    "id": "nature-geography",
+    "title": "Geography & the Arab World",
+    "order": 34,
+    "wordCount": 16,
+    "level": "intermediate",
+    "dialect": "msa"
+  },
+  {
+    "id": "culture-expressions",
+    "title": "Culture & Common Expressions",
+    "order": 35,
+    "wordCount": 16,
+    "level": "intermediate",
+    "dialect": "msa"
+  },
+  {
+    "id": "egyptian-phrases",
+    "title": "Egyptian Everyday Phrases",
+    "order": 36,
+    "wordCount": 16,
+    "level": "intermediate",
+    "dialect": "egyptian"
+  },
+  {
+    "id": "levantine-phrases",
+    "title": "Levantine Everyday Phrases",
+    "order": 37,
+    "wordCount": 16,
+    "level": "intermediate",
+    "dialect": "levantine"
+  },
+  {
+    "id": "gulf-phrases",
+    "title": "Gulf Everyday Phrases",
+    "order": 38,
+    "wordCount": 16,
+    "level": "intermediate",
+    "dialect": "gulf"
+  },
+  {
+    "id": "colloquial-verbs",
+    "title": "Spoken Colloquial Verbs",
+    "order": 39,
+    "wordCount": 16,
+    "level": "intermediate",
+    "dialect": "all"
+  },
+  {
+    "id": "texting-social",
+    "title": "Texting & Social Expressions",
+    "order": 40,
+    "wordCount": 16,
+    "level": "intermediate",
+    "dialect": "all"
+  }
+]
