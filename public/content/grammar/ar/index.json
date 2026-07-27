@@ -1066,5 +1066,53 @@
     "title": "Alif al-Tanwīn in Spelling",
     "order": 178,
     "group": "🏗️ Foundations"
+  },
+  {
+    "id": "inna-vs-anna",
+    "title": "Inna vs Anna in Usage",
+    "order": 179,
+    "group": "🔢 Structure & Nuance"
+  },
+  {
+    "id": "omitted-mubtada-khabar",
+    "title": "Omitted Mubtadaʾ or Khabar",
+    "order": 180,
+    "group": "🔢 Structure & Nuance"
+  },
+  {
+    "id": "hal-prepositional-phrase",
+    "title": "Ḥāl as a Prepositional Phrase",
+    "order": 181,
+    "group": "🔢 Structure & Nuance"
+  },
+  {
+    "id": "plural-paucity-abundance",
+    "title": "Plural of Paucity vs Plural of Abundance",
+    "order": 182,
+    "group": "🔢 Structure & Nuance"
+  },
+  {
+    "id": "vocative-omitted-ya",
+    "title": "Vocative with Omitted Yā",
+    "order": 183,
+    "group": "🔢 Structure & Nuance"
+  },
+  {
+    "id": "relative-return-pronoun",
+    "title": "The Return Pronoun in Relative Clauses",
+    "order": 184,
+    "group": "🔢 Structure & Nuance"
+  },
+  {
+    "id": "idha-fujaiyya",
+    "title": "Idhā al-Fujāʾiyya in Narrative",
+    "order": 185,
+    "group": "🔢 Structure & Nuance"
+  },
+  {
+    "id": "rubba-particle",
+    "title": "Rubba: The Particle of Many a",
+    "order": 186,
+    "group": "🔢 Structure & Nuance"
   }
 ]

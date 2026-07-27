@@ -1349,6 +1349,109 @@
       ],
       "description": "A detailed explainer about how the human heart pumps blood.",
       "wordCount": 141
+    },
+    {
+      "id": "fruit-shop-dialogue-ar",
+      "title": "حِوارٌ في مَحَلِّ الفَواكِهِ",
+      "titleEn": "Dialogue at the Fruit Shop",
+      "difficulty": "easy",
+      "tags": [
+        "food",
+        "dialogue",
+        "shopping"
+      ],
+      "description": "A simple shop dialogue about buying fruit politely.",
+      "wordCount": 46
+    },
+    {
+      "id": "pack-school-bag-ar",
+      "title": "كَيْفَ تُرَتِّبُ حَقيبَتَكَ المَدْرَسِيَّةَ",
+      "titleEn": "How to Pack Your School Bag",
+      "difficulty": "easy",
+      "tags": [
+        "how-to",
+        "school",
+        "daily-life"
+      ],
+      "description": "A short practical guide to preparing a school bag before bedtime.",
+      "wordCount": 49
+    },
+    {
+      "id": "safe-crossing-ar",
+      "title": "عُبورُ الشّارِعِ بِأَمانٍ",
+      "titleEn": "Crossing the Street Safely",
+      "difficulty": "easy",
+      "tags": [
+        "safety",
+        "how-to"
+      ],
+      "description": "A simple safety guide for crossing at a pedestrian crossing.",
+      "wordCount": 49
+    },
+    {
+      "id": "lentil-soup-recipe-ar",
+      "title": "وَصْفَةُ شُورْبَةِ العَدَسِ",
+      "titleEn": "Lentil Soup Recipe",
+      "difficulty": "medium",
+      "tags": [
+        "food",
+        "recipe",
+        "health"
+      ],
+      "description": "A step-by-step recipe for a warm and healthy lentil soup.",
+      "wordCount": 86
+    },
+    {
+      "id": "photosynthesis-explainer-ar",
+      "title": "التَّمْثيلُ الضَّوْئِيُّ",
+      "titleEn": "Photosynthesis",
+      "difficulty": "medium",
+      "tags": [
+        "science",
+        "nature",
+        "plants"
+      ],
+      "description": "A clear science explainer about how plants make food using sunlight.",
+      "wordCount": 80
+    },
+    {
+      "id": "jerash-travel-ar",
+      "title": "رِحْلَةٌ إِلَى جَرَشَ",
+      "titleEn": "A Trip to Jerash",
+      "difficulty": "medium",
+      "tags": [
+        "travel",
+        "history",
+        "city"
+      ],
+      "description": "A travel account of visiting the ancient city of Jerash.",
+      "wordCount": 86
+    },
+    {
+      "id": "fatima-al-fihri-biography-ar",
+      "title": "فاطِمَةُ الفِهْرِيَّةُ",
+      "titleEn": "Fatima al-Fihri",
+      "difficulty": "hard",
+      "tags": [
+        "biography",
+        "history",
+        "education"
+      ],
+      "description": "A factual biography of Fatima al-Fihri and the legacy of al-Qarawiyyin.",
+      "wordCount": 145
+    },
+    {
+      "id": "olive-tree-legend-ar",
+      "title": "أُسْطورَةُ الزَّيْتونَةِ",
+      "titleEn": "The Legend of the Olive Tree",
+      "difficulty": "hard",
+      "tags": [
+        "legend",
+        "wisdom",
+        "nature"
+      ],
+      "description": "An original folk-style legend about sharing water and listening to old wisdom.",
+      "wordCount": 143
     }
   ]
 }
