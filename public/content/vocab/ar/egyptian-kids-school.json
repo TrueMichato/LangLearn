@@ -1,0 +1,159 @@
+{
+  "id": "egyptian-kids-school",
+  "words": [
+    {
+      "word": "عَيِّل",
+      "reading": "ʿayyil",
+      "meaning": "kid",
+      "example": "الْعَيِّلْ بِيِلْعَبْ فِي الْفُسْحَةْ.",
+      "exampleMeaning": "The kid is playing during recess."
+    },
+    {
+      "word": "وَلَد",
+      "reading": "walad",
+      "meaning": "boy",
+      "example": "الْوَلَدْ شَاطِرْ فِي الْحِسَابْ.",
+      "exampleMeaning": "The boy is good at math."
+    },
+    {
+      "word": "بِنْت",
+      "reading": "bint",
+      "meaning": "girl",
+      "example": "الْبِنْتْ كَتَبِتْ الدَّرْسْ فِي الْكُرَّاسَةْ.",
+      "exampleMeaning": "The girl wrote the lesson in the notebook."
+    },
+    {
+      "word": "مَدْرَسَة",
+      "reading": "madrasa",
+      "meaning": "school",
+      "example": "الْمَدْرَسَةْ قَرِيبَةْ مِنِ الْبَيْتْ.",
+      "exampleMeaning": "The school is near the house."
+    },
+    {
+      "word": "فَصْل",
+      "reading": "faṣl",
+      "meaning": "classroom",
+      "example": "الْفَصْلْ نَضِيفْ وَفِيهِ سَبُّورَةْ.",
+      "exampleMeaning": "The classroom is clean and has a board."
+    },
+    {
+      "word": "مُدَرِّس",
+      "reading": "mudarris",
+      "meaning": "male teacher",
+      "example": "الْمُدَرِّسْ شَرَحْ الدَّرْسْ بِبَسَاطَةْ.",
+      "exampleMeaning": "The teacher explained the lesson simply."
+    },
+    {
+      "word": "مُدَرِّسَة",
+      "reading": "mudarrisa",
+      "meaning": "female teacher",
+      "example": "الْمُدَرِّسَةْ سَاعَدِتْ الْبِنْتْ فِي الْوَاجِبْ.",
+      "exampleMeaning": "The teacher helped the girl with the homework."
+    },
+    {
+      "word": "كُرَّاسَة",
+      "reading": "kurrāsa",
+      "meaning": "notebook",
+      "example": "حُطّ الْكُرَّاسَةْ عَلَى الدَّرْجْ.",
+      "exampleMeaning": "Put the notebook on the desk."
+    },
+    {
+      "word": "شَنْطَة",
+      "reading": "shanṭa",
+      "meaning": "school bag",
+      "example": "الشَّنْطَةْ تِقِيلَةْ عَشَانْ فِيهَا كُتُبْ كِتِيرْ.",
+      "exampleMeaning": "The bag is heavy because it has many books."
+    },
+    {
+      "word": "قَلَم",
+      "reading": "ʾalam",
+      "meaning": "pen",
+      "example": "اِدِّينِي قَلَمْ عَشَانْ أَكْتُبْ الاِسْمْ.",
+      "exampleMeaning": "Give me a pen so I can write the name."
+    },
+    {
+      "word": "وَاجِب",
+      "reading": "wāgib",
+      "meaning": "homework",
+      "example": "عِنْدِي وَاجِبْ كِتِيرْ النَّهَارْدَهْ.",
+      "exampleMeaning": "I have a lot of homework today."
+    },
+    {
+      "word": "دَرْس",
+      "reading": "dars",
+      "meaning": "lesson",
+      "example": "الدَّرْسْ كَانْ سَهْلْ وَمُهِمّْ.",
+      "exampleMeaning": "The lesson was easy and important."
+    },
+    {
+      "word": "فُسْحَة",
+      "reading": "fusḥa",
+      "meaning": "recess",
+      "example": "فِي الْفُسْحَةْ بِنَاكُلْ سَانْدِوِتْشْ.",
+      "exampleMeaning": "During recess we eat a sandwich."
+    },
+    {
+      "word": "يِذَاكِر",
+      "reading": "yidhākir",
+      "meaning": "to study",
+      "example": "هُوَّ يِذَاكِرْ قَبْلَ الاِمْتِحَانْ.",
+      "exampleMeaning": "He studies before the exam."
+    },
+    {
+      "word": "نَاجِح",
+      "reading": "nāgiḥ",
+      "meaning": "passed / successful",
+      "example": "الطَّالِبْ نَاجِحْ وَفَرْحَانْ.",
+      "exampleMeaning": "The student passed and is happy."
+    },
+    {
+      "word": "شَاطِر",
+      "reading": "shāṭir",
+      "meaning": "clever / good student",
+      "example": "إِنْتَ شَاطِرْ فِي الْقِرَايَةْ.",
+      "exampleMeaning": "You are good at reading."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "___ بِيِلْعَبْ فِي الْفُسْحَةْ.",
+          "answer": "عَيِّل",
+          "hint": "kid"
+        },
+        {
+          "sentence": "حُطّ الْكِتَابْ فِي ___.",
+          "answer": "شَنْطَة",
+          "hint": "school bag"
+        },
+        {
+          "sentence": "عِنْدِي ___ كِتِيرْ النَّهَارْدَهْ.",
+          "answer": "وَاجِب",
+          "hint": "homework"
+        },
+        {
+          "sentence": "هُوَّ ___ وَبِيِحِبّ الْمَدْرَسَةْ.",
+          "answer": "شَاطِر",
+          "hint": "clever / good student"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "In Egyptian school talk, what does ‘فُسْحَة’ mean?",
+      "options": [
+        "recess",
+        "notebook",
+        "teacher",
+        "homework"
+      ],
+      "answer": 0
+    }
+  ]
+}

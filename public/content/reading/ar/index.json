@@ -1048,6 +1048,108 @@
       ],
       "description": "An original fable about patient service, strength, and mercy.",
       "wordCount": 141
+    },
+    {
+      "id": "vet-clinic-ar",
+      "title": "فِي عِيَادَةِ الطَّبِيبَةِ الْبَيْطَرِيَّةِ",
+      "titleEn": "At the Veterinary Clinic",
+      "difficulty": "easy",
+      "tags": [
+        "animals",
+        "profession",
+        "health"
+      ],
+      "description": "A simple scene about caring for a sick cat at a veterinary clinic.",
+      "wordCount": 44
+    },
+    {
+      "id": "planting-basil-ar",
+      "title": "زِرَاعَةُ الرَّيْحَانِ",
+      "titleEn": "Planting Basil",
+      "difficulty": "easy",
+      "tags": [
+        "how-to",
+        "nature"
+      ],
+      "description": "A beginner-friendly how-to text about planting basil on a balcony.",
+      "wordCount": 43
+    },
+    {
+      "id": "weather-window-ar",
+      "title": "الطَّقْسُ عِنْدَ النَّافِذَةِ",
+      "titleEn": "Weather at the Window",
+      "difficulty": "easy",
+      "tags": [
+        "weather",
+        "daily-life"
+      ],
+      "description": "A short daily-life text about checking the weather before school.",
+      "wordCount": 46
+    },
+    {
+      "id": "recycling-club-ar",
+      "title": "نَادِي التَّدْوِيرِ",
+      "titleEn": "The Recycling Club",
+      "difficulty": "medium",
+      "tags": [
+        "recycling",
+        "environment",
+        "school"
+      ],
+      "description": "A school club learns how small recycling habits can help the community.",
+      "wordCount": 85
+    },
+    {
+      "id": "museum-guide-ar",
+      "title": "دَلِيلَةُ الْمَتْحَفِ",
+      "titleEn": "The Museum Guide",
+      "difficulty": "medium",
+      "tags": [
+        "profession",
+        "culture",
+        "history"
+      ],
+      "description": "A description of a museum guide who helps visitors listen to history.",
+      "wordCount": 82
+    },
+    {
+      "id": "school-radio-book-swap-ar",
+      "title": "خَبَرٌ مِنْ إِذَاعَةِ الْمَدْرَسَةِ",
+      "titleEn": "School Radio Book Exchange",
+      "difficulty": "medium",
+      "tags": [
+        "news",
+        "school",
+        "reading"
+      ],
+      "description": "A short school news report about a student book-exchange fair.",
+      "wordCount": 80
+    },
+    {
+      "id": "star-shepherd-legend-ar",
+      "title": "نَجْمُ الرَّاعِي الصَّغِيرِ",
+      "titleEn": "The Little Shepherd Star",
+      "difficulty": "hard",
+      "tags": [
+        "legend",
+        "kindness",
+        "night"
+      ],
+      "description": "An original gentle legend about a shepherd, a lost lamb, and a helpful star.",
+      "wordCount": 140
+    },
+    {
+      "id": "date-palm-fable-ar",
+      "title": "النَّخْلَةُ وَالتِّينَةُ",
+      "titleEn": "The Palm and the Fig Tree",
+      "difficulty": "hard",
+      "tags": [
+        "fable",
+        "nature",
+        "wisdom"
+      ],
+      "description": "An original moral fable about pride, usefulness, and generosity.",
+      "wordCount": 140
     }
   ]
 }

@@ -1,0 +1,159 @@
+{
+  "id": "cybersecurity-online-safety",
+  "words": [
+    {
+      "word": "أَمْنٌ سِيبْرَانِيٌّ",
+      "reading": "amnun sībrāniyyun",
+      "meaning": "cybersecurity",
+      "example": "أَمْنٌ سِيبْرَانِيٌّ جَيِّدٌ يَحْمِي الْمُسْتَخْدِمِينَ.",
+      "exampleMeaning": "Good cybersecurity protects users."
+    },
+    {
+      "word": "كَلِمَةُ مُرُورٍ",
+      "reading": "kalimatu murūrin",
+      "meaning": "password",
+      "example": "كَلِمَةُ مُرُورٍ قَوِيَّةٌ تَحْمِي الْحِسَابَ.",
+      "exampleMeaning": "A strong password protects the account."
+    },
+    {
+      "word": "خُصُوصِيَّةٌ",
+      "reading": "khuṣūṣiyyatun",
+      "meaning": "privacy",
+      "example": "الْخُصُوصِيَّةُ حَقٌّ مُهِمٌّ عَلَى الْإِنْتَرْنِتِ.",
+      "exampleMeaning": "Privacy is an important right on the internet."
+    },
+    {
+      "word": "تَشْفِيرٌ",
+      "reading": "tashfīrun",
+      "meaning": "encryption",
+      "example": "تَشْفِيرٌ قَوِيٌّ يَحْمِي الْمِلَفَّاتِ.",
+      "exampleMeaning": "Strong encryption protects the files."
+    },
+    {
+      "word": "بَرْمَجِيَّةٌ خَبِيثَةٌ",
+      "reading": "barmajiyyatun khabīthatun",
+      "meaning": "malware",
+      "example": "بَرْمَجِيَّةٌ خَبِيثَةٌ قَدْ تُتْلِفُ الْجِهَازَ.",
+      "exampleMeaning": "Malware may damage the device."
+    },
+    {
+      "word": "اِحْتِيَالٌ إِلِكْتُرُونِيٌّ",
+      "reading": "iḥtiyālun ilikturūniyyun",
+      "meaning": "online fraud",
+      "example": "اِحْتِيَالٌ إِلِكْتُرُونِيٌّ يَسْتَهْدِفُ الْبَطَاقَاتِ.",
+      "exampleMeaning": "Online fraud targets cards."
+    },
+    {
+      "word": "رَابِطٌ مُزَيَّفٌ",
+      "reading": "rābiṭun muzayyakun",
+      "meaning": "fake link",
+      "example": "رَابِطٌ مُزَيَّفٌ قَدْ يَسْرِقُ الْمَعْلُومَاتِ.",
+      "exampleMeaning": "A fake link may steal information."
+    },
+    {
+      "word": "تَحَقُّقٌ ثُنَائِيٌّ",
+      "reading": "taḥaqququn thunāʾiyyun",
+      "meaning": "two-factor verification",
+      "example": "تَحَقُّقٌ ثُنَائِيٌّ يُنَبِّهُكَ عِنْدَ الدُّخُولِ.",
+      "exampleMeaning": "Two-factor verification alerts you at login."
+    },
+    {
+      "word": "نُسْخَةٌ اِحْتِيَاطِيَّةٌ",
+      "reading": "nuskhah iḥtiyāṭiyyah",
+      "meaning": "backup copy",
+      "example": "نُسْخَةٌ اِحْتِيَاطِيَّةٌ تُنْقِذُ الْبَيَانَاتِ.",
+      "exampleMeaning": "A backup copy saves the data."
+    },
+    {
+      "word": "تَحْدِيثٌ أَمْنِيٌّ",
+      "reading": "taḥdīthun amniyyun",
+      "meaning": "security update",
+      "example": "تَحْدِيثٌ أَمْنِيٌّ يُغْلِقُ الثَّغْرَةَ.",
+      "exampleMeaning": "A security update closes the vulnerability."
+    },
+    {
+      "word": "ثَغْرَةٌ",
+      "reading": "thaghratun",
+      "meaning": "vulnerability",
+      "example": "ثَغْرَةٌ صَغِيرَةٌ قَدْ تُسَبِّبُ خَطَرًا.",
+      "exampleMeaning": "A small vulnerability may cause danger."
+    },
+    {
+      "word": "جِدَارٌ نَارِيٌّ",
+      "reading": "jidārun nāriyyun",
+      "meaning": "firewall",
+      "example": "جِدَارٌ نَارِيٌّ يَرَاقِبُ حَرَكَةَ الشَّبَكَةِ.",
+      "exampleMeaning": "A firewall monitors network traffic."
+    },
+    {
+      "word": "هُوِيَّةٌ رَقْمِيَّةٌ",
+      "reading": "huwiyyatun raqamiyyatun",
+      "meaning": "digital identity",
+      "example": "هُوِيَّةٌ رَقْمِيَّةٌ آمِنَةٌ تُثْبِتُ الشَّخْصِيَّةَ.",
+      "exampleMeaning": "A secure digital identity proves identity."
+    },
+    {
+      "word": "إِذْنُ وُصُولٍ",
+      "reading": "idhnu wuṣūlin",
+      "meaning": "access permission",
+      "example": "إِذْنُ وُصُولٍ مَحْدُودٌ يُقَلِّلُ الْخَطَرَ.",
+      "exampleMeaning": "Limited access permission reduces risk."
+    },
+    {
+      "word": "تَسَرُّبُ بَيَانَاتٍ",
+      "reading": "tasarrubu bayānātin",
+      "meaning": "data leak",
+      "example": "تَسَرُّبُ بَيَانَاتٍ قَدْ يَكْشِفُ الْعُنْوَانَ.",
+      "exampleMeaning": "A data leak may reveal the address."
+    },
+    {
+      "word": "حِمَايَةٌ",
+      "reading": "ḥimāyatun",
+      "meaning": "protection",
+      "example": "حِمَايَةٌ مُسْتَمِرَّةٌ أَفْضَلُ مِنَ الْإِصْلَاحِ الْمُتَأَخِّرِ.",
+      "exampleMeaning": "Continuous protection is better than late repair."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "___ قَوِيَّةٌ تَحْمِي الْحِسَابَ.",
+          "answer": "كَلِمَةُ مُرُورٍ",
+          "hint": "password"
+        },
+        {
+          "sentence": "___ قَوِيٌّ يَحْمِي الْمِلَفَّاتِ.",
+          "answer": "تَشْفِيرٌ",
+          "hint": "encryption"
+        },
+        {
+          "sentence": "___ يُنَبِّهُكَ عِنْدَ الدُّخُولِ.",
+          "answer": "تَحَقُّقٌ ثُنَائِيٌّ",
+          "hint": "two-factor verification"
+        },
+        {
+          "sentence": "___ قَدْ يَكْشِفُ الْعُنْوَانَ.",
+          "answer": "تَسَرُّبُ بَيَانَاتٍ",
+          "hint": "data leak"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "What does ‘تَحَقُّقٌ ثُنَائِيٌّ’ mean?",
+      "options": [
+        "two-factor verification",
+        "fake link",
+        "malware",
+        "backup copy"
+      ],
+      "answer": 0
+    }
+  ]
+}

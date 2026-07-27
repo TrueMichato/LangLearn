@@ -1110,5 +1110,65 @@
     "order": 140,
     "wordCount": 16,
     "level": "advanced"
+  },
+  {
+    "id": "egyptian-kids-school",
+    "title": "Egyptian Kids & School",
+    "order": 141,
+    "wordCount": 16,
+    "level": "beginner",
+    "dialect": "egyptian"
+  },
+  {
+    "id": "gulf-money-haggling",
+    "title": "Gulf Money & Haggling",
+    "order": 142,
+    "wordCount": 16,
+    "level": "beginner",
+    "dialect": "gulf"
+  },
+  {
+    "id": "iraqi-work-jobs",
+    "title": "Iraqi Work & Jobs",
+    "order": 143,
+    "wordCount": 16,
+    "level": "intermediate",
+    "dialect": "iraqi"
+  },
+  {
+    "id": "maghrebi-phone-internet",
+    "title": "Maghrebi Phone & Internet",
+    "order": 144,
+    "wordCount": 16,
+    "level": "beginner",
+    "dialect": "maghrebi"
+  },
+  {
+    "id": "cybersecurity-online-safety",
+    "title": "Cybersecurity & Online Safety",
+    "order": 145,
+    "wordCount": 16,
+    "level": "intermediate"
+  },
+  {
+    "id": "postal-mail-delivery",
+    "title": "Postal Mail & Delivery",
+    "order": 146,
+    "wordCount": 16,
+    "level": "beginner"
+  },
+  {
+    "id": "photography-cameras",
+    "title": "Photography & Cameras",
+    "order": 147,
+    "wordCount": 16,
+    "level": "beginner"
+  },
+  {
+    "id": "materials-textures",
+    "title": "Materials & Textures",
+    "order": 148,
+    "wordCount": 16,
+    "level": "beginner"
   }
 ]

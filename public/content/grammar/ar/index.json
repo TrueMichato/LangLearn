@@ -838,5 +838,53 @@
     "title": "Avoiding Two Sukūns",
     "order": 140,
     "group": "🏗️ Foundations"
+  },
+  {
+    "id": "istithna-ghayr-siwa",
+    "title": "Exception with ghayr and siwā",
+    "order": 141,
+    "group": "🔢 Structure & Nuance"
+  },
+  {
+    "id": "preposition-nuances",
+    "title": "Nuances of the Core Prepositions",
+    "order": 142,
+    "group": "🔢 Structure & Nuance"
+  },
+  {
+    "id": "kam-interrogative-khabariyya",
+    "title": "Kam: Question or Exclamation",
+    "order": 143,
+    "group": "🔢 Structure & Nuance"
+  },
+  {
+    "id": "masdar-muawwal",
+    "title": "The Interpreted Maṣdar: an + Verb as a Noun",
+    "order": 144,
+    "group": "🔢 Structure & Nuance"
+  },
+  {
+    "id": "relative-pronoun-paradigm",
+    "title": "The Full Relative Pronoun Paradigm",
+    "order": 145,
+    "group": "🔢 Structure & Nuance"
+  },
+  {
+    "id": "diptote-names-places",
+    "title": "Diptote Names and Place Names",
+    "order": 146,
+    "group": "🔢 Structure & Nuance"
+  },
+  {
+    "id": "ism-tafdil-government",
+    "title": "How Ism al-Tafḍīl Governs Complements",
+    "order": 147,
+    "group": "🔢 Structure & Nuance"
+  },
+  {
+    "id": "object-fronting",
+    "title": "Fronting the Direct Object",
+    "order": 148,
+    "group": "🔢 Structure & Nuance"
   }
 ]

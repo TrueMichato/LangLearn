@@ -1,0 +1,159 @@
+{
+  "id": "materials-textures",
+  "words": [
+    {
+      "word": "خَشَبٌ",
+      "reading": "khashabun",
+      "meaning": "wood",
+      "example": "خَشَبٌ قَوِيٌّ يُسْتَخْدَمُ فِي الطَّاوِلَةِ.",
+      "exampleMeaning": "Strong wood is used in the table."
+    },
+    {
+      "word": "مَعْدِنٌ",
+      "reading": "maʿdinun",
+      "meaning": "metal",
+      "example": "مَعْدِنٌ بَارِدٌ يَلْمَعُ تَحْتَ الضَّوْءِ.",
+      "exampleMeaning": "Cold metal shines under the light."
+    },
+    {
+      "word": "زُجَاجٌ",
+      "reading": "zujājun",
+      "meaning": "glass",
+      "example": "زُجَاجٌ شَفَّافٌ يَكْشِفُ مَا دَاخِلَ الْكُوبِ.",
+      "exampleMeaning": "Transparent glass shows what is inside the cup."
+    },
+    {
+      "word": "بِلَاسْتِيكٌ",
+      "reading": "bilāstīkun",
+      "meaning": "plastic",
+      "example": "بِلَاسْتِيكٌ خَفِيفٌ يُنَاسِبُ الرِّحْلَاتِ.",
+      "exampleMeaning": "Light plastic suits trips."
+    },
+    {
+      "word": "قُطْنٌ",
+      "reading": "quṭnun",
+      "meaning": "cotton",
+      "example": "قُطْنٌ نَاعِمٌ مُرِيحٌ فِي الصَّيْفِ.",
+      "exampleMeaning": "Soft cotton is comfortable in summer."
+    },
+    {
+      "word": "صُوفٌ",
+      "reading": "ṣūfun",
+      "meaning": "wool",
+      "example": "صُوفٌ دَافِئٌ يَحْمِي مِنَ الْبَرْدِ.",
+      "exampleMeaning": "Warm wool protects from the cold."
+    },
+    {
+      "word": "جِلْدٌ",
+      "reading": "jildun",
+      "meaning": "leather",
+      "example": "جِلْدٌ بُنِّيٌّ يُغَطِّي الْحَقِيبَةَ.",
+      "exampleMeaning": "Brown leather covers the bag."
+    },
+    {
+      "word": "حَرِيرٌ",
+      "reading": "ḥarīrun",
+      "meaning": "silk",
+      "example": "حَرِيرٌ نَاعِمٌ يَلْمَعُ بِهُدُوءٍ.",
+      "exampleMeaning": "Soft silk shines gently."
+    },
+    {
+      "word": "حَجَرٌ",
+      "reading": "ḥajarun",
+      "meaning": "stone",
+      "example": "حَجَرٌ صُلْبٌ يَبْنِي الْجِدَارَ.",
+      "exampleMeaning": "Hard stone builds the wall."
+    },
+    {
+      "word": "طِينٌ",
+      "reading": "ṭīnun",
+      "meaning": "clay / mud",
+      "example": "طِينٌ رَطْبٌ يَصْلُحُ لِلْفَخَّارِ.",
+      "exampleMeaning": "Wet clay is good for pottery."
+    },
+    {
+      "word": "مَطَّاطٌ",
+      "reading": "maṭṭāṭun",
+      "meaning": "rubber",
+      "example": "مَطَّاطٌ مَرِنٌ يَعُودُ إِلَى شَكْلِهِ.",
+      "exampleMeaning": "Flexible rubber returns to its shape."
+    },
+    {
+      "word": "نَاعِمٌ",
+      "reading": "nāʿimun",
+      "meaning": "smooth / soft",
+      "example": "سَطْحٌ نَاعِمٌ لَطِيفٌ عَلَى الْيَدِ.",
+      "exampleMeaning": "A smooth surface is pleasant on the hand."
+    },
+    {
+      "word": "خَشِنٌ",
+      "reading": "khashinun",
+      "meaning": "rough",
+      "example": "سَطْحٌ خَشِنٌ يَحْتَاجُ إِلَى صَنْفَرَةٍ.",
+      "exampleMeaning": "A rough surface needs sanding."
+    },
+    {
+      "word": "صُلْبٌ",
+      "reading": "ṣulbun",
+      "meaning": "hard / solid",
+      "example": "حَجَرٌ صُلْبٌ لَا يَنْكَسِرُ بِسُهُولَةٍ.",
+      "exampleMeaning": "A hard stone does not break easily."
+    },
+    {
+      "word": "مَرِنٌ",
+      "reading": "marinun",
+      "meaning": "flexible",
+      "example": "حَبْلٌ مَرِنٌ يَتَحَمَّلُ الشَّدَّ.",
+      "exampleMeaning": "A flexible rope withstands pulling."
+    },
+    {
+      "word": "شَفَّافٌ",
+      "reading": "shaffāfun",
+      "meaning": "transparent",
+      "example": "غِطَاءٌ شَفَّافٌ يُظْهِرُ الطَّعَامَ.",
+      "exampleMeaning": "A transparent cover shows the food."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "___ قَوِيٌّ يُسْتَخْدَمُ فِي الطَّاوِلَةِ.",
+          "answer": "خَشَبٌ",
+          "hint": "wood"
+        },
+        {
+          "sentence": "___ شَفَّافٌ يَكْشِفُ مَا دَاخِلَ الْكُوبِ.",
+          "answer": "زُجَاجٌ",
+          "hint": "glass"
+        },
+        {
+          "sentence": "سَطْحٌ ___ يَحْتَاجُ إِلَى صَنْفَرَةٍ.",
+          "answer": "خَشِنٌ",
+          "hint": "rough"
+        },
+        {
+          "sentence": "غِطَاءٌ ___ يُظْهِرُ الطَّعَامَ.",
+          "answer": "شَفَّافٌ",
+          "hint": "transparent"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "What does ‘مَطَّاطٌ’ mean?",
+      "options": [
+        "rubber",
+        "silk",
+        "stone",
+        "wood"
+      ],
+      "answer": 0
+    }
+  ]
+}

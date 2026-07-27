@@ -1,0 +1,159 @@
+{
+  "id": "photography-cameras",
+  "words": [
+    {
+      "word": "كَامِيرَا",
+      "reading": "kāmīrā",
+      "meaning": "camera",
+      "example": "كَامِيرَا جَدِيدَةٌ تُسَجِّلُ الصُّورَ بِوُضُوحٍ.",
+      "exampleMeaning": "A new camera records images clearly."
+    },
+    {
+      "word": "صُورَةٌ",
+      "reading": "ṣūratun",
+      "meaning": "photo",
+      "example": "صُورَةٌ جَمِيلَةٌ تُظْهِرُ الْبَحْرَ.",
+      "exampleMeaning": "A beautiful photo shows the sea."
+    },
+    {
+      "word": "عَدَسَةٌ",
+      "reading": "ʿadasatun",
+      "meaning": "lens",
+      "example": "عَدَسَةٌ نَظِيفَةٌ تَجْعَلُ الصُّورَةَ أَوْضَحَ.",
+      "exampleMeaning": "A clean lens makes the photo clearer."
+    },
+    {
+      "word": "فَلَاشٌ",
+      "reading": "falāshun",
+      "meaning": "flash",
+      "example": "فَلَاشٌ قَوِيٌّ يُضِيءُ الْغُرْفَةَ.",
+      "exampleMeaning": "A strong flash lights the room."
+    },
+    {
+      "word": "حَامِلٌ ثُلَاثِيٌّ",
+      "reading": "ḥāmilun thulāthiyyun",
+      "meaning": "tripod",
+      "example": "حَامِلٌ ثُلَاثِيٌّ يُثَبِّتُ الْكَامِيرَا.",
+      "exampleMeaning": "A tripod steadies the camera."
+    },
+    {
+      "word": "غَالِقُ الْعَدَسَةِ",
+      "reading": "ghāliqu al-ʿadasati",
+      "meaning": "shutter",
+      "example": "غَالِقُ الْعَدَسَةِ يَفْتَحُ فِي لَحْظَةٍ سَرِيعَةٍ.",
+      "exampleMeaning": "The shutter opens in a quick moment."
+    },
+    {
+      "word": "تَرْكِيزٌ",
+      "reading": "tarkīzun",
+      "meaning": "focus",
+      "example": "تَرْكِيزٌ دَقِيقٌ يُبْرِزُ الْوَجْهَ.",
+      "exampleMeaning": "Precise focus highlights the face."
+    },
+    {
+      "word": "تَعْرِيضٌ",
+      "reading": "taʿrīḍun",
+      "meaning": "exposure",
+      "example": "تَعْرِيضٌ طَوِيلٌ يَلْتَقِطُ النُّجُومَ.",
+      "exampleMeaning": "A long exposure captures the stars."
+    },
+    {
+      "word": "إِضَاءَةٌ",
+      "reading": "iḍāʾatun",
+      "meaning": "lighting",
+      "example": "إِضَاءَةٌ نَاعِمَةٌ تُنَاسِبُ الصُّورَةَ.",
+      "exampleMeaning": "Soft lighting suits the photo."
+    },
+    {
+      "word": "لَقْطَةٌ",
+      "reading": "laqṭatun",
+      "meaning": "shot",
+      "example": "لَقْطَةٌ قَرِيبَةٌ تُظْهِرُ التَّفَاصِيلَ.",
+      "exampleMeaning": "A close shot shows the details."
+    },
+    {
+      "word": "خَلْفِيَّةٌ",
+      "reading": "khalfiyyatun",
+      "meaning": "background",
+      "example": "خَلْفِيَّةٌ بَسِيطَةٌ تَجْعَلُ الْمَوْضُوعَ وَاضِحًا.",
+      "exampleMeaning": "A simple background makes the subject clear."
+    },
+    {
+      "word": "زَاوِيَةٌ",
+      "reading": "zāwiyatun",
+      "meaning": "angle",
+      "example": "زَاوِيَةٌ مُنْخَفِضَةٌ تُغَيِّرُ شَكْلَ الْمَشْهَدِ.",
+      "exampleMeaning": "A low angle changes the look of the scene."
+    },
+    {
+      "word": "أَلْبُومٌ",
+      "reading": "albūmun",
+      "meaning": "album",
+      "example": "أَلْبُومٌ عَائِلِيٌّ يَحْفَظُ الذِّكْرَيَاتِ.",
+      "exampleMeaning": "A family album preserves memories."
+    },
+    {
+      "word": "مُصَوِّرٌ",
+      "reading": "muṣawwirun",
+      "meaning": "photographer",
+      "example": "مُصَوِّرٌ صَبُورٌ يَنْتَظِرُ الضَّوْءَ الْمُنَاسِبَ.",
+      "exampleMeaning": "A patient photographer waits for the right light."
+    },
+    {
+      "word": "مَقْطَعُ فِيدْيُو",
+      "reading": "maqṭaʿu fīdyū",
+      "meaning": "video clip",
+      "example": "مَقْطَعُ فِيدْيُو قَصِيرٌ يُوَثِّقُ الرِّحْلَةَ.",
+      "exampleMeaning": "A short video clip documents the trip."
+    },
+    {
+      "word": "دِقَّةٌ",
+      "reading": "diqqatun",
+      "meaning": "resolution / precision",
+      "example": "دِقَّةٌ عَالِيَةٌ تُظْهِرُ أَلْوَانًا أَفْضَلَ.",
+      "exampleMeaning": "High resolution shows better colors."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "___ نَظِيفَةٌ تَجْعَلُ الصُّورَةَ أَوْضَحَ.",
+          "answer": "عَدَسَةٌ",
+          "hint": "lens"
+        },
+        {
+          "sentence": "___ ثُلَاثِيٌّ يُثَبِّتُ الْكَامِيرَا.",
+          "answer": "حَامِلٌ ثُلَاثِيٌّ",
+          "hint": "tripod"
+        },
+        {
+          "sentence": "___ دَقِيقٌ يُبْرِزُ الْوَجْهَ.",
+          "answer": "تَرْكِيزٌ",
+          "hint": "focus"
+        },
+        {
+          "sentence": "___ عَالِيَةٌ تُظْهِرُ أَلْوَانًا أَفْضَلَ.",
+          "answer": "دِقَّةٌ",
+          "hint": "resolution"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "What does ‘حَامِلٌ ثُلَاثِيٌّ’ mean in photography?",
+      "options": [
+        "tripod",
+        "flash",
+        "album",
+        "background"
+      ],
+      "answer": 0
+    }
+  ]
+}
