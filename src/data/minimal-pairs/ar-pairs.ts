@@ -57,4 +57,24 @@ export const arMinimalPairs: MinimalPair[] = [
   { id: 'ar-34', wordA: 'صَغِير', wordB: 'صَقِيل', readingA: 'ṣaghīr', readingB: 'ṣaqīl', meaningA: 'small', meaningB: 'polished', hint: 'غ (voiced gh) vs ق (uvular q).', category: 'similar' },
   { id: 'ar-35', wordA: 'كِتاب', wordB: 'قِطار', readingA: 'kitāb', readingB: 'qiṭār', meaningA: 'book', meaningB: 'train', hint: 'ك vs ق — listen for the deeper, further-back q.', category: 'similar' },
   { id: 'ar-36', wordA: 'شارِب', wordB: 'شارِع', readingA: 'shārib', readingB: 'shāriʿ', meaningA: 'drinking / moustache', meaningB: 'street', hint: 'Final ب vs ع — the ʿayn is a throat squeeze, not a stop.', category: 'throat' },
+
+  // ── Emphatic vs plain (batch 3) ──
+  { id: 'ar-37', wordA: 'سارَ', wordB: 'صارَ', readingA: 'sāra', readingB: 'ṣāra', meaningA: 'he walked / proceeded', meaningB: 'he became', hint: 'Plain س vs emphatic ص — ṣ is dark and heavy.', category: 'emphatic' },
+  { id: 'ar-38', wordA: 'بَتّ', wordB: 'بَطّ', readingA: 'batt', readingB: 'baṭṭ', meaningA: 'a decisive settling', meaningB: 'ducks', hint: 'Plain ت vs emphatic ط.', category: 'emphatic' },
+  { id: 'ar-39', wordA: 'حَدّ', wordB: 'حَضّ', readingA: 'ḥadd', readingB: 'ḥaḍḍ', meaningA: 'limit / edge', meaningB: 'urging on', hint: 'Plain د vs emphatic ض.', category: 'emphatic' },
+  { id: 'ar-40', wordA: 'نَذَرَ', wordB: 'نَظَرَ', readingA: 'nadhara', readingB: 'naẓara', meaningA: 'he vowed', meaningB: 'he looked', hint: 'Plain ذ (soft "th") vs emphatic ظ (heavy).', category: 'emphatic' },
+
+  // ── Throat letters (batch 3) ──
+  { id: 'ar-41', wordA: 'سَحَر', wordB: 'سَهَر', readingA: 'saḥar', readingB: 'sahar', meaningA: 'dawn / daybreak', meaningB: 'staying up at night', hint: 'ح (deep, constricted) vs ه (light "h").', category: 'throat' },
+  { id: 'ar-42', wordA: 'عَمَل', wordB: 'أَمَل', readingA: 'ʿamal', readingB: 'amal', meaningA: 'work', meaningB: 'hope', hint: 'ع (pharyngeal squeeze) vs hamza — one of the most useful pairs.', category: 'throat' },
+  { id: 'ar-43', wordA: 'نَحْل', wordB: 'نَهْل', readingA: 'naḥl', readingB: 'nahl', meaningA: 'bees', meaningB: 'first watering / drinking', hint: 'ح vs ه.', category: 'throat' },
+
+  // ── Similar consonants (batch 3) ──
+  { id: 'ar-44', wordA: 'قَدَر', wordB: 'كَدَر', readingA: 'qadar', readingB: 'kadar', meaningA: 'fate / destiny', meaningB: 'gloom / turbidity', hint: 'ق (deep, uvular) vs ك (front "k").', category: 'similar' },
+  { id: 'ar-45', wordA: 'غابَ', wordB: 'خابَ', readingA: 'ghāba', readingB: 'khāba', meaningA: 'he was absent', meaningB: 'he failed / was let down', hint: 'غ (voiced gargled gh) vs خ (voiceless kh).', category: 'similar' },
+  { id: 'ar-46', wordA: 'ثَمّ', wordB: 'سَمّ', readingA: 'thamma', readingB: 'samm', meaningA: 'there / then', meaningB: 'poison', hint: 'ث ("th" as in think) vs س ("s").', category: 'similar' },
+
+  // ── Short vs long vowels (batch 3) ──
+  { id: 'ar-47', wordA: 'جَمَل', wordB: 'جَمال', readingA: 'jamal', readingB: 'jamāl', meaningA: 'camel', meaningB: 'beauty', hint: 'Short a vs long ā changes camel into beauty.', category: 'vowel-length' },
+  { id: 'ar-48', wordA: 'دَرَسَ', wordB: 'دارَسَ', readingA: 'darasa', readingB: 'dārasa', meaningA: 'he studied', meaningB: 'he studied together with', hint: 'Long ā (dā-) makes it Form III — a mutual action.', category: 'vowel-length' },
 ];
