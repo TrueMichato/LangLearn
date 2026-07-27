@@ -34,7 +34,7 @@ npm run lint      # ESLint
 2. **Dark mode** — Every component MUST have `dark:` variants on all colors. Black text on dark bg is the #1 recurring bug.
 3. **Language codes** — Use 2-letter codes internally (`ja`, `ru`, `pt`, `es`, `ar`). Display via `getLanguageLabel(code)` from `src/lib/languages.ts`. Never hardcode "Japanese" or "JA".
    - **RTL** — Arabic (`ar`) is right-to-left. Set `rtl: true` on the language in `src/lib/languages.ts` and mark every element that renders *target-language* text with `dir` via `isRTL`/`rtlProps` from `src/lib/rtl.ts` (flashcards, reader, grammar examples, sentence tiles, cloze, vocab, dictation, translation, lyrics). Leave English-primary grammar prose LTR.
-   - **Arabic dialects** — one `ar` code = MSA shared core; `arabicDialect` + `arabicColloquialFocus` settings surface dialect-tagged content (see `src/lib/arabic-dialects.ts`). Dialect vocab lessons carry a `dialect` field in their index entry; `VocabLessons.tsx` filters to MSA + the chosen dialect (hiding other dialects), badges dialect lessons, and — with colloquial focus on — surfaces colloquial lessons first (locking is reindexed to the visible list).
+   - **Arabic dialects** — one `ar` code = MSA shared core; `arabicDialect` + `arabicColloquialFocus` settings surface dialect-tagged content (see `src/lib/arabic-dialects.ts`). Dialect vocab lessons carry a `dialect` field in their index entry; `VocabLessons.tsx` filters to MSA + the chosen dialect (hiding other dialects), badges dialect lessons, and — with colloquial focus on — surfaces colloquial lessons first (locking is reindexed to the visible list). The **Dialects hub** (`src/pages/Dialects.tsx`, route `/dialects`, Learn card shown when `ar` is active) shows per-dialect pronunciation/grammar features + a cross-dialect phrase comparison from `src/data/dialects/phrases.ts` (`DIALECT_PROFILES`, `DIALECT_PHRASES`); colloquial grammar lessons live in the "🗣️ Colloquial & Dialects" grammar group.
 4. **DB queries** — Only `.where()` on INDEXED fields. Non-indexed → `.toArray()` then `.filter()`. Check `src/db/schema.ts` for indexes.
 5. **DB migrations** — Never modify existing version stores. Always add `db.version(N+1)`.
 6. **XP recording** — Two sources: timer auto-records to `studySessions` table; bonus XP via `useXPStore.getState().addXP(amount)`. Dashboard sums both.
@@ -51,7 +51,7 @@ src/
 │   ├── Review.tsx       # SRS review — 6 card types (incl. grammar), keyboard shortcuts
 │   ├── Words.tsx        # Vocabulary browser — search, filter, study sets, CSV import
 │   ├── Reader.tsx       # Immersion reader — furigana, word status highlighting, word mining
-│   ├── Learn.tsx        # Hub → Grammar, Letters, Vocab, Sentences, Conjugations, Listening, Music, Translation, Minimal Pairs, Numbers, Tests
+│   ├── Learn.tsx        # Hub → Grammar, Letters, Vocab, Dialects, Sentences, Conjugations, Listening, Music, Translation, Minimal Pairs, Numbers, Tests
 │   ├── Grammar.tsx      # Grammar lesson browser + LessonView (auto-creates SRS grammar cards)
 │   ├── VocabLessons.tsx # Vocabulary lesson browser
 │   ├── LetterPractice.tsx # Letter chart/draw/quiz per alphabet
