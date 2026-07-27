@@ -51,7 +51,7 @@ src/
 │   ├── Review.tsx       # SRS review — 6 card types (incl. grammar), keyboard shortcuts
 │   ├── Words.tsx        # Vocabulary browser — search, filter, study sets, CSV import
 │   ├── Reader.tsx       # Immersion reader — furigana, word status highlighting, word mining
-│   ├── Learn.tsx        # Hub → Grammar, Letters, Vocab, Sentences, Conjugations, Listening, Music, Translation, Tests
+│   ├── Learn.tsx        # Hub → Grammar, Letters, Vocab, Sentences, Conjugations, Listening, Music, Translation, Minimal Pairs, Numbers, Tests
 │   ├── Grammar.tsx      # Grammar lesson browser + LessonView (auto-creates SRS grammar cards)
 │   ├── VocabLessons.tsx # Vocabulary lesson browser
 │   ├── LetterPractice.tsx # Letter chart/draw/quiz per alphabet
