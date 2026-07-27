@@ -1,0 +1,159 @@
+{
+  "id": "desert-ecology-climate",
+  "words": [
+    {
+      "word": "الْكَثِيبُ الرَّمْلِيُّ",
+      "reading": "al-kathīb ar-ramliyy",
+      "meaning": "sand dune",
+      "example": "يَتَغَيَّرُ شَكْلُ الْكَثِيبِ الرَّمْلِيِّ مَعَ الرِّيحِ.",
+      "exampleMeaning": "The shape of the sand dune changes with the wind."
+    },
+    {
+      "word": "الْوَاحَةُ",
+      "reading": "al-wāḥa",
+      "meaning": "oasis",
+      "example": "تُوَفِّرُ الْوَاحَةُ مَاءً وَظِلًّا لِلْمُسَافِرِينَ.",
+      "exampleMeaning": "The oasis provides water and shade for travelers."
+    },
+    {
+      "word": "الْجَفَافُ",
+      "reading": "al-jafāf",
+      "meaning": "drought",
+      "example": "يُقَلِّلُ الْجَفَافُ نُمُوَّ النَّبَاتَاتِ.",
+      "exampleMeaning": "Drought reduces plant growth."
+    },
+    {
+      "word": "التَّبَخُّرُ",
+      "reading": "at-tabakhkhur",
+      "meaning": "evaporation",
+      "example": "يَزْدَادُ التَّبَخُّرُ فِي الْحَرِّ الشَّدِيدِ.",
+      "exampleMeaning": "Evaporation increases in intense heat."
+    },
+    {
+      "word": "النَّدَى",
+      "reading": "an-nadā",
+      "meaning": "dew",
+      "example": "يَظْهَرُ النَّدَى عَلَى الأَوْرَاقِ قَبْلَ الشُّرُوقِ.",
+      "exampleMeaning": "Dew appears on leaves before sunrise."
+    },
+    {
+      "word": "الْعَاصِفَةُ الرَّمْلِيَّةُ",
+      "reading": "al-ʿāṣifa ar-ramliyya",
+      "meaning": "sandstorm",
+      "example": "تَحْجُبُ الْعَاصِفَةُ الرَّمْلِيَّةُ الرُّؤْيَةَ.",
+      "exampleMeaning": "The sandstorm blocks visibility."
+    },
+    {
+      "word": "الْغِطَاءُ النَّبَاتِيُّ",
+      "reading": "al-ghiṭāʾ an-nabātiyy",
+      "meaning": "vegetation cover",
+      "example": "يَحْمِي الْغِطَاءُ النَّبَاتِيُّ التُّرْبَةَ مِنَ الاِنْجِرَافِ.",
+      "exampleMeaning": "Vegetation cover protects the soil from erosion."
+    },
+    {
+      "word": "التَّكَيُّفُ",
+      "reading": "at-takayyuf",
+      "meaning": "adaptation",
+      "example": "يُسَاعِدُ التَّكَيُّفُ الْكَائِنَاتِ عَلَى الْبَقَاءِ.",
+      "exampleMeaning": "Adaptation helps organisms survive."
+    },
+    {
+      "word": "الْمَوْرِدُ الْمَائِيُّ",
+      "reading": "al-mawrid al-māʾiyy",
+      "meaning": "water resource",
+      "example": "تُدِيرُ الْقَرْيَةُ الْمَوْرِدَ الْمَائِيَّ بِحَذَرٍ.",
+      "exampleMeaning": "The village manages the water resource carefully."
+    },
+    {
+      "word": "الرَّعْيُ الْجَائِرُ",
+      "reading": "ar-raʿy al-jāʾir",
+      "meaning": "overgrazing",
+      "example": "يُسَبِّبُ الرَّعْيُ الْجَائِرُ تَعَرِّيَ الأَرْضِ.",
+      "exampleMeaning": "Overgrazing causes the land to become bare."
+    },
+    {
+      "word": "التَّصَحُّرُ",
+      "reading": "at-taṣaḥḥur",
+      "meaning": "desertification",
+      "example": "يَتَسَارَعُ التَّصَحُّرُ عِنْدَ غِيَابِ الْمَطَرِ.",
+      "exampleMeaning": "Desertification accelerates when rain is absent."
+    },
+    {
+      "word": "الْمُنَاخُ الْجَافُّ",
+      "reading": "al-munākh al-jāff",
+      "meaning": "dry climate",
+      "example": "يَتَطَلَّبُ الْمُنَاخُ الْجَافُّ إِدَارَةً دَقِيقَةً لِلْمَاءِ.",
+      "exampleMeaning": "A dry climate requires careful water management."
+    },
+    {
+      "word": "دَرَجَةُ الْحَرَارَةِ",
+      "reading": "darajat al-ḥarāra",
+      "meaning": "temperature",
+      "example": "تَرْتَفِعُ دَرَجَةُ الْحَرَارَةِ بَعْدَ الظَّهِيرَةِ.",
+      "exampleMeaning": "The temperature rises after noon."
+    },
+    {
+      "word": "الْحَرَارَةُ النَّهَارِيَّةُ",
+      "reading": "al-ḥarāra an-nahāriyya",
+      "meaning": "daytime heat",
+      "example": "تُجْهِدُ الْحَرَارَةُ النَّهَارِيَّةُ الْحَيَوَانَاتِ.",
+      "exampleMeaning": "Daytime heat exhausts the animals."
+    },
+    {
+      "word": "الْبُرُودَةُ اللَّيْلِيَّةُ",
+      "reading": "al-burūda al-layliyya",
+      "meaning": "nighttime cold",
+      "example": "تَفَاجَأَ الرُّحَّلُ بِالْبُرُودَةِ اللَّيْلِيَّةِ.",
+      "exampleMeaning": "The nomads were surprised by the nighttime cold."
+    },
+    {
+      "word": "السَّهْلُ الْحَصَوِيُّ",
+      "reading": "as-sahl al-ḥaṣawiyy",
+      "meaning": "gravel plain",
+      "example": "يَسِيرُ الْجَمَلُ فَوْقَ السَّهْلِ الْحَصَوِيِّ.",
+      "exampleMeaning": "The camel walks over the gravel plain."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "تُوَفِّرُ ___ مَاءً وَظِلًّا.",
+          "answer": "الْوَاحَةُ",
+          "hint": "oasis"
+        },
+        {
+          "sentence": "يُسَبِّبُ ___ تَعَرِّيَ الأَرْضِ.",
+          "answer": "الرَّعْيُ الْجَائِرُ",
+          "hint": "overgrazing"
+        },
+        {
+          "sentence": "يَتَسَارَعُ ___ عِنْدَ غِيَابِ الْمَطَرِ.",
+          "answer": "التَّصَحُّرُ",
+          "hint": "desertification"
+        },
+        {
+          "sentence": "تَرْتَفِعُ ___ بَعْدَ الظَّهِيرَةِ.",
+          "answer": "دَرَجَةُ الْحَرَارَةِ",
+          "hint": "temperature"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "What does ‘الْغِطَاءُ النَّبَاتِيُّ’ mean?",
+      "options": [
+        "vegetation cover",
+        "sandstorm",
+        "dew",
+        "gravel plain"
+      ],
+      "answer": 0
+    }
+  ]
+}

@@ -1018,5 +1018,53 @@
     "title": "The Separating Pronoun (Ḍamīr al-Faṣl)",
     "order": 170,
     "group": "🔢 Structure & Nuance"
+  },
+  {
+    "id": "two-object-verbs",
+    "title": "Verbs with Two Objects",
+    "order": 171,
+    "group": "🔤 Verbs"
+  },
+  {
+    "id": "verbs-of-transformation",
+    "title": "Verbs of Transformation (ṣayrūra)",
+    "order": 172,
+    "group": "🔤 Verbs"
+  },
+  {
+    "id": "exceptive-sentence-types",
+    "title": "Exception Sentence Types with illā",
+    "order": 173,
+    "group": "🔢 Structure & Nuance"
+  },
+  {
+    "id": "non-jussive-conditionals",
+    "title": "Non-Jussive Conditionals: lammā and kullamā",
+    "order": 174,
+    "group": "🔢 Structure & Nuance"
+  },
+  {
+    "id": "form-i-masdar-patterns",
+    "title": "Form I Maṣdar Patterns",
+    "order": 175,
+    "group": "🔤 Verbs"
+  },
+  {
+    "id": "participle-government",
+    "title": "Participle Government: ism al-fāʿil and ism al-mafʿūl",
+    "order": 176,
+    "group": "🔤 Verbs"
+  },
+  {
+    "id": "defective-jussive-spelling",
+    "title": "Defective Verb Spelling in the Jussive",
+    "order": 177,
+    "group": "🔤 Verbs"
+  },
+  {
+    "id": "alif-tanwin",
+    "title": "Alif al-Tanwīn in Spelling",
+    "order": 178,
+    "group": "🏗️ Foundations"
   }
 ]

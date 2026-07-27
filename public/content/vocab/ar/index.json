@@ -1369,5 +1369,64 @@
     "order": 174,
     "wordCount": 16,
     "level": "advanced"
+  },
+  {
+    "id": "levantine-bakery-breakfast",
+    "title": "Levantine Bakery & Breakfast",
+    "order": 175,
+    "wordCount": 16,
+    "level": "beginner",
+    "dialect": "levantine"
+  },
+  {
+    "id": "levantine-home-repairs",
+    "title": "Levantine Home Repairs",
+    "order": 176,
+    "wordCount": 16,
+    "level": "beginner",
+    "dialect": "levantine"
+  },
+  {
+    "id": "maghrebi-beach-day",
+    "title": "Maghrebi Beach Day",
+    "order": 177,
+    "wordCount": 16,
+    "level": "beginner",
+    "dialect": "maghrebi"
+  },
+  {
+    "id": "marine-life-ocean-ecology",
+    "title": "Marine Life & Ocean Ecology",
+    "order": 178,
+    "wordCount": 16,
+    "level": "advanced"
+  },
+  {
+    "id": "desert-ecology-climate",
+    "title": "Desert Ecology & Climate",
+    "order": 179,
+    "wordCount": 16,
+    "level": "advanced"
+  },
+  {
+    "id": "celestial-observation-telescopes",
+    "title": "Celestial Observation & Telescopes",
+    "order": 180,
+    "wordCount": 16,
+    "level": "advanced"
+  },
+  {
+    "id": "dance-folklore",
+    "title": "Dance & Folklore",
+    "order": 181,
+    "wordCount": 16,
+    "level": "intermediate"
+  },
+  {
+    "id": "gemstones-jewelry",
+    "title": "Gemstones & Jewelry",
+    "order": 182,
+    "wordCount": 16,
+    "level": "intermediate"
   }
 ]
