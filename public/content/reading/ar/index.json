@@ -124,6 +124,196 @@
       ],
       "description": "A higher-level overview of Arabic, its dialects, written form, and global reach.",
       "wordCount": 172
+    },
+    {
+      "id": "my-week",
+      "title": "أُسْبُوعي",
+      "titleEn": "My Week",
+      "difficulty": "easy",
+      "tags": [
+        "daily-life"
+      ],
+      "description": "A simple present-tense description of weekly routines and small family moments.",
+      "wordCount": 77
+    },
+    {
+      "id": "at-the-doctor-easy",
+      "title": "عِنْدَ الطَّبِيب",
+      "titleEn": "At the Doctor",
+      "difficulty": "easy",
+      "tags": [
+        "health",
+        "conversation",
+        "daily-life"
+      ],
+      "description": "A beginner-friendly visit to the doctor with common health phrases.",
+      "wordCount": 80
+    },
+    {
+      "id": "shopping-easy",
+      "title": "في السُّوق",
+      "titleEn": "Shopping at the Market",
+      "difficulty": "easy",
+      "tags": [
+        "shopping",
+        "daily-life",
+        "conversation"
+      ],
+      "description": "A short market trip for buying vegetables, fruit, bread, and spices.",
+      "wordCount": 79
+    },
+    {
+      "id": "the-seasons",
+      "title": "الفُصُولُ الأَرْبَعة",
+      "titleEn": "The Four Seasons",
+      "difficulty": "easy",
+      "tags": [
+        "nature",
+        "daily-life"
+      ],
+      "description": "A gentle overview of the four seasons and their familiar scenes.",
+      "wordCount": 79
+    },
+    {
+      "id": "a-phone-call",
+      "title": "مُكالَمة هاتِفيّة",
+      "titleEn": "A Phone Call",
+      "difficulty": "easy",
+      "tags": [
+        "conversation",
+        "daily-life"
+      ],
+      "description": "A friendly phone call arranging a visit for the next day.",
+      "wordCount": 79
+    },
+    {
+      "id": "ramadan",
+      "title": "شَهْرُ رَمَضان",
+      "titleEn": "The Month of Ramadan",
+      "difficulty": "medium",
+      "tags": [
+        "religion",
+        "culture",
+        "daily-life"
+      ],
+      "description": "A warm cultural description of Ramadan routines, generosity, and Eid.",
+      "wordCount": 121
+    },
+    {
+      "id": "a-day-in-cairo",
+      "title": "يَوْمٌ في القاهِرة",
+      "titleEn": "A Day in Cairo",
+      "difficulty": "medium",
+      "tags": [
+        "travel",
+        "culture",
+        "daily-life"
+      ],
+      "description": "A narrated day visiting Cairo, the Nile, a museum, and the citadel.",
+      "wordCount": 128
+    },
+    {
+      "id": "the-camel",
+      "title": "الجَمَلُ سَفِينةُ الصَّحْراء",
+      "titleEn": "The Camel, Ship of the Desert",
+      "difficulty": "medium",
+      "tags": [
+        "nature",
+        "culture",
+        "geography"
+      ],
+      "description": "An explanatory text about the camel and its role in desert life.",
+      "wordCount": 133
+    },
+    {
+      "id": "learning-to-cook",
+      "title": "تَعَلُّمُ الطَّبْخ",
+      "titleEn": "Learning to Cook",
+      "difficulty": "medium",
+      "tags": [
+        "food",
+        "daily-life",
+        "culture"
+      ],
+      "description": "A personal story about mistakes, patience, and family encouragement in the kitchen.",
+      "wordCount": 122
+    },
+    {
+      "id": "a-letter-to-a-friend",
+      "title": "رِسالة إلى صَدِيق",
+      "titleEn": "A Letter to a Friend",
+      "difficulty": "medium",
+      "tags": [
+        "conversation",
+        "daily-life"
+      ],
+      "description": "A warm letter from a student adjusting to life in a new city.",
+      "wordCount": 120
+    },
+    {
+      "id": "the-old-market",
+      "title": "السُّوقُ القَدِيم",
+      "titleEn": "The Old Market (a souk)",
+      "difficulty": "medium",
+      "tags": [
+        "shopping",
+        "culture",
+        "history"
+      ],
+      "description": "A sensory walk through an old souk and its living memory.",
+      "wordCount": 129
+    },
+    {
+      "id": "the-golden-age",
+      "title": "العَصْرُ الذَّهَبيُّ للعُلُوم",
+      "titleEn": "The Golden Age of Arabic Science",
+      "difficulty": "hard",
+      "tags": [
+        "history",
+        "science",
+        "culture"
+      ],
+      "description": "An overview of translation, scholarship, and scientific exchange in the medieval Arabic-speaking world.",
+      "wordCount": 177
+    },
+    {
+      "id": "ibn-battuta",
+      "title": "رِحْلاتُ ابْنِ بَطُّوطة",
+      "titleEn": "The Travels of Ibn Battuta",
+      "difficulty": "hard",
+      "tags": [
+        "history",
+        "travel",
+        "culture"
+      ],
+      "description": "A factual retelling of Ibn Battuta’s long journeys and the value of his travel account.",
+      "wordCount": 172
+    },
+    {
+      "id": "the-nile",
+      "title": "نَهْرُ النِّيل",
+      "titleEn": "The Nile",
+      "difficulty": "hard",
+      "tags": [
+        "geography",
+        "history",
+        "nature"
+      ],
+      "description": "A reflective text on the Nile’s geography, history, symbolism, and modern responsibilities.",
+      "wordCount": 170
+    },
+    {
+      "id": "coffee-history",
+      "title": "قِصّةُ القَهْوة",
+      "titleEn": "The Story of Coffee",
+      "difficulty": "hard",
+      "tags": [
+        "history",
+        "food",
+        "culture"
+      ],
+      "description": "A historical sketch of coffee’s journey from Yemen and Ethiopia to global café culture.",
+      "wordCount": 170
     }
   ]
 }

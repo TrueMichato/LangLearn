@@ -1,0 +1,183 @@
+{
+  "id": "measurements-quantities",
+  "words": [
+    {
+      "word": "مِتْرٌ",
+      "reading": "mitrun",
+      "meaning": "meter",
+      "example": "مِتْرٌ وَاحِدٌ يَكْفِي لِقِيَاسِ الْمَمَرِّ.",
+      "exampleMeaning": "One meter is enough to measure the corridor."
+    },
+    {
+      "word": "سَنْتِيمِتْرٌ",
+      "reading": "santīmitrun",
+      "meaning": "centimeter",
+      "example": "سَنْتِيمِتْرٌ صَغِيرٌ قَدْ يُغَيِّرُ الْمَقَاسَ.",
+      "exampleMeaning": "A small centimeter may change the size."
+    },
+    {
+      "word": "كِيلُومِتْرٌ",
+      "reading": "kīlūmitrun",
+      "meaning": "kilometer",
+      "example": "كِيلُومِتْرٌ وَاحِدٌ يَفْصِلُ الْقَرْيَةَ عَنِ النَّهْرِ.",
+      "exampleMeaning": "One kilometer separates the village from the river."
+    },
+    {
+      "word": "كِيلُوغْرَامٌ",
+      "reading": "kīlūghrāmun",
+      "meaning": "kilogram",
+      "example": "كِيلُوغْرَامٌ مِنَ التُّفَّاحِ يَكْفِي لِلْعَائِلَةِ.",
+      "exampleMeaning": "A kilogram of apples is enough for the family."
+    },
+    {
+      "word": "غِرَامٌ",
+      "reading": "ghirāmun",
+      "meaning": "gram",
+      "example": "أَضَافَ الطَّبَّاخُ عَشَرَةَ غِرَامَاتٍ مِنَ الْمِلْحِ.",
+      "exampleMeaning": "The cook added ten grams of salt."
+    },
+    {
+      "word": "لِتْرٌ",
+      "reading": "litrun",
+      "meaning": "liter",
+      "example": "يَشْرَبُ الرَّيَّاضِيُّ لِتْرًا مِنَ الْمَاءِ.",
+      "exampleMeaning": "The athlete drinks a liter of water."
+    },
+    {
+      "word": "دَرَجَةٌ",
+      "reading": "darajatun",
+      "meaning": "degree / unit",
+      "example": "اِرْتَفَعَتِ الْحَرَارَةُ دَرَجَةً وَاحِدَةً.",
+      "exampleMeaning": "The temperature rose one degree."
+    },
+    {
+      "word": "نِصْفٌ",
+      "reading": "niṣfun",
+      "meaning": "half",
+      "example": "أَكَلَ الطِّفْلُ نِصْفَ الرَّغِيفِ.",
+      "exampleMeaning": "The child ate half the loaf."
+    },
+    {
+      "word": "رُبْعٌ",
+      "reading": "rubʿun",
+      "meaning": "quarter",
+      "example": "اِنْتَظَرْنَا رُبْعَ سَاعَةٍ أَمَامَ الْمَحَطَّةِ.",
+      "exampleMeaning": "We waited a quarter hour in front of the station."
+    },
+    {
+      "word": "ضِعْفٌ",
+      "reading": "ḍiʿfun",
+      "meaning": "double / twice as much",
+      "example": "يَحْتَاجُ الْمَشْرُوعُ إِلَى ضِعْفِ الْمِيزَانِيَّةِ.",
+      "exampleMeaning": "The project needs double the budget."
+    },
+    {
+      "word": "كَمِّيَّةٌ",
+      "reading": "kammiyyatun",
+      "meaning": "quantity",
+      "example": "اِشْتَرَيْنَا كَمِّيَّةً كَبِيرَةً مِنَ الْأَرُزِّ.",
+      "exampleMeaning": "We bought a large quantity of rice."
+    },
+    {
+      "word": "وَزْنٌ",
+      "reading": "waznun",
+      "meaning": "weight",
+      "example": "قَاسَ الطَّبِيبُ وَزْنَ الطِّفْلِ بِدِقَّةٍ.",
+      "exampleMeaning": "The doctor measured the child’s weight accurately."
+    },
+    {
+      "word": "طُولٌ",
+      "reading": "ṭūlun",
+      "meaning": "length / height",
+      "example": "سَجَّلَ الْمُدَرِّبُ طُولَ اللَّاعِبِ فِي الدَّفْتَرِ.",
+      "exampleMeaning": "The coach recorded the player’s height in the notebook."
+    },
+    {
+      "word": "عَرْضٌ",
+      "reading": "ʿarḍun",
+      "meaning": "width",
+      "example": "يَبْلُغُ عَرْضُ الْبَابِ مِتْرًا وَاحِدًا.",
+      "exampleMeaning": "The door’s width is one meter."
+    },
+    {
+      "word": "اِرْتِفَاعٌ",
+      "reading": "irtifāʿun",
+      "meaning": "height / elevation",
+      "example": "قَاسَ الْمُهَنْدِسُ اِرْتِفَاعَ السَّقْفِ.",
+      "exampleMeaning": "The engineer measured the height of the ceiling."
+    },
+    {
+      "word": "حَجْمٌ",
+      "reading": "ḥajmun",
+      "meaning": "volume / size",
+      "example": "يَتَغَيَّرُ حَجْمُ الْمَاءِ عِنْدَ التَّجَمُّدِ.",
+      "exampleMeaning": "The volume of water changes when it freezes."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "___ وَاحِدٌ يَكْفِي لِقِيَاسِ الْمَمَرِّ.",
+          "answer": "مِتْرٌ",
+          "hint": "meter"
+        },
+        {
+          "sentence": "___ صَغِيرٌ قَدْ يُغَيِّرُ الْمَقَاسَ.",
+          "answer": "سَنْتِيمِتْرٌ",
+          "hint": "centimeter"
+        },
+        {
+          "sentence": "___ وَاحِدٌ يَفْصِلُ الْقَرْيَةَ عَنِ النَّهْرِ.",
+          "answer": "كِيلُومِتْرٌ",
+          "hint": "kilometer"
+        },
+        {
+          "sentence": "___ مِنَ التُّفَّاحِ يَكْفِي لِلْعَائِلَةِ.",
+          "answer": "كِيلُوغْرَامٌ",
+          "hint": "kilogram"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "items": [
+        {
+          "question": "What does ‘مِتْرٌ’ mean?",
+          "options": [
+            "centimeter",
+            "meter",
+            "kilometer",
+            "kilogram"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What does ‘سَنْتِيمِتْرٌ’ mean?",
+          "options": [
+            "kilometer",
+            "centimeter",
+            "kilogram",
+            "gram"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What does ‘كِيلُومِتْرٌ’ mean?",
+          "options": [
+            "kilogram",
+            "kilometer",
+            "gram",
+            "liter"
+          ],
+          "answer": 1
+        }
+      ]
+    }
+  ]
+}

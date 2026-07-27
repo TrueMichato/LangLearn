@@ -1,0 +1,183 @@
+{
+  "id": "gulf-phrases-2",
+  "words": [
+    {
+      "word": "أَبْشِرْ",
+      "reading": "abshir",
+      "meaning": "sure / gladly (Gulf; MSA: sa-afʿalu)",
+      "example": "أَبْشِرْ، أَخَلِّصُ الطَّلَبْ الْيَوْمْ.",
+      "exampleMeaning": "Sure, I will finish the order today."
+    },
+    {
+      "word": "تِبِي؟",
+      "reading": "tibī?",
+      "meaning": "do you want? (Gulf; MSA: turīdu)",
+      "example": "تِبِي؟ عِنْدَنَا شَايْ وَقَهْوَة.",
+      "exampleMeaning": "Do you want some? We have tea and coffee."
+    },
+    {
+      "word": "عَطْنِي",
+      "reading": "ʿaṭnī",
+      "meaning": "give me (Gulf; MSA: aʿṭinī)",
+      "example": "عَطْنِي الْفَاتُورَة، مَا عَلَيْك أَمْر.",
+      "exampleMeaning": "Give me the bill, please."
+    },
+    {
+      "word": "شْوَي",
+      "reading": "shway",
+      "meaning": "a little / a bit (Gulf)",
+      "example": "شْوَي وَنَوْصَلْ لِلْبَيْتْ.",
+      "exampleMeaning": "A little bit and we will reach the house."
+    },
+    {
+      "word": "مَرَّة",
+      "reading": "marra",
+      "meaning": "very / once (Gulf)",
+      "example": "الْجَوّ مَرَّة حُلْو الْيَوْمْ.",
+      "exampleMeaning": "The weather is very nice today."
+    },
+    {
+      "word": "هَذَاكْ",
+      "reading": "hadhāk",
+      "meaning": "that one (Gulf; MSA: dhālika)",
+      "example": "خُذْ هَذَاكْ الْكُرْسِيّ مِنْ هُنَاكْ.",
+      "exampleMeaning": "Take that chair from over there."
+    },
+    {
+      "word": "هِنِي",
+      "reading": "hinī",
+      "meaning": "here (Gulf; MSA: hunā)",
+      "example": "خَلِّ الْكِتَابْ هِنِي عَلَى الطَّاوِلَة.",
+      "exampleMeaning": "Put the book here on the table."
+    },
+    {
+      "word": "جِدَّامْ",
+      "reading": "jiddām",
+      "meaning": "in front / ahead (Gulf)",
+      "example": "السِّيَّارَةْ جِدَّامْ الْبَيْتْ.",
+      "exampleMeaning": "The car is in front of the house."
+    },
+    {
+      "word": "وَرَا",
+      "reading": "warā",
+      "meaning": "behind / after (Gulf)",
+      "example": "الْمَوْقِفْ وَرَا الْمَحَلّ.",
+      "exampleMeaning": "The parking lot is behind the shop."
+    },
+    {
+      "word": "دَوَامْ",
+      "reading": "dawām",
+      "meaning": "work shift / workday (Gulf)",
+      "example": "عِنْدِي دَوَامْ صُبْحْ بَاكِرْ.",
+      "exampleMeaning": "I have a morning shift tomorrow."
+    },
+    {
+      "word": "زَحْمَة",
+      "reading": "zaḥma",
+      "meaning": "traffic / crowd (Gulf)",
+      "example": "فِي الطَّرِيقْ زَحْمَة كَبِيرَة.",
+      "exampleMeaning": "There is heavy traffic on the road."
+    },
+    {
+      "word": "حَرّ",
+      "reading": "ḥarr",
+      "meaning": "hot weather (Gulf/MSA)",
+      "example": "الْجَوّ حَرّ وَنَحْتَاجْ مَايْ بَارِدْ.",
+      "exampleMeaning": "The weather is hot, and we need cold water."
+    },
+    {
+      "word": "بَرْد",
+      "reading": "bard",
+      "meaning": "cold weather (Gulf/MSA)",
+      "example": "اللَّيْلَة فِيهَا بَرْد خَفِيفْ.",
+      "exampleMeaning": "Tonight has a light chill."
+    },
+    {
+      "word": "يَلَّا",
+      "reading": "yallā",
+      "meaning": "come on / let’s go (Gulf/all)",
+      "example": "يَلَّا نِطْلَعْ بَعْد شْوَي.",
+      "exampleMeaning": "Come on, let’s leave in a little while."
+    },
+    {
+      "word": "مَا يُخَالِف",
+      "reading": "mā yikhālif",
+      "meaning": "no problem / that is okay (Gulf)",
+      "example": "مَا يُخَالِف، نْغَيِّرْ الْمَوْعِدْ.",
+      "exampleMeaning": "No problem, we will change the appointment."
+    },
+    {
+      "word": "تِسْلَم",
+      "reading": "tislam",
+      "meaning": "thanks / may you be safe (Gulf)",
+      "example": "تِسْلَم عَلَى الْمُسَاعَدَة.",
+      "exampleMeaning": "Thanks for the help."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "___، أَخَلِّصُ الطَّلَبْ الْيَوْمْ.",
+          "answer": "أَبْشِرْ",
+          "hint": "sure / gladly (Gulf; MSA: sa-afʿalu)"
+        },
+        {
+          "sentence": "___ عِنْدَنَا شَايْ وَقَهْوَة.",
+          "answer": "تِبِي؟",
+          "hint": "do you want? (Gulf; MSA: turīdu)"
+        },
+        {
+          "sentence": "___ الْفَاتُورَة، مَا عَلَيْك أَمْر.",
+          "answer": "عَطْنِي",
+          "hint": "give me (Gulf; MSA: aʿṭinī)"
+        },
+        {
+          "sentence": "___ وَنَوْصَلْ لِلْبَيْتْ.",
+          "answer": "شْوَي",
+          "hint": "a little / a bit (Gulf)"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "items": [
+        {
+          "question": "What does ‘أَبْشِرْ’ mean?",
+          "options": [
+            "do you want? (Gulf; MSA: turīdu)",
+            "sure / gladly (Gulf; MSA: sa-afʿalu)",
+            "give me (Gulf; MSA: aʿṭinī)",
+            "a little / a bit (Gulf)"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What does ‘تِبِي؟’ mean?",
+          "options": [
+            "give me (Gulf; MSA: aʿṭinī)",
+            "do you want? (Gulf; MSA: turīdu)",
+            "a little / a bit (Gulf)",
+            "very / once (Gulf)"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What does ‘عَطْنِي’ mean?",
+          "options": [
+            "a little / a bit (Gulf)",
+            "give me (Gulf; MSA: aʿṭinī)",
+            "very / once (Gulf)",
+            "that one (Gulf; MSA: dhālika)"
+          ],
+          "answer": 1
+        }
+      ]
+    }
+  ]
+}

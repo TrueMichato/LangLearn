@@ -316,5 +316,95 @@
     "title": "Maghrebi (Darija) Essentials (Moroccan/Algerian; kan- present prefix, negation ma...sh, French loanwords)",
     "order": 53,
     "group": "🗣️ Colloquial & Dialects"
+  },
+  {
+    "id": "form-ii-iii",
+    "title": "Verb Forms II & III (faʿʿala, fāʿala): causative & association",
+    "order": 54,
+    "group": "🔤 Verbs"
+  },
+  {
+    "id": "form-iv",
+    "title": "Verb Form IV (afʿala): the causative",
+    "order": 55,
+    "group": "🔤 Verbs"
+  },
+  {
+    "id": "form-v-vi",
+    "title": "Verb Forms V & VI (tafaʿʿala, tafāʿala): reflexive & reciprocal",
+    "order": 56,
+    "group": "🔤 Verbs"
+  },
+  {
+    "id": "form-vii-viii",
+    "title": "Verb Forms VII & VIII (infaʿala, iftaʿala): passive-reflexive",
+    "order": 57,
+    "group": "🔤 Verbs"
+  },
+  {
+    "id": "form-x",
+    "title": "Verb Form X (istafʿala): seeking / considering",
+    "order": 58,
+    "group": "🔤 Verbs"
+  },
+  {
+    "id": "defective-verbs-detail",
+    "title": "Defective Verbs in Depth (mashā, daʿā, nasiya types)",
+    "order": 59,
+    "group": "🔤 Verbs"
+  },
+  {
+    "id": "verbs-with-prepositions",
+    "title": "Verbs with Prepositions (raghiba fī, baḥatha ʿan…)",
+    "order": 60,
+    "group": "🔤 Verbs"
+  },
+  {
+    "id": "elative-colours",
+    "title": "The Elative & Colours/Defects (afʿal pattern)",
+    "order": 61,
+    "group": "🔢 Structure & Nuance"
+  },
+  {
+    "id": "adverbs-of-manner",
+    "title": "Adverbs of Manner & the Mafʿūl Muṭlaq (cognate accusative)",
+    "order": 62,
+    "group": "🔢 Structure & Nuance"
+  },
+  {
+    "id": "exclamation-wonder",
+    "title": "Exclamation & Wonder (mā afʿalahu!)",
+    "order": 63,
+    "group": "🔢 Structure & Nuance"
+  },
+  {
+    "id": "oaths-emphasis",
+    "title": "Oaths, Emphasis & the Energetic Nūn",
+    "order": 64,
+    "group": "🔢 Structure & Nuance"
+  },
+  {
+    "id": "conditional-particles-deep",
+    "title": "Conditional Particles in Depth (in, idhā, law, lawlā)",
+    "order": 65,
+    "group": "🔢 Structure & Nuance"
+  },
+  {
+    "id": "adjective-clauses",
+    "title": "Describing with Clauses (ṣifa vs. relative)",
+    "order": 66,
+    "group": "🔢 Structure & Nuance"
+  },
+  {
+    "id": "dialect-pronouns-verbs",
+    "title": "Dialect Pronouns & Present-Tense Prefixes (bi-, ʿam, ka-, ta-)",
+    "order": 67,
+    "group": "🗣️ Colloquial & Dialects"
+  },
+  {
+    "id": "dialect-negation",
+    "title": "Negation Across Dialects (mā…sh, mish, mū)",
+    "order": 68,
+    "group": "🗣️ Colloquial & Dialects"
   }
 ]

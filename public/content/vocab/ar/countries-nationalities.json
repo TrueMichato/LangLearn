@@ -1,0 +1,183 @@
+{
+  "id": "countries-nationalities",
+  "words": [
+    {
+      "word": "مِصْرُ",
+      "reading": "miṣru",
+      "meaning": "Egypt",
+      "example": "مِصْرُ بَلَدٌ عَرَبِيٌّ عَرِيقٌ.",
+      "exampleMeaning": "Egypt is an ancient Arab country."
+    },
+    {
+      "word": "سُورِيَا",
+      "reading": "sūriyā",
+      "meaning": "Syria",
+      "example": "سُورِيَا مَعْرُوفَةٌ بِتَارِيخِهَا الْقَدِيمِ.",
+      "exampleMeaning": "Syria is known for its ancient history."
+    },
+    {
+      "word": "السُّعُودِيَّةُ",
+      "reading": "as-suʿūdiyyatu",
+      "meaning": "Saudi Arabia",
+      "example": "السُّعُودِيَّةُ تَقَعُ فِي شِبْهِ الْجَزِيرَةِ الْعَرَبِيَّةِ.",
+      "exampleMeaning": "Saudi Arabia is located in the Arabian Peninsula."
+    },
+    {
+      "word": "الْمَغْرِبُ",
+      "reading": "al-maghribu",
+      "meaning": "Morocco",
+      "example": "الْمَغْرِبُ يَطِلُّ عَلَى الْمُحِيطِ الْأَطْلَسِيِّ.",
+      "exampleMeaning": "Morocco overlooks the Atlantic Ocean."
+    },
+    {
+      "word": "الْعِرَاقُ",
+      "reading": "al-ʿirāqu",
+      "meaning": "Iraq",
+      "example": "الْعِرَاقُ بَلَدُ دِجْلَةَ وَالْفُرَاتِ.",
+      "exampleMeaning": "Iraq is the land of the Tigris and the Euphrates."
+    },
+    {
+      "word": "الْأُرْدُنُّ",
+      "reading": "al-ʾurdunnu",
+      "meaning": "Jordan",
+      "example": "الْأُرْدُنُّ يَضُمُّ مَوَاقِعَ أَثَرِيَّةً كَثِيرَةً.",
+      "exampleMeaning": "Jordan includes many archaeological sites."
+    },
+    {
+      "word": "أَمْرِيكَا",
+      "reading": "ʾamrīkā",
+      "meaning": "America / the United States",
+      "example": "أَمْرِيكَا بَعِيدَةٌ عَنِ الْمَشْرِقِ.",
+      "exampleMeaning": "America is far from the Mashriq."
+    },
+    {
+      "word": "فَرَنْسَا",
+      "reading": "faransā",
+      "meaning": "France",
+      "example": "فَرَنْسَا مَشْهُورَةٌ بِالْفُنُونِ وَالْمَتَاحِفِ.",
+      "exampleMeaning": "France is famous for the arts and museums."
+    },
+    {
+      "word": "الْيَابَانُ",
+      "reading": "al-yābānu",
+      "meaning": "Japan",
+      "example": "الْيَابَانُ جَزِيرَةٌ كَبِيرَةٌ فِي آسِيَا.",
+      "exampleMeaning": "Japan is a large island country in Asia."
+    },
+    {
+      "word": "تُرْكِيَا",
+      "reading": "turkiyā",
+      "meaning": "Turkey",
+      "example": "تُرْكِيَا تَرْبِطُ آسِيَا بِأُورُوبَّا.",
+      "exampleMeaning": "Turkey connects Asia with Europe."
+    },
+    {
+      "word": "مِصْرِيٌّ",
+      "reading": "miṣriyyun",
+      "meaning": "Egyptian (male)",
+      "example": "صَدِيقِي مِصْرِيٌّ مِنَ الْقَاهِرَةِ.",
+      "exampleMeaning": "My friend is Egyptian, from Cairo."
+    },
+    {
+      "word": "سُورِيَّةٌ",
+      "reading": "sūriyyatun",
+      "meaning": "Syrian (female)",
+      "example": "الطَّبِيبَةُ سُورِيَّةٌ وَتَعْمَلُ هُنَا.",
+      "exampleMeaning": "The doctor is Syrian and works here."
+    },
+    {
+      "word": "سُعُودِيٌّ",
+      "reading": "suʿūdiyyun",
+      "meaning": "Saudi (male)",
+      "example": "هُوَ مُهَنْدِسٌ سُعُودِيٌّ فِي شَرِكَةٍ كَبِيرَةٍ.",
+      "exampleMeaning": "He is a Saudi engineer in a large company."
+    },
+    {
+      "word": "مَغْرِبِيَّةٌ",
+      "reading": "maghribiyyatun",
+      "meaning": "Moroccan (female)",
+      "example": "الْكَاتِبَةُ مَغْرِبِيَّةٌ وَتَكْتُبُ بِالْعَرَبِيَّةِ.",
+      "exampleMeaning": "The writer is Moroccan and writes in Arabic."
+    },
+    {
+      "word": "أَمْرِيكِيٌّ",
+      "reading": "ʾamrīkiyyun",
+      "meaning": "American (male)",
+      "example": "الطَّالِبُ أَمْرِيكِيٌّ وَيَدْرُسُ التَّارِيخَ.",
+      "exampleMeaning": "The student is American and studies history."
+    },
+    {
+      "word": "فَرَنْسِيَّةٌ",
+      "reading": "faransiyyatun",
+      "meaning": "French (female)",
+      "example": "الْمُعَلِّمَةُ فَرَنْسِيَّةٌ وَلَطِيفَةٌ.",
+      "exampleMeaning": "The teacher is French and kind."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "___ بَلَدٌ عَرَبِيٌّ عَرِيقٌ.",
+          "answer": "مِصْرُ",
+          "hint": "Egypt"
+        },
+        {
+          "sentence": "___ مَعْرُوفَةٌ بِتَارِيخِهَا الْقَدِيمِ.",
+          "answer": "سُورِيَا",
+          "hint": "Syria"
+        },
+        {
+          "sentence": "___ تَقَعُ فِي شِبْهِ الْجَزِيرَةِ الْعَرَبِيَّةِ.",
+          "answer": "السُّعُودِيَّةُ",
+          "hint": "Saudi Arabia"
+        },
+        {
+          "sentence": "___ يَطِلُّ عَلَى الْمُحِيطِ الْأَطْلَسِيِّ.",
+          "answer": "الْمَغْرِبُ",
+          "hint": "Morocco"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "items": [
+        {
+          "question": "What does ‘مِصْرُ’ mean?",
+          "options": [
+            "Syria",
+            "Egypt",
+            "Saudi Arabia",
+            "Morocco"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What does ‘سُورِيَا’ mean?",
+          "options": [
+            "Saudi Arabia",
+            "Syria",
+            "Morocco",
+            "Iraq"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What does ‘السُّعُودِيَّةُ’ mean?",
+          "options": [
+            "Morocco",
+            "Saudi Arabia",
+            "Iraq",
+            "Jordan"
+          ],
+          "answer": 1
+        }
+      ]
+    }
+  ]
+}

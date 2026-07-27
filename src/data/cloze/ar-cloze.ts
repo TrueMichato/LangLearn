@@ -65,4 +65,30 @@ export const arClozeSentences: ClozeSentence[] = [
   { id: 'ar-c048', target: 'مِن الضَّرُوريِّ الحِفاظُ على البِيئة', english: 'It is necessary to preserve the environment', blankedWord: 'البِيئة', blankedReading: 'al-bīʾa', frequencyRank: 300, difficulty: 'advanced' },
   { id: 'ar-c049', target: 'كُلَّما قَرَأْتَ أكْثَر، ازْدَدْتَ مَعْرِفة', english: 'The more you read, the more knowledge you gain', blankedWord: 'ازْدَدْتَ', blankedReading: 'izdadta', frequencyRank: 300, difficulty: 'advanced' },
   { id: 'ar-c050', target: 'لَوْلا مُساعَدَتُك، لَمَا نَجَحْتُ', english: 'Were it not for your help, I would not have succeeded', blankedWord: 'لَوْلا', blankedReading: 'lawlā', frequencyRank: 300, difficulty: 'advanced' },
+
+  // ── Beginner (batch 3) ──
+  { id: 'ar-c051', target: 'أُرِيدُ أن أَتَعَلَّمَ السِّباحة', english: 'I want to learn swimming', blankedWord: 'أَتَعَلَّمَ', blankedReading: 'ataʿallama', frequencyRank: 174, difficulty: 'beginner' },
+  { id: 'ar-c052', target: 'هو يُسافِرُ إلى لُبْنان', english: 'He travels to Lebanon', blankedWord: 'يُسافِرُ', blankedReading: 'yusāfiru', frequencyRank: 201, difficulty: 'beginner' },
+  { id: 'ar-c053', target: 'أَسْتَمِعُ إلى الأخْبار كُلَّ صَباح', english: 'I listen to the news every morning', blankedWord: 'أَسْتَمِعُ', blankedReading: 'astamiʿu', frequencyRank: 169, difficulty: 'beginner' },
+  { id: 'ar-c054', target: 'الطِّفْلُ يَمْشي في الحَدِيقة', english: 'The child walks in the garden', blankedWord: 'يَمْشي', blankedReading: 'yamshī', frequencyRank: 181, difficulty: 'beginner' },
+  { id: 'ar-c055', target: 'سَأَلْتُ المُعَلِّمَ عَن الدَّرْس', english: 'I asked the teacher about the lesson', blankedWord: 'سَأَلْتُ', blankedReading: 'saʾaltu', frequencyRank: 171, difficulty: 'beginner' },
+  { id: 'ar-c056', target: 'نَسِيتُ مِفْتاحي في البَيْت', english: 'I forgot my key at home', blankedWord: 'نَسِيتُ', blankedReading: 'nasītu', frequencyRank: 173, difficulty: 'beginner' },
+  { id: 'ar-c057', target: 'أَغْلَقْتُ البابَ قَبْلَ النَّوْم', english: 'I closed the door before sleeping', blankedWord: 'أَغْلَقْتُ', blankedReading: 'aghlaqtu', frequencyRank: 196, difficulty: 'beginner' },
+
+  // ── Intermediate (batch 3) ──
+  { id: 'ar-c058', target: 'يَسْتَخْدِمُ النّاسُ الهَواتِفَ الذَّكِيّة كَثِيرًا', english: 'People use smartphones a lot', blankedWord: 'يَسْتَخْدِمُ', blankedReading: 'yastakhdimu', frequencyRank: 206, difficulty: 'intermediate' },
+  { id: 'ar-c059', target: 'اِجْتَمَعَ المُدَراءُ لِمُناقَشةِ الخُطّة', english: 'The managers met to discuss the plan', blankedWord: 'اِجْتَمَعَ', blankedReading: 'ijtamaʿa', frequencyRank: 250, difficulty: 'intermediate' },
+  { id: 'ar-c060', target: 'يَجِبُ أن نَحْتَرِمَ القَوانِين', english: 'We must respect the laws', blankedWord: 'نَحْتَرِمَ', blankedReading: 'naḥtarima', frequencyRank: 121, difficulty: 'intermediate' },
+  { id: 'ar-c061', target: 'اِسْتَقْبَلَ الرَّئيسُ الضُّيُوفَ في القَصْر', english: 'The president received the guests at the palace', blankedWord: 'اِسْتَقْبَلَ', blankedReading: 'istaqbala', frequencyRank: 269, difficulty: 'intermediate' },
+  { id: 'ar-c062', target: 'تَعاوَنَ الفَرِيقُ لإنْجازِ المَشْرُوع', english: 'The team cooperated to finish the project', blankedWord: 'تَعاوَنَ', blankedReading: 'taʿāwana', frequencyRank: 250, difficulty: 'intermediate' },
+  { id: 'ar-c063', target: 'دَعا صَدِيقي إلى حَفْلةِ زَواجِه', english: 'My friend invited me to his wedding', blankedWord: 'دَعا', blankedReading: 'daʿā', frequencyRank: 157, difficulty: 'intermediate' },
+  { id: 'ar-c064', target: 'أُطَوِّرُ مَهاراتي في كُلِّ يَوم', english: 'I develop my skills every day', blankedWord: 'أُطَوِّرُ', blankedReading: 'uṭawwiru', frequencyRank: 250, difficulty: 'intermediate' },
+
+  // ── Advanced (batch 3) ──
+  { id: 'ar-c065', target: 'يَنْبَغي علينا أن نُحافِظَ على تُراثِنا', english: 'We ought to preserve our heritage', blankedWord: 'تُراثِنا', blankedReading: 'turāthinā', frequencyRank: 300, difficulty: 'advanced' },
+  { id: 'ar-c066', target: 'اِزْدَهَرَت العُلُومُ في العَصْرِ الذَّهَبيّ', english: 'The sciences flourished in the golden age', blankedWord: 'اِزْدَهَرَت', blankedReading: 'izdaharat', frequencyRank: 300, difficulty: 'advanced' },
+  { id: 'ar-c067', target: 'كُلَّما تَعَمَّقْتَ في الدِّراسة، ازْدادَ فَهْمُك', english: 'The deeper you go in study, the more your understanding grows', blankedWord: 'تَعَمَّقْتَ', blankedReading: 'taʿammaqta', frequencyRank: 300, difficulty: 'advanced' },
+  { id: 'ar-c068', target: 'تُسْهِمُ التِّجارةُ في ازْدِهارِ الاقْتِصاد', english: 'Trade contributes to the prosperity of the economy', blankedWord: 'الاقْتِصاد', blankedReading: 'al-iqtiṣād', frequencyRank: 300, difficulty: 'advanced' },
+  { id: 'ar-c069', target: 'يَعْتَمِدُ النَّجاحُ على الصَّبْرِ والمُثابَرة', english: 'Success depends on patience and perseverance', blankedWord: 'يَعْتَمِدُ', blankedReading: 'yaʿtamidu', frequencyRank: 300, difficulty: 'advanced' },
+  { id: 'ar-c070', target: 'لا يُمْكِنُ إنْكارُ أَثَرِ التَّعْليمِ في المُجْتَمَع', english: "One cannot deny education's impact on society", blankedWord: 'المُجْتَمَع', blankedReading: 'al-mujtamaʿ', frequencyRank: 130, difficulty: 'advanced' },
 ];

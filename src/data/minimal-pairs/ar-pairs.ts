@@ -49,4 +49,12 @@ export const arMinimalPairs: MinimalPair[] = [
   // ── Vowel length (batch 2) ──
   { id: 'ar-29', wordA: 'سَلَم', wordB: 'سَلام', readingA: 'salam', readingB: 'salām', meaningA: 'peace (short)', meaningB: 'peace / greeting', hint: 'Short a vs long ā on the final syllable.', category: 'vowel-length' },
   { id: 'ar-30', wordA: 'مَلِك', wordB: 'مالِك', readingA: 'malik', readingB: 'mālik', meaningA: 'king', meaningB: 'owner', hint: 'Long ā (mā-) marks the active participle "owner".', category: 'vowel-length' },
+
+  // ── batch 3 ──
+  { id: 'ar-31', wordA: 'طَلَب', wordB: 'تَلَف', readingA: 'ṭalab', readingB: 'talaf', meaningA: 'request', meaningB: 'damage', hint: 'Emphatic ط vs plain ت.', category: 'emphatic' },
+  { id: 'ar-32', wordA: 'بَصَل', wordB: 'بَسَل', readingA: 'baṣal', readingB: 'basal', meaningA: 'onions', meaningB: '(courage, rare)', hint: 'Emphatic ص vs plain س in the middle.', category: 'emphatic' },
+  { id: 'ar-33', wordA: 'أَحَد', wordB: 'عَهْد', readingA: 'aḥad', readingB: 'ʿahd', meaningA: 'one / Sunday', meaningB: 'era, covenant', hint: 'Hamza + ح vs ع + ه — layered throat contrasts.', category: 'throat' },
+  { id: 'ar-34', wordA: 'صَغِير', wordB: 'صَقِيل', readingA: 'ṣaghīr', readingB: 'ṣaqīl', meaningA: 'small', meaningB: 'polished', hint: 'غ (voiced gh) vs ق (uvular q).', category: 'similar' },
+  { id: 'ar-35', wordA: 'كِتاب', wordB: 'قِطار', readingA: 'kitāb', readingB: 'qiṭār', meaningA: 'book', meaningB: 'train', hint: 'ك vs ق — listen for the deeper, further-back q.', category: 'similar' },
+  { id: 'ar-36', wordA: 'شارِب', wordB: 'شارِع', readingA: 'shārib', readingB: 'shāriʿ', meaningA: 'drinking / moustache', meaningB: 'street', hint: 'Final ب vs ع — the ʿayn is a throat squeeze, not a stop.', category: 'throat' },
 ];

@@ -270,6 +270,16 @@ const RESOURCES: Record<string, ResourceCategory[]> = {
           url: 'http://learning.aljazeera.net/arabic',
           description: 'Guides, articles and resources for learners from Al Jazeera.',
         },
+        {
+          name: 'All The Arabic You Never Learned…',
+          url: 'http://allthearabicyouneverlearnedthefirsttimearound.com/',
+          description: 'A thorough, well-loved free grammar reference for serious learners.',
+        },
+        {
+          name: 'Learn Arabic Online',
+          url: 'http://www.learnarabiconline.com/',
+          description: 'In-depth lessons on classical/advanced Arabic grammar (naḥw & ṣarf).',
+        },
       ],
     },
     {
@@ -321,6 +331,37 @@ const RESOURCES: Record<string, ResourceCategory[]> = {
           name: 'Book2 — Arabic (MSA)',
           url: 'https://www.goethe-verlag.com/book2/EM/',
           description: 'Free phrasebook course with audio across 100 everyday topics.',
+        },
+      ],
+    },
+    {
+      label: 'Dialects (Colloquial)',
+      emoji: '🗣️',
+      resources: [
+        {
+          name: 'Lisaan Masry (Egyptian)',
+          url: 'http://www.lisaanmasry.com/',
+          description: 'Grammar guide and dictionary dedicated to Egyptian Arabic.',
+        },
+        {
+          name: 'abcLeb (Lebanese/Levantine)',
+          url: 'http://www.abcleb.com/',
+          description: 'Eng↔Lebanese glossaries and a colloquial verb conjugator.',
+        },
+        {
+          name: 'SpeakMoroccan (Maghrebi)',
+          url: 'http://www.speakmoroccan.com/',
+          description: 'Phrases and vocabulary for Moroccan Darija.',
+        },
+        {
+          name: 'SpeakDziri (Algerian)',
+          url: 'https://sites.google.com/site/speakdziri/home',
+          description: 'Alphabet guide, grammar, phrases and vocab for Algerian Arabic.',
+        },
+        {
+          name: 'Peace Corps Moroccan Arabic',
+          url: 'https://www.livelingua.com/peace-corps/Arabic-Moroccan/',
+          description: 'Free textbook + audio primer for Moroccan Darija.',
         },
       ],
     },

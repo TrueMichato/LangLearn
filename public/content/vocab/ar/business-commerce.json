@@ -1,0 +1,183 @@
+{
+  "id": "business-commerce",
+  "words": [
+    {
+      "word": "تِجَارَةٌ",
+      "reading": "tijāratun",
+      "meaning": "commerce / trade",
+      "example": "تِجَارَةٌ نَزِيهَةٌ تَبْنِي ثِقَةَ الزَّبَائِنِ.",
+      "exampleMeaning": "Honest commerce builds customers’ trust."
+    },
+    {
+      "word": "صَفْقَةٌ",
+      "reading": "ṣafqatun",
+      "meaning": "deal",
+      "example": "صَفْقَةٌ نَاجِحَةٌ زَادَتْ أَرْبَاحَ الشَّرِكَةِ.",
+      "exampleMeaning": "A successful deal increased the company’s profits."
+    },
+    {
+      "word": "اِسْتِثْمَارٌ",
+      "reading": "istithmārun",
+      "meaning": "investment",
+      "example": "اِسْتِثْمَارٌ طَوِيلُ الْأَمَدِ يَحْتَاجُ إِلَى صَبْرٍ.",
+      "exampleMeaning": "A long-term investment needs patience."
+    },
+    {
+      "word": "رِبْحٌ",
+      "reading": "ribḥun",
+      "meaning": "profit",
+      "example": "رِبْحٌ مُسْتَقِرٌّ يَسْمَحُ بِتَوْسِيعِ الْمَتْجَرِ.",
+      "exampleMeaning": "Stable profit allows the store to expand."
+    },
+    {
+      "word": "خَسَارَةٌ",
+      "reading": "khasāratun",
+      "meaning": "loss",
+      "example": "تَجَنَّبَ التَّاجِرُ خَسَارَةً كَبِيرَةً بِسَبَبِ التَّخْطِيطِ.",
+      "exampleMeaning": "The merchant avoided a large loss because of planning."
+    },
+    {
+      "word": "سُوقٌ",
+      "reading": "sūqun",
+      "meaning": "market",
+      "example": "تَدْرُسُ الشَّرِكَةُ سُوقًا جَدِيدَةً فِي الْمِنْطَقَةِ.",
+      "exampleMeaning": "The company studies a new market in the region."
+    },
+    {
+      "word": "مُنَافَسَةٌ",
+      "reading": "munāfasatun",
+      "meaning": "competition",
+      "example": "تَدْفَعُ الْمُنَافَسَةُ الشَّرِكَاتِ إِلَى الِابْتِكَارِ.",
+      "exampleMeaning": "Competition pushes companies toward innovation."
+    },
+    {
+      "word": "عَلامَةٌ تِجَارِيَّةٌ",
+      "reading": "ʿalāmatun tijāriyyatun",
+      "meaning": "brand / trademark",
+      "example": "بَنَتِ الشَّرِكَةُ عَلامَةً تِجَارِيَّةً مَوْثُوقَةً.",
+      "exampleMeaning": "The company built a trusted brand."
+    },
+    {
+      "word": "مُوَرِّدٌ",
+      "reading": "muwarridun",
+      "meaning": "supplier",
+      "example": "يُرْسِلُ مُوَرِّدٌ مَحَلِّيٌّ الْبَضَائِعَ كُلَّ أُسْبُوعٍ.",
+      "exampleMeaning": "A local supplier sends the goods every week."
+    },
+    {
+      "word": "مُوَزِّعٌ",
+      "reading": "muwazziʿun",
+      "meaning": "distributor",
+      "example": "يَتَعَاوَنُ الْمَصْنَعُ مَعَ مُوَزِّعٍ فِي الْخَارِجِ.",
+      "exampleMeaning": "The factory cooperates with a distributor abroad."
+    },
+    {
+      "word": "مَخْزُونٌ",
+      "reading": "makhzūnun",
+      "meaning": "inventory / stock",
+      "example": "يُرَاقِبُ الْمُدِيرُ مَخْزُونَ الْمَتْجَرِ يَوْمِيًّا.",
+      "exampleMeaning": "The manager monitors the store inventory daily."
+    },
+    {
+      "word": "طَلَبِيَّةٌ",
+      "reading": "ṭalabiyyatun",
+      "meaning": "order",
+      "example": "وَصَلَتْ طَلَبِيَّةٌ كَبِيرَةٌ مِنَ الْعَمِيلِ.",
+      "exampleMeaning": "A large order arrived from the client."
+    },
+    {
+      "word": "تَفَاوُضٌ",
+      "reading": "tafāwuḍun",
+      "meaning": "negotiation",
+      "example": "اِسْتَمَرَّ التَّفَاوُضُ حَتَّى نِهَايَةِ اللَّيْلِ.",
+      "exampleMeaning": "The negotiation continued until the end of the night."
+    },
+    {
+      "word": "ضَرِيبَةٌ",
+      "reading": "ḍarībatun",
+      "meaning": "tax",
+      "example": "تَدْفَعُ الشَّرِكَةُ ضَرِيبَةً عَلَى الْأَرْبَاحِ.",
+      "exampleMeaning": "The company pays tax on profits."
+    },
+    {
+      "word": "رَأْسُ الْمَالِ",
+      "reading": "raʾsu l-māli",
+      "meaning": "capital",
+      "example": "زَادَ الشُّرَكَاءُ رَأْسَ الْمَالِ لِبَدْءِ الْمَشْرُوعِ.",
+      "exampleMeaning": "The partners increased the capital to start the project."
+    },
+    {
+      "word": "شَرَاكَةٌ",
+      "reading": "sharākatun",
+      "meaning": "partnership",
+      "example": "وَقَّعَ الطَّرَفَانِ شَرَاكَةً طَوِيلَةَ الْأَمَدِ.",
+      "exampleMeaning": "The two parties signed a long-term partnership."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "___ نَزِيهَةٌ تَبْنِي ثِقَةَ الزَّبَائِنِ.",
+          "answer": "تِجَارَةٌ",
+          "hint": "commerce / trade"
+        },
+        {
+          "sentence": "___ نَاجِحَةٌ زَادَتْ أَرْبَاحَ الشَّرِكَةِ.",
+          "answer": "صَفْقَةٌ",
+          "hint": "deal"
+        },
+        {
+          "sentence": "___ طَوِيلُ الْأَمَدِ يَحْتَاجُ إِلَى صَبْرٍ.",
+          "answer": "اِسْتِثْمَارٌ",
+          "hint": "investment"
+        },
+        {
+          "sentence": "___ مُسْتَقِرٌّ يَسْمَحُ بِتَوْسِيعِ الْمَتْجَرِ.",
+          "answer": "رِبْحٌ",
+          "hint": "profit"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "items": [
+        {
+          "question": "What does ‘تِجَارَةٌ’ mean?",
+          "options": [
+            "deal",
+            "commerce / trade",
+            "investment",
+            "profit"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What does ‘صَفْقَةٌ’ mean?",
+          "options": [
+            "investment",
+            "deal",
+            "profit",
+            "loss"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What does ‘اِسْتِثْمَارٌ’ mean?",
+          "options": [
+            "profit",
+            "investment",
+            "loss",
+            "market"
+          ],
+          "answer": 1
+        }
+      ]
+    }
+  ]
+}

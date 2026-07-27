@@ -244,4 +244,70 @@ export const arPassages: ListeningPassage[] = [
       { question: 'What do some experts warn about?', options: ['Buying new phones', 'Overusing technology', 'Slow internet', 'Learning to code'], correctIndex: 1 },
     ],
   },
+
+  // ── Easy (batch 3) ──
+  {
+    id: 'ar-easy-10',
+    title: 'At the Airport',
+    text: 'عَفْوًا، أينَ صالةُ المُغادَرة؟ رِحْلَتي إلى إسْطَنْبُول تُقْلِعُ في السّاعة الثّالِثة. مَعي حَقِيبة واحِدة فَقَط. هل أَحْتاجُ إلى بِطاقة الصُّعُود الآن؟ شُكْرًا لِمُساعَدَتِك.',
+    difficulty: 'easy',
+    questions: [
+      { question: 'Where is the traveler going?', options: ['Cairo', 'Istanbul', 'Dubai', 'Beirut'], correctIndex: 1 },
+      { question: 'How many bags does the traveler have?', options: ['One', 'Two', 'Three', 'None'], correctIndex: 0 },
+    ],
+  },
+  {
+    id: 'ar-easy-11',
+    title: 'My Favourite Food',
+    text: 'طَعامي المُفَضَّل هو الأُرْزُ بِالدَّجاج. أُمّي تَطْبُخُه يَوْمَ الجُمُعة، وتَضَعُ عليه الكَثِير مِن البَهارات. أُحِبُّ أيْضًا الحَلْوى، خاصّةً الكُنافة. بَعْدَ الغَداء نَشْرَبُ الشّايَ مَعًا.',
+    difficulty: 'easy',
+    questions: [
+      { question: "What is the speaker's favourite food?", options: ['Fish', 'Rice with chicken', 'Bread', 'Soup'], correctIndex: 1 },
+      { question: 'What do they drink after lunch?', options: ['Coffee', 'Tea', 'Juice', 'Water'], correctIndex: 1 },
+    ],
+  },
+  {
+    id: 'ar-easy-12',
+    title: 'The Four Seasons',
+    text: 'في الرَّبِيع تُزْهِرُ الأشْجار ويَعْتَدِلُ الجَوّ. في الصَّيْف تَكُونُ الشَّمْسُ حارّة. في الخَرِيف تَسْقُطُ الأوْراق، وفي الشِّتاء يَبْرُدُ الطَّقْسُ ويَنْزِلُ المَطَر. لِكُلِّ فَصْلٍ جَمالُه.',
+    difficulty: 'easy',
+    questions: [
+      { question: 'What happens in autumn?', options: ['Trees blossom', 'The leaves fall', 'It gets very hot', 'It snows heavily'], correctIndex: 1 },
+      { question: 'When does it rain?', options: ['Spring', 'Summer', 'Winter', 'Never'], correctIndex: 2 },
+    ],
+  },
+
+  // ── Medium (batch 3) ──
+  {
+    id: 'ar-med-9',
+    title: 'Ramadan',
+    text: 'رَمَضانُ شَهْرٌ مُبارَك يَصُومُ فيه المُسْلِمُونَ مِن الفَجْرِ حَتّى الغُرُوب. عِنْدَ المَغْرِب تَجْتَمِعُ العائِلةُ على مائِدةِ الإفْطار، وغالِبًا ما يَبْدَؤُونَ بِتَمْرةٍ وكوبِ ماء. إنّه شَهْرُ العِبادةِ والكَرَمِ ولَمِّ الشَّمْل.',
+    difficulty: 'medium',
+    questions: [
+      { question: 'Until when do Muslims fast during Ramadan?', options: ['Until noon', 'From dawn until sunset', 'All night', 'Only in the morning'], correctIndex: 1 },
+      { question: 'What do they often break the fast with?', options: ['Bread and cheese', 'A date and a cup of water', 'Rice', 'Coffee'], correctIndex: 1 },
+    ],
+  },
+  {
+    id: 'ar-med-10',
+    title: 'Learning a New Skill',
+    text: 'قَرَّرْتُ هذا العام أن أَتَعَلَّمَ العَزْفَ على العُود. في البِداية كانَت أَصابِعي تُؤْلِمُني، ولم أَسْتَطِعْ أن أَعْزِفَ أيَّ لَحْن. لكِنّي تَدَرَّبْتُ كُلَّ يَوْم، وبَعْدَ شُهُور أَصْبَحْتُ أَعْزِفُ أَغانيَ بَسِيطة. الصَّبْرُ مِفْتاحُ كُلِّ نَجاح.',
+    difficulty: 'medium',
+    questions: [
+      { question: 'What did the speaker decide to learn?', options: ['Painting', 'Playing the oud', 'Cooking', 'Swimming'], correctIndex: 1 },
+      { question: 'What does the speaker say is the key to success?', options: ['Money', 'Talent', 'Patience', 'Luck'], correctIndex: 2 },
+    ],
+  },
+
+  // ── Hard (batch 3) ──
+  {
+    id: 'ar-hard-7',
+    title: 'The Golden Age of Science',
+    text: 'شَهِدَ العالَمُ الإسْلاميُّ بَيْنَ القَرْنَيْنِ الثّامِنِ والثّالِثَ عَشَرَ عَصْرًا ذَهَبيًّا مِن الازْدِهارِ العِلْميّ. فَفي بَيْتِ الحِكْمةِ بِبَغْداد، تَرْجَمَ العُلَماءُ كُتُبَ اليُونانِ والفُرْسِ والهِنْد، وأَضافُوا إليها اكْتِشافاتِهِم في الطِّبِّ والفَلَكِ والرِّياضِيّات. ولا يَزالُ أَثَرُ هؤُلاءِ العُلَماءِ حاضِرًا في عِلْمِنا اليَوْم.',
+    difficulty: 'hard',
+    questions: [
+      { question: 'Where did scholars translate books from Greece, Persia and India?', options: ['Cairo University', 'The House of Wisdom in Baghdad', 'Al-Azhar', 'Cordoba'], correctIndex: 1 },
+      { question: 'In which fields did they add discoveries?', options: ['Only poetry', 'Medicine, astronomy and mathematics', 'Only law', 'Painting'], correctIndex: 1 },
+    ],
+  },
 ];

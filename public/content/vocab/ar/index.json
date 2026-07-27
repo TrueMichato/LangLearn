@@ -454,5 +454,125 @@
     "wordCount": 16,
     "level": "intermediate",
     "dialect": "levantine"
+  },
+  {
+    "id": "countries-nationalities",
+    "title": "Countries & Nationalities",
+    "order": 58,
+    "wordCount": 16,
+    "level": "beginner",
+    "dialect": "msa"
+  },
+  {
+    "id": "government-politics",
+    "title": "Government & Politics",
+    "order": 59,
+    "wordCount": 16,
+    "level": "advanced",
+    "dialect": "msa"
+  },
+  {
+    "id": "law-justice",
+    "title": "Law & Justice",
+    "order": 60,
+    "wordCount": 16,
+    "level": "advanced",
+    "dialect": "msa"
+  },
+  {
+    "id": "tools-hardware",
+    "title": "Tools & Hardware",
+    "order": 61,
+    "wordCount": 16,
+    "level": "intermediate",
+    "dialect": "msa"
+  },
+  {
+    "id": "construction-building",
+    "title": "Construction & Building",
+    "order": 62,
+    "wordCount": 16,
+    "level": "intermediate",
+    "dialect": "msa"
+  },
+  {
+    "id": "music-instruments",
+    "title": "Musical Instruments",
+    "order": 63,
+    "wordCount": 16,
+    "level": "intermediate",
+    "dialect": "msa"
+  },
+  {
+    "id": "plants-trees",
+    "title": "Plants, Trees & Gardening",
+    "order": 64,
+    "wordCount": 16,
+    "level": "intermediate",
+    "dialect": "msa"
+  },
+  {
+    "id": "birds-insects",
+    "title": "Birds & Insects",
+    "order": 65,
+    "wordCount": 16,
+    "level": "intermediate",
+    "dialect": "msa"
+  },
+  {
+    "id": "measurements-quantities",
+    "title": "Measurements & Quantities",
+    "order": 66,
+    "wordCount": 16,
+    "level": "intermediate",
+    "dialect": "msa"
+  },
+  {
+    "id": "business-commerce",
+    "title": "Business & Commerce",
+    "order": 67,
+    "wordCount": 16,
+    "level": "advanced",
+    "dialect": "msa"
+  },
+  {
+    "id": "cooking-verbs",
+    "title": "Cooking Verbs & Kitchen Actions",
+    "order": 68,
+    "wordCount": 16,
+    "level": "intermediate",
+    "dialect": "msa"
+  },
+  {
+    "id": "feelings-detailed",
+    "title": "Emotions & States of Mind",
+    "order": 69,
+    "wordCount": 16,
+    "level": "advanced",
+    "dialect": "msa"
+  },
+  {
+    "id": "proverbs-wisdom",
+    "title": "Proverbs & Words of Wisdom II",
+    "order": 70,
+    "wordCount": 16,
+    "level": "advanced",
+    "dialect": "msa"
+  },
+  {
+    "id": "classical-formal",
+    "title": "Classical & Formal Expressions",
+    "order": 71,
+    "wordCount": 16,
+    "level": "advanced",
+    "dialect": "msa"
+  },
+  {
+    "id": "gulf-phrases-2",
+    "title": "More Gulf Phrases",
+    "order": 72,
+    "wordCount": 16,
+    "level": "intermediate",
+    "dialect": "gulf"
   }
 ]
