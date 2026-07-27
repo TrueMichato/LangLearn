@@ -74,6 +74,7 @@ function ActivityCardLink({ card }: { card: ActivityCard }) {
 export default function LearnPage() {
   const activeLanguages = useSettingsStore((s) => s.activeLanguages);
   const languagesWithLetters = activeLanguages.filter((l) => getAlphabetsForLanguage(l).length > 0);
+  const hasArabic = activeLanguages.includes('ar');
   const hasNumberPractice = activeLanguages.some((l) => hasNumbers(l));
 
   const letterCards: ActivityCard[] =
@@ -123,6 +124,18 @@ export default function LearnPage() {
           bgColor: 'bg-rose-100 dark:bg-rose-900/40',
         },
         ...letterCards,
+        ...(hasArabic
+          ? [
+              {
+                to: '/dialects',
+                emoji: '🗣️',
+                title: 'Dialects',
+                subtitle: 'Compare spoken Arabic',
+                borderColor: 'border-fuchsia-400 dark:border-fuchsia-500',
+                bgColor: 'bg-fuchsia-100 dark:bg-fuchsia-900/40',
+              } as ActivityCard,
+            ]
+          : []),
         {
           to: '/listening',
           emoji: '🎧',

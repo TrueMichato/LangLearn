@@ -20,6 +20,7 @@ import MinimalPairsPage from './pages/MinimalPairs';
 import NumberPracticePage from './pages/NumberPractice';
 import TranslationPracticePage from './pages/TranslationPractice';
 import LyricsPage from './pages/Lyrics';
+import DialectsPage from './pages/Dialects';
 import OnboardingOverlay from './components/onboarding/OnboardingOverlay';
 import { useSettingsStore } from './stores/settingsStore';
 import ErrorBoundary from './components/common/ErrorBoundary';
@@ -52,6 +53,7 @@ export default function App() {
             <Route path="/cloze-practice" element={<ClozePracticePage />} />
             <Route path="/minimal-pairs" element={<MinimalPairsPage />} />
             <Route path="/number-practice" element={<NumberPracticePage />} />
+            <Route path="/dialects" element={<DialectsPage />} />
             <Route path="/lyrics" element={<LyricsPage />} />
             <Route path="/translation" element={<TranslationPracticePage />} />
           </Route>
