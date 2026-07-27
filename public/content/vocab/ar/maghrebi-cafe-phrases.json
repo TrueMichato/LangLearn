@@ -1,0 +1,159 @@
+{
+  "id": "maghrebi-cafe-phrases",
+  "words": [
+    {
+      "word": "لَا بَاسْ",
+      "reading": "lā bās",
+      "meaning": "fine / all good",
+      "example": "لَا بَاسْ؟ كِيفْ دَايْرْ؟",
+      "exampleMeaning": "All good? How are you doing?"
+    },
+    {
+      "word": "كِيفْ دَايْرْ",
+      "reading": "kīf dāyir",
+      "meaning": "how are you doing?",
+      "example": "كِيفْ دَايْرْ الْيَوْمْ؟",
+      "exampleMeaning": "How are you doing today?"
+    },
+    {
+      "word": "بْزَّافْ",
+      "reading": "bzzāf",
+      "meaning": "a lot / very",
+      "example": "الْقَهْوَةْ زْوِينَةْ بْزَّافْ.",
+      "exampleMeaning": "The coffee is very nice."
+    },
+    {
+      "word": "شْحَالْ",
+      "reading": "shḥāl",
+      "meaning": "how much",
+      "example": "شْحَالْ هَادْ الْقَهْوَةْ؟",
+      "exampleMeaning": "How much is this coffee?"
+    },
+    {
+      "word": "عَافَاكْ",
+      "reading": "ʿāfāk",
+      "meaning": "please",
+      "example": "عَافَاكْ، جِيبْ لِي الْمَاءْ.",
+      "exampleMeaning": "Please, bring me water."
+    },
+    {
+      "word": "بَغِيتْ",
+      "reading": "bghīt",
+      "meaning": "I want",
+      "example": "بَغِيتْ آتَايْ بِالنَّعْنَاعْ.",
+      "exampleMeaning": "I want mint tea."
+    },
+    {
+      "word": "وَاشْ كَايْنْ؟",
+      "reading": "wāsh kāyn?",
+      "meaning": "is there?",
+      "example": "وَاشْ كَايْنْ طَاجِينْ الْيَوْمْ؟",
+      "exampleMeaning": "Is there tagine today?"
+    },
+    {
+      "word": "مَاكَايْنْشْ",
+      "reading": "mākāynsh",
+      "meaning": "there is not",
+      "example": "مَاكَايْنْشْ سُكَّرْ فِي الْقَهْوَةْ.",
+      "exampleMeaning": "There is no sugar in the coffee."
+    },
+    {
+      "word": "دَابَا",
+      "reading": "dābā",
+      "meaning": "now",
+      "example": "نْخْلْصُ دَابَا وْنْمْشِي.",
+      "exampleMeaning": "We will pay now and go."
+    },
+    {
+      "word": "غَدَا",
+      "reading": "ghadā",
+      "meaning": "tomorrow",
+      "example": "نْرْجْعُ غَدَا لِهَادْ الْحَانُوتْ.",
+      "exampleMeaning": "We will return tomorrow to this shop."
+    },
+    {
+      "word": "فِينْ",
+      "reading": "fīn",
+      "meaning": "where",
+      "example": "فِينْ الْمَحَطَّةْ الْقَرِيبَةْ؟",
+      "exampleMeaning": "Where is the nearby station?"
+    },
+    {
+      "word": "قْرِيبْ",
+      "reading": "qrīb",
+      "meaning": "near",
+      "example": "الْمَقْهَى قْرِيبْ مِنَ السُّوقْ.",
+      "exampleMeaning": "The café is near the market."
+    },
+    {
+      "word": "بْعِيدْ",
+      "reading": "bʿīd",
+      "meaning": "far",
+      "example": "الشَّارِعْ بْعِيدْ شْوَيَّة.",
+      "exampleMeaning": "The street is a little far."
+    },
+    {
+      "word": "زْوِينْ",
+      "reading": "zwīn",
+      "meaning": "nice / beautiful",
+      "example": "هَادْ الْمَكَانْ زْوِينْ لِلْجْلْسَةْ.",
+      "exampleMeaning": "This place is nice for sitting."
+    },
+    {
+      "word": "آتَايْ",
+      "reading": "ātāy",
+      "meaning": "tea",
+      "example": "آتَايْ بِالنَّعْنَاعْ مَشْهُورْ فِي الْمَغْرِبْ.",
+      "exampleMeaning": "Mint tea is famous in Morocco."
+    },
+    {
+      "word": "قَهْوَةْ",
+      "reading": "qahwa",
+      "meaning": "coffee",
+      "example": "قَهْوَةْ سُودَاءْ بِلَا سُكَّرْ، عَافَاكْ.",
+      "exampleMeaning": "Black coffee without sugar, please."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "___؟ كِيفْ دَايْرْ؟",
+          "answer": "لَا بَاسْ",
+          "hint": "all good?"
+        },
+        {
+          "sentence": "___ آتَايْ بِالنَّعْنَاعْ.",
+          "answer": "بَغِيتْ",
+          "hint": "I want"
+        },
+        {
+          "sentence": "___ هَادْ الْقَهْوَةْ؟",
+          "answer": "شْحَالْ",
+          "hint": "how much"
+        },
+        {
+          "sentence": "___ الْمَحَطَّةْ الْقَرِيبَةْ؟",
+          "answer": "فِينْ",
+          "hint": "where"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "In Maghrebi Arabic, what does ‘عَافَاكْ’ mean?",
+      "options": [
+        "please",
+        "tomorrow",
+        "far",
+        "coffee"
+      ],
+      "answer": 0
+    }
+  ]
+}

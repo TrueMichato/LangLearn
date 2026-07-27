@@ -718,5 +718,65 @@
     "title": "How Dialect Verbs Conjugate (bi-/ʿam prefixes, dropped case endings)",
     "order": 120,
     "group": "🗣️ Colloquial & Dialects"
+  },
+  {
+    "id": "mafool-maah",
+    "title": "The Object of Accompaniment (al-Mafʿūl Maʿahu)",
+    "order": 121,
+    "group": "🔢 Structure & Nuance"
+  },
+  {
+    "id": "lam-particles",
+    "title": "The Many Lāms (purpose, command, denial, emphasis)",
+    "order": 122,
+    "group": "🔢 Structure & Nuance"
+  },
+  {
+    "id": "ma-particles",
+    "title": "The Many Uses of Mā",
+    "order": 123,
+    "group": "🔢 Structure & Nuance"
+  },
+  {
+    "id": "qad-laqad",
+    "title": "Qad and Laqad (certainty, possibility, recentness)",
+    "order": 124,
+    "group": "🔤 Verbs"
+  },
+  {
+    "id": "amma-fa",
+    "title": "Ammā...fa- for Topic Switching",
+    "order": 125,
+    "group": "🔢 Structure & Nuance"
+  },
+  {
+    "id": "quadriliteral-verbs",
+    "title": "Quadriliteral Verb Patterns",
+    "order": 126,
+    "group": "🔤 Verbs"
+  },
+  {
+    "id": "form-ix-verbs",
+    "title": "Verb Form IX for Colors and Defects",
+    "order": 127,
+    "group": "🔤 Verbs"
+  },
+  {
+    "id": "instrument-nouns",
+    "title": "Nouns of Instrument (ism al-ālah)",
+    "order": 128,
+    "group": "🔢 Structure & Nuance"
+  },
+  {
+    "id": "hyperbole-patterns",
+    "title": "Intensive Actor Patterns (ṣīghat al-mubālagha)",
+    "order": 129,
+    "group": "🔢 Structure & Nuance"
+  },
+  {
+    "id": "maqsur-manqus-mamdud",
+    "title": "Maqṣūr, Manqūṣ & Mamdūd Nouns",
+    "order": 130,
+    "group": "🔢 Structure & Nuance"
   }
 ]

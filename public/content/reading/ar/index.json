@@ -236,7 +236,7 @@
         "culture"
       ],
       "description": "A personal story about mistakes, patience, and family encouragement in the kitchen.",
-      "wordCount": 122
+      "wordCount": 121
     },
     {
       "id": "a-letter-to-a-friend",
@@ -483,7 +483,7 @@
         "health"
       ],
       "description": "A practical beginner dialogue for asking about headache medicine at a pharmacy.",
-      "wordCount": 72
+      "wordCount": 84
     },
     {
       "id": "dialogue-planning-a-trip",
@@ -497,7 +497,7 @@
         "daily-life"
       ],
       "description": "Two friends choose a destination, transport, and supplies for a short trip.",
-      "wordCount": 129
+      "wordCount": 142
     },
     {
       "id": "the-arab-league",
@@ -510,7 +510,7 @@
         "society"
       ],
       "description": "An informational overview of the Arab League, its purpose, and its challenges.",
-      "wordCount": 120
+      "wordCount": 121
     },
     {
       "id": "a-traditional-recipe",
@@ -685,7 +685,7 @@
       "title": "ابْنُ خَلْدُون ومُقَدِّمَتُه",
       "titleEn": "Ibn Khaldun and His Muqaddima (history of the first sociologist)",
       "difficulty": "hard",
-      "wordCount": 179,
+      "wordCount": 178,
       "tags": [
         "history",
         "society",
@@ -848,6 +848,106 @@
         "culture"
       ],
       "description": "A factual overview of al-Khwarizmi, Ibn Sina, al-Razi, and the scholarly culture around them."
+    },
+    {
+      "id": "morning-train-ar",
+      "title": "قِطَارُ الصَّبَاحِ",
+      "titleEn": "The Morning Train",
+      "difficulty": "easy",
+      "tags": [
+        "travel",
+        "daily-life"
+      ],
+      "description": "A learner-friendly scene about two students riding the morning train.",
+      "wordCount": 52
+    },
+    {
+      "id": "simple-salad-ar",
+      "title": "سَلَطَةٌ بَسِيطَةٌ",
+      "titleEn": "A Simple Salad",
+      "difficulty": "easy",
+      "tags": [
+        "food",
+        "health",
+        "daily-life"
+      ],
+      "description": "A simple text about preparing a healthy salad at home.",
+      "wordCount": 50
+    },
+    {
+      "id": "lost-key-ar",
+      "title": "الْمِفْتَاحُ الضَّائِعُ",
+      "titleEn": "The Lost Key",
+      "difficulty": "easy",
+      "tags": [
+        "daily-life",
+        "conversation"
+      ],
+      "description": "A short everyday dialogue about finding a missing key.",
+      "wordCount": 50
+    },
+    {
+      "id": "village-library-ar",
+      "title": "مَكْتَبَةُ الْقَرْيَةِ",
+      "titleEn": "The Village Library",
+      "difficulty": "medium",
+      "tags": [
+        "education",
+        "society",
+        "daily-life"
+      ],
+      "description": "A community story about turning an old house into a small village library.",
+      "wordCount": 83
+    },
+    {
+      "id": "bees-and-garden-ar",
+      "title": "النَّحْلُ وَالْحَدِيقَةُ",
+      "titleEn": "Bees and the Garden",
+      "difficulty": "medium",
+      "tags": [
+        "science",
+        "nature"
+      ],
+      "description": "A clear science explainer about how bees help plants produce fruit.",
+      "wordCount": 81
+    },
+    {
+      "id": "new-park-report-ar",
+      "title": "تَقْرِيرٌ عَنْ حَدِيقَةٍ جَدِيدَةٍ",
+      "titleEn": "Report on a New Park",
+      "difficulty": "medium",
+      "tags": [
+        "society",
+        "nature"
+      ],
+      "description": "A news-style report about a neighborhood opening a new public park.",
+      "wordCount": 81
+    },
+    {
+      "id": "tree-and-river-ar",
+      "title": "الشَّجَرَةُ وَالنَّهْرُ",
+      "titleEn": "The Tree and the River",
+      "difficulty": "hard",
+      "tags": [
+        "folktale",
+        "nature",
+        "proverb"
+      ],
+      "description": "An original fable about humility, dependence, and quiet generosity.",
+      "wordCount": 142
+    },
+    {
+      "id": "digital-memory-ar",
+      "title": "الذَّاكِرَةُ الرَّقْمِيَّةُ",
+      "titleEn": "Digital Memory",
+      "difficulty": "hard",
+      "tags": [
+        "science",
+        "society",
+        "daily-life"
+      ],
+      "description": "A reflective blog-style text about memory, technology, and attention.",
+      "wordCount": 141
     }
   ]
 }
