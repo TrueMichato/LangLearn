@@ -1310,5 +1310,64 @@
     "wordCount": 16,
     "level": "beginner",
     "dialect": "maghrebi"
+  },
+  {
+    "id": "gulf-car-workshop",
+    "title": "Gulf Car & Workshop",
+    "order": 167,
+    "wordCount": 16,
+    "level": "beginner",
+    "dialect": "gulf"
+  },
+  {
+    "id": "iraqi-university-campus",
+    "title": "Iraqi University & Campus",
+    "order": 168,
+    "wordCount": 16,
+    "level": "beginner",
+    "dialect": "iraqi"
+  },
+  {
+    "id": "maghrebi-public-offices",
+    "title": "Maghrebi Public Offices & Paperwork",
+    "order": 169,
+    "wordCount": 16,
+    "level": "beginner",
+    "dialect": "maghrebi"
+  },
+  {
+    "id": "chemistry-lab-terms",
+    "title": "Chemistry & Lab Terms",
+    "order": 170,
+    "wordCount": 16,
+    "level": "advanced"
+  },
+  {
+    "id": "physics-forces-energy",
+    "title": "Physics: Forces & Energy",
+    "order": 171,
+    "wordCount": 16,
+    "level": "advanced"
+  },
+  {
+    "id": "biology-cells-genetics",
+    "title": "Biology: Cells & Genetics",
+    "order": 172,
+    "wordCount": 16,
+    "level": "advanced"
+  },
+  {
+    "id": "mathematics-terms",
+    "title": "Mathematics Terms",
+    "order": 173,
+    "wordCount": 16,
+    "level": "intermediate"
+  },
+  {
+    "id": "geology-rocks-minerals",
+    "title": "Geology: Rocks & Minerals",
+    "order": 174,
+    "wordCount": 16,
+    "level": "advanced"
   }
 ]

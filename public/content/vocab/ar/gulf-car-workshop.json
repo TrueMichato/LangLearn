@@ -1,0 +1,159 @@
+{
+  "id": "gulf-car-workshop",
+  "words": [
+    {
+      "word": "الْوَرْشَةْ",
+      "reading": "il-warsha",
+      "meaning": "the workshop",
+      "example": "الْوَرْشَةْ قَرِيبَةْ مِنَ الْمَحَطَّةْ.",
+      "exampleMeaning": "The workshop is near the station."
+    },
+    {
+      "word": "مَكِينِةْ السَّيَّارَةْ",
+      "reading": "makīnat is-sayyāra",
+      "meaning": "the car engine",
+      "example": "مَكِينِةْ السَّيَّارَةْ صَوْتْهَا عَالِي.",
+      "exampleMeaning": "The car engine sounds loud."
+    },
+    {
+      "word": "بَنْشَرْ",
+      "reading": "banshar",
+      "meaning": "flat tire",
+      "example": "عِنْدِي بَنْشَرْ فِي كُفُرْ وَاحِدْ.",
+      "exampleMeaning": "I have a flat tire in one tire."
+    },
+    {
+      "word": "كُفُرْ",
+      "reading": "kufur",
+      "meaning": "tire",
+      "example": "لَازِمْ أُغَيِّرْ كُفُرْ قَبْلَ السَّفَرْ.",
+      "exampleMeaning": "I need to change a tire before the trip."
+    },
+    {
+      "word": "زَيْتْ الْمَكِينِةْ",
+      "reading": "zēt il-makīna",
+      "meaning": "engine oil",
+      "example": "زَيْتْ الْمَكِينِةْ نَاقِصْ شْوَيّْ.",
+      "exampleMeaning": "The engine oil is a little low."
+    },
+    {
+      "word": "بَطَّارِيَّةْ",
+      "reading": "baṭṭāriyya",
+      "meaning": "battery",
+      "example": "الْبَطَّارِيَّةْ خَلْصَتْ فِي الْمَوْقِفْ.",
+      "exampleMeaning": "The battery died in the parking lot."
+    },
+    {
+      "word": "تَشْيِيكْ",
+      "reading": "tashyīk",
+      "meaning": "check-up / inspection",
+      "example": "أَبِي تَشْيِيكْ سَرِيعْ عَلَى السَّيَّارَةْ.",
+      "exampleMeaning": "I want a quick check-up for the car."
+    },
+    {
+      "word": "فَرَامِلْ",
+      "reading": "farāmil",
+      "meaning": "brakes",
+      "example": "الْفَرَامِلْ تِصْفِرْ لَمَّا أَوْقَفْ.",
+      "exampleMeaning": "The brakes squeal when I stop."
+    },
+    {
+      "word": "مُكَيِّفْ السَّيَّارَةْ",
+      "reading": "mukayyif is-sayyāra",
+      "meaning": "car air-conditioner",
+      "example": "مُكَيِّفْ السَّيَّارَةْ مَا يَبَرِّدْ زَيْنْ.",
+      "exampleMeaning": "The car air-conditioner is not cooling well."
+    },
+    {
+      "word": "صَوْتْ غَرِيبْ",
+      "reading": "ṣōt gharīb",
+      "meaning": "strange noise",
+      "example": "أَسْمَعْ صَوْتْ غَرِيبْ مِنْ وَرَا.",
+      "exampleMeaning": "I hear a strange noise from the back."
+    },
+    {
+      "word": "تَعْبَانَةْ",
+      "reading": "taʿbāna",
+      "meaning": "worn out / not working well",
+      "example": "السَّيَّارَةْ تَعْبَانَةْ وَتِحْتَاجْ شُغْلْ.",
+      "exampleMeaning": "The car is worn out and needs work."
+    },
+    {
+      "word": "تِصَلِّحْهَا؟",
+      "reading": "tiṣalliḥhā?",
+      "meaning": "can you fix it?",
+      "example": "تِصَلِّحْهَا؟ أَنَا مُسْتَعْجِلْ.",
+      "exampleMeaning": "Can you fix it? I am in a hurry."
+    },
+    {
+      "word": "كَمْ تَاخِذْ؟",
+      "reading": "kam tākhidh?",
+      "meaning": "how much do you charge?",
+      "example": "كَمْ تَاخِذْ عَلَى التَّصْلِيحْ؟",
+      "exampleMeaning": "How much do you charge for the repair?"
+    },
+    {
+      "word": "تَبْدِيلْ",
+      "reading": "tabdīl",
+      "meaning": "replacement",
+      "example": "نَحْتَاجْ تَبْدِيلْ لِلْبَطَّارِيَّةْ.",
+      "exampleMeaning": "We need a battery replacement."
+    },
+    {
+      "word": "قِطْعَةْ غِيَارْ",
+      "reading": "qiṭʿat ghiyār",
+      "meaning": "spare part",
+      "example": "عِنْدَكْ قِطْعَةْ غِيَارْ أَصْلِيَّةْ؟",
+      "exampleMeaning": "Do you have an original spare part?"
+    },
+    {
+      "word": "أَسْتَنَّى هِنَا",
+      "reading": "astannā hinā",
+      "meaning": "I will wait here",
+      "example": "أَسْتَنَّى هِنَا لِينْ تِخْلَصْ.",
+      "exampleMeaning": "I will wait here until you finish."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "عِنْدِي ___ فِي كُفُرْ وَاحِدْ.",
+          "answer": "بَنْشَرْ",
+          "hint": "flat tire"
+        },
+        {
+          "sentence": "___ مَا يَبَرِّدْ زَيْنْ.",
+          "answer": "مُكَيِّفْ السَّيَّارَةْ",
+          "hint": "car air-conditioner"
+        },
+        {
+          "sentence": "نَحْتَاجْ ___ لِلْبَطَّارِيَّةْ.",
+          "answer": "تَبْدِيلْ",
+          "hint": "replacement"
+        },
+        {
+          "sentence": "___ لِينْ تِخْلَصْ.",
+          "answer": "أَسْتَنَّى هِنَا",
+          "hint": "I will wait here"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "In Gulf Arabic, what does ‘بَنْشَرْ’ mean?",
+      "options": [
+        "flat tire",
+        "battery",
+        "brakes",
+        "workshop"
+      ],
+      "answer": 0
+    }
+  ]
+}

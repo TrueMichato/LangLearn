@@ -970,5 +970,53 @@
     "title": "Going in the Dialects: rūḥ and mshī",
     "order": 162,
     "group": "🗣️ Colloquial & Dialects"
+  },
+  {
+    "id": "hamzat-wasl-qata",
+    "title": "Hamzat al-Waṣl vs Hamzat al-Qaṭʿ",
+    "order": 163,
+    "group": "🏗️ Foundations"
+  },
+  {
+    "id": "sound-plurals-detail",
+    "title": "Sound Masculine and Feminine Plurals in Detail",
+    "order": 164,
+    "group": "🔢 Structure & Nuance"
+  },
+  {
+    "id": "jussive-particles",
+    "title": "Jussive Particles: lam, lammā, lā an-nāhiya, lām al-amr",
+    "order": 165,
+    "group": "🔤 Verbs"
+  },
+  {
+    "id": "subjunctive-particles",
+    "title": "Subjunctive Particles: an, lan, kay, idhan, ḥattā",
+    "order": 166,
+    "group": "🔤 Verbs"
+  },
+  {
+    "id": "shared-relative-man-ma",
+    "title": "Shared Relative Nouns: man and mā",
+    "order": 167,
+    "group": "🔢 Structure & Nuance"
+  },
+  {
+    "id": "idafa-types",
+    "title": "Real and Verbal Iḍāfa Types",
+    "order": 168,
+    "group": "🔢 Structure & Nuance"
+  },
+  {
+    "id": "predicate-types",
+    "title": "Predicate Types in Nominal Sentences",
+    "order": 169,
+    "group": "🔢 Structure & Nuance"
+  },
+  {
+    "id": "damir-fasl",
+    "title": "The Separating Pronoun (Ḍamīr al-Faṣl)",
+    "order": 170,
+    "group": "🔢 Structure & Nuance"
   }
 ]

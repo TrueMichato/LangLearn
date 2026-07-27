@@ -1253,6 +1253,102 @@
       ],
       "description": "A science explainer about magnetic direction, navigation, and practical knowledge.",
       "wordCount": 141
+    },
+    {
+      "id": "airport-dialogue-ar",
+      "title": "حِوارٌ في المَطارِ",
+      "titleEn": "Dialogue at the Airport",
+      "difficulty": "easy",
+      "tags": [
+        "travel",
+        "dialogue"
+      ],
+      "description": "A simple airport dialogue about finding a gate and preparing to fly.",
+      "wordCount": 45
+    },
+    {
+      "id": "plant-a-tree-ar",
+      "title": "كَيْفَ تَزْرَعُ شَجَرَةً",
+      "titleEn": "How to Plant a Tree",
+      "difficulty": "easy",
+      "tags": [
+        "nature",
+        "how-to"
+      ],
+      "description": "A short how-to text explaining the first steps of planting a tree.",
+      "wordCount": 47
+    },
+    {
+      "id": "quiet-courtyard-ar",
+      "title": "الفِناءُ الهادِئُ",
+      "titleEn": "The Quiet Courtyard",
+      "difficulty": "easy",
+      "tags": [
+        "personal-essay",
+        "home"
+      ],
+      "description": "A reflective personal essay about a peaceful family courtyard.",
+      "wordCount": 43
+    },
+    {
+      "id": "volcanoes-explainer-ar",
+      "title": "كَيْفَ يَثورُ البُرْكانُ",
+      "titleEn": "How Volcanoes Erupt",
+      "difficulty": "medium",
+      "tags": [
+        "science",
+        "geology"
+      ],
+      "description": "A science explainer about magma, pressure, and volcanic eruptions.",
+      "wordCount": 86
+    },
+    {
+      "id": "travel-to-muscat-ar",
+      "title": "رِحْلَةٌ إِلَى مَسْقَطَ",
+      "titleEn": "A Trip to Muscat",
+      "difficulty": "medium",
+      "tags": [
+        "travel",
+        "city"
+      ],
+      "description": "A travel account describing sights and sounds in Muscat.",
+      "wordCount": 80
+    },
+    {
+      "id": "al-razi-biography-ar",
+      "title": "أَبو بَكْرٍ الرّازيُّ",
+      "titleEn": "Abu Bakr al-Razi",
+      "difficulty": "medium",
+      "tags": [
+        "biography",
+        "science"
+      ],
+      "description": "A brief factual biography of the physician and scholar Abu Bakr al-Razi.",
+      "wordCount": 84
+    },
+    {
+      "id": "fox-and-well-fable-ar",
+      "title": "الثَّعْلَبُ وَالبِئْرُ",
+      "titleEn": "The Fox and the Well",
+      "difficulty": "hard",
+      "tags": [
+        "fable",
+        "wisdom"
+      ],
+      "description": "An original fable about flattery, caution, and wisdom.",
+      "wordCount": 140
+    },
+    {
+      "id": "human-heart-explainer-ar",
+      "title": "القَلْبُ البَشَرِيُّ",
+      "titleEn": "The Human Heart",
+      "difficulty": "hard",
+      "tags": [
+        "science",
+        "health"
+      ],
+      "description": "A detailed explainer about how the human heart pumps blood.",
+      "wordCount": 141
     }
   ]
 }
