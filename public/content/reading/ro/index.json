@@ -1,0 +1,94 @@
+{
+  "texts": [
+    {
+      "id": "self-intro-ro",
+      "title": "Prezentare",
+      "titleEn": "Self-Introduction",
+      "difficulty": "easy",
+      "wordCount": 80,
+      "tags": ["daily-life", "conversation"],
+      "description": "A simple self-introduction in Romanian"
+    },
+    {
+      "id": "ziua-mea",
+      "title": "Ziua mea",
+      "titleEn": "My Day",
+      "difficulty": "easy",
+      "wordCount": 90,
+      "tags": ["daily-life"],
+      "description": "A typical daily routine in Romania"
+    },
+    {
+      "id": "la-piata",
+      "title": "La piață",
+      "titleEn": "At the Market",
+      "difficulty": "easy",
+      "wordCount": 92,
+      "tags": ["daily-life", "conversation"],
+      "description": "A friendly dialogue at a Romanian market stall"
+    },
+    {
+      "id": "familia-mea",
+      "title": "Familia mea",
+      "titleEn": "My Family",
+      "difficulty": "easy",
+      "wordCount": 88,
+      "tags": ["daily-life"],
+      "description": "A short description of a Romanian family"
+    },
+    {
+      "id": "martisor",
+      "title": "Mărțișorul",
+      "titleEn": "Mărțișor",
+      "difficulty": "medium",
+      "wordCount": 182,
+      "tags": ["culture", "traditions"],
+      "description": "An article about the Romanian spring tradition of Mărțișor"
+    },
+    {
+      "id": "capra-cu-trei-iezi",
+      "title": "Capra cu trei iezi",
+      "titleEn": "The Goat and Her Three Kids",
+      "difficulty": "medium",
+      "wordCount": 201,
+      "tags": ["culture", "folklore"],
+      "description": "A retelling of a well-known Romanian folk tale by Ion Creangă"
+    },
+    {
+      "id": "bucuresti",
+      "title": "București",
+      "titleEn": "Bucharest",
+      "difficulty": "medium",
+      "wordCount": 179,
+      "tags": ["travel", "culture"],
+      "description": "A travel and culture overview of Romania's capital city"
+    },
+    {
+      "id": "mancare-romaneasca",
+      "title": "Mâncare românească",
+      "titleEn": "Romanian Food",
+      "difficulty": "medium",
+      "wordCount": 166,
+      "tags": ["culture", "food"],
+      "description": "An introduction to several traditional Romanian dishes"
+    },
+    {
+      "id": "tehnologia-si-mediul",
+      "title": "Tehnologia și mediul",
+      "titleEn": "Technology and the Environment",
+      "difficulty": "hard",
+      "wordCount": 225,
+      "tags": ["technology", "environment", "society"],
+      "description": "A short opinion essay about using technology responsibly for the environment"
+    },
+    {
+      "id": "nadia-comaneci",
+      "title": "Nadia Comăneci",
+      "titleEn": "Nadia Comăneci",
+      "difficulty": "hard",
+      "wordCount": 221,
+      "tags": ["culture", "history", "sports"],
+      "description": "A biography-style narrative about the Romanian gymnast Nadia Comăneci"
+    }
+  ]
+}

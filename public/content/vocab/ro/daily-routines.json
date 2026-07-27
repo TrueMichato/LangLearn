@@ -1,0 +1,178 @@
+{
+  "id": "daily-routines",
+  "words": [
+    {
+      "word": "rutină",
+      "reading": "roo-tee-nuh",
+      "meaning": "routine",
+      "example": "O rutină simplă mă ajută dimineața.",
+      "exampleMeaning": "A simple routine helps me in the morning."
+    },
+    {
+      "word": "obicei",
+      "reading": "oh-bee-chey",
+      "meaning": "habit",
+      "example": "Un obicei bun se formează încet.",
+      "exampleMeaning": "A good habit forms slowly."
+    },
+    {
+      "word": "a se trezi",
+      "reading": "ah seh treh-zee",
+      "meaning": "to wake up",
+      "example": "Verbul a se trezi descrie începutul zilei.",
+      "exampleMeaning": "The verb to wake up describes the start of the day."
+    },
+    {
+      "word": "a se spăla",
+      "reading": "ah seh spuh-lah",
+      "meaning": "to wash oneself",
+      "example": "Verbul a se spăla apare dimineața.",
+      "exampleMeaning": "The verb to wash oneself appears in the morning."
+    },
+    {
+      "word": "mic dejun",
+      "reading": "meek deh-zhoon",
+      "meaning": "breakfast",
+      "example": "Mănânc mic dejun acasă.",
+      "exampleMeaning": "I eat breakfast at home."
+    },
+    {
+      "word": "prânz",
+      "reading": "pruhnz",
+      "meaning": "lunch",
+      "example": "La prânz iau o pauză.",
+      "exampleMeaning": "At lunch I take a break."
+    },
+    {
+      "word": "cină",
+      "reading": "chee-nuh",
+      "meaning": "dinner",
+      "example": "Cina este gata la șapte.",
+      "exampleMeaning": "Dinner is ready at seven."
+    },
+    {
+      "word": "serviciu",
+      "reading": "sehr-vee-chee-oo",
+      "meaning": "work / job",
+      "example": "Merg la serviciu cu autobuzul.",
+      "exampleMeaning": "I go to work by bus."
+    },
+    {
+      "word": "școală",
+      "reading": "shkoh-ah-luh",
+      "meaning": "school",
+      "example": "Copilul merge la școală devreme.",
+      "exampleMeaning": "The child goes to school early."
+    },
+    {
+      "word": "curățenie",
+      "reading": "koo-ruh-tseh-nee-eh",
+      "meaning": "cleaning",
+      "example": "Fac curățenie sâmbătă.",
+      "exampleMeaning": "I do cleaning on Saturday."
+    },
+    {
+      "word": "cumpărături",
+      "reading": "koom-puh-ruh-toor",
+      "meaning": "shopping",
+      "example": "Fac cumpărături după muncă.",
+      "exampleMeaning": "I do shopping after work."
+    },
+    {
+      "word": "plimbare",
+      "reading": "pleem-bah-reh",
+      "meaning": "walk",
+      "example": "O plimbare scurtă mă relaxează.",
+      "exampleMeaning": "A short walk relaxes me."
+    },
+    {
+      "word": "odihnă",
+      "reading": "oh-deeh-nuh",
+      "meaning": "rest",
+      "example": "O odihnă bună aduce energie.",
+      "exampleMeaning": "Good rest brings energy."
+    },
+    {
+      "word": "somn",
+      "reading": "somn",
+      "meaning": "sleep",
+      "example": "Somnul suficient este important.",
+      "exampleMeaning": "Enough sleep is important."
+    },
+    {
+      "word": "program",
+      "reading": "proh-grahm",
+      "meaning": "schedule",
+      "example": "Un program flexibil mă ajută.",
+      "exampleMeaning": "A flexible schedule helps me."
+    },
+    {
+      "word": "zilnic",
+      "reading": "zeel-neek",
+      "meaning": "daily",
+      "example": "Exersez zilnic zece minute.",
+      "exampleMeaning": "I practice daily for ten minutes."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "Fac ___ sâmbătă.",
+          "answer": "curățenie",
+          "hint": "cleaning"
+        },
+        {
+          "sentence": "Merg la ___ cu autobuzul.",
+          "answer": "serviciu",
+          "hint": "work"
+        },
+        {
+          "sentence": "Exersez ___ zece minute.",
+          "answer": "zilnic",
+          "hint": "daily"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "items": [
+        {
+          "question": "What does 'obicei' mean?",
+          "options": [
+            "routine",
+            "habit",
+            "schedule",
+            "rest"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "How do you say 'breakfast' in Romanian?",
+          "options": [
+            "mic dejun",
+            "prânz",
+            "cină",
+            "somn"
+          ],
+          "answer": 0
+        },
+        {
+          "question": "What does 'plimbare' mean?",
+          "options": [
+            "shopping",
+            "cleaning",
+            "walk",
+            "school"
+          ],
+          "answer": 2
+        }
+      ]
+    }
+  ]
+}

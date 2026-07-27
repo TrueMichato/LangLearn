@@ -7,6 +7,7 @@ import { jaSentences } from '../data/sentences/ja-sentences';
 import { ruSentences } from '../data/sentences/ru-sentences';
 import { ptSentences } from '../data/sentences/pt-sentences';
 import { esSentences } from '../data/sentences/es-sentences';
+import { roSentences } from '../data/sentences/ro-sentences';
 import type { PracticeSentence } from '../data/sentences/ja-sentences';
 import {
   XP_TRANSLATION_BASE,
@@ -37,6 +38,7 @@ function getSentences(lang: string): PracticeSentence[] {
   if (lang === 'ru') return ruSentences;
   if (lang === 'pt') return ptSentences;
   if (lang === 'es') return esSentences;
+  if (lang === 'ro') return roSentences;
   return [];
 }
 
@@ -51,7 +53,7 @@ function shuffle<T>(arr: T[]): T[] {
 
 export default function TranslationPracticePage() {
   const activeLanguages = useSettingsStore((s) => s.activeLanguages);
-  const supportedLanguages = activeLanguages.filter((l) => l === 'ja' || l === 'ru' || l === 'pt' || l === 'es');
+  const supportedLanguages = activeLanguages.filter((l) => l === 'ja' || l === 'ru' || l === 'pt' || l === 'es' || l === 'ro');
 
   const [phase, setPhase] = useState<Phase>('setup');
   const [language, setLanguage] = useState(supportedLanguages[0] ?? 'ja');

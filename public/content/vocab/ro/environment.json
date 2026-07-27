@@ -1,0 +1,178 @@
+{
+  "id": "environment",
+  "words": [
+    {
+      "word": "mediu",
+      "reading": "meh-dee-oo",
+      "meaning": "environment",
+      "example": "Un mediu sănătos susține viața.",
+      "exampleMeaning": "A healthy environment supports life."
+    },
+    {
+      "word": "planetă",
+      "reading": "plah-neh-tuh",
+      "meaning": "planet",
+      "example": "O planetă albastră are apă multă.",
+      "exampleMeaning": "A blue planet has a lot of water."
+    },
+    {
+      "word": "pământ",
+      "reading": "puh-muhnt",
+      "meaning": "earth / soil",
+      "example": "Pământul fertil hrănește plantele.",
+      "exampleMeaning": "Fertile soil feeds the plants."
+    },
+    {
+      "word": "climă",
+      "reading": "klee-muh",
+      "meaning": "climate",
+      "example": "Clima se schimbă rapid.",
+      "exampleMeaning": "The climate is changing quickly."
+    },
+    {
+      "word": "poluare",
+      "reading": "poh-loo-ah-reh",
+      "meaning": "pollution",
+      "example": "Poluarea afectează aerul orașului.",
+      "exampleMeaning": "Pollution affects the city air."
+    },
+    {
+      "word": "deșeu",
+      "reading": "deh-sheh-oo",
+      "meaning": "waste",
+      "example": "Un deșeu aruncat greșit murdărește râul.",
+      "exampleMeaning": "Improperly thrown waste dirties the river."
+    },
+    {
+      "word": "reciclare",
+      "reading": "reh-chee-klah-reh",
+      "meaning": "recycling",
+      "example": "Reciclarea reduce gunoiul.",
+      "exampleMeaning": "Recycling reduces garbage."
+    },
+    {
+      "word": "energie",
+      "reading": "eh-nehr-jee-eh",
+      "meaning": "energy",
+      "example": "Energia solară devine mai ieftină.",
+      "exampleMeaning": "Solar energy is becoming cheaper."
+    },
+    {
+      "word": "resursă",
+      "reading": "reh-soor-suh",
+      "meaning": "resource",
+      "example": "Apă este o resursă prețioasă.",
+      "exampleMeaning": "Water is a precious resource."
+    },
+    {
+      "word": "specie",
+      "reading": "speh-chee-eh",
+      "meaning": "species",
+      "example": "O specie rară trăiește în deltă.",
+      "exampleMeaning": "A rare species lives in the delta."
+    },
+    {
+      "word": "habitat",
+      "reading": "hah-bee-taht",
+      "meaning": "habitat",
+      "example": "Un habitat natural trebuie protejat.",
+      "exampleMeaning": "A natural habitat must be protected."
+    },
+    {
+      "word": "secetă",
+      "reading": "seh-cheh-tuh",
+      "meaning": "drought",
+      "example": "O secetă lungă afectează recolta.",
+      "exampleMeaning": "A long drought affects the harvest."
+    },
+    {
+      "word": "inundație",
+      "reading": "ee-noon-dah-tsee-eh",
+      "meaning": "flood",
+      "example": "O inundație a acoperit drumul.",
+      "exampleMeaning": "A flood covered the road."
+    },
+    {
+      "word": "cutremur",
+      "reading": "koo-treh-moor",
+      "meaning": "earthquake",
+      "example": "Un cutremur puternic a speriat orașul.",
+      "exampleMeaning": "A strong earthquake frightened the city."
+    },
+    {
+      "word": "protecție",
+      "reading": "proh-tek-tsee-eh",
+      "meaning": "protection",
+      "example": "Protecția naturii cere reguli clare.",
+      "exampleMeaning": "Protection of nature requires clear rules."
+    },
+    {
+      "word": "sustenabil",
+      "reading": "soos-teh-nah-beel",
+      "meaning": "sustainable",
+      "example": "Un plan sustenabil economisește resurse.",
+      "exampleMeaning": "A sustainable plan saves resources."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "Fac ___ pentru a reduce gunoiul.",
+          "answer": "reciclare",
+          "hint": "recycling"
+        },
+        {
+          "sentence": "O ___ lungă afectează recolta.",
+          "answer": "secetă",
+          "hint": "drought"
+        },
+        {
+          "sentence": "Un plan ___ economisește resurse.",
+          "answer": "sustenabil",
+          "hint": "sustainable"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "items": [
+        {
+          "question": "What does 'poluare' mean?",
+          "options": [
+            "climate",
+            "pollution",
+            "energy",
+            "species"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "How do you say 'flood' in Romanian?",
+          "options": [
+            "inundație",
+            "cutremur",
+            "secetă",
+            "deșeu"
+          ],
+          "answer": 0
+        },
+        {
+          "question": "What does 'habitat' mean?",
+          "options": [
+            "resource",
+            "protection",
+            "habitat",
+            "planet"
+          ],
+          "answer": 2
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,88 @@
+import type { Song } from './types';
+
+// Romanian songs for learning. To stay copyright-safe, these are traditional /
+// public-domain folk and children's songs — which also happen to be excellent
+// for beginners (simple, repetitive, culturally authentic).
+export const roLyrics: Song[] = [
+  {
+    id: 'ro-un-elefant',
+    title: 'Un elefant se legăna',
+    titleRomanized: 'An Elephant Was Swinging',
+    artist: 'Traditional (children\'s song)',
+    context: 'A classic Romanian counting song every child learns — perfect for practicing numbers and present-tense verbs.',
+    language: 'ro',
+    difficulty: 'easy',
+    lines: [
+      { original: 'Un elefant se legăna', reading: 'oon eh-leh-FANT seh leh-guh-NAH', translation: 'One elephant was swinging' },
+      { original: 'Pe o pânză de păianjen', reading: 'peh oh PUHN-zuh deh puh-YAN-zhen', translation: 'On a spider\'s web' },
+      { original: 'Și pentru că nu se rupea', reading: 'shee PEN-troo kuh noo seh roo-PYAH', translation: 'And because it didn\'t break' },
+      { original: 'A mai chemat un elefant', reading: 'ah my keh-MAT oon eh-leh-FANT', translation: 'It called another elephant' },
+      { original: 'Doi elefanți se legănau', reading: 'doy eh-leh-FANTS seh leh-guh-NOW', translation: 'Two elephants were swinging' },
+      { original: 'Pe o pânză de păianjen', reading: 'peh oh PUHN-zuh deh puh-YAN-zhen', translation: 'On a spider\'s web' },
+      { original: 'Și pentru că nu se rupea', reading: 'shee PEN-troo kuh noo seh roo-PYAH', translation: 'And because it didn\'t break' },
+      { original: 'Au mai chemat un elefant', reading: 'ow my keh-MAT oon eh-leh-FANT', translation: 'They called another elephant' },
+    ],
+    vocab: [
+      { word: 'elefant', reading: 'eh-leh-FANT', meaning: 'elephant' },
+      { word: 'se legăna', reading: 'seh leh-guh-NAH', meaning: 'was swinging (a se legăna, reflexive)' },
+      { word: 'pânză', reading: 'PUHN-zuh', meaning: 'web, cloth, canvas' },
+      { word: 'păianjen', reading: 'puh-YAN-zhen', meaning: 'spider' },
+      { word: 'se rupea', reading: 'seh roo-PYAH', meaning: 'was breaking (a se rupe)' },
+      { word: 'a chemat', reading: 'ah keh-MAT', meaning: 'called (a chema)' },
+      { word: 'doi', reading: 'doy', meaning: 'two (masculine)' },
+    ],
+  },
+  {
+    id: 'ro-podul-de-piatra',
+    title: 'Podul de piatră',
+    titleRomanized: 'The Stone Bridge',
+    artist: 'Traditional (folk song)',
+    context: 'A short traditional round sung by children across Romania — great for the perfect compound past tense.',
+    language: 'ro',
+    difficulty: 'easy',
+    lines: [
+      { original: 'Podul de piatră s-a dărâmat', reading: 'POH-dool deh PYAH-truh sah duh-ruh-MAT', translation: 'The stone bridge has collapsed' },
+      { original: 'A venit apa și l-a luat', reading: 'ah veh-NEET AH-pah shee lah loo-AT', translation: 'The water came and took it away' },
+      { original: 'Vom face altul pe râu în jos', reading: 'vom FAH-cheh AL-tool peh RUH-oo uhn zhos', translation: 'We will build another one down the river' },
+      { original: 'Altul mai trainic și mai frumos', reading: 'AL-tool my TRY-neek shee my froo-MOS', translation: 'Another one sturdier and more beautiful' },
+    ],
+    vocab: [
+      { word: 'pod', reading: 'pod', meaning: 'bridge' },
+      { word: 'piatră', reading: 'PYAH-truh', meaning: 'stone' },
+      { word: 's-a dărâmat', reading: 'sah duh-ruh-MAT', meaning: 'has collapsed (a se dărâma)' },
+      { word: 'a venit', reading: 'ah veh-NEET', meaning: 'came (a veni)' },
+      { word: 'a luat', reading: 'ah loo-AT', meaning: 'took (a lua)' },
+      { word: 'vom face', reading: 'vom FAH-cheh', meaning: 'we will build/make (viitor of a face)' },
+      { word: 'trainic', reading: 'TRY-neek', meaning: 'sturdy, durable' },
+      { word: 'frumos', reading: 'froo-MOS', meaning: 'beautiful' },
+    ],
+  },
+  {
+    id: 'ro-steaua-sus-rasare',
+    title: 'Steaua sus răsare',
+    titleRomanized: 'The Star Rises High',
+    artist: 'Traditional (Christmas carol)',
+    context: 'One of the best-known Romanian colinde (Christmas carols), sung on Christmas Eve. Slightly older, poetic language.',
+    language: 'ro',
+    difficulty: 'medium',
+    lines: [
+      { original: 'Steaua sus răsare', reading: 'STYAH-wah soos ruh-SAH-reh', translation: 'The star rises high' },
+      { original: 'Ca o taină mare', reading: 'kah oh TY-nuh MAH-reh', translation: 'Like a great mystery' },
+      { original: 'Steaua strălucește', reading: 'STYAH-wah struh-loo-CHESH-teh', translation: 'The star is shining' },
+      { original: 'Și lumii vestește', reading: 'shee LOO-mee ves-TESH-teh', translation: 'And announces to the world' },
+      { original: 'Că astăzi Curata', reading: 'kuh AS-tuhz koo-RAH-tah', translation: 'That today the Pure One' },
+      { original: 'Preanevinovata', reading: 'preh-ah-neh-vee-noh-VAH-tah', translation: 'The most innocent one' },
+      { original: 'Fecioara Maria', reading: 'feh-CHWAH-rah mah-REE-ah', translation: 'The Virgin Mary' },
+      { original: 'Naște pe Mesia', reading: 'NASH-teh peh meh-SEE-ah', translation: 'Gives birth to the Messiah' },
+    ],
+    vocab: [
+      { word: 'stea', reading: 'styah', meaning: 'star (steaua = the star)' },
+      { word: 'răsare', reading: 'ruh-SAH-reh', meaning: 'rises (a răsări)' },
+      { word: 'taină', reading: 'TY-nuh', meaning: 'mystery, secret' },
+      { word: 'strălucește', reading: 'struh-loo-CHESH-teh', meaning: 'shines (a străluci)' },
+      { word: 'vestește', reading: 'ves-TESH-teh', meaning: 'announces (a vesti)' },
+      { word: 'lume', reading: 'LOO-meh', meaning: 'world (lumii = to the world)' },
+      { word: 'naște', reading: 'NASH-teh', meaning: 'gives birth (a naște)' },
+    ],
+  },
+];

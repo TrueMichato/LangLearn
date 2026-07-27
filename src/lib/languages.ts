@@ -16,6 +16,7 @@ export const LANGUAGES: Record<string, LanguageInfo> = {
   zh: { code: 'zh', name: 'Chinese', flag: '🇨🇳', nativeName: '中文', hasLetterSystem: 'hanzi' },
   ko: { code: 'ko', name: 'Korean', flag: '🇰🇷', nativeName: '한국어', hasLetterSystem: 'hangul' },
   pt: { code: 'pt', name: 'Portuguese', flag: '🇧🇷', nativeName: 'Português', hasLetterSystem: 'latin-accents' },
+  ro: { code: 'ro', name: 'Romanian', flag: '🇷🇴', nativeName: 'Română', hasLetterSystem: 'latin-accents' },
 };
 
 export const ALL_LANGUAGE_CODES = Object.keys(LANGUAGES);

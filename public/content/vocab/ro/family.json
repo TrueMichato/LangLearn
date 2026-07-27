@@ -1,0 +1,178 @@
+{
+  "id": "family",
+  "words": [
+    {
+      "word": "familie",
+      "reading": "fah-mee-lee-eh",
+      "meaning": "family",
+      "example": "O familie unită oferă sprijin.",
+      "exampleMeaning": "A close family offers support."
+    },
+    {
+      "word": "mamă",
+      "reading": "mah-muh",
+      "meaning": "mother",
+      "example": "Am o mamă foarte blândă.",
+      "exampleMeaning": "I have a very gentle mother."
+    },
+    {
+      "word": "tată",
+      "reading": "tah-tuh",
+      "meaning": "father",
+      "example": "Am un tată care mă învață să repar bicicleta.",
+      "exampleMeaning": "I have a father who teaches me to fix the bicycle."
+    },
+    {
+      "word": "părinte",
+      "reading": "puh-reen-teh",
+      "meaning": "parent",
+      "example": "Fiecare părinte vrea binele copilului.",
+      "exampleMeaning": "Every parent wants the child’s good."
+    },
+    {
+      "word": "copil",
+      "reading": "koh-peel",
+      "meaning": "child",
+      "example": "Un copil râde în parc.",
+      "exampleMeaning": "A child laughs in the park."
+    },
+    {
+      "word": "fiu",
+      "reading": "fee-oo",
+      "meaning": "son",
+      "example": "Ea are un fiu de zece ani.",
+      "exampleMeaning": "She has a ten-year-old son."
+    },
+    {
+      "word": "fiică",
+      "reading": "fee-kuh",
+      "meaning": "daughter",
+      "example": "El are o fiică studentă.",
+      "exampleMeaning": "He has a daughter who is a student."
+    },
+    {
+      "word": "frate",
+      "reading": "frah-teh",
+      "meaning": "brother",
+      "example": "Am un frate mai mare.",
+      "exampleMeaning": "I have an older brother."
+    },
+    {
+      "word": "soră",
+      "reading": "soh-ruh",
+      "meaning": "sister",
+      "example": "Am o soră mai mică.",
+      "exampleMeaning": "I have a younger sister."
+    },
+    {
+      "word": "bunic",
+      "reading": "boo-neek",
+      "meaning": "grandfather",
+      "example": "Un bunic spune povești frumoase.",
+      "exampleMeaning": "A grandfather tells beautiful stories."
+    },
+    {
+      "word": "bunică",
+      "reading": "boo-nee-kuh",
+      "meaning": "grandmother",
+      "example": "O bunică face prăjituri excelente.",
+      "exampleMeaning": "A grandmother makes excellent cakes."
+    },
+    {
+      "word": "unchi",
+      "reading": "oonk",
+      "meaning": "uncle",
+      "example": "Un unchi vine la cină duminică.",
+      "exampleMeaning": "An uncle comes to dinner on Sunday."
+    },
+    {
+      "word": "mătușă",
+      "reading": "muh-too-shuh",
+      "meaning": "aunt",
+      "example": "O mătușă locuiește aproape de noi.",
+      "exampleMeaning": "An aunt lives close to us."
+    },
+    {
+      "word": "văr",
+      "reading": "vuhr",
+      "meaning": "male cousin",
+      "example": "Un văr mă vizitează vara.",
+      "exampleMeaning": "A male cousin visits me in summer."
+    },
+    {
+      "word": "verișoară",
+      "reading": "veh-ree-shwah-ruh",
+      "meaning": "female cousin",
+      "example": "O verișoară studiază medicina.",
+      "exampleMeaning": "A female cousin studies medicine."
+    },
+    {
+      "word": "soț",
+      "reading": "sots",
+      "meaning": "husband",
+      "example": "Un soț atent pregătește cafeaua dimineața.",
+      "exampleMeaning": "A thoughtful husband prepares the coffee in the morning."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "Am un ___ mai mare.",
+          "answer": "frate",
+          "hint": "brother"
+        },
+        {
+          "sentence": "Am o ___ mai mică.",
+          "answer": "soră",
+          "hint": "sister"
+        },
+        {
+          "sentence": "Ea are un ___ de zece ani.",
+          "answer": "fiu",
+          "hint": "son"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "items": [
+        {
+          "question": "What does 'bunică' mean?",
+          "options": [
+            "aunt",
+            "grandmother",
+            "mother",
+            "daughter"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "How do you say 'father' in Romanian?",
+          "options": [
+            "tată",
+            "frate",
+            "bunic",
+            "părinte"
+          ],
+          "answer": 0
+        },
+        {
+          "question": "What does 'mătușă' mean?",
+          "options": [
+            "cousin",
+            "sister",
+            "aunt",
+            "wife"
+          ],
+          "answer": 2
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,178 @@
+{
+  "id": "phrases",
+  "words": [
+    {
+      "word": "cum te cheamă",
+      "reading": "koom teh kyah-muh",
+      "meaning": "what is your name",
+      "example": "Întreb cum te cheamă la început.",
+      "exampleMeaning": "I ask what is your name at the beginning."
+    },
+    {
+      "word": "mă cheamă",
+      "reading": "muh kyah-muh",
+      "meaning": "my name is",
+      "example": "Răspund mă cheamă Ana.",
+      "exampleMeaning": "I answer my name is Ana."
+    },
+    {
+      "word": "nu înțeleg",
+      "reading": "noo uhn-tseh-leg",
+      "meaning": "I do not understand",
+      "example": "Spun nu înțeleg când fraza e grea.",
+      "exampleMeaning": "I say I do not understand when the sentence is hard."
+    },
+    {
+      "word": "vorbiți engleză",
+      "reading": "vor-beets eng-gleh-zuh",
+      "meaning": "do you speak English",
+      "example": "Întreb vorbiți engleză la hotel.",
+      "exampleMeaning": "I ask do you speak English at the hotel."
+    },
+    {
+      "word": "cât costă",
+      "reading": "kuht kos-tuh",
+      "meaning": "how much does it cost",
+      "example": "Întreb cât costă acest bilet.",
+      "exampleMeaning": "I ask how much this ticket costs."
+    },
+    {
+      "word": "unde este",
+      "reading": "oon-deh yeh-steh",
+      "meaning": "where is",
+      "example": "Întreb unde este gara.",
+      "exampleMeaning": "I ask where the train station is."
+    },
+    {
+      "word": "am nevoie de ajutor",
+      "reading": "ahm neh-voy-eh deh ah-zhoo-tor",
+      "meaning": "I need help",
+      "example": "Spun am nevoie de ajutor la recepție.",
+      "exampleMeaning": "I say I need help at reception."
+    },
+    {
+      "word": "îmi pare bine",
+      "reading": "uhm pahr-eh bee-neh",
+      "meaning": "nice to meet you",
+      "example": "Spun îmi pare bine când cunosc pe cineva.",
+      "exampleMeaning": "I say nice to meet you when I meet someone."
+    },
+    {
+      "word": "îmi pare rău",
+      "reading": "uhm pahr-eh ruh-oo",
+      "meaning": "I am sorry",
+      "example": "Spun îmi pare rău după o greșeală.",
+      "exampleMeaning": "I say I am sorry after a mistake."
+    },
+    {
+      "word": "nicio problemă",
+      "reading": "nee-choh proh-bleh-muh",
+      "meaning": "no problem",
+      "example": "Răspund nicio problemă când pot ajuta.",
+      "exampleMeaning": "I answer no problem when I can help."
+    },
+    {
+      "word": "pe curând",
+      "reading": "peh koo-ruhund",
+      "meaning": "see you soon",
+      "example": "Scriu pe curând la finalul mesajului.",
+      "exampleMeaning": "I write see you soon at the end of the message."
+    },
+    {
+      "word": "încet, vă rog",
+      "reading": "uhn-chet vuh rog",
+      "meaning": "slowly, please",
+      "example": "Spun încet, vă rog la curs.",
+      "exampleMeaning": "I say slowly, please in class."
+    },
+    {
+      "word": "se poate",
+      "reading": "seh pwah-teh",
+      "meaning": "is it possible / may I",
+      "example": "Întreb se poate plăti cu card?",
+      "exampleMeaning": "I ask is it possible to pay by card?"
+    },
+    {
+      "word": "noroc",
+      "reading": "noh-rok",
+      "meaning": "cheers / good luck",
+      "example": "Spun noroc înainte de toast.",
+      "exampleMeaning": "I say cheers before the toast."
+    },
+    {
+      "word": "la mulți ani",
+      "reading": "lah moolts ahn",
+      "meaning": "happy birthday",
+      "example": "Spun la mulți ani de ziua lui.",
+      "exampleMeaning": "I say happy birthday on his birthday."
+    },
+    {
+      "word": "drum bun",
+      "reading": "droom boon",
+      "meaning": "safe trip",
+      "example": "Spun drum bun înainte de plecare.",
+      "exampleMeaning": "I say safe trip before departure."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "Spun ___ după o greșeală.",
+          "answer": "îmi pare rău",
+          "hint": "I am sorry"
+        },
+        {
+          "sentence": "Întreb ___ acest bilet.",
+          "answer": "cât costă",
+          "hint": "how much does it cost"
+        },
+        {
+          "sentence": "Spun ___ înainte de plecare.",
+          "answer": "drum bun",
+          "hint": "safe trip"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "items": [
+        {
+          "question": "What does 'nu înțeleg' mean?",
+          "options": [
+            "I need help",
+            "I do not understand",
+            "where is",
+            "no problem"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "How do you say 'happy birthday' in Romanian?",
+          "options": [
+            "la mulți ani",
+            "noroc",
+            "pe curând",
+            "drum bun"
+          ],
+          "answer": 0
+        },
+        {
+          "question": "What does 'vorbiți engleză' mean?",
+          "options": [
+            "nice to meet you",
+            "how much does it cost",
+            "do you speak English",
+            "slowly, please"
+          ],
+          "answer": 2
+        }
+      ]
+    }
+  ]
+}

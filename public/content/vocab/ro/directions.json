@@ -1,0 +1,178 @@
+{
+  "id": "directions",
+  "words": [
+    {
+      "word": "aici",
+      "reading": "ah-eech",
+      "meaning": "here",
+      "example": "Aici începe traseul.",
+      "exampleMeaning": "Here the route begins."
+    },
+    {
+      "word": "acolo",
+      "reading": "ah-koh-loh",
+      "meaning": "there",
+      "example": "Magazinul este acolo, lângă parc.",
+      "exampleMeaning": "The store is there, next to the park."
+    },
+    {
+      "word": "aproape",
+      "reading": "ah-proh-ah-peh",
+      "meaning": "near / close",
+      "example": "Școala este aproape de casă.",
+      "exampleMeaning": "The school is near the house."
+    },
+    {
+      "word": "departe",
+      "reading": "deh-pahr-teh",
+      "meaning": "far",
+      "example": "Gara este departe de hotel.",
+      "exampleMeaning": "The station is far from the hotel."
+    },
+    {
+      "word": "stânga",
+      "reading": "stuhn-gah",
+      "meaning": "left",
+      "example": "Biblioteca este la stânga.",
+      "exampleMeaning": "The library is on the left."
+    },
+    {
+      "word": "dreapta",
+      "reading": "dryahp-tah",
+      "meaning": "right",
+      "example": "Farmacia este la dreapta.",
+      "exampleMeaning": "The pharmacy is on the right."
+    },
+    {
+      "word": "înainte",
+      "reading": "uh-nah-een-teh",
+      "meaning": "straight ahead / forward",
+      "example": "Mergeți înainte până la semafor.",
+      "exampleMeaning": "Go straight ahead to the traffic light."
+    },
+    {
+      "word": "înapoi",
+      "reading": "uh-nah-poy",
+      "meaning": "back",
+      "example": "Mergem înapoi spre hotel.",
+      "exampleMeaning": "We go back toward the hotel."
+    },
+    {
+      "word": "sus",
+      "reading": "soos",
+      "meaning": "up / upstairs",
+      "example": "Restaurantul este sus.",
+      "exampleMeaning": "The restaurant is upstairs."
+    },
+    {
+      "word": "jos",
+      "reading": "zhos",
+      "meaning": "down / downstairs",
+      "example": "Baia este jos.",
+      "exampleMeaning": "The bathroom is downstairs."
+    },
+    {
+      "word": "lângă",
+      "reading": "luhn-guh",
+      "meaning": "next to",
+      "example": "Cafeneaua este lângă muzeu.",
+      "exampleMeaning": "The café is next to the museum."
+    },
+    {
+      "word": "între",
+      "reading": "uhn-treh",
+      "meaning": "between",
+      "example": "Parcul este între școală și teatru.",
+      "exampleMeaning": "The park is between the school and the theater."
+    },
+    {
+      "word": "în față",
+      "reading": "uhn fah-tsuh",
+      "meaning": "in front",
+      "example": "Taxiurile stau în față la gară.",
+      "exampleMeaning": "The taxis wait in front at the station."
+    },
+    {
+      "word": "în spate",
+      "reading": "uhn spah-teh",
+      "meaning": "behind / in back",
+      "example": "Grădina este în spate.",
+      "exampleMeaning": "The garden is behind the house."
+    },
+    {
+      "word": "colț",
+      "reading": "kolts",
+      "meaning": "corner",
+      "example": "Ne întâlnim la colț.",
+      "exampleMeaning": "We meet at the corner."
+    },
+    {
+      "word": "adresă",
+      "reading": "ah-dreh-suh",
+      "meaning": "address",
+      "example": "Scriu o adresă pe plic.",
+      "exampleMeaning": "I write an address on the envelope."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "Școala este ___ de casă.",
+          "answer": "aproape",
+          "hint": "near"
+        },
+        {
+          "sentence": "Ne întâlnim la ___.",
+          "answer": "colț",
+          "hint": "corner"
+        },
+        {
+          "sentence": "Scriu ___ pe plic.",
+          "answer": "adresă",
+          "hint": "address"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "items": [
+        {
+          "question": "What does 'departe' mean?",
+          "options": [
+            "near",
+            "far",
+            "here",
+            "up"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "How do you say 'between' in Romanian?",
+          "options": [
+            "între",
+            "lângă",
+            "jos",
+            "acolo"
+          ],
+          "answer": 0
+        },
+        {
+          "question": "What does 'în spate' mean?",
+          "options": [
+            "in front",
+            "left",
+            "behind",
+            "straight ahead"
+          ],
+          "answer": 2
+        }
+      ]
+    }
+  ]
+}

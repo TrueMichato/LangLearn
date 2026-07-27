@@ -1,0 +1,178 @@
+{
+  "id": "feelings",
+  "words": [
+    {
+      "word": "personalitate",
+      "reading": "pehr-soh-nah-lee-tah-teh",
+      "meaning": "personality",
+      "example": "O personalitate puternică se vede în decizii.",
+      "exampleMeaning": "A strong personality shows in decisions."
+    },
+    {
+      "word": "curajos",
+      "reading": "koo-rah-zhos",
+      "meaning": "brave",
+      "example": "Un copil curajos spune adevărul.",
+      "exampleMeaning": "A brave child tells the truth."
+    },
+    {
+      "word": "timid",
+      "reading": "tee-meed",
+      "meaning": "shy",
+      "example": "Studentul timid vorbește încet.",
+      "exampleMeaning": "The shy student speaks softly."
+    },
+    {
+      "word": "generos",
+      "reading": "jeh-neh-ros",
+      "meaning": "generous",
+      "example": "Vecinul generos ajută mereu.",
+      "exampleMeaning": "The generous neighbor always helps."
+    },
+    {
+      "word": "egoist",
+      "reading": "eh-goh-eest",
+      "meaning": "selfish",
+      "example": "Un gest egoist rănește prietenia.",
+      "exampleMeaning": "A selfish act hurts friendship."
+    },
+    {
+      "word": "răbdător",
+      "reading": "ruhb-duh-tor",
+      "meaning": "patient",
+      "example": "Profesorul răbdător explică din nou.",
+      "exampleMeaning": "The patient teacher explains again."
+    },
+    {
+      "word": "nerăbdător",
+      "reading": "neh-ruhb-duh-tor",
+      "meaning": "impatient",
+      "example": "Copilul nerăbdător așteaptă cadoul.",
+      "exampleMeaning": "The impatient child waits for the gift."
+    },
+    {
+      "word": "optimist",
+      "reading": "op-tee-meest",
+      "meaning": "optimistic",
+      "example": "Un om optimist vede soluții.",
+      "exampleMeaning": "An optimistic person sees solutions."
+    },
+    {
+      "word": "pesimist",
+      "reading": "peh-see-meest",
+      "meaning": "pessimistic",
+      "example": "Un răspuns pesimist oprește planul.",
+      "exampleMeaning": "A pessimistic answer stops the plan."
+    },
+    {
+      "word": "încrezător",
+      "reading": "uhn-kreh-zuh-tor",
+      "meaning": "confident",
+      "example": "Sunt încrezător înainte de examen.",
+      "exampleMeaning": "I am confident before the exam."
+    },
+    {
+      "word": "gelos",
+      "reading": "jeh-los",
+      "meaning": "jealous",
+      "example": "El este gelos fără motiv.",
+      "exampleMeaning": "He is jealous without reason."
+    },
+    {
+      "word": "recunoscător",
+      "reading": "reh-koo-nos-kuh-tor",
+      "meaning": "grateful",
+      "example": "Sunt recunoscător pentru sprijin.",
+      "exampleMeaning": "I am grateful for the support."
+    },
+    {
+      "word": "sensibil",
+      "reading": "sen-see-beel",
+      "meaning": "sensitive",
+      "example": "Un om sensibil observă detalii.",
+      "exampleMeaning": "A sensitive person notices details."
+    },
+    {
+      "word": "amabil",
+      "reading": "ah-mah-beel",
+      "meaning": "kind / polite",
+      "example": "Vânzătorul amabil zâmbește.",
+      "exampleMeaning": "The kind seller smiles."
+    },
+    {
+      "word": "sincer",
+      "reading": "seen-cher",
+      "meaning": "honest / sincere",
+      "example": "Un prieten sincer spune adevărul.",
+      "exampleMeaning": "An honest friend tells the truth."
+    },
+    {
+      "word": "încăpățânat",
+      "reading": "uhn-kuh-puh-tsuh-naht",
+      "meaning": "stubborn",
+      "example": "Un copil încăpățânat refuză ajutorul.",
+      "exampleMeaning": "A stubborn child refuses help."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "Sunt ___ pentru sprijin.",
+          "answer": "recunoscător",
+          "hint": "grateful"
+        },
+        {
+          "sentence": "Un prieten ___ spune adevărul.",
+          "answer": "sincer",
+          "hint": "honest"
+        },
+        {
+          "sentence": "Sunt ___ înainte de examen.",
+          "answer": "încrezător",
+          "hint": "confident"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "items": [
+        {
+          "question": "What does 'timid' mean?",
+          "options": [
+            "brave",
+            "shy",
+            "generous",
+            "stubborn"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "How do you say 'patient' in Romanian?",
+          "options": [
+            "răbdător",
+            "nerăbdător",
+            "gelos",
+            "egoist"
+          ],
+          "answer": 0
+        },
+        {
+          "question": "What does 'amabil' mean?",
+          "options": [
+            "pessimistic",
+            "sensitive",
+            "kind / polite",
+            "selfish"
+          ],
+          "answer": 2
+        }
+      ]
+    }
+  ]
+}

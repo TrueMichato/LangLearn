@@ -1,0 +1,178 @@
+{
+  "id": "nature-seasons",
+  "words": [
+    {
+      "word": "natură",
+      "reading": "nah-too-ruh",
+      "meaning": "nature",
+      "example": "Ieșim în natură pentru liniște.",
+      "exampleMeaning": "We go out into nature for peace."
+    },
+    {
+      "word": "pădure",
+      "reading": "puh-doo-reh",
+      "meaning": "forest",
+      "example": "O pădure deasă ascunde poteca.",
+      "exampleMeaning": "A dense forest hides the path."
+    },
+    {
+      "word": "munte",
+      "reading": "moon-teh",
+      "meaning": "mountain",
+      "example": "Un munte înalt se vede de departe.",
+      "exampleMeaning": "A tall mountain is visible from far away."
+    },
+    {
+      "word": "deal",
+      "reading": "deh-ahl",
+      "meaning": "hill",
+      "example": "Un deal verde este lângă sat.",
+      "exampleMeaning": "A green hill is near the village."
+    },
+    {
+      "word": "râu",
+      "reading": "ruh-oo",
+      "meaning": "river",
+      "example": "Un râu curge prin oraș.",
+      "exampleMeaning": "A river flows through the city."
+    },
+    {
+      "word": "lac",
+      "reading": "lahk",
+      "meaning": "lake",
+      "example": "Un lac liniștit reflectă cerul.",
+      "exampleMeaning": "A quiet lake reflects the sky."
+    },
+    {
+      "word": "mare",
+      "reading": "mah-reh",
+      "meaning": "sea",
+      "example": "Mergem la mare în august.",
+      "exampleMeaning": "We go to the sea in August."
+    },
+    {
+      "word": "copac",
+      "reading": "koh-pahk",
+      "meaning": "tree",
+      "example": "Un copac bătrân face umbră.",
+      "exampleMeaning": "An old tree gives shade."
+    },
+    {
+      "word": "floare",
+      "reading": "flwah-reh",
+      "meaning": "flower",
+      "example": "O floare galbenă crește în grădină.",
+      "exampleMeaning": "A yellow flower grows in the garden."
+    },
+    {
+      "word": "iarbă",
+      "reading": "yahr-buh",
+      "meaning": "grass",
+      "example": "Merg prin iarbă udă dimineața.",
+      "exampleMeaning": "I walk through wet grass in the morning."
+    },
+    {
+      "word": "frunză",
+      "reading": "froon-zuh",
+      "meaning": "leaf",
+      "example": "O frunză cade pe bancă.",
+      "exampleMeaning": "A leaf falls on the bench."
+    },
+    {
+      "word": "rădăcină",
+      "reading": "ruh-duh-chee-nuh",
+      "meaning": "root",
+      "example": "O rădăcină ține copacul stabil.",
+      "exampleMeaning": "A root keeps the tree stable."
+    },
+    {
+      "word": "pământ",
+      "reading": "puh-muhnt",
+      "meaning": "earth / soil",
+      "example": "Pământul umed este bun pentru plante.",
+      "exampleMeaning": "Moist soil is good for plants."
+    },
+    {
+      "word": "aer",
+      "reading": "ah-ehr",
+      "meaning": "air",
+      "example": "Respir aer curat la munte.",
+      "exampleMeaning": "I breathe clean air in the mountains."
+    },
+    {
+      "word": "apă",
+      "reading": "ah-puh",
+      "meaning": "water",
+      "example": "Bem apă curată în excursie.",
+      "exampleMeaning": "We drink clean water on the trip."
+    },
+    {
+      "word": "animal sălbatic",
+      "reading": "ah-nee-mahl suhl-bah-teek",
+      "meaning": "wild animal",
+      "example": "Un animal sălbatic trebuie protejat.",
+      "exampleMeaning": "A wild animal must be protected."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "Un ___ curge prin oraș.",
+          "answer": "râu",
+          "hint": "river"
+        },
+        {
+          "sentence": "O ___ cade pe bancă.",
+          "answer": "frunză",
+          "hint": "leaf"
+        },
+        {
+          "sentence": "Respir ___ curat la munte.",
+          "answer": "aer",
+          "hint": "air"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "items": [
+        {
+          "question": "What does 'pădure' mean?",
+          "options": [
+            "hill",
+            "forest",
+            "lake",
+            "flower"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "How do you say 'root' in Romanian?",
+          "options": [
+            "rădăcină",
+            "frunză",
+            "iarbă",
+            "copac"
+          ],
+          "answer": 0
+        },
+        {
+          "question": "What does 'pământ' mean?",
+          "options": [
+            "sea",
+            "air",
+            "earth / soil",
+            "wild animal"
+          ],
+          "answer": 2
+        }
+      ]
+    }
+  ]
+}

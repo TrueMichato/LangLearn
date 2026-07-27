@@ -1,0 +1,185 @@
+{
+  "id": "verbs",
+  "words": [
+    {
+      "word": "vorbi",
+      "reading": "vor-bee",
+      "meaning": "to speak",
+      "example": "Pot vorbi română puțin.",
+      "exampleMeaning": "I can speak a little Romanian."
+    },
+    {
+      "word": "mânca",
+      "reading": "muhn-kah",
+      "meaning": "to eat",
+      "example": "Pot mânca ceva cald.",
+      "exampleMeaning": "I can eat something warm."
+    },
+    {
+      "word": "bea",
+      "reading": "beh-ah",
+      "meaning": "to drink",
+      "example": "Pot bea apă după alergare.",
+      "exampleMeaning": "I can drink water after running."
+    },
+    {
+      "word": "dormi",
+      "reading": "dor-mee",
+      "meaning": "to sleep",
+      "example": "Trebuie să dormi opt ore.",
+      "exampleMeaning": "You should sleep eight hours."
+    },
+    {
+      "word": "lucra",
+      "reading": "loo-krah",
+      "meaning": "to work",
+      "example": "El poate lucra de acasă.",
+      "exampleMeaning": "He can work from home."
+    },
+    {
+      "word": "studia",
+      "reading": "stoo-dee-ah",
+      "meaning": "to study",
+      "example": "Pot studia limbi străine online.",
+      "exampleMeaning": "I can study foreign languages online."
+    },
+    {
+      "word": "locui",
+      "reading": "loh-koo-ee",
+      "meaning": "to live / reside",
+      "example": "Pot locui aproape de centru.",
+      "exampleMeaning": "I can live near the center."
+    },
+    {
+      "word": "plăcea",
+      "reading": "pluh-cheh-ah",
+      "meaning": "to like / to please",
+      "example": "Îi poate plăcea filmul acesta.",
+      "exampleMeaning": "He or she may like this film."
+    },
+    {
+      "word": "avea",
+      "reading": "ah-veh-ah",
+      "meaning": "to have",
+      "example": "Pot avea o întrebare?",
+      "exampleMeaning": "May I have a question?"
+    },
+    {
+      "word": "vrea",
+      "reading": "vreh-ah",
+      "meaning": "to want",
+      "example": "Copilul poate vrea apă.",
+      "exampleMeaning": "The child may want water."
+    },
+    {
+      "word": "putea",
+      "reading": "poo-teh-ah",
+      "meaning": "to be able to",
+      "example": "Verbul putea este foarte des folosit.",
+      "exampleMeaning": "The verb “to be able to” is used very often."
+    },
+    {
+      "word": "ști",
+      "reading": "shtee",
+      "meaning": "to know",
+      "example": "Nu pot ști totul.",
+      "exampleMeaning": "I cannot know everything."
+    },
+    {
+      "word": "face",
+      "reading": "fah-cheh",
+      "meaning": "to do / to make",
+      "example": "Pot face cafea acum.",
+      "exampleMeaning": "I can make coffee now."
+    },
+    {
+      "word": "merge",
+      "reading": "mehr-jeh",
+      "meaning": "to go / to walk",
+      "example": "Vreau merge la piață.",
+      "exampleMeaning": "I want to go to the market."
+    },
+    {
+      "word": "veni",
+      "reading": "veh-nee",
+      "meaning": "to come",
+      "example": "Poți veni la cină?",
+      "exampleMeaning": "Can you come to dinner?"
+    },
+    {
+      "word": "da",
+      "reading": "dah",
+      "meaning": "to give",
+      "example": "Pot da un exemplu simplu.",
+      "exampleMeaning": "I can give a simple example."
+    },
+    {
+      "word": "lua",
+      "reading": "loo-ah",
+      "meaning": "to take",
+      "example": "Pot lua autobuzul până acolo.",
+      "exampleMeaning": "I can take the bus to get there."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "Pot ___ română puțin.",
+          "answer": "vorbi",
+          "hint": "to speak"
+        },
+        {
+          "sentence": "Pot ___ cafea acum.",
+          "answer": "face",
+          "hint": "to make"
+        },
+        {
+          "sentence": "Poți ___ la cină?",
+          "answer": "veni",
+          "hint": "to come"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "items": [
+        {
+          "question": "What does 'mânca' mean?",
+          "options": [
+            "to drink",
+            "to eat",
+            "to sleep",
+            "to work"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "How do you say 'to know' in Romanian?",
+          "options": [
+            "ști",
+            "vrea",
+            "avea",
+            "lua"
+          ],
+          "answer": 0
+        },
+        {
+          "question": "What does 'merge' mean?",
+          "options": [
+            "to give",
+            "to come",
+            "to go / to walk",
+            "to like"
+          ],
+          "answer": 2
+        }
+      ]
+    }
+  ]
+}
