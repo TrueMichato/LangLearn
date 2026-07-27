@@ -425,5 +425,47 @@
     "order": 61,
     "wordCount": 16,
     "level": "intermediate"
+  },
+  {
+    "id": "car-driving",
+    "title": "Cars & Driving",
+    "order": 62,
+    "wordCount": 16,
+    "level": "beginner"
+  },
+  {
+    "id": "post-office-services",
+    "title": "Post Office & Bureaucracy",
+    "order": 63,
+    "wordCount": 16,
+    "level": "intermediate"
+  },
+  {
+    "id": "social-media",
+    "title": "Internet & Social Media",
+    "order": 64,
+    "wordCount": 16,
+    "level": "beginner"
+  },
+  {
+    "id": "life-events",
+    "title": "Life Events & Ceremonies",
+    "order": 65,
+    "wordCount": 16,
+    "level": "intermediate"
+  },
+  {
+    "id": "verbs-communication",
+    "title": "Communication Verbs",
+    "order": 66,
+    "wordCount": 16,
+    "level": "beginner"
+  },
+  {
+    "id": "describing-people",
+    "title": "Describing People (Appearance)",
+    "order": 67,
+    "wordCount": 16,
+    "level": "beginner"
   }
 ]

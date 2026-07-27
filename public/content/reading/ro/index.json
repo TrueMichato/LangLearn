@@ -373,6 +373,18 @@
         "legend"
       ],
       "description": "A retelling of the Romanian legend that explains the changeable weather of early March."
+    },
+    {
+      "id": "ospitalitatea-romaneasca",
+      "title": "Ospitalitatea românească",
+      "titleEn": "Romanian Hospitality",
+      "difficulty": "medium",
+      "wordCount": 150,
+      "tags": [
+        "culture",
+        "traditions"
+      ],
+      "description": "An informative text about the tradition of hospitality in Romanian culture (bread and salt, țuică)."
     }
   ]
 }

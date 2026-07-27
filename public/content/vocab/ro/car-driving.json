@@ -1,0 +1,178 @@
+{
+  "id": "car-driving",
+  "words": [
+    {
+      "word": "mașină",
+      "reading": "mah-shee-nuh",
+      "meaning": "car",
+      "example": "Am cumpărat o mașină mică pentru oraș.",
+      "exampleMeaning": "I bought a small car for the city."
+    },
+    {
+      "word": "volan",
+      "reading": "vo-lahn",
+      "meaning": "steering wheel",
+      "example": "Acest volan este ușor de ținut.",
+      "exampleMeaning": "This steering wheel is easy to hold."
+    },
+    {
+      "word": "roată",
+      "reading": "ro-ah-tuh",
+      "meaning": "wheel",
+      "example": "O roată este dezumflată după drum.",
+      "exampleMeaning": "One wheel is flat after the trip."
+    },
+    {
+      "word": "motor",
+      "reading": "mo-tor",
+      "meaning": "engine",
+      "example": "Motorul pornește repede dimineața.",
+      "exampleMeaning": "The engine starts quickly in the morning."
+    },
+    {
+      "word": "benzină",
+      "reading": "ben-zee-nuh",
+      "meaning": "gasoline",
+      "example": "Avem nevoie de benzină înainte de drum.",
+      "exampleMeaning": "We need gasoline before the trip."
+    },
+    {
+      "word": "frână",
+      "reading": "fruh-nuh",
+      "meaning": "brake",
+      "example": "Frâna nu răspunde bine pe gheață.",
+      "exampleMeaning": "The brake does not respond well on ice."
+    },
+    {
+      "word": "ambreiaj",
+      "reading": "ahm-breh-yazh",
+      "meaning": "clutch",
+      "example": "Apasă ambreiajul înainte să schimbi viteza.",
+      "exampleMeaning": "Press the clutch before you change gears."
+    },
+    {
+      "word": "permis de conducere",
+      "reading": "per-mees deh kon-doo-cheh-reh",
+      "meaning": "driver's license",
+      "example": "Ai nevoie de permis de conducere ca să conduci.",
+      "exampleMeaning": "You need a driver's license to drive."
+    },
+    {
+      "word": "semafor",
+      "reading": "seh-mah-for",
+      "meaning": "traffic light",
+      "example": "Așteptăm la semafor când lumina este roșie.",
+      "exampleMeaning": "We wait at the traffic light when the light is red."
+    },
+    {
+      "word": "sens giratoriu",
+      "reading": "sens jee-rah-toh-ree-oo",
+      "meaning": "roundabout",
+      "example": "Urmează un sens giratoriu după pod.",
+      "exampleMeaning": "A roundabout comes after the bridge."
+    },
+    {
+      "word": "parcare",
+      "reading": "par-kah-reh",
+      "meaning": "parking",
+      "example": "Am găsit parcare lângă magazin.",
+      "exampleMeaning": "I found parking near the store."
+    },
+    {
+      "word": "a conduce",
+      "reading": "ah kon-doo-cheh",
+      "meaning": "to drive",
+      "example": "A conduce noaptea cere atenție.",
+      "exampleMeaning": "Driving at night requires attention."
+    },
+    {
+      "word": "a frâna",
+      "reading": "ah fruh-nah",
+      "meaning": "to brake",
+      "example": "A frâna brusc poate fi periculos.",
+      "exampleMeaning": "Braking suddenly can be dangerous."
+    },
+    {
+      "word": "a parca",
+      "reading": "ah par-kah",
+      "meaning": "to park",
+      "example": "A parca în centru este dificil.",
+      "exampleMeaning": "Parking downtown is difficult."
+    },
+    {
+      "word": "viteză",
+      "reading": "vee-teh-zuh",
+      "meaning": "speed",
+      "example": "Conduc cu viteză mică în sat.",
+      "exampleMeaning": "I drive at low speed in the village."
+    },
+    {
+      "word": "centură de siguranță",
+      "reading": "chen-too-ruh deh see-goo-rahn-tsuh",
+      "meaning": "seat belt",
+      "example": "Poartă centura de siguranță pe fiecare drum.",
+      "exampleMeaning": "Wear a seat belt on every trip."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "Oprim la ___ când lumina este roșie.",
+          "answer": "semafor",
+          "hint": "traffic light"
+        },
+        {
+          "sentence": "Am găsit ___ lângă bloc.",
+          "answer": "parcare",
+          "hint": "parking"
+        },
+        {
+          "sentence": "Port ___ pe autostradă.",
+          "answer": "centura de siguranță",
+          "hint": "seat belt"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "items": [
+        {
+          "question": "What does 'mașină' mean?",
+          "options": [
+            "wheel",
+            "car",
+            "engine",
+            "parking"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "How do you say 'brake' in Romanian?",
+          "options": [
+            "frână",
+            "volan",
+            "benzină",
+            "parcare"
+          ],
+          "answer": 0
+        },
+        {
+          "question": "What does 'sens giratoriu' mean?",
+          "options": [
+            "driver's license",
+            "traffic light",
+            "roundabout",
+            "seat belt"
+          ],
+          "answer": 2
+        }
+      ]
+    }
+  ]
+}

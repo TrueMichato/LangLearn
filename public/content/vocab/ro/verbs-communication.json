@@ -1,0 +1,178 @@
+{
+  "id": "verbs-communication",
+  "words": [
+    {
+      "word": "a vorbi",
+      "reading": "ah vor-bee",
+      "meaning": "to speak",
+      "example": "A vorbi încet ajută într-o bibliotecă.",
+      "exampleMeaning": "Speaking quietly helps in a library."
+    },
+    {
+      "word": "a spune",
+      "reading": "ah spoo-neh",
+      "meaning": "to say / to tell",
+      "example": "A spune adevărul este important.",
+      "exampleMeaning": "Telling the truth is important."
+    },
+    {
+      "word": "a zice",
+      "reading": "ah zee-cheh",
+      "meaning": "to say",
+      "example": "A zice „nu” poate fi greu.",
+      "exampleMeaning": "Saying “no” can be hard."
+    },
+    {
+      "word": "a întreba",
+      "reading": "ah uhn-treh-bah",
+      "meaning": "to ask",
+      "example": "A întreba când nu știi este normal.",
+      "exampleMeaning": "Asking when you do not know is normal."
+    },
+    {
+      "word": "a răspunde",
+      "reading": "ah ruh-spoon-deh",
+      "meaning": "to answer / to reply",
+      "example": "A răspunde rapid la mesaj este politicos.",
+      "exampleMeaning": "Replying quickly to a message is polite."
+    },
+    {
+      "word": "a explica",
+      "reading": "ah eks-plee-kah",
+      "meaning": "to explain",
+      "example": "A explica regulile clar economisește timp.",
+      "exampleMeaning": "Explaining the rules clearly saves time."
+    },
+    {
+      "word": "a povesti",
+      "reading": "ah po-ves-tee",
+      "meaning": "to tell a story",
+      "example": "A povesti despre copilărie este plăcut.",
+      "exampleMeaning": "Telling stories about childhood is pleasant."
+    },
+    {
+      "word": "a discuta",
+      "reading": "ah dees-koo-tah",
+      "meaning": "to discuss",
+      "example": "A discuta calm rezolvă multe probleme.",
+      "exampleMeaning": "Discussing calmly solves many problems."
+    },
+    {
+      "word": "a striga",
+      "reading": "ah stree-gah",
+      "meaning": "to shout",
+      "example": "A striga în clasă nu este politicos.",
+      "exampleMeaning": "Shouting in class is not polite."
+    },
+    {
+      "word": "a șopti",
+      "reading": "ah shop-tee",
+      "meaning": "to whisper",
+      "example": "A șopti la teatru este mai bine decât a striga.",
+      "exampleMeaning": "Whispering at the theater is better than shouting."
+    },
+    {
+      "word": "a ruga",
+      "reading": "ah roo-gah",
+      "meaning": "to ask / to request",
+      "example": "A ruga pe cineva să te ajute este firesc.",
+      "exampleMeaning": "Asking someone to help you is natural."
+    },
+    {
+      "word": "a mulțumi",
+      "reading": "ah mool-tsoo-mee",
+      "meaning": "to thank",
+      "example": "A mulțumi după ajutor arată respect.",
+      "exampleMeaning": "Thanking someone after help shows respect."
+    },
+    {
+      "word": "a promite",
+      "reading": "ah pro-mee-teh",
+      "meaning": "to promise",
+      "example": "A promite prea mult nu este bine.",
+      "exampleMeaning": "Promising too much is not good."
+    },
+    {
+      "word": "a anunța",
+      "reading": "ah ah-noon-tsah",
+      "meaning": "to announce",
+      "example": "A anunța schimbarea din timp este corect.",
+      "exampleMeaning": "Announcing the change ahead of time is proper."
+    },
+    {
+      "word": "a repeta",
+      "reading": "ah reh-peh-tah",
+      "meaning": "to repeat",
+      "example": "A repeta cuvintele ajută la învățare.",
+      "exampleMeaning": "Repeating the words helps with learning."
+    },
+    {
+      "word": "a traduce",
+      "reading": "ah trah-doo-cheh",
+      "meaning": "to translate",
+      "example": "A traduce textul durează câteva minute.",
+      "exampleMeaning": "Translating the text takes a few minutes."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "Vreau să ___ o întâmplare.",
+          "answer": "povestesc",
+          "hint": "tell a story"
+        },
+        {
+          "sentence": "Poți să ___ regula?",
+          "answer": "explici",
+          "hint": "explain"
+        },
+        {
+          "sentence": "Te rog să ___ cuvintele.",
+          "answer": "repeți",
+          "hint": "repeat"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "items": [
+        {
+          "question": "What does 'a întreba' mean?",
+          "options": [
+            "to answer",
+            "to ask",
+            "to thank",
+            "to shout"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "How do you say 'to translate' in Romanian?",
+          "options": [
+            "a repeta",
+            "a spune",
+            "a promite",
+            "a traduce"
+          ],
+          "answer": 3
+        },
+        {
+          "question": "What does 'a șopti' mean?",
+          "options": [
+            "to whisper",
+            "to announce",
+            "to discuss",
+            "to explain"
+          ],
+          "answer": 0
+        }
+      ]
+    }
+  ]
+}
