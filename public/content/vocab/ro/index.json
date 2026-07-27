@@ -369,5 +369,61 @@
     "order": 53,
     "wordCount": 16,
     "level": "intermediate"
+  },
+  {
+    "id": "airport-travel",
+    "title": "At the Airport & Flying",
+    "order": 54,
+    "wordCount": 16,
+    "level": "intermediate"
+  },
+  {
+    "id": "nationalities",
+    "title": "Countries, Nationalities & Languages",
+    "order": 55,
+    "wordCount": 16,
+    "level": "beginner"
+  },
+  {
+    "id": "verbs-motion",
+    "title": "Verbs of Motion & Position",
+    "order": 56,
+    "wordCount": 16,
+    "level": "beginner"
+  },
+  {
+    "id": "human-body-health",
+    "title": "At the Doctor & Symptoms",
+    "order": 57,
+    "wordCount": 16,
+    "level": "intermediate"
+  },
+  {
+    "id": "measurements",
+    "title": "Measurements, Quantities & Shapes",
+    "order": 58,
+    "wordCount": 16,
+    "level": "beginner"
+  },
+  {
+    "id": "birds-insects",
+    "title": "Birds & Insects",
+    "order": 59,
+    "wordCount": 16,
+    "level": "beginner"
+  },
+  {
+    "id": "abstract-emotions",
+    "title": "Abstract Ideas & Deeper Emotions",
+    "order": 60,
+    "wordCount": 16,
+    "level": "intermediate"
+  },
+  {
+    "id": "connectors",
+    "title": "Connectors & Discourse Markers",
+    "order": 61,
+    "wordCount": 16,
+    "level": "intermediate"
   }
 ]

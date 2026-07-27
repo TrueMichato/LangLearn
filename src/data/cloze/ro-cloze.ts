@@ -11,7 +11,7 @@ export const roClozeSentences: ClozeSentence[] = [
   { id: 'ro-c007', target: 'Am mâncat micul dejun', english: 'I ate breakfast', blankedWord: 'micul dejun', blankedReading: 'MEE-kool deh-ZHOON', frequencyRank: 7, difficulty: 'beginner' },
   { id: 'ro-c008', target: 'Am văzut un film aseară', english: 'We watched a movie last night', blankedWord: 'film', blankedReading: 'feelm', frequencyRank: 8, difficulty: 'beginner' },
   { id: 'ro-c009', target: 'Unde este gara?', english: 'Where is the station?', blankedWord: 'gara', blankedReading: 'GAH-rah', frequencyRank: 9, difficulty: 'beginner' },
-  { id: 'ro-c010', target: 'Casa este mare', english: 'The house is big', blankedWord: 'casa', blankedReading: 'KAH-sah', frequencyRank: 10, difficulty: 'beginner' },
+  { id: 'ro-c010', target: 'Casa este mare', english: 'The house is big', blankedWord: 'Casa', blankedReading: 'KAH-sah', frequencyRank: 10, difficulty: 'beginner' },
   { id: 'ro-c011', target: 'Bună dimineața, ce mai faci?', english: 'Good morning, how are you?', blankedWord: 'dimineața', blankedReading: 'dee-mee-NYAH-tsah', frequencyRank: 11, difficulty: 'beginner' },
   { id: 'ro-c012', target: 'Vreau o cafea, te rog', english: 'I want a coffee, please', blankedWord: 'cafea', blankedReading: 'kah-FYAH', frequencyRank: 12, difficulty: 'beginner' },
 
@@ -60,4 +60,16 @@ export const roClozeSentences: ClozeSentence[] = [
   { id: 'ro-c048', target: 'Mi-am uitat cheile pe masă', english: 'I forgot my keys on the table', blankedWord: 'cheile', blankedReading: 'KYEH-ee-leh', frequencyRank: 48, difficulty: 'intermediate' },
   { id: 'ro-c049', target: 'Fără apă, plantele se usucă', english: 'Without water, the plants dry out', blankedWord: 'plantele', blankedReading: 'PLAN-teh-leh', frequencyRank: 49, difficulty: 'advanced' },
   { id: 'ro-c050', target: 'Libertatea este un drept fundamental', english: 'Freedom is a fundamental right', blankedWord: 'Libertatea', blankedReading: 'lee-ber-TAH-tyah', frequencyRank: 50, difficulty: 'advanced' },
+
+  // ── Set 6 ──
+  { id: 'ro-c051', target: 'Dimineața beau o cană de cafea', english: 'In the morning I drink a cup of coffee', blankedWord: 'cafea', blankedReading: 'kah-FYAH', frequencyRank: 51, difficulty: 'beginner' },
+  { id: 'ro-c052', target: 'Vecinul meu are o mașină nouă', english: 'My neighbor has a new car', blankedWord: 'mașină', blankedReading: 'mah-SHEE-nuh', frequencyRank: 52, difficulty: 'beginner' },
+  { id: 'ro-c053', target: 'Bunica mea gătește foarte bine', english: 'My grandmother cooks very well', blankedWord: 'gătește', blankedReading: 'guh-TESH-teh', frequencyRank: 53, difficulty: 'intermediate' },
+  { id: 'ro-c054', target: 'Am uitat umbrela în autobuz', english: 'I forgot the umbrella on the bus', blankedWord: 'umbrela', blankedReading: 'oom-BREH-lah', frequencyRank: 54, difficulty: 'intermediate' },
+  { id: 'ro-c055', target: 'Muzeul este deschis până la ora șase', english: 'The museum is open until six o\'clock', blankedWord: 'Muzeul', blankedReading: 'moo-ZEH-ool', frequencyRank: 55, difficulty: 'intermediate' },
+  { id: 'ro-c056', target: 'Ei construiesc o casă nouă la țară', english: 'They are building a new house in the countryside', blankedWord: 'construiesc', blankedReading: 'kon-stroo-YESK', frequencyRank: 56, difficulty: 'intermediate' },
+  { id: 'ro-c057', target: 'Sănătatea este mai importantă decât banii', english: 'Health is more important than money', blankedWord: 'Sănătatea', blankedReading: 'suh-nuh-TAH-tyah', frequencyRank: 57, difficulty: 'advanced' },
+  { id: 'ro-c058', target: 'Trenul a sosit cu o întârziere de o oră', english: 'The train arrived with a one-hour delay', blankedWord: 'întârziere', blankedReading: 'uhn-tuhr-zee-EH-reh', frequencyRank: 58, difficulty: 'advanced' },
+  { id: 'ro-c059', target: 'Copacul acesta are peste o sută de ani', english: 'This tree is over a hundred years old', blankedWord: 'Copacul', blankedReading: 'koh-PAH-kool', frequencyRank: 59, difficulty: 'intermediate' },
+  { id: 'ro-c060', target: 'Fiecare are dreptul la o educație bună', english: 'Everyone has the right to a good education', blankedWord: 'educație', blankedReading: 'eh-doo-KAH-tsee-eh', frequencyRank: 60, difficulty: 'advanced' },
 ];

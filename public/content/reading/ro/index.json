@@ -312,6 +312,30 @@
         "fairy-tale"
       ],
       "description": "A retelling of Ion Creangă’s humorous tale explaining why bears have short tails."
+    },
+    {
+      "id": "balada-unui-greier-mic",
+      "title": "Balada unui greier mic",
+      "titleEn": "Ballad of a Little Cricket",
+      "difficulty": "hard",
+      "wordCount": 164,
+      "tags": [
+        "literature",
+        "poetry"
+      ],
+      "description": "George Topîrceanu’s beloved public-domain autumn poem about a little cricket (ro.wikisource.org)."
+    },
+    {
+      "id": "sarbatorile-de-iarna",
+      "title": "Sărbătorile de iarnă",
+      "titleEn": "Winter Holidays",
+      "difficulty": "medium",
+      "wordCount": 158,
+      "tags": [
+        "culture",
+        "traditions"
+      ],
+      "description": "Romanian winter customs from Saint Nicholas and carols to New Year and Epiphany."
     }
   ]
 }

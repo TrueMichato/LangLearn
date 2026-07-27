@@ -1,0 +1,178 @@
+{
+  "id": "birds-insects",
+  "words": [
+    {
+      "word": "pasăre",
+      "reading": "pah-suh-reh",
+      "meaning": "bird",
+      "example": "O pasăre cântă în copac.",
+      "exampleMeaning": "A bird sings in the tree."
+    },
+    {
+      "word": "rață",
+      "reading": "rah-tsuh",
+      "meaning": "duck",
+      "example": "O rață înoată pe lac.",
+      "exampleMeaning": "A duck swims on the lake."
+    },
+    {
+      "word": "gâscă",
+      "reading": "guh-skuh",
+      "meaning": "goose",
+      "example": "O gâscă păzește curtea.",
+      "exampleMeaning": "A goose guards the yard."
+    },
+    {
+      "word": "vultur",
+      "reading": "vool-toor",
+      "meaning": "eagle",
+      "example": "Un vultur zboară deasupra muntelui.",
+      "exampleMeaning": "An eagle flies above the mountain."
+    },
+    {
+      "word": "bufniță",
+      "reading": "boof-nee-tsuh",
+      "meaning": "owl",
+      "example": "O bufniță se aude noaptea.",
+      "exampleMeaning": "An owl is heard at night."
+    },
+    {
+      "word": "cioară",
+      "reading": "cho-ah-ruh",
+      "meaning": "crow",
+      "example": "O cioară stă pe gard.",
+      "exampleMeaning": "A crow sits on the fence."
+    },
+    {
+      "word": "porumbel",
+      "reading": "po-room-bel",
+      "meaning": "pigeon / dove",
+      "example": "Un porumbel mănâncă firimituri în piață.",
+      "exampleMeaning": "A pigeon eats crumbs in the square."
+    },
+    {
+      "word": "vrabie",
+      "reading": "vrah-bee-eh",
+      "meaning": "sparrow",
+      "example": "O vrabie mică sare pe pervaz.",
+      "exampleMeaning": "A small sparrow hops on the windowsill."
+    },
+    {
+      "word": "rândunică",
+      "reading": "ruhn-doo-nee-kuh",
+      "meaning": "swallow",
+      "example": "O rândunică își face cuib sub acoperiș.",
+      "exampleMeaning": "A swallow makes its nest under the roof."
+    },
+    {
+      "word": "barză",
+      "reading": "bar-zuh",
+      "meaning": "stork",
+      "example": "O barză merge încet prin apă.",
+      "exampleMeaning": "A stork walks slowly through the water."
+    },
+    {
+      "word": "insectă",
+      "reading": "een-sek-tuh",
+      "meaning": "insect",
+      "example": "O insectă mică intră pe fereastră.",
+      "exampleMeaning": "A small insect enters through the window."
+    },
+    {
+      "word": "albină",
+      "reading": "ahl-bee-nuh",
+      "meaning": "bee",
+      "example": "O albină zboară lângă flori.",
+      "exampleMeaning": "A bee flies near the flowers."
+    },
+    {
+      "word": "fluture",
+      "reading": "floo-too-reh",
+      "meaning": "butterfly",
+      "example": "Un fluture colorat stă pe o floare.",
+      "exampleMeaning": "A colorful butterfly sits on a flower."
+    },
+    {
+      "word": "furnică",
+      "reading": "foor-nee-kuh",
+      "meaning": "ant",
+      "example": "O furnică duce o frunză mică.",
+      "exampleMeaning": "An ant carries a small leaf."
+    },
+    {
+      "word": "țânțar",
+      "reading": "tsuhn-tsar",
+      "meaning": "mosquito",
+      "example": "Un țânțar mă înțeapă seara.",
+      "exampleMeaning": "A mosquito bites me in the evening."
+    },
+    {
+      "word": "muscă",
+      "reading": "moos-kuh",
+      "meaning": "fly",
+      "example": "O muscă bâzâie în bucătărie.",
+      "exampleMeaning": "A fly buzzes in the kitchen."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "O ___ zboară lângă flori.",
+          "answer": "albină",
+          "hint": "bee"
+        },
+        {
+          "sentence": "Un ___ mă înțeapă seara.",
+          "answer": "țânțar",
+          "hint": "mosquito"
+        },
+        {
+          "sentence": "O ___ înoată pe lac.",
+          "answer": "rață",
+          "hint": "duck"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "items": [
+        {
+          "question": "What does 'bufniță' mean?",
+          "options": [
+            "stork",
+            "owl",
+            "crow",
+            "duck"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "How do you say 'butterfly' in Romanian?",
+          "options": [
+            "furnică",
+            "muscă",
+            "fluture",
+            "albină"
+          ],
+          "answer": 2
+        },
+        {
+          "question": "What does 'porumbel' mean?",
+          "options": [
+            "pigeon / dove",
+            "sparrow",
+            "eagle",
+            "mosquito"
+          ],
+          "answer": 0
+        }
+      ]
+    }
+  ]
+}

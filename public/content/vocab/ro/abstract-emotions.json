@@ -1,0 +1,178 @@
+{
+  "id": "abstract-emotions",
+  "words": [
+    {
+      "word": "speranță",
+      "reading": "speh-ran-tsuh",
+      "meaning": "hope",
+      "example": "Am speranță că lucrurile se vor îmbunătăți.",
+      "exampleMeaning": "I have hope that things will improve."
+    },
+    {
+      "word": "îndoială",
+      "reading": "uhn-doy-ah-luh",
+      "meaning": "doubt",
+      "example": "Simt îndoială înainte de decizie.",
+      "exampleMeaning": "I feel doubt before the decision."
+    },
+    {
+      "word": "încredere",
+      "reading": "uhn-kreh-deh-reh",
+      "meaning": "trust / confidence",
+      "example": "Am încredere în prietenii mei.",
+      "exampleMeaning": "I have trust in my friends."
+    },
+    {
+      "word": "rușine",
+      "reading": "roo-shee-neh",
+      "meaning": "shame",
+      "example": "Simte rușine când minte.",
+      "exampleMeaning": "He feels shame when he lies."
+    },
+    {
+      "word": "vinovăție",
+      "reading": "vee-no-vuh-tsee-eh",
+      "meaning": "guilt",
+      "example": "Simt vinovăție după greșeala făcută.",
+      "exampleMeaning": "I feel guilt after the mistake I made."
+    },
+    {
+      "word": "recunoștință",
+      "reading": "reh-koo-nosh-teen-tsuh",
+      "meaning": "gratitude",
+      "example": "Arăt recunoștință pentru ajutorul primit.",
+      "exampleMeaning": "I show gratitude for the help received."
+    },
+    {
+      "word": "dor",
+      "reading": "dor",
+      "meaning": "longing / missing someone",
+      "example": "Îmi este dor de bunici.",
+      "exampleMeaning": "I miss my grandparents."
+    },
+    {
+      "word": "nostalgie",
+      "reading": "nos-tahl-jee-eh",
+      "meaning": "nostalgia",
+      "example": "Simt nostalgie când aud cântecul vechi.",
+      "exampleMeaning": "I feel nostalgia when I hear the old song."
+    },
+    {
+      "word": "empatie",
+      "reading": "em-pah-tee-eh",
+      "meaning": "empathy",
+      "example": "Ea arată empatie față de colegi.",
+      "exampleMeaning": "She shows empathy toward colleagues."
+    },
+    {
+      "word": "invidie",
+      "reading": "een-vee-dee-eh",
+      "meaning": "envy",
+      "example": "Simt invidie când mă compar cu alții.",
+      "exampleMeaning": "I feel envy when I compare myself with others."
+    },
+    {
+      "word": "mândrie",
+      "reading": "muhn-dree-eh",
+      "meaning": "pride",
+      "example": "Simt mândrie pentru munca echipei.",
+      "exampleMeaning": "I feel pride for the team's work."
+    },
+    {
+      "word": "anxietate",
+      "reading": "ank-see-eh-tah-teh",
+      "meaning": "anxiety",
+      "example": "Respir adânc când simt anxietate.",
+      "exampleMeaning": "I breathe deeply when I feel anxiety."
+    },
+    {
+      "word": "libertate",
+      "reading": "lee-ber-tah-teh",
+      "meaning": "freedom",
+      "example": "Libertate înseamnă și responsabilitate.",
+      "exampleMeaning": "Freedom also means responsibility."
+    },
+    {
+      "word": "dreptate",
+      "reading": "drep-tah-teh",
+      "meaning": "justice / fairness",
+      "example": "Căutăm dreptate pentru toți oamenii.",
+      "exampleMeaning": "We seek justice for all people."
+    },
+    {
+      "word": "adevăr",
+      "reading": "ah-deh-vuhr",
+      "meaning": "truth",
+      "example": "Caut un adevăr simplu în fiecare poveste.",
+      "exampleMeaning": "I look for a simple truth in every story."
+    },
+    {
+      "word": "responsabilitate",
+      "reading": "res-pon-sah-bee-lee-tah-teh",
+      "meaning": "responsibility",
+      "example": "Îmi asum o responsabilitate importantă la serviciu.",
+      "exampleMeaning": "I take on an important responsibility at work."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "Am ___ că lucrurile se vor îmbunătăți.",
+          "answer": "speranță",
+          "hint": "hope"
+        },
+        {
+          "sentence": "Îmi este ___ de bunici.",
+          "answer": "dor",
+          "hint": "longing / missing someone"
+        },
+        {
+          "sentence": "Ea arată ___ față de colegi.",
+          "answer": "empatie",
+          "hint": "empathy"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "items": [
+        {
+          "question": "What does 'recunoștință' mean?",
+          "options": [
+            "envy",
+            "gratitude",
+            "doubt",
+            "truth"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "How do you say 'freedom' in Romanian?",
+          "options": [
+            "libertate",
+            "dreptate",
+            "mândrie",
+            "rușine"
+          ],
+          "answer": 0
+        },
+        {
+          "question": "What does 'anxietate' mean?",
+          "options": [
+            "confidence",
+            "nostalgia",
+            "anxiety",
+            "responsibility"
+          ],
+          "answer": 2
+        }
+      ]
+    }
+  ]
+}
