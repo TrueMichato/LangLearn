@@ -62,9 +62,9 @@ async function fetchVocabLessons(lang: string): Promise<VocabLesson[]> {
   try {
     const indexRes = await fetch(`${base}content/vocab/${lang}/index.json`);
     if (!indexRes.ok) return [];
-    const lessonIds: string[] = await indexRes.json();
+    const index: { id: string }[] = await indexRes.json();
     const results = await Promise.allSettled(
-      lessonIds.map(async (id) => {
+      index.map(async ({ id }) => {
         const res = await fetch(`${base}content/vocab/${lang}/${id}.json`);
         if (!res.ok) return null;
         return res.json() as Promise<VocabLesson>;
@@ -84,10 +84,10 @@ async function fetchGrammarQuizzes(lang: string): Promise<GrammarQuiz[]> {
   try {
     const indexRes = await fetch(`${base}content/grammar/${lang}/index.json`);
     if (!indexRes.ok) return [];
-    const lessonIds: string[] = await indexRes.json();
+    const index: { id: string }[] = await indexRes.json();
     const quizzes: GrammarQuiz[] = [];
     const results = await Promise.allSettled(
-      lessonIds.map(async (id) => {
+      index.map(async ({ id }) => {
         const res = await fetch(`${base}content/grammar/${lang}/${id}.md`);
         if (!res.ok) return [];
         const text = await res.text();
