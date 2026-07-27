@@ -1,0 +1,178 @@
+{
+  "id": "human-body-health",
+  "words": [
+    {
+      "word": "programare",
+      "reading": "pro-grah-mah-reh",
+      "meaning": "appointment",
+      "example": "Fac o programare la medic pentru mâine.",
+      "exampleMeaning": "I make a doctor's appointment for tomorrow."
+    },
+    {
+      "word": "consultație",
+      "reading": "kon-sool-tah-tsee-eh",
+      "meaning": "medical consultation",
+      "example": "La consultație, medicul mă întreabă ce mă doare.",
+      "exampleMeaning": "At the consultation, the doctor asks me what hurts."
+    },
+    {
+      "word": "simptom",
+      "reading": "seem-ptom",
+      "meaning": "symptom",
+      "example": "Un simptom nou trebuie descris clar.",
+      "exampleMeaning": "A new symptom must be described clearly."
+    },
+    {
+      "word": "durere",
+      "reading": "doo-reh-reh",
+      "meaning": "pain",
+      "example": "Am o durere puternică de cap.",
+      "exampleMeaning": "I have a strong headache."
+    },
+    {
+      "word": "febră",
+      "reading": "feh-bruh",
+      "meaning": "fever",
+      "example": "Am febră și trebuie să mă odihnesc.",
+      "exampleMeaning": "I have a fever and need to rest."
+    },
+    {
+      "word": "tuse",
+      "reading": "too-seh",
+      "meaning": "cough",
+      "example": "Am tuse de câteva zile.",
+      "exampleMeaning": "I have had a cough for a few days."
+    },
+    {
+      "word": "greață",
+      "reading": "greh-ah-tsuh",
+      "meaning": "nausea",
+      "example": "Simt greață după medicament.",
+      "exampleMeaning": "I feel nausea after the medicine."
+    },
+    {
+      "word": "amețeală",
+      "reading": "ah-meh-tseh-ah-luh",
+      "meaning": "dizziness",
+      "example": "Simt amețeală când mă ridic prea repede.",
+      "exampleMeaning": "I feel dizziness when I stand up too quickly."
+    },
+    {
+      "word": "alergie",
+      "reading": "ah-ler-jee-eh",
+      "meaning": "allergy",
+      "example": "Am o alergie la polen primăvara.",
+      "exampleMeaning": "I have an allergy to pollen in spring."
+    },
+    {
+      "word": "rețetă",
+      "reading": "reh-tseh-tuh",
+      "meaning": "prescription",
+      "example": "Medicul scrie o rețetă pentru antibiotic.",
+      "exampleMeaning": "The doctor writes a prescription for an antibiotic."
+    },
+    {
+      "word": "farmacie",
+      "reading": "far-mah-chee-eh",
+      "meaning": "pharmacy",
+      "example": "Merg la farmacie să cumpăr medicamentul.",
+      "exampleMeaning": "I go to the pharmacy to buy the medicine."
+    },
+    {
+      "word": "analize",
+      "reading": "ah-nah-lee-zeh",
+      "meaning": "medical tests / analyses",
+      "example": "Medicul recomandă analize de sânge.",
+      "exampleMeaning": "The doctor recommends blood tests."
+    },
+    {
+      "word": "tensiune arterială",
+      "reading": "ten-see-oo-neh ar-teh-ree-ah-luh",
+      "meaning": "blood pressure",
+      "example": "Pentru tensiune arterială mare, medicul recomandă mișcare.",
+      "exampleMeaning": "For high blood pressure, the doctor recommends exercise."
+    },
+    {
+      "word": "injecție",
+      "reading": "een-jek-tsee-eh",
+      "meaning": "injection",
+      "example": "Primesc o injecție în braț.",
+      "exampleMeaning": "I receive an injection in the arm."
+    },
+    {
+      "word": "bandaj",
+      "reading": "ban-dahzh",
+      "meaning": "bandage",
+      "example": "Pun un bandaj curat pe rană.",
+      "exampleMeaning": "I put a clean bandage on the wound."
+    },
+    {
+      "word": "tratament",
+      "reading": "trah-tah-ment",
+      "meaning": "treatment",
+      "example": "Urmez un tratament timp de o săptămână.",
+      "exampleMeaning": "I follow a treatment for one week."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "Am ___ de câteva zile și beau ceai cald.",
+          "answer": "tuse",
+          "hint": "cough"
+        },
+        {
+          "sentence": "Medicul scrie o ___ pentru antibiotic.",
+          "answer": "rețetă",
+          "hint": "prescription"
+        },
+        {
+          "sentence": "Merg la ___ să cumpăr medicamentul.",
+          "answer": "farmacie",
+          "hint": "pharmacy"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "items": [
+        {
+          "question": "What does 'greață' mean?",
+          "options": [
+            "cough",
+            "nausea",
+            "fever",
+            "bandage"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "How do you say 'pharmacy' in Romanian?",
+          "options": [
+            "farmacie",
+            "analize",
+            "injecție",
+            "programare"
+          ],
+          "answer": 0
+        },
+        {
+          "question": "What does 'tratament' mean?",
+          "options": [
+            "appointment",
+            "pain",
+            "treatment",
+            "symptom"
+          ],
+          "answer": 2
+        }
+      ]
+    }
+  ]
+}

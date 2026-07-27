@@ -285,4 +285,48 @@ export const roPassages: ListeningPassage[] = [
       { question: 'What does the speaker say nature helps with?', options: ['Making money', 'Relaxing and regaining energy', 'Learning languages', 'Meeting people'], correctIndex: 1 },
     ],
   },
+
+  // --- Set 3 ---
+  {
+    id: 'ro-easy-12',
+    title: 'At the Pharmacy',
+    text: 'Bună ziua! Mă doare capul și am puțină febră. Aveți ceva pentru durere? Da, aceste pastile vă pot ajuta. Luați una dimineața și una seara. Vă mulțumesc mult!',
+    difficulty: 'easy',
+    questions: [
+      { question: 'What is wrong with the customer?', options: ['A cough', 'A headache and slight fever', 'A stomach ache', 'A cold'], correctIndex: 1 },
+      { question: 'How often should they take the pills?', options: ['Once a day', 'Morning and evening', 'Every hour', 'Only at night'], correctIndex: 1 },
+    ],
+  },
+  {
+    id: 'ro-easy-13',
+    title: 'My Hometown',
+    text: 'Orașul meu natal este mic, dar foarte frumos. Are un râu, un parc mare și o piață în centru. Îmi place să mă plimb pe străzile vechi. Oamenii de aici sunt prietenoși și liniștiți.',
+    difficulty: 'easy',
+    questions: [
+      { question: 'How is the speaker\'s hometown described?', options: ['Big and busy', 'Small but beautiful', 'Cold and grey', 'Far away'], correctIndex: 1 },
+      { question: 'What does the speaker like to do?', options: ['Go shopping', 'Walk on the old streets', 'Swim in the river', 'Visit the market'], correctIndex: 1 },
+    ],
+  },
+  {
+    id: 'ro-med-9',
+    title: 'Planning a Trip',
+    text: 'Vara aceasta vrem să vizităm Transilvania. Plănuim să vedem castelul Bran și orașul Sibiu. Vom sta cinci zile la munte, într-o pensiune mică. Sper că vom avea timp și pentru o drumeție prin Carpați.',
+    difficulty: 'medium',
+    questions: [
+      { question: 'Which region do they want to visit?', options: ['Moldova', 'Transylvania', 'Dobrogea', 'Banat'], correctIndex: 1 },
+      { question: 'How long will they stay in the mountains?', options: ['Three days', 'Five days', 'A week', 'Two weeks'], correctIndex: 1 },
+      { question: 'What do they hope to do as well?', options: ['Go to the beach', 'A hike in the Carpathians', 'Visit a museum', 'Attend a concert'], correctIndex: 1 },
+    ],
+  },
+  {
+    id: 'ro-hard-8',
+    title: 'The Value of Reading',
+    text: 'Mulți spun că nu mai au timp să citească, dar cred că este o scuză. Cititul ne îmbogățește vocabularul, ne dezvoltă imaginația și ne ajută să înțelegem mai bine lumea. Chiar și zece minute pe zi pot face o diferență. O carte bună este un prieten care nu te dezamăgește niciodată.',
+    difficulty: 'hard',
+    questions: [
+      { question: 'What does the speaker think about not having time to read?', options: ['It is understandable', 'It is an excuse', 'It is a real problem', 'It is normal'], correctIndex: 1 },
+      { question: 'What does reading develop, according to the speaker?', options: ['Only memory', 'Vocabulary and imagination', 'Physical strength', 'Musical skill'], correctIndex: 1 },
+      { question: 'How does the speaker describe a good book?', options: ['An expensive item', 'A friend who never disappoints', 'A waste of time', 'A rare treasure'], correctIndex: 1 },
+    ],
+  },
 ];

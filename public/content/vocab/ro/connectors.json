@@ -1,0 +1,178 @@
+{
+  "id": "connectors",
+  "words": [
+    {
+      "word": "dar",
+      "reading": "dar",
+      "meaning": "but",
+      "example": "Vreau să ies, dar plouă.",
+      "exampleMeaning": "I want to go out, but it is raining."
+    },
+    {
+      "word": "însă",
+      "reading": "uhn-suh",
+      "meaning": "however / but",
+      "example": "Este târziu, însă mai avem timp.",
+      "exampleMeaning": "It is late, however we still have time."
+    },
+    {
+      "word": "deci",
+      "reading": "dech",
+      "meaning": "so / therefore",
+      "example": "Am terminat, deci putem pleca.",
+      "exampleMeaning": "I finished, so we can leave."
+    },
+    {
+      "word": "așadar",
+      "reading": "ah-shah-dar",
+      "meaning": "therefore / thus",
+      "example": "Ai dreptate; așadar, schimbăm planul.",
+      "exampleMeaning": "You are right; therefore, we change the plan."
+    },
+    {
+      "word": "totuși",
+      "reading": "to-too-shee",
+      "meaning": "nevertheless / still",
+      "example": "E greu, totuși încercăm din nou.",
+      "exampleMeaning": "It is hard, nevertheless we try again."
+    },
+    {
+      "word": "deoarece",
+      "reading": "deh-o-ah-reh-cheh",
+      "meaning": "because / since",
+      "example": "Stăm acasă deoarece ninge.",
+      "exampleMeaning": "We stay home because it is snowing."
+    },
+    {
+      "word": "fiindcă",
+      "reading": "fee-eend-kuh",
+      "meaning": "because",
+      "example": "Învăț fiindcă vreau să progresez.",
+      "exampleMeaning": "I study because I want to progress."
+    },
+    {
+      "word": "pentru că",
+      "reading": "pen-troo kuh",
+      "meaning": "because",
+      "example": "Întârzii pentru că traficul este aglomerat.",
+      "exampleMeaning": "I am late because traffic is heavy."
+    },
+    {
+      "word": "în plus",
+      "reading": "uhn ploos",
+      "meaning": "in addition",
+      "example": "Avem cafea; în plus, avem ceai.",
+      "exampleMeaning": "We have coffee; in addition, we have tea."
+    },
+    {
+      "word": "de asemenea",
+      "reading": "deh ah-seh-meh-neh-ah",
+      "meaning": "also / likewise",
+      "example": "Maria vine; de asemenea, vine și Andrei.",
+      "exampleMeaning": "Maria is coming; also, Andrei is coming."
+    },
+    {
+      "word": "prin urmare",
+      "reading": "preen oor-mah-reh",
+      "meaning": "therefore / consequently",
+      "example": "Drumul este blocat; prin urmare, mergem pe jos.",
+      "exampleMeaning": "The road is blocked; therefore, we go on foot."
+    },
+    {
+      "word": "cu toate acestea",
+      "reading": "koo twah-teh ah-ches-teh-ah",
+      "meaning": "nevertheless / despite this",
+      "example": "Plouă; cu toate acestea, plecăm.",
+      "exampleMeaning": "It is raining; nevertheless, we leave."
+    },
+    {
+      "word": "adică",
+      "reading": "ah-dee-kuh",
+      "meaning": "that is / meaning",
+      "example": "Vreau o gustare, adică un măr.",
+      "exampleMeaning": "I want a snack, that is, an apple."
+    },
+    {
+      "word": "de exemplu",
+      "reading": "deh eg-zem-ploo",
+      "meaning": "for example",
+      "example": "Poți alege un fruct, de exemplu o pară.",
+      "exampleMeaning": "You can choose a fruit, for example a pear."
+    },
+    {
+      "word": "în concluzie",
+      "reading": "uhn kon-kloo-zee-eh",
+      "meaning": "in conclusion",
+      "example": "În concluzie, lecția a fost utilă.",
+      "exampleMeaning": "In conclusion, the lesson was useful."
+    },
+    {
+      "word": "pe de altă parte",
+      "reading": "peh deh ahl-tuh par-teh",
+      "meaning": "on the other hand",
+      "example": "E scump; pe de altă parte, este de calitate.",
+      "exampleMeaning": "It is expensive; on the other hand, it is high quality."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "Am terminat, ___ putem pleca.",
+          "answer": "deci",
+          "hint": "so / therefore"
+        },
+        {
+          "sentence": "Stăm acasă ___ ninge.",
+          "answer": "deoarece",
+          "hint": "because / since"
+        },
+        {
+          "sentence": "E scump; ___, este de calitate.",
+          "answer": "pe de altă parte",
+          "hint": "on the other hand"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "items": [
+        {
+          "question": "What does 'totuși' mean?",
+          "options": [
+            "for example",
+            "nevertheless / still",
+            "because",
+            "in conclusion"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "How do you say 'in addition' in Romanian?",
+          "options": [
+            "în plus",
+            "așadar",
+            "adică",
+            "dar"
+          ],
+          "answer": 0
+        },
+        {
+          "question": "What does 'de exemplu' mean?",
+          "options": [
+            "therefore",
+            "also",
+            "for example",
+            "however"
+          ],
+          "answer": 2
+        }
+      ]
+    }
+  ]
+}

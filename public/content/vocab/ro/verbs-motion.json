@@ -1,0 +1,178 @@
+{
+  "id": "verbs-motion",
+  "words": [
+    {
+      "word": "a merge",
+      "reading": "ah mer-jeh",
+      "meaning": "to go / to walk",
+      "example": "Pentru a merge la gară, luăm autobuzul.",
+      "exampleMeaning": "To go to the station, we take the bus."
+    },
+    {
+      "word": "a veni",
+      "reading": "ah veh-nee",
+      "meaning": "to come",
+      "example": "Pentru a veni la timp, plecăm devreme.",
+      "exampleMeaning": "To come on time, we leave early."
+    },
+    {
+      "word": "a pleca",
+      "reading": "ah pleh-kah",
+      "meaning": "to leave",
+      "example": "Înainte de a pleca, verific cheile.",
+      "exampleMeaning": "Before leaving, I check the keys."
+    },
+    {
+      "word": "a alerga",
+      "reading": "ah ah-ler-gah",
+      "meaning": "to run",
+      "example": "A alerga dimineața îmi dă energie.",
+      "exampleMeaning": "Running in the morning gives me energy."
+    },
+    {
+      "word": "a urca",
+      "reading": "ah oor-kah",
+      "meaning": "to climb / to go up",
+      "example": "A urca scările cu bagaje este greu.",
+      "exampleMeaning": "Climbing the stairs with luggage is hard."
+    },
+    {
+      "word": "a coborî",
+      "reading": "ah ko-bo-ruh",
+      "meaning": "to descend / to go down",
+      "example": "A coborî de pe munte cere atenție.",
+      "exampleMeaning": "Coming down from the mountain requires attention."
+    },
+    {
+      "word": "a intra",
+      "reading": "ah een-trah",
+      "meaning": "to enter",
+      "example": "Pentru a intra în clădire, arăt cardul.",
+      "exampleMeaning": "To enter the building, I show my card."
+    },
+    {
+      "word": "a ieși",
+      "reading": "ah yeh-shee",
+      "meaning": "to go out / to exit",
+      "example": "Pentru a ieși din parcare, plătim biletul.",
+      "exampleMeaning": "To exit the parking lot, we pay the ticket."
+    },
+    {
+      "word": "a se întoarce",
+      "reading": "ah seh uhn-twar-cheh",
+      "meaning": "to return",
+      "example": "A se întoarce acasă după drum este plăcut.",
+      "exampleMeaning": "Returning home after a trip is pleasant."
+    },
+    {
+      "word": "a sări",
+      "reading": "ah suh-ree",
+      "meaning": "to jump",
+      "example": "A sări peste baltă este distractiv.",
+      "exampleMeaning": "Jumping over the puddle is fun."
+    },
+    {
+      "word": "a cădea",
+      "reading": "ah kuh-deh-ah",
+      "meaning": "to fall",
+      "example": "A cădea pe gheață este periculos.",
+      "exampleMeaning": "Falling on ice is dangerous."
+    },
+    {
+      "word": "a zbura",
+      "reading": "ah zboo-rah",
+      "meaning": "to fly",
+      "example": "A zbura cu avionul este rapid.",
+      "exampleMeaning": "Flying by airplane is fast."
+    },
+    {
+      "word": "a înota",
+      "reading": "ah uh-no-tah",
+      "meaning": "to swim",
+      "example": "A înota în mare este relaxant.",
+      "exampleMeaning": "Swimming in the sea is relaxing."
+    },
+    {
+      "word": "a sta",
+      "reading": "ah stah",
+      "meaning": "to sit / to stay",
+      "example": "A sta la umbră vara este plăcut.",
+      "exampleMeaning": "Sitting in the shade in summer is pleasant."
+    },
+    {
+      "word": "a se așeza",
+      "reading": "ah seh ah-sheh-zah",
+      "meaning": "to sit down",
+      "example": "A se așeza lângă fereastră este alegerea ei.",
+      "exampleMeaning": "Sitting down by the window is her choice."
+    },
+    {
+      "word": "a se opri",
+      "reading": "ah seh op-ree",
+      "meaning": "to stop",
+      "example": "A se opri la semafor este obligatoriu.",
+      "exampleMeaning": "Stopping at the traffic light is mandatory."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "Înainte de ___, verific cheile.",
+          "answer": "a pleca",
+          "hint": "to leave"
+        },
+        {
+          "sentence": "Pentru ___ în clădire, arăt cardul.",
+          "answer": "a intra",
+          "hint": "to enter"
+        },
+        {
+          "sentence": "___ cu avionul este rapid.",
+          "answer": "a zbura",
+          "hint": "to fly"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "items": [
+        {
+          "question": "What does 'a coborî' mean?",
+          "options": [
+            "to climb",
+            "to descend",
+            "to swim",
+            "to stop"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "How do you say 'to return' in Romanian?",
+          "options": [
+            "a se întoarce",
+            "a sări",
+            "a veni",
+            "a sta"
+          ],
+          "answer": 0
+        },
+        {
+          "question": "What does 'a ieși' mean?",
+          "options": [
+            "to enter",
+            "to fall",
+            "to go out / to exit",
+            "to fly"
+          ],
+          "answer": 2
+        }
+      ]
+    }
+  ]
+}
