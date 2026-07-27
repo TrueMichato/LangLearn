@@ -292,5 +292,75 @@
     "order": 42,
     "wordCount": 18,
     "level": "beginner"
+  },
+  {
+    "id": "professions",
+    "title": "Professions & Jobs",
+    "order": 43,
+    "wordCount": 16,
+    "level": "beginner"
+  },
+  {
+    "id": "kitchen-items",
+    "title": "Kitchen & Tableware",
+    "order": 44,
+    "wordCount": 16,
+    "level": "beginner"
+  },
+  {
+    "id": "geography",
+    "title": "Countries & Geography",
+    "order": 45,
+    "wordCount": 16,
+    "level": "intermediate"
+  },
+  {
+    "id": "science",
+    "title": "Science & Space",
+    "order": 46,
+    "wordCount": 16,
+    "level": "intermediate"
+  },
+  {
+    "id": "business-office",
+    "title": "Business & Office",
+    "order": 47,
+    "wordCount": 16,
+    "level": "intermediate"
+  },
+  {
+    "id": "idioms",
+    "title": "Idioms & Everyday Expressions",
+    "order": 48,
+    "wordCount": 16,
+    "level": "intermediate"
+  },
+  {
+    "id": "proverbs",
+    "title": "Proverbs & Sayings",
+    "order": 49,
+    "wordCount": 16,
+    "level": "intermediate"
+  },
+  {
+    "id": "tools-materials",
+    "title": "Tools & Materials",
+    "order": 50,
+    "wordCount": 16,
+    "level": "beginner"
+  },
+  {
+    "id": "plants-garden",
+    "title": "Plants & Gardening",
+    "order": 51,
+    "wordCount": 16,
+    "level": "beginner"
+  },
+  {
+    "id": "society",
+    "title": "Society & Abstract Ideas",
+    "order": 52,
+    "wordCount": 16,
+    "level": "intermediate"
   }
 ]

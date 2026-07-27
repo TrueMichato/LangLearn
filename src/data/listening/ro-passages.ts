@@ -153,4 +153,70 @@ export const roPassages: ListeningPassage[] = [
       { question: 'What did the grandmother do in the evening?', options: ['Sang songs', 'Told stories', 'Baked bread', 'Played games'], correctIndex: 1 },
     ],
   },
+
+  // --- Additional (easy 2, medium 2, hard 2) ---
+  {
+    id: 'ro-easy-8',
+    title: 'Shopping',
+    text: 'Astăzi merg la magazin. Vreau să cumpăr pâine, lapte și ouă. De asemenea, am nevoie de fructe și legume. La sfârșit, plătesc la casă și mă întorc acasă.',
+    difficulty: 'easy',
+    questions: [
+      { question: 'What does the speaker want to buy?', options: ['Meat and fish', 'Bread, milk and eggs', 'Coffee and tea', 'Clothes'], correctIndex: 1 },
+      { question: 'What does the speaker do at the end?', options: ['Pays and goes home', 'Meets a friend', 'Goes to work', 'Eats at a restaurant'], correctIndex: 0 },
+    ],
+  },
+  {
+    id: 'ro-easy-9',
+    title: 'Free Time',
+    text: 'Îmi place să citesc și să ascult muzică. În weekend joc fotbal cu prietenii mei. Uneori merg la cinema sau mă plimb prin parc. Îmi place foarte mult natura.',
+    difficulty: 'easy',
+    questions: [
+      { question: 'What does the speaker do on weekends?', options: ['Plays football', 'Goes shopping', 'Studies', 'Works'], correctIndex: 0 },
+      { question: 'What does the speaker love a lot?', options: ['The city', 'Nature', 'Cars', 'Cooking'], correctIndex: 1 },
+    ],
+  },
+  {
+    id: 'ro-med-5',
+    title: 'At the Hotel',
+    text: 'Bună ziua! Am o rezervare pe numele Popescu. Aș dori o cameră pentru două nopți. Este micul dejun inclus în preț? Și la ce oră trebuie să eliberez camera în ultima zi?',
+    difficulty: 'medium',
+    questions: [
+      { question: 'How many nights does the guest want to stay?', options: ['One', 'Two', 'Three', 'A week'], correctIndex: 1 },
+      { question: 'What does the guest ask about first?', options: ['Parking', 'Whether breakfast is included', 'The Wi-Fi', 'A taxi'], correctIndex: 1 },
+      { question: 'What else does the guest want to know?', options: ['The checkout time', 'The room number', 'The price of dinner', 'The pool hours'], correctIndex: 0 },
+    ],
+  },
+  {
+    id: 'ro-med-6',
+    title: 'Asking for Directions',
+    text: 'Scuzați-mă, cum ajung la muzeu? Mergeți drept înainte până la a doua intersecție, apoi faceți la stânga. Muzeul este lângă bibliotecă, vizavi de parc. Nu puteți să-l ratați.',
+    difficulty: 'medium',
+    questions: [
+      { question: 'What is the person looking for?', options: ['The museum', 'The hospital', 'The market', 'The station'], correctIndex: 0 },
+      { question: 'Where should they turn left?', options: ['At the first corner', 'At the second intersection', 'After the bridge', 'At the park'], correctIndex: 1 },
+      { question: 'What is the museum next to?', options: ['A school', 'The library', 'A restaurant', 'The station'], correctIndex: 1 },
+    ],
+  },
+  {
+    id: 'ro-hard-4',
+    title: 'My Job',
+    text: 'Lucrez de cinci ani la o firmă de arhitectură din București. Îmi place munca mea pentru că este creativă și mereu diferită. Totuși, uneori programul este solicitant și trebuie să lucrez și în weekend. Sper ca anul viitor să primesc o promovare.',
+    difficulty: 'hard',
+    questions: [
+      { question: 'How long has the speaker worked there?', options: ['Two years', 'Five years', 'Ten years', 'One year'], correctIndex: 1 },
+      { question: 'Why does the speaker like the job?', options: ['It is well paid', 'It is creative and varied', 'It is close to home', 'It has short hours'], correctIndex: 1 },
+      { question: 'What does the speaker hope for next year?', options: ['A new office', 'A promotion', 'A longer holiday', 'A different city'], correctIndex: 1 },
+    ],
+  },
+  {
+    id: 'ro-hard-5',
+    title: 'A Changing Climate',
+    text: 'În ultimele decenii, clima s-a schimbat vizibil în întreaga lume. Verile au devenit mai calde, iar fenomenele extreme sunt tot mai frecvente. Oamenii de știință avertizează că, dacă nu reducem emisiile, consecințele vor fi grave. Fiecare gest mic, precum reciclarea, poate contribui la o schimbare pozitivă.',
+    difficulty: 'hard',
+    questions: [
+      { question: 'What has changed in recent decades?', options: ['The economy', 'The climate', 'The population', 'The language'], correctIndex: 1 },
+      { question: 'What do scientists warn about?', options: ['Rising prices', 'Serious consequences if emissions are not reduced', 'A lack of water', 'New diseases'], correctIndex: 1 },
+      { question: 'What small action is mentioned?', options: ['Recycling', 'Walking', 'Reading', 'Saving money'], correctIndex: 0 },
+    ],
+  },
 ];

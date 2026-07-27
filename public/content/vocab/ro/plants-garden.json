@@ -1,0 +1,178 @@
+{
+  "id": "plants-garden",
+  "words": [
+    {
+      "word": "floare",
+      "reading": "flo-ah-reh",
+      "meaning": "flower",
+      "example": "Floarea miroase frumos.",
+      "exampleMeaning": "The flower smells nice."
+    },
+    {
+      "word": "copac",
+      "reading": "ko-pak",
+      "meaning": "tree",
+      "example": "Copacul face umbră în curte.",
+      "exampleMeaning": "The tree gives shade in the yard."
+    },
+    {
+      "word": "iarbă",
+      "reading": "yar-buh",
+      "meaning": "grass",
+      "example": "Iarba crește repede după ploaie.",
+      "exampleMeaning": "The grass grows quickly after rain."
+    },
+    {
+      "word": "frunză",
+      "reading": "froon-zuh",
+      "meaning": "leaf",
+      "example": "Frunza cade toamna.",
+      "exampleMeaning": "The leaf falls in autumn."
+    },
+    {
+      "word": "rădăcină",
+      "reading": "ruh-duh-chee-nuh",
+      "meaning": "root",
+      "example": "Rădăcina ține planta în pământ.",
+      "exampleMeaning": "The root keeps the plant in the soil."
+    },
+    {
+      "word": "sămânță",
+      "reading": "suh-muhn-tsuh",
+      "meaning": "seed",
+      "example": "Sămânța are nevoie de apă.",
+      "exampleMeaning": "The seed needs water."
+    },
+    {
+      "word": "ghiveci",
+      "reading": "gee-vech",
+      "meaning": "flowerpot",
+      "example": "Ghiveciul stă pe balcon.",
+      "exampleMeaning": "The flowerpot is on the balcony."
+    },
+    {
+      "word": "grădină",
+      "reading": "gruh-dee-nuh",
+      "meaning": "garden",
+      "example": "Grădina este plină de flori.",
+      "exampleMeaning": "The garden is full of flowers."
+    },
+    {
+      "word": "grădinar",
+      "reading": "gruh-dee-nar",
+      "meaning": "gardener",
+      "example": "Grădinarul udă plantele dimineața.",
+      "exampleMeaning": "The gardener waters the plants in the morning."
+    },
+    {
+      "word": "pământ",
+      "reading": "puh-muhnt",
+      "meaning": "soil / earth",
+      "example": "Pământul din ghiveci este umed.",
+      "exampleMeaning": "The soil in the pot is moist."
+    },
+    {
+      "word": "compost",
+      "reading": "kom-post",
+      "meaning": "compost",
+      "example": "Compostul hrănește plantele.",
+      "exampleMeaning": "The compost feeds the plants."
+    },
+    {
+      "word": "buruiană",
+      "reading": "boo-roo-yah-nuh",
+      "meaning": "weed",
+      "example": "Buruiana crește printre flori.",
+      "exampleMeaning": "The weed grows among the flowers."
+    },
+    {
+      "word": "stropitoare",
+      "reading": "stro-pee-to-ah-reh",
+      "meaning": "watering can",
+      "example": "Stropitoarea este plină cu apă.",
+      "exampleMeaning": "The watering can is full of water."
+    },
+    {
+      "word": "greblă",
+      "reading": "greh-bluh",
+      "meaning": "rake",
+      "example": "Grebla adună frunzele uscate.",
+      "exampleMeaning": "The rake gathers the dry leaves."
+    },
+    {
+      "word": "gard viu",
+      "reading": "gard vee-oo",
+      "meaning": "hedge",
+      "example": "Gardul viu separă curțile.",
+      "exampleMeaning": "The hedge separates the yards."
+    },
+    {
+      "word": "livadă",
+      "reading": "lee-vah-duh",
+      "meaning": "orchard",
+      "example": "Livada are meri și peri.",
+      "exampleMeaning": "The orchard has apple trees and pear trees."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "O ___ miroase frumos.",
+          "answer": "floare",
+          "hint": "flower"
+        },
+        {
+          "sentence": "Pun planta într-un ___.",
+          "answer": "ghiveci",
+          "hint": "flowerpot"
+        },
+        {
+          "sentence": "Folosesc o ___ pentru frunze.",
+          "answer": "greblă",
+          "hint": "rake"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "items": [
+        {
+          "question": "What does 'sămânță' mean?",
+          "options": [
+            "seed",
+            "weed",
+            "tree",
+            "garden"
+          ],
+          "answer": 0
+        },
+        {
+          "question": "How do you say 'watering can' in Romanian?",
+          "options": [
+            "livadă",
+            "stropitoare",
+            "frunză",
+            "compost"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What does 'gard viu' mean?",
+          "options": [
+            "soil",
+            "orchard",
+            "hedge",
+            "root"
+          ],
+          "answer": 2
+        }
+      ]
+    }
+  ]
+}

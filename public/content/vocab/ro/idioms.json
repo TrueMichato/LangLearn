@@ -1,0 +1,178 @@
+{
+  "id": "idioms",
+  "words": [
+    {
+      "word": "a-i pica fisa",
+      "reading": "ah-ee pee-kah fee-sah",
+      "meaning": "literal: for the token to drop; real: to get it / realize suddenly",
+      "example": "Când am văzut totalul, mi-a picat fisa.",
+      "exampleMeaning": "When I saw the total, I finally got it."
+    },
+    {
+      "word": "a da cu piciorul",
+      "reading": "ah dah koo pee-cho-rool",
+      "meaning": "literal: to kick with the foot; real: to waste or squander an opportunity",
+      "example": "Nu da cu piciorul unei șanse bune.",
+      "exampleMeaning": "Do not throw away a good chance."
+    },
+    {
+      "word": "a face din țânțar armăsar",
+      "reading": "ah fah-cheh deen tsuhn-tsar ar-muh-sar",
+      "meaning": "literal: to make a stallion from a mosquito; real: to exaggerate",
+      "example": "Nu face din țânțar armăsar pentru o greșeală mică.",
+      "exampleMeaning": "Do not exaggerate over a small mistake."
+    },
+    {
+      "word": "a umbla cu cioara vopsită",
+      "reading": "ah oom-blah koo cho-ah-rah vop-see-tuh",
+      "meaning": "literal: to walk around with a painted crow; real: to deceive or pass off something false",
+      "example": "Vânzătorul umbla cu cioara vopsită.",
+      "exampleMeaning": "The seller was trying to deceive people."
+    },
+    {
+      "word": "a o lua razna",
+      "reading": "ah oh loo-ah raz-nah",
+      "meaning": "literal: to take it astray; real: to go off track or lose control",
+      "example": "După atâta stres, el a luat-o razna.",
+      "exampleMeaning": "After so much stress, he lost control."
+    },
+    {
+      "word": "a bate apa în piuă",
+      "reading": "ah bah-teh ah-pah uhn pyoo-uh",
+      "meaning": "literal: to beat water in a mortar; real: to talk pointlessly or repeat without result",
+      "example": "La ședință, colegul bătea apa în piuă.",
+      "exampleMeaning": "At the meeting, the colleague was talking pointlessly."
+    },
+    {
+      "word": "a tăia frunze la câini",
+      "reading": "ah tuh-yah froon-zeh lah kuhn",
+      "meaning": "literal: to cut leaves for dogs; real: to waste time doing nothing useful",
+      "example": "În vacanță nu vreau să tai frunze la câini.",
+      "exampleMeaning": "On vacation I do not want to waste time doing nothing."
+    },
+    {
+      "word": "a scoate din sărite",
+      "reading": "ah sko-ah-teh deen suh-ree-teh",
+      "meaning": "literal: to pull out of jumps; real: to drive someone crazy or annoy badly",
+      "example": "Zgomotul de afară mă scoate din sărite.",
+      "exampleMeaning": "The noise outside drives me crazy."
+    },
+    {
+      "word": "a avea ac de cojocul cuiva",
+      "reading": "ah ah-veh-ah ak deh ko-zho-kool koo-ee-vah",
+      "meaning": "literal: to have a needle for someone's sheepskin coat; real: to know how to deal with someone",
+      "example": "Bunica are ac de cojocul oricărui copil obraznic.",
+      "exampleMeaning": "Grandma knows how to handle any naughty child."
+    },
+    {
+      "word": "a se da de ceasul morții",
+      "reading": "ah seh dah deh chah-sool mor-tsee",
+      "meaning": "literal: to give oneself to the clock of death; real: to worry frantically",
+      "example": "Mama se dă de ceasul morții când întârziem.",
+      "exampleMeaning": "Mom worries frantically when we are late."
+    },
+    {
+      "word": "a fi cu capul în nori",
+      "reading": "ah fee koo kah-pool uhn nor",
+      "meaning": "literal: to be with one's head in the clouds; real: to be dreamy or distracted",
+      "example": "Fratele meu e mereu cu capul în nori.",
+      "exampleMeaning": "My brother always has his head in the clouds."
+    },
+    {
+      "word": "a face cu ochiul",
+      "reading": "ah fah-cheh koo oh-kyool",
+      "meaning": "literal: to make with the eye; real: to wink or be tempting",
+      "example": "Oferta aceea îmi face cu ochiul.",
+      "exampleMeaning": "That offer looks tempting to me."
+    },
+    {
+      "word": "a pune paie pe foc",
+      "reading": "ah poo-neh pah-yeh peh fok",
+      "meaning": "literal: to put straw on the fire; real: to make a conflict worse",
+      "example": "Comentariul lui a pus paie pe foc.",
+      "exampleMeaning": "His comment added fuel to the fire."
+    },
+    {
+      "word": "a lua peste picior",
+      "reading": "ah loo-ah pes-teh pee-chor",
+      "meaning": "literal: to take over the leg; real: to mock or tease someone",
+      "example": "Nu mă lua peste picior când întreb ceva.",
+      "exampleMeaning": "Do not mock me when I ask something."
+    },
+    {
+      "word": "a se da bătut",
+      "reading": "ah seh dah buh-toot",
+      "meaning": "literal: to give oneself beaten; real: to give up",
+      "example": "Nu te da bătut după prima încercare.",
+      "exampleMeaning": "Do not give up after the first try."
+    },
+    {
+      "word": "a prinde curaj",
+      "reading": "ah preen-deh koo-razh",
+      "meaning": "literal: to catch courage; real: to gain courage",
+      "example": "După primul succes, am prins curaj.",
+      "exampleMeaning": "After the first success, I gained courage."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "Expresia ___ înseamnă să înțelegi brusc.",
+          "answer": "a-i pica fisa",
+          "hint": "to suddenly get it"
+        },
+        {
+          "sentence": "Expresia ___ înseamnă să exagerezi.",
+          "answer": "a face din țânțar armăsar",
+          "hint": "to exaggerate"
+        },
+        {
+          "sentence": "Expresia ___ înseamnă să adaugi tensiune.",
+          "answer": "a pune paie pe foc",
+          "hint": "to add fuel to the fire"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "items": [
+        {
+          "question": "What does 'a da cu piciorul' mean as an idiom?",
+          "options": [
+            "to squander an opportunity",
+            "to hurry",
+            "to tell the truth",
+            "to cook badly"
+          ],
+          "answer": 0
+        },
+        {
+          "question": "Which idiom means 'to waste time doing nothing useful'?",
+          "options": [
+            "a face cu ochiul",
+            "a tăia frunze la câini",
+            "a prinde curaj",
+            "a lua peste picior"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What does 'a fi cu capul în nori' mean?",
+          "options": [
+            "to be angry",
+            "to be generous",
+            "to be dreamy or distracted",
+            "to be very lucky"
+          ],
+          "answer": 2
+        }
+      ]
+    }
+  ]
+}

@@ -148,5 +148,65 @@
     "id": "cognates-false-friends",
     "title": "Cognates & False Friends",
     "order": 30
+  },
+  {
+    "id": "relative-pronouns",
+    "title": "Relative Pronouns (care, pe care, ce, cine)",
+    "order": 31
+  },
+  {
+    "id": "passive-voice",
+    "title": "The Passive Voice (a fi + participle & the se-passive)",
+    "order": 32
+  },
+  {
+    "id": "supine",
+    "title": "The Supine (de făcut, ușor de învățat)",
+    "order": 33
+  },
+  {
+    "id": "gerund",
+    "title": "The Gerund / Present Participle (-ând, -ind)",
+    "order": 34
+  },
+  {
+    "id": "mai-mult-ca-perfect",
+    "title": "The Past Perfect (Mai-mult-ca-perfectul)",
+    "order": 35
+  },
+  {
+    "id": "prepositions-cases",
+    "title": "Prepositions that Take the Genitive/Dative",
+    "order": 36
+  },
+  {
+    "id": "ordinals-fractions",
+    "title": "Ordinal Numbers & Fractions",
+    "order": 37
+  },
+  {
+    "id": "diminutives",
+    "title": "Diminutives & Augmentatives (-uț, -ică, -aș)",
+    "order": 38
+  },
+  {
+    "id": "impersonal-verbs",
+    "title": "Impersonal & Weather Verbs (plouă, trebuie, se pare)",
+    "order": 39
+  },
+  {
+    "id": "conditional-sentences",
+    "title": "Conditional Sentences (real & unreal dacă-clauses)",
+    "order": 40
+  },
+  {
+    "id": "clitic-word-order",
+    "title": "Word Order & Clitic Pronoun Placement",
+    "order": 41
+  },
+  {
+    "id": "formal-address",
+    "title": "Formal Address & Politeness (dumneavoastră)",
+    "order": 42
   }
 ]

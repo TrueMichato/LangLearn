@@ -1,0 +1,178 @@
+{
+  "id": "proverbs",
+  "words": [
+    {
+      "word": "buturuga mică răstoarnă carul mare",
+      "reading": "boo-too-roo-gah mee-kuh ruhs-toar-nuh kah-rool mah-reh",
+      "meaning": "literal: the small stump overturns the big cart; real: small forces can defeat bigger ones",
+      "example": "Echipa mică a câștigat; buturuga mică răstoarnă carul mare.",
+      "exampleMeaning": "The small team won; small forces can defeat bigger ones."
+    },
+    {
+      "word": "cine se scoală de dimineață departe ajunge",
+      "reading": "chee-neh seh sko-ah-luh deh dee-mee-nyah-tsuh deh-par-teh ah-joon-jeh",
+      "meaning": "literal: whoever gets up in the morning gets far; real: early effort brings success",
+      "example": "Mă trezesc devreme, fiindcă cine se scoală de dimineață departe ajunge.",
+      "exampleMeaning": "I wake up early because early effort brings success."
+    },
+    {
+      "word": "apa trece, pietrele rămân",
+      "reading": "ah-pah treh-cheh pyet-reh-leh ruh-muhn",
+      "meaning": "literal: water passes, stones remain; real: troubles pass, lasting things remain",
+      "example": "După scandal, am zis că apa trece, pietrele rămân.",
+      "exampleMeaning": "After the scandal, I said that troubles pass and lasting things remain."
+    },
+    {
+      "word": "gura lumii",
+      "reading": "goo-rah loo-mee",
+      "meaning": "literal: the mouth of the world; real: public gossip or what people will say",
+      "example": "Nu te teme de gura lumii; fă ce e corect.",
+      "exampleMeaning": "Do not fear public gossip; do what is right."
+    },
+    {
+      "word": "nu aduce anul ce aduce ceasul",
+      "reading": "noo ah-doo-cheh ah-nool cheh ah-doo-cheh chah-sool",
+      "meaning": "literal: the year does not bring what the hour brings; real: big changes can happen suddenly",
+      "example": "Nu aduce anul ce aduce ceasul, așa că fii pregătit.",
+      "exampleMeaning": "Big changes can happen suddenly, so be prepared."
+    },
+    {
+      "word": "omul sfințește locul",
+      "reading": "oh-mool sfeen-tsehsh-teh lo-kool",
+      "meaning": "literal: the person sanctifies the place; real: a good person improves any place",
+      "example": "Noul director a renovat școala; omul sfințește locul.",
+      "exampleMeaning": "The new principal renovated the school; a good person improves any place."
+    },
+    {
+      "word": "graba strică treaba",
+      "reading": "grah-bah stree-kuh treh-ah-bah",
+      "meaning": "literal: haste spoils the work; real: rushing leads to mistakes",
+      "example": "Verificăm încet, pentru că graba strică treaba.",
+      "exampleMeaning": "We check slowly because rushing leads to mistakes."
+    },
+    {
+      "word": "minciuna are picioare scurte",
+      "reading": "meen-choo-nah ah-reh pee-cho-ah-reh skoor-teh",
+      "meaning": "literal: a lie has short legs; real: lies are discovered quickly",
+      "example": "Adevărul a ieșit la iveală; minciuna are picioare scurte.",
+      "exampleMeaning": "The truth came out; lies are discovered quickly."
+    },
+    {
+      "word": "vorba dulce mult aduce",
+      "reading": "vor-bah dool-cheh moolt ah-doo-cheh",
+      "meaning": "literal: sweet speech brings much; real: kindness and tact help",
+      "example": "Vorbește frumos, că vorba dulce mult aduce.",
+      "exampleMeaning": "Speak nicely, because kindness and tact help."
+    },
+    {
+      "word": "unde-s mulți, puterea crește",
+      "reading": "oon-dehs moolts poo-teh-reh-ah kresh-teh",
+      "meaning": "literal: where there are many, strength grows; real: unity brings strength",
+      "example": "Voluntarii au reușit împreună: unde-s mulți, puterea crește.",
+      "exampleMeaning": "The volunteers succeeded together: unity brings strength."
+    },
+    {
+      "word": "la pomul lăudat să nu te duci cu sacul",
+      "reading": "lah po-mool luh-oo-daht suh noo teh dooch koo sah-kool",
+      "meaning": "literal: do not go to the praised tree with a sack; real: do not expect too much from hype",
+      "example": "Filmul era prea lăudat; la pomul lăudat să nu te duci cu sacul.",
+      "exampleMeaning": "The film was overpraised; do not expect too much from hype."
+    },
+    {
+      "word": "ce-i în mână nu-i minciună",
+      "reading": "chey uhn muh-nuh nooy meen-choo-nuh",
+      "meaning": "literal: what is in hand is not a lie; real: a sure thing is valuable",
+      "example": "Accept oferta sigură; ce-i în mână nu-i minciună.",
+      "exampleMeaning": "I accept the safe offer; a sure thing is valuable."
+    },
+    {
+      "word": "după faptă și răsplată",
+      "reading": "doo-puh fap-tuh shee ruhs-plah-tuh",
+      "meaning": "literal: according to the deed, so the reward; real: actions have consequences",
+      "example": "A muncit mult și a primit premiul: după faptă și răsplată.",
+      "exampleMeaning": "He worked hard and received the prize: actions have consequences."
+    },
+    {
+      "word": "nu lăsa pe mâine ce poți face azi",
+      "reading": "noo luh-sah peh muh-ee-neh cheh potsee fah-cheh ahz",
+      "meaning": "literal: do not leave for tomorrow what you can do today; real: do not postpone tasks",
+      "example": "Termin tema acum: nu lăsa pe mâine ce poți face azi.",
+      "exampleMeaning": "I finish the homework now: do not postpone tasks."
+    },
+    {
+      "word": "lupul își schimbă părul, dar năravul ba",
+      "reading": "loo-pool uhsh skheem-buh puh-rool dar nuh-rah-vool bah",
+      "meaning": "literal: the wolf changes its fur, but not its habit; real: character is hard to change",
+      "example": "Nu te baza pe promisiunea lui; lupul își schimbă părul, dar năravul ba.",
+      "exampleMeaning": "Do not rely on his promise; character is hard to change."
+    },
+    {
+      "word": "dar din dar se face rai",
+      "reading": "dar deen dar seh fah-cheh rye",
+      "meaning": "literal: gift from gift makes heaven; real: generosity creates goodness",
+      "example": "Am donat și noi, fiindcă dar din dar se face rai.",
+      "exampleMeaning": "We donated too, because generosity creates goodness."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "___ înseamnă că graba produce greșeli.",
+          "answer": "graba strică treaba",
+          "hint": "rushing leads to mistakes"
+        },
+        {
+          "sentence": "___ înseamnă că oamenii buni schimbă locul.",
+          "answer": "omul sfințește locul",
+          "hint": "a good person improves any place"
+        },
+        {
+          "sentence": "___ înseamnă că un lucru sigur valorează mult.",
+          "answer": "ce-i în mână nu-i minciună",
+          "hint": "a sure thing is valuable"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "items": [
+        {
+          "question": "What does 'buturuga mică răstoarnă carul mare' mean?",
+          "options": [
+            "small forces can defeat bigger ones",
+            "lies are discovered quickly",
+            "rushing leads to mistakes",
+            "do not postpone tasks"
+          ],
+          "answer": 0
+        },
+        {
+          "question": "Which saying means 'public gossip or what people will say'?",
+          "options": [
+            "dar din dar se face rai",
+            "gura lumii",
+            "vorba dulce mult aduce",
+            "apa trece, pietrele rămân"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What does 'minciuna are picioare scurte' mean?",
+          "options": [
+            "unity brings strength",
+            "kindness and tact help",
+            "lies are discovered quickly",
+            "big changes happen suddenly"
+          ],
+          "answer": 2
+        }
+      ]
+    }
+  ]
+}

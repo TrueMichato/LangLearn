@@ -89,6 +89,60 @@
       "wordCount": 221,
       "tags": ["culture", "history", "sports"],
       "description": "A biography-style narrative about the Romanian gymnast Nadia Comăneci"
+    },
+    {
+      "id": "la-restaurant",
+      "title": "La restaurant",
+      "titleEn": "At the Restaurant",
+      "difficulty": "easy",
+      "wordCount": 95,
+      "tags": ["daily-life", "conversation"],
+      "description": "A natural restaurant-ordering dialogue in Romanian"
+    },
+    {
+      "id": "o-zi-la-mare",
+      "title": "O zi la mare",
+      "titleEn": "A Day at the Sea",
+      "difficulty": "easy",
+      "wordCount": 100,
+      "tags": ["daily-life", "travel"],
+      "description": "A present-tense story about spending a day on the Black Sea coast"
+    },
+    {
+      "id": "legenda-mesterului-manole",
+      "title": "Legenda Meșterului Manole",
+      "titleEn": "The Legend of Master Manole",
+      "difficulty": "medium",
+      "wordCount": 190,
+      "tags": ["culture", "legend"],
+      "description": "A retelling of the Curtea de Argeș monastery legend"
+    },
+    {
+      "id": "delta-dunarii",
+      "title": "Delta Dunării",
+      "titleEn": "The Danube Delta",
+      "difficulty": "medium",
+      "wordCount": 185,
+      "tags": ["culture", "nature"],
+      "description": "An informative text about the Danube Delta, its birds, and its fragile nature"
+    },
+    {
+      "id": "somnoroase-pasarele",
+      "title": "Somnoroase păsărele",
+      "titleEn": "Drowsy Little Birds",
+      "difficulty": "hard",
+      "wordCount": 59,
+      "tags": ["literature", "poetry"],
+      "description": "A classic public-domain poem by Mihai Eminescu"
+    },
+    {
+      "id": "istoria-limbii-romane",
+      "title": "Istoria limbii române",
+      "titleEn": "The History of the Romanian Language",
+      "difficulty": "hard",
+      "wordCount": 230,
+      "tags": ["culture", "history", "language"],
+      "description": "An essay about the Latin origin and historical influences of Romanian"
     }
   ]
 }

@@ -30,4 +30,22 @@ export const roClozeSentences: ClozeSentence[] = [
   { id: 'ro-c022', target: 'Guvernul a anunțat noi măsuri economice', english: 'The government announced new economic measures', blankedWord: 'măsuri', blankedReading: 'MUH-soo-ree', frequencyRank: 22, difficulty: 'advanced' },
   { id: 'ro-c023', target: 'Dacă aș avea mai mult timp, aș învăța pian', english: 'If I had more time, I would learn piano', blankedWord: 'timp', blankedReading: 'teemp', frequencyRank: 23, difficulty: 'advanced' },
   { id: 'ro-c024', target: 'Protejarea mediului este responsabilitatea tuturor', english: 'Protecting the environment is everyone\'s responsibility', blankedWord: 'mediului', blankedReading: 'MEH-dee-oo-loo-ee', frequencyRank: 24, difficulty: 'advanced' },
+
+  // ── Everyday & travel (frequency-ranked) ──
+  { id: 'ro-c025', target: 'Vreau să cumpăr pâine de la magazin', english: 'I want to buy bread from the store', blankedWord: 'pâine', blankedReading: 'PUH-ee-neh', frequencyRank: 25, difficulty: 'beginner' },
+  { id: 'ro-c026', target: 'Trenul pleacă la ora opt', english: 'The train leaves at eight o\'clock', blankedWord: 'Trenul', blankedReading: 'TREH-nool', frequencyRank: 26, difficulty: 'beginner' },
+  { id: 'ro-c027', target: 'Îmi place să beau ceai dimineața', english: 'I like to drink tea in the morning', blankedWord: 'ceai', blankedReading: 'chy', frequencyRank: 27, difficulty: 'beginner' },
+  { id: 'ro-c028', target: 'Copiii merg la școală cu autobuzul', english: 'The children go to school by bus', blankedWord: 'autobuzul', blankedReading: 'ow-toh-BOO-zool', frequencyRank: 28, difficulty: 'beginner' },
+  { id: 'ro-c029', target: 'Astăzi este o zi frumoasă', english: 'Today is a beautiful day', blankedWord: 'frumoasă', blankedReading: 'froo-MWAH-suh', frequencyRank: 29, difficulty: 'beginner' },
+  { id: 'ro-c030', target: 'Am nevoie de ajutor, vă rog', english: 'I need help, please', blankedWord: 'ajutor', blankedReading: 'ah-zhoo-TOR', frequencyRank: 30, difficulty: 'beginner' },
+  { id: 'ro-c031', target: 'Ea vorbește trei limbi străine', english: 'She speaks three foreign languages', blankedWord: 'limbi', blankedReading: 'LEEM-bee', frequencyRank: 31, difficulty: 'intermediate' },
+  { id: 'ro-c032', target: 'Noi mâncăm împreună în fiecare seară', english: 'We eat together every evening', blankedWord: 'împreună', blankedReading: 'uhm-preh-OO-nuh', frequencyRank: 32, difficulty: 'intermediate' },
+  { id: 'ro-c033', target: 'Cartea aceasta este foarte interesantă', english: 'This book is very interesting', blankedWord: 'interesantă', blankedReading: 'een-teh-reh-SAN-tuh', frequencyRank: 33, difficulty: 'intermediate' },
+  { id: 'ro-c034', target: 'El lucrează la un spital mare', english: 'He works at a big hospital', blankedWord: 'spital', blankedReading: 'spee-TAL', frequencyRank: 34, difficulty: 'intermediate' },
+  { id: 'ro-c035', target: 'Vremea se schimbă repede toamna', english: 'The weather changes quickly in autumn', blankedWord: 'toamna', blankedReading: 'TWAM-nah', frequencyRank: 35, difficulty: 'intermediate' },
+  { id: 'ro-c036', target: 'Trebuie să plătesc factura la timp', english: 'I have to pay the bill on time', blankedWord: 'factura', blankedReading: 'fak-TOO-rah', frequencyRank: 36, difficulty: 'intermediate' },
+  { id: 'ro-c037', target: 'Prietena mea locuiește în străinătate', english: 'My friend lives abroad', blankedWord: 'străinătate', blankedReading: 'struh-ee-nuh-TAH-teh', frequencyRank: 37, difficulty: 'intermediate' },
+  { id: 'ro-c038', target: 'Guvernul a luat o decizie importantă', english: 'The government made an important decision', blankedWord: 'decizie', blankedReading: 'deh-CHEE-zee-eh', frequencyRank: 38, difficulty: 'advanced' },
+  { id: 'ro-c039', target: 'Fără efort nu obții rezultate', english: 'Without effort you don\'t get results', blankedWord: 'efort', blankedReading: 'eh-FORT', frequencyRank: 39, difficulty: 'advanced' },
+  { id: 'ro-c040', target: 'Deși era târziu, am continuat să lucrez', english: 'Although it was late, I kept working', blankedWord: 'târziu', blankedReading: 'tuhr-ZEE-oo', frequencyRank: 40, difficulty: 'advanced' },
 ];

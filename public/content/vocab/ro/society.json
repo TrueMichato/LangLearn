@@ -1,0 +1,178 @@
+{
+  "id": "society",
+  "words": [
+    {
+      "word": "societate",
+      "reading": "so-cheh-tah-teh",
+      "meaning": "society",
+      "example": "O societate dreaptă protejează oamenii.",
+      "exampleMeaning": "A fair society protects people."
+    },
+    {
+      "word": "libertate",
+      "reading": "lee-ber-tah-teh",
+      "meaning": "freedom",
+      "example": "Libertatea cere responsabilitate.",
+      "exampleMeaning": "Freedom requires responsibility."
+    },
+    {
+      "word": "dreptate",
+      "reading": "drep-tah-teh",
+      "meaning": "justice / fairness",
+      "example": "Dreptatea este importantă pentru toți.",
+      "exampleMeaning": "Justice is important for everyone."
+    },
+    {
+      "word": "egalitate",
+      "reading": "eh-gah-lee-tah-teh",
+      "meaning": "equality",
+      "example": "Egalitatea de șanse ajută comunitatea.",
+      "exampleMeaning": "Equal opportunity helps the community."
+    },
+    {
+      "word": "responsabilitate",
+      "reading": "reh-spon-sah-bee-lee-tah-teh",
+      "meaning": "responsibility",
+      "example": "Responsabilitatea începe cu fiecare om.",
+      "exampleMeaning": "Responsibility starts with each person."
+    },
+    {
+      "word": "comunitate",
+      "reading": "ko-moo-nee-tah-teh",
+      "meaning": "community",
+      "example": "Comunitatea organizează un târg local.",
+      "exampleMeaning": "The community organizes a local fair."
+    },
+    {
+      "word": "identitate",
+      "reading": "ee-den-tee-tah-teh",
+      "meaning": "identity",
+      "example": "Identitatea unei persoane are multe părți.",
+      "exampleMeaning": "A person's identity has many parts."
+    },
+    {
+      "word": "tradiție",
+      "reading": "trah-dee-tsee-eh",
+      "meaning": "tradition",
+      "example": "Tradiția familiei continuă de sărbători.",
+      "exampleMeaning": "The family tradition continues during holidays."
+    },
+    {
+      "word": "schimbare",
+      "reading": "skeem-bah-reh",
+      "meaning": "change",
+      "example": "Schimbarea poate fi dificilă.",
+      "exampleMeaning": "Change can be difficult."
+    },
+    {
+      "word": "progres",
+      "reading": "pro-gres",
+      "meaning": "progress",
+      "example": "Progresul vine prin educație și muncă.",
+      "exampleMeaning": "Progress comes through education and work."
+    },
+    {
+      "word": "conflict",
+      "reading": "kon-fleekt",
+      "meaning": "conflict",
+      "example": "Conflictul se rezolvă prin dialog.",
+      "exampleMeaning": "The conflict is resolved through dialogue."
+    },
+    {
+      "word": "pace",
+      "reading": "pah-cheh",
+      "meaning": "peace",
+      "example": "Pacea este fragilă.",
+      "exampleMeaning": "Peace is fragile."
+    },
+    {
+      "word": "respect",
+      "reading": "res-pekt",
+      "meaning": "respect",
+      "example": "Respectul construiește relații bune.",
+      "exampleMeaning": "Respect builds good relationships."
+    },
+    {
+      "word": "încredere",
+      "reading": "uhn-kreh-deh-reh",
+      "meaning": "trust / confidence",
+      "example": "Încrederea crește în timp.",
+      "exampleMeaning": "Trust grows over time."
+    },
+    {
+      "word": "solidaritate",
+      "reading": "so-lee-dah-ree-tah-teh",
+      "meaning": "solidarity",
+      "example": "Solidaritatea apare în momente grele.",
+      "exampleMeaning": "Solidarity appears in difficult moments."
+    },
+    {
+      "word": "diversitate",
+      "reading": "dee-ver-see-tah-teh",
+      "meaning": "diversity",
+      "example": "Diversitatea face orașul mai interesant.",
+      "exampleMeaning": "Diversity makes the city more interesting."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "O ___ dreaptă protejează oamenii.",
+          "answer": "societate",
+          "hint": "society"
+        },
+        {
+          "sentence": "Avem nevoie de ___ ca să colaborăm.",
+          "answer": "încredere",
+          "hint": "trust"
+        },
+        {
+          "sentence": "___ înseamnă sprijin între oameni.",
+          "answer": "solidaritate",
+          "hint": "solidarity"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "items": [
+        {
+          "question": "What does 'dreptate' mean?",
+          "options": [
+            "justice / fairness",
+            "change",
+            "community",
+            "peace"
+          ],
+          "answer": 0
+        },
+        {
+          "question": "How do you say 'equality' in Romanian?",
+          "options": [
+            "libertate",
+            "egalitate",
+            "identitate",
+            "diversitate"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What does 'progres' mean?",
+          "options": [
+            "tradition",
+            "conflict",
+            "progress",
+            "responsibility"
+          ],
+          "answer": 2
+        }
+      ]
+    }
+  ]
+}
