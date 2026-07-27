@@ -1,0 +1,159 @@
+{
+  "id": "egyptian-compliments-small-talk",
+  "words": [
+    {
+      "word": "إِزَّيَّكْ؟",
+      "reading": "izzayyak?",
+      "meaning": "how are you?",
+      "example": "إِزَّيَّكْ؟ إِنْ شَا اللّٰهْ تَمَامْ.",
+      "exampleMeaning": "How are you? I hope everything is fine."
+    },
+    {
+      "word": "عَامِلْ إِيهْ؟",
+      "reading": "ʿāmil ēh?",
+      "meaning": "how are you doing?",
+      "example": "عَامِلْ إِيهْ بَعْدَ الشُّغْلْ؟",
+      "exampleMeaning": "How are you doing after work?"
+    },
+    {
+      "word": "نَوَّرْتْ",
+      "reading": "nawwart",
+      "meaning": "welcome / you lit up the place",
+      "example": "نَوَّرْتْ الْبَيْتْ يَا صَاحْبِي.",
+      "exampleMeaning": "You lit up the house, my friend."
+    },
+    {
+      "word": "تِسْلَمْ",
+      "reading": "tislam",
+      "meaning": "thanks / bless you",
+      "example": "تِسْلَمْ عَلَى الْكَلَامْ الْحِلْوْ.",
+      "exampleMeaning": "Thanks for the nice words."
+    },
+    {
+      "word": "ذَوْقَكْ حِلْوْ",
+      "reading": "zōʾak ḥilw",
+      "meaning": "you have good taste",
+      "example": "ذَوْقَكْ حِلْوْ فِي اخْتِيَارِ الْهَدِيَّةْ.",
+      "exampleMeaning": "You have good taste in choosing the gift."
+    },
+    {
+      "word": "شَكْلَكْ حِلْوْ",
+      "reading": "shaklak ḥilw",
+      "meaning": "you look nice",
+      "example": "شَكْلَكْ حِلْوْ بِاللَّوْنْ دَهْ.",
+      "exampleMeaning": "You look nice in this color."
+    },
+    {
+      "word": "مَبْسُوطْ أَشُوفَكْ",
+      "reading": "mabsūṭ ashūfak",
+      "meaning": "happy to see you",
+      "example": "مَبْسُوطْ أَشُوفَكْ بَعْدَ غِيَابْ طَوِيلْ.",
+      "exampleMeaning": "I am happy to see you after a long absence."
+    },
+    {
+      "word": "أَخْبَارَكْ إِيهْ؟",
+      "reading": "akhbārak ēh?",
+      "meaning": "what is your news?",
+      "example": "أَخْبَارَكْ إِيهْ فِي الدِّرَاسَةْ؟",
+      "exampleMeaning": "What is your news with studying?"
+    },
+    {
+      "word": "كُلُّه تَمَامْ",
+      "reading": "kullu tamām",
+      "meaning": "everything is fine",
+      "example": "كُلُّه تَمَامْ وَالْيَوْمْ هَادِي.",
+      "exampleMeaning": "Everything is fine and the day is calm."
+    },
+    {
+      "word": "بَرَاحَتَكْ",
+      "reading": "barāḥtak",
+      "meaning": "at your pace / as you like",
+      "example": "خُدْ وَقْتَكْ وَامْشِي بَرَاحَتَكْ.",
+      "exampleMeaning": "Take your time and walk at your pace."
+    },
+    {
+      "word": "عَاشْ",
+      "reading": "ʿāsh",
+      "meaning": "well done",
+      "example": "عَاشْ، الشُّغْلْ طَلَعْ جَمِيلْ.",
+      "exampleMeaning": "Well done, the work turned out beautiful."
+    },
+    {
+      "word": "جَامِدْ",
+      "reading": "gāmid",
+      "meaning": "awesome / impressive",
+      "example": "الْفِيلْمْ دَهْ جَامِدْ جِدًّا.",
+      "exampleMeaning": "This movie is really awesome."
+    },
+    {
+      "word": "مِتْشَكِّرْ",
+      "reading": "mitshakkir",
+      "meaning": "thanks",
+      "example": "مِتْشَكِّرْ عَلَى مُسَاعَدْتَكْ.",
+      "exampleMeaning": "Thanks for your help."
+    },
+    {
+      "word": "رَبِّنَا يِخَلِّيكْ",
+      "reading": "rabbina yikhallīk",
+      "meaning": "may God keep you",
+      "example": "رَبِّنَا يِخَلِّيكْ لِأَهْلَكْ.",
+      "exampleMeaning": "May God keep you for your family."
+    },
+    {
+      "word": "فُرْصَةْ سَعِيدَةْ",
+      "reading": "furṣa saʿīda",
+      "meaning": "nice to meet you",
+      "example": "فُرْصَةْ سَعِيدَةْ وَيَا رِيتْ نِتْقَابِلْ تَانِي.",
+      "exampleMeaning": "Nice to meet you, and I hope we meet again."
+    },
+    {
+      "word": "نِتْقَابِلْ قَرِيبْ",
+      "reading": "nitʾābil qarīb",
+      "meaning": "see you soon",
+      "example": "نِتْقَابِلْ قَرِيبْ فِي الْقَاهِرَةْ.",
+      "exampleMeaning": "See you soon in Cairo."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "___ الْبَيْتْ يَا صَاحْبِي.",
+          "answer": "نَوَّرْتْ",
+          "hint": "you lit up the place"
+        },
+        {
+          "sentence": "___ فِي اخْتِيَارِ الْهَدِيَّةْ.",
+          "answer": "ذَوْقَكْ حِلْوْ",
+          "hint": "you have good taste"
+        },
+        {
+          "sentence": "___، الشُّغْلْ طَلَعْ جَمِيلْ.",
+          "answer": "عَاشْ",
+          "hint": "well done"
+        },
+        {
+          "sentence": "___ وَيَا رِيتْ نِتْقَابِلْ تَانِي.",
+          "answer": "فُرْصَةْ سَعِيدَةْ",
+          "hint": "nice to meet you"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "In Egyptian Arabic, what does ‘عَاشْ’ express?",
+      "options": [
+        "well done",
+        "what is your news?",
+        "thanks",
+        "at your pace"
+      ],
+      "answer": 0
+    }
+  ]
+}

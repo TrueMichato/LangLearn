@@ -886,5 +886,53 @@
     "title": "Fronting the Direct Object",
     "order": 148,
     "group": "🔢 Structure & Nuance"
+  },
+  {
+    "id": "tamyiz-al-nisba",
+    "title": "Tamyīz al-Nisba (Relational Specification)",
+    "order": 149,
+    "group": "🔢 Structure & Nuance"
+  },
+  {
+    "id": "ism-al-marra-haya",
+    "title": "Nouns of Instance and Manner (ism al-Marra & ism al-Hayʾa)",
+    "order": 150,
+    "group": "🔢 Structure & Nuance"
+  },
+  {
+    "id": "laysa-full-paradigm",
+    "title": "Laysa: Full Paradigm and Usage",
+    "order": 151,
+    "group": "🔤 Verbs"
+  },
+  {
+    "id": "istighatha-nudba",
+    "title": "Istighātha and Nudba: Calling for Help or Lamenting",
+    "order": 152,
+    "group": "🔢 Structure & Nuance"
+  },
+  {
+    "id": "verbs-of-exception",
+    "title": "Exception Verbs: khalā, ʿadā, ḥāshā",
+    "order": 153,
+    "group": "🔢 Structure & Nuance"
+  },
+  {
+    "id": "damir-shan",
+    "title": "Ḍamīr ash-Shaʾn: the Pronoun of the Matter",
+    "order": 154,
+    "group": "🔢 Structure & Nuance"
+  },
+  {
+    "id": "ighra-tahdhir",
+    "title": "Ighrāʾ and Taḥdhīr: Urging and Warning",
+    "order": 155,
+    "group": "🔢 Structure & Nuance"
+  },
+  {
+    "id": "atf-coordination",
+    "title": "Coordination with ʿAṭf: Shared Case and Meaning",
+    "order": 156,
+    "group": "🔢 Structure & Nuance"
   }
 ]

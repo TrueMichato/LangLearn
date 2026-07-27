@@ -1150,6 +1150,109 @@
       ],
       "description": "An original moral fable about pride, usefulness, and generosity.",
       "wordCount": 140
+    },
+    {
+      "id": "post-office-dialogue-ar",
+      "title": "فِي مَكْتَبِ الْبَرِيدِ",
+      "titleEn": "At the Post Office",
+      "difficulty": "easy",
+      "tags": [
+        "dialogue",
+        "mail",
+        "daily-life"
+      ],
+      "description": "A simple dialogue about mailing a letter at the post office.",
+      "wordCount": 41
+    },
+    {
+      "id": "little-robot-ar",
+      "title": "الرُّوبُوتُ الصَّغِيرُ",
+      "titleEn": "The Little Robot",
+      "difficulty": "easy",
+      "tags": [
+        "technology",
+        "school"
+      ],
+      "description": "A beginner-friendly school scene about making a small robot.",
+      "wordCount": 41
+    },
+    {
+      "id": "sea-turtle-ar",
+      "title": "السُّلَحْفَاةُ الْبَحْرِيَّةُ",
+      "titleEn": "The Sea Turtle",
+      "difficulty": "easy",
+      "tags": [
+        "animals",
+        "nature",
+        "sea"
+      ],
+      "description": "A short nature text about protecting a sea turtle habitat.",
+      "wordCount": 41
+    },
+    {
+      "id": "gravity-explainer-ar",
+      "title": "مَا هِيَ الْجَاذِبِيَّةُ؟",
+      "titleEn": "What Is Gravity?",
+      "difficulty": "medium",
+      "tags": [
+        "science",
+        "physics",
+        "education"
+      ],
+      "description": "A clear explainer about gravity and how it shapes daily life.",
+      "wordCount": 82
+    },
+    {
+      "id": "potter-workshop-ar",
+      "title": "وَرْشَةُ الْفَخَّارِ",
+      "titleEn": "The Potter's Workshop",
+      "difficulty": "medium",
+      "tags": [
+        "profession",
+        "craft",
+        "culture"
+      ],
+      "description": "A description of a potter shaping clay with patience and skill.",
+      "wordCount": 80
+    },
+    {
+      "id": "organize-your-desk-ar",
+      "title": "كَيْفَ تُنَظِّمُ مَكْتَبَكَ",
+      "titleEn": "How to Organize Your Desk",
+      "difficulty": "medium",
+      "tags": [
+        "how-to",
+        "study",
+        "daily-life"
+      ],
+      "description": "A practical guide to keeping a study desk clear and useful.",
+      "wordCount": 84
+    },
+    {
+      "id": "maryam-al-ijliyya-ar",
+      "title": "مَرْيَمُ الْعِجْلِيَّةُ وَالْإِسْطُرْلَابُ",
+      "titleEn": "Maryam al-Ijliyya and the Astrolabe",
+      "difficulty": "hard",
+      "tags": [
+        "biography",
+        "history",
+        "science"
+      ],
+      "description": "A factual biography of Maryam al-Ijliyya, a skilled maker of astrolabes in medieval Aleppo.",
+      "wordCount": 148
+    },
+    {
+      "id": "how-compass-works-ar",
+      "title": "كَيْفَ تَعْمَلُ الْبُوصَلَةُ؟",
+      "titleEn": "How a Compass Works",
+      "difficulty": "hard",
+      "tags": [
+        "science",
+        "navigation",
+        "history"
+      ],
+      "description": "A science explainer about magnetic direction, navigation, and practical knowledge.",
+      "wordCount": 141
     }
   ]
 }

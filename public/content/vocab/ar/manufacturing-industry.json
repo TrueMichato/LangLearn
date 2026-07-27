@@ -1,0 +1,159 @@
+{
+  "id": "manufacturing-industry",
+  "words": [
+    {
+      "word": "مَصْنَعٌ",
+      "reading": "maṣnaʿ",
+      "meaning": "factory",
+      "example": "يَعْمَلُ أَخِي فِي مَصْنَعٍ كَبِيرٍ.",
+      "exampleMeaning": "My brother works in a large factory."
+    },
+    {
+      "word": "خَطُّ إِنْتَاجٍ",
+      "reading": "khaṭṭ intāj",
+      "meaning": "production line",
+      "example": "تَوَقَّفَ خَطُّ إِنْتَاجٍ بِسَبَبِ عُطْلٍ.",
+      "exampleMeaning": "A production line stopped because of a fault."
+    },
+    {
+      "word": "آلَةٌ",
+      "reading": "āla",
+      "meaning": "machine",
+      "example": "تَحْتَاجُ آلَةٌ قَدِيمَةٌ إِلَى صِيَانَةٍ.",
+      "exampleMeaning": "An old machine needs maintenance."
+    },
+    {
+      "word": "مَوَادُّ خَامٌ",
+      "reading": "mawādd khām",
+      "meaning": "raw materials",
+      "example": "وَصَلَتْ مَوَادُّ خَامٌ إِلَى الْمَخْزَنِ صَبَاحًا.",
+      "exampleMeaning": "Raw materials arrived at the warehouse in the morning."
+    },
+    {
+      "word": "تَجْمِيعٌ",
+      "reading": "tajmīʿ",
+      "meaning": "assembly",
+      "example": "يَحْتَاجُ تَجْمِيعٌ الْجِهَازِ إِلَى سَاعَتَيْنِ.",
+      "exampleMeaning": "Assembling the device needs two hours."
+    },
+    {
+      "word": "لِحَامٌ",
+      "reading": "liḥām",
+      "meaning": "welding",
+      "example": "يَسْتَخْدِمُ الْفَنِّيُّ لِحَامًا لِإِصْلَاحِ الْإِطَارِ.",
+      "exampleMeaning": "The technician uses welding to repair the frame."
+    },
+    {
+      "word": "قَالَبٌ",
+      "reading": "qālab",
+      "meaning": "mold",
+      "example": "يَصُبُّ الْعَامِلُ الْمَادَّةَ فِي قَالَبٍ حَدِيدِيٍّ.",
+      "exampleMeaning": "The worker pours the material into an iron mold."
+    },
+    {
+      "word": "جَوْدَةٌ",
+      "reading": "jawda",
+      "meaning": "quality",
+      "example": "تُرَاقِبُ الشَّرِكَةُ جَوْدَةَ كُلِّ مُنْتَجٍ.",
+      "exampleMeaning": "The company monitors the quality of every product."
+    },
+    {
+      "word": "فَحْصٌ",
+      "reading": "faḥṣ",
+      "meaning": "inspection",
+      "example": "يَحْدُثُ فَحْصٌ نِهَائِيٌّ قَبْلَ الشَّحْنِ.",
+      "exampleMeaning": "A final inspection happens before shipping."
+    },
+    {
+      "word": "عَيْبٌ",
+      "reading": "ʿayb",
+      "meaning": "defect",
+      "example": "وَجَدَ الْمُرَاقِبُ عَيْبًا صَغِيرًا فِي الْقِطْعَةِ.",
+      "exampleMeaning": "The inspector found a small defect in the part."
+    },
+    {
+      "word": "مَخْزُونٌ",
+      "reading": "makhzūn",
+      "meaning": "inventory",
+      "example": "يُحَدِّثُ الْمُدِيرُ مَخْزُونَ الْمَصْنَعِ كُلَّ يَوْمٍ.",
+      "exampleMeaning": "The manager updates the factory inventory every day."
+    },
+    {
+      "word": "شَحْنَةٌ",
+      "reading": "shaḥna",
+      "meaning": "shipment",
+      "example": "غَادَرَتْ شَحْنَةٌ جَدِيدَةٌ إِلَى الْمِينَاءِ.",
+      "exampleMeaning": "A new shipment left for the port."
+    },
+    {
+      "word": "عَامِلٌ",
+      "reading": "ʿāmil",
+      "meaning": "worker",
+      "example": "يَرْتَدِي عَامِلٌ خُوذَةً دَاخِلَ الْمَصْنَعِ.",
+      "exampleMeaning": "A worker wears a helmet inside the factory."
+    },
+    {
+      "word": "مُهَنْدِسَةٌ",
+      "reading": "muhandisa",
+      "meaning": "engineer",
+      "example": "تَفْحَصُ مُهَنْدِسَةٌ خُطَّةَ السَّلَامَةِ.",
+      "exampleMeaning": "An engineer checks the safety plan."
+    },
+    {
+      "word": "سَلَامَةٌ صِنَاعِيَّةٌ",
+      "reading": "salāma ṣināʿiyya",
+      "meaning": "industrial safety",
+      "example": "تَحْمِي سَلَامَةٌ صِنَاعِيَّةٌ الْعُمَّالَ مِنَ الْحَوَادِثِ.",
+      "exampleMeaning": "Industrial safety protects workers from accidents."
+    },
+    {
+      "word": "إِنْتَاجِيَّةٌ",
+      "reading": "intājiyya",
+      "meaning": "productivity",
+      "example": "زَادَتْ إِنْتَاجِيَّةٌ الْفَرِيقِ بَعْدَ التَّدْرِيبِ.",
+      "exampleMeaning": "The team's productivity increased after training."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "تَوَقَّفَ ___ بِسَبَبِ عُطْلٍ.",
+          "answer": "خَطُّ إِنْتَاجٍ",
+          "hint": "production line"
+        },
+        {
+          "sentence": "وَصَلَتْ ___ إِلَى الْمَخْزَنِ صَبَاحًا.",
+          "answer": "مَوَادُّ خَامٌ",
+          "hint": "raw materials"
+        },
+        {
+          "sentence": "يَحْدُثُ ___ نِهَائِيٌّ قَبْلَ الشَّحْنِ.",
+          "answer": "فَحْصٌ",
+          "hint": "inspection"
+        },
+        {
+          "sentence": "تَحْمِي ___ الْعُمَّالَ مِنَ الْحَوَادِثِ.",
+          "answer": "سَلَامَةٌ صِنَاعِيَّةٌ",
+          "hint": "industrial safety"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "What does ‘مَوَادُّ خَامٌ’ mean?",
+      "options": [
+        "raw materials",
+        "defect",
+        "factory",
+        "shipment"
+      ],
+      "answer": 0
+    }
+  ]
+}

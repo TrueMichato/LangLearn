@@ -1170,5 +1170,65 @@
     "order": 148,
     "wordCount": 16,
     "level": "beginner"
+  },
+  {
+    "id": "levantine-making-plans",
+    "title": "Levantine Making Plans & Invitations",
+    "order": 149,
+    "wordCount": 16,
+    "level": "beginner",
+    "dialect": "levantine"
+  },
+  {
+    "id": "iraqi-home-visits-tea",
+    "title": "Iraqi Home Visits & Tea",
+    "order": 150,
+    "wordCount": 16,
+    "level": "beginner",
+    "dialect": "iraqi"
+  },
+  {
+    "id": "maghrebi-complaints-problems",
+    "title": "Maghrebi Complaints & Problems",
+    "order": 151,
+    "wordCount": 16,
+    "level": "intermediate",
+    "dialect": "maghrebi"
+  },
+  {
+    "id": "egyptian-compliments-small-talk",
+    "title": "Egyptian Compliments & Small Talk",
+    "order": 152,
+    "wordCount": 16,
+    "level": "beginner",
+    "dialect": "egyptian"
+  },
+  {
+    "id": "artificial-intelligence-robotics",
+    "title": "Artificial Intelligence & Robotics",
+    "order": 153,
+    "wordCount": 16,
+    "level": "intermediate"
+  },
+  {
+    "id": "manufacturing-industry",
+    "title": "Manufacturing & Industry",
+    "order": 154,
+    "wordCount": 16,
+    "level": "intermediate"
+  },
+  {
+    "id": "insurance-risk",
+    "title": "Insurance & Risk",
+    "order": 155,
+    "wordCount": 16,
+    "level": "intermediate"
+  },
+  {
+    "id": "museums-archaeology",
+    "title": "Museums & Archaeology",
+    "order": 156,
+    "wordCount": 16,
+    "level": "intermediate"
   }
 ]
