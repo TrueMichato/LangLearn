@@ -586,5 +586,53 @@
     "title": "Interjections & the Vocative in Depth (yā, ayyuhā, wā)",
     "order": 98,
     "group": "🔢 Structure & Nuance"
+  },
+  {
+    "id": "balagha-basics",
+    "title": "Rhetoric Basics: Simile, Metaphor & Metonymy (tashbīh, istiʿāra, kināya)",
+    "order": 99,
+    "group": "🔢 Structure & Nuance"
+  },
+  {
+    "id": "emphasis-tawkid",
+    "title": "Emphasis (at-tawkīd): lexical & with inna/la-",
+    "order": 100,
+    "group": "🔢 Structure & Nuance"
+  },
+  {
+    "id": "restriction-qasr",
+    "title": "Restriction & Exclusivity (al-qaṣr: innamā, mā…illā)",
+    "order": 101,
+    "group": "🔢 Structure & Nuance"
+  },
+  {
+    "id": "conditional-answers",
+    "title": "Conditional Sentences: the Answer Clause (jawāb ash-sharṭ) & fa-",
+    "order": 102,
+    "group": "🔢 Structure & Nuance"
+  },
+  {
+    "id": "topic-comment",
+    "title": "Fronting for Emphasis (taqdīm & taʾkhīr)",
+    "order": 103,
+    "group": "🔢 Structure & Nuance"
+  },
+  {
+    "id": "iraab-practice",
+    "title": "Reading Case Endings in Practice (a guided iʿrāb walkthrough)",
+    "order": 104,
+    "group": "🔢 Structure & Nuance"
+  },
+  {
+    "id": "verbs-of-approach",
+    "title": "Verbs of Beginning & Approach (kāda, sharaʿa, jaʿala…)",
+    "order": 105,
+    "group": "🔤 Verbs"
+  },
+  {
+    "id": "dialect-object-pronouns",
+    "title": "Object & Possessive Suffixes Across Dialects",
+    "order": 106,
+    "group": "🗣️ Colloquial & Dialects"
   }
 ]

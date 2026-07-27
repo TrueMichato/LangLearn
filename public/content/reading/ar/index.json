@@ -626,6 +626,85 @@
         "education"
       ],
       "description": "A science text about astronomy, satellites, space exploration, and responsibility."
+    },
+    {
+      "id": "graded-a-day-at-the-beach",
+      "title": "يَوْمٌ على الشّاطِئ",
+      "titleEn": "A Day at the Beach (graded reader)",
+      "difficulty": "easy",
+      "wordCount": 72,
+      "tags": [
+        "daily-life",
+        "travel",
+        "graded-reader"
+      ],
+      "description": "A simple graded reader about a family day by the sea."
+    },
+    {
+      "id": "dialogue-at-the-doctor-2",
+      "title": "عِنْدَ الطَّبِيب: حِوار",
+      "titleEn": "At the Doctor (a dialogue)",
+      "difficulty": "easy",
+      "wordCount": 84,
+      "tags": [
+        "daily-life",
+        "conversation",
+        "dialogue",
+        "health"
+      ],
+      "description": "A beginner-friendly doctor visit dialogue about a sore throat and rest."
+    },
+    {
+      "id": "ramadan-and-eid",
+      "title": "رَمَضانُ والعِيد",
+      "titleEn": "Ramadan and Eid",
+      "difficulty": "medium",
+      "wordCount": 120,
+      "tags": [
+        "religion",
+        "culture",
+        "daily-life"
+      ],
+      "description": "A cultural overview of Ramadan routines, charity, family visits, and Eid al-Fitr."
+    },
+    {
+      "id": "the-souk-of-marrakech",
+      "title": "سُوقُ مَرّاكُش",
+      "titleEn": "The Souk of Marrakech",
+      "difficulty": "medium",
+      "wordCount": 124,
+      "tags": [
+        "travel",
+        "culture",
+        "daily-life"
+      ],
+      "description": "A sensory walk through Marrakech's old souk, crafts, bargaining, and city memory."
+    },
+    {
+      "id": "ibn-khaldun",
+      "title": "ابْنُ خَلْدُون ومُقَدِّمَتُه",
+      "titleEn": "Ibn Khaldun and His Muqaddima (history of the first sociologist)",
+      "difficulty": "hard",
+      "wordCount": 179,
+      "tags": [
+        "history",
+        "society",
+        "science"
+      ],
+      "description": "A factual history text about Ibn Khaldun, the Muqaddima, and early social analysis."
+    },
+    {
+      "id": "the-future-of-arabic",
+      "title": "مُسْتَقْبَلُ اللُّغةِ العَرَبِيّة",
+      "titleEn": "The Future of the Arabic Language",
+      "difficulty": "hard",
+      "wordCount": 173,
+      "tags": [
+        "language",
+        "society",
+        "science"
+      ],
+      "description": "An essay on Arabic in education, technology, AI, and everyday digital life."
     }
   ]
 }

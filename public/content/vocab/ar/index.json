@@ -814,5 +814,69 @@
     "wordCount": 16,
     "level": "advanced",
     "dialect": "msa"
+  },
+  {
+    "id": "restaurant-menu",
+    "title": "Reading a Restaurant Menu",
+    "order": 103,
+    "wordCount": 16,
+    "level": "intermediate",
+    "dialect": "msa"
+  },
+  {
+    "id": "airport-travel-2",
+    "title": "At the Airport & Border",
+    "order": 104,
+    "wordCount": 16,
+    "level": "intermediate",
+    "dialect": "msa"
+  },
+  {
+    "id": "weather-forecast",
+    "title": "The Weather Forecast",
+    "order": 105,
+    "wordCount": 16,
+    "level": "intermediate",
+    "dialect": "msa"
+  },
+  {
+    "id": "social-relationships",
+    "title": "Relationships & Social Life",
+    "order": 106,
+    "wordCount": 16,
+    "level": "intermediate",
+    "dialect": "msa"
+  },
+  {
+    "id": "shopping-bargaining",
+    "title": "Shopping & Bargaining",
+    "order": 107,
+    "wordCount": 16,
+    "level": "intermediate",
+    "dialect": "msa"
+  },
+  {
+    "id": "religion-culture-2",
+    "title": "Religion & Cultural Life",
+    "order": 108,
+    "wordCount": 16,
+    "level": "advanced",
+    "dialect": "msa"
+  },
+  {
+    "id": "egyptian-phrases-3",
+    "title": "More Egyptian Everyday Phrases",
+    "order": 109,
+    "wordCount": 16,
+    "level": "intermediate",
+    "dialect": "egyptian"
+  },
+  {
+    "id": "levantine-phrases-3",
+    "title": "More Levantine Everyday Phrases",
+    "order": 110,
+    "wordCount": 16,
+    "level": "intermediate",
+    "dialect": "levantine"
   }
 ]

@@ -142,4 +142,14 @@ export const arClozeSentences: ClozeSentence[] = [
   { id: 'ar-c105', target: 'كانَ المَشْرُوعُ مَدْعُومًا مِن الحُكُومة', english: 'The project was supported by the government', blankedWord: 'مَدْعُومًا', blankedReading: 'madʿūman', frequencyRank: 300, difficulty: 'advanced' },
   { id: 'ar-c106', target: 'المَدِينةُ مُزْدَحِمةٌ في ساعاتِ الذِّرْوة', english: 'The city is crowded during rush hours', blankedWord: 'مُزْدَحِمةٌ', blankedReading: 'muzdaḥima', frequencyRank: 300, difficulty: 'advanced' },
   { id: 'ar-c107', target: 'تُعْقَدُ الاجْتِماعاتُ كُلَّ يَوْمِ اثْنَيْن', english: 'The meetings are held every Monday', blankedWord: 'تُعْقَدُ', blankedReading: 'tuʿqadu', frequencyRank: 300, difficulty: 'advanced' },
+
+  // ── Batch 7 ──
+  { id: 'ar-c108', target: 'أُفَضِّلُ الطَّعامَ المَنْزِليَّ على المَطاعِم', english: 'I prefer home food to restaurants', blankedWord: 'أُفَضِّلُ', blankedReading: 'ufaḍḍilu', frequencyRank: 300, difficulty: 'beginner' },
+  { id: 'ar-c109', target: 'تَقَعُ مَدِينةُ مَرّاكُش في المَغْرِب', english: 'The city of Marrakech is in Morocco', blankedWord: 'مَرّاكُش', blankedReading: 'marrākush', frequencyRank: 300, difficulty: 'beginner' },
+  { id: 'ar-c110', target: 'يُذاعُ نَشْرةُ الأخْبارِ في الثّامِنة', english: 'The news bulletin is broadcast at eight', blankedWord: 'الأخْبارِ', blankedReading: 'al-akhbār', frequencyRank: 277, difficulty: 'intermediate' },
+  { id: 'ar-c111', target: 'أَشْعُرُ بِالبَرْدِ، أَغْلِقِ النّافِذة', english: 'I feel cold, close the window', blankedWord: 'أَغْلِقِ', blankedReading: 'aghliqi', frequencyRank: 196, difficulty: 'beginner' },
+  { id: 'ar-c112', target: 'يُعَدُّ ابْنُ خَلْدُونَ رائِدَ عِلْمِ الاجْتِماع', english: 'Ibn Khaldun is considered the pioneer of sociology', blankedWord: 'رائِدَ', blankedReading: 'rāʾid', frequencyRank: 300, difficulty: 'advanced' },
+  { id: 'ar-c113', target: 'المُساوَمةُ عادةٌ شائِعةٌ في الأسْواقِ القَدِيمة', english: 'Bargaining is a common custom in old markets', blankedWord: 'المُساوَمةُ', blankedReading: 'al-musāwama', frequencyRank: 300, difficulty: 'advanced' },
+  { id: 'ar-c114', target: 'تَتَغَيَّرُ اللُّغةُ مَع مُرُورِ الزَّمَن', english: 'Language changes with the passing of time', blankedWord: 'تَتَغَيَّرُ', blankedReading: 'tataghayyaru', frequencyRank: 300, difficulty: 'intermediate' },
+  { id: 'ar-c115', target: 'حَجَزْتُ غُرْفةً تُطِلُّ على البَحْر', english: 'I booked a room overlooking the sea', blankedWord: 'تُطِلُّ', blankedReading: 'tuṭillu', frequencyRank: 300, difficulty: 'intermediate' },
 ];

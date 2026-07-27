@@ -1,0 +1,183 @@
+{
+  "id": "levantine-phrases-3",
+  "words": [
+    {
+      "word": "شُو الْأَخْبَار؟",
+      "reading": "shū l-ʾakhbār?",
+      "meaning": "what is new? (Levantine; MSA: mā al-akhbār)",
+      "example": "شُو الْأَخْبَار؟ مَا شِفْنَاكْ مِنْ زَمَانْ.",
+      "exampleMeaning": "What is new? We have not seen you for a long time."
+    },
+    {
+      "word": "كِيفَك؟",
+      "reading": "kēfak?",
+      "meaning": "how are you? (Levantine)",
+      "example": "كِيفَك؟ إِنْ شَاءَ اللّٰهُ تَمَامْ.",
+      "exampleMeaning": "How are you? I hope everything is fine."
+    },
+    {
+      "word": "مْنِيح",
+      "reading": "mniḥ",
+      "meaning": "good / fine (Levantine)",
+      "example": "أَنَا مْنِيح، شُكْرًا عَلَى سُؤَالَكْ.",
+      "exampleMeaning": "I am fine, thank you for asking."
+    },
+    {
+      "word": "يَعْطِيك الْعَافْيِة",
+      "reading": "yaʿṭīk il-ʿāfye",
+      "meaning": "bless you / thanks for your effort (Levantine)",
+      "example": "يَعْطِيك الْعَافْيِة عَلَى الشُّغْلْ.",
+      "exampleMeaning": "Bless you for the work."
+    },
+    {
+      "word": "صَحْتَيْن",
+      "reading": "ṣaḥtēn",
+      "meaning": "bon appétit / to your health (Levantine)",
+      "example": "صَحْتَيْن، الْأَكْلْ طَالِعْ زَاكِي.",
+      "exampleMeaning": "Bon appétit; the food turned out tasty."
+    },
+    {
+      "word": "بْتِقْدَر؟",
+      "reading": "btiʾdar?",
+      "meaning": "can you? (Levantine)",
+      "example": "بْتِقْدَر تِبْعَتْلِي الْعُنْوَانْ؟",
+      "exampleMeaning": "Can you send me the address?"
+    },
+    {
+      "word": "مَا فِي مُشْكِلِة",
+      "reading": "mā fī mushkile",
+      "meaning": "no problem (Levantine)",
+      "example": "مَا فِي مُشْكِلِة، بِنِتْلَاقَى بُكْرَا.",
+      "exampleMeaning": "No problem; we will meet tomorrow."
+    },
+    {
+      "word": "خَلِّيك مَعِي",
+      "reading": "khallīk maʿī",
+      "meaning": "stay with me / stay on the line (Levantine)",
+      "example": "خَلِّيك مَعِي لَحَظَة، الطَّرِيقْ طَوِيلْ.",
+      "exampleMeaning": "Stay with me for a moment; the road is long."
+    },
+    {
+      "word": "هَلَّق",
+      "reading": "hallaʾ",
+      "meaning": "now (Levantine; MSA: al-ʾān)",
+      "example": "هَلَّق بَدْنَا نِطْلَعْ عَلَى الْبَيْتْ.",
+      "exampleMeaning": "Now we want to go home."
+    },
+    {
+      "word": "لِسَّاتُه",
+      "reading": "lissātu",
+      "meaning": "still / not yet (Levantine)",
+      "example": "لِسَّاتُه الْمَحَلّ مَفْتُوحْ.",
+      "exampleMeaning": "The shop is still open."
+    },
+    {
+      "word": "مِشْ مَعْقُول",
+      "reading": "mish maʿʾūl",
+      "meaning": "unbelievable / no way (Levantine)",
+      "example": "مِشْ مَعْقُول كُلّ هَالزَّحْمَة الْيَوْمْ!",
+      "exampleMeaning": "This much traffic today is unbelievable!"
+    },
+    {
+      "word": "طَوِّل بَالَك",
+      "reading": "ṭawwil bālak",
+      "meaning": "be patient (Levantine)",
+      "example": "طَوِّل بَالَك، الدَّوْرْ قَرِيبْ.",
+      "exampleMeaning": "Be patient; the turn is close."
+    },
+    {
+      "word": "عَ رَاحْتَك",
+      "reading": "ʿa rāḥtak",
+      "meaning": "take your time (Levantine)",
+      "example": "عَ رَاحْتَك، مَا فِي عَجَلَة.",
+      "exampleMeaning": "Take your time; there is no hurry."
+    },
+    {
+      "word": "شُو رَأْيَك؟",
+      "reading": "shū raʾyak?",
+      "meaning": "what do you think? (Levantine)",
+      "example": "شُو رَأْيَك بِهَالْفِكْرَة؟",
+      "exampleMeaning": "What do you think of this idea?"
+    },
+    {
+      "word": "زَبَطْنَا",
+      "reading": "zabaṭnā",
+      "meaning": "we sorted it out / all set (Levantine)",
+      "example": "زَبَطْنَا الْمَوْعِدْ وَالْحَجْزْ.",
+      "exampleMeaning": "We sorted out the appointment and the reservation."
+    },
+    {
+      "word": "بُكْرَا",
+      "reading": "bukra",
+      "meaning": "tomorrow (Levantine; MSA: ghadan)",
+      "example": "بُكْرَا مَنْرُوحْ عَ السُّوقْ بَدْرِي.",
+      "exampleMeaning": "Tomorrow we will go to the market early."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "___ مَا شِفْنَاكْ مِنْ زَمَانْ.",
+          "answer": "شُو الْأَخْبَار؟",
+          "hint": "what is new?"
+        },
+        {
+          "sentence": "___ إِنْ شَاءَ اللّٰهُ تَمَامْ.",
+          "answer": "كِيفَك؟",
+          "hint": "how are you?"
+        },
+        {
+          "sentence": "أَنَا ___، شُكْرًا عَلَى سُؤَالَكْ.",
+          "answer": "مْنِيح",
+          "hint": "good / fine"
+        },
+        {
+          "sentence": "___ عَلَى الشُّغْلْ.",
+          "answer": "يَعْطِيك الْعَافْيِة",
+          "hint": "bless you / thanks for your effort"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "items": [
+        {
+          "question": "What does ‘شُو الْأَخْبَار؟’ mean?",
+          "options": [
+            "how are you? (Levantine)",
+            "what is new? (Levantine; MSA: mā al-akhbār)",
+            "good / fine (Levantine)",
+            "bless you / thanks for your effort (Levantine)"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What does ‘كِيفَك؟’ mean?",
+          "options": [
+            "what is new? (Levantine; MSA: mā al-akhbār)",
+            "how are you? (Levantine)",
+            "good / fine (Levantine)",
+            "bless you / thanks for your effort (Levantine)"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What does ‘مْنِيح’ mean?",
+          "options": [
+            "what is new? (Levantine; MSA: mā al-akhbār)",
+            "good / fine (Levantine)",
+            "how are you? (Levantine)",
+            "bless you / thanks for your effort (Levantine)"
+          ],
+          "answer": 1
+        }
+      ]
+    }
+  ]
+}
