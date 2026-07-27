@@ -288,6 +288,30 @@
         "fairy-tale"
       ],
       "description": "A short retelling of Ion Creangă’s beloved folk tale about a clever rooster."
+    },
+    {
+      "id": "vulpea-si-strugurii",
+      "title": "Vulpea și strugurii",
+      "titleEn": "The Fox and the Grapes",
+      "difficulty": "easy",
+      "wordCount": 96,
+      "tags": [
+        "literature",
+        "fable"
+      ],
+      "description": "The classic Aesop fable retold in simple Romanian, with its well-known moral."
+    },
+    {
+      "id": "ursul-pacalit-de-vulpe",
+      "title": "Ursul păcălit de vulpe",
+      "titleEn": "The Bear Fooled by the Fox",
+      "difficulty": "medium",
+      "wordCount": 130,
+      "tags": [
+        "literature",
+        "fairy-tale"
+      ],
+      "description": "A retelling of Ion Creangă’s humorous tale explaining why bears have short tails."
     }
   ]
 }
