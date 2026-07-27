@@ -110,7 +110,7 @@ export const arClozeSentences: ClozeSentence[] = [
   { id: 'ar-c081', target: 'يُعَدُّ نَهْرُ النِّيلِ أَطْوَلَ أَنْهارِ العالَم', english: 'The Nile is considered the longest river in the world', blankedWord: 'أَطْوَلَ', blankedReading: 'aṭwal', frequencyRank: 300, difficulty: 'advanced' },
   { id: 'ar-c082', target: 'أَسْهَمَت الحَضارةُ العَرَبِيّةُ في تَقَدُّمِ العِلْم', english: 'Arab civilization contributed to the advance of science', blankedWord: 'الحَضارةُ', blankedReading: 'al-ḥaḍāra', frequencyRank: 273, difficulty: 'advanced' },
   { id: 'ar-c083', target: 'تُواجِهُ المِنْطَقةُ تَحَدِّياتٍ مُناخيّةً كَبِيرة', english: 'The region faces major climate challenges', blankedWord: 'تُواجِهُ', blankedReading: 'tuwājihu', frequencyRank: 300, difficulty: 'advanced' },
-  { id: 'ar-c084', target: 'مِن واجِبِنا أن نَنْقُلَ التُّراثَ لِلأجْيال', english: 'It is our duty to pass on heritage to the generations', blankedWord: 'الأجْيال', blankedReading: 'al-ajyāl', frequencyRank: 300, difficulty: 'advanced' },
+  { id: 'ar-c084', target: 'مِن واجِبِنا أن نَنْقُلَ التُّراثَ لِلأجْيال', english: 'It is our duty to pass on heritage to the generations', blankedWord: 'لِلأجْيال', blankedReading: 'li-l-ajyāl', frequencyRank: 300, difficulty: 'advanced' },
   { id: 'ar-c085', target: 'كُلَّما زادَ العِلْمُ، اتَّسَعَت المَسْؤُوليّة', english: 'The more knowledge grows, the greater the responsibility', blankedWord: 'اتَّسَعَت', blankedReading: 'ittasaʿat', frequencyRank: 300, difficulty: 'advanced' },
 
   // ── Beginner (batch 5) ──
@@ -168,4 +168,21 @@ export const arClozeSentences: ClozeSentence[] = [
   { id: 'ar-c125', target: 'تَشْتَهِرُ الواحةُ بِنَخِيلِها', english: 'The oasis is famous for its palm trees', blankedWord: 'الواحةُ', blankedReading: 'al-wāḥa', frequencyRank: 300, difficulty: 'intermediate' },
   { id: 'ar-c126', target: 'يُعَدُّ الخُوارِزْميُّ أبا الجَبْر', english: 'Al-Khwarizmi is regarded as the father of algebra', blankedWord: 'الجَبْر', blankedReading: 'al-jabr', frequencyRank: 300, difficulty: 'advanced' },
   { id: 'ar-c127', target: 'قال إنَّه لا يُمْكِنُه الحُضُور', english: 'He said that he could not attend', blankedWord: 'يُمْكِنُه', blankedReading: 'yumkinuhu', frequencyRank: 250, difficulty: 'advanced' },
+
+  // ── Batch 5 ──
+  { id: 'ar-c128', target: 'القِطّة تَشْرَبُ الحَلِيب', english: 'The cat drinks the milk', blankedWord: 'الحَلِيب', blankedReading: 'al-ḥalīb', frequencyRank: 300, difficulty: 'beginner' },
+  { id: 'ar-c129', target: 'الشَّمْس مُشْرِقة اليَوْم', english: 'The sun is shining today', blankedWord: 'الشَّمْس', blankedReading: 'ash-shams', frequencyRank: 120, difficulty: 'beginner' },
+  { id: 'ar-c130', target: 'نَأْكُلُ في المَطْعَم', english: 'We eat at the restaurant', blankedWord: 'المَطْعَم', blankedReading: 'al-maṭʿam', frequencyRank: 210, difficulty: 'beginner' },
+  { id: 'ar-c131', target: 'هذا قَلَمي الجَدِيد', english: 'This is my new pen', blankedWord: 'قَلَمي', blankedReading: 'qalamī', frequencyRank: 240, difficulty: 'beginner' },
+  { id: 'ar-c132', target: 'أنا مُتْعَب قَلِيلًا', english: 'I am a little tired', blankedWord: 'مُتْعَب', blankedReading: 'mutʿab', frequencyRank: 260, difficulty: 'beginner' },
+  { id: 'ar-c133', target: 'يَجِبُ أن نَدْرُسَ كُلَّ يَوْم', english: 'We must study every day', blankedWord: 'نَدْرُسَ', blankedReading: 'nadrusa', frequencyRank: 175, difficulty: 'intermediate' },
+  { id: 'ar-c134', target: 'سافَرْتُ إلى المَغْرِب العام الماضي', english: 'I traveled to Morocco last year', blankedWord: 'سافَرْتُ', blankedReading: 'sāfartu', frequencyRank: 205, difficulty: 'intermediate' },
+  { id: 'ar-c135', target: 'الطَّعام لَذِيذ رَغْمَ بَساطَتِه', english: 'The food is delicious despite its simplicity', blankedWord: 'رَغْمَ', blankedReading: 'raghma', frequencyRank: 160, difficulty: 'intermediate' },
+  { id: 'ar-c136', target: 'أشْعُرُ بِالسَّعادة عِنْدَما أقْرَأ', english: 'I feel happy when I read', blankedWord: 'عِنْدَما', blankedReading: 'ʿindamā', frequencyRank: 140, difficulty: 'intermediate' },
+  { id: 'ar-c137', target: 'اِشْتَرَيْتُ هَدِيّة لِصَدِيقي', english: 'I bought a gift for my friend', blankedWord: 'هَدِيّة', blankedReading: 'hadiyya', frequencyRank: 230, difficulty: 'intermediate' },
+  { id: 'ar-c138', target: 'لَوْلا الماء لَما كانَتِ الحَياة', english: 'Were it not for water, there would be no life', blankedWord: 'لَوْلا', blankedReading: 'lawlā', frequencyRank: 320, difficulty: 'advanced' },
+  { id: 'ar-c139', target: 'كُلَّما اجْتَهَدْتَ ازْدادَ نَجاحُك', english: 'The more you strive, the more your success increases', blankedWord: 'كُلَّما', blankedReading: 'kullamā', frequencyRank: 300, difficulty: 'advanced' },
+  { id: 'ar-c140', target: 'يُعَدُّ التَّعَلُّم عَمَلِيّةً مُسْتَمِرّة', english: 'Learning is considered a continuous process', blankedWord: 'مُسْتَمِرّة', blankedReading: 'mustamirra', frequencyRank: 400, difficulty: 'advanced' },
+  { id: 'ar-c141', target: 'رَغْمَ الصُّعُوبات واصَلَ السَّعْيَ نَحْوَ هَدَفِه', english: 'Despite difficulties, he continued striving toward his goal', blankedWord: 'واصَلَ', blankedReading: 'wāṣala', frequencyRank: 380, difficulty: 'advanced' },
+  { id: 'ar-c142', target: 'إنَّ الصَّبْرَ مِفْتاحُ الفَرَج', english: 'Indeed, patience is the key to relief', blankedWord: 'الصَّبْرَ', blankedReading: 'aṣ-ṣabra', frequencyRank: 350, difficulty: 'advanced' },
 ];
