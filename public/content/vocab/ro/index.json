@@ -285,5 +285,12 @@
     "order": 41,
     "wordCount": 16,
     "level": "beginner"
+  },
+  {
+    "id": "survival-phrases",
+    "title": "Survival & Travel Phrases",
+    "order": 42,
+    "wordCount": 18,
+    "level": "beginner"
   }
 ]
