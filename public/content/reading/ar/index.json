@@ -783,6 +783,71 @@
         "science"
       ],
       "description": "An opinion essay on skills, technology, equity, and the human role of teachers."
+    },
+    {
+      "id": "graded-the-farmer",
+      "title": "الفَلّاحُ وأرْضُه",
+      "titleEn": "The Farmer and His Land (graded reader)",
+      "difficulty": "easy",
+      "wordCount": 76,
+      "tags": [
+        "daily-life",
+        "graded-reader",
+        "nature"
+      ],
+      "description": "A simple graded reader about a patient farmer, his field, and daily work."
+    },
+    {
+      "id": "dialogue-phone-booking",
+      "title": "حَجْزٌ بِالهاتِف",
+      "titleEn": "Booking by Phone (dialogue)",
+      "difficulty": "easy",
+      "wordCount": 80,
+      "tags": [
+        "daily-life",
+        "conversation",
+        "dialogue"
+      ],
+      "description": "A practical hotel phone-booking dialogue with room, breakfast, and arrival details."
+    },
+    {
+      "id": "festivals-and-celebrations",
+      "title": "الأعْيادُ والاحْتِفالات",
+      "titleEn": "Festivals & Celebrations",
+      "difficulty": "medium",
+      "wordCount": 120,
+      "tags": [
+        "culture",
+        "society",
+        "daily-life"
+      ],
+      "description": "A cultural reflection on family visits, weddings, memory, and changing celebrations."
+    },
+    {
+      "id": "the-oasis",
+      "title": "الواحة",
+      "titleEn": "The Oasis",
+      "difficulty": "medium",
+      "wordCount": 124,
+      "tags": [
+        "nature",
+        "culture",
+        "history"
+      ],
+      "description": "A descriptive text about oasis life, trade routes, water sharing, and desert resilience."
+    },
+    {
+      "id": "great-arab-scientists",
+      "title": "عُلَماءُ العَرَبِ العِظام",
+      "titleEn": "Great Arab Scientists",
+      "difficulty": "hard",
+      "wordCount": 174,
+      "tags": [
+        "history",
+        "science",
+        "culture"
+      ],
+      "description": "A factual overview of al-Khwarizmi, Ibn Sina, al-Razi, and the scholarly culture around them."
     }
   ]
 }

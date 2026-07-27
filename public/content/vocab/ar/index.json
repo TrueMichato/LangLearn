@@ -942,5 +942,53 @@
     "wordCount": 16,
     "level": "intermediate",
     "dialect": "maghrebi"
+  },
+  {
+    "id": "feelings-reactions",
+    "title": "Reactions & Interjections",
+    "order": 119,
+    "wordCount": 16,
+    "level": "beginner",
+    "dialect": "msa"
+  },
+  {
+    "id": "daily-routine-verbs",
+    "title": "Daily-Routine Verbs",
+    "order": 120,
+    "wordCount": 16,
+    "level": "beginner",
+    "dialect": "msa"
+  },
+  {
+    "id": "describing-places",
+    "title": "Describing Places & Buildings",
+    "order": 121,
+    "wordCount": 16,
+    "level": "intermediate",
+    "dialect": "msa"
+  },
+  {
+    "id": "iraqi-phrases-2",
+    "title": "More Iraqi Everyday Phrases",
+    "order": 122,
+    "wordCount": 16,
+    "level": "intermediate",
+    "dialect": "iraqi"
+  },
+  {
+    "id": "egyptian-food-phrases",
+    "title": "Egyptian Food & Café Talk",
+    "order": 123,
+    "wordCount": 16,
+    "level": "intermediate",
+    "dialect": "egyptian"
+  },
+  {
+    "id": "levantine-daily-phrases",
+    "title": "Levantine Daily-Life Phrases",
+    "order": 124,
+    "wordCount": 16,
+    "level": "intermediate",
+    "dialect": "levantine"
   }
 ]

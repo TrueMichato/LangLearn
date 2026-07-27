@@ -160,4 +160,12 @@ export const arClozeSentences: ClozeSentence[] = [
   { id: 'ar-c119', target: 'لن أَنْسى مَعْرُوفَك أبَدًا', english: 'I will never forget your kindness', blankedWord: 'أَنْسى', blankedReading: 'ansā', frequencyRank: 173, difficulty: 'intermediate' },
   { id: 'ar-c120', target: 'لم يَقُلْ لي الحَقِيقةَ كامِلة', english: 'He did not tell me the whole truth', blankedWord: 'يَقُلْ', blankedReading: 'yaqul', frequencyRank: 25, difficulty: 'advanced' },
   { id: 'ar-c121', target: 'اِجْتَهِدْ كَي تَنالَ ما تُرِيد', english: 'Work hard so that you get what you want', blankedWord: 'تَنالَ', blankedReading: 'tanāla', frequencyRank: 300, difficulty: 'advanced' },
+
+  // ── Batch 9 ──
+  { id: 'ar-c122', target: 'المِفْتاحُ فَوْقَ الطّاوِلة', english: 'The key is on top of the table', blankedWord: 'فَوْقَ', blankedReading: 'fawqa', frequencyRank: 300, difficulty: 'beginner' },
+  { id: 'ar-c123', target: 'أَسْتَطِيعُ أن أَتَكَلَّمَ ثَلاثَ لُغات', english: 'I can speak three languages', blankedWord: 'أَسْتَطِيعُ', blankedReading: 'astaṭīʿu', frequencyRank: 191, difficulty: 'intermediate' },
+  { id: 'ar-c124', target: 'يَجِبُ أن تَحْجِزَ المَوْعِدَ بِالهاتِف', english: 'You must book the appointment by phone', blankedWord: 'تَحْجِزَ', blankedReading: 'taḥjiza', frequencyRank: 300, difficulty: 'intermediate' },
+  { id: 'ar-c125', target: 'تَشْتَهِرُ الواحةُ بِنَخِيلِها', english: 'The oasis is famous for its palm trees', blankedWord: 'الواحةُ', blankedReading: 'al-wāḥa', frequencyRank: 300, difficulty: 'intermediate' },
+  { id: 'ar-c126', target: 'يُعَدُّ الخُوارِزْميُّ أبا الجَبْر', english: 'Al-Khwarizmi is regarded as the father of algebra', blankedWord: 'الجَبْر', blankedReading: 'al-jabr', frequencyRank: 300, difficulty: 'advanced' },
+  { id: 'ar-c127', target: 'قال إنَّه لا يُمْكِنُه الحُضُور', english: 'He said that he could not attend', blankedWord: 'يُمْكِنُه', blankedReading: 'yumkinuhu', frequencyRank: 250, difficulty: 'advanced' },
 ];

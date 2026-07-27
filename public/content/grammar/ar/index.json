@@ -682,5 +682,41 @@
     "title": "Question Words Across Dialects (ēh, shū, wēn, laysh…)",
     "order": 114,
     "group": "🗣️ Colloquial & Dialects"
+  },
+  {
+    "id": "compound-prepositions",
+    "title": "Compound & Locative Prepositions (fawqa, taḥta, amāma, bayna…)",
+    "order": 115,
+    "group": "🔢 Structure & Nuance"
+  },
+  {
+    "id": "expressing-ability",
+    "title": "Expressing Ability, Permission & Obligation (yastaṭīʿu, yajibu, yumkinu, lā budda)",
+    "order": 116,
+    "group": "🔢 Structure & Nuance"
+  },
+  {
+    "id": "reported-speech",
+    "title": "Reported Speech & Quoting (qāla inna…)",
+    "order": 117,
+    "group": "🔢 Structure & Nuance"
+  },
+  {
+    "id": "comparison-similes-2",
+    "title": "Likening & Comparison Structures (ka-, mithl, ka-anna)",
+    "order": 118,
+    "group": "🔢 Structure & Nuance"
+  },
+  {
+    "id": "verb-noun-agreement",
+    "title": "Verb–Subject Agreement & Word-Order Effects",
+    "order": 119,
+    "group": "🔤 Verbs"
+  },
+  {
+    "id": "dialect-verb-conjugation",
+    "title": "How Dialect Verbs Conjugate (bi-/ʿam prefixes, dropped case endings)",
+    "order": 120,
+    "group": "🗣️ Colloquial & Dialects"
   }
 ]

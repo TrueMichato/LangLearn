@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { useSettingsStore } from '../stores/settingsStore';
 import { getLessonProgress } from '../db/lessons';
 import { getLanguageLabel } from '../lib/languages';
+import { getDialectInfo } from '../lib/arabic-dialects';
 import VocabLessonView from '../components/vocab/VocabLessonView';
 import type { VocabLessonMeta } from '../types/vocab';
 import type { LessonProgress } from '../db/schema';
@@ -11,6 +12,8 @@ import { SkeletonList } from '../components/common/Skeleton';
 export default function VocabLessons() {
   const navigate = useNavigate();
   const activeLanguages = useSettingsStore((s) => s.activeLanguages);
+  const arabicDialect = useSettingsStore((s) => s.arabicDialect);
+  const arabicColloquialFocus = useSettingsStore((s) => s.arabicColloquialFocus);
   const [selectedLang, setSelectedLang] = useState(activeLanguages[0] ?? 'ja');
   const [lessons, setLessons] = useState<VocabLessonMeta[]>([]);
   const [loading, setLoading] = useState(true);
@@ -80,6 +83,33 @@ export default function VocabLessons() {
     advanced: 'bg-red-100 dark:bg-red-900/30 text-red-700 dark:text-red-300',
   };
 
+  // ── Arabic dialect overlay ──────────────────────────────
+  // MSA is the shared core (always shown). A dialect-tagged lesson is shown
+  // only when it matches the learner's chosen dialect (or is pan-dialectal
+  // "all"). "Colloquial focus" surfaces those colloquial lessons first.
+  const isArabic = selectedLang === 'ar';
+  const isColloquial = (l: VocabLessonMeta) =>
+    !!l.dialect && l.dialect !== 'msa' && l.dialect !== 'standard';
+  const dialectMatches = (l: VocabLessonMeta) => {
+    if (!isArabic) return true;
+    const d = l.dialect;
+    if (!d || d === 'msa' || d === 'standard' || d === 'all') return true;
+    return d === arabicDialect;
+  };
+  const hiddenDialectCount = isArabic
+    ? lessons.filter((l) => isColloquial(l) && l.dialect !== 'all' && l.dialect !== arabicDialect).length
+    : 0;
+  const visibleLessons = lessons
+    .filter(dialectMatches)
+    .sort((a, b) => {
+      if (isArabic && arabicColloquialFocus) {
+        const ca = isColloquial(a) ? 0 : 1;
+        const cb = isColloquial(b) ? 0 : 1;
+        if (ca !== cb) return ca - cb;
+      }
+      return a.order - b.order;
+    });
+
   return (
     <div>
       {!activeLessonId && (
@@ -122,16 +152,41 @@ export default function VocabLessons() {
         </p>
       ) : (
         <>
+          {/* Arabic dialect overlay banner */}
+          {isArabic && (
+            <div className="mb-4 rounded-2xl bg-indigo-50 dark:bg-indigo-950/40 border border-indigo-200 dark:border-indigo-800 p-3 flex items-start gap-2">
+              <span className="text-lg leading-none" aria-hidden="true">🗣️</span>
+              <div className="min-w-0">
+                <p className="text-sm text-indigo-900 dark:text-indigo-200">
+                  Showing <span className="font-semibold">Modern Standard Arabic</span>
+                  {arabicDialect !== 'msa' && (
+                    <> + <span className="font-semibold">{getDialectInfo(arabicDialect)?.name ?? arabicDialect}</span> {getDialectInfo(arabicDialect)?.flag}</>
+                  )}
+                  {arabicColloquialFocus && arabicDialect !== 'msa' && ' — colloquial first'}.
+                  {hiddenDialectCount > 0 && (
+                    <span className="text-indigo-700/80 dark:text-indigo-300/80"> {hiddenDialectCount} other-dialect lesson{hiddenDialectCount !== 1 ? 's' : ''} hidden.</span>
+                  )}
+                </p>
+                <button
+                  onClick={() => navigate('/settings')}
+                  className="text-xs font-medium text-indigo-600 dark:text-indigo-400 hover:underline mt-0.5 min-h-[32px]"
+                >
+                  Change dialect in Settings →
+                </button>
+              </div>
+            </div>
+          )}
+
           {/* Progress summary */}
           {(() => {
-            const completedCount = lessons.filter(
+            const completedCount = visibleLessons.filter(
               (l) => progress.get(`vocab/${l.id}`)?.completed,
             ).length;
-            const pct = Math.round((completedCount / lessons.length) * 100);
+            const pct = visibleLessons.length ? Math.round((completedCount / visibleLessons.length) * 100) : 0;
             return (
               <div className="mb-4 rounded-2xl bg-white dark:bg-slate-800 shadow p-4">
                 <p className="text-sm font-medium text-slate-700 dark:text-slate-200 mb-2">
-                  {completedCount}/{lessons.length} lessons completed
+                  {completedCount}/{visibleLessons.length} lessons completed
                 </p>
                 <div className="w-full h-2 rounded-full bg-slate-200 dark:bg-slate-700 overflow-hidden">
                   <div
@@ -144,12 +199,16 @@ export default function VocabLessons() {
           })()}
 
           <div className="space-y-3">
-            {lessons.map((lesson) => {
+            {visibleLessons.map((lesson, idx) => {
               const lp = progress.get(`vocab/${lesson.id}`);
-              const prevLesson = lessons.find((l) => l.order === lesson.order - 1);
+              // Lock relative to the visible (dialect-filtered, colloquial-sorted) list
+              const prevLesson = idx > 0 ? visibleLessons[idx - 1] : null;
               const isLocked =
-                lesson.order > 1 &&
-                !progress.get(`vocab/${prevLesson?.id ?? ''}`)?.completed;
+                prevLesson != null &&
+                !progress.get(`vocab/${prevLesson.id}`)?.completed;
+              const dInfo = isColloquial(lesson)
+                ? (lesson.dialect === 'all' ? { flag: '🗣️', name: 'Colloquial' } : getDialectInfo(lesson.dialect!))
+                : null;
 
               return (
                 <button
@@ -176,6 +235,11 @@ export default function VocabLessons() {
                         >
                           {lesson.level}
                         </span>
+                        {dInfo && (
+                          <span className="text-xs px-2 py-0.5 rounded-full font-medium bg-violet-100 dark:bg-violet-900/40 text-violet-700 dark:text-violet-300">
+                            {dInfo.flag} {dInfo.name}
+                          </span>
+                        )}
                       </div>
                     </div>
                     <div className="flex items-center gap-2 shrink-0 ml-2">

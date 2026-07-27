@@ -1,0 +1,183 @@
+{
+  "id": "levantine-daily-phrases",
+  "words": [
+    {
+      "word": "كِيفَك؟",
+      "reading": "kīfak?",
+      "meaning": "how are you? to a man (Levantine; MSA: kayfa ḥāluka?)",
+      "example": "كِيفَك؟ إِنْ شَاءَ الله مْنِيح.",
+      "exampleMeaning": "How are you? Hopefully fine."
+    },
+    {
+      "word": "شُو؟",
+      "reading": "shū?",
+      "meaning": "what? (Levantine; MSA: mādhā?)",
+      "example": "شُو بَدَّكْ تِشْرَبْ؟",
+      "exampleMeaning": "What do you want to drink?"
+    },
+    {
+      "word": "لِيش؟",
+      "reading": "lēsh?",
+      "meaning": "why? (Levantine; MSA: limādhā?)",
+      "example": "لِيشْ السُّوقْ مْسَكَّرْ؟",
+      "exampleMeaning": "Why is the market closed?"
+    },
+    {
+      "word": "هَلَّق",
+      "reading": "hallaʾ",
+      "meaning": "now (Levantine; MSA: al-ʾāna)",
+      "example": "هَلَّق رَايِحْ عَالشُّغُلْ.",
+      "exampleMeaning": "Now I am going to work."
+    },
+    {
+      "word": "بُكْرَا",
+      "reading": "bukra",
+      "meaning": "tomorrow (Levantine; MSA: ghadan)",
+      "example": "بُكْرَا عِنْدِي مَوْعِدْ.",
+      "exampleMeaning": "Tomorrow I have an appointment."
+    },
+    {
+      "word": "مْنِيح",
+      "reading": "mnīḥ",
+      "meaning": "good / fine (Levantine; MSA: jayyid)",
+      "example": "الْوَضْعْ مْنِيحْ الْيَوْمْ.",
+      "exampleMeaning": "The situation is fine today."
+    },
+    {
+      "word": "فِي",
+      "reading": "fī",
+      "meaning": "there is / there are (Levantine; MSA: yūjadu)",
+      "example": "فِي مَحَلّْ قَرِيبْ مِنْ هُونْ.",
+      "exampleMeaning": "There is a shop near here."
+    },
+    {
+      "word": "مَا فِي",
+      "reading": "mā fī",
+      "meaning": "there is not / there are not (Levantine; MSA: lā yūjadu)",
+      "example": "مَا فِي وَقْتْ كِتِيرْ.",
+      "exampleMeaning": "There is not much time."
+    },
+    {
+      "word": "بَدِّي",
+      "reading": "baddī",
+      "meaning": "I want (Levantine; MSA: urīdu)",
+      "example": "بَدِّي قَهْوَة مِنْ فَضْلَك.",
+      "exampleMeaning": "I want coffee, please."
+    },
+    {
+      "word": "مَا بَدِّي",
+      "reading": "mā baddī",
+      "meaning": "I do not want (Levantine; MSA: lā urīdu)",
+      "example": "مَا بَدِّي أَتْأَخَّرْ.",
+      "exampleMeaning": "I do not want to be late."
+    },
+    {
+      "word": "عَنْ جَدّ؟",
+      "reading": "ʿan jadd?",
+      "meaning": "really? (Levantine; MSA: ḥaqqan?)",
+      "example": "عَنْ جَدّ؟ الْخَبَرْ صَحِيحْ؟",
+      "exampleMeaning": "Really? Is the news true?"
+    },
+    {
+      "word": "مَعْلِش",
+      "reading": "maʿlish",
+      "meaning": "it's okay / never mind (Levantine; MSA: lā baʾs)",
+      "example": "مَعْلِش، بِنْجَرِّبْ مَرَّة تَانْيَة.",
+      "exampleMeaning": "It's okay; we will try another time."
+    },
+    {
+      "word": "يِسْلَمُو",
+      "reading": "yislamu",
+      "meaning": "thanks / bless your hands (Levantine; MSA: shukran)",
+      "example": "يِسْلَمُو عَلَى الْمُسَاعَدَة.",
+      "exampleMeaning": "Thanks for the help."
+    },
+    {
+      "word": "خَلِّينَا",
+      "reading": "khallīnā",
+      "meaning": "let's (Levantine; MSA: daʿnā)",
+      "example": "خَلِّينَا نِطْلَعْ بَكِّيرْ.",
+      "exampleMeaning": "Let's leave early."
+    },
+    {
+      "word": "عَالسَّرِيع",
+      "reading": "ʿa-s-sarīʿ",
+      "meaning": "quickly / real quick (Levantine; MSA: bisurʿa)",
+      "example": "نِحْكِي عَالسَّرِيع قَبْلَ الدَّرْسْ.",
+      "exampleMeaning": "We will talk quickly before the lesson."
+    },
+    {
+      "word": "مِشْوَار",
+      "reading": "mishwār",
+      "meaning": "errand / short trip (Levantine; MSA: mishwār / riḥla qaṣīra)",
+      "example": "عِنْدِي مِشْوَار بَعْدَ الظُّهْرْ.",
+      "exampleMeaning": "I have an errand after noon."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "___ إِنْ شَاءَ الله مْنِيح.",
+          "answer": "كِيفَك؟",
+          "hint": "how are you? to a man (Levantine; MSA: kayfa ḥāluka?)"
+        },
+        {
+          "sentence": "___ بَدَّكْ تِشْرَبْ؟",
+          "answer": "شُو؟",
+          "hint": "what? (Levantine; MSA: mādhā?)"
+        },
+        {
+          "sentence": "___ السُّوقْ مْسَكَّرْ؟",
+          "answer": "لِيش؟",
+          "hint": "why? (Levantine; MSA: limādhā?)"
+        },
+        {
+          "sentence": "___ رَايِحْ عَالشُّغُلْ.",
+          "answer": "هَلَّق",
+          "hint": "now (Levantine; MSA: al-ʾāna)"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "items": [
+        {
+          "question": "What does ‘كِيفَك؟’ mean?",
+          "options": [
+            "what? (Levantine; MSA: mādhā?)",
+            "how are you? to a man (Levantine; MSA: kayfa ḥāluka?)",
+            "why? (Levantine; MSA: limādhā?)",
+            "now (Levantine; MSA: al-ʾāna)"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What does ‘شُو؟’ mean?",
+          "options": [
+            "tomorrow (Levantine; MSA: ghadan)",
+            "what? (Levantine; MSA: mādhā?)",
+            "good / fine (Levantine; MSA: jayyid)",
+            "there is / there are (Levantine; MSA: yūjadu)"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What does ‘لِيش؟’ mean?",
+          "options": [
+            "now (Levantine; MSA: al-ʾāna)",
+            "why? (Levantine; MSA: limādhā?)",
+            "I want (Levantine; MSA: urīdu)",
+            "really? (Levantine; MSA: ḥaqqan?)"
+          ],
+          "answer": 1
+        }
+      ]
+    }
+  ]
+}

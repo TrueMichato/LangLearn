@@ -1,0 +1,183 @@
+{
+  "id": "daily-routine-verbs",
+  "words": [
+    {
+      "word": "أَسْتَيْقِظُ",
+      "reading": "ʾastayqiẓu",
+      "meaning": "I wake up",
+      "example": "أَسْتَيْقِظُ فِي السَّاعَةِ السَّادِسَةِ.",
+      "exampleMeaning": "I wake up at six o’clock."
+    },
+    {
+      "word": "أَنْهَضُ",
+      "reading": "ʾanhaḍu",
+      "meaning": "I get up",
+      "example": "أَنْهَضُ مِنَ السَّرِيرِ بِهُدُوءٍ.",
+      "exampleMeaning": "I get up from bed quietly."
+    },
+    {
+      "word": "أَغْسِلُ",
+      "reading": "ʾaghsilu",
+      "meaning": "I wash",
+      "example": "أَغْسِلُ وَجْهِي كُلَّ صَبَاحٍ.",
+      "exampleMeaning": "I wash my face every morning."
+    },
+    {
+      "word": "أَسْتَحِمُّ",
+      "reading": "ʾastaḥimmu",
+      "meaning": "I take a shower",
+      "example": "أَسْتَحِمُّ قَبْلَ الْعَمَلِ.",
+      "exampleMeaning": "I take a shower before work."
+    },
+    {
+      "word": "أَرْتَدِي",
+      "reading": "ʾartadī",
+      "meaning": "I wear / put on",
+      "example": "أَرْتَدِي قَمِيصًا نَظِيفًا.",
+      "exampleMeaning": "I put on a clean shirt."
+    },
+    {
+      "word": "أَتَنَاوَلُ الْفُطُورَ",
+      "reading": "ʾatanāwalu l-fuṭūra",
+      "meaning": "I eat breakfast",
+      "example": "أَتَنَاوَلُ الْفُطُورَ مَعَ عَائِلَتِي.",
+      "exampleMeaning": "I eat breakfast with my family."
+    },
+    {
+      "word": "أَذْهَبُ",
+      "reading": "ʾadhhabu",
+      "meaning": "I go",
+      "example": "أَذْهَبُ إِلَى الْعَمَلِ بِالْحَافِلَةِ.",
+      "exampleMeaning": "I go to work by bus."
+    },
+    {
+      "word": "أَعْمَلُ",
+      "reading": "ʾaʿmalu",
+      "meaning": "I work",
+      "example": "أَعْمَلُ مِنَ التَّاسِعَةِ إِلَى الْخَامِسَةِ.",
+      "exampleMeaning": "I work from nine to five."
+    },
+    {
+      "word": "أَدْرُسُ",
+      "reading": "ʾadrusu",
+      "meaning": "I study",
+      "example": "أَدْرُسُ اللُّغَةَ الْعَرَبِيَّةَ مَسَاءً.",
+      "exampleMeaning": "I study Arabic in the evening."
+    },
+    {
+      "word": "أَطْبُخُ",
+      "reading": "ʾaṭbukhu",
+      "meaning": "I cook",
+      "example": "أَطْبُخُ الْعَشَاءَ بَعْدَ الْعَمَلِ.",
+      "exampleMeaning": "I cook dinner after work."
+    },
+    {
+      "word": "أُنَظِّفُ",
+      "reading": "ʾunaẓẓifu",
+      "meaning": "I clean",
+      "example": "أُنَظِّفُ الْغُرْفَةَ يَوْمَ الْجُمُعَةِ.",
+      "exampleMeaning": "I clean the room on Friday."
+    },
+    {
+      "word": "أَسْتَرِيحُ",
+      "reading": "ʾastarīḥu",
+      "meaning": "I rest",
+      "example": "أَسْتَرِيحُ قَلِيلًا بَعْدَ الظُّهْرِ.",
+      "exampleMeaning": "I rest a little after noon."
+    },
+    {
+      "word": "أَتَسَوَّقُ",
+      "reading": "ʾatasawwaqu",
+      "meaning": "I shop",
+      "example": "أَتَسَوَّقُ فِي السُّوقِ الْقَرِيبِ.",
+      "exampleMeaning": "I shop in the nearby market."
+    },
+    {
+      "word": "أَعُودُ",
+      "reading": "ʾaʿūdu",
+      "meaning": "I return",
+      "example": "أَعُودُ إِلَى الْبَيْتِ مَسَاءً.",
+      "exampleMeaning": "I return home in the evening."
+    },
+    {
+      "word": "أَتَعَشَّى",
+      "reading": "ʾataʿashshā",
+      "meaning": "I eat dinner",
+      "example": "أَتَعَشَّى مَعَ أَصْدِقَائِي.",
+      "exampleMeaning": "I eat dinner with my friends."
+    },
+    {
+      "word": "أَنَامُ",
+      "reading": "ʾanāmu",
+      "meaning": "I sleep",
+      "example": "أَنَامُ بَاكِرًا فِي أَيَّامِ الْعَمَلِ.",
+      "exampleMeaning": "I sleep early on workdays."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "___ فِي السَّاعَةِ السَّادِسَةِ.",
+          "answer": "أَسْتَيْقِظُ",
+          "hint": "I wake up"
+        },
+        {
+          "sentence": "___ مِنَ السَّرِيرِ بِهُدُوءٍ.",
+          "answer": "أَنْهَضُ",
+          "hint": "I get up"
+        },
+        {
+          "sentence": "___ وَجْهِي كُلَّ صَبَاحٍ.",
+          "answer": "أَغْسِلُ",
+          "hint": "I wash"
+        },
+        {
+          "sentence": "___ قَبْلَ الْعَمَلِ.",
+          "answer": "أَسْتَحِمُّ",
+          "hint": "I take a shower"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "items": [
+        {
+          "question": "What does ‘أَسْتَيْقِظُ’ mean?",
+          "options": [
+            "I get up",
+            "I wake up",
+            "I wash",
+            "I take a shower"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What does ‘أَنْهَضُ’ mean?",
+          "options": [
+            "I wash",
+            "I get up",
+            "I take a shower",
+            "I wear"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What does ‘أَغْسِلُ’ mean?",
+          "options": [
+            "I take a shower",
+            "I wash",
+            "I eat breakfast",
+            "I go"
+          ],
+          "answer": 1
+        }
+      ]
+    }
+  ]
+}

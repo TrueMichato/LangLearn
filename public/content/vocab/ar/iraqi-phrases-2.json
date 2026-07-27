@@ -1,0 +1,183 @@
+{
+  "id": "iraqi-phrases-2",
+  "words": [
+    {
+      "word": "شِنُو؟",
+      "reading": "shinu?",
+      "meaning": "what? (Iraqi; MSA: mādhā?)",
+      "example": "شِنُو؟ مَا سْمِعْتَك زِين.",
+      "exampleMeaning": "What? I did not hear you well."
+    },
+    {
+      "word": "لِيش؟",
+      "reading": "lēsh?",
+      "meaning": "why? (Iraqi; MSA: limādhā?)",
+      "example": "لِيشْ الْبَاصْ تَأَخَّرْ الْيَوْمْ؟",
+      "exampleMeaning": "Why was the bus late today?"
+    },
+    {
+      "word": "مَنْو؟",
+      "reading": "manu?",
+      "meaning": "who? (Iraqi; MSA: man?)",
+      "example": "مَنْو دَ يِدُقّْ الْبَابْ؟",
+      "exampleMeaning": "Who is knocking on the door?"
+    },
+    {
+      "word": "يَلَّا",
+      "reading": "yalla",
+      "meaning": "come on / let's go (Iraqi; MSA: hayyā)",
+      "example": "يَلَّا نِمْشِي قَبْلَ الزَّحْمَة.",
+      "exampleMeaning": "Come on, let's walk before the traffic."
+    },
+    {
+      "word": "عَفْيَة",
+      "reading": "ʿafya",
+      "meaning": "well done / thanks (Iraqi; MSA: aḥsanta / shukran)",
+      "example": "عَفْيَة عَلَيْك، الشُّغُلْ كِلِّهْ تَمَام.",
+      "exampleMeaning": "Well done; all the work is fine."
+    },
+    {
+      "word": "تْدَلَّل",
+      "reading": "tdallal",
+      "meaning": "be my guest / at your service (Iraqi; MSA: tafaḍḍal)",
+      "example": "تْدَلَّل، الْقَهْوَة جَاهْزَة.",
+      "exampleMeaning": "Be my guest; the coffee is ready."
+    },
+    {
+      "word": "مِنْ عْيُونِي",
+      "reading": "min ʿyūnī",
+      "meaning": "gladly / with pleasure (Iraqi; MSA: bi-surūr)",
+      "example": "مِنْ عْيُونِي، أَجِيبْ لَك مَايْ.",
+      "exampleMeaning": "Gladly, I will bring you water."
+    },
+    {
+      "word": "خُوش",
+      "reading": "khōsh",
+      "meaning": "nice / good (Iraqi; MSA: jayyid)",
+      "example": "هَذَا خُوش مَكَانْ لِلْغَدَا.",
+      "exampleMeaning": "This is a nice place for lunch."
+    },
+    {
+      "word": "لَچِن",
+      "reading": "lachin",
+      "meaning": "but (Iraqi; MSA: lākin)",
+      "example": "أُرِيدْ أَطْلَعْ، لَچِنْ عِنْدِي شُغُلْ.",
+      "exampleMeaning": "I want to go out, but I have work."
+    },
+    {
+      "word": "دِيرْ بَالَك",
+      "reading": "dīr bālak",
+      "meaning": "be careful (Iraqi; MSA: intabih)",
+      "example": "دِيرْ بَالَك مِنَ الشَّارِعْ.",
+      "exampleMeaning": "Be careful of the street."
+    },
+    {
+      "word": "رَاحْ أَجِي",
+      "reading": "rāḥ ajī",
+      "meaning": "I will come (Iraqi; MSA: sa-ātī)",
+      "example": "رَاحْ أَجِي بَعْدَ نُصّْ سَاعَة.",
+      "exampleMeaning": "I will come after half an hour."
+    },
+    {
+      "word": "جُوعَان",
+      "reading": "jūʿān",
+      "meaning": "hungry (Iraqi; MSA: jāʾiʿ)",
+      "example": "آنِي جُوعَان، نَاكُلْ هَسَّه؟",
+      "exampleMeaning": "I am hungry; shall we eat now?"
+    },
+    {
+      "word": "عَطْشَان",
+      "reading": "ʿaṭshān",
+      "meaning": "thirsty (Iraqi; MSA: ʿaṭshān)",
+      "example": "هُوَّ عَطْشَان وَيُرِيدْ مَايْ.",
+      "exampleMeaning": "He is thirsty and wants water."
+    },
+    {
+      "word": "تَعَبَان",
+      "reading": "taʿbān",
+      "meaning": "tired (Iraqi; MSA: mutʿab)",
+      "example": "بَعْدَ الدَّوَامْ أَكُونْ تَعَبَان.",
+      "exampleMeaning": "After work I am tired."
+    },
+    {
+      "word": "مَاشِي",
+      "reading": "māshī",
+      "meaning": "okay / fine (Iraqi; MSA: ḥasanan)",
+      "example": "مَاشِي، نِلْتَقِي بَاجِر.",
+      "exampleMeaning": "Okay, we will meet tomorrow."
+    },
+    {
+      "word": "أَكُولَك",
+      "reading": "agūllak",
+      "meaning": "listen / I'm telling you (Iraqi; MSA: ʾuqūlu laka)",
+      "example": "أَكُولَك، هَذَا الطَّرِيقْ أَسْرَعْ.",
+      "exampleMeaning": "Listen, this road is faster."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "___ مَا سْمِعْتَك زِين.",
+          "answer": "شِنُو؟",
+          "hint": "what? (Iraqi; MSA: mādhā?)"
+        },
+        {
+          "sentence": "___ الْبَاصْ تَأَخَّرْ الْيَوْمْ؟",
+          "answer": "لِيش؟",
+          "hint": "why? (Iraqi; MSA: limādhā?)"
+        },
+        {
+          "sentence": "___ دَ يِدُقّْ الْبَابْ؟",
+          "answer": "مَنْو؟",
+          "hint": "who? (Iraqi; MSA: man?)"
+        },
+        {
+          "sentence": "___ نِمْشِي قَبْلَ الزَّحْمَة.",
+          "answer": "يَلَّا",
+          "hint": "come on / let's go (Iraqi; MSA: hayyā)"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "items": [
+        {
+          "question": "What does ‘شِنُو؟’ mean?",
+          "options": [
+            "why? (Iraqi; MSA: limādhā?)",
+            "what? (Iraqi; MSA: mādhā?)",
+            "who? (Iraqi; MSA: man?)",
+            "come on / let's go (Iraqi; MSA: hayyā)"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What does ‘لِيش؟’ mean?",
+          "options": [
+            "who? (Iraqi; MSA: man?)",
+            "why? (Iraqi; MSA: limādhā?)",
+            "well done / thanks (Iraqi; MSA: aḥsanta / shukran)",
+            "nice / good (Iraqi; MSA: jayyid)"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What does ‘مَنْو؟’ mean?",
+          "options": [
+            "come on / let's go (Iraqi; MSA: hayyā)",
+            "who? (Iraqi; MSA: man?)",
+            "but (Iraqi; MSA: lākin)",
+            "be careful (Iraqi; MSA: intabih)"
+          ],
+          "answer": 1
+        }
+      ]
+    }
+  ]
+}
