@@ -1,0 +1,183 @@
+{
+  "id": "maghrebi-phrases-2",
+  "words": [
+    {
+      "word": "لَا بَاس؟",
+      "reading": "lā bās?",
+      "meaning": "how are you? / okay? (Darija)",
+      "example": "لَا بَاس؟ شْنُو الأَخْبَارْ؟",
+      "exampleMeaning": "How are you? What is the news?"
+    },
+    {
+      "word": "لَا بَاس، الْحَمْدُ لِلّٰه",
+      "reading": "lā bās, l-ḥamdullāh",
+      "meaning": "I am fine, praise God (Darija)",
+      "example": "لَا بَاس، الْحَمْدُ لِلّٰه، كُلّ شِي مْزْيَانْ.",
+      "exampleMeaning": "I am fine, praise God; everything is good."
+    },
+    {
+      "word": "شْنُو هَادَا؟",
+      "reading": "shnū hāda?",
+      "meaning": "what is this? (Darija; MSA: mā hādhā)",
+      "example": "شْنُو هَادَا فَوْقْ الطَّاوْلَة؟",
+      "exampleMeaning": "What is this on the table?"
+    },
+    {
+      "word": "فِينْ كَايْن؟",
+      "reading": "fīn kāyn?",
+      "meaning": "where is it? (Darija; MSA: ayna huwa)",
+      "example": "فِينْ كَايْنْ الْمَحَلّ؟",
+      "exampleMeaning": "Where is the shop?"
+    },
+    {
+      "word": "بِشْحَال؟",
+      "reading": "b-shḥāl?",
+      "meaning": "how much? (Darija)",
+      "example": "بِشْحَال هَادْ الْكْتَابْ؟",
+      "exampleMeaning": "How much is this book?"
+    },
+    {
+      "word": "زْوِينْ",
+      "reading": "zwīn",
+      "meaning": "nice / beautiful (Darija)",
+      "example": "هَادْ اللَّوْنْ زْوِينْ بْزَّافْ.",
+      "exampleMeaning": "This color is very nice."
+    },
+    {
+      "word": "دَابَا",
+      "reading": "dābā",
+      "meaning": "now (Darija; MSA: al-ān)",
+      "example": "دَابَا خَاصّْنَا نْمْشِيو.",
+      "exampleMeaning": "Now we need to go."
+    },
+    {
+      "word": "غَدَّا",
+      "reading": "ghaddā",
+      "meaning": "tomorrow (Darija)",
+      "example": "غَدَّا نْسَافْرُو لِلرِّبَاطْ.",
+      "exampleMeaning": "Tomorrow we travel to Rabat."
+    },
+    {
+      "word": "بْغِيتْ",
+      "reading": "bghīt",
+      "meaning": "I want (Darija; MSA: urīdu)",
+      "example": "بْغِيتْ قَهْوَةً بْلَا سُكَّرْ.",
+      "exampleMeaning": "I want coffee without sugar."
+    },
+    {
+      "word": "مَا كَانْفَهْمْش",
+      "reading": "mā kān-fham-sh",
+      "meaning": "I do not understand (Darija)",
+      "example": "مَا كَانْفَهْمْش هَادْ الْكَلَامْ.",
+      "exampleMeaning": "I do not understand this talk."
+    },
+    {
+      "word": "عْطِينِي",
+      "reading": "ʿṭīnī",
+      "meaning": "give me (Darija; MSA: aʿṭinī)",
+      "example": "عْطِينِي التَّذْكَرَة، عَافَاكْ.",
+      "exampleMeaning": "Give me the ticket, please."
+    },
+    {
+      "word": "سْمْحْ لِي",
+      "reading": "smḥ lī",
+      "meaning": "excuse me / sorry (Darija)",
+      "example": "سْمْحْ لِي، تْأَخَّرْتْ شْوِيَّة.",
+      "exampleMeaning": "Sorry, I was a little late."
+    },
+    {
+      "word": "صَافِي",
+      "reading": "ṣāfī",
+      "meaning": "okay / enough / finished (Darija)",
+      "example": "صَافِي، سَالِينَا الْخِدْمَة.",
+      "exampleMeaning": "Okay, we finished the work."
+    },
+    {
+      "word": "بْزَّافْ",
+      "reading": "bzzāf",
+      "meaning": "very / a lot (Darija)",
+      "example": "كَيْنَ النَّاسْ بْزَّافْ فِي السُّوقْ.",
+      "exampleMeaning": "There are many people in the market."
+    },
+    {
+      "word": "خَاصّْنِي",
+      "reading": "khāṣṣnī",
+      "meaning": "I need (Darija; MSA: aḥtāju)",
+      "example": "خَاصّْنِي نْشْرِي الدَّوَا.",
+      "exampleMeaning": "I need to buy the medicine."
+    },
+    {
+      "word": "وَاخَّا",
+      "reading": "wākhkhā",
+      "meaning": "okay / agreed (Darija)",
+      "example": "وَاخَّا، نْتْلَاقَاوْ مِنْ بَعْدْ.",
+      "exampleMeaning": "Okay, we will meet later."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "___ شْنُو الأَخْبَارْ؟",
+          "answer": "لَا بَاس؟",
+          "hint": "how are you?"
+        },
+        {
+          "sentence": "___، كُلّ شِي مْزْيَانْ.",
+          "answer": "لَا بَاس، الْحَمْدُ لِلّٰه",
+          "hint": "I am fine, praise God"
+        },
+        {
+          "sentence": "___ فَوْقْ الطَّاوْلَة؟",
+          "answer": "شْنُو هَادَا؟",
+          "hint": "what is this?"
+        },
+        {
+          "sentence": "___ الْمَحَلّ؟",
+          "answer": "فِينْ كَايْن؟",
+          "hint": "where is it?"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "items": [
+        {
+          "question": "What does ‘لَا بَاس؟’ mean?",
+          "options": [
+            "what is this?",
+            "how are you? / okay? (Darija)",
+            "how much?",
+            "now"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What does ‘لَا بَاس، الْحَمْدُ لِلّٰه’ mean?",
+          "options": [
+            "where is it?",
+            "I am fine, praise God (Darija)",
+            "I want",
+            "give me"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What does ‘شْنُو هَادَا؟’ mean?",
+          "options": [
+            "tomorrow",
+            "what is this? (Darija; MSA: mā hādhā)",
+            "very / a lot",
+            "okay / agreed"
+          ],
+          "answer": 1
+        }
+      ]
+    }
+  ]
+}

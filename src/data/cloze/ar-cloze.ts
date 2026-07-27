@@ -152,4 +152,12 @@ export const arClozeSentences: ClozeSentence[] = [
   { id: 'ar-c113', target: 'المُساوَمةُ عادةٌ شائِعةٌ في الأسْواقِ القَدِيمة', english: 'Bargaining is a common custom in old markets', blankedWord: 'المُساوَمةُ', blankedReading: 'al-musāwama', frequencyRank: 300, difficulty: 'advanced' },
   { id: 'ar-c114', target: 'تَتَغَيَّرُ اللُّغةُ مَع مُرُورِ الزَّمَن', english: 'Language changes with the passing of time', blankedWord: 'تَتَغَيَّرُ', blankedReading: 'tataghayyaru', frequencyRank: 300, difficulty: 'intermediate' },
   { id: 'ar-c115', target: 'حَجَزْتُ غُرْفةً تُطِلُّ على البَحْر', english: 'I booked a room overlooking the sea', blankedWord: 'تُطِلُّ', blankedReading: 'tuṭillu', frequencyRank: 300, difficulty: 'intermediate' },
+
+  // ── Moods (batch 8) ──
+  { id: 'ar-c116', target: 'يَجِبُ أن نَدْرُسَ لِلامْتِحان', english: 'We must study for the exam', blankedWord: 'نَدْرُسَ', blankedReading: 'nadrusa', frequencyRank: 174, difficulty: 'intermediate' },
+  { id: 'ar-c117', target: 'لم أَذْهَبْ إلى العَمَلِ أمْس', english: 'I did not go to work yesterday', blankedWord: 'أَذْهَبْ', blankedReading: 'adhhab', frequencyRank: 61, difficulty: 'intermediate' },
+  { id: 'ar-c118', target: 'أَدْرُسُ العَرَبِيّةَ لِكَي أَفْهَمَ الأخْبار', english: 'I study Arabic so that I understand the news', blankedWord: 'أَفْهَمَ', blankedReading: 'afhama', frequencyRank: 173, difficulty: 'intermediate' },
+  { id: 'ar-c119', target: 'لن أَنْسى مَعْرُوفَك أبَدًا', english: 'I will never forget your kindness', blankedWord: 'أَنْسى', blankedReading: 'ansā', frequencyRank: 173, difficulty: 'intermediate' },
+  { id: 'ar-c120', target: 'لم يَقُلْ لي الحَقِيقةَ كامِلة', english: 'He did not tell me the whole truth', blankedWord: 'يَقُلْ', blankedReading: 'yaqul', frequencyRank: 25, difficulty: 'advanced' },
+  { id: 'ar-c121', target: 'اِجْتَهِدْ كَي تَنالَ ما تُرِيد', english: 'Work hard so that you get what you want', blankedWord: 'تَنالَ', blankedReading: 'tanāla', frequencyRank: 300, difficulty: 'advanced' },
 ];

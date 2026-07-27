@@ -878,5 +878,69 @@
     "wordCount": 16,
     "level": "intermediate",
     "dialect": "levantine"
+  },
+  {
+    "id": "at-the-hospital",
+    "title": "At the Hospital",
+    "order": 111,
+    "wordCount": 16,
+    "level": "intermediate",
+    "dialect": "msa"
+  },
+  {
+    "id": "job-application",
+    "title": "Job Applications & CVs",
+    "order": 112,
+    "wordCount": 16,
+    "level": "advanced",
+    "dialect": "msa"
+  },
+  {
+    "id": "renting-housing",
+    "title": "Renting & Housing",
+    "order": 113,
+    "wordCount": 16,
+    "level": "intermediate",
+    "dialect": "msa"
+  },
+  {
+    "id": "public-transport-2",
+    "title": "Public Transport & the Metro",
+    "order": 114,
+    "wordCount": 16,
+    "level": "intermediate",
+    "dialect": "msa"
+  },
+  {
+    "id": "environment-nature-2",
+    "title": "Landscapes & Geography",
+    "order": 115,
+    "wordCount": 16,
+    "level": "intermediate",
+    "dialect": "msa"
+  },
+  {
+    "id": "history-civilization",
+    "title": "History & Civilization",
+    "order": 116,
+    "wordCount": 16,
+    "level": "advanced",
+    "dialect": "msa"
+  },
+  {
+    "id": "gulf-phrases-3",
+    "title": "More Gulf Everyday Phrases",
+    "order": 117,
+    "wordCount": 16,
+    "level": "intermediate",
+    "dialect": "gulf"
+  },
+  {
+    "id": "maghrebi-phrases-2",
+    "title": "More Maghrebi (Darija) Phrases",
+    "order": 118,
+    "wordCount": 16,
+    "level": "intermediate",
+    "dialect": "maghrebi"
   }
 ]

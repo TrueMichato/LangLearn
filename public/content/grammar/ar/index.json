@@ -634,5 +634,53 @@
     "title": "Object & Possessive Suffixes Across Dialects",
     "order": 106,
     "group": "🗣️ Colloquial & Dialects"
+  },
+  {
+    "id": "energetic-nun",
+    "title": "The Energetic Mood (nūn al-tawkīd)",
+    "order": 107,
+    "group": "🔤 Verbs"
+  },
+  {
+    "id": "verbs-of-certainty",
+    "title": "Verbs of the Heart & Certainty (ẓanna, ʿalima… and their two objects)",
+    "order": 108,
+    "group": "🔤 Verbs"
+  },
+  {
+    "id": "impersonal-verbs",
+    "title": "Impersonal & Weather Verbs",
+    "order": 109,
+    "group": "🔤 Verbs"
+  },
+  {
+    "id": "comparison-degrees",
+    "title": "Degrees of Comparison in Depth (afʿal min, al-afʿal, elative of colours)",
+    "order": 110,
+    "group": "🔢 Structure & Nuance"
+  },
+  {
+    "id": "indefinite-specific",
+    "title": "Definiteness, Indefiniteness & Genericness",
+    "order": 111,
+    "group": "🔢 Structure & Nuance"
+  },
+  {
+    "id": "adverbials-of-time-place",
+    "title": "Adverbials of Time & Place (ẓarf)",
+    "order": 112,
+    "group": "🔢 Structure & Nuance"
+  },
+  {
+    "id": "exclamatory-styles",
+    "title": "Styles of Exclamation, Praise & Blame (niʿma, biʾsa)",
+    "order": 113,
+    "group": "🔢 Structure & Nuance"
+  },
+  {
+    "id": "dialect-question-words",
+    "title": "Question Words Across Dialects (ēh, shū, wēn, laysh…)",
+    "order": 114,
+    "group": "🗣️ Colloquial & Dialects"
   }
 ]

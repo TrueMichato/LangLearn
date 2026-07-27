@@ -1,0 +1,183 @@
+{
+  "id": "job-application",
+  "words": [
+    {
+      "word": "طَلَبُ تَوْظِيفٍ",
+      "reading": "ṭalabu tawẓīfin",
+      "meaning": "job application",
+      "example": "قَدَّمْتُ طَلَبَ تَوْظِيفٍ عَبْرَ الْمَوْقِعِ.",
+      "exampleMeaning": "I submitted a job application through the website."
+    },
+    {
+      "word": "السِّيرَةُ الذَّاتِيَّةُ",
+      "reading": "as-sīratu dh-dhātiyyatu",
+      "meaning": "CV / résumé",
+      "example": "حَدَّثْتُ السِّيرَةَ الذَّاتِيَّةَ الْيَوْمَ.",
+      "exampleMeaning": "I updated the CV today."
+    },
+    {
+      "word": "خِطَابُ التَّغْطِيَةِ",
+      "reading": "khiṭābu t-taghṭiyati",
+      "meaning": "cover letter",
+      "example": "أَرْفَقْتُ خِطَابَ التَّغْطِيَةِ مَعَ الطَّلَبِ.",
+      "exampleMeaning": "I attached the cover letter with the application."
+    },
+    {
+      "word": "مُؤَهِّلٌ عِلْمِيٌّ",
+      "reading": "muʾahhilun ʿilmiyyun",
+      "meaning": "academic qualification",
+      "example": "يَتَطَلَّبُ الْعَمَلُ مُؤَهِّلًا عِلْمِيًّا عَالِيًا.",
+      "exampleMeaning": "The job requires a high academic qualification."
+    },
+    {
+      "word": "خِبْرَةٌ مِهْنِيَّةٌ",
+      "reading": "khibratun mihniyyatun",
+      "meaning": "professional experience",
+      "example": "لَدَيْهَا خِبْرَةٌ مِهْنِيَّةٌ فِي التَّسْوِيقِ.",
+      "exampleMeaning": "She has professional experience in marketing."
+    },
+    {
+      "word": "مَهَارَاتٌ قَابِلَةٌ لِلنَّقْلِ",
+      "reading": "mahārātun qābilatun li-n-naqli",
+      "meaning": "transferable skills",
+      "example": "الْقِيَادَةُ مِنَ الْمَهَارَاتِ الْقَابِلَةِ لِلنَّقْلِ.",
+      "exampleMeaning": "Leadership is one of the transferable skills."
+    },
+    {
+      "word": "مُقَابَلَةٌ شَخْصِيَّةٌ",
+      "reading": "muqābalatun shakhṣiyyatun",
+      "meaning": "job interview",
+      "example": "حَضَرْتُ مُقَابَلَةً شَخْصِيَّةً صَبَاحًا.",
+      "exampleMeaning": "I attended a job interview in the morning."
+    },
+    {
+      "word": "شَاغِرٌ وَظِيفِيٌّ",
+      "reading": "shāghirun waẓīfiyyun",
+      "meaning": "job vacancy",
+      "example": "وَجَدْتُ شَاغِرًا وَظِيفِيًّا مُنَاسِبًا.",
+      "exampleMeaning": "I found a suitable job vacancy."
+    },
+    {
+      "word": "مَسْؤُولُ التَّوْظِيفِ",
+      "reading": "masʾūlu t-tawẓīfi",
+      "meaning": "recruiter / hiring officer",
+      "example": "اتَّصَلَ بِي مَسْؤُولُ التَّوْظِيفِ.",
+      "exampleMeaning": "The recruiter called me."
+    },
+    {
+      "word": "رَاتِبٌ مُتَوَقَّعٌ",
+      "reading": "rātibun mutawaqqaʿun",
+      "meaning": "expected salary",
+      "example": "ذَكَرْتُ رَاتِبًا مُتَوَقَّعًا فِي النَّمُوذَجِ.",
+      "exampleMeaning": "I mentioned an expected salary in the form."
+    },
+    {
+      "word": "فَتْرَةُ تَجْرِبَةٍ",
+      "reading": "fatratu tajribatin",
+      "meaning": "probation period",
+      "example": "تَسْتَمِرُّ فَتْرَةُ التَّجْرِبَةِ ثَلَاثَةَ أَشْهُرٍ.",
+      "exampleMeaning": "The probation period lasts three months."
+    },
+    {
+      "word": "مَرَاجِعُ مِهْنِيَّةٌ",
+      "reading": "marājiʿu mihniyyatun",
+      "meaning": "professional references",
+      "example": "طَلَبَتِ الشَّرِكَةُ مَرَاجِعَ مِهْنِيَّةً.",
+      "exampleMeaning": "The company requested professional references."
+    },
+    {
+      "word": "نِظَامُ عَمَلٍ عَنْ بُعْدٍ",
+      "reading": "niẓāmu ʿamalin ʿan buʿdin",
+      "meaning": "remote work arrangement",
+      "example": "يُفَضِّلُ الْفَرِيقُ نِظَامَ عَمَلٍ عَنْ بُعْدٍ.",
+      "exampleMeaning": "The team prefers a remote work arrangement."
+    },
+    {
+      "word": "عَقْدُ عَمَلٍ",
+      "reading": "ʿaqdu ʿamalin",
+      "meaning": "employment contract",
+      "example": "وَقَّعْنَا عَقْدَ عَمَلٍ جَدِيدًا.",
+      "exampleMeaning": "We signed a new employment contract."
+    },
+    {
+      "word": "تَرْشِيحٌ",
+      "reading": "tarshīḥun",
+      "meaning": "shortlisting / nomination",
+      "example": "وَصَلَنِي تَرْشِيحٌ لِلْمَرْحَلَةِ النِّهَائِيَّةِ.",
+      "exampleMeaning": "I received a shortlisting for the final stage."
+    },
+    {
+      "word": "مَوْعِدُ انْضِمَامٍ",
+      "reading": "mawʿidu inḍimāmin",
+      "meaning": "start date / joining date",
+      "example": "حَدَّدْنَا مَوْعِدَ انْضِمَامٍ فِي أَوَّلِ الشَّهْرِ.",
+      "exampleMeaning": "We set a start date at the beginning of the month."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "قَدَّمْتُ ___ عَبْرَ الْمَوْقِعِ.",
+          "answer": "طَلَبُ تَوْظِيفٍ",
+          "hint": "job application"
+        },
+        {
+          "sentence": "حَدَّثْتُ ___ الْيَوْمَ.",
+          "answer": "السِّيرَةُ الذَّاتِيَّةُ",
+          "hint": "CV / résumé"
+        },
+        {
+          "sentence": "أَرْفَقْتُ ___ مَعَ الطَّلَبِ.",
+          "answer": "خِطَابُ التَّغْطِيَةِ",
+          "hint": "cover letter"
+        },
+        {
+          "sentence": "يَتَطَلَّبُ الْعَمَلُ ___ عَالِيًا.",
+          "answer": "مُؤَهِّلٌ عِلْمِيٌّ",
+          "hint": "academic qualification"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "items": [
+        {
+          "question": "What does ‘طَلَبُ تَوْظِيفٍ’ mean?",
+          "options": [
+            "CV / résumé",
+            "job application",
+            "cover letter",
+            "job interview"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What does ‘السِّيرَةُ الذَّاتِيَّةُ’ mean?",
+          "options": [
+            "cover letter",
+            "CV / résumé",
+            "job vacancy",
+            "recruiter"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What does ‘خِطَابُ التَّغْطِيَةِ’ mean?",
+          "options": [
+            "expected salary",
+            "cover letter",
+            "probation period",
+            "employment contract"
+          ],
+          "answer": 1
+        }
+      ]
+    }
+  ]
+}

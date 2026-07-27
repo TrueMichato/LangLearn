@@ -1,0 +1,183 @@
+{
+  "id": "at-the-hospital",
+  "words": [
+    {
+      "word": "الْمُسْتَشْفَى",
+      "reading": "al-mustashfā",
+      "meaning": "hospital",
+      "example": "وَصَلْنَا إِلَى الْمُسْتَشْفَى صَبَاحًا.",
+      "exampleMeaning": "We arrived at the hospital in the morning."
+    },
+    {
+      "word": "قِسْمُ الطَّوَارِئِ",
+      "reading": "qismu ṭ-ṭawāriʾi",
+      "meaning": "emergency department",
+      "example": "نَنْتَظِرُ فِي قِسْمِ الطَّوَارِئِ.",
+      "exampleMeaning": "We are waiting in the emergency department."
+    },
+    {
+      "word": "غُرْفَةُ الْفَحْصِ",
+      "reading": "ghurfatu l-faḥṣi",
+      "meaning": "examination room",
+      "example": "دَخَلَ الْمَرِيضُ غُرْفَةَ الْفَحْصِ.",
+      "exampleMeaning": "The patient entered the examination room."
+    },
+    {
+      "word": "طَبِيبٌ مُقِيمٌ",
+      "reading": "ṭabībun muqīmun",
+      "meaning": "resident doctor",
+      "example": "سَأَلَنَا طَبِيبٌ مُقِيمٌ عَنِ الأَعْرَاضِ.",
+      "exampleMeaning": "A resident doctor asked us about the symptoms."
+    },
+    {
+      "word": "مُمَرِّضَةٌ",
+      "reading": "mumarriḍatun",
+      "meaning": "nurse",
+      "example": "قَاسَتِ الْمُمَرِّضَةُ ضَغْطَ الدَّمِ.",
+      "exampleMeaning": "The nurse measured the blood pressure."
+    },
+    {
+      "word": "مَوْعِدُ الْعِيَادَةِ",
+      "reading": "mawʿidu l-ʿiyādati",
+      "meaning": "clinic appointment",
+      "example": "لَدَيَّ مَوْعِدُ الْعِيَادَةِ بَعْدَ سَاعَةٍ.",
+      "exampleMeaning": "I have a clinic appointment in an hour."
+    },
+    {
+      "word": "بُطَاقَةُ التَّأْمِينِ",
+      "reading": "buṭāqatu t-taʾmīni",
+      "meaning": "insurance card",
+      "example": "نَسِيتُ بُطَاقَةَ التَّأْمِينِ فِي الْبَيْتِ.",
+      "exampleMeaning": "I forgot the insurance card at home."
+    },
+    {
+      "word": "ضَغْطُ الدَّمِ",
+      "reading": "ḍaghṭu d-dami",
+      "meaning": "blood pressure",
+      "example": "ضَغْطُ الدَّمِ طَبِيعِيٌّ الْيَوْمَ.",
+      "exampleMeaning": "The blood pressure is normal today."
+    },
+    {
+      "word": "دَرَجَةُ الْحَرَارَةِ",
+      "reading": "darajatu l-ḥarārati",
+      "meaning": "temperature",
+      "example": "دَرَجَةُ الْحَرَارَةِ مُرْتَفِعَةٌ قَلِيلًا.",
+      "exampleMeaning": "The temperature is a little high."
+    },
+    {
+      "word": "تَحْلِيلُ الدَّمِ",
+      "reading": "taḥlīlu d-dami",
+      "meaning": "blood test",
+      "example": "طَلَبَ الطَّبِيبُ تَحْلِيلَ الدَّمِ.",
+      "exampleMeaning": "The doctor requested a blood test."
+    },
+    {
+      "word": "صُورَةٌ شُعَاعِيَّةٌ",
+      "reading": "ṣūratun shuʿāʿiyyatun",
+      "meaning": "X-ray image",
+      "example": "تَحْتَاجُ السَّاقُ إِلَى صُورَةٍ شُعَاعِيَّةٍ.",
+      "exampleMeaning": "The leg needs an X-ray image."
+    },
+    {
+      "word": "وَصْفَةٌ طِبِّيَّةٌ",
+      "reading": "waṣfatun ṭibbiyyatun",
+      "meaning": "medical prescription",
+      "example": "أَعْطَانِي الطَّبِيبُ وَصْفَةً طِبِّيَّةً.",
+      "exampleMeaning": "The doctor gave me a medical prescription."
+    },
+    {
+      "word": "جُرْعَةٌ",
+      "reading": "jurʿatun",
+      "meaning": "dose",
+      "example": "خُذْ جُرْعَةً وَاحِدَةً بَعْدَ الطَّعَامِ.",
+      "exampleMeaning": "Take one dose after food."
+    },
+    {
+      "word": "عِلَاجٌ طَبِيعِيٌّ",
+      "reading": "ʿilājun ṭabīʿiyyun",
+      "meaning": "physical therapy",
+      "example": "يَبْدَأُ الْعِلَاجُ الطَّبِيعِيُّ غَدًا.",
+      "exampleMeaning": "The physical therapy starts tomorrow."
+    },
+    {
+      "word": "خُرُوجٌ مِنَ الْمُسْتَشْفَى",
+      "reading": "khurūjun mina l-mustashfā",
+      "meaning": "hospital discharge",
+      "example": "تَمَّ الْخُرُوجُ مِنَ الْمُسْتَشْفَى ظُهْرًا.",
+      "exampleMeaning": "The hospital discharge happened at noon."
+    },
+    {
+      "word": "أَلَمٌ حَادٌّ",
+      "reading": "alamun ḥāddun",
+      "meaning": "acute pain",
+      "example": "أَشْعُرُ بِأَلَمٍ حَادٍّ فِي الصَّدْرِ.",
+      "exampleMeaning": "I feel acute pain in the chest."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "وَصَلْنَا إِلَى ___ صَبَاحًا.",
+          "answer": "الْمُسْتَشْفَى",
+          "hint": "hospital"
+        },
+        {
+          "sentence": "نَنْتَظِرُ فِي ___.",
+          "answer": "قِسْمُ الطَّوَارِئِ",
+          "hint": "emergency department"
+        },
+        {
+          "sentence": "دَخَلَ الْمَرِيضُ ___.",
+          "answer": "غُرْفَةُ الْفَحْصِ",
+          "hint": "examination room"
+        },
+        {
+          "sentence": "سَأَلَنَا ___ عَنِ الأَعْرَاضِ.",
+          "answer": "طَبِيبٌ مُقِيمٌ",
+          "hint": "resident doctor"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "items": [
+        {
+          "question": "What does ‘الْمُسْتَشْفَى’ mean?",
+          "options": [
+            "emergency department",
+            "hospital",
+            "examination room",
+            "resident doctor"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What does ‘قِسْمُ الطَّوَارِئِ’ mean?",
+          "options": [
+            "hospital",
+            "emergency department",
+            "nurse",
+            "blood pressure"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What does ‘غُرْفَةُ الْفَحْصِ’ mean?",
+          "options": [
+            "clinic appointment",
+            "examination room",
+            "insurance card",
+            "dose"
+          ],
+          "answer": 1
+        }
+      ]
+    }
+  ]
+}

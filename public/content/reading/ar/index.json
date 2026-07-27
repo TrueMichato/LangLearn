@@ -705,6 +705,84 @@
         "science"
       ],
       "description": "An essay on Arabic in education, technology, AI, and everyday digital life."
+    },
+    {
+      "id": "graded-my-room",
+      "title": "غُرْفَتي",
+      "titleEn": "My Room (graded reader)",
+      "difficulty": "easy",
+      "wordCount": 76,
+      "tags": [
+        "daily-life",
+        "graded-reader"
+      ],
+      "description": "A controlled beginner text describing a quiet bedroom and simple routines."
+    },
+    {
+      "id": "dialogue-shopping-clothes",
+      "title": "في مَحَلِّ المَلابِس: حِوار",
+      "titleEn": "At the Clothes Shop (dialogue)",
+      "difficulty": "easy",
+      "wordCount": 77,
+      "tags": [
+        "daily-life",
+        "conversation",
+        "dialogue",
+        "shopping"
+      ],
+      "description": "A practical clothes-shop dialogue about colors, sizes, prices, and payment."
+    },
+    {
+      "id": "a-letter-of-thanks",
+      "title": "رِسالةُ شُكْر",
+      "titleEn": "A Letter of Thanks",
+      "difficulty": "medium",
+      "wordCount": 121,
+      "tags": [
+        "daily-life",
+        "society"
+      ],
+      "description": "A warm personal letter thanking a friend for help after moving to a new city."
+    },
+    {
+      "id": "traditional-crafts",
+      "title": "الحِرَفُ التَّقْلِيديّة",
+      "titleEn": "Traditional Crafts",
+      "difficulty": "medium",
+      "wordCount": 128,
+      "tags": [
+        "culture",
+        "history",
+        "society"
+      ],
+      "description": "An informational culture text about traditional crafts, artisanship, and preservation."
+    },
+    {
+      "id": "the-invention-of-paper",
+      "title": "رِحْلةُ الوَرَق",
+      "titleEn": "The Journey of Paper",
+      "difficulty": "hard",
+      "wordCount": 175,
+      "tags": [
+        "history",
+        "science",
+        "education",
+        "culture"
+      ],
+      "description": "A factual history text tracing paper-making from China through Central Asia to the Arab world."
+    },
+    {
+      "id": "education-and-the-future",
+      "title": "التَّعْلِيمُ والمُسْتَقْبَل",
+      "titleEn": "Education and the Future",
+      "difficulty": "hard",
+      "wordCount": 172,
+      "tags": [
+        "education",
+        "society",
+        "science"
+      ],
+      "description": "An opinion essay on skills, technology, equity, and the human role of teachers."
     }
   ]
 }
