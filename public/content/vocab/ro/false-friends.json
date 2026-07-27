@@ -1,0 +1,34 @@
+{
+  "id": "false-friends",
+  "words": [
+    { "word": "librărie", "reading": "lee-bruh-REE-eh", "meaning": "bookstore (false friend: NOT library — that is bibliotecă)", "example": "Am cumpărat un roman de la librărie.", "exampleMeaning": "I bought a novel from the bookstore." },
+    { "word": "bibliotecă", "reading": "bee-blee-oh-TEH-kuh", "meaning": "library", "example": "Împrumut cărți de la bibliotecă.", "exampleMeaning": "I borrow books from the library." },
+    { "word": "a pretinde", "reading": "ah preh-TEEN-deh", "meaning": "to claim / to demand (NOT to pretend — that is a se preface)", "example": "El pretinde că e cel mai bun.", "exampleMeaning": "He claims that he is the best." },
+    { "word": "prost", "reading": "prost", "meaning": "stupid / of poor quality (NOT proud — that is mândru)", "example": "Nu fi prost, gândește-te bine!", "exampleMeaning": "Don't be stupid, think it over!" },
+    { "word": "simpatic", "reading": "seem-PAH-teek", "meaning": "likeable / nice (NOT sympathetic — that is înțelegător)", "example": "Colegul meu este foarte simpatic.", "exampleMeaning": "My colleague is very likeable." },
+    { "word": "concurs", "reading": "kon-KOORS", "meaning": "competition / contest (NOT concourse)", "example": "A câștigat un concurs de matematică.", "exampleMeaning": "He won a math competition." },
+    { "word": "fabrică", "reading": "FAH-bree-kuh", "meaning": "factory (NOT fabric — that is țesătură / material)", "example": "Tatăl meu lucrează la o fabrică de mobilă.", "exampleMeaning": "My father works at a furniture factory." },
+    { "word": "magazin", "reading": "mah-gah-ZEEN", "meaning": "shop / store (NOT magazine — that is revistă)", "example": "Merg la magazin să cumpăr lapte.", "exampleMeaning": "I'm going to the shop to buy milk." },
+    { "word": "revistă", "reading": "reh-VEES-tuh", "meaning": "magazine", "example": "Citesc o revistă de modă.", "exampleMeaning": "I'm reading a fashion magazine." },
+    { "word": "actual", "reading": "ak-too-AL", "meaning": "current / present-day (NOT actual — that is real / efectiv)", "example": "Situația actuală este complicată.", "exampleMeaning": "The current situation is complicated." },
+    { "word": "eventual", "reading": "eh-ven-too-AL", "meaning": "possibly / perhaps (NOT eventual / final)", "example": "Eventual putem merge mâine.", "exampleMeaning": "We can possibly go tomorrow." },
+    { "word": "sensibil", "reading": "sen-SEE-beel", "meaning": "sensitive (NOT sensible — that is rezonabil)", "example": "Este o persoană foarte sensibilă.", "exampleMeaning": "She is a very sensitive person." },
+    { "word": "a asista", "reading": "ah ah-sees-TAH", "meaning": "to attend / to watch (NOT to assist — that is a ajuta)", "example": "Am asistat la un spectacol minunat.", "exampleMeaning": "I attended a wonderful show." },
+    { "word": "fizician", "reading": "fee-zee-chee-AN", "meaning": "physicist (NOT physician — that is medic)", "example": "Einstein a fost un fizician celebru.", "exampleMeaning": "Einstein was a famous physicist." },
+    { "word": "educat", "reading": "eh-doo-KAT", "meaning": "well-mannered / polite (not only 'educated')", "example": "Este un copil foarte educat.", "exampleMeaning": "He is a very well-mannered child." },
+    { "word": "a comanda", "reading": "ah koh-man-DAH", "meaning": "to order (food / goods) (NOT to command — that is a ordona)", "example": "Am comandat o pizza la telefon.", "exampleMeaning": "I ordered a pizza by phone." }
+  ],
+  "exercises": [
+    { "type": "match", "pairs": 5 },
+    { "type": "fill-blank", "items": [
+      { "sentence": "Am cumpărat un roman de la ___.", "answer": "librărie", "hint": "bookstore" },
+      { "sentence": "El ___ că e cel mai bun.", "answer": "pretinde", "hint": "claims" },
+      { "sentence": "Citesc o ___ de modă.", "answer": "revistă", "hint": "magazine" }
+    ]},
+    { "type": "multiple-choice", "items": [
+      { "question": "What does 'librărie' actually mean?", "options": ["library", "bookstore", "fabric", "factory"], "answer": 1 },
+      { "question": "'Prost' is a false friend. It means:", "options": ["proud", "stupid / poor quality", "fast", "polite"], "answer": 1 },
+      { "question": "Which word means 'factory'?", "options": ["fabrică", "magazin", "revistă", "librărie"], "answer": 0 }
+    ]}
+  ]
+}

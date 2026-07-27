@@ -219,4 +219,70 @@ export const roPassages: ListeningPassage[] = [
       { question: 'What small action is mentioned?', options: ['Recycling', 'Walking', 'Reading', 'Saving money'], correctIndex: 0 },
     ],
   },
+
+  // --- More themed passages ---
+  {
+    id: 'ro-easy-10',
+    title: 'A Phone Call',
+    text: 'Alo? Bună, Maria! Ce faci? Vrei să mergem la film diseară? Filmul începe la ora șapte. Ne vedem în fața cinematografului, bine? Pa!',
+    difficulty: 'easy',
+    questions: [
+      { question: 'What does the caller suggest?', options: ['Going to dinner', 'Going to a film', 'Studying together', 'Going shopping'], correctIndex: 1 },
+      { question: 'What time does the film start?', options: ['Six', 'Seven', 'Eight', 'Nine'], correctIndex: 1 },
+    ],
+  },
+  {
+    id: 'ro-easy-11',
+    title: 'Weather Forecast',
+    text: 'Mâine va fi o zi frumoasă. Dimineața va fi soare, dar după-amiază vor fi câțiva nori. Temperatura maximă va fi de douăzeci de grade. Nu va ploua.',
+    difficulty: 'easy',
+    questions: [
+      { question: 'How will the morning be?', options: ['Rainy', 'Sunny', 'Snowy', 'Foggy'], correctIndex: 1 },
+      { question: 'Will it rain tomorrow?', options: ['Yes', 'No', 'Only at night', 'In the morning'], correctIndex: 1 },
+    ],
+  },
+  {
+    id: 'ro-med-7',
+    title: 'Booking a Table',
+    text: 'Bună ziua! Aș dori să rezerv o masă pentru patru persoane, pentru diseară, la ora opt. Ar fi posibil una lângă fereastră? Numele meu este Ionescu. Vă mulțumesc frumos!',
+    difficulty: 'medium',
+    questions: [
+      { question: 'For how many people is the reservation?', options: ['Two', 'Three', 'Four', 'Five'], correctIndex: 2 },
+      { question: 'What does the caller prefer?', options: ['A quiet corner', 'A table by the window', 'A table outside', 'A booth'], correctIndex: 1 },
+      { question: 'At what time is the reservation?', options: ['Seven', 'Eight', 'Nine', 'Six'], correctIndex: 1 },
+    ],
+  },
+  {
+    id: 'ro-med-8',
+    title: 'A Lost Bag',
+    text: 'Scuzați-mă, mi-am pierdut geanta în tren. Era o geantă neagră, cu niște documente și un telefon. Am coborât la Gara de Nord acum o oră. Unde pot să întreb de obiectele pierdute?',
+    difficulty: 'medium',
+    questions: [
+      { question: 'What did the person lose?', options: ['A wallet', 'A bag', 'A suitcase', 'A phone only'], correctIndex: 1 },
+      { question: 'What color was it?', options: ['Brown', 'Black', 'Red', 'Blue'], correctIndex: 1 },
+      { question: 'When did the person get off the train?', options: ['An hour ago', 'Yesterday', 'This morning', 'A few minutes ago'], correctIndex: 0 },
+    ],
+  },
+  {
+    id: 'ro-hard-6',
+    title: 'A News Bulletin',
+    text: 'Astăzi, la București, a avut loc o conferință despre educație. Miniștri din mai multe țări au discutat despre viitorul școlilor. Ei au subliniat importanța tehnologiei în clasă, dar și nevoia de profesori bine pregătiți. Conferința se va încheia mâine.',
+    difficulty: 'hard',
+    questions: [
+      { question: 'What was the conference about?', options: ['Health', 'Education', 'Economy', 'Sport'], correctIndex: 1 },
+      { question: 'What did the ministers emphasize?', options: ['Lower taxes', 'Technology and well-trained teachers', 'More holidays', 'New buildings'], correctIndex: 1 },
+      { question: 'When will the conference end?', options: ['Today', 'Tomorrow', 'Next week', 'It already ended'], correctIndex: 1 },
+    ],
+  },
+  {
+    id: 'ro-hard-7',
+    title: 'Time in Nature',
+    text: 'Cred că este important să petrecem mai mult timp în natură. În ziua de azi, mulți oameni stau ore întregi în fața ecranelor și uită de lumea reală. O plimbare prin pădure sau o zi la munte ne poate ajuta să ne relaxăm și să ne recăpătăm energia. Sănătatea mintală depinde și de asta.',
+    difficulty: 'hard',
+    questions: [
+      { question: 'What does the speaker think is important?', options: ['Working harder', 'Spending time in nature', 'Saving money', 'Using technology'], correctIndex: 1 },
+      { question: 'What do many people do nowadays?', options: ['Travel a lot', 'Spend hours in front of screens', 'Read books', 'Exercise daily'], correctIndex: 1 },
+      { question: 'What does the speaker say nature helps with?', options: ['Making money', 'Relaxing and regaining energy', 'Learning languages', 'Meeting people'], correctIndex: 1 },
+    ],
+  },
 ];

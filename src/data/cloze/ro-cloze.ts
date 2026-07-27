@@ -48,4 +48,16 @@ export const roClozeSentences: ClozeSentence[] = [
   { id: 'ro-c038', target: 'Guvernul a luat o decizie importantă', english: 'The government made an important decision', blankedWord: 'decizie', blankedReading: 'deh-CHEE-zee-eh', frequencyRank: 38, difficulty: 'advanced' },
   { id: 'ro-c039', target: 'Fără efort nu obții rezultate', english: 'Without effort you don\'t get results', blankedWord: 'efort', blankedReading: 'eh-FORT', frequencyRank: 39, difficulty: 'advanced' },
   { id: 'ro-c040', target: 'Deși era târziu, am continuat să lucrez', english: 'Although it was late, I kept working', blankedWord: 'târziu', blankedReading: 'tuhr-ZEE-oo', frequencyRank: 40, difficulty: 'advanced' },
+
+  // ── More everyday sentences ──
+  { id: 'ro-c041', target: 'Bunicii mei locuiesc la țară', english: 'My grandparents live in the countryside', blankedWord: 'țară', blankedReading: 'TSAH-ruh', frequencyRank: 41, difficulty: 'beginner' },
+  { id: 'ro-c042', target: 'Câinele aleargă după minge', english: 'The dog runs after the ball', blankedWord: 'minge', blankedReading: 'MEEN-jeh', frequencyRank: 42, difficulty: 'beginner' },
+  { id: 'ro-c043', target: 'Profesorul explică lecția clar', english: 'The teacher explains the lesson clearly', blankedWord: 'lecția', blankedReading: 'LEK-tsyah', frequencyRank: 43, difficulty: 'intermediate' },
+  { id: 'ro-c044', target: 'Vara mergem la mare în fiecare an', english: 'In summer we go to the seaside every year', blankedWord: 'mare', blankedReading: 'MAH-reh', frequencyRank: 44, difficulty: 'beginner' },
+  { id: 'ro-c045', target: 'El scrie o scrisoare prietenului său', english: 'He writes a letter to his friend', blankedWord: 'scrisoare', blankedReading: 'skree-SWAH-reh', frequencyRank: 45, difficulty: 'intermediate' },
+  { id: 'ro-c046', target: 'Trebuie să învăț pentru examen', english: 'I have to study for the exam', blankedWord: 'examen', blankedReading: 'ek-SAH-men', frequencyRank: 46, difficulty: 'intermediate' },
+  { id: 'ro-c047', target: 'Orașul are un parc frumos în centru', english: 'The city has a beautiful park in the center', blankedWord: 'parc', blankedReading: 'park', frequencyRank: 47, difficulty: 'intermediate' },
+  { id: 'ro-c048', target: 'Mi-am uitat cheile pe masă', english: 'I forgot my keys on the table', blankedWord: 'cheile', blankedReading: 'KYEH-ee-leh', frequencyRank: 48, difficulty: 'intermediate' },
+  { id: 'ro-c049', target: 'Fără apă, plantele se usucă', english: 'Without water, the plants dry out', blankedWord: 'plantele', blankedReading: 'PLAN-teh-leh', frequencyRank: 49, difficulty: 'advanced' },
+  { id: 'ro-c050', target: 'Libertatea este un drept fundamental', english: 'Freedom is a fundamental right', blankedWord: 'Libertatea', blankedReading: 'lee-ber-TAH-tyah', frequencyRank: 50, difficulty: 'advanced' },
 ];
