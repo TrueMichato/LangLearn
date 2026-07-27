@@ -1,0 +1,159 @@
+{
+  "id": "levantine-family-visits",
+  "words": [
+    {
+      "word": "أَهْلِي",
+      "reading": "ahlī",
+      "meaning": "my family",
+      "example": "أَهْلِي سَاكْنِينْ قَرِيبْ مِنْ بَيْتِي.",
+      "exampleMeaning": "My family lives near my house."
+    },
+    {
+      "word": "خَيِّي",
+      "reading": "khayyī",
+      "meaning": "my brother",
+      "example": "خَيِّي جَايْ عَ الزِّيَارَةْ بُكْرَا.",
+      "exampleMeaning": "My brother is coming for the visit tomorrow."
+    },
+    {
+      "word": "إِخْتِي",
+      "reading": "ikhtī",
+      "meaning": "my sister",
+      "example": "إِخْتِي عَمْ تْحَضِّرْ قَهْوَةْ.",
+      "exampleMeaning": "My sister is preparing coffee."
+    },
+    {
+      "word": "سِتِّي",
+      "reading": "sittī",
+      "meaning": "my grandmother",
+      "example": "سِتِّي بْتِحْكِي قِصَصْ حِلْوَةْ.",
+      "exampleMeaning": "My grandmother tells lovely stories."
+    },
+    {
+      "word": "جِدِّي",
+      "reading": "jiddī",
+      "meaning": "my grandfather",
+      "example": "جِدِّي بْيِحِبِّ الْقَعْدَةْ مَعَ النَّاسْ.",
+      "exampleMeaning": "My grandfather likes sitting with people."
+    },
+    {
+      "word": "قَرَايِبْ",
+      "reading": "qarāyib",
+      "meaning": "relatives",
+      "example": "الْقَرَايِبْ كُلُّنْ جَايِينْ عَ الْعِزِيمَةْ.",
+      "exampleMeaning": "All the relatives are coming to the gathering."
+    },
+    {
+      "word": "عِزِيمَة",
+      "reading": "ʿizīme",
+      "meaning": "invitation / family meal",
+      "example": "عِنَّا عِزِيمَة كْبِيرَةْ يَوْمِ السَّبْتْ.",
+      "exampleMeaning": "We have a big family meal on Saturday."
+    },
+    {
+      "word": "زِيَارَة",
+      "reading": "ziyāra",
+      "meaning": "visit",
+      "example": "الزِّيَارَة مَا رَحْ تْطَوِّلْ كْتِيرْ.",
+      "exampleMeaning": "The visit will not last very long."
+    },
+    {
+      "word": "تَفَضَّلْ",
+      "reading": "tfaḍḍal",
+      "meaning": "please come in / here you go",
+      "example": "تَفَضَّلْ، الْبَيْتْ بَيْتَكْ.",
+      "exampleMeaning": "Please come in; make yourself at home."
+    },
+    {
+      "word": "نَوَّرْتُوا",
+      "reading": "nawwartū",
+      "meaning": "you all lit up the place",
+      "example": "نَوَّرْتُوا الْبَيْتْ بِزِيَارْتْكُنْ.",
+      "exampleMeaning": "You all lit up the house with your visit."
+    },
+    {
+      "word": "طَمِّنِّي",
+      "reading": "ṭamminnī",
+      "meaning": "let me know you are okay",
+      "example": "طَمِّنِّي بَسْ تُوصَلْ عَ الْبَيْتْ.",
+      "exampleMeaning": "Let me know you are okay when you get home."
+    },
+    {
+      "word": "مَشْغُولْ",
+      "reading": "mashghūl",
+      "meaning": "busy",
+      "example": "أَنَا مَشْغُولْ هَلَّقْ، بَحْكِيكْ بَعْدَيْنْ.",
+      "exampleMeaning": "I am busy now; I will talk to you later."
+    },
+    {
+      "word": "مَا بْقَدَرْش",
+      "reading": "mā bʾdarsh",
+      "meaning": "I cannot",
+      "example": "مَا بْقَدَرْش أَزُورْكُمِ الْيَوْمْ.",
+      "exampleMeaning": "I cannot visit you today."
+    },
+    {
+      "word": "بْحِنّ",
+      "reading": "bḥinn",
+      "meaning": "I miss / long for",
+      "example": "بْحِنّ لِقَعْدَةِ الأَهْلْ بِاللَّيْلْ.",
+      "exampleMeaning": "I miss the family gathering at night."
+    },
+    {
+      "word": "عَ السَّرِيعْ",
+      "reading": "ʿa s-sarīʿ",
+      "meaning": "quickly / briefly",
+      "example": "مْنْمُرّْ عَلَيْكُنْ عَ السَّرِيعْ.",
+      "exampleMeaning": "We will stop by briefly."
+    },
+    {
+      "word": "دَخِيلَكْ",
+      "reading": "dakhīlak",
+      "meaning": "please / for my sake",
+      "example": "دَخِيلَكْ خَلِّينَا نْشُوفَكْ قَرِيبْ.",
+      "exampleMeaning": "Please let us see you soon."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "___ سَاكْنِينْ قَرِيبْ مِنْ بَيْتِي.",
+          "answer": "أَهْلِي",
+          "hint": "my family"
+        },
+        {
+          "sentence": "عِنَّا ___ كْبِيرَةْ يَوْمِ السَّبْتْ.",
+          "answer": "عِزِيمَة",
+          "hint": "family meal"
+        },
+        {
+          "sentence": "___ بَسْ تُوصَلْ عَ الْبَيْتْ.",
+          "answer": "طَمِّنِّي",
+          "hint": "let me know you are okay"
+        },
+        {
+          "sentence": "___ أَزُورْكُمِ الْيَوْمْ.",
+          "answer": "مَا بْقَدَرْش",
+          "hint": "I cannot"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "In Levantine Arabic, what does ‘نَوَّرْتُوا’ mean?",
+      "options": [
+        "you all lit up the place",
+        "I cannot",
+        "my grandfather",
+        "briefly"
+      ],
+      "answer": 0
+    }
+  ]
+}

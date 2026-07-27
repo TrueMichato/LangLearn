@@ -1,0 +1,159 @@
+{
+  "id": "theatre-performing-arts",
+  "words": [
+    {
+      "word": "مَسْرَحٌ",
+      "reading": "masraḥun",
+      "meaning": "theatre",
+      "example": "اِفْتَتَحَ الْمَسْرَحُ عَرْضًا جَدِيدًا.",
+      "exampleMeaning": "The theatre opened a new performance."
+    },
+    {
+      "word": "خَشَبَةُ الْمَسْرَحِ",
+      "reading": "khashabatu l-masraḥi",
+      "meaning": "stage",
+      "example": "وَقَفَ الْمُمَثِّلُ عَلَى خَشَبَةِ الْمَسْرَحِ بِثِقَةٍ.",
+      "exampleMeaning": "The actor stood on the stage with confidence."
+    },
+    {
+      "word": "مُمَثِّلٌ",
+      "reading": "mumaththilun",
+      "meaning": "actor",
+      "example": "حَفِظَ الْمُمَثِّلُ دَوْرَهُ بِسُرْعَةٍ.",
+      "exampleMeaning": "The actor memorized his role quickly."
+    },
+    {
+      "word": "مُمَثِّلَةٌ",
+      "reading": "mumaththilatun",
+      "meaning": "actress",
+      "example": "قَدَّمَتِ الْمُمَثِّلَةُ مَشْهَدًا مُؤَثِّرًا.",
+      "exampleMeaning": "The actress presented a moving scene."
+    },
+    {
+      "word": "مُخْرِجٌ",
+      "reading": "mukhrijun",
+      "meaning": "director",
+      "example": "نَاقَشَ الْمُخْرِجُ النَّصَّ مَعَ الْفِرْقَةِ.",
+      "exampleMeaning": "The director discussed the text with the troupe."
+    },
+    {
+      "word": "نَصٌّ مَسْرَحِيٌّ",
+      "reading": "naṣṣun masraḥiyyun",
+      "meaning": "play script",
+      "example": "كَتَبَتِ الطَّالِبَةُ نَصًّا مَسْرَحِيًّا قَصِيرًا.",
+      "exampleMeaning": "The student wrote a short play script."
+    },
+    {
+      "word": "تَمْرِينٌ",
+      "reading": "tamrīnun",
+      "meaning": "rehearsal",
+      "example": "يَبْدَأُ التَّمْرِينُ قَبْلَ الْعَرْضِ بِسَاعَةٍ.",
+      "exampleMeaning": "The rehearsal begins an hour before the show."
+    },
+    {
+      "word": "جُمْهُورٌ",
+      "reading": "jumhūrun",
+      "meaning": "audience",
+      "example": "صَفَّقَ الْجُمْهُورُ طَوِيلًا فِي النِّهَايَةِ.",
+      "exampleMeaning": "The audience applauded for a long time at the end."
+    },
+    {
+      "word": "تَصْفِيقٌ",
+      "reading": "taṣfīqun",
+      "meaning": "applause",
+      "example": "مَلَأَ التَّصْفِيقُ الْقَاعَةَ بَعْدَ الْمَشْهَدِ.",
+      "exampleMeaning": "Applause filled the hall after the scene."
+    },
+    {
+      "word": "سِتَارٌ",
+      "reading": "sitārun",
+      "meaning": "curtain",
+      "example": "اِرْتَفَعَ السِّتَارُ عِنْدَ السَّابِعَةِ.",
+      "exampleMeaning": "The curtain rose at seven."
+    },
+    {
+      "word": "إِضَاءَةٌ",
+      "reading": "iḍāʾatun",
+      "meaning": "lighting",
+      "example": "غَيَّرَتِ الْإِضَاءَةُ جَوَّ الْمَشْهَدِ.",
+      "exampleMeaning": "The lighting changed the mood of the scene."
+    },
+    {
+      "word": "أَزْيَاءٌ",
+      "reading": "azyāʾun",
+      "meaning": "costumes",
+      "example": "صَمَّمَتِ الْفِرْقَةُ أَزْيَاءً مُلَوَّنَةً.",
+      "exampleMeaning": "The troupe designed colorful costumes."
+    },
+    {
+      "word": "مَشْهَدٌ",
+      "reading": "mashhadun",
+      "meaning": "scene",
+      "example": "يَحْتَاجُ هَذَا الْمَشْهَدُ إِلَى هُدُوءٍ.",
+      "exampleMeaning": "This scene needs calm."
+    },
+    {
+      "word": "دَوْرٌ",
+      "reading": "dawrun",
+      "meaning": "role",
+      "example": "أَخَذَتِ الْمُمَثِّلَةُ دَوْرًا رَئِيسِيًّا.",
+      "exampleMeaning": "The actress took a leading role."
+    },
+    {
+      "word": "اِرْتِجَالٌ",
+      "reading": "irtijālun",
+      "meaning": "improvisation",
+      "example": "أَضَافَ الِارْتِجَالُ ضِحْكَةً غَيْرَ مُتَوَقَّعَةٍ.",
+      "exampleMeaning": "Improvisation added an unexpected laugh."
+    },
+    {
+      "word": "عَرْضٌ",
+      "reading": "ʿarḍun",
+      "meaning": "performance",
+      "example": "حَضَرْنَا عَرْضًا مَسْرَحِيًّا مُمْتِعًا.",
+      "exampleMeaning": "We attended an enjoyable theatrical performance."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "وَقَفَ الْمُمَثِّلُ عَلَى ___ بِثِقَةٍ.",
+          "answer": "خَشَبَةُ الْمَسْرَحِ",
+          "hint": "stage"
+        },
+        {
+          "sentence": "يَبْدَأُ ___ قَبْلَ الْعَرْضِ بِسَاعَةٍ.",
+          "answer": "تَمْرِينٌ",
+          "hint": "rehearsal"
+        },
+        {
+          "sentence": "صَفَّقَ ___ طَوِيلًا فِي النِّهَايَةِ.",
+          "answer": "جُمْهُورٌ",
+          "hint": "audience"
+        },
+        {
+          "sentence": "غَيَّرَتِ ___ جَوَّ الْمَشْهَدِ.",
+          "answer": "إِضَاءَةٌ",
+          "hint": "lighting"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "What does ‘اِرْتِجَالٌ’ mean?",
+      "options": [
+        "improvisation",
+        "curtain",
+        "costumes",
+        "director"
+      ],
+      "answer": 0
+    }
+  ]
+}

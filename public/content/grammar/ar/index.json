@@ -778,5 +778,65 @@
     "title": "Maqṣūr, Manqūṣ & Mamdūd Nouns",
     "order": 130,
     "group": "🔢 Structure & Nuance"
+  },
+  {
+    "id": "sentence-hal-clauses",
+    "title": "Sentence Ḥāl Clauses",
+    "order": 131,
+    "group": "🔢 Structure & Nuance"
+  },
+  {
+    "id": "tanazu-competing-governors",
+    "title": "Tanāzuʿ: Competing Verb Governors",
+    "order": 132,
+    "group": "🔢 Structure & Nuance"
+  },
+  {
+    "id": "ishtighal-preoccupation",
+    "title": "Ishtighāl: Fronted Object with a Resumptive Pronoun",
+    "order": 133,
+    "group": "🔢 Structure & Nuance"
+  },
+  {
+    "id": "nat-sababi",
+    "title": "Naʿt Sababī: Adjectives Linked to a Related Noun",
+    "order": 134,
+    "group": "🔢 Structure & Nuance"
+  },
+  {
+    "id": "la-siyyama",
+    "title": "Lā Siyyamā: Saying Especially",
+    "order": 135,
+    "group": "🔢 Structure & Nuance"
+  },
+  {
+    "id": "answer-particles",
+    "title": "Answer Particles: naʿam, balā, kallā",
+    "order": 136,
+    "group": "🔢 Structure & Nuance"
+  },
+  {
+    "id": "pausal-forms",
+    "title": "Pausal Forms and Case Endings",
+    "order": 137,
+    "group": "🏗️ Foundations"
+  },
+  {
+    "id": "hamzated-verbs",
+    "title": "Hamzated Verbs and Hamza Changes",
+    "order": 138,
+    "group": "🔤 Verbs"
+  },
+  {
+    "id": "form-viii-assimilation",
+    "title": "Form VIII Assimilation with tāʾ",
+    "order": 139,
+    "group": "🔤 Verbs"
+  },
+  {
+    "id": "avoiding-two-sukuns",
+    "title": "Avoiding Two Sukūns",
+    "order": 140,
+    "group": "🏗️ Foundations"
   }
 ]

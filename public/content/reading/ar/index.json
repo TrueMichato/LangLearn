@@ -948,6 +948,106 @@
       ],
       "description": "A reflective blog-style text about memory, technology, and attention.",
       "wordCount": 141
+    },
+    {
+      "id": "morning-exercise-ar",
+      "title": "تَمْرِينُ الصَّبَاحِ",
+      "titleEn": "Morning Exercise",
+      "difficulty": "easy",
+      "tags": [
+        "health",
+        "daily-life"
+      ],
+      "description": "A simple morning routine about gentle movement and starting the day well.",
+      "wordCount": 44
+    },
+    {
+      "id": "bakery-dialogue-ar",
+      "title": "فِي الْمَخْبَزِ",
+      "titleEn": "At the Bakery",
+      "difficulty": "easy",
+      "tags": [
+        "food",
+        "conversation",
+        "dialogue"
+      ],
+      "description": "A beginner dialogue about buying fresh bread and a small cake.",
+      "wordCount": 42
+    },
+    {
+      "id": "bicycle-ride-ar",
+      "title": "جَوْلَةُ الدَّرَّاجَةِ",
+      "titleEn": "The Bicycle Ride",
+      "difficulty": "easy",
+      "tags": [
+        "daily-life",
+        "health"
+      ],
+      "description": "A short safety-focused scene about riding a bicycle in the afternoon.",
+      "wordCount": 43
+    },
+    {
+      "id": "water-cycle-ar",
+      "title": "دَوْرَةُ الْمَاءِ",
+      "titleEn": "The Water Cycle",
+      "difficulty": "medium",
+      "tags": [
+        "science",
+        "nature",
+        "education"
+      ],
+      "description": "A clear science explainer about evaporation, clouds, rain, and returning water.",
+      "wordCount": 82
+    },
+    {
+      "id": "first-aid-school-ar",
+      "title": "إِسْعَافٌ فِي الْمَدْرَسَةِ",
+      "titleEn": "First Aid at School",
+      "difficulty": "medium",
+      "tags": [
+        "health",
+        "education",
+        "daily-life"
+      ],
+      "description": "A school story that teaches calm, clean, and safe first-aid steps.",
+      "wordCount": 81
+    },
+    {
+      "id": "petra-diary-ar",
+      "title": "مُذَكِّرَةٌ مِنَ الْبَتْراءِ",
+      "titleEn": "Diary from Petra",
+      "difficulty": "medium",
+      "tags": [
+        "travel",
+        "culture",
+        "history"
+      ],
+      "description": "A travel diary about seeing Petra, learning its water systems, and sending a postcard.",
+      "wordCount": 80
+    },
+    {
+      "id": "rooftop-solar-report-ar",
+      "title": "تَقْرِيرُ الطَّاقَةِ الشَّمْسِيَّةِ",
+      "titleEn": "Report on Rooftop Solar Panels",
+      "difficulty": "hard",
+      "tags": [
+        "science",
+        "society"
+      ],
+      "description": "A news-style report about a school rooftop solar project and practical sustainability.",
+      "wordCount": 141
+    },
+    {
+      "id": "lantern-and-wind-ar",
+      "title": "الْمِصْبَاحُ وَالرِّيحُ",
+      "titleEn": "The Lantern and the Wind",
+      "difficulty": "hard",
+      "tags": [
+        "folktale",
+        "proverb"
+      ],
+      "description": "An original fable about patient service, strength, and mercy.",
+      "wordCount": 141
     }
   ]
 }
