@@ -228,6 +228,30 @@
         "history"
       ],
       "description": "An informative text about the UNESCO painted monasteries of northern Moldavia (Voroneț)."
+    },
+    {
+      "id": "vestitorii-primaverii",
+      "title": "Vestitorii primăverii",
+      "titleEn": "The Heralds of Spring",
+      "difficulty": "hard",
+      "wordCount": 149,
+      "tags": [
+        "literature",
+        "poetry"
+      ],
+      "description": "A public-domain spring poem by George Coșbuc (from ro.wikisource.org)."
+    },
+    {
+      "id": "dracula-vlad-tepes",
+      "title": "Dracula și Vlad Țepeș",
+      "titleEn": "Dracula and Vlad the Impaler",
+      "difficulty": "medium",
+      "wordCount": 163,
+      "tags": [
+        "culture",
+        "history"
+      ],
+      "description": "How the fictional Count Dracula relates to the historical prince Vlad Țepeș."
     }
   ]
 }

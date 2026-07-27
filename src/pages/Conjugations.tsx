@@ -11,10 +11,11 @@ import { PT_VERBS, PT_FORM_LABELS, type PtFormName } from '../data/conjugations/
 import { ES_VERBS, ES_FORM_LABELS, type EsFormName } from '../data/conjugations/es-verbs';
 import { RO_VERBS, RO_FORM_LABELS, type RoFormName } from '../data/conjugations/ro-verbs';
 import { RO_NOUNS, RO_CASE_LABELS, type RoCaseName } from '../data/conjugations/ro-nouns';
+import { RO_ADJECTIVES, RO_ADJ_FORM_LABELS, type RoAdjFormName } from '../data/conjugations/ro-adjectives';
 import TileDrill, { type DrillQuestion } from '../components/drills/TileDrill';
 import TypeDrill from '../components/drills/TypeDrill';
 
-type Category = 'ja-verbs' | 'ru-verbs' | 'ru-nouns' | 'ru-adjectives' | 'pt-verbs' | 'es-verbs' | 'ro-verbs' | 'ro-nouns';
+type Category = 'ja-verbs' | 'ru-verbs' | 'ru-nouns' | 'ru-adjectives' | 'pt-verbs' | 'es-verbs' | 'ro-verbs' | 'ro-nouns' | 'ro-adjectives';
 type DrillMode = 'tiles' | 'type';
 
 const CATEGORIES: Record<string, { value: Category; label: string }[]> = {
@@ -29,6 +30,7 @@ const CATEGORIES: Record<string, { value: Category; label: string }[]> = {
   ro: [
     { value: 'ro-verbs', label: 'Verb Conjugation' },
     { value: 'ro-nouns', label: 'Noun Declension' },
+    { value: 'ro-adjectives', label: 'Adjective Agreement' },
   ],
 };
 
@@ -63,6 +65,8 @@ function getFormOptions(category: Category): { value: string; label: string }[] 
       return Object.entries(RO_FORM_LABELS).map(([value, label]) => ({ value, label }));
     case 'ro-nouns':
       return Object.entries(RO_CASE_LABELS).map(([value, label]) => ({ value, label }));
+    case 'ro-adjectives':
+      return Object.entries(RO_ADJ_FORM_LABELS).map(([value, label]) => ({ value, label }));
   }
 }
 
@@ -171,6 +175,17 @@ function buildQuestions(category: Category, selectedForms: string[]): DrillQuest
         questions.push({
           prompt: `${noun.nominative} (${noun.meaning}) → ${RO_CASE_LABELS[c]} plural`,
           correctAnswer: noun.declensions[c].plural,
+          language: 'ro',
+        });
+      }
+    }
+  } else if (category === 'ro-adjectives') {
+    const forms = selectedForms as RoAdjFormName[];
+    for (const adj of RO_ADJECTIVES) {
+      for (const form of forms) {
+        questions.push({
+          prompt: `${adj.base} (${adj.meaning}) → ${RO_ADJ_FORM_LABELS[form]}`,
+          correctAnswer: adj.forms[form],
           language: 'ro',
         });
       }
