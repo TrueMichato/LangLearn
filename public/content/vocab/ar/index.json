@@ -1230,5 +1230,85 @@
     "order": 156,
     "wordCount": 16,
     "level": "intermediate"
+  },
+  {
+    "id": "egyptian-barber-salon",
+    "title": "Egyptian Barber & Salon",
+    "order": 157,
+    "wordCount": 16,
+    "level": "beginner",
+    "dialect": "egyptian"
+  },
+  {
+    "id": "egyptian-sports-talk",
+    "title": "Egyptian Sports Talk",
+    "order": 158,
+    "wordCount": 16,
+    "level": "beginner",
+    "dialect": "egyptian"
+  },
+  {
+    "id": "levantine-apologies-excuses",
+    "title": "Levantine Apologies & Excuses",
+    "order": 159,
+    "wordCount": 16,
+    "level": "beginner",
+    "dialect": "levantine"
+  },
+  {
+    "id": "levantine-weather-chat",
+    "title": "Levantine Weather Chat",
+    "order": 160,
+    "wordCount": 16,
+    "level": "beginner",
+    "dialect": "levantine"
+  },
+  {
+    "id": "gulf-family-kids",
+    "title": "Gulf Family & Kids",
+    "order": 161,
+    "wordCount": 16,
+    "level": "beginner",
+    "dialect": "gulf"
+  },
+  {
+    "id": "gulf-weekend-leisure",
+    "title": "Gulf Weekend & Leisure",
+    "order": 162,
+    "wordCount": 16,
+    "level": "beginner",
+    "dialect": "gulf"
+  },
+  {
+    "id": "iraqi-neighbors-community",
+    "title": "Iraqi Neighbors & Community",
+    "order": 163,
+    "wordCount": 16,
+    "level": "beginner",
+    "dialect": "iraqi"
+  },
+  {
+    "id": "iraqi-feelings-reactions",
+    "title": "Iraqi Feelings & Reactions",
+    "order": 164,
+    "wordCount": 16,
+    "level": "beginner",
+    "dialect": "iraqi"
+  },
+  {
+    "id": "maghrebi-cooking-kitchen",
+    "title": "Maghrebi Cooking & Kitchen",
+    "order": 165,
+    "wordCount": 16,
+    "level": "beginner",
+    "dialect": "maghrebi"
+  },
+  {
+    "id": "maghrebi-shopping-clothes",
+    "title": "Maghrebi Shopping for Clothes",
+    "order": 166,
+    "wordCount": 16,
+    "level": "beginner",
+    "dialect": "maghrebi"
   }
 ]

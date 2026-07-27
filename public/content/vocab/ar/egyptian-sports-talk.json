@@ -1,0 +1,159 @@
+{
+  "id": "egyptian-sports-talk",
+  "words": [
+    {
+      "word": "الْمَاتْشْ",
+      "reading": "il-mātsh",
+      "meaning": "the match",
+      "example": "الْمَاتْشْ هَيِبْدَأْ بَعْدَ نُصّ سَاعَةْ.",
+      "exampleMeaning": "The match will start in half an hour."
+    },
+    {
+      "word": "الْفَرِيقْ",
+      "reading": "il-farīʔ",
+      "meaning": "the team",
+      "example": "الْفَرِيقْ لَعِبْ كُوَيِّسْ النَّهَارْدَهْ.",
+      "exampleMeaning": "The team played well today."
+    },
+    {
+      "word": "اللَّعِيبْ",
+      "reading": "il-laʿīb",
+      "meaning": "the player",
+      "example": "اللَّعِيبْ دَهْ سَرِيعْ جِدًّا.",
+      "exampleMeaning": "This player is very fast."
+    },
+    {
+      "word": "جُونْ",
+      "reading": "gōl",
+      "meaning": "goal",
+      "example": "جَبْنَا جُونْ فِي آخِر دَقِيقَةْ.",
+      "exampleMeaning": "We scored a goal in the last minute."
+    },
+    {
+      "word": "حَكَمْ",
+      "reading": "ḥakam",
+      "meaning": "referee",
+      "example": "الْحَكَمْ صَفَّرْ بَدْرِي.",
+      "exampleMeaning": "The referee blew the whistle early."
+    },
+    {
+      "word": "ضَرْبَة جَزَا",
+      "reading": "ḍarbet gazā",
+      "meaning": "penalty kick",
+      "example": "الْحَكَمْ حَسَبْ ضَرْبَة جَزَا لِينَا.",
+      "exampleMeaning": "The referee gave us a penalty kick."
+    },
+    {
+      "word": "تَسَلُّلْ",
+      "reading": "tasallul",
+      "meaning": "offside",
+      "example": "الْجُونْ اتْلَغَى عَشَانْ تَسَلُّلْ.",
+      "exampleMeaning": "The goal was canceled for offside."
+    },
+    {
+      "word": "شُوطْ",
+      "reading": "shōṭ",
+      "meaning": "half of a game",
+      "example": "الشُّوطْ التَّانِي كَانْ أَحْسَنْ.",
+      "exampleMeaning": "The second half was better."
+    },
+    {
+      "word": "كَسَبْنَا",
+      "reading": "kasabnā",
+      "meaning": "we won",
+      "example": "كَسَبْنَا اتْنِينْ صِفْرْ.",
+      "exampleMeaning": "We won two to nil."
+    },
+    {
+      "word": "خَسْرِنَا",
+      "reading": "khasrinā",
+      "meaning": "we lost",
+      "example": "خَسْرِنَا بَسّ لَعِبْنَا بِرُوحْ.",
+      "exampleMeaning": "We lost, but we played with spirit."
+    },
+    {
+      "word": "تَعَادُلْ",
+      "reading": "taʿādul",
+      "meaning": "draw / tie",
+      "example": "الْمَاتْشْ خِلِصْ تَعَادُلْ.",
+      "exampleMeaning": "The match ended in a draw."
+    },
+    {
+      "word": "شَجَّعْ",
+      "reading": "shaggaʿ",
+      "meaning": "cheer for",
+      "example": "إِنْتَ بْتِشَجَّعْ أَنهي فَرِيقْ؟",
+      "exampleMeaning": "Which team do you cheer for?"
+    },
+    {
+      "word": "مِتْعَصِّبْ",
+      "reading": "mitʿaṣṣib",
+      "meaning": "overly fanatical",
+      "example": "مَا تِبْقَاشْ مِتْعَصِّبْ أَوِي.",
+      "exampleMeaning": "Do not be too fanatical."
+    },
+    {
+      "word": "بَاصِي",
+      "reading": "bāṣi",
+      "meaning": "pass it",
+      "example": "بَاصِي الْكُورَةْ لِلَّعِيبْ الْفَاضِي.",
+      "exampleMeaning": "Pass the ball to the open player."
+    },
+    {
+      "word": "سَدِّدْ",
+      "reading": "saddid",
+      "meaning": "shoot",
+      "example": "سَدِّدْ قَبْلَ مَا الْحَكَمْ يِصَفَّرْ.",
+      "exampleMeaning": "Shoot before the referee blows the whistle."
+    },
+    {
+      "word": "الْمَدَرَّبْ",
+      "reading": "il-midarrab",
+      "meaning": "the coach",
+      "example": "الْمَدَرَّبْ غَيَّرِ الْخُطَّةْ فِي الشُّوطْ التَّانِي.",
+      "exampleMeaning": "The coach changed the plan in the second half."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "جَبْنَا ___ فِي آخِر دَقِيقَةْ.",
+          "answer": "جُونْ",
+          "hint": "goal"
+        },
+        {
+          "sentence": "الْمَاتْشْ خِلِصْ ___.",
+          "answer": "تَعَادُلْ",
+          "hint": "draw"
+        },
+        {
+          "sentence": "___ الْكُورَةْ لِلَّعِيبْ الْفَاضِي.",
+          "answer": "بَاصِي",
+          "hint": "pass it"
+        },
+        {
+          "sentence": "___ غَيَّرِ الْخُطَّةْ.",
+          "answer": "الْمَدَرَّبْ",
+          "hint": "the coach"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "In Egyptian football talk, what is ‘جُونْ’?",
+      "options": [
+        "goal",
+        "coach",
+        "offside",
+        "half"
+      ],
+      "answer": 0
+    }
+  ]
+}

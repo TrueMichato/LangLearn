@@ -1,0 +1,159 @@
+{
+  "id": "iraqi-neighbors-community",
+  "words": [
+    {
+      "word": "الْجِيرَانْ",
+      "reading": "il-jīrān",
+      "meaning": "the neighbors",
+      "example": "الْجِيرَانْ يِسَاعِدُونَا بِالرَّمَضَانْ.",
+      "exampleMeaning": "The neighbors help us in Ramadan."
+    },
+    {
+      "word": "مَحَلَّةْ",
+      "reading": "maḥalla",
+      "meaning": "neighborhood",
+      "example": "مَحَلَّتْنَا هَادْيَةْ بِاللَّيْلْ.",
+      "exampleMeaning": "Our neighborhood is quiet at night."
+    },
+    {
+      "word": "أَكُو",
+      "reading": "aku",
+      "meaning": "there is / there are",
+      "example": "أَكُو اِجْتِمَاعْ صُغَيَّرْ بِالْحَارَةْ.",
+      "exampleMeaning": "There is a small meeting in the quarter."
+    },
+    {
+      "word": "مَاكُو",
+      "reading": "māku",
+      "meaning": "there is not / none",
+      "example": "مَاكُو كَهْرَبَا مِنْ سَاعَةْ.",
+      "exampleMeaning": "There has been no electricity for an hour."
+    },
+    {
+      "word": "شِنُو الْخَبَرْ",
+      "reading": "shinu il-khabar",
+      "meaning": "what is the news?",
+      "example": "شِنُو الْخَبَرْ عِنْدَ الْجِيرَانْ؟",
+      "exampleMeaning": "What is the news with the neighbors?"
+    },
+    {
+      "word": "عِزِيمَةْ",
+      "reading": "ʿazīma",
+      "meaning": "invitation / feast",
+      "example": "عِنْدَنَا عِزِيمَةْ بَيْتِ الْخَالْ.",
+      "exampleMeaning": "We have a feast at my uncle's house."
+    },
+    {
+      "word": "فَزْعَةْ",
+      "reading": "fazʿa",
+      "meaning": "help in a pinch",
+      "example": "نِحْتَاجْ فَزْعَةْ نَنْقِلِ الْأَثَاثْ.",
+      "exampleMeaning": "We need help moving the furniture."
+    },
+    {
+      "word": "نِتْعَاوَنْ",
+      "reading": "nitʿāwan",
+      "meaning": "we cooperate",
+      "example": "نِتْعَاوَنْ وَنْنَظِّفِ الشَّارِعْ.",
+      "exampleMeaning": "We cooperate and clean the street."
+    },
+    {
+      "word": "دَكّ الْبَابْ",
+      "reading": "dagg il-bāb",
+      "meaning": "knock on the door",
+      "example": "دَكّ الْبَابْ قَبْلَ مَا تِدْخُلْ.",
+      "exampleMeaning": "Knock on the door before you enter."
+    },
+    {
+      "word": "تِنْطِينِي",
+      "reading": "tinṭīnī",
+      "meaning": "can you give me?",
+      "example": "تِنْطِينِي كُوبْ مَايْ؟",
+      "exampleMeaning": "Can you give me a cup of water?"
+    },
+    {
+      "word": "بَاب الْبَيْتْ",
+      "reading": "bāb il-bēt",
+      "meaning": "house door",
+      "example": "بَاب الْبَيْتْ مَفْتُوحْ لِلْأَهْلْ.",
+      "exampleMeaning": "The house door is open for family."
+    },
+    {
+      "word": "سَطْحْ",
+      "reading": "saṭḥ",
+      "meaning": "roof",
+      "example": "نِطْلَعْ عَالسَّطْحْ بَعْدَ الْمَطَرْ.",
+      "exampleMeaning": "We go up to the roof after the rain."
+    },
+    {
+      "word": "حَارَةْ",
+      "reading": "ḥāra",
+      "meaning": "quarter / alley community",
+      "example": "الْحَارَةْ كِلَّهَا تَعْرِفْ بَعْضْ.",
+      "exampleMeaning": "The whole quarter knows each other."
+    },
+    {
+      "word": "تَجَمُّعْ",
+      "reading": "tajammuʿ",
+      "meaning": "gathering",
+      "example": "صَارَ تَجَمُّعْ قُدَّامِ الدُّكَّانْ.",
+      "exampleMeaning": "A gathering happened in front of the shop."
+    },
+    {
+      "word": "مُولِّدَةْ",
+      "reading": "muwallida",
+      "meaning": "generator",
+      "example": "الْمُولِّدَةْ اشْتَغَلَتْ بَعْدَ مَا طَفَتِ الْكَهْرَبَا.",
+      "exampleMeaning": "The generator started after the electricity went out."
+    },
+    {
+      "word": "جَايْ",
+      "reading": "chāy",
+      "meaning": "tea",
+      "example": "تَعَالُوا نِشْرَبْ جَايْ عِنْدِ الْجِيرَانْ.",
+      "exampleMeaning": "Come drink tea at the neighbors' place."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "___ اِجْتِمَاعْ صُغَيَّرْ بِالْحَارَةْ.",
+          "answer": "أَكُو",
+          "hint": "there is"
+        },
+        {
+          "sentence": "___ كَهْرَبَا مِنْ سَاعَةْ.",
+          "answer": "مَاكُو",
+          "hint": "there is not"
+        },
+        {
+          "sentence": "___ قَبْلَ مَا تِدْخُلْ.",
+          "answer": "دَكّ الْبَابْ",
+          "hint": "knock on the door"
+        },
+        {
+          "sentence": "تَعَالُوا نِشْرَبْ ___ عِنْدِ الْجِيرَانْ.",
+          "answer": "جَايْ",
+          "hint": "tea"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "In Iraqi Arabic, what does ‘أَكُو’ mean?",
+      "options": [
+        "there is / there are",
+        "there is not",
+        "tea",
+        "neighbor"
+      ],
+      "answer": 0
+    }
+  ]
+}

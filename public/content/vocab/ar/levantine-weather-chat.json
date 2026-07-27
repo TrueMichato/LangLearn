@@ -1,0 +1,159 @@
+{
+  "id": "levantine-weather-chat",
+  "words": [
+    {
+      "word": "شُو الْجَوّ",
+      "reading": "shū il-jaww",
+      "meaning": "how is the weather?",
+      "example": "شُو الْجَوّ عِنْدْكُمْ الْيَوْمْ؟",
+      "exampleMeaning": "How is the weather at your place today?"
+    },
+    {
+      "word": "الدُّنْيَا حَرّْ",
+      "reading": "id-dinyā ḥarr",
+      "meaning": "it is hot",
+      "example": "الدُّنْيَا حَرّْ وَبِدَّهَا مَيّ بَارِدْ.",
+      "exampleMeaning": "It is hot and it needs cold water."
+    },
+    {
+      "word": "بَرْدَانْ",
+      "reading": "bardān",
+      "meaning": "cold / feeling cold",
+      "example": "أَنَا بَرْدَانْ، وَيْنِ الْجَاكِيتْ؟",
+      "exampleMeaning": "I am cold; where is the jacket?"
+    },
+    {
+      "word": "شَوْبْ",
+      "reading": "shōb",
+      "meaning": "heat / hot weather",
+      "example": "فِي شَوْبْ كْتِيرْ بِنُصّ النَّهَارْ.",
+      "exampleMeaning": "There is a lot of heat at midday."
+    },
+    {
+      "word": "غَيْمْ",
+      "reading": "ghēm",
+      "meaning": "clouds",
+      "example": "فِي غَيْمْ فَوْقِ الْجَبَلْ.",
+      "exampleMeaning": "There are clouds above the mountain."
+    },
+    {
+      "word": "مَطَرْ",
+      "reading": "maṭar",
+      "meaning": "rain",
+      "example": "الْمَطَرْ بَلَّشْ قَبْلَ الْمَسَا.",
+      "exampleMeaning": "The rain started before evening."
+    },
+    {
+      "word": "هَوَا",
+      "reading": "hawā",
+      "meaning": "wind / breeze",
+      "example": "الْهَوَا قَوِيّْ عَالْبَحْرْ.",
+      "exampleMeaning": "The wind is strong by the sea."
+    },
+    {
+      "word": "رَطُوبَةْ",
+      "reading": "raṭūbe",
+      "meaning": "humidity",
+      "example": "الرَّطُوبَةْ عَالْيَةْ بِالصَّيْفْ.",
+      "exampleMeaning": "The humidity is high in summer."
+    },
+    {
+      "word": "شَمْسْ قَوِيَّةْ",
+      "reading": "shams ʔawiyye",
+      "meaning": "strong sun",
+      "example": "فِي شَمْسْ قَوِيَّةْ، حُطّ نَضَّارَةْ.",
+      "exampleMeaning": "There is strong sun; put on sunglasses."
+    },
+    {
+      "word": "بُكْرَا",
+      "reading": "bukra",
+      "meaning": "tomorrow",
+      "example": "بُكْرَا الْجَوّ أَحْسَنْ شْوَيّ.",
+      "exampleMeaning": "Tomorrow the weather is a bit better."
+    },
+    {
+      "word": "جَاي عَاصِفَةْ",
+      "reading": "jāy ʿāṣife",
+      "meaning": "a storm is coming",
+      "example": "جَاي عَاصِفَةْ بِاللَّيْلْ، سَكِّرِ الشَّبَابِيكْ.",
+      "exampleMeaning": "A storm is coming at night; close the windows."
+    },
+    {
+      "word": "الدُّنْيَا عَتَّمِتْ",
+      "reading": "id-dinyā ʿattamit",
+      "meaning": "it got dark outside",
+      "example": "الدُّنْيَا عَتَّمِتْ بَكِّيرْ مِنِ الْغَيْمْ.",
+      "exampleMeaning": "It got dark early from the clouds."
+    },
+    {
+      "word": "لَبِّسْ جَاكِيتْ",
+      "reading": "labbis jākēt",
+      "meaning": "put on a jacket",
+      "example": "لَبِّسْ جَاكِيتْ لِأَنُّو بَرْدَانْ بَرَّا.",
+      "exampleMeaning": "Put on a jacket because it is cold outside."
+    },
+    {
+      "word": "مُشْتَاقْ لِلرَّبِيعْ",
+      "reading": "mushtāʔ lir-rabīʿ",
+      "meaning": "missing spring",
+      "example": "مُشْتَاقْ لِلرَّبِيعْ وَالْجَوّ اللَّطِيفْ.",
+      "exampleMeaning": "I miss spring and the pleasant weather."
+    },
+    {
+      "word": "تَلْجْ",
+      "reading": "talj",
+      "meaning": "snow",
+      "example": "التَّلْجْ غَطَّى السَّيَّارَاتْ الصُّبْحْ.",
+      "exampleMeaning": "The snow covered the cars in the morning."
+    },
+    {
+      "word": "دَفِّي",
+      "reading": "daffī",
+      "meaning": "warm up",
+      "example": "دَفِّي إِيدَيْكْ قَبْلَ مَا نِطْلَعْ.",
+      "exampleMeaning": "Warm your hands before we go out."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "___ عِنْدْكُمْ الْيَوْمْ؟",
+          "answer": "شُو الْجَوّ",
+          "hint": "how is the weather?"
+        },
+        {
+          "sentence": "فِي ___ فَوْقِ الْجَبَلْ.",
+          "answer": "غَيْمْ",
+          "hint": "clouds"
+        },
+        {
+          "sentence": "___ بِاللَّيْلْ، سَكِّرِ الشَّبَابِيكْ.",
+          "answer": "جَاي عَاصِفَةْ",
+          "hint": "a storm is coming"
+        },
+        {
+          "sentence": "___ إِيدَيْكْ قَبْلَ مَا نِطْلَعْ.",
+          "answer": "دَفِّي",
+          "hint": "warm up"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "In Levantine Arabic, what does ‘شُو الْجَوّ’ ask?",
+      "options": [
+        "how is the weather?",
+        "where is the jacket?",
+        "is there snow?",
+        "close the windows"
+      ],
+      "answer": 0
+    }
+  ]
+}

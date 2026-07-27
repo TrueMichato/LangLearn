@@ -1,0 +1,159 @@
+{
+  "id": "iraqi-feelings-reactions",
+  "words": [
+    {
+      "word": "فَرْحَانْ",
+      "reading": "farḥān",
+      "meaning": "happy",
+      "example": "أَنَا فَرْحَانْ بِنَتِيجَتَكْ.",
+      "exampleMeaning": "I am happy with your result."
+    },
+    {
+      "word": "زَعْلَانْ",
+      "reading": "zaʿlān",
+      "meaning": "upset",
+      "example": "لِيشْ زَعْلَانْ مِنِّي؟",
+      "exampleMeaning": "Why are you upset with me?"
+    },
+    {
+      "word": "مُتْضَايِجْ",
+      "reading": "mutḍāyij",
+      "meaning": "annoyed / bothered",
+      "example": "هُوَّ مُتْضَايِجْ مِنَ الزَّحْمَةْ.",
+      "exampleMeaning": "He is annoyed by the traffic."
+    },
+    {
+      "word": "خَجْلَانْ",
+      "reading": "khajlān",
+      "meaning": "embarrassed / shy",
+      "example": "خَجْلَانْ أَحْكِي قُدَّامِ النَّاسْ.",
+      "exampleMeaning": "I am embarrassed to speak in front of people."
+    },
+    {
+      "word": "مُسْتَغْرِبْ",
+      "reading": "mustaghrib",
+      "meaning": "surprised",
+      "example": "أَنَا مُسْتَغْرِبْ مِنْ هَالْقَرَارْ.",
+      "exampleMeaning": "I am surprised by this decision."
+    },
+    {
+      "word": "خِفْتْ",
+      "reading": "khift",
+      "meaning": "I got scared",
+      "example": "خِفْتْ لَمَّا سَمِعْتِ الصَّوْتْ.",
+      "exampleMeaning": "I got scared when I heard the sound."
+    },
+    {
+      "word": "عَصَّبْتْ",
+      "reading": "ʿaṣṣabt",
+      "meaning": "I got angry",
+      "example": "عَصَّبْتْ بَسّ بَعْدَيْنْ هَدَيْتْ.",
+      "exampleMeaning": "I got angry, but then I calmed down."
+    },
+    {
+      "word": "وَاللَّهْ",
+      "reading": "wallah",
+      "meaning": "really? / by God",
+      "example": "وَاللَّهْ؟ مَا كُنْتْ أَعْرِفْ.",
+      "exampleMeaning": "Really? I did not know."
+    },
+    {
+      "word": "هَا شِنُو",
+      "reading": "hā shinu",
+      "meaning": "hey, what is this?",
+      "example": "هَا شِنُو هَالْفَوْضَى؟",
+      "exampleMeaning": "Hey, what is this mess?"
+    },
+    {
+      "word": "مَا أَتْحَمَّلْ",
+      "reading": "mā atḥammal",
+      "meaning": "I cannot stand it",
+      "example": "مَا أَتْحَمَّلْ هَالْحَرّْ أَبَدْ.",
+      "exampleMeaning": "I cannot stand this heat at all."
+    },
+    {
+      "word": "عَافِيَةْ عَلَيْكْ",
+      "reading": "ʿāfiya ʿalēk",
+      "meaning": "well done / good for you",
+      "example": "عَافِيَةْ عَلَيْكْ، شُغْلَكْ حِلُوْ.",
+      "exampleMeaning": "Well done; your work is nice."
+    },
+    {
+      "word": "يِمَّهْ",
+      "reading": "yimma",
+      "meaning": "oh my! / mom!",
+      "example": "يِمَّهْ، شْكَدْ بَارِدْ الْجَوّْ.",
+      "exampleMeaning": "Oh my, how cold the weather is."
+    },
+    {
+      "word": "خُوشْ",
+      "reading": "khōsh",
+      "meaning": "nice / good",
+      "example": "هَذَا خُوشْ خَبَرْ الصُّبْحْ.",
+      "exampleMeaning": "This is nice news in the morning."
+    },
+    {
+      "word": "مُو مَعْقُولْ",
+      "reading": "mū maʿqūl",
+      "meaning": "unbelievable",
+      "example": "مُو مَعْقُولْ، أَكُو زَحْمَةْ هِيجْ.",
+      "exampleMeaning": "Unbelievable, there is traffic like this."
+    },
+    {
+      "word": "بْرَاحَتَكْ",
+      "reading": "brāḥtak",
+      "meaning": "as you like / take your time",
+      "example": "بْرَاحَتَكْ، مَاكُو مُشْكِلَةْ.",
+      "exampleMeaning": "As you like; there is no problem."
+    },
+    {
+      "word": "تْهَوَّنْ",
+      "reading": "thawwan",
+      "meaning": "it will get easier / cheer up",
+      "example": "تْهَوَّنْ، بَعْدَ شْوَيَّةْ تِتْحَسَّنْ.",
+      "exampleMeaning": "Cheer up; it will get better in a little while."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "أَنَا ___ بِنَتِيجَتَكْ.",
+          "answer": "فَرْحَانْ",
+          "hint": "happy"
+        },
+        {
+          "sentence": "___؟ مَا كُنْتْ أَعْرِفْ.",
+          "answer": "وَاللَّهْ",
+          "hint": "really?"
+        },
+        {
+          "sentence": "___، شُغْلَكْ حِلُوْ.",
+          "answer": "عَافِيَةْ عَلَيْكْ",
+          "hint": "well done"
+        },
+        {
+          "sentence": "___، بَعْدَ شْوَيَّةْ تِتْحَسَّنْ.",
+          "answer": "تْهَوَّنْ",
+          "hint": "cheer up"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "In Iraqi Arabic, what does ‘خُوشْ’ mean?",
+      "options": [
+        "nice / good",
+        "angry",
+        "too hot",
+        "knock"
+      ],
+      "answer": 0
+    }
+  ]
+}

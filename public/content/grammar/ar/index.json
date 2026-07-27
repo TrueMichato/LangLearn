@@ -934,5 +934,41 @@
     "title": "Coordination with ʿAṭf: Shared Case and Meaning",
     "order": 156,
     "group": "🔢 Structure & Nuance"
+  },
+  {
+    "id": "dialect-there-is",
+    "title": "There Is and There Isn't Across Dialects",
+    "order": 157,
+    "group": "🗣️ Colloquial & Dialects"
+  },
+  {
+    "id": "dialect-demonstratives",
+    "title": "Demonstratives Across Dialects",
+    "order": 158,
+    "group": "🗣️ Colloquial & Dialects"
+  },
+  {
+    "id": "dialect-genitive-markers",
+    "title": "Colloquial Genitive Markers: bitāʿ, tabaʿ, māl, dyāl",
+    "order": 159,
+    "group": "🗣️ Colloquial & Dialects"
+  },
+  {
+    "id": "dialect-want-verbs",
+    "title": "Wanting in the Dialects: ʿāyiz, badd, abghā, arīd, bghīt",
+    "order": 160,
+    "group": "🗣️ Colloquial & Dialects"
+  },
+  {
+    "id": "dialect-ability-verbs",
+    "title": "Being Able in the Dialects: Can and Cannot",
+    "order": 161,
+    "group": "🗣️ Colloquial & Dialects"
+  },
+  {
+    "id": "dialect-go-verbs",
+    "title": "Going in the Dialects: rūḥ and mshī",
+    "order": 162,
+    "group": "🗣️ Colloquial & Dialects"
   }
 ]

@@ -1,0 +1,159 @@
+{
+  "id": "levantine-apologies-excuses",
+  "words": [
+    {
+      "word": "آسِفْ",
+      "reading": "āsif",
+      "meaning": "sorry",
+      "example": "آسِفْ، تَأَخَّرْتْ عَلَيْكْ عَشْر دَقَايِقْ.",
+      "exampleMeaning": "Sorry, I was ten minutes late for you."
+    },
+    {
+      "word": "مَعْلِشْ",
+      "reading": "maʿlish",
+      "meaning": "never mind / sorry",
+      "example": "مَعْلِشْ، الْمِشْوَارْ طِلِعْ أَطْوَلْ.",
+      "exampleMeaning": "Sorry, the errand turned out longer."
+    },
+    {
+      "word": "سَامِحْنِي",
+      "reading": "sāmiḥnī",
+      "meaning": "forgive me",
+      "example": "سَامِحْنِي إِذَا زَعَّلْتَكْ.",
+      "exampleMeaning": "Forgive me if I upset you."
+    },
+    {
+      "word": "حَقَّكْ عَلَيّي",
+      "reading": "ḥaʔʔak ʿalayyi",
+      "meaning": "you are right; my fault",
+      "example": "حَقَّكْ عَلَيّي، مَا كَانْ لَازِمْ أَرُدّ هِيكْ.",
+      "exampleMeaning": "You are right; I should not have answered like that."
+    },
+    {
+      "word": "تَأَخَّرْتْ",
+      "reading": "taʔakhkhart",
+      "meaning": "I was late",
+      "example": "تَأَخَّرْتْ لِأَنُّو الطَّرِيقْ كَانْ مُسَكَّرْ.",
+      "exampleMeaning": "I was late because the road was closed."
+    },
+    {
+      "word": "عِنْدِي عُذْرْ",
+      "reading": "ʿindī ʿuzr",
+      "meaning": "I have an excuse",
+      "example": "عِنْدِي عُذْرْ، بَسّ بَفَهِّمَكْ بَعْدَيْنْ.",
+      "exampleMeaning": "I have an excuse, but I will explain later."
+    },
+    {
+      "word": "مَا قَصَدْتْ",
+      "reading": "mā ʔaṣadt",
+      "meaning": "I did not mean to",
+      "example": "مَا قَصَدْتْ إِحْكِي بِهَالطَّرِيقَةْ.",
+      "exampleMeaning": "I did not mean to speak that way."
+    },
+    {
+      "word": "نِسِيتْ",
+      "reading": "nisīt",
+      "meaning": "I forgot",
+      "example": "نِسِيتْ الْمَوْعِدْ وَتْلَخْبَطْتْ.",
+      "exampleMeaning": "I forgot the appointment and got mixed up."
+    },
+    {
+      "word": "صَار مَعِي شُغْلْ",
+      "reading": "ṣār maʿī shughul",
+      "meaning": "work came up for me",
+      "example": "صَار مَعِي شُغْلْ فَجْأَةْ بِالْمَكْتَبْ.",
+      "exampleMeaning": "Work suddenly came up for me at the office."
+    },
+    {
+      "word": "الطَّرِيقْ كَانْ مُسَكَّرْ",
+      "reading": "iṭ-ṭarīʔ kān msakkar",
+      "meaning": "the road was closed",
+      "example": "الطَّرِيقْ كَانْ مُسَكَّرْ عَشَانْ هَيْكْ تَأَخَّرْتْ.",
+      "exampleMeaning": "The road was closed; that is why I was late."
+    },
+    {
+      "word": "بَطَّارِيَّتِي خَلْصِتْ",
+      "reading": "baṭṭāriyyetī khilṣit",
+      "meaning": "my battery died",
+      "example": "بَطَّارِيَّتِي خَلْصِتْ وَمَا قِدِرْتْ إِتَّصِلْ.",
+      "exampleMeaning": "My battery died and I could not call."
+    },
+    {
+      "word": "مَا تْزْعَلْ",
+      "reading": "mā tizʿal",
+      "meaning": "do not be upset",
+      "example": "مَا تْزْعَلْ، خَلِّينِي عَوِّضَكْ.",
+      "exampleMeaning": "Do not be upset; let me make it up to you."
+    },
+    {
+      "word": "خَلِّينِي عَوِّضَكْ",
+      "reading": "khallīnī ʿawwiḍak",
+      "meaning": "let me make it up to you",
+      "example": "خَلِّينِي عَوِّضَكْ بِقَهْوَةْ بُكْرَا.",
+      "exampleMeaning": "Let me make it up to you with coffee tomorrow."
+    },
+    {
+      "word": "وَعْدْ عَلَيّي",
+      "reading": "waʿd ʿalayyi",
+      "meaning": "I promise",
+      "example": "وَعْدْ عَلَيّي مَا بِتْكَرَّرْ.",
+      "exampleMeaning": "I promise it will not happen again."
+    },
+    {
+      "word": "مِشْ بِإِيدِي",
+      "reading": "mish bi-ʔīdī",
+      "meaning": "it is not in my hands",
+      "example": "مِشْ بِإِيدِي، الْمُدِيرْ غَيَّرِ الْخُطَّةْ.",
+      "exampleMeaning": "It is not in my hands; the manager changed the plan."
+    },
+    {
+      "word": "شُو بَدَّكْ أَعْمِلْ؟",
+      "reading": "shū baddak aʿmil?",
+      "meaning": "what do you want me to do?",
+      "example": "شُو بَدَّكْ أَعْمِلْ هَلَّأْ؟",
+      "exampleMeaning": "What do you want me to do now?"
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "___ إِذَا زَعَّلْتَكْ.",
+          "answer": "سَامِحْنِي",
+          "hint": "forgive me"
+        },
+        {
+          "sentence": "___، مَا كَانْ لَازِمْ أَرُدّ هِيكْ.",
+          "answer": "حَقَّكْ عَلَيّي",
+          "hint": "my fault"
+        },
+        {
+          "sentence": "___ وَمَا قِدِرْتْ إِتَّصِلْ.",
+          "answer": "بَطَّارِيَّتِي خَلْصِتْ",
+          "hint": "my battery died"
+        },
+        {
+          "sentence": "___ بِقَهْوَةْ بُكْرَا.",
+          "answer": "خَلِّينِي عَوِّضَكْ",
+          "hint": "let me make it up to you"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "In Levantine Arabic, what does ‘حَقَّكْ عَلَيّي’ express?",
+      "options": [
+        "my fault; you are right",
+        "my battery died",
+        "road closed",
+        "I forgot"
+      ],
+      "answer": 0
+    }
+  ]
+}
