@@ -6,7 +6,10 @@
       "titleEn": "Self-Introduction",
       "difficulty": "easy",
       "wordCount": 80,
-      "tags": ["daily-life", "conversation"],
+      "tags": [
+        "daily-life",
+        "conversation"
+      ],
       "description": "A simple self-introduction in Romanian"
     },
     {
@@ -15,7 +18,9 @@
       "titleEn": "My Day",
       "difficulty": "easy",
       "wordCount": 90,
-      "tags": ["daily-life"],
+      "tags": [
+        "daily-life"
+      ],
       "description": "A typical daily routine in Romania"
     },
     {
@@ -24,7 +29,10 @@
       "titleEn": "At the Market",
       "difficulty": "easy",
       "wordCount": 92,
-      "tags": ["daily-life", "conversation"],
+      "tags": [
+        "daily-life",
+        "conversation"
+      ],
       "description": "A friendly dialogue at a Romanian market stall"
     },
     {
@@ -33,7 +41,9 @@
       "titleEn": "My Family",
       "difficulty": "easy",
       "wordCount": 88,
-      "tags": ["daily-life"],
+      "tags": [
+        "daily-life"
+      ],
       "description": "A short description of a Romanian family"
     },
     {
@@ -42,7 +52,10 @@
       "titleEn": "Mărțișor",
       "difficulty": "medium",
       "wordCount": 182,
-      "tags": ["culture", "traditions"],
+      "tags": [
+        "culture",
+        "traditions"
+      ],
       "description": "An article about the Romanian spring tradition of Mărțișor"
     },
     {
@@ -51,7 +64,10 @@
       "titleEn": "The Goat and Her Three Kids",
       "difficulty": "medium",
       "wordCount": 201,
-      "tags": ["culture", "folklore"],
+      "tags": [
+        "culture",
+        "folklore"
+      ],
       "description": "A retelling of a well-known Romanian folk tale by Ion Creangă"
     },
     {
@@ -60,7 +76,10 @@
       "titleEn": "Bucharest",
       "difficulty": "medium",
       "wordCount": 179,
-      "tags": ["travel", "culture"],
+      "tags": [
+        "travel",
+        "culture"
+      ],
       "description": "A travel and culture overview of Romania's capital city"
     },
     {
@@ -69,7 +88,10 @@
       "titleEn": "Romanian Food",
       "difficulty": "medium",
       "wordCount": 166,
-      "tags": ["culture", "food"],
+      "tags": [
+        "culture",
+        "food"
+      ],
       "description": "An introduction to several traditional Romanian dishes"
     },
     {
@@ -78,7 +100,11 @@
       "titleEn": "Technology and the Environment",
       "difficulty": "hard",
       "wordCount": 225,
-      "tags": ["technology", "environment", "society"],
+      "tags": [
+        "technology",
+        "environment",
+        "society"
+      ],
       "description": "A short opinion essay about using technology responsibly for the environment"
     },
     {
@@ -87,7 +113,11 @@
       "titleEn": "Nadia Comăneci",
       "difficulty": "hard",
       "wordCount": 221,
-      "tags": ["culture", "history", "sports"],
+      "tags": [
+        "culture",
+        "history",
+        "sports"
+      ],
       "description": "A biography-style narrative about the Romanian gymnast Nadia Comăneci"
     },
     {
@@ -96,7 +126,10 @@
       "titleEn": "At the Restaurant",
       "difficulty": "easy",
       "wordCount": 95,
-      "tags": ["daily-life", "conversation"],
+      "tags": [
+        "daily-life",
+        "conversation"
+      ],
       "description": "A natural restaurant-ordering dialogue in Romanian"
     },
     {
@@ -105,7 +138,10 @@
       "titleEn": "A Day at the Sea",
       "difficulty": "easy",
       "wordCount": 100,
-      "tags": ["daily-life", "travel"],
+      "tags": [
+        "daily-life",
+        "travel"
+      ],
       "description": "A present-tense story about spending a day on the Black Sea coast"
     },
     {
@@ -114,7 +150,10 @@
       "titleEn": "The Legend of Master Manole",
       "difficulty": "medium",
       "wordCount": 190,
-      "tags": ["culture", "legend"],
+      "tags": [
+        "culture",
+        "legend"
+      ],
       "description": "A retelling of the Curtea de Argeș monastery legend"
     },
     {
@@ -123,7 +162,10 @@
       "titleEn": "The Danube Delta",
       "difficulty": "medium",
       "wordCount": 185,
-      "tags": ["culture", "nature"],
+      "tags": [
+        "culture",
+        "nature"
+      ],
       "description": "An informative text about the Danube Delta, its birds, and its fragile nature"
     },
     {
@@ -132,7 +174,10 @@
       "titleEn": "Drowsy Little Birds",
       "difficulty": "hard",
       "wordCount": 59,
-      "tags": ["literature", "poetry"],
+      "tags": [
+        "literature",
+        "poetry"
+      ],
       "description": "A classic public-domain poem by Mihai Eminescu"
     },
     {
@@ -141,8 +186,48 @@
       "titleEn": "The History of the Romanian Language",
       "difficulty": "hard",
       "wordCount": 230,
-      "tags": ["culture", "history", "language"],
+      "tags": [
+        "culture",
+        "history",
+        "language"
+      ],
       "description": "An essay about the Latin origin and historical influences of Romanian"
+    },
+    {
+      "id": "ce-te-legeni",
+      "title": "Ce te legeni…",
+      "titleEn": "Why Do You Sway…",
+      "difficulty": "hard",
+      "wordCount": 106,
+      "tags": [
+        "literature",
+        "poetry"
+      ],
+      "description": "A classic public-domain nature poem by Mihai Eminescu (from ro.wikisource.org)."
+    },
+    {
+      "id": "cainele-si-catelul",
+      "title": "Câinele și cățelul",
+      "titleEn": "The Dog and the Puppy",
+      "difficulty": "medium",
+      "wordCount": 161,
+      "tags": [
+        "literature",
+        "fable"
+      ],
+      "description": "A modern prose retelling of Grigore Alexandrescu’s famous fable about false talk of equality."
+    },
+    {
+      "id": "manastirile-bucovina",
+      "title": "Mănăstirile pictate din Bucovina",
+      "titleEn": "The Painted Monasteries of Bucovina",
+      "difficulty": "medium",
+      "wordCount": 162,
+      "tags": [
+        "culture",
+        "history"
+      ],
+      "description": "An informative text about the UNESCO painted monasteries of northern Moldavia (Voroneț)."
     }
   ]
 }

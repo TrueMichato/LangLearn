@@ -119,4 +119,64 @@ export const RO_NOUNS: RoNoun[] = [
       genitiv_dativ: { singular: 'trenului', plural: 'trenurilor' },
     },
   },
+  {
+    nominative: 'câine',
+    meaning: 'dog',
+    gender: 'masculine',
+    declensions: {
+      nedefinit: { singular: 'câine', plural: 'câini' },
+      definit: { singular: 'câinele', plural: 'câinii' },
+      genitiv_dativ: { singular: 'câinelui', plural: 'câinilor' },
+    },
+  },
+  {
+    nominative: 'oraș',
+    meaning: 'city / town',
+    gender: 'neuter',
+    declensions: {
+      nedefinit: { singular: 'oraș', plural: 'orașe' },
+      definit: { singular: 'orașul', plural: 'orașele' },
+      genitiv_dativ: { singular: 'orașului', plural: 'orașelor' },
+    },
+  },
+  {
+    nominative: 'profesoară',
+    meaning: 'teacher (female)',
+    gender: 'feminine',
+    declensions: {
+      nedefinit: { singular: 'profesoară', plural: 'profesoare' },
+      definit: { singular: 'profesoara', plural: 'profesoarele' },
+      genitiv_dativ: { singular: 'profesoarei', plural: 'profesoarelor' },
+    },
+  },
+  {
+    nominative: 'prieten',
+    meaning: 'friend (male)',
+    gender: 'masculine',
+    declensions: {
+      nedefinit: { singular: 'prieten', plural: 'prieteni' },
+      definit: { singular: 'prietenul', plural: 'prietenii' },
+      genitiv_dativ: { singular: 'prietenului', plural: 'prietenilor' },
+    },
+  },
+  {
+    nominative: 'apă',
+    meaning: 'water',
+    gender: 'feminine',
+    declensions: {
+      nedefinit: { singular: 'apă', plural: 'ape' },
+      definit: { singular: 'apa', plural: 'apele' },
+      genitiv_dativ: { singular: 'apei', plural: 'apelor' },
+    },
+  },
+  {
+    nominative: 'drum',
+    meaning: 'road / way',
+    gender: 'neuter',
+    declensions: {
+      nedefinit: { singular: 'drum', plural: 'drumuri' },
+      definit: { singular: 'drumul', plural: 'drumurile' },
+      genitiv_dativ: { singular: 'drumului', plural: 'drumurilor' },
+    },
+  },
 ];

@@ -208,5 +208,25 @@
     "id": "formal-address",
     "title": "Formal Address & Politeness (dumneavoastră)",
     "order": 42
+  },
+  {
+    "id": "vocative-case",
+    "title": "The Vocative Case (Direct Address)",
+    "order": 43
+  },
+  {
+    "id": "telling-time",
+    "title": "Telling Time & Dates",
+    "order": 44
+  },
+  {
+    "id": "numeral-agreement",
+    "title": "Numerals & Agreement (unu/una, doi/două)",
+    "order": 45
+  },
+  {
+    "id": "impersonal-constructions",
+    "title": "Impersonal Constructions (îmi place, îmi trebuie, mi-e frig)",
+    "order": 46
   }
 ]
