@@ -550,6 +550,82 @@
       ],
       "description": "An opinion essay about reading as a social habit that strengthens dialogue and imagination.",
       "wordCount": 171
+    },
+    {
+      "id": "graded-my-family",
+      "title": "عائِلَتي الكَبِيرة",
+      "titleEn": "My Big Family (graded reader)",
+      "difficulty": "easy",
+      "wordCount": 82,
+      "tags": [
+        "daily-life",
+        "graded-reader",
+        "family"
+      ],
+      "description": "A controlled beginner text about a warm multigenerational household."
+    },
+    {
+      "id": "dialogue-weekend",
+      "title": "عُطْلةُ نِهايةِ الأُسْبُوع",
+      "titleEn": "Weekend Plans (a dialogue)",
+      "difficulty": "easy",
+      "wordCount": 88,
+      "tags": [
+        "daily-life",
+        "conversation",
+        "dialogue"
+      ],
+      "description": "A friendly dialogue about weekend visits, the library, and meeting after the holiday."
+    },
+    {
+      "id": "a-visit-to-a-museum",
+      "title": "زِيارةٌ إلى المَتْحَف",
+      "titleEn": "A Visit to a Museum",
+      "difficulty": "medium",
+      "wordCount": 131,
+      "tags": [
+        "culture",
+        "history",
+        "education"
+      ],
+      "description": "A school museum visit that connects artifacts, memory, and historical inquiry."
+    },
+    {
+      "id": "another-juha-tale",
+      "title": "حِكايةٌ أُخْرى لِجُحا",
+      "titleEn": "Another Tale of Juha",
+      "difficulty": "medium",
+      "wordCount": 148,
+      "tags": [
+        "folktale",
+        "culture"
+      ],
+      "description": "An original public-domain-style Juha anecdote about bargaining, patience, and wit."
+    },
+    {
+      "id": "the-arabic-language-family",
+      "title": "العَرَبِيّةُ وأَخَواتُها الساميّة",
+      "titleEn": "Arabic & Its Semitic Sisters",
+      "difficulty": "hard",
+      "wordCount": 193,
+      "tags": [
+        "language",
+        "history",
+        "education"
+      ],
+      "description": "A linguistics overview of Arabic within the Semitic language family."
+    },
+    {
+      "id": "space-and-astronomy",
+      "title": "الإنْسانُ والفَضاء",
+      "titleEn": "Humanity and Space",
+      "difficulty": "hard",
+      "wordCount": 184,
+      "tags": [
+        "science",
+        "education"
+      ],
+      "description": "A science text about astronomy, satellites, space exploration, and responsibility."
     }
   ]
 }

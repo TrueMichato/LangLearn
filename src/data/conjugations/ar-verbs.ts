@@ -1,9 +1,10 @@
 // Arabic (MSA) verb conjugations — Form I (sound, hollow, doubled, assimilated,
-// defective, hamzated) and the common derived forms II, III, IV, V, VI, VII, VIII, X.
-// Fully diacritized & NFC-normalized, generated from the standard patterns and
-// verified in-script against known-correct forms (see scripts). Persons: anā, anta (m.),
-// anti (f.), huwa, hiya, naḥnu, antum (m.pl.), hum (m.pl.). Tenses: al-māḍī (past),
-// al-muḍāriʿ (present indicative) + al-amr (imperative). Citation form = 3ms past.
+// defective, hamzated) and derived forms II–X. Fully diacritized & NFC-normalized,
+// generated from the standard patterns and verified in-script against known forms.
+// Beyond the active past/present/imperative, each verb also carries (where the
+// pattern is reliable) its active & passive participles and the 3ms passive voice
+// (al-majhūl). Forms that do not apply to a verb type are marked "—" and skipped.
+// Persons: anā, anta (m.), anti (f.), huwa, hiya, naḥnu, antum (m.pl.), hum (m.pl.).
 
 export type ArVerbFormName =
   | 'madi_ana'
@@ -22,7 +23,11 @@ export type ArVerbFormName =
   | 'mud_nahnu'
   | 'mud_antum'
   | 'mud_hum'
-  | 'amr_anta';
+  | 'amr_anta'
+  | 'active_participle'
+  | 'passive_participle'
+  | 'passive_madi_huwa'
+  | 'passive_mud_huwa';
 
 export const AR_FORM_LABELS: Record<ArVerbFormName, string> = {
   madi_ana: "Past — anā (I)",
@@ -42,6 +47,10 @@ export const AR_FORM_LABELS: Record<ArVerbFormName, string> = {
   mud_antum: "Present — antum (you pl.)",
   mud_hum: "Present — hum (they)",
   amr_anta: "Imperative — anta (you m.)",
+  active_participle: "Active Participle (ism al-fāʿil)",
+  passive_participle: "Passive Participle (ism al-mafʿūl)",
+  passive_madi_huwa: "Passive Past — huwa (was …)",
+  passive_mud_huwa: "Passive Present — huwa (is …)",
 };
 
 export interface ArVerb {
@@ -76,6 +85,10 @@ export const AR_VERBS: ArVerb[] = [
       mud_antum: "تَكْتُبُونَ",
       mud_hum: "يَكْتُبُونَ",
       amr_anta: "اُكْتُبْ",
+      active_participle: "كَاتِب",
+      passive_participle: "مَكْتُوب",
+      passive_madi_huwa: "كُتِبَ",
+      passive_mud_huwa: "يُكْتَبُ",
     },
   },
   {
@@ -101,6 +114,10 @@ export const AR_VERBS: ArVerb[] = [
       mud_antum: "تَدْرُسُونَ",
       mud_hum: "يَدْرُسُونَ",
       amr_anta: "اُدْرُسْ",
+      active_participle: "دَارِس",
+      passive_participle: "مَدْرُوس",
+      passive_madi_huwa: "دُرِسَ",
+      passive_mud_huwa: "يُدْرَسُ",
     },
   },
   {
@@ -126,6 +143,10 @@ export const AR_VERBS: ArVerb[] = [
       mud_antum: "تَذْهَبُونَ",
       mud_hum: "يَذْهَبُونَ",
       amr_anta: "اِذْهَبْ",
+      active_participle: "ذَاهِب",
+      passive_participle: "مَذْهُوب",
+      passive_madi_huwa: "ذُهِبَ",
+      passive_mud_huwa: "يُذْهَبُ",
     },
   },
   {
@@ -151,6 +172,10 @@ export const AR_VERBS: ArVerb[] = [
       mud_antum: "تَفْعَلُونَ",
       mud_hum: "يَفْعَلُونَ",
       amr_anta: "اِفْعَلْ",
+      active_participle: "فَاعِل",
+      passive_participle: "مَفْعُول",
+      passive_madi_huwa: "فُعِلَ",
+      passive_mud_huwa: "يُفْعَلُ",
     },
   },
   {
@@ -176,6 +201,10 @@ export const AR_VERBS: ArVerb[] = [
       mud_antum: "تَفْتَحُونَ",
       mud_hum: "يَفْتَحُونَ",
       amr_anta: "اِفْتَحْ",
+      active_participle: "فَاتِح",
+      passive_participle: "مَفْتُوح",
+      passive_madi_huwa: "فُتِحَ",
+      passive_mud_huwa: "يُفْتَحُ",
     },
   },
   {
@@ -201,6 +230,10 @@ export const AR_VERBS: ArVerb[] = [
       mud_antum: "تَجْلِسُونَ",
       mud_hum: "يَجْلِسُونَ",
       amr_anta: "اِجْلِسْ",
+      active_participle: "جَالِس",
+      passive_participle: "مَجْلُوس",
+      passive_madi_huwa: "جُلِسَ",
+      passive_mud_huwa: "يُجْلَسُ",
     },
   },
   {
@@ -226,6 +259,10 @@ export const AR_VERBS: ArVerb[] = [
       mud_antum: "تَعْرِفُونَ",
       mud_hum: "يَعْرِفُونَ",
       amr_anta: "اِعْرِفْ",
+      active_participle: "عَارِف",
+      passive_participle: "مَعْرُوف",
+      passive_madi_huwa: "عُرِفَ",
+      passive_mud_huwa: "يُعْرَفُ",
     },
   },
   {
@@ -251,6 +288,10 @@ export const AR_VERBS: ArVerb[] = [
       mud_antum: "تَحْمِلُونَ",
       mud_hum: "يَحْمِلُونَ",
       amr_anta: "اِحْمِلْ",
+      active_participle: "حَامِل",
+      passive_participle: "مَحْمُول",
+      passive_madi_huwa: "حُمِلَ",
+      passive_mud_huwa: "يُحْمَلُ",
     },
   },
   {
@@ -276,6 +317,10 @@ export const AR_VERBS: ArVerb[] = [
       mud_antum: "تَشْرَبُونَ",
       mud_hum: "يَشْرَبُونَ",
       amr_anta: "اِشْرَبْ",
+      active_participle: "شَارِب",
+      passive_participle: "مَشْرُوب",
+      passive_madi_huwa: "شُرِبَ",
+      passive_mud_huwa: "يُشْرَبُ",
     },
   },
   {
@@ -301,6 +346,10 @@ export const AR_VERBS: ArVerb[] = [
       mud_antum: "تَسْمَعُونَ",
       mud_hum: "يَسْمَعُونَ",
       amr_anta: "اِسْمَعْ",
+      active_participle: "سَامِع",
+      passive_participle: "مَسْمُوع",
+      passive_madi_huwa: "سُمِعَ",
+      passive_mud_huwa: "يُسْمَعُ",
     },
   },
   {
@@ -326,6 +375,10 @@ export const AR_VERBS: ArVerb[] = [
       mud_antum: "تَلْعَبُونَ",
       mud_hum: "يَلْعَبُونَ",
       amr_anta: "اِلْعَبْ",
+      active_participle: "لَاعِب",
+      passive_participle: "مَلْعُوب",
+      passive_madi_huwa: "لُعِبَ",
+      passive_mud_huwa: "يُلْعَبُ",
     },
   },
   {
@@ -351,6 +404,10 @@ export const AR_VERBS: ArVerb[] = [
       mud_antum: "تَسْكُنُونَ",
       mud_hum: "يَسْكُنُونَ",
       amr_anta: "اُسْكُنْ",
+      active_participle: "سَاكِن",
+      passive_participle: "مَسْكُون",
+      passive_madi_huwa: "سُكِنَ",
+      passive_mud_huwa: "يُسْكَنُ",
     },
   },
   {
@@ -376,6 +433,10 @@ export const AR_VERBS: ArVerb[] = [
       mud_antum: "تَطْبُخُونَ",
       mud_hum: "يَطْبُخُونَ",
       amr_anta: "اُطْبُخْ",
+      active_participle: "طَابِخ",
+      passive_participle: "مَطْبُوخ",
+      passive_madi_huwa: "طُبِخَ",
+      passive_mud_huwa: "يُطْبَخُ",
     },
   },
   {
@@ -401,6 +462,10 @@ export const AR_VERBS: ArVerb[] = [
       mud_antum: "تَرْسُمُونَ",
       mud_hum: "يَرْسُمُونَ",
       amr_anta: "اُرْسُمْ",
+      active_participle: "رَاسِم",
+      passive_participle: "مَرْسُوم",
+      passive_madi_huwa: "رُسِمَ",
+      passive_mud_huwa: "يُرْسَمُ",
     },
   },
   {
@@ -426,6 +491,10 @@ export const AR_VERBS: ArVerb[] = [
       mud_antum: "تَكْسِبُونَ",
       mud_hum: "يَكْسِبُونَ",
       amr_anta: "اِكْسِبْ",
+      active_participle: "كَاسِب",
+      passive_participle: "مَكْسُوب",
+      passive_madi_huwa: "كُسِبَ",
+      passive_mud_huwa: "يُكْسَبُ",
     },
   },
   {
@@ -451,6 +520,10 @@ export const AR_VERBS: ArVerb[] = [
       mud_antum: "تَغْسِلُونَ",
       mud_hum: "يَغْسِلُونَ",
       amr_anta: "اِغْسِلْ",
+      active_participle: "غَاسِل",
+      passive_participle: "مَغْسُول",
+      passive_madi_huwa: "غُسِلَ",
+      passive_mud_huwa: "يُغْسَلُ",
     },
   },
   {
@@ -476,6 +549,10 @@ export const AR_VERBS: ArVerb[] = [
       mud_antum: "تُعَلِّمُونَ",
       mud_hum: "يُعَلِّمُونَ",
       amr_anta: "عَلِّمْ",
+      active_participle: "مُعَلِّم",
+      passive_participle: "مُعَلَّم",
+      passive_madi_huwa: "عُلِّمَ",
+      passive_mud_huwa: "يُعَلَّمُ",
     },
   },
   {
@@ -501,6 +578,10 @@ export const AR_VERBS: ArVerb[] = [
       mud_antum: "تُكَلِّمُونَ",
       mud_hum: "يُكَلِّمُونَ",
       amr_anta: "كَلِّمْ",
+      active_participle: "مُكَلِّم",
+      passive_participle: "مُكَلَّم",
+      passive_madi_huwa: "كُلِّمَ",
+      passive_mud_huwa: "يُكَلَّمُ",
     },
   },
   {
@@ -526,6 +607,10 @@ export const AR_VERBS: ArVerb[] = [
       mud_antum: "تَنْظُرُونَ",
       mud_hum: "يَنْظُرُونَ",
       amr_anta: "اُنْظُرْ",
+      active_participle: "نَاظِر",
+      passive_participle: "مَنْظُور",
+      passive_madi_huwa: "نُظِرَ",
+      passive_mud_huwa: "يُنْظَرُ",
     },
   },
   {
@@ -551,6 +636,10 @@ export const AR_VERBS: ArVerb[] = [
       mud_antum: "تَدْفَعُونَ",
       mud_hum: "يَدْفَعُونَ",
       amr_anta: "اِدْفَعْ",
+      active_participle: "دَافِع",
+      passive_participle: "مَدْفُوع",
+      passive_madi_huwa: "دُفِعَ",
+      passive_mud_huwa: "يُدْفَعُ",
     },
   },
   {
@@ -576,6 +665,10 @@ export const AR_VERBS: ArVerb[] = [
       mud_antum: "تَرْفَعُونَ",
       mud_hum: "يَرْفَعُونَ",
       amr_anta: "اِرْفَعْ",
+      active_participle: "رَافِع",
+      passive_participle: "مَرْفُوع",
+      passive_madi_huwa: "رُفِعَ",
+      passive_mud_huwa: "يُرْفَعُ",
     },
   },
   {
@@ -601,6 +694,10 @@ export const AR_VERBS: ArVerb[] = [
       mud_antum: "تَجْمَعُونَ",
       mud_hum: "يَجْمَعُونَ",
       amr_anta: "اِجْمَعْ",
+      active_participle: "جَامِع",
+      passive_participle: "مَجْمُوع",
+      passive_madi_huwa: "جُمِعَ",
+      passive_mud_huwa: "يُجْمَعُ",
     },
   },
   {
@@ -626,6 +723,10 @@ export const AR_VERBS: ArVerb[] = [
       mud_antum: "تَشْكُرُونَ",
       mud_hum: "يَشْكُرُونَ",
       amr_anta: "اُشْكُرْ",
+      active_participle: "شَاكِر",
+      passive_participle: "مَشْكُور",
+      passive_madi_huwa: "شُكِرَ",
+      passive_mud_huwa: "يُشْكَرُ",
     },
   },
   {
@@ -651,6 +752,10 @@ export const AR_VERBS: ArVerb[] = [
       mud_antum: "تَحْفَظُونَ",
       mud_hum: "يَحْفَظُونَ",
       amr_anta: "اِحْفَظْ",
+      active_participle: "حَافِظ",
+      passive_participle: "مَحْفُوظ",
+      passive_madi_huwa: "حُفِظَ",
+      passive_mud_huwa: "يُحْفَظُ",
     },
   },
   {
@@ -676,6 +781,10 @@ export const AR_VERBS: ArVerb[] = [
       mud_antum: "تَلْبَسُونَ",
       mud_hum: "يَلْبَسُونَ",
       amr_anta: "اِلْبَسْ",
+      active_participle: "لَابِس",
+      passive_participle: "مَلْبُوس",
+      passive_madi_huwa: "لُبِسَ",
+      passive_mud_huwa: "يُلْبَسُ",
     },
   },
   {
@@ -701,6 +810,10 @@ export const AR_VERBS: ArVerb[] = [
       mud_antum: "تَرْكَبُونَ",
       mud_hum: "يَرْكَبُونَ",
       amr_anta: "اِرْكَبْ",
+      active_participle: "رَاكِب",
+      passive_participle: "مَرْكُوب",
+      passive_madi_huwa: "رُكِبَ",
+      passive_mud_huwa: "يُرْكَبُ",
     },
   },
   {
@@ -726,6 +839,10 @@ export const AR_VERBS: ArVerb[] = [
       mud_antum: "تَقُولُونَ",
       mud_hum: "يَقُولُونَ",
       amr_anta: "قُلْ",
+      active_participle: "قَائِل",
+      passive_participle: "مَقُول",
+      passive_madi_huwa: "قِيلَ",
+      passive_mud_huwa: "يُقَالُ",
     },
   },
   {
@@ -751,6 +868,10 @@ export const AR_VERBS: ArVerb[] = [
       mud_antum: "تَكُونُونَ",
       mud_hum: "يَكُونُونَ",
       amr_anta: "كُنْ",
+      active_participle: "كَائِن",
+      passive_participle: "مَكُون",
+      passive_madi_huwa: "كِينَ",
+      passive_mud_huwa: "يُكَانُ",
     },
   },
   {
@@ -776,6 +897,10 @@ export const AR_VERBS: ArVerb[] = [
       mud_antum: "تَزُورُونَ",
       mud_hum: "يَزُورُونَ",
       amr_anta: "زُرْ",
+      active_participle: "زَائِر",
+      passive_participle: "مَزُور",
+      passive_madi_huwa: "زِيرَ",
+      passive_mud_huwa: "يُزَارُ",
     },
   },
   {
@@ -801,6 +926,10 @@ export const AR_VERBS: ArVerb[] = [
       mud_antum: "تَبِيعُونَ",
       mud_hum: "يَبِيعُونَ",
       amr_anta: "بِعْ",
+      active_participle: "بَائِع",
+      passive_participle: "مَبِيع",
+      passive_madi_huwa: "بِيعَ",
+      passive_mud_huwa: "يُبَاعُ",
     },
   },
   {
@@ -826,6 +955,10 @@ export const AR_VERBS: ArVerb[] = [
       mud_antum: "تَسِيرُونَ",
       mud_hum: "يَسِيرُونَ",
       amr_anta: "سِرْ",
+      active_participle: "سَائِر",
+      passive_participle: "مَسِير",
+      passive_madi_huwa: "سِيرَ",
+      passive_mud_huwa: "يُسَارُ",
     },
   },
   {
@@ -851,6 +984,10 @@ export const AR_VERBS: ArVerb[] = [
       mud_antum: "تَرُدُّونَ",
       mud_hum: "يَرُدُّونَ",
       amr_anta: "رُدَّ",
+      active_participle: "رَادّ",
+      passive_participle: "مَرْدُود",
+      passive_madi_huwa: "رُدَّ",
+      passive_mud_huwa: "يُرَدُّ",
     },
   },
   {
@@ -876,6 +1013,10 @@ export const AR_VERBS: ArVerb[] = [
       mud_antum: "تَمُرُّونَ",
       mud_hum: "يَمُرُّونَ",
       amr_anta: "مُرَّ",
+      active_participle: "مَارّ",
+      passive_participle: "مَمْرُور",
+      passive_madi_huwa: "مُرَّ",
+      passive_mud_huwa: "يُمَرُّ",
     },
   },
   {
@@ -901,6 +1042,10 @@ export const AR_VERBS: ArVerb[] = [
       mud_antum: "تَصِلُونَ",
       mud_hum: "يَصِلُونَ",
       amr_anta: "صِلْ",
+      active_participle: "وَاصِل",
+      passive_participle: "مَوْصُول",
+      passive_madi_huwa: "—",
+      passive_mud_huwa: "—",
     },
   },
   {
@@ -926,6 +1071,10 @@ export const AR_VERBS: ArVerb[] = [
       mud_antum: "تَجِدُونَ",
       mud_hum: "يَجِدُونَ",
       amr_anta: "جِدْ",
+      active_participle: "وَاجِد",
+      passive_participle: "مَوْجُود",
+      passive_madi_huwa: "—",
+      passive_mud_huwa: "—",
     },
   },
   {
@@ -951,6 +1100,10 @@ export const AR_VERBS: ArVerb[] = [
       mud_antum: "تَضَعُونَ",
       mud_hum: "يَضَعُونَ",
       amr_anta: "ضَعْ",
+      active_participle: "وَاضِع",
+      passive_participle: "مَوْضُوع",
+      passive_madi_huwa: "—",
+      passive_mud_huwa: "—",
     },
   },
   {
@@ -976,6 +1129,10 @@ export const AR_VERBS: ArVerb[] = [
       mud_antum: "تُسَافِرُونَ",
       mud_hum: "يُسَافِرُونَ",
       amr_anta: "سَافِرْ",
+      active_participle: "مُسَافِر",
+      passive_participle: "مُسَافَر",
+      passive_madi_huwa: "—",
+      passive_mud_huwa: "—",
     },
   },
   {
@@ -1001,6 +1158,10 @@ export const AR_VERBS: ArVerb[] = [
       mud_antum: "تُسَاعِدُونَ",
       mud_hum: "يُسَاعِدُونَ",
       amr_anta: "سَاعِدْ",
+      active_participle: "مُسَاعِد",
+      passive_participle: "مُسَاعَد",
+      passive_madi_huwa: "—",
+      passive_mud_huwa: "—",
     },
   },
   {
@@ -1026,6 +1187,10 @@ export const AR_VERBS: ArVerb[] = [
       mud_antum: "تُرْسِلُونَ",
       mud_hum: "يُرْسِلُونَ",
       amr_anta: "أَرْسِلْ",
+      active_participle: "مُرْسِل",
+      passive_participle: "مُرْسَل",
+      passive_madi_huwa: "أُرْسِلَ",
+      passive_mud_huwa: "يُرْسَلُ",
     },
   },
   {
@@ -1051,6 +1216,10 @@ export const AR_VERBS: ArVerb[] = [
       mud_antum: "تُغْلِقُونَ",
       mud_hum: "يُغْلِقُونَ",
       amr_anta: "أَغْلِقْ",
+      active_participle: "مُغْلِق",
+      passive_participle: "مُغْلَق",
+      passive_madi_huwa: "أُغْلِقَ",
+      passive_mud_huwa: "يُغْلَقُ",
     },
   },
   {
@@ -1076,6 +1245,10 @@ export const AR_VERBS: ArVerb[] = [
       mud_antum: "تَتَعَلَّمُونَ",
       mud_hum: "يَتَعَلَّمُونَ",
       amr_anta: "تَعَلَّمْ",
+      active_participle: "مُتَعَلِّم",
+      passive_participle: "مُتَعَلَّم",
+      passive_madi_huwa: "—",
+      passive_mud_huwa: "—",
     },
   },
   {
@@ -1101,6 +1274,10 @@ export const AR_VERBS: ArVerb[] = [
       mud_antum: "تَتَذَكَّرُونَ",
       mud_hum: "يَتَذَكَّرُونَ",
       amr_anta: "تَذَكَّرْ",
+      active_participle: "مُتَذَكِّر",
+      passive_participle: "مُتَذَكَّر",
+      passive_madi_huwa: "—",
+      passive_mud_huwa: "—",
     },
   },
   {
@@ -1126,6 +1303,10 @@ export const AR_VERBS: ArVerb[] = [
       mud_antum: "تَتَعَاوَنُونَ",
       mud_hum: "يَتَعَاوَنُونَ",
       amr_anta: "تَعَاوَنْ",
+      active_participle: "مُتَعَاوِن",
+      passive_participle: "مُتَعَاوَن",
+      passive_madi_huwa: "—",
+      passive_mud_huwa: "—",
     },
   },
   {
@@ -1151,6 +1332,10 @@ export const AR_VERBS: ArVerb[] = [
       mud_antum: "تَنْكَسِرُونَ",
       mud_hum: "يَنْكَسِرُونَ",
       amr_anta: "اِنْكَسِرْ",
+      active_participle: "مُنْكَسِر",
+      passive_participle: "مُنْكَسَر",
+      passive_madi_huwa: "—",
+      passive_mud_huwa: "—",
     },
   },
   {
@@ -1176,6 +1361,10 @@ export const AR_VERBS: ArVerb[] = [
       mud_antum: "تَجْتَمِعُونَ",
       mud_hum: "يَجْتَمِعُونَ",
       amr_anta: "اِجْتَمِعْ",
+      active_participle: "مُجْتَمِع",
+      passive_participle: "مُجْتَمَع",
+      passive_madi_huwa: "اُجْتُمِعَ",
+      passive_mud_huwa: "يُجْتَمَعُ",
     },
   },
   {
@@ -1201,6 +1390,10 @@ export const AR_VERBS: ArVerb[] = [
       mud_antum: "تَسْتَمِعُونَ",
       mud_hum: "يَسْتَمِعُونَ",
       amr_anta: "اِسْتَمِعْ",
+      active_participle: "مُسْتَمِع",
+      passive_participle: "مُسْتَمَع",
+      passive_madi_huwa: "اُسْتُمِعَ",
+      passive_mud_huwa: "يُسْتَمَعُ",
     },
   },
   {
@@ -1226,6 +1419,10 @@ export const AR_VERBS: ArVerb[] = [
       mud_antum: "تَحْتَرِمُونَ",
       mud_hum: "يَحْتَرِمُونَ",
       amr_anta: "اِحْتَرِمْ",
+      active_participle: "مُحْتَرِم",
+      passive_participle: "مُحْتَرَم",
+      passive_madi_huwa: "اُحْتُرِمَ",
+      passive_mud_huwa: "يُحْتَرَمُ",
     },
   },
   {
@@ -1251,6 +1448,10 @@ export const AR_VERBS: ArVerb[] = [
       mud_antum: "تَسْتَخْدِمُونَ",
       mud_hum: "يَسْتَخْدِمُونَ",
       amr_anta: "اِسْتَخْدِمْ",
+      active_participle: "مُسْتَخْدِم",
+      passive_participle: "مُسْتَخْدَم",
+      passive_madi_huwa: "اُسْتُخْدِمَ",
+      passive_mud_huwa: "يُسْتَخْدَمُ",
     },
   },
   {
@@ -1276,6 +1477,10 @@ export const AR_VERBS: ArVerb[] = [
       mud_antum: "تَسْتَقْبِلُونَ",
       mud_hum: "يَسْتَقْبِلُونَ",
       amr_anta: "اِسْتَقْبِلْ",
+      active_participle: "مُسْتَقْبِل",
+      passive_participle: "مُسْتَقْبَل",
+      passive_madi_huwa: "اُسْتُقْبِلَ",
+      passive_mud_huwa: "يُسْتَقْبَلُ",
     },
   },
   {
@@ -1301,6 +1506,10 @@ export const AR_VERBS: ArVerb[] = [
       mud_antum: "تَمْشُونَ",
       mud_hum: "يَمْشُونَ",
       amr_anta: "اِمْشِ",
+      active_participle: "—",
+      passive_participle: "—",
+      passive_madi_huwa: "—",
+      passive_mud_huwa: "—",
     },
   },
   {
@@ -1326,6 +1535,10 @@ export const AR_VERBS: ArVerb[] = [
       mud_antum: "تَرْمُونَ",
       mud_hum: "يَرْمُونَ",
       amr_anta: "اِرْمِ",
+      active_participle: "—",
+      passive_participle: "—",
+      passive_madi_huwa: "—",
+      passive_mud_huwa: "—",
     },
   },
   {
@@ -1351,6 +1564,10 @@ export const AR_VERBS: ArVerb[] = [
       mud_antum: "تَدْعُونَ",
       mud_hum: "يَدْعُونَ",
       amr_anta: "اُدْعُ",
+      active_participle: "—",
+      passive_participle: "—",
+      passive_madi_huwa: "—",
+      passive_mud_huwa: "—",
     },
   },
   {
@@ -1376,6 +1593,10 @@ export const AR_VERBS: ArVerb[] = [
       mud_antum: "تَنْسَوْنَ",
       mud_hum: "يَنْسَوْنَ",
       amr_anta: "اِنْسَ",
+      active_participle: "—",
+      passive_participle: "—",
+      passive_madi_huwa: "—",
+      passive_mud_huwa: "—",
     },
   },
   {
@@ -1401,6 +1622,10 @@ export const AR_VERBS: ArVerb[] = [
       mud_antum: "تَبْقَوْنَ",
       mud_hum: "يَبْقَوْنَ",
       amr_anta: "اِبْقَ",
+      active_participle: "—",
+      passive_participle: "—",
+      passive_madi_huwa: "—",
+      passive_mud_huwa: "—",
     },
   },
   {
@@ -1426,6 +1651,10 @@ export const AR_VERBS: ArVerb[] = [
       mud_antum: "تَسْأَلُونَ",
       mud_hum: "يَسْأَلُونَ",
       amr_anta: "اِسْأَلْ",
+      active_participle: "سَائِل",
+      passive_participle: "مَسْأُول",
+      passive_madi_huwa: "سُأِلَ",
+      passive_mud_huwa: "يُسْأَلُ",
     },
   },
 ];

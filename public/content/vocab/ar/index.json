@@ -750,5 +750,69 @@
     "wordCount": 16,
     "level": "intermediate",
     "dialect": "all"
+  },
+  {
+    "id": "crafts-hobbies",
+    "title": "Crafts & Hobbies",
+    "order": 95,
+    "wordCount": 16,
+    "level": "intermediate",
+    "dialect": "msa"
+  },
+  {
+    "id": "emergencies-safety",
+    "title": "Emergencies & Safety",
+    "order": 96,
+    "wordCount": 16,
+    "level": "intermediate",
+    "dialect": "msa"
+  },
+  {
+    "id": "banking-detailed",
+    "title": "At the Bank in Detail",
+    "order": 97,
+    "wordCount": 16,
+    "level": "advanced",
+    "dialect": "msa"
+  },
+  {
+    "id": "computers-programming",
+    "title": "Computers & Programming",
+    "order": 98,
+    "wordCount": 16,
+    "level": "advanced",
+    "dialect": "msa"
+  },
+  {
+    "id": "farming-agriculture",
+    "title": "Farming & Agriculture",
+    "order": 99,
+    "wordCount": 16,
+    "level": "intermediate",
+    "dialect": "msa"
+  },
+  {
+    "id": "natural-disasters",
+    "title": "Weather Extremes & Natural Disasters",
+    "order": 100,
+    "wordCount": 16,
+    "level": "advanced",
+    "dialect": "msa"
+  },
+  {
+    "id": "body-health-internal",
+    "title": "The Body: Organs & Health",
+    "order": 101,
+    "wordCount": 16,
+    "level": "intermediate",
+    "dialect": "msa"
+  },
+  {
+    "id": "law-government-2",
+    "title": "Citizenship, Rights & Duties",
+    "order": 102,
+    "wordCount": 16,
+    "level": "advanced",
+    "dialect": "msa"
   }
 ]

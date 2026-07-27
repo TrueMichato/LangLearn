@@ -538,5 +538,53 @@
     "title": "One Phrase, Six Dialects (compare a few everyday phrases across MSA, Egyptian, Levantine, Gulf, Iraqi, Maghrebi in a table)",
     "order": 90,
     "group": "🗣️ Colloquial & Dialects"
+  },
+  {
+    "id": "feminine-plural-verb",
+    "title": "The Feminine Plural Verb (yafʿalna / faʿalna)",
+    "order": 91,
+    "group": "🔤 Verbs"
+  },
+  {
+    "id": "dual-verbs",
+    "title": "Dual Verbs & Pronoun Agreement (yafʿalāni, faʿalā)",
+    "order": 92,
+    "group": "🔤 Verbs"
+  },
+  {
+    "id": "collective-unit-nouns",
+    "title": "Collective & Unit Nouns (ism al-jins & ism al-waḥda)",
+    "order": 93,
+    "group": "🔢 Structure & Nuance"
+  },
+  {
+    "id": "absolute-negation",
+    "title": "Absolute Negation (lā an-nāfiya lil-jins)",
+    "order": 94,
+    "group": "🔢 Structure & Nuance"
+  },
+  {
+    "id": "purpose-accusative",
+    "title": "The Accusative of Purpose (al-mafʿūl li-ajlih)",
+    "order": 95,
+    "group": "🔢 Structure & Nuance"
+  },
+  {
+    "id": "badal-apposition",
+    "title": "Apposition & Substitution (al-badal)",
+    "order": 96,
+    "group": "🔢 Structure & Nuance"
+  },
+  {
+    "id": "specification-of-number",
+    "title": "The Specification (tamyīz) of Numbers & Measures",
+    "order": 97,
+    "group": "🔢 Structure & Nuance"
+  },
+  {
+    "id": "interjections-vocative",
+    "title": "Interjections & the Vocative in Depth (yā, ayyuhā, wā)",
+    "order": 98,
+    "group": "🔢 Structure & Nuance"
   }
 ]

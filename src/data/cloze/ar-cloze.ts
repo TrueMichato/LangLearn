@@ -130,4 +130,16 @@ export const arClozeSentences: ClozeSentence[] = [
   { id: 'ar-c095', target: 'يُفَضِّلُ البَعْضُ اسْتِخْدامَ اللُّغةِ الرَّسْميّة', english: 'Some prefer using the formal language', blankedWord: 'الرَّسْميّة', blankedReading: 'ar-rasmiyya', frequencyRank: 300, difficulty: 'advanced' },
   { id: 'ar-c096', target: 'لا تَقِلُّ اللَّهَجاتُ أَهَمّيّةً عَن الفُصْحى', english: 'Dialects are no less important than the standard', blankedWord: 'أَهَمّيّةً', blankedReading: 'ahammiyyatan', frequencyRank: 293, difficulty: 'advanced' },
   { id: 'ar-c097', target: 'يَنْصَحُ الخُبَراءُ بِالقِراءةِ اليَوْميّة', english: 'Experts advise daily reading', blankedWord: 'يَنْصَحُ', blankedReading: 'yanṣaḥu', frequencyRank: 300, difficulty: 'advanced' },
+
+  // ── Passive & participles (batch 6) ──
+  { id: 'ar-c098', target: 'كُتِبَ هذا الكِتابُ قَبْلَ مِئةِ عام', english: 'This book was written a hundred years ago', blankedWord: 'كُتِبَ', blankedReading: 'kutiba', frequencyRank: 167, difficulty: 'intermediate' },
+  { id: 'ar-c099', target: 'البابُ مَفْتُوحٌ، تَفَضَّل بِالدُّخُول', english: 'The door is open, please come in', blankedWord: 'مَفْتُوحٌ', blankedReading: 'maftūḥ', frequencyRank: 195, difficulty: 'beginner' },
+  { id: 'ar-c100', target: 'الرِّسالةُ مَكْتُوبةٌ بِخَطٍّ جَمِيل', english: 'The letter is written in beautiful handwriting', blankedWord: 'مَكْتُوبةٌ', blankedReading: 'maktūba', frequencyRank: 167, difficulty: 'beginner' },
+  { id: 'ar-c101', target: 'الكاتِبُ مَعْرُوفٌ في العالَمِ العَرَبيّ', english: 'The writer is well-known in the Arab world', blankedWord: 'الكاتِبُ', blankedReading: 'al-kātib', frequencyRank: 167, difficulty: 'intermediate' },
+  { id: 'ar-c102', target: 'يُسْتَخْدَمُ الحاسُوبُ في كُلِّ مَكان', english: 'The computer is used everywhere', blankedWord: 'يُسْتَخْدَمُ', blankedReading: 'yustakhdamu', frequencyRank: 241, difficulty: 'intermediate' },
+  { id: 'ar-c103', target: 'قِيلَ إنَّ الطَّقْسَ سَيَتَحَسَّن', english: 'It was said that the weather would improve', blankedWord: 'قِيلَ', blankedReading: 'qīla', frequencyRank: 25, difficulty: 'intermediate' },
+  { id: 'ar-c104', target: 'اللاعِبُونَ مُتَعَبُونَ بَعْدَ المُباراة', english: 'The players are tired after the match', blankedWord: 'مُتَعَبُونَ', blankedReading: 'mutʿabūn', frequencyRank: 300, difficulty: 'intermediate' },
+  { id: 'ar-c105', target: 'كانَ المَشْرُوعُ مَدْعُومًا مِن الحُكُومة', english: 'The project was supported by the government', blankedWord: 'مَدْعُومًا', blankedReading: 'madʿūman', frequencyRank: 300, difficulty: 'advanced' },
+  { id: 'ar-c106', target: 'المَدِينةُ مُزْدَحِمةٌ في ساعاتِ الذِّرْوة', english: 'The city is crowded during rush hours', blankedWord: 'مُزْدَحِمةٌ', blankedReading: 'muzdaḥima', frequencyRank: 300, difficulty: 'advanced' },
+  { id: 'ar-c107', target: 'تُعْقَدُ الاجْتِماعاتُ كُلَّ يَوْمِ اثْنَيْن', english: 'The meetings are held every Monday', blankedWord: 'تُعْقَدُ', blankedReading: 'tuʿqadu', frequencyRank: 300, difficulty: 'advanced' },
 ];
