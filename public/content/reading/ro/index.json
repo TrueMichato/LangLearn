@@ -252,6 +252,42 @@
         "history"
       ],
       "description": "How the fictional Count Dracula relates to the historical prince Vlad Țepeș."
+    },
+    {
+      "id": "caprioara",
+      "title": "Căprioara",
+      "titleEn": "The Doe (opening)",
+      "difficulty": "hard",
+      "wordCount": 91,
+      "tags": [
+        "literature",
+        "nature"
+      ],
+      "description": "The tender opening of Emil Gârleanu’s classic short story, verbatim (public domain, ro.wikisource.org)."
+    },
+    {
+      "id": "tinerete-fara-batranete",
+      "title": "Tinerețe fără bătrânețe",
+      "titleEn": "Youth Without Old Age",
+      "difficulty": "medium",
+      "wordCount": 149,
+      "tags": [
+        "literature",
+        "fairy-tale"
+      ],
+      "description": "A short retelling of Petre Ispirescu’s most famous Romanian fairy tale."
+    },
+    {
+      "id": "punguta-cu-doi-bani",
+      "title": "Punguța cu doi bani",
+      "titleEn": "The Purse with Two Coins",
+      "difficulty": "medium",
+      "wordCount": 145,
+      "tags": [
+        "literature",
+        "fairy-tale"
+      ],
+      "description": "A short retelling of Ion Creangă’s beloved folk tale about a clever rooster."
     }
   ]
 }

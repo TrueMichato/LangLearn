@@ -36,4 +36,10 @@ export const roMinimalPairs: MinimalPair[] = [
   { id: 'ro-22', wordA: 'sat', wordB: 'sac', readingA: 'sat', readingB: 'sak', meaningA: 'village', meaningB: 'sack / bag', hint: 'final t vs c (k)', category: 'consonant' },
   { id: 'ro-23', wordA: 'tată', wordB: 'toată', readingA: 'TAH-tuh', readingB: 'TWAH-tuh', meaningA: 'father', meaningB: 'all / whole (fem.)', hint: 'a vs oa (diphthong)', category: 'i-diphthong' },
   { id: 'ro-24', wordA: 'car', wordB: 'cară', readingA: 'kar', readingB: 'KAH-ruh', meaningA: 'cart', meaningB: '(he/she) carries', hint: 'final a vs ă (schwa)', category: 'a-vowels' },
+  { id: 'ro-25', wordA: 'lună', wordB: 'bună', readingA: 'LOO-nuh', readingB: 'BOO-nuh', meaningA: 'moon / month', meaningB: 'good (fem.)', hint: 'l vs b', category: 'consonant' },
+  { id: 'ro-26', wordA: 'foc', wordB: 'loc', readingA: 'fok', readingB: 'lok', meaningA: 'fire', meaningB: 'place', hint: 'f vs l', category: 'consonant' },
+  { id: 'ro-27', wordA: 'zi', wordB: 'și', readingA: 'zee', readingB: 'shee', meaningA: 'day', meaningB: 'and', hint: 'z vs ș (sh)', category: 'diacritic-consonants' },
+  { id: 'ro-28', wordA: 'bere', wordB: 'pere', readingA: 'BEH-reh', readingB: 'PEH-reh', meaningA: 'beer', meaningB: 'pears', hint: 'b vs p', category: 'consonant' },
+  { id: 'ro-29', wordA: 'pui', wordB: 'cui', readingA: 'pooy', readingB: 'kooy', meaningA: 'chicken / young', meaningB: 'nail', hint: 'p vs k', category: 'consonant' },
+  { id: 'ro-30', wordA: 'soare', wordB: 'sare', readingA: 'SWAH-reh', readingB: 'SAH-reh', meaningA: 'sun', meaningB: 'salt', hint: 'oa (diphthong) vs a', category: 'i-diphthong' },
 ];
