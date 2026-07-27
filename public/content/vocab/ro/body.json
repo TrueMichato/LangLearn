@@ -1,0 +1,178 @@
+{
+  "id": "body",
+  "words": [
+    {
+      "word": "cap",
+      "reading": "kahp",
+      "meaning": "head",
+      "example": "Port o pălărie pe cap.",
+      "exampleMeaning": "I wear a hat on my head."
+    },
+    {
+      "word": "față",
+      "reading": "fah-tsuh",
+      "meaning": "face",
+      "example": "O față curată arată sănătoasă.",
+      "exampleMeaning": "A clean face looks healthy."
+    },
+    {
+      "word": "ochi",
+      "reading": "oky",
+      "meaning": "eye",
+      "example": "Am un ochi mai sensibil la lumină.",
+      "exampleMeaning": "I have one eye more sensitive to light."
+    },
+    {
+      "word": "ureche",
+      "reading": "oo-reh-keh",
+      "meaning": "ear",
+      "example": "O ureche mă doare azi.",
+      "exampleMeaning": "One ear hurts today."
+    },
+    {
+      "word": "nas",
+      "reading": "nahs",
+      "meaning": "nose",
+      "example": "Un nas roșu apare de la frig.",
+      "exampleMeaning": "A red nose appears from the cold."
+    },
+    {
+      "word": "gură",
+      "reading": "goo-ruh",
+      "meaning": "mouth",
+      "example": "O gură zâmbitoare schimbă expresia feței.",
+      "exampleMeaning": "A smiling mouth changes the expression of the face."
+    },
+    {
+      "word": "dinte",
+      "reading": "deen-teh",
+      "meaning": "tooth",
+      "example": "Un dinte mă doare după înghețată.",
+      "exampleMeaning": "A tooth hurts after ice cream."
+    },
+    {
+      "word": "gât",
+      "reading": "guht",
+      "meaning": "neck / throat",
+      "example": "Am gâtul uscat de la aerul rece.",
+      "exampleMeaning": "My throat is dry from the cold air."
+    },
+    {
+      "word": "umăr",
+      "reading": "oo-muhr",
+      "meaning": "shoulder",
+      "example": "Port geanta pe umăr.",
+      "exampleMeaning": "I carry the bag on my shoulder."
+    },
+    {
+      "word": "braț",
+      "reading": "brahts",
+      "meaning": "arm",
+      "example": "Ridic un braț ca să răspund.",
+      "exampleMeaning": "I raise an arm to answer."
+    },
+    {
+      "word": "mână",
+      "reading": "muh-nuh",
+      "meaning": "hand",
+      "example": "Spăl o mână cu săpun.",
+      "exampleMeaning": "I wash one hand with soap."
+    },
+    {
+      "word": "deget",
+      "reading": "deh-jet",
+      "meaning": "finger",
+      "example": "Am un deget tăiat puțin.",
+      "exampleMeaning": "I have a finger cut a little."
+    },
+    {
+      "word": "spate",
+      "reading": "spah-teh",
+      "meaning": "back",
+      "example": "Un spate drept ajută postura.",
+      "exampleMeaning": "A straight back helps posture."
+    },
+    {
+      "word": "picior",
+      "reading": "pee-chor",
+      "meaning": "leg / foot",
+      "example": "Am un picior obosit după drum.",
+      "exampleMeaning": "I have a tired leg after the trip."
+    },
+    {
+      "word": "genunchi",
+      "reading": "jeh-noonky",
+      "meaning": "knee",
+      "example": "Un genunchi mă doare când alerg.",
+      "exampleMeaning": "One knee hurts when I run."
+    },
+    {
+      "word": "inimă",
+      "reading": "ee-nee-muh",
+      "meaning": "heart",
+      "example": "O inimă sănătoasă bate regulat.",
+      "exampleMeaning": "A healthy heart beats regularly."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "Port geanta pe ___.",
+          "answer": "umăr",
+          "hint": "shoulder"
+        },
+        {
+          "sentence": "Am un ___ obosit după drum.",
+          "answer": "picior",
+          "hint": "leg"
+        },
+        {
+          "sentence": "Un ___ mă doare când alerg.",
+          "answer": "genunchi",
+          "hint": "knee"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "items": [
+        {
+          "question": "What does 'mână' mean?",
+          "options": [
+            "mouth",
+            "hand",
+            "eye",
+            "back"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "How do you say 'heart' in Romanian?",
+          "options": [
+            "inimă",
+            "cap",
+            "deget",
+            "gât"
+          ],
+          "answer": 0
+        },
+        {
+          "question": "What does 'ureche' mean?",
+          "options": [
+            "nose",
+            "tooth",
+            "ear",
+            "shoulder"
+          ],
+          "answer": 2
+        }
+      ]
+    }
+  ]
+}

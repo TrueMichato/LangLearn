@@ -5,6 +5,7 @@ import { XP_DICTATION_BASE, XP_PER_DICTATION_CORRECT } from '../../lib/xp';
 import { jaPassages } from '../../data/listening/ja-passages';
 import { ruPassages } from '../../data/listening/ru-passages';
 import { ptPassages } from '../../data/listening/pt-passages';
+import { roPassages } from '../../data/listening/ro-passages';
 import { speakWithSpeed } from '../../lib/tts';
 import type { ListeningPassage } from '../../data/listening/ja-passages';
 import type { DiffResult } from '../../lib/text-diff';
@@ -13,6 +14,7 @@ const LANG_PASSAGES: Record<string, ListeningPassage[]> = {
   ja: jaPassages,
   ru: ruPassages,
   pt: ptPassages,
+  ro: roPassages,
 };
 
 const SPEED_OPTIONS = [0.5, 0.75, 1.0, 1.25] as const;

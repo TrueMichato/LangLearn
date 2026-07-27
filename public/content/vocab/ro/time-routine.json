@@ -1,0 +1,178 @@
+{
+  "id": "time-routine",
+  "words": [
+    {
+      "word": "timp",
+      "reading": "teemp",
+      "meaning": "time",
+      "example": "Nu am mult timp dimineața.",
+      "exampleMeaning": "I do not have much time in the morning."
+    },
+    {
+      "word": "oră",
+      "reading": "oh-ruh",
+      "meaning": "hour / o’clock",
+      "example": "O oră trece repede.",
+      "exampleMeaning": "One hour passes quickly."
+    },
+    {
+      "word": "minut",
+      "reading": "mee-noot",
+      "meaning": "minute",
+      "example": "Aștept un minut la ușă.",
+      "exampleMeaning": "I wait one minute at the door."
+    },
+    {
+      "word": "dimineață",
+      "reading": "dee-mee-nyah-tsuh",
+      "meaning": "morning",
+      "example": "În fiecare dimineață beau cafea.",
+      "exampleMeaning": "Every morning I drink coffee."
+    },
+    {
+      "word": "prânz",
+      "reading": "pruhnz",
+      "meaning": "lunch / noon",
+      "example": "La prânz mănânc supă.",
+      "exampleMeaning": "At lunch I eat soup."
+    },
+    {
+      "word": "seară",
+      "reading": "syah-ruh",
+      "meaning": "evening",
+      "example": "În fiecare seară citesc o carte.",
+      "exampleMeaning": "Every evening I read a book."
+    },
+    {
+      "word": "noapte",
+      "reading": "nwap-teh",
+      "meaning": "night",
+      "example": "Noaptea, orașul este liniștit.",
+      "exampleMeaning": "At night, the city is quiet."
+    },
+    {
+      "word": "azi",
+      "reading": "ahz",
+      "meaning": "today",
+      "example": "Azi învăț cuvinte noi.",
+      "exampleMeaning": "Today I learn new words."
+    },
+    {
+      "word": "mâine",
+      "reading": "muh-ee-neh",
+      "meaning": "tomorrow",
+      "example": "Mâine plec la munte.",
+      "exampleMeaning": "Tomorrow I leave for the mountains."
+    },
+    {
+      "word": "ieri",
+      "reading": "yer",
+      "meaning": "yesterday",
+      "example": "Ieri am vizitat muzeul.",
+      "exampleMeaning": "Yesterday I visited the museum."
+    },
+    {
+      "word": "devreme",
+      "reading": "deh-vreh-meh",
+      "meaning": "early",
+      "example": "Mă trezesc devreme luni.",
+      "exampleMeaning": "I wake up early on Monday."
+    },
+    {
+      "word": "târziu",
+      "reading": "tuhr-zee-oo",
+      "meaning": "late",
+      "example": "Ajung târziu acasă.",
+      "exampleMeaning": "I arrive home late."
+    },
+    {
+      "word": "a se trezi",
+      "reading": "ah seh treh-zee",
+      "meaning": "to wake up",
+      "example": "Verbul a se trezi apare în rutina mea.",
+      "exampleMeaning": "The verb to wake up appears in my routine."
+    },
+    {
+      "word": "a se spăla",
+      "reading": "ah seh spuh-lah",
+      "meaning": "to wash oneself",
+      "example": "Verbul a se spăla este util zilnic.",
+      "exampleMeaning": "The verb to wash oneself is useful daily."
+    },
+    {
+      "word": "muncă",
+      "reading": "moon-kuh",
+      "meaning": "work",
+      "example": "Merg la muncă la opt.",
+      "exampleMeaning": "I go to work at eight."
+    },
+    {
+      "word": "acasă",
+      "reading": "ah-kah-suh",
+      "meaning": "home",
+      "example": "Mă întorc acasă seara.",
+      "exampleMeaning": "I return home in the evening."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "Nu am mult ___ dimineața.",
+          "answer": "timp",
+          "hint": "time"
+        },
+        {
+          "sentence": "Mă trezesc ___ luni.",
+          "answer": "devreme",
+          "hint": "early"
+        },
+        {
+          "sentence": "Mă întorc ___ seara.",
+          "answer": "acasă",
+          "hint": "home"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "items": [
+        {
+          "question": "What does 'mâine' mean?",
+          "options": [
+            "yesterday",
+            "tomorrow",
+            "today",
+            "night"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "How do you say 'minute' in Romanian?",
+          "options": [
+            "minut",
+            "oră",
+            "timp",
+            "prânz"
+          ],
+          "answer": 0
+        },
+        {
+          "question": "What does 'târziu' mean?",
+          "options": [
+            "early",
+            "morning",
+            "late",
+            "home"
+          ],
+          "answer": 2
+        }
+      ]
+    }
+  ]
+}

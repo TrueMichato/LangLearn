@@ -1,0 +1,185 @@
+{
+  "id": "days-months",
+  "words": [
+    {
+      "word": "luni",
+      "reading": "loon",
+      "meaning": "Monday",
+      "example": "Luni merg la serviciu devreme.",
+      "exampleMeaning": "On Monday I go to work early."
+    },
+    {
+      "word": "marți",
+      "reading": "mahrts",
+      "meaning": "Tuesday",
+      "example": "Marți avem curs de română.",
+      "exampleMeaning": "On Tuesday we have Romanian class."
+    },
+    {
+      "word": "miercuri",
+      "reading": "myer-koo-ree",
+      "meaning": "Wednesday",
+      "example": "Miercuri vizitez biblioteca.",
+      "exampleMeaning": "On Wednesday I visit the library."
+    },
+    {
+      "word": "joi",
+      "reading": "zhoy",
+      "meaning": "Thursday",
+      "example": "Joi gătim împreună.",
+      "exampleMeaning": "On Thursday we cook together."
+    },
+    {
+      "word": "vineri",
+      "reading": "vee-nehr",
+      "meaning": "Friday",
+      "example": "Vineri ies cu prietenii.",
+      "exampleMeaning": "On Friday I go out with friends."
+    },
+    {
+      "word": "sâmbătă",
+      "reading": "suhm-buh-tuh",
+      "meaning": "Saturday",
+      "example": "Sâmbătă dorm mai mult.",
+      "exampleMeaning": "On Saturday I sleep more."
+    },
+    {
+      "word": "duminică",
+      "reading": "doo-mee-nee-kuh",
+      "meaning": "Sunday",
+      "example": "Duminică luăm masa în familie.",
+      "exampleMeaning": "On Sunday we eat with family."
+    },
+    {
+      "word": "ianuarie",
+      "reading": "yah-noo-ah-ree-eh",
+      "meaning": "January",
+      "example": "În ianuarie ninge des.",
+      "exampleMeaning": "It often snows in January."
+    },
+    {
+      "word": "februarie",
+      "reading": "feh-broo-ah-ree-eh",
+      "meaning": "February",
+      "example": "Februarie este o lună scurtă.",
+      "exampleMeaning": "February is a short month."
+    },
+    {
+      "word": "martie",
+      "reading": "mahr-tee-eh",
+      "meaning": "March",
+      "example": "În martie începe primăvara.",
+      "exampleMeaning": "Spring begins in March."
+    },
+    {
+      "word": "aprilie",
+      "reading": "ah-pree-lee-eh",
+      "meaning": "April",
+      "example": "În aprilie plouă mult.",
+      "exampleMeaning": "It rains a lot in April."
+    },
+    {
+      "word": "mai",
+      "reading": "my",
+      "meaning": "May",
+      "example": "În mai florile sunt frumoase.",
+      "exampleMeaning": "In May the flowers are beautiful."
+    },
+    {
+      "word": "iunie",
+      "reading": "yoo-nee-eh",
+      "meaning": "June",
+      "example": "În iunie începe vara.",
+      "exampleMeaning": "Summer begins in June."
+    },
+    {
+      "word": "septembrie",
+      "reading": "sep-tem-bree-eh",
+      "meaning": "September",
+      "example": "Școala începe în septembrie.",
+      "exampleMeaning": "School starts in September."
+    },
+    {
+      "word": "octombrie",
+      "reading": "ok-tom-bree-eh",
+      "meaning": "October",
+      "example": "În octombrie frunzele cad.",
+      "exampleMeaning": "In October the leaves fall."
+    },
+    {
+      "word": "noiembrie",
+      "reading": "noy-em-bree-eh",
+      "meaning": "November",
+      "example": "Noiembrie este adesea rece.",
+      "exampleMeaning": "November is often cold."
+    },
+    {
+      "word": "decembrie",
+      "reading": "deh-chem-bree-eh",
+      "meaning": "December",
+      "example": "În decembrie sărbătorim Crăciunul.",
+      "exampleMeaning": "In December we celebrate Christmas."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "Cursul de română este ___.",
+          "answer": "marți",
+          "hint": "Tuesday"
+        },
+        {
+          "sentence": "În ___ începe primăvara.",
+          "answer": "martie",
+          "hint": "March"
+        },
+        {
+          "sentence": "În ___ sărbătorim Crăciunul.",
+          "answer": "decembrie",
+          "hint": "December"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "items": [
+        {
+          "question": "What does 'duminică' mean?",
+          "options": [
+            "Friday",
+            "Sunday",
+            "Monday",
+            "Thursday"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "How do you say 'October' in Romanian?",
+          "options": [
+            "octombrie",
+            "septembrie",
+            "noiembrie",
+            "aprilie"
+          ],
+          "answer": 0
+        },
+        {
+          "question": "What does 'miercuri' mean?",
+          "options": [
+            "Tuesday",
+            "Thursday",
+            "Wednesday",
+            "Saturday"
+          ],
+          "answer": 2
+        }
+      ]
+    }
+  ]
+}

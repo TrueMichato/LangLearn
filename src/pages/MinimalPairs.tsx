@@ -3,7 +3,7 @@ import { useSettingsStore } from '../stores/settingsStore';
 import { useXPStore } from '../stores/xpStore';
 import { getLanguageLabel } from '../lib/languages';
 import { speak } from '../lib/tts';
-import { jaMinimalPairs, ruMinimalPairs, ptMinimalPairs, esMinimalPairs } from '../data/minimal-pairs';
+import { jaMinimalPairs, ruMinimalPairs, ptMinimalPairs, esMinimalPairs, roMinimalPairs } from '../data/minimal-pairs';
 import type { MinimalPair } from '../data/minimal-pairs';
 type Phase = 'setup' | 'session' | 'summary';
 
@@ -32,6 +32,11 @@ const CATEGORIES: Record<string, string> = {
   'c-z-s': 'C / Z / S Sibilants',
   'n-ñ': 'N vs Ñ',
   'accent-stress': 'Accent & Stress',
+  // RO
+  'a-vowels': 'A-Vowels (a / ă / â)',
+  'diacritic-consonants': 'Ș & Ț vs S & T',
+  'c-g-soft': 'Soft vs Hard C & G',
+  'i-diphthong': 'Î / I & Diphthongs',
 };
 
 function getPairsForLanguage(language: string): MinimalPair[] {
@@ -40,6 +45,7 @@ function getPairsForLanguage(language: string): MinimalPair[] {
     case 'ru': return ruMinimalPairs;
     case 'pt': return ptMinimalPairs;
     case 'es': return esMinimalPairs;
+    case 'ro': return roMinimalPairs;
     default: return [];
   }
 }

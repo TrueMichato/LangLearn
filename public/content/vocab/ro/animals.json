@@ -1,0 +1,178 @@
+{
+  "id": "animals",
+  "words": [
+    {
+      "word": "câine",
+      "reading": "kwuh-neh",
+      "meaning": "dog",
+      "example": "Un câine aleargă după minge.",
+      "exampleMeaning": "A dog runs after the ball."
+    },
+    {
+      "word": "pisică",
+      "reading": "pee-see-kuh",
+      "meaning": "cat",
+      "example": "O pisică doarme pe canapea.",
+      "exampleMeaning": "A cat sleeps on the sofa."
+    },
+    {
+      "word": "pasăre",
+      "reading": "pah-suh-reh",
+      "meaning": "bird",
+      "example": "O pasăre cântă în copac.",
+      "exampleMeaning": "A bird sings in the tree."
+    },
+    {
+      "word": "pește",
+      "reading": "pesh-teh",
+      "meaning": "fish",
+      "example": "Un pește înoată în acvariu.",
+      "exampleMeaning": "A fish swims in the aquarium."
+    },
+    {
+      "word": "cal",
+      "reading": "kahl",
+      "meaning": "horse",
+      "example": "Un cal alb stă lângă gard.",
+      "exampleMeaning": "A white horse stands near the fence."
+    },
+    {
+      "word": "vacă",
+      "reading": "vah-kuh",
+      "meaning": "cow",
+      "example": "O vacă dă lapte proaspăt.",
+      "exampleMeaning": "A cow gives fresh milk."
+    },
+    {
+      "word": "oaie",
+      "reading": "wah-yeh",
+      "meaning": "sheep",
+      "example": "O oaie merge pe deal.",
+      "exampleMeaning": "A sheep walks on the hill."
+    },
+    {
+      "word": "porc",
+      "reading": "pork",
+      "meaning": "pig",
+      "example": "Un porc doarme în noroi.",
+      "exampleMeaning": "A pig sleeps in the mud."
+    },
+    {
+      "word": "găină",
+      "reading": "guh-ee-nuh",
+      "meaning": "hen",
+      "example": "O găină caută boabe în curte.",
+      "exampleMeaning": "A hen looks for grains in the yard."
+    },
+    {
+      "word": "rață",
+      "reading": "rah-tsuh",
+      "meaning": "duck",
+      "example": "O rață înoată pe lac.",
+      "exampleMeaning": "A duck swims on the lake."
+    },
+    {
+      "word": "iepure",
+      "reading": "yeh-poo-reh",
+      "meaning": "rabbit",
+      "example": "Un iepure sare prin iarbă.",
+      "exampleMeaning": "A rabbit jumps through the grass."
+    },
+    {
+      "word": "urs",
+      "reading": "oors",
+      "meaning": "bear",
+      "example": "Un urs trăiește în pădure.",
+      "exampleMeaning": "A bear lives in the forest."
+    },
+    {
+      "word": "lup",
+      "reading": "loop",
+      "meaning": "wolf",
+      "example": "Un lup urlă noaptea.",
+      "exampleMeaning": "A wolf howls at night."
+    },
+    {
+      "word": "vulpe",
+      "reading": "vool-peh",
+      "meaning": "fox",
+      "example": "O vulpe trece pe lângă drum.",
+      "exampleMeaning": "A fox passes by the road."
+    },
+    {
+      "word": "șarpe",
+      "reading": "shahr-peh",
+      "meaning": "snake",
+      "example": "Un șarpe se ascunde sub piatră.",
+      "exampleMeaning": "A snake hides under the stone."
+    },
+    {
+      "word": "broască",
+      "reading": "broh-ahs-kuh",
+      "meaning": "frog",
+      "example": "O broască sare în apă.",
+      "exampleMeaning": "A frog jumps into the water."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "Un ___ aleargă după minge.",
+          "answer": "câine",
+          "hint": "dog"
+        },
+        {
+          "sentence": "O ___ înoată pe lac.",
+          "answer": "rață",
+          "hint": "duck"
+        },
+        {
+          "sentence": "Un ___ trăiește în pădure.",
+          "answer": "urs",
+          "hint": "bear"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "items": [
+        {
+          "question": "What does 'pisică' mean?",
+          "options": [
+            "dog",
+            "cat",
+            "bird",
+            "rabbit"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "How do you say 'wolf' in Romanian?",
+          "options": [
+            "lup",
+            "urs",
+            "cal",
+            "șarpe"
+          ],
+          "answer": 0
+        },
+        {
+          "question": "What does 'oaie' mean?",
+          "options": [
+            "cow",
+            "duck",
+            "sheep",
+            "hen"
+          ],
+          "answer": 2
+        }
+      ]
+    }
+  ]
+}

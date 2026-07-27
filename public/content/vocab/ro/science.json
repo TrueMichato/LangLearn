@@ -1,0 +1,178 @@
+{
+  "id": "science",
+  "words": [
+    {
+      "word": "știință",
+      "reading": "shtee-een-tsuh",
+      "meaning": "science",
+      "example": "Știința ne ajută să înțelegem lumea.",
+      "exampleMeaning": "Science helps us understand the world."
+    },
+    {
+      "word": "experiment",
+      "reading": "eks-peh-ree-ment",
+      "meaning": "experiment",
+      "example": "Experimentul are rezultate clare.",
+      "exampleMeaning": "The experiment has clear results."
+    },
+    {
+      "word": "laborator",
+      "reading": "lah-bo-rah-tor",
+      "meaning": "laboratory",
+      "example": "Laboratorul are instrumente noi.",
+      "exampleMeaning": "The laboratory has new instruments."
+    },
+    {
+      "word": "energie",
+      "reading": "eh-ner-jee-eh",
+      "meaning": "energy",
+      "example": "Energia solară este curată.",
+      "exampleMeaning": "Solar energy is clean."
+    },
+    {
+      "word": "moleculă",
+      "reading": "mo-leh-koo-luh",
+      "meaning": "molecule",
+      "example": "Molecula este formată din atomi.",
+      "exampleMeaning": "The molecule is made of atoms."
+    },
+    {
+      "word": "atom",
+      "reading": "ah-tom",
+      "meaning": "atom",
+      "example": "Atomul este foarte mic.",
+      "exampleMeaning": "The atom is very small."
+    },
+    {
+      "word": "planetă",
+      "reading": "plah-neh-tuh",
+      "meaning": "planet",
+      "example": "Planeta se rotește în jurul stelei.",
+      "exampleMeaning": "The planet rotates around the star."
+    },
+    {
+      "word": "stea",
+      "reading": "steh-ah",
+      "meaning": "star",
+      "example": "Steaua strălucește noaptea.",
+      "exampleMeaning": "The star shines at night."
+    },
+    {
+      "word": "Lună",
+      "reading": "loo-nuh",
+      "meaning": "Moon",
+      "example": "Luna se vede pe cer.",
+      "exampleMeaning": "The Moon can be seen in the sky."
+    },
+    {
+      "word": "Soare",
+      "reading": "swah-reh",
+      "meaning": "Sun",
+      "example": "Soarele încălzește pământul.",
+      "exampleMeaning": "The Sun warms the earth."
+    },
+    {
+      "word": "spațiu",
+      "reading": "spah-tsee-oo",
+      "meaning": "space",
+      "example": "Spațiul este imens și tăcut.",
+      "exampleMeaning": "Space is immense and silent."
+    },
+    {
+      "word": "telescop",
+      "reading": "teh-leh-skop",
+      "meaning": "telescope",
+      "example": "Telescopul arată stele îndepărtate.",
+      "exampleMeaning": "The telescope shows distant stars."
+    },
+    {
+      "word": "gravitație",
+      "reading": "grah-vee-tah-tsee-eh",
+      "meaning": "gravity",
+      "example": "Gravitația ține obiectele pe sol.",
+      "exampleMeaning": "Gravity keeps objects on the ground."
+    },
+    {
+      "word": "orbită",
+      "reading": "or-bee-tuh",
+      "meaning": "orbit",
+      "example": "Orbita planetei este stabilă.",
+      "exampleMeaning": "The planet's orbit is stable."
+    },
+    {
+      "word": "rachetă",
+      "reading": "rah-keh-tuh",
+      "meaning": "rocket",
+      "example": "Racheta pornește spre spațiu.",
+      "exampleMeaning": "The rocket launches toward space."
+    },
+    {
+      "word": "astronaut",
+      "reading": "ahs-tro-na-oot",
+      "meaning": "astronaut",
+      "example": "Astronautul lucrează pe stația spațială.",
+      "exampleMeaning": "The astronaut works on the space station."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "Studiem ___ ca să înțelegem lumea.",
+          "answer": "știință",
+          "hint": "science"
+        },
+        {
+          "sentence": "Privim stelele cu un ___.",
+          "answer": "telescop",
+          "hint": "telescope"
+        },
+        {
+          "sentence": "O ___ pornește spre spațiu.",
+          "answer": "rachetă",
+          "hint": "rocket"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "items": [
+        {
+          "question": "What does 'gravitație' mean?",
+          "options": [
+            "orbit",
+            "gravity",
+            "energy",
+            "molecule"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "How do you say 'laboratory' in Romanian?",
+          "options": [
+            "laborator",
+            "experiment",
+            "telescop",
+            "spațiu"
+          ],
+          "answer": 0
+        },
+        {
+          "question": "What does 'stea' mean?",
+          "options": [
+            "Moon",
+            "Sun",
+            "star",
+            "planet"
+          ],
+          "answer": 2
+        }
+      ]
+    }
+  ]
+}

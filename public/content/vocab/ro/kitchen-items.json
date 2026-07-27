@@ -1,0 +1,178 @@
+{
+  "id": "kitchen-items",
+  "words": [
+    {
+      "word": "farfurie",
+      "reading": "far-foo-ree-eh",
+      "meaning": "plate",
+      "example": "Pun supa într-o farfurie adâncă.",
+      "exampleMeaning": "I put the soup in a deep plate."
+    },
+    {
+      "word": "bol",
+      "reading": "bol",
+      "meaning": "bowl",
+      "example": "Bolul este plin cu salată.",
+      "exampleMeaning": "The bowl is full of salad."
+    },
+    {
+      "word": "cană",
+      "reading": "kah-nuh",
+      "meaning": "mug / cup",
+      "example": "Beau ceai dintr-o cană albastră.",
+      "exampleMeaning": "I drink tea from a blue mug."
+    },
+    {
+      "word": "pahar",
+      "reading": "pah-har",
+      "meaning": "glass",
+      "example": "Umplu paharul cu apă rece.",
+      "exampleMeaning": "I fill the glass with cold water."
+    },
+    {
+      "word": "furculiță",
+      "reading": "foor-koo-lee-tsuh",
+      "meaning": "fork",
+      "example": "Furculița este lângă farfurie.",
+      "exampleMeaning": "The fork is next to the plate."
+    },
+    {
+      "word": "cuțit",
+      "reading": "koo-tseet",
+      "meaning": "knife",
+      "example": "Cuțitul taie pâinea ușor.",
+      "exampleMeaning": "The knife cuts the bread easily."
+    },
+    {
+      "word": "lingură",
+      "reading": "leen-goo-ruh",
+      "meaning": "spoon",
+      "example": "Lingura este în supă.",
+      "exampleMeaning": "The spoon is in the soup."
+    },
+    {
+      "word": "linguriță",
+      "reading": "leen-goo-ree-tsuh",
+      "meaning": "teaspoon",
+      "example": "Pun zahăr cu o linguriță.",
+      "exampleMeaning": "I add sugar with a teaspoon."
+    },
+    {
+      "word": "cratiță",
+      "reading": "krah-tee-tsuh",
+      "meaning": "saucepan",
+      "example": "Cratița stă pe aragaz.",
+      "exampleMeaning": "The saucepan is on the stove."
+    },
+    {
+      "word": "tigaie",
+      "reading": "tee-gah-yeh",
+      "meaning": "frying pan",
+      "example": "Prăjesc legumele în tigaie.",
+      "exampleMeaning": "I fry the vegetables in a pan."
+    },
+    {
+      "word": "oală",
+      "reading": "wah-luh",
+      "meaning": "pot",
+      "example": "Fierb apa într-o oală mare.",
+      "exampleMeaning": "I boil the water in a large pot."
+    },
+    {
+      "word": "tocător",
+      "reading": "toh-kuh-tor",
+      "meaning": "cutting board",
+      "example": "Tocătorul protejează masa.",
+      "exampleMeaning": "The cutting board protects the table."
+    },
+    {
+      "word": "șervețel",
+      "reading": "sher-veh-tsel",
+      "meaning": "napkin",
+      "example": "Șervețelul este pe masă.",
+      "exampleMeaning": "The napkin is on the table."
+    },
+    {
+      "word": "față de masă",
+      "reading": "fah-tsuh deh mah-suh",
+      "meaning": "tablecloth",
+      "example": "Fața de masă este curată.",
+      "exampleMeaning": "The tablecloth is clean."
+    },
+    {
+      "word": "strecurătoare",
+      "reading": "streh-koo-ruh-toh-ah-reh",
+      "meaning": "colander / strainer",
+      "example": "Strecurătoarea scurge pastele.",
+      "exampleMeaning": "The colander drains the pasta."
+    },
+    {
+      "word": "polonic",
+      "reading": "po-lo-neek",
+      "meaning": "ladle",
+      "example": "Polonicul este pentru supă.",
+      "exampleMeaning": "The ladle is for soup."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "Beau ceai dintr-o ___.",
+          "answer": "cană",
+          "hint": "mug"
+        },
+        {
+          "sentence": "Tai pâinea cu un ___.",
+          "answer": "cuțit",
+          "hint": "knife"
+        },
+        {
+          "sentence": "Prăjesc legumele în ___.",
+          "answer": "tigaie",
+          "hint": "frying pan"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "items": [
+        {
+          "question": "What does 'furculiță' mean?",
+          "options": [
+            "fork",
+            "spoon",
+            "napkin",
+            "bowl"
+          ],
+          "answer": 0
+        },
+        {
+          "question": "How do you say 'tablecloth' in Romanian?",
+          "options": [
+            "șervețel",
+            "față de masă",
+            "farfurie",
+            "linguriță"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What does 'polonic' mean?",
+          "options": [
+            "cutting board",
+            "pot",
+            "ladle",
+            "glass"
+          ],
+          "answer": 2
+        }
+      ]
+    }
+  ]
+}

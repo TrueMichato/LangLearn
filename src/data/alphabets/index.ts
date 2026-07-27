@@ -4,6 +4,7 @@ import { KANJI } from './kanji';
 import { CYRILLIC, CYRILLIC_LOWERCASE } from './cyrillic';
 import { PT_ACCENTED_VOWELS, PT_UPPERCASE_ACCENTS } from './portuguese';
 import { ES_ACCENTED_VOWELS, ES_SPECIAL_LETTERS, ES_UPPERCASE_ACCENTS } from './spanish';
+import { RO_DIACRITICS, RO_UPPERCASE_DIACRITICS, RO_COMBINATIONS } from './romanian';
 import type { Character } from './hiragana';
 
 export type { Character };
@@ -26,6 +27,11 @@ export const ALPHABET_DATA: Record<string, { name: string; characters: Character
     { name: 'Accents & Diacritics', characters: ES_ACCENTED_VOWELS },
     { name: 'Ñ, ¿¡ & Special Letters', characters: ES_SPECIAL_LETTERS },
     { name: 'Uppercase Accents', characters: ES_UPPERCASE_ACCENTS },
+  ],
+  ro: [
+    { name: 'Diacritics (ă â î ș ț)', characters: RO_DIACRITICS },
+    { name: 'Uppercase Diacritics', characters: RO_UPPERCASE_DIACRITICS },
+    { name: 'Letter Combinations', characters: RO_COMBINATIONS },
   ],
 };
 

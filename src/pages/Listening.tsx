@@ -6,6 +6,7 @@ import { getLanguageLabel } from '../lib/languages';
 import { jaPassages } from '../data/listening/ja-passages';
 import { ruPassages } from '../data/listening/ru-passages';
 import { ptPassages } from '../data/listening/pt-passages';
+import { roPassages } from '../data/listening/ro-passages';
 import DictationDrill from '../components/drills/DictationDrill';
 import { speakWithSpeed } from '../lib/tts';
 import type { ListeningPassage, ListeningQuestion } from '../data/listening/ja-passages';
@@ -16,6 +17,7 @@ const LANG_PASSAGES: Record<string, ListeningPassage[]> = {
   ja: jaPassages,
   ru: ruPassages,
   pt: ptPassages,
+  ro: roPassages,
 };
 
 const SPEED_OPTIONS = [0.5, 0.75, 1.0, 1.25] as const;

@@ -1,0 +1,178 @@
+{
+  "id": "workplace",
+  "words": [
+    {
+      "word": "companie",
+      "reading": "kom-pah-nee-eh",
+      "meaning": "company",
+      "example": "O companie angajează specialiști noi.",
+      "exampleMeaning": "A company hires new specialists."
+    },
+    {
+      "word": "afacere",
+      "reading": "ah-fah-cheh-reh",
+      "meaning": "business",
+      "example": "O afacere mică crește încet.",
+      "exampleMeaning": "A small business grows slowly."
+    },
+    {
+      "word": "angajat",
+      "reading": "ahn-gah-zhaht",
+      "meaning": "employee",
+      "example": "Un angajat citește contractul.",
+      "exampleMeaning": "An employee reads the contract."
+    },
+    {
+      "word": "angajator",
+      "reading": "ahn-gah-zhah-tor",
+      "meaning": "employer",
+      "example": "Un angajator oferă beneficii bune.",
+      "exampleMeaning": "An employer offers good benefits."
+    },
+    {
+      "word": "ședință",
+      "reading": "sheh-deen-tsuh",
+      "meaning": "meeting",
+      "example": "O ședință începe la zece.",
+      "exampleMeaning": "A meeting starts at ten."
+    },
+    {
+      "word": "proiect",
+      "reading": "proh-yekt",
+      "meaning": "project",
+      "example": "Un proiect important are termen mâine.",
+      "exampleMeaning": "An important project has a deadline tomorrow."
+    },
+    {
+      "word": "termen",
+      "reading": "tehr-men",
+      "meaning": "deadline / term",
+      "example": "Un termen scurt cere organizare.",
+      "exampleMeaning": "A short deadline requires organization."
+    },
+    {
+      "word": "raport",
+      "reading": "rah-port",
+      "meaning": "report",
+      "example": "Scriu raport pentru director.",
+      "exampleMeaning": "I write a report for the director."
+    },
+    {
+      "word": "client",
+      "reading": "klee-ent",
+      "meaning": "client / customer",
+      "example": "Un client mulțumit revine des.",
+      "exampleMeaning": "A satisfied client often returns."
+    },
+    {
+      "word": "contract",
+      "reading": "kon-trahkt",
+      "meaning": "contract",
+      "example": "Semnez contract după interviu.",
+      "exampleMeaning": "I sign the contract after the interview."
+    },
+    {
+      "word": "negociere",
+      "reading": "neh-goh-chee-eh-reh",
+      "meaning": "negotiation",
+      "example": "O negociere durează două ore.",
+      "exampleMeaning": "A negotiation lasts two hours."
+    },
+    {
+      "word": "profit",
+      "reading": "proh-feet",
+      "meaning": "profit",
+      "example": "Profitul crește după investiție.",
+      "exampleMeaning": "Profit grows after the investment."
+    },
+    {
+      "word": "pierdere",
+      "reading": "pyehr-deh-reh",
+      "meaning": "loss",
+      "example": "O pierdere mare sperie echipa.",
+      "exampleMeaning": "A big loss scares the team."
+    },
+    {
+      "word": "strategie",
+      "reading": "strah-teh-jee-eh",
+      "meaning": "strategy",
+      "example": "O strategie clară ajută vânzările.",
+      "exampleMeaning": "A clear strategy helps sales."
+    },
+    {
+      "word": "conducere",
+      "reading": "kon-doo-cheh-reh",
+      "meaning": "management / leadership",
+      "example": "Conducerea decide bugetul.",
+      "exampleMeaning": "Management decides the budget."
+    },
+    {
+      "word": "interviu",
+      "reading": "een-tehr-vee-oo",
+      "meaning": "interview",
+      "example": "Un interviu durează treizeci de minute.",
+      "exampleMeaning": "An interview lasts thirty minutes."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "Scriu ___ pentru director.",
+          "answer": "raport",
+          "hint": "report"
+        },
+        {
+          "sentence": "Semnez ___ după interviu.",
+          "answer": "contract",
+          "hint": "contract"
+        },
+        {
+          "sentence": "O ___ clară ajută vânzările.",
+          "answer": "strategie",
+          "hint": "strategy"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "items": [
+        {
+          "question": "What does 'ședință' mean?",
+          "options": [
+            "employee",
+            "meeting",
+            "deadline",
+            "profit"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "How do you say 'client' in Romanian?",
+          "options": [
+            "client",
+            "angajat",
+            "angajator",
+            "raport"
+          ],
+          "answer": 0
+        },
+        {
+          "question": "What does 'pierdere' mean?",
+          "options": [
+            "business",
+            "strategy",
+            "loss",
+            "interview"
+          ],
+          "answer": 2
+        }
+      ]
+    }
+  ]
+}

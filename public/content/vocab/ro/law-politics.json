@@ -1,0 +1,178 @@
+{
+  "id": "law-politics",
+  "words": [
+    {
+      "word": "lege",
+      "reading": "leh-jeh",
+      "meaning": "law",
+      "example": "O lege nouă intră în vigoare.",
+      "exampleMeaning": "A new law comes into force."
+    },
+    {
+      "word": "drept",
+      "reading": "drept",
+      "meaning": "right / law",
+      "example": "Un drept la vot este fundamental.",
+      "exampleMeaning": "A right to vote is fundamental."
+    },
+    {
+      "word": "guvern",
+      "reading": "goo-vehrn",
+      "meaning": "government",
+      "example": "Un guvern anunță măsuri economice.",
+      "exampleMeaning": "A government announces economic measures."
+    },
+    {
+      "word": "stat",
+      "reading": "staht",
+      "meaning": "state",
+      "example": "Un stat protejează cetățenii.",
+      "exampleMeaning": "A state protects citizens."
+    },
+    {
+      "word": "președinte",
+      "reading": "preh-sheh-deen-teh",
+      "meaning": "president",
+      "example": "Un președinte ține un discurs.",
+      "exampleMeaning": "A president gives a speech."
+    },
+    {
+      "word": "parlament",
+      "reading": "pahr-lah-ment",
+      "meaning": "parliament",
+      "example": "Un parlament votează bugetul.",
+      "exampleMeaning": "A parliament votes on the budget."
+    },
+    {
+      "word": "alegeri",
+      "reading": "ah-leh-jehr",
+      "meaning": "elections",
+      "example": "Alegeri locale au loc duminică.",
+      "exampleMeaning": "Local elections take place on Sunday."
+    },
+    {
+      "word": "vot",
+      "reading": "vot",
+      "meaning": "vote",
+      "example": "Fiecare vot contează.",
+      "exampleMeaning": "Every vote counts."
+    },
+    {
+      "word": "cetățean",
+      "reading": "cheh-tuh-tseh-ahn",
+      "meaning": "citizen",
+      "example": "Un cetățean respectă legea.",
+      "exampleMeaning": "A citizen respects the law."
+    },
+    {
+      "word": "primar",
+      "reading": "pree-mahr",
+      "meaning": "mayor",
+      "example": "Un primar discută cu locuitorii.",
+      "exampleMeaning": "A mayor talks with the residents."
+    },
+    {
+      "word": "judecător",
+      "reading": "joo-deh-kuh-tor",
+      "meaning": "judge",
+      "example": "Un judecător ascultă argumentele.",
+      "exampleMeaning": "A judge listens to the arguments."
+    },
+    {
+      "word": "poliție",
+      "reading": "poh-lee-tsee-eh",
+      "meaning": "police",
+      "example": "Sun la poliție în caz de urgență.",
+      "exampleMeaning": "I call the police in an emergency."
+    },
+    {
+      "word": "contract",
+      "reading": "kon-trahkt",
+      "meaning": "contract",
+      "example": "Un contract clar previne conflicte.",
+      "exampleMeaning": "A clear contract prevents conflicts."
+    },
+    {
+      "word": "regulă",
+      "reading": "reh-goo-luh",
+      "meaning": "rule",
+      "example": "O regulă simplă ajută traficul.",
+      "exampleMeaning": "A simple rule helps traffic."
+    },
+    {
+      "word": "libertate",
+      "reading": "lee-behr-tah-teh",
+      "meaning": "freedom",
+      "example": "Vreau libertate de exprimare pentru toți.",
+      "exampleMeaning": "I want freedom of expression for everyone."
+    },
+    {
+      "word": "responsabilitate",
+      "reading": "res-pon-sah-bee-lee-tah-teh",
+      "meaning": "responsibility",
+      "example": "O responsabilitate publică cere transparență.",
+      "exampleMeaning": "A public responsibility requires transparency."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "Fiecare ___ contează.",
+          "answer": "vot",
+          "hint": "vote"
+        },
+        {
+          "sentence": "Un ___ respectă legea.",
+          "answer": "cetățean",
+          "hint": "citizen"
+        },
+        {
+          "sentence": "Vreau ___ de exprimare pentru toți.",
+          "answer": "libertate",
+          "hint": "freedom"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "items": [
+        {
+          "question": "What does 'lege' mean?",
+          "options": [
+            "right",
+            "law",
+            "vote",
+            "mayor"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "How do you say 'president' in Romanian?",
+          "options": [
+            "președinte",
+            "primar",
+            "judecător",
+            "cetățean"
+          ],
+          "answer": 0
+        },
+        {
+          "question": "What does 'alegeri' mean?",
+          "options": [
+            "rules",
+            "contracts",
+            "elections",
+            "police"
+          ],
+          "answer": 2
+        }
+      ]
+    }
+  ]
+}

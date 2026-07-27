@@ -1,0 +1,178 @@
+{
+  "id": "opinions",
+  "words": [
+    {
+      "word": "opinie",
+      "reading": "oh-pee-nee-eh",
+      "meaning": "opinion",
+      "example": "O opinie diferită poate ajuta discuția.",
+      "exampleMeaning": "A different opinion can help the discussion."
+    },
+    {
+      "word": "părere",
+      "reading": "puh-reh-reh",
+      "meaning": "view / opinion",
+      "example": "O părere personală contează aici.",
+      "exampleMeaning": "A personal view matters here."
+    },
+    {
+      "word": "argument",
+      "reading": "ahr-goo-ment",
+      "meaning": "argument / reason",
+      "example": "Un argument solid convinge publicul.",
+      "exampleMeaning": "A solid argument convinces the audience."
+    },
+    {
+      "word": "dovadă",
+      "reading": "doh-vah-duh",
+      "meaning": "proof / evidence",
+      "example": "O dovadă clară susține ideea.",
+      "exampleMeaning": "Clear evidence supports the idea."
+    },
+    {
+      "word": "acord",
+      "reading": "ah-kord",
+      "meaning": "agreement",
+      "example": "Sunt de acord cu propunerea.",
+      "exampleMeaning": "I agree with the proposal."
+    },
+    {
+      "word": "dezacord",
+      "reading": "deh-zah-kord",
+      "meaning": "disagreement",
+      "example": "Un dezacord politicos este posibil.",
+      "exampleMeaning": "Polite disagreement is possible."
+    },
+    {
+      "word": "întrebare",
+      "reading": "uhn-treh-bah-reh",
+      "meaning": "question",
+      "example": "O întrebare bună deschide dialogul.",
+      "exampleMeaning": "A good question opens the dialogue."
+    },
+    {
+      "word": "răspuns",
+      "reading": "ruhs-poons",
+      "meaning": "answer",
+      "example": "Un răspuns scurt clarifică problema.",
+      "exampleMeaning": "A short answer clarifies the problem."
+    },
+    {
+      "word": "discuție",
+      "reading": "dees-koo-tsee-eh",
+      "meaning": "discussion",
+      "example": "O discuție calmă rezolvă conflictul.",
+      "exampleMeaning": "A calm discussion solves the conflict."
+    },
+    {
+      "word": "dezbatere",
+      "reading": "dez-bah-teh-reh",
+      "meaning": "debate",
+      "example": "O dezbatere publică durează o oră.",
+      "exampleMeaning": "A public debate lasts one hour."
+    },
+    {
+      "word": "a crede",
+      "reading": "ah kreh-deh",
+      "meaning": "to believe / think",
+      "example": "Verbul a crede exprimă o opinie.",
+      "exampleMeaning": "The verb to believe expresses an opinion."
+    },
+    {
+      "word": "a considera",
+      "reading": "ah kon-see-deh-rah",
+      "meaning": "to consider",
+      "example": "Verbul a considera cere motive.",
+      "exampleMeaning": "The verb to consider requires reasons."
+    },
+    {
+      "word": "a explica",
+      "reading": "ah eks-plee-kah",
+      "meaning": "to explain",
+      "example": "Verbul a explica ajută în discuții.",
+      "exampleMeaning": "The verb to explain helps in discussions."
+    },
+    {
+      "word": "important",
+      "reading": "eem-por-tahnt",
+      "meaning": "important",
+      "example": "Un punct important merită atenție.",
+      "exampleMeaning": "An important point deserves attention."
+    },
+    {
+      "word": "posibil",
+      "reading": "poh-see-beel",
+      "meaning": "possible",
+      "example": "Un compromis posibil apare târziu.",
+      "exampleMeaning": "A possible compromise appears late."
+    },
+    {
+      "word": "clar",
+      "reading": "klahr",
+      "meaning": "clear",
+      "example": "Un mesaj clar evită confuzia.",
+      "exampleMeaning": "A clear message avoids confusion."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "O ___ bună deschide dialogul.",
+          "answer": "întrebare",
+          "hint": "question"
+        },
+        {
+          "sentence": "Un mesaj ___ evită confuzia.",
+          "answer": "clar",
+          "hint": "clear"
+        },
+        {
+          "sentence": "O ___ calmă rezolvă conflictul.",
+          "answer": "discuție",
+          "hint": "discussion"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "items": [
+        {
+          "question": "What does 'dovadă' mean?",
+          "options": [
+            "answer",
+            "proof / evidence",
+            "opinion",
+            "agreement"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "How do you say 'disagreement' in Romanian?",
+          "options": [
+            "dezacord",
+            "acord",
+            "argument",
+            "răspuns"
+          ],
+          "answer": 0
+        },
+        {
+          "question": "What does 'dezbatere' mean?",
+          "options": [
+            "question",
+            "reason",
+            "debate",
+            "view"
+          ],
+          "answer": 2
+        }
+      ]
+    }
+  ]
+}

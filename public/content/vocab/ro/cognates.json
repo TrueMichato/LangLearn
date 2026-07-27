@@ -1,0 +1,178 @@
+{
+  "id": "cognates",
+  "words": [
+    {
+      "word": "informație",
+      "reading": "een-for-mah-tsee-eh",
+      "meaning": "information",
+      "example": "O informație corectă ajută decizia.",
+      "exampleMeaning": "Correct information helps the decision."
+    },
+    {
+      "word": "important",
+      "reading": "eem-por-tahnt",
+      "meaning": "important",
+      "example": "Un detaliu important schimbă planul.",
+      "exampleMeaning": "An important detail changes the plan."
+    },
+    {
+      "word": "problemă",
+      "reading": "proh-bleh-muh",
+      "meaning": "problem",
+      "example": "O problemă mică are soluție simplă.",
+      "exampleMeaning": "A small problem has a simple solution."
+    },
+    {
+      "word": "telefon",
+      "reading": "teh-leh-fon",
+      "meaning": "telephone / phone",
+      "example": "Un telefon mobil este pe birou.",
+      "exampleMeaning": "A mobile phone is on the desk."
+    },
+    {
+      "word": "hotel",
+      "reading": "hoh-tel",
+      "meaning": "hotel",
+      "example": "Un hotel central este convenabil.",
+      "exampleMeaning": "A central hotel is convenient."
+    },
+    {
+      "word": "familie",
+      "reading": "fah-mee-lee-eh",
+      "meaning": "family",
+      "example": "O familie unită oferă sprijin.",
+      "exampleMeaning": "A united family offers support."
+    },
+    {
+      "word": "universitate",
+      "reading": "oo-nee-vehr-see-tah-teh",
+      "meaning": "university",
+      "example": "O universitate veche are tradiție.",
+      "exampleMeaning": "An old university has tradition."
+    },
+    {
+      "word": "cultură",
+      "reading": "kool-too-ruh",
+      "meaning": "culture",
+      "example": "Cultura locală atrage turiști.",
+      "exampleMeaning": "Local culture attracts tourists."
+    },
+    {
+      "word": "actual",
+      "reading": "ahk-too-ahl",
+      "meaning": "current / present, not actual",
+      "example": "Prețul actual este mai mare.",
+      "exampleMeaning": "The current price is higher."
+    },
+    {
+      "word": "eventual",
+      "reading": "eh-ven-too-ahl",
+      "meaning": "possible / potential, not eventual",
+      "example": "Un eventual acord ar ajuta echipa.",
+      "exampleMeaning": "A possible agreement would help the team."
+    },
+    {
+      "word": "librărie",
+      "reading": "lee-bruh-ree-eh",
+      "meaning": "bookstore, not library",
+      "example": "O librărie vinde romane noi.",
+      "exampleMeaning": "A bookstore sells new novels."
+    },
+    {
+      "word": "fabrică",
+      "reading": "fah-bree-kuh",
+      "meaning": "factory, not fabric",
+      "example": "O fabrică produce mobilă.",
+      "exampleMeaning": "A factory produces furniture."
+    },
+    {
+      "word": "simpatic",
+      "reading": "seem-pah-teek",
+      "meaning": "nice / likable, not sympathetic",
+      "example": "Colegul simpatic salută pe toată lumea.",
+      "exampleMeaning": "The nice colleague greets everyone."
+    },
+    {
+      "word": "sensibil",
+      "reading": "sen-see-beel",
+      "meaning": "sensitive, not sensible",
+      "example": "Un subiect sensibil cere tact.",
+      "exampleMeaning": "A sensitive topic requires tact."
+    },
+    {
+      "word": "prost",
+      "reading": "prost",
+      "meaning": "stupid / foolish, not proud",
+      "example": "Un răspuns prost poate crea probleme.",
+      "exampleMeaning": "A foolish answer can create problems."
+    },
+    {
+      "word": "pretinde",
+      "reading": "preh-teen-deh",
+      "meaning": "to claim / demand, not pretend",
+      "example": "El poate pretinde că are dreptate.",
+      "exampleMeaning": "He can claim that he is right."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "Prețul ___ este mai mare.",
+          "answer": "actual",
+          "hint": "current"
+        },
+        {
+          "sentence": "O ___ vinde romane noi.",
+          "answer": "librărie",
+          "hint": "bookstore"
+        },
+        {
+          "sentence": "El poate ___ că are dreptate.",
+          "answer": "pretinde",
+          "hint": "to claim"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "items": [
+        {
+          "question": "What does 'informație' mean?",
+          "options": [
+            "problem",
+            "information",
+            "culture",
+            "family"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What does the false friend 'prost' mean?",
+          "options": [
+            "stupid / foolish",
+            "proud",
+            "possible",
+            "sensitive"
+          ],
+          "answer": 0
+        },
+        {
+          "question": "What does 'librărie' mean?",
+          "options": [
+            "library",
+            "factory",
+            "bookstore",
+            "university"
+          ],
+          "answer": 2
+        }
+      ]
+    }
+  ]
+}

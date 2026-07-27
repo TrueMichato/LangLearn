@@ -1,0 +1,178 @@
+{
+  "id": "geography",
+  "words": [
+    {
+      "word": "România",
+      "reading": "ro-muh-nee-ah",
+      "meaning": "Romania",
+      "example": "România are multe orașe frumoase.",
+      "exampleMeaning": "Romania has many beautiful cities."
+    },
+    {
+      "word": "Franța",
+      "reading": "frahn-tsah",
+      "meaning": "France",
+      "example": "Franța este cunoscută pentru Paris.",
+      "exampleMeaning": "France is known for Paris."
+    },
+    {
+      "word": "Germania",
+      "reading": "jer-mah-nee-ah",
+      "meaning": "Germany",
+      "example": "Germania are multe orașe istorice.",
+      "exampleMeaning": "Germany has many historic cities."
+    },
+    {
+      "word": "Ungaria",
+      "reading": "oon-gah-ree-ah",
+      "meaning": "Hungary",
+      "example": "Ungaria se află la vest de România.",
+      "exampleMeaning": "Hungary is west of Romania."
+    },
+    {
+      "word": "Bulgaria",
+      "reading": "bool-gah-ree-ah",
+      "meaning": "Bulgaria",
+      "example": "Bulgaria este la sud de România.",
+      "exampleMeaning": "Bulgaria is south of Romania."
+    },
+    {
+      "word": "Italia",
+      "reading": "ee-tah-lee-ah",
+      "meaning": "Italy",
+      "example": "Italia are o coastă lungă.",
+      "exampleMeaning": "Italy has a long coastline."
+    },
+    {
+      "word": "Spania",
+      "reading": "spah-nee-ah",
+      "meaning": "Spain",
+      "example": "Spania este în Peninsula Iberică.",
+      "exampleMeaning": "Spain is in the Iberian Peninsula."
+    },
+    {
+      "word": "munte",
+      "reading": "moon-teh",
+      "meaning": "mountain",
+      "example": "Urcăm pe un munte în weekend.",
+      "exampleMeaning": "We climb a mountain on the weekend."
+    },
+    {
+      "word": "râu",
+      "reading": "ruh-oo",
+      "meaning": "river",
+      "example": "Un râu trece prin sat.",
+      "exampleMeaning": "A river passes through the village."
+    },
+    {
+      "word": "deal",
+      "reading": "deh-al",
+      "meaning": "hill",
+      "example": "Casa este pe un deal liniștit.",
+      "exampleMeaning": "The house is on a quiet hill."
+    },
+    {
+      "word": "câmpie",
+      "reading": "kuhm-pee-eh",
+      "meaning": "plain / lowland",
+      "example": "Câmpia este bună pentru agricultură.",
+      "exampleMeaning": "The plain is good for agriculture."
+    },
+    {
+      "word": "lac",
+      "reading": "lak",
+      "meaning": "lake",
+      "example": "Înotăm într-un lac curat vara.",
+      "exampleMeaning": "We swim in a clean lake in summer."
+    },
+    {
+      "word": "insulă",
+      "reading": "een-soo-luh",
+      "meaning": "island",
+      "example": "Insula are plaje mici.",
+      "exampleMeaning": "The island has small beaches."
+    },
+    {
+      "word": "Marea Neagră",
+      "reading": "mah-reh-ah nyah-gruh",
+      "meaning": "the Black Sea",
+      "example": "Marea Neagră este la est de România.",
+      "exampleMeaning": "The Black Sea is east of Romania."
+    },
+    {
+      "word": "Dunărea",
+      "reading": "doo-nuh-reh-ah",
+      "meaning": "the Danube",
+      "example": "Dunărea ajunge la Marea Neagră.",
+      "exampleMeaning": "The Danube reaches the Black Sea."
+    },
+    {
+      "word": "Carpații",
+      "reading": "kar-paht-see",
+      "meaning": "the Carpathians",
+      "example": "Carpații traversează România.",
+      "exampleMeaning": "The Carpathians cross Romania."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "___ se află la vest de România.",
+          "answer": "Ungaria",
+          "hint": "Hungary"
+        },
+        {
+          "sentence": "Un ___ trece prin sat.",
+          "answer": "râu",
+          "hint": "river"
+        },
+        {
+          "sentence": "___ ajunge la Marea Neagră.",
+          "answer": "Dunărea",
+          "hint": "the Danube"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "items": [
+        {
+          "question": "What does 'câmpie' mean?",
+          "options": [
+            "island",
+            "plain / lowland",
+            "lake",
+            "hill"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "How do you say 'the Black Sea' in Romanian?",
+          "options": [
+            "Carpații",
+            "Marea Neagră",
+            "Dunărea",
+            "Franța"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What does 'munte' mean?",
+          "options": [
+            "river",
+            "country",
+            "mountain",
+            "plain"
+          ],
+          "answer": 2
+        }
+      ]
+    }
+  ]
+}

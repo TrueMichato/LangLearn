@@ -26,3 +26,6 @@ dev-dist/
 
 infra/push-worker/vapid.json
 .env.example
+
+# Local tool caches
+.impeccable/

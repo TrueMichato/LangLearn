@@ -1,0 +1,178 @@
+{
+  "id": "sports",
+  "words": [
+    {
+      "word": "sport",
+      "reading": "sport",
+      "meaning": "sport",
+      "example": "Fac sport regulat pentru sănătate.",
+      "exampleMeaning": "I do sports regularly for health."
+    },
+    {
+      "word": "exercițiu",
+      "reading": "eg-zehr-chee-tsee-oo",
+      "meaning": "exercise",
+      "example": "Un exercițiu zilnic întărește mușchii.",
+      "exampleMeaning": "A daily exercise strengthens the muscles."
+    },
+    {
+      "word": "antrenament",
+      "reading": "ahn-treh-nah-ment",
+      "meaning": "training",
+      "example": "Un antrenament începe la șase.",
+      "exampleMeaning": "A training session begins at six."
+    },
+    {
+      "word": "echipă",
+      "reading": "eh-kee-puh",
+      "meaning": "team",
+      "example": "O echipă câștigă împreună.",
+      "exampleMeaning": "A team wins together."
+    },
+    {
+      "word": "jucător",
+      "reading": "zhoo-kuh-tor",
+      "meaning": "player",
+      "example": "Un jucător aleargă spre poartă.",
+      "exampleMeaning": "A player runs toward the goal."
+    },
+    {
+      "word": "meci",
+      "reading": "mech",
+      "meaning": "match / game",
+      "example": "Un meci important începe diseară.",
+      "exampleMeaning": "An important match starts this evening."
+    },
+    {
+      "word": "teren",
+      "reading": "teh-ren",
+      "meaning": "field / court",
+      "example": "Un teren umed schimbă jocul.",
+      "exampleMeaning": "A wet field changes the game."
+    },
+    {
+      "word": "minge",
+      "reading": "meen-jeh",
+      "meaning": "ball",
+      "example": "O minge intră în poartă.",
+      "exampleMeaning": "A ball goes into the goal."
+    },
+    {
+      "word": "poartă",
+      "reading": "pwar-tuh",
+      "meaning": "goal / gate",
+      "example": "Portarul apără poartă.",
+      "exampleMeaning": "The goalkeeper defends the goal."
+    },
+    {
+      "word": "alergare",
+      "reading": "ah-lehr-gah-reh",
+      "meaning": "running",
+      "example": "Alergarea pe distanță lungă cere răbdare.",
+      "exampleMeaning": "Long-distance running requires patience."
+    },
+    {
+      "word": "înot",
+      "reading": "uh-not",
+      "meaning": "swimming",
+      "example": "Înotul dezvoltă respirația.",
+      "exampleMeaning": "Swimming develops breathing."
+    },
+    {
+      "word": "sală",
+      "reading": "sah-luh",
+      "meaning": "gym / hall",
+      "example": "Merg la sală după muncă.",
+      "exampleMeaning": "I go to the gym after work."
+    },
+    {
+      "word": "greutate",
+      "reading": "greh-oo-tah-teh",
+      "meaning": "weight",
+      "example": "Ridic o greutate ușoară.",
+      "exampleMeaning": "I lift a light weight."
+    },
+    {
+      "word": "încălzire",
+      "reading": "uhn-kuhl-zee-reh",
+      "meaning": "warm-up",
+      "example": "Încălzirea previne accidentările.",
+      "exampleMeaning": "Warm-up prevents injuries."
+    },
+    {
+      "word": "victorie",
+      "reading": "veek-toh-ree-eh",
+      "meaning": "victory",
+      "example": "O victorie aduce bucurie echipei.",
+      "exampleMeaning": "A victory brings joy to the team."
+    },
+    {
+      "word": "înfrângere",
+      "reading": "uhn-fruhn-jeh-reh",
+      "meaning": "defeat",
+      "example": "O înfrângere poate fi o lecție.",
+      "exampleMeaning": "A defeat can be a lesson."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "Merg la ___ după muncă.",
+          "answer": "sală",
+          "hint": "gym"
+        },
+        {
+          "sentence": "Ridic o ___ ușoară.",
+          "answer": "greutate",
+          "hint": "weight"
+        },
+        {
+          "sentence": "Fac ___ înainte de alergare.",
+          "answer": "încălzire",
+          "hint": "warm-up"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "items": [
+        {
+          "question": "What does 'echipă' mean?",
+          "options": [
+            "player",
+            "team",
+            "field",
+            "ball"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "How do you say 'victory' in Romanian?",
+          "options": [
+            "victorie",
+            "înfrângere",
+            "meci",
+            "poartă"
+          ],
+          "answer": 0
+        },
+        {
+          "question": "What does 'teren' mean?",
+          "options": [
+            "goal",
+            "training",
+            "field / court",
+            "exercise"
+          ],
+          "answer": 2
+        }
+      ]
+    }
+  ]
+}
