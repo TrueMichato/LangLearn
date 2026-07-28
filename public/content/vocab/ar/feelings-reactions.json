@@ -1,0 +1,183 @@
+{
+  "id": "feelings-reactions",
+  "words": [
+    {
+      "word": "وَاو!",
+      "reading": "wāw!",
+      "meaning": "wow!",
+      "example": "وَاو! هٰذَا الْمَشْهَدُ جَمِيلٌ.",
+      "exampleMeaning": "Wow! This view is beautiful."
+    },
+    {
+      "word": "يَا لَلْعَجَبِ!",
+      "reading": "yā la-l-ʿajabi!",
+      "meaning": "how surprising!",
+      "example": "يَا لَلْعَجَبِ! الْبَابُ مَفْتُوحٌ.",
+      "exampleMeaning": "How surprising! The door is open."
+    },
+    {
+      "word": "حَقًّا؟",
+      "reading": "ḥaqqan?",
+      "meaning": "really?",
+      "example": "حَقًّا؟ سَتُسَافِرُ غَدًا؟",
+      "exampleMeaning": "Really? Will you travel tomorrow?"
+    },
+    {
+      "word": "مَعْقُولٌ؟",
+      "reading": "maʿqūlun?",
+      "meaning": "is that possible?",
+      "example": "مَعْقُولٌ؟ انْتَهَى الدَّرْسُ سَرِيعًا؟",
+      "exampleMeaning": "Is that possible? Did the lesson end quickly?"
+    },
+    {
+      "word": "لَا بَأْسَ",
+      "reading": "lā baʾsa",
+      "meaning": "it's okay / no problem",
+      "example": "لَا بَأْسَ، نُحَاوِلُ مَرَّةً أُخْرَى.",
+      "exampleMeaning": "It's okay; we will try another time."
+    },
+    {
+      "word": "حَسَنًا",
+      "reading": "ḥasanan",
+      "meaning": "okay / alright",
+      "example": "حَسَنًا، سَأَبْدَأُ الْآنَ.",
+      "exampleMeaning": "Okay, I will start now."
+    },
+    {
+      "word": "طَبْعًا",
+      "reading": "ṭabʿan",
+      "meaning": "of course",
+      "example": "طَبْعًا، أُسَاعِدُكَ بِسُرُورٍ.",
+      "exampleMeaning": "Of course, I will help you gladly."
+    },
+    {
+      "word": "بِالتَّأْكِيدِ",
+      "reading": "bi-t-taʾkīdi",
+      "meaning": "certainly",
+      "example": "بِالتَّأْكِيدِ، هٰذِهِ فِكْرَةٌ جَيِّدَةٌ.",
+      "exampleMeaning": "Certainly, this is a good idea."
+    },
+    {
+      "word": "رُبَّمَا",
+      "reading": "rubbamā",
+      "meaning": "maybe / perhaps",
+      "example": "رُبَّمَا نَخْرُجُ بَعْدَ الظُّهْرِ.",
+      "exampleMeaning": "Maybe we will go out after noon."
+    },
+    {
+      "word": "لَيْسَ مُهِمًّا",
+      "reading": "laysa muhimman",
+      "meaning": "it is not important",
+      "example": "لَيْسَ مُهِمًّا، الْوَقْتُ مَا زَالَ مُبَكِّرًا.",
+      "exampleMeaning": "It is not important; the time is still early."
+    },
+    {
+      "word": "مُمْتَازٌ!",
+      "reading": "mumtāzun!",
+      "meaning": "excellent!",
+      "example": "مُمْتَازٌ! إِجَابَتُكَ صَحِيحَةٌ.",
+      "exampleMeaning": "Excellent! Your answer is correct."
+    },
+    {
+      "word": "رَائِعٌ!",
+      "reading": "rāʾiʿun!",
+      "meaning": "wonderful! / great!",
+      "example": "رَائِعٌ! سَمِعْتُ الْخَبَرَ السَّارَّ.",
+      "exampleMeaning": "Wonderful! I heard the happy news."
+    },
+    {
+      "word": "هٰذَا مُحْزِنٌ",
+      "reading": "hādhā muḥzinun",
+      "meaning": "this is sad",
+      "example": "هٰذَا مُحْزِنٌ، وَلٰكِنَّنَا مَعَكَ.",
+      "exampleMeaning": "This is sad, but we are with you."
+    },
+    {
+      "word": "هٰذَا مُضْحِكٌ",
+      "reading": "hādhā muḍḥikun",
+      "meaning": "this is funny",
+      "example": "هٰذَا مُضْحِكٌ، ضَحِكَ الْجَمِيعُ.",
+      "exampleMeaning": "This is funny; everyone laughed."
+    },
+    {
+      "word": "يَا إِلٰهِي!",
+      "reading": "yā ʾilāhī!",
+      "meaning": "oh dear! / oh my!",
+      "example": "يَا إِلٰهِي! نَسِيتُ الْمِفْتَاحَ.",
+      "exampleMeaning": "Oh dear! I forgot the key."
+    },
+    {
+      "word": "لِلْأَسَفِ",
+      "reading": "li-l-ʾasafi",
+      "meaning": "unfortunately",
+      "example": "لِلْأَسَفِ، أُلْغِيَ الْمَوْعِدُ.",
+      "exampleMeaning": "Unfortunately, the appointment was canceled."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "___ هٰذَا الْمَشْهَدُ جَمِيلٌ.",
+          "answer": "وَاو!",
+          "hint": "wow!"
+        },
+        {
+          "sentence": "___ الْبَابُ مَفْتُوحٌ.",
+          "answer": "يَا لَلْعَجَبِ!",
+          "hint": "how surprising!"
+        },
+        {
+          "sentence": "___ سَتُسَافِرُ غَدًا؟",
+          "answer": "حَقًّا؟",
+          "hint": "really?"
+        },
+        {
+          "sentence": "___ انْتَهَى الدَّرْسُ سَرِيعًا؟",
+          "answer": "مَعْقُولٌ؟",
+          "hint": "is that possible?"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "items": [
+        {
+          "question": "What does ‘وَاو!’ mean?",
+          "options": [
+            "how surprising!",
+            "wow!",
+            "really?",
+            "is that possible?"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What does ‘يَا لَلْعَجَبِ!’ mean?",
+          "options": [
+            "really?",
+            "how surprising!",
+            "no problem",
+            "okay"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What does ‘حَقًّا؟’ mean?",
+          "options": [
+            "is that possible?",
+            "really?",
+            "of course",
+            "unfortunately"
+          ],
+          "answer": 1
+        }
+      ]
+    }
+  ]
+}

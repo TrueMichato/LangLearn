@@ -1,5 +1,6 @@
 import type { Word } from '../../db/schema';
 import { speak, isTTSSupported } from '../../lib/tts';
+import { rtlProps } from '../../lib/rtl';
 
 interface StudyCardProps {
   word: Word;
@@ -12,7 +13,7 @@ export default function StudyCard({ word }: StudyCardProps) {
         {word.language} — study
       </span>
 
-      <p className="text-3xl font-bold text-gray-800 dark:text-gray-100 mb-2 text-center">
+      <p className="text-3xl font-bold text-gray-800 dark:text-gray-100 mb-2 text-center" {...rtlProps(word.language)}>
         {word.word}
       </p>
 
@@ -33,7 +34,7 @@ export default function StudyCard({ word }: StudyCardProps) {
       <div className="mt-2 text-center">
         <p className="text-xl text-green-700 dark:text-green-400 font-semibold">{word.meaning}</p>
         {word.contextSentence && (
-          <p className="text-sm text-gray-500 dark:text-gray-400 mt-3 italic">
+          <p className="text-sm text-gray-500 dark:text-gray-400 mt-3 italic" {...rtlProps(word.language)}>
             "{word.contextSentence}"
           </p>
         )}

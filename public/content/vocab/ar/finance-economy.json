@@ -1,0 +1,183 @@
+{
+  "id": "finance-economy",
+  "words": [
+    {
+      "word": "اِقْتِصَادٌ",
+      "reading": "iqtiṣādun",
+      "meaning": "economy",
+      "example": "اِقْتِصَادٌ قَوِيٌّ يَدْعَمُ الْمُجْتَمَعَ.",
+      "exampleMeaning": "A strong economy supports society."
+    },
+    {
+      "word": "مِيزَانِيَّةٌ",
+      "reading": "mīzāniyyatun",
+      "meaning": "budget",
+      "example": "مِيزَانِيَّةٌ دَقِيقَةٌ تُوَضِّحُ النَّفَقَاتِ.",
+      "exampleMeaning": "A precise budget clarifies expenses."
+    },
+    {
+      "word": "اِسْتِثْمَارٌ",
+      "reading": "istithmārun",
+      "meaning": "investment",
+      "example": "اِسْتِثْمَارٌ طَوِيلُ الْأَمَدِ يَحْتَاجُ إِلَى صَبْرٍ.",
+      "exampleMeaning": "A long-term investment needs patience."
+    },
+    {
+      "word": "تَضَخُّمٌ",
+      "reading": "taḍakhkhumun",
+      "meaning": "inflation",
+      "example": "تَضَخُّمٌ سَرِيعٌ يُقَلِّلُ قِيمَةَ الْمَالِ.",
+      "exampleMeaning": "Rapid inflation reduces the value of money."
+    },
+    {
+      "word": "رِبْحٌ",
+      "reading": "ribḥun",
+      "meaning": "profit",
+      "example": "رِبْحٌ مُعْتَدِلٌ يُسَاعِدُ الشَّرِكَةَ.",
+      "exampleMeaning": "A moderate profit helps the company."
+    },
+    {
+      "word": "خَسَارَةٌ",
+      "reading": "khasāratun",
+      "meaning": "loss",
+      "example": "خَسَارَةٌ كَبِيرَةٌ أَثَّرَتْ فِي السُّوقِ.",
+      "exampleMeaning": "A large loss affected the market."
+    },
+    {
+      "word": "سَهْمٌ",
+      "reading": "sahmun",
+      "meaning": "share / stock",
+      "example": "سَهْمٌ وَاحِدٌ اِرْتَفَعَ فِي الْبُورْصَةِ.",
+      "exampleMeaning": "One stock rose on the exchange."
+    },
+    {
+      "word": "سُوقٌ",
+      "reading": "sūqun",
+      "meaning": "market",
+      "example": "سُوقٌ حُرَّةٌ تَجْذِبُ التُّجَّارَ.",
+      "exampleMeaning": "A free market attracts merchants."
+    },
+    {
+      "word": "ضَرِيبَةٌ",
+      "reading": "ḍarībatun",
+      "meaning": "tax",
+      "example": "ضَرِيبَةٌ جَدِيدَةٌ زَادَتِ الْأَسْعَارَ.",
+      "exampleMeaning": "A new tax increased prices."
+    },
+    {
+      "word": "قَرْضٌ",
+      "reading": "qarḍun",
+      "meaning": "loan",
+      "example": "قَرْضٌ صَغِيرٌ سَاعَدَ الْمَشْرُوعَ.",
+      "exampleMeaning": "A small loan helped the project."
+    },
+    {
+      "word": "فَائِدَةٌ",
+      "reading": "fāʾidatun",
+      "meaning": "interest",
+      "example": "فَائِدَةٌ مُرْتَفِعَةٌ تُثْقِلُ الْمُقْتَرِضَ.",
+      "exampleMeaning": "High interest burdens the borrower."
+    },
+    {
+      "word": "عُمْلَةٌ",
+      "reading": "ʿumlatun",
+      "meaning": "currency",
+      "example": "عُمْلَةٌ مَحَلِّيَّةٌ تَتَغَيَّرُ قِيمَتُهَا.",
+      "exampleMeaning": "A local currency changes in value."
+    },
+    {
+      "word": "تَوْظِيفٌ",
+      "reading": "tawẓīfun",
+      "meaning": "employment",
+      "example": "تَوْظِيفٌ مُسْتَقِرٌّ يَخْفِضُ الْبَطَالَةَ.",
+      "exampleMeaning": "Stable employment lowers unemployment."
+    },
+    {
+      "word": "بَطَالَةٌ",
+      "reading": "baṭālatun",
+      "meaning": "unemployment",
+      "example": "بَطَالَةٌ طَوِيلَةٌ تُضْعِفُ الْأُسَرَ.",
+      "exampleMeaning": "Long unemployment weakens families."
+    },
+    {
+      "word": "نُمُوٌّ",
+      "reading": "numuwwun",
+      "meaning": "growth",
+      "example": "نُمُوٌّ بَطِيءٌ يُقْلِقُ الْمُحَلِّلِينَ.",
+      "exampleMeaning": "Slow growth worries analysts."
+    },
+    {
+      "word": "أَزْمَةٌ مَالِيَّةٌ",
+      "reading": "ʾazmatun māliyyatun",
+      "meaning": "financial crisis",
+      "example": "أَزْمَةٌ مَالِيَّةٌ تَطْلُبُ قَرَارًا حَكِيمًا.",
+      "exampleMeaning": "A financial crisis requires a wise decision."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "___ قَوِيٌّ يَدْعَمُ الْمُجْتَمَعَ.",
+          "answer": "اِقْتِصَادٌ",
+          "hint": "economy"
+        },
+        {
+          "sentence": "___ دَقِيقَةٌ تُوَضِّحُ النَّفَقَاتِ.",
+          "answer": "مِيزَانِيَّةٌ",
+          "hint": "budget"
+        },
+        {
+          "sentence": "___ طَوِيلُ الْأَمَدِ يَحْتَاجُ إِلَى صَبْرٍ.",
+          "answer": "اِسْتِثْمَارٌ",
+          "hint": "investment"
+        },
+        {
+          "sentence": "___ سَرِيعٌ يُقَلِّلُ قِيمَةَ الْمَالِ.",
+          "answer": "تَضَخُّمٌ",
+          "hint": "inflation"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "items": [
+        {
+          "question": "What does ‘اِقْتِصَادٌ’ mean?",
+          "options": [
+            "budget",
+            "economy",
+            "investment",
+            "inflation"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What does ‘مِيزَانِيَّةٌ’ mean?",
+          "options": [
+            "investment",
+            "budget",
+            "inflation",
+            "profit"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What does ‘اِسْتِثْمَارٌ’ mean?",
+          "options": [
+            "inflation",
+            "investment",
+            "profit",
+            "loss"
+          ],
+          "answer": 1
+        }
+      ]
+    }
+  ]
+}

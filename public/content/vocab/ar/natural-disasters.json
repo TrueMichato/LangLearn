@@ -1,0 +1,183 @@
+{
+  "id": "natural-disasters",
+  "words": [
+    {
+      "word": "عَاصِفَةٌ",
+      "reading": "ʿāṣifatun",
+      "meaning": "storm",
+      "example": "أَغْلَقَتِ الْمَدْرَسَةُ أَبْوَابَهَا بِسَبَبِ عَاصِفَةٍ شَدِيدَةٍ.",
+      "exampleMeaning": "The school closed its doors because of a severe storm."
+    },
+    {
+      "word": "إِعْصَارٌ",
+      "reading": "ʾiʿṣārun",
+      "meaning": "hurricane / cyclone",
+      "example": "دَمَّرَ إِعْصَارٌ قَوِيٌّ بَعْضَ السُّفُنِ.",
+      "exampleMeaning": "A strong cyclone destroyed some boats."
+    },
+    {
+      "word": "زِلْزَالٌ",
+      "reading": "zilzālun",
+      "meaning": "earthquake",
+      "example": "شَعَرَ السُّكَّانُ بِزِلْزَالٍ خَفِيفٍ لَيْلًا.",
+      "exampleMeaning": "The residents felt a light earthquake at night."
+    },
+    {
+      "word": "فَيْضَانٌ",
+      "reading": "fayḍānun",
+      "meaning": "flood",
+      "example": "غَمَرَ فَيْضَانٌ الْحُقُولَ بَعْدَ الْمَطَرِ.",
+      "exampleMeaning": "A flood covered the fields after the rain."
+    },
+    {
+      "word": "جَفَافٌ",
+      "reading": "jafāfun",
+      "meaning": "drought",
+      "example": "سَبَّبَ الْجَفَافُ نَقْصًا فِي الْمِيَاهِ.",
+      "exampleMeaning": "The drought caused a shortage of water."
+    },
+    {
+      "word": "اِنْهِيَارٌ أَرْضِيٌّ",
+      "reading": "inhiyārun ʾarḍiyyun",
+      "meaning": "landslide",
+      "example": "أَغْلَقَ اِنْهِيَارٌ أَرْضِيٌّ الطَّرِيقَ الْجَبَلِيَّ.",
+      "exampleMeaning": "A landslide closed the mountain road."
+    },
+    {
+      "word": "ثَوْرَانٌ بُرْكَانِيٌّ",
+      "reading": "thawrānun burkāniyyun",
+      "meaning": "volcanic eruption",
+      "example": "غَطَّى ثَوْرَانٌ بُرْكَانِيٌّ الْقَرْيَةَ بِالرَّمَادِ.",
+      "exampleMeaning": "A volcanic eruption covered the village with ash."
+    },
+    {
+      "word": "مَوْجَةُ حَرٍّ",
+      "reading": "mawjatu ḥarrin",
+      "meaning": "heat wave",
+      "example": "تَسْتَمِرُّ مَوْجَةُ حَرٍّ ثَلَاثَةَ أَيَّامٍ.",
+      "exampleMeaning": "A heat wave lasts three days."
+    },
+    {
+      "word": "مَوْجَةُ بَرْدٍ",
+      "reading": "mawjatu bardin",
+      "meaning": "cold wave",
+      "example": "تَصِلُ مَوْجَةُ بَرْدٍ مِنَ الشَّمَالِ.",
+      "exampleMeaning": "A cold wave arrives from the north."
+    },
+    {
+      "word": "تَسُونَامِي",
+      "reading": "tasūnāmī",
+      "meaning": "tsunami",
+      "example": "حَذَّرَتِ السُّلُطَاتُ مِنْ تَسُونَامِي بَعْدَ الزِّلْزَالِ.",
+      "exampleMeaning": "The authorities warned of a tsunami after the earthquake."
+    },
+    {
+      "word": "صَاعِقَةٌ",
+      "reading": "ṣāʿiqatun",
+      "meaning": "lightning strike",
+      "example": "أَصَابَتْ صَاعِقَةٌ شَجَرَةً قُرْبَ الْبَيْتِ.",
+      "exampleMeaning": "A lightning strike hit a tree near the house."
+    },
+    {
+      "word": "اِنْقِطَاعُ الْكَهْرَبَاءِ",
+      "reading": "inqiṭāʿu l-kahrabāʾi",
+      "meaning": "power outage",
+      "example": "سَبَّبَتِ الْعَاصِفَةُ اِنْقِطَاعَ الْكَهْرَبَاءِ.",
+      "exampleMeaning": "The storm caused a power outage."
+    },
+    {
+      "word": "إِخْلَاءٌ",
+      "reading": "ʾikhlāʾun",
+      "meaning": "evacuation",
+      "example": "نَظَّمَتِ الْبَلَدِيَّةُ إِخْلَاءً سَرِيعًا.",
+      "exampleMeaning": "The municipality organized a rapid evacuation."
+    },
+    {
+      "word": "مَلْجَأٌ",
+      "reading": "maljaʾun",
+      "meaning": "shelter",
+      "example": "فَتَحَتِ الْمَدِينَةُ مَلْجَأً لِلْأُسَرِ.",
+      "exampleMeaning": "The city opened a shelter for families."
+    },
+    {
+      "word": "أَضْرَارٌ",
+      "reading": "ʾaḍrārun",
+      "meaning": "damage / damages",
+      "example": "قَدَّرَ الْخُبَرَاءُ أَضْرَارًا كَبِيرَةً.",
+      "exampleMeaning": "Experts estimated major damage."
+    },
+    {
+      "word": "إِغَاثَةٌ",
+      "reading": "ʾighāthatun",
+      "meaning": "relief aid",
+      "example": "وَصَلَتْ فِرَقُ إِغَاثَةٍ إِلَى الْمِنْطَقَةِ.",
+      "exampleMeaning": "Relief teams arrived in the area."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "هٰذَا ___ قَوِيٌّ.",
+          "answer": "زِلْزَالٌ",
+          "hint": "earthquake"
+        },
+        {
+          "sentence": "هٰذِهِ ___ طَوِيلَةٌ.",
+          "answer": "مَوْجَةُ حَرٍّ",
+          "hint": "heat wave"
+        },
+        {
+          "sentence": "هٰذَا ___ سَرِيعٌ.",
+          "answer": "إِخْلَاءٌ",
+          "hint": "evacuation"
+        },
+        {
+          "sentence": "هٰذَا ___ قَرِيبٌ.",
+          "answer": "مَلْجَأٌ",
+          "hint": "shelter"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "items": [
+        {
+          "question": "What does ‘فَيْضَانٌ’ mean?",
+          "options": [
+            "drought",
+            "flood",
+            "storm",
+            "shelter"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What does ‘ثَوْرَانٌ بُرْكَانِيٌّ’ mean?",
+          "options": [
+            "volcanic eruption",
+            "cold wave",
+            "power outage",
+            "landslide"
+          ],
+          "answer": 0
+        },
+        {
+          "question": "What does ‘إِغَاثَةٌ’ mean?",
+          "options": [
+            "damage",
+            "relief aid",
+            "tsunami",
+            "lightning strike"
+          ],
+          "answer": 1
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,159 @@
+{
+  "id": "maghrebi-cooking-kitchen",
+  "words": [
+    {
+      "word": "كَنْطَيَّبْ",
+      "reading": "kan-ṭayyeb",
+      "meaning": "I cook",
+      "example": "كَنْطَيَّبْ الْغْدَا لِلْعَائِلَةْ.",
+      "exampleMeaning": "I cook lunch for the family."
+    },
+    {
+      "word": "الْمَاكْلَةْ",
+      "reading": "il-mākla",
+      "meaning": "food",
+      "example": "الْمَاكْلَةْ وَاجْدَةْ فِي الْكُوزِينَةْ.",
+      "exampleMeaning": "The food is ready in the kitchen."
+    },
+    {
+      "word": "طَاجِينْ",
+      "reading": "ṭājīn",
+      "meaning": "tagine",
+      "example": "طَاجِينْ بِالدَّجَاجْ رِيحْتُهُ زْوِينَةْ.",
+      "exampleMeaning": "Chicken tagine smells nice."
+    },
+    {
+      "word": "كُسْكُسُو",
+      "reading": "kuskusū",
+      "meaning": "couscous",
+      "example": "نَاكْلُوا كُسْكُسُو نْهَارِ الْجُمْعَةْ.",
+      "exampleMeaning": "We eat couscous on Friday."
+    },
+    {
+      "word": "كِيفَاشْ",
+      "reading": "kīfāsh",
+      "meaning": "how?",
+      "example": "كِيفَاشْ كَنْوَجْدُوا هَادِ الصُّوصْ؟",
+      "exampleMeaning": "How do we prepare this sauce?"
+    },
+    {
+      "word": "بْصَلْ",
+      "reading": "bṣal",
+      "meaning": "onion",
+      "example": "قَطَّعْتْ بْصَلْ صْغِيرْ لِلطَّاجِينْ.",
+      "exampleMeaning": "I chopped small onion for the tagine."
+    },
+    {
+      "word": "ثُومْ",
+      "reading": "thūm",
+      "meaning": "garlic",
+      "example": "زِدْ شْوِيَّةْ ثُومْ لِلْمَرَقْ.",
+      "exampleMeaning": "Add a little garlic to the broth."
+    },
+    {
+      "word": "مْطِيشَةْ",
+      "reading": "mṭīsha",
+      "meaning": "tomato",
+      "example": "مْطِيشَةْ حَمْرَةْ كَتْعْطِي لَوْنْ زْوِينْ.",
+      "exampleMeaning": "A red tomato gives a nice color."
+    },
+    {
+      "word": "زْيْتْ",
+      "reading": "zīt",
+      "meaning": "oil",
+      "example": "حُطّ زْيْتْ فِي الْمِقْلَاةْ.",
+      "exampleMeaning": "Put oil in the pan."
+    },
+    {
+      "word": "حَارّْ",
+      "reading": "ḥārr",
+      "meaning": "spicy / hot",
+      "example": "الطَّبْقْ حَارّْ بَزَّافْ لِيَّا.",
+      "exampleMeaning": "The dish is too spicy for me."
+    },
+    {
+      "word": "مْلْحْ",
+      "reading": "melḥ",
+      "meaning": "salt",
+      "example": "زِدْ مْلْحْ غِيرْ شْوِيَّةْ.",
+      "exampleMeaning": "Add just a little salt."
+    },
+    {
+      "word": "كَاسْرُونَةْ",
+      "reading": "kāsrōna",
+      "meaning": "pot / saucepan",
+      "example": "الْحْرِيرَةْ فِي الْكَاسْرُونَةْ كَتْغْلِي.",
+      "exampleMeaning": "The harira is boiling in the pot."
+    },
+    {
+      "word": "مِقْلَاةْ",
+      "reading": "miqlā",
+      "meaning": "frying pan",
+      "example": "الْمِقْلَاةْ سْخُونَةْ دَابَا.",
+      "exampleMeaning": "The frying pan is hot now."
+    },
+    {
+      "word": "غَادِي نْوَجَّدْ",
+      "reading": "ghādi nwajjed",
+      "meaning": "I am going to prepare",
+      "example": "غَادِي نْوَجَّدْ الْعْشَا بَكْرِي.",
+      "exampleMeaning": "I am going to prepare dinner early."
+    },
+    {
+      "word": "بْغِيتْ نْذُوقْ",
+      "reading": "bghīt ndūq",
+      "meaning": "I want to taste",
+      "example": "بْغِيتْ نْذُوقْ الصُّوصْ قَبْلَ مَا تْقَدَّمْ.",
+      "exampleMeaning": "I want to taste the sauce before it is served."
+    },
+    {
+      "word": "زْوِينْ",
+      "reading": "zwīn",
+      "meaning": "nice / tasty",
+      "example": "الطَّاجِينْ خْرَجْ زْوِينْ بَزَّافْ.",
+      "exampleMeaning": "The tagine turned out very tasty."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "___ الْغْدَا لِلْعَائِلَةْ.",
+          "answer": "كَنْطَيَّبْ",
+          "hint": "I cook"
+        },
+        {
+          "sentence": "نَاكْلُوا ___ نْهَارِ الْجُمْعَةْ.",
+          "answer": "كُسْكُسُو",
+          "hint": "couscous"
+        },
+        {
+          "sentence": "___ الْعْشَا بَكْرِي.",
+          "answer": "غَادِي نْوَجَّدْ",
+          "hint": "I am going to prepare"
+        },
+        {
+          "sentence": "___ الصُّوصْ قَبْلَ مَا تْقَدَّمْ.",
+          "answer": "بْغِيتْ نْذُوقْ",
+          "hint": "I want to taste"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "In Maghrebi Darija, what does ‘بْغِيتْ نْذُوقْ’ mean?",
+      "options": [
+        "I want to taste",
+        "I cook",
+        "it is spicy",
+        "salt"
+      ],
+      "answer": 0
+    }
+  ]
+}

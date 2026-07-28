@@ -2,6 +2,7 @@ import { jaFrequencyMap } from './ja-frequency';
 import { ruFrequencyMap } from './ru-frequency';
 import { ptFrequencyMap } from './pt-frequency';
 import { esFrequencyMap } from './es-frequency';
+import { arFrequencyMap } from './ar-frequency';
 import { roFrequencyMap } from './ro-frequency';
 
 export function getFrequencyRank(word: string, language: string): number | undefined {
@@ -10,6 +11,7 @@ export function getFrequencyRank(word: string, language: string): number | undef
     case 'ru': return ruFrequencyMap.get(word);
     case 'pt': return ptFrequencyMap.get(word);
     case 'es': return esFrequencyMap.get(word);
+    case 'ar': return arFrequencyMap.get(word);
     case 'ro': return roFrequencyMap.get(word);
     default: return undefined;
   }
@@ -39,4 +41,5 @@ export { jaFrequencyMap } from './ja-frequency';
 export { ruFrequencyMap } from './ru-frequency';
 export { ptFrequencyMap } from './pt-frequency';
 export { esFrequencyMap } from './es-frequency';
+export { arFrequencyMap } from './ar-frequency';
 export { roFrequencyMap } from './ro-frequency';

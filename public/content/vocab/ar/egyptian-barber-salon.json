@@ -1,0 +1,159 @@
+{
+  "id": "egyptian-barber-salon",
+  "words": [
+    {
+      "word": "الْحَلَّاقْ",
+      "reading": "il-ḥallāʔ",
+      "meaning": "the barber",
+      "example": "الْحَلَّاقْ قَرِيبْ مِنِ الْبَيْتْ.",
+      "exampleMeaning": "The barber is near the house."
+    },
+    {
+      "word": "الْكُوافيرْ",
+      "reading": "il-kwāfēr",
+      "meaning": "the hair salon",
+      "example": "أُخْتِي رَاحِتِ الْكُوافيرْ الصُّبْحْ.",
+      "exampleMeaning": "My sister went to the salon in the morning."
+    },
+    {
+      "word": "قُصّ لِي طَرَفْ",
+      "reading": "ʔuṣṣ lī ṭaraf",
+      "meaning": "trim the ends for me",
+      "example": "مُمْكِنْ قُصّ لِي طَرَفْ بَسّ؟",
+      "exampleMeaning": "Could you just trim the ends for me?"
+    },
+    {
+      "word": "خَفِّفْهَا",
+      "reading": "khaffifhā",
+      "meaning": "thin it out",
+      "example": "خَفِّفْهَا مِنْ فَوْقْ شْوَيَّةْ.",
+      "exampleMeaning": "Thin it out a little on top."
+    },
+    {
+      "word": "سِيبْهَا زَيّ مَا هِيَّ",
+      "reading": "sībhā zayy ma hiyya",
+      "meaning": "leave it as it is",
+      "example": "مِنْ قُدَّامْ، سِيبْهَا زَيّ مَا هِيَّ.",
+      "exampleMeaning": "In front, leave it as it is."
+    },
+    {
+      "word": "دَقْنِي",
+      "reading": "daʔnī",
+      "meaning": "my beard",
+      "example": "نَضَّفْ دَقْنِي بِالْمَاكِينَةْ.",
+      "exampleMeaning": "Clean up my beard with the clippers."
+    },
+    {
+      "word": "شَارِبْ",
+      "reading": "shārib",
+      "meaning": "mustache",
+      "example": "الشَّارِبْ عَايِزْ تَظْبِيطْ صُغَيَّرْ.",
+      "exampleMeaning": "The mustache needs a small tidy-up."
+    },
+    {
+      "word": "مَاكِينَةْ",
+      "reading": "makīna",
+      "meaning": "clippers",
+      "example": "اسْتَخْدِمِ الْمَاكِينَةْ عَلَى دَرَجَةْ اتْنِينْ.",
+      "exampleMeaning": "Use the clippers on number two."
+    },
+    {
+      "word": "مَقَصّْ",
+      "reading": "maʔaṣṣ",
+      "meaning": "scissors",
+      "example": "الْحَلَّاقْ مَاسِكْ مَقَصّْ صُغَيَّرْ.",
+      "exampleMeaning": "The barber is holding small scissors."
+    },
+    {
+      "word": "جِلّْ",
+      "reading": "gel",
+      "meaning": "hair gel",
+      "example": "حُطّ جِلّْ خَفِيفْ بَعْدَ الْقَصّْ.",
+      "exampleMeaning": "Put on light gel after the haircut."
+    },
+    {
+      "word": "سِشْوَارْ",
+      "reading": "sishwār",
+      "meaning": "blow-dryer",
+      "example": "الْكُوافيرْ عَمَلْ سِشْوَارْ بِسُرْعَةْ.",
+      "exampleMeaning": "The stylist blow-dried it quickly."
+    },
+    {
+      "word": "صَبْغَةْ",
+      "reading": "ṣabgha",
+      "meaning": "hair dye",
+      "example": "هِيَّ عَايْزَةْ صَبْغَةْ بُنِّي فَاتِحْ.",
+      "exampleMeaning": "She wants light brown hair dye."
+    },
+    {
+      "word": "حَجْزْ",
+      "reading": "ḥagz",
+      "meaning": "appointment",
+      "example": "عِنْدِي حَجْزْ السَّاعَةْ خَمْسَةْ.",
+      "exampleMeaning": "I have an appointment at five."
+    },
+    {
+      "word": "دَوْرِي",
+      "reading": "dawri",
+      "meaning": "my turn",
+      "example": "دَوْرِي جِهْ بَعْدَ الرَّاجِلْ دَهْ.",
+      "exampleMeaning": "My turn came after that man."
+    },
+    {
+      "word": "إِسْتَنَّى شْوَيَّةْ",
+      "reading": "istanna shwayya",
+      "meaning": "wait a little",
+      "example": "إِسْتَنَّى شْوَيَّةْ لَحَدّ مَا الْكُرْسِي يِفْضَى.",
+      "exampleMeaning": "Wait a little until the chair is free."
+    },
+    {
+      "word": "مِرَايَةْ",
+      "reading": "mirāya",
+      "meaning": "mirror",
+      "example": "بُصّ فِي الْمِرَايَةْ وَقُولِّي رَأْيَكْ.",
+      "exampleMeaning": "Look in the mirror and tell me your opinion."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "مُمْكِنْ ___ بَسّ؟",
+          "answer": "قُصّ لِي طَرَفْ",
+          "hint": "trim the ends for me"
+        },
+        {
+          "sentence": "نَضَّفْ ___ بِالْمَاكِينَةْ.",
+          "answer": "دَقْنِي",
+          "hint": "my beard"
+        },
+        {
+          "sentence": "عِنْدِي ___ السَّاعَةْ خَمْسَةْ.",
+          "answer": "حَجْزْ",
+          "hint": "appointment"
+        },
+        {
+          "sentence": "بُصّ فِي ___ وَقُولِّي رَأْيَكْ.",
+          "answer": "مِرَايَةْ",
+          "hint": "mirror"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "In Egyptian Arabic, what does ‘خَفِّفْهَا’ mean at the barber?",
+      "options": [
+        "thin it out",
+        "make an appointment",
+        "hair dye",
+        "mirror"
+      ],
+      "answer": 0
+    }
+  ]
+}

@@ -5,8 +5,11 @@ import { XP_DICTATION_BASE, XP_PER_DICTATION_CORRECT } from '../../lib/xp';
 import { jaPassages } from '../../data/listening/ja-passages';
 import { ruPassages } from '../../data/listening/ru-passages';
 import { ptPassages } from '../../data/listening/pt-passages';
+import { esPassages } from '../../data/listening/es-passages';
+import { arPassages } from '../../data/listening/ar-passages';
 import { roPassages } from '../../data/listening/ro-passages';
 import { speakWithSpeed } from '../../lib/tts';
+import { isRTL } from '../../lib/rtl';
 import type { ListeningPassage } from '../../data/listening/ja-passages';
 import type { DiffResult } from '../../lib/text-diff';
 
@@ -14,6 +17,8 @@ const LANG_PASSAGES: Record<string, ListeningPassage[]> = {
   ja: jaPassages,
   ru: ruPassages,
   pt: ptPassages,
+  es: esPassages,
+  ar: arPassages,
   ro: roPassages,
 };
 
@@ -39,7 +44,7 @@ function extractSentences(passages: ListeningPassage[], difficulty: string): str
   const sentences: string[] = [];
   for (const p of filtered) {
     // Split by sentence-ending punctuation
-    const parts = p.text.split(/(?<=[。．.！？!?])\s*/);
+    const parts = p.text.split(/(?<=[。．.！？؟?!])\s*/);
     for (const s of parts) {
       const trimmed = s.trim();
       if (trimmed.length > 0) sentences.push(trimmed);
@@ -208,9 +213,10 @@ export default function DictationDrill({ language, difficulty, onComplete, onBac
             ref={textareaRef}
             value={input}
             onChange={(e) => setInput(e.target.value)}
-            placeholder={language === 'ja' ? 'ここに入力してください…' : 'Введите здесь…'}
+            placeholder={language === 'ja' ? 'ここに入力してください…' : language === 'ar' ? 'اكتب هنا…' : language === 'ru' ? 'Введите здесь…' : 'Type here…'}
             rows={3}
             className="w-full px-4 py-3 rounded-xl border border-gray-300 dark:border-white/10 bg-white dark:bg-gray-800 text-slate-800 dark:text-slate-100 placeholder-slate-400 dark:placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-indigo-500 resize-none text-base mb-4"
+            dir={isRTL(language) ? 'rtl' : undefined}
           />
           <button
             type="submit"
@@ -236,7 +242,7 @@ export default function DictationDrill({ language, difficulty, onComplete, onBac
             <p className="text-xs font-medium text-slate-500 dark:text-slate-400 mb-2 uppercase tracking-wide">
               Your answer
             </p>
-            <p className="text-base leading-relaxed mb-4">
+            <p className="text-base leading-relaxed mb-4" dir={isRTL(language) ? 'rtl' : undefined}>
               {diffResult.segments.map((seg, i) => (
                 <span
                   key={i}
@@ -256,7 +262,7 @@ export default function DictationDrill({ language, difficulty, onComplete, onBac
             <p className="text-xs font-medium text-slate-500 dark:text-slate-400 mb-2 uppercase tracking-wide">
               Reference
             </p>
-            <p className="text-base text-slate-800 dark:text-slate-100 leading-relaxed">
+            <p className="text-base text-slate-800 dark:text-slate-100 leading-relaxed" dir={isRTL(language) ? 'rtl' : undefined}>
               {currentSentence}
             </p>
           </div>

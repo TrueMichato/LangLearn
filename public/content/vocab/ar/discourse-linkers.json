@@ -1,0 +1,183 @@
+{
+  "id": "discourse-linkers",
+  "words": [
+    {
+      "word": "مِنْ نَاحِيَةٍ أُخْرَى",
+      "reading": "min nāḥiyatin ukhrā",
+      "meaning": "on the other hand",
+      "example": "مِنْ نَاحِيَةٍ أُخْرَى، يَحْتَاجُ الْمَشْرُوعُ إِلَى وَقْتٍ.",
+      "exampleMeaning": "On the other hand, the project needs time."
+    },
+    {
+      "word": "عَلَى الرَّغْمِ مِنْ",
+      "reading": "ʿalā r-raghmi min",
+      "meaning": "despite / in spite of",
+      "example": "عَلَى الرَّغْمِ مِنْ صُعُوبَةِ الطَّرِيقِ، وَصَلْنَا مُبَكِّرًا.",
+      "exampleMeaning": "Despite the difficulty of the road, we arrived early."
+    },
+    {
+      "word": "بِالْإِضَافَةِ إِلَى",
+      "reading": "bi-l-ʾiḍāfati ʾilā",
+      "meaning": "in addition to",
+      "example": "بِالْإِضَافَةِ إِلَى الْمَالِ، نَحْتَاجُ إِلَى خِبْرَةٍ.",
+      "exampleMeaning": "In addition to money, we need experience."
+    },
+    {
+      "word": "عِلَاوَةً عَلَى ذٰلِكَ",
+      "reading": "ʿilāwatan ʿalā dhālika",
+      "meaning": "moreover",
+      "example": "عِلَاوَةً عَلَى ذٰلِكَ، تُقَدِّمُ الْمَدِينَةُ خِدْمَاتٍ جَدِيدَةً.",
+      "exampleMeaning": "Moreover, the city offers new services."
+    },
+    {
+      "word": "مَعَ ذٰلِكَ",
+      "reading": "maʿa dhālika",
+      "meaning": "nevertheless / however",
+      "example": "مَعَ ذٰلِكَ، بَقِيَ الطَّالِبُ هَادِئًا.",
+      "exampleMeaning": "Nevertheless, the student remained calm."
+    },
+    {
+      "word": "لِذٰلِكَ",
+      "reading": "li-dhālika",
+      "meaning": "therefore",
+      "example": "لِذٰلِكَ، اِخْتَارَ الْفَرِيقُ خُطَّةً أَبْسَطَ.",
+      "exampleMeaning": "Therefore, the team chose a simpler plan."
+    },
+    {
+      "word": "وَمِنْ ثَمَّ",
+      "reading": "wa-min thamma",
+      "meaning": "and hence / from there",
+      "example": "وَمِنْ ثَمَّ، تَغَيَّرَتِ النَّتِيجَةُ.",
+      "exampleMeaning": "And hence, the result changed."
+    },
+    {
+      "word": "بِسَبَبِ",
+      "reading": "bi-sababi",
+      "meaning": "because of",
+      "example": "بِسَبَبِ الْمَطَرِ، تَأَخَّرَتِ الرِّحْلَةُ.",
+      "exampleMeaning": "Because of the rain, the trip was delayed."
+    },
+    {
+      "word": "نَتِيجَةً لِ",
+      "reading": "natījatan li-",
+      "meaning": "as a result of",
+      "example": "نَتِيجَةً لِهٰذَا الْقَرَارِ، زَادَتِ الثِّقَةُ.",
+      "exampleMeaning": "As a result of this decision, trust increased."
+    },
+    {
+      "word": "عَلَى سَبِيلِ الْمِثَالِ",
+      "reading": "ʿalā sabīli l-mithāli",
+      "meaning": "for example",
+      "example": "عَلَى سَبِيلِ الْمِثَالِ، نَذْكُرُ مَدِينَةَ فَاسٍ.",
+      "exampleMeaning": "For example, we mention the city of Fez."
+    },
+    {
+      "word": "بِعِبَارَةٍ أُخْرَى",
+      "reading": "bi-ʿibāratin ukhrā",
+      "meaning": "in other words",
+      "example": "بِعِبَارَةٍ أُخْرَى، الْحَلُّ بَسِيطٌ.",
+      "exampleMeaning": "In other words, the solution is simple."
+    },
+    {
+      "word": "بِاخْتِصَارٍ",
+      "reading": "bi-khtiṣārin",
+      "meaning": "briefly / in short",
+      "example": "بِاخْتِصَارٍ، يَحْتَاجُ الْأَمْرُ إِلَى صَبْرٍ.",
+      "exampleMeaning": "In short, the matter needs patience."
+    },
+    {
+      "word": "فِي الْمُقَابِلِ",
+      "reading": "fī l-muqābili",
+      "meaning": "in contrast",
+      "example": "فِي الْمُقَابِلِ، اِنْخَفَضَتِ التَّكَالِيفُ.",
+      "exampleMeaning": "In contrast, the costs decreased."
+    },
+    {
+      "word": "غَيْرَ أَنَّ",
+      "reading": "ghayra ʾanna",
+      "meaning": "however / except that",
+      "example": "غَيْرَ أَنَّ الْمُشْكِلَةَ لَمْ تَنْتَهِ بَعْدُ.",
+      "exampleMeaning": "However, the problem has not ended yet."
+    },
+    {
+      "word": "إِلَّا أَنَّ",
+      "reading": "ʾillā ʾanna",
+      "meaning": "except that / but",
+      "example": "إِلَّا أَنَّ الْفُرْصَةَ مَا زَالَتْ قَائِمَةً.",
+      "exampleMeaning": "But the opportunity still exists."
+    },
+    {
+      "word": "فَضْلًا عَنْ",
+      "reading": "faḍlan ʿan",
+      "meaning": "not to mention / besides",
+      "example": "فَضْلًا عَنْ ذٰلِكَ، يُوَفِّرُ النِّظَامُ وَقْتًا.",
+      "exampleMeaning": "Besides that, the system saves time."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "___، يَحْتَاجُ الْمَشْرُوعُ إِلَى وَقْتٍ.",
+          "answer": "مِنْ نَاحِيَةٍ أُخْرَى",
+          "hint": "on the other hand"
+        },
+        {
+          "sentence": "___ صُعُوبَةِ الطَّرِيقِ، وَصَلْنَا مُبَكِّرًا.",
+          "answer": "عَلَى الرَّغْمِ مِنْ",
+          "hint": "despite / in spite of"
+        },
+        {
+          "sentence": "___ الْمَالِ، نَحْتَاجُ إِلَى خِبْرَةٍ.",
+          "answer": "بِالْإِضَافَةِ إِلَى",
+          "hint": "in addition to"
+        },
+        {
+          "sentence": "___، تُقَدِّمُ الْمَدِينَةُ خِدْمَاتٍ جَدِيدَةً.",
+          "answer": "عِلَاوَةً عَلَى ذٰلِكَ",
+          "hint": "moreover"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "items": [
+        {
+          "question": "What does ‘مِنْ نَاحِيَةٍ أُخْرَى’ mean?",
+          "options": [
+            "despite / in spite of",
+            "on the other hand",
+            "in addition to",
+            "moreover"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What does ‘عَلَى الرَّغْمِ مِنْ’ mean?",
+          "options": [
+            "in addition to",
+            "despite / in spite of",
+            "moreover",
+            "nevertheless / however"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What does ‘بِالْإِضَافَةِ إِلَى’ mean?",
+          "options": [
+            "moreover",
+            "in addition to",
+            "nevertheless / however",
+            "therefore"
+          ],
+          "answer": 1
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,183 @@
+{
+  "id": "family",
+  "words": [
+    {
+      "word": "أُمٌّ",
+      "reading": "ʾummun",
+      "meaning": "mother",
+      "example": "أُمٌّ حَنُونَةٌ تَضْحَكُ.",
+      "exampleMeaning": "A caring mother is laughing."
+    },
+    {
+      "word": "أَبٌ",
+      "reading": "ʾabun",
+      "meaning": "father",
+      "example": "أَبٌ طَيِّبٌ يَعْمَلُ.",
+      "exampleMeaning": "A good father is working."
+    },
+    {
+      "word": "أُخْتٌ",
+      "reading": "ʾukhtun",
+      "meaning": "sister",
+      "example": "أُخْتٌ صَغِيرَةٌ تَلْعَبُ.",
+      "exampleMeaning": "A little sister is playing."
+    },
+    {
+      "word": "أَخٌ",
+      "reading": "ʾakhun",
+      "meaning": "brother",
+      "example": "أَخٌ كَبِيرٌ يَدْرُسُ.",
+      "exampleMeaning": "An older brother is studying."
+    },
+    {
+      "word": "اِبْنٌ",
+      "reading": "ibnun",
+      "meaning": "son",
+      "example": "لِي اِبْنٌ وَاحِدٌ.",
+      "exampleMeaning": "I have one son."
+    },
+    {
+      "word": "اِبْنَةٌ",
+      "reading": "ibnatun",
+      "meaning": "daughter",
+      "example": "لَهَا اِبْنَةٌ ذَكِيَّةٌ.",
+      "exampleMeaning": "She has a smart daughter."
+    },
+    {
+      "word": "زَوْجٌ",
+      "reading": "zawjun",
+      "meaning": "husband",
+      "example": "زَوْجٌ صَالِحٌ يُسَاعِدُ أُسْرَتَهُ.",
+      "exampleMeaning": "A good husband helps his family."
+    },
+    {
+      "word": "زَوْجَةٌ",
+      "reading": "zawjatun",
+      "meaning": "wife",
+      "example": "زَوْجَةٌ لَطِيفَةٌ تُحِبُّ الْقِرَاءَةَ.",
+      "exampleMeaning": "A kind wife loves reading."
+    },
+    {
+      "word": "جَدٌّ",
+      "reading": "jaddun",
+      "meaning": "grandfather",
+      "example": "جَدٌّ حَكِيمٌ يَحْكِي قِصَّةً.",
+      "exampleMeaning": "A wise grandfather tells a story."
+    },
+    {
+      "word": "جَدَّةٌ",
+      "reading": "jaddatun",
+      "meaning": "grandmother",
+      "example": "جَدَّةٌ كَرِيمَةٌ تُعِدُّ الطَّعَامَ.",
+      "exampleMeaning": "A generous grandmother prepares food."
+    },
+    {
+      "word": "عَمٌّ",
+      "reading": "ʿammun",
+      "meaning": "paternal uncle",
+      "example": "عَمٌّ قَرِيبٌ يَزُورُنَا.",
+      "exampleMeaning": "A nearby paternal uncle visits us."
+    },
+    {
+      "word": "عَمَّةٌ",
+      "reading": "ʿammatun",
+      "meaning": "paternal aunt",
+      "example": "عَمَّةٌ مَرِحَةٌ تَضْحَكُ.",
+      "exampleMeaning": "A cheerful paternal aunt laughs."
+    },
+    {
+      "word": "خَالٌ",
+      "reading": "khālun",
+      "meaning": "maternal uncle",
+      "example": "خَالٌ طَبِيبٌ يَعْمَلُ فِي الْمُسْتَشْفَى.",
+      "exampleMeaning": "A maternal uncle who is a doctor works at the hospital."
+    },
+    {
+      "word": "خَالَةٌ",
+      "reading": "khālatun",
+      "meaning": "maternal aunt",
+      "example": "خَالَةٌ طَيِّبَةٌ تُحِبُّ الْأَطْفَالَ.",
+      "exampleMeaning": "A kind maternal aunt loves children."
+    },
+    {
+      "word": "عَائِلَةٌ",
+      "reading": "ʿāʾilatun",
+      "meaning": "family",
+      "example": "عَائِلَةٌ كَبِيرَةٌ تَسْكُنُ هُنَا.",
+      "exampleMeaning": "A large family lives here."
+    },
+    {
+      "word": "طِفْلٌ",
+      "reading": "ṭiflun",
+      "meaning": "child",
+      "example": "طِفْلٌ صَغِيرٌ يَنَامُ الآنَ.",
+      "exampleMeaning": "A small child is sleeping now."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "___ حَنُونَةٌ تَضْحَكُ.",
+          "answer": "أُمٌّ",
+          "hint": "mother"
+        },
+        {
+          "sentence": "___ طَيِّبٌ يَعْمَلُ.",
+          "answer": "أَبٌ",
+          "hint": "father"
+        },
+        {
+          "sentence": "___ صَغِيرَةٌ تَلْعَبُ.",
+          "answer": "أُخْتٌ",
+          "hint": "sister"
+        },
+        {
+          "sentence": "___ كَبِيرٌ يَدْرُسُ.",
+          "answer": "أَخٌ",
+          "hint": "brother"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "items": [
+        {
+          "question": "What does ‘أُمٌّ’ mean?",
+          "options": [
+            "father",
+            "mother",
+            "sister",
+            "brother"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What does ‘أَبٌ’ mean?",
+          "options": [
+            "sister",
+            "father",
+            "brother",
+            "son"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What does ‘أُخْتٌ’ mean?",
+          "options": [
+            "brother",
+            "sister",
+            "son",
+            "daughter"
+          ],
+          "answer": 1
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,183 @@
+{
+  "id": "public-transport-2",
+  "words": [
+    {
+      "word": "مِتْرُو",
+      "reading": "mitrū",
+      "meaning": "metro / subway",
+      "example": "نَرْكَبُ الْمِتْرُو إِلَى الْوَسَطِ.",
+      "exampleMeaning": "We take the metro to the center."
+    },
+    {
+      "word": "مَحَطَّةُ الْمِتْرُو",
+      "reading": "maḥaṭṭatu l-mitrū",
+      "meaning": "metro station",
+      "example": "تَقَعُ مَحَطَّةُ الْمِتْرُو قُرْبَ الْفُنْدُقِ.",
+      "exampleMeaning": "The metro station is near the hotel."
+    },
+    {
+      "word": "خَطُّ الْمِتْرُو",
+      "reading": "khaṭṭu l-mitrū",
+      "meaning": "metro line",
+      "example": "هٰذَا خَطُّ الْمِتْرُو الأَزْرَقُ.",
+      "exampleMeaning": "This is the blue metro line."
+    },
+    {
+      "word": "رَصِيفُ الانْتِظَارِ",
+      "reading": "raṣīfu l-intiẓāri",
+      "meaning": "platform",
+      "example": "انْتَظَرْنَا عَلَى رَصِيفِ الانْتِظَارِ.",
+      "exampleMeaning": "We waited on the platform."
+    },
+    {
+      "word": "بَوَّابَةُ التَّذَاكِرِ",
+      "reading": "bawwābatu t-tadhākiri",
+      "meaning": "ticket gate",
+      "example": "مَرَرْتُ مِنْ بَوَّابَةِ التَّذَاكِرِ.",
+      "exampleMeaning": "I passed through the ticket gate."
+    },
+    {
+      "word": "بِطَاقَةُ نَقْلٍ",
+      "reading": "biṭāqatu naqlin",
+      "meaning": "transit card",
+      "example": "شَحَنْتُ بِطَاقَةَ نَقْلٍ جَدِيدَةً.",
+      "exampleMeaning": "I topped up a new transit card."
+    },
+    {
+      "word": "رِحْلَةٌ مُبَاشِرَةٌ",
+      "reading": "riḥlatun mubāshiratun",
+      "meaning": "direct trip",
+      "example": "نُرِيدُ رِحْلَةً مُبَاشِرَةً بِلَا تَوَقُّفٍ.",
+      "exampleMeaning": "We want a direct trip without a stop."
+    },
+    {
+      "word": "تَغْيِيرُ الْخَطِّ",
+      "reading": "taghyīru l-khaṭṭi",
+      "meaning": "line transfer",
+      "example": "يَحْتَاجُ الطَّرِيقُ إِلَى تَغْيِيرِ الْخَطِّ.",
+      "exampleMeaning": "The route requires a line transfer."
+    },
+    {
+      "word": "عَرَبَةُ الْقِطَارِ",
+      "reading": "ʿarabatu l-qiṭāri",
+      "meaning": "train car",
+      "example": "كَانَتْ عَرَبَةُ الْقِطَارِ مُزْدَحِمَةً.",
+      "exampleMeaning": "The train car was crowded."
+    },
+    {
+      "word": "مَقْعَدٌ شَاغِرٌ",
+      "reading": "maqʿadun shāghirun",
+      "meaning": "empty seat",
+      "example": "وَجَدْتُ مَقْعَدًا شَاغِرًا.",
+      "exampleMeaning": "I found an empty seat."
+    },
+    {
+      "word": "سَاعَةُ الذُّرْوَةِ",
+      "reading": "sāʿatu dh-dhurwati",
+      "meaning": "rush hour",
+      "example": "نَتَجَنَّبُ سَاعَةَ الذُّرْوَةِ.",
+      "exampleMeaning": "We avoid rush hour."
+    },
+    {
+      "word": "تَأْخِيرٌ",
+      "reading": "taʾkhīrun",
+      "meaning": "delay",
+      "example": "أُعْلِنَ عَنْ تَأْخِيرٍ قَصِيرٍ.",
+      "exampleMeaning": "A short delay was announced."
+    },
+    {
+      "word": "جَدْوَلُ الرِّحْلَاتِ",
+      "reading": "jadwalu r-riḥlāti",
+      "meaning": "timetable",
+      "example": "تَحَقَّقْتُ مِنْ جَدْوَلِ الرِّحْلَاتِ.",
+      "exampleMeaning": "I checked the timetable."
+    },
+    {
+      "word": "اتِّجَاهُ السَّفَرِ",
+      "reading": "ittijāhu s-safari",
+      "meaning": "direction of travel",
+      "example": "اتِّجَاهُ السَّفَرِ نَحْوَ الشَّمَالِ.",
+      "exampleMeaning": "The direction of travel is north."
+    },
+    {
+      "word": "مَخْرَجٌ",
+      "reading": "makhrajun",
+      "meaning": "exit",
+      "example": "اِتَّبِعْ لَافِتَةَ الْمَخْرَجِ.",
+      "exampleMeaning": "Follow the exit sign."
+    },
+    {
+      "word": "مَصْعَدٌ",
+      "reading": "maṣʿadun",
+      "meaning": "elevator / lift",
+      "example": "يَسْتَخْدِمُ الرُّكَّابُ الْمَصْعَدَ.",
+      "exampleMeaning": "The passengers use the elevator."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "نَرْكَبُ ___ إِلَى الْوَسَطِ.",
+          "answer": "مِتْرُو",
+          "hint": "metro"
+        },
+        {
+          "sentence": "تَقَعُ ___ قُرْبَ الْفُنْدُقِ.",
+          "answer": "مَحَطَّةُ الْمِتْرُو",
+          "hint": "metro station"
+        },
+        {
+          "sentence": "هٰذَا ___ الأَزْرَقُ.",
+          "answer": "خَطُّ الْمِتْرُو",
+          "hint": "metro line"
+        },
+        {
+          "sentence": "انْتَظَرْنَا عَلَى ___.",
+          "answer": "رَصِيفُ الانْتِظَارِ",
+          "hint": "platform"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "items": [
+        {
+          "question": "What does ‘مِتْرُو’ mean?",
+          "options": [
+            "metro station",
+            "metro / subway",
+            "ticket gate",
+            "platform"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What does ‘مَحَطَّةُ الْمِتْرُو’ mean?",
+          "options": [
+            "metro line",
+            "metro station",
+            "direct trip",
+            "timetable"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What does ‘خَطُّ الْمِتْرُو’ mean?",
+          "options": [
+            "transit card",
+            "metro line",
+            "rush hour",
+            "empty seat"
+          ],
+          "answer": 1
+        }
+      ]
+    }
+  ]
+}

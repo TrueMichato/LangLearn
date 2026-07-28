@@ -1,0 +1,183 @@
+{
+  "id": "weather-forecast",
+  "words": [
+    {
+      "word": "النَّشْرَةُ الْجَوِّيَّةُ",
+      "reading": "an-nashratu l-jawwiyyatu",
+      "meaning": "weather bulletin",
+      "example": "شَاهَدْنَا النَّشْرَةَ الْجَوِّيَّةَ قَبْلَ السَّفَرِ.",
+      "exampleMeaning": "We watched the weather bulletin before traveling."
+    },
+    {
+      "word": "تَوَقُّعَاتُ الطَّقْسِ",
+      "reading": "tawaqquʿātu ṭ-ṭaqsi",
+      "meaning": "weather forecast",
+      "example": "تَوَقُّعَاتُ الطَّقْسِ تُشِيرُ إِلَى الْمَطَرِ.",
+      "exampleMeaning": "The weather forecast points to rain."
+    },
+    {
+      "word": "دَرَجَةُ الْحَرَارَةِ",
+      "reading": "darajatu l-ḥarārati",
+      "meaning": "temperature",
+      "example": "سَتَنْخَفِضُ دَرَجَةُ الْحَرَارَةِ لَيْلًا.",
+      "exampleMeaning": "The temperature will drop at night."
+    },
+    {
+      "word": "رِيَاحٌ شَمَالِيَّةٌ",
+      "reading": "riyāḥun shamāliyyatun",
+      "meaning": "northern winds",
+      "example": "تَهُبُّ رِيَاحٌ شَمَالِيَّةٌ عَلَى السَّاحِلِ.",
+      "exampleMeaning": "Northern winds are blowing on the coast."
+    },
+    {
+      "word": "أَمْطَارٌ غَزِيرَةٌ",
+      "reading": "ʾamṭārun ghazīratun",
+      "meaning": "heavy rain",
+      "example": "تَسَبَّبَتْ أَمْطَارٌ غَزِيرَةٌ فِي زِحَامٍ شَدِيدٍ.",
+      "exampleMeaning": "Heavy rain caused severe traffic."
+    },
+    {
+      "word": "زَخَّاتٌ مُتَفَرِّقَةٌ",
+      "reading": "zakhkhātun mutafarriqatun",
+      "meaning": "scattered showers",
+      "example": "سَتَسْقُطُ زَخَّاتٌ مُتَفَرِّقَةٌ بَعْدَ الظُّهْرِ.",
+      "exampleMeaning": "Scattered showers will fall after noon."
+    },
+    {
+      "word": "عَاصِفَةٌ رَعْدِيَّةٌ",
+      "reading": "ʿāṣifatun raʿdiyyatun",
+      "meaning": "thunderstorm",
+      "example": "اقْتَرَبَتْ عَاصِفَةٌ رَعْدِيَّةٌ مِنَ الْمَدِينَةِ.",
+      "exampleMeaning": "A thunderstorm approached the city."
+    },
+    {
+      "word": "ضَبَابٌ كَثِيفٌ",
+      "reading": "ḍabābun kathīfun",
+      "meaning": "dense fog",
+      "example": "أَدَّى ضَبَابٌ كَثِيفٌ إِلَى تَأْخِيرِ الرِّحَلِ.",
+      "exampleMeaning": "Dense fog led to delays of the flights."
+    },
+    {
+      "word": "رُطُوبَةٌ مُرْتَفِعَةٌ",
+      "reading": "ruṭūbatun murtafiʿatun",
+      "meaning": "high humidity",
+      "example": "نَشْعُرُ بِرُطُوبَةٍ مُرْتَفِعَةٍ فِي الصَّيْفِ.",
+      "exampleMeaning": "We feel high humidity in summer."
+    },
+    {
+      "word": "انْخِفَاضٌ فِي الضَّغْطِ",
+      "reading": "inkhifāḍun fī ḍ-ḍaghṭi",
+      "meaning": "drop in pressure",
+      "example": "ذَكَرَ الْخَبِيرُ انْخِفَاضًا فِي الضَّغْطِ الْجَوِّيِّ.",
+      "exampleMeaning": "The expert mentioned a drop in atmospheric pressure."
+    },
+    {
+      "word": "مُنْخَفَضٌ جَوِّيٌّ",
+      "reading": "munkhafaḍun jawwiyyun",
+      "meaning": "low-pressure system",
+      "example": "يَصِلُ مُنْخَفَضٌ جَوِّيٌّ إِلَى الْبِلَادِ غَدًا.",
+      "exampleMeaning": "A low-pressure system will reach the country tomorrow."
+    },
+    {
+      "word": "مَوْجَةٌ حَارَّةٌ",
+      "reading": "mawjatun ḥārratun",
+      "meaning": "heat wave",
+      "example": "تَسْتَمِرُّ مَوْجَةٌ حَارَّةٌ ثَلَاثَةَ أَيَّامٍ.",
+      "exampleMeaning": "A heat wave continues for three days."
+    },
+    {
+      "word": "تَحْذِيرٌ جَوِّيٌّ",
+      "reading": "taḥdhīrun jawwiyyun",
+      "meaning": "weather warning",
+      "example": "أَصْدَرَتِ الْهَيْئَةُ تَحْذِيرًا جَوِّيًّا.",
+      "exampleMeaning": "The authority issued a weather warning."
+    },
+    {
+      "word": "غَائِمٌ جُزْئِيًّا",
+      "reading": "ghāʾimun juzʾiyyan",
+      "meaning": "partly cloudy",
+      "example": "سَيَكُونُ الْجَوُّ غَائِمًا جُزْئِيًّا صَبَاحًا.",
+      "exampleMeaning": "The weather will be partly cloudy in the morning."
+    },
+    {
+      "word": "فُرْصَةُ الْهُطُولِ",
+      "reading": "furṣatu l-huṭūli",
+      "meaning": "chance of precipitation",
+      "example": "فُرْصَةُ الْهُطُولِ عَالِيَةٌ فِي الْمَسَاءِ.",
+      "exampleMeaning": "The chance of precipitation is high in the evening."
+    },
+    {
+      "word": "الرُّؤْيَةُ الْأُفُقِيَّةُ",
+      "reading": "ar-ruʾyatu l-ʾufuqiyyatu",
+      "meaning": "horizontal visibility",
+      "example": "تَتَحَسَّنُ الرُّؤْيَةُ الْأُفُقِيَّةُ بَعْدَ شُرُوقِ الشَّمْسِ.",
+      "exampleMeaning": "Horizontal visibility improves after sunrise."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "___ تَبْدَأُ فِي السَّاعَةِ الثَّامِنَةِ.",
+          "answer": "النَّشْرَةُ الْجَوِّيَّةُ",
+          "hint": "weather bulletin"
+        },
+        {
+          "sentence": "___ تُشِيرُ إِلَى الْمَطَرِ.",
+          "answer": "تَوَقُّعَاتُ الطَّقْسِ",
+          "hint": "weather forecast"
+        },
+        {
+          "sentence": "___ مُرْتَفِعَةٌ الْيَوْمَ.",
+          "answer": "دَرَجَةُ الْحَرَارَةِ",
+          "hint": "temperature"
+        },
+        {
+          "sentence": "تَهُبُّ ___ عَلَى السَّاحِلِ.",
+          "answer": "رِيَاحٌ شَمَالِيَّةٌ",
+          "hint": "northern winds"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "items": [
+        {
+          "question": "What does ‘النَّشْرَةُ الْجَوِّيَّةُ’ mean?",
+          "options": [
+            "weather forecast",
+            "weather bulletin",
+            "temperature",
+            "northern winds"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What does ‘تَوَقُّعَاتُ الطَّقْسِ’ mean?",
+          "options": [
+            "weather bulletin",
+            "weather forecast",
+            "temperature",
+            "northern winds"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What does ‘دَرَجَةُ الْحَرَارَةِ’ mean?",
+          "options": [
+            "weather bulletin",
+            "temperature",
+            "weather forecast",
+            "northern winds"
+          ],
+          "answer": 1
+        }
+      ]
+    }
+  ]
+}

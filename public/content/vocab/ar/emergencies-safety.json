@@ -1,0 +1,183 @@
+{
+  "id": "emergencies-safety",
+  "words": [
+    {
+      "word": "حَالَةٌ طَارِئَةٌ",
+      "reading": "ḥālatun ṭāriʾatun",
+      "meaning": "emergency",
+      "example": "أَعْلَنَ الْمُسْتَشْفَى حَالَةً طَارِئَةً بَعْدَ الْحَادِثِ.",
+      "exampleMeaning": "The hospital declared an emergency after the accident."
+    },
+    {
+      "word": "سَيَّارَةُ إِسْعَافٍ",
+      "reading": "sayyāratu ʾisʿāfin",
+      "meaning": "ambulance",
+      "example": "وَصَلَتْ سَيَّارَةُ إِسْعَافٍ خِلَالَ دَقَائِقَ.",
+      "exampleMeaning": "An ambulance arrived within minutes."
+    },
+    {
+      "word": "حَرِيقٌ",
+      "reading": "ḥarīqun",
+      "meaning": "fire",
+      "example": "اِنْتَشَرَ حَرِيقٌ صَغِيرٌ فِي الْمَطْبَخِ.",
+      "exampleMeaning": "A small fire spread in the kitchen."
+    },
+    {
+      "word": "مَخْرَجُ طَوَارِئَ",
+      "reading": "makhraju ṭawāriʾa",
+      "meaning": "emergency exit",
+      "example": "يَقَعُ مَخْرَجُ طَوَارِئَ خَلْفَ الْمَسْرَحِ.",
+      "exampleMeaning": "The emergency exit is behind the theater."
+    },
+    {
+      "word": "إِنْذَارٌ",
+      "reading": "ʾindhārun",
+      "meaning": "alarm",
+      "example": "أَطْلَقَ الْجِهَازُ إِنْذَارًا مُبَكِّرًا.",
+      "exampleMeaning": "The device gave an early alarm."
+    },
+    {
+      "word": "إِطْفَائِيٌّ",
+      "reading": "ʾiṭfāʾiyyun",
+      "meaning": "firefighter",
+      "example": "أَخْمَدَ إِطْفَائِيٌّ شُجَاعٌ النَّارَ.",
+      "exampleMeaning": "A brave firefighter extinguished the fire."
+    },
+    {
+      "word": "شُرْطَةٌ",
+      "reading": "shurṭatun",
+      "meaning": "police",
+      "example": "سَاعَدَتِ الشُّرْطَةُ النَّاسَ فِي الشَّارِعِ.",
+      "exampleMeaning": "The police helped people in the street."
+    },
+    {
+      "word": "إِصَابَةٌ",
+      "reading": "ʾiṣābatun",
+      "meaning": "injury",
+      "example": "تَلَقَّى اللَّاعِبُ عِلَاجًا لِإِصَابَةٍ خَفِيفَةٍ.",
+      "exampleMeaning": "The player received treatment for a minor injury."
+    },
+    {
+      "word": "جُرْحٌ",
+      "reading": "jurḥun",
+      "meaning": "wound",
+      "example": "غَسَلَتِ الْمُمَرِّضَةُ جُرْحًا صَغِيرًا.",
+      "exampleMeaning": "The nurse washed a small wound."
+    },
+    {
+      "word": "ضِمَادٌ",
+      "reading": "ḍimādun",
+      "meaning": "bandage",
+      "example": "وَضَعَ الطَّبِيبُ ضِمَادًا نَظِيفًا.",
+      "exampleMeaning": "The doctor put on a clean bandage."
+    },
+    {
+      "word": "خُوذَةٌ",
+      "reading": "khūdhatun",
+      "meaning": "helmet",
+      "example": "يَلْبَسُ الْعَامِلُ خُوذَةً فِي الْمَوْقِعِ.",
+      "exampleMeaning": "The worker wears a helmet at the site."
+    },
+    {
+      "word": "حِزَامُ الْأَمَانِ",
+      "reading": "ḥizāmu l-ʾamāni",
+      "meaning": "safety belt / seat belt",
+      "example": "رَبَطَ السَّائِقُ حِزَامَ الْأَمَانِ قَبْلَ الْحَرَكَةِ.",
+      "exampleMeaning": "The driver fastened the seat belt before moving."
+    },
+    {
+      "word": "خَطَرٌ",
+      "reading": "khaṭarun",
+      "meaning": "danger",
+      "example": "لَا تَقْتَرِبْ مِنَ الْمَكَانِ؛ فِيهِ خَطَرٌ.",
+      "exampleMeaning": "Do not approach the place; there is danger in it."
+    },
+    {
+      "word": "آمِنٌ",
+      "reading": "ʾāminun",
+      "meaning": "safe",
+      "example": "الطَّرِيقُ آمِنٌ بَعْدَ الْإِصْلَاحِ.",
+      "exampleMeaning": "The road is safe after the repair."
+    },
+    {
+      "word": "يُنْقِذُ",
+      "reading": "yunqidhu",
+      "meaning": "to rescue",
+      "example": "يُنْقِذُ الْمُسْعِفُ الطِّفْلَ بِسُرْعَةٍ.",
+      "exampleMeaning": "The paramedic rescues the child quickly."
+    },
+    {
+      "word": "يُبَلِّغُ",
+      "reading": "yuballighu",
+      "meaning": "to report / notify",
+      "example": "يُبَلِّغُ الشَّاهِدُ عَنِ الْحَادِثِ فَوْرًا.",
+      "exampleMeaning": "The witness reports the accident immediately."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "هٰذِهِ ___ خَطِيرَةٌ.",
+          "answer": "حَالَةٌ طَارِئَةٌ",
+          "hint": "emergency"
+        },
+        {
+          "sentence": "هٰذَا ___ إِلَى الشَّارِعِ.",
+          "answer": "مَخْرَجُ طَوَارِئَ",
+          "hint": "emergency exit"
+        },
+        {
+          "sentence": "هٰذَا ___ قَوِيٌّ.",
+          "answer": "إِنْذَارٌ",
+          "hint": "alarm"
+        },
+        {
+          "sentence": "الطَّرِيقُ ___ بَعْدَ الْإِصْلَاحِ.",
+          "answer": "آمِنٌ",
+          "hint": "safe"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "items": [
+        {
+          "question": "What does ‘سَيَّارَةُ إِسْعَافٍ’ mean?",
+          "options": [
+            "ambulance",
+            "firefighter",
+            "danger",
+            "bandage"
+          ],
+          "answer": 0
+        },
+        {
+          "question": "What does ‘ضِمَادٌ’ mean?",
+          "options": [
+            "helmet",
+            "bandage",
+            "alarm",
+            "injury"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What does ‘يُبَلِّغُ’ mean?",
+          "options": [
+            "to rescue",
+            "to report / notify",
+            "to burn",
+            "to fasten"
+          ],
+          "answer": 1
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,183 @@
+{
+  "id": "feelings-3",
+  "words": [
+    {
+      "word": "صَبُورٌ",
+      "reading": "ṣabūrun",
+      "meaning": "patient",
+      "example": "المُعَلِّمُ صَبُورٌ مَعَ الطُّلَّابِ.",
+      "exampleMeaning": "The teacher is patient with the students."
+    },
+    {
+      "word": "كَرِيمٌ",
+      "reading": "karīmun",
+      "meaning": "generous",
+      "example": "جَارُنَا كَرِيمٌ وَيُحِبُّ الضُّيُوفَ.",
+      "exampleMeaning": "Our neighbor is generous and loves guests."
+    },
+    {
+      "word": "بَخِيلٌ",
+      "reading": "bakhīlun",
+      "meaning": "stingy",
+      "example": "الرَّجُلُ بَخِيلٌ وَلَا يُحِبُّ المُسَاعَدَةَ.",
+      "exampleMeaning": "The man is stingy and does not like helping."
+    },
+    {
+      "word": "شُجَاعٌ",
+      "reading": "shujāʿun",
+      "meaning": "brave",
+      "example": "الجُنْدِيُّ شُجَاعٌ فِي المَوْقِفِ الصَّعْبِ.",
+      "exampleMeaning": "The soldier is brave in the difficult situation."
+    },
+    {
+      "word": "جَبَانٌ",
+      "reading": "jabānun",
+      "meaning": "cowardly",
+      "example": "الشَّخْصُ الجَبَانُ يَتَجَنَّبُ الحَقِيقَةَ.",
+      "exampleMeaning": "A cowardly person avoids the truth."
+    },
+    {
+      "word": "مُتَوَاضِعٌ",
+      "reading": "mutawāḍiʿun",
+      "meaning": "humble",
+      "example": "المُدِيرُ مُتَوَاضِعٌ رَغْمَ نَجَاحِهِ.",
+      "exampleMeaning": "The manager is humble despite his success."
+    },
+    {
+      "word": "مُتَكَبِّرٌ",
+      "reading": "mutakabbirun",
+      "meaning": "arrogant",
+      "example": "المُتَحَدِّثُ مُتَكَبِّرٌ وَلَا يَسْمَعُ لِلآخَرِينَ.",
+      "exampleMeaning": "The speaker is arrogant and does not listen to others."
+    },
+    {
+      "word": "مَسْؤُولٌ",
+      "reading": "masʾūlun",
+      "meaning": "responsible",
+      "example": "الطَّبِيبُ مَسْؤُولٌ عَنْ سَلَامَةِ المَرْضَى.",
+      "exampleMeaning": "The doctor is responsible for the patients’ safety."
+    },
+    {
+      "word": "مُتَسَرِّعٌ",
+      "reading": "mutasarriʿun",
+      "meaning": "hasty",
+      "example": "القَرَارُ المُتَسَرِّعُ قَدْ يَسَبِّبُ مُشْكِلَةً.",
+      "exampleMeaning": "A hasty decision may cause a problem."
+    },
+    {
+      "word": "هَادِئٌ",
+      "reading": "hādiʾun",
+      "meaning": "calm",
+      "example": "صَوْتُهُ هَادِئٌ فِي الاِجْتِمَاعِ.",
+      "exampleMeaning": "His voice is calm in the meeting."
+    },
+    {
+      "word": "عَنِيدٌ",
+      "reading": "ʿanīdun",
+      "meaning": "stubborn",
+      "example": "الطِّفْلُ عَنِيدٌ لَكِنَّهُ ذَكِيٌّ.",
+      "exampleMeaning": "The child is stubborn but smart."
+    },
+    {
+      "word": "مُجْتَهِدٌ",
+      "reading": "mujtahidun",
+      "meaning": "diligent",
+      "example": "الطَّالِبُ مُجْتَهِدٌ وَيُرَاجِعُ دُرُوسَهُ.",
+      "exampleMeaning": "The student is diligent and reviews his lessons."
+    },
+    {
+      "word": "كَسُولٌ",
+      "reading": "kasūlun",
+      "meaning": "lazy",
+      "example": "العَامِلُ الكَسُولُ يُؤَخِّرُ الفَرِيقَ.",
+      "exampleMeaning": "The lazy worker delays the team."
+    },
+    {
+      "word": "وَدُودٌ",
+      "reading": "wadūdun",
+      "meaning": "friendly",
+      "example": "المُوَظَّفُ وَدُودٌ مَعَ الزُّوَّارِ.",
+      "exampleMeaning": "The employee is friendly with visitors."
+    },
+    {
+      "word": "صَادِقٌ",
+      "reading": "ṣādiqun",
+      "meaning": "honest",
+      "example": "الصَّدِيقُ الصَّادِقُ يَقُولُ الحَقَّ.",
+      "exampleMeaning": "An honest friend tells the truth."
+    },
+    {
+      "word": "مُخْلِصٌ",
+      "reading": "mukhliṣun",
+      "meaning": "loyal / sincere",
+      "example": "الشَّرِيكُ مُخْلِصٌ فِي عَمَلِهِ.",
+      "exampleMeaning": "The partner is loyal in his work."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "المُعَلِّمُ ___ مَعَ الطُّلَّابِ.",
+          "answer": "صَبُورٌ",
+          "hint": "patient"
+        },
+        {
+          "sentence": "جَارُنَا ___ وَيُحِبُّ الضُّيُوفَ.",
+          "answer": "كَرِيمٌ",
+          "hint": "generous"
+        },
+        {
+          "sentence": "الرَّجُلُ ___ وَلَا يُحِبُّ المُسَاعَدَةَ.",
+          "answer": "بَخِيلٌ",
+          "hint": "stingy"
+        },
+        {
+          "sentence": "الجُنْدِيُّ ___ فِي المَوْقِفِ الصَّعْبِ.",
+          "answer": "شُجَاعٌ",
+          "hint": "brave"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "items": [
+        {
+          "question": "What does ‘صَبُورٌ’ mean?",
+          "options": [
+            "generous",
+            "patient",
+            "stingy",
+            "brave"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What does ‘كَرِيمٌ’ mean?",
+          "options": [
+            "stingy",
+            "generous",
+            "brave",
+            "cowardly"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What does ‘بَخِيلٌ’ mean?",
+          "options": [
+            "brave",
+            "stingy",
+            "cowardly",
+            "humble"
+          ],
+          "answer": 1
+        }
+      ]
+    }
+  ]
+}

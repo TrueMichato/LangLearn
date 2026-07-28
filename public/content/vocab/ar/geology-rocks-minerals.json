@@ -1,0 +1,159 @@
+{
+  "id": "geology-rocks-minerals",
+  "words": [
+    {
+      "word": "عِلْمُ الْأَرْضِ",
+      "reading": "ʿilm al-arḍ",
+      "meaning": "geology",
+      "example": "يَدْرُسُ عِلْمُ الْأَرْضِ تَارِيخَ الصُّخُورِ.",
+      "exampleMeaning": "Geology studies the history of rocks."
+    },
+    {
+      "word": "صَخْرَةٌ",
+      "reading": "ṣakhra",
+      "meaning": "rock",
+      "example": "وَجَدَ الْبَاحِثُ صَخْرَةً قَدِيمَةً فِي الْوَادِي.",
+      "exampleMeaning": "The researcher found an old rock in the valley."
+    },
+    {
+      "word": "مَعْدِنٌ",
+      "reading": "maʿdin",
+      "meaning": "mineral",
+      "example": "يَلْمَعُ مَعْدِنٌ نَادِرٌ دَاخِلَ الصَّخْرَةِ.",
+      "exampleMeaning": "A rare mineral shines inside the rock."
+    },
+    {
+      "word": "طَبَقَةٌ",
+      "reading": "ṭabaqa",
+      "meaning": "layer",
+      "example": "تَظْهَرُ طَبَقَةٌ رَقِيقَةٌ بَيْنَ الرُّسُوبِ.",
+      "exampleMeaning": "A thin layer appears among the sediments."
+    },
+    {
+      "word": "قِشْرَةُ الْأَرْضِ",
+      "reading": "qishrat al-arḍ",
+      "meaning": "earth's crust",
+      "example": "تَتَكَوَّنُ قِشْرَةُ الْأَرْضِ مِنْ صُخُورٍ مُتَنَوِّعَةٍ.",
+      "exampleMeaning": "The earth's crust consists of varied rocks."
+    },
+    {
+      "word": "صَدْعٌ",
+      "reading": "ṣadʿ",
+      "meaning": "fault",
+      "example": "يَمْتَدُّ صَدْعٌ طَوِيلٌ تَحْتَ السَّهْلِ.",
+      "exampleMeaning": "A long fault extends under the plain."
+    },
+    {
+      "word": "بُرْكَانٌ",
+      "reading": "burkān",
+      "meaning": "volcano",
+      "example": "ثَارَ بُرْكَانٌ قَدِيمٌ قُرْبَ السَّاحِلِ.",
+      "exampleMeaning": "An old volcano erupted near the coast."
+    },
+    {
+      "word": "زِلْزَالٌ",
+      "reading": "zilzāl",
+      "meaning": "earthquake",
+      "example": "سَجَّلَ الْمَرْصَدُ زِلْزَالًا خَفِيفًا.",
+      "exampleMeaning": "The observatory recorded a mild earthquake."
+    },
+    {
+      "word": "حَفْرِيَّةٌ",
+      "reading": "ḥafriyya",
+      "meaning": "fossil",
+      "example": "تَحْفَظُ حَفْرِيَّةٌ صَغِيرَةٌ شَكْلَ وَرَقَةٍ.",
+      "exampleMeaning": "A small fossil preserves the shape of a leaf."
+    },
+    {
+      "word": "رَسُوبٌ",
+      "reading": "rasūb",
+      "meaning": "sediment",
+      "example": "يَتَجَمَّعُ رَسُوبٌ نَاعِمٌ فِي قَاعِ النَّهْرِ.",
+      "exampleMeaning": "Fine sediment gathers at the bottom of the river."
+    },
+    {
+      "word": "تَعْرِيَةٌ",
+      "reading": "taʿriya",
+      "meaning": "erosion",
+      "example": "تُشَكِّلُ التَّعْرِيَةُ حَافَّةَ الْجَبَلِ.",
+      "exampleMeaning": "Erosion shapes the edge of the mountain."
+    },
+    {
+      "word": "تَجْوِيَةٌ",
+      "reading": "tajwiya",
+      "meaning": "weathering",
+      "example": "تُفَتِّتُ التَّجْوِيَةُ الصُّخُورَ عَلَى مَدَى زَمَنٍ طَوِيلٍ.",
+      "exampleMeaning": "Weathering breaks rocks over a long time."
+    },
+    {
+      "word": "صَهِيرٌ",
+      "reading": "ṣahīr",
+      "meaning": "magma",
+      "example": "يَصْعَدُ صَهِيرٌ حَارٌّ مِنْ أَعْمَاقِ الْأَرْضِ.",
+      "exampleMeaning": "Hot magma rises from deep within the earth."
+    },
+    {
+      "word": "حِمَمٌ",
+      "reading": "ḥimam",
+      "meaning": "lava",
+      "example": "تَجْمُدُ حِمَمٌ سَوْدَاءُ بَعْدَ خُرُوجِهَا.",
+      "exampleMeaning": "Black lava solidifies after it comes out."
+    },
+    {
+      "word": "بِلَّوْرَةٌ",
+      "reading": "billawra",
+      "meaning": "crystal",
+      "example": "تَنْمُو بِلَّوْرَةٌ جَمِيلَةٌ دَاخِلَ الْكَهْفِ.",
+      "exampleMeaning": "A beautiful crystal grows inside the cave."
+    },
+    {
+      "word": "حَجَرٌ كَرِيمٌ",
+      "reading": "ḥajar karīm",
+      "meaning": "gemstone",
+      "example": "قَطَعَ الصَّائِغُ حَجَرًا كَرِيمًا بِعِنَايَةٍ.",
+      "exampleMeaning": "The jeweler cut a gemstone carefully."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "___ يَدْرُسُ تَارِيخَ الصُّخُورِ.",
+          "answer": "عِلْمُ الْأَرْضِ",
+          "hint": "geology"
+        },
+        {
+          "sentence": "___ يَلْمَعُ دَاخِلَ الصَّخْرَةِ.",
+          "answer": "مَعْدِنٌ",
+          "hint": "mineral"
+        },
+        {
+          "sentence": "___ يَمْتَدُّ تَحْتَ السَّهْلِ.",
+          "answer": "صَدْعٌ",
+          "hint": "fault"
+        },
+        {
+          "sentence": "___ جَمِيلَةٌ تَنْمُو دَاخِلَ الْكَهْفِ.",
+          "answer": "بِلَّوْرَةٌ",
+          "hint": "crystal"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "What does ‘حَفْرِيَّةٌ’ mean?",
+      "options": [
+        "fossil",
+        "fault",
+        "lava",
+        "gemstone"
+      ],
+      "answer": 0
+    }
+  ]
+}

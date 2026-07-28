@@ -1,0 +1,159 @@
+{
+  "id": "maghrebi-weather-plans",
+  "words": [
+    {
+      "word": "شْحَالْ السَّاعَة؟",
+      "reading": "shḥāl s-sāʿa?",
+      "meaning": "what time is it?",
+      "example": "شْحَالْ السَّاعَة؟ خَاصّْنَا نْمْشِيوْ.",
+      "exampleMeaning": "What time is it? We need to go."
+    },
+    {
+      "word": "الْجَوّ",
+      "reading": "l-jaww",
+      "meaning": "weather",
+      "example": "الْجَوّ زْوِينْ الْيُومْ.",
+      "exampleMeaning": "The weather is nice today."
+    },
+    {
+      "word": "الشَّمْسْ",
+      "reading": "sh-shams",
+      "meaning": "sun",
+      "example": "الشَّمْسْ خَارْجَةْ بْزَّافْ.",
+      "exampleMeaning": "The sun is out a lot."
+    },
+    {
+      "word": "الشِّتَا",
+      "reading": "sh-shtā",
+      "meaning": "rain",
+      "example": "إِلَا جَاتِ الشِّتَا، نْبَدْلُو الْخُطَّةْ.",
+      "exampleMeaning": "If rain comes, we will change the plan."
+    },
+    {
+      "word": "الْبَرْدْ",
+      "reading": "l-bard",
+      "meaning": "cold",
+      "example": "الْبَرْدْ قْوِيّْ فِي اللِّيلْ.",
+      "exampleMeaning": "The cold is strong at night."
+    },
+    {
+      "word": "السَّخَانَةْ",
+      "reading": "s-skhāna",
+      "meaning": "heat",
+      "example": "السَّخَانَةْ طَالْعَةْ بَعْدَ الظُّهْرْ.",
+      "exampleMeaning": "The heat rises after noon."
+    },
+    {
+      "word": "الرِّيحْ",
+      "reading": "r-rīḥ",
+      "meaning": "wind",
+      "example": "الرِّيحْ كْتِيرَةْ عَلَى الْبْحَرْ.",
+      "exampleMeaning": "There is a lot of wind by the sea."
+    },
+    {
+      "word": "غَدَا",
+      "reading": "ghdā",
+      "meaning": "tomorrow",
+      "example": "غَدَا نْتْلَاقَاوْ فِي الْمَرْكَزْ.",
+      "exampleMeaning": "Tomorrow we will meet in the center."
+    },
+    {
+      "word": "الْيُومْ",
+      "reading": "l-yūm",
+      "meaning": "today",
+      "example": "الْيُومْ مَا نْقْدْرْش نْخْرْجْ.",
+      "exampleMeaning": "Today I cannot go out."
+    },
+    {
+      "word": "مْنْ بَعْدْ",
+      "reading": "mn baʿd",
+      "meaning": "later",
+      "example": "نْهَضْرُو مْنْ بَعْدْ عَلَى الْمَوْعِدْ.",
+      "exampleMeaning": "We will talk later about the appointment."
+    },
+    {
+      "word": "نْتْلَاقَاوْ",
+      "reading": "ntlāqāw",
+      "meaning": "we will meet",
+      "example": "نْتْلَاقَاوْ قُدَّامَ الْقَهْوَةْ.",
+      "exampleMeaning": "We will meet in front of the café."
+    },
+    {
+      "word": "فِينْ؟",
+      "reading": "fīn?",
+      "meaning": "where?",
+      "example": "فِينْ نْتْلَاقَاوْ بَعْدَ الْخْدْمَةْ؟",
+      "exampleMeaning": "Where will we meet after work?"
+    },
+    {
+      "word": "وَاشْ مَازَالْ؟",
+      "reading": "wāsh māzāl?",
+      "meaning": "is it still?",
+      "example": "وَاشْ مَازَالِ الْجَوّْ بَارْدْ؟",
+      "exampleMeaning": "Is the weather still cold?"
+    },
+    {
+      "word": "مَا نْقْدْرْش",
+      "reading": "mā nqdarsh",
+      "meaning": "I cannot",
+      "example": "مَا نْقْدْرْش نْجِي مَعَ الشِّتَا.",
+      "exampleMeaning": "I cannot come with the rain."
+    },
+    {
+      "word": "نْبَدْلُو الْخُطَّةْ",
+      "reading": "nbadlu l-khuṭṭa",
+      "meaning": "we will change the plan",
+      "example": "إِلَا كَانَتِ الرِّيحْ، نْبَدْلُو الْخُطَّةْ.",
+      "exampleMeaning": "If there is wind, we will change the plan."
+    },
+    {
+      "word": "يْصْلَحْ",
+      "reading": "yṣlaḥ",
+      "meaning": "it works / it is okay",
+      "example": "السَّبْتْ يْصْلَحْ لِلْمْشْوَارْ؟",
+      "exampleMeaning": "Does Saturday work for the outing?"
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "___ خَاصّْنَا نْمْشِيوْ.",
+          "answer": "شْحَالْ السَّاعَة؟",
+          "hint": "what time is it?"
+        },
+        {
+          "sentence": "إِلَا جَاتِ ___، نْبَدْلُو الْخُطَّةْ.",
+          "answer": "الشِّتَا",
+          "hint": "rain"
+        },
+        {
+          "sentence": "___ قُدَّامَ الْقَهْوَةْ.",
+          "answer": "نْتْلَاقَاوْ",
+          "hint": "we will meet"
+        },
+        {
+          "sentence": "___ نْجِي مَعَ الشِّتَا.",
+          "answer": "مَا نْقْدْرْش",
+          "hint": "I cannot"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "In Maghrebi Arabic, what does ‘نْتْلَاقَاوْ’ mean?",
+      "options": [
+        "we will meet",
+        "rain",
+        "heat",
+        "where?"
+      ],
+      "answer": 0
+    }
+  ]
+}

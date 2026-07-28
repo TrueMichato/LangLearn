@@ -1,0 +1,159 @@
+{
+  "id": "maritime-seafaring",
+  "words": [
+    {
+      "word": "بَحْرٌ",
+      "reading": "baḥrun",
+      "meaning": "sea",
+      "example": "بَحْرٌ هَادِئٌ يَجْذِبُ السُّيَّاحَ صَبَاحًا.",
+      "exampleMeaning": "A calm sea attracts tourists in the morning."
+    },
+    {
+      "word": "مُحِيطٌ",
+      "reading": "muḥīṭun",
+      "meaning": "ocean",
+      "example": "مُحِيطٌ وَاسِعٌ يَفْصِلُ بَيْنَ الْقَارَّاتِ.",
+      "exampleMeaning": "A vast ocean separates continents."
+    },
+    {
+      "word": "مِينَاءٌ",
+      "reading": "mīnāʾun",
+      "meaning": "port",
+      "example": "يَسْتَقْبِلُ مِينَاءٌ سُفُنًا كَبِيرَةً.",
+      "exampleMeaning": "A port receives large ships."
+    },
+    {
+      "word": "سَفِينَةٌ",
+      "reading": "safīnatun",
+      "meaning": "ship",
+      "example": "تَرْسُو سَفِينَةٌ فِي الْمِينَاءِ عِنْدَ الْفَجْرِ.",
+      "exampleMeaning": "A ship anchors in the port at dawn."
+    },
+    {
+      "word": "قَارِبٌ",
+      "reading": "qāribun",
+      "meaning": "boat",
+      "example": "يَعْبُرُ قَارِبٌ صَغِيرٌ الْخَلِيجَ.",
+      "exampleMeaning": "A small boat crosses the bay."
+    },
+    {
+      "word": "بُحَّارٌ",
+      "reading": "buḥḥārun",
+      "meaning": "sailor",
+      "example": "يَعْرِفُ بُحَّارٌ اتِّجَاهَ الرِّيحِ.",
+      "exampleMeaning": "A sailor knows the direction of the wind."
+    },
+    {
+      "word": "قُبْطَانٌ",
+      "reading": "qubṭānun",
+      "meaning": "captain",
+      "example": "يَقُودُ قُبْطَانٌ السَّفِينَةَ بِحِكْمَةٍ.",
+      "exampleMeaning": "A captain steers the ship wisely."
+    },
+    {
+      "word": "شِرَاعٌ",
+      "reading": "shirāʿun",
+      "meaning": "sail",
+      "example": "شِرَاعٌ أَبْيَضُ يَمْلَؤُهُ الْهَوَاءُ.",
+      "exampleMeaning": "A white sail is filled by the air."
+    },
+    {
+      "word": "مِرْسَاةٌ",
+      "reading": "mirsātun",
+      "meaning": "anchor",
+      "example": "تُثَبِّتُ مِرْسَاةٌ الْقَارِبَ قُرْبَ السَّاحِلِ.",
+      "exampleMeaning": "An anchor secures the boat near the coast."
+    },
+    {
+      "word": "مَوْجَةٌ",
+      "reading": "mawjatun",
+      "meaning": "wave",
+      "example": "مَوْجَةٌ عَالِيَةٌ تَضْرِبُ السَّاحِلَ.",
+      "exampleMeaning": "A high wave hits the coast."
+    },
+    {
+      "word": "مَدٌّ",
+      "reading": "maddun",
+      "meaning": "tide / high tide",
+      "example": "يَرْتَفِعُ مَدٌّ فِي آخِرِ النَّهَارِ.",
+      "exampleMeaning": "The tide rises at the end of the day."
+    },
+    {
+      "word": "جَزْرٌ",
+      "reading": "jazrun",
+      "meaning": "ebb / low tide",
+      "example": "يَكْشِفُ جَزْرٌ صُخُورًا قُرْبَ الشَّاطِئِ.",
+      "exampleMeaning": "Low tide reveals rocks near the beach."
+    },
+    {
+      "word": "سَاحِلٌ",
+      "reading": "sāḥilun",
+      "meaning": "coast",
+      "example": "يَمْتَدُّ سَاحِلٌ طَوِيلٌ جَنُوبَ الْمَدِينَةِ.",
+      "exampleMeaning": "A long coast extends south of the city."
+    },
+    {
+      "word": "مَنَارَةٌ",
+      "reading": "manāratun",
+      "meaning": "lighthouse",
+      "example": "تُرْشِدُ مَنَارَةٌ السُّفُنَ فِي الظَّلَامِ.",
+      "exampleMeaning": "A lighthouse guides ships in the dark."
+    },
+    {
+      "word": "بَوْصَلَةٌ",
+      "reading": "bawṣalatun",
+      "meaning": "compass",
+      "example": "تُحَدِّدُ بَوْصَلَةٌ اتِّجَاهَ الشَّمَالِ.",
+      "exampleMeaning": "A compass determines the direction of north."
+    },
+    {
+      "word": "غَوَّاصٌ",
+      "reading": "ghawwāṣun",
+      "meaning": "diver",
+      "example": "يَغُوصُ غَوَّاصٌ بَيْنَ الشُّعَابِ الْمُلَوَّنَةِ.",
+      "exampleMeaning": "A diver dives among the colorful reefs."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "تَرْسُو ___ فِي الْمِينَاءِ عِنْدَ الْفَجْرِ.",
+          "answer": "سَفِينَةٌ",
+          "hint": "ship"
+        },
+        {
+          "sentence": "يَقُودُ ___ السَّفِينَةَ بِحِكْمَةٍ.",
+          "answer": "قُبْطَانٌ",
+          "hint": "captain"
+        },
+        {
+          "sentence": "___ أَبْيَضُ يَمْلَؤُهُ الْهَوَاءُ.",
+          "answer": "شِرَاعٌ",
+          "hint": "sail"
+        },
+        {
+          "sentence": "___ عَالِيَةٌ تَضْرِبُ السَّاحِلَ.",
+          "answer": "مَوْجَةٌ",
+          "hint": "wave"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "What does ‘بَوْصَلَةٌ’ mean?",
+      "options": [
+        "compass",
+        "anchor",
+        "wave",
+        "sailor"
+      ],
+      "answer": 0
+    }
+  ]
+}

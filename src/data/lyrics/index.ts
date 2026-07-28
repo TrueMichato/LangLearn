@@ -2,12 +2,13 @@ import { jaLyrics } from './ja-lyrics';
 import { ruLyrics } from './ru-lyrics';
 import { ptLyrics } from './pt-lyrics';
 import { esLyrics } from './es-lyrics';
+import { arLyrics } from './ar-lyrics';
 import { roLyrics } from './ro-lyrics';
 import type { Song } from './types';
 
 export type { Song, LyricLine, SongVocab } from './types';
 
-export const allLyrics: Song[] = [...jaLyrics, ...ruLyrics, ...ptLyrics, ...esLyrics, ...roLyrics];
+export const allLyrics: Song[] = [...jaLyrics, ...ruLyrics, ...ptLyrics, ...esLyrics, ...arLyrics, ...roLyrics];
 
 export function getLyricsByLanguage(language: string): Song[] {
   return allLyrics.filter((s) => s.language === language);

@@ -1,0 +1,183 @@
+{
+  "id": "islamic-months-zodiac",
+  "words": [
+    {
+      "word": "مُحَرَّمٌ",
+      "reading": "muḥarramun",
+      "meaning": "Muharram",
+      "example": "مُحَرَّمٌ أَوَّلُ شَهْرٍ فِي التَّقْوِيمِ الْهِجْرِيِّ.",
+      "exampleMeaning": "Muharram is the first month in the Hijri calendar."
+    },
+    {
+      "word": "صَفَرٌ",
+      "reading": "ṣafarun",
+      "meaning": "Safar",
+      "example": "يَأْتِي صَفَرٌ بَعْدَ مُحَرَّمٍ.",
+      "exampleMeaning": "Safar comes after Muharram."
+    },
+    {
+      "word": "رَبِيعٌ الْأَوَّلُ",
+      "reading": "rabīʿu l-ʾawwalu",
+      "meaning": "Rabi al-Awwal",
+      "example": "يَذْكُرُ النَّاسُ رَبِيعًا الْأَوَّلَ فِي دُرُوسِ السِّيرَةِ.",
+      "exampleMeaning": "People mention Rabi al-Awwal in biography lessons."
+    },
+    {
+      "word": "رَبِيعٌ الْآخِرُ",
+      "reading": "rabīʿu l-ʾākhiru",
+      "meaning": "Rabi al-Thani / Rabi al-Akhir",
+      "example": "رَبِيعٌ الْآخِرُ يَأْتِي بَعْدَ رَبِيعٍ الْأَوَّلِ.",
+      "exampleMeaning": "Rabi al-Akhir comes after Rabi al-Awwal."
+    },
+    {
+      "word": "جُمَادَى الْأُولَى",
+      "reading": "jumādā l-ʾūlā",
+      "meaning": "Jumada al-Ula",
+      "example": "جُمَادَى الْأُولَى شَهْرٌ هِجْرِيٌّ.",
+      "exampleMeaning": "Jumada al-Ula is a Hijri month."
+    },
+    {
+      "word": "جُمَادَى الْآخِرَةُ",
+      "reading": "jumādā l-ʾākhiratu",
+      "meaning": "Jumada al-Akhira",
+      "example": "جُمَادَى الْآخِرَةُ تَسْبِقُ رَجَبًا.",
+      "exampleMeaning": "Jumada al-Akhira precedes Rajab."
+    },
+    {
+      "word": "رَجَبٌ",
+      "reading": "rajabun",
+      "meaning": "Rajab",
+      "example": "يَأْتِي رَجَبٌ قَبْلَ شَعْبَانَ.",
+      "exampleMeaning": "Rajab comes before Sha'ban."
+    },
+    {
+      "word": "شَعْبَانُ",
+      "reading": "shaʿbānu",
+      "meaning": "Sha'ban",
+      "example": "يَسْتَعِدُّ النَّاسُ فِي شَعْبَانَ لِرَمَضَانَ.",
+      "exampleMeaning": "People prepare in Sha'ban for Ramadan."
+    },
+    {
+      "word": "رَمَضَانُ",
+      "reading": "ramaḍānu",
+      "meaning": "Ramadan",
+      "example": "يَصُومُ كَثِيرٌ مِنَ الْمُسْلِمِينَ فِي رَمَضَانَ.",
+      "exampleMeaning": "Many Muslims fast in Ramadan."
+    },
+    {
+      "word": "شَوَّالٌ",
+      "reading": "shawwālun",
+      "meaning": "Shawwal",
+      "example": "يَأْتِي شَوَّالٌ بَعْدَ رَمَضَانَ.",
+      "exampleMeaning": "Shawwal comes after Ramadan."
+    },
+    {
+      "word": "ذُو الْقَعْدَةِ",
+      "reading": "dhū l-qaʿdati",
+      "meaning": "Dhu al-Qa'da",
+      "example": "ذُو الْقَعْدَةِ مِنَ الْأَشْهُرِ الْحُرُمِ.",
+      "exampleMeaning": "Dhu al-Qa'da is one of the sacred months."
+    },
+    {
+      "word": "ذُو الْحِجَّةِ",
+      "reading": "dhū l-ḥijjati",
+      "meaning": "Dhu al-Hijja",
+      "example": "يَقَعُ الْحَجُّ فِي ذِي الْحِجَّةِ.",
+      "exampleMeaning": "The pilgrimage occurs in Dhu al-Hijja."
+    },
+    {
+      "word": "بُرْجٌ",
+      "reading": "burjun",
+      "meaning": "zodiac sign / constellation",
+      "example": "سَأَلَ الطِّفْلُ عَنْ بُرْجٍ فِي السَّمَاءِ.",
+      "exampleMeaning": "The child asked about a constellation in the sky."
+    },
+    {
+      "word": "الْحَمَلُ",
+      "reading": "al-ḥamalu",
+      "meaning": "Aries",
+      "example": "الْحَمَلُ أَوَّلُ بُرْجٍ فِي الدَّائِرَةِ الْفَلَكِيَّةِ.",
+      "exampleMeaning": "Aries is the first sign in the zodiac circle."
+    },
+    {
+      "word": "الثَّوْرُ",
+      "reading": "ath-thawru",
+      "meaning": "Taurus",
+      "example": "الثَّوْرُ بُرْجٌ مَعْرُوفٌ فِي الرَّبِيعِ.",
+      "exampleMeaning": "Taurus is a known sign in spring."
+    },
+    {
+      "word": "الْجَوْزَاءُ",
+      "reading": "al-jawzāʾu",
+      "meaning": "Gemini",
+      "example": "الْجَوْزَاءُ بُرْجٌ يَرْمُزُ إِلَى التَّوْأَمَيْنِ.",
+      "exampleMeaning": "Gemini is a sign symbolizing twins."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "___ أَوَّلُ شَهْرٍ فِي التَّقْوِيمِ الْهِجْرِيِّ.",
+          "answer": "مُحَرَّمٌ",
+          "hint": "Muharram"
+        },
+        {
+          "sentence": "يَأْتِي ___ بَعْدَ مُحَرَّمٍ.",
+          "answer": "صَفَرٌ",
+          "hint": "Safar"
+        },
+        {
+          "sentence": "___ شَهْرٌ مَعْرُوفٌ فِي السِّيرَةِ.",
+          "answer": "رَبِيعٌ الْأَوَّلُ",
+          "hint": "Rabi al-Awwal"
+        },
+        {
+          "sentence": "___ يَأْتِي بَعْدَ رَبِيعٍ الْأَوَّلِ.",
+          "answer": "رَبِيعٌ الْآخِرُ",
+          "hint": "Rabi al-Akhir"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "items": [
+        {
+          "question": "What does ‘مُحَرَّمٌ’ mean?",
+          "options": [
+            "Safar",
+            "Muharram",
+            "Rabi al-Thani / Rabi al-Akhir",
+            "Jumada al-Ula"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What does ‘صَفَرٌ’ mean?",
+          "options": [
+            "Rabi al-Awwal",
+            "Safar",
+            "Jumada al-Ula",
+            "Jumada al-Akhira"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What does ‘رَبِيعٌ الْأَوَّلُ’ mean?",
+          "options": [
+            "Rabi al-Thani / Rabi al-Akhir",
+            "Rabi al-Awwal",
+            "Jumada al-Akhira",
+            "Rajab"
+          ],
+          "answer": 1
+        }
+      ]
+    }
+  ]
+}

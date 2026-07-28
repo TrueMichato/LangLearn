@@ -9,13 +9,14 @@ import { RU_NOUNS, RU_CASE_LABELS, type RuCaseName } from '../data/conjugations/
 import { RU_ADJECTIVES, RU_ADJ_CASE_LABELS, type RuAdjectiveCaseName } from '../data/conjugations/ru-adjectives';
 import { PT_VERBS, PT_FORM_LABELS, type PtFormName } from '../data/conjugations/pt-verbs';
 import { ES_VERBS, ES_FORM_LABELS, type EsFormName } from '../data/conjugations/es-verbs';
+import { AR_VERBS, AR_FORM_LABELS, type ArVerbFormName } from '../data/conjugations/ar-verbs';
 import { RO_VERBS, RO_FORM_LABELS, type RoFormName } from '../data/conjugations/ro-verbs';
 import { RO_NOUNS, RO_CASE_LABELS, type RoCaseName } from '../data/conjugations/ro-nouns';
 import { RO_ADJECTIVES, RO_ADJ_FORM_LABELS, type RoAdjFormName } from '../data/conjugations/ro-adjectives';
 import TileDrill, { type DrillQuestion } from '../components/drills/TileDrill';
 import TypeDrill from '../components/drills/TypeDrill';
 
-type Category = 'ja-verbs' | 'ru-verbs' | 'ru-nouns' | 'ru-adjectives' | 'pt-verbs' | 'es-verbs' | 'ro-verbs' | 'ro-nouns' | 'ro-adjectives';
+type Category = 'ja-verbs' | 'ru-verbs' | 'ru-nouns' | 'ru-adjectives' | 'pt-verbs' | 'es-verbs' | 'ar-verbs' | 'ro-verbs' | 'ro-nouns' | 'ro-adjectives';
 type DrillMode = 'tiles' | 'type';
 
 const CATEGORIES: Record<string, { value: Category; label: string }[]> = {
@@ -27,6 +28,7 @@ const CATEGORIES: Record<string, { value: Category; label: string }[]> = {
   ],
   pt: [{ value: 'pt-verbs', label: 'Verb Conjugation' }],
   es: [{ value: 'es-verbs', label: 'Verb Conjugation' }],
+  ar: [{ value: 'ar-verbs', label: 'Verb Conjugation' }],
   ro: [
     { value: 'ro-verbs', label: 'Verb Conjugation' },
     { value: 'ro-nouns', label: 'Noun Declension' },
@@ -34,7 +36,7 @@ const CATEGORIES: Record<string, { value: Category; label: string }[]> = {
   ],
 };
 
-const SUPPORTED_LANGUAGES = ['ja', 'ru', 'pt', 'es', 'ro'];
+const SUPPORTED_LANGUAGES = ['ja', 'ru', 'pt', 'es', 'ar', 'ro'];
 
 function shuffle<T>(arr: T[]): T[] {
   const a = [...arr];
@@ -61,6 +63,8 @@ function getFormOptions(category: Category): { value: string; label: string }[] 
       return Object.entries(PT_FORM_LABELS).map(([value, label]) => ({ value, label }));
     case 'es-verbs':
       return Object.entries(ES_FORM_LABELS).map(([value, label]) => ({ value, label }));
+    case 'ar-verbs':
+      return Object.entries(AR_FORM_LABELS).map(([value, label]) => ({ value, label }));
     case 'ro-verbs':
       return Object.entries(RO_FORM_LABELS).map(([value, label]) => ({ value, label }));
     case 'ro-nouns':
@@ -148,6 +152,18 @@ function buildQuestions(category: Category, selectedForms: string[]): DrillQuest
           prompt: `${verb.infinitive} (${verb.meaning}) → ${ES_FORM_LABELS[form]}`,
           correctAnswer: verb.conjugations[form],
           language: 'es',
+        });
+      }
+    }
+  } else if (category === 'ar-verbs') {
+    const forms = selectedForms as ArVerbFormName[];
+    for (const verb of AR_VERBS) {
+      for (const form of forms) {
+        if (verb.conjugations[form] === '—') continue;
+        questions.push({
+          prompt: `${verb.infinitive} (${verb.meaning}) → ${AR_FORM_LABELS[form]}`,
+          correctAnswer: verb.conjugations[form],
+          language: 'ar',
         });
       }
     }

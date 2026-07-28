@@ -1,0 +1,183 @@
+{
+  "id": "opposites",
+  "words": [
+    {
+      "word": "سَعِيدٌ",
+      "reading": "saʿīdun",
+      "meaning": "happy",
+      "example": "الطِّفْلُ سَعِيدٌ فِي الْحَدِيقَةِ.",
+      "exampleMeaning": "The child is happy in the garden."
+    },
+    {
+      "word": "حَزِينٌ",
+      "reading": "ḥazīnun",
+      "meaning": "sad",
+      "example": "الْوَلَدُ حَزِينٌ بَعْدَ السَّفَرِ.",
+      "exampleMeaning": "The boy is sad after the trip."
+    },
+    {
+      "word": "نَظِيفٌ",
+      "reading": "naẓīfun",
+      "meaning": "clean",
+      "example": "الْبَيْتُ نَظِيفٌ الْيَوْمَ.",
+      "exampleMeaning": "The house is clean today."
+    },
+    {
+      "word": "وَسِخٌ",
+      "reading": "wasikhun",
+      "meaning": "dirty",
+      "example": "الْحِذَاءُ وَسِخٌ بَعْدَ الْمَطَرِ.",
+      "exampleMeaning": "The shoe is dirty after the rain."
+    },
+    {
+      "word": "مَفْتُوحٌ",
+      "reading": "maftūḥun",
+      "meaning": "open",
+      "example": "الْبَابُ مَفْتُوحٌ.",
+      "exampleMeaning": "The door is open."
+    },
+    {
+      "word": "مُغْلَقٌ",
+      "reading": "mughlaqun",
+      "meaning": "closed",
+      "example": "الْمَتْجَرُ مُغْلَقٌ الآنَ.",
+      "exampleMeaning": "The store is closed now."
+    },
+    {
+      "word": "مُمْتَلِئٌ",
+      "reading": "mumtaliʾun",
+      "meaning": "full",
+      "example": "الْكُوبُ مُمْتَلِئٌ بِالْمَاءِ.",
+      "exampleMeaning": "The cup is full of water."
+    },
+    {
+      "word": "فَارِغٌ",
+      "reading": "fārighun",
+      "meaning": "empty",
+      "example": "الصُّنْدُوقُ فَارِغٌ.",
+      "exampleMeaning": "The box is empty."
+    },
+    {
+      "word": "قَوِيٌّ",
+      "reading": "qawiyyun",
+      "meaning": "strong",
+      "example": "الرَّجُلُ قَوِيٌّ.",
+      "exampleMeaning": "The man is strong."
+    },
+    {
+      "word": "ضَعِيفٌ",
+      "reading": "ḍaʿīfun",
+      "meaning": "weak",
+      "example": "الصَّوْتُ ضَعِيفٌ.",
+      "exampleMeaning": "The sound is weak."
+    },
+    {
+      "word": "غَنِيٌّ",
+      "reading": "ghaniyyun",
+      "meaning": "rich",
+      "example": "التَّاجِرُ غَنِيٌّ.",
+      "exampleMeaning": "The merchant is rich."
+    },
+    {
+      "word": "فَقِيرٌ",
+      "reading": "faqīrun",
+      "meaning": "poor",
+      "example": "الرَّجُلُ فَقِيرٌ وَلٰكِنَّهُ كَرِيمٌ.",
+      "exampleMeaning": "The man is poor, but he is generous."
+    },
+    {
+      "word": "عَالٍ",
+      "reading": "ʿālin",
+      "meaning": "high",
+      "example": "الصَّوْتُ عَالٍ جِدًّا.",
+      "exampleMeaning": "The sound is very loud."
+    },
+    {
+      "word": "مُنْخَفِضٌ",
+      "reading": "munkhafiḍun",
+      "meaning": "low",
+      "example": "السِّعْرُ مُنْخَفِضٌ الْيَوْمَ.",
+      "exampleMeaning": "The price is low today."
+    },
+    {
+      "word": "خَفِيفٌ",
+      "reading": "khafīfun",
+      "meaning": "lightweight",
+      "example": "الْكِيسُ خَفِيفٌ.",
+      "exampleMeaning": "The bag is light."
+    },
+    {
+      "word": "ثَقِيلٌ",
+      "reading": "thaqīlun",
+      "meaning": "heavy",
+      "example": "الْبَابُ ثَقِيلٌ.",
+      "exampleMeaning": "The door is heavy."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "الطِّفْلُ ___ فِي الْحَدِيقَةِ.",
+          "answer": "سَعِيدٌ",
+          "hint": "happy"
+        },
+        {
+          "sentence": "الْوَلَدُ ___ بَعْدَ السَّفَرِ.",
+          "answer": "حَزِينٌ",
+          "hint": "sad"
+        },
+        {
+          "sentence": "الْبَيْتُ ___ الْيَوْمَ.",
+          "answer": "نَظِيفٌ",
+          "hint": "clean"
+        },
+        {
+          "sentence": "الْحِذَاءُ ___ بَعْدَ الْمَطَرِ.",
+          "answer": "وَسِخٌ",
+          "hint": "dirty"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "items": [
+        {
+          "question": "What does ‘سَعِيدٌ’ mean?",
+          "options": [
+            "sad",
+            "happy",
+            "clean",
+            "dirty"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What does ‘حَزِينٌ’ mean?",
+          "options": [
+            "clean",
+            "sad",
+            "dirty",
+            "open"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What does ‘نَظِيفٌ’ mean?",
+          "options": [
+            "dirty",
+            "clean",
+            "open",
+            "closed"
+          ],
+          "answer": 1
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,159 @@
+{
+  "id": "gulf-directions-phrases",
+  "words": [
+    {
+      "word": "شْلُونِكْ",
+      "reading": "shlōnik",
+      "meaning": "how are you?",
+      "example": "شْلُونِكْ بَعْدَ السَّفَرْ؟",
+      "exampleMeaning": "How are you after the trip?"
+    },
+    {
+      "word": "وَيْنَ",
+      "reading": "wēn",
+      "meaning": "where",
+      "example": "وَيْنَ هُوَ الْفُنْدُقْ؟",
+      "exampleMeaning": "Where is the hotel?"
+    },
+    {
+      "word": "عَلَى طُولْ",
+      "reading": "ʿalā ṭūl",
+      "meaning": "straight ahead",
+      "example": "امْشِ عَلَى طُولْ إِلَى الْإِشَارَةْ.",
+      "exampleMeaning": "Go straight ahead to the traffic light."
+    },
+    {
+      "word": "يَمِينْ",
+      "reading": "yamīn",
+      "meaning": "right",
+      "example": "لُفَّ يَمِينْ بَعْدَ الْمَحَطَّةْ.",
+      "exampleMeaning": "Turn right after the station."
+    },
+    {
+      "word": "يِسَارْ",
+      "reading": "yisār",
+      "meaning": "left",
+      "example": "خُذْ يِسَارْ عِنْدَ الدُّوَّارْ.",
+      "exampleMeaning": "Take a left at the roundabout."
+    },
+    {
+      "word": "قَرِيبْ",
+      "reading": "qarīb",
+      "meaning": "near",
+      "example": "الْمَطْعَمْ قَرِيبْ مِنْ هِنَا.",
+      "exampleMeaning": "The restaurant is near here."
+    },
+    {
+      "word": "بَعِيدْ",
+      "reading": "baʿīd",
+      "meaning": "far",
+      "example": "الْمَطَارْ بَعِيدْ عَنِ الْمَرْكَزْ.",
+      "exampleMeaning": "The airport is far from the center."
+    },
+    {
+      "word": "وُقِّفْ هِنِي",
+      "reading": "waggif hinī",
+      "meaning": "stop here",
+      "example": "وُقِّفْ هِنِي عِنْدَ الْبَابْ.",
+      "exampleMeaning": "Stop here by the door."
+    },
+    {
+      "word": "كَمْ الْأُجْرَةْ؟",
+      "reading": "kam il-ujra?",
+      "meaning": "how much is the fare?",
+      "example": "كَمْ الْأُجْرَةْ إِلَى السُّوقْ؟",
+      "exampleMeaning": "How much is the fare to the market?"
+    },
+    {
+      "word": "بَاخِذْ تَكْسِي",
+      "reading": "bākhidh taksī",
+      "meaning": "I will take a taxi",
+      "example": "بَاخِذْ تَكْسِي بَعْدَ الْعَشَاءْ.",
+      "exampleMeaning": "I will take a taxi after dinner."
+    },
+    {
+      "word": "أَبِي أَرُوحْ",
+      "reading": "abī arūḥ",
+      "meaning": "I want to go",
+      "example": "أَبِي أَرُوحْ لِلسُّوقْ الْقَدِيمْ.",
+      "exampleMeaning": "I want to go to the old market."
+    },
+    {
+      "word": "دَقِيقَةْ بَسْ",
+      "reading": "daqīqa bas",
+      "meaning": "just a minute",
+      "example": "دَقِيقَةْ بَسْ، بِجِيبُ الْحَقِيبَةْ.",
+      "exampleMeaning": "Just a minute, I will bring the bag."
+    },
+    {
+      "word": "مَا عَلَيْكْ أَمْرْ",
+      "reading": "mā ʿalēk amr",
+      "meaning": "please / if you do not mind",
+      "example": "مَا عَلَيْكْ أَمْرْ، خُذْنِي لِلْبَحْرْ.",
+      "exampleMeaning": "Please, take me to the sea."
+    },
+    {
+      "word": "تِقْدَرْ؟",
+      "reading": "tigdir?",
+      "meaning": "can you?",
+      "example": "تِقْدَرْ تِنْتَظِرْ خَمْسْ دَقَائِقْ؟",
+      "exampleMeaning": "Can you wait five minutes?"
+    },
+    {
+      "word": "مَشْوَارْ",
+      "reading": "mashwār",
+      "meaning": "errand / ride",
+      "example": "عِنْدِي مَشْوَارْ قَصِيرْ فِي الْمَدِينَةْ.",
+      "exampleMeaning": "I have a short errand in the city."
+    },
+    {
+      "word": "زَحْمَةْ",
+      "reading": "zaḥma",
+      "meaning": "traffic / crowding",
+      "example": "الشَّارِعْ فِيهِ زَحْمَةْ كَبِيرَةْ.",
+      "exampleMeaning": "The street has heavy traffic."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "___ هُوَ الْفُنْدُقْ؟",
+          "answer": "وَيْنَ",
+          "hint": "where"
+        },
+        {
+          "sentence": "امْشِ ___ إِلَى الْإِشَارَةْ.",
+          "answer": "عَلَى طُولْ",
+          "hint": "straight ahead"
+        },
+        {
+          "sentence": "___ عِنْدَ الْبَابْ.",
+          "answer": "وُقِّفْ هِنِي",
+          "hint": "stop here"
+        },
+        {
+          "sentence": "___ لِلسُّوقْ الْقَدِيمْ.",
+          "answer": "أَبِي أَرُوحْ",
+          "hint": "I want to go"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "In Gulf Arabic, what does ‘مَا عَلَيْكْ أَمْرْ’ express?",
+      "options": [
+        "please / if you do not mind",
+        "left",
+        "traffic",
+        "fare"
+      ],
+      "answer": 0
+    }
+  ]
+}

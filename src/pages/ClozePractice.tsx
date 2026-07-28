@@ -3,7 +3,8 @@ import { Link } from 'react-router-dom';
 import { useSettingsStore } from '../stores/settingsStore';
 import { useXPStore } from '../stores/xpStore';
 import { getLanguageLabel } from '../lib/languages';
-import { jaClozeSentences, ruClozeSentences, ptClozeSentences, esClozeSentences, roClozeSentences } from '../data/cloze';
+import { isRTL } from '../lib/rtl';
+import { jaClozeSentences, ruClozeSentences, ptClozeSentences, esClozeSentences, arClozeSentences, roClozeSentences } from '../data/cloze';
 import type { ClozeSentence } from '../data/cloze';
 import { speak } from '../lib/tts';
 
@@ -19,6 +20,7 @@ function getClozeSentences(lang: string): ClozeSentence[] {
   if (lang === 'ru') return ruClozeSentences;
   if (lang === 'pt') return ptClozeSentences;
   if (lang === 'es') return esClozeSentences;
+  if (lang === 'ar') return arClozeSentences;
   if (lang === 'ro') return roClozeSentences;
   return [];
 }
@@ -43,7 +45,7 @@ function buildClozeDisplay(sentence: string, blankedWord: string) {
 
 export default function ClozePracticePage() {
   const activeLanguages = useSettingsStore((s) => s.activeLanguages);
-  const supportedLanguages = activeLanguages.filter((l) => l === 'ja' || l === 'ru' || l === 'pt' || l === 'es');
+  const supportedLanguages = activeLanguages.filter((l) => l === 'ja' || l === 'ru' || l === 'pt' || l === 'es' || l === 'ar');
 
   const [phase, setPhase] = useState<Phase>('setup');
   const [language, setLanguage] = useState(supportedLanguages[0] ?? 'ja');
@@ -265,7 +267,7 @@ export default function ClozePracticePage() {
         </p>
 
         {/* Cloze sentence */}
-        <p className="text-lg text-gray-800 dark:text-gray-100 text-center leading-relaxed">
+        <p className="text-lg text-gray-800 dark:text-gray-100 text-center leading-relaxed" dir={isRTL(language) ? 'rtl' : undefined}>
           {before}
           <span className={`inline-block border-b-2 px-3 min-w-[60px] font-semibold ${
             answered
@@ -326,6 +328,7 @@ export default function ClozePracticePage() {
               autoComplete="off"
               autoCorrect="off"
               autoCapitalize="off"
+              dir={isRTL(language) ? 'rtl' : undefined}
               spellCheck={false}
             />
             <button

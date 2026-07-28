@@ -1,0 +1,183 @@
+{
+  "id": "household-chores",
+  "words": [
+    {
+      "word": "يُنَظِّفُ",
+      "reading": "yunaẓẓifu",
+      "meaning": "to clean",
+      "example": "يُنَظِّفُ الْأَبُ الْمَطْبَخَ كُلَّ مَسَاءٍ.",
+      "exampleMeaning": "The father cleans the kitchen every evening."
+    },
+    {
+      "word": "يَغْسِلُ",
+      "reading": "yaghsilu",
+      "meaning": "to wash",
+      "example": "يَغْسِلُ الْوَلَدُ الصُّحُونَ بَعْدَ الْعَشَاءِ.",
+      "exampleMeaning": "The boy washes the dishes after dinner."
+    },
+    {
+      "word": "يَكْنُسُ",
+      "reading": "yaknusu",
+      "meaning": "to sweep",
+      "example": "يَكْنُسُ الْجَدُّ الْفِنَاءَ فِي الصَّبَاحِ.",
+      "exampleMeaning": "The grandfather sweeps the courtyard in the morning."
+    },
+    {
+      "word": "يَمْسَحُ",
+      "reading": "yamsaḥu",
+      "meaning": "to wipe / mop",
+      "example": "يَمْسَحُ الْأَخُ الْأَرْضَ بِمِنْشَفَةٍ.",
+      "exampleMeaning": "The brother wipes the floor with a towel."
+    },
+    {
+      "word": "يُرَتِّبُ",
+      "reading": "yurattibu",
+      "meaning": "to tidy / arrange",
+      "example": "يُرَتِّبُ الطِّفْلُ غُرْفَتَهُ قَبْلَ النَّوْمِ.",
+      "exampleMeaning": "The child tidies his room before sleep."
+    },
+    {
+      "word": "يَطْبُخُ",
+      "reading": "yaṭbukhu",
+      "meaning": "to cook",
+      "example": "يَطْبُخُ الْأَبُ حَسَاءً خَفِيفًا.",
+      "exampleMeaning": "The father cooks a light soup."
+    },
+    {
+      "word": "يُعِدُّ",
+      "reading": "yuʿiddu",
+      "meaning": "to prepare",
+      "example": "يُعِدُّ الْأَخُ الطَّاوِلَةَ لِلْغَدَاءِ.",
+      "exampleMeaning": "The brother prepares the table for lunch."
+    },
+    {
+      "word": "يَطْوِي",
+      "reading": "yaṭwī",
+      "meaning": "to fold",
+      "example": "يَطْوِي الْوَلَدُ الْمَلَابِسَ النَّظِيفَةَ.",
+      "exampleMeaning": "The boy folds the clean clothes."
+    },
+    {
+      "word": "يَكْوِي",
+      "reading": "yakwī",
+      "meaning": "to iron",
+      "example": "يَكْوِي الْأَبُ الْقَمِيصَ بِحَذَرٍ.",
+      "exampleMeaning": "The father irons the shirt carefully."
+    },
+    {
+      "word": "يُفْرِغُ",
+      "reading": "yufrighu",
+      "meaning": "to empty",
+      "example": "يُفْرِغُ الْوَلَدُ سَلَّةَ الْقُمَامَةِ.",
+      "exampleMeaning": "The boy empties the trash basket."
+    },
+    {
+      "word": "يُصْلِحُ",
+      "reading": "yuṣliḥu",
+      "meaning": "to fix / repair",
+      "example": "يُصْلِحُ الْجَارُ الْبَابَ الْمَكْسُورَ.",
+      "exampleMeaning": "The neighbor fixes the broken door."
+    },
+    {
+      "word": "يَسْقِي",
+      "reading": "yasqī",
+      "meaning": "to water",
+      "example": "يَسْقِي الْوَلَدُ النَّبَاتَاتِ فِي الشُّرْفَةِ.",
+      "exampleMeaning": "The boy waters the plants on the balcony."
+    },
+    {
+      "word": "يَجْمَعُ",
+      "reading": "yajmaʿu",
+      "meaning": "to collect / gather",
+      "example": "يَجْمَعُ الطِّفْلُ الْأَلْعَابَ مِنَ الْأَرْضِ.",
+      "exampleMeaning": "The child gathers the toys from the floor."
+    },
+    {
+      "word": "يَرْمِي",
+      "reading": "yarmī",
+      "meaning": "to throw away",
+      "example": "يَرْمِي الْأَبُ الْقُمَامَةَ فِي الْحَاوِيَةِ.",
+      "exampleMeaning": "The father throws the trash into the bin."
+    },
+    {
+      "word": "يُغَيِّرُ",
+      "reading": "yughayyiru",
+      "meaning": "to change",
+      "example": "يُغَيِّرُ الْأَبُ الْمِصْبَاحَ الْقَدِيمَ.",
+      "exampleMeaning": "The father changes the old light bulb."
+    },
+    {
+      "word": "يُطْفِئُ",
+      "reading": "yuṭfiʾu",
+      "meaning": "to turn off",
+      "example": "يُطْفِئُ الْوَلَدُ الْأَنْوَارَ قَبْلَ النَّوْمِ.",
+      "exampleMeaning": "The boy turns off the lights before sleep."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "___ الْأَبُ الْمَطْبَخَ كُلَّ مَسَاءٍ.",
+          "answer": "يُنَظِّفُ",
+          "hint": "to clean"
+        },
+        {
+          "sentence": "___ الْوَلَدُ الصُّحُونَ بَعْدَ الْعَشَاءِ.",
+          "answer": "يَغْسِلُ",
+          "hint": "to wash"
+        },
+        {
+          "sentence": "___ الْجَدُّ الْفِنَاءَ فِي الصَّبَاحِ.",
+          "answer": "يَكْنُسُ",
+          "hint": "to sweep"
+        },
+        {
+          "sentence": "___ الْأَخُ الْأَرْضَ بِمِنْشَفَةٍ.",
+          "answer": "يَمْسَحُ",
+          "hint": "to wipe / mop"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "items": [
+        {
+          "question": "What does ‘يُنَظِّفُ’ mean?",
+          "options": [
+            "to wash",
+            "to clean",
+            "to sweep",
+            "to wipe / mop"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What does ‘يَغْسِلُ’ mean?",
+          "options": [
+            "to sweep",
+            "to wash",
+            "to wipe / mop",
+            "to tidy / arrange"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What does ‘يَكْنُسُ’ mean?",
+          "options": [
+            "to wipe / mop",
+            "to sweep",
+            "to tidy / arrange",
+            "to cook"
+          ],
+          "answer": 1
+        }
+      ]
+    }
+  ]
+}

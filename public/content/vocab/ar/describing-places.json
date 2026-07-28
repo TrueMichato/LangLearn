@@ -1,0 +1,183 @@
+{
+  "id": "describing-places",
+  "words": [
+    {
+      "word": "وَاسِعٌ",
+      "reading": "wāsiʿun",
+      "meaning": "spacious / wide",
+      "example": "الْبَهْوُ وَاسِعٌ وَمُشْرِقٌ.",
+      "exampleMeaning": "The lobby is spacious and bright."
+    },
+    {
+      "word": "ضَيِّقٌ",
+      "reading": "ḍayyiqun",
+      "meaning": "narrow / cramped",
+      "example": "الْمَمَرُّ ضَيِّقٌ بَيْنَ الْغُرَفِ.",
+      "exampleMeaning": "The hallway is narrow between the rooms."
+    },
+    {
+      "word": "مُزْدَحِمٌ",
+      "reading": "muzdaḥimun",
+      "meaning": "crowded",
+      "example": "الْمَيْدَانُ مُزْدَحِمٌ فِي الْمَسَاءِ.",
+      "exampleMeaning": "The square is crowded in the evening."
+    },
+    {
+      "word": "هَادِئٌ",
+      "reading": "hādiʾun",
+      "meaning": "quiet",
+      "example": "الْحَيُّ هَادِئٌ لَيْلًا.",
+      "exampleMeaning": "The neighborhood is quiet at night."
+    },
+    {
+      "word": "نَظِيفٌ",
+      "reading": "naẓīfun",
+      "meaning": "clean",
+      "example": "الْمَطْبَخُ نَظِيفٌ جِدًّا.",
+      "exampleMeaning": "The kitchen is very clean."
+    },
+    {
+      "word": "قَدِيمٌ",
+      "reading": "qadīmun",
+      "meaning": "old / ancient",
+      "example": "هٰذَا الْمَسْجِدُ قَدِيمٌ.",
+      "exampleMeaning": "This mosque is old."
+    },
+    {
+      "word": "حَدِيثٌ",
+      "reading": "ḥadīthun",
+      "meaning": "modern / new",
+      "example": "الْمَكْتَبُ حَدِيثٌ وَمُرَتَّبٌ.",
+      "exampleMeaning": "The office is modern and tidy."
+    },
+    {
+      "word": "مُضَاءٌ",
+      "reading": "muḍāʾun",
+      "meaning": "well-lit / illuminated",
+      "example": "الْمَدْخَلُ مُضَاءٌ بِمَصَابِيحَ جَدِيدَةٍ.",
+      "exampleMeaning": "The entrance is lit with new lamps."
+    },
+    {
+      "word": "مُظْلِمٌ",
+      "reading": "muẓlimun",
+      "meaning": "dark",
+      "example": "الْقَبْوُ مُظْلِمٌ قَلِيلًا.",
+      "exampleMeaning": "The basement is a little dark."
+    },
+    {
+      "word": "آمِنٌ",
+      "reading": "ʾāminun",
+      "meaning": "safe",
+      "example": "الشَّارِعُ آمِنٌ لِلْمُشَاةِ.",
+      "exampleMeaning": "The street is safe for pedestrians."
+    },
+    {
+      "word": "قَرِيبٌ",
+      "reading": "qarībun",
+      "meaning": "near / nearby",
+      "example": "الْمَسْجِدُ قَرِيبٌ مِنَ الْفُنْدُقِ.",
+      "exampleMeaning": "The mosque is near the hotel."
+    },
+    {
+      "word": "بَعِيدٌ",
+      "reading": "baʿīdun",
+      "meaning": "far",
+      "example": "الْمَطَارُ بَعِيدٌ عَنِ الْمَرْكَزِ.",
+      "exampleMeaning": "The airport is far from the center."
+    },
+    {
+      "word": "مُرِيحٌ",
+      "reading": "murīḥun",
+      "meaning": "comfortable",
+      "example": "الْمَقْعَدُ مُرِيحٌ لِلْقِرَاءَةِ.",
+      "exampleMeaning": "The seat is comfortable for reading."
+    },
+    {
+      "word": "مُنَظَّمٌ",
+      "reading": "munaẓẓamun",
+      "meaning": "organized",
+      "example": "الْمَبْنَى مُنَظَّمٌ مِنَ الدَّاخِلِ.",
+      "exampleMeaning": "The building is organized from the inside."
+    },
+    {
+      "word": "مُتَعَدِّدُ الطَّوَابِقِ",
+      "reading": "mutaʿaddidu ṭ-ṭawābiqi",
+      "meaning": "multi-story",
+      "example": "الْفُنْدُقُ مُتَعَدِّدُ الطَّوَابِقِ.",
+      "exampleMeaning": "The hotel is multi-story."
+    },
+    {
+      "word": "مُزَيَّنٌ",
+      "reading": "muzayyanun",
+      "meaning": "decorated",
+      "example": "الْمَطْعَمُ مُزَيَّنٌ بِالْأَلْوَانِ.",
+      "exampleMeaning": "The restaurant is decorated with colors."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "الْبَهْوُ ___ وَمُشْرِقٌ.",
+          "answer": "وَاسِعٌ",
+          "hint": "spacious / wide"
+        },
+        {
+          "sentence": "الْمَمَرُّ ___ بَيْنَ الْغُرَفِ.",
+          "answer": "ضَيِّقٌ",
+          "hint": "narrow / cramped"
+        },
+        {
+          "sentence": "الْمَيْدَانُ ___ فِي الْمَسَاءِ.",
+          "answer": "مُزْدَحِمٌ",
+          "hint": "crowded"
+        },
+        {
+          "sentence": "الْحَيُّ ___ لَيْلًا.",
+          "answer": "هَادِئٌ",
+          "hint": "quiet"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "items": [
+        {
+          "question": "What does ‘وَاسِعٌ’ mean?",
+          "options": [
+            "narrow / cramped",
+            "spacious / wide",
+            "crowded",
+            "quiet"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What does ‘ضَيِّقٌ’ mean?",
+          "options": [
+            "crowded",
+            "narrow / cramped",
+            "clean",
+            "modern / new"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What does ‘مُزْدَحِمٌ’ mean?",
+          "options": [
+            "quiet",
+            "crowded",
+            "old / ancient",
+            "well-lit"
+          ],
+          "answer": 1
+        }
+      ]
+    }
+  ]
+}

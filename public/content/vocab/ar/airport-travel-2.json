@@ -1,0 +1,183 @@
+{
+  "id": "airport-travel-2",
+  "words": [
+    {
+      "word": "بَطَاقَةُ الصُّعُودِ",
+      "reading": "biṭāqatu ṣ-ṣuʿūdi",
+      "meaning": "boarding pass",
+      "example": "أَظْهَرْتُ بَطَاقَةَ الصُّعُودِ عِنْدَ الْبَوَّابَةِ.",
+      "exampleMeaning": "I showed the boarding pass at the gate."
+    },
+    {
+      "word": "جَوَازُ السَّفَرِ",
+      "reading": "jawāzu s-safari",
+      "meaning": "passport",
+      "example": "نَسِيتُ جَوَازَ السَّفَرِ فِي الْحَقِيبَةِ.",
+      "exampleMeaning": "I forgot the passport in the bag."
+    },
+    {
+      "word": "تَأْشِيرَةُ الدُّخُولِ",
+      "reading": "taʾshīratu d-dukhūli",
+      "meaning": "entry visa",
+      "example": "تَحَقَّقَ الضَّابِطُ مِنْ تَأْشِيرَةِ الدُّخُولِ.",
+      "exampleMeaning": "The officer checked the entry visa."
+    },
+    {
+      "word": "مَكْتَبُ الْجَوَازَاتِ",
+      "reading": "maktabu l-jawāzāti",
+      "meaning": "passport-control office",
+      "example": "وَقَفْنَا أَمَامَ مَكْتَبِ الْجَوَازَاتِ نِصْفَ سَاعَةٍ.",
+      "exampleMeaning": "We stood in front of the passport-control office for half an hour."
+    },
+    {
+      "word": "ضَابِطُ الْحُدُودِ",
+      "reading": "ḍābiṭu l-ḥudūdi",
+      "meaning": "border officer",
+      "example": "سَأَلَنِي ضَابِطُ الْحُدُودِ عَنْ سَبَبِ الزِّيَارَةِ.",
+      "exampleMeaning": "The border officer asked me about the reason for the visit."
+    },
+    {
+      "word": "خَتْمُ الدُّخُولِ",
+      "reading": "khatmu d-dukhūli",
+      "meaning": "entry stamp",
+      "example": "وُضِعَ خَتْمُ الدُّخُولِ عَلَى الصَّفْحَةِ الْأُولَى.",
+      "exampleMeaning": "The entry stamp was placed on the first page."
+    },
+    {
+      "word": "تَصْرِيحُ الْإِقَامَةِ",
+      "reading": "taṣrīḥu l-ʾiqāmati",
+      "meaning": "residence permit",
+      "example": "يَحْمِلُ الطَّالِبُ تَصْرِيحَ الْإِقَامَةِ مَعَهُ.",
+      "exampleMeaning": "The student carries the residence permit with him."
+    },
+    {
+      "word": "الْأَمْتِعَةُ",
+      "reading": "al-ʾamtiʿatu",
+      "meaning": "luggage",
+      "example": "وَصَلَتِ الْأَمْتِعَةُ بَعْدَ الرِّحْلَةِ.",
+      "exampleMeaning": "The luggage arrived after the flight."
+    },
+    {
+      "word": "الْحَقِيبَةُ الْيَدَوِيَّةُ",
+      "reading": "al-ḥaqībatu l-yadawiyyatu",
+      "meaning": "carry-on bag",
+      "example": "الْحَقِيبَةُ الْيَدَوِيَّةُ فَوْقَ الْمَقْعَدِ.",
+      "exampleMeaning": "The carry-on bag is above the seat."
+    },
+    {
+      "word": "شَرِيطُ الْأَمْتِعَةِ",
+      "reading": "sharīṭu l-ʾamtiʿati",
+      "meaning": "baggage carousel",
+      "example": "انْتَظَرْنَا عِنْدَ شَرِيطِ الْأَمْتِعَةِ.",
+      "exampleMeaning": "We waited at the baggage carousel."
+    },
+    {
+      "word": "رَحْلَةٌ مُؤَخَّرَةٌ",
+      "reading": "riḥlatun muʾakhkharatun",
+      "meaning": "delayed flight",
+      "example": "أُعْلِنَ عَنْ رَحْلَةٍ مُؤَخَّرَةٍ بِسَبَبِ الضَّبَابِ.",
+      "exampleMeaning": "A delayed flight was announced because of the fog."
+    },
+    {
+      "word": "بَوَّابَةُ الْمُغَادَرَةِ",
+      "reading": "bawwābatu l-mughādarati",
+      "meaning": "departure gate",
+      "example": "تَغَيَّرَتْ بَوَّابَةُ الْمُغَادَرَةِ فِي اللَّحْظَةِ الْأَخِيرَةِ.",
+      "exampleMeaning": "The departure gate changed at the last moment."
+    },
+    {
+      "word": "نُقْطَةُ التَّفْتِيشِ",
+      "reading": "nuqṭatu t-taftīshi",
+      "meaning": "security checkpoint",
+      "example": "مَرَرْنَا مِنْ نُقْطَةِ التَّفْتِيشِ بِسُرْعَةٍ.",
+      "exampleMeaning": "We passed through the security checkpoint quickly."
+    },
+    {
+      "word": "الْجُمْرُكُ",
+      "reading": "al-jumruku",
+      "meaning": "customs",
+      "example": "فَتَحَ الْمُسَافِرُ حَقِيبَتَهُ فِي الْجُمْرُكِ.",
+      "exampleMeaning": "The traveler opened his bag at customs."
+    },
+    {
+      "word": "إِقْرَارٌ جُمْرُكِيٌّ",
+      "reading": "ʾiqrārun jumrukiyyun",
+      "meaning": "customs declaration",
+      "example": "مَلَأْتُ إِقْرَارًا جُمْرُكِيًّا قَبْلَ الْخُرُوجِ.",
+      "exampleMeaning": "I filled out a customs declaration before leaving."
+    },
+    {
+      "word": "تَذْكِرَةُ الْعَوْدَةِ",
+      "reading": "tadhkiratu l-ʿawdati",
+      "meaning": "return ticket",
+      "example": "طَلَبَ الْمَوْظَّفُ رُؤْيَةَ تَذْكِرَةِ الْعَوْدَةِ.",
+      "exampleMeaning": "The employee asked to see the return ticket."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "___ مَطْلُوبَةٌ عِنْدَ الْبَوَّابَةِ.",
+          "answer": "بَطَاقَةُ الصُّعُودِ",
+          "hint": "boarding pass"
+        },
+        {
+          "sentence": "___ فِي الْحَقِيبَةِ الصَّغِيرَةِ.",
+          "answer": "جَوَازُ السَّفَرِ",
+          "hint": "passport"
+        },
+        {
+          "sentence": "___ صَالِحَةٌ لِشَهْرَيْنِ.",
+          "answer": "تَأْشِيرَةُ الدُّخُولِ",
+          "hint": "entry visa"
+        },
+        {
+          "sentence": "___ مُزْدَحِمٌ صَبَاحًا.",
+          "answer": "مَكْتَبُ الْجَوَازَاتِ",
+          "hint": "passport-control office"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "items": [
+        {
+          "question": "What does ‘بَطَاقَةُ الصُّعُودِ’ mean?",
+          "options": [
+            "passport",
+            "boarding pass",
+            "entry visa",
+            "passport-control office"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What does ‘جَوَازُ السَّفَرِ’ mean?",
+          "options": [
+            "boarding pass",
+            "passport",
+            "entry visa",
+            "passport-control office"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What does ‘تَأْشِيرَةُ الدُّخُولِ’ mean?",
+          "options": [
+            "boarding pass",
+            "entry visa",
+            "passport",
+            "passport-control office"
+          ],
+          "answer": 1
+        }
+      ]
+    }
+  ]
+}

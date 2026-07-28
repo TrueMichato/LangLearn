@@ -1,0 +1,183 @@
+{
+  "id": "tourism-sightseeing",
+  "words": [
+    {
+      "word": "مَعْلَمٌ",
+      "reading": "maʿlamun",
+      "meaning": "landmark",
+      "example": "مَعْلَمٌ تَارِيخِيٌّ يَجْذِبُ الزُّوَّارَ.",
+      "exampleMeaning": "A historical landmark attracts visitors."
+    },
+    {
+      "word": "مَتْحَفٌ",
+      "reading": "matḥafun",
+      "meaning": "museum",
+      "example": "مَتْحَفٌ قَدِيمٌ يَعْرِضُ لَوْحَاتٍ نَادِرَةً.",
+      "exampleMeaning": "An old museum displays rare paintings."
+    },
+    {
+      "word": "دَلِيلٌ سِيَاحِيٌّ",
+      "reading": "dalīlun siyāḥiyyun",
+      "meaning": "tour guide",
+      "example": "دَلِيلٌ سِيَاحِيٌّ يَشْرَحُ تَارِيخَ الْقَلْعَةِ.",
+      "exampleMeaning": "A tour guide explains the history of the castle."
+    },
+    {
+      "word": "جَوْلَةٌ",
+      "reading": "jawlatun",
+      "meaning": "tour",
+      "example": "جَوْلَةٌ قَصِيرَةٌ تَبْدَأُ عِنْدَ الْمَيْدَانِ.",
+      "exampleMeaning": "A short tour begins at the square."
+    },
+    {
+      "word": "تَذْكِرَةٌ",
+      "reading": "tadhkiratun",
+      "meaning": "ticket",
+      "example": "تَذْكِرَةٌ إِلِكْتُرُونِيَّةٌ تُسَهِّلُ الدُّخُولَ.",
+      "exampleMeaning": "An electronic ticket makes entry easier."
+    },
+    {
+      "word": "خَرِيطَةٌ",
+      "reading": "kharīṭatun",
+      "meaning": "map",
+      "example": "خَرِيطَةٌ مُفَصَّلَةٌ تُظْهِرُ الْمَسَارَ.",
+      "exampleMeaning": "A detailed map shows the route."
+    },
+    {
+      "word": "فُنْدُقٌ",
+      "reading": "funduqun",
+      "meaning": "hotel",
+      "example": "فُنْدُقٌ هَادِئٌ يَقَعُ قُرْبَ الْبَحْرِ.",
+      "exampleMeaning": "A quiet hotel is located near the sea."
+    },
+    {
+      "word": "مَنْظَرٌ",
+      "reading": "manẓarun",
+      "meaning": "view / scene",
+      "example": "مَنْظَرٌ رَائِعٌ يَظْهَرُ مِنَ الْجَبَلِ.",
+      "exampleMeaning": "A wonderful view appears from the mountain."
+    },
+    {
+      "word": "شَاطِئٌ",
+      "reading": "shāṭiʾun",
+      "meaning": "beach",
+      "example": "شَاطِئٌ نَظِيفٌ يُنَاسِبُ الْعَائِلَاتِ.",
+      "exampleMeaning": "A clean beach suits families."
+    },
+    {
+      "word": "قَلْعَةٌ",
+      "reading": "qalʿatun",
+      "meaning": "castle / fortress",
+      "example": "قَلْعَةٌ حَجَرِيَّةٌ تَقِفُ فَوْقَ التَّلِّ.",
+      "exampleMeaning": "A stone castle stands above the hill."
+    },
+    {
+      "word": "سَاحَةٌ",
+      "reading": "sāḥatun",
+      "meaning": "public square",
+      "example": "سَاحَةٌ وَاسِعَةٌ تَمْتَلِئُ بِالْمُوسِيقَى.",
+      "exampleMeaning": "A wide square fills with music."
+    },
+    {
+      "word": "تِمْثَالٌ",
+      "reading": "timthālun",
+      "meaning": "statue",
+      "example": "تِمْثَالٌ بُرُونْزِيٌّ يَقِفُ أَمَامَ الْمَتْحَفِ.",
+      "exampleMeaning": "A bronze statue stands in front of the museum."
+    },
+    {
+      "word": "مَسَارٌ",
+      "reading": "masārun",
+      "meaning": "route / trail",
+      "example": "مَسَارٌ مُشَجَّرٌ يَقُودُ إِلَى الْحَدِيقَةِ.",
+      "exampleMeaning": "A tree-lined path leads to the garden."
+    },
+    {
+      "word": "زَائِرٌ",
+      "reading": "zāʾirun",
+      "meaning": "visitor",
+      "example": "زَائِرٌ فَضُولِيٌّ يَسْأَلُ كَثِيرًا.",
+      "exampleMeaning": "A curious visitor asks a lot."
+    },
+    {
+      "word": "حَجْزٌ",
+      "reading": "ḥajzun",
+      "meaning": "reservation",
+      "example": "حَجْزٌ مُبَكِّرٌ يَضْمَنُ غُرْفَةً جَيِّدَةً.",
+      "exampleMeaning": "An early reservation guarantees a good room."
+    },
+    {
+      "word": "تَذْكَارٌ",
+      "reading": "tadhkārun",
+      "meaning": "souvenir",
+      "example": "تَذْكَارٌ صَغِيرٌ يُذَكِّرُنَا بِالسَّفَرِ.",
+      "exampleMeaning": "A small souvenir reminds us of the trip."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "___ تَارِيخِيٌّ يَجْذِبُ الزُّوَّارَ.",
+          "answer": "مَعْلَمٌ",
+          "hint": "landmark"
+        },
+        {
+          "sentence": "___ قَدِيمٌ يَعْرِضُ لَوْحَاتٍ نَادِرَةً.",
+          "answer": "مَتْحَفٌ",
+          "hint": "museum"
+        },
+        {
+          "sentence": "___ يَشْرَحُ تَارِيخَ الْقَلْعَةِ.",
+          "answer": "دَلِيلٌ سِيَاحِيٌّ",
+          "hint": "tour guide"
+        },
+        {
+          "sentence": "___ قَصِيرَةٌ تَبْدَأُ عِنْدَ الْمَيْدَانِ.",
+          "answer": "جَوْلَةٌ",
+          "hint": "tour"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "items": [
+        {
+          "question": "What does ‘مَعْلَمٌ’ mean?",
+          "options": [
+            "museum",
+            "landmark",
+            "tour guide",
+            "tour"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What does ‘مَتْحَفٌ’ mean?",
+          "options": [
+            "tour guide",
+            "museum",
+            "tour",
+            "ticket"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What does ‘دَلِيلٌ سِيَاحِيٌّ’ mean?",
+          "options": [
+            "tour",
+            "tour guide",
+            "ticket",
+            "map"
+          ],
+          "answer": 1
+        }
+      ]
+    }
+  ]
+}

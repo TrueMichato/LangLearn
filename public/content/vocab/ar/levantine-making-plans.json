@@ -1,0 +1,159 @@
+{
+  "id": "levantine-making-plans",
+  "words": [
+    {
+      "word": "بَدِّي أَطْلَعْ",
+      "reading": "baddī aṭlaʿ",
+      "meaning": "I want to go out",
+      "example": "بَدِّي أَطْلَعْ مَسَا الْيَوْمْ.",
+      "exampleMeaning": "I want to go out this evening."
+    },
+    {
+      "word": "فَاضِي؟",
+      "reading": "fāḍī?",
+      "meaning": "are you free?",
+      "example": "إِنْتَ فَاضِي؟ بَدْنَا نِحْكِي شْوَيّْ.",
+      "exampleMeaning": "Are you free? We want to talk a little."
+    },
+    {
+      "word": "نِتْقَابَلْ",
+      "reading": "nitʾābal",
+      "meaning": "we meet",
+      "example": "نِتْقَابَلْ قُدَّامَ الْمَحَلّْ.",
+      "exampleMeaning": "We meet in front of the shop."
+    },
+    {
+      "word": "بَكِيرْ",
+      "reading": "bakīr",
+      "meaning": "early",
+      "example": "تَعَالْ بَكِيرْ عَشَانْ نِلْحَقْ الْبَاصْ.",
+      "exampleMeaning": "Come early so we catch the bus."
+    },
+    {
+      "word": "مُتَأَخِّرْ",
+      "reading": "mitaʾakhkhir",
+      "meaning": "late",
+      "example": "أَنَا مُتَأَخِّرْ خَمْسْ دَقَايِقْ.",
+      "exampleMeaning": "I am five minutes late."
+    },
+    {
+      "word": "عَالسَّاعَةْ سَبْعَةْ",
+      "reading": "ʿas-sāʿa sabʿa",
+      "meaning": "at seven o'clock",
+      "example": "خَلِّينَا نِتْقَابَلْ عَالسَّاعَةْ سَبْعَةْ.",
+      "exampleMeaning": "Let's meet at seven o'clock."
+    },
+    {
+      "word": "بَعْتِلَّكْ",
+      "reading": "baʿtillak",
+      "meaning": "I will send you",
+      "example": "بَعْتِلَّكْ الْعُنْوَانْ عَلَى الْمُوبَايْلْ.",
+      "exampleMeaning": "I will send you the address on the mobile."
+    },
+    {
+      "word": "الْمَحَلّْ",
+      "reading": "il-maḥall",
+      "meaning": "the shop / place",
+      "example": "الْمَحَلّْ قَرِيبْ مِنَ السَّاحَةْ.",
+      "exampleMeaning": "The shop is near the square."
+    },
+    {
+      "word": "مَشْوَارْ صْغِيرْ",
+      "reading": "mashwār ṣghīr",
+      "meaning": "a short errand",
+      "example": "عِنْدِي مَشْوَارْ صْغِيرْ قَبْلَ الْقَهْوَةْ.",
+      "exampleMeaning": "I have a short errand before coffee."
+    },
+    {
+      "word": "مَا بِلْحَقْ",
+      "reading": "mā bilḥaq",
+      "meaning": "I will not make it in time",
+      "example": "مَا بِلْحَقْ الْفِيلْمْ إِذَا طِلِعْنَا هَلَّقْ.",
+      "exampleMeaning": "I won't make the movie if we leave now."
+    },
+    {
+      "word": "بِنْأَجِّلْ",
+      "reading": "binʾajjil",
+      "meaning": "we postpone",
+      "example": "بِنْأَجِّلْ الْمَشْوَارْ لِبُكْرَا.",
+      "exampleMeaning": "We postpone the errand until tomorrow."
+    },
+    {
+      "word": "بِنْشُوفْ بَعْضْ",
+      "reading": "binshūf baʿḍ",
+      "meaning": "we see each other",
+      "example": "بِنْشُوفْ بَعْضْ بَعْدَ الشُّغْلْ.",
+      "exampleMeaning": "We see each other after work."
+    },
+    {
+      "word": "عَزِيمَةْ",
+      "reading": "ʿazīme",
+      "meaning": "invitation",
+      "example": "عِنْدَنَا عَزِيمَةْ صْغِيرَةْ يَوْمَ الْجُمْعَةْ.",
+      "exampleMeaning": "We have a small invitation on Friday."
+    },
+    {
+      "word": "مُنَاسِبْ",
+      "reading": "munāsib",
+      "meaning": "suitable",
+      "example": "هَالْوَقْتْ مُنَاسِبْ لِلْقَعْدَةْ.",
+      "exampleMeaning": "This time is suitable for the gathering."
+    },
+    {
+      "word": "مَعْلِشْ",
+      "reading": "maʿlish",
+      "meaning": "sorry / it's okay",
+      "example": "مَعْلِشْ، الْيَوْمْ مَا بِلْحَقْ.",
+      "exampleMeaning": "Sorry, today I won't make it in time."
+    },
+    {
+      "word": "خَلِّينَا نِرُوحْ",
+      "reading": "khallīnā nirūḥ",
+      "meaning": "let's go",
+      "example": "خَلِّينَا نِرُوحْ عَلَى الْبَحْرْ بَكِيرْ.",
+      "exampleMeaning": "Let's go to the sea early."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "إِنْتَ ___؟ بَدْنَا نِحْكِي شْوَيّْ.",
+          "answer": "فَاضِي؟",
+          "hint": "are you free?"
+        },
+        {
+          "sentence": "خَلِّينَا نِتْقَابَلْ ___.",
+          "answer": "عَالسَّاعَةْ سَبْعَةْ",
+          "hint": "at seven o'clock"
+        },
+        {
+          "sentence": "___ الْمَشْوَارْ لِبُكْرَا.",
+          "answer": "بِنْأَجِّلْ",
+          "hint": "we postpone"
+        },
+        {
+          "sentence": "___ عَلَى الْبَحْرْ بَكِيرْ.",
+          "answer": "خَلِّينَا نِرُوحْ",
+          "hint": "let's go"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "In Levantine Arabic, what does ‘بَدِّي أَطْلَعْ’ mean?",
+      "options": [
+        "I want to go out",
+        "I will send you",
+        "late",
+        "invitation"
+      ],
+      "answer": 0
+    }
+  ]
+}

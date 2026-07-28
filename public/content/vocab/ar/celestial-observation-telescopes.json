@@ -1,0 +1,159 @@
+{
+  "id": "celestial-observation-telescopes",
+  "words": [
+    {
+      "word": "الْمِقْرَابُ",
+      "reading": "al-miqrāb",
+      "meaning": "telescope",
+      "example": "يُقَرِّبُ الْمِقْرَابُ ضَوْءَ النُّجُومِ الْبَعِيدَةِ.",
+      "exampleMeaning": "The telescope brings the light of distant stars closer."
+    },
+    {
+      "word": "الْمَرْصَدُ الْفَلَكِيُّ",
+      "reading": "al-marṣad al-falakiyy",
+      "meaning": "astronomical observatory",
+      "example": "يَقَعُ الْمَرْصَدُ الْفَلَكِيُّ فَوْقَ جَبَلٍ عَالٍ.",
+      "exampleMeaning": "The astronomical observatory is located on a high mountain."
+    },
+    {
+      "word": "الْعَدَسَةُ",
+      "reading": "al-ʿadasa",
+      "meaning": "lens",
+      "example": "تُرَكِّزُ الْعَدَسَةُ الضَّوْءَ عَلَى الْحَسَّاسِ.",
+      "exampleMeaning": "The lens focuses light onto the sensor."
+    },
+    {
+      "word": "الْمِرْآةُ",
+      "reading": "al-mirʾāh",
+      "meaning": "mirror",
+      "example": "تَعْكِسُ الْمِرْآةُ الصُّورَةَ دَاخِلَ الْمِقْرَابِ.",
+      "exampleMeaning": "The mirror reflects the image inside the telescope."
+    },
+    {
+      "word": "الْقُبَّةُ",
+      "reading": "al-qubba",
+      "meaning": "dome",
+      "example": "تَدُورُ الْقُبَّةُ مَعَ اتِّجَاهِ الْمِقْرَابِ.",
+      "exampleMeaning": "The dome rotates with the direction of the telescope."
+    },
+    {
+      "word": "الْمَجَرَّةُ",
+      "reading": "al-majarra",
+      "meaning": "galaxy",
+      "example": "تَحْوِي الْمَجَرَّةُ مَلَايِينَ النُّجُومِ.",
+      "exampleMeaning": "The galaxy contains millions of stars."
+    },
+    {
+      "word": "السَّدِيمُ",
+      "reading": "as-sadīm",
+      "meaning": "nebula",
+      "example": "يَظْهَرُ السَّدِيمُ كَغَيْمَةٍ مُضِيئَةٍ.",
+      "exampleMeaning": "The nebula appears like a glowing cloud."
+    },
+    {
+      "word": "الْمُذَنَّبُ",
+      "reading": "al-mudhannab",
+      "meaning": "comet",
+      "example": "يَتْرُكُ الْمُذَنَّبُ ذَيْلًا لَامِعًا.",
+      "exampleMeaning": "The comet leaves a bright tail."
+    },
+    {
+      "word": "النَّيْزَكُ",
+      "reading": "an-nayzak",
+      "meaning": "meteorite",
+      "example": "سَقَطَ النَّيْزَكُ فِي الصَّحْرَاءِ.",
+      "exampleMeaning": "The meteorite fell in the desert."
+    },
+    {
+      "word": "الْكَوْكَبُ الْقَزَمُ",
+      "reading": "al-kawkab al-qazam",
+      "meaning": "dwarf planet",
+      "example": "يَدُورُ الْكَوْكَبُ الْقَزَمُ بَعِيدًا عَنِ الشَّمْسِ.",
+      "exampleMeaning": "The dwarf planet orbits far from the sun."
+    },
+    {
+      "word": "الْمِحْوَرُ",
+      "reading": "al-miḥwar",
+      "meaning": "axis",
+      "example": "يَمِيلُ الْمِحْوَرُ فَيَتَغَيَّرُ طُولُ النَّهَارِ.",
+      "exampleMeaning": "The axis tilts, so the length of the day changes."
+    },
+    {
+      "word": "الْمَدَارُ",
+      "reading": "al-madār",
+      "meaning": "orbit",
+      "example": "يَثْبُتُ الْقَمَرُ فِي الْمَدَارِ حَوْلَ الأَرْضِ.",
+      "exampleMeaning": "The moon remains in orbit around Earth."
+    },
+    {
+      "word": "الْخُسُوفُ",
+      "reading": "al-khusūf",
+      "meaning": "lunar eclipse",
+      "example": "يَحْدُثُ الْخُسُوفُ عِنْدَمَا يَدْخُلُ الْقَمَرُ ظِلَّ الأَرْضِ.",
+      "exampleMeaning": "A lunar eclipse occurs when the moon enters Earth’s shadow."
+    },
+    {
+      "word": "الْكُسُوفُ",
+      "reading": "al-kusūf",
+      "meaning": "solar eclipse",
+      "example": "يُشَاهَدُ الْكُسُوفُ بِمِرْشَحٍ آمِنٍ.",
+      "exampleMeaning": "A solar eclipse is viewed with a safe filter."
+    },
+    {
+      "word": "الضَّوْءُ النَّجْمِيُّ",
+      "reading": "aḍ-ḍawʾ an-najmiyy",
+      "meaning": "starlight",
+      "example": "يَصِلُ الضَّوْءُ النَّجْمِيُّ إِلَيْنَا بَعْدَ سَنَوَاتٍ.",
+      "exampleMeaning": "Starlight reaches us after years."
+    },
+    {
+      "word": "التَّلَوُّثُ الضَّوْئِيُّ",
+      "reading": "at-talawwuth aḍ-ḍawʾiyy",
+      "meaning": "light pollution",
+      "example": "يَحْجُبُ التَّلَوُّثُ الضَّوْئِيُّ النُّجُومَ الْخَافِتَةَ.",
+      "exampleMeaning": "Light pollution hides faint stars."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "يَقَعُ ___ فَوْقَ جَبَلٍ عَالٍ.",
+          "answer": "الْمَرْصَدُ الْفَلَكِيُّ",
+          "hint": "astronomical observatory"
+        },
+        {
+          "sentence": "تُرَكِّزُ ___ الضَّوْءَ عَلَى الْحَسَّاسِ.",
+          "answer": "الْعَدَسَةُ",
+          "hint": "lens"
+        },
+        {
+          "sentence": "يَحْدُثُ ___ عِنْدَمَا يَدْخُلُ الْقَمَرُ ظِلَّ الأَرْضِ.",
+          "answer": "الْخُسُوفُ",
+          "hint": "lunar eclipse"
+        },
+        {
+          "sentence": "يَحْجُبُ ___ النُّجُومَ الْخَافِتَةَ.",
+          "answer": "التَّلَوُّثُ الضَّوْئِيُّ",
+          "hint": "light pollution"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "What does ‘السَّدِيمُ’ mean?",
+      "options": [
+        "nebula",
+        "mirror",
+        "axis",
+        "solar eclipse"
+      ],
+      "answer": 0
+    }
+  ]
+}

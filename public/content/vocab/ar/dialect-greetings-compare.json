@@ -1,0 +1,183 @@
+{
+  "id": "dialect-greetings-compare",
+  "words": [
+    {
+      "word": "مَرْحَبًا",
+      "reading": "marḥaban",
+      "meaning": "hello — MSA marḥaban; Egyptian ahlan; Levantine marḥaba/ahlēn; Gulf marḥaba",
+      "example": "مَرْحَبًا، سُرِرْتُ بِزِيَارَتِكَ.",
+      "exampleMeaning": "Hello, I was pleased by your visit."
+    },
+    {
+      "word": "أَهْلًا وَسَهْلًا",
+      "reading": "ʾahlan wa-sahlan",
+      "meaning": "welcome — MSA ʾahlan wa-sahlan; Egyptian ahlan wa-sahlan; Levantine ahla w-sahla; Gulf ḥayyāk Allāh",
+      "example": "أَهْلًا وَسَهْلًا فِي مَدِينَتِنَا.",
+      "exampleMeaning": "Welcome to our city."
+    },
+    {
+      "word": "صَبَاحُ الْخَيْرِ",
+      "reading": "ṣabāḥu l-khayri",
+      "meaning": "good morning — MSA ṣabāḥu l-khayr; Egyptian ṣabāḥ el-khēr; Levantine ṣabāḥ el-khēr; Gulf ṣabāḥ el-khēr",
+      "example": "صَبَاحُ الْخَيْرِ، هَلْ نَبْدَأُ الْجَوْلَةَ؟",
+      "exampleMeaning": "Good morning, shall we begin the tour?"
+    },
+    {
+      "word": "مَسَاءُ الْخَيْرِ",
+      "reading": "masāʾu l-khayri",
+      "meaning": "good evening — MSA masāʾu l-khayr; Egyptian masā el-khēr; Levantine masa el-khēr; Gulf masā el-khēr",
+      "example": "مَسَاءُ الْخَيْرِ، كَيْفَ كَانَ يَوْمُكَ؟",
+      "exampleMeaning": "Good evening, how was your day?"
+    },
+    {
+      "word": "كَيْفَ حَالُكَ؟",
+      "reading": "kayfa ḥāluka?",
+      "meaning": "how are you? — MSA kayfa ḥāluka; Egyptian izzayyak; Levantine kīfak; Gulf shlōnak",
+      "example": "كَيْفَ حَالُكَ؟ أَرْجُو أَنْ تَكُونَ بِخَيْرٍ.",
+      "exampleMeaning": "How are you? I hope you are well."
+    },
+    {
+      "word": "أَنَا بِخَيْرٍ",
+      "reading": "ʾanā bi-khayrin",
+      "meaning": "I am fine — MSA ʾanā bi-khayrin; Egyptian ana kuwayyis; Levantine ana mnīḥ; Gulf ana zēn",
+      "example": "أَنَا بِخَيْرٍ بَعْدَ الرَّاحَةِ.",
+      "exampleMeaning": "I am fine after the rest."
+    },
+    {
+      "word": "مَا اسْمُكَ؟",
+      "reading": "mā ismuka?",
+      "meaning": "what is your name? — MSA mā ismuka; Egyptian ismak ēh; Levantine shū ismak; Gulf shismak",
+      "example": "مَا اسْمُكَ؟ أُرِيدُ أَنْ أَتَعَرَّفَ إِلَيْكَ.",
+      "exampleMeaning": "What is your name? I want to get to know you."
+    },
+    {
+      "word": "اِسْمِي",
+      "reading": "ismī",
+      "meaning": "my name is — MSA ismī; Egyptian ismī; Levantine ismī; Gulf ismī",
+      "example": "اِسْمِي سَارَةُ، وَأَنْتَ؟",
+      "exampleMeaning": "My name is Sara, and you?"
+    },
+    {
+      "word": "تَشَرَّفْنَا",
+      "reading": "tasharrafnā",
+      "meaning": "nice to meet you — MSA tasharrafnā; Egyptian itsharrafna; Levantine tsharrafna; Gulf tasharrafnā",
+      "example": "تَشَرَّفْنَا بِلِقَائِكُمْ فِي الْمُؤْتَمَرِ.",
+      "exampleMeaning": "Nice to meet you at the conference."
+    },
+    {
+      "word": "مِنْ فَضْلِكَ",
+      "reading": "min faḍlika",
+      "meaning": "please — MSA min faḍlika; Egyptian law samaḥt; Levantine law samaḥt; Gulf law samaḥt",
+      "example": "قُلْ: مِنْ فَضْلِكَ عِنْدَ الطَّلَبِ.",
+      "exampleMeaning": "Say: please when making a request."
+    },
+    {
+      "word": "شُكْرًا",
+      "reading": "shukran",
+      "meaning": "thank you — MSA shukran; Egyptian shukran; Levantine shukran/merci; Gulf mashkūr/shukran",
+      "example": "شُكْرًا عَلَى الضِّيَافَةِ الْكَرِيمَةِ.",
+      "exampleMeaning": "Thank you for the generous hospitality."
+    },
+    {
+      "word": "عَفْوًا",
+      "reading": "ʿafwan",
+      "meaning": "you are welcome — MSA ʿafwan; Egyptian el-ʿafw; Levantine ʿafwan; Gulf ʿafwan",
+      "example": "عَفْوًا، هٰذَا وَاجِبِي.",
+      "exampleMeaning": "You are welcome, this is my duty."
+    },
+    {
+      "word": "مَعَ السَّلَامَةِ",
+      "reading": "maʿa s-salāmati",
+      "meaning": "goodbye — MSA maʿa s-salāma; Egyptian maʿa s-salāma; Levantine maʿa s-salāme/yallā bye; Gulf fī amān Allāh",
+      "example": "مَعَ السَّلَامَةِ، نَلْتَقِي غَدًا.",
+      "exampleMeaning": "Goodbye, we meet tomorrow."
+    },
+    {
+      "word": "إِلَى اللِّقَاءِ",
+      "reading": "ʾilā l-liqāʾi",
+      "meaning": "see you later — MSA ʾilā l-liqāʾ; Egyptian ashūfak baʿdēn; Levantine bashūfak; Gulf ashūfak",
+      "example": "إِلَى اللِّقَاءِ بَعْدَ الدَّرْسِ.",
+      "exampleMeaning": "See you after the lesson."
+    },
+    {
+      "word": "مُبَارَكٌ",
+      "reading": "mubārakun",
+      "meaning": "congratulations — MSA mubārak; Egyptian mabrook; Levantine mabrook; Gulf mabrook",
+      "example": "مُبَارَكٌ لَكَ هٰذَا النَّجَاحُ.",
+      "exampleMeaning": "Congratulations to you on this success."
+    },
+    {
+      "word": "لَا مُشْكِلَةَ",
+      "reading": "lā mushkilata",
+      "meaning": "no problem — MSA lā mushkilata; Egyptian mafīsh mushkila; Levantine mā fī mushkile; Gulf mā fī mushkila",
+      "example": "لَا مُشْكِلَةَ، يُمْكِنُنَا الْمُحَاوَلَةُ مَرَّةً أُخْرَى.",
+      "exampleMeaning": "No problem, we can try once more."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "___، سُرِرْتُ بِزِيَارَتِكَ.",
+          "answer": "مَرْحَبًا",
+          "hint": "hello — MSA marḥaban; Egyptian ahlan; Levantine marḥaba/ahlēn; Gulf marḥaba"
+        },
+        {
+          "sentence": "___ فِي مَدِينَتِنَا.",
+          "answer": "أَهْلًا وَسَهْلًا",
+          "hint": "welcome — MSA ʾahlan wa-sahlan; Egyptian ahlan wa-sahlan; Levantine ahla w-sahla; Gulf ḥayyāk Allāh"
+        },
+        {
+          "sentence": "___، هَلْ نَبْدَأُ الْجَوْلَةَ؟",
+          "answer": "صَبَاحُ الْخَيْرِ",
+          "hint": "good morning — MSA ṣabāḥu l-khayr; Egyptian ṣabāḥ el-khēr; Levantine ṣabāḥ el-khēr; Gulf ṣabāḥ el-khēr"
+        },
+        {
+          "sentence": "___، كَيْفَ كَانَ يَوْمُكَ؟",
+          "answer": "مَسَاءُ الْخَيْرِ",
+          "hint": "good evening — MSA masāʾu l-khayr; Egyptian masā el-khēr; Levantine masa el-khēr; Gulf masā el-khēr"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "items": [
+        {
+          "question": "What does ‘مَرْحَبًا’ mean?",
+          "options": [
+            "welcome — MSA ʾahlan wa-sahlan; Egyptian ahlan wa-sahlan; Levantine ahla w-sahla; Gulf ḥayyāk Allāh",
+            "hello — MSA marḥaban; Egyptian ahlan; Levantine marḥaba/ahlēn; Gulf marḥaba",
+            "good morning — MSA ṣabāḥu l-khayr; Egyptian ṣabāḥ el-khēr; Levantine ṣabāḥ el-khēr; Gulf ṣabāḥ el-khēr",
+            "good evening — MSA masāʾu l-khayr; Egyptian masā el-khēr; Levantine masa el-khēr; Gulf masā el-khēr"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What does ‘أَهْلًا وَسَهْلًا’ mean?",
+          "options": [
+            "good morning — MSA ṣabāḥu l-khayr; Egyptian ṣabāḥ el-khēr; Levantine ṣabāḥ el-khēr; Gulf ṣabāḥ el-khēr",
+            "welcome — MSA ʾahlan wa-sahlan; Egyptian ahlan wa-sahlan; Levantine ahla w-sahla; Gulf ḥayyāk Allāh",
+            "good evening — MSA masāʾu l-khayr; Egyptian masā el-khēr; Levantine masa el-khēr; Gulf masā el-khēr",
+            "how are you? — MSA kayfa ḥāluka; Egyptian izzayyak; Levantine kīfak; Gulf shlōnak"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What does ‘صَبَاحُ الْخَيْرِ’ mean?",
+          "options": [
+            "good evening — MSA masāʾu l-khayr; Egyptian masā el-khēr; Levantine masa el-khēr; Gulf masā el-khēr",
+            "good morning — MSA ṣabāḥu l-khayr; Egyptian ṣabāḥ el-khēr; Levantine ṣabāḥ el-khēr; Gulf ṣabāḥ el-khēr",
+            "how are you? — MSA kayfa ḥāluka; Egyptian izzayyak; Levantine kīfak; Gulf shlōnak",
+            "I am fine — MSA ʾanā bi-khayrin; Egyptian ana kuwayyis; Levantine ana mnīḥ; Gulf ana zēn"
+          ],
+          "answer": 1
+        }
+      ]
+    }
+  ]
+}

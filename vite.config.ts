@@ -31,6 +31,9 @@ export default defineConfig({
       },
       injectManifest: {
         globPatterns: ['**/*.{js,css,html,ico,png,svg,woff2}'],
+        // The app bundles static learning data for every language, so the main
+        // chunk exceeds workbox's 2 MiB default. Raise the precache limit.
+        maximumFileSizeToCacheInBytes: 4 * 1024 * 1024,
       },
     }),
   ],

@@ -1,0 +1,183 @@
+{
+  "id": "shopping-money",
+  "words": [
+    {
+      "word": "مَالٌ",
+      "reading": "mālun",
+      "meaning": "money",
+      "example": "مَالٌ قَلِيلٌ فِي جَيْبِي.",
+      "exampleMeaning": "A little money is in my pocket."
+    },
+    {
+      "word": "نَقْدٌ",
+      "reading": "naqdun",
+      "meaning": "cash",
+      "example": "نَقْدٌ أَفْضَلُ فِي هٰذَا الْمَتْجَرِ.",
+      "exampleMeaning": "Cash is better in this store."
+    },
+    {
+      "word": "بِطَاقَةٌ",
+      "reading": "biṭāqatun",
+      "meaning": "card",
+      "example": "بِطَاقَةٌ جَدِيدَةٌ فِي الْمَحْفَظَةِ.",
+      "exampleMeaning": "A new card is in the wallet."
+    },
+    {
+      "word": "سِعْرٌ",
+      "reading": "siʿrun",
+      "meaning": "price",
+      "example": "سِعْرٌ مُنَاسِبٌ لِلْكِتَابِ.",
+      "exampleMeaning": "A suitable price for the book."
+    },
+    {
+      "word": "غَالٍ",
+      "reading": "ghālin",
+      "meaning": "expensive",
+      "example": "هٰذَا الْقَمِيصُ غَالٍ.",
+      "exampleMeaning": "This shirt is expensive."
+    },
+    {
+      "word": "رَخِيصٌ",
+      "reading": "rakhīṣun",
+      "meaning": "cheap / inexpensive",
+      "example": "ذٰلِكَ الْقَلَمُ رَخِيصٌ.",
+      "exampleMeaning": "That pen is cheap."
+    },
+    {
+      "word": "مَتْجَرٌ",
+      "reading": "matjarun",
+      "meaning": "store",
+      "example": "الْمَتْجَرُ مَفْتُوحٌ.",
+      "exampleMeaning": "The store is open."
+    },
+    {
+      "word": "بَائِعٌ",
+      "reading": "bāʾiʿun",
+      "meaning": "seller",
+      "example": "الْبَائِعُ لَطِيفٌ.",
+      "exampleMeaning": "The seller is kind."
+    },
+    {
+      "word": "زَبُونٌ",
+      "reading": "zabūnun",
+      "meaning": "customer",
+      "example": "الزَّبُونُ يَسْأَلُ عَنِ السِّعْرِ.",
+      "exampleMeaning": "The customer asks about the price."
+    },
+    {
+      "word": "فَاتُورَةٌ",
+      "reading": "fātūratun",
+      "meaning": "bill / receipt",
+      "example": "الْفَاتُورَةُ عَلَى الطَّاوِلَةِ.",
+      "exampleMeaning": "The bill is on the table."
+    },
+    {
+      "word": "خَصْمٌ",
+      "reading": "khaṣmun",
+      "meaning": "discount",
+      "example": "الْخَصْمُ كَبِيرٌ الْيَوْمَ.",
+      "exampleMeaning": "The discount is big today."
+    },
+    {
+      "word": "كِيسٌ",
+      "reading": "kīsun",
+      "meaning": "bag",
+      "example": "الْكِيسُ مَعَ الْخُبْزِ.",
+      "exampleMeaning": "The bag is with the bread."
+    },
+    {
+      "word": "سُوقٌ",
+      "reading": "sūqun",
+      "meaning": "market",
+      "example": "السُّوقُ مُزْدَحِمٌ فِي الصَّبَاحِ.",
+      "exampleMeaning": "The market is crowded in the morning."
+    },
+    {
+      "word": "دُولَارٌ",
+      "reading": "dūlārun",
+      "meaning": "dollar",
+      "example": "الدُّولَارُ عُمْلَةٌ مَعْرُوفَةٌ.",
+      "exampleMeaning": "The dollar is a known currency."
+    },
+    {
+      "word": "رِيَالٌ",
+      "reading": "riyālun",
+      "meaning": "riyal",
+      "example": "الرِّيَالُ عُمْلَةٌ فِي بِلَادٍ عَرَبِيَّةٍ.",
+      "exampleMeaning": "The riyal is a currency in Arab countries."
+    },
+    {
+      "word": "دِرْهَمٌ",
+      "reading": "dirhamun",
+      "meaning": "dirham",
+      "example": "الدِّرْهَمُ عُمْلَةٌ فِي الْمَغْرِبِ وَالْخَلِيجِ.",
+      "exampleMeaning": "The dirham is a currency in Morocco and the Gulf."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "___ قَلِيلٌ فِي جَيْبِي.",
+          "answer": "مَالٌ",
+          "hint": "money"
+        },
+        {
+          "sentence": "___ أَفْضَلُ فِي هٰذَا الْمَتْجَرِ.",
+          "answer": "نَقْدٌ",
+          "hint": "cash"
+        },
+        {
+          "sentence": "___ جَدِيدَةٌ فِي الْمَحْفَظَةِ.",
+          "answer": "بِطَاقَةٌ",
+          "hint": "card"
+        },
+        {
+          "sentence": "___ مُنَاسِبٌ لِلْكِتَابِ.",
+          "answer": "سِعْرٌ",
+          "hint": "price"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "items": [
+        {
+          "question": "What does ‘مَالٌ’ mean?",
+          "options": [
+            "cash",
+            "money",
+            "card",
+            "price"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What does ‘نَقْدٌ’ mean?",
+          "options": [
+            "card",
+            "cash",
+            "price",
+            "expensive"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What does ‘بِطَاقَةٌ’ mean?",
+          "options": [
+            "price",
+            "card",
+            "expensive",
+            "cheap / inexpensive"
+          ],
+          "answer": 1
+        }
+      ]
+    }
+  ]
+}

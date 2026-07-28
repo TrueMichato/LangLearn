@@ -1,0 +1,159 @@
+{
+  "id": "maghrebi-public-offices",
+  "words": [
+    {
+      "word": "الْبَلَدِيَّةْ",
+      "reading": "l-baladiyya",
+      "meaning": "municipal office",
+      "example": "مْشِيتْ لِلْبَلَدِيَّةْ بَكْرِي.",
+      "exampleMeaning": "I went to the municipal office early."
+    },
+    {
+      "word": "الْمُقَاطَعَةْ",
+      "reading": "l-muqāṭaʿa",
+      "meaning": "district office",
+      "example": "الْمُقَاطَعَةْ قَرِيبَةْ مِنَ الدَّارْ.",
+      "exampleMeaning": "The district office is near the house."
+    },
+    {
+      "word": "وَرْقَةْ",
+      "reading": "warqa",
+      "meaning": "paper / document",
+      "example": "خَاصّْنِي وَرْقَةْ زَايْدَةْ فِي الْمِلَفّْ.",
+      "exampleMeaning": "I need an extra document in the file."
+    },
+    {
+      "word": "نُسْخَةْ",
+      "reading": "nuskha",
+      "meaning": "copy",
+      "example": "جِيبْ نُسْخَةْ مِنْ بِطَاقَةْ التَّعْرِيفْ.",
+      "exampleMeaning": "Bring a copy of the ID card."
+    },
+    {
+      "word": "إِمْضَاءْ",
+      "reading": "imḍāʾ",
+      "meaning": "signature",
+      "example": "دِيرْ إِمْضَاءْ هْنَا مَا عَلِيكْ بَاسْ.",
+      "exampleMeaning": "Put a signature here, please."
+    },
+    {
+      "word": "تَصْدِيقْ",
+      "reading": "taṣdīq",
+      "meaning": "certification",
+      "example": "خَاصّْ الْوَرْقَةْ تَصْدِيقْ مِنَ الشِّبَّاكْ.",
+      "exampleMeaning": "The document needs certification from the window."
+    },
+    {
+      "word": "الرَّقْمْ الْوَطَنِي",
+      "reading": "r-raqm l-waṭanī",
+      "meaning": "national number",
+      "example": "كْتَبْ الرَّقْمْ الْوَطَنِي فِي الْفُورْمُولَارْ.",
+      "exampleMeaning": "Write the national number on the form."
+    },
+    {
+      "word": "بِطَاقَةْ التَّعْرِيفْ",
+      "reading": "biṭāqat t-taʿrīf",
+      "meaning": "ID card",
+      "example": "بِطَاقَةْ التَّعْرِيفْ سَالَاتْ هَادْ الشَّهْرْ.",
+      "exampleMeaning": "The ID card expired this month."
+    },
+    {
+      "word": "عَمَّرْ الْفُورْمُولَارْ",
+      "reading": "ʿammar l-formulār",
+      "meaning": "fill out the form",
+      "example": "عَمَّرْ الْفُورْمُولَارْ بِالْقْلَمْ الْأَزْرَقْ.",
+      "exampleMeaning": "Fill out the form with the blue pen."
+    },
+    {
+      "word": "صْبَرْ شْوِيَّةْ",
+      "reading": "ṣbar shwiyya",
+      "meaning": "wait a little",
+      "example": "صْبَرْ شْوِيَّةْ، الدُّورْ غَادِي يْجِي.",
+      "exampleMeaning": "Wait a little; your turn will come."
+    },
+    {
+      "word": "الدُّورْ",
+      "reading": "d-dūr",
+      "meaning": "turn / place in line",
+      "example": "الدُّورْ دْيَالِي مِنْ بَعْدْ هَادْ السَّيِّدْ.",
+      "exampleMeaning": "My turn is after this gentleman."
+    },
+    {
+      "word": "الشِّبَّاكْ",
+      "reading": "sh-shibbāk",
+      "meaning": "service window",
+      "example": "الشِّبَّاكْ مْسْدُودْ دَابَا.",
+      "exampleMeaning": "The service window is closed now."
+    },
+    {
+      "word": "خَلَّصْ الرُّسُومْ",
+      "reading": "khallaṣ r-rusūm",
+      "meaning": "pay the fees",
+      "example": "خَلَّصْ الرُّسُومْ فِي الصُّنْدُوقْ.",
+      "exampleMeaning": "Pay the fees at the cashier."
+    },
+    {
+      "word": "مَوْعِدْ",
+      "reading": "mawʿid",
+      "meaning": "appointment",
+      "example": "عِنْدِي مَوْعِدْ مَعَ الْمُوَظَّفْ.",
+      "exampleMeaning": "I have an appointment with the employee."
+    },
+    {
+      "word": "طَابَعْ",
+      "reading": "ṭābaʿ",
+      "meaning": "stamp",
+      "example": "لْصَقْ طَابَعْ فَوْقَ الطَّلَبْ.",
+      "exampleMeaning": "Stick a stamp on the application."
+    },
+    {
+      "word": "شَهَادَةْ السُّكْنَى",
+      "reading": "shahādat s-suknā",
+      "meaning": "residence certificate",
+      "example": "بْغِيتْ شَهَادَةْ السُّكْنَى لِلْمَدْرَسَةْ.",
+      "exampleMeaning": "I want a residence certificate for the school."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "خَاصّْنِي ___ زَايْدَةْ فِي الْمِلَفّْ.",
+          "answer": "وَرْقَةْ",
+          "hint": "document"
+        },
+        {
+          "sentence": "___ بِالْقْلَمْ الْأَزْرَقْ.",
+          "answer": "عَمَّرْ الْفُورْمُولَارْ",
+          "hint": "fill out the form"
+        },
+        {
+          "sentence": "___، الدُّورْ غَادِي يْجِي.",
+          "answer": "صْبَرْ شْوِيَّةْ",
+          "hint": "wait a little"
+        },
+        {
+          "sentence": "بْغِيتْ ___ لِلْمَدْرَسَةْ.",
+          "answer": "شَهَادَةْ السُّكْنَى",
+          "hint": "residence certificate"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "In Maghrebi Arabic, what does ‘الشِّبَّاكْ’ mean in an office?",
+      "options": [
+        "service window",
+        "stamp",
+        "appointment",
+        "copy"
+      ],
+      "answer": 0
+    }
+  ]
+}

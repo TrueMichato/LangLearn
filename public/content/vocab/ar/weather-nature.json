@@ -1,0 +1,183 @@
+{
+  "id": "weather-nature",
+  "words": [
+    {
+      "word": "شَمْسٌ",
+      "reading": "shamsun",
+      "meaning": "sun",
+      "example": "شَمْسٌ دَافِئَةٌ تُشْرِقُ.",
+      "exampleMeaning": "A warm sun is shining."
+    },
+    {
+      "word": "قَمَرٌ",
+      "reading": "qamarun",
+      "meaning": "moon",
+      "example": "قَمَرٌ جَمِيلٌ فِي السَّمَاءِ.",
+      "exampleMeaning": "A beautiful moon is in the sky."
+    },
+    {
+      "word": "سَمَاءٌ",
+      "reading": "samāʾun",
+      "meaning": "sky",
+      "example": "سَمَاءٌ صَافِيَةٌ فَوْقَنَا.",
+      "exampleMeaning": "A clear sky is above us."
+    },
+    {
+      "word": "مَطَرٌ",
+      "reading": "maṭarun",
+      "meaning": "rain",
+      "example": "مَطَرٌ خَفِيفٌ يَنْزِلُ.",
+      "exampleMeaning": "Light rain is falling."
+    },
+    {
+      "word": "رِيحٌ",
+      "reading": "rīḥun",
+      "meaning": "wind",
+      "example": "الرِّيحُ قَوِيَّةٌ الْيَوْمَ.",
+      "exampleMeaning": "The wind is strong today."
+    },
+    {
+      "word": "ثَلْجٌ",
+      "reading": "thaljun",
+      "meaning": "snow",
+      "example": "الثَّلْجُ أَبْيَضُ وَبَارِدٌ.",
+      "exampleMeaning": "Snow is white and cold."
+    },
+    {
+      "word": "غَيْمٌ",
+      "reading": "ghaymun",
+      "meaning": "clouds",
+      "example": "الْغَيْمُ يُغَطِّي السَّمَاءَ.",
+      "exampleMeaning": "Clouds cover the sky."
+    },
+    {
+      "word": "حَرٌّ",
+      "reading": "ḥarrun",
+      "meaning": "heat",
+      "example": "الْحَرُّ شَدِيدٌ فِي الصَّيْفِ.",
+      "exampleMeaning": "The heat is intense in summer."
+    },
+    {
+      "word": "بَرْدٌ",
+      "reading": "bardun",
+      "meaning": "cold",
+      "example": "الْبَرْدُ شَدِيدٌ فِي الشِّتَاءِ.",
+      "exampleMeaning": "The cold is intense in winter."
+    },
+    {
+      "word": "بَحْرٌ",
+      "reading": "baḥrun",
+      "meaning": "sea",
+      "example": "الْبَحْرُ أَزْرَقُ وَوَاسِعٌ.",
+      "exampleMeaning": "The sea is blue and wide."
+    },
+    {
+      "word": "جَبَلٌ",
+      "reading": "jabalun",
+      "meaning": "mountain",
+      "example": "الْجَبَلُ عَالٍ جِدًّا.",
+      "exampleMeaning": "The mountain is very high."
+    },
+    {
+      "word": "نَهْرٌ",
+      "reading": "nahrun",
+      "meaning": "river",
+      "example": "النَّهْرُ قَرِيبٌ مِنَ الْقَرْيَةِ.",
+      "exampleMeaning": "The river is near the village."
+    },
+    {
+      "word": "شَجَرَةٌ",
+      "reading": "shajaratun",
+      "meaning": "tree",
+      "example": "الشَّجَرَةُ كَبِيرَةٌ وَخَضْرَاءُ.",
+      "exampleMeaning": "The tree is large and green."
+    },
+    {
+      "word": "زَهْرَةٌ",
+      "reading": "zahratun",
+      "meaning": "flower",
+      "example": "الزَّهْرَةُ جَمِيلَةٌ.",
+      "exampleMeaning": "The flower is beautiful."
+    },
+    {
+      "word": "صَحْرَاءُ",
+      "reading": "ṣaḥrāʾu",
+      "meaning": "desert",
+      "example": "الصَّحْرَاءُ وَاسِعَةٌ.",
+      "exampleMeaning": "The desert is wide."
+    },
+    {
+      "word": "حَدِيقَةٌ",
+      "reading": "ḥadīqatun",
+      "meaning": "garden / park",
+      "example": "الْحَدِيقَةُ خَضْرَاءُ.",
+      "exampleMeaning": "The garden is green."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "___ دَافِئَةٌ تُشْرِقُ.",
+          "answer": "شَمْسٌ",
+          "hint": "sun"
+        },
+        {
+          "sentence": "___ جَمِيلٌ فِي السَّمَاءِ.",
+          "answer": "قَمَرٌ",
+          "hint": "moon"
+        },
+        {
+          "sentence": "___ صَافِيَةٌ فَوْقَنَا.",
+          "answer": "سَمَاءٌ",
+          "hint": "sky"
+        },
+        {
+          "sentence": "___ خَفِيفٌ يَنْزِلُ.",
+          "answer": "مَطَرٌ",
+          "hint": "rain"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "items": [
+        {
+          "question": "What does ‘شَمْسٌ’ mean?",
+          "options": [
+            "moon",
+            "sun",
+            "sky",
+            "rain"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What does ‘قَمَرٌ’ mean?",
+          "options": [
+            "sky",
+            "moon",
+            "rain",
+            "wind"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What does ‘سَمَاءٌ’ mean?",
+          "options": [
+            "rain",
+            "sky",
+            "wind",
+            "snow"
+          ],
+          "answer": 1
+        }
+      ]
+    }
+  ]
+}

@@ -1,5 +1,6 @@
 import { useState, useCallback, useRef, useEffect } from 'react';
 import { speak } from '../../lib/tts';
+import { isRTL } from '../../lib/rtl';
 
 export interface DrillQuestion {
   prompt: string;
@@ -100,6 +101,7 @@ export default function TypeDrill({ questions, onComplete }: TypeDrillProps) {
           onChange={(e) => setInput(e.target.value)}
           disabled={!!feedback}
           placeholder="Type your answer…"
+          dir={isRTL(current.language) ? 'rtl' : undefined}
           className={`w-full p-3 rounded-xl border-2 text-lg text-center outline-none transition-colors
             ${
               feedback === 'correct'

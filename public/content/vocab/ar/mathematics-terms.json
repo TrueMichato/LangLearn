@@ -1,0 +1,159 @@
+{
+  "id": "mathematics-terms",
+  "words": [
+    {
+      "word": "رِيَاضِيَّاتٌ",
+      "reading": "riyāḍiyyāt",
+      "meaning": "mathematics",
+      "example": "تُدَرِّبُ الرِّيَاضِيَّاتُ الْعَقْلَ عَلَى الدِّقَّةِ.",
+      "exampleMeaning": "Mathematics trains the mind in precision."
+    },
+    {
+      "word": "مُعَادَلَةٌ",
+      "reading": "muʿādala",
+      "meaning": "equation",
+      "example": "حَلَّتِ الطَّالِبَةُ مُعَادَلَةً طَوِيلَةً.",
+      "exampleMeaning": "The student solved a long equation."
+    },
+    {
+      "word": "مُتَغَيِّرٌ",
+      "reading": "mutaghayyir",
+      "meaning": "variable",
+      "example": "يُمَثِّلُ مُتَغَيِّرٌ مَجْهُولًا فِي الْمَسْأَلَةِ.",
+      "exampleMeaning": "A variable represents an unknown in the problem."
+    },
+    {
+      "word": "ثَابِتٌ",
+      "reading": "thābit",
+      "meaning": "constant",
+      "example": "يَبْقَى الثَّابِتُ بِالْقِيمَةِ نَفْسِهَا.",
+      "exampleMeaning": "The constant remains at the same value."
+    },
+    {
+      "word": "دَالَّةٌ",
+      "reading": "dālla",
+      "meaning": "function",
+      "example": "تَرْبِطُ الدَّالَّةُ كُلَّ مُدْخَلٍ بِمُخْرَجٍ.",
+      "exampleMeaning": "A function links each input to an output."
+    },
+    {
+      "word": "مَجْمُوعٌ",
+      "reading": "majmūʿ",
+      "meaning": "sum",
+      "example": "يُسَاوِي الْمَجْمُوعُ عَشَرَةً.",
+      "exampleMeaning": "The sum equals ten."
+    },
+    {
+      "word": "فَرْقٌ",
+      "reading": "farq",
+      "meaning": "difference",
+      "example": "الْفَرْقُ بَيْنَ الْعَدَدَيْنِ ثَلَاثَةٌ.",
+      "exampleMeaning": "The difference between the two numbers is three."
+    },
+    {
+      "word": "نَاتِجُ الضَّرْبِ",
+      "reading": "nātij aḍ-ḍarb",
+      "meaning": "product",
+      "example": "نَاتِجُ الضَّرْبِ فِي هَذَا السَّطْرِ كَبِيرٌ.",
+      "exampleMeaning": "The product on this line is large."
+    },
+    {
+      "word": "خَارِجُ الْقِسْمَةِ",
+      "reading": "khārij al-qisma",
+      "meaning": "quotient",
+      "example": "خَارِجُ الْقِسْمَةِ يُسَاوِي أَرْبَعَةً.",
+      "exampleMeaning": "The quotient equals four."
+    },
+    {
+      "word": "كَسْرٌ",
+      "reading": "kasr",
+      "meaning": "fraction",
+      "example": "يُمَثِّلُ الْكَسْرُ جُزْءًا مِنَ الْكُلِّ.",
+      "exampleMeaning": "A fraction represents part of a whole."
+    },
+    {
+      "word": "نِسْبَةٌ",
+      "reading": "nisba",
+      "meaning": "ratio",
+      "example": "تُقَارِنُ النِّسْبَةُ بَيْنَ كَمِّيَّتَيْنِ.",
+      "exampleMeaning": "A ratio compares two quantities."
+    },
+    {
+      "word": "مُتَوَسِّطٌ",
+      "reading": "mutawassiṭ",
+      "meaning": "average / mean",
+      "example": "حَسَبَ الْمُعَلِّمُ مُتَوَسِّطَ الدَّرَجَاتِ.",
+      "exampleMeaning": "The teacher calculated the average of the grades."
+    },
+    {
+      "word": "اِنْحِرَافٌ",
+      "reading": "inḥirāf",
+      "meaning": "deviation",
+      "example": "يُظْهِرُ الِانْحِرَافُ بُعْدَ الْقِيَمِ عَنِ الْمُتَوَسِّطِ.",
+      "exampleMeaning": "Deviation shows how far values are from the average."
+    },
+    {
+      "word": "مِحْوَرٌ",
+      "reading": "miḥwar",
+      "meaning": "axis",
+      "example": "رَسَمَ الطَّالِبُ نُقْطَةً عَلَى الْمِحْوَرِ.",
+      "exampleMeaning": "The student drew a point on the axis."
+    },
+    {
+      "word": "مُثَلَّثٌ",
+      "reading": "muthallath",
+      "meaning": "triangle",
+      "example": "لِلْمُثَلَّثِ ثَلَاثَةُ أَضْلَاعٍ.",
+      "exampleMeaning": "A triangle has three sides."
+    },
+    {
+      "word": "دَائِرَةٌ",
+      "reading": "dāʾira",
+      "meaning": "circle",
+      "example": "تَحِيطُ الدَّائِرَةُ بِمَرْكَزٍ ثَابِتٍ.",
+      "exampleMeaning": "A circle surrounds a fixed center."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "___ تَرْبِطُ كُلَّ مُدْخَلٍ بِمُخْرَجٍ.",
+          "answer": "دَالَّةٌ",
+          "hint": "function"
+        },
+        {
+          "sentence": "___ يُمَثِّلُ جُزْءًا مِنَ الْكُلِّ.",
+          "answer": "كَسْرٌ",
+          "hint": "fraction"
+        },
+        {
+          "sentence": "___ يُسَاوِي أَرْبَعَةً بَعْدَ الْقِسْمَةِ.",
+          "answer": "خَارِجُ الْقِسْمَةِ",
+          "hint": "quotient"
+        },
+        {
+          "sentence": "___ لَهُ ثَلَاثَةُ أَضْلَاعٍ.",
+          "answer": "مُثَلَّثٌ",
+          "hint": "triangle"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "What does ‘مُتَغَيِّرٌ’ mean in mathematics?",
+      "options": [
+        "variable",
+        "circle",
+        "sum",
+        "axis"
+      ],
+      "answer": 0
+    }
+  ]
+}

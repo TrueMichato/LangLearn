@@ -1,0 +1,159 @@
+{
+  "id": "gulf-weekend-leisure",
+  "words": [
+    {
+      "word": "الْوِيكِنْدْ",
+      "reading": "il-wīkend",
+      "meaning": "the weekend",
+      "example": "الْوِيكِنْدْ هَذَا بَنِرُوحْ الْبَحْرْ.",
+      "exampleMeaning": "This weekend we are going to the sea."
+    },
+    {
+      "word": "نِطْلَعْ",
+      "reading": "niṭlaʿ",
+      "meaning": "we go out",
+      "example": "نِطْلَعْ بَعْدَ الْمَغْرِبْ إِذَا الْجَوّ زَيْنْ.",
+      "exampleMeaning": "We go out after sunset if the weather is good."
+    },
+    {
+      "word": "الْبَرّْ",
+      "reading": "il-barr",
+      "meaning": "the desert / open land",
+      "example": "فِي الشِّتَا نِرُوحِ الْبَرّْ وَنْخَيِّمْ.",
+      "exampleMeaning": "In winter we go to the desert and camp."
+    },
+    {
+      "word": "الشَّالِيهْ",
+      "reading": "ish-shālēh",
+      "meaning": "the chalet",
+      "example": "حَجَزْنَا الشَّالِيهْ لِلْعَايْلَةْ.",
+      "exampleMeaning": "We booked the chalet for the family."
+    },
+    {
+      "word": "الْبَحْرْ",
+      "reading": "il-baḥar",
+      "meaning": "the sea",
+      "example": "الْبَحْرْ هَادِي الْيَوْمْ.",
+      "exampleMeaning": "The sea is calm today."
+    },
+    {
+      "word": "قَهْوَةْ",
+      "reading": "gahwa",
+      "meaning": "coffee",
+      "example": "نَاخِذْ قَهْوَةْ وَتَمْرْ مَعَنَا.",
+      "exampleMeaning": "We take coffee and dates with us."
+    },
+    {
+      "word": "شَايْ كَرَكْ",
+      "reading": "shāy karak",
+      "meaning": "karak tea",
+      "example": "بَعْدَ السِّينِمَا نِشْرَبْ شَايْ كَرَكْ.",
+      "exampleMeaning": "After the cinema we drink karak tea."
+    },
+    {
+      "word": "نِتْغَدَّى",
+      "reading": "nitghaddā",
+      "meaning": "we have lunch",
+      "example": "نِتْغَدَّى فِي مَطْعَمْ قَرِيبْ مِنِ الْبَحْرْ.",
+      "exampleMeaning": "We have lunch at a restaurant near the sea."
+    },
+    {
+      "word": "نِتْمَشَّى",
+      "reading": "nitmashshā",
+      "meaning": "we stroll",
+      "example": "نِتْمَشَّى عَلَى الْكُورْنِيشْ بِاللَّيْلْ.",
+      "exampleMeaning": "We stroll on the corniche at night."
+    },
+    {
+      "word": "سِينِمَا",
+      "reading": "sīnimā",
+      "meaning": "cinema",
+      "example": "وَدِّي أَرُوحْ سِينِمَا مَعَ رَبْعِي.",
+      "exampleMeaning": "I want to go to the cinema with my friends."
+    },
+    {
+      "word": "تَخْيِيمْ",
+      "reading": "takhyīm",
+      "meaning": "camping",
+      "example": "التَّخْيِيمْ فِي الْبَرّْ يِحْتَاجْ تَرْتِيبْ.",
+      "exampleMeaning": "Camping in the desert needs planning."
+    },
+    {
+      "word": "مَقْهَى",
+      "reading": "maghā",
+      "meaning": "café",
+      "example": "نِقْعُدْ فِي مَقْهَى هَادِي بَعْدَ الدَّوَامْ.",
+      "exampleMeaning": "We sit in a quiet café after work."
+    },
+    {
+      "word": "سْوَالِفْ",
+      "reading": "swālif",
+      "meaning": "chats / stories",
+      "example": "الْجَلْسَةْ كَانَتْ سْوَالِفْ وَضِحْكْ.",
+      "exampleMeaning": "The gathering was chats and laughter."
+    },
+    {
+      "word": "رَاحَةْ",
+      "reading": "rāḥa",
+      "meaning": "rest",
+      "example": "أَبِي رَاحَةْ بَعْدَ أُسْبُوعْ طَوِيلْ.",
+      "exampleMeaning": "I want rest after a long week."
+    },
+    {
+      "word": "نِسْتَانِسْ",
+      "reading": "nistānis",
+      "meaning": "we have fun",
+      "example": "نِسْتَانِسْ مَعَ الْأَهْلْ فِي الشَّالِيهْ.",
+      "exampleMeaning": "We have fun with the family at the chalet."
+    },
+    {
+      "word": "حَجْزْ",
+      "reading": "ḥajz",
+      "meaning": "booking / reservation",
+      "example": "عِنْدَكْ حَجْزْ لِلسِّينِمَا اللَّيْلَةْ؟",
+      "exampleMeaning": "Do you have a booking for the cinema tonight?"
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "فِي الشِّتَا نِرُوحِ ___ وَنْخَيِّمْ.",
+          "answer": "الْبَرّْ",
+          "hint": "the desert"
+        },
+        {
+          "sentence": "بَعْدَ السِّينِمَا نِشْرَبْ ___.",
+          "answer": "شَايْ كَرَكْ",
+          "hint": "karak tea"
+        },
+        {
+          "sentence": "___ عَلَى الْكُورْنِيشْ بِاللَّيْلْ.",
+          "answer": "نِتْمَشَّى",
+          "hint": "we stroll"
+        },
+        {
+          "sentence": "أَبِي ___ بَعْدَ أُسْبُوعْ طَوِيلْ.",
+          "answer": "رَاحَةْ",
+          "hint": "rest"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "In Gulf Arabic, ‘قَهْوَةْ’ is pronounced with ق as which sound?",
+      "options": [
+        "g, as in gahwa",
+        "sh, as in shay",
+        "ʔ, as in Levantine",
+        "f, as in coffee"
+      ],
+      "answer": 0
+    }
+  ]
+}

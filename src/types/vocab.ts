@@ -4,6 +4,8 @@ export interface VocabLessonMeta {
   order: number;
   wordCount: number;
   level: 'beginner' | 'intermediate' | 'advanced';
+  /** Arabic dialect tag: 'msa' (default), a dialect code, or 'all' (pan-dialectal colloquial). */
+  dialect?: string;
 }
 
 export interface VocabWord {

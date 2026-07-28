@@ -1,0 +1,159 @@
+{
+  "id": "diplomacy-international-relations",
+  "words": [
+    {
+      "word": "دِبْلُومَاسِيَّةٌ",
+      "reading": "diblūmāsiyyatun",
+      "meaning": "diplomacy",
+      "example": "دِبْلُومَاسِيَّةٌ هَادِئَةٌ تَفْتَحُ بَابَ التَّفَاهُمِ.",
+      "exampleMeaning": "Quiet diplomacy opens the door to understanding."
+    },
+    {
+      "word": "سَفِيرٌ",
+      "reading": "safīrun",
+      "meaning": "ambassador",
+      "example": "يُمَثِّلُ سَفِيرٌ بَلَدَهُ فِي الْخَارِجِ.",
+      "exampleMeaning": "An ambassador represents his country abroad."
+    },
+    {
+      "word": "سِفَارَةٌ",
+      "reading": "sifāratun",
+      "meaning": "embassy",
+      "example": "تُقَدِّمُ سِفَارَةٌ خَدَمَاتٍ لِلْمُسَافِرِينَ.",
+      "exampleMeaning": "An embassy provides services to travelers."
+    },
+    {
+      "word": "قُنْصُلِيَّةٌ",
+      "reading": "qunṣuliyyatun",
+      "meaning": "consulate",
+      "example": "تُصْدِرُ قُنْصُلِيَّةٌ وَثَائِقَ رَسْمِيَّةً.",
+      "exampleMeaning": "A consulate issues official documents."
+    },
+    {
+      "word": "مُفَاوَضَاتٌ",
+      "reading": "mufāwaḍātun",
+      "meaning": "negotiations",
+      "example": "مُفَاوَضَاتٌ طَوِيلَةٌ تَنْتَهِي بِاتِّفَاقٍ.",
+      "exampleMeaning": "Long negotiations end with an agreement."
+    },
+    {
+      "word": "مُعَاهَدَةٌ",
+      "reading": "muʿāhadatun",
+      "meaning": "treaty",
+      "example": "تُوَقِّعُ دُوَلٌ مُعَاهَدَةً لِحِمَايَةِ السَّلَامِ.",
+      "exampleMeaning": "States sign a treaty to protect peace."
+    },
+    {
+      "word": "اِتِّفَاقِيَّةٌ",
+      "reading": "ittifāqiyyatun",
+      "meaning": "agreement",
+      "example": "تُنَظِّمُ اِتِّفَاقِيَّةٌ التَّعَاوُنَ بَيْنَ الْبُلْدَانِ.",
+      "exampleMeaning": "An agreement organizes cooperation between countries."
+    },
+    {
+      "word": "وَفْدٌ",
+      "reading": "wafdun",
+      "meaning": "delegation",
+      "example": "يَزُورُ وَفْدٌ الْعَاصِمَةَ لِلْحِوَارِ.",
+      "exampleMeaning": "A delegation visits the capital for dialogue."
+    },
+    {
+      "word": "قِمَّةٌ",
+      "reading": "qimmatun",
+      "meaning": "summit",
+      "example": "تَجْمَعُ قِمَّةٌ قَادَةً مِنْ عِدَّةِ دُوَلٍ.",
+      "exampleMeaning": "A summit gathers leaders from several states."
+    },
+    {
+      "word": "حِلْفٌ",
+      "reading": "ḥilfun",
+      "meaning": "alliance",
+      "example": "يُعَزِّزُ حِلْفٌ أَمْنَ الْمِنْطَقَةِ.",
+      "exampleMeaning": "An alliance strengthens regional security."
+    },
+    {
+      "word": "عُقُوبَاتٌ",
+      "reading": "ʿuqūbātun",
+      "meaning": "sanctions",
+      "example": "تَفْرِضُ عُقُوبَاتٌ ضَغْطًا سِيَاسِيًّا.",
+      "exampleMeaning": "Sanctions impose political pressure."
+    },
+    {
+      "word": "وَسَاطَةٌ",
+      "reading": "wasāṭatun",
+      "meaning": "mediation",
+      "example": "تُسَاعِدُ وَسَاطَةٌ فِي حَلِّ النِّزَاعِ.",
+      "exampleMeaning": "Mediation helps resolve the dispute."
+    },
+    {
+      "word": "بَيَانٌ مُشْتَرَكٌ",
+      "reading": "bayānun mushtarakun",
+      "meaning": "joint statement",
+      "example": "بَيَانٌ مُشْتَرَكٌ يُعْلَنُ بَعْدَ الْقِمَّةِ.",
+      "exampleMeaning": "A joint statement is announced after the summit."
+    },
+    {
+      "word": "عِلَاقَاتٌ ثُنَائِيَّةٌ",
+      "reading": "ʿilāqātun thunāʾiyyatun",
+      "meaning": "bilateral relations",
+      "example": "تَنْمُو عِلَاقَاتٌ ثُنَائِيَّةٌ مَعَ التِّجَارَةِ.",
+      "exampleMeaning": "Bilateral relations grow with trade."
+    },
+    {
+      "word": "حِيَادٌ",
+      "reading": "ḥiyādun",
+      "meaning": "neutrality",
+      "example": "يَحْمِي حِيَادٌ مَوْقِفَ الدَّوْلَةِ فِي الْأَزْمَةِ.",
+      "exampleMeaning": "Neutrality protects the state's position in the crisis."
+    },
+    {
+      "word": "تَطْبِيعٌ",
+      "reading": "taṭbīʿun",
+      "meaning": "normalization",
+      "example": "يَتَطَلَّبُ تَطْبِيعٌ خُطُوَاتٍ دِبْلُومَاسِيَّةً حَذِرَةً.",
+      "exampleMeaning": "Normalization requires careful diplomatic steps."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "___ هَادِئَةٌ تَفْتَحُ بَابَ التَّفَاهُمِ.",
+          "answer": "دِبْلُومَاسِيَّةٌ",
+          "hint": "diplomacy"
+        },
+        {
+          "sentence": "يُمَثِّلُ ___ بَلَدَهُ فِي الْخَارِجِ.",
+          "answer": "سَفِيرٌ",
+          "hint": "ambassador"
+        },
+        {
+          "sentence": "___ طَوِيلَةٌ تَنْتَهِي بِاتِّفَاقٍ.",
+          "answer": "مُفَاوَضَاتٌ",
+          "hint": "negotiations"
+        },
+        {
+          "sentence": "___ يُعْلَنُ بَعْدَ الْقِمَّةِ.",
+          "answer": "بَيَانٌ مُشْتَرَكٌ",
+          "hint": "joint statement"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "What does ‘وَسَاطَةٌ’ mean?",
+      "options": [
+        "mediation",
+        "embassy",
+        "alliance",
+        "sanctions"
+      ],
+      "answer": 0
+    }
+  ]
+}

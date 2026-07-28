@@ -1,0 +1,1432 @@
+[
+  {
+    "id": "greetings",
+    "title": "Greetings & Politeness",
+    "order": 1,
+    "wordCount": 16,
+    "level": "beginner",
+    "dialect": "msa"
+  },
+  {
+    "id": "people-pronouns",
+    "title": "People & Pronouns",
+    "order": 2,
+    "wordCount": 16,
+    "level": "beginner",
+    "dialect": "msa"
+  },
+  {
+    "id": "numbers-1-20",
+    "title": "Numbers 1–20",
+    "order": 3,
+    "wordCount": 18,
+    "level": "beginner",
+    "dialect": "msa"
+  },
+  {
+    "id": "numbers-large",
+    "title": "Numbers 20–1000",
+    "order": 4,
+    "wordCount": 16,
+    "level": "beginner",
+    "dialect": "msa"
+  },
+  {
+    "id": "days-months",
+    "title": "Days, Months & Seasons",
+    "order": 5,
+    "wordCount": 16,
+    "level": "beginner",
+    "dialect": "msa"
+  },
+  {
+    "id": "time",
+    "title": "Telling Time",
+    "order": 6,
+    "wordCount": 16,
+    "level": "beginner",
+    "dialect": "msa"
+  },
+  {
+    "id": "colors",
+    "title": "Colors & Shapes",
+    "order": 7,
+    "wordCount": 16,
+    "level": "beginner",
+    "dialect": "msa"
+  },
+  {
+    "id": "family",
+    "title": "Family Members",
+    "order": 8,
+    "wordCount": 16,
+    "level": "beginner",
+    "dialect": "msa"
+  },
+  {
+    "id": "body",
+    "title": "The Body",
+    "order": 9,
+    "wordCount": 16,
+    "level": "beginner",
+    "dialect": "msa"
+  },
+  {
+    "id": "food-drink",
+    "title": "Food & Drink",
+    "order": 10,
+    "wordCount": 16,
+    "level": "beginner",
+    "dialect": "msa"
+  },
+  {
+    "id": "fruits-vegetables",
+    "title": "Fruits & Vegetables",
+    "order": 11,
+    "wordCount": 16,
+    "level": "beginner",
+    "dialect": "msa"
+  },
+  {
+    "id": "house-furniture",
+    "title": "House & Furniture",
+    "order": 12,
+    "wordCount": 16,
+    "level": "beginner",
+    "dialect": "msa"
+  },
+  {
+    "id": "clothing",
+    "title": "Clothing",
+    "order": 13,
+    "wordCount": 16,
+    "level": "beginner",
+    "dialect": "msa"
+  },
+  {
+    "id": "animals",
+    "title": "Animals",
+    "order": 14,
+    "wordCount": 16,
+    "level": "beginner",
+    "dialect": "msa"
+  },
+  {
+    "id": "weather-nature",
+    "title": "Weather & Nature",
+    "order": 15,
+    "wordCount": 16,
+    "level": "beginner",
+    "dialect": "msa"
+  },
+  {
+    "id": "school",
+    "title": "School & Study",
+    "order": 16,
+    "wordCount": 16,
+    "level": "beginner",
+    "dialect": "msa"
+  },
+  {
+    "id": "city-places",
+    "title": "City & Places",
+    "order": 17,
+    "wordCount": 16,
+    "level": "beginner",
+    "dialect": "msa"
+  },
+  {
+    "id": "directions",
+    "title": "Directions & Location",
+    "order": 18,
+    "wordCount": 16,
+    "level": "beginner",
+    "dialect": "msa"
+  },
+  {
+    "id": "transport",
+    "title": "Transportation",
+    "order": 19,
+    "wordCount": 16,
+    "level": "beginner",
+    "dialect": "msa"
+  },
+  {
+    "id": "shopping-money",
+    "title": "Shopping & Money",
+    "order": 20,
+    "wordCount": 16,
+    "level": "beginner",
+    "dialect": "msa"
+  },
+  {
+    "id": "restaurant-cafe",
+    "title": "Restaurant & Café",
+    "order": 21,
+    "wordCount": 16,
+    "level": "beginner",
+    "dialect": "msa"
+  },
+  {
+    "id": "common-verbs-1",
+    "title": "Common Verbs I",
+    "order": 22,
+    "wordCount": 16,
+    "level": "beginner",
+    "dialect": "msa"
+  },
+  {
+    "id": "common-adjectives",
+    "title": "Common Adjectives",
+    "order": 23,
+    "wordCount": 16,
+    "level": "beginner",
+    "dialect": "msa"
+  },
+  {
+    "id": "opposites",
+    "title": "Opposites (Adjective Pairs)",
+    "order": 24,
+    "wordCount": 16,
+    "level": "beginner",
+    "dialect": "msa"
+  },
+  {
+    "id": "work-professions",
+    "title": "Work & Professions",
+    "order": 25,
+    "wordCount": 16,
+    "level": "intermediate",
+    "dialect": "msa"
+  },
+  {
+    "id": "travel-airport",
+    "title": "Travel & Airport",
+    "order": 26,
+    "wordCount": 16,
+    "level": "intermediate",
+    "dialect": "msa"
+  },
+  {
+    "id": "health-doctor",
+    "title": "Health & the Doctor",
+    "order": 27,
+    "wordCount": 16,
+    "level": "intermediate",
+    "dialect": "msa"
+  },
+  {
+    "id": "common-verbs-2",
+    "title": "Common Verbs II",
+    "order": 28,
+    "wordCount": 16,
+    "level": "intermediate",
+    "dialect": "msa"
+  },
+  {
+    "id": "emotions",
+    "title": "Feelings & Emotions",
+    "order": 29,
+    "wordCount": 16,
+    "level": "intermediate",
+    "dialect": "msa"
+  },
+  {
+    "id": "question-connectors",
+    "title": "Question & Connector Words",
+    "order": 30,
+    "wordCount": 16,
+    "level": "intermediate",
+    "dialect": "msa"
+  },
+  {
+    "id": "time-expressions",
+    "title": "Time Expressions & Adverbs",
+    "order": 31,
+    "wordCount": 16,
+    "level": "intermediate",
+    "dialect": "msa"
+  },
+  {
+    "id": "technology",
+    "title": "Technology & Phone",
+    "order": 32,
+    "wordCount": 16,
+    "level": "intermediate",
+    "dialect": "msa"
+  },
+  {
+    "id": "hobbies-sports",
+    "title": "Hobbies & Sports",
+    "order": 33,
+    "wordCount": 16,
+    "level": "intermediate",
+    "dialect": "msa"
+  },
+  {
+    "id": "nature-geography",
+    "title": "Geography & the Arab World",
+    "order": 34,
+    "wordCount": 16,
+    "level": "intermediate",
+    "dialect": "msa"
+  },
+  {
+    "id": "culture-expressions",
+    "title": "Culture & Common Expressions",
+    "order": 35,
+    "wordCount": 16,
+    "level": "intermediate",
+    "dialect": "msa"
+  },
+  {
+    "id": "egyptian-phrases",
+    "title": "Egyptian Everyday Phrases",
+    "order": 36,
+    "wordCount": 16,
+    "level": "intermediate",
+    "dialect": "egyptian"
+  },
+  {
+    "id": "levantine-phrases",
+    "title": "Levantine Everyday Phrases",
+    "order": 37,
+    "wordCount": 16,
+    "level": "intermediate",
+    "dialect": "levantine"
+  },
+  {
+    "id": "gulf-phrases",
+    "title": "Gulf Everyday Phrases",
+    "order": 38,
+    "wordCount": 16,
+    "level": "intermediate",
+    "dialect": "gulf"
+  },
+  {
+    "id": "colloquial-verbs",
+    "title": "Spoken Colloquial Verbs",
+    "order": 39,
+    "wordCount": 16,
+    "level": "intermediate",
+    "dialect": "all"
+  },
+  {
+    "id": "texting-social",
+    "title": "Texting & Social Expressions",
+    "order": 40,
+    "wordCount": 16,
+    "level": "intermediate",
+    "dialect": "all"
+  },
+  {
+    "id": "kitchen",
+    "title": "Kitchen & Cooking",
+    "order": 41,
+    "wordCount": 16,
+    "level": "beginner",
+    "dialect": "msa"
+  },
+  {
+    "id": "office-work",
+    "title": "Office & Business",
+    "order": 42,
+    "wordCount": 16,
+    "level": "intermediate",
+    "dialect": "msa"
+  },
+  {
+    "id": "sports-fitness",
+    "title": "Sports & Fitness",
+    "order": 43,
+    "wordCount": 16,
+    "level": "intermediate",
+    "dialect": "msa"
+  },
+  {
+    "id": "internet-social",
+    "title": "Internet & Social Media",
+    "order": 44,
+    "wordCount": 16,
+    "level": "intermediate",
+    "dialect": "msa"
+  },
+  {
+    "id": "money-banking",
+    "title": "Money & Banking",
+    "order": 45,
+    "wordCount": 16,
+    "level": "intermediate",
+    "dialect": "msa"
+  },
+  {
+    "id": "medical-pharmacy",
+    "title": "Medical & Pharmacy",
+    "order": 46,
+    "wordCount": 16,
+    "level": "intermediate",
+    "dialect": "msa"
+  },
+  {
+    "id": "common-verbs-3",
+    "title": "Common Verbs III",
+    "order": 47,
+    "wordCount": 16,
+    "level": "intermediate",
+    "dialect": "msa"
+  },
+  {
+    "id": "idioms-proverbs",
+    "title": "Idioms & Proverbs (al-amthāl)",
+    "order": 48,
+    "wordCount": 16,
+    "level": "advanced",
+    "dialect": "msa"
+  },
+  {
+    "id": "religion-holidays",
+    "title": "Religion, Holidays & Celebrations",
+    "order": 49,
+    "wordCount": 16,
+    "level": "intermediate",
+    "dialect": "msa"
+  },
+  {
+    "id": "arts-cinema",
+    "title": "Arts, Music & Cinema",
+    "order": 50,
+    "wordCount": 16,
+    "level": "intermediate",
+    "dialect": "msa"
+  },
+  {
+    "id": "science-environment",
+    "title": "Science & Environment",
+    "order": 51,
+    "wordCount": 16,
+    "level": "advanced",
+    "dialect": "msa"
+  },
+  {
+    "id": "descriptions",
+    "title": "More Adjectives & Descriptions",
+    "order": 52,
+    "wordCount": 16,
+    "level": "intermediate",
+    "dialect": "msa"
+  },
+  {
+    "id": "particles-connectors",
+    "title": "Particles & Connectors",
+    "order": 53,
+    "wordCount": 16,
+    "level": "intermediate",
+    "dialect": "msa"
+  },
+  {
+    "id": "islamic-months-zodiac",
+    "title": "Islamic Months & the Zodiac",
+    "order": 54,
+    "wordCount": 16,
+    "level": "intermediate",
+    "dialect": "msa"
+  },
+  {
+    "id": "maghrebi-phrases",
+    "title": "Maghrebi (Darija) Everyday Phrases",
+    "order": 55,
+    "wordCount": 16,
+    "level": "intermediate",
+    "dialect": "maghrebi"
+  },
+  {
+    "id": "egyptian-phrases-2",
+    "title": "More Egyptian Phrases",
+    "order": 56,
+    "wordCount": 16,
+    "level": "intermediate",
+    "dialect": "egyptian"
+  },
+  {
+    "id": "levantine-phrases-2",
+    "title": "More Levantine Phrases",
+    "order": 57,
+    "wordCount": 16,
+    "level": "intermediate",
+    "dialect": "levantine"
+  },
+  {
+    "id": "countries-nationalities",
+    "title": "Countries & Nationalities",
+    "order": 58,
+    "wordCount": 16,
+    "level": "beginner",
+    "dialect": "msa"
+  },
+  {
+    "id": "government-politics",
+    "title": "Government & Politics",
+    "order": 59,
+    "wordCount": 16,
+    "level": "advanced",
+    "dialect": "msa"
+  },
+  {
+    "id": "law-justice",
+    "title": "Law & Justice",
+    "order": 60,
+    "wordCount": 16,
+    "level": "advanced",
+    "dialect": "msa"
+  },
+  {
+    "id": "tools-hardware",
+    "title": "Tools & Hardware",
+    "order": 61,
+    "wordCount": 16,
+    "level": "intermediate",
+    "dialect": "msa"
+  },
+  {
+    "id": "construction-building",
+    "title": "Construction & Building",
+    "order": 62,
+    "wordCount": 16,
+    "level": "intermediate",
+    "dialect": "msa"
+  },
+  {
+    "id": "music-instruments",
+    "title": "Musical Instruments",
+    "order": 63,
+    "wordCount": 16,
+    "level": "intermediate",
+    "dialect": "msa"
+  },
+  {
+    "id": "plants-trees",
+    "title": "Plants, Trees & Gardening",
+    "order": 64,
+    "wordCount": 16,
+    "level": "intermediate",
+    "dialect": "msa"
+  },
+  {
+    "id": "birds-insects",
+    "title": "Birds & Insects",
+    "order": 65,
+    "wordCount": 16,
+    "level": "intermediate",
+    "dialect": "msa"
+  },
+  {
+    "id": "measurements-quantities",
+    "title": "Measurements & Quantities",
+    "order": 66,
+    "wordCount": 16,
+    "level": "intermediate",
+    "dialect": "msa"
+  },
+  {
+    "id": "business-commerce",
+    "title": "Business & Commerce",
+    "order": 67,
+    "wordCount": 16,
+    "level": "advanced",
+    "dialect": "msa"
+  },
+  {
+    "id": "cooking-verbs",
+    "title": "Cooking Verbs & Kitchen Actions",
+    "order": 68,
+    "wordCount": 16,
+    "level": "intermediate",
+    "dialect": "msa"
+  },
+  {
+    "id": "feelings-detailed",
+    "title": "Emotions & States of Mind",
+    "order": 69,
+    "wordCount": 16,
+    "level": "advanced",
+    "dialect": "msa"
+  },
+  {
+    "id": "proverbs-wisdom",
+    "title": "Proverbs & Words of Wisdom II",
+    "order": 70,
+    "wordCount": 16,
+    "level": "advanced",
+    "dialect": "msa"
+  },
+  {
+    "id": "classical-formal",
+    "title": "Classical & Formal Expressions",
+    "order": 71,
+    "wordCount": 16,
+    "level": "advanced",
+    "dialect": "msa"
+  },
+  {
+    "id": "gulf-phrases-2",
+    "title": "More Gulf Phrases",
+    "order": 72,
+    "wordCount": 16,
+    "level": "intermediate",
+    "dialect": "gulf"
+  },
+  {
+    "id": "ordinal-fractions",
+    "title": "Ordinals, Fractions & Percentages",
+    "order": 73,
+    "wordCount": 16,
+    "level": "beginner",
+    "dialect": "msa"
+  },
+  {
+    "id": "dates-calendar",
+    "title": "Dates & the Calendar",
+    "order": 74,
+    "wordCount": 16,
+    "level": "beginner",
+    "dialect": "msa"
+  },
+  {
+    "id": "professions-2",
+    "title": "More Professions & Workplaces",
+    "order": 75,
+    "wordCount": 16,
+    "level": "intermediate",
+    "dialect": "msa"
+  },
+  {
+    "id": "feelings-3",
+    "title": "Character & Personality Traits",
+    "order": 76,
+    "wordCount": 16,
+    "level": "intermediate",
+    "dialect": "msa"
+  },
+  {
+    "id": "weather-climate",
+    "title": "Weather & Climate in Detail",
+    "order": 77,
+    "wordCount": 16,
+    "level": "intermediate",
+    "dialect": "msa"
+  },
+  {
+    "id": "kitchen-tableware",
+    "title": "Tableware & Kitchen Utensils",
+    "order": 78,
+    "wordCount": 16,
+    "level": "intermediate",
+    "dialect": "msa"
+  },
+  {
+    "id": "vehicles-transport-2",
+    "title": "Vehicles & Getting Around",
+    "order": 79,
+    "wordCount": 16,
+    "level": "intermediate",
+    "dialect": "msa"
+  },
+  {
+    "id": "office-technology",
+    "title": "Office Technology & Stationery",
+    "order": 80,
+    "wordCount": 16,
+    "level": "intermediate",
+    "dialect": "msa"
+  },
+  {
+    "id": "environment-2",
+    "title": "Environment & Sustainability",
+    "order": 81,
+    "wordCount": 16,
+    "level": "advanced",
+    "dialect": "msa"
+  },
+  {
+    "id": "media-news",
+    "title": "Media, News & Journalism",
+    "order": 82,
+    "wordCount": 16,
+    "level": "advanced",
+    "dialect": "msa"
+  },
+  {
+    "id": "academic-subjects",
+    "title": "School & University Subjects",
+    "order": 83,
+    "wordCount": 16,
+    "level": "intermediate",
+    "dialect": "msa"
+  },
+  {
+    "id": "iraqi-phrases",
+    "title": "Iraqi Arabic Everyday Phrases",
+    "order": 84,
+    "wordCount": 16,
+    "level": "intermediate",
+    "dialect": "iraqi"
+  },
+  {
+    "id": "common-verbs-4",
+    "title": "Common Verbs IV",
+    "order": 85,
+    "wordCount": 16,
+    "level": "intermediate",
+    "dialect": "msa"
+  },
+  {
+    "id": "appearance-character",
+    "title": "Appearance & Character",
+    "order": 86,
+    "wordCount": 16,
+    "level": "intermediate",
+    "dialect": "msa"
+  },
+  {
+    "id": "abstract-concepts",
+    "title": "Abstract Concepts: freedom, justice, hope",
+    "order": 87,
+    "wordCount": 16,
+    "level": "advanced",
+    "dialect": "msa"
+  },
+  {
+    "id": "household-chores",
+    "title": "Household Chores & Daily Actions",
+    "order": 88,
+    "wordCount": 16,
+    "level": "beginner",
+    "dialect": "msa"
+  },
+  {
+    "id": "fashion-accessories",
+    "title": "Fashion & Accessories",
+    "order": 89,
+    "wordCount": 16,
+    "level": "intermediate",
+    "dialect": "msa"
+  },
+  {
+    "id": "tourism-sightseeing",
+    "title": "Tourism & Sightseeing",
+    "order": 90,
+    "wordCount": 16,
+    "level": "intermediate",
+    "dialect": "msa"
+  },
+  {
+    "id": "finance-economy",
+    "title": "Finance & the Economy",
+    "order": 91,
+    "wordCount": 16,
+    "level": "advanced",
+    "dialect": "msa"
+  },
+  {
+    "id": "wellbeing-fitness",
+    "title": "Well-being & Fitness",
+    "order": 92,
+    "wordCount": 16,
+    "level": "intermediate",
+    "dialect": "msa"
+  },
+  {
+    "id": "discourse-linkers",
+    "title": "Discourse Linkers & Connecting Words",
+    "order": 93,
+    "wordCount": 16,
+    "level": "advanced",
+    "dialect": "msa"
+  },
+  {
+    "id": "dialect-greetings-compare",
+    "title": "Greetings & Small Talk Across Dialects",
+    "order": 94,
+    "wordCount": 16,
+    "level": "intermediate",
+    "dialect": "all"
+  },
+  {
+    "id": "crafts-hobbies",
+    "title": "Crafts & Hobbies",
+    "order": 95,
+    "wordCount": 16,
+    "level": "intermediate",
+    "dialect": "msa"
+  },
+  {
+    "id": "emergencies-safety",
+    "title": "Emergencies & Safety",
+    "order": 96,
+    "wordCount": 16,
+    "level": "intermediate",
+    "dialect": "msa"
+  },
+  {
+    "id": "banking-detailed",
+    "title": "At the Bank in Detail",
+    "order": 97,
+    "wordCount": 16,
+    "level": "advanced",
+    "dialect": "msa"
+  },
+  {
+    "id": "computers-programming",
+    "title": "Computers & Programming",
+    "order": 98,
+    "wordCount": 16,
+    "level": "advanced",
+    "dialect": "msa"
+  },
+  {
+    "id": "farming-agriculture",
+    "title": "Farming & Agriculture",
+    "order": 99,
+    "wordCount": 16,
+    "level": "intermediate",
+    "dialect": "msa"
+  },
+  {
+    "id": "natural-disasters",
+    "title": "Weather Extremes & Natural Disasters",
+    "order": 100,
+    "wordCount": 16,
+    "level": "advanced",
+    "dialect": "msa"
+  },
+  {
+    "id": "body-health-internal",
+    "title": "The Body: Organs & Health",
+    "order": 101,
+    "wordCount": 16,
+    "level": "intermediate",
+    "dialect": "msa"
+  },
+  {
+    "id": "law-government-2",
+    "title": "Citizenship, Rights & Duties",
+    "order": 102,
+    "wordCount": 16,
+    "level": "advanced",
+    "dialect": "msa"
+  },
+  {
+    "id": "restaurant-menu",
+    "title": "Reading a Restaurant Menu",
+    "order": 103,
+    "wordCount": 16,
+    "level": "intermediate",
+    "dialect": "msa"
+  },
+  {
+    "id": "airport-travel-2",
+    "title": "At the Airport & Border",
+    "order": 104,
+    "wordCount": 16,
+    "level": "intermediate",
+    "dialect": "msa"
+  },
+  {
+    "id": "weather-forecast",
+    "title": "The Weather Forecast",
+    "order": 105,
+    "wordCount": 16,
+    "level": "intermediate",
+    "dialect": "msa"
+  },
+  {
+    "id": "social-relationships",
+    "title": "Relationships & Social Life",
+    "order": 106,
+    "wordCount": 16,
+    "level": "intermediate",
+    "dialect": "msa"
+  },
+  {
+    "id": "shopping-bargaining",
+    "title": "Shopping & Bargaining",
+    "order": 107,
+    "wordCount": 16,
+    "level": "intermediate",
+    "dialect": "msa"
+  },
+  {
+    "id": "religion-culture-2",
+    "title": "Religion & Cultural Life",
+    "order": 108,
+    "wordCount": 16,
+    "level": "advanced",
+    "dialect": "msa"
+  },
+  {
+    "id": "egyptian-phrases-3",
+    "title": "More Egyptian Everyday Phrases",
+    "order": 109,
+    "wordCount": 16,
+    "level": "intermediate",
+    "dialect": "egyptian"
+  },
+  {
+    "id": "levantine-phrases-3",
+    "title": "More Levantine Everyday Phrases",
+    "order": 110,
+    "wordCount": 16,
+    "level": "intermediate",
+    "dialect": "levantine"
+  },
+  {
+    "id": "at-the-hospital",
+    "title": "At the Hospital",
+    "order": 111,
+    "wordCount": 16,
+    "level": "intermediate",
+    "dialect": "msa"
+  },
+  {
+    "id": "job-application",
+    "title": "Job Applications & CVs",
+    "order": 112,
+    "wordCount": 16,
+    "level": "advanced",
+    "dialect": "msa"
+  },
+  {
+    "id": "renting-housing",
+    "title": "Renting & Housing",
+    "order": 113,
+    "wordCount": 16,
+    "level": "intermediate",
+    "dialect": "msa"
+  },
+  {
+    "id": "public-transport-2",
+    "title": "Public Transport & the Metro",
+    "order": 114,
+    "wordCount": 16,
+    "level": "intermediate",
+    "dialect": "msa"
+  },
+  {
+    "id": "environment-nature-2",
+    "title": "Landscapes & Geography",
+    "order": 115,
+    "wordCount": 16,
+    "level": "intermediate",
+    "dialect": "msa"
+  },
+  {
+    "id": "history-civilization",
+    "title": "History & Civilization",
+    "order": 116,
+    "wordCount": 16,
+    "level": "advanced",
+    "dialect": "msa"
+  },
+  {
+    "id": "gulf-phrases-3",
+    "title": "More Gulf Everyday Phrases",
+    "order": 117,
+    "wordCount": 16,
+    "level": "intermediate",
+    "dialect": "gulf"
+  },
+  {
+    "id": "maghrebi-phrases-2",
+    "title": "More Maghrebi (Darija) Phrases",
+    "order": 118,
+    "wordCount": 16,
+    "level": "intermediate",
+    "dialect": "maghrebi"
+  },
+  {
+    "id": "feelings-reactions",
+    "title": "Reactions & Interjections",
+    "order": 119,
+    "wordCount": 16,
+    "level": "beginner",
+    "dialect": "msa"
+  },
+  {
+    "id": "daily-routine-verbs",
+    "title": "Daily-Routine Verbs",
+    "order": 120,
+    "wordCount": 16,
+    "level": "beginner",
+    "dialect": "msa"
+  },
+  {
+    "id": "describing-places",
+    "title": "Describing Places & Buildings",
+    "order": 121,
+    "wordCount": 16,
+    "level": "intermediate",
+    "dialect": "msa"
+  },
+  {
+    "id": "iraqi-phrases-2",
+    "title": "More Iraqi Everyday Phrases",
+    "order": 122,
+    "wordCount": 16,
+    "level": "intermediate",
+    "dialect": "iraqi"
+  },
+  {
+    "id": "egyptian-food-phrases",
+    "title": "Egyptian Food & Café Talk",
+    "order": 123,
+    "wordCount": 16,
+    "level": "intermediate",
+    "dialect": "egyptian"
+  },
+  {
+    "id": "levantine-daily-phrases",
+    "title": "Levantine Daily-Life Phrases",
+    "order": 124,
+    "wordCount": 16,
+    "level": "intermediate",
+    "dialect": "levantine"
+  },
+  {
+    "id": "iraqi-market-phrases",
+    "title": "Iraqi Market & Bargaining Phrases",
+    "order": 125,
+    "wordCount": 16,
+    "level": "intermediate",
+    "dialect": "iraqi"
+  },
+  {
+    "id": "maghrebi-cafe-phrases",
+    "title": "Maghrebi Café & Street Phrases",
+    "order": 126,
+    "wordCount": 16,
+    "level": "intermediate",
+    "dialect": "maghrebi"
+  },
+  {
+    "id": "gulf-directions-phrases",
+    "title": "Gulf Directions & Taxi Phrases",
+    "order": 127,
+    "wordCount": 16,
+    "level": "intermediate",
+    "dialect": "gulf"
+  },
+  {
+    "id": "astronomy-space",
+    "title": "Astronomy & Space",
+    "order": 128,
+    "wordCount": 16,
+    "level": "advanced"
+  },
+  {
+    "id": "publishing-literature",
+    "title": "Publishing & Literature",
+    "order": 129,
+    "wordCount": 16,
+    "level": "advanced"
+  },
+  {
+    "id": "research-data-methods",
+    "title": "Research & Data Methods",
+    "order": 130,
+    "wordCount": 16,
+    "level": "advanced"
+  },
+  {
+    "id": "maritime-seafaring",
+    "title": "Maritime & Seafaring",
+    "order": 131,
+    "wordCount": 16,
+    "level": "intermediate"
+  },
+  {
+    "id": "diplomacy-international-relations",
+    "title": "Diplomacy & International Relations",
+    "order": 132,
+    "wordCount": 16,
+    "level": "advanced"
+  },
+  {
+    "id": "egyptian-phone-texting",
+    "title": "Egyptian Phone & Texting",
+    "order": 133,
+    "wordCount": 16,
+    "level": "intermediate",
+    "dialect": "egyptian"
+  },
+  {
+    "id": "levantine-family-visits",
+    "title": "Levantine Family & Visits",
+    "order": 134,
+    "wordCount": 16,
+    "level": "beginner",
+    "dialect": "levantine"
+  },
+  {
+    "id": "gulf-hospitality-hosting",
+    "title": "Gulf Hosting & Hospitality",
+    "order": 135,
+    "wordCount": 16,
+    "level": "intermediate",
+    "dialect": "gulf"
+  },
+  {
+    "id": "iraqi-health-pharmacy",
+    "title": "Iraqi Health & Pharmacy",
+    "order": 136,
+    "wordCount": 16,
+    "level": "intermediate",
+    "dialect": "iraqi"
+  },
+  {
+    "id": "maghrebi-weather-plans",
+    "title": "Maghrebi Weather & Plans",
+    "order": 137,
+    "wordCount": 16,
+    "level": "beginner",
+    "dialect": "maghrebi"
+  },
+  {
+    "id": "renewable-energy-utilities",
+    "title": "Renewable Energy & Utilities",
+    "order": 138,
+    "wordCount": 16,
+    "level": "advanced"
+  },
+  {
+    "id": "theatre-performing-arts",
+    "title": "Theatre & Performing Arts",
+    "order": 139,
+    "wordCount": 16,
+    "level": "intermediate"
+  },
+  {
+    "id": "mental-health-counseling",
+    "title": "Mental Health & Counseling",
+    "order": 140,
+    "wordCount": 16,
+    "level": "advanced"
+  },
+  {
+    "id": "egyptian-kids-school",
+    "title": "Egyptian Kids & School",
+    "order": 141,
+    "wordCount": 16,
+    "level": "beginner",
+    "dialect": "egyptian"
+  },
+  {
+    "id": "gulf-money-haggling",
+    "title": "Gulf Money & Haggling",
+    "order": 142,
+    "wordCount": 16,
+    "level": "beginner",
+    "dialect": "gulf"
+  },
+  {
+    "id": "iraqi-work-jobs",
+    "title": "Iraqi Work & Jobs",
+    "order": 143,
+    "wordCount": 16,
+    "level": "intermediate",
+    "dialect": "iraqi"
+  },
+  {
+    "id": "maghrebi-phone-internet",
+    "title": "Maghrebi Phone & Internet",
+    "order": 144,
+    "wordCount": 16,
+    "level": "beginner",
+    "dialect": "maghrebi"
+  },
+  {
+    "id": "cybersecurity-online-safety",
+    "title": "Cybersecurity & Online Safety",
+    "order": 145,
+    "wordCount": 16,
+    "level": "intermediate"
+  },
+  {
+    "id": "postal-mail-delivery",
+    "title": "Postal Mail & Delivery",
+    "order": 146,
+    "wordCount": 16,
+    "level": "beginner"
+  },
+  {
+    "id": "photography-cameras",
+    "title": "Photography & Cameras",
+    "order": 147,
+    "wordCount": 16,
+    "level": "beginner"
+  },
+  {
+    "id": "materials-textures",
+    "title": "Materials & Textures",
+    "order": 148,
+    "wordCount": 16,
+    "level": "beginner"
+  },
+  {
+    "id": "levantine-making-plans",
+    "title": "Levantine Making Plans & Invitations",
+    "order": 149,
+    "wordCount": 16,
+    "level": "beginner",
+    "dialect": "levantine"
+  },
+  {
+    "id": "iraqi-home-visits-tea",
+    "title": "Iraqi Home Visits & Tea",
+    "order": 150,
+    "wordCount": 16,
+    "level": "beginner",
+    "dialect": "iraqi"
+  },
+  {
+    "id": "maghrebi-complaints-problems",
+    "title": "Maghrebi Complaints & Problems",
+    "order": 151,
+    "wordCount": 16,
+    "level": "intermediate",
+    "dialect": "maghrebi"
+  },
+  {
+    "id": "egyptian-compliments-small-talk",
+    "title": "Egyptian Compliments & Small Talk",
+    "order": 152,
+    "wordCount": 16,
+    "level": "beginner",
+    "dialect": "egyptian"
+  },
+  {
+    "id": "artificial-intelligence-robotics",
+    "title": "Artificial Intelligence & Robotics",
+    "order": 153,
+    "wordCount": 16,
+    "level": "intermediate"
+  },
+  {
+    "id": "manufacturing-industry",
+    "title": "Manufacturing & Industry",
+    "order": 154,
+    "wordCount": 16,
+    "level": "intermediate"
+  },
+  {
+    "id": "insurance-risk",
+    "title": "Insurance & Risk",
+    "order": 155,
+    "wordCount": 16,
+    "level": "intermediate"
+  },
+  {
+    "id": "museums-archaeology",
+    "title": "Museums & Archaeology",
+    "order": 156,
+    "wordCount": 16,
+    "level": "intermediate"
+  },
+  {
+    "id": "egyptian-barber-salon",
+    "title": "Egyptian Barber & Salon",
+    "order": 157,
+    "wordCount": 16,
+    "level": "beginner",
+    "dialect": "egyptian"
+  },
+  {
+    "id": "egyptian-sports-talk",
+    "title": "Egyptian Sports Talk",
+    "order": 158,
+    "wordCount": 16,
+    "level": "beginner",
+    "dialect": "egyptian"
+  },
+  {
+    "id": "levantine-apologies-excuses",
+    "title": "Levantine Apologies & Excuses",
+    "order": 159,
+    "wordCount": 16,
+    "level": "beginner",
+    "dialect": "levantine"
+  },
+  {
+    "id": "levantine-weather-chat",
+    "title": "Levantine Weather Chat",
+    "order": 160,
+    "wordCount": 16,
+    "level": "beginner",
+    "dialect": "levantine"
+  },
+  {
+    "id": "gulf-family-kids",
+    "title": "Gulf Family & Kids",
+    "order": 161,
+    "wordCount": 16,
+    "level": "beginner",
+    "dialect": "gulf"
+  },
+  {
+    "id": "gulf-weekend-leisure",
+    "title": "Gulf Weekend & Leisure",
+    "order": 162,
+    "wordCount": 16,
+    "level": "beginner",
+    "dialect": "gulf"
+  },
+  {
+    "id": "iraqi-neighbors-community",
+    "title": "Iraqi Neighbors & Community",
+    "order": 163,
+    "wordCount": 16,
+    "level": "beginner",
+    "dialect": "iraqi"
+  },
+  {
+    "id": "iraqi-feelings-reactions",
+    "title": "Iraqi Feelings & Reactions",
+    "order": 164,
+    "wordCount": 16,
+    "level": "beginner",
+    "dialect": "iraqi"
+  },
+  {
+    "id": "maghrebi-cooking-kitchen",
+    "title": "Maghrebi Cooking & Kitchen",
+    "order": 165,
+    "wordCount": 16,
+    "level": "beginner",
+    "dialect": "maghrebi"
+  },
+  {
+    "id": "maghrebi-shopping-clothes",
+    "title": "Maghrebi Shopping for Clothes",
+    "order": 166,
+    "wordCount": 16,
+    "level": "beginner",
+    "dialect": "maghrebi"
+  },
+  {
+    "id": "gulf-car-workshop",
+    "title": "Gulf Car & Workshop",
+    "order": 167,
+    "wordCount": 16,
+    "level": "beginner",
+    "dialect": "gulf"
+  },
+  {
+    "id": "iraqi-university-campus",
+    "title": "Iraqi University & Campus",
+    "order": 168,
+    "wordCount": 16,
+    "level": "beginner",
+    "dialect": "iraqi"
+  },
+  {
+    "id": "maghrebi-public-offices",
+    "title": "Maghrebi Public Offices & Paperwork",
+    "order": 169,
+    "wordCount": 16,
+    "level": "beginner",
+    "dialect": "maghrebi"
+  },
+  {
+    "id": "chemistry-lab-terms",
+    "title": "Chemistry & Lab Terms",
+    "order": 170,
+    "wordCount": 16,
+    "level": "advanced"
+  },
+  {
+    "id": "physics-forces-energy",
+    "title": "Physics: Forces & Energy",
+    "order": 171,
+    "wordCount": 16,
+    "level": "advanced"
+  },
+  {
+    "id": "biology-cells-genetics",
+    "title": "Biology: Cells & Genetics",
+    "order": 172,
+    "wordCount": 16,
+    "level": "advanced"
+  },
+  {
+    "id": "mathematics-terms",
+    "title": "Mathematics Terms",
+    "order": 173,
+    "wordCount": 16,
+    "level": "intermediate"
+  },
+  {
+    "id": "geology-rocks-minerals",
+    "title": "Geology: Rocks & Minerals",
+    "order": 174,
+    "wordCount": 16,
+    "level": "advanced"
+  },
+  {
+    "id": "levantine-bakery-breakfast",
+    "title": "Levantine Bakery & Breakfast",
+    "order": 175,
+    "wordCount": 16,
+    "level": "beginner",
+    "dialect": "levantine"
+  },
+  {
+    "id": "levantine-home-repairs",
+    "title": "Levantine Home Repairs",
+    "order": 176,
+    "wordCount": 16,
+    "level": "beginner",
+    "dialect": "levantine"
+  },
+  {
+    "id": "maghrebi-beach-day",
+    "title": "Maghrebi Beach Day",
+    "order": 177,
+    "wordCount": 16,
+    "level": "beginner",
+    "dialect": "maghrebi"
+  },
+  {
+    "id": "marine-life-ocean-ecology",
+    "title": "Marine Life & Ocean Ecology",
+    "order": 178,
+    "wordCount": 16,
+    "level": "advanced"
+  },
+  {
+    "id": "desert-ecology-climate",
+    "title": "Desert Ecology & Climate",
+    "order": 179,
+    "wordCount": 16,
+    "level": "advanced"
+  },
+  {
+    "id": "celestial-observation-telescopes",
+    "title": "Celestial Observation & Telescopes",
+    "order": 180,
+    "wordCount": 16,
+    "level": "advanced"
+  },
+  {
+    "id": "dance-folklore",
+    "title": "Dance & Folklore",
+    "order": 181,
+    "wordCount": 16,
+    "level": "intermediate"
+  },
+  {
+    "id": "gemstones-jewelry",
+    "title": "Gemstones & Jewelry",
+    "order": 182,
+    "wordCount": 16,
+    "level": "intermediate"
+  }
+]

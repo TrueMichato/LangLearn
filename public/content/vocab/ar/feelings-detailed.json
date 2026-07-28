@@ -1,0 +1,183 @@
+{
+  "id": "feelings-detailed",
+  "words": [
+    {
+      "word": "قَلَقٌ",
+      "reading": "qalaqun",
+      "meaning": "anxiety / worry",
+      "example": "قَلَقٌ خَفِيفٌ ظَهَرَ عَلَى وَجْهِ الطَّالِبِ.",
+      "exampleMeaning": "Slight anxiety appeared on the student’s face."
+    },
+    {
+      "word": "اِطْمِئْنَانٌ",
+      "reading": "iṭmiʾnānun",
+      "meaning": "reassurance / peace of mind",
+      "example": "اِطْمِئْنَانٌ عَمِيقٌ مَلَأَ قَلْبَ الْأُمِّ.",
+      "exampleMeaning": "Deep reassurance filled the mother’s heart."
+    },
+    {
+      "word": "حَنِينٌ",
+      "reading": "ḥanīnun",
+      "meaning": "longing / nostalgia",
+      "example": "حَنِينٌ قَدِيمٌ أَعَادَهُ صَوْتُ الْمَطَرِ.",
+      "exampleMeaning": "An old longing was brought back by the sound of rain."
+    },
+    {
+      "word": "خَيْبَةُ أَمَلٍ",
+      "reading": "khaybatu ʾamalin",
+      "meaning": "disappointment",
+      "example": "خَيْبَةُ أَمَلٍ لَاحَتْ بَعْدَ إِلْغَاءِ الرِّحْلَةِ.",
+      "exampleMeaning": "Disappointment appeared after the trip was canceled."
+    },
+    {
+      "word": "اِرْتِيَاحٌ",
+      "reading": "irtiyāḥun",
+      "meaning": "relief / ease",
+      "example": "شَعَرَ الْفَرِيقُ بِارْتِيَاحٍ بَعْدَ نَجَاحِ التَّجْرِبَةِ.",
+      "exampleMeaning": "The team felt relief after the experiment succeeded."
+    },
+    {
+      "word": "حَيْرَةٌ",
+      "reading": "ḥayratun",
+      "meaning": "confusion / perplexity",
+      "example": "وَقَفَتْ هِنْدٌ فِي حَيْرَةٍ أَمَامَ الْخِيَارَيْنِ.",
+      "exampleMeaning": "Hind stood in confusion before the two choices."
+    },
+    {
+      "word": "غَيْرَةٌ",
+      "reading": "ghayratun",
+      "meaning": "jealousy",
+      "example": "تَحَوَّلَتِ الْغَيْرَةُ إِلَى مُنَافَسَةٍ صِحِّيَّةٍ.",
+      "exampleMeaning": "Jealousy turned into healthy competition."
+    },
+    {
+      "word": "اِمْتِنَانٌ",
+      "reading": "imtinānun",
+      "meaning": "gratitude",
+      "example": "عَبَّرَ الطَّالِبُ عَنْ اِمْتِنَانٍ كَبِيرٍ لِأُسْتَاذِهِ.",
+      "exampleMeaning": "The student expressed great gratitude to his teacher."
+    },
+    {
+      "word": "فَخْرٌ",
+      "reading": "fakhrun",
+      "meaning": "pride",
+      "example": "شَعَرَ الْأَبُ بِفَخْرٍ عِنْدَ تَخَرُّجِ ابْنَتِهِ.",
+      "exampleMeaning": "The father felt pride at his daughter’s graduation."
+    },
+    {
+      "word": "نَدَمٌ",
+      "reading": "nadamun",
+      "meaning": "regret",
+      "example": "ظَهَرَ النَّدَمُ فِي صَوْتِهِ بَعْدَ الِاعْتِذَارِ.",
+      "exampleMeaning": "Regret appeared in his voice after the apology."
+    },
+    {
+      "word": "تَوَتُّرٌ",
+      "reading": "tawatturun",
+      "meaning": "tension / stress",
+      "example": "زَادَ التَّوَتُّرُ قَبْلَ بِدَايَةِ الْمُبَارَاةِ.",
+      "exampleMeaning": "Tension increased before the start of the match."
+    },
+    {
+      "word": "حَمَاسٌ",
+      "reading": "ḥamāsun",
+      "meaning": "enthusiasm",
+      "example": "مَلَأَ الْحَمَاسُ قَاعَةَ التَّدْرِيبِ.",
+      "exampleMeaning": "Enthusiasm filled the training hall."
+    },
+    {
+      "word": "اِسْتِيَاءٌ",
+      "reading": "istiyāʾun",
+      "meaning": "annoyance / displeasure",
+      "example": "أَبْدَى الْعُمَلَاءُ اِسْتِيَاءً مِنَ التَّأْخِيرِ.",
+      "exampleMeaning": "The customers showed displeasure at the delay."
+    },
+    {
+      "word": "رِضًا",
+      "reading": "riḍan",
+      "meaning": "contentment / satisfaction",
+      "example": "يَمْنَحُ الْعَمَلُ الْمُتْقَنُ رِضًا دَاخِلِيًّا.",
+      "exampleMeaning": "Well-done work gives inner satisfaction."
+    },
+    {
+      "word": "وَحْدَةٌ",
+      "reading": "waḥdatun",
+      "meaning": "loneliness",
+      "example": "خَفَّفَتِ الرِّسَالَةُ وَحْدَةَ الْمُسَافِرِ.",
+      "exampleMeaning": "The message eased the traveler’s loneliness."
+    },
+    {
+      "word": "ذُهُولٌ",
+      "reading": "dhuhūlun",
+      "meaning": "astonishment / shock",
+      "example": "أَصَابَ الْجُمْهُورَ ذُهُولٌ بَعْدَ النَّتِيجَةِ.",
+      "exampleMeaning": "Astonishment struck the audience after the result."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "___ خَفِيفٌ ظَهَرَ عَلَى وَجْهِ الطَّالِبِ.",
+          "answer": "قَلَقٌ",
+          "hint": "anxiety / worry"
+        },
+        {
+          "sentence": "___ عَمِيقٌ مَلَأَ قَلْبَ الْأُمِّ.",
+          "answer": "اِطْمِئْنَانٌ",
+          "hint": "reassurance / peace of mind"
+        },
+        {
+          "sentence": "___ قَدِيمٌ أَعَادَهُ صَوْتُ الْمَطَرِ.",
+          "answer": "حَنِينٌ",
+          "hint": "longing / nostalgia"
+        },
+        {
+          "sentence": "___ لَاحَتْ بَعْدَ إِلْغَاءِ الرِّحْلَةِ.",
+          "answer": "خَيْبَةُ أَمَلٍ",
+          "hint": "disappointment"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "items": [
+        {
+          "question": "What does ‘قَلَقٌ’ mean?",
+          "options": [
+            "reassurance / peace of mind",
+            "anxiety / worry",
+            "longing / nostalgia",
+            "disappointment"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What does ‘اِطْمِئْنَانٌ’ mean?",
+          "options": [
+            "longing / nostalgia",
+            "reassurance / peace of mind",
+            "disappointment",
+            "relief / ease"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What does ‘حَنِينٌ’ mean?",
+          "options": [
+            "disappointment",
+            "longing / nostalgia",
+            "relief / ease",
+            "confusion / perplexity"
+          ],
+          "answer": 1
+        }
+      ]
+    }
+  ]
+}

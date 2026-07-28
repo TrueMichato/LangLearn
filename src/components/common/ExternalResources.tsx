@@ -245,6 +245,174 @@ const RESOURCES: Record<string, ResourceCategory[]> = {
       ],
     },
   ],
+  ar: [
+    {
+      label: 'Grammar & Learning',
+      emoji: '📖',
+      resources: [
+        {
+          name: 'Madinah Arabic',
+          url: 'https://www.madinaharabic.com/',
+          description: 'Two free structured courses from the Arabic alphabet through grammar.',
+        },
+        {
+          name: 'Language Transfer — Arabic',
+          url: 'https://www.languagetransfer.org/',
+          description: 'Free all-audio "Introduction to Arabic" course that builds intuition step by step.',
+        },
+        {
+          name: 'ArabicOnline.eu',
+          url: 'http://www.arabiconline.eu/',
+          description: 'EU-funded course and resources for Modern Standard Arabic.',
+        },
+        {
+          name: 'Learning Arabic — Al Jazeera',
+          url: 'http://learning.aljazeera.net/arabic',
+          description: 'Guides, articles and resources for learners from Al Jazeera.',
+        },
+        {
+          name: 'All The Arabic You Never Learned…',
+          url: 'http://allthearabicyouneverlearnedthefirsttimearound.com/',
+          description: 'A thorough, well-loved free grammar reference for serious learners.',
+        },
+        {
+          name: 'Learn Arabic Online',
+          url: 'http://www.learnarabiconline.com/',
+          description: 'In-depth lessons on classical/advanced Arabic grammar (naḥw & ṣarf).',
+        },
+      ],
+    },
+    {
+      label: 'Dictionaries & Tools',
+      emoji: '🔍',
+      resources: [
+        {
+          name: 'Qutrub — Verb Conjugator',
+          url: 'https://qutrub.arabeyes.org/',
+          description: 'Conjugate any Arabic verb across all tenses and persons.',
+        },
+        {
+          name: 'Mo3jam — Dialect Dictionary',
+          url: 'https://ar.mo3jam.com/',
+          description: 'Crowd-sourced dictionary of colloquial words across Arabic dialects.',
+        },
+        {
+          name: 'Tafqit — Numbers to Words',
+          url: 'https://tafqit.com/',
+          description: 'Convert any number into fully spelled-out (and correctly inflected) Arabic.',
+        },
+        {
+          name: 'Reverso Context (English–Arabic)',
+          url: 'https://context.reverso.net/translation/english-arabic/',
+          description: 'See words and phrases translated in real bilingual example sentences.',
+        },
+        {
+          name: 'Forvo — Arabic',
+          url: 'https://forvo.com/languages/ar/',
+          description: 'Hear any word pronounced by native speakers from different regions.',
+        },
+      ],
+    },
+    {
+      label: 'Grammar & Vocab References',
+      emoji: '🔤',
+      resources: [
+        {
+          name: 'Arabic — Desert Sky',
+          url: 'http://arabic.desert-sky.net/',
+          description: 'Clear MSA grammar and vocabulary reference (with Egyptian notes).',
+        },
+        {
+          name: 'Lisaan Masry',
+          url: 'http://www.lisaanmasry.com/',
+          description: 'Egyptian Arabic grammar guide and dictionary for colloquial learners.',
+        },
+        {
+          name: 'Book2 — Arabic (MSA)',
+          url: 'https://www.goethe-verlag.com/book2/EM/',
+          description: 'Free phrasebook course with audio across 100 everyday topics.',
+        },
+      ],
+    },
+    {
+      label: 'News, Media & Audio',
+      emoji: '📻',
+      resources: [
+        {
+          name: 'Al Jazeera',
+          url: 'https://www.aljazeera.net/',
+          description: 'Major Arabic news site — clear MSA headlines, articles and video for reading & listening.',
+        },
+        {
+          name: 'BBC Arabic',
+          url: 'https://www.bbc.com/arabic',
+          description: 'World news in accessible Modern Standard Arabic, with audio and video.',
+        },
+        {
+          name: 'Al-Bab — Arab newspapers',
+          url: 'http://www.al-bab.com/arab/newspapers.htm',
+          description: 'A directory of Arabic newspapers across the region for authentic reading.',
+        },
+        {
+          name: 'SBS Arabic',
+          url: 'https://www.sbs.com.au/language/arabic',
+          description: 'News and podcasts in Arabic, produced for a diaspora audience.',
+        },
+        {
+          name: 'Arabic Music Radio',
+          url: 'https://tunein.com/radio/Arabic-g135/',
+          description: 'A collection of live Arabic radio stations — great passive listening.',
+        },
+      ],
+    },
+    {
+      label: 'Dialects (Colloquial)',
+      emoji: '🗣️',
+      resources: [
+        {
+          name: 'Lisaan Masry (Egyptian)',
+          url: 'http://www.lisaanmasry.com/',
+          description: 'Grammar guide and dictionary dedicated to Egyptian Arabic.',
+        },
+        {
+          name: 'abcLeb (Lebanese/Levantine)',
+          url: 'http://www.abcleb.com/',
+          description: 'Eng↔Lebanese glossaries and a colloquial verb conjugator.',
+        },
+        {
+          name: 'SpeakMoroccan (Maghrebi)',
+          url: 'http://www.speakmoroccan.com/',
+          description: 'Phrases and vocabulary for Moroccan Darija.',
+        },
+        {
+          name: 'SpeakDziri (Algerian)',
+          url: 'https://sites.google.com/site/speakdziri/home',
+          description: 'Alphabet guide, grammar, phrases and vocab for Algerian Arabic.',
+        },
+        {
+          name: 'Peace Corps Moroccan Arabic',
+          url: 'https://www.livelingua.com/peace-corps/Arabic-Moroccan/',
+          description: 'Free textbook + audio primer for Moroccan Darija.',
+        },
+      ],
+    },
+    {
+      label: 'Community',
+      emoji: '🌐',
+      resources: [
+        {
+          name: 'r/learn_arabic',
+          url: 'https://www.reddit.com/r/learn_arabic/',
+          description: 'Active community and resource wiki for Arabic learners of all levels.',
+        },
+        {
+          name: 'r/arabic',
+          url: 'https://www.reddit.com/r/arabic/',
+          description: 'General Arabic subreddit — great for questions answered by fluent speakers.',
+        },
+      ],
+    },
+  ],
   ro: [
     {
       label: 'Grammar & Learning',

@@ -1,0 +1,183 @@
+{
+  "id": "office-work",
+  "words": [
+    {
+      "word": "مَكْتَبٌ",
+      "reading": "maktabun",
+      "meaning": "office / desk",
+      "example": "يَقَعُ مَكْتَبُ الْمُدِيرِ فِي الطَّابِقِ الثَّانِي.",
+      "exampleMeaning": "The manager's office is on the second floor."
+    },
+    {
+      "word": "شَرِكَةٌ",
+      "reading": "sharikatun",
+      "meaning": "company",
+      "example": "تَعْمَلُ سَلْمَى فِي شَرِكَةٍ كَبِيرَةٍ.",
+      "exampleMeaning": "Salma works in a large company."
+    },
+    {
+      "word": "اِجْتِمَاعٌ",
+      "reading": "ijtimāʿun",
+      "meaning": "meeting",
+      "example": "بَدَأَ اِجْتِمَاعُ الْفَرِيقِ فِي السَّاعَةِ التَّاسِعَةِ.",
+      "exampleMeaning": "The meeting began at nine o'clock."
+    },
+    {
+      "word": "مُدِيرٌ",
+      "reading": "mudīrun",
+      "meaning": "manager",
+      "example": "شَرَحَ الْمُدِيرُ الْخُطَّةَ لِلْفَرِيقِ.",
+      "exampleMeaning": "The manager explained the plan to the team."
+    },
+    {
+      "word": "مُوَظَّفٌ",
+      "reading": "muwaẓẓafun",
+      "meaning": "employee",
+      "example": "كُلُّ مُوَظَّفٍ يَسْتَلِمُ بَرِيدًا جَدِيدًا.",
+      "exampleMeaning": "Every employee receives new mail."
+    },
+    {
+      "word": "زَمِيلٌ",
+      "reading": "zamīlun",
+      "meaning": "colleague",
+      "example": "سَاعَدَنِي زَمِيلٌ فِي إِعْدَادِ التَّقْرِيرِ.",
+      "exampleMeaning": "A colleague helped me prepare the report."
+    },
+    {
+      "word": "عَمِيلٌ",
+      "reading": "ʿamīlun",
+      "meaning": "client",
+      "example": "اِتَّصَلَ عَمِيلٌ بِالْمَكْتَبِ صَبَاحًا.",
+      "exampleMeaning": "A client called the office in the morning."
+    },
+    {
+      "word": "مَشْرُوعٌ",
+      "reading": "mashrūʿun",
+      "meaning": "project",
+      "example": "الْمَشْرُوعُ يَحْتَاجُ إِلَى وَقْتٍ أَطْوَلَ.",
+      "exampleMeaning": "The project needs more time."
+    },
+    {
+      "word": "تَقْرِيرٌ",
+      "reading": "taqrīrun",
+      "meaning": "report",
+      "example": "كَتَبَتْ مَرْيَمُ تَقْرِيرًا مُفَصَّلًا.",
+      "exampleMeaning": "Maryam wrote a detailed report."
+    },
+    {
+      "word": "بَرِيدٌ إِلِكْتُرُونِيٌّ",
+      "reading": "barīdun ʾilikturūniyyun",
+      "meaning": "email",
+      "example": "أَرْسَلْتُ بَرِيدًا إِلِكْتُرُونِيًّا إِلَى الْعَمِيلِ.",
+      "exampleMeaning": "I sent an email to the client."
+    },
+    {
+      "word": "عَقْدٌ",
+      "reading": "ʿaqdun",
+      "meaning": "contract",
+      "example": "وَقَّعَ الطَّرَفَانِ عَقْدًا جَدِيدًا.",
+      "exampleMeaning": "The two parties signed a new contract."
+    },
+    {
+      "word": "مَوْعِدٌ",
+      "reading": "mawʿidun",
+      "meaning": "appointment",
+      "example": "لَدَيَّ مَوْعِدٌ مَعَ الْمُحَاسِبِ غَدًا.",
+      "exampleMeaning": "I have an appointment with the accountant tomorrow."
+    },
+    {
+      "word": "رَاتِبٌ",
+      "reading": "rātibun",
+      "meaning": "salary",
+      "example": "يَصِلُ الرَّاتِبُ فِي نِهَايَةِ الشَّهْرِ.",
+      "exampleMeaning": "The salary arrives at the end of the month."
+    },
+    {
+      "word": "فَاتُورَةٌ",
+      "reading": "fātūratun",
+      "meaning": "invoice / bill",
+      "example": "أَرْسَلَتِ الشَّرِكَةُ فَاتُورَةً إِلَى الْعَمِيلِ.",
+      "exampleMeaning": "The company sent an invoice to the client."
+    },
+    {
+      "word": "يُوَقِّعُ",
+      "reading": "yuwaqqiʿu",
+      "meaning": "to sign",
+      "example": "يُوَقِّعُ الْمُدِيرُ الْعَقْدَ بَعْدَ الْمُرَاجَعَةِ.",
+      "exampleMeaning": "The manager signs the contract after review."
+    },
+    {
+      "word": "يُرْسِلُ",
+      "reading": "yursilu",
+      "meaning": "to send",
+      "example": "يُرْسِلُ الْمُوَظَّفُ التَّقْرِيرَ قَبْلَ الظُّهْرِ.",
+      "exampleMeaning": "The employee sends the report before noon."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "هٰذَا ___ لِلْمُدِيرِ.",
+          "answer": "مَكْتَبٌ",
+          "hint": "office / desk"
+        },
+        {
+          "sentence": "___ كَبِيرَةٌ فِي الْمَدِينَةِ.",
+          "answer": "شَرِكَةٌ",
+          "hint": "company"
+        },
+        {
+          "sentence": "بَدَأَ ___ فِي السَّاعَةِ التَّاسِعَةِ.",
+          "answer": "اِجْتِمَاعٌ",
+          "hint": "meeting"
+        },
+        {
+          "sentence": "شَرَحَ ___ الْخُطَّةَ لِلْفَرِيقِ.",
+          "answer": "مُدِيرٌ",
+          "hint": "manager"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "items": [
+        {
+          "question": "What does ‘مَكْتَبٌ’ mean?",
+          "options": [
+            "company",
+            "office / desk",
+            "manager",
+            "employee"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What does ‘شَرِكَةٌ’ mean?",
+          "options": [
+            "meeting",
+            "company",
+            "employee",
+            "colleague"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What does ‘اِجْتِمَاعٌ’ mean?",
+          "options": [
+            "manager",
+            "meeting",
+            "colleague",
+            "client"
+          ],
+          "answer": 1
+        }
+      ]
+    }
+  ]
+}

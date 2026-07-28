@@ -1,0 +1,183 @@
+{
+  "id": "greetings",
+  "words": [
+    {
+      "word": "مَرْحَبًا",
+      "reading": "marḥaban",
+      "meaning": "hello",
+      "example": "مَرْحَبًا، أَنَا لَيْلَى.",
+      "exampleMeaning": "Hello, I am Layla."
+    },
+    {
+      "word": "أَهْلًا وَسَهْلًا",
+      "reading": "ʾahlan wa-sahlan",
+      "meaning": "welcome",
+      "example": "أَهْلًا وَسَهْلًا فِي بَيْتِنَا.",
+      "exampleMeaning": "Welcome to our home."
+    },
+    {
+      "word": "صَبَاحُ الْخَيْرِ",
+      "reading": "ṣabāḥu l-khayri",
+      "meaning": "good morning",
+      "example": "صَبَاحُ الْخَيْرِ يَا أُسْتَاذُ.",
+      "exampleMeaning": "Good morning, teacher."
+    },
+    {
+      "word": "مَسَاءُ الْخَيْرِ",
+      "reading": "masāʾu l-khayri",
+      "meaning": "good evening",
+      "example": "مَسَاءُ الْخَيْرِ يَا مَرْيَمُ.",
+      "exampleMeaning": "Good evening, Maryam."
+    },
+    {
+      "word": "شُكْرًا",
+      "reading": "shukran",
+      "meaning": "thank you",
+      "example": "شُكْرًا عَلَى مُسَاعَدَتِكَ.",
+      "exampleMeaning": "Thank you for your help."
+    },
+    {
+      "word": "عَفْوًا",
+      "reading": "ʿafwan",
+      "meaning": "you are welcome",
+      "example": "قَالَتْ لَهُ: عَفْوًا.",
+      "exampleMeaning": "She said to him: you are welcome."
+    },
+    {
+      "word": "مِنْ فَضْلِكَ",
+      "reading": "min faḍlika",
+      "meaning": "please (to a man)",
+      "example": "مَاءٌ، مِنْ فَضْلِكَ.",
+      "exampleMeaning": "Water, please."
+    },
+    {
+      "word": "آسِفٌ",
+      "reading": "ʾāsifun",
+      "meaning": "sorry (male speaker)",
+      "example": "آسِفٌ، أَنَا مُتَأَخِّرٌ.",
+      "exampleMeaning": "Sorry, I am late."
+    },
+    {
+      "word": "مَعَ السَّلَامَةِ",
+      "reading": "maʿa s-salāmati",
+      "meaning": "goodbye",
+      "example": "مَعَ السَّلَامَةِ، نَرَاكَ غَدًا.",
+      "exampleMeaning": "Goodbye, we will see you tomorrow."
+    },
+    {
+      "word": "إِلَى اللِّقَاءِ",
+      "reading": "ʾilā l-liqāʾi",
+      "meaning": "see you later",
+      "example": "إِلَى اللِّقَاءِ بَعْدَ الدَّرْسِ.",
+      "exampleMeaning": "See you after the lesson."
+    },
+    {
+      "word": "كَيْفَ حَالُكَ؟",
+      "reading": "kayfa ḥāluka?",
+      "meaning": "how are you? (to a man)",
+      "example": "كَيْفَ حَالُكَ؟ أَنَا بِخَيْرٍ.",
+      "exampleMeaning": "How are you? I am well."
+    },
+    {
+      "word": "بِخَيْرٍ",
+      "reading": "bi-khayrin",
+      "meaning": "well / fine",
+      "example": "أَنَا بِخَيْرٍ الْيَوْمَ.",
+      "exampleMeaning": "I am well today."
+    },
+    {
+      "word": "تَشَرَّفْنَا",
+      "reading": "tasharrafnā",
+      "meaning": "nice to meet you",
+      "example": "تَشَرَّفْنَا بِمَعْرِفَتِكَ.",
+      "exampleMeaning": "Nice to meet you."
+    },
+    {
+      "word": "نَعَمْ",
+      "reading": "naʿam",
+      "meaning": "yes",
+      "example": "نَعَمْ، هٰذَا صَحِيحٌ.",
+      "exampleMeaning": "Yes, this is correct."
+    },
+    {
+      "word": "لَا",
+      "reading": "lā",
+      "meaning": "no",
+      "example": "لَا، لَيْسَ عِنْدِي وَقْتٌ.",
+      "exampleMeaning": "No, I do not have time."
+    },
+    {
+      "word": "بَعْدَ إِذْنِكَ",
+      "reading": "baʿda ʾidhnika",
+      "meaning": "excuse me / with your permission",
+      "example": "بَعْدَ إِذْنِكَ، أُرِيدُ أَنْ أَمُرَّ.",
+      "exampleMeaning": "Excuse me, I want to pass."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "___، أَنَا لَيْلَى.",
+          "answer": "مَرْحَبًا",
+          "hint": "hello"
+        },
+        {
+          "sentence": "___ فِي بَيْتِنَا.",
+          "answer": "أَهْلًا وَسَهْلًا",
+          "hint": "welcome"
+        },
+        {
+          "sentence": "___ يَا أُسْتَاذُ.",
+          "answer": "صَبَاحُ الْخَيْرِ",
+          "hint": "good morning"
+        },
+        {
+          "sentence": "___ يَا مَرْيَمُ.",
+          "answer": "مَسَاءُ الْخَيْرِ",
+          "hint": "good evening"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "items": [
+        {
+          "question": "What does ‘مَرْحَبًا’ mean?",
+          "options": [
+            "welcome",
+            "hello",
+            "good morning",
+            "good evening"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What does ‘أَهْلًا وَسَهْلًا’ mean?",
+          "options": [
+            "good morning",
+            "welcome",
+            "good evening",
+            "thank you"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What does ‘صَبَاحُ الْخَيْرِ’ mean?",
+          "options": [
+            "good evening",
+            "good morning",
+            "thank you",
+            "you are welcome"
+          ],
+          "answer": 1
+        }
+      ]
+    }
+  ]
+}

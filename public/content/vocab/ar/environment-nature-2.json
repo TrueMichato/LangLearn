@@ -1,0 +1,183 @@
+{
+  "id": "environment-nature-2",
+  "words": [
+    {
+      "word": "سَهْلٌ",
+      "reading": "sahlun",
+      "meaning": "plain / flatland",
+      "example": "يَمْتَدُّ السَّهْلُ بَيْنَ الْجَبَلَيْنِ.",
+      "exampleMeaning": "The plain stretches between the two mountains."
+    },
+    {
+      "word": "هَضْبَةٌ",
+      "reading": "haḍbatun",
+      "meaning": "plateau",
+      "example": "تَرْتَفِعُ الْهَضْبَةُ فَوْقَ الْقَرْيَةِ.",
+      "exampleMeaning": "The plateau rises above the village."
+    },
+    {
+      "word": "وَادٍ",
+      "reading": "wādin",
+      "meaning": "valley",
+      "example": "يَجْرِي النَّهْرُ فِي وَادٍ عَمِيقٍ.",
+      "exampleMeaning": "The river runs through a deep valley."
+    },
+    {
+      "word": "مُنْحَدَرٌ",
+      "reading": "munḥadarun",
+      "meaning": "slope",
+      "example": "كَانَ الْمُنْحَدَرُ زَلِقًا بَعْدَ الْمَطَرِ.",
+      "exampleMeaning": "The slope was slippery after the rain."
+    },
+    {
+      "word": "جَرْفٌ",
+      "reading": "jarfun",
+      "meaning": "cliff",
+      "example": "وَقَفَ السَّائِحُ قُرْبَ جَرْفٍ عَالٍ.",
+      "exampleMeaning": "The tourist stood near a high cliff."
+    },
+    {
+      "word": "شَاطِئٌ",
+      "reading": "shāṭiʾun",
+      "meaning": "beach",
+      "example": "الشَّاطِئُ رَمْلِيٌّ وَهَادِئٌ.",
+      "exampleMeaning": "The beach is sandy and quiet."
+    },
+    {
+      "word": "سَاحِلٌ",
+      "reading": "sāḥilun",
+      "meaning": "coast",
+      "example": "يَتْبَعُ الطَّرِيقُ السَّاحِلَ الطَّوِيلَ.",
+      "exampleMeaning": "The road follows the long coast."
+    },
+    {
+      "word": "جَزِيرَةٌ",
+      "reading": "jazīratun",
+      "meaning": "island",
+      "example": "تَظْهَرُ جَزِيرَةٌ صَغِيرَةٌ فِي الْبُحَيْرَةِ.",
+      "exampleMeaning": "A small island appears in the lake."
+    },
+    {
+      "word": "شِبْهُ جَزِيرَةٍ",
+      "reading": "shibhu jazīratin",
+      "meaning": "peninsula",
+      "example": "تَمْتَدُّ شِبْهُ جَزِيرَةٍ إِلَى الْبَحْرِ.",
+      "exampleMeaning": "A peninsula extends into the sea."
+    },
+    {
+      "word": "خَلِيجٌ",
+      "reading": "khalījun",
+      "meaning": "gulf / bay",
+      "example": "يَدْخُلُ الْمَرْكَبُ خَلِيجًا ضَيِّقًا.",
+      "exampleMeaning": "The boat enters a narrow gulf."
+    },
+    {
+      "word": "مَضِيقٌ",
+      "reading": "maḍīqun",
+      "meaning": "strait",
+      "example": "يَرْبِطُ الْمَضِيقُ بَيْنَ بَحْرَيْنِ.",
+      "exampleMeaning": "The strait connects two seas."
+    },
+    {
+      "word": "بُحَيْرَةٌ",
+      "reading": "buḥayratun",
+      "meaning": "lake",
+      "example": "تَحُفُّ الْأَشْجَارُ بِبُحَيْرَةٍ صَافِيَةٍ.",
+      "exampleMeaning": "The trees surround a clear lake."
+    },
+    {
+      "word": "شَلَّالٌ",
+      "reading": "shallālun",
+      "meaning": "waterfall",
+      "example": "يَسْقُطُ الْمَاءُ مِنْ شَلَّالٍ مُرْتَفِعٍ.",
+      "exampleMeaning": "Water falls from a high waterfall."
+    },
+    {
+      "word": "غَابَةٌ كَثِيفَةٌ",
+      "reading": "ghābatun kathīfatun",
+      "meaning": "dense forest",
+      "example": "تَحْمِي الْحُكُومَةُ غَابَةً كَثِيفَةً.",
+      "exampleMeaning": "The government protects a dense forest."
+    },
+    {
+      "word": "صَحْرَاءُ قَاحِلَةٌ",
+      "reading": "ṣaḥrāʾu qāḥilatun",
+      "meaning": "arid desert",
+      "example": "تَمُرُّ الْقَافِلَةُ بِصَحْرَاءَ قَاحِلَةٍ.",
+      "exampleMeaning": "The caravan passes through an arid desert."
+    },
+    {
+      "word": "سِلْسِلَةٌ جَبَلِيَّةٌ",
+      "reading": "silsilatun jabaliyyatun",
+      "meaning": "mountain range",
+      "example": "نَرَى سِلْسِلَةً جَبَلِيَّةً فِي الْأُفُقِ.",
+      "exampleMeaning": "We see a mountain range on the horizon."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "يَمْتَدُّ ___ بَيْنَ الْجَبَلَيْنِ.",
+          "answer": "سَهْلٌ",
+          "hint": "plain"
+        },
+        {
+          "sentence": "تَرْتَفِعُ ___ فَوْقَ الْقَرْيَةِ.",
+          "answer": "هَضْبَةٌ",
+          "hint": "plateau"
+        },
+        {
+          "sentence": "يَجْرِي النَّهْرُ فِي ___ عَمِيقٍ.",
+          "answer": "وَادٍ",
+          "hint": "valley"
+        },
+        {
+          "sentence": "كَانَ ___ زَلِقًا بَعْدَ الْمَطَرِ.",
+          "answer": "مُنْحَدَرٌ",
+          "hint": "slope"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "items": [
+        {
+          "question": "What does ‘سَهْلٌ’ mean?",
+          "options": [
+            "plateau",
+            "plain / flatland",
+            "valley",
+            "cliff"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What does ‘هَضْبَةٌ’ mean?",
+          "options": [
+            "slope",
+            "plateau",
+            "beach",
+            "coast"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What does ‘وَادٍ’ mean?",
+          "options": [
+            "island",
+            "valley",
+            "strait",
+            "waterfall"
+          ],
+          "answer": 1
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,183 @@
+{
+  "id": "history-civilization",
+  "words": [
+    {
+      "word": "حَضَارَةٌ",
+      "reading": "ḥaḍāratun",
+      "meaning": "civilization",
+      "example": "دَرَسْنَا حَضَارَةً قَدِيمَةً فِي الْجَامِعَةِ.",
+      "exampleMeaning": "We studied an ancient civilization at the university."
+    },
+    {
+      "word": "إِمْبِرَاطُورِيَّةٌ",
+      "reading": "ʾimbirāṭūriyyatun",
+      "meaning": "empire",
+      "example": "تَوَسَّعَتِ الإِمْبِرَاطُورِيَّةُ عَبْرَ الْقَارَّةِ.",
+      "exampleMeaning": "The empire expanded across the continent."
+    },
+    {
+      "word": "دَوْلَةٌ قَدِيمَةٌ",
+      "reading": "dawlatun qadīmatun",
+      "meaning": "ancient state",
+      "example": "نَشَأَتْ دَوْلَةٌ قَدِيمَةٌ عَلَى ضِفَافِ النَّهْرِ.",
+      "exampleMeaning": "An ancient state arose on the banks of the river."
+    },
+    {
+      "word": "أَثَرٌ تَارِيخِيٌّ",
+      "reading": "atharun tārīkhiyyun",
+      "meaning": "historic monument / relic",
+      "example": "زُرْنَا أَثَرًا تَارِيخِيًّا فِي الْمَدِينَةِ.",
+      "exampleMeaning": "We visited a historic monument in the city."
+    },
+    {
+      "word": "نَقْشٌ",
+      "reading": "naqshun",
+      "meaning": "inscription / engraving",
+      "example": "قَرَأَ الْبَاحِثُ نَقْشًا عَلَى الْحَجَرِ.",
+      "exampleMeaning": "The researcher read an inscription on the stone."
+    },
+    {
+      "word": "مَخْطُوطَةٌ",
+      "reading": "makhṭūṭatun",
+      "meaning": "manuscript",
+      "example": "تَحْفَظُ الْمَكْتَبَةُ مَخْطُوطَةً نَادِرَةً.",
+      "exampleMeaning": "The library preserves a rare manuscript."
+    },
+    {
+      "word": "سُلَالَةٌ",
+      "reading": "sulālatun",
+      "meaning": "dynasty",
+      "example": "حَكَمَتْ سُلَالَةٌ قَوِيَّةٌ لِقُرُونٍ.",
+      "exampleMeaning": "A strong dynasty ruled for centuries."
+    },
+    {
+      "word": "عَصْرٌ ذَهَبِيٌّ",
+      "reading": "ʿaṣrun dhahabiyyun",
+      "meaning": "golden age",
+      "example": "ازْدَهَرَ الْعِلْمُ فِي عَصْرٍ ذَهَبِيٍّ.",
+      "exampleMeaning": "Science flourished in a golden age."
+    },
+    {
+      "word": "فَتْحٌ",
+      "reading": "fatḥun",
+      "meaning": "conquest / opening",
+      "example": "غَيَّرَ الْفَتْحُ خَرِيطَةَ الْمِنْطَقَةِ.",
+      "exampleMeaning": "The conquest changed the map of the region."
+    },
+    {
+      "word": "هِجْرَةٌ",
+      "reading": "hijratun",
+      "meaning": "migration",
+      "example": "تَرَكَتِ الْهِجْرَةُ أَثَرًا ثَقَافِيًّا.",
+      "exampleMeaning": "The migration left a cultural impact."
+    },
+    {
+      "word": "تِجَارَةُ الْقَوَافِلِ",
+      "reading": "tijāratul-qawāfili",
+      "meaning": "caravan trade",
+      "example": "اعْتَمَدَتِ الْمُدُنُ عَلَى تِجَارَةِ الْقَوَافِلِ.",
+      "exampleMeaning": "The cities depended on caravan trade."
+    },
+    {
+      "word": "طَرِيقُ الْحَرِيرِ",
+      "reading": "ṭarīqu l-ḥarīri",
+      "meaning": "Silk Road",
+      "example": "سَافَرَ التُّجَّارُ عَلَى طَرِيقِ الْحَرِيرِ.",
+      "exampleMeaning": "The merchants traveled on the Silk Road."
+    },
+    {
+      "word": "تَرَاثٌ مَعْمَارِيٌّ",
+      "reading": "turāthun miʿmāriyyun",
+      "meaning": "architectural heritage",
+      "example": "نُرَمِّمُ تَرَاثًا مَعْمَارِيًّا قَدِيمًا.",
+      "exampleMeaning": "We are restoring old architectural heritage."
+    },
+    {
+      "word": "حَفْرِيَّاتٌ أَثَرِيَّةٌ",
+      "reading": "ḥafriyyātun athariyyatun",
+      "meaning": "archaeological excavations",
+      "example": "كَشَفَتْ حَفْرِيَّاتٌ أَثَرِيَّةٌ عَنْ بَيْتٍ قَدِيمٍ.",
+      "exampleMeaning": "Archaeological excavations revealed an old house."
+    },
+    {
+      "word": "مُؤَرِّخٌ",
+      "reading": "muʾarrikhun",
+      "meaning": "historian",
+      "example": "يَفْحَصُ الْمُؤَرِّخُ الْوَثَائِقَ بِعِنَايَةٍ.",
+      "exampleMeaning": "The historian examines the documents carefully."
+    },
+    {
+      "word": "مَصْدَرٌ أَوَّلِيٌّ",
+      "reading": "maṣdarun awwaliyyun",
+      "meaning": "primary source",
+      "example": "تُعَدُّ الرِّسَالَةُ مَصْدَرًا أَوَّلِيًّا.",
+      "exampleMeaning": "The letter is considered a primary source."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "دَرَسْنَا ___ قَدِيمَةً فِي الْجَامِعَةِ.",
+          "answer": "حَضَارَةٌ",
+          "hint": "civilization"
+        },
+        {
+          "sentence": "تَوَسَّعَتِ ___ عَبْرَ الْقَارَّةِ.",
+          "answer": "إِمْبِرَاطُورِيَّةٌ",
+          "hint": "empire"
+        },
+        {
+          "sentence": "نَشَأَتْ ___ عَلَى ضِفَافِ النَّهْرِ.",
+          "answer": "دَوْلَةٌ قَدِيمَةٌ",
+          "hint": "ancient state"
+        },
+        {
+          "sentence": "زُرْنَا ___ فِي الْمَدِينَةِ.",
+          "answer": "أَثَرٌ تَارِيخِيٌّ",
+          "hint": "historic monument"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "items": [
+        {
+          "question": "What does ‘حَضَارَةٌ’ mean?",
+          "options": [
+            "empire",
+            "civilization",
+            "ancient state",
+            "manuscript"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What does ‘إِمْبِرَاطُورِيَّةٌ’ mean?",
+          "options": [
+            "dynasty",
+            "empire",
+            "golden age",
+            "migration"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What does ‘دَوْلَةٌ قَدِيمَةٌ’ mean?",
+          "options": [
+            "primary source",
+            "ancient state",
+            "caravan trade",
+            "historian"
+          ],
+          "answer": 1
+        }
+      ]
+    }
+  ]
+}

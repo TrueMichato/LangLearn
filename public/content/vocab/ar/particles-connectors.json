@@ -1,0 +1,183 @@
+{
+  "id": "particles-connectors",
+  "words": [
+    {
+      "word": "لٰكِنَّ",
+      "reading": "lākinnā",
+      "meaning": "but / however",
+      "example": "أُحِبُّ الشَّايَ، لٰكِنَّنِي أُفَضِّلُ الْقَهْوَةَ.",
+      "exampleMeaning": "I like tea, but I prefer coffee."
+    },
+    {
+      "word": "لِأَنَّ",
+      "reading": "li-ʾanna",
+      "meaning": "because",
+      "example": "بَقِيتُ فِي الْبَيْتِ لِأَنَّ الْجَوَّ مَاطِرٌ.",
+      "exampleMeaning": "I stayed at home because the weather is rainy."
+    },
+    {
+      "word": "لِذٰلِكَ",
+      "reading": "li-dhālika",
+      "meaning": "therefore / for that reason",
+      "example": "تَعِبَ الطِّفْلُ، لِذٰلِكَ نَامَ مُبَكِّرًا.",
+      "exampleMeaning": "The child got tired, therefore he slept early."
+    },
+    {
+      "word": "مَعَ أَنَّ",
+      "reading": "maʿa ʾanna",
+      "meaning": "although",
+      "example": "خَرَجْنَا مَعَ أَنَّ الطَّرِيقَ طَوِيلٌ.",
+      "exampleMeaning": "We went out although the road was long."
+    },
+    {
+      "word": "رَغْمَ أَنَّ",
+      "reading": "raghma ʾanna",
+      "meaning": "despite the fact that",
+      "example": "نَجَحَتْ رَغْمَ أَنَّ السُّؤَالَ صَعْبٌ.",
+      "exampleMeaning": "She succeeded despite the fact that the exam was difficult."
+    },
+    {
+      "word": "بِسَبَبِ",
+      "reading": "bi-sababi",
+      "meaning": "because of",
+      "example": "تَأَخَّرْنَا بِسَبَبِ الزِّحَامِ.",
+      "exampleMeaning": "We were late because of the traffic."
+    },
+    {
+      "word": "بِالْإِضَافَةِ إِلَى",
+      "reading": "bi-l-ʾiḍāfati ʾilā",
+      "meaning": "in addition to",
+      "example": "قَرَأْتُ الْقِصَّةَ بِالْإِضَافَةِ إِلَى الْمَقَالَةِ.",
+      "exampleMeaning": "I read the story in addition to the article."
+    },
+    {
+      "word": "عَلَى الرَّغْمِ مِنْ",
+      "reading": "ʿalā r-raghmi min",
+      "meaning": "in spite of",
+      "example": "سَافَرْنَا عَلَى الرَّغْمِ مِنَ التَّعَبِ.",
+      "exampleMeaning": "We traveled in spite of the fatigue."
+    },
+    {
+      "word": "أَيْضًا",
+      "reading": "ʾayḍan",
+      "meaning": "also",
+      "example": "تَتَكَلَّمُ مَرْيَمُ الْعَرَبِيَّةَ وَالْإِنْجِلِيزِيَّةَ أَيْضًا.",
+      "exampleMeaning": "Maryam speaks Arabic and English also."
+    },
+    {
+      "word": "ثُمَّ",
+      "reading": "thumma",
+      "meaning": "then",
+      "example": "غَسَلْتُ يَدَيَّ ثُمَّ أَكَلْتُ.",
+      "exampleMeaning": "I washed my hands, then I ate."
+    },
+    {
+      "word": "بَعْدَ ذٰلِكَ",
+      "reading": "baʿda dhālika",
+      "meaning": "after that",
+      "example": "دَرَسْنَا النَّحْوَ، بَعْدَ ذٰلِكَ قَرَأْنَا نَصًّا.",
+      "exampleMeaning": "We studied grammar; after that we read a text."
+    },
+    {
+      "word": "قَبْلَ أَنْ",
+      "reading": "qabla ʾan",
+      "meaning": "before",
+      "example": "اِغْسِلْ يَدَيْكَ قَبْلَ أَنْ تَأْكُلَ.",
+      "exampleMeaning": "Wash your hands before you eat."
+    },
+    {
+      "word": "حَتَّى",
+      "reading": "ḥattā",
+      "meaning": "until / so that",
+      "example": "اِنْتَظَرْتُ حَتَّى وَصَلَ الْقِطَارُ.",
+      "exampleMeaning": "I waited until the train arrived."
+    },
+    {
+      "word": "إِلَّا أَنَّ",
+      "reading": "ʾillā ʾanna",
+      "meaning": "except that / however",
+      "example": "الْفِكْرَةُ جَيِّدَةٌ إِلَّا أَنَّ التَّنْفِيذَ صَعْبٌ.",
+      "exampleMeaning": "The idea is good, except that the implementation is difficult."
+    },
+    {
+      "word": "سَوَاءٌ...أَمْ",
+      "reading": "sawāʾun...ʾam",
+      "meaning": "whether...or",
+      "example": "سَأَذْهَبُ سَوَاءٌ أَمَطَرَتِ السَّمَاءُ أَمْ صَفَتْ.",
+      "exampleMeaning": "I will go whether the sky rains or clears."
+    },
+    {
+      "word": "كُلَّمَا",
+      "reading": "kullamā",
+      "meaning": "whenever / the more",
+      "example": "كُلَّمَا قَرَأْتَ أَكْثَرَ فَهِمْتَ أَفْضَلَ.",
+      "exampleMeaning": "The more you read, the better you understand."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "أُحِبُّ الشَّايَ، ___ الْقَهْوَةَ أَفْضَلُ.",
+          "answer": "لٰكِنَّ",
+          "hint": "but / however"
+        },
+        {
+          "sentence": "بَقِيتُ فِي الْبَيْتِ ___ الْجَوَّ مَاطِرٌ.",
+          "answer": "لِأَنَّ",
+          "hint": "because"
+        },
+        {
+          "sentence": "تَعِبَ الطِّفْلُ، ___ نَامَ مُبَكِّرًا.",
+          "answer": "لِذٰلِكَ",
+          "hint": "therefore"
+        },
+        {
+          "sentence": "خَرَجْنَا ___ الطَّرِيقَ طَوِيلٌ.",
+          "answer": "مَعَ أَنَّ",
+          "hint": "although"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "items": [
+        {
+          "question": "What does ‘لٰكِنَّ’ mean?",
+          "options": [
+            "because",
+            "but / however",
+            "although",
+            "despite the fact that"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What does ‘لِأَنَّ’ mean?",
+          "options": [
+            "therefore / for that reason",
+            "because",
+            "despite the fact that",
+            "because of"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What does ‘لِذٰلِكَ’ mean?",
+          "options": [
+            "although",
+            "therefore / for that reason",
+            "because of",
+            "in addition to"
+          ],
+          "answer": 1
+        }
+      ]
+    }
+  ]
+}

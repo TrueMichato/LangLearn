@@ -1,0 +1,183 @@
+{
+  "id": "body-health-internal",
+  "words": [
+    {
+      "word": "قَلْبٌ",
+      "reading": "qalbun",
+      "meaning": "heart",
+      "example": "يَضُخُّ الْقَلْبُ الدَّمَ إِلَى الْجِسْمِ.",
+      "exampleMeaning": "The heart pumps blood to the body."
+    },
+    {
+      "word": "دِمَاغٌ",
+      "reading": "dimāghun",
+      "meaning": "brain",
+      "example": "يُرْسِلُ الدِّمَاغُ إِشَارَاتٍ سَرِيعَةً.",
+      "exampleMeaning": "The brain sends quick signals."
+    },
+    {
+      "word": "رِئَةٌ",
+      "reading": "riʾatun",
+      "meaning": "lung",
+      "example": "تَمْلَأُ الرِّئَةُ الصَّدْرَ بِالْهَوَاءِ.",
+      "exampleMeaning": "The lung fills the chest with air."
+    },
+    {
+      "word": "كَبِدٌ",
+      "reading": "kabidun",
+      "meaning": "liver",
+      "example": "يُسَاعِدُ الْكَبِدُ عَلَى تَنْقِيَةِ الدَّمِ.",
+      "exampleMeaning": "The liver helps purify the blood."
+    },
+    {
+      "word": "كُلْيَةٌ",
+      "reading": "kulyatun",
+      "meaning": "kidney",
+      "example": "تُصَفِّي الْكُلْيَةُ السَّوَائِلَ فِي الْجِسْمِ.",
+      "exampleMeaning": "The kidney filters fluids in the body."
+    },
+    {
+      "word": "مَعِدَةٌ",
+      "reading": "maʿidatun",
+      "meaning": "stomach",
+      "example": "تَهْضِمُ الْمَعِدَةُ الطَّعَامَ بِبُطْءٍ.",
+      "exampleMeaning": "The stomach digests food slowly."
+    },
+    {
+      "word": "أَمْعَاءٌ",
+      "reading": "ʾamʿāʾun",
+      "meaning": "intestines",
+      "example": "تَمْتَصُّ الْأَمْعَاءُ الْمَوَادَّ الْغِذَائِيَّةَ.",
+      "exampleMeaning": "The intestines absorb nutrients."
+    },
+    {
+      "word": "عَظْمٌ",
+      "reading": "ʿaẓmun",
+      "meaning": "bone",
+      "example": "اِلْتَأَمَ الْعَظْمُ بَعْدَ أَسَابِيعَ.",
+      "exampleMeaning": "The bone healed after weeks."
+    },
+    {
+      "word": "عَضَلَةٌ",
+      "reading": "ʿaḍalatun",
+      "meaning": "muscle",
+      "example": "تَقْوَى الْعَضَلَةُ مَعَ التَّمْرِينِ.",
+      "exampleMeaning": "The muscle grows stronger with exercise."
+    },
+    {
+      "word": "دَمٌ",
+      "reading": "damun",
+      "meaning": "blood",
+      "example": "فَحَصَ الطَّبِيبُ عَيِّنَةَ دَمٍ.",
+      "exampleMeaning": "The doctor examined a blood sample."
+    },
+    {
+      "word": "نَبْضٌ",
+      "reading": "nabḍun",
+      "meaning": "pulse",
+      "example": "قَاسَتِ الْمُمَرِّضَةُ النَّبْضَ بِهُدُوءٍ.",
+      "exampleMeaning": "The nurse measured the pulse calmly."
+    },
+    {
+      "word": "ضَغْطُ الدَّمِ",
+      "reading": "ḍaghṭu d-dami",
+      "meaning": "blood pressure",
+      "example": "يُرَاقِبُ جَدِّي ضَغْطَ الدَّمِ كُلَّ صَبَاحٍ.",
+      "exampleMeaning": "My grandfather monitors blood pressure every morning."
+    },
+    {
+      "word": "تَنَفُّسٌ",
+      "reading": "tanaffusun",
+      "meaning": "breathing",
+      "example": "يُسَاعِدُ التَّنَفُّسُ الْعَمِيقُ عَلَى الْهُدُوءِ.",
+      "exampleMeaning": "Deep breathing helps with calmness."
+    },
+    {
+      "word": "هَضْمٌ",
+      "reading": "haḍmun",
+      "meaning": "digestion",
+      "example": "يَبْدَأُ الْهَضْمُ بَعْدَ الْوَجْبَةِ.",
+      "exampleMeaning": "Digestion begins after the meal."
+    },
+    {
+      "word": "مَنَاعَةٌ",
+      "reading": "manāʿatun",
+      "meaning": "immunity",
+      "example": "تُقَوِّي الرَّاحَةُ مَنَاعَةَ الْجِسْمِ.",
+      "exampleMeaning": "Rest strengthens the body's immunity."
+    },
+    {
+      "word": "اِلْتِهَابٌ",
+      "reading": "iltihābun",
+      "meaning": "inflammation",
+      "example": "سَبَّبَ اِلْتِهَابٌ أَلَمًا فِي الْحَلْقِ.",
+      "exampleMeaning": "Inflammation caused pain in the throat."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "هٰذَا ___ قَوِيٌّ.",
+          "answer": "قَلْبٌ",
+          "hint": "heart"
+        },
+        {
+          "sentence": "هٰذِهِ ___ صِحِّيَّةٌ.",
+          "answer": "رِئَةٌ",
+          "hint": "lung"
+        },
+        {
+          "sentence": "هٰذَا ___ الطَّبِيعِيُّ.",
+          "answer": "ضَغْطُ الدَّمِ",
+          "hint": "blood pressure"
+        },
+        {
+          "sentence": "هٰذِهِ ___ قَوِيَّةٌ.",
+          "answer": "مَنَاعَةٌ",
+          "hint": "immunity"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "items": [
+        {
+          "question": "What does ‘دِمَاغٌ’ mean?",
+          "options": [
+            "kidney",
+            "brain",
+            "muscle",
+            "pulse"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What does ‘أَمْعَاءٌ’ mean?",
+          "options": [
+            "intestines",
+            "liver",
+            "blood",
+            "bone"
+          ],
+          "answer": 0
+        },
+        {
+          "question": "What does ‘اِلْتِهَابٌ’ mean?",
+          "options": [
+            "breathing",
+            "digestion",
+            "inflammation",
+            "immunity"
+          ],
+          "answer": 2
+        }
+      ]
+    }
+  ]
+}

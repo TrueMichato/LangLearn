@@ -1,0 +1,159 @@
+{
+  "id": "maghrebi-shopping-clothes",
+  "words": [
+    {
+      "word": "بْغِيتْ هَادْ",
+      "reading": "bghīt hād",
+      "meaning": "I want this",
+      "example": "بْغِيتْ هَادْ الْقْمِيجَةْ بْلَوْنْ أَزْرَقْ.",
+      "exampleMeaning": "I want this shirt in blue."
+    },
+    {
+      "word": "شْحَالْ هَادَا",
+      "reading": "shḥāl hāda",
+      "meaning": "how much is this?",
+      "example": "شْحَالْ هَادَا الصَّبَّاطْ عَافَاكْ؟",
+      "exampleMeaning": "How much are these shoes, please?"
+    },
+    {
+      "word": "غَالِي بَزَّافْ",
+      "reading": "ghālī bazzāf",
+      "meaning": "too expensive",
+      "example": "هَادِ الْجَاكِيطَةْ غَالِيَةْ بَزَّافْ.",
+      "exampleMeaning": "This jacket is too expensive."
+    },
+    {
+      "word": "رَخِيصْ",
+      "reading": "rkhīṣ",
+      "meaning": "cheap",
+      "example": "السَّرْوَالْ رَخِيصْ حِيتْ فِيهِ تْخْفِيضْ.",
+      "exampleMeaning": "The pants are cheap because there is a discount."
+    },
+    {
+      "word": "قِيَاسْ",
+      "reading": "qiyās",
+      "meaning": "size",
+      "example": "عَنْدْكْ قِيَاسْ أَكْبَرْ مِنْ هَادَا؟",
+      "exampleMeaning": "Do you have a larger size than this?"
+    },
+    {
+      "word": "نْجَرَّبْ",
+      "reading": "njarreb",
+      "meaning": "I try on",
+      "example": "نْجَرَّبْ هَادِ الْقْمِيجَةْ فِي الْكَبِينَةْ.",
+      "exampleMeaning": "I try on this shirt in the fitting room."
+    },
+    {
+      "word": "لَوْنْ",
+      "reading": "lōn",
+      "meaning": "color",
+      "example": "اللَّوْنْ الْأَخْضَرْ زْوِينْ عَلِيكْ.",
+      "exampleMeaning": "The green color looks nice on you."
+    },
+    {
+      "word": "قْمِيجَةْ",
+      "reading": "qmīja",
+      "meaning": "shirt",
+      "example": "قْمِيجَةْ خْفِيفَةْ مْزْيَانَةْ لِلصَّيْفْ.",
+      "exampleMeaning": "A light shirt is good for summer."
+    },
+    {
+      "word": "سَرْوَالْ",
+      "reading": "sarwāl",
+      "meaning": "pants",
+      "example": "هَادِ السَّرْوَالْ طْوِيلْ شْوِيَّةْ.",
+      "exampleMeaning": "These pants are a little long."
+    },
+    {
+      "word": "صَبَّاطْ",
+      "reading": "ṣabbāṭ",
+      "meaning": "shoes",
+      "example": "الصَّبَّاطْ جْدِيدْ وْمْرْتَاحْ.",
+      "exampleMeaning": "The shoes are new and comfortable."
+    },
+    {
+      "word": "مْحَلّْ",
+      "reading": "mḥall",
+      "meaning": "shop",
+      "example": "هَادِ الْمْحَلّْ عَنْدُهُ سْلَعَةْ زْوِينَةْ.",
+      "exampleMeaning": "This shop has nice goods."
+    },
+    {
+      "word": "تْخْفِيضْ",
+      "reading": "tkhfīḍ",
+      "meaning": "discount",
+      "example": "كَايْنْ تْخْفِيضْ عَلَى الْجَاكِيطَاتْ.",
+      "exampleMeaning": "There is a discount on jackets."
+    },
+    {
+      "word": "بْلَا مَا نْشُوفْ",
+      "reading": "blā mā nshūf",
+      "meaning": "without looking",
+      "example": "مَا تْشْرِيشْ بْلَا مَا نْشُوفْ الْقِيَاسْ.",
+      "exampleMeaning": "Do not buy without checking the size."
+    },
+    {
+      "word": "زْوِينَةْ",
+      "reading": "zwīna",
+      "meaning": "nice / pretty",
+      "example": "هَادِ الْقْمِيجَةْ زْوِينَةْ وْمَاشْي غَالْيَةْ.",
+      "exampleMeaning": "This shirt is pretty and not expensive."
+    },
+    {
+      "word": "كْبِيرْ عَلِيَّ",
+      "reading": "kbīr ʿliyya",
+      "meaning": "too big for me",
+      "example": "هَادَا كْبِيرْ عَلِيَّ، بْغِيتْ قِيَاسْ صْغِيرْ.",
+      "exampleMeaning": "This is too big for me; I want a small size."
+    },
+    {
+      "word": "صْغِيرْ عَلِيَّ",
+      "reading": "ṣghīr ʿliyya",
+      "meaning": "too small for me",
+      "example": "الصَّبَّاطْ صْغِيرْ عَلِيَّ شْوِيَّةْ.",
+      "exampleMeaning": "The shoes are a little too small for me."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "___ الصَّبَّاطْ عَافَاكْ؟",
+          "answer": "شْحَالْ هَادَا",
+          "hint": "how much is this?"
+        },
+        {
+          "sentence": "عَنْدْكْ ___ أَكْبَرْ مِنْ هَادَا؟",
+          "answer": "قِيَاسْ",
+          "hint": "size"
+        },
+        {
+          "sentence": "كَايْنْ ___ عَلَى الْجَاكِيطَاتْ.",
+          "answer": "تْخْفِيضْ",
+          "hint": "discount"
+        },
+        {
+          "sentence": "هَادَا ___، بْغِيتْ قِيَاسْ صْغِيرْ.",
+          "answer": "كْبِيرْ عَلِيَّ",
+          "hint": "too big for me"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "In Maghrebi Darija, what does ‘شْحَالْ هَادَا’ ask?",
+      "options": [
+        "how much is this?",
+        "what color is it?",
+        "where is the shop?",
+        "is it too small?"
+      ],
+      "answer": 0
+    }
+  ]
+}

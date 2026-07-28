@@ -1,0 +1,1457 @@
+{
+  "texts": [
+    {
+      "id": "self-intro-ar",
+      "title": "تَعارُف",
+      "titleEn": "Self-Introduction",
+      "difficulty": "easy",
+      "tags": [
+        "daily-life",
+        "conversation",
+        "family"
+      ],
+      "description": "A young person introduces themself, their job, city, and family.",
+      "wordCount": 61
+    },
+    {
+      "id": "yawmi",
+      "title": "يَوْمِي",
+      "titleEn": "My Day",
+      "difficulty": "easy",
+      "tags": [
+        "daily-life"
+      ],
+      "description": "A simple present-tense description of an ordinary daily routine.",
+      "wordCount": 63
+    },
+    {
+      "id": "usrati",
+      "title": "عائِلَتِي",
+      "titleEn": "My Family",
+      "difficulty": "easy",
+      "tags": [
+        "family",
+        "daily-life"
+      ],
+      "description": "A learner-friendly description of family members and their personalities.",
+      "wordCount": 61
+    },
+    {
+      "id": "fi-l-matam",
+      "title": "فِي المَطْعَم",
+      "titleEn": "At the Restaurant",
+      "difficulty": "medium",
+      "tags": [
+        "food",
+        "conversation",
+        "daily-life"
+      ],
+      "description": "A narrated restaurant scene with a short ordering dialogue.",
+      "wordCount": 112
+    },
+    {
+      "id": "rihla-ila-dubai",
+      "title": "رِحْلة إِلى دُبَي",
+      "titleEn": "A Trip to Dubai",
+      "difficulty": "medium",
+      "tags": [
+        "travel",
+        "culture"
+      ],
+      "description": "A past-tense travel narrative about visiting Dubai for the first time.",
+      "wordCount": 113
+    },
+    {
+      "id": "madinati",
+      "title": "مَدِينَتِي",
+      "titleEn": "My City",
+      "difficulty": "medium",
+      "tags": [
+        "daily-life",
+        "travel",
+        "culture"
+      ],
+      "description": "A warm description of a city, its neighborhoods, landmarks, and daily rhythms.",
+      "wordCount": 113
+    },
+    {
+      "id": "al-qahwa-al-arabiyya",
+      "title": "القَهْوة العَرَبِيّة",
+      "titleEn": "Arabic Coffee & Hospitality",
+      "difficulty": "medium",
+      "tags": [
+        "culture",
+        "food",
+        "daily-life"
+      ],
+      "description": "A cultural piece about Arabic coffee and the customs of hospitality.",
+      "wordCount": 122
+    },
+    {
+      "id": "nawadir-juha",
+      "title": "نَوادِر جُحا",
+      "titleEn": "The Tales of Juha",
+      "difficulty": "hard",
+      "tags": [
+        "folktale",
+        "culture"
+      ],
+      "description": "A gentle humorous folk-style anecdote about Juha and his famously clever foolishness.",
+      "wordCount": 177
+    },
+    {
+      "id": "tarikh-al-khatt",
+      "title": "تارِيخ الخَطّ العَرَبِيّ",
+      "titleEn": "A History of Arabic Calligraphy",
+      "difficulty": "hard",
+      "tags": [
+        "history",
+        "culture",
+        "language"
+      ],
+      "description": "An introduction to the development and beauty of Arabic calligraphy.",
+      "wordCount": 172
+    },
+    {
+      "id": "al-lugha-al-arabiyya",
+      "title": "اللُّغة العَرَبِيّة",
+      "titleEn": "The Arabic Language",
+      "difficulty": "hard",
+      "tags": [
+        "language",
+        "culture",
+        "history"
+      ],
+      "description": "A higher-level overview of Arabic, its dialects, written form, and global reach.",
+      "wordCount": 172
+    },
+    {
+      "id": "my-week",
+      "title": "أُسْبُوعي",
+      "titleEn": "My Week",
+      "difficulty": "easy",
+      "tags": [
+        "daily-life"
+      ],
+      "description": "A simple present-tense description of weekly routines and small family moments.",
+      "wordCount": 77
+    },
+    {
+      "id": "at-the-doctor-easy",
+      "title": "عِنْدَ الطَّبِيب",
+      "titleEn": "At the Doctor",
+      "difficulty": "easy",
+      "tags": [
+        "health",
+        "conversation",
+        "daily-life"
+      ],
+      "description": "A beginner-friendly visit to the doctor with common health phrases.",
+      "wordCount": 80
+    },
+    {
+      "id": "shopping-easy",
+      "title": "في السُّوق",
+      "titleEn": "Shopping at the Market",
+      "difficulty": "easy",
+      "tags": [
+        "shopping",
+        "daily-life",
+        "conversation"
+      ],
+      "description": "A short market trip for buying vegetables, fruit, bread, and spices.",
+      "wordCount": 79
+    },
+    {
+      "id": "the-seasons",
+      "title": "الفُصُولُ الأَرْبَعة",
+      "titleEn": "The Four Seasons",
+      "difficulty": "easy",
+      "tags": [
+        "nature",
+        "daily-life"
+      ],
+      "description": "A gentle overview of the four seasons and their familiar scenes.",
+      "wordCount": 79
+    },
+    {
+      "id": "a-phone-call",
+      "title": "مُكالَمة هاتِفيّة",
+      "titleEn": "A Phone Call",
+      "difficulty": "easy",
+      "tags": [
+        "conversation",
+        "daily-life"
+      ],
+      "description": "A friendly phone call arranging a visit for the next day.",
+      "wordCount": 79
+    },
+    {
+      "id": "ramadan",
+      "title": "شَهْرُ رَمَضان",
+      "titleEn": "The Month of Ramadan",
+      "difficulty": "medium",
+      "tags": [
+        "religion",
+        "culture",
+        "daily-life"
+      ],
+      "description": "A warm cultural description of Ramadan routines, generosity, and Eid.",
+      "wordCount": 121
+    },
+    {
+      "id": "a-day-in-cairo",
+      "title": "يَوْمٌ في القاهِرة",
+      "titleEn": "A Day in Cairo",
+      "difficulty": "medium",
+      "tags": [
+        "travel",
+        "culture",
+        "daily-life"
+      ],
+      "description": "A narrated day visiting Cairo, the Nile, a museum, and the citadel.",
+      "wordCount": 128
+    },
+    {
+      "id": "the-camel",
+      "title": "الجَمَلُ سَفِينةُ الصَّحْراء",
+      "titleEn": "The Camel, Ship of the Desert",
+      "difficulty": "medium",
+      "tags": [
+        "nature",
+        "culture",
+        "geography"
+      ],
+      "description": "An explanatory text about the camel and its role in desert life.",
+      "wordCount": 133
+    },
+    {
+      "id": "learning-to-cook",
+      "title": "تَعَلُّمُ الطَّبْخ",
+      "titleEn": "Learning to Cook",
+      "difficulty": "medium",
+      "tags": [
+        "food",
+        "daily-life",
+        "culture"
+      ],
+      "description": "A personal story about mistakes, patience, and family encouragement in the kitchen.",
+      "wordCount": 121
+    },
+    {
+      "id": "a-letter-to-a-friend",
+      "title": "رِسالة إلى صَدِيق",
+      "titleEn": "A Letter to a Friend",
+      "difficulty": "medium",
+      "tags": [
+        "conversation",
+        "daily-life"
+      ],
+      "description": "A warm letter from a student adjusting to life in a new city.",
+      "wordCount": 120
+    },
+    {
+      "id": "the-old-market",
+      "title": "السُّوقُ القَدِيم",
+      "titleEn": "The Old Market (a souk)",
+      "difficulty": "medium",
+      "tags": [
+        "shopping",
+        "culture",
+        "history"
+      ],
+      "description": "A sensory walk through an old souk and its living memory.",
+      "wordCount": 129
+    },
+    {
+      "id": "the-golden-age",
+      "title": "العَصْرُ الذَّهَبيُّ للعُلُوم",
+      "titleEn": "The Golden Age of Arabic Science",
+      "difficulty": "hard",
+      "tags": [
+        "history",
+        "science",
+        "culture"
+      ],
+      "description": "An overview of translation, scholarship, and scientific exchange in the medieval Arabic-speaking world.",
+      "wordCount": 177
+    },
+    {
+      "id": "ibn-battuta",
+      "title": "رِحْلاتُ ابْنِ بَطُّوطة",
+      "titleEn": "The Travels of Ibn Battuta",
+      "difficulty": "hard",
+      "tags": [
+        "history",
+        "travel",
+        "culture"
+      ],
+      "description": "A factual retelling of Ibn Battuta’s long journeys and the value of his travel account.",
+      "wordCount": 172
+    },
+    {
+      "id": "the-nile",
+      "title": "نَهْرُ النِّيل",
+      "titleEn": "The Nile",
+      "difficulty": "hard",
+      "tags": [
+        "geography",
+        "history",
+        "nature"
+      ],
+      "description": "A reflective text on the Nile’s geography, history, symbolism, and modern responsibilities.",
+      "wordCount": 170
+    },
+    {
+      "id": "coffee-history",
+      "title": "قِصّةُ القَهْوة",
+      "titleEn": "The Story of Coffee",
+      "difficulty": "hard",
+      "tags": [
+        "history",
+        "food",
+        "culture"
+      ],
+      "description": "A historical sketch of coffee’s journey from Yemen and Ethiopia to global café culture.",
+      "wordCount": 170
+    },
+    {
+      "id": "dialogue-introductions",
+      "title": "تَعارُف بَيْنَ صَدِيقَيْن",
+      "titleEn": "Two Friends Meet",
+      "difficulty": "easy",
+      "tags": [
+        "daily-life",
+        "conversation",
+        "dialogue"
+      ],
+      "description": "A friendly first meeting between two students who discover shared interests.",
+      "wordCount": 81
+    },
+    {
+      "id": "dialogue-restaurant",
+      "title": "في المَطْعَم: حِوار",
+      "titleEn": "At the Restaurant",
+      "difficulty": "easy",
+      "tags": [
+        "daily-life",
+        "conversation",
+        "dialogue",
+        "food"
+      ],
+      "description": "A useful customer-and-waiter dialogue for ordering a simple meal.",
+      "wordCount": 85
+    },
+    {
+      "id": "dialogue-directions",
+      "title": "السُّؤالُ عَن الطَّرِيق",
+      "titleEn": "Asking for Directions",
+      "difficulty": "easy",
+      "tags": [
+        "daily-life",
+        "conversation",
+        "dialogue",
+        "travel"
+      ],
+      "description": "A practical street dialogue about finding a station and taking a bus.",
+      "wordCount": 78
+    },
+    {
+      "id": "my-school",
+      "title": "مَدْرَسَتي",
+      "titleEn": "My School",
+      "difficulty": "easy",
+      "tags": [
+        "daily-life",
+        "education"
+      ],
+      "description": "A warm beginner text about school, classes, friends, and daily learning.",
+      "wordCount": 76
+    },
+    {
+      "id": "dialogue-job-interview",
+      "title": "مُقابَلة عَمَل",
+      "titleEn": "A Job Interview",
+      "difficulty": "medium",
+      "tags": [
+        "conversation",
+        "dialogue",
+        "education",
+        "daily-life"
+      ],
+      "description": "A respectful interview dialogue about experience, motivation, and workplace habits.",
+      "wordCount": 121
+    },
+    {
+      "id": "the-desert",
+      "title": "الصَّحْراءُ العَرَبِيّة",
+      "titleEn": "The Arabian Desert",
+      "difficulty": "medium",
+      "tags": [
+        "nature",
+        "geography",
+        "culture"
+      ],
+      "description": "A descriptive text about desert landscapes, hidden life, travel, and memory.",
+      "wordCount": 120
+    },
+    {
+      "id": "a-childhood-memory",
+      "title": "ذِكْرى مِن الطُّفُولة",
+      "titleEn": "A Childhood Memory",
+      "difficulty": "medium",
+      "tags": [
+        "daily-life",
+        "culture"
+      ],
+      "description": "A nostalgic memory of summer days, grandparents, fields, and warm bread.",
+      "wordCount": 121
+    },
+    {
+      "id": "arabic-calligraphy-art",
+      "title": "فَنُّ الزَّخْرَفة",
+      "titleEn": "The Art of Arabic Ornamentation",
+      "difficulty": "medium",
+      "tags": [
+        "culture",
+        "history"
+      ],
+      "description": "An accessible explanation of Arabic ornamentation, geometry, letters, and design.",
+      "wordCount": 120
+    },
+    {
+      "id": "the-house-of-wisdom",
+      "title": "بَيْتُ الحِكْمة",
+      "titleEn": "The House of Wisdom",
+      "difficulty": "hard",
+      "tags": [
+        "history",
+        "science",
+        "culture",
+        "education"
+      ],
+      "description": "A historical overview of Baghdad’s translation culture and the growth of knowledge.",
+      "wordCount": 170
+    },
+    {
+      "id": "climate-and-water",
+      "title": "المُناخُ والماء في العالَمِ العَرَبيّ",
+      "titleEn": "Climate & Water in the Arab World",
+      "difficulty": "hard",
+      "tags": [
+        "science",
+        "nature",
+        "geography",
+        "culture"
+      ],
+      "description": "A reflective text on climate, water scarcity, traditional knowledge, and sustainable choices.",
+      "wordCount": 170
+    },
+    {
+      "id": "graded-the-cat",
+      "title": "القِطّةُ الصَّغِيرة",
+      "titleEn": "The Little Cat",
+      "difficulty": "easy",
+      "tags": [
+        "daily-life",
+        "graded-reader"
+      ],
+      "description": "A very simple graded reader about a small cat and its daily routine.",
+      "wordCount": 66
+    },
+    {
+      "id": "graded-the-garden",
+      "title": "في الحَدِيقة",
+      "titleEn": "In the Garden",
+      "difficulty": "easy",
+      "tags": [
+        "daily-life",
+        "graded-reader"
+      ],
+      "description": "A controlled beginner text about a quiet visit to the garden.",
+      "wordCount": 71
+    },
+    {
+      "id": "dialogue-at-the-pharmacy",
+      "title": "في الصَّيْدَليّة: حِوار",
+      "titleEn": "At the Pharmacy",
+      "difficulty": "easy",
+      "tags": [
+        "daily-life",
+        "conversation",
+        "dialogue",
+        "health"
+      ],
+      "description": "A practical beginner dialogue for asking about headache medicine at a pharmacy.",
+      "wordCount": 84
+    },
+    {
+      "id": "dialogue-planning-a-trip",
+      "title": "نُخَطِّطُ لِرِحْلة",
+      "titleEn": "Planning a Trip",
+      "difficulty": "medium",
+      "tags": [
+        "conversation",
+        "dialogue",
+        "travel",
+        "daily-life"
+      ],
+      "description": "Two friends choose a destination, transport, and supplies for a short trip.",
+      "wordCount": 142
+    },
+    {
+      "id": "the-arab-league",
+      "title": "جامِعةُ الدُّوَلِ العَرَبِيّة",
+      "titleEn": "The Arab League",
+      "difficulty": "medium",
+      "tags": [
+        "culture",
+        "history",
+        "society"
+      ],
+      "description": "An informational overview of the Arab League, its purpose, and its challenges.",
+      "wordCount": 121
+    },
+    {
+      "id": "a-traditional-recipe",
+      "title": "وَصْفةُ المَقْلُوبة",
+      "titleEn": "A Traditional Recipe",
+      "difficulty": "medium",
+      "tags": [
+        "food",
+        "culture",
+        "daily-life"
+      ],
+      "description": "A step-by-step cultural recipe for preparing and serving maqluba.",
+      "wordCount": 128
+    },
+    {
+      "id": "proverbs-and-wisdom",
+      "title": "أَمْثالٌ وحِكَم",
+      "titleEn": "Proverbs & Wisdom",
+      "difficulty": "hard",
+      "tags": [
+        "culture",
+        "proverb",
+        "education"
+      ],
+      "description": "A short essay explaining five familiar Arabic proverbs and the values behind them.",
+      "wordCount": 175
+    },
+    {
+      "id": "reading-and-society",
+      "title": "القِراءةُ والمُجْتَمَع",
+      "titleEn": "Reading & Society",
+      "difficulty": "hard",
+      "tags": [
+        "education",
+        "society",
+        "culture"
+      ],
+      "description": "An opinion essay about reading as a social habit that strengthens dialogue and imagination.",
+      "wordCount": 171
+    },
+    {
+      "id": "graded-my-family",
+      "title": "عائِلَتي الكَبِيرة",
+      "titleEn": "My Big Family (graded reader)",
+      "difficulty": "easy",
+      "wordCount": 82,
+      "tags": [
+        "daily-life",
+        "graded-reader",
+        "family"
+      ],
+      "description": "A controlled beginner text about a warm multigenerational household."
+    },
+    {
+      "id": "dialogue-weekend",
+      "title": "عُطْلةُ نِهايةِ الأُسْبُوع",
+      "titleEn": "Weekend Plans (a dialogue)",
+      "difficulty": "easy",
+      "wordCount": 88,
+      "tags": [
+        "daily-life",
+        "conversation",
+        "dialogue"
+      ],
+      "description": "A friendly dialogue about weekend visits, the library, and meeting after the holiday."
+    },
+    {
+      "id": "a-visit-to-a-museum",
+      "title": "زِيارةٌ إلى المَتْحَف",
+      "titleEn": "A Visit to a Museum",
+      "difficulty": "medium",
+      "wordCount": 131,
+      "tags": [
+        "culture",
+        "history",
+        "education"
+      ],
+      "description": "A school museum visit that connects artifacts, memory, and historical inquiry."
+    },
+    {
+      "id": "another-juha-tale",
+      "title": "حِكايةٌ أُخْرى لِجُحا",
+      "titleEn": "Another Tale of Juha",
+      "difficulty": "medium",
+      "wordCount": 148,
+      "tags": [
+        "folktale",
+        "culture"
+      ],
+      "description": "An original public-domain-style Juha anecdote about bargaining, patience, and wit."
+    },
+    {
+      "id": "the-arabic-language-family",
+      "title": "العَرَبِيّةُ وأَخَواتُها الساميّة",
+      "titleEn": "Arabic & Its Semitic Sisters",
+      "difficulty": "hard",
+      "wordCount": 193,
+      "tags": [
+        "language",
+        "history",
+        "education"
+      ],
+      "description": "A linguistics overview of Arabic within the Semitic language family."
+    },
+    {
+      "id": "space-and-astronomy",
+      "title": "الإنْسانُ والفَضاء",
+      "titleEn": "Humanity and Space",
+      "difficulty": "hard",
+      "wordCount": 184,
+      "tags": [
+        "science",
+        "education"
+      ],
+      "description": "A science text about astronomy, satellites, space exploration, and responsibility."
+    },
+    {
+      "id": "graded-a-day-at-the-beach",
+      "title": "يَوْمٌ على الشّاطِئ",
+      "titleEn": "A Day at the Beach (graded reader)",
+      "difficulty": "easy",
+      "wordCount": 72,
+      "tags": [
+        "daily-life",
+        "travel",
+        "graded-reader"
+      ],
+      "description": "A simple graded reader about a family day by the sea."
+    },
+    {
+      "id": "dialogue-at-the-doctor-2",
+      "title": "عِنْدَ الطَّبِيب: حِوار",
+      "titleEn": "At the Doctor (a dialogue)",
+      "difficulty": "easy",
+      "wordCount": 84,
+      "tags": [
+        "daily-life",
+        "conversation",
+        "dialogue",
+        "health"
+      ],
+      "description": "A beginner-friendly doctor visit dialogue about a sore throat and rest."
+    },
+    {
+      "id": "ramadan-and-eid",
+      "title": "رَمَضانُ والعِيد",
+      "titleEn": "Ramadan and Eid",
+      "difficulty": "medium",
+      "wordCount": 120,
+      "tags": [
+        "religion",
+        "culture",
+        "daily-life"
+      ],
+      "description": "A cultural overview of Ramadan routines, charity, family visits, and Eid al-Fitr."
+    },
+    {
+      "id": "the-souk-of-marrakech",
+      "title": "سُوقُ مَرّاكُش",
+      "titleEn": "The Souk of Marrakech",
+      "difficulty": "medium",
+      "wordCount": 124,
+      "tags": [
+        "travel",
+        "culture",
+        "daily-life"
+      ],
+      "description": "A sensory walk through Marrakech's old souk, crafts, bargaining, and city memory."
+    },
+    {
+      "id": "ibn-khaldun",
+      "title": "ابْنُ خَلْدُون ومُقَدِّمَتُه",
+      "titleEn": "Ibn Khaldun and His Muqaddima (history of the first sociologist)",
+      "difficulty": "hard",
+      "wordCount": 178,
+      "tags": [
+        "history",
+        "society",
+        "science"
+      ],
+      "description": "A factual history text about Ibn Khaldun, the Muqaddima, and early social analysis."
+    },
+    {
+      "id": "the-future-of-arabic",
+      "title": "مُسْتَقْبَلُ اللُّغةِ العَرَبِيّة",
+      "titleEn": "The Future of the Arabic Language",
+      "difficulty": "hard",
+      "wordCount": 173,
+      "tags": [
+        "language",
+        "society",
+        "science"
+      ],
+      "description": "An essay on Arabic in education, technology, AI, and everyday digital life."
+    },
+    {
+      "id": "graded-my-room",
+      "title": "غُرْفَتي",
+      "titleEn": "My Room (graded reader)",
+      "difficulty": "easy",
+      "wordCount": 76,
+      "tags": [
+        "daily-life",
+        "graded-reader"
+      ],
+      "description": "A controlled beginner text describing a quiet bedroom and simple routines."
+    },
+    {
+      "id": "dialogue-shopping-clothes",
+      "title": "في مَحَلِّ المَلابِس: حِوار",
+      "titleEn": "At the Clothes Shop (dialogue)",
+      "difficulty": "easy",
+      "wordCount": 77,
+      "tags": [
+        "daily-life",
+        "conversation",
+        "dialogue",
+        "shopping"
+      ],
+      "description": "A practical clothes-shop dialogue about colors, sizes, prices, and payment."
+    },
+    {
+      "id": "a-letter-of-thanks",
+      "title": "رِسالةُ شُكْر",
+      "titleEn": "A Letter of Thanks",
+      "difficulty": "medium",
+      "wordCount": 121,
+      "tags": [
+        "daily-life",
+        "society"
+      ],
+      "description": "A warm personal letter thanking a friend for help after moving to a new city."
+    },
+    {
+      "id": "traditional-crafts",
+      "title": "الحِرَفُ التَّقْلِيديّة",
+      "titleEn": "Traditional Crafts",
+      "difficulty": "medium",
+      "wordCount": 128,
+      "tags": [
+        "culture",
+        "history",
+        "society"
+      ],
+      "description": "An informational culture text about traditional crafts, artisanship, and preservation."
+    },
+    {
+      "id": "the-invention-of-paper",
+      "title": "رِحْلةُ الوَرَق",
+      "titleEn": "The Journey of Paper",
+      "difficulty": "hard",
+      "wordCount": 175,
+      "tags": [
+        "history",
+        "science",
+        "education",
+        "culture"
+      ],
+      "description": "A factual history text tracing paper-making from China through Central Asia to the Arab world."
+    },
+    {
+      "id": "education-and-the-future",
+      "title": "التَّعْلِيمُ والمُسْتَقْبَل",
+      "titleEn": "Education and the Future",
+      "difficulty": "hard",
+      "wordCount": 172,
+      "tags": [
+        "education",
+        "society",
+        "science"
+      ],
+      "description": "An opinion essay on skills, technology, equity, and the human role of teachers."
+    },
+    {
+      "id": "graded-the-farmer",
+      "title": "الفَلّاحُ وأرْضُه",
+      "titleEn": "The Farmer and His Land (graded reader)",
+      "difficulty": "easy",
+      "wordCount": 76,
+      "tags": [
+        "daily-life",
+        "graded-reader",
+        "nature"
+      ],
+      "description": "A simple graded reader about a patient farmer, his field, and daily work."
+    },
+    {
+      "id": "dialogue-phone-booking",
+      "title": "حَجْزٌ بِالهاتِف",
+      "titleEn": "Booking by Phone (dialogue)",
+      "difficulty": "easy",
+      "wordCount": 80,
+      "tags": [
+        "daily-life",
+        "conversation",
+        "dialogue"
+      ],
+      "description": "A practical hotel phone-booking dialogue with room, breakfast, and arrival details."
+    },
+    {
+      "id": "festivals-and-celebrations",
+      "title": "الأعْيادُ والاحْتِفالات",
+      "titleEn": "Festivals & Celebrations",
+      "difficulty": "medium",
+      "wordCount": 120,
+      "tags": [
+        "culture",
+        "society",
+        "daily-life"
+      ],
+      "description": "A cultural reflection on family visits, weddings, memory, and changing celebrations."
+    },
+    {
+      "id": "the-oasis",
+      "title": "الواحة",
+      "titleEn": "The Oasis",
+      "difficulty": "medium",
+      "wordCount": 124,
+      "tags": [
+        "nature",
+        "culture",
+        "history"
+      ],
+      "description": "A descriptive text about oasis life, trade routes, water sharing, and desert resilience."
+    },
+    {
+      "id": "great-arab-scientists",
+      "title": "عُلَماءُ العَرَبِ العِظام",
+      "titleEn": "Great Arab Scientists",
+      "difficulty": "hard",
+      "wordCount": 174,
+      "tags": [
+        "history",
+        "science",
+        "culture"
+      ],
+      "description": "A factual overview of al-Khwarizmi, Ibn Sina, al-Razi, and the scholarly culture around them."
+    },
+    {
+      "id": "morning-train-ar",
+      "title": "قِطَارُ الصَّبَاحِ",
+      "titleEn": "The Morning Train",
+      "difficulty": "easy",
+      "tags": [
+        "travel",
+        "daily-life"
+      ],
+      "description": "A learner-friendly scene about two students riding the morning train.",
+      "wordCount": 52
+    },
+    {
+      "id": "simple-salad-ar",
+      "title": "سَلَطَةٌ بَسِيطَةٌ",
+      "titleEn": "A Simple Salad",
+      "difficulty": "easy",
+      "tags": [
+        "food",
+        "health",
+        "daily-life"
+      ],
+      "description": "A simple text about preparing a healthy salad at home.",
+      "wordCount": 50
+    },
+    {
+      "id": "lost-key-ar",
+      "title": "الْمِفْتَاحُ الضَّائِعُ",
+      "titleEn": "The Lost Key",
+      "difficulty": "easy",
+      "tags": [
+        "daily-life",
+        "conversation"
+      ],
+      "description": "A short everyday dialogue about finding a missing key.",
+      "wordCount": 50
+    },
+    {
+      "id": "village-library-ar",
+      "title": "مَكْتَبَةُ الْقَرْيَةِ",
+      "titleEn": "The Village Library",
+      "difficulty": "medium",
+      "tags": [
+        "education",
+        "society",
+        "daily-life"
+      ],
+      "description": "A community story about turning an old house into a small village library.",
+      "wordCount": 83
+    },
+    {
+      "id": "bees-and-garden-ar",
+      "title": "النَّحْلُ وَالْحَدِيقَةُ",
+      "titleEn": "Bees and the Garden",
+      "difficulty": "medium",
+      "tags": [
+        "science",
+        "nature"
+      ],
+      "description": "A clear science explainer about how bees help plants produce fruit.",
+      "wordCount": 81
+    },
+    {
+      "id": "new-park-report-ar",
+      "title": "تَقْرِيرٌ عَنْ حَدِيقَةٍ جَدِيدَةٍ",
+      "titleEn": "Report on a New Park",
+      "difficulty": "medium",
+      "tags": [
+        "society",
+        "nature"
+      ],
+      "description": "A news-style report about a neighborhood opening a new public park.",
+      "wordCount": 81
+    },
+    {
+      "id": "tree-and-river-ar",
+      "title": "الشَّجَرَةُ وَالنَّهْرُ",
+      "titleEn": "The Tree and the River",
+      "difficulty": "hard",
+      "tags": [
+        "folktale",
+        "nature",
+        "proverb"
+      ],
+      "description": "An original fable about humility, dependence, and quiet generosity.",
+      "wordCount": 142
+    },
+    {
+      "id": "digital-memory-ar",
+      "title": "الذَّاكِرَةُ الرَّقْمِيَّةُ",
+      "titleEn": "Digital Memory",
+      "difficulty": "hard",
+      "tags": [
+        "science",
+        "society",
+        "daily-life"
+      ],
+      "description": "A reflective blog-style text about memory, technology, and attention.",
+      "wordCount": 141
+    },
+    {
+      "id": "morning-exercise-ar",
+      "title": "تَمْرِينُ الصَّبَاحِ",
+      "titleEn": "Morning Exercise",
+      "difficulty": "easy",
+      "tags": [
+        "health",
+        "daily-life"
+      ],
+      "description": "A simple morning routine about gentle movement and starting the day well.",
+      "wordCount": 44
+    },
+    {
+      "id": "bakery-dialogue-ar",
+      "title": "فِي الْمَخْبَزِ",
+      "titleEn": "At the Bakery",
+      "difficulty": "easy",
+      "tags": [
+        "food",
+        "conversation",
+        "dialogue"
+      ],
+      "description": "A beginner dialogue about buying fresh bread and a small cake.",
+      "wordCount": 42
+    },
+    {
+      "id": "bicycle-ride-ar",
+      "title": "جَوْلَةُ الدَّرَّاجَةِ",
+      "titleEn": "The Bicycle Ride",
+      "difficulty": "easy",
+      "tags": [
+        "daily-life",
+        "health"
+      ],
+      "description": "A short safety-focused scene about riding a bicycle in the afternoon.",
+      "wordCount": 43
+    },
+    {
+      "id": "water-cycle-ar",
+      "title": "دَوْرَةُ الْمَاءِ",
+      "titleEn": "The Water Cycle",
+      "difficulty": "medium",
+      "tags": [
+        "science",
+        "nature",
+        "education"
+      ],
+      "description": "A clear science explainer about evaporation, clouds, rain, and returning water.",
+      "wordCount": 82
+    },
+    {
+      "id": "first-aid-school-ar",
+      "title": "إِسْعَافٌ فِي الْمَدْرَسَةِ",
+      "titleEn": "First Aid at School",
+      "difficulty": "medium",
+      "tags": [
+        "health",
+        "education",
+        "daily-life"
+      ],
+      "description": "A school story that teaches calm, clean, and safe first-aid steps.",
+      "wordCount": 81
+    },
+    {
+      "id": "petra-diary-ar",
+      "title": "مُذَكِّرَةٌ مِنَ الْبَتْراءِ",
+      "titleEn": "Diary from Petra",
+      "difficulty": "medium",
+      "tags": [
+        "travel",
+        "culture",
+        "history"
+      ],
+      "description": "A travel diary about seeing Petra, learning its water systems, and sending a postcard.",
+      "wordCount": 80
+    },
+    {
+      "id": "rooftop-solar-report-ar",
+      "title": "تَقْرِيرُ الطَّاقَةِ الشَّمْسِيَّةِ",
+      "titleEn": "Report on Rooftop Solar Panels",
+      "difficulty": "hard",
+      "tags": [
+        "science",
+        "society"
+      ],
+      "description": "A news-style report about a school rooftop solar project and practical sustainability.",
+      "wordCount": 141
+    },
+    {
+      "id": "lantern-and-wind-ar",
+      "title": "الْمِصْبَاحُ وَالرِّيحُ",
+      "titleEn": "The Lantern and the Wind",
+      "difficulty": "hard",
+      "tags": [
+        "folktale",
+        "proverb"
+      ],
+      "description": "An original fable about patient service, strength, and mercy.",
+      "wordCount": 141
+    },
+    {
+      "id": "vet-clinic-ar",
+      "title": "فِي عِيَادَةِ الطَّبِيبَةِ الْبَيْطَرِيَّةِ",
+      "titleEn": "At the Veterinary Clinic",
+      "difficulty": "easy",
+      "tags": [
+        "animals",
+        "profession",
+        "health"
+      ],
+      "description": "A simple scene about caring for a sick cat at a veterinary clinic.",
+      "wordCount": 44
+    },
+    {
+      "id": "planting-basil-ar",
+      "title": "زِرَاعَةُ الرَّيْحَانِ",
+      "titleEn": "Planting Basil",
+      "difficulty": "easy",
+      "tags": [
+        "how-to",
+        "nature"
+      ],
+      "description": "A beginner-friendly how-to text about planting basil on a balcony.",
+      "wordCount": 43
+    },
+    {
+      "id": "weather-window-ar",
+      "title": "الطَّقْسُ عِنْدَ النَّافِذَةِ",
+      "titleEn": "Weather at the Window",
+      "difficulty": "easy",
+      "tags": [
+        "weather",
+        "daily-life"
+      ],
+      "description": "A short daily-life text about checking the weather before school.",
+      "wordCount": 46
+    },
+    {
+      "id": "recycling-club-ar",
+      "title": "نَادِي التَّدْوِيرِ",
+      "titleEn": "The Recycling Club",
+      "difficulty": "medium",
+      "tags": [
+        "recycling",
+        "environment",
+        "school"
+      ],
+      "description": "A school club learns how small recycling habits can help the community.",
+      "wordCount": 85
+    },
+    {
+      "id": "museum-guide-ar",
+      "title": "دَلِيلَةُ الْمَتْحَفِ",
+      "titleEn": "The Museum Guide",
+      "difficulty": "medium",
+      "tags": [
+        "profession",
+        "culture",
+        "history"
+      ],
+      "description": "A description of a museum guide who helps visitors listen to history.",
+      "wordCount": 82
+    },
+    {
+      "id": "school-radio-book-swap-ar",
+      "title": "خَبَرٌ مِنْ إِذَاعَةِ الْمَدْرَسَةِ",
+      "titleEn": "School Radio Book Exchange",
+      "difficulty": "medium",
+      "tags": [
+        "news",
+        "school",
+        "reading"
+      ],
+      "description": "A short school news report about a student book-exchange fair.",
+      "wordCount": 80
+    },
+    {
+      "id": "star-shepherd-legend-ar",
+      "title": "نَجْمُ الرَّاعِي الصَّغِيرِ",
+      "titleEn": "The Little Shepherd Star",
+      "difficulty": "hard",
+      "tags": [
+        "legend",
+        "kindness",
+        "night"
+      ],
+      "description": "An original gentle legend about a shepherd, a lost lamb, and a helpful star.",
+      "wordCount": 140
+    },
+    {
+      "id": "date-palm-fable-ar",
+      "title": "النَّخْلَةُ وَالتِّينَةُ",
+      "titleEn": "The Palm and the Fig Tree",
+      "difficulty": "hard",
+      "tags": [
+        "fable",
+        "nature",
+        "wisdom"
+      ],
+      "description": "An original moral fable about pride, usefulness, and generosity.",
+      "wordCount": 140
+    },
+    {
+      "id": "post-office-dialogue-ar",
+      "title": "فِي مَكْتَبِ الْبَرِيدِ",
+      "titleEn": "At the Post Office",
+      "difficulty": "easy",
+      "tags": [
+        "dialogue",
+        "mail",
+        "daily-life"
+      ],
+      "description": "A simple dialogue about mailing a letter at the post office.",
+      "wordCount": 41
+    },
+    {
+      "id": "little-robot-ar",
+      "title": "الرُّوبُوتُ الصَّغِيرُ",
+      "titleEn": "The Little Robot",
+      "difficulty": "easy",
+      "tags": [
+        "technology",
+        "school"
+      ],
+      "description": "A beginner-friendly school scene about making a small robot.",
+      "wordCount": 41
+    },
+    {
+      "id": "sea-turtle-ar",
+      "title": "السُّلَحْفَاةُ الْبَحْرِيَّةُ",
+      "titleEn": "The Sea Turtle",
+      "difficulty": "easy",
+      "tags": [
+        "animals",
+        "nature",
+        "sea"
+      ],
+      "description": "A short nature text about protecting a sea turtle habitat.",
+      "wordCount": 41
+    },
+    {
+      "id": "gravity-explainer-ar",
+      "title": "مَا هِيَ الْجَاذِبِيَّةُ؟",
+      "titleEn": "What Is Gravity?",
+      "difficulty": "medium",
+      "tags": [
+        "science",
+        "physics",
+        "education"
+      ],
+      "description": "A clear explainer about gravity and how it shapes daily life.",
+      "wordCount": 82
+    },
+    {
+      "id": "potter-workshop-ar",
+      "title": "وَرْشَةُ الْفَخَّارِ",
+      "titleEn": "The Potter's Workshop",
+      "difficulty": "medium",
+      "tags": [
+        "profession",
+        "craft",
+        "culture"
+      ],
+      "description": "A description of a potter shaping clay with patience and skill.",
+      "wordCount": 80
+    },
+    {
+      "id": "organize-your-desk-ar",
+      "title": "كَيْفَ تُنَظِّمُ مَكْتَبَكَ",
+      "titleEn": "How to Organize Your Desk",
+      "difficulty": "medium",
+      "tags": [
+        "how-to",
+        "study",
+        "daily-life"
+      ],
+      "description": "A practical guide to keeping a study desk clear and useful.",
+      "wordCount": 84
+    },
+    {
+      "id": "maryam-al-ijliyya-ar",
+      "title": "مَرْيَمُ الْعِجْلِيَّةُ وَالْإِسْطُرْلَابُ",
+      "titleEn": "Maryam al-Ijliyya and the Astrolabe",
+      "difficulty": "hard",
+      "tags": [
+        "biography",
+        "history",
+        "science"
+      ],
+      "description": "A factual biography of Maryam al-Ijliyya, a skilled maker of astrolabes in medieval Aleppo.",
+      "wordCount": 148
+    },
+    {
+      "id": "how-compass-works-ar",
+      "title": "كَيْفَ تَعْمَلُ الْبُوصَلَةُ؟",
+      "titleEn": "How a Compass Works",
+      "difficulty": "hard",
+      "tags": [
+        "science",
+        "navigation",
+        "history"
+      ],
+      "description": "A science explainer about magnetic direction, navigation, and practical knowledge.",
+      "wordCount": 141
+    },
+    {
+      "id": "airport-dialogue-ar",
+      "title": "حِوارٌ في المَطارِ",
+      "titleEn": "Dialogue at the Airport",
+      "difficulty": "easy",
+      "tags": [
+        "travel",
+        "dialogue"
+      ],
+      "description": "A simple airport dialogue about finding a gate and preparing to fly.",
+      "wordCount": 45
+    },
+    {
+      "id": "plant-a-tree-ar",
+      "title": "كَيْفَ تَزْرَعُ شَجَرَةً",
+      "titleEn": "How to Plant a Tree",
+      "difficulty": "easy",
+      "tags": [
+        "nature",
+        "how-to"
+      ],
+      "description": "A short how-to text explaining the first steps of planting a tree.",
+      "wordCount": 47
+    },
+    {
+      "id": "quiet-courtyard-ar",
+      "title": "الفِناءُ الهادِئُ",
+      "titleEn": "The Quiet Courtyard",
+      "difficulty": "easy",
+      "tags": [
+        "personal-essay",
+        "home"
+      ],
+      "description": "A reflective personal essay about a peaceful family courtyard.",
+      "wordCount": 43
+    },
+    {
+      "id": "volcanoes-explainer-ar",
+      "title": "كَيْفَ يَثورُ البُرْكانُ",
+      "titleEn": "How Volcanoes Erupt",
+      "difficulty": "medium",
+      "tags": [
+        "science",
+        "geology"
+      ],
+      "description": "A science explainer about magma, pressure, and volcanic eruptions.",
+      "wordCount": 86
+    },
+    {
+      "id": "travel-to-muscat-ar",
+      "title": "رِحْلَةٌ إِلَى مَسْقَطَ",
+      "titleEn": "A Trip to Muscat",
+      "difficulty": "medium",
+      "tags": [
+        "travel",
+        "city"
+      ],
+      "description": "A travel account describing sights and sounds in Muscat.",
+      "wordCount": 80
+    },
+    {
+      "id": "al-razi-biography-ar",
+      "title": "أَبو بَكْرٍ الرّازيُّ",
+      "titleEn": "Abu Bakr al-Razi",
+      "difficulty": "medium",
+      "tags": [
+        "biography",
+        "science"
+      ],
+      "description": "A brief factual biography of the physician and scholar Abu Bakr al-Razi.",
+      "wordCount": 84
+    },
+    {
+      "id": "fox-and-well-fable-ar",
+      "title": "الثَّعْلَبُ وَالبِئْرُ",
+      "titleEn": "The Fox and the Well",
+      "difficulty": "hard",
+      "tags": [
+        "fable",
+        "wisdom"
+      ],
+      "description": "An original fable about flattery, caution, and wisdom.",
+      "wordCount": 140
+    },
+    {
+      "id": "human-heart-explainer-ar",
+      "title": "القَلْبُ البَشَرِيُّ",
+      "titleEn": "The Human Heart",
+      "difficulty": "hard",
+      "tags": [
+        "science",
+        "health"
+      ],
+      "description": "A detailed explainer about how the human heart pumps blood.",
+      "wordCount": 141
+    },
+    {
+      "id": "fruit-shop-dialogue-ar",
+      "title": "حِوارٌ في مَحَلِّ الفَواكِهِ",
+      "titleEn": "Dialogue at the Fruit Shop",
+      "difficulty": "easy",
+      "tags": [
+        "food",
+        "dialogue",
+        "shopping"
+      ],
+      "description": "A simple shop dialogue about buying fruit politely.",
+      "wordCount": 46
+    },
+    {
+      "id": "pack-school-bag-ar",
+      "title": "كَيْفَ تُرَتِّبُ حَقيبَتَكَ المَدْرَسِيَّةَ",
+      "titleEn": "How to Pack Your School Bag",
+      "difficulty": "easy",
+      "tags": [
+        "how-to",
+        "school",
+        "daily-life"
+      ],
+      "description": "A short practical guide to preparing a school bag before bedtime.",
+      "wordCount": 49
+    },
+    {
+      "id": "safe-crossing-ar",
+      "title": "عُبورُ الشّارِعِ بِأَمانٍ",
+      "titleEn": "Crossing the Street Safely",
+      "difficulty": "easy",
+      "tags": [
+        "safety",
+        "how-to"
+      ],
+      "description": "A simple safety guide for crossing at a pedestrian crossing.",
+      "wordCount": 49
+    },
+    {
+      "id": "lentil-soup-recipe-ar",
+      "title": "وَصْفَةُ شُورْبَةِ العَدَسِ",
+      "titleEn": "Lentil Soup Recipe",
+      "difficulty": "medium",
+      "tags": [
+        "food",
+        "recipe",
+        "health"
+      ],
+      "description": "A step-by-step recipe for a warm and healthy lentil soup.",
+      "wordCount": 86
+    },
+    {
+      "id": "photosynthesis-explainer-ar",
+      "title": "التَّمْثيلُ الضَّوْئِيُّ",
+      "titleEn": "Photosynthesis",
+      "difficulty": "medium",
+      "tags": [
+        "science",
+        "nature",
+        "plants"
+      ],
+      "description": "A clear science explainer about how plants make food using sunlight.",
+      "wordCount": 80
+    },
+    {
+      "id": "jerash-travel-ar",
+      "title": "رِحْلَةٌ إِلَى جَرَشَ",
+      "titleEn": "A Trip to Jerash",
+      "difficulty": "medium",
+      "tags": [
+        "travel",
+        "history",
+        "city"
+      ],
+      "description": "A travel account of visiting the ancient city of Jerash.",
+      "wordCount": 86
+    },
+    {
+      "id": "fatima-al-fihri-biography-ar",
+      "title": "فاطِمَةُ الفِهْرِيَّةُ",
+      "titleEn": "Fatima al-Fihri",
+      "difficulty": "hard",
+      "tags": [
+        "biography",
+        "history",
+        "education"
+      ],
+      "description": "A factual biography of Fatima al-Fihri and the legacy of al-Qarawiyyin.",
+      "wordCount": 145
+    },
+    {
+      "id": "olive-tree-legend-ar",
+      "title": "أُسْطورَةُ الزَّيْتونَةِ",
+      "titleEn": "The Legend of the Olive Tree",
+      "difficulty": "hard",
+      "tags": [
+        "legend",
+        "wisdom",
+        "nature"
+      ],
+      "description": "An original folk-style legend about sharing water and listening to old wisdom.",
+      "wordCount": 143
+    }
+  ]
+}

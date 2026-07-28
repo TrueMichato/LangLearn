@@ -1,0 +1,159 @@
+{
+  "id": "insurance-risk",
+  "words": [
+    {
+      "word": "تَأْمِينٌ",
+      "reading": "taʾmīn",
+      "meaning": "insurance",
+      "example": "اشْتَرَيْتُ تَأْمِينًا لِلسَّيَّارَةِ الْجَدِيدَةِ.",
+      "exampleMeaning": "I bought insurance for the new car."
+    },
+    {
+      "word": "وَثِيقَةٌ",
+      "reading": "wathīqa",
+      "meaning": "policy / document",
+      "example": "قَرَأْتُ وَثِيقَةَ التَّأْمِينِ بِعِنَايَةٍ.",
+      "exampleMeaning": "I read the insurance policy carefully."
+    },
+    {
+      "word": "قِسْطٌ",
+      "reading": "qisṭ",
+      "meaning": "premium / installment",
+      "example": "يَدْفَعُ الْعَمِيلُ قِسْطًا شَهْرِيًّا.",
+      "exampleMeaning": "The client pays a monthly premium."
+    },
+    {
+      "word": "تَغْطِيَةٌ",
+      "reading": "taghṭiya",
+      "meaning": "coverage",
+      "example": "تَشْمَلُ تَغْطِيَةٌ الطَّوَارِئَ الطِّبِّيَّةَ.",
+      "exampleMeaning": "Coverage includes medical emergencies."
+    },
+    {
+      "word": "مُطَالَبَةٌ",
+      "reading": "muṭālaba",
+      "meaning": "claim",
+      "example": "قَدَّمَ السَّائِقُ مُطَالَبَةً بَعْدَ الْحَادِثِ.",
+      "exampleMeaning": "The driver filed a claim after the accident."
+    },
+    {
+      "word": "تَعْوِيضٌ",
+      "reading": "taʿwīḍ",
+      "meaning": "compensation",
+      "example": "وَصَلَ تَعْوِيضٌ بَعْدَ فَحْصِ الضَّرَرِ.",
+      "exampleMeaning": "Compensation arrived after the damage inspection."
+    },
+    {
+      "word": "خَطَرٌ",
+      "reading": "khaṭar",
+      "meaning": "risk",
+      "example": "يُقَيِّمُ الْخَبِيرُ خَطَرَ الْفَيْضَانِ.",
+      "exampleMeaning": "The expert assesses the risk of flooding."
+    },
+    {
+      "word": "ضَرَرٌ",
+      "reading": "ḍarar",
+      "meaning": "damage",
+      "example": "سَبَّبَتِ الْعَاصِفَةُ ضَرَرًا فِي السَّقْفِ.",
+      "exampleMeaning": "The storm caused damage to the roof."
+    },
+    {
+      "word": "حَادِثٌ",
+      "reading": "ḥādith",
+      "meaning": "accident",
+      "example": "وَقَعَ حَادِثٌ صَغِيرٌ عِنْدَ الْمَفْتَرَقِ.",
+      "exampleMeaning": "A small accident happened at the intersection."
+    },
+    {
+      "word": "مَسْؤُولِيَّةٌ",
+      "reading": "masʾūliyya",
+      "meaning": "liability / responsibility",
+      "example": "تَحْمِي الْوَثِيقَةُ مِنْ مَسْؤُولِيَّةٍ قَانُونِيَّةٍ.",
+      "exampleMeaning": "The policy protects from legal liability."
+    },
+    {
+      "word": "اسْتِثْنَاءٌ",
+      "reading": "istithnāʾ",
+      "meaning": "exclusion",
+      "example": "يَظْهَرُ اسْتِثْنَاءٌ وَاضِحٌ فِي آخِرِ الْعَقْدِ.",
+      "exampleMeaning": "A clear exclusion appears at the end of the contract."
+    },
+    {
+      "word": "مُسْتَفِيدٌ",
+      "reading": "mustafīd",
+      "meaning": "beneficiary",
+      "example": "سَجَّلَتِ الْأُسْرَةُ مُسْتَفِيدًا وَاحِدًا.",
+      "exampleMeaning": "The family registered one beneficiary."
+    },
+    {
+      "word": "تَقْيِيمٌ",
+      "reading": "taqyīm",
+      "meaning": "assessment",
+      "example": "يَسْبِقُ تَقْيِيمٌ سَرِيعٌ صَرْفَ التَّعْوِيضِ.",
+      "exampleMeaning": "A quick assessment precedes paying compensation."
+    },
+    {
+      "word": "خَسَارَةٌ",
+      "reading": "khasāra",
+      "meaning": "loss",
+      "example": "تُسَجِّلُ الشَّرِكَةُ خَسَارَةً كَبِيرَةً بَعْدَ الْحَرِيقِ.",
+      "exampleMeaning": "The company records a large loss after the fire."
+    },
+    {
+      "word": "احْتِيَاطٌ",
+      "reading": "iḥtiyāṭ",
+      "meaning": "precaution",
+      "example": "رَبْطُ الْحِزَامِ احْتِيَاطٌ بَسِيطٌ وَمُهِمٌّ.",
+      "exampleMeaning": "Fastening the belt is a simple and important precaution."
+    },
+    {
+      "word": "تَجْدِيدٌ",
+      "reading": "tajdīd",
+      "meaning": "renewal",
+      "example": "يَحْتَاجُ تَجْدِيدٌ الْوَثِيقَةِ إِلَى تَوْقِيعٍ جَدِيدٍ.",
+      "exampleMeaning": "Renewing the policy needs a new signature."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "قَرَأْتُ ___ التَّأْمِينِ بِعِنَايَةٍ.",
+          "answer": "وَثِيقَةٌ",
+          "hint": "policy / document"
+        },
+        {
+          "sentence": "يَدْفَعُ الْعَمِيلُ ___ شَهْرِيًّا.",
+          "answer": "قِسْطٌ",
+          "hint": "premium"
+        },
+        {
+          "sentence": "قَدَّمَ السَّائِقُ ___ بَعْدَ الْحَادِثِ.",
+          "answer": "مُطَالَبَةٌ",
+          "hint": "claim"
+        },
+        {
+          "sentence": "يُقَيِّمُ الْخَبِيرُ ___ الْفَيْضَانِ.",
+          "answer": "خَطَرٌ",
+          "hint": "risk"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "What does ‘تَعْوِيضٌ’ mean?",
+      "options": [
+        "compensation",
+        "exclusion",
+        "precaution",
+        "renewal"
+      ],
+      "answer": 0
+    }
+  ]
+}

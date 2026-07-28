@@ -1,0 +1,183 @@
+{
+  "id": "weather-climate",
+  "words": [
+    {
+      "word": "المُنَاخُ",
+      "reading": "al-munākhu",
+      "meaning": "climate",
+      "example": "المُنَاخُ يَتَغَيَّرُ بِسُرْعَةٍ فِي هَذِهِ المِنْطَقَةِ.",
+      "exampleMeaning": "The climate is changing quickly in this region."
+    },
+    {
+      "word": "الطَّقْسُ",
+      "reading": "aṭ-ṭaqsu",
+      "meaning": "weather",
+      "example": "الطَّقْسُ صَافٍ هَذَا الصَّبَاحَ.",
+      "exampleMeaning": "The weather is clear this morning."
+    },
+    {
+      "word": "دَرَجَةُ الحَرَارَةِ",
+      "reading": "darajatu al-ḥarārati",
+      "meaning": "temperature",
+      "example": "دَرَجَةُ الحَرَارَةِ مُرْتَفِعَةٌ فِي الصَّحْرَاءِ.",
+      "exampleMeaning": "The temperature is high in the desert."
+    },
+    {
+      "word": "الرُّطُوبَةُ",
+      "reading": "ar-ruṭūbatu",
+      "meaning": "humidity",
+      "example": "الرُّطُوبَةُ عَالِيَةٌ قُرْبَ البَحْرِ.",
+      "exampleMeaning": "The humidity is high near the sea."
+    },
+    {
+      "word": "الجَفَافُ",
+      "reading": "al-jafāfu",
+      "meaning": "drought",
+      "example": "الجَفَافُ يُضْعِفُ المَحَاصِيلَ فِي القَرْيَةِ.",
+      "exampleMeaning": "The drought weakens the crops in the village."
+    },
+    {
+      "word": "العَاصِفَةُ",
+      "reading": "al-ʿāṣifatu",
+      "meaning": "storm",
+      "example": "العَاصِفَةُ أَغْلَقَتِ الطَّرِيقَ السَّاحِلِيَّ.",
+      "exampleMeaning": "The storm closed the coastal road."
+    },
+    {
+      "word": "الرِّيَاحُ الشَّدِيدَةُ",
+      "reading": "ar-riyāḥu ash-shadīdatu",
+      "meaning": "strong winds",
+      "example": "الرِّيَاحُ الشَّدِيدَةُ حَرَّكَتِ الأَشْجَارَ.",
+      "exampleMeaning": "The strong winds moved the trees."
+    },
+    {
+      "word": "الضَّبَابُ",
+      "reading": "aḍ-ḍabābu",
+      "meaning": "fog",
+      "example": "الضَّبَابُ حَجَبَ الرُّؤْيَةَ فِي المَطَارِ.",
+      "exampleMeaning": "The fog blocked visibility at the airport."
+    },
+    {
+      "word": "البَرَدُ",
+      "reading": "al-baradu",
+      "meaning": "hail",
+      "example": "البَرَدُ سَقَطَ فَوْقَ السَّيَّارَاتِ.",
+      "exampleMeaning": "The hail fell on the cars."
+    },
+    {
+      "word": "الصَّقِيعُ",
+      "reading": "aṣ-ṣaqīʿu",
+      "meaning": "frost",
+      "example": "الصَّقِيعُ غَطَّى زُجَاجَ النَّافِذَةِ.",
+      "exampleMeaning": "The frost covered the window glass."
+    },
+    {
+      "word": "الفَيْضَانُ",
+      "reading": "al-fayḍānu",
+      "meaning": "flood",
+      "example": "الفَيْضَانُ رَفَعَ مَنْسُوبَ النَّهْرِ.",
+      "exampleMeaning": "The flood raised the river level."
+    },
+    {
+      "word": "مَوْجَةُ الحَرِّ",
+      "reading": "mawjatu al-ḥarri",
+      "meaning": "heat wave",
+      "example": "مَوْجَةُ الحَرِّ تَتَطَلَّبُ شُرْبَ مَاءٍ كَثِيرٍ.",
+      "exampleMeaning": "A heat wave requires drinking a lot of water."
+    },
+    {
+      "word": "مَوْجَةُ البَرْدِ",
+      "reading": "mawjatu al-bardi",
+      "meaning": "cold snap",
+      "example": "مَوْجَةُ البَرْدِ وَصَلَتْ لَيْلًا.",
+      "exampleMeaning": "The cold snap arrived at night."
+    },
+    {
+      "word": "تَغَيُّرُ المُنَاخِ",
+      "reading": "taghayyuru al-munākhi",
+      "meaning": "climate change",
+      "example": "تَغَيُّرُ المُنَاخِ يُؤَثِّرُ فِي السَّوَاحِلِ.",
+      "exampleMeaning": "Climate change affects the coasts."
+    },
+    {
+      "word": "تَنْبِيهٌ جَوِّيٌّ",
+      "reading": "tanbīhun jawwiyyun",
+      "meaning": "weather alert",
+      "example": "تَنْبِيهٌ جَوِّيٌّ ظَهَرَ عَلَى الهَاتِفِ.",
+      "exampleMeaning": "A weather alert appeared on the phone."
+    },
+    {
+      "word": "الأَمْطَارُ الغَزِيرَةُ",
+      "reading": "al-ʾamṭāru al-ghazīratu",
+      "meaning": "heavy rains",
+      "example": "الأَمْطَارُ الغَزِيرَةُ مَلَأَتِ الوَادِيَ.",
+      "exampleMeaning": "The heavy rains filled the valley."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "___ يَتَغَيَّرُ بِسُرْعَةٍ فِي هَذِهِ المِنْطَقَةِ.",
+          "answer": "المُنَاخُ",
+          "hint": "climate"
+        },
+        {
+          "sentence": "___ صَافٍ هَذَا الصَّبَاحَ.",
+          "answer": "الطَّقْسُ",
+          "hint": "weather"
+        },
+        {
+          "sentence": "___ مُرْتَفِعَةٌ فِي الصَّحْرَاءِ.",
+          "answer": "دَرَجَةُ الحَرَارَةِ",
+          "hint": "temperature"
+        },
+        {
+          "sentence": "___ عَالِيَةٌ قُرْبَ البَحْرِ.",
+          "answer": "الرُّطُوبَةُ",
+          "hint": "humidity"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "items": [
+        {
+          "question": "What does ‘المُنَاخُ’ mean?",
+          "options": [
+            "weather",
+            "climate",
+            "temperature",
+            "humidity"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What does ‘الطَّقْسُ’ mean?",
+          "options": [
+            "temperature",
+            "weather",
+            "humidity",
+            "drought"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What does ‘دَرَجَةُ الحَرَارَةِ’ mean?",
+          "options": [
+            "humidity",
+            "temperature",
+            "drought",
+            "storm"
+          ],
+          "answer": 1
+        }
+      ]
+    }
+  ]
+}

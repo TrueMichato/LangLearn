@@ -1,6 +1,7 @@
 import { useState, useRef, useEffect } from 'react';
 import type { PracticeSentence } from '../../data/sentences/ja-sentences';
 import { speak } from '../../lib/tts';
+import { rtlProps } from '../../lib/rtl';
 
 interface TypeBuilderProps {
   sentence: PracticeSentence;
@@ -72,13 +73,14 @@ export default function TypeBuilder({ sentence, language, onResult }: TypeBuilde
           disabled={checked}
           placeholder="Type the sentence…"
           className={`w-full rounded-xl px-4 py-3 border-2 ${borderClass} ${bgClass} text-gray-800 dark:text-gray-100 placeholder-gray-400 dark:placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-indigo-400 disabled:opacity-70`}
+          {...rtlProps(language)}
         />
       </form>
 
       {/* Feedback */}
       {checked && (
         <div className={`text-center font-semibold ${isCorrect ? 'text-green-600 dark:text-green-400' : 'text-red-600 dark:text-red-400'}`}>
-          {isCorrect ? '✓ Correct!' : `✗ Correct answer: ${sentence.target}`}
+          {isCorrect ? '✓ Correct!' : <>✗ Correct answer: <span {...rtlProps(language)} className="inline-block">{sentence.target}</span></>}
           <p className="text-sm font-normal text-gray-500 dark:text-gray-400 mt-1">{sentence.reading}</p>
         </div>
       )}

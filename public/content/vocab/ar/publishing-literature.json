@@ -1,0 +1,159 @@
+{
+  "id": "publishing-literature",
+  "words": [
+    {
+      "word": "رِوَايَةٌ",
+      "reading": "riwāyatun",
+      "meaning": "novel",
+      "example": "تَفْتَحُ رِوَايَةٌ بَابًا إِلَى عَالَمٍ خَيَالِيٍّ.",
+      "exampleMeaning": "A novel opens a door to an imaginary world."
+    },
+    {
+      "word": "قِصَّةٌ قَصِيرَةٌ",
+      "reading": "qiṣṣatun qaṣīratun",
+      "meaning": "short story",
+      "example": "قِصَّةٌ قَصِيرَةٌ تُلَخِّصُ لَحْظَةً إِنْسَانِيَّةً.",
+      "exampleMeaning": "A short story summarizes a human moment."
+    },
+    {
+      "word": "قَصِيدَةٌ",
+      "reading": "qaṣīdatun",
+      "meaning": "poem",
+      "example": "تَحْمِلُ قَصِيدَةٌ صُوَرًا جَمِيلَةً.",
+      "exampleMeaning": "A poem carries beautiful images."
+    },
+    {
+      "word": "دِيوَانٌ",
+      "reading": "dīwānun",
+      "meaning": "poetry collection",
+      "example": "يَضُمُّ دِيوَانٌ قَصَائِدَ قَدِيمَةً وَحَدِيثَةً.",
+      "exampleMeaning": "A poetry collection includes old and modern poems."
+    },
+    {
+      "word": "مَخْطُوطَةٌ",
+      "reading": "makhṭūṭatun",
+      "meaning": "manuscript",
+      "example": "تَحْفَظُ مَخْطُوطَةٌ نَصًّا نَادِرًا.",
+      "exampleMeaning": "A manuscript preserves a rare text."
+    },
+    {
+      "word": "نَاشِرٌ",
+      "reading": "nāshirun",
+      "meaning": "publisher",
+      "example": "يَدْعَمُ نَاشِرٌ كِتَابًا جَدِيدًا.",
+      "exampleMeaning": "A publisher supports a new book."
+    },
+    {
+      "word": "مُؤَلِّفٌ",
+      "reading": "muʾallifun",
+      "meaning": "author",
+      "example": "يُوَقِّعُ مُؤَلِّفٌ نُسَخًا لِلْقُرَّاءِ.",
+      "exampleMeaning": "An author signs copies for readers."
+    },
+    {
+      "word": "مُحَرِّرٌ",
+      "reading": "muḥarrirun",
+      "meaning": "editor",
+      "example": "يُرَاجِعُ مُحَرِّرٌ النَّصَّ قَبْلَ الطَّبْعِ.",
+      "exampleMeaning": "An editor reviews the text before printing."
+    },
+    {
+      "word": "تَرْجَمَةٌ",
+      "reading": "tarjamatun",
+      "meaning": "translation",
+      "example": "تَرْجَمَةٌ دَقِيقَةٌ تَنْقُلُ النَّصَّ إِلَى لُغَةٍ أُخْرَى.",
+      "exampleMeaning": "An accurate translation moves the text into another language."
+    },
+    {
+      "word": "مُرَاجَعَةٌ",
+      "reading": "murājaʿatun",
+      "meaning": "review",
+      "example": "تُقَيِّمُ مُرَاجَعَةٌ الْكِتَابَ بِإِنْصَافٍ.",
+      "exampleMeaning": "A review evaluates the book fairly."
+    },
+    {
+      "word": "طَبْعَةٌ",
+      "reading": "ṭabʿatun",
+      "meaning": "edition",
+      "example": "صَدَرَتْ طَبْعَةٌ جَدِيدَةٌ مِنَ الْمُعْجَمِ.",
+      "exampleMeaning": "A new edition of the dictionary was issued."
+    },
+    {
+      "word": "فَهْرَسٌ",
+      "reading": "fahrasun",
+      "meaning": "index",
+      "example": "يُسَاعِدُ فَهْرَسٌ الْقَارِئَ عَلَى الْبَحْثِ.",
+      "exampleMeaning": "An index helps the reader search."
+    },
+    {
+      "word": "غِلَافٌ",
+      "reading": "ghilāfun",
+      "meaning": "cover",
+      "example": "غِلَافٌ جَذَّابٌ يَجْذِبُ الْقُرَّاءَ.",
+      "exampleMeaning": "An attractive cover draws readers."
+    },
+    {
+      "word": "فَصْلٌ",
+      "reading": "faṣlun",
+      "meaning": "chapter",
+      "example": "فَصْلٌ جَدِيدٌ يُبَدِّلُ مَسَارَ الْحِكَايَةِ.",
+      "exampleMeaning": "A new chapter changes the course of the story."
+    },
+    {
+      "word": "شَخْصِيَّةٌ",
+      "reading": "shakhṣiyyatun",
+      "meaning": "character",
+      "example": "تَتَطَوَّرُ شَخْصِيَّةٌ رَئِيسِيَّةٌ فِي النِّهَايَةِ.",
+      "exampleMeaning": "A main character develops at the end."
+    },
+    {
+      "word": "سَرْدٌ",
+      "reading": "sardun",
+      "meaning": "narration",
+      "example": "سَرْدٌ هَادِئٌ يَمْنَحُ الْقِصَّةَ عُمْقًا.",
+      "exampleMeaning": "Calm narration gives the story depth."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "تَفْتَحُ ___ بَابًا إِلَى عَالَمٍ خَيَالِيٍّ.",
+          "answer": "رِوَايَةٌ",
+          "hint": "novel"
+        },
+        {
+          "sentence": "___ دَقِيقَةٌ تَنْقُلُ النَّصَّ إِلَى لُغَةٍ أُخْرَى.",
+          "answer": "تَرْجَمَةٌ",
+          "hint": "translation"
+        },
+        {
+          "sentence": "___ جَذَّابٌ يَجْذِبُ الْقُرَّاءَ.",
+          "answer": "غِلَافٌ",
+          "hint": "cover"
+        },
+        {
+          "sentence": "___ جَدِيدٌ يُبَدِّلُ مَسَارَ الْحِكَايَةِ.",
+          "answer": "فَصْلٌ",
+          "hint": "chapter"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "What does ‘مَخْطُوطَةٌ’ mean?",
+      "options": [
+        "manuscript",
+        "cover",
+        "chapter",
+        "review"
+      ],
+      "answer": 0
+    }
+  ]
+}

@@ -1,0 +1,183 @@
+{
+  "id": "numbers-large",
+  "words": [
+    {
+      "word": "عِشْرُونَ",
+      "reading": "ʿishrūna",
+      "meaning": "twenty",
+      "example": "الرَّقْمُ عِشْرُونَ عَلَى الْوَرَقَةِ.",
+      "exampleMeaning": "The number twenty is on the paper."
+    },
+    {
+      "word": "ثَلَاثُونَ",
+      "reading": "thalāthūna",
+      "meaning": "thirty",
+      "example": "الرَّقْمُ ثَلَاثُونَ بَعْدَ عِشْرِينَ.",
+      "exampleMeaning": "The number thirty comes after twenty."
+    },
+    {
+      "word": "أَرْبَعُونَ",
+      "reading": "ʾarbaʿūna",
+      "meaning": "forty",
+      "example": "الرَّقْمُ أَرْبَعُونَ فِي الْجَدْوَلِ.",
+      "exampleMeaning": "The number forty is in the table."
+    },
+    {
+      "word": "خَمْسُونَ",
+      "reading": "khamsūna",
+      "meaning": "fifty",
+      "example": "الرَّقْمُ خَمْسُونَ سَهْلٌ.",
+      "exampleMeaning": "The number fifty is easy."
+    },
+    {
+      "word": "سِتُّونَ",
+      "reading": "sittūna",
+      "meaning": "sixty",
+      "example": "الرَّقْمُ سِتُّونَ كَبِيرٌ.",
+      "exampleMeaning": "The number sixty is large."
+    },
+    {
+      "word": "سَبْعُونَ",
+      "reading": "sabʿūna",
+      "meaning": "seventy",
+      "example": "الرَّقْمُ سَبْعُونَ هُنَا.",
+      "exampleMeaning": "The number seventy is here."
+    },
+    {
+      "word": "ثَمَانُونَ",
+      "reading": "thamānūna",
+      "meaning": "eighty",
+      "example": "الرَّقْمُ ثَمَانُونَ فِي الدَّرْسِ.",
+      "exampleMeaning": "The number eighty is in the lesson."
+    },
+    {
+      "word": "تِسْعُونَ",
+      "reading": "tisʿūna",
+      "meaning": "ninety",
+      "example": "الرَّقْمُ تِسْعُونَ قَرِيبٌ مِنْ مِئَةٍ.",
+      "exampleMeaning": "The number ninety is near one hundred."
+    },
+    {
+      "word": "مِئَةٌ",
+      "reading": "miʾatun",
+      "meaning": "one hundred",
+      "example": "الرَّقْمُ مِئَةٌ مُهِمٌّ.",
+      "exampleMeaning": "The number one hundred is important."
+    },
+    {
+      "word": "مِئَتَانِ",
+      "reading": "miʾatāni",
+      "meaning": "two hundred",
+      "example": "مِئَتَانِ عَدَدٌ كَبِيرٌ.",
+      "exampleMeaning": "Two hundred is a large number."
+    },
+    {
+      "word": "ثَلَاثُمِئَةٍ",
+      "reading": "thalāthumiʾatin",
+      "meaning": "three hundred",
+      "example": "ثَلَاثُمِئَةٍ فِي الْحِسَابِ.",
+      "exampleMeaning": "Three hundred is in the calculation."
+    },
+    {
+      "word": "أَرْبَعُمِئَةٍ",
+      "reading": "ʾarbaʿumiʾatin",
+      "meaning": "four hundred",
+      "example": "أَرْبَعُمِئَةٍ فِي الْقَائِمَةِ.",
+      "exampleMeaning": "Four hundred is in the list."
+    },
+    {
+      "word": "خَمْسُمِئَةٍ",
+      "reading": "khamsumiʾatin",
+      "meaning": "five hundred",
+      "example": "خَمْسُمِئَةٍ عَدَدٌ كَافٍ.",
+      "exampleMeaning": "Five hundred is a sufficient number."
+    },
+    {
+      "word": "سِتُّمِئَةٍ",
+      "reading": "sittumiʾatin",
+      "meaning": "six hundred",
+      "example": "سِتُّمِئَةٍ فِي التَّقْرِيرِ.",
+      "exampleMeaning": "Six hundred is in the report."
+    },
+    {
+      "word": "تِسْعُمِئَةٍ",
+      "reading": "tisʿumiʾatin",
+      "meaning": "nine hundred",
+      "example": "تِسْعُمِئَةٍ قَرِيبٌ مِنْ أَلْفٍ.",
+      "exampleMeaning": "Nine hundred is near one thousand."
+    },
+    {
+      "word": "أَلْفٌ",
+      "reading": "ʾalfun",
+      "meaning": "one thousand",
+      "example": "الرَّقْمُ أَلْفٌ فِي النِّهَايَةِ.",
+      "exampleMeaning": "The number one thousand is at the end."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "الرَّقْمُ ___ عَلَى الْوَرَقَةِ.",
+          "answer": "عِشْرُونَ",
+          "hint": "twenty"
+        },
+        {
+          "sentence": "الرَّقْمُ ___ بَعْدَ عِشْرِينَ.",
+          "answer": "ثَلَاثُونَ",
+          "hint": "thirty"
+        },
+        {
+          "sentence": "الرَّقْمُ ___ فِي الْجَدْوَلِ.",
+          "answer": "أَرْبَعُونَ",
+          "hint": "forty"
+        },
+        {
+          "sentence": "الرَّقْمُ ___ سَهْلٌ.",
+          "answer": "خَمْسُونَ",
+          "hint": "fifty"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "items": [
+        {
+          "question": "What does ‘عِشْرُونَ’ mean?",
+          "options": [
+            "thirty",
+            "twenty",
+            "forty",
+            "fifty"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What does ‘ثَلَاثُونَ’ mean?",
+          "options": [
+            "forty",
+            "thirty",
+            "fifty",
+            "sixty"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What does ‘أَرْبَعُونَ’ mean?",
+          "options": [
+            "fifty",
+            "forty",
+            "sixty",
+            "seventy"
+          ],
+          "answer": 1
+        }
+      ]
+    }
+  ]
+}

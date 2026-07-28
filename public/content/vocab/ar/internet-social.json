@@ -1,0 +1,183 @@
+{
+  "id": "internet-social",
+  "words": [
+    {
+      "word": "إِنْتَرْنِتٌ",
+      "reading": "ʾintarnitun",
+      "meaning": "internet",
+      "example": "الْإِنْتَرْنِتُ سَرِيعٌ فِي الْمَكْتَبِ.",
+      "exampleMeaning": "The internet is fast at the office."
+    },
+    {
+      "word": "مَوْقِعٌ",
+      "reading": "mawqiʿun",
+      "meaning": "website",
+      "example": "هٰذَا مَوْقِعٌ مُفِيدٌ لِلدِّرَاسَةِ.",
+      "exampleMeaning": "This is a useful website for studying."
+    },
+    {
+      "word": "حِسَابٌ",
+      "reading": "ḥisābun",
+      "meaning": "account",
+      "example": "فَتَحْتُ حِسَابًا جَدِيدًا عَلَى التَّطْبِيقِ.",
+      "exampleMeaning": "I opened a new account on the app."
+    },
+    {
+      "word": "كَلِمَةُ مُرُورٍ",
+      "reading": "kalimatu murūrin",
+      "meaning": "password",
+      "example": "يَجِبُ أَنْ تَكُونَ كَلِمَةُ الْمُرُورِ قَوِيَّةً.",
+      "exampleMeaning": "The password must be strong."
+    },
+    {
+      "word": "مَنْشُورٌ",
+      "reading": "manshūrun",
+      "meaning": "post",
+      "example": "قَرَأْتُ مَنْشُورًا طَوِيلًا عَنِ السَّفَرِ.",
+      "exampleMeaning": "I read a long post about travel."
+    },
+    {
+      "word": "تَعْلِيقٌ",
+      "reading": "taʿlīqun",
+      "meaning": "comment",
+      "example": "كَتَبَتْ سَارَةُ تَعْلِيقًا لَطِيفًا.",
+      "exampleMeaning": "Sara wrote a kind comment."
+    },
+    {
+      "word": "إِعْجَابٌ",
+      "reading": "ʾiʿjābun",
+      "meaning": "like",
+      "example": "حَصَلَتِ الصُّورَةُ عَلَى إِعْجَابٍ كَثِيرٍ.",
+      "exampleMeaning": "The photo received many likes."
+    },
+    {
+      "word": "مُتَابِعٌ",
+      "reading": "mutābiʿun",
+      "meaning": "follower",
+      "example": "لِلْمُدَوِّنِ مُتَابِعُونَ كَثِيرُونَ.",
+      "exampleMeaning": "The blogger has many followers."
+    },
+    {
+      "word": "صُورَةٌ رَقْمِيَّةٌ",
+      "reading": "ṣūratun raqamiyyatun",
+      "meaning": "digital photo",
+      "example": "حَفِظْتُ صُورَةً رَقْمِيَّةً فِي الْهَاتِفِ.",
+      "exampleMeaning": "I saved a digital photo on the phone."
+    },
+    {
+      "word": "رَابِطٌ",
+      "reading": "rābiṭun",
+      "meaning": "link",
+      "example": "أَرْسِلْ لِي الرَّابِطَ بَعْدَ الدَّرْسِ.",
+      "exampleMeaning": "Send me the link after the lesson."
+    },
+    {
+      "word": "تَطْبِيقٌ",
+      "reading": "taṭbīqun",
+      "meaning": "app",
+      "example": "يَعْمَلُ التَّطْبِيقُ دُونَ مُشْكِلَةٍ.",
+      "exampleMeaning": "The app works without a problem."
+    },
+    {
+      "word": "شَبَكَةٌ",
+      "reading": "shabakatun",
+      "meaning": "network",
+      "example": "الشَّبَكَةُ ضَعِيفَةٌ فِي هٰذَا الْمَكَانِ.",
+      "exampleMeaning": "The network is weak in this place."
+    },
+    {
+      "word": "يَتَّصِلُ",
+      "reading": "yattaṣilu",
+      "meaning": "to connect",
+      "example": "يَتَّصِلُ الْحَاسُوبُ بِالشَّبَكَةِ تِلْقَائِيًّا.",
+      "exampleMeaning": "The computer connects to the network automatically."
+    },
+    {
+      "word": "يُحَمِّلُ",
+      "reading": "yuḥammilu",
+      "meaning": "to download / upload",
+      "example": "يُحَمِّلُ الطَّالِبُ الْمَلَفَّ مِنَ الْمَوْقِعِ.",
+      "exampleMeaning": "The student downloads the file from the website."
+    },
+    {
+      "word": "يُشَارِكُ",
+      "reading": "yushāriku",
+      "meaning": "to share",
+      "example": "يُشَارِكُ أَحْمَدُ الْمَنْشُورَ مَعَ أَصْدِقَائِهِ.",
+      "exampleMeaning": "Ahmad shares the post with his friends."
+    },
+    {
+      "word": "يَحْذِفُ",
+      "reading": "yaḥdhifu",
+      "meaning": "to delete",
+      "example": "تَحْذِفُ لَيْلَى التَّعْلِيقَ الْقَدِيمَ.",
+      "exampleMeaning": "Layla deletes the old comment."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "___ سَرِيعٌ فِي الْمَكْتَبِ.",
+          "answer": "إِنْتَرْنِتٌ",
+          "hint": "internet"
+        },
+        {
+          "sentence": "هٰذَا ___ مُفِيدٌ لِلدِّرَاسَةِ.",
+          "answer": "مَوْقِعٌ",
+          "hint": "website"
+        },
+        {
+          "sentence": "هٰذَا ___ جَدِيدٌ عَلَى التَّطْبِيقِ.",
+          "answer": "حِسَابٌ",
+          "hint": "account"
+        },
+        {
+          "sentence": "يَجِبُ أَنْ تَكُونَ ___ قَوِيَّةً.",
+          "answer": "كَلِمَةُ مُرُورٍ",
+          "hint": "password"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "items": [
+        {
+          "question": "What does ‘إِنْتَرْنِتٌ’ mean?",
+          "options": [
+            "website",
+            "internet",
+            "password",
+            "post"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What does ‘مَوْقِعٌ’ mean?",
+          "options": [
+            "account",
+            "website",
+            "post",
+            "comment"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What does ‘حِسَابٌ’ mean?",
+          "options": [
+            "password",
+            "account",
+            "comment",
+            "like"
+          ],
+          "answer": 1
+        }
+      ]
+    }
+  ]
+}

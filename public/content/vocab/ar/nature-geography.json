@@ -1,0 +1,183 @@
+{
+  "id": "nature-geography",
+  "words": [
+    {
+      "word": "عَالَمٌ",
+      "reading": "ʿālamun",
+      "meaning": "world",
+      "example": "عَالَمٌ وَاسِعٌ أَمَامَنَا.",
+      "exampleMeaning": "A wide world is before us."
+    },
+    {
+      "word": "بَلَدٌ",
+      "reading": "baladun",
+      "meaning": "country / town",
+      "example": "بَلَدٌ جَمِيلٌ عَلَى الْبَحْرِ.",
+      "exampleMeaning": "A beautiful country is on the sea."
+    },
+    {
+      "word": "دَوْلَةٌ",
+      "reading": "dawlatun",
+      "meaning": "state / country",
+      "example": "دَوْلَةٌ عَرَبِيَّةٌ فِي الْخَلِيجِ.",
+      "exampleMeaning": "An Arab state is in the Gulf."
+    },
+    {
+      "word": "عَاصِمَةٌ",
+      "reading": "ʿāṣimatun",
+      "meaning": "capital city",
+      "example": "عَاصِمَةٌ قَدِيمَةٌ فِي الْمِنْطَقَةِ.",
+      "exampleMeaning": "An old capital is in the region."
+    },
+    {
+      "word": "قَارَّةٌ",
+      "reading": "qārratun",
+      "meaning": "continent",
+      "example": "أَفْرِيقِيَا قَارَّةٌ كَبِيرَةٌ.",
+      "exampleMeaning": "Africa is a large continent."
+    },
+    {
+      "word": "جَزِيرَةٌ",
+      "reading": "jazīratun",
+      "meaning": "island",
+      "example": "الْجَزِيرَةُ فِي الْبَحْرِ.",
+      "exampleMeaning": "The island is in the sea."
+    },
+    {
+      "word": "شِبْهُ جَزِيرَةٍ",
+      "reading": "shibhu jazīratin",
+      "meaning": "peninsula",
+      "example": "شِبْهُ جَزِيرَةٍ عَرَبِيَّةٍ وَاسِعٌ.",
+      "exampleMeaning": "The Arabian Peninsula is wide."
+    },
+    {
+      "word": "خَلِيجٌ",
+      "reading": "khalījun",
+      "meaning": "gulf",
+      "example": "الْخَلِيجُ دَافِئٌ.",
+      "exampleMeaning": "The gulf is warm."
+    },
+    {
+      "word": "وَادٍ",
+      "reading": "wādin",
+      "meaning": "valley",
+      "example": "الْوَادِي بَيْنَ جَبَلَيْنِ.",
+      "exampleMeaning": "The valley is between two mountains."
+    },
+    {
+      "word": "صَحْرَاءُ",
+      "reading": "ṣaḥrāʾu",
+      "meaning": "desert",
+      "example": "الصَّحْرَاءُ الْكُبْرَى شَهِيرَةٌ.",
+      "exampleMeaning": "The Sahara is famous."
+    },
+    {
+      "word": "النِّيلُ",
+      "reading": "an-nīlu",
+      "meaning": "the Nile",
+      "example": "النِّيلُ نَهْرٌ طَوِيلٌ.",
+      "exampleMeaning": "The Nile is a long river."
+    },
+    {
+      "word": "الْفُرَاتُ",
+      "reading": "al-furātu",
+      "meaning": "the Euphrates",
+      "example": "الْفُرَاتُ نَهْرٌ عَرِيقٌ.",
+      "exampleMeaning": "The Euphrates is an ancient river."
+    },
+    {
+      "word": "الْمَغْرِبُ",
+      "reading": "al-maghribu",
+      "meaning": "the Maghreb / Morocco",
+      "example": "الْمَغْرِبُ فِي غَرْبِ الْعَالَمِ الْعَرَبِيِّ.",
+      "exampleMeaning": "The Maghreb is in the west of the Arab world."
+    },
+    {
+      "word": "الْمَشْرِقُ",
+      "reading": "al-mashriqu",
+      "meaning": "the Mashriq / eastern Arab lands",
+      "example": "الْمَشْرِقُ فِي شَرْقِ الْعَالَمِ الْعَرَبِيِّ.",
+      "exampleMeaning": "The Mashriq is in the east of the Arab world."
+    },
+    {
+      "word": "الْبَحْرُ الْمُتَوَسِّطُ",
+      "reading": "al-baḥru l-mutawassiṭu",
+      "meaning": "the Mediterranean Sea",
+      "example": "الْبَحْرُ الْمُتَوَسِّطُ بَيْنَ قَارَّاتٍ.",
+      "exampleMeaning": "The Mediterranean Sea is between continents."
+    },
+    {
+      "word": "الْبَحْرُ الْأَحْمَرُ",
+      "reading": "al-baḥru l-ʾaḥmaru",
+      "meaning": "the Red Sea",
+      "example": "الْبَحْرُ الْأَحْمَرُ قَرِيبٌ مِنَ الْحِجَازِ.",
+      "exampleMeaning": "The Red Sea is near the Hijaz."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "___ وَاسِعٌ أَمَامَنَا.",
+          "answer": "عَالَمٌ",
+          "hint": "world"
+        },
+        {
+          "sentence": "___ جَمِيلٌ عَلَى الْبَحْرِ.",
+          "answer": "بَلَدٌ",
+          "hint": "country / town"
+        },
+        {
+          "sentence": "___ عَرَبِيَّةٌ فِي الْخَلِيجِ.",
+          "answer": "دَوْلَةٌ",
+          "hint": "state / country"
+        },
+        {
+          "sentence": "___ قَدِيمَةٌ فِي الْمِنْطَقَةِ.",
+          "answer": "عَاصِمَةٌ",
+          "hint": "capital city"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "items": [
+        {
+          "question": "What does ‘عَالَمٌ’ mean?",
+          "options": [
+            "country / town",
+            "world",
+            "state / country",
+            "capital city"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What does ‘بَلَدٌ’ mean?",
+          "options": [
+            "state / country",
+            "country / town",
+            "capital city",
+            "continent"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What does ‘دَوْلَةٌ’ mean?",
+          "options": [
+            "capital city",
+            "state / country",
+            "continent",
+            "island"
+          ],
+          "answer": 1
+        }
+      ]
+    }
+  ]
+}

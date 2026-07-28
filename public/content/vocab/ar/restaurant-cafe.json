@@ -1,0 +1,183 @@
+{
+  "id": "restaurant-cafe",
+  "words": [
+    {
+      "word": "طَاوِلَةٌ",
+      "reading": "ṭāwilatun",
+      "meaning": "table",
+      "example": "طَاوِلَةٌ صَغِيرَةٌ قُرْبَ النَّافِذَةِ.",
+      "exampleMeaning": "A small table is near the window."
+    },
+    {
+      "word": "قَائِمَةٌ",
+      "reading": "qāʾimatun",
+      "meaning": "menu",
+      "example": "قَائِمَةٌ جَدِيدَةٌ عَلَى الطَّاوِلَةِ.",
+      "exampleMeaning": "A new menu is on the table."
+    },
+    {
+      "word": "طَعَامٌ",
+      "reading": "ṭaʿāmun",
+      "meaning": "food",
+      "example": "طَعَامٌ لَذِيذٌ فِي الْمَطْعَمِ.",
+      "exampleMeaning": "Delicious food is in the restaurant."
+    },
+    {
+      "word": "شَرَابٌ",
+      "reading": "sharābun",
+      "meaning": "drink",
+      "example": "شَرَابٌ بَارِدٌ مَعَ الْغَدَاءِ.",
+      "exampleMeaning": "A cold drink is with lunch."
+    },
+    {
+      "word": "نَادِلٌ",
+      "reading": "nādilun",
+      "meaning": "waiter",
+      "example": "النَّادِلُ يَحْمِلُ الصَّحْنَ.",
+      "exampleMeaning": "The waiter carries the plate."
+    },
+    {
+      "word": "طَلَبٌ",
+      "reading": "ṭalabun",
+      "meaning": "order",
+      "example": "الطَّلَبُ جَاهِزٌ.",
+      "exampleMeaning": "The order is ready."
+    },
+    {
+      "word": "صَحْنٌ",
+      "reading": "ṣaḥnun",
+      "meaning": "plate",
+      "example": "الصَّحْنُ نَظِيفٌ.",
+      "exampleMeaning": "The plate is clean."
+    },
+    {
+      "word": "شَوْكَةٌ",
+      "reading": "shawkatun",
+      "meaning": "fork",
+      "example": "الشَّوْكَةُ بِجَانِبِ الصَّحْنِ.",
+      "exampleMeaning": "The fork is next to the plate."
+    },
+    {
+      "word": "مِلْعَقَةٌ",
+      "reading": "milʿaqatun",
+      "meaning": "spoon",
+      "example": "الْمِلْعَقَةُ فِي الْحَسَاءِ.",
+      "exampleMeaning": "The spoon is in the soup."
+    },
+    {
+      "word": "سِكِّينٌ",
+      "reading": "sikkīnun",
+      "meaning": "knife",
+      "example": "السِّكِّينُ حَادٌّ.",
+      "exampleMeaning": "The knife is sharp."
+    },
+    {
+      "word": "كُوبٌ",
+      "reading": "kūbun",
+      "meaning": "cup / glass",
+      "example": "الْكُوبُ مَلِيءٌ بِالْمَاءِ.",
+      "exampleMeaning": "The cup is full of water."
+    },
+    {
+      "word": "فِنْجَانٌ",
+      "reading": "finjānun",
+      "meaning": "small cup",
+      "example": "الْفِنْجَانُ فِيهِ قَهْوَةٌ.",
+      "exampleMeaning": "The small cup has coffee in it."
+    },
+    {
+      "word": "فَطُورٌ",
+      "reading": "faṭūrun",
+      "meaning": "breakfast",
+      "example": "الْفَطُورُ فِي السَّابِعَةِ.",
+      "exampleMeaning": "Breakfast is at seven."
+    },
+    {
+      "word": "غَدَاءٌ",
+      "reading": "ghadāʾun",
+      "meaning": "lunch",
+      "example": "الْغَدَاءُ بَعْدَ الدَّرْسِ.",
+      "exampleMeaning": "Lunch is after the lesson."
+    },
+    {
+      "word": "عَشَاءٌ",
+      "reading": "ʿashāʾun",
+      "meaning": "dinner",
+      "example": "الْعَشَاءُ خَفِيفٌ.",
+      "exampleMeaning": "Dinner is light."
+    },
+    {
+      "word": "حِسَابٌ",
+      "reading": "ḥisābun",
+      "meaning": "check / bill",
+      "example": "الْحِسَابُ عَلَى الطَّاوِلَةِ.",
+      "exampleMeaning": "The check is on the table."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "___ صَغِيرَةٌ قُرْبَ النَّافِذَةِ.",
+          "answer": "طَاوِلَةٌ",
+          "hint": "table"
+        },
+        {
+          "sentence": "___ جَدِيدَةٌ عَلَى الطَّاوِلَةِ.",
+          "answer": "قَائِمَةٌ",
+          "hint": "menu"
+        },
+        {
+          "sentence": "___ لَذِيذٌ فِي الْمَطْعَمِ.",
+          "answer": "طَعَامٌ",
+          "hint": "food"
+        },
+        {
+          "sentence": "___ بَارِدٌ مَعَ الْغَدَاءِ.",
+          "answer": "شَرَابٌ",
+          "hint": "drink"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "items": [
+        {
+          "question": "What does ‘طَاوِلَةٌ’ mean?",
+          "options": [
+            "menu",
+            "table",
+            "food",
+            "drink"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What does ‘قَائِمَةٌ’ mean?",
+          "options": [
+            "food",
+            "menu",
+            "drink",
+            "waiter"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What does ‘طَعَامٌ’ mean?",
+          "options": [
+            "drink",
+            "food",
+            "waiter",
+            "order"
+          ],
+          "answer": 1
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,183 @@
+{
+  "id": "body",
+  "words": [
+    {
+      "word": "رَأْسٌ",
+      "reading": "raʾsun",
+      "meaning": "head",
+      "example": "رَأْسٌ وَاحِدٌ لِكُلِّ إِنْسَانٍ.",
+      "exampleMeaning": "Every person has one head."
+    },
+    {
+      "word": "وَجْهٌ",
+      "reading": "wajhun",
+      "meaning": "face",
+      "example": "وَجْهٌ مُبْتَسِمٌ يَظْهَرُ فِي الصُّورَةِ.",
+      "exampleMeaning": "A smiling face appears in the picture."
+    },
+    {
+      "word": "عَيْنٌ",
+      "reading": "ʿaynun",
+      "meaning": "eye",
+      "example": "عَيْنٌ زَرْقَاءُ جَمِيلَةٌ.",
+      "exampleMeaning": "A beautiful blue eye."
+    },
+    {
+      "word": "أُذُنٌ",
+      "reading": "ʾudhunun",
+      "meaning": "ear",
+      "example": "أُذُنٌ صَغِيرَةٌ تَسْمَعُ الصَّوْتَ.",
+      "exampleMeaning": "A small ear hears the sound."
+    },
+    {
+      "word": "أَنْفٌ",
+      "reading": "ʾanfun",
+      "meaning": "nose",
+      "example": "الْأَنْفُ فِي وَسَطِ الْوَجْهِ.",
+      "exampleMeaning": "The nose is in the middle of the face."
+    },
+    {
+      "word": "فَمٌ",
+      "reading": "famun",
+      "meaning": "mouth",
+      "example": "الْفَمُ يَتَكَلَّمُ وَيَأْكُلُ.",
+      "exampleMeaning": "The mouth speaks and eats."
+    },
+    {
+      "word": "يَدٌ",
+      "reading": "yadun",
+      "meaning": "hand",
+      "example": "يَدٌ نَظِيفَةٌ مُهِمَّةٌ.",
+      "exampleMeaning": "A clean hand is important."
+    },
+    {
+      "word": "ذِرَاعٌ",
+      "reading": "dhirāʿun",
+      "meaning": "arm",
+      "example": "ذِرَاعٌ قَوِيَّةٌ تَحْمِلُ الْحَقِيبَةَ.",
+      "exampleMeaning": "A strong arm carries the bag."
+    },
+    {
+      "word": "قَدَمٌ",
+      "reading": "qadamun",
+      "meaning": "foot",
+      "example": "قَدَمٌ صَغِيرَةٌ فِي الْحِذَاءِ.",
+      "exampleMeaning": "A small foot is in the shoe."
+    },
+    {
+      "word": "سَاقٌ",
+      "reading": "sāqun",
+      "meaning": "leg",
+      "example": "سَاقٌ طَوِيلَةٌ تَرْكُضُ سَرِيعًا.",
+      "exampleMeaning": "A long leg runs quickly."
+    },
+    {
+      "word": "قَلْبٌ",
+      "reading": "qalbun",
+      "meaning": "heart",
+      "example": "قَلْبٌ طَيِّبٌ يُحِبُّ النَّاسَ.",
+      "exampleMeaning": "A good heart loves people."
+    },
+    {
+      "word": "ظَهْرٌ",
+      "reading": "ẓahrun",
+      "meaning": "back",
+      "example": "ظَهْرٌ مُسْتَقِيمٌ يُسَاعِدُكَ.",
+      "exampleMeaning": "A straight back helps you."
+    },
+    {
+      "word": "بَطْنٌ",
+      "reading": "baṭnun",
+      "meaning": "stomach",
+      "example": "بَطْنٌ جَائِعٌ يَطْلُبُ الطَّعَامَ.",
+      "exampleMeaning": "A hungry stomach asks for food."
+    },
+    {
+      "word": "شَعْرٌ",
+      "reading": "shaʿrun",
+      "meaning": "hair",
+      "example": "شَعْرٌ طَوِيلٌ يَلْمَعُ.",
+      "exampleMeaning": "Long hair shines."
+    },
+    {
+      "word": "سِنٌّ",
+      "reading": "sinnun",
+      "meaning": "tooth",
+      "example": "سِنٌّ أَبْيَضُ صِحِّيٌّ.",
+      "exampleMeaning": "A white tooth is healthy."
+    },
+    {
+      "word": "إِصْبَعٌ",
+      "reading": "ʾiṣbaʿun",
+      "meaning": "finger",
+      "example": "إِصْبَعٌ صَغِيرٌ يُشِيرُ إِلَى الْكِتَابِ.",
+      "exampleMeaning": "A small finger points to the book."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "___ وَاحِدٌ لِكُلِّ إِنْسَانٍ.",
+          "answer": "رَأْسٌ",
+          "hint": "head"
+        },
+        {
+          "sentence": "___ مُبْتَسِمٌ يَظْهَرُ فِي الصُّورَةِ.",
+          "answer": "وَجْهٌ",
+          "hint": "face"
+        },
+        {
+          "sentence": "___ زَرْقَاءُ جَمِيلَةٌ.",
+          "answer": "عَيْنٌ",
+          "hint": "eye"
+        },
+        {
+          "sentence": "___ صَغِيرَةٌ تَسْمَعُ الصَّوْتَ.",
+          "answer": "أُذُنٌ",
+          "hint": "ear"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "items": [
+        {
+          "question": "What does ‘رَأْسٌ’ mean?",
+          "options": [
+            "face",
+            "head",
+            "eye",
+            "ear"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What does ‘وَجْهٌ’ mean?",
+          "options": [
+            "eye",
+            "face",
+            "ear",
+            "nose"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What does ‘عَيْنٌ’ mean?",
+          "options": [
+            "ear",
+            "eye",
+            "nose",
+            "mouth"
+          ],
+          "answer": 1
+        }
+      ]
+    }
+  ]
+}

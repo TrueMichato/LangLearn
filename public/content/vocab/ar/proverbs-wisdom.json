@@ -1,0 +1,183 @@
+{
+  "id": "proverbs-wisdom",
+  "words": [
+    {
+      "word": "مَنْ جَدَّ وَجَدَ",
+      "reading": "man jadda wajada",
+      "meaning": "whoever strives finds success",
+      "example": "تُذَكِّرُنَا الْحِكْمَةُ: مَنْ جَدَّ وَجَدَ.",
+      "exampleMeaning": "The saying reminds us: whoever strives finds success."
+    },
+    {
+      "word": "الصَّبْرُ مِفْتَاحُ الْفَرَجِ",
+      "reading": "aṣ-ṣabru miftāḥu l-faraji",
+      "meaning": "patience is the key to relief",
+      "example": "قَالَتِ الْجَدَّةُ: الصَّبْرُ مِفْتَاحُ الْفَرَجِ.",
+      "exampleMeaning": "Grandmother said: patience is the key to relief."
+    },
+    {
+      "word": "الْعِلْمُ نُورٌ",
+      "reading": "al-ʿilmu nūrun",
+      "meaning": "knowledge is light",
+      "example": "كَتَبَ الْمُعَلِّمُ عَلَى السَّبُّورَةِ: الْعِلْمُ نُورٌ.",
+      "exampleMeaning": "The teacher wrote on the board: knowledge is light."
+    },
+    {
+      "word": "الْوَقْتُ كَالسَّيْفِ",
+      "reading": "al-waqtu ka-s-sayfi",
+      "meaning": "time is like a sword",
+      "example": "يَقُولُ أَبِي دَائِمًا: الْوَقْتُ كَالسَّيْفِ.",
+      "exampleMeaning": "My father always says: time is like a sword."
+    },
+    {
+      "word": "يَدٌ وَاحِدَةٌ لَا تُصَفِّقُ",
+      "reading": "yadun wāḥidatun lā tuṣaffiqu",
+      "meaning": "one hand cannot clap",
+      "example": "فِي الْعَمَلِ الْجَمَاعِيِّ، يَدٌ وَاحِدَةٌ لَا تُصَفِّقُ.",
+      "exampleMeaning": "In teamwork, one hand cannot clap."
+    },
+    {
+      "word": "خَيْرُ الْكَلَامِ مَا قَلَّ وَدَلَّ",
+      "reading": "khayru l-kalāmi mā qalla wa-dalla",
+      "meaning": "the best speech is brief and meaningful",
+      "example": "نَصَحَنَا الْمُدِيرُ: خَيْرُ الْكَلَامِ مَا قَلَّ وَدَلَّ.",
+      "exampleMeaning": "The manager advised us: the best speech is brief and meaningful."
+    },
+    {
+      "word": "لِكُلِّ جَوَادٍ كَبْوَةٌ",
+      "reading": "li-kulli jawādin kabwatun",
+      "meaning": "every noble horse stumbles",
+      "example": "تَقَبَّلَ خَطَأَهُ وَقَالَ: لِكُلِّ جَوَادٍ كَبْوَةٌ.",
+      "exampleMeaning": "He accepted his mistake and said: every noble horse stumbles."
+    },
+    {
+      "word": "رُبَّ ضَارَّةٍ نَافِعَةٌ",
+      "reading": "rubba ḍārratin nāfiʿatun",
+      "meaning": "a harmful thing may bring benefit",
+      "example": "بَعْدَ التَّأْخِيرِ ظَهَرَ أَنَّ رُبَّ ضَارَّةٍ نَافِعَةٌ.",
+      "exampleMeaning": "After the delay it became clear that harm may bring benefit."
+    },
+    {
+      "word": "مَا كُلُّ مَا يَلْمَعُ ذَهَبًا",
+      "reading": "mā kullu mā yalmaʿu dhahaban",
+      "meaning": "not everything that glitters is gold",
+      "example": "حَذَّرَنِي صَدِيقِي: مَا كُلُّ مَا يَلْمَعُ ذَهَبًا.",
+      "exampleMeaning": "My friend warned me: not everything that glitters is gold."
+    },
+    {
+      "word": "مَنْ حَفَرَ حُفْرَةً لِأَخِيهِ وَقَعَ فِيهَا",
+      "reading": "man ḥafara ḥufratan li-ʾakhīhi waqaʿa fīhā",
+      "meaning": "whoever digs a pit for his brother falls into it",
+      "example": "تُحَذِّرُ الْحِكْمَةُ: مَنْ حَفَرَ حُفْرَةً لِأَخِيهِ وَقَعَ فِيهَا.",
+      "exampleMeaning": "The proverb warns: whoever digs a pit for his brother falls into it."
+    },
+    {
+      "word": "لَا تُؤَجِّلْ عَمَلَ الْيَوْمِ إِلَى الْغَدِ",
+      "reading": "lā tuʾajjil ʿamala l-yawmi ʾilā l-ghadi",
+      "meaning": "do not put today’s work off until tomorrow",
+      "example": "عَلَّقْتُ فَوْقَ مَكْتَبِي: لَا تُؤَجِّلْ عَمَلَ الْيَوْمِ إِلَى الْغَدِ.",
+      "exampleMeaning": "I hung above my desk: do not put today’s work off until tomorrow."
+    },
+    {
+      "word": "عِنْدَ الشَّدَائِدِ يُعْرَفُ الْإِخْوَانُ",
+      "reading": "ʿinda sh-shadāʾidi yuʿrafu l-ʾikhwānu",
+      "meaning": "in hardships, true friends are known",
+      "example": "ثَبَتَ لَنَا أَنَّ عِنْدَ الشَّدَائِدِ يُعْرَفُ الْإِخْوَانُ.",
+      "exampleMeaning": "It was proven to us that true friends are known in hardship."
+    },
+    {
+      "word": "كُلُّ إِنَاءٍ بِمَا فِيهِ يَنْضَحُ",
+      "reading": "kullu ʾināʾin bi-mā fīhi yanḍaḥu",
+      "meaning": "each vessel spills what is inside it",
+      "example": "تَظْهَرُ الْأَخْلَاقُ فِي الْكَلَامِ؛ كُلُّ إِنَاءٍ بِمَا فِيهِ يَنْضَحُ.",
+      "exampleMeaning": "Character appears in speech; each vessel spills what is inside it."
+    },
+    {
+      "word": "الْقَنَاعَةُ كَنْزٌ لَا يَفْنَى",
+      "reading": "al-qanāʿatu kanzun lā yafnā",
+      "meaning": "contentment is an inexhaustible treasure",
+      "example": "تُعَلِّمُنَا التَّجْرِبَةُ أَنَّ الْقَنَاعَةُ كَنْزٌ لَا يَفْنَى.",
+      "exampleMeaning": "Experience teaches us that contentment is an inexhaustible treasure."
+    },
+    {
+      "word": "الْعَجَلَةُ مِنَ الشَّيْطَانِ",
+      "reading": "al-ʿajalatu mina sh-shayṭāni",
+      "meaning": "haste is from the devil",
+      "example": "تَمَهَّلْ، فَإِنَّ الْعَجَلَةُ مِنَ الشَّيْطَانِ.",
+      "exampleMeaning": "Slow down, for haste is from the devil."
+    },
+    {
+      "word": "سَلِ الْمُجَرِّبَ وَلَا تَسْأَلِ الطَّبِيبَ",
+      "reading": "sali l-mujarriba wa-lā tasʾali ṭ-ṭabība",
+      "meaning": "ask the experienced person, not the doctor",
+      "example": "فِي شُؤُونِ السَّفَرِ، سَلِ الْمُجَرِّبَ وَلَا تَسْأَلِ الطَّبِيبَ.",
+      "exampleMeaning": "In travel matters, ask the experienced person, not the doctor."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "تُذَكِّرُنَا الْحِكْمَةُ: ___.",
+          "answer": "مَنْ جَدَّ وَجَدَ",
+          "hint": "whoever strives finds success"
+        },
+        {
+          "sentence": "قَالَتِ الْجَدَّةُ: ___.",
+          "answer": "الصَّبْرُ مِفْتَاحُ الْفَرَجِ",
+          "hint": "patience is the key to relief"
+        },
+        {
+          "sentence": "كَتَبَ الْمُعَلِّمُ عَلَى السَّبُّورَةِ: ___.",
+          "answer": "الْعِلْمُ نُورٌ",
+          "hint": "knowledge is light"
+        },
+        {
+          "sentence": "يَقُولُ أَبِي دَائِمًا: ___.",
+          "answer": "الْوَقْتُ كَالسَّيْفِ",
+          "hint": "time is like a sword"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "items": [
+        {
+          "question": "What does ‘مَنْ جَدَّ وَجَدَ’ mean?",
+          "options": [
+            "patience is the key to relief",
+            "whoever strives finds success",
+            "knowledge is light",
+            "time is like a sword"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What does ‘الصَّبْرُ مِفْتَاحُ الْفَرَجِ’ mean?",
+          "options": [
+            "knowledge is light",
+            "patience is the key to relief",
+            "time is like a sword",
+            "one hand cannot clap"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What does ‘الْعِلْمُ نُورٌ’ mean?",
+          "options": [
+            "time is like a sword",
+            "knowledge is light",
+            "one hand cannot clap",
+            "the best speech is brief and meaningful"
+          ],
+          "answer": 1
+        }
+      ]
+    }
+  ]
+}

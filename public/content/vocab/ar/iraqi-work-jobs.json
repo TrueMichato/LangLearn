@@ -1,0 +1,159 @@
+{
+  "id": "iraqi-work-jobs",
+  "words": [
+    {
+      "word": "شُغُل",
+      "reading": "shughul",
+      "meaning": "work",
+      "example": "آنِي عِنْدِي شُغُلْ مِنَ الصُّبِحْ.",
+      "exampleMeaning": "I have work from the morning."
+    },
+    {
+      "word": "دَوَام",
+      "reading": "dawām",
+      "meaning": "work shift / working hours",
+      "example": "دَوَامِي يِبْدَا بِالتِّسْعَةْ.",
+      "exampleMeaning": "My work shift starts at nine."
+    },
+    {
+      "word": "مُدِير",
+      "reading": "mudīr",
+      "meaning": "manager",
+      "example": "الْمُدِيرْ طَلَبْ تَقْرِيرْ جَدِيدْ.",
+      "exampleMeaning": "The manager asked for a new report."
+    },
+    {
+      "word": "مُوَظَّف",
+      "reading": "muwaẓẓaf",
+      "meaning": "employee",
+      "example": "هُوَّ مُوَظَّفْ بِدَائِرَةْ حُكُومِيَّةْ.",
+      "exampleMeaning": "He is an employee in a government office."
+    },
+    {
+      "word": "رَاتِب",
+      "reading": "rātib",
+      "meaning": "salary",
+      "example": "الرَّاتِبْ يَنْزِلْ آخِرَ الشَّهْرْ.",
+      "exampleMeaning": "The salary comes at the end of the month."
+    },
+    {
+      "word": "عُطْلَة",
+      "reading": "ʿuṭla",
+      "meaning": "day off / vacation",
+      "example": "بَاكِرْ عِنْدَنَا عُطْلَةْ رَسْمِيَّةْ.",
+      "exampleMeaning": "Tomorrow we have an official day off."
+    },
+    {
+      "word": "زَمِيل",
+      "reading": "zamīl",
+      "meaning": "coworker",
+      "example": "زَمِيلِي سَاعَدْنِي بِالْمَهَمَّةْ.",
+      "exampleMeaning": "My coworker helped me with the task."
+    },
+    {
+      "word": "مَكْتَب",
+      "reading": "maktab",
+      "meaning": "office / desk",
+      "example": "الْمَكْتَبْ قَرِيبْ مِنَ الْبَابْ.",
+      "exampleMeaning": "The office is near the door."
+    },
+    {
+      "word": "اِجْتِمَاع",
+      "reading": "ijtimāʿ",
+      "meaning": "meeting",
+      "example": "عِنْدَنَا اِجْتِمَاعْ بَعْدَ الظُّهُرْ.",
+      "exampleMeaning": "We have a meeting after noon."
+    },
+    {
+      "word": "مُقَابَلَة",
+      "reading": "muqābala",
+      "meaning": "interview",
+      "example": "بَاكِرْ عِنْدِي مُقَابَلَةْ بِشَرِكَةْ جَدِيدَةْ.",
+      "exampleMeaning": "Tomorrow I have an interview at a new company."
+    },
+    {
+      "word": "تَعْيِين",
+      "reading": "taʿyīn",
+      "meaning": "hiring / appointment",
+      "example": "التَّعْيِينْ يِصِيرْ بَعْدَ الْمُقَابَلَةْ.",
+      "exampleMeaning": "Hiring happens after the interview."
+    },
+    {
+      "word": "خِبْرَة",
+      "reading": "khibra",
+      "meaning": "experience",
+      "example": "عِنْدِي خِبْرَةْ خَمْسْ سِنِينْ.",
+      "exampleMeaning": "I have five years of experience."
+    },
+    {
+      "word": "مَهَمَّة",
+      "reading": "muhamma",
+      "meaning": "task",
+      "example": "هَايِ الْمَهَمَّةْ لَازِمْ تِنْخَلَصْ الْيَوْمْ.",
+      "exampleMeaning": "This task must be finished today."
+    },
+    {
+      "word": "أَتْأَخَّر",
+      "reading": "atʾakhkhar",
+      "meaning": "to be late",
+      "example": "مَا أُرِيدْ أَتْأَخَّرْ عَنِ الدَّوَامْ.",
+      "exampleMeaning": "I do not want to be late for work."
+    },
+    {
+      "word": "أَقَدِّم",
+      "reading": "aqaddim",
+      "meaning": "to apply / submit",
+      "example": "أَقَدِّمْ عَلَى الشُّغُلْ هَذَا الْأُسْبُوعْ.",
+      "exampleMeaning": "I will apply for the job this week."
+    },
+    {
+      "word": "أَسْتَقِيل",
+      "reading": "astaqīl",
+      "meaning": "to resign",
+      "example": "إِذَا لَقِيتْ فُرْصَةْ أَحْسَنْ، أَسْتَقِيلْ.",
+      "exampleMeaning": "If I find a better opportunity, I will resign."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "آنِي عِنْدِي ___ مِنَ الصُّبِحْ.",
+          "answer": "شُغُل",
+          "hint": "work"
+        },
+        {
+          "sentence": "___ يِبْدَا بِالتِّسْعَةْ.",
+          "answer": "دَوَام",
+          "hint": "work shift"
+        },
+        {
+          "sentence": "بَاكِرْ عِنْدِي ___ بِشَرِكَةْ.",
+          "answer": "مُقَابَلَة",
+          "hint": "interview"
+        },
+        {
+          "sentence": "عِنْدِي ___ خَمْسْ سِنِينْ.",
+          "answer": "خِبْرَة",
+          "hint": "experience"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "In Iraqi workplace talk, what does ‘دَوَام’ refer to?",
+      "options": [
+        "work shift or working hours",
+        "salary",
+        "coworker",
+        "interview"
+      ],
+      "answer": 0
+    }
+  ]
+}

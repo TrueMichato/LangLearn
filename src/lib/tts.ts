@@ -10,6 +10,7 @@ const LANG_VOICE_MAP: Record<string, string> = {
   zh: 'zh-CN',
   ko: 'ko-KR',
   pt: 'pt-BR',
+  ar: 'ar-SA',
   ro: 'ro-RO',
 };
 

@@ -1,0 +1,183 @@
+{
+  "id": "culture-expressions",
+  "words": [
+    {
+      "word": "إِنْ شَاءَ اللَّهُ",
+      "reading": "ʾin shāʾa llāhu",
+      "meaning": "God willing / hopefully",
+      "example": "إِنْ شَاءَ اللَّهُ نَسْتَطِيعُ السَّفَرَ غَدًا.",
+      "exampleMeaning": "God willing, we can travel tomorrow."
+    },
+    {
+      "word": "الْحَمْدُ لِلَّهِ",
+      "reading": "al-ḥamdu li-llāhi",
+      "meaning": "praise be to God / thankfully",
+      "example": "الْحَمْدُ لِلَّهِ أَنَا بِخَيْرٍ.",
+      "exampleMeaning": "Thankfully, I am well."
+    },
+    {
+      "word": "مَا شَاءَ اللَّهُ",
+      "reading": "mā shāʾa llāhu",
+      "meaning": "what God has willed / how wonderful",
+      "example": "مَا شَاءَ اللَّهُ، بَيْتُكَ جَمِيلٌ.",
+      "exampleMeaning": "How wonderful, your house is beautiful."
+    },
+    {
+      "word": "سُبْحَانَ اللَّهِ",
+      "reading": "subḥāna llāhi",
+      "meaning": "glory be to God",
+      "example": "سُبْحَانَ اللَّهِ، الْمَنْظَرُ بَدِيعٌ.",
+      "exampleMeaning": "Glory be to God, the view is splendid."
+    },
+    {
+      "word": "بِسْمِ اللَّهِ",
+      "reading": "bi-smi llāhi",
+      "meaning": "in the name of God",
+      "example": "بِسْمِ اللَّهِ نَبْدَأُ الطَّعَامَ.",
+      "exampleMeaning": "In the name of God, we begin the meal."
+    },
+    {
+      "word": "اللَّهُ أَكْبَرُ",
+      "reading": "allāhu ʾakbaru",
+      "meaning": "God is greatest",
+      "example": "اللَّهُ أَكْبَرُ عِبَارَةٌ مَعْرُوفَةٌ.",
+      "exampleMeaning": "God is greatest is a well-known phrase."
+    },
+    {
+      "word": "السَّلَامُ عَلَيْكُمْ",
+      "reading": "as-salāmu ʿalaykum",
+      "meaning": "peace be upon you",
+      "example": "السَّلَامُ عَلَيْكُمْ عِنْدَ الدُّخُولِ.",
+      "exampleMeaning": "Peace be upon you is said when entering."
+    },
+    {
+      "word": "وَعَلَيْكُمُ السَّلَامُ",
+      "reading": "wa-ʿalaykumu s-salāmu",
+      "meaning": "and upon you be peace",
+      "example": "وَعَلَيْكُمُ السَّلَامُ جَوَابٌ لِلتَّحِيَّةِ.",
+      "exampleMeaning": "And upon you be peace is a reply to the greeting."
+    },
+    {
+      "word": "رَمَضَانُ مُبَارَكٌ",
+      "reading": "ramaḍānu mubārakun",
+      "meaning": "blessed Ramadan",
+      "example": "رَمَضَانُ مُبَارَكٌ لَكُمْ جَمِيعًا.",
+      "exampleMeaning": "Blessed Ramadan to you all."
+    },
+    {
+      "word": "عِيدٌ مُبَارَكٌ",
+      "reading": "ʿīdun mubārakun",
+      "meaning": "blessed holiday / Eid Mubarak",
+      "example": "عِيدٌ مُبَارَكٌ يَا أَصْدِقَائِي.",
+      "exampleMeaning": "Blessed Eid, my friends."
+    },
+    {
+      "word": "صَحَّةٌ وَعَافِيَةٌ",
+      "reading": "ṣaḥḥatun wa-ʿāfiyatun",
+      "meaning": "bon appétit / health and wellness",
+      "example": "صَحَّةٌ وَعَافِيَةٌ بَعْدَ الطَّعَامِ.",
+      "exampleMeaning": "Health and wellness after the meal."
+    },
+    {
+      "word": "نَعِيمًا",
+      "reading": "naʿīman",
+      "meaning": "blessings after a shower or haircut",
+      "example": "قَالَ لَهُ: نَعِيمًا بَعْدَ الْحِلَاقَةِ.",
+      "exampleMeaning": "He said to him: blessings after the haircut."
+    },
+    {
+      "word": "تَفَضَّلْ",
+      "reading": "tafaḍḍal",
+      "meaning": "please go ahead / here you are (to a man)",
+      "example": "تَفَضَّلْ، هٰذَا مَقْعَدُكَ.",
+      "exampleMeaning": "Please, this is your seat."
+    },
+    {
+      "word": "تَفَضَّلِي",
+      "reading": "tafaḍḍalī",
+      "meaning": "please go ahead / here you are (to a woman)",
+      "example": "تَفَضَّلِي، هٰذِهِ قَهْوَتُكِ.",
+      "exampleMeaning": "Please, this is your coffee."
+    },
+    {
+      "word": "مَبْرُوكٌ",
+      "reading": "mabrūkun",
+      "meaning": "congratulations",
+      "example": "مَبْرُوكٌ عَلَى النَّجَاحِ.",
+      "exampleMeaning": "Congratulations on the success."
+    },
+    {
+      "word": "حَظًّا سَعِيدًا",
+      "reading": "ḥaẓẓan saʿīdan",
+      "meaning": "good luck",
+      "example": "حَظًّا سَعِيدًا فِي الِامْتِحَانِ.",
+      "exampleMeaning": "Good luck on the exam."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "___ نَسْتَطِيعُ السَّفَرَ غَدًا.",
+          "answer": "إِنْ شَاءَ اللَّهُ",
+          "hint": "God willing / hopefully"
+        },
+        {
+          "sentence": "___ أَنَا بِخَيْرٍ.",
+          "answer": "الْحَمْدُ لِلَّهِ",
+          "hint": "praise be to God / thankfully"
+        },
+        {
+          "sentence": "___، بَيْتُكَ جَمِيلٌ.",
+          "answer": "مَا شَاءَ اللَّهُ",
+          "hint": "what God has willed / how wonderful"
+        },
+        {
+          "sentence": "___، الْمَنْظَرُ بَدِيعٌ.",
+          "answer": "سُبْحَانَ اللَّهِ",
+          "hint": "glory be to God"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "items": [
+        {
+          "question": "What does ‘إِنْ شَاءَ اللَّهُ’ mean?",
+          "options": [
+            "praise be to God / thankfully",
+            "God willing / hopefully",
+            "what God has willed / how wonderful",
+            "glory be to God"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What does ‘الْحَمْدُ لِلَّهِ’ mean?",
+          "options": [
+            "what God has willed / how wonderful",
+            "praise be to God / thankfully",
+            "glory be to God",
+            "in the name of God"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What does ‘مَا شَاءَ اللَّهُ’ mean?",
+          "options": [
+            "glory be to God",
+            "what God has willed / how wonderful",
+            "in the name of God",
+            "God is greatest"
+          ],
+          "answer": 1
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,159 @@
+{
+  "id": "iraqi-university-campus",
+  "words": [
+    {
+      "word": "عِنْدِي مُحَاضَرَةْ",
+      "reading": "ʿindī muḥāḍara",
+      "meaning": "I have a lecture",
+      "example": "عِنْدِي مُحَاضَرَةْ بَاجِرْ الصُّبُحْ.",
+      "exampleMeaning": "I have a lecture tomorrow morning."
+    },
+    {
+      "word": "الْقَاعَةْ",
+      "reading": "il-qāʿa",
+      "meaning": "lecture hall",
+      "example": "الْقَاعَةْ مَلْيَانَةْ هَسَّهْ.",
+      "exampleMeaning": "The lecture hall is full now."
+    },
+    {
+      "word": "الدُّكْتُورْ",
+      "reading": "id-duktōr",
+      "meaning": "the professor",
+      "example": "الدُّكْتُورْ شَرَحَ الدَّرْسْ بِهُدُوءْ.",
+      "exampleMeaning": "The professor explained the lesson calmly."
+    },
+    {
+      "word": "الْكُلِّيَّةْ",
+      "reading": "il-kulliyya",
+      "meaning": "college / faculty",
+      "example": "الْكُلِّيَّةْ بَعِيدَةْ عَنِ الْبَيْتْ.",
+      "exampleMeaning": "The college is far from home."
+    },
+    {
+      "word": "الْقِسْمْ",
+      "reading": "il-qism",
+      "meaning": "department",
+      "example": "الْقِسْمْ مَالْنَا صَغِيرْ.",
+      "exampleMeaning": "Our department is small."
+    },
+    {
+      "word": "أِمْتِحَانْ",
+      "reading": "imtiḥān",
+      "meaning": "exam",
+      "example": "أِمْتِحَانْ الرِّيَاضِيَّاتْ صَعْبْ شْوَيَّةْ.",
+      "exampleMeaning": "The math exam is a little hard."
+    },
+    {
+      "word": "دَرَجَةْ",
+      "reading": "daraja",
+      "meaning": "grade",
+      "example": "دَرَجَةْ زَيْنَةْ تِفَرِّحْ الطَّالِبْ.",
+      "exampleMeaning": "A good grade makes the student happy."
+    },
+    {
+      "word": "نَاجِحْ",
+      "reading": "nājiḥ",
+      "meaning": "passed / successful",
+      "example": "أَنَا نَاجِحْ بِالْمَادَّةْ.",
+      "exampleMeaning": "I passed the course."
+    },
+    {
+      "word": "رَاسِبْ",
+      "reading": "rāsib",
+      "meaning": "failed",
+      "example": "لَا تِخَافْ، مَا أَنْتَ رَاسِبْ.",
+      "exampleMeaning": "Do not worry; you did not fail."
+    },
+    {
+      "word": "بَاجِرْ",
+      "reading": "bājir",
+      "meaning": "tomorrow",
+      "example": "بَاجِرْ عِنْدْنَا دَوَامْ مُبَكِّرْ.",
+      "exampleMeaning": "Tomorrow we have early classes."
+    },
+    {
+      "word": "هَسَّهْ",
+      "reading": "hassa",
+      "meaning": "now",
+      "example": "هَسَّهْ نِرُوحْ لِلْمَكْتَبَةْ.",
+      "exampleMeaning": "Now we are going to the library."
+    },
+    {
+      "word": "مَلْزَمَةْ",
+      "reading": "malzama",
+      "meaning": "course packet",
+      "example": "اشْتَرَيْتْ مَلْزَمَةْ جَدِيدَةْ لِلْفِيزِيَاءْ.",
+      "exampleMeaning": "I bought a new course packet for physics."
+    },
+    {
+      "word": "أَسْتِنْسِخْ",
+      "reading": "astinsikh",
+      "meaning": "I photocopy",
+      "example": "أَسْتِنْسِخْ هَايَ الصَّفْحَةْ قَبْلَ الدَّرْسْ.",
+      "exampleMeaning": "I photocopy this page before class."
+    },
+    {
+      "word": "زَمِيلْ",
+      "reading": "zamīl",
+      "meaning": "classmate",
+      "example": "زَمِيلْ سَاعَدْنِي بِالْوَاجِبْ.",
+      "exampleMeaning": "A classmate helped me with the homework."
+    },
+    {
+      "word": "دَوَامْ",
+      "reading": "dawām",
+      "meaning": "classes / attendance",
+      "example": "الدَّوَامْ يَبْدَا السَّاعَةْ تِسْعَةْ.",
+      "exampleMeaning": "Classes start at nine o'clock."
+    },
+    {
+      "word": "الْمَكْتَبَةْ",
+      "reading": "il-maktaba",
+      "meaning": "library",
+      "example": "الْمَكْتَبَةْ هَادِيَةْ وَمُنَاسِبَةْ لِلدِّرَاسَةْ.",
+      "exampleMeaning": "The library is quiet and suitable for studying."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "___ بَاجِرْ الصُّبُحْ.",
+          "answer": "عِنْدِي مُحَاضَرَةْ",
+          "hint": "I have a lecture"
+        },
+        {
+          "sentence": "___ الرِّيَاضِيَّاتْ صَعْبْ شْوَيَّةْ.",
+          "answer": "أِمْتِحَانْ",
+          "hint": "exam"
+        },
+        {
+          "sentence": "___ عِنْدْنَا دَوَامْ مُبَكِّرْ.",
+          "answer": "بَاجِرْ",
+          "hint": "tomorrow"
+        },
+        {
+          "sentence": "___ هَادِيَةْ وَمُنَاسِبَةْ لِلدِّرَاسَةْ.",
+          "answer": "الْمَكْتَبَةْ",
+          "hint": "library"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "In Iraqi Arabic, what does ‘مَلْزَمَةْ’ mean?",
+      "options": [
+        "course packet",
+        "lecture hall",
+        "department",
+        "grade"
+      ],
+      "answer": 0
+    }
+  ]
+}

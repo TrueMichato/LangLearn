@@ -1,0 +1,183 @@
+{
+  "id": "texting-social",
+  "words": [
+    {
+      "word": "سَلَامْ",
+      "reading": "salām",
+      "meaning": "hi / peace (texting)",
+      "example": "سَلَامْ، وَصَلْت الْبَيْتْ.",
+      "exampleMeaning": "Hi, I arrived home."
+    },
+    {
+      "word": "صَبَاحُو",
+      "reading": "ṣabāḥo",
+      "meaning": "morning! (casual texting)",
+      "example": "صَبَاحُو، كِيفَك الْيَوْمْ؟",
+      "exampleMeaning": "Morning! How are you today?"
+    },
+    {
+      "word": "مَرْسِي",
+      "reading": "mersī",
+      "meaning": "thanks (casual borrowing)",
+      "example": "مَرْسِي عَلَى الرِّسَالَة.",
+      "exampleMeaning": "Thanks for the message."
+    },
+    {
+      "word": "تَمَامْ",
+      "reading": "tamām",
+      "meaning": "OK / all good",
+      "example": "تَمَامْ، نِتْكَلَّمْ بَعْدَيْنْ.",
+      "exampleMeaning": "OK, we will talk later."
+    },
+    {
+      "word": "أُوكِي",
+      "reading": "ōkī",
+      "meaning": "okay (casual)",
+      "example": "أُوكِي، أَنَا جَاهِزْ.",
+      "exampleMeaning": "Okay, I am ready."
+    },
+    {
+      "word": "يَلَّا",
+      "reading": "yallā",
+      "meaning": "come on / let’s go",
+      "example": "يَلَّا نِبْدَأْ الْمُكَالَمَة.",
+      "exampleMeaning": "Let’s start the call."
+    },
+    {
+      "word": "خَلَاصْ",
+      "reading": "khalāṣ",
+      "meaning": "done / enough / okay",
+      "example": "خَلَاصْ، أَرْسَلْت الصُّورَة.",
+      "exampleMeaning": "Done, I sent the photo."
+    },
+    {
+      "word": "بَرْسِلَكْ",
+      "reading": "barsillak",
+      "meaning": "I will send you (colloquial)",
+      "example": "بَرْسِلَكْ الرَّابِطْ بَعْد شْوَي.",
+      "exampleMeaning": "I will send you the link in a bit."
+    },
+    {
+      "word": "صُورَة",
+      "reading": "ṣūra",
+      "meaning": "photo (casual)",
+      "example": "الصُّورَة وَاضِحَة عَلَى الْهَاتِفْ.",
+      "exampleMeaning": "The photo is clear on the phone."
+    },
+    {
+      "word": "رِسَالَة",
+      "reading": "risāla",
+      "meaning": "message (casual)",
+      "example": "الرِّسَالَة قَصِيرَة وَمُهِمَّة.",
+      "exampleMeaning": "The message is short and important."
+    },
+    {
+      "word": "مَنْشُورْ",
+      "reading": "manshūr",
+      "meaning": "post",
+      "example": "الْمَنْشُورْ جَدِيد عَلَى الصَّفْحَة.",
+      "exampleMeaning": "The post is new on the page."
+    },
+    {
+      "word": "تَعْلِيقْ",
+      "reading": "taʿlīq",
+      "meaning": "comment",
+      "example": "التَّعْلِيقْ لَطِيف وَقَصِير.",
+      "exampleMeaning": "The comment is kind and short."
+    },
+    {
+      "word": "إِعْجَابْ",
+      "reading": "ʾiʿjāb",
+      "meaning": "like (social media)",
+      "example": "عَمِلْت إِعْجَابْ عَلَى الصُّورَة.",
+      "exampleMeaning": "I liked the photo."
+    },
+    {
+      "word": "مُتَابَعَة",
+      "reading": "mutābaʿa",
+      "meaning": "follow / following",
+      "example": "عِنْدِي مُتَابَعَة لِهٰذِهِ الصَّفْحَة.",
+      "exampleMeaning": "I follow this page."
+    },
+    {
+      "word": "أُونْلَايْنْ",
+      "reading": "ʾōnlāyn",
+      "meaning": "online",
+      "example": "أَنَا أُونْلَايْنْ دِلْوَقْتِي.",
+      "exampleMeaning": "I am online now."
+    },
+    {
+      "word": "لِينْكْ",
+      "reading": "līnk",
+      "meaning": "link",
+      "example": "اللِّينْكْ فِي الرِّسَالَة.",
+      "exampleMeaning": "The link is in the message."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "___، وَصَلْت الْبَيْتْ.",
+          "answer": "سَلَامْ",
+          "hint": "hi / peace"
+        },
+        {
+          "sentence": "___، كِيفَك الْيَوْمْ؟",
+          "answer": "صَبَاحُو",
+          "hint": "morning!"
+        },
+        {
+          "sentence": "___ عَلَى الرِّسَالَة.",
+          "answer": "مَرْسِي",
+          "hint": "thanks"
+        },
+        {
+          "sentence": "___، نِتْكَلَّمْ بَعْدَيْنْ.",
+          "answer": "تَمَامْ",
+          "hint": "OK / all good"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "items": [
+        {
+          "question": "What does ‘سَلَامْ’ mean?",
+          "options": [
+            "morning! (casual texting)",
+            "hi / peace (texting)",
+            "thanks (casual borrowing)",
+            "OK / all good"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What does ‘صَبَاحُو’ mean?",
+          "options": [
+            "thanks (casual borrowing)",
+            "morning! (casual texting)",
+            "OK / all good",
+            "okay (casual)"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What does ‘مَرْسِي’ mean?",
+          "options": [
+            "OK / all good",
+            "thanks (casual borrowing)",
+            "okay (casual)",
+            "come on / let’s go"
+          ],
+          "answer": 1
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,183 @@
+{
+  "id": "vehicles-transport-2",
+  "words": [
+    {
+      "word": "الدَّرَّاجَةُ النَّارِيَّةُ",
+      "reading": "ad-darrājatu an-nāriyyatu",
+      "meaning": "motorcycle",
+      "example": "الدَّرَّاجَةُ النَّارِيَّةُ سَرِيعَةٌ فِي الشَّارِعِ.",
+      "exampleMeaning": "The motorcycle is fast on the street."
+    },
+    {
+      "word": "الدَّرَّاجَةُ الهَوَائِيَّةُ",
+      "reading": "ad-darrājatu al-hawāʾiyyatu",
+      "meaning": "bicycle",
+      "example": "الدَّرَّاجَةُ الهَوَائِيَّةُ مُفِيدَةٌ لِلرِّيَاضَةِ.",
+      "exampleMeaning": "The bicycle is useful for exercise."
+    },
+    {
+      "word": "القِطَارُ السَّرِيعُ",
+      "reading": "al-qiṭāru as-sarīʿu",
+      "meaning": "express train",
+      "example": "القِطَارُ السَّرِيعُ يَصِلُ فِي الوَقْتِ المُحَدَّدِ.",
+      "exampleMeaning": "The express train arrives on time."
+    },
+    {
+      "word": "سَيَّارَةُ الأُجْرَةِ",
+      "reading": "sayyāratu al-ʾujrati",
+      "meaning": "taxi",
+      "example": "سَيَّارَةُ الأُجْرَةِ تَنْتَظِرُ أَمَامَ الفُنْدُقِ.",
+      "exampleMeaning": "The taxi is waiting in front of the hotel."
+    },
+    {
+      "word": "الشَّاحِنَةُ",
+      "reading": "ash-shāḥinatu",
+      "meaning": "truck",
+      "example": "الشَّاحِنَةُ تَنْقُلُ الأَثَاثَ إِلَى البَيْتِ.",
+      "exampleMeaning": "The truck transports the furniture to the house."
+    },
+    {
+      "word": "السَّفِينَةُ",
+      "reading": "as-safīnatu",
+      "meaning": "ship",
+      "example": "السَّفِينَةُ تُبْحِرُ نَحْوَ المِينَاءِ.",
+      "exampleMeaning": "The ship sails toward the port."
+    },
+    {
+      "word": "العَبَّارَةُ",
+      "reading": "al-ʿabbāratu",
+      "meaning": "ferry",
+      "example": "العَبَّارَةُ تَعْبُرُ الخَلِيجَ كُلَّ صَبَاحٍ.",
+      "exampleMeaning": "The ferry crosses the bay every morning."
+    },
+    {
+      "word": "المِتْرُو",
+      "reading": "al-mitrū",
+      "meaning": "metro / subway",
+      "example": "المِتْرُو يُقَلِّلُ الاِزْدِحَامَ فِي المَدِينَةِ.",
+      "exampleMeaning": "The metro reduces congestion in the city."
+    },
+    {
+      "word": "مَحَطَّةُ القِطَارِ",
+      "reading": "maḥaṭṭatu al-qiṭāri",
+      "meaning": "train station",
+      "example": "مَحَطَّةُ القِطَارِ قَرِيبَةٌ مِنَ الجَامِعَةِ.",
+      "exampleMeaning": "The train station is close to the university."
+    },
+    {
+      "word": "مَوْقِفُ الحَافِلَاتِ",
+      "reading": "mawqifu al-ḥāfilāti",
+      "meaning": "bus stop / bus station",
+      "example": "مَوْقِفُ الحَافِلَاتِ مُزْدَحِمٌ بَعْدَ العَمَلِ.",
+      "exampleMeaning": "The bus stop is crowded after work."
+    },
+    {
+      "word": "رَصِيفُ القِطَارِ",
+      "reading": "raṣīfu al-qiṭāri",
+      "meaning": "train platform",
+      "example": "رَصِيفُ القِطَارِ رَقْمُ ثَلَاثَةٍ هُوَ الصَّحِيحُ.",
+      "exampleMeaning": "Platform number three is the correct one."
+    },
+    {
+      "word": "تَذْكِرَةُ الرُّكُوبِ",
+      "reading": "tadhkiratu ar-rukūbi",
+      "meaning": "ride ticket",
+      "example": "تَذْكِرَةُ الرُّكُوبِ مَطْلُوبَةٌ قَبْلَ الدُّخُولِ.",
+      "exampleMeaning": "The ride ticket is required before entry."
+    },
+    {
+      "word": "بِطَاقَةُ النَّقْلِ",
+      "reading": "biṭāqatu an-naqli",
+      "meaning": "transit card",
+      "example": "بِطَاقَةُ النَّقْلِ تَعْمَلُ فِي الحَافِلَةِ وَالمِتْرُو.",
+      "exampleMeaning": "The transit card works on the bus and the metro."
+    },
+    {
+      "word": "الاِزْدِحَامُ المَرُورِيُّ",
+      "reading": "al-izdiḥāmu al-murūriyyu",
+      "meaning": "traffic congestion",
+      "example": "الاِزْدِحَامُ المَرُورِيُّ أَخَّرَ الرِّحْلَةَ.",
+      "exampleMeaning": "Traffic congestion delayed the trip."
+    },
+    {
+      "word": "خَطُّ السَّيْرِ",
+      "reading": "khaṭṭu as-sayri",
+      "meaning": "route",
+      "example": "خَطُّ السَّيْرِ يَمُرُّ بِالمَحَطَّةِ القَدِيمَةِ.",
+      "exampleMeaning": "The route passes by the old station."
+    },
+    {
+      "word": "مَمَرُّ الدَّرَّاجَاتِ",
+      "reading": "mamarru ad-darrājāti",
+      "meaning": "bike lane",
+      "example": "مَمَرُّ الدَّرَّاجَاتِ آمِنٌ وَوَاضِحٌ.",
+      "exampleMeaning": "The bike lane is safe and clear."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "___ سَرِيعَةٌ فِي الشَّارِعِ.",
+          "answer": "الدَّرَّاجَةُ النَّارِيَّةُ",
+          "hint": "motorcycle"
+        },
+        {
+          "sentence": "___ مُفِيدَةٌ لِلرِّيَاضَةِ.",
+          "answer": "الدَّرَّاجَةُ الهَوَائِيَّةُ",
+          "hint": "bicycle"
+        },
+        {
+          "sentence": "___ يَصِلُ فِي الوَقْتِ المُحَدَّدِ.",
+          "answer": "القِطَارُ السَّرِيعُ",
+          "hint": "express train"
+        },
+        {
+          "sentence": "___ تَنْتَظِرُ أَمَامَ الفُنْدُقِ.",
+          "answer": "سَيَّارَةُ الأُجْرَةِ",
+          "hint": "taxi"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "items": [
+        {
+          "question": "What does ‘الدَّرَّاجَةُ النَّارِيَّةُ’ mean?",
+          "options": [
+            "bicycle",
+            "motorcycle",
+            "express train",
+            "taxi"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What does ‘الدَّرَّاجَةُ الهَوَائِيَّةُ’ mean?",
+          "options": [
+            "express train",
+            "bicycle",
+            "taxi",
+            "truck"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What does ‘القِطَارُ السَّرِيعُ’ mean?",
+          "options": [
+            "taxi",
+            "express train",
+            "truck",
+            "ship"
+          ],
+          "answer": 1
+        }
+      ]
+    }
+  ]
+}

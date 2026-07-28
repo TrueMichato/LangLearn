@@ -1,0 +1,159 @@
+{
+  "id": "levantine-home-repairs",
+  "words": [
+    {
+      "word": "صَنْبُورْ",
+      "reading": "ṣanbūr",
+      "meaning": "faucet",
+      "example": "الصَّنْبُورْ بِهَرِّبْ مَيّْ مِنْ الصُّبْحْ.",
+      "exampleMeaning": "The faucet has been leaking water since morning."
+    },
+    {
+      "word": "تَهْرِيبْ",
+      "reading": "tahrīb",
+      "meaning": "leak",
+      "example": "فِي تَهْرِيبْ صَغِيرْ تَحْتَ الْمَغْسَلَةْ.",
+      "exampleMeaning": "There is a small leak under the sink."
+    },
+    {
+      "word": "مَاسُورَةْ",
+      "reading": "māsūra",
+      "meaning": "pipe",
+      "example": "الْمَاسُورَةْ وَرَا الْحِيطْ مَسْدُودَةْ.",
+      "exampleMeaning": "The pipe behind the wall is clogged."
+    },
+    {
+      "word": "خَرْبَانْ",
+      "reading": "kharbān",
+      "meaning": "broken",
+      "example": "الْجَرَسْ خَرْبَانْ وَمَا بِرِنّْ.",
+      "exampleMeaning": "The doorbell is broken and does not ring."
+    },
+    {
+      "word": "صَلِّحْلِي",
+      "reading": "ṣalliḥlī",
+      "meaning": "fix for me",
+      "example": "صَلِّحْلِي الْبَابْ قَبْلَ الْمَسَا.",
+      "exampleMeaning": "Fix the door for me before evening."
+    },
+    {
+      "word": "سَبَّاكْ",
+      "reading": "sabbāk",
+      "meaning": "plumber",
+      "example": "اتَّصِلْنَا بِسَبَّاكْ يِفْحَصْ الْمَيّْ.",
+      "exampleMeaning": "We called a plumber to check the water."
+    },
+    {
+      "word": "كَهْرَبْجِيّْ",
+      "reading": "kahrabjī",
+      "meaning": "electrician",
+      "example": "الْكَهْرَبْجِيّْ غَيَّرْ الْفِيشْ.",
+      "exampleMeaning": "The electrician changed the outlet."
+    },
+    {
+      "word": "شَاكُوشْ",
+      "reading": "shākūsh",
+      "meaning": "hammer",
+      "example": "نَحْتَاجْ شَاكُوشْ وَمِسْمَارْ.",
+      "exampleMeaning": "We need a hammer and a nail."
+    },
+    {
+      "word": "مِسْمَارْ",
+      "reading": "mismār",
+      "meaning": "nail",
+      "example": "دُقّْ مِسْمَارْ صَغِيرْ بِالْحِيطْ.",
+      "exampleMeaning": "Hammer a small nail into the wall."
+    },
+    {
+      "word": "مِفْتَاحْ إِنْجْلِيزِيّْ",
+      "reading": "miftāḥ injlīzī",
+      "meaning": "adjustable wrench",
+      "example": "جَابْ مِفْتَاحْ إِنْجْلِيزِيّْ لِلصَّامُولَةْ.",
+      "exampleMeaning": "He brought an adjustable wrench for the nut."
+    },
+    {
+      "word": "دْرِلْ",
+      "reading": "dril",
+      "meaning": "drill",
+      "example": "اسْتَعْمَلْنَا دْرِلْ لِتَعْلِيقِ الرَّفّْ.",
+      "exampleMeaning": "We used a drill to hang the shelf."
+    },
+    {
+      "word": "دَهَّانْ",
+      "reading": "dahhān",
+      "meaning": "painter",
+      "example": "الدَّهَّانْ لَوَّنَ الْغُرْفِةْ بِالأَبْيَضْ.",
+      "exampleMeaning": "The painter painted the room white."
+    },
+    {
+      "word": "فِيشْ",
+      "reading": "fīsh",
+      "meaning": "outlet / plug",
+      "example": "الْفِيشْ قَرِيبْ مِنَ الطَّاوْلَةْ.",
+      "exampleMeaning": "The outlet is near the table."
+    },
+    {
+      "word": "لَمْبَةْ",
+      "reading": "lambe",
+      "meaning": "light bulb",
+      "example": "اللَّمْبَةْ انْحَرَقِتْ بِالصَّالُونْ.",
+      "exampleMeaning": "The light bulb burned out in the living room."
+    },
+    {
+      "word": "سِلِكْ",
+      "reading": "silik",
+      "meaning": "wire",
+      "example": "فِي سِلِكْ مَكْشُوفْ وَرَا التِّلْفِزْيُونْ.",
+      "exampleMeaning": "There is an exposed wire behind the television."
+    },
+    {
+      "word": "حِيطْ",
+      "reading": "ḥīṭ",
+      "meaning": "wall",
+      "example": "عَلَّقْنَا الصُّورَةْ عَلَى حِيطْ أَبْيَضْ.",
+      "exampleMeaning": "We hung the picture on a white wall."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "___ بِهَرِّبْ مَيّْ مِنْ الصُّبْحْ.",
+          "answer": "صَنْبُورْ",
+          "hint": "faucet"
+        },
+        {
+          "sentence": "فِي ___ صَغِيرْ تَحْتَ الْمَغْسَلَةْ.",
+          "answer": "تَهْرِيبْ",
+          "hint": "leak"
+        },
+        {
+          "sentence": "اتَّصِلْنَا بِـ ___ يِفْحَصْ الْمَيّْ.",
+          "answer": "سَبَّاكْ",
+          "hint": "plumber"
+        },
+        {
+          "sentence": "___ الْبَابْ قَبْلَ الْمَسَا.",
+          "answer": "صَلِّحْلِي",
+          "hint": "fix for me"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "In Levantine Arabic, what does ‘كَهْرَبْجِيّْ’ mean?",
+      "options": [
+        "electrician",
+        "faucet",
+        "hammer",
+        "wall"
+      ],
+      "answer": 0
+    }
+  ]
+}

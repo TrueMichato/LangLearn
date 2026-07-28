@@ -1,0 +1,159 @@
+{
+  "id": "maghrebi-phone-internet",
+  "words": [
+    {
+      "word": "تِلِيفُون",
+      "reading": "tilīfūn",
+      "meaning": "telephone",
+      "example": "التِّلِيفُونْ دَقّْ فِي اللِّيلْ.",
+      "exampleMeaning": "The telephone rang at night."
+    },
+    {
+      "word": "بُورْطَابْل",
+      "reading": "būrṭābl",
+      "meaning": "mobile phone",
+      "example": "الْبُورْطَابْلْ دِيَالِي طْفَا.",
+      "exampleMeaning": "My mobile phone turned off."
+    },
+    {
+      "word": "نِّيت",
+      "reading": "nnīt",
+      "meaning": "internet",
+      "example": "النِّيتْ ضْعِيفَةْ فْهَادْ الْحُومَةْ.",
+      "exampleMeaning": "The internet is weak in this neighborhood."
+    },
+    {
+      "word": "وِيفِي",
+      "reading": "wīfī",
+      "meaning": "Wi-Fi",
+      "example": "عَنْدَكْ وِيفِي فْالدَّارْ؟",
+      "exampleMeaning": "Do you have Wi-Fi at home?"
+    },
+    {
+      "word": "رِيزُو",
+      "reading": "rīzū",
+      "meaning": "network signal",
+      "example": "مَا كَايْنَشْ رِيزُو هْنَا.",
+      "exampleMeaning": "There is no network signal here."
+    },
+    {
+      "word": "مِيسَاج",
+      "reading": "mīsāj",
+      "meaning": "message",
+      "example": "صِيفْطْ لِي مِيسَاجْ مِنْ بَعْدْ.",
+      "exampleMeaning": "Send me a message later."
+    },
+    {
+      "word": "نَعَيَّط",
+      "reading": "nʿayyaṭ",
+      "meaning": "to call",
+      "example": "غَادِي نَعَيَّطْ لِيكْ مِنْ بَعْدْ.",
+      "exampleMeaning": "I will call you later."
+    },
+    {
+      "word": "نْصِيفْط",
+      "reading": "nṣīfṭ",
+      "meaning": "to send",
+      "example": "نْصِيفْطْ لِيكْ الرَّقْمْ دَابَا.",
+      "exampleMeaning": "I will send you the number now."
+    },
+    {
+      "word": "تِصْوِيرَة",
+      "reading": "tiṣwīra",
+      "meaning": "photo",
+      "example": "هَادِي تِصْوِيرَةْ زْوِينَةْ لِلْبَحْرْ.",
+      "exampleMeaning": "This is a nice photo of the sea."
+    },
+    {
+      "word": "فِيدْيُو",
+      "reading": "fīdyū",
+      "meaning": "video",
+      "example": "تْفَرَّجْتْ فِيدْيُو قْصِيرْ عَلَى التَّطْبِيقْ.",
+      "exampleMeaning": "I watched a short video on the app."
+    },
+    {
+      "word": "نْشَارْجِي",
+      "reading": "nshārjī",
+      "meaning": "to charge",
+      "example": "خَاصّْنِي نْشَارْجِي الْبُورْطَابْلْ.",
+      "exampleMeaning": "I need to charge the mobile phone."
+    },
+    {
+      "word": "بَاطْرِيَّة",
+      "reading": "bāṭriyya",
+      "meaning": "battery",
+      "example": "الْبَاطْرِيَّةْ سَالَاتْ بِالسَّرْعَةْ.",
+      "exampleMeaning": "The battery ran out quickly."
+    },
+    {
+      "word": "كُود",
+      "reading": "kūd",
+      "meaning": "code",
+      "example": "دْخَّلْ الْكُودْ قَبْلَ مَا تْفْتَحْ الْحِسَابْ.",
+      "exampleMeaning": "Enter the code before opening the account."
+    },
+    {
+      "word": "كُونِكْسْيُون",
+      "reading": "kūniksyūn",
+      "meaning": "connection",
+      "example": "الْكُونِكْسْيُونْ مْقْطُوعَةْ فِي الْمَقْهَى.",
+      "exampleMeaning": "The connection is cut off at the café."
+    },
+    {
+      "word": "طَابْلِيط",
+      "reading": "ṭāblīṭ",
+      "meaning": "tablet",
+      "example": "الطَّابْلِيطْ مْزْيَانَةْ لِلْقِرَايَةْ.",
+      "exampleMeaning": "The tablet is good for reading."
+    },
+    {
+      "word": "أَبْلِيكَاسْيُون",
+      "reading": "aplikāsyūn",
+      "meaning": "app",
+      "example": "هَادْ الْأَبْلِيكَاسْيُونْ كَايْعَلَّمْ اللُّغَاتْ.",
+      "exampleMeaning": "This app teaches languages."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "عَنْدَكْ ___ فْالدَّارْ؟",
+          "answer": "وِيفِي",
+          "hint": "Wi-Fi"
+        },
+        {
+          "sentence": "صِيفْطْ لِي ___ دَابَا.",
+          "answer": "مِيسَاج",
+          "hint": "message"
+        },
+        {
+          "sentence": "___ دِيَالْ الْبُورْطَابْلْ ضْعِيفَةْ.",
+          "answer": "بَاطْرِيَّة",
+          "hint": "battery"
+        },
+        {
+          "sentence": "مَا كَايْنَشْ ___ هْنَا.",
+          "answer": "رِيزُو",
+          "hint": "network signal"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "In Maghrebi Arabic, what does ‘نَعَيَّط’ mean?",
+      "options": [
+        "to call",
+        "to charge",
+        "to send",
+        "to download"
+      ],
+      "answer": 0
+    }
+  ]
+}

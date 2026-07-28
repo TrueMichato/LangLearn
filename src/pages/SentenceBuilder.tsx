@@ -6,6 +6,7 @@ import { getLanguageLabel } from '../lib/languages';
 import { jaSentences } from '../data/sentences/ja-sentences';
 import { ruSentences } from '../data/sentences/ru-sentences';
 import { ptSentences } from '../data/sentences/pt-sentences';
+import { arSentences } from '../data/sentences/ar-sentences';
 import { roSentences } from '../data/sentences/ro-sentences';
 import type { PracticeSentence } from '../data/sentences/ja-sentences';
 import TileBuilder from '../components/sentences/TileBuilder';
@@ -21,6 +22,7 @@ const SENTENCE_DATA: Record<string, PracticeSentence[]> = {
   ja: jaSentences,
   ru: ruSentences,
   pt: ptSentences,
+  ar: arSentences,
   ro: roSentences,
 };
 

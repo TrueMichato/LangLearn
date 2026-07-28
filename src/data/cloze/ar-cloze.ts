@@ -1,0 +1,188 @@
+import type { ClozeSentence } from './ja-cloze';
+
+// Arabic (MSA) cloze sentences — fill the most useful word from context.
+// Original sentences; vocabulary drawn from high-frequency MSA. Readings use
+// scholarly transliteration. blankedReading = transliteration of the answer.
+export const arClozeSentences: ClozeSentence[] = [
+  // ── Beginner ──
+  { id: 'ar-c001', target: 'أنا مِن مِصْر', english: 'I am from Egypt', blankedWord: 'مِن', blankedReading: 'min', frequencyRank: 2, difficulty: 'beginner' },
+  { id: 'ar-c002', target: 'البَيْت كَبِير', english: 'The house is big', blankedWord: 'البَيْت', blankedReading: 'al-bayt', frequencyRank: 78, difficulty: 'beginner' },
+  { id: 'ar-c003', target: 'هذا كِتاب جَدِيد', english: 'This is a new book', blankedWord: 'كِتاب', blankedReading: 'kitāb', frequencyRank: 97, difficulty: 'beginner' },
+  { id: 'ar-c004', target: 'أشْرَبُ الماء', english: 'I drink the water', blankedWord: 'الماء', blankedReading: 'al-māʾ', frequencyRank: 84, difficulty: 'beginner' },
+  { id: 'ar-c005', target: 'هي طالِبة في الجامِعة', english: 'She is a student at the university', blankedWord: 'طالِبة', blankedReading: 'ṭāliba', frequencyRank: 98, difficulty: 'beginner' },
+  { id: 'ar-c006', target: 'أُحِبُّ القَهْوة', english: 'I love coffee', blankedWord: 'أُحِبُّ', blankedReading: 'uḥibbu', frequencyRank: 185, difficulty: 'beginner' },
+  { id: 'ar-c007', target: 'أينَ المَطار؟', english: 'Where is the airport?', blankedWord: 'أينَ', blankedReading: 'ayna', frequencyRank: 66, difficulty: 'beginner' },
+  { id: 'ar-c008', target: 'الطَّقْس جَمِيل اليَوْم', english: 'The weather is beautiful today', blankedWord: 'اليَوْم', blankedReading: 'al-yawm', frequencyRank: 24, difficulty: 'beginner' },
+  { id: 'ar-c009', target: 'أُمِّي مُعَلِّمة', english: 'My mother is a teacher', blankedWord: 'مُعَلِّمة', blankedReading: 'muʿallima', frequencyRank: 99, difficulty: 'beginner' },
+  { id: 'ar-c010', target: 'نَذْهَبُ إلى السُّوق', english: 'We go to the market', blankedWord: 'إلى', blankedReading: 'ilā', frequencyRank: 5, difficulty: 'beginner' },
+  { id: 'ar-c011', target: 'عِنْدي أخٌ وأُخْت', english: 'I have a brother and a sister', blankedWord: 'أُخْت', blankedReading: 'ukht', frequencyRank: 129, difficulty: 'beginner' },
+  { id: 'ar-c012', target: 'الوَلَد يَأْكُلُ الخُبْز', english: 'The boy eats the bread', blankedWord: 'يَأْكُلُ', blankedReading: 'yaʾkulu', frequencyRank: 175, difficulty: 'beginner' },
+  { id: 'ar-c013', target: 'السَّيّارة أمامَ البَيْت', english: 'The car is in front of the house', blankedWord: 'السَّيّارة', blankedReading: 'as-sayyāra', frequencyRank: 104, difficulty: 'beginner' },
+  { id: 'ar-c014', target: 'أنا سَعِيد جِدًّا', english: 'I am very happy', blankedWord: 'سَعِيد', blankedReading: 'saʿīd', frequencyRank: 150, difficulty: 'beginner' },
+  { id: 'ar-c015', target: 'شُكْرًا جَزِيلًا', english: 'Thank you very much', blankedWord: 'شُكْرًا', blankedReading: 'shukran', frequencyRank: 218, difficulty: 'beginner' },
+
+  // ── Intermediate ──
+  { id: 'ar-c016', target: 'أُرِيدُ أن أتَعَلَّمَ العَرَبِيّة', english: 'I want to learn Arabic', blankedWord: 'أتَعَلَّمَ', blankedReading: 'ataʿallama', frequencyRank: 174, difficulty: 'intermediate' },
+  { id: 'ar-c017', target: 'كانَ الجَوُّ بارِدًا أمْس', english: 'The weather was cold yesterday', blankedWord: 'كانَ', blankedReading: 'kāna', frequencyRank: 14, difficulty: 'intermediate' },
+  { id: 'ar-c018', target: 'سَوْفَ أُسافِرُ غَدًا', english: 'I will travel tomorrow', blankedWord: 'سَوْفَ', blankedReading: 'sawfa', frequencyRank: 63, difficulty: 'intermediate' },
+  { id: 'ar-c019', target: 'لم أفْهَمِ السُّؤال', english: 'I did not understand the question', blankedWord: 'أفْهَمِ', blankedReading: 'afham', frequencyRank: 173, difficulty: 'intermediate' },
+  { id: 'ar-c020', target: 'المَدِينة التي زُرْتُها جَمِيلة', english: 'The city that I visited is beautiful', blankedWord: 'التي', blankedReading: 'allatī', frequencyRank: 6, difficulty: 'intermediate' },
+  { id: 'ar-c021', target: 'يَجِبُ أن نَذْهَبَ الآن', english: 'We must go now', blankedWord: 'الآن', blankedReading: 'al-ān', frequencyRank: 49, difficulty: 'intermediate' },
+  { id: 'ar-c022', target: 'هل يُمْكِنُكَ أن تُساعِدَني؟', english: 'Can you help me?', blankedWord: 'تُساعِدَني', blankedReading: 'tusāʿidanī', frequencyRank: 205, difficulty: 'intermediate' },
+  { id: 'ar-c023', target: 'قَرَأْتُ هذا الكِتاب مَرَّتَيْن', english: 'I read this book twice', blankedWord: 'قَرَأْتُ', blankedReading: 'qaraʾtu', frequencyRank: 168, difficulty: 'intermediate' },
+  { id: 'ar-c024', target: 'الطَّعام في هذا المَطْعَم لَذِيذ', english: 'The food in this restaurant is delicious', blankedWord: 'المَطْعَم', blankedReading: 'al-maṭʿam', frequencyRank: 261, difficulty: 'intermediate' },
+  { id: 'ar-c025', target: 'أعْمَلُ في شَرِكة كَبِيرة', english: 'I work at a big company', blankedWord: 'شَرِكة', blankedReading: 'sharika', frequencyRank: 267, difficulty: 'intermediate' },
+
+  // ── Advanced ──
+  { id: 'ar-c026', target: 'رَغْمَ المَطَر، خَرَجْنا للنُّزْهة', english: 'Despite the rain, we went out for a walk', blankedWord: 'رَغْمَ', blankedReading: 'raghma', frequencyRank: 300, difficulty: 'advanced' },
+  { id: 'ar-c027', target: 'تُعْتَبَرُ اللُّغة العَرَبِيّة مِن أقْدَمِ اللُّغات', english: 'Arabic is considered one of the oldest languages', blankedWord: 'اللُّغة', blankedReading: 'al-lugha', frequencyRank: 116, difficulty: 'advanced' },
+  { id: 'ar-c028', target: 'لا بُدَّ مِن الاحْتِرام المُتَبادَل', english: 'Mutual respect is essential', blankedWord: 'الاحْتِرام', blankedReading: 'al-iḥtirām', frequencyRank: 300, difficulty: 'advanced' },
+  { id: 'ar-c029', target: 'ازْدادَ عَدَدُ السُّكّان بِسُرْعة', english: 'The population grew quickly', blankedWord: 'عَدَدُ', blankedReading: 'ʿadad', frequencyRank: 53, difficulty: 'advanced' },
+  { id: 'ar-c030', target: 'يَسْعى الجَمِيعُ إلى تَحْقِيقِ أحْلامِهِم', english: 'Everyone strives to achieve their dreams', blankedWord: 'أحْلامِهِم', blankedReading: 'aḥlāmihim', frequencyRank: 300, difficulty: 'advanced' },
+
+  // ── Beginner (batch 2) ──
+  { id: 'ar-c031', target: 'أنا جائِع، أُرِيدُ أن آكُلَ', english: 'I am hungry, I want to eat', blankedWord: 'جائِع', blankedReading: 'jāʾiʿ', frequencyRank: 200, difficulty: 'beginner' },
+  { id: 'ar-c032', target: 'الكِتابُ على الطّاوِلة', english: 'The book is on the table', blankedWord: 'على', blankedReading: 'ʿalā', frequencyRank: 3, difficulty: 'beginner' },
+  { id: 'ar-c033', target: 'كَم السّاعة الآن؟', english: 'What time is it now?', blankedWord: 'كَم', blankedReading: 'kam', frequencyRank: 65, difficulty: 'beginner' },
+  { id: 'ar-c034', target: 'هو يَعْمَلُ في المُسْتَشْفى', english: 'He works in the hospital', blankedWord: 'المُسْتَشْفى', blankedReading: 'al-mustashfā', frequencyRank: 236, difficulty: 'beginner' },
+  { id: 'ar-c035', target: 'نَحْنُ نَتَكَلَّمُ العَرَبِيّة قَلِيلًا', english: 'We speak a little Arabic', blankedWord: 'نَتَكَلَّمُ', blankedReading: 'natakallamu', frequencyRank: 170, difficulty: 'beginner' },
+  { id: 'ar-c036', target: 'أَحْتاجُ إلى قَلَم ووَرَقة', english: 'I need a pen and paper', blankedWord: 'قَلَم', blankedReading: 'qalam', frequencyRank: 240, difficulty: 'beginner' },
+  { id: 'ar-c037', target: 'الجَوُّ حارٌّ في الصَّيْف', english: 'The weather is hot in summer', blankedWord: 'الصَّيْف', blankedReading: 'aṣ-ṣayf', frequencyRank: 210, difficulty: 'beginner' },
+  { id: 'ar-c038', target: 'أَذْهَبُ إلى العَمَل بِالحافِلة', english: 'I go to work by bus', blankedWord: 'بِالحافِلة', blankedReading: 'bi-l-ḥāfila', frequencyRank: 250, difficulty: 'beginner' },
+
+  // ── Intermediate (batch 2) ──
+  { id: 'ar-c039', target: 'يَنْبَغي أن تَشْرَبَ الماء كَثِيرًا', english: 'You should drink a lot of water', blankedWord: 'يَنْبَغي', blankedReading: 'yanbaghī', frequencyRank: 300, difficulty: 'intermediate' },
+  { id: 'ar-c040', target: 'ما زِلْتُ أنْتَظِرُ الحافِلة', english: 'I am still waiting for the bus', blankedWord: 'أنْتَظِرُ', blankedReading: 'antaẓiru', frequencyRank: 190, difficulty: 'intermediate' },
+  { id: 'ar-c041', target: 'بِالرَّغْمِ مِن التَّعَب، أكْمَلَ عَمَلَه', english: 'Despite the tiredness, he finished his work', blankedWord: 'أكْمَلَ', blankedReading: 'akmala', frequencyRank: 190, difficulty: 'intermediate' },
+  { id: 'ar-c042', target: 'وَصَلَ القِطارُ في مَوْعِدِه', english: 'The train arrived on time', blankedWord: 'وَصَلَ', blankedReading: 'waṣala', frequencyRank: 199, difficulty: 'intermediate' },
+  { id: 'ar-c043', target: 'قالَ لي إنَّه سَيَتَأَخَّر', english: 'He told me that he would be late', blankedWord: 'قالَ', blankedReading: 'qāla', frequencyRank: 25, difficulty: 'intermediate' },
+  { id: 'ar-c044', target: 'زُرْتُ جَدَّتي يَوْمَ الجُمُعة', english: 'I visited my grandmother on Friday', blankedWord: 'زُرْتُ', blankedReading: 'zurtu', frequencyRank: 200, difficulty: 'intermediate' },
+  { id: 'ar-c045', target: 'يَجِبُ أن نَحْتَرِمَ آراءَ الآخَرِين', english: 'We must respect the opinions of others', blankedWord: 'نَحْتَرِمَ', blankedReading: 'naḥtarima', frequencyRank: 280, difficulty: 'intermediate' },
+
+  // ── Advanced (batch 2) ──
+  { id: 'ar-c046', target: 'يَتَمَيَّزُ هذا البَلَدُ بِتَنَوُّعِه الثَّقافيّ', english: 'This country is distinguished by its cultural diversity', blankedWord: 'يَتَمَيَّزُ', blankedReading: 'yatamayyazu', frequencyRank: 300, difficulty: 'advanced' },
+  { id: 'ar-c047', target: 'أدّى الاجْتِهادُ إلى نَتائِجَ رائِعة', english: 'Hard work led to wonderful results', blankedWord: 'الاجْتِهادُ', blankedReading: 'al-ijtihād', frequencyRank: 300, difficulty: 'advanced' },
+  { id: 'ar-c048', target: 'مِن الضَّرُوريِّ الحِفاظُ على البِيئة', english: 'It is necessary to preserve the environment', blankedWord: 'البِيئة', blankedReading: 'al-bīʾa', frequencyRank: 300, difficulty: 'advanced' },
+  { id: 'ar-c049', target: 'كُلَّما قَرَأْتَ أكْثَر، ازْدَدْتَ مَعْرِفة', english: 'The more you read, the more knowledge you gain', blankedWord: 'ازْدَدْتَ', blankedReading: 'izdadta', frequencyRank: 300, difficulty: 'advanced' },
+  { id: 'ar-c050', target: 'لَوْلا مُساعَدَتُك، لَمَا نَجَحْتُ', english: 'Were it not for your help, I would not have succeeded', blankedWord: 'لَوْلا', blankedReading: 'lawlā', frequencyRank: 300, difficulty: 'advanced' },
+
+  // ── Beginner (batch 3) ──
+  { id: 'ar-c051', target: 'أُرِيدُ أن أَتَعَلَّمَ السِّباحة', english: 'I want to learn swimming', blankedWord: 'أَتَعَلَّمَ', blankedReading: 'ataʿallama', frequencyRank: 174, difficulty: 'beginner' },
+  { id: 'ar-c052', target: 'هو يُسافِرُ إلى لُبْنان', english: 'He travels to Lebanon', blankedWord: 'يُسافِرُ', blankedReading: 'yusāfiru', frequencyRank: 201, difficulty: 'beginner' },
+  { id: 'ar-c053', target: 'أَسْتَمِعُ إلى الأخْبار كُلَّ صَباح', english: 'I listen to the news every morning', blankedWord: 'أَسْتَمِعُ', blankedReading: 'astamiʿu', frequencyRank: 169, difficulty: 'beginner' },
+  { id: 'ar-c054', target: 'الطِّفْلُ يَمْشي في الحَدِيقة', english: 'The child walks in the garden', blankedWord: 'يَمْشي', blankedReading: 'yamshī', frequencyRank: 181, difficulty: 'beginner' },
+  { id: 'ar-c055', target: 'سَأَلْتُ المُعَلِّمَ عَن الدَّرْس', english: 'I asked the teacher about the lesson', blankedWord: 'سَأَلْتُ', blankedReading: 'saʾaltu', frequencyRank: 171, difficulty: 'beginner' },
+  { id: 'ar-c056', target: 'نَسِيتُ مِفْتاحي في البَيْت', english: 'I forgot my key at home', blankedWord: 'نَسِيتُ', blankedReading: 'nasītu', frequencyRank: 173, difficulty: 'beginner' },
+  { id: 'ar-c057', target: 'أَغْلَقْتُ البابَ قَبْلَ النَّوْم', english: 'I closed the door before sleeping', blankedWord: 'أَغْلَقْتُ', blankedReading: 'aghlaqtu', frequencyRank: 196, difficulty: 'beginner' },
+
+  // ── Intermediate (batch 3) ──
+  { id: 'ar-c058', target: 'يَسْتَخْدِمُ النّاسُ الهَواتِفَ الذَّكِيّة كَثِيرًا', english: 'People use smartphones a lot', blankedWord: 'يَسْتَخْدِمُ', blankedReading: 'yastakhdimu', frequencyRank: 206, difficulty: 'intermediate' },
+  { id: 'ar-c059', target: 'اِجْتَمَعَ المُدَراءُ لِمُناقَشةِ الخُطّة', english: 'The managers met to discuss the plan', blankedWord: 'اِجْتَمَعَ', blankedReading: 'ijtamaʿa', frequencyRank: 250, difficulty: 'intermediate' },
+  { id: 'ar-c060', target: 'يَجِبُ أن نَحْتَرِمَ القَوانِين', english: 'We must respect the laws', blankedWord: 'نَحْتَرِمَ', blankedReading: 'naḥtarima', frequencyRank: 121, difficulty: 'intermediate' },
+  { id: 'ar-c061', target: 'اِسْتَقْبَلَ الرَّئيسُ الضُّيُوفَ في القَصْر', english: 'The president received the guests at the palace', blankedWord: 'اِسْتَقْبَلَ', blankedReading: 'istaqbala', frequencyRank: 269, difficulty: 'intermediate' },
+  { id: 'ar-c062', target: 'تَعاوَنَ الفَرِيقُ لإنْجازِ المَشْرُوع', english: 'The team cooperated to finish the project', blankedWord: 'تَعاوَنَ', blankedReading: 'taʿāwana', frequencyRank: 250, difficulty: 'intermediate' },
+  { id: 'ar-c063', target: 'دَعا صَدِيقي إلى حَفْلةِ زَواجِه', english: 'My friend invited me to his wedding', blankedWord: 'دَعا', blankedReading: 'daʿā', frequencyRank: 157, difficulty: 'intermediate' },
+  { id: 'ar-c064', target: 'أُطَوِّرُ مَهاراتي في كُلِّ يَوم', english: 'I develop my skills every day', blankedWord: 'أُطَوِّرُ', blankedReading: 'uṭawwiru', frequencyRank: 250, difficulty: 'intermediate' },
+
+  // ── Advanced (batch 3) ──
+  { id: 'ar-c065', target: 'يَنْبَغي علينا أن نُحافِظَ على تُراثِنا', english: 'We ought to preserve our heritage', blankedWord: 'تُراثِنا', blankedReading: 'turāthinā', frequencyRank: 300, difficulty: 'advanced' },
+  { id: 'ar-c066', target: 'اِزْدَهَرَت العُلُومُ في العَصْرِ الذَّهَبيّ', english: 'The sciences flourished in the golden age', blankedWord: 'اِزْدَهَرَت', blankedReading: 'izdaharat', frequencyRank: 300, difficulty: 'advanced' },
+  { id: 'ar-c067', target: 'كُلَّما تَعَمَّقْتَ في الدِّراسة، ازْدادَ فَهْمُك', english: 'The deeper you go in study, the more your understanding grows', blankedWord: 'تَعَمَّقْتَ', blankedReading: 'taʿammaqta', frequencyRank: 300, difficulty: 'advanced' },
+  { id: 'ar-c068', target: 'تُسْهِمُ التِّجارةُ في ازْدِهارِ الاقْتِصاد', english: 'Trade contributes to the prosperity of the economy', blankedWord: 'الاقْتِصاد', blankedReading: 'al-iqtiṣād', frequencyRank: 300, difficulty: 'advanced' },
+  { id: 'ar-c069', target: 'يَعْتَمِدُ النَّجاحُ على الصَّبْرِ والمُثابَرة', english: 'Success depends on patience and perseverance', blankedWord: 'يَعْتَمِدُ', blankedReading: 'yaʿtamidu', frequencyRank: 300, difficulty: 'advanced' },
+  { id: 'ar-c070', target: 'لا يُمْكِنُ إنْكارُ أَثَرِ التَّعْليمِ في المُجْتَمَع', english: "One cannot deny education's impact on society", blankedWord: 'المُجْتَمَع', blankedReading: 'al-mujtamaʿ', frequencyRank: 130, difficulty: 'advanced' },
+
+  // ── Beginner (batch 4) ──
+  { id: 'ar-c071', target: 'الغُرْفةُ الأُولى على اليَمِين', english: 'The first room is on the right', blankedWord: 'الأُولى', blankedReading: 'al-ūlā', frequencyRank: 45, difficulty: 'beginner' },
+  { id: 'ar-c072', target: 'عِنْدي مَوْعِدٌ في السّاعةِ الثّالِثة', english: 'I have an appointment at three o’clock', blankedWord: 'الثّالِثة', blankedReading: 'ath-thālitha', frequencyRank: 90, difficulty: 'beginner' },
+  { id: 'ar-c073', target: 'اِشْتَرَيْتُ نِصْفَ كِيلو مِن التُّفّاح', english: 'I bought half a kilo of apples', blankedWord: 'نِصْفَ', blankedReading: 'niṣf', frequencyRank: 288, difficulty: 'beginner' },
+  { id: 'ar-c074', target: 'الطَّقْسُ اليَوْمَ غائِمٌ قَلِيلًا', english: 'The weather today is a bit cloudy', blankedWord: 'غائِم', blankedReading: 'ghāʾim', frequencyRank: 300, difficulty: 'beginner' },
+  { id: 'ar-c075', target: 'يَعْمَلُ أَبي مُهَنْدِسًا مِعْماريًّا', english: 'My father works as an architect', blankedWord: 'مِعْماريًّا', blankedReading: 'miʿmāriyyan', frequencyRank: 300, difficulty: 'beginner' },
+
+  // ── Intermediate (batch 4) ──
+  { id: 'ar-c076', target: 'شاهَدْنا فِيلْمًا رائِعًا في السِّينَما', english: 'We watched a wonderful film at the cinema', blankedWord: 'شاهَدْنا', blankedReading: 'shāhadnā', frequencyRank: 246, difficulty: 'intermediate' },
+  { id: 'ar-c077', target: 'تَقَعُ العِراقُ في قَلْبِ الشَّرْقِ الأوْسَط', english: 'Iraq lies in the heart of the Middle East', blankedWord: 'العِراقُ', blankedReading: 'al-ʿirāq', frequencyRank: 80, difficulty: 'intermediate' },
+  { id: 'ar-c078', target: 'يَحْتَفِلُ النّاسُ بِالعِيدِ كُلَّ عام', english: 'People celebrate the feast every year', blankedWord: 'يَحْتَفِلُ', blankedReading: 'yaḥtafilu', frequencyRank: 250, difficulty: 'intermediate' },
+  { id: 'ar-c079', target: 'أَحْتاجُ إلى ثُلُثِ الكَمِّيّةِ فَقَط', english: 'I only need a third of the amount', blankedWord: 'ثُلُثِ', blankedReading: 'thuluth', frequencyRank: 300, difficulty: 'intermediate' },
+  { id: 'ar-c080', target: 'تَبادَلَ الزَّعِيمانِ وُجْهاتِ النَّظَر', english: 'The two leaders exchanged points of view', blankedWord: 'تَبادَلَ', blankedReading: 'tabādala', frequencyRank: 300, difficulty: 'intermediate' },
+
+  // ── Advanced (batch 4) ──
+  { id: 'ar-c081', target: 'يُعَدُّ نَهْرُ النِّيلِ أَطْوَلَ أَنْهارِ العالَم', english: 'The Nile is considered the longest river in the world', blankedWord: 'أَطْوَلَ', blankedReading: 'aṭwal', frequencyRank: 300, difficulty: 'advanced' },
+  { id: 'ar-c082', target: 'أَسْهَمَت الحَضارةُ العَرَبِيّةُ في تَقَدُّمِ العِلْم', english: 'Arab civilization contributed to the advance of science', blankedWord: 'الحَضارةُ', blankedReading: 'al-ḥaḍāra', frequencyRank: 273, difficulty: 'advanced' },
+  { id: 'ar-c083', target: 'تُواجِهُ المِنْطَقةُ تَحَدِّياتٍ مُناخيّةً كَبِيرة', english: 'The region faces major climate challenges', blankedWord: 'تُواجِهُ', blankedReading: 'tuwājihu', frequencyRank: 300, difficulty: 'advanced' },
+  { id: 'ar-c084', target: 'مِن واجِبِنا أن نَنْقُلَ التُّراثَ لِلأجْيال', english: 'It is our duty to pass on heritage to the generations', blankedWord: 'لِلأجْيال', blankedReading: 'li-l-ajyāl', frequencyRank: 300, difficulty: 'advanced' },
+  { id: 'ar-c085', target: 'كُلَّما زادَ العِلْمُ، اتَّسَعَت المَسْؤُوليّة', english: 'The more knowledge grows, the greater the responsibility', blankedWord: 'اتَّسَعَت', blankedReading: 'ittasaʿat', frequencyRank: 300, difficulty: 'advanced' },
+
+  // ── Beginner (batch 5) ──
+  { id: 'ar-c086', target: 'كَتَبْتُ اسْمي بِالهَمْزة', english: 'I wrote my name with a hamza', blankedWord: 'الهَمْزة', blankedReading: 'al-hamza', frequencyRank: 300, difficulty: 'beginner' },
+  { id: 'ar-c087', target: 'المَدْرَسةُ قَرِيبةٌ مِن البَيْت', english: 'The school is near the house', blankedWord: 'المَدْرَسةُ', blankedReading: 'al-madrasa', frequencyRank: 95, difficulty: 'beginner' },
+  { id: 'ar-c088', target: 'أُحِبُّ القَهْوةَ بِدُونِ سُكَّر', english: 'I like coffee without sugar', blankedWord: 'بِدُونِ', blankedReading: 'bidūni', frequencyRank: 51, difficulty: 'beginner' },
+  { id: 'ar-c089', target: 'الشَّمْسُ تُشْرِقُ مِن الشَّرْق', english: 'The sun rises from the east', blankedWord: 'تُشْرِقُ', blankedReading: 'tushriqu', frequencyRank: 227, difficulty: 'beginner' },
+
+  // ── Intermediate (batch 5) ──
+  { id: 'ar-c090', target: 'تُكْتَبُ الهَمْزةُ على الياء أحْيانًا', english: 'The hamza is sometimes written on a yāʾ', blankedWord: 'تُكْتَبُ', blankedReading: 'tuktabu', frequencyRank: 167, difficulty: 'intermediate' },
+  { id: 'ar-c091', target: 'يُسَمّى هذا الحَرْفُ "حَرْفًا شَمْسيًّا"', english: 'This letter is called a "sun letter"', blankedWord: 'شَمْسيًّا', blankedReading: 'shamsiyyan', frequencyRank: 300, difficulty: 'intermediate' },
+  { id: 'ar-c092', target: 'يَخْتَلِفُ النُّطْقُ مِن لَهْجةٍ إلى أُخْرى', english: 'Pronunciation differs from one dialect to another', blankedWord: 'لَهْجةٍ', blankedReading: 'lahja', frequencyRank: 300, difficulty: 'intermediate' },
+  { id: 'ar-c093', target: 'مِن المُهِمِّ احْتِرامُ آدابِ الحِوار', english: 'It is important to respect the etiquette of dialogue', blankedWord: 'آدابِ', blankedReading: 'ādāb', frequencyRank: 300, difficulty: 'intermediate' },
+
+  // ── Advanced (batch 5) ──
+  { id: 'ar-c094', target: 'تَحْتَوي العَرَبِيّةُ على كَلِماتٍ كَثِيرةٍ مُعَرَّبة', english: 'Arabic contains many Arabized (loan) words', blankedWord: 'مُعَرَّبة', blankedReading: 'muʿarraba', frequencyRank: 300, difficulty: 'advanced' },
+  { id: 'ar-c095', target: 'يُفَضِّلُ البَعْضُ اسْتِخْدامَ اللُّغةِ الرَّسْميّة', english: 'Some prefer using the formal language', blankedWord: 'الرَّسْميّة', blankedReading: 'ar-rasmiyya', frequencyRank: 300, difficulty: 'advanced' },
+  { id: 'ar-c096', target: 'لا تَقِلُّ اللَّهَجاتُ أَهَمّيّةً عَن الفُصْحى', english: 'Dialects are no less important than the standard', blankedWord: 'أَهَمّيّةً', blankedReading: 'ahammiyyatan', frequencyRank: 293, difficulty: 'advanced' },
+  { id: 'ar-c097', target: 'يَنْصَحُ الخُبَراءُ بِالقِراءةِ اليَوْميّة', english: 'Experts advise daily reading', blankedWord: 'يَنْصَحُ', blankedReading: 'yanṣaḥu', frequencyRank: 300, difficulty: 'advanced' },
+
+  // ── Passive & participles (batch 6) ──
+  { id: 'ar-c098', target: 'كُتِبَ هذا الكِتابُ قَبْلَ مِئةِ عام', english: 'This book was written a hundred years ago', blankedWord: 'كُتِبَ', blankedReading: 'kutiba', frequencyRank: 167, difficulty: 'intermediate' },
+  { id: 'ar-c099', target: 'البابُ مَفْتُوحٌ، تَفَضَّل بِالدُّخُول', english: 'The door is open, please come in', blankedWord: 'مَفْتُوحٌ', blankedReading: 'maftūḥ', frequencyRank: 195, difficulty: 'beginner' },
+  { id: 'ar-c100', target: 'الرِّسالةُ مَكْتُوبةٌ بِخَطٍّ جَمِيل', english: 'The letter is written in beautiful handwriting', blankedWord: 'مَكْتُوبةٌ', blankedReading: 'maktūba', frequencyRank: 167, difficulty: 'beginner' },
+  { id: 'ar-c101', target: 'الكاتِبُ مَعْرُوفٌ في العالَمِ العَرَبيّ', english: 'The writer is well-known in the Arab world', blankedWord: 'الكاتِبُ', blankedReading: 'al-kātib', frequencyRank: 167, difficulty: 'intermediate' },
+  { id: 'ar-c102', target: 'يُسْتَخْدَمُ الحاسُوبُ في كُلِّ مَكان', english: 'The computer is used everywhere', blankedWord: 'يُسْتَخْدَمُ', blankedReading: 'yustakhdamu', frequencyRank: 241, difficulty: 'intermediate' },
+  { id: 'ar-c103', target: 'قِيلَ إنَّ الطَّقْسَ سَيَتَحَسَّن', english: 'It was said that the weather would improve', blankedWord: 'قِيلَ', blankedReading: 'qīla', frequencyRank: 25, difficulty: 'intermediate' },
+  { id: 'ar-c104', target: 'اللاعِبُونَ مُتَعَبُونَ بَعْدَ المُباراة', english: 'The players are tired after the match', blankedWord: 'مُتَعَبُونَ', blankedReading: 'mutʿabūn', frequencyRank: 300, difficulty: 'intermediate' },
+  { id: 'ar-c105', target: 'كانَ المَشْرُوعُ مَدْعُومًا مِن الحُكُومة', english: 'The project was supported by the government', blankedWord: 'مَدْعُومًا', blankedReading: 'madʿūman', frequencyRank: 300, difficulty: 'advanced' },
+  { id: 'ar-c106', target: 'المَدِينةُ مُزْدَحِمةٌ في ساعاتِ الذِّرْوة', english: 'The city is crowded during rush hours', blankedWord: 'مُزْدَحِمةٌ', blankedReading: 'muzdaḥima', frequencyRank: 300, difficulty: 'advanced' },
+  { id: 'ar-c107', target: 'تُعْقَدُ الاجْتِماعاتُ كُلَّ يَوْمِ اثْنَيْن', english: 'The meetings are held every Monday', blankedWord: 'تُعْقَدُ', blankedReading: 'tuʿqadu', frequencyRank: 300, difficulty: 'advanced' },
+
+  // ── Batch 7 ──
+  { id: 'ar-c108', target: 'أُفَضِّلُ الطَّعامَ المَنْزِليَّ على المَطاعِم', english: 'I prefer home food to restaurants', blankedWord: 'أُفَضِّلُ', blankedReading: 'ufaḍḍilu', frequencyRank: 300, difficulty: 'beginner' },
+  { id: 'ar-c109', target: 'تَقَعُ مَدِينةُ مَرّاكُش في المَغْرِب', english: 'The city of Marrakech is in Morocco', blankedWord: 'مَرّاكُش', blankedReading: 'marrākush', frequencyRank: 300, difficulty: 'beginner' },
+  { id: 'ar-c110', target: 'يُذاعُ نَشْرةُ الأخْبارِ في الثّامِنة', english: 'The news bulletin is broadcast at eight', blankedWord: 'الأخْبارِ', blankedReading: 'al-akhbār', frequencyRank: 277, difficulty: 'intermediate' },
+  { id: 'ar-c111', target: 'أَشْعُرُ بِالبَرْدِ، أَغْلِقِ النّافِذة', english: 'I feel cold, close the window', blankedWord: 'أَغْلِقِ', blankedReading: 'aghliqi', frequencyRank: 196, difficulty: 'beginner' },
+  { id: 'ar-c112', target: 'يُعَدُّ ابْنُ خَلْدُونَ رائِدَ عِلْمِ الاجْتِماع', english: 'Ibn Khaldun is considered the pioneer of sociology', blankedWord: 'رائِدَ', blankedReading: 'rāʾid', frequencyRank: 300, difficulty: 'advanced' },
+  { id: 'ar-c113', target: 'المُساوَمةُ عادةٌ شائِعةٌ في الأسْواقِ القَدِيمة', english: 'Bargaining is a common custom in old markets', blankedWord: 'المُساوَمةُ', blankedReading: 'al-musāwama', frequencyRank: 300, difficulty: 'advanced' },
+  { id: 'ar-c114', target: 'تَتَغَيَّرُ اللُّغةُ مَع مُرُورِ الزَّمَن', english: 'Language changes with the passing of time', blankedWord: 'تَتَغَيَّرُ', blankedReading: 'tataghayyaru', frequencyRank: 300, difficulty: 'intermediate' },
+  { id: 'ar-c115', target: 'حَجَزْتُ غُرْفةً تُطِلُّ على البَحْر', english: 'I booked a room overlooking the sea', blankedWord: 'تُطِلُّ', blankedReading: 'tuṭillu', frequencyRank: 300, difficulty: 'intermediate' },
+
+  // ── Moods (batch 8) ──
+  { id: 'ar-c116', target: 'يَجِبُ أن نَدْرُسَ لِلامْتِحان', english: 'We must study for the exam', blankedWord: 'نَدْرُسَ', blankedReading: 'nadrusa', frequencyRank: 174, difficulty: 'intermediate' },
+  { id: 'ar-c117', target: 'لم أَذْهَبْ إلى العَمَلِ أمْس', english: 'I did not go to work yesterday', blankedWord: 'أَذْهَبْ', blankedReading: 'adhhab', frequencyRank: 61, difficulty: 'intermediate' },
+  { id: 'ar-c118', target: 'أَدْرُسُ العَرَبِيّةَ لِكَي أَفْهَمَ الأخْبار', english: 'I study Arabic so that I understand the news', blankedWord: 'أَفْهَمَ', blankedReading: 'afhama', frequencyRank: 173, difficulty: 'intermediate' },
+  { id: 'ar-c119', target: 'لن أَنْسى مَعْرُوفَك أبَدًا', english: 'I will never forget your kindness', blankedWord: 'أَنْسى', blankedReading: 'ansā', frequencyRank: 173, difficulty: 'intermediate' },
+  { id: 'ar-c120', target: 'لم يَقُلْ لي الحَقِيقةَ كامِلة', english: 'He did not tell me the whole truth', blankedWord: 'يَقُلْ', blankedReading: 'yaqul', frequencyRank: 25, difficulty: 'advanced' },
+  { id: 'ar-c121', target: 'اِجْتَهِدْ كَي تَنالَ ما تُرِيد', english: 'Work hard so that you get what you want', blankedWord: 'تَنالَ', blankedReading: 'tanāla', frequencyRank: 300, difficulty: 'advanced' },
+
+  // ── Batch 9 ──
+  { id: 'ar-c122', target: 'المِفْتاحُ فَوْقَ الطّاوِلة', english: 'The key is on top of the table', blankedWord: 'فَوْقَ', blankedReading: 'fawqa', frequencyRank: 300, difficulty: 'beginner' },
+  { id: 'ar-c123', target: 'أَسْتَطِيعُ أن أَتَكَلَّمَ ثَلاثَ لُغات', english: 'I can speak three languages', blankedWord: 'أَسْتَطِيعُ', blankedReading: 'astaṭīʿu', frequencyRank: 191, difficulty: 'intermediate' },
+  { id: 'ar-c124', target: 'يَجِبُ أن تَحْجِزَ المَوْعِدَ بِالهاتِف', english: 'You must book the appointment by phone', blankedWord: 'تَحْجِزَ', blankedReading: 'taḥjiza', frequencyRank: 300, difficulty: 'intermediate' },
+  { id: 'ar-c125', target: 'تَشْتَهِرُ الواحةُ بِنَخِيلِها', english: 'The oasis is famous for its palm trees', blankedWord: 'الواحةُ', blankedReading: 'al-wāḥa', frequencyRank: 300, difficulty: 'intermediate' },
+  { id: 'ar-c126', target: 'يُعَدُّ الخُوارِزْميُّ أبا الجَبْر', english: 'Al-Khwarizmi is regarded as the father of algebra', blankedWord: 'الجَبْر', blankedReading: 'al-jabr', frequencyRank: 300, difficulty: 'advanced' },
+  { id: 'ar-c127', target: 'قال إنَّه لا يُمْكِنُه الحُضُور', english: 'He said that he could not attend', blankedWord: 'يُمْكِنُه', blankedReading: 'yumkinuhu', frequencyRank: 250, difficulty: 'advanced' },
+
+  // ── Batch 5 ──
+  { id: 'ar-c128', target: 'القِطّة تَشْرَبُ الحَلِيب', english: 'The cat drinks the milk', blankedWord: 'الحَلِيب', blankedReading: 'al-ḥalīb', frequencyRank: 300, difficulty: 'beginner' },
+  { id: 'ar-c129', target: 'الشَّمْس مُشْرِقة اليَوْم', english: 'The sun is shining today', blankedWord: 'الشَّمْس', blankedReading: 'ash-shams', frequencyRank: 120, difficulty: 'beginner' },
+  { id: 'ar-c130', target: 'نَأْكُلُ في المَطْعَم', english: 'We eat at the restaurant', blankedWord: 'المَطْعَم', blankedReading: 'al-maṭʿam', frequencyRank: 210, difficulty: 'beginner' },
+  { id: 'ar-c131', target: 'هذا قَلَمي الجَدِيد', english: 'This is my new pen', blankedWord: 'قَلَمي', blankedReading: 'qalamī', frequencyRank: 240, difficulty: 'beginner' },
+  { id: 'ar-c132', target: 'أنا مُتْعَب قَلِيلًا', english: 'I am a little tired', blankedWord: 'مُتْعَب', blankedReading: 'mutʿab', frequencyRank: 260, difficulty: 'beginner' },
+  { id: 'ar-c133', target: 'يَجِبُ أن نَدْرُسَ كُلَّ يَوْم', english: 'We must study every day', blankedWord: 'نَدْرُسَ', blankedReading: 'nadrusa', frequencyRank: 175, difficulty: 'intermediate' },
+  { id: 'ar-c134', target: 'سافَرْتُ إلى المَغْرِب العام الماضي', english: 'I traveled to Morocco last year', blankedWord: 'سافَرْتُ', blankedReading: 'sāfartu', frequencyRank: 205, difficulty: 'intermediate' },
+  { id: 'ar-c135', target: 'الطَّعام لَذِيذ رَغْمَ بَساطَتِه', english: 'The food is delicious despite its simplicity', blankedWord: 'رَغْمَ', blankedReading: 'raghma', frequencyRank: 160, difficulty: 'intermediate' },
+  { id: 'ar-c136', target: 'أشْعُرُ بِالسَّعادة عِنْدَما أقْرَأ', english: 'I feel happy when I read', blankedWord: 'عِنْدَما', blankedReading: 'ʿindamā', frequencyRank: 140, difficulty: 'intermediate' },
+  { id: 'ar-c137', target: 'اِشْتَرَيْتُ هَدِيّة لِصَدِيقي', english: 'I bought a gift for my friend', blankedWord: 'هَدِيّة', blankedReading: 'hadiyya', frequencyRank: 230, difficulty: 'intermediate' },
+  { id: 'ar-c138', target: 'لَوْلا الماء لَما كانَتِ الحَياة', english: 'Were it not for water, there would be no life', blankedWord: 'لَوْلا', blankedReading: 'lawlā', frequencyRank: 320, difficulty: 'advanced' },
+  { id: 'ar-c139', target: 'كُلَّما اجْتَهَدْتَ ازْدادَ نَجاحُك', english: 'The more you strive, the more your success increases', blankedWord: 'كُلَّما', blankedReading: 'kullamā', frequencyRank: 300, difficulty: 'advanced' },
+  { id: 'ar-c140', target: 'يُعَدُّ التَّعَلُّم عَمَلِيّةً مُسْتَمِرّة', english: 'Learning is considered a continuous process', blankedWord: 'مُسْتَمِرّة', blankedReading: 'mustamirra', frequencyRank: 400, difficulty: 'advanced' },
+  { id: 'ar-c141', target: 'رَغْمَ الصُّعُوبات واصَلَ السَّعْيَ نَحْوَ هَدَفِه', english: 'Despite difficulties, he continued striving toward his goal', blankedWord: 'واصَلَ', blankedReading: 'wāṣala', frequencyRank: 380, difficulty: 'advanced' },
+  { id: 'ar-c142', target: 'إنَّ الصَّبْرَ مِفْتاحُ الفَرَج', english: 'Indeed, patience is the key to relief', blankedWord: 'الصَّبْرَ', blankedReading: 'aṣ-ṣabra', frequencyRank: 350, difficulty: 'advanced' },
+];

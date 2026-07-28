@@ -1,0 +1,183 @@
+{
+  "id": "travel-airport",
+  "words": [
+    {
+      "word": "سَفَرٌ",
+      "reading": "safarun",
+      "meaning": "travel",
+      "example": "سَفَرٌ طَوِيلٌ يَحْتَاجُ إِلَى خُطَّةٍ.",
+      "exampleMeaning": "Long travel needs a plan."
+    },
+    {
+      "word": "جَوَازُ سَفَرٍ",
+      "reading": "jawāzu safarin",
+      "meaning": "passport",
+      "example": "جَوَازُ سَفَرٍ جَدِيدٌ فِي حَقِيبَتِي.",
+      "exampleMeaning": "A new passport is in my bag."
+    },
+    {
+      "word": "تَأْشِيرَةٌ",
+      "reading": "taʾshīratun",
+      "meaning": "visa",
+      "example": "تَأْشِيرَةٌ صَالِحَةٌ ضَرُورِيَّةٌ.",
+      "exampleMeaning": "A valid visa is necessary."
+    },
+    {
+      "word": "حَقِيبَةُ سَفَرٍ",
+      "reading": "ḥaqībatu safarin",
+      "meaning": "suitcase",
+      "example": "حَقِيبَةُ سَفَرٍ كَبِيرَةٌ مَعِي.",
+      "exampleMeaning": "A large suitcase is with me."
+    },
+    {
+      "word": "مَطَارٌ",
+      "reading": "maṭārun",
+      "meaning": "airport",
+      "example": "الْمَطَارُ مُزْدَحِمٌ صَبَاحًا.",
+      "exampleMeaning": "The airport is crowded in the morning."
+    },
+    {
+      "word": "بَوَّابَةٌ",
+      "reading": "bawwābatun",
+      "meaning": "gate",
+      "example": "الْبَوَّابَةُ رَقْمُ خَمْسَةٍ.",
+      "exampleMeaning": "The gate is number five."
+    },
+    {
+      "word": "رِحْلَةٌ",
+      "reading": "riḥlatun",
+      "meaning": "flight / trip",
+      "example": "الرِّحْلَةُ إِلَى عَمَّانَ.",
+      "exampleMeaning": "The flight is to Amman."
+    },
+    {
+      "word": "طَائِرَةٌ",
+      "reading": "ṭāʾiratun",
+      "meaning": "airplane",
+      "example": "الطَّائِرَةُ جَاهِزَةٌ.",
+      "exampleMeaning": "The airplane is ready."
+    },
+    {
+      "word": "تَذْكِرَةٌ",
+      "reading": "tadhkiratun",
+      "meaning": "ticket",
+      "example": "التَّذْكِرَةُ إِلِكْتُرُونِيَّةٌ.",
+      "exampleMeaning": "The ticket is electronic."
+    },
+    {
+      "word": "جَمَارِكُ",
+      "reading": "jamāriku",
+      "meaning": "customs",
+      "example": "الْجَمَارِكُ بَعْدَ الْحَقَائِبِ.",
+      "exampleMeaning": "Customs is after the bags."
+    },
+    {
+      "word": "أَمْتِعَةٌ",
+      "reading": "ʾamtiʿatun",
+      "meaning": "luggage",
+      "example": "الْأَمْتِعَةُ ثَقِيلَةٌ.",
+      "exampleMeaning": "The luggage is heavy."
+    },
+    {
+      "word": "فُنْدُقٌ",
+      "reading": "funduqun",
+      "meaning": "hotel",
+      "example": "الْفُنْدُقُ قَرِيبٌ مِنَ الْبَحْرِ.",
+      "exampleMeaning": "The hotel is near the sea."
+    },
+    {
+      "word": "حَجْزٌ",
+      "reading": "ḥajzun",
+      "meaning": "reservation",
+      "example": "الْحَجْزُ مُؤَكَّدٌ.",
+      "exampleMeaning": "The reservation is confirmed."
+    },
+    {
+      "word": "خَرِيطَةٌ",
+      "reading": "kharīṭatun",
+      "meaning": "map",
+      "example": "الْخَرِيطَةُ تُسَاعِدُ السَّائِحَ.",
+      "exampleMeaning": "The map helps the tourist."
+    },
+    {
+      "word": "سَائِحٌ",
+      "reading": "sāʾiḥun",
+      "meaning": "tourist",
+      "example": "السَّائِحُ يَسْأَلُ عَنِ الطَّرِيقِ.",
+      "exampleMeaning": "The tourist asks about the road."
+    },
+    {
+      "word": "دَلِيلٌ",
+      "reading": "dalīlun",
+      "meaning": "guide",
+      "example": "الدَّلِيلُ يَشْرَحُ تَارِيخَ الْمَدِينَةِ.",
+      "exampleMeaning": "The guide explains the city’s history."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "___ طَوِيلٌ يَحْتَاجُ إِلَى خُطَّةٍ.",
+          "answer": "سَفَرٌ",
+          "hint": "travel"
+        },
+        {
+          "sentence": "___ جَدِيدٌ فِي حَقِيبَتِي.",
+          "answer": "جَوَازُ سَفَرٍ",
+          "hint": "passport"
+        },
+        {
+          "sentence": "___ صَالِحَةٌ ضَرُورِيَّةٌ.",
+          "answer": "تَأْشِيرَةٌ",
+          "hint": "visa"
+        },
+        {
+          "sentence": "___ كَبِيرَةٌ مَعِي.",
+          "answer": "حَقِيبَةُ سَفَرٍ",
+          "hint": "suitcase"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "items": [
+        {
+          "question": "What does ‘سَفَرٌ’ mean?",
+          "options": [
+            "passport",
+            "travel",
+            "visa",
+            "suitcase"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What does ‘جَوَازُ سَفَرٍ’ mean?",
+          "options": [
+            "visa",
+            "passport",
+            "suitcase",
+            "airport"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What does ‘تَأْشِيرَةٌ’ mean?",
+          "options": [
+            "suitcase",
+            "visa",
+            "airport",
+            "gate"
+          ],
+          "answer": 1
+        }
+      ]
+    }
+  ]
+}

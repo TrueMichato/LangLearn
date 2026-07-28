@@ -1,0 +1,159 @@
+{
+  "id": "mental-health-counseling",
+  "words": [
+    {
+      "word": "صِحَّةٌ نَفْسِيَّةٌ",
+      "reading": "ṣiḥḥatun nafsiyyatun",
+      "meaning": "mental health",
+      "example": "تَحْتَاجُ الصِّحَّةُ النَّفْسِيَّةُ إِلَى عِنَايَةٍ مُنْتَظِمَةٍ.",
+      "exampleMeaning": "Mental health needs regular care."
+    },
+    {
+      "word": "قَلَقٌ",
+      "reading": "qalaqun",
+      "meaning": "anxiety",
+      "example": "يَزْدَادُ الْقَلَقُ قَبْلَ الِامْتِحَانِ أَحْيَانًا.",
+      "exampleMeaning": "Anxiety sometimes increases before an exam."
+    },
+    {
+      "word": "تَوَتُّرٌ",
+      "reading": "tawatturun",
+      "meaning": "stress / tension",
+      "example": "يُسَبِّبُ ضَغْطُ الْعَمَلِ تَوَتُّرًا شَدِيدًا.",
+      "exampleMeaning": "Work pressure causes severe stress."
+    },
+    {
+      "word": "اِكْتِئَابٌ",
+      "reading": "iktiʾābun",
+      "meaning": "depression",
+      "example": "يَتَطَلَّبُ الِاكْتِئَابُ دَعْمًا مُتَخَصِّصًا.",
+      "exampleMeaning": "Depression requires specialized support."
+    },
+    {
+      "word": "مُرْشِدٌ نَفْسِيٌّ",
+      "reading": "murshidun nafsiyyun",
+      "meaning": "counselor",
+      "example": "يَسْتَمِعُ الْمُرْشِدُ النَّفْسِيُّ بِاهْتِمَامٍ.",
+      "exampleMeaning": "The counselor listens attentively."
+    },
+    {
+      "word": "جَلْسَةٌ عِلَاجِيَّةٌ",
+      "reading": "jalsatun ʿilājiyyatun",
+      "meaning": "therapy session",
+      "example": "حَدَّدَتْ جَلْسَةً عِلَاجِيَّةً لِلْأُسْبُوعِ الْقَادِمِ.",
+      "exampleMeaning": "She scheduled a therapy session for next week."
+    },
+    {
+      "word": "دَعْمٌ",
+      "reading": "daʿmun",
+      "meaning": "support",
+      "example": "يُخَفِّفُ دَعْمُ الْأَصْدِقَاءِ الشُّعُورَ بِالْوَحْدَةِ.",
+      "exampleMeaning": "Support from friends eases the feeling of loneliness."
+    },
+    {
+      "word": "تَأَمُّلٌ",
+      "reading": "taʾammulun",
+      "meaning": "meditation",
+      "example": "يُسَاعِدُ التَّأَمُّلُ عَلَى تَهْدِئَةِ الْجَسَدِ.",
+      "exampleMeaning": "Meditation helps calm the body."
+    },
+    {
+      "word": "تَنَفُّسٌ عَمِيقٌ",
+      "reading": "tanaffusun ʿamīqun",
+      "meaning": "deep breathing",
+      "example": "جَرَّبَ تَنَفُّسًا عَمِيقًا عِنْدَ التَّوَتُّرِ.",
+      "exampleMeaning": "He tried deep breathing during stress."
+    },
+    {
+      "word": "رَاحَةٌ",
+      "reading": "rāḥatun",
+      "meaning": "rest",
+      "example": "تَمْنَحُ الرَّاحَةُ الْعَقْلَ فُرْصَةً لِلتَّعَافِي.",
+      "exampleMeaning": "Rest gives the mind a chance to recover."
+    },
+    {
+      "word": "حُدُودٌ شَخْصِيَّةٌ",
+      "reading": "ḥudūdun shakhṣiyyatun",
+      "meaning": "personal boundaries",
+      "example": "تَحْمِي الْحُدُودُ الشَّخْصِيَّةُ الْوَقْتَ وَالطَّاقَةَ.",
+      "exampleMeaning": "Personal boundaries protect time and energy."
+    },
+    {
+      "word": "ثِقَةٌ",
+      "reading": "thiqātun",
+      "meaning": "trust",
+      "example": "تُبْنَى الثِّقَةُ بِالْحِوَارِ الصَّادِقِ.",
+      "exampleMeaning": "Trust is built through honest dialogue."
+    },
+    {
+      "word": "اِحْتِرَاقٌ",
+      "reading": "iḥtirāqun",
+      "meaning": "burnout",
+      "example": "يَظْهَرُ الِاحْتِرَاقُ بَعْدَ إِرْهَاقٍ طَوِيلٍ.",
+      "exampleMeaning": "Burnout appears after long exhaustion."
+    },
+    {
+      "word": "تَعَافٍ",
+      "reading": "taʿāfin",
+      "meaning": "recovery",
+      "example": "يَحْتَاجُ التَّعَافِي إِلَى صَبْرٍ وَخُطُوَاتٍ صَغِيرَةٍ.",
+      "exampleMeaning": "Recovery needs patience and small steps."
+    },
+    {
+      "word": "مُسَاعَدَةٌ",
+      "reading": "musāʿadatun",
+      "meaning": "help / assistance",
+      "example": "طَلَبُ الْمُسَاعَدَةِ عَلامَةُ قُوَّةٍ.",
+      "exampleMeaning": "Asking for help is a sign of strength."
+    },
+    {
+      "word": "وَعْيٌ ذَاتِيٌّ",
+      "reading": "waʿyun dhātiyyun",
+      "meaning": "self-awareness",
+      "example": "يُسَاعِدُ الْوَعْيُ الذَّاتِيُّ عَلَى فَهْمِ الْمَشَاعِرِ.",
+      "exampleMeaning": "Self-awareness helps understand feelings."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "تَحْتَاجُ ___ إِلَى عِنَايَةٍ مُنْتَظِمَةٍ.",
+          "answer": "صِحَّةٌ نَفْسِيَّةٌ",
+          "hint": "mental health"
+        },
+        {
+          "sentence": "يَزْدَادُ ___ قَبْلَ الِامْتِحَانِ أَحْيَانًا.",
+          "answer": "قَلَقٌ",
+          "hint": "anxiety"
+        },
+        {
+          "sentence": "يَسْتَمِعُ ___ بِاهْتِمَامٍ.",
+          "answer": "مُرْشِدٌ نَفْسِيٌّ",
+          "hint": "counselor"
+        },
+        {
+          "sentence": "تَحْمِي ___ الْوَقْتَ وَالطَّاقَةَ.",
+          "answer": "حُدُودٌ شَخْصِيَّةٌ",
+          "hint": "personal boundaries"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "What does ‘تَنَفُّسٌ عَمِيقٌ’ mean?",
+      "options": [
+        "deep breathing",
+        "burnout",
+        "trust",
+        "therapy session"
+      ],
+      "answer": 0
+    }
+  ]
+}
