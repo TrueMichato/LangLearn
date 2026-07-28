@@ -43,15 +43,15 @@ export default function TypingExercise({ items, onComplete }: Props) {
 
   return (
     <div className="space-y-4">
-      <h3 className="text-lg font-semibold text-gray-800 dark:text-gray-100 text-center">
+      <h3 className="text-lg font-semibold text-slate-800 dark:text-slate-100 text-center">
         Type the Answer ({idx + 1}/{items.length})
       </h3>
 
-      <div className="bg-white dark:bg-gray-800 rounded-2xl shadow p-5 text-center space-y-4">
-        <p className="text-xl text-gray-700 dark:text-gray-200">{item.prompt}</p>
+      <div className="bg-white dark:bg-slate-800 rounded-2xl shadow p-5 text-center space-y-4">
+        <p className="text-xl text-slate-700 dark:text-slate-200">{item.prompt}</p>
 
         {showHint && item.hint && (
-          <p className="text-sm text-indigo-500 dark:text-indigo-400">
+          <p className="text-sm text-indigo-600 dark:text-indigo-400">
             Hint: {item.hint}
           </p>
         )}
@@ -69,12 +69,12 @@ export default function TypingExercise({ items, onComplete }: Props) {
               ? 'border-green-500 bg-green-50 dark:bg-green-900/20 text-green-700 dark:text-green-300'
               : feedback === 'wrong'
                 ? 'border-red-500 bg-red-50 dark:bg-red-900/20 text-red-700 dark:text-red-300'
-                : 'border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 text-gray-800 dark:text-gray-100 focus:border-indigo-500'
+                : 'border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-700 text-slate-800 dark:text-slate-100 focus:border-indigo-500'
           }`}
         />
 
         {feedback === 'wrong' && (
-          <p className="text-sm text-gray-600 dark:text-gray-300">
+          <p className="text-sm text-slate-600 dark:text-slate-300">
             Correct answer: <span className="font-bold text-indigo-600 dark:text-indigo-400">{correctAnswer}</span>
           </p>
         )}
@@ -88,7 +88,7 @@ export default function TypingExercise({ items, onComplete }: Props) {
         {!feedback && !showHint && item.hint && (
           <button
             onClick={() => setShowHint(true)}
-            className="flex-1 py-3 rounded-xl bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300 font-medium hover:bg-gray-200 dark:hover:bg-gray-600 transition-colors min-h-[44px]"
+            className="flex-1 py-3 rounded-xl bg-slate-100 dark:bg-slate-700 text-slate-600 dark:text-slate-300 font-medium hover:bg-slate-200 dark:hover:bg-slate-600 transition-colors min-h-[44px]"
           >
             💡 Show Hint
           </button>

@@ -19,14 +19,14 @@ export default function DailyChallengeCard() {
 
   if (complete) {
     return (
-      <div className="bg-white dark:bg-gray-800 rounded-2xl shadow p-4 mb-6">
+      <div className="bg-white dark:bg-slate-800 rounded-2xl shadow p-4 mb-6">
         <div className="flex items-center gap-3">
           <span className="text-2xl">✅</span>
           <div>
-            <p className="font-semibold text-gray-800 dark:text-gray-100">
+            <p className="font-semibold text-slate-800 dark:text-slate-100">
               Daily Challenge Complete!
             </p>
-            <p className="text-sm text-gray-500 dark:text-gray-400">
+            <p className="text-sm text-slate-500 dark:text-slate-400">
               Come back tomorrow for a new challenge.
             </p>
           </div>
@@ -36,15 +36,15 @@ export default function DailyChallengeCard() {
   }
 
   return (
-    <div className="bg-white dark:bg-gray-800 rounded-2xl shadow p-4 mb-6">
+    <div className="bg-white dark:bg-slate-800 rounded-2xl shadow p-4 mb-6">
       <div className="flex items-center justify-between">
         <div className="flex items-center gap-3">
           <span className="text-2xl">🎯</span>
           <div>
-            <p className="font-semibold text-gray-800 dark:text-gray-100">
+            <p className="font-semibold text-slate-800 dark:text-slate-100">
               Daily Challenge
             </p>
-            <p className="text-sm text-gray-500 dark:text-gray-400">
+            <p className="text-sm text-slate-500 dark:text-slate-400">
               Complete today's challenge for 1.5× XP!
             </p>
           </div>

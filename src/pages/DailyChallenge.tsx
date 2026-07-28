@@ -150,10 +150,10 @@ export default function DailyChallengePage() {
               <label className="block text-sm font-medium text-slate-600 dark:text-slate-400 mb-1">
                 Language
               </label>
-              <select
+              <select aria-label="Challenge language"
                 value={language}
                 onChange={(e) => setLanguage(e.target.value)}
-                className="w-full px-3 py-2 rounded-lg border border-gray-300 dark:border-white/10 bg-white dark:bg-slate-700 text-slate-800 dark:text-slate-100"
+                className="w-full px-3 py-2 rounded-lg border border-slate-300 dark:border-white/10 bg-white dark:bg-slate-700 text-slate-800 dark:text-slate-100"
               >
                 {activeLanguages.map((l) => (
                   <option key={l} value={l}>
@@ -216,7 +216,7 @@ export default function DailyChallengePage() {
               if (selectedOption === null) {
                 // Not yet answered
                 btnClass +=
-                  'border-gray-200 dark:border-white/10 bg-slate-50 dark:bg-slate-700 text-slate-800 dark:text-slate-100 hover:border-indigo-400 hover:bg-indigo-50 dark:hover:bg-indigo-900/30';
+                  'border-slate-200 dark:border-white/10 bg-slate-50 dark:bg-slate-700 text-slate-800 dark:text-slate-100 hover:border-indigo-400 hover:bg-indigo-50 dark:hover:bg-indigo-900/30';
               } else if (idx === question.correctIndex) {
                 // Correct answer (always show green)
                 btnClass +=
@@ -227,7 +227,7 @@ export default function DailyChallengePage() {
                   'border-red-500 bg-red-100 dark:bg-red-900/50 text-red-800 dark:text-red-200';
               } else {
                 btnClass +=
-                  'border-gray-200 dark:border-white/10 bg-slate-50 dark:bg-slate-700 text-slate-400 dark:text-slate-500';
+                  'border-slate-200 dark:border-white/10 bg-slate-50 dark:bg-slate-700 text-slate-500 dark:text-slate-400';
               }
 
               return (

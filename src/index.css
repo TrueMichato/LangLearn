@@ -12,6 +12,11 @@
   --safe-bottom: env(safe-area-inset-bottom, 0px);
   --nav-height: 5rem;
 
+  /* Focused app column width (phone-first, framed on desktop) */
+  --app-max: 34rem;
+  --frame: 248 250 252;   /* slate-50 — the column the content sits on */
+  --canvas: 226 232 240;  /* slate-200 — ambient backdrop behind the frame */
+
   /* Primary palette */
   --color-primary: 79 70 229;       /* indigo-600 */
   --color-primary-light: 99 102 241; /* indigo-500 */
@@ -34,6 +39,43 @@
   --surface-card: 30 41 59 / 0.9;   /* slate-800/90 */
   --surface-glass: 15 23 42 / 0.8;  /* slate-900/80 */
   --border-color: 255 255 255 / 0.1;
+  --frame: 15 23 42;   /* slate-900 */
+  --canvas: 2 6 23;    /* slate-950 */
+}
+
+/* ── App frame: phone-first column, intentional on desktop ─── */
+.app-canvas {
+  background-color: rgb(var(--canvas));
+  background-image: radial-gradient(
+    130% 55% at 50% 0%,
+    rgb(99 102 241 / 0.14) 0%,
+    transparent 55%
+  );
+  background-attachment: fixed;
+}
+.dark .app-canvas {
+  background-image: radial-gradient(
+    130% 55% at 50% 0%,
+    rgb(99 102 241 / 0.16) 0%,
+    transparent 55%
+  );
+}
+
+.app-frame {
+  width: 100%;
+  max-width: var(--app-max);
+  margin-inline: auto;
+}
+
+@media (min-width: 768px) {
+  .app-frame {
+    background-color: rgb(var(--frame));
+    border-inline: 1px solid rgb(var(--border-color));
+    box-shadow: 0 24px 60px -24px rgb(15 23 42 / 0.28);
+  }
+  .dark .app-frame {
+    box-shadow: 0 24px 60px -20px rgb(0 0 0 / 0.6);
+  }
 }
 
 /* ── Keyframe Animations ──────────────────────────────────── */
@@ -219,6 +261,12 @@
   border-radius: inherit;
 }
 
+/* Global keyboard-focus visibility (low specificity so components can override) */
+:where(a, button, input, select, textarea, summary, [tabindex]:not([tabindex="-1"])):focus-visible {
+  outline: 2px solid rgb(var(--color-primary));
+  outline-offset: 2px;
+}
+
 /* Scroll-triggered fade-in (applied via JS IntersectionObserver) */
 .reveal {
   opacity: 0;
@@ -229,4 +277,20 @@
 .reveal.visible {
   opacity: 1;
   transform: translateY(0);
+}
+
+/* Respect users who prefer reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+  .reveal {
+    opacity: 1;
+    transform: none;
+  }
 }

@@ -254,12 +254,12 @@ export default function CSVImport({ isOpen, onClose, onImportComplete }: CSVImpo
   };
 
   return (
-    <div className="fixed inset-0 z-50 flex items-start justify-center bg-black/50 overflow-y-auto p-4">
-      <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-xl max-w-lg w-full mt-12 sm:mt-20 p-6 relative">
+    <div className="fixed inset-0 z-[60] flex items-start justify-center bg-black/50 overflow-y-auto p-4">
+      <div className="bg-white dark:bg-slate-800 rounded-2xl shadow-xl max-w-lg w-full mt-12 sm:mt-20 p-6 relative">
         {/* Close button */}
         <button
           onClick={handleClose}
-          className="absolute top-4 right-4 text-gray-400 hover:text-gray-600 dark:hover:text-gray-200 min-h-[44px] min-w-[44px] flex items-center justify-center"
+          className="absolute top-4 right-4 text-slate-400 hover:text-slate-600 dark:hover:text-slate-200 min-h-[44px] min-w-[44px] flex items-center justify-center"
           aria-label="Close"
         >
           ✕
@@ -273,7 +273,7 @@ export default function CSVImport({ isOpen, onClose, onImportComplete }: CSVImpo
                 className={`w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold ${
                   step >= s
                     ? 'bg-indigo-600 text-white'
-                    : 'bg-gray-200 dark:bg-gray-700 text-gray-500 dark:text-gray-400'
+                    : 'bg-slate-200 dark:bg-slate-700 text-slate-500 dark:text-slate-400'
                 }`}
               >
                 {step > s ? '✓' : s}
@@ -281,7 +281,7 @@ export default function CSVImport({ isOpen, onClose, onImportComplete }: CSVImpo
               {s < 4 && (
                 <div
                   className={`w-6 h-0.5 ${
-                    step > s ? 'bg-indigo-600' : 'bg-gray-200 dark:bg-gray-700'
+                    step > s ? 'bg-indigo-600' : 'bg-slate-200 dark:bg-slate-700'
                   }`}
                 />
               )}
@@ -289,7 +289,7 @@ export default function CSVImport({ isOpen, onClose, onImportComplete }: CSVImpo
           ))}
         </div>
 
-        <h2 className="text-xl font-bold text-gray-800 dark:text-gray-100 mb-4">
+        <h2 className="text-xl font-bold text-slate-800 dark:text-slate-100 mb-4">
           {step === 1 && 'Import from CSV'}
           {step === 2 && 'Map Columns'}
           {step === 3 && 'Preview Import'}
@@ -306,7 +306,7 @@ export default function CSVImport({ isOpen, onClose, onImportComplete }: CSVImpo
         {step === 1 && (
           <div className="space-y-4">
             <div>
-              <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">
+              <label className="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-1">
                 Upload a file
               </label>
               <input
@@ -314,7 +314,7 @@ export default function CSVImport({ isOpen, onClose, onImportComplete }: CSVImpo
                 type="file"
                 accept=".csv,.tsv,.txt"
                 onChange={handleFile}
-                className="block w-full text-sm text-gray-500 dark:text-gray-400
+                className="block w-full text-sm text-slate-500 dark:text-slate-400
                   file:mr-4 file:py-2 file:px-4 file:rounded-xl file:border-0
                   file:text-sm file:font-medium file:bg-indigo-100 file:text-indigo-700
                   dark:file:bg-indigo-900 dark:file:text-indigo-300
@@ -324,9 +324,9 @@ export default function CSVImport({ isOpen, onClose, onImportComplete }: CSVImpo
             </div>
 
             <div className="flex items-center gap-3">
-              <div className="flex-1 h-px bg-gray-200 dark:bg-gray-700" />
-              <span className="text-sm text-gray-400 dark:text-gray-500">or paste data</span>
-              <div className="flex-1 h-px bg-gray-200 dark:bg-gray-700" />
+              <div className="flex-1 h-px bg-slate-200 dark:bg-slate-700" />
+              <span className="text-sm text-slate-500 dark:text-slate-400">or paste data</span>
+              <div className="flex-1 h-px bg-slate-200 dark:bg-slate-700" />
             </div>
 
             <textarea
@@ -334,7 +334,7 @@ export default function CSVImport({ isOpen, onClose, onImportComplete }: CSVImpo
               onChange={(e) => setPasteText(e.target.value)}
               placeholder={"word,reading,meaning\n食べる,たべる,to eat\n飲む,のむ,to drink"}
               rows={5}
-              className="w-full px-3 py-2 rounded-xl border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 text-gray-800 dark:text-gray-100 text-sm placeholder:text-gray-400 dark:placeholder:text-gray-500 resize-none"
+              className="w-full px-3 py-2 rounded-xl border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-700 text-slate-800 dark:text-slate-100 text-sm placeholder:text-slate-400 dark:placeholder:text-slate-500 resize-none"
             />
 
             <button
@@ -345,7 +345,7 @@ export default function CSVImport({ isOpen, onClose, onImportComplete }: CSVImpo
               Parse Data
             </button>
 
-            <p className="text-xs text-gray-500 dark:text-gray-400">
+            <p className="text-xs text-slate-500 dark:text-slate-400">
               Supports CSV, TSV, and semicolon-delimited files. First row should be headers.
             </p>
           </div>
@@ -356,13 +356,13 @@ export default function CSVImport({ isOpen, onClose, onImportComplete }: CSVImpo
           <div className="space-y-4">
             {/* Language selector */}
             <div>
-              <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">
+              <label className="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-1">
                 Language
               </label>
-              <select
+              <select aria-label="Language"
                 value={language}
                 onChange={(e) => setLanguage(e.target.value)}
-                className="w-full px-3 py-2 rounded-xl border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 text-gray-800 dark:text-gray-100 min-h-[44px]"
+                className="w-full px-3 py-2 rounded-xl border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-700 text-slate-800 dark:text-slate-100 min-h-[44px]"
               >
                 {activeLanguages.map((lang) => (
                   <option key={lang} value={lang}>
@@ -374,18 +374,18 @@ export default function CSVImport({ isOpen, onClose, onImportComplete }: CSVImpo
 
             {/* Column mapping dropdowns */}
             <div className="space-y-2">
-              <label className="block text-sm font-medium text-gray-700 dark:text-gray-300">
+              <label className="block text-sm font-medium text-slate-700 dark:text-slate-300">
                 Map each column
               </label>
               {parsed.headers.map((header, i) => (
                 <div key={i} className="flex items-center gap-2">
-                  <span className="text-sm text-gray-600 dark:text-gray-400 w-28 truncate shrink-0" title={header}>
+                  <span className="text-sm text-slate-600 dark:text-slate-400 w-28 truncate shrink-0" title={header}>
                     {header}
                   </span>
-                  <select
+                  <select aria-label="Map CSV column"
                     value={columnMap[i]}
                     onChange={(e) => setColumnRole(i, e.target.value as ColumnRole)}
-                    className="flex-1 px-2 py-1.5 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 text-gray-800 dark:text-gray-100 text-sm min-h-[44px]"
+                    className="flex-1 px-2 py-1.5 rounded-lg border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-700 text-slate-800 dark:text-slate-100 text-sm min-h-[44px]"
                   >
                     {(Object.entries(roleLabels) as [ColumnRole, string][]).map(([val, label]) => (
                       <option key={val} value={val}>{label}</option>
@@ -397,15 +397,15 @@ export default function CSVImport({ isOpen, onClose, onImportComplete }: CSVImpo
 
             {/* Preview table */}
             <div>
-              <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">
+              <label className="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-1">
                 Preview ({Math.min(previewRows.length, 5)} of {parsed.rows.length} rows)
               </label>
-              <div className="overflow-x-auto rounded-lg border border-gray-200 dark:border-gray-700">
+              <div className="overflow-x-auto rounded-lg border border-slate-200 dark:border-slate-700">
                 <table className="w-full text-xs">
                   <thead>
-                    <tr className="bg-gray-50 dark:bg-gray-900">
+                    <tr className="bg-slate-50 dark:bg-slate-900">
                       {parsed.headers.map((h, i) => (
-                        <th key={i} className="px-2 py-1.5 text-left font-medium text-gray-600 dark:text-gray-400 whitespace-nowrap">
+                        <th key={i} className="px-2 py-1.5 text-left font-medium text-slate-600 dark:text-slate-400 whitespace-nowrap">
                           {h}
                         </th>
                       ))}
@@ -413,9 +413,9 @@ export default function CSVImport({ isOpen, onClose, onImportComplete }: CSVImpo
                   </thead>
                   <tbody>
                     {previewRows.map((row, ri) => (
-                      <tr key={ri} className="border-t border-gray-100 dark:border-gray-700">
+                      <tr key={ri} className="border-t border-slate-100 dark:border-slate-700">
                         {row.map((cell, ci) => (
-                          <td key={ci} className="px-2 py-1.5 text-gray-700 dark:text-gray-300 whitespace-nowrap max-w-[120px] truncate">
+                          <td key={ci} className="px-2 py-1.5 text-slate-700 dark:text-slate-300 whitespace-nowrap max-w-[120px] truncate">
                             {cell}
                           </td>
                         ))}
@@ -429,7 +429,7 @@ export default function CSVImport({ isOpen, onClose, onImportComplete }: CSVImpo
             <div className="flex gap-2">
               <button
                 onClick={() => { reset(); }}
-                className="flex-1 py-2.5 rounded-xl bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-300 font-medium hover:bg-gray-300 dark:hover:bg-gray-600 transition-colors min-h-[44px] press-feedback"
+                className="flex-1 py-2.5 rounded-xl bg-slate-200 dark:bg-slate-700 text-slate-700 dark:text-slate-300 font-medium hover:bg-slate-300 dark:hover:bg-slate-600 transition-colors min-h-[44px] press-feedback"
               >
                 Back
               </button>
@@ -448,27 +448,27 @@ export default function CSVImport({ isOpen, onClose, onImportComplete }: CSVImpo
           <div className="space-y-4">
             <div className="p-4 rounded-xl bg-indigo-50 dark:bg-indigo-900/30 space-y-2">
               <div className="flex justify-between text-sm">
-                <span className="text-gray-700 dark:text-gray-300">Ready to import</span>
+                <span className="text-slate-700 dark:text-slate-300">Ready to import</span>
                 <span className="font-bold text-indigo-700 dark:text-indigo-300">
                   {validCount - dupCount} word{validCount - dupCount !== 1 ? 's' : ''}
                 </span>
               </div>
               {dupCount > 0 && (
                 <div className="flex justify-between text-sm">
-                  <span className="text-gray-700 dark:text-gray-300">Duplicates (will skip)</span>
+                  <span className="text-slate-700 dark:text-slate-300">Duplicates (will skip)</span>
                   <span className="font-bold text-amber-700 dark:text-amber-300">
                     {dupCount} word{dupCount !== 1 ? 's' : ''}
                   </span>
                 </div>
               )}
               <div className="flex justify-between text-sm">
-                <span className="text-gray-700 dark:text-gray-300">Language</span>
-                <span className="font-medium text-gray-800 dark:text-gray-200">
+                <span className="text-slate-700 dark:text-slate-300">Language</span>
+                <span className="font-medium text-slate-800 dark:text-slate-200">
                   {getLanguageLabel(language)}
                 </span>
               </div>
               <div className="flex justify-between text-sm">
-                <span className="text-gray-700 dark:text-gray-300">XP to earn</span>
+                <span className="text-slate-700 dark:text-slate-300">XP to earn</span>
                 <span className="font-bold text-emerald-700 dark:text-emerald-300">
                   +{(validCount - dupCount) * 5} XP
                 </span>
@@ -478,7 +478,7 @@ export default function CSVImport({ isOpen, onClose, onImportComplete }: CSVImpo
             <div className="flex gap-2">
               <button
                 onClick={() => setStep(2)}
-                className="flex-1 py-2.5 rounded-xl bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-300 font-medium hover:bg-gray-300 dark:hover:bg-gray-600 transition-colors min-h-[44px] press-feedback"
+                className="flex-1 py-2.5 rounded-xl bg-slate-200 dark:bg-slate-700 text-slate-700 dark:text-slate-300 font-medium hover:bg-slate-300 dark:hover:bg-slate-600 transition-colors min-h-[44px] press-feedback"
               >
                 Back
               </button>
@@ -498,11 +498,11 @@ export default function CSVImport({ isOpen, onClose, onImportComplete }: CSVImpo
           <div className="space-y-4 text-center">
             <p className="text-5xl">🎉</p>
             <div className="space-y-1">
-              <p className="text-lg font-bold text-gray-800 dark:text-gray-100">
+              <p className="text-lg font-bold text-slate-800 dark:text-slate-100">
                 Imported {importResult.imported} word{importResult.imported !== 1 ? 's' : ''}!
               </p>
               {importResult.skipped > 0 && (
-                <p className="text-sm text-gray-500 dark:text-gray-400">
+                <p className="text-sm text-slate-500 dark:text-slate-400">
                   Skipped {importResult.skipped} duplicate{importResult.skipped !== 1 ? 's' : ''}
                 </p>
               )}

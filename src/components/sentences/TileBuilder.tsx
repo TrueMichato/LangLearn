@@ -68,11 +68,11 @@ export default function TileBuilder({ sentence, language, allSentences, onResult
   return (
     <div className="space-y-5">
       {/* English prompt */}
-      <p className="text-lg font-semibold text-gray-800 dark:text-gray-100 text-center">{sentence.english}</p>
+      <p className="text-lg font-semibold text-slate-800 dark:text-slate-100 text-center">{sentence.english}</p>
 
       {/* Answer area */}
-      <div className={`min-h-[60px] bg-gray-50 dark:bg-gray-800 rounded-xl p-3 flex flex-wrap gap-2 border-2 ${borderClass}`}>
-        {selected.length === 0 && !checked && <span className="text-gray-400 dark:text-gray-500 text-sm italic">Tap tiles to build the sentence…</span>}
+      <div className={`min-h-[60px] bg-slate-50 dark:bg-slate-800 rounded-xl p-3 flex flex-wrap gap-2 border-2 ${borderClass}`}>
+        {selected.length === 0 && !checked && <span className="text-slate-500 dark:text-slate-400 text-sm italic">Tap tiles to build the sentence…</span>}
         {selected.map((word, i) => (
           <button
             key={`${word}-${i}`}
@@ -88,7 +88,7 @@ export default function TileBuilder({ sentence, language, allSentences, onResult
       {checked && (
         <div className={`text-center font-semibold ${isCorrect ? 'text-green-600 dark:text-green-400' : 'text-red-600 dark:text-red-400'}`}>
           {isCorrect ? '✓ Correct!' : `✗ Correct answer: ${sentence.target}`}
-          <p className="text-sm font-normal text-gray-500 dark:text-gray-400 mt-1">{sentence.reading}</p>
+          <p className="text-sm font-normal text-slate-500 dark:text-slate-400 mt-1">{sentence.reading}</p>
         </div>
       )}
 
@@ -99,7 +99,7 @@ export default function TileBuilder({ sentence, language, allSentences, onResult
             key={`${word}-${i}`}
             onClick={() => handleSelect(word, i)}
             disabled={checked}
-            className="bg-white dark:bg-gray-700 border border-gray-300 dark:border-gray-600 rounded-xl px-3 py-2 text-sm font-medium cursor-pointer hover:bg-gray-100 dark:hover:bg-gray-600 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+            className="bg-white dark:bg-slate-700 border border-slate-300 dark:border-slate-600 rounded-xl px-3 py-2 text-sm font-medium cursor-pointer hover:bg-slate-100 dark:hover:bg-slate-600 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
           >
             {word}
           </button>

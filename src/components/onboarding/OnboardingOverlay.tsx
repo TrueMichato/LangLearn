@@ -72,12 +72,12 @@ export default function OnboardingOverlay() {
     if (step < TOTAL_STEPS - 1) setStep(step + 1);
   };
 
-  const gradientHeading = 'text-3xl font-bold bg-gradient-to-r from-indigo-600 to-violet-500 bg-clip-text text-transparent';
+  const gradientHeading = 'text-3xl font-bold text-indigo-600 dark:text-indigo-400';
 
   const steps = [
     // Step 1: Welcome
     <div key="welcome" className="flex flex-col items-center gap-6 text-center">
-      <h1 className="text-4xl font-bold bg-gradient-to-r from-indigo-600 to-violet-500 bg-clip-text text-transparent">
+      <h1 className="text-4xl font-bold text-indigo-600 dark:text-indigo-400">
         Welcome to LangLearn 🎓
       </h1>
       <p className="text-lg text-slate-600 dark:text-slate-300 max-w-md">
@@ -200,13 +200,13 @@ export default function OnboardingOverlay() {
   ];
 
   return (
-    <div className="fixed inset-0 z-[100] bg-gradient-to-br from-indigo-50 via-white to-violet-50 dark:from-slate-950 dark:via-slate-900 dark:to-indigo-950 flex flex-col">
+    <div className="fixed inset-0 z-[100] app-canvas flex flex-col">
       {/* Skip button */}
       <div className="flex justify-end p-4">
         <button
           type="button"
           onClick={completeOnboarding}
-          className="text-sm text-slate-400 dark:text-slate-500 hover:text-slate-600 dark:hover:text-slate-300 transition-colors"
+          className="text-sm text-slate-500 dark:text-slate-400 hover:text-slate-600 dark:hover:text-slate-300 transition-colors"
         >
           Skip
         </button>

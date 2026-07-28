@@ -130,18 +130,18 @@ export default function TranslationPracticePage() {
     return (
       <div className="max-w-lg mx-auto space-y-6">
         <div>
-          <h2 className="text-lg font-semibold text-gray-800 dark:text-gray-100 mb-1">
+          <h2 className="text-lg font-semibold text-slate-800 dark:text-slate-100 mb-1">
             ✍️ Translation Practice
           </h2>
-          <p className="text-sm text-gray-500 dark:text-gray-400">
+          <p className="text-sm text-slate-500 dark:text-slate-400">
             You&rsquo;ll see English sentences. Type the translation in{' '}
             {getLanguageLabel(language)}. Then grade yourself.
           </p>
         </div>
 
         {/* Language */}
-        <div className="bg-white dark:bg-gray-800 rounded-2xl shadow p-4 space-y-3">
-          <label className="block text-sm font-medium text-gray-700 dark:text-gray-300">
+        <div className="bg-white dark:bg-slate-800 rounded-2xl shadow p-4 space-y-3">
+          <label className="block text-sm font-medium text-slate-700 dark:text-slate-300">
             Language
           </label>
           <div className="flex flex-wrap gap-2">
@@ -152,7 +152,7 @@ export default function TranslationPracticePage() {
                 className={`px-4 py-2 rounded-xl text-sm font-medium min-h-[44px] transition-colors ${
                   language === lang
                     ? 'bg-indigo-600 text-white'
-                    : 'bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-600'
+                    : 'bg-slate-100 dark:bg-slate-700 text-slate-700 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-600'
                 }`}
               >
                 {getLanguageLabel(lang)}
@@ -162,8 +162,8 @@ export default function TranslationPracticePage() {
         </div>
 
         {/* Difficulty */}
-        <div className="bg-white dark:bg-gray-800 rounded-2xl shadow p-4 space-y-3">
-          <label className="block text-sm font-medium text-gray-700 dark:text-gray-300">
+        <div className="bg-white dark:bg-slate-800 rounded-2xl shadow p-4 space-y-3">
+          <label className="block text-sm font-medium text-slate-700 dark:text-slate-300">
             Difficulty
           </label>
           <div className="flex flex-wrap gap-2">
@@ -174,7 +174,7 @@ export default function TranslationPracticePage() {
                 className={`px-4 py-2 rounded-xl text-sm font-medium min-h-[44px] capitalize transition-colors ${
                   difficulty === d
                     ? 'bg-indigo-600 text-white'
-                    : 'bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-600'
+                    : 'bg-slate-100 dark:bg-slate-700 text-slate-700 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-600'
                 }`}
               >
                 {d === 'all' ? 'All Levels' : d}
@@ -208,16 +208,16 @@ export default function TranslationPracticePage() {
       <div className="max-w-lg mx-auto space-y-5">
         {/* Header */}
         <div className="flex items-center justify-between">
-          <h2 className="text-lg font-semibold text-gray-800 dark:text-gray-100">
+          <h2 className="text-lg font-semibold text-slate-800 dark:text-slate-100">
             ✍️ Translation
           </h2>
-          <span className="text-sm font-medium text-gray-500 dark:text-gray-400">
+          <span className="text-sm font-medium text-slate-500 dark:text-slate-400">
             {currentIdx + 1}/{sessionSentences.length}
           </span>
         </div>
 
         {/* Progress bar */}
-        <div className="h-2 bg-gray-200 dark:bg-gray-700 rounded-full overflow-hidden">
+        <div className="h-2 bg-slate-200 dark:bg-slate-700 rounded-full overflow-hidden">
           <div
             className="h-full bg-indigo-500 transition-all duration-300 rounded-full"
             style={{ width: `${((currentIdx + (submitted ? 1 : 0)) / sessionSentences.length) * 100}%` }}
@@ -225,22 +225,22 @@ export default function TranslationPracticePage() {
         </div>
 
         {/* English sentence */}
-        <div className="bg-white dark:bg-gray-800 rounded-2xl shadow p-5">
-          <p className="text-xs uppercase tracking-wide text-gray-400 dark:text-gray-500 mb-2">
+        <div className="bg-white dark:bg-slate-800 rounded-2xl shadow p-5">
+          <p className="text-xs text-slate-500 dark:text-slate-400 mb-2">
             Translate to {getLanguageLabel(language)}
           </p>
-          <p className="text-xl font-semibold text-gray-800 dark:text-gray-100 leading-relaxed">
+          <p className="text-xl font-semibold text-slate-800 dark:text-slate-100 leading-relaxed">
             {current.english}
           </p>
           {current.hint && !submitted && (
-            <p className="mt-2 text-xs text-indigo-500 dark:text-indigo-400 italic">
+            <p className="mt-2 text-xs text-indigo-600 dark:text-indigo-400 italic">
               💡 {current.hint}
             </p>
           )}
         </div>
 
         {/* Input area */}
-        <div className="bg-white dark:bg-gray-800 rounded-2xl shadow p-4">
+        <div className="bg-white dark:bg-slate-800 rounded-2xl shadow p-4">
           <textarea
             ref={textareaRef}
             value={input}
@@ -248,7 +248,7 @@ export default function TranslationPracticePage() {
             disabled={submitted}
             placeholder="Type your translation…"
             rows={3}
-            className="w-full resize-none rounded-xl border border-gray-200 dark:border-gray-600 bg-gray-50 dark:bg-gray-700 text-gray-800 dark:text-gray-100 p-3 text-lg placeholder:text-gray-400 dark:placeholder:text-gray-500 focus:outline-none focus:ring-2 focus:ring-indigo-400 disabled:opacity-60"
+            className="w-full resize-none rounded-xl border border-slate-200 dark:border-slate-600 bg-slate-50 dark:bg-slate-700 text-slate-800 dark:text-slate-100 p-3 text-lg placeholder:text-slate-400 dark:placeholder:text-slate-500 focus:outline-none focus:ring-2 focus:ring-indigo-400 disabled:opacity-60"
             onKeyDown={(e) => {
               if (e.key === 'Enter' && !e.shiftKey && !submitted) {
                 e.preventDefault();
@@ -272,16 +272,16 @@ export default function TranslationPracticePage() {
         {submitted && (
           <div className="space-y-4">
             {/* User answer */}
-            <div className="bg-white dark:bg-gray-800 rounded-2xl shadow p-4">
-              <p className="text-xs uppercase tracking-wide text-gray-400 dark:text-gray-500 mb-1">
+            <div className="bg-white dark:bg-slate-800 rounded-2xl shadow p-4">
+              <p className="text-xs text-slate-500 dark:text-slate-400 mb-1">
                 Your answer
               </p>
-              <p className="text-lg text-gray-800 dark:text-gray-100">{input.trim()}</p>
+              <p className="text-lg text-slate-800 dark:text-slate-100">{input.trim()}</p>
             </div>
 
             {/* Reference answer */}
             <div className="bg-indigo-50 dark:bg-indigo-950/30 rounded-2xl shadow p-4 border border-indigo-200 dark:border-indigo-800">
-              <p className="text-xs uppercase tracking-wide text-indigo-500 dark:text-indigo-400 mb-1">
+              <p className="text-xs text-indigo-600 dark:text-indigo-400 mb-1">
                 Reference
               </p>
               <p className="text-lg font-mono text-indigo-800 dark:text-indigo-200">
@@ -294,7 +294,7 @@ export default function TranslationPracticePage() {
 
             {/* Self-assessment */}
             <div className="space-y-2">
-              <p className="text-sm font-medium text-gray-600 dark:text-gray-300 text-center">
+              <p className="text-sm font-medium text-slate-600 dark:text-slate-300 text-center">
                 How did you do?
               </p>
               <div className="grid grid-cols-3 gap-3">
@@ -330,14 +330,14 @@ export default function TranslationPracticePage() {
   /* ─── Summary ─── */
   return (
     <div className="max-w-lg mx-auto space-y-6">
-      <h2 className="text-lg font-semibold text-gray-800 dark:text-gray-100">Session Complete 🎉</h2>
+      <h2 className="text-lg font-semibold text-slate-800 dark:text-slate-100">Session Complete 🎉</h2>
 
       {/* Score card */}
-      <div className="bg-white dark:bg-gray-800 rounded-2xl shadow p-6 text-center space-y-3">
+      <div className="bg-white dark:bg-slate-800 rounded-2xl shadow p-6 text-center space-y-3">
         <p className="text-4xl font-bold text-indigo-600 dark:text-indigo-400">
           {totalScore}/{maxScore}
         </p>
-        <p className="text-sm text-gray-500 dark:text-gray-400">{percentage}% accuracy</p>
+        <p className="text-sm text-slate-500 dark:text-slate-400">{percentage}% accuracy</p>
 
         <div className="flex justify-center gap-6 text-sm">
           <span className="text-green-600 dark:text-green-400">
@@ -351,8 +351,8 @@ export default function TranslationPracticePage() {
           </span>
         </div>
 
-        <div className="pt-2 border-t border-gray-200 dark:border-gray-700">
-          <p className="text-sm text-gray-500 dark:text-gray-400">XP earned</p>
+        <div className="pt-2 border-t border-slate-200 dark:border-slate-700">
+          <p className="text-sm text-slate-500 dark:text-slate-400">XP earned</p>
           <p className="text-2xl font-bold text-amber-500">+{xpEarned} XP</p>
         </div>
 
@@ -367,7 +367,7 @@ export default function TranslationPracticePage() {
           </p>
         )}
         {percentage < 50 && (
-          <p className="text-sm text-gray-600 dark:text-gray-400 font-medium">
+          <p className="text-sm text-slate-600 dark:text-slate-400 font-medium">
             Every attempt helps you learn — keep going! 🌱
           </p>
         )}
@@ -375,20 +375,20 @@ export default function TranslationPracticePage() {
 
       {/* Missed review */}
       {missedSentences.length > 0 && (
-        <div className="bg-white dark:bg-gray-800 rounded-2xl shadow p-4 space-y-3">
-          <p className="text-sm font-semibold text-gray-700 dark:text-gray-200">
+        <div className="bg-white dark:bg-slate-800 rounded-2xl shadow p-4 space-y-3">
+          <p className="text-sm font-semibold text-slate-700 dark:text-slate-200">
             Review missed sentences
           </p>
           {missedSentences.map((r) => (
             <div
               key={r.sentence.id}
-              className="border-l-4 border-red-300 dark:border-red-700 pl-3 py-2"
+              className="rounded-xl border border-red-100 dark:border-red-900/40 bg-red-50/60 dark:bg-red-950/20 px-3 py-2"
             >
-              <p className="text-sm text-gray-600 dark:text-gray-400">{r.sentence.english}</p>
-              <p className="text-sm font-mono text-gray-800 dark:text-gray-100 mt-1">
+              <p className="text-sm text-slate-600 dark:text-slate-400">{r.sentence.english}</p>
+              <p className="text-sm font-mono text-slate-800 dark:text-slate-100 mt-1">
                 {r.sentence.target}
               </p>
-              <p className="text-xs text-gray-400 dark:text-gray-500">{r.sentence.reading}</p>
+              <p className="text-xs text-slate-500 dark:text-slate-400">{r.sentence.reading}</p>
             </div>
           ))}
         </div>
@@ -410,7 +410,7 @@ export default function TranslationPracticePage() {
         </button>
         <Link
           to="/learn"
-          className="flex-1 text-center bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 px-5 py-3 rounded-xl font-semibold min-h-[44px] hover:bg-gray-200 dark:hover:bg-gray-600 transition-colors"
+          className="flex-1 text-center bg-slate-100 dark:bg-slate-700 text-slate-700 dark:text-slate-300 px-5 py-3 rounded-xl font-semibold min-h-[44px] hover:bg-slate-200 dark:hover:bg-slate-600 transition-colors"
         >
           Back to Learn
         </Link>

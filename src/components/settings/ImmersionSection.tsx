@@ -34,7 +34,7 @@ export default function ImmersionSection() {
 
   return (
     <section className="bg-white dark:bg-slate-800/90 rounded-2xl shadow-sm border border-slate-200/60 dark:border-white/10 p-4">
-      <h3 className="text-sm font-semibold uppercase tracking-wide text-slate-500 dark:text-slate-400 mb-1">
+      <h3 className="text-sm font-semibold text-slate-500 dark:text-slate-400 mb-1">
         🌍 Immersion Ideas
       </h3>
       <p className="text-xs text-slate-500 dark:text-slate-400 mb-3">
@@ -63,7 +63,7 @@ export default function ImmersionSection() {
         {filteredTips.map((tip) => (
           <div
             key={tip.id}
-            className="bg-white dark:bg-gray-800 rounded-xl p-4 border border-gray-200 dark:border-gray-700 transition-colors"
+            className="bg-white dark:bg-slate-800 rounded-xl p-4 border border-slate-200 dark:border-slate-700 transition-colors"
           >
             <div className="flex items-start gap-3">
               <span className="text-2xl leading-none mt-0.5 shrink-0">{tip.icon}</span>

@@ -156,12 +156,12 @@ export default function VocabLessons() {
                   key={lesson.id}
                   disabled={isLocked}
                   onClick={() => !isLocked && setActiveLessonId(lesson.id)}
-                  className={`w-full text-left bg-white dark:bg-slate-800 rounded-2xl shadow p-4 transition-all duration-200 border-l-4 ${
+                  className={`w-full text-left bg-white dark:bg-slate-800 rounded-2xl shadow p-4 transition-all duration-200 border ${
                     isLocked
-                      ? 'opacity-50 cursor-not-allowed border-slate-300 dark:border-slate-600'
+                      ? 'opacity-50 cursor-not-allowed border-slate-200 dark:border-slate-700'
                       : lp?.completed
-                        ? 'border-green-400 dark:border-green-500 hover:-translate-y-0.5 hover:shadow-md press-feedback'
-                        : 'border-rose-400 dark:border-rose-500 hover:-translate-y-0.5 hover:shadow-md press-feedback'
+                        ? 'border-green-300 dark:border-green-800/60 hover:-translate-y-0.5 hover:shadow-md press-feedback'
+                        : 'border-slate-200/70 dark:border-white/10 hover:-translate-y-0.5 hover:shadow-md press-feedback'
                   }`}
                 >
                   <div className="flex items-center justify-between">
@@ -189,7 +189,7 @@ export default function VocabLessons() {
                           <span className="w-6 h-6 rounded-full bg-green-100 dark:bg-green-900/40 flex items-center justify-center text-green-600 dark:text-green-400 text-xs font-bold">✓</span>
                         </>
                       ) : (
-                        <span className="text-xs text-slate-400 dark:text-slate-500">Not started</span>
+                        <span className="text-xs text-slate-500 dark:text-slate-400">Not started</span>
                       )}
                     </div>
                   </div>

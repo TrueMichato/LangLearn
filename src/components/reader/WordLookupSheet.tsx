@@ -42,7 +42,7 @@ export default function WordLookupSheet({
   };
 
   return (
-    <div className="fixed inset-x-0 bottom-0 bg-white dark:bg-slate-900 border-t border-slate-200 dark:border-slate-700 rounded-t-2xl shadow-lg p-4 pb-[calc(1rem+env(safe-area-inset-bottom))] z-50 animate-[slideUp_0.2s_ease-out]">
+    <div className="fixed inset-x-0 bottom-0 bg-white dark:bg-slate-900 border-t border-slate-200 dark:border-slate-700 rounded-t-2xl shadow-lg p-4 pb-[calc(1rem+env(safe-area-inset-bottom))] z-[60] animate-[slideUp_0.2s_ease-out]">
       <div className="max-w-lg mx-auto">
         <div className="flex items-center justify-between mb-3">
           <div className="flex items-center gap-2">
@@ -55,6 +55,7 @@ export default function WordLookupSheet({
             {isTTSSupported() && (
               <button
                 onClick={() => speak(word, language)}
+                aria-label="Listen"
                 className="text-lg hover:scale-110 transition-transform"
               >
                 🔊

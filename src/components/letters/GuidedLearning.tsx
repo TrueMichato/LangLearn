@@ -289,15 +289,15 @@ export default function GuidedLearning({ characters, alphabetName, language, onP
                     ? 'text-green-800 dark:text-green-200'
                     : status === 'unlocked'
                       ? 'text-slate-800 dark:text-slate-100'
-                      : 'text-slate-400 dark:text-slate-500'
+                      : 'text-slate-500 dark:text-slate-400'
                 }`}>
                   {group}
                 </span>
-                <span className="ml-2 text-xs text-slate-400 dark:text-slate-500">
+                <span className="ml-2 text-xs text-slate-500 dark:text-slate-400">
                   {chars.length} characters
                 </span>
               </div>
-              <span className="text-xs text-slate-400 dark:text-slate-500 truncate max-w-[120px]">
+              <span className="text-xs text-slate-500 dark:text-slate-400 truncate max-w-[120px]">
                 {chars.map((c) => c.char).join(' ')}
               </span>
             </button>
@@ -350,11 +350,11 @@ export default function GuidedLearning({ characters, alphabetName, language, onP
             </p>
           )}
           {(char.hint || char.mnemonic) && char.source === 'tofugu' && (
-            <p className="text-xs text-slate-400 dark:text-slate-500 italic">
+            <p className="text-xs text-slate-500 dark:text-slate-400 italic">
               Content from Tofugu.com
             </p>
           )}
-          <p className="text-xs text-slate-400 dark:text-slate-500 mt-2">
+          <p className="text-xs text-slate-500 dark:text-slate-400 mt-2">
             {char.strokes} stroke{char.strokes !== 1 ? 's' : ''}
           </p>
         </div>
@@ -442,7 +442,7 @@ export default function GuidedLearning({ characters, alphabetName, language, onP
               } else if (i === selectedOption) {
                 style = 'bg-red-100 dark:bg-red-900/50 text-red-800 dark:text-red-200 ring-2 ring-red-500';
               } else {
-                style = 'bg-slate-100 dark:bg-slate-800 text-slate-400 dark:text-slate-500';
+                style = 'bg-slate-100 dark:bg-slate-800 text-slate-500 dark:text-slate-400';
               }
             }
             return (

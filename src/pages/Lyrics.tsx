@@ -58,8 +58,8 @@ function SongBrowser({
 
   return (
     <div>
-      <h2 className="text-lg font-semibold text-gray-800 dark:text-gray-100 mb-1">🎵 Music</h2>
-      <p className="text-sm text-gray-500 dark:text-gray-400 mb-4">
+      <h2 className="text-lg font-semibold text-slate-800 dark:text-slate-100 mb-1">🎵 Music</h2>
+      <p className="text-sm text-slate-500 dark:text-slate-400 mb-4">
         Learn vocabulary through song lyrics
       </p>
 
@@ -73,7 +73,7 @@ function SongBrowser({
               className={`px-4 py-2 rounded-xl text-sm font-medium min-h-[44px] transition-colors ${
                 selectedLang === lang
                   ? 'bg-pink-600 text-white'
-                  : 'bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-600'
+                  : 'bg-slate-100 dark:bg-slate-700 text-slate-700 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-600'
               }`}
             >
               {getLanguageLabel(lang)}
@@ -88,7 +88,7 @@ function SongBrowser({
         placeholder="Search songs…"
         value={search}
         onChange={(e) => setSearch(e.target.value)}
-        className="w-full px-4 py-2 rounded-xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-700 text-gray-800 dark:text-gray-100 placeholder-gray-400 dark:placeholder-gray-500 mb-3 min-h-[44px]"
+        className="w-full px-4 py-2 rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-700 text-slate-800 dark:text-slate-100 placeholder-slate-400 dark:placeholder-slate-500 mb-3 min-h-[44px]"
       />
 
       {/* Difficulty filter */}
@@ -100,7 +100,7 @@ function SongBrowser({
             className={`px-3 py-1.5 rounded-lg text-xs font-medium min-h-[36px] transition-colors ${
               difficulty === d
                 ? 'bg-pink-600 text-white'
-                : 'bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-600'
+                : 'bg-slate-100 dark:bg-slate-700 text-slate-600 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-600'
             }`}
           >
             {d === 'all' ? 'All' : d.charAt(0).toUpperCase() + d.slice(1)}
@@ -111,7 +111,7 @@ function SongBrowser({
       {/* Song cards */}
       <div className="space-y-3">
         {filteredSongs.length === 0 && (
-          <p className="text-center text-gray-400 dark:text-gray-500 py-8">
+          <p className="text-center text-slate-500 dark:text-slate-400 py-8">
             No songs found for this filter.
           </p>
         )}
@@ -119,20 +119,20 @@ function SongBrowser({
           <button
             key={song.id}
             onClick={() => onSelect(song.id)}
-            className="w-full text-left bg-white dark:bg-gray-800 rounded-2xl shadow hover:shadow-md transition-all p-4 border border-gray-100 dark:border-gray-700 min-h-[44px]"
+            className="w-full text-left bg-white dark:bg-slate-800 rounded-2xl shadow hover:shadow-md transition-all p-4 border border-slate-100 dark:border-slate-700 min-h-[44px]"
           >
             <div className="flex items-start justify-between gap-2">
               <div className="min-w-0 flex-1">
                 <div className="flex items-center gap-2 mb-1">
                   <span className="text-lg">🎶</span>
-                  <p className="font-semibold text-gray-800 dark:text-gray-100 truncate">
+                  <p className="font-semibold text-slate-800 dark:text-slate-100 truncate">
                     {song.title}
                   </p>
                 </div>
-                <p className="text-sm text-gray-500 dark:text-gray-400 truncate">
+                <p className="text-sm text-slate-500 dark:text-slate-400 truncate">
                   {song.titleRomanized} · {song.artist}
                 </p>
-                <p className="text-xs text-gray-400 dark:text-gray-500 mt-1">
+                <p className="text-xs text-slate-500 dark:text-slate-400 mt-1">
                   {song.context} · {song.lines.length} lines
                 </p>
               </div>
@@ -211,16 +211,16 @@ function LyricsViewer({
       </button>
 
       {/* Header */}
-      <div className="bg-white dark:bg-gray-800 rounded-2xl shadow p-5 mb-4">
+      <div className="bg-white dark:bg-slate-800 rounded-2xl shadow p-5 mb-4">
         <div className="flex items-start justify-between gap-3">
           <div>
-            <h2 className="text-xl font-bold text-gray-800 dark:text-gray-100">
+            <h2 className="text-xl font-bold text-slate-800 dark:text-slate-100">
               {song.title}
             </h2>
-            <p className="text-sm text-gray-500 dark:text-gray-400 mt-0.5">
+            <p className="text-sm text-slate-500 dark:text-slate-400 mt-0.5">
               {song.titleRomanized} · {song.artist}
             </p>
-            <p className="text-xs text-gray-400 dark:text-gray-500 mt-1">{song.context}</p>
+            <p className="text-xs text-slate-500 dark:text-slate-400 mt-1">{song.context}</p>
           </div>
           <DifficultyBadge difficulty={song.difficulty} />
         </div>
@@ -243,7 +243,7 @@ function LyricsViewer({
           className={`px-4 py-2 rounded-xl text-sm font-medium min-h-[44px] transition-colors ${
             showReading
               ? 'bg-pink-600 text-white'
-              : 'bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300'
+              : 'bg-slate-100 dark:bg-slate-700 text-slate-600 dark:text-slate-300'
           }`}
         >
           {showReading ? '✓ Reading' : '○ Reading'}
@@ -254,7 +254,7 @@ function LyricsViewer({
             className={`px-4 py-2 rounded-xl text-sm font-medium min-h-[44px] transition-colors ${
               showRomaji
                 ? 'bg-pink-600 text-white'
-                : 'bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300'
+                : 'bg-slate-100 dark:bg-slate-700 text-slate-600 dark:text-slate-300'
             }`}
           >
             {showRomaji ? '✓ Romaji' : '○ Romaji'}
@@ -265,7 +265,7 @@ function LyricsViewer({
           className={`px-4 py-2 rounded-xl text-sm font-medium min-h-[44px] transition-colors ${
             showTranslation
               ? 'bg-pink-600 text-white'
-              : 'bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300'
+              : 'bg-slate-100 dark:bg-slate-700 text-slate-600 dark:text-slate-300'
           }`}
         >
           {showTranslation ? '✓ Translation' : '○ Translation'}
@@ -273,7 +273,7 @@ function LyricsViewer({
       </div>
 
       {/* Lyrics */}
-      <div className="bg-white dark:bg-gray-800 rounded-2xl shadow p-4 mb-4 space-y-1">
+      <div className="bg-white dark:bg-slate-800 rounded-2xl shadow p-4 mb-4 space-y-1">
         {song.lines.map((line, i) => (
           <button
             key={i}
@@ -281,24 +281,24 @@ function LyricsViewer({
             className={`w-full text-left px-3 py-2 rounded-xl transition-colors ${
               highlightedLine === i
                 ? 'bg-pink-50 dark:bg-pink-900/30 ring-1 ring-pink-300 dark:ring-pink-700'
-                : 'hover:bg-gray-50 dark:hover:bg-gray-700/50'
+                : 'hover:bg-slate-50 dark:hover:bg-slate-700/50'
             }`}
           >
-            <p className="text-base font-medium text-gray-800 dark:text-gray-100 leading-relaxed">
+            <p className="text-base font-medium text-slate-800 dark:text-slate-100 leading-relaxed">
               {line.original}
             </p>
             {showReading && (
-              <p className="text-sm text-gray-500 dark:text-gray-400 mt-0.5">
+              <p className="text-sm text-slate-500 dark:text-slate-400 mt-0.5">
                 {line.reading}
               </p>
             )}
             {showRomaji && line.romaji && (
-              <p className="text-sm text-indigo-500 dark:text-indigo-400 mt-0.5 font-mono">
+              <p className="text-sm text-indigo-600 dark:text-indigo-400 mt-0.5 font-mono">
                 {line.romaji}
               </p>
             )}
             {showTranslation && (
-              <p className="text-sm text-gray-400 dark:text-gray-500 italic mt-0.5">
+              <p className="text-sm text-slate-500 dark:text-slate-400 italic mt-0.5">
                 {line.translation}
               </p>
             )}
@@ -307,8 +307,8 @@ function LyricsViewer({
       </div>
 
       {/* Key Vocabulary */}
-      <div className="bg-white dark:bg-gray-800 rounded-2xl shadow p-4 mb-4">
-        <h3 className="text-sm font-semibold text-gray-800 dark:text-gray-100 mb-3">
+      <div className="bg-white dark:bg-slate-800 rounded-2xl shadow p-4 mb-4">
+        <h3 className="text-sm font-semibold text-slate-800 dark:text-slate-100 mb-3">
           📝 Key Vocabulary
         </h3>
         <div className="space-y-2">
@@ -318,13 +318,13 @@ function LyricsViewer({
             return (
               <div
                 key={v.word}
-                className="flex items-center justify-between gap-2 px-3 py-2 rounded-xl bg-gray-50 dark:bg-gray-700/50"
+                className="flex items-center justify-between gap-2 px-3 py-2 rounded-xl bg-slate-50 dark:bg-slate-700/50"
               >
                 <div className="min-w-0 flex-1">
-                  <span className="font-medium text-gray-800 dark:text-gray-100">{v.word}</span>
-                  <span className="text-gray-400 dark:text-gray-500 mx-1.5">·</span>
-                  <span className="text-sm text-gray-500 dark:text-gray-400">{v.reading}</span>
-                  <p className="text-sm text-gray-500 dark:text-gray-400 truncate">{v.meaning}</p>
+                  <span className="font-medium text-slate-800 dark:text-slate-100">{v.word}</span>
+                  <span className="text-slate-500 dark:text-slate-400 mx-1.5">·</span>
+                  <span className="text-sm text-slate-500 dark:text-slate-400">{v.reading}</span>
+                  <p className="text-sm text-slate-500 dark:text-slate-400 truncate">{v.meaning}</p>
                 </div>
                 <button
                   onClick={() => handleAddVocab(v)}

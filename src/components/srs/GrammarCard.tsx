@@ -33,7 +33,7 @@ export default function GrammarCard({ word, isFlipped, onFlip }: GrammarCardProp
         /* Front: question side — prompt + hint only */
         <div className="text-center space-y-3 w-full">
           {word.reading && (
-            <p className="text-sm text-gray-500 dark:text-gray-400 italic">
+            <p className="text-sm text-slate-500 dark:text-slate-400 italic">
               {word.reading}
             </p>
           )}
@@ -41,14 +41,14 @@ export default function GrammarCard({ word, isFlipped, onFlip }: GrammarCardProp
           {prompt ? (
             <div className="mt-2 bg-violet-50 dark:bg-violet-950/30 rounded-xl px-4 py-3">
               <p
-                className="text-base text-gray-700 dark:text-gray-200"
+                className="text-base text-slate-700 dark:text-slate-200"
                 style={{ fontSize: 'var(--app-font-size)' }}
               >
                 {prompt}
               </p>
             </div>
           ) : (
-            <p className="text-base text-gray-500 dark:text-gray-400">
+            <p className="text-base text-slate-500 dark:text-slate-400">
               {promptHasBlank ? 'Fill in the blank' : 'Recall the grammar point'}
             </p>
           )}
@@ -67,7 +67,7 @@ export default function GrammarCard({ word, isFlipped, onFlip }: GrammarCardProp
 
           {promptHasBlank && (
             <div className="mt-2 bg-violet-50 dark:bg-violet-950/30 rounded-xl px-4 py-3">
-              <p className="text-base text-gray-800 dark:text-gray-100 font-medium">
+              <p className="text-base text-slate-800 dark:text-slate-100 font-medium">
                 {filledSentence}
               </p>
             </div>
@@ -80,7 +80,7 @@ export default function GrammarCard({ word, isFlipped, onFlip }: GrammarCardProp
           )}
 
           {word.meaning && (
-            <p className="text-sm text-gray-600 dark:text-gray-300 mt-1">
+            <p className="text-sm text-slate-600 dark:text-slate-300 mt-1">
               {word.meaning}
             </p>
           )}

@@ -395,7 +395,7 @@ export default function ConjugationsPage() {
         Start Drill
       </button>
       {selectedForms.size === 0 && (
-        <p className="text-center text-sm text-slate-400 dark:text-slate-500">
+        <p className="text-center text-sm text-slate-500 dark:text-slate-400">
           Select at least one {category === 'ru-nouns' || category === 'ru-adjectives' ? 'case' : 'form'} to begin
         </p>
       )}

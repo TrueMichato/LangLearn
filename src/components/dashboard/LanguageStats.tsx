@@ -72,7 +72,7 @@ export default function LanguageStats({ languages }: LanguageStatsProps) {
 
   return (
     <div className="mb-6">
-      <h3 className="font-semibold text-gray-700 dark:text-gray-200 mb-3">
+      <h3 className="font-semibold text-slate-700 dark:text-slate-200 mb-3">
         Per-Language Breakdown
       </h3>
       <div className="grid grid-cols-1 gap-3">
@@ -84,12 +84,12 @@ export default function LanguageStats({ languages }: LanguageStatsProps) {
             return (
               <div
                 key={lang}
-                className="bg-white dark:bg-gray-800 rounded-2xl shadow p-4 text-center"
+                className="bg-white dark:bg-slate-800 rounded-2xl shadow p-4 text-center"
               >
-                <p className="font-semibold text-gray-500 dark:text-gray-400">
+                <p className="font-semibold text-slate-500 dark:text-slate-400">
                   {label}
                 </p>
-                <p className="text-sm text-gray-400 dark:text-gray-500 mt-1">
+                <p className="text-sm text-slate-500 dark:text-slate-400 mt-1">
                   No words yet — start reading!
                 </p>
               </div>
@@ -103,51 +103,51 @@ export default function LanguageStats({ languages }: LanguageStatsProps) {
           return (
             <div
               key={lang}
-              className="bg-white dark:bg-gray-800 rounded-2xl shadow p-4"
+              className="bg-white dark:bg-slate-800 rounded-2xl shadow p-4"
             >
               <div className="flex justify-between items-center mb-3">
-                <span className="font-semibold text-gray-800 dark:text-gray-100">
+                <span className="font-semibold text-slate-800 dark:text-slate-100">
                   {label}
                 </span>
-                <span className="text-sm text-gray-500 dark:text-gray-400">
+                <span className="text-sm text-slate-500 dark:text-slate-400">
                   {health.emoji} {health.label}
                 </span>
               </div>
 
               <div className="grid grid-cols-2 gap-x-4 gap-y-1 text-sm mb-3">
-                <p className="text-gray-600 dark:text-gray-300">
+                <p className="text-slate-600 dark:text-slate-300">
                   Total:{' '}
-                  <span className="font-semibold text-gray-800 dark:text-gray-100">
+                  <span className="font-semibold text-slate-800 dark:text-slate-100">
                     {stat.total}
                   </span>
                 </p>
-                <p className="text-gray-600 dark:text-gray-300">
+                <p className="text-slate-600 dark:text-slate-300">
                   Due:{' '}
-                  <span className="font-semibold text-gray-800 dark:text-gray-100">
+                  <span className="font-semibold text-slate-800 dark:text-slate-100">
                     {stat.due}
                   </span>
                 </p>
-                <p className="text-gray-600 dark:text-gray-300">
+                <p className="text-slate-600 dark:text-slate-300">
                   Learning:{' '}
-                  <span className="font-semibold text-gray-800 dark:text-gray-100">
+                  <span className="font-semibold text-slate-800 dark:text-slate-100">
                     {stat.learning}
                   </span>
                 </p>
-                <p className="text-gray-600 dark:text-gray-300">
+                <p className="text-slate-600 dark:text-slate-300">
                   Mature:{' '}
-                  <span className="font-semibold text-gray-800 dark:text-gray-100">
+                  <span className="font-semibold text-slate-800 dark:text-slate-100">
                     {stat.mature}
                   </span>
                 </p>
               </div>
 
-              <div className="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2">
+              <div className="w-full bg-slate-200 dark:bg-slate-700 rounded-full h-2">
                 <div
                   className="bg-emerald-500 h-2 rounded-full transition-all duration-500"
                   style={{ width: `${maturePercent}%` }}
                 />
               </div>
-              <p className="text-xs text-gray-400 dark:text-gray-500 mt-1 text-right">
+              <p className="text-xs text-slate-500 dark:text-slate-400 mt-1 text-right">
                 {maturePercent}% mature
               </p>
             </div>

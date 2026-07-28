@@ -12,7 +12,7 @@ export default function UpdateToast() {
   if (!needRefresh || dismissed) return null;
 
   return (
-    <div className="fixed bottom-20 left-4 right-4 z-50 animate-[slideUp_0.3s_ease-out] glass rounded-2xl shadow-lg border border-slate-200/60 dark:border-white/10 p-4">
+    <div className="fixed bottom-20 left-4 right-4 z-[70] animate-[slideUp_0.3s_ease-out] glass rounded-2xl shadow-lg border border-slate-200/60 dark:border-white/10 p-4">
       <p className="text-sm font-medium text-slate-800 dark:text-slate-100">
         A new version is available
       </p>

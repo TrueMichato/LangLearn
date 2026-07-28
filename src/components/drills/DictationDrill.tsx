@@ -208,7 +208,7 @@ export default function DictationDrill({ language, difficulty, onComplete, onBac
             onChange={(e) => setInput(e.target.value)}
             placeholder={language === 'ja' ? 'ここに入力してください…' : 'Введите здесь…'}
             rows={3}
-            className="w-full px-4 py-3 rounded-xl border border-gray-300 dark:border-white/10 bg-white dark:bg-gray-800 text-slate-800 dark:text-slate-100 placeholder-slate-400 dark:placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-indigo-500 resize-none text-base mb-4"
+            className="w-full px-4 py-3 rounded-xl border border-slate-300 dark:border-white/10 bg-white dark:bg-slate-800 text-slate-800 dark:text-slate-100 placeholder-slate-400 dark:placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-indigo-500 resize-none text-base mb-4"
           />
           <button
             type="submit"
@@ -230,7 +230,7 @@ export default function DictationDrill({ language, difficulty, onComplete, onBac
           </div>
 
           {/* Diff display */}
-          <div className="bg-white dark:bg-gray-800 rounded-2xl shadow p-4">
+          <div className="bg-white dark:bg-slate-800 rounded-2xl shadow p-4">
             <p className="text-xs font-medium text-slate-500 dark:text-slate-400 mb-2 uppercase tracking-wide">
               Your answer
             </p>

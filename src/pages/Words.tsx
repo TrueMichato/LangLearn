@@ -209,7 +209,7 @@ export default function WordsPage() {
             {s.charAt(0).toUpperCase() + s.slice(1)}
           </button>
         ))}
-        <select
+        <select aria-label="Sort words"
           value={`${sortBy}-${sortDir}`}
           onChange={(e) => {
             const [sb, sd] = e.target.value.split('-');
@@ -266,7 +266,7 @@ export default function WordsPage() {
                         {word.word}
                       </span>
                       {word.reading && (
-                        <span className="text-sm text-slate-400 dark:text-slate-500">
+                        <span className="text-sm text-slate-500 dark:text-slate-400">
                           {word.reading}
                         </span>
                       )}
@@ -306,7 +306,7 @@ export default function WordsPage() {
                         Due now
                       </span>
                     ) : (
-                      <span className="text-xs text-slate-400 dark:text-slate-500">
+                      <span className="text-xs text-slate-500 dark:text-slate-400">
                         {formatDate(review.nextReviewDate)}
                       </span>
                     )}

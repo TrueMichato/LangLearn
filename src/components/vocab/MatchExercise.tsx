@@ -56,7 +56,7 @@ export default function MatchExercise({ words, pairCount, onComplete }: Props) {
       <p className="text-sm font-medium text-slate-600 dark:text-slate-300 mb-4">
         Match each word with its meaning ({matched.size}/{pairCount})
       </p>
-      <div className="grid grid-cols-2 gap-3 bg-white dark:bg-slate-800 rounded-2xl shadow p-4 border-l-4 border-rose-400 dark:border-rose-500">
+      <div className="grid grid-cols-2 gap-3 bg-white dark:bg-slate-800 rounded-2xl shadow p-4 border border-slate-200/70 dark:border-white/10">
         {/* Words column */}
         <div className="space-y-2">
           {shuffledWords.map((w) => {

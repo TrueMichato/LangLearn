@@ -235,7 +235,7 @@ function SaveFlashcardButton({
       onClick={handleClick}
       disabled={state === 'saving'}
       title="Save as flashcard"
-      className="inline-flex items-center ml-1.5 text-indigo-500 dark:text-indigo-400 hover:text-indigo-700 dark:hover:text-indigo-300 text-xs opacity-60 hover:opacity-100 transition-opacity cursor-pointer select-none disabled:opacity-30"
+      className="inline-flex items-center ml-1.5 text-indigo-600 dark:text-indigo-400 hover:text-indigo-700 dark:hover:text-indigo-300 text-xs opacity-60 hover:opacity-100 transition-opacity cursor-pointer select-none disabled:opacity-30"
     >
       ➕
     </button>
@@ -396,7 +396,7 @@ export default function LessonView({ lang, lessonId, onBack, lessons, onNavigate
       {totalQuizzes > 0 && (
         <div className="w-full h-1.5 rounded-full bg-slate-200 dark:bg-slate-700 overflow-hidden mb-4">
           <div
-            className="h-full rounded-full bg-gradient-to-r from-indigo-500 to-violet-500 transition-all duration-500"
+            className="h-full rounded-full bg-indigo-500 transition-all duration-500"
             style={{ width: `${quizProgressPct}%` }}
           />
         </div>
@@ -426,7 +426,7 @@ export default function LessonView({ lang, lessonId, onBack, lessons, onNavigate
               {seg.content}
             </ReactMarkdown>
           ) : (
-            <div key={i} className="my-6 border-l-4 border-indigo-400 dark:border-indigo-500 bg-indigo-50 dark:bg-indigo-950/30 rounded-r-2xl pl-0">
+            <div key={i} className="my-6 border border-indigo-200 dark:border-indigo-800/60 bg-indigo-50 dark:bg-indigo-950/30 rounded-2xl">
               <GrammarQuiz {...seg.data} onAnswer={handleQuizAnswer} />
             </div>
           )

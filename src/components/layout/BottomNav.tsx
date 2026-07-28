@@ -30,11 +30,11 @@ export default function BottomNav() {
   }, [location.pathname]);
 
   return (
-    <nav className="fixed bottom-0 left-0 right-0 glass border-t border-slate-200/60 dark:border-white/10 pb-[env(safe-area-inset-bottom)] z-50">
-      <div ref={navRef} className="flex justify-around max-w-lg mx-auto relative">
+    <nav className="fixed bottom-0 left-0 right-0 z-50">
+      <div ref={navRef} className="app-frame relative flex justify-around glass border-t md:border-x border-slate-200/60 dark:border-white/10 pb-[env(safe-area-inset-bottom)]">
         {/* Sliding active indicator */}
         <div
-          className="absolute top-0 h-[3px] rounded-full bg-gradient-to-r from-indigo-500 to-violet-500 transition-all duration-300 ease-out"
+          className="absolute top-0 h-[3px] rounded-full bg-indigo-500 transition-all duration-300 ease-out"
           style={{ left: indicatorStyle.left, width: indicatorStyle.width }}
         />
         {links.map((link) => {

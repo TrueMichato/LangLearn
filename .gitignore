@@ -26,3 +26,8 @@ dev-dist/
 
 infra/push-worker/vapid.json
 .env.example
+
+# impeccable design skill — keep DESIGN.md, PRODUCT.md, .impeccable/design.json,
+# .impeccable/config.json and .impeccable/critique/ committed; ignore machine-local/transient state.
+.impeccable/config.local.json
+.impeccable/hook.cache.json

@@ -31,15 +31,15 @@ const GROUP_INFO: Record<string, string> = {
 
 function CharacterDetail({ char, language, onClose }: { char: Character; language: string; onClose: () => void }) {
   return (
-    <div className="fixed inset-0 z-50 flex items-end sm:items-center justify-center" onClick={onClose}>
+    <div className="fixed inset-0 z-[60] flex items-end sm:items-center justify-center" onClick={onClose}>
       <div className="absolute inset-0 bg-black/40" />
       <div
-        className="relative bg-white dark:bg-gray-800 rounded-2xl shadow-xl p-6 mx-4 mb-4 sm:mb-0 w-full max-w-md max-h-[80vh] overflow-y-auto space-y-3"
+        className="relative bg-white dark:bg-slate-800 rounded-2xl shadow-xl p-6 mx-4 mb-4 sm:mb-0 w-full max-w-md max-h-[80vh] overflow-y-auto space-y-3"
         onClick={(e) => e.stopPropagation()}
       >
         <button
           onClick={onClose}
-          className="absolute top-3 right-3 text-slate-400 dark:text-slate-500 hover:text-slate-600 dark:hover:text-slate-300 text-2xl leading-none"
+          className="absolute top-3 right-3 text-slate-500 dark:text-slate-400 hover:text-slate-600 dark:hover:text-slate-300 text-2xl leading-none"
         >
           ×
         </button>
@@ -85,7 +85,7 @@ function CharacterDetail({ char, language, onClose }: { char: Character; languag
         )}
 
         {(char.onyomi?.length || char.kunyomi?.length) && (
-          <p className="text-xs text-slate-400 dark:text-slate-500 mt-2">
+          <p className="text-xs text-slate-500 dark:text-slate-400 mt-2">
             <span className="font-semibold">On&apos;yomi</span> = Chinese reading (compounds) · <span className="font-semibold">Kun&apos;yomi</span> = Japanese reading (standalone)
           </p>
         )}
@@ -117,7 +117,7 @@ function CharacterDetail({ char, language, onClose }: { char: Character; languag
         )}
 
         {char.source && (
-          <p className="text-xs text-slate-400 dark:text-slate-500 italic pt-1">Content from Tofugu.com</p>
+          <p className="text-xs text-slate-500 dark:text-slate-400 italic pt-1">Content from Tofugu.com</p>
         )}
       </div>
     </div>
@@ -155,7 +155,7 @@ export default function CharacterChart({ characters, alphabetName, language, pro
                   >
                     <span className="text-2xl leading-tight text-slate-900 dark:text-slate-100">{c.char}</span>
                     <span className="text-xs text-slate-500 dark:text-slate-400 mt-0.5">{c.romanji}</span>
-                    {c.meaning && <span className="text-[10px] text-slate-400 dark:text-slate-500 leading-tight">{c.meaning}</span>}
+                    {c.meaning && <span className="text-[10px] text-slate-500 dark:text-slate-400 leading-tight">{c.meaning}</span>}
                   </button>
                 );
               })}

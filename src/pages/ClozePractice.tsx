@@ -143,7 +143,7 @@ export default function ClozePracticePage() {
             ← Back to Learn
           </Link>
           <h2 className="text-lg font-semibold text-slate-700 dark:text-slate-200">🧩 Cloze Practice</h2>
-          <p className="text-sm text-gray-500 dark:text-gray-400 mt-1">
+          <p className="text-sm text-slate-500 dark:text-slate-400 mt-1">
             Fill in the missing word from context. Sentences are sorted by word frequency — master common words first.
           </p>
         </div>
@@ -158,7 +158,7 @@ export default function ClozePracticePage() {
                   key={l}
                   onClick={() => setLanguage(l)}
                   className={`px-4 py-2 rounded-xl text-sm font-medium transition-colors min-h-[44px] ${
-                    language === l ? 'bg-indigo-600 text-white' : 'bg-white dark:bg-slate-700 text-slate-700 dark:text-slate-300 border border-gray-300 dark:border-white/10'
+                    language === l ? 'bg-indigo-600 text-white' : 'bg-white dark:bg-slate-700 text-slate-700 dark:text-slate-300 border border-slate-300 dark:border-white/10'
                   }`}
                 >
                   {getLanguageLabel(l)}
@@ -179,7 +179,7 @@ export default function ClozePracticePage() {
                 key={d}
                 onClick={() => setDifficulty(d)}
                 className={`px-4 py-2 rounded-xl text-sm font-medium capitalize transition-colors min-h-[44px] ${
-                  difficulty === d ? 'bg-indigo-600 text-white' : 'bg-white dark:bg-slate-700 text-slate-700 dark:text-slate-300 border border-gray-300 dark:border-white/10'
+                  difficulty === d ? 'bg-indigo-600 text-white' : 'bg-white dark:bg-slate-700 text-slate-700 dark:text-slate-300 border border-slate-300 dark:border-white/10'
                 }`}
               >
                 {d === 'all' ? '🌀 All Levels' : d === 'beginner' ? '🟢 Beginner' : d === 'intermediate' ? '🟡 Intermediate' : '🔴 Advanced'}
@@ -257,14 +257,14 @@ export default function ClozePracticePage() {
       </div>
 
       {/* Cloze card */}
-      <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-lg p-6 space-y-4">
+      <div className="bg-white dark:bg-slate-800 rounded-2xl shadow-lg p-6 space-y-4">
         {/* English hint */}
-        <p className="text-sm text-gray-500 dark:text-gray-400 text-center">
+        <p className="text-sm text-slate-500 dark:text-slate-400 text-center">
           {current.english}
         </p>
 
         {/* Cloze sentence */}
-        <p className="text-lg text-gray-800 dark:text-gray-100 text-center leading-relaxed">
+        <p className="text-lg text-slate-800 dark:text-slate-100 text-center leading-relaxed">
           {before}
           <span className={`inline-block border-b-2 px-3 min-w-[60px] font-semibold ${
             answered
@@ -297,10 +297,10 @@ export default function ClozePracticePage() {
             ) : (
               <div>
                 <p className="text-red-600 dark:text-red-400 font-semibold text-lg">No worries!</p>
-                <p className="text-gray-600 dark:text-gray-300 mt-1">
+                <p className="text-slate-600 dark:text-slate-300 mt-1">
                   Answer: <strong>{current.blankedWord}</strong>
                   {current.blankedReading && (
-                    <span className="text-gray-400 dark:text-gray-500 ml-2">({current.blankedReading})</span>
+                    <span className="text-slate-500 dark:text-slate-400 ml-2">({current.blankedReading})</span>
                   )}
                 </p>
               </div>
@@ -321,7 +321,7 @@ export default function ClozePracticePage() {
               onChange={(e) => setInput(e.target.value)}
               onKeyDown={handleKeyDown}
               placeholder="Type the missing word…"
-              className="flex-1 border border-gray-300 dark:border-gray-600 rounded-xl px-4 py-2 bg-white dark:bg-gray-700 text-gray-800 dark:text-gray-100 min-h-[44px]"
+              className="flex-1 border border-slate-300 dark:border-slate-600 rounded-xl px-4 py-2 bg-white dark:bg-slate-700 text-slate-800 dark:text-slate-100 min-h-[44px]"
               autoComplete="off"
               autoCorrect="off"
               autoCapitalize="off"

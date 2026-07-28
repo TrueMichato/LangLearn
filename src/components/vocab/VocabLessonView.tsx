@@ -219,7 +219,7 @@ export default function VocabLessonView({ lang, lessonId, onBack }: Props) {
           <button onClick={onBack} className="text-indigo-600 dark:text-indigo-400 font-medium text-sm">
             ← Back
           </button>
-          <span className="text-sm text-slate-400 dark:text-slate-500">
+          <span className="text-sm text-slate-500 dark:text-slate-400">
             {wordCardIdx + 1} / {lesson.words.length}
           </span>
         </div>
@@ -343,7 +343,7 @@ export default function VocabLessonView({ lang, lessonId, onBack }: Props) {
           <button onClick={onBack} className="text-indigo-600 dark:text-indigo-400 font-medium text-sm">
             ← Back
           </button>
-          <span className="text-sm text-slate-400 dark:text-slate-500">
+          <span className="text-sm text-slate-500 dark:text-slate-400">
             Exercise {exerciseIdx + 1} / {exercises.length}
           </span>
         </div>

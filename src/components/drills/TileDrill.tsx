@@ -73,20 +73,20 @@ export default function TileDrill({ questions, onComplete }: TileDrillProps) {
   return (
     <div className="space-y-6">
       {/* Progress bar */}
-      <div className="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2">
+      <div className="w-full bg-slate-200 dark:bg-slate-700 rounded-full h-2">
         <div
           className="bg-indigo-600 h-2 rounded-full transition-all duration-300"
           style={{ width: `${progress}%` }}
         />
       </div>
 
-      <p className="text-sm text-gray-500 dark:text-gray-400 text-center">
+      <p className="text-sm text-slate-500 dark:text-slate-400 text-center">
         {index + 1} / {total}
       </p>
 
       {/* Prompt */}
-      <div className="bg-white dark:bg-gray-800 rounded-2xl shadow p-6 text-center">
-        <p className="text-lg font-semibold text-gray-800 dark:text-gray-100">
+      <div className="bg-white dark:bg-slate-800 rounded-2xl shadow p-6 text-center">
+        <p className="text-lg font-semibold text-slate-800 dark:text-slate-100">
           {current.prompt}
         </p>
       </div>
@@ -97,13 +97,13 @@ export default function TileDrill({ questions, onComplete }: TileDrillProps) {
           let cls =
             'p-4 rounded-xl text-center font-medium border-2 transition-colors cursor-pointer text-lg ';
           if (!answered) {
-            cls += 'border-gray-200 dark:border-gray-600 bg-white dark:bg-gray-800 text-gray-800 dark:text-gray-100 hover:border-indigo-400';
+            cls += 'border-slate-200 dark:border-slate-600 bg-white dark:bg-slate-800 text-slate-800 dark:text-slate-100 hover:border-indigo-400';
           } else if (tile === current.correctAnswer) {
             cls += 'bg-green-100 dark:bg-green-900 border-green-500 text-green-800 dark:text-green-100';
           } else if (tile === selected) {
             cls += 'bg-red-100 dark:bg-red-900 border-red-500 text-red-800 dark:text-red-100';
           } else {
-            cls += 'border-gray-200 dark:border-gray-600 bg-white dark:bg-gray-800 text-gray-400 dark:text-gray-500';
+            cls += 'border-slate-200 dark:border-slate-600 bg-white dark:bg-slate-800 text-slate-500 dark:text-slate-400';
           }
 
           return (

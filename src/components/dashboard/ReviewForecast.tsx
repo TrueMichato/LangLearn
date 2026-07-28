@@ -47,12 +47,12 @@ export default function ReviewForecast() {
   const max = Math.max(1, ...forecast.map((d) => d.count));
 
   return (
-    <div className="bg-white dark:bg-gray-800 rounded-2xl shadow p-4 mb-6">
+    <div className="bg-white dark:bg-slate-800 rounded-2xl shadow p-4 mb-6">
       <div className="flex items-center justify-between mb-3">
         <h3 className="font-semibold text-slate-700 dark:text-slate-200 flex items-center gap-2">
           <span>📅</span> Next 7 days
         </h3>
-        <span className="text-xs text-slate-400 dark:text-slate-500">
+        <span className="text-xs text-slate-500 dark:text-slate-400">
           {total} review{total === 1 ? '' : 's'} coming up
         </span>
       </div>
@@ -90,7 +90,7 @@ export default function ReviewForecast() {
                   className={`text-[10px] ${
                     i === 0
                       ? 'font-semibold text-indigo-600 dark:text-indigo-300'
-                      : 'text-slate-400 dark:text-slate-500'
+                      : 'text-slate-500 dark:text-slate-400'
                   }`}
                 >
                   {dayLabel(d.date, i)}

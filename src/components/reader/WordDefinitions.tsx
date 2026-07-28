@@ -47,7 +47,7 @@ export default function WordDefinitions({
 
   return (
     <div className="space-y-2">
-      <h3 className="text-sm font-semibold text-gray-700 dark:text-gray-300 mb-1">
+      <h3 className="text-sm font-semibold text-slate-700 dark:text-slate-300 mb-1">
         Word-by-word breakdown
       </h3>
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
@@ -58,12 +58,12 @@ export default function WordDefinitions({
           return (
             <div
               key={`${w.surface}-${i}`}
-              className="bg-white dark:bg-gray-800 rounded-xl shadow p-3 flex items-start gap-3 min-h-[44px]"
+              className="bg-white dark:bg-slate-800 rounded-xl shadow p-3 flex items-start gap-3 min-h-[44px]"
             >
               {/* Word info */}
               <div className="flex-1 min-w-0">
                 <div className="flex items-center gap-2 flex-wrap">
-                  <span className="text-lg font-bold text-gray-800 dark:text-gray-100">
+                  <span className="text-lg font-bold text-slate-800 dark:text-slate-100">
                     {w.surface}
                   </span>
                   {w.reading && (
@@ -72,18 +72,18 @@ export default function WordDefinitions({
                     </span>
                   )}
                   {w.partOfSpeech && (
-                    <span className="text-xs bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300 rounded px-2 py-0.5">
+                    <span className="text-xs bg-slate-100 dark:bg-slate-700 text-slate-600 dark:text-slate-300 rounded px-2 py-0.5">
                       {w.partOfSpeech}
                     </span>
                   )}
                 </div>
                 {w.dictionaryForm && w.dictionaryForm !== w.surface && (
-                  <p className="text-xs text-gray-400 dark:text-gray-500 mt-0.5">
+                  <p className="text-xs text-slate-500 dark:text-slate-400 mt-0.5">
                     dict: {w.dictionaryForm}
                   </p>
                 )}
                 {w.definition && (
-                  <p className="text-sm text-gray-600 dark:text-gray-300 mt-1 line-clamp-2">
+                  <p className="text-sm text-slate-600 dark:text-slate-300 mt-1 line-clamp-2">
                     {w.definition}
                   </p>
                 )}

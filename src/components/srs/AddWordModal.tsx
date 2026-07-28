@@ -92,10 +92,10 @@ export default function AddWordModal({ isOpen, onClose }: AddWordModalProps) {
   if (!isOpen) return null;
 
   const inputClass =
-    'w-full px-3 py-2 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 text-gray-900 dark:text-gray-100 focus:outline-none focus:ring-2 focus:ring-indigo-500';
+    'w-full px-3 py-2 rounded-lg border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-700 text-slate-900 dark:text-slate-100 focus:outline-none focus:ring-2 focus:ring-indigo-500';
 
   return (
-    <div className="fixed inset-0 z-50 flex items-end sm:items-center justify-center">
+    <div className="fixed inset-0 z-[60] flex items-end sm:items-center justify-center">
       {/* Backdrop */}
       <div
         className="absolute inset-0 bg-black/50"
@@ -103,14 +103,14 @@ export default function AddWordModal({ isOpen, onClose }: AddWordModalProps) {
       />
 
       {/* Modal */}
-      <div className="relative w-full max-w-md mx-4 mb-4 sm:mb-0 bg-white dark:bg-gray-800 rounded-2xl shadow-xl max-h-[85vh] overflow-y-auto">
+      <div className="relative w-full max-w-md mx-4 mb-4 sm:mb-0 bg-white dark:bg-slate-800 rounded-2xl shadow-xl max-h-[85vh] overflow-y-auto">
         <div className="p-5 space-y-4">
           {/* Header */}
           <div className="flex items-center justify-between">
-            <h2 className="text-lg font-bold text-gray-900 dark:text-gray-100">Add Word</h2>
+            <h2 className="text-lg font-bold text-slate-900 dark:text-slate-100">Add Word</h2>
             <button
               onClick={onClose}
-              className="text-gray-400 hover:text-gray-600 dark:hover:text-gray-300 text-xl leading-none"
+              className="text-slate-400 hover:text-slate-600 dark:hover:text-slate-300 text-xl leading-none"
             >
               ✕
             </button>
@@ -118,10 +118,10 @@ export default function AddWordModal({ isOpen, onClose }: AddWordModalProps) {
 
           {/* Language */}
           <div>
-            <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">
+            <label className="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-1">
               Language
             </label>
-            <select
+            <select aria-label="Language"
               value={language}
               onChange={(e) => setLanguage(e.target.value)}
               className={inputClass}
@@ -136,7 +136,7 @@ export default function AddWordModal({ isOpen, onClose }: AddWordModalProps) {
 
           {/* Word + lookup */}
           <div>
-            <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">
+            <label className="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-1">
               Word <span className="text-red-500">*</span>
             </label>
             <div className="flex gap-2">
@@ -154,11 +154,11 @@ export default function AddWordModal({ isOpen, onClose }: AddWordModalProps) {
               <button
                 onClick={handleLookup}
                 disabled={looking || !word.trim()}
-                className="px-3 py-2 rounded-lg bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-600 disabled:opacity-50 shrink-0"
+                className="px-3 py-2 rounded-lg bg-slate-100 dark:bg-slate-700 text-slate-700 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-600 disabled:opacity-50 shrink-0"
                 title="Look up"
               >
                 {looking ? (
-                  <span className="inline-block w-4 h-4 border-2 border-gray-400 border-t-transparent rounded-full animate-spin" />
+                  <span className="inline-block w-4 h-4 border-2 border-slate-400 border-t-transparent rounded-full animate-spin" />
                 ) : (
                   '🔍'
                 )}
@@ -166,7 +166,7 @@ export default function AddWordModal({ isOpen, onClose }: AddWordModalProps) {
               {isTTSSupported() && word.trim() && (
                 <button
                   onClick={() => speak(word.trim(), language)}
-                  className="px-3 py-2 rounded-lg bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-600 shrink-0"
+                  className="px-3 py-2 rounded-lg bg-slate-100 dark:bg-slate-700 text-slate-700 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-600 shrink-0"
                   title="Listen"
                 >
                   🔊
@@ -177,7 +177,7 @@ export default function AddWordModal({ isOpen, onClose }: AddWordModalProps) {
 
           {/* Reading */}
           <div>
-            <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">
+            <label className="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-1">
               Reading
             </label>
             <input
@@ -191,7 +191,7 @@ export default function AddWordModal({ isOpen, onClose }: AddWordModalProps) {
 
           {/* Meaning */}
           <div>
-            <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">
+            <label className="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-1">
               Meaning <span className="text-red-500">*</span>
             </label>
             <input
@@ -208,7 +208,7 @@ export default function AddWordModal({ isOpen, onClose }: AddWordModalProps) {
 
           {/* Tags */}
           <div>
-            <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">
+            <label className="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-1">
               Tags
             </label>
             <input
@@ -239,7 +239,7 @@ export default function AddWordModal({ isOpen, onClose }: AddWordModalProps) {
             </button>
             <button
               onClick={onClose}
-              className="px-4 py-2 rounded-xl bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-300 font-semibold hover:bg-gray-300 dark:hover:bg-gray-600 transition-colors"
+              className="px-4 py-2 rounded-xl bg-slate-200 dark:bg-slate-700 text-slate-700 dark:text-slate-300 font-semibold hover:bg-slate-300 dark:hover:bg-slate-600 transition-colors"
             >
               Done
             </button>
