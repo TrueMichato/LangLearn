@@ -38,7 +38,7 @@ export default function VocabQuiz({ items, onComplete }: Props) {
         Quiz ({current + 1}/{items.length})
       </p>
 
-      <div className="bg-white dark:bg-slate-800 rounded-2xl shadow p-5 mb-4 border-l-4 border-rose-400 dark:border-rose-500">
+      <div className="bg-white dark:bg-slate-800 rounded-2xl shadow p-5 mb-4 border border-slate-200/70 dark:border-white/10">
         <p className="text-lg font-medium text-slate-800 dark:text-slate-100 text-center">
           {item.question}
         </p>
@@ -53,7 +53,7 @@ export default function VocabQuiz({ items, onComplete }: Props) {
             } else if (idx === selected && idx !== item.answer) {
               style = 'bg-red-100 dark:bg-red-900/30 text-red-700 dark:text-red-300 ring-2 ring-red-400';
             } else {
-              style = 'bg-slate-50 dark:bg-slate-800/50 text-slate-400 dark:text-slate-500';
+              style = 'bg-slate-50 dark:bg-slate-800/50 text-slate-500 dark:text-slate-400';
             }
           }
 

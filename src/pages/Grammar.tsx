@@ -144,19 +144,19 @@ export default function GrammarPage() {
                     key={lesson.id}
                     disabled={locked}
                     onClick={() => !locked && setActiveLessonId(lesson.id)}
-                    className={`w-full text-left bg-white dark:bg-slate-800 rounded-2xl shadow p-4 transition-all duration-200 border-l-4 ${
+                    className={`w-full text-left bg-white dark:bg-slate-800 rounded-2xl shadow p-4 transition-all duration-200 border ${
                       locked
-                        ? 'opacity-50 cursor-not-allowed border-slate-300 dark:border-slate-600'
+                        ? 'opacity-50 cursor-not-allowed border-slate-200 dark:border-slate-700'
                         : lp?.completed
-                          ? 'border-green-400 dark:border-green-500 hover:-translate-y-0.5 hover:shadow-md press-feedback'
-                          : 'border-indigo-400 dark:border-indigo-500 hover:-translate-y-0.5 hover:shadow-md press-feedback'
+                          ? 'border-green-300 dark:border-green-800/60 hover:-translate-y-0.5 hover:shadow-md press-feedback'
+                          : 'border-slate-200/70 dark:border-white/10 hover:-translate-y-0.5 hover:shadow-md press-feedback'
                     }`}
                   >
                     <div className="flex items-center justify-between">
                       <div className="min-w-0 flex-1">
                         <p className="font-medium text-slate-800 dark:text-slate-100">{lesson.title}</p>
                         <div className="flex items-center gap-2 mt-1">
-                          <p className="text-xs text-slate-400 dark:text-slate-500">
+                          <p className="text-xs text-slate-500 dark:text-slate-400">
                             Lesson {lesson.order}
                           </p>
                           {lesson.source === 'tofugu' && (
@@ -177,7 +177,7 @@ export default function GrammarPage() {
                             <span className="w-6 h-6 rounded-full bg-green-100 dark:bg-green-900/40 flex items-center justify-center text-green-600 dark:text-green-400 text-xs font-bold">✓</span>
                           </>
                         ) : (
-                          <span className="text-xs text-slate-400 dark:text-slate-500">Not started</span>
+                          <span className="text-xs text-slate-500 dark:text-slate-400">Not started</span>
                         )}
                       </div>
                     </div>
@@ -190,7 +190,7 @@ export default function GrammarPage() {
                   {/* Original (core) lessons — sequential unlock */}
                   {originalLessons.length > 0 && (
                     <div className="space-y-3 mb-6">
-                      <h3 className="text-sm font-semibold text-slate-600 dark:text-slate-300 uppercase tracking-wide">
+                      <h3 className="text-sm font-semibold text-slate-600 dark:text-slate-300">
                         Core Lessons
                       </h3>
                       {originalLessons.map((lesson) => {
@@ -216,7 +216,7 @@ export default function GrammarPage() {
                         >
                           <div className="flex items-center gap-2">
                             <span className={`text-xs transition-transform ${isCollapsed ? '' : 'rotate-90'}`}>▶</span>
-                            <h3 className="text-sm font-semibold text-slate-600 dark:text-slate-300 uppercase tracking-wide">
+                            <h3 className="text-sm font-semibold text-slate-600 dark:text-slate-300">
                               {group}
                             </h3>
                             {isTofuguGroup && (
@@ -225,7 +225,7 @@ export default function GrammarPage() {
                               </span>
                             )}
                           </div>
-                          <span className="text-xs text-slate-400 dark:text-slate-500">
+                          <span className="text-xs text-slate-500 dark:text-slate-400">
                             {completedInGroup}/{groupLessons.length}
                           </span>
                         </button>

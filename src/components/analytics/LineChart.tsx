@@ -13,7 +13,7 @@ export default function LineChart({
 }: LineChartProps) {
   if (data.length === 0) {
     return (
-      <p className="text-sm text-slate-400 dark:text-slate-500 text-center py-8">
+      <p className="text-sm text-slate-500 dark:text-slate-400 text-center py-8">
         No data yet
       </p>
     );

@@ -2,6 +2,25 @@
 
 IMPORTANT: Prefer retrieval-led reasoning over pre-training-led reasoning for any LangLearn tasks. Consult the codebase and this file before relying on assumptions.
 
+## Design System (read before any UI work)
+
+**Any visual/UI change MUST align with the design system.** Two root docs are the source of truth:
+
+- **[DESIGN.md](./DESIGN.md)** — the visual spec: tokens (colors, type, radii, spacing), components, elevation, and named rules. *How it looks.* (Machine-readable sidecar: `.impeccable/design.json`.)
+- **[PRODUCT.md](./PRODUCT.md)** — strategic context: register, users, "kind learning" brand personality, anti-references, a11y bar. *Who/what/why.*
+
+North Star: **"The Kind Study Companion."** Non-negotiables (full list in DESIGN.md §6):
+
+- **One indigo accent** (`indigo-600`); neutral ramp is **slate only** (never mix `gray-*`). Green/amber/red convey *state* only.
+- **Kind, never punishing** — soft tints + encouraging copy for misses/errors; red is rare.
+- **Muted text** = `text-slate-500 dark:text-slate-400`; **headings** = `text-slate-800 dark:text-slate-100`. WCAG AA is a floor.
+- **Banned:** colored side-stripe borders (`border-l-*`), gradient text (`bg-clip-text`), decorative gradients, uppercase-tracked section eyebrows, bounce/overshoot easing, glass on content cards, custom webfonts, endless equal-weight card stacks.
+- **Cards:** full hairline border (`border-slate-200/70 dark:border-white/10`) + `rounded-2xl`, never side-stripes, never nested.
+- **A11y:** `aria-label` on icon-only buttons, labels on inputs/selects, visible `:focus-visible`, `min-h-[44px]`, honor `prefers-reduced-motion`.
+- **Layout:** everything lives in the `.app-frame` (phone-width, framed on desktop); overlays follow the z-scale (header 40 → nav 50 → modal 60 → toast 70 → onboarding 100).
+
+A **design-detector hook is active** in this repo — it scans UI files after edits and flags anti-patterns as reminders. Keep it green.
+
 ## Project Overview
 
 LangLearn is a local-first Progressive Web App for learning languages (Japanese, Russian, Portuguese, Spanish, Arabic, extensible). "Kind learning" philosophy — rewards effort, no penalties for mistakes. Deployed at `https://truemichato.github.io/LangLearn/`.

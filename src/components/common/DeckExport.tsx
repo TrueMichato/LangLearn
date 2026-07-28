@@ -47,12 +47,12 @@ export default function DeckExport() {
 
   return (
     <div className="space-y-3">
-      <h4 className="text-sm font-medium text-gray-600 dark:text-gray-400">Export Deck</h4>
+      <h4 className="text-sm font-medium text-slate-600 dark:text-slate-400">Export Deck</h4>
 
-      <select
+      <select aria-label="Export language"
         value={language}
         onChange={(e) => handleLanguageChange(e.target.value)}
-        className="w-full px-3 py-2 rounded-xl bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-200 text-sm"
+        className="w-full px-3 py-2 rounded-xl bg-slate-100 dark:bg-slate-700 text-slate-800 dark:text-slate-200 text-sm"
       >
         <option value="">Select language</option>
         {activeLanguages.map((lang) => (
@@ -65,7 +65,7 @@ export default function DeckExport() {
         placeholder="Deck name"
         value={deckName}
         onChange={(e) => setDeckName(e.target.value)}
-        className="w-full px-3 py-2 rounded-xl bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-200 text-sm placeholder-gray-400"
+        className="w-full px-3 py-2 rounded-xl bg-slate-100 dark:bg-slate-700 text-slate-800 dark:text-slate-200 text-sm placeholder-slate-400"
       />
 
       <input
@@ -73,11 +73,11 @@ export default function DeckExport() {
         placeholder="Tag filter (optional)"
         value={tag}
         onChange={(e) => handleTagChange(e.target.value)}
-        className="w-full px-3 py-2 rounded-xl bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-200 text-sm placeholder-gray-400"
+        className="w-full px-3 py-2 rounded-xl bg-slate-100 dark:bg-slate-700 text-slate-800 dark:text-slate-200 text-sm placeholder-slate-400"
       />
 
       {wordCount !== null && (
-        <p className="text-xs text-gray-500 dark:text-gray-400">
+        <p className="text-xs text-slate-500 dark:text-slate-400">
           {wordCount} word{wordCount !== 1 ? 's' : ''} will be exported
         </p>
       )}

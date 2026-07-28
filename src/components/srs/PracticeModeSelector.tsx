@@ -15,10 +15,10 @@ const MODES: { mode: PracticeMode; label: string; emoji: string; description: st
 export default function PracticeModeSelector({ onSelect, retention }: Props) {
   return (
     <div className="flex flex-col items-center py-6">
-      <h2 className="text-lg font-semibold text-gray-700 dark:text-gray-200 mb-1">
+      <h2 className="text-lg font-semibold text-slate-700 dark:text-slate-200 mb-1">
         How do you want to practice?
       </h2>
-      <p className="text-sm text-gray-400 dark:text-gray-500 mb-6">
+      <p className="text-sm text-slate-500 dark:text-slate-400 mb-6">
         Choose which side of the card to show first
       </p>
       <div className="grid grid-cols-1 gap-3 w-full max-w-sm">
@@ -26,12 +26,12 @@ export default function PracticeModeSelector({ onSelect, retention }: Props) {
           <button
             key={mode}
             onClick={() => onSelect(mode)}
-            className="flex items-center gap-3 p-4 rounded-xl border-2 border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 hover:border-indigo-400 dark:hover:border-indigo-500 transition-colors text-left"
+            className="flex items-center gap-3 p-4 rounded-xl border-2 border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 hover:border-indigo-400 dark:hover:border-indigo-500 transition-colors text-left"
           >
             <span className="text-2xl">{emoji}</span>
             <div>
-              <p className="font-medium text-gray-800 dark:text-gray-100">{label}</p>
-              <p className="text-xs text-gray-400 dark:text-gray-500">{description}</p>
+              <p className="font-medium text-slate-800 dark:text-slate-100">{label}</p>
+              <p className="text-xs text-slate-500 dark:text-slate-400">{description}</p>
             </div>
           </button>
         ))}

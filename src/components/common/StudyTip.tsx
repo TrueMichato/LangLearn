@@ -57,7 +57,7 @@ export default function StudyTip({ category, context, className = '' }: StudyTip
       <div className="flex justify-end mt-1">
         <button
           onClick={handleNext}
-          className="min-h-[44px] text-xs font-medium text-indigo-500 dark:text-indigo-400 hover:text-indigo-700 dark:hover:text-indigo-300 transition-colors px-1"
+          className="min-h-[44px] text-xs font-medium text-indigo-600 dark:text-indigo-400 hover:text-indigo-700 dark:hover:text-indigo-300 transition-colors px-1"
         >
           Next tip →
         </button>

@@ -106,7 +106,7 @@ export default function SentenceBuilderPage() {
                   key={l}
                   onClick={() => setLanguage(l)}
                   className={`px-4 py-2 rounded-xl text-sm font-medium transition-colors ${
-                    language === l ? 'bg-indigo-600 text-white' : 'bg-white dark:bg-slate-700 text-slate-700 dark:text-slate-300 border border-gray-300 dark:border-white/10'
+                    language === l ? 'bg-indigo-600 text-white' : 'bg-white dark:bg-slate-700 text-slate-700 dark:text-slate-300 border border-slate-300 dark:border-white/10'
                   }`}
                 >
                   {getLanguageLabel(l)}
@@ -127,7 +127,7 @@ export default function SentenceBuilderPage() {
                 key={m}
                 onClick={() => setMode(m)}
                 className={`px-4 py-2 rounded-xl text-sm font-medium transition-colors ${
-                  mode === m ? 'bg-indigo-600 text-white' : 'bg-white dark:bg-slate-700 text-slate-700 dark:text-slate-300 border border-gray-300 dark:border-white/10'
+                  mode === m ? 'bg-indigo-600 text-white' : 'bg-white dark:bg-slate-700 text-slate-700 dark:text-slate-300 border border-slate-300 dark:border-white/10'
                 }`}
               >
                 {m === 'tiles' ? '🧩 Tiles' : '⌨️ Type'}
@@ -145,7 +145,7 @@ export default function SentenceBuilderPage() {
                 key={d}
                 onClick={() => setDifficulty(d)}
                 className={`px-4 py-2 rounded-xl text-sm font-medium capitalize transition-colors ${
-                  difficulty === d ? 'bg-indigo-600 text-white' : 'bg-white dark:bg-slate-700 text-slate-700 dark:text-slate-300 border border-gray-300 dark:border-white/10'
+                  difficulty === d ? 'bg-indigo-600 text-white' : 'bg-white dark:bg-slate-700 text-slate-700 dark:text-slate-300 border border-slate-300 dark:border-white/10'
                 }`}
               >
                 {d}

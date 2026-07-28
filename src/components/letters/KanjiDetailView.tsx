@@ -37,7 +37,7 @@ export default function KanjiDetailView({ character, language, onClose }: Props)
   }
 
   return (
-    <div className="fixed inset-0 z-50 flex items-end sm:items-center justify-center" onClick={onClose}>
+    <div className="fixed inset-0 z-[60] flex items-end sm:items-center justify-center" onClick={onClose}>
       <div className="absolute inset-0 bg-black/40" />
       <div
         className="relative bg-white dark:bg-slate-800 rounded-2xl shadow-lg p-6 mx-4 mb-4 sm:mb-0 w-full max-w-md max-h-[85vh] overflow-y-auto space-y-5"
@@ -100,7 +100,7 @@ export default function KanjiDetailView({ character, language, onClose }: Props)
           (character.kunyomi && character.kunyomi.length > 0)) && (
           <div className="space-y-2">
             <h3 className="text-sm font-semibold text-slate-700 dark:text-slate-200">🔤 Readings</h3>
-            <p className="text-xs text-slate-400 dark:text-slate-500">
+            <p className="text-xs text-slate-500 dark:text-slate-400">
               <strong>On&apos;yomi</strong> — Chinese-derived reading, used in compound words (jukugo).{' '}
               <strong>Kun&apos;yomi</strong> — native Japanese reading, used alone or with okurigana.
             </p>
@@ -163,7 +163,7 @@ export default function KanjiDetailView({ character, language, onClose }: Props)
 
         {/* Source attribution */}
         {character.source && (
-          <p className="text-xs text-slate-400 dark:text-slate-500 italic">Content from Tofugu.com</p>
+          <p className="text-xs text-slate-500 dark:text-slate-400 italic">Content from Tofugu.com</p>
         )}
       </div>
     </div>

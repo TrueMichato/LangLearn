@@ -248,7 +248,7 @@ export default function RecognitionQuiz({ characters, alphabetName, language, on
           <>
             <span className="text-7xl text-slate-900 dark:text-slate-100">{currentQuestion.char}</span>
             {currentQuestion.meaning && (
-              <p className="text-sm text-slate-400 dark:text-slate-500 mt-1">{currentQuestion.meaning}</p>
+              <p className="text-sm text-slate-500 dark:text-slate-400 mt-1">{currentQuestion.meaning}</p>
             )}
           </>
         )}
@@ -256,7 +256,7 @@ export default function RecognitionQuiz({ characters, alphabetName, language, on
           <>
             <span className="text-4xl font-bold text-slate-800 dark:text-slate-100">{currentQuestion.romanji}</span>
             {currentQuestion.meaning && (
-              <p className="text-sm text-slate-400 dark:text-slate-500 mt-1">{currentQuestion.meaning}</p>
+              <p className="text-sm text-slate-500 dark:text-slate-400 mt-1">{currentQuestion.meaning}</p>
             )}
           </>
         )}
@@ -272,7 +272,7 @@ export default function RecognitionQuiz({ characters, alphabetName, language, on
 
       {/* Auto-play TTS for listen round */}
       {currentRound.type === 'listen-to-char' && (
-        <p className="text-center text-sm text-slate-400 dark:text-slate-500">Tap to hear again</p>
+        <p className="text-center text-sm text-slate-500 dark:text-slate-400">Tap to hear again</p>
       )}
 
       {/* Options */}
@@ -315,7 +315,7 @@ export default function RecognitionQuiz({ characters, alphabetName, language, on
           )}
           <p>{currentQuestion.mnemonic}</p>
           {currentQuestion.source && (
-            <p className="text-xs text-slate-400 dark:text-slate-500 mt-1 italic">From Tofugu.com</p>
+            <p className="text-xs text-slate-500 dark:text-slate-400 mt-1 italic">From Tofugu.com</p>
           )}
         </div>
       )}
@@ -327,7 +327,7 @@ export default function RecognitionQuiz({ characters, alphabetName, language, on
 
       {/* XP toast */}
       {xpToast && (
-        <div className="fixed top-4 right-4 bg-indigo-600 text-white px-4 py-2 rounded-xl shadow-lg text-sm font-medium animate-bounce z-50">
+        <div className="fixed top-4 right-4 bg-indigo-600 text-white px-4 py-2 rounded-xl shadow-lg text-sm font-medium animate-[slideDown_0.3s_ease-out] z-50">
           +{XP_PER_QUIZ_CORRECT} XP
         </div>
       )}

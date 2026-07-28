@@ -126,7 +126,7 @@ export default function AnalyticsPage() {
           className={`px-4 py-1.5 rounded-full text-sm font-medium whitespace-nowrap transition-colors ${
             selectedLang === undefined
               ? 'bg-indigo-600 text-white'
-              : 'bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300'
+              : 'bg-slate-100 dark:bg-slate-700 text-slate-600 dark:text-slate-300'
           }`}
         >
           All Languages
@@ -138,7 +138,7 @@ export default function AnalyticsPage() {
             className={`px-4 py-1.5 rounded-full text-sm font-medium whitespace-nowrap transition-colors ${
               selectedLang === lang
                 ? 'bg-indigo-600 text-white'
-                : 'bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300'
+                : 'bg-slate-100 dark:bg-slate-700 text-slate-600 dark:text-slate-300'
             }`}
           >
             {getLanguageLabel(lang)}
@@ -215,7 +215,7 @@ export default function AnalyticsPage() {
       {/* Reading Stats */}
       <Section title="📖 Reading">
         {reading.totalTextsRead === 0 ? (
-          <p className="text-sm text-slate-400 dark:text-slate-500 text-center py-4">
+          <p className="text-sm text-slate-500 dark:text-slate-400 text-center py-4">
             Start reading in the Reader to see your stats here! 📖
           </p>
         ) : (
@@ -259,7 +259,7 @@ export default function AnalyticsPage() {
       {/* Weakest Words */}
       <Section title="Weakest Words">
         {weakest.length === 0 ? (
-          <p className="text-sm text-slate-400 dark:text-slate-500 text-center py-4">
+          <p className="text-sm text-slate-500 dark:text-slate-400 text-center py-4">
             No reviews yet — add a few words and they'll show up here. You've got this! 💛
           </p>
         ) : (
@@ -275,7 +275,7 @@ export default function AnalyticsPage() {
                     <p className="font-medium text-slate-800 dark:text-slate-100 truncate">
                       {word.word}
                       {word.reading && (
-                        <span className="text-xs text-slate-400 dark:text-slate-500 ml-1">
+                        <span className="text-xs text-slate-500 dark:text-slate-400 ml-1">
                           ({word.reading})
                         </span>
                       )}
@@ -289,7 +289,7 @@ export default function AnalyticsPage() {
                   <p className="text-sm font-semibold text-red-500 dark:text-red-400">
                     {review.ease.toFixed(2)}
                   </p>
-                  <p className="text-xs text-slate-400 dark:text-slate-500">
+                  <p className="text-xs text-slate-500 dark:text-slate-400">
                     {review.lastReviewDate
                       ? shortDate(review.lastReviewDate)
                       : 'Never'}
@@ -399,7 +399,7 @@ function ActivityBalanceSection({
   return (
     <Section title={`Activity Balance (30 days)${allLanguages ? ' — all languages' : ''}`}>
       {total === 0 ? (
-        <p className="text-sm text-slate-400 dark:text-slate-500 text-center py-4">
+        <p className="text-sm text-slate-500 dark:text-slate-400 text-center py-4">
           No study sessions recorded yet
         </p>
       ) : (

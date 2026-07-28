@@ -53,7 +53,7 @@ export default function FuriganaText({
             >
               {token.surface}
               <rp>(</rp>
-              <rt className="text-[0.6em] text-slate-400 dark:text-slate-500">{token.reading}</rt>
+              <rt className="text-[0.6em] text-slate-500 dark:text-slate-400">{token.reading}</rt>
               <rp>)</rp>
             </ruby>
           );

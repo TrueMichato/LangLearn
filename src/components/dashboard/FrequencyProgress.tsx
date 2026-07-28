@@ -56,24 +56,24 @@ export default function FrequencyProgress({ languages }: FrequencyProgressProps)
   if (loading || coverage.length === 0) return null;
 
   return (
-    <div className="bg-white dark:bg-gray-800 rounded-2xl shadow p-4 space-y-3">
-      <h3 className="text-sm font-semibold text-gray-800 dark:text-gray-100">
+    <div className="bg-white dark:bg-slate-800 rounded-2xl shadow p-4 space-y-3">
+      <h3 className="text-sm font-semibold text-slate-800 dark:text-slate-100">
         📊 Vocabulary Coverage
       </h3>
 
       {coverage.map((c) => (
         <div key={c.language} className="space-y-2">
-          <p className="text-xs font-medium text-gray-600 dark:text-gray-300">
+          <p className="text-xs font-medium text-slate-600 dark:text-slate-300">
             {getLanguageLabel(c.language)}
           </p>
 
           {/* Top 100 */}
           <div>
-            <div className="flex justify-between text-xs text-gray-500 dark:text-gray-400 mb-0.5">
+            <div className="flex justify-between text-xs text-slate-500 dark:text-slate-400 mb-0.5">
               <span>⭐ Top 100</span>
               <span>{c.top100} / 100</span>
             </div>
-            <div className="h-2 bg-gray-200 dark:bg-gray-700 rounded-full overflow-hidden">
+            <div className="h-2 bg-slate-200 dark:bg-slate-700 rounded-full overflow-hidden">
               <div
                 className="h-full bg-yellow-500 dark:bg-yellow-400 rounded-full transition-all"
                 style={{ width: `${Math.min(100, c.top100)}%` }}
@@ -83,11 +83,11 @@ export default function FrequencyProgress({ languages }: FrequencyProgressProps)
 
           {/* Top 500 */}
           <div>
-            <div className="flex justify-between text-xs text-gray-500 dark:text-gray-400 mb-0.5">
+            <div className="flex justify-between text-xs text-slate-500 dark:text-slate-400 mb-0.5">
               <span>📗 Top 500</span>
               <span>{c.top500} / 500</span>
             </div>
-            <div className="h-2 bg-gray-200 dark:bg-gray-700 rounded-full overflow-hidden">
+            <div className="h-2 bg-slate-200 dark:bg-slate-700 rounded-full overflow-hidden">
               <div
                 className="h-full bg-green-500 dark:bg-green-400 rounded-full transition-all"
                 style={{ width: `${Math.min(100, (c.top500 / 500) * 100)}%` }}

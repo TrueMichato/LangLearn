@@ -56,7 +56,7 @@ function ProgressRing({ progress, size = 80, strokeWidth = 6 }: { progress: numb
           fill="none"
           stroke="currentColor"
           strokeWidth={strokeWidth}
-          className="text-gray-200 dark:text-gray-700"
+          className="text-slate-200 dark:text-slate-700"
         />
         <circle
           cx={size / 2}
@@ -68,11 +68,11 @@ function ProgressRing({ progress, size = 80, strokeWidth = 6 }: { progress: numb
           strokeDasharray={circumference}
           strokeDashoffset={offset}
           strokeLinecap="round"
-          className="text-indigo-500 dark:text-indigo-400 transition-all duration-700"
+          className="text-indigo-600 dark:text-indigo-400 transition-all duration-700"
         />
       </svg>
       <div className="absolute inset-0 flex items-center justify-center">
-        <span className="text-xs font-semibold text-gray-600 dark:text-gray-300">
+        <span className="text-xs font-semibold text-slate-600 dark:text-slate-300">
           {Math.round(progress * 100)}%
         </span>
       </div>
@@ -91,16 +91,16 @@ function LanguageVocabSection({ data }: { data: WordCountByLanguage }) {
 
   return (
     <div>
-      <p className="text-sm font-medium text-gray-600 dark:text-gray-300 mb-3">
+      <p className="text-sm font-medium text-slate-600 dark:text-slate-300 mb-3">
         {getLanguageLabel(data.language)}
       </p>
       <div className="flex items-center gap-4">
         <ProgressRing progress={progress} />
         <div className="flex-1 min-w-0">
-          <p className="text-3xl font-bold text-gray-800 dark:text-gray-100">
+          <p className="text-3xl font-bold text-slate-800 dark:text-slate-100">
             ~{data.known.toLocaleString()}
           </p>
-          <p className="text-sm text-gray-500 dark:text-gray-400">
+          <p className="text-sm text-slate-500 dark:text-slate-400">
             Words Known
           </p>
           <div className="flex flex-wrap items-center gap-2 mt-1">
@@ -117,11 +117,11 @@ function LanguageVocabSection({ data }: { data: WordCountByLanguage }) {
       </div>
 
       <div className="mt-3 space-y-1.5">
-        <div className="flex justify-between text-xs text-gray-500 dark:text-gray-400">
+        <div className="flex justify-between text-xs text-slate-500 dark:text-slate-400">
           <span>Next milestone: {nextMilestone.toLocaleString()} words</span>
           <span>{data.known}/{nextMilestone}</span>
         </div>
-        <div className="w-full h-1.5 bg-gray-200 dark:bg-gray-700 rounded-full overflow-hidden">
+        <div className="w-full h-1.5 bg-slate-200 dark:bg-slate-700 rounded-full overflow-hidden">
           <div
             className="h-full bg-indigo-500 dark:bg-indigo-400 rounded-full transition-all duration-700"
             style={{ width: `${Math.min(progress * 100, 100)}%` }}
@@ -129,13 +129,13 @@ function LanguageVocabSection({ data }: { data: WordCountByLanguage }) {
         </div>
       </div>
 
-      <div className="mt-3 flex gap-3 text-xs text-gray-500 dark:text-gray-400">
+      <div className="mt-3 flex gap-3 text-xs text-slate-500 dark:text-slate-400">
         <span>📖 {data.learning} learning</span>
         <span>📗 {data.total} total</span>
       </div>
 
       {isJapanese && nextJlpt && (
-        <p className="mt-2 text-xs text-gray-500 dark:text-gray-400">
+        <p className="mt-2 text-xs text-slate-500 dark:text-slate-400">
           Next JLPT level: {nextJlpt.label} (~{nextJlpt.words.toLocaleString()} words)
         </p>
       )}
@@ -153,8 +153,8 @@ export default function VocabSizeCard() {
   if (!data || data.length === 0) return null;
 
   return (
-    <div className="bg-white dark:bg-gray-800 rounded-2xl shadow p-4 mb-6">
-      <h3 className="font-semibold text-gray-800 dark:text-gray-100 mb-4 flex items-center gap-2">
+    <div className="bg-white dark:bg-slate-800 rounded-2xl shadow p-4 mb-6">
+      <h3 className="font-semibold text-slate-800 dark:text-slate-100 mb-4 flex items-center gap-2">
         <span>📊</span> Vocabulary Size
       </h3>
       <div className="space-y-5">

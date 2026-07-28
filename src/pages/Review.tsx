@@ -259,8 +259,8 @@ export default function ReviewPage() {
       return (
         <div className="flex flex-col items-center justify-center h-64 text-center">
           <p className="text-5xl mb-4">✨</p>
-          <p className="text-xl font-semibold text-gray-700 dark:text-gray-200">No misses to fix!</p>
-          <p className="text-gray-500 dark:text-gray-400 mt-2">
+          <p className="text-xl font-semibold text-slate-700 dark:text-slate-200">No misses to fix!</p>
+          <p className="text-slate-500 dark:text-slate-400 mt-2">
             You've cleared your recent slip-ups. Beautiful work. 💪
           </p>
           <button
@@ -275,8 +275,8 @@ export default function ReviewPage() {
     return (
       <div className="flex flex-col items-center justify-center h-64 text-center">
         <p className="text-5xl mb-4">🎉</p>
-        <p className="text-xl font-semibold text-gray-700 dark:text-gray-200">No cards to review!</p>
-        <p className="text-gray-500 dark:text-gray-400 mt-2">
+        <p className="text-xl font-semibold text-slate-700 dark:text-slate-200">No cards to review!</p>
+        <p className="text-slate-500 dark:text-slate-400 mt-2">
           Add words from the Reader or check back later.
         </p>
         <button
@@ -343,7 +343,7 @@ export default function ReviewPage() {
     return (
       <div className="flex flex-col items-center justify-center h-64 text-center">
         <p className="text-6xl mb-4 animate-[pop_0.5s_ease-out]">🎉</p>
-        <p className="text-2xl font-bold mb-1 bg-gradient-to-r from-indigo-500 to-violet-500 bg-clip-text text-transparent">
+        <p className="text-2xl font-bold mb-1 text-indigo-600 dark:text-indigo-400">
           Session Complete!
         </p>
         <p className="text-slate-500 dark:text-slate-400 mt-2 animate-[countUp_0.3s_ease-out]">
@@ -380,13 +380,13 @@ export default function ReviewPage() {
               {isMistakeDeck ? '💪 Fix your misses' : topicId ? `🎯 ${topicId}` : studySet ? `Review: ${studySet.name}` : 'Review'}
             </h2>
             {reviewBatchSize > 0 && totalDue > queue.length && (
-              <p className="text-xs text-slate-400 dark:text-slate-500">
+              <p className="text-xs text-slate-500 dark:text-slate-400">
                 Reviewing {queue.length} of {totalDue} due cards
               </p>
             )}
           </div>
         </div>
-        <span className="text-sm text-slate-400 dark:text-slate-500">
+        <span className="text-sm text-slate-500 dark:text-slate-400">
           {currentIndex + 1} / {queue.length}
         </span>
       </div>
@@ -394,7 +394,7 @@ export default function ReviewPage() {
       {/* Progress bar */}
       <div className="relative w-full bg-slate-200 dark:bg-slate-700 rounded-full h-2.5 mb-4 overflow-hidden">
         <div
-          className="h-2.5 rounded-full bg-gradient-to-r from-indigo-500 to-violet-500 transition-all duration-500"
+          className="h-2.5 rounded-full bg-indigo-500 transition-all duration-500"
           style={{ width: `${Math.round(((currentIndex) / queue.length) * 100)}%` }}
         />
         <span className="absolute inset-0 flex items-center justify-center text-[9px] font-medium text-slate-600 dark:text-slate-300 leading-none">
@@ -429,7 +429,7 @@ export default function ReviewPage() {
           {isFlipped && (
             <>
               <GradeButtons onGrade={handleGrade} />
-              <div className="hidden sm:flex justify-center gap-4 mt-2 text-xs text-slate-400 dark:text-slate-500">
+              <div className="hidden sm:flex justify-center gap-4 mt-2 text-xs text-slate-500 dark:text-slate-400">
                 <span>Space: flip</span>
                 <span>1-4: grade</span>
                 <span>Esc: exit</span>
@@ -445,7 +445,7 @@ export default function ReviewPage() {
           {isFlipped && (
             <>
               <GradeButtons onGrade={handleGrade} />
-              <div className="hidden sm:flex justify-center gap-4 mt-2 text-xs text-slate-400 dark:text-slate-500">
+              <div className="hidden sm:flex justify-center gap-4 mt-2 text-xs text-slate-500 dark:text-slate-400">
                 <span>Space: flip</span>
                 <span>1-4: grade</span>
                 <span>Esc: exit</span>
@@ -473,7 +473,7 @@ export default function ReviewPage() {
           {isFlipped && (
             <>
               <GradeButtons onGrade={handleGrade} />
-              <div className="hidden sm:flex justify-center gap-4 mt-2 text-xs text-slate-400 dark:text-slate-500">
+              <div className="hidden sm:flex justify-center gap-4 mt-2 text-xs text-slate-500 dark:text-slate-400">
                 <span>Space: flip</span>
                 <span>1-4: grade</span>
                 <span>Esc: exit</span>
@@ -489,7 +489,7 @@ export default function ReviewPage() {
           {isFlipped && (
             <>
               <GradeButtons onGrade={handleGrade} />
-              <div className="hidden sm:flex justify-center gap-4 mt-2 text-xs text-slate-400 dark:text-slate-500">
+              <div className="hidden sm:flex justify-center gap-4 mt-2 text-xs text-slate-500 dark:text-slate-400">
                 <span>Space: flip</span>
                 <span>1-4: grade</span>
                 <span>Esc: exit</span>
@@ -500,7 +500,7 @@ export default function ReviewPage() {
       )}
       </div>
 
-      <p className="text-center text-xs text-slate-400 dark:text-slate-500 mt-6">
+      <p className="text-center text-xs text-slate-500 dark:text-slate-400 mt-6">
         No worries if you didn't know — it'll come back later 💪
       </p>
     </div>

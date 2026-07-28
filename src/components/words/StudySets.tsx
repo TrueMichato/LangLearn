@@ -70,7 +70,7 @@ export default function StudySets() {
         <h2 className="text-lg font-semibold text-slate-900 dark:text-slate-100">
           📚 Study Sets
         </h2>
-        <span className="text-slate-400 dark:text-slate-500 text-sm">
+        <span className="text-slate-500 dark:text-slate-400 text-sm">
           {collapsed ? '▶' : '▼'}
         </span>
       </button>
@@ -182,7 +182,7 @@ function SetPill({
         </span>
       </div>
 
-      <div className={`flex items-center gap-2 text-xs ${isActive ? 'text-white/80' : 'text-slate-400 dark:text-slate-500'}`}>
+      <div className={`flex items-center gap-2 text-xs ${isActive ? 'text-white/80' : 'text-slate-500 dark:text-slate-400'}`}>
         <span>{wordCount} words</span>
         <span>{dueCount} due</span>
       </div>

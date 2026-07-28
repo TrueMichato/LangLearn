@@ -27,5 +27,10 @@ dev-dist/
 infra/push-worker/vapid.json
 .env.example
 
-# Local tool caches
-.impeccable/
+# impeccable design skill — keep DESIGN.md, PRODUCT.md, .impeccable/design.json,
+# .impeccable/config.json and .impeccable/critique/ committed; ignore machine-local/transient state.
+.impeccable/config.local.json
+.impeccable/hook.cache.json
+
+# Playwright MCP test artifacts
+.playwright-mcp/

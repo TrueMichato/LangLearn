@@ -33,7 +33,7 @@ export default function GrammarQuiz({ question, options, answer, onAnswer }: Gra
           } else if (i === selected) {
             cls += 'border-red-500 bg-red-100 dark:bg-red-900 text-red-800 dark:text-red-200';
           } else {
-            cls += 'border-slate-200 bg-slate-50 dark:bg-slate-800 dark:border-slate-700 text-slate-400 dark:text-slate-500';
+            cls += 'border-slate-200 bg-slate-50 dark:bg-slate-800 dark:border-slate-700 text-slate-500 dark:text-slate-400';
           }
 
           return (

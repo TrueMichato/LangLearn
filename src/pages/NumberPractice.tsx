@@ -156,8 +156,8 @@ export default function NumberPracticePage() {
     return (
       <div className="text-center py-12 space-y-3">
         <div className="text-5xl">🔢</div>
-        <h2 className="text-lg font-semibold text-gray-800 dark:text-gray-100">Number Practice</h2>
-        <p className="text-sm text-gray-500 dark:text-gray-400 max-w-xs mx-auto">
+        <h2 className="text-lg font-semibold text-slate-800 dark:text-slate-100">Number Practice</h2>
+        <p className="text-sm text-slate-500 dark:text-slate-400 max-w-xs mx-auto">
           Number drills aren't available for your active languages yet. Add Arabic to practice
           reading and spelling numbers.
         </p>
@@ -169,8 +169,8 @@ export default function NumberPracticePage() {
   if (phase === 'setup') {
     return (
       <div>
-        <h2 className="text-lg font-semibold text-gray-800 dark:text-gray-100 mb-4">🔢 Number Practice</h2>
-        <p className="text-sm text-gray-500 dark:text-gray-400 mb-4">
+        <h2 className="text-lg font-semibold text-slate-800 dark:text-slate-100 mb-4">🔢 Number Practice</h2>
+        <p className="text-sm text-slate-500 dark:text-slate-400 mb-4">
           Learn to read and spell numbers. Match digits to their written-out form (and back).
         </p>
 
@@ -195,8 +195,8 @@ export default function NumberPracticePage() {
         </div>
 
         {/* Direction toggle */}
-        <div className="bg-white dark:bg-gray-800 rounded-2xl shadow p-4 mb-4">
-          <h3 className="text-sm font-medium text-gray-700 dark:text-gray-300 mb-3">Mode</h3>
+        <div className="bg-white dark:bg-slate-800 rounded-2xl shadow p-4 mb-4">
+          <h3 className="text-sm font-medium text-slate-700 dark:text-slate-300 mb-3">Mode</h3>
           <div className="grid grid-cols-2 gap-2">
             <button
               onClick={() => setDirection('numeral-to-word')}
@@ -222,8 +222,8 @@ export default function NumberPracticePage() {
         </div>
 
         {/* Range filter */}
-        <div className="bg-white dark:bg-gray-800 rounded-2xl shadow p-4 mb-4">
-          <h3 className="text-sm font-medium text-gray-700 dark:text-gray-300 mb-3">
+        <div className="bg-white dark:bg-slate-800 rounded-2xl shadow p-4 mb-4">
+          <h3 className="text-sm font-medium text-slate-700 dark:text-slate-300 mb-3">
             Ranges {selectedRanges.size > 0 ? `(${selectedRanges.size} selected)` : '(all)'}
           </h3>
           <div className="flex flex-wrap gap-2">
@@ -251,7 +251,7 @@ export default function NumberPracticePage() {
           Start Practice ({Math.min(SESSION_LENGTH, pool.length)} questions)
         </button>
         {pool.length < 4 && (
-          <p className="text-xs text-center text-gray-400 dark:text-gray-500 mt-2">
+          <p className="text-xs text-center text-slate-400 dark:text-slate-500 mt-2">
             Select at least one range with enough numbers.
           </p>
         )}
@@ -266,20 +266,20 @@ export default function NumberPracticePage() {
     return (
       <div className="text-center space-y-6 py-8">
         <div className="text-6xl">{pct >= 80 ? '🎉' : pct >= 50 ? '👍' : '💪'}</div>
-        <h2 className="text-2xl font-bold text-gray-800 dark:text-gray-100">Session Complete!</h2>
-        <div className="bg-white dark:bg-gray-800 rounded-2xl shadow p-6 space-y-3">
+        <h2 className="text-2xl font-bold text-slate-800 dark:text-slate-100">Session Complete!</h2>
+        <div className="bg-white dark:bg-slate-800 rounded-2xl shadow p-6 space-y-3">
           <div className="text-4xl font-bold text-indigo-600 dark:text-indigo-400">
             {score}/{total}
           </div>
-          <p className="text-sm text-gray-500 dark:text-gray-400">correct answers</p>
+          <p className="text-sm text-slate-500 dark:text-slate-400">correct answers</p>
           <div className="flex justify-center gap-6 text-sm">
             <div>
-              <span className="font-semibold text-gray-800 dark:text-gray-200">{pct}%</span>
-              <span className="text-gray-400 dark:text-gray-500 ml-1">accuracy</span>
+              <span className="font-semibold text-slate-800 dark:text-slate-200">{pct}%</span>
+              <span className="text-slate-400 dark:text-slate-500 ml-1">accuracy</span>
             </div>
             <div>
-              <span className="font-semibold text-gray-800 dark:text-gray-200">{bestStreak}</span>
-              <span className="text-gray-400 dark:text-gray-500 ml-1">best streak</span>
+              <span className="font-semibold text-slate-800 dark:text-slate-200">{bestStreak}</span>
+              <span className="text-slate-400 dark:text-slate-500 ml-1">best streak</span>
             </div>
           </div>
           <div className="pt-2 text-sm text-indigo-600 dark:text-indigo-400 font-medium">
@@ -289,7 +289,7 @@ export default function NumberPracticePage() {
         <div className="flex gap-3">
           <button
             onClick={() => setPhase('setup')}
-            className="flex-1 bg-white dark:bg-gray-800 text-indigo-600 dark:text-indigo-400 border border-indigo-200 dark:border-indigo-800 py-3 rounded-xl font-semibold hover:bg-indigo-50 dark:hover:bg-gray-700 transition-colors press-feedback min-h-[44px]"
+            className="flex-1 bg-white dark:bg-slate-800 text-indigo-600 dark:text-indigo-400 border border-indigo-200 dark:border-indigo-800 py-3 rounded-xl font-semibold hover:bg-indigo-50 dark:hover:bg-slate-700 transition-colors press-feedback min-h-[44px]"
           >
             New Session
           </button>
@@ -314,7 +314,7 @@ export default function NumberPracticePage() {
     <div>
       {/* Progress + stats */}
       <div className="flex justify-between items-center mb-2">
-        <span className="text-sm text-gray-500 dark:text-gray-400">
+        <span className="text-sm text-slate-500 dark:text-slate-400">
           {index + 1} / {total}
         </span>
         <div className="flex gap-3 text-sm">
@@ -330,21 +330,21 @@ export default function NumberPracticePage() {
       </div>
 
       {/* Prompt */}
-      <div className="bg-white dark:bg-gray-800 rounded-2xl shadow p-6 mb-6 text-center">
-        <p className="text-xs text-gray-400 dark:text-gray-500 mb-2">
+      <div className="bg-white dark:bg-slate-800 rounded-2xl shadow p-6 mb-6 text-center">
+        <p className="text-xs text-slate-400 dark:text-slate-500 mb-2">
           {isNumeralPrompt ? 'Which word is this number?' : 'Which number is this word?'}
         </p>
         {isNumeralPrompt ? (
           <div>
-            <div className="text-6xl font-bold text-gray-800 dark:text-gray-100 leading-none">
+            <div className="text-6xl font-bold text-slate-800 dark:text-slate-100 leading-none">
               {current.entry.numeral}
             </div>
-            <div className="text-lg text-gray-400 dark:text-gray-500 mt-2">{current.entry.value}</div>
+            <div className="text-lg text-slate-400 dark:text-slate-500 mt-2">{current.entry.value}</div>
           </div>
         ) : (
           <div>
             <div
-              className="text-4xl font-bold text-gray-800 dark:text-gray-100 leading-snug"
+              className="text-4xl font-bold text-slate-800 dark:text-slate-100 leading-snug"
               {...rtlProps(language)}
             >
               {current.entry.word}
@@ -365,11 +365,11 @@ export default function NumberPracticePage() {
           const isChosen = answered === opt.value;
           const isRight = opt.value === correctValue;
           let cls =
-            'border-slate-200 dark:border-slate-600 bg-white dark:bg-gray-800 hover:border-indigo-400 dark:hover:border-indigo-500';
+            'border-slate-200 dark:border-slate-600 bg-white dark:bg-slate-800 hover:border-indigo-400 dark:hover:border-indigo-500';
           if (answered !== null) {
             if (isRight) cls = 'border-green-500 bg-green-50 dark:bg-green-900/30';
             else if (isChosen) cls = 'border-red-500 bg-red-50 dark:bg-red-900/30';
-            else cls = 'border-slate-200 dark:border-slate-600 bg-white dark:bg-gray-800 opacity-60';
+            else cls = 'border-slate-200 dark:border-slate-600 bg-white dark:bg-slate-800 opacity-60';
           }
           return (
             <button
@@ -381,21 +381,21 @@ export default function NumberPracticePage() {
               {isNumeralPrompt ? (
                 <>
                   <span
-                    className="text-2xl font-bold text-gray-800 dark:text-gray-100"
+                    className="text-2xl font-bold text-slate-800 dark:text-slate-100"
                     {...rtlProps(language)}
                   >
                     {opt.word}
                   </span>
                   {answered !== null && (
-                    <span className="text-xs text-gray-400 dark:text-gray-500">{opt.reading}</span>
+                    <span className="text-xs text-slate-400 dark:text-slate-500">{opt.reading}</span>
                   )}
                 </>
               ) : (
                 <>
-                  <span className="text-3xl font-bold text-gray-800 dark:text-gray-100">
+                  <span className="text-3xl font-bold text-slate-800 dark:text-slate-100">
                     {opt.numeral}
                   </span>
-                  <span className="text-xs text-gray-400 dark:text-gray-500">{opt.value}</span>
+                  <span className="text-xs text-slate-400 dark:text-slate-500">{opt.value}</span>
                 </>
               )}
               <span className="sr-only">Option {i + 1}</span>
@@ -416,15 +416,15 @@ export default function NumberPracticePage() {
           >
             {answered === correctValue ? '✓ Correct!' : '✗ Not quite'}
           </div>
-          <div className="text-sm text-gray-600 dark:text-gray-300">
+          <div className="text-sm text-slate-600 dark:text-slate-300">
             <span className="text-2xl font-bold" {...rtlProps(language)}>
               {current.entry.numeral}
             </span>
-            <span className="mx-2 text-gray-400">=</span>
+            <span className="mx-2 text-slate-400">=</span>
             <span className="text-xl font-semibold" {...rtlProps(language)}>
               {current.entry.word}
             </span>
-            <span className="block text-xs text-gray-400 dark:text-gray-500 mt-1">
+            <span className="block text-xs text-slate-400 dark:text-slate-500 mt-1">
               {current.entry.reading} · {current.entry.value}
             </span>
           </div>

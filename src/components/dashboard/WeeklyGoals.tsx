@@ -9,7 +9,7 @@ function Ring({ goal }: { goal: GoalProgress }) {
   const circ = 2 * Math.PI * r;
   const pct = goal.target > 0 ? Math.min(1, goal.current / goal.target) : 0;
   const offset = circ * (1 - pct);
-  const color = goal.done ? 'text-green-500' : 'text-indigo-500 dark:text-indigo-400';
+  const color = goal.done ? 'text-green-500' : 'text-indigo-600 dark:text-indigo-400';
 
   return (
     <div className="flex flex-col items-center gap-1.5">
@@ -77,7 +77,7 @@ export default function WeeklyGoals() {
   const allDone = goals.every((g) => g.done);
 
   return (
-    <div className="bg-white dark:bg-gray-800 rounded-2xl shadow p-4 mb-4">
+    <div className="bg-white dark:bg-slate-800 rounded-2xl shadow p-4 mb-4">
       <div className="flex items-center justify-between mb-3">
         <h3 className="font-semibold text-slate-800 dark:text-slate-100">Weekly goals</h3>
         {allDone && (
@@ -91,7 +91,7 @@ export default function WeeklyGoals() {
           <Ring key={g.id} goal={g} />
         ))}
       </div>
-      <p className="text-[11px] text-slate-400 dark:text-slate-500 mt-3 text-center">
+      <p className="text-[11px] text-slate-500 dark:text-slate-400 mt-3 text-center">
         Progress over the last 7 days — every bit counts.
       </p>
     </div>

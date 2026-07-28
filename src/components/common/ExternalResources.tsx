@@ -702,7 +702,7 @@ export default function ExternalResources() {
   if (languagesWithResources.length === 0) return null;
 
   return (
-    <div className="mt-6 border-t border-gray-200 dark:border-gray-700 pt-4">
+    <div className="mt-6 border-t border-slate-200 dark:border-slate-700 pt-4">
       <button
         onClick={() => setOpen((prev) => !prev)}
         className="w-full min-h-[44px] flex items-center justify-between text-left"
@@ -711,7 +711,7 @@ export default function ExternalResources() {
           📚 Recommended Resources
         </span>
         <span
-          className={`text-gray-400 dark:text-gray-500 transition-transform duration-200 ${open ? 'rotate-180' : ''}`}
+          className={`text-slate-500 dark:text-slate-400 transition-transform duration-200 ${open ? 'rotate-180' : ''}`}
         >
           ▼
         </span>
@@ -729,7 +729,7 @@ export default function ExternalResources() {
               <div className="space-y-5">
                 {RESOURCES[lang].map((category) => (
                   <div key={`${lang}-${category.label}`}>
-                    <h4 className="text-sm font-semibold text-gray-500 dark:text-gray-400 uppercase tracking-wider mb-2">
+                    <h4 className="text-sm font-semibold text-slate-500 dark:text-slate-400 mb-2">
                       {category.emoji} {category.label}
                     </h4>
                     <div className="space-y-2">
@@ -739,15 +739,15 @@ export default function ExternalResources() {
                           href={resource.url}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="block bg-white dark:bg-gray-800 rounded-xl shadow p-4 hover:shadow-md transition-shadow"
+                          className="block bg-white dark:bg-slate-800 rounded-xl shadow p-4 hover:shadow-md transition-shadow"
                         >
                           <div className="flex items-center gap-1.5">
                             <span className="text-indigo-600 dark:text-indigo-400 font-medium text-sm">
                               {resource.name}
                             </span>
-                            <span className="text-gray-400 dark:text-gray-500 text-xs">↗</span>
+                            <span className="text-slate-500 dark:text-slate-400 text-xs">↗</span>
                           </div>
-                          <p className="text-sm text-gray-500 dark:text-gray-400 mt-1">
+                          <p className="text-sm text-slate-500 dark:text-slate-400 mt-1">
                             {resource.description}
                           </p>
                         </a>

@@ -87,19 +87,19 @@ export default function DictionaryModal({ isOpen, onClose }: Props) {
 
   return (
     <div
-      className="fixed inset-0 z-50 bg-black/50 flex items-start justify-center pt-16"
+      className="fixed inset-0 z-[60] bg-black/50 flex items-start justify-center pt-16"
       onClick={(e) => {
         if (e.target === e.currentTarget) onClose();
       }}
     >
-      <div className="bg-white dark:bg-gray-900 rounded-2xl shadow-xl w-full max-w-md mx-4 max-h-[70vh] flex flex-col">
+      <div className="bg-white dark:bg-slate-900 rounded-2xl shadow-xl w-full max-w-md mx-4 max-h-[70vh] flex flex-col">
         {/* Header */}
-        <div className="p-4 border-b border-gray-200 dark:border-gray-700">
+        <div className="p-4 border-b border-slate-200 dark:border-slate-700">
           <div className="flex items-center justify-between mb-3">
-            <h3 className="font-semibold text-gray-800 dark:text-gray-100">Dictionary</h3>
+            <h3 className="font-semibold text-slate-800 dark:text-slate-100">Dictionary</h3>
             <button
               onClick={onClose}
-              className="text-gray-500 hover:text-gray-800 dark:hover:text-gray-200 text-lg"
+              className="text-slate-500 hover:text-slate-800 dark:hover:text-slate-200 text-lg"
               aria-label="Close dictionary"
             >
               ✕
@@ -112,13 +112,13 @@ export default function DictionaryModal({ isOpen, onClose }: Props) {
             value={query}
             onChange={(e) => setQuery(e.target.value)}
             placeholder="Search..."
-            className="w-full px-3 py-2 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 focus:outline-none focus:ring-2 focus:ring-indigo-400 mb-2"
+            className="w-full px-3 py-2 rounded-lg border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-800 text-slate-900 dark:text-slate-100 focus:outline-none focus:ring-2 focus:ring-indigo-400 mb-2"
           />
 
-          <select
+          <select aria-label="Filter by language"
             value={language}
             onChange={(e) => setLanguage(e.target.value)}
-            className="w-full px-3 py-2 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100"
+            className="w-full px-3 py-2 rounded-lg border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-800 text-slate-900 dark:text-slate-100"
           >
             {activeLanguages.map((lang) => (
               <option key={lang} value={lang}>
@@ -131,11 +131,11 @@ export default function DictionaryModal({ isOpen, onClose }: Props) {
         {/* Results */}
         <div className="overflow-y-auto flex-1 p-4">
           {loading && (
-            <p className="text-center text-gray-400 dark:text-gray-500 py-4">Searching…</p>
+            <p className="text-center text-slate-500 dark:text-slate-400 py-4">Searching…</p>
           )}
 
           {!loading && query.trim() && results.length === 0 && (
-            <p className="text-center text-gray-400 dark:text-gray-500 py-4">No results found</p>
+            <p className="text-center text-slate-500 dark:text-slate-400 py-4">No results found</p>
           )}
 
           {results.map((r, i) => {
@@ -145,19 +145,19 @@ export default function DictionaryModal({ isOpen, onClose }: Props) {
             return (
               <div
                 key={`${r.word}-${r.source}-${i}`}
-                className="mb-3 p-3 rounded-xl border border-gray-200 dark:border-gray-700 bg-gray-50 dark:bg-gray-800"
+                className="mb-3 p-3 rounded-xl border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-800"
               >
                 <div className="flex items-start justify-between gap-2">
                   <div className="min-w-0 flex-1">
-                    <span className="text-lg font-semibold text-gray-900 dark:text-gray-100">
+                    <span className="text-lg font-semibold text-slate-900 dark:text-slate-100">
                       {r.word}
                     </span>
                     {r.reading && (
-                      <span className="ml-2 text-sm text-gray-500 dark:text-gray-400">
+                      <span className="ml-2 text-sm text-slate-500 dark:text-slate-400">
                         {r.reading}
                       </span>
                     )}
-                    <p className="text-sm text-gray-600 dark:text-gray-300 mt-1">{r.meaning}</p>
+                    <p className="text-sm text-slate-600 dark:text-slate-300 mt-1">{r.meaning}</p>
                   </div>
 
                   <span

@@ -1,4 +1,4 @@
-import { useMemo } from 'react';
+import { Fragment, useMemo } from 'react';
 import type { StudySession } from '../../db/schema';
 
 export interface HeatMapProps {
@@ -119,7 +119,7 @@ export default function HeatMap({ studySessions }: HeatMapProps) {
 
           {/* Grid rows (0=Mon … 6=Sun) */}
           {Array.from({ length: 7 }, (_, row) => (
-            <>
+            <Fragment key={`row-${row}`}>
               {/* Day label */}
               <div
                 key={`label-${row}`}
@@ -152,7 +152,7 @@ export default function HeatMap({ studySessions }: HeatMapProps) {
                   />
                 );
               })}
-            </>
+            </Fragment>
           ))}
         </div>
       </div>

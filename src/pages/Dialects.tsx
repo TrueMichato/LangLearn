@@ -50,8 +50,8 @@ export default function DialectsPage() {
     return (
       <div className="text-center py-12 space-y-3">
         <div className="text-5xl">🗣️</div>
-        <h2 className="text-lg font-semibold text-gray-800 dark:text-gray-100">Arabic Dialects</h2>
-        <p className="text-sm text-gray-500 dark:text-gray-400 max-w-xs mx-auto">
+        <h2 className="text-lg font-semibold text-slate-800 dark:text-slate-100">Arabic Dialects</h2>
+        <p className="text-sm text-slate-500 dark:text-slate-400 max-w-xs mx-auto">
           Add Arabic in Settings to explore the spoken dialects and how they differ from Modern
           Standard Arabic.
         </p>
@@ -76,15 +76,15 @@ export default function DialectsPage() {
         >
           ← Back to Learn
         </Link>
-        <h2 className="text-lg font-semibold text-gray-800 dark:text-gray-100">🗣️ Arabic Dialects</h2>
-        <p className="text-sm text-gray-500 dark:text-gray-400 mt-1">
+        <h2 className="text-lg font-semibold text-slate-800 dark:text-slate-100">🗣️ Arabic Dialects</h2>
+        <p className="text-sm text-slate-500 dark:text-slate-400 mt-1">
           Modern Standard Arabic (fuṣḥā) is the shared written core. Pick a spoken dialect to see how
           everyday speech differs — pronunciation, grammar markers and common phrases.
         </p>
       </div>
 
       {/* Dialect picker (bound to the app-wide preference) */}
-      <div className="bg-white dark:bg-gray-800 rounded-2xl shadow p-4">
+      <div className="bg-white dark:bg-slate-800 rounded-2xl shadow p-4">
         <p className="text-sm font-medium text-slate-700 dark:text-slate-200 mb-3">Your dialect</p>
         <div className="flex flex-wrap gap-2">
           {SPOKEN.map((code) => {
@@ -115,7 +115,7 @@ export default function DialectsPage() {
 
       {/* Chosen dialect spotlight */}
       {chosen && chosenInfo && chosenProfile && (
-        <div className="bg-white dark:bg-gray-800 rounded-2xl shadow p-4 space-y-4">
+        <div className="bg-white dark:bg-slate-800 rounded-2xl shadow p-4 space-y-4">
           <div className="flex items-start gap-3">
             <div className="text-4xl leading-none">{chosenInfo.flag}</div>
             <div className="min-w-0">
@@ -183,7 +183,7 @@ export default function DialectsPage() {
       )}
 
       {/* Phrase comparison */}
-      <div className="bg-white dark:bg-gray-800 rounded-2xl shadow p-4">
+      <div className="bg-white dark:bg-slate-800 rounded-2xl shadow p-4">
         <div className="flex items-center justify-between mb-3">
           <p className="text-sm font-medium text-slate-700 dark:text-slate-200">Everyday phrases</p>
           <div className="flex gap-1 bg-slate-100 dark:bg-slate-700 rounded-lg p-0.5">

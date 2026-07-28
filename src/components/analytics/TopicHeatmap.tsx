@@ -9,7 +9,7 @@ interface GrammarIndexEntry {
 
 /** Color a topic cell by retention — kind framing: weak = "growing", not "bad". */
 function cellColor(percent: number, cardCount: number): string {
-  if (cardCount === 0) return 'bg-slate-100 dark:bg-slate-700/50 text-slate-400 dark:text-slate-500';
+  if (cardCount === 0) return 'bg-slate-100 dark:bg-slate-700/50 text-slate-500 dark:text-slate-400';
   if (percent >= 80) return 'bg-emerald-100 text-emerald-800 dark:bg-emerald-900/50 dark:text-emerald-200';
   if (percent >= 60) return 'bg-lime-100 text-lime-800 dark:bg-lime-900/50 dark:text-lime-200';
   if (percent >= 40) return 'bg-amber-100 text-amber-800 dark:bg-amber-900/50 dark:text-amber-200';

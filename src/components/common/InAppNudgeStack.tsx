@@ -15,7 +15,7 @@ export default function InAppNudgeStack() {
   if (nudges.length === 0) return null;
 
   return (
-    <div className="fixed bottom-24 left-0 right-0 z-50 pointer-events-none px-4">
+    <div className="fixed bottom-24 left-0 right-0 z-[70] pointer-events-none px-4">
       <div className="max-w-lg mx-auto space-y-2">
         {nudges.map((n) => {
           const tone = n.tone ?? 'info';

@@ -629,7 +629,7 @@ export default function ReaderPage() {
               </a>
               <button
                 onClick={() => setIchiMoeOpen(false)}
-                className="block mt-2 text-xs text-slate-400 dark:text-slate-500 hover:text-slate-600 dark:hover:text-slate-300"
+                className="block mt-2 text-xs text-slate-500 dark:text-slate-400 hover:text-slate-600 dark:hover:text-slate-300"
               >
                 Dismiss
               </button>
@@ -637,12 +637,12 @@ export default function ReaderPage() {
           ) : (
             <div>
               <div className="flex items-center justify-between mb-2">
-                <span className="text-xs text-slate-400 dark:text-slate-500">
+                <span className="text-xs text-slate-500 dark:text-slate-400">
                   Powered by ichi.moe
                 </span>
                 <button
                   onClick={() => setIchiMoeOpen(false)}
-                  className="text-xs text-slate-400 dark:text-slate-500 hover:text-slate-600 dark:hover:text-slate-300 press-feedback"
+                  className="text-xs text-slate-500 dark:text-slate-400 hover:text-slate-600 dark:hover:text-slate-300 press-feedback"
                 >
                   Hide
                 </button>

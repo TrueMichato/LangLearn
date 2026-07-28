@@ -31,14 +31,14 @@ function Toggle({
     <button
       onClick={onChange}
       disabled={disabled}
-      className={`relative inline-flex h-6 w-11 items-center rounded-full transition-all duration-200 ease-[cubic-bezier(0.34,1.56,0.64,1)] ${
+      className={`relative inline-flex h-6 w-11 items-center rounded-full transition-all duration-200 ease-out ${
         checked ? 'gradient-primary' : 'bg-slate-300 dark:bg-slate-600'
       } ${disabled ? 'opacity-50 cursor-not-allowed' : ''}`}
       role="switch"
       aria-checked={checked}
     >
       <span
-        className={`inline-block h-4 w-4 rounded-full bg-white shadow-sm transition-all duration-200 ease-[cubic-bezier(0.34,1.56,0.64,1)] ${
+        className={`inline-block h-4 w-4 rounded-full bg-white shadow-sm transition-all duration-200 ease-out ${
           checked ? 'translate-x-6' : 'translate-x-1'
         }`}
       />
@@ -138,7 +138,7 @@ export default function NotificationSettings() {
   if (!isNotificationSupported()) {
     return (
       <section className="bg-white dark:bg-slate-800/90 rounded-2xl shadow-sm border border-slate-200/60 dark:border-white/10 p-4">
-        <h3 className="text-sm font-semibold uppercase tracking-wide text-slate-500 dark:text-slate-400 mb-2">
+        <h3 className="text-sm font-semibold text-slate-500 dark:text-slate-400 mb-2">
           🔔 Notifications
         </h3>
         <p className="text-sm text-slate-500 dark:text-slate-400">
@@ -150,7 +150,7 @@ export default function NotificationSettings() {
 
   return (
     <section className="bg-white dark:bg-slate-800/90 rounded-2xl shadow-sm border border-slate-200/60 dark:border-white/10 p-4 space-y-4">
-      <h3 className="text-sm font-semibold uppercase tracking-wide text-slate-500 dark:text-slate-400 mb-2">
+      <h3 className="text-sm font-semibold text-slate-500 dark:text-slate-400 mb-2">
         🔔 Notifications
       </h3>
 

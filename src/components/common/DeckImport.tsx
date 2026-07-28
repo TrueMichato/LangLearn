@@ -43,11 +43,11 @@ export default function DeckImport() {
 
   return (
     <div className="space-y-3">
-      <h4 className="text-sm font-medium text-gray-600 dark:text-gray-400">Import Deck</h4>
+      <h4 className="text-sm font-medium text-slate-600 dark:text-slate-400">Import Deck</h4>
 
       <button
         onClick={() => fileInputRef.current?.click()}
-        className="w-full bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-200 py-2 rounded-xl font-semibold hover:bg-gray-200 dark:hover:bg-gray-600 transition-colors"
+        className="w-full bg-slate-100 dark:bg-slate-700 text-slate-700 dark:text-slate-200 py-2 rounded-xl font-semibold hover:bg-slate-200 dark:hover:bg-slate-600 transition-colors"
       >
         📂 Choose Deck File
       </button>
@@ -64,15 +64,15 @@ export default function DeckImport() {
       )}
 
       {deck && (
-        <div className="bg-gray-50 dark:bg-gray-800 rounded-xl p-3 space-y-2">
-          <p className="text-sm font-medium text-gray-800 dark:text-gray-200">
-            {deck.name} <span className="text-gray-500">({deck.language.toUpperCase()})</span>
+        <div className="bg-slate-50 dark:bg-slate-800 rounded-xl p-3 space-y-2">
+          <p className="text-sm font-medium text-slate-800 dark:text-slate-200">
+            {deck.name} <span className="text-slate-500">({deck.language.toUpperCase()})</span>
           </p>
-          <p className="text-xs text-gray-500 dark:text-gray-400">
+          <p className="text-xs text-slate-500 dark:text-slate-400">
             {deck.words.length} word{deck.words.length !== 1 ? 's' : ''}
           </p>
           {deck.words.length > 0 && (
-            <ul className="text-xs text-gray-600 dark:text-gray-400 space-y-0.5">
+            <ul className="text-xs text-slate-600 dark:text-slate-400 space-y-0.5">
               {deck.words.slice(0, 5).map((w, i) => (
                 <li key={i}>
                   <span className="font-medium">{w.word}</span>
@@ -80,7 +80,7 @@ export default function DeckImport() {
                 </li>
               ))}
               {deck.words.length > 5 && (
-                <li className="text-gray-400">…and {deck.words.length - 5} more</li>
+                <li className="text-slate-400">…and {deck.words.length - 5} more</li>
               )}
             </ul>
           )}
@@ -95,7 +95,7 @@ export default function DeckImport() {
       )}
 
       {result && (
-        <p className="text-sm text-center text-gray-700 dark:text-gray-300">
+        <p className="text-sm text-center text-slate-700 dark:text-slate-300">
           ✅ Added {result.added} word{result.added !== 1 ? 's' : ''}, skipped{' '}
           {result.skipped} duplicate{result.skipped !== 1 ? 's' : ''}
         </p>

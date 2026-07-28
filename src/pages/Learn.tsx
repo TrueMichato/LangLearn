@@ -25,13 +25,13 @@ interface CardSection {
 }
 
 const cardBase =
-  'flex items-center gap-3 p-4 bg-white dark:bg-slate-800 rounded-2xl shadow hover:-translate-y-0.5 hover:shadow-md transition-all duration-200 press-feedback';
+  'flex items-center gap-3 p-4 bg-white dark:bg-slate-800 border border-slate-200/70 dark:border-white/10 rounded-2xl shadow-sm hover:-translate-y-0.5 hover:shadow-md transition-all duration-200 press-feedback';
 
 function SectionLabel({ label, showBorder }: { label: string; showBorder: boolean }) {
   return (
     <div
-      className={`col-span-2 text-xs font-semibold text-gray-500 dark:text-gray-400 uppercase tracking-wider mb-2 mt-4 ${
-        showBorder ? 'border-t border-gray-200 dark:border-gray-700 pt-4' : ''
+      className={`col-span-2 text-sm font-semibold text-slate-500 dark:text-slate-400 mb-2 mt-4 ${
+        showBorder ? 'border-t border-slate-200 dark:border-slate-700 pt-4' : ''
       }`}
     >
       {label}
@@ -43,14 +43,14 @@ function ActivityCardLink({ card }: { card: ActivityCard }) {
   if (card.disabled) {
     return (
       <div
-        className={`flex items-center gap-3 p-4 bg-white dark:bg-slate-800 rounded-2xl shadow opacity-50 border-l-4 ${card.borderColor} ${card.colSpan2 ? 'col-span-2' : ''}`}
+        className={`flex items-center gap-3 p-4 bg-white dark:bg-slate-800 border border-slate-200/70 dark:border-white/10 rounded-2xl shadow-sm opacity-50 ${card.colSpan2 ? 'col-span-2' : ''}`}
       >
         <div className={`w-12 h-12 rounded-full flex items-center justify-center shrink-0 ${card.bgColor}`}>
           <span className="text-3xl leading-none">{card.emoji}</span>
         </div>
         <div className="min-w-0">
-          <p className="font-semibold text-sm text-slate-800 dark:text-slate-100 truncate">{card.title}</p>
-          <p className="text-xs text-slate-500 dark:text-slate-400 truncate">{card.subtitle}</p>
+          <p className="font-semibold text-sm text-slate-800 dark:text-slate-100 leading-tight line-clamp-2">{card.title}</p>
+          <p className="text-xs text-slate-500 dark:text-slate-400 leading-tight line-clamp-2 mt-0.5">{card.subtitle}</p>
         </div>
       </div>
     );
@@ -58,14 +58,14 @@ function ActivityCardLink({ card }: { card: ActivityCard }) {
   return (
     <Link
       to={card.to}
-      className={`${cardBase} border-l-4 ${card.borderColor} ${card.colSpan2 ? 'col-span-2' : ''} ${card.gradient ?? ''}`}
+      className={`${cardBase} ${card.colSpan2 ? 'col-span-2' : ''}`}
     >
       <div className={`w-12 h-12 rounded-full flex items-center justify-center shrink-0 ${card.bgColor}`}>
         <span className="text-3xl leading-none">{card.emoji}</span>
       </div>
       <div className="min-w-0">
-        <p className="font-semibold text-sm text-slate-800 dark:text-slate-100 truncate">{card.title}</p>
-        <p className="text-xs text-slate-500 dark:text-slate-400 truncate">{card.subtitle}</p>
+        <p className="font-semibold text-sm text-slate-800 dark:text-slate-100 leading-tight line-clamp-2">{card.title}</p>
+        <p className="text-xs text-slate-500 dark:text-slate-400 leading-tight line-clamp-2 mt-0.5">{card.subtitle}</p>
       </div>
     </Link>
   );
@@ -231,7 +231,7 @@ export default function LearnPage() {
   return (
     <div>
       <h2 className="text-lg font-semibold text-slate-700 dark:text-slate-200 mb-2">Learn</h2>
-      <p className="text-sm text-gray-500 dark:text-gray-400 mb-4">
+      <p className="text-sm text-slate-500 dark:text-slate-400 mb-4">
         Build strong comprehension through reading and listening before practicing output — this is how the best language learners study.
       </p>
       <div className="grid grid-cols-2 gap-3">

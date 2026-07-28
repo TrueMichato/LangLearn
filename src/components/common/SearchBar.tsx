@@ -22,7 +22,7 @@ export default function SearchBar({ value, onChange, placeholder = 'Search…' }
 
   return (
     <div className="relative bg-white dark:bg-slate-800 shadow-sm rounded-xl border border-slate-200 dark:border-slate-700 focus-within:ring-2 focus-within:ring-indigo-500/50 focus-within:shadow-md transition-all">
-      <span className="absolute left-3 top-1/2 -translate-y-1/2 text-slate-400 dark:text-slate-500 pointer-events-none">
+      <span className="absolute left-3 top-1/2 -translate-y-1/2 text-slate-500 dark:text-slate-400 pointer-events-none">
         🔍
       </span>
       <input
@@ -35,7 +35,7 @@ export default function SearchBar({ value, onChange, placeholder = 'Search…' }
       {local && (
         <button
           onClick={() => { setLocal(''); onChange(''); }}
-          className="absolute right-3 top-1/2 -translate-y-1/2 text-slate-400 dark:text-slate-500 hover:text-slate-600 dark:hover:text-slate-300 press-feedback"
+          className="absolute right-3 top-1/2 -translate-y-1/2 text-slate-500 dark:text-slate-400 hover:text-slate-600 dark:hover:text-slate-300 press-feedback"
           aria-label="Clear search"
         >
           ✕

@@ -248,7 +248,7 @@ function CuratedLibrary({
             <div
               key={t.id}
               onClick={() => onSelect(t)}
-              className="bg-white dark:bg-gray-800 rounded-2xl shadow p-4 cursor-pointer hover:shadow-md transition-shadow"
+              className="bg-white dark:bg-slate-800 rounded-2xl shadow p-4 cursor-pointer hover:shadow-md transition-shadow"
             >
               <div className="flex items-start justify-between gap-2 mb-1">
                 <div className="flex-1 min-w-0">
@@ -265,7 +265,7 @@ function CuratedLibrary({
               </div>
               <p className="text-sm text-slate-600 dark:text-slate-300 mb-2">{t.description}</p>
               <div className="flex items-center gap-2 flex-wrap">
-                <span className="text-xs text-slate-400 dark:text-slate-500">
+                <span className="text-xs text-slate-500 dark:text-slate-400">
                   ~{t.wordCount} {['ja', 'zh', 'ko'].includes(currentLang) ? 'chars' : 'words'}
                 </span>
                 {t.tags.map((tag) => (
@@ -378,7 +378,7 @@ function MyTextsTab({
                     {t.content.slice(0, 100)}
                     {t.content.length > 100 ? '…' : ''}
                   </p>
-                  <div className="flex items-center gap-3 text-xs text-slate-400 dark:text-slate-500">
+                  <div className="flex items-center gap-3 text-xs text-slate-500 dark:text-slate-400">
                     <span>{relativeDate(t.createdAt)}</span>
                     <span>
                       {userWordCount(t.content, t.language)}{' '}

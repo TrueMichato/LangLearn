@@ -44,7 +44,7 @@ export default function NextFocusCard({ language }: { language?: string }) {
     >
       <span className="text-2xl shrink-0">{cta.icon}</span>
       <div className="min-w-0">
-        <p className="text-xs font-semibold uppercase tracking-wide text-indigo-500 dark:text-indigo-300">
+        <p className="text-xs font-semibold text-indigo-600 dark:text-indigo-300">
           What should I do next?
         </p>
         <p className="font-semibold text-slate-800 dark:text-slate-100 truncate">

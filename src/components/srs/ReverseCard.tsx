@@ -18,18 +18,18 @@ export default function ReverseCard({ word, isFlipped, onFlip }: ReverseCardProp
           : 'bg-white dark:bg-slate-800 border-2 border-indigo-200/60 dark:border-indigo-800/40 shadow-lg cursor-pointer hover:shadow-xl'
       }`}
     >
-      <span className="text-xs text-gray-400 dark:text-gray-500 uppercase tracking-wide mb-2">
+      <span className="text-xs text-slate-400 dark:text-slate-500 uppercase tracking-wide mb-2">
         {word.language} — reverse
       </span>
 
-      <p className="text-xl font-semibold text-gray-800 dark:text-gray-100 mb-2 text-center">
+      <p className="text-xl font-semibold text-slate-800 dark:text-slate-100 mb-2 text-center">
         {word.meaning}
       </p>
 
       {isFlipped ? (
         <div className="mt-2 text-center">
           {word.contextSentence && (
-            <p className="text-sm text-gray-500 dark:text-gray-400 mb-3 italic text-center" {...rtlProps(word.language)}>
+            <p className="text-sm text-slate-500 dark:text-slate-400 mb-3 italic text-center" {...rtlProps(word.language)}>
               "{word.contextSentence}"
             </p>
           )}
@@ -37,7 +37,7 @@ export default function ReverseCard({ word, isFlipped, onFlip }: ReverseCardProp
             {word.word}
           </p>
           {word.reading && (
-            <p className="text-sm text-gray-500 dark:text-gray-400 mb-2">{word.reading}</p>
+            <p className="text-sm text-slate-500 dark:text-slate-400 mb-2">{word.reading}</p>
           )}
           {isTTSSupported() && (
             <button

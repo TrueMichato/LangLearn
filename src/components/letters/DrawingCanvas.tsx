@@ -320,8 +320,8 @@ export default function DrawingCanvas({ characters, alphabetName, language, onPr
       <div className="text-center">
         <span className="text-6xl text-slate-900 dark:text-slate-100">{current.char}</span>
         <p className="text-lg text-slate-500 dark:text-slate-400 mt-1">{current.romanji}</p>
-        {current.meaning && <p className="text-sm text-slate-400 dark:text-slate-500">{current.meaning}</p>}
-        <p className="text-xs text-slate-400 dark:text-slate-500">{current.strokes} strokes</p>
+        {current.meaning && <p className="text-sm text-slate-500 dark:text-slate-400">{current.meaning}</p>}
+        <p className="text-xs text-slate-500 dark:text-slate-400">{current.strokes} strokes</p>
       </div>
 
       {/* Canvas */}
@@ -399,20 +399,20 @@ export default function DrawingCanvas({ characters, alphabetName, language, onPr
         <div className="flex justify-center gap-4">
           <button
             onClick={() => handleManualGrade(false)}
-            className="text-xs text-slate-400 dark:text-slate-500 hover:text-red-500 dark:hover:text-red-400 transition-colors underline press-feedback"
+            className="text-xs text-slate-500 dark:text-slate-400 hover:text-red-500 dark:hover:text-red-400 transition-colors underline press-feedback"
           >
             Skip
           </button>
           <button
             onClick={() => handleManualGrade(true)}
-            className="text-xs text-slate-400 dark:text-slate-500 hover:text-emerald-500 dark:hover:text-emerald-400 transition-colors underline press-feedback"
+            className="text-xs text-slate-500 dark:text-slate-400 hover:text-emerald-500 dark:hover:text-emerald-400 transition-colors underline press-feedback"
           >
             I got it
           </button>
         </div>
       )}
 
-      <p className="text-xs text-center text-slate-400 dark:text-slate-500">
+      <p className="text-xs text-center text-slate-500 dark:text-slate-400">
         Character {(currentIndex % orderedChars.current.length) + 1} of {orderedChars.current.length}
       </p>
     </div>

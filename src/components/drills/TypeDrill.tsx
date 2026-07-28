@@ -74,20 +74,20 @@ export default function TypeDrill({ questions, onComplete }: TypeDrillProps) {
   return (
     <div className="space-y-6">
       {/* Progress bar */}
-      <div className="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2">
+      <div className="w-full bg-slate-200 dark:bg-slate-700 rounded-full h-2">
         <div
           className="bg-indigo-600 h-2 rounded-full transition-all duration-300"
           style={{ width: `${progress}%` }}
         />
       </div>
 
-      <p className="text-sm text-gray-500 dark:text-gray-400 text-center">
+      <p className="text-sm text-slate-500 dark:text-slate-400 text-center">
         {index + 1} / {total}
       </p>
 
       {/* Prompt */}
-      <div className="bg-white dark:bg-gray-800 rounded-2xl shadow p-6 text-center">
-        <p className="text-lg font-semibold text-gray-800 dark:text-gray-100">
+      <div className="bg-white dark:bg-slate-800 rounded-2xl shadow p-6 text-center">
+        <p className="text-lg font-semibold text-slate-800 dark:text-slate-100">
           {current.prompt}
         </p>
       </div>
@@ -108,7 +108,7 @@ export default function TypeDrill({ questions, onComplete }: TypeDrillProps) {
                 ? 'border-green-500 bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-100'
                 : feedback === 'wrong'
                   ? 'border-red-500 bg-red-100 dark:bg-red-900 text-red-800 dark:text-red-100'
-                  : 'border-gray-200 dark:border-gray-600 bg-white dark:bg-gray-800 text-gray-800 dark:text-gray-100'
+                  : 'border-slate-200 dark:border-slate-600 bg-white dark:bg-slate-800 text-slate-800 dark:text-slate-100'
             }`}
         />
         <div className="flex gap-3">
@@ -123,7 +123,7 @@ export default function TypeDrill({ questions, onComplete }: TypeDrillProps) {
             type="button"
             onClick={handleSkip}
             disabled={!!feedback}
-            className="px-5 py-2 rounded-xl border border-gray-300 dark:border-gray-600 text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 disabled:opacity-50 transition-colors"
+            className="px-5 py-2 rounded-xl border border-slate-300 dark:border-slate-600 text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-700 disabled:opacity-50 transition-colors"
           >
             Skip
           </button>

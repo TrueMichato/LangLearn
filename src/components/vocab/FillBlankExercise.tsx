@@ -43,14 +43,14 @@ export default function FillBlankExercise({ items, onComplete }: Props) {
         Fill in the blank ({current + 1}/{items.length})
       </p>
 
-      <div className="bg-white dark:bg-slate-800 rounded-2xl shadow p-5 mb-4 border-l-4 border-rose-400 dark:border-rose-500">
+      <div className="bg-white dark:bg-slate-800 rounded-2xl shadow p-5 mb-4 border border-slate-200/70 dark:border-white/10">
         <p className="text-lg text-slate-800 dark:text-slate-100 text-center leading-relaxed">
           {item.sentence}
         </p>
       </div>
 
       {showHint && !feedback && (
-        <p className="text-sm text-indigo-500 dark:text-indigo-400 mb-3 text-center">
+        <p className="text-sm text-indigo-600 dark:text-indigo-400 mb-3 text-center">
           💡 Hint: {item.hint}
         </p>
       )}

@@ -323,7 +323,7 @@ export default function TestsPage() {
 
         {/* Question card */}
         <div className="bg-white dark:bg-slate-800 rounded-2xl shadow p-6 mb-4">
-          <span className="text-xs font-medium uppercase tracking-wider text-indigo-500 mb-2 block">
+          <span className="text-xs font-medium text-indigo-600 dark:text-indigo-400 mb-2 block">
             {q.category}
           </span>
           <p className="text-lg font-semibold text-slate-800 dark:text-slate-100 mb-6">{q.question}</p>
@@ -338,11 +338,11 @@ export default function TestsPage() {
                 } else if (i === selectedOption && i !== q.correctIndex) {
                   btnClass += 'border-red-500 bg-red-50 dark:bg-red-900/30 text-red-700 dark:text-red-300';
                 } else {
-                  btnClass += 'border-gray-200 dark:border-white/10 text-slate-400 dark:text-slate-500';
+                  btnClass += 'border-slate-200 dark:border-white/10 text-slate-500 dark:text-slate-400';
                 }
               } else {
                 btnClass +=
-                  'border-gray-200 dark:border-white/10 text-slate-700 dark:text-slate-200 hover:border-indigo-400 hover:bg-indigo-50 dark:hover:bg-indigo-900/20';
+                  'border-slate-200 dark:border-white/10 text-slate-700 dark:text-slate-200 hover:border-indigo-400 hover:bg-indigo-50 dark:hover:bg-indigo-900/20';
               }
 
               return (

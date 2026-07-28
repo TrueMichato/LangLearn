@@ -62,9 +62,9 @@ export default function ComprehensionIndicator({
 
   if (loading) {
     return (
-      <div className="bg-white dark:bg-gray-800 rounded-xl p-3 mb-4 border border-gray-200 dark:border-gray-700 animate-pulse">
-        <div className="h-4 bg-gray-200 dark:bg-gray-700 rounded w-2/3 mb-2" />
-        <div className="h-3 bg-gray-200 dark:bg-gray-700 rounded w-1/2" />
+      <div className="bg-white dark:bg-slate-800 rounded-xl p-3 mb-4 border border-slate-200 dark:border-slate-700 animate-pulse">
+        <div className="h-4 bg-slate-200 dark:bg-slate-700 rounded w-2/3 mb-2" />
+        <div className="h-3 bg-slate-200 dark:bg-slate-700 rounded w-1/2" />
       </div>
     );
   }
@@ -74,12 +74,12 @@ export default function ComprehensionIndicator({
   const config = levelConfig[analysis.comprehensionLevel];
 
   return (
-    <div className="bg-white dark:bg-gray-800 rounded-xl p-3 mb-4 border border-gray-200 dark:border-gray-700">
+    <div className="bg-white dark:bg-slate-800 rounded-xl p-3 mb-4 border border-slate-200 dark:border-slate-700">
       {/* Main stat row */}
       <div className="flex items-center justify-between gap-2">
         <div className="flex items-center gap-2 min-w-0">
           <span className={`inline-block w-2.5 h-2.5 rounded-full flex-shrink-0 ${config.dot}`} />
-          <span className="text-sm font-medium text-gray-800 dark:text-gray-100 truncate">
+          <span className="text-sm font-medium text-slate-800 dark:text-slate-100 truncate">
             Estimated comprehension: ~{analysis.knownPercentage}%
           </span>
         </div>
@@ -89,7 +89,7 @@ export default function ComprehensionIndicator({
           className={`flex-shrink-0 p-1.5 rounded-lg transition-colors press-feedback ${
             highlightEnabled
               ? 'bg-indigo-100 dark:bg-indigo-900/50 text-indigo-600 dark:text-indigo-400'
-              : 'text-gray-400 dark:text-gray-500 hover:text-gray-600 dark:hover:text-gray-300'
+              : 'text-slate-500 dark:text-slate-400 hover:text-slate-600 dark:hover:text-slate-300'
           }`}
         >
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-4 h-4">
@@ -106,7 +106,7 @@ export default function ComprehensionIndicator({
       </div>
 
       {/* Detail line */}
-      <p className="text-xs text-gray-500 dark:text-gray-400 mt-1">
+      <p className="text-xs text-slate-500 dark:text-slate-400 mt-1">
         You know ~{analysis.knownWords} of {analysis.uniqueWords} unique words
       </p>
 
@@ -117,7 +117,7 @@ export default function ComprehensionIndicator({
 
       {/* Word status legend */}
       {highlightEnabled && wordStatusMap && (
-        <div className="flex flex-wrap items-center gap-x-3 gap-y-1 mt-2 text-xs text-gray-600 dark:text-gray-400">
+        <div className="flex flex-wrap items-center gap-x-3 gap-y-1 mt-2 text-xs text-slate-600 dark:text-slate-400">
           <span className="flex items-center gap-1">
             <span className="inline-block w-2.5 h-2.5 rounded-sm bg-yellow-200 dark:bg-yellow-800" />
             New
@@ -131,7 +131,7 @@ export default function ComprehensionIndicator({
             Seen
           </span>
           <span className="flex items-center gap-1">
-            <span className="inline-block w-2.5 h-2.5 rounded-sm bg-gray-100 dark:bg-gray-700 border border-gray-300 dark:border-gray-600" />
+            <span className="inline-block w-2.5 h-2.5 rounded-sm bg-slate-100 dark:bg-slate-700 border border-slate-300 dark:border-slate-600" />
             Known
           </span>
         </div>

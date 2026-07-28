@@ -47,7 +47,7 @@ function MilestoneCard({ milestone }: { milestone: ResolvedMilestone }) {
 
   return (
     <div
-      className={`bg-white dark:bg-gray-800 rounded-2xl shadow p-4 ${
+      className={`bg-white dark:bg-slate-800 rounded-2xl shadow p-4 ${
         milestone.completed
           ? 'ring-2 ring-emerald-400 dark:ring-emerald-500'
           : ''
@@ -70,7 +70,7 @@ function MilestoneCard({ milestone }: { milestone: ResolvedMilestone }) {
           {pct}%
         </span>
       </div>
-      <div className="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2">
+      <div className="w-full bg-slate-200 dark:bg-slate-700 rounded-full h-2">
         <div
           className={`h-2 rounded-full transition-all duration-500 ${
             milestone.completed ? 'bg-emerald-500' : 'bg-indigo-500'

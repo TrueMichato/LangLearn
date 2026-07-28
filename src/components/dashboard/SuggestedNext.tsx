@@ -39,7 +39,7 @@ export default function SuggestedNext() {
           <button
             key={s.id}
             onClick={() => navigate(s.route)}
-            className="flex items-center gap-3 bg-white dark:bg-gray-800 rounded-2xl shadow p-4 text-left hover:shadow-md transition-shadow w-full min-h-[44px]"
+            className="flex items-center gap-3 bg-white dark:bg-slate-800 rounded-2xl shadow p-4 text-left hover:shadow-md transition-shadow w-full min-h-[44px]"
           >
             <span className="text-2xl shrink-0">{s.icon}</span>
             <div className="min-w-0">
@@ -50,7 +50,7 @@ export default function SuggestedNext() {
                 {s.reason}
               </p>
             </div>
-            <span className="ml-auto text-slate-400 dark:text-slate-500 shrink-0">
+            <span className="ml-auto text-slate-500 dark:text-slate-400 shrink-0">
               →
             </span>
           </button>

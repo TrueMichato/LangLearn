@@ -352,7 +352,7 @@ export default function ListeningPage() {
         <div className="space-y-3 mb-6">
           {q.options.map((opt, i) => {
             let style =
-              'bg-white dark:bg-slate-800 border border-gray-200 dark:border-white/10 text-slate-800 dark:text-slate-100';
+              'bg-white dark:bg-slate-800 border border-slate-200 dark:border-white/10 text-slate-800 dark:text-slate-100';
             if (revealed) {
               if (i === q.correctIndex) {
                 style = 'bg-green-100 dark:bg-green-900 border border-green-500 text-green-800 dark:text-green-200';
@@ -412,7 +412,7 @@ export default function ListeningPage() {
         <div className="flex gap-3">
           <button
             onClick={handleBack}
-            className="flex-1 py-3 rounded-2xl border border-gray-300 dark:border-white/10 text-slate-700 dark:text-slate-200 font-semibold hover:bg-slate-50 dark:hover:bg-slate-800 press-feedback transition-colors"
+            className="flex-1 py-3 rounded-2xl border border-slate-300 dark:border-white/10 text-slate-700 dark:text-slate-200 font-semibold hover:bg-slate-50 dark:hover:bg-slate-800 press-feedback transition-colors"
           >
             Back
           </button>
@@ -462,7 +462,7 @@ export default function ListeningPage() {
         <div className="flex gap-3">
           <button
             onClick={handleBack}
-            className="flex-1 py-3 rounded-2xl border border-gray-300 dark:border-white/10 text-slate-700 dark:text-slate-200 font-semibold hover:bg-slate-50 dark:hover:bg-slate-800 press-feedback transition-colors min-h-[44px]"
+            className="flex-1 py-3 rounded-2xl border border-slate-300 dark:border-white/10 text-slate-700 dark:text-slate-200 font-semibold hover:bg-slate-50 dark:hover:bg-slate-800 press-feedback transition-colors min-h-[44px]"
           >
             Back
           </button>
