@@ -101,7 +101,7 @@ export async function getStudySuggestions(
   }
 
   // 5. Letter practice — low mastery for JA/RU
-  const letterLangs = languages.filter((l) => l === 'ja' || l === 'ru' || l === 'pt' || l === 'es' || l === 'ar');
+  const letterLangs = languages.filter((l) => l === 'ja' || l === 'ru' || l === 'pt' || l === 'es' || l === 'ar' || l === 'ro');
   for (const lang of letterLangs) {
     const chars = await getCharacterProgress(lang);
     const mastered = chars.filter((c) => c.mastery === 'mastered').length;

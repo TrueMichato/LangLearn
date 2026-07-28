@@ -413,6 +413,281 @@ const RESOURCES: Record<string, ResourceCategory[]> = {
       ],
     },
   ],
+  ro: [
+    {
+      label: 'Grammar & Learning',
+      emoji: '📖',
+      resources: [
+        {
+          name: 'FSI Romanian Reference Grammar',
+          url: 'https://www.fsi-language-courses.org/languages/Romanian/FSI%20-%20Romanian%20Reference%20Grammar%20-%20Student%20Text.pdf',
+          description: 'In-depth, free reference grammar (PDF) from the Foreign Service Institute.',
+        },
+        {
+          name: 'Gramatica Limbii Române',
+          url: 'https://gramaticalimbiiromane.ro/',
+          description: 'Comprehensive native-Romanian grammar reference site.',
+        },
+        {
+          name: 'SEELRC Reference Grammar',
+          url: 'http://www.seelrc.org:8080/grammar/mainframe.jsp?nLanguageID=5',
+          description: 'Duke/UNC in-depth Romanian grammar with a searchable index.',
+        },
+        {
+          name: 'Simple Romanian',
+          url: 'https://simpleromanian.com/',
+          description: 'Clear, beginner-friendly lessons and explanations.',
+        },
+        {
+          name: 'Book2 Romanian',
+          url: 'https://www.goethe-verlag.com/book2/EM/',
+          description: 'Free phrasebook course with audio across 100 practical lessons.',
+        },
+        {
+          name: "Peace Corps Romanian Lessons",
+          url: 'https://www.livelingua.com/peace-corps/Romanian/RO_Romanian_Language_Lessons.pdf',
+          description: 'Practical basic-vocabulary lessons (PDF) with accompanying audio.',
+        },
+        {
+          name: 'Live Lingua Romanian',
+          url: 'https://www.livelingua.com/courses/romanian',
+          description: 'Free public-domain Romanian courses (Peace Corps, FSI) with audio.',
+        },
+      ],
+    },
+    {
+      label: 'Dictionaries & Tools',
+      emoji: '🔍',
+      resources: [
+        {
+          name: 'dexonline',
+          url: 'https://dexonline.ro/',
+          description: 'The definitive Romanian monolingual dictionary — definitions, inflections, etymology.',
+        },
+        {
+          name: 'hallo.ro',
+          url: 'http://hallo.ro/?l=en',
+          description: 'English ↔ Romanian dictionary.',
+        },
+        {
+          name: 'Glosbe (EN↔RO)',
+          url: 'https://glosbe.com/en/ro',
+          description: 'Dictionary with many real-sentence translation examples.',
+        },
+        {
+          name: 'Reverso Context',
+          url: 'https://context.reverso.net/translation/',
+          description: 'See words and phrases used in real bilingual context.',
+        },
+        {
+          name: 'Cooljugator (Romanian)',
+          url: 'https://cooljugator.com/ro',
+          description: 'Verb conjugation tool covering every tense and mood.',
+        },
+        {
+          name: 'Conjugare.ro',
+          url: 'https://www.conjugare.ro/',
+          description: 'Native Romanian verb-conjugation reference.',
+        },
+        {
+          name: 'Forvo (Romanian)',
+          url: 'https://forvo.com/languages/ro/',
+          description: 'Native-speaker pronunciations for thousands of Romanian words.',
+        },
+        {
+          name: 'Cum Se Scrie',
+          url: 'https://cum-se-scrie.ro/',
+          description: 'Quick answers to common Romanian spelling questions.',
+        },
+      ],
+    },
+    {
+      label: 'Video Lessons (YouTube)',
+      emoji: '🎬',
+      resources: [
+        {
+          name: 'Learn Romanian with Nico',
+          url: 'https://www.youtube.com/c/LearnRomanianWithNico',
+          description: 'Practical, beginner-friendly Romanian video lessons.',
+        },
+        {
+          name: 'Learn Romanian with Vlad',
+          url: 'https://www.youtube.com/c/LearnRomanianwithVlad',
+          description: 'Clear grammar and vocabulary explanations on YouTube.',
+        },
+        {
+          name: 'RomanianWithGia',
+          url: 'https://www.youtube.com/c/RomanianWithGia',
+          description: 'Friendly lessons on everyday Romanian and pronunciation.',
+        },
+        {
+          name: 'Romanian Hub',
+          url: 'https://www.youtube.com/c/RomanianHub',
+          description: 'Structured lessons for beginner and intermediate learners.',
+        },
+        {
+          name: 'Learn Romanian with Corina',
+          url: 'https://www.youtube.com/@LearnRomanianWithCorina',
+          description: 'Conversational Romanian lessons for all levels.',
+        },
+        {
+          name: 'Easy Romanian (street interviews)',
+          url: 'https://www.youtube.com/playlist?list=PLSGlhFQUEl3jtvuXulhZRYDiYefnBYzGh',
+          description: 'Real street interviews with dual Romanian/English subtitles.',
+        },
+      ],
+    },
+    {
+      label: 'Audio Courses & Podcasts',
+      emoji: '🎧',
+      resources: [
+        {
+          name: 'RomanianPod101',
+          url: 'https://www.romanianpod101.com/',
+          description: 'Structured audio/video lessons for all levels.',
+        },
+        {
+          name: 'Radio România International',
+          url: 'https://www.rri.ro/en_gb/pages/home',
+          description: 'News and learner podcasts in Romanian (with English/French support).',
+        },
+        {
+          name: 'Le roumain mot à mot (RRI)',
+          url: 'https://www.rri.ro/fr_fr/RadioRomaniaInternational/consulter-les-lecons--631',
+          description: 'Free lesson series for French/English speakers, with audio.',
+        },
+        {
+          name: 'Teatru Radiofonic',
+          url: 'https://www.youtube.com/@teatruradiofonic6362',
+          description: 'Classic Romanian radio-theatre — great listening practice.',
+        },
+      ],
+    },
+    {
+      label: 'Reading & Immersion',
+      emoji: '📚',
+      resources: [
+        {
+          name: 'ro.wikisource.org',
+          url: 'https://ro.wikisource.org/wiki/Pagina_principal%C4%83',
+          description: 'Free public-domain Romanian literature and texts.',
+        },
+        {
+          name: 'Humanitas (free books)',
+          url: 'https://humanitas.ro/cauta/gratuit',
+          description: 'Free titles from a major Romanian publisher.',
+        },
+        {
+          name: 'Lotus Fairy Tale',
+          url: 'https://lotusstory.org/',
+          description: 'Illustrated Romanian fairy tales — gentle reading for beginners.',
+        },
+        {
+          name: 'Readlang (Romanian)',
+          url: 'https://readlang.com/ro/library',
+          description: 'Read Romanian texts with click-to-translate support.',
+        },
+        {
+          name: 'Language Player (Romanian)',
+          url: 'https://languageplayer.io/en/ro',
+          description: 'Learn through Romanian videos with interactive subtitles.',
+        },
+        {
+          name: 'Romanian Voice',
+          url: 'https://romanianvoice.com/',
+          description: 'Directory of Romanian poetry, music and cultural texts.',
+        },
+      ],
+    },
+    {
+      label: 'News, Radio & TV',
+      emoji: '📺',
+      resources: [
+        {
+          name: 'AGERPRES',
+          url: 'https://www.agerpres.ro/',
+          description: "Romania's national news agency — clear, current articles.",
+        },
+        {
+          name: 'Republica',
+          url: 'https://republica.ro/',
+          description: 'Opinion and feature articles in accessible modern Romanian.',
+        },
+        {
+          name: 'Recorder',
+          url: 'https://recorder.ro/',
+          description: 'High-quality Romanian journalism and documentaries.',
+        },
+        {
+          name: 'ProFM',
+          url: 'http://www.profm.ro/radio/profm',
+          description: 'Popular Romanian radio — listen to music and live speech.',
+        },
+        {
+          name: 'Realitatea TV (live)',
+          url: 'http://webtv.realitatea.net/live',
+          description: 'Live Romanian news television for immersion.',
+        },
+      ],
+    },
+    {
+      label: 'Practice & Flashcards',
+      emoji: '🃏',
+      resources: [
+        {
+          name: 'Clozemaster',
+          url: 'https://www.clozemaster.com/',
+          description: 'Learn Romanian vocabulary in context through cloze sentences.',
+        },
+        {
+          name: 'Memrise — 2000 Words by Frequency',
+          url: 'http://www.memrise.com/course/362971/2000-romanian-words-by-frequency/',
+          description: 'Learn the most common Romanian words first.',
+        },
+        {
+          name: 'Ba Ba Dum',
+          url: 'https://babadum.com/',
+          description: 'Free picture-based vocabulary games in Romanian.',
+        },
+        {
+          name: 'Wordwall (Romanian)',
+          url: 'https://wordwall.net/en-gb/community/romanian',
+          description: 'Community-made interactive vocabulary and grammar games.',
+        },
+        {
+          name: 'Flashcardo',
+          url: 'https://flashcardo.com/romanian-flashcards/',
+          description: 'Free Romanian flashcard decks by topic.',
+        },
+        {
+          name: 'Drops',
+          url: 'https://languagedrops.com/language/learn-romanian/',
+          description: 'Fast, visual vocabulary practice in short sessions.',
+        },
+        {
+          name: 'Duolingo Romanian',
+          url: 'https://www.duolingo.com/enroll/ro/en/Learn-Romanian',
+          description: 'Free gamified Romanian course for English speakers.',
+        },
+      ],
+    },
+    {
+      label: 'Community',
+      emoji: '🌐',
+      resources: [
+        {
+          name: 'Learn Romanian (Discord)',
+          url: 'https://discord.gg/Y3SstEujdx',
+          description: 'Active community of Romanian learners and native speakers.',
+        },
+        {
+          name: "MrMeloman's Romanian Notes",
+          url: 'https://github.com/mrmeloman/romanian/',
+          description: 'A learner\'s curated notes and resource collection on GitHub.',
+        },
+      ],
+    },
+  ],
 };
 
 export default function ExternalResources() {

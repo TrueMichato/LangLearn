@@ -1,0 +1,178 @@
+{
+  "id": "banking",
+  "words": [
+    {
+      "word": "bancă",
+      "reading": "bahn-kuh",
+      "meaning": "bank",
+      "example": "O bancă deschide la ora nouă.",
+      "exampleMeaning": "A bank opens at nine o’clock."
+    },
+    {
+      "word": "cont",
+      "reading": "kont",
+      "meaning": "account",
+      "example": "Un cont curent primește salariul.",
+      "exampleMeaning": "A current account receives the salary."
+    },
+    {
+      "word": "card",
+      "reading": "kahrd",
+      "meaning": "card",
+      "example": "Un card bancar expiră în august.",
+      "exampleMeaning": "A bank card expires in August."
+    },
+    {
+      "word": "bancomat",
+      "reading": "bahn-koh-maht",
+      "meaning": "ATM",
+      "example": "Un bancomat este lângă farmacie.",
+      "exampleMeaning": "An ATM is next to the pharmacy."
+    },
+    {
+      "word": "depunere",
+      "reading": "deh-poo-neh-reh",
+      "meaning": "deposit",
+      "example": "O depunere de numerar este rapidă.",
+      "exampleMeaning": "A cash deposit is quick."
+    },
+    {
+      "word": "retragere",
+      "reading": "reh-trah-jeh-reh",
+      "meaning": "withdrawal",
+      "example": "O retragere de bani are comision.",
+      "exampleMeaning": "A money withdrawal has a fee."
+    },
+    {
+      "word": "transfer",
+      "reading": "trans-fehr",
+      "meaning": "transfer",
+      "example": "Fac transfer către prieten.",
+      "exampleMeaning": "I make a transfer to a friend."
+    },
+    {
+      "word": "dobândă",
+      "reading": "doh-buhn-duh",
+      "meaning": "interest",
+      "example": "Dobânda crește suma economisită.",
+      "exampleMeaning": "Interest increases the saved amount."
+    },
+    {
+      "word": "împrumut",
+      "reading": "uhm-proo-moot",
+      "meaning": "loan",
+      "example": "Un împrumut pentru casă durează ani.",
+      "exampleMeaning": "A home loan lasts years."
+    },
+    {
+      "word": "rată",
+      "reading": "rah-tuh",
+      "meaning": "installment / rate",
+      "example": "O rată lunară este fixă.",
+      "exampleMeaning": "A monthly installment is fixed."
+    },
+    {
+      "word": "factură",
+      "reading": "fahk-too-ruh",
+      "meaning": "bill / invoice",
+      "example": "Plătesc factură online.",
+      "exampleMeaning": "I pay the bill online."
+    },
+    {
+      "word": "buget",
+      "reading": "boo-jet",
+      "meaning": "budget",
+      "example": "Un buget lunar mă ajută să economisesc.",
+      "exampleMeaning": "A monthly budget helps me save."
+    },
+    {
+      "word": "economie",
+      "reading": "eh-koh-noh-mee-eh",
+      "meaning": "saving / economy",
+      "example": "O economie mică devine mare în timp.",
+      "exampleMeaning": "A small saving becomes large over time."
+    },
+    {
+      "word": "investiție",
+      "reading": "een-ves-tee-tsee-eh",
+      "meaning": "investment",
+      "example": "O investiție bună cere informații.",
+      "exampleMeaning": "A good investment requires information."
+    },
+    {
+      "word": "impozit",
+      "reading": "eem-poh-zeet",
+      "meaning": "tax",
+      "example": "Un impozit local se plătește anual.",
+      "exampleMeaning": "A local tax is paid yearly."
+    },
+    {
+      "word": "asigurare",
+      "reading": "ah-see-goo-rah-reh",
+      "meaning": "insurance",
+      "example": "O asigurare de sănătate este necesară.",
+      "exampleMeaning": "Health insurance is necessary."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "Fac ___ către prieten.",
+          "answer": "transfer",
+          "hint": "transfer"
+        },
+        {
+          "sentence": "Plătesc ___ online.",
+          "answer": "factură",
+          "hint": "bill"
+        },
+        {
+          "sentence": "Un ___ lunar mă ajută să economisesc.",
+          "answer": "buget",
+          "hint": "budget"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "items": [
+        {
+          "question": "What does 'bancomat' mean?",
+          "options": [
+            "bank",
+            "ATM",
+            "loan",
+            "tax"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "How do you say 'interest' in Romanian?",
+          "options": [
+            "dobândă",
+            "rată",
+            "depunere",
+            "retragere"
+          ],
+          "answer": 0
+        },
+        {
+          "question": "What does 'asigurare' mean?",
+          "options": [
+            "investment",
+            "saving",
+            "insurance",
+            "account"
+          ],
+          "answer": 2
+        }
+      ]
+    }
+  ]
+}

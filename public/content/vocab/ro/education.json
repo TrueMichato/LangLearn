@@ -1,0 +1,178 @@
+{
+  "id": "education",
+  "words": [
+    {
+      "word": "educație",
+      "reading": "eh-doo-kah-tsee-eh",
+      "meaning": "education",
+      "example": "O educație bună schimbă vieți.",
+      "exampleMeaning": "A good education changes lives."
+    },
+    {
+      "word": "grădiniță",
+      "reading": "gruh-dee-nee-tsuh",
+      "meaning": "kindergarten",
+      "example": "O grădiniță este aproape de parc.",
+      "exampleMeaning": "A kindergarten is near the park."
+    },
+    {
+      "word": "liceu",
+      "reading": "lee-cheh-oo",
+      "meaning": "high school",
+      "example": "Un liceu are laboratoare noi.",
+      "exampleMeaning": "A high school has new laboratories."
+    },
+    {
+      "word": "universitate",
+      "reading": "oo-nee-vehr-see-tah-teh",
+      "meaning": "university",
+      "example": "O universitate mare atrage studenți străini.",
+      "exampleMeaning": "A large university attracts foreign students."
+    },
+    {
+      "word": "facultate",
+      "reading": "fah-kool-tah-teh",
+      "meaning": "faculty / college",
+      "example": "O facultate de drept este populară.",
+      "exampleMeaning": "A law faculty is popular."
+    },
+    {
+      "word": "bibliotecă",
+      "reading": "bee-blee-oh-teh-kuh",
+      "meaning": "library",
+      "example": "O bibliotecă oferă cărți gratuite.",
+      "exampleMeaning": "A library offers free books."
+    },
+    {
+      "word": "laborator",
+      "reading": "lah-boh-rah-tor",
+      "meaning": "laboratory",
+      "example": "Un laborator modern are echipamente noi.",
+      "exampleMeaning": "A modern laboratory has new equipment."
+    },
+    {
+      "word": "curs",
+      "reading": "koors",
+      "meaning": "course",
+      "example": "Un curs online începe luni.",
+      "exampleMeaning": "An online course starts Monday."
+    },
+    {
+      "word": "seminar",
+      "reading": "seh-mee-nahr",
+      "meaning": "seminar",
+      "example": "Un seminar discută teme actuale.",
+      "exampleMeaning": "A seminar discusses current topics."
+    },
+    {
+      "word": "notă",
+      "reading": "noh-tuh",
+      "meaning": "grade",
+      "example": "O notă bună mă motivează.",
+      "exampleMeaning": "A good grade motivates me."
+    },
+    {
+      "word": "diplomă",
+      "reading": "dee-ploh-muh",
+      "meaning": "diploma / degree",
+      "example": "O diplomă confirmă studiile.",
+      "exampleMeaning": "A diploma confirms the studies."
+    },
+    {
+      "word": "bursă",
+      "reading": "boor-suh",
+      "meaning": "scholarship",
+      "example": "O bursă acoperă taxa de școlarizare.",
+      "exampleMeaning": "A scholarship covers the tuition fee."
+    },
+    {
+      "word": "prelegere",
+      "reading": "preh-leh-jeh-reh",
+      "meaning": "lecture",
+      "example": "O prelegere durează o oră.",
+      "exampleMeaning": "A lecture lasts one hour."
+    },
+    {
+      "word": "cercetare",
+      "reading": "chehr-cheh-tah-reh",
+      "meaning": "research",
+      "example": "O cercetare cere date precise.",
+      "exampleMeaning": "Research requires precise data."
+    },
+    {
+      "word": "absență",
+      "reading": "ahb-sen-tsuh",
+      "meaning": "absence",
+      "example": "O absență nemotivată scade nota.",
+      "exampleMeaning": "An unexcused absence lowers the grade."
+    },
+    {
+      "word": "colegiu",
+      "reading": "koh-leh-jee-oo",
+      "meaning": "college / school",
+      "example": "Un colegiu tehnic pregătește specialiști.",
+      "exampleMeaning": "A technical college trains specialists."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "O ___ oferă cărți gratuite.",
+          "answer": "bibliotecă",
+          "hint": "library"
+        },
+        {
+          "sentence": "O ___ bună mă motivează.",
+          "answer": "notă",
+          "hint": "grade"
+        },
+        {
+          "sentence": "O ___ cere date precise.",
+          "answer": "cercetare",
+          "hint": "research"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "items": [
+        {
+          "question": "What does 'liceu' mean?",
+          "options": [
+            "kindergarten",
+            "high school",
+            "library",
+            "seminar"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "How do you say 'scholarship' in Romanian?",
+          "options": [
+            "bursă",
+            "diplomă",
+            "curs",
+            "absență"
+          ],
+          "answer": 0
+        },
+        {
+          "question": "What does 'prelegere' mean?",
+          "options": [
+            "research",
+            "grade",
+            "lecture",
+            "laboratory"
+          ],
+          "answer": 2
+        }
+      ]
+    }
+  ]
+}

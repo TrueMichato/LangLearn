@@ -1,0 +1,178 @@
+{
+  "id": "emotions",
+  "words": [
+    {
+      "word": "bucurie",
+      "reading": "boo-koo-ree-eh",
+      "meaning": "joy",
+      "example": "Simt bucurie când îi revăd.",
+      "exampleMeaning": "I feel joy when I see them again."
+    },
+    {
+      "word": "tristețe",
+      "reading": "trees-teh-tseh",
+      "meaning": "sadness",
+      "example": "Simt tristețe după despărțire.",
+      "exampleMeaning": "I feel sadness after the farewell."
+    },
+    {
+      "word": "furie",
+      "reading": "foo-ree-eh",
+      "meaning": "anger",
+      "example": "Simt furie când văd nedreptate.",
+      "exampleMeaning": "I feel anger when I see injustice."
+    },
+    {
+      "word": "frică",
+      "reading": "free-kuh",
+      "meaning": "fear",
+      "example": "Simt frică înainte de examen.",
+      "exampleMeaning": "I feel fear before the exam."
+    },
+    {
+      "word": "iubire",
+      "reading": "yoo-bee-reh",
+      "meaning": "love",
+      "example": "O iubire sinceră dă curaj oamenilor.",
+      "exampleMeaning": "A sincere love gives people courage."
+    },
+    {
+      "word": "speranță",
+      "reading": "speh-rahn-tsuh",
+      "meaning": "hope",
+      "example": "Am speranță pentru ziua de mâine.",
+      "exampleMeaning": "I have hope for tomorrow."
+    },
+    {
+      "word": "surpriză",
+      "reading": "soor-pree-zuh",
+      "meaning": "surprise",
+      "example": "O surpriză apare la final.",
+      "exampleMeaning": "A surprise appears at the end."
+    },
+    {
+      "word": "rușine",
+      "reading": "roo-shee-neh",
+      "meaning": "shame / embarrassment",
+      "example": "Simt rușine după greșeală.",
+      "exampleMeaning": "I feel shame after the mistake."
+    },
+    {
+      "word": "mândrie",
+      "reading": "muhn-dree-eh",
+      "meaning": "pride",
+      "example": "Simt mândrie după succes.",
+      "exampleMeaning": "I feel pride after success."
+    },
+    {
+      "word": "calm",
+      "reading": "kahlm",
+      "meaning": "calm",
+      "example": "Rămân calm în situații grele.",
+      "exampleMeaning": "I remain calm in difficult situations."
+    },
+    {
+      "word": "fericit",
+      "reading": "feh-ree-cheet",
+      "meaning": "happy",
+      "example": "Sunt fericit azi.",
+      "exampleMeaning": "I am happy today."
+    },
+    {
+      "word": "trist",
+      "reading": "treest",
+      "meaning": "sad",
+      "example": "Copilul este trist fără jucărie.",
+      "exampleMeaning": "The child is sad without the toy."
+    },
+    {
+      "word": "supărat",
+      "reading": "soo-puh-raht",
+      "meaning": "upset / angry",
+      "example": "El este supărat pe întârziere.",
+      "exampleMeaning": "He is upset about the delay."
+    },
+    {
+      "word": "obosit",
+      "reading": "oh-boh-seet",
+      "meaning": "tired",
+      "example": "Sunt obosit după drum.",
+      "exampleMeaning": "I am tired after the trip."
+    },
+    {
+      "word": "liniștit",
+      "reading": "lee-neesh-teet",
+      "meaning": "peaceful / quiet",
+      "example": "Parcul este liniștit dimineața.",
+      "exampleMeaning": "The park is peaceful in the morning."
+    },
+    {
+      "word": "entuziasmat",
+      "reading": "en-too-zee-ahs-maht",
+      "meaning": "excited",
+      "example": "Sunt entuziasmat pentru excursie.",
+      "exampleMeaning": "I am excited for the trip."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "Sunt ___ azi.",
+          "answer": "fericit",
+          "hint": "happy"
+        },
+        {
+          "sentence": "Sunt ___ după drum.",
+          "answer": "obosit",
+          "hint": "tired"
+        },
+        {
+          "sentence": "Simt ___ după greșeală.",
+          "answer": "rușine",
+          "hint": "shame"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "items": [
+        {
+          "question": "What does 'bucurie' mean?",
+          "options": [
+            "anger",
+            "joy",
+            "fear",
+            "hope"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "How do you say 'sad' in Romanian?",
+          "options": [
+            "trist",
+            "calm",
+            "fericit",
+            "liniștit"
+          ],
+          "answer": 0
+        },
+        {
+          "question": "What does 'mândrie' mean?",
+          "options": [
+            "love",
+            "surprise",
+            "pride",
+            "sadness"
+          ],
+          "answer": 2
+        }
+      ]
+    }
+  ]
+}

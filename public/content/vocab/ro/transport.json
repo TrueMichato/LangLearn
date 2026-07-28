@@ -1,0 +1,178 @@
+{
+  "id": "transport",
+  "words": [
+    {
+      "word": "mașină",
+      "reading": "mah-shee-nuh",
+      "meaning": "car",
+      "example": "Conduc o mașină mică.",
+      "exampleMeaning": "I drive a small car."
+    },
+    {
+      "word": "autobuz",
+      "reading": "ow-toh-booz",
+      "meaning": "bus",
+      "example": "Un autobuz ajunge la stație.",
+      "exampleMeaning": "A bus arrives at the stop."
+    },
+    {
+      "word": "tren",
+      "reading": "tren",
+      "meaning": "train",
+      "example": "Un tren pleacă la prânz.",
+      "exampleMeaning": "A train leaves at noon."
+    },
+    {
+      "word": "metrou",
+      "reading": "meh-troh-oo",
+      "meaning": "subway / metro",
+      "example": "Merg cu metrou prin oraș.",
+      "exampleMeaning": "I go by subway through the city."
+    },
+    {
+      "word": "tramvai",
+      "reading": "trahm-vahy",
+      "meaning": "tram",
+      "example": "Un tramvai merge prin centru.",
+      "exampleMeaning": "A tram goes through downtown."
+    },
+    {
+      "word": "bicicletă",
+      "reading": "bee-chee-kleh-tuh",
+      "meaning": "bicycle",
+      "example": "Merg cu bicicletă la parc.",
+      "exampleMeaning": "I go by bicycle to the park."
+    },
+    {
+      "word": "avion",
+      "reading": "ah-vee-on",
+      "meaning": "airplane",
+      "example": "Un avion zboară spre București.",
+      "exampleMeaning": "An airplane flies toward Bucharest."
+    },
+    {
+      "word": "barcă",
+      "reading": "bahr-kuh",
+      "meaning": "boat",
+      "example": "O barcă trece pe lac.",
+      "exampleMeaning": "A boat passes on the lake."
+    },
+    {
+      "word": "stație",
+      "reading": "stah-tsee-eh",
+      "meaning": "stop / station",
+      "example": "Aștept la stație zece minute.",
+      "exampleMeaning": "I wait at the stop for ten minutes."
+    },
+    {
+      "word": "gară",
+      "reading": "gah-ruh",
+      "meaning": "train station",
+      "example": "Ajung la gară înainte de prânz.",
+      "exampleMeaning": "I arrive at the train station before noon."
+    },
+    {
+      "word": "bilet",
+      "reading": "bee-let",
+      "meaning": "ticket",
+      "example": "Cumpăr un bilet online.",
+      "exampleMeaning": "I buy a ticket online."
+    },
+    {
+      "word": "drum",
+      "reading": "droom",
+      "meaning": "road / way",
+      "example": "Un drum până acolo este lung.",
+      "exampleMeaning": "A road there is long."
+    },
+    {
+      "word": "hartă",
+      "reading": "hahr-tuh",
+      "meaning": "map",
+      "example": "Verific o hartă pe telefon.",
+      "exampleMeaning": "I check a map on the phone."
+    },
+    {
+      "word": "stânga",
+      "reading": "stuhn-gah",
+      "meaning": "left",
+      "example": "La semafor merg la stânga.",
+      "exampleMeaning": "At the traffic light I go left."
+    },
+    {
+      "word": "dreapta",
+      "reading": "dryahp-tah",
+      "meaning": "right",
+      "example": "Magazinul este pe dreapta.",
+      "exampleMeaning": "The store is on the right."
+    },
+    {
+      "word": "înainte",
+      "reading": "uh-nah-een-teh",
+      "meaning": "ahead / forward",
+      "example": "Merg înainte până la pod.",
+      "exampleMeaning": "I go ahead until the bridge."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "Cumpăr un ___ online.",
+          "answer": "bilet",
+          "hint": "ticket"
+        },
+        {
+          "sentence": "La semafor merg la ___.",
+          "answer": "stânga",
+          "hint": "left"
+        },
+        {
+          "sentence": "Verific o ___ pe telefon.",
+          "answer": "hartă",
+          "hint": "map"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "items": [
+        {
+          "question": "What does 'tren' mean?",
+          "options": [
+            "bus",
+            "train",
+            "tram",
+            "boat"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "How do you say 'bicycle' in Romanian?",
+          "options": [
+            "bicicletă",
+            "mașină",
+            "avion",
+            "metrou"
+          ],
+          "answer": 0
+        },
+        {
+          "question": "What does 'gară' mean?",
+          "options": [
+            "ticket",
+            "road",
+            "train station",
+            "map"
+          ],
+          "answer": 2
+        }
+      ]
+    }
+  ]
+}

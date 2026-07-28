@@ -11,6 +11,7 @@ const LANG_VOICE_MAP: Record<string, string> = {
   ko: 'ko-KR',
   pt: 'pt-BR',
   ar: 'ar-SA',
+  ro: 'ro-RO',
 };
 
 // ─── Voice loading ───

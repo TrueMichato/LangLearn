@@ -1,0 +1,178 @@
+{
+  "id": "shopping",
+  "words": [
+    {
+      "word": "magazin",
+      "reading": "mah-gah-zeen",
+      "meaning": "store",
+      "example": "Un magazin din centru deschide la nouă.",
+      "exampleMeaning": "A store downtown opens at nine."
+    },
+    {
+      "word": "piață",
+      "reading": "pyah-tsuh",
+      "meaning": "market",
+      "example": "Cumpăr legume din piață.",
+      "exampleMeaning": "I buy vegetables from the market."
+    },
+    {
+      "word": "bani",
+      "reading": "bahn",
+      "meaning": "money",
+      "example": "Țin bani în portofel.",
+      "exampleMeaning": "I keep money in the wallet."
+    },
+    {
+      "word": "leu",
+      "reading": "leh-oo",
+      "meaning": "leu (Romanian currency)",
+      "example": "Un leu este pe masă.",
+      "exampleMeaning": "One leu is on the table."
+    },
+    {
+      "word": "preț",
+      "reading": "prets",
+      "meaning": "price",
+      "example": "Acest preț este afișat pe etichetă.",
+      "exampleMeaning": "This price is shown on the label."
+    },
+    {
+      "word": "ieftin",
+      "reading": "yef-teen",
+      "meaning": "cheap",
+      "example": "Acest tricou este ieftin.",
+      "exampleMeaning": "This T-shirt is cheap."
+    },
+    {
+      "word": "scump",
+      "reading": "skoomp",
+      "meaning": "expensive",
+      "example": "Ceasul acela este scump.",
+      "exampleMeaning": "That watch is expensive."
+    },
+    {
+      "word": "reducere",
+      "reading": "reh-doo-cheh-reh",
+      "meaning": "discount",
+      "example": "Magazinul are reducere azi.",
+      "exampleMeaning": "The store has a discount today."
+    },
+    {
+      "word": "bon",
+      "reading": "bon",
+      "meaning": "receipt",
+      "example": "Păstrez bon după cumpărături.",
+      "exampleMeaning": "I keep the receipt after shopping."
+    },
+    {
+      "word": "card",
+      "reading": "kahrd",
+      "meaning": "card",
+      "example": "Plătesc cu card la casă.",
+      "exampleMeaning": "I pay by card at the checkout."
+    },
+    {
+      "word": "numerar",
+      "reading": "noo-meh-rahr",
+      "meaning": "cash",
+      "example": "Am numerar pentru piață.",
+      "exampleMeaning": "I have cash for the market."
+    },
+    {
+      "word": "portofel",
+      "reading": "por-toh-fel",
+      "meaning": "wallet",
+      "example": "Un portofel mic este în geantă.",
+      "exampleMeaning": "A small wallet is in the bag."
+    },
+    {
+      "word": "geantă",
+      "reading": "jahn-tuh",
+      "meaning": "bag",
+      "example": "Pun pâinea în geantă.",
+      "exampleMeaning": "I put the bread in the bag."
+    },
+    {
+      "word": "mărime",
+      "reading": "muh-ree-meh",
+      "meaning": "size",
+      "example": "Caut mărime mai mare.",
+      "exampleMeaning": "I am looking for a larger size."
+    },
+    {
+      "word": "casă",
+      "reading": "kah-suh",
+      "meaning": "checkout / cashier",
+      "example": "Stau la casă cu coșul.",
+      "exampleMeaning": "I stand at the checkout with the basket."
+    },
+    {
+      "word": "chitanță",
+      "reading": "kee-tahn-tsuh",
+      "meaning": "receipt / bill",
+      "example": "Cer chitanță pentru firmă.",
+      "exampleMeaning": "I ask for a receipt for the company."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "Plătesc cu ___ la casă.",
+          "answer": "card",
+          "hint": "card"
+        },
+        {
+          "sentence": "Caut ___ mai mare.",
+          "answer": "mărime",
+          "hint": "size"
+        },
+        {
+          "sentence": "Am ___ pentru piață.",
+          "answer": "numerar",
+          "hint": "cash"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "items": [
+        {
+          "question": "What does 'preț' mean?",
+          "options": [
+            "wallet",
+            "price",
+            "discount",
+            "store"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "How do you say 'market' in Romanian?",
+          "options": [
+            "piață",
+            "magazin",
+            "casă",
+            "geantă"
+          ],
+          "answer": 0
+        },
+        {
+          "question": "What does 'bon' mean?",
+          "options": [
+            "cash",
+            "size",
+            "receipt",
+            "money"
+          ],
+          "answer": 2
+        }
+      ]
+    }
+  ]
+}

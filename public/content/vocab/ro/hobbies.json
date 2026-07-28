@@ -1,0 +1,178 @@
+{
+  "id": "hobbies",
+  "words": [
+    {
+      "word": "lectură",
+      "reading": "lek-too-ruh",
+      "meaning": "reading",
+      "example": "Fac lectură seara ca să mă relaxez.",
+      "exampleMeaning": "I read in the evening to relax."
+    },
+    {
+      "word": "muzică",
+      "reading": "moo-zee-kuh",
+      "meaning": "music",
+      "example": "Ascult muzică în autobuz.",
+      "exampleMeaning": "I listen to music on the bus."
+    },
+    {
+      "word": "dans",
+      "reading": "dahns",
+      "meaning": "dance",
+      "example": "Un dans vesel aduce energie la petrecere.",
+      "exampleMeaning": "A cheerful dance brings energy to the party."
+    },
+    {
+      "word": "fotbal",
+      "reading": "fot-bahl",
+      "meaning": "soccer / football",
+      "example": "Joc fotbal în parc.",
+      "exampleMeaning": "I play soccer in the park."
+    },
+    {
+      "word": "înot",
+      "reading": "uh-not",
+      "meaning": "swimming",
+      "example": "Fac înot dimineața la bazin.",
+      "exampleMeaning": "I swim in the morning at the pool."
+    },
+    {
+      "word": "alergare",
+      "reading": "ah-lehr-gah-reh",
+      "meaning": "running",
+      "example": "Alergarea mă ajută să fiu sănătos.",
+      "exampleMeaning": "Running helps me be healthy."
+    },
+    {
+      "word": "ciclism",
+      "reading": "chee-kleesm",
+      "meaning": "cycling",
+      "example": "Practic ciclism vara.",
+      "exampleMeaning": "I practice cycling in summer."
+    },
+    {
+      "word": "pictură",
+      "reading": "peek-too-ruh",
+      "meaning": "painting",
+      "example": "Fac pictură în weekend.",
+      "exampleMeaning": "I paint on the weekend."
+    },
+    {
+      "word": "fotografie",
+      "reading": "foh-toh-grah-fee-eh",
+      "meaning": "photography",
+      "example": "Fac fotografie în natură.",
+      "exampleMeaning": "I do photography in nature."
+    },
+    {
+      "word": "grădinărit",
+      "reading": "gruh-dee-nuh-reet",
+      "meaning": "gardening",
+      "example": "Fac grădinărit primăvara.",
+      "exampleMeaning": "I do gardening in spring."
+    },
+    {
+      "word": "gătit",
+      "reading": "guh-teet",
+      "meaning": "cooking",
+      "example": "Un curs de gătit mă învață rețete noi.",
+      "exampleMeaning": "A cooking course teaches me new recipes."
+    },
+    {
+      "word": "șah",
+      "reading": "shah",
+      "meaning": "chess",
+      "example": "Joc șah cu bunicul.",
+      "exampleMeaning": "I play chess with grandfather."
+    },
+    {
+      "word": "film",
+      "reading": "feelm",
+      "meaning": "film / movie",
+      "example": "Văd un film românesc.",
+      "exampleMeaning": "I watch a Romanian film."
+    },
+    {
+      "word": "teatru",
+      "reading": "teh-ah-troo",
+      "meaning": "theater",
+      "example": "Merg la teatru sâmbătă.",
+      "exampleMeaning": "I go to the theater on Saturday."
+    },
+    {
+      "word": "călătorie",
+      "reading": "kuh-luh-toh-ree-eh",
+      "meaning": "travel / trip",
+      "example": "O călătorie scurtă mă bucură.",
+      "exampleMeaning": "A short trip makes me happy."
+    },
+    {
+      "word": "joc",
+      "reading": "zhok",
+      "meaning": "game",
+      "example": "Acest joc este distractiv.",
+      "exampleMeaning": "This game is fun."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "Joc ___ cu bunicul.",
+          "answer": "șah",
+          "hint": "chess"
+        },
+        {
+          "sentence": "Merg la ___ sâmbătă.",
+          "answer": "teatru",
+          "hint": "theater"
+        },
+        {
+          "sentence": "Ascult ___ în autobuz.",
+          "answer": "muzică",
+          "hint": "music"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "items": [
+        {
+          "question": "What does 'înot' mean?",
+          "options": [
+            "running",
+            "swimming",
+            "cycling",
+            "painting"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "How do you say 'cooking' in Romanian?",
+          "options": [
+            "gătit",
+            "dans",
+            "joc",
+            "lectură"
+          ],
+          "answer": 0
+        },
+        {
+          "question": "What does 'fotografie' mean?",
+          "options": [
+            "theater",
+            "travel",
+            "photography",
+            "chess"
+          ],
+          "answer": 2
+        }
+      ]
+    }
+  ]
+}

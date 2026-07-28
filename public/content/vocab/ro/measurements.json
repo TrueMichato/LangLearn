@@ -1,0 +1,178 @@
+{
+  "id": "measurements",
+  "words": [
+    {
+      "word": "metru",
+      "reading": "meh-troo",
+      "meaning": "meter",
+      "example": "Un metru are o sută de centimetri.",
+      "exampleMeaning": "One meter has one hundred centimeters."
+    },
+    {
+      "word": "centimetru",
+      "reading": "chen-tee-meh-troo",
+      "meaning": "centimeter",
+      "example": "Un centimetru este o măsură mică.",
+      "exampleMeaning": "A centimeter is a small measurement."
+    },
+    {
+      "word": "kilometru",
+      "reading": "kee-lo-meh-troo",
+      "meaning": "kilometer",
+      "example": "Un kilometru este mai lung decât un metru.",
+      "exampleMeaning": "A kilometer is longer than a meter."
+    },
+    {
+      "word": "gram",
+      "reading": "gram",
+      "meaning": "gram",
+      "example": "Un gram de sare este foarte puțin.",
+      "exampleMeaning": "One gram of salt is very little."
+    },
+    {
+      "word": "kilogram",
+      "reading": "kee-lo-gram",
+      "meaning": "kilogram",
+      "example": "Cumpăr un kilogram de făină.",
+      "exampleMeaning": "I buy one kilogram of flour."
+    },
+    {
+      "word": "litru",
+      "reading": "lee-troo",
+      "meaning": "liter",
+      "example": "Bem un litru de apă pe drum.",
+      "exampleMeaning": "We drink one liter of water on the road."
+    },
+    {
+      "word": "jumătate",
+      "reading": "joo-muh-tah-teh",
+      "meaning": "half",
+      "example": "Mănânc jumătate din sandwich acum.",
+      "exampleMeaning": "I eat half of the sandwich now."
+    },
+    {
+      "word": "sfert",
+      "reading": "sfert",
+      "meaning": "quarter",
+      "example": "Vreau un sfert de oră pentru pauză.",
+      "exampleMeaning": "I want a quarter of an hour for a break."
+    },
+    {
+      "word": "pereche",
+      "reading": "peh-reh-keh",
+      "meaning": "pair",
+      "example": "Am cumpărat o pereche de mănuși.",
+      "exampleMeaning": "I bought a pair of gloves."
+    },
+    {
+      "word": "bucată",
+      "reading": "boo-kah-tuh",
+      "meaning": "piece",
+      "example": "Taie o bucată de pâine.",
+      "exampleMeaning": "Cut a piece of bread."
+    },
+    {
+      "word": "lungime",
+      "reading": "loon-jee-meh",
+      "meaning": "length",
+      "example": "Măsurăm lungimea mesei pentru cameră.",
+      "exampleMeaning": "We measure the length of the table for the room."
+    },
+    {
+      "word": "lățime",
+      "reading": "luh-tsee-meh",
+      "meaning": "width",
+      "example": "Măsurăm lățimea camerei înainte să cumpărăm covorul.",
+      "exampleMeaning": "We measure the width of the room before buying the rug."
+    },
+    {
+      "word": "înălțime",
+      "reading": "uh-nuhl-tsee-meh",
+      "meaning": "height",
+      "example": "Copilul are o înălțime potrivită pentru vârsta lui.",
+      "exampleMeaning": "The child has an appropriate height for his age."
+    },
+    {
+      "word": "cerc",
+      "reading": "cherk",
+      "meaning": "circle",
+      "example": "Desenez un cerc pe hârtie.",
+      "exampleMeaning": "I draw a circle on paper."
+    },
+    {
+      "word": "pătrat",
+      "reading": "puh-traht",
+      "meaning": "square",
+      "example": "Fereastra are forma de pătrat.",
+      "exampleMeaning": "The window has the shape of a square."
+    },
+    {
+      "word": "triunghi",
+      "reading": "tree-oon-gee",
+      "meaning": "triangle",
+      "example": "Un triunghi are trei laturi.",
+      "exampleMeaning": "A triangle has three sides."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "Cumpăr un ___ de făină.",
+          "answer": "kilogram",
+          "hint": "kilogram"
+        },
+        {
+          "sentence": "Desenez un ___ pe hârtie.",
+          "answer": "cerc",
+          "hint": "circle"
+        },
+        {
+          "sentence": "Taie o ___ de pâine.",
+          "answer": "bucată",
+          "hint": "piece"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "items": [
+        {
+          "question": "What does 'litru' mean?",
+          "options": [
+            "meter",
+            "liter",
+            "half",
+            "width"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "How do you say 'triangle' in Romanian?",
+          "options": [
+            "pătrat",
+            "cerc",
+            "triunghi",
+            "metru"
+          ],
+          "answer": 2
+        },
+        {
+          "question": "What does 'jumătate' mean?",
+          "options": [
+            "half",
+            "pair",
+            "quarter",
+            "piece"
+          ],
+          "answer": 0
+        }
+      ]
+    }
+  ]
+}

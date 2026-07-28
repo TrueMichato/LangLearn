@@ -4,7 +4,7 @@ import { useSettingsStore } from '../stores/settingsStore';
 import { useXPStore } from '../stores/xpStore';
 import { getLanguageLabel } from '../lib/languages';
 import { isRTL } from '../lib/rtl';
-import { jaClozeSentences, ruClozeSentences, ptClozeSentences, esClozeSentences, arClozeSentences } from '../data/cloze';
+import { jaClozeSentences, ruClozeSentences, ptClozeSentences, esClozeSentences, arClozeSentences, roClozeSentences } from '../data/cloze';
 import type { ClozeSentence } from '../data/cloze';
 import { speak } from '../lib/tts';
 
@@ -21,6 +21,7 @@ function getClozeSentences(lang: string): ClozeSentence[] {
   if (lang === 'pt') return ptClozeSentences;
   if (lang === 'es') return esClozeSentences;
   if (lang === 'ar') return arClozeSentences;
+  if (lang === 'ro') return roClozeSentences;
   return [];
 }
 

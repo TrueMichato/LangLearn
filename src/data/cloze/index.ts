@@ -3,4 +3,5 @@ export { ruClozeSentences } from './ru-cloze';
 export { ptClozeSentences } from './pt-cloze';
 export { esClozeSentences } from './es-cloze';
 export { arClozeSentences } from './ar-cloze';
+export { roClozeSentences } from './ro-cloze';
 export type { ClozeSentence } from './ja-cloze';

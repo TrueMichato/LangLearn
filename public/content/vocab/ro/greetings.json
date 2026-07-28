@@ -1,0 +1,171 @@
+{
+  "id": "greetings",
+  "words": [
+    {
+      "word": "bună dimineața",
+      "reading": "boo-nuh dee-mee-nyah-tsa",
+      "meaning": "good morning",
+      "example": "Spun bună dimineața când intru în birou.",
+      "exampleMeaning": "I say good morning when I enter the office."
+    },
+    {
+      "word": "bună ziua",
+      "reading": "boo-nuh zee-wah",
+      "meaning": "good afternoon / hello",
+      "example": "Bună ziua este un salut politicos.",
+      "exampleMeaning": "Good afternoon is a polite greeting."
+    },
+    {
+      "word": "bună seara",
+      "reading": "boo-nuh syah-rah",
+      "meaning": "good evening",
+      "example": "La ora șapte spun bună seara vecinilor.",
+      "exampleMeaning": "At seven o’clock I say good evening to the neighbors."
+    },
+    {
+      "word": "noapte bună",
+      "reading": "nwap-teh boo-nuh",
+      "meaning": "good night",
+      "example": "Mama spune noapte bună copiilor.",
+      "exampleMeaning": "Mom says good night to the children."
+    },
+    {
+      "word": "salut",
+      "reading": "sah-loot",
+      "meaning": "hi / hello",
+      "example": "Îi spun salut prietenului meu.",
+      "exampleMeaning": "I say hi to my friend."
+    },
+    {
+      "word": "la revedere",
+      "reading": "lah reh-veh-deh-reh",
+      "meaning": "goodbye",
+      "example": "Spun la revedere înainte să plec.",
+      "exampleMeaning": "I say goodbye before I leave."
+    },
+    {
+      "word": "pa",
+      "reading": "pah",
+      "meaning": "bye",
+      "example": "Ea spune pa și închide ușa.",
+      "exampleMeaning": "She says bye and closes the door."
+    },
+    {
+      "word": "mulțumesc",
+      "reading": "mool-tsoo-mesk",
+      "meaning": "thank you",
+      "example": "Îți mulțumesc pentru ajutor.",
+      "exampleMeaning": "Thank you for the help."
+    },
+    {
+      "word": "cu plăcere",
+      "reading": "koo pluh-cheh-reh",
+      "meaning": "you are welcome",
+      "example": "Răspund cu plăcere când cineva îmi mulțumește.",
+      "exampleMeaning": "I answer you are welcome when someone thanks me."
+    },
+    {
+      "word": "te rog",
+      "reading": "teh rog",
+      "meaning": "please",
+      "example": "Dă-mi apa, te rog.",
+      "exampleMeaning": "Give me the water, please."
+    },
+    {
+      "word": "vă rog",
+      "reading": "vuh rog",
+      "meaning": "please (formal/plural)",
+      "example": "Așteptați aici, vă rog.",
+      "exampleMeaning": "Please wait here."
+    },
+    {
+      "word": "scuze",
+      "reading": "skoo-zeh",
+      "meaning": "sorry / excuse me",
+      "example": "Scuze, am întârziat.",
+      "exampleMeaning": "Sorry, I am late."
+    },
+    {
+      "word": "ce mai faci",
+      "reading": "cheh my fahch",
+      "meaning": "how are you",
+      "example": "Îl întreb ce mai faci pe colegul meu.",
+      "exampleMeaning": "I ask my colleague how are you."
+    },
+    {
+      "word": "încântat",
+      "reading": "uhn-kuhn-taht",
+      "meaning": "pleased to meet you",
+      "example": "Sunt încântat să te cunosc.",
+      "exampleMeaning": "I am pleased to meet you."
+    },
+    {
+      "word": "pe curând",
+      "reading": "peh koo-ruhund",
+      "meaning": "see you soon",
+      "example": "Ne vedem pe curând la curs.",
+      "exampleMeaning": "We will see each other soon at class."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "Îți ___ pentru ajutor.",
+          "answer": "mulțumesc",
+          "hint": "thank you"
+        },
+        {
+          "sentence": "Dă-mi apa, ___.",
+          "answer": "te rog",
+          "hint": "please"
+        },
+        {
+          "sentence": "Spun ___ înainte să plec.",
+          "answer": "la revedere",
+          "hint": "goodbye"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "items": [
+        {
+          "question": "What does 'bună dimineața' mean?",
+          "options": [
+            "good night",
+            "good morning",
+            "goodbye",
+            "please"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "How do you say 'thank you' in Romanian?",
+          "options": [
+            "mulțumesc",
+            "scuze",
+            "salut",
+            "pa"
+          ],
+          "answer": 0
+        },
+        {
+          "question": "What does 'cu plăcere' mean?",
+          "options": [
+            "how are you",
+            "good evening",
+            "you are welcome",
+            "see you soon"
+          ],
+          "answer": 2
+        }
+      ]
+    }
+  ]
+}

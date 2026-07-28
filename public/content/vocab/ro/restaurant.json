@@ -1,0 +1,178 @@
+{
+  "id": "restaurant",
+  "words": [
+    {
+      "word": "restaurant",
+      "reading": "res-tow-rahnt",
+      "meaning": "restaurant",
+      "example": "Merg la restaurant seara.",
+      "exampleMeaning": "I go to the restaurant in the evening."
+    },
+    {
+      "word": "masă",
+      "reading": "mah-suh",
+      "meaning": "table",
+      "example": "Avem masă pentru două persoane.",
+      "exampleMeaning": "We have a table for two people."
+    },
+    {
+      "word": "meniu",
+      "reading": "meh-nee-oo",
+      "meaning": "menu",
+      "example": "Citesc un meniu înainte să comand.",
+      "exampleMeaning": "I read a menu before ordering."
+    },
+    {
+      "word": "ospătar",
+      "reading": "os-puh-tahr",
+      "meaning": "waiter",
+      "example": "Un ospătar aduce apă rece.",
+      "exampleMeaning": "A waiter brings cold water."
+    },
+    {
+      "word": "ospătăriță",
+      "reading": "os-puh-tuh-ree-tsuh",
+      "meaning": "waitress",
+      "example": "O ospătăriță recomandă supa zilei.",
+      "exampleMeaning": "A waitress recommends the soup of the day."
+    },
+    {
+      "word": "comandă",
+      "reading": "koh-mahn-duh",
+      "meaning": "order",
+      "example": "Plasez o comandă la prânz.",
+      "exampleMeaning": "I place an order at lunch."
+    },
+    {
+      "word": "fel principal",
+      "reading": "fel preen-chee-pahl",
+      "meaning": "main course",
+      "example": "Un fel principal este pește la grătar.",
+      "exampleMeaning": "A main course is grilled fish."
+    },
+    {
+      "word": "aperitiv",
+      "reading": "ah-peh-ree-teev",
+      "meaning": "appetizer",
+      "example": "Aleg aperitiv cu brânză.",
+      "exampleMeaning": "I choose an appetizer with cheese."
+    },
+    {
+      "word": "desert",
+      "reading": "deh-sert",
+      "meaning": "dessert",
+      "example": "Un desert cu ciocolată este delicios.",
+      "exampleMeaning": "A chocolate dessert is delicious."
+    },
+    {
+      "word": "băutură",
+      "reading": "buh-oo-too-ruh",
+      "meaning": "drink",
+      "example": "Aleg o băutură fără alcool.",
+      "exampleMeaning": "I choose a nonalcoholic drink."
+    },
+    {
+      "word": "notă",
+      "reading": "noh-tuh",
+      "meaning": "bill / check",
+      "example": "Cer notă după cină.",
+      "exampleMeaning": "I ask for the bill after dinner."
+    },
+    {
+      "word": "bacșiș",
+      "reading": "bahk-sheesh",
+      "meaning": "tip",
+      "example": "Lăsăm bacșiș pentru serviciu bun.",
+      "exampleMeaning": "We leave a tip for good service."
+    },
+    {
+      "word": "rezervare",
+      "reading": "reh-zehr-vah-reh",
+      "meaning": "reservation",
+      "example": "Avem rezervare la ora opt.",
+      "exampleMeaning": "We have a reservation at eight o’clock."
+    },
+    {
+      "word": "furculiță",
+      "reading": "foor-koo-lee-tsuh",
+      "meaning": "fork",
+      "example": "Pun furculiță lângă farfurie.",
+      "exampleMeaning": "I put the fork next to the plate."
+    },
+    {
+      "word": "cuțit",
+      "reading": "koo-tseet",
+      "meaning": "knife",
+      "example": "Un cuțit ascuțit taie pâinea.",
+      "exampleMeaning": "A sharp knife cuts the bread."
+    },
+    {
+      "word": "lingură",
+      "reading": "leen-goo-ruh",
+      "meaning": "spoon",
+      "example": "O lingură este pentru supă.",
+      "exampleMeaning": "A spoon is for soup."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "Citesc ___ înainte să comand.",
+          "answer": "meniu",
+          "hint": "menu"
+        },
+        {
+          "sentence": "Cer ___ după cină.",
+          "answer": "notă",
+          "hint": "bill"
+        },
+        {
+          "sentence": "Avem ___ la ora opt.",
+          "answer": "rezervare",
+          "hint": "reservation"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "items": [
+        {
+          "question": "What does 'ospătar' mean?",
+          "options": [
+            "menu",
+            "waiter",
+            "dessert",
+            "tip"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "How do you say 'fork' in Romanian?",
+          "options": [
+            "furculiță",
+            "cuțit",
+            "lingură",
+            "farfurie"
+          ],
+          "answer": 0
+        },
+        {
+          "question": "What does 'băutură' mean?",
+          "options": [
+            "main course",
+            "appetizer",
+            "drink",
+            "order"
+          ],
+          "answer": 2
+        }
+      ]
+    }
+  ]
+}

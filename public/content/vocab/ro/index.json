@@ -1,0 +1,471 @@
+[
+  {
+    "id": "greetings",
+    "title": "Greetings & Introductions",
+    "order": 1,
+    "wordCount": 15,
+    "level": "beginner"
+  },
+  {
+    "id": "numbers",
+    "title": "Numbers 1-100",
+    "order": 2,
+    "wordCount": 18,
+    "level": "beginner"
+  },
+  {
+    "id": "days-months",
+    "title": "Days & Months",
+    "order": 3,
+    "wordCount": 17,
+    "level": "beginner"
+  },
+  {
+    "id": "colors",
+    "title": "Colors & Shapes",
+    "order": 4,
+    "wordCount": 16,
+    "level": "beginner"
+  },
+  {
+    "id": "family",
+    "title": "Family Members",
+    "order": 5,
+    "wordCount": 16,
+    "level": "beginner"
+  },
+  {
+    "id": "food",
+    "title": "Food & Drink",
+    "order": 6,
+    "wordCount": 17,
+    "level": "beginner"
+  },
+  {
+    "id": "animals",
+    "title": "Animals",
+    "order": 7,
+    "wordCount": 16,
+    "level": "beginner"
+  },
+  {
+    "id": "body",
+    "title": "Body Parts",
+    "order": 8,
+    "wordCount": 16,
+    "level": "beginner"
+  },
+  {
+    "id": "verbs",
+    "title": "Common Verbs",
+    "order": 9,
+    "wordCount": 17,
+    "level": "beginner"
+  },
+  {
+    "id": "adjectives",
+    "title": "Common Adjectives",
+    "order": 10,
+    "wordCount": 16,
+    "level": "beginner"
+  },
+  {
+    "id": "house",
+    "title": "Around the House",
+    "order": 11,
+    "wordCount": 16,
+    "level": "beginner"
+  },
+  {
+    "id": "school-work",
+    "title": "At School & Work",
+    "order": 12,
+    "wordCount": 16,
+    "level": "beginner"
+  },
+  {
+    "id": "transport",
+    "title": "Transportation & Directions",
+    "order": 13,
+    "wordCount": 16,
+    "level": "beginner"
+  },
+  {
+    "id": "weather",
+    "title": "Weather & Seasons",
+    "order": 14,
+    "wordCount": 16,
+    "level": "beginner"
+  },
+  {
+    "id": "shopping",
+    "title": "Shopping & Money",
+    "order": 15,
+    "wordCount": 16,
+    "level": "beginner"
+  },
+  {
+    "id": "time-routine",
+    "title": "Time & Daily Routine",
+    "order": 16,
+    "wordCount": 16,
+    "level": "beginner"
+  },
+  {
+    "id": "emotions",
+    "title": "Emotions & Feelings",
+    "order": 17,
+    "wordCount": 16,
+    "level": "beginner"
+  },
+  {
+    "id": "hobbies",
+    "title": "Hobbies & Sports",
+    "order": 18,
+    "wordCount": 16,
+    "level": "beginner"
+  },
+  {
+    "id": "travel",
+    "title": "Travel & Tourism",
+    "order": 19,
+    "wordCount": 16,
+    "level": "beginner"
+  },
+  {
+    "id": "phrases",
+    "title": "Common Phrases & Idioms",
+    "order": 20,
+    "wordCount": 16,
+    "level": "beginner"
+  },
+  {
+    "id": "technology",
+    "title": "Technology & Internet",
+    "order": 21,
+    "wordCount": 16,
+    "level": "intermediate"
+  },
+  {
+    "id": "nature-seasons",
+    "title": "Nature & Environment",
+    "order": 22,
+    "wordCount": 16,
+    "level": "intermediate"
+  },
+  {
+    "id": "clothing",
+    "title": "Clothing & Accessories",
+    "order": 23,
+    "wordCount": 16,
+    "level": "beginner"
+  },
+  {
+    "id": "health",
+    "title": "Health & Medicine",
+    "order": 24,
+    "wordCount": 16,
+    "level": "intermediate"
+  },
+  {
+    "id": "sports",
+    "title": "Sports & Exercise",
+    "order": 25,
+    "wordCount": 16,
+    "level": "intermediate"
+  },
+  {
+    "id": "music-art",
+    "title": "Music & Art",
+    "order": 26,
+    "wordCount": 16,
+    "level": "intermediate"
+  },
+  {
+    "id": "restaurant",
+    "title": "At the Restaurant",
+    "order": 27,
+    "wordCount": 16,
+    "level": "beginner"
+  },
+  {
+    "id": "directions",
+    "title": "Directions & Locations",
+    "order": 28,
+    "wordCount": 16,
+    "level": "beginner"
+  },
+  {
+    "id": "feelings",
+    "title": "Feelings & Personality",
+    "order": 29,
+    "wordCount": 16,
+    "level": "intermediate"
+  },
+  {
+    "id": "workplace",
+    "title": "Workplace & Business",
+    "order": 30,
+    "wordCount": 16,
+    "level": "intermediate"
+  },
+  {
+    "id": "education",
+    "title": "Education & School Life",
+    "order": 31,
+    "wordCount": 16,
+    "level": "intermediate"
+  },
+  {
+    "id": "law-politics",
+    "title": "Law & Government",
+    "order": 32,
+    "wordCount": 16,
+    "level": "intermediate"
+  },
+  {
+    "id": "cooking",
+    "title": "Cooking & Kitchen",
+    "order": 33,
+    "wordCount": 16,
+    "level": "intermediate"
+  },
+  {
+    "id": "banking",
+    "title": "Banking & Finance",
+    "order": 34,
+    "wordCount": 16,
+    "level": "intermediate"
+  },
+  {
+    "id": "media",
+    "title": "Media & News",
+    "order": 35,
+    "wordCount": 16,
+    "level": "intermediate"
+  },
+  {
+    "id": "environment",
+    "title": "Environment & Earth",
+    "order": 36,
+    "wordCount": 16,
+    "level": "intermediate"
+  },
+  {
+    "id": "celebrations",
+    "title": "Festivals & Celebrations",
+    "order": 37,
+    "wordCount": 16,
+    "level": "intermediate"
+  },
+  {
+    "id": "daily-routines",
+    "title": "Daily Routines & Habits",
+    "order": 38,
+    "wordCount": 16,
+    "level": "beginner"
+  },
+  {
+    "id": "opinions",
+    "title": "Opinions & Discussion",
+    "order": 39,
+    "wordCount": 16,
+    "level": "intermediate"
+  },
+  {
+    "id": "emergency",
+    "title": "Emergency & Safety",
+    "order": 40,
+    "wordCount": 16,
+    "level": "intermediate"
+  },
+  {
+    "id": "cognates",
+    "title": "Cognates & False Friends",
+    "order": 41,
+    "wordCount": 16,
+    "level": "beginner"
+  },
+  {
+    "id": "survival-phrases",
+    "title": "Survival & Travel Phrases",
+    "order": 42,
+    "wordCount": 18,
+    "level": "beginner"
+  },
+  {
+    "id": "professions",
+    "title": "Professions & Jobs",
+    "order": 43,
+    "wordCount": 16,
+    "level": "beginner"
+  },
+  {
+    "id": "kitchen-items",
+    "title": "Kitchen & Tableware",
+    "order": 44,
+    "wordCount": 16,
+    "level": "beginner"
+  },
+  {
+    "id": "geography",
+    "title": "Countries & Geography",
+    "order": 45,
+    "wordCount": 16,
+    "level": "intermediate"
+  },
+  {
+    "id": "science",
+    "title": "Science & Space",
+    "order": 46,
+    "wordCount": 16,
+    "level": "intermediate"
+  },
+  {
+    "id": "business-office",
+    "title": "Business & Office",
+    "order": 47,
+    "wordCount": 16,
+    "level": "intermediate"
+  },
+  {
+    "id": "idioms",
+    "title": "Idioms & Everyday Expressions",
+    "order": 48,
+    "wordCount": 16,
+    "level": "intermediate"
+  },
+  {
+    "id": "proverbs",
+    "title": "Proverbs & Sayings",
+    "order": 49,
+    "wordCount": 16,
+    "level": "intermediate"
+  },
+  {
+    "id": "tools-materials",
+    "title": "Tools & Materials",
+    "order": 50,
+    "wordCount": 16,
+    "level": "beginner"
+  },
+  {
+    "id": "plants-garden",
+    "title": "Plants & Gardening",
+    "order": 51,
+    "wordCount": 16,
+    "level": "beginner"
+  },
+  {
+    "id": "society",
+    "title": "Society & Abstract Ideas",
+    "order": 52,
+    "wordCount": 16,
+    "level": "intermediate"
+  },
+  {
+    "id": "false-friends",
+    "title": "False Friends",
+    "order": 53,
+    "wordCount": 16,
+    "level": "intermediate"
+  },
+  {
+    "id": "airport-travel",
+    "title": "At the Airport & Flying",
+    "order": 54,
+    "wordCount": 16,
+    "level": "intermediate"
+  },
+  {
+    "id": "nationalities",
+    "title": "Countries, Nationalities & Languages",
+    "order": 55,
+    "wordCount": 16,
+    "level": "beginner"
+  },
+  {
+    "id": "verbs-motion",
+    "title": "Verbs of Motion & Position",
+    "order": 56,
+    "wordCount": 16,
+    "level": "beginner"
+  },
+  {
+    "id": "human-body-health",
+    "title": "At the Doctor & Symptoms",
+    "order": 57,
+    "wordCount": 16,
+    "level": "intermediate"
+  },
+  {
+    "id": "measurements",
+    "title": "Measurements, Quantities & Shapes",
+    "order": 58,
+    "wordCount": 16,
+    "level": "beginner"
+  },
+  {
+    "id": "birds-insects",
+    "title": "Birds & Insects",
+    "order": 59,
+    "wordCount": 16,
+    "level": "beginner"
+  },
+  {
+    "id": "abstract-emotions",
+    "title": "Abstract Ideas & Deeper Emotions",
+    "order": 60,
+    "wordCount": 16,
+    "level": "intermediate"
+  },
+  {
+    "id": "connectors",
+    "title": "Connectors & Discourse Markers",
+    "order": 61,
+    "wordCount": 16,
+    "level": "intermediate"
+  },
+  {
+    "id": "car-driving",
+    "title": "Cars & Driving",
+    "order": 62,
+    "wordCount": 16,
+    "level": "beginner"
+  },
+  {
+    "id": "post-office-services",
+    "title": "Post Office & Bureaucracy",
+    "order": 63,
+    "wordCount": 16,
+    "level": "intermediate"
+  },
+  {
+    "id": "social-media",
+    "title": "Internet & Social Media",
+    "order": 64,
+    "wordCount": 16,
+    "level": "beginner"
+  },
+  {
+    "id": "life-events",
+    "title": "Life Events & Ceremonies",
+    "order": 65,
+    "wordCount": 16,
+    "level": "intermediate"
+  },
+  {
+    "id": "verbs-communication",
+    "title": "Communication Verbs",
+    "order": 66,
+    "wordCount": 16,
+    "level": "beginner"
+  },
+  {
+    "id": "describing-people",
+    "title": "Describing People (Appearance)",
+    "order": 67,
+    "wordCount": 16,
+    "level": "beginner"
+  }
+]

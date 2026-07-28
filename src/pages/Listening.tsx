@@ -8,6 +8,7 @@ import { ruPassages } from '../data/listening/ru-passages';
 import { ptPassages } from '../data/listening/pt-passages';
 import { esPassages } from '../data/listening/es-passages';
 import { arPassages } from '../data/listening/ar-passages';
+import { roPassages } from '../data/listening/ro-passages';
 import DictationDrill from '../components/drills/DictationDrill';
 import { speakWithSpeed } from '../lib/tts';
 import type { ListeningPassage, ListeningQuestion } from '../data/listening/ja-passages';
@@ -20,6 +21,7 @@ const LANG_PASSAGES: Record<string, ListeningPassage[]> = {
   pt: ptPassages,
   es: esPassages,
   ar: arPassages,
+  ro: roPassages,
 };
 
 const SPEED_OPTIONS = [0.5, 0.75, 1.0, 1.25] as const;

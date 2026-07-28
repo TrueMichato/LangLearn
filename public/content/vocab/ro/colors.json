@@ -1,0 +1,178 @@
+{
+  "id": "colors",
+  "words": [
+    {
+      "word": "roșu",
+      "reading": "roh-shoo",
+      "meaning": "red",
+      "example": "Puloverul meu este roșu.",
+      "exampleMeaning": "My sweater is red."
+    },
+    {
+      "word": "albastru",
+      "reading": "ahl-bahs-troo",
+      "meaning": "blue",
+      "example": "Cerul este albastru azi.",
+      "exampleMeaning": "The sky is blue today."
+    },
+    {
+      "word": "galben",
+      "reading": "gahl-ben",
+      "meaning": "yellow",
+      "example": "Soarele este galben în desen.",
+      "exampleMeaning": "The sun is yellow in the drawing."
+    },
+    {
+      "word": "verde",
+      "reading": "vehr-deh",
+      "meaning": "green",
+      "example": "Parcul este verde primăvara.",
+      "exampleMeaning": "The park is green in spring."
+    },
+    {
+      "word": "negru",
+      "reading": "neh-groo",
+      "meaning": "black",
+      "example": "Telefonul lui este negru.",
+      "exampleMeaning": "His phone is black."
+    },
+    {
+      "word": "alb",
+      "reading": "ahlb",
+      "meaning": "white",
+      "example": "Peretele este alb.",
+      "exampleMeaning": "The wall is white."
+    },
+    {
+      "word": "portocaliu",
+      "reading": "por-toh-kah-lee-oo",
+      "meaning": "orange",
+      "example": "Fularul portocaliu se vede ușor.",
+      "exampleMeaning": "The orange scarf is easy to see."
+    },
+    {
+      "word": "roz",
+      "reading": "roz",
+      "meaning": "pink",
+      "example": "Caietul roz este al ei.",
+      "exampleMeaning": "The pink notebook is hers."
+    },
+    {
+      "word": "mov",
+      "reading": "mov",
+      "meaning": "purple",
+      "example": "Am un pix mov.",
+      "exampleMeaning": "I have a purple pen."
+    },
+    {
+      "word": "maro",
+      "reading": "mah-roh",
+      "meaning": "brown",
+      "example": "Câinele maro doarme pe covor.",
+      "exampleMeaning": "The brown dog sleeps on the rug."
+    },
+    {
+      "word": "gri",
+      "reading": "gree",
+      "meaning": "gray",
+      "example": "Norul gri aduce ploaie.",
+      "exampleMeaning": "The gray cloud brings rain."
+    },
+    {
+      "word": "cerc",
+      "reading": "cherk",
+      "meaning": "circle",
+      "example": "Desenez un cerc pe hârtie.",
+      "exampleMeaning": "I draw a circle on paper."
+    },
+    {
+      "word": "pătrat",
+      "reading": "puh-traht",
+      "meaning": "square",
+      "example": "Fereastra are un pătrat mic.",
+      "exampleMeaning": "The window has a small square."
+    },
+    {
+      "word": "triunghi",
+      "reading": "tree-oong",
+      "meaning": "triangle",
+      "example": "Copilul colorează un triunghi.",
+      "exampleMeaning": "The child colors a triangle."
+    },
+    {
+      "word": "dreptunghi",
+      "reading": "drept-oong",
+      "meaning": "rectangle",
+      "example": "Tabla este un dreptunghi mare.",
+      "exampleMeaning": "The board is a large rectangle."
+    },
+    {
+      "word": "linie",
+      "reading": "lee-nee-eh",
+      "meaning": "line",
+      "example": "Trag o linie dreaptă.",
+      "exampleMeaning": "I draw a straight line."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "Cerul este ___ azi.",
+          "answer": "albastru",
+          "hint": "blue"
+        },
+        {
+          "sentence": "Desenez un ___ pe hârtie.",
+          "answer": "cerc",
+          "hint": "circle"
+        },
+        {
+          "sentence": "Trag o ___ dreaptă.",
+          "answer": "linie",
+          "hint": "line"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "items": [
+        {
+          "question": "What does 'verde' mean?",
+          "options": [
+            "yellow",
+            "green",
+            "black",
+            "pink"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "How do you say 'square' in Romanian?",
+          "options": [
+            "pătrat",
+            "cerc",
+            "linie",
+            "triunghi"
+          ],
+          "answer": 0
+        },
+        {
+          "question": "What does 'gri' mean?",
+          "options": [
+            "brown",
+            "blue",
+            "gray",
+            "white"
+          ],
+          "answer": 2
+        }
+      ]
+    }
+  ]
+}

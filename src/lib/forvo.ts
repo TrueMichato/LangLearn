@@ -9,6 +9,7 @@ const FORVO_LANG_CODES: Record<string, string> = {
   it: 'it',
   pt: 'pt',
   ar: 'ar',
+  ro: 'ro',
 };
 
 /**

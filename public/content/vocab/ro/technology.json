@@ -1,0 +1,178 @@
+{
+  "id": "technology",
+  "words": [
+    {
+      "word": "calculator",
+      "reading": "kahl-koo-lah-tor",
+      "meaning": "computer",
+      "example": "Un calculator pornește încet dimineața.",
+      "exampleMeaning": "A computer starts slowly in the morning."
+    },
+    {
+      "word": "telefon",
+      "reading": "teh-leh-fon",
+      "meaning": "phone",
+      "example": "Un telefon vibrează pe masă.",
+      "exampleMeaning": "A phone vibrates on the table."
+    },
+    {
+      "word": "internet",
+      "reading": "een-tehr-net",
+      "meaning": "internet",
+      "example": "Am internet rapid la lucru.",
+      "exampleMeaning": "I have fast internet at work."
+    },
+    {
+      "word": "parolă",
+      "reading": "pah-roh-luh",
+      "meaning": "password",
+      "example": "Schimb parolă în fiecare lună.",
+      "exampleMeaning": "I change the password every month."
+    },
+    {
+      "word": "cont",
+      "reading": "kont",
+      "meaning": "account",
+      "example": "Am cont nou pe platformă.",
+      "exampleMeaning": "I have a new account on the platform."
+    },
+    {
+      "word": "ecran",
+      "reading": "eh-krahn",
+      "meaning": "screen",
+      "example": "Un ecran luminos obosește ochii.",
+      "exampleMeaning": "A bright screen tires the eyes."
+    },
+    {
+      "word": "tastatură",
+      "reading": "tahs-tah-too-ruh",
+      "meaning": "keyboard",
+      "example": "O tastatură mecanică face zgomot.",
+      "exampleMeaning": "A mechanical keyboard makes noise."
+    },
+    {
+      "word": "mouse",
+      "reading": "maws",
+      "meaning": "mouse",
+      "example": "Un mouse fără fir este comod.",
+      "exampleMeaning": "A wireless mouse is comfortable."
+    },
+    {
+      "word": "aplicație",
+      "reading": "ah-plee-kah-tsee-eh",
+      "meaning": "application / app",
+      "example": "O aplicație se actualizează automat.",
+      "exampleMeaning": "An app updates automatically."
+    },
+    {
+      "word": "fișier",
+      "reading": "fee-sheer",
+      "meaning": "file",
+      "example": "Salvez fișier în cloud.",
+      "exampleMeaning": "I save the file in the cloud."
+    },
+    {
+      "word": "mesaj",
+      "reading": "meh-sahzh",
+      "meaning": "message",
+      "example": "Trimit un mesaj scurt.",
+      "exampleMeaning": "I send a short message."
+    },
+    {
+      "word": "rețea",
+      "reading": "reh-tseh-ah",
+      "meaning": "network",
+      "example": "O rețea locală este securizată.",
+      "exampleMeaning": "A local network is secure."
+    },
+    {
+      "word": "descărcare",
+      "reading": "des-kuhr-kah-reh",
+      "meaning": "download",
+      "example": "O descărcare durează două minute.",
+      "exampleMeaning": "A download takes two minutes."
+    },
+    {
+      "word": "încărcare",
+      "reading": "uhn-kuhr-kah-reh",
+      "meaning": "upload / loading",
+      "example": "Încărcarea fișierului a reușit.",
+      "exampleMeaning": "The upload of the file succeeded."
+    },
+    {
+      "word": "securitate",
+      "reading": "seh-koo-ree-tah-teh",
+      "meaning": "security",
+      "example": "Securitatea online este importantă.",
+      "exampleMeaning": "Online security is important."
+    },
+    {
+      "word": "actualizare",
+      "reading": "ahk-too-ah-lee-zah-reh",
+      "meaning": "update",
+      "example": "O actualizare repară problema.",
+      "exampleMeaning": "An update fixes the problem."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "Schimb ___ în fiecare lună.",
+          "answer": "parolă",
+          "hint": "password"
+        },
+        {
+          "sentence": "Salvez ___ în cloud.",
+          "answer": "fișier",
+          "hint": "file"
+        },
+        {
+          "sentence": "Vorbim despre ___ online.",
+          "answer": "securitate",
+          "hint": "security"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "items": [
+        {
+          "question": "What does 'tastatură' mean?",
+          "options": [
+            "screen",
+            "keyboard",
+            "mouse",
+            "file"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "How do you say 'network' in Romanian?",
+          "options": [
+            "rețea",
+            "cont",
+            "mesaj",
+            "ecran"
+          ],
+          "answer": 0
+        },
+        {
+          "question": "What does 'actualizare' mean?",
+          "options": [
+            "download",
+            "password",
+            "update",
+            "security"
+          ],
+          "answer": 2
+        }
+      ]
+    }
+  ]
+}

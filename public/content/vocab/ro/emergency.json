@@ -1,0 +1,178 @@
+{
+  "id": "emergency",
+  "words": [
+    {
+      "word": "urgență",
+      "reading": "oor-jen-tsuh",
+      "meaning": "emergency",
+      "example": "O urgență cere reacție rapidă.",
+      "exampleMeaning": "An emergency requires a quick reaction."
+    },
+    {
+      "word": "ajutor",
+      "reading": "ah-zhoo-tor",
+      "meaning": "help",
+      "example": "Cer ajutor când sunt în pericol.",
+      "exampleMeaning": "I ask for help when I am in danger."
+    },
+    {
+      "word": "pericol",
+      "reading": "peh-ree-kol",
+      "meaning": "danger",
+      "example": "Un pericol apare pe drum alunecos.",
+      "exampleMeaning": "Danger appears on a slippery road."
+    },
+    {
+      "word": "siguranță",
+      "reading": "see-goo-rahn-tsuh",
+      "meaning": "safety",
+      "example": "Siguranța copiilor este prioritară.",
+      "exampleMeaning": "The safety of children is a priority."
+    },
+    {
+      "word": "incendiu",
+      "reading": "een-chen-dee-oo",
+      "meaning": "fire",
+      "example": "Un incendiu pornește în bucătărie.",
+      "exampleMeaning": "A fire starts in the kitchen."
+    },
+    {
+      "word": "fum",
+      "reading": "foom",
+      "meaning": "smoke",
+      "example": "Un fum gros iese pe fereastră.",
+      "exampleMeaning": "Thick smoke comes out the window."
+    },
+    {
+      "word": "accident",
+      "reading": "ahk-chee-dent",
+      "meaning": "accident",
+      "example": "Un accident blochează strada.",
+      "exampleMeaning": "An accident blocks the street."
+    },
+    {
+      "word": "ambulanță",
+      "reading": "ahm-boo-lahn-tsuh",
+      "meaning": "ambulance",
+      "example": "O ambulanță ajunge în cinci minute.",
+      "exampleMeaning": "An ambulance arrives in five minutes."
+    },
+    {
+      "word": "pompier",
+      "reading": "pom-pyehr",
+      "meaning": "firefighter",
+      "example": "Un pompier intră în clădire.",
+      "exampleMeaning": "A firefighter enters the building."
+    },
+    {
+      "word": "polițist",
+      "reading": "poh-lee-tseest",
+      "meaning": "police officer",
+      "example": "Un polițist dirijează traficul.",
+      "exampleMeaning": "A police officer directs traffic."
+    },
+    {
+      "word": "adăpost",
+      "reading": "ah-duh-post",
+      "meaning": "shelter",
+      "example": "Un adăpost protejează oamenii de furtună.",
+      "exampleMeaning": "Shelter protects people from the storm."
+    },
+    {
+      "word": "evacuare",
+      "reading": "eh-vah-koo-ah-reh",
+      "meaning": "evacuation",
+      "example": "O evacuare ordonată salvează timp.",
+      "exampleMeaning": "Orderly evacuation saves time."
+    },
+    {
+      "word": "rană",
+      "reading": "rah-nuh",
+      "meaning": "wound",
+      "example": "O rană mică trebuie curățată.",
+      "exampleMeaning": "A small wound must be cleaned."
+    },
+    {
+      "word": "bandaj",
+      "reading": "bahn-dahzh",
+      "meaning": "bandage",
+      "example": "Pun bandaj pe genunchi.",
+      "exampleMeaning": "I put a bandage on the knee."
+    },
+    {
+      "word": "stingător",
+      "reading": "steen-guh-tor",
+      "meaning": "fire extinguisher",
+      "example": "Un stingător este lângă ușă.",
+      "exampleMeaning": "A fire extinguisher is near the door."
+    },
+    {
+      "word": "avertizare",
+      "reading": "ah-vehr-tee-zah-reh",
+      "meaning": "warning",
+      "example": "O avertizare meteo apare pe telefon.",
+      "exampleMeaning": "A weather warning appears on the phone."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "Cer ___ când sunt în pericol.",
+          "answer": "ajutor",
+          "hint": "help"
+        },
+        {
+          "sentence": "Pun ___ pe genunchi.",
+          "answer": "bandaj",
+          "hint": "bandage"
+        },
+        {
+          "sentence": "Un ___ este lângă ușă.",
+          "answer": "stingător",
+          "hint": "fire extinguisher"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "items": [
+        {
+          "question": "What does 'ambulanță' mean?",
+          "options": [
+            "firefighter",
+            "ambulance",
+            "shelter",
+            "smoke"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "How do you say 'danger' in Romanian?",
+          "options": [
+            "pericol",
+            "siguranță",
+            "rană",
+            "avertizare"
+          ],
+          "answer": 0
+        },
+        {
+          "question": "What does 'evacuare' mean?",
+          "options": [
+            "accident",
+            "wound",
+            "evacuation",
+            "emergency"
+          ],
+          "answer": 2
+        }
+      ]
+    }
+  ]
+}

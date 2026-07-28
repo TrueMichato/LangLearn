@@ -5,6 +5,7 @@ import { CYRILLIC, CYRILLIC_LOWERCASE } from './cyrillic';
 import { PT_ACCENTED_VOWELS, PT_UPPERCASE_ACCENTS } from './portuguese';
 import { ES_ACCENTED_VOWELS, ES_SPECIAL_LETTERS, ES_UPPERCASE_ACCENTS } from './spanish';
 import { ARABIC_LETTERS, ARABIC_HARAKAT, ARABIC_SPECIAL, ARABIC_NUMERALS } from './arabic';
+import { RO_DIACRITICS, RO_UPPERCASE_DIACRITICS, RO_COMBINATIONS } from './romanian';
 import type { Character } from './hiragana';
 
 export type { Character };
@@ -33,6 +34,11 @@ export const ALPHABET_DATA: Record<string, { name: string; characters: Character
     { name: 'Vowels & Marks (Ḥarakāt)', characters: ARABIC_HARAKAT },
     { name: 'Hamza & Special Forms', characters: ARABIC_SPECIAL },
     { name: 'Numerals (٠–٩)', characters: ARABIC_NUMERALS },
+  ],
+  ro: [
+    { name: 'Diacritics (ă â î ș ț)', characters: RO_DIACRITICS },
+    { name: 'Uppercase Diacritics', characters: RO_UPPERCASE_DIACRITICS },
+    { name: 'Letter Combinations', characters: RO_COMBINATIONS },
   ],
 };
 

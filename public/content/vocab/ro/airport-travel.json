@@ -1,0 +1,178 @@
+{
+  "id": "airport-travel",
+  "words": [
+    {
+      "word": "aeroport",
+      "reading": "ah-eh-ro-port",
+      "meaning": "airport",
+      "example": "Ajungem la aeroport cu două ore înainte de zbor.",
+      "exampleMeaning": "We arrive at the airport two hours before the flight."
+    },
+    {
+      "word": "bilet",
+      "reading": "bee-let",
+      "meaning": "ticket",
+      "example": "Am un bilet pentru zborul de dimineață.",
+      "exampleMeaning": "I have a ticket for the morning flight."
+    },
+    {
+      "word": "pașaport",
+      "reading": "pah-shah-port",
+      "meaning": "passport",
+      "example": "Arăt un pașaport valid la ghișeu.",
+      "exampleMeaning": "I show a valid passport at the counter."
+    },
+    {
+      "word": "carte de îmbarcare",
+      "reading": "kar-teh deh uhm-bar-kah-reh",
+      "meaning": "boarding pass",
+      "example": "Primesc o carte de îmbarcare pe telefon.",
+      "exampleMeaning": "I receive a boarding pass on my phone."
+    },
+    {
+      "word": "poartă",
+      "reading": "pwar-tuh",
+      "meaning": "gate",
+      "example": "Așteptăm la poartă până începe îmbarcarea.",
+      "exampleMeaning": "We wait at the gate until boarding begins."
+    },
+    {
+      "word": "zbor",
+      "reading": "zbor",
+      "meaning": "flight",
+      "example": "Acest zbor pleacă la ora opt.",
+      "exampleMeaning": "This flight leaves at eight o'clock."
+    },
+    {
+      "word": "avion",
+      "reading": "ah-vee-on",
+      "meaning": "airplane",
+      "example": "Mergem spre un avion mare și alb.",
+      "exampleMeaning": "We walk toward a large white airplane."
+    },
+    {
+      "word": "bagaj",
+      "reading": "bah-gahzh",
+      "meaning": "luggage",
+      "example": "Pun un bagaj mic în compartimentul de sus.",
+      "exampleMeaning": "I put a small bag in the overhead compartment."
+    },
+    {
+      "word": "control de securitate",
+      "reading": "kon-trol deh seh-koo-ree-tah-teh",
+      "meaning": "security check",
+      "example": "Trecem prin control de securitate fără probleme.",
+      "exampleMeaning": "We pass through security check without problems."
+    },
+    {
+      "word": "vamă",
+      "reading": "vah-muh",
+      "meaning": "customs",
+      "example": "La vamă, declarăm suvenirurile cumpărate.",
+      "exampleMeaning": "At customs, we declare the souvenirs we bought."
+    },
+    {
+      "word": "escală",
+      "reading": "es-kah-luh",
+      "meaning": "layover",
+      "example": "Avem o escală scurtă la Viena.",
+      "exampleMeaning": "We have a short layover in Vienna."
+    },
+    {
+      "word": "decolare",
+      "reading": "deh-ko-lah-reh",
+      "meaning": "takeoff",
+      "example": "La decolare, pasagerii își închid telefoanele.",
+      "exampleMeaning": "During takeoff, passengers turn off their phones."
+    },
+    {
+      "word": "aterizare",
+      "reading": "ah-teh-ree-zah-reh",
+      "meaning": "landing",
+      "example": "La aterizare, toți aplaudă în glumă.",
+      "exampleMeaning": "During landing, everyone claps jokingly."
+    },
+    {
+      "word": "întârziere",
+      "reading": "uhn-tuhr-zee-eh-reh",
+      "meaning": "delay",
+      "example": "Avem o întârziere de treizeci de minute.",
+      "exampleMeaning": "We have a delay of thirty minutes."
+    },
+    {
+      "word": "pasager",
+      "reading": "pah-sah-jer",
+      "meaning": "passenger",
+      "example": "Fiecare pasager își caută locul.",
+      "exampleMeaning": "Each passenger looks for their seat."
+    },
+    {
+      "word": "pilot",
+      "reading": "pee-lot",
+      "meaning": "pilot",
+      "example": "Un pilot anunță vreme bună pe traseu.",
+      "exampleMeaning": "A pilot announces good weather on the route."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "Arăt un ___ valid la ghișeu.",
+          "answer": "pașaport",
+          "hint": "passport"
+        },
+        {
+          "sentence": "Avem o ___ scurtă la Viena.",
+          "answer": "escală",
+          "hint": "layover"
+        },
+        {
+          "sentence": "Așteptăm la ___ până începe îmbarcarea.",
+          "answer": "poartă",
+          "hint": "gate"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "items": [
+        {
+          "question": "What does 'carte de îmbarcare' mean?",
+          "options": [
+            "passport",
+            "boarding pass",
+            "luggage",
+            "customs"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "How do you say 'delay' in Romanian?",
+          "options": [
+            "decolare",
+            "aterizare",
+            "întârziere",
+            "escală"
+          ],
+          "answer": 2
+        },
+        {
+          "question": "What does 'zbor' mean?",
+          "options": [
+            "flight",
+            "gate",
+            "pilot",
+            "ticket"
+          ],
+          "answer": 0
+        }
+      ]
+    }
+  ]
+}

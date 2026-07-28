@@ -1,0 +1,178 @@
+{
+  "id": "music-art",
+  "words": [
+    {
+      "word": "muzică",
+      "reading": "moo-zee-kuh",
+      "meaning": "music",
+      "example": "Ascult muzică clasică pentru relaxare.",
+      "exampleMeaning": "I listen to classical music for relaxation."
+    },
+    {
+      "word": "cântec",
+      "reading": "kuhn-tek",
+      "meaning": "song",
+      "example": "Un cântec vechi îmi amintește de copilărie.",
+      "exampleMeaning": "An old song reminds me of childhood."
+    },
+    {
+      "word": "voce",
+      "reading": "voh-cheh",
+      "meaning": "voice",
+      "example": "O voce caldă umple sala.",
+      "exampleMeaning": "A warm voice fills the hall."
+    },
+    {
+      "word": "chitară",
+      "reading": "kee-tah-ruh",
+      "meaning": "guitar",
+      "example": "O chitară acustică sună frumos.",
+      "exampleMeaning": "An acoustic guitar sounds beautiful."
+    },
+    {
+      "word": "pian",
+      "reading": "pee-ahn",
+      "meaning": "piano",
+      "example": "Un pian negru stă pe scenă.",
+      "exampleMeaning": "A black piano stands on the stage."
+    },
+    {
+      "word": "vioară",
+      "reading": "vee-wah-ruh",
+      "meaning": "violin",
+      "example": "O vioară cântă o melodie tristă.",
+      "exampleMeaning": "A violin plays a sad melody."
+    },
+    {
+      "word": "ritm",
+      "reading": "reetm",
+      "meaning": "rhythm",
+      "example": "Un ritm rapid face publicul să danseze.",
+      "exampleMeaning": "A fast rhythm makes the audience dance."
+    },
+    {
+      "word": "melodie",
+      "reading": "meh-loh-dee-eh",
+      "meaning": "melody",
+      "example": "O melodie simplă rămâne în minte.",
+      "exampleMeaning": "A simple melody stays in the mind."
+    },
+    {
+      "word": "concert",
+      "reading": "kon-chert",
+      "meaning": "concert",
+      "example": "Un concert începe la ora opt.",
+      "exampleMeaning": "A concert starts at eight o’clock."
+    },
+    {
+      "word": "artist",
+      "reading": "ahr-teest",
+      "meaning": "artist",
+      "example": "Un artist local expune tablouri.",
+      "exampleMeaning": "A local artist exhibits paintings."
+    },
+    {
+      "word": "pictură",
+      "reading": "peek-too-ruh",
+      "meaning": "painting",
+      "example": "O pictură modernă atrage privirea.",
+      "exampleMeaning": "A modern painting attracts the eye."
+    },
+    {
+      "word": "tablou",
+      "reading": "tah-bloh-oo",
+      "meaning": "painting / picture",
+      "example": "Un tablou mare atârnă pe perete.",
+      "exampleMeaning": "A large painting hangs on the wall."
+    },
+    {
+      "word": "culoare",
+      "reading": "koo-loh-ah-reh",
+      "meaning": "color",
+      "example": "O culoare puternică schimbă atmosfera.",
+      "exampleMeaning": "A strong color changes the atmosphere."
+    },
+    {
+      "word": "sculptură",
+      "reading": "skoolp-too-ruh",
+      "meaning": "sculpture",
+      "example": "O sculptură din piatră este în parc.",
+      "exampleMeaning": "A stone sculpture is in the park."
+    },
+    {
+      "word": "muzeu",
+      "reading": "moo-zeh-oo",
+      "meaning": "museum",
+      "example": "Un muzeu de artă se închide la șase.",
+      "exampleMeaning": "An art museum closes at six."
+    },
+    {
+      "word": "scenă",
+      "reading": "sheh-nuh",
+      "meaning": "stage",
+      "example": "Actorii intră pe scenă.",
+      "exampleMeaning": "The actors enter the stage."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "Ascult ___ clasică pentru relaxare.",
+          "answer": "muzică",
+          "hint": "music"
+        },
+        {
+          "sentence": "Un ___ mare atârnă pe perete.",
+          "answer": "tablou",
+          "hint": "painting"
+        },
+        {
+          "sentence": "Actorii intră pe ___.",
+          "answer": "scenă",
+          "hint": "stage"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "items": [
+        {
+          "question": "What does 'cântec' mean?",
+          "options": [
+            "voice",
+            "song",
+            "rhythm",
+            "concert"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "How do you say 'violin' in Romanian?",
+          "options": [
+            "vioară",
+            "chitară",
+            "pian",
+            "melodie"
+          ],
+          "answer": 0
+        },
+        {
+          "question": "What does 'sculptură' mean?",
+          "options": [
+            "painting",
+            "color",
+            "sculpture",
+            "museum"
+          ],
+          "answer": 2
+        }
+      ]
+    }
+  ]
+}

@@ -3,7 +3,7 @@ import { useSettingsStore } from '../stores/settingsStore';
 import { useXPStore } from '../stores/xpStore';
 import { getLanguageLabel } from '../lib/languages';
 import { speak } from '../lib/tts';
-import { jaMinimalPairs, ruMinimalPairs, ptMinimalPairs, esMinimalPairs, arMinimalPairs } from '../data/minimal-pairs';
+import { jaMinimalPairs, ruMinimalPairs, ptMinimalPairs, esMinimalPairs, arMinimalPairs, roMinimalPairs } from '../data/minimal-pairs';
 import type { MinimalPair } from '../data/minimal-pairs';
 type Phase = 'setup' | 'session' | 'summary';
 
@@ -36,6 +36,11 @@ const CATEGORIES: Record<string, string> = {
   emphatic: 'Emphatic vs Plain (ص/س، ط/ت، ض/د، ظ/ذ)',
   throat: 'Throat Letters (ح/ه، ع/ء)',
   similar: 'Similar Consonants (ق/ك، خ/غ)',
+  // RO
+  'a-vowels': 'A-Vowels (a / ă / â)',
+  'diacritic-consonants': 'Ș & Ț vs S & T',
+  'c-g-soft': 'Soft vs Hard C & G',
+  'i-diphthong': 'Î / I & Diphthongs',
 };
 
 function getPairsForLanguage(language: string): MinimalPair[] {
@@ -45,6 +50,7 @@ function getPairsForLanguage(language: string): MinimalPair[] {
     case 'pt': return ptMinimalPairs;
     case 'es': return esMinimalPairs;
     case 'ar': return arMinimalPairs;
+    case 'ro': return roMinimalPairs;
     default: return [];
   }
 }

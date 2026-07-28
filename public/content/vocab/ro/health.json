@@ -1,0 +1,178 @@
+{
+  "id": "health",
+  "words": [
+    {
+      "word": "sănătate",
+      "reading": "suh-nuh-tah-teh",
+      "meaning": "health",
+      "example": "Am grijă de sănătate în fiecare zi.",
+      "exampleMeaning": "I take care of my health every day."
+    },
+    {
+      "word": "boală",
+      "reading": "bwah-luh",
+      "meaning": "illness / disease",
+      "example": "O boală se tratează cu răbdare.",
+      "exampleMeaning": "An illness is treated with patience."
+    },
+    {
+      "word": "durere",
+      "reading": "doo-reh-reh",
+      "meaning": "pain",
+      "example": "O durere de cap apare seara.",
+      "exampleMeaning": "A headache appears in the evening."
+    },
+    {
+      "word": "febră",
+      "reading": "feh-bruh",
+      "meaning": "fever",
+      "example": "Am febră mare de ieri.",
+      "exampleMeaning": "I have had a high fever since yesterday."
+    },
+    {
+      "word": "tuse",
+      "reading": "too-seh",
+      "meaning": "cough",
+      "example": "Am tuse seacă dimineața.",
+      "exampleMeaning": "I have a dry cough in the morning."
+    },
+    {
+      "word": "răceală",
+      "reading": "ruh-chah-luh",
+      "meaning": "cold",
+      "example": "O răceală trece în câteva zile.",
+      "exampleMeaning": "A cold passes in a few days."
+    },
+    {
+      "word": "medic",
+      "reading": "meh-deek",
+      "meaning": "doctor",
+      "example": "Un medic ascultă pacientul.",
+      "exampleMeaning": "A doctor listens to the patient."
+    },
+    {
+      "word": "asistentă",
+      "reading": "ah-sees-ten-tuh",
+      "meaning": "nurse",
+      "example": "O asistentă măsoară tensiunea.",
+      "exampleMeaning": "A nurse measures blood pressure."
+    },
+    {
+      "word": "spital",
+      "reading": "spee-tahl",
+      "meaning": "hospital",
+      "example": "Merg la spital pentru consultație.",
+      "exampleMeaning": "I go to the hospital for a consultation."
+    },
+    {
+      "word": "farmacie",
+      "reading": "fahr-mah-chee-eh",
+      "meaning": "pharmacy",
+      "example": "O farmacie vinde medicamente.",
+      "exampleMeaning": "A pharmacy sells medicines."
+    },
+    {
+      "word": "medicament",
+      "reading": "meh-dee-kah-ment",
+      "meaning": "medicine",
+      "example": "Iau un medicament după masă.",
+      "exampleMeaning": "I take a medicine after the meal."
+    },
+    {
+      "word": "rețetă",
+      "reading": "reh-tseh-tuh",
+      "meaning": "prescription / recipe",
+      "example": "Medicul scrie rețetă pentru antibiotic.",
+      "exampleMeaning": "The doctor writes a prescription for an antibiotic."
+    },
+    {
+      "word": "tratament",
+      "reading": "trah-tah-ment",
+      "meaning": "treatment",
+      "example": "Un tratament durează o săptămână.",
+      "exampleMeaning": "A treatment lasts one week."
+    },
+    {
+      "word": "vaccin",
+      "reading": "vahk-cheen",
+      "meaning": "vaccine",
+      "example": "Un vaccin protejează comunitatea.",
+      "exampleMeaning": "A vaccine protects the community."
+    },
+    {
+      "word": "urgență",
+      "reading": "oor-jen-tsuh",
+      "meaning": "emergency",
+      "example": "O urgență medicală cere apel rapid.",
+      "exampleMeaning": "A medical emergency requires a quick call."
+    },
+    {
+      "word": "analiză",
+      "reading": "ah-nah-lee-zuh",
+      "meaning": "medical test / analysis",
+      "example": "Fac analiză de sânge dimineața.",
+      "exampleMeaning": "I do a blood test in the morning."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "Iau un ___ după masă.",
+          "answer": "medicament",
+          "hint": "medicine"
+        },
+        {
+          "sentence": "Caut o ___ deschisă.",
+          "answer": "farmacie",
+          "hint": "pharmacy"
+        },
+        {
+          "sentence": "Un ___ ascultă pacientul.",
+          "answer": "medic",
+          "hint": "doctor"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "items": [
+        {
+          "question": "What does 'febră' mean?",
+          "options": [
+            "cough",
+            "fever",
+            "cold",
+            "pain"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "How do you say 'hospital' in Romanian?",
+          "options": [
+            "spital",
+            "farmacie",
+            "tratament",
+            "vaccin"
+          ],
+          "answer": 0
+        },
+        {
+          "question": "What does 'rețetă' mean in a medical context?",
+          "options": [
+            "nurse",
+            "emergency",
+            "prescription",
+            "analysis"
+          ],
+          "answer": 2
+        }
+      ]
+    }
+  ]
+}

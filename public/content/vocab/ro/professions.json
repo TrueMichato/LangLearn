@@ -1,0 +1,178 @@
+{
+  "id": "professions",
+  "words": [
+    {
+      "word": "medic",
+      "reading": "meh-deek",
+      "meaning": "doctor",
+      "example": "Medicul ascultă pacientul cu atenție.",
+      "exampleMeaning": "The doctor listens to the patient carefully."
+    },
+    {
+      "word": "asistent medical",
+      "reading": "ah-see-stent meh-dee-kal",
+      "meaning": "nurse / medical assistant",
+      "example": "Asistentul medical schimbă bandajul.",
+      "exampleMeaning": "The nurse changes the bandage."
+    },
+    {
+      "word": "profesor",
+      "reading": "pro-feh-sor",
+      "meaning": "teacher / professor",
+      "example": "Profesorul explică lecția clar.",
+      "exampleMeaning": "The teacher explains the lesson clearly."
+    },
+    {
+      "word": "inginer",
+      "reading": "een-jee-ner",
+      "meaning": "engineer",
+      "example": "Inginerul verifică planul podului.",
+      "exampleMeaning": "The engineer checks the bridge plan."
+    },
+    {
+      "word": "programator",
+      "reading": "pro-grah-mah-tor",
+      "meaning": "programmer",
+      "example": "Programatorul scrie cod pentru aplicație.",
+      "exampleMeaning": "The programmer writes code for the app."
+    },
+    {
+      "word": "avocat",
+      "reading": "ah-vo-kaht",
+      "meaning": "lawyer",
+      "example": "Avocatul apără clientul în instanță.",
+      "exampleMeaning": "The lawyer defends the client in court."
+    },
+    {
+      "word": "contabil",
+      "reading": "kon-tah-beel",
+      "meaning": "accountant",
+      "example": "Contabilul calculează taxele firmei.",
+      "exampleMeaning": "The accountant calculates the company's taxes."
+    },
+    {
+      "word": "arhitect",
+      "reading": "ar-hee-tekt",
+      "meaning": "architect",
+      "example": "Arhitectul desenează o casă modernă.",
+      "exampleMeaning": "The architect designs a modern house."
+    },
+    {
+      "word": "electrician",
+      "reading": "eh-lek-tree-chyan",
+      "meaning": "electrician",
+      "example": "Electricianul repară lumina din hol.",
+      "exampleMeaning": "The electrician fixes the light in the hallway."
+    },
+    {
+      "word": "instalator",
+      "reading": "een-stah-lah-tor",
+      "meaning": "plumber",
+      "example": "Instalatorul repară țeava de la baie.",
+      "exampleMeaning": "The plumber fixes the pipe in the bathroom."
+    },
+    {
+      "word": "mecanic",
+      "reading": "meh-kah-neek",
+      "meaning": "mechanic",
+      "example": "Mecanicul schimbă uleiul mașinii.",
+      "exampleMeaning": "The mechanic changes the car's oil."
+    },
+    {
+      "word": "bucătar",
+      "reading": "boo-kuh-tar",
+      "meaning": "cook / chef",
+      "example": "Bucătarul pregătește supa pentru cină.",
+      "exampleMeaning": "The cook prepares the soup for dinner."
+    },
+    {
+      "word": "fermier",
+      "reading": "fer-mee-er",
+      "meaning": "farmer",
+      "example": "Fermierul cultivă legume pe câmp.",
+      "exampleMeaning": "The farmer grows vegetables in the field."
+    },
+    {
+      "word": "jurnalist",
+      "reading": "zhoor-nah-leest",
+      "meaning": "journalist",
+      "example": "Jurnalistul scrie un articol despre oraș.",
+      "exampleMeaning": "The journalist writes an article about the city."
+    },
+    {
+      "word": "polițist",
+      "reading": "po-lee-tseest",
+      "meaning": "police officer",
+      "example": "Polițistul dirijează traficul la intersecție.",
+      "exampleMeaning": "The police officer directs traffic at the intersection."
+    },
+    {
+      "word": "pompier",
+      "reading": "pom-pee-er",
+      "meaning": "firefighter",
+      "example": "Pompierul stinge focul rapid.",
+      "exampleMeaning": "The firefighter puts out the fire quickly."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "Un ___ scrie cod pentru aplicație.",
+          "answer": "programator",
+          "hint": "programmer"
+        },
+        {
+          "sentence": "Un ___ apără clientul în instanță.",
+          "answer": "avocat",
+          "hint": "lawyer"
+        },
+        {
+          "sentence": "Un ___ stinge focul rapid.",
+          "answer": "pompier",
+          "hint": "firefighter"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "items": [
+        {
+          "question": "What does 'medic' mean?",
+          "options": [
+            "teacher",
+            "doctor",
+            "farmer",
+            "journalist"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "How do you say 'plumber' in Romanian?",
+          "options": [
+            "instalator",
+            "inginer",
+            "contabil",
+            "polițist"
+          ],
+          "answer": 0
+        },
+        {
+          "question": "What does 'bucătar' mean?",
+          "options": [
+            "mechanic",
+            "architect",
+            "cook / chef",
+            "electrician"
+          ],
+          "answer": 2
+        }
+      ]
+    }
+  ]
+}
