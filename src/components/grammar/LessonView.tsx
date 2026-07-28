@@ -308,6 +308,11 @@ export default function LessonView({ lang, lessonId, onBack, lessons, onNavigate
       })
       .then((md) => {
         rawMarkdown.current = md;
+        // Grammar-card blocks are SRS metadata only — strip them from the
+        // displayed markdown so they never render as raw text. The full md
+        // (with the blocks) is kept in rawMarkdown.current for card extraction.
+        GRAMMAR_CARD_REGEX.lastIndex = 0;
+        const displayMd = md.replace(GRAMMAR_CARD_REGEX, '');
         const parts: typeof segments = [];
         let lastIndex = 0;
 
@@ -315,9 +320,9 @@ export default function LessonView({ lang, lessonId, onBack, lessons, onNavigate
         QUIZ_REGEX.lastIndex = 0;
         let match: RegExpExecArray | null;
 
-        while ((match = QUIZ_REGEX.exec(md)) !== null) {
+        while ((match = QUIZ_REGEX.exec(displayMd)) !== null) {
           if (match.index > lastIndex) {
-            parts.push({ type: 'md', content: md.slice(lastIndex, match.index) });
+            parts.push({ type: 'md', content: displayMd.slice(lastIndex, match.index) });
           }
           try {
             const data = JSON.parse(match[1]) as QuizData;
@@ -329,8 +334,8 @@ export default function LessonView({ lang, lessonId, onBack, lessons, onNavigate
           lastIndex = match.index + match[0].length;
         }
 
-        if (lastIndex < md.length) {
-          parts.push({ type: 'md', content: md.slice(lastIndex) });
+        if (lastIndex < displayMd.length) {
+          parts.push({ type: 'md', content: displayMd.slice(lastIndex) });
         }
 
         setSegments(parts);

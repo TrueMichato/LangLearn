@@ -1,0 +1,159 @@
+{
+  "id": "museums-archaeology",
+  "words": [
+    {
+      "word": "مَتْحَفٌ",
+      "reading": "matḥaf",
+      "meaning": "museum",
+      "example": "زُرْنَا مَتْحَفًا قَدِيمًا فِي وَسَطِ الْمَدِينَةِ.",
+      "exampleMeaning": "We visited an old museum in the city center."
+    },
+    {
+      "word": "أَثَرٌ",
+      "reading": "athar",
+      "meaning": "artifact / trace",
+      "example": "وَجَدَ الطَّالِبُ أَثَرًا صَغِيرًا فِي الرَّمْلِ.",
+      "exampleMeaning": "The student found a small artifact in the sand."
+    },
+    {
+      "word": "حَفْرِيَّةٌ",
+      "reading": "ḥafriyya",
+      "meaning": "excavation",
+      "example": "تَكْشِفُ حَفْرِيَّةٌ جَدِيدَةٌ بَيْتًا قَدِيمًا.",
+      "exampleMeaning": "A new excavation reveals an old house."
+    },
+    {
+      "word": "قِطْعَةٌ أَثَرِيَّةٌ",
+      "reading": "qiṭʿa athariyya",
+      "meaning": "archaeological piece",
+      "example": "تَعْرِضُ الْقَاعَةُ قِطْعَةً أَثَرِيَّةً نَادِرَةً.",
+      "exampleMeaning": "The hall displays a rare archaeological piece."
+    },
+    {
+      "word": "مَعْرِضٌ",
+      "reading": "maʿriḍ",
+      "meaning": "exhibition",
+      "example": "افْتَتَحَ الْمَتْحَفُ مَعْرِضًا عَنِ الْكِتَابَةِ الْقَدِيمَةِ.",
+      "exampleMeaning": "The museum opened an exhibition about ancient writing."
+    },
+    {
+      "word": "قَاعَةٌ",
+      "reading": "qāʿa",
+      "meaning": "hall",
+      "example": "دَخَلْنَا قَاعَةً هَادِئَةً لِلْمَخْطُوطَاتِ.",
+      "exampleMeaning": "We entered a quiet hall for manuscripts."
+    },
+    {
+      "word": "بَطَاقَةُ دُخُولٍ",
+      "reading": "biṭāqat dukhūl",
+      "meaning": "admission ticket",
+      "example": "اشْتَرَتِ الْعَائِلَةُ بَطَاقَةَ دُخُولٍ عِنْدَ الْبَابِ.",
+      "exampleMeaning": "The family bought an admission ticket at the door."
+    },
+    {
+      "word": "دَلِيلٌ صَوْتِيٌّ",
+      "reading": "dalīl ṣawtī",
+      "meaning": "audio guide",
+      "example": "يَشْرَحُ دَلِيلٌ صَوْتِيٌّ قِصَّةَ التِّمْثَالِ.",
+      "exampleMeaning": "An audio guide explains the statue's story."
+    },
+    {
+      "word": "تَرْمِيمٌ",
+      "reading": "tarmīm",
+      "meaning": "restoration",
+      "example": "يَحْتَاجُ الْجِدَارُ إِلَى تَرْمِيمٍ دَقِيقٍ.",
+      "exampleMeaning": "The wall needs careful restoration."
+    },
+    {
+      "word": "نَقْشٌ",
+      "reading": "naqsh",
+      "meaning": "inscription / engraving",
+      "example": "يَظْهَرُ نَقْشٌ قَدِيمٌ عَلَى الْحَجَرِ.",
+      "exampleMeaning": "An old inscription appears on the stone."
+    },
+    {
+      "word": "فَخَّارٌ",
+      "reading": "fakhkhār",
+      "meaning": "pottery",
+      "example": "صَنَعَ الْحِرَفِيُّ فَخَّارًا بِاللَّوْنِ الْأَحْمَرِ.",
+      "exampleMeaning": "The craftsperson made red pottery."
+    },
+    {
+      "word": "تِمْثَالٌ",
+      "reading": "timthāl",
+      "meaning": "statue",
+      "example": "يَقِفُ تِمْثَالٌ كَبِيرٌ فِي وَسَطِ الْقَاعَةِ.",
+      "exampleMeaning": "A large statue stands in the middle of the hall."
+    },
+    {
+      "word": "مَخْطُوطَةٌ",
+      "reading": "makhṭūṭa",
+      "meaning": "manuscript",
+      "example": "تَحْفَظُ الْمَكْتَبَةُ مَخْطُوطَةً مِنَ الْقَرْنِ التَّاسِعِ.",
+      "exampleMeaning": "The library preserves a manuscript from the ninth century."
+    },
+    {
+      "word": "حِقْبَةٌ",
+      "reading": "ḥiqba",
+      "meaning": "era",
+      "example": "تَنْتَمِي هَذِهِ الْقِطْعَةُ إِلَى حِقْبَةٍ قَدِيمَةٍ.",
+      "exampleMeaning": "This piece belongs to an ancient era."
+    },
+    {
+      "word": "حِفْظٌ",
+      "reading": "ḥifẓ",
+      "meaning": "preservation",
+      "example": "يَتَطَلَّبُ حِفْظٌ الْآثَارِ رُطُوبَةً مُنَاسِبَةً.",
+      "exampleMeaning": "Preserving artifacts requires suitable humidity."
+    },
+    {
+      "word": "بَاحِثَةٌ",
+      "reading": "bāḥitha",
+      "meaning": "researcher",
+      "example": "تَدْرُسُ بَاحِثَةٌ نَقْشًا جَدِيدًا بِعِنَايَةٍ.",
+      "exampleMeaning": "A researcher studies a new inscription carefully."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "زُرْنَا ___ قَدِيمًا فِي وَسَطِ الْمَدِينَةِ.",
+          "answer": "مَتْحَفٌ",
+          "hint": "museum"
+        },
+        {
+          "sentence": "تَكْشِفُ ___ جَدِيدَةٌ بَيْتًا قَدِيمًا.",
+          "answer": "حَفْرِيَّةٌ",
+          "hint": "excavation"
+        },
+        {
+          "sentence": "يَظْهَرُ ___ قَدِيمٌ عَلَى الْحَجَرِ.",
+          "answer": "نَقْشٌ",
+          "hint": "inscription"
+        },
+        {
+          "sentence": "تَدْرُسُ ___ نَقْشًا جَدِيدًا بِعِنَايَةٍ.",
+          "answer": "بَاحِثَةٌ",
+          "hint": "researcher"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "What does ‘دَلِيلٌ صَوْتِيٌّ’ mean?",
+      "options": [
+        "audio guide",
+        "admission ticket",
+        "restoration",
+        "pottery"
+      ],
+      "answer": 0
+    }
+  ]
+}

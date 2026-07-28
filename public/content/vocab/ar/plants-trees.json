@@ -1,0 +1,183 @@
+{
+  "id": "plants-trees",
+  "words": [
+    {
+      "word": "نَبَاتٌ",
+      "reading": "nabātun",
+      "meaning": "plant",
+      "example": "نَبَاتٌ صَغِيرٌ يَنْبُتُ قُرْبَ النَّافِذَةِ.",
+      "exampleMeaning": "A small plant grows near the window."
+    },
+    {
+      "word": "شَجَرَةٌ",
+      "reading": "shajaratun",
+      "meaning": "tree",
+      "example": "شَجَرَةٌ عَالِيَةٌ تُظِلُّ مَدْخَلَ الْبَيْتِ.",
+      "exampleMeaning": "A tall tree shades the entrance of the house."
+    },
+    {
+      "word": "زَهْرَةٌ",
+      "reading": "zahratun",
+      "meaning": "flower",
+      "example": "زَهْرَةٌ بَيْضَاءُ تَفْتَحُ فِي الصَّبَاحِ.",
+      "exampleMeaning": "A white flower opens in the morning."
+    },
+    {
+      "word": "وَرْدَةٌ",
+      "reading": "wardatun",
+      "meaning": "rose",
+      "example": "وَرْدَةٌ حَمْرَاءُ تُزَيِّنُ الطَّاوِلَةَ.",
+      "exampleMeaning": "A red rose decorates the table."
+    },
+    {
+      "word": "عُشْبٌ",
+      "reading": "ʿushbun",
+      "meaning": "grass / herb",
+      "example": "نَمَا عُشْبٌ أَخْضَرُ بَعْدَ الْمَطَرِ.",
+      "exampleMeaning": "Green grass grew after the rain."
+    },
+    {
+      "word": "بَذْرَةٌ",
+      "reading": "badhratun",
+      "meaning": "seed",
+      "example": "زَرَعَتْ نُورٌ بَذْرَةً فِي إِصِيصٍ صَغِيرٍ.",
+      "exampleMeaning": "Nur planted a seed in a small pot."
+    },
+    {
+      "word": "جَذْرٌ",
+      "reading": "jadhrun",
+      "meaning": "root",
+      "example": "يَثْبُتُ النَّبَاتُ فِي التُّرْبَةِ بِجَذْرٍ قَوِيٍّ.",
+      "exampleMeaning": "The plant is fixed in the soil by a strong root."
+    },
+    {
+      "word": "سَاقٌ",
+      "reading": "sāqun",
+      "meaning": "stem / trunk",
+      "example": "يَحْمِلُ السَّاقُ الْأَوْرَاقَ وَالْأَزْهَارَ.",
+      "exampleMeaning": "The stem carries the leaves and flowers."
+    },
+    {
+      "word": "وَرَقَةٌ",
+      "reading": "waraqatun",
+      "meaning": "leaf",
+      "example": "سَقَطَتْ وَرَقَةٌ صَفْرَاءُ عَلَى الطَّرِيقِ.",
+      "exampleMeaning": "A yellow leaf fell on the road."
+    },
+    {
+      "word": "غُصْنٌ",
+      "reading": "ghuṣnun",
+      "meaning": "branch",
+      "example": "جَلَسَ عُصْفُورٌ عَلَى غُصْنٍ رَفِيعٍ.",
+      "exampleMeaning": "A bird sat on a thin branch."
+    },
+    {
+      "word": "ثَمَرَةٌ",
+      "reading": "thamaratun",
+      "meaning": "fruit",
+      "example": "قَطَفَ الطِّفْلُ ثَمَرَةً نَاضِجَةً مِنَ الشَّجَرَةِ.",
+      "exampleMeaning": "The child picked a ripe fruit from the tree."
+    },
+    {
+      "word": "حَدِيقَةٌ",
+      "reading": "ḥadīqatun",
+      "meaning": "garden",
+      "example": "تَحْتَاجُ الْحَدِيقَةُ إِلَى عِنَايَةٍ يَوْمِيَّةٍ.",
+      "exampleMeaning": "The garden needs daily care."
+    },
+    {
+      "word": "يَزْرَعُ",
+      "reading": "yazraʿu",
+      "meaning": "to plant",
+      "example": "يَزْرَعُ الْفَلَّاحُ الْبُذُورَ فِي الرَّبِيعِ.",
+      "exampleMeaning": "The farmer plants seeds in spring."
+    },
+    {
+      "word": "يَسْقِي",
+      "reading": "yasqī",
+      "meaning": "to water",
+      "example": "يَسْقِي الْبُسْتَانِيُّ الْأَشْجَارَ عِنْدَ الْفَجْرِ.",
+      "exampleMeaning": "The gardener waters the trees at dawn."
+    },
+    {
+      "word": "يُقَلِّمُ",
+      "reading": "yuqallimu",
+      "meaning": "to prune",
+      "example": "يُقَلِّمُ أَبِي الْأَغْصَانَ الْيَابِسَةَ.",
+      "exampleMeaning": "My father prunes the dry branches."
+    },
+    {
+      "word": "يُزْهِرُ",
+      "reading": "yuzhiru",
+      "meaning": "to blossom",
+      "example": "يُزْهِرُ النَّبَاتُ بَعْدَ أُسْبُوعَيْنِ.",
+      "exampleMeaning": "The plant blossoms after two weeks."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "___ صَغِيرٌ يَنْبُتُ قُرْبَ النَّافِذَةِ.",
+          "answer": "نَبَاتٌ",
+          "hint": "plant"
+        },
+        {
+          "sentence": "___ عَالِيَةٌ تُظِلُّ مَدْخَلَ الْبَيْتِ.",
+          "answer": "شَجَرَةٌ",
+          "hint": "tree"
+        },
+        {
+          "sentence": "___ بَيْضَاءُ تَفْتَحُ فِي الصَّبَاحِ.",
+          "answer": "زَهْرَةٌ",
+          "hint": "flower"
+        },
+        {
+          "sentence": "___ حَمْرَاءُ تُزَيِّنُ الطَّاوِلَةَ.",
+          "answer": "وَرْدَةٌ",
+          "hint": "rose"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "items": [
+        {
+          "question": "What does ‘نَبَاتٌ’ mean?",
+          "options": [
+            "tree",
+            "plant",
+            "flower",
+            "rose"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What does ‘شَجَرَةٌ’ mean?",
+          "options": [
+            "flower",
+            "tree",
+            "rose",
+            "grass / herb"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What does ‘زَهْرَةٌ’ mean?",
+          "options": [
+            "rose",
+            "flower",
+            "grass / herb",
+            "seed"
+          ],
+          "answer": 1
+        }
+      ]
+    }
+  ]
+}

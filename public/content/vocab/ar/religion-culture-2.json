@@ -1,0 +1,183 @@
+{
+  "id": "religion-culture-2",
+  "words": [
+    {
+      "word": "الْعِبَادَةُ",
+      "reading": "al-ʿibādatu",
+      "meaning": "worship",
+      "example": "الْعِبَادَةُ جُزْءٌ مُهِمٌّ مِنْ حَيَاةِ كَثِيرِينَ.",
+      "exampleMeaning": "Worship is an important part of many people’s lives."
+    },
+    {
+      "word": "الشَّعِيرَةُ",
+      "reading": "ash-shaʿīratu",
+      "meaning": "religious rite",
+      "example": "تَحْمِلُ الشَّعِيرَةُ مَعْنًى رُوحِيًّا عَمِيقًا.",
+      "exampleMeaning": "The rite carries a deep spiritual meaning."
+    },
+    {
+      "word": "الْخُطْبَةُ",
+      "reading": "al-khuṭbatu",
+      "meaning": "sermon",
+      "example": "اسْتَمَعَ النَّاسُ إِلَى الْخُطْبَةِ بِاهْتِمَامٍ.",
+      "exampleMeaning": "The people listened to the sermon with interest."
+    },
+    {
+      "word": "الْمَأْذَنَةُ",
+      "reading": "al-maʾdhanatu",
+      "meaning": "minaret",
+      "example": "تَرْتَفِعُ الْمَأْذَنَةُ فَوْقَ أَسْطُحِ الْبَلْدَةِ.",
+      "exampleMeaning": "The minaret rises above the town’s roofs."
+    },
+    {
+      "word": "الْوُضُوءُ",
+      "reading": "al-wuḍūʾu",
+      "meaning": "ritual ablution",
+      "example": "تَعَلَّمَ الطِّفْلُ خُطُوَاتِ الْوُضُوءِ.",
+      "exampleMeaning": "The child learned the steps of ablution."
+    },
+    {
+      "word": "التَّرَاوِيحُ",
+      "reading": "at-tarāwīḥu",
+      "meaning": "Tarawih prayers",
+      "example": "تُمْلَأُ الْمَسَاجِدُ فِي صَلَاةِ التَّرَاوِيحِ.",
+      "exampleMeaning": "The mosques fill during Tarawih prayers."
+    },
+    {
+      "word": "الزَّكَاةُ",
+      "reading": "az-zakātu",
+      "meaning": "obligatory almsgiving / zakat",
+      "example": "تُدْفَعُ الزَّكَاةُ لِمُسَاعَدَةِ الْمُحْتَاجِينَ.",
+      "exampleMeaning": "Zakat is paid to help those in need."
+    },
+    {
+      "word": "الصَّدَقَةُ",
+      "reading": "aṣ-ṣadaqatu",
+      "meaning": "charity",
+      "example": "قَدَّمَتِ الْأُسْرَةُ الصَّدَقَةَ بِسِرِّيَّةٍ.",
+      "exampleMeaning": "The family gave charity privately."
+    },
+    {
+      "word": "الْوَقْفُ",
+      "reading": "al-waqfu",
+      "meaning": "charitable endowment",
+      "example": "سَاهَمَ الْوَقْفُ فِي بِنَاءِ الْمَدْرَسَةِ.",
+      "exampleMeaning": "The endowment contributed to building the school."
+    },
+    {
+      "word": "الْحَجُّ",
+      "reading": "al-ḥajju",
+      "meaning": "pilgrimage to Mecca",
+      "example": "يَسْتَعِدُّ الْكَثِيرُونَ لِرِحْلَةِ الْحَجِّ.",
+      "exampleMeaning": "Many people prepare for the pilgrimage to Mecca."
+    },
+    {
+      "word": "الْعُمْرَةُ",
+      "reading": "al-ʿumratu",
+      "meaning": "lesser pilgrimage",
+      "example": "أَدَّتْ جَدَّتِي الْعُمْرَةَ فِي الرَّبِيعِ.",
+      "exampleMeaning": "My grandmother performed the lesser pilgrimage in spring."
+    },
+    {
+      "word": "الْمَوْلِدُ",
+      "reading": "al-mawlidu",
+      "meaning": "mawlid celebration",
+      "example": "يَجْمَعُ الْمَوْلِدُ أَنَاشِيدَ وَضِيَافَةً.",
+      "exampleMeaning": "The mawlid celebration brings together chants and hospitality."
+    },
+    {
+      "word": "الضِّيَافَةُ",
+      "reading": "aḍ-ḍiyāfatu",
+      "meaning": "hospitality",
+      "example": "تُعَدُّ الضِّيَافَةُ قِيمَةً عَرَبِيَّةً عَرِيقَةً.",
+      "exampleMeaning": "Hospitality is considered a deep-rooted Arab value."
+    },
+    {
+      "word": "الْمَجْلِسُ",
+      "reading": "al-majlisu",
+      "meaning": "gathering room / council",
+      "example": "اجْتَمَعَ الْكِبَارُ فِي الْمَجْلِسِ بَعْدَ الْعَشَاءِ.",
+      "exampleMeaning": "The elders gathered in the majlis after dinner."
+    },
+    {
+      "word": "التُّرَاثُ الشَّفَهِيُّ",
+      "reading": "at-turāthu sh-shafahiyyu",
+      "meaning": "oral heritage",
+      "example": "يَحْفَظُ الرُّوَاةُ التُّرَاثَ الشَّفَهِيَّ فِي الْقُرَى.",
+      "exampleMeaning": "Storytellers preserve oral heritage in the villages."
+    },
+    {
+      "word": "الْخَطُّ الْعَرَبِيُّ",
+      "reading": "al-khaṭṭu l-ʿarabiyyu",
+      "meaning": "Arabic calligraphy",
+      "example": "يُزَيِّنُ الْخَطُّ الْعَرَبِيُّ جُدْرَانَ الْمَتْحَفِ.",
+      "exampleMeaning": "Arabic calligraphy decorates the museum walls."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "___ جُزْءٌ مُهِمٌّ مِنْ حَيَاةِ كَثِيرِينَ.",
+          "answer": "الْعِبَادَةُ",
+          "hint": "worship"
+        },
+        {
+          "sentence": "تَحْمِلُ ___ مَعْنًى رُوحِيًّا عَمِيقًا.",
+          "answer": "الشَّعِيرَةُ",
+          "hint": "religious rite"
+        },
+        {
+          "sentence": "___ قَصِيرَةٌ وَمُفِيدَةٌ.",
+          "answer": "الْخُطْبَةُ",
+          "hint": "sermon"
+        },
+        {
+          "sentence": "تَرْتَفِعُ ___ فَوْقَ أَسْطُحِ الْبَلْدَةِ.",
+          "answer": "الْمَأْذَنَةُ",
+          "hint": "minaret"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "items": [
+        {
+          "question": "What does ‘الْعِبَادَةُ’ mean?",
+          "options": [
+            "religious rite",
+            "worship",
+            "sermon",
+            "minaret"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What does ‘الشَّعِيرَةُ’ mean?",
+          "options": [
+            "worship",
+            "religious rite",
+            "sermon",
+            "minaret"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What does ‘الْخُطْبَةُ’ mean?",
+          "options": [
+            "worship",
+            "sermon",
+            "religious rite",
+            "minaret"
+          ],
+          "answer": 1
+        }
+      ]
+    }
+  ]
+}

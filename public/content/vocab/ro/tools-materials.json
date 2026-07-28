@@ -1,0 +1,178 @@
+{
+  "id": "tools-materials",
+  "words": [
+    {
+      "word": "ciocan",
+      "reading": "cho-kan",
+      "meaning": "hammer",
+      "example": "Folosesc ciocanul pentru un cui.",
+      "exampleMeaning": "I use the hammer for a nail."
+    },
+    {
+      "word": "șurubelniță",
+      "reading": "shoo-roo-bel-nee-tsuh",
+      "meaning": "screwdriver",
+      "example": "Șurubelnița strânge șurubul.",
+      "exampleMeaning": "The screwdriver tightens the screw."
+    },
+    {
+      "word": "clește",
+      "reading": "klesh-teh",
+      "meaning": "pliers",
+      "example": "Cleștele ține firul strâns.",
+      "exampleMeaning": "The pliers hold the wire tightly."
+    },
+    {
+      "word": "fierăstrău",
+      "reading": "fyeh-ruh-struh-oo",
+      "meaning": "saw",
+      "example": "Fierăstrăul taie scândura.",
+      "exampleMeaning": "The saw cuts the board."
+    },
+    {
+      "word": "burghiu",
+      "reading": "boor-gee-oo",
+      "meaning": "drill bit / drill",
+      "example": "Burghiul face o gaură în perete.",
+      "exampleMeaning": "The drill makes a hole in the wall."
+    },
+    {
+      "word": "cui",
+      "reading": "koo-ee",
+      "meaning": "nail",
+      "example": "Cuiul fixează rama.",
+      "exampleMeaning": "The nail fixes the frame."
+    },
+    {
+      "word": "șurub",
+      "reading": "shoo-roob",
+      "meaning": "screw",
+      "example": "Șurubul ține raftul în perete.",
+      "exampleMeaning": "The screw holds the shelf in the wall."
+    },
+    {
+      "word": "scândură",
+      "reading": "skuhn-doo-ruh",
+      "meaning": "board / plank",
+      "example": "Scândura este din lemn.",
+      "exampleMeaning": "The board is made of wood."
+    },
+    {
+      "word": "lemn",
+      "reading": "lemn",
+      "meaning": "wood",
+      "example": "Lemnul miroase plăcut.",
+      "exampleMeaning": "The wood smells pleasant."
+    },
+    {
+      "word": "metal",
+      "reading": "meh-tal",
+      "meaning": "metal",
+      "example": "Metalul este rece și tare.",
+      "exampleMeaning": "The metal is cold and hard."
+    },
+    {
+      "word": "plastic",
+      "reading": "plas-teek",
+      "meaning": "plastic",
+      "example": "Plasticul este ușor.",
+      "exampleMeaning": "Plastic is light."
+    },
+    {
+      "word": "sticlă",
+      "reading": "stee-kluh",
+      "meaning": "glass",
+      "example": "Sticla se sparge ușor.",
+      "exampleMeaning": "Glass breaks easily."
+    },
+    {
+      "word": "lipici",
+      "reading": "lee-peech",
+      "meaning": "glue",
+      "example": "Lipiciul lipește hârtia.",
+      "exampleMeaning": "The glue sticks the paper."
+    },
+    {
+      "word": "vopsea",
+      "reading": "vop-seh-ah",
+      "meaning": "paint",
+      "example": "Vopseaua se usucă repede.",
+      "exampleMeaning": "The paint dries quickly."
+    },
+    {
+      "word": "pensulă",
+      "reading": "pen-soo-luh",
+      "meaning": "paintbrush",
+      "example": "Pensula întinde vopseaua.",
+      "exampleMeaning": "The paintbrush spreads the paint."
+    },
+    {
+      "word": "mănuși",
+      "reading": "muh-noosh",
+      "meaning": "gloves",
+      "example": "Mănușile protejează mâinile.",
+      "exampleMeaning": "The gloves protect the hands."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "Bat un ___ cu ciocanul.",
+          "answer": "cui",
+          "hint": "nail"
+        },
+        {
+          "sentence": "Strâng un ___ cu șurubelnița.",
+          "answer": "șurub",
+          "hint": "screw"
+        },
+        {
+          "sentence": "Am nevoie de ___ pentru perete.",
+          "answer": "vopsea",
+          "hint": "paint"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "items": [
+        {
+          "question": "What does 'ciocan' mean?",
+          "options": [
+            "hammer",
+            "saw",
+            "glue",
+            "wood"
+          ],
+          "answer": 0
+        },
+        {
+          "question": "How do you say 'pliers' in Romanian?",
+          "options": [
+            "burghiu",
+            "clește",
+            "pensulă",
+            "scândură"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What does 'lemn' mean?",
+          "options": [
+            "metal",
+            "plastic",
+            "wood",
+            "glass"
+          ],
+          "answer": 2
+        }
+      ]
+    }
+  ]
+}

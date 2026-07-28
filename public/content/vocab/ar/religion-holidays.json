@@ -1,0 +1,183 @@
+{
+  "id": "religion-holidays",
+  "words": [
+    {
+      "word": "دِينٌ",
+      "reading": "dīnun",
+      "meaning": "religion",
+      "example": "يَحْتَرِمُ النَّاسُ أَدْيَانًا مُخْتَلِفَةً.",
+      "exampleMeaning": "People respect different religions."
+    },
+    {
+      "word": "صَلَاةٌ",
+      "reading": "ṣalātun",
+      "meaning": "prayer",
+      "example": "تَبْدَأُ الصَّلَاةُ بَعْدَ الْأَذَانِ.",
+      "exampleMeaning": "The prayer begins after the call to prayer."
+    },
+    {
+      "word": "صَوْمٌ",
+      "reading": "ṣawmun",
+      "meaning": "fasting",
+      "example": "الصَّوْمُ يَحْتَاجُ إِلَى صَبْرٍ.",
+      "exampleMeaning": "Fasting requires patience."
+    },
+    {
+      "word": "زَكَاةٌ",
+      "reading": "zakātun",
+      "meaning": "almsgiving / zakat",
+      "example": "تُسَاعِدُ الزَّكَاةُ الْفُقَرَاءَ.",
+      "exampleMeaning": "Zakat helps the poor."
+    },
+    {
+      "word": "حَجٌّ",
+      "reading": "ḥajjun",
+      "meaning": "pilgrimage",
+      "example": "الْحَجُّ رُكْنٌ مُهِمٌّ فِي الْإِسْلَامِ.",
+      "exampleMeaning": "Pilgrimage is an important pillar in Islam."
+    },
+    {
+      "word": "مَسْجِدٌ",
+      "reading": "masjidun",
+      "meaning": "mosque",
+      "example": "الْمَسْجِدُ مَفْتُوحٌ لِلْمُصَلِّينَ.",
+      "exampleMeaning": "The mosque is open to worshippers."
+    },
+    {
+      "word": "كَنِيسَةٌ",
+      "reading": "kanīsatun",
+      "meaning": "church",
+      "example": "تَقَعُ الْكَنِيسَةُ قُرْبَ السَّاحَةِ.",
+      "exampleMeaning": "The church is near the square."
+    },
+    {
+      "word": "عِيدٌ",
+      "reading": "ʿīdun",
+      "meaning": "holiday / feast",
+      "example": "يَجْتَمِعُ الْأَهْلُ فِي الْعِيدِ.",
+      "exampleMeaning": "The family gathers on the holiday."
+    },
+    {
+      "word": "عِيدُ الْفِطْرِ",
+      "reading": "ʿīdu l-fiṭri",
+      "meaning": "Eid al-Fitr",
+      "example": "يَأْتِي عِيدُ الْفِطْرِ بَعْدَ رَمَضَانَ.",
+      "exampleMeaning": "Eid al-Fitr comes after Ramadan."
+    },
+    {
+      "word": "عِيدُ الْأَضْحَى",
+      "reading": "ʿīdu l-ʾaḍḥā",
+      "meaning": "Eid al-Adha",
+      "example": "يَزُورُ النَّاسُ أَقَارِبَهُمْ فِي عِيدِ الْأَضْحَى.",
+      "exampleMeaning": "People visit their relatives on Eid al-Adha."
+    },
+    {
+      "word": "تَهْنِئَةٌ",
+      "reading": "tahniʾatun",
+      "meaning": "congratulation / greeting",
+      "example": "أَرْسَلْتُ تَهْنِئَةً إِلَى صَدِيقِي.",
+      "exampleMeaning": "I sent a greeting to my friend."
+    },
+    {
+      "word": "اِحْتِفَالٌ",
+      "reading": "iḥtifālun",
+      "meaning": "celebration",
+      "example": "اِحْتِفَالُ الْعِيدِ بَهِيجٌ وَمَلِيءٌ بِالْأَغَانِي.",
+      "exampleMeaning": "The celebration is joyful and full of songs."
+    },
+    {
+      "word": "هَدِيَّةٌ",
+      "reading": "hadiyyatun",
+      "meaning": "gift",
+      "example": "قَدَّمَتْ لَيْلَى هَدِيَّةً لِأُخْتِهَا.",
+      "exampleMeaning": "Layla gave a gift to her sister."
+    },
+    {
+      "word": "ضَيْفٌ",
+      "reading": "ḍayfun",
+      "meaning": "guest",
+      "example": "رَحَّبَتِ الْأُسْرَةُ بِالضَّيْفِ.",
+      "exampleMeaning": "The family welcomed the guest."
+    },
+    {
+      "word": "يُصَلِّي",
+      "reading": "yuṣallī",
+      "meaning": "to pray",
+      "example": "يُصَلِّي الرَّجُلُ فِي الْمَسْجِدِ.",
+      "exampleMeaning": "The man prays in the mosque."
+    },
+    {
+      "word": "يَحْتَفِلُ",
+      "reading": "yaḥtafilu",
+      "meaning": "to celebrate",
+      "example": "يَحْتَفِلُ الْأَطْفَالُ بِالْعِيدِ فِي الْحَدِيقَةِ.",
+      "exampleMeaning": "The children celebrate the holiday in the park."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "___ يُنَظِّمُ حَيَاةَ كَثِيرٍ مِنَ النَّاسِ.",
+          "answer": "دِينٌ",
+          "hint": "religion"
+        },
+        {
+          "sentence": "تَبْدَأُ ___ بَعْدَ الْأَذَانِ.",
+          "answer": "صَلَاةٌ",
+          "hint": "prayer"
+        },
+        {
+          "sentence": "___ يَحْتَاجُ إِلَى صَبْرٍ.",
+          "answer": "صَوْمٌ",
+          "hint": "fasting"
+        },
+        {
+          "sentence": "تُسَاعِدُ ___ الْفُقَرَاءَ.",
+          "answer": "زَكَاةٌ",
+          "hint": "almsgiving / zakat"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "items": [
+        {
+          "question": "What does ‘دِينٌ’ mean?",
+          "options": [
+            "prayer",
+            "religion",
+            "almsgiving / zakat",
+            "pilgrimage"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What does ‘صَلَاةٌ’ mean?",
+          "options": [
+            "fasting",
+            "prayer",
+            "pilgrimage",
+            "mosque"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What does ‘صَوْمٌ’ mean?",
+          "options": [
+            "almsgiving / zakat",
+            "fasting",
+            "mosque",
+            "church"
+          ],
+          "answer": 1
+        }
+      ]
+    }
+  ]
+}

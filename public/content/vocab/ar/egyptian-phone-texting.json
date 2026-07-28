@@ -1,0 +1,159 @@
+{
+  "id": "egyptian-phone-texting",
+  "words": [
+    {
+      "word": "كَلِّمْنِي",
+      "reading": "kallimnī",
+      "meaning": "call me",
+      "example": "كَلِّمْنِي بَعْدِ الشُّغْلْ.",
+      "exampleMeaning": "Call me after work."
+    },
+    {
+      "word": "رَنِّي عَلَيَّ",
+      "reading": "rannī ʿalayya",
+      "meaning": "ring me / give me a call",
+      "example": "رَنِّي عَلَيَّ لَمَّا تُوصَلْ.",
+      "exampleMeaning": "Ring me when you arrive."
+    },
+    {
+      "word": "مِسِدْج",
+      "reading": "misidg",
+      "meaning": "message",
+      "example": "بَعَتِّلَكْ مِسِدْج عَلَى الْمُوبَايْلْ.",
+      "exampleMeaning": "I sent you a message on the mobile."
+    },
+    {
+      "word": "مُوبَايْل",
+      "reading": "mōbāyil",
+      "meaning": "mobile phone",
+      "example": "مُوبَايْلِي فَاصِلْ شَحْنْ.",
+      "exampleMeaning": "My mobile phone is out of charge."
+    },
+    {
+      "word": "شَاحِن",
+      "reading": "shāḥin",
+      "meaning": "charger",
+      "example": "مَعَاكْ شَاحِن لِلْمُوبَايْلْ؟",
+      "exampleMeaning": "Do you have a mobile charger?"
+    },
+    {
+      "word": "بَطَّارِيَّة",
+      "reading": "baṭṭāriyya",
+      "meaning": "battery",
+      "example": "الْبَطَّارِيَّة خَلْصَانَةْ خَالِصْ.",
+      "exampleMeaning": "The battery is completely empty."
+    },
+    {
+      "word": "نِتّ",
+      "reading": "nitt",
+      "meaning": "internet",
+      "example": "النِّتّ بَطِيءْ النَّهَارْدَه.",
+      "exampleMeaning": "The internet is slow today."
+    },
+    {
+      "word": "بَاقَة",
+      "reading": "bāʾa",
+      "meaning": "data bundle / plan",
+      "example": "عَايِزْ أُجَدِّدِ الْبَاقَةْ قَبْلَ بِاللَّيْلْ.",
+      "exampleMeaning": "I want to renew the data bundle before tonight."
+    },
+    {
+      "word": "وَاتْس",
+      "reading": "wāts",
+      "meaning": "WhatsApp",
+      "example": "ابْعَتْلِي الْعُنْوَانْ عَلَى وَاتْسْ.",
+      "exampleMeaning": "Send me the address on WhatsApp."
+    },
+    {
+      "word": "ڤُويْس",
+      "reading": "vōys",
+      "meaning": "voice note",
+      "example": "سِيبْلِي ڤُويْس لَوْ مِشْ فَاضِي.",
+      "exampleMeaning": "Leave me a voice note if you are not free."
+    },
+    {
+      "word": "صُورَة",
+      "reading": "ṣūra",
+      "meaning": "photo / picture",
+      "example": "ابْعَتْلِي صُورَة مِنَ الْوَصْلْ.",
+      "exampleMeaning": "Send me a photo of the receipt."
+    },
+    {
+      "word": "سِكْرِينْشُوت",
+      "reading": "skrīnshūt",
+      "meaning": "screenshot",
+      "example": "خُدْ سِكْرِينْشُوت لِلْكَلامْ دَه.",
+      "exampleMeaning": "Take a screenshot of this conversation."
+    },
+    {
+      "word": "نَمْرَة",
+      "reading": "namra",
+      "meaning": "phone number",
+      "example": "نَمْرَتَكْ مِشْ مَتْسَجِّلَةْ عِنْدِي.",
+      "exampleMeaning": "Your number is not saved with me."
+    },
+    {
+      "word": "مِكَالْمَة",
+      "reading": "mikālma",
+      "meaning": "phone call",
+      "example": "عِنْدِي مِكَالْمَة مُهِمَّةْ بَعْدَ دَقِيقَةْ.",
+      "exampleMeaning": "I have an important call in a minute."
+    },
+    {
+      "word": "مَا فِيشْ شَبَكَة",
+      "reading": "mā fīsh shabaka",
+      "meaning": "there is no signal",
+      "example": "جُوَّهَ الْمَتْرُو مَا فِيشْ شَبَكَةْ.",
+      "exampleMeaning": "There is no signal inside the metro."
+    },
+    {
+      "word": "ابْعَتْلِي",
+      "reading": "ibʿat lī",
+      "meaning": "send me",
+      "example": "ابْعَتْلِي لِينْكِ الْمَكَانْ.",
+      "exampleMeaning": "Send me the location link."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "___ بَعْدِ الشُّغْلْ.",
+          "answer": "كَلِّمْنِي",
+          "hint": "call me"
+        },
+        {
+          "sentence": "مَعَاكْ ___ لِلْمُوبَايْلْ؟",
+          "answer": "شَاحِن",
+          "hint": "charger"
+        },
+        {
+          "sentence": "جُوَّهَ الْمَتْرُو ___.",
+          "answer": "مَا فِيشْ شَبَكَة",
+          "hint": "there is no signal"
+        },
+        {
+          "sentence": "___ لِينْكِ الْمَكَانْ.",
+          "answer": "ابْعَتْلِي",
+          "hint": "send me"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "In Egyptian Arabic, what does ‘بَاقَة’ mean in phone talk?",
+      "options": [
+        "data bundle / plan",
+        "photo",
+        "charger",
+        "call"
+      ],
+      "answer": 0
+    }
+  ]
+}

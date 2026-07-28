@@ -1,0 +1,178 @@
+{
+  "id": "celebrations",
+  "words": [
+    {
+      "word": "sărbătoare",
+      "reading": "suhr-buh-twah-reh",
+      "meaning": "holiday / celebration",
+      "example": "O sărbătoare adună familia.",
+      "exampleMeaning": "A holiday brings the family together."
+    },
+    {
+      "word": "festival",
+      "reading": "fes-tee-vahl",
+      "meaning": "festival",
+      "example": "Un festival de film atrage turiști.",
+      "exampleMeaning": "A film festival attracts tourists."
+    },
+    {
+      "word": "petrecere",
+      "reading": "peh-treh-cheh-reh",
+      "meaning": "party",
+      "example": "O petrecere începe după apus.",
+      "exampleMeaning": "A party starts after sunset."
+    },
+    {
+      "word": "zi de naștere",
+      "reading": "zee deh nahsh-teh-reh",
+      "meaning": "birthday",
+      "example": "O zi de naștere aduce tort și cadouri.",
+      "exampleMeaning": "A birthday brings cake and gifts."
+    },
+    {
+      "word": "nuntă",
+      "reading": "noon-tuh",
+      "meaning": "wedding",
+      "example": "O nuntă mare are muzică live.",
+      "exampleMeaning": "A big wedding has live music."
+    },
+    {
+      "word": "botez",
+      "reading": "boh-tez",
+      "meaning": "baptism / christening",
+      "example": "Un botez are loc duminică.",
+      "exampleMeaning": "A christening takes place on Sunday."
+    },
+    {
+      "word": "Crăciun",
+      "reading": "kruh-choon",
+      "meaning": "Christmas",
+      "example": "De Crăciun stăm cu familia.",
+      "exampleMeaning": "At Christmas we stay with family."
+    },
+    {
+      "word": "Paște",
+      "reading": "pash-teh",
+      "meaning": "Easter",
+      "example": "De Paște pregătim mese bogate.",
+      "exampleMeaning": "At Easter we prepare rich meals."
+    },
+    {
+      "word": "Anul Nou",
+      "reading": "ah-nool noh-oo",
+      "meaning": "New Year",
+      "example": "De Anul Nou vedem artificii.",
+      "exampleMeaning": "On New Year’s we see fireworks."
+    },
+    {
+      "word": "cadou",
+      "reading": "kah-doh-oo",
+      "meaning": "gift",
+      "example": "Aleg un cadou pentru prieten.",
+      "exampleMeaning": "I choose a gift for a friend."
+    },
+    {
+      "word": "tort",
+      "reading": "tort",
+      "meaning": "cake",
+      "example": "Un tort de ciocolată este pe masă.",
+      "exampleMeaning": "A chocolate cake is on the table."
+    },
+    {
+      "word": "lumânare",
+      "reading": "loo-muh-nah-reh",
+      "meaning": "candle",
+      "example": "O lumânare arde lângă fereastră.",
+      "exampleMeaning": "A candle burns near the window."
+    },
+    {
+      "word": "invitație",
+      "reading": "een-vee-tah-tsee-eh",
+      "meaning": "invitation",
+      "example": "O invitație la nuntă sosește prin poștă.",
+      "exampleMeaning": "A wedding invitation arrives by mail."
+    },
+    {
+      "word": "tradiție",
+      "reading": "trah-dee-tsee-eh",
+      "meaning": "tradition",
+      "example": "O tradiție veche continuă în sat.",
+      "exampleMeaning": "An old tradition continues in the village."
+    },
+    {
+      "word": "costum",
+      "reading": "kos-toom",
+      "meaning": "costume / suit",
+      "example": "Un costum popular are broderie fină.",
+      "exampleMeaning": "A folk costume has fine embroidery."
+    },
+    {
+      "word": "artificii",
+      "reading": "ahr-tee-fee-chee",
+      "meaning": "fireworks",
+      "example": "Artificiile luminează cerul nopții.",
+      "exampleMeaning": "Fireworks light up the night sky."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "Aleg un ___ pentru prieten.",
+          "answer": "cadou",
+          "hint": "gift"
+        },
+        {
+          "sentence": "Vedem ___ de Anul Nou.",
+          "answer": "artificii",
+          "hint": "fireworks"
+        },
+        {
+          "sentence": "O ___ veche continuă în sat.",
+          "answer": "tradiție",
+          "hint": "tradition"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "items": [
+        {
+          "question": "What does 'nuntă' mean?",
+          "options": [
+            "birthday",
+            "wedding",
+            "festival",
+            "candle"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "How do you say 'Christmas' in Romanian?",
+          "options": [
+            "Crăciun",
+            "Paște",
+            "Anul Nou",
+            "botez"
+          ],
+          "answer": 0
+        },
+        {
+          "question": "What does 'invitație' mean?",
+          "options": [
+            "gift",
+            "cake",
+            "invitation",
+            "tradition"
+          ],
+          "answer": 2
+        }
+      ]
+    }
+  ]
+}

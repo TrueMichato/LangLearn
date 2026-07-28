@@ -6,6 +6,7 @@ import DeckImport from '../components/common/DeckImport';
 import NotificationSettings from '../components/settings/NotificationSettings';
 import ImmersionSection from '../components/settings/ImmersionSection';
 import { LANGUAGES, getLanguageLabel } from '../lib/languages';
+import { DIALECTS, DIALECT_CODES } from '../lib/arabic-dialects';
 import { diagnoseTTS } from '../lib/tts';
 
 function SectionHeading({ icon, label }: { icon: string; label: string }) {
@@ -48,7 +49,7 @@ const sectionCard =
   'bg-white dark:bg-slate-800/90 rounded-2xl shadow-sm border border-slate-200/60 dark:border-white/10 p-4';
 
 export default function SettingsPage() {
-  const { weeklyGoalMinutes, setWeeklyGoal, dailyGoalMinutes, setDailyGoal, activeLanguages, addLanguage, removeLanguage, showStressMarks, toggleStressMarks, darkMode, toggleDarkMode, fontSize, setFontSize, ttsRate, setTtsRate, reviewBatchSize, setReviewBatchSize, adaptiveReview, toggleAdaptiveReview, scheduler, setScheduler, fsrsRequestRetention, setFsrsRequestRetention } =
+  const { weeklyGoalMinutes, setWeeklyGoal, dailyGoalMinutes, setDailyGoal, activeLanguages, addLanguage, removeLanguage, showStressMarks, toggleStressMarks, darkMode, toggleDarkMode, fontSize, setFontSize, ttsRate, setTtsRate, reviewBatchSize, setReviewBatchSize, adaptiveReview, toggleAdaptiveReview, scheduler, setScheduler, fsrsRequestRetention, setFsrsRequestRetention, arabicDialect, setArabicDialect, arabicColloquialFocus, setArabicColloquialFocus } =
     useSettingsStore();
   const [importStatus, setImportStatus] = useState('');
   const fileInputRef = useRef<HTMLInputElement>(null);
@@ -313,6 +314,62 @@ export default function SettingsPage() {
               <p className="text-xs text-slate-500 dark:text-slate-400">Display accent marks on stressed vowels in the Reader</p>
             </div>
             <Toggle checked={showStressMarks} onChange={toggleStressMarks} />
+          </div>
+        </section>
+      )}
+
+      {/* Arabic Features */}
+      {activeLanguages.includes('ar') && (
+        <section className={`${sectionCard} space-y-4`}>
+          <SectionHeading icon="🌐" label="Arabic Features" />
+
+          <div>
+            <p className="text-sm font-medium text-slate-700 dark:text-slate-200 mb-1">Dialect</p>
+            <p className="text-xs text-slate-500 dark:text-slate-400 mb-3">
+              Everyone learns Modern Standard Arabic (fuṣḥā) as the shared core. Pick a spoken
+              dialect to also see its everyday words, pronunciation notes and colloquial lessons.
+            </p>
+            <div className="space-y-2">
+              {DIALECT_CODES.map((code) => {
+                const d = DIALECTS[code];
+                const isActive = arabicDialect === code;
+                return (
+                  <button
+                    key={code}
+                    onClick={() => setArabicDialect(code)}
+                    className={`w-full text-left rounded-xl border px-3 py-2 transition-all duration-200 press-feedback ${
+                      isActive
+                        ? 'border-indigo-500 bg-indigo-50 dark:bg-indigo-900/40 dark:border-indigo-400'
+                        : 'border-slate-200 dark:border-slate-700 hover:bg-slate-50 dark:hover:bg-slate-700/50'
+                    }`}
+                    aria-pressed={isActive}
+                  >
+                    <div className="flex items-center gap-2">
+                      <span className="text-lg leading-none" aria-hidden="true">{d.flag}</span>
+                      <span className="text-sm font-semibold text-slate-800 dark:text-slate-100">{d.name}</span>
+                      <span className="text-sm text-slate-500 dark:text-slate-400" dir="rtl">{d.nativeName}</span>
+                      {isActive && <span className="ml-auto text-indigo-600 dark:text-indigo-300 text-sm">✓</span>}
+                    </div>
+                    <p className="text-xs text-slate-500 dark:text-slate-400 mt-1">{d.blurb}</p>
+                    <p className="text-[11px] text-slate-400 dark:text-slate-500 mt-0.5">{d.region}</p>
+                  </button>
+                );
+              })}
+            </div>
+          </div>
+
+          <div className="flex items-center justify-between border-t border-slate-200 dark:border-slate-700 pt-3">
+            <div className="pr-3">
+              <p className="text-sm text-slate-700 dark:text-slate-200">Colloquial focus</p>
+              <p className="text-xs text-slate-500 dark:text-slate-400">
+                Emphasize everyday spoken Arabic in your chosen dialect over formal fuṣḥā when both exist.
+                {arabicDialect === 'msa' && ' Pick a dialect above to get the most from this.'}
+              </p>
+            </div>
+            <Toggle
+              checked={arabicColloquialFocus}
+              onChange={() => setArabicColloquialFocus(!arabicColloquialFocus)}
+            />
           </div>
         </section>
       )}

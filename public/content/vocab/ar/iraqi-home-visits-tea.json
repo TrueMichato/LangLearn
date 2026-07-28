@@ -1,0 +1,159 @@
+{
+  "id": "iraqi-home-visits-tea",
+  "words": [
+    {
+      "word": "حَيَّاكْ",
+      "reading": "ḥayyāk",
+      "meaning": "welcome",
+      "example": "حَيَّاكْ بِبَيْتْنَا هَاللَّيْلَةْ.",
+      "exampleMeaning": "Welcome to our house tonight."
+    },
+    {
+      "word": "تِفَضَّلْ",
+      "reading": "tifaḍḍal",
+      "meaning": "please come in",
+      "example": "تِفَضَّلْ، الْبَابْ مَفْتُوحْ.",
+      "exampleMeaning": "Please come in, the door is open."
+    },
+    {
+      "word": "قَعْدَةْ",
+      "reading": "gaʿda",
+      "meaning": "gathering / sitting",
+      "example": "قَعْدَةْ الْأَهْلْ دَافِيَةْ.",
+      "exampleMeaning": "A family gathering is warm."
+    },
+    {
+      "word": "چَايْ",
+      "reading": "chāy",
+      "meaning": "tea",
+      "example": "الچَايْ سَاخِنْ وَطَيِّبْ.",
+      "exampleMeaning": "The tea is hot and tasty."
+    },
+    {
+      "word": "إِسْتِكَانْ",
+      "reading": "istikān",
+      "meaning": "tea glass",
+      "example": "حُطِّ الچَايْ بِالْإِسْتِكَانْ الصَّغِيرْ.",
+      "exampleMeaning": "Put the tea in the small tea glass."
+    },
+    {
+      "word": "سُكَّرْ",
+      "reading": "sukkar",
+      "meaning": "sugar",
+      "example": "أُرِيدْ سُكَّرْ قَلِيلْ بِالچَايْ.",
+      "exampleMeaning": "I want a little sugar in the tea."
+    },
+    {
+      "word": "حَلِيبْ",
+      "reading": "ḥalīb",
+      "meaning": "milk",
+      "example": "تُرِيدْ حَلِيبْ مَعَ الچَايْ؟",
+      "exampleMeaning": "Do you want milk with the tea?"
+    },
+    {
+      "word": "عَشَا",
+      "reading": "ʿashā",
+      "meaning": "dinner",
+      "example": "الْعَشَا جَاهِزْ بَعْدَ نِصْ سَاعَةْ.",
+      "exampleMeaning": "Dinner is ready after half an hour."
+    },
+    {
+      "word": "غَدَا",
+      "reading": "ghadā",
+      "meaning": "lunch",
+      "example": "بَاكِرْ تَعَالْ عَلَى الْغَدَا.",
+      "exampleMeaning": "Tomorrow come for lunch."
+    },
+    {
+      "word": "بَيْتْنَا",
+      "reading": "bētnā",
+      "meaning": "our house",
+      "example": "بَيْتْنَا قَرِيبْ مِنَ الشَّارِعْ الرَّئِيسِيّْ.",
+      "exampleMeaning": "Our house is near the main street."
+    },
+    {
+      "word": "جِيرَانْ",
+      "reading": "jīrān",
+      "meaning": "neighbors",
+      "example": "جِيرَانْنَا طَيِّبِينْ وَقَرِيبِينْ.",
+      "exampleMeaning": "Our neighbors are kind and close."
+    },
+    {
+      "word": "مَا تْكَلِّفْ",
+      "reading": "mā tkallif",
+      "meaning": "do not go to trouble",
+      "example": "مَا تْكَلِّفْ، كَاسْ مَايْ يِكْفِي.",
+      "exampleMeaning": "Do not go to trouble; a glass of water is enough."
+    },
+    {
+      "word": "عَالْعَيْنْ",
+      "reading": "ʿal-ʿēn",
+      "meaning": "gladly / with pleasure",
+      "example": "عَالْعَيْنْ، أَجِيبْ لَكْ چَايْ.",
+      "exampleMeaning": "Gladly, I will bring you tea."
+    },
+    {
+      "word": "شِتْرِيدْ؟",
+      "reading": "shitrīd?",
+      "meaning": "what would you like?",
+      "example": "شِتْرِيدْ؟ چَايْ لَوْ قَهْوَةْ؟",
+      "exampleMeaning": "What would you like, tea or coffee?"
+    },
+    {
+      "word": "تَعَالْ بَاكِرْ",
+      "reading": "taʿāl bāchir",
+      "meaning": "come tomorrow",
+      "example": "تَعَالْ بَاكِرْ وَنِسْوِي غَدَا سَوِيَّةْ.",
+      "exampleMeaning": "Come tomorrow and we will make lunch together."
+    },
+    {
+      "word": "وَنَسَةْ",
+      "reading": "wanasa",
+      "meaning": "fun / pleasant company",
+      "example": "الْقَعْدَةْ مَعَاكُمْ وَنَسَةْ.",
+      "exampleMeaning": "The gathering with you is fun."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "___، الْبَابْ مَفْتُوحْ.",
+          "answer": "تِفَضَّلْ",
+          "hint": "please come in"
+        },
+        {
+          "sentence": "أُرِيدْ ___ قَلِيلْ بِالچَايْ.",
+          "answer": "سُكَّرْ",
+          "hint": "sugar"
+        },
+        {
+          "sentence": "___، أَجِيبْ لَكْ چَايْ.",
+          "answer": "عَالْعَيْنْ",
+          "hint": "gladly"
+        },
+        {
+          "sentence": "___ وَنِسْوِي غَدَا سَوِيَّةْ.",
+          "answer": "تَعَالْ بَاكِرْ",
+          "hint": "come tomorrow"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "In Iraqi Arabic, what is an ‘إِسْتِكَانْ’?",
+      "options": [
+        "a tea glass",
+        "a neighbor",
+        "dinner",
+        "a gathering"
+      ],
+      "answer": 0
+    }
+  ]
+}

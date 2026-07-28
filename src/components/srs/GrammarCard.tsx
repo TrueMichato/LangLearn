@@ -1,5 +1,6 @@
 import type { Word } from '../../db/schema';
 import { fillBlank, hasBlank } from '../../lib/grammar-cards';
+import { rtlProps } from '../../lib/rtl';
 
 interface GrammarCardProps {
   word: Word;
@@ -43,6 +44,7 @@ export default function GrammarCard({ word, isFlipped, onFlip }: GrammarCardProp
               <p
                 className="text-base text-slate-700 dark:text-slate-200"
                 style={{ fontSize: 'var(--app-font-size)' }}
+                {...rtlProps(word.language)}
               >
                 {prompt}
               </p>
@@ -61,13 +63,14 @@ export default function GrammarCard({ word, isFlipped, onFlip }: GrammarCardProp
           <p
             className="text-2xl font-bold text-green-700 dark:text-green-400"
             style={{ fontSize: 'var(--app-font-size)' }}
+            {...rtlProps(word.language)}
           >
             {answer}
           </p>
 
           {promptHasBlank && (
             <div className="mt-2 bg-violet-50 dark:bg-violet-950/30 rounded-xl px-4 py-3">
-              <p className="text-base text-slate-800 dark:text-slate-100 font-medium">
+              <p className="text-base text-slate-800 dark:text-slate-100 font-medium" {...rtlProps(word.language)}>
                 {filledSentence}
               </p>
             </div>

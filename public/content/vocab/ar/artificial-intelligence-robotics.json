@@ -1,0 +1,159 @@
+{
+  "id": "artificial-intelligence-robotics",
+  "words": [
+    {
+      "word": "الذَّكَاءُ الِاصْطِنَاعِيُّ",
+      "reading": "adh-dhakāʾ al-iṣṭināʿī",
+      "meaning": "artificial intelligence",
+      "example": "يُحَلِّلُ الذَّكَاءُ الِاصْطِنَاعِيُّ الصُّوَرَ بِسُرْعَةٍ.",
+      "exampleMeaning": "Artificial intelligence analyzes images quickly."
+    },
+    {
+      "word": "خَوَارِزْمِيَّةٌ",
+      "reading": "khawārizmiyya",
+      "meaning": "algorithm",
+      "example": "تُرَتِّبُ خَوَارِزْمِيَّةٌ النَّتَائِجَ بِدِقَّةٍ.",
+      "exampleMeaning": "An algorithm ranks the results accurately."
+    },
+    {
+      "word": "نَمُوذَجٌ",
+      "reading": "namūdhaj",
+      "meaning": "model",
+      "example": "دَرَّبَ الْفَرِيقُ نَمُوذَجًا جَدِيدًا لِلتَّرْجَمَةِ.",
+      "exampleMeaning": "The team trained a new model for translation."
+    },
+    {
+      "word": "بَيَانَاتٌ تَدْرِيبِيَّةٌ",
+      "reading": "bayānāt tadrībiyya",
+      "meaning": "training data",
+      "example": "تَحْتَاجُ بَيَانَاتٌ تَدْرِيبِيَّةٌ إِلَى مُرَاجَعَةٍ بَشَرِيَّةٍ.",
+      "exampleMeaning": "Training data needs human review."
+    },
+    {
+      "word": "تَعَلُّمٌ آلِيٌّ",
+      "reading": "taʿallum ālī",
+      "meaning": "machine learning",
+      "example": "يَسْتَخْدِمُ الطَّبِيبُ تَعَلُّمًا آلِيًّا لِقِرَاءَةِ الْفُحُوصِ.",
+      "exampleMeaning": "The doctor uses machine learning to read tests."
+    },
+    {
+      "word": "شَبَكَةٌ عَصَبِيَّةٌ",
+      "reading": "shabaka ʿaṣabiyya",
+      "meaning": "neural network",
+      "example": "تَتَعَلَّمُ شَبَكَةٌ عَصَبِيَّةٌ مِنْ أَمْثِلَةٍ كَثِيرَةٍ.",
+      "exampleMeaning": "A neural network learns from many examples."
+    },
+    {
+      "word": "رُوبُوتٌ",
+      "reading": "rūbūt",
+      "meaning": "robot",
+      "example": "يُسَاعِدُ رُوبُوتٌ صَغِيرٌ فِي الْمَخْتَبَرِ.",
+      "exampleMeaning": "A small robot helps in the laboratory."
+    },
+    {
+      "word": "مُسْتَشْعِرٌ",
+      "reading": "mustashʿir",
+      "meaning": "sensor",
+      "example": "يَقِيسُ مُسْتَشْعِرٌ دَرَجَةَ الْحَرَارَةِ.",
+      "exampleMeaning": "A sensor measures the temperature."
+    },
+    {
+      "word": "ذِرَاعٌ آلِيَّةٌ",
+      "reading": "dhirāʿ āliyya",
+      "meaning": "robotic arm",
+      "example": "تَرْفَعُ ذِرَاعٌ آلِيَّةٌ الصُّنْدُوقَ الثَّقِيلَ.",
+      "exampleMeaning": "A robotic arm lifts the heavy box."
+    },
+    {
+      "word": "تَعَرُّفٌ عَلَى الصُّوَرِ",
+      "reading": "taʿarruf ʿalā ṣ-ṣuwar",
+      "meaning": "image recognition",
+      "example": "يُفِيدُ تَعَرُّفٌ عَلَى الصُّوَرِ فِي فَرْزِ الْمَلَفَّاتِ.",
+      "exampleMeaning": "Image recognition is useful for sorting files."
+    },
+    {
+      "word": "تَعَرُّفٌ عَلَى الصَّوْتِ",
+      "reading": "taʿarruf ʿalā ṣ-ṣawt",
+      "meaning": "speech recognition",
+      "example": "يُحَوِّلُ تَعَرُّفٌ عَلَى الصَّوْتِ الْكَلَامَ إِلَى نَصٍّ.",
+      "exampleMeaning": "Speech recognition turns speech into text."
+    },
+    {
+      "word": "أَتْمَتَةٌ",
+      "reading": "atmataa",
+      "meaning": "automation",
+      "example": "تُقَلِّلُ أَتْمَتَةٌ الْأَعْمَالَ الْمُتَكَرِّرَةَ.",
+      "exampleMeaning": "Automation reduces repetitive tasks."
+    },
+    {
+      "word": "دِقَّةٌ",
+      "reading": "diqqa",
+      "meaning": "accuracy",
+      "example": "زَادَتْ دِقَّةٌ النَّظَامِ بَعْدَ التَّحْدِيثِ.",
+      "exampleMeaning": "The system's accuracy increased after the update."
+    },
+    {
+      "word": "تَحَيُّزٌ",
+      "reading": "taḥayyuz",
+      "meaning": "bias",
+      "example": "يَفْحَصُ الْبَاحِثُونَ تَحَيُّزًا فِي الْبَيَانَاتِ.",
+      "exampleMeaning": "Researchers check for bias in the data."
+    },
+    {
+      "word": "مُحَاكَاةٌ",
+      "reading": "muḥākāh",
+      "meaning": "simulation",
+      "example": "تُظْهِرُ مُحَاكَاةٌ حَرَكَةَ الرُّوبُوتِ قَبْلَ صُنْعِهِ.",
+      "exampleMeaning": "A simulation shows the robot's movement before building it."
+    },
+    {
+      "word": "وَاجِهَةٌ بَرْمَجِيَّةٌ",
+      "reading": "wājiha barmajiyya",
+      "meaning": "application programming interface",
+      "example": "تَرْبِطُ وَاجِهَةٌ بَرْمَجِيَّةٌ التَّطْبِيقَ بِالْخَادِمِ.",
+      "exampleMeaning": "An API connects the app to the server."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "يُحَلِّلُ ___ الصُّوَرَ بِسُرْعَةٍ.",
+          "answer": "الذَّكَاءُ الِاصْطِنَاعِيُّ",
+          "hint": "artificial intelligence"
+        },
+        {
+          "sentence": "تَرْفَعُ ___ الصُّنْدُوقَ الثَّقِيلَ.",
+          "answer": "ذِرَاعٌ آلِيَّةٌ",
+          "hint": "robotic arm"
+        },
+        {
+          "sentence": "يُحَوِّلُ ___ الْكَلَامَ إِلَى نَصٍّ.",
+          "answer": "تَعَرُّفٌ عَلَى الصَّوْتِ",
+          "hint": "speech recognition"
+        },
+        {
+          "sentence": "يَفْحَصُ الْبَاحِثُونَ ___ فِي الْبَيَانَاتِ.",
+          "answer": "تَحَيُّزٌ",
+          "hint": "bias"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "What does ‘خَوَارِزْمِيَّةٌ’ mean?",
+      "options": [
+        "algorithm",
+        "sensor",
+        "simulation",
+        "accuracy"
+      ],
+      "answer": 0
+    }
+  ]
+}

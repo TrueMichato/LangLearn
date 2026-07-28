@@ -1,0 +1,178 @@
+{
+  "id": "business-office",
+  "words": [
+    {
+      "word": "sediu",
+      "reading": "seh-dee-oo",
+      "meaning": "headquarters / office site",
+      "example": "Sediul companiei este în centru.",
+      "exampleMeaning": "The company's headquarters is downtown."
+    },
+    {
+      "word": "contract",
+      "reading": "kon-trakt",
+      "meaning": "contract",
+      "example": "Semnăm contractul după negociere.",
+      "exampleMeaning": "We sign the contract after the negotiation."
+    },
+    {
+      "word": "factură",
+      "reading": "fak-too-ruh",
+      "meaning": "invoice / bill",
+      "example": "Factura ajunge prin e-mail.",
+      "exampleMeaning": "The invoice arrives by email."
+    },
+    {
+      "word": "client",
+      "reading": "klee-ent",
+      "meaning": "client / customer",
+      "example": "Clientul cere informații clare.",
+      "exampleMeaning": "The client asks for clear information."
+    },
+    {
+      "word": "furnizor",
+      "reading": "foor-nee-zor",
+      "meaning": "supplier",
+      "example": "Furnizorul livrează materialele luni.",
+      "exampleMeaning": "The supplier delivers the materials on Monday."
+    },
+    {
+      "word": "ședință",
+      "reading": "sheh-deen-tsuh",
+      "meaning": "meeting",
+      "example": "Ședința începe la ora zece.",
+      "exampleMeaning": "The meeting starts at ten o'clock."
+    },
+    {
+      "word": "raport",
+      "reading": "rah-port",
+      "meaning": "report",
+      "example": "Raportul prezintă vânzările lunare.",
+      "exampleMeaning": "The report presents the monthly sales."
+    },
+    {
+      "word": "termen-limită",
+      "reading": "ter-men lee-mee-tuh",
+      "meaning": "deadline",
+      "example": "Termenul-limită este vineri.",
+      "exampleMeaning": "The deadline is Friday."
+    },
+    {
+      "word": "proiect",
+      "reading": "pro-yekt",
+      "meaning": "project",
+      "example": "Proiectul are trei etape.",
+      "exampleMeaning": "The project has three stages."
+    },
+    {
+      "word": "echipă",
+      "reading": "eh-kee-puh",
+      "meaning": "team",
+      "example": "Echipa lucrează la prezentare.",
+      "exampleMeaning": "The team is working on the presentation."
+    },
+    {
+      "word": "buget",
+      "reading": "boo-jet",
+      "meaning": "budget",
+      "example": "Bugetul pentru campanie este mic.",
+      "exampleMeaning": "The budget for the campaign is small."
+    },
+    {
+      "word": "profit",
+      "reading": "pro-feet",
+      "meaning": "profit",
+      "example": "Firma are profit anul acesta.",
+      "exampleMeaning": "The company has a profit this year."
+    },
+    {
+      "word": "pierdere",
+      "reading": "pyer-deh-reh",
+      "meaning": "loss",
+      "example": "O pierdere mare poate afecta firma.",
+      "exampleMeaning": "A large loss can affect the company."
+    },
+    {
+      "word": "negociere",
+      "reading": "neh-go-chee-eh-reh",
+      "meaning": "negotiation",
+      "example": "Negocierea a durat două ore.",
+      "exampleMeaning": "The negotiation lasted two hours."
+    },
+    {
+      "word": "prezentare",
+      "reading": "preh-zen-tah-reh",
+      "meaning": "presentation",
+      "example": "Prezentarea a fost clară.",
+      "exampleMeaning": "The presentation was clear."
+    },
+    {
+      "word": "dosar",
+      "reading": "do-sar",
+      "meaning": "file / folder",
+      "example": "Dosarul conține toate documentele.",
+      "exampleMeaning": "The file contains all the documents."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "Semnăm un ___ după negociere.",
+          "answer": "contract",
+          "hint": "contract"
+        },
+        {
+          "sentence": "Echipa lucrează la un ___ nou.",
+          "answer": "proiect",
+          "hint": "project"
+        },
+        {
+          "sentence": "Avem un ___ vineri.",
+          "answer": "termen-limită",
+          "hint": "deadline"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "items": [
+        {
+          "question": "What does 'factură' mean?",
+          "options": [
+            "invoice / bill",
+            "team",
+            "folder",
+            "profit"
+          ],
+          "answer": 0
+        },
+        {
+          "question": "How do you say 'supplier' in Romanian?",
+          "options": [
+            "client",
+            "furnizor",
+            "raport",
+            "buget"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What does 'ședință' mean?",
+          "options": [
+            "loss",
+            "headquarters",
+            "meeting",
+            "presentation"
+          ],
+          "answer": 2
+        }
+      ]
+    }
+  ]
+}

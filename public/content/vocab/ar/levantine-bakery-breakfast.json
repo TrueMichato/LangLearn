@@ -1,0 +1,159 @@
+{
+  "id": "levantine-bakery-breakfast",
+  "words": [
+    {
+      "word": "مَنْقُوشِةْ",
+      "reading": "manʾūshe",
+      "meaning": "flatbread pie",
+      "example": "بِدِّي مَنْقُوشِةْ زَعْتَرْ طَازَةْ.",
+      "exampleMeaning": "I want a fresh zaatar flatbread."
+    },
+    {
+      "word": "زَعْتَرْ",
+      "reading": "zaʿtar",
+      "meaning": "zaatar thyme mix",
+      "example": "حَطِّلِي زَعْتَرْ زِيَادِةْ، لَوْ سَمَحْتْ.",
+      "exampleMeaning": "Put extra zaatar for me, please."
+    },
+    {
+      "word": "جِبْنِةْ",
+      "reading": "jibne",
+      "meaning": "cheese",
+      "example": "هَالْمَنْقُوشِةْ فِيهَا جِبْنِةْ مَالِحَةْ.",
+      "exampleMeaning": "This flatbread has salty cheese in it."
+    },
+    {
+      "word": "لَبْنِةْ",
+      "reading": "labne",
+      "meaning": "strained yogurt",
+      "example": "نَاكُلْ لَبْنِةْ مَعْ زَيْتُونْ صُبْحِيَّةْ.",
+      "exampleMeaning": "We eat labneh with olives in the morning."
+    },
+    {
+      "word": "زَيْتُونْ",
+      "reading": "zētūn",
+      "meaning": "olives",
+      "example": "زَيْتُونْ بَلَدِيّْ طَعْمُهْ زَاكِي.",
+      "exampleMeaning": "Local olives taste delicious."
+    },
+    {
+      "word": "كَعْكْ",
+      "reading": "kaʿk",
+      "meaning": "sesame bread ring",
+      "example": "جِبْنَا كَعْكْ سَاخِنْ مِنَ الْفُرْنْ.",
+      "exampleMeaning": "We brought hot sesame bread from the bakery."
+    },
+    {
+      "word": "فُولْ",
+      "reading": "fūl",
+      "meaning": "fava beans",
+      "example": "طَلَبْنَا فُولْ مَعْ زَيْتْ وَحَامِضْ.",
+      "exampleMeaning": "We ordered fava beans with oil and lemon."
+    },
+    {
+      "word": "حُمُّصْ",
+      "reading": "ḥummuṣ",
+      "meaning": "hummus",
+      "example": "حُمُّصْ الْمَحَلّْ نَاعِمْ كْتِيرْ.",
+      "exampleMeaning": "The shop’s hummus is very smooth."
+    },
+    {
+      "word": "شَايْ مَعْ نَعْنَعْ",
+      "reading": "shāy maʿ naʿnaʿ",
+      "meaning": "tea with mint",
+      "example": "بَعْدَ الْفُطُورْ شَرِبْنَا شَايْ مَعْ نَعْنَعْ.",
+      "exampleMeaning": "After breakfast we drank tea with mint."
+    },
+    {
+      "word": "طَازَةْ",
+      "reading": "ṭāze",
+      "meaning": "fresh",
+      "example": "الْخُبْزْ طَازَةْ وَطَالِعْ هَلَّقْ.",
+      "exampleMeaning": "The bread is fresh and just came out."
+    },
+    {
+      "word": "سَخِّنْلِي",
+      "reading": "sakhkhinlī",
+      "meaning": "heat it for me",
+      "example": "سَخِّنْلِي الْكَعْكْ دَقِيقَتَيْنْ.",
+      "exampleMeaning": "Heat the sesame bread for me for two minutes."
+    },
+    {
+      "word": "حَطِّلِي",
+      "reading": "ḥaṭṭilī",
+      "meaning": "put for me",
+      "example": "حَطِّلِي شْوَيَّةْ زَيْتْ عَلَى اللَّبْنِةْ.",
+      "exampleMeaning": "Put a little oil on the labneh for me."
+    },
+    {
+      "word": "بِدِّي يَاهَا سَفَرِي",
+      "reading": "biddī yāha safarī",
+      "meaning": "I want it to go",
+      "example": "بِدِّي يَاهَا سَفَرِي عَ الشُّغُلْ.",
+      "exampleMeaning": "I want it to go for work."
+    },
+    {
+      "word": "قَدَّيْشْ حَقَّهَا؟",
+      "reading": "qaddēsh ḥaʾʾha?",
+      "meaning": "how much does it cost?",
+      "example": "قَدَّيْشْ حَقَّهَا؟ مَعْ كَاسِ الشَّايْ.",
+      "exampleMeaning": "How much does it cost with the cup of tea?"
+    },
+    {
+      "word": "عَ الطَّابُورْ",
+      "reading": "ʿaṭ-ṭābūr",
+      "meaning": "in line",
+      "example": "وَقَفْنَا عَ الطَّابُورْ قُدَّامَ الْفُرْنْ.",
+      "exampleMeaning": "We stood in line in front of the bakery."
+    },
+    {
+      "word": "صَحْتَيْنْ",
+      "reading": "saḥtēn",
+      "meaning": "bon appétit",
+      "example": "قَالَ الْخَبَّازْ: صَحْتَيْنْ وَهَنَا.",
+      "exampleMeaning": "The baker said: bon appétit and enjoy."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "بِدِّي ___ زَعْتَرْ طَازَةْ.",
+          "answer": "مَنْقُوشِةْ",
+          "hint": "flatbread pie"
+        },
+        {
+          "sentence": "___ الْكَعْكْ دَقِيقَتَيْنْ.",
+          "answer": "سَخِّنْلِي",
+          "hint": "heat it for me"
+        },
+        {
+          "sentence": "___ شْوَيَّةْ زَيْتْ عَلَى اللَّبْنِةْ.",
+          "answer": "حَطِّلِي",
+          "hint": "put for me"
+        },
+        {
+          "sentence": "الْخُبْزْ ___ وَطَالِعْ هَلَّقْ.",
+          "answer": "طَازَةْ",
+          "hint": "fresh"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "In Levantine Arabic, what does ‘صَحْتَيْنْ’ mean?",
+      "options": [
+        "bon appétit",
+        "fresh",
+        "in line",
+        "cheese"
+      ],
+      "answer": 0
+    }
+  ]
+}

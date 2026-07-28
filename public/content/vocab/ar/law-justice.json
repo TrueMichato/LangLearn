@@ -1,0 +1,183 @@
+{
+  "id": "law-justice",
+  "words": [
+    {
+      "word": "قَانُونٌ",
+      "reading": "qānūnun",
+      "meaning": "law",
+      "example": "قَانُونٌ عَادِلٌ يَحْمِي الضَّعِيفَ وَالْقَوِيَّ.",
+      "exampleMeaning": "A just law protects the weak and the strong."
+    },
+    {
+      "word": "مَحْكَمَةٌ",
+      "reading": "maḥkamatun",
+      "meaning": "court",
+      "example": "مَحْكَمَةٌ مُسْتَقِلَّةٌ تَضْمَنُ سَيْرَ الْعَدَالَةِ.",
+      "exampleMeaning": "An independent court ensures the course of justice."
+    },
+    {
+      "word": "قَاضٍ",
+      "reading": "qāḍin",
+      "meaning": "judge",
+      "example": "قَاضٍ عَادِلٌ يَسْتَمِعُ إِلَى الطَّرَفَيْنِ.",
+      "exampleMeaning": "A fair judge listens to both parties."
+    },
+    {
+      "word": "مُحَامٍ",
+      "reading": "muḥāmin",
+      "meaning": "lawyer",
+      "example": "مُحَامٍ خَبِيرٌ يُدَافِعُ عَنِ الْمُتَّهَمِ.",
+      "exampleMeaning": "An experienced lawyer defends the accused."
+    },
+    {
+      "word": "شَهَادَةٌ",
+      "reading": "shahādatun",
+      "meaning": "testimony",
+      "example": "قَدَّمَ الشَّاهِدُ شَهَادَةً دَقِيقَةً أَمَامَ الْقَاضِي.",
+      "exampleMeaning": "The witness gave precise testimony before the judge."
+    },
+    {
+      "word": "دَعْوَى",
+      "reading": "daʿwā",
+      "meaning": "lawsuit / claim",
+      "example": "رَفَعَ الْمُوَاطِنُ دَعْوَى ضِدَّ الشَّرِكَةِ.",
+      "exampleMeaning": "The citizen filed a lawsuit against the company."
+    },
+    {
+      "word": "حُكْمٌ",
+      "reading": "ḥukmun",
+      "meaning": "verdict / ruling",
+      "example": "أَصْدَرَتِ الْمَحْكَمَةُ حُكْمًا مُفَصَّلًا.",
+      "exampleMeaning": "The court issued a detailed ruling."
+    },
+    {
+      "word": "عَدَالَةٌ",
+      "reading": "ʿadālatun",
+      "meaning": "justice",
+      "example": "تَبْقَى الْعَدَالَةُ أَسَاسَ السِّلْمِ الاجْتِمَاعِيِّ.",
+      "exampleMeaning": "Justice remains the basis of social peace."
+    },
+    {
+      "word": "جَرِيمَةٌ",
+      "reading": "jarīmatun",
+      "meaning": "crime",
+      "example": "حَقَّقَتِ الشُّرْطَةُ فِي جَرِيمَةٍ خَطِيرَةٍ.",
+      "exampleMeaning": "The police investigated a serious crime."
+    },
+    {
+      "word": "عُقُوبَةٌ",
+      "reading": "ʿuqūbatun",
+      "meaning": "punishment / penalty",
+      "example": "حَدَّدَ الْقَانُونُ عُقُوبَةً مُنَاسِبَةً لِلْجَرِيمَةِ.",
+      "exampleMeaning": "The law set an appropriate penalty for the crime."
+    },
+    {
+      "word": "دَلِيلٌ",
+      "reading": "dalīlun",
+      "meaning": "evidence / proof",
+      "example": "يَحْتَاجُ الْقَاضِي إِلَى دَلِيلٍ قَوِيٍّ.",
+      "exampleMeaning": "The judge needs strong evidence."
+    },
+    {
+      "word": "مُتَّهَمٌ",
+      "reading": "muttahamun",
+      "meaning": "accused person",
+      "example": "نَفَى الْمُتَّهَمُ كُلَّ مَا نُسِبَ إِلَيْهِ.",
+      "exampleMeaning": "The accused denied everything attributed to him."
+    },
+    {
+      "word": "شَاهِدٌ",
+      "reading": "shāhidun",
+      "meaning": "witness",
+      "example": "وَقَفَ شَاهِدٌ جَدِيدٌ أَمَامَ الْمَحْكَمَةِ.",
+      "exampleMeaning": "A new witness stood before the court."
+    },
+    {
+      "word": "اِسْتِئْنَافٌ",
+      "reading": "istiʾnāfun",
+      "meaning": "appeal",
+      "example": "قَدَّمَ الْمُحَامِي اِسْتِئْنَافًا بَعْدَ الْحُكْمِ.",
+      "exampleMeaning": "The lawyer filed an appeal after the ruling."
+    },
+    {
+      "word": "تَحْقِيقٌ",
+      "reading": "taḥqīqun",
+      "meaning": "investigation",
+      "example": "فَتَحَتِ النِّيَابَةُ تَحْقِيقًا رَسْمِيًّا.",
+      "exampleMeaning": "The prosecution opened an official investigation."
+    },
+    {
+      "word": "حُقُوقٌ",
+      "reading": "ḥuqūqun",
+      "meaning": "rights",
+      "example": "يَعْرِفُ كُلُّ إِنْسَانٍ حُقُوقَهُ وَوَاجِبَاتِهِ.",
+      "exampleMeaning": "Every person knows his rights and duties."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "___ عَادِلٌ يَحْمِي الضَّعِيفَ وَالْقَوِيَّ.",
+          "answer": "قَانُونٌ",
+          "hint": "law"
+        },
+        {
+          "sentence": "___ مُسْتَقِلَّةٌ تَضْمَنُ سَيْرَ الْعَدَالَةِ.",
+          "answer": "مَحْكَمَةٌ",
+          "hint": "court"
+        },
+        {
+          "sentence": "___ عَادِلٌ يَسْتَمِعُ إِلَى الطَّرَفَيْنِ.",
+          "answer": "قَاضٍ",
+          "hint": "judge"
+        },
+        {
+          "sentence": "___ خَبِيرٌ يُدَافِعُ عَنِ الْمُتَّهَمِ.",
+          "answer": "مُحَامٍ",
+          "hint": "lawyer"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "items": [
+        {
+          "question": "What does ‘قَانُونٌ’ mean?",
+          "options": [
+            "court",
+            "law",
+            "judge",
+            "lawyer"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What does ‘مَحْكَمَةٌ’ mean?",
+          "options": [
+            "judge",
+            "court",
+            "lawyer",
+            "testimony"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What does ‘قَاضٍ’ mean?",
+          "options": [
+            "lawyer",
+            "judge",
+            "testimony",
+            "lawsuit / claim"
+          ],
+          "answer": 1
+        }
+      ]
+    }
+  ]
+}

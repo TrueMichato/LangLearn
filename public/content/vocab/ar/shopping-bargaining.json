@@ -1,0 +1,183 @@
+{
+  "id": "shopping-bargaining",
+  "words": [
+    {
+      "word": "مُسَاوَمَةٌ",
+      "reading": "musāwamatun",
+      "meaning": "bargaining",
+      "example": "تَحْتَاجُ مُسَاوَمَةٌ هَادِئَةٌ إِلَى صَبْرٍ.",
+      "exampleMeaning": "Calm bargaining needs patience."
+    },
+    {
+      "word": "تَخْفِيضٌ",
+      "reading": "takhfīḍun",
+      "meaning": "discount",
+      "example": "طَلَبَتِ الزَّبُونَةُ تَخْفِيضًا صَغِيرًا.",
+      "exampleMeaning": "The customer asked for a small discount."
+    },
+    {
+      "word": "سِعْرٌ نِهَائِيٌّ",
+      "reading": "siʿrun nihāʾiyyun",
+      "meaning": "final price",
+      "example": "قَالَ الْبَائِعُ: هٰذَا سِعْرٌ نِهَائِيٌّ.",
+      "exampleMeaning": "The seller said: this is a final price."
+    },
+    {
+      "word": "بَائِعٌ",
+      "reading": "bāʾiʿun",
+      "meaning": "seller / vendor",
+      "example": "شَرَحَ بَائِعٌ جَوْدَةَ الْقُمَاشِ.",
+      "exampleMeaning": "A seller explained the quality of the cloth."
+    },
+    {
+      "word": "زَبُونٌ",
+      "reading": "zabūnun",
+      "meaning": "customer",
+      "example": "يَبْحَثُ زَبُونٌ عَنْ مَقَاسٍ أَصْغَرَ.",
+      "exampleMeaning": "A customer is looking for a smaller size."
+    },
+    {
+      "word": "جَوْدَةٌ",
+      "reading": "jawdatun",
+      "meaning": "quality",
+      "example": "جَوْدَةُ هٰذِهِ الْحَقِيبَةِ مُمْتَازَةٌ.",
+      "exampleMeaning": "The quality of this bag is excellent."
+    },
+    {
+      "word": "بِضَاعَةٌ",
+      "reading": "biḍāʿatun",
+      "meaning": "merchandise / goods",
+      "example": "وَصَلَتْ بِضَاعَةٌ جَدِيدَةٌ إِلَى السُّوقِ.",
+      "exampleMeaning": "New merchandise arrived at the market."
+    },
+    {
+      "word": "عَرْضٌ خَاصٌّ",
+      "reading": "ʿarḍun khāṣṣun",
+      "meaning": "special offer",
+      "example": "هُنَاكَ عَرْضٌ خَاصٌّ عَلَى الْأَحْذِيَةِ.",
+      "exampleMeaning": "There is a special offer on shoes."
+    },
+    {
+      "word": "غَالٍ",
+      "reading": "ghālin",
+      "meaning": "expensive",
+      "example": "هٰذَا الْمَعْطَفُ غَالٍ بِالنِّسْبَةِ إِلَيَّ.",
+      "exampleMeaning": "This coat is expensive for me."
+    },
+    {
+      "word": "رَخِيصٌ",
+      "reading": "rakhīṣun",
+      "meaning": "cheap / inexpensive",
+      "example": "وَجَدْنَا دُكَّانًا رَخِيصًا قُرْبَ الْمَحَطَّةِ.",
+      "exampleMeaning": "We found an inexpensive shop near the station."
+    },
+    {
+      "word": "مَقَاسٌ مُنَاسِبٌ",
+      "reading": "maqāsun munāsibun",
+      "meaning": "suitable size",
+      "example": "هٰذَا الْقَمِيصُ مَقَاسٌ مُنَاسِبٌ لَكَ.",
+      "exampleMeaning": "This shirt is a suitable size for you."
+    },
+    {
+      "word": "ضَمَانٌ",
+      "reading": "ḍamānun",
+      "meaning": "warranty / guarantee",
+      "example": "يَأْتِي الْهَاتِفُ مَعَ ضَمَانٍ لِسَنَةٍ.",
+      "exampleMeaning": "The phone comes with a one-year warranty."
+    },
+    {
+      "word": "إِيصَالٌ",
+      "reading": "ʾīṣālun",
+      "meaning": "receipt",
+      "example": "احْتَفِظْ بِالْإِيصَالِ بَعْدَ الدَّفْعِ.",
+      "exampleMeaning": "Keep the receipt after payment."
+    },
+    {
+      "word": "نَقْدًا",
+      "reading": "naqdan",
+      "meaning": "in cash",
+      "example": "دَفَعَ الْمُشْتَرِي نَقْدًا فِي السُّوقِ.",
+      "exampleMeaning": "The buyer paid in cash at the market."
+    },
+    {
+      "word": "بِبِطَاقَةٍ",
+      "reading": "bi-biṭāqatin",
+      "meaning": "by card",
+      "example": "هَلْ أَسْتَطِيعُ أَنْ أَدْفَعَ بِبِطَاقَةٍ؟",
+      "exampleMeaning": "Can I pay by card?"
+    },
+    {
+      "word": "أُرِيدُ أَنْ أُجَرِّبَهُ",
+      "reading": "ʾurīdu ʾan ʾujarribahu",
+      "meaning": "I want to try it",
+      "example": "أُرِيدُ أَنْ أُجَرِّبَهُ قَبْلَ الشِّرَاءِ.",
+      "exampleMeaning": "I want to try it before buying."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "تَحْتَاجُ ___ هَادِئَةٌ إِلَى صَبْرٍ.",
+          "answer": "مُسَاوَمَةٌ",
+          "hint": "bargaining"
+        },
+        {
+          "sentence": "___ صَغِيرٌ يُسَاعِدُ الزَّبُونَ.",
+          "answer": "تَخْفِيضٌ",
+          "hint": "discount"
+        },
+        {
+          "sentence": "___ يُنْهِي النِّقَاشَ.",
+          "answer": "سِعْرٌ نِهَائِيٌّ",
+          "hint": "final price"
+        },
+        {
+          "sentence": "شَرَحَ ___ جَوْدَةَ الْقُمَاشِ.",
+          "answer": "بَائِعٌ",
+          "hint": "seller / vendor"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "items": [
+        {
+          "question": "What does ‘مُسَاوَمَةٌ’ mean?",
+          "options": [
+            "discount",
+            "bargaining",
+            "final price",
+            "seller / vendor"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What does ‘تَخْفِيضٌ’ mean?",
+          "options": [
+            "bargaining",
+            "discount",
+            "final price",
+            "seller / vendor"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What does ‘سِعْرٌ نِهَائِيٌّ’ mean?",
+          "options": [
+            "bargaining",
+            "final price",
+            "discount",
+            "seller / vendor"
+          ],
+          "answer": 1
+        }
+      ]
+    }
+  ]
+}

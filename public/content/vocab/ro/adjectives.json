@@ -1,0 +1,178 @@
+{
+  "id": "adjectives",
+  "words": [
+    {
+      "word": "mare",
+      "reading": "mah-reh",
+      "meaning": "big / large",
+      "example": "Casa este mare și luminoasă.",
+      "exampleMeaning": "The house is big and bright."
+    },
+    {
+      "word": "mic",
+      "reading": "meek",
+      "meaning": "small",
+      "example": "Apartamentul este mic, dar comod.",
+      "exampleMeaning": "The apartment is small but comfortable."
+    },
+    {
+      "word": "frumos",
+      "reading": "froo-mos",
+      "meaning": "beautiful / nice",
+      "example": "Parcul este frumos primăvara.",
+      "exampleMeaning": "The park is beautiful in spring."
+    },
+    {
+      "word": "urât",
+      "reading": "oo-ruht",
+      "meaning": "ugly / unpleasant",
+      "example": "Zgomotul urât mă trezește.",
+      "exampleMeaning": "The unpleasant noise wakes me."
+    },
+    {
+      "word": "bun",
+      "reading": "boon",
+      "meaning": "good",
+      "example": "El este un prieten bun.",
+      "exampleMeaning": "He is a good friend."
+    },
+    {
+      "word": "rău",
+      "reading": "ruh-oo",
+      "meaning": "bad",
+      "example": "A fost un vis rău.",
+      "exampleMeaning": "It was a bad dream."
+    },
+    {
+      "word": "cald",
+      "reading": "kahld",
+      "meaning": "warm / hot",
+      "example": "Ceaiul este cald.",
+      "exampleMeaning": "The tea is hot."
+    },
+    {
+      "word": "rece",
+      "reading": "reh-cheh",
+      "meaning": "cold",
+      "example": "Apa este rece.",
+      "exampleMeaning": "The water is cold."
+    },
+    {
+      "word": "nou",
+      "reading": "noh-oo",
+      "meaning": "new",
+      "example": "Telefonul este nou.",
+      "exampleMeaning": "The phone is new."
+    },
+    {
+      "word": "vechi",
+      "reading": "veky",
+      "meaning": "old",
+      "example": "Podul vechi încă rezistă.",
+      "exampleMeaning": "The old bridge still holds."
+    },
+    {
+      "word": "rapid",
+      "reading": "rah-peed",
+      "meaning": "fast",
+      "example": "Trenul rapid ajunge la timp.",
+      "exampleMeaning": "The fast train arrives on time."
+    },
+    {
+      "word": "lent",
+      "reading": "lent",
+      "meaning": "slow",
+      "example": "Calculatorul lent mă enervează.",
+      "exampleMeaning": "The slow computer annoys me."
+    },
+    {
+      "word": "ușor",
+      "reading": "oo-shor",
+      "meaning": "easy / light",
+      "example": "Exercițiul este ușor.",
+      "exampleMeaning": "The exercise is easy."
+    },
+    {
+      "word": "greu",
+      "reading": "greh-oo",
+      "meaning": "difficult / heavy",
+      "example": "Rucsacul este greu.",
+      "exampleMeaning": "The backpack is heavy."
+    },
+    {
+      "word": "scump",
+      "reading": "skoomp",
+      "meaning": "expensive",
+      "example": "Restaurantul este scump.",
+      "exampleMeaning": "The restaurant is expensive."
+    },
+    {
+      "word": "ieftin",
+      "reading": "yef-teen",
+      "meaning": "cheap",
+      "example": "Biletul este ieftin.",
+      "exampleMeaning": "The ticket is cheap."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "Casa este ___ și luminoasă.",
+          "answer": "mare",
+          "hint": "big"
+        },
+        {
+          "sentence": "Ceaiul este ___.",
+          "answer": "cald",
+          "hint": "hot"
+        },
+        {
+          "sentence": "Exercițiul este ___.",
+          "answer": "ușor",
+          "hint": "easy"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "items": [
+        {
+          "question": "What does 'ieftin' mean?",
+          "options": [
+            "expensive",
+            "cheap",
+            "big",
+            "small"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What is the opposite of 'cald'?",
+          "options": [
+            "bun",
+            "nou",
+            "rece",
+            "vechi"
+          ],
+          "answer": 2
+        },
+        {
+          "question": "How do you say 'fast' in Romanian?",
+          "options": [
+            "lent",
+            "ușor",
+            "greu",
+            "rapid"
+          ],
+          "answer": 3
+        }
+      ]
+    }
+  ]
+}

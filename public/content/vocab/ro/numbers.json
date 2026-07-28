@@ -1,0 +1,192 @@
+{
+  "id": "numbers",
+  "words": [
+    {
+      "word": "unu",
+      "reading": "oo-noo",
+      "meaning": "one",
+      "example": "Am unu singur pix pe masă.",
+      "exampleMeaning": "I have one single pen on the table."
+    },
+    {
+      "word": "doi",
+      "reading": "doy",
+      "meaning": "two",
+      "example": "Am doi frați mai mici.",
+      "exampleMeaning": "I have two younger brothers."
+    },
+    {
+      "word": "trei",
+      "reading": "tray",
+      "meaning": "three",
+      "example": "În cameră sunt trei scaune.",
+      "exampleMeaning": "There are three chairs in the room."
+    },
+    {
+      "word": "patru",
+      "reading": "pah-troo",
+      "meaning": "four",
+      "example": "Ea cumpără patru mere.",
+      "exampleMeaning": "She buys four apples."
+    },
+    {
+      "word": "cinci",
+      "reading": "cheench",
+      "meaning": "five",
+      "example": "Autobuzul vine în cinci minute.",
+      "exampleMeaning": "The bus comes in five minutes."
+    },
+    {
+      "word": "șase",
+      "reading": "shah-seh",
+      "meaning": "six",
+      "example": "Avem șase cărți noi.",
+      "exampleMeaning": "We have six new books."
+    },
+    {
+      "word": "șapte",
+      "reading": "shap-teh",
+      "meaning": "seven",
+      "example": "Filmului îi dau șapte puncte.",
+      "exampleMeaning": "I give the movie seven points."
+    },
+    {
+      "word": "opt",
+      "reading": "opt",
+      "meaning": "eight",
+      "example": "La ora opt plec de acasă.",
+      "exampleMeaning": "At eight o’clock I leave home."
+    },
+    {
+      "word": "nouă",
+      "reading": "noh-wuh",
+      "meaning": "nine",
+      "example": "Sunt nouă elevi în clasă.",
+      "exampleMeaning": "There are nine students in the class."
+    },
+    {
+      "word": "zece",
+      "reading": "zeh-cheh",
+      "meaning": "ten",
+      "example": "Am zece lei în buzunar.",
+      "exampleMeaning": "I have ten lei in my pocket."
+    },
+    {
+      "word": "unsprezece",
+      "reading": "oons-preh-zeh-cheh",
+      "meaning": "eleven",
+      "example": "Trenul pleacă la unsprezece.",
+      "exampleMeaning": "The train leaves at eleven."
+    },
+    {
+      "word": "doisprezece",
+      "reading": "doys-preh-zeh-cheh",
+      "meaning": "twelve",
+      "example": "Numărul doisprezece este pe ușă.",
+      "exampleMeaning": "The number twelve is on the door."
+    },
+    {
+      "word": "cincisprezece",
+      "reading": "cheench-spreh-zeh-cheh",
+      "meaning": "fifteen",
+      "example": "Pauza durează cincisprezece minute.",
+      "exampleMeaning": "The break lasts fifteen minutes."
+    },
+    {
+      "word": "douăzeci",
+      "reading": "doh-wuh-zech",
+      "meaning": "twenty",
+      "example": "Biletul costă douăzeci de lei.",
+      "exampleMeaning": "The ticket costs twenty lei."
+    },
+    {
+      "word": "treizeci",
+      "reading": "tray-zech",
+      "meaning": "thirty",
+      "example": "Am treizeci de ani.",
+      "exampleMeaning": "I am thirty years old."
+    },
+    {
+      "word": "cincizeci",
+      "reading": "cheench-zech",
+      "meaning": "fifty",
+      "example": "Sunt cincizeci de pagini în caiet.",
+      "exampleMeaning": "There are fifty pages in the notebook."
+    },
+    {
+      "word": "optzeci",
+      "reading": "opt-zech",
+      "meaning": "eighty",
+      "example": "Bunicul are optzeci de ani.",
+      "exampleMeaning": "Grandfather is eighty years old."
+    },
+    {
+      "word": "o sută",
+      "reading": "oh soo-tuh",
+      "meaning": "one hundred",
+      "example": "O sută de oameni așteaptă în gară.",
+      "exampleMeaning": "One hundred people are waiting at the station."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "Biletul costă ___ de lei.",
+          "answer": "douăzeci",
+          "hint": "twenty"
+        },
+        {
+          "sentence": "La ora ___ plec de acasă.",
+          "answer": "opt",
+          "hint": "eight"
+        },
+        {
+          "sentence": "___ de oameni așteaptă în gară.",
+          "answer": "o sută",
+          "hint": "one hundred"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "items": [
+        {
+          "question": "What does 'șapte' mean?",
+          "options": [
+            "six",
+            "seven",
+            "eight",
+            "nine"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "How do you say 'eleven' in Romanian?",
+          "options": [
+            "unsprezece",
+            "doisprezece",
+            "cincisprezece",
+            "douăzeci"
+          ],
+          "answer": 0
+        },
+        {
+          "question": "What does 'cincizeci' mean?",
+          "options": [
+            "fifteen",
+            "thirty",
+            "fifty",
+            "eighty"
+          ],
+          "answer": 2
+        }
+      ]
+    }
+  ]
+}

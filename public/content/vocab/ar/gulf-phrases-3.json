@@ -1,0 +1,183 @@
+{
+  "id": "gulf-phrases-3",
+  "words": [
+    {
+      "word": "هَلَّا وَاللّٰه",
+      "reading": "hallā wallāh",
+      "meaning": "hello there! (Gulf warm greeting)",
+      "example": "هَلَّا وَاللّٰه، نَوَّرْتَنَا.",
+      "exampleMeaning": "Hello there, you brightened our place."
+    },
+    {
+      "word": "حَيَّاك اللّٰه",
+      "reading": "ḥayyāk allāh",
+      "meaning": "welcome / may God keep you (Gulf)",
+      "example": "حَيَّاك اللّٰه فِي بَيْتْنَا.",
+      "exampleMeaning": "Welcome to our home."
+    },
+    {
+      "word": "عَسَاك طَيِّب؟",
+      "reading": "ʿasāk ṭayyib?",
+      "meaning": "I hope you are well (Gulf; MSA: atamannā annaka bi-khayr)",
+      "example": "عَسَاك طَيِّب؟ مَا شُفْنَاكْ مِنْ زَمَانْ.",
+      "exampleMeaning": "Hope you are well? We have not seen you for a while."
+    },
+    {
+      "word": "أُمُورَك طَيِّبَة؟",
+      "reading": "umūrak ṭayyiba?",
+      "meaning": "are things okay? (Gulf)",
+      "example": "أُمُورَك طَيِّبَة؟ نِقْدَرْ نِسَاعِدَكْ؟",
+      "exampleMeaning": "Are things okay? Can we help you?"
+    },
+    {
+      "word": "تِمّ",
+      "reading": "timm",
+      "meaning": "okay / done (Gulf)",
+      "example": "تِمّ، أَرْسِلْ لِي الْمَوْقِعْ.",
+      "exampleMeaning": "Okay, send me the location."
+    },
+    {
+      "word": "أَبْشِر",
+      "reading": "abshir",
+      "meaning": "sure / consider it done (Gulf)",
+      "example": "أَبْشِر، بَخَلِّصْهَا الْيَوْمْ.",
+      "exampleMeaning": "Sure, I will finish it today."
+    },
+    {
+      "word": "مِبْ زِينْ",
+      "reading": "mib zēn",
+      "meaning": "not good (Gulf; MSA: laysa jayyidan)",
+      "example": "هَذَا الشُّغْل مِبْ زِينْ.",
+      "exampleMeaning": "This work is not good."
+    },
+    {
+      "word": "شُو السَّالْفَة؟",
+      "reading": "shū s-sālfa?",
+      "meaning": "what is the story / what happened? (Gulf)",
+      "example": "شُو السَّالْفَة؟ لِيشْ مُتْضَايِقْ؟",
+      "exampleMeaning": "What happened? Why are you upset?"
+    },
+    {
+      "word": "عَطْنِي خَبَر",
+      "reading": "ʿaṭnī khabar",
+      "meaning": "let me know (Gulf)",
+      "example": "عَطْنِي خَبَر إِذَا وَصَلْتْ.",
+      "exampleMeaning": "Let me know when you arrive."
+    },
+    {
+      "word": "عَلَى رَاحْتِك",
+      "reading": "ʿalā rāḥtik",
+      "meaning": "as you like / take your time (Gulf/all)",
+      "example": "خُذْ وَقْتَكْ، عَلَى رَاحْتِك.",
+      "exampleMeaning": "Take your time, as you like."
+    },
+    {
+      "word": "مَا يْخَالِفْ",
+      "reading": "mā ykhālif",
+      "meaning": "no problem / it is okay (Gulf)",
+      "example": "مَا يْخَالِفْ، نِجَرِّبْ مَرَّة ثَانْيَة.",
+      "exampleMeaning": "No problem, we will try another time."
+    },
+    {
+      "word": "تَوّ النَّاس",
+      "reading": "taww an-nās",
+      "meaning": "it is still early (Gulf)",
+      "example": "تَوّ النَّاس، الْمَشْوَارْ بَعْدَهْ بَدْرِي.",
+      "exampleMeaning": "It is still early; the outing is still early."
+    },
+    {
+      "word": "بَعْد شْوَي",
+      "reading": "baʿd shway",
+      "meaning": "after a little while (Gulf)",
+      "example": "بَعْد شْوَي بَرْجَعْ لَكْ.",
+      "exampleMeaning": "I will get back to you after a little while."
+    },
+    {
+      "word": "يَاللّٰه نِمْشِي",
+      "reading": "yallā nimshī",
+      "meaning": "let's go (Gulf)",
+      "example": "يَاللّٰه نِمْشِي قَبْلَ الزَّحْمَة.",
+      "exampleMeaning": "Let's go before the traffic."
+    },
+    {
+      "word": "عِنْدَك خَبَر؟",
+      "reading": "ʿindak khabar?",
+      "meaning": "do you know? (Gulf; literally: do you have news?)",
+      "example": "عِنْدَك خَبَر عَنِ الاجْتِمَاعْ؟",
+      "exampleMeaning": "Do you know about the meeting?"
+    },
+    {
+      "word": "مَاشِي حَالُه",
+      "reading": "māshī ḥāluh",
+      "meaning": "it is okay / passable (Gulf)",
+      "example": "مَاشِي حَالُه، بَسْ نَبِي أَحْسَنْ.",
+      "exampleMeaning": "It is okay, but we want better."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "___، نَوَّرْتَنَا.",
+          "answer": "هَلَّا وَاللّٰه",
+          "hint": "hello there"
+        },
+        {
+          "sentence": "___ فِي بَيْتْنَا.",
+          "answer": "حَيَّاك اللّٰه",
+          "hint": "welcome"
+        },
+        {
+          "sentence": "___ مَا شُفْنَاكْ مِنْ زَمَانْ.",
+          "answer": "عَسَاك طَيِّب؟",
+          "hint": "hope you are well"
+        },
+        {
+          "sentence": "___ نِقْدَرْ نِسَاعِدَكْ؟",
+          "answer": "أُمُورَك طَيِّبَة؟",
+          "hint": "are things okay?"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "items": [
+        {
+          "question": "What does ‘هَلَّا وَاللّٰه’ mean?",
+          "options": [
+            "welcome",
+            "hello there! (Gulf warm greeting)",
+            "are things okay?",
+            "okay / done"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What does ‘حَيَّاك اللّٰه’ mean?",
+          "options": [
+            "not good",
+            "welcome / may God keep you (Gulf)",
+            "let me know",
+            "no problem"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What does ‘عَسَاك طَيِّب؟’ mean?",
+          "options": [
+            "what happened?",
+            "I hope you are well (Gulf; MSA: atamannā annaka bi-khayr)",
+            "after a little while",
+            "let's go"
+          ],
+          "answer": 1
+        }
+      ]
+    }
+  ]
+}

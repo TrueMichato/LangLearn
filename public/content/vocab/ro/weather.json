@@ -1,0 +1,178 @@
+{
+  "id": "weather",
+  "words": [
+    {
+      "word": "vreme",
+      "reading": "vreh-meh",
+      "meaning": "weather",
+      "example": "Vorbim despre vreme înainte de excursie.",
+      "exampleMeaning": "We talk about the weather before the trip."
+    },
+    {
+      "word": "soare",
+      "reading": "swah-reh",
+      "meaning": "sun",
+      "example": "Stăm la soare dimineața.",
+      "exampleMeaning": "We sit in the sun in the morning."
+    },
+    {
+      "word": "ploaie",
+      "reading": "plwah-yeh",
+      "meaning": "rain",
+      "example": "O ploaie ușoară cade pe stradă.",
+      "exampleMeaning": "A light rain falls on the street."
+    },
+    {
+      "word": "ninsoare",
+      "reading": "neen-swah-reh",
+      "meaning": "snowfall",
+      "example": "O ninsoare liniștită acoperă orașul.",
+      "exampleMeaning": "A quiet snowfall covers the city."
+    },
+    {
+      "word": "vânt",
+      "reading": "vuhnt",
+      "meaning": "wind",
+      "example": "Un vânt puternic mișcă frunzele.",
+      "exampleMeaning": "A strong wind moves the leaves."
+    },
+    {
+      "word": "nor",
+      "reading": "nor",
+      "meaning": "cloud",
+      "example": "Un nor gri acoperă soarele.",
+      "exampleMeaning": "A gray cloud covers the sun."
+    },
+    {
+      "word": "furtună",
+      "reading": "foor-too-nuh",
+      "meaning": "storm",
+      "example": "O furtună vine dinspre munte.",
+      "exampleMeaning": "A storm comes from the mountain."
+    },
+    {
+      "word": "ceață",
+      "reading": "chah-tsuh",
+      "meaning": "fog",
+      "example": "Este ceață densă pe drum.",
+      "exampleMeaning": "There is dense fog on the road."
+    },
+    {
+      "word": "cald",
+      "reading": "kahld",
+      "meaning": "warm / hot",
+      "example": "Afară este cald vara.",
+      "exampleMeaning": "It is hot outside in summer."
+    },
+    {
+      "word": "frig",
+      "reading": "freeg",
+      "meaning": "cold",
+      "example": "Iarna este foarte frig.",
+      "exampleMeaning": "In winter it is very cold."
+    },
+    {
+      "word": "primăvară",
+      "reading": "pree-muh-vah-ruh",
+      "meaning": "spring",
+      "example": "În primăvară apar flori noi.",
+      "exampleMeaning": "In spring new flowers appear."
+    },
+    {
+      "word": "vară",
+      "reading": "vah-ruh",
+      "meaning": "summer",
+      "example": "În vară mergem la mare.",
+      "exampleMeaning": "In summer we go to the seaside."
+    },
+    {
+      "word": "toamnă",
+      "reading": "twahm-nuh",
+      "meaning": "autumn / fall",
+      "example": "În toamnă cad frunzele.",
+      "exampleMeaning": "In autumn the leaves fall."
+    },
+    {
+      "word": "iarnă",
+      "reading": "yahr-nuh",
+      "meaning": "winter",
+      "example": "În iarnă ninge la munte.",
+      "exampleMeaning": "In winter it snows in the mountains."
+    },
+    {
+      "word": "temperatură",
+      "reading": "tem-peh-rah-too-ruh",
+      "meaning": "temperature",
+      "example": "Temperatura scade seara.",
+      "exampleMeaning": "The temperature drops in the evening."
+    },
+    {
+      "word": "curcubeu",
+      "reading": "koor-koo-beh-oo",
+      "meaning": "rainbow",
+      "example": "Un curcubeu apare după ploaie.",
+      "exampleMeaning": "A rainbow appears after rain."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "Un ___ gri acoperă soarele.",
+          "answer": "nor",
+          "hint": "cloud"
+        },
+        {
+          "sentence": "În ___ mergem la mare.",
+          "answer": "vară",
+          "hint": "summer"
+        },
+        {
+          "sentence": "Un ___ apare după ploaie.",
+          "answer": "curcubeu",
+          "hint": "rainbow"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "items": [
+        {
+          "question": "What does 'ploaie' mean?",
+          "options": [
+            "snow",
+            "rain",
+            "wind",
+            "fog"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "How do you say 'winter' in Romanian?",
+          "options": [
+            "iarnă",
+            "vară",
+            "toamnă",
+            "primăvară"
+          ],
+          "answer": 0
+        },
+        {
+          "question": "What does 'furtună' mean?",
+          "options": [
+            "sun",
+            "cloud",
+            "storm",
+            "rainbow"
+          ],
+          "answer": 2
+        }
+      ]
+    }
+  ]
+}

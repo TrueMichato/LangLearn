@@ -1,0 +1,159 @@
+{
+  "id": "iraqi-health-pharmacy",
+  "words": [
+    {
+      "word": "دَاوَةْ",
+      "reading": "dāwa",
+      "meaning": "medicine",
+      "example": "أَنِي أَحْتَاجْ دَاوَةْ لِلزُّكَامْ.",
+      "exampleMeaning": "I need medicine for the cold."
+    },
+    {
+      "word": "صَيْدَلِيَّةْ",
+      "reading": "ṣēdaliyya",
+      "meaning": "pharmacy",
+      "example": "الصَّيْدَلِيَّةْ قَرِيبَةْ مِنَ الشَّارِعْ.",
+      "exampleMeaning": "The pharmacy is near the street."
+    },
+    {
+      "word": "رَاسِي يُوجَعْنِي",
+      "reading": "rāsī yūjaʿnī",
+      "meaning": "my head hurts",
+      "example": "رَاسِي يُوجَعْنِي مِنَ الصُّبُحْ.",
+      "exampleMeaning": "My head has hurt since morning."
+    },
+    {
+      "word": "بَطْنِي",
+      "reading": "baṭnī",
+      "meaning": "my stomach",
+      "example": "بَطْنِي مَا مُرْتَاحْ بَعْدَ الْأَكِلْ.",
+      "exampleMeaning": "My stomach is not well after eating."
+    },
+    {
+      "word": "حُمَّى",
+      "reading": "ḥumma",
+      "meaning": "fever",
+      "example": "عِنْدِي حُمَّى خَفِيفَةْ اللَّيْلَةْ.",
+      "exampleMeaning": "I have a slight fever tonight."
+    },
+    {
+      "word": "زُكَامْ",
+      "reading": "zukām",
+      "meaning": "cold",
+      "example": "الزُّكَامْ خَلَّانِي أَبْقَى بِالْبَيْتْ.",
+      "exampleMeaning": "The cold made me stay at home."
+    },
+    {
+      "word": "حَبَّةْ",
+      "reading": "ḥabba",
+      "meaning": "pill",
+      "example": "خُذْ حَبَّةْ بَعْدَ الْغَدَا.",
+      "exampleMeaning": "Take a pill after lunch."
+    },
+    {
+      "word": "شَرَابْ",
+      "reading": "sharāb",
+      "meaning": "syrup",
+      "example": "هَذَا الشَّرَابْ لِلسُّعَالْ.",
+      "exampleMeaning": "This syrup is for the cough."
+    },
+    {
+      "word": "ضَمَّادْ",
+      "reading": "ḍammād",
+      "meaning": "bandage",
+      "example": "حُطّْ ضَمَّادْ عَلَى الْجُرْحْ.",
+      "exampleMeaning": "Put a bandage on the wound."
+    },
+    {
+      "word": "مَوْعِدْ",
+      "reading": "mawʿid",
+      "meaning": "appointment",
+      "example": "عِنْدِي مَوْعِدْ عِنْدَ الدُّكْتُورْ بَاجِرْ.",
+      "exampleMeaning": "I have an appointment with the doctor tomorrow."
+    },
+    {
+      "word": "دُكْتُورْ",
+      "reading": "duktūr",
+      "meaning": "doctor",
+      "example": "الدُّكْتُورْ قَالْ اِرْتَاحْ يَوْمَيْنْ.",
+      "exampleMeaning": "The doctor said to rest for two days."
+    },
+    {
+      "word": "تَحْلِيلْ",
+      "reading": "taḥlīl",
+      "meaning": "lab test",
+      "example": "نِحْتَاجْ تَحْلِيلْ قَبْلَ الدَّاوَةْ.",
+      "exampleMeaning": "We need a lab test before the medicine."
+    },
+    {
+      "word": "إِبْرَةْ",
+      "reading": "ibra",
+      "meaning": "injection",
+      "example": "الْمُمَرِّضْ عَطَانِي إِبْرَةْ بِالْعِيَادَةْ.",
+      "exampleMeaning": "The nurse gave me an injection at the clinic."
+    },
+    {
+      "word": "أَنِي تَعْبَانْ",
+      "reading": "anī taʿbān",
+      "meaning": "I am sick / tired",
+      "example": "أَنِي تَعْبَانْ وَمَا أَكْدَرْ أَدَاوِمْ.",
+      "exampleMeaning": "I am sick and cannot go to work."
+    },
+    {
+      "word": "شْقَدْ الْجُرْعَة؟",
+      "reading": "shgad il-jurʿa?",
+      "meaning": "how much is the dose?",
+      "example": "شْقَدْ الْجُرْعَة؟ مَرَّةْ لَوْ مَرَّتَيْنْ؟",
+      "exampleMeaning": "How much is the dose? Once or twice?"
+    },
+    {
+      "word": "تِحَسَّنْتْ",
+      "reading": "tiḥassant",
+      "meaning": "I got better",
+      "example": "بَعْدَ الدَّاوَةْ تِحَسَّنْتْ شْوَيَّةْ.",
+      "exampleMeaning": "After the medicine I got a little better."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "أَنِي أَحْتَاجْ ___ لِلزُّكَامْ.",
+          "answer": "دَاوَةْ",
+          "hint": "medicine"
+        },
+        {
+          "sentence": "___ مِنَ الصُّبُحْ.",
+          "answer": "رَاسِي يُوجَعْنِي",
+          "hint": "my head hurts"
+        },
+        {
+          "sentence": "عِنْدِي ___ عِنْدَ الدُّكْتُورْ بَاجِرْ.",
+          "answer": "مَوْعِدْ",
+          "hint": "appointment"
+        },
+        {
+          "sentence": "___ وَمَا أَكْدَرْ أَدَاوِمْ.",
+          "answer": "أَنِي تَعْبَانْ",
+          "hint": "I am sick"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "In Iraqi Arabic, what does ‘شْقَدْ الْجُرْعَة؟’ ask?",
+      "options": [
+        "how much is the dose?",
+        "where is the pharmacy?",
+        "my stomach hurts",
+        "I got better"
+      ],
+      "answer": 0
+    }
+  ]
+}

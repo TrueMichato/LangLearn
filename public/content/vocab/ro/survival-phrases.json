@@ -1,0 +1,36 @@
+{
+  "id": "survival-phrases",
+  "words": [
+    { "word": "unde e toaleta", "reading": "OON-deh yeh twah-LEH-tah", "meaning": "where is the toilet", "example": "Scuzați-mă, unde e toaleta?", "exampleMeaning": "Excuse me, where is the toilet?" },
+    { "word": "cât costă biletul", "reading": "kuht KOS-tuh bee-LEH-tool", "meaning": "how much is the ticket", "example": "Cât costă biletul până la Cluj?", "exampleMeaning": "How much is the ticket to Cluj?" },
+    { "word": "un bilet, vă rog", "reading": "oon bee-LET vuh ROG", "meaning": "one ticket, please", "example": "Un bilet până la Brașov, vă rog.", "exampleMeaning": "One ticket to Brașov, please." },
+    { "word": "cum ajung la", "reading": "koom ah-ZHOONG lah", "meaning": "how do I get to", "example": "Cum ajung la gară?", "exampleMeaning": "How do I get to the train station?" },
+    { "word": "la stânga", "reading": "lah STUHN-gah", "meaning": "to the left", "example": "Faceți la stânga la semafor.", "exampleMeaning": "Turn left at the traffic light." },
+    { "word": "la dreapta", "reading": "lah DRYAP-tah", "meaning": "to the right", "example": "Magazinul este la dreapta.", "exampleMeaning": "The shop is on the right." },
+    { "word": "drept înainte", "reading": "drept uh-nah-EEN-teh", "meaning": "straight ahead", "example": "Mergeți drept înainte două străzi.", "exampleMeaning": "Go straight ahead for two streets." },
+    { "word": "aveți camere libere", "reading": "ah-VETS KAH-meh-reh LEE-beh-reh", "meaning": "do you have rooms available", "example": "Bună ziua, aveți camere libere?", "exampleMeaning": "Hello, do you have any rooms available?" },
+    { "word": "o masă pentru doi", "reading": "oh MAH-suh PEN-troo doy", "meaning": "a table for two", "example": "O masă pentru doi, vă rog.", "exampleMeaning": "A table for two, please." },
+    { "word": "nota, vă rog", "reading": "NOH-tah vuh ROG", "meaning": "the bill, please", "example": "Am terminat. Nota, vă rog!", "exampleMeaning": "We're finished. The bill, please!" },
+    { "word": "sunt vegetarian", "reading": "soont veh-jeh-tah-ree-AN", "meaning": "I am a vegetarian", "example": "Sunt vegetarian, nu mănânc carne.", "exampleMeaning": "I'm a vegetarian, I don't eat meat." },
+    { "word": "acceptați cărți de credit", "reading": "ak-chep-TATS kuhrts deh CREH-deet", "meaning": "do you accept credit cards", "example": "Acceptați cărți de credit?", "exampleMeaning": "Do you accept credit cards?" },
+    { "word": "unde este un bancomat", "reading": "OON-deh YES-teh oon ban-ko-MAT", "meaning": "where is an ATM", "example": "Unde este un bancomat prin apropiere?", "exampleMeaning": "Where is an ATM nearby?" },
+    { "word": "m-am rătăcit", "reading": "mahm ruh-tuh-CHEET", "meaning": "I am lost", "example": "Mă puteți ajuta? M-am rătăcit.", "exampleMeaning": "Can you help me? I'm lost." },
+    { "word": "e o urgență", "reading": "yeh oh oor-JEN-tsuh", "meaning": "it is an emergency", "example": "Sunați la ambulanță, e o urgență!", "exampleMeaning": "Call an ambulance, it's an emergency!" },
+    { "word": "am nevoie de un doctor", "reading": "ahm neh-VOY-eh deh oon dok-TOR", "meaning": "I need a doctor", "example": "Am nevoie de un doctor urgent.", "exampleMeaning": "I need a doctor urgently." },
+    { "word": "sunt bolnav", "reading": "soont bol-NAV", "meaning": "I am sick", "example": "Nu mă simt bine, sunt bolnav.", "exampleMeaning": "I don't feel well, I'm sick." },
+    { "word": "chem poliția", "reading": "kem po-LEE-tsyah", "meaning": "I am calling the police", "example": "Dacă nu plecați, chem poliția.", "exampleMeaning": "If you don't leave, I'll call the police." }
+  ],
+  "exercises": [
+    { "type": "match", "pairs": 5 },
+    { "type": "fill-blank", "items": [
+      { "sentence": "Scuzați-mă, unde e ___?", "answer": "toaleta", "hint": "toilet" },
+      { "sentence": "Cum ___ la gară?", "answer": "ajung", "hint": "do I get / I arrive" },
+      { "sentence": "Faceți la ___ la semafor.", "answer": "stânga", "hint": "left" }
+    ]},
+    { "type": "multiple-choice", "items": [
+      { "question": "How do you say 'I'm lost' in Romanian?", "options": ["Sunt bolnav", "M-am rătăcit", "E o urgență", "Nota, vă rog"], "answer": 1 },
+      { "question": "What does 'la dreapta' mean?", "options": ["to the left", "straight ahead", "to the right", "at the corner"], "answer": 2 },
+      { "question": "Which phrase asks for a table for two?", "options": ["Aveți camere libere?", "O masă pentru doi, vă rog", "Un bilet, vă rog", "Cât costă biletul?"], "answer": 1 }
+    ]}
+  ]
+}

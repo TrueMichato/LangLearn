@@ -31,3 +31,6 @@ infra/push-worker/vapid.json
 # .impeccable/config.json and .impeccable/critique/ committed; ignore machine-local/transient state.
 .impeccable/config.local.json
 .impeccable/hook.cache.json
+
+# Playwright MCP test artifacts
+.playwright-mcp/

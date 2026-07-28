@@ -1,0 +1,159 @@
+{
+  "id": "gemstones-jewelry",
+  "words": [
+    {
+      "word": "الْيَاقُوتُ",
+      "reading": "al-yāqūt",
+      "meaning": "ruby",
+      "example": "يَزْدَادُ لَمَعَانُ الْيَاقُوتِ فِي الضَّوْءِ.",
+      "exampleMeaning": "The ruby’s shine increases in the light."
+    },
+    {
+      "word": "الزُّمُرُّدُ",
+      "reading": "az-zumurrud",
+      "meaning": "emerald",
+      "example": "يَحْمِلُ الزُّمُرُّدُ لَوْنًا أَخْضَرَ عَمِيقًا.",
+      "exampleMeaning": "The emerald carries a deep green color."
+    },
+    {
+      "word": "الأَلْمَاسُ",
+      "reading": "al-almās",
+      "meaning": "diamond",
+      "example": "يَلْمَعُ الأَلْمَاسُ تَحْتَ الضَّوْءِ.",
+      "exampleMeaning": "The diamond sparkles under the light."
+    },
+    {
+      "word": "اللُّؤْلُؤُ",
+      "reading": "al-luʾluʾ",
+      "meaning": "pearls",
+      "example": "تَنْتَظِمُ حَبَّاتُ اللُّؤْلُؤِ فِي قِلَادَةٍ نَاعِمَةٍ.",
+      "exampleMeaning": "Pearls are arranged in a delicate necklace."
+    },
+    {
+      "word": "الْعَقِيقُ",
+      "reading": "al-ʿaqīq",
+      "meaning": "agate",
+      "example": "يَظْهَرُ الْعَقِيقُ بِخُطُوطٍ مُتَدَرِّجَةٍ.",
+      "exampleMeaning": "Agate appears with layered lines."
+    },
+    {
+      "word": "الْفَيْرُوزُ",
+      "reading": "al-fayrūz",
+      "meaning": "turquoise",
+      "example": "يُزَيِّنُ الْفَيْرُوزُ خَاتَمًا فِضِّيًّا.",
+      "exampleMeaning": "Turquoise decorates a silver ring."
+    },
+    {
+      "word": "الْجَوْهَرَةُ",
+      "reading": "al-jawhara",
+      "meaning": "gem",
+      "example": "فَحَصَ الصَّائِغُ الْجَوْهَرَةَ بِعِنَايَةٍ.",
+      "exampleMeaning": "The jeweler examined the gem carefully."
+    },
+    {
+      "word": "الْقِلَادَةُ",
+      "reading": "al-qilāda",
+      "meaning": "necklace",
+      "example": "تَلْمَعُ الْقِلَادَةُ فَوْقَ الثَّوْبِ الأَسْوَدِ.",
+      "exampleMeaning": "The necklace shines over the black dress."
+    },
+    {
+      "word": "الْخَاتَمُ",
+      "reading": "al-khātam",
+      "meaning": "ring",
+      "example": "وَضَعَتِ الْخَاتَمَ فِي عُلْبَةٍ صَغِيرَةٍ.",
+      "exampleMeaning": "She put the ring in a small box."
+    },
+    {
+      "word": "السِّوَارُ",
+      "reading": "as-siwār",
+      "meaning": "bracelet",
+      "example": "صَنَعَتِ الْحِرَفِيَّةُ السِّوَارَ مِنَ الْفِضَّةِ.",
+      "exampleMeaning": "The craftswoman made the bracelet from silver."
+    },
+    {
+      "word": "الْقُرْطُ",
+      "reading": "al-qurṭ",
+      "meaning": "earring",
+      "example": "يَتَدَلَّى الْقُرْطُ قُرْبَ الْخَدِّ.",
+      "exampleMeaning": "The earring hangs near the cheek."
+    },
+    {
+      "word": "الصَّائِغُ",
+      "reading": "aṣ-ṣāʾigh",
+      "meaning": "jeweler",
+      "example": "يُصْلِحُ الصَّائِغُ الْمِشْبَكَ الْمَكْسُورَ.",
+      "exampleMeaning": "The jeweler repairs the broken clasp."
+    },
+    {
+      "word": "الصِّيَاغَةُ",
+      "reading": "aṣ-ṣiyāgha",
+      "meaning": "jewelry making",
+      "example": "تَتَطَلَّبُ الصِّيَاغَةُ صَبْرًا وَدِقَّةً.",
+      "exampleMeaning": "Jewelry making requires patience and precision."
+    },
+    {
+      "word": "النَّقْشُ",
+      "reading": "an-naqsh",
+      "meaning": "engraving",
+      "example": "يُضِيفُ النَّقْشُ اسْمًا صَغِيرًا إِلَى الْخَاتَمِ.",
+      "exampleMeaning": "The engraving adds a small name to the ring."
+    },
+    {
+      "word": "اللَّمَعَانُ",
+      "reading": "al-lamaʿān",
+      "meaning": "sparkle",
+      "example": "يَجْذِبُ اللَّمَعَانُ عُيُونَ الزُّوَّارِ.",
+      "exampleMeaning": "The sparkle attracts the visitors’ eyes."
+    },
+    {
+      "word": "الْقِيرَاطُ",
+      "reading": "al-qīrāṭ",
+      "meaning": "carat",
+      "example": "يَقِيسُ الْقِيرَاطُ وَزْنَ الْحَجَرِ الْكَرِيمِ.",
+      "exampleMeaning": "The carat measures the weight of the gemstone."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "يَحْمِلُ ___ لَوْنًا أَخْضَرَ عَمِيقًا.",
+          "answer": "الزُّمُرُّدُ",
+          "hint": "emerald"
+        },
+        {
+          "sentence": "يَلْمَعُ ___ تَحْتَ الضَّوْءِ.",
+          "answer": "الأَلْمَاسُ",
+          "hint": "diamond"
+        },
+        {
+          "sentence": "تَتَطَلَّبُ ___ صَبْرًا وَدِقَّةً.",
+          "answer": "الصِّيَاغَةُ",
+          "hint": "jewelry making"
+        },
+        {
+          "sentence": "يَقِيسُ ___ وَزْنَ الْحَجَرِ الْكَرِيمِ.",
+          "answer": "الْقِيرَاطُ",
+          "hint": "carat"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "What does ‘الْفَيْرُوزُ’ mean?",
+      "options": [
+        "turquoise",
+        "bracelet",
+        "engraving",
+        "carat"
+      ],
+      "answer": 0
+    }
+  ]
+}

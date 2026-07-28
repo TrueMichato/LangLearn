@@ -1,0 +1,178 @@
+{
+  "id": "nationalities",
+  "words": [
+    {
+      "word": "România",
+      "reading": "ro-muh-nee-ah",
+      "meaning": "Romania",
+      "example": "În România, oamenii vorbesc limba română.",
+      "exampleMeaning": "In Romania, people speak the Romanian language."
+    },
+    {
+      "word": "Franța",
+      "reading": "fran-tsa",
+      "meaning": "France",
+      "example": "În Franța, mulți oameni vorbesc limba franceză.",
+      "exampleMeaning": "In France, many people speak the French language."
+    },
+    {
+      "word": "Germania",
+      "reading": "jer-mah-nee-ah",
+      "meaning": "Germany",
+      "example": "În Germania, Anna vorbește nemțește la serviciu.",
+      "exampleMeaning": "In Germany, Anna speaks German at work."
+    },
+    {
+      "word": "Anglia",
+      "reading": "ahn-glee-ah",
+      "meaning": "England",
+      "example": "În Anglia, copiii învață limba engleză.",
+      "exampleMeaning": "In England, children learn the English language."
+    },
+    {
+      "word": "Italia",
+      "reading": "ee-tah-lee-ah",
+      "meaning": "Italy",
+      "example": "În Italia, se vorbește italienește.",
+      "exampleMeaning": "In Italy, Italian is spoken."
+    },
+    {
+      "word": "Spania",
+      "reading": "spah-nee-ah",
+      "meaning": "Spain",
+      "example": "În Spania, prietenul meu vorbește spaniolește.",
+      "exampleMeaning": "In Spain, my friend speaks Spanish."
+    },
+    {
+      "word": "Ungaria",
+      "reading": "oon-gah-ree-ah",
+      "meaning": "Hungary",
+      "example": "În Ungaria, se vorbește limba maghiară.",
+      "exampleMeaning": "In Hungary, the Hungarian language is spoken."
+    },
+    {
+      "word": "Rusia",
+      "reading": "roo-see-ah",
+      "meaning": "Russia",
+      "example": "În Rusia, oamenii vorbesc rusește.",
+      "exampleMeaning": "In Russia, people speak Russian."
+    },
+    {
+      "word": "român/română",
+      "reading": "ro-muhn / ro-muh-nuh",
+      "meaning": "Romanian (male/female)",
+      "example": "El este român, iar ea este română; amândoi vorbesc românește.",
+      "exampleMeaning": "He is Romanian, and she is Romanian; both speak Romanian."
+    },
+    {
+      "word": "francez/franceză",
+      "reading": "fran-chez / fran-cheh-zuh",
+      "meaning": "French (male/female)",
+      "example": "El este francez, iar ea este franceză și vorbește franțuzește.",
+      "exampleMeaning": "He is French, and she is French and speaks French."
+    },
+    {
+      "word": "german/germană",
+      "reading": "jer-man / jer-mah-nuh",
+      "meaning": "German (male/female)",
+      "example": "Un coleg german și o colegă germană vorbesc nemțește.",
+      "exampleMeaning": "A German male colleague and a German female colleague speak German."
+    },
+    {
+      "word": "englez/engleză",
+      "reading": "en-glez / en-gleh-zuh",
+      "meaning": "English (male/female)",
+      "example": "El este englez, iar ea este engleză și vorbește englezește.",
+      "exampleMeaning": "He is English, and she is English and speaks English."
+    },
+    {
+      "word": "italian/italiană",
+      "reading": "ee-tah-lee-an / ee-tah-lee-ah-nuh",
+      "meaning": "Italian (male/female)",
+      "example": "Prietenul italian și prietena italiană vorbesc italienește.",
+      "exampleMeaning": "The Italian male friend and the Italian female friend speak Italian."
+    },
+    {
+      "word": "spaniol/spaniolă",
+      "reading": "spah-nyol / spah-nyo-luh",
+      "meaning": "Spanish (male/female)",
+      "example": "Un turist spaniol și o turistă spaniolă vorbesc spaniolește.",
+      "exampleMeaning": "A Spanish male tourist and a Spanish female tourist speak Spanish."
+    },
+    {
+      "word": "ungur/maghiară",
+      "reading": "oon-goor / mahg-hee-ah-ruh",
+      "meaning": "Hungarian (male / language or feminine adjective)",
+      "example": "El este ungur, iar ea vorbește limba maghiară.",
+      "exampleMeaning": "He is Hungarian, and she speaks the Hungarian language."
+    },
+    {
+      "word": "rus/rusă",
+      "reading": "roos / roo-suh",
+      "meaning": "Russian (male/female)",
+      "example": "El este rus, iar ea este rusă și vorbește rusește.",
+      "exampleMeaning": "He is Russian, and she is Russian and speaks Russian."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "În ___, oamenii vorbesc românește.",
+          "answer": "România",
+          "hint": "Romania"
+        },
+        {
+          "sentence": "În ___, se vorbește limba maghiară.",
+          "answer": "Ungaria",
+          "hint": "Hungary"
+        },
+        {
+          "sentence": "În ___, oamenii vorbesc rusește.",
+          "answer": "Rusia",
+          "hint": "Russia"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "items": [
+        {
+          "question": "What does 'Franța' mean?",
+          "options": [
+            "France",
+            "Germany",
+            "Spain",
+            "Russia"
+          ],
+          "answer": 0
+        },
+        {
+          "question": "How do you say 'German (male/female)' in Romanian?",
+          "options": [
+            "german/germană",
+            "englez/engleză",
+            "italian/italiană",
+            "rus/rusă"
+          ],
+          "answer": 0
+        },
+        {
+          "question": "What does 'spaniol/spaniolă' mean?",
+          "options": [
+            "Romanian",
+            "French",
+            "Spanish",
+            "Hungarian"
+          ],
+          "answer": 2
+        }
+      ]
+    }
+  ]
+}

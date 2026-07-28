@@ -1,0 +1,159 @@
+{
+  "id": "physics-forces-energy",
+  "words": [
+    {
+      "word": "عِلْمُ الْفِيزِيَاءِ",
+      "reading": "ʿilm al-fīziyāʾ",
+      "meaning": "physics",
+      "example": "يَشْرَحُ عِلْمُ الْفِيزِيَاءِ حَرَكَةَ الْأَجْسَامِ.",
+      "exampleMeaning": "Physics explains the motion of bodies."
+    },
+    {
+      "word": "قُوَّةٌ",
+      "reading": "quwwa",
+      "meaning": "force",
+      "example": "تُغَيِّرُ الْقُوَّةُ سُرْعَةَ الْجِسْمِ.",
+      "exampleMeaning": "Force changes the speed of an object."
+    },
+    {
+      "word": "حَرَكَةٌ",
+      "reading": "ḥaraka",
+      "meaning": "motion",
+      "example": "تَبْدَأُ الْحَرَكَةُ عِنْدَمَا تَتَغَيَّرُ الْمَسَافَةُ.",
+      "exampleMeaning": "Motion begins when distance changes."
+    },
+    {
+      "word": "سُرْعَةٌ",
+      "reading": "surʿa",
+      "meaning": "speed",
+      "example": "قَاسَ الطَّالِبُ سُرْعَةَ الْعَرَبَةِ.",
+      "exampleMeaning": "The student measured the cart's speed."
+    },
+    {
+      "word": "تَسَارُعٌ",
+      "reading": "tasāruʿ",
+      "meaning": "acceleration",
+      "example": "يَزْدَادُ التَّسَارُعُ مَعَ قُوَّةٍ أَكْبَرَ.",
+      "exampleMeaning": "Acceleration increases with a greater force."
+    },
+    {
+      "word": "كَتْلَةٌ",
+      "reading": "katla",
+      "meaning": "mass",
+      "example": "لِلْكُرَةِ كَتْلَةٌ مَعْرُوفَةٌ.",
+      "exampleMeaning": "The ball has a known mass."
+    },
+    {
+      "word": "طَاقَةٌ",
+      "reading": "ṭāqa",
+      "meaning": "energy",
+      "example": "تَحْتَفِظُ الْبَطَّارِيَّةُ بِطَاقَةٍ كِيمِيَائِيَّةٍ.",
+      "exampleMeaning": "The battery stores chemical energy."
+    },
+    {
+      "word": "شُغْلٌ",
+      "reading": "shughl",
+      "meaning": "work",
+      "example": "يُحْسَبُ الشُّغْلُ مِنَ الْقُوَّةِ وَالْمَسَافَةِ.",
+      "exampleMeaning": "Work is calculated from force and distance."
+    },
+    {
+      "word": "قُدْرَةٌ",
+      "reading": "qudra",
+      "meaning": "power",
+      "example": "تَقِيسُ الْقُدْرَةُ سُرْعَةَ بَذْلِ الشُّغْلِ.",
+      "exampleMeaning": "Power measures the rate of doing work."
+    },
+    {
+      "word": "جَاذِبِيَّةٌ",
+      "reading": "jādhibiyya",
+      "meaning": "gravity",
+      "example": "تَجْذِبُ الْجَاذِبِيَّةُ الْأَجْسَامَ نَحْوَ الْأَرْضِ.",
+      "exampleMeaning": "Gravity pulls objects toward the earth."
+    },
+    {
+      "word": "اِحْتِكَاكٌ",
+      "reading": "iḥtikāk",
+      "meaning": "friction",
+      "example": "يُبْطِئُ الِاحْتِكَاكُ حَرَكَةَ الصُّنْدُوقِ.",
+      "exampleMeaning": "Friction slows the box's motion."
+    },
+    {
+      "word": "زَخْمٌ",
+      "reading": "zakhm",
+      "meaning": "momentum",
+      "example": "يَزْدَادُ الزَّخْمُ مَعَ السُّرْعَةِ وَالْكَتْلَةِ.",
+      "exampleMeaning": "Momentum increases with speed and mass."
+    },
+    {
+      "word": "مَوْجَةٌ",
+      "reading": "mawja",
+      "meaning": "wave",
+      "example": "تَنْتَقِلُ الْمَوْجَةُ عَبْرَ الْمَاءِ.",
+      "exampleMeaning": "The wave travels through water."
+    },
+    {
+      "word": "تَرَدُّدٌ",
+      "reading": "taraddud",
+      "meaning": "frequency",
+      "example": "يُقَاسُ التَّرَدُّدُ بِالْهِرْتْزِ.",
+      "exampleMeaning": "Frequency is measured in hertz."
+    },
+    {
+      "word": "ضَغْطٌ",
+      "reading": "ḍaghṭ",
+      "meaning": "pressure",
+      "example": "يَزْدَادُ الضَّغْطُ عِنْدَمَا تَصْغُرُ الْمِسَاحَةُ.",
+      "exampleMeaning": "Pressure increases when the area becomes smaller."
+    },
+    {
+      "word": "دَارَةٌ كَهْرَبَائِيَّةٌ",
+      "reading": "dāra kahrabāʾiyya",
+      "meaning": "electric circuit",
+      "example": "أَغْلَقَتِ الطَّالِبَةُ دَارَةً كَهْرَبَائِيَّةً بَسِيطَةً.",
+      "exampleMeaning": "The student closed a simple electric circuit."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "___ تُغَيِّرُ سُرْعَةَ الْجِسْمِ.",
+          "answer": "قُوَّةٌ",
+          "hint": "force"
+        },
+        {
+          "sentence": "___ هِيَ مُعَدَّلُ تَغَيُّرِ السُّرْعَةِ.",
+          "answer": "تَسَارُعٌ",
+          "hint": "acceleration"
+        },
+        {
+          "sentence": "___ تَجْذِبُ الْأَجْسَامَ نَحْوَ الْأَرْضِ.",
+          "answer": "جَاذِبِيَّةٌ",
+          "hint": "gravity"
+        },
+        {
+          "sentence": "___ تَسْمَحُ بِمُرُورِ التَّيَّارِ.",
+          "answer": "دَارَةٌ كَهْرَبَائِيَّةٌ",
+          "hint": "electric circuit"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "What does ‘زَخْمٌ’ mean in physics?",
+      "options": [
+        "momentum",
+        "pressure",
+        "frequency",
+        "mass"
+      ],
+      "answer": 0
+    }
+  ]
+}

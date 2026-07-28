@@ -1,0 +1,178 @@
+{
+  "id": "cooking",
+  "words": [
+    {
+      "word": "bucătărie",
+      "reading": "boo-kuh-tuh-ree-eh",
+      "meaning": "kitchen",
+      "example": "O bucătărie curată inspiră gătitul.",
+      "exampleMeaning": "A clean kitchen inspires cooking."
+    },
+    {
+      "word": "rețetă",
+      "reading": "reh-tseh-tuh",
+      "meaning": "recipe",
+      "example": "O rețetă simplă folosește ingrediente locale.",
+      "exampleMeaning": "A simple recipe uses local ingredients."
+    },
+    {
+      "word": "ingredient",
+      "reading": "een-greh-dee-ent",
+      "meaning": "ingredient",
+      "example": "Un ingredient proaspăt schimbă gustul.",
+      "exampleMeaning": "A fresh ingredient changes the taste."
+    },
+    {
+      "word": "oală",
+      "reading": "wah-luh",
+      "meaning": "pot",
+      "example": "O oală mare fierbe pe aragaz.",
+      "exampleMeaning": "A large pot boils on the stove."
+    },
+    {
+      "word": "tigaie",
+      "reading": "tee-gahy-eh",
+      "meaning": "pan",
+      "example": "O tigaie încinsă prăjește legumele.",
+      "exampleMeaning": "A hot pan fries the vegetables."
+    },
+    {
+      "word": "cuptor",
+      "reading": "koop-tor",
+      "meaning": "oven",
+      "example": "Un cuptor coace pâinea încet.",
+      "exampleMeaning": "An oven bakes the bread slowly."
+    },
+    {
+      "word": "cuțit",
+      "reading": "koo-tseet",
+      "meaning": "knife",
+      "example": "Un cuțit bun taie roșiile ușor.",
+      "exampleMeaning": "A good knife cuts tomatoes easily."
+    },
+    {
+      "word": "tocător",
+      "reading": "toh-kuh-tor",
+      "meaning": "cutting board",
+      "example": "Pun ceapa pe tocător.",
+      "exampleMeaning": "I put the onion on the cutting board."
+    },
+    {
+      "word": "lingură",
+      "reading": "leen-goo-ruh",
+      "meaning": "spoon",
+      "example": "Amestec supa cu lingură.",
+      "exampleMeaning": "I stir the soup with a spoon."
+    },
+    {
+      "word": "furculiță",
+      "reading": "foor-koo-lee-tsuh",
+      "meaning": "fork",
+      "example": "Folosesc furculiță pentru salată.",
+      "exampleMeaning": "I use a fork for the salad."
+    },
+    {
+      "word": "a fierbe",
+      "reading": "ah fyehr-beh",
+      "meaning": "to boil",
+      "example": "Verbul a fierbe apare des în rețete.",
+      "exampleMeaning": "The verb to boil appears often in recipes."
+    },
+    {
+      "word": "a prăji",
+      "reading": "ah pruh-zhee",
+      "meaning": "to fry",
+      "example": "Verbul a prăji cere atenție la ulei.",
+      "exampleMeaning": "The verb to fry requires attention to the oil."
+    },
+    {
+      "word": "a coace",
+      "reading": "ah kwah-cheh",
+      "meaning": "to bake",
+      "example": "Verbul a coace se folosește pentru pâine.",
+      "exampleMeaning": "The verb to bake is used for bread."
+    },
+    {
+      "word": "a tăia",
+      "reading": "ah tuh-yah",
+      "meaning": "to cut",
+      "example": "Verbul a tăia este util în bucătărie.",
+      "exampleMeaning": "The verb to cut is useful in the kitchen."
+    },
+    {
+      "word": "gust",
+      "reading": "goost",
+      "meaning": "taste",
+      "example": "Un gust echilibrat face mâncarea bună.",
+      "exampleMeaning": "A balanced taste makes the food good."
+    },
+    {
+      "word": "miros",
+      "reading": "mee-ros",
+      "meaning": "smell",
+      "example": "Un miros de pâine umple casa.",
+      "exampleMeaning": "A smell of bread fills the house."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "Pun ceapa pe ___.",
+          "answer": "tocător",
+          "hint": "cutting board"
+        },
+        {
+          "sentence": "Amestec supa cu ___.",
+          "answer": "lingură",
+          "hint": "spoon"
+        },
+        {
+          "sentence": "Un ___ de pâine umple casa.",
+          "answer": "miros",
+          "hint": "smell"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "items": [
+        {
+          "question": "What does 'tigaie' mean?",
+          "options": [
+            "pot",
+            "pan",
+            "oven",
+            "knife"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "How do you say 'recipe' in Romanian?",
+          "options": [
+            "rețetă",
+            "ingredient",
+            "gust",
+            "tocător"
+          ],
+          "answer": 0
+        },
+        {
+          "question": "What does 'cuptor' mean?",
+          "options": [
+            "fork",
+            "spoon",
+            "oven",
+            "kitchen"
+          ],
+          "answer": 2
+        }
+      ]
+    }
+  ]
+}

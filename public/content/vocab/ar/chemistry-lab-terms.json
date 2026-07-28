@@ -1,0 +1,159 @@
+{
+  "id": "chemistry-lab-terms",
+  "words": [
+    {
+      "word": "عِلْمُ الْكِيمِيَاءِ",
+      "reading": "ʿilm al-kīmiyāʾ",
+      "meaning": "chemistry",
+      "example": "يُفَسِّرُ عِلْمُ الْكِيمِيَاءِ تَغَيُّرَ الْمَوَادِّ.",
+      "exampleMeaning": "Chemistry explains the change of substances."
+    },
+    {
+      "word": "مُخْتَبَرٌ",
+      "reading": "mukhtabar",
+      "meaning": "laboratory",
+      "example": "يَعْمَلُ الطَّالِبُ فِي مُخْتَبَرٍ آمِنٍ.",
+      "exampleMeaning": "The student works in a safe laboratory."
+    },
+    {
+      "word": "عُنْصُرٌ",
+      "reading": "ʿunṣur",
+      "meaning": "element",
+      "example": "الْأُكْسِجِينُ عُنْصُرٌ ضَرُورِيٌّ لِلْحَيَاةِ.",
+      "exampleMeaning": "Oxygen is an element necessary for life."
+    },
+    {
+      "word": "مُرَكَّبٌ",
+      "reading": "murakkab",
+      "meaning": "compound",
+      "example": "الْمَاءُ مُرَكَّبٌ مِنْ هِيدْرُوجِينٍ وَأُكْسِجِينٍ.",
+      "exampleMeaning": "Water is a compound of hydrogen and oxygen."
+    },
+    {
+      "word": "ذَرَّةٌ",
+      "reading": "dharra",
+      "meaning": "atom",
+      "example": "تَحْمِلُ الذَّرَّةُ شُحْنَاتٍ صَغِيرَةً.",
+      "exampleMeaning": "The atom carries small charges."
+    },
+    {
+      "word": "جُزَيْءٌ",
+      "reading": "juzayʾ",
+      "meaning": "molecule",
+      "example": "يَتَكَوَّنُ جُزَيْءُ الْمَاءِ مِنْ ثَلَاثِ ذَرَّاتٍ.",
+      "exampleMeaning": "A water molecule consists of three atoms."
+    },
+    {
+      "word": "تَفَاعُلٌ",
+      "reading": "tafāʿul",
+      "meaning": "reaction",
+      "example": "أَنْتَجَ التَّفَاعُلُ حَرَارَةً وَضَوْءًا.",
+      "exampleMeaning": "The reaction produced heat and light."
+    },
+    {
+      "word": "مَحْلُولٌ",
+      "reading": "maḥlūl",
+      "meaning": "solution",
+      "example": "حَرَّكَتِ الْعَالِمَةُ مَحْلُولًا مِلْحِيًّا.",
+      "exampleMeaning": "The scientist stirred a saline solution."
+    },
+    {
+      "word": "حَمْضٌ",
+      "reading": "ḥamḍ",
+      "meaning": "acid",
+      "example": "يَتَفَاعَلُ الْحَمْضُ مَعَ الْمَعْدِنِ بِسُرْعَةٍ.",
+      "exampleMeaning": "The acid reacts quickly with the metal."
+    },
+    {
+      "word": "قَاعِدَةٌ",
+      "reading": "qāʿida",
+      "meaning": "base",
+      "example": "تُعَادِلُ الْقَاعِدَةُ بَعْضَ الْأَحْمَاضِ.",
+      "exampleMeaning": "A base neutralizes some acids."
+    },
+    {
+      "word": "مَادَّةٌ حَافِزَةٌ",
+      "reading": "mādda ḥāfiza",
+      "meaning": "catalyst",
+      "example": "تُسَرِّعُ مَادَّةٌ حَافِزَةٌ سَيْرَ التَّفَاعُلِ.",
+      "exampleMeaning": "A catalyst speeds up the reaction."
+    },
+    {
+      "word": "رَاسِبٌ",
+      "reading": "rāsib",
+      "meaning": "precipitate",
+      "example": "ظَهَرَ رَاسِبٌ أَبْيَضُ فِي الْقَاعِ.",
+      "exampleMeaning": "A white precipitate appeared at the bottom."
+    },
+    {
+      "word": "اِنْصِهَارٌ",
+      "reading": "inṣihār",
+      "meaning": "melting",
+      "example": "يَحْدُثُ اِنْصِهَارُ الْجَلِيدِ عِنْدَ الصِّفْرِ.",
+      "exampleMeaning": "Ice melts at zero degrees."
+    },
+    {
+      "word": "تَبَخُّرٌ",
+      "reading": "tabakhkhur",
+      "meaning": "evaporation",
+      "example": "يَزْدَادُ تَبَخُّرُ الْمَاءِ مَعَ الْحَرَارَةِ.",
+      "exampleMeaning": "Water evaporation increases with heat."
+    },
+    {
+      "word": "قِيَاسُ الْحُمُوضَةِ",
+      "reading": "qiyās al-ḥumūḍa",
+      "meaning": "pH measurement",
+      "example": "يَكْشِفُ قِيَاسُ الْحُمُوضَةِ قُوَّةَ الْحَمْضِ.",
+      "exampleMeaning": "pH measurement reveals the strength of the acid."
+    },
+    {
+      "word": "أُنْبُوبُ اِخْتِبَارٍ",
+      "reading": "unbūb ikhtibār",
+      "meaning": "test tube",
+      "example": "وَضَعَتِ الْبَاحِثَةُ الْعَيِّنَةَ فِي أُنْبُوبِ اِخْتِبَارٍ.",
+      "exampleMeaning": "The researcher placed the sample in a test tube."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "___ يَدْرُسُ تَغَيُّرَ الْمَوَادِّ.",
+          "answer": "عِلْمُ الْكِيمِيَاءِ",
+          "hint": "chemistry"
+        },
+        {
+          "sentence": "___ جِسْمٌ صَغِيرٌ مِنَ الْمَادَّةِ.",
+          "answer": "ذَرَّةٌ",
+          "hint": "atom"
+        },
+        {
+          "sentence": "___ مَزِيجٌ مُتَجَانِسٌ.",
+          "answer": "مَحْلُولٌ",
+          "hint": "solution"
+        },
+        {
+          "sentence": "___ أَدَاةٌ زُجَاجِيَّةٌ صَغِيرَةٌ.",
+          "answer": "أُنْبُوبُ اِخْتِبَارٍ",
+          "hint": "test tube"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "What does ‘مَادَّةٌ حَافِزَةٌ’ mean?",
+      "options": [
+        "catalyst",
+        "precipitate",
+        "acid",
+        "solution"
+      ],
+      "answer": 0
+    }
+  ]
+}

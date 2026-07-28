@@ -1,0 +1,159 @@
+{
+  "id": "biology-cells-genetics",
+  "words": [
+    {
+      "word": "عِلْمُ الْأَحْيَاءِ",
+      "reading": "ʿilm al-aḥyāʾ",
+      "meaning": "biology",
+      "example": "يَدْرُسُ عِلْمُ الْأَحْيَاءِ الْكَائِنَاتِ الْحَيَّةَ.",
+      "exampleMeaning": "Biology studies living organisms."
+    },
+    {
+      "word": "خَلِيَّةٌ",
+      "reading": "khaliyya",
+      "meaning": "cell",
+      "example": "الْخَلِيَّةُ وَحْدَةُ الْبِنَاءِ فِي الْجِسْمِ.",
+      "exampleMeaning": "The cell is the unit of structure in the body."
+    },
+    {
+      "word": "نَوَاةٌ",
+      "reading": "nawāh",
+      "meaning": "nucleus",
+      "example": "تَحْفَظُ النَّوَاةُ مَعْلُومَاتِ الْخَلِيَّةِ.",
+      "exampleMeaning": "The nucleus stores the cell's information."
+    },
+    {
+      "word": "غِشَاءٌ خَلَوِيٌّ",
+      "reading": "ghishāʾ khalawī",
+      "meaning": "cell membrane",
+      "example": "يَحْمِي غِشَاءٌ خَلَوِيٌّ مَحْتَوَى الْخَلِيَّةِ.",
+      "exampleMeaning": "A cell membrane protects the cell's contents."
+    },
+    {
+      "word": "سِيتُوبْلَازْمَا",
+      "reading": "sītūblāzmā",
+      "meaning": "cytoplasm",
+      "example": "تَسْبَحُ الْعُضَيَّاتُ فِي السِّيتُوبْلَازْمَا.",
+      "exampleMeaning": "Organelles float in the cytoplasm."
+    },
+    {
+      "word": "حَمْضٌ نَوَوِيٌّ",
+      "reading": "ḥamḍ nawawī",
+      "meaning": "nucleic acid",
+      "example": "يَحْمِلُ حَمْضٌ نَوَوِيٌّ شَفْرَةً وِرَاثِيَّةً.",
+      "exampleMeaning": "A nucleic acid carries a genetic code."
+    },
+    {
+      "word": "جِينٌ",
+      "reading": "jīn",
+      "meaning": "gene",
+      "example": "يُؤَثِّرُ جِينٌ وَاحِدٌ فِي لَوْنِ الْعَيْنِ.",
+      "exampleMeaning": "One gene affects eye color."
+    },
+    {
+      "word": "كُرُومُوسُومٌ",
+      "reading": "kurūmūsūm",
+      "meaning": "chromosome",
+      "example": "يَحْمِلُ الْكُرُومُوسُومُ عَدَدًا مِنَ الْجِينَاتِ.",
+      "exampleMeaning": "The chromosome carries a number of genes."
+    },
+    {
+      "word": "وِرَاثَةٌ",
+      "reading": "wirātha",
+      "meaning": "heredity",
+      "example": "تُفَسِّرُ الْوِرَاثَةُ انْتِقَالَ الصِّفَاتِ.",
+      "exampleMeaning": "Heredity explains the transfer of traits."
+    },
+    {
+      "word": "طَفْرَةٌ",
+      "reading": "ṭafra",
+      "meaning": "mutation",
+      "example": "قَدْ تُغَيِّرُ الطَّفْرَةُ شَكْلَ الْبُرُوتِينِ.",
+      "exampleMeaning": "A mutation may change the shape of a protein."
+    },
+    {
+      "word": "بُرُوتِينٌ",
+      "reading": "burūtīn",
+      "meaning": "protein",
+      "example": "يَبْنِي الْجِسْمُ بُرُوتِينًا جَدِيدًا بَعْدَ التَّمْرِينِ.",
+      "exampleMeaning": "The body builds new protein after exercise."
+    },
+    {
+      "word": "إِنْزِيمٌ",
+      "reading": "inzīm",
+      "meaning": "enzyme",
+      "example": "يُسَرِّعُ إِنْزِيمٌ صَغِيرٌ هَذَا التَّفَاعُلَ.",
+      "exampleMeaning": "A small enzyme speeds up this reaction."
+    },
+    {
+      "word": "تَمْثِيلٌ ضَوْئِيٌّ",
+      "reading": "tamthīl ḍawʾī",
+      "meaning": "photosynthesis",
+      "example": "تَسْتَخْدِمُ النَّبَاتَاتُ تَمْثِيلًا ضَوْئِيًّا لِصُنْعِ السُّكَّرِ.",
+      "exampleMeaning": "Plants use photosynthesis to make sugar."
+    },
+    {
+      "word": "تَنَفُّسٌ خَلَوِيٌّ",
+      "reading": "tanaffus khalawī",
+      "meaning": "cellular respiration",
+      "example": "يُطْلِقُ تَنَفُّسٌ خَلَوِيٌّ طَاقَةً مِنَ الْغِذَاءِ.",
+      "exampleMeaning": "Cellular respiration releases energy from food."
+    },
+    {
+      "word": "بَكْتِيرْيَا",
+      "reading": "baktīriyā",
+      "meaning": "bacteria",
+      "example": "تَعِيشُ بَكْتِيرْيَا نَافِعَةٌ فِي الْأَمْعَاءِ.",
+      "exampleMeaning": "Beneficial bacteria live in the intestines."
+    },
+    {
+      "word": "مِجْهَرٌ",
+      "reading": "mijhar",
+      "meaning": "microscope",
+      "example": "رَأَى الطَّالِبُ الْخَلِيَّةَ بِمِجْهَرٍ حَدِيثٍ.",
+      "exampleMeaning": "The student saw the cell with a modern microscope."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "___ وَحْدَةُ الْبِنَاءِ فِي الْجِسْمِ.",
+          "answer": "خَلِيَّةٌ",
+          "hint": "cell"
+        },
+        {
+          "sentence": "___ يَحْمِلُ شَفْرَةً وِرَاثِيَّةً.",
+          "answer": "حَمْضٌ نَوَوِيٌّ",
+          "hint": "nucleic acid"
+        },
+        {
+          "sentence": "___ قَدْ تُغَيِّرُ شَكْلَ الْبُرُوتِينِ.",
+          "answer": "طَفْرَةٌ",
+          "hint": "mutation"
+        },
+        {
+          "sentence": "___ أَدَاةٌ لِرُؤْيَةِ الْخَلَايَا.",
+          "answer": "مِجْهَرٌ",
+          "hint": "microscope"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "What does ‘تَمْثِيلٌ ضَوْئِيٌّ’ mean?",
+      "options": [
+        "photosynthesis",
+        "mutation",
+        "cell membrane",
+        "enzyme"
+      ],
+      "answer": 0
+    }
+  ]
+}

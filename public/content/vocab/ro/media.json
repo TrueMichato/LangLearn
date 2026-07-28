@@ -1,0 +1,178 @@
+{
+  "id": "media",
+  "words": [
+    {
+      "word": "știre",
+      "reading": "shtee-reh",
+      "meaning": "news item",
+      "example": "O știre importantă apare pe site.",
+      "exampleMeaning": "An important news item appears on the site."
+    },
+    {
+      "word": "ziar",
+      "reading": "zee-ahr",
+      "meaning": "newspaper",
+      "example": "Un ziar local publică interviul.",
+      "exampleMeaning": "A local newspaper publishes the interview."
+    },
+    {
+      "word": "revistă",
+      "reading": "reh-vees-tuh",
+      "meaning": "magazine",
+      "example": "O revistă culturală are fotografii bune.",
+      "exampleMeaning": "A cultural magazine has good photos."
+    },
+    {
+      "word": "televiziune",
+      "reading": "teh-leh-vee-zee-oo-neh",
+      "meaning": "television",
+      "example": "Televiziunea publică transmite dezbaterea.",
+      "exampleMeaning": "Public television broadcasts the debate."
+    },
+    {
+      "word": "radio",
+      "reading": "rah-dee-oh",
+      "meaning": "radio",
+      "example": "Radioul difuzează muzică dimineața.",
+      "exampleMeaning": "The radio broadcasts music in the morning."
+    },
+    {
+      "word": "jurnalist",
+      "reading": "zhoor-nah-leest",
+      "meaning": "journalist",
+      "example": "Un jurnalist verifică sursele.",
+      "exampleMeaning": "A journalist checks the sources."
+    },
+    {
+      "word": "reportaj",
+      "reading": "reh-por-tahzh",
+      "meaning": "report / feature story",
+      "example": "Un reportaj despre sat atrage atenția.",
+      "exampleMeaning": "A report about the village attracts attention."
+    },
+    {
+      "word": "interviu",
+      "reading": "een-tehr-vee-oo",
+      "meaning": "interview",
+      "example": "Un interviu cu medicul este clar.",
+      "exampleMeaning": "An interview with the doctor is clear."
+    },
+    {
+      "word": "articol",
+      "reading": "ahr-tee-kol",
+      "meaning": "article",
+      "example": "Un articol explică schimbarea legii.",
+      "exampleMeaning": "An article explains the change in the law."
+    },
+    {
+      "word": "titlu",
+      "reading": "teet-loo",
+      "meaning": "headline / title",
+      "example": "Un titlu scurt atrage cititorii.",
+      "exampleMeaning": "A short headline attracts readers."
+    },
+    {
+      "word": "sursă",
+      "reading": "soor-suh",
+      "meaning": "source",
+      "example": "O sursă credibilă confirmă informația.",
+      "exampleMeaning": "A credible source confirms the information."
+    },
+    {
+      "word": "public",
+      "reading": "poo-bleek",
+      "meaning": "audience / public",
+      "example": "Un public numeros urmărește emisiunea.",
+      "exampleMeaning": "A large audience follows the show."
+    },
+    {
+      "word": "emisiune",
+      "reading": "eh-mee-see-oo-neh",
+      "meaning": "show / broadcast",
+      "example": "O emisiune începe la prânz.",
+      "exampleMeaning": "A show begins at noon."
+    },
+    {
+      "word": "transmisiune",
+      "reading": "trahns-mee-see-oo-neh",
+      "meaning": "broadcast / transmission",
+      "example": "O transmisiune live are sunet bun.",
+      "exampleMeaning": "A live broadcast has good sound."
+    },
+    {
+      "word": "publicitate",
+      "reading": "poo-blee-chee-tah-teh",
+      "meaning": "advertising",
+      "example": "Publicitatea online costă mai puțin.",
+      "exampleMeaning": "Online advertising costs less."
+    },
+    {
+      "word": "opinie",
+      "reading": "oh-pee-nee-eh",
+      "meaning": "opinion",
+      "example": "O opinie personală trebuie marcată clar.",
+      "exampleMeaning": "A personal opinion must be clearly marked."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "Un ___ verifică sursele.",
+          "answer": "jurnalist",
+          "hint": "journalist"
+        },
+        {
+          "sentence": "Un ___ scurt atrage cititorii.",
+          "answer": "titlu",
+          "hint": "headline"
+        },
+        {
+          "sentence": "O ___ credibilă confirmă informația.",
+          "answer": "sursă",
+          "hint": "source"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "items": [
+        {
+          "question": "What does 'ziar' mean?",
+          "options": [
+            "magazine",
+            "newspaper",
+            "radio",
+            "article"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "How do you say 'advertising' in Romanian?",
+          "options": [
+            "publicitate",
+            "emisiune",
+            "transmisiune",
+            "reportaj"
+          ],
+          "answer": 0
+        },
+        {
+          "question": "What does 'știre' mean?",
+          "options": [
+            "interview",
+            "source",
+            "news item",
+            "audience"
+          ],
+          "answer": 2
+        }
+      ]
+    }
+  ]
+}

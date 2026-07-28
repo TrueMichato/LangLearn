@@ -1,0 +1,183 @@
+{
+  "id": "construction-building",
+  "words": [
+    {
+      "word": "بِنَاءٌ",
+      "reading": "bināʾun",
+      "meaning": "building / construction",
+      "example": "بِنَاءٌ مُتِينٌ يَحْتَاجُ إِلَى أَسَاسٍ قَوِيٍّ.",
+      "exampleMeaning": "Solid construction needs a strong foundation."
+    },
+    {
+      "word": "وَرْشَةٌ",
+      "reading": "warshatun",
+      "meaning": "worksite / workshop",
+      "example": "وَرْشَةٌ نَشِيطَةٌ تَبْدَأُ عِنْدَ السَّابِعَةِ.",
+      "exampleMeaning": "A busy worksite starts at seven."
+    },
+    {
+      "word": "مُقَاوِلٌ",
+      "reading": "muqāwilun",
+      "meaning": "contractor",
+      "example": "مُقَاوِلٌ أَمِينٌ يُسَلِّمُ الْمَشْرُوعَ فِي مَوْعِدِهِ.",
+      "exampleMeaning": "An honest contractor delivers the project on time."
+    },
+    {
+      "word": "مِعْمَارِيٌّ",
+      "reading": "miʿmāriyyun",
+      "meaning": "architect",
+      "example": "مِعْمَارِيٌّ مُبْدِعٌ رَسَمَ وَاجِهَةً جَمِيلَةً.",
+      "exampleMeaning": "A creative architect drew a beautiful facade."
+    },
+    {
+      "word": "أَسَاسٌ",
+      "reading": "ʾasāsun",
+      "meaning": "foundation",
+      "example": "فَحَصَ الْمُهَنْدِسُ أَسَاسَ الْمَبْنَى بِعِنَايَةٍ.",
+      "exampleMeaning": "The engineer examined the building foundation carefully."
+    },
+    {
+      "word": "جِدَارٌ",
+      "reading": "jidārun",
+      "meaning": "wall",
+      "example": "بَنَى الْعُمَّالُ جِدَارًا جَدِيدًا حَوْلَ الْحَدِيقَةِ.",
+      "exampleMeaning": "The workers built a new wall around the garden."
+    },
+    {
+      "word": "سَقْفٌ",
+      "reading": "saqfun",
+      "meaning": "roof / ceiling",
+      "example": "يَمْنَعُ السَّقْفُ الْمَطَرَ مِنَ الدُّخُولِ.",
+      "exampleMeaning": "The roof prevents rain from entering."
+    },
+    {
+      "word": "عَمُودٌ",
+      "reading": "ʿamūdun",
+      "meaning": "pillar / column",
+      "example": "يَحْمِلُ عَمُودٌ ضَخْمٌ جُزْءًا مِنَ السَّقْفِ.",
+      "exampleMeaning": "A huge column supports part of the roof."
+    },
+    {
+      "word": "إِسْمَنْتٌ",
+      "reading": "ʾismantun",
+      "meaning": "cement",
+      "example": "خَلَطَ الْعَامِلُ إِسْمَنْتًا مَعَ الرَّمْلِ.",
+      "exampleMeaning": "The worker mixed cement with sand."
+    },
+    {
+      "word": "خَرَسَانَةٌ",
+      "reading": "kharasānatun",
+      "meaning": "concrete",
+      "example": "تَحْتَاجُ الْقَاعِدَةُ إِلَى خَرَسَانَةٍ قَوِيَّةٍ.",
+      "exampleMeaning": "The base needs strong concrete."
+    },
+    {
+      "word": "طُوبٌ",
+      "reading": "ṭūbun",
+      "meaning": "bricks",
+      "example": "رَصَّ الْبَنَّاءُ طُوبًا أَحْمَرَ فَوْقَ بَعْضِهِ.",
+      "exampleMeaning": "The mason stacked red bricks one over another."
+    },
+    {
+      "word": "سَقَّالَةٌ",
+      "reading": "saqqālatun",
+      "meaning": "scaffold",
+      "example": "صَعِدَ الدَّهَّانُ عَلَى سَقَّالَةٍ آمِنَةٍ.",
+      "exampleMeaning": "The painter climbed onto a safe scaffold."
+    },
+    {
+      "word": "حَفَّارَةٌ",
+      "reading": "ḥaffāratun",
+      "meaning": "excavator",
+      "example": "حَفَرَتْ حَفَّارَةٌ كَبِيرَةٌ مَكَانَ الْأَسَاسِ.",
+      "exampleMeaning": "A large excavator dug the place for the foundation."
+    },
+    {
+      "word": "مُخَطَّطٌ",
+      "reading": "mukhaṭṭaṭun",
+      "meaning": "blueprint / plan",
+      "example": "يُرَاجِعُ الْمِعْمَارِيُّ مُخَطَّطًا قَبْلَ الْبِنَاءِ.",
+      "exampleMeaning": "The architect reviews a plan before construction."
+    },
+    {
+      "word": "تَصْرِيحٌ",
+      "reading": "taṣrīḥun",
+      "meaning": "permit",
+      "example": "طَلَبَ الْمُقَاوِلُ تَصْرِيحًا مِنَ الْبَلَدِيَّةِ.",
+      "exampleMeaning": "The contractor requested a permit from the municipality."
+    },
+    {
+      "word": "رَافِعَةٌ",
+      "reading": "rāfiʿatun",
+      "meaning": "crane",
+      "example": "رَفَعَتْ رَافِعَةٌ حَدِيدًا إِلَى الطَّابِقِ الْعَاشِرِ.",
+      "exampleMeaning": "A crane lifted steel to the tenth floor."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "___ مُتِينٌ يَحْتَاجُ إِلَى أَسَاسٍ قَوِيٍّ.",
+          "answer": "بِنَاءٌ",
+          "hint": "building / construction"
+        },
+        {
+          "sentence": "___ نَشِيطَةٌ تَبْدَأُ عِنْدَ السَّابِعَةِ.",
+          "answer": "وَرْشَةٌ",
+          "hint": "worksite / workshop"
+        },
+        {
+          "sentence": "___ أَمِينٌ يُسَلِّمُ الْمَشْرُوعَ فِي مَوْعِدِهِ.",
+          "answer": "مُقَاوِلٌ",
+          "hint": "contractor"
+        },
+        {
+          "sentence": "___ مُبْدِعٌ رَسَمَ وَاجِهَةً جَمِيلَةً.",
+          "answer": "مِعْمَارِيٌّ",
+          "hint": "architect"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "items": [
+        {
+          "question": "What does ‘بِنَاءٌ’ mean?",
+          "options": [
+            "worksite / workshop",
+            "building / construction",
+            "contractor",
+            "architect"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What does ‘وَرْشَةٌ’ mean?",
+          "options": [
+            "contractor",
+            "worksite / workshop",
+            "architect",
+            "foundation"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What does ‘مُقَاوِلٌ’ mean?",
+          "options": [
+            "architect",
+            "contractor",
+            "foundation",
+            "wall"
+          ],
+          "answer": 1
+        }
+      ]
+    }
+  ]
+}

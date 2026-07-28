@@ -1,0 +1,183 @@
+{
+  "id": "clothing",
+  "words": [
+    {
+      "word": "قَمِيصٌ",
+      "reading": "qamīṣun",
+      "meaning": "shirt",
+      "example": "قَمِيصٌ أَبْيَضُ فِي الْخِزَانَةِ.",
+      "exampleMeaning": "A white shirt is in the closet."
+    },
+    {
+      "word": "بِنْطَالٌ",
+      "reading": "binṭālun",
+      "meaning": "pants",
+      "example": "بِنْطَالٌ أَزْرَقُ عَلَى الْكُرْسِيِّ.",
+      "exampleMeaning": "Blue pants are on the chair."
+    },
+    {
+      "word": "فُسْتَانٌ",
+      "reading": "fustānun",
+      "meaning": "dress",
+      "example": "فُسْتَانٌ جَمِيلٌ لِلْحَفْلَةِ.",
+      "exampleMeaning": "A beautiful dress for the party."
+    },
+    {
+      "word": "تَنُّورَةٌ",
+      "reading": "tannūratun",
+      "meaning": "skirt",
+      "example": "تَنُّورَةٌ قَصِيرَةٌ فِي الْمَتْجَرِ.",
+      "exampleMeaning": "A short skirt is in the store."
+    },
+    {
+      "word": "حِذَاءٌ",
+      "reading": "ḥidhāʾun",
+      "meaning": "shoe",
+      "example": "الْحِذَاءُ جَدِيدٌ وَمُرِيحٌ.",
+      "exampleMeaning": "The shoe is new and comfortable."
+    },
+    {
+      "word": "جَوْرَبٌ",
+      "reading": "jawrabun",
+      "meaning": "sock",
+      "example": "الْجَوْرَبُ نَظِيفٌ.",
+      "exampleMeaning": "The sock is clean."
+    },
+    {
+      "word": "مِعْطَفٌ",
+      "reading": "miʿṭafun",
+      "meaning": "coat",
+      "example": "الْمِعْطَفُ دَافِئٌ فِي الشِّتَاءِ.",
+      "exampleMeaning": "The coat is warm in winter."
+    },
+    {
+      "word": "قُبَّعَةٌ",
+      "reading": "qubbaʿatun",
+      "meaning": "hat",
+      "example": "الْقُبَّعَةُ فَوْقَ الرَّأْسِ.",
+      "exampleMeaning": "The hat is on the head."
+    },
+    {
+      "word": "حِزَامٌ",
+      "reading": "ḥizāmun",
+      "meaning": "belt",
+      "example": "الْحِزَامُ أَسْوَدُ.",
+      "exampleMeaning": "The belt is black."
+    },
+    {
+      "word": "حَقِيبَةٌ",
+      "reading": "ḥaqībatun",
+      "meaning": "bag",
+      "example": "الْحَقِيبَةُ خَفِيفَةٌ.",
+      "exampleMeaning": "The bag is light."
+    },
+    {
+      "word": "نَظَّارَةٌ",
+      "reading": "naẓẓāratun",
+      "meaning": "glasses",
+      "example": "النَّظَّارَةُ عَلَى الْوَجْهِ.",
+      "exampleMeaning": "The glasses are on the face."
+    },
+    {
+      "word": "سَاعَةٌ",
+      "reading": "sāʿatun",
+      "meaning": "watch",
+      "example": "السَّاعَةُ فِي يَدِي.",
+      "exampleMeaning": "The watch is on my hand."
+    },
+    {
+      "word": "خَاتَمٌ",
+      "reading": "khātamun",
+      "meaning": "ring",
+      "example": "الْخَاتَمُ فِضِّيٌّ.",
+      "exampleMeaning": "The ring is silver."
+    },
+    {
+      "word": "وِشَاحٌ",
+      "reading": "wishāḥun",
+      "meaning": "scarf",
+      "example": "الْوِشَاحُ دَافِئٌ.",
+      "exampleMeaning": "The scarf is warm."
+    },
+    {
+      "word": "مَلَابِسُ",
+      "reading": "malābisu",
+      "meaning": "clothes",
+      "example": "الْمَلَابِسُ فِي الْغَسَّالَةِ.",
+      "exampleMeaning": "The clothes are in the washing machine."
+    },
+    {
+      "word": "مِظَلَّةٌ",
+      "reading": "miẓallatun",
+      "meaning": "umbrella",
+      "example": "الْمِظَلَّةُ مَعِي فِي الْمَطَرِ.",
+      "exampleMeaning": "The umbrella is with me in the rain."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "___ أَبْيَضُ فِي الْخِزَانَةِ.",
+          "answer": "قَمِيصٌ",
+          "hint": "shirt"
+        },
+        {
+          "sentence": "___ أَزْرَقُ عَلَى الْكُرْسِيِّ.",
+          "answer": "بِنْطَالٌ",
+          "hint": "pants"
+        },
+        {
+          "sentence": "___ جَمِيلٌ لِلْحَفْلَةِ.",
+          "answer": "فُسْتَانٌ",
+          "hint": "dress"
+        },
+        {
+          "sentence": "___ قَصِيرَةٌ فِي الْمَتْجَرِ.",
+          "answer": "تَنُّورَةٌ",
+          "hint": "skirt"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "items": [
+        {
+          "question": "What does ‘قَمِيصٌ’ mean?",
+          "options": [
+            "pants",
+            "shirt",
+            "dress",
+            "skirt"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What does ‘بِنْطَالٌ’ mean?",
+          "options": [
+            "dress",
+            "pants",
+            "skirt",
+            "shoe"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What does ‘فُسْتَانٌ’ mean?",
+          "options": [
+            "skirt",
+            "dress",
+            "shoe",
+            "sock"
+          ],
+          "answer": 1
+        }
+      ]
+    }
+  ]
+}

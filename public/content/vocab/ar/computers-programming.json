@@ -1,0 +1,183 @@
+{
+  "id": "computers-programming",
+  "words": [
+    {
+      "word": "حَاسُوبٌ",
+      "reading": "ḥāsūbun",
+      "meaning": "computer",
+      "example": "اِشْتَرَى الطَّالِبُ حَاسُوبًا مَحْمُولًا.",
+      "exampleMeaning": "The student bought a laptop computer."
+    },
+    {
+      "word": "نِظَامُ التَّشْغِيلِ",
+      "reading": "niẓāmu t-tashghīli",
+      "meaning": "operating system",
+      "example": "يُحَدِّثُ الْمُهَنْدِسُ نِظَامَ التَّشْغِيلِ قَبْلَ اللِّقَاءِ.",
+      "exampleMeaning": "The engineer updates the operating system before the meeting."
+    },
+    {
+      "word": "بَرْمَجِيَّةٌ",
+      "reading": "barmajiyyatun",
+      "meaning": "software",
+      "example": "تَحْتَاجُ الشَّرِكَةُ إِلَى بَرْمَجِيَّةٍ آمِنَةٍ.",
+      "exampleMeaning": "The company needs secure software."
+    },
+    {
+      "word": "شِفْرَةٌ",
+      "reading": "shifratun",
+      "meaning": "code",
+      "example": "رَاجَعَتْ هِنْدٌ شِفْرَةً قَصِيرَةً.",
+      "exampleMeaning": "Hind reviewed a short piece of code."
+    },
+    {
+      "word": "خَوَارِزْمِيَّةٌ",
+      "reading": "khawārizmiyyatun",
+      "meaning": "algorithm",
+      "example": "تُرَتِّبُ الْخَوَارِزْمِيَّةُ النَّتَائِجَ بِسُرْعَةٍ.",
+      "exampleMeaning": "The algorithm sorts the results quickly."
+    },
+    {
+      "word": "مُتَغَيِّرٌ",
+      "reading": "mutaghayyirun",
+      "meaning": "variable",
+      "example": "يَحْمِلُ الْمُتَغَيِّرُ قِيمَةً جَدِيدَةً.",
+      "exampleMeaning": "The variable holds a new value."
+    },
+    {
+      "word": "دَالَّةٌ",
+      "reading": "dāllatun",
+      "meaning": "function",
+      "example": "تُعِيدُ الدَّالَّةُ نَتِيجَةً وَاضِحَةً.",
+      "exampleMeaning": "The function returns a clear result."
+    },
+    {
+      "word": "قَاعِدَةُ بَيَانَاتٍ",
+      "reading": "qāʿidatu bayānātin",
+      "meaning": "database",
+      "example": "تَحْفَظُ قَاعِدَةُ بَيَانَاتٍ سِجِلَّاتِ الْمُسْتَخْدِمِينَ.",
+      "exampleMeaning": "A database stores user records."
+    },
+    {
+      "word": "خَادِمٌ",
+      "reading": "khādimun",
+      "meaning": "server",
+      "example": "يُرْسِلُ الْخَادِمُ رَدًّا إِلَى الْمُتَصَفِّحِ.",
+      "exampleMeaning": "The server sends a response to the browser."
+    },
+    {
+      "word": "وَاجِهَةُ بَرْمَجَةِ التَّطْبِيقَاتِ",
+      "reading": "wājihatu barmajati t-taṭbīqāti",
+      "meaning": "application programming interface (API)",
+      "example": "تُوَفِّرُ وَاجِهَةُ بَرْمَجَةِ التَّطْبِيقَاتِ بَيَانَاتٍ مُحَدَّثَةً.",
+      "exampleMeaning": "The API provides updated data."
+    },
+    {
+      "word": "مُسْتَوْدَعٌ",
+      "reading": "mustawdaʿun",
+      "meaning": "repository",
+      "example": "يَحْتَوِي الْمُسْتَوْدَعُ عَلَى مِلَفَّاتِ الْمَشْرُوعِ.",
+      "exampleMeaning": "The repository contains the project files."
+    },
+    {
+      "word": "فَرْعٌ",
+      "reading": "farʿun",
+      "meaning": "branch",
+      "example": "أَنْشَأَتِ الْمُطَوِّرَةُ فَرْعًا جَدِيدًا لِلتَّجْرِبَةِ.",
+      "exampleMeaning": "The developer created a new branch for testing."
+    },
+    {
+      "word": "اِلْتِزَامٌ",
+      "reading": "iltizāmun",
+      "meaning": "commit",
+      "example": "كَتَبَ سَامِي رِسَالَةَ اِلْتِزَامٍ وَاضِحَةً.",
+      "exampleMeaning": "Sami wrote a clear commit message."
+    },
+    {
+      "word": "تَصْحِيحُ الْأَخْطَاءِ",
+      "reading": "taṣḥīḥu l-ʾakhṭāʾi",
+      "meaning": "debugging",
+      "example": "يَسْتَغْرِقُ تَصْحِيحُ الْأَخْطَاءِ وَقْتًا طَوِيلًا.",
+      "exampleMeaning": "Debugging takes a long time."
+    },
+    {
+      "word": "تَشْفِيرٌ",
+      "reading": "tashfīrun",
+      "meaning": "encryption",
+      "example": "يَحْمِي التَّشْفِيرُ الْمَعْلُومَاتِ الْحَسَّاسَةَ.",
+      "exampleMeaning": "Encryption protects sensitive information."
+    },
+    {
+      "word": "ذَكَاءٌ اِصْطِنَاعِيٌّ",
+      "reading": "dhakāʾun iṣṭināʿiyyun",
+      "meaning": "artificial intelligence",
+      "example": "يُسَاعِدُ ذَكَاءٌ اِصْطِنَاعِيٌّ فِي تَحْلِيلِ الصُّوَرِ.",
+      "exampleMeaning": "Artificial intelligence helps analyze images."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "هٰذَا ___ جَدِيدٌ.",
+          "answer": "حَاسُوبٌ",
+          "hint": "computer"
+        },
+        {
+          "sentence": "هٰذِهِ ___ صَعْبَةٌ.",
+          "answer": "خَوَارِزْمِيَّةٌ",
+          "hint": "algorithm"
+        },
+        {
+          "sentence": "هٰذِهِ ___ نَظِيفَةٌ.",
+          "answer": "شِفْرَةٌ",
+          "hint": "code"
+        },
+        {
+          "sentence": "يَحْمِي ___ الْمَلَفَّاتِ.",
+          "answer": "تَشْفِيرٌ",
+          "hint": "encryption"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "items": [
+        {
+          "question": "What does ‘مُتَغَيِّرٌ’ mean?",
+          "options": [
+            "server",
+            "variable",
+            "database",
+            "branch"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What does ‘قَاعِدَةُ بَيَانَاتٍ’ mean?",
+          "options": [
+            "software",
+            "function",
+            "database",
+            "commit"
+          ],
+          "answer": 2
+        },
+        {
+          "question": "What does ‘تَصْحِيحُ الْأَخْطَاءِ’ mean?",
+          "options": [
+            "debugging",
+            "encryption",
+            "repository",
+            "API"
+          ],
+          "answer": 0
+        }
+      ]
+    }
+  ]
+}

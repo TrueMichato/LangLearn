@@ -1,0 +1,183 @@
+{
+  "id": "dates-calendar",
+  "words": [
+    {
+      "word": "التَّارِيخُ",
+      "reading": "at-tārīkhu",
+      "meaning": "date",
+      "example": "التَّارِيخُ مَكْتُوبٌ فِي أَعْلَى الصَّفْحَةِ.",
+      "exampleMeaning": "The date is written at the top of the page."
+    },
+    {
+      "word": "التَّقْوِيمُ",
+      "reading": "at-taqwīmu",
+      "meaning": "calendar",
+      "example": "التَّقْوِيمُ مُعَلَّقٌ عَلَى الحَائِطِ.",
+      "exampleMeaning": "The calendar is hanging on the wall."
+    },
+    {
+      "word": "اليَوْمُ",
+      "reading": "al-yawmu",
+      "meaning": "day / today",
+      "example": "اليَوْمُ مُنَاسِبٌ لِلزِّيَارَةِ.",
+      "exampleMeaning": "Today is suitable for a visit."
+    },
+    {
+      "word": "الأُسْبُوعُ",
+      "reading": "al-ʾusbūʿu",
+      "meaning": "week",
+      "example": "الأُسْبُوعُ يَبْدَأُ يَوْمَ الِاثْنَيْنِ.",
+      "exampleMeaning": "The week begins on Monday."
+    },
+    {
+      "word": "الشَّهْرُ",
+      "reading": "ash-shahru",
+      "meaning": "month",
+      "example": "الشَّهْرُ الجَدِيدُ يَبْدَأُ غَدًا.",
+      "exampleMeaning": "The new month begins tomorrow."
+    },
+    {
+      "word": "السَّنَةُ",
+      "reading": "as-sanatu",
+      "meaning": "year",
+      "example": "السَّنَةُ الدِّرَاسِيَّةُ طَوِيلَةٌ وَنَافِعَةٌ.",
+      "exampleMeaning": "The school year is long and useful."
+    },
+    {
+      "word": "العُطْلَةُ",
+      "reading": "al-ʿuṭlatu",
+      "meaning": "holiday / vacation",
+      "example": "العُطْلَةُ القَصِيرَةُ تُرِيحُ الأُسْرَةَ.",
+      "exampleMeaning": "The short vacation rests the family."
+    },
+    {
+      "word": "المَوْعِدُ",
+      "reading": "al-mawʿidu",
+      "meaning": "appointment",
+      "example": "المَوْعِدُ فِي السَّاعَةِ الثَّالِثَةِ.",
+      "exampleMeaning": "The appointment is at three o’clock."
+    },
+    {
+      "word": "المُنَاسَبَةُ",
+      "reading": "al-munāsabatu",
+      "meaning": "occasion / event",
+      "example": "المُنَاسَبَةُ العَائِلِيَّةُ فِي نِهَايَةِ الأُسْبُوعِ.",
+      "exampleMeaning": "The family occasion is on the weekend."
+    },
+    {
+      "word": "البِدَايَةُ",
+      "reading": "al-bidāyatu",
+      "meaning": "beginning",
+      "example": "البِدَايَةُ المُبَكِّرَةُ تُسَهِّلُ العَمَلَ.",
+      "exampleMeaning": "An early beginning makes the work easier."
+    },
+    {
+      "word": "النِّهَايَةُ",
+      "reading": "an-nihāyatu",
+      "meaning": "end",
+      "example": "النِّهَايَةُ الوَاضِحَةُ تُسَاعِدُ عَلَى التَّخْطِيطِ.",
+      "exampleMeaning": "A clear end helps with planning."
+    },
+    {
+      "word": "مُنْتَصَفُ الشَّهْرِ",
+      "reading": "muntaṣafu ash-shahri",
+      "meaning": "middle of the month",
+      "example": "مُنْتَصَفُ الشَّهْرِ وَقْتٌ جَيِّدٌ لِمُرَاجَعَةِ المِيزَانِيَّةِ.",
+      "exampleMeaning": "The middle of the month is a good time to review the budget."
+    },
+    {
+      "word": "نِهَايَةُ الأُسْبُوعِ",
+      "reading": "nihāyatu al-ʾusbūʿi",
+      "meaning": "weekend",
+      "example": "نِهَايَةُ الأُسْبُوعِ مُخَصَّصَةٌ لِلرَّاحَةِ.",
+      "exampleMeaning": "The weekend is set aside for rest."
+    },
+    {
+      "word": "تَارِيخُ المِيلَادِ",
+      "reading": "tārīkhu al-mīlādi",
+      "meaning": "date of birth",
+      "example": "تَارِيخُ المِيلَادِ مَطْلُوبٌ فِي النَّمُوذَجِ.",
+      "exampleMeaning": "The date of birth is required on the form."
+    },
+    {
+      "word": "تَارِيخُ الِاسْتِحْقَاقِ",
+      "reading": "tārīkhu al-istiḥqāqi",
+      "meaning": "due date",
+      "example": "تَارِيخُ الِاسْتِحْقَاقِ قَرِيبٌ جِدًّا.",
+      "exampleMeaning": "The due date is very close."
+    },
+    {
+      "word": "السَّنَةُ الكَبِيسَةُ",
+      "reading": "as-sanatu al-kabīsatu",
+      "meaning": "leap year",
+      "example": "السَّنَةُ الكَبِيسَةُ تَحْتَوِي عَلَى يَوْمٍ إِضَافِيٍّ.",
+      "exampleMeaning": "A leap year contains an extra day."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "___ مَكْتُوبٌ فِي أَعْلَى الصَّفْحَةِ.",
+          "answer": "التَّارِيخُ",
+          "hint": "date"
+        },
+        {
+          "sentence": "___ مُعَلَّقٌ عَلَى الحَائِطِ.",
+          "answer": "التَّقْوِيمُ",
+          "hint": "calendar"
+        },
+        {
+          "sentence": "___ مُنَاسِبٌ لِلزِّيَارَةِ.",
+          "answer": "اليَوْمُ",
+          "hint": "day / today"
+        },
+        {
+          "sentence": "___ يَبْدَأُ يَوْمَ الِاثْنَيْنِ.",
+          "answer": "الأُسْبُوعُ",
+          "hint": "week"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "items": [
+        {
+          "question": "What does ‘التَّارِيخُ’ mean?",
+          "options": [
+            "calendar",
+            "date",
+            "day / today",
+            "week"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What does ‘التَّقْوِيمُ’ mean?",
+          "options": [
+            "day / today",
+            "calendar",
+            "week",
+            "month"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What does ‘اليَوْمُ’ mean?",
+          "options": [
+            "week",
+            "day / today",
+            "month",
+            "year"
+          ],
+          "answer": 1
+        }
+      ]
+    }
+  ]
+}

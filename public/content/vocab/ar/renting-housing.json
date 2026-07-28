@@ -1,0 +1,183 @@
+{
+  "id": "renting-housing",
+  "words": [
+    {
+      "word": "عَقْدُ إِيجَارٍ",
+      "reading": "ʿaqdu ʾījārin",
+      "meaning": "lease contract",
+      "example": "وَقَّعْتُ عَقْدَ إِيجَارٍ لِسَنَةٍ.",
+      "exampleMeaning": "I signed a lease contract for a year."
+    },
+    {
+      "word": "مُؤَجِّرٌ",
+      "reading": "muʾajjirun",
+      "meaning": "landlord",
+      "example": "قَابَلْنَا الْمُؤَجِّرَ بَعْدَ الظُّهْرِ.",
+      "exampleMeaning": "We met the landlord after noon."
+    },
+    {
+      "word": "مُسْتَأْجِرٌ",
+      "reading": "mustaʾjirun",
+      "meaning": "tenant",
+      "example": "يَدْفَعُ الْمُسْتَأْجِرُ الْإِيجَارَ شَهْرِيًّا.",
+      "exampleMeaning": "The tenant pays the rent monthly."
+    },
+    {
+      "word": "عَقَارٌ",
+      "reading": "ʿaqārun",
+      "meaning": "property / real estate",
+      "example": "هٰذَا الْعَقَارُ قَرِيبٌ مِنَ الْمَدْرَسَةِ.",
+      "exampleMeaning": "This property is near the school."
+    },
+    {
+      "word": "شَقَّةٌ مَفْرُوشَةٌ",
+      "reading": "shaqqatun mafrūshatun",
+      "meaning": "furnished apartment",
+      "example": "نُفَضِّلُ شَقَّةً مَفْرُوشَةً.",
+      "exampleMeaning": "We prefer a furnished apartment."
+    },
+    {
+      "word": "تَأْمِينٌ مُسْتَرَدٌّ",
+      "reading": "taʾmīnun mustaraddun",
+      "meaning": "refundable deposit",
+      "example": "دَفَعْنَا تَأْمِينًا مُسْتَرَدًّا عِنْدَ التَّوْقِيعِ.",
+      "exampleMeaning": "We paid a refundable deposit at signing."
+    },
+    {
+      "word": "إِيجَارٌ شَهْرِيٌّ",
+      "reading": "ʾījārun shahriyyun",
+      "meaning": "monthly rent",
+      "example": "الإِيجَارُ الشَّهْرِيُّ مُنَاسِبٌ.",
+      "exampleMeaning": "The monthly rent is suitable."
+    },
+    {
+      "word": "فَوَاتِيرُ الْخَدَمَاتِ",
+      "reading": "fawātīru l-khadamāti",
+      "meaning": "utility bills",
+      "example": "تَشْمَلُ فَوَاتِيرُ الْخَدَمَاتِ الْمَاءَ وَالْكَهْرَبَاءَ.",
+      "exampleMeaning": "The utility bills include water and electricity."
+    },
+    {
+      "word": "صِيَانَةٌ",
+      "reading": "ṣiyānatun",
+      "meaning": "maintenance",
+      "example": "طَلَبْنَا صِيَانَةً لِلنَّافِذَةِ.",
+      "exampleMeaning": "We requested maintenance for the window."
+    },
+    {
+      "word": "عَطَلٌ فِي السِّبَاكَةِ",
+      "reading": "ʿaṭalun fī s-sibākati",
+      "meaning": "plumbing problem",
+      "example": "هُنَاكَ عَطَلٌ فِي السِّبَاكَةِ.",
+      "exampleMeaning": "There is a plumbing problem."
+    },
+    {
+      "word": "مِصْعَدٌ",
+      "reading": "miṣʿadun",
+      "meaning": "elevator / lift",
+      "example": "الْمِصْعَدُ يَعْمَلُ طِوَالَ الْيَوْمِ.",
+      "exampleMeaning": "The elevator works all day."
+    },
+    {
+      "word": "مَوْقِفُ سَيَّارَاتٍ",
+      "reading": "mawqifu sayyārātin",
+      "meaning": "parking space",
+      "example": "لِلْمَبْنَى مَوْقِفُ سَيَّارَاتٍ آمِنٌ.",
+      "exampleMeaning": "The building has a safe parking space."
+    },
+    {
+      "word": "حَيٌّ هَادِئٌ",
+      "reading": "ḥayyun hādiʾun",
+      "meaning": "quiet neighborhood",
+      "example": "يَقَعُ الْبَيْتُ فِي حَيٍّ هَادِئٍ.",
+      "exampleMeaning": "The house is in a quiet neighborhood."
+    },
+    {
+      "word": "مَدَّةُ الْعَقْدِ",
+      "reading": "muddatul-ʿaqdi",
+      "meaning": "contract duration",
+      "example": "مَدَّةُ الْعَقْدِ اثْنَا عَشَرَ شَهْرًا.",
+      "exampleMeaning": "The contract duration is twelve months."
+    },
+    {
+      "word": "تَجْدِيدُ الْإِيجَارِ",
+      "reading": "tajdīdu l-ʾījāri",
+      "meaning": "rent renewal",
+      "example": "نَاقَشْنَا تَجْدِيدَ الْإِيجَارِ.",
+      "exampleMeaning": "We discussed the rent renewal."
+    },
+    {
+      "word": "إِشْعَارُ إِخْلَاءٍ",
+      "reading": "ʾishʿāru ʾikhlāʾin",
+      "meaning": "notice to vacate",
+      "example": "أَرْسَلَ الْمُؤَجِّرُ إِشْعَارَ إِخْلَاءٍ.",
+      "exampleMeaning": "The landlord sent a notice to vacate."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "وَقَّعْتُ ___ لِسَنَةٍ.",
+          "answer": "عَقْدُ إِيجَارٍ",
+          "hint": "lease contract"
+        },
+        {
+          "sentence": "قَابَلْنَا ___ بَعْدَ الظُّهْرِ.",
+          "answer": "مُؤَجِّرٌ",
+          "hint": "landlord"
+        },
+        {
+          "sentence": "يَدْفَعُ ___ الْإِيجَارَ شَهْرِيًّا.",
+          "answer": "مُسْتَأْجِرٌ",
+          "hint": "tenant"
+        },
+        {
+          "sentence": "هٰذَا ___ قَرِيبٌ مِنَ الْمَدْرَسَةِ.",
+          "answer": "عَقَارٌ",
+          "hint": "property"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "items": [
+        {
+          "question": "What does ‘عَقْدُ إِيجَارٍ’ mean?",
+          "options": [
+            "landlord",
+            "lease contract",
+            "tenant",
+            "property"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What does ‘مُؤَجِّرٌ’ mean?",
+          "options": [
+            "tenant",
+            "landlord",
+            "monthly rent",
+            "parking space"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What does ‘مُسْتَأْجِرٌ’ mean?",
+          "options": [
+            "refundable deposit",
+            "tenant",
+            "furnished apartment",
+            "notice to vacate"
+          ],
+          "answer": 1
+        }
+      ]
+    }
+  ]
+}

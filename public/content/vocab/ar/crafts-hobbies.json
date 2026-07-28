@@ -1,0 +1,183 @@
+{
+  "id": "crafts-hobbies",
+  "words": [
+    {
+      "word": "حِرْفَةٌ",
+      "reading": "ḥirfatun",
+      "meaning": "craft",
+      "example": "يُتْقِنُ الْجَدُّ حِرْفَةَ النَّجَارَةِ بِصَبْرٍ.",
+      "exampleMeaning": "The grandfather masters the craft of carpentry with patience."
+    },
+    {
+      "word": "هَوَايَةٌ",
+      "reading": "hiwāyatun",
+      "meaning": "hobby",
+      "example": "جَعَلَتْ لَيْلَى الْقِرَاءَةَ هَوَايَةً يَوْمِيَّةً.",
+      "exampleMeaning": "Layla made reading a daily hobby."
+    },
+    {
+      "word": "خِيَاطَةٌ",
+      "reading": "khiyāṭatun",
+      "meaning": "sewing",
+      "example": "تَعَلَّمَتْ سَارَةُ خِيَاطَةَ الْقَمِيصِ فِي الْوَرْشَةِ.",
+      "exampleMeaning": "Sara learned to sew the shirt in the workshop."
+    },
+    {
+      "word": "تَطْرِيزٌ",
+      "reading": "taṭrīzun",
+      "meaning": "embroidery",
+      "example": "يُزَيِّنُ التَّطْرِيزُ ثَوْبَ الْعِيدِ بِأَلْوَانٍ زَاهِيَةٍ.",
+      "exampleMeaning": "Embroidery decorates the holiday garment with bright colors."
+    },
+    {
+      "word": "حِيَاكَةٌ",
+      "reading": "ḥiyākatun",
+      "meaning": "knitting / weaving",
+      "example": "تَحْتَاجُ الْحِيَاكَةُ إِلَى خَيْطٍ جَيِّدٍ.",
+      "exampleMeaning": "Knitting needs good thread."
+    },
+    {
+      "word": "نَحْتٌ",
+      "reading": "naḥtun",
+      "meaning": "carving / sculpture",
+      "example": "يُحِبُّ الْفَنَّانُ نَحْتَ الْخَشَبِ.",
+      "exampleMeaning": "The artist loves carving wood."
+    },
+    {
+      "word": "فَخَّارٌ",
+      "reading": "fakhkhārun",
+      "meaning": "pottery",
+      "example": "صَنَعَ الْحِرَفِيُّ فَخَّارًا بُنِّيًّا.",
+      "exampleMeaning": "The craftsperson made brown pottery."
+    },
+    {
+      "word": "رَسْمٌ",
+      "reading": "rasmun",
+      "meaning": "drawing / painting",
+      "example": "يُعَلِّمُ الْمُدَرِّسُ رَسْمَ الْمَنَاظِرِ.",
+      "exampleMeaning": "The teacher teaches drawing landscapes."
+    },
+    {
+      "word": "تَصْوِيرٌ فُوتُوغْرَافِيٌّ",
+      "reading": "taṣwīrun fūtūghrāfiyyun",
+      "meaning": "photography",
+      "example": "يَحْتَاجُ التَّصْوِيرُ الْفُوتُوغْرَافِيُّ إِلَى ضَوْءٍ جَيِّدٍ.",
+      "exampleMeaning": "Photography needs good light."
+    },
+    {
+      "word": "نَمْذَجَةٌ",
+      "reading": "namdhajatun",
+      "meaning": "model-making",
+      "example": "تُسَاعِدُ النَّمْذَجَةُ الطُّلَّابَ عَلَى تَخَيُّلِ الْمَبْنَى.",
+      "exampleMeaning": "Model-making helps students imagine the building."
+    },
+    {
+      "word": "غِرَاءٌ",
+      "reading": "ghirāʾun",
+      "meaning": "glue",
+      "example": "وَضَعَ الطِّفْلُ غِرَاءً قَلِيلًا عَلَى الْوَرَقِ.",
+      "exampleMeaning": "The child put a little glue on the paper."
+    },
+    {
+      "word": "مِقَصٌّ",
+      "reading": "miqaṣṣun",
+      "meaning": "scissors",
+      "example": "قَصَّتْ أُمِّي الْقُمَاشَ بِمِقَصٍّ حَادٍّ.",
+      "exampleMeaning": "My mother cut the cloth with sharp scissors."
+    },
+    {
+      "word": "إِبْرَةٌ",
+      "reading": "ʾibratun",
+      "meaning": "needle",
+      "example": "تَحْمِلُ الْخَيَّاطَةُ إِبْرَةً صَغِيرَةً.",
+      "exampleMeaning": "The seamstress carries a small needle."
+    },
+    {
+      "word": "خَيْطٌ",
+      "reading": "khayṭun",
+      "meaning": "thread",
+      "example": "اِخْتَارَتْ خَيْطًا أَزْرَقَ لِلتَّطْرِيزِ.",
+      "exampleMeaning": "She chose blue thread for the embroidery."
+    },
+    {
+      "word": "فُرْشَاةٌ",
+      "reading": "furshātun",
+      "meaning": "brush",
+      "example": "نَظَّفَ الرَّسَّامُ فُرْشَاةَ اللَّوْنِ.",
+      "exampleMeaning": "The painter cleaned the paintbrush."
+    },
+    {
+      "word": "وَرْشَةٌ",
+      "reading": "warshatun",
+      "meaning": "workshop",
+      "example": "تَجْتَمِعُ الْمَجْمُوعَةُ فِي وَرْشَةٍ صَغِيرَةٍ.",
+      "exampleMeaning": "The group meets in a small workshop."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "هٰذِهِ ___ جَدِيدَةٌ.",
+          "answer": "حِرْفَةٌ",
+          "hint": "craft"
+        },
+        {
+          "sentence": "___ هَوَايَةٌ هَادِئَةٌ.",
+          "answer": "خِيَاطَةٌ",
+          "hint": "sewing"
+        },
+        {
+          "sentence": "هٰذَا ___ صَغِيرٌ.",
+          "answer": "مِقَصٌّ",
+          "hint": "scissors"
+        },
+        {
+          "sentence": "فِي الصَّفِّ ___ كَبِيرَةٌ.",
+          "answer": "فُرْشَاةٌ",
+          "hint": "brush"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "items": [
+        {
+          "question": "What does ‘حِرْفَةٌ’ mean?",
+          "options": [
+            "hobby",
+            "craft",
+            "brush",
+            "thread"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What does ‘تَطْرِيزٌ’ mean?",
+          "options": [
+            "embroidery",
+            "pottery",
+            "photography",
+            "glue"
+          ],
+          "answer": 0
+        },
+        {
+          "question": "What does ‘وَرْشَةٌ’ mean?",
+          "options": [
+            "needle",
+            "workshop",
+            "scissors",
+            "painting"
+          ],
+          "answer": 1
+        }
+      ]
+    }
+  ]
+}

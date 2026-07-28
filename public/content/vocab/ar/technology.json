@@ -1,0 +1,183 @@
+{
+  "id": "technology",
+  "words": [
+    {
+      "word": "هَاتِفٌ",
+      "reading": "hātifun",
+      "meaning": "phone",
+      "example": "هَاتِفٌ جَدِيدٌ فِي يَدِي.",
+      "exampleMeaning": "A new phone is in my hand."
+    },
+    {
+      "word": "حَاسُوبٌ",
+      "reading": "ḥāsūbun",
+      "meaning": "computer",
+      "example": "حَاسُوبٌ سَرِيعٌ عَلَى الْمَكْتَبِ.",
+      "exampleMeaning": "A fast computer is on the desk."
+    },
+    {
+      "word": "شَاشَةٌ",
+      "reading": "shāshatun",
+      "meaning": "screen",
+      "example": "شَاشَةٌ كَبِيرَةٌ أَمَامِي.",
+      "exampleMeaning": "A large screen is in front of me."
+    },
+    {
+      "word": "لَوْحَةُ مَفَاتِيحَ",
+      "reading": "lawḥatu mafātīḥa",
+      "meaning": "keyboard",
+      "example": "لَوْحَةُ مَفَاتِيحَ نَظِيفَةٌ عَلَى الْمَكْتَبِ.",
+      "exampleMeaning": "A clean keyboard is on the desk."
+    },
+    {
+      "word": "فَأْرَةٌ",
+      "reading": "faʾratun",
+      "meaning": "mouse (computer)",
+      "example": "الْفَأْرَةُ بِجَانِبِ الْحَاسُوبِ.",
+      "exampleMeaning": "The mouse is next to the computer."
+    },
+    {
+      "word": "إِنْتَرْنِت",
+      "reading": "ʾintarnit",
+      "meaning": "internet",
+      "example": "الْإِنْتَرْنِتُ سَرِيعٌ الْيَوْمَ.",
+      "exampleMeaning": "The internet is fast today."
+    },
+    {
+      "word": "رَسَالَةٌ",
+      "reading": "risālatun",
+      "meaning": "message",
+      "example": "الرِّسَالَةُ قَصِيرَةٌ.",
+      "exampleMeaning": "The message is short."
+    },
+    {
+      "word": "صُورَةٌ",
+      "reading": "ṣūratun",
+      "meaning": "photo / picture",
+      "example": "الصُّورَةُ وَاضِحَةٌ.",
+      "exampleMeaning": "The photo is clear."
+    },
+    {
+      "word": "فِيدْيُو",
+      "reading": "fīdyū",
+      "meaning": "video",
+      "example": "الْفِيدْيُو قَصِيرٌ.",
+      "exampleMeaning": "The video is short."
+    },
+    {
+      "word": "تَطْبِيقٌ",
+      "reading": "taṭbīqun",
+      "meaning": "app",
+      "example": "التَّطْبِيقُ مُفِيدٌ.",
+      "exampleMeaning": "The app is useful."
+    },
+    {
+      "word": "مَوْقِعٌ",
+      "reading": "mawqiʿun",
+      "meaning": "website / location",
+      "example": "الْمَوْقِعُ سَهْلُ الِاسْتِخْدَامِ.",
+      "exampleMeaning": "The website is easy to use."
+    },
+    {
+      "word": "كَلِمَةُ سِرٍّ",
+      "reading": "kalimatu sirrin",
+      "meaning": "password",
+      "example": "كَلِمَةُ سِرٍّ طَوِيلَةٌ أَفْضَلُ.",
+      "exampleMeaning": "A long password is better."
+    },
+    {
+      "word": "شَاحِنٌ",
+      "reading": "shāḥinun",
+      "meaning": "charger",
+      "example": "الشَّاحِنُ فِي الْحَقِيبَةِ.",
+      "exampleMeaning": "The charger is in the bag."
+    },
+    {
+      "word": "بَطَّارِيَّةٌ",
+      "reading": "baṭṭāriyyatun",
+      "meaning": "battery",
+      "example": "الْبَطَّارِيَّةُ ضَعِيفَةٌ.",
+      "exampleMeaning": "The battery is weak."
+    },
+    {
+      "word": "سَمَّاعَاتٌ",
+      "reading": "sammāʿātun",
+      "meaning": "headphones",
+      "example": "السَّمَّاعَاتُ جَدِيدَةٌ.",
+      "exampleMeaning": "The headphones are new."
+    },
+    {
+      "word": "مَلَفٌّ",
+      "reading": "malaffun",
+      "meaning": "file",
+      "example": "الْمَلَفُّ عَلَى الْحَاسُوبِ.",
+      "exampleMeaning": "The file is on the computer."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "___ جَدِيدٌ فِي يَدِي.",
+          "answer": "هَاتِفٌ",
+          "hint": "phone"
+        },
+        {
+          "sentence": "___ سَرِيعٌ عَلَى الْمَكْتَبِ.",
+          "answer": "حَاسُوبٌ",
+          "hint": "computer"
+        },
+        {
+          "sentence": "___ كَبِيرَةٌ أَمَامِي.",
+          "answer": "شَاشَةٌ",
+          "hint": "screen"
+        },
+        {
+          "sentence": "___ نَظِيفَةٌ عَلَى الْمَكْتَبِ.",
+          "answer": "لَوْحَةُ مَفَاتِيحَ",
+          "hint": "keyboard"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "items": [
+        {
+          "question": "What does ‘هَاتِفٌ’ mean?",
+          "options": [
+            "computer",
+            "phone",
+            "screen",
+            "keyboard"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What does ‘حَاسُوبٌ’ mean?",
+          "options": [
+            "screen",
+            "computer",
+            "keyboard",
+            "mouse (computer)"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What does ‘شَاشَةٌ’ mean?",
+          "options": [
+            "keyboard",
+            "screen",
+            "mouse (computer)",
+            "internet"
+          ],
+          "answer": 1
+        }
+      ]
+    }
+  ]
+}

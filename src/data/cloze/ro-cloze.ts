@@ -1,0 +1,87 @@
+import type { ClozeSentence } from './ja-cloze';
+
+export const roClozeSentences: ClozeSentence[] = [
+  // ── Beginner ──
+  { id: 'ro-c001', target: 'Beau apă în fiecare zi', english: 'I drink water every day', blankedWord: 'apă', blankedReading: 'AH-puh', frequencyRank: 1, difficulty: 'beginner' },
+  { id: 'ro-c002', target: 'Ea este studentă', english: 'She is a student', blankedWord: 'studentă', blankedReading: 'stoo-DEN-tuh', frequencyRank: 2, difficulty: 'beginner' },
+  { id: 'ro-c003', target: 'Astăzi vremea este frumoasă', english: 'The weather is nice today', blankedWord: 'vremea', blankedReading: 'VREH-myah', frequencyRank: 3, difficulty: 'beginner' },
+  { id: 'ro-c004', target: 'Îmi plac pisicile', english: 'I like cats', blankedWord: 'pisicile', blankedReading: 'pee-SEE-chee-leh', frequencyRank: 4, difficulty: 'beginner' },
+  { id: 'ro-c005', target: 'Aceasta este o carte', english: 'This is a book', blankedWord: 'carte', blankedReading: 'KAR-teh', frequencyRank: 5, difficulty: 'beginner' },
+  { id: 'ro-c006', target: 'Merg la școală în fiecare zi', english: 'I go to school every day', blankedWord: 'școală', blankedReading: 'SHKWAH-luh', frequencyRank: 6, difficulty: 'beginner' },
+  { id: 'ro-c007', target: 'Am mâncat micul dejun', english: 'I ate breakfast', blankedWord: 'micul dejun', blankedReading: 'MEE-kool deh-ZHOON', frequencyRank: 7, difficulty: 'beginner' },
+  { id: 'ro-c008', target: 'Am văzut un film aseară', english: 'We watched a movie last night', blankedWord: 'film', blankedReading: 'feelm', frequencyRank: 8, difficulty: 'beginner' },
+  { id: 'ro-c009', target: 'Unde este gara?', english: 'Where is the station?', blankedWord: 'gara', blankedReading: 'GAH-rah', frequencyRank: 9, difficulty: 'beginner' },
+  { id: 'ro-c010', target: 'Casa este mare', english: 'The house is big', blankedWord: 'Casa', blankedReading: 'KAH-sah', frequencyRank: 10, difficulty: 'beginner' },
+  { id: 'ro-c011', target: 'Bună dimineața, ce mai faci?', english: 'Good morning, how are you?', blankedWord: 'dimineața', blankedReading: 'dee-mee-NYAH-tsah', frequencyRank: 11, difficulty: 'beginner' },
+  { id: 'ro-c012', target: 'Vreau o cafea, te rog', english: 'I want a coffee, please', blankedWord: 'cafea', blankedReading: 'kah-FYAH', frequencyRank: 12, difficulty: 'beginner' },
+
+  // ── Intermediate ──
+  { id: 'ro-c013', target: 'Trebuie să cumpăr medicamente de la farmacie', english: 'I need to buy medicine from the pharmacy', blankedWord: 'farmacie', blankedReading: 'far-mah-CHEE-eh', frequencyRank: 13, difficulty: 'intermediate' },
+  { id: 'ro-c014', target: 'Restaurantul se închide la ora zece seara', english: 'The restaurant closes at ten at night', blankedWord: 'Restaurantul', blankedReading: 'res-tow-RAN-tool', frequencyRank: 14, difficulty: 'intermediate' },
+  { id: 'ro-c015', target: 'Ea lucrează la o companie de tehnologie', english: 'She works at a technology company', blankedWord: 'companie', blankedReading: 'kom-pah-NEE-eh', frequencyRank: 15, difficulty: 'intermediate' },
+  { id: 'ro-c016', target: 'Vara trecută am călătorit în Grecia', english: 'Last summer we traveled to Greece', blankedWord: 'călătorit', blankedReading: 'kuh-luh-toh-REET', frequencyRank: 16, difficulty: 'intermediate' },
+  { id: 'ro-c017', target: 'Îmi place să citesc cărți de istorie', english: 'I like to read history books', blankedWord: 'citesc', blankedReading: 'chee-TESK', frequencyRank: 17, difficulty: 'intermediate' },
+  { id: 'ro-c018', target: 'Autobuzul întârzie din cauza traficului', english: 'The bus is late because of the traffic', blankedWord: 'traficului', blankedReading: 'TRAH-fee-koo-loo-ee', frequencyRank: 18, difficulty: 'intermediate' },
+  { id: 'ro-c019', target: 'Prietenul meu învață să conducă mașina', english: 'My friend is learning to drive the car', blankedWord: 'conducă', blankedReading: 'kon-DOO-kuh', frequencyRank: 19, difficulty: 'intermediate' },
+  { id: 'ro-c020', target: 'Copiii se joacă în parc', english: 'The children are playing in the park', blankedWord: 'joacă', blankedReading: 'ZHWAH-kuh', frequencyRank: 20, difficulty: 'intermediate' },
+
+  // ── Advanced ──
+  { id: 'ro-c021', target: 'Deși era obosit, a continuat să muncească', english: 'Although he was tired, he kept working', blankedWord: 'obosit', blankedReading: 'oh-boh-SEET', frequencyRank: 21, difficulty: 'advanced' },
+  { id: 'ro-c022', target: 'Guvernul a anunțat noi măsuri economice', english: 'The government announced new economic measures', blankedWord: 'măsuri', blankedReading: 'MUH-soo-ree', frequencyRank: 22, difficulty: 'advanced' },
+  { id: 'ro-c023', target: 'Dacă aș avea mai mult timp, aș învăța pian', english: 'If I had more time, I would learn piano', blankedWord: 'timp', blankedReading: 'teemp', frequencyRank: 23, difficulty: 'advanced' },
+  { id: 'ro-c024', target: 'Protejarea mediului este responsabilitatea tuturor', english: 'Protecting the environment is everyone\'s responsibility', blankedWord: 'mediului', blankedReading: 'MEH-dee-oo-loo-ee', frequencyRank: 24, difficulty: 'advanced' },
+
+  // ── Everyday & travel (frequency-ranked) ──
+  { id: 'ro-c025', target: 'Vreau să cumpăr pâine de la magazin', english: 'I want to buy bread from the store', blankedWord: 'pâine', blankedReading: 'PUH-ee-neh', frequencyRank: 25, difficulty: 'beginner' },
+  { id: 'ro-c026', target: 'Trenul pleacă la ora opt', english: 'The train leaves at eight o\'clock', blankedWord: 'Trenul', blankedReading: 'TREH-nool', frequencyRank: 26, difficulty: 'beginner' },
+  { id: 'ro-c027', target: 'Îmi place să beau ceai dimineața', english: 'I like to drink tea in the morning', blankedWord: 'ceai', blankedReading: 'chy', frequencyRank: 27, difficulty: 'beginner' },
+  { id: 'ro-c028', target: 'Copiii merg la școală cu autobuzul', english: 'The children go to school by bus', blankedWord: 'autobuzul', blankedReading: 'ow-toh-BOO-zool', frequencyRank: 28, difficulty: 'beginner' },
+  { id: 'ro-c029', target: 'Astăzi este o zi frumoasă', english: 'Today is a beautiful day', blankedWord: 'frumoasă', blankedReading: 'froo-MWAH-suh', frequencyRank: 29, difficulty: 'beginner' },
+  { id: 'ro-c030', target: 'Am nevoie de ajutor, vă rog', english: 'I need help, please', blankedWord: 'ajutor', blankedReading: 'ah-zhoo-TOR', frequencyRank: 30, difficulty: 'beginner' },
+  { id: 'ro-c031', target: 'Ea vorbește trei limbi străine', english: 'She speaks three foreign languages', blankedWord: 'limbi', blankedReading: 'LEEM-bee', frequencyRank: 31, difficulty: 'intermediate' },
+  { id: 'ro-c032', target: 'Noi mâncăm împreună în fiecare seară', english: 'We eat together every evening', blankedWord: 'împreună', blankedReading: 'uhm-preh-OO-nuh', frequencyRank: 32, difficulty: 'intermediate' },
+  { id: 'ro-c033', target: 'Cartea aceasta este foarte interesantă', english: 'This book is very interesting', blankedWord: 'interesantă', blankedReading: 'een-teh-reh-SAN-tuh', frequencyRank: 33, difficulty: 'intermediate' },
+  { id: 'ro-c034', target: 'El lucrează la un spital mare', english: 'He works at a big hospital', blankedWord: 'spital', blankedReading: 'spee-TAL', frequencyRank: 34, difficulty: 'intermediate' },
+  { id: 'ro-c035', target: 'Vremea se schimbă repede toamna', english: 'The weather changes quickly in autumn', blankedWord: 'toamna', blankedReading: 'TWAM-nah', frequencyRank: 35, difficulty: 'intermediate' },
+  { id: 'ro-c036', target: 'Trebuie să plătesc factura la timp', english: 'I have to pay the bill on time', blankedWord: 'factura', blankedReading: 'fak-TOO-rah', frequencyRank: 36, difficulty: 'intermediate' },
+  { id: 'ro-c037', target: 'Prietena mea locuiește în străinătate', english: 'My friend lives abroad', blankedWord: 'străinătate', blankedReading: 'struh-ee-nuh-TAH-teh', frequencyRank: 37, difficulty: 'intermediate' },
+  { id: 'ro-c038', target: 'Guvernul a luat o decizie importantă', english: 'The government made an important decision', blankedWord: 'decizie', blankedReading: 'deh-CHEE-zee-eh', frequencyRank: 38, difficulty: 'advanced' },
+  { id: 'ro-c039', target: 'Fără efort nu obții rezultate', english: 'Without effort you don\'t get results', blankedWord: 'efort', blankedReading: 'eh-FORT', frequencyRank: 39, difficulty: 'advanced' },
+  { id: 'ro-c040', target: 'Deși era târziu, am continuat să lucrez', english: 'Although it was late, I kept working', blankedWord: 'târziu', blankedReading: 'tuhr-ZEE-oo', frequencyRank: 40, difficulty: 'advanced' },
+
+  // ── More everyday sentences ──
+  { id: 'ro-c041', target: 'Bunicii mei locuiesc la țară', english: 'My grandparents live in the countryside', blankedWord: 'țară', blankedReading: 'TSAH-ruh', frequencyRank: 41, difficulty: 'beginner' },
+  { id: 'ro-c042', target: 'Câinele aleargă după minge', english: 'The dog runs after the ball', blankedWord: 'minge', blankedReading: 'MEEN-jeh', frequencyRank: 42, difficulty: 'beginner' },
+  { id: 'ro-c043', target: 'Profesorul explică lecția clar', english: 'The teacher explains the lesson clearly', blankedWord: 'lecția', blankedReading: 'LEK-tsyah', frequencyRank: 43, difficulty: 'intermediate' },
+  { id: 'ro-c044', target: 'Vara mergem la mare în fiecare an', english: 'In summer we go to the seaside every year', blankedWord: 'mare', blankedReading: 'MAH-reh', frequencyRank: 44, difficulty: 'beginner' },
+  { id: 'ro-c045', target: 'El scrie o scrisoare prietenului său', english: 'He writes a letter to his friend', blankedWord: 'scrisoare', blankedReading: 'skree-SWAH-reh', frequencyRank: 45, difficulty: 'intermediate' },
+  { id: 'ro-c046', target: 'Trebuie să învăț pentru examen', english: 'I have to study for the exam', blankedWord: 'examen', blankedReading: 'ek-SAH-men', frequencyRank: 46, difficulty: 'intermediate' },
+  { id: 'ro-c047', target: 'Orașul are un parc frumos în centru', english: 'The city has a beautiful park in the center', blankedWord: 'parc', blankedReading: 'park', frequencyRank: 47, difficulty: 'intermediate' },
+  { id: 'ro-c048', target: 'Mi-am uitat cheile pe masă', english: 'I forgot my keys on the table', blankedWord: 'cheile', blankedReading: 'KYEH-ee-leh', frequencyRank: 48, difficulty: 'intermediate' },
+  { id: 'ro-c049', target: 'Fără apă, plantele se usucă', english: 'Without water, the plants dry out', blankedWord: 'plantele', blankedReading: 'PLAN-teh-leh', frequencyRank: 49, difficulty: 'advanced' },
+  { id: 'ro-c050', target: 'Libertatea este un drept fundamental', english: 'Freedom is a fundamental right', blankedWord: 'Libertatea', blankedReading: 'lee-ber-TAH-tyah', frequencyRank: 50, difficulty: 'advanced' },
+
+  // ── Set 6 ──
+  { id: 'ro-c051', target: 'Dimineața beau o cană de cafea', english: 'In the morning I drink a cup of coffee', blankedWord: 'cafea', blankedReading: 'kah-FYAH', frequencyRank: 51, difficulty: 'beginner' },
+  { id: 'ro-c052', target: 'Vecinul meu are o mașină nouă', english: 'My neighbor has a new car', blankedWord: 'mașină', blankedReading: 'mah-SHEE-nuh', frequencyRank: 52, difficulty: 'beginner' },
+  { id: 'ro-c053', target: 'Bunica mea gătește foarte bine', english: 'My grandmother cooks very well', blankedWord: 'gătește', blankedReading: 'guh-TESH-teh', frequencyRank: 53, difficulty: 'intermediate' },
+  { id: 'ro-c054', target: 'Am uitat umbrela în autobuz', english: 'I forgot the umbrella on the bus', blankedWord: 'umbrela', blankedReading: 'oom-BREH-lah', frequencyRank: 54, difficulty: 'intermediate' },
+  { id: 'ro-c055', target: 'Muzeul este deschis până la ora șase', english: 'The museum is open until six o\'clock', blankedWord: 'Muzeul', blankedReading: 'moo-ZEH-ool', frequencyRank: 55, difficulty: 'intermediate' },
+  { id: 'ro-c056', target: 'Ei construiesc o casă nouă la țară', english: 'They are building a new house in the countryside', blankedWord: 'construiesc', blankedReading: 'kon-stroo-YESK', frequencyRank: 56, difficulty: 'intermediate' },
+  { id: 'ro-c057', target: 'Sănătatea este mai importantă decât banii', english: 'Health is more important than money', blankedWord: 'Sănătatea', blankedReading: 'suh-nuh-TAH-tyah', frequencyRank: 57, difficulty: 'advanced' },
+  { id: 'ro-c058', target: 'Trenul a sosit cu o întârziere de o oră', english: 'The train arrived with a one-hour delay', blankedWord: 'întârziere', blankedReading: 'uhn-tuhr-zee-EH-reh', frequencyRank: 58, difficulty: 'advanced' },
+  { id: 'ro-c059', target: 'Copacul acesta are peste o sută de ani', english: 'This tree is over a hundred years old', blankedWord: 'Copacul', blankedReading: 'koh-PAH-kool', frequencyRank: 59, difficulty: 'intermediate' },
+  { id: 'ro-c060', target: 'Fiecare are dreptul la o educație bună', english: 'Everyone has the right to a good education', blankedWord: 'educație', blankedReading: 'eh-doo-KAH-tsee-eh', frequencyRank: 60, difficulty: 'advanced' },
+
+  // ── Set 7 (high-frequency words) ──
+  { id: 'ro-c061', target: 'Nu am spus nimic despre asta', english: 'I said nothing about that', blankedWord: 'nimic', blankedReading: 'nee-MEEK', frequencyRank: 61, difficulty: 'beginner' },
+  { id: 'ro-c062', target: 'A trecut mult timp de atunci', english: 'A lot of time has passed since then', blankedWord: 'timp', blankedReading: 'teemp', frequencyRank: 62, difficulty: 'beginner' },
+  { id: 'ro-c063', target: 'Toate florile au înflorit în grădină', english: 'All the flowers have bloomed in the garden', blankedWord: 'Toate', blankedReading: 'TWAH-teh', frequencyRank: 63, difficulty: 'beginner' },
+  { id: 'ro-c064', target: 'Nimeni nu știe răspunsul corect', english: 'Nobody knows the correct answer', blankedWord: 'Nimeni', blankedReading: 'NEE-men', frequencyRank: 64, difficulty: 'intermediate' },
+  { id: 'ro-c065', target: 'El este cel mai bun elev din clasă', english: 'He is the best pupil in the class', blankedWord: 'cel', blankedReading: 'chel', frequencyRank: 65, difficulty: 'intermediate' },
+  { id: 'ro-c066', target: 'Ea vorbește mereu despre familia ei', english: 'She always talks about her family', blankedWord: 'despre', blankedReading: 'DES-preh', frequencyRank: 66, difficulty: 'intermediate' },
+  { id: 'ro-c067', target: 'După masă mergem la o plimbare', english: 'After the meal we go for a walk', blankedWord: 'După', blankedReading: 'DOO-puh', frequencyRank: 67, difficulty: 'intermediate' },
+  { id: 'ro-c068', target: 'Am nevoie de mai mult timp', english: 'I need more time', blankedWord: 'nevoie', blankedReading: 'neh-VOH-yeh', frequencyRank: 68, difficulty: 'intermediate' },
+  { id: 'ro-c069', target: 'Cred că mâine va fi o zi frumoasă', english: 'I think tomorrow will be a beautiful day', blankedWord: 'Cred', blankedReading: 'kred', frequencyRank: 69, difficulty: 'advanced' },
+  { id: 'ro-c070', target: 'Trebuie să plecăm chiar acum', english: 'We must leave right now', blankedWord: 'chiar', blankedReading: 'kyar', frequencyRank: 70, difficulty: 'advanced' },
+];

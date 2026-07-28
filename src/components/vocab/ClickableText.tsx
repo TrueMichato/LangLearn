@@ -1,6 +1,7 @@
 import { useState, useCallback } from 'react';
 import WordLookupSheet from '../reader/WordLookupSheet';
 import { addWord, wordExists } from '../../db/words';
+import { isRTL } from '../../lib/rtl';
 
 interface Props {
   text: string;
@@ -55,7 +56,7 @@ export default function ClickableText({ text, language, className = '' }: Props)
 
   return (
     <>
-      <span className={className}>
+      <span className={className} dir={isRTL(language) ? 'rtl' : undefined}>
         {tokens.map((token, i) =>
           isWord(token, language) ? (
             <span

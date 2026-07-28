@@ -14,6 +14,8 @@ export const XP_PER_LYRICS_VOCAB = 3;
 export const XP_TRANSLATION_BASE = 20;
 export const XP_PER_TRANSLATION_CORRECT = 5;
 export const XP_PER_TRANSLATION_PARTIAL = 2;
+export const XP_NUMBER_BASE = 15;
+export const XP_PER_NUMBER_CORRECT = 2;
 
 export function calculateTimeXP(durationSeconds: number): number {
   const fiveMinBlocks = Math.floor(durationSeconds / 300);

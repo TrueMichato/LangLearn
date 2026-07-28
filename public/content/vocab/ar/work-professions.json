@@ -1,0 +1,183 @@
+{
+  "id": "work-professions",
+  "words": [
+    {
+      "word": "عَمَلٌ",
+      "reading": "ʿamalun",
+      "meaning": "work",
+      "example": "عَمَلٌ جَدِيدٌ يَبْدَأُ غَدًا.",
+      "exampleMeaning": "A new job begins tomorrow."
+    },
+    {
+      "word": "وَظِيفَةٌ",
+      "reading": "waẓīfatun",
+      "meaning": "job",
+      "example": "وَظِيفَةٌ مُنَاسِبَةٌ لِي.",
+      "exampleMeaning": "A suitable job for me."
+    },
+    {
+      "word": "مَكْتَبٌ",
+      "reading": "maktabun",
+      "meaning": "office / desk",
+      "example": "مَكْتَبٌ نَظِيفٌ فِي الشَّرِكَةِ.",
+      "exampleMeaning": "A clean office is in the company."
+    },
+    {
+      "word": "مُدِيرٌ",
+      "reading": "mudīrun",
+      "meaning": "manager",
+      "example": "مُدِيرٌ عَادِلٌ يَسْمَعُ الْجَمِيعَ.",
+      "exampleMeaning": "A fair manager listens to everyone."
+    },
+    {
+      "word": "مُوَظَّفٌ",
+      "reading": "muwaẓẓafun",
+      "meaning": "employee",
+      "example": "الْمُوَظَّفُ يَصِلُ مُبَكِّرًا.",
+      "exampleMeaning": "The employee arrives early."
+    },
+    {
+      "word": "طَبِيبٌ",
+      "reading": "ṭabībun",
+      "meaning": "doctor",
+      "example": "الطَّبِيبُ فِي الْعِيَادَةِ.",
+      "exampleMeaning": "The doctor is in the clinic."
+    },
+    {
+      "word": "مُهَنْدِسٌ",
+      "reading": "muhandisun",
+      "meaning": "engineer",
+      "example": "الْمُهَنْدِسُ يَرْسُمُ خُطَّةً.",
+      "exampleMeaning": "The engineer draws a plan."
+    },
+    {
+      "word": "مُدَرِّسٌ",
+      "reading": "mudarrisun",
+      "meaning": "teacher",
+      "example": "الْمُدَرِّسُ يَشْرَحُ بِوُضُوحٍ.",
+      "exampleMeaning": "The teacher explains clearly."
+    },
+    {
+      "word": "مُحَامٍ",
+      "reading": "muḥāmin",
+      "meaning": "lawyer",
+      "example": "الْمُحَامِي يَقْرَأُ الْمَلَفَّ.",
+      "exampleMeaning": "The lawyer reads the file."
+    },
+    {
+      "word": "صَحَفِيٌّ",
+      "reading": "ṣaḥafiyyun",
+      "meaning": "journalist",
+      "example": "الصَّحَفِيُّ يَكْتُبُ تَقْرِيرًا.",
+      "exampleMeaning": "The journalist writes a report."
+    },
+    {
+      "word": "مُمَرِّضٌ",
+      "reading": "mumarridun",
+      "meaning": "nurse (male)",
+      "example": "الْمُمَرِّضُ يُسَاعِدُ الْمَرِيضَ.",
+      "exampleMeaning": "The nurse helps the patient."
+    },
+    {
+      "word": "طَبَّاخٌ",
+      "reading": "ṭabbākhun",
+      "meaning": "cook / chef",
+      "example": "الطَّبَّاخُ يُعِدُّ الْعَشَاءَ.",
+      "exampleMeaning": "The cook prepares dinner."
+    },
+    {
+      "word": "بَائِعٌ",
+      "reading": "bāʾiʿun",
+      "meaning": "seller",
+      "example": "الْبَائِعُ يَبْتَسِمُ لِلزَّبُونِ.",
+      "exampleMeaning": "The seller smiles at the customer."
+    },
+    {
+      "word": "شُرْطِيٌّ",
+      "reading": "shurṭiyyun",
+      "meaning": "police officer",
+      "example": "الشُّرْطِيُّ فِي الشَّارِعِ.",
+      "exampleMeaning": "The police officer is in the street."
+    },
+    {
+      "word": "فَنَّانٌ",
+      "reading": "fannānun",
+      "meaning": "artist",
+      "example": "الْفَنَّانُ يَرْسُمُ لَوْحَةً.",
+      "exampleMeaning": "The artist paints a picture."
+    },
+    {
+      "word": "رَاتِبٌ",
+      "reading": "rātibun",
+      "meaning": "salary",
+      "example": "الرَّاتِبُ يَصِلُ نِهَايَةَ الشَّهْرِ.",
+      "exampleMeaning": "The salary arrives at the end of the month."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "___ جَدِيدٌ يَبْدَأُ غَدًا.",
+          "answer": "عَمَلٌ",
+          "hint": "work"
+        },
+        {
+          "sentence": "___ مُنَاسِبَةٌ لِي.",
+          "answer": "وَظِيفَةٌ",
+          "hint": "job"
+        },
+        {
+          "sentence": "___ نَظِيفٌ فِي الشَّرِكَةِ.",
+          "answer": "مَكْتَبٌ",
+          "hint": "office / desk"
+        },
+        {
+          "sentence": "___ عَادِلٌ يَسْمَعُ الْجَمِيعَ.",
+          "answer": "مُدِيرٌ",
+          "hint": "manager"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "items": [
+        {
+          "question": "What does ‘عَمَلٌ’ mean?",
+          "options": [
+            "job",
+            "work",
+            "office / desk",
+            "manager"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What does ‘وَظِيفَةٌ’ mean?",
+          "options": [
+            "office / desk",
+            "job",
+            "manager",
+            "employee"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What does ‘مَكْتَبٌ’ mean?",
+          "options": [
+            "manager",
+            "office / desk",
+            "employee",
+            "doctor"
+          ],
+          "answer": 1
+        }
+      ]
+    }
+  ]
+}

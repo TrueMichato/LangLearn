@@ -1,0 +1,183 @@
+{
+  "id": "maghrebi-phrases",
+  "words": [
+    {
+      "word": "كِيفْ دَايِر؟",
+      "reading": "kīf dāyir?",
+      "meaning": "how are you? (Maghrebi; MSA: kayfa ḥāluka)",
+      "example": "كِيفْ دَايِر؟ أَنَا بْخِيرْ.",
+      "exampleMeaning": "How are you? I am fine."
+    },
+    {
+      "word": "لَابَاس؟",
+      "reading": "lābās?",
+      "meaning": "all good? / no problem? (Maghrebi; MSA: hal anta bi-khayr)",
+      "example": "لَابَاس؟ كُلْشِي مْزْيَانْ.",
+      "exampleMeaning": "All good? Everything is fine."
+    },
+    {
+      "word": "بْخِيرْ",
+      "reading": "bkhīr",
+      "meaning": "fine / well (Maghrebi; MSA: bi-khayr)",
+      "example": "أَنَا بْخِيرْ الْيُومْ.",
+      "exampleMeaning": "I am fine today."
+    },
+    {
+      "word": "شْنُو؟",
+      "reading": "shnu?",
+      "meaning": "what? (Maghrebi; MSA: mādhā)",
+      "example": "شْنُو بْغِيتْ تَاكُلْ؟",
+      "exampleMeaning": "What do you want to eat?"
+    },
+    {
+      "word": "فِينْ؟",
+      "reading": "fīn?",
+      "meaning": "where? (Maghrebi; MSA: ʾayna)",
+      "example": "فِينْ الْمَحَطَّة؟",
+      "exampleMeaning": "Where is the station?"
+    },
+    {
+      "word": "عْلَاشْ؟",
+      "reading": "ʿlāsh?",
+      "meaning": "why? (Maghrebi; MSA: limādhā)",
+      "example": "عْلَاشْ أَنْتَ زَعْلَانْ؟",
+      "exampleMeaning": "Why are you upset?"
+    },
+    {
+      "word": "دَابَا",
+      "reading": "dābā",
+      "meaning": "now (Moroccan Darija; MSA: al-ʾān)",
+      "example": "دَابَا نِمْشِي لِلدَّارْ.",
+      "exampleMeaning": "Now I am going home."
+    },
+    {
+      "word": "غْدْوَة",
+      "reading": "ghodwa",
+      "meaning": "tomorrow (Maghrebi; MSA: ghadan)",
+      "example": "غْدْوَة عَنْدِي خَدْمَة.",
+      "exampleMeaning": "Tomorrow I have work."
+    },
+    {
+      "word": "بْزَّافْ",
+      "reading": "bzzāf",
+      "meaning": "a lot / very (Maghrebi; MSA: kathīran)",
+      "example": "هٰذَا الْكْتَابْ زْوِينْ بْزَّافْ.",
+      "exampleMeaning": "This book is very nice."
+    },
+    {
+      "word": "بْغِيتْ",
+      "reading": "bghīt",
+      "meaning": "I want (Maghrebi; MSA: ʾurīdu)",
+      "example": "بْغِيتْ قَهْوَة بْلَا سُكَّرْ.",
+      "exampleMeaning": "I want coffee without sugar."
+    },
+    {
+      "word": "مَا كَايْنْشْ",
+      "reading": "mā kāynsh",
+      "meaning": "there is not / none (Maghrebi; MSA: lā yūjadu)",
+      "example": "مَا كَايْنْشْ وَقْتْ بْزَّافْ.",
+      "exampleMeaning": "There is not much time."
+    },
+    {
+      "word": "سَافِي",
+      "reading": "ṣāfī",
+      "meaning": "done / enough / okay (Maghrebi; MSA: kafā)",
+      "example": "سَافِي، نْكَمْلُو غْدْوَة.",
+      "exampleMeaning": "Enough, we will finish tomorrow."
+    },
+    {
+      "word": "عَافَاكْ",
+      "reading": "ʿāfāk",
+      "meaning": "please (Moroccan Darija; MSA: min faḍlik)",
+      "example": "عَافَاكْ، عْطِينِي الْمَا.",
+      "exampleMeaning": "Please, give me the water."
+    },
+    {
+      "word": "زْوِينْ",
+      "reading": "zwīn",
+      "meaning": "nice / beautiful (Maghrebi; MSA: jamīl)",
+      "example": "الدَّارْ زْوِينَة بْزَّافْ.",
+      "exampleMeaning": "The house is very beautiful."
+    },
+    {
+      "word": "دْرِي",
+      "reading": "drī",
+      "meaning": "boy (Moroccan/Algerian; MSA: walad)",
+      "example": "الدْرِي كَيْقْرَا فِي الْمَدْرَسَة.",
+      "exampleMeaning": "The boy studies at school."
+    },
+    {
+      "word": "بْنْتْ",
+      "reading": "bnt",
+      "meaning": "girl (Maghrebi; MSA: bint)",
+      "example": "الْبْنْتْ كَتْكْتَبْ الرِّسَالَة.",
+      "exampleMeaning": "The girl writes the message."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "___ أَنَا بْخِيرْ.",
+          "answer": "كِيفْ دَايِر؟",
+          "hint": "how are you?"
+        },
+        {
+          "sentence": "___ كُلْشِي مْزْيَانْ.",
+          "answer": "لَابَاس؟",
+          "hint": "all good?"
+        },
+        {
+          "sentence": "أَنَا ___ الْيُومْ.",
+          "answer": "بْخِيرْ",
+          "hint": "fine / well"
+        },
+        {
+          "sentence": "___ بْغِيتْ تَاكُلْ؟",
+          "answer": "شْنُو؟",
+          "hint": "what?"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "items": [
+        {
+          "question": "What does ‘كِيفْ دَايِر؟’ mean?",
+          "options": [
+            "all good? / no problem? (Maghrebi; MSA: hal anta bi-khayr)",
+            "how are you? (Maghrebi; MSA: kayfa ḥāluka)",
+            "what? (Maghrebi; MSA: mādhā)",
+            "where? (Maghrebi; MSA: ʾayna)"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What does ‘لَابَاس؟’ mean?",
+          "options": [
+            "fine / well (Maghrebi; MSA: bi-khayr)",
+            "all good? / no problem? (Maghrebi; MSA: hal anta bi-khayr)",
+            "where? (Maghrebi; MSA: ʾayna)",
+            "why? (Maghrebi; MSA: limādhā)"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What does ‘بْخِيرْ’ mean?",
+          "options": [
+            "what? (Maghrebi; MSA: mādhā)",
+            "fine / well (Maghrebi; MSA: bi-khayr)",
+            "why? (Maghrebi; MSA: limādhā)",
+            "now (Moroccan Darija; MSA: al-ʾān)"
+          ],
+          "answer": 1
+        }
+      ]
+    }
+  ]
+}

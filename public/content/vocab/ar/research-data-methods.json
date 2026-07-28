@@ -1,0 +1,159 @@
+{
+  "id": "research-data-methods",
+  "words": [
+    {
+      "word": "بَحْثٌ",
+      "reading": "baḥthun",
+      "meaning": "research",
+      "example": "بَحْثٌ مُنَظَّمٌ يَبْدَأُ بِسُؤَالٍ وَاضِحٍ.",
+      "exampleMeaning": "Organized research begins with a clear question."
+    },
+    {
+      "word": "مَنْهَجٌ",
+      "reading": "manhajun",
+      "meaning": "method",
+      "example": "يَشْرَحُ مَنْهَجٌ خُطُوَاتِ الدِّرَاسَةِ.",
+      "exampleMeaning": "A method explains the steps of the study."
+    },
+    {
+      "word": "فَرَضِيَّةٌ",
+      "reading": "faraḍiyyatun",
+      "meaning": "hypothesis",
+      "example": "فَرَضِيَّةٌ جَيِّدَةٌ فِكْرَةٌ قَابِلَةٌ لِلْقِيَاسِ.",
+      "exampleMeaning": "A good hypothesis is a measurable idea."
+    },
+    {
+      "word": "عَيِّنَةٌ",
+      "reading": "ʿayyinātun",
+      "meaning": "sample",
+      "example": "تُمَثِّلُ عَيِّنَةٌ صَغِيرَةٌ الْمُجْتَمَعَ الْكَبِيرَ.",
+      "exampleMeaning": "A small sample represents the larger population."
+    },
+    {
+      "word": "اِسْتِبْيَانٌ",
+      "reading": "istibyānun",
+      "meaning": "questionnaire",
+      "example": "يَجْمَعُ اِسْتِبْيَانٌ آرَاءَ الْمُشَارِكِينَ.",
+      "exampleMeaning": "A questionnaire collects participants' opinions."
+    },
+    {
+      "word": "مُقَابَلَةٌ",
+      "reading": "muqābalatun",
+      "meaning": "interview",
+      "example": "تَكْشِفُ مُقَابَلَةٌ تَفَاصِيلَ شَخْصِيَّةً.",
+      "exampleMeaning": "An interview reveals personal details."
+    },
+    {
+      "word": "بَيَانَاتٌ",
+      "reading": "bayānātun",
+      "meaning": "data",
+      "example": "تَحْتَاجُ بَيَانَاتٌ دَقِيقَةٌ إِلَى تَنْظِيمٍ جَيِّدٍ.",
+      "exampleMeaning": "Accurate data needs good organization."
+    },
+    {
+      "word": "تَحْلِيلٌ",
+      "reading": "taḥlīlun",
+      "meaning": "analysis",
+      "example": "تَحْلِيلٌ دَقِيقٌ يُظْهِرُ الْعَلَاقَاتِ بَيْنَ الْأَرْقَامِ.",
+      "exampleMeaning": "Precise analysis shows relationships among numbers."
+    },
+    {
+      "word": "إِحْصَاءٌ",
+      "reading": "ʾiḥṣāʾun",
+      "meaning": "statistics",
+      "example": "يُسَاعِدُ إِحْصَاءٌ بَسِيطٌ فِي فَهْمِ النَّتَائِجِ.",
+      "exampleMeaning": "Simple statistics helps in understanding results."
+    },
+    {
+      "word": "نَتِيجَةٌ",
+      "reading": "natījatun",
+      "meaning": "result",
+      "example": "تَظْهَرُ نَتِيجَةٌ مُهِمَّةٌ بَعْدَ التَّحْلِيلِ.",
+      "exampleMeaning": "An important result appears after analysis."
+    },
+    {
+      "word": "جَدْوَلٌ",
+      "reading": "jadwalun",
+      "meaning": "table",
+      "example": "يُرَتِّبُ جَدْوَلٌ الْأَرْقَامَ بِوُضُوحٍ.",
+      "exampleMeaning": "A table arranges numbers clearly."
+    },
+    {
+      "word": "رَسْمٌ بَيَانِيٌّ",
+      "reading": "rasmun bayāniyyun",
+      "meaning": "chart",
+      "example": "يُوَضِّحُ رَسْمٌ بَيَانِيٌّ تَغَيُّرَ النِّسَبِ.",
+      "exampleMeaning": "A chart clarifies the change in percentages."
+    },
+    {
+      "word": "مَصْدَرٌ",
+      "reading": "maṣdarun",
+      "meaning": "source",
+      "example": "يَجِبُ أَنْ يَكُونَ مَصْدَرٌ مَوْثُوقٌ وَاضِحًا.",
+      "exampleMeaning": "A reliable source must be clear."
+    },
+    {
+      "word": "مَرْجِعٌ",
+      "reading": "marjiʿun",
+      "meaning": "reference",
+      "example": "يَذْكُرُ الْبَاحِثُ مَرْجِعًا فِي الْهَامِشِ.",
+      "exampleMeaning": "The researcher mentions a reference in the margin."
+    },
+    {
+      "word": "دِقَّةٌ",
+      "reading": "diqqatun",
+      "meaning": "accuracy",
+      "example": "دِقَّةٌ عَالِيَةٌ تَزِيدُ قِيمَةَ الدِّرَاسَةِ.",
+      "exampleMeaning": "High accuracy increases the value of the study."
+    },
+    {
+      "word": "مُتَغَيِّرٌ",
+      "reading": "mutaghayyirun",
+      "meaning": "variable",
+      "example": "يَتَغَيَّرُ مُتَغَيِّرٌ وَاحِدٌ فِي التَّجْرِبَةِ.",
+      "exampleMeaning": "One variable changes in the experiment."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "___ مُنَظَّمٌ يَبْدَأُ بِسُؤَالٍ وَاضِحٍ.",
+          "answer": "بَحْثٌ",
+          "hint": "research"
+        },
+        {
+          "sentence": "___ جَيِّدَةٌ فِكْرَةٌ قَابِلَةٌ لِلْقِيَاسِ.",
+          "answer": "فَرَضِيَّةٌ",
+          "hint": "hypothesis"
+        },
+        {
+          "sentence": "يَجْمَعُ ___ آرَاءَ الْمُشَارِكِينَ.",
+          "answer": "اِسْتِبْيَانٌ",
+          "hint": "questionnaire"
+        },
+        {
+          "sentence": "___ دَقِيقٌ يُظْهِرُ الْعَلَاقَاتِ بَيْنَ الْأَرْقَامِ.",
+          "answer": "تَحْلِيلٌ",
+          "hint": "analysis"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "What does ‘عَيِّنَةٌ’ mean in research?",
+      "options": [
+        "sample",
+        "source",
+        "chart",
+        "variable"
+      ],
+      "answer": 0
+    }
+  ]
+}

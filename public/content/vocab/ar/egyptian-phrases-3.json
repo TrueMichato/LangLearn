@@ -1,0 +1,183 @@
+{
+  "id": "egyptian-phrases-3",
+  "words": [
+    {
+      "word": "مَا تِقْلَقْش",
+      "reading": "mā tiʾlaqsh",
+      "meaning": "do not worry (Egyptian; MSA: lā taqlaq)",
+      "example": "مَا تِقْلَقْش، كُلّ حَاجَة هَتِبْقَى تَمَامْ.",
+      "exampleMeaning": "Do not worry; everything will be fine."
+    },
+    {
+      "word": "عَلَى فِكْرَة",
+      "reading": "ʿala fikra",
+      "meaning": "by the way (Egyptian)",
+      "example": "عَلَى فِكْرَة، الْمَطْعَمْ قَرِيبْ مِنْ هِنَا.",
+      "exampleMeaning": "By the way, the restaurant is near here."
+    },
+    {
+      "word": "بَصْرَاحَة",
+      "reading": "biṣarāḥa",
+      "meaning": "honestly / frankly (Egyptian)",
+      "example": "بَصْرَاحَة، الْفِيلْمْ عَجَبْنِي جِدًّا.",
+      "exampleMeaning": "Honestly, I liked the film very much."
+    },
+    {
+      "word": "خُد بَالَك",
+      "reading": "khod bālak",
+      "meaning": "take care / pay attention (Egyptian)",
+      "example": "خُد بَالَك مِنَ الشَّارِعْ وَأَنْتَ مَاشِي.",
+      "exampleMeaning": "Pay attention to the street while you are walking."
+    },
+    {
+      "word": "أَنَا جَايّ",
+      "reading": "ana gāyy",
+      "meaning": "I am coming / on my way (Egyptian, male speaker)",
+      "example": "أَنَا جَايّ بَعْدْ خَمْس دَقَايِقْ.",
+      "exampleMeaning": "I am coming in five minutes."
+    },
+    {
+      "word": "حَصَلْ خَيْر",
+      "reading": "ḥaṣal khēr",
+      "meaning": "no harm done / it is okay (Egyptian)",
+      "example": "حَصَلْ خَيْر، مِشْ مُشْكِلَة خَالِصْ.",
+      "exampleMeaning": "It is okay; no problem at all."
+    },
+    {
+      "word": "مَعْلِش",
+      "reading": "maʿlish",
+      "meaning": "never mind / sorry (Egyptian)",
+      "example": "مَعْلِش، إِتْأَخَّرْتْ شْوَيَّة.",
+      "exampleMeaning": "Sorry, I was a little late."
+    },
+    {
+      "word": "مِشْ فَارِق",
+      "reading": "mish fāriʾ",
+      "meaning": "it does not matter (Egyptian)",
+      "example": "مِشْ فَارِق مَعَايَا اللَّوْنْ.",
+      "exampleMeaning": "The color does not matter to me."
+    },
+    {
+      "word": "بَرَاحَة",
+      "reading": "birāḥa",
+      "meaning": "slowly / gently (Egyptian)",
+      "example": "بَرَاحَة، الطِّفْلْ نَايِمْ.",
+      "exampleMeaning": "Gently, the child is asleep."
+    },
+    {
+      "word": "إِسْتَنَّى شْوَيَّة",
+      "reading": "istanna shuwayya",
+      "meaning": "wait a little (Egyptian)",
+      "example": "إِسْتَنَّى شْوَيَّة، أَنَا جَايّ حَالًا.",
+      "exampleMeaning": "Wait a little; I am coming right away."
+    },
+    {
+      "word": "أَنَا مُوَافِق",
+      "reading": "ana muwāfiʾ",
+      "meaning": "I agree (Egyptian, male speaker)",
+      "example": "أَنَا مُوَافِق عَلَى الْخُطَّة دِي.",
+      "exampleMeaning": "I agree to this plan."
+    },
+    {
+      "word": "مَا يِنْفَعْش",
+      "reading": "mā yinfaʿsh",
+      "meaning": "it will not work / not possible (Egyptian)",
+      "example": "مَا يِنْفَعْش نِسَافِرْ مِنْ غَيْرْ جَوَازْ.",
+      "exampleMeaning": "It is not possible to travel without a passport."
+    },
+    {
+      "word": "كِدَه كِدَه",
+      "reading": "kida kida",
+      "meaning": "anyway / in any case (Egyptian)",
+      "example": "كِدَه كِدَه، لَازِمْ نِرْجَعْ بَدْرِي.",
+      "exampleMeaning": "In any case, we must return early."
+    },
+    {
+      "word": "تِسْلَم إِيدَك",
+      "reading": "tislam īdak",
+      "meaning": "thanks for what you made (Egyptian; literally: may your hand be safe)",
+      "example": "الْأَكْلْ جَمِيلْ، تِسْلَم إِيدَك.",
+      "exampleMeaning": "The food is lovely; thank you for making it."
+    },
+    {
+      "word": "يَا رِيت",
+      "reading": "yā rēt",
+      "meaning": "I wish / if only (Egyptian)",
+      "example": "يَا رِيت الْجَوّ يِفْضَلْ حِلْوْ.",
+      "exampleMeaning": "I wish the weather would stay nice."
+    },
+    {
+      "word": "مِشْ قَادِر",
+      "reading": "mish ʾādir",
+      "meaning": "I cannot / not able (Egyptian, male speaker)",
+      "example": "مِشْ قَادِر أَفْتَحْ الْبَابْ لِوَحْدِي.",
+      "exampleMeaning": "I cannot open the door by myself."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "___، كُلّ حَاجَة هَتِبْقَى تَمَامْ.",
+          "answer": "مَا تِقْلَقْش",
+          "hint": "do not worry"
+        },
+        {
+          "sentence": "___، الْمَطْعَمْ قَرِيبْ مِنْ هِنَا.",
+          "answer": "عَلَى فِكْرَة",
+          "hint": "by the way"
+        },
+        {
+          "sentence": "___، الْفِيلْمْ عَجَبْنِي جِدًّا.",
+          "answer": "بَصْرَاحَة",
+          "hint": "honestly / frankly"
+        },
+        {
+          "sentence": "___ مِنَ الشَّارِعْ وَأَنْتَ مَاشِي.",
+          "answer": "خُد بَالَك",
+          "hint": "take care / pay attention"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "items": [
+        {
+          "question": "What does ‘مَا تِقْلَقْش’ mean?",
+          "options": [
+            "by the way (Egyptian)",
+            "do not worry (Egyptian; MSA: lā taqlaq)",
+            "honestly / frankly (Egyptian)",
+            "take care / pay attention (Egyptian)"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What does ‘عَلَى فِكْرَة’ mean?",
+          "options": [
+            "do not worry (Egyptian; MSA: lā taqlaq)",
+            "by the way (Egyptian)",
+            "honestly / frankly (Egyptian)",
+            "take care / pay attention (Egyptian)"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What does ‘بَصْرَاحَة’ mean?",
+          "options": [
+            "do not worry (Egyptian; MSA: lā taqlaq)",
+            "honestly / frankly (Egyptian)",
+            "by the way (Egyptian)",
+            "take care / pay attention (Egyptian)"
+          ],
+          "answer": 1
+        }
+      ]
+    }
+  ]
+}

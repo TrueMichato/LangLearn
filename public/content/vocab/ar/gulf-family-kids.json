@@ -1,0 +1,159 @@
+{
+  "id": "gulf-family-kids",
+  "words": [
+    {
+      "word": "الْيَهَالْ",
+      "reading": "il-yahāl",
+      "meaning": "the kids",
+      "example": "الْيَهَالْ يَلْعَبُونْ فِي الْحَوْشْ.",
+      "exampleMeaning": "The kids are playing in the yard."
+    },
+    {
+      "word": "وَلْدِي",
+      "reading": "waldī",
+      "meaning": "my son",
+      "example": "وَلْدِي يَدْرِسْ فِي الصَّفّ الْأَوَّلْ.",
+      "exampleMeaning": "My son studies in first grade."
+    },
+    {
+      "word": "بِنْتِي",
+      "reading": "bintī",
+      "meaning": "my daughter",
+      "example": "بِنْتِي تِحِبّ الرَّسْمْ وَالْقِرَايَةْ.",
+      "exampleMeaning": "My daughter likes drawing and reading."
+    },
+    {
+      "word": "الْعَايْلَةْ",
+      "reading": "il-ʿāyla",
+      "meaning": "the family",
+      "example": "الْعَايْلَةْ كِلَّهَا بَتْجِي الْجُمْعَةْ.",
+      "exampleMeaning": "The whole family is coming Friday."
+    },
+    {
+      "word": "يَدِّي",
+      "reading": "yaddī",
+      "meaning": "my grandfather",
+      "example": "يَدِّي يِحِبّ سْوَالِفْ الْبَحْرْ.",
+      "exampleMeaning": "My grandfather loves sea stories."
+    },
+    {
+      "word": "يَدَّتِي",
+      "reading": "yaddatī",
+      "meaning": "my grandmother",
+      "example": "يَدَّتِي تْسَوِّي قَهْوَةْ لِلضُّيُوفْ.",
+      "exampleMeaning": "My grandmother makes coffee for the guests."
+    },
+    {
+      "word": "خَالِي",
+      "reading": "khālī",
+      "meaning": "my maternal uncle",
+      "example": "خَالِي بْيَاخِذْنَا لِلسُّوقْ.",
+      "exampleMeaning": "My uncle is taking us to the market."
+    },
+    {
+      "word": "عَمِّي",
+      "reading": "ʿammī",
+      "meaning": "my paternal uncle",
+      "example": "عَمِّي عِنْدَهُ عَزِيمَةْ اللَّيْلَةْ.",
+      "exampleMeaning": "My uncle has a gathering tonight."
+    },
+    {
+      "word": "رَبْعِي",
+      "reading": "rabʿī",
+      "meaning": "my close friends / group",
+      "example": "رَبْعِي بَيُونْ بَعْدَ الْعَصْرْ.",
+      "exampleMeaning": "My friends are coming after the afternoon."
+    },
+    {
+      "word": "بْكْرِي",
+      "reading": "bikrī",
+      "meaning": "my firstborn",
+      "example": "هَذَا بْكْرِي وَالْكُلّ يِدَلِّعُهْ.",
+      "exampleMeaning": "This is my firstborn and everyone spoils him."
+    },
+    {
+      "word": "يَبِي حَلِيبْ",
+      "reading": "yabī ḥalīb",
+      "meaning": "he wants milk",
+      "example": "الصَّغِيرْ يَبِي حَلِيبْ قَبْلَ النَّوْمْ.",
+      "exampleMeaning": "The little one wants milk before sleep."
+    },
+    {
+      "word": "دَلِّعْهُ",
+      "reading": "dalliʿhu",
+      "meaning": "spoil him / pamper him",
+      "example": "لَا دَلِّعْهُ وَاجِدْ، بِيَتْعَوَّدْ.",
+      "exampleMeaning": "Do not spoil him too much; he will get used to it."
+    },
+    {
+      "word": "شْلُونْ عِيَالِكْ",
+      "reading": "shlōn ʿyālik",
+      "meaning": "how are your children?",
+      "example": "شْلُونْ عِيَالِكْ بَعْدَ الْمَدْرَسَةْ؟",
+      "exampleMeaning": "How are your children after school?"
+    },
+    {
+      "word": "مِسْكِينْ تْعَبَانْ",
+      "reading": "miskīn taʿbān",
+      "meaning": "poor thing, he is tired",
+      "example": "مِسْكِينْ تْعَبَانْ مِنِ الْحَرّْ.",
+      "exampleMeaning": "Poor thing, he is tired from the heat."
+    },
+    {
+      "word": "رَوْضَةْ",
+      "reading": "rawḍa",
+      "meaning": "kindergarten",
+      "example": "بِنْتِي دَاخْلَةْ رَوْضَةْ الشَّهْرْ الْجَايْ.",
+      "exampleMeaning": "My daughter is entering kindergarten next month."
+    },
+    {
+      "word": "مُهْرْ",
+      "reading": "muhr",
+      "meaning": "dowry / bridewealth",
+      "example": "تَكَلَّمُوا عَنِ الْمُهْرْ فِي جَلْسَةِ الْأَهْلْ.",
+      "exampleMeaning": "They talked about the dowry at the family meeting."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "___ يَلْعَبُونْ فِي الْحَوْشْ.",
+          "answer": "الْيَهَالْ",
+          "hint": "the kids"
+        },
+        {
+          "sentence": "___ تْسَوِّي قَهْوَةْ لِلضُّيُوفْ.",
+          "answer": "يَدَّتِي",
+          "hint": "my grandmother"
+        },
+        {
+          "sentence": "الصَّغِيرْ ___ قَبْلَ النَّوْمْ.",
+          "answer": "يَبِي حَلِيبْ",
+          "hint": "he wants milk"
+        },
+        {
+          "sentence": "___ بَعْدَ الْمَدْرَسَةْ؟",
+          "answer": "شْلُونْ عِيَالِكْ",
+          "hint": "how are your children?"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "In Gulf Arabic, what does ‘الْيَهَالْ’ mean?",
+      "options": [
+        "the kids",
+        "the family",
+        "the market",
+        "the guests"
+      ],
+      "answer": 0
+    }
+  ]
+}

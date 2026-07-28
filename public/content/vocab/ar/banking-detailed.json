@@ -1,0 +1,183 @@
+{
+  "id": "banking-detailed",
+  "words": [
+    {
+      "word": "حِسَابٌ جَارٍ",
+      "reading": "ḥisābun jārin",
+      "meaning": "checking account / current account",
+      "example": "فَتَحَ التَّاجِرُ حِسَابًا جَارِيًا لِلشَّرِكَةِ.",
+      "exampleMeaning": "The merchant opened a current account for the company."
+    },
+    {
+      "word": "حِسَابُ تَوْفِيرٍ",
+      "reading": "ḥisābu tawfīrin",
+      "meaning": "savings account",
+      "example": "تَضَعُ لَيْلَى جُزْءًا مِنْ رَاتِبِهَا فِي حِسَابِ تَوْفِيرٍ.",
+      "exampleMeaning": "Layla puts part of her salary in a savings account."
+    },
+    {
+      "word": "فَائِدَةٌ",
+      "reading": "fāʾidatun",
+      "meaning": "interest",
+      "example": "اِرْتَفَعَتِ الْفَائِدَةُ عَلَى الْقَرْضِ هٰذَا الْعَامَ.",
+      "exampleMeaning": "The interest on the loan rose this year."
+    },
+    {
+      "word": "قَرْضٌ",
+      "reading": "qarḍun",
+      "meaning": "loan",
+      "example": "طَلَبَ الْمُهَنْدِسُ قَرْضًا لِشِرَاءِ بَيْتٍ.",
+      "exampleMeaning": "The engineer requested a loan to buy a house."
+    },
+    {
+      "word": "رَهْنٌ عَقَارِيٌّ",
+      "reading": "rahnun ʿaqāriyyun",
+      "meaning": "mortgage",
+      "example": "يُسَدِّدُ سَامِي رَهْنًا عَقَارِيًّا كُلَّ شَهْرٍ.",
+      "exampleMeaning": "Sami pays a mortgage every month."
+    },
+    {
+      "word": "تَحْوِيلٌ مَصْرِفِيٌّ",
+      "reading": "taḥwīlun maṣrifiyyun",
+      "meaning": "bank transfer",
+      "example": "أَرْسَلَتِ الشَّرِكَةُ تَحْوِيلًا مَصْرِفِيًّا إِلَى الْمُوَرِّدِ.",
+      "exampleMeaning": "The company sent a bank transfer to the supplier."
+    },
+    {
+      "word": "إِيدَاعٌ",
+      "reading": "ʾīdāʿun",
+      "meaning": "deposit",
+      "example": "سَجَّلَ الْمُوَظَّفُ إِيدَاعًا نَقْدِيًّا فِي الْحِسَابِ.",
+      "exampleMeaning": "The employee recorded a cash deposit in the account."
+    },
+    {
+      "word": "سَحْبٌ",
+      "reading": "saḥbun",
+      "meaning": "withdrawal",
+      "example": "أَجْرَى الْعَمِيلُ سَحْبًا مِنَ الصَّرَّافِ الآلِيِّ.",
+      "exampleMeaning": "The customer made a withdrawal from the ATM."
+    },
+    {
+      "word": "رَصِيدٌ",
+      "reading": "raṣīdun",
+      "meaning": "balance",
+      "example": "يَظْهَرُ الرَّصِيدُ فِي التَّطْبِيقِ الْمَصْرِفِيِّ.",
+      "exampleMeaning": "The balance appears in the banking app."
+    },
+    {
+      "word": "كَشْفُ حِسَابٍ",
+      "reading": "kashfu ḥisābin",
+      "meaning": "account statement",
+      "example": "طَبَعَتْ مَرْيَمُ كَشْفَ حِسَابٍ لِلشَّهْرِ الْمَاضِي.",
+      "exampleMeaning": "Maryam printed an account statement for last month."
+    },
+    {
+      "word": "رَقْمٌ سِرِّيٌّ",
+      "reading": "raqmun sirriyyun",
+      "meaning": "PIN / secret number",
+      "example": "لَا تُشَارِكْ رَقْمَكَ السِّرِّيَّ مَعَ أَحَدٍ.",
+      "exampleMeaning": "Do not share your PIN with anyone."
+    },
+    {
+      "word": "بِطَاقَةٌ اِئْتِمَانِيَّةٌ",
+      "reading": "biṭāqatun iʾtimāniyyatun",
+      "meaning": "credit card",
+      "example": "دَفَعَ السَّائِحُ بِبِطَاقَةٍ اِئْتِمَانِيَّةٍ.",
+      "exampleMeaning": "The tourist paid with a credit card."
+    },
+    {
+      "word": "رُسُومٌ",
+      "reading": "rusūmun",
+      "meaning": "fees",
+      "example": "يَفْرِضُ الْمَصْرِفُ رُسُومًا عَلَى الْخِدْمَةِ.",
+      "exampleMeaning": "The bank charges fees for the service."
+    },
+    {
+      "word": "عُمْلَةٌ أَجْنَبِيَّةٌ",
+      "reading": "ʿumlatun ʾajnabiyyatun",
+      "meaning": "foreign currency",
+      "example": "اِشْتَرَى الْمُسَافِرُ عُمْلَةً أَجْنَبِيَّةً قَبْلَ الرِّحْلَةِ.",
+      "exampleMeaning": "The traveler bought foreign currency before the trip."
+    },
+    {
+      "word": "ضَمَانٌ",
+      "reading": "ḍamānun",
+      "meaning": "guarantee / collateral",
+      "example": "طَلَبَ الْمَصْرِفُ ضَمَانًا لِلْقَرْضِ.",
+      "exampleMeaning": "The bank requested collateral for the loan."
+    },
+    {
+      "word": "اِعْتِمَادٌ مُسْتَنَدِيٌّ",
+      "reading": "iʿtimādun mustanadiyyun",
+      "meaning": "letter of credit",
+      "example": "اِسْتَخْدَمَ التَّاجِرُ اِعْتِمَادًا مُسْتَنَدِيًّا لِتَمْوِيلِ التِّجَارَةِ.",
+      "exampleMeaning": "The merchant used a letter of credit to finance the trade."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "هٰذَا ___ لِلرَّاتِبِ.",
+          "answer": "حِسَابٌ جَارٍ",
+          "hint": "checking account"
+        },
+        {
+          "sentence": "هٰذَا ___ إِلَى شَرِيكِهِ.",
+          "answer": "تَحْوِيلٌ مَصْرِفِيٌّ",
+          "hint": "transfer"
+        },
+        {
+          "sentence": "يَظْهَرُ ___ فِي التَّطْبِيقِ.",
+          "answer": "رَصِيدٌ",
+          "hint": "balance"
+        },
+        {
+          "sentence": "هٰذَا ___ لِلْمَصْرِفِ.",
+          "answer": "ضَمَانٌ",
+          "hint": "guarantee / collateral"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "items": [
+        {
+          "question": "What does ‘حِسَابُ تَوْفِيرٍ’ mean?",
+          "options": [
+            "fees",
+            "savings account",
+            "foreign currency",
+            "loan"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What does ‘كَشْفُ حِسَابٍ’ mean?",
+          "options": [
+            "account statement",
+            "credit card",
+            "deposit",
+            "mortgage"
+          ],
+          "answer": 0
+        },
+        {
+          "question": "What does ‘اِعْتِمَادٌ مُسْتَنَدِيٌّ’ mean?",
+          "options": [
+            "PIN",
+            "letter of credit",
+            "withdrawal",
+            "balance"
+          ],
+          "answer": 1
+        }
+      ]
+    }
+  ]
+}

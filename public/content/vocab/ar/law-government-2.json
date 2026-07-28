@@ -1,0 +1,183 @@
+{
+  "id": "law-government-2",
+  "words": [
+    {
+      "word": "مُوَاطَنَةٌ",
+      "reading": "muwāṭanatun",
+      "meaning": "citizenship",
+      "example": "تَعْنِي الْمُوَاطَنَةُ مُشَارَكَةً وَمَسْؤُولِيَّةً.",
+      "exampleMeaning": "Citizenship means participation and responsibility."
+    },
+    {
+      "word": "جِنْسِيَّةٌ",
+      "reading": "jinsiyyatun",
+      "meaning": "nationality",
+      "example": "يَحْمِلُ الطِّفْلُ جِنْسِيَّةَ وَالِدَيْهِ.",
+      "exampleMeaning": "The child holds the nationality of his parents."
+    },
+    {
+      "word": "حَقٌّ",
+      "reading": "ḥaqqun",
+      "meaning": "right",
+      "example": "التَّعْلِيمُ حَقٌّ لِكُلِّ طِفْلٍ.",
+      "exampleMeaning": "Education is a right for every child."
+    },
+    {
+      "word": "وَاجِبٌ",
+      "reading": "wājibun",
+      "meaning": "duty",
+      "example": "حِمَايَةُ الْمَرَافِقِ وَاجِبٌ عَامٌّ.",
+      "exampleMeaning": "Protecting public facilities is a public duty."
+    },
+    {
+      "word": "دُسْتُورٌ",
+      "reading": "dustūrun",
+      "meaning": "constitution",
+      "example": "يُحَدِّدُ الدُّسْتُورُ صَلَاحِيَّاتِ السُّلْطَاتِ.",
+      "exampleMeaning": "The constitution defines the powers of the authorities."
+    },
+    {
+      "word": "اِنْتِخَابَاتٌ",
+      "reading": "intikhābātun",
+      "meaning": "elections",
+      "example": "جَرَتْ اِنْتِخَابَاتٌ مَحَلِّيَّةٌ فِي أَجْوَاءٍ هَادِئَةٍ.",
+      "exampleMeaning": "Local elections took place in a calm atmosphere."
+    },
+    {
+      "word": "اِقْتِرَاعٌ",
+      "reading": "iqtirāʿun",
+      "meaning": "voting / balloting",
+      "example": "بَدَأَ اِقْتِرَاعٌ عَامٌّ صَبَاحًا.",
+      "exampleMeaning": "A general vote began in the morning."
+    },
+    {
+      "word": "مُرَشَّحٌ",
+      "reading": "murashshaḥun",
+      "meaning": "candidate",
+      "example": "قَدَّمَ مُرَشَّحٌ بَرْنَامَجًا وَاضِحًا.",
+      "exampleMeaning": "A candidate presented a clear platform."
+    },
+    {
+      "word": "نَاخِبٌ",
+      "reading": "nākhibun",
+      "meaning": "voter",
+      "example": "سَأَلَ نَاخِبٌ عَنِ الْخِدْمَاتِ الْعَامَّةِ.",
+      "exampleMeaning": "A voter asked about public services."
+    },
+    {
+      "word": "بَرْلَمَانٌ",
+      "reading": "barlamānun",
+      "meaning": "parliament",
+      "example": "نَاقَشَ الْبَرْلَمَانُ قَانُونًا جَدِيدًا.",
+      "exampleMeaning": "Parliament discussed a new law."
+    },
+    {
+      "word": "حُكُومَةٌ",
+      "reading": "ḥukūmatun",
+      "meaning": "government",
+      "example": "أَعْلَنَتِ الْحُكُومَةُ خُطَّةً لِلصِّحَّةِ.",
+      "exampleMeaning": "The government announced a plan for health care."
+    },
+    {
+      "word": "مُعَارَضَةٌ",
+      "reading": "muʿāraḍatun",
+      "meaning": "opposition",
+      "example": "طَلَبَتِ الْمُعَارَضَةُ نِقَاشًا عَلَنِيًّا.",
+      "exampleMeaning": "The opposition requested a public debate."
+    },
+    {
+      "word": "حُرِّيَّةُ التَّعْبِيرِ",
+      "reading": "ḥurriyyatu t-taʿbīri",
+      "meaning": "freedom of expression",
+      "example": "تَحْمِي الْمَحْكَمَةُ حُرِّيَّةَ التَّعْبِيرِ.",
+      "exampleMeaning": "The court protects freedom of expression."
+    },
+    {
+      "word": "مُسَاوَاةٌ",
+      "reading": "musāwātun",
+      "meaning": "equality",
+      "example": "تَدْعَمُ الْقَوَانِينُ مُسَاوَاةً أَمَامَ الْقَانُونِ.",
+      "exampleMeaning": "The laws support equality before the law."
+    },
+    {
+      "word": "مَسْؤُولِيَّةٌ",
+      "reading": "masʾūliyyatun",
+      "meaning": "responsibility",
+      "example": "تَحَمَّلَ الْوَزِيرُ مَسْؤُولِيَّةً كَبِيرَةً.",
+      "exampleMeaning": "The minister assumed a great responsibility."
+    },
+    {
+      "word": "شَفَافِيَّةٌ",
+      "reading": "shafāfiyyatun",
+      "meaning": "transparency",
+      "example": "تَزِيدُ الشَّفَافِيَّةُ ثِقَةَ الْمُوَاطِنِينَ.",
+      "exampleMeaning": "Transparency increases citizens' trust."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "هٰذِهِ ___ كَامِلَةٌ.",
+          "answer": "مُوَاطَنَةٌ",
+          "hint": "citizenship"
+        },
+        {
+          "sentence": "يَحْمِي ___ حُقُوقَ النَّاسِ.",
+          "answer": "دُسْتُورٌ",
+          "hint": "constitution"
+        },
+        {
+          "sentence": "هٰذَا ___ وَطَنِيٌّ.",
+          "answer": "وَاجِبٌ",
+          "hint": "duty"
+        },
+        {
+          "sentence": "هٰذِهِ ___ فِي الْعَمَلِ.",
+          "answer": "شَفَافِيَّةٌ",
+          "hint": "transparency"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "items": [
+        {
+          "question": "What does ‘اِنْتِخَابَاتٌ’ mean?",
+          "options": [
+            "parliament",
+            "elections",
+            "nationality",
+            "opposition"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What does ‘نَاخِبٌ’ mean?",
+          "options": [
+            "candidate",
+            "voter",
+            "government",
+            "responsibility"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What does ‘حُرِّيَّةُ التَّعْبِيرِ’ mean?",
+          "options": [
+            "freedom of expression",
+            "equality",
+            "citizenship",
+            "duty"
+          ],
+          "answer": 0
+        }
+      ]
+    }
+  ]
+}

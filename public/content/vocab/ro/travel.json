@@ -1,0 +1,178 @@
+{
+  "id": "travel",
+  "words": [
+    {
+      "word": "călătorie",
+      "reading": "kuh-luh-toh-ree-eh",
+      "meaning": "trip / travel",
+      "example": "O călătorie la munte începe mâine.",
+      "exampleMeaning": "A trip to the mountains begins tomorrow."
+    },
+    {
+      "word": "vacanță",
+      "reading": "vah-kahn-tsuh",
+      "meaning": "vacation",
+      "example": "O vacanță la mare este relaxantă.",
+      "exampleMeaning": "A vacation at the seaside is relaxing."
+    },
+    {
+      "word": "hotel",
+      "reading": "hoh-tel",
+      "meaning": "hotel",
+      "example": "Stau la hotel aproape de gară.",
+      "exampleMeaning": "I stay at a hotel near the train station."
+    },
+    {
+      "word": "pașaport",
+      "reading": "pah-shah-port",
+      "meaning": "passport",
+      "example": "Port un pașaport valabil.",
+      "exampleMeaning": "I carry a valid passport."
+    },
+    {
+      "word": "bagaj",
+      "reading": "bah-gahzh",
+      "meaning": "luggage",
+      "example": "Un bagaj greu rămâne la recepție.",
+      "exampleMeaning": "A heavy luggage bag stays at reception."
+    },
+    {
+      "word": "bilet",
+      "reading": "bee-let",
+      "meaning": "ticket",
+      "example": "Un bilet de avion costă mult.",
+      "exampleMeaning": "A plane ticket costs a lot."
+    },
+    {
+      "word": "rezervare",
+      "reading": "reh-zehr-vah-reh",
+      "meaning": "reservation",
+      "example": "Am rezervare pentru două nopți.",
+      "exampleMeaning": "I have a reservation for two nights."
+    },
+    {
+      "word": "recepție",
+      "reading": "reh-chep-tsee-eh",
+      "meaning": "reception desk",
+      "example": "Mă opresc la recepție pentru cheie.",
+      "exampleMeaning": "I stop at reception for the key."
+    },
+    {
+      "word": "hartă",
+      "reading": "hahr-tuh",
+      "meaning": "map",
+      "example": "O hartă arată centrul vechi.",
+      "exampleMeaning": "A map shows the old center."
+    },
+    {
+      "word": "ghid",
+      "reading": "geed",
+      "meaning": "guide",
+      "example": "Un ghid explică istoria orașului.",
+      "exampleMeaning": "A guide explains the city’s history."
+    },
+    {
+      "word": "muzeu",
+      "reading": "moo-zeh-oo",
+      "meaning": "museum",
+      "example": "Vizitez un muzeu de artă.",
+      "exampleMeaning": "I visit an art museum."
+    },
+    {
+      "word": "plajă",
+      "reading": "plah-zhuh",
+      "meaning": "beach",
+      "example": "O plajă curată este liniștită dimineața.",
+      "exampleMeaning": "A clean beach is quiet in the morning."
+    },
+    {
+      "word": "munte",
+      "reading": "moon-teh",
+      "meaning": "mountain",
+      "example": "Urc pe munte cu prietenii.",
+      "exampleMeaning": "I climb the mountain with friends."
+    },
+    {
+      "word": "oraș",
+      "reading": "oh-rahsh",
+      "meaning": "city",
+      "example": "Un oraș vechi are străzi înguste.",
+      "exampleMeaning": "An old city has narrow streets."
+    },
+    {
+      "word": "străin",
+      "reading": "struh-een",
+      "meaning": "foreigner / foreign",
+      "example": "Un străin cere indicații.",
+      "exampleMeaning": "A foreigner asks for directions."
+    },
+    {
+      "word": "turist",
+      "reading": "too-reest",
+      "meaning": "tourist",
+      "example": "Un turist fotografiază clădirea.",
+      "exampleMeaning": "A tourist photographs the building."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "Am ___ pentru două nopți.",
+          "answer": "rezervare",
+          "hint": "reservation"
+        },
+        {
+          "sentence": "Vizitez un ___ de artă.",
+          "answer": "muzeu",
+          "hint": "museum"
+        },
+        {
+          "sentence": "Un ___ cere indicații.",
+          "answer": "străin",
+          "hint": "foreigner"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "items": [
+        {
+          "question": "What does 'pașaport' mean?",
+          "options": [
+            "ticket",
+            "passport",
+            "luggage",
+            "hotel"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "How do you say 'beach' in Romanian?",
+          "options": [
+            "plajă",
+            "munte",
+            "oraș",
+            "hartă"
+          ],
+          "answer": 0
+        },
+        {
+          "question": "What does 'ghid' mean?",
+          "options": [
+            "tourist",
+            "museum",
+            "guide",
+            "reservation"
+          ],
+          "answer": 2
+        }
+      ]
+    }
+  ]
+}

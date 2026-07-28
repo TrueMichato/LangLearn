@@ -23,7 +23,7 @@ A **design-detector hook is active** in this repo — it scans UI files after ed
 
 ## Project Overview
 
-LangLearn is a local-first Progressive Web App for learning languages (Japanese, Russian, Portuguese, extensible). "Kind learning" philosophy — rewards effort, no penalties for mistakes. Deployed at `https://truemichato.github.io/LangLearn/`.
+LangLearn is a local-first Progressive Web App for learning languages (Japanese, Russian, Portuguese, Spanish, Arabic, extensible). "Kind learning" philosophy — rewards effort, no penalties for mistakes. Deployed at `https://truemichato.github.io/LangLearn/`.
 
 ## Tech Stack
 
@@ -51,7 +51,9 @@ npm run lint      # ESLint
 
 1. **Content fetching** — ALWAYS prefix with `import.meta.env.BASE_URL`: `` fetch(`${import.meta.env.BASE_URL}content/grammar/ja/index.json`) ``
 2. **Dark mode** — Every component MUST have `dark:` variants on all colors. Black text on dark bg is the #1 recurring bug.
-3. **Language codes** — Use 2-letter codes internally (`ja`, `ru`, `pt`). Display via `getLanguageLabel(code)` from `src/lib/languages.ts`. Never hardcode "Japanese" or "JA".
+3. **Language codes** — Use 2-letter codes internally (`ja`, `ru`, `pt`, `es`, `ar`). Display via `getLanguageLabel(code)` from `src/lib/languages.ts`. Never hardcode "Japanese" or "JA".
+   - **RTL** — Arabic (`ar`) is right-to-left. Set `rtl: true` on the language in `src/lib/languages.ts` and mark every element that renders *target-language* text with `dir` via `isRTL`/`rtlProps` from `src/lib/rtl.ts` (flashcards, reader, grammar examples, sentence tiles, cloze, vocab, dictation, translation, lyrics). Leave English-primary grammar prose LTR.
+   - **Arabic dialects** — one `ar` code = MSA shared core; `arabicDialect` + `arabicColloquialFocus` settings surface dialect-tagged content (see `src/lib/arabic-dialects.ts`). Dialect vocab lessons carry a `dialect` field in their index entry; `VocabLessons.tsx` filters to MSA + the chosen dialect (hiding other dialects), badges dialect lessons, and — with colloquial focus on — surfaces colloquial lessons first (locking is reindexed to the visible list). The **Dialects hub** (`src/pages/Dialects.tsx`, route `/dialects`, Learn card shown when `ar` is active) shows per-dialect pronunciation/grammar features + a cross-dialect phrase comparison from `src/data/dialects/phrases.ts` (`DIALECT_PROFILES`, `DIALECT_PHRASES`); colloquial grammar lessons live in the "🗣️ Colloquial & Dialects" grammar group.
 4. **DB queries** — Only `.where()` on INDEXED fields. Non-indexed → `.toArray()` then `.filter()`. Check `src/db/schema.ts` for indexes.
 5. **DB migrations** — Never modify existing version stores. Always add `db.version(N+1)`.
 6. **XP recording** — Two sources: timer auto-records to `studySessions` table; bonus XP via `useXPStore.getState().addXP(amount)`. Dashboard sums both.
@@ -68,7 +70,7 @@ src/
 │   ├── Review.tsx       # SRS review — 6 card types (incl. grammar), keyboard shortcuts
 │   ├── Words.tsx        # Vocabulary browser — search, filter, study sets, CSV import
 │   ├── Reader.tsx       # Immersion reader — furigana, word status highlighting, word mining
-│   ├── Learn.tsx        # Hub → Grammar, Letters, Vocab, Sentences, Conjugations, Listening, Music, Translation, Tests
+│   ├── Learn.tsx        # Hub → Grammar, Letters, Vocab, Dialects, Sentences, Conjugations, Listening, Music, Translation, Minimal Pairs, Numbers, Tests
 │   ├── Grammar.tsx      # Grammar lesson browser + LessonView (auto-creates SRS grammar cards)
 │   ├── VocabLessons.tsx # Vocabulary lesson browser
 │   ├── LetterPractice.tsx # Letter chart/draw/quiz per alphabet
@@ -91,9 +93,9 @@ src/
 └── workers/             # kuromoji.worker.ts (Japanese tokenizer)
 
 public/content/          # Runtime-fetched lesson content
-├── grammar/{ja,ru,pt}/   # 35 lessons each: index.json + *.md (with <!-- quiz: {...} --> and <!-- grammar-card: {...} --> blocks)
-├── vocab/{ja,ru,pt}/     # 40 lessons each: index.json + *.json (words + exercises)
-├── reading/{ja,ru,pt}/   # 10 curated texts each: index.json + *.txt (3 difficulty levels)
+├── grammar/{ja,ru,pt,es,ar}/   # 35+ lessons each: index.json + *.md (with <!-- quiz: {...} --> and <!-- grammar-card: {...} --> blocks). grammar-card blocks are SRS metadata, stripped from display by LessonView.
+├── vocab/{ja,ru,pt,es,ar}/     # 40 lessons each: index.json + *.json (words + exercises)
+├── reading/{ja,ru,pt,es,ar}/   # 10 curated texts each: index.json + *.txt (3 difficulty levels)
 └── dict/                # Kuromoji dictionary files
 ```
 
@@ -132,7 +134,7 @@ Time: 10 XP/5min | Review: 2/card | Word added: 5 | Vocab lesson: 25 | Test: 30+
 
 **Vocab lessons** (`.json`): `{ id, words: [{word, reading, meaning, example, exampleMeaning}], exercises: [{type:'match'|'fill-blank'|'multiple-choice', ...}] }`
 
-**Alphabets** (`src/data/alphabets/`): `{ char, romanji, group, strokes?, meaning? }` — Hiragana(81), Katakana(80), Kanji(403 N5+N4+N3), Cyrillic(33)
+**Alphabets** (`src/data/alphabets/`): `{ char, romanji, group, strokes?, meaning? }` — Hiragana(81), Katakana(80), Kanji(403 N5+N4+N3), Cyrillic(33), Arabic(28 letters + harakat + hamza/special forms + numerals)
 
 ## Navigation
 

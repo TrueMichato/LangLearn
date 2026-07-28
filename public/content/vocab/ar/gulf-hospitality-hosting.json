@@ -1,0 +1,159 @@
+{
+  "id": "gulf-hospitality-hosting",
+  "words": [
+    {
+      "word": "حَيَّاكْ",
+      "reading": "ḥayyāk",
+      "meaning": "welcome",
+      "example": "حَيَّاكْ فِي بَيْتِنَا أَيَّ وَقْتْ.",
+      "exampleMeaning": "Welcome to our house anytime."
+    },
+    {
+      "word": "تَفَضَّلْ",
+      "reading": "tfaḍḍal",
+      "meaning": "please come in",
+      "example": "تَفَضَّلْ، الْمَجْلِسْ جَاهِزْ.",
+      "exampleMeaning": "Please come in; the sitting room is ready."
+    },
+    {
+      "word": "قَهْوَةْ",
+      "reading": "gahwa",
+      "meaning": "coffee",
+      "example": "تِبِي قَهْوَةْ وَيَّا التَّمْرْ؟",
+      "exampleMeaning": "Do you want coffee with dates?"
+    },
+    {
+      "word": "دَلَّةْ",
+      "reading": "dalla",
+      "meaning": "Arabic coffee pot",
+      "example": "الدَّلَّةْ حَارَّةْ عَلَى النَّارْ.",
+      "exampleMeaning": "The coffee pot is hot on the fire."
+    },
+    {
+      "word": "فِنْجَانْ",
+      "reading": "finjān",
+      "meaning": "small coffee cup",
+      "example": "خُذْ فِنْجَانْ قَهْوَةْ قَبْلَ الْعَشَا.",
+      "exampleMeaning": "Take a small cup of coffee before dinner."
+    },
+    {
+      "word": "تَمْرْ",
+      "reading": "tamr",
+      "meaning": "dates",
+      "example": "هَذَا التَّمْرْ مِنِ الْمَزْرَعَةْ.",
+      "exampleMeaning": "These dates are from the farm."
+    },
+    {
+      "word": "عَشَا",
+      "reading": "ʿashā",
+      "meaning": "dinner",
+      "example": "الْعَشَا بَعْدَ صَلَاةِ الْعِشَا.",
+      "exampleMeaning": "Dinner is after the night prayer."
+    },
+    {
+      "word": "مَجْلِسْ",
+      "reading": "majlis",
+      "meaning": "sitting room",
+      "example": "النَّاسْ قَاعْدِينْ فِي الْمَجْلِسْ.",
+      "exampleMeaning": "The people are sitting in the sitting room."
+    },
+    {
+      "word": "تَوَّ النَّاسْ",
+      "reading": "tawwa n-nās",
+      "meaning": "it is still early",
+      "example": "لَا تِمْشِي، تَوَّ النَّاسْ.",
+      "exampleMeaning": "Do not leave; it is still early."
+    },
+    {
+      "word": "مَا قَصَّرْتْ",
+      "reading": "mā gaṣṣart",
+      "meaning": "you were generous / thanks",
+      "example": "مَا قَصَّرْتْ، كُلُّ شَيْءْ كَانْ زِينْ.",
+      "exampleMeaning": "Thank you; everything was good."
+    },
+    {
+      "word": "سَمّْ",
+      "reading": "samm",
+      "meaning": "say it / I am listening",
+      "example": "سَمّْ، شْتِبِي مِنِّي؟",
+      "exampleMeaning": "Say it; what do you want from me?"
+    },
+    {
+      "word": "عَلَى رَاحْتِكْ",
+      "reading": "ʿalā rāḥtik",
+      "meaning": "at your ease",
+      "example": "كُلْ عَلَى رَاحْتِكْ وَلَا تِسْتَحِي.",
+      "exampleMeaning": "Eat at your ease and do not be shy."
+    },
+    {
+      "word": "زُورْنَا",
+      "reading": "zūrnā",
+      "meaning": "visit us",
+      "example": "زُورْنَا فِي الْوِيكِنْدْ إِنْ شَاءَ اللهْ.",
+      "exampleMeaning": "Visit us on the weekend, God willing."
+    },
+    {
+      "word": "بَيْتَكْ بَيْتِنَا",
+      "reading": "bētak bētnā",
+      "meaning": "make yourself at home",
+      "example": "اِرْتَاحْ، بَيْتَكْ بَيْتِنَا.",
+      "exampleMeaning": "Relax; make yourself at home."
+    },
+    {
+      "word": "أَبْشِرْ",
+      "reading": "abshir",
+      "meaning": "sure / you got it",
+      "example": "تِبِي شَايْ؟ أَبْشِرْ.",
+      "exampleMeaning": "Do you want tea? Sure."
+    },
+    {
+      "word": "نِتْعَشَّى",
+      "reading": "nitʿashshā",
+      "meaning": "we will have dinner",
+      "example": "نِتْعَشَّى مَعَ الْأَهْلْ اللَّيْلَةْ.",
+      "exampleMeaning": "We will have dinner with the family tonight."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "___ فِي بَيْتِنَا أَيَّ وَقْتْ.",
+          "answer": "حَيَّاكْ",
+          "hint": "welcome"
+        },
+        {
+          "sentence": "تِبِي ___ وَيَّا التَّمْرْ؟",
+          "answer": "قَهْوَةْ",
+          "hint": "coffee"
+        },
+        {
+          "sentence": "لَا تِمْشِي، ___.",
+          "answer": "تَوَّ النَّاسْ",
+          "hint": "it is still early"
+        },
+        {
+          "sentence": "اِرْتَاحْ، ___.",
+          "answer": "بَيْتَكْ بَيْتِنَا",
+          "hint": "make yourself at home"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "In Gulf Arabic hospitality, what does ‘تَوَّ النَّاسْ’ mean?",
+      "options": [
+        "it is still early",
+        "coffee pot",
+        "visit us",
+        "small cup"
+      ],
+      "answer": 0
+    }
+  ]
+}

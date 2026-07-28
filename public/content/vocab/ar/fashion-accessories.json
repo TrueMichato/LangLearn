@@ -1,0 +1,183 @@
+{
+  "id": "fashion-accessories",
+  "words": [
+    {
+      "word": "مِعْطَفٌ",
+      "reading": "miʿṭafun",
+      "meaning": "coat",
+      "example": "مِعْطَفٌ دَافِئٌ يَلْزَمُ فِي الشِّتَاءِ.",
+      "exampleMeaning": "A warm coat is necessary in winter."
+    },
+    {
+      "word": "بَدْلَةٌ",
+      "reading": "badlatun",
+      "meaning": "suit",
+      "example": "بَدْلَةٌ رَسْمِيَّةٌ تُنَاسِبُ الْمُقَابَلَةَ.",
+      "exampleMeaning": "A formal suit suits the interview."
+    },
+    {
+      "word": "فُسْتَانٌ",
+      "reading": "fustānun",
+      "meaning": "dress",
+      "example": "فُسْتَانٌ أَزْرَقُ يَلْفِتُ النَّظَرَ.",
+      "exampleMeaning": "A blue dress catches the eye."
+    },
+    {
+      "word": "حِزَامٌ",
+      "reading": "ḥizāmun",
+      "meaning": "belt",
+      "example": "حِزَامٌ جِلْدِيٌّ يُكْمِلُ الْمَلَابِسَ.",
+      "exampleMeaning": "A leather belt completes the clothes."
+    },
+    {
+      "word": "قُبَّعَةٌ",
+      "reading": "qubbaʿatun",
+      "meaning": "hat",
+      "example": "قُبَّعَةٌ وَاسِعَةٌ تَحْمِي مِنَ الشَّمْسِ.",
+      "exampleMeaning": "A wide hat protects from the sun."
+    },
+    {
+      "word": "نَظَّارَةٌ شَمْسِيَّةٌ",
+      "reading": "naẓẓāratun shamsiyyatun",
+      "meaning": "sunglasses",
+      "example": "نَظَّارَةٌ شَمْسِيَّةٌ تُفِيدُ عَلَى الشَّاطِئِ.",
+      "exampleMeaning": "Sunglasses are useful on the beach."
+    },
+    {
+      "word": "قِلَادَةٌ",
+      "reading": "qilādatun",
+      "meaning": "necklace",
+      "example": "قِلَادَةٌ فِضِّيَّةٌ تَلْمَعُ فِي الضَّوْءِ.",
+      "exampleMeaning": "A silver necklace shines in the light."
+    },
+    {
+      "word": "خَاتَمٌ",
+      "reading": "khātamun",
+      "meaning": "ring",
+      "example": "خَاتَمٌ ذَهَبِيٌّ عَلَى إِصْبَعِهَا.",
+      "exampleMeaning": "A gold ring is on her finger."
+    },
+    {
+      "word": "سِوَارٌ",
+      "reading": "siwārun",
+      "meaning": "bracelet",
+      "example": "سِوَارٌ رَقِيقٌ حَوْلَ مِعْصَمِهَا.",
+      "exampleMeaning": "A delicate bracelet is around her wrist."
+    },
+    {
+      "word": "حَقِيبَةُ يَدٍ",
+      "reading": "ḥaqībatu yadin",
+      "meaning": "handbag",
+      "example": "حَقِيبَةُ يَدٍ صَغِيرَةٌ تَكْفِي لِلْمِحْفَظَةِ.",
+      "exampleMeaning": "A small handbag is enough for the wallet."
+    },
+    {
+      "word": "مِحْفَظَةٌ",
+      "reading": "miḥfaẓatun",
+      "meaning": "wallet",
+      "example": "مِحْفَظَةٌ سَوْدَاءُ فِي الْحَقِيبَةِ.",
+      "exampleMeaning": "A black wallet is in the bag."
+    },
+    {
+      "word": "شَالٌ",
+      "reading": "shālun",
+      "meaning": "shawl / scarf",
+      "example": "شَالٌ صُوفِيٌّ فَوْقَ الْمِعْطَفِ.",
+      "exampleMeaning": "A wool shawl is over the coat."
+    },
+    {
+      "word": "رَبْطَةُ عُنُقٍ",
+      "reading": "rabṭatu ʿunuqin",
+      "meaning": "tie / necktie",
+      "example": "رَبْطَةُ عُنُقٍ حَمْرَاءُ تُنَاسِبُ الْقَمِيصَ.",
+      "exampleMeaning": "A red tie suits the shirt."
+    },
+    {
+      "word": "حِذَاءٌ رَسْمِيٌّ",
+      "reading": "ḥidhāʾun rasmiyyun",
+      "meaning": "formal shoes",
+      "example": "حِذَاءٌ رَسْمِيٌّ يُنَاسِبُ الْحَفْلَ.",
+      "exampleMeaning": "Formal shoes suit the ceremony."
+    },
+    {
+      "word": "زِرٌّ",
+      "reading": "zirrun",
+      "meaning": "button",
+      "example": "زِرٌّ صَغِيرٌ سَقَطَ مِنَ الْقَمِيصِ.",
+      "exampleMeaning": "A small button fell from the shirt."
+    },
+    {
+      "word": "أُسْلُوبٌ",
+      "reading": "ʾuslūbun",
+      "meaning": "style",
+      "example": "أُسْلُوبٌ بَسِيطٌ يَبْدُو أَنِيقًا.",
+      "exampleMeaning": "A simple style looks elegant."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "___ دَافِئٌ يَلْزَمُ فِي الشِّتَاءِ.",
+          "answer": "مِعْطَفٌ",
+          "hint": "coat"
+        },
+        {
+          "sentence": "___ رَسْمِيَّةٌ تُنَاسِبُ الْمُقَابَلَةَ.",
+          "answer": "بَدْلَةٌ",
+          "hint": "suit"
+        },
+        {
+          "sentence": "___ أَزْرَقُ يَلْفِتُ النَّظَرَ.",
+          "answer": "فُسْتَانٌ",
+          "hint": "dress"
+        },
+        {
+          "sentence": "___ جِلْدِيٌّ يُكْمِلُ الْمَلَابِسَ.",
+          "answer": "حِزَامٌ",
+          "hint": "belt"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "items": [
+        {
+          "question": "What does ‘مِعْطَفٌ’ mean?",
+          "options": [
+            "suit",
+            "coat",
+            "dress",
+            "belt"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What does ‘بَدْلَةٌ’ mean?",
+          "options": [
+            "dress",
+            "suit",
+            "belt",
+            "hat"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What does ‘فُسْتَانٌ’ mean?",
+          "options": [
+            "belt",
+            "dress",
+            "hat",
+            "sunglasses"
+          ],
+          "answer": 1
+        }
+      ]
+    }
+  ]
+}

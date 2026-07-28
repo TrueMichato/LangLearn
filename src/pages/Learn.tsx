@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { useSettingsStore } from '../stores/settingsStore';
 import { getAlphabetsForLanguage } from '../data/alphabets';
+import { hasNumbers } from '../data/numbers';
 import { getLanguageLabel } from '../lib/languages';
 import ExternalResources from '../components/common/ExternalResources';
 
@@ -73,6 +74,8 @@ function ActivityCardLink({ card }: { card: ActivityCard }) {
 export default function LearnPage() {
   const activeLanguages = useSettingsStore((s) => s.activeLanguages);
   const languagesWithLetters = activeLanguages.filter((l) => getAlphabetsForLanguage(l).length > 0);
+  const hasArabic = activeLanguages.includes('ar');
+  const hasNumberPractice = activeLanguages.some((l) => hasNumbers(l));
 
   const letterCards: ActivityCard[] =
     languagesWithLetters.length > 0
@@ -121,6 +124,18 @@ export default function LearnPage() {
           bgColor: 'bg-rose-100 dark:bg-rose-900/40',
         },
         ...letterCards,
+        ...(hasArabic
+          ? [
+              {
+                to: '/dialects',
+                emoji: '🗣️',
+                title: 'Dialects',
+                subtitle: 'Compare spoken Arabic',
+                borderColor: 'border-fuchsia-400 dark:border-fuchsia-500',
+                bgColor: 'bg-fuchsia-100 dark:bg-fuchsia-900/40',
+              } as ActivityCard,
+            ]
+          : []),
         {
           to: '/listening',
           emoji: '🎧',
@@ -175,6 +190,18 @@ export default function LearnPage() {
           borderColor: 'border-pink-400 dark:border-pink-500',
           bgColor: 'bg-pink-100 dark:bg-pink-900/40',
         },
+        ...(hasNumberPractice
+          ? [
+              {
+                to: '/number-practice',
+                emoji: '🔢',
+                title: 'Numbers',
+                subtitle: 'Read & spell numerals',
+                borderColor: 'border-sky-400 dark:border-sky-500',
+                bgColor: 'bg-sky-100 dark:bg-sky-900/40',
+              } as ActivityCard,
+            ]
+          : []),
         {
           to: '/translation',
           emoji: '✍️',

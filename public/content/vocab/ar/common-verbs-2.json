@@ -1,0 +1,183 @@
+{
+  "id": "common-verbs-2",
+  "words": [
+    {
+      "word": "يَعْمَلُ",
+      "reading": "yaʿmalu",
+      "meaning": "to work",
+      "example": "يَعْمَلُ أَبِي فِي مَكْتَبٍ.",
+      "exampleMeaning": "My father works in an office."
+    },
+    {
+      "word": "يَدْرُسُ",
+      "reading": "yadrusu",
+      "meaning": "to study",
+      "example": "يَدْرُسُ الطَّالِبُ الْعَرَبِيَّةَ.",
+      "exampleMeaning": "The student studies Arabic."
+    },
+    {
+      "word": "يَسْكُنُ",
+      "reading": "yaskunu",
+      "meaning": "to live / reside",
+      "example": "يَسْكُنُ صَدِيقِي فِي عَمَّانَ.",
+      "exampleMeaning": "My friend lives in Amman."
+    },
+    {
+      "word": "يَسْأَلُ",
+      "reading": "yasʾalu",
+      "meaning": "to ask",
+      "example": "يَسْأَلُ الطِّفْلُ سُؤَالًا.",
+      "exampleMeaning": "The child asks a question."
+    },
+    {
+      "word": "يُجِيبُ",
+      "reading": "yujību",
+      "meaning": "to answer",
+      "example": "يُجِيبُ الْمُعَلِّمُ بِوُضُوحٍ.",
+      "exampleMeaning": "The teacher answers clearly."
+    },
+    {
+      "word": "يَشْتَرِي",
+      "reading": "yashtarī",
+      "meaning": "to buy",
+      "example": "يَشْتَرِي أَخِي خُبْزًا.",
+      "exampleMeaning": "My brother buys bread."
+    },
+    {
+      "word": "يَبِيعُ",
+      "reading": "yabīʿu",
+      "meaning": "to sell",
+      "example": "يَبِيعُ التَّاجِرُ فَوَاكِهَ.",
+      "exampleMeaning": "The merchant sells fruit."
+    },
+    {
+      "word": "يَبْحَثُ",
+      "reading": "yabḥathu",
+      "meaning": "to search",
+      "example": "يَبْحَثُ السَّائِحُ عَنْ فُنْدُقٍ.",
+      "exampleMeaning": "The tourist searches for a hotel."
+    },
+    {
+      "word": "يُسَافِرُ",
+      "reading": "yusāfiru",
+      "meaning": "to travel",
+      "example": "يُسَافِرُ أَحْمَدُ إِلَى مِصْرَ.",
+      "exampleMeaning": "Ahmad travels to Egypt."
+    },
+    {
+      "word": "يَطْبُخُ",
+      "reading": "yaṭbukhu",
+      "meaning": "to cook",
+      "example": "يَطْبُخُ الطَّبَّاخُ حَسَاءً.",
+      "exampleMeaning": "The cook cooks soup."
+    },
+    {
+      "word": "يَلْعَبُ",
+      "reading": "yalʿabu",
+      "meaning": "to play",
+      "example": "يَلْعَبُ الْوَلَدُ كُرَةَ الْقَدَمِ.",
+      "exampleMeaning": "The boy plays soccer."
+    },
+    {
+      "word": "يُسَاعِدُ",
+      "reading": "yusāʿidu",
+      "meaning": "to help",
+      "example": "يُسَاعِدُ الصَّدِيقُ صَدِيقَهُ.",
+      "exampleMeaning": "The friend helps his friend."
+    },
+    {
+      "word": "يَنْتَظِرُ",
+      "reading": "yantaẓiru",
+      "meaning": "to wait",
+      "example": "يَنْتَظِرُ النَّاسُ الْحَافِلَةَ.",
+      "exampleMeaning": "The people wait for the bus."
+    },
+    {
+      "word": "يَحْمِلُ",
+      "reading": "yaḥmilu",
+      "meaning": "to carry",
+      "example": "يَحْمِلُ الرَّجُلُ حَقِيبَةً.",
+      "exampleMeaning": "The man carries a bag."
+    },
+    {
+      "word": "يَضَعُ",
+      "reading": "yaḍaʿu",
+      "meaning": "to put",
+      "example": "يَضَعُ الطِّفْلُ الْكِتَابَ هُنَا.",
+      "exampleMeaning": "The child puts the book here."
+    },
+    {
+      "word": "يَجِدُ",
+      "reading": "yajidu",
+      "meaning": "to find",
+      "example": "يَجِدُ الطَّالِبُ الْجَوَابَ.",
+      "exampleMeaning": "The student finds the answer."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "___ أَبِي فِي مَكْتَبٍ.",
+          "answer": "يَعْمَلُ",
+          "hint": "to work"
+        },
+        {
+          "sentence": "___ الطَّالِبُ الْعَرَبِيَّةَ.",
+          "answer": "يَدْرُسُ",
+          "hint": "to study"
+        },
+        {
+          "sentence": "___ صَدِيقِي فِي عَمَّانَ.",
+          "answer": "يَسْكُنُ",
+          "hint": "to live / reside"
+        },
+        {
+          "sentence": "___ الطِّفْلُ سُؤَالًا.",
+          "answer": "يَسْأَلُ",
+          "hint": "to ask"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "items": [
+        {
+          "question": "What does ‘يَعْمَلُ’ mean?",
+          "options": [
+            "to study",
+            "to work",
+            "to live / reside",
+            "to ask"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What does ‘يَدْرُسُ’ mean?",
+          "options": [
+            "to live / reside",
+            "to study",
+            "to ask",
+            "to answer"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What does ‘يَسْكُنُ’ mean?",
+          "options": [
+            "to ask",
+            "to live / reside",
+            "to answer",
+            "to buy"
+          ],
+          "answer": 1
+        }
+      ]
+    }
+  ]
+}

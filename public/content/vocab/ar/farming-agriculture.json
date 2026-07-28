@@ -1,0 +1,183 @@
+{
+  "id": "farming-agriculture",
+  "words": [
+    {
+      "word": "مَزْرَعَةٌ",
+      "reading": "mazraʿatun",
+      "meaning": "farm",
+      "example": "تَمْتَدُّ الْمَزْرَعَةُ قُرْبَ النَّهْرِ.",
+      "exampleMeaning": "The farm stretches near the river."
+    },
+    {
+      "word": "فَلَّاحٌ",
+      "reading": "fallāḥun",
+      "meaning": "farmer",
+      "example": "يَسْتَيْقِظُ الْفَلَّاحُ قَبْلَ الْفَجْرِ.",
+      "exampleMeaning": "The farmer wakes before dawn."
+    },
+    {
+      "word": "حَقْلٌ",
+      "reading": "ḥaqlun",
+      "meaning": "field",
+      "example": "زَرَعَ الْفَلَّاحُ حَقْلًا وَاسِعًا بِالْقَمْحِ.",
+      "exampleMeaning": "The farmer planted a wide field with wheat."
+    },
+    {
+      "word": "مَحْصُولٌ",
+      "reading": "maḥṣūlun",
+      "meaning": "crop / yield",
+      "example": "كَانَ الْمَحْصُولُ وَفِيرًا هٰذَا الْمَوْسِمَ.",
+      "exampleMeaning": "The crop was abundant this season."
+    },
+    {
+      "word": "بَذْرَةٌ",
+      "reading": "badhratun",
+      "meaning": "seed",
+      "example": "وَضَعَتِ الطِّفْلَةُ بَذْرَةً فِي التُّرْبَةِ.",
+      "exampleMeaning": "The girl put a seed in the soil."
+    },
+    {
+      "word": "تُرْبَةٌ",
+      "reading": "turbatun",
+      "meaning": "soil",
+      "example": "تَحْتَفِظُ التُّرْبَةُ الرَّطْبَةُ بِالْمَاءِ.",
+      "exampleMeaning": "Moist soil retains water."
+    },
+    {
+      "word": "رِيٌّ",
+      "reading": "riyyun",
+      "meaning": "irrigation",
+      "example": "يَعْتَمِدُ الرِّيُّ عَلَى قَنَاةٍ قَرِيبَةٍ.",
+      "exampleMeaning": "The irrigation depends on a nearby canal."
+    },
+    {
+      "word": "سِمَادٌ",
+      "reading": "simādun",
+      "meaning": "fertilizer",
+      "example": "يُضِيفُ الْبُسْتَانِيُّ سِمَادًا طَبِيعِيًّا.",
+      "exampleMeaning": "The gardener adds natural fertilizer."
+    },
+    {
+      "word": "مِحْرَاثٌ",
+      "reading": "miḥrāthun",
+      "meaning": "plow",
+      "example": "يَجُرُّ الْحِصَانُ مِحْرَاثًا قَدِيمًا.",
+      "exampleMeaning": "The horse pulls an old plow."
+    },
+    {
+      "word": "جَرَّارٌ",
+      "reading": "jarrārun",
+      "meaning": "tractor",
+      "example": "يَسْحَبُ الْجَرَّارُ عَرَبَةَ الْقَشِّ.",
+      "exampleMeaning": "The tractor pulls the hay cart."
+    },
+    {
+      "word": "حَصَادٌ",
+      "reading": "ḥaṣādun",
+      "meaning": "harvest",
+      "example": "يَبْدَأُ الْحَصَادُ فِي أَوَاخِرِ الصَّيْفِ.",
+      "exampleMeaning": "The harvest begins in late summer."
+    },
+    {
+      "word": "دَفِيئَةٌ",
+      "reading": "dafīʾatun",
+      "meaning": "greenhouse",
+      "example": "تَنْمُو الطَّمَاطِمُ فِي دَفِيئَةٍ زُجَاجِيَّةٍ.",
+      "exampleMeaning": "Tomatoes grow in a glass greenhouse."
+    },
+    {
+      "word": "بُسْتَانٌ",
+      "reading": "bustānun",
+      "meaning": "orchard / garden",
+      "example": "فِي الْبُسْتَانِ أَشْجَارُ تُفَّاحٍ كَثِيرَةٌ.",
+      "exampleMeaning": "In the orchard there are many apple trees."
+    },
+    {
+      "word": "نَخْلَةٌ",
+      "reading": "nakhlatun",
+      "meaning": "palm tree",
+      "example": "تَقِفُ نَخْلَةٌ عَالِيَةٌ عِنْدَ الْبِئْرِ.",
+      "exampleMeaning": "A tall palm tree stands by the well."
+    },
+    {
+      "word": "قَمْحٌ",
+      "reading": "qamḥun",
+      "meaning": "wheat",
+      "example": "يُطْحَنُ الْقَمْحُ لِصُنْعِ الْخُبْزِ.",
+      "exampleMeaning": "Wheat is ground to make bread."
+    },
+    {
+      "word": "شَعِيرٌ",
+      "reading": "shaʿīrun",
+      "meaning": "barley",
+      "example": "يُسْتَخْدَمُ الشَّعِيرُ عَلَفًا لِلْحَيَوَانَاتِ.",
+      "exampleMeaning": "Barley is used as fodder for animals."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "هٰذِهِ ___ وَاسِعَةٌ.",
+          "answer": "مَزْرَعَةٌ",
+          "hint": "farm"
+        },
+        {
+          "sentence": "هٰذَا ___ خِصْبٌ.",
+          "answer": "حَقْلٌ",
+          "hint": "field"
+        },
+        {
+          "sentence": "هٰذِهِ ___ جَيِّدَةٌ.",
+          "answer": "تُرْبَةٌ",
+          "hint": "soil"
+        },
+        {
+          "sentence": "هٰذَا ___ قَدِيمٌ.",
+          "answer": "مِحْرَاثٌ",
+          "hint": "plow"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "items": [
+        {
+          "question": "What does ‘فَلَّاحٌ’ mean?",
+          "options": [
+            "farmer",
+            "seed",
+            "greenhouse",
+            "barley"
+          ],
+          "answer": 0
+        },
+        {
+          "question": "What does ‘رِيٌّ’ mean?",
+          "options": [
+            "harvest",
+            "irrigation",
+            "tractor",
+            "orchard"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What does ‘قَمْحٌ’ mean?",
+          "options": [
+            "fertilizer",
+            "palm tree",
+            "wheat",
+            "soil"
+          ],
+          "answer": 2
+        }
+      ]
+    }
+  ]
+}

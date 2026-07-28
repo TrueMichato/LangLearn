@@ -1,0 +1,183 @@
+{
+  "id": "levantine-phrases-2",
+  "words": [
+    {
+      "word": "قَدَّيْش؟",
+      "reading": "qaddēsh?",
+      "meaning": "how much / how many? (Levantine; MSA: kam)",
+      "example": "قَدَّيْش سِعْر هَالْكِتَاب؟",
+      "exampleMeaning": "How much is this book?"
+    },
+    {
+      "word": "مِنْ وَيْن؟",
+      "reading": "min wēn?",
+      "meaning": "from where? (Levantine; MSA: min ʾayna)",
+      "example": "أَنْتَ مِنْ وَيْن؟",
+      "exampleMeaning": "Where are you from?"
+    },
+    {
+      "word": "شْوِي",
+      "reading": "shwī",
+      "meaning": "a little (Levantine; MSA: qalīlan)",
+      "example": "بَدِّي شْوِي مَيّ.",
+      "exampleMeaning": "I want a little water."
+    },
+    {
+      "word": "بِسُرْعَة",
+      "reading": "bisurʿa",
+      "meaning": "quickly (Levantine/MSA)",
+      "example": "تَعَالَ بِسُرْعَة قَبْلَ الْمَطَرْ.",
+      "exampleMeaning": "Come quickly before the rain."
+    },
+    {
+      "word": "مَاشِي",
+      "reading": "māshī",
+      "meaning": "okay / fine (Levantine)",
+      "example": "مَاشِي، نِتْقَابَلْ بُكْرَا.",
+      "exampleMeaning": "Okay, we will meet tomorrow."
+    },
+    {
+      "word": "عَادِي",
+      "reading": "ʿādī",
+      "meaning": "normal / it's okay (Levantine/MSA)",
+      "example": "عَادِي، مَا فِي مُشْكِلَة.",
+      "exampleMeaning": "It's okay, there is no problem."
+    },
+    {
+      "word": "طَيِّب",
+      "reading": "ṭayyib",
+      "meaning": "okay / well then (Levantine/MSA)",
+      "example": "طَيِّب، خَلِّينَا نِبْدَأْ.",
+      "exampleMeaning": "Okay, let us begin."
+    },
+    {
+      "word": "خَلِّيكْ",
+      "reading": "khallīk",
+      "meaning": "stay / keep yourself (Levantine; MSA: ibqa)",
+      "example": "خَلِّيكْ هُونْ لَحْظَة.",
+      "exampleMeaning": "Stay here a moment."
+    },
+    {
+      "word": "دِيرْ بَالَكْ",
+      "reading": "dīr bālak",
+      "meaning": "take care / pay attention (Levantine; MSA: intabih)",
+      "example": "دِيرْ بَالَكْ عَالطَّرِيقْ.",
+      "exampleMeaning": "Take care on the road."
+    },
+    {
+      "word": "مِشْ هِيكْ؟",
+      "reading": "mish hēk?",
+      "meaning": "isn't that so? (Levantine)",
+      "example": "الْجَوّ بَارِدْ، مِشْ هِيكْ؟",
+      "exampleMeaning": "The weather is cold, isn't it?"
+    },
+    {
+      "word": "لِسَّا",
+      "reading": "lissa",
+      "meaning": "still / not yet (Levantine; MSA: mā zāla)",
+      "example": "لِسَّا مَا خَلَّصْتُ الشُّغْل.",
+      "exampleMeaning": "I still have not finished the work."
+    },
+    {
+      "word": "رَايِحْ",
+      "reading": "rāyiḥ",
+      "meaning": "going (Levantine; MSA: dhāhib)",
+      "example": "أَنَا رَايِحْ عَالْبَيْتْ.",
+      "exampleMeaning": "I am going home."
+    },
+    {
+      "word": "جَايْ",
+      "reading": "jāy",
+      "meaning": "coming (Levantine; MSA: qādim)",
+      "example": "أَخُوي جَايْ بَعْد شْوِي.",
+      "exampleMeaning": "My brother is coming in a little while."
+    },
+    {
+      "word": "زَعْلَانْ",
+      "reading": "zaʿlān",
+      "meaning": "upset (Levantine; MSA: ḥazīn)",
+      "example": "لَيْشْ أَنْتَ زَعْلَانْ الْيَوْمْ؟",
+      "exampleMeaning": "Why are you upset today?"
+    },
+    {
+      "word": "مَبْسُوطْ",
+      "reading": "mabsūṭ",
+      "meaning": "happy (Levantine; MSA: saʿīd)",
+      "example": "أَنَا مَبْسُوطْ كْتِيرْ بِالنَّتِيجَة.",
+      "exampleMeaning": "I am very happy with the result."
+    },
+    {
+      "word": "عَالسَّرِيعْ",
+      "reading": "ʿa-s-sarīʿ",
+      "meaning": "quickly / briefly (Levantine)",
+      "example": "اِحْكِيلِي الْقِصَّة عَالسَّرِيعْ.",
+      "exampleMeaning": "Tell me the story quickly."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "___ سِعْر هَالْكِتَاب؟",
+          "answer": "قَدَّيْش؟",
+          "hint": "how much?"
+        },
+        {
+          "sentence": "أَنْتَ ___",
+          "answer": "مِنْ وَيْن؟",
+          "hint": "from where?"
+        },
+        {
+          "sentence": "بَدِّي ___ مَيّ.",
+          "answer": "شْوِي",
+          "hint": "a little"
+        },
+        {
+          "sentence": "تَعَالَ ___ قَبْلَ الْمَطَرْ.",
+          "answer": "بِسُرْعَة",
+          "hint": "quickly"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "items": [
+        {
+          "question": "What does ‘قَدَّيْش؟’ mean?",
+          "options": [
+            "from where? (Levantine; MSA: min ʾayna)",
+            "how much / how many? (Levantine; MSA: kam)",
+            "quickly (Levantine/MSA)",
+            "okay / fine (Levantine)"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What does ‘مِنْ وَيْن؟’ mean?",
+          "options": [
+            "a little (Levantine; MSA: qalīlan)",
+            "from where? (Levantine; MSA: min ʾayna)",
+            "okay / fine (Levantine)",
+            "normal / it's okay (Levantine/MSA)"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What does ‘شْوِي’ mean?",
+          "options": [
+            "quickly (Levantine/MSA)",
+            "a little (Levantine; MSA: qalīlan)",
+            "normal / it's okay (Levantine/MSA)",
+            "okay / well then (Levantine/MSA)"
+          ],
+          "answer": 1
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,159 @@
+{
+  "id": "gulf-money-haggling",
+  "words": [
+    {
+      "word": "بِيْزَات",
+      "reading": "bēzāt",
+      "meaning": "money",
+      "example": "عِنْدِي بِيْزَاتْ حَقّ السُّوقْ.",
+      "exampleMeaning": "I have money for the market."
+    },
+    {
+      "word": "فُلُوس",
+      "reading": "fulūs",
+      "meaning": "cash / money",
+      "example": "نَحْتَاجْ فُلُوسْ صَغِيرَةْ لِلتَّكْسِي.",
+      "exampleMeaning": "We need small cash for the taxi."
+    },
+    {
+      "word": "غَالِي",
+      "reading": "ghālī",
+      "meaning": "expensive",
+      "example": "هَذَا السِّعْرْ غَالِي شْوَيّ.",
+      "exampleMeaning": "This price is a little expensive."
+    },
+    {
+      "word": "رَخِيص",
+      "reading": "rakhīṣ",
+      "meaning": "cheap",
+      "example": "لَقَيْتْ مَحَلّْ رَخِيصْ فِي السُّوقْ.",
+      "exampleMeaning": "I found a cheap shop in the market."
+    },
+    {
+      "word": "سِعْر",
+      "reading": "siʿr",
+      "meaning": "price",
+      "example": "السِّعْرْ مَكْتُوبْ عَلَى الْعُلْبَةْ.",
+      "exampleMeaning": "The price is written on the box."
+    },
+    {
+      "word": "خَصْم",
+      "reading": "khaṣm",
+      "meaning": "discount",
+      "example": "فِيهِ خَصْمْ إِذَا أَخَذْتْ قِطْعَتَيْنْ.",
+      "exampleMeaning": "There is a discount if I take two pieces."
+    },
+    {
+      "word": "خَفِّض",
+      "reading": "khaffiḍ",
+      "meaning": "lower it",
+      "example": "خَفِّضْ لِي السِّعْرْ مَا عَلَيْكْ أَمْرْ.",
+      "exampleMeaning": "Lower the price for me, please."
+    },
+    {
+      "word": "كَمْ آخِرْ؟",
+      "reading": "kam ākhir?",
+      "meaning": "what is the final price?",
+      "example": "كَمْ آخِرْ؟ أَبِي أَشْتَرِي الْحِينَ.",
+      "exampleMeaning": "What is the final price? I want to buy now."
+    },
+    {
+      "word": "بِكَمْ؟",
+      "reading": "bikam?",
+      "meaning": "how much?",
+      "example": "بِكَمْ هَذَا الْقَمِيصْ الْأَبْيَضْ؟",
+      "exampleMeaning": "How much is this white shirt?"
+    },
+    {
+      "word": "أَبِي",
+      "reading": "abī",
+      "meaning": "I want",
+      "example": "أَبِي هَذَا اللَّوْنْ إِذَا مُمْكِنْ.",
+      "exampleMeaning": "I want this color if possible."
+    },
+    {
+      "word": "مَا يِسْوَى",
+      "reading": "mā yiswā",
+      "meaning": "it is not worth it",
+      "example": "هَذَا الْمَبْلَغْ مَا يِسْوَى لِلْحَقِيبَةْ.",
+      "exampleMeaning": "This amount is not worth it for the bag."
+    },
+    {
+      "word": "كَاش",
+      "reading": "kāsh",
+      "meaning": "cash",
+      "example": "أَدْفَعْ كَاشْ وَلَا بِالْبِطَاقَةْ؟",
+      "exampleMeaning": "Should I pay cash or by card?"
+    },
+    {
+      "word": "بِالْبِطَاقَة",
+      "reading": "bil-biṭāqa",
+      "meaning": "by card",
+      "example": "بِالْبِطَاقَةْ أَسْهَلْ عِنْدَ الْمُحَاسِبْ.",
+      "exampleMeaning": "Paying by card is easier at the cashier."
+    },
+    {
+      "word": "صَرَّاف",
+      "reading": "ṣarrāf",
+      "meaning": "ATM / cashier",
+      "example": "فِيهِ صَرَّافْ قَرِيبْ مِنَ الْمَحَلّْ.",
+      "exampleMeaning": "There is an ATM near the shop."
+    },
+    {
+      "word": "فَاتُورَة",
+      "reading": "fātūra",
+      "meaning": "receipt / bill",
+      "example": "عَطِنِي فَاتُورَةْ بَعْدَ الدَّفْعْ.",
+      "exampleMeaning": "Give me a receipt after payment."
+    },
+    {
+      "word": "بَاقِي",
+      "reading": "bāgī",
+      "meaning": "change left over",
+      "example": "الْبَاقِي خَمْسْ رِيَالَاتْ.",
+      "exampleMeaning": "The change is five riyals."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "___ هَذَا الْقَمِيصْ؟",
+          "answer": "بِكَمْ؟",
+          "hint": "how much?"
+        },
+        {
+          "sentence": "السِّعْرْ ___ شْوَيّ.",
+          "answer": "غَالِي",
+          "hint": "expensive"
+        },
+        {
+          "sentence": "أَدْفَعْ ___ وَلَا بِالْبِطَاقَةْ؟",
+          "answer": "كَاش",
+          "hint": "cash"
+        },
+        {
+          "sentence": "عَطِنِي ___ بَعْدَ الدَّفْعْ.",
+          "answer": "فَاتُورَة",
+          "hint": "receipt"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "In Gulf shopping, what does ‘كَمْ آخِرْ؟’ ask?",
+      "options": [
+        "What is the final price?",
+        "Where is the cashier?",
+        "Do you take cards?",
+        "Is there change?"
+      ],
+      "answer": 0
+    }
+  ]
+}

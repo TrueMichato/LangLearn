@@ -1,0 +1,159 @@
+{
+  "id": "maghrebi-beach-day",
+  "words": [
+    {
+      "word": "الشَّطّْ",
+      "reading": "esh-shaṭṭ",
+      "meaning": "beach",
+      "example": "غَادِي نْمْشِيُو لِلشَّطّْ نْهَارْ السَّبْتْ.",
+      "exampleMeaning": "We are going to the beach on Saturday."
+    },
+    {
+      "word": "الْبْحَرْ",
+      "reading": "el-bḥar",
+      "meaning": "sea",
+      "example": "الْبْحَرْ هَادِئْ الْيُومْ.",
+      "exampleMeaning": "The sea is calm today."
+    },
+    {
+      "word": "نْعُومُو",
+      "reading": "nʿūmu",
+      "meaning": "we swim / to swim",
+      "example": "بْغِينَا نْعُومُو قَبْلَ الْغْرُوبْ.",
+      "exampleMeaning": "We want to swim before sunset."
+    },
+    {
+      "word": "رْمَالْ",
+      "reading": "rmāl",
+      "meaning": "sand",
+      "example": "رْمَالْ الشَّطّْ سَخُونَةْ.",
+      "exampleMeaning": "The beach sand is hot."
+    },
+    {
+      "word": "مُوجَةْ",
+      "reading": "mūja",
+      "meaning": "wave",
+      "example": "جَاتْ مُوجَةْ كْبِيرَةْ وَبَلَّلَاتْنَا.",
+      "exampleMeaning": "A big wave came and got us wet."
+    },
+    {
+      "word": "الشَّمْسِيَّةْ",
+      "reading": "esh-shamsiyya",
+      "meaning": "beach umbrella",
+      "example": "فْتَحْنَا الشَّمْسِيَّةْ حِدَا الْبْحَرْ.",
+      "exampleMeaning": "We opened the umbrella next to the sea."
+    },
+    {
+      "word": "مْنْشَفَةْ",
+      "reading": "mnshafa",
+      "meaning": "towel",
+      "example": "حَطِّيتْ مْنْشَفَةْ فَوْقَ الرْمَالْ.",
+      "exampleMeaning": "I put a towel on the sand."
+    },
+    {
+      "word": "مَايُو",
+      "reading": "māyu",
+      "meaning": "swimsuit",
+      "example": "نْسِيتْ مَايُو فِي الدَّارْ.",
+      "exampleMeaning": "I forgot my swimsuit at home."
+    },
+    {
+      "word": "قَارُورَةْ دْ الْمَا",
+      "reading": "qārūra d el-mā",
+      "meaning": "water bottle",
+      "example": "خُذْ قَارُورَةْ دْ الْمَا حِيتْ الشَّمْسْ قْوِيَّةْ.",
+      "exampleMeaning": "Take a water bottle because the sun is strong."
+    },
+    {
+      "word": "سَّخُونْ",
+      "reading": "skhūn",
+      "meaning": "hot",
+      "example": "النَّهَارْ سَّخُونْ وَخَاصْنَا الظِّلّْ.",
+      "exampleMeaning": "The day is hot and we need shade."
+    },
+    {
+      "word": "بَارِدْ",
+      "reading": "bārid",
+      "meaning": "cold",
+      "example": "الْمَا بَارِدْ فِي الصُّبْحْ.",
+      "exampleMeaning": "The water is cold in the morning."
+    },
+    {
+      "word": "ضَرْبَةْ الشَّمْسْ",
+      "reading": "ḍarbet esh-shams",
+      "meaning": "sunburn / sunstroke",
+      "example": "دِيرْ الْكْرِيمْ بَاشْ مَا تْجِيكْ ضَرْبَةْ الشَّمْسْ.",
+      "exampleMeaning": "Put on cream so you do not get sunburn."
+    },
+    {
+      "word": "حُوتْ",
+      "reading": "ḥūt",
+      "meaning": "fish",
+      "example": "شَفْنَا حُوتْ صْغِيرْ قُرْبَ الصَّخْرَةْ.",
+      "exampleMeaning": "We saw a small fish near the rock."
+    },
+    {
+      "word": "قُنْفُوذْ الْبْحَرْ",
+      "reading": "qunfūd el-bḥar",
+      "meaning": "sea urchin",
+      "example": "رَدّْ بَالَكْ مِنْ قُنْفُوذْ الْبْحَرْ.",
+      "exampleMeaning": "Watch out for the sea urchin."
+    },
+    {
+      "word": "نْدِيرُو بِيكْنِيكْ",
+      "reading": "ndīru bīknīk",
+      "meaning": "we have a picnic",
+      "example": "نْدِيرُو بِيكْنِيكْ حِدَا الصَّخْرَةْ.",
+      "exampleMeaning": "We will have a picnic next to the rock."
+    },
+    {
+      "word": "نْرَجْعُو بْكْرِي",
+      "reading": "nrjʿu bkri",
+      "meaning": "we return early",
+      "example": "نْرَجْعُو بْكْرِي إِلَا كَانَتْ الزَّحْمَةْ.",
+      "exampleMeaning": "We will return early if there is traffic."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "غَادِي نْمْشِيُو لِـ ___ نْهَارْ السَّبْتْ.",
+          "answer": "الشَّطّْ",
+          "hint": "beach"
+        },
+        {
+          "sentence": "بْغِينَا ___ قَبْلَ الْغْرُوبْ.",
+          "answer": "نْعُومُو",
+          "hint": "we swim"
+        },
+        {
+          "sentence": "خُذْ ___ حِيتْ الشَّمْسْ قْوِيَّةْ.",
+          "answer": "قَارُورَةْ دْ الْمَا",
+          "hint": "water bottle"
+        },
+        {
+          "sentence": "دِيرْ الْكْرِيمْ بَاشْ مَا تْجِيكْ ___.",
+          "answer": "ضَرْبَةْ الشَّمْسْ",
+          "hint": "sunburn"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "In Maghrebi Arabic, what does ‘نْعُومُو’ mean?",
+      "options": [
+        "we swim",
+        "umbrella",
+        "cold",
+        "fish"
+      ],
+      "answer": 0
+    }
+  ]
+}

@@ -1,0 +1,197 @@
+{
+  "id": "numbers-1-20",
+  "words": [
+    {
+      "word": "وَاحِدٌ",
+      "reading": "wāḥidun",
+      "meaning": "one",
+      "example": "الرَّقْمُ وَاحِدٌ سَهْلٌ.",
+      "exampleMeaning": "The number one is easy."
+    },
+    {
+      "word": "اِثْنَانِ",
+      "reading": "ithnāni",
+      "meaning": "two",
+      "example": "الرَّقْمُ اِثْنَانِ بَعْدَ وَاحِدٍ.",
+      "exampleMeaning": "The number two comes after one."
+    },
+    {
+      "word": "ثَلَاثَةٌ",
+      "reading": "thalāthatun",
+      "meaning": "three",
+      "example": "الرَّقْمُ ثَلَاثَةٌ عَلَى اللَّوْحِ.",
+      "exampleMeaning": "The number three is on the board."
+    },
+    {
+      "word": "أَرْبَعَةٌ",
+      "reading": "ʾarbaʿatun",
+      "meaning": "four",
+      "example": "الرَّقْمُ أَرْبَعَةٌ فِي الدَّفْتَرِ.",
+      "exampleMeaning": "The number four is in the notebook."
+    },
+    {
+      "word": "خَمْسَةٌ",
+      "reading": "khamsatun",
+      "meaning": "five",
+      "example": "الرَّقْمُ خَمْسَةٌ جَمِيلٌ.",
+      "exampleMeaning": "The number five is nice."
+    },
+    {
+      "word": "سِتَّةٌ",
+      "reading": "sittatun",
+      "meaning": "six",
+      "example": "الرَّقْمُ سِتَّةٌ هُنَا.",
+      "exampleMeaning": "The number six is here."
+    },
+    {
+      "word": "سَبْعَةٌ",
+      "reading": "sabʿatun",
+      "meaning": "seven",
+      "example": "الرَّقْمُ سَبْعَةٌ كَبِيرٌ.",
+      "exampleMeaning": "The number seven is big."
+    },
+    {
+      "word": "ثَمَانِيَةٌ",
+      "reading": "thamāniyatun",
+      "meaning": "eight",
+      "example": "الرَّقْمُ ثَمَانِيَةٌ فِي السَّطْرِ.",
+      "exampleMeaning": "The number eight is on the line."
+    },
+    {
+      "word": "تِسْعَةٌ",
+      "reading": "tisʿatun",
+      "meaning": "nine",
+      "example": "الرَّقْمُ تِسْعَةٌ قَبْلَ عَشَرَةٍ.",
+      "exampleMeaning": "The number nine comes before ten."
+    },
+    {
+      "word": "عَشَرَةٌ",
+      "reading": "ʿasharatun",
+      "meaning": "ten",
+      "example": "الرَّقْمُ عَشَرَةٌ آخِرُ الصَّفْحَةِ.",
+      "exampleMeaning": "The number ten is at the end of the page."
+    },
+    {
+      "word": "أَحَدَ عَشَرَ",
+      "reading": "ʾaḥada ʿashara",
+      "meaning": "eleven",
+      "example": "الرَّقْمُ أَحَدَ عَشَرَ فِي الْقَائِمَةِ.",
+      "exampleMeaning": "The number eleven is in the list."
+    },
+    {
+      "word": "اِثْنَا عَشَرَ",
+      "reading": "ithnā ʿashara",
+      "meaning": "twelve",
+      "example": "الرَّقْمُ اِثْنَا عَشَرَ بَعْدَ أَحَدَ عَشَرَ.",
+      "exampleMeaning": "The number twelve comes after eleven."
+    },
+    {
+      "word": "ثَلَاثَةَ عَشَرَ",
+      "reading": "thalāthata ʿashara",
+      "meaning": "thirteen",
+      "example": "الرَّقْمُ ثَلَاثَةَ عَشَرَ طَوِيلٌ.",
+      "exampleMeaning": "The number thirteen is long."
+    },
+    {
+      "word": "أَرْبَعَةَ عَشَرَ",
+      "reading": "ʾarbaʿata ʿashara",
+      "meaning": "fourteen",
+      "example": "الرَّقْمُ أَرْبَعَةَ عَشَرَ هُنَاكَ.",
+      "exampleMeaning": "The number fourteen is there."
+    },
+    {
+      "word": "خَمْسَةَ عَشَرَ",
+      "reading": "khamsata ʿashara",
+      "meaning": "fifteen",
+      "example": "الرَّقْمُ خَمْسَةَ عَشَرَ فِي الْكِتَابِ.",
+      "exampleMeaning": "The number fifteen is in the book."
+    },
+    {
+      "word": "سِتَّةَ عَشَرَ",
+      "reading": "sittata ʿashara",
+      "meaning": "sixteen",
+      "example": "الرَّقْمُ سِتَّةَ عَشَرَ جَدِيدٌ.",
+      "exampleMeaning": "The number sixteen is new."
+    },
+    {
+      "word": "سَبْعَةَ عَشَرَ",
+      "reading": "sabʿata ʿashara",
+      "meaning": "seventeen",
+      "example": "الرَّقْمُ سَبْعَةَ عَشَرَ صَعْبٌ.",
+      "exampleMeaning": "The number seventeen is difficult."
+    },
+    {
+      "word": "ثَمَانِيَةَ عَشَرَ",
+      "reading": "thamāniyata ʿashara",
+      "meaning": "eighteen",
+      "example": "الرَّقْمُ ثَمَانِيَةَ عَشَرَ وَاضِحٌ.",
+      "exampleMeaning": "The number eighteen is clear."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "الرَّقْمُ ___ سَهْلٌ.",
+          "answer": "وَاحِدٌ",
+          "hint": "one"
+        },
+        {
+          "sentence": "الرَّقْمُ ___ بَعْدَ وَاحِدٍ.",
+          "answer": "اِثْنَانِ",
+          "hint": "two"
+        },
+        {
+          "sentence": "الرَّقْمُ ___ عَلَى اللَّوْحِ.",
+          "answer": "ثَلَاثَةٌ",
+          "hint": "three"
+        },
+        {
+          "sentence": "الرَّقْمُ ___ فِي الدَّفْتَرِ.",
+          "answer": "أَرْبَعَةٌ",
+          "hint": "four"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "items": [
+        {
+          "question": "What does ‘وَاحِدٌ’ mean?",
+          "options": [
+            "two",
+            "one",
+            "three",
+            "four"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What does ‘اِثْنَانِ’ mean?",
+          "options": [
+            "three",
+            "two",
+            "four",
+            "five"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What does ‘ثَلَاثَةٌ’ mean?",
+          "options": [
+            "four",
+            "three",
+            "five",
+            "six"
+          ],
+          "answer": 1
+        }
+      ]
+    }
+  ]
+}

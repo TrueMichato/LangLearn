@@ -1,0 +1,183 @@
+{
+  "id": "kitchen-tableware",
+  "words": [
+    {
+      "word": "الصَّحْنُ",
+      "reading": "aṣ-ṣaḥnu",
+      "meaning": "plate",
+      "example": "الصَّحْنُ نَظِيفٌ عَلَى الطَّاوِلَةِ.",
+      "exampleMeaning": "The plate is clean on the table."
+    },
+    {
+      "word": "الكَأْسُ",
+      "reading": "al-kaʾsu",
+      "meaning": "glass",
+      "example": "الكَأْسُ مَمْلُوءٌ بِالمَاءِ.",
+      "exampleMeaning": "The glass is full of water."
+    },
+    {
+      "word": "الفِنْجَانُ",
+      "reading": "al-finjānu",
+      "meaning": "cup",
+      "example": "الفِنْجَانُ صَغِيرٌ لِلْقَهْوَةِ.",
+      "exampleMeaning": "The cup is small for coffee."
+    },
+    {
+      "word": "الشَّوْكَةُ",
+      "reading": "ash-shawkatu",
+      "meaning": "fork",
+      "example": "الشَّوْكَةُ مَوْضُوعَةٌ جَانِبَ الصَّحْنِ.",
+      "exampleMeaning": "The fork is placed beside the plate."
+    },
+    {
+      "word": "المِلْعَقَةُ",
+      "reading": "al-milʿaqatu",
+      "meaning": "spoon",
+      "example": "المِلْعَقَةُ فِي صَحْنِ الحَسَاءِ.",
+      "exampleMeaning": "The spoon is in the soup bowl."
+    },
+    {
+      "word": "السِّكِّينُ",
+      "reading": "as-sikkīnu",
+      "meaning": "knife",
+      "example": "السِّكِّينُ حَادٌّ لِتَقْطِيعِ الخُبْزِ.",
+      "exampleMeaning": "The knife is sharp for cutting bread."
+    },
+    {
+      "word": "القِدْرُ",
+      "reading": "al-qidru",
+      "meaning": "pot",
+      "example": "القِدْرُ عَلَى النَّارِ وَفِيهِ أَرُزٌّ.",
+      "exampleMeaning": "The pot is on the fire with rice in it."
+    },
+    {
+      "word": "المِقْلَاةُ",
+      "reading": "al-miqlātu",
+      "meaning": "frying pan",
+      "example": "المِقْلَاةُ سَاخِنَةٌ قَبْلَ قَلْيِ البَيْضِ.",
+      "exampleMeaning": "The frying pan is hot before frying the eggs."
+    },
+    {
+      "word": "الغِلَّايَةُ",
+      "reading": "al-ghillāyatu",
+      "meaning": "kettle",
+      "example": "الغِلَّايَةُ تُسَخِّنُ المَاءَ لِلشَّايِ.",
+      "exampleMeaning": "The kettle heats water for tea."
+    },
+    {
+      "word": "المِصْفَاةُ",
+      "reading": "al-miṣfātu",
+      "meaning": "strainer",
+      "example": "المِصْفَاةُ تُصَفِّي المَعْكَرُونَةَ بَعْدَ السَّلْقِ.",
+      "exampleMeaning": "The strainer drains the pasta after boiling."
+    },
+    {
+      "word": "لَوْحُ التَّقْطِيعِ",
+      "reading": "lawḥu at-taqṭīʿi",
+      "meaning": "cutting board",
+      "example": "لَوْحُ التَّقْطِيعِ يَحْمِي سَطْحَ المَطْبَخِ.",
+      "exampleMeaning": "The cutting board protects the kitchen surface."
+    },
+    {
+      "word": "المِبْشَرَةُ",
+      "reading": "al-mibsharatu",
+      "meaning": "grater",
+      "example": "المِبْشَرَةُ تُحَوِّلُ الجُبْنَ إِلَى قِطَعٍ صَغِيرَةٍ.",
+      "exampleMeaning": "The grater turns cheese into small pieces."
+    },
+    {
+      "word": "الخَلَّاطُ",
+      "reading": "al-khallāṭu",
+      "meaning": "blender",
+      "example": "الخَلَّاطُ يَمْزِجُ الفَوَاكِهَ مَعَ الحَلِيبِ.",
+      "exampleMeaning": "The blender mixes the fruit with milk."
+    },
+    {
+      "word": "فُرْنُ المِيكْرُوويفِ",
+      "reading": "furnu al-mīkrūwīfi",
+      "meaning": "microwave oven",
+      "example": "فُرْنُ المِيكْرُوويفِ يُسَخِّنُ الطَّعَامَ بِسُرْعَةٍ.",
+      "exampleMeaning": "The microwave oven heats food quickly."
+    },
+    {
+      "word": "فُوطَةُ المَطْبَخِ",
+      "reading": "fūṭatu al-maṭbakhi",
+      "meaning": "kitchen towel",
+      "example": "فُوطَةُ المَطْبَخِ تُجَفِّفُ الأَطْبَاقَ.",
+      "exampleMeaning": "The kitchen towel dries the dishes."
+    },
+    {
+      "word": "صَابُونُ الأَطْبَاقِ",
+      "reading": "ṣābūnu al-ʾaṭbāqi",
+      "meaning": "dish soap",
+      "example": "صَابُونُ الأَطْبَاقِ يُزِيلُ الدُّهُونَ.",
+      "exampleMeaning": "Dish soap removes grease."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "___ نَظِيفٌ عَلَى الطَّاوِلَةِ.",
+          "answer": "الصَّحْنُ",
+          "hint": "plate"
+        },
+        {
+          "sentence": "___ مَمْلُوءٌ بِالمَاءِ.",
+          "answer": "الكَأْسُ",
+          "hint": "glass"
+        },
+        {
+          "sentence": "___ صَغِيرٌ لِلْقَهْوَةِ.",
+          "answer": "الفِنْجَانُ",
+          "hint": "cup"
+        },
+        {
+          "sentence": "___ مَوْضُوعَةٌ جَانِبَ الصَّحْنِ.",
+          "answer": "الشَّوْكَةُ",
+          "hint": "fork"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "items": [
+        {
+          "question": "What does ‘الصَّحْنُ’ mean?",
+          "options": [
+            "glass",
+            "plate",
+            "cup",
+            "fork"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What does ‘الكَأْسُ’ mean?",
+          "options": [
+            "cup",
+            "glass",
+            "fork",
+            "spoon"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What does ‘الفِنْجَانُ’ mean?",
+          "options": [
+            "fork",
+            "cup",
+            "spoon",
+            "knife"
+          ],
+          "answer": 1
+        }
+      ]
+    }
+  ]
+}

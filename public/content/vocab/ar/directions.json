@@ -1,0 +1,183 @@
+{
+  "id": "directions",
+  "words": [
+    {
+      "word": "يَمِينٌ",
+      "reading": "yamīnun",
+      "meaning": "right side",
+      "example": "يَمِينٌ وَيَسَارٌ كَلِمَتَانِ مُهِمَّتَانِ.",
+      "exampleMeaning": "Right and left are two important words."
+    },
+    {
+      "word": "يَسَارٌ",
+      "reading": "yasārun",
+      "meaning": "left side",
+      "example": "يَسَارٌ هُنَا وَيَمِينٌ هُنَاكَ.",
+      "exampleMeaning": "Left is here and right is there."
+    },
+    {
+      "word": "أَمَامَ",
+      "reading": "ʾamāma",
+      "meaning": "in front of",
+      "example": "أَمَامَ الْبَيْتِ شَجَرَةٌ.",
+      "exampleMeaning": "In front of the house is a tree."
+    },
+    {
+      "word": "خَلْفَ",
+      "reading": "khalfa",
+      "meaning": "behind",
+      "example": "خَلْفَ الْمَدْرَسَةِ حَدِيقَةٌ.",
+      "exampleMeaning": "Behind the school is a garden."
+    },
+    {
+      "word": "فَوْقَ",
+      "reading": "fawqa",
+      "meaning": "above",
+      "example": "الْكِتَابُ فَوْقَ الطَّاوِلَةِ.",
+      "exampleMeaning": "The book is above the table."
+    },
+    {
+      "word": "تَحْتَ",
+      "reading": "taḥta",
+      "meaning": "under",
+      "example": "الْقِطُّ تَحْتَ الْكُرْسِيِّ.",
+      "exampleMeaning": "The cat is under the chair."
+    },
+    {
+      "word": "قَرِيبٌ",
+      "reading": "qarībun",
+      "meaning": "near",
+      "example": "الْمَتْجَرُ قَرِيبٌ مِنْ بَيْتِي.",
+      "exampleMeaning": "The store is near my house."
+    },
+    {
+      "word": "بَعِيدٌ",
+      "reading": "baʿīdun",
+      "meaning": "far",
+      "example": "الْمَطَارُ بَعِيدٌ عَنِ الْمَرْكَزِ.",
+      "exampleMeaning": "The airport is far from the center."
+    },
+    {
+      "word": "دَاخِلَ",
+      "reading": "dākhila",
+      "meaning": "inside",
+      "example": "الطِّفْلُ دَاخِلَ الْغُرْفَةِ.",
+      "exampleMeaning": "The child is inside the room."
+    },
+    {
+      "word": "خَارِجَ",
+      "reading": "khārija",
+      "meaning": "outside",
+      "example": "السَّيَّارَةُ خَارِجَ الْبَيْتِ.",
+      "exampleMeaning": "The car is outside the house."
+    },
+    {
+      "word": "بَيْنَ",
+      "reading": "bayna",
+      "meaning": "between",
+      "example": "الْبَيْتُ بَيْنَ مَتْجَرَيْنِ.",
+      "exampleMeaning": "The house is between two stores."
+    },
+    {
+      "word": "بِجَانِبِ",
+      "reading": "bi-jānibi",
+      "meaning": "next to",
+      "example": "الْمَقْهَى بِجَانِبِ الْمَكْتَبَةِ.",
+      "exampleMeaning": "The café is next to the library."
+    },
+    {
+      "word": "هُنَا",
+      "reading": "hunā",
+      "meaning": "here",
+      "example": "أَنَا هُنَا الآنَ.",
+      "exampleMeaning": "I am here now."
+    },
+    {
+      "word": "هُنَاكَ",
+      "reading": "hunāka",
+      "meaning": "there",
+      "example": "الْمَحَطَّةُ هُنَاكَ.",
+      "exampleMeaning": "The station is there."
+    },
+    {
+      "word": "طَرِيقٌ",
+      "reading": "ṭarīqun",
+      "meaning": "road / way",
+      "example": "الطَّرِيقُ طَوِيلٌ.",
+      "exampleMeaning": "The road is long."
+    },
+    {
+      "word": "خَرِيطَةٌ",
+      "reading": "kharīṭatun",
+      "meaning": "map",
+      "example": "الْخَرِيطَةُ عَلَى هَاتِفِي.",
+      "exampleMeaning": "The map is on my phone."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "___ وَيَسَارٌ كَلِمَتَانِ مُهِمَّتَانِ.",
+          "answer": "يَمِينٌ",
+          "hint": "right side"
+        },
+        {
+          "sentence": "___ هُنَا وَيَمِينٌ هُنَاكَ.",
+          "answer": "يَسَارٌ",
+          "hint": "left side"
+        },
+        {
+          "sentence": "___ الْبَيْتِ شَجَرَةٌ.",
+          "answer": "أَمَامَ",
+          "hint": "in front of"
+        },
+        {
+          "sentence": "___ الْمَدْرَسَةِ حَدِيقَةٌ.",
+          "answer": "خَلْفَ",
+          "hint": "behind"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "items": [
+        {
+          "question": "What does ‘يَمِينٌ’ mean?",
+          "options": [
+            "left side",
+            "right side",
+            "in front of",
+            "behind"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What does ‘يَسَارٌ’ mean?",
+          "options": [
+            "in front of",
+            "left side",
+            "behind",
+            "above"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What does ‘أَمَامَ’ mean?",
+          "options": [
+            "behind",
+            "in front of",
+            "above",
+            "under"
+          ],
+          "answer": 1
+        }
+      ]
+    }
+  ]
+}

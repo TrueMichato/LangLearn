@@ -1,0 +1,183 @@
+{
+  "id": "egyptian-phrases-2",
+  "words": [
+    {
+      "word": "بِكَام؟",
+      "reading": "bikām?",
+      "meaning": "how much? (Egyptian; MSA: bi-kam)",
+      "example": "الْكِتَاب دَه بِكَام؟",
+      "exampleMeaning": "How much is this book?"
+    },
+    {
+      "word": "مِنِينْ؟",
+      "reading": "minēn?",
+      "meaning": "from where? (Egyptian; MSA: min ʾayna)",
+      "example": "أَنْتَ مِنِينْ فِي مِصْر؟",
+      "exampleMeaning": "Where are you from in Egypt?"
+    },
+    {
+      "word": "إِمْتَى؟",
+      "reading": "imtā?",
+      "meaning": "when? (Egyptian; MSA: matā)",
+      "example": "إِمْتَى هَتِيجِي؟",
+      "exampleMeaning": "When will you come?"
+    },
+    {
+      "word": "حَاضِرْ",
+      "reading": "ḥāḍir",
+      "meaning": "okay / at your service (Egyptian)",
+      "example": "حَاضِرْ، هَابْعَتْ الرِّسَالَة دِلْوَقْتِي.",
+      "exampleMeaning": "Okay, I will send the message now."
+    },
+    {
+      "word": "مَعْلِشْ",
+      "reading": "maʿlish",
+      "meaning": "never mind / sorry (Egyptian)",
+      "example": "مَعْلِشْ، أَنَا اِتْأَخَّرْت شْوَيَّة.",
+      "exampleMeaning": "Sorry, I was a little late."
+    },
+    {
+      "word": "وَاحِشْنِي",
+      "reading": "wāḥishnī",
+      "meaning": "I miss you (Egyptian; MSA: ʾashtāqu ʾilayka)",
+      "example": "أَنْتَ وَاحِشْنِي يَا صَاحْبِي.",
+      "exampleMeaning": "I miss you, my friend."
+    },
+    {
+      "word": "عَلَى فِكْرَة",
+      "reading": "ʿalā fikra",
+      "meaning": "by the way (Egyptian/MSA)",
+      "example": "عَلَى فِكْرَة، الدَّرْس بُكْرَة بَدْرِي.",
+      "exampleMeaning": "By the way, the lesson is early tomorrow."
+    },
+    {
+      "word": "بِسُرْعَة",
+      "reading": "bisurʿa",
+      "meaning": "quickly (Egyptian/MSA)",
+      "example": "تَعَالَ بِسُرْعَة عَشَانْ الْقِطَار.",
+      "exampleMeaning": "Come quickly because of the train."
+    },
+    {
+      "word": "رَاحْ",
+      "reading": "rāḥ",
+      "meaning": "went / has gone (Egyptian; MSA: dhahaba)",
+      "example": "أَحْمَد رَاحْ الشُّغْل بَدْرِي.",
+      "exampleMeaning": "Ahmad went to work early."
+    },
+    {
+      "word": "جَاهِزْ",
+      "reading": "gāhiz",
+      "meaning": "ready (Egyptian; MSA: jāhiz)",
+      "example": "أَنَا جَاهِزْ لِلْخُرُوج.",
+      "exampleMeaning": "I am ready to go out."
+    },
+    {
+      "word": "زَحْمَة",
+      "reading": "zaḥma",
+      "meaning": "crowded / traffic (Egyptian; MSA: izdihām)",
+      "example": "الطَّرِيق زَحْمَة النَّهَارْدَه.",
+      "exampleMeaning": "The road is crowded today."
+    },
+    {
+      "word": "حِلْوْ",
+      "reading": "ḥilw",
+      "meaning": "nice / sweet (Egyptian; MSA: jamīl)",
+      "example": "الْمَكَان حِلْوْ وَهَادِي.",
+      "exampleMeaning": "The place is nice and quiet."
+    },
+    {
+      "word": "مِنْ بَدْرِي",
+      "reading": "min badrī",
+      "meaning": "early (Egyptian; MSA: mubakkiran)",
+      "example": "صَحِيتْ مِنْ بَدْرِي عَشَانْ الشُّغْل.",
+      "exampleMeaning": "I woke up early for work."
+    },
+    {
+      "word": "لِسَّه",
+      "reading": "lissa",
+      "meaning": "still / not yet (Egyptian; MSA: mā zāla)",
+      "example": "لِسَّه الْأَكْل مَخْلَصْش.",
+      "exampleMeaning": "The food is still not finished."
+    },
+    {
+      "word": "بَقَى",
+      "reading": "baʾa",
+      "meaning": "then / so / became (Egyptian discourse word)",
+      "example": "خَلَصْنَا الدَّرْس، بَقَى نِرُوحْ.",
+      "exampleMeaning": "We finished the lesson, so let's go."
+    },
+    {
+      "word": "خُدْ بَالَكْ",
+      "reading": "khud bālak",
+      "meaning": "take care / pay attention (Egyptian; MSA: intabih)",
+      "example": "خُدْ بَالَكْ مِنَ السِّلِّم.",
+      "exampleMeaning": "Take care on the stairs."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "الْكِتَاب دَه ___",
+          "answer": "بِكَام؟",
+          "hint": "how much?"
+        },
+        {
+          "sentence": "أَنْتَ ___ فِي مِصْر؟",
+          "answer": "مِنِينْ؟",
+          "hint": "from where?"
+        },
+        {
+          "sentence": "___ هَتِيجِي؟",
+          "answer": "إِمْتَى؟",
+          "hint": "when?"
+        },
+        {
+          "sentence": "___، هَابْعَتْ الرِّسَالَة دِلْوَقْتِي.",
+          "answer": "حَاضِرْ",
+          "hint": "okay"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "items": [
+        {
+          "question": "What does ‘بِكَام؟’ mean?",
+          "options": [
+            "from where? (Egyptian; MSA: min ʾayna)",
+            "how much? (Egyptian; MSA: bi-kam)",
+            "okay / at your service (Egyptian)",
+            "never mind / sorry (Egyptian)"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What does ‘مِنِينْ؟’ mean?",
+          "options": [
+            "when? (Egyptian; MSA: matā)",
+            "from where? (Egyptian; MSA: min ʾayna)",
+            "never mind / sorry (Egyptian)",
+            "I miss you (Egyptian; MSA: ʾashtāqu ʾilayka)"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What does ‘إِمْتَى؟’ mean?",
+          "options": [
+            "okay / at your service (Egyptian)",
+            "when? (Egyptian; MSA: matā)",
+            "I miss you (Egyptian; MSA: ʾashtāqu ʾilayka)",
+            "by the way (Egyptian/MSA)"
+          ],
+          "answer": 1
+        }
+      ]
+    }
+  ]
+}

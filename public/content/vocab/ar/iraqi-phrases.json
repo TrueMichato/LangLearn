@@ -1,0 +1,183 @@
+{
+  "id": "iraqi-phrases",
+  "words": [
+    {
+      "word": "شْلُونَك؟",
+      "reading": "shlōnak?",
+      "meaning": "how are you? (Iraqi; MSA: kayfa ḥāluka?)",
+      "example": "شْلُونَك؟ إِنْ شَاءَ الله زِين.",
+      "exampleMeaning": "How are you? Hopefully well."
+    },
+    {
+      "word": "شْلُونِچ؟",
+      "reading": "shlōnich?",
+      "meaning": "how are you? to a woman (Iraqi; MSA: kayfa ḥāluki?)",
+      "example": "شْلُونِچ؟ سَأَلَتْهَا الصَّدِيقَةُ بِاللَّهْجَةِ العِرَاقِيَّةِ.",
+      "exampleMeaning": "How are you? the friend asked her in Iraqi dialect."
+    },
+    {
+      "word": "أَكُو",
+      "reading": "aku",
+      "meaning": "there is / there are (Iraqi; MSA: yūjadu)",
+      "example": "أَكُو مَطْعَمْ قَرِيبْ مِنْ هْنَا.",
+      "exampleMeaning": "There is a restaurant near here."
+    },
+    {
+      "word": "مَاكُو",
+      "reading": "māku",
+      "meaning": "there is not / there are not (Iraqi; MSA: lā yūjadu)",
+      "example": "مَاكُو وَقِتْ كَافِي هَسَّه.",
+      "exampleMeaning": "There is not enough time now."
+    },
+    {
+      "word": "هْوَايَة",
+      "reading": "hwāya",
+      "meaning": "a lot / much (Iraqi; MSA: kathīr)",
+      "example": "عِنْدِي هْوَايَة شُغُلْ اليَوْمْ.",
+      "exampleMeaning": "I have a lot of work today."
+    },
+    {
+      "word": "زِين",
+      "reading": "zēn",
+      "meaning": "good / fine (Iraqi; MSA: jayyid)",
+      "example": "الوَضْعْ زِين بَعْدَ التَّصْلِيحْ.",
+      "exampleMeaning": "The situation is fine after the repair."
+    },
+    {
+      "word": "مُو",
+      "reading": "mū",
+      "meaning": "not / is not (Iraqi; MSA: laysa)",
+      "example": "هَذَا مُو سَهِلْ بَسْ مُمْكِنْ.",
+      "exampleMeaning": "This is not easy, but it is possible."
+    },
+    {
+      "word": "آنِي",
+      "reading": "āni",
+      "meaning": "I (Iraqi; MSA: ʾanā)",
+      "example": "آنِي أَحِبّْ القَهْوَة الصُّبْحْ.",
+      "exampleMeaning": "I like coffee in the morning."
+    },
+    {
+      "word": "إِنْتَ",
+      "reading": "inta",
+      "meaning": "you, masculine (Iraqi; MSA: ʾanta)",
+      "example": "إِنْتَ تِعْرِفْ الطَّرِيقْ لِلْبَيْتْ.",
+      "exampleMeaning": "You know the way to the house."
+    },
+    {
+      "word": "هَسَّه",
+      "reading": "hassa",
+      "meaning": "now (Iraqi; MSA: al-ʾāna)",
+      "example": "هَسَّه نِطْلَعْ لِلْسُّوقْ.",
+      "exampleMeaning": "Now we are going out to the market."
+    },
+    {
+      "word": "بَاجِر",
+      "reading": "bāchir",
+      "meaning": "tomorrow (Iraqi; MSA: ghadan)",
+      "example": "بَاجِر عِنْدَنَا مُحَاضَرَة مُهِمَّة.",
+      "exampleMeaning": "Tomorrow we have an important lecture."
+    },
+    {
+      "word": "شْقَد",
+      "reading": "shgad",
+      "meaning": "how much / how many (Iraqi; MSA: kam)",
+      "example": "شْقَد سِعْرْ هَذَا الكِتَابْ؟",
+      "exampleMeaning": "How much is this book?"
+    },
+    {
+      "word": "دَ أَرُوح",
+      "reading": "da arūḥ",
+      "meaning": "I am going (Iraqi progressive; MSA: ʾadhhabu al-ʾāna)",
+      "example": "دَ أَرُوح لِلْجَامِعَة هَسَّه.",
+      "exampleMeaning": "I am going to the university now."
+    },
+    {
+      "word": "تْرِيد؟",
+      "reading": "trīd?",
+      "meaning": "do you want? (Iraqi; MSA: turīdu?)",
+      "example": "تْرِيد؟ عِنْدِي شَايْ حَارْ.",
+      "exampleMeaning": "Do you want some? I have hot tea."
+    },
+    {
+      "word": "خَلِّي",
+      "reading": "khallī",
+      "meaning": "let / put (Iraqi; MSA: daʿ)",
+      "example": "خَلِّي المِفْتَاحْ عَلَى الطَّاوِلَة.",
+      "exampleMeaning": "Put the key on the table."
+    },
+    {
+      "word": "مَا أَدْرِي",
+      "reading": "mā adrī",
+      "meaning": "I do not know (Iraqi; MSA: lā ʾadrī)",
+      "example": "مَا أَدْرِي لَيْشْ القِطَارْ تَأَخَّرْ.",
+      "exampleMeaning": "I do not know why the train was late."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "___ إِنْ شَاءَ الله زِين.",
+          "answer": "شْلُونَك؟",
+          "hint": "how are you? (Iraqi; MSA: kayfa ḥāluka?)"
+        },
+        {
+          "sentence": "___ سَأَلَتْهَا الصَّدِيقَةُ بِاللَّهْجَةِ العِرَاقِيَّةِ.",
+          "answer": "شْلُونِچ؟",
+          "hint": "how are you? to a woman (Iraqi; MSA: kayfa ḥāluki?)"
+        },
+        {
+          "sentence": "___ مَطْعَمْ قَرِيبْ مِنْ هْنَا.",
+          "answer": "أَكُو",
+          "hint": "there is / there are (Iraqi; MSA: yūjadu)"
+        },
+        {
+          "sentence": "___ وَقِتْ كَافِي هَسَّه.",
+          "answer": "مَاكُو",
+          "hint": "there is not / there are not (Iraqi; MSA: lā yūjadu)"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "items": [
+        {
+          "question": "What does ‘شْلُونَك؟’ mean?",
+          "options": [
+            "how are you? to a woman (Iraqi; MSA: kayfa ḥāluki?)",
+            "how are you? (Iraqi; MSA: kayfa ḥāluka?)",
+            "there is / there are (Iraqi; MSA: yūjadu)",
+            "there is not / there are not (Iraqi; MSA: lā yūjadu)"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What does ‘شْلُونِچ؟’ mean?",
+          "options": [
+            "there is / there are (Iraqi; MSA: yūjadu)",
+            "how are you? to a woman (Iraqi; MSA: kayfa ḥāluki?)",
+            "there is not / there are not (Iraqi; MSA: lā yūjadu)",
+            "a lot / much (Iraqi; MSA: kathīr)"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What does ‘أَكُو’ mean?",
+          "options": [
+            "there is not / there are not (Iraqi; MSA: lā yūjadu)",
+            "there is / there are (Iraqi; MSA: yūjadu)",
+            "a lot / much (Iraqi; MSA: kathīr)",
+            "good / fine (Iraqi; MSA: jayyid)"
+          ],
+          "answer": 1
+        }
+      ]
+    }
+  ]
+}

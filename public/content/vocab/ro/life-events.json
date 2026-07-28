@@ -1,0 +1,178 @@
+{
+  "id": "life-events",
+  "words": [
+    {
+      "word": "naștere",
+      "reading": "nahsh-teh-reh",
+      "meaning": "birth",
+      "example": "Nașterea copilului a adus multă bucurie.",
+      "exampleMeaning": "The child's birth brought much joy."
+    },
+    {
+      "word": "copilărie",
+      "reading": "ko-pee-luh-ree-eh",
+      "meaning": "childhood",
+      "example": "Copilăria în sat a fost liniștită.",
+      "exampleMeaning": "Childhood in the village was peaceful."
+    },
+    {
+      "word": "adolescență",
+      "reading": "ah-do-les-chen-tsuh",
+      "meaning": "adolescence",
+      "example": "Adolescența poate fi o perioadă dificilă.",
+      "exampleMeaning": "Adolescence can be a difficult period."
+    },
+    {
+      "word": "majorat",
+      "reading": "mah-zho-raht",
+      "meaning": "coming of age / eighteenth birthday",
+      "example": "La majorat, Andrei a primit un ceas.",
+      "exampleMeaning": "For his coming of age, Andrei received a watch."
+    },
+    {
+      "word": "logodnă",
+      "reading": "lo-god-nuh",
+      "meaning": "engagement",
+      "example": "Logodna lor a fost anunțată duminică.",
+      "exampleMeaning": "Their engagement was announced on Sunday."
+    },
+    {
+      "word": "căsătorie",
+      "reading": "kuh-suh-to-ree-eh",
+      "meaning": "marriage",
+      "example": "Căsătoria civilă are loc la primărie.",
+      "exampleMeaning": "The civil marriage takes place at city hall."
+    },
+    {
+      "word": "aniversare",
+      "reading": "ah-nee-ver-sah-reh",
+      "meaning": "anniversary / birthday celebration",
+      "example": "Aniversarea bunicii este în iunie.",
+      "exampleMeaning": "Grandma's birthday celebration is in June."
+    },
+    {
+      "word": "absolvire",
+      "reading": "ab-sol-vee-reh",
+      "meaning": "graduation",
+      "example": "După absolvire, Maria a plecat în vacanță.",
+      "exampleMeaning": "After graduation, Maria went on vacation."
+    },
+    {
+      "word": "ceremonie",
+      "reading": "cheh-reh-mo-nee-eh",
+      "meaning": "ceremony",
+      "example": "Ceremonia începe la ora cinci.",
+      "exampleMeaning": "The ceremony begins at five o'clock."
+    },
+    {
+      "word": "invitație",
+      "reading": "een-vee-tah-tsee-eh",
+      "meaning": "invitation",
+      "example": "Am primit o invitație elegantă.",
+      "exampleMeaning": "I received an elegant invitation."
+    },
+    {
+      "word": "invitat",
+      "reading": "een-vee-taht",
+      "meaning": "guest",
+      "example": "Fiecare invitat aduce flori.",
+      "exampleMeaning": "Each guest brings flowers."
+    },
+    {
+      "word": "mire",
+      "reading": "mee-reh",
+      "meaning": "groom",
+      "example": "Mirele poartă un costum albastru.",
+      "exampleMeaning": "The groom wears a blue suit."
+    },
+    {
+      "word": "mireasă",
+      "reading": "mee-reh-ah-suh",
+      "meaning": "bride",
+      "example": "Mireasa zâmbește în fotografie.",
+      "exampleMeaning": "The bride smiles in the photo."
+    },
+    {
+      "word": "naș",
+      "reading": "nahsh",
+      "meaning": "godfather / wedding sponsor",
+      "example": "Nașul ține lumânarea în biserică.",
+      "exampleMeaning": "The godfather holds the candle in church."
+    },
+    {
+      "word": "nașă",
+      "reading": "nah-shuh",
+      "meaning": "godmother / wedding sponsor",
+      "example": "Nașa ajută mireasa înainte de ceremonie.",
+      "exampleMeaning": "The godmother helps the bride before the ceremony."
+    },
+    {
+      "word": "înmormântare",
+      "reading": "uhn-mor-muhn-tah-reh",
+      "meaning": "funeral",
+      "example": "Familia s-a adunat la înmormântare.",
+      "exampleMeaning": "The family gathered at the funeral."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "Am primit o ___ pentru ceremonie.",
+          "answer": "invitație",
+          "hint": "invitation"
+        },
+        {
+          "sentence": "După ___, studenții au făcut fotografii.",
+          "answer": "absolvire",
+          "hint": "graduation"
+        },
+        {
+          "sentence": "La ___, Andrei a împlinit optsprezece ani.",
+          "answer": "majorat",
+          "hint": "coming of age"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "items": [
+        {
+          "question": "What does 'naștere' mean?",
+          "options": [
+            "graduation",
+            "birth",
+            "engagement",
+            "guest"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "How do you say 'bride' in Romanian?",
+          "options": [
+            "mireasă",
+            "mire",
+            "invitat",
+            "naș"
+          ],
+          "answer": 0
+        },
+        {
+          "question": "What does 'înmormântare' mean?",
+          "options": [
+            "ceremony",
+            "anniversary",
+            "funeral",
+            "marriage"
+          ],
+          "answer": 2
+        }
+      ]
+    }
+  ]
+}

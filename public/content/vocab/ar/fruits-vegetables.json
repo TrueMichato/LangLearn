@@ -1,0 +1,183 @@
+{
+  "id": "fruits-vegetables",
+  "words": [
+    {
+      "word": "تُفَّاحَةٌ",
+      "reading": "tuffāḥatun",
+      "meaning": "apple",
+      "example": "تُفَّاحَةٌ حَمْرَاءُ فِي الْحَقِيبَةِ.",
+      "exampleMeaning": "A red apple is in the bag."
+    },
+    {
+      "word": "مَوْزٌ",
+      "reading": "mawzun",
+      "meaning": "banana",
+      "example": "مَوْزٌ أَصْفَرُ عَلَى الطَّاوِلَةِ.",
+      "exampleMeaning": "A yellow banana is on the table."
+    },
+    {
+      "word": "بُرْتُقَالٌ",
+      "reading": "burtuqālun",
+      "meaning": "orange (fruit)",
+      "example": "بُرْتُقَالٌ لَذِيذٌ فِي الصَّحْنِ.",
+      "exampleMeaning": "A delicious orange is on the plate."
+    },
+    {
+      "word": "عِنَبٌ",
+      "reading": "ʿinabun",
+      "meaning": "grapes",
+      "example": "عِنَبٌ حُلْوٌ فِي السُّوقِ.",
+      "exampleMeaning": "Sweet grapes are in the market."
+    },
+    {
+      "word": "تَمْرٌ",
+      "reading": "tamrun",
+      "meaning": "dates",
+      "example": "التَّمْرُ مَعَ الْقَهْوَةِ.",
+      "exampleMeaning": "Dates are with coffee."
+    },
+    {
+      "word": "لَيْمُونٌ",
+      "reading": "laymūnun",
+      "meaning": "lemon",
+      "example": "اللَّيْمُونُ حَامِضٌ.",
+      "exampleMeaning": "The lemon is sour."
+    },
+    {
+      "word": "فَرَاوِلَةٌ",
+      "reading": "farāwilatun",
+      "meaning": "strawberry",
+      "example": "الْفَرَاوِلَةُ حَمْرَاءُ وَحُلْوَةٌ.",
+      "exampleMeaning": "The strawberry is red and sweet."
+    },
+    {
+      "word": "بَطِّيخٌ",
+      "reading": "baṭṭīkhun",
+      "meaning": "watermelon",
+      "example": "الْبَطِّيخُ كَبِيرٌ وَبَارِدٌ.",
+      "exampleMeaning": "The watermelon is large and cold."
+    },
+    {
+      "word": "طَمَاطِمُ",
+      "reading": "ṭamāṭimu",
+      "meaning": "tomatoes",
+      "example": "الطَّمَاطِمُ فِي السَّلَطَةِ.",
+      "exampleMeaning": "The tomatoes are in the salad."
+    },
+    {
+      "word": "خِيَارٌ",
+      "reading": "khiyārun",
+      "meaning": "cucumber",
+      "example": "الْخِيَارُ طَازَجٌ.",
+      "exampleMeaning": "The cucumber is fresh."
+    },
+    {
+      "word": "جَزَرٌ",
+      "reading": "jazarun",
+      "meaning": "carrots",
+      "example": "الْجَزَرُ بُرْتُقَالِيٌّ.",
+      "exampleMeaning": "The carrots are orange."
+    },
+    {
+      "word": "بَطَاطِسُ",
+      "reading": "baṭāṭisu",
+      "meaning": "potatoes",
+      "example": "الْبَطَاطِسُ فِي الْمَطْبَخِ.",
+      "exampleMeaning": "The potatoes are in the kitchen."
+    },
+    {
+      "word": "بَصَلٌ",
+      "reading": "baṣalun",
+      "meaning": "onion",
+      "example": "الْبَصَلُ قَوِيُّ الرَّائِحَةِ.",
+      "exampleMeaning": "The onion has a strong smell."
+    },
+    {
+      "word": "ثَوْمٌ",
+      "reading": "thawmun",
+      "meaning": "garlic",
+      "example": "الثَّوْمُ فِي الطَّبَقِ.",
+      "exampleMeaning": "The garlic is in the dish."
+    },
+    {
+      "word": "خَسٌّ",
+      "reading": "khassun",
+      "meaning": "lettuce",
+      "example": "الْخَسُّ أَخْضَرُ.",
+      "exampleMeaning": "The lettuce is green."
+    },
+    {
+      "word": "نَعْنَاعٌ",
+      "reading": "naʿnāʿun",
+      "meaning": "mint",
+      "example": "النَّعْنَاعُ فِي الشَّايِ.",
+      "exampleMeaning": "Mint is in the tea."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "___ حَمْرَاءُ فِي الْحَقِيبَةِ.",
+          "answer": "تُفَّاحَةٌ",
+          "hint": "apple"
+        },
+        {
+          "sentence": "___ أَصْفَرُ عَلَى الطَّاوِلَةِ.",
+          "answer": "مَوْزٌ",
+          "hint": "banana"
+        },
+        {
+          "sentence": "___ لَذِيذٌ فِي الصَّحْنِ.",
+          "answer": "بُرْتُقَالٌ",
+          "hint": "orange"
+        },
+        {
+          "sentence": "___ حُلْوٌ فِي السُّوقِ.",
+          "answer": "عِنَبٌ",
+          "hint": "grapes"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "items": [
+        {
+          "question": "What does ‘تُفَّاحَةٌ’ mean?",
+          "options": [
+            "banana",
+            "apple",
+            "orange (fruit)",
+            "grapes"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What does ‘مَوْزٌ’ mean?",
+          "options": [
+            "orange (fruit)",
+            "banana",
+            "grapes",
+            "dates"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What does ‘بُرْتُقَالٌ’ mean?",
+          "options": [
+            "grapes",
+            "orange (fruit)",
+            "dates",
+            "lemon"
+          ],
+          "answer": 1
+        }
+      ]
+    }
+  ]
+}

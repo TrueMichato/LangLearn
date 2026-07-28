@@ -3,10 +3,13 @@ import { Link } from 'react-router-dom';
 import { useSettingsStore } from '../stores/settingsStore';
 import { useXPStore } from '../stores/xpStore';
 import { getLanguageLabel } from '../lib/languages';
+import { isRTL } from '../lib/rtl';
 import { jaSentences } from '../data/sentences/ja-sentences';
 import { ruSentences } from '../data/sentences/ru-sentences';
 import { ptSentences } from '../data/sentences/pt-sentences';
 import { esSentences } from '../data/sentences/es-sentences';
+import { arSentences } from '../data/sentences/ar-sentences';
+import { roSentences } from '../data/sentences/ro-sentences';
 import type { PracticeSentence } from '../data/sentences/ja-sentences';
 import {
   XP_TRANSLATION_BASE,
@@ -37,6 +40,8 @@ function getSentences(lang: string): PracticeSentence[] {
   if (lang === 'ru') return ruSentences;
   if (lang === 'pt') return ptSentences;
   if (lang === 'es') return esSentences;
+  if (lang === 'ar') return arSentences;
+  if (lang === 'ro') return roSentences;
   return [];
 }
 
@@ -51,7 +56,7 @@ function shuffle<T>(arr: T[]): T[] {
 
 export default function TranslationPracticePage() {
   const activeLanguages = useSettingsStore((s) => s.activeLanguages);
-  const supportedLanguages = activeLanguages.filter((l) => l === 'ja' || l === 'ru' || l === 'pt' || l === 'es');
+  const supportedLanguages = activeLanguages.filter((l) => l === 'ja' || l === 'ru' || l === 'pt' || l === 'es' || l === 'ar' || l === 'ro');
 
   const [phase, setPhase] = useState<Phase>('setup');
   const [language, setLanguage] = useState(supportedLanguages[0] ?? 'ja');
@@ -249,6 +254,7 @@ export default function TranslationPracticePage() {
             placeholder="Type your translation…"
             rows={3}
             className="w-full resize-none rounded-xl border border-slate-200 dark:border-slate-600 bg-slate-50 dark:bg-slate-700 text-slate-800 dark:text-slate-100 p-3 text-lg placeholder:text-slate-400 dark:placeholder:text-slate-500 focus:outline-none focus:ring-2 focus:ring-indigo-400 disabled:opacity-60"
+            dir={isRTL(language) ? 'rtl' : undefined}
             onKeyDown={(e) => {
               if (e.key === 'Enter' && !e.shiftKey && !submitted) {
                 e.preventDefault();
@@ -284,7 +290,7 @@ export default function TranslationPracticePage() {
               <p className="text-xs text-indigo-600 dark:text-indigo-400 mb-1">
                 Reference
               </p>
-              <p className="text-lg font-mono text-indigo-800 dark:text-indigo-200">
+              <p className="text-lg font-mono text-indigo-800 dark:text-indigo-200" dir={isRTL(language) ? 'rtl' : undefined}>
                 {current.target}
               </p>
               <p className="text-sm text-indigo-600 dark:text-indigo-400 mt-1">
@@ -385,7 +391,7 @@ export default function TranslationPracticePage() {
               className="rounded-xl border border-red-100 dark:border-red-900/40 bg-red-50/60 dark:bg-red-950/20 px-3 py-2"
             >
               <p className="text-sm text-slate-600 dark:text-slate-400">{r.sentence.english}</p>
-              <p className="text-sm font-mono text-slate-800 dark:text-slate-100 mt-1">
+              <p className="text-sm font-mono text-slate-800 dark:text-slate-100 mt-1" dir={isRTL(language) ? 'rtl' : undefined}>
                 {r.sentence.target}
               </p>
               <p className="text-xs text-slate-500 dark:text-slate-400">{r.sentence.reading}</p>

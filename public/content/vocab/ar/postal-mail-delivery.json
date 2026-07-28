@@ -1,0 +1,159 @@
+{
+  "id": "postal-mail-delivery",
+  "words": [
+    {
+      "word": "بَرِيدٌ",
+      "reading": "barīdun",
+      "meaning": "mail / post",
+      "example": "بَرِيدٌ جَدِيدٌ وَصَلَ إِلَى الْمَكْتَبِ.",
+      "exampleMeaning": "New mail arrived at the office."
+    },
+    {
+      "word": "طَرْدٌ",
+      "reading": "ṭardun",
+      "meaning": "package",
+      "example": "طَرْدٌ صَغِيرٌ يَنْتَظِرُ عِنْدَ الْبَابِ.",
+      "exampleMeaning": "A small package is waiting at the door."
+    },
+    {
+      "word": "رِسَالَةٌ",
+      "reading": "risālatun",
+      "meaning": "letter",
+      "example": "رِسَالَةٌ لَطِيفَةٌ جَاءَتْ مِنْ صَدِيقٍ.",
+      "exampleMeaning": "A kind letter came from a friend."
+    },
+    {
+      "word": "ظَرْفٌ",
+      "reading": "ẓarfun",
+      "meaning": "envelope",
+      "example": "ظَرْفٌ أَصْفَرُ يَحْمِلُ الْعُنْوَانَ.",
+      "exampleMeaning": "A yellow envelope carries the address."
+    },
+    {
+      "word": "طَابَعٌ بَرِيدِيٌّ",
+      "reading": "ṭābiʿun barīdiyyun",
+      "meaning": "postage stamp",
+      "example": "طَابَعٌ بَرِيدِيٌّ عَلَى الظَّرْفِ.",
+      "exampleMeaning": "A postage stamp is on the envelope."
+    },
+    {
+      "word": "عُنْوَانٌ",
+      "reading": "ʿunwānun",
+      "meaning": "address",
+      "example": "عُنْوَانٌ وَاضِحٌ يُسَرِّعُ التَّوْصِيلَ.",
+      "exampleMeaning": "A clear address speeds up delivery."
+    },
+    {
+      "word": "صُنْدُوقُ بَرِيدٍ",
+      "reading": "ṣundūqu barīdin",
+      "meaning": "mailbox",
+      "example": "صُنْدُوقُ بَرِيدٍ أَحْمَرُ أَمَامَ الْبِنَايَةِ.",
+      "exampleMeaning": "A red mailbox is in front of the building."
+    },
+    {
+      "word": "مُرْسِلٌ",
+      "reading": "mursilun",
+      "meaning": "sender",
+      "example": "مُرْسِلٌ كَتَبَ رَقْمَ الْهَاتِفِ.",
+      "exampleMeaning": "The sender wrote the phone number."
+    },
+    {
+      "word": "مُسْتَلِمٌ",
+      "reading": "mustalimun",
+      "meaning": "recipient",
+      "example": "مُسْتَلِمٌ وَقَّعَ عَلَى الْإِيصَالِ.",
+      "exampleMeaning": "The recipient signed the receipt."
+    },
+    {
+      "word": "تَوْصِيلٌ",
+      "reading": "tawṣīlun",
+      "meaning": "delivery",
+      "example": "تَوْصِيلٌ سَرِيعٌ يُسْعِدُ الزَّبُونَ.",
+      "exampleMeaning": "Fast delivery makes the customer happy."
+    },
+    {
+      "word": "شَاحِنَةُ تَسْلِيمٍ",
+      "reading": "shāḥinatu taslīmin",
+      "meaning": "delivery truck",
+      "example": "شَاحِنَةُ تَسْلِيمٍ تَقِفُ قُرْبَ الْمَخْزَنِ.",
+      "exampleMeaning": "A delivery truck stops near the warehouse."
+    },
+    {
+      "word": "تَتَبُّعٌ",
+      "reading": "tatabbuʿun",
+      "meaning": "tracking",
+      "example": "تَتَبُّعٌ دَقِيقٌ يُظْهِرُ مَكَانَ الطَّرْدِ.",
+      "exampleMeaning": "Accurate tracking shows the package location."
+    },
+    {
+      "word": "إِيصَالٌ",
+      "reading": "īṣālun",
+      "meaning": "receipt",
+      "example": "إِيصَالٌ مَطْبُوعٌ يُثْبِتُ الدَّفْعَ.",
+      "exampleMeaning": "A printed receipt proves payment."
+    },
+    {
+      "word": "تَوْقِيعٌ",
+      "reading": "tawqīʿun",
+      "meaning": "signature",
+      "example": "تَوْقِيعٌ وَاضِحٌ مَطْلُوبٌ عِنْدَ الاسْتِلَامِ.",
+      "exampleMeaning": "A clear signature is required upon receipt."
+    },
+    {
+      "word": "فَرْعٌ بَرِيدِيٌّ",
+      "reading": "farʿun barīdiyyun",
+      "meaning": "post office branch",
+      "example": "فَرْعٌ بَرِيدِيٌّ جَدِيدٌ افْتُتِحَ فِي الْحَيِّ.",
+      "exampleMeaning": "A new post office branch opened in the neighborhood."
+    },
+    {
+      "word": "مُهْلَةُ تَسْلِيمٍ",
+      "reading": "muhlatu taslīmin",
+      "meaning": "delivery window",
+      "example": "مُهْلَةُ تَسْلِيمٍ قَصِيرَةٌ تُنَاسِبُ الْعَمِيلَ.",
+      "exampleMeaning": "A short delivery window suits the client."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "___ صَغِيرٌ يَنْتَظِرُ عِنْدَ الْبَابِ.",
+          "answer": "طَرْدٌ",
+          "hint": "package"
+        },
+        {
+          "sentence": "___ وَاضِحٌ يُسَرِّعُ التَّوْصِيلَ.",
+          "answer": "عُنْوَانٌ",
+          "hint": "address"
+        },
+        {
+          "sentence": "___ دَقِيقٌ يُظْهِرُ مَكَانَ الطَّرْدِ.",
+          "answer": "تَتَبُّعٌ",
+          "hint": "tracking"
+        },
+        {
+          "sentence": "___ مَطْبُوعٌ يُثْبِتُ الدَّفْعَ.",
+          "answer": "إِيصَالٌ",
+          "hint": "receipt"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "What does ‘صُنْدُوقُ بَرِيدٍ’ mean?",
+      "options": [
+        "mailbox",
+        "delivery truck",
+        "signature",
+        "postage stamp"
+      ],
+      "answer": 0
+    }
+  ]
+}

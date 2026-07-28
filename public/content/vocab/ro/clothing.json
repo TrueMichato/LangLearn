@@ -1,0 +1,178 @@
+{
+  "id": "clothing",
+  "words": [
+    {
+      "word": "haină",
+      "reading": "hy-nuh",
+      "meaning": "coat / garment",
+      "example": "Pun o haină groasă iarna.",
+      "exampleMeaning": "I put on a thick coat in winter."
+    },
+    {
+      "word": "tricou",
+      "reading": "tree-koh-oo",
+      "meaning": "T-shirt",
+      "example": "Port un tricou alb.",
+      "exampleMeaning": "I wear a white T-shirt."
+    },
+    {
+      "word": "cămașă",
+      "reading": "kuh-mah-shuh",
+      "meaning": "shirt",
+      "example": "Cumpăr o cămașă albastră.",
+      "exampleMeaning": "I buy a blue shirt."
+    },
+    {
+      "word": "pantaloni",
+      "reading": "pahn-tah-lon",
+      "meaning": "pants",
+      "example": "Niște pantaloni negri sunt pe scaun.",
+      "exampleMeaning": "Some black pants are on the chair."
+    },
+    {
+      "word": "fustă",
+      "reading": "foos-tuh",
+      "meaning": "skirt",
+      "example": "O fustă roșie este în dulap.",
+      "exampleMeaning": "A red skirt is in the closet."
+    },
+    {
+      "word": "rochie",
+      "reading": "roh-kee-eh",
+      "meaning": "dress",
+      "example": "Ea poartă rochie elegantă.",
+      "exampleMeaning": "She wears an elegant dress."
+    },
+    {
+      "word": "pantof",
+      "reading": "pahn-tof",
+      "meaning": "shoe",
+      "example": "Un pantof este sub pat.",
+      "exampleMeaning": "One shoe is under the bed."
+    },
+    {
+      "word": "cizmă",
+      "reading": "cheez-muh",
+      "meaning": "boot",
+      "example": "O cizmă udă stă la ușă.",
+      "exampleMeaning": "A wet boot is by the door."
+    },
+    {
+      "word": "șosetă",
+      "reading": "shoh-seh-tuh",
+      "meaning": "sock",
+      "example": "O șosetă lipsește din sertar.",
+      "exampleMeaning": "One sock is missing from the drawer."
+    },
+    {
+      "word": "pălărie",
+      "reading": "puh-luh-ree-eh",
+      "meaning": "hat",
+      "example": "O pălărie protejează de soare.",
+      "exampleMeaning": "A hat protects from the sun."
+    },
+    {
+      "word": "mănușă",
+      "reading": "muh-noo-shuh",
+      "meaning": "glove",
+      "example": "O mănușă cade pe zăpadă.",
+      "exampleMeaning": "A glove falls on the snow."
+    },
+    {
+      "word": "eșarfă",
+      "reading": "eh-shahr-fuh",
+      "meaning": "scarf",
+      "example": "O eșarfă colorată completează ținuta.",
+      "exampleMeaning": "A colorful scarf completes the outfit."
+    },
+    {
+      "word": "curea",
+      "reading": "koo-reh-ah",
+      "meaning": "belt",
+      "example": "O curea din piele este maro.",
+      "exampleMeaning": "A leather belt is brown."
+    },
+    {
+      "word": "ceas",
+      "reading": "chahs",
+      "meaning": "watch / clock",
+      "example": "Port ceas la mâna stângă.",
+      "exampleMeaning": "I wear a watch on my left hand."
+    },
+    {
+      "word": "inel",
+      "reading": "ee-nel",
+      "meaning": "ring",
+      "example": "Un inel argintiu strălucește.",
+      "exampleMeaning": "A silver ring shines."
+    },
+    {
+      "word": "ochelari",
+      "reading": "oh-keh-lahr",
+      "meaning": "glasses",
+      "example": "O pereche de ochelari ajută la citit.",
+      "exampleMeaning": "A pair of glasses helps with reading."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "Port un ___ alb.",
+          "answer": "tricou",
+          "hint": "T-shirt"
+        },
+        {
+          "sentence": "Un ___ este sub pat.",
+          "answer": "pantof",
+          "hint": "shoe"
+        },
+        {
+          "sentence": "Port ___ la citit.",
+          "answer": "ochelari",
+          "hint": "glasses"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "items": [
+        {
+          "question": "What does 'cămașă' mean?",
+          "options": [
+            "coat",
+            "shirt",
+            "skirt",
+            "boot"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "How do you say 'glove' in Romanian?",
+          "options": [
+            "mănușă",
+            "șosetă",
+            "pălărie",
+            "curea"
+          ],
+          "answer": 0
+        },
+        {
+          "question": "What does 'inel' mean?",
+          "options": [
+            "watch",
+            "scarf",
+            "ring",
+            "glasses"
+          ],
+          "answer": 2
+        }
+      ]
+    }
+  ]
+}

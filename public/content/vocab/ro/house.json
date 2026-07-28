@@ -1,0 +1,178 @@
+{
+  "id": "house",
+  "words": [
+    {
+      "word": "casă",
+      "reading": "kah-suh",
+      "meaning": "house",
+      "example": "O casă albă este lângă râu.",
+      "exampleMeaning": "A white house is near the river."
+    },
+    {
+      "word": "apartament",
+      "reading": "ah-pahr-tah-ment",
+      "meaning": "apartment",
+      "example": "Locuiesc într-un apartament mic.",
+      "exampleMeaning": "I live in a small apartment."
+    },
+    {
+      "word": "cameră",
+      "reading": "kah-meh-ruh",
+      "meaning": "room",
+      "example": "Această cameră are multă lumină.",
+      "exampleMeaning": "This room has a lot of light."
+    },
+    {
+      "word": "bucătărie",
+      "reading": "boo-kuh-tuh-ree-eh",
+      "meaning": "kitchen",
+      "example": "O bucătărie curată miroase a pâine caldă.",
+      "exampleMeaning": "A clean kitchen smells of warm bread."
+    },
+    {
+      "word": "baie",
+      "reading": "bah-yeh",
+      "meaning": "bathroom",
+      "example": "Intru în baie ca să mă spăl pe mâini.",
+      "exampleMeaning": "I enter the bathroom to wash my hands."
+    },
+    {
+      "word": "dormitor",
+      "reading": "dor-mee-tor",
+      "meaning": "bedroom",
+      "example": "Un dormitor liniștit ajută somnul.",
+      "exampleMeaning": "A quiet bedroom helps sleep."
+    },
+    {
+      "word": "ușă",
+      "reading": "oo-shuh",
+      "meaning": "door",
+      "example": "Închid o ușă încet.",
+      "exampleMeaning": "I close a door slowly."
+    },
+    {
+      "word": "fereastră",
+      "reading": "feh-reh-ahs-truh",
+      "meaning": "window",
+      "example": "Deschid o fereastră dimineața.",
+      "exampleMeaning": "I open a window in the morning."
+    },
+    {
+      "word": "masă",
+      "reading": "mah-suh",
+      "meaning": "table",
+      "example": "Pun cartea pe masă.",
+      "exampleMeaning": "I put the book on the table."
+    },
+    {
+      "word": "scaun",
+      "reading": "skah-oon",
+      "meaning": "chair",
+      "example": "Un scaun este lângă birou.",
+      "exampleMeaning": "A chair is next to the desk."
+    },
+    {
+      "word": "pat",
+      "reading": "paht",
+      "meaning": "bed",
+      "example": "Un pat moale mă așteaptă seara.",
+      "exampleMeaning": "A soft bed waits for me in the evening."
+    },
+    {
+      "word": "dulap",
+      "reading": "doo-lahp",
+      "meaning": "closet / cupboard",
+      "example": "Țin hainele în dulap.",
+      "exampleMeaning": "I keep the clothes in the closet."
+    },
+    {
+      "word": "frigider",
+      "reading": "free-jee-der",
+      "meaning": "refrigerator",
+      "example": "Un frigider bun păstrează laptele rece.",
+      "exampleMeaning": "A good refrigerator keeps the milk cold."
+    },
+    {
+      "word": "aragaz",
+      "reading": "ah-rah-gahz",
+      "meaning": "stove",
+      "example": "Un aragaz vechi încă funcționează.",
+      "exampleMeaning": "An old stove still works."
+    },
+    {
+      "word": "covor",
+      "reading": "koh-vor",
+      "meaning": "rug / carpet",
+      "example": "Un covor colorat acoperă podeaua.",
+      "exampleMeaning": "A colorful rug covers the floor."
+    },
+    {
+      "word": "cheie",
+      "reading": "keh-yeh",
+      "meaning": "key",
+      "example": "Am o cheie pentru poartă.",
+      "exampleMeaning": "I have a key for the gate."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "Pun cartea pe ___.",
+          "answer": "masă",
+          "hint": "table"
+        },
+        {
+          "sentence": "Țin hainele în ___.",
+          "answer": "dulap",
+          "hint": "closet"
+        },
+        {
+          "sentence": "Am o ___ pentru poartă.",
+          "answer": "cheie",
+          "hint": "key"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "items": [
+        {
+          "question": "What does 'fereastră' mean?",
+          "options": [
+            "door",
+            "window",
+            "chair",
+            "bed"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "How do you say 'kitchen' in Romanian?",
+          "options": [
+            "bucătărie",
+            "baie",
+            "cameră",
+            "dormitor"
+          ],
+          "answer": 0
+        },
+        {
+          "question": "What does 'frigider' mean?",
+          "options": [
+            "stove",
+            "rug",
+            "refrigerator",
+            "key"
+          ],
+          "answer": 2
+        }
+      ]
+    }
+  ]
+}

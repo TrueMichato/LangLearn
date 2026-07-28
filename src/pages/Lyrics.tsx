@@ -2,6 +2,7 @@ import { useState, useMemo, useCallback } from 'react';
 import { useSettingsStore } from '../stores/settingsStore';
 import { useXPStore } from '../stores/xpStore';
 import { getLanguageLabel } from '../lib/languages';
+import { isRTL } from '../lib/rtl';
 import { allLyrics, getSongById } from '../data/lyrics';
 import { addWord, wordExists } from '../db/words';
 import { XP_LYRICS_BASE, XP_PER_LYRICS_VOCAB } from '../lib/xp';
@@ -284,7 +285,7 @@ function LyricsViewer({
                 : 'hover:bg-slate-50 dark:hover:bg-slate-700/50'
             }`}
           >
-            <p className="text-base font-medium text-slate-800 dark:text-slate-100 leading-relaxed">
+            <p className="text-base font-medium text-slate-800 dark:text-slate-100 leading-relaxed" dir={isRTL(song.language) ? 'rtl' : undefined}>
               {line.original}
             </p>
             {showReading && (
@@ -321,7 +322,7 @@ function LyricsViewer({
                 className="flex items-center justify-between gap-2 px-3 py-2 rounded-xl bg-slate-50 dark:bg-slate-700/50"
               >
                 <div className="min-w-0 flex-1">
-                  <span className="font-medium text-slate-800 dark:text-slate-100">{v.word}</span>
+                  <span className="font-medium text-slate-800 dark:text-slate-100" dir={isRTL(song.language) ? 'rtl' : undefined}>{v.word}</span>
                   <span className="text-slate-500 dark:text-slate-400 mx-1.5">·</span>
                   <span className="text-sm text-slate-500 dark:text-slate-400">{v.reading}</span>
                   <p className="text-sm text-slate-500 dark:text-slate-400 truncate">{v.meaning}</p>

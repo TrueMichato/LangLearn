@@ -1,0 +1,183 @@
+{
+  "id": "colors",
+  "words": [
+    {
+      "word": "أَبْيَضُ",
+      "reading": "ʾabyaḍu",
+      "meaning": "white",
+      "example": "اللَّوْنُ أَبْيَضُ عَلَى الْوَرَقِ.",
+      "exampleMeaning": "The color is white on the paper."
+    },
+    {
+      "word": "أَسْوَدُ",
+      "reading": "ʾaswadu",
+      "meaning": "black",
+      "example": "اللَّوْنُ أَسْوَدُ فِي الصُّورَةِ.",
+      "exampleMeaning": "The color is black in the picture."
+    },
+    {
+      "word": "أَحْمَرُ",
+      "reading": "ʾaḥmaru",
+      "meaning": "red",
+      "example": "اللَّوْنُ أَحْمَرُ مِثْلُ الْوَرْدَةِ.",
+      "exampleMeaning": "The color is red like the flower."
+    },
+    {
+      "word": "أَزْرَقُ",
+      "reading": "ʾazraqu",
+      "meaning": "blue",
+      "example": "اللَّوْنُ أَزْرَقُ مِثْلُ السَّمَاءِ.",
+      "exampleMeaning": "The color is blue like the sky."
+    },
+    {
+      "word": "أَخْضَرُ",
+      "reading": "ʾakhḍaru",
+      "meaning": "green",
+      "example": "الْعُشْبُ أَخْضَرُ بَعْدَ الْمَطَرِ.",
+      "exampleMeaning": "The grass is green after the rain."
+    },
+    {
+      "word": "أَصْفَرُ",
+      "reading": "ʾaṣfaru",
+      "meaning": "yellow",
+      "example": "اللَّيْمُونُ أَصْفَرُ وَصَغِيرٌ.",
+      "exampleMeaning": "The lemon is yellow and small."
+    },
+    {
+      "word": "بُنِّيٌّ",
+      "reading": "bunniyyun",
+      "meaning": "brown",
+      "example": "الْحِذَاءُ بُنِّيٌّ وَجَدِيدٌ.",
+      "exampleMeaning": "The shoe is brown and new."
+    },
+    {
+      "word": "بُرْتُقَالِيٌّ",
+      "reading": "burtuqāliyyun",
+      "meaning": "orange (color)",
+      "example": "الْقَلَمُ بُرْتُقَالِيٌّ.",
+      "exampleMeaning": "The pen is orange."
+    },
+    {
+      "word": "وَرْدِيٌّ",
+      "reading": "wardiyyun",
+      "meaning": "pink",
+      "example": "الْفُسْتَانُ وَرْدِيٌّ.",
+      "exampleMeaning": "The dress is pink."
+    },
+    {
+      "word": "بَنَفْسَجِيٌّ",
+      "reading": "banafsajiyyun",
+      "meaning": "purple",
+      "example": "الْغِلَافُ بَنَفْسَجِيٌّ.",
+      "exampleMeaning": "The cover is purple."
+    },
+    {
+      "word": "دَائِرَةٌ",
+      "reading": "dāʾiratun",
+      "meaning": "circle",
+      "example": "رَسَمَتْ دَائِرَةٌ صَغِيرَةً.",
+      "exampleMeaning": "She drew a small circle."
+    },
+    {
+      "word": "مُرَبَّعٌ",
+      "reading": "murabbaʿun",
+      "meaning": "square",
+      "example": "هٰذَا مُرَبَّعٌ كَبِيرٌ.",
+      "exampleMeaning": "This is a large square."
+    },
+    {
+      "word": "مُثَلَّثٌ",
+      "reading": "muthallathun",
+      "meaning": "triangle",
+      "example": "فِي الدَّفْتَرِ مُثَلَّثٌ.",
+      "exampleMeaning": "There is a triangle in the notebook."
+    },
+    {
+      "word": "مُسْتَطِيلٌ",
+      "reading": "mustaṭīlun",
+      "meaning": "rectangle",
+      "example": "الْبَابُ مُسْتَطِيلٌ.",
+      "exampleMeaning": "The door is rectangular."
+    },
+    {
+      "word": "خَطٌّ",
+      "reading": "khaṭṭun",
+      "meaning": "line",
+      "example": "خَطٌّ طَوِيلٌ عَلَى السَّبُّورَةِ.",
+      "exampleMeaning": "A long line is on the board."
+    },
+    {
+      "word": "شَكْلٌ",
+      "reading": "shaklun",
+      "meaning": "shape",
+      "example": "هٰذَا شَكْلٌ جَدِيدٌ.",
+      "exampleMeaning": "This is a new shape."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "اللَّوْنُ ___ عَلَى الْوَرَقِ.",
+          "answer": "أَبْيَضُ",
+          "hint": "white"
+        },
+        {
+          "sentence": "اللَّوْنُ ___ فِي الصُّورَةِ.",
+          "answer": "أَسْوَدُ",
+          "hint": "black"
+        },
+        {
+          "sentence": "اللَّوْنُ ___ مِثْلُ الْوَرْدَةِ.",
+          "answer": "أَحْمَرُ",
+          "hint": "red"
+        },
+        {
+          "sentence": "اللَّوْنُ ___ مِثْلُ السَّمَاءِ.",
+          "answer": "أَزْرَقُ",
+          "hint": "blue"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "items": [
+        {
+          "question": "What does ‘أَبْيَضُ’ mean?",
+          "options": [
+            "black",
+            "white",
+            "red",
+            "blue"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What does ‘أَسْوَدُ’ mean?",
+          "options": [
+            "red",
+            "black",
+            "blue",
+            "green"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What does ‘أَحْمَرُ’ mean?",
+          "options": [
+            "blue",
+            "red",
+            "green",
+            "yellow"
+          ],
+          "answer": 1
+        }
+      ]
+    }
+  ]
+}

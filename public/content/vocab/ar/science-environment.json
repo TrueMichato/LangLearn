@@ -1,0 +1,183 @@
+{
+  "id": "science-environment",
+  "words": [
+    {
+      "word": "عِلْمٌ",
+      "reading": "ʿilmun",
+      "meaning": "science / knowledge",
+      "example": "الْعِلْمُ يَفْتَحُ أَبْوَابًا جَدِيدَةً.",
+      "exampleMeaning": "Science opens new doors."
+    },
+    {
+      "word": "بَحْثٌ",
+      "reading": "baḥthun",
+      "meaning": "research",
+      "example": "يَحْتَاجُ الْبَحْثُ إِلَى مَصَادِرَ دَقِيقَةٍ.",
+      "exampleMeaning": "Research needs precise sources."
+    },
+    {
+      "word": "تَجْرِبَةٌ",
+      "reading": "tajribatun",
+      "meaning": "experiment",
+      "example": "أَجْرَى الْعَالِمُ تَجْرِبَةً فِي الْمُخْتَبَرِ.",
+      "exampleMeaning": "The scientist conducted an experiment in the laboratory."
+    },
+    {
+      "word": "نَتِيجَةٌ",
+      "reading": "natījatun",
+      "meaning": "result",
+      "example": "ظَهَرَتِ النَّتِيجَةُ بَعْدَ سَاعَةٍ.",
+      "exampleMeaning": "The result appeared after an hour."
+    },
+    {
+      "word": "نَظَرِيَّةٌ",
+      "reading": "naẓariyyatun",
+      "meaning": "theory",
+      "example": "تَشْرَحُ النَّظَرِيَّةُ ظَاهِرَةً مُعَقَّدَةً.",
+      "exampleMeaning": "The theory explains a complex phenomenon."
+    },
+    {
+      "word": "طَاقَةٌ",
+      "reading": "ṭāqatun",
+      "meaning": "energy",
+      "example": "تُوَفِّرُ الشَّمْسُ طَاقَةً نَظِيفَةً.",
+      "exampleMeaning": "The sun provides clean energy."
+    },
+    {
+      "word": "كَهْرَبَاءُ",
+      "reading": "kahrabāʾu",
+      "meaning": "electricity",
+      "example": "انْقَطَعَتِ الْكَهْرَبَاءُ فِي الْقَرْيَةِ.",
+      "exampleMeaning": "The electricity went out in the village."
+    },
+    {
+      "word": "بِيئَةٌ",
+      "reading": "bīʾatun",
+      "meaning": "environment",
+      "example": "حِمَايَةُ الْبِيئَةِ مَسْؤُولِيَّةٌ مُشْتَرَكَةٌ.",
+      "exampleMeaning": "Protecting the environment is a shared responsibility."
+    },
+    {
+      "word": "تَلَوُّثٌ",
+      "reading": "talawwuthun",
+      "meaning": "pollution",
+      "example": "يُسَبِّبُ الدُّخَانُ تَلَوُّثًا خَطِيرًا.",
+      "exampleMeaning": "Smoke causes dangerous pollution."
+    },
+    {
+      "word": "مُنَاخٌ",
+      "reading": "munākhun",
+      "meaning": "climate",
+      "example": "يَتَغَيَّرُ الْمُنَاخُ بِسُرْعَةٍ فِي بَعْضِ الْمَنَاطِقِ.",
+      "exampleMeaning": "The climate changes quickly in some regions."
+    },
+    {
+      "word": "تَغَيُّرٌ مُنَاخِيٌّ",
+      "reading": "taghayyurun munākhiyyun",
+      "meaning": "climate change",
+      "example": "يُؤَثِّرُ التَّغَيُّرُ الْمُنَاخِيُّ فِي الزِّرَاعَةِ.",
+      "exampleMeaning": "Climate change affects agriculture."
+    },
+    {
+      "word": "تَنَوُّعٌ حَيَوِيٌّ",
+      "reading": "tanawwuʿun ḥayawiyyun",
+      "meaning": "biodiversity",
+      "example": "يَحْتَاجُ التَّنَوُّعُ الْحَيَوِيُّ إِلَى حِمَايَةٍ دَائِمَةٍ.",
+      "exampleMeaning": "Biodiversity needs constant protection."
+    },
+    {
+      "word": "إِعَادَةُ التَّدْوِيرِ",
+      "reading": "ʾiʿādatu t-tadwīri",
+      "meaning": "recycling",
+      "example": "تُقَلِّلُ إِعَادَةُ التَّدْوِيرِ مِنَ النُّفَايَاتِ.",
+      "exampleMeaning": "Recycling reduces waste."
+    },
+    {
+      "word": "مَوْرِدٌ طَبِيعِيٌّ",
+      "reading": "mawridun ṭabīʿiyyun",
+      "meaning": "natural resource",
+      "example": "الْمَاءُ مَوْرِدٌ طَبِيعِيٌّ ثَمِينٌ.",
+      "exampleMeaning": "Water is a precious natural resource."
+    },
+    {
+      "word": "يَقِيسُ",
+      "reading": "yaqīsu",
+      "meaning": "to measure",
+      "example": "يَقِيسُ الْبَاحِثُ دَرَجَةَ الْحَرَارَةِ.",
+      "exampleMeaning": "The researcher measures the temperature."
+    },
+    {
+      "word": "يُحَلِّلُ",
+      "reading": "yuḥallilu",
+      "meaning": "to analyze",
+      "example": "يُحَلِّلُ الْفَرِيقُ الْبَيَانَاتِ بِعِنَايَةٍ.",
+      "exampleMeaning": "The team analyzes the data carefully."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "___ يَفْتَحُ أَبْوَابًا جَدِيدَةً.",
+          "answer": "عِلْمٌ",
+          "hint": "science / knowledge"
+        },
+        {
+          "sentence": "يَحْتَاجُ ___ إِلَى مَصَادِرَ دَقِيقَةٍ.",
+          "answer": "بَحْثٌ",
+          "hint": "research"
+        },
+        {
+          "sentence": "___ مُهِمَّةٌ فِي الْمُخْتَبَرِ.",
+          "answer": "تَجْرِبَةٌ",
+          "hint": "experiment"
+        },
+        {
+          "sentence": "ظَهَرَتِ ___ بَعْدَ سَاعَةٍ.",
+          "answer": "نَتِيجَةٌ",
+          "hint": "result"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "items": [
+        {
+          "question": "What does ‘عِلْمٌ’ mean?",
+          "options": [
+            "research",
+            "science / knowledge",
+            "result",
+            "theory"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What does ‘بَحْثٌ’ mean?",
+          "options": [
+            "experiment",
+            "research",
+            "theory",
+            "energy"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What does ‘تَجْرِبَةٌ’ mean?",
+          "options": [
+            "result",
+            "experiment",
+            "energy",
+            "electricity"
+          ],
+          "answer": 1
+        }
+      ]
+    }
+  ]
+}

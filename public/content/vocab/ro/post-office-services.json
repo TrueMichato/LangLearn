@@ -1,0 +1,178 @@
+{
+  "id": "post-office-services",
+  "words": [
+    {
+      "word": "oficiu poștal",
+      "reading": "oh-fee-chee-oo posh-tal",
+      "meaning": "post office",
+      "example": "În cartier există un oficiu poștal mic.",
+      "exampleMeaning": "There is a small post office in the neighborhood."
+    },
+    {
+      "word": "scrisoare",
+      "reading": "skree-so-ah-reh",
+      "meaning": "letter",
+      "example": "Am primit o scrisoare de la bunica.",
+      "exampleMeaning": "I received a letter from my grandmother."
+    },
+    {
+      "word": "colet",
+      "reading": "ko-let",
+      "meaning": "parcel / package",
+      "example": "Trimit un colet prin poștă.",
+      "exampleMeaning": "I send a parcel by mail."
+    },
+    {
+      "word": "timbru",
+      "reading": "teem-broo",
+      "meaning": "stamp",
+      "example": "Lipesc un timbru pe plic.",
+      "exampleMeaning": "I stick a stamp on the envelope."
+    },
+    {
+      "word": "plic",
+      "reading": "pleek",
+      "meaning": "envelope",
+      "example": "Pun documentul într-un plic alb.",
+      "exampleMeaning": "I put the document in a white envelope."
+    },
+    {
+      "word": "adresă",
+      "reading": "ah-dreh-suh",
+      "meaning": "address",
+      "example": "Scrie adresa completă pe formular.",
+      "exampleMeaning": "Write the full address on the form."
+    },
+    {
+      "word": "cod poștal",
+      "reading": "kod posh-tal",
+      "meaning": "postal code",
+      "example": "Codul poștal ajută la sortarea corespondenței.",
+      "exampleMeaning": "The postal code helps sort the correspondence."
+    },
+    {
+      "word": "ghișeu",
+      "reading": "gee-sheh-oo",
+      "meaning": "counter / service window",
+      "example": "Aștept la ghișeu pentru informații.",
+      "exampleMeaning": "I wait at the counter for information."
+    },
+    {
+      "word": "formular",
+      "reading": "for-moo-lar",
+      "meaning": "form",
+      "example": "Completez un formular pentru cerere.",
+      "exampleMeaning": "I fill out a form for the request."
+    },
+    {
+      "word": "cerere",
+      "reading": "cheh-reh-reh",
+      "meaning": "request / application",
+      "example": "Depun o cerere pentru pașaport.",
+      "exampleMeaning": "I submit an application for a passport."
+    },
+    {
+      "word": "document",
+      "reading": "do-koo-ment",
+      "meaning": "document",
+      "example": "Am nevoie de un document oficial.",
+      "exampleMeaning": "I need an official document."
+    },
+    {
+      "word": "copie",
+      "reading": "ko-pee-eh",
+      "meaning": "copy",
+      "example": "Funcționarul cere o copie după buletin.",
+      "exampleMeaning": "The clerk asks for a copy of the ID card."
+    },
+    {
+      "word": "semnătură",
+      "reading": "sem-nuh-too-ruh",
+      "meaning": "signature",
+      "example": "Pune o semnătură la final.",
+      "exampleMeaning": "Put a signature at the end."
+    },
+    {
+      "word": "ștampilă",
+      "reading": "shtahm-pee-luh",
+      "meaning": "official stamp",
+      "example": "Documentul are nevoie de ștampilă.",
+      "exampleMeaning": "The document needs an official stamp."
+    },
+    {
+      "word": "funcționar",
+      "reading": "foonk-tsee-oh-nar",
+      "meaning": "clerk / civil servant",
+      "example": "Funcționarul verifică dosarul.",
+      "exampleMeaning": "The clerk checks the file."
+    },
+    {
+      "word": "dosar",
+      "reading": "do-sar",
+      "meaning": "file / dossier",
+      "example": "Am pregătit un dosar cu toate actele.",
+      "exampleMeaning": "I prepared a file with all the papers."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "Lipesc un ___ pe plic.",
+          "answer": "timbru",
+          "hint": "stamp"
+        },
+        {
+          "sentence": "Completez un ___ la ghișeu.",
+          "answer": "formular",
+          "hint": "form"
+        },
+        {
+          "sentence": "Am pregătit un ___ cu toate actele.",
+          "answer": "dosar",
+          "hint": "file"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "items": [
+        {
+          "question": "What does 'oficiu poștal' mean?",
+          "options": [
+            "city hall",
+            "passport",
+            "post office",
+            "bank"
+          ],
+          "answer": 2
+        },
+        {
+          "question": "How do you say 'official stamp' in Romanian?",
+          "options": [
+            "cerere",
+            "copie",
+            "adresă",
+            "ștampilă"
+          ],
+          "answer": 3
+        },
+        {
+          "question": "What does 'colet' mean?",
+          "options": [
+            "parcel / package",
+            "signature",
+            "postal code",
+            "counter"
+          ],
+          "answer": 0
+        }
+      ]
+    }
+  ]
+}

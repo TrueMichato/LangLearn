@@ -1,0 +1,159 @@
+{
+  "id": "astronomy-space",
+  "words": [
+    {
+      "word": "عِلْمُ الْفَلَكِ",
+      "reading": "ʿilmu al-falaki",
+      "meaning": "astronomy",
+      "example": "عِلْمُ الْفَلَكِ مَادَّةٌ شَيِّقَةٌ فِي الْجَامِعَةِ.",
+      "exampleMeaning": "Astronomy is an exciting subject at the university."
+    },
+    {
+      "word": "كَوْكَبٌ",
+      "reading": "kawkabun",
+      "meaning": "planet",
+      "example": "يَدُورُ كَوْكَبٌ صَغِيرٌ حَوْلَ الشَّمْسِ.",
+      "exampleMeaning": "A small planet orbits the sun."
+    },
+    {
+      "word": "نَجْمٌ",
+      "reading": "najmun",
+      "meaning": "star",
+      "example": "يَلْمَعُ نَجْمٌ فِي السَّمَاءِ الصَّافِيَةِ.",
+      "exampleMeaning": "A star shines in the clear sky."
+    },
+    {
+      "word": "مَجَرَّةٌ",
+      "reading": "majarratun",
+      "meaning": "galaxy",
+      "example": "تَحْتَوِي مَجَرَّةٌ وَاسِعَةٌ عَلَى مِلْيَارَاتِ النُّجُومِ.",
+      "exampleMeaning": "A vast galaxy contains billions of stars."
+    },
+    {
+      "word": "قَمَرٌ",
+      "reading": "qamarun",
+      "meaning": "moon",
+      "example": "يُضِيءُ قَمَرٌ كَامِلٌ اللَّيْلَ الْهَادِئَ.",
+      "exampleMeaning": "A full moon lights the quiet night."
+    },
+    {
+      "word": "مَدَارٌ",
+      "reading": "madārun",
+      "meaning": "orbit",
+      "example": "مَدَارٌ ثَابِتٌ يُسَاعِدُ الْقَمَرَ الصِّنَاعِيَّ.",
+      "exampleMeaning": "A stable orbit helps the satellite."
+    },
+    {
+      "word": "تِلِسْكُوبٌ",
+      "reading": "tiliskūbun",
+      "meaning": "telescope",
+      "example": "يُقَرِّبُ تِلِسْكُوبٌ الصُّورَ الْبَعِيدَةَ.",
+      "exampleMeaning": "A telescope brings distant images closer."
+    },
+    {
+      "word": "مِرْصَدٌ",
+      "reading": "mirṣadun",
+      "meaning": "observatory",
+      "example": "يَقَعُ مِرْصَدٌ فَوْقَ الْجَبَلِ الْعَالِي.",
+      "exampleMeaning": "An observatory is located on the high mountain."
+    },
+    {
+      "word": "رَائِدُ فَضَاءٍ",
+      "reading": "rāʾidu faḍāʾin",
+      "meaning": "astronaut",
+      "example": "يَتَدَرَّبُ رَائِدُ فَضَاءٍ قَبْلَ الرِّحْلَةِ.",
+      "exampleMeaning": "An astronaut trains before the journey."
+    },
+    {
+      "word": "مَكُّوكٌ فَضَائِيٌّ",
+      "reading": "makkūkun faḍāʾiyyun",
+      "meaning": "space shuttle",
+      "example": "حَمَلَ مَكُّوكٌ فَضَائِيٌّ أَدَوَاتٍ عِلْمِيَّةً.",
+      "exampleMeaning": "A space shuttle carried scientific tools."
+    },
+    {
+      "word": "نَيْزَكٌ",
+      "reading": "nayzakun",
+      "meaning": "meteorite",
+      "example": "سَقَطَ نَيْزَكٌ صَغِيرٌ فِي الصَّحْرَاءِ.",
+      "exampleMeaning": "A small meteorite fell in the desert."
+    },
+    {
+      "word": "كُسُوفٌ",
+      "reading": "kusūfun",
+      "meaning": "solar eclipse",
+      "example": "يَحْدُثُ كُسُوفٌ عِنْدَ حَجْبِ الشَّمْسِ.",
+      "exampleMeaning": "A solar eclipse occurs when the sun is blocked."
+    },
+    {
+      "word": "خُسُوفٌ",
+      "reading": "khusūfun",
+      "meaning": "lunar eclipse",
+      "example": "شَاهَدَ النَّاسُ خُسُوفًا فِي اللَّيْلِ.",
+      "exampleMeaning": "People watched a lunar eclipse at night."
+    },
+    {
+      "word": "جَاذِبِيَّةٌ",
+      "reading": "jādhibiyyatun",
+      "meaning": "gravity",
+      "example": "جَاذِبِيَّةٌ قَوِيَّةٌ تَجْذِبُ الْأَجْسَامَ.",
+      "exampleMeaning": "Strong gravity attracts objects."
+    },
+    {
+      "word": "صَارُوخٌ",
+      "reading": "ṣārūkhun",
+      "meaning": "rocket",
+      "example": "اِنْطَلَقَ صَارُوخٌ مِنَ الْقَاعِدَةِ الْفَضَائِيَّةِ.",
+      "exampleMeaning": "A rocket launched from the space base."
+    },
+    {
+      "word": "قَمَرٌ صِنَاعِيٌّ",
+      "reading": "qamarun ṣināʿiyyun",
+      "meaning": "satellite",
+      "example": "يُرْسِلُ قَمَرٌ صِنَاعِيٌّ صُوَرًا لِلْأَرْضِ.",
+      "exampleMeaning": "A satellite sends images of Earth."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "___ مَادَّةٌ شَيِّقَةٌ فِي الْجَامِعَةِ.",
+          "answer": "عِلْمُ الْفَلَكِ",
+          "hint": "astronomy"
+        },
+        {
+          "sentence": "يَدُورُ ___ صَغِيرٌ حَوْلَ الشَّمْسِ.",
+          "answer": "كَوْكَبٌ",
+          "hint": "planet"
+        },
+        {
+          "sentence": "يَقَعُ ___ فَوْقَ الْجَبَلِ الْعَالِي.",
+          "answer": "مِرْصَدٌ",
+          "hint": "observatory"
+        },
+        {
+          "sentence": "___ قَوِيَّةٌ تَجْذِبُ الْأَجْسَامَ.",
+          "answer": "جَاذِبِيَّةٌ",
+          "hint": "gravity"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "What does ‘قَمَرٌ صِنَاعِيٌّ’ mean?",
+      "options": [
+        "satellite",
+        "meteorite",
+        "telescope",
+        "galaxy"
+      ],
+      "answer": 0
+    }
+  ]
+}

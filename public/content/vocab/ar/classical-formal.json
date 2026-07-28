@@ -1,0 +1,183 @@
+{
+  "id": "classical-formal",
+  "words": [
+    {
+      "word": "هَيْهَاتَ",
+      "reading": "hayhāta",
+      "meaning": "far from possible",
+      "example": "هَيْهَاتَ أَنْ يَعُودَ مَا فَاتَ.",
+      "exampleMeaning": "Far be it that what has passed should return."
+    },
+    {
+      "word": "شَتَّانَ بَيْنَ",
+      "reading": "shattāna bayna",
+      "meaning": "what a difference between",
+      "example": "شَتَّانَ بَيْنَ الْوَعْدِ وَالْفِعْلِ.",
+      "exampleMeaning": "What a difference there is between promise and action."
+    },
+    {
+      "word": "لَعَمْرِي",
+      "reading": "la-ʿamrī",
+      "meaning": "indeed / by my life",
+      "example": "لَعَمْرِي، إِنَّ الْحَقَّ أَوْلَى بِأَنْ يُتَّبَعَ.",
+      "exampleMeaning": "Indeed, truth is more worthy of being followed."
+    },
+    {
+      "word": "حَبَّذَا",
+      "reading": "ḥabbadhā",
+      "meaning": "how excellent / would that",
+      "example": "حَبَّذَا عَمَلٌ يُصَاحِبُهُ إِخْلَاصٌ.",
+      "exampleMeaning": "How excellent is work accompanied by sincerity."
+    },
+    {
+      "word": "لَا جَرَمَ",
+      "reading": "lā jarama",
+      "meaning": "no doubt / inevitably",
+      "example": "لَا جَرَمَ أَنَّ الْعَدْلَ أَسَاسُ الْمُلْكِ.",
+      "exampleMeaning": "No doubt, justice is the foundation of rule."
+    },
+    {
+      "word": "حَاشَا",
+      "reading": "ḥāshā",
+      "meaning": "far be it from / except",
+      "example": "حَاشَا لِلْكَرِيمِ أَنْ يَخُونَ عَهْدَهُ.",
+      "exampleMeaning": "Far be it from the noble person to betray his pledge."
+    },
+    {
+      "word": "أَمَّا بَعْدُ",
+      "reading": "ʾammā baʿdu",
+      "meaning": "now then / to proceed",
+      "example": "أَمَّا بَعْدُ، فَإِنَّنَا نَعْرِضُ نَتَائِجَ التَّقْرِيرِ.",
+      "exampleMeaning": "Now then, we present the results of the report."
+    },
+    {
+      "word": "مِنْ ثَمَّ",
+      "reading": "min thamma",
+      "meaning": "therefore / from there",
+      "example": "تَأَخَّرَ التَّمْوِيلُ، وَمِنْ ثَمَّ تَأَجَّلَ الْمَشْرُوعُ.",
+      "exampleMeaning": "Funding was delayed, and therefore the project was postponed."
+    },
+    {
+      "word": "عَلَى الرَّغْمِ مِنْ",
+      "reading": "ʿalā r-raghmi min",
+      "meaning": "despite",
+      "example": "نَجَحَ الْفَرِيقُ عَلَى الرَّغْمِ مِنْ قِلَّةِ الْمَوَارِدِ.",
+      "exampleMeaning": "The team succeeded despite limited resources."
+    },
+    {
+      "word": "فَضْلًا عَنْ",
+      "reading": "faḍlan ʿan",
+      "meaning": "let alone / not to mention",
+      "example": "لَا يَمْلِكُ الْوَقْتَ، فَضْلًا عَنِ الْمَالِ.",
+      "exampleMeaning": "He does not have the time, let alone the money."
+    },
+    {
+      "word": "عِلْمًا بِأَنَّ",
+      "reading": "ʿilman bi-ʾanna",
+      "meaning": "noting that",
+      "example": "سَيُغْلَقُ الْبَابُ عِنْدَ السَّادِسَةِ، عِلْمًا بِأَنَّ الدُّخُولَ مَجَّانِيٌّ.",
+      "exampleMeaning": "The door will close at six, noting that entry is free."
+    },
+    {
+      "word": "بِنَاءً عَلَى",
+      "reading": "bināʾan ʿalā",
+      "meaning": "based on",
+      "example": "بِنَاءً عَلَى الطَّلَبِ، أُعِيدَ فَحْصُ الْمَلَفِّ.",
+      "exampleMeaning": "Based on the request, the file was reexamined."
+    },
+    {
+      "word": "بِمُقْتَضَى",
+      "reading": "bi-muqtaḍā",
+      "meaning": "pursuant to / by virtue of",
+      "example": "صَدَرَ الْقَرَارُ بِمُقْتَضَى الْقَانُونِ الْجَدِيدِ.",
+      "exampleMeaning": "The decision was issued pursuant to the new law."
+    },
+    {
+      "word": "حَيْثُ إِنَّ",
+      "reading": "ḥaythu ʾinna",
+      "meaning": "whereas / since",
+      "example": "حَيْثُ إِنَّ الْمَهْلَةَ قَصِيرَةٌ، يَلْزَمُ التَّعَاوُنُ.",
+      "exampleMeaning": "Since the deadline is short, cooperation is necessary."
+    },
+    {
+      "word": "الْمَذْكُورُ آنِفًا",
+      "reading": "al-madhkūru ʾānifan",
+      "meaning": "aforementioned",
+      "example": "يُرْسَلُ الْمَبْلَغُ إِلَى الْحِسَابِ الْمَذْكُورِ آنِفًا.",
+      "exampleMeaning": "The amount is sent to the aforementioned account."
+    },
+    {
+      "word": "دُونَ رَيْبٍ",
+      "reading": "dūna raybin",
+      "meaning": "without doubt",
+      "example": "هٰذَا الْبَحْثُ مُهِمٌّ دُونَ رَيْبٍ.",
+      "exampleMeaning": "This research is important without doubt."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "___ أَنْ يَعُودَ مَا فَاتَ.",
+          "answer": "هَيْهَاتَ",
+          "hint": "far from possible"
+        },
+        {
+          "sentence": "___ الْوَعْدِ وَالْفِعْلِ.",
+          "answer": "شَتَّانَ بَيْنَ",
+          "hint": "what a difference between"
+        },
+        {
+          "sentence": "___، إِنَّ الْحَقَّ أَوْلَى بِأَنْ يُتَّبَعَ.",
+          "answer": "لَعَمْرِي",
+          "hint": "indeed / by my life"
+        },
+        {
+          "sentence": "___ عَمَلٌ يُصَاحِبُهُ إِخْلَاصٌ.",
+          "answer": "حَبَّذَا",
+          "hint": "how excellent / would that"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "items": [
+        {
+          "question": "What does ‘هَيْهَاتَ’ mean?",
+          "options": [
+            "what a difference between",
+            "far from possible",
+            "indeed / by my life",
+            "how excellent / would that"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What does ‘شَتَّانَ بَيْنَ’ mean?",
+          "options": [
+            "indeed / by my life",
+            "what a difference between",
+            "how excellent / would that",
+            "no doubt / inevitably"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What does ‘لَعَمْرِي’ mean?",
+          "options": [
+            "how excellent / would that",
+            "indeed / by my life",
+            "no doubt / inevitably",
+            "far be it from / except"
+          ],
+          "answer": 1
+        }
+      ]
+    }
+  ]
+}

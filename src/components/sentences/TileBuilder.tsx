@@ -1,6 +1,7 @@
 import { useState, useMemo, useCallback } from 'react';
 import type { PracticeSentence } from '../../data/sentences/ja-sentences';
 import { speak } from '../../lib/tts';
+import { rtlProps } from '../../lib/rtl';
 
 interface TileBuilderProps {
   sentence: PracticeSentence;
@@ -71,8 +72,8 @@ export default function TileBuilder({ sentence, language, allSentences, onResult
       <p className="text-lg font-semibold text-slate-800 dark:text-slate-100 text-center">{sentence.english}</p>
 
       {/* Answer area */}
-      <div className={`min-h-[60px] bg-slate-50 dark:bg-slate-800 rounded-xl p-3 flex flex-wrap gap-2 border-2 ${borderClass}`}>
-        {selected.length === 0 && !checked && <span className="text-slate-500 dark:text-slate-400 text-sm italic">Tap tiles to build the sentence…</span>}
+      <div className={`min-h-[60px] bg-slate-50 dark:bg-slate-800 rounded-xl p-3 flex flex-wrap gap-2 border-2 ${borderClass}`} {...rtlProps(language)}>
+        {selected.length === 0 && !checked && <span className="text-slate-400 dark:text-slate-500 text-sm italic">Tap tiles to build the sentence…</span>}
         {selected.map((word, i) => (
           <button
             key={`${word}-${i}`}
@@ -87,13 +88,13 @@ export default function TileBuilder({ sentence, language, allSentences, onResult
       {/* Feedback */}
       {checked && (
         <div className={`text-center font-semibold ${isCorrect ? 'text-green-600 dark:text-green-400' : 'text-red-600 dark:text-red-400'}`}>
-          {isCorrect ? '✓ Correct!' : `✗ Correct answer: ${sentence.target}`}
+          {isCorrect ? '✓ Correct!' : <>✗ Correct answer: <span {...rtlProps(language)} className="inline-block">{sentence.target}</span></>}
           <p className="text-sm font-normal text-slate-500 dark:text-slate-400 mt-1">{sentence.reading}</p>
         </div>
       )}
 
       {/* Available tiles */}
-      <div className="flex flex-wrap gap-2 justify-center">
+      <div className="flex flex-wrap gap-2 justify-center" {...rtlProps(language)}>
         {available.map((word, i) => (
           <button
             key={`${word}-${i}`}

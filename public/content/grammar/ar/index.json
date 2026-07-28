@@ -1,0 +1,1118 @@
+[
+  {
+    "id": "arabic-script",
+    "title": "The Arabic Script: How Letters Join",
+    "order": 1,
+    "group": "🏗️ Foundations"
+  },
+  {
+    "id": "pronunciation",
+    "title": "The Sounds of Arabic (emphatics, ʿayn, throat letters)",
+    "order": 2,
+    "group": "🏗️ Foundations"
+  },
+  {
+    "id": "harakat",
+    "title": "Short Vowels, Sukūn & Shadda (Tashkīl)",
+    "order": 3,
+    "group": "🏗️ Foundations"
+  },
+  {
+    "id": "definite-article",
+    "title": "The Article al- & Sun/Moon Letters",
+    "order": 4,
+    "group": "🏗️ Foundations"
+  },
+  {
+    "id": "gender",
+    "title": "Grammatical Gender & Tāʾ Marbūṭa",
+    "order": 5,
+    "group": "🏗️ Foundations"
+  },
+  {
+    "id": "nominal-sentence",
+    "title": "The Nominal Sentence (there is no present \"to be\")",
+    "order": 6,
+    "group": "🏗️ Foundations"
+  },
+  {
+    "id": "pronouns",
+    "title": "Personal Pronouns",
+    "order": 7,
+    "group": "🏗️ Foundations"
+  },
+  {
+    "id": "attached-pronouns",
+    "title": "Attached (Possessive & Object) Pronouns",
+    "order": 8,
+    "group": "🏗️ Foundations"
+  },
+  {
+    "id": "demonstratives",
+    "title": "Demonstratives (hādhā / hādhihi / dhālika)",
+    "order": 9,
+    "group": "🏗️ Foundations"
+  },
+  {
+    "id": "prepositions",
+    "title": "Prepositions (fī, ʿalā, min, ilā, maʿa, bi-, li-)",
+    "order": 10,
+    "group": "🏗️ Foundations"
+  },
+  {
+    "id": "adjectives",
+    "title": "Adjectives & Agreement",
+    "order": 11,
+    "group": "🏗️ Foundations"
+  },
+  {
+    "id": "idafa",
+    "title": "The Iḍāfa Construct (Possession)",
+    "order": 12,
+    "group": "🏗️ Foundations"
+  },
+  {
+    "id": "plurals",
+    "title": "Plurals: Sound & Broken",
+    "order": 13,
+    "group": "🏗️ Foundations"
+  },
+  {
+    "id": "present-tense",
+    "title": "The Present Tense (al-Muḍāriʿ)",
+    "order": 14,
+    "group": "🔤 Verbs"
+  },
+  {
+    "id": "past-tense",
+    "title": "The Past Tense (al-Māḍī)",
+    "order": 15,
+    "group": "🔤 Verbs"
+  },
+  {
+    "id": "root-system",
+    "title": "The Root & Pattern System",
+    "order": 16,
+    "group": "🔤 Verbs"
+  },
+  {
+    "id": "verb-forms",
+    "title": "The Ten Verb Forms (al-Awzān)",
+    "order": 17,
+    "group": "🔤 Verbs"
+  },
+  {
+    "id": "negation",
+    "title": "Negation (lā, mā, lam, lan, laysa)",
+    "order": 18,
+    "group": "🔤 Verbs"
+  },
+  {
+    "id": "future",
+    "title": "The Future (sa- / sawfa)",
+    "order": 19,
+    "group": "🔤 Verbs"
+  },
+  {
+    "id": "imperative",
+    "title": "The Imperative (al-Amr)",
+    "order": 20,
+    "group": "🔤 Verbs"
+  },
+  {
+    "id": "kana-sisters",
+    "title": "kāna & Her Sisters (past & becoming)",
+    "order": 21,
+    "group": "🔤 Verbs"
+  },
+  {
+    "id": "inna-sisters",
+    "title": "inna & Her Sisters",
+    "order": 22,
+    "group": "🔤 Verbs"
+  },
+  {
+    "id": "questions",
+    "title": "Question Words (mā, man, ayna, matā, kayfa, kam, limādhā)",
+    "order": 23,
+    "group": "🔢 Structure & Nuance"
+  },
+  {
+    "id": "numbers",
+    "title": "Numbers & Counting (the agreement quirks)",
+    "order": 24,
+    "group": "🔢 Structure & Nuance"
+  },
+  {
+    "id": "dual",
+    "title": "The Dual (al-Muthannā)",
+    "order": 25,
+    "group": "🔢 Structure & Nuance"
+  },
+  {
+    "id": "cases",
+    "title": "Case Endings (al-Iʿrāb): nominative, accusative, genitive",
+    "order": 26,
+    "group": "🔢 Structure & Nuance"
+  },
+  {
+    "id": "object-accusative",
+    "title": "The Direct Object & Accusative (naṣb)",
+    "order": 27,
+    "group": "🔢 Structure & Nuance"
+  },
+  {
+    "id": "relative",
+    "title": "Relative Clauses (alladhī / allatī)",
+    "order": 28,
+    "group": "🔢 Structure & Nuance"
+  },
+  {
+    "id": "comparative",
+    "title": "Comparative & Superlative (afʿal)",
+    "order": 29,
+    "group": "🔢 Structure & Nuance"
+  },
+  {
+    "id": "conditionals",
+    "title": "Conditional Sentences (idhā, law, in)",
+    "order": 30,
+    "group": "🔢 Structure & Nuance"
+  },
+  {
+    "id": "adverbs-haal",
+    "title": "Adverbs & the Ḥāl (circumstantial)",
+    "order": 31,
+    "group": "🔢 Structure & Nuance"
+  },
+  {
+    "id": "msa-vs-dialects",
+    "title": "MSA vs Dialects: What Actually Changes",
+    "order": 32,
+    "group": "🗣️ Colloquial & Dialects"
+  },
+  {
+    "id": "egyptian-basics",
+    "title": "Egyptian Arabic Essentials (bi- present, ج=g, ق=ʾ)",
+    "order": 33,
+    "group": "🗣️ Colloquial & Dialects"
+  },
+  {
+    "id": "levantine-basics",
+    "title": "Levantine Arabic Essentials (ʿam + verb, badd-)",
+    "order": 34,
+    "group": "🗣️ Colloquial & Dialects"
+  },
+  {
+    "id": "gulf-basics",
+    "title": "Gulf Arabic Essentials (khaleeji)",
+    "order": 35,
+    "group": "🗣️ Colloquial & Dialects"
+  },
+  {
+    "id": "everyday-phrases",
+    "title": "Everyday Phrases, Politeness & Greetings",
+    "order": 36,
+    "group": "🗣️ Colloquial & Dialects"
+  },
+  {
+    "id": "active-participle",
+    "title": "The Active Participle (ism al-fāʿil)",
+    "order": 37,
+    "group": "🔤 Verbs"
+  },
+  {
+    "id": "passive-participle",
+    "title": "The Passive Participle (ism al-mafʿūl)",
+    "order": 38,
+    "group": "🔤 Verbs"
+  },
+  {
+    "id": "masdar",
+    "title": "The Verbal Noun (al-Maṣdar)",
+    "order": 39,
+    "group": "🔤 Verbs"
+  },
+  {
+    "id": "passive-voice",
+    "title": "The Passive Voice (al-Mabnī li-l-Majhūl)",
+    "order": 40,
+    "group": "🔤 Verbs"
+  },
+  {
+    "id": "subjunctive-jussive",
+    "title": "Present Moods: Subjunctive & Jussive (naṣb & jazm)",
+    "order": 41,
+    "group": "🔤 Verbs"
+  },
+  {
+    "id": "hollow-verbs",
+    "title": "Hollow Verbs (weak middle: qāla, kāna)",
+    "order": 42,
+    "group": "🔤 Verbs"
+  },
+  {
+    "id": "defective-verbs",
+    "title": "Defective Verbs (weak final: mashā, daʿā)",
+    "order": 43,
+    "group": "🔤 Verbs"
+  },
+  {
+    "id": "assimilated-doubled-verbs",
+    "title": "Assimilated & Doubled Verbs (waṣala, radda)",
+    "order": 44,
+    "group": "🔤 Verbs"
+  },
+  {
+    "id": "broken-plural-patterns",
+    "title": "Broken Plural Patterns",
+    "order": 45,
+    "group": "🔢 Structure & Nuance"
+  },
+  {
+    "id": "nisba",
+    "title": "Nisba (Relative) Adjectives (-iyy)",
+    "order": 46,
+    "group": "🔢 Structure & Nuance"
+  },
+  {
+    "id": "diminutive",
+    "title": "The Diminutive (at-Taṣghīr)",
+    "order": 47,
+    "group": "🔢 Structure & Nuance"
+  },
+  {
+    "id": "expressing-possession",
+    "title": "Expressing \"to have\" (ʿinda, laday, li-)",
+    "order": 48,
+    "group": "🔢 Structure & Nuance"
+  },
+  {
+    "id": "exception",
+    "title": "Exception (al-Istithnāʾ with illā)",
+    "order": 49,
+    "group": "🔢 Structure & Nuance"
+  },
+  {
+    "id": "tamyiz",
+    "title": "Specification (at-Tamyīz)",
+    "order": 50,
+    "group": "🔢 Structure & Nuance"
+  },
+  {
+    "id": "numbers-in-words",
+    "title": "Writing Numbers in Words (the agreement rules; inspired by tafqit.com https://tafqit.com)",
+    "order": 51,
+    "group": "🔢 Structure & Nuance"
+  },
+  {
+    "id": "connectors",
+    "title": "Connectors & Discourse Particles (fa-, thumma, li-anna, likay, lākinna, bal)",
+    "order": 52,
+    "group": "🔢 Structure & Nuance"
+  },
+  {
+    "id": "maghrebi-basics",
+    "title": "Maghrebi (Darija) Essentials (Moroccan/Algerian; kan- present prefix, negation ma...sh, French loanwords)",
+    "order": 53,
+    "group": "🗣️ Colloquial & Dialects"
+  },
+  {
+    "id": "form-ii-iii",
+    "title": "Verb Forms II & III (faʿʿala, fāʿala): causative & association",
+    "order": 54,
+    "group": "🔤 Verbs"
+  },
+  {
+    "id": "form-iv",
+    "title": "Verb Form IV (afʿala): the causative",
+    "order": 55,
+    "group": "🔤 Verbs"
+  },
+  {
+    "id": "form-v-vi",
+    "title": "Verb Forms V & VI (tafaʿʿala, tafāʿala): reflexive & reciprocal",
+    "order": 56,
+    "group": "🔤 Verbs"
+  },
+  {
+    "id": "form-vii-viii",
+    "title": "Verb Forms VII & VIII (infaʿala, iftaʿala): passive-reflexive",
+    "order": 57,
+    "group": "🔤 Verbs"
+  },
+  {
+    "id": "form-x",
+    "title": "Verb Form X (istafʿala): seeking / considering",
+    "order": 58,
+    "group": "🔤 Verbs"
+  },
+  {
+    "id": "defective-verbs-detail",
+    "title": "Defective Verbs in Depth (mashā, daʿā, nasiya types)",
+    "order": 59,
+    "group": "🔤 Verbs"
+  },
+  {
+    "id": "verbs-with-prepositions",
+    "title": "Verbs with Prepositions (raghiba fī, baḥatha ʿan…)",
+    "order": 60,
+    "group": "🔤 Verbs"
+  },
+  {
+    "id": "elative-colours",
+    "title": "The Elative & Colours/Defects (afʿal pattern)",
+    "order": 61,
+    "group": "🔢 Structure & Nuance"
+  },
+  {
+    "id": "adverbs-of-manner",
+    "title": "Adverbs of Manner & the Mafʿūl Muṭlaq (cognate accusative)",
+    "order": 62,
+    "group": "🔢 Structure & Nuance"
+  },
+  {
+    "id": "exclamation-wonder",
+    "title": "Exclamation & Wonder (mā afʿalahu!)",
+    "order": 63,
+    "group": "🔢 Structure & Nuance"
+  },
+  {
+    "id": "oaths-emphasis",
+    "title": "Oaths, Emphasis & the Energetic Nūn",
+    "order": 64,
+    "group": "🔢 Structure & Nuance"
+  },
+  {
+    "id": "conditional-particles-deep",
+    "title": "Conditional Particles in Depth (in, idhā, law, lawlā)",
+    "order": 65,
+    "group": "🔢 Structure & Nuance"
+  },
+  {
+    "id": "adjective-clauses",
+    "title": "Describing with Clauses (ṣifa vs. relative)",
+    "order": 66,
+    "group": "🔢 Structure & Nuance"
+  },
+  {
+    "id": "dialect-pronouns-verbs",
+    "title": "Dialect Pronouns & Present-Tense Prefixes (bi-, ʿam, ka-, ta-)",
+    "order": 67,
+    "group": "🗣️ Colloquial & Dialects"
+  },
+  {
+    "id": "dialect-negation",
+    "title": "Negation Across Dialects (mā…sh, mish, mū)",
+    "order": 68,
+    "group": "🗣️ Colloquial & Dialects"
+  },
+  {
+    "id": "numbers-agreement",
+    "title": "Number–Noun Agreement 3–10 (the \"reverse agreement\" / polarity rule)",
+    "order": 69,
+    "group": "🔢 Structure & Nuance"
+  },
+  {
+    "id": "numbers-11-99",
+    "title": "Numbers 11–99 & Their Endings",
+    "order": 70,
+    "group": "🔢 Structure & Nuance"
+  },
+  {
+    "id": "ordinal-numbers",
+    "title": "Ordinal Numbers (al-awwal, ath-thānī…) & Dates",
+    "order": 71,
+    "group": "🔢 Structure & Nuance"
+  },
+  {
+    "id": "fractions-time",
+    "title": "Fractions, Percentages & Telling Time in Words (Tafqit-informed)",
+    "order": 72,
+    "group": "🔢 Structure & Nuance"
+  },
+  {
+    "id": "five-nouns",
+    "title": "The Five Nouns (al-asmāʾ al-khamsa: abū, akhū, ḥamū, fū, dhū)",
+    "order": 73,
+    "group": "🔢 Structure & Nuance"
+  },
+  {
+    "id": "diptotes",
+    "title": "Diptotes (al-mamnūʿ min aṣ-ṣarf)",
+    "order": 74,
+    "group": "🔢 Structure & Nuance"
+  },
+  {
+    "id": "word-order",
+    "title": "Verbal vs Nominal Sentence Word Order",
+    "order": 75,
+    "group": "🔢 Structure & Nuance"
+  },
+  {
+    "id": "agreement-rules",
+    "title": "Agreement Rules: Gender, Number & the Non-Human Plural",
+    "order": 76,
+    "group": "🔢 Structure & Nuance"
+  },
+  {
+    "id": "hal-vs-tamyiz",
+    "title": "Ḥāl vs Tamyīz: Two Accusatives Compared",
+    "order": 77,
+    "group": "🔢 Structure & Nuance"
+  },
+  {
+    "id": "kana-inna-sisters-deep",
+    "title": "kāna & inna Sisters in Depth",
+    "order": 78,
+    "group": "🔤 Verbs"
+  },
+  {
+    "id": "masdar-mimi",
+    "title": "The Mīmī Verbal Noun & Nouns of Place/Time (mafʿal)",
+    "order": 79,
+    "group": "🔤 Verbs"
+  },
+  {
+    "id": "dialect-future-continuous",
+    "title": "Dialect Future & Continuous (raḥ/ḥa-, ʿam, da-)",
+    "order": 80,
+    "group": "🗣️ Colloquial & Dialects"
+  },
+  {
+    "id": "hamza-spelling",
+    "title": "Spelling the Hamza (its seats: أ إ ؤ ئ ء and the rules)",
+    "order": 81,
+    "group": "🏗️ Foundations"
+  },
+  {
+    "id": "taa-marbuta-maftuha",
+    "title": "Tāʾ Marbūṭa vs the Open Tāʾ",
+    "order": 82,
+    "group": "🏗️ Foundations"
+  },
+  {
+    "id": "sun-moon-letters",
+    "title": "Sun & Moon Letters in Depth (assimilation of the article)",
+    "order": 83,
+    "group": "🏗️ Foundations"
+  },
+  {
+    "id": "the-many-alifs",
+    "title": "The Many Alifs (madda آ, maqṣūra ى, waṣla ٱ, dagger alif)",
+    "order": 84,
+    "group": "🏗️ Foundations"
+  },
+  {
+    "id": "common-mistakes",
+    "title": "Common Learner Mistakes & How to Avoid Them",
+    "order": 85,
+    "group": "🔢 Structure & Nuance"
+  },
+  {
+    "id": "loanwords-arabization",
+    "title": "Loanwords & Arabization (taʿrīb)",
+    "order": 86,
+    "group": "🔢 Structure & Nuance"
+  },
+  {
+    "id": "false-friends",
+    "title": "False Friends between Arabic and English",
+    "order": 87,
+    "group": "🔢 Structure & Nuance"
+  },
+  {
+    "id": "politeness-register",
+    "title": "Politeness, Register & Forms of Address (ḥaḍratak, sayyid…)",
+    "order": 88,
+    "group": "🔢 Structure & Nuance"
+  },
+  {
+    "id": "arabizi-chat",
+    "title": "Reading Romanized Arabic & the Chat Alphabet (Arabizi: 3=ع, 7=ح, 2=ء, 9=ص)",
+    "order": 89,
+    "group": "🗣️ Colloquial & Dialects"
+  },
+  {
+    "id": "dialect-comparison",
+    "title": "One Phrase, Six Dialects (compare a few everyday phrases across MSA, Egyptian, Levantine, Gulf, Iraqi, Maghrebi in a table)",
+    "order": 90,
+    "group": "🗣️ Colloquial & Dialects"
+  },
+  {
+    "id": "feminine-plural-verb",
+    "title": "The Feminine Plural Verb (yafʿalna / faʿalna)",
+    "order": 91,
+    "group": "🔤 Verbs"
+  },
+  {
+    "id": "dual-verbs",
+    "title": "Dual Verbs & Pronoun Agreement (yafʿalāni, faʿalā)",
+    "order": 92,
+    "group": "🔤 Verbs"
+  },
+  {
+    "id": "collective-unit-nouns",
+    "title": "Collective & Unit Nouns (ism al-jins & ism al-waḥda)",
+    "order": 93,
+    "group": "🔢 Structure & Nuance"
+  },
+  {
+    "id": "absolute-negation",
+    "title": "Absolute Negation (lā an-nāfiya lil-jins)",
+    "order": 94,
+    "group": "🔢 Structure & Nuance"
+  },
+  {
+    "id": "purpose-accusative",
+    "title": "The Accusative of Purpose (al-mafʿūl li-ajlih)",
+    "order": 95,
+    "group": "🔢 Structure & Nuance"
+  },
+  {
+    "id": "badal-apposition",
+    "title": "Apposition & Substitution (al-badal)",
+    "order": 96,
+    "group": "🔢 Structure & Nuance"
+  },
+  {
+    "id": "specification-of-number",
+    "title": "The Specification (tamyīz) of Numbers & Measures",
+    "order": 97,
+    "group": "🔢 Structure & Nuance"
+  },
+  {
+    "id": "interjections-vocative",
+    "title": "Interjections & the Vocative in Depth (yā, ayyuhā, wā)",
+    "order": 98,
+    "group": "🔢 Structure & Nuance"
+  },
+  {
+    "id": "balagha-basics",
+    "title": "Rhetoric Basics: Simile, Metaphor & Metonymy (tashbīh, istiʿāra, kināya)",
+    "order": 99,
+    "group": "🔢 Structure & Nuance"
+  },
+  {
+    "id": "emphasis-tawkid",
+    "title": "Emphasis (at-tawkīd): lexical & with inna/la-",
+    "order": 100,
+    "group": "🔢 Structure & Nuance"
+  },
+  {
+    "id": "restriction-qasr",
+    "title": "Restriction & Exclusivity (al-qaṣr: innamā, mā…illā)",
+    "order": 101,
+    "group": "🔢 Structure & Nuance"
+  },
+  {
+    "id": "conditional-answers",
+    "title": "Conditional Sentences: the Answer Clause (jawāb ash-sharṭ) & fa-",
+    "order": 102,
+    "group": "🔢 Structure & Nuance"
+  },
+  {
+    "id": "topic-comment",
+    "title": "Fronting for Emphasis (taqdīm & taʾkhīr)",
+    "order": 103,
+    "group": "🔢 Structure & Nuance"
+  },
+  {
+    "id": "iraab-practice",
+    "title": "Reading Case Endings in Practice (a guided iʿrāb walkthrough)",
+    "order": 104,
+    "group": "🔢 Structure & Nuance"
+  },
+  {
+    "id": "verbs-of-approach",
+    "title": "Verbs of Beginning & Approach (kāda, sharaʿa, jaʿala…)",
+    "order": 105,
+    "group": "🔤 Verbs"
+  },
+  {
+    "id": "dialect-object-pronouns",
+    "title": "Object & Possessive Suffixes Across Dialects",
+    "order": 106,
+    "group": "🗣️ Colloquial & Dialects"
+  },
+  {
+    "id": "energetic-nun",
+    "title": "The Energetic Mood (nūn al-tawkīd)",
+    "order": 107,
+    "group": "🔤 Verbs"
+  },
+  {
+    "id": "verbs-of-certainty",
+    "title": "Verbs of the Heart & Certainty (ẓanna, ʿalima… and their two objects)",
+    "order": 108,
+    "group": "🔤 Verbs"
+  },
+  {
+    "id": "impersonal-verbs",
+    "title": "Impersonal & Weather Verbs",
+    "order": 109,
+    "group": "🔤 Verbs"
+  },
+  {
+    "id": "comparison-degrees",
+    "title": "Degrees of Comparison in Depth (afʿal min, al-afʿal, elative of colours)",
+    "order": 110,
+    "group": "🔢 Structure & Nuance"
+  },
+  {
+    "id": "indefinite-specific",
+    "title": "Definiteness, Indefiniteness & Genericness",
+    "order": 111,
+    "group": "🔢 Structure & Nuance"
+  },
+  {
+    "id": "adverbials-of-time-place",
+    "title": "Adverbials of Time & Place (ẓarf)",
+    "order": 112,
+    "group": "🔢 Structure & Nuance"
+  },
+  {
+    "id": "exclamatory-styles",
+    "title": "Styles of Exclamation, Praise & Blame (niʿma, biʾsa)",
+    "order": 113,
+    "group": "🔢 Structure & Nuance"
+  },
+  {
+    "id": "dialect-question-words",
+    "title": "Question Words Across Dialects (ēh, shū, wēn, laysh…)",
+    "order": 114,
+    "group": "🗣️ Colloquial & Dialects"
+  },
+  {
+    "id": "compound-prepositions",
+    "title": "Compound & Locative Prepositions (fawqa, taḥta, amāma, bayna…)",
+    "order": 115,
+    "group": "🔢 Structure & Nuance"
+  },
+  {
+    "id": "expressing-ability",
+    "title": "Expressing Ability, Permission & Obligation (yastaṭīʿu, yajibu, yumkinu, lā budda)",
+    "order": 116,
+    "group": "🔢 Structure & Nuance"
+  },
+  {
+    "id": "reported-speech",
+    "title": "Reported Speech & Quoting (qāla inna…)",
+    "order": 117,
+    "group": "🔢 Structure & Nuance"
+  },
+  {
+    "id": "comparison-similes-2",
+    "title": "Likening & Comparison Structures (ka-, mithl, ka-anna)",
+    "order": 118,
+    "group": "🔢 Structure & Nuance"
+  },
+  {
+    "id": "verb-noun-agreement",
+    "title": "Verb–Subject Agreement & Word-Order Effects",
+    "order": 119,
+    "group": "🔤 Verbs"
+  },
+  {
+    "id": "dialect-verb-conjugation",
+    "title": "How Dialect Verbs Conjugate (bi-/ʿam prefixes, dropped case endings)",
+    "order": 120,
+    "group": "🗣️ Colloquial & Dialects"
+  },
+  {
+    "id": "mafool-maah",
+    "title": "The Object of Accompaniment (al-Mafʿūl Maʿahu)",
+    "order": 121,
+    "group": "🔢 Structure & Nuance"
+  },
+  {
+    "id": "lam-particles",
+    "title": "The Many Lāms (purpose, command, denial, emphasis)",
+    "order": 122,
+    "group": "🔢 Structure & Nuance"
+  },
+  {
+    "id": "ma-particles",
+    "title": "The Many Uses of Mā",
+    "order": 123,
+    "group": "🔢 Structure & Nuance"
+  },
+  {
+    "id": "qad-laqad",
+    "title": "Qad and Laqad (certainty, possibility, recentness)",
+    "order": 124,
+    "group": "🔤 Verbs"
+  },
+  {
+    "id": "amma-fa",
+    "title": "Ammā...fa- for Topic Switching",
+    "order": 125,
+    "group": "🔢 Structure & Nuance"
+  },
+  {
+    "id": "quadriliteral-verbs",
+    "title": "Quadriliteral Verb Patterns",
+    "order": 126,
+    "group": "🔤 Verbs"
+  },
+  {
+    "id": "form-ix-verbs",
+    "title": "Verb Form IX for Colors and Defects",
+    "order": 127,
+    "group": "🔤 Verbs"
+  },
+  {
+    "id": "instrument-nouns",
+    "title": "Nouns of Instrument (ism al-ālah)",
+    "order": 128,
+    "group": "🔢 Structure & Nuance"
+  },
+  {
+    "id": "hyperbole-patterns",
+    "title": "Intensive Actor Patterns (ṣīghat al-mubālagha)",
+    "order": 129,
+    "group": "🔢 Structure & Nuance"
+  },
+  {
+    "id": "maqsur-manqus-mamdud",
+    "title": "Maqṣūr, Manqūṣ & Mamdūd Nouns",
+    "order": 130,
+    "group": "🔢 Structure & Nuance"
+  },
+  {
+    "id": "sentence-hal-clauses",
+    "title": "Sentence Ḥāl Clauses",
+    "order": 131,
+    "group": "🔢 Structure & Nuance"
+  },
+  {
+    "id": "tanazu-competing-governors",
+    "title": "Tanāzuʿ: Competing Verb Governors",
+    "order": 132,
+    "group": "🔢 Structure & Nuance"
+  },
+  {
+    "id": "ishtighal-preoccupation",
+    "title": "Ishtighāl: Fronted Object with a Resumptive Pronoun",
+    "order": 133,
+    "group": "🔢 Structure & Nuance"
+  },
+  {
+    "id": "nat-sababi",
+    "title": "Naʿt Sababī: Adjectives Linked to a Related Noun",
+    "order": 134,
+    "group": "🔢 Structure & Nuance"
+  },
+  {
+    "id": "la-siyyama",
+    "title": "Lā Siyyamā: Saying Especially",
+    "order": 135,
+    "group": "🔢 Structure & Nuance"
+  },
+  {
+    "id": "answer-particles",
+    "title": "Answer Particles: naʿam, balā, kallā",
+    "order": 136,
+    "group": "🔢 Structure & Nuance"
+  },
+  {
+    "id": "pausal-forms",
+    "title": "Pausal Forms and Case Endings",
+    "order": 137,
+    "group": "🏗️ Foundations"
+  },
+  {
+    "id": "hamzated-verbs",
+    "title": "Hamzated Verbs and Hamza Changes",
+    "order": 138,
+    "group": "🔤 Verbs"
+  },
+  {
+    "id": "form-viii-assimilation",
+    "title": "Form VIII Assimilation with tāʾ",
+    "order": 139,
+    "group": "🔤 Verbs"
+  },
+  {
+    "id": "avoiding-two-sukuns",
+    "title": "Avoiding Two Sukūns",
+    "order": 140,
+    "group": "🏗️ Foundations"
+  },
+  {
+    "id": "istithna-ghayr-siwa",
+    "title": "Exception with ghayr and siwā",
+    "order": 141,
+    "group": "🔢 Structure & Nuance"
+  },
+  {
+    "id": "preposition-nuances",
+    "title": "Nuances of the Core Prepositions",
+    "order": 142,
+    "group": "🔢 Structure & Nuance"
+  },
+  {
+    "id": "kam-interrogative-khabariyya",
+    "title": "Kam: Question or Exclamation",
+    "order": 143,
+    "group": "🔢 Structure & Nuance"
+  },
+  {
+    "id": "masdar-muawwal",
+    "title": "The Interpreted Maṣdar: an + Verb as a Noun",
+    "order": 144,
+    "group": "🔢 Structure & Nuance"
+  },
+  {
+    "id": "relative-pronoun-paradigm",
+    "title": "The Full Relative Pronoun Paradigm",
+    "order": 145,
+    "group": "🔢 Structure & Nuance"
+  },
+  {
+    "id": "diptote-names-places",
+    "title": "Diptote Names and Place Names",
+    "order": 146,
+    "group": "🔢 Structure & Nuance"
+  },
+  {
+    "id": "ism-tafdil-government",
+    "title": "How Ism al-Tafḍīl Governs Complements",
+    "order": 147,
+    "group": "🔢 Structure & Nuance"
+  },
+  {
+    "id": "object-fronting",
+    "title": "Fronting the Direct Object",
+    "order": 148,
+    "group": "🔢 Structure & Nuance"
+  },
+  {
+    "id": "tamyiz-al-nisba",
+    "title": "Tamyīz al-Nisba (Relational Specification)",
+    "order": 149,
+    "group": "🔢 Structure & Nuance"
+  },
+  {
+    "id": "ism-al-marra-haya",
+    "title": "Nouns of Instance and Manner (ism al-Marra & ism al-Hayʾa)",
+    "order": 150,
+    "group": "🔢 Structure & Nuance"
+  },
+  {
+    "id": "laysa-full-paradigm",
+    "title": "Laysa: Full Paradigm and Usage",
+    "order": 151,
+    "group": "🔤 Verbs"
+  },
+  {
+    "id": "istighatha-nudba",
+    "title": "Istighātha and Nudba: Calling for Help or Lamenting",
+    "order": 152,
+    "group": "🔢 Structure & Nuance"
+  },
+  {
+    "id": "verbs-of-exception",
+    "title": "Exception Verbs: khalā, ʿadā, ḥāshā",
+    "order": 153,
+    "group": "🔢 Structure & Nuance"
+  },
+  {
+    "id": "damir-shan",
+    "title": "Ḍamīr ash-Shaʾn: the Pronoun of the Matter",
+    "order": 154,
+    "group": "🔢 Structure & Nuance"
+  },
+  {
+    "id": "ighra-tahdhir",
+    "title": "Ighrāʾ and Taḥdhīr: Urging and Warning",
+    "order": 155,
+    "group": "🔢 Structure & Nuance"
+  },
+  {
+    "id": "atf-coordination",
+    "title": "Coordination with ʿAṭf: Shared Case and Meaning",
+    "order": 156,
+    "group": "🔢 Structure & Nuance"
+  },
+  {
+    "id": "dialect-there-is",
+    "title": "There Is and There Isn't Across Dialects",
+    "order": 157,
+    "group": "🗣️ Colloquial & Dialects"
+  },
+  {
+    "id": "dialect-demonstratives",
+    "title": "Demonstratives Across Dialects",
+    "order": 158,
+    "group": "🗣️ Colloquial & Dialects"
+  },
+  {
+    "id": "dialect-genitive-markers",
+    "title": "Colloquial Genitive Markers: bitāʿ, tabaʿ, māl, dyāl",
+    "order": 159,
+    "group": "🗣️ Colloquial & Dialects"
+  },
+  {
+    "id": "dialect-want-verbs",
+    "title": "Wanting in the Dialects: ʿāyiz, badd, abghā, arīd, bghīt",
+    "order": 160,
+    "group": "🗣️ Colloquial & Dialects"
+  },
+  {
+    "id": "dialect-ability-verbs",
+    "title": "Being Able in the Dialects: Can and Cannot",
+    "order": 161,
+    "group": "🗣️ Colloquial & Dialects"
+  },
+  {
+    "id": "dialect-go-verbs",
+    "title": "Going in the Dialects: rūḥ and mshī",
+    "order": 162,
+    "group": "🗣️ Colloquial & Dialects"
+  },
+  {
+    "id": "hamzat-wasl-qata",
+    "title": "Hamzat al-Waṣl vs Hamzat al-Qaṭʿ",
+    "order": 163,
+    "group": "🏗️ Foundations"
+  },
+  {
+    "id": "sound-plurals-detail",
+    "title": "Sound Masculine and Feminine Plurals in Detail",
+    "order": 164,
+    "group": "🔢 Structure & Nuance"
+  },
+  {
+    "id": "jussive-particles",
+    "title": "Jussive Particles: lam, lammā, lā an-nāhiya, lām al-amr",
+    "order": 165,
+    "group": "🔤 Verbs"
+  },
+  {
+    "id": "subjunctive-particles",
+    "title": "Subjunctive Particles: an, lan, kay, idhan, ḥattā",
+    "order": 166,
+    "group": "🔤 Verbs"
+  },
+  {
+    "id": "shared-relative-man-ma",
+    "title": "Shared Relative Nouns: man and mā",
+    "order": 167,
+    "group": "🔢 Structure & Nuance"
+  },
+  {
+    "id": "idafa-types",
+    "title": "Real and Verbal Iḍāfa Types",
+    "order": 168,
+    "group": "🔢 Structure & Nuance"
+  },
+  {
+    "id": "predicate-types",
+    "title": "Predicate Types in Nominal Sentences",
+    "order": 169,
+    "group": "🔢 Structure & Nuance"
+  },
+  {
+    "id": "damir-fasl",
+    "title": "The Separating Pronoun (Ḍamīr al-Faṣl)",
+    "order": 170,
+    "group": "🔢 Structure & Nuance"
+  },
+  {
+    "id": "two-object-verbs",
+    "title": "Verbs with Two Objects",
+    "order": 171,
+    "group": "🔤 Verbs"
+  },
+  {
+    "id": "verbs-of-transformation",
+    "title": "Verbs of Transformation (ṣayrūra)",
+    "order": 172,
+    "group": "🔤 Verbs"
+  },
+  {
+    "id": "exceptive-sentence-types",
+    "title": "Exception Sentence Types with illā",
+    "order": 173,
+    "group": "🔢 Structure & Nuance"
+  },
+  {
+    "id": "non-jussive-conditionals",
+    "title": "Non-Jussive Conditionals: lammā and kullamā",
+    "order": 174,
+    "group": "🔢 Structure & Nuance"
+  },
+  {
+    "id": "form-i-masdar-patterns",
+    "title": "Form I Maṣdar Patterns",
+    "order": 175,
+    "group": "🔤 Verbs"
+  },
+  {
+    "id": "participle-government",
+    "title": "Participle Government: ism al-fāʿil and ism al-mafʿūl",
+    "order": 176,
+    "group": "🔤 Verbs"
+  },
+  {
+    "id": "defective-jussive-spelling",
+    "title": "Defective Verb Spelling in the Jussive",
+    "order": 177,
+    "group": "🔤 Verbs"
+  },
+  {
+    "id": "alif-tanwin",
+    "title": "Alif al-Tanwīn in Spelling",
+    "order": 178,
+    "group": "🏗️ Foundations"
+  },
+  {
+    "id": "inna-vs-anna",
+    "title": "Inna vs Anna in Usage",
+    "order": 179,
+    "group": "🔢 Structure & Nuance"
+  },
+  {
+    "id": "omitted-mubtada-khabar",
+    "title": "Omitted Mubtadaʾ or Khabar",
+    "order": 180,
+    "group": "🔢 Structure & Nuance"
+  },
+  {
+    "id": "hal-prepositional-phrase",
+    "title": "Ḥāl as a Prepositional Phrase",
+    "order": 181,
+    "group": "🔢 Structure & Nuance"
+  },
+  {
+    "id": "plural-paucity-abundance",
+    "title": "Plural of Paucity vs Plural of Abundance",
+    "order": 182,
+    "group": "🔢 Structure & Nuance"
+  },
+  {
+    "id": "vocative-omitted-ya",
+    "title": "Vocative with Omitted Yā",
+    "order": 183,
+    "group": "🔢 Structure & Nuance"
+  },
+  {
+    "id": "relative-return-pronoun",
+    "title": "The Return Pronoun in Relative Clauses",
+    "order": 184,
+    "group": "🔢 Structure & Nuance"
+  },
+  {
+    "id": "idha-fujaiyya",
+    "title": "Idhā al-Fujāʾiyya in Narrative",
+    "order": 185,
+    "group": "🔢 Structure & Nuance"
+  },
+  {
+    "id": "rubba-particle",
+    "title": "Rubba: The Particle of Many a",
+    "order": 186,
+    "group": "🔢 Structure & Nuance"
+  }
+]

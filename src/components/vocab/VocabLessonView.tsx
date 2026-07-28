@@ -1,6 +1,7 @@
 import { useState, useEffect, useRef, useMemo } from 'react';
 import type { VocabLesson, VocabExercise, TypingItem, ListeningItem } from '../../types/vocab';
 import { speak, TTS_SPEEDS, type TTSSpeed } from '../../lib/tts';
+import { isRTL } from '../../lib/rtl';
 import { addWord, wordExists } from '../../db/words';
 import { markLessonComplete } from '../../db/lessons';
 import { useTimerStore } from '../../stores/timerStore';
@@ -226,7 +227,7 @@ export default function VocabLessonView({ lang, lessonId, onBack }: Props) {
 
         <div className="bg-white dark:bg-slate-800 rounded-2xl shadow-lg p-6 mb-4">
           <div className="text-center space-y-3">
-            <p className="text-3xl font-bold text-slate-800 dark:text-slate-100">{word.word}</p>
+            <p className="text-3xl font-bold text-slate-800 dark:text-slate-100" dir={isRTL(lang) ? 'rtl' : undefined}>{word.word}</p>
             <div className="inline-flex items-center gap-1">
               <button
                 onClick={() => speak(word.word, lang, ttsSpeed)}

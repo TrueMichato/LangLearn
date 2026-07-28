@@ -1,0 +1,183 @@
+{
+  "id": "common-verbs-4",
+  "words": [
+    {
+      "word": "يُقَرِّرُ",
+      "reading": "yuqarriru",
+      "meaning": "to decide",
+      "example": "يُقَرِّرُ الْفَرِيقُ مَوْعِدَ اللِّقَاءِ.",
+      "exampleMeaning": "The team decides the meeting time."
+    },
+    {
+      "word": "يَقْتَرِحُ",
+      "reading": "yaqtariḥu",
+      "meaning": "to suggest",
+      "example": "يَقْتَرِحُ الطَّالِبُ فِكْرَةً جَدِيدَةً.",
+      "exampleMeaning": "The student suggests a new idea."
+    },
+    {
+      "word": "يُنَاقِشُ",
+      "reading": "yunāqishu",
+      "meaning": "to discuss",
+      "example": "يُنَاقِشُ الْمُدِيرُ الْخُطَّةَ مَعَ الْفَرِيقِ.",
+      "exampleMeaning": "The manager discusses the plan with the team."
+    },
+    {
+      "word": "يُخَطِّطُ",
+      "reading": "yukhaṭṭiṭu",
+      "meaning": "to plan",
+      "example": "يُخَطِّطُ الْمُهَنْدِسُ لِلْمَشْرُوعِ بِعِنَايَةٍ.",
+      "exampleMeaning": "The engineer plans the project carefully."
+    },
+    {
+      "word": "يُنَظِّمُ",
+      "reading": "yunaẓẓimu",
+      "meaning": "to organize",
+      "example": "يُنَظِّمُ الْمُوَظَّفُ الْمَلَفَّاتِ عَلَى الْمَكْتَبِ.",
+      "exampleMeaning": "The employee organizes the files on the desk."
+    },
+    {
+      "word": "يُؤَجِّلُ",
+      "reading": "yuʾajjilu",
+      "meaning": "to postpone",
+      "example": "يُؤَجِّلُ الطَّبِيبُ الْمَوْعِدَ إِلَى الْغَدِ.",
+      "exampleMeaning": "The doctor postpones the appointment until tomorrow."
+    },
+    {
+      "word": "يُلْغِي",
+      "reading": "yulghī",
+      "meaning": "to cancel",
+      "example": "يُلْغِي الْمُدِيرُ الرِّحْلَةَ بِسَبَبِ الْمَطَرِ.",
+      "exampleMeaning": "The manager cancels the trip because of the rain."
+    },
+    {
+      "word": "يُنْجِزُ",
+      "reading": "yunjizu",
+      "meaning": "to accomplish",
+      "example": "يُنْجِزُ الْفَرِيقُ الْعَمَلَ قَبْلَ الظُّهْرِ.",
+      "exampleMeaning": "The team accomplishes the work before noon."
+    },
+    {
+      "word": "يُقَارِنُ",
+      "reading": "yuqārinu",
+      "meaning": "to compare",
+      "example": "يُقَارِنُ الْبَاحِثُ بَيْنَ النَّتَائِجِ بِدِقَّةٍ.",
+      "exampleMeaning": "The researcher compares the results carefully."
+    },
+    {
+      "word": "يَسْتَنْتِجُ",
+      "reading": "yastantiju",
+      "meaning": "to conclude",
+      "example": "يَسْتَنْتِجُ الْقَارِئُ الْمَعْنَى مِنَ السِّيَاقِ.",
+      "exampleMeaning": "The reader concludes the meaning from the context."
+    },
+    {
+      "word": "يَسْتَخْدِمُ",
+      "reading": "yastakhdimu",
+      "meaning": "to use",
+      "example": "يَسْتَخْدِمُ الطَّالِبُ الْقَامُوسَ الْإِلِكْتُرُونِيَّ.",
+      "exampleMeaning": "The student uses the electronic dictionary."
+    },
+    {
+      "word": "يُحَسِّنُ",
+      "reading": "yuḥassinu",
+      "meaning": "to improve",
+      "example": "يُحَسِّنُ التَّدْرِيبُ النُّطْقَ كُلَّ يَوْمٍ.",
+      "exampleMeaning": "Practice improves pronunciation every day."
+    },
+    {
+      "word": "يُرَاجِعُ",
+      "reading": "yurājiʿu",
+      "meaning": "to review",
+      "example": "يُرَاجِعُ الطَّالِبُ الدَّرْسَ قَبْلَ الصَّفِّ.",
+      "exampleMeaning": "The student reviews the lesson before class."
+    },
+    {
+      "word": "يُتَابِعُ",
+      "reading": "yutābiʿu",
+      "meaning": "to follow up",
+      "example": "يُتَابِعُ الصَّحَفِيُّ الْخَبَرَ بِدِقَّةٍ.",
+      "exampleMeaning": "The journalist follows up on the news carefully."
+    },
+    {
+      "word": "يَحْتَفِظُ",
+      "reading": "yaḥtafiẓu",
+      "meaning": "to keep / retain",
+      "example": "يَحْتَفِظُ الْمُسَافِرُ بِالنُّسْخَةِ الْإِلِكْتُرُونِيَّةِ.",
+      "exampleMeaning": "The traveler keeps the electronic copy."
+    },
+    {
+      "word": "يَسْتَعِيرُ",
+      "reading": "yastaʿīru",
+      "meaning": "to borrow",
+      "example": "يَسْتَعِيرُ الْقَارِئُ كِتَابًا مِنَ الْمَكْتَبَةِ.",
+      "exampleMeaning": "The reader borrows a book from the library."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "___ الْفَرِيقُ مَوْعِدَ اللِّقَاءِ.",
+          "answer": "يُقَرِّرُ",
+          "hint": "to decide"
+        },
+        {
+          "sentence": "___ الطَّالِبُ فِكْرَةً جَدِيدَةً.",
+          "answer": "يَقْتَرِحُ",
+          "hint": "to suggest"
+        },
+        {
+          "sentence": "___ الْمُدِيرُ الْخُطَّةَ مَعَ الْفَرِيقِ.",
+          "answer": "يُنَاقِشُ",
+          "hint": "to discuss"
+        },
+        {
+          "sentence": "___ الْمُهَنْدِسُ لِلْمَشْرُوعِ بِعِنَايَةٍ.",
+          "answer": "يُخَطِّطُ",
+          "hint": "to plan"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "items": [
+        {
+          "question": "What does ‘يُقَرِّرُ’ mean?",
+          "options": [
+            "to suggest",
+            "to decide",
+            "to discuss",
+            "to plan"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What does ‘يَقْتَرِحُ’ mean?",
+          "options": [
+            "to discuss",
+            "to suggest",
+            "to plan",
+            "to organize"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What does ‘يُنَاقِشُ’ mean?",
+          "options": [
+            "to plan",
+            "to discuss",
+            "to organize",
+            "to postpone"
+          ],
+          "answer": 1
+        }
+      ]
+    }
+  ]
+}

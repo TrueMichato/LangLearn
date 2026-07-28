@@ -1,0 +1,183 @@
+{
+  "id": "hobbies-sports",
+  "words": [
+    {
+      "word": "هِوَايَةٌ",
+      "reading": "hiwāyatun",
+      "meaning": "hobby",
+      "example": "هِوَايَةٌ جَمِيلَةٌ تُسْعِدُنِي.",
+      "exampleMeaning": "A beautiful hobby makes me happy."
+    },
+    {
+      "word": "رِيَاضَةٌ",
+      "reading": "riyāḍatun",
+      "meaning": "sport / exercise",
+      "example": "رِيَاضَةٌ خَفِيفَةٌ كُلَّ صَبَاحٍ.",
+      "exampleMeaning": "Light exercise every morning."
+    },
+    {
+      "word": "قِرَاءَةٌ",
+      "reading": "qirāʾatun",
+      "meaning": "reading",
+      "example": "قِرَاءَةٌ هَادِئَةٌ قَبْلَ النَّوْمِ.",
+      "exampleMeaning": "Quiet reading before sleep."
+    },
+    {
+      "word": "كِتَابَةٌ",
+      "reading": "kitābatun",
+      "meaning": "writing",
+      "example": "كِتَابَةٌ يَوْمِيَّةٌ فِي الدَّفْتَرِ.",
+      "exampleMeaning": "Daily writing in the notebook."
+    },
+    {
+      "word": "رَسْمٌ",
+      "reading": "rasmun",
+      "meaning": "drawing",
+      "example": "الرَّسْمُ هِوَايَتِي الْمُفَضَّلَةُ.",
+      "exampleMeaning": "Drawing is my favorite hobby."
+    },
+    {
+      "word": "مُوسِيقَى",
+      "reading": "mūsīqā",
+      "meaning": "music",
+      "example": "الْمُوسِيقَى هَادِئَةٌ.",
+      "exampleMeaning": "The music is calm."
+    },
+    {
+      "word": "سِبَاحَةٌ",
+      "reading": "sibāḥatun",
+      "meaning": "swimming",
+      "example": "السِّبَاحَةُ مُفِيدَةٌ لِلْجِسْمِ.",
+      "exampleMeaning": "Swimming is useful for the body."
+    },
+    {
+      "word": "كُرَةُ قَدَمٍ",
+      "reading": "kuratu qadamin",
+      "meaning": "soccer / football",
+      "example": "كُرَةُ قَدَمٍ رِيَاضَةٌ شَعْبِيَّةٌ.",
+      "exampleMeaning": "Soccer is a popular sport."
+    },
+    {
+      "word": "كُرَةُ سَلَّةٍ",
+      "reading": "kuratu sallatin",
+      "meaning": "basketball",
+      "example": "كُرَةُ سَلَّةٍ تَحْتَاجُ إِلَى طُولٍ.",
+      "exampleMeaning": "Basketball needs height."
+    },
+    {
+      "word": "جَرْيٌ",
+      "reading": "jaryun",
+      "meaning": "running",
+      "example": "الْجَرْيُ فِي الصَّبَاحِ مُنْعِشٌ.",
+      "exampleMeaning": "Running in the morning is refreshing."
+    },
+    {
+      "word": "مَشْيٌ",
+      "reading": "mashyun",
+      "meaning": "walking",
+      "example": "الْمَشْيُ بَعْدَ الْعَشَاءِ لَطِيفٌ.",
+      "exampleMeaning": "Walking after dinner is pleasant."
+    },
+    {
+      "word": "رُكُوبُ الدَّرَّاجَةِ",
+      "reading": "rukūbu d-darrājati",
+      "meaning": "cycling",
+      "example": "رُكُوبُ الدَّرَّاجَةِ فِي الْحَدِيقَةِ مُمْتِعٌ.",
+      "exampleMeaning": "Cycling in the park is enjoyable."
+    },
+    {
+      "word": "تَصْوِيرٌ",
+      "reading": "taṣwīrun",
+      "meaning": "photography",
+      "example": "التَّصْوِيرُ فِي السَّفَرِ جَمِيلٌ.",
+      "exampleMeaning": "Photography while traveling is beautiful."
+    },
+    {
+      "word": "طَبْخٌ",
+      "reading": "ṭabkhun",
+      "meaning": "cooking",
+      "example": "الطَّبْخُ مَعَ الْعَائِلَةِ مُمْتِعٌ.",
+      "exampleMeaning": "Cooking with family is enjoyable."
+    },
+    {
+      "word": "شَطْرَنْجٌ",
+      "reading": "shaṭranjun",
+      "meaning": "chess",
+      "example": "الشَّطْرَنْجُ لُعْبَةٌ ذَكِيَّةٌ.",
+      "exampleMeaning": "Chess is a smart game."
+    },
+    {
+      "word": "حَفْلَةٌ",
+      "reading": "ḥaflatun",
+      "meaning": "party",
+      "example": "الْحَفْلَةُ فِي بَيْتِ صَدِيقِي.",
+      "exampleMeaning": "The party is at my friend’s house."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "___ جَمِيلَةٌ تُسْعِدُنِي.",
+          "answer": "هِوَايَةٌ",
+          "hint": "hobby"
+        },
+        {
+          "sentence": "___ خَفِيفَةٌ كُلَّ صَبَاحٍ.",
+          "answer": "رِيَاضَةٌ",
+          "hint": "sport / exercise"
+        },
+        {
+          "sentence": "___ هَادِئَةٌ قَبْلَ النَّوْمِ.",
+          "answer": "قِرَاءَةٌ",
+          "hint": "reading"
+        },
+        {
+          "sentence": "___ يَوْمِيَّةٌ فِي الدَّفْتَرِ.",
+          "answer": "كِتَابَةٌ",
+          "hint": "writing"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "items": [
+        {
+          "question": "What does ‘هِوَايَةٌ’ mean?",
+          "options": [
+            "sport / exercise",
+            "hobby",
+            "reading",
+            "writing"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What does ‘رِيَاضَةٌ’ mean?",
+          "options": [
+            "reading",
+            "sport / exercise",
+            "writing",
+            "drawing"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What does ‘قِرَاءَةٌ’ mean?",
+          "options": [
+            "writing",
+            "reading",
+            "drawing",
+            "music"
+          ],
+          "answer": 1
+        }
+      ]
+    }
+  ]
+}

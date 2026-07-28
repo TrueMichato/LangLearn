@@ -206,6 +206,7 @@ export default function GrammarPage() {
                     const groupLessons = groupedLessons.filter((l) => l.group === group);
                     const isCollapsed = collapsedGroups.has(group);
                     const completedInGroup = groupLessons.filter((l) => progress.get(l.id)?.completed).length;
+                    const isTofuguGroup = groupLessons.some((l) => l.source === 'tofugu');
 
                     return (
                       <div key={group} className="mb-4">
@@ -218,9 +219,11 @@ export default function GrammarPage() {
                             <h3 className="text-sm font-semibold text-slate-600 dark:text-slate-300">
                               {group}
                             </h3>
-                            <span className="text-[10px] font-medium text-purple-600 dark:text-purple-400 bg-purple-50 dark:bg-purple-950/50 rounded-full px-1.5 py-0.5">
-                              Tofugu
-                            </span>
+                            {isTofuguGroup && (
+                              <span className="text-[10px] font-medium text-purple-600 dark:text-purple-400 bg-purple-50 dark:bg-purple-950/50 rounded-full px-1.5 py-0.5">
+                                Tofugu
+                              </span>
+                            )}
                           </div>
                           <span className="text-xs text-slate-500 dark:text-slate-400">
                             {completedInGroup}/{groupLessons.length}

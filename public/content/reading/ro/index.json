@@ -1,0 +1,414 @@
+{
+  "texts": [
+    {
+      "id": "self-intro-ro",
+      "title": "Prezentare",
+      "titleEn": "Self-Introduction",
+      "difficulty": "easy",
+      "wordCount": 80,
+      "tags": [
+        "daily-life",
+        "conversation"
+      ],
+      "description": "A simple self-introduction in Romanian"
+    },
+    {
+      "id": "ziua-mea",
+      "title": "Ziua mea",
+      "titleEn": "My Day",
+      "difficulty": "easy",
+      "wordCount": 90,
+      "tags": [
+        "daily-life"
+      ],
+      "description": "A typical daily routine in Romania"
+    },
+    {
+      "id": "la-piata",
+      "title": "La piață",
+      "titleEn": "At the Market",
+      "difficulty": "easy",
+      "wordCount": 92,
+      "tags": [
+        "daily-life",
+        "conversation"
+      ],
+      "description": "A friendly dialogue at a Romanian market stall"
+    },
+    {
+      "id": "familia-mea",
+      "title": "Familia mea",
+      "titleEn": "My Family",
+      "difficulty": "easy",
+      "wordCount": 88,
+      "tags": [
+        "daily-life"
+      ],
+      "description": "A short description of a Romanian family"
+    },
+    {
+      "id": "martisor",
+      "title": "Mărțișorul",
+      "titleEn": "Mărțișor",
+      "difficulty": "medium",
+      "wordCount": 182,
+      "tags": [
+        "culture",
+        "traditions"
+      ],
+      "description": "An article about the Romanian spring tradition of Mărțișor"
+    },
+    {
+      "id": "capra-cu-trei-iezi",
+      "title": "Capra cu trei iezi",
+      "titleEn": "The Goat and Her Three Kids",
+      "difficulty": "medium",
+      "wordCount": 201,
+      "tags": [
+        "culture",
+        "folklore"
+      ],
+      "description": "A retelling of a well-known Romanian folk tale by Ion Creangă"
+    },
+    {
+      "id": "bucuresti",
+      "title": "București",
+      "titleEn": "Bucharest",
+      "difficulty": "medium",
+      "wordCount": 179,
+      "tags": [
+        "travel",
+        "culture"
+      ],
+      "description": "A travel and culture overview of Romania's capital city"
+    },
+    {
+      "id": "mancare-romaneasca",
+      "title": "Mâncare românească",
+      "titleEn": "Romanian Food",
+      "difficulty": "medium",
+      "wordCount": 166,
+      "tags": [
+        "culture",
+        "food"
+      ],
+      "description": "An introduction to several traditional Romanian dishes"
+    },
+    {
+      "id": "tehnologia-si-mediul",
+      "title": "Tehnologia și mediul",
+      "titleEn": "Technology and the Environment",
+      "difficulty": "hard",
+      "wordCount": 225,
+      "tags": [
+        "technology",
+        "environment",
+        "society"
+      ],
+      "description": "A short opinion essay about using technology responsibly for the environment"
+    },
+    {
+      "id": "nadia-comaneci",
+      "title": "Nadia Comăneci",
+      "titleEn": "Nadia Comăneci",
+      "difficulty": "hard",
+      "wordCount": 221,
+      "tags": [
+        "culture",
+        "history",
+        "sports"
+      ],
+      "description": "A biography-style narrative about the Romanian gymnast Nadia Comăneci"
+    },
+    {
+      "id": "la-restaurant",
+      "title": "La restaurant",
+      "titleEn": "At the Restaurant",
+      "difficulty": "easy",
+      "wordCount": 95,
+      "tags": [
+        "daily-life",
+        "conversation"
+      ],
+      "description": "A natural restaurant-ordering dialogue in Romanian"
+    },
+    {
+      "id": "o-zi-la-mare",
+      "title": "O zi la mare",
+      "titleEn": "A Day at the Sea",
+      "difficulty": "easy",
+      "wordCount": 100,
+      "tags": [
+        "daily-life",
+        "travel"
+      ],
+      "description": "A present-tense story about spending a day on the Black Sea coast"
+    },
+    {
+      "id": "legenda-mesterului-manole",
+      "title": "Legenda Meșterului Manole",
+      "titleEn": "The Legend of Master Manole",
+      "difficulty": "medium",
+      "wordCount": 190,
+      "tags": [
+        "culture",
+        "legend"
+      ],
+      "description": "A retelling of the Curtea de Argeș monastery legend"
+    },
+    {
+      "id": "delta-dunarii",
+      "title": "Delta Dunării",
+      "titleEn": "The Danube Delta",
+      "difficulty": "medium",
+      "wordCount": 185,
+      "tags": [
+        "culture",
+        "nature"
+      ],
+      "description": "An informative text about the Danube Delta, its birds, and its fragile nature"
+    },
+    {
+      "id": "somnoroase-pasarele",
+      "title": "Somnoroase păsărele",
+      "titleEn": "Drowsy Little Birds",
+      "difficulty": "hard",
+      "wordCount": 59,
+      "tags": [
+        "literature",
+        "poetry"
+      ],
+      "description": "A classic public-domain poem by Mihai Eminescu"
+    },
+    {
+      "id": "istoria-limbii-romane",
+      "title": "Istoria limbii române",
+      "titleEn": "The History of the Romanian Language",
+      "difficulty": "hard",
+      "wordCount": 230,
+      "tags": [
+        "culture",
+        "history",
+        "language"
+      ],
+      "description": "An essay about the Latin origin and historical influences of Romanian"
+    },
+    {
+      "id": "ce-te-legeni",
+      "title": "Ce te legeni…",
+      "titleEn": "Why Do You Sway…",
+      "difficulty": "hard",
+      "wordCount": 106,
+      "tags": [
+        "literature",
+        "poetry"
+      ],
+      "description": "A classic public-domain nature poem by Mihai Eminescu (from ro.wikisource.org)."
+    },
+    {
+      "id": "cainele-si-catelul",
+      "title": "Câinele și cățelul",
+      "titleEn": "The Dog and the Puppy",
+      "difficulty": "medium",
+      "wordCount": 161,
+      "tags": [
+        "literature",
+        "fable"
+      ],
+      "description": "A modern prose retelling of Grigore Alexandrescu’s famous fable about false talk of equality."
+    },
+    {
+      "id": "manastirile-bucovina",
+      "title": "Mănăstirile pictate din Bucovina",
+      "titleEn": "The Painted Monasteries of Bucovina",
+      "difficulty": "medium",
+      "wordCount": 162,
+      "tags": [
+        "culture",
+        "history"
+      ],
+      "description": "An informative text about the UNESCO painted monasteries of northern Moldavia (Voroneț)."
+    },
+    {
+      "id": "vestitorii-primaverii",
+      "title": "Vestitorii primăverii",
+      "titleEn": "The Heralds of Spring",
+      "difficulty": "hard",
+      "wordCount": 149,
+      "tags": [
+        "literature",
+        "poetry"
+      ],
+      "description": "A public-domain spring poem by George Coșbuc (from ro.wikisource.org)."
+    },
+    {
+      "id": "dracula-vlad-tepes",
+      "title": "Dracula și Vlad Țepeș",
+      "titleEn": "Dracula and Vlad the Impaler",
+      "difficulty": "medium",
+      "wordCount": 163,
+      "tags": [
+        "culture",
+        "history"
+      ],
+      "description": "How the fictional Count Dracula relates to the historical prince Vlad Țepeș."
+    },
+    {
+      "id": "caprioara",
+      "title": "Căprioara",
+      "titleEn": "The Doe (opening)",
+      "difficulty": "hard",
+      "wordCount": 91,
+      "tags": [
+        "literature",
+        "nature"
+      ],
+      "description": "The tender opening of Emil Gârleanu’s classic short story, verbatim (public domain, ro.wikisource.org)."
+    },
+    {
+      "id": "tinerete-fara-batranete",
+      "title": "Tinerețe fără bătrânețe",
+      "titleEn": "Youth Without Old Age",
+      "difficulty": "medium",
+      "wordCount": 149,
+      "tags": [
+        "literature",
+        "fairy-tale"
+      ],
+      "description": "A short retelling of Petre Ispirescu’s most famous Romanian fairy tale."
+    },
+    {
+      "id": "punguta-cu-doi-bani",
+      "title": "Punguța cu doi bani",
+      "titleEn": "The Purse with Two Coins",
+      "difficulty": "medium",
+      "wordCount": 145,
+      "tags": [
+        "literature",
+        "fairy-tale"
+      ],
+      "description": "A short retelling of Ion Creangă’s beloved folk tale about a clever rooster."
+    },
+    {
+      "id": "vulpea-si-strugurii",
+      "title": "Vulpea și strugurii",
+      "titleEn": "The Fox and the Grapes",
+      "difficulty": "easy",
+      "wordCount": 96,
+      "tags": [
+        "literature",
+        "fable"
+      ],
+      "description": "The classic Aesop fable retold in simple Romanian, with its well-known moral."
+    },
+    {
+      "id": "ursul-pacalit-de-vulpe",
+      "title": "Ursul păcălit de vulpe",
+      "titleEn": "The Bear Fooled by the Fox",
+      "difficulty": "medium",
+      "wordCount": 130,
+      "tags": [
+        "literature",
+        "fairy-tale"
+      ],
+      "description": "A retelling of Ion Creangă’s humorous tale explaining why bears have short tails."
+    },
+    {
+      "id": "balada-unui-greier-mic",
+      "title": "Balada unui greier mic",
+      "titleEn": "Ballad of a Little Cricket",
+      "difficulty": "hard",
+      "wordCount": 164,
+      "tags": [
+        "literature",
+        "poetry"
+      ],
+      "description": "George Topîrceanu’s beloved public-domain autumn poem about a little cricket (ro.wikisource.org)."
+    },
+    {
+      "id": "sarbatorile-de-iarna",
+      "title": "Sărbătorile de iarnă",
+      "titleEn": "Winter Holidays",
+      "difficulty": "medium",
+      "wordCount": 158,
+      "tags": [
+        "culture",
+        "traditions"
+      ],
+      "description": "Romanian winter customs from Saint Nicholas and carols to New Year and Epiphany."
+    },
+    {
+      "id": "interviu-de-angajare",
+      "title": "Un interviu de angajare",
+      "titleEn": "A Job Interview",
+      "difficulty": "medium",
+      "wordCount": 157,
+      "tags": [
+        "daily-life",
+        "conversation",
+        "work"
+      ],
+      "description": "A realistic job-interview dialogue with common questions and answers."
+    },
+    {
+      "id": "cum-sa-te-descurci-in-bucuresti",
+      "title": "Cum să te descurci în București",
+      "titleEn": "Getting Around Bucharest",
+      "difficulty": "medium",
+      "wordCount": 142,
+      "tags": [
+        "travel",
+        "daily-life"
+      ],
+      "description": "A practical guide to public transport and getting around the Romanian capital."
+    },
+    {
+      "id": "legenda-babei-dochia",
+      "title": "Legenda Babei Dochia",
+      "titleEn": "The Legend of Baba Dochia",
+      "difficulty": "medium",
+      "wordCount": 173,
+      "tags": [
+        "culture",
+        "legend"
+      ],
+      "description": "A retelling of the Romanian legend that explains the changeable weather of early March."
+    },
+    {
+      "id": "ospitalitatea-romaneasca",
+      "title": "Ospitalitatea românească",
+      "titleEn": "Romanian Hospitality",
+      "difficulty": "medium",
+      "wordCount": 150,
+      "tags": [
+        "culture",
+        "traditions"
+      ],
+      "description": "An informative text about the tradition of hospitality in Romanian culture (bread and salt, țuică)."
+    },
+    {
+      "id": "la-steaua",
+      "title": "La steaua",
+      "titleEn": "To the Star",
+      "difficulty": "hard",
+      "wordCount": 71,
+      "tags": [
+        "literature",
+        "poetry"
+      ],
+      "description": "Mihai Eminescu’s famous public-domain poem about starlight and lost love (verbatim, ro.wikisource.org)."
+    },
+    {
+      "id": "lacul",
+      "title": "Lacul",
+      "titleEn": "The Lake",
+      "difficulty": "hard",
+      "wordCount": 91,
+      "tags": [
+        "literature",
+        "poetry"
+      ],
+      "description": "Mihai Eminescu’s beloved public-domain poem set by a lake in the forest (verbatim, ro.wikisource.org)."
+    }
+  ]
+}

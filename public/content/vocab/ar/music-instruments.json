@@ -1,0 +1,183 @@
+{
+  "id": "music-instruments",
+  "words": [
+    {
+      "word": "مُوسِيقَى",
+      "reading": "mūsīqā",
+      "meaning": "music",
+      "example": "مُوسِيقَى هَادِئَةٌ تُرِيحُ الْأَعْصَابَ.",
+      "exampleMeaning": "Calm music relaxes the nerves."
+    },
+    {
+      "word": "آلَةٌ مُوسِيقِيَّةٌ",
+      "reading": "ʾālatun mūsīqiyyatun",
+      "meaning": "musical instrument",
+      "example": "آلَةٌ مُوسِيقِيَّةٌ قَدِيمَةٌ تَحْمِلُ صَوْتًا جَمِيلًا.",
+      "exampleMeaning": "An old musical instrument carries a beautiful sound."
+    },
+    {
+      "word": "عُودٌ",
+      "reading": "ʿūdun",
+      "meaning": "oud / lute",
+      "example": "عُودٌ عَرَبِيٌّ يُرَافِقُ الْمُطْرِبَ فِي الْحَفْلِ.",
+      "exampleMeaning": "An Arabic oud accompanies the singer at the concert."
+    },
+    {
+      "word": "قَانُونٌ",
+      "reading": "qānūnun",
+      "meaning": "qanun / zither",
+      "example": "قَانُونٌ رَنَّانٌ يَمْلَأُ الْقَاعَةَ نَغَمًا.",
+      "exampleMeaning": "A resonant qanun fills the hall with melody."
+    },
+    {
+      "word": "نَايٌ",
+      "reading": "nāyun",
+      "meaning": "flute / reed pipe",
+      "example": "عَزَفَ الرَّاعِي لَحْنًا حَزِينًا عَلَى نَايٍ.",
+      "exampleMeaning": "The shepherd played a sad melody on a flute."
+    },
+    {
+      "word": "طَبْلَةٌ",
+      "reading": "ṭablatun",
+      "meaning": "drum / darbuka",
+      "example": "تَضْبِطُ الطَّبْلَةُ إِيقَاعَ الرَّقْصَةِ.",
+      "exampleMeaning": "The drum sets the rhythm of the dance."
+    },
+    {
+      "word": "دُفٌّ",
+      "reading": "duffun",
+      "meaning": "frame drum",
+      "example": "حَمَلَتِ الْفَتَاةُ دُفًّا فِي الْمَوْكِبِ.",
+      "exampleMeaning": "The girl carried a frame drum in the procession."
+    },
+    {
+      "word": "كَمَانٌ",
+      "reading": "kamānun",
+      "meaning": "violin",
+      "example": "يُصْدِرُ الْكَمَانُ صَوْتًا رَقِيقًا.",
+      "exampleMeaning": "The violin produces a delicate sound."
+    },
+    {
+      "word": "بِيَانُو",
+      "reading": "biyānū",
+      "meaning": "piano",
+      "example": "تَتَدَرَّبُ لَيْلَى عَلَى الْبِيَانُو كُلَّ مَسَاءٍ.",
+      "exampleMeaning": "Layla practices piano every evening."
+    },
+    {
+      "word": "قِيثَارَةٌ",
+      "reading": "qīthāratun",
+      "meaning": "guitar",
+      "example": "اِشْتَرَى سَامِي قِيثَارَةً جَدِيدَةً.",
+      "exampleMeaning": "Sami bought a new guitar."
+    },
+    {
+      "word": "مِزْمَارٌ",
+      "reading": "mizmārun",
+      "meaning": "pipe / reed instrument",
+      "example": "يُسْمَعُ صَوْتُ مِزْمَارٍ فِي السُّوقِ الشَّعْبِيِّ.",
+      "exampleMeaning": "The sound of a reed pipe is heard in the folk market."
+    },
+    {
+      "word": "وَتَرٌ",
+      "reading": "watarun",
+      "meaning": "string",
+      "example": "اِنْقَطَعَ وَتَرٌ فِي الْعُودِ أَثْنَاءَ الْعَزْفِ.",
+      "exampleMeaning": "A string broke on the oud during playing."
+    },
+    {
+      "word": "إِيقَاعٌ",
+      "reading": "ʾīqāʿun",
+      "meaning": "rhythm",
+      "example": "يَحْفَظُ الطَّالِبُ إِيقَاعًا صَعْبًا بِسُرْعَةٍ.",
+      "exampleMeaning": "The student memorizes a difficult rhythm quickly."
+    },
+    {
+      "word": "لَحْنٌ",
+      "reading": "laḥnun",
+      "meaning": "melody",
+      "example": "كَتَبَ الْمُؤَلِّفُ لَحْنًا لَطِيفًا لِلْأُغْنِيَةِ.",
+      "exampleMeaning": "The composer wrote a gentle melody for the song."
+    },
+    {
+      "word": "نَوْتَةٌ",
+      "reading": "nawtatun",
+      "meaning": "musical note",
+      "example": "قَرَأَتِ الْعَازِفَةُ نَوْتَةً صَعْبَةً بِدِقَّةٍ.",
+      "exampleMeaning": "The musician read a difficult note accurately."
+    },
+    {
+      "word": "فِرْقَةٌ",
+      "reading": "firqah",
+      "meaning": "band / ensemble",
+      "example": "تَسْتَعِدُّ فِرْقَةٌ شَابَّةٌ لِلْحَفْلِ الْمَدْرَسِيِّ.",
+      "exampleMeaning": "A young band prepares for the school concert."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "___ هَادِئَةٌ تُرِيحُ الْأَعْصَابَ.",
+          "answer": "مُوسِيقَى",
+          "hint": "music"
+        },
+        {
+          "sentence": "___ قَدِيمَةٌ تَحْمِلُ صَوْتًا جَمِيلًا.",
+          "answer": "آلَةٌ مُوسِيقِيَّةٌ",
+          "hint": "musical instrument"
+        },
+        {
+          "sentence": "___ عَرَبِيٌّ يُرَافِقُ الْمُطْرِبَ فِي الْحَفْلِ.",
+          "answer": "عُودٌ",
+          "hint": "oud / lute"
+        },
+        {
+          "sentence": "___ رَنَّانٌ يَمْلَأُ الْقَاعَةَ نَغَمًا.",
+          "answer": "قَانُونٌ",
+          "hint": "qanun / zither"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "items": [
+        {
+          "question": "What does ‘مُوسِيقَى’ mean?",
+          "options": [
+            "musical instrument",
+            "music",
+            "oud / lute",
+            "qanun / zither"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What does ‘آلَةٌ مُوسِيقِيَّةٌ’ mean?",
+          "options": [
+            "oud / lute",
+            "musical instrument",
+            "qanun / zither",
+            "flute / reed pipe"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What does ‘عُودٌ’ mean?",
+          "options": [
+            "qanun / zither",
+            "oud / lute",
+            "flute / reed pipe",
+            "drum / darbuka"
+          ],
+          "answer": 1
+        }
+      ]
+    }
+  ]
+}

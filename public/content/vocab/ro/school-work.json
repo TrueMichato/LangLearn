@@ -1,0 +1,178 @@
+{
+  "id": "school-work",
+  "words": [
+    {
+      "word": "școală",
+      "reading": "shkoh-ah-luh",
+      "meaning": "school",
+      "example": "Merg la școală la ora opt.",
+      "exampleMeaning": "I go to school at eight o’clock."
+    },
+    {
+      "word": "clasă",
+      "reading": "klah-suh",
+      "meaning": "classroom / class",
+      "example": "O clasă luminoasă este plină de elevi.",
+      "exampleMeaning": "A bright classroom is full of students."
+    },
+    {
+      "word": "elev",
+      "reading": "eh-lev",
+      "meaning": "pupil / student",
+      "example": "Un elev scrie în caiet.",
+      "exampleMeaning": "A student writes in the notebook."
+    },
+    {
+      "word": "student",
+      "reading": "stoo-dent",
+      "meaning": "university student",
+      "example": "Un student locuiește la cămin.",
+      "exampleMeaning": "A university student lives in a dorm."
+    },
+    {
+      "word": "profesor",
+      "reading": "proh-feh-sor",
+      "meaning": "teacher / professor",
+      "example": "Un profesor explică lecția clar.",
+      "exampleMeaning": "A teacher explains the lesson clearly."
+    },
+    {
+      "word": "lecție",
+      "reading": "lek-tsee-eh",
+      "meaning": "lesson",
+      "example": "Această lecție este utilă.",
+      "exampleMeaning": "This lesson is useful."
+    },
+    {
+      "word": "carte",
+      "reading": "kahr-teh",
+      "meaning": "book",
+      "example": "Citesc o carte pentru curs.",
+      "exampleMeaning": "I read a book for the course."
+    },
+    {
+      "word": "caiet",
+      "reading": "kah-yet",
+      "meaning": "notebook",
+      "example": "Scriu tema în caiet.",
+      "exampleMeaning": "I write the homework in the notebook."
+    },
+    {
+      "word": "pix",
+      "reading": "peeks",
+      "meaning": "pen",
+      "example": "Am un pix albastru.",
+      "exampleMeaning": "I have a blue pen."
+    },
+    {
+      "word": "temă",
+      "reading": "teh-muh",
+      "meaning": "homework / assignment",
+      "example": "Fac temă după cină.",
+      "exampleMeaning": "I do homework after dinner."
+    },
+    {
+      "word": "examen",
+      "reading": "eg-zah-men",
+      "meaning": "exam",
+      "example": "Un examen începe mâine dimineață.",
+      "exampleMeaning": "An exam starts tomorrow morning."
+    },
+    {
+      "word": "birou",
+      "reading": "bee-roh-oo",
+      "meaning": "office / desk",
+      "example": "Lucrez la birou azi.",
+      "exampleMeaning": "I work at the office today."
+    },
+    {
+      "word": "coleg",
+      "reading": "koh-leg",
+      "meaning": "colleague / classmate",
+      "example": "Un coleg mă ajută cu proiectul.",
+      "exampleMeaning": "A colleague helps me with the project."
+    },
+    {
+      "word": "șef",
+      "reading": "shef",
+      "meaning": "boss",
+      "example": "Un șef cere raportul azi.",
+      "exampleMeaning": "A boss asks for the report today."
+    },
+    {
+      "word": "salariu",
+      "reading": "sah-lah-ree-oo",
+      "meaning": "salary",
+      "example": "Un salariu bun intră vineri în cont.",
+      "exampleMeaning": "A good salary arrives in the account on Friday."
+    },
+    {
+      "word": "pauză",
+      "reading": "pow-zuh",
+      "meaning": "break",
+      "example": "Luăm pauză la ora zece.",
+      "exampleMeaning": "We take a break at ten o’clock."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "Scriu tema în ___.",
+          "answer": "caiet",
+          "hint": "notebook"
+        },
+        {
+          "sentence": "Lucrez la ___ azi.",
+          "answer": "birou",
+          "hint": "office"
+        },
+        {
+          "sentence": "Luăm ___ la ora zece.",
+          "answer": "pauză",
+          "hint": "break"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "items": [
+        {
+          "question": "What does 'profesor' mean?",
+          "options": [
+            "student",
+            "teacher",
+            "boss",
+            "pen"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "How do you say 'homework' in Romanian?",
+          "options": [
+            "temă",
+            "carte",
+            "lecție",
+            "examen"
+          ],
+          "answer": 0
+        },
+        {
+          "question": "What does 'salariu' mean?",
+          "options": [
+            "office",
+            "break",
+            "salary",
+            "class"
+          ],
+          "answer": 2
+        }
+      ]
+    }
+  ]
+}

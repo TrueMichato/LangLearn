@@ -1,0 +1,183 @@
+{
+  "id": "social-relationships",
+  "words": [
+    {
+      "word": "صَدَاقَةٌ",
+      "reading": "ṣadāqatun",
+      "meaning": "friendship",
+      "example": "بَدَأَتْ صَدَاقَةٌ قَوِيَّةٌ بَيْنَ الطَّالِبَيْنِ.",
+      "exampleMeaning": "A strong friendship began between the two students."
+    },
+    {
+      "word": "زَمِيلٌ",
+      "reading": "zamīlun",
+      "meaning": "colleague",
+      "example": "دَعَوْتُ زَمِيلًا إِلَى الْغَدَاءِ.",
+      "exampleMeaning": "I invited a colleague to lunch."
+    },
+    {
+      "word": "جَارٌ",
+      "reading": "jārun",
+      "meaning": "neighbor",
+      "example": "سَاعَدَنَا جَارٌ كَرِيمٌ فِي النَّقْلِ.",
+      "exampleMeaning": "A generous neighbor helped us with moving."
+    },
+    {
+      "word": "مَعْرِفَةٌ",
+      "reading": "maʿrifatun",
+      "meaning": "acquaintance",
+      "example": "هِيَ مَعْرِفَةٌ قَدِيمَةٌ مِنَ الْجَامِعَةِ.",
+      "exampleMeaning": "She is an old acquaintance from the university."
+    },
+    {
+      "word": "خُطُوبَةٌ",
+      "reading": "khuṭūbatun",
+      "meaning": "engagement",
+      "example": "أَعْلَنَتِ الْأُسْرَةُ خُطُوبَةً سَعِيدَةً.",
+      "exampleMeaning": "The family announced a happy engagement."
+    },
+    {
+      "word": "زَوَاجٌ",
+      "reading": "zawājun",
+      "meaning": "marriage",
+      "example": "يَحْتَفِلُونَ بِزَوَاجٍ بَسِيطٍ فِي الْبَيْتِ.",
+      "exampleMeaning": "They are celebrating a simple marriage at home."
+    },
+    {
+      "word": "دَعْوَةٌ",
+      "reading": "daʿwatun",
+      "meaning": "invitation",
+      "example": "أَرْسَلَتْ لَنَا دَعْوَةً إِلَى الْعَشَاءِ.",
+      "exampleMeaning": "She sent us an invitation to dinner."
+    },
+    {
+      "word": "مُجَامَلَةٌ",
+      "reading": "mujāmalatun",
+      "meaning": "courtesy / compliment",
+      "example": "قَالَ مُجَامَلَةً لَطِيفَةً لِلضُّيُوفِ.",
+      "exampleMeaning": "He said a kind compliment to the guests."
+    },
+    {
+      "word": "ثِقَةٌ",
+      "reading": "thiqatun",
+      "meaning": "trust",
+      "example": "الثِّقَةُ أَسَاسُ كُلِّ عِلَاقَةٍ نَاجِحَةٍ.",
+      "exampleMeaning": "Trust is the foundation of every successful relationship."
+    },
+    {
+      "word": "غَيْرَةٌ",
+      "reading": "ghayratun",
+      "meaning": "jealousy",
+      "example": "سَبَّبَتِ الْغَيْرَةُ سُوءَ فَهْمٍ بَيْنَهُمَا.",
+      "exampleMeaning": "Jealousy caused a misunderstanding between them."
+    },
+    {
+      "word": "خِلَافٌ",
+      "reading": "khilāfun",
+      "meaning": "disagreement",
+      "example": "انْتَهَى الْخِلَافُ بِحِوَارٍ هَادِئٍ.",
+      "exampleMeaning": "The disagreement ended with a calm conversation."
+    },
+    {
+      "word": "مُصَالَحَةٌ",
+      "reading": "muṣālaḥatun",
+      "meaning": "reconciliation",
+      "example": "تَمَّتْ مُصَالَحَةٌ بَعْدَ اعْتِذَارٍ صَادِقٍ.",
+      "exampleMeaning": "A reconciliation happened after a sincere apology."
+    },
+    {
+      "word": "احْتِرَامٌ",
+      "reading": "iḥtirāmun",
+      "meaning": "respect",
+      "example": "يَظْهَرُ احْتِرَامٌ فِي طَرِيقَةِ الْكَلَامِ.",
+      "exampleMeaning": "Respect appears in the way of speaking."
+    },
+    {
+      "word": "مُوَاسَاةٌ",
+      "reading": "muwāsātun",
+      "meaning": "consolation",
+      "example": "قَدَّمَ الْأَصْدِقَاءُ مُوَاسَاةً دَافِئَةً.",
+      "exampleMeaning": "The friends offered warm consolation."
+    },
+    {
+      "word": "مُنَاسَبَةٌ اجْتِمَاعِيَّةٌ",
+      "reading": "munāsabatun ijtimāʿiyyatun",
+      "meaning": "social occasion",
+      "example": "حَضَرْنَا مُنَاسَبَةً اجْتِمَاعِيَّةً فِي الْحَيِّ.",
+      "exampleMeaning": "We attended a social occasion in the neighborhood."
+    },
+    {
+      "word": "صِلَةُ الرَّحِمِ",
+      "reading": "ṣilatu r-raḥimi",
+      "meaning": "maintaining family ties",
+      "example": "تُقَوِّي الزِّيَارَاتُ صِلَةَ الرَّحِمِ.",
+      "exampleMeaning": "Visits strengthen family ties."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "بَدَأَتْ ___ قَوِيَّةٌ بَيْنَ الطَّالِبَيْنِ.",
+          "answer": "صَدَاقَةٌ",
+          "hint": "friendship"
+        },
+        {
+          "sentence": "___ جَدِيدٌ يَعْمَلُ مَعَنَا.",
+          "answer": "زَمِيلٌ",
+          "hint": "colleague"
+        },
+        {
+          "sentence": "سَاعَدَنَا ___ كَرِيمٌ فِي النَّقْلِ.",
+          "answer": "جَارٌ",
+          "hint": "neighbor"
+        },
+        {
+          "sentence": "هِيَ ___ قَدِيمَةٌ مِنَ الْجَامِعَةِ.",
+          "answer": "مَعْرِفَةٌ",
+          "hint": "acquaintance"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "items": [
+        {
+          "question": "What does ‘صَدَاقَةٌ’ mean?",
+          "options": [
+            "colleague",
+            "friendship",
+            "neighbor",
+            "acquaintance"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What does ‘زَمِيلٌ’ mean?",
+          "options": [
+            "friendship",
+            "colleague",
+            "neighbor",
+            "acquaintance"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What does ‘جَارٌ’ mean?",
+          "options": [
+            "friendship",
+            "neighbor",
+            "colleague",
+            "acquaintance"
+          ],
+          "answer": 1
+        }
+      ]
+    }
+  ]
+}

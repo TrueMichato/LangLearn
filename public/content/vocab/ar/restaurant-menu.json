@@ -1,0 +1,183 @@
+{
+  "id": "restaurant-menu",
+  "words": [
+    {
+      "word": "قَائِمَةُ الطَّعَامِ",
+      "reading": "qāʾimatu ṭ-ṭaʿāmi",
+      "meaning": "menu / food list",
+      "example": "قَرَأْتُ قَائِمَةَ الطَّعَامِ قَبْلَ أَنْ أَطْلُبَ.",
+      "exampleMeaning": "I read the menu before ordering."
+    },
+    {
+      "word": "الْمُقَبِّلَاتُ",
+      "reading": "al-muqabbilātu",
+      "meaning": "appetizers",
+      "example": "طَلَبْنَا الْمُقَبِّلَاتِ مَعَ الْعَصِيرِ.",
+      "exampleMeaning": "We ordered appetizers with the juice."
+    },
+    {
+      "word": "الطَّبَقُ الرَّئِيسِيُّ",
+      "reading": "aṭ-ṭabaqu r-raʾīsiyyu",
+      "meaning": "main dish",
+      "example": "الطَّبَقُ الرَّئِيسِيُّ هُنَا سَمَكٌ مَشْوِيٌّ.",
+      "exampleMeaning": "The main dish here is grilled fish."
+    },
+    {
+      "word": "طَبَقُ الْيَوْمِ",
+      "reading": "ṭabaqu l-yawmi",
+      "meaning": "dish of the day",
+      "example": "سَأَلَ السَّائِحُ عَنْ طَبَقِ الْيَوْمِ.",
+      "exampleMeaning": "The tourist asked about the dish of the day."
+    },
+    {
+      "word": "الْحَسَاءُ",
+      "reading": "al-ḥasāʾu",
+      "meaning": "soup",
+      "example": "الْحَسَاءُ سَاخِنٌ وَلَذِيذٌ جِدًّا.",
+      "exampleMeaning": "The soup is hot and very delicious."
+    },
+    {
+      "word": "السَّلَطَةُ",
+      "reading": "as-salaṭatu",
+      "meaning": "salad",
+      "example": "أُفَضِّلُ السَّلَطَةَ بِزَيْتِ الزَّيْتُونِ.",
+      "exampleMeaning": "I prefer the salad with olive oil."
+    },
+    {
+      "word": "مَشْوِيٌّ",
+      "reading": "mashwiyyun",
+      "meaning": "grilled",
+      "example": "هٰذَا الدَّجَاجُ مَشْوِيٌّ عَلَى الْفَحْمِ.",
+      "exampleMeaning": "This chicken is grilled over charcoal."
+    },
+    {
+      "word": "مَقْلِيٌّ",
+      "reading": "maqliyyun",
+      "meaning": "fried",
+      "example": "لَا أُرِيدُ طَعَامًا مَقْلِيًّا اللَّيْلَةَ.",
+      "exampleMeaning": "I do not want fried food tonight."
+    },
+    {
+      "word": "نَبَاتِيٌّ",
+      "reading": "nabātiyyun",
+      "meaning": "vegetarian",
+      "example": "هَلْ عِنْدَكُمْ خِيَارٌ نَبَاتِيٌّ؟",
+      "exampleMeaning": "Do you have a vegetarian option?"
+    },
+    {
+      "word": "حَارٌّ",
+      "reading": "ḥārrun",
+      "meaning": "spicy / hot",
+      "example": "هٰذَا الْفُلْفُلُ حَارٌّ جِدًّا.",
+      "exampleMeaning": "This pepper is very spicy."
+    },
+    {
+      "word": "خَالٍ مِنَ اللَّحْمِ",
+      "reading": "khālin mina l-laḥmi",
+      "meaning": "meat-free",
+      "example": "أَبْحَثُ عَنْ طَبَقٍ خَالٍ مِنَ اللَّحْمِ.",
+      "exampleMeaning": "I am looking for a meat-free dish."
+    },
+    {
+      "word": "سِعْرُ الطَّبَقِ",
+      "reading": "siʿru ṭ-ṭabaqi",
+      "meaning": "price of the dish",
+      "example": "سِعْرُ الطَّبَقِ مَكْتُوبٌ بِجَانِبِهِ.",
+      "exampleMeaning": "The price of the dish is written beside it."
+    },
+    {
+      "word": "الْحِصَّةُ",
+      "reading": "al-ḥiṣṣatu",
+      "meaning": "portion / serving",
+      "example": "الْحِصَّةُ كَبِيرَةٌ وَتَكْفِي شَخْصَيْنِ.",
+      "exampleMeaning": "The portion is large and enough for two people."
+    },
+    {
+      "word": "الصَّلْصَةُ",
+      "reading": "aṣ-ṣalṣatu",
+      "meaning": "sauce",
+      "example": "الصَّلْصَةُ حَامِضَةٌ قَلِيلًا.",
+      "exampleMeaning": "The sauce is a little sour."
+    },
+    {
+      "word": "الْحَلَوَى",
+      "reading": "al-ḥalwā",
+      "meaning": "dessert / sweets",
+      "example": "بَعْدَ الْعَشَاءِ طَلَبْنَا الْحَلَوَى.",
+      "exampleMeaning": "After dinner we ordered dessert."
+    },
+    {
+      "word": "الْفَاتُورَةُ",
+      "reading": "al-fātūratu",
+      "meaning": "bill / check",
+      "example": "مِنْ فَضْلِكَ، أَحْضِرِ الْفَاتُورَةَ.",
+      "exampleMeaning": "Please bring the bill."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "___ طَوِيلَةٌ وَمُفَصَّلَةٌ.",
+          "answer": "قَائِمَةُ الطَّعَامِ",
+          "hint": "menu / food list"
+        },
+        {
+          "sentence": "___ لَذِيذَةٌ فِي هٰذَا الْمَطْعَمِ.",
+          "answer": "الْمُقَبِّلَاتُ",
+          "hint": "appetizers"
+        },
+        {
+          "sentence": "___ هُنَا سَمَكٌ مَشْوِيٌّ.",
+          "answer": "الطَّبَقُ الرَّئِيسِيُّ",
+          "hint": "main dish"
+        },
+        {
+          "sentence": "___ يَتَغَيَّرُ كُلَّ يَوْمٍ.",
+          "answer": "طَبَقُ الْيَوْمِ",
+          "hint": "dish of the day"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "items": [
+        {
+          "question": "What does ‘قَائِمَةُ الطَّعَامِ’ mean?",
+          "options": [
+            "appetizers",
+            "menu / food list",
+            "main dish",
+            "dish of the day"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What does ‘الْمُقَبِّلَاتُ’ mean?",
+          "options": [
+            "menu / food list",
+            "appetizers",
+            "main dish",
+            "dish of the day"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What does ‘الطَّبَقُ الرَّئِيسِيُّ’ mean?",
+          "options": [
+            "menu / food list",
+            "main dish",
+            "appetizers",
+            "dish of the day"
+          ],
+          "answer": 1
+        }
+      ]
+    }
+  ]
+}

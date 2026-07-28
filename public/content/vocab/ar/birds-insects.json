@@ -1,0 +1,183 @@
+{
+  "id": "birds-insects",
+  "words": [
+    {
+      "word": "طَائِرٌ",
+      "reading": "ṭāʾirun",
+      "meaning": "bird",
+      "example": "طَائِرٌ صَغِيرٌ يُغَرِّدُ فَوْقَ الشَّجَرَةِ.",
+      "exampleMeaning": "A small bird sings above the tree."
+    },
+    {
+      "word": "عُصْفُورٌ",
+      "reading": "ʿuṣfūrun",
+      "meaning": "sparrow",
+      "example": "عُصْفُورٌ بُنِّيٌّ يَبْحَثُ عَنْ حَبَّاتٍ.",
+      "exampleMeaning": "A brown sparrow searches for grains."
+    },
+    {
+      "word": "حَمَامَةٌ",
+      "reading": "ḥamāmatun",
+      "meaning": "dove / pigeon",
+      "example": "حَمَامَةٌ بَيْضَاءُ طَارَتْ فَوْقَ السَّاحَةِ.",
+      "exampleMeaning": "A white dove flew above the square."
+    },
+    {
+      "word": "نَسْرٌ",
+      "reading": "nasrun",
+      "meaning": "eagle / vulture",
+      "example": "نَسْرٌ كَبِيرٌ يُحَلِّقُ فَوْقَ الْجَبَلِ.",
+      "exampleMeaning": "A large eagle soars above the mountain."
+    },
+    {
+      "word": "صَقْرٌ",
+      "reading": "ṣaqrun",
+      "meaning": "falcon",
+      "example": "رَأَى الصَّيَّادُ صَقْرًا سَرِيعًا فِي السَّمَاءِ.",
+      "exampleMeaning": "The hunter saw a fast falcon in the sky."
+    },
+    {
+      "word": "بُومَةٌ",
+      "reading": "būmatun",
+      "meaning": "owl",
+      "example": "تَسْهَرُ بُومَةٌ فِي اللَّيْلِ الطَّوِيلِ.",
+      "exampleMeaning": "An owl stays awake in the long night."
+    },
+    {
+      "word": "بَطَّةٌ",
+      "reading": "baṭṭatun",
+      "meaning": "duck",
+      "example": "تَسْبَحُ بَطَّةٌ فِي الْبُحَيْرَةِ الْهَادِئَةِ.",
+      "exampleMeaning": "A duck swims in the calm lake."
+    },
+    {
+      "word": "دَجَاجَةٌ",
+      "reading": "dajājatun",
+      "meaning": "chicken / hen",
+      "example": "بَاضَتْ دَجَاجَةٌ فِي الْقُفْصِ الصَّغِيرِ.",
+      "exampleMeaning": "A hen laid an egg in the small coop."
+    },
+    {
+      "word": "فَرَاشَةٌ",
+      "reading": "farāshatun",
+      "meaning": "butterfly",
+      "example": "حَطَّتْ فَرَاشَةٌ مُلَوَّنَةٌ عَلَى الزَّهْرَةِ.",
+      "exampleMeaning": "A colorful butterfly landed on the flower."
+    },
+    {
+      "word": "نَحْلَةٌ",
+      "reading": "naḥlatun",
+      "meaning": "bee",
+      "example": "تَجْمَعُ نَحْلَةٌ الرَّحِيقَ مِنَ الْأَزْهَارِ.",
+      "exampleMeaning": "A bee gathers nectar from flowers."
+    },
+    {
+      "word": "نَمْلَةٌ",
+      "reading": "namlatun",
+      "meaning": "ant",
+      "example": "تَحْمِلُ نَمْلَةٌ حَبَّةً أَكْبَرَ مِنْهَا.",
+      "exampleMeaning": "An ant carries a grain larger than itself."
+    },
+    {
+      "word": "بَعُوضَةٌ",
+      "reading": "baʿūḍatun",
+      "meaning": "mosquito",
+      "example": "أَزْعَجَتْ بَعُوضَةٌ النَّائِمَ فِي الصَّيْفِ.",
+      "exampleMeaning": "A mosquito annoyed the sleeper in summer."
+    },
+    {
+      "word": "ذُبَابَةٌ",
+      "reading": "dhubābatun",
+      "meaning": "fly",
+      "example": "دَخَلَتْ ذُبَابَةٌ مِنَ النَّافِذَةِ الْمَفْتُوحَةِ.",
+      "exampleMeaning": "A fly entered through the open window."
+    },
+    {
+      "word": "جَرَادَةٌ",
+      "reading": "jarādatun",
+      "meaning": "locust / grasshopper",
+      "example": "قَفَزَتْ جَرَادَةٌ بَيْنَ الْأَعْشَابِ.",
+      "exampleMeaning": "A grasshopper jumped among the grasses."
+    },
+    {
+      "word": "خُنْفُسَاءُ",
+      "reading": "khunfusāʾu",
+      "meaning": "beetle",
+      "example": "تَخْتَبِئُ خُنْفُسَاءُ تَحْتَ حَجَرٍ صَغِيرٍ.",
+      "exampleMeaning": "A beetle hides under a small stone."
+    },
+    {
+      "word": "يَرَقَةٌ",
+      "reading": "yaraqah",
+      "meaning": "larva / caterpillar",
+      "example": "تَتَحَوَّلُ يَرَقَةٌ إِلَى فَرَاشَةٍ جَمِيلَةٍ.",
+      "exampleMeaning": "A caterpillar turns into a beautiful butterfly."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "___ صَغِيرٌ يُغَرِّدُ فَوْقَ الشَّجَرَةِ.",
+          "answer": "طَائِرٌ",
+          "hint": "bird"
+        },
+        {
+          "sentence": "___ بُنِّيٌّ يَبْحَثُ عَنْ حَبَّاتٍ.",
+          "answer": "عُصْفُورٌ",
+          "hint": "sparrow"
+        },
+        {
+          "sentence": "___ بَيْضَاءُ طَارَتْ فَوْقَ السَّاحَةِ.",
+          "answer": "حَمَامَةٌ",
+          "hint": "dove / pigeon"
+        },
+        {
+          "sentence": "___ كَبِيرٌ يُحَلِّقُ فَوْقَ الْجَبَلِ.",
+          "answer": "نَسْرٌ",
+          "hint": "eagle / vulture"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "items": [
+        {
+          "question": "What does ‘طَائِرٌ’ mean?",
+          "options": [
+            "sparrow",
+            "bird",
+            "dove / pigeon",
+            "eagle / vulture"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What does ‘عُصْفُورٌ’ mean?",
+          "options": [
+            "dove / pigeon",
+            "sparrow",
+            "eagle / vulture",
+            "falcon"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What does ‘حَمَامَةٌ’ mean?",
+          "options": [
+            "eagle / vulture",
+            "dove / pigeon",
+            "falcon",
+            "owl"
+          ],
+          "answer": 1
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,183 @@
+{
+  "id": "health-doctor",
+  "words": [
+    {
+      "word": "صِحَّةٌ",
+      "reading": "ṣiḥḥatun",
+      "meaning": "health",
+      "example": "صِحَّةٌ جَيِّدَةٌ نِعْمَةٌ.",
+      "exampleMeaning": "Good health is a blessing."
+    },
+    {
+      "word": "مَرَضٌ",
+      "reading": "maraḍun",
+      "meaning": "illness",
+      "example": "مَرَضٌ خَفِيفٌ لَا يُخِيفُ.",
+      "exampleMeaning": "A mild illness is not frightening."
+    },
+    {
+      "word": "طَبِيبٌ",
+      "reading": "ṭabībun",
+      "meaning": "doctor",
+      "example": "طَبِيبٌ مَاهِرٌ يَفْحَصُ الْمَرِيضَ.",
+      "exampleMeaning": "A skilled doctor examines the patient."
+    },
+    {
+      "word": "عِيَادَةٌ",
+      "reading": "ʿiyādatun",
+      "meaning": "clinic",
+      "example": "عِيَادَةٌ قَرِيبَةٌ مِنَ الْبَيْتِ.",
+      "exampleMeaning": "A clinic is near the house."
+    },
+    {
+      "word": "مُسْتَشْفًى",
+      "reading": "mustashfan",
+      "meaning": "hospital",
+      "example": "الْمُسْتَشْفَى مَفْتُوحٌ دَائِمًا.",
+      "exampleMeaning": "The hospital is always open."
+    },
+    {
+      "word": "دَوَاءٌ",
+      "reading": "dawāʾun",
+      "meaning": "medicine",
+      "example": "الدَّوَاءُ عَلَى الرَّفِّ.",
+      "exampleMeaning": "The medicine is on the shelf."
+    },
+    {
+      "word": "وَصْفَةٌ",
+      "reading": "waṣfatun",
+      "meaning": "prescription",
+      "example": "الْوَصْفَةُ مِنَ الطَّبِيبِ.",
+      "exampleMeaning": "The prescription is from the doctor."
+    },
+    {
+      "word": "أَلَمٌ",
+      "reading": "ʾalamun",
+      "meaning": "pain",
+      "example": "عِنْدِي أَلَمٌ فِي الظَّهْرِ.",
+      "exampleMeaning": "I have pain in my back."
+    },
+    {
+      "word": "صُدَاعٌ",
+      "reading": "ṣudāʿun",
+      "meaning": "headache",
+      "example": "الصُّدَاعُ قَوِيٌّ الْيَوْمَ.",
+      "exampleMeaning": "The headache is strong today."
+    },
+    {
+      "word": "حُمَّى",
+      "reading": "ḥummā",
+      "meaning": "fever",
+      "example": "الْحُمَّى عَالِيَةٌ.",
+      "exampleMeaning": "The fever is high."
+    },
+    {
+      "word": "سُعَالٌ",
+      "reading": "suʿālun",
+      "meaning": "cough",
+      "example": "السُّعَالُ مُزْعِجٌ.",
+      "exampleMeaning": "The cough is annoying."
+    },
+    {
+      "word": "زُكَامٌ",
+      "reading": "zukāmun",
+      "meaning": "cold / sniffles",
+      "example": "الزُّكَامُ شَائِعٌ فِي الشِّتَاءِ.",
+      "exampleMeaning": "A cold is common in winter."
+    },
+    {
+      "word": "فَحْصٌ",
+      "reading": "faḥṣun",
+      "meaning": "examination",
+      "example": "الْفَحْصُ سَرِيعٌ.",
+      "exampleMeaning": "The examination is quick."
+    },
+    {
+      "word": "حَقْنَةٌ",
+      "reading": "ḥaqnatun",
+      "meaning": "injection",
+      "example": "الْحَقْنَةُ صَغِيرَةٌ.",
+      "exampleMeaning": "The injection is small."
+    },
+    {
+      "word": "ضِمَادٌ",
+      "reading": "ḍimādun",
+      "meaning": "bandage",
+      "example": "الضِّمَادُ عَلَى الْيَدِ.",
+      "exampleMeaning": "The bandage is on the hand."
+    },
+    {
+      "word": "سَيَّارَةُ إِسْعَافٍ",
+      "reading": "sayyāratu ʾisʿāfin",
+      "meaning": "ambulance",
+      "example": "سَيَّارَةُ إِسْعَافٍ وَصَلَتْ بِسُرْعَةٍ.",
+      "exampleMeaning": "An ambulance arrived quickly."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "___ جَيِّدَةٌ نِعْمَةٌ.",
+          "answer": "صِحَّةٌ",
+          "hint": "health"
+        },
+        {
+          "sentence": "___ خَفِيفٌ لَا يُخِيفُ.",
+          "answer": "مَرَضٌ",
+          "hint": "illness"
+        },
+        {
+          "sentence": "___ مَاهِرٌ يَفْحَصُ الْمَرِيضَ.",
+          "answer": "طَبِيبٌ",
+          "hint": "doctor"
+        },
+        {
+          "sentence": "___ قَرِيبَةٌ مِنَ الْبَيْتِ.",
+          "answer": "عِيَادَةٌ",
+          "hint": "clinic"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "items": [
+        {
+          "question": "What does ‘صِحَّةٌ’ mean?",
+          "options": [
+            "illness",
+            "health",
+            "doctor",
+            "clinic"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What does ‘مَرَضٌ’ mean?",
+          "options": [
+            "doctor",
+            "illness",
+            "clinic",
+            "hospital"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What does ‘طَبِيبٌ’ mean?",
+          "options": [
+            "clinic",
+            "doctor",
+            "hospital",
+            "medicine"
+          ],
+          "answer": 1
+        }
+      ]
+    }
+  ]
+}

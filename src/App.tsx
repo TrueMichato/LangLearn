@@ -23,8 +23,10 @@ const TestsPage = lazy(() => import('./pages/Tests'));
 const DailyChallengePage = lazy(() => import('./pages/DailyChallenge'));
 const ClozePracticePage = lazy(() => import('./pages/ClozePractice'));
 const MinimalPairsPage = lazy(() => import('./pages/MinimalPairs'));
+const NumberPracticePage = lazy(() => import('./pages/NumberPractice'));
 const TranslationPracticePage = lazy(() => import('./pages/TranslationPractice'));
 const LyricsPage = lazy(() => import('./pages/Lyrics'));
+const DialectsPage = lazy(() => import('./pages/Dialects'));
 
 export default function App() {
   const onboardingComplete = useSettingsStore((s) => s.onboardingComplete);
@@ -52,6 +54,8 @@ export default function App() {
             <Route path="/daily-challenge" element={<DailyChallengePage />} />
             <Route path="/cloze-practice" element={<ClozePracticePage />} />
             <Route path="/minimal-pairs" element={<MinimalPairsPage />} />
+            <Route path="/number-practice" element={<NumberPracticePage />} />
+            <Route path="/dialects" element={<DialectsPage />} />
             <Route path="/lyrics" element={<LyricsPage />} />
             <Route path="/translation" element={<TranslationPracticePage />} />
           </Route>

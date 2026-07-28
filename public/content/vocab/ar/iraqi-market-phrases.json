@@ -1,0 +1,159 @@
+{
+  "id": "iraqi-market-phrases",
+  "words": [
+    {
+      "word": "شْلُونَكْ",
+      "reading": "shlōnak",
+      "meaning": "how are you?",
+      "example": "شْلُونَكْ يَا عَلِي؟",
+      "exampleMeaning": "How are you, Ali?"
+    },
+    {
+      "word": "عِفْيَة",
+      "reading": "ʿifya",
+      "meaning": "please / good job",
+      "example": "عِفْيَة، نَزِّلْ السِّعِرْ شْوَيَّة.",
+      "exampleMeaning": "Please, lower the price a little."
+    },
+    {
+      "word": "زَيْنْ",
+      "reading": "zēn",
+      "meaning": "good / okay",
+      "example": "السِّعِرْ زَيْنْ بَعْدَ التَّخْفِيضْ.",
+      "exampleMeaning": "The price is good after the discount."
+    },
+    {
+      "word": "كِلِّشْ",
+      "reading": "killiš",
+      "meaning": "very",
+      "example": "هَذَا الْقَمِيصْ كِلِّشْ حِلْوْ.",
+      "exampleMeaning": "This shirt is very nice."
+    },
+    {
+      "word": "شْقَدْ",
+      "reading": "shgad",
+      "meaning": "how much",
+      "example": "شْقَدْ سِعْرُ هَذَا؟",
+      "exampleMeaning": "How much is this?"
+    },
+    {
+      "word": "غَالِي",
+      "reading": "ghāli",
+      "meaning": "expensive",
+      "example": "هَذَا الْعِطْرْ غَالِي شْوَيَّة.",
+      "exampleMeaning": "This perfume is a little expensive."
+    },
+    {
+      "word": "رَخِيصْ",
+      "reading": "rakhīṣ",
+      "meaning": "cheap",
+      "example": "هَذَا الدُّكَّانْ رَخِيصْ وَمَعْرُوفْ.",
+      "exampleMeaning": "This shop is cheap and well known."
+    },
+    {
+      "word": "آخِرْ سِعِرْ",
+      "reading": "ākhir siʿir",
+      "meaning": "final price",
+      "example": "هَذَا آخِرْ سِعِرْ عِنْدِي.",
+      "exampleMeaning": "This is my final price."
+    },
+    {
+      "word": "نَزِّلْ شْوَيَّة",
+      "reading": "nazzil shwayya",
+      "meaning": "lower it a little",
+      "example": "نَزِّلْ شْوَيَّة، عِفْيَة.",
+      "exampleMeaning": "Lower it a little, please."
+    },
+    {
+      "word": "أُرِيدْ هَذَا",
+      "reading": "urīd hāḏa",
+      "meaning": "I want this",
+      "example": "أُرِيدْ هَذَا التَّمْرْ الطَّازَجْ.",
+      "exampleMeaning": "I want this fresh date fruit."
+    },
+    {
+      "word": "عِنْدَكُمْ؟",
+      "reading": "ʿindakum?",
+      "meaning": "do you have?",
+      "example": "عِنْدَكُمْ خُبْزْ حَارّْ؟",
+      "exampleMeaning": "Do you have hot bread?"
+    },
+    {
+      "word": "مَا عَدْنَا",
+      "reading": "mā ʿadnā",
+      "meaning": "we do not have",
+      "example": "مَا عَدْنَا هَذَا الْمَقَاسْ الْيَوْمْ.",
+      "exampleMeaning": "We do not have this size today."
+    },
+    {
+      "word": "أَكُو",
+      "reading": "aku",
+      "meaning": "there is / there are",
+      "example": "أَكُو خُضْرَةْ طَازَجَةْ بِالسُّوقْ.",
+      "exampleMeaning": "There are fresh vegetables in the market."
+    },
+    {
+      "word": "مَاكُو",
+      "reading": "māku",
+      "meaning": "there is not",
+      "example": "مَاكُو تَخْفِيضْ عَلَى هَذَا.",
+      "exampleMeaning": "There is no discount on this."
+    },
+    {
+      "word": "حَاسِبْنِي",
+      "reading": "ḥāsibnī",
+      "meaning": "ring me up / charge me",
+      "example": "حَاسِبْنِي عَلَى هَذِهِ الْأَغْرَاضْ.",
+      "exampleMeaning": "Ring me up for these items."
+    },
+    {
+      "word": "بِالْعَافِيَةْ",
+      "reading": "bil-ʿāfya",
+      "meaning": "enjoy it / bon appétit",
+      "example": "بِالْعَافِيَةْ عَلَيْكُمْ الْفَطُورْ.",
+      "exampleMeaning": "Enjoy your breakfast."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "___ يَا عَلِي؟",
+          "answer": "شْلُونَكْ",
+          "hint": "how are you?"
+        },
+        {
+          "sentence": "___ سِعْرُ هَذَا؟",
+          "answer": "شْقَدْ",
+          "hint": "how much"
+        },
+        {
+          "sentence": "___، عِفْيَة.",
+          "answer": "نَزِّلْ شْوَيَّة",
+          "hint": "lower it a little"
+        },
+        {
+          "sentence": "___ التَّمْرْ الطَّازَجْ.",
+          "answer": "أُرِيدْ هَذَا",
+          "hint": "I want this"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "In Iraqi Arabic, what does ‘أَكُو’ mean?",
+      "options": [
+        "there is / there are",
+        "final price",
+        "expensive",
+        "ring me up"
+      ],
+      "answer": 0
+    }
+  ]
+}

@@ -1,0 +1,183 @@
+{
+  "id": "cooking-verbs",
+  "words": [
+    {
+      "word": "يَغْسِلُ",
+      "reading": "yaghsilu",
+      "meaning": "to wash",
+      "example": "يَغْسِلُ الطَّبَّاخُ الْخَضْرَوَاتِ قَبْلَ الطَّهْيِ.",
+      "exampleMeaning": "The cook washes the vegetables before cooking."
+    },
+    {
+      "word": "يُقَشِّرُ",
+      "reading": "yuqashshiru",
+      "meaning": "to peel",
+      "example": "يُقَشِّرُ أَخِي الْبَطَاطِسَ بِسِكِّينٍ صَغِيرٍ.",
+      "exampleMeaning": "My brother peels the potatoes with a small knife."
+    },
+    {
+      "word": "يُقَطِّعُ",
+      "reading": "yuqaṭṭiʿu",
+      "meaning": "to cut / chop",
+      "example": "يُقَطِّعُ الطَّبَّاخُ الْجَزَرَ إِلَى مُكَعَّبَاتٍ.",
+      "exampleMeaning": "The cook cuts the carrots into cubes."
+    },
+    {
+      "word": "يَفْرُمُ",
+      "reading": "yafrumu",
+      "meaning": "to mince / finely chop",
+      "example": "يَفْرُمُ الْمُسَاعِدُ الْبَصَلَ نَاعِمًا.",
+      "exampleMeaning": "The assistant finely chops the onion."
+    },
+    {
+      "word": "يَخْلِطُ",
+      "reading": "yakhliṭu",
+      "meaning": "to mix",
+      "example": "يَخْلِطُ الطِّفْلُ الدَّقِيقَ مَعَ الْحَلِيبِ.",
+      "exampleMeaning": "The child mixes the flour with the milk."
+    },
+    {
+      "word": "يَعْجِنُ",
+      "reading": "yaʿjinu",
+      "meaning": "to knead",
+      "example": "تَعْجِنُ الْخَبَّازَةُ الْعَجِينَ بِقُوَّةٍ.",
+      "exampleMeaning": "The baker kneads the dough firmly."
+    },
+    {
+      "word": "يَغْلِي",
+      "reading": "yaghlī",
+      "meaning": "to boil",
+      "example": "يَغْلِي الْمَاءُ فِي الْقِدْرِ الْكَبِيرِ.",
+      "exampleMeaning": "The water boils in the large pot."
+    },
+    {
+      "word": "يَقْلِي",
+      "reading": "yaqlī",
+      "meaning": "to fry",
+      "example": "يَقْلِي سَامِي السَّمَكَ فِي زَيْتٍ حَارٍّ.",
+      "exampleMeaning": "Sami fries the fish in hot oil."
+    },
+    {
+      "word": "يَشْوِي",
+      "reading": "yashwī",
+      "meaning": "to grill / roast",
+      "example": "يَشْوِي الْأَبُ اللَّحْمَ فَوْقَ الْفَحْمِ.",
+      "exampleMeaning": "The father grills the meat over charcoal."
+    },
+    {
+      "word": "يَخْبِزُ",
+      "reading": "yakhbizu",
+      "meaning": "to bake",
+      "example": "تَخْبِزُ الْأُمُّ خُبْزًا طَازَجًا كُلَّ صَبَاحٍ.",
+      "exampleMeaning": "The mother bakes fresh bread every morning."
+    },
+    {
+      "word": "يُقَلِّبُ",
+      "reading": "yuqallibu",
+      "meaning": "to stir / turn over",
+      "example": "يُقَلِّبُ الطَّاهِي الْحَسَاءَ بِمِلْعَقَةٍ خَشَبِيَّةٍ.",
+      "exampleMeaning": "The chef stirs the soup with a wooden spoon."
+    },
+    {
+      "word": "يَسْكُبُ",
+      "reading": "yaskubu",
+      "meaning": "to pour",
+      "example": "يَسْكُبُ النَّادِلُ الْعَصِيرَ فِي الْأَكْوَابِ.",
+      "exampleMeaning": "The waiter pours the juice into the cups."
+    },
+    {
+      "word": "يُضِيفُ",
+      "reading": "yuḍīfu",
+      "meaning": "to add",
+      "example": "يُضِيفُ الطَّبَّاخُ الْمِلْحَ فِي النِّهَايَةِ.",
+      "exampleMeaning": "The cook adds the salt at the end."
+    },
+    {
+      "word": "يَتَذَوَّقُ",
+      "reading": "yatadhawwaqu",
+      "meaning": "to taste",
+      "example": "يَتَذَوَّقُ الطَّاهِي الصَّلْصَةَ قَبْلَ التَّقْدِيمِ.",
+      "exampleMeaning": "The chef tastes the sauce before serving."
+    },
+    {
+      "word": "يُبَرِّدُ",
+      "reading": "yubarridu",
+      "meaning": "to cool",
+      "example": "يُبَرِّدُ الْخَبَّازُ الْكَعْكَ عَلَى الرَّفِّ.",
+      "exampleMeaning": "The baker cools the cake on the rack."
+    },
+    {
+      "word": "يُسَخِّنُ",
+      "reading": "yusakhkhinu",
+      "meaning": "to heat",
+      "example": "يُسَخِّنُ عُمَرُ الْحَسَاءَ قَبْلَ الْعَشَاءِ.",
+      "exampleMeaning": "Omar heats the soup before dinner."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "___ الطَّبَّاخُ الْخَضْرَوَاتِ قَبْلَ الطَّهْيِ.",
+          "answer": "يَغْسِلُ",
+          "hint": "to wash"
+        },
+        {
+          "sentence": "___ أَخِي الْبَطَاطِسَ بِسِكِّينٍ صَغِيرٍ.",
+          "answer": "يُقَشِّرُ",
+          "hint": "to peel"
+        },
+        {
+          "sentence": "___ الطَّبَّاخُ الْجَزَرَ إِلَى مُكَعَّبَاتٍ.",
+          "answer": "يُقَطِّعُ",
+          "hint": "to cut / chop"
+        },
+        {
+          "sentence": "___ الْمُسَاعِدُ الْبَصَلَ نَاعِمًا.",
+          "answer": "يَفْرُمُ",
+          "hint": "to mince / finely chop"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "items": [
+        {
+          "question": "What does ‘يَغْسِلُ’ mean?",
+          "options": [
+            "to peel",
+            "to wash",
+            "to cut / chop",
+            "to mince / finely chop"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What does ‘يُقَشِّرُ’ mean?",
+          "options": [
+            "to cut / chop",
+            "to peel",
+            "to mince / finely chop",
+            "to mix"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What does ‘يُقَطِّعُ’ mean?",
+          "options": [
+            "to mince / finely chop",
+            "to cut / chop",
+            "to mix",
+            "to knead"
+          ],
+          "answer": 1
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,185 @@
+{
+  "id": "food",
+  "words": [
+    {
+      "word": "pâine",
+      "reading": "puh-ee-neh",
+      "meaning": "bread",
+      "example": "Cumpăr pâine proaspătă dimineața.",
+      "exampleMeaning": "I buy fresh bread in the morning."
+    },
+    {
+      "word": "apă",
+      "reading": "ah-puh",
+      "meaning": "water",
+      "example": "Beau apă rece după sport.",
+      "exampleMeaning": "I drink cold water after sports."
+    },
+    {
+      "word": "lapte",
+      "reading": "lahp-teh",
+      "meaning": "milk",
+      "example": "Copilul bea lapte la micul dejun.",
+      "exampleMeaning": "The child drinks milk at breakfast."
+    },
+    {
+      "word": "cafea",
+      "reading": "kah-feh-ah",
+      "meaning": "coffee",
+      "example": "Vreau o cafea fără zahăr.",
+      "exampleMeaning": "I want a coffee without sugar."
+    },
+    {
+      "word": "ceai",
+      "reading": "chay",
+      "meaning": "tea",
+      "example": "Un ceai cald mă liniștește seara.",
+      "exampleMeaning": "A warm tea calms me in the evening."
+    },
+    {
+      "word": "brânză",
+      "reading": "bruhn-zuh",
+      "meaning": "cheese",
+      "example": "Pun brânză pe pâine.",
+      "exampleMeaning": "I put cheese on bread."
+    },
+    {
+      "word": "ou",
+      "reading": "oh-oo",
+      "meaning": "egg",
+      "example": "Fierb un ou pentru salată.",
+      "exampleMeaning": "I boil an egg for the salad."
+    },
+    {
+      "word": "carne",
+      "reading": "kahr-neh",
+      "meaning": "meat",
+      "example": "Nu mănânc carne în fiecare zi.",
+      "exampleMeaning": "I do not eat meat every day."
+    },
+    {
+      "word": "pește",
+      "reading": "pesh-teh",
+      "meaning": "fish",
+      "example": "Pește la grătar miroase bine.",
+      "exampleMeaning": "Grilled fish smells good."
+    },
+    {
+      "word": "supă",
+      "reading": "soo-puh",
+      "meaning": "soup",
+      "example": "O supă de legume este sănătoasă.",
+      "exampleMeaning": "A vegetable soup is healthy."
+    },
+    {
+      "word": "salată",
+      "reading": "sah-lah-tuh",
+      "meaning": "salad",
+      "example": "Fac salată cu roșii și castraveți.",
+      "exampleMeaning": "I make salad with tomatoes and cucumbers."
+    },
+    {
+      "word": "măr",
+      "reading": "muhr",
+      "meaning": "apple",
+      "example": "Un măr roșu este pe masă.",
+      "exampleMeaning": "A red apple is on the table."
+    },
+    {
+      "word": "banană",
+      "reading": "bah-nah-nuh",
+      "meaning": "banana",
+      "example": "Mănânc o banană înainte de alergare.",
+      "exampleMeaning": "I eat a banana before running."
+    },
+    {
+      "word": "cartof",
+      "reading": "kahr-tof",
+      "meaning": "potato",
+      "example": "Pun un cartof în supă.",
+      "exampleMeaning": "I put a potato in the soup."
+    },
+    {
+      "word": "zahăr",
+      "reading": "zah-huhr",
+      "meaning": "sugar",
+      "example": "Nu pun zahăr în ceai.",
+      "exampleMeaning": "I do not put sugar in tea."
+    },
+    {
+      "word": "sare",
+      "reading": "sah-reh",
+      "meaning": "salt",
+      "example": "Adaug puțină sare în mâncare.",
+      "exampleMeaning": "I add a little salt to the food."
+    },
+    {
+      "word": "vin",
+      "reading": "veen",
+      "meaning": "wine",
+      "example": "Un pahar de vin merge cu cina.",
+      "exampleMeaning": "A glass of wine goes with dinner."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "Cumpăr ___ proaspătă dimineața.",
+          "answer": "pâine",
+          "hint": "bread"
+        },
+        {
+          "sentence": "Nu pun ___ în ceai.",
+          "answer": "zahăr",
+          "hint": "sugar"
+        },
+        {
+          "sentence": "Pun un ___ în supă.",
+          "answer": "cartof",
+          "hint": "potato"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "items": [
+        {
+          "question": "What does 'apă' mean?",
+          "options": [
+            "milk",
+            "water",
+            "tea",
+            "wine"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "How do you say 'cheese' in Romanian?",
+          "options": [
+            "brânză",
+            "pâine",
+            "sare",
+            "carne"
+          ],
+          "answer": 0
+        },
+        {
+          "question": "What does 'pește' mean?",
+          "options": [
+            "potato",
+            "egg",
+            "fish",
+            "soup"
+          ],
+          "answer": 2
+        }
+      ]
+    }
+  ]
+}

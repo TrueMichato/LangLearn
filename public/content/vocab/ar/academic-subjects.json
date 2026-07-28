@@ -1,0 +1,183 @@
+{
+  "id": "academic-subjects",
+  "words": [
+    {
+      "word": "الرِّيَاضِيَّاتُ",
+      "reading": "ar-riyāḍiyyātu",
+      "meaning": "mathematics",
+      "example": "الرِّيَاضِيَّاتُ تُدَرِّبُ العَقْلَ عَلَى المَنْطِقِ.",
+      "exampleMeaning": "Mathematics trains the mind in logic."
+    },
+    {
+      "word": "الفِيزِيَاءُ",
+      "reading": "al-fīziyāʾu",
+      "meaning": "physics",
+      "example": "الفِيزِيَاءُ تَشْرَحُ حَرَكَةَ الأَجْسَامِ.",
+      "exampleMeaning": "Physics explains the motion of bodies."
+    },
+    {
+      "word": "الكِيمِيَاءُ",
+      "reading": "al-kīmiyāʾu",
+      "meaning": "chemistry",
+      "example": "الكِيمِيَاءُ تَدْرُسُ تَفَاعُلَ المَوَادِّ.",
+      "exampleMeaning": "Chemistry studies the reaction of substances."
+    },
+    {
+      "word": "الأَحْيَاءُ",
+      "reading": "al-ʾaḥyāʾu",
+      "meaning": "biology",
+      "example": "الأَحْيَاءُ تَبْحَثُ فِي الكَائِنَاتِ الحَيَّةِ.",
+      "exampleMeaning": "Biology researches living organisms."
+    },
+    {
+      "word": "التَّارِيخُ",
+      "reading": "at-tārīkhu",
+      "meaning": "history",
+      "example": "التَّارِيخُ يُفَسِّرُ تَطَوُّرَ المُجْتَمَعَاتِ.",
+      "exampleMeaning": "History explains the development of societies."
+    },
+    {
+      "word": "الجُغْرَافِيَا",
+      "reading": "al-jughrāfiyā",
+      "meaning": "geography",
+      "example": "الجُغْرَافِيَا تَدْرُسُ المَكَانَ وَالبِيئَةَ.",
+      "exampleMeaning": "Geography studies place and environment."
+    },
+    {
+      "word": "الأَدَبُ",
+      "reading": "al-ʾadabu",
+      "meaning": "literature",
+      "example": "الأَدَبُ يَفْتَحُ بَابَ الخَيَالِ.",
+      "exampleMeaning": "Literature opens the door of imagination."
+    },
+    {
+      "word": "الفَلْسَفَةُ",
+      "reading": "al-falsafatu",
+      "meaning": "philosophy",
+      "example": "الفَلْسَفَةُ تَطْرَحُ أَسْئِلَةً عَمِيقَةً.",
+      "exampleMeaning": "Philosophy asks deep questions."
+    },
+    {
+      "word": "الاِقْتِصَادُ",
+      "reading": "al-iqtiṣādu",
+      "meaning": "economics",
+      "example": "الاِقْتِصَادُ يُحَلِّلُ الإِنْتَاجَ وَالاِسْتِهْلَاكَ.",
+      "exampleMeaning": "Economics analyzes production and consumption."
+    },
+    {
+      "word": "عِلْمُ النَّفْسِ",
+      "reading": "ʿilmu an-nafsi",
+      "meaning": "psychology",
+      "example": "عِلْمُ النَّفْسِ يَدْرُسُ السُّلُوكَ وَالمَشَاعِرَ.",
+      "exampleMeaning": "Psychology studies behavior and emotions."
+    },
+    {
+      "word": "عِلْمُ الاِجْتِمَاعِ",
+      "reading": "ʿilmu al-ijtimāʿi",
+      "meaning": "sociology",
+      "example": "عِلْمُ الاِجْتِمَاعِ يَفْحَصُ العَلَاقَاتِ بَيْنَ النَّاسِ.",
+      "exampleMeaning": "Sociology examines relationships among people."
+    },
+    {
+      "word": "الهَنْدَسَةُ",
+      "reading": "al-handasatu",
+      "meaning": "engineering",
+      "example": "الهَنْدَسَةُ تَجْمَعُ بَيْنَ العِلْمِ وَالتَّطْبِيقِ.",
+      "exampleMeaning": "Engineering combines science and application."
+    },
+    {
+      "word": "الطِّبُّ",
+      "reading": "aṭ-ṭibbu",
+      "meaning": "medicine",
+      "example": "الطِّبُّ يَحْمِي الصِّحَّةَ وَيُعَالِجُ المَرَضَ.",
+      "exampleMeaning": "Medicine protects health and treats illness."
+    },
+    {
+      "word": "القَانُونُ",
+      "reading": "al-qānūnu",
+      "meaning": "law",
+      "example": "القَانُونُ يُنَظِّمُ الحُقُوقَ وَالوَاجِبَاتِ.",
+      "exampleMeaning": "Law organizes rights and duties."
+    },
+    {
+      "word": "عِلْمُ الحَاسُوبِ",
+      "reading": "ʿilmu al-ḥāsūbi",
+      "meaning": "computer science",
+      "example": "عِلْمُ الحَاسُوبِ يُطَوِّرُ الخَوَارِزْمِيَّاتِ.",
+      "exampleMeaning": "Computer science develops algorithms."
+    },
+    {
+      "word": "التَّرْبِيَةُ",
+      "reading": "at-tarbiyatu",
+      "meaning": "education / pedagogy",
+      "example": "التَّرْبِيَةُ تُحَسِّنُ طُرُقَ التَّعَلُّمِ.",
+      "exampleMeaning": "Education improves methods of learning."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "___ تُدَرِّبُ العَقْلَ عَلَى المَنْطِقِ.",
+          "answer": "الرِّيَاضِيَّاتُ",
+          "hint": "mathematics"
+        },
+        {
+          "sentence": "___ تَشْرَحُ حَرَكَةَ الأَجْسَامِ.",
+          "answer": "الفِيزِيَاءُ",
+          "hint": "physics"
+        },
+        {
+          "sentence": "___ تَدْرُسُ تَفَاعُلَ المَوَادِّ.",
+          "answer": "الكِيمِيَاءُ",
+          "hint": "chemistry"
+        },
+        {
+          "sentence": "___ تَبْحَثُ فِي الكَائِنَاتِ الحَيَّةِ.",
+          "answer": "الأَحْيَاءُ",
+          "hint": "biology"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "items": [
+        {
+          "question": "What does ‘الرِّيَاضِيَّاتُ’ mean?",
+          "options": [
+            "physics",
+            "mathematics",
+            "chemistry",
+            "biology"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What does ‘الفِيزِيَاءُ’ mean?",
+          "options": [
+            "chemistry",
+            "physics",
+            "biology",
+            "history"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What does ‘الكِيمِيَاءُ’ mean?",
+          "options": [
+            "biology",
+            "chemistry",
+            "history",
+            "geography"
+          ],
+          "answer": 1
+        }
+      ]
+    }
+  ]
+}

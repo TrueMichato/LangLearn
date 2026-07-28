@@ -1,0 +1,183 @@
+{
+  "id": "question-connectors",
+  "words": [
+    {
+      "word": "مَنْ",
+      "reading": "man",
+      "meaning": "who",
+      "example": "مَنْ هٰذَا الرَّجُلُ؟",
+      "exampleMeaning": "Who is this man?"
+    },
+    {
+      "word": "مَا",
+      "reading": "mā",
+      "meaning": "what",
+      "example": "مَا هٰذَا الشَّيْءُ؟",
+      "exampleMeaning": "What is this thing?"
+    },
+    {
+      "word": "مَاذَا",
+      "reading": "mādhā",
+      "meaning": "what / what exactly",
+      "example": "مَاذَا تُرِيدُ؟",
+      "exampleMeaning": "What do you want?"
+    },
+    {
+      "word": "أَيْنَ",
+      "reading": "ʾayna",
+      "meaning": "where",
+      "example": "أَيْنَ الْمَكْتَبَةُ؟",
+      "exampleMeaning": "Where is the library?"
+    },
+    {
+      "word": "مَتَى",
+      "reading": "matā",
+      "meaning": "when",
+      "example": "مَتَى يَبْدَأُ الدَّرْسُ؟",
+      "exampleMeaning": "When does the lesson begin?"
+    },
+    {
+      "word": "كَيْفَ",
+      "reading": "kayfa",
+      "meaning": "how",
+      "example": "كَيْفَ تَذْهَبُ إِلَى الْعَمَلِ؟",
+      "exampleMeaning": "How do you go to work?"
+    },
+    {
+      "word": "لِمَاذَا",
+      "reading": "limādhā",
+      "meaning": "why",
+      "example": "لِمَاذَا أَنْتَ حَزِينٌ؟",
+      "exampleMeaning": "Why are you sad?"
+    },
+    {
+      "word": "كَمْ",
+      "reading": "kam",
+      "meaning": "how many / how much",
+      "example": "كَمْ كِتَابًا عِنْدَكَ؟",
+      "exampleMeaning": "How many books do you have?"
+    },
+    {
+      "word": "أَيُّ",
+      "reading": "ʾayyu",
+      "meaning": "which",
+      "example": "أَيُّ قَلَمٍ تُرِيدُ؟",
+      "exampleMeaning": "Which pen do you want?"
+    },
+    {
+      "word": "هَلْ",
+      "reading": "hal",
+      "meaning": "yes/no question marker",
+      "example": "هَلْ أَنْتَ جَاهِزٌ؟",
+      "exampleMeaning": "Are you ready?"
+    },
+    {
+      "word": "وَ",
+      "reading": "wa",
+      "meaning": "and",
+      "example": "أَحْمَدُ وَسَارَةُ فِي الصَّفِّ.",
+      "exampleMeaning": "Ahmad and Sarah are in class."
+    },
+    {
+      "word": "أَوْ",
+      "reading": "ʾaw",
+      "meaning": "or",
+      "example": "تُرِيدُ شَايًا أَوْ قَهْوَةً؟",
+      "exampleMeaning": "Do you want tea or coffee?"
+    },
+    {
+      "word": "لَكِنْ",
+      "reading": "lākin",
+      "meaning": "but",
+      "example": "الْجَوُّ بَارِدٌ لَكِنْ جَمِيلٌ.",
+      "exampleMeaning": "The weather is cold but beautiful."
+    },
+    {
+      "word": "لِأَنَّ",
+      "reading": "li-ʾanna",
+      "meaning": "because",
+      "example": "أَدْرُسُ لِأَنَّ الِامْتِحَانَ قَرِيبٌ.",
+      "exampleMeaning": "I study because the exam is near."
+    },
+    {
+      "word": "إِذَا",
+      "reading": "ʾidhā",
+      "meaning": "if / when",
+      "example": "إِذَا جِئْتَ، نَبْدَأُ.",
+      "exampleMeaning": "If you come, we begin."
+    },
+    {
+      "word": "ثُمَّ",
+      "reading": "thumma",
+      "meaning": "then",
+      "example": "نَأْكُلُ ثُمَّ نَخْرُجُ.",
+      "exampleMeaning": "We eat, then we go out."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "___ هٰذَا الرَّجُلُ؟",
+          "answer": "مَنْ",
+          "hint": "who"
+        },
+        {
+          "sentence": "___ هٰذَا الشَّيْءُ؟",
+          "answer": "مَا",
+          "hint": "what"
+        },
+        {
+          "sentence": "___ تُرِيدُ؟",
+          "answer": "مَاذَا",
+          "hint": "what / what exactly"
+        },
+        {
+          "sentence": "___ الْمَكْتَبَةُ؟",
+          "answer": "أَيْنَ",
+          "hint": "where"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "items": [
+        {
+          "question": "What does ‘مَنْ’ mean?",
+          "options": [
+            "what",
+            "who",
+            "what / what exactly",
+            "where"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What does ‘مَا’ mean?",
+          "options": [
+            "what / what exactly",
+            "what",
+            "where",
+            "when"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What does ‘مَاذَا’ mean?",
+          "options": [
+            "where",
+            "what / what exactly",
+            "when",
+            "how"
+          ],
+          "answer": 1
+        }
+      ]
+    }
+  ]
+}

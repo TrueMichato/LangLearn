@@ -1,0 +1,183 @@
+{
+  "id": "egyptian-food-phrases",
+  "words": [
+    {
+      "word": "لَوْ سَمَحْت",
+      "reading": "law samaḥt",
+      "meaning": "please / excuse me (Egyptian; MSA: min faḍlik)",
+      "example": "لَوْ سَمَحْت، الْحِسَابْ.",
+      "exampleMeaning": "Excuse me, the bill."
+    },
+    {
+      "word": "عَايِزْ",
+      "reading": "ʿāyiz",
+      "meaning": "I want / he wants (Egyptian; MSA: urīdu / yurīdu)",
+      "example": "أَنَا عَايِزْ شَايْ بِالنَّعْنَاع.",
+      "exampleMeaning": "I want mint tea."
+    },
+    {
+      "word": "الْحِسَابْ",
+      "reading": "il-ḥisāb",
+      "meaning": "the bill (Egyptian; MSA: al-fātūra)",
+      "example": "الْحِسَابْ لَوْ سَمَحْت.",
+      "exampleMeaning": "The bill, please."
+    },
+    {
+      "word": "مِنْيُو",
+      "reading": "minyū",
+      "meaning": "menu (Egyptian; MSA: qāʾimat al-ṭaʿām)",
+      "example": "مُمْكِنْ مِنْيُو؟",
+      "exampleMeaning": "Can I have a menu?"
+    },
+    {
+      "word": "طَرَابِيزَة",
+      "reading": "ṭarabēza",
+      "meaning": "table (Egyptian; MSA: ṭāwila)",
+      "example": "عَايِزِينْ طَرَابِيزَة لِاِتْنِينْ.",
+      "exampleMeaning": "We want a table for two."
+    },
+    {
+      "word": "كُوبَّايَة",
+      "reading": "kubbāya",
+      "meaning": "glass / cup (Egyptian; MSA: kūb)",
+      "example": "كُوبَّايَة مَيَّه مِنْ فَضْلَك.",
+      "exampleMeaning": "A glass of water, please."
+    },
+    {
+      "word": "قَهْوَة سَادَة",
+      "reading": "ʾahwa sāda",
+      "meaning": "plain unsweetened coffee (Egyptian; MSA: qahwa bidūn sukkar)",
+      "example": "عَايِزْ قَهْوَة سَادَة بَعْدَ الْأَكْلْ.",
+      "exampleMeaning": "I want plain coffee after the food."
+    },
+    {
+      "word": "شَاي بِالنَّعْنَاع",
+      "reading": "shāy bi-n-naʿnāʿ",
+      "meaning": "mint tea (Egyptian; MSA: shāy bi-n-naʿnāʿ)",
+      "example": "الشَّاي بِالنَّعْنَاع رِيحْتُه حِلْوَة.",
+      "exampleMeaning": "The mint tea smells nice."
+    },
+    {
+      "word": "عَصِيرْ قَصَب",
+      "reading": "ʿaṣīr ʾaṣab",
+      "meaning": "sugarcane juice (Egyptian; MSA: ʿaṣīr qaṣab)",
+      "example": "عَصِيرْ قَصَب سَاقِعْ فِي الصَّيْفْ.",
+      "exampleMeaning": "Cold sugarcane juice in summer."
+    },
+    {
+      "word": "حَاجَة سَاقْعَة",
+      "reading": "ḥāga sāʾʿa",
+      "meaning": "a cold drink / something cold (Egyptian; MSA: shayʾ bārid)",
+      "example": "عَايِزْ حَاجَة سَاقْعَة عَشَانْ الْجَوّ حَرّ.",
+      "exampleMeaning": "I want a cold drink because the weather is hot."
+    },
+    {
+      "word": "طَعْمِيَّة",
+      "reading": "ṭaʿmiyya",
+      "meaning": "Egyptian falafel (Egyptian; MSA: falāfil)",
+      "example": "الطَّعْمِيَّة سُخْنَة وَمُقَرْمِشَة.",
+      "exampleMeaning": "The falafel is hot and crispy."
+    },
+    {
+      "word": "كُشَرِي",
+      "reading": "kusharī",
+      "meaning": "koshari (Egyptian street-food dish)",
+      "example": "الْكُشَرِي مَعَ شَطَّة وَلَيْمُونْ.",
+      "exampleMeaning": "Koshari with hot sauce and lemon."
+    },
+    {
+      "word": "عِيش بَلَدِي",
+      "reading": "ʿēsh baladī",
+      "meaning": "Egyptian flatbread (Egyptian; MSA: khubz baladī)",
+      "example": "حُطّْ عِيش بَلَدِي جَنْبَ الطَّعْمِيَّة.",
+      "exampleMeaning": "Put flatbread beside the falafel."
+    },
+    {
+      "word": "بِسُكَّرْ قَلِيل",
+      "reading": "bi-sukkar ʾalīl",
+      "meaning": "with little sugar (Egyptian; MSA: bi-sukkar qalīl)",
+      "example": "الْقَهْوَة بِسُكَّرْ قَلِيل.",
+      "exampleMeaning": "The coffee is with little sugar."
+    },
+    {
+      "word": "مِنْ غَيْرْ شَطَّة",
+      "reading": "min ghēr shaṭṭa",
+      "meaning": "without hot sauce (Egyptian; MSA: bidūn shaṭṭa)",
+      "example": "الْكُشَرِي مِنْ غَيْرْ شَطَّة لِلْأَطْفَالْ.",
+      "exampleMeaning": "The koshari is without hot sauce for the children."
+    },
+    {
+      "word": "سُفَرِي",
+      "reading": "sufarī",
+      "meaning": "takeaway / to-go (Egyptian; MSA: lil-akhḏ khārijan)",
+      "example": "الْأَكْلْ سُفَرِي وَلَّا هْنَا؟",
+      "exampleMeaning": "Is the food takeaway or here?"
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "___، الْحِسَابْ.",
+          "answer": "لَوْ سَمَحْت",
+          "hint": "please / excuse me (Egyptian; MSA: min faḍlik)"
+        },
+        {
+          "sentence": "أَنَا ___ شَايْ بِالنَّعْنَاع.",
+          "answer": "عَايِزْ",
+          "hint": "I want / he wants (Egyptian; MSA: urīdu / yurīdu)"
+        },
+        {
+          "sentence": "___ لَوْ سَمَحْت.",
+          "answer": "الْحِسَابْ",
+          "hint": "the bill (Egyptian; MSA: al-fātūra)"
+        },
+        {
+          "sentence": "مُمْكِنْ ___؟",
+          "answer": "مِنْيُو",
+          "hint": "menu (Egyptian; MSA: qāʾimat al-ṭaʿām)"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "items": [
+        {
+          "question": "What does ‘لَوْ سَمَحْت’ mean?",
+          "options": [
+            "I want / he wants (Egyptian; MSA: urīdu / yurīdu)",
+            "please / excuse me (Egyptian; MSA: min faḍlik)",
+            "the bill (Egyptian; MSA: al-fātūra)",
+            "menu (Egyptian; MSA: qāʾimat al-ṭaʿām)"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What does ‘عَايِزْ’ mean?",
+          "options": [
+            "table (Egyptian; MSA: ṭāwila)",
+            "I want / he wants (Egyptian; MSA: urīdu / yurīdu)",
+            "glass / cup (Egyptian; MSA: kūb)",
+            "plain unsweetened coffee (Egyptian; MSA: qahwa bidūn sukkar)"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What does ‘الْحِسَابْ’ mean?",
+          "options": [
+            "menu (Egyptian; MSA: qāʾimat al-ṭaʿām)",
+            "the bill (Egyptian; MSA: al-fātūra)",
+            "mint tea (Egyptian; MSA: shāy bi-n-naʿnāʿ)",
+            "takeaway / to-go (Egyptian; MSA: lil-akhḏ khārijan)"
+          ],
+          "answer": 1
+        }
+      ]
+    }
+  ]
+}

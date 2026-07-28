@@ -1,0 +1,183 @@
+{
+  "id": "tools-hardware",
+  "words": [
+    {
+      "word": "مِطْرَقَةٌ",
+      "reading": "miṭraqatun",
+      "meaning": "hammer",
+      "example": "مِطْرَقَةٌ صَغِيرَةٌ تَكْفِي لِهٰذَا الْمِسْمَارِ.",
+      "exampleMeaning": "A small hammer is enough for this nail."
+    },
+    {
+      "word": "مِفَكٌّ",
+      "reading": "mifakkun",
+      "meaning": "screwdriver",
+      "example": "مِفَكٌّ طَوِيلٌ يُسَاعِدُ فِي فَتْحِ الْغِطَاءِ.",
+      "exampleMeaning": "A long screwdriver helps open the cover."
+    },
+    {
+      "word": "مِسْمَارٌ",
+      "reading": "mismārun",
+      "meaning": "nail",
+      "example": "مِسْمَارٌ قَصِيرٌ ثَبَّتَ اللَّوْحَ فِي الْجِدَارِ.",
+      "exampleMeaning": "A short nail fixed the board to the wall."
+    },
+    {
+      "word": "بُرْغِيٌّ",
+      "reading": "burghiyyun",
+      "meaning": "screw",
+      "example": "بُرْغِيٌّ وَاحِدٌ يَنْقُصُ مِنَ الْكُرْسِيِّ.",
+      "exampleMeaning": "One screw is missing from the chair."
+    },
+    {
+      "word": "مَنْشَارٌ",
+      "reading": "minshārun",
+      "meaning": "saw",
+      "example": "قَطَعَ النَّجَّارُ الْخَشَبَ بِمَنْشَارٍ حَادٍّ.",
+      "exampleMeaning": "The carpenter cut the wood with a sharp saw."
+    },
+    {
+      "word": "زَرْدِيَّةٌ",
+      "reading": "zardiyyatun",
+      "meaning": "pliers",
+      "example": "أَمْسَكَ الْفَنِّيُّ السِّلْكَ بِزَرْدِيَّةٍ قَوِيَّةٍ.",
+      "exampleMeaning": "The technician held the wire with strong pliers."
+    },
+    {
+      "word": "مِقْيَاسٌ",
+      "reading": "miqyāsun",
+      "meaning": "measuring tool / gauge",
+      "example": "اِسْتَخْدَمْتُ مِقْيَاسًا لِمَعْرِفَةِ الطُّولِ.",
+      "exampleMeaning": "I used a measuring tool to know the length."
+    },
+    {
+      "word": "مِثْقَبٌ",
+      "reading": "mithqabun",
+      "meaning": "drill",
+      "example": "يَفْتَحُ الْعَامِلُ ثُقْبًا بِمِثْقَبٍ كَهْرَبَائِيٍّ.",
+      "exampleMeaning": "The worker makes a hole with an electric drill."
+    },
+    {
+      "word": "مِفْتَاحُ رَبْطٍ",
+      "reading": "miftāḥu rabṭin",
+      "meaning": "wrench",
+      "example": "شَدَدَ الْمُهَنْدِسُ الصَّامُولَةَ بِمِفْتَاحِ رَبْطٍ.",
+      "exampleMeaning": "The engineer tightened the nut with a wrench."
+    },
+    {
+      "word": "غِرَاءٌ",
+      "reading": "ghirāʾun",
+      "meaning": "glue",
+      "example": "وَضَعَتْ هِنْدٌ غِرَاءً عَلَى طَرَفِ الْوَرَقَةِ.",
+      "exampleMeaning": "Hind put glue on the edge of the paper."
+    },
+    {
+      "word": "شَرِيطٌ لَاصِقٌ",
+      "reading": "sharīṭun lāṣiqun",
+      "meaning": "adhesive tape",
+      "example": "أَغْلَقْتُ الصُّنْدُوقَ بِشَرِيطٍ لَاصِقٍ.",
+      "exampleMeaning": "I closed the box with adhesive tape."
+    },
+    {
+      "word": "مِفْصَلٌ",
+      "reading": "mifṣalun",
+      "meaning": "hinge",
+      "example": "يَحْتَاجُ الْبَابُ إِلَى مِفْصَلٍ جَدِيدٍ.",
+      "exampleMeaning": "The door needs a new hinge."
+    },
+    {
+      "word": "قُفْلٌ",
+      "reading": "quflun",
+      "meaning": "lock",
+      "example": "رَكَّبَ الْحَارِسُ قُفْلًا قَوِيًّا عَلَى الْبَابِ.",
+      "exampleMeaning": "The guard installed a strong lock on the door."
+    },
+    {
+      "word": "مِقْبَضٌ",
+      "reading": "miqbaḍun",
+      "meaning": "handle",
+      "example": "اِنْكَسَرَ مِقْبَضُ الدُّرْجِ صَبَاحًا.",
+      "exampleMeaning": "The drawer handle broke in the morning."
+    },
+    {
+      "word": "صُنْدُوقُ أَدَوَاتٍ",
+      "reading": "ṣundūqu ʾadawātin",
+      "meaning": "toolbox",
+      "example": "يَحْمِلُ الْفَنِّيُّ صُنْدُوقَ أَدَوَاتٍ مُرَتَّبًا.",
+      "exampleMeaning": "The technician carries an organized toolbox."
+    },
+    {
+      "word": "خُوذَةٌ",
+      "reading": "khūḏatun",
+      "meaning": "helmet",
+      "example": "يَلْبَسُ الْعَامِلُ خُوذَةً قَبْلَ بَدْءِ الْعَمَلِ.",
+      "exampleMeaning": "The worker wears a helmet before starting work."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "___ صَغِيرَةٌ تَكْفِي لِهٰذَا الْمِسْمَارِ.",
+          "answer": "مِطْرَقَةٌ",
+          "hint": "hammer"
+        },
+        {
+          "sentence": "___ طَوِيلٌ يُسَاعِدُ فِي فَتْحِ الْغِطَاءِ.",
+          "answer": "مِفَكٌّ",
+          "hint": "screwdriver"
+        },
+        {
+          "sentence": "___ قَصِيرٌ ثَبَّتَ اللَّوْحَ فِي الْجِدَارِ.",
+          "answer": "مِسْمَارٌ",
+          "hint": "nail"
+        },
+        {
+          "sentence": "___ وَاحِدٌ يَنْقُصُ مِنَ الْكُرْسِيِّ.",
+          "answer": "بُرْغِيٌّ",
+          "hint": "screw"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "items": [
+        {
+          "question": "What does ‘مِطْرَقَةٌ’ mean?",
+          "options": [
+            "screwdriver",
+            "hammer",
+            "nail",
+            "screw"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What does ‘مِفَكٌّ’ mean?",
+          "options": [
+            "nail",
+            "screwdriver",
+            "screw",
+            "saw"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What does ‘مِسْمَارٌ’ mean?",
+          "options": [
+            "screw",
+            "nail",
+            "saw",
+            "pliers"
+          ],
+          "answer": 1
+        }
+      ]
+    }
+  ]
+}

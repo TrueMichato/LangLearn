@@ -44,10 +44,10 @@ export interface BadgeDefinition {
   };
 }
 
-const LANGUAGE_FLAGS: Record<string, string> = { ja: '🇯🇵', ru: '🇷🇺', pt: '🇧🇷' };
-const LANGUAGE_NAMES: Record<string, string> = { ja: 'Japanese', ru: 'Russian', pt: 'Portuguese' };
+const LANGUAGE_FLAGS: Record<string, string> = { ja: '🇯🇵', ru: '🇷🇺', pt: '🇧🇷', es: '🇪🇸', ar: '🇸🇦' };
+const LANGUAGE_NAMES: Record<string, string> = { ja: 'Japanese', ru: 'Russian', pt: 'Portuguese', es: 'Spanish', ar: 'Arabic' };
 
-const PER_LANGUAGE_CODES = ['ja', 'ru', 'pt'] as const;
+const PER_LANGUAGE_CODES = ['ja', 'ru', 'pt', 'es', 'ar'] as const;
 
 const WORD_LANG_THRESHOLDS: Array<{ n: number; name: string; icon: string }> = [
   { n: 25, name: 'Word Starter', icon: '🌱' },

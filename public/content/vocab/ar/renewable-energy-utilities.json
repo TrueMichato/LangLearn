@@ -1,0 +1,159 @@
+{
+  "id": "renewable-energy-utilities",
+  "words": [
+    {
+      "word": "طَاقَةٌ مُتَجَدِّدَةٌ",
+      "reading": "ṭāqatun mutajaddidatun",
+      "meaning": "renewable energy",
+      "example": "تَسْتَثْمِرُ الْمَدِينَةُ فِي طَاقَةٍ مُتَجَدِّدَةٍ نَظِيفَةٍ.",
+      "exampleMeaning": "The city invests in clean renewable energy."
+    },
+    {
+      "word": "طَاقَةٌ شَمْسِيَّةٌ",
+      "reading": "ṭāqatun shamsiyyatun",
+      "meaning": "solar energy",
+      "example": "تُغَطِّي الطَّاقَةُ الشَّمْسِيَّةُ جُزْءًا مِنَ الطَّلَبِ.",
+      "exampleMeaning": "Solar energy covers part of the demand."
+    },
+    {
+      "word": "طَاقَةٌ رِيحِيَّةٌ",
+      "reading": "ṭāqatun rīḥiyyatun",
+      "meaning": "wind energy",
+      "example": "تَنْتِجُ الْمَزْرَعَةُ طَاقَةً رِيحِيَّةً فِي السَّاحِلِ.",
+      "exampleMeaning": "The farm produces wind energy on the coast."
+    },
+    {
+      "word": "لَوْحٌ شَمْسِيٌّ",
+      "reading": "lawḥun shamsiyyun",
+      "meaning": "solar panel",
+      "example": "رَكَّبَ الْفَنِّيُّ لَوْحًا شَمْسِيًّا فَوْقَ السَّطْحِ.",
+      "exampleMeaning": "The technician installed a solar panel on the roof."
+    },
+    {
+      "word": "تُورْبِينٌ",
+      "reading": "tūrbīnun",
+      "meaning": "turbine",
+      "example": "يَدُورُ التُّورْبِينُ مَعَ الرِّيحِ الْقَوِيَّةِ.",
+      "exampleMeaning": "The turbine spins with the strong wind."
+    },
+    {
+      "word": "شَبَكَةٌ كَهْرَبَائِيَّةٌ",
+      "reading": "shabakatun kahrabāʾiyyatun",
+      "meaning": "electrical grid",
+      "example": "تَحْتَاجُ الشَّبَكَةُ الْكَهْرَبَائِيَّةُ إِلَى صِيَانَةٍ دَائِمَةٍ.",
+      "exampleMeaning": "The electrical grid needs constant maintenance."
+    },
+    {
+      "word": "اِسْتِهْلَاكٌ",
+      "reading": "istihlākun",
+      "meaning": "consumption",
+      "example": "يَنْخَفِضُ الِاسْتِهْلَاكُ عِنْدَ اِسْتِخْدَامِ مَصَابِيحَ مُوَفِّرَةٍ.",
+      "exampleMeaning": "Consumption drops when using efficient lamps."
+    },
+    {
+      "word": "تَرْشِيدٌ",
+      "reading": "tarshīdun",
+      "meaning": "conservation / rational use",
+      "example": "يُسَاعِدُ التَّرْشِيدُ عَلَى خَفْضِ الْفَاتُورَةِ.",
+      "exampleMeaning": "Conservation helps reduce the bill."
+    },
+    {
+      "word": "عَدَّادٌ",
+      "reading": "ʿaddādun",
+      "meaning": "meter",
+      "example": "يَقْرَأُ الْمُوَظَّفُ الْعَدَّادَ كُلَّ شَهْرٍ.",
+      "exampleMeaning": "The employee reads the meter every month."
+    },
+    {
+      "word": "فَاتُورَةٌ",
+      "reading": "fātūratun",
+      "meaning": "bill",
+      "example": "وَصَلَتْ فَاتُورَةُ الْكَهْرَبَاءِ صَبَاحًا.",
+      "exampleMeaning": "The electricity bill arrived in the morning."
+    },
+    {
+      "word": "اِنْقِطَاعٌ",
+      "reading": "inqiṭāʿun",
+      "meaning": "outage",
+      "example": "سَبَّبَتِ الْعَاصِفَةُ اِنْقِطَاعًا فِي الْكَهْرَبَاءِ.",
+      "exampleMeaning": "The storm caused a power outage."
+    },
+    {
+      "word": "مَوَلِّدٌ",
+      "reading": "muwallidun",
+      "meaning": "generator",
+      "example": "اِشْتَغَلَ الْمُوَلِّدُ أَثْنَاءَ الِانْقِطَاعِ.",
+      "exampleMeaning": "The generator worked during the outage."
+    },
+    {
+      "word": "بَطَّارِيَّةُ تَخْزِينٍ",
+      "reading": "baṭṭāriyyatu takhzīnin",
+      "meaning": "storage battery",
+      "example": "تَحْفَظُ بَطَّارِيَّةُ التَّخْزِينِ الطَّاقَةَ لِلَّيْلِ.",
+      "exampleMeaning": "The storage battery saves energy for the night."
+    },
+    {
+      "word": "شَحْنٌ",
+      "reading": "shaḥnun",
+      "meaning": "charging",
+      "example": "يَحْتَاجُ شَحْنُ السَّيَّارَةِ إِلَى سَاعَتَيْنِ.",
+      "exampleMeaning": "Charging the car needs two hours."
+    },
+    {
+      "word": "اِنْبِعَاثَاتٌ",
+      "reading": "inbiʿāthātun",
+      "meaning": "emissions",
+      "example": "تُقَلِّلُ الطَّاقَةُ النَّظِيفَةُ الِانْبِعَاثَاتِ الضَّارَّةَ.",
+      "exampleMeaning": "Clean energy reduces harmful emissions."
+    },
+    {
+      "word": "كِفَاءَةٌ",
+      "reading": "kifāʾatun",
+      "meaning": "efficiency",
+      "example": "تَرْفَعُ الْعَوَازِلُ كِفَاءَةَ الْمَبْنَى.",
+      "exampleMeaning": "Insulation raises the building's efficiency."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "تُغَطِّي ___ جُزْءًا مِنَ الطَّلَبِ.",
+          "answer": "طَاقَةٌ شَمْسِيَّةٌ",
+          "hint": "solar energy"
+        },
+        {
+          "sentence": "يُسَاعِدُ ___ عَلَى خَفْضِ الْفَاتُورَةِ.",
+          "answer": "تَرْشِيدٌ",
+          "hint": "conservation"
+        },
+        {
+          "sentence": "وَصَلَتْ ___ الْكَهْرَبَاءِ صَبَاحًا.",
+          "answer": "فَاتُورَةٌ",
+          "hint": "bill"
+        },
+        {
+          "sentence": "اِشْتَغَلَ ___ أَثْنَاءَ الِانْقِطَاعِ.",
+          "answer": "مَوَلِّدٌ",
+          "hint": "generator"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "What does ‘شَبَكَةٌ كَهْرَبَائِيَّةٌ’ mean?",
+      "options": [
+        "electrical grid",
+        "storage battery",
+        "emissions",
+        "meter"
+      ],
+      "answer": 0
+    }
+  ]
+}

@@ -1,0 +1,159 @@
+{
+  "id": "marine-life-ocean-ecology",
+  "words": [
+    {
+      "word": "الشُّعْبَةُ الْمَرْجَانِيَّةُ",
+      "reading": "ash-shuʿba al-marjāniyya",
+      "meaning": "coral reef",
+      "example": "تَنْمو الشُّعْبَةُ الْمَرْجَانِيَّةُ فِي مَاءٍ دَافِئٍ وَصَافٍ.",
+      "exampleMeaning": "The coral reef grows in warm, clear water."
+    },
+    {
+      "word": "الْمَدُّ",
+      "reading": "al-madd",
+      "meaning": "tide",
+      "example": "يَرْتَفِعُ الْمَدُّ قُرْبَ الْقَمَرِ الْبَدْرِ.",
+      "exampleMeaning": "The tide rises near the full moon."
+    },
+    {
+      "word": "الْجَزْرُ",
+      "reading": "al-jazr",
+      "meaning": "ebb tide",
+      "example": "يَكْشِفُ الْجَزْرُ صُخُورَ الشَّاطِئِ.",
+      "exampleMeaning": "The ebb tide reveals the shore rocks."
+    },
+    {
+      "word": "الْعَوَالِقُ",
+      "reading": "al-ʿawāliq",
+      "meaning": "plankton",
+      "example": "تَتَغَذَّى الْحِيتَانُ عَلَى الْعَوَالِقِ الصَّغِيرَةِ.",
+      "exampleMeaning": "Whales feed on tiny plankton."
+    },
+    {
+      "word": "الثَّدْيِيَّاتُ الْبَحْرِيَّةُ",
+      "reading": "ath-thadyiyyāt al-baḥriyya",
+      "meaning": "marine mammals",
+      "example": "تَحْتَاجُ الثَّدْيِيَّاتُ الْبَحْرِيَّةُ إِلَى هَوَاءٍ لِلتَّنَفُّسِ.",
+      "exampleMeaning": "Marine mammals need air to breathe."
+    },
+    {
+      "word": "السُّلَحْفَاةُ الْبَحْرِيَّةُ",
+      "reading": "as-sulḥafā al-baḥriyya",
+      "meaning": "sea turtle",
+      "example": "تَعُودُ السُّلَحْفَاةُ الْبَحْرِيَّةُ إِلَى الشَّاطِئِ لِتَضَعَ الْبَيْضَ.",
+      "exampleMeaning": "The sea turtle returns to the shore to lay eggs."
+    },
+    {
+      "word": "الأَخْطَبُوطُ",
+      "reading": "al-akhṭabūṭ",
+      "meaning": "octopus",
+      "example": "يَخْتَبِئُ الأَخْطَبُوطُ بَيْنَ الصُّخُورِ.",
+      "exampleMeaning": "The octopus hides among the rocks."
+    },
+    {
+      "word": "الْحِبَّارُ",
+      "reading": "al-ḥibbār",
+      "meaning": "squid",
+      "example": "يُطْلِقُ الْحِبَّارُ حِبْرًا عِنْدَ الْخَطَرِ.",
+      "exampleMeaning": "The squid releases ink when in danger."
+    },
+    {
+      "word": "قِنْدِيلُ الْبَحْرِ",
+      "reading": "qindīl al-baḥr",
+      "meaning": "jellyfish",
+      "example": "يَسْبَحُ قِنْدِيلُ الْبَحْرِ بِبُطْءٍ قُرْبَ السَّطْحِ.",
+      "exampleMeaning": "The jellyfish swims slowly near the surface."
+    },
+    {
+      "word": "الأَعْشَابُ الْبَحْرِيَّةُ",
+      "reading": "al-aʿshāb al-baḥriyya",
+      "meaning": "seagrass",
+      "example": "تُوَفِّرُ الأَعْشَابُ الْبَحْرِيَّةُ مَأْوًى لِلأَسْمَاكِ الصَّغِيرَةِ.",
+      "exampleMeaning": "Seagrass provides shelter for small fish."
+    },
+    {
+      "word": "الْمَصَبُّ",
+      "reading": "al-maṣabb",
+      "meaning": "estuary",
+      "example": "يَخْتَلِطُ النَّهْرُ بِالْبَحْرِ فِي الْمَصَبِّ.",
+      "exampleMeaning": "The river mixes with the sea in the estuary."
+    },
+    {
+      "word": "التَّلَوُّثُ الْبَحْرِيُّ",
+      "reading": "at-talawwuth al-baḥriyy",
+      "meaning": "marine pollution",
+      "example": "يُهَدِّدُ التَّلَوُّثُ الْبَحْرِيُّ حَيَاةَ الشُّعَبِ.",
+      "exampleMeaning": "Marine pollution threatens reef life."
+    },
+    {
+      "word": "الْمَحْمِيَّةُ الْبَحْرِيَّةُ",
+      "reading": "al-maḥmiyya al-baḥriyya",
+      "meaning": "marine reserve",
+      "example": "أُعْلِنَتِ الْمَحْمِيَّةُ الْبَحْرِيَّةُ لِحِمَايَةِ الدَّلَافِينِ.",
+      "exampleMeaning": "The marine reserve was declared to protect dolphins."
+    },
+    {
+      "word": "التَّنَوُّعُ الْبَحْرِيُّ",
+      "reading": "at-tanawwuʿ al-baḥriyy",
+      "meaning": "marine biodiversity",
+      "example": "يَزْدَادُ التَّنَوُّعُ الْبَحْرِيُّ حَيْثُ يَسْتَقِرُّ النِّظَامُ الْبِيئِيُّ.",
+      "exampleMeaning": "Marine biodiversity increases where the ecosystem is stable."
+    },
+    {
+      "word": "التَّيَّارُ الْبَحْرِيُّ",
+      "reading": "at-tayyār al-baḥriyy",
+      "meaning": "ocean current",
+      "example": "يَنْقُلُ التَّيَّارُ الْبَحْرِيُّ الْمَاءَ الْبَارِدَ.",
+      "exampleMeaning": "The ocean current carries cold water."
+    },
+    {
+      "word": "الشَّاطِئُ الصَّخْرِيُّ",
+      "reading": "ash-shāṭiʾ aṣ-ṣakhriyy",
+      "meaning": "rocky shore",
+      "example": "تَسْكُنُ سَرَاطِينُ كَثِيرَةٌ فِي الشَّاطِئِ الصَّخْرِيِّ.",
+      "exampleMeaning": "Many crabs live on the rocky shore."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": 5
+    },
+    {
+      "type": "fill-blank",
+      "items": [
+        {
+          "sentence": "تَنْمو ___ فِي مَاءٍ دَافِئٍ.",
+          "answer": "الشُّعْبَةُ الْمَرْجَانِيَّةُ",
+          "hint": "coral reef"
+        },
+        {
+          "sentence": "يُهَدِّدُ ___ حَيَاةَ الشُّعَبِ.",
+          "answer": "التَّلَوُّثُ الْبَحْرِيُّ",
+          "hint": "marine pollution"
+        },
+        {
+          "sentence": "أُعْلِنَتِ ___ لِحِمَايَةِ الدَّلَافِينِ.",
+          "answer": "الْمَحْمِيَّةُ الْبَحْرِيَّةُ",
+          "hint": "marine reserve"
+        },
+        {
+          "sentence": "يَنْقُلُ ___ الْمَاءَ الْبَارِدَ.",
+          "answer": "التَّيَّارُ الْبَحْرِيُّ",
+          "hint": "ocean current"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "What does ‘الْعَوَالِقُ’ mean?",
+      "options": [
+        "plankton",
+        "jellyfish",
+        "estuary",
+        "rocky shore"
+      ],
+      "answer": 0
+    }
+  ]
+}
