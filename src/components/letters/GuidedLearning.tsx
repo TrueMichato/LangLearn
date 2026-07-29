@@ -4,6 +4,7 @@ import { updateCharacterProgress } from '../../db/characters';
 import { speak } from '../../lib/tts';
 import { XP_PER_CHARACTER_PRACTICE, XP_PER_QUIZ_CORRECT } from '../../lib/xp';
 import { useXPStore } from '../../stores/xpStore';
+import { useTimerStore } from '../../stores/timerStore';
 
 interface Props {
   characters: Character[];
@@ -54,6 +55,9 @@ function shuffle<T>(arr: T[]): T[] {
 export default function GuidedLearning({ characters, alphabetName, language, onProgress }: Props) {
   const [completed, setCompleted] = useState(() => loadCompletedColumns(alphabetName, language));
   const [phase, setPhase] = useState<Phase>('overview');
+  const [hasStartedTimer, setHasStartedTimer] = useState(false);
+  const timerStart = useTimerStore((s) => s.start);
+  const timerIsRunning = useTimerStore((s) => s.isRunning);
   const [activeGroup, setActiveGroup] = useState('');
 
   // Learning state
@@ -116,14 +120,25 @@ export default function GuidedLearning({ characters, alphabetName, language, onP
 
   // --- Handlers ---
 
+  /* This is the activity the on-ramp recommends first, so it has to count as
+     study. Without it the learner finishes their first session and the
+     dashboard still reports zero minutes. */
+  const startTimer = useCallback(() => {
+    if (!hasStartedTimer && !timerIsRunning) {
+      timerStart('letters');
+      setHasStartedTimer(true);
+    }
+  }, [hasStartedTimer, timerIsRunning, timerStart]);
+
   const startLearning = useCallback(
     (group: string) => {
       if (getStatus(group) === 'locked') return;
+      startTimer();
       setActiveGroup(group);
       setCardIndex(0);
       setPhase('learning');
     },
-    [getStatus],
+    [getStatus, startTimer],
   );
 
   const activeChars = useMemo(

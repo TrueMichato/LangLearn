@@ -56,7 +56,7 @@ export default function TypeBuilder({ sentence, language, onResult }: TypeBuilde
           {showHint ? (
             <p className="text-sm text-indigo-600 dark:text-indigo-400">{hintText}</p>
           ) : (
-            <button onClick={() => setShowHint(true)} className="text-sm text-slate-400 dark:text-slate-500 underline hover:text-slate-600 dark:hover:text-slate-300">
+            <button onClick={() => setShowHint(true)} className="text-sm text-slate-500 dark:text-slate-400 underline hover:text-slate-600 dark:hover:text-slate-300">
               Show hint
             </button>
           )}
@@ -72,7 +72,7 @@ export default function TypeBuilder({ sentence, language, onResult }: TypeBuilde
           onChange={(e) => setInput(e.target.value)}
           disabled={checked}
           placeholder="Type the sentence…"
-          className={`w-full rounded-xl px-4 py-3 border-2 ${borderClass} ${bgClass} text-slate-800 dark:text-slate-100 placeholder-slate-400 dark:placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-indigo-400 disabled:opacity-70`}
+          className={`w-full rounded-xl px-4 py-3 border-2 ${borderClass} ${bgClass} text-slate-800 dark:text-slate-100 placeholder-slate-500 dark:placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-indigo-400 disabled:opacity-70`}
           {...rtlProps(language)}
         />
       </form>

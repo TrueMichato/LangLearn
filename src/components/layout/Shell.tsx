@@ -22,7 +22,7 @@ export default function Shell() {
 
   return (
     <div className="min-h-screen app-canvas">
-      <div className="app-frame min-h-screen pb-[calc(var(--nav-height)_+_var(--safe-bottom))]">
+      <div className="app-frame app-surface min-h-screen pb-[calc(var(--nav-height)_+_var(--safe-bottom))]">
         <header className="sticky top-0 glass border-b border-slate-200/60 dark:border-white/10 z-40 pt-[var(--safe-top)]">
           <div className="flex items-center justify-between px-4 py-3">
             <h1 className="text-lg font-bold text-indigo-600 dark:text-indigo-400">🌱 LangLearn</h1>
@@ -30,14 +30,14 @@ export default function Shell() {
               <StudyTimer />
               <button
                 onClick={() => setShowDictionary(true)}
-                className="text-lg p-2 rounded-xl hover:bg-slate-100 dark:hover:bg-slate-800 active:scale-95 transition-all"
+                className="flex min-h-[44px] min-w-[44px] items-center justify-center text-lg rounded-xl hover:bg-slate-100 dark:hover:bg-slate-800 active:scale-95 transition-all"
                 aria-label="Search dictionary"
               >
                 🔍
               </button>
               <button
                 onClick={toggleDarkMode}
-                className="text-lg p-2 rounded-xl hover:bg-slate-100 dark:hover:bg-slate-800 active:scale-95 transition-all"
+                className="flex min-h-[44px] min-w-[44px] items-center justify-center text-lg rounded-xl hover:bg-slate-100 dark:hover:bg-slate-800 active:scale-95 transition-all"
                 aria-label="Toggle dark mode"
               >
                 {darkMode ? '☀️' : '🌙'}

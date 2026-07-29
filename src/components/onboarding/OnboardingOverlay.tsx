@@ -1,6 +1,9 @@
 import { useState, useRef } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { useSettingsStore } from '../../stores/settingsStore';
-import { LANGUAGES } from '../../lib/languages';
+import { LANGUAGES, getLanguageLabel } from '../../lib/languages';
+import StartingPoints from './StartingPoints';
+import type { StartingPoint } from '../../lib/starting-points';
 
 const KNOWN_LANGUAGES = Object.values(LANGUAGES).map(l => ({ code: l.code, label: `${l.name} ${l.flag}` }));
 
@@ -15,9 +18,9 @@ function StepIndicators({ current, total }: { current: number; total: number }) 
           <div
             className={`relative h-3 w-3 rounded-full transition-all duration-300 flex items-center justify-center ${
               i < current
-                ? 'gradient-primary'
+                ? 'fill-primary'
                 : i === current
-                  ? 'gradient-primary shadow-md shadow-indigo-500/30'
+                  ? 'fill-primary shadow-md shadow-indigo-500/30'
                   : 'border-2 border-slate-300 dark:border-slate-600 bg-transparent'
             }`}
           >
@@ -45,11 +48,15 @@ export default function OnboardingOverlay() {
   const [step, setStep] = useState(0);
   const [customLang, setCustomLang] = useState('');
   const customInputRef = useRef<HTMLInputElement>(null);
+  const navigate = useNavigate();
 
   const activeLanguages = useSettingsStore((s) => s.activeLanguages);
   const addLanguage = useSettingsStore((s) => s.addLanguage);
   const removeLanguage = useSettingsStore((s) => s.removeLanguage);
   const completeOnboarding = useSettingsStore((s) => s.completeOnboarding);
+
+  const hasLanguage = activeLanguages.length > 0;
+  const firstLanguage = activeLanguages[0];
 
   const toggleLanguage = (code: string) => {
     if (activeLanguages.includes(code)) {
@@ -72,7 +79,13 @@ export default function OnboardingOverlay() {
     if (step < TOTAL_STEPS - 1) setStep(step + 1);
   };
 
-  const gradientHeading = 'text-3xl font-bold text-indigo-600 dark:text-indigo-400';
+  // The hand-off: onboarding ends inside a lesson, not on an empty dashboard.
+  const startHere = (point: StartingPoint) => {
+    completeOnboarding();
+    navigate(point.route);
+  };
+
+  const heading = 'text-3xl font-bold text-indigo-600 dark:text-indigo-400';
 
   const steps = [
     // Step 1: Welcome
@@ -81,12 +94,15 @@ export default function OnboardingOverlay() {
         Welcome to LangLearn 🎓
       </h1>
       <p className="text-lg text-slate-600 dark:text-slate-300 max-w-md">
-        Your personal, kind language learning companion
+        A kind way to learn a language, a few minutes at a time
       </p>
 
       <div className="w-full max-w-sm text-left">
-        <p className="mb-3 font-medium text-slate-700 dark:text-slate-200">
+        <p className="mb-1 font-medium text-slate-700 dark:text-slate-200">
           Which languages are you learning?
+        </p>
+        <p className="mb-3 text-sm text-slate-500 dark:text-slate-400">
+          Pick at least one. You can add more later.
         </p>
         <div className="flex flex-col gap-2">
           {KNOWN_LANGUAGES.map((lang) => (
@@ -127,19 +143,24 @@ export default function OnboardingOverlay() {
             ))}
 
           <div className="flex gap-2 mt-1">
+            <label htmlFor="onboarding-custom-language" className="sr-only">
+              Add another language
+            </label>
             <input
               ref={customInputRef}
+              id="onboarding-custom-language"
+              name="customLanguage"
               type="text"
               value={customLang}
               onChange={(e) => setCustomLang(e.target.value)}
               onKeyDown={(e) => e.key === 'Enter' && addCustomLanguage()}
               placeholder="Add another language…"
-              className="flex-1 rounded-lg border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 px-4 py-2 text-slate-800 dark:text-slate-100 placeholder-slate-400 dark:placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-indigo-500"
+              className="flex-1 min-h-[44px] rounded-lg border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 px-4 py-2 text-slate-800 dark:text-slate-100 placeholder-slate-500 dark:placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-indigo-500"
             />
             <button
               type="button"
               onClick={addCustomLanguage}
-              className="rounded-lg gradient-primary px-4 py-2 text-white font-medium hover:opacity-90 transition-opacity press-feedback"
+              className="min-h-[44px] rounded-lg fill-primary px-4 py-2 text-white font-medium hover:opacity-90 transition-opacity press-feedback"
             >
               Add
             </button>
@@ -148,68 +169,68 @@ export default function OnboardingOverlay() {
       </div>
     </div>,
 
-    // Step 2: Vocabulary
-    <div key="vocabulary" className="flex flex-col items-center gap-6 text-center">
+    // Step 2: What a session actually looks like
+    <div key="lessons" className="flex flex-col items-center gap-6 text-center">
       <div className="text-7xl">📚</div>
-      <h1 className={gradientHeading}>
-        Build Your Vocabulary 📚
-      </h1>
+      <h1 className={heading}>Short lessons, one at a time</h1>
       <div className="max-w-md space-y-3 text-slate-600 dark:text-slate-300">
         <p>
-          Paste texts in the <strong className="text-slate-900 dark:text-white">Reader</strong>, click any word to save it to your personal dictionary.
+          A lesson takes about two minutes: a handful of words, a few real
+          examples, and a quick check that it stuck.
         </p>
         <p>
-          You can also add words manually from the <strong className="text-slate-900 dark:text-white">Words</strong> page.
+          Lessons unlock in order, so you never have to decide what to study
+          next.
         </p>
       </div>
-      <div className="mt-2 text-5xl">📖 → 👆 → 💾</div>
+      <div className="mt-2 text-5xl">🔤 → ✨ → 📖</div>
     </div>,
 
-    // Step 3: Spaced Repetition
-    <div key="srs" className="flex flex-col items-center gap-6 text-center">
+    // Step 3: Reviews, in plain language
+    <div key="reviews" className="flex flex-col items-center gap-6 text-center">
       <div className="text-7xl">🃏</div>
-      <h1 className={gradientHeading}>
-        Review with Spaced Repetition 🃏
-      </h1>
+      <h1 className={heading}>Reviews come back at the right time</h1>
       <div className="max-w-md space-y-3 text-slate-600 dark:text-slate-300">
         <p>
-          The app schedules reviews automatically using the <strong className="text-slate-900 dark:text-white">SM-2 algorithm</strong>.
+          Everything you learn turns into a review card. The app brings each one
+          back just before you'd forget it — you only have to show up.
         </p>
-        <p>
-          Cards get easier over time as you learn. Multiple card types keep it fresh!
+        <p className="font-medium text-indigo-600 dark:text-indigo-400">
+          Got one wrong? You'll simply see it again sooner. No penalties, ever.
+          💪
         </p>
       </div>
-      <div className="mt-2 text-5xl">🧠 ✨ 📈</div>
     </div>,
 
-    // Step 4: Progress
-    <div key="progress" className="flex flex-col items-center gap-6 text-center">
-      <div className="text-7xl">📊</div>
-      <h1 className={gradientHeading}>
-        Track Your Progress 📊
-      </h1>
-      <div className="max-w-md space-y-3 text-slate-600 dark:text-slate-300">
-        <p>
-          Earn <strong className="text-slate-900 dark:text-white">XP</strong> for study time, hit weekly goals, and build streaks!
-        </p>
-        <p className="text-indigo-600 dark:text-indigo-400 font-medium">
-          No penalties for mistakes — just more practice! 💪
-        </p>
+    // Step 4: The hand-off
+    <div key="start" className="flex w-full max-w-sm flex-col gap-6">
+      <div className="text-center">
+        <h1 className={heading}>Where would you like to start?</h1>
+        {firstLanguage && (
+          <p className="mt-2 text-slate-600 dark:text-slate-300">
+            in {getLanguageLabel(firstLanguage)}
+          </p>
+        )}
       </div>
+      {firstLanguage && (
+        <StartingPoints language={firstLanguage} onSelect={startHere} />
+      )}
     </div>,
   ];
 
   return (
-    <div className="fixed inset-0 z-[100] app-canvas flex flex-col">
-      {/* Skip button */}
+    <div className="fixed inset-0 z-[100] app-surface flex flex-col">
+      {/* Skip — only once a language is chosen, so nobody lands language-less */}
       <div className="flex justify-end p-4">
-        <button
-          type="button"
-          onClick={completeOnboarding}
-          className="text-sm text-slate-500 dark:text-slate-400 hover:text-slate-600 dark:hover:text-slate-300 transition-colors"
-        >
-          Skip
-        </button>
+        {hasLanguage && (
+          <button
+            type="button"
+            onClick={completeOnboarding}
+            className="min-h-[44px] px-2 text-sm text-slate-500 dark:text-slate-400 hover:text-slate-600 dark:hover:text-slate-300 transition-colors"
+          >
+            Skip
+          </button>
+        )}
       </div>
 
       {/* Carousel */}
@@ -222,6 +243,8 @@ export default function OnboardingOverlay() {
             <div
               key={i}
               className="w-full flex-shrink-0 flex items-center justify-center px-6"
+              aria-hidden={i !== step}
+              inert={i !== step}
             >
               {content}
             </div>
@@ -234,22 +257,23 @@ export default function OnboardingOverlay() {
         {/* Step indicators */}
         <StepIndicators current={step} total={TOTAL_STEPS} />
 
-        {/* Action button */}
+        {/* Action button — the last step is chosen from the options above */}
         {step < TOTAL_STEPS - 1 ? (
           <button
             type="button"
             onClick={next}
-            className="w-full max-w-xs rounded-xl gradient-primary py-3 text-lg font-semibold text-white hover:opacity-90 transition-opacity press-feedback"
+            disabled={!hasLanguage}
+            className="w-full max-w-xs min-h-[44px] rounded-xl fill-primary py-3 text-lg font-semibold text-white hover:opacity-90 transition-opacity press-feedback disabled:cursor-not-allowed disabled:opacity-40"
           >
-            Next →
+            {hasLanguage ? 'Next →' : 'Pick a language to continue'}
           </button>
         ) : (
           <button
             type="button"
             onClick={completeOnboarding}
-            className="relative overflow-hidden w-full max-w-xs rounded-xl gradient-primary py-3 text-lg font-semibold text-white hover:opacity-90 transition-opacity press-feedback shimmer-btn"
+            className="min-h-[44px] px-2 text-sm font-medium text-slate-500 dark:text-slate-400 hover:text-slate-600 dark:hover:text-slate-300 transition-colors"
           >
-            <span className="relative z-10">Get Started! 🚀</span>
+            I'll look around first
           </button>
         )}
       </div>

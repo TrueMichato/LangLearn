@@ -1,5 +1,6 @@
 import { useState, useRef } from 'react';
 import { useSettingsStore } from '../stores/settingsStore';
+import { useCurrentLanguage } from '../hooks/useCurrentLanguage';
 import { exportAllData, importAllData, downloadJson } from '../db/backup';
 import DeckExport from '../components/common/DeckExport';
 import DeckImport from '../components/common/DeckImport';
@@ -30,8 +31,8 @@ function Toggle({
     <button
       onClick={onChange}
       disabled={disabled}
-      className={`relative inline-flex h-6 w-11 items-center rounded-full transition-all duration-200 ease-out ${
-        checked ? 'gradient-primary' : 'bg-slate-300 dark:bg-slate-600'
+      className={`relative inline-flex h-6 w-11 shrink-0 items-center rounded-full after:absolute after:inset-x-0 after:top-1/2 after:h-11 after:-translate-y-1/2 after:content-[''] transition-all duration-200 ease-out ${
+        checked ? 'fill-primary' : 'bg-slate-300 dark:bg-slate-600'
       } ${disabled ? 'opacity-50 cursor-not-allowed' : ''}`}
       role="switch"
       aria-checked={checked}
@@ -89,7 +90,7 @@ export default function SettingsPage() {
           </div>
           <button
             onClick={toggleDarkMode}
-            className="text-2xl p-2 rounded-full hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors press-feedback"
+            className="flex min-h-[44px] min-w-[44px] items-center justify-center text-2xl rounded-full hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors press-feedback"
             aria-label="Toggle dark mode"
           >
             {darkMode ? '☀️' : '🌙'}
@@ -156,9 +157,9 @@ export default function SettingsPage() {
                     ? removeLanguage(lang.code)
                     : addLanguage(lang.code)
                 }
-                className={`px-3 py-1.5 rounded-full text-sm transition-all duration-200 animate-[scaleIn_0.2s_ease-out] press-feedback ${
+                className={`px-3 py-1.5 min-h-[44px] rounded-full text-sm transition-all duration-200 animate-[scaleIn_0.2s_ease-out] press-feedback ${
                   isActive
-                    ? 'gradient-primary text-white shadow-sm'
+                    ? 'fill-primary text-white shadow-sm'
                     : 'bg-slate-100 dark:bg-slate-700 text-slate-600 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-600'
                 }`}
               >
@@ -222,9 +223,9 @@ export default function SettingsPage() {
               <button
                 key={size}
                 onClick={() => setReviewBatchSize(size)}
-                className={`flex-1 py-1.5 rounded-xl text-sm font-semibold transition-all duration-200 press-feedback ${
+                className={`flex-1 py-1.5 min-h-[44px] rounded-xl text-sm font-semibold transition-all duration-200 press-feedback ${
                   reviewBatchSize === size
-                    ? 'gradient-primary text-white shadow-sm'
+                    ? 'fill-primary text-white shadow-sm'
                     : 'bg-slate-100 dark:bg-slate-700 text-slate-600 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-600'
                 }`}
               >
@@ -260,9 +261,9 @@ export default function SettingsPage() {
               <button
                 key={opt.value}
                 onClick={() => setScheduler(opt.value)}
-                className={`flex-1 py-1.5 rounded-xl text-sm font-semibold transition-all duration-200 press-feedback ${
+                className={`flex-1 py-1.5 min-h-[44px] rounded-xl text-sm font-semibold transition-all duration-200 press-feedback ${
                   scheduler === opt.value
-                    ? 'gradient-primary text-white shadow-sm'
+                    ? 'fill-primary text-white shadow-sm'
                     : 'bg-slate-100 dark:bg-slate-700 text-slate-600 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-600'
                 }`}
               >
@@ -351,7 +352,7 @@ export default function SettingsPage() {
                       {isActive && <span className="ml-auto text-indigo-600 dark:text-indigo-300 text-sm">✓</span>}
                     </div>
                     <p className="text-xs text-slate-500 dark:text-slate-400 mt-1">{d.blurb}</p>
-                    <p className="text-[11px] text-slate-400 dark:text-slate-500 mt-0.5">{d.region}</p>
+                    <p className="text-xs text-slate-500 dark:text-slate-400 mt-0.5">{d.region}</p>
                   </button>
                 );
               })}
@@ -383,13 +384,13 @@ export default function SettingsPage() {
         <div className="space-y-2">
           <button
             onClick={handleExport}
-            className="w-full bg-indigo-100 dark:bg-indigo-900/50 text-indigo-700 dark:text-indigo-300 py-2 rounded-xl font-semibold hover:bg-indigo-200 dark:hover:bg-indigo-800 transition-colors press-feedback"
+            className="w-full min-h-[44px] bg-indigo-100 dark:bg-indigo-900/50 text-indigo-700 dark:text-indigo-300 py-2 rounded-xl font-semibold hover:bg-indigo-200 dark:hover:bg-indigo-800 transition-colors press-feedback"
           >
             📥 Export all data
           </button>
           <button
             onClick={() => fileInputRef.current?.click()}
-            className="w-full bg-slate-100 dark:bg-slate-700 text-slate-700 dark:text-slate-300 py-2 rounded-xl font-semibold hover:bg-slate-200 dark:hover:bg-slate-600 transition-colors press-feedback"
+            className="w-full min-h-[44px] bg-slate-100 dark:bg-slate-700 text-slate-700 dark:text-slate-300 py-2 rounded-xl font-semibold hover:bg-slate-200 dark:hover:bg-slate-600 transition-colors press-feedback"
           >
             📤 Import from file
           </button>
@@ -415,8 +416,8 @@ export default function SettingsPage() {
 function TTSDiagPanel() {
   const [result, setResult] = useState<Awaited<ReturnType<typeof diagnoseTTS>> | null>(null);
   const [testing, setTesting] = useState(false);
-  const activeLanguages = useSettingsStore((s) => s.activeLanguages);
-  const lang = activeLanguages[0] ?? 'en';
+  const { language: currentLanguage } = useCurrentLanguage();
+  const lang = currentLanguage ?? 'en';
 
   const runTest = async () => {
     setTesting(true);
@@ -443,7 +444,7 @@ function TTSDiagPanel() {
       <button
         onClick={runTest}
         disabled={testing}
-        className="w-full gradient-primary text-white py-2 rounded-xl font-semibold hover:opacity-90 transition-opacity press-feedback disabled:opacity-50"
+        className="w-full min-h-[44px] fill-primary text-white py-2 rounded-xl font-semibold hover:opacity-90 transition-opacity press-feedback disabled:opacity-50"
       >
         {testing ? '⏳ Running tests…' : '▶ Run TTS Tests'}
       </button>
@@ -452,16 +453,16 @@ function TTSDiagPanel() {
           <p>mode: {result.displayMode}</p>
           <p>voices: {result.voiceCount} total, {result.voicesForLang.length} for {lang}</p>
           {result.voicesForLang.length > 0 && (
-            <p className="text-[10px]">{result.voicesForLang.join(', ')}</p>
+            <p className="text-xs">{result.voicesForLang.join(', ')}</p>
           )}
           <hr className="border-slate-300 dark:border-slate-600" />
           {result.tests.map((t, i) => (
-            <div key={i} className="pl-2 border-l-2 border-slate-400 dark:border-slate-500">
+            <div key={i} className="rounded-lg border border-slate-300/70 dark:border-slate-600 p-2">
               <p className={t.result === 'started' ? 'text-green-600 dark:text-green-400 font-bold' : 'text-red-600 dark:text-red-400 font-bold'}>
                 Test {i + 1}: {t.result}
               </p>
-              <p className="text-[10px] opacity-75">{t.label}</p>
-              {t.error && <p className="text-[10px]">↳ {t.error}</p>}
+              <p className="text-xs opacity-75">{t.label}</p>
+              {t.error && <p className="text-xs">↳ {t.error}</p>}
             </div>
           ))}
         </div>

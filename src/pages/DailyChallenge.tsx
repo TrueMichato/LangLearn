@@ -3,17 +3,18 @@ import { Link } from 'react-router-dom';
 import { generateDailyChallenge, type ChallengeQuestion } from '../lib/daily-challenge';
 import { db } from '../db/schema';
 import { todayStr } from '../lib/streaks';
-import { useSettingsStore } from '../stores/settingsStore';
+import { useCurrentLanguage } from '../hooks/useCurrentLanguage';
+import LanguagePicker from '../components/common/LanguagePicker';
 import { useXPStore } from '../stores/xpStore';
 
 type ChallengeState = 'not-started' | 'in-progress' | 'complete';
 
 export default function DailyChallengePage() {
-  const activeLanguages = useSettingsStore((s) => s.activeLanguages);
+  const { language: currentLanguage, setLanguage, options: activeLanguages } = useCurrentLanguage();
   const addXP = useXPStore((s) => s.addXP);
 
   const [state, setState] = useState<ChallengeState>('not-started');
-  const [language, setLanguage] = useState(activeLanguages[0] ?? 'ja');
+  const language = currentLanguage ?? 'ja';
   const [questions, setQuestions] = useState<ChallengeQuestion[]>([]);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [score, setScore] = useState(0);
@@ -114,7 +115,6 @@ export default function DailyChallengePage() {
     day: 'numeric',
   });
 
-  const langLabel: Record<string, string> = { ja: 'Japanese', ru: 'Russian' };
 
   // --- Not Started ---
   if (state === 'not-started') {
@@ -122,7 +122,7 @@ export default function DailyChallengePage() {
       <div className="max-w-md mx-auto page-enter">
         <Link
           to="/"
-          className="text-sm text-indigo-600 dark:text-indigo-400 hover:underline mb-4 inline-block"
+          className="inline-flex min-h-[44px] items-center text-sm text-indigo-600 dark:text-indigo-400 hover:underline mb-4 inline-block"
         >
           ← Back to Dashboard
         </Link>
@@ -150,17 +150,12 @@ export default function DailyChallengePage() {
               <label className="block text-sm font-medium text-slate-600 dark:text-slate-400 mb-1">
                 Language
               </label>
-              <select aria-label="Challenge language"
+              <LanguagePicker
+                options={activeLanguages}
                 value={language}
-                onChange={(e) => setLanguage(e.target.value)}
-                className="w-full px-3 py-2 rounded-lg border border-slate-300 dark:border-white/10 bg-white dark:bg-slate-700 text-slate-800 dark:text-slate-100"
-              >
-                {activeLanguages.map((l) => (
-                  <option key={l} value={l}>
-                    {langLabel[l] ?? l}
-                  </option>
-                ))}
-              </select>
+                onChange={setLanguage}
+                label="Challenge language"
+              />
             </div>
           )}
 

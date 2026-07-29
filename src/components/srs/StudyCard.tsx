@@ -9,7 +9,7 @@ interface StudyCardProps {
 export default function StudyCard({ word }: StudyCardProps) {
   return (
     <div className="w-full min-h-[240px] rounded-2xl shadow-lg p-6 flex flex-col items-center justify-center bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700">
-      <span className="text-xs text-slate-400 dark:text-slate-500 uppercase tracking-wide mb-2">
+      <span className="text-xs text-slate-500 dark:text-slate-400 mb-2">
         {word.language} — study
       </span>
 

@@ -1,8 +1,8 @@
 import { useState, useEffect, useRef, useCallback } from 'react';
 import { Link } from 'react-router-dom';
-import { useSettingsStore } from '../stores/settingsStore';
+import { useCurrentLanguage } from '../hooks/useCurrentLanguage';
+import LanguagePicker from '../components/common/LanguagePicker';
 import { useXPStore } from '../stores/xpStore';
-import { getLanguageLabel } from '../lib/languages';
 import { generateTestQuestions, type Question, type TestType } from '../lib/test-questions';
 import { getTestLevel, calculateXP } from '../lib/test-scoring';
 import { db, type TestHistory } from '../db/schema';
@@ -25,8 +25,8 @@ const TIME_OPTIONS: { value: TimeLimit; label: string }[] = [
 ];
 
 export default function TestsPage() {
-  const activeLanguages = useSettingsStore((s) => s.activeLanguages);
-  const [language, setLanguage] = useState(activeLanguages[0] ?? 'ja');
+  const { language: currentLanguage, setLanguage, options: activeLanguages } = useCurrentLanguage();
+  const language = currentLanguage ?? 'ja';
   const [testType, setTestType] = useState<TestType>('mixed');
   const [timeLimit, setTimeLimit] = useState<TimeLimit>(10);
   const [phase, setPhase] = useState<Phase>('setup');
@@ -175,7 +175,7 @@ export default function TestsPage() {
   if (phase === 'setup') {
     return (
       <div className="page-enter">
-        <Link to="/learn" className="text-indigo-600 dark:text-indigo-400 text-sm font-medium mb-3 hover:underline press-feedback inline-block">
+        <Link to="/learn" className="inline-flex min-h-[44px] items-center text-indigo-600 dark:text-indigo-400 text-sm font-medium mb-3 hover:underline press-feedback inline-block">
           ← Back to Learn
         </Link>
         <h2 className="text-lg font-semibold text-slate-700 dark:text-slate-200 mb-4">Proficiency Tests</h2>
@@ -185,19 +185,12 @@ export default function TestsPage() {
           <div className="bg-white dark:bg-slate-800 rounded-2xl shadow p-4">
             <label className="block text-sm font-medium text-slate-600 dark:text-slate-300 mb-2">Language</label>
             <div className="flex flex-wrap gap-2">
-              {activeLanguages.map((l) => (
-                <button
-                  key={l}
-                  onClick={() => setLanguage(l)}
-                  className={`px-4 py-2 rounded-xl text-sm font-medium transition-colors ${
-                    language === l
-                      ? 'bg-indigo-600 text-white'
-                      : 'bg-slate-100 dark:bg-slate-700 text-slate-700 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-600'
-                  }`}
-                >
-                  {getLanguageLabel(l)}
-                </button>
-              ))}
+              <LanguagePicker
+                options={activeLanguages}
+                value={language}
+                onChange={setLanguage}
+                label="Test language"
+              />
             </div>
           </div>
 
@@ -209,7 +202,7 @@ export default function TestsPage() {
                 <button
                   key={t}
                   onClick={() => setTestType(t)}
-                  className={`px-4 py-2 rounded-xl text-sm font-medium transition-colors ${
+                  className={`px-4 py-2 min-h-[44px] rounded-xl text-sm font-medium transition-colors ${
                     testType === t
                       ? 'bg-indigo-600 text-white'
                       : 'bg-slate-100 dark:bg-slate-700 text-slate-700 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-600'
@@ -229,7 +222,7 @@ export default function TestsPage() {
                 <button
                   key={opt.value}
                   onClick={() => setTimeLimit(opt.value)}
-                  className={`px-4 py-2 rounded-xl text-sm font-medium transition-colors ${
+                  className={`px-4 py-2 min-h-[44px] rounded-xl text-sm font-medium transition-colors ${
                     timeLimit === opt.value
                       ? 'bg-indigo-600 text-white'
                       : 'bg-slate-100 dark:bg-slate-700 text-slate-700 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-600'
@@ -366,7 +359,7 @@ export default function TestsPage() {
         <h2 className="text-lg font-semibold text-slate-700 dark:text-slate-200 mb-4">Test Complete!</h2>
 
         <div className="bg-white dark:bg-slate-800 rounded-2xl shadow p-6 mb-4 text-center">
-          <div className="text-5xl font-bold text-indigo-600 mb-2">{result.score}%</div>
+          <div className="text-5xl font-bold text-indigo-600 dark:text-indigo-400 mb-2">{result.score}%</div>
           <div className={`inline-block text-sm font-semibold px-3 py-1 rounded-full capitalize mb-4 ${levelColor(testLevel.level)}`}>
             {testLevel.label}
           </div>

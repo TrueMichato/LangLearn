@@ -3,7 +3,7 @@ import { getDueCount } from '../db/reviews';
 import { getTotalWordCount } from '../db/words';
 import { getLessonProgress } from '../db/lessons';
 import { getCharacterProgress } from '../db/characters';
-import { todayStr } from './streaks';
+import { ROUTES, lettersRoute, guidedLettersRoute } from './routes';
 
 export interface StudySuggestion {
   id: string;
@@ -28,7 +28,7 @@ export async function getStudySuggestions(
       title: 'Review Due Cards',
       description: `${dueCount} card${dueCount === 1 ? '' : 's'} waiting for review`,
       icon: '🃏',
-      route: '/review',
+      route: ROUTES.review,
       priority: 100,
       reason: `${dueCount} card${dueCount === 1 ? ' is' : 's are'} due now`,
     });
@@ -39,12 +39,12 @@ export async function getStudySuggestions(
   if (totalWords === 0) {
     suggestions.push({
       id: 'first-words',
-      title: 'Add Your First Words',
-      description: 'Start by mining words from a text or adding manually',
+      title: 'Learn your first words',
+      description: 'A short themed lesson — no word list needed',
       icon: '✨',
-      route: '/reader',
+      route: ROUTES.vocabLessons,
       priority: 95,
-      reason: 'You have no words yet — get started!',
+      reason: 'Start here — it takes about two minutes',
     });
   }
 
@@ -62,7 +62,7 @@ export async function getStudySuggestions(
       title: 'Read Something New',
       description: 'Practice reading and mine new vocabulary',
       icon: '📖',
-      route: '/reader',
+      route: ROUTES.reader,
       priority: 60,
       reason: "You haven't read anything in 3+ days",
     });
@@ -88,7 +88,7 @@ export async function getStudySuggestions(
             title: `Continue Grammar`,
             description: nextLesson.title,
             icon: '📝',
-            route: '/learn/grammar',
+            route: ROUTES.grammar,
             priority: 50,
             reason: `Next lesson: ${nextLesson.title}`,
           });
@@ -107,39 +107,31 @@ export async function getStudySuggestions(
     const mastered = chars.filter((c) => c.mastery === 'mastered').length;
     const total = chars.length;
     if (total === 0 || (total > 0 && mastered / total < 0.5)) {
+      /* "Only 0% mastered" is the first thing a learner saw after finishing
+         their very first letter column — a deflating way to describe real
+         work. Count what they've started, not what they're missing. */
       suggestions.push({
         id: `letters-${lang}`,
-        title: 'Practice Letters',
+        title: total === 0 ? 'Practice Letters' : 'Keep going with the letters',
         description:
           total === 0
             ? 'Start learning the writing system'
-            : `${mastered}/${total} characters mastered`,
+            : `${mastered} of ${total} characters mastered so far`,
         icon: '✍️',
-        route: `/letters/${lang}`,
+        route: total === 0 ? guidedLettersRoute(lang) : lettersRoute(lang),
         priority: 45,
         reason:
           total === 0
             ? 'Try the writing system!'
-            : `Only ${Math.round((mastered / total) * 100)}% mastered`,
+            : `You've started ${total} — a few more each day adds up`,
       });
       break;
     }
   }
 
-  // 6. Daily challenge — if not done today
-  const today = todayStr();
-  const todayActivity = await db.dailyActivity.get(today);
-  if (!todayActivity?.challengeComplete) {
-    suggestions.push({
-      id: 'daily-challenge',
-      title: 'Daily Challenge',
-      description: 'Complete for 1.5× XP bonus!',
-      icon: '🎯',
-      route: '/daily-challenge',
-      priority: 70,
-      reason: "Today's challenge is waiting",
-    });
-  }
+  // 6. Daily challenge is owned by DailyChallengeCard on the dashboard, which
+  // also renders the completed state. Duplicating it here showed the same
+  // prompt twice on one screen.
 
   // 7. Weak words — low ease (SM-2) or high difficulty (FSRS)
   const allReviews = await db.reviews.toArray();
@@ -154,7 +146,7 @@ export async function getStudySuggestions(
       title: 'Review Difficult Words',
       description: `${weakWords.length} words need extra practice`,
       icon: '💪',
-      route: '/review',
+      route: ROUTES.review,
       priority: 55,
       reason: `${weakWords.length} words have low retention`,
     });
@@ -166,7 +158,7 @@ export async function getStudySuggestions(
     .then((sessions) =>
       sessions.filter(
         (s) =>
-          s.activity === 'grammar' && new Date(s.startTime) >= threeDaysAgo,
+          s.activity === 'listening' && new Date(s.startTime) >= threeDaysAgo,
       ),
     );
   if (recentListening.length === 0 && totalWords >= 10) {
@@ -175,7 +167,7 @@ export async function getStudySuggestions(
       title: 'Try Listening Practice',
       description: 'Improve comprehension with audio passages',
       icon: '🎧',
-      route: '/listening',
+      route: ROUTES.listening,
       priority: 40,
       reason: 'Build listening skills alongside reading',
     });

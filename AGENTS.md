@@ -6,10 +6,10 @@ IMPORTANT: Prefer retrieval-led reasoning over pre-training-led reasoning for an
 
 **Any visual/UI change MUST align with the design system.** Two root docs are the source of truth:
 
-- **[DESIGN.md](./DESIGN.md)** — the visual spec: tokens (colors, type, radii, spacing), components, elevation, and named rules. *How it looks.* (Machine-readable sidecar: `.impeccable/design.json`.)
-- **[PRODUCT.md](./PRODUCT.md)** — strategic context: register, users, "kind learning" brand personality, anti-references, a11y bar. *Who/what/why.*
+- **[DESIGN.md](./DESIGN.md)** — the visual spec, in the eight canonical DESIGN.md sections (Overview, Colors, Typography, Layout, Elevation & Depth, Shapes, Components, Do's and Don'ts). *How it looks.* (Machine-readable sidecar: `.impeccable/design.json`.)
+- **[PRODUCT.md](./PRODUCT.md)** — strategic context (product-schema 1): platform, users, purpose, positioning, operating context, the first-run contract, brand commitments, evidence on hand, principles, a11y. *Who/what/why.*
 
-North Star: **"The Kind Study Companion."** Non-negotiables (full list in DESIGN.md §6):
+North Star: **"The Kind Study Companion."** Non-negotiables (full list in DESIGN.md → Do's and Don'ts):
 
 - **One indigo accent** (`indigo-600`); neutral ramp is **slate only** (never mix `gray-*`). Green/amber/red convey *state* only.
 - **Kind, never punishing** — soft tints + encouraging copy for misses/errors; red is rare.
@@ -18,12 +18,13 @@ North Star: **"The Kind Study Companion."** Non-negotiables (full list in DESIGN
 - **Cards:** full hairline border (`border-slate-200/70 dark:border-white/10`) + `rounded-2xl`, never side-stripes, never nested.
 - **A11y:** `aria-label` on icon-only buttons, labels on inputs/selects, visible `:focus-visible`, `min-h-[44px]`, honor `prefers-reduced-motion`.
 - **Layout:** everything lives in the `.app-frame` (phone-width, framed on desktop); overlays follow the z-scale (header 40 → nav 50 → modal 60 → toast 70 → onboarding 100).
+- **Reuse the shared control:** `LanguagePicker` (language), `StartingPoints` (on-ramp), `LanguageUnavailable` (unsupported language/surface pair). Never re-implement one locally.
 
 A **design-detector hook is active** in this repo — it scans UI files after edits and flags anti-patterns as reminders. Keep it green.
 
 ## Project Overview
 
-LangLearn is a local-first Progressive Web App for learning languages (Japanese, Russian, Portuguese, Spanish, Arabic, extensible). "Kind learning" philosophy — rewards effort, no penalties for mistakes. Deployed at `https://truemichato.github.io/LangLearn/`.
+LangLearn is a local-first Progressive Web App for learning languages (Japanese, Russian, Portuguese, Spanish, Arabic, Romanian, extensible). "Kind learning" philosophy — rewards effort, no penalties for mistakes. Deployed at `https://truemichato.github.io/LangLearn/`.
 
 ## Tech Stack
 
@@ -41,8 +42,9 @@ LangLearn is a local-first Progressive Web App for learning languages (Japanese,
 
 ```
 npm run build     # tsc -b && vite build
-npx tsc --noEmit  # Type-check only
-npm test          # vitest run (67 tests)
+npx tsc -b        # Type-check only. NOT `--noEmit` — the root tsconfig uses
+                  # project references and doesn't include src, so --noEmit is a false green.
+npm test          # vitest run
 npm run dev       # Dev server
 npm run lint      # ESLint
 ```
@@ -51,7 +53,8 @@ npm run lint      # ESLint
 
 1. **Content fetching** — ALWAYS prefix with `import.meta.env.BASE_URL`: `` fetch(`${import.meta.env.BASE_URL}content/grammar/ja/index.json`) ``
 2. **Dark mode** — Every component MUST have `dark:` variants on all colors. Black text on dark bg is the #1 recurring bug.
-3. **Language codes** — Use 2-letter codes internally (`ja`, `ru`, `pt`, `es`, `ar`). Display via `getLanguageLabel(code)` from `src/lib/languages.ts`. Never hardcode "Japanese" or "JA".
+3. **Language codes** — Use 2-letter codes internally (`ja`, `ru`, `pt`, `es`, `ar`, `ro`). Display via `getLanguageLabel(code)` from `src/lib/languages.ts`. Never hardcode "Japanese" or "JA".
+   - **Current language** — the app has ONE current language, held in `settingsStore.currentLanguage` and read via `useCurrentLanguage()` (`src/hooks/useCurrentLanguage.ts`). Never keep language in page-local `useState`. Render the switcher with `<LanguagePicker>` (`src/components/common/LanguagePicker.tsx`) — it hides itself below two active languages. Pass a **module-level const** as `supported`, never an inline array literal (it churns the hook's `useMemo`). When a surface can't serve the current language, render `<LanguageUnavailable>` — never silently substitute another language. Forms whose language is a *destination* (Add Word, CSV import, deck export, study sets, dictionary) read `currentLanguageOf(useSettingsStore.getState())` imperatively: they default to it, they don't steer it. Pure resolution logic lives in `src/lib/current-language.ts` (tested in `src/__tests__/current-language.test.ts`).
    - **RTL** — Arabic (`ar`) is right-to-left. Set `rtl: true` on the language in `src/lib/languages.ts` and mark every element that renders *target-language* text with `dir` via `isRTL`/`rtlProps` from `src/lib/rtl.ts` (flashcards, reader, grammar examples, sentence tiles, cloze, vocab, dictation, translation, lyrics). Leave English-primary grammar prose LTR.
    - **Arabic dialects** — one `ar` code = MSA shared core; `arabicDialect` + `arabicColloquialFocus` settings surface dialect-tagged content (see `src/lib/arabic-dialects.ts`). Dialect vocab lessons carry a `dialect` field in their index entry; `VocabLessons.tsx` filters to MSA + the chosen dialect (hiding other dialects), badges dialect lessons, and — with colloquial focus on — surfaces colloquial lessons first (locking is reindexed to the visible list). The **Dialects hub** (`src/pages/Dialects.tsx`, route `/dialects`, Learn card shown when `ar` is active) shows per-dialect pronunciation/grammar features + a cross-dialect phrase comparison from `src/data/dialects/phrases.ts` (`DIALECT_PROFILES`, `DIALECT_PHRASES`); colloquial grammar lessons live in the "🗣️ Colloquial & Dialects" grammar group.
 4. **DB queries** — Only `.where()` on INDEXED fields. Non-indexed → `.toArray()` then `.filter()`. Check `src/db/schema.ts` for indexes.
@@ -93,9 +96,9 @@ src/
 └── workers/             # kuromoji.worker.ts (Japanese tokenizer)
 
 public/content/          # Runtime-fetched lesson content
-├── grammar/{ja,ru,pt,es,ar}/   # 35+ lessons each: index.json + *.md (with <!-- quiz: {...} --> and <!-- grammar-card: {...} --> blocks). grammar-card blocks are SRS metadata, stripped from display by LessonView.
-├── vocab/{ja,ru,pt,es,ar}/     # 40 lessons each: index.json + *.json (words + exercises)
-├── reading/{ja,ru,pt,es,ar}/   # 10 curated texts each: index.json + *.txt (3 difficulty levels)
+├── grammar/{ja,ru,pt,es,ar,ro}/   # 35+ lessons each: index.json + *.md (with <!-- quiz: {...} --> and <!-- grammar-card: {...} --> blocks). grammar-card blocks are SRS metadata, stripped from display by LessonView.
+├── vocab/{ja,ru,pt,es,ar,ro}/     # 40 lessons each: index.json + *.json (words + exercises)
+├── reading/{ja,ru,pt,es,ar,ro}/   # 10 curated texts each: index.json + *.txt (3 difficulty levels)
 └── dict/                # Kuromoji dictionary files
 ```
 

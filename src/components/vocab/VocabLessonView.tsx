@@ -84,7 +84,7 @@ export default function VocabLessonView({ lang, lessonId, onBack }: Props) {
 
   useEffect(() => {
     if (!timerStarted.current && lesson) {
-      start('grammar');
+      start('vocab');
       timerStarted.current = true;
     }
     return () => {
@@ -263,7 +263,7 @@ export default function VocabLessonView({ lang, lessonId, onBack }: Props) {
                 savedWords[word.word] === 'saved'
                   ? 'bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-300'
                   : savedWords[word.word] === 'exists'
-                    ? 'bg-slate-100 dark:bg-slate-700 text-slate-500 dark:text-slate-400'
+                    ? 'bg-slate-100 dark:bg-slate-700 text-slate-600 dark:text-slate-300'
                     : savedWords[word.word] === 'saving'
                       ? 'bg-slate-100 dark:bg-slate-700 text-slate-400'
                       : 'bg-indigo-50 dark:bg-indigo-900/30 text-indigo-600 dark:text-indigo-400 hover:bg-indigo-100 dark:hover:bg-indigo-900/50'

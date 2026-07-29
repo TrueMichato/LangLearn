@@ -25,14 +25,14 @@ function FormTile({ code, ar, tr, highlight }: { code: DialectCode; ar: string; 
           : 'border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-800/60'
       }`}
     >
-      <div className="flex items-center gap-1.5 text-[11px] font-medium text-slate-500 dark:text-slate-400 mb-0.5">
+      <div className="flex items-center gap-1.5 text-xs font-medium text-slate-500 dark:text-slate-400 mb-0.5">
         <span>{info.flag}</span>
         <span>{info.name}</span>
       </div>
       <div className="text-xl text-slate-800 dark:text-slate-100 leading-snug" {...rtlProps('ar')}>
         {ar}
       </div>
-      <div className="text-xs text-slate-400 dark:text-slate-500">{tr}</div>
+      <div className="text-xs text-slate-500 dark:text-slate-400">{tr}</div>
     </div>
   );
 }
@@ -72,7 +72,7 @@ export default function DialectsPage() {
       <div>
         <Link
           to="/learn"
-          className="text-indigo-600 dark:text-indigo-400 text-sm font-medium hover:underline press-feedback inline-block mb-2"
+          className="inline-flex min-h-[44px] items-center text-indigo-600 dark:text-indigo-400 text-sm font-medium hover:underline press-feedback inline-block mb-2"
         >
           ← Back to Learn
         </Link>
@@ -106,7 +106,7 @@ export default function DialectsPage() {
           })}
         </div>
         {!hasDialect && (
-          <p className="text-xs text-slate-400 dark:text-slate-500 mt-3">
+          <p className="text-xs text-slate-500 dark:text-slate-400 mt-3">
             No dialect selected — showing Modern Standard Arabic only. Pick one above to unlock its
             colloquial content across the app.
           </p>
@@ -134,7 +134,7 @@ export default function DialectsPage() {
 
           <div className="grid grid-cols-1 gap-4">
             <div>
-              <p className="text-xs font-semibold uppercase tracking-wide text-slate-400 dark:text-slate-500 mb-2">
+              <p className="text-xs font-semibold text-slate-500 dark:text-slate-400 mb-2">
                 🔊 Pronunciation
               </p>
               <ul className="space-y-1.5">
@@ -147,7 +147,7 @@ export default function DialectsPage() {
               </ul>
             </div>
             <div>
-              <p className="text-xs font-semibold uppercase tracking-wide text-slate-400 dark:text-slate-500 mb-2">
+              <p className="text-xs font-semibold text-slate-500 dark:text-slate-400 mb-2">
                 🔧 Grammar markers
               </p>
               <ul className="space-y-1.5">
@@ -231,7 +231,7 @@ export default function DialectsPage() {
         </div>
       </div>
 
-      <p className="text-xs text-slate-400 dark:text-slate-500 text-center px-4">
+      <p className="text-xs text-slate-500 dark:text-slate-400 text-center px-4">
         Dialect forms are the most widely-taught spoken variants; real usage varies by country and
         city. Learn the fuṣḥā core first — it unlocks every dialect.
       </p>

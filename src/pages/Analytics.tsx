@@ -11,13 +11,14 @@ import {
   getReadingStats,
 } from '../lib/analytics';
 import type { Word, Review } from '../db/schema';
-import { useSettingsStore } from '../stores/settingsStore';
-import { getLanguageLabel } from '../lib/languages';
+import { useCurrentLanguage } from '../hooks/useCurrentLanguage';
+import LanguagePicker from '../components/common/LanguagePicker';
 import LineChart from '../components/analytics/LineChart';
 import BarChart from '../components/analytics/BarChart';
 import SegmentedBar from '../components/analytics/SegmentedBar';
 import TopicHeatmap from '../components/analytics/TopicHeatmap';
 import NextFocusCard from '../components/analytics/NextFocusCard';
+import { ACTIVITY_LABELS, ACTIVITY_COLORS } from '../lib/activities';
 
 interface AnalyticsData {
   retention: { date: string; percent: number }[];
@@ -53,8 +54,9 @@ function getDifficultyColor(ease: number): string {
 
 export default function AnalyticsPage() {
   const [data, setData] = useState<AnalyticsData | null>(null);
-  const [selectedLang, setSelectedLang] = useState<string | undefined>(undefined);
-  const activeLanguages = useSettingsStore((s) => s.activeLanguages);
+  const { language: currentLanguage, setLanguage, options: activeLanguages } = useCurrentLanguage();
+  const [showAll, setShowAll] = useState(false);
+  const selectedLang = showAll ? undefined : currentLanguage;
 
   useEffect(() => {
     setData(null);
@@ -109,7 +111,7 @@ export default function AnalyticsPage() {
       <div className="flex items-center gap-3 mb-4">
         <Link
           to="/"
-          className="p-2 rounded-full hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors"
+          className="flex min-h-[44px] min-w-[44px] items-center justify-center rounded-full text-slate-700 dark:text-slate-200 hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors"
           aria-label="Back"
         >
           ←
@@ -119,32 +121,18 @@ export default function AnalyticsPage() {
         </h2>
       </div>
 
-      {/* Language Filter Tabs */}
-      <div className="flex gap-2 overflow-x-auto pb-2 mb-4">
-        <button
-          onClick={() => setSelectedLang(undefined)}
-          className={`px-4 py-1.5 rounded-full text-sm font-medium whitespace-nowrap transition-colors ${
-            selectedLang === undefined
-              ? 'bg-indigo-600 text-white'
-              : 'bg-slate-100 dark:bg-slate-700 text-slate-600 dark:text-slate-300'
-          }`}
-        >
-          All Languages
-        </button>
-        {activeLanguages.map((lang) => (
-          <button
-            key={lang}
-            onClick={() => setSelectedLang(lang)}
-            className={`px-4 py-1.5 rounded-full text-sm font-medium whitespace-nowrap transition-colors ${
-              selectedLang === lang
-                ? 'bg-indigo-600 text-white'
-                : 'bg-slate-100 dark:bg-slate-700 text-slate-600 dark:text-slate-300'
-            }`}
-          >
-            {getLanguageLabel(lang)}
-          </button>
-        ))}
-      </div>
+      <LanguagePicker
+        className="mb-4"
+        options={activeLanguages}
+        value={selectedLang}
+        onChange={(l) => {
+          setShowAll(false);
+          setLanguage(l);
+        }}
+        allowAll
+        onSelectAll={() => setShowAll(true)}
+        label="Filter stats by language"
+      />
 
       {/* What should I do next? */}
       <NextFocusCard language={selectedLang} />
@@ -186,13 +174,16 @@ export default function AnalyticsPage() {
         />
       </Section>
 
-      {/* Mastery Distribution */}
+      {/* Mastery Distribution.
+          "New" is not a failure state, so it is not red — DESIGN.md keeps red
+          rare and reserves it for genuine problems. This is a progress ramp:
+          not-started -> in-progress -> done. */}
       <Section title="Mastery Distribution">
         <SegmentedBar
           segments={[
-            { label: 'New', value: mastery.new, color: 'bg-red-500' },
-            { label: 'Learning', value: mastery.learning, color: 'bg-yellow-500' },
-            { label: 'Mastered', value: mastery.mastered, color: 'bg-green-500' },
+            { label: 'New', value: mastery.new, color: 'bg-slate-400' },
+            { label: 'Learning', value: mastery.learning, color: 'bg-amber-500' },
+            { label: 'Mastered', value: mastery.mastered, color: 'bg-green-600' },
           ]}
         />
       </Section>
@@ -286,7 +277,7 @@ export default function AnalyticsPage() {
                   </div>
                 </div>
                 <div className="text-right shrink-0 ml-3">
-                  <p className="text-sm font-semibold text-red-500 dark:text-red-400">
+                  <p className="text-sm font-semibold text-red-600 dark:text-red-400">
                     {review.ease.toFixed(2)}
                   </p>
                   <p className="text-xs text-slate-500 dark:text-slate-400">
@@ -340,18 +331,6 @@ function StatCard({
     </div>
   );
 }
-
-const ACTIVITY_COLORS: Record<string, string> = {
-  srs: 'bg-indigo-500',
-  reading: 'bg-emerald-500',
-  grammar: 'bg-amber-500',
-};
-
-const ACTIVITY_LABELS: Record<string, string> = {
-  srs: 'Flashcard Review',
-  reading: 'Reading',
-  grammar: 'Grammar',
-};
 
 function getActivityRecommendation(
   data: { activity: string; minutes: number }[]

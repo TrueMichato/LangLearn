@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { useSettingsStore } from '../../stores/settingsStore';
+import { currentLanguageOf } from '../../lib/current-language';
 import { exportDeck } from '../../lib/decks';
 import { downloadJson } from '../../db/backup';
 import { db } from '../../db/schema';
@@ -7,7 +8,9 @@ import { getLanguageLabel } from '../../lib/languages';
 
 export default function DeckExport() {
   const { activeLanguages } = useSettingsStore();
-  const [language, setLanguage] = useState(activeLanguages[0] ?? '');
+  // Defaults to what you're studying, but never writes back: picking a language
+  // here answers "where does this word go?", not "what am I studying now?".
+  const [language, setLanguage] = useState(() => currentLanguageOf(useSettingsStore.getState()) ?? '');
   const [deckName, setDeckName] = useState('');
   const [tag, setTag] = useState('');
   const [wordCount, setWordCount] = useState<number | null>(null);
@@ -52,7 +55,7 @@ export default function DeckExport() {
       <select aria-label="Export language"
         value={language}
         onChange={(e) => handleLanguageChange(e.target.value)}
-        className="w-full px-3 py-2 rounded-xl bg-slate-100 dark:bg-slate-700 text-slate-800 dark:text-slate-200 text-sm"
+        className="w-full min-h-[44px] px-3 py-2 rounded-xl bg-slate-100 dark:bg-slate-700 text-slate-800 dark:text-slate-200 text-sm"
       >
         <option value="">Select language</option>
         {activeLanguages.map((lang) => (
@@ -65,7 +68,7 @@ export default function DeckExport() {
         placeholder="Deck name"
         value={deckName}
         onChange={(e) => setDeckName(e.target.value)}
-        className="w-full px-3 py-2 rounded-xl bg-slate-100 dark:bg-slate-700 text-slate-800 dark:text-slate-200 text-sm placeholder-slate-400"
+        className="w-full min-h-[44px] px-3 py-2 rounded-xl bg-slate-100 dark:bg-slate-700 text-slate-800 dark:text-slate-200 text-sm placeholder-slate-500 dark:placeholder-slate-400"
       />
 
       <input
@@ -73,7 +76,7 @@ export default function DeckExport() {
         placeholder="Tag filter (optional)"
         value={tag}
         onChange={(e) => handleTagChange(e.target.value)}
-        className="w-full px-3 py-2 rounded-xl bg-slate-100 dark:bg-slate-700 text-slate-800 dark:text-slate-200 text-sm placeholder-slate-400"
+        className="w-full min-h-[44px] px-3 py-2 rounded-xl bg-slate-100 dark:bg-slate-700 text-slate-800 dark:text-slate-200 text-sm placeholder-slate-500 dark:placeholder-slate-400"
       />
 
       {wordCount !== null && (
@@ -85,7 +88,7 @@ export default function DeckExport() {
       <button
         onClick={handleExport}
         disabled={!language || !deckName.trim() || exporting}
-        className="w-full bg-indigo-100 dark:bg-indigo-900 text-indigo-700 dark:text-indigo-300 py-2 rounded-xl font-semibold hover:bg-indigo-200 dark:hover:bg-indigo-800 transition-colors disabled:opacity-50"
+        className="w-full min-h-[44px] bg-indigo-100 dark:bg-indigo-900 text-indigo-700 dark:text-indigo-300 py-2 rounded-xl font-semibold hover:bg-indigo-200 dark:hover:bg-indigo-800 transition-colors disabled:opacity-50"
       >
         {exporting ? 'Exporting…' : '📦 Export Deck'}
       </button>

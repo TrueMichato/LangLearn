@@ -13,10 +13,11 @@ export default function BarChart({
 }: BarChartProps) {
   const max = maxValue ?? Math.max(...data.map((d) => d.value), 1);
 
-  const gradientClass =
-    gradient === 'green'
-      ? 'bg-gradient-to-r from-emerald-500 to-green-400'
-      : 'bg-gradient-to-r from-indigo-500 to-violet-500';
+  // Solid fills, not gradients (DESIGN.md), and dark enough that the white
+  // value label inside the bar clears AA: white on indigo-600 = 6.3:1,
+  // white on green-700 = 5.1:1. The old indigo-500 (4.46:1) and
+  // emerald->green-400 gradient (as low as 1.9:1) both failed.
+  const barClass = gradient === 'green' ? 'bg-green-700' : 'bg-indigo-600';
 
   return (
     <div className="space-y-2">
@@ -37,7 +38,7 @@ export default function BarChart({
                 }}
               />
               <div
-                className={`${gradientClass} h-6 rounded-full transition-all duration-500 flex items-center justify-end pr-2 relative`}
+                className={`${barClass} h-6 rounded-full transition-all duration-500 flex items-center justify-end pr-2 relative`}
                 style={{ width: `${Math.max(widthPercent, item.value > 0 ? 8 : 0)}%` }}
               >
                 {item.value > 0 && (

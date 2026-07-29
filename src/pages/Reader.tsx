@@ -4,6 +4,8 @@ import { addWord } from '../db/words';
 import { getTextCount } from '../db/texts';
 import { useTimerStore } from '../stores/timerStore';
 import { useSettingsStore } from '../stores/settingsStore';
+import { useCurrentLanguage } from '../hooks/useCurrentLanguage';
+import LanguagePicker from '../components/common/LanguagePicker';
 import WordLookupSheet from '../components/reader/WordLookupSheet';
 import TextLibrary from '../components/reader/TextLibrary';
 import { tokenizeJapanese } from '../lib/tokenizer';
@@ -11,7 +13,6 @@ import type { Token } from '../lib/tokenizer';
 import FuriganaText from '../components/reader/FuriganaText';
 import { applyStress } from '../lib/russian-stress';
 import { splitSentences, findSentenceAt, type SentenceSpan } from '../lib/sentences';
-import { getLanguageLabel } from '../lib/languages';
 import { isRTL } from '../lib/rtl';
 import { SkeletonCard, SkeletonList } from '../components/common/Skeleton';
 import ComprehensionIndicator from '../components/reader/ComprehensionIndicator';
@@ -28,8 +29,8 @@ export default function ReaderPage() {
   const [tabReady, setTabReady] = useState(false);
   const [text, setText] = useState('');
   const [title, setTitle] = useState('');
-  const activeLanguages = useSettingsStore((s) => s.activeLanguages);
-  const [language, setLanguage] = useState(activeLanguages[0] ?? 'ja');
+  const { language: currentLanguage, setLanguage, options: activeLanguages } = useCurrentLanguage();
+  const language = currentLanguage ?? 'ja';
   const [savedTextId, setSavedTextId] = useState<number | null>(null);
   const [tokens, setTokens] = useState<string[]>([]);
   const [tokenOffsets, setTokenOffsets] = useState<number[]>([]);
@@ -99,12 +100,12 @@ export default function ReaderPage() {
     refreshKnownWords();
   }, [refreshKnownWords]);
 
-  // Default to Library tab if texts exist
+  // Default to the Library: it holds both saved texts and the curated graded
+  // readings, so a first-time reader sees real content instead of a blank
+  // paste box.
   useEffect(() => {
-    getTextCount().then((count) => {
-      setTab(count > 0 ? 'library' : 'import');
-      setTabReady(true);
-    });
+    setTab('library');
+    setTabReady(true);
   }, []);
 
   function resetReadingState() {
@@ -350,20 +351,20 @@ export default function ReaderPage() {
     <div className="flex bg-slate-100 dark:bg-slate-800 rounded-xl p-1 mb-4">
       <button
         onClick={() => switchTab('import')}
-        className={`flex-1 py-2 text-sm font-medium rounded-lg transition-colors press-feedback ${
+        className={`flex-1 py-2 min-h-[44px] text-sm font-medium rounded-lg transition-colors press-feedback ${
           tab === 'import'
-            ? 'bg-white dark:bg-slate-700 text-indigo-600 dark:text-indigo-400 shadow-sm'
-            : 'text-slate-500 dark:text-slate-400 hover:text-slate-700 dark:hover:text-slate-300'
+            ? 'bg-white dark:bg-slate-700 text-indigo-600 dark:text-indigo-300 shadow-sm'
+            : 'text-slate-600 dark:text-slate-300 hover:text-slate-800 dark:hover:text-slate-100'
         }`}
       >
         Import
       </button>
       <button
         onClick={() => switchTab('library')}
-        className={`flex-1 py-2 text-sm font-medium rounded-lg transition-colors press-feedback ${
+        className={`flex-1 py-2 min-h-[44px] text-sm font-medium rounded-lg transition-colors press-feedback ${
           tab === 'library'
-            ? 'bg-white dark:bg-slate-700 text-indigo-600 dark:text-indigo-400 shadow-sm'
-            : 'text-slate-500 dark:text-slate-400 hover:text-slate-700 dark:hover:text-slate-300'
+            ? 'bg-white dark:bg-slate-700 text-indigo-600 dark:text-indigo-300 shadow-sm'
+            : 'text-slate-600 dark:text-slate-300 hover:text-slate-800 dark:hover:text-slate-100'
         }`}
       >
         Library
@@ -408,37 +409,36 @@ export default function ReaderPage() {
         <TextLibrary onSelectText={openTextFromLibrary} onSelectCurated={openCuratedText} />
       ) : (
       <div className="space-y-3">
+        <label htmlFor="reader-title" className="sr-only">Title</label>
         <input
+          id="reader-title"
+          name="title"
           type="text"
           placeholder="Title (optional)"
           value={title}
           onChange={(e) => setTitle(e.target.value)}
           className="w-full px-4 py-2 border border-slate-300 dark:border-slate-600 rounded-xl focus:outline-none focus:ring-2 focus:ring-indigo-300 dark:focus:ring-indigo-700 bg-white dark:bg-slate-800 dark:text-slate-100"
         />
-        {/* Language pill selector */}
-        <div className="flex gap-1 bg-slate-100 dark:bg-slate-800 rounded-xl p-1">
-          {activeLanguages.map((code) => (
-            <button
-              key={code}
-              onClick={() => setLanguage(code)}
-              className={`flex-1 py-2 px-3 text-sm font-medium rounded-lg transition-colors press-feedback ${
-                language === code
-                  ? 'bg-white dark:bg-slate-700 text-indigo-600 dark:text-indigo-400 shadow-sm'
-                  : 'text-slate-500 dark:text-slate-400 hover:text-slate-700 dark:hover:text-slate-300'
-              }`}
-            >
-              {getLanguageLabel(code)}
-            </button>
-          ))}
-        </div>
+        <LanguagePicker
+          options={activeLanguages}
+          value={language}
+          onChange={setLanguage}
+          label="Language of this text"
+        />
+        <label htmlFor="reader-text" className="sr-only">Text to read</label>
         <textarea
+          id="reader-text"
+          name="text"
           placeholder="Paste your text here..."
           value={text}
           onChange={(e) => setText(e.target.value)}
           rows={8}
           className="w-full px-4 py-3 border border-slate-300 dark:border-slate-600 rounded-xl focus:outline-none focus:ring-2 focus:ring-indigo-300 dark:focus:ring-indigo-700 resize-none bg-white dark:bg-slate-800 dark:text-slate-100"
         />
+        <label htmlFor="reader-translation" className="sr-only">Translation</label>
         <textarea
+          id="reader-translation"
+          name="translation"
           placeholder="Translation (optional — for bilingual reading)"
           value={translation}
           onChange={(e) => setTranslation(e.target.value)}
@@ -493,7 +493,7 @@ export default function ReaderPage() {
             resetReadingState();
             getTextCount().then((count) => setTab(count > 0 ? 'library' : 'import'));
           }}
-          className="text-sm text-indigo-600 dark:text-indigo-400 hover:underline press-feedback"
+          className="inline-flex min-h-[44px] items-center text-sm text-indigo-600 dark:text-indigo-400 hover:underline press-feedback"
         >
           ← New text
         </button>
@@ -510,7 +510,7 @@ export default function ReaderPage() {
       {translation.trim() && (
         <button
           onClick={() => setShowBilingual((v) => !v)}
-          className={`mb-3 flex items-center gap-1.5 text-sm font-medium px-3 py-1.5 rounded-full transition-colors press-feedback min-h-[44px] ${
+          className={`mb-3 flex items-center gap-1.5 text-sm font-medium px-3 py-1.5 min-h-[44px] rounded-full transition-colors press-feedback min-h-[44px] ${
             showBilingual
               ? 'bg-indigo-600 text-white'
               : 'bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400 hover:bg-slate-200 dark:hover:bg-slate-700'

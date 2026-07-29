@@ -41,7 +41,7 @@ export default class ErrorBoundary extends Component<Props, State> {
                 <button
                   type="button"
                   onClick={() => window.location.reload()}
-                  className="press-feedback gradient-danger text-white rounded-xl px-5 py-2.5 text-sm font-medium"
+                  className="press-feedback fill-danger text-white rounded-xl px-5 py-2.5 text-sm font-medium"
                 >
                   Try Again
                 </button>

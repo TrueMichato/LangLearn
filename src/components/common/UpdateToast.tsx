@@ -20,7 +20,7 @@ export default function UpdateToast() {
         <button
           type="button"
           onClick={() => updateServiceWorker(true)}
-          className="gradient-primary text-white rounded-xl press-feedback px-3 py-1.5 text-sm font-medium"
+          className="fill-primary text-white rounded-xl press-feedback px-3 py-1.5 text-sm font-medium"
         >
           Update
         </button>

@@ -109,7 +109,7 @@ export default function HeatMap({ studySessions }: HeatMapProps) {
             return (
               <div
                 key={`month-${col}`}
-                className="text-[10px] text-slate-500 dark:text-slate-400 leading-none whitespace-nowrap overflow-visible pointer-events-none"
+                className="text-xs text-slate-500 dark:text-slate-400 leading-none whitespace-nowrap overflow-visible pointer-events-none"
                 style={{ height: 14, lineHeight: '14px' }}
               >
                 {label?.label ?? ''}
@@ -123,7 +123,7 @@ export default function HeatMap({ studySessions }: HeatMapProps) {
               {/* Day label */}
               <div
                 key={`label-${row}`}
-                className="text-[10px] text-slate-500 dark:text-slate-400 flex items-center"
+                className="text-xs text-slate-500 dark:text-slate-400 flex items-center"
                 style={{ height: CELL_SIZE }}
               >
                 {DAY_LABELS.find((d) => d.index === row)?.label ?? ''}
@@ -158,7 +158,7 @@ export default function HeatMap({ studySessions }: HeatMapProps) {
       </div>
 
       {/* Legend */}
-      <div className="flex items-center gap-1 mt-3 text-[10px] text-slate-500 dark:text-slate-400 justify-end">
+      <div className="flex items-center gap-1 mt-3 text-xs text-slate-500 dark:text-slate-400 justify-end">
         <span>Less</span>
         {[
           'bg-slate-100 dark:bg-slate-800',

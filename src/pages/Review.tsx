@@ -1,17 +1,19 @@
 import { useEffect, useState, useCallback, useMemo } from 'react';
 import { useNavigate, useSearchParams } from 'react-router-dom';
-import { getDueReviews, getRandomWords } from '../db/words';
+import { getDueReviews, getRandomWords, getTotalWordCount } from '../db/words';
 import { processReview } from '../db/reviews';
 import { useReviewStore, type QueueItem, type PracticeMode } from '../stores/reviewStore';
 import { useTimerStore } from '../stores/timerStore';
 import { useSettingsStore } from '../stores/settingsStore';
+import LanguagePicker from '../components/common/LanguagePicker';
 import { useStudySetsStore } from '../stores/studySetsStore';
 import { getFilteredReviewQueue } from '../lib/filtered-review';
+import { getStudySuggestions, type StudySuggestion } from '../lib/study-suggestions';
+import { ROUTES } from '../lib/routes';
 import { getMistakeDeck, getLeechWordIds } from '../lib/mistakes';
 import { getTopicDeck } from '../lib/grammar-topics';
 import { composeAdaptiveBatch } from '../lib/adaptive';
 import { get7DayRetention } from '../lib/analytics';
-import { getLanguageFlag } from '../lib/languages';
 import Flashcard from '../components/srs/Flashcard';
 import ReverseCard from '../components/srs/ReverseCard';
 import ListeningCard from '../components/srs/ListeningCard';
@@ -27,6 +29,39 @@ import { assignCardType, selectDistractors } from '../lib/card-types';
 import type { CardType } from '../lib/card-types';
 import type { SM2Grade } from '../lib/sm2';
 import { useKeyboardShortcuts } from '../hooks/useKeyboardShortcuts';
+
+const PRACTICE_MODE_LABELS: Record<string, string> = {
+  'word-to-meaning': 'Word → Meaning',
+  'meaning-to-word': 'Meaning → Word',
+  random: 'Random',
+  both: 'Both sides',
+};
+
+const PRACTICE_MODE_KEY = 'langlearn-practice-mode';
+const PRACTICE_MODES: PracticeMode[] = [
+  'word-to-meaning',
+  'meaning-to-word',
+  'random',
+  'both',
+];
+
+function loadRememberedMode(): PracticeMode {
+  try {
+    const raw = localStorage.getItem(PRACTICE_MODE_KEY);
+    if (raw && (PRACTICE_MODES as string[]).includes(raw)) return raw as PracticeMode;
+  } catch {
+    /* storage unavailable — fall through to the default */
+  }
+  return 'word-to-meaning';
+}
+
+function rememberMode(mode: PracticeMode) {
+  try {
+    localStorage.setItem(PRACTICE_MODE_KEY, mode);
+  } catch {
+    /* non-fatal: the mode just won't persist */
+  }
+}
 
 const CARD_TYPE_LABELS: Record<string, { label: string; bg: string }> = {
   classic: { label: 'Classic', bg: 'bg-indigo-100 text-indigo-700 dark:bg-indigo-900/50 dark:text-indigo-300' },
@@ -54,7 +89,7 @@ function applyPracticeMode(_baseType: CardType, mode: PracticeMode): CardType {
 export default function ReviewPage() {
   const { queue, currentIndex, isFlipped, cardsReviewed, practiceMode, setQueue, flip, next, reset, setPracticeMode } =
     useReviewStore();
-  const { isRunning, start } = useTimerStore();
+  const { isRunning, start, stop: stopTimer } = useTimerStore();
   const reviewBatchSize = useSettingsStore((s) => s.reviewBatchSize);
   const activeLanguages = useSettingsStore((s) => s.activeLanguages);
   const adaptiveReview = useSettingsStore((s) => s.adaptiveReview);
@@ -69,12 +104,20 @@ export default function ReviewPage() {
   const studySet = useStudySetsStore((s) => s.sets.find((ss) => ss.id === setId));
   const [loading, setLoading] = useState(true);
   const [totalDue, setTotalDue] = useState(0);
+  const [totalWords, setTotalWords] = useState(0);
   const [showAddModal, setShowAddModal] = useState(false);
 
   const [shaking, setShaking] = useState(false);
   const [retention, setRetention] = useState<{ percent: number; reviewCount: number } | null>(null);
+  const [nextUp, setNextUp] = useState<StudySuggestion | null>(null);
+  /* Choosing a recall direction is meaningless before you've seen a single
+     card, so it must not stand between a beginner and their first review.
+     We start in the remembered mode (Word -> Meaning the first time) and put
+     the chooser behind an explicit control on the review screen instead. */
+  const [showModePicker, setShowModePicker] = useState(false);
   // Language filter: null = per-language (default), 'all' = cross-language
   const [reviewLanguage, setReviewLanguage] = useState<string | null>(null);
+  const setCurrentLanguage = useSettingsStore((s) => s.setCurrentLanguage);
 
   useEffect(() => {
     get7DayRetention().then(setRetention);
@@ -112,6 +155,7 @@ export default function ReviewPage() {
       [due[i], due[j]] = [due[j], due[i]];
     }
     setTotalDue(due.length);
+    setTotalWords(await getTotalWordCount());
 
     // Adaptive composition weights the standard due queue toward weaker cards.
     // Purpose-built decks (mistakes, topic, study set) already curate their items.
@@ -173,7 +217,35 @@ export default function ReviewPage() {
     loadCards();
   }, [loadCards]);
 
+  useEffect(() => {
+    if (practiceMode || showModePicker) return;
+    setPracticeMode(loadRememberedMode());
+  }, [practiceMode, showModePicker, setPracticeMode]);
+
+  /* When the queue runs out the session really is over: stop the clock so the
+     timer doesn't keep billing time to "Review" while the learner wanders the
+     app, and work out what to point them at next. */
+  const sessionOver = !loading && queue.length > 0 && currentIndex >= queue.length;
+  useEffect(() => {
+    if (!sessionOver) return;
+    let live = true;
+    stopTimer();
+    getStudySuggestions(activeLanguages).then((all) => {
+      if (!live) return;
+      const best = all
+        .filter((sug) => sug.route !== ROUTES.review)
+        .sort((a, b) => b.priority - a.priority)[0];
+      setNextUp(best ?? null);
+    });
+    return () => {
+      live = false;
+    };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [sessionOver]);
+
   const handleSelectMode = (mode: PracticeMode) => {
+    rememberMode(mode);
+    setShowModePicker(false);
     setPracticeMode(mode);
     loadCards(mode);
   };
@@ -183,8 +255,12 @@ export default function ReviewPage() {
     navigate('/');
   };
 
+  /* Reviewing in one language is the same decision as studying in it, so a pick
+     here follows you to Grammar, Vocab and the rest. "All languages" and
+     "Everything" are deliberately cross-language views and steer nothing. */
   const handleLanguageChange = (lang: string | null) => {
     setReviewLanguage(lang);
+    if (lang && lang !== 'all') setCurrentLanguage(lang);
   };
 
   const handleGrade = async (grade: SM2Grade) => {
@@ -272,16 +348,45 @@ export default function ReviewPage() {
         </div>
       );
     }
+    if (totalWords === 0) {
+      return (
+        <div className="flex flex-col items-center justify-center h-64 text-center px-6">
+          <p className="text-5xl mb-4">🌱</p>
+          <p className="text-xl font-semibold text-slate-700 dark:text-slate-200">
+            Nothing to review yet
+          </p>
+          <p className="text-slate-500 dark:text-slate-400 mt-2 max-w-xs">
+            Reviews appear here once you've finished your first lesson.
+          </p>
+          <button
+            onClick={() => navigate('/vocab-lessons')}
+            className="mt-4 min-h-[44px] bg-indigo-600 text-white px-5 py-2 rounded-xl hover:bg-indigo-700 transition-colors"
+          >
+            Start your first lesson →
+          </button>
+          <button
+            onClick={() => setShowAddModal(true)}
+            className="mt-3 min-h-[44px] px-2 text-sm font-medium text-indigo-600 dark:text-indigo-400 hover:underline"
+          >
+            Add a word manually
+          </button>
+          <AddWordModal
+            isOpen={showAddModal}
+            onClose={() => { setShowAddModal(false); loadCards(); }}
+          />
+        </div>
+      );
+    }
     return (
       <div className="flex flex-col items-center justify-center h-64 text-center">
         <p className="text-5xl mb-4">🎉</p>
-        <p className="text-xl font-semibold text-slate-700 dark:text-slate-200">No cards to review!</p>
+        <p className="text-xl font-semibold text-slate-700 dark:text-slate-200">You're all caught up!</p>
         <p className="text-slate-500 dark:text-slate-400 mt-2">
-          Add words from the Reader or check back later.
+          Nothing is due right now. New cards arrive as you learn.
         </p>
         <button
           onClick={() => setShowAddModal(true)}
-          className="mt-4 bg-indigo-600 text-white px-5 py-2 rounded-xl hover:bg-indigo-700 transition-colors"
+          className="mt-4 min-h-[44px] bg-indigo-600 text-white px-5 py-2 rounded-xl hover:bg-indigo-700 transition-colors"
         >
           ➕ Add some words
         </button>
@@ -293,44 +398,30 @@ export default function ReviewPage() {
     );
   }
 
-  if (!practiceMode) {
+  if (showModePicker || !practiceMode) {
     return (
       <div>
         {/* Language filter — only when user has multiple active languages and no study set */}
         {!setId && activeLanguages.length > 1 && (
           <div className="flex items-center justify-center gap-2 mb-2 flex-wrap">
-            <button
-              onClick={() => handleLanguageChange(null)}
-              className={`px-3 py-1.5 rounded-lg text-sm font-medium transition-colors ${
-                reviewLanguage === null
-                  ? 'bg-indigo-600 text-white'
-                  : 'border border-slate-300 dark:border-slate-600 text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-700'
-              }`}
-            >
-              My Languages
-            </button>
-            {activeLanguages.map((lang) => (
-              <button
-                key={lang}
-                onClick={() => handleLanguageChange(lang)}
-                className={`px-3 py-1.5 rounded-lg text-sm font-medium transition-colors ${
-                  reviewLanguage === lang
-                    ? 'bg-indigo-600 text-white'
-                    : 'border border-slate-300 dark:border-slate-600 text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-700'
-                }`}
-              >
-                {getLanguageFlag(lang)} {lang.toUpperCase()}
-              </button>
-            ))}
+            <LanguagePicker
+              options={activeLanguages}
+              value={reviewLanguage === 'all' ? undefined : reviewLanguage ?? undefined}
+              onChange={handleLanguageChange}
+              allowAll
+              onSelectAll={() => handleLanguageChange(null)}
+              label="Review language"
+            />
             <button
               onClick={() => handleLanguageChange('all')}
-              className={`px-3 py-1.5 rounded-lg text-sm font-medium transition-colors ${
+              aria-pressed={reviewLanguage === 'all'}
+              className={`min-h-[44px] px-3 rounded-xl text-sm font-medium transition-colors ${
                 reviewLanguage === 'all'
                   ? 'bg-indigo-600 text-white'
-                  : 'border border-slate-300 dark:border-slate-600 text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-700'
+                  : 'bg-slate-100 dark:bg-slate-700 text-slate-700 dark:text-slate-200 hover:bg-slate-200 dark:hover:bg-slate-600'
               }`}
             >
-              🌐 All
+              🌐 Everything
             </button>
           </div>
         )}
@@ -341,23 +432,64 @@ export default function ReviewPage() {
 
   if (currentIndex >= queue.length) {
     return (
-      <div className="flex flex-col items-center justify-center h-64 text-center">
+      <div className="page-enter text-center py-8">
         <p className="text-6xl mb-4 animate-[pop_0.5s_ease-out]">🎉</p>
         <p className="text-2xl font-bold mb-1 text-indigo-600 dark:text-indigo-400">
           Session Complete!
         </p>
-        <p className="text-slate-500 dark:text-slate-400 mt-2 animate-[countUp_0.3s_ease-out]">
-          You reviewed <span className="font-semibold text-slate-700 dark:text-slate-200">{cardsReviewed}</span> cards. Great effort!
+        <p className="text-slate-600 dark:text-slate-300 mt-2 animate-[countUp_0.3s_ease-out]">
+          You reviewed <span className="font-semibold text-slate-800 dark:text-slate-100">{cardsReviewed}</span> cards. Great effort!
         </p>
-        <button
-          onClick={() => {
-            reset();
-            loadCards();
-          }}
-          className="mt-5 gradient-primary text-white px-6 py-2.5 rounded-xl press-feedback hover:opacity-90 transition-opacity font-medium"
-        >
-          🔁 Review Again
-        </button>
+
+        {/* The end of a session is the one moment the app knows exactly what
+            the learner just did, so it is the best place to point at what
+            comes next. It used to offer only "Review Again", which is a
+            cul-de-sac: the session ended and the app had nothing to say. */}
+        <div className="mt-6 text-left">
+          {nextUp ? (
+            <button
+              onClick={() => navigate(nextUp.route)}
+              className="w-full flex items-center gap-3 bg-indigo-50 dark:bg-indigo-900/30 border border-indigo-200 dark:border-indigo-800 rounded-2xl p-4 text-left hover:bg-indigo-100 dark:hover:bg-indigo-900/50 transition-colors min-h-[44px]"
+            >
+              <span className="text-2xl shrink-0">{nextUp.icon}</span>
+              <span className="min-w-0">
+                <span className="block text-xs font-semibold text-indigo-600 dark:text-indigo-300">
+                  Next up
+                </span>
+                <span className="block font-semibold text-slate-800 dark:text-slate-100 truncate">
+                  {nextUp.title}
+                </span>
+                <span className="block text-sm text-slate-600 dark:text-slate-300 truncate">
+                  {nextUp.description}
+                </span>
+              </span>
+              <span className="ml-auto text-indigo-600 dark:text-indigo-300 shrink-0">→</span>
+            </button>
+          ) : (
+            <p className="rounded-2xl border border-slate-200/70 dark:border-white/10 p-4 text-sm text-slate-600 dark:text-slate-300">
+              You're all caught up. New reviews appear as they come due — see
+              you tomorrow. 🌱
+            </p>
+          )}
+        </div>
+
+        <div className="mt-4 flex gap-2">
+          <button
+            onClick={() => navigate('/')}
+            className="flex-1 min-h-[44px] rounded-xl border border-slate-200 dark:border-white/10 px-4 py-2.5 font-medium text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-700 transition-colors press-feedback"
+          >
+            Back to Home
+          </button>
+          <button
+            onClick={() => {
+              reset();
+              loadCards();
+            }}
+            className="flex-1 min-h-[44px] rounded-xl border border-slate-200 dark:border-white/10 px-4 py-2.5 font-medium text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-700 transition-colors press-feedback"
+          >
+            🔁 Review again
+          </button>
+        </div>
       </div>
     );
   }
@@ -384,6 +516,14 @@ export default function ReviewPage() {
                 Reviewing {queue.length} of {totalDue} due cards
               </p>
             )}
+            {/* The direction no longer blocks entry, so it needs to stay
+                visible and reversible from inside the session. */}
+            <button
+              onClick={() => setShowModePicker(true)}
+              className="text-xs text-indigo-600 dark:text-indigo-400 hover:underline"
+            >
+              {PRACTICE_MODE_LABELS[practiceMode] ?? 'Practice mode'} · Change
+            </button>
           </div>
         </div>
         <span className="text-sm text-slate-500 dark:text-slate-400">
@@ -391,15 +531,13 @@ export default function ReviewPage() {
         </span>
       </div>
 
-      {/* Progress bar */}
+      {/* Progress bar — the "N / M" counter above already states the numbers,
+          so the bar stays purely visual instead of overlaying 9px text. */}
       <div className="relative w-full bg-slate-200 dark:bg-slate-700 rounded-full h-2.5 mb-4 overflow-hidden">
         <div
           className="h-2.5 rounded-full bg-indigo-500 transition-all duration-500"
           style={{ width: `${Math.round(((currentIndex) / queue.length) * 100)}%` }}
         />
-        <span className="absolute inset-0 flex items-center justify-center text-[9px] font-medium text-slate-600 dark:text-slate-300 leading-none">
-          {Math.round(((currentIndex) / queue.length) * 100)}%
-        </span>
       </div>
 
       <div className="flex justify-center mb-2">

@@ -87,7 +87,7 @@ export default function RecognitionQuiz({ characters, alphabetName, language, on
 
   const startTimer = useCallback(() => {
     if (!hasStartedTimer && !timerIsRunning) {
-      timerStart('grammar');
+      timerStart('letters');
       setHasStartedTimer(true);
     }
   }, [hasStartedTimer, timerIsRunning, timerStart]);

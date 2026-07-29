@@ -2,10 +2,11 @@ import { useState, useEffect, useCallback } from 'react';
 import SearchBar from '../components/common/SearchBar';
 import { searchWords, updateWord, deleteWord, type WordFilter } from '../db/words';
 import { db, type Word, type Review } from '../db/schema';
-import { useSettingsStore } from '../stores/settingsStore';
 import AddWordModal from '../components/srs/AddWordModal';
 import CSVImport from '../components/common/CSVImport';
-import { getLanguageLabel, getLanguageFlag } from '../lib/languages';
+import { getLanguageFlag } from '../lib/languages';
+import { useCurrentLanguage } from '../hooks/useCurrentLanguage';
+import LanguagePicker from '../components/common/LanguagePicker';
 import { SkeletonList } from '../components/common/Skeleton';
 import StudySets from '../components/words/StudySets';
 import { getFrequencyRank, getFrequencyTier, getFrequencyLabel, type FrequencyTier } from '../data/frequency';
@@ -77,9 +78,14 @@ function FrequencyBadge({ word, language }: { word: string; language: string }) 
 }
 
 export default function WordsPage() {
-  const activeLanguages = useSettingsStore((s) => s.activeLanguages);
   const [search, setSearch] = useState('');
-  const [language, setLanguage] = useState<string | undefined>(undefined);
+  const {
+    language: currentLanguage,
+    setLanguage: setCurrentLanguage,
+    options: activeLangOptions,
+  } = useCurrentLanguage();
+  const [showAllLanguages, setShowAllLanguages] = useState(false);
+  const language = showAllLanguages ? undefined : currentLanguage;
   const [status, setStatus] = useState<StatusFilter>('all');
   const [sortBy, setSortBy] = useState<WordFilter['sortBy']>('createdAt');
   const [sortDir, setSortDir] = useState<WordFilter['sortDir']>('desc');
@@ -152,7 +158,7 @@ export default function WordsPage() {
   }
 
   const chipBase =
-    'px-3 py-1 rounded-full text-sm font-medium transition-colors cursor-pointer select-none press-feedback';
+    'px-3 py-1 min-h-[44px] min-w-[44px] rounded-full text-sm font-medium transition-colors cursor-pointer select-none press-feedback';
   const chipActive = 'bg-indigo-600 text-white';
   const chipInactive =
     'bg-slate-100 text-slate-700 dark:bg-slate-700 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-600';
@@ -179,24 +185,17 @@ export default function WordsPage() {
 
       <SearchBar value={search} onChange={setSearch} placeholder="Search words…" />
 
-      {/* Language chips */}
-      <div className="flex flex-wrap gap-2">
-        <button
-          className={`${chipBase} ${!language ? chipActive : chipInactive}`}
-          onClick={() => setLanguage(undefined)}
-        >
-          All
-        </button>
-        {activeLanguages.map((lang) => (
-          <button
-            key={lang}
-            className={`${chipBase} ${language === lang ? chipActive : chipInactive}`}
-            onClick={() => setLanguage(lang === language ? undefined : lang)}
-          >
-            {getLanguageLabel(lang)}
-          </button>
-        ))}
-      </div>
+      <LanguagePicker
+        options={activeLangOptions}
+        value={language}
+        onChange={(l) => {
+          setShowAllLanguages(false);
+          setCurrentLanguage(l);
+        }}
+        allowAll
+        onSelectAll={() => setShowAllLanguages(true)}
+        label="Filter words by language"
+      />
 
       {/* Status chips + sort */}
       <div className="flex flex-wrap items-center gap-2">
@@ -216,7 +215,7 @@ export default function WordsPage() {
             setSortBy(sb as WordFilter['sortBy']);
             setSortDir(sd as WordFilter['sortDir']);
           }}
-          className="ml-auto text-sm bg-white dark:bg-slate-800 border border-slate-300 dark:border-slate-600 rounded-lg px-2 py-1 text-slate-700 dark:text-slate-300"
+          className="ml-auto min-h-[44px] text-sm bg-white dark:bg-slate-800 border border-slate-300 dark:border-slate-600 rounded-lg px-2 py-1 text-slate-700 dark:text-slate-300"
         >
           <option value="createdAt-desc">Newest</option>
           <option value="createdAt-asc">Oldest</option>

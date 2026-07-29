@@ -1,5 +1,5 @@
 import { useState, useEffect, useCallback, useMemo } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { db } from '../db/schema';
 import type { StudySession, DailyActivity } from '../db/schema';
 import { getDueCount } from '../db/reviews';
@@ -7,6 +7,7 @@ import { getTotalWordCount } from '../db/words';
 import { formatStudyTime } from '../lib/xp';
 import { calculateCurrentStreak, calculateLongestStreak, todayStr, reconcileFreezes } from '../lib/streaks';
 import { useSettingsStore } from '../stores/settingsStore';
+import { useCurrentLanguage } from '../hooks/useCurrentLanguage';
 import { useXPStore } from '../stores/xpStore';
 import HeatMap from '../components/dashboard/HeatMap';
 import LanguageStats from '../components/dashboard/LanguageStats';
@@ -23,6 +24,8 @@ import Milestones from '../components/dashboard/Milestones';
 import VocabSizeCard from '../components/dashboard/VocabSizeCard';
 import { PageSkeleton } from '../components/common/Skeleton';
 import StudyTip from '../components/common/StudyTip';
+import StartingPoints from '../components/onboarding/StartingPoints';
+import { hasStarted, hasProgress } from '../lib/dashboard-gates';
 
 interface Stats {
   totalWords: number;
@@ -30,6 +33,10 @@ interface Stats {
   totalStudySeconds: number;
   weekStudySeconds: number;
   timeXP: number;
+  /* Letters and lessons are real study even before they produce a word or a
+     timed session. Without them the dashboard forgets a learner who did
+     exactly what the on-ramp told them to do. */
+  lessonsTouched: number;
 }
 
 function getGreeting(): { text: string; emoji: string } {
@@ -46,12 +53,14 @@ export default function Dashboard() {
   const weeklyGoalMinutes = useSettingsStore((s) => s.weeklyGoalMinutes);
   const dailyGoalMinutes = useSettingsStore((s) => s.dailyGoalMinutes);
   const activeLanguages = useSettingsStore((s) => s.activeLanguages);
+  const { language: currentLanguage } = useCurrentLanguage();
   const streakFreezes = useSettingsStore((s) => s.streakFreezes);
   const consumeStreakFreezes = useSettingsStore((s) => s.consumeStreakFreezes);
   const grantStreakFreeze = useSettingsStore((s) => s.grantStreakFreeze);
   const bonusXP = useXPStore((s) => s.bonusXP);
   const [showAddModal, setShowAddModal] = useState(false);
   const greeting = useMemo(getGreeting, []);
+  const navigate = useNavigate();
 
   const loadData = useCallback(async () => {
     const totalWords = await getTotalWordCount();
@@ -75,7 +84,17 @@ export default function Dashboard() {
       0
     );
 
-    setStats({ totalWords, dueCards, totalStudySeconds, weekStudySeconds, timeXP });
+    const lessonsTouched =
+      (await db.characterProgress.count()) + (await db.lessonProgress.count());
+
+    setStats({
+      totalWords,
+      dueCards,
+      totalStudySeconds,
+      weekStudySeconds,
+      timeXP,
+      lessonsTouched,
+    });
 
     const dailyActivities = await db.dailyActivity.toArray();
 
@@ -127,6 +146,17 @@ export default function Dashboard() {
     currentStreak >= 30 ? '🔥🔥🔥' : currentStreak >= 7 ? '🔥🔥' : '🔥';
   const isMilestone = currentStreak >= 100 || currentStreak === 30 || currentStreak === 7;
 
+  // Two gates, not one — see src/lib/dashboard-gates.ts for why.
+  const activity = {
+    totalWords: stats.totalWords,
+    totalStudySeconds: stats.totalStudySeconds,
+    lessonsTouched: stats.lessonsTouched,
+    bonusXP,
+  };
+  const started = hasStarted(activity);
+  const progress = hasProgress(activity);
+  const firstLanguage = currentLanguage ?? activeLanguages[0];
+
   return (
     <div className="page-enter">
       <WeeklyRecapModal />
@@ -139,7 +169,7 @@ export default function Dashboard() {
         </div>
         <Link
           to="/settings"
-          className="p-2 rounded-full hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors"
+          className="flex min-h-[44px] min-w-[44px] items-center justify-center rounded-full hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors"
           aria-label="Settings"
         >
           <span className="text-xl">⚙️</span>
@@ -154,102 +184,133 @@ export default function Dashboard() {
         weeklyGoalSeconds={weeklyGoalSeconds}
         currentStreak={currentStreak}
         streakFreezes={streakFreezes}
+        hasData={started}
       />
 
-      {stats.totalWords === 0 && (
-        <div className="bg-indigo-50 dark:bg-indigo-900/30 border border-indigo-200 dark:border-indigo-800 rounded-2xl p-4 mb-6 text-center">
-          <p className="text-indigo-800 dark:text-indigo-200 font-semibold">
-            Get started by adding your first word ✨
-          </p>
+      {!started ? (
+        <div className="mb-6">
+          {firstLanguage ? (
+            <StartingPoints
+              language={firstLanguage}
+              onSelect={(point) => navigate(point.route)}
+              heading="Start here"
+              description="Pick one — it takes about two minutes."
+            />
+          ) : (
+            <div className="rounded-2xl border border-slate-200/70 dark:border-white/10 bg-white dark:bg-slate-800 p-4">
+              <p className="font-semibold text-slate-800 dark:text-slate-100">
+                Choose a language to begin
+              </p>
+              <p className="mt-1 text-sm text-slate-500 dark:text-slate-400">
+                Pick what you're learning and we'll suggest where to start.
+              </p>
+              <Link
+                to="/settings"
+                className="mt-3 inline-flex min-h-[44px] items-center rounded-xl bg-indigo-600 px-5 py-2 font-semibold text-white transition-colors hover:bg-indigo-700"
+              >
+                Choose a language
+              </Link>
+            </div>
+          )}
           <button
             onClick={() => setShowAddModal(true)}
-            className="mt-2 px-4 py-2 rounded-xl bg-indigo-600 text-white font-semibold hover:bg-indigo-700 transition-colors"
+            className="mt-3 min-h-[44px] px-1 text-sm font-medium text-indigo-600 dark:text-indigo-400 hover:underline"
           >
-            ➕ Add a word
+            Already have a word list? Add one manually
           </button>
         </div>
-      )}
-
-      <div className="grid grid-cols-2 gap-3 mb-6">
-        <StatCard label="Words Learned" value={stats.totalWords} icon="📚" />
-        <StatCard label="Cards Due" value={stats.dueCards} icon="🃏" />
-        <StatCard label="Total Study Time" value={formatStudyTime(stats.totalStudySeconds)} icon="⏱️" />
-        <StatCard label="Total XP" value={stats.timeXP + bonusXP} icon="⭐" />
-      </div>
-
-      <SuggestedNext />
-
-      <MistakeDeckCard />
-
-      <DailyChallengeCard />
-
-      <h3 className="text-sm font-semibold text-slate-500 dark:text-slate-400 mb-3 mt-8">
-        Your progress
-      </h3>
-
-      <WeeklyGoals />
-
-      <ReviewForecast />
-
-      <Milestones />
-
-      {stats.totalWords > 0 && (
-        <LanguageStats languages={activeLanguages} />
-      )}
-
-      <VocabSizeCard />
-
-      <Link
-        to="/analytics"
-        className="block bg-white dark:bg-slate-800/90 rounded-2xl shadow p-4 mb-6 hover:shadow-md transition-shadow"
-      >
-        <div className="flex items-center justify-between">
-          <div className="flex items-center gap-3">
-            <span className="text-2xl">📈</span>
-            <div>
-              <p className="font-semibold text-slate-800 dark:text-slate-100">SRS Analytics</p>
-              <p className="text-sm text-slate-500 dark:text-slate-400">View detailed review statistics</p>
+      ) : (
+        <>
+          {progress && (
+            <div className="grid grid-cols-2 gap-3 mb-6">
+              <StatCard label="Words Learned" value={stats.totalWords} icon="📚" />
+              <StatCard label="Cards Due" value={stats.dueCards} icon="🃏" />
+              <StatCard label="Total Study Time" value={formatStudyTime(stats.totalStudySeconds)} icon="⏱️" />
+              <StatCard label="Total XP" value={stats.timeXP + bonusXP} icon="⭐" />
             </div>
+          )}
+
+          <SuggestedNext />
+
+          <MistakeDeckCard />
+
+          <DailyChallengeCard />
+
+          {progress && (
+            <>
+          <h3 className="text-sm font-semibold text-slate-500 dark:text-slate-400 mb-3 mt-8">
+            Your progress
+          </h3>
+
+          <WeeklyGoals />
+
+          <ReviewForecast />
+
+          <Milestones />
+
+          {stats.totalWords > 0 && (
+            <LanguageStats languages={activeLanguages} />
+          )}
+
+          <VocabSizeCard />
+
+          <Link
+            to="/analytics"
+            className="block bg-white dark:bg-slate-800/90 rounded-2xl shadow p-4 mb-6 hover:shadow-md transition-shadow"
+          >
+            <div className="flex items-center justify-between">
+              <div className="flex items-center gap-3">
+                <span className="text-2xl">📈</span>
+                <div>
+                  <p className="font-semibold text-slate-800 dark:text-slate-100">Your stats</p>
+                  <p className="text-sm text-slate-500 dark:text-slate-400">Retention, forecasts and review history</p>
+                </div>
+              </div>
+              <span className="text-slate-500 dark:text-slate-400">→</span>
+            </div>
+          </Link>
+
+          <div className="bg-white dark:bg-slate-800/90 rounded-2xl shadow p-4 mb-6">
+            {currentStreak > 0 ? (
+              <>
+                <p className="text-2xl font-bold text-slate-800 dark:text-slate-100 text-center">
+                  <span
+                    className="inline-block animate-[wiggle_0.8s_ease-in-out_2]"
+                    style={isMilestone ? { filter: 'drop-shadow(0 0 8px #f59e0b) drop-shadow(0 0 16px #f97316)' } : undefined}
+                  >
+                    {streakEmoji}
+                  </span>{' '}
+                  {currentStreak}-day streak
+                </p>
+                <p className="text-sm text-slate-500 dark:text-slate-400 text-center mt-1">
+                  Best: {longestStreak} days
+                </p>
+              </>
+            ) : (
+              <p className="text-lg font-semibold text-slate-700 dark:text-slate-200 text-center">
+                Start your streak today! 💪
+              </p>
+            )}
           </div>
-          <span className="text-slate-500 dark:text-slate-400">→</span>
-        </div>
-      </Link>
 
-      <div className="bg-white dark:bg-slate-800/90 rounded-2xl shadow p-4 mb-6">
-        {currentStreak > 0 ? (
-          <>
-            <p className="text-2xl font-bold text-slate-800 dark:text-slate-100 text-center">
-              <span
-                className="inline-block animate-[wiggle_0.8s_ease-in-out_2]"
-                style={isMilestone ? { filter: 'drop-shadow(0 0 8px #f59e0b) drop-shadow(0 0 16px #f97316)' } : undefined}
-              >
-                {streakEmoji}
-              </span>{' '}
-              {currentStreak}-day streak
-            </p>
-            <p className="text-sm text-slate-500 dark:text-slate-400 text-center mt-1">
-              Best: {longestStreak} days
-            </p>
-          </>
-        ) : (
-          <p className="text-lg font-semibold text-slate-700 dark:text-slate-200 text-center">
-            Start your streak today! 💪
-          </p>
-        )}
-      </div>
-
-      <BadgeCollection />
+          <BadgeCollection />
+            </>
+          )}
+        </>
+      )}
 
       <StudyTip context="dashboard" className="mb-6" />
 
-      <div className="bg-white dark:bg-slate-800/90 rounded-2xl shadow p-4 mt-4">
-        <h3 className="font-semibold text-slate-700 dark:text-slate-200 mb-3">
-          Study Activity
-        </h3>
-        <HeatMap studySessions={allSessions} />
-      </div>
+      {progress && (
+        <div className="bg-white dark:bg-slate-800/90 rounded-2xl shadow p-4 mt-4">
+          <h3 className="font-semibold text-slate-700 dark:text-slate-200 mb-3">
+            Study Activity
+          </h3>
+          <HeatMap studySessions={allSessions} />
+        </div>
+      )}
 
-      <AddWordModal isOpen={showAddModal} onClose={() => setShowAddModal(false)} />
+      <AddWordModal isOpen={showAddModal} onClose={() => { setShowAddModal(false); loadData(); }} />
     </div>
   );
 }

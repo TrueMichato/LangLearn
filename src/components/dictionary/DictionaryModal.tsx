@@ -1,5 +1,6 @@
 import { useState, useEffect, useCallback, useRef } from 'react';
 import { useSettingsStore } from '../../stores/settingsStore';
+import { currentLanguageOf } from '../../lib/current-language';
 import { getLanguageLabel } from '../../lib/languages';
 import { searchDictionary, type DictResult } from '../../lib/dictionary-search';
 import { addWord, wordExists } from '../../db/words';
@@ -13,15 +14,22 @@ export default function DictionaryModal({ isOpen, onClose }: Props) {
   const activeLanguages = useSettingsStore((s) => s.activeLanguages);
 
   const [query, setQuery] = useState('');
-  const [language, setLanguage] = useState(activeLanguages[0] ?? 'ja');
+  // Defaults to what you're studying, but never writes back: picking a language
+  // here answers "where does this word go?", not "what am I studying now?".
+  const [language, setLanguage] = useState(() => currentLanguageOf(useSettingsStore.getState()) ?? 'ja');
   const [results, setResults] = useState<DictResult[]>([]);
   const [loading, setLoading] = useState(false);
   const [addedWords, setAddedWords] = useState<Set<string>>(new Set());
   const inputRef = useRef<HTMLInputElement>(null);
 
+  /* Read at open time, not as a dependency: the default should follow the
+     language you were studying when you opened this, and must not yank the
+     field out from under you if it changes while the form is filled in. */
   // Reset state when modal opens
   useEffect(() => {
     if (isOpen) {
+      const current = currentLanguageOf(useSettingsStore.getState());
+      if (current) setLanguage(current);
       setQuery('');
       setResults([]);
       setAddedWords(new Set());

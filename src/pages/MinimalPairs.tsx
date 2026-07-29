@@ -1,7 +1,8 @@
 import { useState, useEffect, useCallback, useRef } from 'react';
-import { useSettingsStore } from '../stores/settingsStore';
+import { useCurrentLanguage } from '../hooks/useCurrentLanguage';
+import LanguagePicker from '../components/common/LanguagePicker';
+import LanguageUnavailable from '../components/common/LanguageUnavailable';
 import { useXPStore } from '../stores/xpStore';
-import { getLanguageLabel } from '../lib/languages';
 import { speak } from '../lib/tts';
 import { jaMinimalPairs, ruMinimalPairs, ptMinimalPairs, esMinimalPairs, arMinimalPairs, roMinimalPairs } from '../data/minimal-pairs';
 import type { MinimalPair } from '../data/minimal-pairs';
@@ -43,6 +44,8 @@ const CATEGORIES: Record<string, string> = {
   'i-diphthong': 'Î / I & Diphthongs',
 };
 
+const MINIMAL_PAIR_LANGUAGES = ['ja', 'ru', 'pt', 'es', 'ar', 'ro'];
+
 function getPairsForLanguage(language: string): MinimalPair[] {
   switch (language) {
     case 'ja': return jaMinimalPairs;
@@ -70,8 +73,14 @@ function shuffle<T>(arr: T[]): T[] {
 }
 
 export default function MinimalPairsPage() {
-  const activeLanguages = useSettingsStore((s) => s.activeLanguages);
-  const [language, setLanguage] = useState(activeLanguages[0] ?? 'ja');
+  const {
+    language: currentLanguage,
+    setLanguage,
+    options: pairLanguages,
+    isSupported,
+    requested,
+  } = useCurrentLanguage(MINIMAL_PAIR_LANGUAGES);
+  const language = currentLanguage ?? 'ja';
   const [phase, setPhase] = useState<Phase>('setup');
   const [selectedCategories, setSelectedCategories] = useState<Set<string>>(new Set());
   const [queue, setQueue] = useState<MinimalPair[]>([]);
@@ -234,26 +243,27 @@ export default function MinimalPairsPage() {
           Train your ear to distinguish similar sounds. Listen to a word, then pick which one you heard.
         </p>
 
-        {/* Language selector */}
-        <div className="flex gap-1 bg-slate-100 dark:bg-slate-800 rounded-xl p-1 mb-4">
-          {activeLanguages.map((code) => {
-            const pairs = getPairsForLanguage(code);
-            return (
-              <button
-                key={code}
-                onClick={() => { setLanguage(code); setSelectedCategories(new Set()); }}
-                disabled={pairs.length === 0}
-                className={`flex-1 py-2 px-3 text-sm font-medium rounded-lg transition-colors press-feedback min-h-[44px] ${
-                  language === code
-                    ? 'bg-white dark:bg-slate-700 text-indigo-600 dark:text-indigo-400 shadow-sm'
-                    : 'text-slate-500 dark:text-slate-400 hover:text-slate-700 dark:hover:text-slate-300'
-                } disabled:opacity-40`}
-              >
-                {getLanguageLabel(code)}
-              </button>
-            );
-          })}
-        </div>
+        {!isSupported && (
+          <LanguageUnavailable
+            className="mb-4"
+            requested={requested}
+            options={pairLanguages}
+            onChange={setLanguage}
+            feature="Minimal pairs"
+            plural
+          />
+        )}
+
+        <LanguagePicker
+          className="mb-4"
+          options={pairLanguages}
+          value={language}
+          onChange={(code) => {
+            setLanguage(code);
+            setSelectedCategories(new Set());
+          }}
+          label="Minimal pair language"
+        />
 
         {/* Category filter */}
         <div className="bg-white dark:bg-slate-800 rounded-2xl shadow p-4 mb-4">
@@ -265,7 +275,7 @@ export default function MinimalPairsPage() {
               <button
                 key={cat}
                 onClick={() => toggleCategory(cat)}
-                className={`px-3 py-1.5 rounded-full text-sm font-medium transition-colors press-feedback min-h-[44px] ${
+                className={`px-3 py-1.5 min-h-[44px] rounded-full text-sm font-medium transition-colors press-feedback min-h-[44px] ${
                   selectedCategories.has(cat)
                     ? 'bg-indigo-600 text-white'
                     : 'bg-slate-100 dark:bg-slate-700 text-slate-700 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-600'
@@ -450,14 +460,14 @@ export default function MinimalPairsPage() {
           <div className="flex justify-center gap-3">
             <button
               onClick={() => playAudio(current, 'a')}
-              className="text-sm text-indigo-600 dark:text-indigo-400 hover:underline press-feedback min-h-[44px] flex items-center gap-1"
+              className="inline-flex min-h-[44px] items-center text-sm text-indigo-600 dark:text-indigo-400 hover:underline press-feedback min-h-[44px] flex items-center gap-1"
             >
               🔊 A: {current.wordA}
             </button>
             <span className="text-slate-300 dark:text-slate-600">|</span>
             <button
               onClick={() => playAudio(current, 'b')}
-              className="text-sm text-indigo-600 dark:text-indigo-400 hover:underline press-feedback min-h-[44px] flex items-center gap-1"
+              className="inline-flex min-h-[44px] items-center text-sm text-indigo-600 dark:text-indigo-400 hover:underline press-feedback min-h-[44px] flex items-center gap-1"
             >
               🔊 B: {current.wordB}
             </button>

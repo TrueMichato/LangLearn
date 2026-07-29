@@ -45,7 +45,7 @@ function Ring({ goal }: { goal: GoalProgress }) {
       <p className="text-xs font-semibold text-slate-700 dark:text-slate-200 tabular-nums">
         {goal.current}/{goal.target}
       </p>
-      <p className="text-[11px] text-slate-500 dark:text-slate-400 text-center leading-tight">
+      <p className="text-xs text-slate-500 dark:text-slate-400 text-center leading-tight">
         {goal.label}
       </p>
     </div>
@@ -91,7 +91,7 @@ export default function WeeklyGoals() {
           <Ring key={g.id} goal={g} />
         ))}
       </div>
-      <p className="text-[11px] text-slate-500 dark:text-slate-400 mt-3 text-center">
+      <p className="text-xs text-slate-500 dark:text-slate-400 mt-3 text-center">
         Progress over the last 7 days — every bit counts.
       </p>
     </div>

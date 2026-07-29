@@ -45,16 +45,16 @@ export default function BottomNav() {
               key={link.to}
               to={link.to}
               data-active={isActive}
-              className={`flex flex-col items-center py-2 px-1.5 text-xs transition-all duration-200 ${
+              className={`flex flex-col items-center min-w-[44px] py-2 px-1.5 text-xs transition-all duration-200 ${
                 isActive
                   ? 'text-indigo-600 dark:text-indigo-400 font-semibold'
-                  : 'text-slate-500 dark:text-slate-400 hover:text-slate-700 dark:hover:text-slate-300'
+                  : 'text-slate-600 dark:text-slate-300 hover:text-slate-800 dark:hover:text-slate-100'
               }`}
             >
               <span className={`relative text-xl mb-0.5 transition-transform duration-200 ${isActive ? 'scale-110' : ''}`}>
                 {link.icon}
                 {link.to === '/review' && dueCount > 0 && (
-                  <span className="absolute -top-1.5 -right-2.5 min-w-[18px] h-[18px] flex items-center justify-center rounded-full bg-red-500 text-white text-[10px] font-bold px-1 leading-none animate-[pop_0.3s_ease-out]">
+                  <span className="absolute -top-1.5 -right-2.5 min-w-[18px] h-[18px] flex items-center justify-center rounded-full bg-red-500 text-white text-xs font-bold px-1 leading-none animate-[pop_0.3s_ease-out]">
                     {dueCount > 99 ? '99+' : dueCount}
                   </span>
                 )}

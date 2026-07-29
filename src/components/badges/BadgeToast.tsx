@@ -37,7 +37,7 @@ export default function BadgeToast() {
       <div className="relative overflow-hidden bg-gradient-to-r from-amber-100 to-yellow-100 dark:from-amber-900/50 dark:to-yellow-900/50 rounded-2xl shadow-lg border border-amber-300 dark:border-amber-700 px-5 py-3 flex items-center gap-3 animate-[pulseGlow_1.5s_ease-in-out_3]">
         <span className="text-3xl animate-[pop_0.5s_ease-out]">{badge.icon}</span>
         <div>
-          <p className="text-xs font-semibold text-amber-600 dark:text-amber-400 uppercase tracking-wide">
+          <p className="text-xs font-semibold text-amber-600 dark:text-amber-400">
             Achievement Unlocked!
           </p>
           <p className="font-bold text-slate-800 dark:text-slate-100">

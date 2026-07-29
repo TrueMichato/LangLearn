@@ -68,8 +68,8 @@ export default function LineChart({
             x={padding.left - 6}
             y={tick.y + 4}
             textAnchor="end"
-            className="fill-slate-400 dark:fill-slate-500"
-            fontSize={10}
+            className="fill-slate-500 dark:fill-slate-400"
+            fontSize={12}
           >
             {tick.value}{unit}
           </text>
@@ -106,8 +106,8 @@ export default function LineChart({
             x={p.x}
             y={chartHeight - 4}
             textAnchor="middle"
-            className="fill-slate-400 dark:fill-slate-500"
-            fontSize={9}
+            className="fill-slate-500 dark:fill-slate-400"
+            fontSize={12}
           >
             {p.label}
           </text>

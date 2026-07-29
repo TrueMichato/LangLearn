@@ -3,9 +3,9 @@ import { useNudgeStore, type InAppNudge } from '../../stores/nudgeStore';
 type Tone = NonNullable<InAppNudge['tone']>;
 
 const toneClasses: Record<Tone, string> = {
-  info: 'from-indigo-50 to-violet-50 dark:from-indigo-950/60 dark:to-violet-950/60 border-indigo-200/60 dark:border-indigo-800/50',
-  warm: 'from-amber-50 to-orange-50 dark:from-amber-950/60 dark:to-orange-950/60 border-amber-200/60 dark:border-amber-800/50',
-  celebrate: 'from-emerald-50 to-teal-50 dark:from-emerald-950/60 dark:to-teal-950/60 border-emerald-200/60 dark:border-emerald-800/50',
+  info: 'bg-indigo-50 dark:bg-indigo-950/60 border-indigo-200/60 dark:border-indigo-800/50',
+  warm: 'bg-amber-50 dark:bg-amber-950/60 border-amber-200/60 dark:border-amber-800/50',
+  celebrate: 'bg-emerald-50 dark:bg-emerald-950/60 border-emerald-200/60 dark:border-emerald-800/50',
 };
 
 export default function InAppNudgeStack() {
@@ -22,7 +22,7 @@ export default function InAppNudgeStack() {
           return (
             <div
               key={n.id}
-              className={`pointer-events-auto rounded-2xl border bg-gradient-to-br ${toneClasses[tone]} shadow-lg p-3 animate-[scaleIn_0.2s_ease-out]`}
+              className={`pointer-events-auto rounded-2xl border ${toneClasses[tone]} shadow-lg p-3 animate-[scaleIn_0.2s_ease-out]`}
             >
               <div className="flex items-start gap-3">
                 <div className="flex-1 min-w-0">

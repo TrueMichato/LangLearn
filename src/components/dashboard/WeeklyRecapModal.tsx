@@ -112,7 +112,7 @@ export default function WeeklyRecapModal() {
               dismiss();
               navigate('/review');
             }}
-            className="flex-1 gradient-primary text-white px-5 py-2.5 rounded-xl font-medium press-feedback hover:opacity-90 transition-opacity min-h-[44px]"
+            className="flex-1 fill-primary text-white px-5 py-2.5 rounded-xl font-medium press-feedback hover:opacity-90 transition-opacity min-h-[44px]"
           >
             Start reviewing
           </button>

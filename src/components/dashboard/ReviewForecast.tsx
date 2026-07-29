@@ -73,21 +73,21 @@ export default function ReviewForecast() {
                 className="flex-1 flex flex-col items-center gap-1 group min-h-[44px] disabled:cursor-default"
                 aria-label={`${d.count} reviews on ${dayLabel(d.date, i)}`}
               >
-                <span className="text-[10px] font-medium text-slate-500 dark:text-slate-400 tabular-nums">
+                <span className="text-xs font-medium text-slate-500 dark:text-slate-400 tabular-nums">
                   {d.count}
                 </span>
                 <div className="w-full h-16 flex items-end rounded-md bg-slate-100 dark:bg-slate-700/50 overflow-hidden">
                   <div
                     className={`w-full rounded-md transition-all ${
                       i === 0
-                        ? 'bg-gradient-to-t from-indigo-500 to-violet-500'
+                        ? 'bg-indigo-500'
                         : 'bg-indigo-300 dark:bg-indigo-500/70 group-hover:bg-indigo-400 dark:group-hover:bg-indigo-400'
                     }`}
                     style={{ height: `${d.count === 0 ? 0 : Math.max(8, heightPct)}%` }}
                   />
                 </div>
                 <span
-                  className={`text-[10px] ${
+                  className={`text-xs ${
                     i === 0
                       ? 'font-semibold text-indigo-600 dark:text-indigo-300'
                       : 'text-slate-500 dark:text-slate-400'

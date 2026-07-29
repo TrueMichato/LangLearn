@@ -1,10 +1,11 @@
 import { lazy } from 'react';
-import { HashRouter, Routes, Route } from 'react-router-dom';
+import { HashRouter, Routes, Route, Navigate } from 'react-router-dom';
 import Shell from './components/layout/Shell';
 import OnboardingOverlay from './components/onboarding/OnboardingOverlay';
 import { useSettingsStore } from './stores/settingsStore';
 import ErrorBoundary from './components/common/ErrorBoundary';
 import UpdateToast from './components/common/UpdateToast';
+import { ROUTES } from './lib/routes';
 
 const Dashboard = lazy(() => import('./pages/Dashboard'));
 const ReviewPage = lazy(() => import('./pages/Review'));
@@ -33,31 +34,32 @@ export default function App() {
 
   return (
     <ErrorBoundary>
-      {!onboardingComplete && <OnboardingOverlay />}
       <HashRouter>
+        {!onboardingComplete && <OnboardingOverlay />}
         <Routes>
           <Route element={<Shell />}>
-            <Route path="/" element={<Dashboard />} />
-            <Route path="/review" element={<ReviewPage />} />
-            <Route path="/words" element={<WordsPage />} />
-            <Route path="/reader" element={<ReaderPage />} />
-            <Route path="/grammar" element={<GrammarPage />} />
-            <Route path="/settings" element={<SettingsPage />} />
-            <Route path="/learn" element={<LearnPage />} />
-            <Route path="/vocab-lessons" element={<VocabLessons />} />
-            <Route path="/letters/:lang" element={<LetterPractice />} />
-            <Route path="/listening" element={<ListeningPage />} />
-            <Route path="/conjugations" element={<ConjugationsPage />} />
-            <Route path="/sentence-builder" element={<SentenceBuilderPage />} />
-            <Route path="/analytics" element={<AnalyticsPage />} />
-            <Route path="/tests" element={<TestsPage />} />
-            <Route path="/daily-challenge" element={<DailyChallengePage />} />
-            <Route path="/cloze-practice" element={<ClozePracticePage />} />
-            <Route path="/minimal-pairs" element={<MinimalPairsPage />} />
-            <Route path="/number-practice" element={<NumberPracticePage />} />
-            <Route path="/dialects" element={<DialectsPage />} />
-            <Route path="/lyrics" element={<LyricsPage />} />
-            <Route path="/translation" element={<TranslationPracticePage />} />
+            <Route path={ROUTES.dashboard} element={<Dashboard />} />
+            <Route path={ROUTES.review} element={<ReviewPage />} />
+            <Route path={ROUTES.words} element={<WordsPage />} />
+            <Route path={ROUTES.reader} element={<ReaderPage />} />
+            <Route path={ROUTES.grammar} element={<GrammarPage />} />
+            <Route path={ROUTES.settings} element={<SettingsPage />} />
+            <Route path={ROUTES.learn} element={<LearnPage />} />
+            <Route path={ROUTES.vocabLessons} element={<VocabLessons />} />
+            <Route path={ROUTES.letters} element={<LetterPractice />} />
+            <Route path={ROUTES.listening} element={<ListeningPage />} />
+            <Route path={ROUTES.conjugations} element={<ConjugationsPage />} />
+            <Route path={ROUTES.sentenceBuilder} element={<SentenceBuilderPage />} />
+            <Route path={ROUTES.analytics} element={<AnalyticsPage />} />
+            <Route path={ROUTES.tests} element={<TestsPage />} />
+            <Route path={ROUTES.dailyChallenge} element={<DailyChallengePage />} />
+            <Route path={ROUTES.clozePractice} element={<ClozePracticePage />} />
+            <Route path={ROUTES.minimalPairs} element={<MinimalPairsPage />} />
+            <Route path={ROUTES.numberPractice} element={<NumberPracticePage />} />
+            <Route path={ROUTES.dialects} element={<DialectsPage />} />
+            <Route path={ROUTES.lyrics} element={<LyricsPage />} />
+            <Route path={ROUTES.translation} element={<TranslationPracticePage />} />
+            <Route path="*" element={<Navigate to={ROUTES.dashboard} replace />} />
           </Route>
         </Routes>
       </HashRouter>

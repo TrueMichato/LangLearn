@@ -190,7 +190,7 @@ export default function DrawingCanvas({ characters, alphabetName, language, onPr
 
   function startTimer() {
     if (!hasStartedTimer && !timerIsRunning) {
-      timerStart('grammar');
+      timerStart('letters');
       setHasStartedTimer(true);
     }
   }

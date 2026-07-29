@@ -1,8 +1,9 @@
 import { useState, useEffect } from 'react';
+import { useCurrentLanguage } from '../hooks/useCurrentLanguage';
+import LanguagePicker from '../components/common/LanguagePicker';
 import { useNavigate } from 'react-router-dom';
 import { useSettingsStore } from '../stores/settingsStore';
 import { getLessonProgress } from '../db/lessons';
-import { getLanguageLabel } from '../lib/languages';
 import { getDialectInfo } from '../lib/arabic-dialects';
 import VocabLessonView from '../components/vocab/VocabLessonView';
 import type { VocabLessonMeta } from '../types/vocab';
@@ -14,7 +15,8 @@ export default function VocabLessons() {
   const activeLanguages = useSettingsStore((s) => s.activeLanguages);
   const arabicDialect = useSettingsStore((s) => s.arabicDialect);
   const arabicColloquialFocus = useSettingsStore((s) => s.arabicColloquialFocus);
-  const [selectedLang, setSelectedLang] = useState(activeLanguages[0] ?? 'ja');
+  const { language, setLanguage } = useCurrentLanguage();
+  const selectedLang = language ?? 'ja';
   const [lessons, setLessons] = useState<VocabLessonMeta[]>([]);
   const [loading, setLoading] = useState(true);
   const [activeLessonId, setActiveLessonId] = useState<string | null>(null);
@@ -34,9 +36,6 @@ export default function VocabLessons() {
         }
       }
       setAvailableLangs(available);
-      if (available.length > 0 && !available.includes(selectedLang)) {
-        setSelectedLang(available[0]);
-      }
     }
     checkLangs();
   }, [activeLanguages]);
@@ -115,34 +114,23 @@ export default function VocabLessons() {
       {!activeLessonId && (
         <button
           onClick={() => navigate('/learn')}
-          className="text-indigo-600 dark:text-indigo-400 text-sm font-medium mb-3 hover:underline press-feedback"
+          className="inline-flex min-h-[44px] items-center text-indigo-600 dark:text-indigo-400 text-sm font-medium mb-3 hover:underline press-feedback"
         >
           ← Back to Learn
         </button>
       )}
       <h2 className="text-lg font-semibold text-slate-700 dark:text-slate-200 mb-4">Vocabulary Lessons</h2>
 
-      {/* Language tabs */}
-      {availableLangs.length > 1 && (
-        <div className="flex gap-2 mb-4">
-          {availableLangs.map((lang) => (
-            <button
-              key={lang}
-              onClick={() => {
-                setSelectedLang(lang);
-                setActiveLessonId(null);
-              }}
-              className={`px-3 py-1.5 rounded-full text-sm font-medium transition-colors press-feedback ${
-                selectedLang === lang
-                  ? 'bg-indigo-600 text-white'
-                  : 'bg-slate-200 dark:bg-slate-700 text-slate-600 dark:text-slate-300 hover:bg-slate-300 dark:hover:bg-slate-600'
-              }`}
-            >
-              {getLanguageLabel(lang)}
-            </button>
-          ))}
-        </div>
-      )}
+      <LanguagePicker
+        options={availableLangs}
+        value={selectedLang}
+        onChange={(lang) => {
+          setLanguage(lang);
+          setActiveLessonId(null);
+        }}
+        label="Vocabulary language"
+        className="mb-4"
+      />
 
       {loading ? (
         <SkeletonList count={4} />
@@ -190,7 +178,7 @@ export default function VocabLessons() {
                 </p>
                 <div className="w-full h-2 rounded-full bg-slate-200 dark:bg-slate-700 overflow-hidden">
                   <div
-                    className="h-full rounded-full bg-gradient-to-r from-rose-500 to-pink-500 transition-all"
+                    className="h-full rounded-full bg-indigo-600 transition-all"
                     style={{ width: `${pct}%` }}
                   />
                 </div>
@@ -227,7 +215,7 @@ export default function VocabLessons() {
                     <div className="min-w-0">
                       <p className="font-medium text-slate-800 dark:text-slate-100">{lesson.title}</p>
                       <div className="flex items-center gap-2 mt-1 flex-wrap">
-                        <span className="text-xs text-slate-500 dark:text-slate-400 bg-slate-100 dark:bg-slate-700 rounded-full px-2 py-0.5">
+                        <span className="text-xs text-slate-600 dark:text-slate-300 bg-slate-100 dark:bg-slate-700 rounded-full px-2 py-0.5">
                           {lesson.wordCount} words
                         </span>
                         <span
