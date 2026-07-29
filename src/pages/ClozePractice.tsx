@@ -1,8 +1,9 @@
 import { useState, useMemo, useRef, useEffect, useCallback } from 'react';
 import { Link } from 'react-router-dom';
-import { useSettingsStore } from '../stores/settingsStore';
+import { useCurrentLanguage } from '../hooks/useCurrentLanguage';
+import LanguagePicker from '../components/common/LanguagePicker';
+import LanguageUnavailable from '../components/common/LanguageUnavailable';
 import { useXPStore } from '../stores/xpStore';
-import { getLanguageLabel } from '../lib/languages';
 import { isRTL } from '../lib/rtl';
 import { jaClozeSentences, ruClozeSentences, ptClozeSentences, esClozeSentences, arClozeSentences, roClozeSentences } from '../data/cloze';
 import type { ClozeSentence } from '../data/cloze';
@@ -14,6 +15,8 @@ type Phase = 'setup' | 'session' | 'summary';
 const QUESTIONS_PER_SESSION = 10;
 const XP_BASE = 20;
 const XP_PER_CORRECT = 3;
+
+const CLOZE_LANGUAGES = ['ja', 'ru', 'pt', 'es', 'ar', 'ro'];
 
 function getClozeSentences(lang: string): ClozeSentence[] {
   if (lang === 'ja') return jaClozeSentences;
@@ -44,11 +47,16 @@ function buildClozeDisplay(sentence: string, blankedWord: string) {
 }
 
 export default function ClozePracticePage() {
-  const activeLanguages = useSettingsStore((s) => s.activeLanguages);
-  const supportedLanguages = activeLanguages.filter((l) => l === 'ja' || l === 'ru' || l === 'pt' || l === 'es' || l === 'ar');
+  const {
+    language: currentLanguage,
+    setLanguage,
+    options: supportedLanguages,
+    isSupported,
+    requested,
+  } = useCurrentLanguage(CLOZE_LANGUAGES);
 
   const [phase, setPhase] = useState<Phase>('setup');
-  const [language, setLanguage] = useState(supportedLanguages[0] ?? 'ja');
+  const language = currentLanguage ?? 'ja';
   const [difficulty, setDifficulty] = useState<Difficulty>('all');
   const [sessionQuestions, setSessionQuestions] = useState<ClozeSentence[]>([]);
   const [currentIdx, setCurrentIdx] = useState(0);
@@ -151,27 +159,26 @@ export default function ClozePracticePage() {
           </p>
         </div>
 
-        {/* Language */}
-        <div>
-          <label className="block text-sm font-medium text-slate-600 dark:text-slate-400 mb-1">Language</label>
-          <div className="flex gap-2">
-            {supportedLanguages.length > 0 ? (
-              supportedLanguages.map((l) => (
-                <button
-                  key={l}
-                  onClick={() => setLanguage(l)}
-                  className={`px-4 py-2 min-h-[44px] rounded-xl text-sm font-medium transition-colors min-h-[44px] ${
-                    language === l ? 'bg-indigo-600 text-white' : 'bg-white dark:bg-slate-700 text-slate-700 dark:text-slate-300 border border-slate-300 dark:border-white/10'
-                  }`}
-                >
-                  {getLanguageLabel(l)}
-                </button>
-              ))
-            ) : (
-              <p className="text-sm text-slate-500 dark:text-slate-400">Add Japanese or Russian in Settings to use Cloze Practice.</p>
-            )}
+        {!isSupported && (
+          <LanguageUnavailable
+            requested={requested}
+            options={supportedLanguages}
+            onChange={setLanguage}
+            feature="Cloze practice"
+          />
+        )}
+
+        {supportedLanguages.length > 1 && (
+          <div>
+            <label className="block text-sm font-medium text-slate-600 dark:text-slate-400 mb-1">Language</label>
+            <LanguagePicker
+              options={supportedLanguages}
+              value={language}
+              onChange={setLanguage}
+              label="Cloze language"
+            />
           </div>
-        </div>
+        )}
 
         {/* Difficulty */}
         <div>

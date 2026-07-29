@@ -1,6 +1,7 @@
 import { create } from 'zustand';
 import { persist, createJSONStorage } from 'zustand/middleware';
 import { PRESETS, type NotificationPreset } from '../lib/notification-presets';
+import { languageStateOnAdd, languageStateOnRemove } from '../lib/current-language';
 
 const MAX_STREAK_FREEZES = 3;
 
@@ -8,6 +9,10 @@ interface SettingsState {
   weeklyGoalMinutes: number;
   dailyGoalMinutes: number;
   activeLanguages: string[];
+  /** Which active language the learner is currently studying. May be '' or
+   *  stale on installs that predate it — always read it through
+   *  `useCurrentLanguage()`, which resolves the fallback. */
+  currentLanguage: string;
   showStressMarks: boolean;
   darkMode: boolean;
   fontSize: number;
@@ -49,6 +54,7 @@ interface SettingsState {
   setDailyGoal: (minutes: number) => void;
   addLanguage: (lang: string) => void;
   removeLanguage: (lang: string) => void;
+  setCurrentLanguage: (lang: string) => void;
   toggleStressMarks: () => void;
   toggleDarkMode: () => void;
   setFontSize: (size: number) => void;
@@ -92,6 +98,7 @@ export const useSettingsStore = create<SettingsState>()(
       weeklyGoalMinutes: 60,
       dailyGoalMinutes: 5,
       activeLanguages: [],
+      currentLanguage: '',
       showStressMarks: true,
       darkMode: false,
       fontSize: 18,
@@ -121,17 +128,17 @@ export const useSettingsStore = create<SettingsState>()(
       setWeeklyGoal: (minutes) => set({ weeklyGoalMinutes: minutes }),
       setDailyGoal: (minutes) => set({ dailyGoalMinutes: minutes }),
 
+      /* Adding the first language also makes it current, so onboarding's pick
+         carries straight through to the first surface the learner opens. */
       addLanguage: (lang) =>
-        set((s) => ({
-          activeLanguages: s.activeLanguages.includes(lang)
-            ? s.activeLanguages
-            : [...s.activeLanguages, lang],
-        })),
+        set((s) => languageStateOnAdd(s.activeLanguages, s.currentLanguage, lang)),
 
+      /* Dropping the language you were studying must land on a real one, not
+         leave a dangling code that every surface then has to defend against. */
       removeLanguage: (lang) =>
-        set((s) => ({
-          activeLanguages: s.activeLanguages.filter((l) => l !== lang),
-        })),
+        set((s) => languageStateOnRemove(s.activeLanguages, s.currentLanguage, lang)),
+
+      setCurrentLanguage: (lang) => set({ currentLanguage: lang }),
 
       toggleStressMarks: () =>
         set((s) => ({ showStressMarks: !s.showStressMarks })),

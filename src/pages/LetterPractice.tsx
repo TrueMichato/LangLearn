@@ -1,5 +1,6 @@
 import { useState, useEffect, useRef } from 'react';
 import { useParams, useNavigate, useSearchParams } from 'react-router-dom';
+import { useSettingsStore } from '../stores/settingsStore';
 import { getAlphabetsForLanguage } from '../data/alphabets';
 import { getCharacterProgress } from '../db/characters';
 import CharacterChart from '../components/letters/CharacterChart';
@@ -19,6 +20,13 @@ function isPracticeMode(value: string | null): value is PracticeMode {
 
 export default function LetterPractice() {
   const { lang = 'ja' } = useParams();
+  const setCurrentLanguage = useSettingsStore((s) => s.setCurrentLanguage);
+
+  /* This is the only route that names a language, so arriving here is a real
+     choice — adopt it rather than letting the rest of the app disagree. */
+  useEffect(() => {
+    setCurrentLanguage(lang);
+  }, [lang, setCurrentLanguage]);
   const navigate = useNavigate();
   const [searchParams] = useSearchParams();
   const requestedMode = searchParams.get('mode');

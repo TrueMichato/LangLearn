@@ -1,12 +1,15 @@
 import { useState, useMemo, useCallback } from 'react';
-import { useSettingsStore } from '../stores/settingsStore';
+import { useCurrentLanguage } from '../hooks/useCurrentLanguage';
+import LanguagePicker from '../components/common/LanguagePicker';
+import LanguageUnavailable from '../components/common/LanguageUnavailable';
 import { useXPStore } from '../stores/xpStore';
-import { getLanguageLabel } from '../lib/languages';
 import { isRTL } from '../lib/rtl';
 import { allLyrics, getSongById } from '../data/lyrics';
 import { addWord, wordExists } from '../db/words';
 import { XP_LYRICS_BASE, XP_PER_LYRICS_VOCAB } from '../lib/xp';
 import type { Song, SongVocab } from '../data/lyrics';
+
+const LYRIC_LANGUAGES = [...new Set(allLyrics.map((s) => s.language))];
 
 type Difficulty = 'all' | 'easy' | 'medium' | 'hard';
 
@@ -31,8 +34,9 @@ function SongBrowser({
 }: {
   onSelect: (id: string) => void;
 }) {
-  const activeLanguages = useSettingsStore((s) => s.activeLanguages);
-  const [selectedLang, setSelectedLang] = useState<string>(activeLanguages[0] ?? 'ja');
+  const { language, setLanguage, options: availableLanguages, requested, isSupported } =
+    useCurrentLanguage(LYRIC_LANGUAGES);
+  const selectedLang = language ?? '';
   const [difficulty, setDifficulty] = useState<Difficulty>('all');
   const [search, setSearch] = useState('');
 
@@ -52,11 +56,6 @@ function SongBrowser({
     return songs;
   }, [selectedLang, difficulty, search]);
 
-  const availableLanguages = useMemo(
-    () => activeLanguages.filter((l) => allLyrics.some((s) => s.language === l)),
-    [activeLanguages]
-  );
-
   return (
     <div>
       <h2 className="text-lg font-semibold text-slate-800 dark:text-slate-100 mb-1">🎵 Music</h2>
@@ -64,23 +63,22 @@ function SongBrowser({
         Learn vocabulary through song lyrics
       </p>
 
-      {/* Language tabs */}
-      {availableLanguages.length > 1 && (
-        <div className="flex gap-2 mb-3">
-          {availableLanguages.map((lang) => (
-            <button
-              key={lang}
-              onClick={() => setSelectedLang(lang)}
-              className={`px-4 py-2 min-h-[44px] rounded-xl text-sm font-medium min-h-[44px] transition-colors ${
-                selectedLang === lang
-                  ? 'bg-pink-600 text-white'
-                  : 'bg-slate-100 dark:bg-slate-700 text-slate-700 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-600'
-              }`}
-            >
-              {getLanguageLabel(lang)}
-            </button>
-          ))}
-        </div>
+      <LanguagePicker
+        options={availableLanguages}
+        value={selectedLang}
+        onChange={setLanguage}
+        label="Song language"
+        className="mb-3"
+      />
+
+      {!isSupported && (
+        <LanguageUnavailable
+          requested={requested}
+          options={availableLanguages}
+          onChange={setLanguage}
+          feature="Song lyrics"
+          plural
+        />
       )}
 
       {/* Search */}
@@ -100,7 +98,7 @@ function SongBrowser({
             onClick={() => setDifficulty(d)}
             className={`px-3 py-1.5 min-h-[44px] rounded-lg text-xs font-medium min-h-[36px] transition-colors ${
               difficulty === d
-                ? 'bg-pink-600 text-white'
+                ? 'bg-indigo-600 text-white'
                 : 'bg-slate-100 dark:bg-slate-700 text-slate-600 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-600'
             }`}
           >
@@ -206,7 +204,7 @@ function LyricsViewer({
       {/* Back button */}
       <button
         onClick={onBack}
-        className="flex items-center gap-1 text-sm text-pink-600 dark:text-pink-400 font-medium mb-4 min-h-[44px]"
+        className="flex items-center gap-1 text-sm text-indigo-600 dark:text-indigo-400 font-medium mb-4 min-h-[44px]"
       >
         ← Back to songs
       </button>
@@ -243,7 +241,7 @@ function LyricsViewer({
           onClick={() => setShowReading((v) => !v)}
           className={`px-4 py-2 min-h-[44px] rounded-xl text-sm font-medium min-h-[44px] transition-colors ${
             showReading
-              ? 'bg-pink-600 text-white'
+              ? 'bg-indigo-600 text-white'
               : 'bg-slate-100 dark:bg-slate-700 text-slate-600 dark:text-slate-300'
           }`}
         >
@@ -254,7 +252,7 @@ function LyricsViewer({
             onClick={() => setShowRomaji((v) => !v)}
             className={`px-4 py-2 min-h-[44px] rounded-xl text-sm font-medium min-h-[44px] transition-colors ${
               showRomaji
-                ? 'bg-pink-600 text-white'
+                ? 'bg-indigo-600 text-white'
                 : 'bg-slate-100 dark:bg-slate-700 text-slate-600 dark:text-slate-300'
             }`}
           >
@@ -265,7 +263,7 @@ function LyricsViewer({
           onClick={() => setShowTranslation((v) => !v)}
           className={`px-4 py-2 min-h-[44px] rounded-xl text-sm font-medium min-h-[44px] transition-colors ${
             showTranslation
-              ? 'bg-pink-600 text-white'
+              ? 'bg-indigo-600 text-white'
               : 'bg-slate-100 dark:bg-slate-700 text-slate-600 dark:text-slate-300'
           }`}
         >
@@ -281,7 +279,7 @@ function LyricsViewer({
             onClick={() => setHighlightedLine(highlightedLine === i ? null : i)}
             className={`w-full text-left px-3 py-2 rounded-xl transition-colors ${
               highlightedLine === i
-                ? 'bg-pink-50 dark:bg-pink-900/30 ring-1 ring-pink-300 dark:ring-pink-700'
+                ? 'bg-indigo-50 dark:bg-indigo-900/30 ring-1 ring-indigo-300 dark:ring-indigo-700'
                 : 'hover:bg-slate-50 dark:hover:bg-slate-700/50'
             }`}
           >
@@ -333,7 +331,7 @@ function LyricsViewer({
                   className={`px-3 py-1.5 min-h-[44px] rounded-lg text-xs font-medium whitespace-nowrap min-h-[36px] transition-colors ${
                     isAdded
                       ? 'bg-green-100 dark:bg-green-900/50 text-green-700 dark:text-green-300'
-                      : 'bg-pink-100 dark:bg-pink-900/40 text-pink-700 dark:text-pink-300 hover:bg-pink-200 dark:hover:bg-pink-800/50'
+                      : 'bg-indigo-100 dark:bg-indigo-900/40 text-indigo-700 dark:text-indigo-200 hover:bg-indigo-200 dark:hover:bg-indigo-800/50'
                   }`}
                 >
                   {isAdded ? '✓ Added' : isAdding ? '…' : 'Add +'}
@@ -351,7 +349,7 @@ function LyricsViewer({
         className={`w-full py-3 rounded-xl text-sm font-semibold min-h-[44px] transition-colors ${
           completed
             ? 'bg-green-100 dark:bg-green-900/50 text-green-700 dark:text-green-300'
-            : 'bg-pink-600 hover:bg-pink-700 text-white'
+            : 'bg-indigo-600 hover:bg-indigo-700 text-white'
         }`}
       >
         {completed

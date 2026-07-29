@@ -1,8 +1,9 @@
 import { useState, useMemo, useCallback } from 'react';
 import { Link } from 'react-router-dom';
-import { useSettingsStore } from '../stores/settingsStore';
 import { useXPStore } from '../stores/xpStore';
-import { getLanguageLabel } from '../lib/languages';
+import { useCurrentLanguage } from '../hooks/useCurrentLanguage';
+import LanguagePicker from '../components/common/LanguagePicker';
+import LanguageUnavailable from '../components/common/LanguageUnavailable';
 import { JA_VERBS, JA_FORM_LABELS, type JaFormName } from '../data/conjugations/ja-verbs';
 import { RU_VERBS, RU_VERB_FORM_LABELS, type RuVerbFormName } from '../data/conjugations/ru-verbs';
 import { RU_NOUNS, RU_CASE_LABELS, type RuCaseName } from '../data/conjugations/ru-nouns';
@@ -212,15 +213,15 @@ function buildQuestions(category: Category, selectedForms: string[]): DrillQuest
 }
 
 export default function ConjugationsPage() {
-  const activeLanguages = useSettingsStore((s) => s.activeLanguages);
   const addXP = useXPStore((s) => s.addXP);
-
-  const supportedActive = useMemo(
-    () => activeLanguages.filter((l) => SUPPORTED_LANGUAGES.includes(l)),
-    [activeLanguages],
-  );
-
-  const [language, setLanguage] = useState(supportedActive[0] ?? 'ja');
+  const {
+    language: currentLanguage,
+    setLanguage: setCurrentLanguage,
+    options: supportedActive,
+    requested,
+    isSupported,
+  } = useCurrentLanguage(SUPPORTED_LANGUAGES);
+  const language = currentLanguage ?? 'ja';
   const [category, setCategory] = useState<Category>(CATEGORIES[language]?.[0]?.value ?? 'ja-verbs');
   const [selectedForms, setSelectedForms] = useState<Set<string>>(new Set());
   const [mode, setMode] = useState<DrillMode>('tiles');
@@ -232,14 +233,14 @@ export default function ConjugationsPage() {
 
   const handleLanguageChange = useCallback(
     (lang: string) => {
-      setLanguage(lang);
+      setCurrentLanguage(lang);
       const cats = CATEGORIES[lang];
       if (cats?.length) {
         setCategory(cats[0].value);
       }
       setSelectedForms(new Set());
     },
-    [],
+    [setCurrentLanguage],
   );
 
   const handleCategoryChange = useCallback((cat: Category) => {
@@ -356,25 +357,27 @@ export default function ConjugationsPage() {
         </h2>
       </div>
 
-      {/* Language selector */}
-      <div className="bg-white dark:bg-slate-800 rounded-2xl shadow p-4 space-y-2">
-        <label className="text-sm font-medium text-slate-600 dark:text-slate-300">Language</label>
-        <div className="flex gap-2 flex-wrap">
-          {supportedActive.map((lang) => (
-            <button
-              key={lang}
-              onClick={() => handleLanguageChange(lang)}
-              className={`px-4 py-2 min-h-[44px] rounded-xl text-sm font-medium transition-colors ${
-                language === lang
-                  ? 'bg-indigo-600 text-white'
-                  : 'bg-slate-100 dark:bg-slate-700 text-slate-700 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-600'
-              }`}
-            >
-              {getLanguageLabel(lang)}
-            </button>
-          ))}
+      {!isSupported && (
+        <LanguageUnavailable
+          requested={requested}
+          options={supportedActive}
+          onChange={handleLanguageChange}
+          feature="Conjugation drills"
+          plural
+        />
+      )}
+
+      {supportedActive.length > 1 && (
+        <div className="bg-white dark:bg-slate-800 rounded-2xl shadow p-4 space-y-2">
+          <label className="text-sm font-medium text-slate-600 dark:text-slate-300">Language</label>
+          <LanguagePicker
+            options={supportedActive}
+            value={language}
+            onChange={handleLanguageChange}
+            label="Drill language"
+          />
         </div>
-      </div>
+      )}
 
       {/* Category selector */}
       {CATEGORIES[language] && (
@@ -419,7 +422,7 @@ export default function ConjugationsPage() {
               className={`px-3 py-1.5 min-h-[44px] rounded-lg text-sm transition-colors ${
                 selectedForms.has(f.value)
                   ? 'bg-indigo-100 dark:bg-indigo-900 text-indigo-700 dark:text-indigo-300 border border-indigo-300 dark:border-indigo-700'
-                  : 'bg-slate-100 dark:bg-slate-700 text-slate-600 dark:text-slate-400 border border-transparent'
+                  : 'bg-slate-100 dark:bg-slate-700 text-slate-700 dark:text-slate-200 border border-transparent'
               }`}
             >
               {f.label}

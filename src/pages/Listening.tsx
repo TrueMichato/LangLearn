@@ -1,9 +1,10 @@
 import { useState, useCallback, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { useSettingsStore } from '../stores/settingsStore';
+import { useCurrentLanguage } from '../hooks/useCurrentLanguage';
+import LanguagePicker from '../components/common/LanguagePicker';
+import LanguageUnavailable from '../components/common/LanguageUnavailable';
 import { useXPStore } from '../stores/xpStore';
 import { useTimerStore } from '../stores/timerStore';
-import { getLanguageLabel } from '../lib/languages';
 import { jaPassages } from '../data/listening/ja-passages';
 import { ruPassages } from '../data/listening/ru-passages';
 import { ptPassages } from '../data/listening/pt-passages';
@@ -33,11 +34,18 @@ type Screen = 'setup' | 'practice' | 'questions' | 'summary' | 'dictation' | 'di
 
 // ── component ───────────────────────────────────────────
 
-export default function ListeningPage() {
-  const activeLanguages = useSettingsStore((s) => s.activeLanguages);
-  const supportedLanguages = activeLanguages.filter((l) => l in LANG_PASSAGES);
+const LISTENING_LANGUAGES = Object.keys(LANG_PASSAGES);
 
-  const [language, setLanguage] = useState(supportedLanguages[0] ?? '');
+export default function ListeningPage() {
+  const {
+    language: currentLanguage,
+    setLanguage,
+    options: supportedLanguages,
+    isSupported,
+    requested,
+  } = useCurrentLanguage(LISTENING_LANGUAGES);
+
+  const language = currentLanguage ?? '';
   const [difficulty, setDifficulty] = useState<Difficulty>('all');
   const timerStart = useTimerStore((s) => s.start);
   const timerRunning = useTimerStore((s) => s.isRunning);
@@ -195,25 +203,30 @@ export default function ListeningPage() {
           🎧 Listening Practice
         </h2>
 
-        {/* Language */}
-        <label className="block text-sm font-medium text-slate-600 dark:text-slate-300 mb-1">
-          Language
-        </label>
-        <div className="flex gap-2 mb-6">
-          {supportedLanguages.map((l) => (
-            <button
-              key={l}
-              onClick={() => setLanguage(l)}
-              className={`px-4 py-2 min-h-[44px] rounded-xl text-sm font-medium transition-colors ${
-                language === l
-                  ? 'bg-indigo-600 text-white'
-                  : 'bg-slate-100 dark:bg-slate-700 text-slate-700 dark:text-slate-200'
-              }`}
-            >
-              {getLanguageLabel(l)}
-            </button>
-          ))}
-        </div>
+        {!isSupported && (
+          <LanguageUnavailable
+            className="mb-6"
+            requested={requested}
+            options={supportedLanguages}
+            onChange={setLanguage}
+            feature="Listening practice"
+          />
+        )}
+
+        {supportedLanguages.length > 1 && (
+          <>
+            <label className="block text-sm font-medium text-slate-600 dark:text-slate-300 mb-1">
+              Language
+            </label>
+            <LanguagePicker
+              className="mb-6"
+              options={supportedLanguages}
+              value={language}
+              onChange={setLanguage}
+              label="Listening language"
+            />
+          </>
+        )}
 
         {/* Mode */}
         <label className="block text-sm font-medium text-slate-600 dark:text-slate-300 mb-1">

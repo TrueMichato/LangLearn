@@ -11,8 +11,8 @@ import {
   getReadingStats,
 } from '../lib/analytics';
 import type { Word, Review } from '../db/schema';
-import { useSettingsStore } from '../stores/settingsStore';
-import { getLanguageLabel } from '../lib/languages';
+import { useCurrentLanguage } from '../hooks/useCurrentLanguage';
+import LanguagePicker from '../components/common/LanguagePicker';
 import LineChart from '../components/analytics/LineChart';
 import BarChart from '../components/analytics/BarChart';
 import SegmentedBar from '../components/analytics/SegmentedBar';
@@ -54,8 +54,9 @@ function getDifficultyColor(ease: number): string {
 
 export default function AnalyticsPage() {
   const [data, setData] = useState<AnalyticsData | null>(null);
-  const [selectedLang, setSelectedLang] = useState<string | undefined>(undefined);
-  const activeLanguages = useSettingsStore((s) => s.activeLanguages);
+  const { language: currentLanguage, setLanguage, options: activeLanguages } = useCurrentLanguage();
+  const [showAll, setShowAll] = useState(false);
+  const selectedLang = showAll ? undefined : currentLanguage;
 
   useEffect(() => {
     setData(null);
@@ -120,32 +121,18 @@ export default function AnalyticsPage() {
         </h2>
       </div>
 
-      {/* Language Filter Tabs */}
-      <div className="flex gap-2 overflow-x-auto pb-2 mb-4">
-        <button
-          onClick={() => setSelectedLang(undefined)}
-          className={`px-4 py-1.5 min-h-[44px] rounded-full text-sm font-medium whitespace-nowrap transition-colors ${
-            selectedLang === undefined
-              ? 'bg-indigo-600 text-white'
-              : 'bg-slate-100 dark:bg-slate-700 text-slate-600 dark:text-slate-300'
-          }`}
-        >
-          All Languages
-        </button>
-        {activeLanguages.map((lang) => (
-          <button
-            key={lang}
-            onClick={() => setSelectedLang(lang)}
-            className={`px-4 py-1.5 min-h-[44px] rounded-full text-sm font-medium whitespace-nowrap transition-colors ${
-              selectedLang === lang
-                ? 'bg-indigo-600 text-white'
-                : 'bg-slate-100 dark:bg-slate-700 text-slate-600 dark:text-slate-300'
-            }`}
-          >
-            {getLanguageLabel(lang)}
-          </button>
-        ))}
-      </div>
+      <LanguagePicker
+        className="mb-4"
+        options={activeLanguages}
+        value={selectedLang}
+        onChange={(l) => {
+          setShowAll(false);
+          setLanguage(l);
+        }}
+        allowAll
+        onSelectAll={() => setShowAll(true)}
+        label="Filter stats by language"
+      />
 
       {/* What should I do next? */}
       <NextFocusCard language={selectedLang} />

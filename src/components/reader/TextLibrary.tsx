@@ -3,7 +3,15 @@ import type { Text } from '../../db/schema';
 import { getAllTexts, deleteText } from '../../db/texts';
 import { relativeDate } from '../../lib/dates';
 import { getLanguageLabel } from '../../lib/languages';
-import { useSettingsStore } from '../../stores/settingsStore';
+
+/**
+ * Languages with curated reading texts in `public/content/reading/`.
+ * Romanian was missing from the previous hard-coded copy of this list, so its
+ * ten graded texts shipped but were unreachable.
+ */
+const CURATED_LANGUAGES = ['ja', 'ru', 'pt', 'es', 'ar', 'ro'] as const;
+import { useCurrentLanguage } from '../../hooks/useCurrentLanguage';
+import LanguagePicker from '../common/LanguagePicker';
 
 const LANGUAGE_COLORS: Record<string, string> = {
   ja: 'bg-red-100 text-red-700 dark:bg-red-900 dark:text-red-300',
@@ -56,9 +64,11 @@ export default function TextLibrary({ onSelectText, onSelectCurated }: TextLibra
   const [confirmDeleteId, setConfirmDeleteId] = useState<number | null>(null);
 
   // Curated library state
-  const activeLanguages = useSettingsStore((s) => s.activeLanguages);
-  const curatedLangs = activeLanguages.filter((l) => ['ja', 'ru', 'pt', 'es', 'ar'].includes(l));
-  const [curatedLang, setCuratedLang] = useState<string>(curatedLangs[0] ?? 'ja');
+  const {
+    language: curatedLang,
+    setLanguage: setCuratedLang,
+    options: curatedLangs,
+  } = useCurrentLanguage(CURATED_LANGUAGES);
   const [curatedTexts, setCuratedTexts] = useState<CuratedText[]>([]);
   const [curatedLoading, setCuratedLoading] = useState(false);
   const [curatedError, setCuratedError] = useState<string | null>(null);
@@ -70,7 +80,7 @@ export default function TextLibrary({ onSelectText, onSelectCurated }: TextLibra
 
   useEffect(() => {
     if (subTab === 'curated') {
-      fetchCuratedTexts(curatedLang);
+      fetchCuratedTexts(curatedLang ?? CURATED_LANGUAGES[0]);
     }
   }, [subTab, curatedLang]);
 
@@ -102,7 +112,7 @@ export default function TextLibrary({ onSelectText, onSelectCurated }: TextLibra
   }
 
   function handleCuratedClick(ct: CuratedText) {
-    onSelectCurated?.(ct.id, curatedLang, ct.title);
+    onSelectCurated?.(ct.id, curatedLang ?? CURATED_LANGUAGES[0], ct.title);
   }
 
   const uniqueLangs = [...new Set(texts.map((t) => t.language))].sort();
@@ -140,8 +150,8 @@ export default function TextLibrary({ onSelectText, onSelectCurated }: TextLibra
 
       {subTab === 'curated' ? (
         <CuratedLibrary
-          langs={curatedLangs.length > 0 ? curatedLangs : ['ja', 'ru', 'pt', 'es', 'ar']}
-          currentLang={curatedLang}
+          langs={curatedLangs.length > 0 ? curatedLangs : CURATED_LANGUAGES}
+          currentLang={curatedLang ?? CURATED_LANGUAGES[0]}
           onChangeLang={setCuratedLang}
           texts={filteredCurated}
           loading={curatedLoading}
@@ -179,7 +189,7 @@ function CuratedLibrary({
   onChangeDifficulty,
   onSelect,
 }: {
-  langs: string[];
+  langs: readonly string[];
   currentLang: string;
   onChangeLang: (l: string) => void;
   texts: CuratedText[];
@@ -191,22 +201,12 @@ function CuratedLibrary({
 }) {
   return (
     <div className="space-y-3">
-      {/* Language pills */}
-      <div className="flex gap-1 bg-slate-100 dark:bg-slate-800 rounded-xl p-1 overflow-x-auto">
-        {langs.map((lang) => (
-          <button
-            key={lang}
-            onClick={() => onChangeLang(lang)}
-            className={`shrink-0 py-1.5 px-3 min-h-[44px] text-sm font-medium rounded-lg transition-colors press-feedback ${
-              currentLang === lang
-                ? 'bg-white dark:bg-slate-700 text-indigo-600 dark:text-indigo-300 shadow-sm'
-                : 'text-slate-600 dark:text-slate-300 hover:text-slate-800 dark:hover:text-slate-100'
-            }`}
-          >
-            {getLanguageLabel(lang)}
-          </button>
-        ))}
-      </div>
+      <LanguagePicker
+        options={langs}
+        value={currentLang}
+        onChange={onChangeLang}
+        label="Library language"
+      />
 
       {/* Difficulty filter */}
       <div className="flex gap-1 overflow-x-auto">
@@ -301,7 +301,7 @@ function MyTextsTab({
   texts: Text[];
   filterLang: string;
   setFilterLang: (l: string) => void;
-  uniqueLangs: string[];
+  uniqueLangs: readonly string[];
   confirmDeleteId: number | null;
   setConfirmDeleteId: (id: number | null) => void;
   onSelectText: (t: Text) => void;
@@ -320,32 +320,14 @@ function MyTextsTab({
 
   return (
     <div className="space-y-3">
-      {/* Language filter — pill tabs */}
-      <div className="flex gap-1 bg-slate-100 dark:bg-slate-800 rounded-xl p-1 overflow-x-auto">
-        <button
-          onClick={() => setFilterLang('')}
-          className={`shrink-0 py-1.5 px-3 min-h-[44px] text-sm font-medium rounded-lg transition-colors press-feedback ${
-            !filterLang
-              ? 'bg-white dark:bg-slate-700 text-indigo-600 dark:text-indigo-300 shadow-sm'
-              : 'text-slate-600 dark:text-slate-300 hover:text-slate-800 dark:hover:text-slate-100'
-          }`}
-        >
-          All
-        </button>
-        {uniqueLangs.map((lang) => (
-          <button
-            key={lang}
-            onClick={() => setFilterLang(lang)}
-            className={`shrink-0 py-1.5 px-3 min-h-[44px] text-sm font-medium rounded-lg transition-colors press-feedback ${
-              filterLang === lang
-                ? 'bg-white dark:bg-slate-700 text-indigo-600 dark:text-indigo-300 shadow-sm'
-                : 'text-slate-600 dark:text-slate-300 hover:text-slate-800 dark:hover:text-slate-100'
-            }`}
-          >
-            {getLanguageLabel(lang)}
-          </button>
-        ))}
-      </div>
+      <LanguagePicker
+        options={uniqueLangs}
+        value={filterLang || undefined}
+        onChange={setFilterLang}
+        allowAll
+        onSelectAll={() => setFilterLang('')}
+        label="Filter saved texts by language"
+      />
 
       {texts.length === 0 && filterLang ? (
         <div className="flex flex-col items-center justify-center py-12 text-center">

@@ -1,11 +1,12 @@
 import { useState, useEffect, useCallback, useMemo } from 'react';
-import { useSettingsStore } from '../stores/settingsStore';
+import { useCurrentLanguage } from '../hooks/useCurrentLanguage';
+import LanguagePicker from '../components/common/LanguagePicker';
+import LanguageUnavailable from '../components/common/LanguageUnavailable';
 import { useXPStore } from '../stores/xpStore';
-import { getLanguageLabel } from '../lib/languages';
 import { rtlProps } from '../lib/rtl';
 import { speak } from '../lib/tts';
 import { XP_NUMBER_BASE, XP_PER_NUMBER_CORRECT } from '../lib/xp';
-import { getNumbersForLanguage, hasNumbers, type NumberEntry } from '../data/numbers';
+import { getNumbersForLanguage, NUMBER_LANGUAGES, type NumberEntry } from '../data/numbers';
 
 type Phase = 'setup' | 'session' | 'summary';
 type Direction = 'numeral-to-word' | 'word-to-numeral';
@@ -45,13 +46,14 @@ function buildQuestions(pool: NumberEntry[]): Question[] {
 }
 
 export default function NumberPracticePage() {
-  const activeLanguages = useSettingsStore((s) => s.activeLanguages);
-  const numberLanguages = useMemo(
-    () => activeLanguages.filter((l) => hasNumbers(l)),
-    [activeLanguages],
-  );
-
-  const [language, setLanguage] = useState(numberLanguages[0] ?? 'ar');
+  const {
+    language: currentLanguage,
+    setLanguage,
+    options: numberLanguages,
+    isSupported,
+    requested,
+  } = useCurrentLanguage(NUMBER_LANGUAGES);
+  const language = currentLanguage ?? 'ar';
   const [phase, setPhase] = useState<Phase>('setup');
   const [direction, setDirection] = useState<Direction>('numeral-to-word');
   const [selectedRanges, setSelectedRanges] = useState<Set<NumberEntry['range']>>(new Set());
@@ -174,25 +176,26 @@ export default function NumberPracticePage() {
           Learn to read and spell numbers. Match digits to their written-out form (and back).
         </p>
 
-        {/* Language selector */}
-        <div className="flex gap-1 bg-slate-100 dark:bg-slate-800 rounded-xl p-1 mb-4">
-          {numberLanguages.map((code) => (
-            <button
-              key={code}
-              onClick={() => {
-                setLanguage(code);
-                setSelectedRanges(new Set());
-              }}
-              className={`flex-1 py-2 px-3 text-sm font-medium rounded-lg transition-colors press-feedback min-h-[44px] ${
-                language === code
-                  ? 'bg-white dark:bg-slate-700 text-indigo-600 dark:text-indigo-300 shadow-sm'
-                  : 'text-slate-600 dark:text-slate-300 hover:text-slate-800 dark:hover:text-slate-100'
-              }`}
-            >
-              {getLanguageLabel(code)}
-            </button>
-          ))}
-        </div>
+        {!isSupported && (
+          <LanguageUnavailable
+            className="mb-4"
+            requested={requested}
+            options={numberLanguages}
+            onChange={setLanguage}
+            feature="Number practice"
+          />
+        )}
+
+        <LanguagePicker
+          className="mb-4"
+          options={numberLanguages}
+          value={language}
+          onChange={(code) => {
+            setLanguage(code);
+            setSelectedRanges(new Set());
+          }}
+          label="Number language"
+        />
 
         {/* Direction toggle */}
         <div className="bg-white dark:bg-slate-800 rounded-2xl shadow p-4 mb-4">

@@ -1,6 +1,8 @@
 import { useState, useMemo, useRef, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { useSettingsStore } from '../stores/settingsStore';
+import { useCurrentLanguage } from '../hooks/useCurrentLanguage';
+import LanguagePicker from '../components/common/LanguagePicker';
+import LanguageUnavailable from '../components/common/LanguageUnavailable';
 import { useXPStore } from '../stores/xpStore';
 import { getLanguageLabel } from '../lib/languages';
 import { isRTL } from '../lib/rtl';
@@ -54,12 +56,19 @@ function shuffle<T>(arr: T[]): T[] {
   return a;
 }
 
+const TRANSLATION_LANGUAGES = ['ja', 'ru', 'pt', 'es', 'ar', 'ro'];
+
 export default function TranslationPracticePage() {
-  const activeLanguages = useSettingsStore((s) => s.activeLanguages);
-  const supportedLanguages = activeLanguages.filter((l) => l === 'ja' || l === 'ru' || l === 'pt' || l === 'es' || l === 'ar' || l === 'ro');
+  const {
+    language: currentLanguage,
+    setLanguage,
+    options: supportedLanguages,
+    isSupported,
+    requested,
+  } = useCurrentLanguage(TRANSLATION_LANGUAGES);
 
   const [phase, setPhase] = useState<Phase>('setup');
-  const [language, setLanguage] = useState(supportedLanguages[0] ?? 'ja');
+  const language = currentLanguage ?? 'ja';
   const [difficulty, setDifficulty] = useState<Difficulty>('all');
   const [sessionSentences, setSessionSentences] = useState<PracticeSentence[]>([]);
   const [currentIdx, setCurrentIdx] = useState(0);
@@ -144,27 +153,28 @@ export default function TranslationPracticePage() {
           </p>
         </div>
 
-        {/* Language */}
-        <div className="bg-white dark:bg-slate-800 rounded-2xl shadow p-4 space-y-3">
-          <label className="block text-sm font-medium text-slate-700 dark:text-slate-300">
-            Language
-          </label>
-          <div className="flex flex-wrap gap-2">
-            {supportedLanguages.map((lang) => (
-              <button
-                key={lang}
-                onClick={() => setLanguage(lang)}
-                className={`px-4 py-2 min-h-[44px] rounded-xl text-sm font-medium min-h-[44px] transition-colors ${
-                  language === lang
-                    ? 'bg-indigo-600 text-white'
-                    : 'bg-slate-100 dark:bg-slate-700 text-slate-700 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-600'
-                }`}
-              >
-                {getLanguageLabel(lang)}
-              </button>
-            ))}
+        {!isSupported && (
+          <LanguageUnavailable
+            requested={requested}
+            options={supportedLanguages}
+            onChange={setLanguage}
+            feature="Translation practice"
+          />
+        )}
+
+        {supportedLanguages.length > 1 && (
+          <div className="bg-white dark:bg-slate-800 rounded-2xl shadow p-4 space-y-3">
+            <label className="block text-sm font-medium text-slate-700 dark:text-slate-300">
+              Language
+            </label>
+            <LanguagePicker
+              options={supportedLanguages}
+              value={language}
+              onChange={setLanguage}
+              label="Translation language"
+            />
           </div>
-        </div>
+        )}
 
         {/* Difficulty */}
         <div className="bg-white dark:bg-slate-800 rounded-2xl shadow p-4 space-y-3">

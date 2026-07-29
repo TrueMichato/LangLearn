@@ -2,10 +2,11 @@ import { useState, useEffect, useCallback } from 'react';
 import SearchBar from '../components/common/SearchBar';
 import { searchWords, updateWord, deleteWord, type WordFilter } from '../db/words';
 import { db, type Word, type Review } from '../db/schema';
-import { useSettingsStore } from '../stores/settingsStore';
 import AddWordModal from '../components/srs/AddWordModal';
 import CSVImport from '../components/common/CSVImport';
-import { getLanguageLabel, getLanguageFlag } from '../lib/languages';
+import { getLanguageFlag } from '../lib/languages';
+import { useCurrentLanguage } from '../hooks/useCurrentLanguage';
+import LanguagePicker from '../components/common/LanguagePicker';
 import { SkeletonList } from '../components/common/Skeleton';
 import StudySets from '../components/words/StudySets';
 import { getFrequencyRank, getFrequencyTier, getFrequencyLabel, type FrequencyTier } from '../data/frequency';
@@ -77,9 +78,14 @@ function FrequencyBadge({ word, language }: { word: string; language: string }) 
 }
 
 export default function WordsPage() {
-  const activeLanguages = useSettingsStore((s) => s.activeLanguages);
   const [search, setSearch] = useState('');
-  const [language, setLanguage] = useState<string | undefined>(undefined);
+  const {
+    language: currentLanguage,
+    setLanguage: setCurrentLanguage,
+    options: activeLangOptions,
+  } = useCurrentLanguage();
+  const [showAllLanguages, setShowAllLanguages] = useState(false);
+  const language = showAllLanguages ? undefined : currentLanguage;
   const [status, setStatus] = useState<StatusFilter>('all');
   const [sortBy, setSortBy] = useState<WordFilter['sortBy']>('createdAt');
   const [sortDir, setSortDir] = useState<WordFilter['sortDir']>('desc');
@@ -179,24 +185,17 @@ export default function WordsPage() {
 
       <SearchBar value={search} onChange={setSearch} placeholder="Search words…" />
 
-      {/* Language chips */}
-      <div className="flex flex-wrap gap-2">
-        <button
-          className={`${chipBase} ${!language ? chipActive : chipInactive}`}
-          onClick={() => setLanguage(undefined)}
-        >
-          All
-        </button>
-        {activeLanguages.map((lang) => (
-          <button
-            key={lang}
-            className={`${chipBase} ${language === lang ? chipActive : chipInactive}`}
-            onClick={() => setLanguage(lang === language ? undefined : lang)}
-          >
-            {getLanguageLabel(lang)}
-          </button>
-        ))}
-      </div>
+      <LanguagePicker
+        options={activeLangOptions}
+        value={language}
+        onChange={(l) => {
+          setShowAllLanguages(false);
+          setCurrentLanguage(l);
+        }}
+        allowAll
+        onSelectAll={() => setShowAllLanguages(true)}
+        label="Filter words by language"
+      />
 
       {/* Status chips + sort */}
       <div className="flex flex-wrap items-center gap-2">

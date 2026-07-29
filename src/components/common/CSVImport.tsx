@@ -1,5 +1,6 @@
 import { useState, useRef, useCallback } from 'react';
 import { useSettingsStore } from '../../stores/settingsStore';
+import { currentLanguageOf } from '../../lib/current-language';
 import { useXPStore } from '../../stores/xpStore';
 import { bulkAddWords, wordExists } from '../../db/words';
 import { getLanguageLabel } from '../../lib/languages';
@@ -110,7 +111,9 @@ export default function CSVImport({ isOpen, onClose, onImportComplete }: CSVImpo
   const [step, setStep] = useState<1 | 2 | 3 | 4>(1);
   const [parsed, setParsed] = useState<ParsedData | null>(null);
   const [columnMap, setColumnMap] = useState<ColumnRole[]>([]);
-  const [language, setLanguage] = useState(activeLanguages[0] ?? 'ja');
+  // Defaults to what you're studying, but never writes back: picking a language
+  // here answers "where does this word go?", not "what am I studying now?".
+  const [language, setLanguage] = useState(() => currentLanguageOf(useSettingsStore.getState()) ?? 'ja');
   const [pasteText, setPasteText] = useState('');
   const [error, setError] = useState('');
   const [importing, setImporting] = useState(false);

@@ -7,6 +7,7 @@ import { getTotalWordCount } from '../db/words';
 import { formatStudyTime } from '../lib/xp';
 import { calculateCurrentStreak, calculateLongestStreak, todayStr, reconcileFreezes } from '../lib/streaks';
 import { useSettingsStore } from '../stores/settingsStore';
+import { useCurrentLanguage } from '../hooks/useCurrentLanguage';
 import { useXPStore } from '../stores/xpStore';
 import HeatMap from '../components/dashboard/HeatMap';
 import LanguageStats from '../components/dashboard/LanguageStats';
@@ -52,6 +53,7 @@ export default function Dashboard() {
   const weeklyGoalMinutes = useSettingsStore((s) => s.weeklyGoalMinutes);
   const dailyGoalMinutes = useSettingsStore((s) => s.dailyGoalMinutes);
   const activeLanguages = useSettingsStore((s) => s.activeLanguages);
+  const { language: currentLanguage } = useCurrentLanguage();
   const streakFreezes = useSettingsStore((s) => s.streakFreezes);
   const consumeStreakFreezes = useSettingsStore((s) => s.consumeStreakFreezes);
   const grantStreakFreeze = useSettingsStore((s) => s.grantStreakFreeze);
@@ -153,7 +155,7 @@ export default function Dashboard() {
   };
   const started = hasStarted(activity);
   const progress = hasProgress(activity);
-  const firstLanguage = activeLanguages[0];
+  const firstLanguage = currentLanguage ?? activeLanguages[0];
 
   return (
     <div className="page-enter">

@@ -1,5 +1,6 @@
 import { useState, useRef } from 'react';
 import { useSettingsStore } from '../stores/settingsStore';
+import { useCurrentLanguage } from '../hooks/useCurrentLanguage';
 import { exportAllData, importAllData, downloadJson } from '../db/backup';
 import DeckExport from '../components/common/DeckExport';
 import DeckImport from '../components/common/DeckImport';
@@ -415,8 +416,8 @@ export default function SettingsPage() {
 function TTSDiagPanel() {
   const [result, setResult] = useState<Awaited<ReturnType<typeof diagnoseTTS>> | null>(null);
   const [testing, setTesting] = useState(false);
-  const activeLanguages = useSettingsStore((s) => s.activeLanguages);
-  const lang = activeLanguages[0] ?? 'en';
+  const { language: currentLanguage } = useCurrentLanguage();
+  const lang = currentLanguage ?? 'en';
 
   const runTest = async () => {
     setTesting(true);

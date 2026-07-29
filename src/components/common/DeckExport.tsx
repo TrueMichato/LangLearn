@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { useSettingsStore } from '../../stores/settingsStore';
+import { currentLanguageOf } from '../../lib/current-language';
 import { exportDeck } from '../../lib/decks';
 import { downloadJson } from '../../db/backup';
 import { db } from '../../db/schema';
@@ -7,7 +8,9 @@ import { getLanguageLabel } from '../../lib/languages';
 
 export default function DeckExport() {
   const { activeLanguages } = useSettingsStore();
-  const [language, setLanguage] = useState(activeLanguages[0] ?? '');
+  // Defaults to what you're studying, but never writes back: picking a language
+  // here answers "where does this word go?", not "what am I studying now?".
+  const [language, setLanguage] = useState(() => currentLanguageOf(useSettingsStore.getState()) ?? '');
   const [deckName, setDeckName] = useState('');
   const [tag, setTag] = useState('');
   const [wordCount, setWordCount] = useState<number | null>(null);

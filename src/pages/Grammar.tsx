@@ -1,10 +1,10 @@
 import { useState, useEffect } from 'react';
+import { useCurrentLanguage } from '../hooks/useCurrentLanguage';
+import LanguagePicker from '../components/common/LanguagePicker';
 import { useNavigate } from 'react-router-dom';
-import { useSettingsStore } from '../stores/settingsStore';
 import LessonView from '../components/grammar/LessonView';
 import { getLessonProgress } from '../db/lessons';
 import type { LessonProgress } from '../db/schema';
-import { getLanguageLabel } from '../lib/languages';
 import { SkeletonList } from '../components/common/Skeleton';
 
 interface LessonMeta {
@@ -17,8 +17,8 @@ interface LessonMeta {
 
 export default function GrammarPage() {
   const navigate = useNavigate();
-  const activeLanguages = useSettingsStore((s) => s.activeLanguages);
-  const [selectedLang, setSelectedLang] = useState(activeLanguages[0] ?? 'ja');
+  const { language, setLanguage, options } = useCurrentLanguage();
+  const selectedLang = language ?? 'ja';
   const [lessons, setLessons] = useState<LessonMeta[]>([]);
   const [loading, setLoading] = useState(true);
   const [activeLessonId, setActiveLessonId] = useState<string | null>(null);
@@ -73,25 +73,16 @@ export default function GrammarPage() {
       )}
       <h2 className="text-lg font-semibold text-slate-700 dark:text-slate-200 mb-4">Grammar Guide</h2>
 
-      {/* Language tabs */}
-      <div className="flex gap-2 mb-4">
-        {activeLanguages.map((lang) => (
-          <button
-            key={lang}
-            onClick={() => {
-              setSelectedLang(lang);
-              setActiveLessonId(null);
-            }}
-            className={`px-3 py-1.5 min-h-[44px] rounded-full text-sm font-medium transition-colors press-feedback ${
-              selectedLang === lang
-                ? 'bg-indigo-600 text-white'
-                : 'bg-slate-200 dark:bg-slate-700 text-slate-600 dark:text-slate-300 hover:bg-slate-300 dark:hover:bg-slate-600'
-            }`}
-          >
-            {getLanguageLabel(lang)}
-          </button>
-        ))}
-      </div>
+      <LanguagePicker
+        options={options}
+        value={selectedLang}
+        onChange={(lang) => {
+          setLanguage(lang);
+          setActiveLessonId(null);
+        }}
+        label="Grammar language"
+        className="mb-4"
+      />
 
       {/* Lesson list */}
       {loading ? (

@@ -1,5 +1,6 @@
 import { useState, useEffect, useRef } from 'react';
 import { useSettingsStore } from '../../stores/settingsStore';
+import { currentLanguageOf } from '../../lib/current-language';
 import { addWord } from '../../db/words';
 import { lookupWord } from '../../lib/dictionary';
 import { speak, isTTSSupported } from '../../lib/tts';
@@ -12,7 +13,9 @@ interface AddWordModalProps {
 
 export default function AddWordModal({ isOpen, onClose }: AddWordModalProps) {
   const activeLanguages = useSettingsStore((s) => s.activeLanguages);
-  const [language, setLanguage] = useState(activeLanguages[0] ?? 'ja');
+  // Defaults to what you're studying, but never writes back: picking a language
+  // here answers "where does this word go?", not "what am I studying now?".
+  const [language, setLanguage] = useState(() => currentLanguageOf(useSettingsStore.getState()) ?? 'ja');
   const [word, setWord] = useState('');
   const [reading, setReading] = useState('');
   const [meaning, setMeaning] = useState('');
@@ -22,15 +25,20 @@ export default function AddWordModal({ isOpen, onClose }: AddWordModalProps) {
   const [error, setError] = useState('');
   const wordRef = useRef<HTMLInputElement>(null);
 
+  /* Read at open time, not as a dependency: the default should follow the
+     language you were studying when you opened this, and must not yank the
+     field out from under you if it changes while the form is filled in. */
   useEffect(() => {
     if (isOpen) {
+      const current = currentLanguageOf(useSettingsStore.getState());
+      if (current) setLanguage(current);
       setTimeout(() => wordRef.current?.focus(), 50);
     }
   }, [isOpen]);
 
   useEffect(() => {
     if (!activeLanguages.includes(language) && activeLanguages.length > 0) {
-      setLanguage(activeLanguages[0]);
+      setLanguage(currentLanguageOf(useSettingsStore.getState()) ?? activeLanguages[0]);
     }
   }, [activeLanguages, language]);
 

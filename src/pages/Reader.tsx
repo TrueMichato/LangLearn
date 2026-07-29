@@ -4,6 +4,8 @@ import { addWord } from '../db/words';
 import { getTextCount } from '../db/texts';
 import { useTimerStore } from '../stores/timerStore';
 import { useSettingsStore } from '../stores/settingsStore';
+import { useCurrentLanguage } from '../hooks/useCurrentLanguage';
+import LanguagePicker from '../components/common/LanguagePicker';
 import WordLookupSheet from '../components/reader/WordLookupSheet';
 import TextLibrary from '../components/reader/TextLibrary';
 import { tokenizeJapanese } from '../lib/tokenizer';
@@ -11,7 +13,6 @@ import type { Token } from '../lib/tokenizer';
 import FuriganaText from '../components/reader/FuriganaText';
 import { applyStress } from '../lib/russian-stress';
 import { splitSentences, findSentenceAt, type SentenceSpan } from '../lib/sentences';
-import { getLanguageLabel } from '../lib/languages';
 import { isRTL } from '../lib/rtl';
 import { SkeletonCard, SkeletonList } from '../components/common/Skeleton';
 import ComprehensionIndicator from '../components/reader/ComprehensionIndicator';
@@ -28,8 +29,8 @@ export default function ReaderPage() {
   const [tabReady, setTabReady] = useState(false);
   const [text, setText] = useState('');
   const [title, setTitle] = useState('');
-  const activeLanguages = useSettingsStore((s) => s.activeLanguages);
-  const [language, setLanguage] = useState(activeLanguages[0] ?? 'ja');
+  const { language: currentLanguage, setLanguage, options: activeLanguages } = useCurrentLanguage();
+  const language = currentLanguage ?? 'ja';
   const [savedTextId, setSavedTextId] = useState<number | null>(null);
   const [tokens, setTokens] = useState<string[]>([]);
   const [tokenOffsets, setTokenOffsets] = useState<number[]>([]);
@@ -418,22 +419,12 @@ export default function ReaderPage() {
           onChange={(e) => setTitle(e.target.value)}
           className="w-full px-4 py-2 border border-slate-300 dark:border-slate-600 rounded-xl focus:outline-none focus:ring-2 focus:ring-indigo-300 dark:focus:ring-indigo-700 bg-white dark:bg-slate-800 dark:text-slate-100"
         />
-        {/* Language pill selector */}
-        <div className="flex gap-1 bg-slate-100 dark:bg-slate-800 rounded-xl p-1">
-          {activeLanguages.map((code) => (
-            <button
-              key={code}
-              onClick={() => setLanguage(code)}
-              className={`flex-1 py-2 px-3 text-sm font-medium rounded-lg transition-colors press-feedback ${
-                language === code
-                  ? 'bg-white dark:bg-slate-700 text-indigo-600 dark:text-indigo-300 shadow-sm'
-                  : 'text-slate-600 dark:text-slate-300 hover:text-slate-800 dark:hover:text-slate-100'
-              }`}
-            >
-              {getLanguageLabel(code)}
-            </button>
-          ))}
-        </div>
+        <LanguagePicker
+          options={activeLanguages}
+          value={language}
+          onChange={setLanguage}
+          label="Language of this text"
+        />
         <label htmlFor="reader-text" className="sr-only">Text to read</label>
         <textarea
           id="reader-text"

@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { useStudySetsStore, type StudySet } from '../../stores/studySetsStore';
 import { useSettingsStore } from '../../stores/settingsStore';
+import { currentLanguageOf } from '../../lib/current-language';
 import { getAllTags, getWordsForSet } from '../../lib/study-sets';
 import { getLanguageLabel } from '../../lib/languages';
 
@@ -13,6 +14,8 @@ interface SetModalProps {
 export default function SetModal({ isOpen, onClose, editingSet }: SetModalProps) {
   const { addSet, updateSet } = useStudySetsStore();
   const activeLanguages = useSettingsStore((s) => s.activeLanguages);
+  // Defaults to what you're studying, but never writes back: picking a language
+  // here answers "where does this word go?", not "what am I studying now?".
 
   const [name, setName] = useState('');
   const [description, setDescription] = useState('');
@@ -32,7 +35,7 @@ export default function SetModal({ isOpen, onClose, editingSet }: SetModalProps)
     } else {
       setName('');
       setDescription('');
-      setLanguage('');
+      setLanguage(currentLanguageOf(useSettingsStore.getState()) ?? '');
       setSelectedTags([]);
     }
     setPreviewCount(null);

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useSettingsStore } from '../stores/settingsStore';
+import { useCurrentLanguage } from '../hooks/useCurrentLanguage';
 import { getAlphabetsForLanguage } from '../data/alphabets';
 import { hasNumbers } from '../data/numbers';
 import { getLanguageFlag } from '../lib/languages';
@@ -74,6 +75,7 @@ function ActivityCardLink({ card }: { card: ActivityCard }) {
 
 export default function LearnPage() {
   const activeLanguages = useSettingsStore((s) => s.activeLanguages);
+  const { language: currentLanguage } = useCurrentLanguage();
   const languagesWithLetters = activeLanguages.filter((l) => getAlphabetsForLanguage(l).length > 0);
   const hasArabic = activeLanguages.includes('ar');
   const hasNumberPractice = activeLanguages.some((l) => hasNumbers(l));
@@ -81,7 +83,7 @@ export default function LearnPage() {
 
   // The same recommendation onboarding and the dashboard give, so the app never
   // points a learner in three different directions at once.
-  const firstLanguage = activeLanguages[0];
+  const firstLanguage = currentLanguage ?? activeLanguages[0];
   const recommended = firstLanguage ? getStartingPoints(firstLanguage)[0] : null;
 
   const letterCards: ActivityCard[] =

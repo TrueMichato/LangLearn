@@ -5,6 +5,7 @@ import { processReview } from '../db/reviews';
 import { useReviewStore, type QueueItem, type PracticeMode } from '../stores/reviewStore';
 import { useTimerStore } from '../stores/timerStore';
 import { useSettingsStore } from '../stores/settingsStore';
+import LanguagePicker from '../components/common/LanguagePicker';
 import { useStudySetsStore } from '../stores/studySetsStore';
 import { getFilteredReviewQueue } from '../lib/filtered-review';
 import { getStudySuggestions, type StudySuggestion } from '../lib/study-suggestions';
@@ -13,7 +14,6 @@ import { getMistakeDeck, getLeechWordIds } from '../lib/mistakes';
 import { getTopicDeck } from '../lib/grammar-topics';
 import { composeAdaptiveBatch } from '../lib/adaptive';
 import { get7DayRetention } from '../lib/analytics';
-import { getLanguageFlag } from '../lib/languages';
 import Flashcard from '../components/srs/Flashcard';
 import ReverseCard from '../components/srs/ReverseCard';
 import ListeningCard from '../components/srs/ListeningCard';
@@ -117,6 +117,7 @@ export default function ReviewPage() {
   const [showModePicker, setShowModePicker] = useState(false);
   // Language filter: null = per-language (default), 'all' = cross-language
   const [reviewLanguage, setReviewLanguage] = useState<string | null>(null);
+  const setCurrentLanguage = useSettingsStore((s) => s.setCurrentLanguage);
 
   useEffect(() => {
     get7DayRetention().then(setRetention);
@@ -254,8 +255,12 @@ export default function ReviewPage() {
     navigate('/');
   };
 
+  /* Reviewing in one language is the same decision as studying in it, so a pick
+     here follows you to Grammar, Vocab and the rest. "All languages" and
+     "Everything" are deliberately cross-language views and steer nothing. */
   const handleLanguageChange = (lang: string | null) => {
     setReviewLanguage(lang);
+    if (lang && lang !== 'all') setCurrentLanguage(lang);
   };
 
   const handleGrade = async (grade: SM2Grade) => {
@@ -399,38 +404,24 @@ export default function ReviewPage() {
         {/* Language filter — only when user has multiple active languages and no study set */}
         {!setId && activeLanguages.length > 1 && (
           <div className="flex items-center justify-center gap-2 mb-2 flex-wrap">
-            <button
-              onClick={() => handleLanguageChange(null)}
-              className={`px-3 py-1.5 rounded-lg text-sm font-medium transition-colors ${
-                reviewLanguage === null
-                  ? 'bg-indigo-600 text-white'
-                  : 'border border-slate-300 dark:border-slate-600 text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-700'
-              }`}
-            >
-              My Languages
-            </button>
-            {activeLanguages.map((lang) => (
-              <button
-                key={lang}
-                onClick={() => handleLanguageChange(lang)}
-                className={`px-3 py-1.5 rounded-lg text-sm font-medium transition-colors ${
-                  reviewLanguage === lang
-                    ? 'bg-indigo-600 text-white'
-                    : 'border border-slate-300 dark:border-slate-600 text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-700'
-                }`}
-              >
-                {getLanguageFlag(lang)} {lang.toUpperCase()}
-              </button>
-            ))}
+            <LanguagePicker
+              options={activeLanguages}
+              value={reviewLanguage === 'all' ? undefined : reviewLanguage ?? undefined}
+              onChange={handleLanguageChange}
+              allowAll
+              onSelectAll={() => handleLanguageChange(null)}
+              label="Review language"
+            />
             <button
               onClick={() => handleLanguageChange('all')}
-              className={`px-3 py-1.5 rounded-lg text-sm font-medium transition-colors ${
+              aria-pressed={reviewLanguage === 'all'}
+              className={`min-h-[44px] px-3 rounded-xl text-sm font-medium transition-colors ${
                 reviewLanguage === 'all'
                   ? 'bg-indigo-600 text-white'
-                  : 'border border-slate-300 dark:border-slate-600 text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-700'
+                  : 'bg-slate-100 dark:bg-slate-700 text-slate-700 dark:text-slate-200 hover:bg-slate-200 dark:hover:bg-slate-600'
               }`}
             >
-              🌐 All
+              🌐 Everything
             </button>
           </div>
         )}

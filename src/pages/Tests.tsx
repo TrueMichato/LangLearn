@@ -1,8 +1,8 @@
 import { useState, useEffect, useRef, useCallback } from 'react';
 import { Link } from 'react-router-dom';
-import { useSettingsStore } from '../stores/settingsStore';
+import { useCurrentLanguage } from '../hooks/useCurrentLanguage';
+import LanguagePicker from '../components/common/LanguagePicker';
 import { useXPStore } from '../stores/xpStore';
-import { getLanguageLabel } from '../lib/languages';
 import { generateTestQuestions, type Question, type TestType } from '../lib/test-questions';
 import { getTestLevel, calculateXP } from '../lib/test-scoring';
 import { db, type TestHistory } from '../db/schema';
@@ -25,8 +25,8 @@ const TIME_OPTIONS: { value: TimeLimit; label: string }[] = [
 ];
 
 export default function TestsPage() {
-  const activeLanguages = useSettingsStore((s) => s.activeLanguages);
-  const [language, setLanguage] = useState(activeLanguages[0] ?? 'ja');
+  const { language: currentLanguage, setLanguage, options: activeLanguages } = useCurrentLanguage();
+  const language = currentLanguage ?? 'ja';
   const [testType, setTestType] = useState<TestType>('mixed');
   const [timeLimit, setTimeLimit] = useState<TimeLimit>(10);
   const [phase, setPhase] = useState<Phase>('setup');
@@ -185,19 +185,12 @@ export default function TestsPage() {
           <div className="bg-white dark:bg-slate-800 rounded-2xl shadow p-4">
             <label className="block text-sm font-medium text-slate-600 dark:text-slate-300 mb-2">Language</label>
             <div className="flex flex-wrap gap-2">
-              {activeLanguages.map((l) => (
-                <button
-                  key={l}
-                  onClick={() => setLanguage(l)}
-                  className={`px-4 py-2 min-h-[44px] rounded-xl text-sm font-medium transition-colors ${
-                    language === l
-                      ? 'bg-indigo-600 text-white'
-                      : 'bg-slate-100 dark:bg-slate-700 text-slate-700 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-600'
-                  }`}
-                >
-                  {getLanguageLabel(l)}
-                </button>
-              ))}
+              <LanguagePicker
+                options={activeLanguages}
+                value={language}
+                onChange={setLanguage}
+                label="Test language"
+              />
             </div>
           </div>
 
