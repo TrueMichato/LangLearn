@@ -11,12 +11,7 @@ export interface LanguageInfo {
 export const LANGUAGES: Record<string, LanguageInfo> = {
   ja: { code: 'ja', name: 'Japanese', flag: '🇯🇵', nativeName: '日本語', hasLetterSystem: 'hiragana-katakana' },
   ru: { code: 'ru', name: 'Russian', flag: '🇷🇺', nativeName: 'Русский', hasLetterSystem: 'cyrillic' },
-  en: { code: 'en', name: 'English', flag: '🇬🇧', nativeName: 'English' },
   es: { code: 'es', name: 'Spanish', flag: '🇪🇸', nativeName: 'Español' },
-  fr: { code: 'fr', name: 'French', flag: '🇫🇷', nativeName: 'Français' },
-  de: { code: 'de', name: 'German', flag: '🇩🇪', nativeName: 'Deutsch' },
-  zh: { code: 'zh', name: 'Chinese', flag: '🇨🇳', nativeName: '中文', hasLetterSystem: 'hanzi' },
-  ko: { code: 'ko', name: 'Korean', flag: '🇰🇷', nativeName: '한국어', hasLetterSystem: 'hangul' },
   pt: { code: 'pt', name: 'Portuguese', flag: '🇧🇷', nativeName: 'Português', hasLetterSystem: 'latin-accents' },
   ar: { code: 'ar', name: 'Arabic', flag: '🇸🇦', nativeName: 'العربية', hasLetterSystem: 'arabic', rtl: true },
   ro: { code: 'ro', name: 'Romanian', flag: '🇷🇴', nativeName: 'Română', hasLetterSystem: 'latin-accents' },

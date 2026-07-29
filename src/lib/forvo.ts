@@ -1,12 +1,7 @@
 const FORVO_LANG_CODES: Record<string, string> = {
   ja: 'ja',
   ru: 'ru',
-  zh: 'zh',
-  ko: 'ko',
   es: 'es',
-  fr: 'fr',
-  de: 'de',
-  it: 'it',
   pt: 'pt',
   ar: 'ar',
   ro: 'ro',
