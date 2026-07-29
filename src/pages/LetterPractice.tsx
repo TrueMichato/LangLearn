@@ -52,7 +52,7 @@ export default function LetterPractice() {
     <div>
       <button
         onClick={() => navigate('/learn')}
-        className="text-indigo-600 dark:text-indigo-400 text-sm font-medium mb-3 hover:underline press-feedback"
+        className="inline-flex min-h-[44px] items-center text-indigo-600 dark:text-indigo-400 text-sm font-medium mb-3 hover:underline press-feedback"
       >
         ← Back to Learn
       </button>
@@ -65,7 +65,7 @@ export default function LetterPractice() {
             <button
               key={a.name}
               onClick={() => setSelectedAlphabet(i)}
-              className={`px-3 py-1.5 rounded-full text-sm font-medium transition-colors press-feedback ${
+              className={`px-3 py-1.5 min-h-[44px] rounded-full text-sm font-medium transition-colors press-feedback ${
                 selectedAlphabet === i
                   ? 'bg-indigo-600 text-white'
                   : 'bg-slate-200 dark:bg-slate-700 text-slate-600 dark:text-slate-300'
@@ -90,7 +90,7 @@ export default function LetterPractice() {
           <button
             key={m}
             onClick={() => setMode(m)}
-            className={`flex-1 py-2 rounded-xl text-sm font-medium transition-colors press-feedback ${
+            className={`flex-1 py-2 min-h-[44px] rounded-xl text-sm font-medium transition-colors press-feedback ${
               mode === m
                 ? 'bg-indigo-600 text-white'
                 : 'bg-slate-100 dark:bg-slate-700 text-slate-600 dark:text-slate-300'

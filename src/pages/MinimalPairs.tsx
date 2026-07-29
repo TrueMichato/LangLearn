@@ -246,7 +246,7 @@ export default function MinimalPairsPage() {
                 className={`flex-1 py-2 px-3 text-sm font-medium rounded-lg transition-colors press-feedback min-h-[44px] ${
                   language === code
                     ? 'bg-white dark:bg-slate-700 text-indigo-600 dark:text-indigo-400 shadow-sm'
-                    : 'text-slate-500 dark:text-slate-400 hover:text-slate-700 dark:hover:text-slate-300'
+                    : 'text-slate-600 dark:text-slate-300 hover:text-slate-800 dark:hover:text-slate-100'
                 } disabled:opacity-40`}
               >
                 {getLanguageLabel(code)}
@@ -265,7 +265,7 @@ export default function MinimalPairsPage() {
               <button
                 key={cat}
                 onClick={() => toggleCategory(cat)}
-                className={`px-3 py-1.5 rounded-full text-sm font-medium transition-colors press-feedback min-h-[44px] ${
+                className={`px-3 py-1.5 min-h-[44px] rounded-full text-sm font-medium transition-colors press-feedback min-h-[44px] ${
                   selectedCategories.has(cat)
                     ? 'bg-indigo-600 text-white'
                     : 'bg-slate-100 dark:bg-slate-700 text-slate-700 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-600'
@@ -362,7 +362,7 @@ export default function MinimalPairsPage() {
 
       {/* Hint */}
       <div className="text-center mb-4">
-        <span className="text-xs text-slate-500 dark:text-slate-400 bg-slate-100 dark:bg-slate-800 px-3 py-1 rounded-full">
+        <span className="text-xs text-slate-500 dark:text-slate-400 bg-slate-100 dark:bg-slate-800 px-3 py-1 min-h-[44px] rounded-full">
           {CATEGORIES[current.category] ?? current.category} · {current.hint}
         </span>
       </div>
@@ -450,14 +450,14 @@ export default function MinimalPairsPage() {
           <div className="flex justify-center gap-3">
             <button
               onClick={() => playAudio(current, 'a')}
-              className="text-sm text-indigo-600 dark:text-indigo-400 hover:underline press-feedback min-h-[44px] flex items-center gap-1"
+              className="inline-flex min-h-[44px] items-center text-sm text-indigo-600 dark:text-indigo-400 hover:underline press-feedback min-h-[44px] flex items-center gap-1"
             >
               🔊 A: {current.wordA}
             </button>
             <span className="text-slate-300 dark:text-slate-600">|</span>
             <button
               onClick={() => playAudio(current, 'b')}
-              className="text-sm text-indigo-600 dark:text-indigo-400 hover:underline press-feedback min-h-[44px] flex items-center gap-1"
+              className="inline-flex min-h-[44px] items-center text-sm text-indigo-600 dark:text-indigo-400 hover:underline press-feedback min-h-[44px] flex items-center gap-1"
             >
               🔊 B: {current.wordB}
             </button>

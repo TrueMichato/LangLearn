@@ -48,7 +48,7 @@ export default function StudyTip({ category, context, className = '' }: StudyTip
         </p>
         <button
           onClick={handleDismiss}
-          className="min-h-[44px] min-w-[44px] -mt-2 -mr-2 flex items-center justify-center text-indigo-400 dark:text-indigo-500 hover:text-indigo-600 dark:hover:text-indigo-300 transition-colors"
+          className="min-h-[44px] min-w-[44px] -mt-2 -mr-2 flex items-center justify-center text-indigo-600 dark:text-indigo-400 hover:text-indigo-700 dark:hover:text-indigo-300 transition-colors"
           aria-label="Dismiss tip"
         >
           ×

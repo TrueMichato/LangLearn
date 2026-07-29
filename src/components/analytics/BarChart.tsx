@@ -16,7 +16,7 @@ export default function BarChart({
   const gradientClass =
     gradient === 'green'
       ? 'bg-gradient-to-r from-emerald-500 to-green-400'
-      : 'bg-gradient-to-r from-indigo-500 to-violet-500';
+      : 'bg-indigo-500';
 
   return (
     <div className="space-y-2">

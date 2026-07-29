@@ -71,7 +71,7 @@ function SongBrowser({
             <button
               key={lang}
               onClick={() => setSelectedLang(lang)}
-              className={`px-4 py-2 rounded-xl text-sm font-medium min-h-[44px] transition-colors ${
+              className={`px-4 py-2 min-h-[44px] rounded-xl text-sm font-medium min-h-[44px] transition-colors ${
                 selectedLang === lang
                   ? 'bg-pink-600 text-white'
                   : 'bg-slate-100 dark:bg-slate-700 text-slate-700 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-600'
@@ -98,7 +98,7 @@ function SongBrowser({
           <button
             key={d}
             onClick={() => setDifficulty(d)}
-            className={`px-3 py-1.5 rounded-lg text-xs font-medium min-h-[36px] transition-colors ${
+            className={`px-3 py-1.5 min-h-[44px] rounded-lg text-xs font-medium min-h-[36px] transition-colors ${
               difficulty === d
                 ? 'bg-pink-600 text-white'
                 : 'bg-slate-100 dark:bg-slate-700 text-slate-600 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-600'
@@ -241,7 +241,7 @@ function LyricsViewer({
       <div className="flex gap-3 mb-4 flex-wrap">
         <button
           onClick={() => setShowReading((v) => !v)}
-          className={`px-4 py-2 rounded-xl text-sm font-medium min-h-[44px] transition-colors ${
+          className={`px-4 py-2 min-h-[44px] rounded-xl text-sm font-medium min-h-[44px] transition-colors ${
             showReading
               ? 'bg-pink-600 text-white'
               : 'bg-slate-100 dark:bg-slate-700 text-slate-600 dark:text-slate-300'
@@ -252,7 +252,7 @@ function LyricsViewer({
         {song.lines.some((l) => l.romaji) && (
           <button
             onClick={() => setShowRomaji((v) => !v)}
-            className={`px-4 py-2 rounded-xl text-sm font-medium min-h-[44px] transition-colors ${
+            className={`px-4 py-2 min-h-[44px] rounded-xl text-sm font-medium min-h-[44px] transition-colors ${
               showRomaji
                 ? 'bg-pink-600 text-white'
                 : 'bg-slate-100 dark:bg-slate-700 text-slate-600 dark:text-slate-300'
@@ -263,7 +263,7 @@ function LyricsViewer({
         )}
         <button
           onClick={() => setShowTranslation((v) => !v)}
-          className={`px-4 py-2 rounded-xl text-sm font-medium min-h-[44px] transition-colors ${
+          className={`px-4 py-2 min-h-[44px] rounded-xl text-sm font-medium min-h-[44px] transition-colors ${
             showTranslation
               ? 'bg-pink-600 text-white'
               : 'bg-slate-100 dark:bg-slate-700 text-slate-600 dark:text-slate-300'
@@ -330,7 +330,7 @@ function LyricsViewer({
                 <button
                   onClick={() => handleAddVocab(v)}
                   disabled={isAdded || isAdding}
-                  className={`px-3 py-1.5 rounded-lg text-xs font-medium whitespace-nowrap min-h-[36px] transition-colors ${
+                  className={`px-3 py-1.5 min-h-[44px] rounded-lg text-xs font-medium whitespace-nowrap min-h-[36px] transition-colors ${
                     isAdded
                       ? 'bg-green-100 dark:bg-green-900/50 text-green-700 dark:text-green-300'
                       : 'bg-pink-100 dark:bg-pink-900/40 text-pink-700 dark:text-pink-300 hover:bg-pink-200 dark:hover:bg-pink-800/50'

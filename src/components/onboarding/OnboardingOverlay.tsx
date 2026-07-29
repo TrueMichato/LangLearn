@@ -18,9 +18,9 @@ function StepIndicators({ current, total }: { current: number; total: number }) 
           <div
             className={`relative h-3 w-3 rounded-full transition-all duration-300 flex items-center justify-center ${
               i < current
-                ? 'gradient-primary'
+                ? 'fill-primary'
                 : i === current
-                  ? 'gradient-primary shadow-md shadow-indigo-500/30'
+                  ? 'fill-primary shadow-md shadow-indigo-500/30'
                   : 'border-2 border-slate-300 dark:border-slate-600 bg-transparent'
             }`}
           >
@@ -160,7 +160,7 @@ export default function OnboardingOverlay() {
             <button
               type="button"
               onClick={addCustomLanguage}
-              className="rounded-lg gradient-primary px-4 py-2 text-white font-medium hover:opacity-90 transition-opacity press-feedback"
+              className="rounded-lg fill-primary px-4 py-2 text-white font-medium hover:opacity-90 transition-opacity press-feedback"
             >
               Add
             </button>
@@ -263,7 +263,7 @@ export default function OnboardingOverlay() {
             type="button"
             onClick={next}
             disabled={!hasLanguage}
-            className="w-full max-w-xs min-h-[44px] rounded-xl gradient-primary py-3 text-lg font-semibold text-white hover:opacity-90 transition-opacity press-feedback disabled:cursor-not-allowed disabled:opacity-40"
+            className="w-full max-w-xs min-h-[44px] rounded-xl fill-primary py-3 text-lg font-semibold text-white hover:opacity-90 transition-opacity press-feedback disabled:cursor-not-allowed disabled:opacity-40"
           >
             {hasLanguage ? 'Next →' : 'Pick a language to continue'}
           </button>

@@ -47,7 +47,7 @@ function CardBody({ card }: { card: ActivityCard }) {
         <p className="font-semibold text-sm text-slate-800 dark:text-slate-100 leading-tight line-clamp-2">
           {card.title}
         </p>
-        <p className="text-xs text-slate-500 dark:text-slate-400 leading-tight line-clamp-2 mt-0.5">
+        <p className="text-xs text-slate-600 dark:text-slate-300 leading-tight line-clamp-2 mt-0.5">
           {card.subtitle}
         </p>
       </div>
@@ -166,9 +166,9 @@ export default function LearnPage() {
           <div className="min-w-0 flex-1">
             <p className="text-xs font-medium text-indigo-600 dark:text-indigo-400">Start here</p>
             <p className="font-semibold text-slate-800 dark:text-slate-100">{recommended.label}</p>
-            <p className="text-sm text-slate-500 dark:text-slate-400">{recommended.sublabel}</p>
+            <p className="text-sm text-slate-600 dark:text-slate-300">{recommended.sublabel}</p>
           </div>
-          <span aria-hidden="true" className="shrink-0 text-slate-400 dark:text-slate-500">
+          <span aria-hidden="true" className="shrink-0 text-slate-500 dark:text-slate-400">
             →
           </span>
         </Link>

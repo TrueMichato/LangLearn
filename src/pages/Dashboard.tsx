@@ -146,7 +146,7 @@ export default function Dashboard() {
         </div>
         <Link
           to="/settings"
-          className="p-2 rounded-full hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors"
+          className="flex min-h-[44px] min-w-[44px] items-center justify-center rounded-full hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors"
           aria-label="Settings"
         >
           <span className="text-xl">⚙️</span>

@@ -66,7 +66,7 @@ export default function GrammarPage() {
       {!activeLessonId && (
         <button
           onClick={() => navigate('/learn')}
-          className="text-indigo-600 dark:text-indigo-400 text-sm font-medium mb-3 hover:underline press-feedback"
+          className="inline-flex min-h-[44px] items-center text-indigo-600 dark:text-indigo-400 text-sm font-medium mb-3 hover:underline press-feedback"
         >
           ← Back to Learn
         </button>
@@ -82,7 +82,7 @@ export default function GrammarPage() {
               setSelectedLang(lang);
               setActiveLessonId(null);
             }}
-            className={`px-3 py-1.5 rounded-full text-sm font-medium transition-colors press-feedback ${
+            className={`px-3 py-1.5 min-h-[44px] rounded-full text-sm font-medium transition-colors press-feedback ${
               selectedLang === lang
                 ? 'bg-indigo-600 text-white'
                 : 'bg-slate-200 dark:bg-slate-700 text-slate-600 dark:text-slate-300 hover:bg-slate-300 dark:hover:bg-slate-600'
@@ -113,7 +113,7 @@ export default function GrammarPage() {
                 </p>
                 <div className="w-full h-2 rounded-full bg-slate-200 dark:bg-slate-700 overflow-hidden">
                   <div
-                    className="h-full rounded-full bg-gradient-to-r from-indigo-500 to-violet-500 transition-all"
+                    className="h-full rounded-full bg-indigo-500 transition-all"
                     style={{ width: `${pct}%` }}
                   />
                 </div>
@@ -160,7 +160,7 @@ export default function GrammarPage() {
                             Lesson {lesson.order}
                           </p>
                           {lesson.source === 'tofugu' && (
-                            <span className="text-[10px] font-medium text-purple-600 dark:text-purple-400 bg-purple-50 dark:bg-purple-950/50 rounded-full px-1.5 py-0.5">
+                            <span className="text-xs font-medium text-slate-600 dark:text-slate-300 bg-slate-100 dark:bg-slate-700 rounded-full px-1.5 py-0.5">
                               Tofugu
                             </span>
                           )}
@@ -212,7 +212,7 @@ export default function GrammarPage() {
                       <div key={group} className="mb-4">
                         <button
                           onClick={() => toggleGroup(group)}
-                          className="w-full flex items-center justify-between py-2 px-1 press-feedback"
+                          className="w-full min-h-[44px] flex items-center justify-between py-2 px-1 press-feedback"
                         >
                           <div className="flex items-center gap-2">
                             <span className={`text-xs transition-transform ${isCollapsed ? '' : 'rotate-90'}`}>▶</span>
@@ -220,7 +220,7 @@ export default function GrammarPage() {
                               {group}
                             </h3>
                             {isTofuguGroup && (
-                              <span className="text-[10px] font-medium text-purple-600 dark:text-purple-400 bg-purple-50 dark:bg-purple-950/50 rounded-full px-1.5 py-0.5">
+                              <span className="text-xs font-medium text-slate-600 dark:text-slate-300 bg-slate-100 dark:bg-slate-700 rounded-full px-1.5 py-0.5">
                                 Tofugu
                               </span>
                             )}

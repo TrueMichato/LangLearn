@@ -64,7 +64,7 @@ export default function StudySets() {
     <div className="space-y-3">
       {/* Header */}
       <button
-        className="flex items-center justify-between w-full"
+        className="flex min-h-[44px] items-center justify-between w-full"
         onClick={() => setCollapsed(!collapsed)}
       >
         <h2 className="text-lg font-semibold text-slate-900 dark:text-slate-100">
@@ -165,13 +165,13 @@ function SetPill({
     <div
       className={`snap-start shrink-0 rounded-2xl shadow p-3 min-w-[180px] max-w-[220px] flex flex-col gap-2 ${
         isActive
-          ? 'gradient-primary text-white'
+          ? 'fill-primary text-white'
           : 'bg-white dark:bg-slate-800 text-slate-900 dark:text-slate-100'
       }`}
     >
       <div className="flex items-center gap-1.5">
         <h3 className="font-semibold text-sm truncate">{set.name}</h3>
-        <span className={`text-[10px] px-1.5 py-0.5 rounded-full shrink-0 ${
+        <span className={`text-xs px-1.5 py-0.5 rounded-full shrink-0 ${
           isActive
             ? 'bg-white/20 text-white'
             : set.type === 'smart'
@@ -189,7 +189,7 @@ function SetPill({
 
       <button
         onClick={onReview}
-        className={`w-full py-1.5 rounded-lg text-xs font-medium transition-colors press-feedback ${
+        className={`w-full py-1.5 min-h-[44px] rounded-lg text-xs font-medium transition-colors press-feedback ${
           isActive
             ? 'bg-white/20 hover:bg-white/30 text-white'
             : 'bg-indigo-600 hover:bg-indigo-700 text-white'
@@ -203,7 +203,7 @@ function SetPill({
           {onEdit && (
             <button
               onClick={onEdit}
-              className={`text-[10px] px-1.5 py-0.5 rounded press-feedback ${
+              className={`text-xs px-1.5 py-0.5 rounded press-feedback ${
                 isActive ? 'bg-white/15 text-white/80 hover:bg-white/25' : 'bg-slate-100 dark:bg-slate-700 text-slate-600 dark:text-slate-400 hover:bg-slate-200 dark:hover:bg-slate-600'
               }`}
             >
@@ -212,16 +212,16 @@ function SetPill({
           )}
           {deleteConfirm ? (
             <div className="flex items-center gap-1">
-              <span className={`text-[10px] ${isActive ? 'text-white/80' : 'text-red-600 dark:text-red-400'}`}>Delete?</span>
+              <span className={`text-xs ${isActive ? 'text-white/80' : 'text-red-600 dark:text-red-400'}`}>Delete?</span>
               <button
                 onClick={onDelete}
-                className="text-[10px] px-1.5 py-0.5 rounded bg-red-600 text-white hover:bg-red-700 press-feedback"
+                className="text-xs px-1.5 py-0.5 rounded bg-red-600 text-white hover:bg-red-700 press-feedback"
               >
                 Yes
               </button>
               <button
                 onClick={onDeleteCancel}
-                className={`text-[10px] px-1.5 py-0.5 rounded press-feedback ${
+                className={`text-xs px-1.5 py-0.5 rounded press-feedback ${
                   isActive ? 'bg-white/15 text-white/80' : 'bg-slate-200 dark:bg-slate-700 text-slate-700 dark:text-slate-300'
                 }`}
               >
@@ -232,7 +232,7 @@ function SetPill({
             onDelete && (
               <button
                 onClick={onDelete}
-                className={`text-[10px] px-1.5 py-0.5 rounded press-feedback ${
+                className={`text-xs px-1.5 py-0.5 rounded press-feedback ${
                   isActive ? 'bg-white/15 text-white/80 hover:bg-white/25' : 'bg-red-100 dark:bg-red-900 text-red-700 dark:text-red-300 hover:bg-red-200 dark:hover:bg-red-800'
                 }`}
               >

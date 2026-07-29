@@ -186,7 +186,7 @@ export default function NumberPracticePage() {
               className={`flex-1 py-2 px-3 text-sm font-medium rounded-lg transition-colors press-feedback min-h-[44px] ${
                 language === code
                   ? 'bg-white dark:bg-slate-700 text-indigo-600 dark:text-indigo-400 shadow-sm'
-                  : 'text-slate-500 dark:text-slate-400 hover:text-slate-700 dark:hover:text-slate-300'
+                  : 'text-slate-600 dark:text-slate-300 hover:text-slate-800 dark:hover:text-slate-100'
               }`}
             >
               {getLanguageLabel(code)}
@@ -231,7 +231,7 @@ export default function NumberPracticePage() {
               <button
                 key={range}
                 onClick={() => toggleRange(range)}
-                className={`px-3 py-1.5 rounded-full text-sm font-medium transition-colors press-feedback min-h-[44px] ${
+                className={`px-3 py-1.5 min-h-[44px] rounded-full text-sm font-medium transition-colors press-feedback min-h-[44px] ${
                   selectedRanges.has(range)
                     ? 'bg-indigo-600 text-white'
                     : 'bg-slate-100 dark:bg-slate-700 text-slate-700 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-600'
@@ -251,7 +251,7 @@ export default function NumberPracticePage() {
           Start Practice ({Math.min(SESSION_LENGTH, pool.length)} questions)
         </button>
         {pool.length < 4 && (
-          <p className="text-xs text-center text-slate-400 dark:text-slate-500 mt-2">
+          <p className="text-xs text-center text-slate-500 dark:text-slate-400 mt-2">
             Select at least one range with enough numbers.
           </p>
         )}
@@ -275,11 +275,11 @@ export default function NumberPracticePage() {
           <div className="flex justify-center gap-6 text-sm">
             <div>
               <span className="font-semibold text-slate-800 dark:text-slate-200">{pct}%</span>
-              <span className="text-slate-400 dark:text-slate-500 ml-1">accuracy</span>
+              <span className="text-slate-500 dark:text-slate-400 ml-1">accuracy</span>
             </div>
             <div>
               <span className="font-semibold text-slate-800 dark:text-slate-200">{bestStreak}</span>
-              <span className="text-slate-400 dark:text-slate-500 ml-1">best streak</span>
+              <span className="text-slate-500 dark:text-slate-400 ml-1">best streak</span>
             </div>
           </div>
           <div className="pt-2 text-sm text-indigo-600 dark:text-indigo-400 font-medium">
@@ -331,7 +331,7 @@ export default function NumberPracticePage() {
 
       {/* Prompt */}
       <div className="bg-white dark:bg-slate-800 rounded-2xl shadow p-6 mb-6 text-center">
-        <p className="text-xs text-slate-400 dark:text-slate-500 mb-2">
+        <p className="text-xs text-slate-500 dark:text-slate-400 mb-2">
           {isNumeralPrompt ? 'Which word is this number?' : 'Which number is this word?'}
         </p>
         {isNumeralPrompt ? (
@@ -339,7 +339,7 @@ export default function NumberPracticePage() {
             <div className="text-6xl font-bold text-slate-800 dark:text-slate-100 leading-none">
               {current.entry.numeral}
             </div>
-            <div className="text-lg text-slate-400 dark:text-slate-500 mt-2">{current.entry.value}</div>
+            <div className="text-lg text-slate-500 dark:text-slate-400 mt-2">{current.entry.value}</div>
           </div>
         ) : (
           <div>
@@ -387,7 +387,7 @@ export default function NumberPracticePage() {
                     {opt.word}
                   </span>
                   {answered !== null && (
-                    <span className="text-xs text-slate-400 dark:text-slate-500">{opt.reading}</span>
+                    <span className="text-xs text-slate-500 dark:text-slate-400">{opt.reading}</span>
                   )}
                 </>
               ) : (
@@ -395,7 +395,7 @@ export default function NumberPracticePage() {
                   <span className="text-3xl font-bold text-slate-800 dark:text-slate-100">
                     {opt.numeral}
                   </span>
-                  <span className="text-xs text-slate-400 dark:text-slate-500">{opt.value}</span>
+                  <span className="text-xs text-slate-500 dark:text-slate-400">{opt.value}</span>
                 </>
               )}
               <span className="sr-only">Option {i + 1}</span>
@@ -424,7 +424,7 @@ export default function NumberPracticePage() {
             <span className="text-xl font-semibold" {...rtlProps(language)}>
               {current.entry.word}
             </span>
-            <span className="block text-xs text-slate-400 dark:text-slate-500 mt-1">
+            <span className="block text-xs text-slate-500 dark:text-slate-400 mt-1">
               {current.entry.reading} · {current.entry.value}
             </span>
           </div>

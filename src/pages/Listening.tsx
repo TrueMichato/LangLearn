@@ -188,7 +188,7 @@ export default function ListeningPage() {
   if (screen === 'setup') {
     return (
       <div className="page-enter">
-        <Link to="/learn" className="text-indigo-600 dark:text-indigo-400 text-sm font-medium mb-3 hover:underline press-feedback inline-block">
+        <Link to="/learn" className="inline-flex min-h-[44px] items-center text-indigo-600 dark:text-indigo-400 text-sm font-medium mb-3 hover:underline press-feedback inline-block">
           ← Back to Learn
         </Link>
         <h2 className="text-lg font-semibold text-slate-700 dark:text-slate-200 mb-6">
@@ -204,7 +204,7 @@ export default function ListeningPage() {
             <button
               key={l}
               onClick={() => setLanguage(l)}
-              className={`px-4 py-2 rounded-xl text-sm font-medium transition-colors ${
+              className={`px-4 py-2 min-h-[44px] rounded-xl text-sm font-medium transition-colors ${
                 language === l
                   ? 'bg-indigo-600 text-white'
                   : 'bg-slate-100 dark:bg-slate-700 text-slate-700 dark:text-slate-200'
@@ -227,7 +227,7 @@ export default function ListeningPage() {
             <button
               key={key}
               onClick={() => setMode(key)}
-              className={`px-4 py-2 rounded-xl text-sm font-medium transition-colors min-h-[44px] ${
+              className={`px-4 py-2 min-h-[44px] rounded-xl text-sm font-medium transition-colors min-h-[44px] ${
                 mode === key
                   ? 'bg-indigo-600 text-white'
                   : 'bg-slate-100 dark:bg-slate-700 text-slate-700 dark:text-slate-200'
@@ -247,7 +247,7 @@ export default function ListeningPage() {
             <button
               key={d}
               onClick={() => setDifficulty(d)}
-              className={`px-4 py-2 rounded-xl text-sm font-medium capitalize transition-colors ${
+              className={`px-4 py-2 min-h-[44px] rounded-xl text-sm font-medium capitalize transition-colors ${
                 difficulty === d
                   ? 'bg-indigo-600 text-white'
                   : 'bg-slate-100 dark:bg-slate-700 text-slate-700 dark:text-slate-200'

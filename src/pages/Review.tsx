@@ -385,7 +385,7 @@ export default function ReviewPage() {
             reset();
             loadCards();
           }}
-          className="mt-5 gradient-primary text-white px-6 py-2.5 rounded-xl press-feedback hover:opacity-90 transition-opacity font-medium"
+          className="mt-5 fill-primary text-white px-6 py-2.5 rounded-xl press-feedback hover:opacity-90 transition-opacity font-medium"
         >
           🔁 Review Again
         </button>
@@ -422,15 +422,13 @@ export default function ReviewPage() {
         </span>
       </div>
 
-      {/* Progress bar */}
+      {/* Progress bar — the "N / M" counter above already states the numbers,
+          so the bar stays purely visual instead of overlaying 9px text. */}
       <div className="relative w-full bg-slate-200 dark:bg-slate-700 rounded-full h-2.5 mb-4 overflow-hidden">
         <div
           className="h-2.5 rounded-full bg-indigo-500 transition-all duration-500"
           style={{ width: `${Math.round(((currentIndex) / queue.length) * 100)}%` }}
         />
-        <span className="absolute inset-0 flex items-center justify-center text-[9px] font-medium text-slate-600 dark:text-slate-300 leading-none">
-          {Math.round(((currentIndex) / queue.length) * 100)}%
-        </span>
       </div>
 
       <div className="flex justify-center mb-2">

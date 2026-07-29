@@ -175,7 +175,7 @@ export default function TestsPage() {
   if (phase === 'setup') {
     return (
       <div className="page-enter">
-        <Link to="/learn" className="text-indigo-600 dark:text-indigo-400 text-sm font-medium mb-3 hover:underline press-feedback inline-block">
+        <Link to="/learn" className="inline-flex min-h-[44px] items-center text-indigo-600 dark:text-indigo-400 text-sm font-medium mb-3 hover:underline press-feedback inline-block">
           ← Back to Learn
         </Link>
         <h2 className="text-lg font-semibold text-slate-700 dark:text-slate-200 mb-4">Proficiency Tests</h2>
@@ -189,7 +189,7 @@ export default function TestsPage() {
                 <button
                   key={l}
                   onClick={() => setLanguage(l)}
-                  className={`px-4 py-2 rounded-xl text-sm font-medium transition-colors ${
+                  className={`px-4 py-2 min-h-[44px] rounded-xl text-sm font-medium transition-colors ${
                     language === l
                       ? 'bg-indigo-600 text-white'
                       : 'bg-slate-100 dark:bg-slate-700 text-slate-700 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-600'
@@ -209,7 +209,7 @@ export default function TestsPage() {
                 <button
                   key={t}
                   onClick={() => setTestType(t)}
-                  className={`px-4 py-2 rounded-xl text-sm font-medium transition-colors ${
+                  className={`px-4 py-2 min-h-[44px] rounded-xl text-sm font-medium transition-colors ${
                     testType === t
                       ? 'bg-indigo-600 text-white'
                       : 'bg-slate-100 dark:bg-slate-700 text-slate-700 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-600'
@@ -229,7 +229,7 @@ export default function TestsPage() {
                 <button
                   key={opt.value}
                   onClick={() => setTimeLimit(opt.value)}
-                  className={`px-4 py-2 rounded-xl text-sm font-medium transition-colors ${
+                  className={`px-4 py-2 min-h-[44px] rounded-xl text-sm font-medium transition-colors ${
                     timeLimit === opt.value
                       ? 'bg-indigo-600 text-white'
                       : 'bg-slate-100 dark:bg-slate-700 text-slate-700 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-600'
@@ -367,7 +367,7 @@ export default function TestsPage() {
 
         <div className="bg-white dark:bg-slate-800 rounded-2xl shadow p-6 mb-4 text-center">
           <div className="text-5xl font-bold text-indigo-600 mb-2">{result.score}%</div>
-          <div className={`inline-block text-sm font-semibold px-3 py-1 rounded-full capitalize mb-4 ${levelColor(testLevel.level)}`}>
+          <div className={`inline-block text-sm font-semibold px-3 py-1 min-h-[44px] rounded-full capitalize mb-4 ${levelColor(testLevel.level)}`}>
             {testLevel.label}
           </div>
           <div className="text-sm text-slate-500 dark:text-slate-400 mb-1">

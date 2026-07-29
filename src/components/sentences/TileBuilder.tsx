@@ -73,7 +73,7 @@ export default function TileBuilder({ sentence, language, allSentences, onResult
 
       {/* Answer area */}
       <div className={`min-h-[60px] bg-slate-50 dark:bg-slate-800 rounded-xl p-3 flex flex-wrap gap-2 border-2 ${borderClass}`} {...rtlProps(language)}>
-        {selected.length === 0 && !checked && <span className="text-slate-400 dark:text-slate-500 text-sm italic">Tap tiles to build the sentence…</span>}
+        {selected.length === 0 && !checked && <span className="text-slate-500 dark:text-slate-400 text-sm italic">Tap tiles to build the sentence…</span>}
         {selected.map((word, i) => (
           <button
             key={`${word}-${i}`}

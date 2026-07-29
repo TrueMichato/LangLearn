@@ -122,7 +122,7 @@ export default function DailyChallengePage() {
       <div className="max-w-md mx-auto page-enter">
         <Link
           to="/"
-          className="text-sm text-indigo-600 dark:text-indigo-400 hover:underline mb-4 inline-block"
+          className="inline-flex min-h-[44px] items-center text-sm text-indigo-600 dark:text-indigo-400 hover:underline mb-4 inline-block"
         >
           ← Back to Dashboard
         </Link>

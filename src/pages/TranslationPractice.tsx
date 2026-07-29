@@ -154,7 +154,7 @@ export default function TranslationPracticePage() {
               <button
                 key={lang}
                 onClick={() => setLanguage(lang)}
-                className={`px-4 py-2 rounded-xl text-sm font-medium min-h-[44px] transition-colors ${
+                className={`px-4 py-2 min-h-[44px] rounded-xl text-sm font-medium min-h-[44px] transition-colors ${
                   language === lang
                     ? 'bg-indigo-600 text-white'
                     : 'bg-slate-100 dark:bg-slate-700 text-slate-700 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-600'
@@ -176,7 +176,7 @@ export default function TranslationPracticePage() {
               <button
                 key={d}
                 onClick={() => setDifficulty(d)}
-                className={`px-4 py-2 rounded-xl text-sm font-medium min-h-[44px] capitalize transition-colors ${
+                className={`px-4 py-2 min-h-[44px] rounded-xl text-sm font-medium min-h-[44px] capitalize transition-colors ${
                   difficulty === d
                     ? 'bg-indigo-600 text-white'
                     : 'bg-slate-100 dark:bg-slate-700 text-slate-700 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-600'
@@ -198,7 +198,7 @@ export default function TranslationPracticePage() {
 
         <Link
           to="/learn"
-          className="block text-center text-sm text-indigo-600 dark:text-indigo-400 font-medium"
+          className="block min-h-[44px] text-center text-sm text-indigo-600 dark:text-indigo-400 font-medium"
         >
           ← Back to Learn
         </Link>

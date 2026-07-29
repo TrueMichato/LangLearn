@@ -154,8 +154,8 @@ export default function CharacterChart({ characters, alphabetName, language, pro
                     className={`flex flex-col items-center justify-center p-2 rounded-xl transition-all duration-300 active:scale-95 hover:scale-105 hover:shadow-md press-feedback ${masteryColor(p?.mastery)}`}
                   >
                     <span className="text-2xl leading-tight text-slate-900 dark:text-slate-100">{c.char}</span>
-                    <span className="text-xs text-slate-500 dark:text-slate-400 mt-0.5">{c.romanji}</span>
-                    {c.meaning && <span className="text-[10px] text-slate-500 dark:text-slate-400 leading-tight">{c.meaning}</span>}
+                    <span className="text-xs text-slate-600 dark:text-slate-300 mt-0.5">{c.romanji}</span>
+                    {c.meaning && <span className="text-xs text-slate-500 dark:text-slate-400 leading-tight">{c.meaning}</span>}
                   </button>
                 );
               })}

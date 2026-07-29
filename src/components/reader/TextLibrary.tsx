@@ -113,27 +113,28 @@ export default function TextLibrary({ onSelectText, onSelectCurated }: TextLibra
 
   return (
     <div className="space-y-3">
-      {/* Sub-tab toggle: My Texts / Library */}
+      {/* Sub-tab toggle: Curated / Saved. The parent tab is already called
+          "Library", so the inner tabs must not repeat that word. */}
       <div className="flex bg-slate-100 dark:bg-slate-800 rounded-xl p-1">
         <button
-          onClick={() => setSubTab('my-texts')}
-          className={`flex-1 py-2 text-sm font-medium rounded-lg transition-colors press-feedback ${
-            subTab === 'my-texts'
-              ? 'bg-white dark:bg-slate-700 text-indigo-600 dark:text-indigo-400 shadow-sm'
-              : 'text-slate-500 dark:text-slate-400 hover:text-slate-700 dark:hover:text-slate-300'
-          }`}
-        >
-          My Texts
-        </button>
-        <button
           onClick={() => setSubTab('curated')}
-          className={`flex-1 py-2 text-sm font-medium rounded-lg transition-colors press-feedback ${
+          className={`flex-1 py-2 min-h-[44px] text-sm font-medium rounded-lg transition-colors press-feedback ${
             subTab === 'curated'
               ? 'bg-white dark:bg-slate-700 text-indigo-600 dark:text-indigo-400 shadow-sm'
-              : 'text-slate-500 dark:text-slate-400 hover:text-slate-700 dark:hover:text-slate-300'
+              : 'text-slate-600 dark:text-slate-300 hover:text-slate-800 dark:hover:text-slate-100'
           }`}
         >
-          Library
+          Ready to read
+        </button>
+        <button
+          onClick={() => setSubTab('my-texts')}
+          className={`flex-1 py-2 min-h-[44px] text-sm font-medium rounded-lg transition-colors press-feedback ${
+            subTab === 'my-texts'
+              ? 'bg-white dark:bg-slate-700 text-indigo-600 dark:text-indigo-400 shadow-sm'
+              : 'text-slate-600 dark:text-slate-300 hover:text-slate-800 dark:hover:text-slate-100'
+          }`}
+        >
+          Saved by you
         </button>
       </div>
 
@@ -196,10 +197,10 @@ function CuratedLibrary({
           <button
             key={lang}
             onClick={() => onChangeLang(lang)}
-            className={`shrink-0 py-1.5 px-3 text-sm font-medium rounded-lg transition-colors press-feedback ${
+            className={`shrink-0 py-1.5 px-3 min-h-[44px] text-sm font-medium rounded-lg transition-colors press-feedback ${
               currentLang === lang
                 ? 'bg-white dark:bg-slate-700 text-indigo-600 dark:text-indigo-400 shadow-sm'
-                : 'text-slate-500 dark:text-slate-400 hover:text-slate-700 dark:hover:text-slate-300'
+                : 'text-slate-600 dark:text-slate-300 hover:text-slate-800 dark:hover:text-slate-100'
             }`}
           >
             {getLanguageLabel(lang)}
@@ -213,7 +214,7 @@ function CuratedLibrary({
           <button
             key={d}
             onClick={() => onChangeDifficulty(d)}
-            className={`shrink-0 py-1 px-3 text-xs font-medium rounded-full transition-colors press-feedback border ${
+            className={`shrink-0 py-1 px-3 min-h-[44px] text-xs font-medium rounded-full transition-colors press-feedback border ${
               difficultyFilter === d
                 ? 'border-indigo-300 dark:border-indigo-600 bg-indigo-50 dark:bg-indigo-900/40 text-indigo-700 dark:text-indigo-300'
                 : 'border-slate-200 dark:border-slate-700 text-slate-500 dark:text-slate-400 hover:border-slate-300 dark:hover:border-slate-600'
@@ -271,7 +272,7 @@ function CuratedLibrary({
                 {t.tags.map((tag) => (
                   <span
                     key={tag}
-                    className="text-xs bg-slate-100 dark:bg-slate-700 text-slate-500 dark:text-slate-400 px-2 py-0.5 rounded-full"
+                    className="text-xs bg-slate-100 dark:bg-slate-700 text-slate-600 dark:text-slate-300 px-2 py-0.5 rounded-full"
                   >
                     {tag}
                   </span>
@@ -323,10 +324,10 @@ function MyTextsTab({
       <div className="flex gap-1 bg-slate-100 dark:bg-slate-800 rounded-xl p-1 overflow-x-auto">
         <button
           onClick={() => setFilterLang('')}
-          className={`shrink-0 py-1.5 px-3 text-sm font-medium rounded-lg transition-colors press-feedback ${
+          className={`shrink-0 py-1.5 px-3 min-h-[44px] text-sm font-medium rounded-lg transition-colors press-feedback ${
             !filterLang
               ? 'bg-white dark:bg-slate-700 text-indigo-600 dark:text-indigo-400 shadow-sm'
-              : 'text-slate-500 dark:text-slate-400 hover:text-slate-700 dark:hover:text-slate-300'
+              : 'text-slate-600 dark:text-slate-300 hover:text-slate-800 dark:hover:text-slate-100'
           }`}
         >
           All
@@ -335,10 +336,10 @@ function MyTextsTab({
           <button
             key={lang}
             onClick={() => setFilterLang(lang)}
-            className={`shrink-0 py-1.5 px-3 text-sm font-medium rounded-lg transition-colors press-feedback ${
+            className={`shrink-0 py-1.5 px-3 min-h-[44px] text-sm font-medium rounded-lg transition-colors press-feedback ${
               filterLang === lang
                 ? 'bg-white dark:bg-slate-700 text-indigo-600 dark:text-indigo-400 shadow-sm'
-                : 'text-slate-500 dark:text-slate-400 hover:text-slate-700 dark:hover:text-slate-300'
+                : 'text-slate-600 dark:text-slate-300 hover:text-slate-800 dark:hover:text-slate-100'
             }`}
           >
             {getLanguageLabel(lang)}

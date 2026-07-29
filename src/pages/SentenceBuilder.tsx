@@ -90,7 +90,7 @@ export default function SentenceBuilderPage() {
     return (
       <div className="max-w-md mx-auto space-y-6 page-enter">
         <div>
-          <Link to="/learn" className="text-indigo-600 dark:text-indigo-400 text-sm font-medium mb-3 hover:underline press-feedback inline-block">
+          <Link to="/learn" className="inline-flex min-h-[44px] items-center text-indigo-600 dark:text-indigo-400 text-sm font-medium mb-3 hover:underline press-feedback inline-block">
             ← Back to Learn
           </Link>
           <h2 className="text-lg font-semibold text-slate-700 dark:text-slate-200">✍️ Sentence Builder</h2>
@@ -105,7 +105,7 @@ export default function SentenceBuilderPage() {
                 <button
                   key={l}
                   onClick={() => setLanguage(l)}
-                  className={`px-4 py-2 rounded-xl text-sm font-medium transition-colors ${
+                  className={`px-4 py-2 min-h-[44px] rounded-xl text-sm font-medium transition-colors ${
                     language === l ? 'bg-indigo-600 text-white' : 'bg-white dark:bg-slate-700 text-slate-700 dark:text-slate-300 border border-slate-300 dark:border-white/10'
                   }`}
                 >
@@ -126,7 +126,7 @@ export default function SentenceBuilderPage() {
               <button
                 key={m}
                 onClick={() => setMode(m)}
-                className={`px-4 py-2 rounded-xl text-sm font-medium transition-colors ${
+                className={`px-4 py-2 min-h-[44px] rounded-xl text-sm font-medium transition-colors ${
                   mode === m ? 'bg-indigo-600 text-white' : 'bg-white dark:bg-slate-700 text-slate-700 dark:text-slate-300 border border-slate-300 dark:border-white/10'
                 }`}
               >
@@ -144,7 +144,7 @@ export default function SentenceBuilderPage() {
               <button
                 key={d}
                 onClick={() => setDifficulty(d)}
-                className={`px-4 py-2 rounded-xl text-sm font-medium capitalize transition-colors ${
+                className={`px-4 py-2 min-h-[44px] rounded-xl text-sm font-medium capitalize transition-colors ${
                   difficulty === d ? 'bg-indigo-600 text-white' : 'bg-white dark:bg-slate-700 text-slate-700 dark:text-slate-300 border border-slate-300 dark:border-white/10'
                 }`}
               >

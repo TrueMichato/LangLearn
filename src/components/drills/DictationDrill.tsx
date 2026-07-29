@@ -239,7 +239,7 @@ export default function DictationDrill({ language, difficulty, onComplete, onBac
 
           {/* Diff display */}
           <div className="bg-white dark:bg-slate-800 rounded-2xl shadow p-4">
-            <p className="text-xs font-medium text-slate-500 dark:text-slate-400 mb-2 uppercase tracking-wide">
+            <p className="text-xs font-medium text-slate-500 dark:text-slate-400 mb-2">
               Your answer
             </p>
             <p className="text-base leading-relaxed mb-4" dir={isRTL(language) ? 'rtl' : undefined}>
@@ -259,7 +259,7 @@ export default function DictationDrill({ language, difficulty, onComplete, onBac
               ))}
             </p>
 
-            <p className="text-xs font-medium text-slate-500 dark:text-slate-400 mb-2 uppercase tracking-wide">
+            <p className="text-xs font-medium text-slate-500 dark:text-slate-400 mb-2">
               Reference
             </p>
             <p className="text-base text-slate-800 dark:text-slate-100 leading-relaxed" dir={isRTL(language) ? 'rtl' : undefined}>

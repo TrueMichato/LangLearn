@@ -69,14 +69,14 @@ export default function StartingPoints({
                     </span>
                   )}
                 </span>
-                <span className="mt-0.5 block text-sm text-slate-500 dark:text-slate-400">
+                <span className="mt-0.5 block text-sm text-slate-600 dark:text-slate-300">
                   {point.sublabel}
                 </span>
               </span>
 
               <span
                 aria-hidden="true"
-                className="shrink-0 text-slate-400 dark:text-slate-500"
+                className="shrink-0 text-slate-500 dark:text-slate-400"
               >
                 →
               </span>

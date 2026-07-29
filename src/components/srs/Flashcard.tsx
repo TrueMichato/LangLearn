@@ -38,7 +38,7 @@ export default function Flashcard({ word, isFlipped, onFlip }: FlashcardProps) {
           : 'bg-white dark:bg-slate-800 border-2 border-indigo-200/60 dark:border-indigo-800/40 shadow-lg cursor-pointer hover:shadow-xl'
       }`}
     >
-      <span className="text-xs text-slate-400 dark:text-slate-500 uppercase tracking-wide mb-2">
+      <span className="text-xs text-slate-500 dark:text-slate-400 mb-2">
         {word.language}
         {word.contextSentence && showContext && (
           <span className="ml-1" title="Has context sentence">📝</span>

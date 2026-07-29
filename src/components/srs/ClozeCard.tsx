@@ -64,7 +64,7 @@ export default function ClozeCard({ word, onGrade }: ClozeCardProps) {
       </p>
 
       {word.reading && (
-        <p className="text-xs text-slate-400 dark:text-slate-500 text-center mb-4">
+        <p className="text-xs text-slate-500 dark:text-slate-400 text-center mb-4">
           {word.reading}
         </p>
       )}

@@ -18,18 +18,11 @@ function ProgressRing({ percentage }: { percentage: number }) {
   const radius = (size - stroke) / 2;
   const circumference = 2 * Math.PI * radius;
   const offset = circumference - (percentage / 100) * circumference;
-  const gradientId = 'progress-ring-grad';
 
   // The adjacent label already states the numbers, so the ring stays purely
   // visual rather than cramming a percentage into 9px of space.
   return (
     <svg width={size} height={size} className="shrink-0 -rotate-90" aria-hidden="true" focusable="false">
-      <defs>
-        <linearGradient id={gradientId} x1="0%" y1="0%" x2="100%" y2="100%">
-          <stop offset="0%" stopColor="#6366f1" />
-          <stop offset="100%" stopColor="#8b5cf6" />
-        </linearGradient>
-      </defs>
       <circle
         cx={size / 2}
         cy={size / 2}
@@ -44,12 +37,12 @@ function ProgressRing({ percentage }: { percentage: number }) {
         cy={size / 2}
         r={radius}
         fill="none"
-        stroke={`url(#${gradientId})`}
+        stroke="currentColor"
         strokeWidth={stroke}
         strokeLinecap="round"
         strokeDasharray={circumference}
         strokeDashoffset={offset}
-        className="transition-all duration-500"
+        className="text-indigo-600 dark:text-indigo-400 transition-all duration-500"
       />
     </svg>
   );

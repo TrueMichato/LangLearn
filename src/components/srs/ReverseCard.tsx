@@ -18,7 +18,7 @@ export default function ReverseCard({ word, isFlipped, onFlip }: ReverseCardProp
           : 'bg-white dark:bg-slate-800 border-2 border-indigo-200/60 dark:border-indigo-800/40 shadow-lg cursor-pointer hover:shadow-xl'
       }`}
     >
-      <span className="text-xs text-slate-400 dark:text-slate-500 uppercase tracking-wide mb-2">
+      <span className="text-xs text-slate-500 dark:text-slate-400 mb-2">
         {word.language} — reverse
       </span>
 

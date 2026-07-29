@@ -348,7 +348,7 @@ export default function ConjugationsPage() {
   return (
     <div className="max-w-md mx-auto space-y-6 page-enter">
       <div>
-        <Link to="/learn" className="text-indigo-600 dark:text-indigo-400 text-sm font-medium mb-3 hover:underline press-feedback inline-block">
+        <Link to="/learn" className="inline-flex min-h-[44px] items-center text-indigo-600 dark:text-indigo-400 text-sm font-medium mb-3 hover:underline press-feedback inline-block">
           ← Back to Learn
         </Link>
         <h2 className="text-lg font-semibold text-slate-700 dark:text-slate-200">
@@ -364,7 +364,7 @@ export default function ConjugationsPage() {
             <button
               key={lang}
               onClick={() => handleLanguageChange(lang)}
-              className={`px-4 py-2 rounded-xl text-sm font-medium transition-colors ${
+              className={`px-4 py-2 min-h-[44px] rounded-xl text-sm font-medium transition-colors ${
                 language === lang
                   ? 'bg-indigo-600 text-white'
                   : 'bg-slate-100 dark:bg-slate-700 text-slate-700 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-600'
@@ -385,7 +385,7 @@ export default function ConjugationsPage() {
               <button
                 key={cat.value}
                 onClick={() => handleCategoryChange(cat.value)}
-                className={`px-4 py-2 rounded-xl text-sm font-medium transition-colors ${
+                className={`px-4 py-2 min-h-[44px] rounded-xl text-sm font-medium transition-colors ${
                   category === cat.value
                     ? 'bg-indigo-600 text-white'
                     : 'bg-slate-100 dark:bg-slate-700 text-slate-700 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-600'
@@ -406,7 +406,7 @@ export default function ConjugationsPage() {
           </label>
           <button
             onClick={selectAllForms}
-            className="text-xs text-indigo-600 dark:text-indigo-400 hover:underline"
+            className="inline-flex min-h-[44px] items-center text-xs text-indigo-600 dark:text-indigo-400 hover:underline"
           >
             Select all
           </button>
@@ -416,7 +416,7 @@ export default function ConjugationsPage() {
             <button
               key={f.value}
               onClick={() => toggleForm(f.value)}
-              className={`px-3 py-1.5 rounded-lg text-sm transition-colors ${
+              className={`px-3 py-1.5 min-h-[44px] rounded-lg text-sm transition-colors ${
                 selectedForms.has(f.value)
                   ? 'bg-indigo-100 dark:bg-indigo-900 text-indigo-700 dark:text-indigo-300 border border-indigo-300 dark:border-indigo-700'
                   : 'bg-slate-100 dark:bg-slate-700 text-slate-600 dark:text-slate-400 border border-transparent'
@@ -434,7 +434,7 @@ export default function ConjugationsPage() {
         <div className="flex gap-2">
           <button
             onClick={() => setMode('tiles')}
-            className={`flex-1 px-4 py-2 rounded-xl text-sm font-medium transition-colors ${
+            className={`flex-1 px-4 py-2 min-h-[44px] rounded-xl text-sm font-medium transition-colors ${
               mode === 'tiles'
                 ? 'bg-indigo-600 text-white'
                 : 'bg-slate-100 dark:bg-slate-700 text-slate-700 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-600'
@@ -444,7 +444,7 @@ export default function ConjugationsPage() {
           </button>
           <button
             onClick={() => setMode('type')}
-            className={`flex-1 px-4 py-2 rounded-xl text-sm font-medium transition-colors ${
+            className={`flex-1 px-4 py-2 min-h-[44px] rounded-xl text-sm font-medium transition-colors ${
               mode === 'type'
                 ? 'bg-indigo-600 text-white'
                 : 'bg-slate-100 dark:bg-slate-700 text-slate-700 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-600'

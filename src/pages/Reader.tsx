@@ -350,20 +350,20 @@ export default function ReaderPage() {
     <div className="flex bg-slate-100 dark:bg-slate-800 rounded-xl p-1 mb-4">
       <button
         onClick={() => switchTab('import')}
-        className={`flex-1 py-2 text-sm font-medium rounded-lg transition-colors press-feedback ${
+        className={`flex-1 py-2 min-h-[44px] text-sm font-medium rounded-lg transition-colors press-feedback ${
           tab === 'import'
             ? 'bg-white dark:bg-slate-700 text-indigo-600 dark:text-indigo-400 shadow-sm'
-            : 'text-slate-500 dark:text-slate-400 hover:text-slate-700 dark:hover:text-slate-300'
+            : 'text-slate-600 dark:text-slate-300 hover:text-slate-800 dark:hover:text-slate-100'
         }`}
       >
         Import
       </button>
       <button
         onClick={() => switchTab('library')}
-        className={`flex-1 py-2 text-sm font-medium rounded-lg transition-colors press-feedback ${
+        className={`flex-1 py-2 min-h-[44px] text-sm font-medium rounded-lg transition-colors press-feedback ${
           tab === 'library'
             ? 'bg-white dark:bg-slate-700 text-indigo-600 dark:text-indigo-400 shadow-sm'
-            : 'text-slate-500 dark:text-slate-400 hover:text-slate-700 dark:hover:text-slate-300'
+            : 'text-slate-600 dark:text-slate-300 hover:text-slate-800 dark:hover:text-slate-100'
         }`}
       >
         Library
@@ -427,7 +427,7 @@ export default function ReaderPage() {
               className={`flex-1 py-2 px-3 text-sm font-medium rounded-lg transition-colors press-feedback ${
                 language === code
                   ? 'bg-white dark:bg-slate-700 text-indigo-600 dark:text-indigo-400 shadow-sm'
-                  : 'text-slate-500 dark:text-slate-400 hover:text-slate-700 dark:hover:text-slate-300'
+                  : 'text-slate-600 dark:text-slate-300 hover:text-slate-800 dark:hover:text-slate-100'
               }`}
             >
               {getLanguageLabel(code)}
@@ -502,7 +502,7 @@ export default function ReaderPage() {
             resetReadingState();
             getTextCount().then((count) => setTab(count > 0 ? 'library' : 'import'));
           }}
-          className="text-sm text-indigo-600 dark:text-indigo-400 hover:underline press-feedback"
+          className="inline-flex min-h-[44px] items-center text-sm text-indigo-600 dark:text-indigo-400 hover:underline press-feedback"
         >
           ← New text
         </button>
@@ -519,7 +519,7 @@ export default function ReaderPage() {
       {translation.trim() && (
         <button
           onClick={() => setShowBilingual((v) => !v)}
-          className={`mb-3 flex items-center gap-1.5 text-sm font-medium px-3 py-1.5 rounded-full transition-colors press-feedback min-h-[44px] ${
+          className={`mb-3 flex items-center gap-1.5 text-sm font-medium px-3 py-1.5 min-h-[44px] rounded-full transition-colors press-feedback min-h-[44px] ${
             showBilingual
               ? 'bg-indigo-600 text-white'
               : 'bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400 hover:bg-slate-200 dark:hover:bg-slate-700'

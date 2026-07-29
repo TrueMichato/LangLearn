@@ -56,7 +56,7 @@ export default function TypeBuilder({ sentence, language, onResult }: TypeBuilde
           {showHint ? (
             <p className="text-sm text-indigo-600 dark:text-indigo-400">{hintText}</p>
           ) : (
-            <button onClick={() => setShowHint(true)} className="text-sm text-slate-400 dark:text-slate-500 underline hover:text-slate-600 dark:hover:text-slate-300">
+            <button onClick={() => setShowHint(true)} className="text-sm text-slate-500 dark:text-slate-400 underline hover:text-slate-600 dark:hover:text-slate-300">
               Show hint
             </button>
           )}

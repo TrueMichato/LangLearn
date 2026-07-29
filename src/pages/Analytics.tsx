@@ -110,7 +110,7 @@ export default function AnalyticsPage() {
       <div className="flex items-center gap-3 mb-4">
         <Link
           to="/"
-          className="p-2 rounded-full hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors"
+          className="flex min-h-[44px] min-w-[44px] items-center justify-center rounded-full hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors"
           aria-label="Back"
         >
           ←
@@ -124,7 +124,7 @@ export default function AnalyticsPage() {
       <div className="flex gap-2 overflow-x-auto pb-2 mb-4">
         <button
           onClick={() => setSelectedLang(undefined)}
-          className={`px-4 py-1.5 rounded-full text-sm font-medium whitespace-nowrap transition-colors ${
+          className={`px-4 py-1.5 min-h-[44px] rounded-full text-sm font-medium whitespace-nowrap transition-colors ${
             selectedLang === undefined
               ? 'bg-indigo-600 text-white'
               : 'bg-slate-100 dark:bg-slate-700 text-slate-600 dark:text-slate-300'
@@ -136,7 +136,7 @@ export default function AnalyticsPage() {
           <button
             key={lang}
             onClick={() => setSelectedLang(lang)}
-            className={`px-4 py-1.5 rounded-full text-sm font-medium whitespace-nowrap transition-colors ${
+            className={`px-4 py-1.5 min-h-[44px] rounded-full text-sm font-medium whitespace-nowrap transition-colors ${
               selectedLang === lang
                 ? 'bg-indigo-600 text-white'
                 : 'bg-slate-100 dark:bg-slate-700 text-slate-600 dark:text-slate-300'

@@ -142,7 +142,7 @@ export default function ClozePracticePage() {
     return (
       <div className="max-w-md mx-auto space-y-6 page-enter">
         <div>
-          <Link to="/learn" className="text-indigo-600 dark:text-indigo-400 text-sm font-medium mb-3 hover:underline press-feedback inline-block">
+          <Link to="/learn" className="inline-flex min-h-[44px] items-center text-indigo-600 dark:text-indigo-400 text-sm font-medium mb-3 hover:underline press-feedback inline-block">
             ← Back to Learn
           </Link>
           <h2 className="text-lg font-semibold text-slate-700 dark:text-slate-200">🧩 Cloze Practice</h2>
@@ -160,7 +160,7 @@ export default function ClozePracticePage() {
                 <button
                   key={l}
                   onClick={() => setLanguage(l)}
-                  className={`px-4 py-2 rounded-xl text-sm font-medium transition-colors min-h-[44px] ${
+                  className={`px-4 py-2 min-h-[44px] rounded-xl text-sm font-medium transition-colors min-h-[44px] ${
                     language === l ? 'bg-indigo-600 text-white' : 'bg-white dark:bg-slate-700 text-slate-700 dark:text-slate-300 border border-slate-300 dark:border-white/10'
                   }`}
                 >
@@ -181,7 +181,7 @@ export default function ClozePracticePage() {
               <button
                 key={d}
                 onClick={() => setDifficulty(d)}
-                className={`px-4 py-2 rounded-xl text-sm font-medium capitalize transition-colors min-h-[44px] ${
+                className={`px-4 py-2 min-h-[44px] rounded-xl text-sm font-medium capitalize transition-colors min-h-[44px] ${
                   difficulty === d ? 'bg-indigo-600 text-white' : 'bg-white dark:bg-slate-700 text-slate-700 dark:text-slate-300 border border-slate-300 dark:border-white/10'
                 }`}
               >
@@ -285,7 +285,7 @@ export default function ClozePracticePage() {
         <div className="flex justify-center">
           <button
             onClick={() => handleTTS(answered ? current.target : `${before} ${after}`)}
-            className="text-sm text-indigo-600 dark:text-indigo-400 hover:underline min-h-[44px] px-3"
+            className="inline-flex min-h-[44px] items-center text-sm text-indigo-600 dark:text-indigo-400 hover:underline min-h-[44px] px-3"
             title="Listen"
           >
             🔊 Listen
@@ -303,7 +303,7 @@ export default function ClozePracticePage() {
                 <p className="text-slate-600 dark:text-slate-300 mt-1">
                   Answer: <strong>{current.blankedWord}</strong>
                   {current.blankedReading && (
-                    <span className="text-slate-400 dark:text-slate-500 ml-2">({current.blankedReading})</span>
+                    <span className="text-slate-500 dark:text-slate-400 ml-2">({current.blankedReading})</span>
                   )}
                 </p>
               </div>

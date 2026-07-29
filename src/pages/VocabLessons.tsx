@@ -115,7 +115,7 @@ export default function VocabLessons() {
       {!activeLessonId && (
         <button
           onClick={() => navigate('/learn')}
-          className="text-indigo-600 dark:text-indigo-400 text-sm font-medium mb-3 hover:underline press-feedback"
+          className="inline-flex min-h-[44px] items-center text-indigo-600 dark:text-indigo-400 text-sm font-medium mb-3 hover:underline press-feedback"
         >
           ← Back to Learn
         </button>
@@ -132,7 +132,7 @@ export default function VocabLessons() {
                 setSelectedLang(lang);
                 setActiveLessonId(null);
               }}
-              className={`px-3 py-1.5 rounded-full text-sm font-medium transition-colors press-feedback ${
+              className={`px-3 py-1.5 min-h-[44px] rounded-full text-sm font-medium transition-colors press-feedback ${
                 selectedLang === lang
                   ? 'bg-indigo-600 text-white'
                   : 'bg-slate-200 dark:bg-slate-700 text-slate-600 dark:text-slate-300 hover:bg-slate-300 dark:hover:bg-slate-600'
@@ -227,7 +227,7 @@ export default function VocabLessons() {
                     <div className="min-w-0">
                       <p className="font-medium text-slate-800 dark:text-slate-100">{lesson.title}</p>
                       <div className="flex items-center gap-2 mt-1 flex-wrap">
-                        <span className="text-xs text-slate-500 dark:text-slate-400 bg-slate-100 dark:bg-slate-700 rounded-full px-2 py-0.5">
+                        <span className="text-xs text-slate-600 dark:text-slate-300 bg-slate-100 dark:bg-slate-700 rounded-full px-2 py-0.5">
                           {lesson.wordCount} words
                         </span>
                         <span
