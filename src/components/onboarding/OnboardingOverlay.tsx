@@ -155,12 +155,12 @@ export default function OnboardingOverlay() {
               onChange={(e) => setCustomLang(e.target.value)}
               onKeyDown={(e) => e.key === 'Enter' && addCustomLanguage()}
               placeholder="Add another language…"
-              className="flex-1 rounded-lg border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 px-4 py-2 text-slate-800 dark:text-slate-100 placeholder-slate-400 dark:placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-indigo-500"
+              className="flex-1 min-h-[44px] rounded-lg border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 px-4 py-2 text-slate-800 dark:text-slate-100 placeholder-slate-500 dark:placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-indigo-500"
             />
             <button
               type="button"
               onClick={addCustomLanguage}
-              className="rounded-lg fill-primary px-4 py-2 text-white font-medium hover:opacity-90 transition-opacity press-feedback"
+              className="min-h-[44px] rounded-lg fill-primary px-4 py-2 text-white font-medium hover:opacity-90 transition-opacity press-feedback"
             >
               Add
             </button>
@@ -219,7 +219,7 @@ export default function OnboardingOverlay() {
   ];
 
   return (
-    <div className="fixed inset-0 z-[100] app-canvas flex flex-col">
+    <div className="fixed inset-0 z-[100] app-surface flex flex-col">
       {/* Skip — only once a language is chosen, so nobody lands language-less */}
       <div className="flex justify-end p-4">
         {hasLanguage && (

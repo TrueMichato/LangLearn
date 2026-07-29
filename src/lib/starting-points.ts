@@ -1,6 +1,6 @@
 import { LANGUAGES } from './languages';
 import { getAlphabetsForLanguage } from '../data/alphabets';
-import { ROUTES, lettersRoute } from './routes';
+import { ROUTES, guidedLettersRoute } from './routes';
 
 export interface StartingPoint {
   id: 'letters' | 'words' | 'reading' | 'import';
@@ -93,7 +93,7 @@ export function getStartingPoints(lang: string): StartingPoint[] {
       emoji: '🔤',
       label: 'Learn the letters',
       sublabel: lettersSublabel(lang),
-      route: lettersRoute(lang),
+      route: guidedLettersRoute(lang),
       recommended: startWithLetters,
     });
   }

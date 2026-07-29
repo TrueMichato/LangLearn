@@ -110,7 +110,7 @@ export default function AnalyticsPage() {
       <div className="flex items-center gap-3 mb-4">
         <Link
           to="/"
-          className="flex min-h-[44px] min-w-[44px] items-center justify-center rounded-full hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors"
+          className="flex min-h-[44px] min-w-[44px] items-center justify-center rounded-full text-slate-700 dark:text-slate-200 hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors"
           aria-label="Back"
         >
           ←
@@ -187,13 +187,16 @@ export default function AnalyticsPage() {
         />
       </Section>
 
-      {/* Mastery Distribution */}
+      {/* Mastery Distribution.
+          "New" is not a failure state, so it is not red — DESIGN.md keeps red
+          rare and reserves it for genuine problems. This is a progress ramp:
+          not-started -> in-progress -> done. */}
       <Section title="Mastery Distribution">
         <SegmentedBar
           segments={[
-            { label: 'New', value: mastery.new, color: 'bg-red-500' },
-            { label: 'Learning', value: mastery.learning, color: 'bg-yellow-500' },
-            { label: 'Mastered', value: mastery.mastered, color: 'bg-green-500' },
+            { label: 'New', value: mastery.new, color: 'bg-slate-400' },
+            { label: 'Learning', value: mastery.learning, color: 'bg-amber-500' },
+            { label: 'Mastered', value: mastery.mastered, color: 'bg-green-600' },
           ]}
         />
       </Section>
@@ -287,7 +290,7 @@ export default function AnalyticsPage() {
                   </div>
                 </div>
                 <div className="text-right shrink-0 ml-3">
-                  <p className="text-sm font-semibold text-red-500 dark:text-red-400">
+                  <p className="text-sm font-semibold text-red-600 dark:text-red-400">
                     {review.ease.toFixed(2)}
                   </p>
                   <p className="text-xs text-slate-500 dark:text-slate-400">

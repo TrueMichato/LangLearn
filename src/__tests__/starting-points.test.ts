@@ -28,7 +28,10 @@ describe('getStartingPoints', () => {
   it.each(SCRIPT_LANGUAGES)('starts %s with the letters', (lang) => {
     const points = getStartingPoints(lang);
     expect(points[0].id).toBe('letters');
-    expect(points[0].route).toBe(`/letters/${lang}`);
+    // Must be the guided flow, not the bare route — /letters/:lang alone opens
+    // the Chart reference wall, which is the wrong first thing to hand a
+    // learner who has never seen the script.
+    expect(points[0].route).toBe(`/letters/${lang}?mode=learn`);
   });
 
   it.each(LATIN_LANGUAGES)('starts %s with words, not letters', (lang) => {

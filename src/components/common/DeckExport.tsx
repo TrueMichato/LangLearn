@@ -65,7 +65,7 @@ export default function DeckExport() {
         placeholder="Deck name"
         value={deckName}
         onChange={(e) => setDeckName(e.target.value)}
-        className="w-full min-h-[44px] px-3 py-2 rounded-xl bg-slate-100 dark:bg-slate-700 text-slate-800 dark:text-slate-200 text-sm placeholder-slate-400"
+        className="w-full min-h-[44px] px-3 py-2 rounded-xl bg-slate-100 dark:bg-slate-700 text-slate-800 dark:text-slate-200 text-sm placeholder-slate-500 dark:placeholder-slate-400"
       />
 
       <input
@@ -73,7 +73,7 @@ export default function DeckExport() {
         placeholder="Tag filter (optional)"
         value={tag}
         onChange={(e) => handleTagChange(e.target.value)}
-        className="w-full min-h-[44px] px-3 py-2 rounded-xl bg-slate-100 dark:bg-slate-700 text-slate-800 dark:text-slate-200 text-sm placeholder-slate-400"
+        className="w-full min-h-[44px] px-3 py-2 rounded-xl bg-slate-100 dark:bg-slate-700 text-slate-800 dark:text-slate-200 text-sm placeholder-slate-500 dark:placeholder-slate-400"
       />
 
       {wordCount !== null && (

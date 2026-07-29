@@ -7,6 +7,8 @@ import { useTimerStore } from '../stores/timerStore';
 import { useSettingsStore } from '../stores/settingsStore';
 import { useStudySetsStore } from '../stores/studySetsStore';
 import { getFilteredReviewQueue } from '../lib/filtered-review';
+import { getStudySuggestions, type StudySuggestion } from '../lib/study-suggestions';
+import { ROUTES } from '../lib/routes';
 import { getMistakeDeck, getLeechWordIds } from '../lib/mistakes';
 import { getTopicDeck } from '../lib/grammar-topics';
 import { composeAdaptiveBatch } from '../lib/adaptive';
@@ -27,6 +29,39 @@ import { assignCardType, selectDistractors } from '../lib/card-types';
 import type { CardType } from '../lib/card-types';
 import type { SM2Grade } from '../lib/sm2';
 import { useKeyboardShortcuts } from '../hooks/useKeyboardShortcuts';
+
+const PRACTICE_MODE_LABELS: Record<string, string> = {
+  'word-to-meaning': 'Word → Meaning',
+  'meaning-to-word': 'Meaning → Word',
+  random: 'Random',
+  both: 'Both sides',
+};
+
+const PRACTICE_MODE_KEY = 'langlearn-practice-mode';
+const PRACTICE_MODES: PracticeMode[] = [
+  'word-to-meaning',
+  'meaning-to-word',
+  'random',
+  'both',
+];
+
+function loadRememberedMode(): PracticeMode {
+  try {
+    const raw = localStorage.getItem(PRACTICE_MODE_KEY);
+    if (raw && (PRACTICE_MODES as string[]).includes(raw)) return raw as PracticeMode;
+  } catch {
+    /* storage unavailable — fall through to the default */
+  }
+  return 'word-to-meaning';
+}
+
+function rememberMode(mode: PracticeMode) {
+  try {
+    localStorage.setItem(PRACTICE_MODE_KEY, mode);
+  } catch {
+    /* non-fatal: the mode just won't persist */
+  }
+}
 
 const CARD_TYPE_LABELS: Record<string, { label: string; bg: string }> = {
   classic: { label: 'Classic', bg: 'bg-indigo-100 text-indigo-700 dark:bg-indigo-900/50 dark:text-indigo-300' },
@@ -54,7 +89,7 @@ function applyPracticeMode(_baseType: CardType, mode: PracticeMode): CardType {
 export default function ReviewPage() {
   const { queue, currentIndex, isFlipped, cardsReviewed, practiceMode, setQueue, flip, next, reset, setPracticeMode } =
     useReviewStore();
-  const { isRunning, start } = useTimerStore();
+  const { isRunning, start, stop: stopTimer } = useTimerStore();
   const reviewBatchSize = useSettingsStore((s) => s.reviewBatchSize);
   const activeLanguages = useSettingsStore((s) => s.activeLanguages);
   const adaptiveReview = useSettingsStore((s) => s.adaptiveReview);
@@ -74,6 +109,12 @@ export default function ReviewPage() {
 
   const [shaking, setShaking] = useState(false);
   const [retention, setRetention] = useState<{ percent: number; reviewCount: number } | null>(null);
+  const [nextUp, setNextUp] = useState<StudySuggestion | null>(null);
+  /* Choosing a recall direction is meaningless before you've seen a single
+     card, so it must not stand between a beginner and their first review.
+     We start in the remembered mode (Word -> Meaning the first time) and put
+     the chooser behind an explicit control on the review screen instead. */
+  const [showModePicker, setShowModePicker] = useState(false);
   // Language filter: null = per-language (default), 'all' = cross-language
   const [reviewLanguage, setReviewLanguage] = useState<string | null>(null);
 
@@ -175,7 +216,35 @@ export default function ReviewPage() {
     loadCards();
   }, [loadCards]);
 
+  useEffect(() => {
+    if (practiceMode || showModePicker) return;
+    setPracticeMode(loadRememberedMode());
+  }, [practiceMode, showModePicker, setPracticeMode]);
+
+  /* When the queue runs out the session really is over: stop the clock so the
+     timer doesn't keep billing time to "Review" while the learner wanders the
+     app, and work out what to point them at next. */
+  const sessionOver = !loading && queue.length > 0 && currentIndex >= queue.length;
+  useEffect(() => {
+    if (!sessionOver) return;
+    let live = true;
+    stopTimer();
+    getStudySuggestions(activeLanguages).then((all) => {
+      if (!live) return;
+      const best = all
+        .filter((sug) => sug.route !== ROUTES.review)
+        .sort((a, b) => b.priority - a.priority)[0];
+      setNextUp(best ?? null);
+    });
+    return () => {
+      live = false;
+    };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [sessionOver]);
+
   const handleSelectMode = (mode: PracticeMode) => {
+    rememberMode(mode);
+    setShowModePicker(false);
     setPracticeMode(mode);
     loadCards(mode);
   };
@@ -324,7 +393,7 @@ export default function ReviewPage() {
     );
   }
 
-  if (!practiceMode) {
+  if (showModePicker || !practiceMode) {
     return (
       <div>
         {/* Language filter — only when user has multiple active languages and no study set */}
@@ -372,23 +441,64 @@ export default function ReviewPage() {
 
   if (currentIndex >= queue.length) {
     return (
-      <div className="flex flex-col items-center justify-center h-64 text-center">
+      <div className="page-enter text-center py-8">
         <p className="text-6xl mb-4 animate-[pop_0.5s_ease-out]">🎉</p>
         <p className="text-2xl font-bold mb-1 text-indigo-600 dark:text-indigo-400">
           Session Complete!
         </p>
-        <p className="text-slate-500 dark:text-slate-400 mt-2 animate-[countUp_0.3s_ease-out]">
-          You reviewed <span className="font-semibold text-slate-700 dark:text-slate-200">{cardsReviewed}</span> cards. Great effort!
+        <p className="text-slate-600 dark:text-slate-300 mt-2 animate-[countUp_0.3s_ease-out]">
+          You reviewed <span className="font-semibold text-slate-800 dark:text-slate-100">{cardsReviewed}</span> cards. Great effort!
         </p>
-        <button
-          onClick={() => {
-            reset();
-            loadCards();
-          }}
-          className="mt-5 fill-primary text-white px-6 py-2.5 rounded-xl press-feedback hover:opacity-90 transition-opacity font-medium"
-        >
-          🔁 Review Again
-        </button>
+
+        {/* The end of a session is the one moment the app knows exactly what
+            the learner just did, so it is the best place to point at what
+            comes next. It used to offer only "Review Again", which is a
+            cul-de-sac: the session ended and the app had nothing to say. */}
+        <div className="mt-6 text-left">
+          {nextUp ? (
+            <button
+              onClick={() => navigate(nextUp.route)}
+              className="w-full flex items-center gap-3 bg-indigo-50 dark:bg-indigo-900/30 border border-indigo-200 dark:border-indigo-800 rounded-2xl p-4 text-left hover:bg-indigo-100 dark:hover:bg-indigo-900/50 transition-colors min-h-[44px]"
+            >
+              <span className="text-2xl shrink-0">{nextUp.icon}</span>
+              <span className="min-w-0">
+                <span className="block text-xs font-semibold text-indigo-600 dark:text-indigo-300">
+                  Next up
+                </span>
+                <span className="block font-semibold text-slate-800 dark:text-slate-100 truncate">
+                  {nextUp.title}
+                </span>
+                <span className="block text-sm text-slate-600 dark:text-slate-300 truncate">
+                  {nextUp.description}
+                </span>
+              </span>
+              <span className="ml-auto text-indigo-600 dark:text-indigo-300 shrink-0">→</span>
+            </button>
+          ) : (
+            <p className="rounded-2xl border border-slate-200/70 dark:border-white/10 p-4 text-sm text-slate-600 dark:text-slate-300">
+              You're all caught up. New reviews appear as they come due — see
+              you tomorrow. 🌱
+            </p>
+          )}
+        </div>
+
+        <div className="mt-4 flex gap-2">
+          <button
+            onClick={() => navigate('/')}
+            className="flex-1 min-h-[44px] rounded-xl border border-slate-200 dark:border-white/10 px-4 py-2.5 font-medium text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-700 transition-colors press-feedback"
+          >
+            Back to Home
+          </button>
+          <button
+            onClick={() => {
+              reset();
+              loadCards();
+            }}
+            className="flex-1 min-h-[44px] rounded-xl border border-slate-200 dark:border-white/10 px-4 py-2.5 font-medium text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-700 transition-colors press-feedback"
+          >
+            🔁 Review again
+          </button>
+        </div>
       </div>
     );
   }
@@ -415,6 +525,14 @@ export default function ReviewPage() {
                 Reviewing {queue.length} of {totalDue} due cards
               </p>
             )}
+            {/* The direction no longer blocks entry, so it needs to stay
+                visible and reversible from inside the session. */}
+            <button
+              onClick={() => setShowModePicker(true)}
+              className="text-xs text-indigo-600 dark:text-indigo-400 hover:underline"
+            >
+              {PRACTICE_MODE_LABELS[practiceMode] ?? 'Practice mode'} · Change
+            </button>
           </div>
         </div>
         <span className="text-sm text-slate-500 dark:text-slate-400">

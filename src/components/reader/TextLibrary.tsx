@@ -120,7 +120,7 @@ export default function TextLibrary({ onSelectText, onSelectCurated }: TextLibra
           onClick={() => setSubTab('curated')}
           className={`flex-1 py-2 min-h-[44px] text-sm font-medium rounded-lg transition-colors press-feedback ${
             subTab === 'curated'
-              ? 'bg-white dark:bg-slate-700 text-indigo-600 dark:text-indigo-400 shadow-sm'
+              ? 'bg-white dark:bg-slate-700 text-indigo-600 dark:text-indigo-300 shadow-sm'
               : 'text-slate-600 dark:text-slate-300 hover:text-slate-800 dark:hover:text-slate-100'
           }`}
         >
@@ -130,7 +130,7 @@ export default function TextLibrary({ onSelectText, onSelectCurated }: TextLibra
           onClick={() => setSubTab('my-texts')}
           className={`flex-1 py-2 min-h-[44px] text-sm font-medium rounded-lg transition-colors press-feedback ${
             subTab === 'my-texts'
-              ? 'bg-white dark:bg-slate-700 text-indigo-600 dark:text-indigo-400 shadow-sm'
+              ? 'bg-white dark:bg-slate-700 text-indigo-600 dark:text-indigo-300 shadow-sm'
               : 'text-slate-600 dark:text-slate-300 hover:text-slate-800 dark:hover:text-slate-100'
           }`}
         >
@@ -199,7 +199,7 @@ function CuratedLibrary({
             onClick={() => onChangeLang(lang)}
             className={`shrink-0 py-1.5 px-3 min-h-[44px] text-sm font-medium rounded-lg transition-colors press-feedback ${
               currentLang === lang
-                ? 'bg-white dark:bg-slate-700 text-indigo-600 dark:text-indigo-400 shadow-sm'
+                ? 'bg-white dark:bg-slate-700 text-indigo-600 dark:text-indigo-300 shadow-sm'
                 : 'text-slate-600 dark:text-slate-300 hover:text-slate-800 dark:hover:text-slate-100'
             }`}
           >
@@ -326,7 +326,7 @@ function MyTextsTab({
           onClick={() => setFilterLang('')}
           className={`shrink-0 py-1.5 px-3 min-h-[44px] text-sm font-medium rounded-lg transition-colors press-feedback ${
             !filterLang
-              ? 'bg-white dark:bg-slate-700 text-indigo-600 dark:text-indigo-400 shadow-sm'
+              ? 'bg-white dark:bg-slate-700 text-indigo-600 dark:text-indigo-300 shadow-sm'
               : 'text-slate-600 dark:text-slate-300 hover:text-slate-800 dark:hover:text-slate-100'
           }`}
         >
@@ -338,7 +338,7 @@ function MyTextsTab({
             onClick={() => setFilterLang(lang)}
             className={`shrink-0 py-1.5 px-3 min-h-[44px] text-sm font-medium rounded-lg transition-colors press-feedback ${
               filterLang === lang
-                ? 'bg-white dark:bg-slate-700 text-indigo-600 dark:text-indigo-400 shadow-sm'
+                ? 'bg-white dark:bg-slate-700 text-indigo-600 dark:text-indigo-300 shadow-sm'
                 : 'text-slate-600 dark:text-slate-300 hover:text-slate-800 dark:hover:text-slate-100'
             }`}
           >

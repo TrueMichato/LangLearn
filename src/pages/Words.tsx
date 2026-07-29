@@ -152,7 +152,7 @@ export default function WordsPage() {
   }
 
   const chipBase =
-    'px-3 py-1 min-h-[44px] rounded-full text-sm font-medium transition-colors cursor-pointer select-none press-feedback';
+    'px-3 py-1 min-h-[44px] min-w-[44px] rounded-full text-sm font-medium transition-colors cursor-pointer select-none press-feedback';
   const chipActive = 'bg-indigo-600 text-white';
   const chipInactive =
     'bg-slate-100 text-slate-700 dark:bg-slate-700 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-600';

@@ -24,6 +24,7 @@ import VocabSizeCard from '../components/dashboard/VocabSizeCard';
 import { PageSkeleton } from '../components/common/Skeleton';
 import StudyTip from '../components/common/StudyTip';
 import StartingPoints from '../components/onboarding/StartingPoints';
+import { hasStarted, hasProgress } from '../lib/dashboard-gates';
 
 interface Stats {
   totalWords: number;
@@ -31,6 +32,10 @@ interface Stats {
   totalStudySeconds: number;
   weekStudySeconds: number;
   timeXP: number;
+  /* Letters and lessons are real study even before they produce a word or a
+     timed session. Without them the dashboard forgets a learner who did
+     exactly what the on-ramp told them to do. */
+  lessonsTouched: number;
 }
 
 function getGreeting(): { text: string; emoji: string } {
@@ -77,7 +82,17 @@ export default function Dashboard() {
       0
     );
 
-    setStats({ totalWords, dueCards, totalStudySeconds, weekStudySeconds, timeXP });
+    const lessonsTouched =
+      (await db.characterProgress.count()) + (await db.lessonProgress.count());
+
+    setStats({
+      totalWords,
+      dueCards,
+      totalStudySeconds,
+      weekStudySeconds,
+      timeXP,
+      lessonsTouched,
+    });
 
     const dailyActivities = await db.dailyActivity.toArray();
 
@@ -129,9 +144,15 @@ export default function Dashboard() {
     currentStreak >= 30 ? '🔥🔥🔥' : currentStreak >= 7 ? '🔥🔥' : '🔥';
   const isMilestone = currentStreak >= 100 || currentStreak === 30 || currentStreak === 7;
 
-  // Until there is something to measure, measurement is just noise. A first-run
-  // dashboard shows one path forward instead of a screen of zeroes.
-  const hasData = stats.totalWords > 0 || stats.totalStudySeconds > 0;
+  // Two gates, not one — see src/lib/dashboard-gates.ts for why.
+  const activity = {
+    totalWords: stats.totalWords,
+    totalStudySeconds: stats.totalStudySeconds,
+    lessonsTouched: stats.lessonsTouched,
+    bonusXP,
+  };
+  const started = hasStarted(activity);
+  const progress = hasProgress(activity);
   const firstLanguage = activeLanguages[0];
 
   return (
@@ -161,10 +182,10 @@ export default function Dashboard() {
         weeklyGoalSeconds={weeklyGoalSeconds}
         currentStreak={currentStreak}
         streakFreezes={streakFreezes}
-        hasData={hasData}
+        hasData={started}
       />
 
-      {!hasData ? (
+      {!started ? (
         <div className="mb-6">
           {firstLanguage ? (
             <StartingPoints
@@ -198,12 +219,14 @@ export default function Dashboard() {
         </div>
       ) : (
         <>
-          <div className="grid grid-cols-2 gap-3 mb-6">
-            <StatCard label="Words Learned" value={stats.totalWords} icon="📚" />
-            <StatCard label="Cards Due" value={stats.dueCards} icon="🃏" />
-            <StatCard label="Total Study Time" value={formatStudyTime(stats.totalStudySeconds)} icon="⏱️" />
-            <StatCard label="Total XP" value={stats.timeXP + bonusXP} icon="⭐" />
-          </div>
+          {progress && (
+            <div className="grid grid-cols-2 gap-3 mb-6">
+              <StatCard label="Words Learned" value={stats.totalWords} icon="📚" />
+              <StatCard label="Cards Due" value={stats.dueCards} icon="🃏" />
+              <StatCard label="Total Study Time" value={formatStudyTime(stats.totalStudySeconds)} icon="⏱️" />
+              <StatCard label="Total XP" value={stats.timeXP + bonusXP} icon="⭐" />
+            </div>
+          )}
 
           <SuggestedNext />
 
@@ -211,6 +234,8 @@ export default function Dashboard() {
 
           <DailyChallengeCard />
 
+          {progress && (
+            <>
           <h3 className="text-sm font-semibold text-slate-500 dark:text-slate-400 mb-3 mt-8">
             Your progress
           </h3>
@@ -267,12 +292,14 @@ export default function Dashboard() {
           </div>
 
           <BadgeCollection />
+            </>
+          )}
         </>
       )}
 
       <StudyTip context="dashboard" className="mb-6" />
 
-      {hasData && (
+      {progress && (
         <div className="bg-white dark:bg-slate-800/90 rounded-2xl shadow p-4 mt-4">
           <h3 className="font-semibold text-slate-700 dark:text-slate-200 mb-3">
             Study Activity

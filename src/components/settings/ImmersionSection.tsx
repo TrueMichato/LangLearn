@@ -47,7 +47,7 @@ export default function ImmersionSection() {
           <button
             key={cat}
             onClick={() => setSelectedCategory(cat)}
-            className={`px-3 py-1 min-h-[44px] rounded-full text-xs font-medium transition-all duration-200 press-feedback ${
+            className={`px-3 py-1 min-h-[44px] min-w-[44px] rounded-full text-xs font-medium transition-all duration-200 press-feedback ${
               selectedCategory === cat
                 ? 'fill-primary text-white shadow-sm'
                 : 'bg-slate-100 dark:bg-slate-700 text-slate-600 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-600'

@@ -245,7 +245,7 @@ export default function MinimalPairsPage() {
                 disabled={pairs.length === 0}
                 className={`flex-1 py-2 px-3 text-sm font-medium rounded-lg transition-colors press-feedback min-h-[44px] ${
                   language === code
-                    ? 'bg-white dark:bg-slate-700 text-indigo-600 dark:text-indigo-400 shadow-sm'
+                    ? 'bg-white dark:bg-slate-700 text-indigo-600 dark:text-indigo-300 shadow-sm'
                     : 'text-slate-600 dark:text-slate-300 hover:text-slate-800 dark:hover:text-slate-100'
                 } disabled:opacity-40`}
               >
@@ -362,7 +362,7 @@ export default function MinimalPairsPage() {
 
       {/* Hint */}
       <div className="text-center mb-4">
-        <span className="text-xs text-slate-500 dark:text-slate-400 bg-slate-100 dark:bg-slate-800 px-3 py-1 min-h-[44px] rounded-full">
+        <span className="text-xs text-slate-500 dark:text-slate-400 bg-slate-100 dark:bg-slate-800 px-3 py-1 rounded-full">
           {CATEGORIES[current.category] ?? current.category} · {current.hint}
         </span>
       </div>

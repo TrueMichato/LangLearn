@@ -38,6 +38,15 @@ export function lettersRoute(lang: string): string {
   return `/letters/${lang}`;
 }
 
+/**
+ * Letter practice opens on the Chart reference wall by default, which is the
+ * wrong first impression for someone who has never seen the script. The
+ * on-ramp links here instead, so "Learn the letters" opens the guided flow.
+ */
+export function guidedLettersRoute(lang: string): string {
+  return `${lettersRoute(lang)}?mode=learn`;
+}
+
 function patternToRegExp(pattern: string): RegExp {
   const source = pattern
     .split('/')

@@ -50,9 +50,9 @@ export default function NextFocusCard({ language }: { language?: string }) {
         <p className="font-semibold text-slate-800 dark:text-slate-100 truncate">
           {cta.title}
         </p>
-        <p className="text-sm text-slate-500 dark:text-slate-400 truncate">{cta.reason}</p>
+        <p className="text-sm text-slate-600 dark:text-slate-300 truncate">{cta.reason}</p>
       </div>
-      <span className="ml-auto text-indigo-400 dark:text-indigo-300 shrink-0">→</span>
+      <span className="ml-auto text-indigo-600 dark:text-indigo-300 shrink-0">→</span>
     </button>
   );
 }

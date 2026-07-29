@@ -215,7 +215,7 @@ export default function DictationDrill({ language, difficulty, onComplete, onBac
             onChange={(e) => setInput(e.target.value)}
             placeholder={language === 'ja' ? 'ここに入力してください…' : language === 'ar' ? 'اكتب هنا…' : language === 'ru' ? 'Введите здесь…' : 'Type here…'}
             rows={3}
-            className="w-full px-4 py-3 rounded-xl border border-slate-300 dark:border-white/10 bg-white dark:bg-slate-800 text-slate-800 dark:text-slate-100 placeholder-slate-400 dark:placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-indigo-500 resize-none text-base mb-4"
+            className="w-full px-4 py-3 rounded-xl border border-slate-300 dark:border-white/10 bg-white dark:bg-slate-800 text-slate-800 dark:text-slate-100 placeholder-slate-500 dark:placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-indigo-500 resize-none text-base mb-4"
             dir={isRTL(language) ? 'rtl' : undefined}
           />
           <button

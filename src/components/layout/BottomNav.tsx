@@ -45,7 +45,7 @@ export default function BottomNav() {
               key={link.to}
               to={link.to}
               data-active={isActive}
-              className={`flex flex-col items-center py-2 px-1.5 text-xs transition-all duration-200 ${
+              className={`flex flex-col items-center min-w-[44px] py-2 px-1.5 text-xs transition-all duration-200 ${
                 isActive
                   ? 'text-indigo-600 dark:text-indigo-400 font-semibold'
                   : 'text-slate-600 dark:text-slate-300 hover:text-slate-800 dark:hover:text-slate-100'

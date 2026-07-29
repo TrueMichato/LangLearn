@@ -3,7 +3,7 @@ import { getDueCount } from '../db/reviews';
 import { getTotalWordCount } from '../db/words';
 import { getLessonProgress } from '../db/lessons';
 import { getCharacterProgress } from '../db/characters';
-import { ROUTES, lettersRoute } from './routes';
+import { ROUTES, lettersRoute, guidedLettersRoute } from './routes';
 
 export interface StudySuggestion {
   id: string;
@@ -107,20 +107,23 @@ export async function getStudySuggestions(
     const mastered = chars.filter((c) => c.mastery === 'mastered').length;
     const total = chars.length;
     if (total === 0 || (total > 0 && mastered / total < 0.5)) {
+      /* "Only 0% mastered" is the first thing a learner saw after finishing
+         their very first letter column — a deflating way to describe real
+         work. Count what they've started, not what they're missing. */
       suggestions.push({
         id: `letters-${lang}`,
-        title: 'Practice Letters',
+        title: total === 0 ? 'Practice Letters' : 'Keep going with the letters',
         description:
           total === 0
             ? 'Start learning the writing system'
-            : `${mastered}/${total} characters mastered`,
+            : `${mastered} of ${total} characters mastered so far`,
         icon: '✍️',
-        route: lettersRoute(lang),
+        route: total === 0 ? guidedLettersRoute(lang) : lettersRoute(lang),
         priority: 45,
         reason:
           total === 0
             ? 'Try the writing system!'
-            : `Only ${Math.round((mastered / total) * 100)}% mastered`,
+            : `You've started ${total} — a few more each day adds up`,
       });
       break;
     }

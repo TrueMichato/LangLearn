@@ -366,8 +366,8 @@ export default function TestsPage() {
         <h2 className="text-lg font-semibold text-slate-700 dark:text-slate-200 mb-4">Test Complete!</h2>
 
         <div className="bg-white dark:bg-slate-800 rounded-2xl shadow p-6 mb-4 text-center">
-          <div className="text-5xl font-bold text-indigo-600 mb-2">{result.score}%</div>
-          <div className={`inline-block text-sm font-semibold px-3 py-1 min-h-[44px] rounded-full capitalize mb-4 ${levelColor(testLevel.level)}`}>
+          <div className="text-5xl font-bold text-indigo-600 dark:text-indigo-400 mb-2">{result.score}%</div>
+          <div className={`inline-block text-sm font-semibold px-3 py-1 rounded-full capitalize mb-4 ${levelColor(testLevel.level)}`}>
             {testLevel.label}
           </div>
           <div className="text-sm text-slate-500 dark:text-slate-400 mb-1">

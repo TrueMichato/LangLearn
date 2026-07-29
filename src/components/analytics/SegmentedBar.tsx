@@ -29,20 +29,18 @@ export default function SegmentedBar({ segments }: SegmentedBarProps) {
           return (
             <div
               key={seg.label}
-              className={`${seg.color} flex items-center justify-center transition-all duration-500`}
+              className={`${seg.color} transition-all duration-500`}
               style={{ width: `${pct}%` }}
-            >
-              {pct >= 12 && (
-                <span className="text-xs text-white font-medium truncate px-1">
-                  {Math.round(pct)}%
-                </span>
-              )}
-            </div>
+            />
           );
         })}
       </div>
 
-      {/* Legend */}
+      {/* Legend.
+          The percentage used to sit inside its own segment in white, which
+          only cleared AA on the darkest tints — white on bg-yellow-500
+          measured 1.91:1. Reading it here instead means the bar can use any
+          tint the palette wants and the number is always legible. */}
       <div className="flex flex-wrap gap-4 mt-3 justify-center">
         {segments.map((seg) => (
           <div key={seg.label} className="flex items-center gap-1.5">
@@ -50,7 +48,7 @@ export default function SegmentedBar({ segments }: SegmentedBarProps) {
               className={`inline-block w-3 h-3 rounded-full ${seg.color}`}
             />
             <span className="text-xs text-slate-600 dark:text-slate-300">
-              {seg.label}: {seg.value}
+              {seg.label}: {seg.value} ({Math.round((seg.value / total) * 100)}%)
             </span>
           </div>
         ))}

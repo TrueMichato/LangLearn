@@ -30,7 +30,7 @@ function Toggle({
     <button
       onClick={onChange}
       disabled={disabled}
-      className={`relative inline-flex h-6 w-11 items-center rounded-full after:absolute after:inset-x-0 after:top-1/2 after:h-11 after:-translate-y-1/2 after:content-[''] transition-all duration-200 ease-out ${
+      className={`relative inline-flex h-6 w-11 shrink-0 items-center rounded-full after:absolute after:inset-x-0 after:top-1/2 after:h-11 after:-translate-y-1/2 after:content-[''] transition-all duration-200 ease-out ${
         checked ? 'fill-primary' : 'bg-slate-300 dark:bg-slate-600'
       } ${disabled ? 'opacity-50 cursor-not-allowed' : ''}`}
       role="switch"

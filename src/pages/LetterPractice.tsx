@@ -1,5 +1,5 @@
-import { useState, useEffect } from 'react';
-import { useParams, useNavigate } from 'react-router-dom';
+import { useState, useEffect, useRef } from 'react';
+import { useParams, useNavigate, useSearchParams } from 'react-router-dom';
 import { getAlphabetsForLanguage } from '../data/alphabets';
 import { getCharacterProgress } from '../db/characters';
 import CharacterChart from '../components/letters/CharacterChart';
@@ -11,20 +11,45 @@ import type { CharacterProgress } from '../db/schema';
 
 type PracticeMode = 'chart' | 'draw' | 'quiz' | 'learn';
 
+const PRACTICE_MODES: PracticeMode[] = ['chart', 'draw', 'quiz', 'learn'];
+
+function isPracticeMode(value: string | null): value is PracticeMode {
+  return value !== null && (PRACTICE_MODES as string[]).includes(value);
+}
+
 export default function LetterPractice() {
   const { lang = 'ja' } = useParams();
   const navigate = useNavigate();
-  const [mode, setMode] = useState<PracticeMode>('chart');
+  const [searchParams] = useSearchParams();
+  const requestedMode = searchParams.get('mode');
+
+  /* Chart is a reference wall — useful once you know the script, hostile as a
+     first impression. The on-ramp recommends "Learn the letters", so a learner
+     with no progress in this script opens the guided flow instead. An explicit
+     ?mode= always wins, and once the learner picks a tab we stop overriding. */
+  const [mode, setMode] = useState<PracticeMode>(
+    isPracticeMode(requestedMode) ? requestedMode : 'chart',
+  );
+  const modeIsPinned = useRef(isPracticeMode(requestedMode));
   const [progress, setProgress] = useState<Map<string, CharacterProgress>>(new Map());
   const [loading, setLoading] = useState(true);
   const alphabets = getAlphabetsForLanguage(lang);
   const [selectedAlphabet, setSelectedAlphabet] = useState(0);
+
+  const chooseMode = (next: PracticeMode) => {
+    modeIsPinned.current = true;
+    setMode(next);
+  };
 
   const refreshProgress = () => {
     getCharacterProgress(lang).then((items) => {
       const map = new Map<string, CharacterProgress>();
       for (const item of items) map.set(item.id, item);
       setProgress(map);
+      if (!modeIsPinned.current) {
+        modeIsPinned.current = true;
+        if (items.length === 0) setMode('learn');
+      }
       setLoading(false);
     });
   };
@@ -89,7 +114,7 @@ export default function LetterPractice() {
         ).map(([m, label]) => (
           <button
             key={m}
-            onClick={() => setMode(m)}
+            onClick={() => chooseMode(m)}
             className={`flex-1 py-2 min-h-[44px] rounded-xl text-sm font-medium transition-colors press-feedback ${
               mode === m
                 ? 'bg-indigo-600 text-white'

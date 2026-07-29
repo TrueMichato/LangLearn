@@ -215,6 +215,13 @@
   transition: transform 0.1s ease;
 }
 
+/* Range inputs render a ~16px box by default, well under the 44px touch
+   target the design system requires. Growing the element (not the track)
+   keeps the slider looking the same while making it grabbable one-handed. */
+input[type='range'] {
+  min-height: 44px;
+}
+
 /* Accent glow (dark mode buttons) */
 .dark .glow-primary {
   box-shadow: 0 0 16px rgb(var(--color-primary) / 0.25);

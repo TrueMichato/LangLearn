@@ -22,7 +22,7 @@ export default function StudyTimer() {
         <button
           onClick={() => start('srs')}
           title="Record study time towards your daily goal"
-          className="text-xs bg-indigo-100 dark:bg-indigo-900 text-indigo-700 dark:text-indigo-300 px-3 py-1 min-h-[44px] rounded-full hover:bg-indigo-200 dark:hover:bg-indigo-800 transition-colors press-feedback"
+          className="text-xs bg-indigo-100 dark:bg-indigo-900 text-indigo-700 dark:text-indigo-300 px-3 py-1 min-h-[44px] min-w-[44px] rounded-full hover:bg-indigo-200 dark:hover:bg-indigo-800 transition-colors press-feedback"
         >
           ▶ Track time
         </button>
@@ -44,7 +44,7 @@ export default function StudyTimer() {
       </span>
       <button
         onClick={stop}
-        className="text-xs bg-red-100 dark:bg-red-900 text-red-700 dark:text-red-300 px-3 py-1 min-h-[44px] rounded-full hover:bg-red-200 dark:hover:bg-red-800 transition-colors press-feedback"
+        className="text-xs bg-red-100 dark:bg-red-900 text-red-700 dark:text-red-300 px-3 py-1 min-h-[44px] min-w-[44px] rounded-full hover:bg-red-200 dark:hover:bg-red-800 transition-colors press-feedback"
       >
         ⏹ Stop
       </button>
