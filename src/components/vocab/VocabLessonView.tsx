@@ -84,7 +84,7 @@ export default function VocabLessonView({ lang, lessonId, onBack }: Props) {
 
   useEffect(() => {
     if (!timerStarted.current && lesson) {
-      start('grammar');
+      start('vocab');
       timerStarted.current = true;
     }
     return () => {

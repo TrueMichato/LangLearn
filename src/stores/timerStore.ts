@@ -3,15 +3,16 @@ import { db } from '../db/schema';
 import { calculateTimeXP } from '../lib/xp';
 import { updateDailyActivity } from '../lib/streaks';
 import { useSettingsStore } from './settingsStore';
+import type { StudyActivity } from '../lib/activities';
 
 interface TimerState {
   isRunning: boolean;
   elapsed: number;
-  activity: 'srs' | 'reading' | 'grammar';
+  activity: StudyActivity;
   sessionId: number | null;
   /** Seconds already persisted to studySessions/dailyActivity for the current session. */
   lastFlushedSeconds: number;
-  start: (activity: 'srs' | 'reading' | 'grammar') => void;
+  start: (activity: StudyActivity) => void;
   tick: () => void;
   /** Persist progress without ending the session. Safe to call from visibility/unmount handlers. */
   flush: () => Promise<void>;

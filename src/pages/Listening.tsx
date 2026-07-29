@@ -2,6 +2,7 @@ import { useState, useCallback, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { useSettingsStore } from '../stores/settingsStore';
 import { useXPStore } from '../stores/xpStore';
+import { useTimerStore } from '../stores/timerStore';
 import { getLanguageLabel } from '../lib/languages';
 import { jaPassages } from '../data/listening/ja-passages';
 import { ruPassages } from '../data/listening/ru-passages';
@@ -38,6 +39,8 @@ export default function ListeningPage() {
 
   const [language, setLanguage] = useState(supportedLanguages[0] ?? '');
   const [difficulty, setDifficulty] = useState<Difficulty>('all');
+  const timerStart = useTimerStore((s) => s.start);
+  const timerRunning = useTimerStore((s) => s.isRunning);
   const [mode, setMode] = useState<Mode>('comprehension');
   const [screen, setScreen] = useState<Screen>('setup');
   const [passage, setPassage] = useState<ListeningPassage | null>(null);
@@ -85,6 +88,9 @@ export default function ListeningPage() {
   // ── handlers ──────────────────────────────────────────
 
   function startPractice() {
+    // Records listening time under its own activity so the study balance and
+    // the "try listening" suggestion reflect what actually happened.
+    if (!timerRunning) timerStart('listening');
     if (mode === 'dictation') {
       setScreen('dictation');
       return;

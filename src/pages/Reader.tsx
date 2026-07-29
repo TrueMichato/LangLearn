@@ -99,12 +99,12 @@ export default function ReaderPage() {
     refreshKnownWords();
   }, [refreshKnownWords]);
 
-  // Default to Library tab if texts exist
+  // Default to the Library: it holds both saved texts and the curated graded
+  // readings, so a first-time reader sees real content instead of a blank
+  // paste box.
   useEffect(() => {
-    getTextCount().then((count) => {
-      setTab(count > 0 ? 'library' : 'import');
-      setTabReady(true);
-    });
+    setTab('library');
+    setTabReady(true);
   }, []);
 
   function resetReadingState() {
@@ -408,7 +408,10 @@ export default function ReaderPage() {
         <TextLibrary onSelectText={openTextFromLibrary} onSelectCurated={openCuratedText} />
       ) : (
       <div className="space-y-3">
+        <label htmlFor="reader-title" className="sr-only">Title</label>
         <input
+          id="reader-title"
+          name="title"
           type="text"
           placeholder="Title (optional)"
           value={title}
@@ -431,14 +434,20 @@ export default function ReaderPage() {
             </button>
           ))}
         </div>
+        <label htmlFor="reader-text" className="sr-only">Text to read</label>
         <textarea
+          id="reader-text"
+          name="text"
           placeholder="Paste your text here..."
           value={text}
           onChange={(e) => setText(e.target.value)}
           rows={8}
           className="w-full px-4 py-3 border border-slate-300 dark:border-slate-600 rounded-xl focus:outline-none focus:ring-2 focus:ring-indigo-300 dark:focus:ring-indigo-700 resize-none bg-white dark:bg-slate-800 dark:text-slate-100"
         />
+        <label htmlFor="reader-translation" className="sr-only">Translation</label>
         <textarea
+          id="reader-translation"
+          name="translation"
           placeholder="Translation (optional — for bilingual reading)"
           value={translation}
           onChange={(e) => setTranslation(e.target.value)}

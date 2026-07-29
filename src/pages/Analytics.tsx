@@ -18,6 +18,7 @@ import BarChart from '../components/analytics/BarChart';
 import SegmentedBar from '../components/analytics/SegmentedBar';
 import TopicHeatmap from '../components/analytics/TopicHeatmap';
 import NextFocusCard from '../components/analytics/NextFocusCard';
+import { ACTIVITY_LABELS, ACTIVITY_COLORS } from '../lib/activities';
 
 interface AnalyticsData {
   retention: { date: string; percent: number }[];
@@ -340,18 +341,6 @@ function StatCard({
     </div>
   );
 }
-
-const ACTIVITY_COLORS: Record<string, string> = {
-  srs: 'bg-indigo-500',
-  reading: 'bg-emerald-500',
-  grammar: 'bg-amber-500',
-};
-
-const ACTIVITY_LABELS: Record<string, string> = {
-  srs: 'Flashcard Review',
-  reading: 'Reading',
-  grammar: 'Grammar',
-};
 
 function getActivityRecommendation(
   data: { activity: string; minutes: number }[]

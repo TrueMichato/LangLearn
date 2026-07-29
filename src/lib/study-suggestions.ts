@@ -155,7 +155,7 @@ export async function getStudySuggestions(
     .then((sessions) =>
       sessions.filter(
         (s) =>
-          s.activity === 'grammar' && new Date(s.startTime) >= threeDaysAgo,
+          s.activity === 'listening' && new Date(s.startTime) >= threeDaysAgo,
       ),
     );
   if (recentListening.length === 0 && totalWords >= 10) {

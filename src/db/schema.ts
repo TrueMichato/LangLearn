@@ -1,3 +1,4 @@
+import type { StudyActivity } from '../lib/activities';
 import Dexie, { type EntityTable } from 'dexie';
 
 export interface Word {
@@ -40,7 +41,7 @@ export interface StudySession {
   startTime: string;
   endTime: string | null;
   durationSeconds: number;
-  activity: 'srs' | 'reading' | 'grammar';
+  activity: StudyActivity;
   xpEarned: number;
   language?: string;
   wordCount?: number;
