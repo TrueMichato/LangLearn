@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-07-27T00:00:00.000Z",
+  "generatedAt": "2026-07-29T10:45:00.000Z",
   "title": "Design System: LangLearn",
   "extensions": {
     "colorMeta": {
@@ -121,7 +121,7 @@
   ],
   "narrative": {
     "northStar": "The Kind Study Companion",
-    "overview": "LangLearn is a patient, encouraging tutor rendered as software: a companion for learning Japanese, Russian, and beyond that celebrates effort and never scolds. The philosophy is kind learning — mistakes are met with 'No worries, it'll come back later', not red X's. It is product-register: design serves the task, reaching for earned familiarity over novelty. Personality is carried by warm microcopy and friendly emoji iconography, not decoration. Color is restrained to one indigo accent; depth comes from tonal layering, not heavy shadows; motion conveys state, never spectacle. The app lives in a centered phone-width column that reads as an intentional focused app on any screen. It explicitly rejects the AI-slop aesthetic it was rebuilt away from: rainbow card grids, gradient text, side-stripe borders, uppercase eyebrows, bounce easing, and endless equal-weight card stacks.",
+    "overview": "LangLearn is a patient, encouraging tutor rendered as software: a companion for learning any of the six languages that ship full content today — Japanese, Russian, Arabic, Spanish, Portuguese, Romanian — and beyond, that celebrates effort and never scolds. The philosophy is kind learning — mistakes are met with 'No worries, it'll come back later', not red X's. It is product-register: design serves the task, reaching for earned familiarity over novelty. Personality is carried by warm microcopy and friendly emoji iconography, not decoration. Color is restrained to one indigo accent; depth comes from tonal layering, not heavy shadows; motion conveys state, never spectacle. The app lives in a centered phone-width column that reads as an intentional focused app on any screen. It explicitly rejects the AI-slop aesthetic it was rebuilt away from: rainbow card grids, gradient text, side-stripe borders, uppercase eyebrows, bounce easing, and endless equal-weight card stacks.",
     "keyCharacteristics": [
       "Kind, never punishing — gentle language and gentle color; no harsh failure states.",
       "One quiet accent — indigo carries meaning; everything else is neutral slate.",
@@ -141,10 +141,10 @@
     ],
     "dos": [
       "Do use indigo-600 as the one accent — primary actions, active state, focus, progress, and text links (indigo-600 for links, not indigo-500).",
-      "Do write muted text as text-slate-500 dark:text-slate-400 and headings as text-slate-800 dark:text-slate-100; verify >=4.5:1 contrast.",
+      "Do write muted text as text-slate-500 dark:text-slate-400 on the frame surface and on cards, stepping down to text-slate-600 dark:text-slate-300 on tinted or slate-100 surfaces (chips, pills, segmented tabs); headings are text-slate-800 dark:text-slate-100. Verify >=4.5:1 against the actual surface.",
       "Do differentiate cards with a full 1px border (border-slate-200/70 dark:border-white/10) plus tonal fill.",
       "Do give every icon-only button an aria-label, every input/select a label, and every control a visible focus-visible state and >=44px touch target.",
-      "Do keep content inside the .app-frame and slot overlays into the z-scale (modal 60, toast 70, onboarding 100).",
+      "Do keep content inside the .app-frame and slot overlays into the z-scale (modal 60, toast 70, onboarding 100). The content column also carries .app-surface so it paints the frame surface at every width — the canvas is a backdrop and never carries text.",
       "Do fetch runtime content with `${import.meta.env.BASE_URL}...` (served under /LangLearn/).",
       "Do honor prefers-reduced-motion and keep transitions ease-out, 150-300ms.",
       "Do keep failure gentle: soft tints + encouraging copy for wrong answers, misses, and empty states.",
@@ -153,14 +153,15 @@
     "donts": [
       "Don't use border-left/border-right greater than 1px as a colored accent stripe. (Absolute ban.)",
       "Don't use gradient text (bg-clip-text + gradient). Solid ink only. (Absolute ban.)",
-      "Don't use decorative indigo->violet gradients; the Today's Plan hero is the one exception.",
+      "Don't use decorative indigo->violet gradients; the Today's Plan hero is the one exception. Interactive fills use .fill-primary (solid indigo-600) — white on the old violet endpoint measured 4.2:1 and failed AA.",
       "Don't put a tiny uppercase tracked eyebrow above every section; use normal-case text-sm font-semibold text-slate-500.",
       "Don't use bounce/overshoot easing (cubic-bezier(0.34, 1.56, ...)) or animate-bounce; ease-out only, no infinite decorative loops.",
       "Don't stack endless equal-weight rounded-2xl cards; if everything is a card, nothing is grouped.",
       "Don't mix gray-* and slate-*; the neutral ramp is slate, exclusively.",
       "Don't use text-slate-400 or indigo-500 as light-mode body/label text; it fails WCAG AA.",
       "Don't add glassmorphism to content cards — glass is for the sticky header and nav only.",
-      "Don't add a custom webfont; this is an offline PWA. System sans only."
+      "Don't add a custom webfont; this is an offline PWA. System sans only.",
+      "Don't set type below the 12px Label floor (text-xs). A readout that only fits at 9-11px doesn't belong there — fold it into the adjacent label or drop it."
     ]
   }
 }

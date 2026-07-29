@@ -8,7 +8,16 @@ Strategic context for LangLearn. This file answers **who / what / why**; [DESIGN
 
 ## What it is
 
-A **kind, local-first Progressive Web App for language learning** — Japanese and Russian today, extensible to any language (Portuguese, and beyond). It runs entirely offline in the browser (IndexedDB via Dexie, no backend), installs as a PWA, and is deployed to GitHub Pages at `https://truemichato.github.io/LangLearn/`. Core surfaces: a spaced-repetition **Review** loop (SM-2), a personal **Words** vocabulary, an immersion **Reader**, and a **Learn** hub (grammar, letters, listening, sentences, conjugations, music, tests, more), tied together by a gamified **Dashboard** (XP, streaks, badges, goals).
+A **kind, local-first Progressive Web App for language learning** — six languages ship full grammar, vocabulary and graded reading content today (Japanese, Russian, Arabic, Spanish, Portuguese, Romanian), and the app is extensible to any language via a registry entry plus content. It runs entirely offline in the browser (IndexedDB via Dexie, no backend), installs as a PWA, and is deployed to GitHub Pages at `https://truemichato.github.io/LangLearn/`. Core surfaces: a spaced-repetition **Review** loop (SM-2), a personal **Words** vocabulary, an immersion **Reader**, and a **Learn** hub (grammar, letters, listening, sentences, conjugations, music, tests, more), tied together by a gamified **Dashboard** (XP, streaks, badges, goals).
+
+## The first-run contract
+
+A beginner may arrive knowing nothing — not the script, not a single word, not what "SRS" means. The app owes them a **sequence, not an inventory**: every first-run surface points at exactly one next step, and that step is a *lesson*, never a form.
+
+- Onboarding **hands off into content** — its last step is "pick your starting point" and its button navigates into a lesson. It never ends on the Dashboard.
+- The recommendation is derived, not guessed: languages with an unfamiliar script (`ja`, `ru`, `ar`) start at **Letters**; Latin-script languages start at **First words**. The logic lives in `src/lib/starting-points.ts` and is the single source used by onboarding, the zero-data Dashboard, and the Learn hub — so the app never gives three different answers.
+- **Zero words is the design centre, not an edge case.** Instrumentation (stats, forecasts, heat maps, badges) stays hidden until there is something to instrument.
+- Adding a word manually is an *expert* action. Never make a beginner type 食べる before they have been taught it.
 
 ## Users & Purpose
 
@@ -45,7 +54,7 @@ These are non-negotiable; they map 1:1 to the Don'ts in DESIGN.md.
 
 Accessibility is a **product requirement**, not a nice-to-have (learners use this daily, one-handed, in varied light):
 
-- **WCAG AA contrast is a floor.** Body/label text ≥4.5:1; large/bold ≥3:1. Muted text is `slate-500` (light) / `slate-400` (dark) — never lighter.
+- **WCAG AA contrast is a floor.** Body/label text ≥4.5:1; large/bold ≥3:1. Muted text is `slate-500` (light) / `slate-400` (dark) on the card and frame surfaces — **but slate-500 only clears AA on those.** On a tinted or slate-100 surface (chips, pills, segmented tabs, the indigo start-here card) muted text must be `slate-600` / `slate-300`. Never `text-slate-400` in light mode.
 - **Full dark mode** with real `dark:` variants on every surface.
 - **Keyboard + screen reader:** visible `:focus-visible` on every control; `aria-label` on icon-only buttons; labels on every input/`<select>`.
 - **Touch targets ≥44px.** Base font 18px, user-adjustable.
@@ -53,7 +62,7 @@ Accessibility is a **product requirement**, not a nice-to-have (learners use thi
 
 ## Strategic design principles
 
-1. **One obvious next action per screen.** Hierarchy over uniformity: a hero action, then grouped rows, then muted metadata. Never fifteen equal cards.
+1. **One obvious next action per screen.** Hierarchy over uniformity: a hero action, then grouped rows, then muted metadata. Never fifteen equal cards. A screen that offers a menu instead of a next step has failed, however complete the menu is.
 2. **Kindness is a design constraint.** When in doubt between a "correct/incorrect" framing and an "effort/keep-going" framing, choose the latter — in copy *and* color.
 3. **Restraint is the brand.** One indigo accent, one system font, tonal depth over shadows. Personality comes from voice and warmth, not decoration.
 4. **Phone-first, offline-always.** Every feature must work on a small screen, one-handed, with no network. No webfonts, no runtime-critical fetches without a fallback.

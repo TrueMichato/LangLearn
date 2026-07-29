@@ -123,8 +123,8 @@ The app has **no decorative secondary color.** Violet (`#8b5cf6`) exists as a le
 ### Neutral (Slate ramp — the whole neutral system)
 - **Ink** (`#1e293b` slate-800 / `#f1f5f9` slate-100 dark): headings and primary text.
 - **Body** (`#334155` slate-700 / `#e2e8f0` slate-200 dark): sustained reading text.
-- **Muted** (`#64748b` slate-500 / `#94a3b8` slate-400 dark): labels, captions, secondary metadata. Slate-500 is the light-mode floor for AA.
-- **Card** (`#ffffff` / `#1e293b`@90% dark), **Frame** (`#f8fafc` slate-50 / `#0f172a` slate-900 dark), **Canvas** (`#e2e8f0` slate-200 / `#020617` slate-950 dark): the three depth layers.
+- **Muted** (`#64748b` slate-500 / `#94a3b8` slate-400 dark): labels, captions, secondary metadata. Slate-500 is the light-mode floor for AA **on the card and frame surfaces only** — it measures 4.55:1 on slate-50 but drops to 4.35:1 on slate-100 and 4.27:1 on indigo-50. On any tinted or slate-100 surface (chips, pills, segmented tabs, the start-here card) muted text steps down to **slate-600 / slate-300**. `text-slate-400` in light mode fails AA and appears nowhere in the codebase.
+- **Card** (`#ffffff` / `#1e293b`@90% dark), **Frame** (`#f8fafc` slate-50 / `#0f172a` slate-900 dark), **Canvas** (`#e2e8f0` slate-200 / `#020617` slate-950 dark): the three depth layers. The **canvas never carries text** — it is the backdrop *behind* the column, visible in the desktop side rails. The content column always paints the frame surface (`.app-surface`), at every width, so muted text is never read against slate-200.
 - **Border** (`#e2e8f0` slate-200 / `rgb(255 255 255 / 0.1)` dark): hairline borders and dividers.
 
 ### Named Rules
@@ -201,7 +201,7 @@ Every interactive element ships default, hover, focus-visible, active, and disab
 Four semantic tinted chips expressing effort, not judgment: **Again** (orange), **Hard** (amber), **Good** (green), **Easy** (blue). Each is `bg-<hue>-50 text-<hue>-700 border border-<hue>-200 rounded-xl` (dark: `bg-<hue>-900/25 text-<hue>-300 border-<hue>-800/60`). Traffic-light meaning, clean full borders — never gradient fills or side-stripes. Keyboard 1–4 and Space to flip.
 
 ### App Frame (signature — layout primitive)
-The whole app is a single centered column. `.app-frame` = `max-w-[34rem] mx-auto`; on `≥768px` it gains a frame surface, hairline side rails, and the ambient shadow, sitting on `.app-canvas` (a slate backdrop with a soft indigo radial). Header, `<main>`, and bottom nav all align to this width. New full-screen surfaces (modals, onboarding) live outside the frame but must respect the z-scale.
+The whole app is a single centered column. `.app-frame` = `max-w-[34rem] mx-auto`; the content column also carries `.app-surface`, which paints the frame color at **every** width — on a phone the column fills the screen, so the canvas must never double as the reading surface. On `≥768px` the frame additionally gains hairline side rails and the ambient shadow, sitting on `.app-canvas` (a slate backdrop with a soft indigo radial that reads in the rails). Header, `<main>`, and bottom nav all align to this width. New full-screen surfaces (modals, onboarding) live outside the frame but must respect the z-scale.
 
 ### Z-Index Scale
 `header: z-40` → `bottom nav: z-50` → `modal / bottom-sheet: z-[60]` → `toast / nudge: z-[70]` → `onboarding: z-[100]`. Never invent arbitrary values; slot new overlays into this ladder.
@@ -210,7 +210,7 @@ The whole app is a single centered column. `.app-frame` = `max-w-[34rem] mx-auto
 
 ### Do:
 - **Do** use **indigo-600** as the one accent — primary actions, active state, focus, progress, and text links (use indigo-600 for links, not indigo-500).
-- **Do** write muted text as `text-slate-500 dark:text-slate-400` and headings as `text-slate-800 dark:text-slate-100`. Verify ≥4.5:1 contrast (≥3:1 for large/bold).
+- **Do** write muted text as `text-slate-500 dark:text-slate-400` on cards and the frame, stepping down to `text-slate-600 dark:text-slate-300` on tinted or slate-100 surfaces. Headings are `text-slate-800 dark:text-slate-100`. Verify ≥4.5:1 contrast (≥3:1 for large/bold).
 - **Do** differentiate cards with a **full 1px border** (`border border-slate-200/70 dark:border-white/10`) plus tonal fill.
 - **Do** give every icon-only button an `aria-label`, every input/`<select>` a label, and every control a visible `:focus-visible` state and a ≥44px (`min-h-[44px]`) touch target.
 - **Do** keep content inside the `.app-frame` and slot overlays into the z-scale (modal 60, toast 70, onboarding 100).
@@ -222,7 +222,8 @@ The whole app is a single centered column. `.app-frame` = `max-w-[34rem] mx-auto
 ### Don't:
 - **Don't** use `border-left`/`border-right` greater than 1px as a colored accent stripe on cards, list items, or callouts. (Absolute ban.)
 - **Don't** use gradient text (`bg-clip-text` + gradient). Solid ink only; emphasize with weight/size. (Absolute ban.)
-- **Don't** use decorative indigo→violet gradients. The one intentional exception is the "Today's Plan" hero surface; everywhere else, solid.
+- **Don't** use decorative indigo→violet gradients. The one intentional exception is the "Today's Plan" hero surface; everywhere else, solid. Interactive fills use `.fill-primary` (solid indigo-600) — white text on the old violet endpoint measured 4.2:1 and failed AA.
+- **Don't** set type below the 12px Label floor (`text-xs`). If a number won't fit, the number doesn't belong there — state it in the adjacent label instead.
 - **Don't** put a tiny uppercase tracked eyebrow above every section. Use normal-case `text-sm font-semibold text-slate-500`.
 - **Don't** use bounce/overshoot easing (`cubic-bezier(0.34, 1.56, …)`) or `animate-bounce`. Ease-out only; no infinite decorative loops.
 - **Don't** stack endless equal-weight `rounded-2xl` cards. If everything is a card, nothing is grouped.
