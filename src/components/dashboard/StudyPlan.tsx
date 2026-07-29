@@ -8,6 +8,8 @@ interface StudyPlanProps {
   weeklyGoalSeconds: number;
   currentStreak: number;
   streakFreezes?: number;
+  /** Before the first session there is nothing to measure — say so plainly. */
+  hasData?: boolean;
 }
 
 function ProgressRing({ percentage }: { percentage: number }) {
@@ -18,8 +20,10 @@ function ProgressRing({ percentage }: { percentage: number }) {
   const offset = circumference - (percentage / 100) * circumference;
   const gradientId = 'progress-ring-grad';
 
+  // The adjacent label already states the numbers, so the ring stays purely
+  // visual rather than cramming a percentage into 9px of space.
   return (
-    <svg width={size} height={size} className="shrink-0 -rotate-90">
+    <svg width={size} height={size} className="shrink-0 -rotate-90" aria-hidden="true" focusable="false">
       <defs>
         <linearGradient id={gradientId} x1="0%" y1="0%" x2="100%" y2="100%">
           <stop offset="0%" stopColor="#6366f1" />
@@ -47,15 +51,6 @@ function ProgressRing({ percentage }: { percentage: number }) {
         strokeDashoffset={offset}
         className="transition-all duration-500"
       />
-      <text
-        x={size / 2}
-        y={size / 2}
-        textAnchor="middle"
-        dominantBaseline="central"
-        className="fill-slate-700 dark:fill-slate-200 text-[9px] font-semibold rotate-90 origin-center"
-      >
-        {percentage}%
-      </text>
     </svg>
   );
 }
@@ -68,6 +63,7 @@ export default function StudyPlan({
   weeklyGoalSeconds,
   currentStreak,
   streakFreezes,
+  hasData = true,
 }: StudyPlanProps) {
   const navigate = useNavigate();
 
@@ -89,7 +85,14 @@ export default function StudyPlan({
         📋 Today's Plan
       </h3>
 
-      <div className="space-y-2 mb-4">
+      {!hasData ? (
+        <p className="text-sm text-slate-600 dark:text-slate-300">
+          Nothing due yet — that's normal on day one. Finish a lesson below and
+          your first reviews will show up here.
+        </p>
+      ) : (
+        <>
+          <div className="space-y-2 mb-4">
         {dueCards > 0 ? (
           <p className="text-sm text-slate-600 dark:text-slate-300">
             🃏 <strong>{dueCards} card{dueCards !== 1 ? 's' : ''}</strong> due for review
@@ -125,30 +128,32 @@ export default function StudyPlan({
             </span>
           )}
         </p>
-      </div>
+          </div>
 
-      <div className="flex gap-2 flex-wrap">
-        {dueCards > 0 && (
-          <button
-            onClick={() => navigate('/review')}
-            className="px-3 py-1.5 rounded-lg text-sm font-medium bg-indigo-600 text-white hover:bg-indigo-700 transition-colors"
-          >
-            Start Review
-          </button>
-        )}
-        <button
-          onClick={() => navigate('/reader')}
-          className="px-3 py-1.5 rounded-lg text-sm font-medium border border-slate-300 dark:border-slate-600 text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-700 transition-colors"
-        >
-          Open Reader
-        </button>
-        <button
-          onClick={() => navigate('/words')}
-          className="px-3 py-1.5 rounded-lg text-sm font-medium border border-slate-300 dark:border-slate-600 text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-700 transition-colors"
-        >
-          + Add Word
-        </button>
-      </div>
+          <div className="flex gap-2 flex-wrap">
+            {dueCards > 0 && (
+              <button
+                onClick={() => navigate('/review')}
+                className="min-h-[44px] px-3 py-1.5 rounded-lg text-sm font-medium bg-indigo-600 text-white hover:bg-indigo-700 transition-colors"
+              >
+                Start Review
+              </button>
+            )}
+            <button
+              onClick={() => navigate('/learn')}
+              className="min-h-[44px] px-3 py-1.5 rounded-lg text-sm font-medium border border-slate-300 dark:border-slate-600 text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-700 transition-colors"
+            >
+              Keep learning
+            </button>
+            <button
+              onClick={() => navigate('/reader')}
+              className="min-h-[44px] px-3 py-1.5 rounded-lg text-sm font-medium border border-slate-300 dark:border-slate-600 text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-700 transition-colors"
+            >
+              Open Reader
+            </button>
+          </div>
+        </>
+      )}
     </div>
   );
 }

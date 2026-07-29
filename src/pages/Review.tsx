@@ -1,6 +1,6 @@
 import { useEffect, useState, useCallback, useMemo } from 'react';
 import { useNavigate, useSearchParams } from 'react-router-dom';
-import { getDueReviews, getRandomWords } from '../db/words';
+import { getDueReviews, getRandomWords, getTotalWordCount } from '../db/words';
 import { processReview } from '../db/reviews';
 import { useReviewStore, type QueueItem, type PracticeMode } from '../stores/reviewStore';
 import { useTimerStore } from '../stores/timerStore';
@@ -69,6 +69,7 @@ export default function ReviewPage() {
   const studySet = useStudySetsStore((s) => s.sets.find((ss) => ss.id === setId));
   const [loading, setLoading] = useState(true);
   const [totalDue, setTotalDue] = useState(0);
+  const [totalWords, setTotalWords] = useState(0);
   const [showAddModal, setShowAddModal] = useState(false);
 
   const [shaking, setShaking] = useState(false);
@@ -112,6 +113,7 @@ export default function ReviewPage() {
       [due[i], due[j]] = [due[j], due[i]];
     }
     setTotalDue(due.length);
+    setTotalWords(await getTotalWordCount());
 
     // Adaptive composition weights the standard due queue toward weaker cards.
     // Purpose-built decks (mistakes, topic, study set) already curate their items.
@@ -272,16 +274,45 @@ export default function ReviewPage() {
         </div>
       );
     }
+    if (totalWords === 0) {
+      return (
+        <div className="flex flex-col items-center justify-center h-64 text-center px-6">
+          <p className="text-5xl mb-4">🌱</p>
+          <p className="text-xl font-semibold text-slate-700 dark:text-slate-200">
+            Nothing to review yet
+          </p>
+          <p className="text-slate-500 dark:text-slate-400 mt-2 max-w-xs">
+            Reviews appear here once you've finished your first lesson.
+          </p>
+          <button
+            onClick={() => navigate('/vocab-lessons')}
+            className="mt-4 min-h-[44px] bg-indigo-600 text-white px-5 py-2 rounded-xl hover:bg-indigo-700 transition-colors"
+          >
+            Start your first lesson →
+          </button>
+          <button
+            onClick={() => setShowAddModal(true)}
+            className="mt-3 min-h-[44px] px-2 text-sm font-medium text-indigo-600 dark:text-indigo-400 hover:underline"
+          >
+            Add a word manually
+          </button>
+          <AddWordModal
+            isOpen={showAddModal}
+            onClose={() => { setShowAddModal(false); loadCards(); }}
+          />
+        </div>
+      );
+    }
     return (
       <div className="flex flex-col items-center justify-center h-64 text-center">
         <p className="text-5xl mb-4">🎉</p>
-        <p className="text-xl font-semibold text-slate-700 dark:text-slate-200">No cards to review!</p>
+        <p className="text-xl font-semibold text-slate-700 dark:text-slate-200">You're all caught up!</p>
         <p className="text-slate-500 dark:text-slate-400 mt-2">
-          Add words from the Reader or check back later.
+          Nothing is due right now. New cards arrive as you learn.
         </p>
         <button
           onClick={() => setShowAddModal(true)}
-          className="mt-4 bg-indigo-600 text-white px-5 py-2 rounded-xl hover:bg-indigo-700 transition-colors"
+          className="mt-4 min-h-[44px] bg-indigo-600 text-white px-5 py-2 rounded-xl hover:bg-indigo-700 transition-colors"
         >
           ➕ Add some words
         </button>

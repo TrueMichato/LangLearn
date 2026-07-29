@@ -91,7 +91,7 @@ export const useSettingsStore = create<SettingsState>()(
     (set) => ({
       weeklyGoalMinutes: 60,
       dailyGoalMinutes: 5,
-      activeLanguages: ['ja', 'ru'],
+      activeLanguages: [],
       showStressMarks: true,
       darkMode: false,
       fontSize: 18,
