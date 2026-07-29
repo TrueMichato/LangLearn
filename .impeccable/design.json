@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-07-29T10:45:00.000Z",
+  "generatedAt": "2026-07-30T00:00:00.000Z",
   "title": "Design System: LangLearn",
   "extensions": {
     "colorMeta": {
@@ -117,6 +117,30 @@
       "description": "Emoji + label tab; indigo active with a sliding indicator, slate inactive. Lives on glass chrome.",
       "html": "<nav class=\"ds-nav\"><a class=\"ds-nav-item ds-nav-active\"><span class=\"ds-nav-icon\">\ud83d\udcca</span>Home</a><a class=\"ds-nav-item\"><span class=\"ds-nav-icon\">\ud83c\udccf</span>Review</a><a class=\"ds-nav-item\"><span class=\"ds-nav-icon\">\ud83d\udcda</span>Words</a></nav>",
       "css": ".ds-nav { display: flex; justify-content: space-around; background: rgb(255 255 255 / 0.8); backdrop-filter: blur(16px); border-top: 1px solid rgb(226 232 240 / 0.6); padding: 0.25rem 0; } .ds-nav-item { display: flex; flex-direction: column; align-items: center; gap: 0.125rem; padding: 0.5rem 0.375rem; font-size: 0.75rem; color: #64748b; text-decoration: none; } .ds-nav-icon { font-size: 1.25rem; } .ds-nav-active { color: #4f46e5; font-weight: 600; } .ds-nav-active .ds-nav-icon { transform: scale(1.1); }"
+    },
+    {
+      "name": "Language Picker",
+      "kind": "chip-group",
+      "refersTo": "chip-selected",
+      "description": "The one language switcher (src/components/common/LanguagePicker.tsx). Drives app-wide state, not per-page state, and renders nothing when there are fewer than two active languages.",
+      "html": "<div role=\"group\" aria-label=\"Language\"><button class=\"ds-lang ds-lang-on\" aria-pressed=\"true\">JA</button><button class=\"ds-lang\" aria-pressed=\"false\">RU</button></div>",
+      "css": ".ds-lang { flex-shrink: 0; min-height: 44px; padding: 0 0.75rem; border-radius: 0.75rem; font-size: 0.875rem; font-weight: 500; background: #f1f5f9; color: #334155; transition: background 0.15s ease-out; } .ds-lang:hover { background: #e2e8f0; } .ds-lang-on { background: #4f46e5; color: #fff; } .ds-lang:focus-visible { outline: 2px solid #4f46e5; outline-offset: 2px; }"
+    },
+    {
+      "name": "Unavailable State",
+      "kind": "empty-state",
+      "refersTo": "card",
+      "description": "Shown when a surface cannot serve the current language. Names the gap and offers the languages it does support; never silently substitutes another language.",
+      "html": "<div class=\"ds-unavailable\"><p>Conjugation drills aren't available for Romanian yet.</p><div role=\"group\" aria-label=\"Language\"><button class=\"ds-lang\">JA</button><button class=\"ds-lang\">RU</button></div></div>",
+      "css": ".ds-unavailable { background: #fff; border: 1px solid rgb(226 232 240 / 0.7); border-radius: 1rem; padding: 1rem; color: #475569; text-align: center; }"
+    },
+    {
+      "name": "Starting Points",
+      "kind": "list",
+      "refersTo": "card",
+      "description": "The first-run on-ramp (src/lib/starting-points.ts). Three equal-weight rows with exactly one recommended, derived from the language's script system. One component, three placements: onboarding, zero-data Dashboard, Learn hub.",
+      "html": "<ul class=\"ds-start\"><li><button class=\"ds-start-row ds-start-rec\">Learn the letters <span>Recommended</span></button></li><li><button class=\"ds-start-row\">Your first words</button></li></ul>",
+      "css": ".ds-start { display: grid; gap: 0.75rem; } .ds-start-row { display: flex; align-items: center; justify-content: space-between; width: 100%; min-height: 44px; padding: 1rem; border: 1px solid rgb(226 232 240 / 0.7); border-radius: 1rem; background: #fff; text-align: left; } .ds-start-rec { border-color: #4f46e5; } .ds-start-rec span { font-size: 0.75rem; font-weight: 500; color: #4f46e5; }"
     }
   ],
   "narrative": {
@@ -128,6 +152,7 @@
       "Phone-first, framed on desktop — a single max-w-[34rem] centered column.",
       "Legible above all — WCAG AA contrast is a floor; system fonts, generous 18px base.",
       "Hierarchy over uniformity — one hero action, grouped rows, muted metadata.",
+      "One control, one place — a repeated affordance has exactly one implementation. Twenty hand-rolled variants is how the accent rule breaks.",
       "Offline-first — no webfonts, no network-dependent chrome."
     ],
     "rules": [
@@ -137,7 +162,14 @@
       { "name": "The System-Sans Rule", "body": "No custom webfonts, ever. This is an offline PWA; weight and size carry all hierarchy.", "section": "typography" },
       { "name": "The No-Eyebrow Rule", "body": "Section headers are normal-case text-sm font-semibold text-slate-500. Uppercase + wide tracking above every section is forbidden; uppercase is for genuine micro-badges only.", "section": "typography" },
       { "name": "The Three-Layer Rule", "body": "Depth = canvas -> frame -> card tonal layering. Reach for a lighter surface before a heavier shadow.", "section": "elevation" },
-      { "name": "The Glass-Is-Chrome-Only Rule", "body": "backdrop-blur belongs on the sticky header and bottom nav and nowhere else.", "section": "elevation" }
+      { "name": "The Glass-Is-Chrome-Only Rule", "body": "backdrop-blur belongs on the sticky header and bottom nav and nowhere else.", "section": "elevation" },
+      { "name": "The Dark-Twin Rule", "body": "Every color class ships a dark: variant in the same edit. Dark mode is not a theme layered on afterwards; black text on a dark surface is this codebase's most persistent regression.", "section": "colors" },
+      { "name": "The 12px Floor", "body": "text-xs (12px) is the smallest type in the system. Below that a label stops being read and starts being decoration.", "section": "typography" },
+      { "name": "The Direction Rule", "body": "Target-language text carries dir via isRTL/rtlProps (src/lib/rtl.ts) — Arabic ships today. English-primary prose quoting a target word stays LTR. Never assume direction from layout.", "section": "typography" },
+      { "name": "The One-Column Rule", "body": "Everything lives in the .app-frame (max-w-[34rem]). A surface that needs more width is a surface that needs less content.", "section": "layout" },
+      { "name": "The Above-the-Fold Rule", "body": "A first-run screen fits in <=1.5 viewports at 390x844. Instrumentation (stats, forecasts, heat maps, badges) stays hidden until there is data to instrument.", "section": "layout" },
+      { "name": "The No-Stripe Rule", "body": "A colored border-l-*/border-r-* accent stripe on a card, list item, or callout is an absolute ban — it is how a second accent color sneaks into the system.", "section": "shapes" },
+      { "name": "The No-Nesting Rule", "body": "Never put a rounded-2xl card inside another rounded-2xl card. Group inside a card with spacing and a hairline divider.", "section": "shapes" }
     ],
     "dos": [
       "Do use indigo-600 as the one accent — primary actions, active state, focus, progress, and text links (indigo-600 for links, not indigo-500).",
@@ -148,7 +180,9 @@
       "Do fetch runtime content with `${import.meta.env.BASE_URL}...` (served under /LangLearn/).",
       "Do honor prefers-reduced-motion and keep transitions ease-out, 150-300ms.",
       "Do keep failure gentle: soft tints + encouraging copy for wrong answers, misses, and empty states.",
-      "Do establish hierarchy — one hero action, grouped rows, muted metadata; collapse long lists behind a summary."
+      "Do establish hierarchy — one hero action, grouped rows, muted metadata; collapse long lists behind a summary.",
+      "Do reuse the shared control — LanguagePicker for language, StartingPoints for the on-ramp, LanguageUnavailable for an unsupported pair. A local re-implementation is how the system drifts.",
+      "Do ship a dark: variant with every color class, in the same edit."
     ],
     "donts": [
       "Don't use border-left/border-right greater than 1px as a colored accent stripe. (Absolute ban.)",
@@ -161,7 +195,10 @@
       "Don't use text-slate-400 or indigo-500 as light-mode body/label text; it fails WCAG AA.",
       "Don't add glassmorphism to content cards — glass is for the sticky header and nav only.",
       "Don't add a custom webfont; this is an offline PWA. System sans only.",
-      "Don't set type below the 12px Label floor (text-xs). A readout that only fits at 9-11px doesn't belong there — fold it into the adjacent label or drop it."
+      "Don't set type below the 12px Label floor (text-xs). A readout that only fits at 9-11px doesn't belong there — fold it into the adjacent label or drop it.",
+      "Don't nest a card inside a card.",
+      "Don't silently fall back to another language when a surface can't serve the current one — name the gap.",
+      "Don't hardcode a language name or assume a script's direction; getLanguageLabel(code) and rtlProps exist for this."
     ]
   }
 }
