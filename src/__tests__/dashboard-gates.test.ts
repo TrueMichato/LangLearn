@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest';
-import { hasStarted, hasProgress, type DashboardActivity } from '../lib/dashboard-gates';
+import { hasStarted, hasHistory, type DashboardActivity } from '../lib/dashboard-gates';
 
 const blank: DashboardActivity = {
   totalWords: 0,
@@ -11,7 +11,7 @@ const blank: DashboardActivity = {
 describe('dashboard gates', () => {
   it('shows the on-ramp, not the dashboard, to someone who has done nothing', () => {
     expect(hasStarted(blank)).toBe(false);
-    expect(hasProgress(blank)).toBe(false);
+    expect(hasHistory(blank)).toBe(false);
   });
 
   /* This is the regression that mattered: the on-ramp's top recommendation for
@@ -32,18 +32,29 @@ describe('dashboard gates', () => {
     expect(hasStarted(activity)).toBe(true);
   });
 
-  it('withholds the scoreboard until there is something worth measuring', () => {
+  it('withholds trends until there is something worth charting', () => {
     const oneShortSession = { ...blank, lessonsTouched: 5, totalStudySeconds: 40, bonusXP: 25 };
     expect(hasStarted(oneShortSession)).toBe(true);
-    expect(hasProgress(oneShortSession)).toBe(false);
+    expect(hasHistory(oneShortSession)).toBe(false);
   });
 
   it('opens the scoreboard once a full minute or a first word lands', () => {
-    expect(hasProgress({ ...blank, totalStudySeconds: 60 })).toBe(true);
-    expect(hasProgress({ ...blank, totalWords: 1 })).toBe(true);
+    expect(hasHistory({ ...blank, totalStudySeconds: 60 })).toBe(true);
+    expect(hasHistory({ ...blank, totalWords: 1 })).toBe(true);
   });
 
-  it('never shows the scoreboard to someone who has not started', () => {
+  /* The bug this file exists to prevent, second edition. Badges unlock from XP
+     and letters, and the app fires an "Achievement Unlocked!" toast when they
+     do. Gating the *earned* layer on hasHistory meant a learner with 420 XP and
+     an unlocked badge had no screen anywhere that would show it to them. The
+     scoreboard follows hasStarted; only trends wait for hasHistory. */
+  it('lets someone who has only earned XP reach their achievements', () => {
+    const lettersAndDrills = { ...blank, lessonsTouched: 12, bonusXP: 420 };
+    expect(hasStarted(lettersAndDrills)).toBe(true);
+    expect(hasHistory(lettersAndDrills)).toBe(false);
+  });
+
+  it('never shows trends to someone who has not started', () => {
     const cases: DashboardActivity[] = [
       blank,
       { ...blank, lessonsTouched: 3 },
@@ -51,7 +62,7 @@ describe('dashboard gates', () => {
       { ...blank, totalStudySeconds: 59 },
     ];
     for (const c of cases) {
-      expect(hasProgress(c) && !hasStarted(c)).toBe(false);
+      expect(hasHistory(c) && !hasStarted(c)).toBe(false);
     }
   });
 });

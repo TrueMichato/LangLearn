@@ -13,8 +13,7 @@ import HeatMap from '../components/dashboard/HeatMap';
 import LanguageStats from '../components/dashboard/LanguageStats';
 import StudyPlan from '../components/dashboard/StudyPlan';
 import AddWordModal from '../components/srs/AddWordModal';
-import BadgeCollection from '../components/badges/BadgeCollection';
-import DailyChallengeCard from '../components/dashboard/DailyChallengeCard';
+import BadgeCollection from '../components/badges/BadgeCollection';import DailyChallengeCard from '../components/dashboard/DailyChallengeCard';
 import MistakeDeckCard from '../components/dashboard/MistakeDeckCard';
 import ReviewForecast from '../components/dashboard/ReviewForecast';
 import WeeklyGoals from '../components/dashboard/WeeklyGoals';
@@ -25,7 +24,9 @@ import VocabSizeCard from '../components/dashboard/VocabSizeCard';
 import { PageSkeleton } from '../components/common/Skeleton';
 import StudyTip from '../components/common/StudyTip';
 import StartingPoints from '../components/onboarding/StartingPoints';
-import { hasStarted, hasProgress } from '../lib/dashboard-gates';
+import { hasStarted, hasHistory } from '../lib/dashboard-gates';
+import { useBadgeStore } from '../stores/badgeStore';
+import { badgeTally } from '../lib/badge-visibility';
 
 interface Stats {
   totalWords: number;
@@ -58,6 +59,7 @@ export default function Dashboard() {
   const consumeStreakFreezes = useSettingsStore((s) => s.consumeStreakFreezes);
   const grantStreakFreeze = useSettingsStore((s) => s.grantStreakFreeze);
   const bonusXP = useXPStore((s) => s.bonusXP);
+  const unlockedBadges = useBadgeStore((s) => s.unlockedBadges);
   const [showAddModal, setShowAddModal] = useState(false);
   const greeting = useMemo(getGreeting, []);
   const navigate = useNavigate();
@@ -146,7 +148,7 @@ export default function Dashboard() {
     currentStreak >= 30 ? '🔥🔥🔥' : currentStreak >= 7 ? '🔥🔥' : '🔥';
   const isMilestone = currentStreak >= 100 || currentStreak === 30 || currentStreak === 7;
 
-  // Two gates, not one — see src/lib/dashboard-gates.ts for why.
+  // Three layers, two gates — see src/lib/dashboard-gates.ts for why.
   const activity = {
     totalWords: stats.totalWords,
     totalStudySeconds: stats.totalStudySeconds,
@@ -154,8 +156,9 @@ export default function Dashboard() {
     bonusXP,
   };
   const started = hasStarted(activity);
-  const progress = hasProgress(activity);
+  const history = hasHistory(activity);
   const firstLanguage = currentLanguage ?? activeLanguages[0];
+  const badges = badgeTally(activeLanguages, unlockedBadges);
 
   return (
     <div className="page-enter">
@@ -221,14 +224,12 @@ export default function Dashboard() {
         </div>
       ) : (
         <>
-          {progress && (
-            <div className="grid grid-cols-2 gap-3 mb-6">
-              <StatCard label="Words Learned" value={stats.totalWords} icon="📚" />
-              <StatCard label="Cards Due" value={stats.dueCards} icon="🃏" />
-              <StatCard label="Total Study Time" value={formatStudyTime(stats.totalStudySeconds)} icon="⏱️" />
-              <StatCard label="Total XP" value={stats.timeXP + bonusXP} icon="⭐" />
-            </div>
-          )}
+          <div className="grid grid-cols-2 gap-3 mb-6">
+            <StatCard label="Words Learned" value={stats.totalWords} icon="📚" />
+            <StatCard label="Cards Due" value={stats.dueCards} icon="🃏" />
+            <StatCard label="Total Study Time" value={formatStudyTime(stats.totalStudySeconds)} icon="⏱️" />
+            <StatCard label="Total XP" value={stats.timeXP + bonusXP} icon="⭐" />
+          </div>
 
           <SuggestedNext />
 
@@ -236,27 +237,34 @@ export default function Dashboard() {
 
           <DailyChallengeCard />
 
-          {progress && (
-            <>
           <h3 className="text-sm font-semibold text-slate-500 dark:text-slate-400 mb-3 mt-8">
             Your progress
           </h3>
 
-          <WeeklyGoals />
-
-          <ReviewForecast />
-
-          <Milestones />
-
-          {stats.totalWords > 0 && (
-            <LanguageStats languages={activeLanguages} />
-          )}
-
-          <VocabSizeCard />
+          {/* Earned, not measured — always reachable once you've begun. */}
+          <Link
+            to="/achievements"
+            className="block bg-white dark:bg-slate-800/90 border border-slate-200/70 dark:border-white/10 rounded-2xl shadow-sm p-4 mb-3 hover:shadow-md transition-shadow"
+          >
+            <div className="flex items-center justify-between">
+              <div className="flex items-center gap-3">
+                <span className="text-2xl">🏅</span>
+                <div>
+                  <p className="font-semibold text-slate-800 dark:text-slate-100">Achievements</p>
+                  <p className="text-sm text-slate-500 dark:text-slate-400">
+                    {badges.unlocked > 0
+                      ? `${badges.unlocked} of ${badges.total} badges earned`
+                      : 'Badges, milestones and your streak'}
+                  </p>
+                </div>
+              </div>
+              <span className="text-slate-500 dark:text-slate-400">→</span>
+            </div>
+          </Link>
 
           <Link
             to="/analytics"
-            className="block bg-white dark:bg-slate-800/90 rounded-2xl shadow p-4 mb-6 hover:shadow-md transition-shadow"
+            className="block bg-white dark:bg-slate-800/90 border border-slate-200/70 dark:border-white/10 rounded-2xl shadow-sm p-4 mb-6 hover:shadow-md transition-shadow"
           >
             <div className="flex items-center justify-between">
               <div className="flex items-center gap-3">
@@ -293,7 +301,22 @@ export default function Dashboard() {
             )}
           </div>
 
-          <BadgeCollection />
+          {/* Trends only once there is a trend to draw. */}
+          {history && (
+            <>
+              <WeeklyGoals />
+
+              <ReviewForecast />
+
+              <Milestones />
+
+              {stats.totalWords > 0 && (
+                <LanguageStats languages={activeLanguages} />
+              )}
+
+              <VocabSizeCard />
+
+              <BadgeCollection />
             </>
           )}
         </>
@@ -301,7 +324,7 @@ export default function Dashboard() {
 
       <StudyTip context="dashboard" className="mb-6" />
 
-      {progress && (
+      {history && (
         <div className="bg-white dark:bg-slate-800/90 rounded-2xl shadow p-4 mt-4">
           <h3 className="font-semibold text-slate-700 dark:text-slate-200 mb-3">
             Study Activity

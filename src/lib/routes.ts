@@ -21,6 +21,7 @@ export const ROUTES = {
   conjugations: '/conjugations',
   sentenceBuilder: '/sentence-builder',
   analytics: '/analytics',
+  achievements: '/achievements',
   tests: '/tests',
   dailyChallenge: '/daily-challenge',
   clozePractice: '/cloze-practice',

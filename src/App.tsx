@@ -20,6 +20,7 @@ const ListeningPage = lazy(() => import('./pages/Listening'));
 const ConjugationsPage = lazy(() => import('./pages/Conjugations'));
 const SentenceBuilderPage = lazy(() => import('./pages/SentenceBuilder'));
 const AnalyticsPage = lazy(() => import('./pages/Analytics'));
+const AchievementsPage = lazy(() => import('./pages/Achievements'));
 const TestsPage = lazy(() => import('./pages/Tests'));
 const DailyChallengePage = lazy(() => import('./pages/DailyChallenge'));
 const ClozePracticePage = lazy(() => import('./pages/ClozePractice'));
@@ -51,6 +52,7 @@ export default function App() {
             <Route path={ROUTES.conjugations} element={<ConjugationsPage />} />
             <Route path={ROUTES.sentenceBuilder} element={<SentenceBuilderPage />} />
             <Route path={ROUTES.analytics} element={<AnalyticsPage />} />
+            <Route path={ROUTES.achievements} element={<AchievementsPage />} />
             <Route path={ROUTES.tests} element={<TestsPage />} />
             <Route path={ROUTES.dailyChallenge} element={<DailyChallengePage />} />
             <Route path={ROUTES.clozePractice} element={<ClozePracticePage />} />
