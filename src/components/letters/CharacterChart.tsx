@@ -23,6 +23,9 @@ function masteryColor(mastery?: string) {
   }
 }
 
+/* Longest meaning a five-across tile can show without breaking mid-word. */
+const TILE_MEANING_MAX = 14;
+
 const GROUP_INFO: Record<string, string> = {
   'Dakuten': 'Dakuten (゛) voices the consonant: k→g, s→z, t→d, h→b',
   'Handakuten': 'Handakuten (゜) changes h-sounds to p-sounds',
@@ -151,11 +154,20 @@ export default function CharacterChart({ characters, alphabetName, language, pro
                       speak(c.pronunciation ?? c.char, language);
                       setSelectedChar(c);
                     }}
-                    className={`flex flex-col items-center justify-center p-2 rounded-xl transition-all duration-300 active:scale-95 hover:scale-105 hover:shadow-md press-feedback ${masteryColor(p?.mastery)}`}
+                    className={`flex flex-col items-center justify-center px-1 py-2 rounded-xl transition-all duration-300 active:scale-95 hover:scale-105 hover:shadow-md press-feedback ${masteryColor(p?.mastery)}`}
                   >
                     <span className="text-2xl leading-tight text-slate-900 dark:text-slate-100">{c.char}</span>
                     <span className="text-xs text-slate-600 dark:text-slate-300 mt-0.5">{c.romanji}</span>
-                    {c.meaning && <span className="text-xs text-slate-500 dark:text-slate-400 leading-tight">{c.meaning}</span>}
+                    {/* Kanji meanings are a label ("water") and earn their place
+                        on the tile. Cyrillic uses the same field for a sentence
+                        about cursive forms, which in a ~65px cell truncates to
+                        "Cursiv e: ha…" — noise, not information. Long notes are
+                        left to the detail sheet a tap away. */}
+                    {c.meaning && c.meaning.length <= TILE_MEANING_MAX && (
+                      <span className="text-xs text-slate-500 dark:text-slate-400 leading-tight text-center line-clamp-2 w-full break-normal">
+                        {c.meaning}
+                      </span>
+                    )}
                   </button>
                 );
               })}

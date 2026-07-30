@@ -1,8 +1,11 @@
 import { useState, useEffect, useRef } from 'react';
 import { useParams, useNavigate, useSearchParams } from 'react-router-dom';
 import { useSettingsStore } from '../stores/settingsStore';
-import { getAlphabetsForLanguage } from '../data/alphabets';
+import { useCurrentLanguage } from '../hooks/useCurrentLanguage';
+import { getAlphabetsForLanguage, ALPHABET_DATA } from '../data/alphabets';
 import { getCharacterProgress } from '../db/characters';
+import { lettersRoute } from '../lib/routes';
+import LanguagePicker from '../components/common/LanguagePicker';
 import CharacterChart from '../components/letters/CharacterChart';
 import DrawingCanvas from '../components/letters/DrawingCanvas';
 import RecognitionQuiz from '../components/letters/RecognitionQuiz';
@@ -14,6 +17,9 @@ type PracticeMode = 'chart' | 'draw' | 'quiz' | 'learn';
 
 const PRACTICE_MODES: PracticeMode[] = ['chart', 'draw', 'quiz', 'learn'];
 
+/** Module-level so the hook's memo doesn't churn on every render. */
+const LETTER_LANGUAGES = Object.keys(ALPHABET_DATA);
+
 function isPracticeMode(value: string | null): value is PracticeMode {
   return value !== null && (PRACTICE_MODES as string[]).includes(value);
 }
@@ -21,6 +27,7 @@ function isPracticeMode(value: string | null): value is PracticeMode {
 export default function LetterPractice() {
   const { lang = 'ja' } = useParams();
   const setCurrentLanguage = useSettingsStore((s) => s.setCurrentLanguage);
+  const { options } = useCurrentLanguage(LETTER_LANGUAGES);
 
   /* This is the only route that names a language, so arriving here is a real
      choice — adopt it rather than letting the rest of the app disagree. */
@@ -43,6 +50,12 @@ export default function LetterPractice() {
   const [loading, setLoading] = useState(true);
   const alphabets = getAlphabetsForLanguage(lang);
   const [selectedAlphabet, setSelectedAlphabet] = useState(0);
+
+  /* Alphabet counts differ per language (Arabic has four, Russian two), so a
+     stale index would index past the end and blank the page. */
+  useEffect(() => {
+    setSelectedAlphabet(0);
+  }, [lang]);
 
   const chooseMode = (next: PracticeMode) => {
     modeIsPinned.current = true;
@@ -70,8 +83,15 @@ export default function LetterPractice() {
 
   if (alphabets.length === 0) {
     return (
-      <div className="text-center py-12">
+      <div className="py-12 text-center">
         <p className="text-slate-500 dark:text-slate-400">No letter systems available for this language.</p>
+        <LanguagePicker
+          options={options}
+          value={undefined}
+          onChange={(next) => navigate(lettersRoute(next))}
+          label="Language to practise"
+          className="mt-4 justify-center"
+        />
         <button onClick={() => navigate('/learn')} className="mt-4 text-indigo-600 dark:text-indigo-400 press-feedback">
           ← Back to Learn
         </button>
@@ -90,6 +110,15 @@ export default function LetterPractice() {
         ← Back to Learn
       </button>
       <h2 className="text-lg font-semibold text-slate-700 dark:text-slate-200 mb-4">Letter Practice</h2>
+
+      {/* Which language's letters. Renders nothing for a single-language learner. */}
+      <LanguagePicker
+        options={options}
+        value={lang}
+        onChange={(next) => navigate(lettersRoute(next))}
+        label="Language to practise"
+        className="mb-3"
+      />
 
       {/* Alphabet selector */}
       {alphabets.length > 1 && (

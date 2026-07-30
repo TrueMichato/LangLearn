@@ -1,5 +1,6 @@
 import { useState, useMemo } from 'react';
 import { BADGES, type BadgeCategory, type BadgeDefinition } from '../../data/badges';
+import { visibleBadges as computeVisibleBadges } from '../../lib/badge-visibility';
 import { useBadgeStore } from '../../stores/badgeStore';
 import { useSettingsStore } from '../../stores/settingsStore';
 
@@ -43,15 +44,10 @@ export default function BadgeCollection() {
   const [selectedBadge, setSelectedBadge] = useState<string | null>(null);
   const [expanded, setExpanded] = useState(false);
 
-  const visibleBadges = useMemo<BadgeDefinition[]>(() => {
-    const active = new Set(activeLanguages);
-    return BADGES.filter((b) => {
-      if (!b.language) return true;
-      // Show language-locked badges only when their language is active,
-      // but always keep an already-earned badge visible so accomplishments persist.
-      return active.has(b.language) || b.id in unlockedBadges;
-    });
-  }, [activeLanguages, unlockedBadges]);
+  const visibleBadges = useMemo<BadgeDefinition[]>(
+    () => computeVisibleBadges(activeLanguages, unlockedBadges),
+    [activeLanguages, unlockedBadges],
+  );
 
   const grouped = CATEGORY_ORDER.map((cat) => ({
     category: cat,
