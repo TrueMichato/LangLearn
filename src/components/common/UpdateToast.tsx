@@ -1,35 +1,88 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { useRegisterSW } from 'virtual:pwa-register/react';
+import {
+  applyUpdate,
+  browserUpdateEnvironment,
+  consumeUpdateApplied,
+  hasWaitingWorker,
+} from '../../lib/sw-update';
 
-// If the waiting worker activates, the plugin reloads the page for us on the
-// `controlling` event. When there is no waiting worker (e.g. a previously
-// installed build already self-activated) that event never fires, so we fall
-// back to reloading ourselves rather than leaving the button dead.
-const RELOAD_FALLBACK_MS = 2000;
+const WAITING_POLL_MS = 3000;
+const CONFIRMATION_MS = 5000;
+
+// Single-use flag, so read it once per page load rather than per mount.
+const updateWasApplied = consumeUpdateApplied();
 
 export default function UpdateToast() {
+  // Registers the service worker. `needRefresh` is the plugin's signal that an
+  // update exists — necessary but not sufficient, see the effect below.
   const {
     needRefresh: [needRefresh],
-    updateServiceWorker,
   } = useRegisterSW();
 
+  const [waiting, setWaiting] = useState(false);
   const [dismissed, setDismissed] = useState(false);
   const [updating, setUpdating] = useState(false);
+  const [confirmed, setConfirmed] = useState(updateWasApplied);
 
-  if (!needRefresh || dismissed) return null;
+  // Confirm the update on the other side of the reload, so the banner vanishing
+  // reads as "that worked" rather than "that gave up".
+  useEffect(() => {
+    if (!confirmed) return;
+    const timer = window.setTimeout(() => setConfirmed(false), CONFIRMATION_MS);
+    return () => window.clearTimeout(timer);
+  }, [confirmed]);
+
+  // `needRefresh` can outlive the worker it refers to: a worker that activates
+  // itself leaves nothing to skip, and the banner would then offer a button
+  // with no work to do. Only offer the update while a worker is really waiting,
+  // and retract the banner if that worker goes away on its own.
+  useEffect(() => {
+    if (!needRefresh || updating) return;
+    let cancelled = false;
+    const check = async () => {
+      const found = await hasWaitingWorker();
+      if (!cancelled) setWaiting(found);
+    };
+    void check();
+    const id = window.setInterval(() => void check(), WAITING_POLL_MS);
+    return () => {
+      cancelled = true;
+      window.clearInterval(id);
+    };
+  }, [needRefresh, updating]);
 
   const handleUpdate = async () => {
     setUpdating(true);
     try {
-      await updateServiceWorker(true);
+      await applyUpdate(browserUpdateEnvironment());
     } catch {
-      /* fall through to the reload below */
+      window.location.reload();
     }
-    window.setTimeout(() => window.location.reload(), RELOAD_FALLBACK_MS);
   };
 
+  if (confirmed) {
+    return (
+      <div
+        role="status"
+        aria-live="polite"
+        className="fixed bottom-20 left-4 right-4 z-[70] motion-safe:animate-[slideUp_0.3s_ease-out] glass rounded-2xl shadow-lg border border-slate-200/60 dark:border-white/10 p-4"
+      >
+        <p className="text-sm font-medium text-slate-800 dark:text-slate-100">
+          You&rsquo;re on the latest version ✓
+        </p>
+      </div>
+    );
+  }
+
+  if (!needRefresh || !waiting || dismissed) return null;
+
   return (
-    <div className="fixed bottom-20 left-4 right-4 z-[70] animate-[slideUp_0.3s_ease-out] glass rounded-2xl shadow-lg border border-slate-200/60 dark:border-white/10 p-4">
+    <div
+      role="status"
+      aria-live="polite"
+      className="fixed bottom-20 left-4 right-4 z-[70] motion-safe:animate-[slideUp_0.3s_ease-out] glass rounded-2xl shadow-lg border border-slate-200/60 dark:border-white/10 p-4"
+    >
       <p className="text-sm font-medium text-slate-800 dark:text-slate-100">
         A new version is available
       </p>
@@ -38,14 +91,15 @@ export default function UpdateToast() {
           type="button"
           onClick={handleUpdate}
           disabled={updating}
-          className="fill-primary text-white rounded-xl press-feedback px-3 py-1.5 text-sm font-medium disabled:opacity-70"
+          className="fill-primary text-white rounded-xl press-feedback px-4 min-h-[44px] text-sm font-medium disabled:opacity-70"
         >
           {updating ? 'Updating…' : 'Update'}
         </button>
         <button
           type="button"
           onClick={() => setDismissed(true)}
-          className="rounded-xl px-3 py-1.5 text-sm font-medium text-slate-600 hover:bg-slate-100 dark:text-slate-300 dark:hover:bg-slate-700 press-feedback"
+          disabled={updating}
+          className="rounded-xl px-4 min-h-[44px] text-sm font-medium text-slate-600 hover:bg-slate-100 dark:text-slate-300 dark:hover:bg-slate-700 press-feedback disabled:opacity-70"
         >
           Later
         </button>
