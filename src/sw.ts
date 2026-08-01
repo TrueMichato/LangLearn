@@ -522,9 +522,15 @@ self.addEventListener('notificationclick', (event: NotificationEvent) => {
   );
 });
 
-// ─── Skip waiting on install for faster updates ───
-self.addEventListener('install', () => {
-  void self.skipWaiting();
+// ─── Update lifecycle (registerType: 'prompt') ───
+// The worker must stay in the waiting state until the user accepts the update
+// toast. Calling skipWaiting() on install would self-activate the worker, so
+// registration.waiting would already be null by the time the user clicks
+// "Update" and workbox's messageSkipWaiting() would be a no-op.
+self.addEventListener('message', (event) => {
+  if (event.data?.type === 'SKIP_WAITING') {
+    void self.skipWaiting();
+  }
 });
 
 self.addEventListener('activate', (event) => {
