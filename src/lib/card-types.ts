@@ -31,3 +31,19 @@ export function shuffle<T>(arr: T[]): T[] {
   }
   return result;
 }
+
+/**
+ * Whether a context sentence would give the answer away on the question side.
+ *
+ * Words captured from grammar lessons used to store `word (reading) — meaning`
+ * as their context, which `Flashcard` prints under the prompt — so the English
+ * meaning appeared directly beneath the word being tested. New captures no
+ * longer do this, but decks built before the fix still contain such rows, so
+ * the card checks at render time rather than trusting the stored data.
+ */
+export function contextRevealsAnswer(contextSentence: string, meaning: string): boolean {
+  const context = contextSentence.trim().toLowerCase();
+  const answer = meaning.trim().toLowerCase();
+  if (!context || !answer) return false;
+  return context.includes(answer);
+}
