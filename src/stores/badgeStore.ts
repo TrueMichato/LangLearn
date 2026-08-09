@@ -31,6 +31,17 @@ export const useBadgeStore = create<BadgeState>()(
     {
       name: 'langlearn-badges',
       storage: createJSONStorage(() => localStorage),
+      // Badges are a permanent record of what the learner achieved. Version the
+      // store so a shape change migrates them forward instead of quietly
+      // resetting the collection to empty.
+      version: 1,
+      migrate: (persisted) => {
+        const state = (persisted ?? {}) as Partial<BadgeState>;
+        return {
+          ...state,
+          unlockedBadges: state.unlockedBadges ?? {},
+        };
+      },
     }
   )
 );

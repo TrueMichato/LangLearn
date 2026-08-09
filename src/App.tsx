@@ -5,6 +5,8 @@ import OnboardingOverlay from './components/onboarding/OnboardingOverlay';
 import { useSettingsStore } from './stores/settingsStore';
 import ErrorBoundary from './components/common/ErrorBoundary';
 import UpdateToast from './components/common/UpdateToast';
+import DbRecoveryScreen from './components/common/DbRecoveryScreen';
+import { useDatabaseBoot } from './hooks/useDatabaseBoot';
 import { ROUTES } from './lib/routes';
 
 const Dashboard = lazy(() => import('./pages/Dashboard'));
@@ -32,6 +34,14 @@ const DialectsPage = lazy(() => import('./pages/Dialects'));
 
 export default function App() {
   const onboardingComplete = useSettingsStore((s) => s.onboardingComplete);
+  const { status, dismissRecovery } = useDatabaseBoot();
+
+  // Rendering the app against a database that failed to open produces a blank
+  // screen and a learner who reasonably concludes their data is gone. Show them
+  // what actually happened, and how to get back, instead.
+  if (status.kind !== 'ready' && status.kind !== 'opening') {
+    return <DbRecoveryScreen status={status} onDismiss={dismissRecovery} />;
+  }
 
   return (
     <ErrorBoundary>

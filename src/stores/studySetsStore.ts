@@ -97,6 +97,13 @@ export const useStudySetsStore = create<StudySetsState>()(
     {
       name: 'langlearn-study-sets',
       storage: createJSONStorage(() => localStorage),
+      // Study sets are learner-authored content. Version the store so a shape
+      // change migrates them rather than discarding sets the learner built.
+      version: 1,
+      migrate: (persisted) => {
+        const state = (persisted ?? {}) as Partial<StudySetsState>;
+        return { ...state, sets: Array.isArray(state.sets) ? state.sets : [] };
+      },
     }
   )
 );

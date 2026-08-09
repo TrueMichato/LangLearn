@@ -202,6 +202,16 @@ export const useSettingsStore = create<SettingsState>()(
     {
       name: 'langlearn-settings',
       storage: createJSONStorage(() => localStorage),
+      // Versioned so future field changes migrate rather than dropping the
+      // learner back to defaults. `merge` keeps unknown persisted keys and
+      // fills in fields added since the snapshot was written, so a new setting
+      // never wipes the ones already there.
+      version: 1,
+      migrate: (persisted) => (persisted ?? {}) as Partial<SettingsState>,
+      merge: (persisted, current) => ({
+        ...current,
+        ...(persisted as Partial<SettingsState>),
+      }),
     }
   )
 );
