@@ -19,7 +19,7 @@ Arabic can describe a noun with a full clause. The main choice is whether the no
 
 After an indefinite noun, Arabic can attach a clause directly: سَمِعْتُ صَوْتًا يَأْتِي مِنَ الْحَدِيقَةِ (samiʿtu ṣawtan yaʾtī mina al-ḥadīqati) — I heard a sound coming from the garden. There is no الَّذِي (alladhī) because صَوْتًا (ṣawtan) — a sound is indefinite.
 
-<!-- grammar-card: {"rule":"An indefinite noun can be described by a following clause without a relative pronoun.","hint":"No الَّذِي after an indefinite noun like طَالِبًا.","example":"Complete “a student who reads”: طَالِبٌ ___ (yaqraʾu).","answer":"يَقْرَأُ (yaqraʾu) — he reads","explanation":"طَالِبٌ يَقْرَأُ uses a clause as a ṣifa because طَالِبٌ is indefinite."} -->
+<!-- grammar-card: {"rule":"An indefinite noun can be described by a following clause without a relative pronoun.","hint":"No الَّذِي after an indefinite noun like طَالِبًا.","example":"Complete “a student who reads”: طَالِبٌ ___ (yaqraʾu).","answer":"يَقْرَأُ","explanation":"he reads — طَالِبٌ يَقْرَأُ uses a clause as a ṣifa because طَالِبٌ is indefinite."} -->
 
 ## Definite nouns: relative pronouns and return pronouns
 
@@ -33,7 +33,7 @@ With a definite noun, use a relative pronoun: هَذَا هُوَ الْكِتَ
 
 <!-- quiz: {"type":"multiple-choice","question":"Which relative pronoun fits الْقِصَّةُ (al-qiṣṣatu) — the story?","options":["الَّتِي (allatī) — which feminine singular","الَّذِي (alladhī) — which masculine singular","الَّذِينَ (alladhīna) — who masculine plural","مَنْ (man) — who"],"answer":0} -->
 
-<!-- grammar-card: {"rule":"A definite noun normally takes a relative pronoun before a descriptive clause.","hint":"Definite الْكِتَابُ needs الَّذِي before the clause.","example":"Complete “the book that I read”: الْكِتَابُ ___ قَرَأْتُهُ (alladhī).","answer":"الَّذِي (alladhī) — which masculine singular","explanation":"الْكِتَابُ الَّذِي قَرَأْتُهُ uses الَّذِي because الْكِتَابُ is definite and masculine singular."} -->
+<!-- grammar-card: {"rule":"A definite noun normally takes a relative pronoun before a descriptive clause.","hint":"Definite الْكِتَابُ needs الَّذِي before the clause.","example":"Complete “the book that I read”: الْكِتَابُ ___ قَرَأْتُهُ (alladhī).","answer":"الَّذِي","explanation":"which masculine singular — الْكِتَابُ الَّذِي قَرَأْتُهُ uses الَّذِي because الْكِتَابُ is definite and masculine singular."} -->
 
 ## Sources
 

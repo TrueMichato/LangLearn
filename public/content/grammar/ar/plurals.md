@@ -21,7 +21,7 @@ Sound masculine plurals often end in **ـُونَ** (-ūna) — nominative plura
 
 Broken plurals often need to be memorized with the noun. That is normal. Learn **بَيْتٌ** (baytun) — house with **بُيُوتٌ** (buyūtun) — houses, and **قَلَمٌ** (qalamun) — pen with **أَقْلَامٌ** (aqlāmun) — pens.
 
-<!-- grammar-card: {"rule": "Sound feminine plurals commonly use ـَاتٌ (-ātun) in the nominative.", "hint": "Often add -āt to feminine nouns.", "example": "Complete “female teachers”: مُعَلِّم___ (muʿallim___).", "answer": "ـَاتٌ (-ātun) — sound feminine plural ending", "explanation": "مُعَلِّمَاتٌ (muʿallimātun) — female teachers uses the sound feminine plural."} -->
+<!-- grammar-card: {"rule":"Sound feminine plurals commonly use ـَاتٌ (-ātun) in the nominative.","hint":"Often add -āt to feminine nouns.","example":"Complete “female teachers”: مُعَلِّم___ (muʿallim___).","answer":"ـَاتٌ (-ātun)","explanation":"sound feminine plural ending — مُعَلِّمَاتٌ (muʿallimātun) — female teachers uses the sound feminine plural."} -->
 
 ## Practice patterns
 
@@ -34,7 +34,7 @@ Human plurals usually use plural agreement.
 
 <!-- quiz: {"type": "multiple-choice", "question": "Which ending marks sound masculine nominative plural?", "options": ["ـَاتٌ (-ātun)", "ـُونَ (-ūna)", "ـَيْنِ (-ayni)", "ـةٌ (-atun)"], "answer": 1} -->
 
-<!-- grammar-card: {"rule": "Broken plurals change the internal pattern of the noun.", "hint": "Memorize them with the singular.", "example": "The plural of قَلَمٌ (qalamun) — pen is ___ .", "answer": "أَقْلَامٌ (aqlāmun) — pens", "explanation": "أَقْلَامٌ (aqlāmun) — pens is a broken plural; the inside pattern changes."} -->
+<!-- grammar-card: {"rule":"Broken plurals change the internal pattern of the noun.","hint":"Memorize them with the singular.","example":"The plural of قَلَمٌ (qalamun) — pen is ___ .","answer":"أَقْلَامٌ (aqlāmun)","explanation":"أَقْلَامٌ (aqlāmun) — pens is a broken plural; the inside pattern changes."} -->
 
 ## Sources
 

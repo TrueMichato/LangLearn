@@ -21,7 +21,7 @@ The comparative pattern is **أَفْعَلُ** (afʿalu) — more / most patter
 
 Comparatives usually do not change for gender in the simple “more than” structure: **فَاطِمَةُ أَذْكَى مِنْ خَالِدٍ** (fāṭimatu adhkā min khālidin) — Fatima is smarter than Khalid.
 
-<!-- grammar-card: {"rule": "The comparative often uses أَفْعَلُ (afʿalu) plus مِنْ (min) — than.", "hint": "More X than...", "example": "Complete “bigger than the house”: أَكْبَرُ ___ الْبَيْتِ (akbaru ___ al-bayti).", "answer": "مِنْ (min) — than / from", "explanation": "أَكْبَرُ مِنَ الْبَيْتِ (akbaru mina al-bayti) — bigger than the house."} -->
+<!-- grammar-card: {"rule":"The comparative often uses أَفْعَلُ (afʿalu) plus مِنْ (min) — than.","hint":"More X than...","example":"Complete “bigger than the house”: أَكْبَرُ ___ الْبَيْتِ (akbaru ___ al-bayti).","answer":"مِنْ (min)","explanation":"than / from — أَكْبَرُ مِنَ الْبَيْتِ (akbaru mina al-bayti) — bigger than the house."} -->
 
 ## Practice patterns
 
@@ -33,7 +33,7 @@ Superlative patterns:
 
 <!-- quiz: {"type": "multiple-choice", "question": "What is the comparative of جَيِّدٌ (jayyidun) — good?", "options": ["أَفْضَلُ (afḍalu) — better / best", "أَكْبَرُ (akbaru) — bigger / biggest", "أَصْغَرُ (aṣgharu) — smaller / smallest", "جَدِيدٌ (jadīdun) — new"], "answer": 0} -->
 
-<!-- grammar-card: {"rule": "In an iḍāfa-like superlative, the following noun is genitive.", "hint": "Best student = best of student/group.", "example": "Complete “the best student”: أَفْضَلُ ___ (afḍalu ___).", "answer": "طَالِبٍ (ṭālibin) — student, genitive indefinite", "explanation": "أَفْضَلُ طَالِبٍ (afḍalu ṭālibin) — the best student uses a genitive noun after the superlative."} -->
+<!-- grammar-card: {"rule":"In an iḍāfa-like superlative, the following noun is genitive.","hint":"Best student = best of student/group.","example":"Complete “the best student”: أَفْضَلُ ___ (afḍalu ___).","answer":"طَالِبٍ (ṭālibin)","explanation":"student, genitive indefinite — أَفْضَلُ طَالِبٍ (afḍalu ṭālibin) — the best student uses a genitive noun after the superlative."} -->
 
 ## Sources
 

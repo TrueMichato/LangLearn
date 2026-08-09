@@ -21,7 +21,7 @@ A nominal sentence usually begins with a subject, the **مُبْتَدَأٌ** (
 
 The subject is often definite, like **الْبَيْتُ** (al-baytu) — the house, while the predicate is often indefinite, like **كَبِيرٌ** (kabīrun) — big. That contrast helps Arabic say “the house is big” rather than “the big house.”
 
-<!-- grammar-card: {"rule": "Present-tense Arabic nominal sentences usually omit the verb “to be.”", "hint": "Subject + predicate can be a complete sentence.", "example": "Translate “The book is new”: الْكِتَابُ ___ (al-kitābu ___).", "answer": "جَدِيدٌ (jadīdun) — new", "explanation": "الْكِتَابُ جَدِيدٌ (al-kitābu jadīdun) — the book is new uses no separate word for “is.”"} -->
+<!-- grammar-card: {"rule":"Present-tense Arabic nominal sentences usually omit the verb “to be.”","hint":"Subject + predicate can be a complete sentence.","example":"Translate “The book is new”: الْكِتَابُ ___ (al-kitābu ___).","answer":"جَدِيدٌ (jadīdun)","explanation":"الْكِتَابُ جَدِيدٌ (al-kitābu jadīdun) — the book is new uses no separate word for “is.”"} -->
 
 ## Practice patterns
 
@@ -34,7 +34,7 @@ The second example is a full sentence because the predicate is indefinite.
 
 <!-- quiz: {"type": "multiple-choice", "question": "Which phrase means “the big house,” not “the house is big”?", "options": ["الْبَيْتُ كَبِيرٌ (al-baytu kabīrun) — the house is big", "الْبَيْتُ الْكَبِيرُ (al-baytu al-kabīru) — the big house", "أَنَا طَالِبٌ (anā ṭālibun) — I am a student", "هِيَ مُدَرِّسَةٌ (hiya mudarrisatun) — she is a teacher"], "answer": 1} -->
 
-<!-- grammar-card: {"rule": "A definite noun plus a definite adjective is usually a noun phrase, not a full “is” sentence.", "hint": "Definite + definite = “the big house.”", "example": "“The big house” is الْبَيْتُ ___ (al-baytu ___).", "answer": "الْكَبِيرُ (al-kabīru) — the big", "explanation": "الْبَيْتُ الْكَبِيرُ (al-baytu al-kabīru) — the big house has both noun and adjective definite."} -->
+<!-- grammar-card: {"rule":"A definite noun plus a definite adjective is usually a noun phrase, not a full “is” sentence.","hint":"Definite + definite = “the big house.”","example":"“The big house” is الْبَيْتُ ___ (al-baytu ___).","answer":"الْكَبِيرُ (al-kabīru)","explanation":"الْبَيْتُ الْكَبِيرُ (al-baytu al-kabīru) — the big house has both noun and adjective definite."} -->
 
 ## Sources
 

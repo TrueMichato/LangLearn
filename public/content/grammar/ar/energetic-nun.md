@@ -25,7 +25,7 @@ Energetic forms are formal and rhetorical. They are common in Qurʾānic, litera
 
 When a verb already has a strong context, the energetic nūn makes the force explicit: لَا تَخُونَنَّ الْأَمَانَةَ (lā takhūnanna al-amānata) — Do not ever betray the trust.
 
-<!-- grammar-card: {"rule":"نُونُ التَّوْكِيدِ الثَّقِيلَةُ (-nna) strongly emphasizes a present verb or command.","hint":"Look for final نَّ after the verb.","example":"Complete: I will surely travel: لَ___ (la-___).","answer":"أُسَافِرَنَّ (usāfiranna) — I will surely travel","explanation":"لَأُسَافِرَنَّ (la-usāfiranna) uses the oath-like لَـ plus final نَّ to make the promise emphatic."} -->
+<!-- grammar-card: {"rule":"نُونُ التَّوْكِيدِ الثَّقِيلَةُ (-nna) strongly emphasizes a present verb or command.","hint":"Look for final نَّ after the verb.","example":"Complete: I will surely travel: لَ___ (la-___).","answer":"أُسَافِرَنَّ (usāfiranna)","explanation":"I will surely travel — لَأُسَافِرَنَّ (la-usāfiranna) uses the oath-like لَـ plus final نَّ to make the promise emphatic."} -->
 
 ## Practice patterns
 
@@ -38,7 +38,7 @@ Compare the plain verb with the emphatic verb:
 
 <!-- quiz: {"type":"multiple-choice","question":"Which sentence contains nūn al-tawkīd?","options":["لَا تُهْمِلَنَّ الْوَقْتَ (lā tuhmilanna al-waqta) — Do not neglect time","لَا تُهْمِلُ الْوَقْتَ (lā tuhmilu al-waqta) — You do not neglect time","أَهْمَلَ الْوَقْتَ (ahmala al-waqta) — He neglected time","سَيُهْمِلُ الْوَقْتَ (sayuhmilu al-waqta) — He will neglect time"],"answer":0} -->
 
-<!-- grammar-card: {"rule":"The prefix لَـ often accompanies energetic verbs in oaths and solemn promises.","hint":"لَـ plus final نَّ gives very strong certainty.","example":"Complete: We will certainly help: لَ___ (la-___).","answer":"نُسَاعِدَنَّ (nusāʿidanna) — we will certainly help","explanation":"لَنُسَاعِدَنَّ (la-nusāʿidanna) combines لَـ and نَّ to mark an emphatic promise."} -->
+<!-- grammar-card: {"rule":"The prefix لَـ often accompanies energetic verbs in oaths and solemn promises.","hint":"لَـ plus final نَّ gives very strong certainty.","example":"Complete: We will certainly help: لَ___ (la-___).","answer":"نُسَاعِدَنَّ (nusāʿidanna)","explanation":"we will certainly help — لَنُسَاعِدَنَّ (la-nusāʿidanna) combines لَـ and نَّ to mark an emphatic promise."} -->
 
 ## Watch out
 
@@ -46,7 +46,7 @@ Do not confuse energetic نَّ with the feminine plural ending ـنَ in forms 
 
 <!-- quiz: {"type":"multiple-choice","question":"Which translation best fits لَا تَخُونَنَّ الْأَمَانَةَ (lā takhūnanna al-amānata)?","options":["Do not ever betray the trust","You did not betray the trust","The trust was betrayed","Will you betray the trust?"],"answer":0} -->
 
-<!-- grammar-card: {"rule":"In prohibitions, نُونُ التَّوْكِيدِ makes the negative command more urgent.","hint":"لَا plus verb plus نَّ can mean do not ever do it.","example":"Complete: Do not ever betray: لَا ___ (lā ___).","answer":"تَخُونَنَّ (takhūnanna) — do not ever betray","explanation":"لَا تَخُونَنَّ (lā takhūnanna) is stronger than a plain prohibition and sounds solemn or literary."} -->
+<!-- grammar-card: {"rule":"In prohibitions, نُونُ التَّوْكِيدِ makes the negative command more urgent.","hint":"لَا plus verb plus نَّ can mean do not ever do it.","example":"Complete: Do not ever betray: لَا ___ (lā ___).","answer":"تَخُونَنَّ (takhūnanna)","explanation":"do not ever betray — لَا تَخُونَنَّ (lā takhūnanna) is stronger than a plain prohibition and sounds solemn or literary."} -->
 
 ## Sources
 

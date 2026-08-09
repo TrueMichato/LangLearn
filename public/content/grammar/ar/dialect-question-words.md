@@ -26,7 +26,7 @@ MSA places مَاذَا (mādhā) or مَا (mā) according to the style and sen
 - إِنْتَ عَايِزْ إِيهْ؟ (inta ʿāyiz ēh) — What do you want? Egyptian.
 - شُو بَدَّكْ؟ (shū baddak) — What do you want? Levantine.
 
-<!-- grammar-card: {"rule":"Egyptian إِيهْ (ēh) and Levantine شُو (shū) often correspond to MSA مَاذَا (mādhā).","hint":"They ask what, but they belong to different registers.","example":"Match the dialect form for what in Egyptian: إِنْتَ عَايِزْ ___؟ (inta ʿāyiz ___).","answer":"إِيهْ (ēh) — what","explanation":"إِنْتَ عَايِزْ إِيهْ is Egyptian for What do you want? In MSA, use مَاذَا تُرِيدُ؟"} -->
+<!-- grammar-card: {"rule":"Egyptian إِيهْ (ēh) and Levantine شُو (shū) often correspond to MSA مَاذَا (mādhā).","hint":"They ask what, but they belong to different registers.","example":"Match the dialect form for what in Egyptian: إِنْتَ عَايِزْ ___؟ (inta ʿāyiz ___).","answer":"إِيهْ (ēh)","explanation":"إِنْتَ عَايِزْ إِيهْ is Egyptian for What do you want? In MSA, use مَاذَا تُرِيدُ؟"} -->
 
 ## Where, why, and how
 
@@ -38,7 +38,7 @@ Many dialects use وَيْنْ (wēn) for where and لَيْشْ (lēsh) for why
 
 <!-- quiz: {"type":"multiple-choice","question":"Which dialect form commonly corresponds to MSA لِمَاذَا (limādhā)?","options":["لَيْشْ (lēsh)","وَيْنْ (wēn)","فِينْ (fēn)","كِيفْ (kīf)"],"answer":0} -->
 
-<!-- grammar-card: {"rule":"وَيْنْ (wēn) commonly corresponds to MSA أَيْنَ (ayna), while لَيْشْ (lēsh) corresponds to لِمَاذَا (limādhā).","hint":"Where and why are easy to confuse when learning dialects quickly.","example":"Choose the dialect word for why: ___ تَأَخَّرْتَ؟ (___ taʾakhkharta).","answer":"لَيْشْ (lēsh) — why","explanation":"لَيْشْ تَأَخَّرْتَ means Why were you late? In MSA, say لِمَاذَا تَأَخَّرْتَ؟"} -->
+<!-- grammar-card: {"rule":"وَيْنْ (wēn) commonly corresponds to MSA أَيْنَ (ayna), while لَيْشْ (lēsh) corresponds to لِمَاذَا (limādhā).","hint":"Where and why are easy to confuse when learning dialects quickly.","example":"Choose the dialect word for why: ___ تَأَخَّرْتَ؟ (___ taʾakhkharta).","answer":"لَيْشْ (lēsh)","explanation":"لَيْشْ تَأَخَّرْتَ means Why were you late? In MSA, say لِمَاذَا تَأَخَّرْتَ؟"} -->
 
 ## Register control
 
@@ -49,7 +49,7 @@ Use dialect forms when speaking a dialect or quoting dialogue. Use MSA forms in 
 
 <!-- quiz: {"type":"multiple-choice","question":"Which form is the formal MSA question word for how?","options":["كَيْفَ (kayfa)","إِزَّايْ (izzāy)","شُلُونْ (shlōn)","كِيفْ (kīf) as a dialect form only"],"answer":0} -->
 
-<!-- grammar-card: {"rule":"Keep MSA question words for formal Arabic, and dialect question words for regional speech.","hint":"Register matters as much as meaning.","example":"Choose the MSA form for where: ___ الْمَكْتَبُ؟ (___ al-maktabu).","answer":"أَيْنَ (ayna) — where","explanation":"أَيْنَ الْمَكْتَبُ؟ is formal MSA. Dialects may use وَيْنْ or فِينْ instead."} -->
+<!-- grammar-card: {"rule":"Keep MSA question words for formal Arabic, and dialect question words for regional speech.","hint":"Register matters as much as meaning.","example":"Choose the MSA form for where: ___ الْمَكْتَبُ؟ (___ al-maktabu).","answer":"أَيْنَ (ayna)","explanation":"where — أَيْنَ الْمَكْتَبُ؟ is formal MSA. Dialects may use وَيْنْ or فِينْ instead."} -->
 
 ## Sources
 

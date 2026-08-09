@@ -22,7 +22,7 @@ The basic sentence **الْبَيْتُ كَبِيرٌ** (al-baytu kabīrun) —
 
 In fully formal grammar, these particles are “inna and her sisters.” Their key pattern is: particle + accusative subject + nominative predicate.
 
-<!-- grammar-card: {"rule": "إِنَّ (inna) — indeed makes the following subject accusative, while the predicate remains nominative.", "hint": "Inna + noun-a + predicate-un.", "example": "Complete “Indeed, the lesson is easy”: إِنَّ الدَّرْسَ ___ (inna ad-darsa ___).", "answer": "سَهْلٌ (sahlun) — easy, nominative", "explanation": "إِنَّ الدَّرْسَ سَهْلٌ (inna ad-darsa sahlun) — indeed, the lesson is easy keeps the predicate nominative."} -->
+<!-- grammar-card: {"rule":"إِنَّ (inna) — indeed makes the following subject accusative, while the predicate remains nominative.","hint":"Inna + noun-a + predicate-un.","example":"Complete “Indeed, the lesson is easy”: إِنَّ الدَّرْسَ ___ (inna ad-darsa ___).","answer":"سَهْلٌ (sahlun)","explanation":"easy, nominative — إِنَّ الدَّرْسَ سَهْلٌ (inna ad-darsa sahlun) — indeed, the lesson is easy keeps the predicate nominative."} -->
 
 ## Practice patterns
 
@@ -33,7 +33,7 @@ Compare with kāna:
 
 <!-- quiz: {"type": "multiple-choice", "question": "Which sentence means “Indeed, the book is useful”?", "options": ["إِنَّ الْكِتَابَ مُفِيدٌ (inna al-kitāba mufīdun) — indeed, the book is useful", "كَانَ الْكِتَابُ مُفِيدًا (kāna al-kitābu mufīdan) — the book was useful", "لَمْ الْكِتَابُ مُفِيدٌ (lam al-kitābu mufīdun)", "الْكِتَابَ مُفِيدٌ (al-kitāba mufīdun)"], "answer": 0} -->
 
-<!-- grammar-card: {"rule": "لٰكِنَّ (lākinna) — but / however is one of inna’s sisters.", "hint": "It also takes an accusative subject.", "example": "Complete “but the time is short”: لٰكِنَّ الْوَقْتَ ___ (lākinna al-waqta ___).", "answer": "قَصِيرٌ (qaṣīrun) — short, nominative", "explanation": "لٰكِنَّ الْوَقْتَ قَصِيرٌ (lākinna al-waqta qaṣīrun) — but the time is short follows the inna-sister pattern."} -->
+<!-- grammar-card: {"rule":"لٰكِنَّ (lākinna) — but / however is one of inna’s sisters.","hint":"It also takes an accusative subject.","example":"Complete “but the time is short”: لٰكِنَّ الْوَقْتَ ___ (lākinna al-waqta ___).","answer":"قَصِيرٌ (qaṣīrun)","explanation":"short, nominative — لٰكِنَّ الْوَقْتَ قَصِيرٌ (lākinna al-waqta qaṣīrun) — but the time is short follows the inna-sister pattern."} -->
 
 ## Sources
 

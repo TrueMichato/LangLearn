@@ -22,7 +22,7 @@ The **جَمْعُ التَّكْسِيرِ** (jamʿ at-taksīr) — broken plur
 
 Non-human broken plurals often take feminine singular agreement. Arabic says **الْكُتُبُ جَدِيدَةٌ** (al-kutubu jadīdatun) — the books are new, using **جَدِيدَةٌ** (jadīdatun) — feminine singular “new.”
 
-<!-- grammar-card: {"rule":"Many non-human broken plurals use feminine singular agreement.","hint":"Books can be grammatically “she” in plural agreement.","example":"Complete “the books are new”: الْكُتُبُ ___ (al-kutubu ___).","answer":"جَدِيدَةٌ (jadīdatun) — new","explanation":"الْكُتُبُ جَدِيدَةٌ (al-kutubu jadīdatun) uses feminine singular agreement because كُتُبٌ (kutubun) is a non-human broken plural."} -->
+<!-- grammar-card: {"rule":"Many non-human broken plurals use feminine singular agreement.","hint":"Books can be grammatically “she” in plural agreement.","example":"Complete “the books are new”: الْكُتُبُ ___ (al-kutubu ___).","answer":"جَدِيدَةٌ (jadīdatun)","explanation":"new — الْكُتُبُ جَدِيدَةٌ (al-kutubu jadīdatun) uses feminine singular agreement because كُتُبٌ (kutubun) is a non-human broken plural."} -->
 
 ## Practice patterns
 
@@ -34,7 +34,7 @@ A few common broken plural shapes appear again and again:
 
 <!-- quiz: {"type":"multiple-choice","question":"Which sentence uses typical non-human broken plural agreement?","options":["الْكُتُبُ جَدِيدَةٌ (al-kutubu jadīdatun) — the books are new","الْكُتُبُ جَدِيدُونَ (al-kutubu jadīdūna) — the books are male-new","الْكِتَابُ جَدِيدَةٌ (al-kitābu jadīdatun) — the book is feminine-new","الْكُتُبُ كِتَابٌ (al-kutubu kitābun) — the books are a book"],"answer":0} -->
 
-<!-- grammar-card: {"rule":"Broken plurals should be learned with their singular nouns because patterns are common but not fully predictable.","hint":"Memorize كِتَابٌ with كُتُبٌ.","example":"Complete “books”: كِتَابٌ (kitābun) → ___ (kutubun).","answer":"كُتُبٌ (kutubun) — books","explanation":"كُتُبٌ (kutubun) is the broken plural of كِتَابٌ (kitābun) — book."} -->
+<!-- grammar-card: {"rule":"Broken plurals should be learned with their singular nouns because patterns are common but not fully predictable.","hint":"Memorize كِتَابٌ with كُتُبٌ.","example":"Complete “books”: كِتَابٌ (kitābun) → ___ (kutubun).","answer":"كُتُبٌ","explanation":"books — كُتُبٌ (kutubun) is the broken plural of كِتَابٌ (kitābun) — book."} -->
 
 ## Sources
 

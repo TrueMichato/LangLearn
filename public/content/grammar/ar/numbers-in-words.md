@@ -22,7 +22,7 @@ The **التَّفْقِيطُ** (at-tafqīṭ) — writing numbers in words fol
 
 For 3–10, masculine counted nouns usually take a number with **تَاءٌ مَرْبُوطَةٌ** (tāʾ marbūṭatun) — tied tāʾ, while feminine counted nouns usually take a number without that ending: **خَمْسَةُ أَقْلَامٍ** (khamsatu aqlāmin) — five pens, but **خَمْسُ صَفَحَاتٍ** (khamsu ṣafaḥātin) — five pages.
 
-<!-- grammar-card: {"rule":"Numbers 3–10 usually show polarity: the number has the opposite grammatical gender from the counted noun.","hint":"كِتَابٌ is masculine, so use ثَلَاثَةُ.","example":"Complete “three books”: ___ كُتُبٍ (___ kutubin).","answer":"ثَلَاثَةُ (thalāthatu) — three","explanation":"ثَلَاثَةُ كُتُبٍ (thalāthatu kutubin) uses a feminine-looking number with a masculine counted noun."} -->
+<!-- grammar-card: {"rule":"Numbers 3–10 usually show polarity: the number has the opposite grammatical gender from the counted noun.","hint":"كِتَابٌ is masculine, so use ثَلَاثَةُ.","example":"Complete “three books”: ___ كُتُبٍ (___ kutubin).","answer":"ثَلَاثَةُ (thalāthatu)","explanation":"three — ثَلَاثَةُ كُتُبٍ (thalāthatu kutubin) uses a feminine-looking number with a masculine counted noun."} -->
 
 ## Practice patterns
 
@@ -34,7 +34,7 @@ For 11–99, the counted noun is usually singular accusative, even when English 
 
 <!-- quiz: {"type":"multiple-choice","question":"After many numbers from 11 to 99, what form does the counted noun usually take?","options":["singular accusative","dual nominative","definite plural only","jussive verb"],"answer":0} -->
 
-<!-- grammar-card: {"rule":"For 11–99, the counted noun is usually singular accusative tamyīz.","hint":"Twenty books uses كِتَابًا, not كُتُبٍ.","example":"Complete “thirty cities”: ثَلَاثُونَ ___ (thalāthūna ___).","answer":"مَدِينَةً (madīnatan) — cities as a singular specification","explanation":"ثَلَاثُونَ مَدِينَةً (thalāthūna madīnatan) uses singular accusative مَدِينَةً (madīnatan) after the number."} -->
+<!-- grammar-card: {"rule":"For 11–99, the counted noun is usually singular accusative tamyīz.","hint":"Twenty books uses كِتَابًا, not كُتُبٍ.","example":"Complete “thirty cities”: ثَلَاثُونَ ___ (thalāthūna ___).","answer":"مَدِينَةً (madīnatan)","explanation":"cities as a singular specification — ثَلَاثُونَ مَدِينَةً (thalāthūna madīnatan) uses singular accusative مَدِينَةً (madīnatan) after the number."} -->
 
 ## Sources
 

@@ -35,7 +35,7 @@ Place words such as أَمَامَ (amāma) — in front of, خَلْفَ (khalf
 
 <!-- quiz: {"type":"multiple-choice","question":"Why is الْكُرْسِيِّ genitive in تَحْتَ الْكُرْسِيِّ (taḥta al-kursiyyi)?","options":["Because تَحْتَ forms an iḍāfa with the following noun","Because every subject is genitive","Because it is the direct object","Because تَحْتَ is a past-tense verb"],"answer":0} -->
 
-<!-- grammar-card: {"rule":"Many place adverbials form iḍāfa, so the noun after them is genitive.","hint":"After فَوْقَ, تَحْتَ, أَمَامَ, and خَلْفَ, expect genitive endings.","example":"Complete: under the chair: تَحْتَ ___ (taḥta ___).","answer":"الْكُرْسِيِّ (al-kursiyyi) — the chair","explanation":"تَحْتَ الْكُرْسِيِّ is an iḍāfa-like place expression, so الْكُرْسِيِّ is genitive."} -->
+<!-- grammar-card: {"rule":"Many place adverbials form iḍāfa, so the noun after them is genitive.","hint":"After فَوْقَ, تَحْتَ, أَمَامَ, and خَلْفَ, expect genitive endings.","example":"Complete: under the chair: تَحْتَ ___ (taḥta ___).","answer":"الْكُرْسِيِّ (al-kursiyyi)","explanation":"the chair — تَحْتَ الْكُرْسِيِّ is an iḍāfa-like place expression, so الْكُرْسِيِّ is genitive."} -->
 
 ## Meaning over word class
 

@@ -22,7 +22,7 @@ The two most important near demonstratives are **هٰذَا** (hādhā) — this
 
 With a definite noun, demonstratives can form a phrase like “this book”: **هٰذَا الْكِتَابُ** (hādhā al-kitābu) — this book. With an indefinite noun, they form a sentence: **هٰذَا كِتَابٌ** (hādhā kitābun) — this is a book.
 
-<!-- grammar-card: {"rule": "هٰذَا (hādhā) — this, masculine pairs with masculine singular nouns.", "hint": "Use it with كِتَابٌ (kitābun) — book.", "example": "Complete: ___ كِتَابٌ (kitābun) — this is a book.", "answer": "هٰذَا (hādhā) — this, masculine", "explanation": "هٰذَا كِتَابٌ (hādhā kitābun) — this is a book uses the masculine demonstrative."} -->
+<!-- grammar-card: {"rule":"هٰذَا (hādhā) — this, masculine pairs with masculine singular nouns.","hint":"Use it with كِتَابٌ (kitābun) — book.","example":"Complete: ___ كِتَابٌ (kitābun) — this is a book.","answer":"هٰذَا (hādhā)","explanation":"this, masculine — هٰذَا كِتَابٌ (hādhā kitābun) — this is a book uses the masculine demonstrative."} -->
 
 ## Practice patterns
 
@@ -35,7 +35,7 @@ Both are useful; the noun’s definiteness tells you phrase vs. sentence.
 
 <!-- quiz: {"type": "multiple-choice", "question": "What does هٰذَا الْكِتَابُ (hādhā al-kitābu) mean?", "options": ["This is a book", "This book", "That book", "These books"], "answer": 1} -->
 
-<!-- grammar-card: {"rule": "هٰذِهِ (hādhihi) — this, feminine pairs with feminine singular nouns.", "hint": "Use it with words like سَيَّارَةٌ (sayyāratun) — car.", "example": "Complete: ___ سَيَّارَةٌ (sayyāratun) — this is a car.", "answer": "هٰذِهِ (hādhihi) — this, feminine", "explanation": "هٰذِهِ سَيَّارَةٌ (hādhihi sayyāratun) — this is a car uses the feminine demonstrative."} -->
+<!-- grammar-card: {"rule":"هٰذِهِ (hādhihi) — this, feminine pairs with feminine singular nouns.","hint":"Use it with words like سَيَّارَةٌ (sayyāratun) — car.","example":"Complete: ___ سَيَّارَةٌ (sayyāratun) — this is a car.","answer":"هٰذِهِ (hādhihi)","explanation":"this, feminine — هٰذِهِ سَيَّارَةٌ (hādhihi sayyāratun) — this is a car uses the feminine demonstrative."} -->
 
 ## Sources
 

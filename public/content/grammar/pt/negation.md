@@ -72,7 +72,7 @@ Compare the two patterns:
 
 Both forms mean the same thing. The "before verb" version is slightly more emphatic.
 
-<!-- grammar-card: {"rule":"Double negation: não + verb + negative word (after verb) OR negative word + verb (before verb)","hint":"Both are correct: 'Ninguém veio' = 'Não veio ninguém'","example":"___ aconteceu ___ ontem. (nothing happened)","answer":"Não aconteceu nada ontem.","explanation":"When 'nada' comes after the verb, you must add 'não' before the verb. You could also say 'Nada aconteceu ontem' with the negative word before the verb and no 'não'."} -->
+<!-- grammar-card: {"rule":"Double negation: não + verb + negative word (after verb) OR negative word + verb (before verb)","hint":"Both are correct: 'Ninguém veio' = 'Não veio ninguém'","example":"___ aconteceu ___ ontem. (nothing happened)","answer":"Não ... nada","explanation":"When 'nada' comes after the verb, you must add 'não' before the verb. You could also say 'Nada aconteceu ontem' with the negative word before the verb and no 'não'."} -->
 
 ## "Nem" — Neither, Nor, Not Even
 
@@ -129,7 +129,7 @@ These idiomatic expressions are used frequently in everyday Brazilian Portuguese
 
 <!-- quiz: {"type":"multiple-choice","question":"Which is the correct way to say 'I never eat sushi' in Portuguese?","options":["Eu não como sushi nunca. / Eu nunca como sushi.","Eu como não sushi nunca.","Eu sushi nunca como não.","Nunca eu não como sushi."],"answer":0} -->
 
-<!-- grammar-card: {"rule":"'Não é?' / 'Né?' — Portuguese tag question","hint":"Add to the end of any statement to ask for confirmation","example":"Está frio, ___?","answer":"Está frio, não é? / Está frio, né?","explanation":"'Não é?' (or the informal 'né?') works like English 'right?' or 'isn't it?' — add it to the end of any statement to turn it into a confirmation question."} -->
+<!-- grammar-card: {"rule":"'Não é?' / 'Né?' — Portuguese tag question","hint":"Add to the end of any statement to ask for confirmation","example":"Está frio, ___?","answer":"não é","explanation":"'Não é?' (or the informal 'né?') works like English 'right?' or 'isn't it?' — add it to the end of any statement to turn it into a confirmation question."} -->
 
 ## Sources
 

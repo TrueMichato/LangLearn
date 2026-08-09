@@ -21,7 +21,7 @@ Use **إِذَا** (idhā) — if / when for real or likely conditions, **لَو
 
 In everyday MSA, **إِذَا** (idhā) — if / when is the safest and most common for real future situations. **لَوْ** (law) — if often imagines something unreal or missed.
 
-<!-- grammar-card: {"rule": "إِذَا (idhā) — if / when introduces likely or real conditions.", "hint": "Use it for plans and repeated facts.", "example": "Complete “If you study, you succeed”: ___ دَرَسْتَ، نَجَحْتَ (___ darasta, najaḥta).", "answer": "إِذَا (idhā) — if / when", "explanation": "إِذَا دَرَسْتَ، نَجَحْتَ (idhā darasta, najaḥta) — if you study, you succeed."} -->
+<!-- grammar-card: {"rule":"إِذَا (idhā) — if / when introduces likely or real conditions.","hint":"Use it for plans and repeated facts.","example":"Complete “If you study, you succeed”: ___ دَرَسْتَ، نَجَحْتَ (___ darasta, najaḥta).","answer":"إِذَا (idhā)","explanation":"if / when — إِذَا دَرَسْتَ، نَجَحْتَ (idhā darasta, najaḥta) — if you study, you succeed."} -->
 
 ## Practice patterns
 
@@ -32,7 +32,7 @@ Soft practice:
 
 <!-- quiz: {"type": "multiple-choice", "question": "Which sentence is contrary-to-fact past?", "options": ["لَوْ دَرَسْتَ، لَنَجَحْتَ (law darasta, la-najaḥta) — if you had studied, you would have succeeded", "إِذَا دَرَسْتَ، نَجَحْتَ (idhā darasta, najaḥta) — if you study, you succeed", "أَيْنَ الدَّرْسُ؟ (ayna ad-darsu?) — where is the lesson?", "سَأَدْرُسُ غَدًا (sa-adrusu ghadan) — I will study tomorrow"], "answer": 0} -->
 
-<!-- grammar-card: {"rule": "لَوْ (law) — if often introduces unreal or contrary-to-fact conditions.", "hint": "Often paired with لَـ (la-) in the result.", "example": "Complete “If you had studied, you would have succeeded”: ___ دَرَسْتَ، لَنَجَحْتَ (___ darasta, la-najaḥta).", "answer": "لَوْ (law) — if, contrary-to-fact", "explanation": "لَوْ دَرَسْتَ، لَنَجَحْتَ (law darasta, la-najaḥta) — if you had studied, you would have succeeded."} -->
+<!-- grammar-card: {"rule":"لَوْ (law) — if often introduces unreal or contrary-to-fact conditions.","hint":"Often paired with لَـ (la-) in the result.","example":"Complete “If you had studied, you would have succeeded”: ___ دَرَسْتَ، لَنَجَحْتَ (___ darasta, la-najaḥta).","answer":"لَوْ (law)","explanation":"if, contrary-to-fact — لَوْ دَرَسْتَ، لَنَجَحْتَ (law darasta, la-najaḥta) — if you had studied, you would have succeeded."} -->
 
 ## Sources
 

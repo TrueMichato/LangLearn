@@ -21,7 +21,7 @@ The **النِّسْبَةُ** (an-nisbah) — relative adjective usually adds *
 
 Nisba adjectives agree like other adjectives: **طَالِبٌ مِصْرِيٌّ** (ṭālibun miṣriyyun) — an Egyptian male student, **طَالِبَةٌ مِصْرِيَّةٌ** (ṭālibatun miṣriyyatun) — an Egyptian female student.
 
-<!-- grammar-card: {"rule":"The nisba ending usually creates an adjective meaning “related to” a noun.","hint":"Look for ـِيٌّ (-iyyun) or ـِيَّةٌ (-iyyatun).","example":"Complete “scientific research”: بَحْثٌ ___ (baḥthun ___).","answer":"عِلْمِيٌّ (ʿilmiyyun) — scientific","explanation":"بَحْثٌ عِلْمِيٌّ (baḥthun ʿilmiyyun) uses the nisba adjective from عِلْمٌ (ʿilmun) — science / knowledge."} -->
+<!-- grammar-card: {"rule":"The nisba ending usually creates an adjective meaning “related to” a noun.","hint":"Look for ـِيٌّ (-iyyun) or ـِيَّةٌ (-iyyatun).","example":"Complete “scientific research”: بَحْثٌ ___ (baḥthun ___).","answer":"عِلْمِيٌّ (ʿilmiyyun)","explanation":"scientific — بَحْثٌ عِلْمِيٌّ (baḥthun ʿilmiyyun) uses the nisba adjective from عِلْمٌ (ʿilmun) — science / knowledge."} -->
 
 ## Practice patterns
 
@@ -29,7 +29,7 @@ Some bases change slightly before the ending. **مَدِينَةٌ** (madīnatun
 
 <!-- quiz: {"type":"multiple-choice","question":"Which feminine nisba form means “Egyptian female”?","options":["مِصْرِيَّةٌ (miṣriyyatun)","مِصْرِيٌّ (miṣriyyun)","مِصْرُ (miṣru)","مِصْرِيَّانِ (miṣriyyāni)"],"answer":0} -->
 
-<!-- grammar-card: {"rule":"Nisba adjectives agree with the nouns they describe in gender and number.","hint":"طَالِبَةٌ needs مِصْرِيَّةٌ, not مِصْرِيٌّ.","example":"Complete “a Lebanese female teacher”: مُعَلِّمَةٌ ___ (muʿallimatun ___).","answer":"لُبْنَانِيَّةٌ (lubnāniyyatun) — Lebanese","explanation":"مُعَلِّمَةٌ لُبْنَانِيَّةٌ (muʿallimatun lubnāniyyatun) uses the feminine nisba adjective."} -->
+<!-- grammar-card: {"rule":"Nisba adjectives agree with the nouns they describe in gender and number.","hint":"طَالِبَةٌ needs مِصْرِيَّةٌ, not مِصْرِيٌّ.","example":"Complete “a Lebanese female teacher”: مُعَلِّمَةٌ ___ (muʿallimatun ___).","answer":"لُبْنَانِيَّةٌ (lubnāniyyatun)","explanation":"Lebanese — مُعَلِّمَةٌ لُبْنَانِيَّةٌ (muʿallimatun lubnāniyyatun) uses the feminine nisba adjective."} -->
 
 ## Sources
 

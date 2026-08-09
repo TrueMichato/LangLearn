@@ -19,7 +19,7 @@ Think of a verb plus preposition as one vocabulary unit. رَغِبَ فِي (ra
 
 Some verbs have more than one preposition pattern. رَغِبَ فِي السَّفَرِ (raghiba fī as-safari) — he desired travel. رَغِبَ عَنِ السَّفَرِ (raghiba ʿani as-safari) — he turned away from travel. The verb is the same, but the preposition changes the direction.
 
-<!-- grammar-card: {"rule":"Many Arabic verbs should be learned with their preposition because the preposition can change the meaning.","hint":"رَغِبَ فِي means desire, but رَغِبَ عَنْ means turn away from.","example":"Complete “he desired travel”: رَغِبَ ___ السَّفَرِ (fī as-safari).","answer":"فِي (fī) — in / toward desire","explanation":"رَغِبَ فِي (raghiba fī) means he desired. With عَنْ (ʿan), the meaning changes to turning away."} -->
+<!-- grammar-card: {"rule":"Many Arabic verbs should be learned with their preposition because the preposition can change the meaning.","hint":"رَغِبَ فِي means desire, but رَغِبَ عَنْ means turn away from.","example":"Complete “he desired travel”: رَغِبَ ___ السَّفَرِ (fī as-safari).","answer":"فِي (fī)","explanation":"in / toward desire — رَغِبَ فِي (raghiba fī) means he desired. With عَنْ (ʿan), the meaning changes to turning away."} -->
 
 ## Common pairs to memorize
 
@@ -32,7 +32,7 @@ Some verbs have more than one preposition pattern. رَغِبَ فِي السّ�
 
 <!-- quiz: {"type":"multiple-choice","question":"Which pair means he listened to?","options":["اِسْتَمَعَ إِلَى (istamaʿa ilā) — he listened to","نَظَرَ عَنْ (naẓara ʿan) — he looked away from","آمَنَ إِلَى (āmana ilā) — he believed to","بَحَثَ فِي (baḥatha fī) — he searched in"],"answer":0} -->
 
-<!-- grammar-card: {"rule":"اِسْتَمَعَ (istamaʿa) normally takes إِلَى (ilā) when it means listen to.","hint":"Listening is directed toward a sound or speaker.","example":"Complete “I listened to the lesson”: اِسْتَمَعْتُ ___ الدَّرْسِ (ilā ad-darsi).","answer":"إِلَى (ilā) — to","explanation":"اِسْتَمَعْتُ إِلَى الدَّرْسِ (istamaʿtu ilā ad-darsi) means I listened to the lesson."} -->
+<!-- grammar-card: {"rule":"اِسْتَمَعَ (istamaʿa) normally takes إِلَى (ilā) when it means listen to.","hint":"Listening is directed toward a sound or speaker.","example":"Complete “I listened to the lesson”: اِسْتَمَعْتُ ___ الدَّرْسِ (ilā ad-darsi).","answer":"إِلَى (ilā)","explanation":"اِسْتَمَعْتُ إِلَى الدَّرْسِ (istamaʿtu ilā ad-darsi) means I listened to the lesson."} -->
 
 ## Sources
 

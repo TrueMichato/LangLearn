@@ -25,7 +25,7 @@ At the beginning of a word, hamza normally sits on alif: **أَكَلَ** (ʾaka
 
 Do not guess from pronunciation alone. **سُؤَالٌ** (suʾālun) — question and **سَأَلَ** (saʾala) — he asked both contain hamza, but the seat differs because the vowels around it differ. Final hamza is especially variable: **شَيْءٌ** (shayʾun) — thing writes hamza on the line after a long-like glide, while **مَبْدَأٌ** (mabdaʾun) — principle writes it on alif after fatḥa.
 
-<!-- grammar-card: {"rule":"At the beginning of a word, hamza with kasra is written below alif as إِ.","hint":"Initial i uses the lower hamza.","example":"Choose the correct beginning for ___سْمٌ (ʾismun) — name.","answer":"إِسْمٌ (ʾismun) — name","explanation":"The word begins with hamza plus kasra, so the hamza is written below the alif: إِ."} -->
+<!-- grammar-card: {"rule":"At the beginning of a word, hamza with kasra is written below alif as إِ.","hint":"Initial i uses the lower hamza.","example":"Choose the correct beginning for ___سْمٌ (ʾismun) — name.","answer":"إِسْمٌ","explanation":"name — The word begins with hamza plus kasra, so the hamza is written below the alif: إِ."} -->
 
 ## Practice patterns
 
@@ -38,7 +38,7 @@ Read the vowel before and after the hamza, then decide:
 
 <!-- quiz: {"type":"multiple-choice","question":"Which spelling best completes مُـ...ـمِنٌ (muʾminun) — believer?","options":["مُأْمِنٌ","مُؤْمِنٌ","مُئْمِنٌ","مُءْمِنٌ"],"answer":1} -->
 
-<!-- grammar-card: {"rule":"A middle hamza often takes the seat of the strongest neighboring vowel: kasra, then ḍamma, then fatḥa.","hint":"The i vowel wins over u and a.","example":"Complete the passive verb: سُ___لَ (suʾila) — he was asked.","answer":"سُئِلَ (suʾila) — he was asked","explanation":"The kasra after the hamza is strongest, so the hamza is written on the yāʾ-like seat ئ."} -->
+<!-- grammar-card: {"rule":"A middle hamza often takes the seat of the strongest neighboring vowel: kasra, then ḍamma, then fatḥa.","hint":"The i vowel wins over u and a.","example":"Complete the passive verb: سُ___لَ (suʾila) — he was asked.","answer":"سُئِلَ","explanation":"he was asked — The kasra after the hamza is strongest, so the hamza is written on the yāʾ-like seat ئ."} -->
 
 ## Sources
 

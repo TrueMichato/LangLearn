@@ -22,7 +22,7 @@ Connectors can join clauses or guide the reader’s expectation. Common ones inc
 
 **فَـ** (fa-) — so / then often suggests immediate sequence or result. **ثُمَّ** (thumma) — then suggests a later step. Compare **خَرَجَ فَرَكِبَ السَّيَّارَةَ** (kharaja fa-rakiba as-sayyārata) — he went out and immediately got in the car, with **خَرَجَ ثُمَّ رَكِبَ السَّيَّارَةَ** (kharaja thumma rakiba as-sayyārata) — he went out, then got in the car.
 
-<!-- grammar-card: {"rule":"فَـ (fa-) often marks immediate sequence or result; ثُمَّ (thumma) marks a later “then.”","hint":"fa is quicker; thumma leaves more space.","example":"Complete “he entered, then sat”: دَخَلَ ___ جَلَسَ (dakhala ___ jalasa).","answer":"فَـ (fa-) — then / so","explanation":"دَخَلَ فَجَلَسَ (dakhala fa-jalasa) suggests he entered and then sat right away."} -->
+<!-- grammar-card: {"rule":"فَـ (fa-) often marks immediate sequence or result; ثُمَّ (thumma) marks a later “then.”","hint":"fa is quicker; thumma leaves more space.","example":"Complete “he entered, then sat”: دَخَلَ ___ جَلَسَ (dakhala ___ jalasa).","answer":"فَـ (fa-)","explanation":"then / so — دَخَلَ فَجَلَسَ (dakhala fa-jalasa) suggests he entered and then sat right away."} -->
 
 ## Practice patterns
 
@@ -30,7 +30,7 @@ Some connectors affect the grammar after them. **لِكَيْ** (likay) — so t
 
 <!-- quiz: {"type":"multiple-choice","question":"Which connector means “rather” and often corrects or replaces the previous idea?","options":["بَلْ (bal)","لِكَيْ (likay)","لِأَنَّ (li-anna)","ثُمَّ (thumma)"],"answer":0} -->
 
-<!-- grammar-card: {"rule":"لِكَيْ (likay) introduces purpose and is followed by a subjunctive present verb.","hint":"So that I succeed: لِكَيْ أَنْجَحَ.","example":"Complete “I study so that I succeed”: أَدْرُسُ لِكَيْ ___ (adrusu likay ___).","answer":"أَنْجَحَ (anjaḥa) — I succeed","explanation":"أَدْرُسُ لِكَيْ أَنْجَحَ (adrusu likay anjaḥa) uses the subjunctive ending after لِكَيْ (likay)."} -->
+<!-- grammar-card: {"rule":"لِكَيْ (likay) introduces purpose and is followed by a subjunctive present verb.","hint":"So that I succeed: لِكَيْ أَنْجَحَ.","example":"Complete “I study so that I succeed”: أَدْرُسُ لِكَيْ ___ (adrusu likay ___).","answer":"أَنْجَحَ (anjaḥa)","explanation":"I succeed — أَدْرُسُ لِكَيْ أَنْجَحَ (adrusu likay anjaḥa) uses the subjunctive ending after لِكَيْ (likay)."} -->
 
 ## Sources
 

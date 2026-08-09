@@ -22,7 +22,7 @@ The purpose accusative is commonly indefinite and accusative: **طَلَبًا**
 
 A prepositional phrase with **لِـ** (li-) — for can often express the same idea: **جِئْتُ لِطَلَبِ الْعِلْمِ** (jiʾtu li-ṭalabi al-ʿilmi) — I came to seek knowledge.
 
-<!-- grammar-card: {"rule":"الْمَفْعُولُ لِأَجْلِهِ is an accusative verbal noun that gives the reason or purpose of an action.","hint":"Ask why the action happened.","example":"Complete I studied seeking success: دَرَسْتُ ___ لِلنَّجَاحِ (darastu ___ lin-najāḥi).","answer":"طَلَبًا (ṭalaban) — seeking","explanation":"دَرَسْتُ طَلَبًا لِلنَّجَاحِ (darastu ṭalaban lin-najāḥi) uses an accusative verbal noun to explain the purpose of studying."} -->
+<!-- grammar-card: {"rule":"الْمَفْعُولُ لِأَجْلِهِ is an accusative verbal noun that gives the reason or purpose of an action.","hint":"Ask why the action happened.","example":"Complete I studied seeking success: دَرَسْتُ ___ لِلنَّجَاحِ (darastu ___ lin-najāḥi).","answer":"طَلَبًا (ṭalaban)","explanation":"seeking — دَرَسْتُ طَلَبًا لِلنَّجَاحِ (darastu ṭalaban lin-najāḥi) uses an accusative verbal noun to explain the purpose of studying."} -->
 
 ## Compared with other accusatives
 

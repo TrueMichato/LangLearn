@@ -19,7 +19,7 @@ Form V تَفَعَّلَ (tafaʿʿala) — he did for himself / became is close
 
 عَلَّمَ (ʿallama) — he taught is Form II. تَعَلَّمَ (taʿallama) — he learned is Form V: the action turns inward toward the subject. Likewise دَرَّبَ (darraba) — he trained someone and تَدَرَّبَ (tadarraba) — he trained / practiced.
 
-<!-- grammar-card: {"rule":"Form V تَفَعَّلَ (tafaʿʿala) is often the reflexive or middle counterpart of Form II.","hint":"It begins with تَـ and keeps the doubled middle consonant.","example":"Complete “he learned”: ___ (taʿallama) — he learned.","answer":"تَعَلَّمَ (taʿallama) — he learned","explanation":"تَعَلَّمَ (taʿallama) is related to عَلَّمَ (ʿallama) — he taught, but the action is directed toward the learner."} -->
+<!-- grammar-card: {"rule":"Form V تَفَعَّلَ (tafaʿʿala) is often the reflexive or middle counterpart of Form II.","hint":"It begins with تَـ and keeps the doubled middle consonant.","example":"Complete “he learned”: ___ (taʿallama) — he learned.","answer":"تَعَلَّمَ","explanation":"he learned — تَعَلَّمَ (taʿallama) is related to عَلَّمَ (ʿallama) — he taught, but the action is directed toward the learner."} -->
 
 ## Form VI: shared action
 
@@ -33,7 +33,7 @@ Form VI often implies two sides or a group. تَقَابَلَ الطُّلَّ�
 
 <!-- quiz: {"type":"multiple-choice","question":"Which verb best shows reciprocal or shared action?","options":["تَعَاوَنَ (taʿāwana) — he cooperated","أَخْرَجَ (akhraja) — he brought out","كَتَبَ (kataba) — he wrote","قُلْتُ (qultu) — I said"],"answer":0} -->
 
-<!-- grammar-card: {"rule":"Form VI تَفَاعَلَ (tafāʿala) often expresses reciprocal or cooperative action.","hint":"Look for تَـ at the beginning and ā after the first root letter.","example":"Complete “they met each other”: ___ (taqābalū) — they met each other.","answer":"تَقَابَلُوا (taqābalū) — they met each other","explanation":"تَقَابَلُوا (taqābalū) is Form VI. The pattern points to meeting between participants."} -->
+<!-- grammar-card: {"rule":"Form VI تَفَاعَلَ (tafāʿala) often expresses reciprocal or cooperative action.","hint":"Look for تَـ at the beginning and ā after the first root letter.","example":"Complete “they met each other”: ___ (taqābalū) — they met each other.","answer":"تَقَابَلُوا","explanation":"they met each other — تَقَابَلُوا (taqābalū) is Form VI. The pattern points to meeting between participants."} -->
 
 ## Sources
 

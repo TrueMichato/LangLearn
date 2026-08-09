@@ -21,7 +21,7 @@ The **التَّصْغِيرُ** (at-taṣghīr) — diminutive reshapes a noun 
 
 The diminutive is not the everyday way to say “small” in modern speech; **صَغِيرٌ** (ṣaghīrun) — small is more general. But **التَّصْغِيرُ** (at-taṣghīr) — diminutive appears in names, literature, and lexicalized words.
 
-<!-- grammar-card: {"rule":"The diminutive often suggests smallness or affection by changing the noun pattern.","hint":"A common sound is u-ay near the beginning.","example":"Complete “little dog”: كَلْبٌ (kalbun) → ___ (kulaybun).","answer":"كُلَيْبٌ (kulaybun) — little dog","explanation":"كُلَيْبٌ (kulaybun) is a diminutive form of كَلْبٌ (kalbun) — dog."} -->
+<!-- grammar-card: {"rule":"The diminutive often suggests smallness or affection by changing the noun pattern.","hint":"A common sound is u-ay near the beginning.","example":"Complete “little dog”: كَلْبٌ (kalbun) → ___ (kulaybun).","answer":"كُلَيْبٌ","explanation":"little dog — كُلَيْبٌ (kulaybun) is a diminutive form of كَلْبٌ (kalbun) — dog."} -->
 
 ## Practice patterns
 
@@ -32,7 +32,7 @@ For longer words, the shape can adjust. The goal is not to build every diminutiv
 
 <!-- quiz: {"type":"multiple-choice","question":"What does التَّصْغِيرُ (at-taṣghīr) usually express?","options":["smallness or affection","future time only","a direct object","a passive verb"],"answer":0} -->
 
-<!-- grammar-card: {"rule":"Do not confuse a diminutive with a broken plural; both change inside the word, but their meanings differ.","hint":"كُتَيِّبٌ is singular; كُتُبٌ is plural.","example":"Complete “books”: كِتَابٌ (kitābun) → ___ (kutubun).","answer":"كُتُبٌ (kutubun) — books","explanation":"كُتُبٌ (kutubun) is a broken plural, while كُتَيِّبٌ (kutayyibun) is a diminutive meaning “booklet.”"} -->
+<!-- grammar-card: {"rule":"Do not confuse a diminutive with a broken plural; both change inside the word, but their meanings differ.","hint":"كُتَيِّبٌ is singular; كُتُبٌ is plural.","example":"Complete “books”: كِتَابٌ (kitābun) → ___ (kutubun).","answer":"كُتُبٌ","explanation":"books — كُتُبٌ (kutubun) is a broken plural, while كُتَيِّبٌ (kutayyibun) is a diminutive meaning “booklet.”"} -->
 
 ## Sources
 

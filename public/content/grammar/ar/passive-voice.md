@@ -20,7 +20,7 @@ The **الْمَبْنِيُّ لِلْمَجْهُولِ** (al-mabnī li-l-majh
 
 For many Form I past verbs, the passive has **u-i** vowels: **فَعَلَ** (faʿala) — he did becomes **فُعِلَ** (fuʿila) — it was done. In the present, the passive often begins with **يُـ** (yu-) or **تُـ** (tu-) and has **a** before the last root sound: **يَفْتَحُ** (yaftaḥu) — he opens becomes **يُفْتَحُ** (yuftaḥu) — it is opened.
 
-<!-- grammar-card: {"rule":"In the passive, the actor is removed and the former object becomes nominative.","hint":"Active الدَّرْسَ can become passive الدَّرْسُ.","example":"Complete “the lesson was written”: كُتِبَ ___ (kutiba ___).","answer":"الدَّرْسُ (ad-darsu) — the lesson","explanation":"كُتِبَ الدَّرْسُ (kutiba ad-darsu) uses الدَّرْسُ (ad-darsu) as the substitute subject."} -->
+<!-- grammar-card: {"rule":"In the passive, the actor is removed and the former object becomes nominative.","hint":"Active الدَّرْسَ can become passive الدَّرْسُ.","example":"Complete “the lesson was written”: كُتِبَ ___ (kutiba ___).","answer":"الدَّرْسُ (ad-darsu)","explanation":"the lesson — كُتِبَ الدَّرْسُ (kutiba ad-darsu) uses الدَّرْسُ (ad-darsu) as the substitute subject."} -->
 
 ## Practice patterns
 
@@ -32,7 +32,7 @@ Weak verbs and derived forms have their own details, so use reliable references 
 
 <!-- quiz: {"type":"multiple-choice","question":"What happens to the actor in الْمَبْنِيُّ لِلْمَجْهُولِ (al-mabnī li-l-majhūl)?","options":["It is usually omitted","It must be repeated twice","It becomes a preposition","It always becomes feminine"],"answer":0} -->
 
-<!-- grammar-card: {"rule":"Many Form I past passives use the vowel shape فُعِلَ (fuʿila).","hint":"Listen for u on the first root sound and i before the last.","example":"Complete “it was understood”: ___ (fuhima).","answer":"فُهِمَ (fuhima) — it was understood","explanation":"فُهِمَ (fuhima) is the passive of فَهِمَ (fahima) — he understood."} -->
+<!-- grammar-card: {"rule":"Many Form I past passives use the vowel shape فُعِلَ (fuʿila).","hint":"Listen for u on the first root sound and i before the last.","example":"Complete “it was understood”: ___ (fuhima).","answer":"فُهِمَ","explanation":"it was understood — فُهِمَ (fuhima) is the passive of فَهِمَ (fahima) — he understood."} -->
 
 ## Sources
 

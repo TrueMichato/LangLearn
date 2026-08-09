@@ -101,7 +101,7 @@ Notice the **preterite** (*volví a*), the **negative imperative** (*no vuelvas 
 - **Voy a volver a leerlo** — I'm going to re-read it.
 - **¿Lo vuelves a hacer?** — Are you doing it again?
 
-<!-- grammar-card: {"rule":"No volver a + infinitivo = to never do something again (emphatic negative)","hint":"Often used in promises and warnings: 'No volveré a hacerlo'.","example":"___ ___ ___ a tarde a clase. (I won't ever arrive late to class again)","answer":"No volveré","explanation":"'No volveré a llegar tarde' = 'I'll never arrive late again'. The future of volver gives a strong commitment. Combine with 'nunca' (Nunca volveré a…) for even more emphasis."} -->
+<!-- grammar-card: {"rule":"No volver a + infinitivo = to never do something again (emphatic negative)","hint":"Often used in promises and warnings: 'No volveré a hacerlo'.","example":"___ ___ a llegar tarde a clase. (I won't ever arrive late to class again)","answer":"No volveré","explanation":"'No volveré a llegar tarde' = 'I'll never arrive late again'. The future of volver gives a strong commitment. Combine with 'nunca' (Nunca volveré a…) for even more emphasis."} -->
 
 ## Sources
 

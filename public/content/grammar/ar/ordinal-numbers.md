@@ -27,7 +27,7 @@ Because ordinals are adjective-like, they commonly agree in gender, definiteness
 - **الصَّفْحَةُ الثَّانِيَةُ** (aṣ-ṣafḥatu ath-thāniyatu) — the second page.
 - **البَابُ الثَّالِثُ** (al-bābu ath-thālithu) — the third chapter.
 
-<!-- grammar-card: {"rule": "Ordinal numbers usually agree like adjectives.", "hint": "Match gender and definiteness.", "example": "Complete “the second page”: الصَّفْحَةُ ___ (aṣ-ṣafḥatu ___).", "answer": "الثَّانِيَةُ (ath-thāniyatu) — the second, feminine", "explanation": "صَفْحَةٌ (ṣafḥatun) — page is feminine, so the ordinal is الثَّانِيَةُ (ath-thāniyatu)."} -->
+<!-- grammar-card: {"rule":"Ordinal numbers usually agree like adjectives.","hint":"Match gender and definiteness.","example":"Complete “the second page”: الصَّفْحَةُ ___ (aṣ-ṣafḥatu ___).","answer":"الثَّانِيَةُ (ath-thāniyatu)","explanation":"the second, feminine — صَفْحَةٌ (ṣafḥatun) — page is feminine, so the ordinal is الثَّانِيَةُ (ath-thāniyatu)."} -->
 
 ## Dates
 
@@ -41,7 +41,7 @@ Dates often use masculine ordinals because the understood noun is **اليَوْ
 
 <!-- quiz: {"type": "multiple-choice", "question": "Why is الثَّالِثِ (ath-thālithi) genitive in فِي الثَّالِثِ مِنْ أَبْرِيلَ?", "options": ["Because it follows the preposition فِي (fī)", "Because it is plural", "Because all dates are accusative", "Because it is feminine"], "answer": 0} -->
 
-<!-- grammar-card: {"rule": "In date phrases after فِي (fī), the ordinal is genitive.", "hint": "Preposition plus ordinal.", "example": "Complete “on the tenth”: فِي العَاشِر___ (fī al-ʿāshir___).", "answer": "ـِ (-i) — genitive ending", "explanation": "فِي (fī) makes the following date expression genitive: فِي العَاشِرِ (fī al-ʿāshiri)."} -->
+<!-- grammar-card: {"rule":"In date phrases after فِي (fī), the ordinal is genitive.","hint":"Preposition plus ordinal.","example":"Complete “on the tenth”: فِي العَاشِر___ (fī al-ʿāshir___).","answer":"ـِ (-i)","explanation":"genitive ending — فِي (fī) makes the following date expression genitive: فِي العَاشِرِ (fī al-ʿāshiri)."} -->
 
 ## Compound ordinals
 
@@ -53,7 +53,7 @@ For eleventh and beyond, Arabic often combines a unit ordinal with ten: **الح
 
 <!-- quiz: {"type": "multiple-choice", "question": "Which phrase correctly means “the first unit”?", "options": ["الوَحْدَةُ الأُولَى (al-waḥdatu al-ūlā)", "الوَحْدَةُ الأَوَّلُ (al-waḥdatu al-awwalu)", "الوَحْدَةَ أَوَّلًا (al-waḥdata awwalan)", "الوَحْدَةُ وَاحِدٌ (al-waḥdatu wāḥidun)"], "answer": 0} -->
 
-<!-- grammar-card: {"rule": "Use الأُولَى (al-ūlā) for feminine “the first.”", "hint": "First has a special feminine form.", "example": "Complete “the first unit”: الوَحْدَةُ ___ (al-waḥdatu ___).", "answer": "الأُولَى (al-ūlā) — the first, feminine", "explanation": "The feminine of الأَوَّلُ (al-awwalu) is الأُولَى (al-ūlā), not الأَوَّلَةُ."} -->
+<!-- grammar-card: {"rule":"Use الأُولَى (al-ūlā) for feminine “the first.”","hint":"First has a special feminine form.","example":"Complete “the first unit”: الوَحْدَةُ ___ (al-waḥdatu ___).","answer":"الأُولَى (al-ūlā)","explanation":"the first, feminine — The feminine of الأَوَّلُ (al-awwalu) is الأُولَى (al-ūlā), not الأَوَّلَةُ."} -->
 
 ## Sources
 

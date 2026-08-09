@@ -22,7 +22,7 @@ The three short vowels are **فَتْحَةٌ** (fatḥatun) — a, **كَسْر
 
 A shadda includes a doubled consonant. In **مُدَرِّسٌ** (mudarrisun) — teacher, the sound is not *mudaris* but *mudarris*. Sukūn is the opposite: pause on the consonant, as in **بَيْتٌ** (baytun) — house.
 
-<!-- grammar-card: {"rule": "سُكُونٌ (sukūnun) — no vowel marks a consonant that is closed or silent after its consonant sound.", "hint": "Look for the small circle-like mark.", "example": "In دَرْسٌ (darsun) — lesson, the consonant with sukūn is ___ .", "answer": "رْ (rْ) — r without a vowel", "explanation": "The consonant رْ (rْ) — r without a vowel in دَرْسٌ (darsun) — lesson has sukūn, so the syllable closes as dars."} -->
+<!-- grammar-card: {"rule":"سُكُونٌ (sukūnun) — no vowel marks a consonant that is closed or silent after its consonant sound.","hint":"Look for the small circle-like mark.","example":"In دَرْسٌ (darsun) — lesson, the consonant with sukūn is ___ .","answer":"رْ (rْ)","explanation":"The consonant رْ (rْ) — r without a vowel in دَرْسٌ (darsun) — lesson has sukūn, so the syllable closes as dars."} -->
 
 ## Practice patterns
 
@@ -35,7 +35,7 @@ Tashkīl can change meaning:
 
 <!-- quiz: {"type": "multiple-choice", "question": "What does كُتِبَ (kutiba) — it was written show?", "options": ["A different vowel pattern can change meaning", "A plural suffix", "A demonstrative", "A dialect word"], "answer": 0} -->
 
-<!-- grammar-card: {"rule": "شَدَّةٌ (shaddatun) — doubling makes one consonant count twice in pronunciation.", "hint": "Double the consonant gently.", "example": "Complete the teacher word: مُدَر___سٌ (mudarrisun) — teacher.", "answer": "رِّ (rri) — doubled r with i", "explanation": "مُدَرِّسٌ (mudarrisun) — teacher has shadda on رّ (rr), producing the doubled r sound."} -->
+<!-- grammar-card: {"rule":"شَدَّةٌ (shaddatun) — doubling makes one consonant count twice in pronunciation.","hint":"Double the consonant gently.","example":"Complete the teacher word: مُدَر___سٌ (mudarrisun) — teacher.","answer":"رِّ (rri)","explanation":"doubled r with i — مُدَرِّسٌ (mudarrisun) — teacher has shadda on رّ (rr), producing the doubled r sound."} -->
 
 ## Sources
 

@@ -110,11 +110,11 @@ Translation: It was a beautiful day. The sun was shining and the birds were sing
 
 <!-- quiz: {"type":"multiple-choice","question":"In the story above, why is 'começou a chover' in the perfeito?","options":["Because rain is always perfeito","Because it describes an ongoing action","Because it's a sudden event that interrupts the scene","Because 'começar' is always irregular"],"answer":2} -->
 
-<!-- grammar-card: {"rule":"Use the perfeito for completed actions and the imperfeito for ongoing/habitual past actions","hint":"Perfeito = snapshot, Imperfeito = video","example":"Eu ___ (dormir, imperfeito) quando ele ___ (chegar, perfeito)","answer":"dormia / chegou","explanation":"'Dormia' (imperfeito) is the background action in progress. 'Chegou' (perfeito) is the event that interrupted it."} -->
+<!-- grammar-card: {"rule":"Use the perfeito for completed actions and the imperfeito for ongoing/habitual past actions","hint":"Perfeito = snapshot, Imperfeito = video","example":"Eu ___ (dormir, imperfeito) quando ele ___ (chegar, perfeito)","answer":"dormia ... chegou","explanation":"'Dormia' (imperfeito) is the background action in progress. 'Chegou' (perfeito) is the event that interrupted it."} -->
 
 <!-- grammar-card: {"rule":"Time markers help you choose: 'ontem' and 'de repente' → perfeito; 'sempre' and 'todo dia' → imperfeito","hint":"Specific time = perfeito, repeated time = imperfeito","example":"Ela ___ chegava atrasada (always arrived late)","answer":"sempre","explanation":"'Sempre' (always) signals a habitual action, which requires the imperfeito. The ongoing, repeated nature of the action is the key."} -->
 
-<!-- grammar-card: {"rule":"When telling stories, the imperfeito sets the scene (background) and the perfeito advances the plot (events)","hint":"Description → imperfeito, Action → perfeito","example":"O dia ___ bonito. De repente, ___ a chover. (estar / começar)","answer":"estava / começou","explanation":"'Estava' (imperfeito) describes the background scene. 'Começou' (perfeito) is the sudden event that changes the situation."} -->
+<!-- grammar-card: {"rule":"When telling stories, the imperfeito sets the scene (background) and the perfeito advances the plot (events)","hint":"Description → imperfeito, Action → perfeito","example":"O dia ___ bonito. De repente, ___ a chover. (estar / começar)","answer":"estava ... começou","explanation":"'Estava' (imperfeito) describes the background scene. 'Começou' (perfeito) is the sudden event that changes the situation."} -->
 
 ## Sources
 

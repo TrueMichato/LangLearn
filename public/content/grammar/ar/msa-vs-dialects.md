@@ -22,7 +22,7 @@ The biggest changes are usually pronunciation, everyday vocabulary, verb prefixe
 
 Do not frame dialect as “incorrect.” Dialects are native, rich, and systematic. MSA and dialect simply serve different social purposes.
 
-<!-- grammar-card: {"rule": "MSA is the shared formal standard; dialects are everyday spoken varieties.", "hint": "Both are real Arabic layers.", "example": "Complete the MSA phrase “I want to go”: ___ أَنْ أَذْهَبَ (___ an adh-haba).", "answer": "أُرِيدُ (urīdu) — I want", "explanation": "أُرِيدُ أَنْ أَذْهَبَ (urīdu an adh-haba) — I want to go is standard MSA."} -->
+<!-- grammar-card: {"rule":"MSA is the shared formal standard; dialects are everyday spoken varieties.","hint":"Both are real Arabic layers.","example":"Complete the MSA phrase “I want to go”: ___ أَنْ أَذْهَبَ (___ an adh-haba).","answer":"أُرِيدُ (urīdu)","explanation":"أُرِيدُ أَنْ أَذْهَبَ (urīdu an adh-haba) — I want to go is standard MSA."} -->
 
 ## Practice patterns
 
@@ -34,7 +34,7 @@ A healthy path is: learn MSA grammar for reading and shared structure, then choo
 
 <!-- quiz: {"type": "multiple-choice", "question": "Which is a respectful way to think about dialects?", "options": ["They are incorrect MSA", "They are native spoken systems with their own rules", "They have no grammar", "They should never be learned"], "answer": 1} -->
 
-<!-- grammar-card: {"rule": "Dialects often drop formal case endings in everyday speech.", "hint": "The sentence remains meaningful without final iʿrāb.", "example": "Dialect-style “the house is big” can sound like ___ (il-bēt kibīr) — the house is big.", "answer": "الْبَيْتْ كِبِيرْ (il-bēt kibīr) — the house is big, dialect-style pronunciation", "explanation": "الْبَيْتْ كِبِيرْ (il-bēt kibīr) shows final consonant pauses rather than formal case endings."} -->
+<!-- grammar-card: {"rule":"Dialects often drop formal case endings in everyday speech.","hint":"The sentence remains meaningful without final iʿrāb.","example":"Dialect-style “the house is big” can sound like ___ (il-bēt kibīr) — the house is big.","answer":"الْبَيْتْ كِبِيرْ","explanation":"the house is big, dialect-style pronunciation — الْبَيْتْ كِبِيرْ (il-bēt kibīr) shows final consonant pauses rather than formal case endings."} -->
 
 ## Sources
 

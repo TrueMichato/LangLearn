@@ -19,7 +19,7 @@ Formal Arabic has several ways to strengthen a statement: oath particles, emphat
 
 An oath often places the sworn word in the genitive: وَٱللّٰهِ (wallāhi) — by God, بِٱللّٰهِ (billāhi) — by God, تَٱللّٰهِ (tallāhi) — by God. The answer may be strengthened: وَٱللّٰهِ لَأَقُولَنَّ الْحَقَّ (wallāhi la-aqūlanna al-ḥaqqa) — by God, I will surely tell the truth.
 
-<!-- grammar-card: {"rule":"An oath response can use لَـ (la-) and نُونُ التَّوْكِيدِ (nūn at-tawkīd) for strong emphasis.","hint":"Look for لَ at the beginning and نَّ at the end of the verb.","example":"Complete “I will surely say”: لَأَقُولَ___ (la-aqūlanna).","answer":"نَّ (nna) — heavy energetic nūn","explanation":"لَأَقُولَنَّ combines emphatic لَـ with the heavy energetic nūn to mean I will surely say."} -->
+<!-- grammar-card: {"rule":"An oath response can use لَـ (la-) and نُونُ التَّوْكِيدِ (nūn at-tawkīd) for strong emphasis.","hint":"Look for لَ at the beginning and نَّ at the end of the verb.","example":"Complete “I will surely say”: لَأَقُولَ___ (la-aqūlanna).","answer":"نَّ (nna)","explanation":"لَأَقُولَنَّ combines emphatic لَـ with the heavy energetic nūn to mean I will surely say."} -->
 
 ## Other emphasis tools
 
@@ -33,7 +33,7 @@ Arabic also uses إِنَّ (inna) — indeed, قَدْ (qad) — indeed / alrea
 
 <!-- quiz: {"type":"multiple-choice","question":"Which word is an emphatic particle meaning indeed?","options":["إِنَّ (inna) — indeed","إِلَى (ilā) — to","عَنْ (ʿan) — about / from","لَمْ (lam) — did not"],"answer":0} -->
 
-<!-- grammar-card: {"rule":"إِنَّ (inna) emphasizes a nominal sentence and makes its subject accusative.","hint":"After إِنَّ, watch for a noun ending like الطَّالِبَ.","example":"Complete “indeed the student is hardworking”: إِنَّ ___ مُجْتَهِدٌ (aṭ-ṭāliba).","answer":"الطَّالِبَ (aṭ-ṭāliba) — the student in accusative","explanation":"إِنَّ الطَّالِبَ مُجْتَهِدٌ uses إِنَّ for emphasis, and الطَّالِبَ is the accusative subject of إِنَّ."} -->
+<!-- grammar-card: {"rule":"إِنَّ (inna) emphasizes a nominal sentence and makes its subject accusative.","hint":"After إِنَّ, watch for a noun ending like الطَّالِبَ.","example":"Complete “indeed the student is hardworking”: إِنَّ ___ مُجْتَهِدٌ (aṭ-ṭāliba).","answer":"الطَّالِبَ","explanation":"the student in accusative — إِنَّ الطَّالِبَ مُجْتَهِدٌ uses إِنَّ for emphasis, and الطَّالِبَ is the accusative subject of إِنَّ."} -->
 
 ## Sources
 

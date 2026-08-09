@@ -32,7 +32,7 @@ Use fa- especially when the answer is a nominal sentence, an imperative, a prohi
 
 The fa- in a conditional answer is grammatical glue. It may also feel like then, but its main job is to connect a non-jussive answer to the condition. Compare إِنْ تَزُرْنِي أُكْرِمْكَ (in tazurnī ukrimka) — if you visit me, I will honor you, with إِنْ تَزُرْنِي فَسَأُكْرِمُكَ (in tazurnī fa-sa-ukrimuka) — if you visit me, then I will honor you. The future marker سَـ makes fa- natural.
 
-<!-- grammar-card: {"rule":"Use فَـ before a conditional answer when the answer begins with a nominal sentence, command, question, future marker, qad, lan, or mā.","hint":"If the answer is not a bare jussive verb, check for fa-.","example":"Complete: إِنْ تَحْتَجْ ___ اسْأَلْنِي (in taḥtaj ___ isʾalnī).","answer":"فَـ (fa-) — then","explanation":"The answer is an imperative, so Arabic links it to the condition with فَـ."} -->
+<!-- grammar-card: {"rule":"Use فَـ before a conditional answer when the answer begins with a nominal sentence, command, question, future marker, qad, lan, or mā.","hint":"If the answer is not a bare jussive verb, check for fa-.","example":"Complete: إِنْ تَحْتَجْ ___ اسْأَلْنِي (in taḥtaj ___ isʾalnī).","answer":"فَـ (fa-)","explanation":"then — The answer is an imperative, so Arabic links it to the condition with فَـ."} -->
 
 <!-- quiz: {"type":"multiple-choice","question":"Why does مَنْ يَصْبِرْ فَسَوْفَ يَفُوزُ (man yaṣbir fa-sawfa yafūzu) use فَـ?","options":["The answer begins with سَوْفَ","The condition has no verb","All conditions must use fa-","The word مَنْ is a preposition"],"answer":0} -->
 

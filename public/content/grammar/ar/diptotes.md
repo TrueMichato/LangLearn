@@ -24,7 +24,7 @@ After a preposition, many diptotes use fatḥa, not kasra.
 - **سَافَرْتُ إِلَى دِمَشْقَ** (sāfartu ilā dimashqa) — I traveled to Damascus.
 - **مَرَرْتُ بِمَسَاجِدَ كَثِيرَةٍ** (marartu bi-masājida kathīratin) — I passed by many mosques.
 
-<!-- grammar-card: {"rule": "A diptote usually takes fatḥa for genitive when indefinite and not in iḍāfa.", "hint": "After a preposition, expect -a.", "example": "Complete “to Damascus”: إِلَى دِمَشْق___ (ilā dimashq___).", "answer": "ـَ (-a) — diptote genitive with fatḥa", "explanation": "دِمَشْقُ (dimashqu) is treated as a diptote, so after إِلَى (ilā) it appears as دِمَشْقَ (dimashqa)."} -->
+<!-- grammar-card: {"rule":"A diptote usually takes fatḥa for genitive when indefinite and not in iḍāfa.","hint":"After a preposition, expect -a.","example":"Complete “to Damascus”: إِلَى دِمَشْق___ (ilā dimashq___).","answer":"ـَ (-a)","explanation":"diptote genitive with fatḥa — دِمَشْقُ (dimashqu) is treated as a diptote, so after إِلَى (ilā) it appears as دِمَشْقَ (dimashqa)."} -->
 
 ## Common diptote families
 
@@ -40,7 +40,7 @@ You do not need to memorize every cause at once. Recognize the families that app
 
 <!-- quiz: {"type": "multiple-choice", "question": "Which phrase shows diptote genitive with fatḥa?", "options": ["إِلَى دِمَشْقَ (ilā dimashqa)", "إِلَى البَيْتِ (ilā al-bayti)", "إِلَى مَكْتَبٍ (ilā maktabin)", "إِلَى طَالِبَيْنِ (ilā ṭālibayni)"], "answer": 0} -->
 
-<!-- grammar-card: {"rule": "Many broken plurals on مَفَاعِلُ (mafāʿilu) are diptotes.", "hint": "Mosques: masājidu, masājida.", "example": "Complete “many mosques” after بِـ (bi-): بِمَسَاجِد___ كَثِيرَةٍ (bi-masājid___ kathīratin).", "answer": "ـَ (-a) — diptote genitive", "explanation": "مَسَاجِدُ (masājidu) is a diptote broken plural, so after بِـ (bi-) it can appear as مَسَاجِدَ (masājida)."} -->
+<!-- grammar-card: {"rule":"Many broken plurals on مَفَاعِلُ (mafāʿilu) are diptotes.","hint":"Mosques: masājidu, masājida.","example":"Complete “many mosques” after بِـ (bi-): بِمَسَاجِد___ كَثِيرَةٍ (bi-masājid___ kathīratin).","answer":"ـَ (-a)","explanation":"diptote genitive — مَسَاجِدُ (masājidu) is a diptote broken plural, so after بِـ (bi-) it can appear as مَسَاجِدَ (masājida)."} -->
 
 ## When kasra returns
 
@@ -52,7 +52,7 @@ A diptote usually regains ordinary genitive kasra when it is definite with **ا�
 
 <!-- quiz: {"type": "multiple-choice", "question": "When does a diptote often regain kasra in the genitive?", "options": ["When it has اَلْـ (al-) or is in iḍāfa", "When it is an object", "When it is singular only", "When it follows a verb"], "answer": 0} -->
 
-<!-- grammar-card: {"rule": "Definiteness with اَلْـ (al-) can restore genitive kasra to a diptote.", "hint": "al-masājidi, not al-masājida.", "example": "Complete “in the mosques”: فِي المَسَاجِد___ (fī al-masājid___).", "answer": "ـِ (-i) — genitive kasra", "explanation": "With اَلْـ (al-), the diptote مَسَاجِدُ (masājidu) takes normal genitive kasra: المَسَاجِدِ (al-masājidi)."} -->
+<!-- grammar-card: {"rule":"Definiteness with اَلْـ (al-) can restore genitive kasra to a diptote.","hint":"al-masājidi, not al-masājida.","example":"Complete “in the mosques”: فِي المَسَاجِد___ (fī al-masājid___).","answer":"ـِ (-i)","explanation":"With اَلْـ (al-), the diptote مَسَاجِدُ (masājidu) takes normal genitive kasra: المَسَاجِدِ (al-masājidi)."} -->
 
 ## Sources
 

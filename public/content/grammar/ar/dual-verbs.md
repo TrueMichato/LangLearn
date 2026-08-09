@@ -22,7 +22,7 @@ When the subject is a pronoun, the dual ending is required: **هُمَا يَد�
 
 When the verb comes before an explicit dual noun subject, MSA usually keeps the verb singular while matching gender: **جَاءَ الطَّالِبَانِ** (jāʾa aṭ-ṭālibāni) — the two male students came, and **جَاءَتِ الطَّالِبَتَانِ** (jāʾati aṭ-ṭālibatāni) — the two female students came.
 
-<!-- grammar-card: {"rule":"Dual verbs agree fully with dual pronouns and with dual subjects placed before the verb.","hint":"هُمَا or a fronted dual noun points to ـَانِ in the present.","example":"Complete the two engineers are working: الْمُهَنْدِسَانِ ___ (al-muhandisāni ___).","answer":"يَعْمَلَانِ (yaʿmalāni) — they two work","explanation":"الْمُهَنْدِسَانِ يَعْمَلَانِ (al-muhandisāni yaʿmalāni) has a fronted masculine dual subject, so the present verb is dual."} -->
+<!-- grammar-card: {"rule":"Dual verbs agree fully with dual pronouns and with dual subjects placed before the verb.","hint":"هُمَا or a fronted dual noun points to ـَانِ in the present.","example":"Complete the two engineers are working: الْمُهَنْدِسَانِ ___ (al-muhandisāni ___).","answer":"يَعْمَلَانِ (yaʿmalāni)","explanation":"they two work — الْمُهَنْدِسَانِ يَعْمَلَانِ (al-muhandisāni yaʿmalāni) has a fronted masculine dual subject, so the present verb is dual."} -->
 
 ## The five verbs and dropped nūn
 
@@ -34,7 +34,7 @@ Dual present forms belong to **الْأَفْعَالُ الْخَمْسَةُ**
 
 <!-- quiz: {"type":"multiple-choice","question":"After لَنْ (lan), which dual present form is correct?","options":["لَنْ يَكْتُبَا (lan yaktubā)","لَنْ يَكْتُبَانِ (lan yaktubāni)","لَنْ يَكْتُبُونَ (lan yaktubūna)","لَنْ يَكْتُبْنَ (lan yaktubna)"],"answer":0} -->
 
-<!-- grammar-card: {"rule":"In dual present forms, the indicative nūn of ـَانِ drops after subjunctive and jussive particles such as لَنْ and لَمْ.","hint":"Compare يَفْعَلَانِ with لَنْ يَفْعَلَا.","example":"Complete they two did not enter: لَمْ ___ الْبَيْتَ (lam ___ al-bayta).","answer":"يَدْخُلَا (yadkhulā) — they two enter","explanation":"لَمْ يَدْخُلَا الْبَيْتَ (lam yadkhulā al-bayta) is jussive, so the dual present loses its final nūn."} -->
+<!-- grammar-card: {"rule":"In dual present forms, the indicative nūn of ـَانِ drops after subjunctive and jussive particles such as لَنْ and لَمْ.","hint":"Compare يَفْعَلَانِ with لَنْ يَفْعَلَا.","example":"Complete they two did not enter: لَمْ ___ الْبَيْتَ (lam ___ al-bayta).","answer":"يَدْخُلَا (yadkhulā)","explanation":"they two enter — لَمْ يَدْخُلَا الْبَيْتَ (lam yadkhulā al-bayta) is jussive, so the dual present loses its final nūn."} -->
 
 ## Sources
 

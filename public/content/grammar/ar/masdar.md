@@ -22,7 +22,7 @@ The **الْمَصْدَرُ** (al-maṣdar) — verbal noun names an action or 
 
 The maṣdar can be the subject of a sentence: **تَعَلُّمُ الْعَرَبِيَّةِ مُفِيدٌ** (taʿallumu al-ʿarabiyyati mufīdun) — learning Arabic is useful. It can also follow verbs of liking: **أُحِبُّ الْقِرَاءَةَ** (uḥibbu al-qirāʾata) — I love reading.
 
-<!-- grammar-card: {"rule":"A maṣdar names the action itself, not the doer or receiver.","hint":"Think “writing,” “study,” “entrance,” or “knowledge.”","example":"Complete “I love reading”: أُحِبُّ ___ (uḥibbu ___).","answer":"الْقِرَاءَةَ (al-qirāʾata) — reading","explanation":"أُحِبُّ الْقِرَاءَةَ (uḥibbu al-qirāʾata) uses a maṣdar as the object of “I love.”"} -->
+<!-- grammar-card: {"rule":"A maṣdar names the action itself, not the doer or receiver.","hint":"Think “writing,” “study,” “entrance,” or “knowledge.”","example":"Complete “I love reading”: أُحِبُّ ___ (uḥibbu ___).","answer":"الْقِرَاءَةَ (al-qirāʾata)","explanation":"reading — أُحِبُّ الْقِرَاءَةَ (uḥibbu al-qirāʾata) uses a maṣdar as the object of “I love.”"} -->
 
 ## Practice patterns
 
@@ -34,7 +34,7 @@ Maṣdar shapes are not all identical. Learn common verbs with their maṣdars a
 
 <!-- quiz: {"type":"multiple-choice","question":"What does الْمَصْدَرُ (al-maṣdar) usually name?","options":["the action itself","the future tense only","a broken plural","a preposition"],"answer":0} -->
 
-<!-- grammar-card: {"rule":"Derived verb forms often have recognizable maṣdar patterns, but many Form I maṣdars must be learned individually.","hint":"Treat the maṣdar as part of the verb’s vocabulary entry.","example":"Complete “study”: دَرَسَ (darasa) → ___ (dirāsatun).","answer":"دِرَاسَةٌ (dirāsatun) — study","explanation":"دِرَاسَةٌ (dirāsatun) is the common maṣdar of دَرَسَ (darasa) — he studied."} -->
+<!-- grammar-card: {"rule":"Derived verb forms often have recognizable maṣdar patterns, but many Form I maṣdars must be learned individually.","hint":"Treat the maṣdar as part of the verb’s vocabulary entry.","example":"Complete “study”: دَرَسَ (darasa) → ___ (dirāsatun).","answer":"دِرَاسَةٌ","explanation":"study — دِرَاسَةٌ (dirāsatun) is the common maṣdar of دَرَسَ (darasa) — he studied."} -->
 
 ## Sources
 

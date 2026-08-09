@@ -20,7 +20,7 @@ The **الْفِعْلُ الْأَجْوَفُ** (al-fiʿl al-ajwaf) — hollow
 
 When a suffix begins with a consonant, the long middle vowel often shortens or disappears: **قَالَ** (qāla) — he said, but **قُلْتُ** (qultu) — I said. The same pattern appears in **كَانَ** (kāna) — he was and **كُنْتُ** (kuntu) — I was.
 
-<!-- grammar-card: {"rule":"Hollow verbs have a weak middle root sound and often show a long vowel in the past singular.","hint":"قَالَ (qāla) and كَانَ (kāna) are high-frequency examples.","example":"Complete “I said”: ___ (qultu).","answer":"قُلْتُ (qultu) — I said","explanation":"قُلْتُ (qultu) is the short-suffix form of the hollow verb قَالَ (qāla) — he said."} -->
+<!-- grammar-card: {"rule":"Hollow verbs have a weak middle root sound and often show a long vowel in the past singular.","hint":"قَالَ (qāla) and كَانَ (kāna) are high-frequency examples.","example":"Complete “I said”: ___ (qultu).","answer":"قُلْتُ","explanation":"I said — قُلْتُ (qultu) is the short-suffix form of the hollow verb قَالَ (qāla) — he said."} -->
 
 ## Practice patterns
 
@@ -34,7 +34,7 @@ Imperatives can be short too:
 
 <!-- quiz: {"type":"multiple-choice","question":"What is the imperative of قَالَ (qāla) — he said?","options":["قُلْ (qul) — say!","قَالَ (qāla) — he said","يَقُولُ (yaqūlu) — he says","قَائِلٌ (qāʾilun) — speaker"],"answer":0} -->
 
-<!-- grammar-card: {"rule":"The long vowel in a hollow verb may shorten before suffixes or in the imperative.","hint":"قَالَ becomes قُلْتُ and قُلْ.","example":"Complete “I was”: ___ (kuntu).","answer":"كُنْتُ (kuntu) — I was","explanation":"كُنْتُ (kuntu) is the suffix form of كَانَ (kāna) — he was."} -->
+<!-- grammar-card: {"rule":"The long vowel in a hollow verb may shorten before suffixes or in the imperative.","hint":"قَالَ becomes قُلْتُ and قُلْ.","example":"Complete “I was”: ___ (kuntu).","answer":"كُنْتُ","explanation":"I was — كُنْتُ (kuntu) is the suffix form of كَانَ (kāna) — he was."} -->
 
 ## Sources
 

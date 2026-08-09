@@ -22,7 +22,7 @@ Formal MSA often softens address with **حَضْرَتُكَ** (ḥaḍratuka) �
 
 **حَضْرَتُكَ** (ḥaḍratuka) — your presence can replace or accompany second-person address in formal service contexts: **هَلْ تُرِيدُ حَضْرَتُكَ قَهْوَةً؟** (hal turīdu ḥaḍratuka qahwatan?) — would you like coffee, sir? Titles come before names: **السَّيِّدُ أَحْمَدُ** (as-sayyidu ʾaḥmadu) — Mr. Ahmad, **الدُّكْتُورَةُ لَيْلَى** (ad-duktūratu laylā) — Dr. Layla.
 
-<!-- grammar-card: {"rule":"Polite requests often use مِنْ فَضْلِكَ or لَوْ سَمَحْتَ before the request.","hint":"Put a softener before the command or question.","example":"Make this polite: اِفْتَحِ الْبَابَ (iftaḥi l-bāba) — open the door: ___ .","answer":"مِنْ فَضْلِكَ، اِفْتَحِ الْبَابَ (min faḍlika, iftaḥi l-bāba) — please open the door","explanation":"مِنْ فَضْلِكَ softens the imperative and makes the request more courteous."} -->
+<!-- grammar-card: {"rule":"Polite requests often use مِنْ فَضْلِكَ or لَوْ سَمَحْتَ before the request.","hint":"Put a softener before the command or question.","example":"Make this polite: اِفْتَحِ الْبَابَ (iftaḥi l-bāba) — open the door: ___ .","answer":"مِنْ فَضْلِكَ، اِفْتَحِ الْبَابَ (min faḍlika, iftaḥi l-bāba)","explanation":"please open the door — مِنْ فَضْلِكَ softens the imperative and makes the request more courteous."} -->
 
 ## Register choices
 
@@ -36,7 +36,7 @@ Formal MSA often softens address with **حَضْرَتُكَ** (ḥaḍratuka) �
 
 <!-- quiz: {"type":"multiple-choice","question":"What does حَضْرَتُكَ (ḥaḍratuka) add to an address?","options":["A polite formal tone","A past-tense marker","A plural noun ending","A negation particle"],"answer":0} -->
 
-<!-- grammar-card: {"rule":"Titles such as السَّيِّدُ and الدُّكْتُورُ usually precede the name in formal address.","hint":"Place the title before the person's name.","example":"Address Mr. Ahmad formally: ___ .","answer":"السَّيِّدُ أَحْمَدُ (as-sayyidu ʾaḥmadu) — Mr. Ahmad","explanation":"The formal title السَّيِّدُ comes before the proper name."} -->
+<!-- grammar-card: {"rule":"Titles such as السَّيِّدُ and الدُّكْتُورُ usually precede the name in formal address.","hint":"Place the title before the person's name.","example":"Address Mr. Ahmad formally: ___ .","answer":"السَّيِّدُ أَحْمَدُ (as-sayyidu ʾaḥmadu)","explanation":"Mr. Ahmad — The formal title السَّيِّدُ comes before the proper name."} -->
 
 ## Sources
 

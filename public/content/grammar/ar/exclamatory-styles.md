@@ -24,7 +24,7 @@ In this pattern, مَا is an exclamatory word, the following form looks like a 
 - مَا أَطْيَبَ الطَّعَامَ (mā aṭyaba aṭ-ṭaʿāma) — How delicious the food is.
 - مَا أَصْعَبَ السُّؤَالَ (mā aṣʿaba as-suʾāla) — How difficult the question is.
 
-<!-- grammar-card: {"rule":"The exclamation pattern مَا أَفْعَلَهُ often puts the admired noun in the accusative.","hint":"Look for مَا plus an afʿala form plus an accusative noun.","example":"Complete: How difficult the question is: مَا أَصْعَبَ ___ (mā aṣʿaba ___).","answer":"السُّؤَالَ (as-suʾāla) — the question","explanation":"In مَا أَصْعَبَ السُّؤَالَ, the noun admired by the exclamation is accusative."} -->
+<!-- grammar-card: {"rule":"The exclamation pattern مَا أَفْعَلَهُ often puts the admired noun in the accusative.","hint":"Look for مَا plus an afʿala form plus an accusative noun.","example":"Complete: How difficult the question is: مَا أَصْعَبَ ___ (mā aṣʿaba ___).","answer":"السُّؤَالَ (as-suʾāla)","explanation":"the question — In مَا أَصْعَبَ السُّؤَالَ, the noun admired by the exclamation is accusative."} -->
 
 ## Praise and blame
 
@@ -36,7 +36,7 @@ In this pattern, مَا is an exclamatory word, the following form looks like a 
 
 <!-- quiz: {"type":"multiple-choice","question":"Which word expresses blame in the praise and blame style?","options":["بِئْسَ (biʾsa)","نِعْمَ (niʿma)","مَا (mā)","أَحْسِنْ (aḥsin)"],"answer":0} -->
 
-<!-- grammar-card: {"rule":"نِعْمَ praises and بِئْسَ blames in fixed rhetorical patterns.","hint":"They are often followed by a definite noun naming the class.","example":"Complete: Truthfulness is an excellent trait: نِعْمَ الْخُلُقُ ___ (niʿma al-khuluqu ___).","answer":"الصِّدْقُ (aṣ-ṣidqu) — truthfulness","explanation":"نِعْمَ الْخُلُقُ الصِّدْقُ praises truthfulness as an excellent trait."} -->
+<!-- grammar-card: {"rule":"نِعْمَ praises and بِئْسَ blames in fixed rhetorical patterns.","hint":"They are often followed by a definite noun naming the class.","example":"Complete: Truthfulness is an excellent trait: نِعْمَ الْخُلُقُ ___ (niʿma al-khuluqu ___).","answer":"الصِّدْقُ (aṣ-ṣidqu)","explanation":"نِعْمَ الْخُلُقُ الصِّدْقُ praises truthfulness as an excellent trait."} -->
 
 ## Tone and register
 

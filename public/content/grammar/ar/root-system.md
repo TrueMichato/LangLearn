@@ -23,7 +23,7 @@ The root **ك-ت-ب** (k-t-b) — writing appears in many related words. The con
 
 Patterns are not magic formulas for every word, but they are powerful clues. When you meet **مَدْرَسَةٌ** (madrasatun) — school, you can notice the root **د-ر-س** (d-r-s) — studying and the place-like pattern.
 
-<!-- grammar-card: {"rule": "Arabic roots are consonant skeletons that combine with patterns.", "hint": "The root ك-ت-ب (k-t-b) connects to writing.", "example": "Complete the writing-family word “writer”: ___ (kātibun) — writer.", "answer": "كَاتِبٌ (kātibun) — writer", "explanation": "كَاتِبٌ (kātibun) — writer keeps ك-ت-ب (k-t-b) and uses an active participle pattern."} -->
+<!-- grammar-card: {"rule":"Arabic roots are consonant skeletons that combine with patterns.","hint":"The root ك-ت-ب (k-t-b) connects to writing.","example":"Complete the writing-family word “writer”: ___ (kātibun) — writer.","answer":"كَاتِبٌ","explanation":"كَاتِبٌ (kātibun) — writer keeps ك-ت-ب (k-t-b) and uses an active participle pattern."} -->
 
 ## Practice patterns
 
@@ -38,7 +38,7 @@ Treat roots as memory hooks, not pressure.
 
 <!-- quiz: {"type": "multiple-choice", "question": "What does a root usually provide?", "options": ["A field of meaning", "Only plural endings", "Only dialect pronunciation", "A punctuation rule"], "answer": 0} -->
 
-<!-- grammar-card: {"rule": "The pattern مَفْعَلٌ (mafʿalun) can mark a place or instrument for some roots.", "hint": "Notice مَـ (ma-) at the front.", "example": "The word ___ (maktabun) — office / desk belongs to the writing root.", "answer": "مَكْتَبٌ (maktabun) — office / desk", "explanation": "مَكْتَبٌ (maktabun) — office / desk combines the writing root with a place-like pattern."} -->
+<!-- grammar-card: {"rule":"The pattern مَفْعَلٌ (mafʿalun) can mark a place or instrument for some roots.","hint":"Notice مَـ (ma-) at the front.","example":"The word ___ (maktabun) — office / desk belongs to the writing root.","answer":"مَكْتَبٌ","explanation":"مَكْتَبٌ (maktabun) — office / desk combines the writing root with a place-like pattern."} -->
 
 ## Sources
 

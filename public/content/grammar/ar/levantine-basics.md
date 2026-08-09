@@ -24,7 +24,7 @@ A common progressive marker is **عَمْ** (ʿam) — currently / progressive, 
 
 Compared with MSA **أُرِيدُ أَنْ أَذْهَبَ** (urīdu an adh-haba) — I want to go, Levantine **بَدِّي أَرُوحْ** (baddī arūḥ) — I want to go is shorter and very common.
 
-<!-- grammar-card: {"rule": "Levantine often uses عَمْ (ʿam) with a present verb for ongoing action.", "hint": "Like “am/is/are doing.”", "example": "Complete “I am writing”: أَنَا ___ بَاكْتُبْ (anā ___ baktub).", "answer": "عَمْ (ʿam) — progressive marker", "explanation": "أَنَا عَمْ بَاكْتُبْ (anā ʿam baktub) — I am writing."} -->
+<!-- grammar-card: {"rule":"Levantine often uses عَمْ (ʿam) with a present verb for ongoing action.","hint":"Like “am/is/are doing.”","example":"Complete “I am writing”: أَنَا ___ بَاكْتُبْ (anā ___ baktub).","answer":"عَمْ (ʿam)","explanation":"progressive marker — أَنَا عَمْ بَاكْتُبْ (anā ʿam baktub) — I am writing."} -->
 
 ## Practice patterns
 
@@ -38,7 +38,7 @@ Use MSA for formal contexts; use Levantine patterns when your conversation partn
 
 <!-- quiz: {"type": "multiple-choice", "question": "Which phrase means “I want”?", "options": ["بَدِّي (baddī) — I want", "وَيْنَ (wēn) — where", "مَا (mā) — not", "كِيفَكْ (kīfak) — how are you"], "answer": 0} -->
 
-<!-- grammar-card: {"rule": "Levantine بَدِّي (baddī) — I want expresses wanting before a verb or noun.", "hint": "Very common everyday form.", "example": "Complete “I want to go”: ___ أَرُوحْ (___ arūḥ).", "answer": "بَدِّي (baddī) — I want", "explanation": "بَدِّي أَرُوحْ (baddī arūḥ) — I want to go."} -->
+<!-- grammar-card: {"rule":"Levantine بَدِّي (baddī) — I want expresses wanting before a verb or noun.","hint":"Very common everyday form.","example":"Complete “I want to go”: ___ أَرُوحْ (___ arūḥ).","answer":"بَدِّي (baddī)","explanation":"بَدِّي أَرُوحْ (baddī arūḥ) — I want to go."} -->
 
 ## Sources
 

@@ -21,7 +21,7 @@ Use **سَـ** (sa-) — will / going to for near or simple future, and **سَو
 
 In everyday MSA, **سَـ** (sa-) — will is very common and compact. **سَوْفَ** (sawfa) — will is a separate word, so it can feel a little more deliberate.
 
-<!-- grammar-card: {"rule": "The prefix سَـ (sa-) — will attaches directly to a present-tense verb.", "hint": "Small marker, future meaning.", "example": "Complete “we will go”: ___ نَذْهَبُ (nadhhabu) — we go.", "answer": "سَـ (sa-) — will", "explanation": "سَنَذْهَبُ (sa-nadhhabu) — we will go attaches سَـ (sa-) to the present verb."} -->
+<!-- grammar-card: {"rule":"The prefix سَـ (sa-) — will attaches directly to a present-tense verb.","hint":"Small marker, future meaning.","example":"Complete “we will go”: ___ نَذْهَبُ (nadhhabu) — we go.","answer":"سَـ (sa-)","explanation":"سَنَذْهَبُ (sa-nadhhabu) — we will go attaches سَـ (sa-) to the present verb."} -->
 
 ## Practice patterns
 
@@ -33,7 +33,7 @@ Future with time words:
 
 <!-- quiz: {"type": "multiple-choice", "question": "What follows سَوْفَ (sawfa) — will?", "options": ["A past-tense verb", "A present-tense verb", "Only a noun", "A genitive preposition"], "answer": 1} -->
 
-<!-- grammar-card: {"rule": "سَوْفَ (sawfa) — will is a separate future marker before the present verb.", "hint": "A full word before the verb.", "example": "Complete “he will read”: ___ يَقْرَأُ (yaqraʾu) — he reads.", "answer": "سَوْفَ (sawfa) — will", "explanation": "سَوْفَ يَقْرَأُ (sawfa yaqraʾu) — he will read uses the separate future marker."} -->
+<!-- grammar-card: {"rule":"سَوْفَ (sawfa) — will is a separate future marker before the present verb.","hint":"A full word before the verb.","example":"Complete “he will read”: ___ يَقْرَأُ (yaqraʾu) — he reads.","answer":"سَوْفَ (sawfa)","explanation":"سَوْفَ يَقْرَأُ (sawfa yaqraʾu) — he will read uses the separate future marker."} -->
 
 ## Sources
 

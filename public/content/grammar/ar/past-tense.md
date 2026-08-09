@@ -24,7 +24,7 @@ The base past form **كَتَبَ** (kataba) — he wrote is the dictionary-styl
 
 The past tense normally describes completed events. **ذَهَبْتُ إِلَى الْمَدْرَسَةِ** (dhahabtu ilā al-madrasati) — I went to the school. The suffix **ـتُ** (-tu) — I did is your friend.
 
-<!-- grammar-card: {"rule": "The basic past form فَعَلَ (faʿala) often represents “he did.”", "hint": "Third masculine singular has no suffix beyond the pattern vowels.", "example": "Complete “he wrote”: ___ (kataba).", "answer": "كَتَبَ (kataba) — he wrote", "explanation": "كَتَبَ (kataba) — he wrote is the base past form."} -->
+<!-- grammar-card: {"rule":"The basic past form فَعَلَ (faʿala) often represents “he did.”","hint":"Third masculine singular has no suffix beyond the pattern vowels.","example":"Complete “he wrote”: ___ (kataba).","answer":"كَتَبَ","explanation":"كَتَبَ (kataba) — he wrote is the base past form."} -->
 
 ## Practice patterns
 
@@ -36,7 +36,7 @@ More examples:
 
 <!-- quiz: {"type": "multiple-choice", "question": "Which form means “she wrote”?", "options": ["كَتَبَ (kataba) — he wrote", "كَتَبَتْ (katabat) — she wrote", "كَتَبْنَا (katabnā) — we wrote", "كَتَبُوا (katabū) — they wrote"], "answer": 1} -->
 
-<!-- grammar-card: {"rule": "The suffix ـنَا (-nā) marks “we” in the past tense.", "hint": "Attach it to the past stem.", "example": "Complete “we wrote”: كَتَب___ (katab___).", "answer": "ـنَا (-nā) — we", "explanation": "كَتَبْنَا (katabnā) — we wrote uses the first-person plural suffix."} -->
+<!-- grammar-card: {"rule":"The suffix ـنَا (-nā) marks “we” in the past tense.","hint":"Attach it to the past stem.","example":"Complete “we wrote”: كَتَب___ (katab___).","answer":"ـنَا (-nā)","explanation":"كَتَبْنَا (katabnā) — we wrote uses the first-person plural suffix."} -->
 
 ## Sources
 

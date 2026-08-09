@@ -14,7 +14,7 @@ The **حَالٌ** (ḥālun) — state describes how the subject or object is a
 
 <!-- quiz: {"type": "multiple-choice", "question": "What question does ḥāl usually answer?", "options": ["In what state or how?", "How many?", "Whose?", "After which preposition?"], "answer": 0} -->
 
-<!-- grammar-card: {"rule": "Ḥāl describes the state of a participant during the action.", "hint": "Ask: how did the person come?", "example": "Complete “the student came smiling”: جَاءَ الطَّالِبُ ___ (jāʾa aṭ-ṭālibu ___).", "answer": "مُبْتَسِمًا (mubtasiman) — smiling", "explanation": "مُبْتَسِمًا (mubtasiman) is an indefinite accusative describing the student’s state while coming."} -->
+<!-- grammar-card: {"rule":"Ḥāl describes the state of a participant during the action.","hint":"Ask: how did the person come?","example":"Complete “the student came smiling”: جَاءَ الطَّالِبُ ___ (jāʾa aṭ-ṭālibu ___).","answer":"مُبْتَسِمًا (mubtasiman)","explanation":"smiling — مُبْتَسِمًا (mubtasiman) is an indefinite accusative describing the student’s state while coming."} -->
 
 ## Tamyīz: specification
 
@@ -29,7 +29,7 @@ The **تَمْيِيزٌ** (tamyīzun) — specification clarifies what a number
 
 <!-- quiz: {"type": "multiple-choice", "question": "Which sentence contains tamyīz?", "options": ["عِنْدِي عِشْرُونَ كِتَابًا (ʿindī ʿishrūna kitāban)", "جَاءَ الطَّالِبُ مُبْتَسِمًا (jāʾa aṭ-ṭālibu mubtasiman)", "نَامَ الوَلَدُ مُبَكِّرًا (nāma al-waladu mubakkiran)", "دَخَلَتِ المُدَرِّسَةُ مُسْرِعَةً (dakhalati al-mudarrisatu musriʿatan)"], "answer": 0} -->
 
-<!-- grammar-card: {"rule": "Tamyīz specifies an unclear number or measure.", "hint": "Ask: twenty what?", "example": "Complete “I have twenty books”: عِنْدِي عِشْرُونَ ___ (ʿindī ʿishrūna ___).", "answer": "كِتَابًا (kitāban) — books, accusative singular specification", "explanation": "After numbers like عِشْرُونَ (ʿishrūna), the counted noun is singular accusative tamyīz."} -->
+<!-- grammar-card: {"rule":"Tamyīz specifies an unclear number or measure.","hint":"Ask: twenty what?","example":"Complete “I have twenty books”: عِنْدِي عِشْرُونَ ___ (ʿindī ʿishrūna ___).","answer":"كِتَابًا (kitāban)","explanation":"books, accusative singular specification — After numbers like عِشْرُونَ (ʿishrūna), the counted noun is singular accusative tamyīz."} -->
 
 ## Side-by-side test
 

@@ -19,7 +19,7 @@ Form II uses فَعَّلَ (faʿʿala) — he caused / intensified, with a shad
 
 Compare عَلِمَ (ʿalima) — he knew with عَلَّمَ (ʿallama) — he taught. The second verb means “made someone know.” In دَرَسَ (darasa) — he studied and دَرَّسَ (darrasa) — he taught, the same doubled middle consonant points to a stronger or causative meaning.
 
-<!-- grammar-card: {"rule":"Form II فَعَّلَ (faʿʿala) often doubles the middle root letter and makes the action causative or intensive.","hint":"Look for shadda in the middle of the verb.","example":"Complete “he taught”: ___ (ʿallama) — he taught.","answer":"عَلَّمَ (ʿallama) — he taught","explanation":"عَلَّمَ (ʿallama) is Form II. It means he caused someone to know, so it is used for teaching."} -->
+<!-- grammar-card: {"rule":"Form II فَعَّلَ (faʿʿala) often doubles the middle root letter and makes the action causative or intensive.","hint":"Look for shadda in the middle of the verb.","example":"Complete “he taught”: ___ (ʿallama) — he taught.","answer":"عَلَّمَ","explanation":"he taught — عَلَّمَ (ʿallama) is Form II. It means he caused someone to know, so it is used for teaching."} -->
 
 ## Form III: contact and association
 
@@ -33,7 +33,7 @@ Form III often suggests that the subject is acting with, toward, or in relation 
 
 <!-- quiz: {"type":"multiple-choice","question":"Which verb is Form III and often suggests interaction?","options":["شَارَكَ (shāraka) — he participated","عَلَّمَ (ʿallama) — he taught","كَتَبَ (kataba) — he wrote","اِنْكَسَرَ (inkasara) — it broke"],"answer":0} -->
 
-<!-- grammar-card: {"rule":"Form III فَاعَلَ (fāʿala) often has a long ā after the first root letter and can show association or interaction.","hint":"The ā after the first consonant is the visual clue.","example":"Complete “he participated”: ___ (shāraka) — he participated.","answer":"شَارَكَ (shāraka) — he participated","explanation":"شَارَكَ (shāraka) follows فَاعَلَ (fāʿala), a Form III pattern often used for action with others."} -->
+<!-- grammar-card: {"rule":"Form III فَاعَلَ (fāʿala) often has a long ā after the first root letter and can show association or interaction.","hint":"The ā after the first consonant is the visual clue.","example":"Complete “he participated”: ___ (shāraka) — he participated.","answer":"شَارَكَ","explanation":"he participated — شَارَكَ (shāraka) follows فَاعَلَ (fāʿala), a Form III pattern often used for action with others."} -->
 
 ## Sources
 

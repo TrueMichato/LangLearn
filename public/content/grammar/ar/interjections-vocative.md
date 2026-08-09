@@ -21,7 +21,7 @@ Calling to someone is a small structure with a lot of grammar behind it. MSA use
 
 A single definite person or intended indefinite noun is usually built on ḍamma in the place of the accusative: **يَا مُحَمَّدُ** (yā muḥammadu) — O Muḥammad, and **يَا رَجُلُ** (yā rajulu) — O man, when a specific man is meant. A possessed or iḍāfa vocative is accusative: **يَا صَاحِبَ الْبَيْتِ** (yā ṣāḥiba al-bayti) — O owner of the house.
 
-<!-- grammar-card: {"rule":"A simple proper-name vocative is usually built on ḍamma, as in يَا زَيْدُ (yā zaydu).","hint":"Do not make the proper name accusative in this common pattern.","example":"Complete O Maryam: يَا ___ (yā ___).","answer":"مَرْيَمُ (maryamu) — Maryam in vocative form","explanation":"يَا مَرْيَمُ (yā maryamu) treats the proper name as a simple called noun built on ḍamma."} -->
+<!-- grammar-card: {"rule":"A simple proper-name vocative is usually built on ḍamma, as in يَا زَيْدُ (yā zaydu).","hint":"Do not make the proper name accusative in this common pattern.","example":"Complete O Maryam: يَا ___ (yā ___).","answer":"مَرْيَمُ (maryamu)","explanation":"Maryam in vocative form — يَا مَرْيَمُ (yā maryamu) treats the proper name as a simple called noun built on ḍamma."} -->
 
 ## Ayyuhā, ayyatuhā, and emotional calls
 
@@ -31,7 +31,7 @@ The particle **وَا** (wā) — O / alas is common in lament or emotional excl
 
 <!-- quiz: {"type":"multiple-choice","question":"Which particle often marks lament or emotional exclamation?","options":["وَا (wā)","فِي (fī)","لَمْ (lam)","مَعَ (maʿa)"],"answer":0} -->
 
-<!-- grammar-card: {"rule":"When the vocative is an iḍāfa, the called noun is accusative, as in يَا طَالِبَ الْعِلْمِ.","hint":"The first noun of the iḍāfa shows fatḥa.","example":"Complete O owner of the house: يَا ___ الْبَيْتِ (yā ___ al-bayti).","answer":"صَاحِبَ (ṣāḥiba) — owner in the accusative","explanation":"يَا صَاحِبَ الْبَيْتِ (yā ṣāḥiba al-bayti) is an iḍāfa vocative, so the called noun صَاحِبَ is accusative."} -->
+<!-- grammar-card: {"rule":"When the vocative is an iḍāfa, the called noun is accusative, as in يَا طَالِبَ الْعِلْمِ.","hint":"The first noun of the iḍāfa shows fatḥa.","example":"Complete O owner of the house: يَا ___ الْبَيْتِ (yā ___ al-bayti).","answer":"صَاحِبَ (ṣāḥiba)","explanation":"owner in the accusative — يَا صَاحِبَ الْبَيْتِ (yā ṣāḥiba al-bayti) is an iḍāfa vocative, so the called noun صَاحِبَ is accusative."} -->
 
 ## Sources
 

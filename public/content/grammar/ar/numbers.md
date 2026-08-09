@@ -23,7 +23,7 @@ One and two usually follow the noun and agree with it. From three to ten, the nu
 
 The “opposite gender” rule for 3–10 is easier with examples. **كِتَابٌ** (kitābun) — book is masculine, so “three books” uses feminine-looking **ثَلَاثَةُ** (thalāthatu) — three. **سَيَّارَةٌ** (sayyāratun) — car is feminine, so “three cars” uses **ثَلَاثُ** (thalāthu) — three.
 
-<!-- grammar-card: {"rule": "For “one,” the number usually follows the noun and agrees with it.", "hint": "Noun + one.", "example": "Complete “one car”: سَيَّارَةٌ ___ (sayyāratun ___).", "answer": "وَاحِدَةٌ (wāḥidatun) — one, feminine", "explanation": "سَيَّارَةٌ وَاحِدَةٌ (sayyāratun wāḥidatun) — one car uses feminine agreement."} -->
+<!-- grammar-card: {"rule":"For “one,” the number usually follows the noun and agrees with it.","hint":"Noun + one.","example":"Complete “one car”: سَيَّارَةٌ ___ (sayyāratun ___).","answer":"وَاحِدَةٌ (wāḥidatun)","explanation":"one, feminine — سَيَّارَةٌ وَاحِدَةٌ (sayyāratun wāḥidatun) — one car uses feminine agreement."} -->
 
 ## Practice patterns
 
@@ -35,7 +35,7 @@ For 11–99, rules get more layered. For now, recognize useful forms:
 
 <!-- quiz: {"type": "multiple-choice", "question": "Which phrase means “three books”?", "options": ["ثَلَاثَةُ كُتُبٍ (thalāthatu kutubin) — three books", "ثَلَاثُ كُتُبٍ (thalāthu kutubin) — three books", "كِتَابَانِ (kitābāni) — two books", "كِتَابٌ وَاحِدٌ (kitābun wāḥidun) — one book"], "answer": 0} -->
 
-<!-- grammar-card: {"rule": "For 3–10, the counted noun is usually plural genitive.", "hint": "Number + plural-in.", "example": "Complete “three cars”: ثَلَاثُ ___ (thalāthu ___).", "answer": "سَيَّارَاتٍ (sayyārātin) — cars, genitive plural", "explanation": "ثَلَاثُ سَيَّارَاتٍ (thalāthu sayyārātin) — three cars uses plural genitive after the number."} -->
+<!-- grammar-card: {"rule":"For 3–10, the counted noun is usually plural genitive.","hint":"Number + plural-in.","example":"Complete “three cars”: ثَلَاثُ ___ (thalāthu ___).","answer":"سَيَّارَاتٍ (sayyārātin)","explanation":"cars, genitive plural — ثَلَاثُ سَيَّارَاتٍ (thalāthu sayyārātin) — three cars uses plural genitive after the number."} -->
 
 ## Sources
 

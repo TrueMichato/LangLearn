@@ -26,7 +26,7 @@ Independent pronouns stand alone as subjects. In present nominal sentences, they
 
 Because verbs already carry subject endings, Arabic often drops pronouns with verbs. But pronouns are very useful for emphasis and for verbless sentences like **أَنَا سَعِيدٌ** (anā saʿīdun) — I am happy, masculine.
 
-<!-- grammar-card: {"rule": "أَنْتَ (anta) — you masculine and أَنْتِ (anti) — you feminine differ by the final vowel.", "hint": "Listen for a vs. i.", "example": "Address one female student: ___ طَالِبَةٌ (ṭālibatun) — female student.", "answer": "أَنْتِ (anti) — you, feminine singular", "explanation": "أَنْتِ طَالِبَةٌ (anti ṭālibatun) — you are a female student uses the feminine singular “you.”"} -->
+<!-- grammar-card: {"rule":"أَنْتَ (anta) — you masculine and أَنْتِ (anti) — you feminine differ by the final vowel.","hint":"Listen for a vs. i.","example":"Address one female student: ___ طَالِبَةٌ (ṭālibatun) — female student.","answer":"أَنْتِ (anti)","explanation":"you, feminine singular — أَنْتِ طَالِبَةٌ (anti ṭālibatun) — you are a female student uses the feminine singular “you.”"} -->
 
 ## Practice patterns
 
@@ -38,7 +38,7 @@ Gender in “you” matters:
 
 <!-- quiz: {"type": "multiple-choice", "question": "Why can Arabic often drop subject pronouns with verbs?", "options": ["The verb ending often shows the subject", "Arabic has no subjects", "Pronouns are only dialect", "Pronouns are always attached to nouns"], "answer": 0} -->
 
-<!-- grammar-card: {"rule": "Independent pronouns can form nominal sentences without a present-tense “to be.”", "hint": "Pronoun + predicate.", "example": "Complete “We are students”: ___ طُلَّابٌ (ṭullābun) — students.", "answer": "نَحْنُ (naḥnu) — we", "explanation": "نَحْنُ طُلَّابٌ (naḥnu ṭullābun) — we are students is a nominal sentence."} -->
+<!-- grammar-card: {"rule":"Independent pronouns can form nominal sentences without a present-tense “to be.”","hint":"Pronoun + predicate.","example":"Complete “We are students”: ___ طُلَّابٌ (ṭullābun) — students.","answer":"نَحْنُ (naḥnu)","explanation":"نَحْنُ طُلَّابٌ (naḥnu ṭullābun) — we are students is a nominal sentence."} -->
 
 ## Sources
 

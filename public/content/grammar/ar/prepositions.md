@@ -23,7 +23,7 @@ Core prepositions include **فِي** (fī) — in, **عَلَى** (ʿalā) — o
 
 Short prepositions attach in writing: **بِـ** (bi-) — with / by and **لِـ** (li-) — to / for are prefixes. Before **الْـ** (al-) — the, **لِـ** (li-) — to / for becomes **لِلْـ** (lil-) — for the.
 
-<!-- grammar-card: {"rule": "A noun after a preposition is normally genitive.", "hint": "Listen for -i or -in in fully vowelled MSA.", "example": "Complete “from the school”: مِنَ الْمَدْرَسَة___ (mina al-madrasat___).", "answer": "ـِ (-i) — genitive ending", "explanation": "مِنَ الْمَدْرَسَةِ (mina al-madrasati) — from the school uses genitive after مِنْ (min) — from."} -->
+<!-- grammar-card: {"rule":"A noun after a preposition is normally genitive.","hint":"Listen for -i or -in in fully vowelled MSA.","example":"Complete “from the school”: مِنَ الْمَدْرَسَة___ (mina al-madrasat___).","answer":"ـِ (-i)","explanation":"genitive ending — مِنَ الْمَدْرَسَةِ (mina al-madrasati) — from the school uses genitive after مِنْ (min) — from."} -->
 
 ## Practice patterns
 
@@ -35,7 +35,7 @@ Sentence examples:
 
 <!-- quiz: {"type": "multiple-choice", "question": "Which phrase means “in the house”?", "options": ["فِي الْبَيْتِ (fī al-bayti) — in the house", "عَلَى الْبَيْتِ (ʿalā al-bayti) — on the house", "مِنَ الْبَيْتِ (mina al-bayti) — from the house", "إِلَى الْبَيْتِ (ilā al-bayti) — to the house"], "answer": 0} -->
 
-<!-- grammar-card: {"rule": "The prefix بِـ (bi-) — with / by attaches directly to the noun.", "hint": "It often marks an instrument.", "example": "Complete “with a pen”: ___ قَلَمٍ (qalamin) — a pen.", "answer": "بِـ (bi-) — with / by", "explanation": "بِقَلَمٍ (biqalamin) — with a pen uses the attached preposition بِـ (bi-)."} -->
+<!-- grammar-card: {"rule":"The prefix بِـ (bi-) — with / by attaches directly to the noun.","hint":"It often marks an instrument.","example":"Complete “with a pen”: ___ قَلَمٍ (qalamin) — a pen.","answer":"بِـ (bi-)","explanation":"with / by — بِقَلَمٍ (biqalamin) — with a pen uses the attached preposition بِـ (bi-)."} -->
 
 ## Sources
 

@@ -23,7 +23,7 @@ Common question words include **مَا** (mā) — what, **مَنْ** (man) — 
 
 For yes/no questions, place **أَ** (a-) — question marker before the sentence: **أَهٰذَا بَيْتٌ؟** (a-hādhā baytun?) — is this a house? In speech, intonation helps too, but the particle is clear in writing.
 
-<!-- grammar-card: {"rule": "أَيْنَ (ayna) — where asks about place.", "hint": "Use it with locations.", "example": "Complete “Where is the school?”: ___ الْمَدْرَسَةُ؟ (___ al-madrasatu?)", "answer": "أَيْنَ (ayna) — where", "explanation": "أَيْنَ الْمَدْرَسَةُ؟ (ayna al-madrasatu?) — where is the school?"} -->
+<!-- grammar-card: {"rule":"أَيْنَ (ayna) — where asks about place.","hint":"Use it with locations.","example":"Complete “Where is the school?”: ___ الْمَدْرَسَةُ؟ (___ al-madrasatu?)","answer":"أَيْنَ (ayna)","explanation":"أَيْنَ الْمَدْرَسَةُ؟ (ayna al-madrasatu?) — where is the school?"} -->
 
 ## Practice patterns
 
@@ -34,7 +34,7 @@ With **كَمْ** (kam) — how many, the counted noun is often singular accusat
 
 <!-- quiz: {"type": "multiple-choice", "question": "What does the particle أَ (a-) do?", "options": ["Marks a yes/no question", "Makes a plural", "Adds possession", "Marks feminine gender"], "answer": 0} -->
 
-<!-- grammar-card: {"rule": "كَيْفَ (kayfa) — how asks about condition or manner.", "hint": "Common greeting pattern.", "example": "Complete “How are you?” to a male: ___ حَالُكَ؟ (___ ḥāluka?)", "answer": "كَيْفَ (kayfa) — how", "explanation": "كَيْفَ حَالُكَ؟ (kayfa ḥāluka?) — how are you, to a male?"} -->
+<!-- grammar-card: {"rule":"كَيْفَ (kayfa) — how asks about condition or manner.","hint":"Common greeting pattern.","example":"Complete “How are you?” to a male: ___ حَالُكَ؟ (___ ḥāluka?)","answer":"كَيْفَ (kayfa)","explanation":"كَيْفَ حَالُكَ؟ (kayfa ḥāluka?) — how are you, to a male?"} -->
 
 ## Sources
 

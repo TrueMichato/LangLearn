@@ -26,7 +26,7 @@ The most important greeting is **السَّلَامُ عَلَيْكُمْ** (as
 
 Arabic politeness often uses blessings and warm formulas. **جَزَاكَ اللهُ خَيْرًا** (jazāka allāhu khayran) — may God reward you with good, to a male, is a heartfelt thank-you in many contexts.
 
-<!-- grammar-card: {"rule": "The greeting السَّلَامُ عَلَيْكُمْ (as-salāmu ʿalaykum) — peace be upon you has a set reply.", "hint": "Reply with “and upon you be peace.”", "example": "Complete the reply: ___ (wa-ʿalaykumu as-salāmu) — and peace be upon you.", "answer": "وَعَلَيْكُمُ السَّلَامُ (wa-ʿalaykumu as-salāmu) — and peace be upon you", "explanation": "وَعَلَيْكُمُ السَّلَامُ (wa-ʿalaykumu as-salāmu) is the standard reply to the greeting."} -->
+<!-- grammar-card: {"rule":"The greeting السَّلَامُ عَلَيْكُمْ (as-salāmu ʿalaykum) — peace be upon you has a set reply.","hint":"Reply with “and upon you be peace.”","example":"Complete the reply: ___ (wa-ʿalaykumu as-salāmu) — and peace be upon you.","answer":"وَعَلَيْكُمُ السَّلَامُ","explanation":"and peace be upon you — وَعَلَيْكُمُ السَّلَامُ (wa-ʿalaykumu as-salāmu) is the standard reply to the greeting."} -->
 
 ## Practice patterns
 
@@ -39,7 +39,7 @@ Mini-dialogue:
 
 <!-- quiz: {"type": "multiple-choice", "question": "Which phrase means “please” to a female?", "options": ["مِنْ فَضْلِكَ (min faḍlika) — please, to a male", "مِنْ فَضْلِكِ (min faḍliki) — please, to a female", "صَبَاحُ الْخَيْرِ (ṣabāḥu al-khayri) — good morning", "عَفْوًا (ʿafwan) — you are welcome / excuse me"], "answer": 1} -->
 
-<!-- grammar-card: {"rule": "مِنْ فَضْلِكَ (min faḍlika) — please changes with the person addressed.", "hint": "Final -ka for a male, -ki for a female.", "example": "Complete “please” to a female: مِنْ ___ (min ___).", "answer": "فَضْلِكِ (faḍliki) — your favor, to a female", "explanation": "مِنْ فَضْلِكِ (min faḍliki) — please, to a female uses the feminine attached pronoun."} -->
+<!-- grammar-card: {"rule":"مِنْ فَضْلِكَ (min faḍlika) — please changes with the person addressed.","hint":"Final -ka for a male, -ki for a female.","example":"Complete “please” to a female: مِنْ ___ (min ___).","answer":"فَضْلِكِ (faḍliki)","explanation":"your favor, to a female — مِنْ فَضْلِكِ (min faḍliki) — please, to a female uses the feminine attached pronoun."} -->
 
 ## Sources
 
