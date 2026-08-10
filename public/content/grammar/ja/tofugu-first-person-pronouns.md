@@ -90,6 +90,10 @@ As the origin of the word — "inside" — suggests, うち also carries a feeli
 
   - Our teacher is so annoying, right?
 
+<!-- grammar-card: {"rule":"僕 is a softer masculine 'I'","hint":"I, masculine and soft","example":"___、ちょっと手伝(てつだ)おうか。","answer":"僕(ぼく)","explanation":"僕 suits casual speech by a male speaker without sounding rough."} -->
+
+<!-- grammar-card: {"rule":"私 is the neutral, all-purpose 'I'","hint":"I, neutral","example":"___は日本語(にほんご)を勉強(べんきょう)しています。","answer":"私(わたし)","explanation":"私 is appropriate in any register and for any speaker."} -->
+
 ## Beyond The Basics
 
 ### Plural Forms of First-Person Pronouns
@@ -420,6 +424,8 @@ by Yukinori Takubo
 <!-- quiz: {"type":"multiple-choice","question":"What does \"わたし、明日は行けないんだ。ごめんね。\" mean?","options":["I can't go tomorrow. Sorry.","I like bacon.","I'm afraid I can't make it tomorrow. I'm very sorry.","I'm afraid I won't be able to make it tomorrow. I am terribly sorry."],"answer":0} -->
 
 <!-- quiz: {"type":"multiple-choice","question":"What does \"わたし、明日は行けないんです。本当に、すみません。\" mean?","options":["I'm afraid I can't make it tomorrow. I'm very sorry.","I like bacon.","I can't go tomorrow. Sorry.","I'm afraid I won't be able to make it tomorrow. I am terribly sorry."],"answer":0} -->
+
+<!-- grammar-card: {"rule":"俺 is a blunt masculine 'I'","hint":"I, masculine and rough","example":"___に任(まか)せとけ！","answer":"俺(おれ)","explanation":"俺 matches the swaggering tone here, and would be out of place at work."} -->
 
 ## Sources
 

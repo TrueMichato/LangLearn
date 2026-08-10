@@ -14,6 +14,8 @@ Use だ (plain) or です (polite):
 Casual speech can drop the copula entirely:
 - これは便利。 — This is convenient.
 
+<!-- grammar-card: {"rule":"A な-adjective drops な before です","hint":"quiet","example":"この町(まち)は___です。","answer":"静(しず)か","explanation":"静かです needs no な, because な appears only in front of a noun."} -->
+
 ## Past Tense
 
 Use だった (plain) or でした (polite):
@@ -21,12 +23,16 @@ Use だった (plain) or でした (polite):
 - この街は静か**だった**。 — This town was quiet.
 - ディスコはすごく人気**でした**。 — Disco was super popular.
 
+<!-- grammar-card: {"rule":"な-adjectives take でした in the polite past","hint":"有名, polite past","example":"昔(むかし)、ここは有名(ゆうめい)___。","answer":"でした","explanation":"有名でした follows the noun pattern rather than taking かった."} -->
+
 ## Negative
 
 Use じゃない or ではない:
 
 - 字があまり綺麗**じゃない**ね。 — The handwriting isn't very neat.
 - チェスは上手**ではない**。 — I'm not good at chess.
+
+<!-- grammar-card: {"rule":"な-adjectives negate like nouns, with じゃありません","hint":"きれい, polite negative","example":"この部屋(へや)はきれい___。","answer":"じゃありません","explanation":"きれいじゃありません follows the noun pattern; きれくない is not a possible form."} -->
 
 ## Position in a Sentence
 
@@ -48,6 +54,8 @@ Some な-adjectives can function as nouns:
 Combine with に:
 - **静かに**ドアを閉めた。 — I closed the door **quietly**.
 - バラが**綺麗に**咲いていた。 — Roses were blooming **beautifully**.
+
+<!-- grammar-card: {"rule":"A な-adjective takes な when it modifies a noun","hint":"quiet + noun","example":"___町(まち)に住(す)みたい。","answer":"静(しず)かな","explanation":"静かな町 restores the な that 静かです drops."} -->
 
 ## Origins of な-adjectives
 

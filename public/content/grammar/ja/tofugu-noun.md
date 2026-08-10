@@ -47,12 +47,16 @@ Particles give nouns their grammatical role:
 | で | Means/location | **電車で**行く (Go by train) |
 | の | Possession | **私の**本 (My book) |
 
+<!-- grammar-card: {"rule":"A noun's role in the sentence is shown by the particle after it","hint":"object particle","example":"毎朝(まいあさ)パン___食(た)べます。","answer":"を","explanation":"を marks パン as the thing being eaten."} -->
+
 ## Nouns as Predicates
 
 Nouns can serve as the predicate (main info) of a sentence:
 
 - これは**犬**だ。 — This is a **dog**.
 - あの人は**先生**です。 — That person is a **teacher**.
+
+<!-- grammar-card: {"rule":"A noun becomes a predicate with です or だ","hint":"polite copula","example":"私は学生(がくせい)___。","answer":"です","explanation":"Japanese has no verb 'to be' — です does that work after a noun."} -->
 
 ## Politeness with Nouns
 
@@ -95,6 +99,8 @@ Entire clauses can modify nouns (always placed before):
 <!-- quiz: {"type":"multiple-choice","question":"Which polite prefix is used with Sino-Japanese words?","options":["お〜","ご〜","ま〜","み〜"],"answer":1} -->
 
 <!-- quiz: {"type":"multiple-choice","question":"In 昨日買った本, what does 昨日買った modify?","options":["昨日","買った","本","All of them"],"answer":2} -->
+
+<!-- grammar-card: {"rule":"の joins one noun to another","hint":"noun + noun","example":"彼(かれ)は日本語(にほんご)___先生(せんせい)です。","answer":"の","explanation":"日本語の先生 uses の where English would simply stack the two words."} -->
 
 ## Sources
 

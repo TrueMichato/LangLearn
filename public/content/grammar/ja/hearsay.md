@@ -40,6 +40,8 @@ Attach **そうだ** to the **plain form** of verbs, adjectives, and nouns + だ
 
 <!-- quiz:{"type":"multiple-choice","question":"How do you say 'I heard it's delicious' (hearsay)?","options":["美味しそうだ","美味しいそうだ","美味しいらしい","美味しいようだ"],"answer":1} -->
 
+<!-- grammar-card: {"rule":"Hearsay そうだ attaches to the plain form","hint":"降る + そうだ","example":"天気予報(てんきよほう)によると、明日(あした)は雨(あめ)が降(ふ)る___。","answer":"そうだ","explanation":"降るそうだ reports what the forecast said rather than what the speaker sees."} -->
+
 ## そうだ — Appearance ("It looks like ~")
 
 This そうだ attaches to the **verb stem** or **adjective stem** (not the plain form):
@@ -76,6 +78,8 @@ This そうだ attaches to the **verb stem** or **adjective stem** (not the plai
 > That luggage looks heavy.
 
 <!-- quiz:{"type":"multiple-choice","question":"'This cake looks delicious' — which is correct?","options":["このケーキは美味しいそうだ","このケーキは美味しそうだ","このケーキは美味しいらしい","このケーキは美味しいようだ"],"answer":1} -->
+
+<!-- grammar-card: {"rule":"Appearance そう attaches to the adjective stem, not the plain form","hint":"美味しい, drop い","example":"このケーキ、美味(おい)し___。","answer":"そう","explanation":"美味しそう drops the い and describes how the cake looks to the speaker."} -->
 
 ## Key Difference: Hearsay vs Appearance そうだ
 
@@ -172,6 +176,8 @@ When attached directly to a **noun**, らしい can mean "-like" or "typical of"
 
 <!-- quiz:{"type":"multiple-choice","question":"'彼は会社を辞めたらしい' means:","options":["He looks like he quit","He quit the company (I saw it)","Apparently he quit the company","He was told to quit the company"],"answer":2} -->
 
+<!-- grammar-card: {"rule":"らしい reports indirect evidence the speaker only half-vouches for","hint":"apparently","example":"田中(たなか)さんは会社(かいしゃ)を辞(や)めた___。","answer":"らしい","explanation":"辞めたらしい says word is going around that Tanaka quit."} -->
+
 ## みたいだ (Casual "seems like ~")
 
 **みたいだ** is the casual equivalent of **ようだ**:
@@ -192,6 +198,8 @@ When attached directly to a **noun**, らしい can mean "-like" or "typical of"
 > 嘘(うそ)みたいな話(はなし)だ。
 > *Uso mitai na hanashi da.*
 > It's an unbelievable story. (Lit: a lie-like story)
+
+<!-- grammar-card: {"rule":"みたい is the casual equivalent of ようだ","hint":"seems, casual","example":"外(そと)は寒(さむ)い___。","answer":"みたい","explanation":"寒いみたい judges from evidence in relaxed, everyday speech."} -->
 
 ## Comparison Chart
 

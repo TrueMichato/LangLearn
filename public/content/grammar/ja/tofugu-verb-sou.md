@@ -51,6 +51,8 @@ This works for all verbs, without exception (hurray!). So, godan verbs, ichidan 
 
 Once a verb is in the そう form, although it is still a verb in terms of meaning, it behaves just like a な-adjective in the way it fits together with other words. So, just like with な-adjectives, we can add だ or です onto the end, and we can join it to a noun with な. More about all of this in the next section! Let's take a detailed look at the different ways we can use 〜そう.
 
+<!-- grammar-card: {"rule":"そう attaches to the adjective stem, dropping the final い","hint":"おいしい → ?","example":"このケーキ、おいし___ですね。","answer":"そう","explanation":"おいしそう judges the cake from its appearance alone."} -->
+
 ## そう for Interpreting Things We Can See
 
 As mentioned earlier, verbs ending in 〜そう are roughly the equivalent of "looks like (someone or something) is going to (verb)" in English. In other words, you can use this form to explain what you think is going to happen, based on what you can see at that moment. So if it suddenly gets colder and there are big black clouds right above us, we might say:
@@ -64,6 +66,8 @@ If it turns out to be a major storm and the tree outside our window looks like i
   - あの木、倒れそうだよ！
 
   - Looks like that tree is going to fall down!
+
+<!-- grammar-card: {"rule":"そう on a verb stem means something is about to happen","hint":"落ちる + そう","example":"棚(たな)から本(ほん)が落(お)ち___。","answer":"そうです","explanation":"落ちそうです says the book looks to be on the point of falling."} -->
 
 ## そう for Interpreting Things We Feel
 
@@ -96,6 +100,8 @@ You may have already seen the past form of the verb with 〜そう, but in this 
   - あの木倒れたそうだよ！
 
   - I heard that that tree fell down!
+
+<!-- grammar-card: {"rule":"Adjectives whose quality is directly visible cannot take そう","hint":"pretty","example":"あの花(はな)は___ですね。","answer":"きれい","explanation":"You can see prettiness directly, so きれいそう is unnatural and plain きれい is used."} -->
 
 ## Other Forms of そう
 
@@ -147,6 +153,8 @@ p. 110
 <!-- quiz: {"type":"multiple-choice","question":"What does \"あの木、倒れそうだよ！\" mean?","options":["Looks like that tree is going to fall down!","It looks like it's going to rain at any moment.","This is tough. I think I'm going to cry.","It's a pity, but I don't think I'm going to be able to eat all this delicious cake."],"answer":0} -->
 
 <!-- quiz: {"type":"multiple-choice","question":"What does \"つらい。泣きそう。\" mean?","options":["This is tough. I think I'm going to cry.","It looks like it's going to rain at any moment.","Looks like that tree is going to fall down!","It's a pity, but I don't think I'm going to be able to eat all this delicious cake."],"answer":0} -->
+
+<!-- grammar-card: {"rule":"そう behaves as a な-adjective","hint":"そう + noun","example":"雨(あめ)が降(ふ)り___な空(そら)だ。","answer":"そう","explanation":"降りそうな空 takes な, because そう inflects like a な-adjective."} -->
 
 ## Sources
 

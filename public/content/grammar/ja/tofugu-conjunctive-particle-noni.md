@@ -62,6 +62,8 @@ Doesn't sound like のに is showing a contradiction here, right? That's because
 
 Just like that, when you find のに in a sentence, it could be something else that's made out of different uses of particle の and に. So keep in mind it's not always the のに that's used to show your contradictions.
 
+<!-- grammar-card: {"rule":"のに marks a result that contradicts expectation","hint":"のに","example":"雨(あめ)が降(ふ)っている___、彼(かれ)は出(で)かけた。","answer":"のに","explanation":"のに expresses surprise that he went out in spite of the rain."} -->
+
 ## Uses of のに
 
 ### のに For Expressing Surprises
@@ -97,6 +99,8 @@ When you clean, you hope it stays clean for a while. However, despite your earne
   - Although I studied that hard, I didn't pass the test.
 
 Considering how hard you studied, you expected or at least hoped to pass the test, however you couldn't. In this case, のに is helping to express the sense of frustration and sorrow for the unfortunate result.
+
+<!-- grammar-card: {"rule":"Nouns and な-adjectives need な before のに","hint":"静か + のに","example":"静(しず)か___、集中(しゅうちゅう)できない。","answer":"なのに","explanation":"静かなのに inserts the な that のに requires after a な-adjective."} -->
 
 ## Beyond The Basics
 
@@ -190,6 +194,8 @@ pp. 310-316
 <!-- quiz: {"type":"multiple-choice","question":"What does \"[クーラーをつけた]のに[全然涼しくならなかった]。\" mean?","options":["[I turned on the AC] but [it wasn't getting any cooler].","I turned on the AC, but it wasn't getting any cooler.","[It's a lemon] but [it's very sweet].","[It's quiet] but [I can't sleep]."],"answer":0} -->
 
 <!-- quiz: {"type":"multiple-choice","question":"What does \"[レモン]なのに[すごく甘い]。\" mean?","options":["[It's a lemon] but [it's very sweet].","I turned on the AC, but it wasn't getting any cooler.","[I turned on the AC] but [it wasn't getting any cooler].","[It's quiet] but [I can't sleep]."],"answer":0} -->
+
+<!-- grammar-card: {"rule":"A sentence can end on のに, leaving the complaint unsaid","hint":"のに","example":"せっかく来(き)た___。","answer":"のに","explanation":"来たのに trails off, letting the listener infer the disappointment."} -->
 
 ## Sources
 

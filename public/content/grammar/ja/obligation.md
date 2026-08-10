@@ -62,6 +62,8 @@ Replacing ならない with いけない is equally common and slightly less for
 
 <!-- quiz:{"type":"multiple-choice","question":"How do you say 'I must study' using なければならない?","options":["勉強しなければならない","勉強してはならない","勉強しなくてもいい","勉強するべきではない"],"answer":0} -->
 
+<!-- grammar-card: {"rule":"なければならない expresses an obligation","hint":"飲む, polite obligation","example":"毎日(まいにち)薬(くすり)を飲(の)ま___。","answer":"なければなりません","explanation":"飲まなければなりません says the medicine has to be taken every day."} -->
+
 ## なくてはならない — Alternate "Must"
 
 Another pattern with the same meaning, using a different negative construction.
@@ -161,6 +163,8 @@ In everyday conversation, the long obligation forms are almost always shortened.
 
 <!-- quiz:{"type":"multiple-choice","question":"What is the casual contraction of 行かなければならない?","options":["行かなくちゃ","行かなきゃ","行っちゃ","行かないと"],"answer":1} -->
 
+<!-- grammar-card: {"rule":"なきゃ is the casual contraction of なければ","hint":"なければ → ?","example":"もう行(い)か___。","answer":"なきゃ","explanation":"行かなきゃ leaves ならない unsaid, which is completely normal in speech."} -->
+
 ## べき / べきだ — "Should / Ought To"
 
 べき expresses a **moral obligation** or **strong recommendation**. It suggests what is right, proper, or expected.
@@ -221,6 +225,8 @@ In everyday conversation, the long obligation forms are almost always shortened.
 | ほうがいい | Advice / recommendation | 謝ったほうがいい (it would be better to apologize) |
 
 <!-- quiz:{"type":"multiple-choice","question":"Which sentence correctly uses べき?","options":["食べるべきではありません","食べてべきではない","食べないべきだ","食べなべきだ"],"answer":0} -->
+
+<!-- grammar-card: {"rule":"べき follows the dictionary form and gives moral advice","hint":"する + べき","example":"もっと勉強(べんきょう)する___。","answer":"べきだ","explanation":"するべきだ says one ought to study more — stronger than a mere suggestion."} -->
 
 ## はず — "Supposed To / Expected To"
 
@@ -283,6 +289,8 @@ To say "there's no way that…" or "it can't be that…":
 > 💡 はず is based on the speaker's **logical reasoning** or **prior knowledge**. It's not about moral obligation — that's べき. Compare:
 > - 来るべきだ = He **should** come (it's his duty)
 > - 来るはずだ = He **should** come (I expect it based on what I know)
+
+<!-- grammar-card: {"rule":"はず expresses a confident expectation based on what you know","hint":"expectation, polite","example":"彼(かれ)は三時(さんじ)に来(く)る___。","answer":"はずです","explanation":"来るはずです says he is supposed to arrive at three, going by the arrangement."} -->
 
 ## Comparison: All Obligation Expressions
 

@@ -51,6 +51,8 @@ Since になる is a regular godan verb, it conjugates normally:
 > *Mada o-kime ni natte imasen ka.*
 > Haven't you decided yet?
 
+<!-- grammar-card: {"rule":"お plus the ます-stem plus になる honours someone else's action","hint":"帰る → ?","example":"社長(しゃちょう)はもう___になりました。","answer":"お帰(かえ)り","explanation":"お帰りになりました elevates the president's act of leaving."} -->
+
 ## The お〜する / お〜いたす Pattern (Humble)
 
 This is the standard way to make **humble** (謙譲語) forms. It lowers your own actions to show respect.
@@ -85,6 +87,8 @@ This is the standard way to make **humble** (謙譲語) forms. It lowers your ow
 > 💡 The difference between お〜する and お〜いたす is the level of humility. Use お〜いたす in formal business settings and customer service. お〜する is sufficient for daily polite speech.
 
 <!-- quiz:{"type":"multiple-choice","question":"How do you say 'I will carry (your bags)' in humble form?","options":["お持ちになります","お持ちいたします","持っていらっしゃいます","お持ちくださいます"],"answer":1} -->
+
+<!-- grammar-card: {"rule":"お plus the ます-stem plus する lowers your own action","hint":"持つ → ?","example":"荷物(にもつ)を___します。","answer":"お持(も)ち","explanation":"お持ちします humbly offers to carry the luggage for the listener."} -->
 
 ## The ご〜になる / ご〜する Pattern (Sino-Japanese)
 
@@ -128,6 +132,8 @@ A few Sino-Japanese words conventionally take お rather than ご:
 | 返事(へんじ) | お返事 | ~~ご返事~~ |
 
 <!-- quiz:{"type":"multiple-choice","question":"Which is the correct honorific form of ご利用する (to use)?","options":["お利用になる","ご利用になる","ご利用される","利用おなさる"],"answer":1} -->
+
+<!-- grammar-card: {"rule":"Sino-Japanese nouns take ご instead of お","hint":"連絡 (contact)","example":"後(のち)ほど___いたします。","answer":"ご連絡(れんらく)","explanation":"連絡 is a 漢語 word, so it takes ご rather than お in the humble form."} -->
 
 ## Special Keigo Verbs — Review & Expansion
 

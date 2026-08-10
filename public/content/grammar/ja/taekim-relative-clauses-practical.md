@@ -14,6 +14,8 @@ Think of it as stacking a description in front of the noun, just like an adjecti
 
 <!-- quiz:{"type":"multiple-choice","question":"How do you say 'the person who ate'?","options":["人が食べた","食べた人","食べる人が","人の食べた"],"answer":1} -->
 
+<!-- grammar-card: {"rule":"A clause modifies a noun by sitting directly in front of it","hint":"見る, plain past","example":"昨日(きのう)___映画(えいが)は面白(おもしろ)かった。","answer":"見(み)た","explanation":"見た modifies 映画 with no relative pronoun — the plain form does all the work."} -->
+
 ## Building Longer Modifications
 
 You can make the modifying clause as long as you need. Everything before the noun modifies it.
@@ -40,6 +42,8 @@ When the modified noun is the **object**, the object disappears instead:
 - **母が作った料理** (haha ga tsukutta ryouri) — the food that mom made (料理 was the object of 作った)
 - **私が読んでいる本** (watashi ga yondeiru hon) — the book that I'm reading
 
+<!-- grammar-card: {"rule":"The subject inside a relative clause takes が, not は","hint":"が / は","example":"友達(ともだち)___作(つく)ったケーキを食(た)べた。","answer":"が","explanation":"は belongs to the main sentence, so the clause-internal subject uses が."} -->
+
 ## Using の to Replace the Noun
 
 When the modified noun is obvious from context, you can replace it with の.
@@ -51,6 +55,8 @@ When the modified noun is obvious from context, you can replace it with の.
 This の acts as a pronoun, standing in for the understood noun.
 
 <!-- quiz:{"type":"multiple-choice","question":"'昨日買ったのはこれです' — what does の replace?","options":["A person","A verb","An understood noun (the thing bought)","A particle"],"answer":2} -->
+
+<!-- grammar-card: {"rule":"の stands in for a noun that is obvious from context","hint":"one, thing","example":"赤(あか)い___をください。","answer":"の","explanation":"赤いの means 'the red one', with の taking the place of the noun itself."} -->
 
 ## Stacking Modifications
 

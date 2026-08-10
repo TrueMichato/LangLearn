@@ -97,6 +97,8 @@ To show the past tense, い-adjectives end in 〜かった. For example, 寒**�
 
   - Yesterday was cold.
 
+<!-- grammar-card: {"rule":"An い-adjective can end a sentence by itself","hint":"interesting","example":"この本(ほん)は___。","answer":"面白(おもしろ)い","explanation":"面白い is a complete predicate — no verb is needed after it."} -->
+
 ## The Position of い-Adjectives in a Sentence
 
 い-adjectives can be used in two different positions to describe a noun. You'll find it either at the very end of a sentence, or directly before a noun.
@@ -140,6 +142,8 @@ These words joined together can be used anywhere that a noun can be used, such a
   - お父さんは古い車に乗っています。
 
   - My father drives an old car.
+
+<!-- grammar-card: {"rule":"An い-adjective sits directly before the noun it modifies","hint":"old","example":"___映画(えいが)を見(み)ました。","answer":"古(ふる)い","explanation":"古い映画 needs no particle between the adjective and the noun."} -->
 
 ## Beyond the Basics
 
@@ -262,6 +266,8 @@ by Tofugu
 <!-- quiz: {"type":"multiple-choice","question":"What does \"明日は暑い。\" mean?","options":["Tomorrow will be hot.","Today is hot.","That comedian isn’t funny at all.","I don’t want to become a not-funny comedian."],"answer":0} -->
 
 <!-- quiz: {"type":"multiple-choice","question":"What does \"その芸人は全然面白くない。\" mean?","options":["That comedian isn’t funny at all.","Today is hot.","Tomorrow will be hot.","I don’t want to become a not-funny comedian."],"answer":0} -->
+
+<!-- grammar-card: {"rule":"い-adjectives form their past with かった","hint":"難しい, plain past","example":"昨日(きのう)のテストは難(むずか)___。","answer":"しかった","explanation":"難しい drops い and takes かった, without any help from です or でした."} -->
 
 ## Sources
 

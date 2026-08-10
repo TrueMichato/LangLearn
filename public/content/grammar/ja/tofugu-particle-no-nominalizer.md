@@ -184,6 +184,8 @@ Meanings of nominalizer の change depending on the context because it acts like
   - Why did you think so?
 (*Literally*: What's the reason for thinking so?)
 
+<!-- grammar-card: {"rule":"の turns a verb phrase into a noun","hint":"nominaliser","example":"映画(えいが)を見(み)る___が好(す)きです。","answer":"の","explanation":"見るの becomes the thing that is liked, which is why it can take が."} -->
+
 ## Beyond The Basics
 
 #### Nominalizer の For Listing
@@ -263,6 +265,8 @@ by 柴谷 方良
 <!-- quiz: {"type":"multiple-choice","question":"What does \"[お父さんが買った]物は、バナナです。\" mean?","options":["The thing [dad bought] is a banana.","Running is fun.","What [dad bought] is a banana.","Running is fun."],"answer":0} -->
 
 <!-- quiz: {"type":"multiple-choice","question":"What does \"[お父さんが買った]のは、バナナです。\" mean?","options":["What [dad bought] is a banana.","Running is fun.","The thing [dad bought] is a banana.","Running is fun."],"answer":0} -->
+
+<!-- grammar-card: {"rule":"Verbs of direct perception take の, never こと","hint":"の / こと","example":"彼(かれ)が走(はし)る___を見(み)た。","answer":"の","explanation":"You watch a concrete event, so 走るのを見た is correct and 走ることを見た is not."} -->
 
 ## Sources
 

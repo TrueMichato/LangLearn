@@ -46,6 +46,8 @@ Expresses the **beginning** of an action:
 
 > 💡 Compare with 始まる (intransitive): 授業が始まった (The class started). 〜始める is used when an ongoing action begins.
 
+<!-- grammar-card: {"rule":"Compound verbs attach to the ます-stem of the first verb","hint":"読む + 始める, plain past","example":"本(ほん)を読(よ)み___。","answer":"始めた","explanation":"読む gives the stem 読み, so 読み始めた means started reading."} -->
+
 ## 〜続(つづ)ける ("Continue ~ing" / "Keep ~ing")
 
 Expresses an action that **continues** or **persists**:
@@ -67,6 +69,8 @@ Expresses an action that **continues** or **persists**:
 > It kept raining all day.
 
 <!-- quiz:{"type":"multiple-choice","question":"'三時間歩き続けた' means:","options":["I started walking three hours ago","I walked for three hours (and stopped)","I kept walking for three hours","I will walk for three hours"],"answer":2} -->
+
+<!-- grammar-card: {"rule":"続ける after the ます-stem means to keep doing something","hint":"走る + 続ける, plain past","example":"三時間(さんじかん)走(はし)り___。","answer":"続けた","explanation":"走り続けた says the running went on for three hours without a break."} -->
 
 ## 〜終(お)わる ("Finish ~ing")
 
@@ -110,6 +114,8 @@ Compare:
 
 <!-- quiz:{"type":"multiple-choice","question":"Which expresses a SUDDEN start of rain?","options":["雨が降り始めた","雨が降り出した","雨が降り続けた","雨が降り終わった"],"answer":1} -->
 
+<!-- grammar-card: {"rule":"出す marks a sudden, unexpected start","hint":"泣く + 出す, plain past","example":"赤(あか)ちゃんが突然(とつぜん)泣(な)き___。","answer":"出した","explanation":"泣き出した is a burst into tears, where 泣き始めた would sound neutral."} -->
+
 ## 〜過(す)ぎる ("Do too much ~" / "Over-~")
 
 Expresses **excess** — doing something too much:
@@ -147,6 +153,8 @@ Expresses doing something **over again**, usually to correct it:
 > やり直(なお)しましょう。
 > *Yari naoshimashou.*
 > Let's redo it.
+
+<!-- grammar-card: {"rule":"直す means doing something over in order to correct it","hint":"書く + 直す, plain past","example":"レポートを書(か)き___。","answer":"直した","explanation":"書き直した means the report was rewritten properly."} -->
 
 ## 〜合(あ)う ("Do ~ together / mutually")
 

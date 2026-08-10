@@ -211,6 +211,8 @@ The exact same logic is behind these next two sentences:
 
 In English, the Kanae and Mami are doing the having. In Japanese, the dog and kids are doing the existing.
 
+<!-- grammar-card: {"rule":"A question word used as the subject always takes が","hint":"が / は","example":"誰(だれ)___来(き)ましたか。","answer":"が","explanation":"誰は is impossible — unknown or new information is marked with が."} -->
+
 ## Beyond The Basics
 
 ### が in Relative Clauses
@@ -440,6 +442,8 @@ by Toshiyuki Kumashiro
 <!-- quiz: {"type":"multiple-choice","question":"What does \"誰かがいる。\" mean?","options":["Someone's here.","That dog barked.","This natto is delicious.","Which person is the president of Tofugu?"],"answer":0} -->
 
 <!-- quiz: {"type":"multiple-choice","question":"What does \"この納豆がおいしい。\" mean?","options":["This natto is delicious.","That dog barked.","Someone's here.","Which person is the president of Tofugu?"],"answer":0} -->
+
+<!-- grammar-card: {"rule":"The object of 好き, 嫌い and 上手 is marked with が","hint":"が / を","example":"私は犬(いぬ)___好(す)きです。","answer":"が","explanation":"好き is an adjective rather than a verb, so what you like takes が, not を."} -->
 
 ## Sources
 

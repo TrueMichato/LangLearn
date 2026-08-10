@@ -165,6 +165,10 @@ For example, your sister is upset because her favorite ice cream (that she even 
 
 Just like that, you can use it to provide information to resolve a misunderstanding. You’ll often see the sentence ending particle よ paired up with this んだ. They match up well because よ indicates you’re trying to offer a new perspective that your listener does not have.
 
+<!-- grammar-card: {"rule":"The plain form comes directly before んです","hint":"引っ越す + んです","example":"実(じつ)は、来週(らいしゅう)引(ひ)っ越(こ)す___です。","answer":"ん","explanation":"引っ越すんです keeps the verb plain, with です carrying all the politeness."} -->
+
+<!-- grammar-card: {"rule":"んです supplies the background to a situation","hint":"explanatory, polite","example":"どうしたんですか。— 頭(あたま)が痛(いた)い___。","answer":"んです","explanation":"痛いんです offers the headache as the explanation being asked for."} -->
+
 ## Beyond The Basics
 
 ### んだ And んですか for Realization
@@ -312,6 +316,8 @@ by 石黒 圭
 <!-- quiz: {"type":"multiple-choice","question":"What does \"勉強したんだ。\" mean?","options":["I studied.","I study.","I was made to study.","I’m sad."],"answer":0} -->
 
 <!-- quiz: {"type":"multiple-choice","question":"What does \"勉強させられたんだ。\" mean?","options":["I was made to study.","I study.","I studied.","I’m sad."],"answer":0} -->
+
+<!-- grammar-card: {"rule":"Nouns and な-adjectives take な before んです","hint":"学生 + んです","example":"彼(かれ)はまだ学生(がくせい)___です。","answer":"なん","explanation":"学生なんです inserts the な that is required after a noun."} -->
 
 ## Sources
 

@@ -165,6 +165,8 @@ For negative sentences, you usually don't use the です/ます forms.
 > 
 > 
 
+<!-- grammar-card: {"rule":"たら attaches to the past form, so voiced verbs take だら","hint":"飲む → ?","example":"お酒(さけ)を飲(の)ん___、運転(うんてん)しないでください。","answer":"だら","explanation":"飲む becomes 飲んだ, which gives 飲んだら rather than 飲んたら."} -->
+
 ## たら for "When" and "After"
 
 As mentioned in the beginning, 〜たら is used to provide the condition that needs to be fulfilled for other events or situations to take place. Which means the clause before 〜たら has to come first. For this reason, "after" is more suitable than "when" as a translation of the following sentence.
@@ -202,6 +204,8 @@ However, this is not applied to the future tense sentences.
 
 This sentence is appropriate even though study abroad is your choice. This is because you don't have control over the actions or events of the future.
 
+<!-- grammar-card: {"rule":"たら can mean 'once' or 'after'","hint":"着く + たら","example":"家(いえ)に着(つ)い___、電話(でんわ)してね。","answer":"たら","explanation":"着いたら sets arriving as the point after which the call should happen."} -->
+
 ## たら for "If"
 
 While 〜たら always provides a condition, it is sometimes not clear how to interpret the speaker's speech. For example, this sentence can mean two things.
@@ -230,6 +234,8 @@ It can either mean "I'll go back home after eating this pudding," or "I'll go ba
   - If it had not been rainy outside, I would have gone out.
 
 In this case, のに is often used at the end of the sentence to emphasize the feeling of regretting the described event or situation.
+
+<!-- grammar-card: {"rule":"い-adjectives take かったら","hint":"安い + たら","example":"安(やす)かっ___、買(か)います。","answer":"たら","explanation":"安い becomes 安かったら, built on the past form 安かった."} -->
 
 ## たら for Reference and Suggestion
 
@@ -294,6 +300,8 @@ by ニサンサラー・セッワンディ
 <!-- quiz: {"type":"multiple-choice","question":"What does \"走っていたら友達に会った。\" mean?","options":["I ran into my friend when I was running.","❌ I stretch when running.","I became tired after studying.","I played after studying."],"answer":0} -->
 
 <!-- quiz: {"type":"multiple-choice","question":"What does \"勉強をしたら、疲れた。\" mean?","options":["I became tired after studying.","❌ I stretch when running.","I ran into my friend when I was running.","I played after studying."],"answer":0} -->
+
+<!-- grammar-card: {"rule":"A sentence that ends on たら makes a suggestion","hint":"聞く + たら","example":"先生(せんせい)に聞(き)い___？","answer":"たら","explanation":"聞いたら？ means 'why not ask?', leaving どう unsaid."} -->
 
 ## Sources
 

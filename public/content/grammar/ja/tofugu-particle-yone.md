@@ -254,6 +254,10 @@ by Yasuko Goto
 
 <!-- quiz: {"type":"multiple-choice","question":"What does \"食べるよね。\" mean?","options":["You'll eat it, right?","Oh, it's raining.","Oh, it's raining, right?","It's hot, isn't it?"],"answer":0} -->
 
+<!-- grammar-card: {"rule":"ね on its own seeks agreement without asserting anything","hint":"よね / ね","example":"今日(きょう)は暑(あつ)いです___。","answer":"ね","explanation":"ね shares an obvious observation, where よね would add a claim the listener might not share."} -->
+
+<!-- grammar-card: {"rule":"よね states something while checking that it is right","hint":"よ + ね","example":"明日(あした)の会議(かいぎ)、三時(さんじ)からです___。","answer":"よね","explanation":"よね combines telling and confirming — the speaker is fairly sure but wants agreement."} -->
+
 ## Sources
 
 - [Tofugu](https://www.tofugu.com/japanese-grammar/particle-yone/)

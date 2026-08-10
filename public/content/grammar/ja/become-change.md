@@ -40,6 +40,8 @@ Use **になる** with **な-adjectives** (drop な) and **nouns** to express "b
 > *Nihongo ga jouzu ni narimashita ne.*
 > Your Japanese has gotten good!
 
+<!-- grammar-card: {"rule":"Nouns and な-adjectives take に before なる","hint":"医者 (doctor) + なる, polite past","example":"弟(おとうと)は___。","answer":"医者(いしゃ)になりました","explanation":"医者になりました says he became a doctor; a noun always needs に before なる."} -->
+
 ## くなる — Becoming (い-adjectives)
 
 Use **くなる** with **い-adjectives** by replacing い with く.
@@ -82,6 +84,8 @@ Use **くなる** with **い-adjectives** by replacing い with く.
 
 <!-- quiz:{"type":"multiple-choice","question":"How do you say 'It became cold'?","options":["寒いになった","寒くになった","寒くなった","寒になった"],"answer":2} -->
 
+<!-- grammar-card: {"rule":"い-adjectives replace い with く before なる","hint":"寒い + なる, polite past","example":"最近(さいきん)、寒(さむ)___。","answer":"くなりました","explanation":"寒い becomes 寒くなりました — the weather has turned cold."} -->
+
 ## にする — Making/Changing to (な-adjectives & Nouns)
 
 Use **にする** with **な-adjectives** and **nouns** to express "make ~" or "decide on ~".
@@ -117,6 +121,8 @@ Use **にする** with **な-adjectives** and **nouns** to express "make ~" or "
 > 💡 **にする** when ordering at restaurants means "I'll go with ~" or "I'll have ~": ラーメンにします。
 
 <!-- quiz:{"type":"multiple-choice","question":"At a restaurant, how do you say 'I'll have the sushi'?","options":["寿司をなる","寿司になる","寿司をする","寿司にする"],"answer":3} -->
+
+<!-- grammar-card: {"rule":"にする expresses a deliberate choice","hint":"coffee + する, polite","example":"私はコーヒー___。","answer":"にします","explanation":"コーヒーにします is how you order: I'll go with the coffee."} -->
 
 ## くする — Making (い-adjectives)
 
@@ -202,6 +208,8 @@ The key difference: **なる** describes a **natural change**, while **する** 
 > I've come to not drink alcohol.
 
 > 💡 **ようになる** focuses on gradual, natural change — not a sudden decision.
+
+<!-- grammar-card: {"rule":"ようになる marks reaching a new ability","hint":"話せる + ?","example":"日本語が話(はな)せる___。","answer":"ようになりました","explanation":"話せるようになりました says the speaker has come to be able to speak Japanese."} -->
 
 ## ことになる — "It has been decided that ~"
 

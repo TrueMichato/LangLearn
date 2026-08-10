@@ -16,6 +16,8 @@ Direct quotes repeat the speaker's **exact words**, enclosed in quotation marks 
 
 > 💡 Japanese quotation marks are 「 」 (single) and 『 』 (double, for quotes within quotes).
 
+<!-- grammar-card: {"rule":"と marks the end of a quotation","hint":"quoting particle","example":"田中(たなか)さんは「おはよう」___言いました。","answer":"と","explanation":"と follows the quoted words 「おはよう」 and links them to 言いました."} -->
+
 ## Indirect Quotes with と言う
 
 Indirect quotes report what someone said **in your own words**, using the plain form before と.
@@ -45,6 +47,8 @@ The clause before と must be in **plain form** (not です/ます), except insi
 - **彼は学生**だ**と言いました。** — He said he is a student.
 - **このレストランはおいしい**と**聞(き)きました。** — I heard this restaurant is delicious.
 
+<!-- grammar-card: {"rule":"An indirect quote uses the plain form before と","hint":"難しい, plain","example":"先生はテストが難(むずか)し___と言いました。","answer":"い","explanation":"難しいと言いました keeps the adjective plain even though the sentence ends politely."} -->
+
 ## と思(おも)う — "I Think"
 
 と思う expresses your opinion or belief.
@@ -69,6 +73,8 @@ Use the progressive form for ongoing or settled beliefs:
 > 💡 と思う = what you think right now; と思っている = what you've been thinking / continue to believe.
 
 <!-- quiz:{"type":"multiple-choice","question":"'日本語は難しいと思います' means:","options":["Japanese thinks it's difficult","I think Japanese is difficult","Japanese is said to be difficult","I heard Japanese is difficult"],"answer":1} -->
+
+<!-- grammar-card: {"rule":"と思う states the speaker's own opinion","hint":"think, polite","example":"明日は雨(あめ)が降(ふ)る___。","answer":"と思います","explanation":"降ると思います offers the speaker's own guess about tomorrow."} -->
 
 ## と聞(き)いた — "I Heard That"
 
@@ -123,6 +129,8 @@ When quoting a question, use **か** before と:
 - **これでいい**か**確認(かくにん)してください。** — Please confirm whether this is okay.
 
 > 💡 **かどうか** means "whether or not" — use it when reporting yes/no questions.
+
+<!-- grammar-card: {"rule":"かどうか embeds a yes-no question inside a sentence","hint":"か + どうか","example":"彼(かれ)が来(く)る___分(わ)かりません。","answer":"かどうか","explanation":"来るかどうか turns 'is he coming?' into part of a larger statement."} -->
 
 ## という — "Called" / "Named"
 

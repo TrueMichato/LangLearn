@@ -126,6 +126,10 @@ When used in reference to you and your group to say "us," though, it expresses m
 
   - Please leave it to us.
 
+<!-- grammar-card: {"rule":"方(がた) is the honorific plural suffix","hint":"customers, honorific","example":"___はこちらへどうぞ。","answer":"お客様(きゃくさま)がた","explanation":"お客様がた raises the group being addressed in a way たち would not."} -->
+
+<!-- grammar-card: {"rule":"たち is the general plural suffix for people","hint":"children","example":"___は毎日(まいにち)公園(こうえん)で遊(あそ)ぶ。","answer":"子供(こども)たち","explanation":"子供たち is the ordinary way to make 子供 plural."} -->
+
 ## Beyond The Basics
 
 ### 諸〜 (しょ)
@@ -191,6 +195,8 @@ by Hyeseon Jung
 <!-- quiz: {"type":"multiple-choice","question":"What does \"私達はベジタリアンです。\" mean?","options":["We are vegetarian.","I am vegetarian.","Teachers will be here soon.","Look at these adorable plushies!"],"answer":0} -->
 
 <!-- quiz: {"type":"multiple-choice","question":"What does \"先生方はすぐ来られます。\" mean?","options":["Teachers will be here soon.","I am vegetarian.","We are vegetarian.","Look at these adorable plushies!"],"answer":0} -->
+
+<!-- grammar-card: {"rule":"ら is a blunter plural suffix than たち","hint":"君 + plural","example":"___、ちょっと集(あつ)まって。","answer":"君(きみ)ら","explanation":"君ら sounds rougher and more casual than 君たち."} -->
 
 ## Sources
 

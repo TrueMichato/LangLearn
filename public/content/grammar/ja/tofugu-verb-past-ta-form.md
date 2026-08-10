@@ -187,6 +187,10 @@ Realizations:
 
   - Oh, there it is!
 
+<!-- grammar-card: {"rule":"Godan verbs ending in す take した","hint":"話す, plain past","example":"昨日(きのう)、友達(ともだち)と話(はな)___。","answer":"した","explanation":"話す becomes 話した, following the す pattern exactly."} -->
+
+<!-- grammar-card: {"rule":"Ichidan verbs drop る and add た","hint":"見る, plain past","example":"昨日(きのう)、映画(えいが)を見(み)___。","answer":"た","explanation":"見る becomes 見た with no sound change at all."} -->
+
 ## Beyond the Basics
 
 ### 〜た in the Middle of Sentences
@@ -245,6 +249,8 @@ p. 124
 <!-- quiz: {"type":"multiple-choice","question":"What does \"昨日、映画を見た。\" mean?","options":["I watched a movie yesterday.","I bought a book.","I came to Japan two years ago.","You've gotten really good at Japanese."],"answer":0} -->
 
 <!-- quiz: {"type":"multiple-choice","question":"What does \"2年前、日本に来た。\" mean?","options":["I came to Japan two years ago.","I bought a book.","I watched a movie yesterday.","You've gotten really good at Japanese."],"answer":0} -->
+
+<!-- grammar-card: {"rule":"The past form can report a discovery made right now","hint":"ある, plain past","example":"あ、鍵(かぎ)ここに___！","answer":"あった","explanation":"あった is used at the moment of finding something, even though it is there in the present."} -->
 
 ## Sources
 

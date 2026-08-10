@@ -46,6 +46,8 @@ These verbs attach to the **て-form** to describe doing favors — actions done
 
 <!-- quiz:{"type":"multiple-choice","question":"'友達に料理を作ってあげた' means:","options":["My friend cooked for me","I received cooking from my friend","I cooked for my friend (as a favor)","My friend and I cooked together"],"answer":2} -->
 
+<!-- grammar-card: {"rule":"てあげる frames an action as a favour flowing away from the speaker","hint":"教える + あげる, plain past","example":"友達(ともだち)に日本語(にほんご)を教(おし)え___。","answer":"てあげた","explanation":"教えてあげた presents the teaching as something done for the friend's benefit."} -->
+
 ## てくれる — "Someone does something for me/us"
 
 **てくれる** means someone else does a favor **for the speaker** (or the speaker's in-group). The favor flows **toward** the speaker.
@@ -77,6 +79,8 @@ These verbs attach to the **て-form** to describe doing favors — actions done
 > 💡 **てくれる** expresses gratitude — by using it, you acknowledge the action as a kindness done for you.
 
 <!-- quiz:{"type":"multiple-choice","question":"'母が朝ごはんを作ってくれた' — who cooked?","options":["I cooked for my mother","My mother cooked (for me)","My mother received breakfast","We cooked together"],"answer":1} -->
+
+<!-- grammar-card: {"rule":"てくれる marks a favour done for the speaker","hint":"送る + くれる, plain past","example":"友達が駅(えき)まで送(おく)っ___。","answer":"てくれた","explanation":"送ってくれた acknowledges that the friend did it for the speaker."} -->
 
 ## てもらう — "Receive the favor of someone doing something"
 
@@ -111,6 +115,8 @@ The person who does the action is marked with **に**:
 > 💡 **てもらう** implies the speaker **initiated or benefited** from the action. It's the most natural way to describe services you receive.
 
 <!-- quiz:{"type":"multiple-choice","question":"How do you say 'I had my friend teach me Japanese'?","options":["友達に日本語を教えてあげた","友達が日本語を教えてくれた","友達に日本語を教えてもらった","友達は日本語を教えてみた"],"answer":2} -->
+
+<!-- grammar-card: {"rule":"てもらう views the same favour from the receiver's side","hint":"直す + もらう, plain past","example":"先生(せんせい)に手紙(てがみ)を直(なお)し___。","answer":"てもらった","explanation":"直してもらった says the speaker got the teacher to correct the letter."} -->
 
 ## Direction of Favor — Summary Table
 

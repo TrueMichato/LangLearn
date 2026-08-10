@@ -25,6 +25,8 @@ As these verbs conjugate, the final う-line character shifts through the five v
 
 The root of a godan verb ends in a **consonant** — hence the alternate name "consonant-root verbs."
 
+<!-- grammar-card: {"rule":"Godan verbs shift the final う sound to い before ます","hint":"書く, polite","example":"友達(ともだち)に手紙(てがみ)を書(か)___。","answer":"きます","explanation":"書く becomes 書きます, moving one step along the k-row."} -->
+
 ## Ichidan Verbs (一段動詞)
 
 Ichidan verbs are also called る-verbs, Group II verbs, or vowel-root verbs. Examples include:
@@ -46,6 +48,8 @@ Conjugating these verbs is straightforward — replace る with the new ending. 
 
 The root ends in a **vowel** — hence "vowel-root verbs."
 
+<!-- grammar-card: {"rule":"Ichidan verbs simply drop る","hint":"見る, polite","example":"毎晩(まいばん)テレビを見(み)___。","answer":"ます","explanation":"見る drops る and takes ます directly, with no sound change."} -->
+
 ## Godan Verbs Disguised as Ichidan
 
 Some godan verbs end in る and look like ichidan verbs. The trick:
@@ -54,6 +58,8 @@ Some godan verbs end in る and look like ichidan verbs. The trick:
 - If the vowel before る is **/e/** or **/i/** → **probably ichidan** (but exceptions exist)
 
 Common exceptions (godan verbs ending in /iru/ or /eru/): いる (to need), 入る (to enter), 走る (to run), 帰る (to return), 減る (to decrease), 喋る (to chat).
+
+<!-- grammar-card: {"rule":"Some verbs ending in いる or える are godan anyway","hint":"走る, polite","example":"毎朝(まいあさ)六時(ろくじ)に___。","answer":"走(はし)ります","explanation":"走る looks ichidan but conjugates as godan, giving 走ります and not 走ます."} -->
 
 ## Irregular Verbs (変格動詞)
 
@@ -83,6 +89,8 @@ When verb roots end in /k/ or /g/:
 <!-- quiz: {"type":"multiple-choice","question":"How do you conjugate 聞く into the negative form?","options":["聞くない","聞きない","聞かない","聞けない"],"answer":2} -->
 
 <!-- quiz: {"type":"multiple-choice","question":"What is the て form of 飲む?","options":["飲みて","飲んで","飲って","飲いて"],"answer":1} -->
+
+<!-- grammar-card: {"rule":"Godan verbs ending in る take って in the て-form","hint":"撮る → ?","example":"写真(しゃしん)を撮(と)___ください。","answer":"って","explanation":"撮る becomes 撮って through the sound change known as 音便."} -->
 
 ## Sources
 

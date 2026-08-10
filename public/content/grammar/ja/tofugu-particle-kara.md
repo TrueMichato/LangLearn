@@ -42,6 +42,8 @@ Now, let's imagine you are very curious about the "Keep Out" area, so you decide
 
 In this sentence, から marks ここ (this place) again, but this time it indicates a place from which the bear came out. Just like that, から can also express where something comes or even appears from. This is because its fundamental meaning is the "source" of something.
 
+<!-- grammar-card: {"rule":"から marks the starting point of a span","hint":"from","example":"授業(じゅぎょう)は九時(くじ)___始(はじ)まります。","answer":"から","explanation":"九時から says the class begins at nine and carries on from there."} -->
+
 ## Patterns of Use
 
 In this section, we'll list the basic structure used with the particle から. A more detailed look at its uses will be explained later.
@@ -173,6 +175,8 @@ the particle で can also mark what something is made of, but the nuance is subt
   - Pizza dough is made from flour, yeast, and water.
 
 While から simply marks where something originally comes from, this で indicates the components and/or the means of something. So with から, "flour, yeast, and water" are the "sources" of pizza dough, while で shows the ingredients are something used in the process of making it. As you see, what they mark can be exactly the same things and it can depend on the perception of the speaker or the writer.
+
+<!-- grammar-card: {"rule":"から can give the reason behind a request","hint":"because","example":"寒(さむ)い___、窓(まど)を閉(し)めてください。","answer":"から","explanation":"寒いから presents the cold as the reason for closing the window."} -->
 
 ## Beyond the Basics
 
@@ -334,6 +338,8 @@ by Željko Cipriš and Shoko Hamano
 <!-- quiz: {"type":"multiple-choice","question":"What does \"ここから先、立入禁止！\" mean?","options":["From this place onwards, admittance is prohibited!","from here to over there","A bear came out of here!","from Los Angeles to New York"],"answer":0} -->
 
 <!-- quiz: {"type":"multiple-choice","question":"What does \"ここからクマが出てきた！\" mean?","options":["A bear came out of here!","from here to over there","From this place onwards, admittance is prohibited!","from Los Angeles to New York"],"answer":0} -->
+
+<!-- grammar-card: {"rule":"から marks a material that is transformed, で one that stays recognisable","hint":"から / で","example":"このテーブルは木(き)___作(つく)られている。","answer":"で","explanation":"The wood is still visibly wood, so で is used rather than から."} -->
 
 ## Sources
 

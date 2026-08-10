@@ -74,6 +74,8 @@ When うち follows a な-adjective, you'll need to add な between them.
 
   - Let's go home before it gets dark.
 
+<!-- grammar-card: {"rule":"うちに means 'while the condition still holds'","hint":"うち","example":"明(あか)るい___に帰(かえ)りましょう。","answer":"うち","explanation":"明るいうちに urges going home before the light goes."} -->
+
 ## Uses of うち
 
 ### うち For Narrowing Down Items
@@ -217,6 +219,8 @@ by Seiichi Makino and Michio Tsutsui
 <!-- quiz: {"type":"multiple-choice","question":"What does \"今年のうちに日本人の友だちをつくる！\" mean?","options":["By the end of this year, I'll make some Japanese friends!","Out of three eggs, one was broken.","one of the two things","I finished my homework by the end of the summer vacation."],"answer":0} -->
 
 <!-- quiz: {"type":"multiple-choice","question":"What does \"二つのうち一つ\" mean?","options":["one of the two things","Out of three eggs, one was broken.","By the end of this year, I'll make some Japanese friends!","I finished my homework by the end of the summer vacation."],"answer":0} -->
+
+<!-- grammar-card: {"rule":"うち can also mean one's own home or in-group","hint":"my home","example":"___の犬(いぬ)はとても大(おお)きい。","answer":"うち","explanation":"うちの犬 means the dog at my house — a completely different sense of うち."} -->
 
 ## Sources
 

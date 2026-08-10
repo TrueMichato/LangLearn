@@ -12,6 +12,8 @@ Unlike English, 私 serves as "I," "me," and "my":
 - **私を**ジェニーと呼んでください。 — Please call **me** Jenny. (を = object)
 - **私の**ニックネームです。 — It's **my** nickname. (の = possessive)
 
+<!-- grammar-card: {"rule":"Japanese pronouns keep one form for subject and object alike","hint":"he","example":"___が言(い)ったことは正(ただ)しい。","answer":"彼(かれ)","explanation":"彼 covers both 'he' and 'him'; only the particle after it changes."} -->
+
 ## Pronouns Are Often Omitted
 
 Japanese sentences function without explicit pronouns when context is clear:
@@ -40,6 +42,8 @@ All second-person pronouns carry some directness and can seem rude. It's common 
 | 君 | きみ | Can sound condescending; literary/poetic |
 | お前 | おまえ | Rough, masculine; also shows closeness |
 
+<!-- grammar-card: {"rule":"あなた is the neutral 'you', though a name is preferred","hint":"you, neutral","example":"___のお名前(なまえ)は？","answer":"あなた","explanation":"あなた is acceptable with a stranger, but Japanese uses the person's name whenever it is known."} -->
+
 ## Third-Person Pronouns ("He/She")
 
 | Pronoun | Meaning | Note |
@@ -54,6 +58,8 @@ Add a suffix to make pronouns plural:
 
 - 私 + 達 = 私達 (we)
 - Common suffixes: 〜達 (たち), 〜等 (ら), 〜方 (がた), 〜供 (ども)
+
+<!-- grammar-card: {"rule":"たち makes a personal pronoun plural","hint":"we","example":"___は明日(あした)来(き)ます。","answer":"私(わたし)たち","explanation":"私たち is 'we', formed by adding たち to 私."} -->
 
 ## 自分 as a Pronoun
 

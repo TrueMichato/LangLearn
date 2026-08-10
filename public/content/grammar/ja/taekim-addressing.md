@@ -11,6 +11,8 @@ In English, we constantly say "I did this" and "you said that." In Japanese, the
 
 Neither sentence contains a word for "I" or "you" — the context makes it clear. Overusing pronouns, especially あなた, can sound unnatural or even rude.
 
+<!-- grammar-card: {"rule":"Japanese repeats a person's name where English switches to a pronoun","hint":"repeat the name, not 彼","example":"田中(たなか)さんに会(あ)いました。___はとても親切(しんせつ)でした。","answer":"田中(たなか)さん","explanation":"Using 彼 here would sound oddly detached; repeating the name is the natural choice."} -->
+
 ## Honorific Suffixes
 
 Instead of pronouns, Japanese attaches **suffixes** to names to show respect and social awareness.
@@ -47,6 +49,10 @@ Used for teachers, doctors, lawyers, and other respected professionals. It repla
 
 <!-- quiz:{"type":"multiple-choice","question":"Which suffix would you use when addressing a customer formally?","options":["さん","くん","ちゃん","さま"],"answer":3} -->
 
+<!-- grammar-card: {"rule":"先生 replaces さん for teachers, doctors and other professionals","hint":"teacher / doctor honorific","example":"医者(いしゃ)や教師(きょうし)には___を使(つか)います。","answer":"先生(せんせい)","explanation":"先生 is the honorific itself, which is why 先生さん is never said."} -->
+
+<!-- grammar-card: {"rule":"さん is the default honorific for peers and strangers","hint":"neutral honorific","example":"山田(やまだ)___、ご質問(しつもん)はありますか。","answer":"さん","explanation":"さん is safe with anyone whose title you do not know."} -->
+
 ## First Name vs Last Name
 
 In Japanese, **last names** are used by default. Using someone's first name implies closeness. The progression typically goes:
@@ -75,6 +81,8 @@ Japanese has several words for "I," and your choice signals your gender, age, an
 - **僕は田中です。** (Boku wa Tanaka desu.) — I'm Tanaka. *(casual male)*
 
 **Beginner tip:** Start with **私 (watashi)** — it works in all situations for all genders.
+
+<!-- grammar-card: {"rule":"私 is the neutral first-person pronoun","hint":"I, neutral","example":"___は学生(がくせい)です。","answer":"私(わたし)","explanation":"私 works in any register, unlike 僕 or 俺 which carry gender and tone."} -->
 
 ## Referring to Others
 
