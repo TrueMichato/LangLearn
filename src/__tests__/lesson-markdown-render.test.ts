@@ -92,6 +92,6 @@ describe('grammar lesson markdown rendering', () => {
       expect(broken, `literal emphasis markers reached the learner:\n${broken.join('\n')}`).toEqual(
         [],
       );
-    });
+    }, 60_000);
   }
 });

@@ -11,7 +11,7 @@ In English, we constantly say "I did this" and "you said that." In Japanese, the
 
 Neither sentence contains a word for "I" or "you" — the context makes it clear. Overusing pronouns, especially あなた, can sound unnatural or even rude.
 
-<!-- grammar-card: {"rule":"Japanese repeats a person's name where English switches to a pronoun","hint":"repeat the name, not 彼","example":"田中(たなか)さんに会(あ)いました。___はとても親切(しんせつ)でした。","answer":"田中(たなか)さん","explanation":"Using 彼 here would sound oddly detached; repeating the name is the natural choice."} -->
+<!-- grammar-card: {"rule":"Address the listener by name plus さん rather than あなた","hint":"田中 — the listener's family name","example":"___さんはコーヒーを飲(の)みますか。","answer":"田中(たなか)","explanation":"あなたは… sounds blunt or distant; Japanese normally addresses the listener by name with さん."} -->
 
 ## Honorific Suffixes
 
