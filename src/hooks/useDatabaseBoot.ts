@@ -1,5 +1,6 @@
-import { useCallback, useEffect, useState } from 'react';
+import { useCallback, useEffect, useMemo, useState } from 'react';
 import { openDatabase, flushPendingSnapshot, takeSnapshot, type DbStatus } from '../db/recovery';
+import type { DatabaseBoot } from './database-boot-context';
 import {
   ensurePersistentStorage,
   browserPersistenceEnvironment,
@@ -33,13 +34,12 @@ async function maybeTakeDailySnapshot(): Promise<void> {
  * Two things have to happen, in this order: ask the browser to stop evicting
  * our data, and open the database in a way that can report failure instead of
  * throwing into a blank screen.
+ *
+ * Call this once, from `DatabaseBootProvider`. Everything else should read the
+ * result through `useDatabaseBootContext`, so the storage permission is
+ * requested once and boot status has a single source of truth.
  */
-export function useDatabaseBoot(): {
-  status: DbStatus;
-  persistence: PersistenceState;
-  /** Accept the current (empty) state and carry on — see `data-loss-suspected`. */
-  dismissRecovery: () => void;
-} {
+export function useDatabaseBoot(): DatabaseBoot {
   const [status, setStatus] = useState<DbStatus>({ kind: 'opening' });
   const [persistence, setPersistence] = useState<PersistenceState>('unknown');
 
@@ -71,5 +71,8 @@ export function useDatabaseBoot(): {
 
   const dismissRecovery = useCallback(() => setStatus({ kind: 'ready' }), []);
 
-  return { status, persistence, dismissRecovery };
+  return useMemo(
+    () => ({ status, persistence, dismissRecovery }),
+    [status, persistence, dismissRecovery],
+  );
 }

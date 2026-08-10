@@ -6,7 +6,8 @@ import { useSettingsStore } from './stores/settingsStore';
 import ErrorBoundary from './components/common/ErrorBoundary';
 import UpdateToast from './components/common/UpdateToast';
 import DbRecoveryScreen from './components/common/DbRecoveryScreen';
-import { useDatabaseBoot } from './hooks/useDatabaseBoot';
+import DatabaseBootProvider from './components/common/DatabaseBootProvider';
+import { useDatabaseBootContext } from './hooks/database-boot-context';
 import { ROUTES } from './lib/routes';
 
 const Dashboard = lazy(() => import('./pages/Dashboard'));
@@ -33,8 +34,18 @@ const LyricsPage = lazy(() => import('./pages/Lyrics'));
 const DialectsPage = lazy(() => import('./pages/Dialects'));
 
 export default function App() {
+  // The provider sits above the recovery branch so boot runs once, whichever
+  // of the two outcomes below ends up rendering.
+  return (
+    <DatabaseBootProvider>
+      <BootedApp />
+    </DatabaseBootProvider>
+  );
+}
+
+function BootedApp() {
   const onboardingComplete = useSettingsStore((s) => s.onboardingComplete);
-  const { status, dismissRecovery } = useDatabaseBoot();
+  const { status, dismissRecovery } = useDatabaseBootContext();
 
   // Rendering the app against a database that failed to open produces a blank
   // screen and a learner who reasonably concludes their data is gone. Show them

@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import DataSafetySection from '../components/settings/DataSafetySection';
-import { useDatabaseBoot } from '../hooks/useDatabaseBoot';
+import { useDatabaseBootContext } from '../hooks/database-boot-context';
 import { useSettingsStore } from '../stores/settingsStore';
 import { useCurrentLanguage } from '../hooks/useCurrentLanguage';
 import DeckExport from '../components/common/DeckExport';
@@ -53,7 +53,7 @@ const sectionCard =
 export default function SettingsPage() {
   const { weeklyGoalMinutes, setWeeklyGoal, dailyGoalMinutes, setDailyGoal, activeLanguages, addLanguage, removeLanguage, showStressMarks, toggleStressMarks, darkMode, toggleDarkMode, fontSize, setFontSize, ttsRate, setTtsRate, reviewBatchSize, setReviewBatchSize, adaptiveReview, toggleAdaptiveReview, scheduler, setScheduler, fsrsRequestRetention, setFsrsRequestRetention, arabicDialect, setArabicDialect, arabicColloquialFocus, setArabicColloquialFocus } =
     useSettingsStore();
-  const { persistence } = useDatabaseBoot();
+  const { persistence } = useDatabaseBootContext();
 
   const languageOptions = Object.values(LANGUAGES);
 
