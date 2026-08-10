@@ -22,6 +22,8 @@ Sentence-ending particles are small words added at the end of sentences to conve
 
 <!-- quiz:{"type":"multiple-choice","question":"What nuance does ね add to a sentence?","options":["Strong assertion","Seeking agreement or confirmation","Expressing doubt","Giving a command"],"answer":1} -->
 
+<!-- grammar-card: {"rule":"ね invites the listener to agree","hint":"ね / よ / よね","example":"今日(きょう)はいい天気(てんき)です___。","answer":"ね","explanation":"ね assumes the listener sees the same thing: 'nice weather, isn't it?'"} -->
+
 ## よ — Asserting / Informing
 
 **よ** tells the listener something they **don't know yet** or emphasizes information. It is assertive — "I'm telling you" or "you know."
@@ -40,6 +42,8 @@ Sentence-ending particles are small words added at the end of sentences to conve
 - **心配(しんぱい)しなくていいですよ。** — You don't need to worry.
 - **頑張(がんば)れますよ。** — You can hang in there!
 
+<!-- grammar-card: {"rule":"よ tells the listener something they did not already know","hint":"ね / よ / よね","example":"明日テストがあります___。","answer":"よ","explanation":"よ marks the sentence as new information the speaker is passing on."} -->
+
 ## よね — Combined Effect
 
 **よね** combines assertion (よ) with seeking agreement (ね). It means "right?" with a bit more confidence — "it's X, isn't it?"
@@ -51,6 +55,8 @@ Sentence-ending particles are small words added at the end of sentences to conve
 - **三時に待(ま)ち合(あ)わせですよね。** — We're meeting at 3, right?
 
 <!-- quiz:{"type":"multiple-choice","question":"'明日テストがありますよ' — what is the speaker doing?","options":["Asking if there's a test","Confirming shared knowledge about a test","Informing the listener about a test they may not know about","Expressing doubt about the test"],"answer":2} -->
+
+<!-- grammar-card: {"rule":"よね asserts something while asking for confirmation","hint":"ね / よ / よね","example":"あの人、田中(たなか)さんです___。","answer":"よね","explanation":"よね does both jobs at once: the speaker is fairly sure but is still checking."} -->
 
 ## な — Emotional Reflection (Male/Casual)
 

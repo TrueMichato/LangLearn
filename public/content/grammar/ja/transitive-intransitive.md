@@ -18,6 +18,8 @@ Japanese has many verb pairs where one is **transitive** (takes a direct object 
 
 Notice: In the transitive sentence, "I" acts on "the door." In the intransitive sentence, "the door" is the subject and opens by itself.
 
+<!-- grammar-card: {"rule":"A transitive verb needs an actor and marks the thing acted on with を","hint":"開ける (to open something)","example":"私(わたし)はドアを___。","answer":"開(あ)けた","explanation":"開けた requires someone doing the opening, and ドアを marks what was opened."} -->
+
 ## Common Transitive/Intransitive Pairs
 
 | Transitive (〜を) | Meaning | Intransitive (〜が) | Meaning |
@@ -85,6 +87,10 @@ The key grammatical difference:
 > The class **started**.
 
 > 💡 A common mistake is using を with intransitive verbs. You cannot say ×「ドアを開いた」. The correct form is 「ドアが開いた」 or 「ドアを開けた」.
+
+<!-- grammar-card: {"rule":"An intransitive verb takes が and names no actor","hint":"始まる (to begin)","example":"授業(じゅぎょう)が___。","answer":"始(はじ)まった","explanation":"The class simply began; 始まった describes the event without saying who caused it."} -->
+
+<!-- grammar-card: {"rule":"Transitive verbs mark the thing acted on with を","hint":"始める (to start something)","example":"先生(せんせい)が授業(じゅぎょう)を___。","answer":"始(はじ)めた","explanation":"The teacher is the one starting the class, so the transitive 始める is used with を."} -->
 
 ## Describing States with ている
 

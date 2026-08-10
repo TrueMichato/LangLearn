@@ -249,6 +249,10 @@ In the same way, to add 〜ません to the verb 食べる, you need to conjugat
 
 If you're not sure how to conjugate verbs into the ます form, or if you could use a refresher, check out its dedicated page!
 
+<!-- grammar-card: {"rule":"あんまり is the casual spoken form of あまり","hint":"あまりない → ?","example":"えっ、___の？","answer":"あんまりない","explanation":"あんまりない is simply how あまりない is pronounced in relaxed conversation."} -->
+
+<!-- grammar-card: {"rule":"あまり must be completed by a negative","hint":"行く → ?","example":"買い物に行か___。全部オンラインで買うから。","answer":"ない","explanation":"あまり sets up 'not much', so the verb it modifies has to end in ない."} -->
+
 ## Beyond The Basics
 
 ### あまり〜ない with Other Verb Forms

@@ -307,6 +307,8 @@ The feeling of contrast can also be increased with a pause after the は when sp
 
   - I don't eat meat (but…)
 
+<!-- grammar-card: {"rule":"は marks the topic the rest of the sentence comments on","hint":"topic particle","example":"私___学生です。","answer":"は","explanation":"は presents 私 as what is being talked about, and 学生です is the comment made about it."} -->
+
 ## Beyond The Basics
 
 ### は for Hesitating When Speaking

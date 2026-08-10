@@ -120,6 +120,12 @@ As you can see in the examples above, もう〜 is sometimes translated as "almo
 
 Be careful though, because もう can't be combined with every adverb. It works best with ちょっと、少し、すぐ、and しばらく, as in もうちょっと, もう少し, もうすぐ, and もうしばらく.
 
+<!-- grammar-card: {"rule":"もうすぐ means 'very soon'","hint":"もう + すぐ","example":"___頂上(ちょうじょう)だよ。","answer":"もうすぐ","explanation":"もうすぐ頂上 says the summit is nearly reached."} -->
+
+<!-- grammar-card: {"rule":"もう少し means 'a little more'","hint":"もう + 少し","example":"___声で言ってもらえませんか？","answer":"もう少し大きい","explanation":"もう少し大きい声 asks for a slightly louder voice."} -->
+
+<!-- grammar-card: {"rule":"もう plus a counter means 'one more'","hint":"もう + 一回","example":"___言ってもらえませんか？","answer":"もう一回","explanation":"もう一回 asks for one further repetition."} -->
+
 ## Beyond the Basics
 
 ### もう少しで〜ところだった for "Almost Did…"

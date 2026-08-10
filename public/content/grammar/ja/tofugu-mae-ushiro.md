@@ -184,6 +184,12 @@ When talking about time,  前(まえ)から often translates as "for a while." I
 
 In this context,  後(あと)から is interchangable with  後(あと)で, but  後(あと)から emphasizes how the change happened at a later point, after the fact.
 
+<!-- grammar-card: {"rule":"前から describes a stretch of time, not an order of events","hint":"前 + から","example":"このお菓子、___気になってたんだ。","answer":"前から","explanation":"前から says the interest started a while back and has continued since."} -->
+
+<!-- grammar-card: {"rule":"後に follows the past form","hint":"食べた + 後に","example":"朝ごはんを食べ___に、歯を磨いた。","answer":"た後","explanation":"The eating has to be finished first, so 食べた takes た before 後に."} -->
+
+<!-- grammar-card: {"rule":"前に always follows the dictionary form","hint":"食べる + 前に","example":"朝ごはんを食べ___に、着替えます。","answer":"る前","explanation":"食べる前に keeps the non-past form regardless of when the action happens."} -->
+
 ## Beyond The Basics
 
 ### Tense Used in 〜前・後

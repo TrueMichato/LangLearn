@@ -119,6 +119,10 @@ by Maggie Sensei
 
 <!-- quiz: {"type":"multiple-choice","question":"What does \"木村さんは走りた**がっている**。\" mean?","options":["Kimura wants to run.","My dog always wants to go outside!","Kimura wants to eat.","Kimura wants to fight."],"answer":0} -->
 
+<!-- grammar-card: {"rule":"たがる negates as たがらない","hint":"たがる, negative","example":"木村さんは走りた___。","answer":"がらない","explanation":"走りたがらない says Kimura shows no sign of wanting to run."} -->
+
+<!-- grammar-card: {"rule":"たがっている describes a desire visible right now","hint":"たがる, continuous","example":"木村さんは食べた___。","answer":"がっている","explanation":"食べたがっている reports that Kimura is visibly wanting to eat."} -->
+
 ## Sources
 
 - [Tofugu](https://www.tofugu.com/japanese-grammar/tagaru-form/)

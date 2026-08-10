@@ -133,6 +133,8 @@ Additionally, the particle か is often added to 〜てみよう, as in 〜て�
 
 This is because, as with "let's" in English, the suffix 〜よう generally only means that *you* want to do something and that *you* want someone to do it with you. To communicate that you're concerned about whether the person you're addressing would agree with doing that or not, you may want to add か. This か functions similarly to adding "shall we?" at the end.
 
+<!-- grammar-card: {"rule":"ようとする means attempting without succeeding","hint":"食べる, volitional + する","example":"食べ___けど、食べられなかった。","answer":"ようとした","explanation":"食べようとした fits because the attempt failed; 食べてみた would imply it was actually tried."} -->
+
 ## Beyond the Basics
 
 ### 〜てみたら for "Triggering of a Discovery"
@@ -268,6 +270,10 @@ pp. 289-291
 <!-- quiz: {"type":"multiple-choice","question":"What does \"私もやっ**てみたい**！\" mean?","options":["I want to try that too!","I'll try it.","I want to go to Mars someday.","Alright, I'll open it and see what's inside."],"answer":0} -->
 
 <!-- quiz: {"type":"multiple-choice","question":"What does \"いつか火星に行っ**てみたい**。\" mean?","options":["I want to go to Mars someday.","I'll try it.","I want to try that too!","Alright, I'll open it and see what's inside."],"answer":0} -->
+
+<!-- grammar-card: {"rule":"てみる works with the passive too","hint":"言われる + みる + たら","example":"そう言われ___、そんな気もしてきた。","answer":"てみたら","explanation":"言われてみたら means 'now that you mention it', framing the remark as something tried out."} -->
+
+<!-- grammar-card: {"rule":"てみたら reports what was discovered by trying","hint":"飲む + みる + たら","example":"飲ん___、結構美味しかった。","answer":"でみたら","explanation":"飲んでみたら leads into the discovery that it tasted good after all."} -->
 
 ## Sources
 

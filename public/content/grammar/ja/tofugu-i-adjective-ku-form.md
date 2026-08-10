@@ -72,6 +72,8 @@ p. 87
 
 <!-- quiz: {"type":"multiple-choice","question":"What does \"彼らは**楽しく**暮らしていました。\" mean?","options":["They lived **happily**.","This sentence is grammatically incorrect","This is a polite expression","This describes a past action"],"answer":0} -->
 
+<!-- grammar-card: {"rule":"The く-form is what lets an い-adjective attach to a verb","hint":"楽しい → ?","example":"彼らは___暮らしていました。","answer":"楽しく","explanation":"楽しく modifies 暮らす; without the く-form the adjective could only modify a noun."} -->
+
 ## Sources
 
 - [Tofugu](https://www.tofugu.com/japanese-grammar/i-adjective-ku-form/)

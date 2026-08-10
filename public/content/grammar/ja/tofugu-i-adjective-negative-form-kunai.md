@@ -76,6 +76,8 @@ Negative い-adjectives can appear directly before a noun. These modified nouns 
 
 Here, 面白くない芸人 is the subject and 苦くないコーヒー is the object.
 
+<!-- grammar-card: {"rule":"The final い drops to く before ない","hint":"面白い → ?","example":"あの芸人は___。","answer":"面白くない","explanation":"面白い becomes 面白くない to say that the comedian is not funny."} -->
+
 ## Beyond the Basics
 
 ### Splitting く Form and ない with Particle は for Contrast
@@ -115,6 +117,8 @@ It is common to use 〜くない to ask questions that you think you know the an
   - 高**くない？**
 
   - **Isn't it** expensive?
+
+<!-- grammar-card: {"rule":"Inserting は into くない adds a note of contrast","hint":"おいしくない → ?","example":"おいしく___ないけど、体にいいよ。","answer":"は","explanation":"おいしくはない concedes it is not tasty while signalling that something positive follows."} -->
 
 ## Common Mistakes
 
@@ -164,6 +168,8 @@ p. 154
 <!-- quiz: {"type":"multiple-choice","question":"What does \"難しく**ありません**\" mean?","options":["is not difficult (formal)","That comedian **is not funny**.","A **not-funny comedian** made **not-bitter coffee**.","not delicious (but…)"],"answer":0} -->
 
 <!-- quiz: {"type":"multiple-choice","question":"What does \"あの芸人は**面白くない**。\" mean?","options":["That comedian **is not funny**.","is not difficult (formal)","is not difficult (formal)","A **not-funny comedian** made **not-bitter coffee**."],"answer":0} -->
+
+<!-- grammar-card: {"rule":"An い-adjective is negated with くない, never じゃない","hint":"うるさい → ?","example":"そのハエはうるさ___。","answer":"くない","explanation":"うるさくない is correct; うるさいじゃない is not a possible form in Japanese."} -->
 
 ## Sources
 

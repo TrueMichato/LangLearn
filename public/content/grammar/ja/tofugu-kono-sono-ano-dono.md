@@ -109,6 +109,10 @@ There are the plural versions of この, その, and あの, which are combinati
 
   - Grapes, blueberries, tomatoes… **these** fruits contain high levels of polyphenols.
 
+<!-- grammar-card: {"rule":"あの points at something away from both speakers","hint":"この / その / あの","example":"やばっ！___トマト、さらにデカイよ。","answer":"あの","explanation":"The tomato is over there, distant from both people, which is あの's job."} -->
+
+<!-- grammar-card: {"rule":"その points at something near the listener","hint":"この / その / あの","example":"___赤いスカートがいいな。","answer":"その","explanation":"The skirt is beside the listener, so その is the right choice."} -->
+
 ## Beyond The Basics
 
 ### この, その, あの with Longer Phrases
@@ -382,6 +386,8 @@ by 金水 敏 and 田窪 行則
 <!-- quiz: {"type":"multiple-choice","question":"What does \"**その**赤いスカートがいいな。\" mean?","options":["I like **that** red skirt.","Out of **this** skirt, **that** skirt, and **that** skirt over there, **which** one do you like the best?","I like **that** [red frilly] skirt [on the right].","Look! **This** tomato is so big."],"answer":0} -->
 
 <!-- quiz: {"type":"multiple-choice","question":"What does \"**その**[赤いヒラヒラの右の方においてあるスカート]がいいな。\" mean?","options":["I like **that** [red frilly] skirt [on the right].","Out of **this** skirt, **that** skirt, and **that** skirt over there, **which** one do you like the best?","I like **that** red skirt.","Look! **This** tomato is so big."],"answer":0} -->
+
+<!-- grammar-card: {"rule":"この before 私 adds a note of self-importance","hint":"この + 私","example":"お前は___私を誰だと思っているんだ？","answer":"この","explanation":"この私 means 'I, of all people', and gives the sentence its indignant tone."} -->
 
 ## Sources
 

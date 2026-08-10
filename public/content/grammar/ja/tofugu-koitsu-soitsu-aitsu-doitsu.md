@@ -152,6 +152,10 @@ On the other hand, if someone just told you that they've gone through some terri
 
 Note that it's more standard to say これ and それ. こいつ and そいつ will be chosen by some people who prefer a certain speech style that sounds gruffer, and perhaps more comical.
 
+<!-- grammar-card: {"rule":"Adding ら makes these pronouns plural","hint":"そいつ + ら","example":"すいません、___俺のダチなんです。","answer":"そいつら","explanation":"そいつら refers to that group, positioned near the listener rather than the speaker."} -->
+
+<!-- grammar-card: {"rule":"こいつ is a blunt 'this guy', near the speaker","hint":"this guy","example":"俺、___とは長い付き合いでさ。","answer":"こいつ","explanation":"こいつ is rough but affectionate here, referring to a friend right beside the speaker."} -->
+
 ## Beyond the Basics
 
 ### こいつ, そいつ, and あいつ for People Who Are Out of Sight
@@ -353,6 +357,8 @@ by 金水 敏 and 田窪 行則
 <!-- quiz: {"type":"multiple-choice","question":"What does \"**そいつ**と**あいつ**を連れて行け。\" mean?","options":["Take **that** guy and **that guy over there** with you.","Who is **this guy**?","I've been friends with **this dude** for a long time.","I'm sorry. **Those guys** are my friends."],"answer":0} -->
 
 <!-- quiz: {"type":"multiple-choice","question":"What does \"俺、**こいつ**とは長い付き合いでさ。\" mean?","options":["I've been friends with **this dude** for a long time.","Who is **this guy**?","Take **that** guy and **that guy over there** with you.","I'm sorry. **Those guys** are my friends."],"answer":0} -->
+
+<!-- grammar-card: {"rule":"The suffix め adds contempt to a pronoun","hint":"あいつ + め","example":"___！今度会ったらただじゃおかないぞ。","answer":"あいつめ","explanation":"あいつめ turns 'that guy' into an outright insult."} -->
 
 ## Sources
 

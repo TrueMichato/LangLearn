@@ -183,6 +183,10 @@ When a verb of **motion** (行(い)く, 来(く)る, 帰(かえ)る, 出(で)か
 
 <!-- quiz:{"type":"multiple-choice","question":"Which sentence correctly uses ように?","options":["日本に行くように、お金を貯めている","子供が読めるように、ふりがなをつけた","彼女のように、プレゼントを買った","勉強するように、図書館に行った"],"answer":1} -->
 
+<!-- grammar-card: {"rule":"のに marks what something is useful for","hint":"ために / のに","example":"この道具は料理する___便利だ。","answer":"のに","explanation":"With 便利 the purpose a tool serves is expressed by のに rather than ために."} -->
+
+<!-- grammar-card: {"rule":"ように is used when the goal is an ability or a state","hint":"ために / ように","example":"日本語が話せる___、練習している。","answer":"ように","explanation":"話せる expresses ability, so ように fits; ために would need a deliberate action instead."} -->
+
 ## Summary
 
 Choosing the right purpose expression depends on the **type of verb** and the **degree of control** the subject has:

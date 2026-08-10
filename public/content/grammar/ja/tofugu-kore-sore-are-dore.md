@@ -173,6 +173,10 @@ In the future:
 
   - What did you do **afterward**?
 
+<!-- grammar-card: {"rule":"どっち is the casual form of どちら","hint":"which, casual","example":"ああ、最後の一つ___にしよう。","answer":"どっち","explanation":"どっち asks which of two options in relaxed speech."} -->
+
+<!-- grammar-card: {"rule":"あれ refers to something distant from both speakers","hint":"これ / それ / あれ","example":"___が、すごくおいしそう。","answer":"あれ","explanation":"The food is away from both of them, so あれ is used."} -->
+
 ## Beyond the Basics
 
 ### これ, それ, and あれ for Information Given Previously
@@ -404,6 +408,8 @@ by 金水 敏 and 田窪 行則
 <!-- quiz: {"type":"multiple-choice","question":"What does \"❌ これの山\" mean?","options":["This mountain","What is **this**?","These mountains","I wonder **which one** to get."],"answer":0} -->
 
 <!-- quiz: {"type":"multiple-choice","question":"What does \"⭕ この山\" mean?","options":["This mountain","What is **this**?","These mountains","I wonder **which one** to get."],"answer":0} -->
+
+<!-- grammar-card: {"rule":"これ can refer back to something just mentioned","hint":"これ","example":"彼女がケーキを作ってくれたんだけどさ、___がまた美味しいんだよ！","answer":"これ","explanation":"これ picks the cake up from the previous clause, which adds immediacy to the praise."} -->
 
 ## Sources
 

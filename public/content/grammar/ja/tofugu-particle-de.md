@@ -120,6 +120,8 @@ Or, if you are explaining the ingredients of the cookies you made, you can say:
 
 Here, で specifies flour and sugar as the ingredients for the cookies, indicating that they are what the cookies are made of. In each of the above examples, で specifies the components of a larger whole.
 
+<!-- grammar-card: {"rule":"で marks the place where an action happens","hint":"に / で","example":"ロングビーチ___バレーボールをする。","answer":"で","explanation":"Playing volleyball is an action, so its location takes で rather than に."} -->
+
 ## Beyond the Basics
 
 We've now covered the most fundamental uses of particle で. As we mentioned at the beginning of the page, though, で has a lot of uses. In the following sections, we'll introduce you to a few more. As we go, we'll do our best to connect them to our underlying concept of specification. Let's get to it!

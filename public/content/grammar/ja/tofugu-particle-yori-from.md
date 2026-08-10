@@ -118,6 +118,8 @@ From Mami
 
 I believe より here was originally used to formally identify the message's source and to appropriately close the letter. My guess is that the formality has waned over time and that the expression is now more informal, but I couldn't find a source for this.
 
+<!-- grammar-card: {"rule":"から marks a starting point in ordinary speech","hint":"から / より","example":"ここ___先は立入禁止ですよ。","answer":"から","explanation":"ここから先 is the everyday way to say 'beyond this point'."} -->
+
 ## Beyond the Basics
 
 ### より for Character Development
@@ -210,6 +212,10 @@ p. 274
 <!-- quiz: {"type":"multiple-choice","question":"What does \"ここ**から**先は立入禁止ですよ。\" mean?","options":["You're not allowed beyond this point.","No entry beyond this point.","The group departed from Narita Airport.","The graduation ceremony will be held at 10:00 a.m."],"answer":0} -->
 
 <!-- quiz: {"type":"multiple-choice","question":"What does \"一行は成田空港**より**出発した。\" mean?","options":["The group departed from Narita Airport.","No entry beyond this point.","You're not allowed beyond this point.","The graduation ceremony will be held at 10:00 a.m."],"answer":0} -->
+
+<!-- grammar-card: {"rule":"より marks a starting time in formal writing","hint":"平素 (habitually) + ?","example":"___格別のご高配を賜り厚くお礼申し上げます。","answer":"平素より","explanation":"平素より means 'from always', and opens a set business greeting."} -->
+
+<!-- grammar-card: {"rule":"より can replace から in formal or archaic speech","hint":"から / より","example":"ここ___先は立入禁止じゃぞ。","answer":"より","explanation":"ここより先 says the same thing but sounds stiff and old-fashioned."} -->
 
 ## Sources
 

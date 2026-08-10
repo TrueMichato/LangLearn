@@ -19,6 +19,8 @@ Now that you know how to classify verbs (from the previous lesson), it is time t
 
 <!-- quiz:{"type":"multiple-choice","question":"What is the negative form of 見る (miru — to see)?","options":["見らない","見ない","見まない","見くない"],"answer":1} -->
 
+<!-- grammar-card: {"rule":"る-verbs drop る and add ない","hint":"食べる → ?","example":"朝ご飯を食べ___。","answer":"ない","explanation":"食べる loses its る and takes ない, giving 食べない."} -->
+
 ## う-Verbs: Change to あ-Row + ない
 
 For う-verbs, take the last kana and shift it to the corresponding **あ-row** sound in the same column of the kana chart, then add **ない**.
@@ -58,6 +60,8 @@ Verbs ending in **う** are a special case. Instead of changing う to あ (whic
 
 <!-- quiz:{"type":"multiple-choice","question":"What is the negative form of 買う (kau — to buy)?","options":["買あない","買わない","買うない","買かない"],"answer":1} -->
 
+<!-- grammar-card: {"rule":"Verbs ending in う take わない, never あない","hint":"買う → ?","example":"新しい服を買___。","answer":"わない","explanation":"買う is the exception in the う-row: its negative is 買わない."} -->
+
 ## Irregular Verbs
 
 The two irregular verbs have unique negative forms that must be memorized:
@@ -71,6 +75,8 @@ The two irregular verbs have unique negative forms that must be memorized:
 - **明日は来ない。** (Ashita wa konai.) — (He) won't come tomorrow.
 
 Note that 来ない is read as **こない**, not くない. The kanji stays the same but the reading changes.
+
+<!-- grammar-card: {"rule":"する is irregular and becomes しない","hint":"する → ?","example":"今日は勉強___。","answer":"しない","explanation":"勉強する is built on the irregular する, whose negative form is しない."} -->
 
 ## Special: ある → ない
 

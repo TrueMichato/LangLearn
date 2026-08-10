@@ -228,6 +228,10 @@ In this case, your focus is on the students receiving the donuts. Again, the rea
 
 In this example, your focus is still on the teacher giving the donuts, but くれる suggests you are either a student or someone on the students' side of things, like a parent. It no longer sounds like you are a neutral observer, so it doesn't work in situations where you are an outsider.
 
+<!-- grammar-card: {"rule":"くれる is giving that moves towards the speaker","hint":"あげる / くれる","example":"ジェニーが（私に）ガムを___。","answer":"くれる","explanation":"The gum comes to the speaker, and Japanese requires くれる rather than あげる for that direction."} -->
+
+<!-- grammar-card: {"rule":"あげる is giving that moves away from the speaker","hint":"あげる / くれる","example":"（私が）ジェニーにガムを___。","answer":"あげる","explanation":"The gum passes from the speaker to Jenny, which is exactly when あげる is used."} -->
+
 ## Beyond the Basics
 
 ### 〜てあげる, 〜てくれる, and 〜てもらう
@@ -491,6 +495,8 @@ by 大江 三郎
 <!-- quiz: {"type":"multiple-choice","question":"What does \"ジェニーが（私に）ガムを**くれる**。\" mean?","options":["Jenny **gives** gum to me.","I **give** gum to Jenny.","I **get** gum from Jenny.","I **get** gum from Jenny."],"answer":0} -->
 
 <!-- quiz: {"type":"multiple-choice","question":"What does \"（私が）ジェニーにガムを**もらう**。\" mean?","options":["I **get** gum from Jenny.","I **give** gum to Jenny.","Jenny **gives** gum to me.","I **receive** money from the company."],"answer":0} -->
+
+<!-- grammar-card: {"rule":"てあげる frames an action as a favour done for someone","hint":"教える + あげる","example":"（私が）友達に日本語を教え___。","answer":"てあげる","explanation":"教えてあげる presents the teaching as something done for the friend's benefit."} -->
 
 ## Sources
 

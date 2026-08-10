@@ -116,6 +116,8 @@ pp. 269-270
 
 <!-- quiz: {"type":"multiple-choice","question":"What does \"今度、話しましょう。食べながら。\" mean?","options":["Let's talk while having lunch sometime.","While eating, **play**","While having lunch, let's talk sometime.","Let's eat while talking sometime."],"answer":0} -->
 
+<!-- grammar-card: {"rule":"ながら attaches to the ます-stem for simultaneous actions","hint":"食べる + ながら","example":"___、友達とマルバツゲームで遊んだ。","answer":"食べながら","explanation":"食べながら says the eating happened at the same time as the game."} -->
+
 ## Sources
 
 - [Tofugu](https://www.tofugu.com/japanese-grammar/verb-nagara/)

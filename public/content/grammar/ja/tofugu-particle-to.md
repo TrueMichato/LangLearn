@@ -28,6 +28,8 @@ To help drive this point home, let me introduce two penguin companions, ペン�
 
 In this sentence, と comes between the two penguins, ペン太 and ペン子, just like the word "and." As you read on, you'll see that particle と can pop up in different places, and take slightly different meanings. However, keep in mind the *togetherness* of our penguin pals, and all the different uses will make sense!
 
+<!-- grammar-card: {"rule":"と joins nouns into an exhaustive list","hint":"と / や","example":"ペン太___ペン子は友達だ。","answer":"と","explanation":"と lists exactly these two and implies no others."} -->
+
 ## Uses of と
 
 ### と as in "And"
@@ -292,6 +294,10 @@ pp. 456-462
 <!-- quiz: {"type":"multiple-choice","question":"What does \"トマト**と**バナナを食べる。\" mean?","options":["I'm going to eat tomatoes and bananas.","Penta and Penko are friends.","I'm going to eat tomatoes, bananas, cake, ramen and sushi.","I ate tomatoes with my little sister."],"answer":0} -->
 
 <!-- quiz: {"type":"multiple-choice","question":"What does \"トマト**と**バナナ**と**ケーキ**と**ラーメン**と**すしを食べる。\" mean?","options":["I'm going to eat tomatoes, bananas, cake, ramen and sushi.","Penta and Penko are friends.","I'm going to eat tomatoes and bananas.","I ate tomatoes with my little sister."],"answer":0} -->
+
+<!-- grammar-card: {"rule":"って is the casual quoting particle","hint":"と → ?","example":"キャメロンがおはよう___言った。","answer":"って","explanation":"って replaces と in speech to quote what Cameron said."} -->
+
+<!-- grammar-card: {"rule":"と一緒に means 'together with'","hint":"と + 一緒に","example":"第一次世界大戦では、日本はイギリス___戦いました。","answer":"と一緒に","explanation":"Without 一緒に, 戦う with と would mean fighting against Britain instead of alongside it."} -->
 
 ## Sources
 

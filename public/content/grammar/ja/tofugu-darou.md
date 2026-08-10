@@ -38,6 +38,8 @@ B: I assume it will be the Giants.
 
 B's use of だろう indicates that B has a reason to support his speculation. Maybe the Giants are the strongest team and always win.
 
+<!-- grammar-card: {"rule":"だろうね checks a guess with the listener","hint":"だろう + ね","example":"B: ジャイアンツ___。","answer":"だろうね","explanation":"ね invites agreement, softening the guess into a shared assumption."} -->
+
 ## How to Make Sentences with だろう
 
 Now let's look at how to form sentences with だろう. It can come after nouns, adjectives, and verbs in both their positive and negative forms.
@@ -171,6 +173,10 @@ So far we've discussed cases where だろう is used at the end of a sentence, b
   - Study must be hard for you, but hang in there.
 
 These sentences are common in both writing and speaking.
+
+<!-- grammar-card: {"rule":"だろう attaches straight to the plain form of a verb","hint":"休む, progressive","example":"彼は会社を休___だろう。","answer":"んでいる","explanation":"休んでいる is the plain progressive, and だろう follows it without any だ."} -->
+
+<!-- grammar-card: {"rule":"だろう states a confident guess","hint":"だ → ?","example":"明日雨___から、傘が必要だね。","answer":"だろう","explanation":"だろう turns the claim into a prediction: it will probably rain."} -->
 
 ## だろう for Seeking Confirmation
 

@@ -194,6 +194,10 @@ In the same way, you want to ask your colleague if they've been to Japan, so you
 
 Again, using the particle が sounds a little overly-dramatic and could come across a bit odd in ordinary conversation. This version sounds more natural.
 
+<!-- grammar-card: {"rule":"A noun connects to ことがある with の","hint":"noun + ことがある","example":"ダブルブッキング___ことがある。","answer":"の","explanation":"ダブルブッキング is a noun, so it needs の before ことがある."} -->
+
+<!-- grammar-card: {"rule":"Dictionary form plus ことがある means something happens from time to time","hint":"行く + ことがある","example":"出張(しゅっちょう)で日本に___。","answer":"行くことがある","explanation":"行くことがある reports an occasional occurrence, not a past experience."} -->
+
 ## Beyond The Basics
 
 ### 〜こともあれば、〜こともある For "Sometimes…, sometimes…"
@@ -338,6 +342,8 @@ by Robert Fiengo and William McClure
 <!-- quiz: {"type":"multiple-choice","question":"What does \"このフレーズを使う**ことがある**。\" mean?","options":["There are times I use this phrase.","There are times I speak in Japanese.","I sometimes go to Japan on business.","The inside of the plane is sometimes stinky."],"answer":0} -->
 
 <!-- quiz: {"type":"multiple-choice","question":"What does \"出張(しゅっちょう)で日本に**行くことがある**。\" mean?","options":["I sometimes go to Japan on business.","There are times I speak in Japanese.","There are times I use this phrase.","The inside of the plane is sometimes stinky."],"answer":0} -->
+
+<!-- grammar-card: {"rule":"ないことはない is a hedged double negative","hint":"double negative","example":"お風呂に入ら___けど、嫌がるんだよね。","answer":"ないことはない","explanation":"It concedes that the thing does happen, just grudgingly."} -->
 
 ## Sources
 

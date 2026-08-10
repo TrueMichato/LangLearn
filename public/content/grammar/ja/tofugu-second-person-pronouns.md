@@ -90,6 +90,12 @@ Although it's associated with masculinity, that doesn't mean it's a pronoun only
 
 お前 can also be a way to show affection in a very casual way towards close friends, partners, and family. In this case, the above example would be playful, rather than showing genuine anger.
 
+<!-- grammar-card: {"rule":"お前 is blunt and can be confrontational","hint":"you, rough","example":"___、ふざけてんのか？","answer":"お前","explanation":"お前 matches the aggressive tone of the question."} -->
+
+<!-- grammar-card: {"rule":"君 is used downward or between close equals","hint":"you, familiar","example":"___、これやっておいてもらえないかな？","answer":"君","explanation":"君 suits a senior addressing a junior, and would be rude aimed upward."} -->
+
+<!-- grammar-card: {"rule":"あなた is the neutral, polite word for 'you'","hint":"you, neutral","example":"___はベーコン好きですか？","answer":"あなた","explanation":"あなた is safe with a stranger, though a name is preferred once you know it."} -->
+
 ## Beyond The Basics
 
 ### Second-Person Pronouns and Politeness

@@ -106,6 +106,8 @@ Object:
 
   - It's their birthday, so let's buy **something** for them.
 
+<!-- grammar-card: {"rule":"か after a question word makes it indefinite","hint":"何 + か","example":"誕生日だから、___買ってあげようよ。","answer":"何か","explanation":"何か means 'something', with か turning the question word into a vague reference."} -->
+
 ## Beyond the Basics
 
 ### Intonation of か in Questions
@@ -240,6 +242,10 @@ by Rumiko Shinzato
 <!-- quiz: {"type":"multiple-choice","question":"What does \"今日は暑いです + か。\" mean?","options":["Is it hot out today?","It is hot out today.","On my birthday, **either** my mom **or** my dad will make me a cake.","On my birthday, either my mom or my dad will make me a cake."],"answer":0} -->
 
 <!-- quiz: {"type":"multiple-choice","question":"What does \"誕生日は [お母さん**か**] [お父さん**か**] がケーキを作ってくれる。\" mean?","options":["On my birthday, **either** my mom **or** my dad will make me a cake.","It is hot out today.","Is it hot out today?","On my birthday, either my mom or my dad will make me a cake."],"answer":0} -->
+
+<!-- grammar-card: {"rule":"An embedded question keeps its か","hint":"いくら + ?","example":"キャメロンがウェイターに「グラスワインはいくら___」と聞きました。","answer":"か","explanation":"か marks the quoted clause as the question that was actually asked."} -->
+
+<!-- grammar-card: {"rule":"かどうか means 'whether or not'","hint":"か + どうか","example":"今日はまみさんも来るか___知ってる？","answer":"どうか","explanation":"来るかどうか embeds a yes-no question inside the larger sentence."} -->
 
 ## Sources
 

@@ -198,6 +198,12 @@ pp. 126-143
 
 <!-- quiz: {"type":"multiple-choice","question":"What does \"**毎年**パーティーを**する**。\" mean?","options":["I **throw** a party **every year.**","My brother **eats** pasta everyday.","My brother **will eat** pasta tomorrow.","Want some?"],"answer":0} -->
 
+<!-- grammar-card: {"rule":"The plain non-past states general truths","hint":"to boil","example":"水は100度で___。","answer":"沸騰(ふっとう)する","explanation":"沸騰する describes what always happens, rather than a future event."} -->
+
+<!-- grammar-card: {"rule":"する is the plain non-past of the irregular verb","hint":"する","example":"パーティーを___。","answer":"する","explanation":"パーティーをする means to hold a party, stated in the plain form."} -->
+
+<!-- grammar-card: {"rule":"The plain non-past covers habits as well as the future","hint":"食べる","example":"朝は、いつもサンドイッチを___。","answer":"食べる","explanation":"食べる here describes what the speaker does every morning, not a single future act."} -->
+
 ## Sources
 
 - [Tofugu](https://www.tofugu.com/japanese-grammar/verb-plain-present-form/)

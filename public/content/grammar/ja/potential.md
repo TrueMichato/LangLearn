@@ -68,6 +68,10 @@ This is called **ら抜き言葉** and is extremely common in speech. However, i
 
 <!-- quiz:{"type":"multiple-choice","question":"What is the formal potential form of 食べる?","options":["食べれる","食べるれる","食べられる","食べかれる"],"answer":2} -->
 
+<!-- grammar-card: {"rule":"Casual speech drops the ら from られる","hint":"食べられる → ?","example":"納豆(なっとう)___？","answer":"食べれる","explanation":"食べれる is the common spoken ra-dropped potential; 食べられる remains the standard written form."} -->
+
+<!-- grammar-card: {"rule":"Group 2 verbs form the potential by replacing る with られる","hint":"食べる → ?","example":"刺身(さしみ)が食べ___れます。","answer":"ら","explanation":"食べる drops its る and takes られる, giving 食べられます."} -->
+
 ## Group 3 (Irregular Verbs) — Potential Form
 
 | Dictionary | Potential |
@@ -100,6 +104,8 @@ Both を and が are used in modern Japanese, but が is more traditional and co
 - **この字(じ)が読めますか。** — Can you read this character?
 
 <!-- quiz:{"type":"multiple-choice","question":"Which particle is commonly used with the potential form?","options":["を","に","で","が"],"answer":3} -->
+
+<!-- grammar-card: {"rule":"The potential form changes を to が","hint":"を / が","example":"辛(から)い食(た)べ物(もの)___食べられません。","answer":"が","explanation":"With 食べられる the object is marked with が, because ability describes a state rather than an action."} -->
 
 ## Conjugating the Potential Form
 

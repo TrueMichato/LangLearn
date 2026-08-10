@@ -398,6 +398,10 @@ Just like いくら, you can attach an honorific prefix 御 (お) to いくつ t
   - How much older/younger than your wife are you? 
 (*Literally*: How many years apart from your wife are you?)
 
+<!-- grammar-card: {"rule":"何 asks which thing","hint":"what","example":"ケンイチに___をあげたの？","answer":"何","explanation":"何を asks what was given to Kenichi."} -->
+
+<!-- grammar-card: {"rule":"誰 asks which person","hint":"who","example":"___にプレゼントをあげたの？","answer":"誰","explanation":"誰に asks who received the present."} -->
+
 ## Beyond the Basics
 
 ### Embedded Questions Using Question Words
@@ -748,6 +752,8 @@ by niwa saburoo の日本語文法概説
 <!-- quiz: {"type":"multiple-choice","question":"What does \"**ケンイチ**に**プレゼント**をあげたの？\" mean?","options":["Did you give **Kenichi** **a present**?","Did you go to **a restaurant**?","Out of all foods, **which one** is your most favorite?","We have draft beer, bottled beer, and canned beer. **Which one** would you prefer?"],"answer":0} -->
 
 <!-- quiz: {"type":"multiple-choice","question":"What does \"食べ物の中で、**どれ**が一番好き？\" mean?","options":["Out of all foods, **which one** is your most favorite?","Did you go to **a restaurant**?","Did you give **Kenichi** **a present**?","We have draft beer, bottled beer, and canned beer. **Which one** would you prefer?"],"answer":0} -->
+
+<!-- grammar-card: {"rule":"か after a question word turns it into 'some-'","hint":"何 + か","example":"コンビニで___甘いの買ってきて。","answer":"何か","explanation":"何か甘いの asks for something sweet without asking a question."} -->
 
 ## Sources
 

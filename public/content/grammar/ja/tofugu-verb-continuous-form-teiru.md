@@ -94,6 +94,8 @@ We'll look at how the exact meaning changes according to the verb and the contex
 
 Now, let's start by taking a look at more examples of 〜ている used for continuous actions!
 
+<!-- grammar-card: {"rule":"ている describes an action in progress","hint":"食べる + いる","example":"(私は)昼ごはんを食べ___。","answer":"ている","explanation":"食べている says the speaker is in the middle of lunch right now."} -->
+
 ## Uses
 
 ### 〜ている for Continous Actions
@@ -315,6 +317,8 @@ You use the past tense of 知る here because you're describing the change from 
 
 A similar example of this is 分かる (to understand). 分かる focuses on the change of state from "not understanding" to "understanding," but 分かっている describes the state of you already understanding.
 
+<!-- grammar-card: {"rule":"ている contracts to てる in speech","hint":"ている → ?","example":"ねえ、私の話、ちゃんと聞い___？","answer":"てる","explanation":"聞いてる is the everyday spoken form of 聞いている."} -->
+
 ## Beyond the Basics
 
 ### いる and ある with 〜ている
@@ -521,6 +525,8 @@ pp. 155-157
 <!-- quiz: {"type":"multiple-choice","question":"What does \"テレビが**ついている**。\" mean?","options":["The TV **is on**.","I **am eating** lunch.","Dad **is** watch**ing** TV in the living room.","Dad **is** hitt**ing** the TV."],"answer":0} -->
 
 <!-- quiz: {"type":"multiple-choice","question":"What does \"お父さんはリビングでテレビを観**ている**。\" mean?","options":["Dad **is** watch**ing** TV in the living room.","I **am eating** lunch.","The TV **is on**.","Dad **is** hitt**ing** the TV."],"answer":0} -->
+
+<!-- grammar-card: {"rule":"ある does not take ている for a plain state","hint":"ある","example":"私の実家は東京にあ___。","answer":"る","explanation":"東京にある is correct; あっている is not a form Japanese uses."} -->
 
 ## Sources
 

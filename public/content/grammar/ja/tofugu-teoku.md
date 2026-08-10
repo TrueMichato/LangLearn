@@ -190,6 +190,10 @@ Now, what if you left the light on purpose? For example, you may leave the light
 
 Just like this, the nuances of the exact phrase can be different depending on the situation, and sometimes nuances can overlap. In the next section, let's check out some other examples with 〜ておく indicating mixed nuances.
 
+<!-- grammar-card: {"rule":"ておく becomes ておいて before くれる","hint":"ておく + くれる","example":"悪いんだけど、予約し___くれないかな？","answer":"ておいて","explanation":"予約しておいてくれない asks the listener to book ahead as a favour."} -->
+
+<!-- grammar-card: {"rule":"ておく means doing something in advance","hint":"する + おく","example":"来年日本に行くので、日本語を勉強し___。","answer":"ておく","explanation":"勉強しておく prepares for next year's trip ahead of time."} -->
+
 ## Beyond the Basics
 
 ### 〜ておく For Mixed Nuances
@@ -422,6 +426,8 @@ by 徐 梓競
 <!-- quiz: {"type":"multiple-choice","question":"What does \"今のうちに、勉強し**ておこう**。\" mean?","options":["While I have time, I should get some studying done.","I'm going to Japan next year, so I'm going to study Japanese **beforehand**.","Then, I'll make a reservation!","I'm sorry (to ask you this), but can you make a reservation for us?"],"answer":0} -->
 
 <!-- quiz: {"type":"multiple-choice","question":"What does \"じゃあ、私が予約 [する・し**ておく**] よ！\" mean?","options":["Then, I'll make a reservation!","I'm going to Japan next year, so I'm going to study Japanese **beforehand**.","While I have time, I should get some studying done.","I'm sorry (to ask you this), but can you make a reservation for us?"],"answer":0} -->
+
+<!-- grammar-card: {"rule":"ておく takes ます for politeness","hint":"ておく, polite","example":"分かりました。返却し___ね。","answer":"ておきます","explanation":"返却しておきます promises to return it in good time."} -->
 
 ## Sources
 

@@ -129,6 +129,8 @@ In Japan, there is also a well-known slogan encouraging people not to drive afte
 
 〜な not only strengthens the message, but it also makes the slogan more succinct and vigorous.
 
+<!-- grammar-card: {"rule":"The particle な after a dictionary form is a blunt prohibition","hint":"な","example":"乾燥に負ける___！","answer":"な","explanation":"負けるな means 'don't lose' — an order rather than a request."} -->
+
 ## Beyond the Basics
 
 ### Neutral 〜な for Indirectly Referring to Past Speech
@@ -213,6 +215,8 @@ by Yukiko Nishimura
 <!-- quiz: {"type":"multiple-choice","question":"What does \"触る**な**！\" mean?","options":["Don't touch it!","Don't move!","Don't eat it!","Don't come!"],"answer":0} -->
 
 <!-- quiz: {"type":"multiple-choice","question":"What does \"食べる**な**！\" mean?","options":["Don't eat it!","Don't move!","Don't touch it!","Don't come!"],"answer":0} -->
+
+<!-- grammar-card: {"rule":"A prohibition can be reported with って","hint":"見る + な","example":"十時以降はテレビを___って言われたんだ。","answer":"見るな","explanation":"見るな is the original command, quoted here with って."} -->
 
 ## Sources
 

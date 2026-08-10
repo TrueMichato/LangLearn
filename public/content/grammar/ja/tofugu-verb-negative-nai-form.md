@@ -271,6 +271,10 @@ However, this has an assertive feel to it so is not very common in everyday conv
 
 <!-- quiz: {"type":"multiple-choice","question":"What does \"泳げない！\" mean?","options":["I can't swim!","I don't understand!","I can't do it!","Sky diving looks interesting, but I definitely can't do it!"],"answer":0} -->
 
+<!-- grammar-card: {"rule":"A potential form negates like an ichidan verb","hint":"飲める → ?","example":"私はコーヒーが飲め___。","answer":"ない","explanation":"飲める drops る and adds ない, giving 飲めない."} -->
+
+<!-- grammar-card: {"rule":"The plain negative is used before かもしれません","hint":"行く, plain negative","example":"明日のパーティーには___かもしれません。","answer":"行かない","explanation":"行かない stays plain because かもしれません already carries the politeness."} -->
+
 ## Sources
 
 - [Tofugu](https://www.tofugu.com/japanese-grammar/verb-negative-nai-form/)

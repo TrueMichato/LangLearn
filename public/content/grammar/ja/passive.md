@@ -97,6 +97,8 @@ This is unique to Japanese. The indirect passive expresses that someone is **neg
   - **この小説(しょうせつ)は夏目漱石(なつめそうせき)によって書かれました。** — This novel was written by Natsume Soseki.
   - **新しい法律(ほうりつ)は国会(こっかい)によって決(き)められました。** — The new law was decided by the parliament.
 
+<!-- grammar-card: {"rule":"によって marks the agent when something was created","hint":"に / によって","example":"この小説(しょうせつ)は夏目漱石(なつめそうせき)___書かれました。","answer":"によって","explanation":"For works of creation Japanese prefers によって over plain に to name the author."} -->
+
 ## Passive in Formal Speech
 
 The passive voice is frequently used in formal Japanese, news, and business:

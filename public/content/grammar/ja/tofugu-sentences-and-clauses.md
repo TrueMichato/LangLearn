@@ -87,6 +87,10 @@ In Japanese, noun modifiers always come **before** the noun they modify.
 
 <!-- quiz: {"type":"multiple-choice","question":"In Japanese, where do noun modifiers go relative to the noun?","options":["After the noun","Before the noun","Either position","They replace the noun"],"answer":1} -->
 
+<!-- grammar-card: {"rule":"An indirectly reported clause reverts to the plain form","hint":"plain","example":"桜が満開___と教えてもらった。","answer":"だ","explanation":"Without quotation marks the clause is paraphrased, so 満開だ is used."} -->
+
+<!-- grammar-card: {"rule":"A directly quoted clause keeps the original speaker's politeness","hint":"polite","example":"「桜が満開___よ」と教えてもらいました。","answer":"です","explanation":"The original speaker said です, so it survives inside the quotation marks."} -->
+
 ## Sources
 
 - [Tofugu](https://www.tofugu.com/japanese-grammar/sentences-and-clauses/)

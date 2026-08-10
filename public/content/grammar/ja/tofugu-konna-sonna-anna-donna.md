@@ -113,6 +113,10 @@ On the other hand, そんな indicates you are stepping back a little from the t
 
 Lastly, あんな is used when you are looking back at what happened. Even though it just happened yesterday, this adds the feel that you're looking at the experience from a distance. You're describing your recollection of your unusual encounter, rather than reliving the moment.
 
+<!-- grammar-card: {"rule":"の turns あんな into a noun that can stand alone","hint":"あんな + の","example":"___は見たことがありません。","answer":"あんなの","explanation":"あんなの means 'a thing like that', which lets it serve as the topic by itself."} -->
+
+<!-- grammar-card: {"rule":"そんな refers to something in the listener's sphere","hint":"こんな / そんな / あんな","example":"___おもしろい本どこで買ったの？","answer":"そんな","explanation":"The book belongs to the listener, so そんな is chosen rather than こんな."} -->
+
 ## Beyond the Basics
 
 ### こんな, そんな, あんな, どんな with に
@@ -370,6 +374,8 @@ by 金水 敏 and 田窪 行則
 <!-- quiz: {"type":"multiple-choice","question":"What does \"**そんな**おもしろい本どこで買ったの？\" mean?","options":["Where did you buy an interesting book **like that**?","I wanted **this kind of** book!","I've never seen **something like that over there**.","I wonder if they are okay eating **that much**."],"answer":0} -->
 
 <!-- quiz: {"type":"multiple-choice","question":"What does \"**あんなの**は見たことがありません。\" mean?","options":["I've never seen **something like that over there**.","I wanted **this kind of** book!","Where did you buy an interesting book **like that**?","I wonder if they are okay eating **that much**."],"answer":0} -->
+
+<!-- grammar-card: {"rule":"こんなに modifies an adjective, meaning 'this much'","hint":"こんな + に","example":"___美味しいキムチを食べたのは初めて。","answer":"こんなに","explanation":"こんなに intensifies 美味しい — kimchi this delicious."} -->
 
 ## Sources
 

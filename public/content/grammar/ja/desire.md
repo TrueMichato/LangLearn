@@ -30,6 +30,8 @@ The たい form expresses your desire to perform an action. It is formed from th
 
 <!-- quiz:{"type":"multiple-choice","question":"How do you say 'I want to eat sushi'?","options":["寿司を食べるたいです","寿司が食べたいです","寿司にたべたいです","寿司は食べますたい"],"answer":1} -->
 
+<!-- grammar-card: {"rule":"たい often replaces を with が","hint":"を / が","example":"コーヒー___飲みたいです。","answer":"が","explanation":"With たい the object may take が, marking the coffee as the thing desired rather than acted on."} -->
+
 ## たい Conjugation
 
 たい conjugates like an **い-adjective**:
@@ -121,6 +123,8 @@ Like たい, ほしい is normally only for **your own** desires:
 > ⚠️ Notice: with ほしがる, the object takes **を** instead of が.
 
 <!-- quiz:{"type":"multiple-choice","question":"How do you say 'I want a new phone'?","options":["新しい携帯をほしいです","新しい携帯でほしいです","新しい携帯がほしいです","新しい携帯にほしいです"],"answer":2} -->
+
+<!-- grammar-card: {"rule":"ほしがる describes someone else's want and takes を","hint":"を / が","example":"妹は新しい服(ふく)___ほしがっています。","answer":"を","explanation":"ほしい itself takes が, but the third-person ほしがる behaves like an ordinary verb and takes を."} -->
 
 ## 〜てほしい — "Want Someone to Do Something"
 

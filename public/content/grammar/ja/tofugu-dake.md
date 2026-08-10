@@ -200,6 +200,10 @@ Note でなく or ではなく is a little formal. In more casual speech, it com
 
   - It's important not only to eat your meat, but your vegetables too.
 
+<!-- grammar-card: {"rule":"だけ after an adjective means 'nothing but'","hint":"暑い + ?","example":"サウナなんて、___じゃん。","answer":"暑いだけ","explanation":"暑いだけ dismisses saunas as merely hot and nothing more."} -->
+
+<!-- grammar-card: {"rule":"だけ follows the noun it limits","hint":"漢字 + ?","example":"最近は、___勉強している。","answer":"漢字だけ","explanation":"漢字だけ means kanji and nothing else is being studied."} -->
+
 ## Beyond The Basics
 
 ### だけ vs しか
@@ -367,6 +371,8 @@ p. 197
 <!-- quiz: {"type":"multiple-choice","question":"What does \"毎日、**一時間だけ**勉強している。\" mean?","options":["I study for **just one hour** every day.","Lately, I've **only** been studying **kanji**.","My breakfast was **just some juice**.","My breakfast was **just a glass of juice.**"],"answer":0} -->
 
 <!-- quiz: {"type":"multiple-choice","question":"What does \"朝ごはんは**ジュースだけ**だった。\" mean?","options":["My breakfast was **just some juice**.","Lately, I've **only** been studying **kanji**.","I study for **just one hour** every day.","My breakfast was **just a glass of juice.**"],"answer":0} -->
+
+<!-- grammar-card: {"rule":"だけ can follow a counter to mean 'only that many'","hint":"一つ + ?","example":"チョコレートが一つ___ある。","answer":"だけ","explanation":"一つだけ stresses that a single chocolate is all there is."} -->
 
 ## Sources
 

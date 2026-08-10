@@ -173,6 +173,8 @@ When the adverbial particle に comes after さすが, it transforms it into an 
 
 Since さすがに has fewer restrictions regarding how it's used within a sentence, it's a little harder to work out whether it's being used for a compliment or a contradiction. However, remember that も is a helpful clue that the outcome didn't match the expectation, and so that さすが is showing a contradiction.
 
+<!-- grammar-card: {"rule":"さすが can take だ and inflect like a な-adjective","hint":"さすが, plain past","example":"昨日の鈴木部長のショットは、さすが___よ。","answer":"だった","explanation":"さすがだった praises the shot as having lived up to expectations."} -->
+
 ## Beyond the Basics
 
 ### だけある
@@ -318,6 +320,8 @@ pp. 376-378
 <!-- quiz: {"type":"multiple-choice","question":"What does \"A5和牛だけど、さすがに美味しくない。\" mean?","options":["Despite being A5-grade wagyu, it's inevitable that it's not delicious.","It's only natural that A5-grade wagyu is delicious.","No wonder!","Your shot's impressive, Mr. Suzuki."],"answer":0} -->
 
 <!-- quiz: {"type":"multiple-choice","question":"What does \"さすが！\" mean?","options":["No wonder!","It's only natural that A5-grade wagyu is delicious.","Despite being A5-grade wagyu, it's inevitable that it's not delicious.","Your shot's impressive, Mr. Suzuki."],"answer":0} -->
+
+<!-- grammar-card: {"rule":"だけある needs な after a noun","hint":"通訳 + だけある","example":"さすがは通訳___だけある。","answer":"な","explanation":"通訳なだけある says the skill is only what you would expect from an interpreter."} -->
 
 ## Sources
 

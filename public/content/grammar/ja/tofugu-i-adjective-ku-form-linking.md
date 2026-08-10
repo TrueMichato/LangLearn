@@ -117,6 +117,8 @@ p. 153
 
 <!-- quiz: {"type":"multiple-choice","question":"What does \"去年はとても暖かった。\" mean?","options":["Last year was very warm.","He has a young and beautiful wife.","His wife is young and beautiful.","There was little rain."],"answer":0} -->
 
+<!-- grammar-card: {"rule":"くて links an い-adjective on to the next clause","hint":"暖かい → ?","example":"去年はとても暖か___、雨が少なかった。","answer":"くて","explanation":"暖かくて joins the two descriptions of last year into a single sentence."} -->
+
 ## Sources
 
 - [Tofugu](https://www.tofugu.com/japanese-grammar/i-adjective-ku-form-linking/)

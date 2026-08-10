@@ -68,6 +68,10 @@ The person allowed to act is often marked with **に**:
 
 <!-- quiz:{"type":"multiple-choice","question":"'母は子供に野菜を食べさせた' means:","options":["The mother ate vegetables for the child","The child made the mother eat vegetables","The mother made the child eat vegetables","The child let the mother eat vegetables"],"answer":2} -->
 
+<!-- grammar-card: {"rule":"に marks the person when they are allowed rather than forced","hint":"を / に","example":"社長(しゃちょう)は社員(しゃいん)___早(はや)く帰(かえ)らせました。","answer":"に","explanation":"に signals permission — the employees were let go home, not made to leave."} -->
+
+<!-- grammar-card: {"rule":"With an intransitive verb, を marks the person made to act","hint":"を / に","example":"先生は学生___立(た)たせました。","answer":"を","explanation":"立つ is intransitive, so the causative marks the students with を: they were made to stand."} -->
+
 ## Causative Conjugation
 
 The causative form conjugates like a Group 2 verb:

@@ -186,6 +186,8 @@ While お is almost always written in kana, ご is more commonly written in kanj
 
 お or ご has become an integral part of some words, such as おにぎり (rice ball), お前 (you), おはよう (good morning), おなら (fart), ごめん (sorry), and ご飯 (meal/rice). In this case, they can't be removed, and don't add politeness or respect. In fact, お前 sounds quite rough and can come across as rude in a lot of situations. The other examples simply sound neutral.
 
+<!-- grammar-card: {"rule":"The prefix お or ご raises a noun's politeness in set expressions","hint":"礼 (thanks)","example":"厚(あつ)く___申(もう)し上(あ)げます。","answer":"御礼(おれい)","explanation":"お礼申し上げます is the formal written way to express thanks, with お elevating 礼."} -->
+
 ## Beyond the Basics
 
 ### Deciding Whether to Use 御 or No Prefix At All

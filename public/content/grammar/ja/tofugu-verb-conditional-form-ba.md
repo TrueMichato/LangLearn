@@ -281,6 +281,10 @@ pp. 512-523
 
 <!-- quiz: {"type":"multiple-choice","question":"What does \"３に２をかければ、６になる。\" mean?","options":["When you multiply three by two, you get six.","If I have time, I'll make cookies.","If you understand what \"conditional\" means, move on to the next section.","When you have money, you can do anything."],"answer":0} -->
 
+<!-- grammar-card: {"rule":"ば can be followed by a hedged consequence","hint":"possibility","example":"もし雨が降れば、遠足は中止になる___。","answer":"かもしれない","explanation":"かもしれない makes the cancellation a possibility rather than a certainty."} -->
+
+<!-- grammar-card: {"rule":"もし signals a conditional early in the sentence","hint":"if","example":"___雨が降れば、遠足は中止になる。","answer":"もし","explanation":"もし warns the listener a condition is coming, long before ば arrives."} -->
+
 ## Sources
 
 - [Tofugu](https://www.tofugu.com/japanese-grammar/verb-conditional-form-ba/)

@@ -127,6 +127,10 @@ For example, imagine you receive a compliment. Because you feel shy about it, yo
 
   - Is that true?
 
+<!-- grammar-card: {"rule":"そう refers to the way the listener is doing something","hint":"こう / そう / ああ","example":"うんうん！___巻けばいいよ！上手いじゃん！","answer":"そう","explanation":"そう praises the listener's own method: roll it just like that."} -->
+
+<!-- grammar-card: {"rule":"こう means 'in this way', pointing at the present situation","hint":"こう / そう / ああ","example":"___暑いと何もする気にならない。","answer":"こう","explanation":"こう暑い means 'this hot', referring to the heat the speaker is in right now."} -->
+
 ## Beyond the Basics
 
 ### そうそう and そういえば
@@ -328,6 +332,8 @@ by 金水 敏 and 田窪 行則
 <!-- quiz: {"type":"multiple-choice","question":"What does \"**こう**暑いと何もする気にならない。\" mean?","options":["Hot weather **like this** makes me want to do nothing.","Oh, you write it **like that**, huh?","You roll sushi **like this**.","Yes, yes! That's how you roll it! You're good!"],"answer":0} -->
 
 <!-- quiz: {"type":"multiple-choice","question":"What does \"寿司は**こう**巻くんだよ。\" mean?","options":["You roll sushi **like this**.","Oh, you write it **like that**, huh?","Hot weather **like this** makes me want to do nothing.","Yes, yes! That's how you roll it! You're good!"],"answer":0} -->
+
+<!-- grammar-card: {"rule":"こういう modifies a noun, meaning 'this kind of'","hint":"こう + いう","example":"___シャツが欲しかったんだよね。","answer":"こういう","explanation":"こういうシャツ means a shirt of this particular type."} -->
 
 ## Sources
 

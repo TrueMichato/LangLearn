@@ -163,6 +163,10 @@ And if your friend isn't planning on inviting Hanako, they might respond with:
 
 You might think the use of 〜の事 seems strange here. You are not inviting "everything about Hanako" — what does that even mean? Technically your friend could say 花子は誘わない, which can be taken as quite a direct statement. However, by adding 〜の事, your friend can make a more ambiguous reference to all sorts of things related to Hanako. Here, the 〜の事 softens the seemingly harsh comment by making sound a bit more indirect, and adds the nuance "given that,” — whatever "that" unspoken thing is — "I won't invite Hanako."
 
+<!-- grammar-card: {"rule":"の nominalises a verb into a concrete, everyday activity","hint":"こと / の","example":"運動をする___は、大切だ。","answer":"の","explanation":"運動をするの treats exercising as a practical habit rather than an abstract principle."} -->
+
+<!-- grammar-card: {"rule":"事 written in kanji keeps its concrete meaning 'matter'","hint":"matter","example":"小さい___で、友達とケンカをした。","answer":"事","explanation":"小さい事 is a trivial matter — a real noun here, not a nominaliser."} -->
+
 ## Beyond The Basics
 
 ### 〜た事がある To Talk About "Past Experience"
@@ -325,6 +329,8 @@ by Yasuko Ichikawa
 <!-- quiz: {"type":"multiple-choice","question":"What does \"謝りたい**事**がたくさんある。\" mean?","options":["I have a lot of **things** I want to apologize for.","I got into a fight with a friend over the littlest **thing**.","They told me interesting **things**.","They told me unpleasant **things**."],"answer":0} -->
 
 <!-- quiz: {"type":"multiple-choice","question":"What does \"面白い**事**を言われた。\" mean?","options":["They told me interesting **things**.","I got into a fight with a friend over the littlest **thing**.","I have a lot of **things** I want to apologize for.","They told me unpleasant **things**."],"answer":0} -->
+
+<!-- grammar-card: {"rule":"The potential form can replace ことができる","hint":"歌う → ?","example":"私この曲、日本語で___よ！","answer":"歌える","explanation":"歌える says the same thing as 歌うことができる but far more naturally in speech."} -->
 
 ## Sources
 

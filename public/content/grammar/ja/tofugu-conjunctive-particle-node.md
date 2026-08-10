@@ -72,6 +72,10 @@ Although you see ので here, it's actually not the ので we are talking about,
 
 Each of the particles の and で have many uses and can mean different things, so keep in mind that ので together might not always be the conjunctive particle used to show a reason. And on top of that, you might stumble upon the combinations of the particles の and で being used for expressing different meanings!
 
+<!-- grammar-card: {"rule":"After a noun, ので becomes なので","hint":"noun + ので","example":"二十歳___、お酒が飲めます。","answer":"なので","explanation":"二十歳 is a noun, so な has to be inserted before ので."} -->
+
+<!-- grammar-card: {"rule":"ので attaches to the plain form to give a reason","hint":"から / ので","example":"お腹が空いた___、レストランに行きました。","answer":"ので","explanation":"The plain past 空いた takes ので directly to explain why they went."} -->
+
 ## Beyond The Basics
 
 ### ので at the End of a Sentence

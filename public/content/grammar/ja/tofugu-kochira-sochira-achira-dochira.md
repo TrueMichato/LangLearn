@@ -121,6 +121,10 @@ However, at the beginning when you were wondering which cake to pick out of a wi
 
   - I wonder **which** one to get.
 
+<!-- grammar-card: {"rule":"こちら is the polite equivalent of これ and ここ","hint":"this one, polite","example":"今ですと、___のピーチのケーキが旬でおいしいですよ。","answer":"こちら","explanation":"こちら points to what is near the speaker in a courteous register."} -->
+
+<!-- grammar-card: {"rule":"どちら is the polite word for 'which'","hint":"which, polite","example":"___スカートになさいますか。","answer":"どちらの","explanation":"どちらの asks politely which skirt, with の linking it to the noun."} -->
+
 ## Beyond the Basics
 
 ### こちら, そちら, あちら for People
@@ -408,6 +412,8 @@ by 金水 敏 and 田窪 行則
 <!-- quiz: {"type":"multiple-choice","question":"What does \"**こちら**と**そちら**、**どちら**がいいですか？\" mean?","options":["Out of **this one** and **that one**, **which one** would you like?","Let's go **over there**.","I'll go with **this** skirt.","Is it **this** way or **that** way?"],"answer":0} -->
 
 <!-- quiz: {"type":"multiple-choice","question":"What does \"**こちらの**スカートにします。\" mean?","options":["I'll go with **this** skirt.","Let's go **over there**.","Out of **this one** and **that one**, **which one** would you like?","Is it **this** way or **that** way?"],"answer":0} -->
+
+<!-- grammar-card: {"rule":"あっち is the casual form of あちら","hint":"over there, casual","example":"___もみんな元気にしてるみたいだよ。","answer":"あっち","explanation":"あっち refers to the distant group in relaxed, everyday speech."} -->
 
 ## Sources
 

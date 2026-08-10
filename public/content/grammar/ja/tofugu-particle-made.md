@@ -176,6 +176,10 @@ One more note to this section is that the limit is not always the highest point;
 
 In the first sentence, から marks 70 as the starting point of a passing score, implying it goes up to a perfect score. On the other hand, the second sentence implies the starting point is a perfect score, and then it counts down to the lowest passable point.
 
+<!-- grammar-card: {"rule":"までに marks a deadline something must happen by","hint":"まで / までに","example":"１０時___帰る。","answer":"までに","explanation":"帰る is a single act completed before ten, so までに is required rather than まで."} -->
+
+<!-- grammar-card: {"rule":"まで marks the end point of a continuous span","hint":"まで / までに","example":"イベントは今週の日曜日___です。","answer":"まで","explanation":"The event runs right up to Sunday, which is what まで expresses."} -->
+
 ## Beyond the Basics
 
 ### まで for "Until 〜"
@@ -350,6 +354,8 @@ pp. 25, 50-52, 57-59, 80-81, 161, 168
 <!-- quiz: {"type":"multiple-choice","question":"What does \"家**から**学校**まで**歩く。\" mean?","options":["I'll walk **from** my house **to** school.","The distance between my house and school is 1km.","I'll walk **to** school.","Wait **until** I eat this!"],"answer":0} -->
 
 <!-- quiz: {"type":"multiple-choice","question":"What does \"学校**まで**歩く。\" mean?","options":["I'll walk **to** school.","The distance between my house and school is 1km.","I'll walk **from** my house **to** school.","Wait **until** I eat this!"],"answer":0} -->
+
+<!-- grammar-card: {"rule":"も after a quantity expresses surprise at how much","hint":"quantity + も","example":"納豆１０パック___食べた。","answer":"も","explanation":"１０パックも stresses that ten packs is a remarkable amount."} -->
 
 ## Sources
 

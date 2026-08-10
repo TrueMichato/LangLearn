@@ -172,6 +172,10 @@ This doesn't mean you'd need to pick one or the other — し and から/ので 
 
 Note that から and ので are conjunctive particles that indicate a reason or cause, like “so” in English, whereas し functions essentially like “and.” While it can appear after an explanation, its nature is simply to indicate additional information, meaning it lacks the nuance of から and ので. In cases where they are used in combination, し can be used to list reasons and から/ので can follow it.
 
+<!-- grammar-card: {"rule":"から gives a single, direct reason","hint":"から / し","example":"雨が降るみたいだ___、違う日にしない？","answer":"から","explanation":"から states the reason outright, where し would only hint at it."} -->
+
+<!-- grammar-card: {"rule":"し lists reasons or qualities and implies there are more","hint":"し","example":"花子は優しい___、かしこい。","answer":"し","explanation":"優しいし suggests kindness is one of several good points."} -->
+
 ## Beyond the Basics
 
 ### 〜んだし For Giving Explanatory Reasons
@@ -325,6 +329,8 @@ by Sayoko Kurihara
 <!-- quiz: {"type":"multiple-choice","question":"What does \"花子は優しい**し**、かしこい**し**、かわいらしい。\" mean?","options":["Hanako is generous, smart, and charming.","Hanako is generous and smart.","Hanako is generous, smart, charming, and…(you know?)","This street is dark and dangerous."],"answer":0} -->
 
 <!-- quiz: {"type":"multiple-choice","question":"What does \"花子は優しい**し**、かしこい**し**、かわいらしい**し**…。\" mean?","options":["Hanako is generous, smart, charming, and…(you know?)","Hanako is generous and smart.","Hanako is generous, smart, and charming.","This street is dark and dangerous."],"answer":0} -->
+
+<!-- grammar-card: {"rule":"んだし adds explanatory weight before a suggestion","hint":"んだ + し","example":"もうすぐ二十歳になる___、もう少ししっかりしたら？","answer":"んだし","explanation":"なるんだし presents turning twenty as the grounds for the advice that follows."} -->
 
 ## Sources
 

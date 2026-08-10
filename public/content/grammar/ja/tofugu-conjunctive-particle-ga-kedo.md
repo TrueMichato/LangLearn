@@ -86,6 +86,8 @@ If you cut straight to the point and say "Would you lend me 500 yen?" your boss 
 
 You may also have noticed that が and けど follow んです or んだ. Since んです and んだ are used for providing explanations, they are a good match — you'll often see them paired up with が and けど.
 
+<!-- grammar-card: {"rule":"が is the formal counterpart of けど","hint":"が / けど","example":"白ワインは好きです___、赤ワインはあまり好きではないです。","answer":"が","explanation":"The sentence is in です form throughout, so the more formal が matches the register."} -->
+
 ## Beyond The Basics
 
 ### Variations of けど
@@ -164,6 +166,8 @@ p. 120
 <!-- quiz: {"type":"multiple-choice","question":"What does \"ペン持ってないんだ**けど**、貸してくれない？\" mean?","options":["I don't have a pen with me. Can you lend me one?","I like white wine **but** I am not a big fan of red wine.","My mother came to the concert, **but** my older sister didn't.","It's raining, **but** the children are playing outside."],"answer":0} -->
 
 <!-- quiz: {"type":"multiple-choice","question":"What does \"母さんはコンサートに来た**が**、姉は来なかった。\" mean?","options":["My mother came to the concert, **but** my older sister didn't.","I like white wine **but** I am not a big fan of red wine.","I don't have a pen with me. Can you lend me one?","It's raining, **but** the children are playing outside."],"answer":0} -->
+
+<!-- grammar-card: {"rule":"けど can be left hanging to soften a request","hint":"が / けど","example":"予約したいんです___…。","answer":"けど","explanation":"Trailing off after けど leaves the request unfinished, which makes it indirect and polite."} -->
 
 ## Sources
 

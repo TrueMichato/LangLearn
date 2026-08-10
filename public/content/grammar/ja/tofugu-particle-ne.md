@@ -313,6 +313,8 @@ pp. 25-26
 
 <!-- quiz: {"type":"multiple-choice","question":"What does \"食べる**ね**。\" mean?","options":["I'll eat it, okay?","Oh, it's raining.","Oh, it's raining, isn't it?","It's hot, isn't it?"],"answer":0} -->
 
+<!-- grammar-card: {"rule":"ね invites the listener to agree","hint":"ね","example":"今日、あったかい___。","answer":"ね","explanation":"ね turns a remark about the weather into a shared observation."} -->
+
 ## Sources
 
 - [Tofugu](https://www.tofugu.com/japanese-grammar/particle-ne/)

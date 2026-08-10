@@ -302,6 +302,12 @@ by Wasabi – Learn Japanese Online
 
 <!-- quiz: {"type":"multiple-choice","question":"What does \"いきなり(あの男に)殴られた。\" mean?","options":["I was suddenly punched (by that man).","X　is 〜ed　by Y.","I was stung by a bee.","I was kissed by Picasso."],"answer":0} -->
 
+<!-- grammar-card: {"rule":"によって marks the creator in a formal passive","hint":"に / によって","example":"この落書きはピカソ___描かれた。","answer":"によって","explanation":"によって is used when the agent produced something, and sounds more formal than plain に."} -->
+
+<!-- grammar-card: {"rule":"から marks a raw material that is transformed beyond recognition","hint":"から / で","example":"このお酒は芋___作られている。","answer":"から","explanation":"芋から says the potato is changed completely into sake, so から is used rather than で."} -->
+
+<!-- grammar-card: {"rule":"に marks the agent in a passive sentence","hint":"に / から","example":"友達が車___はねられた。","answer":"に","explanation":"車に marks the car as the thing that did the hitting."} -->
+
 ## Sources
 
 - [Tofugu](https://www.tofugu.com/japanese-grammar/verb-passive-form-rareru/)

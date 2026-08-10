@@ -86,6 +86,8 @@ Attaching の to turn 自分 into the possessive form like this, you specify tha
 
   - What you've done comes back to you.
 
+<!-- grammar-card: {"rule":"自分で means doing something by oneself","hint":"自分 + で","example":"キョーコは家を___建てた。","answer":"自分で","explanation":"自分で marks Kyoko as the one who did the building, without anyone's help."} -->
+
 ## Beyond The Basics
 
 ### 自分 Without Subject
@@ -244,6 +246,10 @@ pp. 389-404
 <!-- quiz: {"type":"multiple-choice","question":"What does \"キョーコは自分が正しいと思っている。\" mean?","options":["Kyoko thinks she's right.","Kyoko believes in herself.","Kyoko built a house.","Kyoko built the house herself."],"answer":0} -->
 
 <!-- quiz: {"type":"multiple-choice","question":"What does \"キョーコは家を建てた。\" mean?","options":["Kyoko built a house.","Kyoko believes in herself.","Kyoko thinks she's right.","Kyoko built the house herself."],"answer":0} -->
+
+<!-- grammar-card: {"rule":"自分 can head a noun phrase meaning 'the self'","hint":"true + 自分","example":"___を探す旅に出る。","answer":"本当の自分","explanation":"本当の自分 is one's true self, and here it is the object of the search."} -->
+
+<!-- grammar-card: {"rule":"自分 can be modified like any ordinary noun","hint":"shy + 自分","example":"___にはカラオケはできない。","answer":"シャイな自分","explanation":"シャイな自分 refers to the speaker's shy side, treated as a thing that cannot do karaoke."} -->
 
 ## Sources
 

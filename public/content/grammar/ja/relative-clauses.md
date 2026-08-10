@@ -90,6 +90,8 @@ Use **な** before the noun (same as usual):
 
 <!-- quiz:{"type":"multiple-choice","question":"How do you say 'a person I don't know'?","options":["知らない人","人が知らない","知らなくて人","人の知らない"],"answer":0} -->
 
+<!-- grammar-card: {"rule":"A な-adjective keeps な inside a relative clause","hint":"きれい + 場所","example":"景色(けしき)がきれい___場所に住みたいです。","answer":"な","explanation":"きれい modifies 場所 directly, so it needs な rather than the predicate です."} -->
+
 ## Longer Relative Clauses
 
 Japanese relative clauses can be quite long:
@@ -109,6 +111,8 @@ The particle **の** can replace the noun in some relative clause patterns:
 - **田中さんが作ったのを食べました。** — I ate the one Tanaka made.
 - **あそこに立(た)っているのは誰ですか。** — Who is the one standing over there?
 - **一番(いちばん)安いのはどれですか。** — Which one is the cheapest?
+
+<!-- grammar-card: {"rule":"の stands in for a noun that is already obvious","hint":"the red one","example":"赤(あか)い___をください。","answer":"の","explanation":"の replaces the thing being asked for, working exactly like English 'one'."} -->
 
 ## Common Patterns with Relative Clauses
 

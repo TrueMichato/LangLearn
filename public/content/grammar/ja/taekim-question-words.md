@@ -20,6 +20,8 @@ Note: Using か with casual (plain) form can sound **blunt or masculine**. In po
 
 <!-- quiz:{"type":"multiple-choice","question":"How do you politely ask 'Do you understand?'  (分かる = to understand)","options":["分かるか？","分かりますか？","分かるですか？","分かりです？"],"answer":1} -->
 
+<!-- grammar-card: {"rule":"か turns a statement into a question","hint":"か","example":"これは日本語の本です___？","answer":"か","explanation":"か follows です and makes the whole sentence a yes-no question."} -->
+
 ## Key Question Words
 
 Here are the essential question words you'll use every day:
@@ -86,6 +88,8 @@ Also note: **いつも** without a negative means "always"!
 
 - **いつも朝ご飯を食べる。** (Itsumo asagohan o taberu.) — I always eat breakfast.
 
+<!-- grammar-card: {"rule":"A question word plus も plus a negative means 'not any'","hint":"何 + ?","example":"何___食べなかった。","answer":"も","explanation":"何も together with the negative 食べなかった means nothing at all was eaten."} -->
+
 ## Question Word + でも = "Any- / Every-"
 
 Add **でも** to a question word to mean "any-" or "every-" (with no restrictions):
@@ -102,6 +106,8 @@ Add **でも** to a question word to mean "any-" or "every-" (with no restrictio
 - **いつでも来てください。** (Itsudemo kite kudasai.) — Please come anytime.
 
 <!-- quiz:{"type":"multiple-choice","question":"What does 誰も来なかった mean?","options":["Everyone came","Someone came","Anyone can come","No one came"],"answer":3} -->
+
+<!-- grammar-card: {"rule":"A question word plus でも means 'any at all'","hint":"誰 + ?","example":"誰___参加できる。","answer":"でも","explanation":"誰でも means anyone at all, in contrast to 誰も, which needs a negative."} -->
 
 ## The Pattern at a Glance
 

@@ -28,6 +28,8 @@ The use of へ is similar to that of "to" or "towards" in English. For example, 
 
 In this sentence, へ marks 富士山の 頂上(ちょうじょう) as your intended destination, and implies a sense of movement towards that destination, as though it's highlighting the path to get there.
 
+<!-- grammar-card: {"rule":"へ marks the direction movement is headed in","hint":"へ / に","example":"富士山の頂上___登る。","answer":"へ","explanation":"へ stresses heading towards the summit rather than arriving at it."} -->
+
 ## Uses of へ
 
 Now that we have an understanding of the basic meaning of へ, let's take a closer look at some of the different contexts we can use it in.
@@ -284,6 +286,10 @@ pp. 25, 50-51, 80
 <!-- quiz: {"type":"multiple-choice","question":"What does \"花子がアメリカ**へ**行く。\" mean?","options":["Hanako is going to America.","I'm going to climb to the top of Mt.Fuji.","Hanako is coming to America.","Hanako walked to school."],"answer":0} -->
 
 <!-- quiz: {"type":"multiple-choice","question":"What does \"花子がアメリカ**へ**来る。\" mean?","options":["Hanako is coming to America.","I'm going to climb to the top of Mt.Fuji.","Hanako is going to America.","Hanako walked to school."],"answer":0} -->
+
+<!-- grammar-card: {"rule":"も can attach after へ to mean 'there too'","hint":"へ + も","example":"え、間ノ岳___登るんですか？","answer":"へも","explanation":"へも adds this mountain to the ones already climbed."} -->
+
+<!-- grammar-card: {"rule":"から and まで together frame a span between two points","hint":"から / まで","example":"東京から大阪___の距離は約500kmです。","answer":"まで","explanation":"大阪までの距離 is the distance up to Osaka, completing the pair opened by から."} -->
 
 ## Sources
 

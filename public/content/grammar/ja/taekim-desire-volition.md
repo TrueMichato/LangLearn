@@ -24,6 +24,8 @@ Because たい is an い-adjective, it conjugates: 食べたくない (don't wan
 
 <!-- quiz:{"type":"multiple-choice","question":"How do you say 'I didn't want to go'?","options":["行きたいなかった","行きたくなかった","行かないたい","行きたないかった"],"answer":1} -->
 
+<!-- grammar-card: {"rule":"たい marks its object with が as readily as を","hint":"を / が","example":"新しい映画___見たい。","answer":"が","explanation":"見たい describes a desire rather than an action, so が marks what is wanted."} -->
+
 ## たい Is First-Person Only
 
 In Japanese, you can't directly state what someone else wants — that would presume to know their inner feelings. Use たがる (shows signs of wanting) for third persons.

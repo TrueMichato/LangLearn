@@ -121,6 +121,10 @@ For example, let's say you are discussing a project with your coworker. You agre
 
   - Why are you so unconfident? **That**'s a part of you that you should try to fix.
 
+<!-- grammar-card: {"rule":"そこ can point at something the listener has just said","hint":"there","example":"なんでそんなに自信ないの？___はあなたの直すべきところだよ。","answer":"そこ","explanation":"そこ refers to the listener's own remark, not to a physical location."} -->
+
+<!-- grammar-card: {"rule":"Existence at a place is marked with に","hint":"に / で","example":"あそこ___チョコレートがある！","answer":"に","explanation":"ある states existence rather than an action, so あそこ takes に and not で."} -->
+
 ## Beyond the Basics
 
 ### ここ, そこ, あそこ with 〜だけ for a Limit on Places
@@ -370,6 +374,8 @@ by 金水 敏 and 田窪 行則
 <!-- quiz: {"type":"multiple-choice","question":"What does \"そこ**で**おどろう。\" mean?","options":["Let's dance there.","Where am I?","There's chocolate over there!","I agree with **this point**, but **that point** is non-negotiable."],"answer":0} -->
 
 <!-- quiz: {"type":"multiple-choice","question":"What does \"あそこ**に**チョコレートがある！\" mean?","options":["There's chocolate over there!","Where am I?","Let's dance there.","I agree with **this point**, but **that point** is non-negotiable."],"answer":0} -->
+
+<!-- grammar-card: {"rule":"だけ can attach directly to a place word","hint":"ここ + だけ","example":"なんで___雪がないんだろう。","answer":"ここだけ","explanation":"ここだけ singles this spot out: why is there no snow just here?"} -->
 
 ## Sources
 

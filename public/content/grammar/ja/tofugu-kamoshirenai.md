@@ -246,6 +246,10 @@ However, 〜かもしれない can sometimes be used with a word like 確かに 
 
 That's because 確かに isn't just about expressing the likelihood of something happening. It can also be used to confirm a fact, and is used similarly to "indeed" or "you are correct that…" Hence, when 確かに is used in the latter sense, it can be used with 〜かもしれない.
 
+<!-- grammar-card: {"rule":"けど after かもしれない concedes the possibility before dismissing it","hint":"かもしれない + けど","example":"雨が降る___、傘はいらない。","answer":"かもしれないけど","explanation":"It admits rain is possible and then rejects the umbrella anyway."} -->
+
+<!-- grammar-card: {"rule":"かもしれない expresses a genuine possibility","hint":"かもしれない + から","example":"雨が降る___、傘を持っていったら？","answer":"かもしれないから","explanation":"から adds the reason: since it might rain, why not take an umbrella?"} -->
+
 ## Beyond The Basics
 
 ### 〜かもしれない For Adding Ambiguity To How You Feel
@@ -395,6 +399,8 @@ pp. 118-132
 <!-- quiz: {"type":"multiple-choice","question":"What does \"雨が降る**かもしれない**。\" mean?","options":["It **might** rain.","It **may** be a pizza delivery person.","It **might** be a cat.","It **might** be a cat."],"answer":0} -->
 
 <!-- quiz: {"type":"multiple-choice","question":"What does \"ネコ**かもしれない**。\" mean?","options":["It **might** be a cat.","It **may** be a pizza delivery person.","It **might** rain.","It **might have been** a cat."],"answer":0} -->
+
+<!-- grammar-card: {"rule":"かもしれません is the polite form of かもしれない","hint":"polite","example":"このアイディア、面白い___。","answer":"かもしれません","explanation":"It softens the judgement politely: the idea might just be interesting."} -->
 
 ## Sources
 

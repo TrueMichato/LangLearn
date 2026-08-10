@@ -96,6 +96,8 @@ Even though clause A is marked with だった, this sentence feels polite overal
 
 It’s *possible* that someone could say this sentence in spoken Japanese for some reason, but it is definitely awkward to have the first clause more polite than the second. In general, you should avoid putting the polite clause before the plain form clause.
 
+<!-- grammar-card: {"rule":"でした puts a noun predicate into the polite past","hint":"birthday","example":"昨日はペットのハムスターの___でした。","answer":"誕生日","explanation":"誕生日でした states politely that yesterday was the hamster's birthday."} -->
+
 ## Beyond the Basics
 
 ### でした in Questions
@@ -230,6 +232,8 @@ by 定延 利之
 <!-- quiz: {"type":"multiple-choice","question":"What does \"ハムスターの誕生日会は**素敵**でした。\" mean?","options":["The hamster’s birthday party was wonderful.","Yesterday was my hamster’s birthday.","The hamster did not eat cake.","Because it was her birthday, the hamster should have eaten cake."],"answer":0} -->
 
 <!-- quiz: {"type":"multiple-choice","question":"What does \"ハムスターはケーキを**食べません**でした。\" mean?","options":["The hamster did not eat cake.","Yesterday was my hamster’s birthday.","The hamster’s birthday party was wonderful.","Because it was her birthday, the hamster should have eaten cake."],"answer":0} -->
+
+<!-- grammar-card: {"rule":"An い-adjective takes its own past form, never でした","hint":"美味しい, past","example":"美味し___です。","answer":"かった","explanation":"美味しかったです is correct; 美味しいでした is not a possible form."} -->
 
 ## Sources
 

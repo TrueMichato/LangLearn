@@ -283,6 +283,10 @@ Maybe it's obvious because it's pretty much the same in English, but if the cont
 
   - The temperature will (still) drop even lower by a few degrees.
 
+<!-- grammar-card: {"rule":"まだまだ intensifies まだ","hint":"まだ + まだ","example":"雨は___降り続けるだろう。","answer":"まだまだ","explanation":"まだまだ stresses that the rain will keep going for a good while yet."} -->
+
+<!-- grammar-card: {"rule":"まだ with an affirmative verb means 'still'","hint":"まだ","example":"私、___あの男と付き合ってるんだよね。","answer":"まだ","explanation":"まだ付き合ってる says the relationship is still going on."} -->
+
 ## Beyond the Basics
 
 ### まだいい or まだまし For "Slightly Better" In Comparison

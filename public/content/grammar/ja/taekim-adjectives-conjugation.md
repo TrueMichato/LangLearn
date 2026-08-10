@@ -26,6 +26,8 @@ Japanese adjectives are not mere descriptors — they **conjugate** like verbs. 
 
 <!-- quiz:{"type":"multiple-choice","question":"What is the negative form of 安い (yasui — cheap)?","options":["安いない","安くない","安じゃない","安かない"],"answer":1} -->
 
+<!-- grammar-card: {"rule":"In plain speech an い-adjective ends the sentence by itself","hint":"面白 (interesting)","example":"この本は面白___。","answer":"い","explanation":"面白い needs no だ after it — the adjective is already a complete predicate."} -->
+
 ## な-Adjectives
 
 な-adjectives look like nouns and behave like them too. When placed before a noun, they attach **な** (hence the name). For conjugation, they follow the same **だ system** you learned in the state-of-being lesson.
@@ -48,6 +50,8 @@ Japanese adjectives are not mere descriptors — they **conjugate** like verbs. 
 
 <!-- quiz:{"type":"multiple-choice","question":"How do you say 'was not famous' using 有名 (yuumei)?","options":["有名くなかった","有名じゃなかった","有名かった","有名ないだった"],"answer":1} -->
 
+<!-- grammar-card: {"rule":"A な-adjective needs だ to end a plain sentence","hint":"静か (quiet)","example":"この町は静か___。","answer":"だ","explanation":"Unlike い-adjectives, 静か is noun-like and takes だ as its predicate."} -->
+
 ## Modifying Nouns
 
 When adjectives appear **before a noun**, the attachment differs by type:
@@ -59,6 +63,8 @@ When adjectives appear **before a noun**, the attachment differs by type:
 - **有名な人に会った。** (Yuumei na hito ni atta.) — (I) met a famous person.
 
 <!-- quiz:{"type":"multiple-choice","question":"How do you say 'a quiet room' using 静か and 部屋 (heya)?","options":["静かい部屋","静くの部屋","静かな部屋","静かだ部屋"],"answer":2} -->
+
+<!-- grammar-card: {"rule":"A な-adjective takes な before the noun it modifies","hint":"有名 (famous)","example":"有名___人に会った。","answer":"な","explanation":"有名な人 — the な is what attaches the adjective to 人."} -->
 
 ## The いい Exception
 

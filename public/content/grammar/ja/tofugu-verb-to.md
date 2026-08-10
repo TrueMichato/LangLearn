@@ -161,6 +161,8 @@ Since one of the basic concepts of と is inevitability, you can use と for war
 
   - If you don't get up soon, you'll be late.
 
+<!-- grammar-card: {"rule":"と states a result that follows every time","hint":"と","example":"お酒を飲む___、必ずスイーツが食べたくなる。","answer":"と","explanation":"飲むと says the craving happens without fail, each and every time."} -->
+
 ## Beyond the Basics
 
 ### と for Showing a Different Perspective
@@ -264,6 +266,10 @@ pp. 456-462
 <!-- quiz: {"type":"multiple-choice","question":"What does \"お酒を飲む**と**、(必ず) スイーツが食べたくなる。\" mean?","options":["When I drink alcohol, I always crave for sweets (without exception).","If you eat bacon without her permission, Mami always gets upset.","When it is sunny, I usually go for a run.","When it was sunny, I usually went for a run."],"answer":0} -->
 
 <!-- quiz: {"type":"multiple-choice","question":"What does \"晴れる**と**よくランニングをする。\" mean?","options":["When it is sunny, I usually go for a run.","If you eat bacon without her permission, Mami always gets upset.","When I drink alcohol, I always crave for sweets (without exception).","When it was sunny, I usually went for a run."],"answer":0} -->
+
+<!-- grammar-card: {"rule":"たら attaches to the past form","hint":"飲む → ?","example":"お酒を飲ん___、スイーツが食べたくなる。","answer":"だら","explanation":"飲む becomes 飲んだ, so its conditional is 飲んだら."} -->
+
+<!-- grammar-card: {"rule":"たら can report a one-off discovery in the past","hint":"押す + たら","example":"ボタンを押し___、店員が来た。","answer":"たら","explanation":"押したら reports what happened on that one occasion, which と cannot do for a single past event."} -->
 
 ## Sources
 

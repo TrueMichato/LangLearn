@@ -88,6 +88,10 @@ The last sentence above might be a bit tricky because sad movies are always sad 
 
   - I watched a sad movie yesterday.
 
+<!-- grammar-card: {"rule":"A past-tense adjective before a noun says the quality no longer holds","hint":"long ago","example":"昨日、___美しかった女優に会った。","answer":"昔","explanation":"昔美しかった女優 is an actress who was beautiful back then, implying she no longer is."} -->
+
+<!-- grammar-card: {"rule":"An adjective modifying a noun stays non-past even in a past sentence","hint":"悲しい (sad)","example":"昨日___映画を見た。","answer":"悲しい","explanation":"The film is sad in general, so 悲しい keeps its plain form before 映画."} -->
+
 ## Common Mistakes
 
 If you know anything about です, you might know that it has a past tense form too: でした. With that in mind, you might be wondering if we can leave the い-adjective in its present tense form, like 楽しい (fun), and add でした to it for the same meaning as 楽しかったです. The answer is no! Since い-adjectives can express past tense by changing their form, です is only ever necessary to mark politeness.
@@ -126,6 +130,8 @@ by Michio Tsutsui
 <!-- quiz: {"type":"multiple-choice","question":"What does \"美し**かった**女優\" mean?","options":["An actress who **was** beautiful","The movie that I watched yesterday **was** sad.","Yesterday, I met an actress who was beautiful **long ago**.","My boyfriend, who **used to be** so kind, has changed (he is no longer kind)."],"answer":0} -->
 
 <!-- quiz: {"type":"multiple-choice","question":"What does \"昨日、**昔**美しかった女優に会った。\" mean?","options":["Yesterday, I met an actress who was beautiful **long ago**.","The movie that I watched yesterday **was** sad.","An actress who **was** beautiful","My boyfriend, who **used to be** so kind, has changed (he is no longer kind)."],"answer":0} -->
+
+<!-- grammar-card: {"rule":"An い-adjective takes かった for the past, then adds です","hint":"楽しい, past","example":"楽し___です。","answer":"かった","explanation":"楽しかったです is correct; 楽しいでした is never a possible form."} -->
 
 ## Sources
 

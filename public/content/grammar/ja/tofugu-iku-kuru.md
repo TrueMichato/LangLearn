@@ -168,6 +168,10 @@ The formal versions are exactly the same for both 行く and 来る. The respect
       いらっしゃる
 おいでになる
       参る
+
+<!-- grammar-card: {"rule":"ちゃった marks an action completed, often with regret","hint":"行ってしまった → ?","example":"電車、___ね。","answer":"行っちゃった","explanation":"行っちゃった is the casual contraction of 行ってしまった: the train has gone, unfortunately."} -->
+
+<!-- grammar-card: {"rule":"来る is movement towards where the speaker is","hint":"行く / 来る","example":"電車(でんしゃ)、もうすぐ___よ。","answer":"来る","explanation":"The train is approaching the speaker's position, so 来る is used rather than 行く."} -->
     
   
 
@@ -347,6 +351,8 @@ On the other hand, if you're a member of Hanako's family in Japan and talking ab
   - 花子は日本に [帰って・戻って] きた。
 
   - Hanako came back to Japan.
+
+<!-- grammar-card: {"rule":"ていく adds 'and go' to an action","hint":"買う + いく","example":"ドーナツを買っ___よ！","answer":"ていく","explanation":"買っていく means to buy the doughnuts and take them along."} -->
 
 ## Beyond The Basics
 

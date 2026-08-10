@@ -145,6 +145,10 @@ If the context is clear, you can omit the 〜の part of 〜の 中(なか)に�
 
 I guess it's pretty common nowadays as online classes become more mainstream!
 
+<!-- grammar-card: {"rule":"中には introduces some members of a larger group","hint":"中 + には","example":"生徒の___、カメラを付けない者もいる。","answer":"中には","explanation":"生徒の中には means 'among the students, there are some who…'."} -->
+
+<!-- grammar-card: {"rule":"中で marks the group a comparison is made within","hint":"中 + で","example":"タカシは三人の___一番背が高い。","answer":"中で","explanation":"三人の中で sets the three people as the field within which Takashi is tallest."} -->
+
 ## Beyond The Basics
 
 ### 中 For "Under Certain Circumstances"

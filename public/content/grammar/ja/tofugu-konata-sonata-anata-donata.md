@@ -83,6 +83,8 @@ That being said, you may still come across こなた and そなた in period pie
 
 In this case, 様 can add extra politeness, but polite language generally increases the distance between you and the person you are addressing. So some people may intentionally choose to use 様 to emphasize this distance while sarcastically implying, "I don't know you, who are you?" in a polite manner.
 
+<!-- grammar-card: {"rule":"どなた is the polite word for 'who'","hint":"who, polite","example":"失礼ですが、___でしょうか？","answer":"どなた様","explanation":"どなた様 is more deferential still than どなた, which suits asking a stranger who they are."} -->
+
 ## Beyond the Basics
 
 ### こなた, そなた, あなた for Places and Directions
@@ -288,6 +290,8 @@ by 金水 敏 and 田窪 行則
 <!-- quiz: {"type":"multiple-choice","question":"What does \"失礼ですが、**どなた**ですか？\" mean?","options":["Excuse me, may I have your name, please?","What is **your** name?","I saw a light **far in the distance** across the sand dunes.","Everyone seemed to be uncomfortable with **this person**'s behavior."],"answer":0} -->
 
 <!-- quiz: {"type":"multiple-choice","question":"What does \"失礼ですが、**どなた様**でしょうか？\" mean?","options":["Excuse me, may I have your name, please?","What is **your** name?","I saw a light **far in the distance** across the sand dunes.","Everyone seemed to be uncomfortable with **this person**'s behavior."],"answer":0} -->
+
+<!-- grammar-card: {"rule":"彼方 preserves the original spatial meaning of あなた","hint":"far away","example":"砂丘のはるか___に明かりが見えた。","answer":"彼方","explanation":"彼方 means the far side — the sense あなた carried long before it came to mean 'you'."} -->
 
 ## Sources
 

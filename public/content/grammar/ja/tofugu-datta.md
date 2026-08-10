@@ -90,6 +90,10 @@ This sentence has two clauses, and they are connected together by the particle �
 
 When だった appears in the middle of a sentence like this, it does not mark the sentence overall as casual sounding. In Japanese, politeness is indicated at the end of the entire sentence. In this case, the 〜ました ending indicates the polite form.
 
+<!-- grammar-card: {"rule":"でした is the polite past of です","hint":"です → ?","example":"締め切りは昨日___。","answer":"でした","explanation":"The deadline was yesterday, so です moves into the past as でした."} -->
+
+<!-- grammar-card: {"rule":"だった is the plain past of だ","hint":"だ → ?","example":"それは子供の時からの夢___。","answer":"だった","explanation":"だった reports the dream as something that was held in the past."} -->
+
 ## Beyond the Basics
 
 ### だった in Questions

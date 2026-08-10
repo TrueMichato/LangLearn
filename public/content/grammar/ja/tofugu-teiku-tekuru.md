@@ -112,6 +112,10 @@ If the adjective is an い-adjective, you turn it into the く form to attach it
 
   - be getting happier
 
+<!-- grammar-card: {"rule":"ていく keeps its form before ましょう","hint":"する + いく, polite","example":"それでは、まずは軽いストレッチをし___ましょう。","answer":"ていき","explanation":"していきましょう invites everyone to start now and carry on from here."} -->
+
+<!-- grammar-card: {"rule":"ていく projects an action forward from now","hint":"覚える + いく","example":"これから毎日、新しい日本語の単語を１０個覚え___つもりです。","answer":"ていく","explanation":"覚えていく frames the memorising as continuing on into the future."} -->
+
 ## When Only 〜てくる Works
 
 There are some types of verbs that don't take 〜ていく at all and only combine with 〜てくる. In this section, we'll look at those uses limited to 〜てくる.
@@ -169,6 +173,8 @@ This use of 〜てくる can also be used with the potential form of a verb. For
   - 踊れ**てきた**。
 
   - I'm starting to be able to do this dance!
+
+<!-- grammar-card: {"rule":"てくる marks something coming into the speaker's perception","hint":"聞こえる + くる","example":"包丁の音が聞こえ___。","answer":"てきた","explanation":"聞こえてきた says the sound reached the speaker, which only くる can express."} -->
 
 ## Beyond The Basics
 

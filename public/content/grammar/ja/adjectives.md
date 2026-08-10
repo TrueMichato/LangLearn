@@ -35,6 +35,8 @@ Use the adjective at the end of the sentence with です for politeness:
 
 <!-- quiz:{"type":"multiple-choice","question":"Which of these is an い-adjective?","options":["元気(げんき)","静か(しずか)","高い(たかい)","きれい"],"answer":2} -->
 
+<!-- grammar-card: {"rule":"An い-adjective keeps its final い before です","hint":"安 (cheap)","example":"あの店(みせ)は安___です。","answer":"い","explanation":"安い is an い-adjective, so the い stays and です is simply added after it."} -->
+
 ## い-Adjective Conjugation
 
 い-adjectives conjugate by dropping the final い and adding an ending.
@@ -121,6 +123,8 @@ Use **です** after the adjective (no な needed):
 
 <!-- quiz:{"type":"multiple-choice","question":"How do you say 'a quiet park' in Japanese?","options":["静かの公園","静か公園","静かな公園","静いの公園"],"answer":2} -->
 
+<!-- grammar-card: {"rule":"A な-adjective drops な when it stands before です","hint":"pretty","example":"彼女(かのじょ)は___です。","answer":"きれい","explanation":"きれいな becomes plain きれい as a predicate; the な only appears before a noun."} -->
+
 ## な-Adjective Conjugation
 
 な-adjectives conjugate differently from い-adjectives — they use forms similar to nouns.
@@ -191,6 +195,8 @@ Change to **〜で**:
 - **この町(まち)は静かで小さいです。** — This town is quiet and small.
 
 <!-- quiz:{"type":"multiple-choice","question":"How do you combine 安い and おいしい to say 'cheap and delicious'?","options":["安いとおいしい","安くておいしい","安いでおいしい","安なておいしい"],"answer":1} -->
+
+<!-- grammar-card: {"rule":"To join い-adjectives, change い to くて","hint":"広い + 明るい","example":"この部屋は広(ひろ)___明るい(あかるい)です。","answer":"くて","explanation":"広い becomes 広くて so that it can link on to the adjective that follows."} -->
 
 ## Practice Tips
 

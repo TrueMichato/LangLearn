@@ -18,6 +18,8 @@ In Japanese, you attach **の** or **こと** after the plain form of a verb to 
 > *Hon wo yomu **no** ga suki desu.*
 > I like **reading** books.
 
+<!-- grammar-card: {"rule":"こと turns a verb into a general activity","hint":"こと / の","example":"泳(およ)ぐ___が好(す)きです。","answer":"こと","explanation":"泳ぐこと names swimming as an activity, which lets 好き take it as its subject."} -->
+
 ## Basic Formation
 
 **Verb (plain form) + の / こと**
@@ -40,6 +42,8 @@ Past tense and negative forms also work:
 > **Not eating** breakfast is not good.
 
 <!-- quiz:{"type":"multiple-choice","question":"How do you say 'I like singing' using こと?","options":["歌うのが好きです","歌うことが好きです","歌うことを好きです","歌ったことが好きです"],"answer":1} -->
+
+<!-- grammar-card: {"rule":"の nominalises a concrete, specific event","hint":"こと / の","example":"朝(あさ)ご飯(はん)を食(た)べなかった___はよくない。","answer":"の","explanation":"The reference is to one particular skipped breakfast, so の is more natural here than こと."} -->
 
 ## When の and こと Are Interchangeable
 
@@ -146,6 +150,8 @@ A very common use of の is the **explanatory の** (often contracted to **ん**
 > (The thing is,) I have a headache.
 
 This の/ん adds a nuance of **explanation**, **emphasis**, or **emotional involvement**. It is NOT the same as the nominalizer — but it evolved from the same grammatical の.
+
+<!-- grammar-card: {"rule":"んです presents a statement as an explanation","hint":"です → ?","example":"頭(あたま)が痛(いた)い___。","answer":"んです","explanation":"んです frames the headache as the reason behind something, rather than as a bare fact."} -->
 
 ## Quick Reference: の vs こと
 

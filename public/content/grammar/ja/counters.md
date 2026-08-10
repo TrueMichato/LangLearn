@@ -46,6 +46,8 @@ The **つ** counter uses native Japanese numbers (ひとつ, ふたつ, etc.) an
 
 <!-- quiz:{"type":"multiple-choice","question":"How do you say 'three apples please'?","options":["りんごを三ください","りんごを三つください","りんごを三個ください","りんごを三本ください"],"answer":1} -->
 
+<!-- grammar-card: {"rule":"The つ counter covers general objects up to ten","hint":"two problems","example":"問題(もんだい)が二___あります。","answer":"つ","explanation":"問題 has no counter of its own, so the generic 二つ is used."} -->
+
 ## 人(にん) Counter — People
 
 The **人** counter is used for counting people. The first two have irregular readings.
@@ -71,6 +73,8 @@ The **人** counter is used for counting people. The first two have irregular re
 
 <!-- quiz:{"type":"multiple-choice","question":"How do you read 二人?","options":["ににん","ふたにん","ふたり","にじん"],"answer":2} -->
 
+<!-- grammar-card: {"rule":"People are counted with 人","hint":"three students","example":"学生(がくせい)が三___います。","answer":"人","explanation":"三人 counts the students, since 人 is the counter reserved for people."} -->
+
 ## 匹(ひき) Counter — Small Animals
 
 The **匹** counter is used for small to medium animals (cats, dogs, fish, insects). Watch out for sound changes!
@@ -95,6 +99,8 @@ The **匹** counter is used for small to medium animals (cats, dogs, fish, insec
 - **うさぎが六匹いました。** — There were six rabbits.
 
 > ⚠️ Notice the sound changes: 1, 6, 8, 10 use **っぴき**, and 3 uses **びき**.
+
+<!-- grammar-card: {"rule":"匹 counts small animals","hint":"two cats","example":"猫(ねこ)を二___飼(か)っています。","answer":"匹","explanation":"Cats are small animals, so 二匹 is used rather than the generic 二つ."} -->
 
 ## 枚(まい) Counter — Flat Objects
 
