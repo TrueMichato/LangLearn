@@ -31,6 +31,8 @@ Use **あげる** when you (or someone) give something to another person. The gi
 
 <!-- quiz:{"type":"multiple-choice","question":"Which verb do you use when YOU give a gift to a friend?","options":["くれる","もらう","あげる","くださる"],"answer":2} -->
 
+<!-- grammar-card: {"rule":"あげる is giving that moves away from the speaker","hint":"give, polite past","example":"私は友達(ともだち)にプレゼントを___。","answer":"あげました","explanation":"The present travels outward from the speaker, which is exactly when あげる is used."} -->
+
 ## くれる — To Give (to Me / My Group)
 
 Use **くれる** when someone gives something **to you** or someone in your in-group (family, close friends). The giver is the subject.
@@ -44,6 +46,8 @@ Use **くれる** when someone gives something **to you** or someone in your in-
 - **彼(かれ)が誕生日(たんじょうび)プレゼントをくれました。** — He gave me a birthday present.
 
 > 💡 くれる implies gratitude — the speaker feels thankful for the giving.
+
+<!-- grammar-card: {"rule":"くれる is giving that moves towards the speaker","hint":"give to me, polite past","example":"友達が私にプレゼントを___。","answer":"くれました","explanation":"あげました would be wrong here, because the present comes to the speaker."} -->
 
 ## あげる vs くれる
 
@@ -74,6 +78,8 @@ Use **もらう** when you (or someone) receive something from another person. T
 - **会社(かいしゃ)からボーナスをもらいました。** — I received a bonus from the company.
 
 > 💡 You can use either に or から to mark the giver. から emphasizes the source.
+
+<!-- grammar-card: {"rule":"もらう describes the event from the receiver's point of view","hint":"receive, polite past","example":"私は先生(せんせい)に本(ほん)を___。","answer":"もらいました","explanation":"With もらう the receiver is the subject, and the giver is marked with に."} -->
 
 ## くれる vs もらう — Same Event, Different Focus
 

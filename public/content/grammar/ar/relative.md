@@ -21,7 +21,7 @@ The main singular forms are **الَّذِي** (alladhī) — who / which, mascu
 
 With indefinite nouns, Arabic often uses no relative pronoun: **رَأَيْتُ رَجُلًا يَقْرَأُ** (raʾaytu rajulan yaqraʾu) — I saw a man reading / who was reading.
 
-<!-- grammar-card: {"rule": "Use الَّذِي (alladhī) — who/which for a definite masculine singular antecedent.", "hint": "The noun before it is definite.", "example": "Complete “the man who studied”: الرَّجُلُ ___ دَرَسَ (ar-rajulu ___ darasa).", "answer": "الَّذِي (alladhī) — who, masculine singular", "explanation": "الرَّجُلُ الَّذِي دَرَسَ (ar-rajulu alladhī darasa) — the man who studied."} -->
+<!-- grammar-card: {"rule":"Use الَّذِي (alladhī) — who/which for a definite masculine singular antecedent.","hint":"The noun before it is definite.","example":"Complete “the man who studied”: الرَّجُلُ ___ دَرَسَ (ar-rajulu ___ darasa).","answer":"الَّذِي (alladhī)","explanation":"who, masculine singular — الرَّجُلُ الَّذِي دَرَسَ (ar-rajulu alladhī darasa) — the man who studied."} -->
 
 ## Practice patterns
 
@@ -32,7 +32,7 @@ Arabic often keeps a pronoun inside the relative clause when English would not:
 
 <!-- quiz: {"type": "multiple-choice", "question": "What often happens with indefinite nouns in Arabic relative clauses?", "options": ["No relative pronoun is used", "They must use الَّذِي (alladhī)", "They become dual", "They require future tense"], "answer": 0} -->
 
-<!-- grammar-card: {"rule": "Use الَّتِي (allatī) — who/which for a definite feminine singular antecedent.", "hint": "Feminine singular relative pronoun.", "example": "Complete “the car that I saw”: السَّيَّارَةُ ___ رَأَيْتُهَا (as-sayyāratu ___ raʾaytuhā).", "answer": "الَّتِي (allatī) — that/which, feminine singular", "explanation": "السَّيَّارَةُ الَّتِي رَأَيْتُهَا (as-sayyāratu allatī raʾaytuhā) — the car that I saw."} -->
+<!-- grammar-card: {"rule":"Use الَّتِي (allatī) — who/which for a definite feminine singular antecedent.","hint":"Feminine singular relative pronoun.","example":"Complete “the car that I saw”: السَّيَّارَةُ ___ رَأَيْتُهَا (as-sayyāratu ___ raʾaytuhā).","answer":"الَّتِي (allatī)","explanation":"that/which, feminine singular — السَّيَّارَةُ الَّتِي رَأَيْتُهَا (as-sayyāratu allatī raʾaytuhā) — the car that I saw."} -->
 
 ## Sources
 

@@ -59,7 +59,7 @@ Thus, in this post, we'll focus on how to change  Japanese verbs, which end in �
   
    **Irregular**
    
-   ** 来る(く　)**　→　** 来(き)**
+   **来る(く　)**　→　 **来(き)**
 
 **する**　→　**し**
    
@@ -114,6 +114,10 @@ by Wasabi – Learn Japanese Online
 Aeron Buchanan's Japanese Verb Chart
 
 by Aeron Buchanan
+
+<!-- grammar-card: {"rule":"Compound verbs attach to the stem","hint":"読む → stem","example":"本(ほん)を読(よ)___始(はじ)めた。","answer":"み","explanation":"読む gives the stem 読み, which 始める then attaches to."} -->
+
+<!-- grammar-card: {"rule":"The stem plus に marks the purpose of going or coming","hint":"purpose particle","example":"映画(えいが)を見(み)___行(い)きます。","answer":"に","explanation":"見に行きます means going in order to watch, with the stem 見 carrying the action."} -->
 
 ## Sources
 

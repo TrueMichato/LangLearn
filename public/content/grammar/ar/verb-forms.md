@@ -24,7 +24,7 @@ Traditional Form I through Form X patterns are often shown with the model root *
 
 Real examples help: **عَلِمَ** (ʿalima) — he knew, **عَلَّمَ** (ʿallama) — he taught, and **تَعَلَّمَ** (taʿallama) — he learned. The doubled **لّ** (ll) and the **تَـ** (ta-) reshape the root.
 
-<!-- grammar-card: {"rule": "Form II فَعَّلَ (faʿʿala) often has a doubled middle consonant and a causative/intensive meaning.", "hint": "Look for shadda on the middle root letter.", "example": "Complete “he taught”: ___ (ʿallama) — he taught.", "answer": "عَلَّمَ (ʿallama) — he taught", "explanation": "عَلَّمَ (ʿallama) — he taught is Form II from the knowledge root ع-ل-م (ʿ-l-m)."} -->
+<!-- grammar-card: {"rule":"Form II فَعَّلَ (faʿʿala) often has a doubled middle consonant and a causative/intensive meaning.","hint":"Look for shadda on the middle root letter.","example":"Complete “he taught”: ___ (ʿallama) — he taught.","answer":"عَلَّمَ","explanation":"عَلَّمَ (ʿallama) — he taught is Form II from the knowledge root ع-ل-م (ʿ-l-m)."} -->
 
 ## Practice patterns
 
@@ -38,7 +38,7 @@ Notice patterns first; details can deepen over time.
 
 <!-- quiz: {"type": "multiple-choice", "question": "What often happens in Form II?", "options": ["It often intensifies or causes", "It always marks future", "It always creates a plural", "It removes the root"], "answer": 0} -->
 
-<!-- grammar-card: {"rule": "Form X اِسْتَفْعَلَ (istafʿala) often includes the prefix اِسْتَـ (ista-) and can express seeking or using.", "hint": "The long-looking prefix is a clue.", "example": "Complete “he used”: ___ (istaʿmala) — he used.", "answer": "اِسْتَعْمَلَ (istaʿmala) — he used", "explanation": "اِسْتَعْمَلَ (istaʿmala) — he used shows the Form X prefix اِسْتَـ (ista-)."} -->
+<!-- grammar-card: {"rule":"Form X اِسْتَفْعَلَ (istafʿala) often includes the prefix اِسْتَـ (ista-) and can express seeking or using.","hint":"The long-looking prefix is a clue.","example":"Complete “he used”: ___ (istaʿmala) — he used.","answer":"اِسْتَعْمَلَ","explanation":"اِسْتَعْمَلَ (istaʿmala) — he used shows the Form X prefix اِسْتَـ (ista-)."} -->
 
 ## Sources
 

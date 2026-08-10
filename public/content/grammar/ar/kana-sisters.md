@@ -21,7 +21,7 @@ The basic sentence **الْبَيْتُ كَبِيرٌ** (al-baytu kabīrun) —
 
 The predicate after these verbs is often called the “khabar of kāna,” and it is in the accusative: **كَبِيرًا** (kabīran) — big, accusative rather than **كَبِيرٌ** (kabīrun) — big, nominative.
 
-<!-- grammar-card: {"rule": "كَانَ (kāna) — was turns a nominal sentence into a past-time sentence and makes the predicate accusative.", "hint": "Was + subject + predicate-a.", "example": "Complete “The house was big”: كَانَ الْبَيْتُ ___ (kāna al-baytu ___).", "answer": "كَبِيرًا (kabīran) — big, accusative", "explanation": "كَانَ الْبَيْتُ كَبِيرًا (kāna al-baytu kabīran) — the house was big uses accusative predicate."} -->
+<!-- grammar-card: {"rule":"كَانَ (kāna) — was turns a nominal sentence into a past-time sentence and makes the predicate accusative.","hint":"Was + subject + predicate-a.","example":"Complete “The house was big”: كَانَ الْبَيْتُ ___ (kāna al-baytu ___).","answer":"كَبِيرًا (kabīran)","explanation":"big, accusative — كَانَ الْبَيْتُ كَبِيرًا (kāna al-baytu kabīran) — the house was big uses accusative predicate."} -->
 
 ## Practice patterns
 
@@ -33,7 +33,7 @@ Kind pattern:
 
 <!-- quiz: {"type": "multiple-choice", "question": "Which sentence means “The lesson was easy”?", "options": ["كَانَ الدَّرْسُ سَهْلًا (kāna ad-darsu sahlan) — the lesson was easy", "الدَّرْسُ سَهْلًا (ad-darsu sahlan)", "كَانَ الدَّرْسَ سَهْلٌ (kāna ad-darsa sahlun)", "لَنْ الدَّرْسُ سَهْلٌ (lan ad-darsu sahlun)"], "answer": 0} -->
 
-<!-- grammar-card: {"rule": "صَارَ (ṣāra) — became works like a kāna-sister.", "hint": "It marks change into a state.", "example": "Complete “The water became cold”: صَارَ الْمَاءُ ___ (ṣāra al-māʾu ___).", "answer": "بَارِدًا (bāridan) — cold, accusative", "explanation": "صَارَ الْمَاءُ بَارِدًا (ṣāra al-māʾu bāridan) — the water became cold."} -->
+<!-- grammar-card: {"rule":"صَارَ (ṣāra) — became works like a kāna-sister.","hint":"It marks change into a state.","example":"Complete “The water became cold”: صَارَ الْمَاءُ ___ (ṣāra al-māʾu ___).","answer":"بَارِدًا (bāridan)","explanation":"cold, accusative — صَارَ الْمَاءُ بَارِدًا (ṣāra al-māʾu bāridan) — the water became cold."} -->
 
 ## Sources
 

@@ -20,7 +20,7 @@ MSA uses particles such as لَا (lā) — not / no, مَا (mā) — not, لَ
 
 In Egyptian and many Maghrebi varieties, negation can wrap around the verb: مَا رُحْتِشْ (mā ruḥtish) — I did not go, مَا كَنْفْهَمْشْ (mā kan-fhamsh) — I do not understand. The final شْ (sh) is not a separate English word; it is part of the negative frame.
 
-<!-- grammar-card: {"rule":"Egyptian-style verbal negation often uses مَا...شْ (mā...sh) around the verb.","hint":"Look for مَا before the verb and شْ at the end.","example":"Complete “I do not write”: مَا بَكْتُبْ___ (sh).","answer":"شْ (sh) — final negative element","explanation":"مَا بَكْتُبْشْ (mā baktubsh) wraps the verb with the Egyptian-style negative frame."} -->
+<!-- grammar-card: {"rule":"Egyptian-style verbal negation often uses مَا...شْ (mā...sh) around the verb.","hint":"Look for مَا before the verb and شْ at the end.","example":"Complete “I do not write”: مَا بَكْتُبْ___ (sh).","answer":"شْ","explanation":"final negative element — مَا بَكْتُبْشْ (mā baktubsh) wraps the verb with the Egyptian-style negative frame."} -->
 
 ## Mish and mū
 
@@ -34,7 +34,7 @@ In Egyptian and many Maghrebi varieties, negation can wrap around the verb: مَ
 
 <!-- quiz: {"type":"multiple-choice","question":"Which word is common for not before adjectives in Egyptian and Levantine speech?","options":["مِشْ (mish) — not","إِنْ (in) — if","قَدْ (qad) — indeed / already","إِلَى (ilā) — to"],"answer":0} -->
 
-<!-- grammar-card: {"rule":"مِشْ (mish) commonly negates adjectives, participles, or nouns in Egyptian and Levantine speech.","hint":"Use it before predicate words like ready, busy, or tired.","example":"Complete “not ready”: ___ جَاهِزْ (mish jāhiz).","answer":"مِشْ (mish) — not","explanation":"مِشْ جَاهِزْ (mish jāhiz) means not ready in common Egyptian and Levantine-style speech."} -->
+<!-- grammar-card: {"rule":"مِشْ (mish) commonly negates adjectives, participles, or nouns in Egyptian and Levantine speech.","hint":"Use it before predicate words like ready, busy, or tired.","example":"Complete “not ready”: ___ جَاهِزْ (mish jāhiz).","answer":"مِشْ (mish)","explanation":"مِشْ جَاهِزْ (mish jāhiz) means not ready in common Egyptian and Levantine-style speech."} -->
 
 ## Sources
 

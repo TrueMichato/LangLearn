@@ -1,7 +1,8 @@
-import { useState, useRef } from 'react';
+import { useState } from 'react';
+import DataSafetySection from '../components/settings/DataSafetySection';
+import { useDatabaseBootContext } from '../hooks/database-boot-context';
 import { useSettingsStore } from '../stores/settingsStore';
 import { useCurrentLanguage } from '../hooks/useCurrentLanguage';
-import { exportAllData, importAllData, downloadJson } from '../db/backup';
 import DeckExport from '../components/common/DeckExport';
 import DeckImport from '../components/common/DeckImport';
 import NotificationSettings from '../components/settings/NotificationSettings';
@@ -52,27 +53,7 @@ const sectionCard =
 export default function SettingsPage() {
   const { weeklyGoalMinutes, setWeeklyGoal, dailyGoalMinutes, setDailyGoal, activeLanguages, addLanguage, removeLanguage, showStressMarks, toggleStressMarks, darkMode, toggleDarkMode, fontSize, setFontSize, ttsRate, setTtsRate, reviewBatchSize, setReviewBatchSize, adaptiveReview, toggleAdaptiveReview, scheduler, setScheduler, fsrsRequestRetention, setFsrsRequestRetention, arabicDialect, setArabicDialect, arabicColloquialFocus, setArabicColloquialFocus } =
     useSettingsStore();
-  const [importStatus, setImportStatus] = useState('');
-  const fileInputRef = useRef<HTMLInputElement>(null);
-
-  const handleExport = async () => {
-    const json = await exportAllData();
-    const date = new Date().toISOString().slice(0, 10);
-    downloadJson(json, `langlearn-backup-${date}.json`);
-  };
-
-  const handleImport = async (e: React.ChangeEvent<HTMLInputElement>) => {
-    const file = e.target.files?.[0];
-    if (!file) return;
-
-    try {
-      const text = await file.text();
-      await importAllData(text);
-      setImportStatus('✅ Data imported successfully!');
-    } catch {
-      setImportStatus('❌ Import failed. Check file format.');
-    }
-  };
+  const { persistence } = useDatabaseBootContext();
 
   const languageOptions = Object.values(LANGUAGES);
 
@@ -379,33 +360,7 @@ export default function SettingsPage() {
       <ImmersionSection />
 
       {/* Backup */}
-      <section className={sectionCard}>
-        <SectionHeading icon="💾" label="Data" />
-        <div className="space-y-2">
-          <button
-            onClick={handleExport}
-            className="w-full min-h-[44px] bg-indigo-100 dark:bg-indigo-900/50 text-indigo-700 dark:text-indigo-300 py-2 rounded-xl font-semibold hover:bg-indigo-200 dark:hover:bg-indigo-800 transition-colors press-feedback"
-          >
-            📥 Export all data
-          </button>
-          <button
-            onClick={() => fileInputRef.current?.click()}
-            className="w-full min-h-[44px] bg-slate-100 dark:bg-slate-700 text-slate-700 dark:text-slate-300 py-2 rounded-xl font-semibold hover:bg-slate-200 dark:hover:bg-slate-600 transition-colors press-feedback"
-          >
-            📤 Import from file
-          </button>
-          <input
-            ref={fileInputRef}
-            type="file"
-            accept=".json"
-            onChange={handleImport}
-            className="hidden"
-          />
-          {importStatus && (
-            <p className="text-sm text-center text-slate-600 dark:text-slate-300">{importStatus}</p>
-          )}
-        </div>
-      </section>
+      <DataSafetySection persistence={persistence} />
 
       {/* TTS Diagnostics */}
       <TTSDiagPanel />

@@ -48,6 +48,8 @@ In spoken Japanese, the conditional part sometimes follows the result. This give
 
   - I think it will sell well… if it’s delicious, that is.
 
+<!-- grammar-card: {"rule":"An い-adjective forms its conditional by replacing い with ければ","hint":"おいしい → ?","example":"おいし___、売れるでしょう。","answer":"ければ","explanation":"おいしい becomes おいしければ: if it tastes good, it will sell."} -->
+
 ## Uses
 
 ### 〜ければ for General Truths
@@ -114,6 +116,8 @@ This also works with 〜ましょう, the Japanese equivalent of "let's".
 
   - If it's good quality, let's buy it.
 
+<!-- grammar-card: {"rule":"つもりです states what the speaker intends to do","hint":"intention","example":"質が良ければ、買う___です。","answer":"つもり","explanation":"買うつもりです says the speaker intends to buy, provided the condition is met."} -->
+
 ## Common Mistakes
 
 ### い-Adjective Look-Alikes
@@ -174,6 +178,8 @@ pp. 512-523
 <!-- quiz: {"type":"multiple-choice","question":"What does \"売れると思うよ…おいし**ければ**。\" mean?","options":["I think it will sell well… if it’s delicious, that is.","If it's delicious, it will sell well.","All's well that ends well.","I go for a run outside every day, if the weather's nice."],"answer":0} -->
 
 <!-- quiz: {"type":"multiple-choice","question":"What does \"終わりよ**ければ**全てよし。\" mean?","options":["All's well that ends well.","If it's delicious, it will sell well.","I think it will sell well… if it’s delicious, that is.","I go for a run outside every day, if the weather's nice."],"answer":0} -->
+
+<!-- grammar-card: {"rule":"違う is a verb, so its conditional is 違えば","hint":"違う → ?","example":"違___、言ってください。","answer":"えば","explanation":"違う looks adjective-like but conjugates as a verb, giving 違えば rather than 違ければ."} -->
 
 ## Sources
 

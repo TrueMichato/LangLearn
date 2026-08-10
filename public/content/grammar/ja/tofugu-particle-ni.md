@@ -94,6 +94,8 @@ In this case, に changes the adjective 冷静 (calm) into an adverb (calmly) an
 
   - Even though we went all the way to Mars, there wasn't a single alien.
 
+<!-- grammar-card: {"rule":"のに after a dictionary form means 'in order to'","hint":"の + に","example":"火星まで行く___、ロケットを使った。","answer":"のに","explanation":"行くのに marks reaching Mars as the purpose the rocket served."} -->
+
 ## Uses of に
 
 When に comes after a noun, it can have a very wide range of meanings depending on other elements of the sentence, particularly the kind of verb. Here, we'll introduce basic uses of に, while focusing on the elements that change its meaning.
@@ -360,6 +362,8 @@ by Eri Tanaka
 <!-- quiz: {"type":"multiple-choice","question":"What does \"コウイチは地球に帰る。\" mean?","options":["Koichi will return to Earth.","Koichi is in space.","I'm on Mars.","I'm going to Mars."],"answer":0} -->
 
 <!-- quiz: {"type":"multiple-choice","question":"What does \"火星にいる。\" mean?","options":["I'm on Mars.","Koichi is in space.","Koichi will return to Earth.","I'm going to Mars."],"answer":0} -->
+
+<!-- grammar-card: {"rule":"The causative marks the person made to act with に","hint":"に / を","example":"まみは子供___外で遊ばせた。","answer":"に","explanation":"遊ばせた lets the child play, and に marks who was allowed to do it."} -->
 
 ## Sources
 

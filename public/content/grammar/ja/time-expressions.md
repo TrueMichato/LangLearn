@@ -22,6 +22,8 @@ This lesson covers how to talk about **when** things happen, express **before** 
 
 <!-- quiz:{"type":"multiple-choice","question":"How do you say 'I brush my teeth before sleeping'?","options":["寝た前に歯を磨きます","寝る前に歯を磨きます","寝ている前に歯を磨きます","寝て前に歯を磨きます"],"answer":1} -->
 
+<!-- grammar-card: {"rule":"前に always follows the plain non-past form","hint":"before","example":"寝(ね)る___、歯(は)を磨(みが)きます。","answer":"前に","explanation":"前に takes 寝る in the dictionary form regardless of when the action actually happens."} -->
+
 ## 後(あと)で — "After"
 
 **後で** means "after" and attaches to the た-form of verbs or nouns.
@@ -42,6 +44,8 @@ This lesson covers how to talk about **when** things happen, express **before** 
 
 > 💡 You may also see 後(あと)に instead of 後で — the meaning is similar, but 後で is more common in everyday speech.
 
+<!-- grammar-card: {"rule":"後で follows the plain past form","hint":"after","example":"ご飯(はん)を食べた___、散歩(さんぽ)します。","answer":"後で","explanation":"The first action must be complete, so 食べる appears as 食べた before 後で."} -->
+
 ## てから — "After Doing"
 
 **てから** also means "after doing" but emphasizes the **sequence** more strongly.
@@ -58,6 +62,8 @@ This lesson covers how to talk about **when** things happen, express **before** 
 - てから: Stricter sequence, "first A, then B"
 
 <!-- quiz:{"type":"multiple-choice","question":"'手を洗ってから食べてください' means:","options":["Please eat while washing your hands","Please eat before washing your hands","Please eat after washing your hands","Please wash your hands after eating"],"answer":2} -->
+
+<!-- grammar-card: {"rule":"てから stresses the order of two actions","hint":"洗う → ?","example":"手を洗っ___、食べてください。","answer":"てから","explanation":"洗って plus から makes washing an explicit precondition for eating."} -->
 
 ## 間(あいだ)に — "While / During"
 

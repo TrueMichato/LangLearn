@@ -57,7 +57,7 @@ The way 〜させる is added to verbs depends on their conjugation group. Here'
   
    **Irregular**
    
-   ** 来る(く　)**　→　** 来させる(こ　　　)**
+   **来る(く　)**　→　 **来させる(こ　　　)**
 
 **する**　→　**させる**
    
@@ -139,7 +139,7 @@ Although many textbooks don't cover this, there is another, shorter causative fo
   
    **Irregular**
    
-   ** 来る(く　)**　→　** 来さす(こ　　)**
+   **来る(く　)**　→　 **来さす(こ　　)**
 
 **する**　→　**さす**
    
@@ -384,6 +384,8 @@ by Wasabi – Learn Japanese Online
 <!-- quiz: {"type":"multiple-choice","question":"What does \"コウイチはマミにベーコンを好きなだけ食べさせた。\" mean?","options":["Koichi let Mami eat as much bacon as she liked.","My mom made my little brother go to school.","My parents let me go to university.","Thank you for allowing me to go to university."],"answer":0} -->
 
 <!-- quiz: {"type":"multiple-choice","question":"What does \"両親は私を大学に行かせてくれた。\" mean?","options":["My parents let me go to university.","My mom made my little brother go to school.","Koichi let Mami eat as much bacon as she liked.","Thank you for allowing me to go to university."],"answer":0} -->
+
+<!-- grammar-card: {"rule":"を with the causative implies letting rather than making","hint":"を / に","example":"両親は私___好きなだけ泳がせた。","answer":"を","explanation":"私を泳がせた means the parents let the speaker swim as much as she liked."} -->
 
 ## Sources
 

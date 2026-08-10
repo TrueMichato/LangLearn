@@ -1,12 +1,24 @@
-import { useState, useEffect, useRef, useCallback, type ReactNode } from 'react';
+import { useState, useEffect, useRef, useCallback, useMemo } from 'react';
 import ReactMarkdown from 'react-markdown';
-import remarkGfm from 'remark-gfm';
+import { LESSON_REMARK_PLUGINS } from '../../lib/markdown-plugins';
 import GrammarQuiz from './GrammarQuiz';
+import LessonCaptureModal from './LessonCaptureModal';
 import { markLessonComplete, incrementAttempts } from '../../db/lessons';
-import { addWord } from '../../db/words';
-import { db } from '../../db/schema';
+import {
+  syncLessonGrammarCards,
+  saveCandidates,
+  findSavedCandidates,
+  type GrammarCardSync,
+} from '../../db/lesson-cards';
 import { useXPStore } from '../../stores/xpStore';
-import { buildGrammarCardFields, type GrammarCardSource } from '../../lib/grammar-cards';
+import { type GrammarCardSource } from '../../lib/grammar-cards';
+import {
+  parseLessonCandidates,
+  indexBySourceText,
+  matchCandidate,
+  nodeText,
+  type CaptureCandidate,
+} from '../../lib/lesson-capture';
 import { SkeletonList } from '../common/Skeleton';
 
 interface LessonViewProps {
@@ -40,191 +52,55 @@ function extractGrammarCards(md: string): GrammarCardSource[] {
   return cards;
 }
 
-/** Auto-generate grammar cards from quiz data when no explicit grammar-card blocks exist. */
-function cardsFromQuizzes(quizzes: QuizData[], lessonTitle: string): GrammarCardSource[] {
-  return quizzes.map((q) => ({
-    rule: lessonTitle,
-    example: q.question,
-    answer: q.options[q.answer],
-    explanation: `Correct answer: ${q.options[q.answer]}`,
-  }));
-}
-
-/** Add grammar Word entries for SRS review, skipping duplicates. */
-async function createGrammarCards(
+/** Add or repair this lesson's grammar cards. */
+async function syncGrammarCards(
   cards: GrammarCardSource[],
   lang: string,
   lessonId: string,
-): Promise<number> {
-  // Check if cards for this lesson already exist (match by tags)
-  const existing = await db.words
-    .where('type')
-    .equals('grammar')
-    .filter((w) => w.tags.includes(lessonId) && w.language === lang)
-    .count();
-  if (existing > 0) return 0;
-
-  let added = 0;
-  for (const card of cards) {
-    const fields = buildGrammarCardFields(card);
-    if (!fields) continue;
-    await addWord({
-      ...fields,
-      language: lang,
-      sourceTextId: null,
-      tags: ['grammar', lessonId],
-      type: 'grammar',
-    });
-    added++;
+): Promise<GrammarCardSync> {
+  const result = await syncLessonGrammarCards(cards, lang, lessonId);
+  if (result.added > 0) {
+    useXPStore.getState().addXP(result.added * 5);
   }
-
-  if (added > 0) {
-    useXPStore.getState().addXP(added * 5);
-  }
-
-  return added;
-}
-
-/** Extract target sentence/word, romanization, and English translation from a markdown list item.
- *
- * Only matches list items that begin with a `<strong>` element (i.e. start with **bold**),
- * to avoid false positives on prose like "Other adjectives: red, blue (синий)…".
- *
- * Recognises two shapes:
- *  1. Single word:    `**WORD(READING)** — meaning`           (Japanese style)
- *  2. Sentence:       `**Sentence.** (reading) — meaning`     (RU/PT style; reading optional)
- */
-function parseExampleSentence(children: ReactNode): {
-  word: string;
-  reading: string;
-  meaning: string;
-  fullText: string;
-  isSentence: boolean;
-} | null {
-  const nodeText = (node: ReactNode): string => {
-    if (typeof node === 'string') return node;
-    if (typeof node === 'number') return String(node);
-    if (Array.isArray(node)) return node.map(nodeText).join('');
-    if (node && typeof node === 'object' && 'props' in node) {
-      return nodeText((node as { props: { children?: ReactNode } }).props.children ?? '');
-    }
-    return '';
-  };
-
-  const isStrong = (node: ReactNode): boolean =>
-    !!(node && typeof node === 'object' && 'type' in node &&
-       (node as { type: unknown }).type === 'strong');
-
-  const arr: ReactNode[] = Array.isArray(children) ? (children as ReactNode[]) : [children];
-
-  let strongIdx = -1;
-  for (let i = 0; i < arr.length; i++) {
-    if (isStrong(arr[i])) { strongIdx = i; break; }
-  }
-  if (strongIdx === -1) return null;
-
-  // Reject items that have prose before the first <strong> (e.g. "Other adjectives: ...")
-  const before = arr.slice(0, strongIdx).map(nodeText).join('');
-  if (before.trim() !== '') return null;
-
-  const boldText = nodeText(arr[strongIdx]).trim();
-  const afterText = arr.slice(strongIdx + 1).map(nodeText).join('').trim();
-  if (!boldText) return null;
-
-  // Shape 1: bold contains "WORD(READING)" — single-word entry (typical Japanese)
-  const inlineReading = boldText.match(/^([^()]+?)\s*\(([^()]+)\)\s*$/);
-  if (inlineReading) {
-    const word = inlineReading[1].trim();
-    const reading = inlineReading[2].trim();
-    const meaningMatch = afterText.match(/^[—–-]\s*(.+)$/);
-    if (!word || !meaningMatch) return null;
-    const meaning = meaningMatch[1].trim();
-    if (!meaning) return null;
-    return {
-      word,
-      reading,
-      meaning,
-      fullText: `${boldText} — ${meaning}`,
-      isSentence: false,
-    };
-  }
-
-  // Shape 2: sentence with reading after the bold span
-  const sentenceWithReading = afterText.match(/^\(([^)]+)\)\s*[—–-]\s*(.+)$/);
-  if (sentenceWithReading) {
-    const word = boldText;
-    const reading = sentenceWithReading[1].trim();
-    const meaning = sentenceWithReading[2].trim();
-    if (!word || !meaning) return null;
-    return {
-      word,
-      reading,
-      meaning,
-      fullText: `${word} (${reading}) — ${meaning}`,
-      isSentence: true,
-    };
-  }
-
-  // Shape 2b: sentence/word without parenthetical reading
-  const sentenceNoReading = afterText.match(/^[—–-]\s*(.+)$/);
-  if (sentenceNoReading) {
-    const word = boldText;
-    const meaning = sentenceNoReading[1].trim();
-    if (!word || !meaning) return null;
-    // Treat as sentence if it contains whitespace; otherwise as a single word.
-    const isSentence = /\s/.test(word);
-    return {
-      word,
-      reading: '',
-      meaning,
-      fullText: `${word} — ${meaning}`,
-      isSentence,
-    };
-  }
-
-  return null;
+  return result;
 }
 
 function SaveFlashcardButton({
-  word,
-  reading,
-  meaning,
-  fullText,
+  candidate,
   lang,
-  isSentence,
+  lessonId,
+  alreadySaved,
 }: {
-  word: string;
-  reading: string;
-  meaning: string;
-  fullText: string;
+  candidate: CaptureCandidate;
   lang: string;
-  isSentence: boolean;
+  lessonId: string;
+  alreadySaved: boolean;
 }) {
-  const [state, setState] = useState<'idle' | 'saving' | 'saved'>('idle');
+  // Saved-ness is derived rather than mirrored into state: the lesson re-checks
+  // the deck after every capture, so copying the prop into state would leave two
+  // sources of truth that drift apart during a bulk save.
+  const [pending, setPending] = useState(false);
+  const [justSaved, setJustSaved] = useState(false);
+  const saved = alreadySaved || justSaved;
 
   const handleClick = async (e: React.MouseEvent) => {
     e.stopPropagation();
-    if (state !== 'idle') return;
-    setState('saving');
+    if (saved || pending) return;
+    setPending(true);
     try {
-      await addWord({
-        word,
-        reading,
-        meaning,
-        language: lang,
-        contextSentence: isSentence ? word : fullText,
-        sourceTextId: null,
-        tags: isSentence ? ['grammar', 'sentence'] : ['grammar'],
-      });
-      setState('saved');
-    } catch {
-      setState('idle');
+      await saveCandidates([candidate], lang, lessonId);
+      setJustSaved(true);
+    } finally {
+      setPending(false);
     }
   };
 
-  if (state === 'saved') {
+  if (saved) {
     return (
-      <span className="inline-flex items-center ml-1.5 text-green-600 dark:text-green-400 text-xs font-medium select-none">
+      <span
+        className="inline-flex items-center ml-1.5 text-green-600 dark:text-green-400 text-xs font-medium select-none"
+        title="Saved to your deck"
+      >
         ✓
       </span>
     );
@@ -233,9 +109,10 @@ function SaveFlashcardButton({
   return (
     <button
       onClick={handleClick}
-      disabled={state === 'saving'}
+      disabled={pending}
+      aria-label={`Save ${candidate.word} as a flashcard`}
       title="Save as flashcard"
-      className="inline-flex items-center ml-1.5 text-indigo-600 dark:text-indigo-400 hover:text-indigo-700 dark:hover:text-indigo-300 text-xs opacity-60 hover:opacity-100 transition-opacity cursor-pointer select-none disabled:opacity-30"
+      className="inline-flex items-center ml-1.5 text-indigo-600 dark:text-indigo-400 hover:text-indigo-700 dark:hover:text-indigo-300 text-xs opacity-60 hover:opacity-100 transition-opacity cursor-pointer select-none disabled:opacity-30 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 rounded"
     >
       ➕
     </button>
@@ -244,58 +121,75 @@ function SaveFlashcardButton({
 
 export default function LessonView({ lang, lessonId, onBack, lessons, onNavigate }: LessonViewProps) {
   const [segments, setSegments] = useState<Array<{ type: 'md'; content: string } | { type: 'quiz'; data: QuizData }>>([]);
+  const [markdown, setMarkdown] = useState('');
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(false);
   const [quizScore, setQuizScore] = useState<{ correct: number; total: number }>({ correct: 0, total: 0 });
-  const [completed, setCompleted] = useState(false);
-  const [grammarCardsAdded, setGrammarCardsAdded] = useState(0);
+  const [cardSync, setCardSync] = useState<GrammarCardSync | null>(null);
+  const [captureOpen, setCaptureOpen] = useState(false);
+  const [savedIds, setSavedIds] = useState<Set<string>>(new Set());
+  const [capturedCount, setCapturedCount] = useState(0);
   const attemptsIncremented = useRef(false);
+  const completionRecorded = useRef(false);
   const rawMarkdown = useRef<string>('');
 
   // Count total quizzes in the lesson
   const totalQuizzes = segments.filter((s) => s.type === 'quiz').length;
-  const lessonTitle = lessons.find((l) => l.id === lessonId)?.title ?? lessonId;
 
-  /** Extract and save grammar cards from the lesson content. */
-  const extractAndSaveGrammarCards = useCallback(async () => {
+  // Derived rather than stored: the lesson is finished once its content has
+  // loaded and every quiz has been answered. A lesson with no quizzes is
+  // complete on arrival, which is how it has always behaved.
+  const completed = segments.length > 0 && quizScore.total >= totalQuizzes;
+
+  const candidates = useMemo(() => parseLessonCandidates(markdown), [markdown]);
+  const candidatesByLine = useMemo(() => indexBySourceText(candidates), [candidates]);
+
+  // Terms already in the deck render as saved, so re-opening a lesson never
+  // offers to add the same word twice.
+  useEffect(() => {
+    let active = true;
+    findSavedCandidates(candidates, lang).then((saved) => {
+      if (active) setSavedIds(saved);
+    });
+    return () => {
+      active = false;
+    };
+  }, [candidates, lang, capturedCount]);
+
+  /**
+   * Add or repair this lesson's grammar cards.
+   *
+   * Lessons without grammar-card blocks produce no cards. Cards used to be
+   * invented from the quiz questions instead, which produced prompts like
+   * "Which particle marks the topic?" with the lesson title as the rule —
+   * technically a card, but not something anyone could learn from.
+   */
+  const syncCards = useCallback(async () => {
     const md = rawMarkdown.current;
     if (!md) return;
+    const cards = extractGrammarCards(md);
+    if (cards.length === 0) return;
+    const result = await syncGrammarCards(cards, lang, lessonId);
+    if (result.added > 0 || result.repaired > 0) setCardSync(result);
+  }, [lang, lessonId]);
 
-    // Try explicit grammar-card blocks first
-    let cards = extractGrammarCards(md);
+  const handleQuizAnswer = useCallback((correct: boolean) => {
+    // Scoring only. Completion is handled in an effect below, because React may
+    // call a state updater more than once and running the completion work here
+    // duplicated every grammar card and double-counted the attempt.
+    setQuizScore((prev) => ({
+      correct: prev.correct + (correct ? 1 : 0),
+      total: prev.total + 1,
+    }));
+  }, []);
 
-    // Fall back to auto-generating from quizzes
-    if (cards.length === 0) {
-      const quizzes = segments
-        .filter((s): s is { type: 'quiz'; data: QuizData } => s.type === 'quiz')
-        .map((s) => s.data);
-      if (quizzes.length > 0) {
-        cards = cardsFromQuizzes(quizzes, lessonTitle);
-      }
-    }
-
-    if (cards.length > 0) {
-      const added = await createGrammarCards(cards, lang, lessonId);
-      if (added > 0) setGrammarCardsAdded(added);
-    }
-  }, [lang, lessonId, lessonTitle, segments]);
-
-  const handleQuizAnswer = useCallback(
-    (correct: boolean) => {
-      setQuizScore((prev) => {
-        const next = { correct: prev.correct + (correct ? 1 : 0), total: prev.total + 1 };
-        // Check if this was the last quiz
-        if (next.total === totalQuizzes) {
-          const score = Math.round((next.correct / next.total) * 100);
-          markLessonComplete(lang, lessonId, score);
-          setCompleted(true);
-          extractAndSaveGrammarCards();
-        }
-        return next;
-      });
-    },
-    [totalQuizzes, lang, lessonId, extractAndSaveGrammarCards],
-  );
+  useEffect(() => {
+    if (!completed || completionRecorded.current) return;
+    completionRecorded.current = true;
+    const score = totalQuizzes > 0 ? Math.round((quizScore.correct / totalQuizzes) * 100) : 100;
+    markLessonComplete(lang, lessonId, score);
+    syncCards();
+  }, [completed, quizScore, totalQuizzes, lang, lessonId, syncCards]);
 
   useEffect(() => {
     setLoading(true);
@@ -308,6 +202,7 @@ export default function LessonView({ lang, lessonId, onBack, lessons, onNavigate
       })
       .then((md) => {
         rawMarkdown.current = md;
+        setMarkdown(md);
         // Grammar-card blocks are SRS metadata only — strip them from the
         // displayed markdown so they never render as raw text. The full md
         // (with the blocks) is kept in rawMarkdown.current for card extraction.
@@ -346,19 +241,6 @@ export default function LessonView({ lang, lessonId, onBack, lessons, onNavigate
           attemptsIncremented.current = true;
           incrementAttempts(lang, lessonId);
         }
-
-        // If no quizzes, mark complete immediately and extract grammar cards
-        const hasQuizzes = parts.some((p) => p.type === 'quiz');
-        if (!hasQuizzes) {
-          markLessonComplete(lang, lessonId, 100);
-          setCompleted(true);
-          const cards = extractGrammarCards(md);
-          if (cards.length > 0) {
-            createGrammarCards(cards, lang, lessonId).then((added) => {
-              if (added > 0) setGrammarCardsAdded(added);
-            });
-          }
-        }
       })
       .catch(() => {
         setError(true);
@@ -387,6 +269,7 @@ export default function LessonView({ lang, lessonId, onBack, lessons, onNavigate
   }
 
   const quizProgressPct = totalQuizzes > 0 ? Math.round((quizScore.total / totalQuizzes) * 100) : 0;
+  const unsavedCount = candidates.filter((c) => !savedIds.has(c.id)).length;
 
   return (
     <div>
@@ -407,20 +290,42 @@ export default function LessonView({ lang, lessonId, onBack, lessons, onNavigate
         </div>
       )}
 
+      {candidates.length > 0 && (
+        <div className="mb-4 flex items-center justify-between gap-3 rounded-2xl border border-slate-200/70 dark:border-white/10 bg-white dark:bg-slate-800 p-3">
+          <p className="text-sm text-slate-600 dark:text-slate-300">
+            {unsavedCount > 0
+              ? `${unsavedCount} word${unsavedCount === 1 ? '' : 's'} to save from this lesson`
+              : 'All words from this lesson are in your deck'}
+          </p>
+          <button
+            onClick={() => setCaptureOpen(true)}
+            disabled={unsavedCount === 0}
+            className="shrink-0 min-h-[44px] px-4 rounded-xl bg-indigo-600 text-white text-sm font-medium hover:bg-indigo-700 disabled:opacity-50 disabled:hover:bg-indigo-600 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+          >
+            Save vocabulary
+          </button>
+        </div>
+      )}
+
       <div className="prose prose-sm max-w-none dark:prose-invert">
         {segments.map((seg, i) =>
           seg.type === 'md' ? (
             <ReactMarkdown
               key={i}
-              remarkPlugins={[remarkGfm]}
+              remarkPlugins={LESSON_REMARK_PLUGINS}
               components={{
                 li: ({ children, ...props }) => {
-                  const parsed = parseExampleSentence(children);
-                  if (parsed) {
+                  const candidate = matchCandidate(candidatesByLine, nodeText(children));
+                  if (candidate) {
                     return (
                       <li {...props}>
                         {children}
-                        <SaveFlashcardButton {...parsed} lang={lang} />
+                        <SaveFlashcardButton
+                          candidate={candidate}
+                          lang={lang}
+                          lessonId={lessonId}
+                          alreadySaved={savedIds.has(candidate.id)}
+                        />
                       </li>
                     );
                   }
@@ -442,12 +347,28 @@ export default function LessonView({ lang, lessonId, onBack, lessons, onNavigate
           <p className="text-green-800 dark:text-green-200 font-semibold">
             ✅ Lesson complete! Score: {totalQuizzes > 0 ? Math.round((quizScore.correct / quizScore.total) * 100) : 100}%
           </p>
-          {grammarCardsAdded > 0 && (
-            <p className="text-violet-700 dark:text-violet-300 text-sm mt-2 font-medium">
-              🃏 Added {grammarCardsAdded} grammar point{grammarCardsAdded > 1 ? 's' : ''} for SRS review
+          {cardSync && cardSync.added > 0 && (
+            <p className="text-indigo-700 dark:text-indigo-300 text-sm mt-2 font-medium">
+              🃏 Added {cardSync.added} grammar point{cardSync.added > 1 ? 's' : ''} for SRS review
+            </p>
+          )}
+          {cardSync && cardSync.repaired > 0 && (
+            <p className="text-slate-600 dark:text-slate-300 text-sm mt-1">
+              Updated {cardSync.repaired} existing grammar card
+              {cardSync.repaired > 1 ? 's' : ''} with the latest wording.
             </p>
           )}
         </div>
+      )}
+
+      {captureOpen && (
+        <LessonCaptureModal
+          candidates={candidates}
+          language={lang}
+          lessonId={lessonId}
+          onClose={() => setCaptureOpen(false)}
+          onSaved={(count) => setCapturedCount((prev) => prev + count)}
+        />
       )}
       {(() => {
         const currentIndex = lessons.findIndex((l) => l.id === lessonId);

@@ -65,7 +65,7 @@ Exceptions (no article): **Portugal**, **Cuba**, **Israel**, **Moçambique**
 - **O português é bonito** (oo por-too-gesh eh boo-nee-too) — Portuguese is beautiful
 - **Eu estudo o inglês** (eh-oo esh-too-doo oo een-glesh) — I study English
 
-<!-- grammar-card: {"rule":"Portuguese uses definite articles before names, possessives, and most countries","hint":"Much more common than in English","example":"___ Maria é ___ minha amiga.","answer":"A Maria é a minha amiga.","explanation":"In Brazilian Portuguese, definite articles are used before names and possessives in everyday speech, unlike English."} -->
+<!-- grammar-card: {"rule":"Portuguese uses definite articles before names, possessives, and most countries","hint":"Much more common than in English","example":"___ Maria é ___ minha amiga.","answer":"A ... a","explanation":"In Brazilian Portuguese, definite articles are used before names and possessives in everyday speech, unlike English."} -->
 
 ## When to Omit Articles
 

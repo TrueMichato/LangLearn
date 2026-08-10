@@ -200,6 +200,10 @@ Let's take a look at another example. Say you lost your passport a day before yo
 
 Here, it's not that someone has decided for the situation to be bad — it just turned out that way and you've confirmed it. In the same way, 〜ことになる can also be used to describe the current state of a situation that you have confirmed.
 
+<!-- grammar-card: {"rule":"となる marks a more formal or definitive change","hint":"なる, past","example":"このアイスクリーム屋さんは人気のお店___。","answer":"となった","explanation":"となった sounds weightier than になった, which suits a finished and notable outcome."} -->
+
+<!-- grammar-card: {"rule":"A noun takes に before なる","hint":"noun + なる","example":"ここはアイスクリーム屋さん___。","answer":"になる","explanation":"アイスクリーム屋さんになる says the place will turn into an ice cream shop."} -->
+
 ## Beyond the Basics
 
 ### 〜にもなると〜 For Natural Consequences That Follow A Certain Change
@@ -291,6 +295,8 @@ by Naoko Sawada
 <!-- quiz: {"type":"multiple-choice","question":"What does \"有名に**なる**。\" mean?","options":["I'll become famous.","I'll become a model.","It's going to get busy.","This place will become an ice cream shop."],"answer":0} -->
 
 <!-- quiz: {"type":"multiple-choice","question":"What does \"いそがしく**なる**。\" mean?","options":["It's going to get busy.","I'll become a model.","I'll become famous.","This place will become an ice cream shop."],"answer":0} -->
+
+<!-- grammar-card: {"rule":"にもなると means 'once it reaches as much as'","hint":"に + も + なる + と","example":"六才___、こんなことも出来るんだね。","answer":"にもなると","explanation":"六才にもなると means once a child is all of six, such things become possible."} -->
 
 ## Sources
 

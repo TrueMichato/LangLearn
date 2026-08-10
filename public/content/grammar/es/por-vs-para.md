@@ -86,7 +86,7 @@ Both **por** and **para** can translate as "for" in English, but they cover very
 - **Para un niño, lee muy bien** — For a child, he reads very well
 - **Para ser principiante, tocas muy bien** — For a beginner, you play very well
 
-<!-- grammar-card: {"rule":"Por = cause/exchange/duration/through; Para = purpose/destination/deadline/recipient","hint":"PARA points forward (→ goal, recipient, deadline). POR looks at cause, exchange, or movement around/through.","example":"Compré flores ___ mi madre. / Pagué diez dólares ___ las flores.","answer":"para (recipient) / por (exchange)","explanation":"'Para mi madre' = the flowers are destined FOR her (recipient → para). 'Por las flores' = ten dollars exchanged FOR the flowers (exchange → por)."} -->
+<!-- grammar-card: {"rule":"Por = cause/exchange/duration/through; Para = purpose/destination/deadline/recipient","hint":"PARA points forward (→ goal, recipient, deadline). POR looks at cause, exchange, or movement around/through.","example":"Compré flores ___ mi madre. / Pagué diez dólares ___ las flores.","answer":"para, por","explanation":"'Para mi madre' = the flowers are destined FOR her (recipient → para). 'Por las flores' = ten dollars exchanged FOR the flowers (exchange → por)."} -->
 
 ## Side-by-Side Contrast
 

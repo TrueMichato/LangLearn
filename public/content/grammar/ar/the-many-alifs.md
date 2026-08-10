@@ -21,7 +21,7 @@ Do not treat every alif shape as the same letter in reading. **آ** usually comb
 
 **هَمْزَةُ الْوَصْلِ** (hamzatu l-waṣli) — connecting hamza is pronounced only when beginning from silence: **ٱسْمُهُ عَلِيٌّ** (ismuhu ʿaliyyun) — his name is Ali. After a previous vowel, it connects: **وَٱسْمُهُ عَلِيٌّ** (wa-smuhu ʿaliyyun) — and his name is Ali.
 
-<!-- grammar-card: {"rule":"Alif maqṣūra ى is read as final ā, not as y, in words like عَلَى and مُوسَى.","hint":"The shape looks like yāʾ without dots, but the sound is ā.","example":"Read عَلَى as ___ .","answer":"ʿalā — on","explanation":"The final ى is alif maqṣūra, so it gives a long ā sound at the end."} -->
+<!-- grammar-card: {"rule":"Alif maqṣūra ى is read as final ā, not as y, in words like عَلَى and مُوسَى.","hint":"The shape looks like yāʾ without dots, but the sound is ā.","example":"Read عَلَى as ___ .","answer":"ʿalā","explanation":"The final ى is alif maqṣūra, so it gives a long ā sound at the end."} -->
 
 ## Practice patterns
 
@@ -32,7 +32,7 @@ Do not treat every alif shape as the same letter in reading. **آ** usually comb
 
 <!-- quiz: {"type":"multiple-choice","question":"What happens to هَمْزَةُ الْوَصْلِ (hamzatu l-waṣli) — connecting hamza after a preceding vowel?","options":["It usually connects and is not pronounced as a new glottal stop","It becomes a plural ending","It always turns into wāw","It makes the noun feminine"],"answer":0} -->
 
-<!-- grammar-card: {"rule":"Dagger alif marks a long ā that is written above the consonant instead of as a full alif.","hint":"Look for the small vertical stroke above the word.","example":"The word هٰذَا (hādhā) — this contains ___ .","answer":"أَلِفٌ خَنْجَرِيَّةٌ (ʾalifun khanjariyyatun) — dagger alif","explanation":"The small sign above ه in هٰذَا marks the long ā of hā."} -->
+<!-- grammar-card: {"rule":"Dagger alif marks a long ā that is written above the consonant instead of as a full alif.","hint":"Look for the small vertical stroke above the word.","example":"The word هٰذَا (hādhā) — this contains ___ .","answer":"أَلِفٌ خَنْجَرِيَّةٌ (ʾalifun khanjariyyatun)","explanation":"dagger alif — The small sign above ه in هٰذَا marks the long ā of hā."} -->
 
 ## Sources
 

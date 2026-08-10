@@ -20,7 +20,7 @@ All endings carry a written accent on the **í**: -ía, -ías, -ía, -íamos, -�
 - **Comeríamos** juntos (koh-meh-REE-ah-mos) — We would eat together
 - **¿Vivirías** en otro país? (vee-vee-REE-ahs) — Would you live in another country?
 
-<!-- quiz: {"type":"multiple-choice","question":"What is the yo form of 'comer' in the condicional?","options":["comería","comería","comeré","comía"],"answer":0} -->
+<!-- quiz: {"type":"multiple-choice","question":"What is the yo form of 'comer' in the condicional?","options":["comería","comeríamos","comeré","comía"],"answer":0} -->
 
 ## Irregular Stems
 

@@ -25,6 +25,8 @@ For numbers above 10, use kango by combining: 11 = じゅういち, 99 = きゅ�
 
 New numbers: 100 = 百 (ひゃく), 1000 = 千 (せん), 10000 = 万 (まん).
 
+<!-- grammar-card: {"rule":"People are counted with 人, which is irregular for one and two","hint":"1 person","example":"___の人(ひと)が来(き)ました。","answer":"一人(ひとり)","explanation":"一人 is read ひとり, not いちにん."} -->
+
 ## What Are Counters?
 
 Counters are suffixes that classify what you're counting. You can't just say "two pens" directly — you need the appropriate counter:
@@ -51,6 +53,8 @@ Special readings for 1 and 2:
 - 〜匹 (ひき) — small to medium animals: ネコが **二匹（にひき）** いる。
 - 〜頭 (とう) — large animals: ゾウが **三頭（さんとう）** いる。
 
+<!-- grammar-card: {"rule":"つ is the general counter for objects","hint":"3, general counter","example":"りんごを___ください。","answer":"三(みっ)つ","explanation":"三つ works whenever no more specific counter comes to mind."} -->
+
 ## Sentence Patterns with Counters
 
 **Pattern 1:** Counter before the verb (most common)
@@ -66,6 +70,8 @@ The difference is subtle: Pattern 1 = "cats, two of them happen to be there." Pa
 <!-- quiz: {"type":"multiple-choice","question":"How do you read 二人 (two people)?","options":["にじん","にひと","ふたり","ににん"],"answer":2} -->
 
 <!-- quiz: {"type":"multiple-choice","question":"Which counter is a 'wild card' that works for almost anything?","options":["〜本","〜枚","〜つ / 〜個","〜匹"],"answer":2} -->
+
+<!-- grammar-card: {"rule":"A counter sits directly before the verb, with no particle of its own","hint":"3 books","example":"本(ほん)を___買(か)いました。","answer":"三冊(さんさつ)","explanation":"三冊 modifies 買いました directly, so no particle follows it."} -->
 
 ## Sources
 

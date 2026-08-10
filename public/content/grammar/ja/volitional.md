@@ -51,6 +51,8 @@ The polite volitional replaces ます with **ましょう**:
 
 <!-- quiz:{"type":"multiple-choice","question":"What is the volitional form of 泳ぐ (to swim)?","options":["泳ごう","泳ぐよう","泳がよう","泳ぎよう"],"answer":0} -->
 
+<!-- grammar-card: {"rule":"Ichidan verbs drop る and add よう","hint":"見る → ?","example":"一緒(いっしょ)に映画(えいが)を見(み)___。","answer":"よう","explanation":"見よう is the plain volitional — let's watch."} -->
+
 ## Usage 1: "Let's ~" (Invitation / Suggestion)
 
 The most common use — inviting someone to do something together:
@@ -70,6 +72,8 @@ The most common use — inviting someone to do something together:
 > 今日(きょう)は何(なに)をしよう？
 > *Kyou wa nani wo shiyou?*
 > What shall we do today?
+
+<!-- grammar-card: {"rule":"ましょう is the polite volitional","hint":"帰る, polite volitional","example":"そろそろ帰(かえ)り___。","answer":"ましょう","explanation":"帰りましょう politely proposes that everyone head home."} -->
 
 ## Usage 2: Personal Intention ("I think I'll ~")
 
@@ -105,6 +109,8 @@ Combining the volitional with **と思(おも)う** expresses a plan or intentio
 - **〜ようと思う** = I'm thinking (just now deciding)
 - **〜ようと思っている** = I've been thinking / I intend to (ongoing plan)
 
+<!-- grammar-card: {"rule":"The volitional plus と思う states a plan","hint":"think, polite","example":"来年(らいねん)日本(にほん)へ行(い)こう___。","answer":"と思います","explanation":"行こうと思います says the speaker is thinking of going next year."} -->
+
 ## Usage 4: 〜ようとする (To try / be about to)
 
 The volitional + **とする** means "to try to" or "to be about to":
@@ -122,6 +128,8 @@ The volitional + **とする** means "to try to" or "to be about to":
 > Just as I was about to leave, the phone rang.
 
 <!-- quiz:{"type":"multiple-choice","question":"'日本語を勉強しようと思っている' means:","options":["I studied Japanese","I'm thinking of studying Japanese","I tried to study Japanese","I should study Japanese"],"answer":1} -->
+
+<!-- grammar-card: {"rule":"ようとする means being on the point of doing something","hint":"出かける, volitional + する","example":"出(で)かけ___時(とき)、電話(でんわ)が鳴(な)った。","answer":"ようとした","explanation":"出かけようとした時 is the moment just before leaving."} -->
 
 ## Usage 5: 〜ようか (Offering help)
 

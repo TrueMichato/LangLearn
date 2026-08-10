@@ -22,7 +22,7 @@ MSA accepts many international words, but Arabic reshapes them. Sounds may be su
 
 Loanwords vary by country and register. A news article may prefer **هَاتِفٌ** (hātifun) — telephone, while everyday speech may say **تِلِفُونٌ** (tilifūnun) — telephone. Technical MSA may coin Arabic roots too: **حَاسُوبٌ** (ḥāsūbun) — computer, beside **كُمْبْيُوتَرٌ** (kumbyūtarun) — computer.
 
-<!-- grammar-card: {"rule":"Loanwords can receive Arabic case endings in fully vocalized MSA.","hint":"A borrowed noun can still behave like a noun.","example":"Add nominative tanwīn to بَنْك (bank) — bank: ___ .","answer":"بَنْكٌ (bankun) — a bank","explanation":"Even though بَنْكٌ is borrowed, it can take the nominative indefinite ending -un in formal Arabic."} -->
+<!-- grammar-card: {"rule":"Loanwords can receive Arabic case endings in fully vocalized MSA.","hint":"A borrowed noun can still behave like a noun.","example":"Add nominative tanwīn to بَنْك (bank) — bank: ___ .","answer":"بَنْكٌ (bankun)","explanation":"a bank — Even though بَنْكٌ is borrowed, it can take the nominative indefinite ending -un in formal Arabic."} -->
 
 ## Arabized families
 
@@ -35,7 +35,7 @@ Borrowed words can become productive:
 
 <!-- quiz: {"type":"multiple-choice","question":"Which plural is a common Arabic plural for فِلْمٌ (filmun) — film?","options":["أَفْلَامٌ (ʾaflāmun) — films","فِلْمَانِ (filmāni) — exactly two films only","فِلْمُونَ (filmūna)","فِلْمَةٌ (filmatun)"],"answer":0} -->
 
-<!-- grammar-card: {"rule":"The nisba ending ـِيٌّ (-iyyun) can turn place names and some borrowed bases into adjectives.","hint":"Think country to nationality.","example":"Make كَنَدَا (kanadā) — Canada into Canadian: ___ .","answer":"كَنَدِيٌّ (kanadiyyun) — Canadian","explanation":"Arabic adds the nisba ending ـِيٌّ to create an adjective or nationality from the name."} -->
+<!-- grammar-card: {"rule":"The nisba ending ـِيٌّ (-iyyun) can turn place names and some borrowed bases into adjectives.","hint":"Think country to nationality.","example":"Make كَنَدَا (kanadā) — Canada into Canadian: ___ .","answer":"كَنَدِيٌّ (kanadiyyun)","explanation":"Canadian — Arabic adds the nisba ending ـِيٌّ to create an adjective or nationality from the name."} -->
 
 ## Sources
 

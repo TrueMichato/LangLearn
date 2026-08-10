@@ -24,7 +24,7 @@ A common Egyptian present marker is **بَـ** (ba-) / **بِـ** (bi-) — pres
 
 Compared with MSA **أَكْتُبُ** (aktubu) — I write, Egyptian **بَاكْتُبْ** (baktub) — I write shows the **بَـ** (ba-) present marker and no final case-style vowel.
 
-<!-- grammar-card: {"rule": "Egyptian present verbs often use بَـ (ba-) / بِـ (bi-) before the verb.", "hint": "This marks present or habitual action.", "example": "Complete “I write” in Egyptian: أَنَا ___اكْتُبْ (anā ___aktub).", "answer": "بَـ (ba-) — Egyptian present marker", "explanation": "أَنَا بَاكْتُبْ (anā baktub) — I write / I am writing uses بَـ (ba-)."} -->
+<!-- grammar-card: {"rule":"Egyptian present verbs often use بَـ (ba-) / بِـ (bi-) before the verb.","hint":"This marks present or habitual action.","example":"Complete “I write” in Egyptian: أَنَا ___اكْتُبْ (anā ___aktub).","answer":"بَـ (ba-)","explanation":"Egyptian present marker — أَنَا بَاكْتُبْ (anā baktub) — I write / I am writing uses بَـ (ba-)."} -->
 
 ## Practice patterns
 
@@ -38,7 +38,7 @@ Use dialect with humility: mirroring local speech kindly is the goal.
 
 <!-- quiz: {"type": "multiple-choice", "question": "In common Cairo pronunciation, ج (jīm) — j often sounds like:", "options": ["g", "th", "q", "sh"], "answer": 0} -->
 
-<!-- grammar-card: {"rule": "Egyptian commonly uses مِشْ (mish) — not to negate adjectives or participles.", "hint": "Place it before the description.", "example": "Complete “I do not understand”: أَنَا ___ فَاهِمْ (anā ___ fāhim).", "answer": "مِشْ (mish) — not", "explanation": "أَنَا مِشْ فَاهِمْ (anā mish fāhim) — I do not understand, masculine."} -->
+<!-- grammar-card: {"rule":"Egyptian commonly uses مِشْ (mish) — not to negate adjectives or participles.","hint":"Place it before the description.","example":"Complete “I do not understand”: أَنَا ___ فَاهِمْ (anā ___ fāhim).","answer":"مِشْ (mish)","explanation":"أَنَا مِشْ فَاهِمْ (anā mish fāhim) — I do not understand, masculine."} -->
 
 ## Sources
 

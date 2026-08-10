@@ -65,7 +65,7 @@ First, let's look at how to turn Japanese verbs into the て forms.
    
    行**く**　→　行**って**
 
-** 来(く)る**　→　** 来て(き　)**
+**来(く)る**　→　 **来て(き　)**
 
 **する**　→　**して**
    
@@ -363,11 +363,11 @@ by Yasuko Watanabe
 
 <!-- quiz: {"type":"multiple-choice","question":"What does \"あの店は広**くて**静かだ。\" mean?","options":["That restaurant is spacious **and** quiet.","I run **and** shower .","I go to the station **by** running.","That restaurant is quiet **and** spacious."],"answer":0} -->
 
-<!-- grammar-card: {"rule":"て form (verbs)","hint":"Connect sequential or simultaneous actions","example":"走っ＿＿シャワーをする。","answer":"走ってシャワーをする。","explanation":"The て form links actions together, like 'and' or 'then' in English. Conjugation depends on verb type (godan, ichidan, irregular)."} -->
+<!-- grammar-card: {"rule":"て form (verbs)","hint":"Connect sequential or simultaneous actions","example":"走っ＿＿シャワーをする。","answer":"て","explanation":"The て form links actions together, like 'and' or 'then' in English. Conjugation depends on verb type (godan, ichidan, irregular)."} -->
 
-<!-- grammar-card: {"rule":"くて form (い-adjectives)","hint":"Connect adjective descriptions with て","example":"あの店は広＿＿静かだ。","answer":"あの店は広くて静かだ。","explanation":"For い-adjectives, replace い with くて to link descriptions. E.g. 甘い → 甘くて (sweet and…)."} -->
+<!-- grammar-card: {"rule":"くて form (い-adjectives)","hint":"Connect adjective descriptions with て","example":"あの店は広＿＿静かだ。","answer":"くて","explanation":"For い-adjectives, replace い with くて to link descriptions. E.g. 甘い → 甘くて (sweet and…)."} -->
 
-<!-- grammar-card: {"rule":"で form (な-adjectives/nouns)","hint":"Connect な-adjectives and nouns with で","example":"頭痛＿＿眠れなかった。","answer":"頭痛で眠れなかった。","explanation":"For な-adjectives and nouns, add で (the て form of だ) to link clauses. Can express 'and' or causal 'so'."} -->
+<!-- grammar-card: {"rule":"で form (な-adjectives/nouns)","hint":"Connect な-adjectives and nouns with で","example":"頭痛＿＿眠れなかった。","answer":"で","explanation":"For な-adjectives and nouns, add で (the て form of だ) to link clauses. Can express 'and' or causal 'so'."} -->
 
 ## Sources
 

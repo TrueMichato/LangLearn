@@ -70,6 +70,8 @@ Some nouns ending in **-ь** are masculine. These must be memorized.
 
 **Дождь идёт весь день.** *(Dozhd' idyot ves' den'.)* — It has been raining all day.
 
+<!-- grammar-card: {"rule":"A noun ending in a consonant is masculine","hint":"table","example":"___ стоит в углу.","answer":"Стол","explanation":"Стол ends in a hard consonant, which makes it masculine and governs masculine agreement throughout."} -->
+
 ---
 
 ## 3. Feminine Nouns
@@ -189,6 +191,8 @@ The soft sign **-ь** does not tell you the gender. You must memorize whether ea
 
 <!-- quiz:{"type":"multiple-choice","question":"What gender is the noun «тетрадь» (notebook)?","options":["Masculine","Feminine","Neuter","It changes depending on context"],"answer":1} -->
 
+<!-- grammar-card: {"rule":"Nouns ending in -ь may be masculine or feminine and must be learned individually","hint":"night","example":"Сегодня холодная ___.","answer":"ночь","explanation":"Ночь is feminine despite the soft sign, hence холодная; день has the same ending but is masculine."} -->
+
 ---
 
 ## 6. Adjective Agreement with Gender
@@ -218,6 +222,8 @@ Adjectives **must agree** with the noun they modify in gender (and also number a
 **Синее небо над городом.** *(Sineye nebo nad gorodom.)* — The blue sky is above the city.
 
 <!-- quiz:{"type":"multiple-choice","question":"Which adjective form correctly completes: «_______ книга лежит на столе» (The interesting book is on the table)?","options":["интересный","интересная","интересное","интересные"],"answer":1} -->
+
+<!-- grammar-card: {"rule":"An adjective takes the gender of the noun it modifies","hint":"новый (new)","example":"Это ___ книга.","answer":"новая","explanation":"Книга is feminine, so новый must appear in its feminine form новая."} -->
 
 ---
 

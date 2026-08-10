@@ -1,5 +1,6 @@
 import type { Word } from '../../db/schema';
 import { speak, isTTSSupported } from '../../lib/tts';
+import { contextRevealsAnswer } from '../../lib/card-types';
 import { useSettingsStore } from '../../stores/settingsStore';
 import { rtlProps } from '../../lib/rtl';
 
@@ -28,6 +29,12 @@ interface FlashcardProps {
 
 export default function Flashcard({ word, isFlipped, onFlip }: FlashcardProps) {
   const showContext = useSettingsStore((s) => s.showContextOnCards);
+  // Legacy decks contain context lines that spell out the meaning; showing them
+  // on the question side turns the card into a giveaway.
+  const contextOnFront =
+    showContext &&
+    !!word.contextSentence &&
+    !contextRevealsAnswer(word.contextSentence, word.meaning);
 
   return (
     <div
@@ -40,7 +47,7 @@ export default function Flashcard({ word, isFlipped, onFlip }: FlashcardProps) {
     >
       <span className="text-xs text-slate-500 dark:text-slate-400 mb-2">
         {word.language}
-        {word.contextSentence && showContext && (
+        {contextOnFront && (
           <span className="ml-1" title="Has context sentence">📝</span>
         )}
       </span>
@@ -66,7 +73,7 @@ export default function Flashcard({ word, isFlipped, onFlip }: FlashcardProps) {
         </button>
       )}
 
-      {!isFlipped && showContext && word.contextSentence && (
+      {!isFlipped && contextOnFront && (
         <p className="text-base text-slate-600 dark:text-slate-300 mt-3 italic text-center" {...rtlProps(word.language)}>
           "<HighlightedContext sentence={word.contextSentence} word={word.word} />"
         </p>

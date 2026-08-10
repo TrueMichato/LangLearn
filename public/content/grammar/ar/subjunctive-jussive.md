@@ -21,7 +21,7 @@ The **الْمُضَارِعُ** (al-muḍāriʿ) — present / imperfect verb n
 
 For many sound verbs, the contrast is visible in the final vowel: **يَكْتُبُ** (yaktubu) — he writes, **أَنْ يَكْتُبَ** (an yaktuba) — that he write, **لَمْ يَكْتُبْ** (lam yaktub) — he did not write.
 
-<!-- grammar-card: {"rule":"أَنْ (an) and لَنْ (lan) usually put a present verb into the subjunctive ending ـَ (-a).","hint":"Watch يَكْتُبُ become يَكْتُبَ.","example":"Complete “I want to write”: أُرِيدُ أَنْ ___ (urīdu an ___).","answer":"أَكْتُبَ (aktuba) — to write","explanation":"After أَنْ (an), أَكْتُبُ (aktubu) becomes أَكْتُبَ (aktuba) in the subjunctive."} -->
+<!-- grammar-card: {"rule":"أَنْ (an) and لَنْ (lan) usually put a present verb into the subjunctive ending ـَ (-a).","hint":"Watch يَكْتُبُ become يَكْتُبَ.","example":"Complete “I want to write”: أُرِيدُ أَنْ ___ (urīdu an ___).","answer":"أَكْتُبَ (aktuba)","explanation":"to write — After أَنْ (an), أَكْتُبُ (aktubu) becomes أَكْتُبَ (aktuba) in the subjunctive."} -->
 
 ## Practice patterns
 
@@ -34,7 +34,7 @@ The jussive also appears in many conditional patterns, so **الْجَزْمُ**
 
 <!-- quiz: {"type":"multiple-choice","question":"What ending is typical for a sound verb in the subjunctive?","options":["ـَ (-a)","ـُ (-u)","ـِ (-i)","ـُونَ (-ūna) only"],"answer":0} -->
 
-<!-- grammar-card: {"rule":"لَمْ (lam) usually puts a present verb into the jussive and gives past negative meaning.","hint":"لَمْ أَفْعَلْ means “I did not do.”","example":"Complete “he did not go”: لَمْ ___ (lam ___).","answer":"يَذْهَبْ (yadh-hab) — go","explanation":"لَمْ يَذْهَبْ (lam yadh-hab) means “he did not go”; the final vowel drops into the jussive."} -->
+<!-- grammar-card: {"rule":"لَمْ (lam) usually puts a present verb into the jussive and gives past negative meaning.","hint":"لَمْ أَفْعَلْ means “I did not do.”","example":"Complete “he did not go”: لَمْ ___ (lam ___).","answer":"يَذْهَبْ (yadh-hab)","explanation":"لَمْ يَذْهَبْ (lam yadh-hab) means “he did not go”; the final vowel drops into the jussive."} -->
 
 ## Sources
 

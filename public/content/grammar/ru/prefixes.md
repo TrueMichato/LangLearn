@@ -54,6 +54,8 @@ The prefix **в-** (or **во-** before certain consonant clusters) indicates mo
 
 <!-- quiz:{"type":"multiple-choice","question":"What does the prefix 'в-' indicate?","options":["Movement out of","Movement into","Movement away","Movement around"],"answer":1} -->
 
+<!-- grammar-card: {"rule":"The prefix в- adds the sense of movement into something","hint":"идти → ?","example":"Он ___ в комнату.","answer":"вошёл","explanation":"В- joined to шёл gives вошёл, and the place entered follows with в plus the accusative."} -->
+
 ---
 
 ## 3. The Prefix вы-: Movement Out Of
@@ -93,6 +95,8 @@ The prefix **вы-** is the opposite of **в-** — it indicates movement **out 
 **Он выучил все слова.** *(On vyuchil vse slova.)* — He learned all the words. (studied to completion)
 
 <!-- quiz:{"type":"multiple-choice","question":"In perfective verbs with вы-, where does the stress usually fall?","options":["On the root","On the ending","On the prefix вы-","On the last syllable"],"answer":2} -->
+
+<!-- grammar-card: {"rule":"The prefix вы- means movement out of somewhere","hint":"идти → ?","example":"Она ___ из дома.","answer":"вышла","explanation":"Вы- marks the exit, and из plus the genitive дома names what was left."} -->
 
 ---
 
@@ -136,6 +140,8 @@ The prefix **при-** has two main meanings:
 **Пришей пуговицу.** *(Prishey pugovitsu.)* — Sew on the button.
 
 <!-- quiz:{"type":"multiple-choice","question":"'Она принесла подарок' means:","options":["She took a gift away.","She brought a gift.","She made a gift.","She found a gift."],"answer":1} -->
+
+<!-- grammar-card: {"rule":"The prefix при- marks arrival at the destination","hint":"идти → ?","example":"Гости ___ вовремя.","answer":"пришли","explanation":"При- focuses on reaching the place, so пришли says the guests got there on time."} -->
 
 ---
 

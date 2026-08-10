@@ -164,6 +164,8 @@ So if your friend wanted to tell you that they've been to the town festival in t
   - I've been to that festival before.
 (*Literally*: I have the experience of going to that festival before.)
 
+<!-- grammar-card: {"rule":"いる is used for the existence of living things","hint":"いる / ある","example":"オフィスに弁護士と依頼人が___。","answer":"いる","explanation":"Lawyers and clients are people, so their existence takes いる."} -->
+
 ## Beyond the Basics
 
 ### いる for Inanimate but Mobile Objects
@@ -421,6 +423,10 @@ by Sung-Yeo Chung and Naohiko Kurokawa
 <!-- quiz: {"type":"multiple-choice","question":"What does \"山が**ある**。\" mean?","options":["There is a mountain.","There is a dog.","There are fish in the river.","There is a lawyer and a client in the office."],"answer":0} -->
 
 <!-- quiz: {"type":"multiple-choice","question":"What does \"川の中に魚が**いる**。\" mean?","options":["There are fish in the river.","There is a dog.","There is a mountain.","There is a lawyer and a client in the office."],"answer":0} -->
+
+<!-- grammar-card: {"rule":"The polite negative of いる is いません","hint":"いる, polite negative","example":"この仕事への応募者はまだ___。","answer":"いません","explanation":"Applicants are people, so their absence is reported with いません rather than ありません."} -->
+
+<!-- grammar-card: {"rule":"ある is used for the existence of inanimate things","hint":"いる / ある","example":"このビルにはエレベーターが___。","answer":"ある","explanation":"An elevator cannot move under its own will, so its existence takes ある."} -->
 
 ## Sources
 

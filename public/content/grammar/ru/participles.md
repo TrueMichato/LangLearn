@@ -52,6 +52,8 @@ From the **они** (3rd person plural) present tense form, replace **-т** with
 
 <!-- quiz:{"type":"multiple-choice","question":"How are present active participles formed?","options":["From the я form, add -щий","From the они form, replace -т with -щий","From the infinitive, add -щий","From the он form, add -ющий"],"answer":1} -->
 
+<!-- grammar-card: {"rule":"A present active participle is the они-form plus -щий","hint":"говорят → говоря-?","example":"Человек, говоря___ по телефону, — мой брат.","answer":"щий","explanation":"Говорить gives the stem говоря-, and -щий agrees with the masculine человек."} -->
+
 ---
 
 ## 3. Past Active Participles
@@ -80,6 +82,8 @@ From the **past tense masculine** form (он), replace **-л** with **-вший*
 **Девушка, пришедшая последней, села у двери.** *(Devushka, prishedshaya posledney, sela u dveri.)* — The girl who came last sat by the door.
 
 **Мальчик, упавший с дерева, не пострадал.** *(Malchik, upavshiy s dereva, ne postradal.)* — The boy who fell from the tree was not hurt.
+
+<!-- grammar-card: {"rule":"A past active participle replaces the past -л with -вший","hint":"написал → написа-?","example":"Человек, написа___ эту книгу, живёт в Москве.","answer":"вший","explanation":"Написал drops its -л and takes -вший, agreeing with the masculine человек."} -->
 
 ---
 
@@ -110,6 +114,8 @@ From the **мы** (1st person plural) present tense form, add **-ый** (or **-�
 **Невидимые звёзды скрыты облаками.** *(Nevidimyye zvyozdy skryty oblakami.)* — The invisible stars are hidden by clouds.
 
 <!-- quiz:{"type":"multiple-choice","question":"Which of these is a present passive participle?","options":["читающий","читавший","читаемый","прочитанный"],"answer":2} -->
+
+<!-- grammar-card: {"rule":"Passive participles decline exactly like ordinary adjectives","hint":"профессор is masculine singular","example":"Он — уважаем___ профессор.","answer":"ый","explanation":"Уважаемый agrees with the masculine singular профессор, so the ending is -ый."} -->
 
 ---
 

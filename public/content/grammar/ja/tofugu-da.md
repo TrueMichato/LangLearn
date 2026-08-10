@@ -96,6 +96,10 @@ Sometimes, you will find だ at the very beginning of a sentence as well, in com
 
 Imagine your mom saying this sentence right after the last example sentence about jobs and money. だから is used to refer to the previous sentence, and say that is the reason for what comes next. だが and だけど are both used at the beginning of sentences well, to mean something like “however” in English.
 
+<!-- grammar-card: {"rule":"だから opens a sentence with 'therefore'","hint":"だ + から","example":"___、大学に行きなさい。","answer":"だから","explanation":"だから carries the reason over from whatever was just said and draws the conclusion."} -->
+
+<!-- grammar-card: {"rule":"A quoted thought keeps plain だ even inside a polite sentence","hint":"大切 + ?","example":"私は「お金は大切___」と思います。","answer":"だ","explanation":"The clause before と思います stays plain, so 大切だ is correct despite the polite ending."} -->
+
 ## Beyond the Basics
 
 ### Nuances of だ

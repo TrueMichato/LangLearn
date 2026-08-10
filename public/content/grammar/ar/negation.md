@@ -22,7 +22,7 @@ Use **لَا** (lā) — not / no for present-tense verbs and general negation, 
 
 After **لَمْ** (lam) — did not, the verb is jussive: **أَذْهَبْ** (adhhab) — I go, jussive. After **لَنْ** (lan) — will not, the verb is subjunctive: **أَذْهَبَ** (adh-haba) — I go, subjunctive.
 
-<!-- grammar-card: {"rule": "لَمْ (lam) — did not gives past negative meaning but uses a jussive present-form verb.", "hint": "The final vowel often drops to sukūn.", "example": "Complete “I did not write”: لَمْ ___ (lam ___).", "answer": "أَكْتُبْ (aktub) — I write, jussive", "explanation": "لَمْ أَكْتُبْ (lam aktub) — I did not write uses the jussive after لَمْ (lam)."} -->
+<!-- grammar-card: {"rule":"لَمْ (lam) — did not gives past negative meaning but uses a jussive present-form verb.","hint":"The final vowel often drops to sukūn.","example":"Complete “I did not write”: لَمْ ___ (lam ___).","answer":"أَكْتُبْ (aktub)","explanation":"I write, jussive — لَمْ أَكْتُبْ (lam aktub) — I did not write uses the jussive after لَمْ (lam)."} -->
 
 ## Practice patterns
 
@@ -34,7 +34,7 @@ Kind shortcut:
 
 <!-- quiz: {"type": "multiple-choice", "question": "Which sentence means “I did not go”?", "options": ["لَمْ أَذْهَبْ (lam adhhab) — I did not go", "لَنْ أَذْهَبَ (lan adh-haba) — I will not go", "لَا أَذْهَبُ (lā adhhabu) — I do not go", "سَأَذْهَبُ (sa-adhhabu) — I will go"], "answer": 0} -->
 
-<!-- grammar-card: {"rule": "لَيْسَ (laysa) — is not negates nominal sentences.", "hint": "Use it where English uses “is not.”", "example": "Complete “The lesson is not difficult”: لَيْسَ الدَّرْسُ ___ (laysa ad-darsu ___).", "answer": "صَعْبًا (ṣaʿban) — difficult, accusative", "explanation": "لَيْسَ الدَّرْسُ صَعْبًا (laysa ad-darsu ṣaʿban) — the lesson is not difficult uses لَيْسَ (laysa)."} -->
+<!-- grammar-card: {"rule":"لَيْسَ (laysa) — is not negates nominal sentences.","hint":"Use it where English uses “is not.”","example":"Complete “The lesson is not difficult”: لَيْسَ الدَّرْسُ ___ (laysa ad-darsu ___).","answer":"صَعْبًا (ṣaʿban)","explanation":"difficult, accusative — لَيْسَ الدَّرْسُ صَعْبًا (laysa ad-darsu ṣaʿban) — the lesson is not difficult uses لَيْسَ (laysa)."} -->
 
 ## Sources
 

@@ -36,6 +36,8 @@ In formal writing, news, academic papers, and business documents, Japanese uses 
 
 > 💡 において is too stiff for everyday conversation. Use で in casual speech. You'll encounter において mainly in writing, speeches, and formal presentations.
 
+<!-- grammar-card: {"rule":"において is the formal equivalent of で","hint":"formal で","example":"会議(かいぎ)は東京(とうきょう)___行(おこな)われます。","answer":"において","explanation":"東京において suits a formal announcement, where 東京で would be everyday speech."} -->
+
 ## に関(かん)して / に関する (Regarding / About)
 
 **に関して** means "regarding" or "concerning." **に関する** is the attributive form that modifies a noun.
@@ -67,6 +69,8 @@ In formal writing, news, academic papers, and business documents, Japanese uses 
 > 💡 に関して is slightly more formal than について. In everyday speech, について is the natural choice. に関して appears in business emails, reports, and official documents.
 
 <!-- quiz:{"type":"multiple-choice","question":"Which is the correct formal way to say 'a report regarding the economy'?","options":["経済に関する報告書","経済を関して報告書","経済に関して報告書する","経済の関する報告書"],"answer":0} -->
+
+<!-- grammar-card: {"rule":"に関して means 'regarding' in formal contexts","hint":"regarding","example":"この件(けん)___ご説明(せつめい)します。","answer":"に関して","explanation":"この件に関して formally introduces the matter about to be explained."} -->
 
 ## に対(たい)して / に対する (Toward / Against / In Contrast)
 
@@ -109,6 +113,8 @@ In formal writing, news, academic papers, and business documents, Japanese uses 
 | 兄は静かなのに対して… | 兄は静かだけど… |
 
 <!-- quiz:{"type":"multiple-choice","question":"'政府に対する批判' means:","options":["Criticism from the government","Criticism toward the government","The government's criticism","Criticism despite the government"],"answer":1} -->
+
+<!-- grammar-card: {"rule":"に対して marks the target an action or attitude is aimed at","hint":"toward","example":"お客様(きゃくさま)___失礼(しつれい)な態度(たいど)をとってはいけません。","answer":"に対して","explanation":"お客様に対して marks customers as the ones the attitude is directed at."} -->
 
 ## について / につき (About / Concerning)
 
@@ -236,6 +242,8 @@ This versatile pattern has several meanings depending on context.
 として doesn't have a direct casual replacement — it's used across all formality levels. However, in very casual speech, you might hear simpler constructions:
 
 - 医者として → 医者で (less precise but casual)
+
+<!-- grammar-card: {"rule":"として marks the role or capacity someone acts in","hint":"as, in the role of","example":"彼(かれ)は通訳(つうやく)___来日(らいにち)した。","answer":"として","explanation":"通訳として says he came to Japan in the capacity of an interpreter."} -->
 
 ## Comparison Table: Formal vs Casual
 

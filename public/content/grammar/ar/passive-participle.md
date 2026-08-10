@@ -21,7 +21,7 @@ The **اِسْمُ الْمَفْعُولِ** (ism al-mafʿūl) — passive part
 
 The passive participle often works like an adjective: **الْبَابُ مَفْتُوحٌ** (al-bābu maftūḥun) — the door is open. It can also be a noun: **مَفْهُومٌ جَدِيدٌ** (mafhūmun jadīdun) — a new concept / thing understood.
 
-<!-- grammar-card: {"rule":"The Form I passive participle often follows مَفْعُولٌ (mafʿūlun).","hint":"Look for مَـ (ma-) at the beginning and a long ū near the end.","example":"Complete “opened”: فَتَحَ (fataḥa) → ___ (maftūḥun).","answer":"مَفْتُوحٌ (maftūḥun) — opened / open","explanation":"مَفْتُوحٌ (maftūḥun) follows the مَفْعُولٌ (mafʿūlun) shape from فَتَحَ (fataḥa) — he opened."} -->
+<!-- grammar-card: {"rule":"The Form I passive participle often follows مَفْعُولٌ (mafʿūlun).","hint":"Look for مَـ (ma-) at the beginning and a long ū near the end.","example":"Complete “opened”: فَتَحَ (fataḥa) → ___ (maftūḥun).","answer":"مَفْتُوحٌ","explanation":"opened / open — مَفْتُوحٌ (maftūḥun) follows the مَفْعُولٌ (mafʿūlun) shape from فَتَحَ (fataḥa) — he opened."} -->
 
 ## Practice patterns
 
@@ -33,7 +33,7 @@ Pair active and passive participles to hear the contrast:
 
 <!-- quiz: {"type":"multiple-choice","question":"In الْبَابُ مَفْتُوحٌ (al-bābu maftūḥun), what does مَفْتُوحٌ mean?","options":["open / opened","opening person","key","door"],"answer":0} -->
 
-<!-- grammar-card: {"rule":"Passive participles can serve as predicates in nominal sentences.","hint":"Subject + passive participle can mean “is written/opened/heard.”","example":"Translate “the lesson is understood”: الدَّرْسُ ___ (ad-darsu ___).","answer":"مَفْهُومٌ (mafhūmun) — understood","explanation":"الدَّرْسُ مَفْهُومٌ (ad-darsu mafhūmun) means “the lesson is understood” without a present-tense verb “to be.”"} -->
+<!-- grammar-card: {"rule":"Passive participles can serve as predicates in nominal sentences.","hint":"Subject + passive participle can mean “is written/opened/heard.”","example":"Translate “the lesson is understood”: الدَّرْسُ ___ (ad-darsu ___).","answer":"مَفْهُومٌ (mafhūmun)","explanation":"الدَّرْسُ مَفْهُومٌ (ad-darsu mafhūmun) means “the lesson is understood” without a present-tense verb “to be.”"} -->
 
 ## Sources
 

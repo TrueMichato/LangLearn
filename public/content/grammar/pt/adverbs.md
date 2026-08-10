@@ -109,7 +109,7 @@ This is one of the most common errors for learners:
 - **Ele é um bom professor.** (eh-lee eh oon bong proh-feh-sohr) — He is a good teacher. (adjective)
 - **Ele ensina bem.** (eh-lee en-see-nah beng) — He teaches well. (adverb)
 
-<!-- grammar-card: {"rule":"Bom (adjective) vs Bem (adverb)","hint":"Bom describes nouns; Bem describes verbs","example":"Ela dança ___. (well)","answer":"Ela dança bem.","explanation":"Use 'bem' (adverb) to modify a verb. 'Bom' is the adjective form used to describe nouns: 'um bom livro' (a good book)."} -->
+<!-- grammar-card: {"rule":"Bom (adjective) vs Bem (adverb)","hint":"Bom describes nouns; Bem describes verbs","example":"Ela dança ___. (well)","answer":"bem","explanation":"Use 'bem' (adverb) to modify a verb. 'Bom' is the adjective form used to describe nouns: 'um bom livro' (a good book)."} -->
 
 <!-- quiz: {"type":"multiple-choice","question":"Which sentence correctly uses 'bem' (well)?","options":["Ele é bem professor.","Ele cozinha bem.","O café é bem.","Bem dia!"],"answer":1} -->
 
@@ -162,7 +162,7 @@ Adverbs are relatively flexible in Portuguese, but here are the main patterns:
 
 <!-- quiz: {"type":"multiple-choice","question":"Where does the adverb usually go when modifying an adjective?","options":["After the adjective","Before the adjective","At the end of the sentence","Before the subject"],"answer":1} -->
 
-<!-- grammar-card: {"rule":"Adverbs with -mente: use the feminine form of the adjective + mente","hint":"rápida→rapidamente, clara→claramente, fácil→facilmente","example":"Ela explicou ___. (clearly, from 'claro')","answer":"Ela explicou claramente.","explanation":"To form an adverb from an adjective, take the feminine form (clara) and add -mente: claramente. If the adjective has no distinct feminine form (like fácil), just add -mente directly."} -->
+<!-- grammar-card: {"rule":"Adverbs with -mente: use the feminine form of the adjective + mente","hint":"rápida→rapidamente, clara→claramente, fácil→facilmente","example":"Ela explicou ___. (clearly, from 'claro')","answer":"claramente","explanation":"To form an adverb from an adjective, take the feminine form (clara) and add -mente: claramente. If the adjective has no distinct feminine form (like fácil), just add -mente directly."} -->
 
 ## Sources
 

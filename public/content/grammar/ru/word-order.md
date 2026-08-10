@@ -157,6 +157,8 @@ This demonstrates how moving **не** changes the meaning significantly — it n
 
 <!-- quiz:{"type":"multiple-choice","question":"In 'Не я это сделал', what is being negated?","options":["The action (сделал)","The object (это)","The subject (я)","The whole sentence"],"answer":2} -->
 
+<!-- grammar-card: {"rule":"Не stands immediately before the word it denies","hint":"не","example":"Я ___ читал эту книгу.","answer":"не","explanation":"Placed before читал, не denies the action itself rather than the subject or the object."} -->
+
 ---
 
 ## 7. Это and Existential Sentences
@@ -180,6 +182,8 @@ In existential sentences, the thing that **exists** (new information) comes at t
 When the **existence** is not the focus (the item is already known), **есть** is dropped:
 
 **У меня красивая машина.** *(U menya krasivaya mashyna.)* — I have a beautiful car. (focus on "beautiful," not on having a car)
+
+<!-- grammar-card: {"rule":"Есть is kept when the existence of the thing is the new information","hint":"есть","example":"В городе ___ хороший музей.","answer":"есть","explanation":"The point of the sentence is that a museum exists at all, so есть cannot be dropped."} -->
 
 ---
 

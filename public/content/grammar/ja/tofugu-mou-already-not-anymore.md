@@ -172,6 +172,10 @@ Let's continue on with the same scenario. Say you tell your friend that you were
 
 Here, もう expresses that twenty should *already* be old enough (and passed the age) that you should have to adhere to a curfew.
 
+<!-- grammar-card: {"rule":"まだ with a negative means 'not yet'","hint":"もう / まだ","example":"___（食べてない）。","answer":"まだ","explanation":"まだ食べてない says the eating has not happened so far."} -->
+
+<!-- grammar-card: {"rule":"もう with a past verb asks whether something is done already","hint":"もう / まだ","example":"___宿題(しゅくだい)した？","answer":"もう","explanation":"もうした？ asks whether the homework has been finished yet."} -->
+
 ## Beyond the Basics
 
 ### もう For "Sufficiency"

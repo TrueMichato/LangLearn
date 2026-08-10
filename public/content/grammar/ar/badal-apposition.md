@@ -20,7 +20,7 @@ Arabic often places one noun after another to clarify, rename, or substitute for
 
 The simplest type is **بَدَلُ كُلٍّ مِنْ كُلٍّ** (badal kullin min kullin) — whole-for-whole substitution. The second noun identifies the first: **الْخَلِيفَةُ عُمَرُ** (al-khalīfatu ʿumaru) — the caliph ʿUmar. In a sentence, its ending follows the role of the first noun.
 
-<!-- grammar-card: {"rule":"الْبَدَلُ follows the case of الْمُبْدَلُ مِنْهُ, the noun it clarifies or replaces.","hint":"If the first noun is object, the badal is accusative too.","example":"Complete I saw your brother Zayd: رَأَيْتُ أَخَاكَ ___ (raʾaytu akhāka ___).","answer":"زَيْدًا (zaydan) — Zayd in the accusative","explanation":"أَخَاكَ is the direct object, so the badal زَيْدًا follows it in the accusative."} -->
+<!-- grammar-card: {"rule":"الْبَدَلُ follows the case of الْمُبْدَلُ مِنْهُ, the noun it clarifies or replaces.","hint":"If the first noun is object, the badal is accusative too.","example":"Complete I saw your brother Zayd: رَأَيْتُ أَخَاكَ ___ (raʾaytu akhāka ___).","answer":"زَيْدًا (zaydan)","explanation":"Zayd in the accusative — أَخَاكَ is the direct object, so the badal زَيْدًا follows it in the accusative."} -->
 
 ## Part and inclusion
 

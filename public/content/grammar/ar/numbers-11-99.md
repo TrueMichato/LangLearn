@@ -28,7 +28,7 @@ For **ثَلَاثَةَ عَشَرَ** (thalāthata ʿashara) — thirteen thro
 | **سَيَّارَةٌ** (sayyāratun) — car, feminine | **ثَلَاثَ عَشْرَةَ سَيَّارَةً** (thalātha ʿashrata sayyāratan) | unit opposite, ten feminine |
 | **طَالِبٌ** (ṭālibun) — student | **تِسْعَةَ عَشَرَ طَالِبًا** (tisʿata ʿashara ṭāliban) | singular accusative tamyīz |
 
-<!-- grammar-card: {"rule": "After 13–19, the counted noun is singular accusative, not plural genitive.", "hint": "Look for -an on the noun.", "example": "Complete “thirteen books”: ثَلَاثَةَ عَشَرَ ___ (thalāthata ʿashara ___).", "answer": "كِتَابًا (kitāban) — book, accusative singular", "explanation": "The number is compound, so the counted noun becomes a singular accusative tamyīz: كِتَابًا (kitāban)."} -->
+<!-- grammar-card: {"rule":"After 13–19, the counted noun is singular accusative, not plural genitive.","hint":"Look for -an on the noun.","example":"Complete “thirteen books”: ثَلَاثَةَ عَشَرَ ___ (thalāthata ʿashara ___).","answer":"كِتَابًا (kitāban)","explanation":"book, accusative singular — The number is compound, so the counted noun becomes a singular accusative tamyīz: كِتَابًا (kitāban)."} -->
 
 <!-- quiz: {"type": "multiple-choice", "question": "Which phrase correctly says “thirteen cars”?", "options": ["ثَلَاثَ عَشْرَةَ سَيَّارَةً (thalātha ʿashrata sayyāratan)", "ثَلَاثَةَ عَشَرَ سَيَّارَةً (thalāthata ʿashara sayyāratan)", "ثَلَاثُ عَشْرَةُ سَيَّارَاتٍ (thalāthu ʿashratu sayyārātin)", "ثَلَاثَ سَيَّارَاتٍ (thalātha sayyārātin)"], "answer": 0} -->
 
@@ -42,7 +42,7 @@ The tens behave like sound masculine plurals in case:
 | accusative/genitive | **عِشْرِينَ** (ʿishrīna) — twenty | **رَأَيْتُ عِشْرِينَ طَالِبًا** (raʾaytu ʿishrīna ṭāliban) — I saw twenty students |
 | with preposition | **عِشْرِينَ** (ʿishrīna) — twenty | **مَعَ عِشْرِينَ طَالِبًا** (maʿa ʿishrīna ṭāliban) — with twenty students |
 
-<!-- grammar-card: {"rule": "The tens 20–90 take -ūna in the nominative and -īna in the accusative or genitive.", "hint": "Treat the tens like sound masculine plurals.", "example": "Complete “I saw twenty students”: رَأَيْتُ عِشْر___ طَالِبًا (raʾaytu ʿishr___ ṭāliban).", "answer": "ـِينَ (-īna) — accusative/genitive ending", "explanation": "Because the number is the object of رَأَيْتُ (raʾaytu), use عِشْرِينَ (ʿishrīna)."} -->
+<!-- grammar-card: {"rule":"The tens 20–90 take -ūna in the nominative and -īna in the accusative or genitive.","hint":"Treat the tens like sound masculine plurals.","example":"Complete “I saw twenty students”: رَأَيْتُ عِشْر___ طَالِبًا (raʾaytu ʿishr___ ṭāliban).","answer":"ـِينَ (-īna)","explanation":"accusative/genitive ending — Because the number is the object of رَأَيْتُ (raʾaytu), use عِشْرِينَ (ʿishrīna)."} -->
 
 ## 21 through 99
 
@@ -55,7 +55,7 @@ Compound numbers use **وَ** (wa-) — and. The unit comes first, then the tens
 
 <!-- quiz: {"type": "multiple-choice", "question": "Which ending is correct for “with thirty students”?", "options": ["مَعَ ثَلَاثِينَ طَالِبًا (maʿa thalāthīna ṭāliban)", "مَعَ ثَلَاثُونَ طَالِبًا (maʿa thalāthūna ṭāliban)", "مَعَ ثَلَاثَةُ طُلَّابٍ (maʿa thalāthatu ṭullābin)", "مَعَ ثَلَاثَةً طَالِبًا (maʿa thalāthatan ṭāliban)"], "answer": 0} -->
 
-<!-- grammar-card: {"rule": "In 21–99, the counted noun stays singular accusative.", "hint": "Compound number plus one singular noun.", "example": "Complete “forty-five books”: خَمْسَةٌ وَأَرْبَعُونَ ___ (khamsatun wa-arbaʿūna ___).", "answer": "كِتَابًا (kitāban) — book, accusative singular", "explanation": "Even though the meaning is plural in English, Arabic uses singular accusative tamyīz after compound numbers."} -->
+<!-- grammar-card: {"rule":"In 21–99, the counted noun stays singular accusative.","hint":"Compound number plus one singular noun.","example":"Complete “forty-five books”: خَمْسَةٌ وَأَرْبَعُونَ ___ (khamsatun wa-arbaʿūna ___).","answer":"كِتَابًا (kitāban)","explanation":"book, accusative singular — Even though the meaning is plural in English, Arabic uses singular accusative tamyīz after compound numbers."} -->
 
 ## Sources
 

@@ -24,7 +24,7 @@ For the root **ك-ت-ب** (k-t-b) — writing, the present verb stem is built ar
 
 MSA present can mean simple present or present progressive depending on context: **أَدْرُسُ الْعَرَبِيَّةَ** (adrusu al-ʿarabiyyata) — I study Arabic / I am studying Arabic.
 
-<!-- grammar-card: {"rule": "The present tense uses prefixes: أَـ (a-) for I, نَـ (na-) for we, يَـ (ya-) for he/they, and تَـ (ta-) for you/she.", "hint": "Find the subject prefix.", "example": "Complete “we write”: ___ كْتُبُ (___ktubu).", "answer": "نَـ (na-) — we prefix", "explanation": "نَكْتُبُ (naktubu) — we write uses نَـ (na-) for “we.”"} -->
+<!-- grammar-card: {"rule":"The present tense uses prefixes: أَـ (a-) for I, نَـ (na-) for we, يَـ (ya-) for he/they, and تَـ (ta-) for you/she.","hint":"Find the subject prefix.","example":"Complete “we write”: ___ كْتُبُ (___ktubu).","answer":"نَـ (na-)","explanation":"we prefix — نَكْتُبُ (naktubu) — we write uses نَـ (na-) for “we.”"} -->
 
 ## Practice patterns
 
@@ -37,7 +37,7 @@ Common present verbs:
 
 <!-- quiz: {"type": "multiple-choice", "question": "What can أَدْرُسُ (adrusu) mean in context?", "options": ["I studied only", "I study / I am studying", "Study! command", "I will never study"], "answer": 1} -->
 
-<!-- grammar-card: {"rule": "The feminine singular “you” present often ends in ـِينَ (-īna).", "hint": "Addressing one female.", "example": "Complete “you write” to one female: تَكْتُب___ (taktub___).", "answer": "ـِينَ (-īna) — feminine singular you ending", "explanation": "تَكْتُبِينَ (taktubīna) — you write, feminine singular uses ـِينَ (-īna)."} -->
+<!-- grammar-card: {"rule":"The feminine singular “you” present often ends in ـِينَ (-īna).","hint":"Addressing one female.","example":"Complete “you write” to one female: تَكْتُب___ (taktub___).","answer":"ـِينَ (-īna)","explanation":"feminine singular you ending — تَكْتُبِينَ (taktubīna) — you write, feminine singular uses ـِينَ (-īna)."} -->
 
 ## Sources
 

@@ -81,7 +81,7 @@ Use the article when you add a description or make the noun more specific:
 
 <!-- quiz: {"type":"multiple-choice","question":"How do you say 'some chairs' in Romanian?","options":["un scaun","o scaune","niște scaune","scaunul"],"answer":2} -->
 
-<!-- grammar-card: {"rule":"Un is used for masculine and neuter singular nouns; o is used for feminine singular nouns","hint":"un băiat, o fată, un scaun","example":"Văd ___ fată și ___ băiat.","answer":"o fată și un băiat","explanation":"Fată is feminine, so it takes o. Băiat is masculine, so it takes un."} -->
+<!-- grammar-card: {"rule":"Un is used for masculine and neuter singular nouns; o is used for feminine singular nouns","hint":"un băiat, o fată, un scaun","example":"Văd ___ fată și ___ băiat.","answer":"o ... un","explanation":"Fată is feminine, so it takes o. Băiat is masculine, so it takes un."} -->
 
 ## Sources
 

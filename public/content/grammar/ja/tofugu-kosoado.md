@@ -37,6 +37,8 @@
 - **ああ**するのはどう？ — How about doing it **like that**?
 - **こう**書いてください。 — Please write it **this way**.
 
+<!-- grammar-card: {"rule":"The -の members of each set modify a noun","hint":"この / これ","example":"___本(ほん)は面白(おもしろ)いです。","answer":"この","explanation":"この attaches to 本; これ could not, because これ has to stand alone."} -->
+
 ## Key Sets Explained
 
 ### これ / それ / あれ / どれ
@@ -57,6 +59,8 @@ Polite direction/place/person reference. こっち/そっち/あっち/どっち
 ### こう / そう / ああ / どう
 "This way / That way / That way (over there) / How?" — adverbs before verbs/adjectives.
 
+<!-- grammar-card: {"rule":"ど- forms the question member of every set","hint":"where","example":"すみません、駅(えき)は___ですか。","answer":"どこ","explanation":"どこ asks for a location, completing the set with ここ, そこ and あそこ."} -->
+
 ## Distance Rules
 
 **When speaker and listener are side by side:**
@@ -74,6 +78,8 @@ Polite direction/place/person reference. こっち/そっち/あっち/どっち
 <!-- quiz: {"type":"multiple-choice","question":"Which こそあど word means 'which one?' (question)?","options":["あれ","これ","それ","どれ"],"answer":3} -->
 
 <!-- quiz: {"type":"multiple-choice","question":"Which set is used as a noun modifier before another noun?","options":["これ/それ/あれ","この/その/あの","ここ/そこ/あそこ","こう/そう/ああ"],"answer":1} -->
+
+<!-- grammar-card: {"rule":"こ- refers to what is near the speaker","hint":"こ / そ / あ","example":"(手(て)に持(も)ちながら) ___は私の鍵(かぎ)です。","answer":"これ","explanation":"The key is in the speaker's own hand, so これ is the right choice."} -->
 
 ## Sources
 

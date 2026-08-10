@@ -23,7 +23,7 @@ Arabizi is not one official system. It is a practical chat habit. Numbers usuall
 
 First replace numbers with likely Arabic sounds, then guess the dialect or MSA word. **salaam 3alaykum** maps to **سَلَامٌ عَلَيْكُمْ** (salāmun ʿalaykum) — peace be upon you. **2ana mish 3ārif** maps to **أَنَا مِشْ عَارِفٌ** (ʾanā mish ʿārifun) — I do not know, masculine in Egyptian-style speech.
 
-<!-- grammar-card: {"rule":"Arabizi numbers represent Arabic consonants that Latin letters handle poorly.","hint":"Replace 3 with ʿayn and 7 with ḥāʾ first.","example":"Decode 7abībī into Arabic: ___ .","answer":"حَبِيبِي (ḥabībī) — my dear, masculine","explanation":"The 7 represents ح, so 7abībī corresponds to حَبِيبِي."} -->
+<!-- grammar-card: {"rule":"Arabizi numbers represent Arabic consonants that Latin letters handle poorly.","hint":"Replace 3 with ʿayn and 7 with ḥāʾ first.","example":"Decode 7abībī into Arabic: ___ .","answer":"حَبِيبِي (ḥabībī)","explanation":"my dear, masculine — The 7 represents ح, so 7abībī corresponds to حَبِيبِي."} -->
 
 ## Cautions
 
@@ -33,7 +33,7 @@ Arabizi spelling depends on the writer. The same word may appear as **khalaas**,
 
 <!-- quiz: {"type":"multiple-choice","question":"Which Arabizi form best matches أَنَا (ʾanā) — I?","options":["2ana","7ana","3ana","9ana"],"answer":0} -->
 
-<!-- grammar-card: {"rule":"Arabizi is informal and variable; formal MSA should use Arabic script.","hint":"Use it for chat comprehension, not essays.","example":"For a formal text, write 3arabī as ___ .","answer":"عَرَبِيٌّ (ʿarabiyyun) — Arabic","explanation":"The chat number 3 should be replaced by the Arabic letter ع in formal script."} -->
+<!-- grammar-card: {"rule":"Arabizi is informal and variable; formal MSA should use Arabic script.","hint":"Use it for chat comprehension, not essays.","example":"For a formal text, write 3arabī as ___ .","answer":"عَرَبِيٌّ (ʿarabiyyun)","explanation":"The chat number 3 should be replaced by the Arabic letter ع in formal script."} -->
 
 ## Sources
 

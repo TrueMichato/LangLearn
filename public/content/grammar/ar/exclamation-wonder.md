@@ -19,7 +19,7 @@ Two famous patterns are مَا أَفْعَلَهُ (mā afʿalahu) — how ... 
 
 In مَا أَجْمَلَ اللُّغَةَ (mā ajmala al-lughata) — how beautiful the language is, the thing admired is accusative: اللُّغَةَ (al-lughata) — the language. The ending matters in fully vocalized formal Arabic.
 
-<!-- grammar-card: {"rule":"The exclamation pattern مَا أَفْعَلَهُ (mā afʿalahu) often takes the admired thing in the accusative.","hint":"After مَا أَجْمَلَ, expect the noun to end like اللُّغَةَ.","example":"Complete “how beautiful the language is”: مَا أَجْمَلَ ___ (al-lughata).","answer":"اللُّغَةَ (al-lughata) — the language in accusative","explanation":"مَا أَجْمَلَ اللُّغَةَ uses the classical wonder pattern, with اللُّغَةَ as the thing admired."} -->
+<!-- grammar-card: {"rule":"The exclamation pattern مَا أَفْعَلَهُ (mā afʿalahu) often takes the admired thing in the accusative.","hint":"After مَا أَجْمَلَ, expect the noun to end like اللُّغَةَ.","example":"Complete “how beautiful the language is”: مَا أَجْمَلَ ___ (al-lughata).","answer":"اللُّغَةَ","explanation":"the language in accusative — مَا أَجْمَلَ اللُّغَةَ uses the classical wonder pattern, with اللُّغَةَ as the thing admired."} -->
 
 ## When the adjective is not simple
 
@@ -33,7 +33,7 @@ Some qualities do not form the direct pattern easily, especially colors and defe
 
 <!-- quiz: {"type":"multiple-choice","question":"Which alternate pattern also expresses wonder?","options":["أَجْمِلْ بِالْبَيْتِ (ajmil bil-bayti) — how beautiful the house is","لَا جَمِيلَ بَيْتٌ (lā jamīla baytun) — no beautiful house","جَمِيلٌ مِنْ بَيْتٍ (jamīlun min baytin) — beautiful from a house","اِسْتَجْمَلَ الْبَيْتَ (istajmala al-bayta) — he sought beauty in the house"],"answer":0} -->
 
-<!-- grammar-card: {"rule":"أَفْعِلْ بِهِ (afʿil bihi) is another classical exclamation pattern.","hint":"It looks like an imperative plus بِـ, but it means how ... it is.","example":"Complete “how generous the teacher is”: أَكْرِمْ ___ (bil-muʿallimi).","answer":"بِالْمُعَلِّمِ (bil-muʿallimi) — with the teacher","explanation":"أَكْرِمْ بِالْمُعَلِّمِ uses the أَفْعِلْ بِهِ pattern to express wonder at the teacher’s generosity."} -->
+<!-- grammar-card: {"rule":"أَفْعِلْ بِهِ (afʿil bihi) is another classical exclamation pattern.","hint":"It looks like an imperative plus بِـ, but it means how ... it is.","example":"Complete “how generous the teacher is”: أَكْرِمْ ___ (bil-muʿallimi).","answer":"بِالْمُعَلِّمِ","explanation":"with the teacher — أَكْرِمْ بِالْمُعَلِّمِ uses the أَفْعِلْ بِهِ pattern to express wonder at the teacher’s generosity."} -->
 
 ## Sources
 

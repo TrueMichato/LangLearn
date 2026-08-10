@@ -80,6 +80,12 @@ The amount or level of sweetness you want in your bubble tea is different than t
 
 These ideas of "weight" and "warmth" are not literal, and they depend on personal perspective. Maybe others would think that the movie’s story is light and breezy. Perhaps some people find Maeda to be absolutely unbearable.
 
+<!-- grammar-card: {"rule":"み names an intangible quality something possesses","hint":"重い → ?","example":"あの映画には___がある。","answer":"重み","explanation":"重み here is gravitas rather than weight in kilograms, which would be 重さ."} -->
+
+<!-- grammar-card: {"rule":"み turns an adjective into a quality you sense","hint":"甘い → ?","example":"このトマトには特別な___が出てくる。","answer":"甘み","explanation":"甘み is a perceived sweetness with character, not a number on a scale."} -->
+
+<!-- grammar-card: {"rule":"さ turns an adjective into a measurable degree","hint":"甘い → ?","example":"バブルティーの___はどうしますか？","answer":"甘さ","explanation":"甘さ is sweetness as a level you can dial up or down, which is what the question asks about."} -->
+
 ## Beyond the Basics
 
 The most challenging part of み nouns is knowing which adjectives you can create from them. Let’s examine a few strategies for how to recognize which adjectives can become み nouns.

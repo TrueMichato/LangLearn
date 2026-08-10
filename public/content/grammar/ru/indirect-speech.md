@@ -41,6 +41,8 @@ To report what someone said, use a reporting verb + **что** + the original st
 
 <!-- quiz:{"type":"multiple-choice","question":"In Russian indirect speech, does the tense change from the original statement?","options":["Yes, it shifts back one tense.","Yes, it always becomes past tense.","No, the original tense is preserved.","It depends on the reporting verb."],"answer":2} -->
 
+<!-- grammar-card: {"rule":"A reported statement is introduced by что","hint":"что / чтобы / ли","example":"Он сказал, ___ он живёт в Москве.","answer":"что","explanation":"Plain statements are reported with что, and unlike English the comma before it is obligatory."} -->
+
 ---
 
 ## 2. Changes in Pronouns and Possessives
@@ -106,6 +108,8 @@ To report commands, requests, or demands, use **чтобы** + **past tense**:
 
 <!-- quiz:{"type":"multiple-choice","question":"To report a command in Russian, you use:","options":["что + present tense","что + future tense","чтобы + past tense","чтобы + infinitive"],"answer":2} -->
 
+<!-- grammar-card: {"rule":"A reported command uses чтобы with a past-tense verb","hint":"что / чтобы / ли","example":"Мама сказала, ___ я убрал комнату.","answer":"чтобы","explanation":"An order becomes чтобы plus the past form убрал — Russian does not use an infinitive here."} -->
+
 ---
 
 ## 4. Reported Questions
@@ -164,6 +168,8 @@ To report a question that starts with a question word (кто, что, где, �
 **Direct:** Они спросили: "Как добраться до вокзала?"
 **Indirect:** Они спросили, как добраться до вокзала.
 *(Oni sprosili, kak dobratsya do vokzala.)* — They asked how to get to the station.
+
+<!-- grammar-card: {"rule":"A reported yes-no question uses the particle ли","hint":"ли follows the word in question","example":"Он спросил, говорю ___ я по-русски.","answer":"ли","explanation":"Ли takes the place of the question mark and follows the verb it questions, говорю."} -->
 
 ---
 

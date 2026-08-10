@@ -24,7 +24,7 @@ The elative may be definite: الْأَكْبَرُ (al-akbaru) — the greater 
 - هُوَ أَسْرَعُ عَدَّاءٍ فِي الْفَرِيقِ (huwa asraʿu ʿaddāʾin fī al-farīqi) — He is the fastest runner on the team.
 - هِيَ أَصْغَرُ أُخْتٍ فِي الْأُسْرَةِ (hiya aṣgharu ukhtin fī al-usrati) — She is the youngest sister in the family.
 
-<!-- grammar-card: {"rule":"أَفْعَلُ مِنْ (afʿalu min) is the regular comparative pattern for more X than.","hint":"The item compared against follows مِنْ.","example":"Complete: The house is bigger than the room: الْبَيْتُ ___ مِنَ الْغُرْفَةِ (al-baytu ___ mina al-ghurfati).","answer":"أَكْبَرُ (akbaru) — bigger","explanation":"الْبَيْتُ أَكْبَرُ مِنَ الْغُرْفَةِ uses أَكْبَرُ مِنْ for bigger than."} -->
+<!-- grammar-card: {"rule":"أَفْعَلُ مِنْ (afʿalu min) is the regular comparative pattern for more X than.","hint":"The item compared against follows مِنْ.","example":"Complete: The house is bigger than the room: الْبَيْتُ ___ مِنَ الْغُرْفَةِ (al-baytu ___ mina al-ghurfati).","answer":"أَكْبَرُ (akbaru)","explanation":"الْبَيْتُ أَكْبَرُ مِنَ الْغُرْفَةِ uses أَكْبَرُ مِنْ for bigger than."} -->
 
 ## Colours and defects
 
@@ -35,7 +35,7 @@ Basic colour adjectives already use the أَفْعَلُ pattern: أَحْمَر
 
 <!-- quiz: {"type":"multiple-choice","question":"How does formal Arabic commonly say redder than?","options":["أَشَدُّ حُمْرَةً مِنْ (ashaddu ḥumratan min)","أَحْمَرُ مِنْ (aḥmaru min) as the safest formal pattern","حُمْرَى مِنْ (ḥumrā min)","مِنْ أَحْمَرَ (min aḥmara)"],"answer":0} -->
 
-<!-- grammar-card: {"rule":"For colour comparisons, use أَشَدُّ or أَكْثَرُ plus a colour noun such as حُمْرَةً.","hint":"Colour adjectives already look like elatives.","example":"Complete: This rose is redder: هٰذِهِ الْوَرْدَةُ ___ حُمْرَةً (hādhihi al-wardatu ___ ḥumratan).","answer":"أَشَدُّ (ashaddu) — more intense","explanation":"أَشَدُّ حُمْرَةً is a formal way to express redder without treating أَحْمَرُ as a regular comparative."} -->
+<!-- grammar-card: {"rule":"For colour comparisons, use أَشَدُّ or أَكْثَرُ plus a colour noun such as حُمْرَةً.","hint":"Colour adjectives already look like elatives.","example":"Complete: This rose is redder: هٰذِهِ الْوَرْدَةُ ___ حُمْرَةً (hādhihi al-wardatu ___ ḥumratan).","answer":"أَشَدُّ (ashaddu)","explanation":"more intense — أَشَدُّ حُمْرَةً is a formal way to express redder without treating أَحْمَرُ as a regular comparative."} -->
 
 ## Reading tips
 
@@ -43,7 +43,7 @@ Elatives do not normally take tanwīn in simple indefinite use because many are 
 
 <!-- quiz: {"type":"multiple-choice","question":"Which phrase is an iḍāfa superlative?","options":["أَكْبَرُ مَدِينَةٍ (akbaru madīnatin) — the largest city","أَكْبَرُ مِنْ مَدِينَةٍ (akbaru min madīnatin) — bigger than a city","الْمَدِينَةُ كَبِيرَةٌ (al-madīnatu kabīratun) — the city is big","كَبِيرَةٌ جِدًّا (kabīratun jiddan) — very big"],"answer":0} -->
 
-<!-- grammar-card: {"rule":"A superlative often appears as الْأَفْعَلُ or as an iḍāfa such as أَكْبَرُ مَدِينَةٍ.","hint":"Definiteness or iḍāfa changes more X into the most X.","example":"Complete: the shortest road: الطَّرِيقُ ___ (aṭ-ṭarīqu ___).","answer":"الْأَقْصَرُ (al-aqṣaru) — the shortest","explanation":"The definite elative الْأَقْصَرُ works as a superlative: the shortest."} -->
+<!-- grammar-card: {"rule":"A superlative often appears as الْأَفْعَلُ or as an iḍāfa such as أَكْبَرُ مَدِينَةٍ.","hint":"Definiteness or iḍāfa changes more X into the most X.","example":"Complete: the shortest road: الطَّرِيقُ ___ (aṭ-ṭarīqu ___).","answer":"الْأَقْصَرُ (al-aqṣaru)","explanation":"The definite elative الْأَقْصَرُ works as a superlative: the shortest."} -->
 
 ## Sources
 

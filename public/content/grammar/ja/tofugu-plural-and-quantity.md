@@ -12,6 +12,8 @@ Unlike English, Japanese nouns don't have distinct plural forms:
 - リンゴが好きです。 — I like apples.
 - 日本人はよく風呂に入る。 — Japanese people take baths often.
 
+<!-- grammar-card: {"rule":"Japanese nouns have no plural form, so a counter carries the number","hint":"3 books","example":"机(つくえ)の上(うえ)に本(ほん)が___あります。","answer":"三冊(さんさつ)","explanation":"本 never takes a plural ending — 三冊 supplies the count instead."} -->
+
 ## Quantifiers
 
 Quantifiers express quantity. They can modify nouns with の or appear before the verb like adverbs:
@@ -39,6 +41,8 @@ Common words:
 - 一部 (いちぶ) — partially
 - 全部 (ぜんぶ) — all
 - いくつか — a few
+
+<!-- grammar-card: {"rule":"Quantifiers take の when they modify a noun directly","hint":"many","example":"___の人(ひと)が集(あつ)まった。","answer":"たくさん","explanation":"たくさんの人 means a lot of people, with の linking quantifier to noun."} -->
 
 ## Plural Suffixes
 
@@ -85,6 +89,8 @@ Key rules:
 <!-- quiz: {"type":"multiple-choice","question":"What are 畳語 (repetition words)?","options":["Verb conjugations","Plural nouns formed by repeating a word","Counter words","Honorific suffixes"],"answer":1} -->
 
 <!-- quiz: {"type":"multiple-choice","question":"Which is correct for 'many people'?","options":["三人の人々","たくさんの人々","人の人々","多人々"],"answer":1} -->
+
+<!-- grammar-card: {"rule":"Repeating a noun can make it plural","hint":"people","example":"___が公園(こうえん)で遊(あそ)んでいる。","answer":"人々(ひとびと)","explanation":"人々 is 人 doubled, and the second reading voices from ひと to びと."} -->
 
 ## Sources
 

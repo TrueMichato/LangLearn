@@ -50,6 +50,10 @@ This makes it much easier to describe how things are done in Japanese than in En
 
 In general, all い-adjectives can function as adverbs when they are in the く form.
 
+<!-- grammar-card: {"rule":"The く-form can express duration as well as manner","hint":"長い → ?","example":"私は京都に___住んでいました。","answer":"長く","explanation":"長く住む means to live somewhere for a long time, with 長い modifying the verb."} -->
+
+<!-- grammar-card: {"rule":"An い-adjective becomes an adverb by replacing い with く","hint":"楽しい → ?","example":"彼らは___暮らしていました。","answer":"楽しく","explanation":"楽しく describes how they lived, modifying the verb 暮らす rather than a noun."} -->
+
 ## Beyond the Basics
 
 Now that you know the basics, read on to learn about how く adverbs interact with the verbs する and なる.
@@ -124,6 +128,8 @@ p. 87
 <!-- quiz: {"type":"multiple-choice","question":"What does \"私は京都に**長く**住んでいました。\" mean?","options":["I lived in Kyoto **for a long time**.","They lived **happily**.","I ate that ramen **with gusto**.","I made **another** blog."],"answer":0} -->
 
 <!-- quiz: {"type":"multiple-choice","question":"What does \"そのラーメンを**美味しく**食べました。\" mean?","options":["I ate that ramen **with gusto**.","They lived **happily**.","I lived in Kyoto **for a long time**.","I made **another** blog."],"answer":0} -->
+
+<!-- grammar-card: {"rule":"The く-form plus する means to make something that way","hint":"明るい → ?","example":"ペイントを使って、友子は部屋を___しました。","answer":"明るく","explanation":"明るくする means to make the room bright, with く linking the adjective to する."} -->
 
 ## Sources
 

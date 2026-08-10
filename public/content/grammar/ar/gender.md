@@ -21,7 +21,7 @@ Many feminine nouns end in **ـةٌ** (-atun) — feminine ending, as in **مَ�
 
 Some feminine words do not end in **ـةٌ** (-atun) — feminine ending, such as **أُمٌّ** (ummun) — mother and **شَمْسٌ** (shamsun) — sun. Learn gender with the word, then let agreement reinforce it kindly over time.
 
-<!-- grammar-card: {"rule": "Most adjectives add ـةٌ (-atun) — feminine ending to agree with a singular feminine noun.", "hint": "Match the adjective to the noun gender.", "example": "سَيَّارَةٌ (sayyāratun) — car is ___ (kabīratun) — big.", "answer": "كَبِيرَةٌ (kabīratun) — big, feminine", "explanation": "سَيَّارَةٌ (sayyāratun) — car is grammatically feminine, so the adjective is كَبِيرَةٌ (kabīratun) — big, feminine."} -->
+<!-- grammar-card: {"rule":"Most adjectives add ـةٌ (-atun) — feminine ending to agree with a singular feminine noun.","hint":"Match the adjective to the noun gender.","example":"سَيَّارَةٌ (sayyāratun) — car is ___ (kabīratun) — big.","answer":"كَبِيرَةٌ","explanation":"سَيَّارَةٌ (sayyāratun) — car is grammatically feminine, so the adjective is كَبِيرَةٌ (kabīratun) — big, feminine."} -->
 
 ## Practice patterns
 
@@ -33,7 +33,7 @@ Agreement examples:
 
 <!-- quiz: {"type": "multiple-choice", "question": "Which adjective agrees with طَالِبَةٌ (ṭālibatun) — female student?", "options": ["جَدِيدٌ (jadīdun) — new, masculine", "جَدِيدَةٌ (jadīdatun) — new, feminine", "جَدِيدُونَ (jadīdūna) — new, masculine plural", "جَدِيدَيْنِ (jadīdayni) — new, dual accusative/genitive"], "answer": 1} -->
 
-<!-- grammar-card: {"rule": "Tāʾ marbūṭa ـةٌ (-atun) commonly marks feminine nouns and adjectives.", "hint": "It often sounds like -a in pause and -t when endings are pronounced.", "example": "The feminine form of مُدَرِّسٌ (mudarrisun) — male teacher is ___ .", "answer": "مُدَرِّسَةٌ (mudarrisatun) — female teacher", "explanation": "Adding ـةٌ (-atun) gives مُدَرِّسَةٌ (mudarrisatun) — female teacher."} -->
+<!-- grammar-card: {"rule":"Tāʾ marbūṭa ـةٌ (-atun) commonly marks feminine nouns and adjectives.","hint":"It often sounds like -a in pause and -t when endings are pronounced.","example":"The feminine form of مُدَرِّسٌ (mudarrisun) — male teacher is ___ .","answer":"مُدَرِّسَةٌ (mudarrisatun)","explanation":"Adding ـةٌ (-atun) gives مُدَرِّسَةٌ (mudarrisatun) — female teacher."} -->
 
 ## Sources
 

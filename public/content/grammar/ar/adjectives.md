@@ -21,7 +21,7 @@ An indefinite noun takes an indefinite adjective: **بَيْتٌ كَبِيرٌ*
 
 A helpful contrast: **الْبَيْتُ الْكَبِيرُ** (al-baytu al-kabīru) — the big house is a phrase, while **الْبَيْتُ كَبِيرٌ** (al-baytu kabīrun) — the house is big is a sentence. The adjective’s definiteness makes the difference.
 
-<!-- grammar-card: {"rule": "Arabic adjectives usually follow nouns and agree in definiteness.", "hint": "Definite noun, definite adjective.", "example": "Complete “the new book”: الْكِتَابُ ___ (al-kitābu ___).", "answer": "الْجَدِيدُ (al-jadīdu) — the new", "explanation": "الْكِتَابُ الْجَدِيدُ (al-kitābu al-jadīdu) — the new book uses a definite adjective."} -->
+<!-- grammar-card: {"rule":"Arabic adjectives usually follow nouns and agree in definiteness.","hint":"Definite noun, definite adjective.","example":"Complete “the new book”: الْكِتَابُ ___ (al-kitābu ___).","answer":"الْجَدِيدُ (al-jadīdu)","explanation":"الْكِتَابُ الْجَدِيدُ (al-kitābu al-jadīdu) — the new book uses a definite adjective."} -->
 
 ## Practice patterns
 
@@ -34,7 +34,7 @@ This is normal and very common.
 
 <!-- quiz: {"type": "multiple-choice", "question": "Which means “the big house” as a noun phrase?", "options": ["الْبَيْتُ كَبِيرٌ (al-baytu kabīrun) — the house is big", "الْبَيْتُ الْكَبِيرُ (al-baytu al-kabīru) — the big house", "بَيْتٌ كَبِيرٌ (baytun kabīrun) — a big house", "كَبِيرٌ بَيْتٌ (kabīrun baytun) — big house"], "answer": 1} -->
 
-<!-- grammar-card: {"rule": "Singular feminine nouns take singular feminine adjectives.", "hint": "Look for ـةٌ (-atun) on the adjective.", "example": "Complete “a beautiful city”: مَدِينَةٌ ___ (madīnatun ___).", "answer": "جَمِيلَةٌ (jamīlatun) — beautiful, feminine", "explanation": "مَدِينَةٌ جَمِيلَةٌ (madīnatun jamīlatun) — a beautiful city has feminine agreement."} -->
+<!-- grammar-card: {"rule":"Singular feminine nouns take singular feminine adjectives.","hint":"Look for ـةٌ (-atun) on the adjective.","example":"Complete “a beautiful city”: مَدِينَةٌ ___ (madīnatun ___).","answer":"جَمِيلَةٌ (jamīlatun)","explanation":"beautiful, feminine — مَدِينَةٌ جَمِيلَةٌ (madīnatun jamīlatun) — a beautiful city has feminine agreement."} -->
 
 ## Sources
 

@@ -249,6 +249,12 @@ This is extremely common — it expresses doing something **before an undesirabl
 ✅ コンビニに行(い)った**ついでに**、切手を買った。
 → Buying stamps at the convenience store is opportunistic, not simultaneous.
 
+<!-- grammar-card: {"rule":"ついでに means doing something while already out","hint":"ついで + に","example":"コンビニに行(い)った___、切手を買った。","answer":"ついでに","explanation":"行ったついでに makes buying stamps incidental to a trip made for another reason."} -->
+
+<!-- grammar-card: {"rule":"うちに means 'while the chance still lasts'","hint":"うち + に","example":"若い___、色々な経験をした方がいい。","answer":"うちに","explanation":"若いうちに urges acting before youth runs out."} -->
+
+<!-- grammar-card: {"rule":"間 marks the whole span two actions overlap for","hint":"間","example":"母が料理している___、私は宿題をした。","answer":"間","explanation":"している間 means throughout the entire time the mother was cooking."} -->
+
 ## Summary
 
 Each "while/during" expression has its own personality:

@@ -50,6 +50,12 @@ Keep in mind that they're *very* casual words, with a similar vibe to "this guy"
 
 Since they could come off as rude, using words for directions, such as こちら (here), そちら (there) and あちら (over there) is more appropriate in polite Japanese, because of the indirectness of these words.
 
+<!-- grammar-card: {"rule":"そいつ is a rough third-person reference","hint":"that guy, rude","example":"___が来なければ、面接うまく行ったのに！","answer":"そいつ","explanation":"そいつ conveys the speaker's irritation in a way that 彼 would not."} -->
+
+<!-- grammar-card: {"rule":"彼 is the third-person pronoun for a man","hint":"he","example":"___はベーコンが好き。","answer":"彼","explanation":"彼 refers back to a male person both speakers already know about."} -->
+
+<!-- grammar-card: {"rule":"彼女 refers to a woman already mentioned","hint":"she","example":"あっちにいるのが、マミさん。___はベーコン売り場の担当ね。","answer":"彼女","explanation":"彼女 picks Mami up from the sentence before."} -->
+
 ## Beyond The Basics
 
 ### Plural Forms of Third-Person Pronouns

@@ -43,6 +43,8 @@ In the top image, the action of watching a movie is contained within a certain t
 
 In the bottom image, the use of 〜ていた makes it so that we don't know if the person finished watching the film or not. What is important is the duration of the action, rather than the result.
 
+<!-- grammar-card: {"rule":"ていた describes an action that went on for a stretch of past time","hint":"する + いる, plain past","example":"昨日(きのう)の夜(よる)、ずっと勉強(べんきょう)し___。","answer":"ていた","explanation":"していた says the studying continued right through the evening."} -->
+
 ## ていた for the Results of Actions
 
 When we are talking about an action that was completed in the past but continues to be relevant afterward, we use forms like "had done" in English, as in "I **had finished** the essay before I realized it was on the wrong topic." Japanese doesn't have a structure like this, and instead 〜ていた can be used to express a similar meaning. Let's look at an example to get a better idea of what we mean here:
@@ -90,6 +92,8 @@ p. 131
 <!-- quiz: {"type":"multiple-choice","question":"What does \"映画を見ていた。\" mean?","options":["I was watching a movie.","I watched a movie.","When I woke up in the morning, my mom **had left** already.","This describes a past action"],"answer":0} -->
 
 <!-- quiz: {"type":"multiple-choice","question":"What does \"朝起きたら、お母さんがもう出ていた。\" mean?","options":["When I woke up in the morning, my mom **had left** already.","I watched a movie.","I was watching a movie.","This describes a past action"],"answer":0} -->
+
+<!-- grammar-card: {"rule":"ていた contracts to てた in speech","hint":"ていた → ?","example":"さっきまで寝(ね)___。","answer":"てた","explanation":"寝てた is the everyday spoken form of 寝ていた."} -->
 
 ## Sources
 

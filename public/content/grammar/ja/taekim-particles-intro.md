@@ -18,6 +18,8 @@ Here, the movie is the topic, but "I" am the one who watched it.
 
 <!-- quiz:{"type":"multiple-choice","question":"What does the particle は indicate?","options":["The direct object","The location","The topic of the sentence","The subject performing an action"],"answer":2} -->
 
+<!-- grammar-card: {"rule":"は sets the topic the sentence is about","hint":"は / が / も","example":"田中さん___学生だ。","answer":"は","explanation":"は presents Tanaka as the topic: as for Tanaka, he is a student."} -->
+
 ## も (mo) — "Also" / "Too"
 
 The particle **も** replaces は (or が/を) to express that something **also** applies. It works like "too" or "also" in English.
@@ -36,6 +38,8 @@ You can chain も to list multiple items that share a property:
 
 <!-- quiz:{"type":"multiple-choice","question":"'田中さんは日本人だ。山田さん___日本人だ。' — Fill in the blank to mean 'Yamada is also Japanese.'","options":["は","が","を","も"],"answer":3} -->
 
+<!-- grammar-card: {"rule":"も replaces は or が to mean 'also'","hint":"は / が / も","example":"山田さん___学生だ。","answer":"も","explanation":"も adds Yamada to what was already said, and the は it replaces is dropped."} -->
+
 ## が (ga) — The Subject Identifier
 
 The particle **が** identifies the **subject** — specifically who or what does the action or has the attribute. It often answers a "who?" or "what?" question and introduces new or emphasized information.
@@ -50,6 +54,8 @@ The particle **が** identifies the **subject** — specifically who or what doe
 - **日本語がわかる。** (Nihongo ga wakaru.) — (I) understand Japanese.
 
 <!-- quiz:{"type":"multiple-choice","question":"Which particle would you use to answer 'Who ate the cake?' — '太郎___食べた。'","options":["は","も","が","を"],"answer":2} -->
+
+<!-- grammar-card: {"rule":"が identifies which person performed the action","hint":"は / が / も","example":"田中さん___来た。","answer":"が","explanation":"が singles Tanaka out as the one who came, answering the question 'who?'"} -->
 
 ## The Crucial は vs が Distinction
 

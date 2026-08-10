@@ -105,7 +105,7 @@ However, since **você/ele/ela/a gente** all share the same form, you usually ke
 
 - **Ela fala português** (not just "fala português," which could mean you/he/she/we)
 
-<!-- grammar-card: {"rule":"Pronouns can be dropped when the verb form is unambiguous","hint":"Drop eu, nós (unique forms). Keep você/ele/ela (shared forms)","example":"_____ falamos português. (We speak Portuguese)","answer":"(Nós) — pronoun can be dropped","explanation":"Since 'falamos' can only be 'nós', the pronoun is optional. But 'fala' could be você/ele/ela/a gente, so you should keep the pronoun for clarity."} -->
+<!-- grammar-card: {"rule":"Pronouns can be dropped when the verb form is unambiguous","hint":"Drop eu, nós (unique forms). Keep você/ele/ela (shared forms)","example":"_____ falamos português. (We speak Portuguese)","answer":"(Nós)","explanation":"pronoun can be dropped — Since 'falamos' can only be 'nós', the pronoun is optional. But 'fala' could be você/ele/ela/a gente, so you should keep the pronoun for clarity."} -->
 
 ## Formal Address
 

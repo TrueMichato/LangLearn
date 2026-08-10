@@ -249,6 +249,10 @@ In the same way, to add 〜ません to the verb 食べる, you need to conjugat
 
 If you're not sure how to conjugate verbs into the ます form, or if you could use a refresher, check out its dedicated page!
 
+<!-- grammar-card: {"rule":"あんまり is the casual spoken form of あまり","hint":"あまりない → ?","example":"えっ、___の？","answer":"あんまりない","explanation":"あんまりない is simply how あまりない is pronounced in relaxed conversation."} -->
+
+<!-- grammar-card: {"rule":"あまり must be completed by a negative","hint":"行く → ?","example":"買い物に行か___。全部オンラインで買うから。","answer":"ない","explanation":"あまり sets up 'not much', so the verb it modifies has to end in ない."} -->
+
 ## Beyond The Basics
 
 ### あまり〜ない with Other Verb Forms
@@ -313,7 +317,7 @@ by Group Jammassy
 (2015)
 pp. 10-12
 
-<!-- quiz: {"type":"multiple-choice","question":"What does \"コンビニが**ない**。\" mean?","options":["There **is no** convenience store.","There **aren't many** convenience stores.","There **aren't many** convenience stores.","Wow, **not many** convenience stores? So what do you do for your shopping?"],"answer":0} -->
+<!-- quiz: {"type":"multiple-choice","question":"What does \"コンビニが**ない**。\" mean?","options":["There **is no** convenience store.","There **aren't many** convenience stores.","There **are** convenience stores.","Wow, **not many** convenience stores? So what do you do for your shopping?"],"answer":0} -->
 
 <!-- quiz: {"type":"multiple-choice","question":"What does \"**あまり**コンビニが**ない**。\" mean?","options":["There **aren't many** convenience stores.","There **is no** convenience store.","Wow, **not many** convenience stores? So what do you do for your shopping?","I **don't** go shopping. Cuz I buy everything online."],"answer":0} -->
 

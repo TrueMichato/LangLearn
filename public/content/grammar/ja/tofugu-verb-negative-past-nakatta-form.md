@@ -145,6 +145,8 @@ In English, we need to put the additional information afterwards, and often a wo
 
 <!-- quiz: {"type":"multiple-choice","question":"What does \"全く意味がなかったよね。\" mean?","options":["It made no sense, huh?","I didn't understand anything.","Watching it was pointless!","Have you had lunch yet?"],"answer":0} -->
 
+<!-- grammar-card: {"rule":"The plain past negative appears before かもしれません","hint":"行く, plain past negative","example":"かなえはパーティーに___かもしれません。","answer":"行かなかった","explanation":"行かなかった stays plain; the politeness sits in かもしれません at the end."} -->
+
 ## Sources
 
 - [Tofugu](https://www.tofugu.com/japanese-grammar/verb-negative-past-nakatta-form/)

@@ -62,6 +62,10 @@ From the 11th onward, most use kango + にち.
 
 Each day uses a natural element from Chinese philosophy (Sun, Moon, Fire, Water, Wood, Gold, Earth).
 
+<!-- grammar-card: {"rule":"The first of the month is read ついたち","hint":"the 1st","example":"明日(あした)は四月(しがつ)___です。","answer":"一日(ついたち)","explanation":"一日 as a date is ついたち, while いちにち means 'one day' as a duration."} -->
+
+<!-- grammar-card: {"rule":"Days of the month up to the tenth use special readings","hint":"the 10th","example":"今日(きょう)は五月(ごがつ)___です。","answer":"十日(とおか)","explanation":"十日 as a date is read とおか, not じゅうにち."} -->
+
 ## Time
 
 ### 〜時 (じ) — Hour
@@ -79,6 +83,8 @@ Rendaku changes ふ → ぷ in several cases:
 
 ### 〜秒 (びょう) — Second
 Straightforward readings with kango numbers.
+
+<!-- grammar-card: {"rule":"Four o'clock is read よじ","hint":"4 o'clock","example":"会議(かいぎ)は___から始(はじ)まります。","answer":"四時(よじ)","explanation":"四時 is よじ — never しじ or よんじ."} -->
 
 ## Approximate Time
 
@@ -101,6 +107,8 @@ Straightforward readings with kango numbers.
 <!-- quiz: {"type":"multiple-choice","question":"What is the special reading for the 1st day of the month (一日)?","options":["いちにち","いっぴ","ひとひ","ついたち"],"answer":3} -->
 
 <!-- quiz: {"type":"multiple-choice","question":"What does 〜頃 (ころ) express?","options":["Exact time","Approximate point in time","Duration","Deadline"],"answer":1} -->
+
+<!-- grammar-card: {"rule":"ごろ makes a point in time approximate","hint":"around","example":"三時(さんじ)___に来(き)てください。","answer":"ごろ","explanation":"三時ごろ means around three; ぐらい would be used for a length of time instead."} -->
 
 ## Sources
 

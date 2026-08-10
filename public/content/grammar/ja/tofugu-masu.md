@@ -172,6 +172,10 @@ Using ませんか here adds the nuance that you are not only asking the listene
 
   - Shall we dance?
 
+<!-- grammar-card: {"rule":"ますか turns a polite statement into a question","hint":"ます + か","example":"料理(りょうり)をし___？","answer":"ますか","explanation":"しますか politely asks whether the listener cooks."} -->
+
+<!-- grammar-card: {"rule":"The polite past negative is ませんでした","hint":"ます, past negative","example":"宿題(しゅくだい)が出来___。","answer":"ませんでした","explanation":"出来ませんでした politely reports that the homework could not be done."} -->
+
 ## Beyond The Basics
 
 ### ます Attached To Various Verb Forms
@@ -289,6 +293,8 @@ by 東京外国語大学
 <!-- quiz: {"type":"multiple-choice","question":"What does \"食べ**ます**。\" mean?","options":["I eat (chocolate).","I drink (coffee).","I passed.","I did it!"],"answer":0} -->
 
 <!-- quiz: {"type":"multiple-choice","question":"What does \"合格し**ました**。\" mean?","options":["I passed.","I drink (coffee).","I eat (chocolate).","I did it!"],"answer":0} -->
+
+<!-- grammar-card: {"rule":"A quotation keeps whatever politeness the speaker actually used","hint":"行く, polite","example":"ケンは「大学に行き___」と言いました。","answer":"ます","explanation":"Ken himself spoke politely, so 行きます is preserved inside the quotation."} -->
 
 ## Sources
 

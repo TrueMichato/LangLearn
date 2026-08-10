@@ -15,6 +15,8 @@ For る-verbs, drop the final **る** and add **た**. That's it!
 - **昨日、寿司を食べた。** (Kinou, sushi o tabeta.) — I ate sushi yesterday.
 - **映画を見た。** (Eiga o mita.) — I watched a movie.
 
+<!-- grammar-card: {"rule":"る-verbs form the past by swapping る for た","hint":"食べる → ?","example":"昨日、寿司を食べ___。","answer":"た","explanation":"食べる simply drops る and takes た, giving 食べた."} -->
+
 ## う-verbs (Godan): Sound Change Rules
 
 う-verbs are trickier. The final kana determines which past ending to use. Here is the complete chart:
@@ -78,6 +80,10 @@ To say something did **not** happen, take the negative form (ない) from lesson
 - **パーティーに行かなかった。** (Paatii ni ikanakatta.) — I didn't go to the party.
 
 <!-- quiz:{"type":"multiple-choice","question":"How do you say 'did not buy' (買う)?","options":["買わなかった","買なかった","買いなかった","買たなかった"],"answer":0} -->
+
+<!-- grammar-card: {"rule":"A う-verb's past negative ends in かなかった","hint":"行く → ?","example":"パーティーに___。","answer":"行かなかった","explanation":"行く gives the negative 行かない, whose past form is 行かなかった."} -->
+
+<!-- grammar-card: {"rule":"The past negative replaces ない with なかった","hint":"食べない → ?","example":"昨日、何も___。","answer":"食べなかった","explanation":"食べない becomes 食べなかった, and 何も requires that negative to mean 'nothing'."} -->
 
 ## Summary
 

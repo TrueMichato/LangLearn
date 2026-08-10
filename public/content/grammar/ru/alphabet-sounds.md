@@ -151,6 +151,8 @@ Without the hard sign, the prefix consonant would merge with the vowel and be pa
 
 <!-- quiz:{"type":"multiple-choice","question":"What does the soft sign (Ь) do?","options":["It adds a vowel sound","It makes the preceding consonant soft (palatalized)","It makes the preceding consonant hard","It is silent and has no effect"],"answer":1} -->
 
+<!-- grammar-card: {"rule":"The hard sign Ъ separates a prefix from a following е, ё, ю or я","hint":"с + ел","example":"Он с___ел весь суп.","answer":"ъ","explanation":"Съел is the prefix с- plus ел, and the hard sign stops the ye-sound from merging into the prefix."} -->
+
 ---
 
 ## 6. Putting It Together

@@ -32,6 +32,8 @@ This is where many learners stumble. Both mean "give," but the choice depends on
 
 Using くれる implies gratitude. Choosing あげる when くれる is appropriate sounds cold or detached.
 
+<!-- grammar-card: {"rule":"くれる is required when the thing comes to the speaker","hint":"give, plain past","example":"友達(ともだち)が私に本(ほん)を___。","answer":"くれた","explanation":"あげた is impossible here, because the speaker is the one receiving."} -->
+
 ## て-Form: Doing Favors
 
 The real power of this system emerges when combined with て-form verbs. This expresses doing something **as a favor**.
@@ -49,6 +51,8 @@ The real power of this system emerges when combined with て-form verbs. This ex
 - **友達に手伝ってもらった。** (Tomodachi ni tetsudatte moratta.) — I had my friend help me (I received the favor).
 
 <!-- quiz:{"type":"multiple-choice","question":"'友達が宿題を手伝ってくれた' expresses:","options":["I helped my friend with homework","My friend helped me with homework (and I'm grateful)","My friend wants to help with homework","I asked my friend to help with homework"],"answer":1} -->
+
+<!-- grammar-card: {"rule":"てくれる marks an action done for the speaker's benefit","hint":"作る + くれる, plain past","example":"母(はは)がケーキを作(つく)っ___。","answer":"てくれた","explanation":"作ってくれた adds gratitude that a plain 作った would not carry."} -->
 
 ## Common Mistake: あげる vs くれる
 
@@ -74,6 +78,8 @@ Each verb has a polite/honorific counterpart:
 - **お客様にお茶をさしあげてください。** (Okyakusama ni ocha wo sashiagete kudasai.) — Please serve tea to the customer. (humble giving)
 
 <!-- quiz:{"type":"multiple-choice","question":"Which is the polite/humble form of 'もらう'?","options":["くださる","さしあげる","いただく","なさる"],"answer":2} -->
+
+<!-- grammar-card: {"rule":"くださる is the honorific form of くれる","hint":"くれる, honorific","example":"先生(せんせい)が本(ほん)を___。","answer":"くださった","explanation":"くださった raises the teacher, who is the giver in this sentence."} -->
 
 ## Summary
 

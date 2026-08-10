@@ -274,6 +274,10 @@ Or if you're speaking out what's going on while playing a horror game, for examp
 
 In both cases, が indicates that this is *the time*  when you had the most fun or when you always get very scared.
 
+<!-- grammar-card: {"rule":"The non-past before とき places the action before the main clause","hint":"出る / 出た","example":"あれ、家を出___とき、カギ閉めたよね？","answer":"る","explanation":"出るとき puts the locking before actually leaving the house."} -->
+
+<!-- grammar-card: {"rule":"とき marks the time at which something happened","hint":"とき","example":"子供だった___、おばけを見た。","answer":"とき","explanation":"子供だったとき means back when the speaker was a child."} -->
+
 ## Beyond The Basics
 
 ### More About Tense Used in 〜とき
@@ -387,6 +391,8 @@ by 樋口 万里子
 <!-- quiz: {"type":"multiple-choice","question":"What does \"あれ、家を出**る**とき、カギ閉めたよね？\" mean?","options":["Wait, when I was leaving, I locked the door, right?","Wait, when I left the house, I locked the door, right?","When I arrive in Japan, I wonder if I can use the Wi-Fi right away.","Even **when** it wasn't hot, you ate ice cream, didn't you?"],"answer":0} -->
 
 <!-- quiz: {"type":"multiple-choice","question":"What does \"日本に着い**た**とき、すぐにWi-Fi使えるかな？\" mean?","options":["When I arrive in Japan, I wonder if I can use the Wi-Fi right away.","Wait, when I left the house, I locked the door, right?","Wait, when I was leaving, I locked the door, right?","Even **when** it wasn't hot, you ate ice cream, didn't you?"],"answer":0} -->
+
+<!-- grammar-card: {"rule":"The past before とき means the action was already under way","hint":"している / していた","example":"私が料理をしてい___とき、あなたは何をしていたの？","answer":"た","explanation":"していたとき sets the cooking as the period the question is asking about."} -->
 
 ## Sources
 

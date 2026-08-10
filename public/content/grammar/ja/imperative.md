@@ -44,6 +44,8 @@ Drop the final **る** and add **ろ** (colloquial) or **よ** (literary):
 
 <!-- quiz:{"type":"multiple-choice","question":"What is the imperative form of 走る (to run)?","options":["走ろ","走れ","走り","走る"],"answer":1} -->
 
+<!-- grammar-card: {"rule":"Godan verbs form the imperative by shifting the final う sound to え","hint":"走る → ?","example":"早(はや)く___！","answer":"走(はし)れ","explanation":"走る becomes 走れ — a blunt, forceful order to run."} -->
+
 ## Prohibitive Form (禁止形 / きんしけい)
 
 The prohibitive is much simpler — just add **な** to the **dictionary form**:
@@ -61,6 +63,8 @@ The prohibitive is much simpler — just add **な** to the **dictionary form**:
 > ⚠️ Don't confuse the prohibitive な with the sentence-ending particle な (which expresses emotion or emphasis). Context and tone make the difference clear.
 
 <!-- quiz:{"type":"multiple-choice","question":"How do you say 'Don't eat!' using the prohibitive form?","options":["食べな","食べないで","食べるな","食べろな"],"answer":2} -->
+
+<!-- grammar-card: {"rule":"な after the dictionary form forbids an action","hint":"prohibitive particle","example":"ここで写真(しゃしん)を撮(と)る___！","answer":"な","explanation":"撮るな is a flat 'don't take photos here', with no softening at all."} -->
 
 ## When Is the Imperative Used?
 
@@ -161,6 +165,8 @@ Used by parents, teachers, and authority figures:
 | Imperative (〜ろ/〜え) | Strong command | 見ろ |
 
 <!-- quiz:{"type":"multiple-choice","question":"Which form would a mother most likely use to tell her child to eat vegetables?","options":["野菜を食べろ","野菜を食べなさい","野菜を食べてください","野菜を食べるな"],"answer":1} -->
+
+<!-- grammar-card: {"rule":"てください gives the same instruction politely","hint":"待つ + ください","example":"ちょっと待(ま)っ___。","answer":"てください","explanation":"待ってください asks rather than orders, unlike the bare imperative 待て."} -->
 
 ## Softer Alternatives to the Prohibitive
 

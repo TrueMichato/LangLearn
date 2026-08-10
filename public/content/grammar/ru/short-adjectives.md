@@ -33,6 +33,8 @@ Short-form adjectives are created by removing the long-form ending and adding sh
 
 **Мы готовы.** *(My gotovy.)* — We are ready.
 
+<!-- grammar-card: {"rule":"Short-form adjectives agree with the subject in gender and number","hint":"готов / готова / готовы","example":"Она ___.","answer":"готова","explanation":"Она is feminine singular, so the short form takes the ending -а: готова."} -->
+
 ---
 
 ## 2. Fleeting Vowels
@@ -95,6 +97,8 @@ This is the key question. Both forms can appear as predicates, but they carry di
 
 <!-- quiz:{"type":"multiple-choice","question":"'Она занята' (short form) most likely means:","options":["She is a busy person in general","She is busy right now","She used to be busy","She will be busy"],"answer":1} -->
 
+<!-- grammar-card: {"rule":"Only the short form works as a predicate before an infinitive","hint":"готов / готова / готовы","example":"Мы ___ идти.","answer":"готовы","explanation":"Мы is plural, so the predicate short form is готовы; the long готовые could not take the infinitive идти."} -->
+
 ---
 
 ## 4. Adjectives Used Only in Short Form (as Predicates)
@@ -154,6 +158,8 @@ Neuter short forms are widely used in **impersonal** (subjectless) sentences:
 **Очевидно, что он прав.** *(Ochevidno, chto on prav.)* — It's obvious that he is right.
 
 **Странно, что никто не пришёл.** *(Stranno, chto nikto ne prishyol.)* — It's strange that nobody came.
+
+<!-- grammar-card: {"rule":"An impersonal construction pairs a dative experiencer with a neuter short form","hint":"грустный → ?","example":"Мне ___ это слышать.","answer":"грустно","explanation":"With no subject to agree with, the neuter short form грустно is used and the person stands in the dative."} -->
 
 ---
 

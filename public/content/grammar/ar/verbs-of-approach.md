@@ -22,7 +22,7 @@ Verbs such as شَرَعَ (sharaʿa), أَخَذَ (akhadha), بَدَأَ (bad
 | أَخَذَ (akhadha) | أَخَذَ الطِّفْلُ يَضْحَكُ (akhadha aṭ-ṭiflu yaḍḥaku) | the child started laughing |
 | جَعَلَ (jaʿala) | جَعَلَ المَطَرُ يَنْزِلُ (jaʿala al-maṭaru yanzilu) | the rain began to fall |
 
-<!-- grammar-card: {"rule":"كَادَ (kāda) marks an action that nearly happened and is usually followed by a present verb.","hint":"Think almost did.","example":"Complete: كَادَ الوَلَدُ ___ (kāda al-waladu ___).","answer":"يَسْقُطُ (yasquṭu) — to fall","explanation":"The present verb names the event that almost happened."} -->
+<!-- grammar-card: {"rule":"كَادَ (kāda) marks an action that nearly happened and is usually followed by a present verb.","hint":"Think almost did.","example":"Complete: كَادَ الوَلَدُ ___ (kāda al-waladu ___).","answer":"يَسْقُطُ (yasquṭu)","explanation":"to fall — The present verb names the event that almost happened."} -->
 
 <!-- quiz: {"type":"multiple-choice","question":"Which verb commonly means began to in شَرَعَ الطَّالِبُ يَكْتُبُ (sharaʿa aṭ-ṭālibu yaktubu)?","options":["شَرَعَ (sharaʿa)","كَادَ (kāda)","لَيْسَ (laysa)","إِنَّ (inna)"],"answer":0} -->
 

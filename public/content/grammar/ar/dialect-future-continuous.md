@@ -17,7 +17,7 @@ A **عَلَامَةُ المُسْتَقْبَلِ** (ʿalāmatu al-mustaqbali)
 
 <!-- quiz: {"type": "multiple-choice", "question": "Which marker is a common dialect future marker?", "options": ["رَحْ (raḥ)", "قَدْ (qad)", "لَمْ (lam)", "مِنْ (min)"], "answer": 0} -->
 
-<!-- grammar-card: {"rule": "رَحْ (raḥ) is a common Levantine-style future marker before the imperfect verb.", "hint": "raḥ plus verb.", "example": "Complete “I will go”: رَحْ ___ (raḥ ___).", "answer": "أَرُوحْ (arūḥ) — I go/will go", "explanation": "In many Levantine varieties, رَحْ أَرُوحْ (raḥ arūḥ) means “I will go.”"} -->
+<!-- grammar-card: {"rule":"رَحْ (raḥ) is a common Levantine-style future marker before the imperfect verb.","hint":"raḥ plus verb.","example":"Complete “I will go”: رَحْ ___ (raḥ ___).","answer":"أَرُوحْ (arūḥ)","explanation":"I go/will go — In many Levantine varieties, رَحْ أَرُوحْ (raḥ arūḥ) means “I will go.”"} -->
 
 ## Continuous markers
 
@@ -32,7 +32,7 @@ A **عَلَامَةُ الاِسْتِمْرَارِ** (ʿalāmatu al-istimrār
 
 <!-- quiz: {"type": "multiple-choice", "question": "Which phrase is a Levantine-style continuous expression?", "options": ["عَمْ بِكْتُبْ (ʿam biktub)", "سَوْفَ أَكْتُبُ (sawfa aktubu)", "لَمْ أَكْتُبْ (lam aktub)", "كُتِبَتِ الرِّسَالَةُ (kutibati ar-risālatu)"], "answer": 0} -->
 
-<!-- grammar-card: {"rule": "عَمْ (ʿam) marks ongoing action in many Levantine varieties.", "hint": "ʿam plus present verb.", "example": "Complete “I am studying”: عَمْ ___ (ʿam ___).", "answer": "بِدْرُسْ (bidrus) — I study/am studying", "explanation": "عَمْ بِدْرُسْ (ʿam bidrus) is a common Levantine-style way to say “I am studying.”"} -->
+<!-- grammar-card: {"rule":"عَمْ (ʿam) marks ongoing action in many Levantine varieties.","hint":"ʿam plus present verb.","example":"Complete “I am studying”: عَمْ ___ (ʿam ___).","answer":"بِدْرُسْ (bidrus)","explanation":"I study/am studying — عَمْ بِدْرُسْ (ʿam bidrus) is a common Levantine-style way to say “I am studying.”"} -->
 
 ## How this differs from MSA
 

@@ -26,7 +26,7 @@ For many Form I verbs, the useful patterns are **مَفْعَلٌ** (mafʿalun) 
 | **وَعَدَ** (waʿada) — to promise | **مَوْعِدٌ** (mawʿidun) | appointment; appointed time |
 | **نَزَلَ** (nazala) — to descend/stay | **مَنْزِلٌ** (manzilun) | house; stopping place |
 
-<!-- grammar-card: {"rule": "Many Form I place/time nouns use مَفْعَلٌ (mafʿalun) or مَفْعِلٌ (mafʿilun).", "hint": "Look for initial ma- plus root consonants.", "example": "Complete “entrance” from دَخَلَ (dakhala): ___ (___).", "answer": "مَدْخَلٌ (madkhalun) — entrance", "explanation": "The root دَالٌ-خَاءٌ-لَامٌ (dāl-khāʾ-lām) appears in the pattern مَفْعَلٌ (mafʿalun): مَدْخَلٌ (madkhalun)."} -->
+<!-- grammar-card: {"rule":"Many Form I place/time nouns use مَفْعَلٌ (mafʿalun) or مَفْعِلٌ (mafʿilun).","hint":"Look for initial ma- plus root consonants.","example":"Complete “entrance” from دَخَلَ (dakhala): ___ (___).","answer":"مَدْخَلٌ (madkhalun)","explanation":"entrance — The root دَالٌ-خَاءٌ-لَامٌ (dāl-khāʾ-lām) appears in the pattern مَفْعَلٌ (mafʿalun): مَدْخَلٌ (madkhalun)."} -->
 
 <!-- quiz: {"type": "multiple-choice", "question": "Which noun is derived from جَلَسَ (jalasa) — to sit?", "options": ["مَجْلِسٌ (majlisun) — sitting place/council", "مَدْخَلٌ (madkhalun) — entrance", "مَخْرَجٌ (makhrajun) — exit", "مَوْعِدٌ (mawʿidun) — appointment"], "answer": 0} -->
 
@@ -52,7 +52,7 @@ An ordinary **مَصْدَرٌ** (maṣdarun) — verbal noun may have many patt
 
 <!-- quiz: {"type": "multiple-choice", "question": "Which sentence uses مَوْعِدٌ (mawʿidun) as a noun of time?", "options": ["لَنَا مَوْعِدٌ فِي الصَّبَاحِ (lanā mawʿidun fī aṣ-ṣabāḥi)", "المَدْخَلُ وَاسِعٌ (al-madkhalu wāsiʿun)", "خَرَجَ الوَلَدُ (kharaja al-waladu)", "جُلُوسُكَ هُنَا مُفِيدٌ (julūsuka hunā mufīdun)"], "answer": 0} -->
 
-<!-- grammar-card: {"rule": "مَوْعِدٌ (mawʿidun) can name an appointed time or appointment.", "hint": "From وَعَدَ (waʿada) — to promise.", "example": "Complete “we have an appointment”: لَنَا ___ (lanā ___).", "answer": "مَوْعِدٌ (mawʿidun) — appointment", "explanation": "The weak initial root وَعَدَ (waʿada) gives مَوْعِدٌ (mawʿidun), a common noun for an appointment or appointed time."} -->
+<!-- grammar-card: {"rule":"مَوْعِدٌ (mawʿidun) can name an appointed time or appointment.","hint":"From وَعَدَ (waʿada) — to promise.","example":"Complete “we have an appointment”: لَنَا ___ (lanā ___).","answer":"مَوْعِدٌ (mawʿidun)","explanation":"The weak initial root وَعَدَ (waʿada) gives مَوْعِدٌ (mawʿidun), a common noun for an appointment or appointed time."} -->
 
 ## Sources
 

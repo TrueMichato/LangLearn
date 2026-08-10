@@ -22,7 +22,7 @@ For many Form I verbs, the imperative is built from the jussive “you” form. 
 
 Negative commands use **لَا** (lā) — do not with the jussive present: **لَا تَكْتُبْ** (lā taktub) — do not write!, **لَا تَتَأَخَّرْ** (lā tataʾakhkhar) — do not be late!
 
-<!-- grammar-card: {"rule": "The imperative for one masculine often has a final sukūn.", "hint": "A short command form.", "example": "Complete “open!” to one masculine person: ___ (iftaḥ).", "answer": "اِفْتَحْ (iftaḥ) — open!", "explanation": "اِفْتَحْ (iftaḥ) — open! is the masculine singular imperative."} -->
+<!-- grammar-card: {"rule":"The imperative for one masculine often has a final sukūn.","hint":"A short command form.","example":"Complete “open!” to one masculine person: ___ (iftaḥ).","answer":"اِفْتَحْ","explanation":"اِفْتَحْ (iftaḥ) — open! is the masculine singular imperative."} -->
 
 ## Practice patterns
 
@@ -33,7 +33,7 @@ Polite commands often add softening words:
 
 <!-- quiz: {"type": "multiple-choice", "question": "How do you make a negative command?", "options": ["سَـ (sa-) + past", "لَا (lā) + jussive present", "الْـ (al-) + noun", "مِنْ (min) + genitive"], "answer": 1} -->
 
-<!-- grammar-card: {"rule": "Negative commands use لَا (lā) — do not plus the jussive present.", "hint": "Do not + you-form jussive.", "example": "Complete “do not write!”: لَا ___ (lā ___).", "answer": "تَكْتُبْ (taktub) — you write, jussive", "explanation": "لَا تَكْتُبْ (lā taktub) — do not write! uses jussive after prohibitive لَا (lā)."} -->
+<!-- grammar-card: {"rule":"Negative commands use لَا (lā) — do not plus the jussive present.","hint":"Do not + you-form jussive.","example":"Complete “do not write!”: لَا ___ (lā ___).","answer":"تَكْتُبْ (taktub)","explanation":"you write, jussive — لَا تَكْتُبْ (lā taktub) — do not write! uses jussive after prohibitive لَا (lā)."} -->
 
 ## Sources
 

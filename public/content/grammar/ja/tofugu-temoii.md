@@ -187,6 +187,10 @@ Your companion then requests coffee to accompany the cake. However, when you go 
 
 Again, in this case, 〜なくてもいい shows that it's still fine if it's not coffee.
 
+<!-- grammar-card: {"rule":"Verbs ending in ぬ, ぶ or む take でもいい","hint":"飲む → ?","example":"飲ん___よ。","answer":"でもいい","explanation":"飲む becomes 飲んで, so the permission form is 飲んでもいい."} -->
+
+<!-- grammar-card: {"rule":"てもいい asks for or grants permission","hint":"見る + もいい","example":"テレビ見___？","answer":"てもいい","explanation":"見てもいい？ asks whether watching TV is allowed."} -->
+
 ## Beyond the Basics
 
 ### も of 〜てもいい
@@ -313,6 +317,8 @@ pp. 298-302
 <!-- quiz: {"type":"multiple-choice","question":"What does \"見**てもいい**よ。\" mean?","options":["Yes, it is.","Is it okay if I watch TV?","Is it okay to eat it?","It's okay to drink it."],"answer":0} -->
 
 <!-- quiz: {"type":"multiple-choice","question":"What does \"食べ**てもいい**？\" mean?","options":["Is it okay to eat it?","Is it okay if I watch TV?","Yes, it is.","It's okay to drink it."],"answer":0} -->
+
+<!-- grammar-card: {"rule":"も can be dropped in casual speech","hint":"てもいい → ?","example":"ママのケーキ、食べ___よ。","answer":"ていい","explanation":"食べていい is the relaxed spoken form of 食べてもいい."} -->
 
 ## Sources
 

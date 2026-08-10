@@ -99,6 +99,8 @@ Using 〜たり to list these actions implies that you did other things at the p
 
   - At the park, I rode my bike and played volleyball.
 
+<!-- grammar-card: {"rule":"The て-form lists actions in the order they happened","hint":"乗る → ?","example":"公園で自転車に___バレーボールした。","answer":"乗って","explanation":"乗って implies cycling and then volleyball in sequence, where 乗ったり would list them as examples."} -->
+
 ## たりする with Adjectives
 
 When used with adjectives, 〜たり creates an incomplete list of states of being. Similar to your list of some (but not all) of the activities you did at the park, here you're stating some (but not all) of the ways something can be. For example, maybe a place is sometimes hot, sometimes cold, but also potentially other things as well. 〜たりする can help us express this:
@@ -114,6 +116,8 @@ When used with adjectives, 〜たり creates an incomplete list of states of bei
   - That library is sometimes quiet and is sometimes noisy (and sometimes is something else).
 
 A quick reminder about tense: while the い-adjectives in the example sentences are in the past tense かった form, and the な-adjective is marked with the past tense marker だった, they are not referring to the past. This is simply a way for them to connect with the 〜り part of 〜たり. The tense of both of these sentences in present, marked by します at the end of the sentence.
+
+<!-- grammar-card: {"rule":"Adjectives take かったり to list alternating states","hint":"暑い / 寒い","example":"この辺は___します。","answer":"暑かったり寒かったり","explanation":"暑かったり寒かったりします says the area is hot at times and cold at others."} -->
 
 ## たりする with Nouns
 
@@ -195,6 +199,8 @@ pp. 283-285
 <!-- quiz: {"type":"multiple-choice","question":"What does \"公園で自転車に**乗って**バレーボールした。\" mean?","options":["At the park, I rode my bike and played volleyball.","At the park, I did things like bike-riding and volleyball (among other things).","This area is sometimes hot and is sometimes cold (and sometimes is something else).","That library is sometimes quiet and is sometimes noisy (and sometimes is something else)."],"answer":0} -->
 
 <!-- quiz: {"type":"multiple-choice","question":"What does \"この辺は**暑かったり寒かったり**します。\" mean?","options":["This area is sometimes hot and is sometimes cold (and sometimes is something else).","At the park, I did things like bike-riding and volleyball (among other things).","At the park, I rode my bike and played volleyball.","That library is sometimes quiet and is sometimes noisy (and sometimes is something else)."],"answer":0} -->
+
+<!-- grammar-card: {"rule":"Nouns use や where verbs use たり","hint":"と / や","example":"今日のお昼ごはんはサラダ___おにぎりです。","answer":"や","explanation":"や lists salad and rice balls as examples of what lunch includes."} -->
 
 ## Sources
 

@@ -32,6 +32,10 @@ Both から and ので express a reason, but they differ in tone.
 
 <!-- quiz:{"type":"multiple-choice","question":"Which sounds more polite and softer when giving a reason?","options":["から","ので","けど","し"],"answer":1} -->
 
+<!-- grammar-card: {"rule":"ので presents the reason as a plain observable fact","hint":"から / ので","example":"雨が降っている___、傘を持っていきます。","answer":"ので","explanation":"The rain is simply a circumstance, and ので reports it neutrally."} -->
+
+<!-- grammar-card: {"rule":"から states a reason the speaker is personally asserting","hint":"から / ので","example":"時間がない___、タクシーに乗ろう。","answer":"から","explanation":"から suits a personal decision: since there is no time, let us take a taxi."} -->
+
 ## けど / けれども — "But / However"
 
 けど (casual) and けれども (formal) connect contrasting clauses, similar to English "but."

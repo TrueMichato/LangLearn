@@ -19,7 +19,7 @@ Arabic uses the أَفْعَلُ (afʿalu) — elative pattern for many comparat
 
 هَذَا الْكِتَابُ أَطْوَلُ مِنْ ذَلِكَ الْكِتَابِ (hādhā al-kitābu aṭwalu min dhālika al-kitābi) — this book is longer than that book. With a following indefinite noun, أَطْوَلُ كِتَابٍ (aṭwalu kitābin) — the longest book.
 
-<!-- grammar-card: {"rule":"The elative أَفْعَلُ (afʿalu) plus مِنْ (min) forms many comparatives.","hint":"مِنْ (min) works like than after the elative.","example":"Complete “bigger than”: أَكْبَرُ ___ (min).","answer":"مِنْ (min) — than","explanation":"أَكْبَرُ مِنْ (akbaru min) means bigger than. The elative gives the comparison, and مِنْ introduces what is compared."} -->
+<!-- grammar-card: {"rule":"The elative أَفْعَلُ (afʿalu) plus مِنْ (min) forms many comparatives.","hint":"مِنْ (min) works like than after the elative.","example":"Complete “bigger than”: أَكْبَرُ ___ (min).","answer":"مِنْ","explanation":"أَكْبَرُ مِنْ (akbaru min) means bigger than. The elative gives the comparison, and مِنْ introduces what is compared."} -->
 
 ## Colors and defects
 
@@ -33,7 +33,7 @@ Color and defect adjectives often look like أَفْعَلُ (afʿalu) too: أَ
 
 <!-- quiz: {"type":"multiple-choice","question":"Which phrase is a natural way to say redder?","options":["أَشَدُّ حُمْرَةً (ashaddu ḥumratan) — more intense in redness","أَحْمَرُ مِنْ (aḥmaru min) — red than","حَمْرَاءُ مِنْ (ḥamrāʾu min) — red feminine than","حُمْرٌ مِنْ (ḥumrun min) — reds than"],"answer":0} -->
 
-<!-- grammar-card: {"rule":"Color and defect adjectives often use masculine أَفْعَلُ (afʿalu) and feminine فَعْلَاءُ (faʿlāʾu), but they are not ordinary comparatives.","hint":"أَحْمَرُ and حَمْرَاءُ describe color, not more red by themselves.","example":"Complete “red feminine”: ___ (ḥamrāʾu) — red feminine.","answer":"حَمْرَاءُ (ḥamrāʾu) — red feminine","explanation":"حَمْرَاءُ (ḥamrāʾu) is the feminine color adjective paired with أَحْمَرُ (aḥmaru)."} -->
+<!-- grammar-card: {"rule":"Color and defect adjectives often use masculine أَفْعَلُ (afʿalu) and feminine فَعْلَاءُ (faʿlāʾu), but they are not ordinary comparatives.","hint":"أَحْمَرُ and حَمْرَاءُ describe color, not more red by themselves.","example":"Complete “red feminine”: ___ (ḥamrāʾu) — red feminine.","answer":"حَمْرَاءُ","explanation":"red feminine — حَمْرَاءُ (ḥamrāʾu) is the feminine color adjective paired with أَحْمَرُ (aḥmaru)."} -->
 
 ## Sources
 

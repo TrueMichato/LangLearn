@@ -22,7 +22,7 @@ Most beginner errors are not random. They cluster around **تَعْرِيفٌ** 
 
 When you see **الْـ** (al-) — the, remove tanwīn. When you see a noun followed by a describing adjective, check gender, number, case, and definiteness: **الْمَدْرَسَةُ الْجَدِيدَةُ** (al-madrasatu l-jadīdatu) — the new school. When you see a preposition, expect genitive: **مَعَ الطَّالِبِ** (maʿa ṭ-ṭālibi) — with the student.
 
-<!-- grammar-card: {"rule":"A noun with the definite article does not keep tanwīn.","hint":"The article and tanwīn do not normally coexist on the same noun.","example":"Make بَيْتٌ (baytun) — a house definite: ___ .","answer":"الْبَيْتُ (al-baytu) — the house","explanation":"Adding the article removes tanwīn, so the ending is -u, not -un."} -->
+<!-- grammar-card: {"rule":"A noun with the definite article does not keep tanwīn.","hint":"The article and tanwīn do not normally coexist on the same noun.","example":"Make بَيْتٌ (baytun) — a house definite: ___ .","answer":"الْبَيْتُ (al-baytu)","explanation":"the house — Adding the article removes tanwīn, so the ending is -u, not -un."} -->
 
 ## A quick checking routine
 
@@ -34,7 +34,7 @@ When you see **الْـ** (al-) — the, remove tanwīn. When you see a noun fol
 
 <!-- quiz: {"type":"multiple-choice","question":"Why is كِتَابُ الطَّالِبِ (kitābu ṭ-ṭālibi) — the student's book correct?","options":["The second noun in the iḍāfa is genitive","The first noun must take tanwīn","The adjective is plural","The article turns into a verb"],"answer":0} -->
 
-<!-- grammar-card: {"rule":"In an iḍāfa, the second noun is genitive.","hint":"Possessor nouns often end in i when fully vocalized.","example":"Complete: كِتَابُ ___ (kitābu ___) — the student's book.","answer":"الطَّالِبِ (aṭ-ṭālibi) — the student in genitive","explanation":"The possessed item is كِتَابُ and the possessor الطَّالِبِ is genitive because it is the second noun in the construct."} -->
+<!-- grammar-card: {"rule":"In an iḍāfa, the second noun is genitive.","hint":"Possessor nouns often end in i when fully vocalized.","example":"Complete: كِتَابُ ___ (kitābu ___) — the student's book.","answer":"الطَّالِبِ (aṭ-ṭālibi)","explanation":"the student in genitive — The possessed item is كِتَابُ and the possessor الطَّالِبِ is genitive because it is the second noun in the construct."} -->
 
 ## Sources
 

@@ -21,7 +21,7 @@ The nominative dual often ends in **ـَانِ** (-āni), while the accusative a
 
 The dual can stand alone without the number “two.” **كِتَابَانِ** (kitābāni) already means two books. You may add **اِثْنَانِ** (ithnāni) — two for emphasis, but you usually do not need it.
 
-<!-- grammar-card: {"rule": "The dual nominative ending is ـَانِ (-āni).", "hint": "Use it for subjects in the nominative.", "example": "Complete “two books came”: جَاءَ ___ (jāʾa ___).", "answer": "كِتَابَانِ (kitābāni) — two books, nominative", "explanation": "جَاءَ كِتَابَانِ (jāʾa kitābāni) — two books came uses the nominative dual."} -->
+<!-- grammar-card: {"rule":"The dual nominative ending is ـَانِ (-āni).","hint":"Use it for subjects in the nominative.","example":"Complete “two books came”: جَاءَ ___ (jāʾa ___).","answer":"كِتَابَانِ (kitābāni)","explanation":"two books, nominative — جَاءَ كِتَابَانِ (jāʾa kitābāni) — two books came uses the nominative dual."} -->
 
 ## Practice patterns
 
@@ -33,7 +33,7 @@ Examples in sentences:
 
 <!-- quiz: {"type": "multiple-choice", "question": "Which form means “two books” after a preposition?", "options": ["كِتَابَانِ (kitābāni) — two books, nominative", "كِتَابَيْنِ (kitābayni) — two books, genitive/accusative", "كُتُبٌ (kutubun) — books", "كِتَابٌ (kitābun) — a book"], "answer": 1} -->
 
-<!-- grammar-card: {"rule": "After prepositions and as direct objects, the dual usually uses ـَيْنِ (-ayni).", "hint": "Accusative/genitive dual.", "example": "Complete “with two students”: مَعَ طَالِب___ (maʿa ṭālib___).", "answer": "ـَيْنِ (-ayni) — dual genitive/accusative", "explanation": "مَعَ طَالِبَيْنِ (maʿa ṭālibayni) — with two students uses the genitive dual after a preposition."} -->
+<!-- grammar-card: {"rule":"After prepositions and as direct objects, the dual usually uses ـَيْنِ (-ayni).","hint":"Accusative/genitive dual.","example":"Complete “with two students”: مَعَ طَالِب___ (maʿa ṭālib___).","answer":"ـَيْنِ (-ayni)","explanation":"dual genitive/accusative — مَعَ طَالِبَيْنِ (maʿa ṭālibayni) — with two students uses the genitive dual after a preposition."} -->
 
 ## Sources
 

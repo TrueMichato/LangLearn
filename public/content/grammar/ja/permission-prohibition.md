@@ -66,6 +66,8 @@ In casual speech, ですか is dropped:
 
 <!-- quiz:{"type":"multiple-choice","question":"How do you ask 'May I take a photo?' politely?","options":["写真を撮ってはいけませんか","写真を撮ってもいいですか","写真を撮らなくてもいいですか","写真を撮るべきですか"],"answer":1} -->
 
+<!-- grammar-card: {"rule":"The て-form plus もいい asks for permission","hint":"座る + もいい","example":"ここに座(すわ)っ___ですか。","answer":"てもいい","explanation":"座ってもいいですか politely asks whether sitting here is allowed."} -->
+
 ## Formal Alternative: てもかまわない
 
 For more formal or written contexts, **てもかまわない** replaces てもいい. かまう means "to mind," so かまわない = "I don't mind."
@@ -158,6 +160,8 @@ In casual speech, ては contracts to **ちゃ** and では contracts to **じ�
 
 <!-- quiz:{"type":"multiple-choice","question":"What is the casual contraction of 食べてはいけない?","options":["食べちゃいけない","食べてもいけない","食べたらいけない","食べないでいけない"],"answer":0} -->
 
+<!-- grammar-card: {"rule":"てはいけない forbids an action outright","hint":"吸う, polite prohibition","example":"ここでタバコを吸(す)っ___。","answer":"てはいけません","explanation":"吸ってはいけません states that smoking here is not permitted."} -->
+
 ## Alternative Prohibition Expressions
 
 ### てはだめ
@@ -239,6 +243,8 @@ To express that something is **not necessary** (but is allowed), use **なくて
 > - 食べてはいけない = You **must not** eat (it's prohibited)
 
 <!-- quiz:{"type":"multiple-choice","question":"明日来なくてもいいです means:","options":["You must not come tomorrow","You should come tomorrow","You don't have to come tomorrow","You cannot come tomorrow"],"answer":2} -->
+
+<!-- grammar-card: {"rule":"なくてもいい removes an obligation rather than granting permission","hint":"来る, negative + もいい","example":"明日(あした)は来(こ)___。","answer":"なくてもいいです","explanation":"来なくてもいいです says there is no need to come tomorrow."} -->
 
 ## Adjective & Noun Permission/Prohibition
 

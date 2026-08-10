@@ -62,6 +62,8 @@ For nouns and な-adjectives, **です** is the polite equivalent of **だ**:
 
 <!-- quiz:{"type":"multiple-choice","question":"How do you politely say 'It was quiet' using 静か (shizuka)?","options":["静かだった","静かでした","静かます","静かました"],"answer":1} -->
 
+<!-- grammar-card: {"rule":"です can follow じゃない to make it polite","hint":"じゃない + ?","example":"この部屋は静かじゃない___。","answer":"です","explanation":"じゃないです is the polite equivalent of じゃありません and is common in speech."} -->
+
 ## です Is NOT the Same as だ
 
 This is a common misunderstanding. While they appear in similar positions, they have different grammatical natures:
@@ -93,6 +95,8 @@ This is because い-adjectives already conjugate on their own — they don't nee
 - **この料理はおいしかったです。** (Kono ryouri wa oishikatta desu.) — This food was delicious.
 
 <!-- quiz:{"type":"multiple-choice","question":"Which is the correct polite past form of おいしい?","options":["おいしいでした","おいしかったです","おいしいました","おいしいだった"],"answer":1} -->
+
+<!-- grammar-card: {"rule":"An い-adjective conjugates itself and only then takes です","hint":"おいしい, past","example":"この料理は___。","answer":"おいしかったです","explanation":"The past is おいしかった, with です added afterwards — おいしいでした is never possible."} -->
 
 ## When to Use Polite vs Casual
 

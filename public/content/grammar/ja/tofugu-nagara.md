@@ -144,6 +144,8 @@ by 陳 芬慧
 
 <!-- quiz: {"type":"multiple-choice","question":"What does \"小さい**ながら**甘いいちご。\" mean?","options":["Though small, it's a sweet strawberry.","Although he says he is not popular with girls, he always has a girlfriend.","Even though I knew about her affair, I didn't say anything.","Though incomplete, it's a beautiful work of art."],"answer":0} -->
 
+<!-- grammar-card: {"rule":"ながら can mean 'even though', not only 'while'","hint":"ながら","example":"彼はモテないと言い___、いつも彼女がいる。","answer":"ながら","explanation":"Here ながら contrasts his claim with the facts rather than marking two simultaneous actions."} -->
+
 ## Sources
 
 - [Tofugu](https://www.tofugu.com/japanese-grammar/nagara/)

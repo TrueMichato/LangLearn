@@ -40,6 +40,8 @@ Expresses **contradiction or opposition** — the second clause goes against wha
 - **Погода плохая, но мы всё равно пойдём.** *(Pogoda plokhaya, no my vsyo ravno poydyom.)* — The weather is bad, but we'll go anyway.
 - **Он богатый, но несчастный.** *(On bogatyy, no neschastnyy.)* — He is rich but unhappy.
 
+<!-- grammar-card: {"rule":"И joins items of equal weight","hint":"и = and","example":"Я люблю чай ___ кофе.","answer":"и","explanation":"Tea and coffee are simply added together with no contrast, which is what и expresses."} -->
+
 ---
 
 ## The Difference Between А and Но
@@ -61,6 +63,10 @@ This is one of the most common sources of confusion for learners. Here is the ke
 - **Мама работает, а бабушка на пенсии.** *(Mama rabotayet, a babushka na pensii.)* — Mom works, while grandma is retired.
 
 <!-- quiz:{"type":"multiple-choice","question":"Which conjunction fits: 'Он хотел прийти, ___ не смог.'?","options":["и","а","но","что"],"answer":2} -->
+
+<!-- grammar-card: {"rule":"Но marks a genuine contradiction between the clauses","hint":"а = whereas, но = but","example":"Я устал, ___ не сплю.","answer":"но","explanation":"Being tired yet not sleeping is a real opposition, so но is required instead of а."} -->
+
+<!-- grammar-card: {"rule":"А contrasts two facts without setting them against each other","hint":"а = whereas, но = but","example":"Я читаю, ___ он спит.","answer":"а","explanation":"Reading and sleeping merely differ, so Russian uses а rather than the adversative но."} -->
 
 ---
 

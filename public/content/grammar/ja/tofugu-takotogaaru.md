@@ -185,6 +185,10 @@ Let's take a look at a scenario using まだ with たこと（が）ない. This
 
 In this situation, you'll usually put ん between ない and です (or its more casual equivalent だ) to demonstrate that you're explaining yourself by supplying information that your audience doesn't have. If you'd like to know more about ん, check out our grammar page んだ・んです.
 
+<!-- grammar-card: {"rule":"んです adds explanatory nuance","hint":"の → ?","example":"納豆、まだ食べたことがない___です。","answer":"ん","explanation":"ないんです explains the speaker's situation rather than merely stating it."} -->
+
+<!-- grammar-card: {"rule":"The past form plus ことがある reports a past experience","hint":"安かった + ことがある","example":"日本行きのチケットが___。","answer":"安かったことがある","explanation":"安かったことがある says there have been times when the tickets were cheap."} -->
+
 ## Beyond The Basics
 
 ### 〜たことがある For Asking About Past Experiences
@@ -323,6 +327,8 @@ by Robert Fiengo and William McClure
 <!-- quiz: {"type":"multiple-choice","question":"What does \"見**たことがある**。\" mean?","options":["I've seen it.","I've heard of it.","I've been to Japan.","There were times when a ticket to Japan was more reasonably priced."],"answer":0} -->
 
 <!-- quiz: {"type":"multiple-choice","question":"What does \"日本に**行ったことがある**。\" mean?","options":["I've been to Japan.","I've heard of it.","I've seen it.","There were times when a ticket to Japan was more reasonably priced."],"answer":0} -->
+
+<!-- grammar-card: {"rule":"は can replace が to add contrast","hint":"が → ?","example":"日本に行ったこと___ありますか？","answer":"は","explanation":"ことはありますか asks specifically about that experience, setting it apart from others."} -->
 
 ## Sources
 

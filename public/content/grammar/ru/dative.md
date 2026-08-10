@@ -69,6 +69,8 @@ The most basic use of the dative is to mark the **indirect object** — the pers
 
 <!-- quiz:{"type":"multiple-choice","question":"«Я дал книгу ___» (I gave the book to my brother). Choose the dative of «брат».","options":["брат","брата","брату","братом"],"answer":2} -->
 
+<!-- grammar-card: {"rule":"The dative marks the indirect object — the recipient","hint":"друг (friend)","example":"Я дал книгу ___.","answer":"другу","explanation":"The book goes to the friend, so masculine друг takes the dative ending -у."} -->
+
 ---
 
 ## 3. Dative Personal Pronouns
@@ -94,6 +96,8 @@ The dative forms of personal pronouns are used constantly in Russian:
 **Передай ей привет.** *(Pereday yey privet.)* — Give her my regards.
 
 **Преподаватель объяснил нам тему.** *(Prepodavatel' ob"yasnil nam temu.)* — The professor explained the topic to us.
+
+<!-- grammar-card: {"rule":"Personal pronouns have their own dative forms to memorise","hint":"они → ?","example":"Дайте ___ время.","answer":"им","explanation":"Они becomes им in the dative, because they are the ones being given time."} -->
 
 ---
 
@@ -353,6 +357,8 @@ Here are everyday phrases that use the dative case:
 | Permission | dative + можно/нельзя | **мне** можно? |
 | Toward | к + dative | к **врачу** |
 | Along | по + dative | по **улице** |
+
+<!-- grammar-card: {"rule":"Permission and prohibition put the person in the dative","hint":"я → ?","example":"___ можно?","answer":"мне","explanation":"Можно has no subject, so the person being permitted appears in the dative: я becomes мне."} -->
 
 ---
 

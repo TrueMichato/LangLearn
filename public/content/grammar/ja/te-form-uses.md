@@ -87,6 +87,8 @@ In casual speech, ている is often shortened:
 
 <!-- quiz:{"type":"multiple-choice","question":"What does 知っています mean?","options":["I am getting to know","I know","I am studying","I knew"],"answer":1} -->
 
+<!-- grammar-card: {"rule":"ている with an action verb describes something in progress","hint":"読む + いる, polite","example":"今(いま)、本(ほん)を読(よ)ん___。","answer":"でいます","explanation":"読んでいます says the reading is happening at this moment."} -->
+
 ## てある — Resultant State of Transitive Verbs
 
 てある is formed by adding **ある** to the **て form** of a **transitive verb**. It describes a state that exists as the result of someone's deliberate action.
@@ -131,6 +133,8 @@ The object of the action is marked with **が** (not を):
 > 💡 てある always implies that someone **intentionally** performed the action, and the result remains.
 
 <!-- quiz:{"type":"multiple-choice","question":"Which particle typically marks the object in a てある sentence?","options":["を","に","が","で"],"answer":2} -->
+
+<!-- grammar-card: {"rule":"てある marks a state someone set up on purpose","hint":"開ける + ある, polite","example":"窓(まど)が開(あ)け___。","answer":"てあります","explanation":"開けてあります says someone opened the window and deliberately left it that way."} -->
 
 ## ておく — Doing Something in Advance
 
@@ -190,6 +194,8 @@ In casual speech, ておく contracts to **とく**:
 > Let's leave the window open.
 
 <!-- quiz:{"type":"multiple-choice","question":"What does 買っておく mean?","options":["To finish buying","To keep buying","To buy in advance","To want to buy"],"answer":2} -->
+
+<!-- grammar-card: {"rule":"ておく means preparing something ahead of time","hint":"する + おく, polite","example":"明日(あした)の会議(かいぎ)の資料(しりょう)を準備(じゅんび)し___。","answer":"ておきます","explanation":"準備しておきます gets the documents ready before the meeting happens."} -->
 
 ## ていく & てくる — Directional Continuity
 
@@ -253,6 +259,8 @@ Describes an action that **moves toward** the speaker or has **continued from th
 | てくる | Toward speaker | From past to now | 持ってくる (bring here) |
 
 <!-- quiz:{"type":"multiple-choice","question":"日本語が上手になってきました means:","options":["My Japanese will get better","My Japanese has been getting better","I started studying Japanese","I want to improve my Japanese"],"answer":1} -->
+
+<!-- grammar-card: {"rule":"てくる traces a change forward up to the present","hint":"なる + くる, polite past","example":"だんだん暖(あたた)かくなっ___。","answer":"てきました","explanation":"なってきました says it has been gradually warming up until now."} -->
 
 ## All Patterns at a Glance
 

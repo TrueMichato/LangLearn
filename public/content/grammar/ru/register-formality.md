@@ -48,6 +48,10 @@ Russian uses two pronouns for "you":
 
 <!-- quiz:{"type":"multiple-choice","question":"When speaking to your boss for the first time, you should use:","options":["ты — it shows friendliness","Вы — it shows respect","Either one — it doesn't matter","ты for male bosses, Вы for female"],"answer":1} -->
 
+<!-- grammar-card: {"rule":"Вы always takes plural verb agreement","hint":"ты / Вы","example":"___ говорите по-русски?","answer":"Вы","explanation":"Говорите is the plural ending, which pairs with the polite Вы rather than ты."} -->
+
+<!-- grammar-card: {"rule":"The pronoun must match the ending the verb already carries","hint":"ты / Вы","example":"Как ___ себя чувствуешь?","answer":"ты","explanation":"Чувствуешь is the ты-form, so the sentence can only take ты."} -->
+
 ---
 
 ## 2. Переход на «ты» — Switching to Informal

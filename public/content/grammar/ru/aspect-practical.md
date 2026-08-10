@@ -38,6 +38,8 @@ The imperfective aspect focuses on the **process**, **duration**, **repetition**
 
 <!-- quiz:{"type":"multiple-choice","question":"'Он каждый день бегал' uses imperfective because the action is:","options":["Completed once","A repeated habit","A future plan","An urgent command"],"answer":1} -->
 
+<!-- grammar-card: {"rule":"A background action interrupted by another takes the imperfective","hint":"читать / прочитать","example":"Я ___, когда ты позвонил.","answer":"читал","explanation":"The reading was still under way when the call came, so the imperfective sets the scene."} -->
+
 ---
 
 ## 2. When to Use Perfective
@@ -71,6 +73,8 @@ The perfective aspect focuses on the **result**, **completion**, **single event*
 **Я прочитаю эту книгу завтра.** *(Ya prochitáyu étu knígu závtra.)* — I'll read (finish) this book tomorrow.
 
 **Мы решим эту проблему.** *(My reshím étu problémy.)* — We'll solve this problem.
+
+<!-- grammar-card: {"rule":"An action with a reached result takes the perfective","hint":"готовить / приготовить","example":"Она ___ ужин и села за стол.","answer":"приготовила","explanation":"Dinner was finished before she sat down, so the perfective приготовила reports the completed result."} -->
 
 ---
 
@@ -127,6 +131,8 @@ Negation interacts with aspect in important ways:
 > Perfective in negative commands is rare and implies warning against an accidental action: **Не урони!** *(Ne uroní!)* — Don't drop it! (be careful)
 
 <!-- quiz:{"type":"multiple-choice","question":"'Она не звонила' (imperfective negative) means:","options":["She didn't finish the call","She hasn't called at all","She will not call","She was calling"],"answer":1} -->
+
+<!-- grammar-card: {"rule":"Denying that something ever happened uses the imperfective","hint":"читать / прочитать","example":"Я никогда не ___ эту книгу.","answer":"читал","explanation":"Никогда denies the activity as such rather than one particular completed act, so читал is imperfective."} -->
 
 ---
 

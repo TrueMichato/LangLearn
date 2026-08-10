@@ -20,7 +20,7 @@ The **الِاسْتِثْنَاءُ** (al-istithnāʾ) — exception marks some
 
 In a complete affirmative sentence, the exception after **إِلَّا** (illā) — except is often accusative: **طَالِبًا** (ṭāliban) — a student. In a negative “not...except” sentence, English often uses “only.”
 
-<!-- grammar-card: {"rule":"إِلَّا (illā) introduces an exception; with negation, it often creates the meaning “only.”","hint":"مَا ... إِلَّا often means “nothing/no one except.”","example":"Complete “only Zayd came”: مَا جَاءَ إِلَّا ___ (mā jāʾa illā ___).","answer":"زَيْدٌ (zaydun) — Zayd","explanation":"مَا جَاءَ إِلَّا زَيْدٌ (mā jāʾa illā zaydun) literally says “no one came except Zayd,” meaning “only Zayd came.”"} -->
+<!-- grammar-card: {"rule":"إِلَّا (illā) introduces an exception; with negation, it often creates the meaning “only.”","hint":"مَا ... إِلَّا often means “nothing/no one except.”","example":"Complete “only Zayd came”: مَا جَاءَ إِلَّا ___ (mā jāʾa illā ___).","answer":"زَيْدٌ (zaydun)","explanation":"مَا جَاءَ إِلَّا زَيْدٌ (mā jāʾa illā zaydun) literally says “no one came except Zayd,” meaning “only Zayd came.”"} -->
 
 ## Practice patterns
 
@@ -33,7 +33,7 @@ The same particle can feel like “except” or “only” depending on negation
 
 <!-- quiz: {"type":"multiple-choice","question":"Which sentence means “I read only one book”?","options":["لَمْ أَقْرَأْ إِلَّا كِتَابًا (lam aqraʾ illā kitāban)","قَرَأْتُ الْكُتُبَ إِلَّا كِتَابًا (qaraʾtu al-kutuba illā kitāban)","كِتَابٌ وَاحِدٌ قَرَأَ (kitābun wāḥidun qaraʾa)","إِلَّا قَرَأْتُ كِتَابًا (illā qaraʾtu kitāban)"],"answer":0} -->
 
-<!-- grammar-card: {"rule":"In many affirmative complete exceptions, the word after إِلَّا (illā) is accusative.","hint":"Except one student: إِلَّا طَالِبًا.","example":"Complete “the teachers came except one teacher”: جَاءَ الْمُعَلِّمُونَ إِلَّا ___ (jāʾa al-muʿallimūna illā ___).","answer":"مُعَلِّمًا (muʿalliman) — one teacher","explanation":"جَاءَ الْمُعَلِّمُونَ إِلَّا مُعَلِّمًا (jāʾa al-muʿallimūna illā muʿalliman) uses an accusative exception in a complete affirmative sentence."} -->
+<!-- grammar-card: {"rule":"In many affirmative complete exceptions, the word after إِلَّا (illā) is accusative.","hint":"Except one student: إِلَّا طَالِبًا.","example":"Complete “the teachers came except one teacher”: جَاءَ الْمُعَلِّمُونَ إِلَّا ___ (jāʾa al-muʿallimūna illā ___).","answer":"مُعَلِّمًا (muʿalliman)","explanation":"one teacher — جَاءَ الْمُعَلِّمُونَ إِلَّا مُعَلِّمًا (jāʾa al-muʿallimūna illā muʿalliman) uses an accusative exception in a complete affirmative sentence."} -->
 
 ## Sources
 

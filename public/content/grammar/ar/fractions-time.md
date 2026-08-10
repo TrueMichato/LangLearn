@@ -26,7 +26,7 @@ A percentage is **نِسْبَةٌ مِئَوِيَّةٌ** (nisbatun miʾawiyya
 - **خَمْسَةٌ وَعِشْرُونَ فِي المِئَةِ** (khamsatun wa-ʿishrūna fī al-miʾati) — twenty-five percent.
 - **سَبْعَةٌ وَنِصْفٌ فِي المِئَةِ** (sabʿatun wa-niṣfun fī al-miʾati) — seven and a half percent.
 
-<!-- grammar-card: {"rule": "Percentages often use فِي المِئَةِ (fī al-miʾati) after the number.", "hint": "Number plus in the hundred.", "example": "Complete “twenty-five percent”: خَمْسَةٌ وَعِشْرُونَ ___ (khamsatun wa-ʿishrūna ___).", "answer": "فِي المِئَةِ (fī al-miʾati) — percent", "explanation": "فِي المِئَةِ (fī al-miʾati) literally means “in the hundred” and is a common formal percentage expression."} -->
+<!-- grammar-card: {"rule":"Percentages often use فِي المِئَةِ (fī al-miʾati) after the number.","hint":"Number plus in the hundred.","example":"Complete “twenty-five percent”: خَمْسَةٌ وَعِشْرُونَ ___ (khamsatun wa-ʿishrūna ___).","answer":"فِي المِئَةِ (fī al-miʾati)","explanation":"فِي المِئَةِ (fī al-miʾati) literally means “in the hundred” and is a common formal percentage expression."} -->
 
 ## Telling time
 
@@ -42,7 +42,7 @@ Time uses **السَّاعَةُ** (as-sāʿatu) — the hour/clock. Because **�
 
 <!-- quiz: {"type": "multiple-choice", "question": "Why is الوَاحِدَةُ (al-wāḥidatu) feminine in السَّاعَةُ الوَاحِدَةُ?", "options": ["Because it agrees with سَاعَةٌ (sāʿatun) — hour", "Because all numbers are feminine in time", "Because it is after a preposition", "Because it is a percentage"], "answer": 0} -->
 
-<!-- grammar-card: {"rule": "Clock hours usually use feminine ordinal forms because سَاعَةٌ (sāʿatun) is feminine.", "hint": "Hour word is feminine.", "example": "Complete “three o’clock”: السَّاعَةُ ___ (as-sāʿatu ___).", "answer": "الثَّالِثَةُ (ath-thālithatu) — the third, feminine", "explanation": "The understood noun is سَاعَةٌ (sāʿatun), so the hour number is feminine: الثَّالِثَةُ (ath-thālithatu)."} -->
+<!-- grammar-card: {"rule":"Clock hours usually use feminine ordinal forms because سَاعَةٌ (sāʿatun) is feminine.","hint":"Hour word is feminine.","example":"Complete “three o’clock”: السَّاعَةُ ___ (as-sāʿatu ___).","answer":"الثَّالِثَةُ (ath-thālithatu)","explanation":"the third, feminine — The understood noun is سَاعَةٌ (sāʿatun), so the hour number is feminine: الثَّالِثَةُ (ath-thālithatu)."} -->
 
 ## Minutes in words
 
@@ -54,7 +54,7 @@ Minutes are **دَقَائِقُ** (daqāʾiqu) — minutes. The number before t
 
 <!-- quiz: {"type": "multiple-choice", "question": "Which phrase means “a quarter to five”?", "options": ["السَّاعَةُ الخَامِسَةُ إِلَّا رُبْعًا (as-sāʿatu al-khāmisatu illā rubʿan)", "السَّاعَةُ الرَّابِعَةُ وَالنِّصْفُ (as-sāʿatu ar-rābiʿatu wa-n-niṣfu)", "السَّاعَةُ الخَامِسَةُ وَالرُّبْعُ (as-sāʿatu al-khāmisatu wa-r-rubʿu)", "السَّاعَةُ رُبْعٌ خَامِسٌ (as-sāʿatu rubʿun khāmisun)"], "answer": 0} -->
 
-<!-- grammar-card: {"rule": "إِلَّا رُبْعًا (illā rubʿan) means “except a quarter,” used for “a quarter to.”", "hint": "Next hour minus quarter.", "example": "Complete “a quarter to five”: السَّاعَةُ الخَامِسَةُ ___ (as-sāʿatu al-khāmisatu ___).", "answer": "إِلَّا رُبْعًا (illā rubʿan) — except a quarter", "explanation": "Arabic says “the fifth hour except a quarter” for 4:45: السَّاعَةُ الخَامِسَةُ إِلَّا رُبْعًا."} -->
+<!-- grammar-card: {"rule":"إِلَّا رُبْعًا (illā rubʿan) means “except a quarter,” used for “a quarter to.”","hint":"Next hour minus quarter.","example":"Complete “a quarter to five”: السَّاعَةُ الخَامِسَةُ ___ (as-sāʿatu al-khāmisatu ___).","answer":"إِلَّا رُبْعًا (illā rubʿan)","explanation":"Arabic says “the fifth hour except a quarter” for 4:45: السَّاعَةُ الخَامِسَةُ إِلَّا رُبْعًا."} -->
 
 ## Sources
 

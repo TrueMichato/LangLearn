@@ -186,6 +186,10 @@ So if you want to be more explicit about *what* you're inquiring about, you may 
 
   - I wonder **(around) what time** we can go back home.
 
+<!-- grammar-card: {"rule":"くらい can follow 後 to approximate a future point","hint":"後 + くらいに","example":"半年___日本に行く予定です。","answer":"後くらいに","explanation":"半年後くらいに means in about six months' time."} -->
+
+<!-- grammar-card: {"rule":"くらいに makes a point in time approximate","hint":"くらい + に","example":"三月___日本に行く予定です。","answer":"くらいに","explanation":"三月くらいに means around March, with に marking it as the time of the trip."} -->
+
 ## Beyond the Basics
 
 ### 〜くらい for "Almost the Same As…"
@@ -373,7 +377,9 @@ pp. 220-224, 228-235
 
 <!-- quiz: {"type":"multiple-choice","question":"What does \"六時**頃に**来て。\" mean?","options":["Come over at **around** six o'clock.","I'm planning to go to Japan **around** March.","I'm planning to go to Japan **in about** half a year.","I went to Japan last March. And **after about** six months, I went back to America."],"answer":0} -->
 
-<!-- quiz: {"type":"multiple-choice","question":"What does \"三月**くらいに**日本に行く予定です。\" mean?","options":["I'm planning to go to Japan **around** March.","Come over at **around** six o'clock.","Come over at **around** six o'clock.","I'm planning to go to Japan **in about** half a year."],"answer":0} -->
+<!-- quiz: {"type":"multiple-choice","question":"What does \"三月**くらいに**日本に行く予定です。\" mean?","options":["I'm planning to go to Japan **around** March.","Come over at **around** six o'clock.","I went to Japan in March.","I'm planning to go to Japan **in about** half a year."],"answer":0} -->
+
+<!-- grammar-card: {"rule":"くらい compares one thing's size to another","hint":"くらい","example":"ボールの大きさは、アボカド___だよ。","answer":"くらい","explanation":"アボカドくらい means roughly the size of an avocado."} -->
 
 ## Sources
 

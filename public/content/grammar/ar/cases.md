@@ -24,7 +24,7 @@ Case endings show relationships:
 - **رَأَيْتُ الْوَلَدَ** (raʾaytu al-walada) — I saw the boy: object accusative.
 - **مَرَرْتُ بِالْوَلَدِ** (marartu bi-l-waladi) — I passed by the boy: after preposition, genitive.
 
-<!-- grammar-card: {"rule": "Subjects are typically nominative in MSA.", "hint": "Look for -u/-un in full vowels.", "example": "Complete “The boy came”: جَاءَ الْوَلَد___ (jāʾa al-walad___).", "answer": "ـُ (-u) — nominative ending", "explanation": "جَاءَ الْوَلَدُ (jāʾa al-waladu) — the boy came uses nominative subject."} -->
+<!-- grammar-card: {"rule":"Subjects are typically nominative in MSA.","hint":"Look for -u/-un in full vowels.","example":"Complete “The boy came”: جَاءَ الْوَلَد___ (jāʾa al-walad___).","answer":"ـُ (-u)","explanation":"nominative ending — جَاءَ الْوَلَدُ (jāʾa al-waladu) — the boy came uses nominative subject."} -->
 
 ## Practice patterns
 
@@ -32,7 +32,7 @@ In pause, speakers often do not pronounce final case vowels. But in full MSA rea
 
 <!-- quiz: {"type": "multiple-choice", "question": "Which form is genitive definite?", "options": ["الْوَلَدُ (al-waladu) — the boy, nominative", "الْوَلَدَ (al-walada) — the boy, accusative", "الْوَلَدِ (al-waladi) — the boy, genitive", "وَلَدًا (waladan) — a boy, accusative"], "answer": 2} -->
 
-<!-- grammar-card: {"rule": "Nouns after prepositions are genitive.", "hint": "Preposition + noun-i.", "example": "Complete “by the boy”: بِالْوَلَد___ (bi-l-walad___).", "answer": "ـِ (-i) — genitive ending", "explanation": "بِالْوَلَدِ (bi-l-waladi) — by/with the boy uses genitive after بِـ (bi-)."} -->
+<!-- grammar-card: {"rule":"Nouns after prepositions are genitive.","hint":"Preposition + noun-i.","example":"Complete “by the boy”: بِالْوَلَد___ (bi-l-walad___).","answer":"ـِ (-i)","explanation":"genitive ending — بِالْوَلَدِ (bi-l-waladi) — by/with the boy uses genitive after بِـ (bi-)."} -->
 
 ## Sources
 

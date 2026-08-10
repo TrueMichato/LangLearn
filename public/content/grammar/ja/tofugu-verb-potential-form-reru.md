@@ -56,7 +56,7 @@ To begin, let's examine how 〜れる is added to a verb. Depending on the verb'
   
    **Irregular**
    
-   ** 来る(く　)**　→　** 来られる(こ　　　)** (** 来れる(こ　　)**)
+   **来る(く　)**　→　 **来られる(こ　　　)** ( **来れる(こ　　)**)
 
 **する**　→　**できる**
    
@@ -157,6 +157,10 @@ Let's look at another example. Imagine your mom says to you:
   - This bowl **is usable** as a hat.
 
 Your classmate eats erasers, and your mom wears a bowl on her head? Sounds like you are surrounded by interesting people! Anyway, it's more important to note that in this type of context, the particle は is often used instead of が or を to neutrally state whatever has the "-bility" attribute.
+
+<!-- grammar-card: {"rule":"The object of a potential verb takes が","hint":"飲む → ?","example":"日本では公園でお酒が___。","answer":"飲める","explanation":"お酒が飲める says drinking in parks is possible, with が rather than を."} -->
+
+<!-- grammar-card: {"rule":"Godan verbs form the potential by shifting the final う sound to える","hint":"読む → ?","example":"遠くからでも小さい文字が___。","answer":"読める","explanation":"読む becomes 読める: the small letters can be read even from far away."} -->
 
 ## Beyond the Basics
 

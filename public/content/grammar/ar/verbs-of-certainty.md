@@ -39,7 +39,7 @@ The verb itself tells you how certain the speaker is. ظَنَّ (ẓanna) often
 
 <!-- quiz: {"type":"multiple-choice","question":"Which verb most clearly expresses certainty rather than mere assumption?","options":["عَلِمَ (ʿalima) — to know","ظَنَّ (ẓanna) — to suppose","حَسِبَ (ḥasiba) — to reckon","تَوَهَّمَ (tawahhama) — to imagine"],"answer":0} -->
 
-<!-- grammar-card: {"rule":"عَلِمَ (ʿalima) may introduce two objects when it means to know that something is so.","hint":"Translate with knew that, but watch the two accusatives.","example":"Complete: I knew the news was true: عَلِمْتُ ___ ___ (ʿalimtu ___ ___).","answer":"الْخَبَرَ صَحِيحًا (al-khabara ṣaḥīḥan) — the news true","explanation":"عَلِمْتُ الْخَبَرَ صَحِيحًا has two accusative objects: الْخَبَرَ and صَحِيحًا."} -->
+<!-- grammar-card: {"rule":"عَلِمَ (ʿalima) may introduce two objects when it means to know that something is so.","hint":"Translate with knew that, but watch the two accusatives.","example":"Complete: I knew the news was true: عَلِمْتُ ___ ___ (ʿalimtu ___ ___).","answer":"الْخَبَرَ صَحِيحًا (al-khabara ṣaḥīḥan)","explanation":"the news true — عَلِمْتُ الْخَبَرَ صَحِيحًا has two accusative objects: الْخَبَرَ and صَحِيحًا."} -->
 
 ## Practice patterns
 

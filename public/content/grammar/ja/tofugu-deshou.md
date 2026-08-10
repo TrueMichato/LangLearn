@@ -114,6 +114,10 @@ To make past sentences, you have to change the form of the words that come befor
 
   - (I assume) Koichi bought a TV.
 
+<!-- grammar-card: {"rule":"でしょう is the polite counterpart of だろう","hint":"だ, past","example":"昨夜は雨___でしょう。","answer":"だった","explanation":"だった supplies the past tense and でしょう adds the polite guess about last night."} -->
+
+<!-- grammar-card: {"rule":"でしょう follows the plain form of a verb","hint":"買う, past","example":"コウイチはテレビを___でしょう。","answer":"買った","explanation":"買ったでしょう guesses that he probably bought a television."} -->
+
 ## でしょう for Speculation
 
 While these sentences are grammatically correct, you might not often hear people use でしょう to speculate something. Indeed if you say 明日は雨でしょう to your friend, it sounds like you are imitating a weather forecast. Why?

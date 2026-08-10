@@ -89,6 +89,10 @@ The fundamental use of さ nouns is to express amounts that are objectively meas
 
   - Check the **depth** of the swimming pool before you get in.
 
+<!-- grammar-card: {"rule":"さ attaches to an い-adjective by replacing its final い","hint":"深い → ?","example":"プールの___を確認してから入ろう。","answer":"深さ","explanation":"深い drops い and takes さ, giving the pool's measurable depth."} -->
+
+<!-- grammar-card: {"rule":"さ produces the objective, measurable noun","hint":"重い → ?","example":"カバンの___を測りました。","answer":"重さ","explanation":"測る calls for a number, so 重さ is used rather than the subjective 重み."} -->
+
 ## Beyond the Basics
 
 ### 〜さ for Presenting Subjective Qualities as Objective Truths
@@ -155,6 +159,8 @@ by Maggie Sensei
 <!-- quiz: {"type":"multiple-choice","question":"What does \"プールの**深さ**を確認してから入ろう。\" mean?","options":["Check the **depth** of the swimming pool before you get in.","I measured the **weight** of my luggage before going to the airport.","I can imagine how difficult the test is going to be.","The movie is lacking an element that intrigues me."],"answer":0} -->
 
 <!-- quiz: {"type":"multiple-choice","question":"What does \"テストの**難しさ**を予想する。\" mean?","options":["I can imagine how difficult the test is going to be.","I measured the **weight** of my luggage before going to the airport.","Check the **depth** of the swimming pool before you get in.","The movie is lacking an element that intrigues me."],"answer":0} -->
+
+<!-- grammar-card: {"rule":"み is used when the quality is felt rather than measured","hint":"面白い → ?","example":"あの映画は___に欠けている。","answer":"面白み","explanation":"面白み is a sense of interest that a film can lack; 面白さ would imply a measurable amount."} -->
 
 ## Sources
 

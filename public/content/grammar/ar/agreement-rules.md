@@ -26,7 +26,7 @@ A **جَمْعٌ لِغَيْرِ العَاقِلِ** (jamʿun li-ghayri al-ʿ�
 - **الأَبْوَابُ مَفْتُوحَةٌ** (al-abwābu maftūḥatun) — the doors are open.
 - **الأَوْرَاقُ سَقَطَتْ** (al-awrāqu saqaṭat) — the papers fell.
 
-<!-- grammar-card: {"rule": "Non-human plurals often take feminine singular agreement.", "hint": "Books act like she-singular for adjectives.", "example": "Complete “the new books”: الكُتُبُ ___ (al-kutubu ___).", "answer": "الجَدِيدَةُ (al-jadīdatu) — the new, feminine singular", "explanation": "Because الكُتُبُ (al-kutubu) is a non-human plural, its adjective is often feminine singular: الجَدِيدَةُ (al-jadīdatu)."} -->
+<!-- grammar-card: {"rule":"Non-human plurals often take feminine singular agreement.","hint":"Books act like she-singular for adjectives.","example":"Complete “the new books”: الكُتُبُ ___ (al-kutubu ___).","answer":"الجَدِيدَةُ (al-jadīdatu)","explanation":"the new, feminine singular — Because الكُتُبُ (al-kutubu) is a non-human plural, its adjective is often feminine singular: الجَدِيدَةُ (al-jadīdatu)."} -->
 
 <!-- quiz: {"type": "multiple-choice", "question": "Which phrase correctly says “these houses are big”?", "options": ["هَذِهِ البُيُوتُ كَبِيرَةٌ (hādhihi al-buyūtu kabīratun)", "هَؤُلَاءِ البُيُوتُ كَبِيرُونَ (hāʾulāʾi al-buyūtu kabīrūna)", "هَذَا البُيُوتُ كَبِيرٌ (hādhā al-buyūtu kabīrun)", "هَذِهِ البُيُوتُ كَبِيرُونَ (hādhihi al-buyūtu kabīrūna)"], "answer": 0} -->
 
@@ -40,7 +40,7 @@ For humans, use plural agreement when the group is clearly human.
 | **المُعَلِّمَاتُ الجَدِيدَاتُ** (al-muʿallimātu al-jadīdātu) — the new female teachers | feminine plural |
 | **هَؤُلَاءِ أَطِبَّاءُ مَاهِرُونَ** (hāʾulāʾi aṭibbāʾu māhirūna) — these are skilled doctors | human plural demonstrative |
 
-<!-- grammar-card: {"rule": "Human plurals usually keep plural agreement.", "hint": "People are not treated as feminine singular.", "example": "Complete “the new female teachers”: المُعَلِّمَاتُ ___ (al-muʿallimātu ___).", "answer": "الجَدِيدَاتُ (al-jadīdātu) — the new, feminine plural", "explanation": "Because the noun refers to human females, use feminine plural agreement: الجَدِيدَاتُ (al-jadīdātu)."} -->
+<!-- grammar-card: {"rule":"Human plurals usually keep plural agreement.","hint":"People are not treated as feminine singular.","example":"Complete “the new female teachers”: المُعَلِّمَاتُ ___ (al-muʿallimātu ___).","answer":"الجَدِيدَاتُ (al-jadīdātu)","explanation":"the new, feminine plural — Because the noun refers to human females, use feminine plural agreement: الجَدِيدَاتُ (al-jadīdātu)."} -->
 
 ## Broken plurals and meaning
 
@@ -48,7 +48,7 @@ The shape of the plural is not the main issue; meaning is. **مَسَاجِدُ*
 
 <!-- quiz: {"type": "multiple-choice", "question": "Which phrase uses the non-human plural rule?", "options": ["مَسَاجِدُ قَدِيمَةٌ (masājidu qadīmatun) — old mosques", "رِجَالٌ أَقْوِيَاءُ (rijālun aqwiyāʾu) — strong men", "طَالِبَاتٌ مُجْتَهِدَاتٌ (ṭālibātun mujtahidātun) — hardworking female students", "مُهَنْدِسُونَ جُدُدٌ (muhandisūna jududun) — new engineers"], "answer": 0} -->
 
-<!-- grammar-card: {"rule": "Use meaning, not just plural shape, to decide agreement.", "hint": "Non-human plural: feminine singular.", "example": "Complete “old mosques”: مَسَاجِدُ ___ (masājidu ___).", "answer": "قَدِيمَةٌ (qadīmatun) — old, feminine singular", "explanation": "مَسَاجِدُ (masājidu) is a non-human plural, so the adjective can be feminine singular: قَدِيمَةٌ (qadīmatun)."} -->
+<!-- grammar-card: {"rule":"Use meaning, not just plural shape, to decide agreement.","hint":"Non-human plural: feminine singular.","example":"Complete “old mosques”: مَسَاجِدُ ___ (masājidu ___).","answer":"قَدِيمَةٌ (qadīmatun)","explanation":"old, feminine singular — مَسَاجِدُ (masājidu) is a non-human plural, so the adjective can be feminine singular: قَدِيمَةٌ (qadīmatun)."} -->
 
 ## Sources
 

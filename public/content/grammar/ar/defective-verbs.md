@@ -20,7 +20,7 @@ The **الْفِعْلُ النَّاقِصُ** (al-fiʿl an-nāqiṣ) — defec
 
 When endings are added, the final weak sound may change: **مَشَى** (mashā) — he walked, but **مَشَيْتُ** (mashaytu) — I walked. In the jussive, the final long vowel often disappears: **لَمْ يَمْشِ** (lam yamshi) — he did not walk.
 
-<!-- grammar-card: {"rule":"Defective verbs have a weak final root sound, so final vowels and letters can change with endings.","hint":"Watch مَشَى become مَشَيْتُ.","example":"Complete “I walked”: ___ (mashaytu).","answer":"مَشَيْتُ (mashaytu) — I walked","explanation":"مَشَيْتُ (mashaytu) shows how the final weak part of مَشَى (mashā) changes before the suffix تُ (-tu)."} -->
+<!-- grammar-card: {"rule":"Defective verbs have a weak final root sound, so final vowels and letters can change with endings.","hint":"Watch مَشَى become مَشَيْتُ.","example":"Complete “I walked”: ___ (mashaytu).","answer":"مَشَيْتُ","explanation":"I walked — مَشَيْتُ (mashaytu) shows how the final weak part of مَشَى (mashā) changes before the suffix تُ (-tu)."} -->
 
 ## Practice patterns
 
@@ -34,7 +34,7 @@ These changes are predictable once you know that the final root sound is weak.
 
 <!-- quiz: {"type":"multiple-choice","question":"Which sentence means “he did not walk”?","options":["لَمْ يَمْشِ (lam yamshi)","لَنْ يَمْشِيَ (lan yamshiya)","يَمْشِي (yamshī)","مَشَى (mashā)"],"answer":0} -->
 
-<!-- grammar-card: {"rule":"In the jussive, a defective verb often loses the final long vowel.","hint":"لَمْ يَمْشِ is shorter than يَمْشِي.","example":"Complete “he did not call”: لَمْ ___ (lam ___).","answer":"يَدْعُ (yadʿu) — call","explanation":"لَمْ يَدْعُ (lam yadʿu) means “he did not call”; the final long vowel of يَدْعُو (yadʿū) is shortened."} -->
+<!-- grammar-card: {"rule":"In the jussive, a defective verb often loses the final long vowel.","hint":"لَمْ يَمْشِ is shorter than يَمْشِي.","example":"Complete “he did not call”: لَمْ ___ (lam ___).","answer":"يَدْعُ (yadʿu)","explanation":"لَمْ يَدْعُ (lam yadʿu) means “he did not call”; the final long vowel of يَدْعُو (yadʿū) is shortened."} -->
 
 ## Sources
 

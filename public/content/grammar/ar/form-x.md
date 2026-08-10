@@ -19,7 +19,7 @@ The basic pattern is اِسْتَفْعَلَ (istafʿala) — he sought / consi
 
 Many Form X verbs mean asking for the root idea. اِسْتَأْذَنَ (istaʾdhana) — he asked permission, اِسْتَغَاثَ (istaghātha) — he sought help, and اِسْتَغْفَرَ (istaghfara) — he sought forgiveness all fit this pattern.
 
-<!-- grammar-card: {"rule":"Form X اِسْتَفْعَلَ (istafʿala) often expresses seeking or requesting the root meaning.","hint":"The prefix اِسْتَـ (ista-) is the clue.","example":"Complete “he sought forgiveness”: ___ (istaghfara) — he sought forgiveness.","answer":"اِسْتَغْفَرَ (istaghfara) — he sought forgiveness","explanation":"اِسْتَغْفَرَ (istaghfara) uses Form X to mean seeking غُفْرَانٌ (ghufrānun) — forgiveness."} -->
+<!-- grammar-card: {"rule":"Form X اِسْتَفْعَلَ (istafʿala) often expresses seeking or requesting the root meaning.","hint":"The prefix اِسْتَـ (ista-) is the clue.","example":"Complete “he sought forgiveness”: ___ (istaghfara) — he sought forgiveness.","answer":"اِسْتَغْفَرَ","explanation":"he sought forgiveness — اِسْتَغْفَرَ (istaghfara) uses Form X to mean seeking غُفْرَانٌ (ghufrānun) — forgiveness."} -->
 
 ## Considering and extracting
 
@@ -33,7 +33,7 @@ Form X can also mean “to regard as” or “to bring out.” اِسْتَحْ�
 
 <!-- quiz: {"type":"multiple-choice","question":"Which Form X verb means he considered good?","options":["اِسْتَحْسَنَ (istaḥsana) — he considered good","حَسُنَ (ḥasuna) — it was good","أَحْسَنَ (aḥsana) — he did well","تَحَسَّنَ (taḥassana) — it improved"],"answer":0} -->
 
-<!-- grammar-card: {"rule":"The Form X verbal noun is often اِسْتِفْعَالٌ (istifʿālun).","hint":"After اِسْتِـ, listen for a long ā near the end.","example":"Complete “using”: ___ (istiʿmālun) — using.","answer":"اِسْتِعْمَالٌ (istiʿmālun) — using","explanation":"اِسْتِعْمَالٌ (istiʿmālun) is the verbal noun of اِسْتَعْمَلَ (istaʿmala) — he used."} -->
+<!-- grammar-card: {"rule":"The Form X verbal noun is often اِسْتِفْعَالٌ (istifʿālun).","hint":"After اِسْتِـ, listen for a long ā near the end.","example":"Complete “using”: ___ (istiʿmālun) — using.","answer":"اِسْتِعْمَالٌ","explanation":"using — اِسْتِعْمَالٌ (istiʿmālun) is the verbal noun of اِسْتَعْمَلَ (istaʿmala) — he used."} -->
 
 ## Sources
 

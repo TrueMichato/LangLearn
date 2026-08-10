@@ -387,6 +387,8 @@ by Kori Shiro
 
 <!-- quiz: {"type":"multiple-choice","question":"What does \"ネコ[**じゃなかった**・**ではなかった**]。\" mean?","options":["It **wasn't** a cat.","It **isn't** a cat.","It **isn't** weird.","It **wasn't** weird."],"answer":0} -->
 
+<!-- grammar-card: {"rule":"じゃない can seek agreement rather than negate","hint":"じゃない","example":"それ、お酒だって言った___。","answer":"じゃない","explanation":"Here じゃない works like English 'didn't I?' — a tag question, not a denial."} -->
+
 ## Sources
 
 - [Tofugu](https://www.tofugu.com/japanese-grammar/janai-dewanai/)

@@ -20,7 +20,7 @@ Arabic can negate an entire class with a compact structure: no member of this ki
 
 When **اِسْمُ لَا** (ism lā) — the noun of lā is a single indefinite noun, it is usually built on fatḥa in the place of the accusative and has no tanwīn: **لَا رَجُلَ** (lā rajula) — no man, not **لَا رَجُلًا** (lā rajulan). The predicate may be stated or understood from context.
 
-<!-- grammar-card: {"rule":"لَا النَّافِيَةُ لِلْجِنْسِ negates an entire class, and its single indefinite noun is built on fatḥa without tanwīn.","hint":"No X at all often appears as لَا + noun ending in ـَ.","example":"Complete no doubt remains: لَا ___ بَاقٍ (lā ___ bāqin).","answer":"شَكَّ (shakka) — doubt","explanation":"لَا شَكَّ بَاقٍ (lā shakka bāqin) uses شَكَّ as the noun of absolute negation, built on fatḥa without tanwīn."} -->
+<!-- grammar-card: {"rule":"لَا النَّافِيَةُ لِلْجِنْسِ negates an entire class, and its single indefinite noun is built on fatḥa without tanwīn.","hint":"No X at all often appears as لَا + noun ending in ـَ.","example":"Complete no doubt remains: لَا ___ بَاقٍ (lā ___ bāqin).","answer":"شَكَّ (shakka)","explanation":"doubt — لَا شَكَّ بَاقٍ (lā shakka bāqin) uses شَكَّ as the noun of absolute negation, built on fatḥa without tanwīn."} -->
 
 ## Not the same as prohibition
 

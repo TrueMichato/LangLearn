@@ -19,7 +19,7 @@ Arabic conditionals are not all the same. The particle you choose tells the list
 
 إِنْ (in) is common for open, uncertain conditions: إِنْ تَفْتَحِ النَّافِذَةَ يَدْخُلِ الْهَوَاءُ (in taftaḥi an-nāfidhata yadkhuli al-hawāʾu) — if you open the window, the air enters. إِذَا (idhā) often expects the event: إِذَا وَصَلَ الْقِطَارُ سَافَرْنَا (idhā waṣala al-qiṭāru sāfarnā) — when the train arrives, we will travel.
 
-<!-- grammar-card: {"rule":"إِنْ (in) often makes present-tense condition and result verbs jussive.","hint":"Look for shortened endings like تَدْرُسْ and تَنْجَحْ.","example":"Complete “if you study, you succeed”: إِنْ تَدْرُسْ ___ (tanjaḥ).","answer":"تَنْجَحْ (tanjaḥ) — you succeed in jussive","explanation":"إِنْ تَدْرُسْ تَنْجَحْ uses two jussive verbs after the conditional particle إِنْ."} -->
+<!-- grammar-card: {"rule":"إِنْ (in) often makes present-tense condition and result verbs jussive.","hint":"Look for shortened endings like تَدْرُسْ and تَنْجَحْ.","example":"Complete “if you study, you succeed”: إِنْ تَدْرُسْ ___ (tanjaḥ).","answer":"تَنْجَحْ","explanation":"you succeed in jussive — إِنْ تَدْرُسْ تَنْجَحْ uses two jussive verbs after the conditional particle إِنْ."} -->
 
 ## Law and lawlā
 
@@ -33,7 +33,7 @@ Arabic conditionals are not all the same. The particle you choose tells the list
 
 <!-- quiz: {"type":"multiple-choice","question":"Which sentence uses لَوْلَا (lawlā) correctly?","options":["لَوْلَا الْمُعَلِّمُ لَمَا فَهِمْنَا (lawlā al-muʿallimu la-mā fahimnā) — if not for the teacher, we would not have understood","لَوْلَا تَدْرُسْ تَنْجَحْ (lawlā tadrus tanjaḥ) — open condition","لَوْلَا إِلَى الْبَيْتِ (lawlā ilā al-bayti) — to the house","لَوْلَا كِتَابًا (lawlā kitāban) — a book as direct object"],"answer":0} -->
 
-<!-- grammar-card: {"rule":"لَوْلَا (lawlā) introduces something whose presence prevents a different result.","hint":"Translate it as were it not for before a noun phrase.","example":"Complete “were it not for the rain”: لَوْلَا ___ (al-maṭaru).","answer":"الْمَطَرُ (al-maṭaru) — the rain","explanation":"لَوْلَا الْمَطَرُ names the factor that prevents the expected action."} -->
+<!-- grammar-card: {"rule":"لَوْلَا (lawlā) introduces something whose presence prevents a different result.","hint":"Translate it as were it not for before a noun phrase.","example":"Complete “were it not for the rain”: لَوْلَا ___ (al-maṭaru).","answer":"الْمَطَرُ","explanation":"the rain — لَوْلَا الْمَطَرُ names the factor that prevents the expected action."} -->
 
 ## Sources
 

@@ -64,9 +64,9 @@ Let's start off by looking at how 〜よう is added to a verb. Depending on the
   
    **Irregular**
    
-    **来る**(く　)　→　 **来よう**(こ　　)
+   **来る**(く　)　→　 **来よう**(こ　　)
 
-**する　**→　**しよう**
+**する**　→　**しよう**
    
   
 
@@ -148,6 +148,10 @@ Notice that the subject, 私, is marked by particle が. This is common for this
 
   - I think I'll make the curry.
 
+<!-- grammar-card: {"rule":"Ichidan verbs drop る and add よう","hint":"起きる → ?","example":"明日(あした)は早(はや)く起(お)き___。","answer":"よう","explanation":"起きる becomes 起きよう, taking よう rather than a bare う."} -->
+
+<!-- grammar-card: {"rule":"Godan verbs shift the final う sound to お and add う","hint":"行く → ?","example":"一緒(いっしょ)に行(い)___。","answer":"こう","explanation":"行く becomes 行こう — let's go."} -->
+
 ## Beyond the Basics
 
 In this section we'll expand beyond the fundamental uses and show you more advanced ways of putting 〜よう to use.
@@ -214,11 +218,13 @@ by Stefan Kaiser, et al.
 (2013)
 pp. 229-233
 
-<!-- quiz: {"type":"multiple-choice","question":"What does \"動物園に行こう！\" mean?","options":["Let's go to the zoo!","Shall we get going to the zoo?","Shall we get going to the zoo?","I'll make the curry."],"answer":0} -->
+<!-- quiz: {"type":"multiple-choice","question":"What does \"動物園に行こう！\" mean?","options":["Let's go to the zoo!","Shall we get going to the zoo?","I went to the zoo.","I'll make the curry."],"answer":0} -->
 
 <!-- quiz: {"type":"multiple-choice","question":"What does \"そろそろ動物園に行こう？\" mean?","options":["Shall we get going to the zoo?","Let's go to the zoo!","I'll make the curry.","Shall I make the curry?"],"answer":0} -->
 
 <!-- quiz: {"type":"multiple-choice","question":"What does \"そろそろ動物園に行こうか。\" mean?","options":["Shall we get going to the zoo?","Let's go to the zoo!","I'll make the curry.","Shall I make the curry?"],"answer":0} -->
+
+<!-- grammar-card: {"rule":"The volitional plus と思っている states a standing intention","hint":"する → ?","example":"来年(らいねん)留学(りゅうがく)し___と思(おも)っています。","answer":"よう","explanation":"しようと思っています says the plan has been on the speaker's mind for some time."} -->
 
 ## Sources
 

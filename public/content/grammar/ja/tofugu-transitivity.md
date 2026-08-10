@@ -25,6 +25,8 @@ Many Japanese verbs come in pairs sharing the same kanji root but with different
 | つける — to turn on | つく — to come on |
 | 壊す (こわす) — to break (something) | 壊れる (こわれる) — to break |
 
+<!-- grammar-card: {"rule":"Most transitive verbs have an intransitive partner","hint":"開く (to open, by itself)","example":"風(かぜ)でドアが___。","answer":"開(あ)いた","explanation":"開いた describes the door simply being open, naming no one as the cause."} -->
+
 ## Particles を and が
 
 As a general pattern:
@@ -37,6 +39,8 @@ Examples:
 - 電気**が**つきました。 — The lights came on.
 
 However, subjects and objects are frequently omitted when clear from context.
+
+<!-- grammar-card: {"rule":"A transitive verb marks its object with を","hint":"を / が","example":"私(わたし)はドア___開(あ)けた。","answer":"を","explanation":"開ける needs someone doing the opening, and を marks the door as what was opened."} -->
 
 ## English vs. Japanese Transitivity
 
@@ -68,6 +72,8 @@ Motion verbs use を to mark the **path** of movement:
 <!-- quiz: {"type":"multiple-choice","question":"What is the intransitive partner of 開ける (to open something)?","options":["開く (あく)","開ます","開る","開す"],"answer":0} -->
 
 <!-- quiz: {"type":"multiple-choice","question":"Why does 分かる take が instead of を?","options":["It is a godan verb","The object is not affected by the action","It is an irregular verb","It always takes が"],"answer":1} -->
+
+<!-- grammar-card: {"rule":"Intransitive motion verbs can take を for the route covered","hint":"を / で","example":"公園(こうえん)___散歩(さんぽ)した。","answer":"を","explanation":"公園を散歩した marks the park as the space walked through, not as a location."} -->
 
 ## Sources
 

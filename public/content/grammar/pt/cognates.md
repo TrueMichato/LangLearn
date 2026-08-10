@@ -120,7 +120,7 @@ These words look like English words but mean something **completely different**.
 
 <!-- grammar-card: {"rule":"False friend: 'puxar' means 'to pull' (NOT 'to push')","hint":"Puxar = pull. Push = empurrar","example":"___ a porta! (Pull the door!)","answer":"Puxe a porta!","explanation":"'Puxar' is a classic false friend — it looks like 'push' but means 'to pull'. The Portuguese word for 'to push' is 'empurrar'. Remember: doors in Brazil often have 'PUXE' (pull) signs!"} -->
 
-<!-- grammar-card: {"rule":"False friend: 'livraria' means 'bookstore' (NOT 'library')","hint":"Livraria = bookstore. Library = biblioteca","example":"Preciso ir à ___ para devolver o livro. (library)","answer":"Preciso ir à biblioteca para devolver o livro.","explanation":"'Livraria' means 'bookstore' (a place that sells books). The word for 'library' is 'biblioteca'. Think: livraria has 'livro' (book) — a place to buy books."} -->
+<!-- grammar-card: {"rule":"False friend: 'livraria' means 'bookstore' (NOT 'library')","hint":"Livraria = bookstore. Library = biblioteca","example":"Preciso ir à ___ para devolver o livro. (library)","answer":"biblioteca para devolver o livro.","explanation":"'Livraria' means 'bookstore' (a place that sells books). The word for 'library' is 'biblioteca'. Think: livraria has 'livro' (book) — a place to buy books."} -->
 
 ## Tips for Guessing Portuguese Words
 

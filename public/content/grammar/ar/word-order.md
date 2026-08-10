@@ -24,7 +24,7 @@ In a verb-first sentence, the verb usually agrees with the subject in gender but
 - **جَاءَتِ الطَّالِبَاتُ** (jāʾati aṭ-ṭālibātu) — the female students came.
 - **قَرَأَ الأَوْلَادُ القِصَّةَ** (qaraʾa al-awlādu al-qiṣṣata) — the boys read the story.
 
-<!-- grammar-card: {"rule": "In verb-first VSO order, the verb is usually singular even with a plural subject.", "hint": "Verb first, singular verb.", "example": "Complete “the students came”: ___ الطُّلَّابُ (___ aṭ-ṭullābu).", "answer": "جَاءَ (jāʾa) — he/it came", "explanation": "Because the verb comes before the plural masculine subject, Arabic uses singular masculine جَاءَ (jāʾa)."} -->
+<!-- grammar-card: {"rule":"In verb-first VSO order, the verb is usually singular even with a plural subject.","hint":"Verb first, singular verb.","example":"Complete “the students came”: ___ الطُّلَّابُ (___ aṭ-ṭullābu).","answer":"جَاءَ (jāʾa)","explanation":"he/it came — Because the verb comes before the plural masculine subject, Arabic uses singular masculine جَاءَ (jāʾa)."} -->
 
 <!-- quiz: {"type": "multiple-choice", "question": "Which verb form fits verb-first “the female students came”?", "options": ["جَاءَتِ الطَّالِبَاتُ (jāʾati aṭ-ṭālibātu)", "جِئْنَ الطَّالِبَاتُ (jiʾna aṭ-ṭālibātu)", "جَاءُوا الطَّالِبَاتُ (jāʾū aṭ-ṭālibātu)", "جَاءَ الطَّالِبَاتُ (jāʾa aṭ-ṭālibātu)"], "answer": 0} -->
 
@@ -38,7 +38,7 @@ When the subject comes first, the following verb often agrees more fully with it
 | **الطَّالِبَاتُ جِئْنَ** (aṭ-ṭālibātu jiʾna) | the female students came |
 | **الأَوْلَادُ قَرَؤُوا القِصَّةَ** (al-awlādu qaraʾū al-qiṣṣata) | the boys read the story |
 
-<!-- grammar-card: {"rule": "In subject-first order, the verb commonly agrees fully with the topic-subject.", "hint": "Plural topic, plural verb.", "example": "Complete “the students came”: الطُّلَّابُ ___ (aṭ-ṭullābu ___).", "answer": "جَاؤُوا (jāʾū) — they came", "explanation": "Because الطُّلَّابُ (aṭ-ṭullābu) comes first as topic, the following verb can show plural masculine agreement."} -->
+<!-- grammar-card: {"rule":"In subject-first order, the verb commonly agrees fully with the topic-subject.","hint":"Plural topic, plural verb.","example":"Complete “the students came”: الطُّلَّابُ ___ (aṭ-ṭullābu ___).","answer":"جَاؤُوا (jāʾū)","explanation":"they came — Because الطُّلَّابُ (aṭ-ṭullābu) comes first as topic, the following verb can show plural masculine agreement."} -->
 
 ## Why word order matters
 
@@ -46,7 +46,7 @@ Use verbal order for narration: **دَخَلَ المُدَرِّسُ وَبَد
 
 <!-- quiz: {"type": "multiple-choice", "question": "What is the usual nuance of الطَّالِبُ كَتَبَ الرِّسَالَةَ compared with كَتَبَ الطَّالِبُ الرِّسَالَةَ?", "options": ["It makes the student the topic", "It makes the object genitive", "It changes the past tense to future", "It makes the sentence a question"], "answer": 0} -->
 
-<!-- grammar-card: {"rule": "Nominal sentences can have no present-tense “to be.”", "hint": "Topic plus predicate.", "example": "Complete “the house is big”: البَيْتُ ___ (al-baytu ___).", "answer": "كَبِيرٌ (kabīrun) — big", "explanation": "Arabic can say البَيْتُ كَبِيرٌ (al-baytu kabīrun) without a separate present-tense verb “is.”"} -->
+<!-- grammar-card: {"rule":"Nominal sentences can have no present-tense “to be.”","hint":"Topic plus predicate.","example":"Complete “the house is big”: البَيْتُ ___ (al-baytu ___).","answer":"كَبِيرٌ (kabīrun)","explanation":"big — Arabic can say البَيْتُ كَبِيرٌ (al-baytu kabīrun) without a separate present-tense verb “is.”"} -->
 
 ## Sources
 

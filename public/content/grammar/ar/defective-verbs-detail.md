@@ -18,7 +18,7 @@ Defective verbs have a weak final root letter. They are common, so it is worth l
 
 The long final ā in مَشَى (mashā) — he walked and دَعَا (daʿā) — he called changes when a suffix is added: مَشَيْتُ (mashaytu) — I walked, دَعَوْتُ (daʿawtu) — I called. نَسِيَ (nasiya) — he forgot keeps a clearer y-sound in نَسِيتُ (nasītu) — I forgot.
 
-<!-- grammar-card: {"rule":"In defective verbs, the final weak sound changes before suffixes.","hint":"Compare مَشَى (mashā) with مَشَيْتُ (mashaytu).","example":"Complete “I called”: ___ (daʿawtu) — I called.","answer":"دَعَوْتُ (daʿawtu) — I called","explanation":"دَعَوْتُ (daʿawtu) shows the final weak root of دَعَا (daʿā) before the suffix تُ (tu)."} -->
+<!-- grammar-card: {"rule":"In defective verbs, the final weak sound changes before suffixes.","hint":"Compare مَشَى (mashā) with مَشَيْتُ (mashaytu).","example":"Complete “I called”: ___ (daʿawtu) — I called.","answer":"دَعَوْتُ","explanation":"I called — دَعَوْتُ (daʿawtu) shows the final weak root of دَعَا (daʿā) before the suffix تُ (tu)."} -->
 
 ## Jussive and imperative forms
 
@@ -32,7 +32,7 @@ After لَمْ (lam) — did not, the present becomes jussive and the final long
 
 <!-- quiz: {"type":"multiple-choice","question":"Which form means he did not walk?","options":["لَمْ يَمْشِ (lam yamshi) — he did not walk","لَمْ يَدْعُ (lam yadʿu) — he did not call","لَمْ يَنْسَ (lam yansa) — he did not forget","مَشَيْتُ (mashaytu) — I walked"],"answer":0} -->
 
-<!-- grammar-card: {"rule":"The jussive of many defective verbs drops or shortens the final weak vowel after لَمْ (lam).","hint":"Look for a shorter ending than the normal present.","example":"Complete “he did not call”: لَمْ ___ (yadʿu).","answer":"يَدْعُ (yadʿu) — he call in jussive","explanation":"لَمْ يَدْعُ (lam yadʿu) is the jussive negation of يَدْعُو (yadʿū) — he calls."} -->
+<!-- grammar-card: {"rule":"The jussive of many defective verbs drops or shortens the final weak vowel after لَمْ (lam).","hint":"Look for a shorter ending than the normal present.","example":"Complete “he did not call”: لَمْ ___ (yadʿu).","answer":"يَدْعُ","explanation":"he call in jussive — لَمْ يَدْعُ (lam yadʿu) is the jussive negation of يَدْعُو (yadʿū) — he calls."} -->
 
 ## Sources
 

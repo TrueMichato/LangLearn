@@ -76,6 +76,8 @@ If you list verbs or adjectives without turning them into noun phrases, you'll n
 
 When using たり, actions or conditions are listed as though they occurred as part of a flow. However, when they're listed as noun phrases with や, each action or condition becomes more independent. As a result, it's more common to use たり when simply expressing what you did or how someone behaves, like in the above examples.
 
+<!-- grammar-card: {"rule":"や lists examples, implying there are more","hint":"と / や","example":"デスクには、ペン___本がある。","answer":"や","explanation":"や names pens and books among other things, unlike と which would close the list."} -->
+
 ## Beyond the Basics
 
 ### Quantity + や + Quantity
@@ -157,7 +159,11 @@ pp. 646-647
 
 <!-- quiz: {"type":"multiple-choice","question":"What does \"トマト**とか**バナナ**とか**ストロベリーだよ。\" mean?","options":["I've got tomatoes, bananas, strawberries, and so on.","I've got tomatoes, bananas, and strawberries.","There are things like pens and books on the desk.","There are things like pens, books, and scissors on the desk."],"answer":0} -->
 
-<!-- quiz: {"type":"multiple-choice","question":"What does \"トマト**と**バナナ**と**ストロベリーだよ。\" mean?","options":["I've got tomatoes, bananas, and strawberries.","I've got tomatoes, bananas, strawberries, and so on.","I've got tomatoes, bananas, strawberries, and so on.","There are things like pens and books on the desk."],"answer":0} -->
+<!-- quiz: {"type":"multiple-choice","question":"What does \"トマト**と**バナナ**と**ストロベリーだよ。\" mean?","options":["I've got tomatoes, bananas, and strawberries.","I've got tomatoes, bananas, strawberries, and so on.","I've got tomatoes **or** bananas **or** strawberries.","There are things like pens and books on the desk."],"answer":0} -->
+
+<!-- grammar-card: {"rule":"や between two numbers downplays the quantity","hint":"一つ + や + 二つ","example":"今の時代、外国語の___は勉強しておいた方がいい。","answer":"一つや二つ","explanation":"一つや二つ presents one or two languages as the bare minimum."} -->
+
+<!-- grammar-card: {"rule":"や between two counts dismisses the amount as trivial","hint":"一冊 + や + 二冊","example":"本の___なら一日で読めちゃう。","answer":"一冊や二冊","explanation":"一冊や二冊 treats one or two books as nothing much."} -->
 
 ## Sources
 

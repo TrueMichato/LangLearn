@@ -141,6 +141,8 @@ Attach to the **plain form** (casual) or **ます form** (polite):
 
 <!-- quiz:{"type":"multiple-choice","question":"Which expresses disappointment that it's Sunday but you have work?","options":["日曜日だけど仕事がある","日曜日なのに仕事がある","日曜日でも仕事がある","日曜日は仕事がある"],"answer":1} -->
 
+<!-- grammar-card: {"rule":"が softly contrasts two clauses in polite speech","hint":"が / けど","example":"参加(さんか)したいのです___、予定(よてい)があります。","answer":"が","explanation":"が is the more formal counterpart of けど: I would like to join, but I have plans."} -->
+
 ## Comparing ても、のに、けど
 
 | | ても | のに | けど |
@@ -164,6 +166,8 @@ Attach to the **plain form** (casual) or **ます form** (polite):
 > *Benkyou shita kedo, tesuto ni ochita.*
 > I studied, but I failed. (neutral contrast)
 
+<!-- grammar-card: {"rule":"ても means 'even if' or 'even though'","hint":"勉強する → ?","example":"勉強(べんきょう)し___、テストに落(お)ちた。","answer":"ても","explanation":"The て-form plus も concedes the studying and then reports the opposite outcome."} -->
+
 ## Other Concessive Expressions
 
 ### 〜としても (Even assuming ~)
@@ -185,6 +189,8 @@ Attach to the **plain form** (casual) or **ます form** (polite):
 > Even though you know, you won't tell me. (critical/accusatory)
 
 <!-- quiz:{"type":"multiple-choice","question":"Which is the most neutral way to say 'I studied but failed'?","options":["勉強したのに落ちた","勉強しても落ちた","勉強したけど落ちた","勉強したくせに落ちた"],"answer":2} -->
+
+<!-- grammar-card: {"rule":"くせに adds reproach to 'even though'","hint":"のに / くせに","example":"知(し)っている___、教(おし)えてくれない。","answer":"くせに","explanation":"くせに carries blame: they know perfectly well and still will not tell you."} -->
 
 ## Summary
 

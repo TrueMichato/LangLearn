@@ -36,6 +36,8 @@ The conjunction **чтобы** (что + бы) is one of the most important uses
 
 <!-- quiz:{"type":"multiple-choice","question":"'Мама хочет, чтобы я учился хорошо' — why is 'учился' in past tense?","options":["Because it happened in the past","Because чтобы with different subjects requires past tense","Because мама is the subject","It's actually present tense"],"answer":1} -->
 
+<!-- grammar-card: {"rule":"When the two clauses have different subjects, use чтобы plus a past-tense verb","hint":"что / чтобы","example":"Я хочу, ___ ты пришёл.","answer":"чтобы","explanation":"The wanting and the coming belong to different people, so чтобы with пришёл is required."} -->
+
 ---
 
 ## 3. Чтобы After Verbs of Desire, Request, and Command
@@ -155,6 +157,8 @@ These constructions use **бы... ни** to express "no matter who/what/where/wh
 **Он едва не упал.** *(On yedvá ne upál.)* — He almost fell.
 
 > Note: **было** (not бы) is used here as an emphatic particle.
+
+<!-- grammar-card: {"rule":"Чуть было не describes something that very nearly happened","hint":"чуть ___ не","example":"Я чуть ___ не опоздал!","answer":"было","explanation":"The fixed phrase inserts было before не to mean almost — nothing was actually late."} -->
 
 ---
 

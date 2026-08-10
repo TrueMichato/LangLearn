@@ -55,7 +55,7 @@ The command form conjugates differently depending on the type of verbs you use.
   
    **Irregular**
    
-   ** 来る(く　)**　→　** 来い(こ　)**
+   **来る(く　)**　→　 **来い(こ　)**
 
 **する**　→　**しろ**
 
@@ -93,7 +93,7 @@ There are only three irregular verbs when it comes to the command form. The firs
 
 > 
 > 
-> ** 来る(く　)**　→　** 来い(こ　)**
+>  **来る(く　)**　→　 **来い(こ　)**
 > 
 > **する**　→　**しろ**
 > 
@@ -122,6 +122,8 @@ The command form is also used in situations where relative social standing is no
   - 熊だ！逃げろー！
 
   - A bear! Run away!
+
+<!-- grammar-card: {"rule":"Ichidan verbs form the command by replacing る with ろ","hint":"食べる → ?","example":"早(はや)く___！","answer":"食(た)べろ","explanation":"食べる becomes 食べろ, a blunt order to eat."} -->
 
 ## Beyond the Basics
 
@@ -214,6 +216,8 @@ by 森川 正博
 <!-- quiz: {"type":"multiple-choice","question":"What does \"熊だ！逃げろー！\" mean?","options":["A bear! Run away!","Look straight at the blackboard!","Hey, stop grinning at me like that!","Believe in yourself!"],"answer":0} -->
 
 <!-- quiz: {"type":"multiple-choice","question":"What does \"おい、にやにやするのやめろよ！\" mean?","options":["Hey, stop grinning at me like that!","Look straight at the blackboard!","A bear! Run away!","Believe in yourself!"],"answer":0} -->
+
+<!-- grammar-card: {"rule":"Godan verbs shift the final う sound to え","hint":"頑張る → ?","example":"もっと頑張(がんば)___。","answer":"れ","explanation":"頑張る becomes 頑張れ, which is also the standard cheer at sports events."} -->
 
 ## Sources
 

@@ -109,7 +109,7 @@ These words and phrases often appear with the pluperfect:
 
 <!-- grammar-card: {"rule":"Pluperfect with irregular participles","hint":"Use irregular participles (feito, visto, escrito) with 'tinha'","example":"Nós nunca ___ ___ neve antes. (ver)","answer":"tínhamos visto","explanation":"With 'ter' in compound tenses, use the participle form. 'Ver' has the irregular participle 'visto': tínhamos visto."} -->
 
-<!-- grammar-card: {"rule":"Past timeline with pluperfect","hint":"Action 1 (pluperfect) happened BEFORE Action 2 (preterite)","example":"Quando eu ___ (chegar, preterite), a festa já ___ ___ (acabar, pluperfect).","answer":"cheguei ... tinha acabado","explanation":"The pluperfect (tinha acabado) shows the earlier past action, while the preterite (cheguei) shows the later past action."} -->
+<!-- grammar-card: {"rule":"Past timeline with pluperfect","hint":"Action 1 (pluperfect) happened BEFORE Action 2 (preterite)","example":"Quando eu ___ (chegar, preterite), a festa já ___ (acabar, pluperfect).","answer":"cheguei ... tinha acabado","explanation":"The pluperfect (tinha acabado) shows the earlier past action, while the preterite (cheguei) shows the later past action."} -->
 
 ## Sources
 

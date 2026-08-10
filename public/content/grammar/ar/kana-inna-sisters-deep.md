@@ -15,7 +15,7 @@ A **كَانَ وَأَخَوَاتُهَا** (kāna wa-akhawātuhā) — kāna 
 
 <!-- quiz: {"type": "multiple-choice", "question": "What happens to the predicate after kāna?", "options": ["It becomes accusative", "It becomes genitive", "It becomes dual", "It disappears"], "answer": 0} -->
 
-<!-- grammar-card: {"rule": "After كَانَ (kāna), the predicate is accusative.", "hint": "kāna plus subject-u plus predicate-an.", "example": "Complete “the weather was cold”: كَانَ الجَوُّ بَارِد___ (kāna al-jawwu bārid___).", "answer": "ـًا (-an) — accusative indefinite ending", "explanation": "بَارِدٌ (bāridun) becomes بَارِدًا (bāridan) as خَبَرُ كَانَ (khabaru kāna)."} -->
+<!-- grammar-card: {"rule":"After كَانَ (kāna), the predicate is accusative.","hint":"kāna plus subject-u plus predicate-an.","example":"Complete “the weather was cold”: كَانَ الجَوُّ بَارِد___ (kāna al-jawwu bārid___).","answer":"ـًا (-an)","explanation":"accusative indefinite ending — بَارِدٌ (bāridun) becomes بَارِدًا (bāridan) as خَبَرُ كَانَ (khabaru kāna)."} -->
 
 ## Common kāna sisters
 
@@ -37,7 +37,7 @@ A **كَانَ وَأَخَوَاتُهَا** (kāna wa-akhawātuhā) — kāna 
 | **الجَوُّ بَارِدٌ** (al-jawwu bāridun) — the weather is cold | **إِنَّ الجَوَّ بَارِدٌ** (inna al-jawwa bāridun) — indeed, the weather is cold |
 | **الوَلَدُ مَرِيضٌ** (al-waladu marīḍun) — the boy is sick | **لَعَلَّ الوَلَدَ مَرِيضٌ** (laʿalla al-walada marīḍun) — perhaps the boy is sick |
 
-<!-- grammar-card: {"rule": "After إِنَّ (inna), the noun is accusative and the predicate remains nominative.", "hint": "inna plus subject-a plus predicate-un.", "example": "Complete “indeed, the weather is cold”: إِنَّ الجَو___ بَارِدٌ (inna al-jaww___ bāridun).", "answer": "ـَ (-a) — accusative ending", "explanation": "الجَوُّ (al-jawwu) becomes الجَوَّ (al-jawwa) as اسْمُ إِنَّ (ismu inna)."} -->
+<!-- grammar-card: {"rule":"After إِنَّ (inna), the noun is accusative and the predicate remains nominative.","hint":"inna plus subject-a plus predicate-un.","example":"Complete “indeed, the weather is cold”: إِنَّ الجَو___ بَارِدٌ (inna al-jaww___ bāridun).","answer":"ـَ (-a)","explanation":"accusative ending — الجَوُّ (al-jawwu) becomes الجَوَّ (al-jawwa) as اسْمُ إِنَّ (ismu inna)."} -->
 
 ## Common inna sisters
 
@@ -51,7 +51,7 @@ A **كَانَ وَأَخَوَاتُهَا** (kāna wa-akhawātuhā) — kāna 
 
 <!-- quiz: {"type": "multiple-choice", "question": "What happens to the noun after inna?", "options": ["It becomes accusative", "It becomes genitive", "It becomes jussive", "It must be plural"], "answer": 0} -->
 
-<!-- grammar-card: {"rule": "Do not mix the two systems: kāna accusative predicate; inna accusative noun.", "hint": "kāna affects khabar; inna affects ism.", "example": "Choose the ending in إِنَّ الطَّالِب___ مُجْتَهِدٌ (inna aṭ-ṭālib___ mujtahidun).", "answer": "ـَ (-a) — accusative ending", "explanation": "After إِنَّ (inna), الطَّالِبُ (aṭ-ṭālibu) becomes الطَّالِبَ (aṭ-ṭāliba), while the predicate stays مُجْتَهِدٌ (mujtahidun)."} -->
+<!-- grammar-card: {"rule":"Do not mix the two systems: kāna accusative predicate; inna accusative noun.","hint":"kāna affects khabar; inna affects ism.","example":"Choose the ending in إِنَّ الطَّالِب___ مُجْتَهِدٌ (inna aṭ-ṭālib___ mujtahidun).","answer":"ـَ (-a)","explanation":"accusative ending — After إِنَّ (inna), الطَّالِبُ (aṭ-ṭālibu) becomes الطَّالِبَ (aṭ-ṭāliba), while the predicate stays مُجْتَهِدٌ (mujtahidun)."} -->
 
 ## Sources
 

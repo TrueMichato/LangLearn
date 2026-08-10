@@ -86,6 +86,8 @@ English speakers often forget that negation in Russian changes the case of the o
 
 **Здесь нет интернета.** *(Zdes net internéta.)* — There's no internet here.
 
+<!-- grammar-card: {"rule":"After a negated verb the object commonly shifts to the genitive","hint":"проблема (problem)","example":"Я не вижу ___.","answer":"проблемы","explanation":"Не вижу denies that the object is there at all, so проблема appears in the genitive проблемы."} -->
+
 ---
 
 ## 4. Motion Verbs: идти vs. ходить, ехать vs. ездить
@@ -122,6 +124,8 @@ English has one word "go," but Russian distinguishes between **unidirectional** 
 ✅ **Я каждый день хожу на работу.** — I go to work every day.
 
 <!-- quiz:{"type":"multiple-choice","question":"'I go to the gym every day' — which verb is correct?","options":["Я иду в спортзал каждый день.","Я хожу в спортзал каждый день.","Я пойду в спортзал каждый день.","Я шёл в спортзал каждый день."],"answer":1} -->
+
+<!-- grammar-card: {"rule":"Repeated there-and-back trips use the multidirectional verb","hint":"идти / ходить","example":"Каждый день я ___ в университет.","answer":"хожу","explanation":"Каждый день describes a routine round trip, which is ходить's job; идти would mean one journey happening now."} -->
 
 ---
 

@@ -78,6 +78,8 @@ It's also possible to add another particle after the な-adjective or noun. In t
 
   - Dogs too!
 
+<!-- grammar-card: {"rule":"よ tells the listener something they do not already know","hint":"よ","example":"そこに危(あぶ)ないものがある___。","answer":"よ","explanation":"よ presents the hazard as new information for the listener."} -->
+
 ## Using Particle よ in Context
 
 ### よ for Alerting
@@ -350,6 +352,8 @@ by Fumitaka Tatebe
 <!-- quiz: {"type":"multiple-choice","question":"What does \"あ、雨が降ってるよ。\" mean?","options":["Oh look, it's raining.","Oh, it's raining.","I'll eat.","That's hot."],"answer":0} -->
 
 <!-- quiz: {"type":"multiple-choice","question":"What does \"食べるよ。\" mean?","options":["I'll eat.","Oh, it's raining.","Oh look, it's raining.","That's hot."],"answer":0} -->
+
+<!-- grammar-card: {"rule":"ね seeks agreement where よ informs","hint":"よ / ね","example":"今日(きょう)はいい天気(てんき)です___。","answer":"ね","explanation":"Both people can see the weather, so ね shares the observation rather than よ announcing it."} -->
 
 ## Sources
 

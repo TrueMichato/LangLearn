@@ -106,9 +106,11 @@ pp. 223-224
 
 <!-- quiz: {"type":"multiple-choice","question":"What does \"ジェニーは話しやすい。\" mean?","options":["Jenny is easy to talk to.","My father gets drunk easily.","I fall in love easily.","a person who is easy to talk to"],"answer":0} -->
 
-<!-- quiz: {"type":"multiple-choice","question":"What does \"ジェニーは話しやすい。\" mean?","options":["Jenny is easy to talk to.","My father gets drunk easily.","I fall in love easily.","a person who is easy to talk to"],"answer":0} -->
+<!-- quiz: {"type":"multiple-choice","question":"What does \"私の父は酔いやすい。\" mean?","options":["My father gets drunk easily.","Jenny is easy to talk to.","My father doesn't get drunk easily.","I fall in love easily."],"answer":0} -->
 
-<!-- quiz: {"type":"multiple-choice","question":"What does \"私の父は酔いやすい。\" mean?","options":["My father gets drunk easily.","Jenny is easy to talk to.","Jenny is easy to talk to.","I fall in love easily."],"answer":0} -->
+<!-- grammar-card: {"rule":"やすい inflects exactly like an い-adjective","hint":"やすい, adverbial","example":"この道(みち)は前(まえ)より歩(ある)き___なった。","answer":"やすく","explanation":"歩きやすくなった shows やすい taking the く-form before なる, just like any い-adjective."} -->
+
+<!-- grammar-card: {"rule":"やすい attaches to the ます-stem and means 'easy to do'","hint":"読む + やすい","example":"この本(ほん)は字(じ)が大(おお)きくて読(よ)み___。","answer":"やすい","explanation":"読みやすい says the book is easy to read."} -->
 
 ## Sources
 

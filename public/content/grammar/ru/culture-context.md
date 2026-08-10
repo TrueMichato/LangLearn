@@ -44,6 +44,10 @@ Use name + patronymic with: teachers, doctors, professors, older people, bosses,
 
 <!-- quiz:{"type":"multiple-choice","question":"If a woman's father is named Сергей, what is her patronymic?","options":["Сергеевич","Сергеевна","Сергеева","Сергейовна"],"answer":1} -->
 
+<!-- grammar-card: {"rule":"A woman's patronymic ends in -овна or -евна","hint":"her father is Иван","example":"Мария ___, можно вопрос?","answer":"Ивановна","explanation":"A daughter of Иван is Ивановна, the feminine counterpart of the masculine Иванович."} -->
+
+<!-- grammar-card: {"rule":"Respectful address is first name plus patronymic, with no title","hint":"his father is Пётр","example":"Здравствуйте, Иван ___!","answer":"Петрович","explanation":"A son of Пётр is Петрович; Russian uses this instead of Mr and a surname."} -->
+
 ---
 
 ## Formal vs. Informal Register (Ты / Вы)
@@ -81,6 +85,8 @@ Switching from **Вы** to **ты** is often explicitly negotiated — this is a
 > **Important:** The older person, the woman, or the person of higher status is usually the one who initiates the switch. Don't presume — wait for them to suggest it, or ask politely.
 
 <!-- quiz:{"type":"multiple-choice","question":"Who traditionally initiates the switch from Вы to ты?","options":["The younger person","The person of lower status","The older person, woman, or person of higher status","Anyone can switch at any time"],"answer":2} -->
+
+<!-- grammar-card: {"rule":"A stranger is always addressed with Вы","hint":"ты (informal) / Вы (polite)","example":"___ не подскажете, где метро?","answer":"Вы","explanation":"Asking directions of someone you do not know calls for the polite Вы; ты would be rude."} -->
 
 ---
 

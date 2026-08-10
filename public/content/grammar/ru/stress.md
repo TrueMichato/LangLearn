@@ -35,6 +35,8 @@ Stress in Russian has two major effects:
 
 <!-- quiz:{"type":"multiple-choice","question":"What does за́мок (stress on first syllable) mean?","options":["Lock","Castle","Bridge","Key"],"answer":1} -->
 
+<!-- grammar-card: {"rule":"Stress alone can separate two entirely different words","hint":"за́мок / замо́к","example":"Он купил ___ для двери за́мка.","answer":"замо́к","explanation":"За́мок with initial stress is a castle; the lock for its door is замо́к, stressed on the ending."} -->
+
 ---
 
 ## 2. Stress Is Unpredictable
@@ -135,6 +137,8 @@ Many masculine nouns shift stress to the ending in the plural:
 - **до́м** *(dom)* — house → **дома́** *(domá)* — houses
 - **глаз** *(glaz)* — eye → **глаза́** *(glazá)* — eyes
 
+<!-- grammar-card: {"rule":"Some nouns move their stress when they change case","hint":"голова́ → accusative","example":"Она повернула ___.","answer":"го́лову","explanation":"Голова́ is end-stressed, but its accusative pulls the stress forward to го́лову."} -->
+
 ---
 
 ## 5. Stress Shifts in Conjugation
@@ -173,6 +177,8 @@ Some verbs shift stress in the feminine past tense:
 **Он был до́ма.** *(On byl dóma.)* — He was at home.
 
 <!-- quiz:{"type":"multiple-choice","question":"How does stress change in рука́ → ру́ки (hand → hands)?","options":["It stays on the same syllable","It moves forward (toward the end)","It moves backward (toward the beginning)","There is no stress change"],"answer":2} -->
+
+<!-- grammar-card: {"rule":"The feminine past of быть is stressed on its ending","hint":"был / была́","example":"Она́ ___ до́ма.","answer":"была́","explanation":"Была́ is the odd form out — masculine был and neuter бы́ло both keep the stress on the stem."} -->
 
 ---
 

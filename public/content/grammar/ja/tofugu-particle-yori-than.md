@@ -151,6 +151,10 @@ To make this sentence negative, you switch より to ほど and turn 大きい t
 
 This pattern is the main way to show comparisons of inferiority in Japanese. English has a couple ways to make those comparisons — "not as big as" or "less big than," depending on the situation — but in Japanese you can rely on the ほど〜ない pattern alone for all your inferiority comparison needs. Pretty straightforward, right?
 
+<!-- grammar-card: {"rule":"方が marks the preferred side of a comparison","hint":"方 + が","example":"私が作る___おいしい。","answer":"方が","explanation":"私が作る方が says the one I make is the better of the two."} -->
+
+<!-- grammar-card: {"rule":"より marks the standard something is compared against","hint":"より","example":"このイチゴは、あのイチゴ___大きい。","answer":"より","explanation":"あのイチゴより means 'than that strawberry'."} -->
+
 ## Beyond the Basics
 
 ### When より Means "Than" And "From"
@@ -231,11 +235,13 @@ by 森田 良行
 (2007)
 p. 274
 
-<!-- quiz: {"type":"multiple-choice","question":"What does \"このイチゴは、あのイチゴ**より**大きい。\" mean?","options":["This strawberry is bigger **than** that strawberry.","This strawberry has grown faster **than** that strawberry.","Tom is taller than Ben.","Tom is taller than Ben."],"answer":0} -->
+<!-- quiz: {"type":"multiple-choice","question":"What does \"このイチゴは、あのイチゴ**より**大きい。\" mean?","options":["This strawberry is bigger **than** that strawberry.","This strawberry has grown faster **than** that strawberry.","Tom is taller than Ben.","That strawberry is bigger **than** this strawberry."],"answer":0} -->
 
-<!-- quiz: {"type":"multiple-choice","question":"What does \"このイチゴは、あのイチゴ**より**速く育っている。\" mean?","options":["This strawberry has grown faster **than** that strawberry.","This strawberry is bigger **than** that strawberry.","Tom is taller than Ben.","Tom is taller than Ben."],"answer":0} -->
+<!-- quiz: {"type":"multiple-choice","question":"What does \"このイチゴは、あのイチゴ**より**速く育っている。\" mean?","options":["This strawberry has grown faster **than** that strawberry.","This strawberry is bigger **than** that strawberry.","Tom is taller than Ben.","That strawberry has grown faster **than** this strawberry."],"answer":0} -->
 
 <!-- quiz: {"type":"multiple-choice","question":"What does \"トム**は**、ベン**より**背が高い。\" mean?","options":["Tom is taller than Ben.","This strawberry is bigger **than** that strawberry.","This strawberry has grown faster **than** that strawberry.","Tom is taller."],"answer":0} -->
+
+<!-- grammar-card: {"rule":"より仕方がない means there is no choice but this","hint":"より + 仕方がない","example":"歩く___。","answer":"より仕方がない","explanation":"歩くより仕方がない says walking is the only option left."} -->
 
 ## Sources
 

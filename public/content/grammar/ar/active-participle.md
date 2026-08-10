@@ -21,7 +21,7 @@ The **اِسْمُ الْفَاعِلِ** (ism al-fāʿil) — active participle
 
 The active participle behaves like a noun or adjective. It can show gender and number: **كَاتِبٌ** (kātibun) — male writer, **كَاتِبَةٌ** (kātibatun) — female writer, and **كَاتِبُونَ** (kātibūna) — male writers.
 
-<!-- grammar-card: {"rule":"The Form I active participle often follows the pattern فَاعِلٌ (fāʿilun).","hint":"A long ā after the first root sound is the clue.","example":"Complete “student / one studying”: دَرَسَ (darasa) → ___ (dārisun).","answer":"دَارِسٌ (dārisun) — student / studying","explanation":"دَارِسٌ (dārisun) uses the فَاعِلٌ (fāʿilun) pattern from دَرَسَ (darasa) — he studied."} -->
+<!-- grammar-card: {"rule":"The Form I active participle often follows the pattern فَاعِلٌ (fāʿilun).","hint":"A long ā after the first root sound is the clue.","example":"Complete “student / one studying”: دَرَسَ (darasa) → ___ (dārisun).","answer":"دَارِسٌ","explanation":"student / studying — دَارِسٌ (dārisun) uses the فَاعِلٌ (fāʿilun) pattern from دَرَسَ (darasa) — he studied."} -->
 
 ## Practice patterns
 
@@ -34,7 +34,7 @@ In MSA, context decides whether English sounds better with “is doing” or “
 
 <!-- quiz: {"type":"multiple-choice","question":"Which form is feminine?","options":["كَاتِبٌ (kātibun) — male writer","كَاتِبَةٌ (kātibatun) — female writer","كَاتِبُونَ (kātibūna) — male writers","كُتُبٌ (kutubun) — books"],"answer":1} -->
 
-<!-- grammar-card: {"rule":"Active participles agree like adjectives when they describe a noun.","hint":"A feminine noun usually needs a feminine participle.","example":"Complete “the female student is sitting”: الطَّالِبَةُ ___ (aṭ-ṭālibatu ___).","answer":"جَالِسَةٌ (jālisatun) — sitting","explanation":"الطَّالِبَةُ جَالِسَةٌ (aṭ-ṭālibatu jālisatun) uses the feminine active participle because الطَّالِبَةُ (aṭ-ṭālibatu) is feminine."} -->
+<!-- grammar-card: {"rule":"Active participles agree like adjectives when they describe a noun.","hint":"A feminine noun usually needs a feminine participle.","example":"Complete “the female student is sitting”: الطَّالِبَةُ ___ (aṭ-ṭālibatu ___).","answer":"جَالِسَةٌ (jālisatun)","explanation":"sitting — الطَّالِبَةُ جَالِسَةٌ (aṭ-ṭālibatu jālisatun) uses the feminine active participle because الطَّالِبَةُ (aṭ-ṭālibatu) is feminine."} -->
 
 ## Sources
 

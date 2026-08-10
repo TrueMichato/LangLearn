@@ -78,7 +78,7 @@ Makes **c** sound like "s" before **a**, **o**, **u**:
 - **França** (frahn-sah) — France
 - **açúcar** (ah-soo-kar) — sugar
 
-<!-- grammar-card: {"rule":"Cedilla (ç) makes C sound like S","hint":"Used before a, o, u to get the S sound","example":"cora___ão","answer":"coração","explanation":"Without the cedilla, 'co' before 'a' would sound like 'ka'. The ç forces the 's' sound: koh-rah-sow."} -->
+<!-- grammar-card: {"rule":"Cedilla (ç) makes C sound like S","hint":"Used before a, o, u to get the S sound","example":"cora___ão","answer":"ç","explanation":"Without the cedilla, 'co' before 'a' would sound like 'ka'. The ç forces the 's' sound: koh-rah-sow."} -->
 
 ## Consonants with Special Rules
 
@@ -129,7 +129,7 @@ These are digraphs (two letters making one sound):
 - **lh** — like "lli" in "million": **filho** (fee-lyoo) — son
 - **nh** — like "ny" in "canyon": **vinho** (vee-nyoo) — wine
 
-<!-- grammar-card: {"rule":"LH sounds like 'ly', NH sounds like 'ny'","hint":"These digraphs are unique to Portuguese","example":"fi___o (son), vi___o (wine)","answer":"filho, vinho","explanation":"LH produces a palatalized 'l' (like 'million') and NH produces a palatalized 'n' (like 'canyon')."} -->
+<!-- grammar-card: {"rule":"LH sounds like 'ly', NH sounds like 'ny'","hint":"These digraphs are unique to Portuguese","example":"fi___o (son), vi___o (wine)","answer":"lh, nh","explanation":"LH produces a palatalized 'l' (like 'million') and NH produces a palatalized 'n' (like 'canyon')."} -->
 
 ## Diphthongs
 
@@ -201,7 +201,7 @@ Here are mistakes English speakers often make:
 
 <!-- quiz: {"type":"multiple-choice","question":"How is the initial R pronounced in Brazilian Portuguese (e.g., 'rio')?","options":["Like a rolled R (as in Spanish)","Like an English R","Like an English H","It is silent"],"answer":2} -->
 
-<!-- grammar-card: {"rule":"Unstressed final -e sounds like 'ee', final -o sounds like 'oo'","hint":"Think of how Brazilians actually say these endings","example":"leit___ (milk), livr___ (book)","answer":"leite (lay-chee), livro (lee-vroo)","explanation":"In Brazilian Portuguese, unstressed final -e is reduced to an 'ee' sound and final -o to an 'oo' sound. This is a key feature that distinguishes Brazilian from European pronunciation."} -->
+<!-- grammar-card: {"rule":"Unstressed final -e sounds like 'ee', final -o sounds like 'oo'","hint":"Think of how Brazilians actually say these endings","example":"leit___ (milk), livr___ (book)","answer":"e (lay-chee), livro (lee-vroo)","explanation":"In Brazilian Portuguese, unstressed final -e is reduced to an 'ee' sound and final -o to an 'oo' sound. This is a key feature that distinguishes Brazilian from European pronunciation."} -->
 
 ## Sources
 

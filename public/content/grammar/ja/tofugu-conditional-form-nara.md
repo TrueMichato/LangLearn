@@ -98,6 +98,8 @@ When describing something in the past, you have to change these forms into the p
    **い-adjective**
    
    難しかった　+　なら　=　難しかった**なら**
+
+<!-- grammar-card: {"rule":"なら responds to something the other person has just raised","hint":"なら","example":"日本(にほん)に行(い)く___、京都(きょうと)がおすすめだよ。","answer":"なら","explanation":"なら takes the listener's stated plan as the premise for the advice that follows."} -->
    
   
 
@@ -165,6 +167,8 @@ However, you can use なら in the following context. Imagine that your friends 
 
 In this case, なら is appropriate because you are suggesting something for your friends, rather than reminding them of a possibility that their action might cause.
 
+<!-- grammar-card: {"rule":"なら attaches directly to a bare noun, with no だ","hint":"寿司 + ?","example":"寿司(すし)___、あの店(みせ)が一番(いちばん)おいしい。","answer":"なら","explanation":"寿司なら needs no だ, because なら follows the bare noun."} -->
+
 ## なら for Describing Counterfactual Situations
 
 Just like you use "if" to state counterfactual situations, なら can be used in the same way.
@@ -190,6 +194,8 @@ In speech, it is common to state only the conditional part of the sentence. When
   - 今日が金曜日ならなあ。
 
   - I wish today was Friday.
+
+<!-- grammar-card: {"rule":"なら can set up a hypothetical that is not actually true","hint":"私 + なら","example":"___、そんなことはしないよ。","answer":"私(わたし)なら","explanation":"私なら imagines the speaker standing in someone else's position."} -->
 
 ## Verb なら for Referring to Someone or Something
 

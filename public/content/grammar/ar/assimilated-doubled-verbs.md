@@ -21,7 +21,7 @@ The **الْفِعْلُ الْمِثَالُ** (al-fiʿl al-mithāl) — assimi
 
 In many assimilated verbs, the initial **وَاوٌ** (wāwun) — wāw disappears in the present and imperative: **وَصَلَ** (waṣala) — he arrived, **يَصِلُ** (yaṣilu) — he arrives, **صِلْ** (ṣil) — arrive! In doubled verbs, the doubled consonant may split when suffixes are added: **رَدَّ** (radda) — he replied, **رَدَدْتُ** (radadtu) — I replied.
 
-<!-- grammar-card: {"rule":"Many assimilated verbs with initial وَ (wa-) lose the w sound in the present and imperative.","hint":"وَصَلَ becomes يَصِلُ and صِلْ.","example":"Complete “arrive!”: ___ (ṣil).","answer":"صِلْ (ṣil) — arrive!","explanation":"صِلْ (ṣil) is the imperative of وَصَلَ (waṣala), with the initial w no longer pronounced."} -->
+<!-- grammar-card: {"rule":"Many assimilated verbs with initial وَ (wa-) lose the w sound in the present and imperative.","hint":"وَصَلَ becomes يَصِلُ and صِلْ.","example":"Complete “arrive!”: ___ (ṣil).","answer":"صِلْ","explanation":"arrive! — صِلْ (ṣil) is the imperative of وَصَلَ (waṣala), with the initial w no longer pronounced."} -->
 
 ## Practice patterns
 
@@ -32,7 +32,7 @@ Doubled verbs are compact in the third-person masculine past, but expanded forms
 
 <!-- quiz: {"type":"multiple-choice","question":"What does شَدَّةٌ (shaddatun) mark?","options":["a doubled consonant","a future verb","a feminine plural","a question word"],"answer":0} -->
 
-<!-- grammar-card: {"rule":"Doubled verbs have the same second and third root sound, often shown by shadda.","hint":"رَدَّ has a doubled دّ.","example":"Complete “he replies”: ___ (yaruddu).","answer":"يَرُدُّ (yaruddu) — he replies","explanation":"يَرُدُّ (yaruddu) keeps the doubled دّ sound of رَدَّ (radda) — he replied."} -->
+<!-- grammar-card: {"rule":"Doubled verbs have the same second and third root sound, often shown by shadda.","hint":"رَدَّ has a doubled دّ.","example":"Complete “he replies”: ___ (yaruddu).","answer":"يَرُدُّ","explanation":"he replies — يَرُدُّ (yaruddu) keeps the doubled دّ sound of رَدَّ (radda) — he replied."} -->
 
 ## Sources
 

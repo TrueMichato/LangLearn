@@ -23,6 +23,8 @@ The standard polite form. Used with strangers, acquaintances, coworkers, and in 
 
 > 💡 Textbooks teach polite form first, but plain form is what you hear in anime and casual conversation. Both are essential.
 
+<!-- grammar-card: {"rule":"です and ます form the default polite level","hint":"行く, polite","example":"明日(あした)、学校(がっこう)へ行(い)き___。","answer":"ます","explanation":"行きます is the safe register for anyone you are not close to."} -->
+
 ## Level 3: Honorific Language (尊敬語)
 
 Honorific language (尊敬語 / sonkeigo) **elevates the actions of others**. You never use it for your own actions.
@@ -43,6 +45,8 @@ Adding お or ご to nouns adds respect: お名前 (your name), ご家族 (your 
 - **どうぞ召し上がってください。** (Douzo meshiagatte kudasai.) — Please eat. (to a guest)
 
 <!-- quiz:{"type":"multiple-choice","question":"Which is the honorific form of '食べる'?","options":["いただく","召し上がる","参る","申す"],"answer":1} -->
+
+<!-- grammar-card: {"rule":"Honorific verbs raise the other person's action","hint":"いる / 来る / 行く, honorific","example":"社長(しゃちょう)がもうすぐ___。","answer":"いらっしゃいます","explanation":"いらっしゃいます elevates the president, and covers being, coming and going alike."} -->
 
 ## Level 4: Humble Language (謙譲語)
 
@@ -67,12 +71,16 @@ Humble language (謙譲語 / kenjougo) **lowers your own actions** to show respe
 
 <!-- quiz:{"type":"multiple-choice","question":"You are introducing yourself to a client. Which is correct?","options":["田中と言います","田中と申します","田中とおっしゃいます","田中でいらっしゃいます"],"answer":1} -->
 
+<!-- grammar-card: {"rule":"Humble verbs lower your own action","hint":"行く, humble","example":"明日(あした)、そちらへ___。","answer":"参(まい)ります","explanation":"参ります lowers the speaker's own going, which raises the listener by contrast."} -->
+
 ## Level 5: Ultra-Polite (ございます)
 
 ございます is the most polite form of ある. It appears in fixed expressions and formal service language.
 
 - **ありがとうございます。** (Arigatou gozaimasu.) — Thank you very much.
 - **お手洗いはあちらでございます。** (Otearai wa achira de gozaimasu.) — The restroom is over there.
+
+<!-- grammar-card: {"rule":"ございます is the ultra-polite form of ある","hint":"polite ある","example":"おはよう___。","answer":"ございます","explanation":"ございます appears in set greetings and throughout service language."} -->
 
 ## Practical Tips
 

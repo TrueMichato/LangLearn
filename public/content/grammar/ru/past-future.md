@@ -87,6 +87,8 @@ When negating быть in the past, the form **не было** is often used for
 
 **В комнате не было света.** *(V komnate ne bylo sveta.)* — There was no light in the room.
 
+<!-- grammar-card: {"rule":"The past tense agrees with the subject in gender and number","hint":"быть, feminine subject","example":"Она ___ в магазине.","answer":"была","explanation":"Она is feminine singular, so быть takes the feminine past была rather than был."} -->
+
 ---
 
 ## 3. Irregular Past Tense Verbs
@@ -230,6 +232,8 @@ Imperfective verbs form the future using the auxiliary verb **буду** (I will
 
 <!-- quiz:{"type":"multiple-choice","question":"How do you say 'We will be reading' (compound future)?","options":["Мы прочитаем.","Мы будем читать.","Мы читаем.","Мы читали."],"answer":1} -->
 
+<!-- grammar-card: {"rule":"The compound future is буду plus an imperfective infinitive","hint":"быть, я-form","example":"Я ___ читать весь вечер.","answer":"буду","explanation":"Читать is imperfective, so the future is built with буду plus the infinitive."} -->
+
 ---
 
 ## 6. Simple Future vs Compound Future
@@ -286,6 +290,8 @@ Emphasizes the **process**, **duration**, or **repetition** of a future action.
 **Мы купим продукты и будем готовить вместе.** *(My kupim produkty i budem gotovit' vmeste.)* — We'll buy groceries and will cook together.
 
 **Она сделает уроки и будет смотреть телевизор.** *(Ona sdelayet uroki i budet smotret' televizor.)* — She will finish homework and will watch TV.
+
+<!-- grammar-card: {"rule":"A perfective verb in present endings carries future meaning","hint":"написать","example":"Он ___ письмо.","answer":"напишет","explanation":"Perfective verbs have no present tense, so напишет means he will write the letter and finish it."} -->
 
 ---
 

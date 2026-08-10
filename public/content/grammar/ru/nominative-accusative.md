@@ -71,6 +71,8 @@ The key to the accusative case is that its form depends on both **gender** and w
 
 <!-- quiz:{"type":"multiple-choice","question":"What is the accusative form of «газета» (newspaper)?","options":["газета","газету","газеты","газете"],"answer":1} -->
 
+<!-- grammar-card: {"rule":"Masculine inanimate nouns look identical in the accusative","hint":"стол (table), inanimate","example":"Я вижу ___.","answer":"стол","explanation":"Стол is not alive, so its accusative simply matches the nominative — no ending is added."} -->
+
 ---
 
 ## 4. The Animate vs. Inanimate Distinction
@@ -200,6 +202,8 @@ Many common Russian verbs require their object in the accusative case:
 
 <!-- quiz:{"type":"multiple-choice","question":"Complete the sentence: «Мы смотрим ___» (We are watching a movie).","options":["фильм","фильма","фильму","фильмом"],"answer":0} -->
 
+<!-- grammar-card: {"rule":"A transitive verb puts its object in the accusative","hint":"книга (book)","example":"Она читает ___.","answer":"книгу","explanation":"Книга is what is being read, and feminine nouns in -а take -у in the accusative."} -->
+
 ---
 
 ## 8. Accusative of Direction and Motion
@@ -244,6 +248,8 @@ The accusative is also used to express **direction** (movement toward a place) w
 **Я положил телефон в карман.** *(Ya polozhil telefon v karman.)* — I put the phone in my pocket.
 
 <!-- quiz:{"type":"multiple-choice","question":"«Я иду в ___» (I am going to the library). Choose the correct accusative form of «библиотека».","options":["библиотека","библиотеку","библиотеке","библиотеки"],"answer":1} -->
+
+<!-- grammar-card: {"rule":"Motion towards a place uses в or на plus the accusative","hint":"в / на","example":"Я иду ___ школу.","answer":"в","explanation":"В with the accusative школу expresses movement into the school, not being there."} -->
 
 ---
 

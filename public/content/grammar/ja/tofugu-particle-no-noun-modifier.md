@@ -96,7 +96,7 @@ We call this use "nominalization" since it turns non-nouns into nouns. We won't 
 
 ### Isn't の the Japanese Possessive?
 
-You might think of particle の like Japanese equivalent of the possessive **'s** ending in English, as in Tom**'s** car of Granny**'s** kittens. However, the label maker is really a better way to think of particle の, since the relationship between the label and the noun can result in various different interpretations. For example, let's say your friend has a book recommendation:
+You might think of particle の like Japanese equivalent of the possessive **'s** ending in English, as in **Tom's** car of **Granny's** kittens. However, the label maker is really a better way to think of particle の, since the relationship between the label and the noun can result in various different interpretations. For example, let's say your friend has a book recommendation:
 
   - バナナの本、面白いよ。
 
@@ -218,6 +218,8 @@ While you might initially think of particle に when you think of location or ti
 
   - plastic cup
 
+<!-- grammar-card: {"rule":"の marks possession between two nouns","hint":"possessive","example":"これは私(わたし)___本(ほん)です。","answer":"の","explanation":"私の本 makes 私 the owner of the book."} -->
+
 ## Beyond The Basics
 
 #### Attributes (の-Adjectives)
@@ -292,6 +294,8 @@ by 柴谷 方良
 <!-- quiz: {"type":"multiple-choice","question":"What does \"私の\" mean?","options":["mine","my car","airplanes to the U.S.","airplanes from the U.S."],"answer":0} -->
 
 <!-- quiz: {"type":"multiple-choice","question":"What does \"アメリカへの飛行機\" mean?","options":["airplanes to the U.S.","my car","mine","airplanes from the U.S."],"answer":0} -->
+
+<!-- grammar-card: {"rule":"の can equate two nouns, meaning 'who is'","hint":"apposition","example":"こちらは友達(ともだち)___田中(たなか)さんです。","answer":"の","explanation":"友達の田中さん means 'Tanaka, who is my friend', not a friend belonging to Tanaka."} -->
 
 ## Sources
 

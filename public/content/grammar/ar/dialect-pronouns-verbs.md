@@ -18,7 +18,7 @@ Arabic dialects share many roots with MSA, but pronouns and present-tense markin
 
 MSA أَنْتَ (ʾanta) — you masculine and أَنْتِ (ʾanti) — you feminine often become إِنْتَ (inta) — you masculine and إِنْتِي (inti) — you feminine in Egyptian and Levantine speech. MSA هُوَ (huwa) — he and هِيَ (hiya) — she may sound like هُوَّه (huwwa) — he and هِيَّه (hiyya) — she in Egyptian.
 
-<!-- grammar-card: {"rule":"Dialect present markers such as بِـ (bi-), عَمْ (ʿam), كَـ (ka-), and تَـ (ta-) often replace MSA mood endings in everyday speech.","hint":"Look before the verb stem, not at the final case or mood vowel.","example":"Complete Egyptian “I write”: أَنَا ___ (baktub).","answer":"بَكْتُبْ (baktub) — I write","explanation":"بَكْتُبْ (baktub) uses the Egyptian-style بِـ present marker with the verb stem."} -->
+<!-- grammar-card: {"rule":"Dialect present markers such as بِـ (bi-), عَمْ (ʿam), كَـ (ka-), and تَـ (ta-) often replace MSA mood endings in everyday speech.","hint":"Look before the verb stem, not at the final case or mood vowel.","example":"Complete Egyptian “I write”: أَنَا ___ (baktub).","answer":"بَكْتُبْ","explanation":"I write — بَكْتُبْ (baktub) uses the Egyptian-style بِـ present marker with the verb stem."} -->
 
 ## Do not mix registers accidentally
 
@@ -33,7 +33,7 @@ In formal writing, use أَنَا أَكْتُبُ (ʾanā aktubu) — I write. 
 
 <!-- quiz: {"type":"multiple-choice","question":"Which Levantine-style phrase means I am speaking?","options":["عَمْ بَحْكِي (ʿam baḥkī) — I am speaking","أَتَكَلَّمُ (atakallamu) — I speak in MSA","لَمْ أَتَكَلَّمْ (lam atakallam) — I did not speak","مَا أَجْمَلَ الْكَلَامَ (mā ajmala al-kalāma) — how beautiful the speech is"],"answer":0} -->
 
-<!-- grammar-card: {"rule":"عَمْ (ʿam) before a Levantine present verb often marks progressive action.","hint":"Translate it as am/is/are doing when context fits.","example":"Complete “I am speaking”: عَمْ ___ (baḥkī).","answer":"بَحْكِي (baḥkī) — I speak / am speaking","explanation":"عَمْ بَحْكِي (ʿam baḥkī) is a Levantine-style progressive phrase meaning I am speaking."} -->
+<!-- grammar-card: {"rule":"عَمْ (ʿam) before a Levantine present verb often marks progressive action.","hint":"Translate it as am/is/are doing when context fits.","example":"Complete “I am speaking”: عَمْ ___ (baḥkī).","answer":"بَحْكِي","explanation":"I speak / am speaking — عَمْ بَحْكِي (ʿam baḥkī) is a Levantine-style progressive phrase meaning I am speaking."} -->
 
 ## Sources
 

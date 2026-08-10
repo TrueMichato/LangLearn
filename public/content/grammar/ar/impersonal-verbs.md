@@ -27,7 +27,7 @@ The verbs يَجِبُ (yajibu) and يَنْبَغِي (yanbaghī) do not need a
 - يَنْبَغِي أَنْ تَسْأَلَ بِأَدَبٍ (yanbaghī an tasʾala bi-adabin) — One should ask politely.
 - لَا يَجُوزُ أَنْ نَنْسَى الْوَعْدَ (lā yajūzu an nansā al-waʿda) — It is not permissible to forget the promise.
 
-<!-- grammar-card: {"rule":"يَجِبُ أَنْ (yajibu an) is followed by a subjunctive present verb.","hint":"After أَنْ, expect the ending ـَ on sound verbs.","example":"Complete: We must arrive: يَجِبُ أَنْ ___ (yajibu an ___).","answer":"نَحْضُرَ (naḥḍura) — that we arrive","explanation":"أَنْ puts نَحْضُرُ into the subjunctive form نَحْضُرَ after يَجِبُ."} -->
+<!-- grammar-card: {"rule":"يَجِبُ أَنْ (yajibu an) is followed by a subjunctive present verb.","hint":"After أَنْ, expect the ending ـَ on sound verbs.","example":"Complete: We must arrive: يَجِبُ أَنْ ___ (yajibu an ___).","answer":"نَحْضُرَ (naḥḍura)","explanation":"that we arrive — أَنْ puts نَحْضُرُ into the subjunctive form نَحْضُرَ after يَجِبُ."} -->
 
 ## Reading strategy
 
@@ -48,7 +48,7 @@ If an English translation begins with it, do not automatically search for هُو
 
 <!-- quiz: {"type":"multiple-choice","question":"Which sentence uses a real natural subject rather than a dummy pronoun?","options":["هَبَّتِ الرِّيحُ (habbati ar-rīḥu) — The wind blew","هُوَ هَبَّ (huwa habba) — He blew","أَنْ يَهُبَّ (an yahubba) — That he blow","رِيحٍ هَبَّتْ (rīḥin habbat) — Genitive wind blew"],"answer":0} -->
 
-<!-- grammar-card: {"rule":"Do not translate English dummy it mechanically as هُوَ in weather and necessity sentences.","hint":"Arabic usually chooses a natural subject or an impersonal verb.","example":"Which is idiomatic for it got hot: اِشْتَدَّ ___ (ishtadda ___).","answer":"الْحَرُّ (al-ḥarru) — the heat","explanation":"اِشْتَدَّ الْحَرُّ literally says the heat intensified, which is the idiomatic way to say it got very hot."} -->
+<!-- grammar-card: {"rule":"Do not translate English dummy it mechanically as هُوَ in weather and necessity sentences.","hint":"Arabic usually chooses a natural subject or an impersonal verb.","example":"Which is idiomatic for it got hot: اِشْتَدَّ ___ (ishtadda ___).","answer":"الْحَرُّ (al-ḥarru)","explanation":"اِشْتَدَّ الْحَرُّ literally says the heat intensified, which is the idiomatic way to say it got very hot."} -->
 
 ## Sources
 

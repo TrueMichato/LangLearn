@@ -14,6 +14,8 @@ The particle **を** marks the thing that receives the action of a verb. In spee
 
 <!-- quiz:{"type":"multiple-choice","question":"Fill in the blank: コーヒー＿飲む。(I drink coffee.)","options":["が","を","に","で"],"answer":1} -->
 
+<!-- grammar-card: {"rule":"を marks the direct object of a verb","hint":"を / が","example":"朝ご飯___食べた。","answer":"を","explanation":"朝ご飯 is what was eaten, so it takes the object marker を."} -->
+
 ## に (ni) — The Multi-Purpose Particle
 
 に is one of the most versatile particles. Its core meaning is a **specific point** — in space, time, or as a target.
@@ -62,6 +64,8 @@ Compare:
 
 If the verb describes a state of being (いる, ある, 住む), use に. If the verb describes an activity, use で.
 
+<!-- grammar-card: {"rule":"に marks the place where something exists","hint":"に / で","example":"公園___猫がいる。","answer":"に","explanation":"いる states existence rather than an action, so the location takes に and not で."} -->
+
 ## へ (e) — Direction
 
 The particle **へ** (pronounced "e") indicates direction of movement. It is similar to に but more vague — it emphasizes the **direction** rather than the destination.
@@ -79,6 +83,8 @@ In most everyday situations, に and へ are interchangeable for direction. Use 
 - **ここから駅まで歩く。** (Koko kara eki made aruku.) — I walk from here to the station.
 
 <!-- quiz:{"type":"multiple-choice","question":"Fill in the blanks: 月曜日＿金曜日＿働く。(I work from Monday to Friday.)","options":["に...に","から...まで","で...で","を...を"],"answer":1} -->
+
+<!-- grammar-card: {"rule":"から marks the starting point of a range","hint":"から / まで","example":"東京___大阪まで新幹線で行く。","answer":"から","explanation":"から paired with まで frames the journey from Tokyo through to Osaka."} -->
 
 ## の (no) — Possession and Noun Modification
 

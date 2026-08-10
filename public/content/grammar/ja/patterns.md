@@ -22,6 +22,8 @@ This lesson covers a collection of essential grammar patterns that you will enco
 
 <!-- quiz:{"type":"multiple-choice","question":"'日本語を勉強するために日本に来ました' means:","options":["I came to Japan because I studied Japanese","I came to Japan in order to study Japanese","I study Japanese for Japan","Japan came for my Japanese study"],"answer":1} -->
 
+<!-- grammar-card: {"rule":"ために states a deliberate purpose the speaker controls","hint":"ために / ように","example":"日本語を勉強(べんきょう)する___、日本に来(き)ました。","answer":"ために","explanation":"ために follows the dictionary form and expresses an aim the speaker deliberately pursues."} -->
+
 ## ように — "So That" / "In Such a Way That"
 
 **ように** expresses a goal or desired state, often with verbs in potential or negative form.
@@ -43,6 +45,8 @@ This lesson covers a collection of essential grammar patterns that you will enco
 | 合格するために勉強する (study to pass) | 合格できるように勉強する (study so that I can pass) |
 
 Both can translate as "in order to," but ために is more direct purpose and ように is more about reaching a desired state.
+
+<!-- grammar-card: {"rule":"ように is used for goals outside the speaker's direct control","hint":"ために / ように","example":"日本語が話(はな)せる___、毎日練習(れんしゅう)しています。","answer":"ように","explanation":"話せる is a potential, a state rather than a deliberate act, so ように is required instead of ために."} -->
 
 ## ようにする — "Make an Effort To" / "Try To"
 
@@ -148,6 +152,8 @@ Attach to the **verb stem** or **adjective stem** (drop い or だ).
 > ⚠️ The forms look very similar! Pay attention to whether the full word or just the stem is used.
 
 <!-- quiz:{"type":"multiple-choice","question":"'このケーキはおいしそうです' means:","options":["I heard this cake is delicious","This cake looks delicious","This cake is delicious","This cake was delicious"],"answer":1} -->
+
+<!-- grammar-card: {"rule":"Plain form plus そうです reports hearsay","hint":"そう","example":"明日は雨(あめ)が降(ふ)る___です。","answer":"そう","explanation":"Attached to the plain 降る, そうです means 'I hear it will rain', not 'it looks like rain'."} -->
 
 ## みたいだ / ようだ — "It Seems Like"
 

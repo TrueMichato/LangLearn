@@ -120,6 +120,10 @@ Let's say even though you asked them to not copy, they don't stop teasing you. I
 
 Although these are straight requests, ください still shows that you're expressing them respectfully. So you can assume that the person teasing you may be your boss or someone with a higher social status than you.
 
+<!-- grammar-card: {"rule":"てもらえませんか is softer than てください","hint":"a gentler request","example":"もう少しゆっくり話して___？","answer":"もらえませんか","explanation":"Framing the request as a negative question makes it less direct and more courteous."} -->
+
+<!-- grammar-card: {"rule":"The て-form plus ください makes a polite request","hint":"話して + ?","example":"もう少しゆっくり話して___。","answer":"ください","explanation":"話してください asks the listener directly but politely to speak more slowly."} -->
+
 ## Beyond the Basics
 
 ### ご/お〜ください for Formal Instruction
@@ -245,6 +249,8 @@ by Mieko Ohso
 <!-- quiz: {"type":"multiple-choice","question":"What does \"バニラアイスを**ください**。\" mean?","options":["Vanilla ice cream, **please**.","This skirt, **please**.","Apples, **please**.","Three, **please**."],"answer":0} -->
 
 <!-- quiz: {"type":"multiple-choice","question":"What does \"りんごを**ください**。\" mean?","options":["Apples, **please**.","This skirt, **please**.","Vanilla ice cream, **please**.","Three, **please**."],"answer":0} -->
+
+<!-- grammar-card: {"rule":"ください attaches to the て-form, never the dictionary form","hint":"閉める → ?","example":"もし寒かったら、窓を閉め___。","answer":"てください","explanation":"閉める has to become 閉めて before ください can be added."} -->
 
 ## Sources
 

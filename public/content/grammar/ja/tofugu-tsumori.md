@@ -185,6 +185,10 @@ If you ended up failing the exam and learn that your preparation was, in fact, i
 
 See how we can combine these uses of つもり to express intentions in a different way, just by altering the tense? Pretty useful.
 
+<!-- grammar-card: {"rule":"らしい after つもり reports someone else's intention","hint":"つもり + らしい","example":"あいつ、イラストレーターになる___よ。","answer":"つもりらしい","explanation":"つもりらしい says the speaker heard about the plan rather than holding it himself."} -->
+
+<!-- grammar-card: {"rule":"つもりです states a settled intention","hint":"intention","example":"今日はそうじをする___です。","answer":"つもり","explanation":"するつもりです says the speaker has already decided to clean today."} -->
+
 ## Beyond the Basics
 
 ### 〜つもりで For With The Intention of 〜
@@ -302,6 +306,8 @@ by Kaori Nakamura
 <!-- quiz: {"type":"multiple-choice","question":"What does \"いつか、イラストレーターになる**つもり**です。\" mean?","options":["I'm committed to being an illustrator one day.","Today, I'm planning to do some cleaning.","You're committed to becoming an illustrator!?","I heard he's committed to becoming an illustrator."],"answer":0} -->
 
 <!-- quiz: {"type":"multiple-choice","question":"What does \"イラストレーターになる**つもり**なの！？\" mean?","options":["You're committed to becoming an illustrator!?","Today, I'm planning to do some cleaning.","I'm committed to being an illustrator one day.","I heard he's committed to becoming an illustrator."],"answer":0} -->
+
+<!-- grammar-card: {"rule":"つもりで means acting as if something were so","hint":"つもり + で","example":"業界に革命を起こす___頑張ってくれよ。","answer":"つもりで","explanation":"起こすつもりで tells him to work as though he will revolutionise the industry."} -->
 
 ## Sources
 

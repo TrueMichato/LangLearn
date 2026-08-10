@@ -96,6 +96,8 @@ Simply add **なら** after the plain form of a verb, adjective, or noun:
 Person A: 明日東京(とうきょう)に行きます。 — I'm going to Tokyo tomorrow.
 Person B: 東京に行く**なら**、お土産(みやげ)を買ってきてください。 — If you're going to Tokyo, please buy me a souvenir.
 
+<!-- grammar-card: {"rule":"なら picks up something already said and treats it as a premise","hint":"なら / と / たら","example":"日本に行く___、京都(きょうと)がおすすめです。","answer":"なら","explanation":"It responds to the listener's stated plan: given that you are going, here is my advice."} -->
+
 ## と — "When / If (Automatic Result)"
 
 と expresses a natural, automatic, or habitual consequence. It implies that Y **always** follows X.
@@ -122,6 +124,8 @@ Add **と** after the **dictionary form** (plain present):
 - ✅ まっすぐ行ったら、右に曲がってください。 — Go straight, then please turn right.
 
 <!-- quiz:{"type":"multiple-choice","question":"Which conditional is best for 'When spring comes, flowers bloom' (natural/automatic result)?","options":["たら","ば","なら","と"],"answer":3} -->
+
+<!-- grammar-card: {"rule":"と states a result that always follows automatically","hint":"なら / と / たら","example":"春になる___、桜(さくら)が咲(さ)きます。","answer":"と","explanation":"Spring always brings blossom, and と is the conditional reserved for such natural consequences."} -->
 
 ## Comparing the Four Forms
 
@@ -159,6 +163,8 @@ You can use negative forms with all four:
 - **食べないと、元気(げんき)が出(で)ませんよ。** — If you don't eat, you won't have energy.
 
 <!-- quiz:{"type":"multiple-choice","question":"'もっと練習すれば、上手になります' uses which conditional?","options":["たら","ば","なら","と"],"answer":1} -->
+
+<!-- grammar-card: {"rule":"A negative conditional negates the verb first, then adds なら","hint":"行く → ?","example":"___、連絡(れんらく)してください。","answer":"行かないなら","explanation":"行く becomes 行かない, and なら follows to mean 'if it is the case that you are not going'."} -->
 
 ## Summary
 

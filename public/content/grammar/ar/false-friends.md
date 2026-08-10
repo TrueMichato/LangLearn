@@ -23,7 +23,7 @@ Do not translate a familiar-looking word automatically. Check context, register,
 
 Arabic often distinguishes meanings that English compresses. **جَامِعَةٌ** (jāmiʿatun) — university and **جَامِعٌ** (jāmiʿun) — mosque share a root sense of gathering, but the tāʾ marbūṭa changes the common noun. Likewise, **مُنَاسَبَةٌ** (munāsabatun) — occasion / event may fit context better than a literal suitable-ness.
 
-<!-- grammar-card: {"rule":"أَخِيرًا means finally; use حَالِيًّا for currently and فِعْلِيًّا for actually.","hint":"Match the time word to the intended English adverb.","example":"Translate currently: ___ .","answer":"حَالِيًّا (ḥāliyyan) — currently","explanation":"أَخِيرًا points to finality or at last, while حَالِيًّا points to the present time."} -->
+<!-- grammar-card: {"rule":"أَخِيرًا means finally; use حَالِيًّا for currently and فِعْلِيًّا for actually.","hint":"Match the time word to the intended English adverb.","example":"Translate currently: ___ .","answer":"حَالِيًّا (ḥāliyyan)","explanation":"currently — أَخِيرًا points to finality or at last, while حَالِيًّا points to the present time."} -->
 
 ## Checking collocations
 

@@ -21,7 +21,7 @@ Attached pronouns are suffixes. On nouns, they usually show possession: **كِت
 
 When a noun takes an attached possessive suffix, it becomes definite in meaning. **كِتَابِي** (kitābī) — my book is already specific, so it does not take **الْـ** (al-) — the.
 
-<!-- grammar-card: {"rule": "Attached pronouns on nouns express possession and make the noun definite in meaning.", "hint": "My/your/his is already specific.", "example": "Complete “my book”: ___ (kitābī) — my book.", "answer": "كِتَابِي (kitābī) — my book", "explanation": "كِتَابِي (kitābī) — my book attaches ـِي (-ī) — my to the noun."} -->
+<!-- grammar-card: {"rule":"Attached pronouns on nouns express possession and make the noun definite in meaning.","hint":"My/your/his is already specific.","example":"Complete “my book”: ___ (kitābī) — my book.","answer":"كِتَابِي","explanation":"كِتَابِي (kitābī) — my book attaches ـِي (-ī) — my to the noun."} -->
 
 ## Practice patterns
 
@@ -35,7 +35,7 @@ Treat the suffix as a little pronoun glued to the end.
 
 <!-- quiz: {"type": "multiple-choice", "question": "Which phrase means “with them”?", "options": ["مَعَهُمْ (maʿahum) — with them", "مِنْهُ (minhu) — from him", "لَهَا (lahā) — to her", "فِيهِ (fīhi) — in it"], "answer": 0} -->
 
-<!-- grammar-card: {"rule": "Attached pronouns on verbs can be direct objects.", "hint": "The suffix receives the action.", "example": "Complete “I saw him”: رَأَيْتُ___ (raʾaytu___).", "answer": "ـهُ (-hu) — him / it", "explanation": "رَأَيْتُهُ (raʾaytuhu) — I saw him / it uses ـهُ (-hu) as the object suffix."} -->
+<!-- grammar-card: {"rule":"Attached pronouns on verbs can be direct objects.","hint":"The suffix receives the action.","example":"Complete “I saw him”: رَأَيْتُ___ (raʾaytu___).","answer":"ـهُ (-hu)","explanation":"رَأَيْتُهُ (raʾaytuhu) — I saw him / it uses ـهُ (-hu) as the object suffix."} -->
 
 ## Sources
 

@@ -21,7 +21,7 @@ Arabic has familiar sounds plus sounds made deeper in the throat or with the ton
 
 When a word feels difficult, isolate one sound. Say **سَ** (sa) — sa, then **صَ** (ṣa) — ṣa. Say **أَ** (ʾa) — glottal start, then **عَ** (ʿa) — ʿayn. Tiny repetitions are enough; pronunciation grows with exposure.
 
-<!-- grammar-card: {"rule": "The emphatic letters ط (ṭāʾ) — ṭ, ص (ṣād) — ṣ, ض (ḍād) — ḍ, and ظ (ẓāʾ) — ẓ darken nearby vowels.", "hint": "Emphatics feel heavier than their plain partners.", "example": "Choose the emphatic word: ___ (ṣayfun) — summer.", "answer": "صَيْفٌ (ṣayfun) — summer", "explanation": "صَيْفٌ (ṣayfun) — summer begins with emphatic ص (ṣād) — ṣ, unlike سَيْفٌ (sayfun) — sword."} -->
+<!-- grammar-card: {"rule":"The emphatic letters ط (ṭāʾ) — ṭ, ص (ṣād) — ṣ, ض (ḍād) — ḍ, and ظ (ẓāʾ) — ẓ darken nearby vowels.","hint":"Emphatics feel heavier than their plain partners.","example":"Choose the emphatic word: ___ (ṣayfun) — summer.","answer":"صَيْفٌ","explanation":"صَيْفٌ (ṣayfun) — summer begins with emphatic ص (ṣād) — ṣ, unlike سَيْفٌ (sayfun) — sword."} -->
 
 ## Practice patterns
 
@@ -34,7 +34,7 @@ Common pronunciation anchors:
 
 <!-- quiz: {"type": "multiple-choice", "question": "What is the main difference between كَلْبٌ (kalbun) — dog and قَلْبٌ (qalbun) — heart?", "options": ["Gender", "Case ending", "The back consonant ق (qāf) — q vs. ك (kāf) — k", "Plural pattern"], "answer": 2} -->
 
-<!-- grammar-card: {"rule": "The letter ع (ʿayn) — ʿ is a voiced throat sound, not an English vowel.", "hint": "It is often the sound learners need most patience with.", "example": "The word ___ (ʿarabiyyun) — Arabic / Arab contains ع (ʿayn) — ʿ.", "answer": "عَرَبِيٌّ (ʿarabiyyun) — Arabic / Arab", "explanation": "عَرَبِيٌّ (ʿarabiyyun) — Arabic / Arab begins with ع (ʿayn) — ʿ, a core Arabic throat consonant."} -->
+<!-- grammar-card: {"rule":"The letter ع (ʿayn) — ʿ is a voiced throat sound, not an English vowel.","hint":"It is often the sound learners need most patience with.","example":"The word ___ (ʿarabiyyun) — Arabic / Arab contains ع (ʿayn) — ʿ.","answer":"عَرَبِيٌّ","explanation":"عَرَبِيٌّ (ʿarabiyyun) — Arabic / Arab begins with ع (ʿayn) — ʿ, a core Arabic throat consonant."} -->
 
 ## Sources
 

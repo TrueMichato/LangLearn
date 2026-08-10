@@ -21,7 +21,7 @@ With moon letters, pronounce the l in **الْـ** (al-) — the: **الْقَم
 
 Definiteness matters in grammar. **بَيْتٌ** (baytun) — a house has tanwīn, while **الْبَيْتُ** (al-baytu) — the house loses tanwīn and takes **الْـ** (al-) — the.
 
-<!-- grammar-card: {"rule": "Before sun letters, the l of الْـ (al-) — the assimilates and the next consonant is doubled.", "hint": "Look for shadda on the first consonant after the article.", "example": "The definite form of شَمْسٌ (shamsun) — sun is ___ .", "answer": "الشَّمْسُ (ash-shamsu) — the sun", "explanation": "ش (shīn) — sh is a sun letter, so الْـ (al-) — the is pronounced ash- and the شّ (shsh) — doubled sh appears."} -->
+<!-- grammar-card: {"rule":"Before sun letters, the l of الْـ (al-) — the assimilates and the next consonant is doubled.","hint":"Look for shadda on the first consonant after the article.","example":"The definite form of شَمْسٌ (shamsun) — sun is ___ .","answer":"الشَّمْسُ (ash-shamsu)","explanation":"the sun — ش (shīn) — sh is a sun letter, so الْـ (al-) — the is pronounced ash- and the شّ (shsh) — doubled sh appears."} -->
 
 ## Practice patterns
 
@@ -33,7 +33,7 @@ Useful pairs:
 
 <!-- quiz: {"type": "multiple-choice", "question": "What happens to tanwīn when a noun becomes definite with الْـ (al-) — the?", "options": ["It remains unchanged", "It usually disappears", "It becomes a verb prefix", "It marks dual"], "answer": 1} -->
 
-<!-- grammar-card: {"rule": "Before moon letters, pronounce the l of الْـ (al-) — the normally.", "hint": "Moon letters keep the l sound.", "example": "The definite form of قَمَرٌ (qamarun) — moon is ___ .", "answer": "الْقَمَرُ (al-qamaru) — the moon", "explanation": "ق (qāf) — q is a moon letter, so الْقَمَرُ (al-qamaru) — the moon keeps the l sound."} -->
+<!-- grammar-card: {"rule":"Before moon letters, pronounce the l of الْـ (al-) — the normally.","hint":"Moon letters keep the l sound.","example":"The definite form of قَمَرٌ (qamarun) — moon is ___ .","answer":"الْقَمَرُ (al-qamaru)","explanation":"ق (qāf) — q is a moon letter, so الْقَمَرُ (al-qamaru) — the moon keeps the l sound."} -->
 
 ## Sources
 

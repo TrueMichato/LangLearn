@@ -58,6 +58,12 @@ The **prepositional** case is always used with a preposition (в, на, о/об)
 
 <!-- quiz:{"type":"multiple-choice","question":"'Я живу в Москве' — which case is Москве in?","options":["Genitive","Dative","Instrumental","Prepositional"],"answer":3} -->
 
+<!-- grammar-card: {"rule":"The accusative marks the direct object of a transitive verb","hint":"книга (book)","example":"Он читает ___.","answer":"книгу","explanation":"Книга is what is being read, and feminine -а becomes -у in the accusative."} -->
+
+<!-- grammar-card: {"rule":"The dative marks the person something is given to","hint":"студент (student)","example":"Я дал книгу ___.","answer":"студенту","explanation":"The student receives the book, so masculine студент takes the dative ending -у."} -->
+
+<!-- grammar-card: {"rule":"After нет the missing thing stands in the genitive","hint":"кошка (cat)","example":"У меня нет ___.","answer":"кошки","explanation":"Нет denies existence and governs the genitive, so кошка becomes кошки."} -->
+
 ## Quick Reference Table
 
 | Case | Question | Example (кошка) |

@@ -16,6 +16,10 @@ In formal correspondence, **Вы** (you) and its forms (**Вас**, **Вам**, 
 
 > In informal writing (texts, social media), вы is lowercase. Capitalizing Вы in a letter signals professionalism and respect.
 
+<!-- grammar-card: {"rule":"The person something is sent to stands in the dative","hint":"Вы → dative","example":"Направляю ___ документы.","answer":"Вам","explanation":"The documents go to the reader, so Вы takes the dative form Вам."} -->
+
+<!-- grammar-card: {"rule":"Capitalised Вы still declines like any other pronoun","hint":"просить takes the accusative","example":"Прошу ___ ответить на моё письмо.","answer":"Вас","explanation":"Просить governs the accusative, so Вы becomes Вас — capitalised in a letter as a mark of respect."} -->
+
 ---
 
 ## 2. Letter Openings (Обращения)

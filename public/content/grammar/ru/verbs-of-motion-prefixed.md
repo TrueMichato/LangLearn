@@ -44,6 +44,8 @@ The prefix **по-** with unidirectional verbs means "to set off" or "begin goin
 
 > **По-** with multidirectional verbs means "to do for a while": Он походил по парку — He walked around the park for a while.
 
+<!-- grammar-card: {"rule":"По- marks setting off — the start of a journey","hint":"идти → ?","example":"Он ___ на работу.","answer":"пошёл","explanation":"Пошёл reports the departure itself, saying nothing about the trip or whether he arrived."} -->
+
 ---
 
 ## 3. При- (Arriving)
@@ -64,6 +66,8 @@ The prefix **по-** with unidirectional verbs means "to set off" or "begin goin
 
 <!-- quiz:{"type":"multiple-choice","question":"'Она приходит на работу рано' uses the imperfective because:","options":["It happened once in the past","It's a habitual/repeated action","She hasn't arrived yet","It's a polite request"],"answer":1} -->
 
+<!-- grammar-card: {"rule":"При- marks arrival at the destination","hint":"идти → ?","example":"Она ___ домой поздно.","answer":"пришла","explanation":"Пришла focuses on getting home rather than on the walking, and agrees with the feminine subject."} -->
+
 ---
 
 ## 4. У- (Leaving, Going Away)
@@ -81,6 +85,8 @@ The prefix **по-** with unidirectional verbs means "to set off" or "begin goin
 **Не уходи!** *(Ne ukhodí!)* — Don't leave!
 
 **Поезд уже ушёл.** *(Póyezd uzhé ushyól.)* — The train has already left. (Also figurative: "The ship has sailed.")
+
+<!-- grammar-card: {"rule":"У- marks leaving somewhere and no longer being there","hint":"ехать → ?","example":"Они ___ из города.","answer":"уехали","explanation":"Уехали says they left the city altogether, unlike вышли, which would only mean stepping outside."} -->
 
 ---
 

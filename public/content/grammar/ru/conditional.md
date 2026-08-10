@@ -27,6 +27,8 @@ The particle **бы** is **not fixed** in position — it can come right after t
 
 **Она сделала бы это иначе.** *(Ona sdelala by eto inache.)* — She would do it differently.
 
+<!-- grammar-card: {"rule":"The conditional is a past-tense verb plus the particle бы","hint":"a particle, never conjugated","example":"Я ___ прочитал эту книгу.","answer":"бы","explanation":"Бы added to the past form прочитал turns I read into I would read; бы itself never changes."} -->
+
 ---
 
 ## 2. Conditional Sentences with Если бы
@@ -147,6 +149,8 @@ The conjunction **чтобы** (что + бы) is used to express **purpose** ("
 **Я хотел бы, чтобы вы объяснили это.** *(Ya khotel by, chtoby vy obyasnili eto.)* — I would like you to explain this.
 
 <!-- quiz:{"type":"multiple-choice","question":"In 'Я хочу, чтобы ты пришёл', why is 'пришёл' in past tense?","options":["It refers to a past event.","It's an error — should be present tense.","Чтобы requires past tense when subjects differ.","It's the imperative form."],"answer":2} -->
+
+<!-- grammar-card: {"rule":"Чтобы introduces the purpose an action serves","hint":"чтобы + infinitive","example":"Я учу русский, ___ читать Достоевского.","answer":"чтобы","explanation":"Both halves share the subject я, so чтобы is followed by the plain infinitive читать."} -->
 
 ---
 

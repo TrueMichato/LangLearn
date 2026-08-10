@@ -20,6 +20,8 @@ The **dictionary form** is the plain form you find in dictionaries. The **ます
 
 <!-- quiz:{"type":"multiple-choice","question":"What is the ます form of 飲む (nomu)?","options":["飲みます","飲ります","飲ます","飲ぶます"],"answer":0} -->
 
+<!-- grammar-card: {"rule":"Group 1 verbs shift the final -u sound to -i before ます","hint":"飲む → ?","example":"毎日(まいにち)コーヒーを飲(の)み___。","answer":"ます","explanation":"飲む becomes 飲みます, following the Group 1 pattern."} -->
+
 ## て Form (Te-form)
 
 The **て form** is one of the most versatile forms. It is used to connect actions, make requests, describe ongoing actions, and more.
@@ -53,6 +55,8 @@ Simply drop る and add て: 食べる → 食べて, 見る → 見て.
 
 <!-- quiz:{"type":"multiple-choice","question":"What is the て form of 書く (kaku)?","options":["書って","書いて","書して","書きて"],"answer":1} -->
 
+<!-- grammar-card: {"rule":"Requests attach to the て-form","hint":"待つ → ?","example":"ちょっと待(ま)っ___ください。","answer":"て","explanation":"待つ becomes 待って, and ください follows it to make a polite request."} -->
+
 ## た Form (Past Tense)
 
 The **た form** follows the exact same pattern as the て form — just replace て with た (and で with だ).
@@ -66,6 +70,8 @@ The **た form** follows the exact same pattern as the て form — just replace
 
 - **昨日、映画を見た。** (Kinō, eiga o mita.) — I watched a movie yesterday.
 - **友達が来た。** (Tomodachi ga kita.) — A friend came.
+
+<!-- grammar-card: {"rule":"The た-form follows exactly the same sound changes as the て-form","hint":"見る, plain past","example":"昨日(きのう)、映画(えいが)を見(み)___。","answer":"た","explanation":"見る becomes 見た, mirroring the て-form pattern precisely."} -->
 
 ## Practice Tips
 

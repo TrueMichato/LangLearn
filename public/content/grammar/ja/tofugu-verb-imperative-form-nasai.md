@@ -45,7 +45,9 @@ To connect 〜なさい to a verb, you'll need to use the stem form of the verb.
    **Irregular**
    
    **する**　=　**しなさい**
-** 来る(く　)　=　 来なさい(き　　　)**
+**来る(く　)　=　 来なさい(き　　　)**
+
+<!-- grammar-card: {"rule":"なさい attaches to the ます-stem, not the dictionary form","hint":"する + なさい","example":"ちゃんと宿題(しゅくだい)を___。","answer":"しなさい","explanation":"する gives the stem し, so the command is しなさい and never するなさい."} -->
    
   
 
@@ -76,6 +78,8 @@ In addition, 〜なさい is commonly used in questions on exams. If you have ta
   - 選択肢の中なら、正解を一つ選びなさい。
 
   - Choose the correct answer from the given choices.
+
+<!-- grammar-card: {"rule":"なさい gives a firm command that is still polite","hint":"寝る + なさい","example":"早(はや)く寝(ね)___。","answer":"なさい","explanation":"寝なさい is what a parent says to a child — softer than 寝ろ but still an order."} -->
 
 ## なさい for Showing Care
 

@@ -23,7 +23,7 @@ Use the collective when you mean the kind or material in general: **أُحِبّ
 
 The unit noun can take normal singular agreement: **هٰذِهِ شَجَرَةٌ طَوِيلَةٌ** (hādhihi shajaratun ṭawīlatun) — this is a tall tree. The collective can often behave like a singular idea: **الشَّجَرُ كَثِيفٌ** (ash-shajaru kathīfun) — the trees are dense.
 
-<!-- grammar-card: {"rule":"Many Arabic collective nouns form a unit noun by adding tāʾ marbūṭa, such as تَمْرٌ (tamrun) to تَمْرَةٌ (tamratun).","hint":"One item often ends in ـةٌ.","example":"Complete one fish: سَمَك___ (samak___).","answer":"سَمَكَةٌ (samakatun) — one fish","explanation":"سَمَكٌ (samakun) names fish collectively, while سَمَكَةٌ (samakatun) names one fish."} -->
+<!-- grammar-card: {"rule":"Many Arabic collective nouns form a unit noun by adding tāʾ marbūṭa, such as تَمْرٌ (tamrun) to تَمْرَةٌ (tamratun).","hint":"One item often ends in ـةٌ.","example":"Complete one fish: سَمَك___ (samak___).","answer":"سَمَكَةٌ (samakatun)","explanation":"سَمَكٌ (samakun) names fish collectively, while سَمَكَةٌ (samakatun) names one fish."} -->
 
 ## Collective, unit, and plural
 

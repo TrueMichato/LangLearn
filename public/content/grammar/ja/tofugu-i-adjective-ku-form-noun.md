@@ -56,6 +56,12 @@ Finally, they can be joined to other nouns with the particle の:
 
 This is a tricky one because it looks like it’s being used like an adjective, but since only nouns can generally be attached to other nouns with particle の, 近く is actually behaving as a noun here.
 
+<!-- grammar-card: {"rule":"多く can act as a noun meaning many of them","hint":"多い → ?","example":"___が当選した。","answer":"多く","explanation":"多く here is the subject of 当選した — many of them were elected."} -->
+
+<!-- grammar-card: {"rule":"遅く works as a noun after まで","hint":"遅い → ?","example":"彼は___まで勉強しました。","answer":"遅く","explanation":"遅くまで means until late, with 遅く standing in for a point in time."} -->
+
+<!-- grammar-card: {"rule":"Some く-forms have hardened into nouns","hint":"古い → ?","example":"来週___からの友達が遊びに来る。","answer":"古く","explanation":"古くから means since long ago, with 古く behaving as a noun before から."} -->
+
 ## い-Adjectives that Can Behave like Nouns
 
 The list of い-adjectives that can behave as nouns is so limited, that it’s worthwhile listing them here. They are organized by whether they are used to describe time, place, or other.

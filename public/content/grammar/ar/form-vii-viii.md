@@ -19,7 +19,7 @@ Form VII اِنْفَعَلَ (infaʿala) — it was affected / it happened to i
 
 اِنْكَسَرَ الزُّجَاجُ (inkasara az-zujāju) — the glass broke does not name an outside breaker. اِنْفَتَحَ الْبَابُ (infataḥa al-bābu) — the door opened has the same inward focus.
 
-<!-- grammar-card: {"rule":"Form VII اِنْفَعَلَ (infaʿala) often describes a passive-reflexive change affecting the subject.","hint":"The prefix اِنْـ is the main clue.","example":"Complete “the glass broke”: ___ الزُّجَاجُ (inkasara az-zujāju).","answer":"اِنْكَسَرَ (inkasara) — it broke","explanation":"اِنْكَسَرَ (inkasara) is Form VII and describes the glass as undergoing the breaking."} -->
+<!-- grammar-card: {"rule":"Form VII اِنْفَعَلَ (infaʿala) often describes a passive-reflexive change affecting the subject.","hint":"The prefix اِنْـ is the main clue.","example":"Complete “the glass broke”: ___ الزُّجَاجُ (inkasara az-zujāju).","answer":"اِنْكَسَرَ (inkasara)","explanation":"it broke — اِنْكَسَرَ (inkasara) is Form VII and describes the glass as undergoing the breaking."} -->
 
 ## Form VIII: inserted tāʾ and assimilation
 
@@ -33,7 +33,7 @@ In Form VIII, تَاءٌ (tāʾun) — tāʾ enters after the first root consona
 
 <!-- quiz: {"type":"multiple-choice","question":"What is the visible clue in many Form VIII verbs?","options":["A تَاءٌ (tāʾun) — tāʾ inserted after the first root consonant","A doubled final weak letter","Only the prefix سَـ (sa-)","The ending ـُونَ (-ūna) in every form"],"answer":0} -->
 
-<!-- grammar-card: {"rule":"Form VIII اِفْتَعَلَ (iftaʿala) places تَاءٌ (tāʾun) — tāʾ after the first root consonant, though it may assimilate.","hint":"Look inside the word, not only at the beginning.","example":"Complete “he approached”: ___ (iqtaraba) — he approached.","answer":"اِقْتَرَبَ (iqtaraba) — he approached","explanation":"اِقْتَرَبَ (iqtaraba) shows the Form VIII inserted تَاءٌ (tāʾun) — tāʾ after the first root consonant."} -->
+<!-- grammar-card: {"rule":"Form VIII اِفْتَعَلَ (iftaʿala) places تَاءٌ (tāʾun) — tāʾ after the first root consonant, though it may assimilate.","hint":"Look inside the word, not only at the beginning.","example":"Complete “he approached”: ___ (iqtaraba) — he approached.","answer":"اِقْتَرَبَ","explanation":"he approached — اِقْتَرَبَ (iqtaraba) shows the Form VIII inserted تَاءٌ (tāʾun) — tāʾ after the first root consonant."} -->
 
 ## Sources
 

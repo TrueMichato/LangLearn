@@ -399,6 +399,10 @@ Piece of cake, right? This nuance of 〜にする can also be applied when you'r
 
 In this example, 〜にする implies that the action in question can be taken at your discretion — or the listener's. It lets them know the decision is still theirs, so it's suitable for when you want to softly suggest that it's time to do something.
 
+<!-- grammar-card: {"rule":"している describes the state an action left behind","hint":"する, continuous","example":"今日は赤いネクタイを___。","answer":"している","explanation":"ネクタイをしている says the tie is on right now."} -->
+
+<!-- grammar-card: {"rule":"する can mean 'wear' for accessories","hint":"する","example":"明日は赤いネクタイを___。","answer":"する","explanation":"ネクタイをする is the ordinary way to say wearing a tie."} -->
+
 ## Beyond the Basics
 
 ### Price + する for Indicating How Much Something Costs
@@ -645,6 +649,8 @@ by Seiki Ayano
 <!-- quiz: {"type":"multiple-choice","question":"What does \"宿題を**する**\" mean?","options":["to **do** homework","I'll **do** it.","to put on a necklace","to do homework"],"answer":0} -->
 
 <!-- quiz: {"type":"multiple-choice","question":"What does \"ネックレスを**する**\" mean?","options":["to put on a necklace","I'll **do** it.","to **do** homework","to do homework"],"answer":0} -->
+
+<!-- grammar-card: {"rule":"気がする expresses a hunch or feeling","hint":"気 + する","example":"あの郵便屋さんが犯人な気___。","answer":"がする","explanation":"気がする says the speaker has a feeling the postman is the culprit."} -->
 
 ## Sources
 

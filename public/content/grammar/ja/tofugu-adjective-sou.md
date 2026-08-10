@@ -71,6 +71,8 @@ Politeness in Japanese is marked at the end of a sentence with forms like です
 
   - It looks delicious.
 
+<!-- grammar-card: {"rule":"そう ends a polite sentence with です","hint":"そう + ?","example":"おいしそう___。","answer":"です","explanation":"おいしそうです says the thing looks delicious, judging by its appearance."} -->
+
 ## Patterns of Use
 
 The most simple sentence you can form with 〜そう is to simply use it alone:
@@ -104,6 +106,10 @@ And we can even turn it into an adverb with に:
   - おいしそう**に**食べています。
 
   - They look like they’re eating enjoyably.
+
+<!-- grammar-card: {"rule":"そう takes に when it modifies a verb","hint":"そう + 食べる","example":"おいしそう___食べています。","answer":"に","explanation":"おいしそうに describes how the eating looks, so そう becomes adverbial with に."} -->
+
+<!-- grammar-card: {"rule":"そう behaves as a な-adjective before a noun","hint":"そう + ケーキ","example":"おいしそう___ケーキだね！","answer":"な","explanation":"おいしそうな modifies ケーキ, so そう takes な just like any な-adjective."} -->
 
 ## Uses
 
@@ -167,7 +173,7 @@ p. 110
 
 <!-- quiz: {"type":"multiple-choice","question":"What does \"おいしそう。\" mean?","options":["It looks delicious.","It doesn’t look delicious.","It looks delicious!","That’s a delicious-looking cake!"],"answer":0} -->
 
-<!-- quiz: {"type":"multiple-choice","question":"What does \"おいしそう**じゃない**。\" mean?","options":["It doesn’t look delicious.","It looks delicious.","It looks delicious.","It looks delicious!"],"answer":0} -->
+<!-- quiz: {"type":"multiple-choice","question":"What does \"おいしそう**じゃない**。\" mean?","options":["It doesn’t look delicious.","It looks delicious.","It didn’t look delicious.","It looks delicious!"],"answer":0} -->
 
 ## Sources
 

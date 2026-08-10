@@ -24,6 +24,8 @@ This is the most basic level of politeness:
 - **お水(みず)はありますか。** — Is there water? (polite)
 - **お水はございますか。** — Is there water? (very polite)
 
+<!-- grammar-card: {"rule":"ございます is the elevated equivalent of あります","hint":"あります → ?","example":"お水は___か。","answer":"ございます","explanation":"ございます raises the politeness of あります without changing what it means."} -->
+
 ## 尊敬語 (Honorific Language)
 
 Used to describe the **actions of someone you respect** (boss, customer, teacher, elder).

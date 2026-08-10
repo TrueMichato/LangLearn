@@ -22,7 +22,7 @@ Tāʾ marbūṭa behaves like a quiet feminine ending. In careful connected spee
 
 A possessive suffix reveals the t clearly. **مَدْرَسَةٌ** (madrasatun) — school becomes **مَدْرَسَتُهَا** (madrasatuhā) — her school. That does not mean the base word is written with open tāʾ; the suffix simply connects to the feminine ending.
 
-<!-- grammar-card: {"rule":"Tāʾ marbūṭa is pronounced -at when connected, but often -ah or -a when pausing.","hint":"Connected speech wakes up the t.","example":"Read in connection: طَالِبَةٌ جَدِيدَةٌ = ___.","answer":"ṭālibatun jadīdatun — a new female student","explanation":"Both feminine endings are tied tāʾ, so careful connected reading pronounces them with -at."} -->
+<!-- grammar-card: {"rule":"Tāʾ marbūṭa is pronounced -at when connected, but often -ah or -a when pausing.","hint":"Connected speech wakes up the t.","example":"Read in connection: طَالِبَةٌ جَدِيدَةٌ = ___.","answer":"ṭālibatun jadīdatun","explanation":"a new female student — Both feminine endings are tied tāʾ, so careful connected reading pronounces them with -at."} -->
 
 ## Common contrasts
 
@@ -35,7 +35,7 @@ A possessive suffix reveals the t clearly. **مَدْرَسَةٌ** (madrasatun)
 
 <!-- quiz: {"type":"multiple-choice","question":"Which word should normally be written with تَاءٌ مَرْبُوطَةٌ (tāʾ marbūṭatun) — tied tāʾ?","options":["بَيْتٌ (baytun) — house","كَتَبَتْ (katabat) — she wrote","غُرْفَةٌ (ghurfatun) — room","وَقْتٌ (waqtun) — time"],"answer":2} -->
 
-<!-- grammar-card: {"rule":"When a suffix attaches to a word ending in ة, the written form changes to ت before the suffix.","hint":"The hidden t becomes visible before a pronoun.","example":"Add her to مَدْرَسَةٌ (madrasatun) — school: ___ .","answer":"مَدْرَسَتُهَا (madrasatuhā) — her school","explanation":"The tied tāʾ connects to the suffix and appears as ت, but the unsuffixed word remains مَدْرَسَةٌ."} -->
+<!-- grammar-card: {"rule":"When a suffix attaches to a word ending in ة, the written form changes to ت before the suffix.","hint":"The hidden t becomes visible before a pronoun.","example":"Add her to مَدْرَسَةٌ (madrasatun) — school: ___ .","answer":"مَدْرَسَتُهَا (madrasatuhā)","explanation":"her school — The tied tāʾ connects to the suffix and appears as ت, but the unsuffixed word remains مَدْرَسَةٌ."} -->
 
 ## Sources
 

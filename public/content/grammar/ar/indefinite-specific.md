@@ -47,7 +47,7 @@ Adjectives normally follow the noun in definiteness. Compare كِتَابٌ مُ
 
 <!-- quiz: {"type":"multiple-choice","question":"Which adjective agreement is correct for the useful book?","options":["الْكِتَابُ الْمُفِيدُ (al-kitābu al-mufīdu)","الْكِتَابُ مُفِيدٌ (al-kitābu mufīdun) as an adjective phrase only","كِتَابٌ الْمُفِيدُ (kitābun al-mufīdu)","الْكِتَابٌ مُفِيدٌ (al-kitābun mufīdun)"],"answer":0} -->
 
-<!-- grammar-card: {"rule":"Attributive adjectives usually match the noun in definiteness.","hint":"A definite noun takes a definite adjective when the adjective is part of the noun phrase.","example":"Complete: the useful book: الْكِتَابُ ___ (al-kitābu ___).","answer":"الْمُفِيدُ (al-mufīdu) — the useful","explanation":"الْكِتَابُ الْمُفِيدُ is one definite noun phrase; without ال on the adjective, it becomes a sentence: the book is useful."} -->
+<!-- grammar-card: {"rule":"Attributive adjectives usually match the noun in definiteness.","hint":"A definite noun takes a definite adjective when the adjective is part of the noun phrase.","example":"Complete: the useful book: الْكِتَابُ ___ (al-kitābu ___).","answer":"الْمُفِيدُ (al-mufīdu)","explanation":"the useful — الْكِتَابُ الْمُفِيدُ is one definite noun phrase; without ال on the adjective, it becomes a sentence: the book is useful."} -->
 
 ## Sources
 

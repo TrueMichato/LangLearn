@@ -234,6 +234,10 @@ Let's say you ate something incredibly spicy and your friend asks if your mouth 
 
 I hope your mouth cools down soon. 👄🔥
 
+<!-- grammar-card: {"rule":"という passes on hearsay","hint":"という","example":"タカシは弁護士をしている___。","answer":"という","explanation":"しているという reports what the speaker has heard, without vouching for it."} -->
+
+<!-- grammar-card: {"rule":"と言う reports what someone says","hint":"と + 言う","example":"日本人はよく「かわいい」___。","answer":"と言う","explanation":"と言う quotes the word itself as what Japanese people say."} -->
+
 ## Beyond The Basics
 
 ### 〜というか〜というか for When You're Not Sure How to Describe Something
@@ -348,6 +352,8 @@ pp. 19-20, 317-323
 <!-- quiz: {"type":"multiple-choice","question":"What does \"お名前は何**という**んですか。\" mean?","options":["What's your name?","Japanese people often **say** \"kawaii\" (cute).","I'm Yamada. Nice to meet you.","What is the Japanese word for \"cat\"?"],"answer":0} -->
 
 <!-- quiz: {"type":"multiple-choice","question":"What does \"山田**といいます**。よろしくお願いします。\" mean?","options":["I'm Yamada. Nice to meet you.","Japanese people often **say** \"kawaii\" (cute).","What's your name?","What is the Japanese word for \"cat\"?"],"answer":0} -->
+
+<!-- grammar-card: {"rule":"というか hedges the word just chosen","hint":"という + か","example":"知らない人に一万円を貸すなんて、バカ___…。","answer":"というか","explanation":"バカというか softens the insult while the speaker searches for a better word."} -->
 
 ## Sources
 

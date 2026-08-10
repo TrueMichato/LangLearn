@@ -21,7 +21,7 @@ MSA is the shared formal standard. Dialects are normal spoken systems with their
 
 Some differences are lexical: MSA **أُرِيدُ** (ʾurīdu) — I want, Egyptian **عَايِزْ** (ʿāyiz) — wanting, Levantine **بِدِّي** (biddī) — I want. Others are sound changes: **قَهْوَةٌ** (qahwatun) — coffee may sound closer to **gāhwa** in some Gulf speech.
 
-<!-- grammar-card: {"rule":"MSA is best for formal writing, while dialect phrases are normal in everyday speech.","hint":"Match variety to situation.","example":"Choose the formal written phrase for I do not know: ___ .","answer":"لَا أَعْرِفُ (lā ʾaʿrifu) — I do not know","explanation":"لَا أَعْرِفُ is the MSA form; the other forms are regional spoken variants."} -->
+<!-- grammar-card: {"rule":"MSA is best for formal writing, while dialect phrases are normal in everyday speech.","hint":"Match variety to situation.","example":"Choose the formal written phrase for I do not know: ___ .","answer":"لَا أَعْرِفُ (lā ʾaʿrifu)","explanation":"I do not know — لَا أَعْرِفُ is the MSA form; the other forms are regional spoken variants."} -->
 
 ## Reading comparisons kindly
 
@@ -34,7 +34,7 @@ Do not rank dialects as broken MSA. Each dialect has rules. Compare phrase by ph
 
 <!-- quiz: {"type":"multiple-choice","question":"Which statement is most accurate?","options":["Dialects are rule-governed spoken varieties","Dialects are just random mistakes","MSA has no formal role","Every region uses exactly the same everyday phrases"],"answer":0} -->
 
-<!-- grammar-card: {"rule":"Dialect comparison works best phrase by phrase, because vocabulary, sounds, and grammar can all change.","hint":"Compare whole expressions, not only single words.","example":"Egyptian رَايِحْ فِين؟ (rāyiḥ fēn?) corresponds to MSA ___ .","answer":"إِلَى أَيْنَ تَذْهَبُ؟ (ʾilā ʾayna tadhhabu?) — where are you going","explanation":"The Egyptian phrase uses different everyday words, but the communicative meaning matches the MSA question."} -->
+<!-- grammar-card: {"rule":"Dialect comparison works best phrase by phrase, because vocabulary, sounds, and grammar can all change.","hint":"Compare whole expressions, not only single words.","example":"Egyptian رَايِحْ فِين؟ (rāyiḥ fēn?) corresponds to MSA ___ .","answer":"إِلَى أَيْنَ تَذْهَبُ؟ (ʾilā ʾayna tadhhabu?)","explanation":"where are you going — The Egyptian phrase uses different everyday words, but the communicative meaning matches the MSA question."} -->
 
 ## Sources
 

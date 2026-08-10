@@ -173,6 +173,10 @@ Just like we mentioned before with the present tense 〜ない ending of verbs, 
 
 Since です can occur with the past tense い-adjectives and verbs, you should be able to see that it is not inherently a present tense marker. That being said, it’s important to know that です does have a past tense form itself, which is でした. When you want to mark a word as past tense that cannot be conjugated on its own (like a noun or な-adjective), then でした comes in very handy.
 
+<!-- grammar-card: {"rule":"A な-adjective forms its past negative with じゃなかった","hint":"元気, past negative","example":"納豆を食べる前は、___です。","answer":"元気じゃなかった","explanation":"元気 is noun-like, so it takes じゃなかった and です is added to keep the sentence polite."} -->
+
+<!-- grammar-card: {"rule":"An い-adjective carries its own past and negative before です","hint":"美味しい, past negative","example":"でも、その前の日の納豆は___です。","answer":"美味しくなかった","explanation":"美味しくなかったです is the polite past negative; です never becomes でした after an い-adjective."} -->
+
 ## Beyond the Basics
 
 ### です in the Middle of a Sentence
@@ -214,6 +218,8 @@ Even though clause A is marked with だ, this sentence feels polite overall, bec
   - Health is top priority, so natto is a treasure.
 
 It’s *possible* that someone could say this sentence in spoken Japanese for some reason, but it is definitely awkward to have the first clause more polite than the second. In general, you should avoid putting the polite clause before the plain form clause.
+
+<!-- grammar-card: {"rule":"A clause quoted with と stays in the plain form","hint":"健康的 + ?","example":"「納豆が健康的___」と世界中の皆さんに伝えたいです。","answer":"だ","explanation":"Inside the quotation 健康的だ is plain, even though the sentence itself ends politely with です."} -->
 
 ## Common Mistakes
 

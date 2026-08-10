@@ -21,7 +21,7 @@ In an iḍāfa, the first noun cannot take **الْـ** (al-) — the and cannot
 
 Think of the first noun as leaning on the second. Because it is leaning, it loses tanwīn: **كِتَابٌ** (kitābun) — a book becomes **كِتَابُ** (kitābu) — book of... inside the construct.
 
-<!-- grammar-card: {"rule": "In an iḍāfa, the first noun loses tanwīn and the second noun is genitive.", "hint": "Possessed thing + owner.", "example": "Complete “door of the house”: بَابُ ___ (bābu ___).", "answer": "الْبَيْتِ (al-bayti) — the house, genitive", "explanation": "بَابُ الْبَيْتِ (bābu al-bayti) — the door of the house puts the owner/specifier in the genitive."} -->
+<!-- grammar-card: {"rule":"In an iḍāfa, the first noun loses tanwīn and the second noun is genitive.","hint":"Possessed thing + owner.","example":"Complete “door of the house”: بَابُ ___ (bābu ___).","answer":"الْبَيْتِ (al-bayti)","explanation":"the house, genitive — بَابُ الْبَيْتِ (bābu al-bayti) — the door of the house puts the owner/specifier in the genitive."} -->
 
 ## Practice patterns
 
@@ -34,7 +34,7 @@ The case ending helps show which noun the adjective describes.
 
 <!-- quiz: {"type": "multiple-choice", "question": "Which phrase means “the student’s book”?", "options": ["كِتَابٌ الطَّالِبُ (kitābun aṭ-ṭālibu)", "الْكِتَابُ الطَّالِبِ (al-kitābu aṭ-ṭālibi)", "كِتَابُ الطَّالِبِ (kitābu aṭ-ṭālibi)", "كِتَابًا طَالِبًا (kitāban ṭāliban)"], "answer": 2} -->
 
-<!-- grammar-card: {"rule": "The definiteness of the second noun often makes the whole iḍāfa definite.", "hint": "Definite owner = definite phrase.", "example": "Complete “the teacher’s house”: بَيْتُ ___ (baytu ___).", "answer": "الْمُعَلِّمِ (al-muʿallimi) — the teacher, genitive", "explanation": "بَيْتُ الْمُعَلِّمِ (baytu al-muʿallimi) — the teacher’s house is definite because the second noun is definite."} -->
+<!-- grammar-card: {"rule":"The definiteness of the second noun often makes the whole iḍāfa definite.","hint":"Definite owner = definite phrase.","example":"Complete “the teacher’s house”: بَيْتُ ___ (baytu ___).","answer":"الْمُعَلِّمِ (al-muʿallimi)","explanation":"the teacher, genitive — بَيْتُ الْمُعَلِّمِ (baytu al-muʿallimi) — the teacher’s house is definite because the second noun is definite."} -->
 
 ## Sources
 

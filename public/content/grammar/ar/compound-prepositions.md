@@ -24,7 +24,7 @@ A simple preposition can come before a locative noun. Then the first preposition
 - خَرَجَتِ الْقِطَّةُ مِنْ تَحْتِ الْكُرْسِيِّ (kharajati al-qiṭṭatu min taḥti al-kursiyyi) — the cat came out from under the chair.
 - سَمِعْتُ الصَّوْتَ مِنْ فَوْقِ السَّطْحِ (samiʿtu aṣ-ṣawta min fawqi as-saṭḥi) — I heard the sound from above the roof.
 
-<!-- grammar-card: {"rule": "Locative words such as فَوْقَ (fawqa) — above and تَحْتَ (taḥta) — under normally take a genitive complement.", "hint": "Think of the locative word as the first term of an iḍāfa.", "example": "Complete: الْكِتَابُ فَوْقَ الطَّاوِلَة___ (al-kitābu fawqa aṭ-ṭāwilat___) — the book is above the table.", "answer": "ـِ (-i) — genitive", "explanation": "الطَّاوِلَةِ (aṭ-ṭāwilati) is genitive after فَوْقَ (fawqa)."} -->
+<!-- grammar-card: {"rule":"Locative words such as فَوْقَ (fawqa) — above and تَحْتَ (taḥta) — under normally take a genitive complement.","hint":"Think of the locative word as the first term of an iḍāfa.","example":"Complete: الْكِتَابُ فَوْقَ الطَّاوِلَة___ (al-kitābu fawqa aṭ-ṭāwilat___) — the book is above the table.","answer":"ـِ (-i)","explanation":"الطَّاوِلَةِ (aṭ-ṭāwilati) is genitive after فَوْقَ (fawqa)."} -->
 
 ## Attached pronouns
 

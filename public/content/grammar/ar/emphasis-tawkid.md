@@ -22,7 +22,7 @@ Words such as نَفْسٌ (nafsun), عَيْنٌ (ʿaynun), and كُلٌّ (kul
 - رَأَيْتُ المُعَلِّمَةَ نَفْسَهَا (raʾaytu al-muʿallimata nafsahā) — I saw the teacher herself.
 - سَلَّمْتُ عَلَى المُعَلِّمَةِ نَفْسِهَا (sallamtu ʿalā al-muʿallimati nafsihā) — I greeted the teacher herself.
 
-<!-- grammar-card: {"rule":"Confirming words such as نَفْسٌ (nafsun) follow the emphasized noun and carry a matching pronoun.","hint":"The pronoun points back to the noun being emphasized.","example":"Complete the emphasis: جَاءَتِ المُعَلِّمَةُ ___ (jāʾati al-muʿallimatu ___).","answer":"نَفْسُهَا (nafsuhā) — herself","explanation":"The feminine pronoun هَا (hā) refers back to المُعَلِّمَةُ (al-muʿallimatu), and the nominative ending follows the subject."} -->
+<!-- grammar-card: {"rule":"Confirming words such as نَفْسٌ (nafsun) follow the emphasized noun and carry a matching pronoun.","hint":"The pronoun points back to the noun being emphasized.","example":"Complete the emphasis: جَاءَتِ المُعَلِّمَةُ ___ (jāʾati al-muʿallimatu ___).","answer":"نَفْسُهَا (nafsuhā)","explanation":"herself — The feminine pronoun هَا (hā) refers back to المُعَلِّمَةُ (al-muʿallimatu), and the nominative ending follows the subject."} -->
 
 <!-- quiz: {"type":"multiple-choice","question":"Why is نَفْسَهَا accusative in رَأَيْتُ المُعَلِّمَةَ نَفْسَهَا (raʾaytu al-muʿallimata nafsahā)?","options":["It follows the case of the object المُعَلِّمَةَ","It is always genitive after any verb","It is a future marker","It replaces the subject"],"answer":0} -->
 
@@ -30,7 +30,7 @@ Words such as نَفْسٌ (nafsun), عَيْنٌ (ʿaynun), and كُلٌّ (kul
 
 إِنَّ (inna) adds certainty and makes its noun accusative. A lām may also enter the predicate: إِنَّ الطَّالِبَ لَمُجْتَهِدٌ (inna aṭ-ṭāliba la-mujtahidun) — indeed, the student is certainly hardworking. The lām is often called lām of emphasis; it strengthens the predicate without changing it into a verb.
 
-<!-- grammar-card: {"rule":"إِنَّ (inna) emphasizes a nominal sentence and puts its noun in the accusative.","hint":"After inna, expect naṣb on the noun.","example":"Complete: إِنَّ الطَّالِبَ ___ (inna aṭ-ṭāliba ___).","answer":"مُجْتَهِدٌ (mujtahidun) — hardworking","explanation":"The noun الطَّالِبَ is accusative after إِنَّ, while the predicate remains nominative."} -->
+<!-- grammar-card: {"rule":"إِنَّ (inna) emphasizes a nominal sentence and puts its noun in the accusative.","hint":"After inna, expect naṣb on the noun.","example":"Complete: إِنَّ الطَّالِبَ ___ (inna aṭ-ṭāliba ___).","answer":"مُجْتَهِدٌ (mujtahidun)","explanation":"hardworking — The noun الطَّالِبَ is accusative after إِنَّ, while the predicate remains nominative."} -->
 
 <!-- quiz: {"type":"multiple-choice","question":"What does the lām add in إِنَّ الطَّالِبَ لَمُجْتَهِدٌ (inna aṭ-ṭāliba la-mujtahidun)?","options":["Extra emphasis on the predicate","A command meaning","A genitive preposition only","A question meaning"],"answer":0} -->
 

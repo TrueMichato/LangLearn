@@ -44,6 +44,8 @@ To say something **was not** something, use **じゃなかった**.
 
 <!-- quiz:{"type":"multiple-choice","question":"What is the past negative of 元気だ (genki da)?","options":["元気じゃない","元気だった","元気じゃなかった","元気くなかった"],"answer":2} -->
 
+<!-- grammar-card: {"rule":"The plain past negative of だ is じゃなかった","hint":"だ → ?","example":"学生___。","answer":"じゃなかった","explanation":"だ becomes じゃない in the negative and then じゃなかった in the past."} -->
+
 ## Conjugation Summary
 
 | Form | Pattern | Example |

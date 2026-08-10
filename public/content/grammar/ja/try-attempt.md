@@ -57,6 +57,8 @@ Since みる is a Group 2 verb, てみる conjugates normally:
 
 <!-- quiz:{"type":"multiple-choice","question":"How do you say 'I tried wearing the kimono'?","options":["着物を着てみた","着物を着ようとした","着物を着ることにした","着物を着ることにしている"],"answer":0} -->
 
+<!-- grammar-card: {"rule":"てみる means trying something out of curiosity","hint":"着る + みる, polite","example":"この服(ふく)を着(き)___。","answer":"てみます","explanation":"着てみます tries the clothes on to see what they are like, with no effort implied."} -->
+
 ## ようとする — "Try to ~ / Attempt to ~"
 
 **ようとする** expresses an **effort or attempt** to do something, often implying difficulty or that the action may not succeed. It uses the volitional form.
@@ -97,6 +99,8 @@ Since みる is a Group 2 verb, てみる conjugates normally:
 > 💡 With **〜ようとしている**, the focus shifts to "being about to ~" or "on the verge of ~".
 
 <!-- quiz:{"type":"multiple-choice","question":"'窓を開けようとしたが、開かなかった' means:","options":["I opened the window successfully","I tried to open the window but it wouldn't open","I decided to open the window","I want to try opening the window"],"answer":1} -->
+
+<!-- grammar-card: {"rule":"ようとする is an effort that may well fail","hint":"開ける, volitional + する","example":"ドアを開(あ)け___が、鍵(かぎ)がかかっていた。","answer":"ようとした","explanation":"開けようとした reports the attempt, and the locked door explains why it did not work."} -->
 
 ## てみる vs ようとする — Key Differences
 
@@ -141,6 +145,8 @@ Since みる is a Group 2 verb, てみる conjugates normally:
 > *Kotoshi wa motto hon wo yomu koto ni suru.*
 > I'm going to decide to read more books this year.
 
+<!-- grammar-card: {"rule":"ことにする marks a decision the speaker made themselves","hint":"decide, polite past","example":"毎朝(まいあさ)走(はし)る___。","answer":"ことにしました","explanation":"走ることにしました says the speaker has decided to run each morning."} -->
+
 ## ことにしている — "Make it a rule to ~ / Habitually decide to ~"
 
 **ことにしている** describes a **habit or personal rule** that someone maintains by choice.
@@ -164,6 +170,8 @@ Since みる is a Group 2 verb, てみる conjugates normally:
 > 💡 **ことにした** = one-time decision. **ことにしている** = ongoing habit by choice.
 
 <!-- quiz:{"type":"multiple-choice","question":"Which sentence means 'I make it a rule to walk every day'?","options":["毎日歩くことにした","毎日歩くことにしている","毎日歩いてみている","毎日歩こうとしている"],"answer":1} -->
+
+<!-- grammar-card: {"rule":"ことにしている marks a standing personal rule","hint":"habit, polite","example":"毎日(まいにち)日記(にっき)を書(か)く___。","answer":"ことにしています","explanation":"書くことにしています says the speaker makes a point of writing every day."} -->
 
 ## Summary of All Patterns
 

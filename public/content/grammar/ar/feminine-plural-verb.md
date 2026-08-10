@@ -22,7 +22,7 @@ Use the feminine plural verb when the subject is **هُنَّ** (hunna) — they
 
 When the verb comes first before an explicit noun subject, MSA often uses a singular verb with gender agreement only: **دَرَسَتِ الطَّالِبَاتُ النَّحْوَ** (darasati aṭ-ṭālibātu an-naḥwa) — the female students studied grammar.
 
-<!-- grammar-card: {"rule":"نُونُ النِّسْوَةِ (nūn an-niswa) marks feminine plural verb agreement, as in يَكْتُبْنَ (yaktubna) and كَتَبْنَ (katabna).","hint":"Look for the final ـْنَ (-na).","example":"Complete they feminine read the lesson: هُنَّ ___ الدَّرْسَ (hunna ___ ad-darsa).","answer":"يَقْرَأْنَ (yaqraʾna) — they feminine read","explanation":"هُنَّ يَقْرَأْنَ الدَّرْسَ (hunna yaqraʾna ad-darsa) uses the feminine plural present ending ـْنَ."} -->
+<!-- grammar-card: {"rule":"نُونُ النِّسْوَةِ (nūn an-niswa) marks feminine plural verb agreement, as in يَكْتُبْنَ (yaktubna) and كَتَبْنَ (katabna).","hint":"Look for the final ـْنَ (-na).","example":"Complete they feminine read the lesson: هُنَّ ___ الدَّرْسَ (hunna ___ ad-darsa).","answer":"يَقْرَأْنَ (yaqraʾna)","explanation":"they feminine read — هُنَّ يَقْرَأْنَ الدَّرْسَ (hunna yaqraʾna ad-darsa) uses the feminine plural present ending ـْنَ."} -->
 
 ## Mood and negation
 
@@ -34,7 +34,7 @@ The feminine plural present is not one of **الْأَفْعَالُ الْخَ�
 
 <!-- quiz: {"type":"multiple-choice","question":"Choose the best completion: الْمُعَلِّمَاتُ ___ الدَّرْسَ (al-muʿallimātu ___ ad-darsa).","options":["شَرَحْنَ (sharaḥna)","شَرَحُوا (sharaḥū)","شَرَحَتَا (sharaḥatā)","شَرَحْتَ (sharaḥta)"],"answer":0} -->
 
-<!-- grammar-card: {"rule":"With a fronted human feminine plural subject, the verb normally shows feminine plural agreement.","hint":"الطَّالِبَاتُ before the verb points to ـْنَ.","example":"Complete the female students wrote: الطَّالِبَاتُ ___ الرِّسَالَةَ (aṭ-ṭālibātu ___ ar-risālata).","answer":"كَتَبْنَ (katabna) — they feminine wrote","explanation":"الطَّالِبَاتُ كَتَبْنَ الرِّسَالَةَ (aṭ-ṭālibātu katabna ar-risālata) has a fronted feminine plural subject and a matching feminine plural verb."} -->
+<!-- grammar-card: {"rule":"With a fronted human feminine plural subject, the verb normally shows feminine plural agreement.","hint":"الطَّالِبَاتُ before the verb points to ـْنَ.","example":"Complete the female students wrote: الطَّالِبَاتُ ___ الرِّسَالَةَ (aṭ-ṭālibātu ___ ar-risālata).","answer":"كَتَبْنَ (katabna)","explanation":"they feminine wrote — الطَّالِبَاتُ كَتَبْنَ الرِّسَالَةَ (aṭ-ṭālibātu katabna ar-risālata) has a fronted feminine plural subject and a matching feminine plural verb."} -->
 
 ## Sources
 

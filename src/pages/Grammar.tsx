@@ -52,6 +52,9 @@ export default function GrammarPage() {
   if (activeLessonId) {
     return (
       <LessonView
+        // Remount per lesson: navigating between lessons otherwise carries the
+        // previous lesson's quiz score and completion state into the next one.
+        key={`${selectedLang}/${activeLessonId}`}
         lang={selectedLang}
         lessonId={activeLessonId}
         onBack={() => setActiveLessonId(null)}

@@ -26,7 +26,7 @@ When these nouns are singular, not diminutive, and in iḍāfa, they often show 
 | accusative | **رَأَيْتُ أَبَاكَ** (raʾaytu abāka) | I saw your father |
 | genitive | **مَرَرْتُ بِأَبِيكَ** (marartu bi-abīka) | I passed by your father |
 
-<!-- grammar-card: {"rule": "The five nouns show nominative with wāw when conditions are met.", "hint": "Subject form: abūka.", "example": "Complete “your father came”: جَاءَ ___ (jāʾa ___).", "answer": "أَبُوكَ (abūka) — your father, nominative", "explanation": "أَبُوكَ (abūka) uses long ū because it is nominative and attached in iḍāfa."} -->
+<!-- grammar-card: {"rule":"The five nouns show nominative with wāw when conditions are met.","hint":"Subject form: abūka.","example":"Complete “your father came”: جَاءَ ___ (jāʾa ___).","answer":"أَبُوكَ (abūka)","explanation":"your father, nominative — أَبُوكَ (abūka) uses long ū because it is nominative and attached in iḍāfa."} -->
 
 <!-- quiz: {"type": "multiple-choice", "question": "Which form is accusative in “I saw your brother”?", "options": ["أَخَاكَ (akhāka)", "أَخُوكَ (akhūka)", "أَخِيكَ (akhīka)", "أَخٌ (akhun)"], "answer": 0} -->
 
@@ -38,7 +38,7 @@ When these nouns are singular, not diminutive, and in iḍāfa, they often show 
 - **رَأَيْتُ رَجُلًا ذَا عِلْمٍ** (raʾaytu rajulan dhā ʿilmin) — I saw a man of knowledge.
 - **تَحَدَّثْتُ مَعَ رَجُلٍ ذِي عِلْمٍ** (taḥaddathtu maʿa rajulin dhī ʿilmin) — I spoke with a man of knowledge.
 
-<!-- grammar-card: {"rule": "ذُو (dhū) changes to ذَا (dhā) in the accusative and ذِي (dhī) in the genitive.", "hint": "dhū, dhā, dhī.", "example": "Complete “with a man of knowledge”: مَعَ رَجُلٍ ___ عِلْمٍ (maʿa rajulin ___ ʿilmin).", "answer": "ذِي (dhī) — possessor of, genitive", "explanation": "Because the phrase follows مَعَ (maʿa) and describes رَجُلٍ (rajulin), use the genitive form ذِي (dhī)."} -->
+<!-- grammar-card: {"rule":"ذُو (dhū) changes to ذَا (dhā) in the accusative and ذِي (dhī) in the genitive.","hint":"dhū, dhā, dhī.","example":"Complete “with a man of knowledge”: مَعَ رَجُلٍ ___ عِلْمٍ (maʿa rajulin ___ ʿilmin).","answer":"ذِي (dhī)","explanation":"possessor of, genitive — Because the phrase follows مَعَ (maʿa) and describes رَجُلٍ (rajulin), use the genitive form ذِي (dhī)."} -->
 
 ## Conditions and caveats
 
@@ -52,7 +52,7 @@ If the conditions are not met, ordinary case endings may appear: **هَذَا أ
 
 <!-- quiz: {"type": "multiple-choice", "question": "Which form is genitive after بِـ (bi-) in “by your father”?", "options": ["بِأَبِيكَ (bi-abīka)", "بِأَبُوكَ (bi-abūka)", "بِأَبَاكَ (bi-abāka)", "بِأَبٌ (bi-abun)"], "answer": 0} -->
 
-<!-- grammar-card: {"rule": "The genitive form of أَبُوكَ (abūka) is أَبِيكَ (abīka).", "hint": "Prepositions trigger genitive.", "example": "Complete “by your father”: بِ___ (bi-___).", "answer": "أَبِيكَ (abīka) — your father, genitive", "explanation": "After بِـ (bi-), the five noun أَبٌ (abun) takes the yāʾ form: أَبِيكَ (abīka)."} -->
+<!-- grammar-card: {"rule":"The genitive form of أَبُوكَ (abūka) is أَبِيكَ (abīka).","hint":"Prepositions trigger genitive.","example":"Complete “by your father”: بِ___ (bi-___).","answer":"أَبِيكَ (abīka)","explanation":"your father, genitive — After بِـ (bi-), the five noun أَبٌ (abun) takes the yāʾ form: أَبِيكَ (abīka)."} -->
 
 ## Sources
 

@@ -65,6 +65,8 @@ After **два/две**, **три**, and **четыре**, the noun takes the **
 
 <!-- quiz:{"type":"multiple-choice","question":"What form does a noun take after 'три' (three)?","options":["Nominative singular","Nominative plural","Genitive singular","Genitive plural"],"answer":2} -->
 
+<!-- grammar-card: {"rule":"The numbers 2, 3 and 4 are followed by the genitive singular","hint":"the numeral for 2","example":"___ студента пришли.","answer":"Два","explanation":"After два the noun takes the genitive singular студента, even though several people arrived."} -->
+
 ---
 
 ## 4. Numbers 5–20: Genitive Plural

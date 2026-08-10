@@ -188,6 +188,10 @@ The particle も can also add emphasis on what comes before it in both a positiv
 
 In this example, パンプキンパイ is paired with も to indicate it's an additional part to the set of things you ate. In your roommate's eyes, this last addition is beyond what's considered "normal," so the particle も is used more emphatically.
 
+<!-- grammar-card: {"rule":"でもある adds a further identity to a noun","hint":"ゲーマー + でもある","example":"鈴木さんは先生です。鈴木さんは___。","answer":"ゲーマーでもあります","explanation":"でもあります says he is a gamer as well as a teacher."} -->
+
+<!-- grammar-card: {"rule":"も replaces は to mean 'also'","hint":"は → ?","example":"鈴木さん___日本語の先生です。","answer":"も","explanation":"も says Suzuki is a Japanese teacher too, and it pushes は out rather than sitting beside it."} -->
+
 ## Beyond the Basics
 
 ### Quantity + も
@@ -285,6 +289,8 @@ by Takuro Moriyama
 <!-- quiz: {"type":"multiple-choice","question":"What does \"私**も**日本語を教えています。\" mean?","options":["I **also** teach Japanese.","Suzuki-san is **also** a Japanese teacher.","Suzuki-san is a teacher. Suzuki-san **is also a gamer**.","I cannot do **this, either**."],"answer":0} -->
 
 <!-- quiz: {"type":"multiple-choice","question":"What does \"鈴木さんは先生です。鈴木さんは**ゲーマーでもあります**。\" mean?","options":["Suzuki-san is a teacher. Suzuki-san **is also a gamer**.","Suzuki-san is **also** a Japanese teacher.","I **also** teach Japanese.","I cannot do **this, either**."],"answer":0} -->
+
+<!-- grammar-card: {"rule":"も is buried inside fixed words like いつも","hint":"何時 + も","example":"ここのパンは___おいしい。","answer":"いつも","explanation":"いつも means 'always' — literally 'whatever time too'."} -->
 
 ## Sources
 

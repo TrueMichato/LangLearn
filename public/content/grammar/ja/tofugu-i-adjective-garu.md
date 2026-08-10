@@ -61,6 +61,8 @@ However, 〜がる is not always used in a continuous form. For example, when it
 
   - If my brother moves out of the house, our mom will feel lonely.
 
+<!-- grammar-card: {"rule":"がる in the past progressive describes how someone was visibly feeling","hint":"羨ましい → ?","example":"私が勝った時、松本さんは___。","answer":"羨ましがっていた","explanation":"羨ましがっていた reports Matsumoto's envy as observable behaviour at the time."} -->
+
 ## がる to Talk About Yourself
 
 While the most common usage of 〜がる is to talk about others, it can also be used to talk about yourself. In these cases though, you are not describing your internal state, you are describing your behavior and how it affects others. Here's an example of how this looks:
@@ -75,6 +77,8 @@ In this sentence, the main focus is on your sister, and the fact that she shares
 
   - I want snacks.
 
+<!-- grammar-card: {"rule":"がる can describe your own behaviour seen from outside","hint":"ほしい → ?","example":"私がお菓子を___と、姉はいつもわけてくれる。","answer":"ほしがる","explanation":"ほしがる treats the speaker's wanting as visible conduct, which is why it works for oneself here."} -->
+
 ## Using Particles with がる
 
 When describing someone else's feelings with 〜がる, use the particle を in the place where you would use が in a sentence about your own feelings.
@@ -86,6 +90,8 @@ When describing someone else's feelings with 〜がる, use the particle を in 
   - 松本さんは僕**を**羨ましがっている。
 
   - Matsumoto is jealous of me.
+
+<!-- grammar-card: {"rule":"The plain adjective 羨ましい takes が, not を","hint":"が / を","example":"僕は松本さん___羨ましい。","answer":"が","explanation":"羨ましい is an adjective, so its object takes が; only the verb 羨ましがる would take を."} -->
 
 ## がり for Nouns
 

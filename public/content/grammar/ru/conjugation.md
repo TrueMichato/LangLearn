@@ -80,6 +80,8 @@ First conjugation verbs typically have infinitives ending in **-ать**, **-я�
 
 <!-- quiz:{"type":"multiple-choice","question":"What is the correct 'ты' form of читать (to read)?","options":["читаю","читаешь","читает","читают"],"answer":1} -->
 
+<!-- grammar-card: {"rule":"First-conjugation verbs take -ешь in the ты-form","hint":"читать","example":"Ты ___ газету?","answer":"читаешь","explanation":"Читать is first conjugation, so its ты-form ends in -ешь rather than the second-conjugation -ишь."} -->
+
 ---
 
 ## 2. Second Conjugation (II спряжение)
@@ -146,6 +148,8 @@ Second conjugation verbs typically have infinitives ending in **-ить**. Their
 **Они смотрят новости.** *(Oni smotryat novosti.)* — They are watching the news.
 
 <!-- quiz:{"type":"multiple-choice","question":"Which verb belongs to the second conjugation?","options":["читать (to read)","работать (to work)","говорить (to speak)","рисовать (to draw)"],"answer":2} -->
+
+<!-- grammar-card: {"rule":"Second-conjugation verbs take -ит in the он-form","hint":"говорить","example":"Он ___ по-русски.","answer":"говорит","explanation":"Говорить is second conjugation, so the он-form ends in -ит and not in the first-conjugation -ет."} -->
 
 ---
 
@@ -249,6 +253,8 @@ Many second conjugation verbs undergo a **consonant change** in the **first pers
 **Они просят помощь.** *(Oni prosyat pomoshch'.)* — They are asking for help.
 
 > **Key rule:** The consonant mutation happens **only in the я form**. All other persons keep the original stem consonant.
+
+<!-- grammar-card: {"rule":"Many first-conjugation verbs change their stem consonant in the я-form","hint":"писать → ?","example":"Я ___ письмо.","answer":"пишу","explanation":"Писать mutates с to ш before the ending, giving пишу; the mutation appears only in the я-form."} -->
 
 ---
 

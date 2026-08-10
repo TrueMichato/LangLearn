@@ -31,7 +31,7 @@ Examples:
 - **عَشَرَةُ بُيُوتٍ** (ʿasharatu buyūtin) — ten houses.
 - **عَشْرُ غُرَفٍ** (ʿashru ghurafin) — ten rooms.
 
-<!-- grammar-card: {"rule": "For numbers 3–10, a masculine counted noun takes the feminine-looking number form with tāʾ marbūṭa.", "hint": "Masculine noun, number with -atun/-atu.", "example": "Complete “five pens”: خَمْسَةُ ___ (khamsatu ___).", "answer": "أَقْلَامٍ (aqlāmin) — pens, genitive plural", "explanation": "قَلَمٌ (qalamun) — pen is masculine, so the number is خَمْسَةُ (khamsatu), and the counted noun is plural genitive."} -->
+<!-- grammar-card: {"rule":"For numbers 3–10, a masculine counted noun takes the feminine-looking number form with tāʾ marbūṭa.","hint":"Masculine noun, number with -atun/-atu.","example":"Complete “five pens”: خَمْسَةُ ___ (khamsatu ___).","answer":"أَقْلَامٍ (aqlāmin)","explanation":"pens, genitive plural — قَلَمٌ (qalamun) — pen is masculine, so the number is خَمْسَةُ (khamsatu), and the counted noun is plural genitive."} -->
 
 ## Case on the number
 
@@ -45,7 +45,7 @@ The number itself changes case according to its role in the sentence. The counte
 
 <!-- quiz: {"type": "multiple-choice", "question": "What case is the counted noun after numbers 3–10?", "options": ["Plural genitive", "Singular accusative", "Dual nominative", "Always nominative"], "answer": 0} -->
 
-<!-- grammar-card: {"rule": "The counted noun after 3–10 is normally plural genitive.", "hint": "Look for a plural ending with -in.", "example": "Complete “seven cities”: سَبْعُ ___ (sabʿu ___).", "answer": "مُدُنٍ (mudunin) — cities, genitive plural", "explanation": "مَدِينَةٌ (madīnatun) is feminine, so the number is سَبْعُ (sabʿu), and the counted noun is the plural genitive مُدُنٍ (mudunin)."} -->
+<!-- grammar-card: {"rule":"The counted noun after 3–10 is normally plural genitive.","hint":"Look for a plural ending with -in.","example":"Complete “seven cities”: سَبْعُ ___ (sabʿu ___).","answer":"مُدُنٍ (mudunin)","explanation":"cities, genitive plural — مَدِينَةٌ (madīnatun) is feminine, so the number is سَبْعُ (sabʿu), and the counted noun is the plural genitive مُدُنٍ (mudunin)."} -->
 
 ## Common learner traps
 
@@ -53,7 +53,7 @@ Do not choose gender from the English translation; choose it from the Arabic sin
 
 <!-- quiz: {"type": "multiple-choice", "question": "Which phrase correctly says “four rooms,” using غُرْفَةٌ (ghurfatun) — room?", "options": ["أَرْبَعُ غُرَفٍ (arbaʿu ghurafin) — four rooms", "أَرْبَعَةُ غُرَفٍ (arbaʿatu ghurafin) — four rooms", "أَرْبَعُ غُرْفَةٍ (arbaʿu ghurfatin) — four room", "أَرْبَعَةً غُرَفًا (arbaʿatan ghurafan) — four rooms"], "answer": 0} -->
 
-<!-- grammar-card: {"rule": "For feminine counted nouns from 3–10, use the masculine-looking number form without tāʾ marbūṭa.", "hint": "Feminine noun, number without final -a.", "example": "Complete “ten rooms”: عَشْرُ ___ (ʿashru ___).", "answer": "غُرَفٍ (ghurafin) — rooms, genitive plural", "explanation": "غُرْفَةٌ (ghurfatun) — room is feminine, so the number is عَشْرُ (ʿashru), not عَشَرَةُ (ʿasharatu)."} -->
+<!-- grammar-card: {"rule":"For feminine counted nouns from 3–10, use the masculine-looking number form without tāʾ marbūṭa.","hint":"Feminine noun, number without final -a.","example":"Complete “ten rooms”: عَشْرُ ___ (ʿashru ___).","answer":"غُرَفٍ (ghurafin)","explanation":"rooms, genitive plural — غُرْفَةٌ (ghurfatun) — room is feminine, so the number is عَشْرُ (ʿashru), not عَشَرَةُ (ʿasharatu)."} -->
 
 ## Sources
 

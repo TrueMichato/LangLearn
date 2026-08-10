@@ -19,7 +19,7 @@ The spelling of the article stays **الـ**, but the sound changes. Before a su
 
 The article begins with **هَمْزَةُ وَصْلٍ** (hamzatu waṣlin) — connecting hamza. At the beginning you may hear a helping vowel, as in **اَلشَّمْسُ** (ash-shamsu) — the sun. After another word, the helping vowel drops: **فِي الشَّمْسِ** (fī sh-shamsi) — in the sun, **مِنَ الْبَيْتِ** (mina l-bayti) — from the house.
 
-<!-- grammar-card: {"rule":"Sun letters assimilate the l of the definite article and take shadda.","hint":"If the first consonant after the article is doubled, it is a sun-letter reading.","example":"Read the definite noun: الدَّرْسُ = ___ .","answer":"ad-darsu — the lesson","explanation":"د (dāl) is a sun letter, so the l of the article is not pronounced; the d is doubled."} -->
+<!-- grammar-card: {"rule":"Sun letters assimilate the l of the definite article and take shadda.","hint":"If the first consonant after the article is doubled, it is a sun-letter reading.","example":"Read the definite noun: الدَّرْسُ = ___ .","answer":"ad-darsu","explanation":"the lesson — د (dāl) is a sun letter, so the l of the article is not pronounced; the d is doubled."} -->
 
 ## Why spelling still matters
 
@@ -29,7 +29,7 @@ Even when the l is not pronounced, the written **ل** remains. This helps you re
 
 <!-- quiz: {"type":"multiple-choice","question":"What is the moon-letter reading of الْكِتَابُ?","options":["ak-kitābu","al-kitābu","ash-kitābu","am-kitābu"],"answer":1} -->
 
-<!-- grammar-card: {"rule":"Moon letters keep the l of الْـ (al-) — the in pronunciation.","hint":"No assimilation before ق, ك, ب, م, and the other moon letters.","example":"Read the definite noun: الْقَلَمُ = ___ .","answer":"al-qalamu — the pen","explanation":"ق (qāf) is a moon letter, so the l in the article is pronounced clearly."} -->
+<!-- grammar-card: {"rule":"Moon letters keep the l of الْـ (al-) — the in pronunciation.","hint":"No assimilation before ق, ك, ب, م, and the other moon letters.","example":"Read the definite noun: الْقَلَمُ = ___ .","answer":"al-qalamu","explanation":"the pen — ق (qāf) is a moon letter, so the l in the article is pronounced clearly."} -->
 
 ## Sources
 

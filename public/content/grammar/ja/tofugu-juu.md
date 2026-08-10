@@ -105,6 +105,8 @@ For example, you can't really say 三時間中 (throughout the three hours), セ
 
 Although the use of each  中(じゅう) tends to follow certain trends, the "rule" as to which 中 can stick to which word isn't really clear cut, so you'll need to learn them by heart. But don't worry! If you keep practicing, you'll eventually get used to the common patterns and memorize them without knowing. 😊
 
+<!-- grammar-card: {"rule":"中 after a place means all over it","hint":"家 + ?","example":"家___ピッカピカに掃除するぞー！","answer":"中","explanation":"家中 means throughout the whole house, and is read じゅう rather than ちゅう."} -->
+
 ## Beyond The Basics
 
 ### 一年中 VS. 年中
@@ -171,6 +173,8 @@ by 違い.site
 <!-- quiz: {"type":"multiple-choice","question":"What does \"クラス**中**で噂された。\" mean?","options":["The rumor was spread **throughout** the class.","I'm going to clean **the whole** house, **from top to bottom**, and make it sparkle.","Look out! There are cops **everywhere**!","I played video games **all** night."],"answer":0} -->
 
 <!-- quiz: {"type":"multiple-choice","question":"What does \"気をつけろ！そこら**中**に警察がいるぞ！\" mean?","options":["Look out! There are cops **everywhere**!","I'm going to clean **the whole** house, **from top to bottom**, and make it sparkle.","The rumor was spread **throughout** the class.","I played video games **all** night."],"answer":0} -->
+
+<!-- grammar-card: {"rule":"中 after a time span means all through it","hint":"一年 + ?","example":"私が住んでいるところは、___夏だ。","answer":"一年中","explanation":"一年中 means all year round — summer never lets up there."} -->
 
 ## Sources
 

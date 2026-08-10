@@ -21,7 +21,7 @@ The **التَّمْيِيزُ** (at-tamyīz) — specification is usually an in
 
 A common tamyīz is singular even when English uses a plural: **ثَلَاثُونَ طَالِبًا** (thalāthūna ṭāliban) — thirty students. The number is plural in meaning, but the specification is singular accusative.
 
-<!-- grammar-card: {"rule":"Tamyīz often clarifies a number or measure with an indefinite accusative noun.","hint":"After many numbers, English plural may be Arabic singular accusative.","example":"Complete “twenty books”: عِشْرُونَ ___ (ʿishrūna ___).","answer":"كِتَابًا (kitāban) — books as specification","explanation":"عِشْرُونَ كِتَابًا (ʿishrūna kitāban) uses singular accusative كِتَابًا (kitāban) as tamyīz."} -->
+<!-- grammar-card: {"rule":"Tamyīz often clarifies a number or measure with an indefinite accusative noun.","hint":"After many numbers, English plural may be Arabic singular accusative.","example":"Complete “twenty books”: عِشْرُونَ ___ (ʿishrūna ___).","answer":"كِتَابًا (kitāban)","explanation":"books as specification — عِشْرُونَ كِتَابًا (ʿishrūna kitāban) uses singular accusative كِتَابًا (kitāban) as tamyīz."} -->
 
 ## Practice patterns
 
@@ -34,7 +34,7 @@ Ask: “More in what respect?” The answer may be **التَّمْيِيزُ** 
 
 <!-- quiz: {"type":"multiple-choice","question":"What question does tamyīz often answer?","options":["in what respect? / of what?","who is the subject?","where is the preposition?","is the noun definite?"],"answer":0} -->
 
-<!-- grammar-card: {"rule":"After comparatives, tamyīz can specify the quality being compared.","hint":"More patient: more in patience.","example":"Complete “more patient”: أَكْثَرُ ___ (aktharu ___).","answer":"صَبْرًا (ṣabran) — patience / in patience","explanation":"أَكْثَرُ صَبْرًا (aktharu ṣabran) literally means “more in patience,” with صَبْرًا (ṣabran) as tamyīz."} -->
+<!-- grammar-card: {"rule":"After comparatives, tamyīz can specify the quality being compared.","hint":"More patient: more in patience.","example":"Complete “more patient”: أَكْثَرُ ___ (aktharu ___).","answer":"صَبْرًا (ṣabran)","explanation":"patience / in patience — أَكْثَرُ صَبْرًا (aktharu ṣabran) literally means “more in patience,” with صَبْرًا (ṣabran) as tamyīz."} -->
 
 ## Sources
 

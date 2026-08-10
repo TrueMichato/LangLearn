@@ -207,6 +207,8 @@ pp. 238-239
 
 <!-- quiz: {"type":"multiple-choice","question":"What does \"田中は今、会議**中**ですね。\" mean?","options":["He's **in** a meeting right now.","Keep quiet **during** the meal.","I got a call **during** the meal.","Meeting **In Progress**"],"answer":0} -->
 
+<!-- grammar-card: {"rule":"中 marks the period during which something happens","hint":"食事 + ?","example":"食事___に電話がかかってきた。","answer":"中","explanation":"食事中 means in the middle of a meal, which is when the call came."} -->
+
 ## Sources
 
 - [Tofugu](https://www.tofugu.com/japanese-grammar/chuu/)

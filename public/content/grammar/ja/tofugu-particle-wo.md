@@ -99,6 +99,10 @@ Finally, objects can be the result of some process. This too is like English, so
 
 In this sentence, a  政党(せいとう) (political party) is what was created. The object is still being affected by the action — it comes into existence due to the completion of a process. Now those cockroaches can protest against their human oppressors!
 
+<!-- grammar-card: {"rule":"The thing created by a verb takes を","hint":"political party + object particle","example":"ゴキブリ等が___作りました。","answer":"政党を","explanation":"政党 is what was formed, so it is marked as the object with を."} -->
+
+<!-- grammar-card: {"rule":"を marks the direct object of a transitive verb","hint":"cockroach + object particle","example":"キャメロンが___つぶした。","answer":"ゴキブリを","explanation":"ゴキブリ is the thing squashed, so it takes を."} -->
+
 ## Beyond the Basics
 
 In general, we can say that particle を marks objects of verbs. This doesn't always mean though that the object of a Japanese sentence is always the object of the equivalent English translation, though. Let's take a look at the different ways that particle を gets used.
@@ -297,6 +301,8 @@ by Shigehiro Kato
 <!-- quiz: {"type":"multiple-choice","question":"What does \"まちこは**梅酒を**作った。\" mean?","options":["Machiko made **plum wine**.","Kanae hit **the ball**.","A new wind into Japanese language education!","Have a great year!"],"answer":0} -->
 
 <!-- quiz: {"type":"multiple-choice","question":"What does \"日本語教育に新しい風を！\" mean?","options":["A new wind into Japanese language education!","Kanae hit **the ball**.","Machiko made **plum wine**.","Have a great year!"],"answer":0} -->
+
+<!-- grammar-card: {"rule":"を can mark the path a motion verb travels along","hint":"を / で","example":"ケンイチが厚板の上___歩かされた！","answer":"を","explanation":"歩く with を marks the plank as the route walked along, not a mere location."} -->
 
 ## Sources
 

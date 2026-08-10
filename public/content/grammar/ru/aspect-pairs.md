@@ -54,6 +54,8 @@ Some common verbs use completely different roots:
 
 <!-- quiz:{"type":"multiple-choice","question":"What is the imperfective partner of 'купить' (to buy)?","options":["покупить","покупать","купать","купивать"],"answer":1} -->
 
+<!-- grammar-card: {"rule":"A single finished action takes the perfective member of the pair","hint":"открывать / открыть","example":"Он ___ окно и вышел.","answer":"открыл","explanation":"The window was opened once and the act was over, so the perfective открыл is used rather than открывал."} -->
+
 ---
 
 ## 2. The -ыва-/-ива- Suffix Pattern
@@ -75,6 +77,8 @@ This is one of the most productive patterns for creating imperfective partners f
 **Она рассказала мне историю.** *(Oná rasskazála mne istóriyu.)* — She told me a story. (perfective — completed)
 
 **Она часто рассказывает интересные истории.** *(Oná chásto rasskazývayet interésnyye istórii.)* — She often tells interesting stories. (imperfective — habitual)
+
+<!-- grammar-card: {"rule":"The suffix -ыва-/-ива- builds an imperfective partner from a perfective verb","hint":"рассказать → ?","example":"Она часто ___ интересные истории.","answer":"рассказывает","explanation":"Часто marks a habit, so the suffixed imperfective рассказывать is needed instead of the perfective рассказать."} -->
 
 ---
 
@@ -105,6 +109,8 @@ This is one of the most productive patterns for creating imperfective partners f
 **Ты прочитал эту книгу?** *(Ty prochitál étu knígu?)* — Have you finished reading this book?
 
 <!-- quiz:{"type":"multiple-choice","question":"'Ты читал эту книгу?' (imperfective) asks about:","options":["Whether you finished the book","The experience — whether you ever read it","When you will read it","How fast you read"],"answer":1} -->
+
+<!-- grammar-card: {"rule":"A stated stretch of time forces the imperfective","hint":"читать / прочитать","example":"Я ___ книгу весь вечер.","answer":"читал","explanation":"Весь вечер measures the process itself rather than a result, so the imperfective читал is required."} -->
 
 ---
 

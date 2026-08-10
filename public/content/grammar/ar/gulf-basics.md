@@ -24,7 +24,7 @@ Common Gulf learner-notice points include **شْلُونَكْ؟** (shlōnak?) �
 
 MSA **أُرِيدُ** (urīdu) — I want corresponds to Gulf **أَبِي** (abī) — I want in many everyday contexts.
 
-<!-- grammar-card: {"rule": "Gulf أَبِي (abī) — I want can introduce a desired action.", "hint": "Want + verb.", "example": "Complete “I want to go”: ___ أَرُوحْ (___ arūḥ).", "answer": "أَبِي (abī) — I want", "explanation": "أَبِي أَرُوحْ (abī arūḥ) — I want to go is a common Gulf-style expression."} -->
+<!-- grammar-card: {"rule":"Gulf أَبِي (abī) — I want can introduce a desired action.","hint":"Want + verb.","example":"Complete “I want to go”: ___ أَرُوحْ (___ arūḥ).","answer":"أَبِي (abī)","explanation":"أَبِي أَرُوحْ (abī arūḥ) — I want to go is a common Gulf-style expression."} -->
 
 ## Practice patterns
 
@@ -36,7 +36,7 @@ Kind practice phrases:
 
 <!-- quiz: {"type": "multiple-choice", "question": "What should you remember about Gulf Arabic?", "options": ["It is one perfectly identical variety everywhere", "It includes regional varieties with local differences", "It has no relation to MSA roots", "It is only written, never spoken"], "answer": 1} -->
 
-<!-- grammar-card: {"rule": "Gulf شْلُونَكْ؟ (shlōnak?) — how are you? is an everyday greeting question.", "hint": "Use it to a male in many contexts.", "example": "Complete “How are you?”: ___ (shlōnak?).", "answer": "شْلُونَكْ؟ (shlōnak?) — how are you, to a male?", "explanation": "شْلُونَكْ؟ (shlōnak?) — how are you? is a recognizable Khaleeji greeting."} -->
+<!-- grammar-card: {"rule":"Gulf شْلُونَكْ؟ (shlōnak?) — how are you? is an everyday greeting question.","hint":"Use it to a male in many contexts.","example":"Complete “How are you?”: ___ (shlōnak?).","answer":"شْلُونَكْ؟","explanation":"how are you, to a male? — شْلُونَكْ؟ (shlōnak?) — how are you? is a recognizable Khaleeji greeting."} -->
 
 ## Sources
 

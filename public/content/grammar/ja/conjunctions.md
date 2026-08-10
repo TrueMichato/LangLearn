@@ -14,6 +14,8 @@ Japanese has many ways to connect sentences and clauses. This lesson covers the 
 
 > 💡 が can also be used as a soft introduction, not necessarily meaning "but": 山田ですが、田中さんはいらっしゃいますか。— This is Yamada; is Tanaka available?
 
+<!-- grammar-card: {"rule":"が joins two clauses with a mild 'but'","hint":"が / から / ので","example":"日本語は難(むずか)しいです___、楽(たの)しいです。","answer":"が","explanation":"が follows the polite です and contrasts the two statements without stressing the opposition."} -->
+
 ## けど / けれど / けれども — "But" (Casual to Formal)
 
 These are variants of the same conjunction, ranging from casual to formal:
@@ -42,6 +44,8 @@ These are variants of the same conjunction, ranging from casual to formal:
 - **暑(あつ)いから、窓(まど)を開(あ)けてもいいですか。** — Because it's hot, may I open the window?
 - **時間がないから、急(いそ)ぎましょう。** — We don't have time, so let's hurry.
 
+<!-- grammar-card: {"rule":"から gives the speaker's own reason","hint":"が / から / ので","example":"お腹(なか)が空(す)いた___、何か食(た)べたいです。","answer":"から","explanation":"から states the cause directly and is the plainer, more subjective way to say 'because'."} -->
+
 ## ので — "Because" (Objective/Polite Reason)
 
 **ので** also means "because" but sounds more **objective and polite** than から. It connects with the plain form (な-adjectives and nouns use な before ので).
@@ -64,6 +68,8 @@ These are variants of the same conjunction, ranging from casual to formal:
 - 疲れた**ので**、帰ります。 — I'm going home because I'm tired. (softer, more polite)
 
 <!-- quiz:{"type":"multiple-choice","question":"Which reason-giving conjunction sounds more polite and objective?","options":["から","ので","けど","のに"],"answer":1} -->
+
+<!-- grammar-card: {"rule":"ので presents the reason as an objective circumstance","hint":"が / から / ので","example":"電車が遅(おく)れた___、遅刻(ちこく)しました。","answer":"ので","explanation":"ので sounds more neutral and polite than から, which suits explaining why you were late."} -->
 
 ## のに — "Even Though / Despite"
 

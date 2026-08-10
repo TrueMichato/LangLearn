@@ -19,7 +19,7 @@ The pattern أَفْعَلَ (afʿala) — he caused / made happen begins with �
 
 Many English verbs hide the causative idea: أَيْقَظَ (ayqaẓa) — he woke someone, أَرْسَلَ (arsala) — he sent, and أَسْلَمَ (aslama) — he submitted / became Muslim are all Form IV. The pattern helps you guess the family relationship even when the translation is not word-for-word “cause.”
 
-<!-- grammar-card: {"rule":"Form IV أَفْعَلَ (afʿala) commonly creates a causative verb.","hint":"Ask: did the subject make someone or something enter, leave, know, or happen?","example":"Complete “he brought out”: ___ (akhraja) — he brought out.","answer":"أَخْرَجَ (akhraja) — he brought out","explanation":"أَخْرَجَ (akhraja) is Form IV from خَرَجَ (kharaja) — he went out. It means he caused something to go out."} -->
+<!-- grammar-card: {"rule":"Form IV أَفْعَلَ (afʿala) commonly creates a causative verb.","hint":"Ask: did the subject make someone or something enter, leave, know, or happen?","example":"Complete “he brought out”: ___ (akhraja) — he brought out.","answer":"أَخْرَجَ","explanation":"he brought out — أَخْرَجَ (akhraja) is Form IV from خَرَجَ (kharaja) — he went out. It means he caused something to go out."} -->
 
 ## Forms to recognize
 
@@ -33,7 +33,7 @@ Many English verbs hide the causative idea: أَيْقَظَ (ayqaẓa) — he w
 
 <!-- quiz: {"type":"multiple-choice","question":"Which verb means he put in or made enter?","options":["أَدْخَلَ (adkhala) — he put in","دَخَلَ (dakhala) — he entered","خَرَجَ (kharaja) — he went out","قَابَلَ (qābala) — he met"],"answer":0} -->
 
-<!-- grammar-card: {"rule":"The Form IV verbal noun is often إِفْعَالٌ (ifʿālun), as in إِخْرَاجٌ (ikhrājun) — bringing out.","hint":"The initial إِـ and long ā near the end are clues.","example":"Complete “bringing out”: ___ (ikhrājun) — bringing out.","answer":"إِخْرَاجٌ (ikhrājun) — bringing out","explanation":"إِخْرَاجٌ (ikhrājun) is the verbal noun of أَخْرَجَ (akhraja) — he brought out."} -->
+<!-- grammar-card: {"rule":"The Form IV verbal noun is often إِفْعَالٌ (ifʿālun), as in إِخْرَاجٌ (ikhrājun) — bringing out.","hint":"The initial إِـ and long ā near the end are clues.","example":"Complete “bringing out”: ___ (ikhrājun) — bringing out.","answer":"إِخْرَاجٌ","explanation":"bringing out — إِخْرَاجٌ (ikhrājun) is the verbal noun of أَخْرَجَ (akhraja) — he brought out."} -->
 
 ## Sources
 

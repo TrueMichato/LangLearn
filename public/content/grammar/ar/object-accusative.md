@@ -21,7 +21,7 @@ In **قَرَأَ الطَّالِبُ الْكِتَابَ** (qaraʾa aṭ-ṭ�
 
 Word order can vary, but case endings help keep roles clear. **قَرَأَ الْكِتَابَ الطَّالِبُ** (qaraʾa al-kitāba aṭ-ṭālibu) — the student read the book still has the object accusative and subject nominative.
 
-<!-- grammar-card: {"rule": "Direct objects are normally accusative in formal Arabic.", "hint": "The thing acted upon takes -a/-an.", "example": "Complete “I read a book”: قَرَأْتُ ___ (qaraʾtu ___).", "answer": "كِتَابًا (kitāban) — a book, accusative", "explanation": "قَرَأْتُ كِتَابًا (qaraʾtu kitāban) — I read a book uses accusative tanwīn."} -->
+<!-- grammar-card: {"rule":"Direct objects are normally accusative in formal Arabic.","hint":"The thing acted upon takes -a/-an.","example":"Complete “I read a book”: قَرَأْتُ ___ (qaraʾtu ___).","answer":"كِتَابًا (kitāban)","explanation":"a book, accusative — قَرَأْتُ كِتَابًا (qaraʾtu kitāban) — I read a book uses accusative tanwīn."} -->
 
 ## Practice patterns
 
@@ -33,7 +33,7 @@ Indefinite accusative often uses **ـًا** (-an):
 
 <!-- quiz: {"type": "multiple-choice", "question": "In قَرَأَ الطَّالِبُ الْكِتَابَ (qaraʾa aṭ-ṭālibu al-kitāba), which word is the object?", "options": ["قَرَأَ (qaraʾa) — read", "الطَّالِبُ (aṭ-ṭālibu) — the student", "الْكِتَابَ (al-kitāba) — the book", "الطَّالِبُ الْكِتَابَ (aṭ-ṭālibu al-kitāba)"], "answer": 2} -->
 
-<!-- grammar-card: {"rule": "Adjectives describing accusative objects also take accusative agreement.", "hint": "Object adjective follows the object case.", "example": "Complete “I read the useful book”: قَرَأْتُ الْكِتَابَ ___ (qaraʾtu al-kitāba ___).", "answer": "الْمُفِيدَ (al-mufīda) — the useful, accusative", "explanation": "قَرَأْتُ الْكِتَابَ الْمُفِيدَ (qaraʾtu al-kitāba al-mufīda) — I read the useful book."} -->
+<!-- grammar-card: {"rule":"Adjectives describing accusative objects also take accusative agreement.","hint":"Object adjective follows the object case.","example":"Complete “I read the useful book”: قَرَأْتُ الْكِتَابَ ___ (qaraʾtu al-kitāba ___).","answer":"الْمُفِيدَ (al-mufīda)","explanation":"the useful, accusative — قَرَأْتُ الْكِتَابَ الْمُفِيدَ (qaraʾtu al-kitāba al-mufīda) — I read the useful book."} -->
 
 ## Sources
 

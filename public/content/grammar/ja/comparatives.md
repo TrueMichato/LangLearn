@@ -24,6 +24,8 @@ You can also put より first:
 
 <!-- quiz:{"type":"multiple-choice","question":"How do you say 'Japanese is more difficult than English'?","options":["日本語は英語から難しいです","日本語は英語と難しいです","日本語は英語より難しいです","日本語は英語で難しいです"],"answer":2} -->
 
+<!-- grammar-card: {"rule":"より marks the standard something is compared against","hint":"than","example":"東京(とうきょう)は大阪(おおさか)___大(おお)きいです。","answer":"より","explanation":"大阪より means 'compared with Osaka', which makes Tokyo the larger of the two."} -->
+
 ## の方(ほう)が — "More So"
 
 **の方が** emphasizes which item has more of a quality.
@@ -53,6 +55,8 @@ Answering:
 
 <!-- quiz:{"type":"multiple-choice","question":"'犬の方が猫より好きです' means:","options":["Cats are more liked than dogs","I like cats more than dogs","I like dogs more than cats","Dogs and cats are equally liked"],"answer":2} -->
 
+<!-- grammar-card: {"rule":"の方が highlights the preferred side of a comparison","hint":"犬 ___ 猫より","example":"犬(いぬ)___猫(ねこ)より好(す)きです。","answer":"の方が","explanation":"の方が marks dogs as the favoured option, while 猫より names what they are preferred to."} -->
+
 ## ほど〜ない — "Not as... as"
 
 **ほど** with a negative adjective means "not as much as."
@@ -64,6 +68,8 @@ Answering:
 - **私は田中さんほど上手(じょうず)じゃないです。** — I'm not as skilled as Tanaka.
 - **この映画はあの映画ほどおもしろくなかったです。** — This movie wasn't as interesting as that one.
 - **日本語は中国語ほど難しくないと思(おも)います。** — I think Japanese isn't as difficult as Chinese.
+
+<!-- grammar-card: {"rule":"ほど with a negative means 'not as … as'","hint":"as … as","example":"大阪は東京___大きくないです。","answer":"ほど","explanation":"東京ほど…ない says Osaka does not reach Tokyo's level, not that Osaka is small."} -->
 
 ## 一番(いちばん) — Superlative ("The Most")
 

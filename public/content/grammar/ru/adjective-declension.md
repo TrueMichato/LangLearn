@@ -38,6 +38,8 @@ Other hard-stem adjectives that follow this pattern: **красный** (red), *
 
 <!-- quiz:{"type":"multiple-choice","question":"What is the genitive singular masculine form of 'новый'?","options":["нового","новому","новым","новой"],"answer":0} -->
 
+<!-- grammar-card: {"rule":"An adjective copies the case, gender and number of the noun it modifies","hint":"новый (new) — hard stem","example":"Она живёт в ___ квартире.","answer":"новой","explanation":"After в the noun is prepositional, and квартира is feminine, so новый takes the feminine prepositional ending -ой."} -->
+
 ---
 
 ## 2. Soft-Stem Adjectives (синий — blue)
@@ -71,6 +73,8 @@ Soft-stem adjectives have a stem ending in a **soft consonant**. The model adjec
 Other soft-stem adjectives: **зимний** (winter), **летний** (summer), **осенний** (autumn), **весенний** (spring), **последний** (last), **домашний** (home, domestic).
 
 <!-- quiz:{"type":"multiple-choice","question":"What is the instrumental singular masculine form of 'синий'?","options":["синем","синего","синим","синей"],"answer":2} -->
+
+<!-- grammar-card: {"rule":"Soft-stem adjectives use и/е where hard stems use ы/о","hint":"синий (blue) — soft stem","example":"У неё ___ глаза.","answer":"синие","explanation":"Глаза is plural, and the soft stem синий takes -ие in the plural rather than the hard-stem -ые."} -->
 
 ---
 

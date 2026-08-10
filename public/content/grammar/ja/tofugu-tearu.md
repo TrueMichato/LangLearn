@@ -255,6 +255,8 @@ For example, imagine you have an untidy roommate who always leaves their dirty c
 
 Notice 〜っぱなしにする is used here. It's an expression that adds the nuance of "leaving things as is," or "leaving things unfinished," and it perfectly matches the objectionable tone we are going for here. For this reason, it's often paired up with 〜てある to blame someone for their inconsiderate action.
 
+<!-- grammar-card: {"rule":"てある marks a state someone deliberately left behind","hint":"つける + ある","example":"真夏なのに、暖房がつけ___。","answer":"てある","explanation":"つけてある says someone turned the heating on and left it that way."} -->
+
 ## Beyond the Basics
 
 ### 〜てある VS 〜ている
@@ -396,9 +398,11 @@ by Nerida Jarkey
 
 <!-- quiz: {"type":"multiple-choice","question":"What does \"メモ**は**デスクに置い**てある**。\" mean?","options":["The memo is on the desk.","A memo is on the desk.","the memo that is on the desk","The door is open (because someone left it open)."],"answer":0} -->
 
-<!-- quiz: {"type":"multiple-choice","question":"What does \"メモ**が**デスクに置い**てある**。\" mean?","options":["A memo is on the desk.","The memo is on the desk.","The memo is on the desk.","the memo that is on the desk"],"answer":0} -->
+<!-- quiz: {"type":"multiple-choice","question":"What does \"メモ**が**デスクに置い**てある**。\" mean?","options":["A memo is on the desk.","The memo is on the desk.","Someone is putting a memo on the desk.","the memo that is on the desk"],"answer":0} -->
 
 <!-- quiz: {"type":"multiple-choice","question":"What does \"メモ**を**デスクに置い**てある**。\" mean?","options":["The memo is on the desk.","A memo is on the desk.","the memo that is on the desk","The door is open (because someone left it open)."],"answer":0} -->
+
+<!-- grammar-card: {"rule":"ている with an intransitive verb describes a plain state","hint":"開く + いる","example":"ドアが開(あ)い___。","answer":"ている","explanation":"開いている just says the door is open, with no hint that anyone opened it."} -->
 
 ## Sources
 

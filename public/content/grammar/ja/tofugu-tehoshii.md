@@ -209,6 +209,10 @@ Let's take a look at another example. Imagine you hear some exciting gossip and 
 
 Can you see that it might sound a bit arrogant? Unless you are just being playful or have a very close and friendly relationship with the other person, it may be better to avoid using 〜てほしい this way.
 
+<!-- grammar-card: {"rule":"With a state verb like ある, ほしい takes が","hint":"に / が","example":"Wi-Fi___あってほしい。","answer":"が","explanation":"Wi-Fiがあってほしい wants Wi-Fi to exist; there is no person being asked to act."} -->
+
+<!-- grammar-card: {"rule":"The person you want to act takes に","hint":"に / が","example":"ルームメート___掃除機をかけてほしい。","answer":"に","explanation":"ルームメートに marks the roommate as the one who should vacuum."} -->
+
 ## Beyond the Basics
 
 ### 〜させてほしい for Asking for Permission to Do Something
@@ -396,6 +400,8 @@ by George Takahashi
 <!-- quiz: {"type":"multiple-choice","question":"What does \"早く終わってほしい。\" mean?","options":["I want (the update) to end quickly.","I want (my roommate) to vacuum.","I want my roommate to vacuum.","I want my roommate to vacuum too."],"answer":0} -->
 
 <!-- quiz: {"type":"multiple-choice","question":"What does \"ルームメート**に**掃除機をかけてほしい。\" mean?","options":["I want my roommate to vacuum.","I want (my roommate) to vacuum.","I want (the update) to end quickly.","I want my roommate to vacuum too."],"answer":0} -->
+
+<!-- grammar-card: {"rule":"させてほしい asks to be allowed to do something","hint":"causative + ほしい","example":"６時までに夕食を食べ___。","answer":"させてほしい","explanation":"食べさせてほしい requests permission to eat by six."} -->
 
 ## Sources
 

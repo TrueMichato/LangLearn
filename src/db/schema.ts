@@ -111,6 +111,24 @@ export interface ReviewLogEntry {
   date: string;          // ISO date of the grade event
 }
 
+/**
+ * A full copy of the learner's data, taken automatically before a schema
+ * upgrade runs. This is the safety net that turns "the update ate my progress"
+ * into "restore the snapshot from before the update".
+ */
+export interface Snapshot {
+  id?: number;
+  createdAt: string;     // ISO date
+  /** Why it was taken, e.g. "before upgrade to schema v11". */
+  reason: string;
+  /** Schema version the data was captured at. */
+  schemaVersion: number;
+  /** Serialized backup payload (see src/db/backup.ts). */
+  payload: string;
+  /** Byte length of `payload`, so Settings can show cost without parsing. */
+  sizeBytes: number;
+}
+
 const db = new Dexie('LangLearnDB') as Dexie & {
   words: EntityTable<Word, 'id'>;
   reviews: EntityTable<Review, 'id'>;
@@ -123,6 +141,7 @@ const db = new Dexie('LangLearnDB') as Dexie & {
   testHistory: EntityTable<TestHistory, 'id'>;
   badges: EntityTable<Badge, 'id'>;
   reviewLog: EntityTable<ReviewLogEntry, 'id'>;
+  snapshots: EntityTable<Snapshot, 'id'>;
 };
 
 db.version(1).stores({
@@ -233,20 +252,48 @@ db.version(9).stores({
 }).upgrade(async (tx) => {
   // Grammar cards created before the field realignment stored the rule in `word`
   // and the answer in `contextSentence`, which leaked the answer onto the question
-  // side. They are identifiable by the absence of `grammarRule`. Remove them (and
-  // their reviews) so they regenerate with the corrected mapping on next lesson review.
-  const wordsTable = tx.table('words');
-  const reviewsTable = tx.table('reviews');
-  const stale = await wordsTable
+  // side. They are identifiable by the absence of `grammarRule`.
+  //
+  // An earlier version of this migration DELETED those rows along with their
+  // reviews. That threw away real review history — a learner who had been
+  // grading a card for months lost it to a routine app update. Repair the
+  // mapping in place instead: the card, and everything the learner earned on
+  // it, survives. Migrations must never destroy user data.
+  await tx.table('words')
     .where('type')
     .equals('grammar')
     .filter((w: { grammarRule?: string }) => w.grammarRule === undefined)
-    .toArray();
-  const staleIds = stale.map((w: { id?: number }) => w.id).filter((id): id is number => id != null);
-  if (staleIds.length > 0) {
-    await wordsTable.bulkDelete(staleIds);
-    await reviewsTable.where('wordId').anyOf(staleIds).delete();
-  }
+    .modify((word: Word) => {
+      // Legacy layout: word = the rule, contextSentence = the answer.
+      const legacyRule = word.word;
+      const legacyAnswer = word.contextSentence;
+      word.grammarRule = legacyRule;
+      // Prefer the stored answer as the tested side; fall back to the rule so
+      // the card is never left blank.
+      word.word = legacyAnswer || legacyRule;
+      // There is no recoverable prompt in the legacy layout, and reusing the
+      // answer here would leak it onto the question side again.
+      word.contextSentence = '';
+    });
 });
+
+db.version(10).stores({
+  words: '++id, [language+createdAt], [word+language], language, word, createdAt, *tags, type',
+  reviews: '++id, [wordId+nextReviewDate], wordId, nextReviewDate',
+  texts: '++id, language, createdAt',
+  studySessions: '++id, startTime, activity',
+  settings: 'key',
+  dailyActivity: 'date, goalMet, challengeComplete',
+  lessonProgress: 'id, language, lessonId',
+  characterProgress: 'id, language, mastery',
+  testHistory: '++id, language, type, score, date',
+  badges: 'id, unlockedAt',
+  reviewLog: '++id, reviewId, wordId, isLapse, [language+date], date',
+  snapshots: '++id, createdAt',
+});
+
+/** Schema version the running bundle expects. Snapshots record it so a restore
+ *  can tell whether it predates the current shape. */
+export const CURRENT_SCHEMA_VERSION = 10;
 
 export { db };

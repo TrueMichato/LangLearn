@@ -20,6 +20,8 @@ To identify: look at the kana before る. If it sits in the い-row or え-row o
 
 Conjugation only involves one step: drop る and add the new ending. Simple!
 
+<!-- grammar-card: {"rule":"Ichidan verbs simply drop る","hint":"食べる, polite","example":"毎日(まいにち)朝(あさ)ごはんを食(た)べ___。","answer":"ます","explanation":"食べる drops る and adds ます, with no sound change at all."} -->
+
 ## う-Verbs (Godan / Five-Row Verbs)
 
 う-verbs end in a sound from the **う-row** of the kana chart: う, く, す, つ, ぬ, ぶ, む, る, ぐ. Some う-verbs also end in る, which is where confusion can arise.
@@ -35,6 +37,8 @@ Conjugation only involves one step: drop る and add the new ending. Simple!
 | 買う | かう | to buy | う |
 | 泳ぐ | およぐ | to swim | ぐ |
 | 遊ぶ | あそぶ | to play | ぶ |
+
+<!-- grammar-card: {"rule":"Godan verbs shift the final う sound to い before ます","hint":"読む, polite","example":"毎朝(まいあさ)新聞(しんぶん)を読(よ)___。","answer":"みます","explanation":"読む becomes 読みます — the む shifts to み."} -->
 
 ## How to Tell Them Apart
 
@@ -66,6 +70,8 @@ These must be memorized, but the list of common exceptions is small and you will
 
 <!-- quiz:{"type":"multiple-choice","question":"The verb 飲む (nomu — to drink) is what type of verb?","options":["る-verb (ichidan)","う-verb (godan)","Irregular","な-adjective"],"answer":1} -->
 
+<!-- grammar-card: {"rule":"Some verbs ending in る are godan despite appearances","hint":"帰る, polite","example":"毎日(まいにち)六時(ろくじ)に家(いえ)に___。","answer":"帰(かえ)ります","explanation":"帰る looks ichidan but conjugates as godan, giving 帰ります rather than 帰ます."} -->
+
 ## Irregular Verbs
 
 Japanese has only **two** truly irregular verbs:
@@ -88,6 +94,8 @@ All する-compound verbs conjugate the same way — only the する part change
 <!-- quiz:{"type":"multiple-choice","question":"How many truly irregular verbs does Japanese have?","options":["None","Two (する and 来る)","Five","Ten"],"answer":1} -->
 
 <!-- quiz:{"type":"multiple-choice","question":"The verb 走る (hashiru — to run) looks like a る-verb but is actually a:","options":["る-verb","う-verb","Irregular verb","Not a verb"],"answer":1} -->
+
+<!-- grammar-card: {"rule":"来る is irregular and changes its reading when it conjugates","hint":"来る, polite","example":"明日(あした)、友達(ともだち)が___。","answer":"来(き)ます","explanation":"来る is read きます in the polite form, not こます or くます."} -->
 
 ## Quick Reference
 

@@ -23,7 +23,7 @@ A word like **بَيْتٌ** (baytun) — house is read as the connected sequenc
 
 Do not worry about handwriting beauty yet. First, learn to recognize the skeleton of each word. Printed Arabic usually omits many short vowel marks, but LangLearn lessons show full tashkīl so your eye can connect spelling, sound, and meaning.
 
-<!-- grammar-card: {"rule": "Arabic letters join according to position; six letters, including د (dāl) — d and و (wāw) — w / ū, do not connect forward.", "hint": "Look for a small break after the non-connector.", "example": "The word زَمَانٌ (zamānun) — time has a visual break after ___ .", "answer": "ز (zāy) — z", "explanation": "The letter ز (zāy) — z belongs to the six forward non-connectors, so it connects backward but not to the next letter."} -->
+<!-- grammar-card: {"rule":"Arabic letters join according to position; six letters, including د (dāl) — d and و (wāw) — w / ū, do not connect forward.","hint":"Look for a small break after the non-connector.","example":"The word زَمَانٌ (zamānun) — time has a visual break after ___ .","answer":"ز (zāy)","explanation":"The letter ز (zāy) — z belongs to the six forward non-connectors, so it connects backward but not to the next letter."} -->
 
 ## Practice patterns
 
@@ -35,7 +35,7 @@ Try tracing the right-to-left flow:
 
 <!-- quiz: {"type": "multiple-choice", "question": "What does بَيْتٌ (baytun) — house show?", "options": ["Letters joined into one word", "A verb ending", "A dialect spelling", "A number phrase"], "answer": 0} -->
 
-<!-- grammar-card: {"rule": "Read Arabic words from right to left, even when the English explanation around them reads left to right.", "hint": "Start at the right edge of the Arabic word.", "example": "In كِتَابٌ (kitābun) — book, the first letter you read is ___ .", "answer": "كِـ (ki-) — k", "explanation": "Arabic script runs right to left, so كِـ (ki-) — k begins كِتَابٌ (kitābun) — book."} -->
+<!-- grammar-card: {"rule":"Read Arabic words from right to left, even when the English explanation around them reads left to right.","hint":"Start at the right edge of the Arabic word.","example":"In كِتَابٌ (kitābun) — book, the first letter you read is ___ .","answer":"كِـ (ki-)","explanation":"Arabic script runs right to left, so كِـ (ki-) — k begins كِتَابٌ (kitābun) — book."} -->
 
 ## Sources
 

@@ -27,6 +27,8 @@ Think of it this way:
 
 **Мы летаем в Москву каждый год.** *(My letayem v Moskvu kazhdyy god.)* — We fly to Moscow every year.
 
+<!-- grammar-card: {"rule":"One trip under way in one direction uses the unidirectional verb","hint":"идти / ходить","example":"Сейчас я ___ в школу.","answer":"иду","explanation":"Сейчас fixes a single journey in progress, which is exactly what идти expresses."} -->
+
 ---
 
 ## 2. Key Motion Verb Pairs
@@ -158,6 +160,8 @@ Below are the most important motion verb pairs. The first verb in each pair is *
 
 <!-- quiz:{"type":"multiple-choice","question":"Which sentence correctly describes a habitual action?","options":["Я иду в школу.","Я хожу в школу каждый день.","Я шёл в школу.","Я пойду в школу."],"answer":1} -->
 
+<!-- grammar-card: {"rule":"Habitual round trips use the multidirectional verb","hint":"идти / ходить","example":"Я ___ в школу каждый день.","answer":"хожу","explanation":"Каждый день describes a repeated there-and-back trip, so ходить replaces the one-way идти."} -->
+
 ---
 
 ## 4. Prefixed Motion Verbs
@@ -251,6 +255,8 @@ For example, with вы- (out):
 **Она прошла через весь город.** *(Ona proshla cherez ves gorod.)* — She walked through the entire city.
 
 <!-- quiz:{"type":"multiple-choice","question":"'Мы перешли через мост' means:","options":["We walked past the bridge.","We ran to the bridge.","We crossed the bridge.","We left the bridge."],"answer":2} -->
+
+<!-- grammar-card: {"rule":"The prefix по- marks the moment motion begins","hint":"идти → ?","example":"Он ___ на работу в восемь.","answer":"пошёл","explanation":"Пошёл reports that he set off at eight, rather than describing the journey itself."} -->
 
 ---
 

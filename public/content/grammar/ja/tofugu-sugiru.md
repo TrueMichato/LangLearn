@@ -225,6 +225,8 @@ Let's take a look at a different scenario. Imagine you have a kid who isn't a ve
 
 In this example, it doesn't necessarily mean your kid won't eat vegetables at all. 〜なさすぎる suggests that you have a sort of baseline for not eating enough vegetables, and the amount of vegetables your child *doesn't eat* goes beyond that threshold. Again, this is a creative and amusing way of expressing how your child eats relatively few vegetables.
 
+<!-- grammar-card: {"rule":"なさすぎる says there is far too little of something","hint":"食べない + すぎる","example":"うちの子は野菜(やさい)を食べ___！","answer":"なさすぎる","explanation":"食べなさすぎる complains that the child eats nowhere near enough vegetables."} -->
+
 ## Beyond The Basics
 
 ### 〜すぎ For A Standalone Noun Phrase
@@ -364,6 +366,10 @@ pp. 545-549
 <!-- quiz: {"type":"multiple-choice","question":"What does \"安**すぎる**！\" mean?","options":["It's **SO** reasonable!","I ate **too much.**","It's **SUCH** a good deal!","It's **not** funny **at all**!"],"answer":0} -->
 
 <!-- quiz: {"type":"multiple-choice","question":"What does \"お得**すぎる**！\" mean?","options":["It's **SUCH** a good deal!","I ate **too much.**","It's **SO** reasonable!","It's **not** funny **at all**!"],"answer":0} -->
+
+<!-- grammar-card: {"rule":"The ます-stem plus すぎ makes a noun","hint":"食べる + すぎ","example":"___は体に良くない。","answer":"食べすぎ","explanation":"食べすぎ means overeating, and here it serves as the topic of the sentence."} -->
+
+<!-- grammar-card: {"rule":"すぎる can be nominalised as すぎ","hint":"飲む + すぎ","example":"___で頭(あたま)が痛(いた)い。","answer":"飲みすぎ","explanation":"飲みすぎ is the noun 'drinking too much', which is why it can take で."} -->
 
 ## Sources
 

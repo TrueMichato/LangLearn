@@ -58,6 +58,10 @@ The most common verbal noun suffix is **-ение** (from -ить verbs) or **-�
 
 <!-- quiz:{"type":"multiple-choice","question":"What is the verbal noun from 'объяснить' (to explain)?","options":["объясника","объяснение","объяснительный","объясность"],"answer":1} -->
 
+<!-- grammar-card: {"rule":"A verbal noun lets an action take a genitive complement of its own","hint":"решить → ?","example":"___ этой задачи заняло два часа.","answer":"Решение","explanation":"Решение turns 'to solve' into a thing, so what was solved follows in the genitive задачи."} -->
+
+<!-- grammar-card: {"rule":"The suffix -ение turns a verb into the name of its action","hint":"изучать → ?","example":"___ русского языка требует терпения.","answer":"Изучение","explanation":"Изучение names the activity of studying, which lets it stand as the subject of the sentence."} -->
+
 ---
 
 ## 3. The -тие Pattern

@@ -139,7 +139,7 @@ This is the trickiest pattern. There are three possible plural forms:
 
 <!-- quiz: {"type":"multiple-choice","question":"What is the plural of 'coração' (heart)?","options":["coraçãos","coraçães","corações","coraçãoes"],"answer":2} -->
 
-<!-- grammar-card: {"rule":"Words ending in -m form the plural by changing -m to -ns","hint":"homem → homens, viagem → viagens","example":"A viag___ foi boa. → As viag___ foram boas.","answer":"viagem → viagens","explanation":"When a word ends in -m, the plural replaces -m with -ns: viagem → viagens, homem → homens, jardim → jardins."} -->
+<!-- grammar-card: {"rule":"Words ending in -m form the plural by changing -m to -ns","hint":"homem → homens, viagem → viagens","example":"A ___ foi boa. → As ___ foram boas.","answer":"viagem ... viagens","explanation":"When a word ends in -m, the plural replaces -m with -ns: viagem → viagens, homem → homens, jardim → jardins."} -->
 
 ### Rule 5: Words ending in -l
 
