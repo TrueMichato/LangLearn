@@ -123,6 +123,8 @@ Use **на** for surfaces, open areas, events, and certain fixed expressions.
 
 **Картина висит на стене.** *(Kartina visit na stene.)* — A painting hangs on the wall.
 
+<!-- grammar-card: {"rule":"Being inside somewhere uses в plus the prepositional","hint":"в / на","example":"Я живу ___ Москве.","answer":"в","explanation":"Cities take в, and Москва changes to the prepositional form Москве."} -->
+
 ---
 
 ## 3. The в vs на Distinction
@@ -167,6 +169,8 @@ Choosing between **в** and **на** is one of the trickiest parts of the prepos
 **Я жду тебя на кухне.** *(Ya zhdu tebya na kukhne.)* — I'm waiting for you in the kitchen.
 
 <!-- quiz:{"type":"multiple-choice","question":"Which is correct: 'She is at work'?","options":["Она в работе.","Она на работу.","Она на работе.","Она в работу."],"answer":2} -->
+
+<!-- grammar-card: {"rule":"Certain workplaces and open spaces take на rather than в","hint":"в / на","example":"Он работает ___ заводе.","answer":"на","explanation":"Завод belongs to the group of nouns conventionally used with на, not в."} -->
 
 ---
 
@@ -215,6 +219,8 @@ The prepositions **о** and **об** (about, concerning) always take the preposi
 **Я беспокоюсь о здоровье.** *(Ya bespokoyus' o zdorov'ye.)* — I worry about my health.
 
 <!-- quiz:{"type":"multiple-choice","question":"Which preposition is correct: 'a book about art' — книга ___ искусстве?","options":["о","об","обо","в"],"answer":1} -->
+
+<!-- grammar-card: {"rule":"О plus the prepositional means about something","hint":"о / об","example":"Мы говорим ___ музыке.","answer":"о","explanation":"Музыка begins with a consonant, so the plain form о is used rather than об."} -->
 
 ---
 

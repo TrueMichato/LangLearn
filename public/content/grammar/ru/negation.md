@@ -28,6 +28,10 @@ Russian negation is richer and more layered than English. Where English uses one
 
 > The position of **не** determines **what** is being negated — it always negates the word immediately following it.
 
+<!-- grammar-card: {"rule":"Moving не changes which part of the sentence is denied","hint":"не placed before the subject","example":"___ я это сделал.","answer":"Не","explanation":"Placed before я, не denies the subject rather than the verb: someone else did it."} -->
+
+<!-- grammar-card: {"rule":"Не negates whatever word directly follows it","hint":"не / нет","example":"Она ___ работает сегодня.","answer":"не","explanation":"Standing before работает, не denies the action itself: she is not working."} -->
+
 ---
 
 ## 2. Нет — "No" and "There Is Not"
@@ -63,6 +67,8 @@ Russian negation is richer and more layered than English. Where English uses one
 **Завтра не будет занятий.** *(Zavtra ne budet zanyatiy.)* — There will be no classes tomorrow.
 
 <!-- quiz:{"type":"multiple-choice","question":"'У меня нет времени' — what case is 'времени' in?","options":["Nominative","Accusative","Genitive","Dative"],"answer":2} -->
+
+<!-- grammar-card: {"rule":"Нет is the standalone no; не can never stand alone","hint":"не / нет","example":"— Ты хочешь кофе? — ___, спасибо.","answer":"Нет","explanation":"A one-word answer requires нет, because не only ever attaches to another word."} -->
 
 ---
 

@@ -53,6 +53,8 @@ Diminutives (уменьшительно-ласкательные формы) are
 
 <!-- quiz:{"type":"multiple-choice","question":"What is the diminutive of 'кот' (cat)?","options":["коток","котик","котушка","котёнок"],"answer":1} -->
 
+<!-- grammar-card: {"rule":"A diminutive softens an offer and makes it sound friendly","hint":"чай → ?","example":"Хочешь ___?","answer":"чайку","explanation":"Чаёк is the diminutive of чай, and after хочешь it takes the partitive form чайку — 'a spot of tea'."} -->
+
 ---
 
 ## 3. Affectionate Diminutives: -ушк-/-юшк-, -еньк-/-оньк-
@@ -84,6 +86,8 @@ These suffixes add a strongly **affectionate** or **tender** tone:
 **Ноченька** *(nóchenka)* — dear night (poetic)
 
 **Берёзонька** *(beryózonka)* — dear birch tree (folk)
+
+<!-- grammar-card: {"rule":"The -ушк- suffix adds warmth rather than smallness","hint":"хлеб → ?","example":"Дай мне ___.","answer":"хлебушек","explanation":"Хлебушек is not smaller bread; the suffix simply makes the request sound affectionate."} -->
 
 ---
 

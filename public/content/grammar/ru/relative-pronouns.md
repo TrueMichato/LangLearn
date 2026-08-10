@@ -93,6 +93,8 @@ When **который** is used with a preposition, the preposition goes **direc
 
 <!-- quiz:{"type":"multiple-choice","question":"'Всё, что он сказал' — why use 'что' instead of 'который'?","options":["Because the antecedent is a person","Because 'что' follows 'всё' (everything)","Because the clause is in past tense","Because 'который' is only for questions"],"answer":1} -->
 
+<!-- grammar-card: {"rule":"Кто…тот links a clause about a person to the main clause","hint":"кто / что","example":"___ не работает, тот не ест.","answer":"Кто","explanation":"The clause describes a person, so кто is used and picked up again by тот."} -->
+
 ---
 
 ## 5. Где, Куда, Откуда — Relative Adverbs of Place
@@ -116,6 +118,8 @@ These replace **в котором / на котором** when referring to loca
 **Город, откуда он приехал, маленький.** *(Górod, otkúda on priyékhal, málen'kiy.)* — The city he came from is small.
 
 > **Где** = в котором (location), **куда** = в который (direction to), **откуда** = из которого (direction from)
+
+<!-- grammar-card: {"rule":"Где is location, куда is direction towards, откуда is origin","hint":"где / куда / откуда","example":"Магазин, ___ мы ходим, закрылся.","answer":"куда","explanation":"Ходить here means going to the shop, so the clause needs the directional куда."} -->
 
 ---
 
@@ -151,6 +155,8 @@ These replace **в котором / на котором** when referring to loca
 > In everyday speech, **чей** is often replaced by **у которого** (genitive): Человек, у которого дом на углу...
 
 <!-- quiz:{"type":"multiple-choice","question":"'Город, где я родился' — 'где' can be replaced by:","options":["в который","в котором","из которого","на который"],"answer":1} -->
+
+<!-- grammar-card: {"rule":"Чей means whose and agrees with the thing owned, not the owner","hint":"дом is masculine singular","example":"Человек, ___ дом стоит на углу, — мой сосед.","answer":"чей","explanation":"The possession is дом, masculine singular, so чей takes the masculine form."} -->
 
 ---
 

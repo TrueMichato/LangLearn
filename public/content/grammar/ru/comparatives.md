@@ -91,6 +91,8 @@ Some of the most frequently used adjectives have **completely irregular** compar
 
 <!-- quiz:{"type":"multiple-choice","question":"What is the comparative of 'плохой' (bad)?","options":["плохее","хуже","плоше","худее"],"answer":1} -->
 
+<!-- grammar-card: {"rule":"A handful of everyday comparatives are irregular and must be learned whole","hint":"большой → ?","example":"Москва ___ Петербурга.","answer":"больше","explanation":"Большой has the irregular comparative больше, and the thing compared against then takes the genitive Петербурга."} -->
+
 ---
 
 ## Compound Comparative with более / менее
@@ -116,6 +118,8 @@ The compound comparative uses **более** (more) or **менее** (less) + t
 
 <!-- quiz:{"type":"multiple-choice","question":"Which of the following is INCORRECT?","options":["более интересный","интереснее","более интереснее","менее интересный"],"answer":2} -->
 
+<!-- grammar-card: {"rule":"Более plus an unchanged adjective builds a compound comparative","hint":"более / менее","example":"Она ___ ответственная студентка.","answer":"более","explanation":"Более carries the comparison itself, so the adjective stays ответственная and simply agrees with студентка."} -->
+
 ---
 
 ## Simple Superlative with -ейший / -айший
@@ -140,6 +144,8 @@ The simple (synthetic) superlative is formed by adding **-ейший** to the ad
 - **Она добрейший человек.** *(Ona dobreyshiy chelovek.)* — She is the kindest person.
 
 > **Usage note:** The -ейший/-айший superlative often expresses an **emphatic/absolute** meaning ("extremely") rather than a strict comparison. For clear comparison ("the biggest of all"), use the compound superlative.
+
+<!-- grammar-card: {"rule":"The suffix -ейший turns an adjective into a one-word superlative","hint":"красивый → красив-?","example":"Это красив___ город в мире.","answer":"ейший","explanation":"Красивый drops its -ый and takes -ейший to mean the most beautiful of all."} -->
 
 ---
 

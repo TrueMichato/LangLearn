@@ -51,6 +51,12 @@ Common ways to form perfective verbs:
 3. **Sequential actions (one after another):**
    - Я **встал**, **позавтракал** и **ушёл**. (I got up, had breakfast, and left.)
 
+<!-- grammar-card: {"rule":"A completed result calls for the perfective","hint":"читать / прочитать","example":"Я ___ книгу.","answer":"прочитал","explanation":"Прочитал says the book was finished, whereas читал would only say it was being read."} -->
+
+<!-- grammar-card: {"rule":"Habits and repeated actions take the imperfective","hint":"учить / выучить","example":"Каждый день я ___ новые слова.","answer":"учу","explanation":"Каждый день marks a routine rather than one finished event, so учу is imperfective."} -->
+
+<!-- grammar-card: {"rule":"A stated duration calls for the imperfective","hint":"читать / прочитать","example":"Я ___ книгу два часа.","answer":"читал","explanation":"Два часа describes how long the process lasted, so the imperfective читал is used."} -->
+
 ## Aspect and Tense
 
 | | Past | Present | Future |

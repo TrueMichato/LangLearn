@@ -163,6 +163,8 @@ Compare:
 
 <!-- quiz:{"type":"multiple-choice","question":"'Я видел его машину' — does 'его' change if the noun changes case?","options":["Yes, его becomes егого in genitive.","Yes, его becomes ему in dative.","No, его as a possessive never changes.","No, but you add н- before it."],"answer":2} -->
 
+<!-- grammar-card: {"rule":"Его, её and их never change their form","hint":"он → ?","example":"Я знаю ___ сестру.","answer":"его","explanation":"Unlike мой or наш, the third-person possessives are frozen, so его stays его before сестру."} -->
+
 ---
 
 ## 5. Свой vs Его/Её — The Reflexive Possessive
@@ -222,6 +224,8 @@ This distinction is essential and does not exist in English:
 **Она забыла свой паспорт.** *(Ona zabyla svoy pasport.)* — She forgot her (own) passport.
 
 **Расскажи о своей семье.** *(Rasskazhi o svoyey semye.)* — Tell about your (own) family.
+
+<!-- grammar-card: {"rule":"Свой is used when the owner is the subject of the same clause","hint":"наш / свой","example":"Мы продали ___ дом.","answer":"свой","explanation":"We are both the sellers and the owners, so свой is preferred to наш."} -->
 
 ---
 
@@ -283,6 +287,8 @@ Demonstrative pronouns point to specific nouns. **Этот** means "this" (near)
 ---
 
 <!-- quiz:{"type":"multiple-choice","question":"'Он любит свою жену' vs 'Он любит его жену' — what's the difference?","options":["No difference, both mean his own wife.","свою = his own wife; его = someone else's wife.","свою = someone else's wife; его = his own wife.","Both are incorrect; you must use мою."],"answer":1} -->
+
+<!-- grammar-card: {"rule":"Этот points at what is near, тот at what is further away","hint":"дом is masculine singular","example":"___ дом очень старый.","answer":"Этот","explanation":"The house is the one right here, and дом is masculine singular, so этот is the form."} -->
 
 ## 7. Common Mistakes to Avoid
 

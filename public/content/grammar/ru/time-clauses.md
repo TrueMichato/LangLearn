@@ -32,6 +32,8 @@ Time clauses tell **when** something happens in relation to another event. Russi
 
 <!-- quiz:{"type":"multiple-choice","question":"'Когда я читал, зазвонил телефон' — why are different aspects used?","options":["Both should be perfective","The reading was ongoing when the phone interrupted","'Когда' always requires imperfective","It's a grammar mistake"],"answer":1} -->
 
+<!-- grammar-card: {"rule":"Когда simply fixes the time at which something happens","hint":"когда / пока","example":"___ я читал, она смотрела телевизор.","answer":"Когда","explanation":"The clause locates one action in time relative to another, which is когда's job."} -->
+
 ---
 
 ## 2. Пока — "While" / "Until"
@@ -59,6 +61,10 @@ Time clauses tell **when** something happens in relation to another event. Russi
 > **Important:** In "пока не" constructions, **не** does NOT negate — it's part of the "until" meaning. The sentence is affirmative despite the presence of не.
 
 <!-- quiz:{"type":"multiple-choice","question":"'Подожди, пока я не приду' — does 'не' make this negative?","options":["Yes, it means 'don't come'","No, 'пока не' means 'until' — the sentence is affirmative","Yes, it means 'wait, but I won't come'","It depends on intonation"],"answer":1} -->
+
+<!-- grammar-card: {"rule":"Пока не plus a perfective verb means until","hint":"пока ___ приду","example":"Подожди, пока я ___ приду.","answer":"не","explanation":"This не is not a negation: пока не marks the moment at which the waiting stops."} -->
+
+<!-- grammar-card: {"rule":"Пока stresses that two actions run side by side","hint":"когда / пока","example":"___ я готовил ужин, дети делали уроки.","answer":"Пока","explanation":"Both activities are ongoing at the same time, and that simultaneity is what пока expresses."} -->
 
 ---
 

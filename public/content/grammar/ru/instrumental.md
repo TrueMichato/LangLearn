@@ -142,6 +142,8 @@ When describing **what someone is, was, or will be** (professions, roles), Russi
 
 <!-- quiz:{"type":"multiple-choice","question":"Which sentence correctly uses the instrumental for a profession?","options":["Он был врач.","Он был врачом.","Он был врачу.","Он был врача."],"answer":1} -->
 
+<!-- grammar-card: {"rule":"Быть and стать put the resulting role in the instrumental","hint":"to become","example":"Он хочет ___ врачом.","answer":"стать","explanation":"Стать governs the instrumental, which is why the profession is врачом and not врач."} -->
+
 ---
 
 ## 4. Usage: Accompaniment with с (with)
@@ -185,6 +187,10 @@ The preposition **с** (with) followed by the instrumental case expresses **acco
 **Что случилось с ней?** *(Chto sluchilos' s ney?)* — What happened to her?
 
 <!-- quiz:{"type":"multiple-choice","question":"How do you say 'with me' in Russian?","options":["с мной","с меня","со мной","с мне"],"answer":2} -->
+
+<!-- grammar-card: {"rule":"С is extended to со before an awkward consonant cluster","hint":"с / со","example":"Пойдём ___ мной!","answer":"со","explanation":"Мной opens with мн-, so с becomes со to keep the phrase pronounceable."} -->
+
+<!-- grammar-card: {"rule":"Accompaniment is с plus the instrumental","hint":"a preposition","example":"Я иду в кино ___ другом.","answer":"с","explanation":"С requires the instrumental, so друг appears as другом."} -->
 
 ---
 

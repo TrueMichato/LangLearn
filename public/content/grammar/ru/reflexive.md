@@ -28,6 +28,10 @@ The rule is simple:
 
 **Она улыбается.** *(Ona ulybayetsya.)* — She is smiling.
 
+<!-- grammar-card: {"rule":"The он-form of a reflexive verb is written -тся","hint":"одевает + ся","example":"Он одевае___ быстро.","answer":"тся","explanation":"The third-person ending -т joins -ся and is written одевается, even though it sounds like -тца."} -->
+
+<!-- grammar-card: {"rule":"The reflexive ending is -сь after a vowel and -ся after a consonant","hint":"умываю + ?","example":"Я умываю___ каждое утро.","answer":"сь","explanation":"Умываю ends in the vowel ю, so the reflexive ending contracts to -сь."} -->
+
 ---
 
 ## 2. True Reflexive Meaning
@@ -214,6 +218,8 @@ In the past tense, **-ся** is added after consonants and **-сь** after vowel
 **Всё случилось очень быстро.** *(Vsyo sluchilos ochen bystro.)* — Everything happened very fast.
 
 <!-- quiz:{"type":"multiple-choice","question":"Which is the correct past tense form of 'она — учиться'?","options":["она училась","она учился","она училися","она училась"],"answer":0} -->
+
+<!-- grammar-card: {"rule":"After a consonant the reflexive ending stays -ся","hint":"моешь + ?","example":"Ты моешь___ слишком долго!","answer":"ся","explanation":"Моешь ends in ь rather than a vowel, so the full ending -ся is kept."} -->
 
 ---
 

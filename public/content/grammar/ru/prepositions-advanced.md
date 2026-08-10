@@ -38,6 +38,10 @@ Beyond the basic prepositions (в, на, с, к, из), Russian has a rich set o
 
 <!-- quiz:{"type":"multiple-choice","question":"'Благодаря помощи друзей я справился' — 'благодаря' implies:","options":["A negative outcome","A positive outcome","A neutral statement","An uncertain result"],"answer":1} -->
 
+<!-- grammar-card: {"rule":"Из-за marks an unwelcome cause and takes the genitive","hint":"a cause you regret","example":"___ дождя мы остались дома.","answer":"Из-за","explanation":"The rain spoiled the plan, so из-за is used with the genitive дождя."} -->
+
+<!-- grammar-card: {"rule":"Благодаря marks a welcome cause and takes the dative","hint":"a cause you are glad of","example":"___ помощи друзей я справился.","answer":"Благодаря","explanation":"The help was beneficial, so благодаря is chosen and помощь appears in the dative помощи."} -->
+
 ---
 
 ## 2. Concessive Prepositions — "Despite"

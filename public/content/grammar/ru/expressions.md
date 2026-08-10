@@ -241,6 +241,10 @@ Russian has many expressions rooted in superstition:
 
 <!-- quiz:{"type":"multiple-choice","question":"What is the traditional response to 'Ни пуха ни пера!'?","options":["Спасибо!","К чёрту!","Пожалуйста!","Удачи!"],"answer":1} -->
 
+<!-- grammar-card: {"rule":"Вы takes plural agreement even when it refers to one person","hint":"добр / добры","example":"___ очень добры.","answer":"Вы","explanation":"The short adjective добры is plural, so it must pair with the polite Вы rather than ты."} -->
+
+<!-- grammar-card: {"rule":"Moving to informal address is asked for, not assumed","hint":"ты / Вы","example":"Можно на \"___\"?","answer":"ты","explanation":"The set phrase asks permission to switch from Вы to the informal ты."} -->
+
 ---
 
 ## Useful Expression Patterns

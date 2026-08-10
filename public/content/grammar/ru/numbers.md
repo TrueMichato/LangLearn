@@ -110,6 +110,8 @@ These are formed by combining the root of the single digit with **-надцат�
 
 <!-- quiz:{"type":"multiple-choice","question":"Which of these tens is IRREGULAR in Russian?","options":["тридцать (30)","пятьдесят (50)","сорок (40)","шестьдесят (60)"],"answer":2} -->
 
+<!-- grammar-card: {"rule":"Numbers from five upward are followed by the genitive plural","hint":"the numeral for 40","example":"В городе ___ школ.","answer":"сорок","explanation":"Сорок is above four, so школа appears in the genitive plural школ."} -->
+
 ---
 
 ## Case Agreement After Numbers
@@ -198,6 +200,8 @@ Ordinal numbers (first, second, third...) behave like **adjectives** in Russian 
 
 <!-- quiz:{"type":"multiple-choice","question":"What is the feminine form of 'третий' (third)?","options":["третяя","третья","третая","третия"],"answer":1} -->
 
+<!-- grammar-card: {"rule":"Ordinals behave like adjectives and agree with their noun","hint":"один → ?","example":"Это мой ___ урок русского языка.","answer":"первый","explanation":"Урок is masculine singular, so the ordinal takes the masculine ending -ый."} -->
+
 ---
 
 ## Telling Time and Dates
@@ -225,6 +229,8 @@ Dates use **ordinal numbers in the neuter genitive** for "on a date" and the **g
 - **Экзамен будет десятого сентября.** *(Ekzamen budet desyatogo sentyabrya.)* — The exam will be on September 10th.
 
 <!-- quiz:{"type":"multiple-choice","question":"How would you say 'It is 5 o'clock' in Russian?","options":["Сейчас пять часа","Сейчас пять час","Сейчас пять часов","Сейчас пятый час"],"answer":2} -->
+
+<!-- grammar-card: {"rule":"Russian counts minutes into the hour that is still coming","hint":"an ordinal in the genitive","example":"Сейчас десять минут ___.","answer":"третьего","explanation":"Ten past two is ten minutes of the third hour, so третий appears in the genitive третьего."} -->
 
 ---
 

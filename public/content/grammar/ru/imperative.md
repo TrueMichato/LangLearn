@@ -87,6 +87,8 @@ To form the **вы** imperative (formal or plural), simply add **-те** to the 
 
 <!-- quiz:{"type":"multiple-choice","question":"How do you form the вы imperative from the ты imperative?","options":["Add -те","Add -ите","Add -сь","Replace the last letter with -те"],"answer":0} -->
 
+<!-- grammar-card: {"rule":"Adding -те makes an imperative polite or plural","hint":"читай → ?","example":"Читай___ текст на странице пять.","answer":"те","explanation":"The bare читай addresses one familiar person; -те addresses Вы or a group."} -->
+
 ---
 
 ## 3. "Let's" Constructions (Давай / Давайте)

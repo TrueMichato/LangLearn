@@ -43,6 +43,8 @@ The 7-letter rule also affects adjective endings. The masculine nominative endin
 
 <!-- quiz:{"type":"multiple-choice","question":"What is the correct plural of кни́га (book)?","options":["книгы","книги","книге","книга"],"answer":1} -->
 
+<!-- grammar-card: {"rule":"After к, г, х, ж, ч, ш and щ write и, never ы","hint":"кни́га → plural","example":"Хоро́шие ___ лежа́т на по́лке.","answer":"кни́ги","explanation":"The stem кни́г- ends in г, so the plural is книги and never the expected книгы."} -->
+
 ---
 
 ## 2. The 5-Letter Rule (Правило пяти букв)

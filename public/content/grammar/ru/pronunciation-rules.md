@@ -92,6 +92,8 @@ And when a voiced consonant appears **before a voiceless consonant**, it becomes
 
 <!-- quiz:{"type":"multiple-choice","question":"How is the final consonant in хлеб (bread) pronounced?","options":["As Б (b) — voiced","As П (p) — voiceless","As В (v) — voiced","As Ф (f) — voiceless"],"answer":1} -->
 
+<!-- grammar-card: {"rule":"A voiced consonant at the end of a word is pronounced voiceless but still written as voiced","hint":"bread","example":"На столе лежит хле___.","answer":"б","explanation":"Хлеб sounds like [khlep], yet the spelling keeps б — the genitive хлеба shows the consonant is voiced underneath."} -->
+
 ---
 
 ## 3. Palatalization (Softening of Consonants)

@@ -16,6 +16,8 @@ There are two types:
 1. **Imperfective verbal adverbs** — simultaneous action (while doing)
 2. **Perfective verbal adverbs** — prior/completed action (having done)
 
+<!-- grammar-card: {"rule":"A verbal adverb must share its subject with the main verb","hint":"пить (to drink), past tense","example":"Читая книгу, она ___ чай.","answer":"пила","explanation":"Она does both the reading and the drinking, and being feminine takes the past form пила."} -->
+
 ---
 
 ## 2. Imperfective Verbal Adverbs (Несовершенный вид)
@@ -91,6 +93,8 @@ Some verbs with stems ending in a consonant (no -л) use **-ши**: принёс
 **Закрыв дверь, она ушла.** *(Zakryv dver, ona ushla.)* — Having closed the door, she left.
 
 <!-- quiz:{"type":"multiple-choice","question":"How is a perfective verbal adverb typically formed?","options":["From они form, replace -т with -я","From past masculine, replace -л with -в","From infinitive, add -вши","From мы form, add -в"],"answer":1} -->
+
+<!-- grammar-card: {"rule":"Perfective verbal adverbs end in -в or -вши, keeping -сь if reflexive","hint":"вернуться → вернув-?","example":"Вернув___ домой, мы поужинали.","answer":"шись","explanation":"Вернуться is reflexive, so its verbal adverb keeps the reflexive ending: вернувшись."} -->
 
 ---
 

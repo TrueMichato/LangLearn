@@ -96,6 +96,8 @@ The genitive is used with **нет** (there is no / there isn't) to express abse
 
 <!-- quiz:{"type":"multiple-choice","question":"«У меня нет ___» (I don't have a dictionary). Choose the genitive of «словарь».","options":["словарь","словаря","словарю","словарём"],"answer":1} -->
 
+<!-- grammar-card: {"rule":"Absence is expressed by нет plus the genitive","hint":"есть / нет","example":"У меня ___ машины.","answer":"нет","explanation":"Нет replaces есть to deny existence, and машина shifts into the genitive машины."} -->
+
 ---
 
 ## 4. Numbers and the Genitive
@@ -195,6 +197,8 @@ Many common prepositions require the genitive case.
 
 **У окна стоит стул.** *(U okna stoit stul.)* — A chair stands by the window.
 
+<!-- grammar-card: {"rule":"Possession is built with у plus the genitive","hint":"the preposition before меня","example":"___ меня есть собака.","answer":"У","explanation":"У governs the genitive меня; the sentence literally says at me there is a dog."} -->
+
 ---
 
 ## 6. Partitive Genitive
@@ -270,6 +274,8 @@ When a noun is in the genitive, its adjective must also be in the genitive.
 **У молодой учительницы красивый голос.** *(U molodoy uchitel'nitsy krasivyy golos.)* — The young teacher has a beautiful voice.
 
 **Цена нового телефона высокая.** *(Tsena novogo telefona vysokaya.)* — The price of the new phone is high.
+
+<!-- grammar-card: {"rule":"An adjective follows its noun into the genitive","hint":"новый (new)","example":"Книга нов___ студента на столе.","answer":"ого","explanation":"Студента is masculine genitive, so новый must take the matching genitive ending -ого."} -->
 
 ---
 

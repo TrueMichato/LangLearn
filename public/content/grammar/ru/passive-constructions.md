@@ -38,6 +38,8 @@ Take the perfective past passive participle and use its **short form**:
 
 <!-- quiz:{"type":"multiple-choice","question":"'Книга написана Толстым' — what case is 'Толстым' in?","options":["Nominative","Genitive","Dative","Instrumental"],"answer":3} -->
 
+<!-- grammar-card: {"rule":"The written passive uses a short-form participle agreeing with the subject","hint":"написать → ?","example":"Книга ___ Толстым.","answer":"написана","explanation":"Книга is feminine singular, so the short participle is написана, and the agent stands in the instrumental Толстым."} -->
+
 ---
 
 ## 2. Passive with Reflexive Verbs (-ся)
@@ -55,6 +57,8 @@ The reflexive suffix **-ся/-сь** can give an imperfective verb a passive mea
 **Собрание проводится каждый понедельник.** *(Sobrániye provóditsya kázhdyy ponedélnik.)* — The meeting is held every Monday.
 
 > The **-ся passive** is used mostly with **imperfective** verbs for ongoing or repeated actions. The agent is usually **not mentioned**.
+
+<!-- grammar-card: {"rule":"An ongoing passive is expressed with a -ся verb","hint":"строить + ся","example":"Дом ___ уже год.","answer":"строится","explanation":"Строится presents the building as happening to the house, with no need to name who is doing it."} -->
 
 ---
 
@@ -104,6 +108,8 @@ The **dative case** identifies the person experiencing the state:
 **Мне всё равно.** *(Mne vsyo ravnó.)* — I don't care. (It's all the same to me.)
 
 <!-- quiz:{"type":"multiple-choice","question":"'Мне холодно' — what case is 'мне' in?","options":["Nominative","Accusative","Genitive","Dative"],"answer":3} -->
+
+<!-- grammar-card: {"rule":"An impersonal state puts the person experiencing it in the dative","hint":"я → ?","example":"___ холодно.","answer":"Мне","explanation":"The sentence has no subject at all, so the one feeling cold appears in the dative: мне холодно."} -->
 
 ---
 
