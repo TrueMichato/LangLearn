@@ -173,7 +173,7 @@ p. 110
 
 <!-- quiz: {"type":"multiple-choice","question":"What does \"おいしそう。\" mean?","options":["It looks delicious.","It doesn’t look delicious.","It looks delicious!","That’s a delicious-looking cake!"],"answer":0} -->
 
-<!-- quiz: {"type":"multiple-choice","question":"What does \"おいしそう**じゃない**。\" mean?","options":["It doesn’t look delicious.","It looks delicious.","It looks delicious.","It looks delicious!"],"answer":0} -->
+<!-- quiz: {"type":"multiple-choice","question":"What does \"おいしそう**じゃない**。\" mean?","options":["It doesn’t look delicious.","It looks delicious.","It didn’t look delicious.","It looks delicious!"],"answer":0} -->
 
 ## Sources
 

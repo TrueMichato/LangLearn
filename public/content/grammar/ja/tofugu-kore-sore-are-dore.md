@@ -403,7 +403,7 @@ by 金井 勇人
 by 金水 敏 and 田窪 行則
 (1992)
 
-<!-- quiz: {"type":"multiple-choice","question":"What does \"**これ**は何ですか？\" mean?","options":["What is **this**?","This mountain","This mountain","These mountains"],"answer":0} -->
+<!-- quiz: {"type":"multiple-choice","question":"What does \"**これ**は何ですか？\" mean?","options":["What is **this**?","This mountain","What is **that**?","These mountains"],"answer":0} -->
 
 <!-- quiz: {"type":"multiple-choice","question":"What does \"❌ これの山\" mean?","options":["This mountain","What is **this**?","These mountains","I wonder **which one** to get."],"answer":0} -->
 

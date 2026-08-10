@@ -217,7 +217,7 @@ In the past tense, **-ся** is added after consonants and **-сь** after vowel
 
 **Всё случилось очень быстро.** *(Vsyo sluchilos ochen bystro.)* — Everything happened very fast.
 
-<!-- quiz:{"type":"multiple-choice","question":"Which is the correct past tense form of 'она — учиться'?","options":["она училась","она учился","она училися","она училась"],"answer":0} -->
+<!-- quiz: {"type":"multiple-choice","question":"Which is the correct past tense form of 'она — учиться'?","options":["она училась","она учился","она училися","она учились"],"answer":0} -->
 
 <!-- grammar-card: {"rule":"After a consonant the reflexive ending stays -ся","hint":"моешь + ?","example":"Ты моешь___ слишком долго!","answer":"ся","explanation":"Моешь ends in ь rather than a vowel, so the full ending -ся is kept."} -->
 

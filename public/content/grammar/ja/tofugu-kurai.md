@@ -377,7 +377,7 @@ pp. 220-224, 228-235
 
 <!-- quiz: {"type":"multiple-choice","question":"What does \"六時**頃に**来て。\" mean?","options":["Come over at **around** six o'clock.","I'm planning to go to Japan **around** March.","I'm planning to go to Japan **in about** half a year.","I went to Japan last March. And **after about** six months, I went back to America."],"answer":0} -->
 
-<!-- quiz: {"type":"multiple-choice","question":"What does \"三月**くらいに**日本に行く予定です。\" mean?","options":["I'm planning to go to Japan **around** March.","Come over at **around** six o'clock.","Come over at **around** six o'clock.","I'm planning to go to Japan **in about** half a year."],"answer":0} -->
+<!-- quiz: {"type":"multiple-choice","question":"What does \"三月**くらいに**日本に行く予定です。\" mean?","options":["I'm planning to go to Japan **around** March.","Come over at **around** six o'clock.","I went to Japan in March.","I'm planning to go to Japan **in about** half a year."],"answer":0} -->
 
 <!-- grammar-card: {"rule":"くらい compares one thing's size to another","hint":"くらい","example":"ボールの大きさは、アボカド___だよ。","answer":"くらい","explanation":"アボカドくらい means roughly the size of an avocado."} -->
 

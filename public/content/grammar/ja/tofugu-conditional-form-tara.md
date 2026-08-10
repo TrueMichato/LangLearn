@@ -295,7 +295,7 @@ by 井上 和子
 by ニサンサラー・セッワンディ
 (2015)
 
-<!-- quiz: {"type":"multiple-choice","question":"What does \"走ったらストレッチをします。\" mean?","options":["❌ I stretch when running.","I ran into my friend when I was running.","I became tired after studying.","I played after studying."],"answer":0} -->
+<!-- quiz: {"type":"multiple-choice","question":"What does \"走ったらストレッチをします。\" mean?","options":["I stretch after I run.","I ran into my friend when I was running.","I became tired after studying.","I played after studying."],"answer":0} -->
 
 <!-- quiz: {"type":"multiple-choice","question":"What does \"走っていたら友達に会った。\" mean?","options":["I ran into my friend when I was running.","❌ I stretch when running.","I became tired after studying.","I played after studying."],"answer":0} -->
 

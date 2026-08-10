@@ -286,9 +286,9 @@ by 鈴木 智映子
 
 <!-- quiz: {"type":"multiple-choice","question":"What does \"平素(へいそ)は 格別(かくべつ)のご 高配(こうはい)を 賜(たまわ)り、 厚(あつ)く** 御礼(おれい)** 申(もう)し 上(あ)げます。\" mean?","options":["We would like to express our sincere gratitude for your continued support.","Take your time!/Enjoy your stay!","You're absolutely right!","This describes a past action"],"answer":0} -->
 
-<!-- quiz: {"type":"multiple-choice","question":"What does \"ごゆっくり！\" mean?","options":["Take your time!/Enjoy your stay!","We would like to express our sincere gratitude for your continued support.","You're absolutely right!","We would like to express our sincere gratitude for your continued support."],"answer":0} -->
+<!-- quiz: {"type":"multiple-choice","question":"What does \"ごゆっくり！\" mean?","options":["Take your time!/Enjoy your stay!","We would like to express our sincere gratitude for your continued support.","You're absolutely right!","Thank you for waiting."],"answer":0} -->
 
-<!-- quiz: {"type":"multiple-choice","question":"What does \"ごもっとも！\" mean?","options":["You're absolutely right!","We would like to express our sincere gratitude for your continued support.","Take your time!/Enjoy your stay!","We would like to express our sincere gratitude for your continued support."],"answer":0} -->
+<!-- quiz: {"type":"multiple-choice","question":"What does \"ごもっとも！\" mean?","options":["You're absolutely right!","We would like to express our sincere gratitude for your continued support.","Take your time!/Enjoy your stay!","Thank you for waiting."],"answer":0} -->
 
 ## Sources
 

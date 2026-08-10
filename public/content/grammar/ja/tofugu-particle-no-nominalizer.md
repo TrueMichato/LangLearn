@@ -262,9 +262,9 @@ by 柴谷 方良
 
 <!-- quiz: {"type":"multiple-choice","question":"What does \"走るのは楽しい。\" mean?","options":["Running is fun.","The thing [dad bought] is a banana.","What [dad bought] is a banana.","I don't need things like this."],"answer":0} -->
 
-<!-- quiz: {"type":"multiple-choice","question":"What does \"[お父さんが買った]物は、バナナです。\" mean?","options":["The thing [dad bought] is a banana.","Running is fun.","What [dad bought] is a banana.","Running is fun."],"answer":0} -->
+<!-- quiz: {"type":"multiple-choice","question":"What does \"[お父さんが買った]物は、バナナです。\" mean?","options":["The thing [dad bought] is a banana.","Running is fun.","What [dad bought] is a banana.","Dad bought a banana."],"answer":0} -->
 
-<!-- quiz: {"type":"multiple-choice","question":"What does \"[お父さんが買った]のは、バナナです。\" mean?","options":["What [dad bought] is a banana.","Running is fun.","The thing [dad bought] is a banana.","Running is fun."],"answer":0} -->
+<!-- quiz: {"type":"multiple-choice","question":"What does \"[お父さんが買った]のは、バナナです。\" mean?","options":["What [dad bought] is a banana.","Running is fun.","The thing [dad bought] is a banana.","Dad bought a banana."],"answer":0} -->
 
 <!-- grammar-card: {"rule":"Verbs of direct perception take の, never こと","hint":"の / こと","example":"彼(かれ)が走(はし)る___を見(み)た。","answer":"の","explanation":"You watch a concrete event, so 走るのを見た is correct and 走ることを見た is not."} -->
 

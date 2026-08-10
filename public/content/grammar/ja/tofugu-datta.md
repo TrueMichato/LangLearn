@@ -216,7 +216,7 @@ by 定延 利之
 
 <!-- quiz: {"type":"multiple-choice","question":"What does \"締め切りは昨日**でした**。\" mean?","options":["The deadline was yesterday.","flowers that **were** beautiful","The flowers, **which were so beautiful**, suddenly wilted.","Because it was my dream since childhood, I tried my hardest."],"answer":0} -->
 
-<!-- quiz: {"type":"multiple-choice","question":"What does \"綺麗**だった**花\" mean?","options":["flowers that **were** beautiful","The deadline was yesterday.","The deadline was yesterday.","The flowers, **which were so beautiful**, suddenly wilted."],"answer":0} -->
+<!-- quiz: {"type":"multiple-choice","question":"What does \"綺麗**だった**花\" mean?","options":["flowers that **were** beautiful","The deadline was yesterday.","flowers that **are** beautiful","The flowers, **which were so beautiful**, suddenly wilted."],"answer":0} -->
 
 ## Sources
 

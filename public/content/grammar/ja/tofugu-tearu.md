@@ -398,7 +398,7 @@ by Nerida Jarkey
 
 <!-- quiz: {"type":"multiple-choice","question":"What does \"メモ**は**デスクに置い**てある**。\" mean?","options":["The memo is on the desk.","A memo is on the desk.","the memo that is on the desk","The door is open (because someone left it open)."],"answer":0} -->
 
-<!-- quiz: {"type":"multiple-choice","question":"What does \"メモ**が**デスクに置い**てある**。\" mean?","options":["A memo is on the desk.","The memo is on the desk.","The memo is on the desk.","the memo that is on the desk"],"answer":0} -->
+<!-- quiz: {"type":"multiple-choice","question":"What does \"メモ**が**デスクに置い**てある**。\" mean?","options":["A memo is on the desk.","The memo is on the desk.","Someone is putting a memo on the desk.","the memo that is on the desk"],"answer":0} -->
 
 <!-- quiz: {"type":"multiple-choice","question":"What does \"メモ**を**デスクに置い**てある**。\" mean?","options":["The memo is on the desk.","A memo is on the desk.","the memo that is on the desk","The door is open (because someone left it open)."],"answer":0} -->
 

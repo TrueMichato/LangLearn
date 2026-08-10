@@ -394,9 +394,9 @@ by 森田 良行
 (2007)
 pp. 118-132
 
-<!-- quiz: {"type":"multiple-choice","question":"What does \"ピザ屋さん**かもしれない**。\" mean?","options":["It **may** be a pizza delivery person.","It **might** rain.","It **might** be a cat.","It **might** be a cat."],"answer":0} -->
+<!-- quiz: {"type":"multiple-choice","question":"What does \"ピザ屋さん**かもしれない**。\" mean?","options":["It **may** be a pizza delivery person.","It **might** rain.","It **might** be a cat.","It **must** be a pizza delivery person."],"answer":0} -->
 
-<!-- quiz: {"type":"multiple-choice","question":"What does \"雨が降る**かもしれない**。\" mean?","options":["It **might** rain.","It **may** be a pizza delivery person.","It **might** be a cat.","It **might** be a cat."],"answer":0} -->
+<!-- quiz: {"type":"multiple-choice","question":"What does \"雨が降る**かもしれない**。\" mean?","options":["It **might** rain.","It **may** be a pizza delivery person.","It **might** be a cat.","It **will definitely** rain."],"answer":0} -->
 
 <!-- quiz: {"type":"multiple-choice","question":"What does \"ネコ**かもしれない**。\" mean?","options":["It **might** be a cat.","It **may** be a pizza delivery person.","It **might** rain.","It **might have been** a cat."],"answer":0} -->
 

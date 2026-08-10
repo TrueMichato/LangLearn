@@ -317,7 +317,7 @@ by Group Jammassy
 (2015)
 pp. 10-12
 
-<!-- quiz: {"type":"multiple-choice","question":"What does \"コンビニが**ない**。\" mean?","options":["There **is no** convenience store.","There **aren't many** convenience stores.","There **aren't many** convenience stores.","Wow, **not many** convenience stores? So what do you do for your shopping?"],"answer":0} -->
+<!-- quiz: {"type":"multiple-choice","question":"What does \"コンビニが**ない**。\" mean?","options":["There **is no** convenience store.","There **aren't many** convenience stores.","There **are** convenience stores.","Wow, **not many** convenience stores? So what do you do for your shopping?"],"answer":0} -->
 
 <!-- quiz: {"type":"multiple-choice","question":"What does \"**あまり**コンビニが**ない**。\" mean?","options":["There **aren't many** convenience stores.","There **is no** convenience store.","Wow, **not many** convenience stores? So what do you do for your shopping?","I **don't** go shopping. Cuz I buy everything online."],"answer":0} -->
 

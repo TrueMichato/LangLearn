@@ -218,7 +218,7 @@ by Stefan Kaiser, et al.
 (2013)
 pp. 229-233
 
-<!-- quiz: {"type":"multiple-choice","question":"What does \"動物園に行こう！\" mean?","options":["Let's go to the zoo!","Shall we get going to the zoo?","Shall we get going to the zoo?","I'll make the curry."],"answer":0} -->
+<!-- quiz: {"type":"multiple-choice","question":"What does \"動物園に行こう！\" mean?","options":["Let's go to the zoo!","Shall we get going to the zoo?","I went to the zoo.","I'll make the curry."],"answer":0} -->
 
 <!-- quiz: {"type":"multiple-choice","question":"What does \"そろそろ動物園に行こう？\" mean?","options":["Shall we get going to the zoo?","Let's go to the zoo!","I'll make the curry.","Shall I make the curry?"],"answer":0} -->
 

@@ -87,7 +87,7 @@ If the main clause expresses a **fact or certainty**, use the indicative in the 
 - **No sé si viene** — I don't know if he's coming (uncertainty → no trigger, still indicative)
 - **Dudo que venga** — I doubt he's coming (doubt → subjunctive ✓)
 
-<!-- quiz: {"type":"multiple-choice","question":"'Es importante que tú ___ (llegar) a tiempo.' Which form?","options":["llegas","llegues","llegarás","llegarás"],"answer":1} -->
+<!-- quiz: {"type":"multiple-choice","question":"'Es importante que tú ___ (llegar) a tiempo.' Which form?","options":["llegas","llegues","llegarás","llegaste"],"answer":1} -->
 
 <!-- grammar-card: {"rule":"Subjunctive is triggered in que-clauses after WEIRDO expressions (Wish, Emotion, Impersonal, Recommendation, Doubt, Ojalá)","hint":"Ask: does the main clause express desire, emotion, doubt, or a recommendation? If yes → subjunctive","example":"___ que haya paz en el mundo. (Ojalá)","answer":"Ojalá","explanation":"'Ojalá' always triggers the subjunctive. The sentence means 'I hope there will be peace in the world.' Ojalá is one of the most iconic subjunctive triggers in Spanish."} -->
 

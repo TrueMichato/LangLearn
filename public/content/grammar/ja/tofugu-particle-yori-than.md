@@ -235,9 +235,9 @@ by 森田 良行
 (2007)
 p. 274
 
-<!-- quiz: {"type":"multiple-choice","question":"What does \"このイチゴは、あのイチゴ**より**大きい。\" mean?","options":["This strawberry is bigger **than** that strawberry.","This strawberry has grown faster **than** that strawberry.","Tom is taller than Ben.","Tom is taller than Ben."],"answer":0} -->
+<!-- quiz: {"type":"multiple-choice","question":"What does \"このイチゴは、あのイチゴ**より**大きい。\" mean?","options":["This strawberry is bigger **than** that strawberry.","This strawberry has grown faster **than** that strawberry.","Tom is taller than Ben.","That strawberry is bigger **than** this strawberry."],"answer":0} -->
 
-<!-- quiz: {"type":"multiple-choice","question":"What does \"このイチゴは、あのイチゴ**より**速く育っている。\" mean?","options":["This strawberry has grown faster **than** that strawberry.","This strawberry is bigger **than** that strawberry.","Tom is taller than Ben.","Tom is taller than Ben."],"answer":0} -->
+<!-- quiz: {"type":"multiple-choice","question":"What does \"このイチゴは、あのイチゴ**より**速く育っている。\" mean?","options":["This strawberry has grown faster **than** that strawberry.","This strawberry is bigger **than** that strawberry.","Tom is taller than Ben.","That strawberry has grown faster **than** this strawberry."],"answer":0} -->
 
 <!-- quiz: {"type":"multiple-choice","question":"What does \"トム**は**、ベン**より**背が高い。\" mean?","options":["Tom is taller than Ben.","This strawberry is bigger **than** that strawberry.","This strawberry has grown faster **than** that strawberry.","Tom is taller."],"answer":0} -->
 

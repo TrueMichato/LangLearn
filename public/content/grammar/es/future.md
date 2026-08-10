@@ -63,7 +63,7 @@ A dozen common verbs use a shortened or modified stem. The endings are identical
 - **Haremos** la tarea (ah-REH-mos) — We will do the homework
 - **¿Podrás venir?** (poh-DRAHS) — Will you be able to come?
 
-<!-- quiz: {"type":"multiple-choice","question":"What is the yo form of 'hacer' in the futuro simple?","options":["haceré","hacerá","haré","haré"],"answer":2} -->
+<!-- quiz: {"type":"multiple-choice","question":"What is the yo form of 'hacer' in the futuro simple?","options":["haceré","hacerá","haré","haría"],"answer":2} -->
 
 ## Futuro Simple as Conjecture
 

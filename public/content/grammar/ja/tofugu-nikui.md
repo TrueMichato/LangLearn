@@ -112,9 +112,7 @@ pp. 182-183
 
 <!-- quiz: {"type":"multiple-choice","question":"What does \"このフォークは使いにくい。\" mean?","options":["This fork is difficult to use.","My older sister doesn't get car sick easily.","a fork that's difficult to use","a pair of shoes that are difficult to walk with"],"answer":0} -->
 
-<!-- quiz: {"type":"multiple-choice","question":"What does \"このフォークは使いにくい。\" mean?","options":["This fork is difficult to use.","My older sister doesn't get car sick easily.","a fork that's difficult to use","a pair of shoes that are difficult to walk with"],"answer":0} -->
-
-<!-- quiz: {"type":"multiple-choice","question":"What does \"私の姉は車酔いしにくい。\" mean?","options":["My older sister doesn't get car sick easily.","This fork is difficult to use.","This fork is difficult to use.","a fork that's difficult to use"],"answer":0} -->
+<!-- quiz: {"type":"multiple-choice","question":"What does \"私の姉は車酔いしにくい。\" mean?","options":["My older sister doesn't get car sick easily.","This fork is difficult to use.","My older sister gets car sick easily.","a fork that's difficult to use"],"answer":0} -->
 
 <!-- grammar-card: {"rule":"にくい inflects exactly like an い-adjective","hint":"にくい, plain past","example":"雪(ゆき)で道(みち)が歩(ある)き___かった。","answer":"にく","explanation":"歩きにくかった shows にくい taking かった just like any other い-adjective."} -->
 

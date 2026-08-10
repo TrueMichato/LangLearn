@@ -167,7 +167,7 @@ p. 154
 
 <!-- quiz: {"type":"multiple-choice","question":"What does \"難しく**ありません**\" mean?","options":["is not difficult (formal)","That comedian **is not funny**.","A **not-funny comedian** made **not-bitter coffee**.","not delicious (but…)"],"answer":0} -->
 
-<!-- quiz: {"type":"multiple-choice","question":"What does \"あの芸人は**面白くない**。\" mean?","options":["That comedian **is not funny**.","is not difficult (formal)","is not difficult (formal)","A **not-funny comedian** made **not-bitter coffee**."],"answer":0} -->
+<!-- quiz: {"type":"multiple-choice","question":"What does \"あの芸人は**面白くない**。\" mean?","options":["That comedian **is not funny**.","is not difficult (formal)","That comedian **was not** funny.","A **not-funny comedian** made **not-bitter coffee**."],"answer":0} -->
 
 <!-- grammar-card: {"rule":"An い-adjective is negated with くない, never じゃない","hint":"うるさい → ?","example":"そのハエはうるさ___。","answer":"くない","explanation":"うるさくない is correct; うるさいじゃない is not a possible form in Japanese."} -->
 

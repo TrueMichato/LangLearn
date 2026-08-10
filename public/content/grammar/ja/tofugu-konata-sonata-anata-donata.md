@@ -285,7 +285,7 @@ by 金井 勇人
 by 金水 敏 and 田窪 行則
 (1992)
 
-<!-- quiz: {"type":"multiple-choice","question":"What does \"**あなた**のお名前は何ですか？\" mean?","options":["What is **your** name?","Excuse me, may I have your name, please?","Excuse me, may I have your name, please?","I saw a light **far in the distance** across the sand dunes."],"answer":0} -->
+<!-- quiz: {"type":"multiple-choice","question":"What does \"**あなた**のお名前は何ですか？\" mean?","options":["What is **your** name?","Excuse me, may I have your name, please?","What is **that person's** name?","I saw a light **far in the distance** across the sand dunes."],"answer":0} -->
 
 <!-- quiz: {"type":"multiple-choice","question":"What does \"失礼ですが、**どなた**ですか？\" mean?","options":["Excuse me, may I have your name, please?","What is **your** name?","I saw a light **far in the distance** across the sand dunes.","Everyone seemed to be uncomfortable with **this person**'s behavior."],"answer":0} -->
 

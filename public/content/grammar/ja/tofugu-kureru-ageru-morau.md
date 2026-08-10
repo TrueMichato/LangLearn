@@ -490,9 +490,9 @@ by  Yoshihiko Ikegami
 by 大江 三郎
 (1975)
 
-<!-- quiz: {"type":"multiple-choice","question":"What does \"（私が）ジェニーにガムを**あげる**。\" mean?","options":["I **give** gum to Jenny.","Jenny **gives** gum to me.","I **get** gum from Jenny.","I **get** gum from Jenny."],"answer":0} -->
+<!-- quiz: {"type":"multiple-choice","question":"What does \"（私が）ジェニーにガムを**あげる**。\" mean?","options":["I **give** gum to Jenny.","Jenny **gives** gum to me.","I **get** gum from Jenny.","Jenny **gets** gum from me."],"answer":0} -->
 
-<!-- quiz: {"type":"multiple-choice","question":"What does \"ジェニーが（私に）ガムを**くれる**。\" mean?","options":["Jenny **gives** gum to me.","I **give** gum to Jenny.","I **get** gum from Jenny.","I **get** gum from Jenny."],"answer":0} -->
+<!-- quiz: {"type":"multiple-choice","question":"What does \"ジェニーが（私に）ガムを**くれる**。\" mean?","options":["Jenny **gives** gum to me.","I **give** gum to Jenny.","I **get** gum from Jenny.","Jenny **gets** gum from me."],"answer":0} -->
 
 <!-- quiz: {"type":"multiple-choice","question":"What does \"（私が）ジェニーにガムを**もらう**。\" mean?","options":["I **get** gum from Jenny.","I **give** gum to Jenny.","Jenny **gives** gum to me.","I **receive** money from the company."],"answer":0} -->
 
