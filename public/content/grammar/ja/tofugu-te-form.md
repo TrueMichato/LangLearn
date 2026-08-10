@@ -65,7 +65,7 @@ First, let's look at how to turn Japanese verbs into the て forms.
    
    行**く**　→　行**って**
 
-** 来(く)る**　→　** 来て(き　)**
+**来(く)る**　→　 **来て(き　)**
 
 **する**　→　**して**
    

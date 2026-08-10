@@ -57,7 +57,7 @@ The way 〜させる is added to verbs depends on their conjugation group. Here'
   
    **Irregular**
    
-   ** 来る(く　)**　→　** 来させる(こ　　　)**
+   **来る(く　)**　→　 **来させる(こ　　　)**
 
 **する**　→　**させる**
    
@@ -139,7 +139,7 @@ Although many textbooks don't cover this, there is another, shorter causative fo
   
    **Irregular**
    
-   ** 来る(く　)**　→　** 来さす(こ　　)**
+   **来る(く　)**　→　 **来さす(こ　　)**
 
 **する**　→　**さす**
    

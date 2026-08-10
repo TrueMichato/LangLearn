@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef, useCallback, useMemo } from 'react';
 import ReactMarkdown from 'react-markdown';
-import remarkGfm from 'remark-gfm';
+import { LESSON_REMARK_PLUGINS } from '../../lib/markdown-plugins';
 import GrammarQuiz from './GrammarQuiz';
 import LessonCaptureModal from './LessonCaptureModal';
 import { markLessonComplete, incrementAttempts } from '../../db/lessons';
@@ -312,7 +312,7 @@ export default function LessonView({ lang, lessonId, onBack, lessons, onNavigate
           seg.type === 'md' ? (
             <ReactMarkdown
               key={i}
-              remarkPlugins={[remarkGfm]}
+              remarkPlugins={LESSON_REMARK_PLUGINS}
               components={{
                 li: ({ children, ...props }) => {
                   const candidate = matchCandidate(candidatesByLine, nodeText(children));

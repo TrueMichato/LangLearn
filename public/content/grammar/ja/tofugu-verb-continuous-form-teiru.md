@@ -148,7 +148,7 @@ You can also use 〜ている to describe something that's been continuously hap
 
   - 去年から日本語を勉強し**ている**。
 
-  - I**'ve been** study**ing** Japanese since last year.
+  - **I've been studying** Japanese since last year.
 
 Here, ている shows that you activated your Japanese studying mode last year, and you've been in that situation up to the present moment.
 
@@ -176,7 +176,7 @@ Similarly, if you recently got into a natto phase and you've been eating natto o
 
   - 最近よく納豆を食べ**ている**。
 
-  - I**'ve been** eat**ing** natto a lot lately.
+  - **I've been eating** natto a lot lately.
 
 In this example, 〜ている is the perfect choice to show you're in a natto phase.
 
@@ -256,13 +256,13 @@ Let's take a look at one last verb that works like this. The verb 疲れる mean
 
   - 今日はとても疲れ**ている**。
 
-  - I**'m** very tired today.
+  - **I'm** very tired today.
 
 Here, 〜ている suggests you are in the activated state of "being tired." If you want to emphasize the change of getting tired rather than your current state of being tired, you could use the た form of the verb instead. For example, if you've just finished a lot of work and you suddenly feel tired, you'd say:
 
   - あー、疲れ**た**！
 
-  - Ah, I**'m** tired.
+  - Ah, **I'm** tired.
 
 In this case, the closest English translation is "I'm tired" but what it really means is "Ah, that tired me out!"
 
@@ -339,7 +339,7 @@ However, some dialects, such as the Kansai dialect, use いてる to describe ex
 
  Kansai dialect: 待ってる間、あそこのカフェに**いてる**わ！
 
-  - I**'ll be** at that cafe while waiting for you.
+  - **I'll be** at that cafe while waiting for you.
 
 Speakers of the Kansai dialect perceive temporary existence at a certain location as an activated state you have control over. In other words, you can decide to be there or not. So it takes 〜ている. On the other hand, speakers of the Kanto dialect, a.k.a. standard Japanese, don't distinguish between temporary existence and general existence, so they use いる, and not いてる.
 

@@ -110,11 +110,11 @@ It is common to use 〜くない to ask questions that you think you know the an
 
   - 寒**くない？**
 
-  - **Isn't it** cold**?**
+  - **Isn't it** cold?
 
   - 高**くない？**
 
-  - **Isn't it** expensive**?**
+  - **Isn't it** expensive?
 
 ## Common Mistakes
 

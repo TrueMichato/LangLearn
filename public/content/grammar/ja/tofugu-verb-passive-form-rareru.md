@@ -55,9 +55,9 @@ You'll see on this page that the Japanese passive is not exactly the same as the
   
    **Irregular**
    
-    **来る**(く　)　→　 **来られる**(こ　　　)
+   **来る**(く　)　→　 **来られる**(こ　　　)
 
-**する　**→　**される**
+**する**　→　**される**
    
   
 

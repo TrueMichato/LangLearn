@@ -55,7 +55,7 @@ The command form conjugates differently depending on the type of verbs you use.
   
    **Irregular**
    
-   ** 来る(く　)**　→　** 来い(こ　)**
+   **来る(く　)**　→　 **来い(こ　)**
 
 **する**　→　**しろ**
 
@@ -93,7 +93,7 @@ There are only three irregular verbs when it comes to the command form. The firs
 
 > 
 > 
-> ** 来る(く　)**　→　** 来い(こ　)**
+>  **来る(く　)**　→　 **来い(こ　)**
 > 
 > **する**　→　**しろ**
 > 

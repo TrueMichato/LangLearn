@@ -56,7 +56,7 @@ To begin, let's examine how 〜れる is added to a verb. Depending on the verb'
   
    **Irregular**
    
-   ** 来る(く　)**　→　** 来られる(こ　　　)** (** 来れる(こ　　)**)
+   **来る(く　)**　→　 **来られる(こ　　　)** ( **来れる(こ　　)**)
 
 **する**　→　**できる**
    

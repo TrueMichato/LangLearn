@@ -96,7 +96,7 @@ We call this use "nominalization" since it turns non-nouns into nouns. We won't 
 
 ### Isn't の the Japanese Possessive?
 
-You might think of particle の like Japanese equivalent of the possessive **'s** ending in English, as in Tom**'s** car of Granny**'s** kittens. However, the label maker is really a better way to think of particle の, since the relationship between the label and the noun can result in various different interpretations. For example, let's say your friend has a book recommendation:
+You might think of particle の like Japanese equivalent of the possessive **'s** ending in English, as in **Tom's** car of **Granny's** kittens. However, the label maker is really a better way to think of particle の, since the relationship between the label and the noun can result in various different interpretations. For example, let's say your friend has a book recommendation:
 
   - バナナの本、面白いよ。
 

@@ -149,7 +149,7 @@ The following table lists some examples of different verb forms that *can* be us
   
    Plain Form
    
-    暑(あつ)**いわ**。
+   暑(あつ)**いわ**。
    
    It's hot.
    
@@ -157,7 +157,7 @@ The following table lists some examples of different verb forms that *can* be us
   
    かった Form (Past tense)
    
-    暑(あつ)**かったわ**。
+   暑(あつ)**かったわ**。
    
    It was hot.
    
@@ -165,7 +165,7 @@ The following table lists some examples of different verb forms that *can* be us
   
    くない Form (Negative)
    
-    暑(あつ)**くないわ**。
+   暑(あつ)**くないわ**。
    
    It's not hot.
    
@@ -186,7 +186,7 @@ With a な-adjective, you insert the affirmative だ or its different forms and 
   
    Plain Form
    
-    静(しず)か**だわ**。
+   静(しず)か**だわ**。
    
    It's quiet.
    
@@ -194,7 +194,7 @@ With a な-adjective, you insert the affirmative だ or its different forms and 
   
    だった Form (Past tense)
    
-    静(しず)か**だったわ**。
+   静(しず)か**だったわ**。
    
    It was quiet.
    
@@ -202,7 +202,7 @@ With a な-adjective, you insert the affirmative だ or its different forms and 
   
    じゃない Form (Negative)
    
-    静(しず)か**じゃないわ**。
+   静(しず)か**じゃないわ**。
    
    It isn't quiet.
    
@@ -223,7 +223,7 @@ With a noun, you also insert the affirmative だ or its different forms and add 
   
    Plain Form
    
-    猫(ねこ)**だわ**。
+   猫(ねこ)**だわ**。
    
    It's a cat.
    
@@ -231,7 +231,7 @@ With a noun, you also insert the affirmative だ or its different forms and add 
   
    だった Form (Past tense)
    
-    猫(ねこ)**だったわ**。
+   猫(ねこ)**だったわ**。
    
    It was a cat.
    
@@ -239,7 +239,7 @@ With a noun, you also insert the affirmative だ or its different forms and add 
   
    じゃない Form (Negative)
    
-    猫(ねこ)**じゃないわ**。
+   猫(ねこ)**じゃないわ**。
    
    It isn't cat.
    

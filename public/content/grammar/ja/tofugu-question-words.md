@@ -522,13 +522,13 @@ Although どこも is listed above, it can occasionally be used in positive sent
 And then there are question words that work in both negative and positive sentences:
 
   
-    **Question Word + も**
-    **In a Positive Sentence**
-    **In a Negative Sentence**
+   **Question Word + も**
+   **In a Positive Sentence**
+   **In a Negative Sentence**
   
 
   
-    どれも
+   どれも
 どっちも
 どちらも
 
@@ -625,11 +625,11 @@ Like the combination of question words and も, some other words and particles c
 
 When you want to ask a specific question like "what time" or "how many people," you can use 何 (what) as a prefix.
 
-  - ** 何時(なんじ)**に食べましたか？
+  -  **何時(なんじ)**に食べましたか？
 
   - **What time** did you eat?
 
-  - この車は** 何人(なんにん)**乗れますか？
+  - この車は **何人(なんにん)**乗れますか？
 
   - How many people can fit in this car?
 
@@ -637,11 +637,11 @@ When it's paired up with a counter and used for asking a *number*, like "what ti
 
 Let's take a look at another example. As you may know, Japan has forty-seven prefectures, and most of the prefectures use 〜県 at the end of the name to mean "〜 prefecture."
 
-  - ** 何県(なにけん)**に行きましたか？
+  -  **何県(なにけん)**に行きましたか？
 
   - **What prefecture(s)** did you go to?
 
-  - ** 何県(なんけん)**に行きましたか？
+  -  **何県(なんけん)**に行きましたか？
 
   - **How many prefectures** did you go to?
 

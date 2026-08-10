@@ -59,7 +59,7 @@ Thus, in this post, we'll focus on how to change  Japanese verbs, which end in �
   
    **Irregular**
    
-   ** 来る(く　)**　→　** 来(き)**
+   **来る(く　)**　→　 **来(き)**
 
 **する**　→　**し**
    

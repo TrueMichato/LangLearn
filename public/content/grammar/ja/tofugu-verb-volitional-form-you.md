@@ -64,9 +64,9 @@ Let's start off by looking at how 〜よう is added to a verb. Depending on the
   
    **Irregular**
    
-    **来る**(く　)　→　 **来よう**(こ　　)
+   **来る**(く　)　→　 **来よう**(こ　　)
 
-**する　**→　**しよう**
+**する**　→　**しよう**
    
   
 

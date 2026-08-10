@@ -86,7 +86,7 @@ You've seen in a previous example that the plain present form can be used to des
 
 What else can the plain present form of Japanese verbs describe? Well, just like the present tense in English it's used to state facts or generalizations, such as scientific facts, general truths, or definitions, like:
 
-  - 水は100度で** 沸騰(ふっとう)する**。
+  - 水は100度で **沸騰(ふっとう)する**。
 
   - Water **boils** at 100 celsius.
 

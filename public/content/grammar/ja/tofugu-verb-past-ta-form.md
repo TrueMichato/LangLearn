@@ -63,7 +63,7 @@ The suffix 〜た puts a plain form verb into the past tense. It tells us that t
    
    行**く**　→　行**った**
 
-** 来る(く　)**　→　** 来た(き　)**
+**来る(く　)**　→　 **来た(き　)**
 
 **する**　→　**した**
    

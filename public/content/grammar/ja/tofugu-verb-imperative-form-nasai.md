@@ -45,7 +45,7 @@ To connect 〜なさい to a verb, you'll need to use the stem form of the verb.
    **Irregular**
    
    **する**　=　**しなさい**
-** 来る(く　)　=　 来なさい(き　　　)**
+**来る(く　)　=　 来なさい(き　　　)**
    
   
 

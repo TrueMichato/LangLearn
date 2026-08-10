@@ -53,7 +53,7 @@ When 〜ない appears on the end of a verb, it means it is in the negative plai
   
    **Irregular**
    
-    **来る**(く　)　→　 **来ない**(こ　　)
+   **来る**(く　)　→　 **来ない**(こ　　)
 
 **する**　→　**しない**
 

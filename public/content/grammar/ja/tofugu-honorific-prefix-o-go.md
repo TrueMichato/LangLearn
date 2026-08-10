@@ -34,13 +34,13 @@ There is no hard-and-fast rule as to which words do and don't use 御, so to a c
 
 > 
 > 
-> ** 御(お)** +  箸(はし) (chopsticks) = **御**箸 (polite way to say "chopsticks")
+>  **御(お)** +  箸(はし) (chopsticks) = **御**箸 (polite way to say "chopsticks")
 > 
 > 
 
 > 
 > 
-> ** 御(ご)** +  家族(かぞく) (family) = **御**家族 (respectful way to say "family")
+>  **御(ご)** +  家族(かぞく) (family) = **御**家族 (respectful way to say "family")
 > 
 > 
 
@@ -154,7 +154,7 @@ As you can see, お is almost always written in hiragana, though you may occasio
 
 For example, if you are at a specialist chopsticks store, you may see お箸 (chopsticks) labeled as 御箸, as this adds a feeling of formality and elegance. And if you are writing a thank you letter to customers, お礼 (appreciation) may be written 御礼 as in:
 
-  -  平素(へいそ)は 格別(かくべつ)のご 高配(こうはい)を 賜(たまわ)り、 厚(あつ)く** 御礼(おれい)** 申(もう)し 上(あ)げます。
+  -  平素(へいそ)は 格別(かくべつ)のご 高配(こうはい)を 賜(たまわ)り、 厚(あつ)く **御礼(おれい)** 申(もう)し 上(あ)げます。
 
   - We would like to express our sincere gratitude for your continued support.
 
@@ -212,7 +212,7 @@ In formal spoken Japanese, 御 is pronounced as おん when the word it's attach
 
 御礼 is normally read as おれい but can be read as おんれい as well. So, 御礼 in the earlier example can be read either おれい or おんれい:
 
-  -  平素(へいそ)は 格別(かくべつ)のご 高配(こうはい)を 賜(たまわ)り、 厚(あつ)く** 御礼(おんれい)** 申(もう)し 上(あ)げます。
+  -  平素(へいそ)は 格別(かくべつ)のご 高配(こうはい)を 賜(たまわ)り、 厚(あつ)く **御礼(おんれい)** 申(もう)し 上(あ)げます。
 
   - We would like to express our sincere gratitude for your continued support.
 

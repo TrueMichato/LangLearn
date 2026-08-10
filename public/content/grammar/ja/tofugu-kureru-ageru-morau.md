@@ -309,21 +309,21 @@ There are different versions of くれる, あげる, and もらう with differe
 
   
     
-    < CasualPolite >
+   < CasualPolite >
   
   
-    ** to give (someone)**
-    やる
-    あげる
-    差し上げる
+   **to give (someone)**
+   やる
+   あげる
+   差し上げる
   
   
-    ** to give (me/us)**
-    くれる
-    くださる
+   **to give (me/us)**
+   くれる
+   くださる
   
   
-    ** to receive
+   **to receive
 (from someone)**
     もらう
     いただく

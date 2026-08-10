@@ -55,7 +55,7 @@ The suffix 〜ば puts verbs into the conditional form. In other words, it adds 
   
    **Irregular**
    
-    来**る**(く　)　→　 来**れば**(く　　)
+   来**る**(く　)　→　 来**れば**(く　　)
 
 す**る**　→　す**れば**
    

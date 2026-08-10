@@ -78,9 +78,9 @@ Now let's look at how to form sentences with だろう. It can come after nouns,
    
   
   
-   I assume it is clean**.**
+   I assume it is clean.
    
-   I assume it is not clean.** **
+   I assume it is not clean.
    
   
 
