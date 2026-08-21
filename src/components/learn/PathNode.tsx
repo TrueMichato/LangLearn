@@ -4,6 +4,8 @@ import type { LearningPathNode as LearningPathNodeModel } from '../../types/lear
 interface Props {
   node: LearningPathNodeModel;
   isLast: boolean;
+  position: number;
+  nextPosition?: number;
 }
 
 const KIND_DETAILS = {
@@ -14,7 +16,7 @@ const KIND_DETAILS = {
 
 function nodeClasses(node: LearningPathNodeModel): string {
   const base =
-    'group relative flex min-h-[56px] w-full items-center gap-3 rounded-xl px-2 py-2 text-left focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 focus-visible:ring-offset-2 dark:focus-visible:ring-offset-slate-800';
+    'group relative z-10 flex min-h-[56px] items-center gap-3 rounded-xl px-2 py-2 text-left focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 focus-visible:ring-offset-2 dark:focus-visible:ring-offset-slate-800';
 
   if (node.state === 'available') {
     return `${base} bg-indigo-50 text-indigo-950 hover:bg-indigo-100 dark:bg-indigo-500/10 dark:text-indigo-100 dark:hover:bg-indigo-500/15 press-feedback`;
@@ -79,20 +81,42 @@ function Body({ node }: { node: LearningPathNodeModel }) {
   );
 }
 
-export default function PathNode({ node, isLast }: Props) {
+const POSITION_CLASSES = ['mr-14', 'mx-7', 'ml-14'] as const;
+const POSITION_OFFSET = [0, 28, 56] as const;
+
+export default function PathNode({
+  node,
+  isLast,
+  position,
+  nextPosition,
+}: Props) {
+  const positionClass = POSITION_CLASSES[position] ?? POSITION_CLASSES[0];
+  const startX = (POSITION_OFFSET[position] ?? 0) + 22;
+  const endX =
+    (POSITION_OFFSET[nextPosition ?? position] ?? POSITION_OFFSET[position] ?? 0) +
+    22;
+
   return (
     <li className="relative">
       {!isLast && (
-        <span
+        <svg
           aria-hidden="true"
-          className="absolute bottom-[-0.5rem] left-[1.84rem] top-[2.75rem] w-px bg-slate-200 dark:bg-slate-700"
-        />
+          className="pointer-events-none absolute left-0 top-[2.75rem] z-0 h-8 w-full overflow-visible text-slate-200 dark:text-slate-700"
+          preserveAspectRatio="none"
+        >
+          <path
+            d={`M ${startX} 0 C ${startX} 16, ${endX} 16, ${endX} 32`}
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="1.5"
+          />
+        </svg>
       )}
       {node.state === 'locked' ? (
         <button
           type="button"
           disabled
-          className={nodeClasses(node)}
+          className={`${nodeClasses(node)} ${positionClass}`}
           aria-label={`${node.title}, locked`}
         >
           <Body node={node} />
@@ -100,7 +124,7 @@ export default function PathNode({ node, isLast }: Props) {
       ) : (
         <Link
           to={node.route}
-          className={nodeClasses(node)}
+          className={`${nodeClasses(node)} ${positionClass}`}
           aria-current={node.state === 'available' ? 'step' : undefined}
         >
           <Body node={node} />

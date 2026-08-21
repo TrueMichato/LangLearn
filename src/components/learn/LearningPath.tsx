@@ -29,12 +29,16 @@ export default function LearningPath({ path }: Props) {
         </p>
       </div>
 
-      <div className="space-y-4">
-        {path.units.map((unit) => (
+      <div className="rounded-2xl border border-slate-200/70 bg-white shadow-sm dark:border-white/10 dark:bg-slate-800">
+        {path.units.map((unit, unitIndex) => (
           <section
             key={unit.id}
             aria-labelledby={`path-unit-${unit.id}`}
-            className="rounded-2xl border border-slate-200/70 bg-white p-4 shadow-sm dark:border-white/10 dark:bg-slate-800"
+            className={`p-4 ${
+              unitIndex > 0
+                ? 'border-t border-slate-200/70 dark:border-white/10'
+                : ''
+            }`}
           >
             <h4
               id={`path-unit-${unit.id}`}
@@ -51,6 +55,10 @@ export default function LearningPath({ path }: Props) {
                   key={node.id}
                   node={node}
                   isLast={index === unit.nodes.length - 1}
+                  position={index % 3}
+                  nextPosition={
+                    index < unit.nodes.length - 1 ? (index + 1) % 3 : undefined
+                  }
                 />
               ))}
             </ol>
