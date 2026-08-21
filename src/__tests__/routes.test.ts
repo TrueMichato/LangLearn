@@ -3,10 +3,14 @@ import {
   ROUTES,
   ROUTE_PATTERNS,
   grammarLessonRoute,
+  grammarTestOutRoute,
   guidedLettersRoute,
   isKnownRoute,
   lettersRoute,
   vocabLessonRoute,
+  vocabTestOutRoute,
+  LESSON_QUERY_PARAM,
+  TEST_OUT_QUERY_PARAM,
 } from '../lib/routes';
 import { pickNextFocus } from '../lib/next-focus';
 
@@ -35,6 +39,11 @@ describe('isKnownRoute', () => {
     expect(isKnownRoute(grammarLessonRoute('particles'))).toBe(true);
     expect(isKnownRoute(vocabLessonRoute('days-months'))).toBe(true);
     expect(isKnownRoute(guidedLettersRoute('ar', 'Vowels & Marks (Ḥarakāt)'))).toBe(true);
+  });
+
+  it('resolves test-out deep links on the existing lesson-browser routes', () => {
+    expect(isKnownRoute(grammarTestOutRoute('verb-forms'))).toBe(true);
+    expect(isKnownRoute(vocabTestOutRoute('days-months'))).toBe(true);
   });
 
   it('rejects the nested path that used to render a blank page', () => {
@@ -97,5 +106,25 @@ describe('next-focus routes resolve', () => {
       const cta = pickNextFocus(input);
       if (cta) expect(isKnownRoute(cta.route)).toBe(true);
     }
+  });
+});
+
+describe('test-out deep links', () => {
+  // These are query-param deep links on the *existing* Grammar/Vocabulary
+  // routes, not new path routes — any caller (learning path, a study
+  // suggestion) can point straight at a test-out attempt without either
+  // page gaining a route to keep in sync.
+  it('build a testOut query param on the existing grammar/vocab-lessons paths', () => {
+    expect(grammarTestOutRoute('verb-forms')).toBe(`${ROUTES.grammar}?${TEST_OUT_QUERY_PARAM}=verb-forms`);
+    expect(vocabTestOutRoute('days-months')).toBe(`${ROUTES.vocabLessons}?${TEST_OUT_QUERY_PARAM}=days-months`);
+  });
+
+  it('encodes lesson ids that need it', () => {
+    expect(grammarTestOutRoute('a/b')).toBe(`${ROUTES.grammar}?${TEST_OUT_QUERY_PARAM}=a%2Fb`);
+  });
+
+  it('uses a distinct query param from the plain lesson deep link', () => {
+    expect(TEST_OUT_QUERY_PARAM).not.toBe(LESSON_QUERY_PARAM);
+    expect(grammarLessonRoute('verb-forms')).not.toBe(grammarTestOutRoute('verb-forms'));
   });
 });

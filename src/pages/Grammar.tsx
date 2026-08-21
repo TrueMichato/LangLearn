@@ -1,11 +1,14 @@
 import { useState, useEffect } from 'react';
 import { useCurrentLanguage } from '../hooks/useCurrentLanguage';
 import LanguagePicker from '../components/common/LanguagePicker';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, useSearchParams } from 'react-router-dom';
 import LessonView from '../components/grammar/LessonView';
+import LessonAssessment from '../components/assessment/LessonAssessment';
 import { getLessonProgress } from '../db/lessons';
 import type { LessonProgress } from '../db/schema';
 import { SkeletonList } from '../components/common/Skeleton';
+import { computeTestOutRange } from '../lib/lesson-assessment';
+import { LESSON_QUERY_PARAM, TEST_OUT_QUERY_PARAM, grammarTestOutRoute, ROUTES } from '../lib/routes';
 
 interface LessonMeta {
   id: string;
@@ -17,51 +20,99 @@ interface LessonMeta {
 
 export default function GrammarPage() {
   const navigate = useNavigate();
+  const [searchParams] = useSearchParams();
   const { language, setLanguage, options } = useCurrentLanguage();
   const selectedLang = language ?? 'ja';
   const [lessons, setLessons] = useState<LessonMeta[]>([]);
-  const [loading, setLoading] = useState(true);
+  const [loadedLanguage, setLoadedLanguage] = useState('');
   const [activeLessonId, setActiveLessonId] = useState<string | null>(null);
   const [progress, setProgress] = useState<Map<string, LessonProgress>>(new Map());
+  const [progressLanguage, setProgressLanguage] = useState('');
   const [collapsedGroups, setCollapsedGroups] = useState<Set<string>>(new Set());
+  const testOutTarget = searchParams.get(TEST_OUT_QUERY_PARAM);
+  const requestedLessonId = searchParams.get(LESSON_QUERY_PARAM);
+  const displayedLessonId = activeLessonId ?? requestedLessonId;
+  const loading = loadedLanguage !== selectedLang;
 
   // Load lesson progress whenever language changes or returning from a lesson
   useEffect(() => {
-    if (activeLessonId) return;
+    if (displayedLessonId) return;
     getLessonProgress(selectedLang).then((items) => {
       const map = new Map<string, LessonProgress>();
       for (const item of items) map.set(item.lessonId, item);
       setProgress(map);
+      setProgressLanguage(selectedLang);
     });
-  }, [selectedLang, activeLessonId]);
+  }, [selectedLang, displayedLessonId, testOutTarget]);
 
   useEffect(() => {
-    setLoading(true);
-    fetch(`${import.meta.env.BASE_URL}content/grammar/${selectedLang}/index.json`)
+    const controller = new AbortController();
+    fetch(`${import.meta.env.BASE_URL}content/grammar/${selectedLang}/index.json`, {
+      signal: controller.signal,
+    })
       .then((res) => (res.ok ? res.json() : []))
       .then((data: LessonMeta[]) => {
         setLessons(data.sort((a, b) => a.order - b.order));
-        setLoading(false);
+        setLoadedLanguage(selectedLang);
       })
-      .catch(() => {
+      .catch((error: unknown) => {
+        if (error instanceof DOMException && error.name === 'AbortError') return;
         setLessons([]);
-        setLoading(false);
+        setLoadedLanguage(selectedLang);
       });
+    return () => controller.abort();
   }, [selectedLang]);
 
-  if (activeLessonId) {
+  const exitToLessons = () => {
+    navigate(ROUTES.grammar, { replace: true });
+    setActiveLessonId(null);
+  };
+
+  if (displayedLessonId) {
     return (
       <LessonView
         // Remount per lesson: navigating between lessons otherwise carries the
         // previous lesson's quiz score and completion state into the next one.
-        key={`${selectedLang}/${activeLessonId}`}
+        key={`${selectedLang}/${displayedLessonId}`}
         lang={selectedLang}
-        lessonId={activeLessonId}
-        onBack={() => setActiveLessonId(null)}
+        lessonId={displayedLessonId}
+        onBack={exitToLessons}
         lessons={lessons}
         onNavigate={(id) => setActiveLessonId(id)}
       />
     );
+  }
+
+  if (testOutTarget && !loading && progressLanguage === selectedLang) {
+    // The "Core Lessons" list is the sequential, single track that test-out
+    // ranges are computed against — grouped (Tofugu) lessons have no lock
+    // order to skip ahead of.
+    const originalLessons = lessons.filter((l) => !l.group);
+    const completedIds = new Set(
+      [...progress.values()].filter((p) => p.completed).map((p) => p.lessonId),
+    );
+    const range = computeTestOutRange(originalLessons, completedIds, testOutTarget);
+    if (range && range.length > 0) {
+      const titleById = new Map(lessons.map((l) => [l.id, l.title]));
+      return (
+        <LessonAssessment
+          key={`test-out/${testOutTarget}`}
+          lang={selectedLang}
+          kind="grammar"
+          lessons={range.map((id) => ({ id, title: titleById.get(id) ?? id }))}
+          onExit={exitToLessons}
+          onPassed={() => {
+            getLessonProgress(selectedLang).then((items) => {
+              const map = new Map<string, LessonProgress>();
+              for (const item of items) map.set(item.lessonId, item);
+              setProgress(map);
+            });
+          }}
+        />
+      );
+    }
+    // Nothing valid to test out of (already completed, or a bad link) —
+    // fall through to the normal lesson browser instead of a dead end.
   }
 
   return (
@@ -131,51 +182,60 @@ export default function GrammarPage() {
                 });
               };
 
-              const renderLesson = (lesson: LessonMeta, locked: boolean) => {
+              const renderLesson = (lesson: LessonMeta, locked: boolean, showTestOut: boolean) => {
                 const lp = progress.get(lesson.id);
                 return (
-                  <button
-                    key={lesson.id}
-                    disabled={locked}
-                    onClick={() => !locked && setActiveLessonId(lesson.id)}
-                    className={`w-full text-left bg-white dark:bg-slate-800 rounded-2xl shadow p-4 transition-all duration-200 border ${
-                      locked
-                        ? 'opacity-50 cursor-not-allowed border-slate-200 dark:border-slate-700'
-                        : lp?.completed
-                          ? 'border-green-300 dark:border-green-800/60 hover:-translate-y-0.5 hover:shadow-md press-feedback'
-                          : 'border-slate-200/70 dark:border-white/10 hover:-translate-y-0.5 hover:shadow-md press-feedback'
-                    }`}
-                  >
-                    <div className="flex items-center justify-between">
-                      <div className="min-w-0 flex-1">
-                        <p className="font-medium text-slate-800 dark:text-slate-100">{lesson.title}</p>
-                        <div className="flex items-center gap-2 mt-1">
-                          <p className="text-xs text-slate-500 dark:text-slate-400">
-                            Lesson {lesson.order}
-                          </p>
-                          {lesson.source === 'tofugu' && (
-                            <span className="text-xs font-medium text-slate-600 dark:text-slate-300 bg-slate-100 dark:bg-slate-700 rounded-full px-1.5 py-0.5">
-                              Tofugu
-                            </span>
+                  <div key={lesson.id}>
+                    <button
+                      disabled={locked}
+                      onClick={() => !locked && setActiveLessonId(lesson.id)}
+                      className={`w-full text-left bg-white dark:bg-slate-800 rounded-2xl shadow p-4 transition-all duration-200 border ${
+                        locked
+                          ? 'opacity-50 cursor-not-allowed border-slate-200 dark:border-slate-700'
+                          : lp?.completed
+                            ? 'border-green-300 dark:border-green-800/60 hover:-translate-y-0.5 hover:shadow-md press-feedback'
+                            : 'border-slate-200/70 dark:border-white/10 hover:-translate-y-0.5 hover:shadow-md press-feedback'
+                      }`}
+                    >
+                      <div className="flex items-center justify-between">
+                        <div className="min-w-0 flex-1">
+                          <p className="font-medium text-slate-800 dark:text-slate-100">{lesson.title}</p>
+                          <div className="flex items-center gap-2 mt-1">
+                            <p className="text-xs text-slate-500 dark:text-slate-400">
+                              Lesson {lesson.order}
+                            </p>
+                            {lesson.source === 'tofugu' && (
+                              <span className="text-xs font-medium text-slate-600 dark:text-slate-300 bg-slate-100 dark:bg-slate-700 rounded-full px-1.5 py-0.5">
+                                Tofugu
+                              </span>
+                            )}
+                          </div>
+                        </div>
+                        <div className="flex items-center gap-2 ml-2">
+                          {locked ? (
+                            <span className="text-lg">🔒</span>
+                          ) : lp?.completed ? (
+                            <>
+                              <span className="text-xs font-medium text-indigo-600 dark:text-indigo-400 bg-indigo-50 dark:bg-indigo-950 rounded-full px-2 py-0.5">
+                                {lp.quizScore}%
+                              </span>
+                              <span className="w-6 h-6 rounded-full bg-green-100 dark:bg-green-900/40 flex items-center justify-center text-green-600 dark:text-green-400 text-xs font-bold">✓</span>
+                            </>
+                          ) : (
+                            <span className="text-xs text-slate-500 dark:text-slate-400">Not started</span>
                           )}
                         </div>
                       </div>
-                      <div className="flex items-center gap-2 ml-2">
-                        {locked ? (
-                          <span className="text-lg">🔒</span>
-                        ) : lp?.completed ? (
-                          <>
-                            <span className="text-xs font-medium text-indigo-600 dark:text-indigo-400 bg-indigo-50 dark:bg-indigo-950 rounded-full px-2 py-0.5">
-                              {lp.quizScore}%
-                            </span>
-                            <span className="w-6 h-6 rounded-full bg-green-100 dark:bg-green-900/40 flex items-center justify-center text-green-600 dark:text-green-400 text-xs font-bold">✓</span>
-                          </>
-                        ) : (
-                          <span className="text-xs text-slate-500 dark:text-slate-400">Not started</span>
-                        )}
-                      </div>
-                    </div>
-                  </button>
+                    </button>
+                    {showTestOut && !lp?.completed && (
+                      <button
+                        onClick={() => navigate(grammarTestOutRoute(lesson.id))}
+                        className="mt-1 inline-flex min-h-[44px] items-center text-xs font-medium text-indigo-600 dark:text-indigo-400 hover:underline press-feedback"
+                      >
+                        Know this already? Test out →
+                      </button>
+                    )}
+                  </div>
                 );
               };
 
@@ -190,7 +250,7 @@ export default function GrammarPage() {
                       {originalLessons.map((lesson) => {
                         const prevLesson = originalLessons.find((l) => l.order === lesson.order - 1);
                         const isLocked = lesson.order > 1 && !progress.get(prevLesson?.id ?? '')?.completed;
-                        return renderLesson(lesson, isLocked);
+                        return renderLesson(lesson, isLocked, true);
                       })}
                     </div>
                   )}
@@ -225,7 +285,7 @@ export default function GrammarPage() {
                         </button>
                         {!isCollapsed && (
                           <div className="space-y-3 mt-2">
-                            {groupLessons.map((lesson) => renderLesson(lesson, false))}
+                            {groupLessons.map((lesson) => renderLesson(lesson, false, false))}
                           </div>
                         )}
                       </div>

@@ -50,12 +50,36 @@ export function guidedLettersRoute(lang: string, alphabet?: string): string {
   return `${lettersRoute(lang)}?${params.toString()}`;
 }
 
+/**
+ * Query-param names the lesson browsers read on `ROUTES.grammar` and
+ * `ROUTES.vocabLessons`. These are deep links on the *existing* routes
+ * rather than new paths, so any caller — the learning path, a study
+ * suggestion, a future feature — can jump straight into a specific lesson
+ * or straight into a test-out attempt without either page gaining a new
+ * route to keep in sync.
+ */
+export const LESSON_QUERY_PARAM = 'lesson';
+export const TEST_OUT_QUERY_PARAM = 'testOut';
+
 export function grammarLessonRoute(lessonId: string): string {
-  return `${ROUTES.grammar}?lesson=${encodeURIComponent(lessonId)}`;
+  return `${ROUTES.grammar}?${LESSON_QUERY_PARAM}=${encodeURIComponent(lessonId)}`;
 }
 
 export function vocabLessonRoute(lessonId: string): string {
-  return `${ROUTES.vocabLessons}?lesson=${encodeURIComponent(lessonId)}`;
+  return `${ROUTES.vocabLessons}?${LESSON_QUERY_PARAM}=${encodeURIComponent(lessonId)}`;
+}
+
+/**
+ * Deep link that opens Grammar with a test-out attempt already selected,
+ * running from the learner's next incomplete lesson through `uptoLessonId`.
+ */
+export function grammarTestOutRoute(uptoLessonId: string): string {
+  return `${ROUTES.grammar}?${TEST_OUT_QUERY_PARAM}=${encodeURIComponent(uptoLessonId)}`;
+}
+
+/** Same as {@link grammarTestOutRoute}, for the Vocabulary lesson browser. */
+export function vocabTestOutRoute(uptoLessonId: string): string {
+  return `${ROUTES.vocabLessons}?${TEST_OUT_QUERY_PARAM}=${encodeURIComponent(uptoLessonId)}`;
 }
 
 function patternToRegExp(pattern: string): RegExp {

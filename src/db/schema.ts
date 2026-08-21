@@ -71,6 +71,17 @@ export interface LessonProgress {
   quizScore: number; // 0-100 percentage
   completedAt: string; // ISO date
   attempts: number;
+  /**
+   * How this lesson came to be completed. Non-indexed on purpose — it is
+   * read only when displaying a single lesson's own progress row, never
+   * queried across the table, so it doesn't earn a place in `.stores()` and
+   * doesn't force a schema version bump.
+   *
+   * Rows written before this field existed have it as `undefined`. Treat a
+   * missing value as `'lesson'` (normal completion) everywhere it's read —
+   * never assume `'tested-out'` for legacy rows.
+   */
+  completionMethod?: 'lesson' | 'tested-out';
 }
 
 export interface CharacterProgress {
