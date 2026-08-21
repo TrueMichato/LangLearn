@@ -1,5 +1,13 @@
 import { describe, it, expect } from 'vitest';
-import { ROUTES, ROUTE_PATTERNS, isKnownRoute, lettersRoute } from '../lib/routes';
+import {
+  ROUTES,
+  ROUTE_PATTERNS,
+  grammarLessonRoute,
+  guidedLettersRoute,
+  isKnownRoute,
+  lettersRoute,
+  vocabLessonRoute,
+} from '../lib/routes';
 import { pickNextFocus } from '../lib/next-focus';
 
 const SOURCES = import.meta.glob('../**/*.{ts,tsx}', {
@@ -24,6 +32,9 @@ describe('isKnownRoute', () => {
   it('ignores query strings and fragments', () => {
     expect(isKnownRoute('/review?deck=mistakes')).toBe(true);
     expect(isKnownRoute('/review#top')).toBe(true);
+    expect(isKnownRoute(grammarLessonRoute('particles'))).toBe(true);
+    expect(isKnownRoute(vocabLessonRoute('days-months'))).toBe(true);
+    expect(isKnownRoute(guidedLettersRoute('ar', 'Vowels & Marks (Ḥarakāt)'))).toBe(true);
   });
 
   it('rejects the nested path that used to render a blank page', () => {

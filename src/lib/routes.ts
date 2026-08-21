@@ -44,8 +44,18 @@ export function lettersRoute(lang: string): string {
  * wrong first impression for someone who has never seen the script. The
  * on-ramp links here instead, so "Learn the letters" opens the guided flow.
  */
-export function guidedLettersRoute(lang: string): string {
-  return `${lettersRoute(lang)}?mode=learn`;
+export function guidedLettersRoute(lang: string, alphabet?: string): string {
+  const params = new URLSearchParams({ mode: 'learn' });
+  if (alphabet) params.set('alphabet', alphabet);
+  return `${lettersRoute(lang)}?${params.toString()}`;
+}
+
+export function grammarLessonRoute(lessonId: string): string {
+  return `${ROUTES.grammar}?lesson=${encodeURIComponent(lessonId)}`;
+}
+
+export function vocabLessonRoute(lessonId: string): string {
+  return `${ROUTES.vocabLessons}?lesson=${encodeURIComponent(lessonId)}`;
 }
 
 function patternToRegExp(pattern: string): RegExp {

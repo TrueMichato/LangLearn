@@ -5,6 +5,11 @@ import { speak } from '../../lib/tts';
 import { XP_PER_CHARACTER_PRACTICE, XP_PER_QUIZ_CORRECT } from '../../lib/xp';
 import { useXPStore } from '../../stores/xpStore';
 import { useTimerStore } from '../../stores/timerStore';
+import {
+  getOrderedGuidedGroups,
+  loadCompletedGuidedGroups,
+  saveCompletedGuidedGroups,
+} from '../../lib/guided-learning-progress';
 
 interface Props {
   characters: Character[];
@@ -18,31 +23,6 @@ type Phase = 'overview' | 'learning' | 'quiz' | 'result';
 const PASS_THRESHOLD = 0.8;
 const QUIZ_OPTIONS_COUNT = 4;
 
-// Stable ordering of groups for guided learning
-const GROUP_ORDER = [
-  'Vowels', 'K-row', 'S-row', 'T-row', 'N-row',
-  'H-row', 'M-row', 'Y-row', 'R-row', 'W-row',
-  'Dakuten', 'Handakuten',
-  'Yōon', 'Yōon-Dakuten', 'Yōon-Handakuten', 'Sokuon',
-];
-
-function getStorageKey(alphabetName: string, language: string) {
-  return `langlearn-guided-${language}-${alphabetName}`;
-}
-
-function loadCompletedColumns(alphabetName: string, language: string): Set<string> {
-  try {
-    const raw = localStorage.getItem(getStorageKey(alphabetName, language));
-    return raw ? new Set(JSON.parse(raw) as string[]) : new Set();
-  } catch {
-    return new Set();
-  }
-}
-
-function saveCompletedColumns(alphabetName: string, language: string, completed: Set<string>) {
-  localStorage.setItem(getStorageKey(alphabetName, language), JSON.stringify([...completed]));
-}
-
 function shuffle<T>(arr: T[]): T[] {
   const a = [...arr];
   for (let i = a.length - 1; i > 0; i--) {
@@ -53,7 +33,9 @@ function shuffle<T>(arr: T[]): T[] {
 }
 
 export default function GuidedLearning({ characters, alphabetName, language, onProgress }: Props) {
-  const [completed, setCompleted] = useState(() => loadCompletedColumns(alphabetName, language));
+  const [completed, setCompleted] = useState(() =>
+    loadCompletedGuidedGroups(alphabetName, language),
+  );
   const [phase, setPhase] = useState<Phase>('overview');
   const [hasStartedTimer, setHasStartedTimer] = useState(false);
   const timerStart = useTimerStore((s) => s.start);
@@ -79,20 +61,14 @@ export default function GuidedLearning({ characters, alphabetName, language, onP
 
   // Reset when alphabet/language changes
   useEffect(() => {
-    const cols = loadCompletedColumns(alphabetName, language);
+    const cols = loadCompletedGuidedGroups(alphabetName, language);
     setCompleted(cols);
     setPhase('overview');
   }, [alphabetName, language]);
 
   // Build ordered groups from characters
   const orderedGroups = useMemo(() => {
-    const groupSet = new Set(characters.map((c) => c.group));
-    const ordered = GROUP_ORDER.filter((g) => groupSet.has(g));
-    // Append any groups not in GROUP_ORDER at the end
-    for (const g of groupSet) {
-      if (!ordered.includes(g)) ordered.push(g);
-    }
-    return ordered;
+    return getOrderedGuidedGroups(characters.map((c) => c.group));
   }, [characters]);
 
   const groupCharacters = useCallback(
@@ -244,7 +220,14 @@ export default function GuidedLearning({ characters, alphabetName, language, onP
             const newCompleted = new Set(completed);
             newCompleted.add(activeGroup);
             setCompleted(newCompleted);
-            saveCompletedColumns(alphabetName, language, newCompleted);
+            saveCompletedGuidedGroups(
+              alphabetName,
+              language,
+              newCompleted,
+              orderedGroups,
+            ).catch((error: unknown) => {
+              console.error('Could not save guided letter progress', error);
+            });
             onProgress();
           }
 
@@ -255,6 +238,7 @@ export default function GuidedLearning({ characters, alphabetName, language, onP
     [
       selectedOption, quizQuestions, quizIndex, quizAnswers,
       language, alphabetName, activeGroup, completed, activeChars, onProgress,
+      orderedGroups,
     ],
   );
 
@@ -341,7 +325,7 @@ export default function GuidedLearning({ characters, alphabetName, language, onP
         {/* Card */}
         <div className="bg-white dark:bg-slate-800 rounded-2xl shadow p-6 text-center">
           <p className="text-7xl mb-4 select-none text-slate-900 dark:text-slate-100">{char.char}</p>
-          <p className="text-2xl font-bold text-indigo-600 dark:text-indigo-400 mb-2">
+          <p className="text-2xl font-bold text-slate-800 dark:text-slate-100 mb-2">
             {char.romanji}
           </p>
           {char.imageUrl && (
@@ -450,7 +434,7 @@ export default function GuidedLearning({ characters, alphabetName, language, onP
         {/* Options */}
         <div className="grid grid-cols-2 gap-3">
           {q.options.map((opt, i) => {
-            let style = 'bg-white dark:bg-slate-800 shadow text-slate-800 dark:text-slate-100 hover:bg-indigo-50 dark:hover:bg-slate-700';
+            let style = 'bg-white dark:bg-slate-800 shadow text-slate-800 dark:text-slate-100 hover:bg-slate-50 dark:hover:bg-slate-700';
             if (selectedOption !== null) {
               if (i === q.correct) {
                 style = 'bg-green-100 dark:bg-green-900/50 text-green-800 dark:text-green-200 ring-2 ring-green-500';

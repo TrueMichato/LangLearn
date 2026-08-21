@@ -1,12 +1,18 @@
-import React, { useState } from 'react';
+import React, { useEffect, useMemo, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useSettingsStore } from '../stores/settingsStore';
 import { useCurrentLanguage } from '../hooks/useCurrentLanguage';
 import { getAlphabetsForLanguage } from '../data/alphabets';
 import { hasNumbers } from '../data/numbers';
 import { getLanguageFlag } from '../lib/languages';
-import { getStartingPoints } from '../lib/starting-points';
 import ExternalResources from '../components/common/ExternalResources';
+import LearningPath from '../components/learn/LearningPath';
+import LanguagePicker from '../components/common/LanguagePicker';
+import LanguageUnavailable from '../components/common/LanguageUnavailable';
+import { LEARNING_PATHS } from '../data/learning-paths';
+import { loadLearningPath } from '../lib/learning-path';
+import { SkeletonList } from '../components/common/Skeleton';
+import type { LearningPath as LearningPathModel } from '../types/learning-path';
 
 interface ActivityCard {
   to: string;
@@ -75,16 +81,52 @@ function ActivityCardLink({ card }: { card: ActivityCard }) {
 
 export default function LearnPage() {
   const activeLanguages = useSettingsStore((s) => s.activeLanguages);
-  const { language: currentLanguage } = useCurrentLanguage();
+  const { language: currentLanguage, setLanguage } = useCurrentLanguage();
   const languagesWithLetters = activeLanguages.filter((l) => getAlphabetsForLanguage(l).length > 0);
   const hasArabic = activeLanguages.includes('ar');
   const hasNumberPractice = activeLanguages.some((l) => hasNumbers(l));
-  const [showMore, setShowMore] = useState(false);
+  const [showBrowseAll, setShowBrowseAll] = useState(false);
+  const [path, setPath] = useState<LearningPathModel | null>(null);
+  const [pathLoading, setPathLoading] = useState(true);
+  const [pathError, setPathError] = useState('');
+  const pathLanguages = useMemo(
+    () => activeLanguages.filter((lang) => LEARNING_PATHS[lang]),
+    [activeLanguages],
+  );
 
-  // The same recommendation onboarding and the dashboard give, so the app never
-  // points a learner in three different directions at once.
-  const firstLanguage = currentLanguage ?? activeLanguages[0];
-  const recommended = firstLanguage ? getStartingPoints(firstLanguage)[0] : null;
+  useEffect(() => {
+    let cancelled = false;
+    setPathLoading(true);
+    setPathError('');
+    if (!currentLanguage || !LEARNING_PATHS[currentLanguage]) {
+      setPath(null);
+      setPathLoading(false);
+      return () => {
+        cancelled = true;
+      };
+    }
+
+    loadLearningPath(currentLanguage)
+      .then((nextPath) => {
+        if (!cancelled) setPath(nextPath);
+      })
+      .catch((error: unknown) => {
+        if (cancelled) return;
+        setPath(null);
+        setPathError(
+          error instanceof Error
+            ? error.message
+            : 'The learning path could not be loaded.',
+        );
+      })
+      .finally(() => {
+        if (!cancelled) setPathLoading(false);
+      });
+
+    return () => {
+      cancelled = true;
+    };
+  }, [currentLanguage]);
 
   const letterCards: ActivityCard[] =
     languagesWithLetters.length > 0
@@ -148,53 +190,63 @@ export default function LearnPage() {
     },
   ];
 
-  const moreCount = moreSections.reduce((n, s) => n + s.cards.length, 0);
+  const browseCount =
+    coreSection.cards.length +
+    moreSections.reduce((count, section) => count + section.cards.length, 0);
 
   return (
     <div>
       <h2 className="text-lg font-semibold text-slate-700 dark:text-slate-200 mb-2">Learn</h2>
       <p className="text-sm text-slate-500 dark:text-slate-400 mb-4">
-        Build strong comprehension through reading and listening before practicing output — this is how the best language learners study.
+        Follow a calm route through the essentials, or browse every activity when you know what you need.
       </p>
 
-      {recommended && (
-        <Link
-          to={recommended.route}
-          className="mb-4 flex min-h-[44px] items-center gap-3 rounded-2xl border border-indigo-200 bg-indigo-50/70 p-4 transition-colors hover:bg-indigo-50 dark:border-indigo-500/30 dark:bg-indigo-500/10 dark:hover:bg-indigo-500/15"
-        >
-          <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-indigo-100 dark:bg-indigo-500/20">
-            <span className="text-3xl leading-none">{recommended.emoji}</span>
-          </div>
-          <div className="min-w-0 flex-1">
-            <p className="text-xs font-medium text-indigo-600 dark:text-indigo-400">Start here</p>
-            <p className="font-semibold text-slate-800 dark:text-slate-100">{recommended.label}</p>
-            <p className="text-sm text-slate-600 dark:text-slate-300">{recommended.sublabel}</p>
-          </div>
-          <span aria-hidden="true" className="shrink-0 text-slate-500 dark:text-slate-400">
-            →
-          </span>
-        </Link>
-      )}
+      <LanguagePicker
+        options={activeLanguages}
+        value={currentLanguage}
+        onChange={setLanguage}
+        label="Learning path language"
+        className="mb-4"
+      />
 
-      <div className="grid grid-cols-2 gap-3">
-        <SectionLabel label={coreSection.label} showBorder={coreSection.showBorder} />
-        {coreSection.cards.map((card) => (
-          <ActivityCardLink key={card.to + card.title} card={card} />
-        ))}
-      </div>
+      {pathLoading ? (
+        <SkeletonList count={4} />
+      ) : pathError ? (
+        <div
+          role="alert"
+          className="rounded-2xl border border-amber-200 bg-amber-50 p-4 text-sm text-amber-900 dark:border-amber-800/60 dark:bg-amber-950/30 dark:text-amber-200"
+        >
+          <p className="font-semibold">Your path needs a quick refresh</p>
+          <p className="mt-1">{pathError} You can still browse every activity below.</p>
+        </div>
+      ) : path ? (
+        <LearningPath path={path} />
+      ) : (
+        <LanguageUnavailable
+          requested={currentLanguage}
+          options={pathLanguages}
+          onChange={setLanguage}
+          feature="A guided learning path"
+        />
+      )}
 
       <button
         type="button"
-        onClick={() => setShowMore((v) => !v)}
-        aria-expanded={showMore}
-        className="mt-4 flex min-h-[44px] w-full items-center justify-center gap-2 rounded-2xl border border-slate-200/70 bg-white px-4 py-3 text-sm font-medium text-slate-600 transition-colors hover:bg-slate-50 dark:border-white/10 dark:bg-slate-800 dark:text-slate-300 dark:hover:bg-slate-700/60"
+        onClick={() => setShowBrowseAll((visible) => !visible)}
+        aria-expanded={showBrowseAll}
+        aria-controls="learn-activity-browser"
+        className="mt-5 flex min-h-[44px] w-full items-center justify-center gap-2 rounded-xl border border-slate-300 bg-white px-4 py-3 text-sm font-medium text-slate-700 transition-colors hover:bg-slate-50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 dark:border-slate-600 dark:bg-slate-800 dark:text-slate-200 dark:hover:bg-slate-700/60"
       >
-        {showMore ? 'Show less' : `Explore more (${moreCount})`}
-        <span aria-hidden="true">{showMore ? '↑' : '↓'}</span>
+        {showBrowseAll ? 'Hide activity browser' : `Browse all activities (${browseCount})`}
+        <span aria-hidden="true">{showBrowseAll ? '↑' : '↓'}</span>
       </button>
 
-      {showMore && (
-        <div className="grid grid-cols-2 gap-3">
+      {showBrowseAll && (
+        <div id="learn-activity-browser" className="mt-1 grid grid-cols-2 gap-3">
+          <SectionLabel label={coreSection.label} showBorder={coreSection.showBorder} />
+          {coreSection.cards.map((card) => (
+            <ActivityCardLink key={card.to + card.title} card={card} />
+          ))}
           {moreSections.map((section) => (
             <React.Fragment key={section.label}>
               <SectionLabel label={section.label} showBorder={section.showBorder} />
