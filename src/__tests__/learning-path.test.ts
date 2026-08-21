@@ -103,6 +103,11 @@ describe('resolveLearningPath', () => {
     expect(nodes[0].kind).toBe('letters');
     expect(nodes[0].state).toBe('available');
     expect(nodes.slice(1).every((node) => node.state === 'locked')).toBe(true);
+    expect(
+      path.units
+        .flatMap((unit) => unit.checkpoints)
+        .every((checkpoint) => checkpoint.state === 'locked'),
+    ).toBe(true);
   });
 
   it('opens the first lesson only after every letter prerequisite', () => {
@@ -115,6 +120,14 @@ describe('resolveLearningPath', () => {
 
     expect(lessonNodes[0].state).toBe('available');
     expect(lessonNodes.slice(1).every((node) => node.state === 'locked')).toBe(true);
+    const firstUnit = path.units.find((unit) => unit.id === manifest.units[0].id);
+    expect(firstUnit?.checkpoints.map((checkpoint) => checkpoint.route)).toEqual([
+      '/vocab-lessons?testOut=numbers',
+      '/grammar?testOut=particles',
+    ]);
+    expect(
+      firstUnit?.checkpoints.every((checkpoint) => checkpoint.state === 'available'),
+    ).toBe(true);
   });
 
   it('advances to one next node while preserving completed history', () => {

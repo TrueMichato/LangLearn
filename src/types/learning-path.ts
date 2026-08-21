@@ -31,11 +31,21 @@ export interface LearningPathNode {
   unitId: string;
 }
 
+export type LearningPathCheckpointState = 'available' | 'completed' | 'locked';
+
+export interface LearningPathCheckpoint {
+  kind: LearningPathLessonKind;
+  lessonId: string;
+  route: string;
+  state: LearningPathCheckpointState;
+}
+
 export interface LearningPathUnit {
   id: string;
   title: string;
   description: string;
   nodes: LearningPathNode[];
+  checkpoints: LearningPathCheckpoint[];
 }
 
 export interface LearningPath {

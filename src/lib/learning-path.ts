@@ -14,8 +14,10 @@ import {
 } from './guided-learning-progress';
 import {
   grammarLessonRoute,
+  grammarTestOutRoute,
   guidedLettersRoute,
   vocabLessonRoute,
+  vocabTestOutRoute,
 } from './routes';
 
 interface LessonMeta {
@@ -76,12 +78,16 @@ export function resolveLearningPath(
       };
     },
   );
+  const prerequisitesComplete = letterNodes.every(
+    (node) => node.state === 'completed',
+  );
+  const encounteredLessons = {
+    grammar: [] as LearningPathNode[],
+    vocab: [] as LearningPathNode[],
+  };
 
-  const units = manifest.units.map((unit) => ({
-    id: unit.id,
-    title: unit.title,
-    description: unit.description,
-    nodes: unit.lessons.map((lesson): LearningPathNode => {
+  const units = manifest.units.map((unit) => {
+    const nodes = unit.lessons.map((lesson): LearningPathNode => {
       const metadata =
         lesson.kind === 'grammar'
           ? grammar.get(lesson.lessonId)
@@ -111,8 +117,45 @@ export function resolveLearningPath(
         state,
         unitId: unit.id,
       };
-    }),
-  }));
+    });
+
+    for (const node of nodes) {
+      encounteredLessons[node.kind as 'grammar' | 'vocab'].push(node);
+    }
+    const kinds = [...new Set(nodes.map((node) => node.kind))] as Array<
+      'grammar' | 'vocab'
+    >;
+    const checkpoints = kinds.map((kind) => {
+      const lessons = encounteredLessons[kind];
+      const target = lessons[lessons.length - 1];
+      const lessonId =
+        kind === 'vocab'
+          ? target.lessonId.replace(/^vocab\//, '')
+          : target.lessonId;
+      const completed = lessons.every((node) => node.state === 'completed');
+      return {
+        kind,
+        lessonId,
+        route:
+          kind === 'grammar'
+            ? grammarTestOutRoute(lessonId)
+            : vocabTestOutRoute(lessonId),
+        state: !prerequisitesComplete
+          ? ('locked' as const)
+          : completed
+            ? ('completed' as const)
+            : ('available' as const),
+      };
+    });
+
+    return {
+      id: unit.id,
+      title: unit.title,
+      description: unit.description,
+      nodes,
+      checkpoints,
+    };
+  });
 
   const allUnits =
     letterNodes.length > 0
@@ -123,6 +166,7 @@ export function resolveLearningPath(
             description:
               'Get comfortable with the writing system before lessons begin.',
             nodes: letterNodes,
+            checkpoints: [],
           },
           ...units,
         ]

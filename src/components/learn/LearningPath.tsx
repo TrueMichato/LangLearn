@@ -1,5 +1,6 @@
 import type { LearningPath as LearningPathModel } from '../../types/learning-path';
 import PathNode from './PathNode';
+import PathCheckpoint from './PathCheckpoint';
 
 interface Props {
   path: LearningPathModel;
@@ -62,6 +63,22 @@ export default function LearningPath({ path }: Props) {
                 />
               ))}
             </ol>
+            {unit.checkpoints.length > 0 && (
+              <div className="mt-4 border-t border-slate-200/70 pt-3 dark:border-white/10">
+                <p className="text-xs font-medium text-slate-500 dark:text-slate-400">
+                  Already comfortable with this material?
+                </p>
+                <div className="-ml-3 mt-1 flex flex-wrap gap-1">
+                  {unit.checkpoints.map((checkpoint) => (
+                    <PathCheckpoint
+                      key={checkpoint.kind}
+                      checkpoint={checkpoint}
+                      unitTitle={unit.title}
+                    />
+                  ))}
+                </div>
+              </div>
+            )}
           </section>
         ))}
       </div>

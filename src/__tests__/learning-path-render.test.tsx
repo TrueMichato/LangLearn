@@ -13,6 +13,20 @@ const PATH: LearningPathModel = {
       id: 'first-steps',
       title: 'First steps',
       description: 'A gentle beginning.',
+      checkpoints: [
+        {
+          kind: 'vocab',
+          lessonId: 'greetings',
+          route: '/vocab-lessons?testOut=greetings',
+          state: 'available',
+        },
+        {
+          kind: 'grammar',
+          lessonId: 'particles',
+          route: '/grammar?testOut=particles',
+          state: 'available',
+        },
+      ],
       nodes: [
         {
           id: 'letters:Hiragana',
@@ -69,5 +83,8 @@ describe('LearningPath', () => {
 
     expect(html).toContain('/vocab-lessons?lesson=greetings');
     expect(html).toContain('/letters/ja?mode=learn&amp;alphabet=Hiragana');
+    expect(html).toContain('/vocab-lessons?testOut=greetings');
+    expect(html).toContain('/grammar?testOut=particles');
+    expect(html).toContain('Test out of grammar through First steps');
   });
 });

@@ -84,10 +84,9 @@ export default function GrammarPage() {
   }
 
   if (testOutTarget && !loading && progressLanguage === selectedLang) {
-    // The "Core Lessons" list is the sequential, single track that test-out
-    // ranges are computed against — grouped (Tofugu) lessons have no lock
-    // order to skip ahead of.
-    const originalLessons = lessons.filter((l) => !l.group);
+    // Imported Tofugu references are supplemental. Native lessons form the
+    // ordered test-out track even when their index uses curriculum groups.
+    const originalLessons = lessons.filter((l) => l.source !== 'tofugu');
     const completedIds = new Set(
       [...progress.values()].filter((p) => p.completed).map((p) => p.lessonId),
     );
@@ -285,7 +284,9 @@ export default function GrammarPage() {
                         </button>
                         {!isCollapsed && (
                           <div className="space-y-3 mt-2">
-                            {groupLessons.map((lesson) => renderLesson(lesson, false, false))}
+                            {groupLessons.map((lesson) =>
+                              renderLesson(lesson, false, !isTofuguGroup),
+                            )}
                           </div>
                         )}
                       </div>
