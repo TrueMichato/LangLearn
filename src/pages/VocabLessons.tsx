@@ -138,13 +138,6 @@ export default function VocabLessons() {
           kind="vocab"
           lessons={range.map((id) => ({ id, title: titleById.get(id) ?? id }))}
           onExit={exitToLessons}
-          onPassed={() => {
-            getLessonProgress(selectedLang).then((items) => {
-              const map = new Map<string, LessonProgress>();
-              for (const item of items) map.set(item.lessonId, item);
-              setProgress(map);
-            });
-          }}
         />
       );
     }

@@ -6,6 +6,7 @@ interface Props {
   isLast: boolean;
   position: number;
   nextPosition?: number;
+  rtl?: boolean;
 }
 
 const KIND_DETAILS = {
@@ -14,9 +15,9 @@ const KIND_DETAILS = {
   grammar: { emoji: '📖', label: 'Grammar' },
 } as const;
 
-function nodeClasses(node: LearningPathNodeModel): string {
+function nodeClasses(node: LearningPathNodeModel, rtl: boolean): string {
   const base =
-    'group relative z-10 flex min-h-[56px] items-center gap-3 rounded-xl px-2 py-2 text-left focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 focus-visible:ring-offset-2 dark:focus-visible:ring-offset-slate-800';
+    `group relative z-10 flex min-h-[56px] items-center gap-3 rounded-xl px-2 py-2 text-left focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 focus-visible:ring-offset-2 dark:focus-visible:ring-offset-slate-800 ${rtl ? 'flex-row-reverse' : ''}`;
 
   if (node.state === 'available') {
     return `${base} bg-indigo-50 text-indigo-950 hover:bg-indigo-100 dark:bg-indigo-500/10 dark:text-indigo-100 dark:hover:bg-indigo-500/15 press-feedback`;
@@ -46,7 +47,7 @@ function Marker({ node }: { node: LearningPathNodeModel }) {
   );
 }
 
-function Body({ node }: { node: LearningPathNodeModel }) {
+function Body({ node, rtl }: { node: LearningPathNodeModel; rtl: boolean }) {
   const detail = KIND_DETAILS[node.kind];
   const labelClasses =
     node.state === 'available'
@@ -74,7 +75,7 @@ function Body({ node }: { node: LearningPathNodeModel }) {
       </span>
       {node.state !== 'locked' && (
         <span className={`shrink-0 ${arrowClasses}`} aria-hidden="true">
-          →
+          {rtl ? '←' : '→'}
         </span>
       )}
     </>
@@ -89,11 +90,18 @@ export default function PathNode({
   isLast,
   position,
   nextPosition,
+  rtl = false,
 }: Props) {
-  const positionClass = POSITION_CLASSES[position] ?? POSITION_CLASSES[0];
-  const startX = (POSITION_OFFSET[position] ?? 0) + 22;
+  const visualPosition = rtl ? 2 - position : position;
+  const visualNextPosition =
+    nextPosition == null ? visualPosition : rtl ? 2 - nextPosition : nextPosition;
+  const positionClass =
+    POSITION_CLASSES[visualPosition] ?? POSITION_CLASSES[0];
+  const startX = (POSITION_OFFSET[visualPosition] ?? 0) + 22;
   const endX =
-    (POSITION_OFFSET[nextPosition ?? position] ?? POSITION_OFFSET[position] ?? 0) +
+    (POSITION_OFFSET[visualNextPosition] ??
+      POSITION_OFFSET[visualPosition] ??
+      0) +
     22;
 
   return (
@@ -116,18 +124,18 @@ export default function PathNode({
         <button
           type="button"
           disabled
-          className={`${nodeClasses(node)} ${positionClass}`}
+          className={`${nodeClasses(node, rtl)} ${positionClass}`}
           aria-label={`${node.title}, locked`}
         >
-          <Body node={node} />
+          <Body node={node} rtl={rtl} />
         </button>
       ) : (
         <Link
           to={node.route}
-          className={`${nodeClasses(node)} ${positionClass}`}
+          className={`${nodeClasses(node, rtl)} ${positionClass}`}
           aria-current={node.state === 'available' ? 'step' : undefined}
         >
-          <Body node={node} />
+          <Body node={node} rtl={rtl} />
         </Link>
       )}
     </li>

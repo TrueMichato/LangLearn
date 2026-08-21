@@ -87,4 +87,15 @@ describe('LearningPath', () => {
     expect(html).toContain('/grammar?testOut=particles');
     expect(html).toContain('Test out of grammar through First steps');
   });
+
+  it('mirrors the winding treatment for an RTL learning path', () => {
+    const html = renderToStaticMarkup(
+      <MemoryRouter>
+        <LearningPath path={{ ...PATH, language: 'ar' }} />
+      </MemoryRouter>,
+    );
+
+    expect(html).toContain('flex-row-reverse');
+    expect(html).toContain('←');
+  });
 });

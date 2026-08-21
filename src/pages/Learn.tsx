@@ -86,41 +86,44 @@ export default function LearnPage() {
   const hasArabic = activeLanguages.includes('ar');
   const hasNumberPractice = activeLanguages.some((l) => hasNumbers(l));
   const [showBrowseAll, setShowBrowseAll] = useState(false);
-  const [path, setPath] = useState<LearningPathModel | null>(null);
-  const [pathLoading, setPathLoading] = useState(true);
-  const [pathError, setPathError] = useState('');
+  const [pathState, setPathState] = useState<{
+    language: string | null;
+    path: LearningPathModel | null;
+    error: string;
+  }>({ language: null, path: null, error: '' });
   const pathLanguages = useMemo(
     () => activeLanguages.filter((lang) => LEARNING_PATHS[lang]),
     [activeLanguages],
   );
+  const pathSupported =
+    currentLanguage != null && LEARNING_PATHS[currentLanguage] != null;
+  const pathLoading =
+    pathSupported && pathState.language !== currentLanguage;
+  const path =
+    pathState.language === currentLanguage ? pathState.path : null;
+  const pathError =
+    pathState.language === currentLanguage ? pathState.error : '';
 
   useEffect(() => {
+    if (!currentLanguage || !LEARNING_PATHS[currentLanguage]) return;
     let cancelled = false;
-    setPathLoading(true);
-    setPathError('');
-    if (!currentLanguage || !LEARNING_PATHS[currentLanguage]) {
-      setPath(null);
-      setPathLoading(false);
-      return () => {
-        cancelled = true;
-      };
-    }
 
     loadLearningPath(currentLanguage)
       .then((nextPath) => {
-        if (!cancelled) setPath(nextPath);
+        if (!cancelled) {
+          setPathState({ language: currentLanguage, path: nextPath, error: '' });
+        }
       })
       .catch((error: unknown) => {
         if (cancelled) return;
-        setPath(null);
-        setPathError(
-          error instanceof Error
-            ? error.message
-            : 'The learning path could not be loaded.',
-        );
-      })
-      .finally(() => {
-        if (!cancelled) setPathLoading(false);
+        setPathState({
+          language: currentLanguage,
+          path: null,
+          error:
+            error instanceof Error
+              ? error.message
+              : 'The learning path could not be loaded.',
+        });
       });
 
     return () => {

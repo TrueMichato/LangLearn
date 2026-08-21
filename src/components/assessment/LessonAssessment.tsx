@@ -19,8 +19,6 @@ interface Props {
   lessons: LessonRef[];
   /** Back to the lesson browser, no change in progress. */
   onExit: () => void;
-  /** Called once the pass has been written, so the browser can refresh progress. */
-  onPassed: () => void;
 }
 
 type Phase = 'loading' | 'blocked' | 'active' | 'result' | 'error';
@@ -36,7 +34,7 @@ type Phase = 'loading' | 'blocked' | 'active' | 'result' | 'error';
  * 'tested-out'`. Failing changes nothing. Neither outcome awards XP — that
  * stays earned only by working through a lesson's own content or exercises.
  */
-export default function LessonAssessment({ lang, kind, lessons, onExit, onPassed }: Props) {
+export default function LessonAssessment({ lang, kind, lessons, onExit }: Props) {
   const lessonIdsKey = lessons.map((l) => l.id).join('|');
   const [phase, setPhase] = useState<Phase>('loading');
   const [questions, setQuestions] = useState<Question[]>([]);
@@ -94,7 +92,6 @@ export default function LessonAssessment({ lang, kind, lessons, onExit, onPassed
           score,
           'tested-out',
         );
-        onPassed();
       } catch (error) {
         console.error('Could not save test-out progress', error);
         passRecorded.current = false;

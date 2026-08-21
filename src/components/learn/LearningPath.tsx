@@ -1,4 +1,5 @@
 import type { LearningPath as LearningPathModel } from '../../types/learning-path';
+import { isRTL } from '../../lib/rtl';
 import PathNode from './PathNode';
 import PathCheckpoint from './PathCheckpoint';
 
@@ -8,6 +9,7 @@ interface Props {
 
 export default function LearningPath({ path }: Props) {
   const complete = path.completedCount === path.totalCount;
+  const rtl = isRTL(path.language);
 
   return (
     <section aria-labelledby="learning-path-heading">
@@ -60,6 +62,7 @@ export default function LearningPath({ path }: Props) {
                   nextPosition={
                     index < unit.nodes.length - 1 ? (index + 1) % 3 : undefined
                   }
+                  rtl={rtl}
                 />
               ))}
             </ol>

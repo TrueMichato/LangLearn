@@ -36,7 +36,6 @@ describe('test-out never awards XP', () => {
         kind="grammar"
         lessons={[{ id: 'l1', title: 'Particles' }]}
         onExit={() => {}}
-        onPassed={() => {}}
       />,
     );
     expect(html).not.toContain('XP');
