@@ -1,5 +1,6 @@
 import type { StudyActivity } from '../lib/activities';
 import Dexie, { type EntityTable } from 'dexie';
+import { CURRENT_SCHEMA_VERSION, DB_NAME } from './constants';
 
 export interface Word {
   id?: number;
@@ -140,7 +141,7 @@ export interface Snapshot {
   sizeBytes: number;
 }
 
-const db = new Dexie('LangLearnDB') as Dexie & {
+const db = new Dexie(DB_NAME) as Dexie & {
   words: EntityTable<Word, 'id'>;
   reviews: EntityTable<Review, 'id'>;
   texts: EntityTable<Text, 'id'>;
@@ -288,7 +289,7 @@ db.version(9).stores({
     });
 });
 
-db.version(10).stores({
+db.version(CURRENT_SCHEMA_VERSION).stores({
   words: '++id, [language+createdAt], [word+language], language, word, createdAt, *tags, type',
   reviews: '++id, [wordId+nextReviewDate], wordId, nextReviewDate',
   texts: '++id, language, createdAt',
@@ -305,6 +306,5 @@ db.version(10).stores({
 
 /** Schema version the running bundle expects. Snapshots record it so a restore
  *  can tell whether it predates the current shape. */
-export const CURRENT_SCHEMA_VERSION = 10;
-
 export { db };
+export { CURRENT_SCHEMA_VERSION, DB_NAME } from './constants';

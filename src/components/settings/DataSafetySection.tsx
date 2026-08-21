@@ -16,6 +16,13 @@ import {
 } from '../../db/recovery';
 import type { Snapshot } from '../../db/schema';
 import {
+  getRecoveryCapsuleInfo,
+  getLastRecoveryCapsuleWriteResult,
+  refreshRecoveryCapsule,
+  type CapsuleWriteResult,
+  type RecoveryCapsuleInfo,
+} from '../../db/recovery-capsule';
+import {
   getStorageEstimate,
   formatBytes,
   isInstalledPWA,
@@ -28,9 +35,9 @@ const sectionCard =
 /**
  * Everything to do with keeping the learner's progress alive.
  *
- * Grouped deliberately: eviction risk, automatic snapshots and manual
- * export/import are three answers to the same question ("will my streak still
- * be here next month?"), and splitting them made none of them findable.
+ * Grouped deliberately: eviction risk, local recovery, update snapshots and
+ * manual export/import answer the same question ("will my streak still be here
+ * next month?"), and splitting them made none of them findable.
  */
 export default function DataSafetySection({
   persistence,
@@ -38,6 +45,13 @@ export default function DataSafetySection({
   persistence: PersistenceState;
 }) {
   const [snapshots, setSnapshots] = useState<Snapshot[]>([]);
+  const [capsuleInfo, setCapsuleInfo] = useState<RecoveryCapsuleInfo | null>(
+    null,
+  );
+  const [capsuleWriteResult, setCapsuleWriteResult] =
+    useState<CapsuleWriteResult | null>(
+      getLastRecoveryCapsuleWriteResult(),
+    );
   const [usage, setUsage] = useState<{ usageBytes: number | null; quotaBytes: number | null }>({
     usageBytes: null,
     quotaBytes: null,
@@ -50,6 +64,8 @@ export default function DataSafetySection({
   const refresh = () => {
     listSnapshots().then(setSnapshots).catch(() => setSnapshots([]));
     getStorageEstimate().then(setUsage);
+    setCapsuleInfo(getRecoveryCapsuleInfo());
+    setCapsuleWriteResult(getLastRecoveryCapsuleWriteResult());
   };
 
   useEffect(refresh, []);
@@ -70,6 +86,7 @@ export default function DataSafetySection({
       // learner can undo a wrong file from the snapshot list below.
       await takeSnapshot('before importing a backup file');
       const result = await importAllData(await file.text(), importMode);
+      setCapsuleWriteResult(await refreshRecoveryCapsule());
       setStatus(describeImport(result));
       refresh();
     } catch {
@@ -83,7 +100,9 @@ export default function DataSafetySection({
   const handleSnapshotNow = async () => {
     setBusy(true);
     const snapshot = await takeSnapshot('saved manually');
-    setStatus(snapshot ? 'Snapshot saved.' : 'There is nothing to snapshot yet.');
+    const capsule = await refreshRecoveryCapsule();
+    setCapsuleWriteResult(capsule);
+    setStatus(describeSafetySave(snapshot, capsule));
     refresh();
     setBusy(false);
   };
@@ -93,6 +112,7 @@ export default function DataSafetySection({
     setBusy(true);
     try {
       await restoreSnapshot(snapshot.id!);
+      setCapsuleWriteResult(await refreshRecoveryCapsule());
       setStatus('Restored. Reloading…');
       setTimeout(() => window.location.reload(), 800);
     } catch {
@@ -124,15 +144,52 @@ export default function DataSafetySection({
 
       <PersistenceNotice persistence={persistence} usage={usage} />
 
+      <div className="mt-4 border-t border-slate-200/70 pt-4 dark:border-white/10">
+        <p className="text-sm font-medium text-slate-700 dark:text-slate-200">
+          Local recovery copy
+        </p>
+        {capsuleInfo ? (
+          <p className="mt-1 text-xs text-slate-500 dark:text-slate-400">
+            Last refreshed {new Date(capsuleInfo.createdAt).toLocaleString()} ·{' '}
+            {formatBytes(capsuleInfo.sizeBytes)} · {capsuleInfo.progressRows}{' '}
+            saved items
+          </p>
+        ) : (
+          <p className="mt-1 text-xs text-slate-500 dark:text-slate-400">
+            A recovery copy will be created after you save your first progress.
+          </p>
+        )}
+        <p className="mt-2 text-xs text-slate-500 dark:text-slate-400">
+          This compact copy is stored separately from the main app database and
+          can help after a database reset. It cannot survive clearing all site
+          data and omits detailed answer history, so exported backups are still
+          the safest complete long-term copy.
+        </p>
+        {capsuleWriteResult?.kind === 'too-large' && (
+          <p className="mt-2 text-xs text-amber-800 dark:text-amber-300" role="status">
+            Your current data is too large for this compact copy. The previous
+            valid recovery copy was kept.
+          </p>
+        )}
+        {(capsuleWriteResult?.kind === 'failed' ||
+          capsuleWriteResult?.kind === 'unavailable') && (
+          <p className="mt-2 text-xs text-amber-800 dark:text-amber-300" role="status">
+            This browser could not refresh the recovery copy. Any previous valid
+            copy was left unchanged.
+          </p>
+        )}
+      </div>
+
       {/* ─ Snapshots ─ */}
       <div className="mt-4">
         <div className="flex items-center justify-between gap-3">
           <div>
             <p className="text-sm font-medium text-slate-700 dark:text-slate-200">
-              Automatic snapshots
+              Update snapshots
             </p>
             <p className="text-xs text-slate-500 dark:text-slate-400">
-              Taken daily and before every app update. The last {MAX_SNAPSHOTS} are kept.
+              Stored with the main database for undoing a bad app update. The last{' '}
+              {MAX_SNAPSHOTS} are kept.
             </p>
           </div>
           <button
@@ -253,6 +310,28 @@ function describeImport(result: ImportResult): string {
   return untouched > 0
     ? `${base} That file didn't include everything, so ${untouched} other area${untouched === 1 ? '' : 's'} of your data were left untouched.`
     : base;
+}
+
+function describeSafetySave(
+  snapshot: Snapshot | null,
+  capsule: CapsuleWriteResult,
+): string {
+  if (capsule.kind === 'saved') {
+    return snapshot
+      ? 'Update snapshot and local recovery copy saved.'
+      : 'Local recovery copy saved.';
+  }
+  if (capsule.kind === 'too-large') {
+    return snapshot
+      ? 'Update snapshot saved. The compact recovery copy is too large, so the previous valid copy was kept.'
+      : 'The compact recovery copy is too large, so the previous valid copy was kept.';
+  }
+  if (capsule.kind === 'failed' || capsule.kind === 'unavailable') {
+    return snapshot
+      ? 'Update snapshot saved. This browser could not refresh the separate recovery copy.'
+      : 'This browser could not save a recovery copy.';
+  }
+  return 'There is nothing to save yet.';
 }
 
 function PersistenceNotice({

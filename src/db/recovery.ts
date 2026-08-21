@@ -17,6 +17,8 @@
  *
  * The defences, in order:
  *
+ *  - Keep a compact recovery capsule in localStorage, outside the IndexedDB
+ *    database, so a database-only eviction does not remove its own backup.
  *  - Take a full snapshot *before* letting an upgrade run, so there is always a
  *    known-good copy from before the change.
  *  - Handle `blocked` and `versionchange` so tabs cannot deadlock each other.
@@ -27,13 +29,18 @@
  */
 
 import Dexie from 'dexie';
-import { db, CURRENT_SCHEMA_VERSION, type Snapshot } from './schema';
+import { db, CURRENT_SCHEMA_VERSION, DB_NAME, type Snapshot } from './schema';
 import {
   buildBackupPayload,
   importAllData,
   BACKUP_STORAGE_KEYS,
   BACKUP_PAYLOAD_VERSION,
 } from './backup';
+import {
+  readRecoveryCapsule,
+  refreshRecoveryCapsule,
+  type RecoveryCapsule,
+} from './recovery-capsule';
 
 let pendingSnapshot: Snapshot | null = null;
 
@@ -52,13 +59,17 @@ export type DbStatus =
   /** The upgrade or open failed for some other reason. */
   | { kind: 'failed'; error: Error }
   /**
-   * The database opened cleanly but is empty, while a snapshot still holds real
+   * The database opened cleanly but is empty, while a recovery point holds real
    * progress. This is the quiet failure mode: IndexedDB can drop or recreate an
    * object store during a bad upgrade, and the app then starts perfectly happily
    * with nothing in it. Nothing throws, so without this check the learner simply
    * finds themselves back at zero.
    */
-  | { kind: 'data-loss-suspected'; snapshot: Snapshot };
+  | { kind: 'data-loss-suspected'; recovery: RecoveryPoint };
+
+export type RecoveryPoint =
+  | { kind: 'snapshot'; snapshot: Snapshot }
+  | { kind: 'capsule'; capsule: RecoveryCapsule };
 
 /**
  * Classify an open failure so the UI can say something true about it.
@@ -102,11 +113,13 @@ export function needsPreUpgradeSnapshot(
 const PROGRESS_TABLES = [
   'words',
   'reviews',
+  'studySessions',
   'dailyActivity',
   'lessonProgress',
   'characterProgress',
   'testHistory',
   'badges',
+  'reviewLog',
 ] as const;
 
 const DATA_LOSS_DISMISSED_KEY = 'langlearn-data-loss-dismissed';
@@ -141,10 +154,22 @@ export function suspectsDataLoss(input: {
   return input.dismissedFor !== input.snapshotCreatedAt;
 }
 
-/** Stop offering to restore this snapshot — the learner chose to start over. */
-export function dismissDataLoss(snapshot: Snapshot): void {
+/** Stop offering this recovery point — the learner chose to start over. */
+function recoveryCreatedAt(recovery: RecoveryPoint): string {
+  return recovery.kind === 'snapshot'
+    ? recovery.snapshot.createdAt
+    : recovery.capsule.createdAt;
+}
+
+function recoveryPayload(recovery: RecoveryPoint): string {
+  return recovery.kind === 'snapshot'
+    ? recovery.snapshot.payload
+    : JSON.stringify(recovery.capsule.payload);
+}
+
+export function dismissDataLoss(recovery: RecoveryPoint): void {
   try {
-    localStorage.setItem(DATA_LOSS_DISMISSED_KEY, snapshot.createdAt);
+    localStorage.setItem(DATA_LOSS_DISMISSED_KEY, recoveryCreatedAt(recovery));
   } catch {
     /* best effort */
   }
@@ -152,9 +177,9 @@ export function dismissDataLoss(snapshot: Snapshot): void {
 
 /**
  * Look for the quiet failure: an intact but empty database sitting next to a
- * snapshot full of progress.
+ * recovery point full of progress.
  */
-async function findSuspectedDataLoss(): Promise<Snapshot | null> {
+export async function findSuspectedDataLoss(): Promise<RecoveryPoint | null> {
   try {
     let liveProgressRows = 0;
     for (const name of PROGRESS_TABLES) {
@@ -162,12 +187,22 @@ async function findSuspectedDataLoss(): Promise<Snapshot | null> {
       if (liveProgressRows > 0) return null;
     }
 
-    // The newest snapshot is not necessarily a useful one — restoring creates a
+    // The newest recovery point is not necessarily useful — restoring creates a
     // safety snapshot of whatever was there at the time, which may itself be
-    // empty. Recover against the most recent snapshot that actually has
-    // something in it.
+    // empty. Use the most recent candidate that actually contains progress.
     const snapshots = await listSnapshots();
-    const usable = snapshots.find((s) => snapshotProgressRows(s.payload) > 0);
+    const candidates: RecoveryPoint[] = snapshots.map((snapshot) => ({
+      kind: 'snapshot',
+      snapshot,
+    }));
+    const capsule = readRecoveryCapsule();
+    if (capsule) candidates.push({ kind: 'capsule', capsule });
+    candidates.sort((a, b) =>
+      recoveryCreatedAt(b).localeCompare(recoveryCreatedAt(a)),
+    );
+    const usable = candidates.find(
+      (candidate) => snapshotProgressRows(recoveryPayload(candidate)) > 0,
+    );
     if (!usable) return null;
 
     let dismissedFor: string | null = null;
@@ -179,9 +214,9 @@ async function findSuspectedDataLoss(): Promise<Snapshot | null> {
 
     return suspectsDataLoss({
       liveProgressRows,
-      snapshotProgressRows: snapshotProgressRows(usable.payload),
+      snapshotProgressRows: snapshotProgressRows(recoveryPayload(usable)),
       dismissedFor,
-      snapshotCreatedAt: usable.createdAt,
+      snapshotCreatedAt: recoveryCreatedAt(usable),
     })
       ? usable
       : null;
@@ -193,9 +228,9 @@ async function findSuspectedDataLoss(): Promise<Snapshot | null> {
 /** Read the on-disk schema version without triggering an upgrade. */
 async function getStoredVersion(): Promise<number> {
   try {
-    const existing = await Dexie.exists('LangLearnDB');
+    const existing = await Dexie.exists(DB_NAME);
     if (!existing) return 0;
-    const probe = new Dexie('LangLearnDB');
+    const probe = new Dexie(DB_NAME);
     await probe.open();
     const version = probe.verno;
     probe.close();
@@ -274,6 +309,26 @@ export async function restoreSnapshot(id: number): Promise<void> {
   await importAllData(snapshot.payload, 'replace');
 }
 
+/** Restore either an in-database migration snapshot or the independent capsule. */
+export async function restoreRecoveryPoint(
+  recovery: RecoveryPoint,
+): Promise<void> {
+  if (recovery.kind === 'snapshot') {
+    if (recovery.snapshot.id == null) throw new Error('Snapshot not found');
+    await restoreSnapshot(recovery.snapshot.id);
+    return;
+  }
+
+  await takeSnapshot('before restoring browser recovery copy');
+  await importAllData(JSON.stringify(recovery.capsule.payload), 'replace');
+  await refreshRecoveryCapsule();
+}
+
+/** Export either recovery format as a normal backup payload. */
+export function exportRecoveryPoint(recovery: RecoveryPoint): string {
+  return recoveryPayload(recovery);
+}
+
 // ─── Opening the database ───
 
 let openPromise: Promise<DbStatus> | null = null;
@@ -314,7 +369,7 @@ export function openDatabase(): Promise<DbStatus> {
       await db.open();
 
       const lost = await findSuspectedDataLoss();
-      if (lost) return { kind: 'data-loss-suspected', snapshot: lost };
+      if (lost) return { kind: 'data-loss-suspected', recovery: lost };
 
       return { kind: 'ready' };
     } catch (error) {
@@ -335,7 +390,7 @@ export function openDatabase(): Promise<DbStatus> {
  * upgrade has completed.
  */
 async function captureSnapshotAtStoredVersion(storedVersion: number): Promise<void> {
-  const raw = new Dexie('LangLearnDB');
+  const raw = new Dexie(DB_NAME);
   await raw.open();
   try {
     const tables: Record<string, unknown[]> = {};
