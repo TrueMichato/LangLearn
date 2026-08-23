@@ -29,16 +29,25 @@ function indexFor(
   return entry[1];
 }
 
-function progress(lessonId: string): LessonProgress {
+function progress(lessonId: string, language = 'ja'): LessonProgress {
   return {
-    id: `ja/${lessonId}`,
-    language: 'ja',
+    id: `${language}/${lessonId}`,
+    language,
     lessonId,
     completed: true,
     quizScore: 100,
     completedAt: '2026-08-21T00:00:00.000Z',
     attempts: 1,
   };
+}
+
+function manifestLessons(
+  manifest: (typeof LEARNING_PATHS)[string],
+) {
+  return [
+    ...(manifest.letterUnitLessons ?? []),
+    ...manifest.units.flatMap((unit) => unit.lessons),
+  ];
 }
 
 describe('learning path manifests', () => {
@@ -60,6 +69,16 @@ describe('learning path manifests', () => {
       expect(manifest.units.length).toBeGreaterThan(0);
       for (const alphabetName of manifest.letterPrerequisites) {
         expect(alphabetNames.has(alphabetName)).toBe(true);
+      }
+      for (const lesson of manifest.letterUnitLessons ?? []) {
+        const key = `${lesson.kind}:${lesson.lessonId}`;
+        expect(seen.has(key)).toBe(false);
+        seen.add(key);
+        expect(
+          lesson.kind === 'grammar'
+            ? grammarIds.has(lesson.lessonId)
+            : vocabIds.has(lesson.lessonId),
+        ).toBe(true);
       }
       for (const unit of manifest.units) {
         expect(unit.lessons.length).toBeGreaterThan(0);
@@ -83,6 +102,103 @@ describe('learning path manifests', () => {
 
   it.each(['es', 'pt', 'ro'])('%s starts directly with lessons', (language) => {
     expect(LEARNING_PATHS[language].letterPrerequisites).toEqual([]);
+  });
+
+  it.each(Object.entries(LEARNING_PATHS))(
+    '%s includes the first grammar and vocabulary lessons',
+    (language, manifest) => {
+      const firstGrammar = indexFor(GRAMMAR_INDEXES, language)[0].id;
+      const firstVocab = indexFor(VOCAB_INDEXES, language)[0].id;
+      const lessons = manifestLessons(manifest);
+
+      expect(lessons).toContainEqual({
+        kind: 'grammar',
+        lessonId: firstGrammar,
+      });
+      expect(lessons).toContainEqual({
+        kind: 'vocab',
+        lessonId: firstVocab,
+      });
+    },
+  );
+
+  it.each(Object.entries(LEARNING_PATHS))(
+    '%s keeps its selected grammar lessons in curriculum order',
+    (language, manifest) => {
+      const grammarIndex = indexFor(GRAMMAR_INDEXES, language);
+      const orderById = new Map(
+        grammarIndex.map((lesson, index) => [lesson.id, index]),
+      );
+      const grammarOrder = manifestLessons(manifest)
+        .filter((lesson) => lesson.kind === 'grammar')
+        .map((lesson) => {
+          const order = orderById.get(lesson.lessonId);
+          if (order === undefined) {
+            throw new Error(`Missing grammar lesson ${lesson.lessonId}`);
+          }
+          return order;
+        });
+
+      expect(grammarOrder).toEqual(
+        [...grammarOrder].sort((left, right) => left - right),
+      );
+    },
+  );
+
+  it('places Russian alphabet sounds in the script unit before regular lessons', () => {
+    const manifest = LEARNING_PATHS.ru;
+    const path = resolveLearningPath(
+      manifest,
+      {
+        grammar: indexFor(GRAMMAR_INDEXES, 'ru'),
+        vocab: indexFor(VOCAB_INDEXES, 'ru'),
+      },
+      {
+        progress: [],
+        completedLetters: new Set(manifest.letterPrerequisites),
+      },
+    );
+
+    expect(path.units[0].id).toBe('letters');
+    expect(path.units[0].nodes.map((node) => node.title)).toEqual([
+      'Cyrillic (Uppercase)',
+      'Cyrillic (Lowercase)',
+      'The Russian Alphabet & Sounds',
+    ]);
+    expect(path.units[0].nodes[2].state).toBe('available');
+    expect(path.units[0].checkpoints[0]).toMatchObject({
+      kind: 'grammar',
+      lessonIds: ['alphabet-sounds'],
+      state: 'available',
+    });
+    expect(path.units[1].nodes.some((node) => node.title === 'The Russian Alphabet & Sounds')).toBe(
+      false,
+    );
+    expect(path.units[1].nodes.every((node) => node.state === 'locked')).toBe(
+      true,
+    );
+  });
+
+  it('counts Russian alphabet sounds as ahead progress inside the script unit', () => {
+    const manifest = LEARNING_PATHS.ru;
+    const path = resolveLearningPath(
+      manifest,
+      {
+        grammar: indexFor(GRAMMAR_INDEXES, 'ru'),
+        vocab: indexFor(VOCAB_INDEXES, 'ru'),
+      },
+      {
+        progress: [progress('alphabet-sounds', 'ru')],
+        completedLetters: new Set(),
+      },
+    );
+
+    expect(path.units[0].nodes[0].state).toBe('available');
+    expect(path.units[0].nodes[2]).toMatchObject({
+      title: 'The Russian Alphabet & Sounds',
+      state: 'completed',
+    });
+    expect(path.completedAheadCount).toBe(1);
   });
 });
 
