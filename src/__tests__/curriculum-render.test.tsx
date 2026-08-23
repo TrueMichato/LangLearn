@@ -8,6 +8,7 @@ const PATH: LearningPath = {
   language: 'ja',
   completedCount: 1,
   totalCount: 3,
+  completedAheadCount: 0,
   testOutOptions: [],
   units: [
     {

@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useRef, useState } from 'react';
+import { useEffect, useId, useMemo, useRef, useState } from 'react';
 import GrammarQuiz from '../grammar/GrammarQuiz';
 import { generateLessonRangeQuestions, type Question } from '../../lib/test-questions';
 import { markLessonsComplete } from '../../db/lessons';
@@ -81,7 +81,11 @@ export default function LessonAssessment({
   const [passed, setPassed] = useState(false);
   const [attempt, setAttempt] = useState(0);
   const [draftSaveFailed, setDraftSaveFailed] = useState(false);
+  const [resumedAnswered, setResumedAnswered] = useState(false);
   const passRecorded = useRef(false);
+  const promptRef = useRef<HTMLParagraphElement>(null);
+  const nextButtonRef = useRef<HTMLButtonElement>(null);
+  const resumedAnswerContextId = useId();
 
   useEffect(() => {
     if (!shouldGenerate) return;
@@ -134,6 +138,20 @@ export default function LessonAssessment({
     selectedIndex,
   ]);
 
+  // Deterministic focus loop: whenever the active question has no answer
+  // yet — a fresh start, a resumed draft, or moving to the next question —
+  // send focus to the question prompt. Once an answer is selected, send
+  // focus to the Next/See results action. Covers both directions without
+  // introducing a second live-region announcement.
+  useEffect(() => {
+    if (phase !== 'active') return;
+    if (selectedIndex === null) {
+      promptRef.current?.focus();
+    } else {
+      nextButtonRef.current?.focus();
+    }
+  }, [phase, selectedIndex, index, attempt]);
+
   async function finish(finalCorrect: number) {
     const score = scorePercent(finalCorrect, questions.length);
     const didPass = passesAssessment(score);
@@ -163,10 +181,12 @@ export default function LessonAssessment({
 
   function handleAnswer(answerIndex: number) {
     if (selectedIndex !== null) return;
+    setResumedAnswered(false);
     setSelectedIndex(answerIndex);
   }
 
   function handleNext() {
+    setResumedAnswered(false);
     const question = questions[index];
     const newCorrect =
       correct + (selectedIndex === question.correctIndex ? 1 : 0);
@@ -183,6 +203,7 @@ export default function LessonAssessment({
   function startFresh() {
     deleteAssessmentDraft(draftIdentity);
     setSavedDraft(null);
+    setResumedAnswered(false);
     setPhase('loading');
     setShouldGenerate(true);
     setAttempt((a) => a + 1);
@@ -194,6 +215,7 @@ export default function LessonAssessment({
     setIndex(savedDraft.index);
     setCorrect(savedDraft.correctCount);
     setSelectedIndex(savedDraft.selectedIndex);
+    setResumedAnswered(savedDraft.selectedIndex !== null);
     setShouldGenerate(false);
     setPhase('active');
   }
@@ -409,6 +431,7 @@ export default function LessonAssessment({
         aria-valuemin={1}
         aria-valuemax={questions.length}
         aria-valuenow={index + 1}
+        aria-valuetext={`Question ${index + 1} of ${questions.length}`}
         className="mb-4 h-1.5 w-full overflow-hidden rounded-full bg-slate-200 dark:bg-slate-700"
       >
         <div
@@ -429,16 +452,35 @@ export default function LessonAssessment({
           language={lang}
           questionDirection={question.questionDirection}
           targetOptionIndices={question.targetOptionIndices}
+          promptRef={promptRef}
+          questionNumber={index + 1}
+          totalQuestions={questions.length}
         />
       </div>
 
       {selectedIndex !== null && (
-        <button
-          onClick={handleNext}
-          className="mt-4 min-h-[44px] w-full rounded-xl bg-indigo-600 px-4 text-sm font-medium text-white hover:bg-indigo-700 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-        >
-          {index + 1 >= questions.length ? 'See results' : 'Next question →'}
-        </button>
+        <>
+          {resumedAnswered && (
+            <p id={resumedAnswerContextId} className="sr-only">
+              Resumed question {index + 1} of {questions.length}.{' '}
+              {question.question} Your saved answer was{' '}
+              {question.options[selectedIndex]}.{' '}
+              {selectedIndex === question.correctIndex
+                ? 'That answer is correct.'
+                : `The correct answer is ${question.options[question.correctIndex]}.`}
+            </p>
+          )}
+          <button
+            ref={nextButtonRef}
+            onClick={handleNext}
+            aria-describedby={
+              resumedAnswered ? resumedAnswerContextId : undefined
+            }
+            className="mt-4 min-h-[44px] w-full rounded-xl bg-indigo-600 px-4 text-sm font-medium text-white hover:bg-indigo-700 focus:outline-2 focus:outline-offset-2 focus:outline-indigo-600"
+          >
+            {index + 1 >= questions.length ? 'See results' : 'Next question →'}
+          </button>
+        </>
       )}
     </div>
   );

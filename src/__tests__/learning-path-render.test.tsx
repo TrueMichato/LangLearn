@@ -8,6 +8,7 @@ const PATH: LearningPathModel = {
   language: 'ja',
   completedCount: 1,
   totalCount: 4,
+  completedAheadCount: 0,
   testOutOptions: [
     {
       kind: 'vocab',
@@ -161,5 +162,165 @@ describe('LearningPath', () => {
 
     expect(html).toContain('flex-row-reverse');
     expect(html).toContain('←');
+  });
+});
+
+const LETTERS_CURRENT_PATH: LearningPathModel = {
+  language: 'ja',
+  completedCount: 2,
+  totalCount: 5,
+  completedAheadCount: 0,
+  testOutOptions: [],
+  units: [
+    {
+      id: 'letters',
+      title: 'Learn the script',
+      description: 'Get comfortable with the writing system before lessons begin.',
+      checkpoints: [],
+      nodes: [
+        {
+          id: 'letters:Hiragana',
+          kind: 'letters',
+          lessonId: 'letters/Hiragana',
+          title: 'Hiragana',
+          route: '/letters/ja?mode=learn&alphabet=Hiragana',
+          state: 'completed',
+          unitId: 'letters',
+        },
+        {
+          id: 'letters:Katakana',
+          kind: 'letters',
+          lessonId: 'letters/Katakana',
+          title: 'Katakana',
+          route: '/letters/ja?mode=learn&alphabet=Katakana',
+          state: 'available',
+          unitId: 'letters',
+        },
+      ],
+    },
+    {
+      id: 'first-steps',
+      title: 'First steps',
+      description: 'A gentle beginning.',
+      checkpoints: [],
+      nodes: [
+        {
+          id: 'vocab:greetings',
+          kind: 'vocab',
+          lessonId: 'vocab/greetings',
+          title: 'Greetings & Introductions',
+          route: '/vocab-lessons?lesson=greetings',
+          state: 'completed',
+          unitId: 'first-steps',
+        },
+        {
+          id: 'grammar:particles',
+          kind: 'grammar',
+          lessonId: 'particles',
+          title: 'Basic Particles',
+          route: '/grammar?lesson=particles',
+          state: 'locked',
+          unitId: 'first-steps',
+        },
+        {
+          id: 'vocab:numbers',
+          kind: 'vocab',
+          lessonId: 'vocab/numbers',
+          title: 'Numbers 1-100',
+          route: '/vocab-lessons?lesson=numbers',
+          state: 'locked',
+          unitId: 'first-steps',
+        },
+      ],
+    },
+  ],
+};
+
+describe('LearningPath completed-ahead acknowledgment', () => {
+  it('renders nothing when nothing is completed ahead of the current step', () => {
+    const html = renderToStaticMarkup(
+      <MemoryRouter>
+        <LearningPath path={LETTERS_CURRENT_PATH} />
+      </MemoryRouter>,
+    );
+
+    expect(html).not.toContain('finished');
+    expect(html).not.toContain('View in curriculum');
+  });
+
+  it('renders a singular acknowledgment while letters are current and one future vocab lesson is already done', () => {
+    const path: LearningPathModel = {
+      ...LETTERS_CURRENT_PATH,
+      completedAheadCount: 1,
+    };
+    const html = renderToStaticMarkup(
+      <MemoryRouter>
+        <LearningPath path={path} />
+      </MemoryRouter>,
+    );
+
+    expect(html).toContain("You&#x27;ve already finished 1 lesson ahead of this step.");
+    expect(html).not.toContain('1 lessons ahead');
+    expect(html).toContain('View full curriculum');
+    const [href] = html.match(/href="[^"]*"/g)?.filter((link) =>
+      link.includes('/learn/curriculum'),
+    ) ?? [];
+    expect(href).toBeDefined();
+    // Ahead completions never move the current step or unlock anything: the
+    // learner is still on Katakana, and the not-yet-guided unit isn't
+    // rendered as if it were unlocked.
+    expect(html).toContain('aria-current="step"');
+    expect(html).toContain('Katakana');
+    expect(html).not.toContain('Basic Particles');
+    expect(html).not.toContain('Numbers 1-100');
+  });
+
+  it('renders a plural acknowledgment when more than one lesson is completed ahead', () => {
+    const path: LearningPathModel = {
+      ...LETTERS_CURRENT_PATH,
+      completedAheadCount: 2,
+    };
+    const html = renderToStaticMarkup(
+      <MemoryRouter>
+        <LearningPath path={path} />
+      </MemoryRouter>,
+    );
+
+    expect(html).toContain(
+      "You&#x27;ve already finished 2 lessons ahead of this step.",
+    );
+  });
+
+  it('mirrors the curriculum arrow for an RTL path with ahead progress', () => {
+    const path: LearningPathModel = {
+      ...LETTERS_CURRENT_PATH,
+      language: 'ar',
+      completedAheadCount: 1,
+    };
+    const html = renderToStaticMarkup(
+      <MemoryRouter>
+        <LearningPath path={path} />
+      </MemoryRouter>,
+    );
+
+    expect(html).toContain('View full curriculum');
+    expect(html).toContain('←');
+    expect(html).not.toContain('→');
+  });
+
+  it('does not render the acknowledgment once the whole path is complete', () => {
+    const path: LearningPathModel = {
+      ...LETTERS_CURRENT_PATH,
+      completedCount: LETTERS_CURRENT_PATH.totalCount,
+      completedAheadCount: 3,
+    };
+    const html = renderToStaticMarkup(
+      <MemoryRouter>
+        <LearningPath path={path} />
+      </MemoryRouter>,
+    );
+
+    expect(html).not.toContain('finished');
+    expect(html).not.toContain('View in curriculum');
   });
 });

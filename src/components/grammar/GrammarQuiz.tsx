@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, type Ref } from 'react';
 import { rtlProps, rtlTextAlign } from '../../lib/rtl';
 
 interface GrammarQuizProps {
@@ -12,6 +12,16 @@ interface GrammarQuizProps {
   language?: string;
   questionDirection?: 'target';
   targetOptionIndices?: number[];
+  /**
+   * Ref to the question prompt element. Only set by assessment-style callers
+   * that need to move focus back to the question (fresh start, resume, next
+   * question). Embedded lesson quizzes never pass this, so their prompt stays
+   * a plain, non-focusable paragraph.
+   */
+  promptRef?: Ref<HTMLParagraphElement>;
+  /** 1-based position of this question, e.g. `questionNumber={2}` of `totalQuestions={5}`. */
+  questionNumber?: number;
+  totalQuestions?: number;
 }
 
 export default function GrammarQuiz({
@@ -24,6 +34,9 @@ export default function GrammarQuiz({
   language,
   questionDirection,
   targetOptionIndices = [],
+  promptRef,
+  questionNumber,
+  totalQuestions,
 }: GrammarQuizProps) {
   const [internalSelected, setInternalSelected] = useState<number | null>(null);
   const controlled = selectedIndex !== undefined;
@@ -38,11 +51,17 @@ export default function GrammarQuiz({
   };
 
   const isCorrect = selected === answer;
+  const isAssessmentPrompt = promptRef !== undefined || questionNumber !== undefined;
+  const promptFocusClass = isAssessmentPrompt
+    ? 'rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 dark:focus:ring-indigo-400 dark:focus:ring-offset-slate-800'
+    : '';
 
   return (
     <div className="my-6 p-4">
       <p
-        className={`mb-3 font-semibold text-slate-800 dark:text-slate-100 ${
+        ref={promptRef}
+        tabIndex={isAssessmentPrompt ? -1 : undefined}
+        className={`mb-3 font-semibold text-slate-800 dark:text-slate-100 ${promptFocusClass} ${
           questionDirection === 'target' && language
             ? rtlTextAlign(language)
             : ''
@@ -51,6 +70,11 @@ export default function GrammarQuiz({
           ? rtlProps(language)
           : {})}
       >
+        {questionNumber !== undefined && totalQuestions !== undefined && (
+          <span className="sr-only">
+            Question {questionNumber} of {totalQuestions}{' '}
+          </span>
+        )}
         <span aria-hidden="true">🧠 </span>
         {question}
       </p>
@@ -89,6 +113,9 @@ export default function GrammarQuiz({
       </div>
       {selected !== null && (
         <p
+          role="status"
+          aria-live="polite"
+          aria-atomic="true"
           className={`mt-3 text-sm font-medium ${
             isCorrect
               ? 'text-green-700 dark:text-green-300'

@@ -200,3 +200,67 @@ describe('resolveLearningPath', () => {
     });
   });
 });
+
+describe('resolveLearningPath completedAheadCount', () => {
+  const manifest = LEARNING_PATHS.ja;
+  const content = {
+    grammar: indexFor(GRAMMAR_INDEXES, 'ja'),
+    vocab: indexFor(VOCAB_INDEXES, 'ja'),
+  };
+
+  it('is zero while the current step has nothing completed after it', () => {
+    const path = resolveLearningPath(manifest, content, {
+      progress: [],
+      completedLetters: new Set(['Hiragana']),
+    });
+
+    expect(path.completedAheadCount).toBe(0);
+  });
+
+  it('is zero once every node on the path is complete', () => {
+    const allLessons = manifest.units.flatMap((unit) => unit.lessons);
+    const completedProgress = allLessons.map((lesson) =>
+      progress(
+        lesson.kind === 'vocab' ? `vocab/${lesson.lessonId}` : lesson.lessonId,
+      ),
+    );
+    const path = resolveLearningPath(manifest, content, {
+      progress: completedProgress,
+      completedLetters: new Set(manifest.letterPrerequisites),
+    });
+
+    expect(path.completedCount).toBe(path.totalCount);
+    expect(path.completedAheadCount).toBe(0);
+  });
+
+  it('counts a single future vocab lesson finished while letters are still current, without moving the current step or unlocking anything', () => {
+    const path = resolveLearningPath(manifest, content, {
+      progress: [progress('vocab/greetings')],
+      completedLetters: new Set(['Hiragana']),
+    });
+    const nodes = path.units.flatMap((unit) => unit.nodes);
+    const katakana = nodes.find((node) => node.id === 'letters:Katakana');
+    const greetings = nodes.find((node) => node.id === 'vocab:greetings');
+    const particles = nodes.find((node) => node.id === 'grammar:particles');
+
+    expect(path.completedAheadCount).toBe(1);
+    expect(katakana?.state).toBe('available');
+    expect(nodes.filter((node) => node.state === 'available')).toHaveLength(1);
+    expect(greetings?.state).toBe('completed');
+    expect(particles?.state).toBe('locked');
+  });
+
+  it('counts multiple lessons finished ahead of the current letters step (plural)', () => {
+    const path = resolveLearningPath(manifest, content, {
+      progress: [progress('vocab/greetings'), progress('particles')],
+      completedLetters: new Set(['Hiragana']),
+    });
+    const nodes = path.units.flatMap((unit) => unit.nodes);
+    const katakana = nodes.find((node) => node.id === 'letters:Katakana');
+    const numbers = nodes.find((node) => node.id === 'vocab:numbers');
+
+    expect(path.completedAheadCount).toBe(2);
+    expect(katakana?.state).toBe('available');
+    expect(numbers?.state).toBe('locked');
+  });
+});

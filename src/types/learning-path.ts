@@ -60,4 +60,6 @@ export interface LearningPath {
   testOutOptions: LearningPathCheckpoint[];
   completedCount: number;
   totalCount: number;
+  /** Completed nodes in units after the current guided unit. */
+  completedAheadCount: number;
 }

@@ -65,6 +65,64 @@ describe('LessonAssessment saved attempt', () => {
     expect(html).toContain('Start over');
   });
 
+  it('preserves a mid-question saved answer (a selected but not yet advanced index) in the resume summary', () => {
+    Object.defineProperty(globalThis, 'localStorage', {
+      configurable: true,
+      value: memoryStorage(),
+    });
+    saveAssessmentDraft(
+      {
+        language: 'ja',
+        kind: 'grammar',
+        lessonIds: ['particles', 'verbs'],
+      },
+      {
+        questions: [
+          {
+            id: 0,
+            category: 'grammar',
+            question: 'Which particle marks the topic?',
+            options: ['は', 'が'],
+            correctIndex: 0,
+            lessonId: 'particles',
+          },
+          {
+            id: 1,
+            category: 'grammar',
+            question: 'Which is the polite form?',
+            options: ['食べる', '食べます'],
+            correctIndex: 1,
+            lessonId: 'verbs',
+          },
+        ],
+        index: 1,
+        correctCount: 1,
+        selectedIndex: 1,
+      },
+    );
+
+    const html = renderToStaticMarkup(
+      <LessonAssessment
+        lang="ja"
+        kind="grammar"
+        lessons={[
+          { id: 'particles', title: 'Basic Particles' },
+          { id: 'verbs', title: 'Verb Forms' },
+        ]}
+        onExit={() => {}}
+      />,
+    );
+
+    // The intro-phase resume banner reports the saved question position —
+    // the answered-but-not-yet-advanced index is not lost or reset.
+    expect(html).toContain('question 2 of 2');
+    expect(html).toContain('Resume check');
+    // Nothing from the (unreached, effect-driven) active phase — such as the
+    // progress bar or the quiz itself — leaks into the intro-phase markup.
+    expect(html).not.toContain('role="progressbar"');
+    expect(html).not.toContain('sr-only');
+  });
+
   afterAll(() => {
     delete (globalThis as { localStorage?: Storage }).localStorage;
   });

@@ -34,6 +34,13 @@ export default function LearningPath({ path, focusCurrent = false }: Props) {
   const testOutOptions = path.testOutOptions.filter(
     (option) => option.state === 'available',
   );
+  const completedAheadCount = path.completedAheadCount;
+  const showAheadAcknowledgment = !complete && completedAheadCount > 0;
+  const aheadArrow = rtl ? '←' : '→';
+  const aheadMessage =
+    completedAheadCount === 1
+      ? "You've already finished 1 lesson ahead of this step."
+      : `You've already finished ${completedAheadCount} lessons ahead of this step.`;
 
   useEffect(() => {
     if (!focusCurrent) return;
@@ -136,26 +143,39 @@ export default function LearningPath({ path, focusCurrent = false }: Props) {
       <div className="rounded-2xl border border-slate-200/70 bg-white shadow-sm dark:border-white/10 dark:bg-slate-800">
         {visibleUnits.map(renderUnit)}
       </div>
-      {futureUnits.length > 0 && (
+      {(futureUnits.length > 0 || showAheadAcknowledgment) && (
         <div className="mt-4 border-t border-slate-200/70 pt-4 dark:border-white/10">
-          <p className="text-sm font-semibold text-slate-800 dark:text-slate-100">
-            Coming next
-          </p>
-          <p className="mt-1 text-sm text-slate-500 dark:text-slate-400">
-            {futureUnits
-              .slice(0, 2)
-              .map((unit) => unit.title)
-              .join(' · ')}
-            {futureUnits.length > 2 ? ' · and more' : ''}
-          </p>
+          {futureUnits.length > 0 && (
+            <>
+              <p className="text-sm font-semibold text-slate-800 dark:text-slate-100">
+                Coming next
+              </p>
+              <p className="mt-1 text-sm text-slate-500 dark:text-slate-400">
+                {futureUnits
+                  .slice(0, 2)
+                  .map((unit) => unit.title)
+                  .join(' · ')}
+                {futureUnits.length > 2 ? ' · and more' : ''}
+              </p>
+            </>
+          )}
+          {showAheadAcknowledgment && (
+            <p
+              className={`text-sm text-slate-500 dark:text-slate-400 ${
+                futureUnits.length > 0 ? 'mt-2' : ''
+              }`}
+            >
+              {aheadMessage}
+            </p>
+          )}
           <Link
             to={ROUTES.learnCurriculum}
-            className="mt-2 inline-flex min-h-[44px] items-center rounded-xl px-2 text-sm font-medium text-indigo-600 hover:bg-indigo-50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 dark:text-indigo-300 dark:hover:bg-indigo-950/40"
+            className={`mt-2 inline-flex min-h-[44px] items-center gap-2 rounded-xl px-2 text-sm font-medium text-indigo-600 hover:bg-indigo-50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 dark:text-indigo-300 dark:hover:bg-indigo-950/40 ${
+              rtl ? 'flex-row-reverse' : ''
+            }`}
           >
             View full curriculum
-            <span className="ml-2" aria-hidden="true">
-              →
-            </span>
+            <span aria-hidden="true">{aheadArrow}</span>
           </Link>
         </div>
       )}

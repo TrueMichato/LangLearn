@@ -189,6 +189,16 @@ export function resolveLearningPath(
         ]
       : units;
   const nodes = allUnits.flatMap((unit) => unit.nodes);
+  const currentUnitIndex = allUnits.findIndex((unit) =>
+    unit.nodes.some((node) => node.state === 'available'),
+  );
+  const completedAheadCount =
+    currentUnitIndex === -1
+      ? 0
+      : allUnits
+          .slice(currentUnitIndex + 1)
+          .flatMap((unit) => unit.nodes)
+          .filter((node) => node.state === 'completed').length;
 
   return {
     language: manifest.language,
@@ -196,6 +206,7 @@ export function resolveLearningPath(
     testOutOptions: allUnits.flatMap((unit) => unit.checkpoints),
     completedCount: nodes.filter((node) => node.state === 'completed').length,
     totalCount: nodes.length,
+    completedAheadCount,
   };
 }
 

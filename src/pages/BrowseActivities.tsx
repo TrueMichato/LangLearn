@@ -79,16 +79,10 @@ function getBrowseSections(language?: string): CardSection[] {
               },
             ]
           : []),
-        {
-          to: ROUTES.listening,
-          emoji: '🎧',
-          title: 'Listening',
-          subtitle: 'Audio comprehension',
-        },
       ],
     },
     {
-      label: 'Practice',
+      label: 'Core practice',
       cards: [
         {
           to: ROUTES.sentenceBuilder,
@@ -107,6 +101,17 @@ function getBrowseSections(language?: string): CardSection[] {
           emoji: '🔄',
           title: 'Conjugations',
           subtitle: 'Verbs and noun cases',
+        },
+      ],
+    },
+    {
+      label: 'Focused drills',
+      cards: [
+        {
+          to: ROUTES.listening,
+          emoji: '🎧',
+          title: 'Listening',
+          subtitle: 'Audio comprehension',
         },
         {
           to: ROUTES.minimalPairs,

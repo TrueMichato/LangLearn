@@ -144,6 +144,80 @@ describe('GrammarQuiz direction and restored state', () => {
     expect(html).toContain('disabled=""');
     expect(html).toContain('Not quite');
   });
+
+  it('marks answer feedback as a single polite, atomic live region', () => {
+    const html = renderToStaticMarkup(
+      <GrammarQuiz
+        type="multiple-choice"
+        question="Which particle marks the topic?"
+        options={['は', 'が']}
+        answer={0}
+        selectedIndex={0}
+      />,
+    );
+
+    expect(html).toContain('role="status"');
+    expect(html).toContain('aria-live="polite"');
+    expect(html).toContain('aria-atomic="true"');
+    // Exactly one live-status region — no duplicate announcement.
+    expect(html.match(/role="status"/g)?.length).toBe(1);
+  });
+
+  it('leaves the embedded lesson-quiz prompt unchanged: no tabindex, no sr-only prefix', () => {
+    const html = renderToStaticMarkup(
+      <GrammarQuiz
+        type="multiple-choice"
+        question="Which particle marks the topic?"
+        options={['は', 'が']}
+        answer={0}
+      />,
+    );
+
+    expect(html).not.toContain('tabindex');
+    expect(html).not.toContain('sr-only');
+    expect(html).not.toContain('Question');
+  });
+
+  it('makes the prompt programmatically focusable and exposes an sr-only "Question X of Y" prefix for assessment use', () => {
+    const promptRef = { current: null };
+    const html = renderToStaticMarkup(
+      <GrammarQuiz
+        type="multiple-choice"
+        question="Which particle marks the topic?"
+        options={['は', 'が']}
+        answer={0}
+        promptRef={promptRef}
+        questionNumber={3}
+        totalQuestions={7}
+      />,
+    );
+
+    expect(html).toContain('tabindex="-1"');
+    expect(html).toContain('focus:ring-2');
+    expect(html).toContain('focus:ring-indigo-500');
+    expect(html).toContain('class="sr-only"');
+    expect(html).toContain('Question 3 of 7');
+    // The sr-only label comes before the visible question text.
+    expect(html.indexOf('Question 3 of 7')).toBeLessThan(
+      html.indexOf('Which particle marks the topic?'),
+    );
+  });
+
+  it('is focusable from a bare promptRef even without a question-position label', () => {
+    const promptRef = { current: null };
+    const html = renderToStaticMarkup(
+      <GrammarQuiz
+        type="multiple-choice"
+        question="Which particle marks the topic?"
+        options={['は', 'が']}
+        answer={0}
+        promptRef={promptRef}
+      />,
+    );
+
+    expect(html).toContain('tabindex="-1"');
+    expect(html).not.toContain('sr-only');
+  });
 });
 
 describe('AssessmentBlocked', () => {
