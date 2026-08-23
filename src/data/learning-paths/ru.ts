@@ -3,6 +3,7 @@ import { defineLearningPath, grammar, vocab } from './shared';
 export const RU_LEARNING_PATH = defineLearningPath({
   language: 'ru',
   letterPrerequisites: ['Cyrillic (Uppercase)', 'Cyrillic (Lowercase)'],
+  letterUnitLessons: [grammar('alphabet-sounds')],
   units: [
     {
       id: 'first-steps',
@@ -10,7 +11,6 @@ export const RU_LEARNING_PATH = defineLearningPath({
       description: 'Greet people and tune your ear to Russian sounds.',
       lessons: [
         vocab('greetings'),
-        grammar('alphabet-sounds'),
         grammar('pronunciation-rules'),
         vocab('numbers'),
       ],

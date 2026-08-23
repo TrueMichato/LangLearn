@@ -15,6 +15,8 @@ export interface LearningPathUnitManifest {
 export interface LearningPathManifest {
   language: string;
   letterPrerequisites: string[];
+  /** Lessons that belong in the generated "Learn the script" unit. */
+  letterUnitLessons?: LearningPathLessonRef[];
   units: LearningPathUnitManifest[];
 }
 
@@ -60,6 +62,6 @@ export interface LearningPath {
   testOutOptions: LearningPathCheckpoint[];
   completedCount: number;
   totalCount: number;
-  /** Completed nodes in units after the current guided unit. */
+  /** Completed nodes after the current guided step, including its unit. */
   completedAheadCount: number;
 }
