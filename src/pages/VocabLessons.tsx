@@ -13,6 +13,7 @@ import { SkeletonList } from '../components/common/Skeleton';
 import { computeTestOutRange } from '../lib/lesson-assessment';
 import {
   LESSON_ORIGIN_QUERY_PARAM,
+  LESSON_BROWSE_ORIGIN,
   LESSON_QUERY_PARAM,
   TEST_OUT_QUERY_PARAM,
   TEST_OUT_LESSON_QUERY_PARAM,
@@ -40,6 +41,8 @@ export default function VocabLessons() {
   );
   const assessmentFromLearn =
     searchParams.get(LESSON_ORIGIN_QUERY_PARAM) === 'learn';
+  const openedFromBrowse =
+    searchParams.get(LESSON_ORIGIN_QUERY_PARAM) === LESSON_BROWSE_ORIGIN;
   const requestedLessonId = searchParams.get(LESSON_QUERY_PARAM);
   const displayedLessonId = activeLessonId ?? requestedLessonId;
   const loading = loadedLanguage !== selectedLang;
@@ -122,7 +125,12 @@ export default function VocabLessons() {
     });
 
   const exitToLessons = () => {
-    navigate(ROUTES.vocabLessons, { replace: true });
+    navigate(
+      openedFromBrowse
+        ? `${ROUTES.vocabLessons}?${LESSON_ORIGIN_QUERY_PARAM}=${LESSON_BROWSE_ORIGIN}`
+        : ROUTES.vocabLessons,
+      { replace: true },
+    );
     setActiveLessonId(null);
   };
   const returnFromAssessment = () => {
@@ -195,10 +203,14 @@ export default function VocabLessons() {
     <div>
       {!activeLessonId && (
         <button
-          onClick={() => navigate('/learn')}
+          onClick={() =>
+            navigate(
+              openedFromBrowse ? ROUTES.browseActivities : ROUTES.learn,
+            )
+          }
           className="inline-flex min-h-[44px] items-center text-indigo-600 dark:text-indigo-400 text-sm font-medium mb-3 hover:underline press-feedback"
         >
-          ← Back to Learn
+          ← Back to {openedFromBrowse ? 'Lessons & practice' : 'Learn'}
         </button>
       )}
       <h2 className="text-lg font-semibold text-slate-700 dark:text-slate-200 mb-4">Vocabulary Lessons</h2>
@@ -330,7 +342,16 @@ export default function VocabLessons() {
                   </button>
                   {!lp?.completed && (
                     <button
-                      onClick={() => navigate(vocabTestOutRoute(lesson.id))}
+                      onClick={() =>
+                        navigate(
+                          vocabTestOutRoute(
+                            lesson.id,
+                            openedFromBrowse
+                              ? LESSON_BROWSE_ORIGIN
+                              : undefined,
+                          ),
+                        )
+                      }
                       className="mt-1 inline-flex min-h-[44px] items-center text-xs font-medium text-indigo-600 dark:text-indigo-400 hover:underline press-feedback"
                     >
                       Know this already? Test out →

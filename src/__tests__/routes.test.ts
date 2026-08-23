@@ -6,6 +6,7 @@ import {
   grammarTestOutRoute,
   guidedLettersRoute,
   isKnownRoute,
+  lessonLibraryRoute,
   lettersRoute,
   vocabLessonRoute,
   vocabTestOutRoute,
@@ -121,12 +122,32 @@ describe('test-out deep links', () => {
     expect(vocabTestOutRoute('days-months')).toBe(`${ROUTES.vocabLessons}?${TEST_OUT_QUERY_PARAM}=days-months`);
   });
 
+  describe('lesson library deep links', () => {
+    it('keeps the Lessons & practice origin on ordered lesson libraries', () => {
+      expect(lessonLibraryRoute(ROUTES.grammar)).toBe(
+        `${ROUTES.grammar}?from=browse`,
+      );
+      expect(lessonLibraryRoute(ROUTES.vocabLessons)).toBe(
+        `${ROUTES.vocabLessons}?from=browse`,
+      );
+    });
+  });
+
   it('adds only the enumerated Learn origin when a path launches a test-out', () => {
     expect(grammarTestOutRoute('verb-forms', 'learn')).toBe(
       `${ROUTES.grammar}?${TEST_OUT_QUERY_PARAM}=verb-forms&from=learn`,
     );
     expect(vocabTestOutRoute('days-months', 'learn')).toBe(
       `${ROUTES.vocabLessons}?${TEST_OUT_QUERY_PARAM}=days-months&from=learn`,
+    );
+  });
+
+  it('preserves the lesson-library origin when a learner tests out', () => {
+    expect(grammarTestOutRoute('verb-forms', 'browse')).toBe(
+      `${ROUTES.grammar}?${TEST_OUT_QUERY_PARAM}=verb-forms&from=browse`,
+    );
+    expect(vocabTestOutRoute('days-months', 'browse')).toBe(
+      `${ROUTES.vocabLessons}?${TEST_OUT_QUERY_PARAM}=days-months&from=browse`,
     );
   });
 

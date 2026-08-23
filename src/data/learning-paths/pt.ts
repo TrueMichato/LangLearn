@@ -29,16 +29,32 @@ export const PT_LEARNING_PATH = defineLearningPath({
       lessons: [vocab('verbs'), grammar('present-ar'), vocab('body')],
     },
     {
-      id: 'more-actions',
-      title: 'More everyday actions',
-      description: 'Add -er and -ir verbs around home, school, and work.',
-      lessons: [vocab('house'), grammar('present-er-ir'), vocab('school-work')],
-    },
-    {
-      id: 'being-there',
-      title: 'Being and being there',
-      description: 'Choose ser or estar while describing places and conditions.',
-      lessons: [vocab('transport'), grammar('ser-estar'), vocab('weather')],
+      id: 'expanding-actions',
+      title: 'Expand your everyday verbs',
+      description:
+        'Add more action verbs and the two ways to say “to be” in either order. Both paths support practical conversation.',
+      strands: [
+        {
+          id: 'more-actions',
+          title: 'More actions',
+          description: 'Add -er and -ir verbs around home, school, and work.',
+          lessons: [
+            vocab('house'),
+            grammar('present-er-ir'),
+            vocab('school-work'),
+          ],
+        },
+        {
+          id: 'being-there',
+          title: 'Being and being there',
+          description: 'Choose ser or estar while describing places and conditions.',
+          lessons: [
+            vocab('transport'),
+            grammar('ser-estar'),
+            vocab('weather'),
+          ],
+        },
+      ],
     },
     {
       id: 'practical-life',

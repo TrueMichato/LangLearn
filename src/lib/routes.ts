@@ -64,7 +64,17 @@ export const LESSON_QUERY_PARAM = 'lesson';
 export const TEST_OUT_QUERY_PARAM = 'testOut';
 export const TEST_OUT_LESSON_QUERY_PARAM = 'testOutLesson';
 export const LESSON_ORIGIN_QUERY_PARAM = 'from';
-export type LessonOrigin = 'learn';
+export type LessonOrigin = 'learn' | 'browse';
+export const LESSON_BROWSE_ORIGIN: LessonOrigin = 'browse';
+
+export function lessonLibraryRoute(
+  route: typeof ROUTES.grammar | typeof ROUTES.vocabLessons,
+): string {
+  const params = new URLSearchParams({
+    [LESSON_ORIGIN_QUERY_PARAM]: LESSON_BROWSE_ORIGIN,
+  });
+  return `${route}?${params.toString()}`;
+}
 
 export function grammarLessonRoute(lessonId: string): string {
   return `${ROUTES.grammar}?${LESSON_QUERY_PARAM}=${encodeURIComponent(lessonId)}`;

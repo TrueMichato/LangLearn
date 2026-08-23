@@ -152,6 +152,31 @@ describe('learning path manifests', () => {
     },
   );
 
+  const curriculumBranches = [
+    ['ja', 'everyday-foundations', ['Time and actions', 'People and things']],
+    ['ru', 'foundations', ['Sound and rhythm', 'People and things']],
+    ['ar', 'sounds-and-time', ['Hear and count', 'Read and tell time']],
+    ['es', 'expanding-actions', ['More actions', 'Being and being there']],
+    ['pt', 'expanding-actions', ['More actions', 'Being and being there']],
+    ['ro', 'nouns-and-verbs', ['One and many', 'Being and having']],
+  ] as const;
+
+  it.each(curriculumBranches)(
+    '%s includes a meaningful %s fork',
+    (language, unitId, strandTitles) => {
+      const unit = LEARNING_PATHS[language].units.find(
+        (candidate) => candidate.id === unitId,
+      );
+
+      expect(unit?.strands?.map((strand) => strand.title)).toEqual(
+        strandTitles,
+      );
+      expect(
+        unit?.strands?.every((strand) => strand.lessons.length > 0),
+      ).toBe(true);
+    },
+  );
+
   it('offers Russian letter practice and alphabet sounds together', () => {
     const manifest = LEARNING_PATHS.ru;
     const path = resolveLearningPath(
@@ -346,17 +371,84 @@ describe('resolveLearningPath', () => {
     });
     const option = path.testOutOptions.find(
       (candidate) =>
-        candidate.unitId === 'everyday-time' &&
+        candidate.unitId === 'everyday-foundations' &&
         candidate.kind === 'grammar',
     );
 
     expect(option).toMatchObject({
-      lessonCount: 2,
+      lessonCount: 3,
       firstLessonTitle: 'Basic Particles (は、が、を、に、で)',
-      lastLessonTitle: 'Verb Forms (ます、て、た)',
+      lastLessonTitle: 'Adjective Types (い vs な adjectives)',
       state: 'available',
     });
   });
+
+  it.each([
+    ['ja', 'everyday-foundations'],
+    ['ru', 'foundations'],
+    ['ar', 'sounds-and-time'],
+    ['es', 'expanding-actions'],
+    ['pt', 'expanding-actions'],
+    ['ro', 'nouns-and-verbs'],
+  ] as const)(
+    'opens both %s curriculum strands together and rejoins before the next unit',
+    (language, unitId) => {
+      const branchManifest = LEARNING_PATHS[language];
+      const branchIndex = branchManifest.units.findIndex(
+        (unit) => unit.id === unitId,
+      );
+      const beforeBranch = [
+        ...(branchManifest.letterUnitLessons ?? []),
+        ...branchManifest.units
+          .slice(0, branchIndex)
+          .flatMap(unitLessons),
+      ];
+      const branchLessons = unitLessons(branchManifest.units[branchIndex]);
+      const toProgress = (lesson: (typeof branchLessons)[number]) =>
+        progress(
+          lesson.kind === 'vocab'
+            ? `vocab/${lesson.lessonId}`
+            : lesson.lessonId,
+          language,
+        );
+      const branchContent = {
+        grammar: indexFor(GRAMMAR_INDEXES, language),
+        vocab: indexFor(VOCAB_INDEXES, language),
+      };
+      const atFork = resolveLearningPath(branchManifest, branchContent, {
+        progress: beforeBranch.map(toProgress),
+        completedLetters: new Set(branchManifest.letterPrerequisites),
+      });
+      const fork = atFork.units.find((unit) => unit.id === unitId);
+
+      expect(
+        fork?.strands.map((strand) =>
+          strand.nodes.filter((node) => node.state === 'available').length,
+        ),
+      ).toEqual([1, 1]);
+      expect(
+        fork?.strands.map((strand) => strand.nodes[0].id),
+      ).toContain(atFork.recommendedNodeId);
+      expect(
+        atFork.units[branchIndex + (branchManifest.letterPrerequisites.length > 0 ? 1 : 0) + 1]
+          ?.nodes.every((node) => node.state === 'locked'),
+      ).toBe(true);
+
+      const afterFork = resolveLearningPath(branchManifest, branchContent, {
+        progress: [...beforeBranch, ...branchLessons].map(toProgress),
+        completedLetters: new Set(branchManifest.letterPrerequisites),
+      });
+      const resolvedForkIndex = afterFork.units.findIndex(
+        (unit) => unit.id === unitId,
+      );
+      const nextUnit = afterFork.units[resolvedForkIndex + 1];
+
+      expect(nextUnit.nodes[0].state).toBe('available');
+      expect(nextUnit.nodes.slice(1).every((node) => node.state === 'locked')).toBe(
+        true,
+      );
+    },
+  );
 });
 
 describe('resolveLearningPath completedAheadCount', () => {

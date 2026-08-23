@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import ExternalResources from '../components/common/ExternalResources';
 import LanguagePicker from '../components/common/LanguagePicker';
+import LearnModeNav from '../components/learn/LearnModeNav';
 import { getAlphabetsForLanguage } from '../data/alphabets';
 import { hasNumbers } from '../data/numbers';
 import { useCurrentLanguage } from '../hooks/useCurrentLanguage';
@@ -11,7 +12,7 @@ import {
   readRecentLearnActivities,
   recordRecentLearnActivity,
 } from '../lib/recent-learn-activities';
-import { ROUTES, lettersRoute } from '../lib/routes';
+import { ROUTES, lessonLibraryRoute, lettersRoute } from '../lib/routes';
 import { useSettingsStore } from '../stores/settingsStore';
 
 interface ActivityCard {
@@ -24,6 +25,7 @@ interface ActivityCard {
 
 interface CardSection {
   label: string;
+  description: string;
   cards: ActivityCard[];
 }
 
@@ -54,19 +56,20 @@ function getBrowseSections(language?: string): CardSection[] {
 
   return [
     {
-      label: 'Input and study',
+      label: 'Lesson libraries',
+      description: 'Prefer one subject at a time? Browse every lesson in order.',
       cards: [
         {
-          to: ROUTES.grammar,
+          to: lessonLibraryRoute(ROUTES.grammar),
           emoji: '📖',
-          title: 'Grammar',
-          subtitle: 'Rules and patterns',
+          title: 'Grammar lessons',
+          subtitle: 'All grammar lessons in course order',
         },
         {
-          to: ROUTES.vocabLessons,
+          to: lessonLibraryRoute(ROUTES.vocabLessons),
           emoji: '📝',
-          title: 'Vocabulary',
-          subtitle: 'Themed word sets',
+          title: 'Vocabulary lessons',
+          subtitle: 'All vocabulary lessons in course order',
         },
         ...letterCards,
         ...(hasArabic
@@ -82,7 +85,8 @@ function getBrowseSections(language?: string): CardSection[] {
       ],
     },
     {
-      label: 'Core practice',
+      label: 'Practice activities',
+      description: 'Choose the skill you want to work on right now.',
       cards: [
         {
           to: ROUTES.sentenceBuilder,
@@ -102,11 +106,6 @@ function getBrowseSections(language?: string): CardSection[] {
           title: 'Conjugations',
           subtitle: 'Verbs and noun cases',
         },
-      ],
-    },
-    {
-      label: 'Focused drills',
-      cards: [
         {
           to: ROUTES.listening,
           emoji: '🎧',
@@ -138,7 +137,8 @@ function getBrowseSections(language?: string): CardSection[] {
       ],
     },
     {
-      label: 'Extras',
+      label: 'More ways to learn',
+      description: 'Explore music or check your current level.',
       cards: [
         {
           to: ROUTES.lyrics,
@@ -181,13 +181,17 @@ function CardBody({ card }: { card: ActivityCard }) {
 function ActivityCardLink({
   card,
   featured = false,
+  divided = false,
 }: {
   card: ActivityCard;
   featured?: boolean;
+  divided?: boolean;
 }) {
   const className = featured
     ? 'flex min-h-[68px] items-center gap-3 rounded-2xl border border-slate-200/70 bg-white p-4 shadow-sm transition-all duration-200 hover:-translate-y-0.5 hover:shadow-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 dark:border-white/10 dark:bg-slate-800'
-    : 'flex min-h-[60px] items-center gap-3 rounded-xl px-3 py-2 hover:bg-slate-50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 dark:hover:bg-slate-700/50';
+    : `flex min-h-[60px] items-center gap-3 px-3 py-2 hover:bg-slate-50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-indigo-500 dark:hover:bg-slate-700/50 ${
+        divided ? 'border-t border-slate-200/70 dark:border-white/10' : ''
+      }`;
 
   if (card.disabled) {
     return (
@@ -214,6 +218,35 @@ function ActivityCardLink({
   );
 }
 
+function ActivitySection({ section }: { section: CardSection }) {
+  const headingId = `activity-section-${section.label
+    .toLowerCase()
+    .replaceAll(' ', '-')}`;
+
+  return (
+    <section aria-labelledby={headingId} className="mb-5">
+      <h3
+        id={headingId}
+        className="text-sm font-semibold text-slate-800 dark:text-slate-100"
+      >
+        {section.label}
+      </h3>
+      <p className="mt-1 text-sm text-slate-500 dark:text-slate-400">
+        {section.description}
+      </p>
+      <div className="mt-3 overflow-hidden rounded-2xl border border-slate-200/70 bg-white dark:border-white/10 dark:bg-slate-800">
+        {section.cards.map((card, index) => (
+          <ActivityCardLink
+            key={card.to + card.title}
+            card={card}
+            divided={index > 0}
+          />
+        ))}
+      </div>
+    </section>
+  );
+}
+
 export default function BrowseActivitiesPage() {
   const activeLanguages = useSettingsStore((state) => state.activeLanguages);
   const { language, setLanguage } = useCurrentLanguage();
@@ -234,21 +267,15 @@ export default function BrowseActivitiesPage() {
 
   return (
     <div>
-      <Link
-        to={ROUTES.learn}
-        className="inline-flex min-h-[44px] items-center gap-2 text-sm font-medium text-indigo-600 transition-colors hover:text-indigo-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 dark:text-indigo-300 dark:hover:text-indigo-200"
-      >
-        <span aria-hidden="true">←</span>
-        Back to Learn
-      </Link>
-
-      <h2 className="mb-2 mt-3 text-lg font-semibold text-slate-800 dark:text-slate-100">
-        Browse activities
+      <h2 className="mb-2 text-lg font-semibold text-slate-800 dark:text-slate-100">
+        Lessons &amp; practice
       </h2>
       <p className="mb-4 text-sm text-slate-500 dark:text-slate-400">
-        Continue something familiar, or open the full activity list when you
-        know what kind of practice you want.
+        Follow one lesson subject in order, or jump straight into the skill you
+        want to practice.
       </p>
+
+      <LearnModeNav />
 
       <LanguagePicker
         options={activeLanguages}
@@ -257,6 +284,9 @@ export default function BrowseActivitiesPage() {
         label="Activity language"
         className="mb-4"
       />
+
+      <ActivitySection section={sections[0]} />
+      <ActivitySection section={sections[1]} />
 
       {recentCard && (
         <section aria-labelledby="continue-activity-heading" className="mb-5">
@@ -286,39 +316,9 @@ export default function BrowseActivitiesPage() {
         </section>
       )}
 
-      <section aria-labelledby="all-activities-heading">
-        <h3
-          id="all-activities-heading"
-          className="mb-2 text-sm font-semibold text-slate-800 dark:text-slate-100"
-        >
-          All activities
-        </h3>
-        <div className="space-y-2">
-          {sections.map((section) => (
-            <details
-              key={section.label}
-              className="rounded-2xl border border-slate-200/70 bg-white dark:border-white/10 dark:bg-slate-800"
-            >
-              <summary className="flex min-h-[52px] cursor-pointer list-none items-center justify-between gap-3 px-4 py-3 text-sm font-semibold text-slate-800 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-indigo-500 dark:text-slate-100">
-                {section.label}
-                <span
-                  className="text-xs font-medium text-slate-500 dark:text-slate-400"
-                >
-                  {section.cards.length}
-                </span>
-              </summary>
-              <div className="border-t border-slate-200/70 p-2 dark:border-white/10">
-                {section.cards.map((card) => (
-                  <ActivityCardLink
-                    key={card.to + card.title}
-                    card={card}
-                  />
-                ))}
-              </div>
-            </details>
-          ))}
-        </div>
-      </section>
+      {sections.slice(2).map((section) => (
+        <ActivitySection key={section.label} section={section} />
+      ))}
 
       <details className="mt-4 border-t border-slate-200/70 pt-2 dark:border-white/10">
         <summary className="flex min-h-[44px] cursor-pointer list-none items-center justify-between text-sm font-medium text-indigo-600 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 dark:text-indigo-300">
