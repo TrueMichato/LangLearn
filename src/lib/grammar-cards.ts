@@ -16,6 +16,29 @@ export interface GrammarCardFields {
   grammarRule: string;
 }
 
+const GRAMMAR_CARD_BLOCK_REGEX = /<!--\s*grammar-card:\s*(.*?)\s*-->/g;
+
+/** Parse every valid grammar-card metadata block from lesson markdown. */
+export function extractGrammarCardSources(markdown: string): GrammarCardSource[] {
+  const cards: GrammarCardSource[] = [];
+  GRAMMAR_CARD_BLOCK_REGEX.lastIndex = 0;
+  let match: RegExpExecArray | null;
+  while ((match = GRAMMAR_CARD_BLOCK_REGEX.exec(markdown)) !== null) {
+    try {
+      cards.push(JSON.parse(match[1]) as GrammarCardSource);
+    } catch {
+      // Malformed content is ignored here and surfaced by content validation.
+    }
+  }
+  return cards;
+}
+
+/** Remove grammar-card metadata before rendering lesson markdown. */
+export function stripGrammarCardSources(markdown: string): string {
+  GRAMMAR_CARD_BLOCK_REGEX.lastIndex = 0;
+  return markdown.replace(GRAMMAR_CARD_BLOCK_REGEX, '');
+}
+
 /** A blank placeholder: a run of ASCII underscores or full-width underscores. */
 export const BLANK_REGEX = /[_＿]{2,}/;
 

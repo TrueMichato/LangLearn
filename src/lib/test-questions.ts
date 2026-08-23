@@ -1,4 +1,10 @@
 import { isRTL } from './rtl';
+import {
+  buildGrammarCardFields,
+  extractGrammarCardSources,
+  hasBlank,
+  type GrammarCardSource,
+} from './grammar-cards';
 
 export type TestType = 'vocabulary' | 'grammar' | 'mixed' | 'full';
 
@@ -67,7 +73,7 @@ function pickRandom<T>(arr: T[], n: number): T[] {
 }
 
 function pickDistractors(correct: string, pool: string[], count: number): string[] {
-  const filtered = pool.filter((w) => w !== correct);
+  const filtered = [...new Set(pool.filter((w) => w !== correct))];
   return pickRandom(filtered, count);
 }
 
@@ -248,6 +254,19 @@ export async function generateTestQuestions(lang: string, type: TestType): Promi
 
 /** A cap so an enormous range (most of a course) can't generate an unbounded quiz. */
 const MAX_RANGE_QUESTIONS = 40;
+/** Five checks make an 80% pass meaningful while keeping each lesson bounded. */
+const RANGE_QUESTIONS_PER_LESSON = 5;
+
+function requiredQuestionsPerLesson(lessonCount: number): number {
+  if (lessonCount <= 0) return 0;
+  return Math.max(
+    1,
+    Math.min(
+      RANGE_QUESTIONS_PER_LESSON,
+      Math.floor(MAX_RANGE_QUESTIONS / lessonCount),
+    ),
+  );
+}
 
 function directionMetadata(
   lang: string,
@@ -267,15 +286,23 @@ function directionMetadata(
   };
 }
 
+function targetOptionMetadata(
+  lang: string,
+  options: readonly string[],
+): Pick<Question, 'targetOptionIndices'> {
+  const { targetOptionIndices } = directionMetadata(lang, '', options);
+  return targetOptionIndices ? { targetOptionIndices } : {};
+}
+
 export interface LessonRangeQuestions {
   questions: Question[];
   /** Lesson ids (subset of the input, same order) that contributed a question. */
   coveredLessonIds: string[];
   /**
-   * Lesson ids that could not be given an attributable question — no vocab
-   * words, no quiz blocks, or (for vocab) too few distinct words anywhere in
-   * the range to build multiple-choice distractors. A non-empty list here
-   * means coverage cannot be guaranteed and the range should be rejected.
+   * Lesson ids that could not provide enough attributable questions — no
+   * vocab words, too few distinct distractors, or too little grammar metadata.
+   * A non-empty list means a meaningful check cannot be guaranteed and the
+   * range should be rejected.
    */
   missingLessonIds: string[];
 }
@@ -311,8 +338,8 @@ function buildVocabQuestion(
   meaningPool: string[],
   wordPool: string[],
   usedQuestions: ReadonlySet<string>,
+  wordToMeaning: boolean,
 ): Question | null {
-  const wordToMeaning = Math.random() < 0.5;
   if (wordToMeaning) {
     const question = `What does "${word.word}" (${word.reading}) mean?`;
     if (usedQuestions.has(question)) return null;
@@ -345,7 +372,7 @@ function buildVocabQuestion(
   };
 }
 
-/** Try every word in `lesson`, in random order, until one yields a usable question. */
+/** Try both directions for every word until one yields a new usable question. */
 function coveringVocabQuestion(
   lang: string,
   lesson: VocabLesson,
@@ -354,14 +381,17 @@ function coveringVocabQuestion(
   usedQuestions: ReadonlySet<string>,
 ): Question | null {
   for (const word of shuffle(lesson.words)) {
-    const q = buildVocabQuestion(
-      lang,
-      { ...word, lessonId: lesson.id },
-      meaningPool,
-      wordPool,
-      usedQuestions,
-    );
-    if (q) return q;
+    for (const wordToMeaning of shuffle([true, false])) {
+      const q = buildVocabQuestion(
+        lang,
+        { ...word, lessonId: lesson.id },
+        meaningPool,
+        wordPool,
+        usedQuestions,
+        wordToMeaning,
+      );
+      if (q) return q;
+    }
   }
   return null;
 }
@@ -398,44 +428,96 @@ async function generateVocabRangeQuestions(lang: string, lessonIds: readonly str
     coveredLessonIds.push(lessonId);
   }
 
-  // Pass 2: a second question for lessons with more than one word, for
-  // depth — still capped and still attributed, never at the expense of
-  // pass 1's coverage guarantee.
-  for (const lessonId of coveredLessonIds) {
-    if (questions.length >= MAX_RANGE_QUESTIONS) break;
-    const lesson = lessonsById.get(lessonId)!;
-    if (lesson.words.length < 2) continue;
-    const q = coveringVocabQuestion(
-      lang,
-      lesson,
-      meaningPool,
-      wordPool,
-      usedQuestions,
-    );
-    if (q) {
-      questions.push(q);
-      usedQuestions.add(q.question);
+  // Add questions round-robin so every covered lesson gets comparable depth
+  // before the overall cap is reached.
+  for (let round = 1; round < RANGE_QUESTIONS_PER_LESSON; round++) {
+    for (const lessonId of coveredLessonIds) {
+      if (questions.length >= MAX_RANGE_QUESTIONS) break;
+      const q = coveringVocabQuestion(
+        lang,
+        lessonsById.get(lessonId)!,
+        meaningPool,
+        wordPool,
+        usedQuestions,
+      );
+      if (q) {
+        questions.push(q);
+        usedQuestions.add(q.question);
+      }
     }
+    if (questions.length >= MAX_RANGE_QUESTIONS) break;
   }
 
-  const shuffled = shuffle(questions).map((q, i) => ({ ...q, id: i }));
-  return { questions: shuffled, coveredLessonIds, missingLessonIds };
+  const required = requiredQuestionsPerLesson(lessonIds.length);
+  const counts = new Map<string, number>();
+  for (const question of questions) {
+    if (!question.lessonId) continue;
+    counts.set(
+      question.lessonId,
+      (counts.get(question.lessonId) ?? 0) + 1,
+    );
+  }
+  const insufficient = coveredLessonIds.filter(
+    (lessonId) => (counts.get(lessonId) ?? 0) < required,
+  );
+  const validCoveredLessonIds = coveredLessonIds.filter(
+    (lessonId) => !insufficient.includes(lessonId),
+  );
+  const validLessons = new Set(validCoveredLessonIds);
+  const shuffled = shuffle(
+    questions.filter(
+      (question) =>
+        question.lessonId !== undefined && validLessons.has(question.lessonId),
+    ),
+  ).map((q, i) => ({ ...q, id: i }));
+  return {
+    questions: shuffled,
+    coveredLessonIds: validCoveredLessonIds,
+    missingLessonIds: [...missingLessonIds, ...insufficient],
+  };
 }
 
 interface QuizWithLesson extends GrammarQuiz {
   lessonId: string;
 }
 
-async function fetchGrammarQuizzesByIds(
+interface GrammarLessonMaterial {
+  quizzes: QuizWithLesson[];
+  cards: GrammarCardSource[];
+}
+
+interface GrammarLessonMeta {
+  id: string;
+  title: string;
+}
+
+async function fetchGrammarLessonMeta(
+  lang: string,
+): Promise<Map<string, GrammarLessonMeta>> {
+  try {
+    const res = await fetch(
+      `${import.meta.env.BASE_URL}content/grammar/${lang}/index.json`,
+    );
+    if (!res.ok) return new Map();
+    const lessons = (await res.json()) as GrammarLessonMeta[];
+    return new Map(lessons.map((lesson) => [lesson.id, lesson]));
+  } catch {
+    return new Map();
+  }
+}
+
+async function fetchGrammarMaterialByIds(
   lang: string,
   lessonIds: readonly string[],
-): Promise<Map<string, QuizWithLesson[]>> {
+): Promise<Map<string, GrammarLessonMaterial>> {
   const base = import.meta.env.BASE_URL;
-  const byLesson = new Map<string, QuizWithLesson[]>();
+  const byLesson = new Map<string, GrammarLessonMaterial>();
   const results = await Promise.allSettled(
     lessonIds.map(async (id) => {
       const res = await fetch(`${base}content/grammar/${lang}/${id}.md`);
-      if (!res.ok) return { id, quizzes: [] as GrammarQuiz[] };
+      if (!res.ok) {
+        return { id, quizzes: [] as GrammarQuiz[], cards: [] as GrammarCardSource[] };
+      }
       const text = await res.text();
       const quizzes: GrammarQuiz[] = [];
       for (const m of text.matchAll(/<!-- quiz:(.*?) -->/g)) {
@@ -445,70 +527,178 @@ async function fetchGrammarQuizzesByIds(
           /* skip malformed */
         }
       }
-      return { id, quizzes };
+      return { id, quizzes, cards: extractGrammarCardSources(text) };
     })
   );
   for (const r of results) {
     if (r.status === 'fulfilled') {
-      byLesson.set(r.value.id, r.value.quizzes.map((q) => ({ ...q, lessonId: r.value.id })));
+      byLesson.set(r.value.id, {
+        quizzes: r.value.quizzes.map((q) => ({
+          ...q,
+          lessonId: r.value.id,
+        })),
+        cards: r.value.cards,
+      });
     }
   }
   return byLesson;
 }
 
 async function generateGrammarRangeQuestions(lang: string, lessonIds: readonly string[]): Promise<LessonRangeQuestions> {
-  const byLesson = await fetchGrammarQuizzesByIds(lang, lessonIds);
+  const [byLesson, lessonMeta] = await Promise.all([
+    fetchGrammarMaterialByIds(lang, lessonIds),
+    fetchGrammarLessonMeta(lang),
+  ]);
 
   const questions: Question[] = [];
   const coveredLessonIds: string[] = [];
   const missingLessonIds: string[] = [];
-  const usedByLesson = new Map<string, Set<string>>();
+  const required = requiredQuestionsPerLesson(lessonIds.length);
+  const cardAnswerPool = [...byLesson.values()].flatMap((material) =>
+    material.cards.flatMap((card) => {
+      const fields = buildGrammarCardFields(card);
+      return fields?.word ? [fields.word] : [];
+    }),
+  );
+  const optionPool = [...byLesson.values()].flatMap((material) =>
+    material.quizzes.flatMap((quiz) => quiz.options),
+  );
+  const answerPool = [...cardAnswerPool, ...optionPool];
+  const rulePool = [...byLesson.values()].flatMap((material) =>
+    material.cards.map((card) => card.rule).filter(Boolean),
+  );
+  const topicPool = [...lessonMeta.values()].map((lesson) => lesson.title);
+  const candidatesByLesson = new Map<string, Question[]>();
 
-  const pick = (lessonId: string): QuizWithLesson | null => {
-    const list = byLesson.get(lessonId);
-    if (!list || list.length === 0) return null;
-    const used = usedByLesson.get(lessonId) ?? new Set<string>();
-    const remaining = list.filter((q) => !used.has(q.question));
-    if (remaining.length === 0) return null;
-    const [chosen] = pickRandom(remaining, 1);
-    used.add(chosen.question);
-    usedByLesson.set(lessonId, used);
-    return chosen;
-  };
+  for (const lessonId of lessonIds) {
+    const material = byLesson.get(lessonId);
+    if (!material) continue;
+    const candidates: Question[] = material.quizzes.map((quiz) => ({
+      id: 0,
+      category: 'grammar',
+      question: quiz.question,
+      options: quiz.options,
+      correctIndex: quiz.answer,
+      lessonId,
+      ...directionMetadata(lang, quiz.question, quiz.options),
+    }));
+    const clozeCandidates: Question[] = [];
+    for (const card of material.cards) {
+      const fields = buildGrammarCardFields(card);
+      if (!fields?.word) continue;
+      if (hasBlank(fields.contextSentence)) {
+        const question = `Complete the example: ${fields.contextSentence}`;
+        const distractors = pickDistractors(fields.word, answerPool, 3);
+        if (distractors.length === 3) {
+          const options = shuffle([fields.word, ...distractors]);
+          clozeCandidates.push({
+            id: 0,
+            category: 'grammar',
+            question,
+            options,
+            correctIndex: options.indexOf(fields.word),
+            lessonId,
+            ...targetOptionMetadata(lang, options),
+          });
+        }
+      }
+
+      if (card.example) {
+        const distractors = pickDistractors(card.rule, rulePool, 3);
+        if (distractors.length > 0) {
+          const options = shuffle([card.rule, ...distractors]);
+          const question = `Which rule does this example illustrate? ${card.example}`;
+          candidates.push({
+            id: 0,
+            category: 'grammar',
+            question,
+            options,
+            correctIndex: options.indexOf(card.rule),
+            lessonId,
+            ...targetOptionMetadata(lang, options),
+          });
+        }
+      }
+
+      const topic = lessonMeta.get(lessonId)?.title;
+      if (topic) {
+        const distractors = pickDistractors(topic, topicPool, 3);
+        if (distractors.length === 3) {
+          const topicPrompts = [
+            card.example
+              ? `Which grammar topic best matches this example? ${card.example}`
+              : null,
+            card.rule
+              ? `Which grammar topic covers this rule? ${card.rule}`
+              : null,
+            card.hint
+              ? `Which grammar topic does this hint support? ${card.hint}`
+              : null,
+            card.explanation
+              ? `Which grammar topic explains this idea? ${card.explanation}`
+              : null,
+          ].filter((prompt): prompt is string => prompt !== null);
+          for (const question of topicPrompts) {
+            const options = shuffle([topic, ...distractors]);
+            candidates.push({
+              id: 0,
+              category: 'grammar',
+              question,
+              options,
+              correctIndex: options.indexOf(topic),
+              lessonId,
+              ...targetOptionMetadata(lang, options),
+            });
+          }
+        }
+      }
+    }
+    const unique = [
+      ...new Map(
+        [...candidates, ...clozeCandidates].map((candidate) => [
+          candidate.question,
+          candidate,
+        ]),
+      ).values(),
+    ];
+    const clozeQuestions = unique.filter((candidate) =>
+      candidate.question.startsWith('Complete the example:'),
+    );
+    const otherQuestions = unique.filter(
+      (candidate) => !candidate.question.startsWith('Complete the example:'),
+    );
+    const [firstCloze, ...remainingCloze] = shuffle(clozeQuestions);
+    candidatesByLesson.set(
+      lessonId,
+      firstCloze
+        ? [firstCloze, ...shuffle(otherQuestions), ...remainingCloze]
+        : shuffle(otherQuestions),
+    );
+  }
 
   // Pass 1: one guaranteed, attributed question per lesson.
   for (const lessonId of lessonIds) {
-    const chosen = pick(lessonId);
+    const candidates = candidatesByLesson.get(lessonId) ?? [];
+    if (candidates.length < required) {
+      missingLessonIds.push(lessonId);
+      continue;
+    }
+    const chosen = candidates.shift();
     if (!chosen) {
       missingLessonIds.push(lessonId);
       continue;
     }
-    questions.push({
-      id: 0,
-      category: 'grammar',
-      question: chosen.question,
-      options: chosen.options,
-      correctIndex: chosen.answer,
-      lessonId,
-      ...directionMetadata(lang, chosen.question, chosen.options),
-    });
+    questions.push(chosen);
     coveredLessonIds.push(lessonId);
   }
 
-  // Pass 2: a second question where the lesson has more than one quiz block.
-  for (const lessonId of coveredLessonIds) {
+  for (let round = 1; round < RANGE_QUESTIONS_PER_LESSON; round++) {
+    for (const lessonId of coveredLessonIds) {
+      if (questions.length >= MAX_RANGE_QUESTIONS) break;
+      const chosen = candidatesByLesson.get(lessonId)?.shift();
+      if (chosen) questions.push(chosen);
+    }
     if (questions.length >= MAX_RANGE_QUESTIONS) break;
-    const chosen = pick(lessonId);
-    if (!chosen) continue;
-    questions.push({
-      id: 0,
-      category: 'grammar',
-      question: chosen.question,
-      options: chosen.options,
-      correctIndex: chosen.answer,
-      lessonId,
-      ...directionMetadata(lang, chosen.question, chosen.options),
-    });
   }
 
   const shuffled = shuffle(questions).map((q, i) => ({ ...q, id: i }));
@@ -533,6 +723,13 @@ export async function generateLessonRangeQuestions(
 ): Promise<LessonRangeQuestions> {
   if (lessonIds.length === 0) {
     return { questions: [], coveredLessonIds: [], missingLessonIds: [] };
+  }
+  if (lessonIds.length > MAX_RANGE_QUESTIONS) {
+    return {
+      questions: [],
+      coveredLessonIds: [],
+      missingLessonIds: [...lessonIds],
+    };
   }
   return kind === 'grammar'
     ? generateGrammarRangeQuestions(lang, lessonIds)

@@ -84,6 +84,48 @@ describe('learning path manifests', () => {
   it.each(['es', 'pt', 'ro'])('%s starts directly with lessons', (language) => {
     expect(LEARNING_PATHS[language].letterPrerequisites).toEqual([]);
   });
+
+  it.each(Object.entries(LEARNING_PATHS))(
+    '%s includes the first grammar and vocabulary lessons',
+    (language, manifest) => {
+      const firstGrammar = indexFor(GRAMMAR_INDEXES, language)[0].id;
+      const firstVocab = indexFor(VOCAB_INDEXES, language)[0].id;
+      const lessons = manifest.units.flatMap((unit) => unit.lessons);
+
+      expect(lessons).toContainEqual({
+        kind: 'grammar',
+        lessonId: firstGrammar,
+      });
+      expect(lessons).toContainEqual({
+        kind: 'vocab',
+        lessonId: firstVocab,
+      });
+    },
+  );
+
+  it.each(Object.entries(LEARNING_PATHS))(
+    '%s keeps its selected grammar lessons in curriculum order',
+    (language, manifest) => {
+      const grammarIndex = indexFor(GRAMMAR_INDEXES, language);
+      const orderById = new Map(
+        grammarIndex.map((lesson, index) => [lesson.id, index]),
+      );
+      const grammarOrder = manifest.units
+        .flatMap((unit) => unit.lessons)
+        .filter((lesson) => lesson.kind === 'grammar')
+        .map((lesson) => {
+          const order = orderById.get(lesson.lessonId);
+          if (order === undefined) {
+            throw new Error(`Missing grammar lesson ${lesson.lessonId}`);
+          }
+          return order;
+        });
+
+      expect(grammarOrder).toEqual(
+        [...grammarOrder].sort((left, right) => left - right),
+      );
+    },
+  );
 });
 
 describe('resolveLearningPath', () => {

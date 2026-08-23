@@ -11,7 +11,11 @@ import {
   type GrammarCardSync,
 } from '../../db/lesson-cards';
 import { useXPStore } from '../../stores/xpStore';
-import { type GrammarCardSource } from '../../lib/grammar-cards';
+import {
+  extractGrammarCardSources,
+  stripGrammarCardSources,
+  type GrammarCardSource,
+} from '../../lib/grammar-cards';
 import {
   parseLessonCandidates,
   indexBySourceText,
@@ -37,20 +41,6 @@ interface QuizData {
 }
 
 const QUIZ_REGEX = /<!--\s*quiz:(.*?)\s*-->/g;
-const GRAMMAR_CARD_REGEX = /<!--\s*grammar-card:\s*(.*?)\s*-->/g;
-
-/** Extract grammar-card blocks from lesson markdown. */
-function extractGrammarCards(md: string): GrammarCardSource[] {
-  const cards: GrammarCardSource[] = [];
-  GRAMMAR_CARD_REGEX.lastIndex = 0;
-  let match: RegExpExecArray | null;
-  while ((match = GRAMMAR_CARD_REGEX.exec(md)) !== null) {
-    try {
-      cards.push(JSON.parse(match[1]) as GrammarCardSource);
-    } catch { /* skip malformed blocks */ }
-  }
-  return cards;
-}
 
 /** Add or repair this lesson's grammar cards. */
 async function syncGrammarCards(
@@ -167,7 +157,7 @@ export default function LessonView({ lang, lessonId, onBack, lessons, onNavigate
   const syncCards = useCallback(async () => {
     const md = rawMarkdown.current;
     if (!md) return;
-    const cards = extractGrammarCards(md);
+    const cards = extractGrammarCardSources(md);
     if (cards.length === 0) return;
     const result = await syncGrammarCards(cards, lang, lessonId);
     if (result.added > 0 || result.repaired > 0) setCardSync(result);
@@ -206,8 +196,7 @@ export default function LessonView({ lang, lessonId, onBack, lessons, onNavigate
         // Grammar-card blocks are SRS metadata only — strip them from the
         // displayed markdown so they never render as raw text. The full md
         // (with the blocks) is kept in rawMarkdown.current for card extraction.
-        GRAMMAR_CARD_REGEX.lastIndex = 0;
-        const displayMd = md.replace(GRAMMAR_CARD_REGEX, '');
+        const displayMd = stripGrammarCardSources(md);
         const parts: typeof segments = [];
         let lastIndex = 0;
 
