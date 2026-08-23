@@ -2,7 +2,7 @@ import { useState, useEffect, useRef, useMemo } from 'react';
 import type { VocabLesson, VocabExercise, TypingItem, ListeningItem } from '../../types/vocab';
 import { speak, TTS_SPEEDS, type TTSSpeed } from '../../lib/tts';
 import { isRTL } from '../../lib/rtl';
-import { addWord, wordExists } from '../../db/words';
+import { saveWordsKey, saveWordsToVocabulary, wordExists } from '../../db/words';
 import { markLessonComplete } from '../../db/lessons';
 import { useTimerStore } from '../../stores/timerStore';
 import { useXPStore } from '../../stores/xpStore';
@@ -13,6 +13,7 @@ import { SkeletonList } from '../common/Skeleton';
 import TypingExercise from './TypingExercise';
 import ListeningExercise from './ListeningExercise';
 import ClickableText from './ClickableText';
+import AddAllWordsButton, { type AddAllWordsResult } from './AddAllWordsButton';
 
 const XP_PER_VOCAB_LESSON = 25;
 const XP_PER_EXERCISE_CORRECT = 2;
@@ -64,13 +65,24 @@ export default function VocabLessonView({ lang, lessonId, onBack }: Props) {
   const [totalCorrect, setTotalCorrect] = useState(0);
   const [totalQuestions, setTotalQuestions] = useState(0);
   const [wordCardIdx, setWordCardIdx] = useState(0);
-  const [addingWords, setAddingWords] = useState(false);
-  const [wordsAdded, setWordsAdded] = useState(false);
   const [savedWords, setSavedWords] = useState<Record<string, 'saving' | 'saved' | 'exists'>>({});
+  const [wordSaveError, setWordSaveError] = useState('');
+  const [bulkSaveError, setBulkSaveError] = useState('');
   const [ttsSpeed, setTtsSpeed] = useState<TTSSpeed>(0.75);
   const timerStarted = useRef(false);
   const start = useTimerStore((s) => s.start);
   const stop = useTimerStore((s) => s.stop);
+  // Guards a synchronous double-click before the "saving" state has even
+  // committed, and stops either save path from writing to state once the
+  // learner has already navigated away.
+  const addingAllRef = useRef(false);
+  const isMountedRef = useRef(true);
+  useEffect(() => {
+    isMountedRef.current = true;
+    return () => {
+      isMountedRef.current = false;
+    };
+  }, []);
 
   useEffect(() => {
     fetch(`${import.meta.env.BASE_URL}content/vocab/${lang}/${lessonId}.json`)
@@ -113,22 +125,35 @@ export default function VocabLessonView({ lang, lessonId, onBack }: Props) {
 
   async function handleSaveWord(w: VocabLesson['words'][number]) {
     if (savedWords[w.word]) return;
+    setWordSaveError('');
     setSavedWords((prev) => ({ ...prev, [w.word]: 'saving' }));
-    const exists = await wordExists(w.word, lang);
-    if (exists) {
-      setSavedWords((prev) => ({ ...prev, [w.word]: 'exists' }));
-      return;
+    try {
+      const result = await saveWordsToVocabulary([
+        {
+          language: lang,
+          word: w.word,
+          reading: w.reading,
+          meaning: w.meaning,
+          contextSentence: w.example,
+          sourceTextId: null,
+          tags: ['vocab-lesson', lessonId],
+        },
+      ]);
+      if (!isMountedRef.current) return;
+      setSavedWords((prev) => ({
+        ...prev,
+        [w.word]: result.added === 1 ? 'saved' : 'exists',
+      }));
+    } catch (error) {
+      console.error('Could not save lesson word', error);
+      if (!isMountedRef.current) return;
+      setSavedWords((prev) => {
+        const next = { ...prev };
+        delete next[w.word];
+        return next;
+      });
+      setWordSaveError(`Couldn’t save ${w.word}. Please try again.`);
     }
-    await addWord({
-      language: lang,
-      word: w.word,
-      reading: w.reading,
-      meaning: w.meaning,
-      contextSentence: w.example,
-      sourceTextId: null,
-      tags: ['vocab-lesson', lessonId],
-    });
-    setSavedWords((prev) => ({ ...prev, [w.word]: 'saved' }));
   }
 
   const exercises: VocabExercise[] = useMemo(() => {
@@ -188,14 +213,21 @@ export default function VocabLessonView({ lang, lessonId, onBack }: Props) {
     }
   }
 
-  async function handleAddWords() {
-    if (!lesson || addingWords) return;
-    setAddingWords(true);
-    let added = 0;
-    for (const w of lesson.words) {
-      const exists = await wordExists(w.word, lang);
-      if (!exists) {
-        await addWord({
+  async function handleAddAllWords() {
+    if (!lesson || addingAllRef.current) return;
+    addingAllRef.current = true;
+    setBulkSaveError('');
+    setSavedWords((prev) => {
+      const next = { ...prev };
+      for (const w of lesson.words) {
+        if (!next[w.word]) next[w.word] = 'saving';
+      }
+      return next;
+    });
+
+    try {
+      const result = await saveWordsToVocabulary(
+        lesson.words.map((w) => ({
           language: lang,
           word: w.word,
           reading: w.reading,
@@ -203,13 +235,52 @@ export default function VocabLessonView({ lang, lessonId, onBack }: Props) {
           contextSentence: w.example,
           sourceTextId: null,
           tags: ['vocab-lesson', lessonId],
-        });
-        added++;
-      }
+        })),
+      );
+
+      if (!isMountedRef.current) return;
+      setSavedWords((prev) => {
+        const next = { ...prev };
+        for (const w of lesson.words) {
+          const key = saveWordsKey(w.word, lang);
+          next[w.word] = result.outcomes[key] === 'added' ? 'saved' : 'exists';
+        }
+        return next;
+      });
+    } catch (error) {
+      console.error('Could not save all lesson words', error);
+      if (!isMountedRef.current) return;
+      setSavedWords((prev) => {
+        const next = { ...prev };
+        for (const w of lesson.words) {
+          if (next[w.word] === 'saving') delete next[w.word];
+        }
+        return next;
+      });
+      setBulkSaveError('Your words are still safe. Try adding them again.');
+    } finally {
+      addingAllRef.current = false;
     }
-    setWordsAdded(true);
-    setAddingWords(false);
   }
+
+  // Individual saves and the bulk action share this one `savedWords` map, so
+  // the bulk button's state is always in sync with whatever has been saved so
+  // far — one word at a time, all at once, or a mix of both.
+  const totalWords = lesson?.words.length ?? 0;
+  const savedCount = lesson ? lesson.words.filter((w) => savedWords[w.word] === 'saved').length : 0;
+  const existsCount = lesson ? lesson.words.filter((w) => savedWords[w.word] === 'exists').length : 0;
+  const savingCount = lesson ? lesson.words.filter((w) => savedWords[w.word] === 'saving').length : 0;
+  const allWordsAccountedFor = totalWords > 0 && savedCount + existsCount === totalWords;
+  const bulkStatus: 'idle' | 'saving' | 'done' | 'error' =
+    savingCount > 0
+      ? 'saving'
+      : allWordsAccountedFor
+        ? 'done'
+        : bulkSaveError
+          ? 'error'
+          : 'idle';
+  const bulkResult: AddAllWordsResult | null =
+    allWordsAccountedFor ? { added: savedCount, alreadySaved: existsCount } : null;
 
   // Step 1: Word Introduction
   if (step === 'words') {
@@ -259,7 +330,7 @@ export default function VocabLessonView({ lang, lessonId, onBack }: Props) {
             <button
               onClick={() => handleSaveWord(word)}
               disabled={!!savedWords[word.word]}
-              className={`inline-flex items-center gap-1 px-3 py-1.5 rounded-lg text-sm font-medium transition-colors min-h-[36px] ${
+              className={`inline-flex items-center gap-1 px-3 py-1.5 rounded-lg text-sm font-medium transition-colors min-h-[44px] ${
                 savedWords[word.word] === 'saved'
                   ? 'bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-300'
                   : savedWords[word.word] === 'exists'
@@ -277,6 +348,11 @@ export default function VocabLessonView({ lang, lessonId, onBack }: Props) {
                     ? 'Saving…'
                     : '➕ Save to flashcards'}
             </button>
+            {wordSaveError && (
+              <p role="alert" className="mt-2 text-sm text-amber-700 dark:text-amber-300">
+                {wordSaveError}
+              </p>
+            )}
           </div>
 
           <div className="mt-5 pt-4 border-t border-slate-100 dark:border-slate-700">
@@ -306,6 +382,15 @@ export default function VocabLessonView({ lang, lessonId, onBack }: Props) {
               }`}
             />
           ))}
+        </div>
+
+        <div className="mb-4">
+          <AddAllWordsButton status={bulkStatus} result={bulkResult} onClick={handleAddAllWords} />
+          {bulkSaveError && (
+            <p role="alert" className="mt-2 text-sm text-amber-700 dark:text-amber-300">
+              {bulkSaveError}
+            </p>
+          )}
         </div>
 
         <div className="flex gap-2">
@@ -347,6 +432,15 @@ export default function VocabLessonView({ lang, lessonId, onBack }: Props) {
           <span className="text-sm text-slate-500 dark:text-slate-400">
             Exercise {exerciseIdx + 1} / {exercises.length}
           </span>
+        </div>
+
+        <div className="mb-4">
+          <AddAllWordsButton status={bulkStatus} result={bulkResult} onClick={handleAddAllWords} />
+          {bulkSaveError && (
+            <p role="alert" className="mt-2 text-sm text-amber-700 dark:text-amber-300">
+              {bulkSaveError}
+            </p>
+          )}
         </div>
 
         {currentExercise.type === 'match' && (
@@ -394,21 +488,12 @@ export default function VocabLessonView({ lang, lessonId, onBack }: Props) {
       </div>
 
       <div className="space-y-3">
-        <button
-          onClick={handleAddWords}
-          disabled={addingWords || wordsAdded}
-          className={`w-full py-3 rounded-xl font-medium transition-colors min-h-[44px] ${
-            wordsAdded
-              ? 'bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-300'
-              : 'bg-indigo-600 text-white hover:bg-indigo-700'
-          }`}
-        >
-          {wordsAdded
-            ? '✅ Words added to vocabulary'
-            : addingWords
-              ? 'Adding words...'
-              : '📚 Add words to vocabulary'}
-        </button>
+        <AddAllWordsButton status={bulkStatus} result={bulkResult} onClick={handleAddAllWords} />
+        {bulkSaveError && (
+          <p role="alert" className="text-sm text-amber-700 dark:text-amber-300">
+            {bulkSaveError}
+          </p>
+        )}
 
         <button
           onClick={() => {

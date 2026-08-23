@@ -1,5 +1,6 @@
 import type { StudyActivity } from '../lib/activities';
 import Dexie, { type EntityTable } from 'dexie';
+import { CURRENT_SCHEMA_VERSION, DB_NAME } from './constants';
 
 export interface Word {
   id?: number;
@@ -71,6 +72,17 @@ export interface LessonProgress {
   quizScore: number; // 0-100 percentage
   completedAt: string; // ISO date
   attempts: number;
+  /**
+   * How this lesson came to be completed. Non-indexed on purpose — it is
+   * read only when displaying a single lesson's own progress row, never
+   * queried across the table, so it doesn't earn a place in `.stores()` and
+   * doesn't force a schema version bump.
+   *
+   * Rows written before this field existed have it as `undefined`. Treat a
+   * missing value as `'lesson'` (normal completion) everywhere it's read —
+   * never assume `'tested-out'` for legacy rows.
+   */
+  completionMethod?: 'lesson' | 'tested-out';
 }
 
 export interface CharacterProgress {
@@ -129,7 +141,7 @@ export interface Snapshot {
   sizeBytes: number;
 }
 
-const db = new Dexie('LangLearnDB') as Dexie & {
+const db = new Dexie(DB_NAME) as Dexie & {
   words: EntityTable<Word, 'id'>;
   reviews: EntityTable<Review, 'id'>;
   texts: EntityTable<Text, 'id'>;
@@ -277,7 +289,7 @@ db.version(9).stores({
     });
 });
 
-db.version(10).stores({
+db.version(CURRENT_SCHEMA_VERSION).stores({
   words: '++id, [language+createdAt], [word+language], language, word, createdAt, *tags, type',
   reviews: '++id, [wordId+nextReviewDate], wordId, nextReviewDate',
   texts: '++id, language, createdAt',
@@ -294,6 +306,5 @@ db.version(10).stores({
 
 /** Schema version the running bundle expects. Snapshots record it so a restore
  *  can tell whether it predates the current shape. */
-export const CURRENT_SCHEMA_VERSION = 10;
-
 export { db };
+export { CURRENT_SCHEMA_VERSION, DB_NAME } from './constants';

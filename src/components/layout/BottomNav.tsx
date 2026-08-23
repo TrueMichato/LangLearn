@@ -31,7 +31,7 @@ export default function BottomNav() {
 
   return (
     <nav className="fixed bottom-0 left-0 right-0 z-50">
-      <div ref={navRef} className="app-frame relative flex justify-around glass border-t md:border-x border-slate-200/60 dark:border-white/10 pb-[env(safe-area-inset-bottom)]">
+      <div ref={navRef} className="app-frame relative flex h-[var(--shell-bottom-clearance)] justify-around glass border-t md:border-x border-slate-200/60 pb-[var(--safe-bottom)] dark:border-white/10">
         {/* Sliding active indicator */}
         <div
           className="absolute top-0 h-[3px] rounded-full bg-indigo-500 transition-all duration-300 ease-out"

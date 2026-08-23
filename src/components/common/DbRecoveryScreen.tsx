@@ -5,10 +5,13 @@ import {
   restoreSnapshot,
   exportSnapshot,
   dismissDataLoss,
+  exportRecoveryPoint,
+  restoreRecoveryPoint,
 } from '../../db/recovery';
 import { downloadJson } from '../../db/backup';
 import type { Snapshot } from '../../db/schema';
 import { formatBytes } from '../../lib/storage-persistence';
+import { getRecoveryCapsuleInfo } from '../../db/recovery-capsule';
 
 /**
  * What the learner sees when the database will not open.
@@ -56,12 +59,38 @@ export default function DbRecoveryScreen({
   };
 
   const { title, explanation, primaryAction } = describe(status);
-  const lostSnapshot = status.kind === 'data-loss-suspected' ? status.snapshot : null;
+  const lostRecovery =
+    status.kind === 'data-loss-suspected' ? status.recovery : null;
+  const lostCapsule =
+    lostRecovery?.kind === 'capsule' ? lostRecovery.capsule : null;
+  const capsuleInfo = lostCapsule ? getRecoveryCapsuleInfo() : null;
 
   const handleStartFresh = () => {
-    if (!lostSnapshot) return;
-    dismissDataLoss(lostSnapshot);
+    if (!lostRecovery) return;
+    dismissDataLoss(lostRecovery);
     onDismiss?.();
+  };
+
+  const handleCapsuleRestore = async () => {
+    if (!lostRecovery || lostRecovery.kind !== 'capsule' || busy) return;
+    setBusy(true);
+    setMessage('');
+    try {
+      await restoreRecoveryPoint(lostRecovery);
+      setMessage('Restored. Reloading…');
+      setTimeout(() => window.location.reload(), 800);
+    } catch {
+      setMessage('The recovery copy could not be restored. Nothing was changed.');
+      setBusy(false);
+    }
+  };
+
+  const handleCapsuleDownload = () => {
+    if (!lostRecovery || lostRecovery.kind !== 'capsule') return;
+    downloadJson(
+      exportRecoveryPoint(lostRecovery),
+      `langlearn-recovery-${lostRecovery.capsule.createdAt.slice(0, 10)}.json`,
+    );
   };
 
   return (
@@ -74,13 +103,13 @@ export default function DbRecoveryScreen({
 
         <div className="rounded-2xl border border-green-200/70 dark:border-green-900/40 bg-green-50 dark:bg-green-950/40 p-4">
           <p className="text-sm text-green-800 dark:text-green-200">
-            {lostSnapshot
-              ? "There's a saved copy of your progress right here on this device. Restoring it below brings back your words, reviews and streak. Please don't clear the site data or delete the app first."
+            {lostRecovery
+              ? "A recent copy of your progress is still on this device. Restoring it below brings back its saved words, current review schedules, study activity and lesson progress. Please don't clear the site data or delete the app first."
               : "Your words, reviews and streak are still saved on this device. Please don't clear the site data or delete the app — that would remove them for good."}
           </p>
         </div>
 
-        {primaryAction && !lostSnapshot && (
+        {primaryAction && !lostRecovery && (
           <button
             onClick={() => window.location.reload()}
             className="w-full min-h-[44px] rounded-xl bg-indigo-600 px-5 py-2 font-medium text-white hover:bg-indigo-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
@@ -89,12 +118,44 @@ export default function DbRecoveryScreen({
           </button>
         )}
 
+        {lostCapsule && (
+          <section className="rounded-2xl border border-slate-200/70 bg-white p-4 dark:border-white/10 dark:bg-slate-800">
+            <h2 className="text-sm font-semibold text-slate-800 dark:text-slate-100">
+              Browser recovery copy
+            </h2>
+            <p className="mt-1 text-xs text-slate-500 dark:text-slate-400">
+              Saved {new Date(lostCapsule.createdAt).toLocaleString()}
+              {capsuleInfo ? ` · ${formatBytes(capsuleInfo.sizeBytes)}` : ''}
+            </p>
+            <div className="mt-3 flex gap-2">
+              <button
+                onClick={handleCapsuleRestore}
+                disabled={busy}
+                className="min-h-[44px] flex-1 rounded-xl bg-indigo-600 px-4 py-2 text-sm font-medium text-white hover:bg-indigo-700 disabled:opacity-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+              >
+                Restore progress
+              </button>
+              <button
+                onClick={handleCapsuleDownload}
+                className="min-h-[44px] rounded-xl border border-slate-200/70 px-4 py-2 text-sm font-medium text-slate-700 hover:bg-slate-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 dark:border-white/10 dark:text-slate-200 dark:hover:bg-slate-700/50"
+              >
+                Download
+              </button>
+            </div>
+            {message && (
+              <p className="mt-3 text-sm text-slate-600 dark:text-slate-300" role="status">
+                {message}
+              </p>
+            )}
+          </section>
+        )}
+
         <section className="rounded-2xl border border-slate-200/70 dark:border-white/10 bg-white dark:bg-slate-800 p-4">
           <h2 className="text-sm font-semibold text-slate-800 dark:text-slate-100">
             Saved snapshots
           </h2>
           <p className="mt-1 text-xs text-slate-500 dark:text-slate-400">
-            Automatic copies taken before each app update.
+            Copies stored with the main database for undoing a bad app update.
           </p>
 
           {snapshots.length === 0 ? (
@@ -134,14 +195,14 @@ export default function DbRecoveryScreen({
             </ul>
           )}
 
-          {message && (
+          {message && !lostCapsule && (
             <p className="mt-3 text-sm text-slate-600 dark:text-slate-300" role="status">
               {message}
             </p>
           )}
         </section>
 
-        {lostSnapshot && (
+        {lostRecovery && (
           <button
             onClick={handleStartFresh}
             disabled={busy}
@@ -179,7 +240,7 @@ function describe(status: DbStatus): {
       return {
         title: 'Your progress looks like it went missing',
         explanation:
-          "LangLearn opened normally but found none of your words or reviews, which usually means an update didn't finish cleanly. Nothing is lost — restore the most recent snapshot below to pick up where you left off.",
+          'LangLearn opened normally but found none of your saved progress. A recent local recovery copy is available below so you can pick up close to where you left off.',
         primaryAction: null,
       };
     default:

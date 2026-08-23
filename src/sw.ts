@@ -1,5 +1,6 @@
 /// <reference lib="webworker" />
 import { cleanupOutdatedCaches, precacheAndRoute } from 'workbox-precaching';
+import { CURRENT_SCHEMA_VERSION, DB_NAME } from './db/constants';
 
 declare let self: ServiceWorkerGlobalScope;
 
@@ -8,9 +9,6 @@ cleanupOutdatedCaches();
 precacheAndRoute(self.__WB_MANIFEST);
 
 // ─── IndexedDB access (lightweight, no full schema needed) ───
-
-const DB_NAME = 'LangLearnDB';
-const DB_VERSION = 8;
 
 interface NotificationPrefsBlob {
   notificationsEnabled: boolean;
@@ -38,7 +36,7 @@ interface DailyActivityRow {
 
 function openDB(): Promise<IDBDatabase> {
   return new Promise((resolve, reject) => {
-    const req = indexedDB.open(DB_NAME, DB_VERSION);
+    const req = indexedDB.open(DB_NAME, CURRENT_SCHEMA_VERSION);
     req.onsuccess = () => resolve(req.result);
     req.onerror = () => reject(req.error);
     // If upgrade is needed, just close — we don't create stores here

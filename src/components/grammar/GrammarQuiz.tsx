@@ -1,4 +1,5 @@
-import { useState } from 'react';
+import { useState, type Ref } from 'react';
+import { rtlProps, rtlTextAlign } from '../../lib/rtl';
 
 interface GrammarQuizProps {
   type: 'multiple-choice';
@@ -6,48 +7,136 @@ interface GrammarQuizProps {
   options: string[];
   answer: number;
   onAnswer?: (correct: boolean) => void;
+  onSelect?: (index: number, correct: boolean) => void;
+  selectedIndex?: number | null;
+  language?: string;
+  questionDirection?: 'target';
+  targetOptionIndices?: number[];
+  /**
+   * Ref to the question prompt element. Only set by assessment-style callers
+   * that need to move focus back to the question (fresh start, resume, next
+   * question). Embedded lesson quizzes never pass this, so their prompt stays
+   * a plain, non-focusable paragraph.
+   */
+  promptRef?: Ref<HTMLParagraphElement>;
+  /** 1-based position of this question, e.g. `questionNumber={2}` of `totalQuestions={5}`. */
+  questionNumber?: number;
+  totalQuestions?: number;
 }
 
-export default function GrammarQuiz({ question, options, answer, onAnswer }: GrammarQuizProps) {
-  const [selected, setSelected] = useState<number | null>(null);
+export default function GrammarQuiz({
+  question,
+  options,
+  answer,
+  onAnswer,
+  onSelect,
+  selectedIndex,
+  language,
+  questionDirection,
+  targetOptionIndices = [],
+  promptRef,
+  questionNumber,
+  totalQuestions,
+}: GrammarQuizProps) {
+  const [internalSelected, setInternalSelected] = useState<number | null>(null);
+  const controlled = selectedIndex !== undefined;
+  const selected = controlled ? selectedIndex : internalSelected;
 
   const handleSelect = (index: number) => {
     if (selected !== null) return;
-    setSelected(index);
-    onAnswer?.(index === answer);
+    if (!controlled) setInternalSelected(index);
+    const correct = index === answer;
+    onSelect?.(index, correct);
+    onAnswer?.(correct);
   };
 
   const isCorrect = selected === answer;
+  const isAssessmentPrompt = promptRef !== undefined || questionNumber !== undefined;
+  const promptFocusClass = isAssessmentPrompt
+    ? 'rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 dark:focus:ring-indigo-400 dark:focus:ring-offset-slate-800'
+    : '';
 
   return (
-    <div className="my-6 rounded-2xl p-4">
-      <p className="font-semibold text-slate-800 dark:text-slate-100 mb-3">🧠 {question}</p>
+    <div className="my-6 p-4">
+      <p
+        ref={promptRef}
+        tabIndex={isAssessmentPrompt ? -1 : undefined}
+        className={`mb-3 font-semibold text-slate-800 dark:text-slate-100 ${promptFocusClass} ${
+          questionDirection === 'target' && language
+            ? rtlTextAlign(language)
+            : ''
+        }`}
+        {...(questionDirection === 'target' && language
+          ? rtlProps(language)
+          : {})}
+      >
+        {questionNumber !== undefined && totalQuestions !== undefined && (
+          <span className="sr-only">
+            Question {questionNumber} of {totalQuestions}{' '}
+          </span>
+        )}
+        <span aria-hidden="true">🧠 </span>
+        {question}
+      </p>
       <div className="grid grid-cols-2 gap-2">
         {options.map((opt, i) => {
+          const targetOption = Boolean(
+            language && targetOptionIndices.includes(i),
+          );
           let cls =
-            'rounded-xl px-3 py-2 text-sm font-medium border transition-colors text-center ';
+            'min-h-[44px] rounded-xl px-3 py-2 text-sm font-medium border transition-colors text-center disabled:cursor-default ';
           if (selected === null) {
-            cls += 'border-slate-300 bg-white dark:bg-slate-800 dark:border-slate-600 text-slate-700 dark:text-slate-200 hover:border-indigo-400 hover:bg-indigo-50 dark:hover:bg-indigo-900 cursor-pointer';
+            cls += 'border-slate-300 bg-white dark:bg-slate-800 dark:border-slate-600 text-slate-700 dark:text-slate-200 hover:border-indigo-500 dark:hover:border-indigo-400 cursor-pointer';
           } else if (i === answer) {
             cls += 'border-green-500 bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200';
           } else if (i === selected) {
-            cls += 'border-red-500 bg-red-100 dark:bg-red-900 text-red-800 dark:text-red-200';
+            cls += 'border-amber-400 bg-amber-50 dark:border-amber-700 dark:bg-amber-950/40 text-amber-900 dark:text-amber-200';
           } else {
             cls += 'border-slate-200 bg-slate-50 dark:bg-slate-800 dark:border-slate-700 text-slate-500 dark:text-slate-400';
           }
 
           return (
-            <button key={i} className={cls} onClick={() => handleSelect(i)}>
+            <button
+              key={i}
+              type="button"
+              className={`${cls} ${
+                targetOption && language ? rtlTextAlign(language) : ''
+              }`}
+              onClick={() => handleSelect(i)}
+              disabled={selected !== null}
+              {...(targetOption && language ? rtlProps(language) : {})}
+            >
               {opt}
             </button>
           );
         })}
       </div>
       {selected !== null && (
-        <p className={`mt-3 text-sm font-medium ${isCorrect ? 'text-green-700 dark:text-green-300' : 'text-red-700 dark:text-red-300'}`}>
-          {isCorrect
-            ? 'Correct! 🎉'
-            : `Not quite — the answer is ${options[answer]}. Keep going! 💪`}
+        <p
+          role="status"
+          aria-live="polite"
+          aria-atomic="true"
+          className={`mt-3 text-sm font-medium ${
+            isCorrect
+              ? 'text-green-700 dark:text-green-300'
+              : 'text-amber-800 dark:text-amber-300'
+          }`}
+        >
+          {isCorrect ? (
+            'Correct! 🎉'
+          ) : (
+            <>
+              Not quite — the answer is{' '}
+              <span
+                {...(language && targetOptionIndices.includes(answer)
+                  ? rtlProps(language)
+                  : {})}
+              >
+                {options[answer]}
+              </span>
+              . Keep going! 💪
+            </>
+          )}
         </p>
       )}
     </div>

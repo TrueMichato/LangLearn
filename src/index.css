@@ -10,7 +10,10 @@
   /* Safe area insets for standalone PWA mode (viewport-fit=cover) */
   --safe-top: env(safe-area-inset-top, 0px);
   --safe-bottom: env(safe-area-inset-bottom, 0px);
-  --nav-height: 5rem;
+  /* 3.875rem of nav content + its 1px top border. */
+  --nav-height: calc(3.875rem + 1px);
+  --shell-bottom-clearance: calc(var(--nav-height) + var(--safe-bottom));
+  scroll-padding-bottom: var(--shell-bottom-clearance);
 
   /* Focused app column width (phone-first, framed on desktop) */
   --app-max: 34rem;
@@ -75,6 +78,10 @@
    reads as intended: in the desktop side rails, behind the frame. */
 .app-surface {
   background-color: rgb(var(--frame));
+}
+
+.app-shell {
+  padding-bottom: var(--shell-bottom-clearance);
 }
 
 @media (min-width: 768px) {

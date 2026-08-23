@@ -1,3 +1,5 @@
+import { DB_NAME } from '../db/constants';
+
 export function isNotificationSupported(): boolean {
   return typeof window !== 'undefined' && 'Notification' in window;
 }
@@ -242,7 +244,7 @@ export async function getLastSyncWake(): Promise<number | null> {
   if (typeof indexedDB === 'undefined') return null;
   return new Promise((resolve) => {
     try {
-      const req = indexedDB.open('LangLearnDB');
+      const req = indexedDB.open(DB_NAME);
       req.onsuccess = () => {
         const db = req.result;
         try {
@@ -279,4 +281,3 @@ export async function getLastSyncWake(): Promise<number | null> {
     }
   });
 }
-

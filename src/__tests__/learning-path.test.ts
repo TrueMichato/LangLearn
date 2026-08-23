@@ -1,0 +1,266 @@
+import { describe, expect, it } from 'vitest';
+import { getAlphabetsForLanguage } from '../data/alphabets';
+import { LEARNING_PATHS } from '../data/learning-paths';
+import { resolveLearningPath } from '../lib/learning-path';
+import type { LessonProgress } from '../db/schema';
+
+interface LessonMeta {
+  id: string;
+  title: string;
+}
+
+const GRAMMAR_INDEXES = import.meta.glob(
+  '../../public/content/grammar/*/index.json',
+  { eager: true, import: 'default' },
+) as Record<string, LessonMeta[]>;
+const VOCAB_INDEXES = import.meta.glob(
+  '../../public/content/vocab/*/index.json',
+  { eager: true, import: 'default' },
+) as Record<string, LessonMeta[]>;
+
+function indexFor(
+  indexes: Record<string, LessonMeta[]>,
+  language: string,
+): LessonMeta[] {
+  const entry = Object.entries(indexes).find(([path]) =>
+    path.endsWith(`/${language}/index.json`),
+  );
+  if (!entry) throw new Error(`Missing ${language} content index`);
+  return entry[1];
+}
+
+function progress(lessonId: string): LessonProgress {
+  return {
+    id: `ja/${lessonId}`,
+    language: 'ja',
+    lessonId,
+    completed: true,
+    quizScore: 100,
+    completedAt: '2026-08-21T00:00:00.000Z',
+    attempts: 1,
+  };
+}
+
+describe('learning path manifests', () => {
+  it.each(Object.entries(LEARNING_PATHS))(
+    '%s references real, non-duplicated lessons and alphabets',
+    (language, manifest) => {
+      const grammarIds = new Set(
+        indexFor(GRAMMAR_INDEXES, language).map((lesson) => lesson.id),
+      );
+      const vocabIds = new Set(
+        indexFor(VOCAB_INDEXES, language).map((lesson) => lesson.id),
+      );
+      const alphabetNames = new Set(
+        getAlphabetsForLanguage(language).map((alphabet) => alphabet.name),
+      );
+      const seen = new Set<string>();
+
+      expect(manifest.language).toBe(language);
+      expect(manifest.units.length).toBeGreaterThan(0);
+      for (const alphabetName of manifest.letterPrerequisites) {
+        expect(alphabetNames.has(alphabetName)).toBe(true);
+      }
+      for (const unit of manifest.units) {
+        expect(unit.lessons.length).toBeGreaterThan(0);
+        for (const lesson of unit.lessons) {
+          const key = `${lesson.kind}:${lesson.lessonId}`;
+          expect(seen.has(key)).toBe(false);
+          seen.add(key);
+          expect(
+            lesson.kind === 'grammar'
+              ? grammarIds.has(lesson.lessonId)
+              : vocabIds.has(lesson.lessonId),
+          ).toBe(true);
+        }
+      }
+    },
+  );
+
+  it.each(['ja', 'ru', 'ar'])('%s starts with required script work', (language) => {
+    expect(LEARNING_PATHS[language].letterPrerequisites.length).toBeGreaterThan(0);
+  });
+
+  it.each(['es', 'pt', 'ro'])('%s starts directly with lessons', (language) => {
+    expect(LEARNING_PATHS[language].letterPrerequisites).toEqual([]);
+  });
+});
+
+describe('resolveLearningPath', () => {
+  const manifest = LEARNING_PATHS.ja;
+  const content = {
+    grammar: indexFor(GRAMMAR_INDEXES, 'ja'),
+    vocab: indexFor(VOCAB_INDEXES, 'ja'),
+  };
+
+  it('makes the first letter prerequisite the only available node', () => {
+    const path = resolveLearningPath(manifest, content, {
+      progress: [],
+      completedLetters: new Set(),
+    });
+    const nodes = path.units.flatMap((unit) => unit.nodes);
+
+    expect(nodes[0].kind).toBe('letters');
+    expect(nodes[0].state).toBe('available');
+    expect(nodes.slice(1).every((node) => node.state === 'locked')).toBe(true);
+    expect(
+      path.units
+        .flatMap((unit) => unit.checkpoints)
+        .every((checkpoint) => checkpoint.state === 'locked'),
+    ).toBe(true);
+    expect(path.testOutOptions.every((option) => option.state === 'locked')).toBe(
+      true,
+    );
+  });
+
+  it('opens the first lesson only after every letter prerequisite', () => {
+    const path = resolveLearningPath(manifest, content, {
+      progress: [],
+      completedLetters: new Set(manifest.letterPrerequisites),
+    });
+    const nodes = path.units.flatMap((unit) => unit.nodes);
+    const lessonNodes = nodes.filter((node) => node.kind !== 'letters');
+
+    expect(lessonNodes[0].state).toBe('available');
+    expect(lessonNodes.slice(1).every((node) => node.state === 'locked')).toBe(true);
+    const firstUnit = path.units.find((unit) => unit.id === manifest.units[0].id);
+    expect(firstUnit?.checkpoints.map((checkpoint) => checkpoint.route)).toEqual([
+      '/vocab-lessons?testOut=numbers&from=learn',
+      '/grammar?testOut=particles&from=learn',
+    ]);
+    expect(
+      firstUnit?.checkpoints.every((checkpoint) => checkpoint.state === 'available'),
+    ).toBe(true);
+    expect(firstUnit?.checkpoints.map((checkpoint) => checkpoint.lessonCount)).toEqual([
+      2,
+      1,
+    ]);
+    expect(path.testOutOptions[0]).toMatchObject({
+      unitTitle: firstUnit?.title,
+      firstLessonTitle: 'Greetings & Introductions',
+      lastLessonTitle: 'Numbers 1-100',
+    });
+  });
+
+  it('advances to one next node while preserving completed history', () => {
+    const firstUnit = manifest.units[0];
+    const completedProgress = firstUnit.lessons.slice(0, 2).map((lesson) =>
+      progress(
+        lesson.kind === 'vocab'
+          ? `vocab/${lesson.lessonId}`
+          : lesson.lessonId,
+      ),
+    );
+    const path = resolveLearningPath(manifest, content, {
+      progress: completedProgress,
+      completedLetters: new Set(manifest.letterPrerequisites),
+    });
+    const lessonNodes = path.units
+      .flatMap((unit) => unit.nodes)
+      .filter((node) => node.kind !== 'letters');
+
+    expect(lessonNodes[0].state).toBe('completed');
+    expect(lessonNodes[1].state).toBe('completed');
+    expect(lessonNodes[2].state).toBe('available');
+    expect(lessonNodes[3].state).toBe('locked');
+    const firstVocabOption = path.testOutOptions.find(
+      (option) =>
+        option.unitId === firstUnit.id && option.kind === 'vocab',
+    );
+    expect(firstVocabOption).toMatchObject({
+      lessonCount: 1,
+      firstLessonTitle: 'Numbers 1-100',
+      lastLessonTitle: 'Numbers 1-100',
+      state: 'available',
+    });
+    expect(
+      path.testOutOptions.find(
+        (option) =>
+          option.unitId === firstUnit.id && option.kind === 'grammar',
+      )?.state,
+    ).toBe('completed');
+  });
+
+  it('describes the same contiguous range when later lessons were completed out of order', () => {
+    const path = resolveLearningPath(manifest, content, {
+      progress: [progress('verb-forms')],
+      completedLetters: new Set(manifest.letterPrerequisites),
+    });
+    const option = path.testOutOptions.find(
+      (candidate) =>
+        candidate.unitId === 'everyday-time' &&
+        candidate.kind === 'grammar',
+    );
+
+    expect(option).toMatchObject({
+      lessonCount: 2,
+      firstLessonTitle: 'Basic Particles (は、が、を、に、で)',
+      lastLessonTitle: 'Verb Forms (ます、て、た)',
+      state: 'available',
+    });
+  });
+});
+
+describe('resolveLearningPath completedAheadCount', () => {
+  const manifest = LEARNING_PATHS.ja;
+  const content = {
+    grammar: indexFor(GRAMMAR_INDEXES, 'ja'),
+    vocab: indexFor(VOCAB_INDEXES, 'ja'),
+  };
+
+  it('is zero while the current step has nothing completed after it', () => {
+    const path = resolveLearningPath(manifest, content, {
+      progress: [],
+      completedLetters: new Set(['Hiragana']),
+    });
+
+    expect(path.completedAheadCount).toBe(0);
+  });
+
+  it('is zero once every node on the path is complete', () => {
+    const allLessons = manifest.units.flatMap((unit) => unit.lessons);
+    const completedProgress = allLessons.map((lesson) =>
+      progress(
+        lesson.kind === 'vocab' ? `vocab/${lesson.lessonId}` : lesson.lessonId,
+      ),
+    );
+    const path = resolveLearningPath(manifest, content, {
+      progress: completedProgress,
+      completedLetters: new Set(manifest.letterPrerequisites),
+    });
+
+    expect(path.completedCount).toBe(path.totalCount);
+    expect(path.completedAheadCount).toBe(0);
+  });
+
+  it('counts a single future vocab lesson finished while letters are still current, without moving the current step or unlocking anything', () => {
+    const path = resolveLearningPath(manifest, content, {
+      progress: [progress('vocab/greetings')],
+      completedLetters: new Set(['Hiragana']),
+    });
+    const nodes = path.units.flatMap((unit) => unit.nodes);
+    const katakana = nodes.find((node) => node.id === 'letters:Katakana');
+    const greetings = nodes.find((node) => node.id === 'vocab:greetings');
+    const particles = nodes.find((node) => node.id === 'grammar:particles');
+
+    expect(path.completedAheadCount).toBe(1);
+    expect(katakana?.state).toBe('available');
+    expect(nodes.filter((node) => node.state === 'available')).toHaveLength(1);
+    expect(greetings?.state).toBe('completed');
+    expect(particles?.state).toBe('locked');
+  });
+
+  it('counts multiple lessons finished ahead of the current letters step (plural)', () => {
+    const path = resolveLearningPath(manifest, content, {
+      progress: [progress('vocab/greetings'), progress('particles')],
+      completedLetters: new Set(['Hiragana']),
+    });
+    const nodes = path.units.flatMap((unit) => unit.nodes);
+    const katakana = nodes.find((node) => node.id === 'letters:Katakana');
+    const numbers = nodes.find((node) => node.id === 'vocab:numbers');
+
+    expect(path.completedAheadCount).toBe(2);
+    expect(katakana?.state).toBe('available');
+    expect(numbers?.state).toBe('locked');
+  });
+});

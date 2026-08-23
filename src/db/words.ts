@@ -72,6 +72,79 @@ export async function wordExists(word: string, language: string): Promise<boolea
   return !!match;
 }
 
+/** Stable key for a `[word+language]` pair, used to report per-word outcomes. */
+export function saveWordsKey(word: string, language: string): string {
+  return `${language}\u0000${word}`;
+}
+
+export interface SaveWordsResult {
+  /** Rows newly created by this call. */
+  added: number;
+  /** Rows that already existed for `[word+language]` and were left untouched. */
+  alreadySaved: number;
+  /** Per-row outcome keyed by `saveWordsKey(word, language)`. */
+  outcomes: Record<string, 'added' | 'exists'>;
+}
+
+/**
+ * Save a batch of words to the vocabulary deck, skipping anything that already
+ * exists for the same `[word+language]` pair, and return honest counts of what
+ * happened.
+ *
+ * This runs as a single Dexie (IndexedDB) transaction rather than a per-word
+ * "check, then act" pair of calls. Two separate calls racing on the same word
+ * (an individual "Save to flashcards" click landing while a bulk "Add all"
+ * pass is also saving it) could previously both see "not found" and both
+ * insert, creating a duplicate word+review pair. Inside one transaction every
+ * read sees every earlier write in the same transaction, so a word that
+ * appears twice in `words` (or is already being added elsewhere in the same
+ * call) is only ever created once, and callers cannot observe a half-applied
+ * batch.
+ */
+export async function saveWordsToVocabulary(
+  words: Array<Omit<Word, 'id' | 'createdAt' | 'type'> & { type?: Word['type'] }>
+): Promise<SaveWordsResult> {
+  const result: SaveWordsResult = { added: 0, alreadySaved: 0, outcomes: {} };
+  if (words.length === 0) return result;
+
+  await db.transaction('rw', [db.words, db.reviews], async () => {
+    for (const w of words) {
+      const key = saveWordsKey(w.word, w.language);
+
+      const existing = await db.words
+        .where('[word+language]')
+        .equals([w.word, w.language])
+        .first();
+
+      if (existing) {
+        result.alreadySaved++;
+        result.outcomes[key] = 'exists';
+        continue;
+      }
+
+      const id = (await db.words.add({
+        ...w,
+        type: w.type ?? 'word',
+        createdAt: new Date().toISOString(),
+      })) as number;
+
+      await db.reviews.add({
+        wordId: id,
+        ease: 2.5,
+        interval: 0,
+        repetitions: 0,
+        nextReviewDate: new Date().toISOString(),
+        lastReviewDate: new Date().toISOString(),
+      });
+
+      result.added++;
+      result.outcomes[key] = 'added';
+    }
+  });
+
+  return result;
+}
+
 export interface WordFilter {
   language?: string;
   search?: string;

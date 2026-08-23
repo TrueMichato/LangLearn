@@ -15,6 +15,8 @@ export const ROUTES = {
   grammar: '/grammar',
   settings: '/settings',
   learn: '/learn',
+  browseActivities: '/learn/browse',
+  learnCurriculum: '/learn/curriculum',
   vocabLessons: '/vocab-lessons',
   letters: '/letters/:lang',
   listening: '/listening',
@@ -44,8 +46,62 @@ export function lettersRoute(lang: string): string {
  * wrong first impression for someone who has never seen the script. The
  * on-ramp links here instead, so "Learn the letters" opens the guided flow.
  */
-export function guidedLettersRoute(lang: string): string {
-  return `${lettersRoute(lang)}?mode=learn`;
+export function guidedLettersRoute(lang: string, alphabet?: string): string {
+  const params = new URLSearchParams({ mode: 'learn' });
+  if (alphabet) params.set('alphabet', alphabet);
+  return `${lettersRoute(lang)}?${params.toString()}`;
+}
+
+/**
+ * Query-param names the lesson browsers read on `ROUTES.grammar` and
+ * `ROUTES.vocabLessons`. These are deep links on the *existing* routes
+ * rather than new paths, so any caller — the learning path, a study
+ * suggestion, a future feature — can jump straight into a specific lesson
+ * or straight into a test-out attempt without either page gaining a new
+ * route to keep in sync.
+ */
+export const LESSON_QUERY_PARAM = 'lesson';
+export const TEST_OUT_QUERY_PARAM = 'testOut';
+export const LESSON_ORIGIN_QUERY_PARAM = 'from';
+export type LessonOrigin = 'learn';
+
+export function grammarLessonRoute(lessonId: string): string {
+  return `${ROUTES.grammar}?${LESSON_QUERY_PARAM}=${encodeURIComponent(lessonId)}`;
+}
+
+export function vocabLessonRoute(lessonId: string): string {
+  return `${ROUTES.vocabLessons}?${LESSON_QUERY_PARAM}=${encodeURIComponent(lessonId)}`;
+}
+
+/**
+ * Deep link that opens Grammar with a test-out attempt already selected,
+ * running from the learner's next incomplete lesson through `uptoLessonId`.
+ */
+function testOutRoute(
+  route: string,
+  uptoLessonId: string,
+  origin?: LessonOrigin,
+): string {
+  const params = new URLSearchParams({
+    [TEST_OUT_QUERY_PARAM]: uptoLessonId,
+  });
+  if (origin) params.set(LESSON_ORIGIN_QUERY_PARAM, origin);
+  return `${route}?${params.toString()}`;
+}
+
+export function grammarTestOutRoute(
+  uptoLessonId: string,
+  origin?: LessonOrigin,
+): string {
+  return testOutRoute(ROUTES.grammar, uptoLessonId, origin);
+}
+
+/** Same as {@link grammarTestOutRoute}, for the Vocabulary lesson browser. */
+export function vocabTestOutRoute(
+  uptoLessonId: string,
+  origin?: LessonOrigin,
+): string {
+  return testOutRoute(ROUTES.vocabLessons, uptoLessonId, origin);
 }
 
 function patternToRegExp(pattern: string): RegExp {

@@ -49,13 +49,19 @@ export default function LetterPractice() {
   const [progress, setProgress] = useState<Map<string, CharacterProgress>>(new Map());
   const [loading, setLoading] = useState(true);
   const alphabets = getAlphabetsForLanguage(lang);
-  const [selectedAlphabet, setSelectedAlphabet] = useState(0);
+  const requestedAlphabet = searchParams.get('alphabet');
+  const requestedAlphabetIndex = requestedAlphabet
+    ? alphabets.findIndex((alphabet) => alphabet.name === requestedAlphabet)
+    : -1;
+  const [selectedAlphabet, setSelectedAlphabet] = useState(
+    requestedAlphabetIndex >= 0 ? requestedAlphabetIndex : 0,
+  );
 
   /* Alphabet counts differ per language (Arabic has four, Russian two), so a
      stale index would index past the end and blank the page. */
   useEffect(() => {
-    setSelectedAlphabet(0);
-  }, [lang]);
+    setSelectedAlphabet(requestedAlphabetIndex >= 0 ? requestedAlphabetIndex : 0);
+  }, [lang, requestedAlphabetIndex]);
 
   const chooseMode = (next: PracticeMode) => {
     modeIsPinned.current = true;

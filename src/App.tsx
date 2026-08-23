@@ -17,6 +17,8 @@ const GrammarPage = lazy(() => import('./pages/Grammar'));
 const SettingsPage = lazy(() => import('./pages/Settings'));
 const WordsPage = lazy(() => import('./pages/Words'));
 const LearnPage = lazy(() => import('./pages/Learn'));
+const BrowseActivitiesPage = lazy(() => import('./pages/BrowseActivities'));
+const LearnCurriculumPage = lazy(() => import('./pages/LearnCurriculum'));
 const VocabLessons = lazy(() => import('./pages/VocabLessons'));
 const LetterPractice = lazy(() => import('./pages/LetterPractice'));
 const ListeningPage = lazy(() => import('./pages/Listening'));
@@ -67,6 +69,8 @@ function BootedApp() {
             <Route path={ROUTES.grammar} element={<GrammarPage />} />
             <Route path={ROUTES.settings} element={<SettingsPage />} />
             <Route path={ROUTES.learn} element={<LearnPage />} />
+            <Route path={ROUTES.browseActivities} element={<BrowseActivitiesPage />} />
+            <Route path={ROUTES.learnCurriculum} element={<LearnCurriculumPage />} />
             <Route path={ROUTES.vocabLessons} element={<VocabLessons />} />
             <Route path={ROUTES.letters} element={<LetterPractice />} />
             <Route path={ROUTES.listening} element={<ListeningPage />} />

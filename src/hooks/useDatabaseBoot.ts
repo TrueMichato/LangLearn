@@ -1,5 +1,6 @@
 import { useCallback, useEffect, useMemo, useState } from 'react';
 import { openDatabase, flushPendingSnapshot, takeSnapshot, type DbStatus } from '../db/recovery';
+import { refreshRecoveryCapsule } from '../db/recovery-capsule';
 import type { DatabaseBoot } from './database-boot-context';
 import {
   ensurePersistentStorage,
@@ -13,16 +14,15 @@ const LAST_SNAPSHOT_KEY = 'langlearn-last-snapshot-date';
  * Take a routine snapshot at most once a day.
  *
  * Pre-upgrade snapshots only help when an upgrade is what went wrong. A daily
- * one also covers the other ways progress disappears — an eviction that clears
- * IndexedDB but leaves localStorage, or a bug that corrupts rows during normal
- * use.
+ * one also covers bugs that corrupt rows during normal use. Database-only
+ * eviction is handled by the independent localStorage recovery capsule.
  */
 async function maybeTakeDailySnapshot(): Promise<void> {
   try {
     const today = new Date().toISOString().slice(0, 10);
     if (localStorage.getItem(LAST_SNAPSHOT_KEY) === today) return;
-    localStorage.setItem(LAST_SNAPSHOT_KEY, today);
-    await takeSnapshot('daily automatic backup');
+    const snapshot = await takeSnapshot('daily automatic backup');
+    if (snapshot) localStorage.setItem(LAST_SNAPSHOT_KEY, today);
   } catch {
     /* best effort */
   }
@@ -61,6 +61,7 @@ export function useDatabaseBoot(): DatabaseBoot {
       if (result.kind === 'ready') {
         await flushPendingSnapshot();
         await maybeTakeDailySnapshot();
+        await refreshRecoveryCapsule();
       }
     })();
 
