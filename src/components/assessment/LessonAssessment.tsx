@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useMemo, useRef, useState } from 'react';
 import GrammarQuiz from '../grammar/GrammarQuiz';
 import { generateLessonRangeQuestions, type Question } from '../../lib/test-questions';
 import { markLessonsComplete } from '../../db/lessons';
@@ -6,6 +6,11 @@ import { passesAssessment, scorePercent } from '../../lib/lesson-assessment';
 import { SkeletonList } from '../common/Skeleton';
 import AssessmentResult from './AssessmentResult';
 import AssessmentBlocked from './AssessmentBlocked';
+import {
+  deleteAssessmentDraft,
+  readAssessmentDraft,
+  saveAssessmentDraft,
+} from '../../lib/lesson-assessment-draft';
 
 interface LessonRef {
   id: string;
@@ -23,6 +28,7 @@ interface Props {
   onPass?: () => void;
   passActionLabel?: string;
   failActionLabel?: string;
+  nextLessonTitle?: string;
 }
 
 type Phase =
@@ -53,33 +59,43 @@ export default function LessonAssessment({
   onPass = onExit,
   passActionLabel = 'Continue',
   failActionLabel = 'Study the lessons',
+  nextLessonTitle,
 }: Props) {
-  const lessonIdsKey = lessons.map((l) => l.id).join('|');
+  const lessonIdsKey = lessons.map((lesson) => lesson.id).join('|');
+  const lessonIds = useMemo(() => lessonIdsKey.split('|'), [lessonIdsKey]);
+  const draftIdentity = useMemo(
+    () => ({ language: lang, kind, lessonIds }),
+    [kind, lang, lessonIds],
+  );
+  const [savedDraft, setSavedDraft] = useState(() =>
+    readAssessmentDraft(draftIdentity),
+  );
   const [phase, setPhase] = useState<Phase>('intro');
-  const [started, setStarted] = useState(false);
+  const [shouldGenerate, setShouldGenerate] = useState(false);
   const [questions, setQuestions] = useState<Question[]>([]);
   const [missing, setMissing] = useState<LessonRef[]>([]);
   const [index, setIndex] = useState(0);
   const [correct, setCorrect] = useState(0);
-  const [answeredCorrect, setAnsweredCorrect] = useState<boolean | null>(null);
+  const [selectedIndex, setSelectedIndex] = useState<number | null>(null);
   const [finalScore, setFinalScore] = useState(0);
   const [passed, setPassed] = useState(false);
   const [attempt, setAttempt] = useState(0);
-  const [confirmLeave, setConfirmLeave] = useState(false);
+  const [draftSaveFailed, setDraftSaveFailed] = useState(false);
   const passRecorded = useRef(false);
 
   useEffect(() => {
-    if (!started) return;
+    if (!shouldGenerate) return;
     let active = true;
     passRecorded.current = false;
     setPhase('loading');
     setIndex(0);
     setCorrect(0);
-    setAnsweredCorrect(null);
-    setConfirmLeave(false);
+    setSelectedIndex(null);
+    setDraftSaveFailed(false);
 
-    generateLessonRangeQuestions(lang, kind, lessons.map((l) => l.id)).then((result) => {
+    generateLessonRangeQuestions(lang, kind, lessonIds).then((result) => {
       if (!active) return;
+      setShouldGenerate(false);
       if (result.missingLessonIds.length > 0 || result.questions.length === 0) {
         const missingSet = new Set(result.missingLessonIds);
         const missingRefs =
@@ -98,7 +114,25 @@ export default function LessonAssessment({
       active = false;
     };
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [lang, kind, lessonIdsKey, attempt, started]);
+  }, [lang, kind, lessonIdsKey, attempt, shouldGenerate]);
+
+  useEffect(() => {
+    if (phase !== 'active' || questions.length === 0) return;
+    const saved = saveAssessmentDraft(draftIdentity, {
+      questions,
+      index,
+      correctCount: correct,
+      selectedIndex,
+    });
+    setDraftSaveFailed(!saved);
+  }, [
+    correct,
+    draftIdentity,
+    index,
+    phase,
+    questions,
+    selectedIndex,
+  ]);
 
   async function finish(finalCorrect: number) {
     const score = scorePercent(finalCorrect, questions.length);
@@ -122,39 +156,46 @@ export default function LessonAssessment({
         return;
       }
     }
+    deleteAssessmentDraft(draftIdentity);
+    setSavedDraft(null);
     setPhase('result');
   }
 
-  function handleAnswer(isCorrect: boolean) {
-    if (answeredCorrect !== null) return;
-    setAnsweredCorrect(isCorrect);
+  function handleAnswer(answerIndex: number) {
+    if (selectedIndex !== null) return;
+    setSelectedIndex(answerIndex);
   }
 
   function handleNext() {
-    const newCorrect = correct + (answeredCorrect ? 1 : 0);
+    const question = questions[index];
+    const newCorrect =
+      correct + (selectedIndex === question.correctIndex ? 1 : 0);
     const nextIndex = index + 1;
-    setAnsweredCorrect(null);
     if (nextIndex >= questions.length) {
-      setCorrect(newCorrect);
       finish(newCorrect);
     } else {
+      setSelectedIndex(null);
       setCorrect(newCorrect);
       setIndex(nextIndex);
     }
   }
 
-  function handleRetry() {
+  function startFresh() {
+    deleteAssessmentDraft(draftIdentity);
+    setSavedDraft(null);
     setPhase('loading');
+    setShouldGenerate(true);
     setAttempt((a) => a + 1);
   }
 
-  function requestExit() {
-    const hasAnswers = index > 0 || answeredCorrect !== null;
-    if (phase === 'active' && hasAnswers) {
-      setConfirmLeave(true);
-      return;
-    }
-    onExit();
+  function resumeSavedDraft() {
+    if (!savedDraft) return;
+    setQuestions(savedDraft.questions);
+    setIndex(savedDraft.index);
+    setCorrect(savedDraft.correctCount);
+    setSelectedIndex(savedDraft.selectedIndex);
+    setShouldGenerate(false);
+    setPhase('active');
   }
 
   const kindLabel = kind === 'grammar' ? 'Grammar' : 'Vocabulary';
@@ -206,18 +247,43 @@ export default function LessonAssessment({
           <ul className="mt-4 space-y-2 text-sm text-slate-600 dark:text-slate-300">
             <li>Score 80% or higher to mark the range complete.</li>
             <li>If you do not pass, nothing changes.</li>
-            <li>Testing out does not grant normal lesson XP.</li>
+            <li>Checking ahead does not grant normal lesson XP.</li>
           </ul>
-          <button
-            type="button"
-            onClick={() => {
-              setPhase('loading');
-              setStarted(true);
-            }}
-            className="mt-5 min-h-[44px] w-full rounded-xl bg-indigo-600 px-5 py-2 text-sm font-semibold text-white hover:bg-indigo-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 focus-visible:ring-offset-2 dark:focus-visible:ring-offset-slate-800"
-          >
-            Start the check
-          </button>
+          {savedDraft ? (
+            <div className="mt-5 rounded-xl bg-indigo-50 p-3 dark:bg-indigo-500/10">
+              <p className="text-sm font-medium text-indigo-950 dark:text-indigo-100">
+                Your saved check is ready
+              </p>
+              <p className="mt-1 text-xs leading-relaxed text-indigo-800 dark:text-indigo-200">
+                Continue at question {savedDraft.index + 1} of{' '}
+                {savedDraft.questions.length}, or start this range again.
+              </p>
+              <div className="mt-3 flex gap-2">
+                <button
+                  type="button"
+                  onClick={resumeSavedDraft}
+                  className="min-h-[44px] flex-1 rounded-xl bg-indigo-600 px-4 text-sm font-semibold text-white hover:bg-indigo-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500"
+                >
+                  Resume check
+                </button>
+                <button
+                  type="button"
+                  onClick={startFresh}
+                  className="min-h-[44px] flex-1 rounded-xl bg-white px-4 text-sm font-medium text-slate-700 hover:bg-slate-100 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 dark:bg-slate-700 dark:text-slate-100 dark:hover:bg-slate-600"
+                >
+                  Start over
+                </button>
+              </div>
+            </div>
+          ) : (
+            <button
+              type="button"
+              onClick={startFresh}
+              className="mt-5 min-h-[44px] w-full rounded-xl bg-indigo-600 px-5 py-2 text-sm font-semibold text-white hover:bg-indigo-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 focus-visible:ring-offset-2 dark:focus-visible:ring-offset-slate-800"
+            >
+              Start the check
+            </button>
+          )}
         </div>
       </div>
     );
@@ -255,11 +321,12 @@ export default function LessonAssessment({
         passed={passed}
         score={finalScore}
         lessons={lessons}
-        onRetry={handleRetry}
+        onRetry={startFresh}
         onContinue={onPass}
         continueLabel={passActionLabel}
         onStudy={onExit}
         studyLabel={failActionLabel}
+        nextLessonTitle={nextLessonTitle}
       />
     );
   }
@@ -280,7 +347,7 @@ export default function LessonAssessment({
         <div className="mt-4 flex gap-2">
           <button
             type="button"
-            onClick={handleRetry}
+            onClick={startFresh}
             className="min-h-[44px] flex-1 rounded-xl bg-indigo-600 px-4 text-sm font-medium text-white hover:bg-indigo-700"
           >
             Try again
@@ -298,43 +365,37 @@ export default function LessonAssessment({
   }
 
   const question = questions[index];
-  const progressPct = questions.length > 0 ? Math.round((index / questions.length) * 100) : 0;
+  const progressPct =
+    questions.length > 0
+      ? Math.round(((index + 1) / questions.length) * 100)
+      : 0;
 
   return (
     <div>
       <button
         type="button"
-        onClick={requestExit}
+        onClick={onExit}
         className="mb-3 inline-flex min-h-[44px] items-center text-sm font-medium text-indigo-600 hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 dark:text-indigo-300"
       >
         ← {returnLabel}
       </button>
-      {confirmLeave && (
+      {draftSaveFailed ? (
         <div
           role="alert"
           className="mb-4 rounded-xl bg-amber-50 p-4 text-amber-900 dark:bg-amber-950/30 dark:text-amber-200"
         >
-          <p className="font-semibold">Leave this check?</p>
+          <p className="font-semibold">This check cannot be saved right now</p>
           <p className="mt-1 text-sm">
-            Your answers in this attempt are not saved.
+            Keep this page open if you want to finish this attempt.
           </p>
-          <div className="mt-3 flex gap-2">
-            <button
-              type="button"
-              onClick={() => setConfirmLeave(false)}
-              className="min-h-[44px] flex-1 rounded-xl bg-indigo-600 px-4 text-sm font-medium text-white hover:bg-indigo-700"
-            >
-              Keep going
-            </button>
-            <button
-              type="button"
-              onClick={onExit}
-              className="min-h-[44px] flex-1 rounded-xl bg-white px-4 text-sm font-medium text-amber-900 hover:bg-amber-100 dark:bg-amber-950/50 dark:text-amber-100 dark:hover:bg-amber-900/50"
-            >
-              Leave check
-            </button>
-          </div>
         </div>
+      ) : (
+        <p
+          role="status"
+          className="mb-3 text-xs text-slate-500 dark:text-slate-400"
+        >
+          Saved on this device — you can leave and come back.
+        </p>
       )}
       <div className="mb-3 flex items-center justify-between text-sm text-slate-500 dark:text-slate-400">
         <span>
@@ -342,7 +403,14 @@ export default function LessonAssessment({
         </span>
         <span>{lessons.length === 1 ? lessons[0].title : `${lessons.length} lessons`}</span>
       </div>
-      <div className="w-full h-1.5 rounded-full bg-slate-200 dark:bg-slate-700 overflow-hidden mb-4">
+      <div
+        role="progressbar"
+        aria-label="Mastery check progress"
+        aria-valuemin={1}
+        aria-valuemax={questions.length}
+        aria-valuenow={index + 1}
+        className="mb-4 h-1.5 w-full overflow-hidden rounded-full bg-slate-200 dark:bg-slate-700"
+      >
         <div
           className="h-full rounded-full bg-indigo-600 transition-all duration-500"
           style={{ width: `${progressPct}%` }}
@@ -356,11 +424,15 @@ export default function LessonAssessment({
           question={question.question}
           options={question.options}
           answer={question.correctIndex}
-          onAnswer={handleAnswer}
+          selectedIndex={selectedIndex}
+          onSelect={handleAnswer}
+          language={lang}
+          questionDirection={question.questionDirection}
+          targetOptionIndices={question.targetOptionIndices}
         />
       </div>
 
-      {answeredCorrect !== null && (
+      {selectedIndex !== null && (
         <button
           onClick={handleNext}
           className="mt-4 min-h-[44px] w-full rounded-xl bg-indigo-600 px-4 text-sm font-medium text-white hover:bg-indigo-700 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"

@@ -22,7 +22,7 @@ export default function Shell() {
 
   return (
     <div className="min-h-screen app-canvas">
-      <div className="app-frame app-surface min-h-screen pb-[calc(var(--nav-height)_+_var(--safe-bottom))]">
+      <div className="app-frame app-surface app-shell min-h-screen">
         <header className="sticky top-0 glass border-b border-slate-200/60 dark:border-white/10 z-40 pt-[var(--safe-top)]">
           <div className="flex items-center justify-between px-4 py-3">
             <h1 className="text-lg font-bold text-indigo-600 dark:text-indigo-400">🌱 LangLearn</h1>

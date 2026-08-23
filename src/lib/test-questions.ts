@@ -1,3 +1,5 @@
+import { isRTL } from './rtl';
+
 export type TestType = 'vocabulary' | 'grammar' | 'mixed' | 'full';
 
 export interface Question {
@@ -6,6 +8,10 @@ export interface Question {
   question: string;
   options: string[];
   correctIndex: number;
+  /** The whole question is target-language text rather than English framing. */
+  questionDirection?: 'target';
+  /** Option indexes whose text should use the target language's direction. */
+  targetOptionIndices?: number[];
   /**
    * The lesson this question was generated from. Only set by the scoped
    * "test out of a lesson range" generator (`generateLessonRangeQuestions`)
@@ -243,6 +249,24 @@ export async function generateTestQuestions(lang: string, type: TestType): Promi
 /** A cap so an enormous range (most of a course) can't generate an unbounded quiz. */
 const MAX_RANGE_QUESTIONS = 40;
 
+function directionMetadata(
+  lang: string,
+  question: string,
+  options: readonly string[],
+): Pick<Question, 'questionDirection' | 'targetOptionIndices'> {
+  if (!isRTL(lang)) return {};
+  const targetChars = (question.match(/[\u0600-\u06ff\u0750-\u077f\u08a0-\u08ff]/g) ?? [])
+    .length;
+  const latinChars = (question.match(/[A-Za-z]/g) ?? []).length;
+  const targetOptionIndices = options.flatMap((option, index) =>
+    /[\u0600-\u06ff\u0750-\u077f\u08a0-\u08ff]/.test(option) ? [index] : [],
+  );
+  return {
+    ...(targetChars > latinChars ? { questionDirection: 'target' as const } : {}),
+    ...(targetOptionIndices.length > 0 ? { targetOptionIndices } : {}),
+  };
+}
+
 export interface LessonRangeQuestions {
   questions: Question[];
   /** Lesson ids (subset of the input, same order) that contributed a question. */
@@ -282,6 +306,7 @@ interface WordWithLesson extends VocabWord {
 /** One MC question from `word`, or null if there aren't enough distinct
  *  distractors anywhere in `pool` to build four real options. */
 function buildVocabQuestion(
+  lang: string,
   word: WordWithLesson,
   meaningPool: string[],
   wordPool: string[],
@@ -301,6 +326,7 @@ function buildVocabQuestion(
       options: opts,
       correctIndex: opts.indexOf(word.meaning),
       lessonId: word.lessonId,
+      ...directionMetadata(lang, question, opts),
     };
   }
   const question = `Which word means "${word.meaning}"?`;
@@ -315,18 +341,26 @@ function buildVocabQuestion(
     options: opts,
     correctIndex: opts.indexOf(word.word),
     lessonId: word.lessonId,
+    ...directionMetadata(lang, question, opts),
   };
 }
 
 /** Try every word in `lesson`, in random order, until one yields a usable question. */
 function coveringVocabQuestion(
+  lang: string,
   lesson: VocabLesson,
   meaningPool: string[],
   wordPool: string[],
   usedQuestions: ReadonlySet<string>,
 ): Question | null {
   for (const word of shuffle(lesson.words)) {
-    const q = buildVocabQuestion({ ...word, lessonId: lesson.id }, meaningPool, wordPool, usedQuestions);
+    const q = buildVocabQuestion(
+      lang,
+      { ...word, lessonId: lesson.id },
+      meaningPool,
+      wordPool,
+      usedQuestions,
+    );
     if (q) return q;
   }
   return null;
@@ -346,7 +380,15 @@ async function generateVocabRangeQuestions(lang: string, lessonIds: readonly str
   // Pass 1: one guaranteed, attributed question per lesson.
   for (const lessonId of lessonIds) {
     const lesson = lessonsById.get(lessonId);
-    const q = lesson ? coveringVocabQuestion(lesson, meaningPool, wordPool, usedQuestions) : null;
+    const q = lesson
+      ? coveringVocabQuestion(
+          lang,
+          lesson,
+          meaningPool,
+          wordPool,
+          usedQuestions,
+        )
+      : null;
     if (!q) {
       missingLessonIds.push(lessonId);
       continue;
@@ -363,7 +405,13 @@ async function generateVocabRangeQuestions(lang: string, lessonIds: readonly str
     if (questions.length >= MAX_RANGE_QUESTIONS) break;
     const lesson = lessonsById.get(lessonId)!;
     if (lesson.words.length < 2) continue;
-    const q = coveringVocabQuestion(lesson, meaningPool, wordPool, usedQuestions);
+    const q = coveringVocabQuestion(
+      lang,
+      lesson,
+      meaningPool,
+      wordPool,
+      usedQuestions,
+    );
     if (q) {
       questions.push(q);
       usedQuestions.add(q.question);
@@ -442,6 +490,7 @@ async function generateGrammarRangeQuestions(lang: string, lessonIds: readonly s
       options: chosen.options,
       correctIndex: chosen.answer,
       lessonId,
+      ...directionMetadata(lang, chosen.question, chosen.options),
     });
     coveredLessonIds.push(lessonId);
   }
@@ -458,6 +507,7 @@ async function generateGrammarRangeQuestions(lang: string, lessonIds: readonly s
       options: chosen.options,
       correctIndex: chosen.answer,
       lessonId,
+      ...directionMetadata(lang, chosen.question, chosen.options),
     });
   }
 

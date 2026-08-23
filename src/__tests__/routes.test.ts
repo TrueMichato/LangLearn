@@ -25,6 +25,7 @@ describe('isKnownRoute', () => {
     expect(isKnownRoute('/')).toBe(true);
     expect(isKnownRoute('/grammar')).toBe(true);
     expect(isKnownRoute(ROUTES.browseActivities)).toBe(true);
+    expect(isKnownRoute(ROUTES.learnCurriculum)).toBe(true);
     expect(isKnownRoute('/vocab-lessons')).toBe(true);
   });
 

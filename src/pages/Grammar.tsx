@@ -111,6 +111,9 @@ export default function GrammarPage() {
     const range = computeTestOutRange(originalLessons, completedIds, testOutTarget);
     if (range && range.length > 0) {
       const titleById = new Map(lessons.map((l) => [l.id, l.title]));
+      const targetIndex = originalLessons.findIndex(
+        (lesson) => lesson.id === testOutTarget,
+      );
       return (
         <LessonAssessment
           key={`test-out/${testOutTarget}`}
@@ -126,6 +129,7 @@ export default function GrammarPage() {
           failActionLabel={
             assessmentFromLearn ? 'Back to path' : 'Study the lessons'
           }
+          nextLessonTitle={originalLessons[targetIndex + 1]?.title}
         />
       );
     }

@@ -17,6 +17,7 @@ const PATH: LearningPathModel = {
       unitId: 'first-steps',
       unitTitle: 'First steps',
       lessonCount: 1,
+      lessonIds: ['greetings'],
       firstLessonTitle: 'Greetings & Introductions',
       lastLessonTitle: 'Greetings & Introductions',
     },
@@ -28,6 +29,7 @@ const PATH: LearningPathModel = {
       unitId: 'first-steps',
       unitTitle: 'First steps',
       lessonCount: 1,
+      lessonIds: ['particles'],
       firstLessonTitle: 'Basic Particles',
       lastLessonTitle: 'Basic Particles',
     },
@@ -46,6 +48,7 @@ const PATH: LearningPathModel = {
           unitId: 'first-steps',
           unitTitle: 'First steps',
           lessonCount: 1,
+          lessonIds: ['greetings'],
           firstLessonTitle: 'Greetings & Introductions',
           lastLessonTitle: 'Greetings & Introductions',
         },
@@ -57,6 +60,7 @@ const PATH: LearningPathModel = {
           unitId: 'first-steps',
           unitTitle: 'First steps',
           lessonCount: 1,
+          lessonIds: ['particles'],
           firstLessonTitle: 'Basic Particles',
           lastLessonTitle: 'Basic Particles',
         },
@@ -122,10 +126,15 @@ describe('LearningPath', () => {
     expect(html).toContain('aria-current="step"');
     expect(html).toContain('Basic Particles, locked');
     expect(html).toContain('disabled');
-    expect(html).toContain('1/4');
-    expect(html).toContain('See the rest of your route (1 unit)');
-    expect(html).toContain('id="future-path-units-ja" hidden=""');
-    expect(html).toContain('Future Grammar');
+    expect(html).toContain('First steps · 1 of 3 steps complete');
+    expect(html).toContain('Up next');
+    expect(html).toContain('Coming next');
+    expect(html).toContain('Later');
+    expect(html).toContain('View full curriculum');
+    expect(html).not.toContain('Future Grammar');
+    expect(html).toContain(
+      'Complete Greetings &amp; Introductions to unlock the next lesson.',
+    );
   });
 
   it('keeps navigation routes on the real lesson links', () => {

@@ -1,9 +1,11 @@
 import { renderToStaticMarkup } from 'react-dom/server';
 import { MemoryRouter } from 'react-router-dom';
 import { beforeEach, describe, expect, it, vi } from 'vitest';
+import { getPathRecommendations } from '../lib/learn-activity-recommendations';
 import BrowseActivitiesPage from '../pages/BrowseActivities';
 import LearnPage from '../pages/Learn';
 import { ROUTES } from '../lib/routes';
+import type { LearningPath } from '../types/learning-path';
 
 const mockActiveLanguages = ['ja', 'ar'] as const;
 const mockCurrentLanguage = {
@@ -44,7 +46,7 @@ describe('Learn and Browse activities pages', () => {
     expect(html).not.toContain('📥 Input &amp; Study');
   });
 
-  it('renders the grouped browse catalog, resources entrypoint, and relaxed card rhythm', () => {
+  it('keeps the complete catalog and resources behind intentional disclosures', () => {
     const html = renderToStaticMarkup(
       <MemoryRouter>
         <BrowseActivitiesPage />
@@ -53,17 +55,69 @@ describe('Learn and Browse activities pages', () => {
 
     expect(html).toContain(`href="${ROUTES.learn}"`);
     expect(html).toContain('Back to Learn');
-    expect(html).toContain('📥 Input &amp; Study');
-    expect(html).toContain('📤 Practice &amp; Output');
-    expect(html).toContain('🎶 Extras');
+    expect(html).toContain('All activities');
+    expect(html).toContain('Input and study');
+    expect(html).toContain('Practice');
+    expect(html).toContain('Extras');
+    expect(html).toContain('<details');
     expect(html).toContain('Grammar');
-    expect(html).toContain('Dialects');
+    expect(html).not.toContain('Dialects');
     expect(html).toContain('Recommended Resources');
+    expect(html).toContain('Outside resources');
     expect(html).toContain('href="/letters/ja"');
+    expect(html).not.toContain('href="/letters/ar"');
     expect(html).not.toContain('leading-tight');
     expect(html).toContain('leading-5');
     expect(html).toContain('leading-[1.4]');
-    expect(html).toContain('grid-cols-1');
-    expect(html).toContain('sm:grid-cols-2');
+    expect(html).not.toContain('sm:grid-cols-2');
+    expect(html).toContain('aria-label="Activity language"');
+  });
+
+  it('derives no more than two recommendations from the current path step', () => {
+    const path: LearningPath = {
+      language: 'ja',
+      completedCount: 0,
+      totalCount: 2,
+      testOutOptions: [],
+      units: [
+        {
+          id: 'first',
+          title: 'First steps',
+          description: 'Start here.',
+          checkpoints: [],
+          nodes: [
+            {
+              id: 'vocab:greetings',
+              kind: 'vocab',
+              lessonId: 'greetings',
+              title: 'Greetings',
+              route: '/vocab-lessons?lesson=greetings',
+              state: 'available',
+              unitId: 'first',
+            },
+            {
+              id: 'grammar:particles',
+              kind: 'grammar',
+              lessonId: 'particles',
+              title: 'Particles',
+              route: '/grammar?lesson=particles',
+              state: 'locked',
+              unitId: 'first',
+            },
+          ],
+        },
+      ],
+    };
+
+    expect(getPathRecommendations(path)).toEqual([
+      expect.objectContaining({
+        to: '/vocab-lessons?lesson=greetings',
+        title: 'Greetings',
+      }),
+      expect.objectContaining({
+        to: ROUTES.sentenceBuilder,
+        title: 'Use the words',
+      }),
+    ]);
   });
 });

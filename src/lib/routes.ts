@@ -16,6 +16,7 @@ export const ROUTES = {
   settings: '/settings',
   learn: '/learn',
   browseActivities: '/learn/browse',
+  learnCurriculum: '/learn/curriculum',
   vocabLessons: '/vocab-lessons',
   letters: '/letters/:lang',
   listening: '/listening',

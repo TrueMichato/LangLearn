@@ -149,6 +149,9 @@ export default function VocabLessons() {
     const range = computeTestOutRange(visibleLessons, completedIds, testOutTarget);
     if (range && range.length > 0) {
       const titleById = new Map(lessons.map((l) => [l.id, l.title]));
+      const targetIndex = visibleLessons.findIndex(
+        (lesson) => lesson.id === testOutTarget,
+      );
       return (
         <LessonAssessment
           key={`test-out/${testOutTarget}`}
@@ -164,6 +167,7 @@ export default function VocabLessons() {
           failActionLabel={
             assessmentFromLearn ? 'Back to path' : 'Study the lessons'
           }
+          nextLessonTitle={visibleLessons[targetIndex + 1]?.title}
         />
       );
     }

@@ -4,9 +4,14 @@ import type {
   LearningPathCheckpoint,
   LearningPathLessonKind,
 } from '../../types/learning-path';
+import {
+  assessmentDraftId,
+  listAssessmentDrafts,
+} from '../../lib/lesson-assessment-draft';
 
 interface Props {
   options: LearningPathCheckpoint[];
+  language: string;
   rtl?: boolean;
 }
 
@@ -23,7 +28,11 @@ function scopePresets(
   return [options[0], options[middleIndex], options[options.length - 1]];
 }
 
-export default function PathTestOutPanel({ options, rtl = false }: Props) {
+export default function PathTestOutPanel({
+  options,
+  language,
+  rtl = false,
+}: Props) {
   const tracks = useMemo(
     () => [...new Set(options.map((option) => option.kind))],
     [options],
@@ -40,6 +49,26 @@ export default function PathTestOutPanel({ options, rtl = false }: Props) {
   const selected =
     trackOptions.find((option) => option.lessonId === targetId) ??
     trackOptions[0];
+  const savedDraft = listAssessmentDrafts(language).find((draft) =>
+    options.some(
+      (option) =>
+        assessmentDraftId({
+          language,
+          kind: option.kind,
+          lessonIds: option.lessonIds,
+        }) === draft.id,
+    ),
+  );
+  const savedOption = savedDraft
+    ? options.find(
+        (option) =>
+          assessmentDraftId({
+            language,
+            kind: option.kind,
+            lessonIds: option.lessonIds,
+          }) === savedDraft.id,
+      )
+    : undefined;
 
   function chooseTrack(nextTrack: LearningPathLessonKind) {
     setTrack(nextTrack);
@@ -49,6 +78,20 @@ export default function PathTestOutPanel({ options, rtl = false }: Props) {
 
   return (
     <div className="mt-4 border-t border-slate-200/70 pt-3 dark:border-white/10">
+      {savedDraft && savedOption && (
+        <Link
+          to={savedOption.route}
+          className="mb-2 flex min-h-[44px] items-center justify-between gap-3 rounded-xl bg-indigo-50 px-3 py-2 text-sm text-indigo-950 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 dark:bg-indigo-500/10 dark:text-indigo-100"
+        >
+          <span>
+            <span className="block font-semibold">Resume your saved check</span>
+            <span className="mt-0.5 block text-xs text-indigo-800 dark:text-indigo-200">
+              Question {savedDraft.index + 1} of {savedDraft.questions.length}
+            </span>
+          </span>
+          <span aria-hidden="true">{rtl ? '←' : '→'}</span>
+        </Link>
+      )}
       <button
         type="button"
         onClick={() => setExpanded((visible) => !visible)}
@@ -67,7 +110,7 @@ export default function PathTestOutPanel({ options, rtl = false }: Props) {
       {expanded && selected && (
         <div className="px-3 pb-2 pt-3" dir="ltr">
           <p className="text-sm text-slate-600 dark:text-slate-300">
-            Choose a track and how far you want to check. Passing marks that
+            Choose a lesson type and how far you want to check. Passing marks that
             range complete; if you do not pass, nothing changes.
           </p>
 
@@ -96,7 +139,7 @@ export default function PathTestOutPanel({ options, rtl = false }: Props) {
 
           <fieldset className="mt-4">
             <legend className="text-sm font-medium text-slate-700 dark:text-slate-200">
-              Pick a comfortable scope
+              How much would you like to check?
             </legend>
             <div className="mt-2 space-y-2">
               {presets.map((option, index) => {
@@ -142,6 +185,8 @@ export default function PathTestOutPanel({ options, rtl = false }: Props) {
               <label className="mt-2 block text-sm font-medium text-slate-700 dark:text-slate-200">
                 Unit
                 <select
+                    id="mastery-check-unit"
+                    name="masteryCheckUnit"
                   value={selected.lessonId}
                   onChange={(event) => setTargetId(event.target.value)}
                   className="mt-1 min-h-[44px] w-full rounded-xl border border-slate-300 bg-white px-3 text-slate-800 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 dark:border-slate-600 dark:bg-slate-800 dark:text-slate-100"
@@ -169,7 +214,7 @@ export default function PathTestOutPanel({ options, rtl = false }: Props) {
             .
           </p>
           <p className="mt-1 text-xs leading-relaxed text-slate-500 dark:text-slate-400">
-            Testing out does not grant normal lesson XP.
+            Checking ahead does not grant normal lesson XP.
           </p>
 
           <Link

@@ -24,7 +24,9 @@ export default function AssessmentBlocked({
   return (
     <div className="rounded-2xl border border-slate-200/70 dark:border-white/10 bg-white dark:bg-slate-800 p-5 text-center">
       <p className="text-2xl mb-1" aria-hidden="true">🤔</p>
-      <p className="font-semibold text-slate-800 dark:text-slate-100">Can't test out of this range yet</p>
+      <h2 className="font-semibold text-slate-800 dark:text-slate-100">
+        This range isn’t ready to check yet
+      </h2>
       <p className="mt-2 text-sm text-slate-600 dark:text-slate-300">
         {missingLessons.length === 1
           ? `"${missingLessons[0].title}" doesn't have enough content to confirm you know it yet.`

@@ -37,6 +37,7 @@ const VOCAB_LESSONS: Record<string, unknown> = {
 const GRAMMAR_QUIZZES: Record<string, string> = {
   particles: `# Particles\n\n<!-- quiz: {"type":"multiple-choice","question":"Which particle marks the topic?","options":["は","が","を","に"],"answer":0} -->\n\n<!-- quiz: {"type":"multiple-choice","question":"Which particle marks the object?","options":["は","が","を","に"],"answer":2} -->\n`,
   'verb-forms': `# Verb forms\n\n<!-- quiz: {"type":"multiple-choice","question":"Which is the polite form of 食べる?","options":["食べます","食べた","食べて","食べない"],"answer":0} -->\n`,
+  'arabic-particles': `# Arabic particles\n\n<!-- quiz: {"type":"multiple-choice","question":"Which word means house?","options":["بيت","كتاب","قلم","باب"],"answer":0} -->\n`,
   'no-quiz': `# No quiz\n\nJust prose, no quiz blocks at all.\n`,
 };
 
@@ -132,5 +133,16 @@ describe('generateLessonRangeQuestions (grammar)', () => {
   it('assigns sequential ids to the final question set', async () => {
     const result = await generateLessonRangeQuestions('ja', 'grammar', ['particles']);
     expect(result.questions.map((q) => q.id)).toEqual(result.questions.map((_, i) => i));
+  });
+
+  it('marks Arabic answer options as target text without reversing English framing', async () => {
+    const result = await generateLessonRangeQuestions('ar', 'grammar', [
+      'arabic-particles',
+    ]);
+
+    for (const question of result.questions) {
+      expect(question.questionDirection).toBeUndefined();
+      expect(question.targetOptionIndices).toEqual([0, 1, 2, 3]);
+    }
   });
 });

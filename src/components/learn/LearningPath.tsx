@@ -1,6 +1,8 @@
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useRef } from 'react';
+import { Link } from 'react-router-dom';
 import type { LearningPath as LearningPathModel } from '../../types/learning-path';
 import { isRTL } from '../../lib/rtl';
+import { ROUTES } from '../../lib/routes';
 import PathNode from './PathNode';
 import PathTestOutPanel from './PathTestOutPanel';
 
@@ -13,7 +15,6 @@ export default function LearningPath({ path, focusCurrent = false }: Props) {
   const complete = path.completedCount === path.totalCount;
   const rtl = isRTL(path.language);
   const sectionRef = useRef<HTMLElement>(null);
-  const [showFuture, setShowFuture] = useState(false);
   const currentUnitIndex = path.units.findIndex((unit) =>
     unit.nodes.some((node) => node.state === 'available'),
   );
@@ -26,6 +27,10 @@ export default function LearningPath({ path, focusCurrent = false }: Props) {
     currentUnitIndex >= 0
       ? path.units.slice(currentUnitIndex + 1)
       : [];
+  const currentUnit =
+    path.units[currentUnitIndex >= 0 ? currentUnitIndex : path.units.length - 1];
+  const currentUnitCompleted =
+    currentUnit?.nodes.filter((node) => node.state === 'completed').length ?? 0;
   const testOutOptions = path.testOutOptions.filter(
     (option) => option.state === 'available',
   );
@@ -53,6 +58,8 @@ export default function LearningPath({ path, focusCurrent = false }: Props) {
     unit: LearningPathModel['units'][number],
     unitIndex: number,
   ) {
+    const availableNode = unit.nodes.find((node) => node.state === 'available');
+    const hasLockedSteps = unit.nodes.some((node) => node.state === 'locked');
     return (
       <section
         key={unit.id}
@@ -90,8 +97,14 @@ export default function LearningPath({ path, focusCurrent = false }: Props) {
           <PathTestOutPanel
             key={`${path.language}/${unit.id}`}
             options={testOutOptions}
+            language={path.language}
             rtl={rtl}
           />
+        )}
+        {unit.id === currentUnitId && availableNode && hasLockedSteps && (
+          <p className="mt-3 text-xs leading-relaxed text-slate-500 dark:text-slate-400">
+            Complete {availableNode.title} to unlock the next lesson.
+          </p>
         )}
       </section>
     );
@@ -110,45 +123,42 @@ export default function LearningPath({ path, focusCurrent = false }: Props) {
           <p className="mt-1 text-sm text-slate-500 dark:text-slate-400">
             {complete
               ? 'You completed every step on this path.'
-              : 'One clear next step, with everything else waiting patiently.'}
+              : `${currentUnit?.title ?? 'Current unit'} · ${currentUnitCompleted} of ${
+                  currentUnit?.nodes.length ?? 0
+                } steps complete`}
           </p>
         </div>
         <p className="shrink-0 text-sm font-medium text-slate-600 dark:text-slate-300">
-          {path.completedCount}/{path.totalCount}
+          {complete ? 'Complete' : 'Up next'}
         </p>
       </div>
 
       <div className="rounded-2xl border border-slate-200/70 bg-white shadow-sm dark:border-white/10 dark:bg-slate-800">
         {visibleUnits.map(renderUnit)}
-        {futureUnits.length > 0 && (
-          <div
-            id={`future-path-units-${path.language}`}
-            hidden={!showFuture}
-          >
-            {futureUnits.map((unit, index) =>
-              renderUnit(unit, visibleUnits.length + index),
-            )}
-          </div>
-        )}
-        {futureUnits.length > 0 && (
-          <div className="border-t border-slate-200/70 p-3 dark:border-white/10">
-            <button
-              type="button"
-              onClick={() => setShowFuture((visible) => !visible)}
-              aria-expanded={showFuture}
-              aria-controls={`future-path-units-${path.language}`}
-              className="flex min-h-[44px] w-full items-center justify-center gap-2 rounded-xl px-4 text-sm font-medium text-slate-600 hover:bg-slate-50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 dark:text-slate-300 dark:hover:bg-slate-700/50"
-            >
-              {showFuture
-                ? 'Hide future units'
-                : `See the rest of your route (${futureUnits.length} ${
-                    futureUnits.length === 1 ? 'unit' : 'units'
-                  })`}
-              <span aria-hidden="true">{showFuture ? '↑' : '↓'}</span>
-            </button>
-          </div>
-        )}
       </div>
+      {futureUnits.length > 0 && (
+        <div className="mt-4 border-t border-slate-200/70 pt-4 dark:border-white/10">
+          <p className="text-sm font-semibold text-slate-800 dark:text-slate-100">
+            Coming next
+          </p>
+          <p className="mt-1 text-sm text-slate-500 dark:text-slate-400">
+            {futureUnits
+              .slice(0, 2)
+              .map((unit) => unit.title)
+              .join(' · ')}
+            {futureUnits.length > 2 ? ' · and more' : ''}
+          </p>
+          <Link
+            to={ROUTES.learnCurriculum}
+            className="mt-2 inline-flex min-h-[44px] items-center rounded-xl px-2 text-sm font-medium text-indigo-600 hover:bg-indigo-50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 dark:text-indigo-300 dark:hover:bg-indigo-950/40"
+          >
+            View full curriculum
+            <span className="ml-2" aria-hidden="true">
+              →
+            </span>
+          </Link>
+        </div>
+      )}
     </section>
   );
 }

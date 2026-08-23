@@ -2,6 +2,7 @@ import { renderToStaticMarkup } from 'react-dom/server';
 import { describe, expect, it } from 'vitest';
 import AssessmentResult from '../components/assessment/AssessmentResult';
 import AssessmentBlocked from '../components/assessment/AssessmentBlocked';
+import GrammarQuiz from '../components/grammar/GrammarQuiz';
 
 const oneLesson = [{ id: 'l1', title: 'Particles' }];
 const threeLessons = [
@@ -21,7 +22,7 @@ describe('AssessmentResult (pass)', () => {
     const html = renderToStaticMarkup(
       <AssessmentResult passed score={85} lessons={oneLesson} {...actions} />,
     );
-    expect(html).toContain('You tested out of 1 lesson! Scored 85%.');
+    expect(html).toContain('You checked 1 lesson and scored 85%.');
     expect(html).not.toContain('1 lessons');
   });
 
@@ -29,14 +30,14 @@ describe('AssessmentResult (pass)', () => {
     const html = renderToStaticMarkup(
       <AssessmentResult passed score={100} lessons={threeLessons} {...actions} />,
     );
-    expect(html).toContain('You tested out of 3 lessons! Scored 100%.');
+    expect(html).toContain('You checked 3 lessons and scored 100%.');
   });
 
-  it('explicitly states no XP is granted for testing out', () => {
+  it('explicitly states no XP is granted for checking ahead', () => {
     const html = renderToStaticMarkup(
       <AssessmentResult passed score={90} lessons={oneLesson} {...actions} />,
     );
-    expect(html).toContain('No XP for testing out');
+    expect(html).toContain('No XP for checking ahead');
   });
 
   it('offers a single primary Continue action, not a retry option', () => {
@@ -67,6 +68,8 @@ describe('AssessmentResult (pass)', () => {
     expect(html).toContain('min-h-[44px]');
     expect(html).toContain('dark:text-green-200');
     expect(html).toContain('dark:bg-green-950');
+    expect(html).toContain('role="status"');
+    expect(html).toContain('<h2');
   });
 });
 
@@ -75,7 +78,7 @@ describe('AssessmentResult (fail)', () => {
     const html = renderToStaticMarkup(
       <AssessmentResult passed={false} score={60} lessons={oneLesson} {...actions} />,
     );
-    expect(html).toContain('Scored 60% — testing out needs 80%.');
+    expect(html).toContain('You scored 60% — this check needs 80%.');
   });
 
   it('reassures the learner that nothing changed', () => {
@@ -119,6 +122,27 @@ describe('AssessmentResult (fail)', () => {
       <AssessmentResult passed={false} score={60} lessons={oneLesson} {...actions} />,
     );
     expect(html).not.toContain('XP');
+    expect(html).toContain('aria-live="polite"');
+  });
+});
+
+describe('GrammarQuiz direction and restored state', () => {
+  it('keeps English framing LTR and marks Arabic answer options RTL', () => {
+    const html = renderToStaticMarkup(
+      <GrammarQuiz
+        type="multiple-choice"
+        question='Which word means "family"?'
+        options={['عائلة', 'كتاب']}
+        answer={0}
+        selectedIndex={1}
+        language="ar"
+        targetOptionIndices={[0, 1]}
+      />,
+    );
+
+    expect(html).toContain('dir="rtl"');
+    expect(html).toContain('disabled=""');
+    expect(html).toContain('Not quite');
   });
 });
 

@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from 'react';
+import { useMemo } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { useSettingsStore } from '../stores/settingsStore';
 import { useCurrentLanguage } from '../hooks/useCurrentLanguage';
@@ -6,59 +6,23 @@ import LearningPath from '../components/learn/LearningPath';
 import LanguagePicker from '../components/common/LanguagePicker';
 import LanguageUnavailable from '../components/common/LanguageUnavailable';
 import { LEARNING_PATHS } from '../data/learning-paths';
-import { loadLearningPath } from '../lib/learning-path';
 import { SkeletonList } from '../components/common/Skeleton';
-import type { LearningPath as LearningPathModel } from '../types/learning-path';
 import { ROUTES } from '../lib/routes';
+import { useLearningPath } from '../hooks/useLearningPath';
 
 export default function LearnPage() {
   const location = useLocation();
   const activeLanguages = useSettingsStore((s) => s.activeLanguages);
   const { language: currentLanguage, setLanguage } = useCurrentLanguage();
-  const [pathState, setPathState] = useState<{
-    language: string | null;
-    path: LearningPathModel | null;
-    error: string;
-  }>({ language: null, path: null, error: '' });
   const pathLanguages = useMemo(
     () => activeLanguages.filter((lang) => LEARNING_PATHS[lang]),
     [activeLanguages],
   );
-  const pathSupported =
-    currentLanguage != null && LEARNING_PATHS[currentLanguage] != null;
-  const pathLoading =
-    pathSupported && pathState.language !== currentLanguage;
-  const path =
-    pathState.language === currentLanguage ? pathState.path : null;
-  const pathError =
-    pathState.language === currentLanguage ? pathState.error : '';
-
-  useEffect(() => {
-    if (!currentLanguage || !LEARNING_PATHS[currentLanguage]) return;
-    let cancelled = false;
-
-    loadLearningPath(currentLanguage)
-      .then((nextPath) => {
-        if (!cancelled) {
-          setPathState({ language: currentLanguage, path: nextPath, error: '' });
-        }
-      })
-      .catch((error: unknown) => {
-        if (cancelled) return;
-        setPathState({
-          language: currentLanguage,
-          path: null,
-          error:
-            error instanceof Error
-              ? error.message
-              : 'The learning path could not be loaded.',
-        });
-      });
-
-    return () => {
-      cancelled = true;
-    };
-  }, [currentLanguage]);
+  const {
+    loading: pathLoading,
+    path,
+    error: pathError,
+  } = useLearningPath(currentLanguage);
 
   return (
     <div>
@@ -95,7 +59,7 @@ export default function LearnPage() {
           className="rounded-2xl border border-amber-200 bg-amber-50 p-4 text-sm text-amber-900 dark:border-amber-800/60 dark:bg-amber-950/30 dark:text-amber-200"
         >
           <p className="font-semibold">Your path needs a quick refresh</p>
-          <p className="mt-1">{pathError} You can still browse every activity from the link below.</p>
+          <p className="mt-1">{pathError} You can still browse every activity from the link above.</p>
         </div>
       ) : path ? (
         <LearningPath

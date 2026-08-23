@@ -154,6 +154,11 @@ export function resolveLearningPath(
         unitId: unit.id,
         unitTitle: unit.title,
         lessonCount: assessmentRange.length,
+        lessonIds: assessmentRange.map((node) =>
+          kind === 'vocab'
+            ? node.lessonId.replace(/^vocab\//, '')
+            : node.lessonId,
+        ),
         firstLessonTitle: assessmentRange[0]?.title ?? target.title,
         lastLessonTitle:
           assessmentRange[assessmentRange.length - 1]?.title ?? target.title,

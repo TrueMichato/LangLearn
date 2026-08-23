@@ -41,6 +41,7 @@ export interface LearningPathCheckpoint {
   unitId: string;
   unitTitle: string;
   lessonCount: number;
+  lessonIds: string[];
   firstLessonTitle: string;
   lastLessonTitle: string;
 }

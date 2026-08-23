@@ -17,7 +17,7 @@ const KIND_DETAILS = {
 
 function nodeClasses(node: LearningPathNodeModel, rtl: boolean): string {
   const base =
-    `group relative z-10 flex min-h-[56px] items-center gap-3 rounded-xl px-2 py-2 text-left focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 focus-visible:ring-offset-2 dark:focus-visible:ring-offset-slate-800 ${rtl ? 'flex-row-reverse' : ''}`;
+    `group relative z-10 flex min-h-[56px] scroll-mb-[var(--shell-bottom-clearance)] items-center gap-3 rounded-xl px-2 py-2 text-left focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 focus-visible:ring-offset-2 dark:focus-visible:ring-offset-slate-800 ${rtl ? 'flex-row-reverse' : ''}`;
 
   if (node.state === 'available') {
     return `${base} bg-indigo-50 text-indigo-950 hover:bg-indigo-100 dark:bg-indigo-500/10 dark:text-indigo-100 dark:hover:bg-indigo-500/15 press-feedback`;
