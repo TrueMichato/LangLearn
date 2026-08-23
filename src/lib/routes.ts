@@ -15,6 +15,7 @@ export const ROUTES = {
   grammar: '/grammar',
   settings: '/settings',
   learn: '/learn',
+  browseActivities: '/learn/browse',
   vocabLessons: '/vocab-lessons',
   letters: '/letters/:lang',
   listening: '/listening',
@@ -60,6 +61,8 @@ export function guidedLettersRoute(lang: string, alphabet?: string): string {
  */
 export const LESSON_QUERY_PARAM = 'lesson';
 export const TEST_OUT_QUERY_PARAM = 'testOut';
+export const LESSON_ORIGIN_QUERY_PARAM = 'from';
+export type LessonOrigin = 'learn';
 
 export function grammarLessonRoute(lessonId: string): string {
   return `${ROUTES.grammar}?${LESSON_QUERY_PARAM}=${encodeURIComponent(lessonId)}`;
@@ -73,13 +76,31 @@ export function vocabLessonRoute(lessonId: string): string {
  * Deep link that opens Grammar with a test-out attempt already selected,
  * running from the learner's next incomplete lesson through `uptoLessonId`.
  */
-export function grammarTestOutRoute(uptoLessonId: string): string {
-  return `${ROUTES.grammar}?${TEST_OUT_QUERY_PARAM}=${encodeURIComponent(uptoLessonId)}`;
+function testOutRoute(
+  route: string,
+  uptoLessonId: string,
+  origin?: LessonOrigin,
+): string {
+  const params = new URLSearchParams({
+    [TEST_OUT_QUERY_PARAM]: uptoLessonId,
+  });
+  if (origin) params.set(LESSON_ORIGIN_QUERY_PARAM, origin);
+  return `${route}?${params.toString()}`;
+}
+
+export function grammarTestOutRoute(
+  uptoLessonId: string,
+  origin?: LessonOrigin,
+): string {
+  return testOutRoute(ROUTES.grammar, uptoLessonId, origin);
 }
 
 /** Same as {@link grammarTestOutRoute}, for the Vocabulary lesson browser. */
-export function vocabTestOutRoute(uptoLessonId: string): string {
-  return `${ROUTES.vocabLessons}?${TEST_OUT_QUERY_PARAM}=${encodeURIComponent(uptoLessonId)}`;
+export function vocabTestOutRoute(
+  uptoLessonId: string,
+  origin?: LessonOrigin,
+): string {
+  return testOutRoute(ROUTES.vocabLessons, uptoLessonId, origin);
 }
 
 function patternToRegExp(pattern: string): RegExp {

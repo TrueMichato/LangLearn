@@ -24,6 +24,7 @@ describe('isKnownRoute', () => {
   it('accepts every registered pattern', () => {
     expect(isKnownRoute('/')).toBe(true);
     expect(isKnownRoute('/grammar')).toBe(true);
+    expect(isKnownRoute(ROUTES.browseActivities)).toBe(true);
     expect(isKnownRoute('/vocab-lessons')).toBe(true);
   });
 
@@ -117,6 +118,15 @@ describe('test-out deep links', () => {
   it('build a testOut query param on the existing grammar/vocab-lessons paths', () => {
     expect(grammarTestOutRoute('verb-forms')).toBe(`${ROUTES.grammar}?${TEST_OUT_QUERY_PARAM}=verb-forms`);
     expect(vocabTestOutRoute('days-months')).toBe(`${ROUTES.vocabLessons}?${TEST_OUT_QUERY_PARAM}=days-months`);
+  });
+
+  it('adds only the enumerated Learn origin when a path launches a test-out', () => {
+    expect(grammarTestOutRoute('verb-forms', 'learn')).toBe(
+      `${ROUTES.grammar}?${TEST_OUT_QUERY_PARAM}=verb-forms&from=learn`,
+    );
+    expect(vocabTestOutRoute('days-months', 'learn')).toBe(
+      `${ROUTES.vocabLessons}?${TEST_OUT_QUERY_PARAM}=days-months&from=learn`,
+    );
   });
 
   it('encodes lesson ids that need it', () => {

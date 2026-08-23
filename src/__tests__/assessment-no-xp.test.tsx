@@ -26,10 +26,9 @@ describe('test-out never awards XP', () => {
     }
   });
 
-  it('renders the loading phase with no XP mention before any data has resolved', () => {
+  it('previews the assessment before loading questions or awarding XP', () => {
     // renderToStaticMarkup never runs effects, so this captures exactly the
-    // initial phase — the same phase a learner sees for the instant before
-    // generateLessonRangeQuestions resolves.
+    // deliberate scope preview shown before question generation begins.
     const html = renderToStaticMarkup(
       <LessonAssessment
         lang="ja"
@@ -38,7 +37,30 @@ describe('test-out never awards XP', () => {
         onExit={() => {}}
       />,
     );
-    expect(html).not.toContain('XP');
-    expect(html).toContain('skeleton');
+    expect(html).toContain('Check what you already know');
+    expect(html).toContain('does not grant normal lesson XP');
+    expect(html).toContain('Start the check');
+    expect(html).not.toContain('skeleton');
+  });
+
+  it('uses the Learn return label and names a multi-lesson range', () => {
+    const html = renderToStaticMarkup(
+      <LessonAssessment
+        lang="ja"
+        kind="grammar"
+        lessons={[
+          { id: 'l1', title: 'Particles' },
+          { id: 'l2', title: 'Verb Forms' },
+        ]}
+        onExit={() => {}}
+        returnLabel="Back to path"
+      />,
+    );
+    expect(html).toContain('Back to path');
+    expect(html).toContain('from');
+    expect(html).toContain('Particles');
+    expect(html).toContain('through');
+    expect(html).toContain('Verb Forms');
+    expect(html).toContain('Score 80% or higher');
   });
 });

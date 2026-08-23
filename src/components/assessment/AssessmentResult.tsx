@@ -8,8 +8,10 @@ interface Props {
   score: number;
   lessons: LessonRef[];
   onRetry: () => void;
-  /** Pass = "back to lessons, now unlocked further". Fail = "study normally instead". */
-  onExit: () => void;
+  onContinue: () => void;
+  continueLabel?: string;
+  onStudy: () => void;
+  studyLabel?: string;
 }
 
 /**
@@ -18,7 +20,16 @@ interface Props {
  * single lesson or a whole range, and so its two tones — celebratory pass,
  * encouraging-not-punishing fail — can be unit tested from plain props.
  */
-export default function AssessmentResult({ passed, score, lessons, onRetry, onExit }: Props) {
+export default function AssessmentResult({
+  passed,
+  score,
+  lessons,
+  onRetry,
+  onContinue,
+  continueLabel = 'Continue',
+  onStudy,
+  studyLabel = 'Study the lessons',
+}: Props) {
   const lessonWord = lessons.length === 1 ? 'lesson' : 'lessons';
 
   if (passed) {
@@ -35,10 +46,10 @@ export default function AssessmentResult({ passed, score, lessons, onRetry, onEx
           No XP for testing out — that comes from working through lessons and reviews.
         </p>
         <button
-          onClick={onExit}
+          onClick={onContinue}
           className="mt-4 min-h-[44px] w-full rounded-xl bg-indigo-600 px-4 text-sm font-medium text-white hover:bg-indigo-700 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
         >
-          Continue
+          {continueLabel}
         </button>
       </div>
     );
@@ -63,10 +74,10 @@ export default function AssessmentResult({ passed, score, lessons, onRetry, onEx
           Try again
         </button>
         <button
-          onClick={onExit}
+          onClick={onStudy}
           className="min-h-[44px] flex-1 rounded-xl bg-slate-100 dark:bg-slate-700 px-4 text-sm font-medium text-slate-600 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-600"
         >
-          Study the lessons
+          {studyLabel}
         </button>
       </div>
     </div>

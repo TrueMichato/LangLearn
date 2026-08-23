@@ -38,6 +38,11 @@ export interface LearningPathCheckpoint {
   lessonId: string;
   route: string;
   state: LearningPathCheckpointState;
+  unitId: string;
+  unitTitle: string;
+  lessonCount: number;
+  firstLessonTitle: string;
+  lastLessonTitle: string;
 }
 
 export interface LearningPathUnit {
@@ -51,6 +56,7 @@ export interface LearningPathUnit {
 export interface LearningPath {
   language: string;
   units: LearningPathUnit[];
+  testOutOptions: LearningPathCheckpoint[];
   completedCount: number;
   totalCount: number;
 }

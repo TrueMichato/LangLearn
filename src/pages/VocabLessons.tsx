@@ -11,7 +11,13 @@ import type { VocabLessonMeta } from '../types/vocab';
 import type { LessonProgress } from '../db/schema';
 import { SkeletonList } from '../components/common/Skeleton';
 import { computeTestOutRange } from '../lib/lesson-assessment';
-import { LESSON_QUERY_PARAM, TEST_OUT_QUERY_PARAM, vocabTestOutRoute, ROUTES } from '../lib/routes';
+import {
+  LESSON_ORIGIN_QUERY_PARAM,
+  LESSON_QUERY_PARAM,
+  TEST_OUT_QUERY_PARAM,
+  vocabTestOutRoute,
+  ROUTES,
+} from '../lib/routes';
 
 export default function VocabLessons() {
   const navigate = useNavigate();
@@ -28,6 +34,8 @@ export default function VocabLessons() {
   const [progressLanguage, setProgressLanguage] = useState('');
   const [availableLangs, setAvailableLangs] = useState<string[]>([]);
   const testOutTarget = searchParams.get(TEST_OUT_QUERY_PARAM);
+  const assessmentFromLearn =
+    searchParams.get(LESSON_ORIGIN_QUERY_PARAM) === 'learn';
   const requestedLessonId = searchParams.get(LESSON_QUERY_PARAM);
   const displayedLessonId = activeLessonId ?? requestedLessonId;
   const loading = loadedLanguage !== selectedLang;
@@ -113,6 +121,16 @@ export default function VocabLessons() {
     navigate(ROUTES.vocabLessons, { replace: true });
     setActiveLessonId(null);
   };
+  const returnFromAssessment = () => {
+    if (assessmentFromLearn) {
+      navigate(ROUTES.learn, {
+        replace: true,
+        state: { focusCurrentPathStep: true },
+      });
+      return;
+    }
+    exitToLessons();
+  };
 
   if (displayedLessonId) {
     return (
@@ -137,7 +155,15 @@ export default function VocabLessons() {
           lang={selectedLang}
           kind="vocab"
           lessons={range.map((id) => ({ id, title: titleById.get(id) ?? id }))}
-          onExit={exitToLessons}
+          onExit={returnFromAssessment}
+          returnLabel={assessmentFromLearn ? 'Back to path' : 'Back to lessons'}
+          onPass={returnFromAssessment}
+          passActionLabel={
+            assessmentFromLearn ? 'Continue on your path' : 'Continue'
+          }
+          failActionLabel={
+            assessmentFromLearn ? 'Back to path' : 'Study the lessons'
+          }
         />
       );
     }

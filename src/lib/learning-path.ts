@@ -128,23 +128,35 @@ export function resolveLearningPath(
     const checkpoints = kinds.map((kind) => {
       const lessons = encounteredLessons[kind];
       const target = lessons[lessons.length - 1];
+      const firstIncompleteIndex = lessons.findIndex(
+        (node) => node.state !== 'completed',
+      );
+      const assessmentRange =
+        firstIncompleteIndex === -1
+          ? []
+          : lessons.slice(firstIncompleteIndex);
       const lessonId =
         kind === 'vocab'
           ? target.lessonId.replace(/^vocab\//, '')
           : target.lessonId;
-      const completed = lessons.every((node) => node.state === 'completed');
       return {
         kind,
         lessonId,
         route:
           kind === 'grammar'
-            ? grammarTestOutRoute(lessonId)
-            : vocabTestOutRoute(lessonId),
+            ? grammarTestOutRoute(lessonId, 'learn')
+            : vocabTestOutRoute(lessonId, 'learn'),
         state: !prerequisitesComplete
           ? ('locked' as const)
-          : completed
+          : assessmentRange.length === 0
             ? ('completed' as const)
             : ('available' as const),
+        unitId: unit.id,
+        unitTitle: unit.title,
+        lessonCount: assessmentRange.length,
+        firstLessonTitle: assessmentRange[0]?.title ?? target.title,
+        lastLessonTitle:
+          assessmentRange[assessmentRange.length - 1]?.title ?? target.title,
       };
     });
 
@@ -176,6 +188,7 @@ export function resolveLearningPath(
   return {
     language: manifest.language,
     units: allUnits,
+    testOutOptions: allUnits.flatMap((unit) => unit.checkpoints),
     completedCount: nodes.filter((node) => node.state === 'completed').length,
     totalCount: nodes.length,
   };

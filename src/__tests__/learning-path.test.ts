@@ -108,6 +108,9 @@ describe('resolveLearningPath', () => {
         .flatMap((unit) => unit.checkpoints)
         .every((checkpoint) => checkpoint.state === 'locked'),
     ).toBe(true);
+    expect(path.testOutOptions.every((option) => option.state === 'locked')).toBe(
+      true,
+    );
   });
 
   it('opens the first lesson only after every letter prerequisite', () => {
@@ -122,12 +125,21 @@ describe('resolveLearningPath', () => {
     expect(lessonNodes.slice(1).every((node) => node.state === 'locked')).toBe(true);
     const firstUnit = path.units.find((unit) => unit.id === manifest.units[0].id);
     expect(firstUnit?.checkpoints.map((checkpoint) => checkpoint.route)).toEqual([
-      '/vocab-lessons?testOut=numbers',
-      '/grammar?testOut=particles',
+      '/vocab-lessons?testOut=numbers&from=learn',
+      '/grammar?testOut=particles&from=learn',
     ]);
     expect(
       firstUnit?.checkpoints.every((checkpoint) => checkpoint.state === 'available'),
     ).toBe(true);
+    expect(firstUnit?.checkpoints.map((checkpoint) => checkpoint.lessonCount)).toEqual([
+      2,
+      1,
+    ]);
+    expect(path.testOutOptions[0]).toMatchObject({
+      unitTitle: firstUnit?.title,
+      firstLessonTitle: 'Greetings & Introductions',
+      lastLessonTitle: 'Numbers 1-100',
+    });
   });
 
   it('advances to one next node while preserving completed history', () => {
@@ -151,5 +163,40 @@ describe('resolveLearningPath', () => {
     expect(lessonNodes[1].state).toBe('completed');
     expect(lessonNodes[2].state).toBe('available');
     expect(lessonNodes[3].state).toBe('locked');
+    const firstVocabOption = path.testOutOptions.find(
+      (option) =>
+        option.unitId === firstUnit.id && option.kind === 'vocab',
+    );
+    expect(firstVocabOption).toMatchObject({
+      lessonCount: 1,
+      firstLessonTitle: 'Numbers 1-100',
+      lastLessonTitle: 'Numbers 1-100',
+      state: 'available',
+    });
+    expect(
+      path.testOutOptions.find(
+        (option) =>
+          option.unitId === firstUnit.id && option.kind === 'grammar',
+      )?.state,
+    ).toBe('completed');
+  });
+
+  it('describes the same contiguous range when later lessons were completed out of order', () => {
+    const path = resolveLearningPath(manifest, content, {
+      progress: [progress('verb-forms')],
+      completedLetters: new Set(manifest.letterPrerequisites),
+    });
+    const option = path.testOutOptions.find(
+      (candidate) =>
+        candidate.unitId === 'everyday-time' &&
+        candidate.kind === 'grammar',
+    );
+
+    expect(option).toMatchObject({
+      lessonCount: 2,
+      firstLessonTitle: 'Basic Particles (は、が、を、に、で)',
+      lastLessonTitle: 'Verb Forms (ます、て、た)',
+      state: 'available',
+    });
   });
 });

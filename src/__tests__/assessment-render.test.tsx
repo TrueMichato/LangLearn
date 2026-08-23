@@ -10,10 +10,16 @@ const threeLessons = [
   { id: 'l3', title: 'Adjectives' },
 ];
 
+const actions = {
+  onRetry: () => {},
+  onContinue: () => {},
+  onStudy: () => {},
+};
+
 describe('AssessmentResult (pass)', () => {
   it('celebrates a pass, names the lesson count and score, singular for one lesson', () => {
     const html = renderToStaticMarkup(
-      <AssessmentResult passed score={85} lessons={oneLesson} onRetry={() => {}} onExit={() => {}} />,
+      <AssessmentResult passed score={85} lessons={oneLesson} {...actions} />,
     );
     expect(html).toContain('You tested out of 1 lesson! Scored 85%.');
     expect(html).not.toContain('1 lessons');
@@ -21,29 +27,42 @@ describe('AssessmentResult (pass)', () => {
 
   it('uses plural copy for a multi-lesson range', () => {
     const html = renderToStaticMarkup(
-      <AssessmentResult passed score={100} lessons={threeLessons} onRetry={() => {}} onExit={() => {}} />,
+      <AssessmentResult passed score={100} lessons={threeLessons} {...actions} />,
     );
     expect(html).toContain('You tested out of 3 lessons! Scored 100%.');
   });
 
   it('explicitly states no XP is granted for testing out', () => {
     const html = renderToStaticMarkup(
-      <AssessmentResult passed score={90} lessons={oneLesson} onRetry={() => {}} onExit={() => {}} />,
+      <AssessmentResult passed score={90} lessons={oneLesson} {...actions} />,
     );
     expect(html).toContain('No XP for testing out');
   });
 
   it('offers a single primary Continue action, not a retry option', () => {
     const html = renderToStaticMarkup(
-      <AssessmentResult passed score={90} lessons={oneLesson} onRetry={() => {}} onExit={() => {}} />,
+      <AssessmentResult passed score={90} lessons={oneLesson} {...actions} />,
     );
     expect(html).toContain('Continue');
     expect(html).not.toContain('Try again');
   });
 
+  it('supports a path-specific continuation label', () => {
+    const html = renderToStaticMarkup(
+      <AssessmentResult
+        passed
+        score={90}
+        lessons={oneLesson}
+        {...actions}
+        continueLabel="Continue on your path"
+      />,
+    );
+    expect(html).toContain('Continue on your path');
+  });
+
   it('meets the 44px touch target and ships dark-mode twins', () => {
     const html = renderToStaticMarkup(
-      <AssessmentResult passed score={90} lessons={oneLesson} onRetry={() => {}} onExit={() => {}} />,
+      <AssessmentResult passed score={90} lessons={oneLesson} {...actions} />,
     );
     expect(html).toContain('min-h-[44px]');
     expect(html).toContain('dark:text-green-200');
@@ -54,36 +73,50 @@ describe('AssessmentResult (pass)', () => {
 describe('AssessmentResult (fail)', () => {
   it('states the score and 80% bar without any punishing tone', () => {
     const html = renderToStaticMarkup(
-      <AssessmentResult passed={false} score={60} lessons={oneLesson} onRetry={() => {}} onExit={() => {}} />,
+      <AssessmentResult passed={false} score={60} lessons={oneLesson} {...actions} />,
     );
     expect(html).toContain('Scored 60% — testing out needs 80%.');
   });
 
   it('reassures the learner that nothing changed', () => {
     const html = renderToStaticMarkup(
-      <AssessmentResult passed={false} score={60} lessons={oneLesson} onRetry={() => {}} onExit={() => {}} />,
+      <AssessmentResult passed={false} score={60} lessons={oneLesson} {...actions} />,
     );
     expect(html).toContain('Nothing changed here');
   });
 
   it('never uses red styling for a fail — kind, never punishing', () => {
     const html = renderToStaticMarkup(
-      <AssessmentResult passed={false} score={60} lessons={oneLesson} onRetry={() => {}} onExit={() => {}} />,
+      <AssessmentResult passed={false} score={60} lessons={oneLesson} {...actions} />,
     );
     expect(html).not.toContain('red-');
   });
 
   it('offers both Try again and Study the lessons', () => {
     const html = renderToStaticMarkup(
-      <AssessmentResult passed={false} score={60} lessons={threeLessons} onRetry={() => {}} onExit={() => {}} />,
+      <AssessmentResult passed={false} score={60} lessons={threeLessons} {...actions} />,
     );
     expect(html).toContain('Try again');
     expect(html).toContain('Study the lessons');
   });
 
+  it('supports returning to the path after a failed Learn-origin check', () => {
+    const html = renderToStaticMarkup(
+      <AssessmentResult
+        passed={false}
+        score={60}
+        lessons={threeLessons}
+        {...actions}
+        studyLabel="Back to path"
+      />,
+    );
+    expect(html).toContain('Back to path');
+    expect(html).not.toContain('Study the lessons');
+  });
+
   it('does not mention XP on a failed attempt (nothing was granted or withheld to react to)', () => {
     const html = renderToStaticMarkup(
-      <AssessmentResult passed={false} score={60} lessons={oneLesson} onRetry={() => {}} onExit={() => {}} />,
+      <AssessmentResult passed={false} score={60} lessons={oneLesson} {...actions} />,
     );
     expect(html).not.toContain('XP');
   });
@@ -95,6 +128,17 @@ describe('AssessmentBlocked', () => {
       <AssessmentBlocked missingLessons={[{ id: 'l2', title: 'Verb Forms' }]} onBack={() => {}} />,
     );
     expect(html).toContain('&quot;Verb Forms&quot; doesn&#x27;t have enough content');
+  });
+
+  it('uses a context-specific return label', () => {
+    const html = renderToStaticMarkup(
+      <AssessmentBlocked
+        missingLessons={[{ id: 'l2', title: 'Verb Forms' }]}
+        onBack={() => {}}
+        backLabel="Back to path"
+      />,
+    );
+    expect(html).toContain('Back to path');
   });
 
   it('summarizes a count for multiple missing lessons instead of listing all titles', () => {

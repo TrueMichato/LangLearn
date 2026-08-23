@@ -7,7 +7,31 @@ import type { LearningPath as LearningPathModel } from '../types/learning-path';
 const PATH: LearningPathModel = {
   language: 'ja',
   completedCount: 1,
-  totalCount: 3,
+  totalCount: 4,
+  testOutOptions: [
+    {
+      kind: 'vocab',
+      lessonId: 'greetings',
+      route: '/vocab-lessons?testOut=greetings',
+      state: 'available',
+      unitId: 'first-steps',
+      unitTitle: 'First steps',
+      lessonCount: 1,
+      firstLessonTitle: 'Greetings & Introductions',
+      lastLessonTitle: 'Greetings & Introductions',
+    },
+    {
+      kind: 'grammar',
+      lessonId: 'particles',
+      route: '/grammar?testOut=particles',
+      state: 'available',
+      unitId: 'first-steps',
+      unitTitle: 'First steps',
+      lessonCount: 1,
+      firstLessonTitle: 'Basic Particles',
+      lastLessonTitle: 'Basic Particles',
+    },
+  ],
   units: [
     {
       id: 'first-steps',
@@ -19,12 +43,22 @@ const PATH: LearningPathModel = {
           lessonId: 'greetings',
           route: '/vocab-lessons?testOut=greetings',
           state: 'available',
+          unitId: 'first-steps',
+          unitTitle: 'First steps',
+          lessonCount: 1,
+          firstLessonTitle: 'Greetings & Introductions',
+          lastLessonTitle: 'Greetings & Introductions',
         },
         {
           kind: 'grammar',
           lessonId: 'particles',
           route: '/grammar?testOut=particles',
           state: 'available',
+          unitId: 'first-steps',
+          unitTitle: 'First steps',
+          lessonCount: 1,
+          firstLessonTitle: 'Basic Particles',
+          lastLessonTitle: 'Basic Particles',
         },
       ],
       nodes: [
@@ -57,6 +91,23 @@ const PATH: LearningPathModel = {
         },
       ],
     },
+    {
+      id: 'later',
+      title: 'Later',
+      description: 'Future work.',
+      checkpoints: [],
+      nodes: [
+        {
+          id: 'grammar:future',
+          kind: 'grammar',
+          lessonId: 'future',
+          title: 'Future Grammar',
+          route: '/grammar?lesson=future',
+          state: 'locked',
+          unitId: 'later',
+        },
+      ],
+    },
   ],
 };
 
@@ -71,7 +122,10 @@ describe('LearningPath', () => {
     expect(html).toContain('aria-current="step"');
     expect(html).toContain('Basic Particles, locked');
     expect(html).toContain('disabled');
-    expect(html).toContain('1/3');
+    expect(html).toContain('1/4');
+    expect(html).toContain('See the rest of your route (1 unit)');
+    expect(html).toContain('id="future-path-units-ja" hidden=""');
+    expect(html).toContain('Future Grammar');
   });
 
   it('keeps navigation routes on the real lesson links', () => {
@@ -83,9 +137,10 @@ describe('LearningPath', () => {
 
     expect(html).toContain('/vocab-lessons?lesson=greetings');
     expect(html).toContain('/letters/ja?mode=learn&amp;alphabet=Hiragana');
-    expect(html).toContain('/vocab-lessons?testOut=greetings');
-    expect(html).toContain('/grammar?testOut=particles');
-    expect(html).toContain('Test out of grammar through First steps');
+    expect(html).toContain('Check what you already know');
+    expect(html.match(/Check what you already know/g)).toHaveLength(1);
+    expect(html).not.toContain('/vocab-lessons?testOut=greetings');
+    expect(html).not.toContain('/grammar?testOut=particles');
   });
 
   it('mirrors the winding treatment for an RTL learning path', () => {

@@ -6,6 +6,7 @@ interface LessonRef {
 interface Props {
   missingLessons: LessonRef[];
   onBack: () => void;
+  backLabel?: string;
 }
 
 /**
@@ -15,7 +16,11 @@ interface Props {
  * complete without ever actually checking the learner knows it, so the
  * attempt is refused rather than silently skipping the gap.
  */
-export default function AssessmentBlocked({ missingLessons, onBack }: Props) {
+export default function AssessmentBlocked({
+  missingLessons,
+  onBack,
+  backLabel = 'Back to lessons',
+}: Props) {
   return (
     <div className="rounded-2xl border border-slate-200/70 dark:border-white/10 bg-white dark:bg-slate-800 p-5 text-center">
       <p className="text-2xl mb-1" aria-hidden="true">🤔</p>
@@ -30,7 +35,7 @@ export default function AssessmentBlocked({ missingLessons, onBack }: Props) {
         onClick={onBack}
         className="mt-4 min-h-[44px] w-full rounded-xl bg-slate-100 dark:bg-slate-700 px-4 text-sm font-medium text-slate-600 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-600"
       >
-        ← Back to lessons
+        ← {backLabel}
       </button>
     </div>
   );
