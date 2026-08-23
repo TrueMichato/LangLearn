@@ -177,6 +177,9 @@ export function resolveLearningPath(
     });
   };
 
+  const parallelLetterUnit =
+    manifest.letterPrerequisites.length > 0 &&
+    (manifest.letterUnitLessons?.length ?? 0) > 0;
   let letterPrerequisitesComplete = true;
   const letterNodes: LearningPathNode[] = manifest.letterPrerequisites.map(
     (alphabetName) => {
@@ -195,6 +198,7 @@ export function resolveLearningPath(
         route: guidedLettersRoute(manifest.language, alphabetName),
         state,
         unitId: 'letters',
+        strandId: parallelLetterUnit ? 'letter-practice' : undefined,
       };
     },
   );
@@ -204,9 +208,26 @@ export function resolveLearningPath(
   const letterLessonNodes = resolveSequence(
     manifest.letterUnitLessons ?? [],
     'letters',
-    lettersComplete,
+    parallelLetterUnit || lettersComplete,
+    parallelLetterUnit ? 'letter-sounds' : undefined,
   );
   const letterUnitNodes = [...letterNodes, ...letterLessonNodes];
+  const letterUnitStrands: LearningPathStrand[] = parallelLetterUnit
+    ? [
+        {
+          id: 'letter-practice',
+          title: 'Practice the letters',
+          description: 'Build recognition one letter set at a time.',
+          nodes: letterNodes,
+        },
+        {
+          id: 'letter-sounds',
+          title: 'Hear the sounds',
+          description: 'Connect the written alphabet with its spoken sounds.',
+          nodes: letterLessonNodes,
+        },
+      ]
+    : [];
   const prerequisitesComplete = letterUnitNodes.every(
     (node) => node.state === 'completed',
   );
@@ -214,7 +235,7 @@ export function resolveLearningPath(
     letterLessonNodes,
     'letters',
     'Learn the script',
-    lettersComplete,
+    parallelLetterUnit || lettersComplete,
   );
 
   let previousUnitComplete = prerequisitesComplete;
@@ -263,11 +284,13 @@ export function resolveLearningPath(
             id: 'letters',
             title: 'Learn the script',
             description:
-              letterLessonNodes.length > 0
+              parallelLetterUnit
+                ? 'Learn the shapes and sounds side by side before lessons begin.'
+                : letterLessonNodes.length > 0
                 ? 'Get comfortable with the writing system and its sounds before lessons begin.'
                 : 'Get comfortable with the writing system before lessons begin.',
             nodes: letterUnitNodes,
-            strands: [],
+            strands: letterUnitStrands,
             checkpoints: letterUnitCheckpoints,
           },
           ...units,

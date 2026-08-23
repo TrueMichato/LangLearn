@@ -75,14 +75,22 @@ export default function LearningPath({ path, focusCurrent = false }: Props) {
       (node) => node.state === 'available',
     );
     const hasLockedSteps = unit.nodes.some((node) => node.state === 'locked');
+    const unitComplete = unit.nodes.every(
+      (node) => node.state === 'completed',
+    );
     const parallel = unit.strands.length > 0;
-    const renderNodes = (nodes: typeof unit.nodes) => (
+    const visualFork = unit.strands.length === 2;
+    const renderNodes = (
+      nodes: typeof unit.nodes,
+      layout: 'winding' | 'branch' = 'winding',
+    ) => (
       <ol className="mt-3 space-y-2">
         {nodes.map((node, index) => (
           <PathNode
             key={node.id}
             node={node}
             recommended={node.id === path.recommendedNodeId}
+            layout={layout}
             isLast={index === nodes.length - 1}
             position={index % 3}
             nextPosition={
@@ -114,66 +122,84 @@ export default function LearningPath({ path, focusCurrent = false }: Props) {
         </p>
         {parallel ? (
           <div className="mt-4">
-            <div className="flex items-center gap-3" aria-hidden="true">
-              <span className="h-px flex-1 bg-slate-200 dark:bg-slate-700" />
-              <span className="text-slate-400 dark:text-slate-500">◇</span>
-              <span className="h-px flex-1 bg-slate-200 dark:bg-slate-700" />
-            </div>
-            <p className="mt-2 text-sm font-medium text-slate-700 dark:text-slate-200">
-              Two strands, both part of this unit
+            <p className="text-sm text-slate-600 dark:text-slate-300">
+              Choose either path first. Complete both to continue.
             </p>
-            <p className="mt-1 text-xs leading-relaxed text-slate-500 dark:text-slate-400">
-              Work on either strand first. Complete both to continue.
-            </p>
-            <div className="mt-4">
-              {unit.strands.map((strand, strandIndex) => {
+            {visualFork && (
+              <svg
+                viewBox="0 0 100 24"
+                preserveAspectRatio="none"
+                aria-hidden="true"
+                className="mt-3 h-6 w-full text-slate-200 dark:text-slate-700"
+              >
+                <path
+                  d="M 50 0 V 6 C 50 14, 25 12, 25 24 M 50 6 C 50 14, 75 12, 75 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="1.5"
+                  vectorEffect="non-scaling-stroke"
+                />
+              </svg>
+            )}
+            <div
+              className={`grid items-stretch gap-3 ${
+                visualFork ? 'grid-cols-2' : 'mt-3 grid-cols-1'
+              }`}
+              style={{ direction: rtl ? 'rtl' : 'ltr' }}
+              role="group"
+              aria-label="Parallel learning paths"
+            >
+              {unit.strands.map((strand) => {
                 const completed = strand.nodes.filter(
                   (node) => node.state === 'completed',
                 ).length;
-                const strandAvailable = strand.nodes.find(
-                  (node) => node.state === 'available',
-                );
                 return (
                   <section
                     key={strand.id}
                     aria-labelledby={`path-strand-${unit.id}-${strand.id}`}
-                    className={
-                      strandIndex > 0
-                        ? 'mt-4 border-t border-slate-200/70 pt-4 dark:border-white/10'
-                        : ''
-                    }
+                    className="flex min-w-0 flex-col"
+                    dir="ltr"
                   >
-                    <div
-                      className={`flex items-start justify-between gap-3 ${
-                        rtl ? 'flex-row-reverse text-right' : ''
-                      }`}
+                    <h5
+                      id={`path-strand-${unit.id}-${strand.id}`}
+                      className="text-center text-sm font-semibold leading-snug text-slate-800 dark:text-slate-100"
                     >
-                      <div>
-                        <h5
-                          id={`path-strand-${unit.id}-${strand.id}`}
-                          className="text-sm font-semibold text-slate-800 dark:text-slate-100"
-                        >
-                          {strand.title}
-                        </h5>
-                        <p className="mt-1 text-xs leading-relaxed text-slate-500 dark:text-slate-400">
-                          {strand.description}
-                        </p>
-                      </div>
-                      <span className="shrink-0 text-xs font-medium text-slate-600 dark:text-slate-300">
-                        {completed} of {strand.nodes.length}
-                      </span>
-                    </div>
-                    {renderNodes(strand.nodes)}
-                    {strandAvailable &&
-                      strand.nodes.some((node) => node.state === 'locked') && (
-                        <p className="mt-2 text-xs leading-relaxed text-slate-500 dark:text-slate-400">
-                          Complete {strandAvailable.title} to continue this
-                          strand.
-                        </p>
-                      )}
+                      {strand.title}
+                    </h5>
+                    <p className="mt-1 text-center text-xs text-slate-500 dark:text-slate-400">
+                      {completed}/{strand.nodes.length} complete
+                    </p>
+                    <span className="sr-only">{strand.description}</span>
+                    {renderNodes(strand.nodes, 'branch')}
+                    <span
+                      aria-hidden="true"
+                      className="mx-auto min-h-4 w-px flex-1 bg-slate-200 dark:bg-slate-700"
+                    />
                   </section>
                 );
               })}
+            </div>
+            {visualFork && (
+              <svg
+                viewBox="0 0 100 24"
+                preserveAspectRatio="none"
+                aria-hidden="true"
+                className="h-6 w-full text-slate-200 dark:text-slate-700"
+              >
+                <path
+                  d="M 25 0 C 25 12, 50 10, 50 18 M 75 0 C 75 12, 50 10, 50 18 V 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="1.5"
+                  vectorEffect="non-scaling-stroke"
+                />
+              </svg>
+            )}
+            <div
+              className="mx-auto flex h-9 w-9 items-center justify-center rounded-full bg-slate-100 text-sm text-slate-500 dark:bg-slate-700 dark:text-slate-300"
+              aria-hidden="true"
+            >
+              {unitComplete ? '✓' : '🔒'}
             </div>
           </div>
         ) : (
@@ -195,9 +221,9 @@ export default function LearningPath({ path, focusCurrent = false }: Props) {
             Complete {availableNodes[0].title} to unlock the next lesson.
           </p>
         )}
-        {unit.id === currentUnitId && parallel && hasLockedSteps && (
-          <p className="mt-4 border-t border-slate-200/70 pt-3 text-xs leading-relaxed text-slate-500 dark:border-white/10 dark:text-slate-400">
-            Complete both strands to unlock the next unit.
+        {unit.id === currentUnitId && parallel && !unitComplete && (
+          <p className="mt-2 text-center text-xs leading-relaxed text-slate-500 dark:text-slate-400">
+            Both paths rejoin before the next unit.
           </p>
         )}
       </section>

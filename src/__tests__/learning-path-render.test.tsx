@@ -296,10 +296,46 @@ describe('LearningPath parallel unit', () => {
     expect(html).toContain('Family Members');
     expect(html).toContain('Also available');
     expect(html).toContain('href="/vocab-lessons?lesson=family"');
-    expect(html).toContain('Two strands, both part of this unit');
-    expect(html).toContain('Complete both strands to unlock the next unit.');
+    expect(html).toContain('Choose either path first. Complete both to continue.');
+    expect(html).toContain('Parallel learning paths');
+    expect(html).toContain('grid-cols-2');
+    expect(html).toContain('Both paths rejoin before the next unit.');
     expect(html).toContain('1 earlier unit');
     expect(html).not.toContain('Greetings &amp; Introductions');
+  });
+
+  it('keeps the rejoin locked while unfinished branch steps are available', () => {
+    const progressNode = (
+      node: LearningPathModel['units'][number]['nodes'][number],
+    ) => ({
+      ...node,
+      state: node.kind === 'vocab' ? ('completed' as const) : ('available' as const),
+    });
+    const progressedPath: LearningPathModel = {
+      ...BRANCH_PATH,
+      completedCount: 3,
+      recommendedNodeId: 'grammar:stress',
+      units: BRANCH_PATH.units.map((unit) =>
+        unit.id !== 'foundations'
+          ? unit
+          : {
+              ...unit,
+              nodes: unit.nodes.map(progressNode),
+              strands: unit.strands.map((strand) => ({
+                ...strand,
+                nodes: strand.nodes.map(progressNode),
+              })),
+            },
+      ),
+    };
+    const html = renderToStaticMarkup(
+      <MemoryRouter>
+        <LearningPath path={progressedPath} />
+      </MemoryRouter>,
+    );
+
+    expect(html).toContain('Both paths rejoin before the next unit.');
+    expect(html).toContain('🔒');
   });
 });
 

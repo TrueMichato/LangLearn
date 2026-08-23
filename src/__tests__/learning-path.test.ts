@@ -152,7 +152,7 @@ describe('learning path manifests', () => {
     },
   );
 
-  it('places Russian alphabet sounds in the script unit before regular lessons', () => {
+  it('offers Russian letter practice and alphabet sounds together', () => {
     const manifest = LEARNING_PATHS.ru;
     const path = resolveLearningPath(
       manifest,
@@ -162,7 +162,7 @@ describe('learning path manifests', () => {
       },
       {
         progress: [],
-        completedLetters: new Set(manifest.letterPrerequisites),
+        completedLetters: new Set(),
       },
     );
 
@@ -172,7 +172,16 @@ describe('learning path manifests', () => {
       'Cyrillic (Lowercase)',
       'The Russian Alphabet & Sounds',
     ]);
-    expect(path.units[0].nodes[2].state).toBe('available');
+    expect(path.units[0].strands.map((strand) => strand.title)).toEqual([
+      'Practice the letters',
+      'Hear the sounds',
+    ]);
+    expect(path.units[0].nodes.map((node) => node.state)).toEqual([
+      'available',
+      'locked',
+      'available',
+    ]);
+    expect(path.recommendedNodeId).toBe('letters:Cyrillic (Uppercase)');
     expect(path.units[0].checkpoints[0]).toMatchObject({
       kind: 'grammar',
       lessonIds: ['alphabet-sounds'],
@@ -186,7 +195,7 @@ describe('learning path manifests', () => {
     );
   });
 
-  it('counts Russian alphabet sounds as ahead progress inside the script unit', () => {
+  it('treats completed alphabet sounds as current strand progress, not ahead work', () => {
     const manifest = LEARNING_PATHS.ru;
     const path = resolveLearningPath(
       manifest,
@@ -205,7 +214,32 @@ describe('learning path manifests', () => {
       title: 'The Russian Alphabet & Sounds',
       state: 'completed',
     });
-    expect(path.completedAheadCount).toBe(1);
+    expect(path.units[0].nodes[1].state).toBe('locked');
+    expect(path.completedAheadCount).toBe(0);
+  });
+
+  it('keeps First steps locked until letter practice and alphabet sounds are complete', () => {
+    const manifest = LEARNING_PATHS.ru;
+    const content = {
+      grammar: indexFor(GRAMMAR_INDEXES, 'ru'),
+      vocab: indexFor(VOCAB_INDEXES, 'ru'),
+    };
+    const withLettersOnly = resolveLearningPath(manifest, content, {
+      progress: [],
+      completedLetters: new Set(manifest.letterPrerequisites),
+    });
+    const withBothStrands = resolveLearningPath(manifest, content, {
+      progress: [progress('alphabet-sounds', 'ru')],
+      completedLetters: new Set(manifest.letterPrerequisites),
+    });
+
+    expect(
+      withLettersOnly.units[1].nodes.every(
+        (node) => node.state === 'locked',
+      ),
+    ).toBe(true);
+    expect(withLettersOnly.recommendedNodeId).toBe('grammar:alphabet-sounds');
+    expect(withBothStrands.recommendedNodeId).toBe('vocab:greetings');
   });
 });
 

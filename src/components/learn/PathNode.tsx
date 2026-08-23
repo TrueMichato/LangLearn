@@ -4,6 +4,7 @@ import type { LearningPathNode as LearningPathNodeModel } from '../../types/lear
 interface Props {
   node: LearningPathNodeModel;
   recommended?: boolean;
+  layout?: 'winding' | 'branch';
   isLast: boolean;
   position: number;
   nextPosition?: number;
@@ -19,10 +20,14 @@ const KIND_DETAILS = {
 function nodeClasses(
   node: LearningPathNodeModel,
   recommended: boolean,
+  layout: 'winding' | 'branch',
   rtl: boolean,
 ): string {
-  const base =
-    `group relative z-10 flex min-h-[56px] scroll-mb-[var(--shell-bottom-clearance)] items-center gap-3 rounded-xl px-2 py-2 text-left focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 focus-visible:ring-offset-2 dark:focus-visible:ring-offset-slate-800 ${rtl ? 'flex-row-reverse' : ''}`;
+  const base = `group relative z-10 flex scroll-mb-[var(--shell-bottom-clearance)] rounded-xl px-2 py-2 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 focus-visible:ring-offset-2 dark:focus-visible:ring-offset-slate-800 ${
+    layout === 'branch'
+      ? 'min-h-[88px] w-full flex-col items-center justify-center gap-1 text-center'
+      : `min-h-[56px] items-center gap-3 text-left ${rtl ? 'flex-row-reverse' : ''}`
+  }`;
 
   if (recommended) {
     return `${base} bg-indigo-50 text-indigo-950 hover:bg-indigo-100 dark:bg-indigo-500/10 dark:text-indigo-100 dark:hover:bg-indigo-500/15 press-feedback`;
@@ -39,9 +44,11 @@ function nodeClasses(
 function Marker({
   node,
   recommended,
+  compact = false,
 }: {
   node: LearningPathNodeModel;
   recommended: boolean;
+  compact?: boolean;
 }) {
   const detail = KIND_DETAILS[node.kind];
   const markerClasses =
@@ -55,7 +62,9 @@ function Marker({
 
   return (
     <span
-      className={`relative z-10 flex h-11 w-11 shrink-0 items-center justify-center rounded-full ${markerClasses}`}
+      className={`relative z-10 flex shrink-0 items-center justify-center rounded-full ${
+        compact ? 'h-10 w-10' : 'h-11 w-11'
+      } ${markerClasses}`}
       aria-hidden="true"
     >
       {node.state === 'completed' ? '✓' : node.state === 'locked' ? '🔒' : detail.emoji}
@@ -66,10 +75,12 @@ function Marker({
 function Body({
   node,
   recommended,
+  layout,
   rtl,
 }: {
   node: LearningPathNodeModel;
   recommended: boolean;
+  layout: 'winding' | 'branch';
   rtl: boolean;
 }) {
   const detail = KIND_DETAILS[node.kind];
@@ -89,7 +100,11 @@ function Body({
       : 'text-slate-500 dark:text-slate-400';
   return (
     <>
-      <Marker node={node} recommended={recommended} />
+      <Marker
+        node={node}
+        recommended={recommended}
+        compact={layout === 'branch'}
+      />
       <span className="min-w-0 flex-1">
         <span className={`block text-xs font-medium ${labelClasses}`}>
           {detail.label}
@@ -103,7 +118,7 @@ function Body({
           {node.title}
         </span>
       </span>
-      {node.state !== 'locked' && (
+      {layout === 'winding' && node.state !== 'locked' && (
         <span className={`shrink-0 ${arrowClasses}`} aria-hidden="true">
           {rtl ? '←' : '→'}
         </span>
@@ -118,6 +133,7 @@ const POSITION_OFFSET = [0, 28, 56] as const;
 export default function PathNode({
   node,
   recommended = false,
+  layout = 'winding',
   isLast,
   position,
   nextPosition,
@@ -127,7 +143,9 @@ export default function PathNode({
   const visualNextPosition =
     nextPosition == null ? visualPosition : rtl ? 2 - nextPosition : nextPosition;
   const positionClass =
-    POSITION_CLASSES[visualPosition] ?? POSITION_CLASSES[0];
+    layout === 'branch'
+      ? 'w-full'
+      : (POSITION_CLASSES[visualPosition] ?? POSITION_CLASSES[0]);
   const startX = (POSITION_OFFSET[visualPosition] ?? 0) + 22;
   const endX =
     (POSITION_OFFSET[visualNextPosition] ??
@@ -137,7 +155,13 @@ export default function PathNode({
 
   return (
     <li className="relative">
-      {!isLast && (
+      {layout === 'branch' && !isLast && (
+        <span
+          aria-hidden="true"
+          className="pointer-events-none absolute -bottom-2 left-1/2 top-[5rem] z-0 w-px bg-slate-200 dark:bg-slate-700"
+        />
+      )}
+      {layout === 'winding' && !isLast && (
         <svg
           aria-hidden="true"
           className="pointer-events-none absolute left-0 top-[2.75rem] z-0 h-8 w-full overflow-visible text-slate-200 dark:text-slate-700"
@@ -155,18 +179,28 @@ export default function PathNode({
         <button
           type="button"
           disabled
-          className={`${nodeClasses(node, recommended, rtl)} ${positionClass}`}
+          className={`${nodeClasses(node, recommended, layout, rtl)} ${positionClass}`}
           aria-label={`${node.title}, locked`}
         >
-          <Body node={node} recommended={recommended} rtl={rtl} />
+          <Body
+            node={node}
+            recommended={recommended}
+            layout={layout}
+            rtl={rtl}
+          />
         </button>
       ) : (
         <Link
           to={node.route}
-          className={`${nodeClasses(node, recommended, rtl)} ${positionClass}`}
+          className={`${nodeClasses(node, recommended, layout, rtl)} ${positionClass}`}
           aria-current={recommended ? 'step' : undefined}
         >
-          <Body node={node} recommended={recommended} rtl={rtl} />
+          <Body
+            node={node}
+            recommended={recommended}
+            layout={layout}
+            rtl={rtl}
+          />
         </Link>
       )}
     </li>
