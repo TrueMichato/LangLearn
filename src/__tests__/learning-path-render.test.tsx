@@ -9,6 +9,7 @@ const PATH: LearningPathModel = {
   completedCount: 1,
   totalCount: 4,
   completedAheadCount: 0,
+  recommendedNodeId: 'vocab:greetings',
   testOutOptions: [
     {
       kind: 'vocab',
@@ -66,6 +67,7 @@ const PATH: LearningPathModel = {
           lastLessonTitle: 'Basic Particles',
         },
       ],
+      strands: [],
       nodes: [
         {
           id: 'letters:Hiragana',
@@ -101,6 +103,7 @@ const PATH: LearningPathModel = {
       title: 'Later',
       description: 'Future work.',
       checkpoints: [],
+      strands: [],
       nodes: [
         {
           id: 'grammar:future',
@@ -165,11 +168,147 @@ describe('LearningPath', () => {
   });
 });
 
+const SOUND_NODES: LearningPathModel['units'][number]['nodes'] = [
+  {
+    id: 'vocab:days-months',
+    kind: 'vocab',
+    lessonId: 'vocab/days-months',
+    title: 'Days & Months',
+    route: '/vocab-lessons?lesson=days-months',
+    state: 'available',
+    unitId: 'foundations',
+    strandId: 'sound-rhythm',
+  },
+  {
+    id: 'grammar:stress',
+    kind: 'grammar',
+    lessonId: 'stress',
+    title: 'Stress in Russian',
+    route: '/grammar?lesson=stress',
+    state: 'locked',
+    unitId: 'foundations',
+    strandId: 'sound-rhythm',
+  },
+];
+
+const PEOPLE_NODES: LearningPathModel['units'][number]['nodes'] = [
+  {
+    id: 'vocab:family',
+    kind: 'vocab',
+    lessonId: 'vocab/family',
+    title: 'Family Members',
+    route: '/vocab-lessons?lesson=family',
+    state: 'available',
+    unitId: 'foundations',
+    strandId: 'people-things',
+  },
+  {
+    id: 'grammar:spelling-rules',
+    kind: 'grammar',
+    lessonId: 'spelling-rules',
+    title: 'Russian Spelling Rules',
+    route: '/grammar?lesson=spelling-rules',
+    state: 'locked',
+    unitId: 'foundations',
+    strandId: 'people-things',
+  },
+];
+
+const BRANCH_PATH: LearningPathModel = {
+  language: 'ru',
+  completedCount: 1,
+  totalCount: 6,
+  completedAheadCount: 0,
+  recommendedNodeId: 'vocab:days-months',
+  testOutOptions: [],
+  units: [
+    {
+      id: 'first-steps',
+      title: 'First steps',
+      description: 'A completed beginning.',
+      checkpoints: [],
+      strands: [],
+      nodes: [
+        {
+          id: 'vocab:greetings',
+          kind: 'vocab',
+          lessonId: 'vocab/greetings',
+          title: 'Greetings & Introductions',
+          route: '/vocab-lessons?lesson=greetings',
+          state: 'completed',
+          unitId: 'first-steps',
+        },
+      ],
+    },
+    {
+      id: 'foundations',
+      title: 'Build your foundations',
+      description: 'Grow two useful foundations.',
+      checkpoints: [],
+      nodes: [...SOUND_NODES, ...PEOPLE_NODES],
+      strands: [
+        {
+          id: 'sound-rhythm',
+          title: 'Sound and rhythm',
+          description: 'Practice stress and rhythm.',
+          nodes: SOUND_NODES,
+        },
+        {
+          id: 'people-things',
+          title: 'People and things',
+          description: 'Name people and notice spelling.',
+          nodes: PEOPLE_NODES,
+        },
+      ],
+    },
+    {
+      id: 'food-cases',
+      title: 'Food and cases',
+      description: 'Continue after both strands.',
+      checkpoints: [],
+      strands: [],
+      nodes: [
+        {
+          id: 'vocab:food',
+          kind: 'vocab',
+          lessonId: 'vocab/food',
+          title: 'Food & Drink',
+          route: '/vocab-lessons?lesson=food',
+          state: 'locked',
+          unitId: 'food-cases',
+        },
+      ],
+    },
+  ],
+};
+
+describe('LearningPath parallel unit', () => {
+  it('keeps one recommendation while making the sibling strand actionable', () => {
+    const html = renderToStaticMarkup(
+      <MemoryRouter>
+        <LearningPath path={BRANCH_PATH} />
+      </MemoryRouter>,
+    );
+
+    expect(html.match(/aria-current="step"/g)).toHaveLength(1);
+    expect(html).toContain('Days &amp; Months');
+    expect(html).toContain('Up next');
+    expect(html).toContain('Family Members');
+    expect(html).toContain('Also available');
+    expect(html).toContain('href="/vocab-lessons?lesson=family"');
+    expect(html).toContain('Two strands, both part of this unit');
+    expect(html).toContain('Complete both strands to unlock the next unit.');
+    expect(html).toContain('1 earlier unit');
+    expect(html).not.toContain('Greetings &amp; Introductions');
+  });
+});
+
 const LETTERS_CURRENT_PATH: LearningPathModel = {
   language: 'ja',
   completedCount: 2,
   totalCount: 5,
   completedAheadCount: 0,
+  recommendedNodeId: 'letters:Katakana',
   testOutOptions: [],
   units: [
     {
@@ -177,6 +316,7 @@ const LETTERS_CURRENT_PATH: LearningPathModel = {
       title: 'Learn the script',
       description: 'Get comfortable with the writing system before lessons begin.',
       checkpoints: [],
+      strands: [],
       nodes: [
         {
           id: 'letters:Hiragana',
@@ -203,6 +343,7 @@ const LETTERS_CURRENT_PATH: LearningPathModel = {
       title: 'First steps',
       description: 'A gentle beginning.',
       checkpoints: [],
+      strands: [],
       nodes: [
         {
           id: 'vocab:greetings',

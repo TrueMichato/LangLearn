@@ -35,12 +35,39 @@ export interface OrderedLessonRef {
  * - every lesson is already completed, or
  * - `uptoLessonId` comes before the first incomplete lesson (it's already
  *   done, so there is no "next lesson through here" to skip).
+ *
+ * A guided path may supply `requestedLessonIds` when its curriculum order is
+ * not contiguous in the global content index (for example, parallel strands).
+ * Those IDs are validated against the current lesson catalog and used in path
+ * order, so the assessment cannot silently pull in lessons from another unit.
  */
 export function computeTestOutRange(
   lessons: readonly OrderedLessonRef[],
   completedIds: ReadonlySet<string>,
   uptoLessonId: string,
+  requestedLessonIds: readonly string[] = [],
 ): string[] | null {
+  if (requestedLessonIds.length > 0) {
+    const indexById = new Map(
+      lessons.map((lesson, index) => [lesson.id, index]),
+    );
+    const seen = new Set<string>();
+    for (const lessonId of requestedLessonIds) {
+      const index = indexById.get(lessonId);
+      if (index === undefined || seen.has(lessonId)) {
+        return null;
+      }
+      seen.add(lessonId);
+    }
+    if (requestedLessonIds[requestedLessonIds.length - 1] !== uptoLessonId) {
+      return null;
+    }
+    const fromIndex = requestedLessonIds.findIndex(
+      (lessonId) => !completedIds.has(lessonId),
+    );
+    return fromIndex === -1 ? null : requestedLessonIds.slice(fromIndex);
+  }
+
   const uptoIndex = lessons.findIndex((lesson) => lesson.id === uptoLessonId);
   if (uptoIndex === -1) return null;
 

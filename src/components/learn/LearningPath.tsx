@@ -16,13 +16,19 @@ export default function LearningPath({ path, focusCurrent = false }: Props) {
   const rtl = isRTL(path.language);
   const sectionRef = useRef<HTMLElement>(null);
   const currentUnitIndex = path.units.findIndex((unit) =>
-    unit.nodes.some((node) => node.state === 'available'),
+    unit.nodes.some((node) => node.id === path.recommendedNodeId),
   );
   const currentUnitId = path.units[currentUnitIndex]?.id;
+  const previousUnits =
+    currentUnitIndex > 0
+      ? path.units.slice(0, currentUnitIndex)
+      : currentUnitIndex < 0
+        ? path.units.slice(0, -1)
+        : [];
   const visibleUnits =
     currentUnitIndex >= 0
-      ? path.units.slice(0, currentUnitIndex + 1)
-      : path.units;
+      ? path.units.slice(currentUnitIndex, currentUnitIndex + 1)
+      : path.units.slice(-1);
   const futureUnits =
     currentUnitIndex >= 0
       ? path.units.slice(currentUnitIndex + 1)
@@ -65,8 +71,28 @@ export default function LearningPath({ path, focusCurrent = false }: Props) {
     unit: LearningPathModel['units'][number],
     unitIndex: number,
   ) {
-    const availableNode = unit.nodes.find((node) => node.state === 'available');
+    const availableNodes = unit.nodes.filter(
+      (node) => node.state === 'available',
+    );
     const hasLockedSteps = unit.nodes.some((node) => node.state === 'locked');
+    const parallel = unit.strands.length > 0;
+    const renderNodes = (nodes: typeof unit.nodes) => (
+      <ol className="mt-3 space-y-2">
+        {nodes.map((node, index) => (
+          <PathNode
+            key={node.id}
+            node={node}
+            recommended={node.id === path.recommendedNodeId}
+            isLast={index === nodes.length - 1}
+            position={index % 3}
+            nextPosition={
+              index < nodes.length - 1 ? (index + 1) % 3 : undefined
+            }
+            rtl={rtl}
+          />
+        ))}
+      </ol>
+    );
     return (
       <section
         key={unit.id}
@@ -86,20 +112,73 @@ export default function LearningPath({ path, focusCurrent = false }: Props) {
         <p className="mt-1 text-sm text-slate-500 dark:text-slate-400">
           {unit.description}
         </p>
-        <ol className="mt-3 space-y-2">
-          {unit.nodes.map((node, index) => (
-            <PathNode
-              key={node.id}
-              node={node}
-              isLast={index === unit.nodes.length - 1}
-              position={index % 3}
-              nextPosition={
-                index < unit.nodes.length - 1 ? (index + 1) % 3 : undefined
-              }
-              rtl={rtl}
-            />
-          ))}
-        </ol>
+        {parallel ? (
+          <div className="mt-4">
+            <div className="flex items-center gap-3" aria-hidden="true">
+              <span className="h-px flex-1 bg-slate-200 dark:bg-slate-700" />
+              <span className="text-slate-400 dark:text-slate-500">◇</span>
+              <span className="h-px flex-1 bg-slate-200 dark:bg-slate-700" />
+            </div>
+            <p className="mt-2 text-sm font-medium text-slate-700 dark:text-slate-200">
+              Two strands, both part of this unit
+            </p>
+            <p className="mt-1 text-xs leading-relaxed text-slate-500 dark:text-slate-400">
+              Work on either strand first. Complete both to continue.
+            </p>
+            <div className="mt-4">
+              {unit.strands.map((strand, strandIndex) => {
+                const completed = strand.nodes.filter(
+                  (node) => node.state === 'completed',
+                ).length;
+                const strandAvailable = strand.nodes.find(
+                  (node) => node.state === 'available',
+                );
+                return (
+                  <section
+                    key={strand.id}
+                    aria-labelledby={`path-strand-${unit.id}-${strand.id}`}
+                    className={
+                      strandIndex > 0
+                        ? 'mt-4 border-t border-slate-200/70 pt-4 dark:border-white/10'
+                        : ''
+                    }
+                  >
+                    <div
+                      className={`flex items-start justify-between gap-3 ${
+                        rtl ? 'flex-row-reverse text-right' : ''
+                      }`}
+                    >
+                      <div>
+                        <h5
+                          id={`path-strand-${unit.id}-${strand.id}`}
+                          className="text-sm font-semibold text-slate-800 dark:text-slate-100"
+                        >
+                          {strand.title}
+                        </h5>
+                        <p className="mt-1 text-xs leading-relaxed text-slate-500 dark:text-slate-400">
+                          {strand.description}
+                        </p>
+                      </div>
+                      <span className="shrink-0 text-xs font-medium text-slate-600 dark:text-slate-300">
+                        {completed} of {strand.nodes.length}
+                      </span>
+                    </div>
+                    {renderNodes(strand.nodes)}
+                    {strandAvailable &&
+                      strand.nodes.some((node) => node.state === 'locked') && (
+                        <p className="mt-2 text-xs leading-relaxed text-slate-500 dark:text-slate-400">
+                          Complete {strandAvailable.title} to continue this
+                          strand.
+                        </p>
+                      )}
+                  </section>
+                );
+              })}
+            </div>
+          </div>
+        ) : (
+          renderNodes(unit.nodes)
+        )}
         {unit.id === currentUnitId && testOutOptions.length > 0 && (
           <PathTestOutPanel
             key={`${path.language}/${unit.id}`}
@@ -108,9 +187,17 @@ export default function LearningPath({ path, focusCurrent = false }: Props) {
             rtl={rtl}
           />
         )}
-        {unit.id === currentUnitId && availableNode && hasLockedSteps && (
+        {unit.id === currentUnitId &&
+          !parallel &&
+          availableNodes[0] &&
+          hasLockedSteps && (
           <p className="mt-3 text-xs leading-relaxed text-slate-500 dark:text-slate-400">
-            Complete {availableNode.title} to unlock the next lesson.
+            Complete {availableNodes[0].title} to unlock the next lesson.
+          </p>
+        )}
+        {unit.id === currentUnitId && parallel && hasLockedSteps && (
+          <p className="mt-4 border-t border-slate-200/70 pt-3 text-xs leading-relaxed text-slate-500 dark:border-white/10 dark:text-slate-400">
+            Complete both strands to unlock the next unit.
           </p>
         )}
       </section>
@@ -140,6 +227,18 @@ export default function LearningPath({ path, focusCurrent = false }: Props) {
         </p>
       </div>
 
+      {previousUnits.length > 0 && (
+        <p className="mb-3 text-sm text-slate-500 dark:text-slate-400">
+          <span
+            className="mr-2 text-green-600 dark:text-green-400"
+            aria-hidden="true"
+          >
+            ✓
+          </span>
+          {previousUnits.length}{' '}
+          {previousUnits.length === 1 ? 'earlier unit' : 'earlier units'} complete
+        </p>
+      )}
       <div className="rounded-2xl border border-slate-200/70 bg-white shadow-sm dark:border-white/10 dark:bg-slate-800">
         {visibleUnits.map(renderUnit)}
       </div>

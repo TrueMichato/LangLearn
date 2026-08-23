@@ -110,8 +110,8 @@ export default function PathTestOutPanel({
       {expanded && selected && (
         <div className="px-3 pb-2 pt-3" dir="ltr">
           <p className="text-sm text-slate-600 dark:text-slate-300">
-            Choose a lesson type and how far you want to check. Passing marks that
-            range complete; if you do not pass, nothing changes.
+            Choose a lesson type and how far you want to check. Passing marks
+            those lessons complete; if you do not pass, nothing changes.
           </p>
 
           <div className="mt-4">
@@ -203,13 +203,9 @@ export default function PathTestOutPanel({
 
           <p className="mt-3 text-sm text-slate-600 dark:text-slate-300">
             {selected.lessonCount}{' '}
-            {selected.lessonCount === 1 ? 'lesson' : 'lessons'}: from{' '}
+            {selected.lessonCount === 1 ? 'lesson' : 'lessons'} remaining through{' '}
             <span className="font-medium text-slate-800 dark:text-slate-100">
-              {selected.firstLessonTitle}
-            </span>{' '}
-            through{' '}
-            <span className="font-medium text-slate-800 dark:text-slate-100">
-              {selected.lastLessonTitle}
+              {selected.unitTitle}
             </span>
             .
           </p>

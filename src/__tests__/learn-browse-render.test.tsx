@@ -201,6 +201,7 @@ describe('Learn and Browse activities pages', () => {
       completedCount: 0,
       totalCount: 2,
       completedAheadCount: 0,
+      recommendedNodeId: 'vocab:greetings',
       testOutOptions: [],
       units: [
         {
@@ -208,6 +209,7 @@ describe('Learn and Browse activities pages', () => {
           title: 'First steps',
           description: 'Start here.',
           checkpoints: [],
+          strands: [],
           nodes: [
             {
               id: 'vocab:greetings',
@@ -242,5 +244,50 @@ describe('Learn and Browse activities pages', () => {
         title: 'Use the words',
       }),
     ]);
+  });
+
+  it('uses the explicit recommendation when a sibling branch is also available', () => {
+    const path: LearningPath = {
+      language: 'ru',
+      completedCount: 0,
+      totalCount: 2,
+      completedAheadCount: 0,
+      recommendedNodeId: 'grammar:stress',
+      testOutOptions: [],
+      units: [
+        {
+          id: 'foundations',
+          title: 'Build your foundations',
+          description: 'Grow two foundations.',
+          checkpoints: [],
+          strands: [],
+          nodes: [
+            {
+              id: 'vocab:family',
+              kind: 'vocab',
+              lessonId: 'vocab/family',
+              title: 'Family Members',
+              route: '/vocab-lessons?lesson=family',
+              state: 'available',
+              unitId: 'foundations',
+            },
+            {
+              id: 'grammar:stress',
+              kind: 'grammar',
+              lessonId: 'stress',
+              title: 'Stress in Russian',
+              route: '/grammar?lesson=stress',
+              state: 'available',
+              unitId: 'foundations',
+            },
+          ],
+        },
+      ],
+    };
+
+    expect(getPathRecommendations(path)[0]).toMatchObject({
+      to: '/grammar?lesson=stress',
+      title: 'Stress in Russian',
+    });
   });
 });

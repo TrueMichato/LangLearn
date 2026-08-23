@@ -4,9 +4,12 @@ import { getLessonProgress, markLessonComplete } from '../db/lessons';
 import type { LessonProgress } from '../db/schema';
 import type {
   LearningPath,
+  LearningPathLessonRef,
   LearningPathManifest,
   LearningPathNode,
   LearningPathNodeState,
+  LearningPathStrand,
+  LearningPathUnit,
 } from '../types/learning-path';
 import {
   guidedLessonId,
@@ -41,10 +44,10 @@ function contentMap(items: readonly LessonMeta[]): Map<string, LessonMeta> {
 
 function resolveState(
   completed: boolean,
-  availableClaimed: boolean,
+  prerequisitesComplete: boolean,
 ): LearningPathNodeState {
   if (completed) return 'completed';
-  return availableClaimed ? 'locked' : 'available';
+  return prerequisitesComplete ? 'available' : 'locked';
 }
 
 export function resolveLearningPath(
@@ -57,15 +60,17 @@ export function resolveLearningPath(
   const progress = new Map(
     resolution.progress.map((item) => [item.lessonId, item]),
   );
-  let availableClaimed = false;
+  let completedAheadCount = 0;
   const encounteredLessons = {
     grammar: [] as LearningPathNode[],
     vocab: [] as LearningPathNode[],
   };
 
   const resolveLessonNode = (
-    lesson: LearningPathManifest['units'][number]['lessons'][number],
+    lesson: LearningPathLessonRef,
     unitId: string,
+    prerequisitesComplete: boolean,
+    strandId?: string,
   ): LearningPathNode => {
     const metadata =
       lesson.kind === 'grammar'
@@ -82,8 +87,8 @@ export function resolveLearningPath(
         ? `vocab/${lesson.lessonId}`
         : lesson.lessonId;
     const completed = progress.get(progressId)?.completed === true;
-    const state = resolveState(completed, availableClaimed);
-    if (!completed) availableClaimed = true;
+    const state = resolveState(completed, prerequisitesComplete);
+    if (completed && !prerequisitesComplete) completedAheadCount += 1;
     return {
       id: `${lesson.kind}:${lesson.lessonId}`,
       kind: lesson.kind,
@@ -95,7 +100,27 @@ export function resolveLearningPath(
           : vocabLessonRoute(lesson.lessonId),
       state,
       unitId,
+      strandId,
     };
+  };
+
+  const resolveSequence = (
+    lessons: readonly LearningPathLessonRef[],
+    unitId: string,
+    prerequisitesComplete: boolean,
+    strandId?: string,
+  ): LearningPathNode[] => {
+    let nextPrerequisitesComplete = prerequisitesComplete;
+    return lessons.map((lesson) => {
+      const node = resolveLessonNode(
+        lesson,
+        unitId,
+        nextPrerequisitesComplete,
+        strandId,
+      );
+      if (node.state !== 'completed') nextPrerequisitesComplete = false;
+      return node;
+    });
   };
 
   const buildCheckpoints = (
@@ -124,13 +149,18 @@ export function resolveLearningPath(
         kind === 'vocab'
           ? target.lessonId.replace(/^vocab\//, '')
           : target.lessonId;
+      const lessonIds = assessmentRange.map((node) =>
+        kind === 'vocab'
+          ? node.lessonId.replace(/^vocab\//, '')
+          : node.lessonId,
+      );
       return {
         kind,
         lessonId,
         route:
           kind === 'grammar'
-            ? grammarTestOutRoute(lessonId, 'learn')
-            : vocabTestOutRoute(lessonId, 'learn'),
+            ? grammarTestOutRoute(lessonId, 'learn', lessonIds)
+            : vocabTestOutRoute(lessonId, 'learn', lessonIds),
         state: !prerequisitesComplete
           ? ('locked' as const)
           : assessmentRange.length === 0
@@ -139,11 +169,7 @@ export function resolveLearningPath(
         unitId,
         unitTitle,
         lessonCount: assessmentRange.length,
-        lessonIds: assessmentRange.map((node) =>
-          kind === 'vocab'
-            ? node.lessonId.replace(/^vocab\//, '')
-            : node.lessonId,
-        ),
+        lessonIds,
         firstLessonTitle: assessmentRange[0]?.title ?? target.title,
         lastLessonTitle:
           assessmentRange[assessmentRange.length - 1]?.title ?? target.title,
@@ -151,14 +177,16 @@ export function resolveLearningPath(
     });
   };
 
+  let letterPrerequisitesComplete = true;
   const letterNodes: LearningPathNode[] = manifest.letterPrerequisites.map(
     (alphabetName) => {
       const lessonId = guidedLessonId(alphabetName);
       const completed =
         resolution.completedLetters.has(alphabetName) ||
         progress.get(lessonId)?.completed === true;
-      const state = resolveState(completed, availableClaimed);
-      if (!completed) availableClaimed = true;
+      const state = resolveState(completed, letterPrerequisitesComplete);
+      if (completed && !letterPrerequisitesComplete) completedAheadCount += 1;
+      if (!completed) letterPrerequisitesComplete = false;
       return {
         id: `letters:${alphabetName}`,
         kind: 'letters',
@@ -173,8 +201,10 @@ export function resolveLearningPath(
   const lettersComplete = letterNodes.every(
     (node) => node.state === 'completed',
   );
-  const letterLessonNodes = (manifest.letterUnitLessons ?? []).map((lesson) =>
-    resolveLessonNode(lesson, 'letters'),
+  const letterLessonNodes = resolveSequence(
+    manifest.letterUnitLessons ?? [],
+    'letters',
+    lettersComplete,
   );
   const letterUnitNodes = [...letterNodes, ...letterLessonNodes];
   const prerequisitesComplete = letterUnitNodes.every(
@@ -187,10 +217,24 @@ export function resolveLearningPath(
     lettersComplete,
   );
 
-  const units = manifest.units.map((unit) => {
-    const nodes = unit.lessons.map((lesson) =>
-      resolveLessonNode(lesson, unit.id),
-    );
+  let previousUnitComplete = prerequisitesComplete;
+  const units: LearningPathUnit[] = manifest.units.map((unit) => {
+    const strands: LearningPathStrand[] = unit.strands
+      ? unit.strands.map((strand) => ({
+          id: strand.id,
+          title: strand.title,
+          description: strand.description,
+          nodes: resolveSequence(
+            strand.lessons,
+            unit.id,
+            previousUnitComplete,
+            strand.id,
+          ),
+        }))
+      : [];
+    const nodes = unit.strands
+      ? strands.flatMap((strand) => strand.nodes)
+      : resolveSequence(unit.lessons, unit.id, previousUnitComplete);
     const checkpoints = buildCheckpoints(
       nodes,
       unit.id,
@@ -198,13 +242,18 @@ export function resolveLearningPath(
       prerequisitesComplete,
     );
 
-    return {
+    const resolvedUnit: LearningPathUnit = {
       id: unit.id,
       title: unit.title,
       description: unit.description,
       nodes,
       checkpoints,
+      strands,
     };
+    previousUnitComplete =
+      previousUnitComplete &&
+      nodes.every((node) => node.state === 'completed');
+    return resolvedUnit;
   });
 
   const allUnits =
@@ -218,21 +267,15 @@ export function resolveLearningPath(
                 ? 'Get comfortable with the writing system and its sounds before lessons begin.'
                 : 'Get comfortable with the writing system before lessons begin.',
             nodes: letterUnitNodes,
+            strands: [],
             checkpoints: letterUnitCheckpoints,
           },
           ...units,
         ]
       : units;
   const nodes = allUnits.flatMap((unit) => unit.nodes);
-  const currentNodeIndex = nodes.findIndex(
-    (node) => node.state === 'available',
-  );
-  const completedAheadCount =
-    currentNodeIndex === -1
-      ? 0
-      : nodes
-          .slice(currentNodeIndex + 1)
-          .filter((node) => node.state === 'completed').length;
+  const recommendedNodeId =
+    nodes.find((node) => node.state === 'available')?.id ?? null;
 
   return {
     language: manifest.language,
@@ -241,6 +284,7 @@ export function resolveLearningPath(
     completedCount: nodes.filter((node) => node.state === 'completed').length,
     totalCount: nodes.length,
     completedAheadCount,
+    recommendedNodeId,
   };
 }
 

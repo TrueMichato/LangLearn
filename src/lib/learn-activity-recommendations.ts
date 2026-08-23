@@ -20,7 +20,7 @@ export function getPathRecommendations(
 ): LearnActivityRecommendation[] {
   const current = path?.units
     .flatMap((unit) => unit.nodes)
-    .find((node) => node.state === 'available');
+    .find((node) => node.id === path.recommendedNodeId);
   if (!current) return [];
 
   const detail = KIND_DETAILS[current.kind];

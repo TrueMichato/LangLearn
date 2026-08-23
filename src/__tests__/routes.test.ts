@@ -130,6 +130,19 @@ describe('test-out deep links', () => {
     );
   });
 
+  it('adds the exact ordered lesson set for a path checkpoint', () => {
+    expect(
+      vocabTestOutRoute('animals', 'learn', [
+        'days-months',
+        'colors',
+        'family',
+        'animals',
+      ]),
+    ).toBe(
+      `${ROUTES.vocabLessons}?${TEST_OUT_QUERY_PARAM}=animals&from=learn&testOutLesson=days-months&testOutLesson=colors&testOutLesson=family&testOutLesson=animals`,
+    );
+  });
+
   it('encodes lesson ids that need it', () => {
     expect(grammarTestOutRoute('a/b')).toBe(`${ROUTES.grammar}?${TEST_OUT_QUERY_PARAM}=a%2Fb`);
   });

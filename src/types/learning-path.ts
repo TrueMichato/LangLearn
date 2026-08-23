@@ -5,12 +5,34 @@ export interface LearningPathLessonRef {
   lessonId: string;
 }
 
-export interface LearningPathUnitManifest {
+interface LearningPathUnitManifestBase {
+  id: string;
+  title: string;
+  description: string;
+}
+
+export interface LearningPathLinearUnitManifest
+  extends LearningPathUnitManifestBase {
+  lessons: LearningPathLessonRef[];
+  strands?: never;
+}
+
+export interface LearningPathStrandManifest {
   id: string;
   title: string;
   description: string;
   lessons: LearningPathLessonRef[];
 }
+
+export interface LearningPathParallelUnitManifest
+  extends LearningPathUnitManifestBase {
+  lessons?: never;
+  strands: LearningPathStrandManifest[];
+}
+
+export type LearningPathUnitManifest =
+  | LearningPathLinearUnitManifest
+  | LearningPathParallelUnitManifest;
 
 export interface LearningPathManifest {
   language: string;
@@ -31,6 +53,7 @@ export interface LearningPathNode {
   route: string;
   state: LearningPathNodeState;
   unitId: string;
+  strandId?: string;
 }
 
 export type LearningPathCheckpointState = 'available' | 'completed' | 'locked';
@@ -48,11 +71,19 @@ export interface LearningPathCheckpoint {
   lastLessonTitle: string;
 }
 
+export interface LearningPathStrand {
+  id: string;
+  title: string;
+  description: string;
+  nodes: LearningPathNode[];
+}
+
 export interface LearningPathUnit {
   id: string;
   title: string;
   description: string;
   nodes: LearningPathNode[];
+  strands: LearningPathStrand[];
   checkpoints: LearningPathCheckpoint[];
 }
 
@@ -64,4 +95,6 @@ export interface LearningPath {
   totalCount: number;
   /** Completed nodes after the current guided step, including its unit. */
   completedAheadCount: number;
+  /** The single available node highlighted as the calm next recommendation. */
+  recommendedNodeId: string | null;
 }

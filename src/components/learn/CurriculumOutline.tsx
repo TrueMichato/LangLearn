@@ -15,7 +15,7 @@ const KIND_LABELS = {
 export default function CurriculumOutline({ path }: Props) {
   const rtl = isRTL(path.language);
   const availableUnitIndex = path.units.findIndex((unit) =>
-    unit.nodes.some((node) => node.state === 'available'),
+    unit.nodes.some((node) => node.id === path.recommendedNodeId),
   );
   const currentUnitIndex =
     availableUnitIndex >= 0 ? availableUnitIndex : path.units.length - 1;
@@ -48,10 +48,63 @@ export default function CurriculumOutline({ path }: Props) {
           const completed = unit.nodes.filter(
             (node) => node.state === 'completed',
           ).length;
-          const availableNode = unit.nodes.find(
+          const availableNodes = unit.nodes.filter(
             (node) => node.state === 'available',
           );
           const current = unitIndex === currentUnitIndex;
+          const renderNode = (node: (typeof unit.nodes)[number]) => {
+            const recommended = node.id === path.recommendedNodeId;
+            const body = (
+              <>
+                <span className="min-w-0 flex-1">
+                  <span className="block text-xs font-medium text-slate-500 dark:text-slate-400">
+                    {KIND_LABELS[node.kind]}
+                    {recommended
+                      ? ' · Up next'
+                      : node.state === 'available'
+                        ? ' · Also available'
+                        : ''}
+                  </span>
+                  <span className="block text-sm font-medium text-slate-800 dark:text-slate-100">
+                    {node.title}
+                  </span>
+                </span>
+                <span aria-hidden="true">
+                  {node.state === 'completed'
+                    ? '✓'
+                    : node.state === 'available'
+                      ? rtl
+                        ? '←'
+                        : '→'
+                      : '🔒'}
+                </span>
+              </>
+            );
+            return (
+              <li key={node.id}>
+                {node.state === 'locked' ? (
+                  <div
+                    aria-label={`${node.title}, locked`}
+                    className={`flex min-h-[52px] items-center gap-3 rounded-xl px-3 py-2 text-slate-500 dark:text-slate-400 ${
+                      rtl ? 'flex-row-reverse text-right' : ''
+                    }`}
+                  >
+                    {body}
+                  </div>
+                ) : (
+                  <Link
+                    to={node.route}
+                    aria-current={recommended ? 'step' : undefined}
+                    className={`flex min-h-[52px] items-center gap-3 rounded-xl px-3 py-2 text-slate-700 hover:bg-slate-50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 dark:text-slate-200 dark:hover:bg-slate-700/50 ${
+                      rtl ? 'flex-row-reverse text-right' : ''
+                    }`}
+                  >
+                    {body}
+                  </Link>
+                )}
+              </li>
+            );
+          };
           return (
             <details
               key={unit.id}
@@ -87,64 +140,48 @@ export default function CurriculumOutline({ path }: Props) {
                 <p className="text-sm text-slate-500 dark:text-slate-400">
                   {unit.description}
                 </p>
-                <ol className="mt-3 space-y-1">
-                  {unit.nodes.map((node) => {
-                    const body = (
-                      <>
-                        <span className="min-w-0 flex-1">
-                          <span className="block text-xs font-medium text-slate-500 dark:text-slate-400">
-                            {KIND_LABELS[node.kind]}
-                          </span>
-                          <span className="block text-sm font-medium text-slate-800 dark:text-slate-100">
-                            {node.title}
-                          </span>
-                        </span>
-                        <span aria-hidden="true">
-                          {node.state === 'completed'
-                            ? '✓'
-                            : node.state === 'available'
-                              ? rtl
-                                ? '←'
-                                : '→'
-                              : '🔒'}
-                        </span>
-                      </>
-                    );
-                    return (
-                      <li key={node.id}>
-                        {node.state === 'locked' ? (
-                          <div
-                            aria-label={`${node.title}, locked`}
-                            className={`flex min-h-[52px] items-center gap-3 rounded-xl px-3 py-2 text-slate-500 dark:text-slate-400 ${
-                              rtl ? 'flex-row-reverse text-right' : ''
-                            }`}
-                          >
-                            {body}
-                          </div>
-                        ) : (
-                          <Link
-                            to={node.route}
-                            aria-current={
-                              node.state === 'available' ? 'step' : undefined
-                            }
-                            className={`flex min-h-[52px] items-center gap-3 rounded-xl px-3 py-2 text-slate-700 hover:bg-slate-50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 dark:text-slate-200 dark:hover:bg-slate-700/50 ${
-                              rtl ? 'flex-row-reverse text-right' : ''
-                            }`}
-                          >
-                            {body}
-                          </Link>
-                        )}
-                      </li>
-                    );
-                  })}
-                </ol>
-                {availableNode &&
-                  unit.nodes.some((node) => node.state === 'locked') && (
+                {unit.strands.length > 0 ? (
+                  <div className="mt-3 space-y-4">
+                    {unit.strands.map((strand) => (
+                      <section
+                        key={strand.id}
+                        aria-labelledby={`curriculum-strand-${unit.id}-${strand.id}`}
+                      >
+                        <h4
+                          id={`curriculum-strand-${unit.id}-${strand.id}`}
+                          className="text-sm font-semibold text-slate-700 dark:text-slate-200"
+                        >
+                          {strand.title}
+                        </h4>
+                        <p className="mt-1 text-xs leading-relaxed text-slate-500 dark:text-slate-400">
+                          {strand.description}
+                        </p>
+                        <ol className="mt-2 space-y-1">
+                          {strand.nodes.map(renderNode)}
+                        </ol>
+                      </section>
+                    ))}
+                  </div>
+                ) : (
+                  <ol className="mt-3 space-y-1">
+                    {unit.nodes.map(renderNode)}
+                  </ol>
+                )}
+                {availableNodes.length > 0 &&
+                  unit.nodes.some((node) => node.state === 'locked') &&
+                  unit.strands.length === 0 && (
                     <p className="mt-3 text-xs leading-relaxed text-slate-500 dark:text-slate-400">
-                      Complete {availableNode.title} to unlock the next lesson.
+                      Complete {availableNodes[0].title} to unlock the next
+                      lesson.
                     </p>
                   )}
-                {!availableNode && completed === 0 && (
+                {availableNodes.length > 0 && unit.strands.length > 0 && (
+                  <p className="mt-3 text-xs leading-relaxed text-slate-500 dark:text-slate-400">
+                    Both strands are required, but you can choose which one to
+                    work on first.
+                  </p>
+                )}
+                {availableNodes.length === 0 && completed === 0 && (
                   <p className="mt-3 text-xs leading-relaxed text-slate-500 dark:text-slate-400">
                     Complete the earlier units to unlock this part of the course.
                   </p>

@@ -62,6 +62,7 @@ export function guidedLettersRoute(lang: string, alphabet?: string): string {
  */
 export const LESSON_QUERY_PARAM = 'lesson';
 export const TEST_OUT_QUERY_PARAM = 'testOut';
+export const TEST_OUT_LESSON_QUERY_PARAM = 'testOutLesson';
 export const LESSON_ORIGIN_QUERY_PARAM = 'from';
 export type LessonOrigin = 'learn';
 
@@ -81,27 +82,33 @@ function testOutRoute(
   route: string,
   uptoLessonId: string,
   origin?: LessonOrigin,
+  lessonIds: readonly string[] = [],
 ): string {
   const params = new URLSearchParams({
     [TEST_OUT_QUERY_PARAM]: uptoLessonId,
   });
   if (origin) params.set(LESSON_ORIGIN_QUERY_PARAM, origin);
+  for (const lessonId of lessonIds) {
+    params.append(TEST_OUT_LESSON_QUERY_PARAM, lessonId);
+  }
   return `${route}?${params.toString()}`;
 }
 
 export function grammarTestOutRoute(
   uptoLessonId: string,
   origin?: LessonOrigin,
+  lessonIds?: readonly string[],
 ): string {
-  return testOutRoute(ROUTES.grammar, uptoLessonId, origin);
+  return testOutRoute(ROUTES.grammar, uptoLessonId, origin, lessonIds);
 }
 
 /** Same as {@link grammarTestOutRoute}, for the Vocabulary lesson browser. */
 export function vocabTestOutRoute(
   uptoLessonId: string,
   origin?: LessonOrigin,
+  lessonIds?: readonly string[],
 ): string {
-  return testOutRoute(ROUTES.vocabLessons, uptoLessonId, origin);
+  return testOutRoute(ROUTES.vocabLessons, uptoLessonId, origin, lessonIds);
 }
 
 function patternToRegExp(pattern: string): RegExp {

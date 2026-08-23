@@ -52,6 +52,31 @@ describe('computeTestOutRange', () => {
   it('returns null for an empty lesson track', () => {
     expect(computeTestOutRange([], new Set(), 'l1')).toBeNull();
   });
+
+  it('uses an explicit path-ordered lesson set without filling index gaps', () => {
+    expect(
+      computeTestOutRange(lessons, new Set(), 'l4', ['l2', 'l1', 'l4']),
+    ).toEqual(['l2', 'l1', 'l4']);
+  });
+
+  it('starts an explicit set at its first incomplete lesson', () => {
+    expect(
+      computeTestOutRange(
+        lessons,
+        new Set(['l1']),
+        'l4',
+        ['l1', 'l2', 'l4'],
+      ),
+    ).toEqual(['l2', 'l4']);
+  });
+
+  it.each([
+    ['unknown lesson', ['l1', 'missing', 'l4']],
+    ['duplicate lesson', ['l1', 'l1', 'l4']],
+    ['wrong endpoint', ['l1', 'l2']],
+  ])('rejects an explicit set with an %s', (_label, requested) => {
+    expect(computeTestOutRange(lessons, new Set(), 'l4', requested)).toBeNull();
+  });
 });
 
 describe('scorePercent', () => {

@@ -15,6 +15,7 @@ import {
   LESSON_ORIGIN_QUERY_PARAM,
   LESSON_QUERY_PARAM,
   TEST_OUT_QUERY_PARAM,
+  TEST_OUT_LESSON_QUERY_PARAM,
   vocabTestOutRoute,
   ROUTES,
 } from '../lib/routes';
@@ -34,6 +35,9 @@ export default function VocabLessons() {
   const [progressLanguage, setProgressLanguage] = useState('');
   const [availableLangs, setAvailableLangs] = useState<string[]>([]);
   const testOutTarget = searchParams.get(TEST_OUT_QUERY_PARAM);
+  const requestedTestOutLessons = searchParams.getAll(
+    TEST_OUT_LESSON_QUERY_PARAM,
+  );
   const assessmentFromLearn =
     searchParams.get(LESSON_ORIGIN_QUERY_PARAM) === 'learn';
   const requestedLessonId = searchParams.get(LESSON_QUERY_PARAM);
@@ -146,7 +150,12 @@ export default function VocabLessons() {
     const completedIds = new Set(
       [...progress.values()].filter((p) => p.completed).map((p) => p.lessonId.replace(/^vocab\//, '')),
     );
-    const range = computeTestOutRange(visibleLessons, completedIds, testOutTarget);
+    const range = computeTestOutRange(
+      visibleLessons,
+      completedIds,
+      testOutTarget,
+      requestedTestOutLessons,
+    );
     if (range && range.length > 0) {
       const titleById = new Map(lessons.map((l) => [l.id, l.title]));
       const targetIndex = visibleLessons.findIndex(

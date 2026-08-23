@@ -16,16 +16,24 @@ export const RU_LEARNING_PATH = defineLearningPath({
       ],
     },
     {
-      id: 'sound-rhythm',
-      title: 'Sound and rhythm',
-      description: 'Use stress and spelling patterns with everyday words.',
-      lessons: [vocab('days-months'), grammar('stress'), vocab('colors')],
-    },
-    {
-      id: 'people-things',
-      title: 'People and things',
-      description: 'Name family, animals, and the roles words take.',
-      lessons: [vocab('family'), grammar('spelling-rules'), vocab('animals')],
+      id: 'foundations',
+      title: 'Build your foundations',
+      description:
+        'Grow your sound patterns and everyday vocabulary in either order. Both strands prepare you for what comes next.',
+      strands: [
+        {
+          id: 'sound-rhythm',
+          title: 'Sound and rhythm',
+          description: 'Practice stress and rhythm with familiar everyday words.',
+          lessons: [vocab('days-months'), grammar('stress'), vocab('colors')],
+        },
+        {
+          id: 'people-things',
+          title: 'People and things',
+          description: 'Name people and animals while noticing spelling patterns.',
+          lessons: [vocab('family'), grammar('spelling-rules'), vocab('animals')],
+        },
+      ],
     },
     {
       id: 'food-cases',

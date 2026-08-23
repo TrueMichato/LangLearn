@@ -9,6 +9,7 @@ const PATH: LearningPath = {
   completedCount: 1,
   totalCount: 3,
   completedAheadCount: 0,
+  recommendedNodeId: 'grammar:particles',
   testOutOptions: [],
   units: [
     {
@@ -16,6 +17,7 @@ const PATH: LearningPath = {
       title: 'First steps',
       description: 'A gentle beginning.',
       checkpoints: [],
+      strands: [],
       nodes: [
         {
           id: 'vocab:greetings',
@@ -42,6 +44,7 @@ const PATH: LearningPath = {
       title: 'Everyday life',
       description: 'Useful routines.',
       checkpoints: [],
+      strands: [],
       nodes: [
         {
           id: 'vocab:routines',
@@ -95,5 +98,70 @@ describe('CurriculumOutline', () => {
 
     expect(html).toContain('flex-row-reverse');
     expect(html).toContain('←');
+  });
+
+  it('groups a parallel unit by strand while keeping one current step', () => {
+    const soundNode = {
+      id: 'grammar:stress',
+      kind: 'grammar' as const,
+      lessonId: 'stress',
+      title: 'Stress in Russian',
+      route: '/grammar?lesson=stress',
+      state: 'available' as const,
+      unitId: 'foundations',
+      strandId: 'sound-rhythm',
+    };
+    const peopleNode = {
+      id: 'vocab:family',
+      kind: 'vocab' as const,
+      lessonId: 'vocab/family',
+      title: 'Family Members',
+      route: '/vocab-lessons?lesson=family',
+      state: 'available' as const,
+      unitId: 'foundations',
+      strandId: 'people-things',
+    };
+    const path: LearningPath = {
+      language: 'ru',
+      completedCount: 0,
+      totalCount: 2,
+      completedAheadCount: 0,
+      recommendedNodeId: soundNode.id,
+      testOutOptions: [],
+      units: [
+        {
+          id: 'foundations',
+          title: 'Build your foundations',
+          description: 'Grow two foundations.',
+          checkpoints: [],
+          nodes: [soundNode, peopleNode],
+          strands: [
+            {
+              id: 'sound-rhythm',
+              title: 'Sound and rhythm',
+              description: 'Practice stress.',
+              nodes: [soundNode],
+            },
+            {
+              id: 'people-things',
+              title: 'People and things',
+              description: 'Name people.',
+              nodes: [peopleNode],
+            },
+          ],
+        },
+      ],
+    };
+    const html = renderToStaticMarkup(
+      <MemoryRouter>
+        <CurriculumOutline path={path} />
+      </MemoryRouter>,
+    );
+
+    expect(html).toContain('Sound and rhythm');
+    expect(html).toContain('People and things');
+    expect(html).toContain('Also available');
+    expect(html).toContain('Both strands are required');
+    expect(html.match(/aria-current="step"/g)).toHaveLength(1);
   });
 });
