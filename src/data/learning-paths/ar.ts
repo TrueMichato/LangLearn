@@ -15,16 +15,32 @@ export const AR_LEARNING_PATH = defineLearningPath({
       lessons: [vocab('greetings'), grammar('arabic-script'), vocab('people-pronouns')],
     },
     {
-      id: 'sound-number',
-      title: 'Sounds and numbers',
-      description: 'Tune your ear and use the first numbers confidently.',
-      lessons: [vocab('numbers-1-20'), grammar('pronunciation'), vocab('numbers-large')],
-    },
-    {
-      id: 'vowels-time',
-      title: 'Vowels and time',
-      description: 'Read short vowels while talking about days and time.',
-      lessons: [vocab('days-months'), grammar('harakat'), vocab('time')],
+      id: 'sounds-and-time',
+      title: 'Sounds, numbers, and time',
+      description:
+        'Strengthen listening and reading in either order. Both paths make the next conversations easier to follow.',
+      strands: [
+        {
+          id: 'hear-and-count',
+          title: 'Hear and count',
+          description: 'Tune your ear and use the first numbers confidently.',
+          lessons: [
+            vocab('numbers-1-20'),
+            grammar('pronunciation'),
+            vocab('numbers-large'),
+          ],
+        },
+        {
+          id: 'read-and-tell-time',
+          title: 'Read and tell time',
+          description: 'Read short vowels while talking about days and time.',
+          lessons: [
+            vocab('days-months'),
+            grammar('harakat'),
+            vocab('time'),
+          ],
+        },
+      ],
     },
     {
       id: 'people-things',

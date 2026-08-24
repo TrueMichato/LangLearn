@@ -1,5 +1,9 @@
 import { describe, it, expect } from 'vitest';
 import { splitSentences, findSentenceAt } from '../lib/sentences';
+import {
+  getPracticeSentences,
+  SENTENCE_LANGUAGES,
+} from '../data/sentences';
 
 describe('splitSentences', () => {
   it('splits Japanese text by 。', () => {
@@ -48,6 +52,14 @@ describe('findSentenceAt', () => {
     expect(findSentenceAt(sentences, 0)).toBe('猫が好きです。');
     // Position 7 is in second sentence
     expect(findSentenceAt(sentences, 7)).toBe('犬も好きです。');
+  });
+
+  describe('Sentence Builder language data', () => {
+    it('includes the shipped Spanish sentence catalog', () => {
+      expect(SENTENCE_LANGUAGES).toContain('es');
+      expect(getPracticeSentences('es').length).toBeGreaterThan(0);
+      expect(getPracticeSentences('es')[0].target).not.toBe('');
+    });
   });
 
   it('returns empty string for out-of-range position', () => {

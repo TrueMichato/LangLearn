@@ -8,6 +8,13 @@ import { isRTL } from '../lib/rtl';
 import { jaClozeSentences, ruClozeSentences, ptClozeSentences, esClozeSentences, arClozeSentences, roClozeSentences } from '../data/cloze';
 import type { ClozeSentence } from '../data/cloze';
 import { speak } from '../lib/tts';
+import { useGuidedPractice } from '../hooks/useGuidedPractice';
+import {
+  GuidedCompletionActions,
+  GuidedPracticeError,
+  GuidedPracticeNotice,
+} from '../components/learn/GuidedPractice';
+import { selectGuidedItems } from '../lib/guided-practice';
 
 type Difficulty = 'beginner' | 'intermediate' | 'advanced' | 'all';
 type Phase = 'setup' | 'session' | 'summary';
@@ -15,6 +22,9 @@ type Phase = 'setup' | 'session' | 'summary';
 const QUESTIONS_PER_SESSION = 10;
 const XP_BASE = 20;
 const XP_PER_CORRECT = 3;
+const ACTIVE_DIFFICULTY_CLASSES = 'bg-indigo-600 text-white';
+const INACTIVE_DIFFICULTY_CLASSES =
+  'border border-slate-300 bg-white text-slate-700 dark:border-white/10 dark:bg-slate-700 dark:text-slate-300';
 
 const CLOZE_LANGUAGES = ['ja', 'ru', 'pt', 'es', 'ar', 'ro'];
 
@@ -68,13 +78,27 @@ export default function ClozePracticePage() {
   const inputRef = useRef<HTMLInputElement>(null);
 
   const allSentences = useMemo(() => getClozeSentences(language), [language]);
+  const guided = useGuidedPractice('cloze', language);
 
-  const startSession = () => {
+  const startSession = useCallback(() => {
     let pool = allSentences;
-    if (difficulty !== 'all') pool = pool.filter((s) => s.difficulty === difficulty);
+    if (!guided.descriptor && difficulty !== 'all') {
+      pool = pool.filter((s) => s.difficulty === difficulty);
+    }
     // Sort by frequency (lower rank = more common words first)
     const sorted = [...pool].sort((a, b) => a.frequencyRank - b.frequencyRank);
-    const selected = shuffle(sorted.slice(0, Math.min(sorted.length, QUESTIONS_PER_SESSION * 3))).slice(0, QUESTIONS_PER_SESSION);
+    const candidates = sorted.slice(
+      0,
+      Math.min(
+        sorted.length,
+        guided.descriptor
+          ? guided.descriptor.session.maxItems * 3
+          : QUESTIONS_PER_SESSION * 3,
+      ),
+    );
+    const selected = guided.descriptor
+      ? selectGuidedItems(candidates, guided.descriptor, (sentence) => sentence.id)
+      : shuffle(candidates).slice(0, QUESTIONS_PER_SESSION);
     if (selected.length === 0) return;
     setSessionQuestions(selected);
     setCurrentIdx(0);
@@ -83,7 +107,7 @@ export default function ClozePracticePage() {
     setInput('');
     setAnswered(false);
     setPhase('session');
-  };
+  }, [allSentences, difficulty, guided.descriptor]);
 
   useEffect(() => {
     if (phase === 'session' && !answered) {
@@ -111,6 +135,10 @@ export default function ClozePracticePage() {
       const finalScore = score;
       const xp = XP_BASE + finalScore * XP_PER_CORRECT;
       useXPStore.getState().addXP(xp);
+      void guided.complete({
+        itemsCompleted: sessionQuestions.length,
+        score: Math.round((finalScore / sessionQuestions.length) * 100),
+      });
       setPhase('summary');
     } else {
       setCurrentIdx(next);
@@ -119,6 +147,10 @@ export default function ClozePracticePage() {
       setIsCorrect(false);
     }
   };
+
+  if (guided.invalidMessage) {
+    return <GuidedPracticeError message={guided.invalidMessage} />;
+  }
 
   const handleKeyDown = (e: React.KeyboardEvent) => {
     if (e.key === 'Enter') {
@@ -158,8 +190,9 @@ export default function ClozePracticePage() {
             Fill in the missing word from context. Sentences are sorted by word frequency — master common words first.
           </p>
         </div>
+        <GuidedPracticeNotice guided={guided} />
 
-        {!isSupported && (
+        {!guided.descriptor && !isSupported && (
           <LanguageUnavailable
             requested={requested}
             options={supportedLanguages}
@@ -168,7 +201,7 @@ export default function ClozePracticePage() {
           />
         )}
 
-        {supportedLanguages.length > 1 && (
+        {!guided.descriptor && supportedLanguages.length > 1 && (
           <div>
             <label className="block text-sm font-medium text-slate-600 dark:text-slate-400 mb-1">Language</label>
             <LanguagePicker
@@ -189,7 +222,9 @@ export default function ClozePracticePage() {
                 key={d}
                 onClick={() => setDifficulty(d)}
                 className={`px-4 py-2 min-h-[44px] rounded-xl text-sm font-medium capitalize transition-colors min-h-[44px] ${
-                  difficulty === d ? 'bg-indigo-600 text-white' : 'bg-white dark:bg-slate-700 text-slate-700 dark:text-slate-300 border border-slate-300 dark:border-white/10'
+                  difficulty === d
+                    ? ACTIVE_DIFFICULTY_CLASSES
+                    : INACTIVE_DIFFICULTY_CLASSES
                 }`}
               >
                 {d === 'all' ? '🌀 All Levels' : d === 'beginner' ? '🟢 Beginner' : d === 'intermediate' ? '🟡 Intermediate' : '🔴 Advanced'}
@@ -234,14 +269,17 @@ export default function ClozePracticePage() {
           </p>
         )}
 
-        <div className="flex flex-col gap-3">
-          <button onClick={restart} className="w-full py-3 bg-indigo-600 text-white rounded-xl font-semibold hover:bg-indigo-700 press-feedback transition-colors min-h-[44px]">
-            Practice Again
-          </button>
-          <Link to="/learn" className="w-full py-3 bg-slate-200 dark:bg-slate-700 text-slate-700 dark:text-slate-300 rounded-xl font-semibold hover:bg-slate-300 dark:hover:bg-slate-600 press-feedback transition-colors inline-block text-center min-h-[44px] leading-[44px]">
-            ← Back to Learn
-          </Link>
-        </div>
+        <GuidedCompletionActions guided={guided} onPracticeAgain={restart} />
+        {!guided.isGuided && (
+          <div className="flex flex-col gap-3">
+            <button onClick={restart} className="w-full py-3 bg-indigo-600 text-white rounded-xl font-semibold hover:bg-indigo-700 press-feedback transition-colors min-h-[44px]">
+              Practice Again
+            </button>
+            <Link to="/learn" className="w-full py-3 bg-slate-200 dark:bg-slate-700 text-slate-700 dark:text-slate-300 rounded-xl font-semibold hover:bg-slate-300 dark:hover:bg-slate-600 press-feedback transition-colors inline-block text-center min-h-[44px] leading-[44px]">
+              ← Back to Learn
+            </Link>
+          </div>
+        )}
       </div>
     );
   }
@@ -252,6 +290,7 @@ export default function ClozePracticePage() {
 
   return (
     <div className="max-w-md mx-auto space-y-4 page-enter">
+      <GuidedPracticeNotice guided={guided} />
       {/* Progress bar */}
       <div className="flex items-center justify-between text-sm text-slate-500 dark:text-slate-400">
         <span>

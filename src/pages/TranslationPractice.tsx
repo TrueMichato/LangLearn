@@ -1,4 +1,4 @@
-import { useState, useMemo, useRef, useEffect } from 'react';
+import { useState, useMemo, useRef, useEffect, useCallback } from 'react';
 import { Link } from 'react-router-dom';
 import { useCurrentLanguage } from '../hooks/useCurrentLanguage';
 import LanguagePicker from '../components/common/LanguagePicker';
@@ -18,6 +18,13 @@ import {
   XP_PER_TRANSLATION_CORRECT,
   XP_PER_TRANSLATION_PARTIAL,
 } from '../lib/xp';
+import { useGuidedPractice } from '../hooks/useGuidedPractice';
+import {
+  GuidedCompletionActions,
+  GuidedPracticeError,
+  GuidedPracticeNotice,
+} from '../components/learn/GuidedPractice';
+import { selectGuidedItems } from '../lib/guided-practice';
 
 type Difficulty = 'easy' | 'medium' | 'hard' | 'all';
 type Phase = 'setup' | 'practice' | 'summary';
@@ -78,20 +85,23 @@ export default function TranslationPracticePage() {
   const textareaRef = useRef<HTMLTextAreaElement>(null);
 
   const allSentences = useMemo(() => getSentences(language), [language]);
+  const guided = useGuidedPractice('translation', language);
 
-  const startSession = () => {
+  const startSession = useCallback(() => {
     let pool = allSentences;
-    if (difficulty !== 'all') {
+    if (!guided.descriptor && difficulty !== 'all') {
       pool = pool.filter((s) => s.difficulty === difficulty);
     }
-    const selected = shuffle(pool).slice(0, SENTENCES_PER_SESSION);
+    const selected = guided.descriptor
+      ? selectGuidedItems(pool, guided.descriptor, (sentence) => sentence.id)
+      : shuffle(pool).slice(0, SENTENCES_PER_SESSION);
     setSessionSentences(selected);
     setCurrentIdx(0);
     setInput('');
     setSubmitted(false);
     setResults([]);
     setPhase('practice');
-  };
+  }, [allSentences, difficulty, guided.descriptor]);
 
   useEffect(() => {
     if (phase === 'practice' && !submitted) {
@@ -126,6 +136,17 @@ export default function TranslationPracticePage() {
         correctCount * XP_PER_TRANSLATION_CORRECT +
         partialCount * XP_PER_TRANSLATION_PARTIAL;
       useXPStore.getState().addXP(xp);
+      void guided.complete({
+        itemsCompleted: newResults.length,
+        score: Math.round(
+          (newResults.reduce(
+            (sum, result) => sum + GRADE_POINTS[result.grade],
+            0,
+          ) /
+            (newResults.length * 3)) *
+            100,
+        ),
+      });
       setPhase('summary');
     }
   };
@@ -138,6 +159,18 @@ export default function TranslationPracticePage() {
     results.filter((r) => r.grade === 'correct').length * XP_PER_TRANSLATION_CORRECT +
     results.filter((r) => r.grade === 'partial').length * XP_PER_TRANSLATION_PARTIAL;
   const missedSentences = results.filter((r) => r.grade === 'missed');
+
+  const resetPractice = useCallback(() => {
+    setPhase('setup');
+    setResults([]);
+    setCurrentIdx(0);
+    setInput('');
+    setSubmitted(false);
+  }, []);
+
+  if (guided.invalidMessage) {
+    return <GuidedPracticeError message={guided.invalidMessage} />;
+  }
 
   /* ─── Setup ─── */
   if (phase === 'setup') {
@@ -152,8 +185,9 @@ export default function TranslationPracticePage() {
             {getLanguageLabel(language)}. Then grade yourself.
           </p>
         </div>
+        <GuidedPracticeNotice guided={guided} />
 
-        {!isSupported && (
+        {!guided.descriptor && !isSupported && (
           <LanguageUnavailable
             requested={requested}
             options={supportedLanguages}
@@ -162,7 +196,7 @@ export default function TranslationPracticePage() {
           />
         )}
 
-        {supportedLanguages.length > 1 && (
+        {!guided.descriptor && supportedLanguages.length > 1 && (
           <div className="bg-white dark:bg-slate-800 rounded-2xl shadow p-4 space-y-3">
             <label className="block text-sm font-medium text-slate-700 dark:text-slate-300">
               Language
@@ -221,6 +255,7 @@ export default function TranslationPracticePage() {
     const current = sessionSentences[currentIdx];
     return (
       <div className="max-w-lg mx-auto space-y-5">
+        <GuidedPracticeNotice guided={guided} />
         {/* Header */}
         <div className="flex items-center justify-between">
           <h2 className="text-lg font-semibold text-slate-800 dark:text-slate-100">
@@ -350,7 +385,7 @@ export default function TranslationPracticePage() {
 
       {/* Score card */}
       <div className="bg-white dark:bg-slate-800 rounded-2xl shadow p-6 text-center space-y-3">
-        <p className="text-4xl font-bold text-indigo-600 dark:text-indigo-400">
+        <p className="text-4xl font-bold text-slate-800 dark:text-slate-100">
           {totalScore}/{maxScore}
         </p>
         <p className="text-sm text-slate-500 dark:text-slate-400">{percentage}% accuracy</p>
@@ -411,26 +446,23 @@ export default function TranslationPracticePage() {
       )}
 
       {/* Actions */}
-      <div className="flex gap-3">
-        <button
-          onClick={() => {
-            setPhase('setup');
-            setResults([]);
-            setCurrentIdx(0);
-            setInput('');
-            setSubmitted(false);
-          }}
-          className="flex-1 bg-indigo-600 text-white px-5 py-3 rounded-xl font-semibold min-h-[44px] hover:bg-indigo-700 transition-colors"
-        >
-          Practice Again
-        </button>
-        <Link
-          to="/learn"
-          className="flex-1 text-center bg-slate-100 dark:bg-slate-700 text-slate-700 dark:text-slate-300 px-5 py-3 rounded-xl font-semibold min-h-[44px] hover:bg-slate-200 dark:hover:bg-slate-600 transition-colors"
-        >
-          Back to Learn
-        </Link>
-      </div>
+      <GuidedCompletionActions guided={guided} onPracticeAgain={resetPractice} />
+      {!guided.isGuided && (
+        <div className="flex gap-3">
+          <button
+            onClick={resetPractice}
+            className="flex-1 bg-indigo-600 text-white px-5 py-3 rounded-xl font-semibold min-h-[44px] hover:bg-indigo-700 transition-colors"
+          >
+            Practice Again
+          </button>
+          <Link
+            to="/learn"
+            className="flex-1 text-center bg-slate-100 dark:bg-slate-700 text-slate-700 dark:text-slate-300 px-5 py-3 rounded-xl font-semibold min-h-[44px] hover:bg-slate-200 dark:hover:bg-slate-600 transition-colors"
+          >
+            Back to Learn
+          </Link>
+        </div>
+      )}
     </div>
   );
 }

@@ -11,16 +11,32 @@ export const JA_LEARNING_PATH = defineLearningPath({
       lessons: [vocab('greetings'), grammar('particles'), vocab('numbers')],
     },
     {
-      id: 'everyday-time',
-      title: 'Everyday time',
-      description: 'Talk about days, months, and simple actions.',
-      lessons: [vocab('days-months'), grammar('verb-forms'), vocab('colors')],
-    },
-    {
-      id: 'people-things',
-      title: 'People and things',
-      description: 'Describe family, animals, and the world around you.',
-      lessons: [vocab('family'), grammar('adjectives'), vocab('animals')],
+      id: 'everyday-foundations',
+      title: 'Everyday foundations',
+      description:
+        'Build useful time language and descriptive language in either order. Both paths prepare you for daily conversations.',
+      strands: [
+        {
+          id: 'time-actions',
+          title: 'Time and actions',
+          description: 'Talk about days, months, colors, and simple actions.',
+          lessons: [
+            vocab('days-months'),
+            grammar('verb-forms'),
+            vocab('colors'),
+          ],
+        },
+        {
+          id: 'people-things',
+          title: 'People and things',
+          description: 'Describe family, animals, and the world around you.',
+          lessons: [
+            vocab('family'),
+            grammar('adjectives'),
+            vocab('animals'),
+          ],
+        },
+      ],
     },
     {
       id: 'food-counting',

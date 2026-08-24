@@ -1,16 +1,84 @@
 export type LearningPathLessonKind = 'grammar' | 'vocab';
+export type LearningPathActivityKind =
+  | 'letters'
+  | 'sentence'
+  | 'cloze'
+  | 'listening'
+  | 'dictation'
+  | 'conjugation'
+  | 'translation'
+  | 'minimal-pairs'
+  | 'numbers'
+  | 'reading'
+  | 'lyrics'
+  | 'tests';
+export type LearningPathNodeKind =
+  | LearningPathLessonKind
+  | LearningPathActivityKind;
+export type LearningPathRequirement = 'required' | 'enrichment';
+export type ArabicDialect =
+  | 'egyptian'
+  | 'levantine'
+  | 'gulf'
+  | 'maghrebi'
+  | 'iraqi';
+
+export interface LearningPathSessionBounds {
+  minItems: number;
+  targetItems: number;
+  maxItems: number;
+}
 
 export interface LearningPathLessonRef {
   kind: LearningPathLessonKind;
   lessonId: string;
+  requirement?: LearningPathRequirement;
 }
 
-export interface LearningPathUnitManifest {
+interface LearningPathUnitManifestBase {
   id: string;
   title: string;
   description: string;
-  lessons: LearningPathLessonRef[];
 }
+
+export interface LearningPathActivityRef {
+  kind: LearningPathActivityKind;
+  /** Stable, namespaced progress key such as `sentence:foundations-1`. */
+  milestoneId: string;
+  /** Backward-compatible alias while manifests still store refs under `lessons`. */
+  lessonId: string;
+  title: string;
+  route: string;
+  session: LearningPathSessionBounds;
+  requirement?: LearningPathRequirement;
+}
+
+export type LearningPathMilestoneRef =
+  | LearningPathLessonRef
+  | LearningPathActivityRef;
+
+export interface LearningPathLinearUnitManifest
+  extends LearningPathUnitManifestBase {
+  lessons: LearningPathMilestoneRef[];
+  strands?: never;
+}
+
+export interface LearningPathStrandManifest {
+  id: string;
+  title: string;
+  description: string;
+  lessons: LearningPathMilestoneRef[];
+}
+
+export interface LearningPathParallelUnitManifest
+  extends LearningPathUnitManifestBase {
+  lessons?: never;
+  strands: LearningPathStrandManifest[];
+}
+
+export type LearningPathUnitManifest =
+  | LearningPathLinearUnitManifest
+  | LearningPathParallelUnitManifest;
 
 export interface LearningPathManifest {
   language: string;
@@ -20,17 +88,21 @@ export interface LearningPathManifest {
   units: LearningPathUnitManifest[];
 }
 
-export type LearningPathNodeKind = 'letters' | LearningPathLessonKind;
 export type LearningPathNodeState = 'completed' | 'available' | 'locked';
 
 export interface LearningPathNode {
   id: string;
   kind: LearningPathNodeKind;
+  /** Stable progress identity. For legacy lessons this is their catalog id. */
+  milestoneId?: string;
   lessonId: string;
   title: string;
   route: string;
   state: LearningPathNodeState;
   unitId: string;
+  strandId?: string;
+  requirement?: LearningPathRequirement;
+  session?: LearningPathSessionBounds;
 }
 
 export type LearningPathCheckpointState = 'available' | 'completed' | 'locked';
@@ -48,11 +120,19 @@ export interface LearningPathCheckpoint {
   lastLessonTitle: string;
 }
 
+export interface LearningPathStrand {
+  id: string;
+  title: string;
+  description: string;
+  nodes: LearningPathNode[];
+}
+
 export interface LearningPathUnit {
   id: string;
   title: string;
   description: string;
   nodes: LearningPathNode[];
+  strands: LearningPathStrand[];
   checkpoints: LearningPathCheckpoint[];
 }
 
@@ -62,6 +142,15 @@ export interface LearningPath {
   testOutOptions: LearningPathCheckpoint[];
   completedCount: number;
   totalCount: number;
+  enrichmentCompletedCount?: number;
+  enrichmentTotalCount?: number;
   /** Completed nodes after the current guided step, including its unit. */
   completedAheadCount: number;
+  /** The single available node highlighted as the calm next recommendation. */
+  recommendedNodeId: string | null;
+}
+
+export interface ArabicLearningPathPolicy {
+  currentDialect: ArabicDialect | null;
+  colloquialFocus: boolean;
 }

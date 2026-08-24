@@ -21,6 +21,14 @@ import { buildWordStatusMap, type WordStatusMap, getStatusColor } from '../lib/w
 import { parseWithIchiMoe, getIchiMoeUrl, type IchiMoeWord } from '../lib/ichimoe';
 import WordDefinitions from '../components/reader/WordDefinitions';
 import { parseSrt, srtToText } from '../lib/srt-parser';
+import { useGuidedPractice } from '../hooks/useGuidedPractice';
+import {
+  GuidedCompletionActions,
+  GuidedPracticeError,
+  GuidedPracticeNotice,
+} from '../components/learn/GuidedPractice';
+import { selectGuidedItems } from '../lib/guided-practice';
+import type { CuratedText } from '../components/reader/TextLibrary';
 
 type Tab = 'import' | 'library';
 
@@ -52,6 +60,13 @@ export default function ReaderPage() {
   const [ichiMoeOpen, setIchiMoeOpen] = useState(false);
   const [translation, setTranslation] = useState('');
   const [showBilingual, setShowBilingual] = useState(false);
+  const [guidedReadingFinished, setGuidedReadingFinished] = useState(false);
+  const [guidedReadySeed, setGuidedReadySeed] = useState('');
+  const [guidedLoadError, setGuidedLoadError] = useState<{
+    seed: string;
+    message: string;
+  } | null>(null);
+  const guided = useGuidedPractice('reading', language);
 
   // Reading session tracking
   const readingStartRef = useRef<number | null>(null);
@@ -108,7 +123,7 @@ export default function ReaderPage() {
     setTabReady(true);
   }, []);
 
-  function resetReadingState() {
+  const resetReadingState = useCallback(() => {
     logReadingSession();
     setTokens([]);
     setTokenOffsets([]);
@@ -128,7 +143,8 @@ export default function ReaderPage() {
     setIchiMoeOpen(false);
     setTranslation('');
     setShowBilingual(false);
-  }
+    setGuidedReadingFinished(false);
+  }, [logReadingSession]);
 
   function switchTab(newTab: Tab) {
     if (newTab === tab) return;
@@ -188,7 +204,11 @@ export default function ReaderPage() {
     }
   }
 
-  async function openCuratedText(id: string, lang: string, curatedTitle: string) {
+  const openCuratedText = useCallback(async (
+    id: string,
+    lang: string,
+    curatedTitle: string,
+  ) => {
     resetReadingState();
     setIsTokenizing(true);
     setLanguage(lang);
@@ -240,12 +260,68 @@ export default function ReaderPage() {
         setTokens(rawTokens);
         setTokenOffsets(offsets);
       }
+      return true;
     } catch {
       resetReadingState();
+      return false;
     } finally {
       setIsTokenizing(false);
     }
-  }
+  }, [resetReadingState, setLanguage]);
+
+  useEffect(() => {
+    if (!guided.descriptor) return;
+    let cancelled = false;
+    const seed = guided.descriptor.seed;
+    const openGuidedReading = async () => {
+      try {
+        const response = await fetch(
+          `${import.meta.env.BASE_URL}content/reading/${language}/index.json`,
+        );
+        if (!response.ok) throw new Error('Failed to load curated reading index');
+        const data = (await response.json()) as { texts?: CuratedText[] };
+        const selected = selectGuidedItems(
+          data.texts ?? [],
+          guided.descriptor!,
+          (candidate) => candidate.id,
+        )[0];
+        if (!selected) throw new Error('No curated guided reading is available');
+        if (cancelled) return;
+        const opened = await openCuratedText(
+          selected.id,
+          language,
+          selected.title,
+        );
+        if (!opened) throw new Error('Failed to load guided reading');
+        if (!cancelled) setGuidedReadySeed(seed);
+      } catch {
+        if (!cancelled) {
+          setGuidedLoadError({
+            seed,
+            message:
+              'This guided reading could not be loaded. Return to your learning path and open the step again.',
+          });
+        }
+      }
+    };
+    void openGuidedReading();
+    return () => {
+      cancelled = true;
+    };
+  }, [guided.descriptor, language, openCuratedText]);
+
+  const finishGuidedReading = useCallback(async () => {
+    await logReadingSession();
+    await guided.complete({ itemsCompleted: 1 });
+    setGuidedReadingFinished(true);
+  }, [guided, logReadingSession]);
+
+  const restartGuidedReading = useCallback(() => {
+    const wordCount = text.split(/\s+/).filter(Boolean).length;
+    readingStartRef.current = Date.now();
+    readingMetaRef.current = { language, wordCount, title: title || 'Reading' };
+    setGuidedReadingFinished(false);
+  }, [language, text, title]);
 
   const handleImport = async () => {
     if (!text.trim()) return;
@@ -344,6 +420,32 @@ export default function ReaderPage() {
 
   const hasTokens = tokens.length > 0 || jaTokens.length > 0;
 
+  if (guided.invalidMessage) {
+    return <GuidedPracticeError message={guided.invalidMessage} />;
+  }
+  if (
+    guided.descriptor &&
+    guidedLoadError?.seed === guided.descriptor.seed
+  ) {
+    return <GuidedPracticeError message={guidedLoadError.message} />;
+  }
+  if (
+    guided.descriptor &&
+    guidedReadySeed !== guided.descriptor.seed
+  ) {
+    return (
+      <div className="space-y-4 py-8">
+        <GuidedPracticeNotice guided={guided} />
+        <p
+          role="status"
+          className="text-center text-sm text-slate-500 dark:text-slate-400"
+        >
+          Loading your guided reading…
+        </p>
+      </div>
+    );
+  }
+
   if (!tabReady) return null;
 
   // Tab toggle (shown only when not in reading view and not tokenizing)
@@ -404,6 +506,7 @@ export default function ReaderPage() {
       <h2 className="text-lg font-semibold text-slate-700 dark:text-slate-200 mb-4">
         Immersion Reader
       </h2>
+      <GuidedPracticeNotice guided={guided} />
       {tabToggle}
       {tab === 'library' ? (
         <TextLibrary onSelectText={openTextFromLibrary} onSelectCurated={openCuratedText} />
@@ -484,6 +587,7 @@ export default function ReaderPage() {
     </div>
   ) : (
     <div>
+      <GuidedPracticeNotice guided={guided} />
       <div className="flex justify-between items-center mb-4">
         <h2 className="text-lg font-semibold text-slate-700 dark:text-slate-200">
           {title || 'Reading'}
@@ -654,6 +758,25 @@ export default function ReaderPage() {
                 onWordAdded={refreshKnownWords}
               />
             </div>
+          )}
+        </div>
+      )}
+
+      {guided.isGuided && (
+        <div className="mt-4">
+          {guidedReadingFinished ? (
+            <GuidedCompletionActions
+              guided={guided}
+              onPracticeAgain={restartGuidedReading}
+            />
+          ) : (
+            <button
+              type="button"
+              onClick={() => void finishGuidedReading()}
+              className="min-h-[44px] w-full rounded-xl bg-indigo-600 px-5 py-3 font-semibold text-white transition-colors hover:bg-indigo-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 focus-visible:ring-offset-2 dark:focus-visible:ring-offset-slate-900"
+            >
+              I finished reading
+            </button>
           )}
         </div>
       )}

@@ -7,11 +7,14 @@ import LessonAssessment from '../components/assessment/LessonAssessment';
 import { getLessonProgress } from '../db/lessons';
 import type { LessonProgress } from '../db/schema';
 import { SkeletonList } from '../components/common/Skeleton';
+import { JA_CORE_GRAMMAR_IDS } from '../lib/curriculum-policy';
 import { computeTestOutRange } from '../lib/lesson-assessment';
 import {
   LESSON_ORIGIN_QUERY_PARAM,
+  LESSON_BROWSE_ORIGIN,
   LESSON_QUERY_PARAM,
   TEST_OUT_QUERY_PARAM,
+  TEST_OUT_LESSON_QUERY_PARAM,
   grammarTestOutRoute,
   ROUTES,
 } from '../lib/routes';
@@ -36,11 +39,23 @@ export default function GrammarPage() {
   const [progressLanguage, setProgressLanguage] = useState('');
   const [collapsedGroups, setCollapsedGroups] = useState<Set<string>>(new Set());
   const testOutTarget = searchParams.get(TEST_OUT_QUERY_PARAM);
+  const requestedTestOutLessons = searchParams.getAll(
+    TEST_OUT_LESSON_QUERY_PARAM,
+  );
   const assessmentFromLearn =
     searchParams.get(LESSON_ORIGIN_QUERY_PARAM) === 'learn';
+  const openedFromBrowse =
+    searchParams.get(LESSON_ORIGIN_QUERY_PARAM) === LESSON_BROWSE_ORIGIN;
   const requestedLessonId = searchParams.get(LESSON_QUERY_PARAM);
   const displayedLessonId = activeLessonId ?? requestedLessonId;
   const loading = loadedLanguage !== selectedLang;
+  const grammarTestOutLessons =
+    selectedLang === 'ja'
+      ? lessons.filter((lesson) => JA_CORE_GRAMMAR_IDS.has(lesson.id))
+      : lessons;
+  const grammarTestOutLessonIds = new Set(
+    grammarTestOutLessons.map((lesson) => lesson.id),
+  );
 
   // Load lesson progress whenever language changes or returning from a lesson
   useEffect(() => {
@@ -72,7 +87,12 @@ export default function GrammarPage() {
   }, [selectedLang]);
 
   const exitToLessons = () => {
-    navigate(ROUTES.grammar, { replace: true });
+    navigate(
+      openedFromBrowse
+        ? `${ROUTES.grammar}?${LESSON_ORIGIN_QUERY_PARAM}=${LESSON_BROWSE_ORIGIN}`
+        : ROUTES.grammar,
+      { replace: true },
+    );
     setActiveLessonId(null);
   };
   const returnFromAssessment = () => {
@@ -102,16 +122,18 @@ export default function GrammarPage() {
   }
 
   if (testOutTarget && !loading && progressLanguage === selectedLang) {
-    // Imported Tofugu references are supplemental. Native lessons form the
-    // ordered test-out track even when their index uses curriculum groups.
-    const originalLessons = lessons.filter((l) => l.source !== 'tofugu');
     const completedIds = new Set(
       [...progress.values()].filter((p) => p.completed).map((p) => p.lessonId),
     );
-    const range = computeTestOutRange(originalLessons, completedIds, testOutTarget);
+    const range = computeTestOutRange(
+      grammarTestOutLessons,
+      completedIds,
+      testOutTarget,
+      requestedTestOutLessons,
+    );
     if (range && range.length > 0) {
       const titleById = new Map(lessons.map((l) => [l.id, l.title]));
-      const targetIndex = originalLessons.findIndex(
+      const targetIndex = grammarTestOutLessons.findIndex(
         (lesson) => lesson.id === testOutTarget,
       );
       return (
@@ -129,7 +151,7 @@ export default function GrammarPage() {
           failActionLabel={
             assessmentFromLearn ? 'Back to path' : 'Study the lessons'
           }
-          nextLessonTitle={originalLessons[targetIndex + 1]?.title}
+          nextLessonTitle={grammarTestOutLessons[targetIndex + 1]?.title}
         />
       );
     }
@@ -141,10 +163,14 @@ export default function GrammarPage() {
     <div>
       {!activeLessonId && (
         <button
-          onClick={() => navigate('/learn')}
+          onClick={() =>
+            navigate(
+              openedFromBrowse ? ROUTES.browseActivities : ROUTES.learn,
+            )
+          }
           className="inline-flex min-h-[44px] items-center text-indigo-600 dark:text-indigo-400 text-sm font-medium mb-3 hover:underline press-feedback"
         >
-          ← Back to Learn
+          ← Back to {openedFromBrowse ? 'Lessons & practice' : 'Learn'}
         </button>
       )}
       <h2 className="text-lg font-semibold text-slate-700 dark:text-slate-200 mb-4">Grammar Guide</h2>
@@ -194,6 +220,11 @@ export default function GrammarPage() {
               const originalLessons = lessons.filter((l) => !l.group);
               const groupedLessons = lessons.filter((l) => l.group);
               const groups = [...new Set(groupedLessons.map((l) => l.group!))];
+              const completedIds = new Set(
+                [...progress.values()]
+                  .filter((item) => item.completed)
+                  .map((item) => item.lessonId),
+              );
 
               const toggleGroup = (group: string) => {
                 setCollapsedGroups((prev) => {
@@ -206,6 +237,13 @@ export default function GrammarPage() {
 
               const renderLesson = (lesson: LessonMeta, locked: boolean, showTestOut: boolean) => {
                 const lp = progress.get(lesson.id);
+                const canTestOut =
+                  showTestOut &&
+                  computeTestOutRange(
+                    grammarTestOutLessons,
+                    completedIds,
+                    lesson.id,
+                  ) !== null;
                 return (
                   <div key={lesson.id}>
                     <button
@@ -249,9 +287,18 @@ export default function GrammarPage() {
                         </div>
                       </div>
                     </button>
-                    {showTestOut && !lp?.completed && (
+                    {canTestOut && !lp?.completed && (
                       <button
-                        onClick={() => navigate(grammarTestOutRoute(lesson.id))}
+                        onClick={() =>
+                          navigate(
+                            grammarTestOutRoute(
+                              lesson.id,
+                              openedFromBrowse
+                                ? LESSON_BROWSE_ORIGIN
+                                : undefined,
+                            ),
+                          )
+                        }
                         className="mt-1 inline-flex min-h-[44px] items-center text-xs font-medium text-indigo-600 dark:text-indigo-400 hover:underline press-feedback"
                       >
                         Know this already? Test out →
@@ -308,7 +355,11 @@ export default function GrammarPage() {
                         {!isCollapsed && (
                           <div className="space-y-3 mt-2">
                             {groupLessons.map((lesson) =>
-                              renderLesson(lesson, false, !isTofuguGroup),
+                              renderLesson(
+                                lesson,
+                                false,
+                                grammarTestOutLessonIds.has(lesson.id),
+                              ),
                             )}
                           </div>
                         )}

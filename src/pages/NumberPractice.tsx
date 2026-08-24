@@ -7,6 +7,17 @@ import { rtlProps } from '../lib/rtl';
 import { speak } from '../lib/tts';
 import { XP_NUMBER_BASE, XP_PER_NUMBER_CORRECT } from '../lib/xp';
 import { getNumbersForLanguage, NUMBER_LANGUAGES, type NumberEntry } from '../data/numbers';
+import { useGuidedPractice } from '../hooks/useGuidedPractice';
+import {
+  GuidedCompletionActions,
+  GuidedPracticeError,
+  GuidedPracticeNotice,
+} from '../components/learn/GuidedPractice';
+import {
+  seededShuffle,
+  selectGuidedItems,
+  type GuidedPracticeDescriptor,
+} from '../lib/guided-practice';
 
 type Phase = 'setup' | 'session' | 'summary';
 type Direction = 'numeral-to-word' | 'word-to-numeral';
@@ -37,11 +48,30 @@ function shuffle<T>(arr: T[]): T[] {
   return copy;
 }
 
-function buildQuestions(pool: NumberEntry[]): Question[] {
-  const order = shuffle(pool).slice(0, Math.min(SESSION_LENGTH, pool.length));
+function buildQuestions(
+  pool: NumberEntry[],
+  guided?: GuidedPracticeDescriptor,
+): Question[] {
+  const order = guided
+    ? selectGuidedItems(pool, guided, (entry) => String(entry.value))
+    : shuffle(pool).slice(0, Math.min(SESSION_LENGTH, pool.length));
   return order.map((entry) => {
-    const distractors = shuffle(pool.filter((n) => n.value !== entry.value)).slice(0, 3);
-    return { entry, options: shuffle([entry, ...distractors]) };
+    const distractorPool = pool.filter((n) => n.value !== entry.value);
+    const distractors = guided
+      ? seededShuffle(
+          distractorPool,
+          `${guided.seed}/distractors/${entry.value}`,
+        ).slice(0, 3)
+      : shuffle(distractorPool).slice(0, 3);
+    return {
+      entry,
+      options: guided
+        ? seededShuffle(
+            [entry, ...distractors],
+            `${guided.seed}/options/${entry.value}`,
+          )
+        : shuffle([entry, ...distractors]),
+    };
   });
 }
 
@@ -74,6 +104,7 @@ export default function NumberPracticePage() {
     const all = getNumbersForLanguage(language);
     return selectedRanges.size > 0 ? all.filter((n) => selectedRanges.has(n.range)) : all;
   }, [language, selectedRanges]);
+  const guided = useGuidedPractice('numbers', language);
 
   const speakEntry = useCallback(
     (entry: NumberEntry) => {
@@ -83,8 +114,14 @@ export default function NumberPracticePage() {
   );
 
   const startSession = useCallback(() => {
-    if (pool.length < 4) return;
-    const qs = buildQuestions(pool);
+    const sessionPool = guided.descriptor
+      ? getNumbersForLanguage(language)
+      : pool;
+    if (sessionPool.length < 4) return;
+    const qs = buildQuestions(
+      sessionPool,
+      guided.descriptor ?? undefined,
+    );
     setQuestions(qs);
     setIndex(0);
     setScore(0);
@@ -92,7 +129,7 @@ export default function NumberPracticePage() {
     setBestStreak(0);
     setAnswered(null);
     setPhase('session');
-  }, [pool]);
+  }, [guided.descriptor, language, pool]);
 
   const handleAnswer = useCallback(
     (value: number) => {
@@ -119,12 +156,16 @@ export default function NumberPracticePage() {
     if (nextIdx >= questions.length) {
       const xp = XP_NUMBER_BASE + score * XP_PER_NUMBER_CORRECT;
       useXPStore.getState().addXP(xp);
+      void guided.complete({
+        itemsCompleted: questions.length,
+        score: Math.round((score / questions.length) * 100),
+      });
       setPhase('summary');
       return;
     }
     setIndex(nextIdx);
     setAnswered(null);
-  }, [index, questions.length, score]);
+  }, [index, questions.length, score, guided]);
 
   // Keyboard shortcuts
   useEffect(() => {
@@ -153,6 +194,10 @@ export default function NumberPracticePage() {
     });
   };
 
+  if (guided.invalidMessage) {
+    return <GuidedPracticeError message={guided.invalidMessage} />;
+  }
+
   // No number data for any active language
   if (numberLanguages.length === 0) {
     return (
@@ -171,6 +216,7 @@ export default function NumberPracticePage() {
   if (phase === 'setup') {
     return (
       <div>
+        <GuidedPracticeNotice guided={guided} />
         <h2 className="text-lg font-semibold text-slate-800 dark:text-slate-100 mb-4">🔢 Number Practice</h2>
         <p className="text-sm text-slate-500 dark:text-slate-400 mb-4">
           Learn to read and spell numbers. Match digits to their written-out form (and back).
@@ -289,20 +335,26 @@ export default function NumberPracticePage() {
             +{XP_NUMBER_BASE + score * XP_PER_NUMBER_CORRECT} XP earned
           </div>
         </div>
-        <div className="flex gap-3">
-          <button
-            onClick={() => setPhase('setup')}
-            className="flex-1 bg-white dark:bg-slate-800 text-indigo-600 dark:text-indigo-400 border border-indigo-200 dark:border-indigo-800 py-3 rounded-xl font-semibold hover:bg-indigo-50 dark:hover:bg-slate-700 transition-colors press-feedback min-h-[44px]"
-          >
-            New Session
-          </button>
-          <button
-            onClick={startSession}
-            className="flex-1 bg-indigo-600 text-white py-3 rounded-xl font-semibold hover:bg-indigo-700 transition-colors press-feedback min-h-[44px]"
-          >
-            Retry
-          </button>
-        </div>
+        <GuidedCompletionActions
+          guided={guided}
+          onPracticeAgain={() => setPhase('setup')}
+        />
+        {!guided.isGuided && (
+          <div className="flex gap-3">
+            <button
+              onClick={() => setPhase('setup')}
+              className="flex-1 bg-white dark:bg-slate-800 text-indigo-600 dark:text-indigo-400 border border-indigo-200 dark:border-indigo-800 py-3 rounded-xl font-semibold hover:bg-indigo-50 dark:hover:bg-slate-700 transition-colors press-feedback min-h-[44px]"
+            >
+              New Session
+            </button>
+            <button
+              onClick={startSession}
+              className="flex-1 bg-indigo-600 text-white py-3 rounded-xl font-semibold hover:bg-indigo-700 transition-colors press-feedback min-h-[44px]"
+            >
+              Retry
+            </button>
+          </div>
+        )}
       </div>
     );
   }
@@ -315,6 +367,7 @@ export default function NumberPracticePage() {
 
   return (
     <div>
+      <GuidedPracticeNotice guided={guided} />
       {/* Progress + stats */}
       <div className="flex justify-between items-center mb-2">
         <span className="text-sm text-slate-500 dark:text-slate-400">

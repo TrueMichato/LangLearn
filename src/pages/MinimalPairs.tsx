@@ -6,6 +6,16 @@ import { useXPStore } from '../stores/xpStore';
 import { speak } from '../lib/tts';
 import { jaMinimalPairs, ruMinimalPairs, ptMinimalPairs, esMinimalPairs, arMinimalPairs, roMinimalPairs } from '../data/minimal-pairs';
 import type { MinimalPair } from '../data/minimal-pairs';
+import { useGuidedPractice } from '../hooks/useGuidedPractice';
+import {
+  GuidedCompletionActions,
+  GuidedPracticeError,
+  GuidedPracticeNotice,
+} from '../components/learn/GuidedPractice';
+import {
+  seededBoolean,
+  selectGuidedItems,
+} from '../lib/guided-practice';
 type Phase = 'setup' | 'session' | 'summary';
 
 const CATEGORIES: Record<string, string> = {
@@ -98,6 +108,7 @@ export default function MinimalPairsPage() {
   const playbackId = useRef(0);
 
   const current = queue[index] ?? null;
+  const guided = useGuidedPractice('minimal-pairs', language);
 
   const cancelPendingAudio = useCallback(() => {
     if (autoplayTimer.current) {
@@ -136,11 +147,15 @@ export default function MinimalPairsPage() {
   const startSession = () => {
     cancelPendingAudio();
     const allPairs = getPairsForLanguage(language);
-    const filtered = selectedCategories.size > 0
+    const filtered = guided.descriptor
+      ? allPairs
+      : selectedCategories.size > 0
       ? allPairs.filter((p) => selectedCategories.has(p.category))
       : allPairs;
     if (filtered.length === 0) return;
-    const shuffled = shuffle(filtered);
+    const shuffled = guided.descriptor
+      ? selectGuidedItems(filtered, guided.descriptor, (pair) => pair.id)
+      : shuffle(filtered);
     setQueue(shuffled);
     setIndex(0);
     setScore(0);
@@ -151,7 +166,13 @@ export default function MinimalPairsPage() {
     setShowingPair(false);
 
     // randomly choose which word to play first
-    const ans: 'a' | 'b' = Math.random() < 0.5 ? 'a' : 'b';
+    const ans: 'a' | 'b' = guided.descriptor
+      ? seededBoolean(guided.descriptor.seed, 0)
+        ? 'b'
+        : 'a'
+      : Math.random() < 0.5
+        ? 'a'
+        : 'b';
     setCorrectAnswer(ans);
     setPhase('session');
 
@@ -162,7 +183,7 @@ export default function MinimalPairsPage() {
     }, 400);
   };
 
-  const handleAnswer = (choice: 'a' | 'b') => {
+  const handleAnswer = useCallback((choice: 'a' | 'b') => {
     if (answered !== null) return;
     setAnswered(choice);
     setShowingPair(true);
@@ -176,7 +197,7 @@ export default function MinimalPairsPage() {
     } else {
       setStreak(0);
     }
-  };
+  }, [answered, bestStreak, correctAnswer, streak]);
 
   const nextPair = useCallback(() => {
     cancelPendingAudio();
@@ -186,6 +207,10 @@ export default function MinimalPairsPage() {
       const finalScore = score + (answered === correctAnswer ? 0 : 0); // score already updated
       const xp = 15 + finalScore * 2;
       useXPStore.getState().addXP(xp);
+      void guided.complete({
+        itemsCompleted: queue.length,
+        score: Math.round((finalScore / queue.length) * 100),
+      });
       setPhase('summary');
       return;
     }
@@ -193,14 +218,20 @@ export default function MinimalPairsPage() {
     setAnswered(null);
     setShowingPair(false);
 
-    const ans: 'a' | 'b' = Math.random() < 0.5 ? 'a' : 'b';
+    const ans: 'a' | 'b' = guided.descriptor
+      ? seededBoolean(guided.descriptor.seed, nextIdx)
+        ? 'b'
+        : 'a'
+      : Math.random() < 0.5
+        ? 'a'
+        : 'b';
     setCorrectAnswer(ans);
 
     autoplayTimer.current = setTimeout(() => {
       const pair = queue[nextIdx];
       if (pair) playAudio(pair, ans);
     }, 400);
-  }, [index, queue, score, answered, correctAnswer, playAudio, cancelPendingAudio]);
+  }, [index, queue, score, answered, correctAnswer, playAudio, cancelPendingAudio, guided]);
 
   // Keyboard shortcuts
   useEffect(() => {
@@ -215,7 +246,15 @@ export default function MinimalPairsPage() {
     };
     window.addEventListener('keydown', handler);
     return () => window.removeEventListener('keydown', handler);
-  }, [phase, answered, current, correctAnswer, nextPair, playAudio]);
+  }, [
+    phase,
+    answered,
+    current,
+    correctAnswer,
+    handleAnswer,
+    nextPair,
+    playAudio,
+  ]);
 
   const toggleCategory = (cat: string) => {
     setSelectedCategories((prev) => {
@@ -225,6 +264,10 @@ export default function MinimalPairsPage() {
       return next;
     });
   };
+
+  if (guided.invalidMessage) {
+    return <GuidedPracticeError message={guided.invalidMessage} />;
+  }
 
   // SETUP PHASE
   if (phase === 'setup') {
@@ -236,6 +279,7 @@ export default function MinimalPairsPage() {
 
     return (
       <div>
+        <GuidedPracticeNotice guided={guided} />
         <h2 className="text-lg font-semibold text-slate-800 dark:text-slate-100 mb-4">
           🎧 Minimal Pairs
         </h2>
@@ -243,7 +287,7 @@ export default function MinimalPairsPage() {
           Train your ear to distinguish similar sounds. Listen to a word, then pick which one you heard.
         </p>
 
-        {!isSupported && (
+        {!guided.descriptor && !isSupported && (
           <LanguageUnavailable
             className="mb-4"
             requested={requested}
@@ -254,16 +298,18 @@ export default function MinimalPairsPage() {
           />
         )}
 
-        <LanguagePicker
-          className="mb-4"
-          options={pairLanguages}
-          value={language}
-          onChange={(code) => {
-            setLanguage(code);
-            setSelectedCategories(new Set());
-          }}
-          label="Minimal pair language"
-        />
+        {!guided.descriptor && (
+          <LanguagePicker
+            className="mb-4"
+            options={pairLanguages}
+            value={language}
+            onChange={(code) => {
+              setLanguage(code);
+              setSelectedCategories(new Set());
+            }}
+            label="Minimal pair language"
+          />
+        )}
 
         {/* Category filter */}
         <div className="bg-white dark:bg-slate-800 rounded-2xl shadow p-4 mb-4">
@@ -308,7 +354,7 @@ export default function MinimalPairsPage() {
           Session Complete!
         </h2>
         <div className="bg-white dark:bg-slate-800 rounded-2xl shadow p-6 space-y-3">
-          <div className="text-4xl font-bold text-indigo-600 dark:text-indigo-400">
+          <div className="text-4xl font-bold text-slate-800 dark:text-slate-100">
             {score}/{total}
           </div>
           <p className="text-sm text-slate-500 dark:text-slate-400">correct answers</p>
@@ -326,20 +372,26 @@ export default function MinimalPairsPage() {
             +{15 + score * 2} XP earned
           </div>
         </div>
-        <div className="flex gap-3">
-          <button
-            onClick={() => setPhase('setup')}
-            className="flex-1 bg-white dark:bg-slate-800 text-indigo-600 dark:text-indigo-400 border border-indigo-200 dark:border-indigo-800 py-3 rounded-xl font-semibold hover:bg-indigo-50 dark:hover:bg-slate-700 transition-colors press-feedback min-h-[44px]"
-          >
-            New Session
-          </button>
-          <button
-            onClick={startSession}
-            className="flex-1 bg-indigo-600 text-white py-3 rounded-xl font-semibold hover:bg-indigo-700 transition-colors press-feedback min-h-[44px]"
-          >
-            Retry
-          </button>
-        </div>
+        <GuidedCompletionActions
+          guided={guided}
+          onPracticeAgain={() => setPhase('setup')}
+        />
+        {!guided.isGuided && (
+          <div className="flex gap-3">
+            <button
+              onClick={() => setPhase('setup')}
+              className="flex-1 bg-white dark:bg-slate-800 text-indigo-600 dark:text-indigo-400 border border-indigo-200 dark:border-indigo-800 py-3 rounded-xl font-semibold hover:bg-indigo-50 dark:hover:bg-slate-700 transition-colors press-feedback min-h-[44px]"
+            >
+              New Session
+            </button>
+            <button
+              onClick={startSession}
+              className="flex-1 bg-indigo-600 text-white py-3 rounded-xl font-semibold hover:bg-indigo-700 transition-colors press-feedback min-h-[44px]"
+            >
+              Retry
+            </button>
+          </div>
+        )}
       </div>
     );
   }
@@ -351,6 +403,7 @@ export default function MinimalPairsPage() {
 
   return (
     <div>
+      <GuidedPracticeNotice guided={guided} />
       {/* Progress bar and stats */}
       <div className="flex justify-between items-center mb-2">
         <span className="text-sm text-slate-500 dark:text-slate-400">

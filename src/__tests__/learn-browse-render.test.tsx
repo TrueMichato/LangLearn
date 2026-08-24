@@ -4,6 +4,7 @@ import { beforeEach, describe, expect, it, vi } from 'vitest';
 import { getPathRecommendations } from '../lib/learn-activity-recommendations';
 import BrowseActivitiesPage from '../pages/BrowseActivities';
 import LearnPage from '../pages/Learn';
+import ListeningPage from '../pages/Listening';
 import { ROUTES } from '../lib/routes';
 import type { LearningPath } from '../types/learning-path';
 
@@ -11,6 +12,9 @@ const mockActiveLanguages = ['ja', 'ar'] as const;
 const mockCurrentLanguage = {
   language: 'ja',
   setLanguage: vi.fn(),
+  options: ['ja', 'ar'],
+  isSupported: true,
+  requested: 'ja',
 };
 
 vi.mock('../stores/settingsStore', () => ({
@@ -22,22 +26,19 @@ vi.mock('../hooks/useCurrentLanguage', () => ({
   useCurrentLanguage: () => mockCurrentLanguage,
 }));
 
-/**
- * Extracts the `<details>...</details>` block for a given section label and
- * the card count rendered in its summary badge. Section labels are followed
- * immediately by a `<span>{cards.length}</span>` badge with no separating
- * whitespace in the rendered markup.
- */
 function getSection(html: string, label: string): { block: string; count: number } {
-  const summaryMatch = new RegExp(`${label}<span[^>]*>(\\d+)</span>`).exec(html);
-  if (!summaryMatch) {
+  const id = `activity-section-${label.toLowerCase().replaceAll(' ', '-')}`;
+  const sectionStart = html.indexOf(
+    `<section aria-labelledby="${id}"`,
+  );
+  if (sectionStart === -1) {
     throw new Error(`Section "${label}" not found in rendered markup`);
   }
-  const detailsStart = html.lastIndexOf('<details', summaryMatch.index);
-  const detailsEnd = html.indexOf('</details>', summaryMatch.index) + '</details>'.length;
+  const sectionEnd = html.indexOf('</section>', sectionStart) + '</section>'.length;
+  const block = html.slice(sectionStart, sectionEnd);
   return {
-    block: html.slice(detailsStart, detailsEnd),
-    count: Number(summaryMatch[1]),
+    block,
+    count: (block.match(/<a /g) ?? []).length,
   };
 }
 
@@ -47,7 +48,7 @@ describe('Learn and Browse activities pages', () => {
     mockCurrentLanguage.setLanguage.mockReset();
   });
 
-  it('keeps Learn focused on the path and a quiet browse link', () => {
+  it('makes the guided path and free-choice mode equally findable', () => {
     const html = renderToStaticMarkup(
       <MemoryRouter>
         <LearnPage />
@@ -55,17 +56,27 @@ describe('Learn and Browse activities pages', () => {
     );
 
     expect(html).toContain('Learn');
-    expect(html).toContain('Follow a calm route through the essentials');
+    expect(html).toContain('choose any lesson and practice activity');
     expect(html).toContain('aria-label="Learning path language"');
+    expect(html).toContain('aria-label="Learn sections"');
+    expect(html).toContain('Guided path');
     expect(html).toContain(`href="${ROUTES.browseActivities}"`);
-    expect(html).toContain('Browse activities');
-    expect(html).not.toContain('Browse all activities');
+    expect(html).toContain('Lessons &amp; practice');
     expect(html).not.toContain('Recommended Resources');
     expect(html).not.toContain('Cloze Practice');
-    expect(html).not.toContain('📥 Input &amp; Study');
   });
 
-  it('keeps the complete catalog and resources behind intentional disclosures', () => {
+  it('opens guided dictation links in dictation mode', () => {
+    const html = renderToStaticMarkup(
+      <MemoryRouter initialEntries={['/listening?mode=dictation']}>
+        <ListeningPage />
+      </MemoryRouter>,
+    );
+
+    expect(html).toContain('Start Dictation Practice');
+  });
+
+  it('keeps lesson libraries and all practice routes visible', () => {
     const html = renderToStaticMarkup(
       <MemoryRouter>
         <BrowseActivitiesPage />
@@ -73,18 +84,23 @@ describe('Learn and Browse activities pages', () => {
     );
 
     expect(html).toContain(`href="${ROUTES.learn}"`);
-    expect(html).toContain('Back to Learn');
-    expect(html).toContain('All activities');
-    expect(html).toContain('Input and study');
-    expect(html).toContain('Core practice');
-    expect(html).toContain('Focused drills');
-    expect(html).toContain('Extras');
-    expect(html).toContain('<details');
-    expect(html).toContain('Grammar');
+    expect(html).toContain('Guided path');
+    expect(html).toContain('Lesson libraries');
+    expect(html).toContain('Practice activities');
+    expect(html).toContain('More ways to learn');
+    expect(html).toContain('Grammar lessons');
+    expect(html).toContain('All grammar lessons in course order');
+    expect(html).toContain('Vocabulary lessons');
+    expect(html).toContain('All vocabulary lessons in course order');
+    expect(html).toContain('Cloze Practice');
+    expect(html).toContain('Listening');
+    expect(html).toContain('Sentences');
     expect(html).not.toContain('Dialects');
     expect(html).toContain('Recommended Resources');
     expect(html).toContain('Outside resources');
     expect(html).toContain('href="/letters/ja"');
+    expect(html).toContain('href="/grammar?from=browse"');
+    expect(html).toContain('href="/vocab-lessons?from=browse"');
     expect(html).not.toContain('href="/letters/ar"');
     expect(html).not.toContain('leading-tight');
     expect(html).toContain('leading-5');
@@ -93,68 +109,40 @@ describe('Learn and Browse activities pages', () => {
     expect(html).toContain('aria-label="Activity language"');
   });
 
-  it('regroups every route into the four canonical sections, preserving copy and paths', () => {
+  it('groups every route into visible lesson, practice, and extension sections', () => {
     const html = renderToStaticMarkup(
       <MemoryRouter>
         <BrowseActivitiesPage />
       </MemoryRouter>,
     );
 
-    const inputAndStudy = getSection(html, 'Input and study');
-    expect(inputAndStudy.block).toContain(`href="${ROUTES.grammar}"`);
-    expect(inputAndStudy.block).toContain('Grammar');
-    expect(inputAndStudy.block).toContain('Rules and patterns');
-    expect(inputAndStudy.block).toContain(`href="${ROUTES.vocabLessons}"`);
-    expect(inputAndStudy.block).toContain('Vocabulary');
-    expect(inputAndStudy.block).toContain('Themed word sets');
-    expect(inputAndStudy.block).toContain('href="/letters/ja"');
+    const libraries = getSection(html, 'Lesson libraries');
+    expect(libraries.count).toBe(3);
+    expect(libraries.block).toContain('href="/grammar?from=browse"');
+    expect(libraries.block).toContain('Grammar lessons');
+    expect(libraries.block).toContain('href="/vocab-lessons?from=browse"');
+    expect(libraries.block).toContain('Vocabulary lessons');
+    expect(libraries.block).toContain('href="/letters/ja"');
 
-    const corePractice = getSection(html, 'Core practice');
-    expect(corePractice.count).toBe(3);
-    expect(corePractice.block).toContain(`href="${ROUTES.sentenceBuilder}"`);
-    expect(corePractice.block).toContain('Sentences');
-    expect(corePractice.block).toContain('Build and translate');
-    expect(corePractice.block).toContain(`href="${ROUTES.clozePractice}"`);
-    expect(corePractice.block).toContain('Cloze Practice');
-    expect(corePractice.block).toContain('Fill in the blank');
-    expect(corePractice.block).toContain(`href="${ROUTES.conjugations}"`);
-    expect(corePractice.block).toContain('Conjugations');
-    expect(corePractice.block).toContain('Verbs and noun cases');
-    // Practice-adjacent drills moved out of this section.
-    expect(corePractice.block).not.toContain('Listening');
-    expect(corePractice.block).not.toContain('Minimal Pairs');
-    expect(corePractice.block).not.toContain('Translation');
-
-    const focusedDrills = getSection(html, 'Focused drills');
-    expect(focusedDrills.block).toContain(`href="${ROUTES.listening}"`);
-    expect(focusedDrills.block).toContain('Listening');
-    expect(focusedDrills.block).toContain('Audio comprehension');
-    expect(focusedDrills.block).toContain(`href="${ROUTES.minimalPairs}"`);
-    expect(focusedDrills.block).toContain('Minimal Pairs');
-    expect(focusedDrills.block).toContain('Pronunciation ear training');
-    expect(focusedDrills.block).toContain(`href="${ROUTES.translation}"`);
-    expect(focusedDrills.block).toContain('Translation');
-    expect(focusedDrills.block).toContain('Practice writing in your language');
-
-    const extras = getSection(html, 'Extras');
-    expect(extras.count).toBe(2);
-    expect(extras.block).toContain(`href="${ROUTES.lyrics}"`);
-    expect(extras.block).toContain('Music');
-    expect(extras.block).toContain('Learn through song lyrics');
-    expect(extras.block).toContain(`href="${ROUTES.tests}"`);
-    expect(extras.block).toContain('Tests');
-    expect(extras.block).toContain('Track your level');
-
-    // No section exceeds the 4-card cap for this language/capability combo.
-    for (const label of ['Input and study', 'Core practice', 'Focused drills', 'Extras']) {
-      expect(getSection(html, label).count).toBeLessThanOrEqual(4);
+    const practice = getSection(html, 'Practice activities');
+    for (const route of [
+      ROUTES.sentenceBuilder,
+      ROUTES.clozePractice,
+      ROUTES.conjugations,
+      ROUTES.listening,
+      ROUTES.minimalPairs,
+      ROUTES.translation,
+    ]) {
+      expect(practice.block).toContain(`href="${route}"`);
     }
-    // Japanese has neither dialects nor numeral practice.
-    expect(inputAndStudy.count).toBe(3);
-    expect(focusedDrills.count).toBe(3);
+
+    const more = getSection(html, 'More ways to learn');
+    expect(more.count).toBe(2);
+    expect(more.block).toContain(`href="${ROUTES.lyrics}"`);
+    expect(more.block).toContain(`href="${ROUTES.tests}"`);
   });
 
-  it('shows the Arabic Dialects card in Input and study only when Arabic is active, capped at 4', () => {
+  it('shows Arabic-specific lesson choices only when Arabic is active', () => {
     mockCurrentLanguage.language = 'ar';
     const html = renderToStaticMarkup(
       <MemoryRouter>
@@ -162,16 +150,15 @@ describe('Learn and Browse activities pages', () => {
       </MemoryRouter>,
     );
 
-    const inputAndStudy = getSection(html, 'Input and study');
-    expect(inputAndStudy.block).toContain(`href="${ROUTES.dialects}"`);
-    expect(inputAndStudy.block).toContain('Dialects');
-    expect(inputAndStudy.block).toContain('Compare spoken Arabic');
-    expect(inputAndStudy.block).toContain('href="/letters/ar"');
-    expect(inputAndStudy.count).toBe(4);
-    expect(inputAndStudy.count).toBeLessThanOrEqual(4);
+    const libraries = getSection(html, 'Lesson libraries');
+    expect(libraries.block).toContain(`href="${ROUTES.dialects}"`);
+    expect(libraries.block).toContain('Dialects');
+    expect(libraries.block).toContain('Compare spoken Arabic');
+    expect(libraries.block).toContain('href="/letters/ar"');
+    expect(libraries.count).toBe(4);
   });
 
-  it('shows the Numbers card in Focused drills only when the language has numeral practice, capped at 4', () => {
+  it('shows Numbers in practice only when the language has numeral practice', () => {
     mockCurrentLanguage.language = 'ar';
     const html = renderToStaticMarkup(
       <MemoryRouter>
@@ -179,12 +166,10 @@ describe('Learn and Browse activities pages', () => {
       </MemoryRouter>,
     );
 
-    const focusedDrills = getSection(html, 'Focused drills');
-    expect(focusedDrills.block).toContain(`href="${ROUTES.numberPractice}"`);
-    expect(focusedDrills.block).toContain('Numbers');
-    expect(focusedDrills.block).toContain('Read and spell numerals');
-    expect(focusedDrills.count).toBe(4);
-    expect(focusedDrills.count).toBeLessThanOrEqual(4);
+    const practice = getSection(html, 'Practice activities');
+    expect(practice.block).toContain(`href="${ROUTES.numberPractice}"`);
+    expect(practice.block).toContain('Numbers');
+    expect(practice.block).toContain('Read and spell numerals');
 
     mockCurrentLanguage.language = 'ja';
     const jaHtml = renderToStaticMarkup(
@@ -192,7 +177,9 @@ describe('Learn and Browse activities pages', () => {
         <BrowseActivitiesPage />
       </MemoryRouter>,
     );
-    expect(getSection(jaHtml, 'Focused drills').block).not.toContain(ROUTES.numberPractice);
+    expect(getSection(jaHtml, 'Practice activities').block).not.toContain(
+      ROUTES.numberPractice,
+    );
   });
 
   it('derives no more than two recommendations from the current path step', () => {
@@ -201,6 +188,7 @@ describe('Learn and Browse activities pages', () => {
       completedCount: 0,
       totalCount: 2,
       completedAheadCount: 0,
+      recommendedNodeId: 'vocab:greetings',
       testOutOptions: [],
       units: [
         {
@@ -208,6 +196,7 @@ describe('Learn and Browse activities pages', () => {
           title: 'First steps',
           description: 'Start here.',
           checkpoints: [],
+          strands: [],
           nodes: [
             {
               id: 'vocab:greetings',
@@ -242,5 +231,50 @@ describe('Learn and Browse activities pages', () => {
         title: 'Use the words',
       }),
     ]);
+  });
+
+  it('uses the explicit recommendation when a sibling branch is also available', () => {
+    const path: LearningPath = {
+      language: 'ru',
+      completedCount: 0,
+      totalCount: 2,
+      completedAheadCount: 0,
+      recommendedNodeId: 'grammar:stress',
+      testOutOptions: [],
+      units: [
+        {
+          id: 'foundations',
+          title: 'Build your foundations',
+          description: 'Grow two foundations.',
+          checkpoints: [],
+          strands: [],
+          nodes: [
+            {
+              id: 'vocab:family',
+              kind: 'vocab',
+              lessonId: 'vocab/family',
+              title: 'Family Members',
+              route: '/vocab-lessons?lesson=family',
+              state: 'available',
+              unitId: 'foundations',
+            },
+            {
+              id: 'grammar:stress',
+              kind: 'grammar',
+              lessonId: 'stress',
+              title: 'Stress in Russian',
+              route: '/grammar?lesson=stress',
+              state: 'available',
+              unitId: 'foundations',
+            },
+          ],
+        },
+      ],
+    };
+
+    expect(getPathRecommendations(path)[0]).toMatchObject({
+      to: '/grammar?lesson=stress',
+      title: 'Stress in Russian',
+    });
   });
 });

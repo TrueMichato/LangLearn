@@ -1,35 +1,32 @@
-import { useState, useMemo } from 'react';
+import { useState, useMemo, useCallback } from 'react';
 import { Link } from 'react-router-dom';
 import { useCurrentLanguage } from '../hooks/useCurrentLanguage';
 import LanguagePicker from '../components/common/LanguagePicker';
 import LanguageUnavailable from '../components/common/LanguageUnavailable';
 import { useXPStore } from '../stores/xpStore';
-import { jaSentences } from '../data/sentences/ja-sentences';
-import { ruSentences } from '../data/sentences/ru-sentences';
-import { ptSentences } from '../data/sentences/pt-sentences';
-import { arSentences } from '../data/sentences/ar-sentences';
-import { roSentences } from '../data/sentences/ro-sentences';
-import type { PracticeSentence } from '../data/sentences/ja-sentences';
+import {
+  getPracticeSentences,
+  SENTENCE_LANGUAGES,
+  type PracticeSentence,
+} from '../data/sentences';
 import TileBuilder from '../components/sentences/TileBuilder';
 import TypeBuilder from '../components/sentences/TypeBuilder';
+import { useGuidedPractice } from '../hooks/useGuidedPractice';
+import {
+  GuidedCompletionActions,
+  GuidedPracticeError,
+  GuidedPracticeNotice,
+} from '../components/learn/GuidedPractice';
+import { selectGuidedItems } from '../lib/guided-practice';
 
 type Mode = 'tiles' | 'type';
 type Difficulty = 'easy' | 'medium' | 'hard' | 'all';
 type Phase = 'setup' | 'session' | 'summary';
 
 const SENTENCES_PER_SESSION = 10;
-
-const SENTENCE_DATA: Record<string, PracticeSentence[]> = {
-  ja: jaSentences,
-  ru: ruSentences,
-  pt: ptSentences,
-  ar: arSentences,
-  ro: roSentences,
-};
-
-function getSentences(lang: string): PracticeSentence[] {
-  return SENTENCE_DATA[lang] ?? [];
-}
+const ACTIVE_OPTION_CLASSES = 'bg-indigo-600 text-white';
+const INACTIVE_OPTION_CLASSES =
+  'border border-slate-300 bg-white text-slate-700 dark:border-white/10 dark:bg-slate-700 dark:text-slate-300';
 
 function shuffle<T>(arr: T[]): T[] {
   const a = [...arr];
@@ -39,8 +36,6 @@ function shuffle<T>(arr: T[]): T[] {
   }
   return a;
 }
-
-const SENTENCE_LANGUAGES = Object.keys(SENTENCE_DATA);
 
 export default function SentenceBuilderPage() {
   const {
@@ -59,18 +54,23 @@ export default function SentenceBuilderPage() {
   const [currentIdx, setCurrentIdx] = useState(0);
   const [score, setScore] = useState(0);
 
-  const allSentences = useMemo(() => getSentences(language), [language]);
+  const allSentences = useMemo(() => getPracticeSentences(language), [language]);
+  const guided = useGuidedPractice('sentence', language);
 
-  const startSession = () => {
+  const startSession = useCallback(() => {
     let pool = allSentences;
-    if (difficulty !== 'all') pool = pool.filter((s) => s.difficulty === difficulty);
-    const selected = shuffle(pool).slice(0, SENTENCES_PER_SESSION);
+    if (!guided.descriptor && difficulty !== 'all') {
+      pool = pool.filter((s) => s.difficulty === difficulty);
+    }
+    const selected = guided.descriptor
+      ? selectGuidedItems(pool, guided.descriptor, (sentence) => sentence.id)
+      : shuffle(pool).slice(0, SENTENCES_PER_SESSION);
     if (selected.length === 0) return;
     setSessionSentences(selected);
     setCurrentIdx(0);
     setScore(0);
     setPhase('session');
-  };
+  }, [allSentences, difficulty, guided.descriptor]);
 
   const handleResult = (correct: boolean) => {
     if (correct) setScore((s) => s + 1);
@@ -79,12 +79,20 @@ export default function SentenceBuilderPage() {
       const finalScore = correct ? score + 1 : score;
       const xp = 20 + finalScore * 3;
       useXPStore.getState().addXP(xp);
+      void guided.complete({
+        itemsCompleted: sessionSentences.length,
+        score: Math.round((finalScore / sessionSentences.length) * 100),
+      });
       setScore(finalScore);
       setPhase('summary');
     } else {
       setCurrentIdx(next);
     }
   };
+
+  if (guided.invalidMessage) {
+    return <GuidedPracticeError message={guided.invalidMessage} />;
+  }
 
   const restart = () => {
     setPhase('setup');
@@ -103,8 +111,9 @@ export default function SentenceBuilderPage() {
           </Link>
           <h2 className="text-lg font-semibold text-slate-700 dark:text-slate-200">✍️ Sentence Builder</h2>
         </div>
+        <GuidedPracticeNotice guided={guided} />
 
-        {!isSupported && (
+        {!guided.descriptor && !isSupported && (
           <LanguageUnavailable
             requested={requested}
             options={supportedLanguages}
@@ -113,7 +122,7 @@ export default function SentenceBuilderPage() {
           />
         )}
 
-        {supportedLanguages.length > 1 && (
+        {!guided.descriptor && supportedLanguages.length > 1 && (
           <div>
             <label className="block text-sm font-medium text-slate-600 dark:text-slate-400 mb-1">Language</label>
             <LanguagePicker
@@ -134,7 +143,7 @@ export default function SentenceBuilderPage() {
                 key={m}
                 onClick={() => setMode(m)}
                 className={`px-4 py-2 min-h-[44px] rounded-xl text-sm font-medium transition-colors ${
-                  mode === m ? 'bg-indigo-600 text-white' : 'bg-white dark:bg-slate-700 text-slate-700 dark:text-slate-300 border border-slate-300 dark:border-white/10'
+                  mode === m ? ACTIVE_OPTION_CLASSES : INACTIVE_OPTION_CLASSES
                 }`}
               >
                 {m === 'tiles' ? '🧩 Tiles' : '⌨️ Type'}
@@ -152,7 +161,9 @@ export default function SentenceBuilderPage() {
                 key={d}
                 onClick={() => setDifficulty(d)}
                 className={`px-4 py-2 min-h-[44px] rounded-xl text-sm font-medium capitalize transition-colors ${
-                  difficulty === d ? 'bg-indigo-600 text-white' : 'bg-white dark:bg-slate-700 text-slate-700 dark:text-slate-300 border border-slate-300 dark:border-white/10'
+                  difficulty === d
+                    ? ACTIVE_OPTION_CLASSES
+                    : INACTIVE_OPTION_CLASSES
                 }`}
               >
                 {d}
@@ -185,14 +196,17 @@ export default function SentenceBuilderPage() {
         </p>
         <p className="text-sm text-slate-500 dark:text-slate-400">+{xp} XP earned</p>
 
-        <div className="flex flex-col gap-3">
-          <button onClick={restart} className="w-full py-3 bg-indigo-600 text-white rounded-xl font-semibold hover:bg-indigo-700 press-feedback transition-colors">
-            Practice Again
-          </button>
-          <Link to="/learn" className="w-full py-3 bg-slate-200 dark:bg-slate-700 text-slate-700 dark:text-slate-300 rounded-xl font-semibold hover:bg-slate-300 dark:hover:bg-slate-600 press-feedback transition-colors inline-block">
-            ← Back
-          </Link>
-        </div>
+        <GuidedCompletionActions guided={guided} onPracticeAgain={restart} />
+        {!guided.isGuided && (
+          <div className="flex flex-col gap-3">
+            <button onClick={restart} className="w-full py-3 bg-indigo-600 text-white rounded-xl font-semibold hover:bg-indigo-700 press-feedback transition-colors">
+              Practice Again
+            </button>
+            <Link to="/learn" className="w-full py-3 bg-slate-200 dark:bg-slate-700 text-slate-700 dark:text-slate-300 rounded-xl font-semibold hover:bg-slate-300 dark:hover:bg-slate-600 press-feedback transition-colors inline-block">
+              ← Back
+            </Link>
+          </div>
+        )}
       </div>
     );
   }
@@ -201,6 +215,7 @@ export default function SentenceBuilderPage() {
   const currentSentence = sessionSentences[currentIdx];
   return (
     <div className="max-w-md mx-auto space-y-4 page-enter">
+      <GuidedPracticeNotice guided={guided} />
       {/* Progress */}
       <div className="flex items-center justify-between text-sm text-slate-500 dark:text-slate-400">
         <span>

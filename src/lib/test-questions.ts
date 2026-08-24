@@ -5,6 +5,7 @@ import {
   hasBlank,
   type GrammarCardSource,
 } from './grammar-cards';
+import { MAX_TEST_OUT_LESSONS } from './lesson-assessment-limits';
 
 export type TestType = 'vocabulary' | 'grammar' | 'mixed' | 'full';
 
@@ -59,22 +60,31 @@ const QUESTION_COUNTS: Record<TestType, { vocab: number; grammar: number }> = {
   full: { vocab: 20, grammar: 20 },
 };
 
-function shuffle<T>(arr: T[]): T[] {
+function shuffle<T>(arr: T[], random: () => number = Math.random): T[] {
   const a = [...arr];
   for (let i = a.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
+    const j = Math.floor(random() * (i + 1));
     [a[i], a[j]] = [a[j], a[i]];
   }
   return a;
 }
 
-function pickRandom<T>(arr: T[], n: number): T[] {
-  return shuffle(arr).slice(0, n);
+function pickRandom<T>(
+  arr: T[],
+  n: number,
+  random: () => number = Math.random,
+): T[] {
+  return shuffle(arr, random).slice(0, n);
 }
 
-function pickDistractors(correct: string, pool: string[], count: number): string[] {
+function pickDistractors(
+  correct: string,
+  pool: string[],
+  count: number,
+  random: () => number = Math.random,
+): string[] {
   const filtered = [...new Set(pool.filter((w) => w !== correct))];
-  return pickRandom(filtered, count);
+  return pickRandom(filtered, count, random);
 }
 
 async function fetchVocabLessons(lang: string): Promise<VocabLesson[]> {
@@ -130,7 +140,11 @@ async function fetchGrammarQuizzes(lang: string): Promise<GrammarQuiz[]> {
   }
 }
 
-function generateVocabQuestions(lessons: VocabLesson[], count: number): Question[] {
+function generateVocabQuestions(
+  lessons: VocabLesson[],
+  count: number,
+  random: () => number,
+): Question[] {
   const allWords = lessons.flatMap((l) => l.words);
   if (allWords.length < 4) return [];
 
@@ -150,16 +164,16 @@ function generateVocabQuestions(lessons: VocabLesson[], count: number): Question
     }
   }
 
-  const selectedWords = pickRandom(allWords, count);
+  const selectedWords = pickRandom(allWords, count, random);
 
   for (let i = 0; i < selectedWords.length; i++) {
     const w = selectedWords[i];
-    const questionType = Math.random();
+    const questionType = random();
 
     if (questionType < 0.4) {
       // Show word → pick meaning
-      const distractors = pickDistractors(w.meaning, meaningPool, 3);
-      const opts = shuffle([w.meaning, ...distractors]);
+      const distractors = pickDistractors(w.meaning, meaningPool, 3, random);
+      const opts = shuffle([w.meaning, ...distractors], random);
       questions.push({
         id: i,
         category: 'vocabulary',
@@ -169,8 +183,8 @@ function generateVocabQuestions(lessons: VocabLesson[], count: number): Question
       });
     } else if (questionType < 0.8) {
       // Show meaning → pick word
-      const distractors = pickDistractors(w.word, wordPool, 3);
-      const opts = shuffle([w.word, ...distractors]);
+      const distractors = pickDistractors(w.word, wordPool, 3, random);
+      const opts = shuffle([w.word, ...distractors], random);
       questions.push({
         id: i,
         category: 'vocabulary',
@@ -180,10 +194,12 @@ function generateVocabQuestions(lessons: VocabLesson[], count: number): Question
       });
     } else {
       // Fill-in-blank from exercises (fallback to meaning→word)
-      const fb = fillBlanks.length > 0 ? fillBlanks.splice(Math.floor(Math.random() * fillBlanks.length), 1)[0] : null;
+      const fb = fillBlanks.length > 0
+        ? fillBlanks.splice(Math.floor(random() * fillBlanks.length), 1)[0]
+        : null;
       if (fb) {
-        const distractors = pickDistractors(fb.answer, wordPool, 3);
-        const opts = shuffle([fb.answer, ...distractors]);
+        const distractors = pickDistractors(fb.answer, wordPool, 3, random);
+        const opts = shuffle([fb.answer, ...distractors], random);
         questions.push({
           id: i,
           category: 'vocabulary',
@@ -192,8 +208,8 @@ function generateVocabQuestions(lessons: VocabLesson[], count: number): Question
           correctIndex: opts.indexOf(fb.answer),
         });
       } else {
-        const distractors = pickDistractors(w.word, wordPool, 3);
-        const opts = shuffle([w.word, ...distractors]);
+        const distractors = pickDistractors(w.word, wordPool, 3, random);
+        const opts = shuffle([w.word, ...distractors], random);
         questions.push({
           id: i,
           category: 'vocabulary',
@@ -208,8 +224,12 @@ function generateVocabQuestions(lessons: VocabLesson[], count: number): Question
   return questions;
 }
 
-function generateGrammarQuestions(quizzes: GrammarQuiz[], count: number): Question[] {
-  const selected = pickRandom(quizzes, count);
+function generateGrammarQuestions(
+  quizzes: GrammarQuiz[],
+  count: number,
+  random: () => number,
+): Question[] {
+  const selected = pickRandom(quizzes, count, random);
   return selected.map((q, i) => ({
     id: 1000 + i,
     category: 'grammar' as const,
@@ -219,22 +239,26 @@ function generateGrammarQuestions(quizzes: GrammarQuiz[], count: number): Questi
   }));
 }
 
-export async function generateTestQuestions(lang: string, type: TestType): Promise<Question[]> {
+export async function generateTestQuestions(
+  lang: string,
+  type: TestType,
+  random: () => number = Math.random,
+): Promise<Question[]> {
   const counts = QUESTION_COUNTS[type];
   const questions: Question[] = [];
 
   if (counts.vocab > 0) {
     const lessons = await fetchVocabLessons(lang);
-    questions.push(...generateVocabQuestions(lessons, counts.vocab));
+    questions.push(...generateVocabQuestions(lessons, counts.vocab, random));
   }
 
   if (counts.grammar > 0) {
     const quizzes = await fetchGrammarQuizzes(lang);
-    questions.push(...generateGrammarQuestions(quizzes, counts.grammar));
+    questions.push(...generateGrammarQuestions(quizzes, counts.grammar, random));
   }
 
   // Re-assign IDs after combining and shuffling
-  const shuffled = shuffle(questions);
+  const shuffled = shuffle(questions, random);
   return shuffled.map((q, i) => ({ ...q, id: i }));
 }
 
@@ -253,7 +277,7 @@ export async function generateTestQuestions(lang: string, type: TestType): Promi
 //   2. Every generated question carries the `lessonId` it came from.
 
 /** A cap so an enormous range (most of a course) can't generate an unbounded quiz. */
-const MAX_RANGE_QUESTIONS = 40;
+const MAX_RANGE_QUESTIONS = MAX_TEST_OUT_LESSONS;
 /** Five checks make an 80% pass meaningful while keeping each lesson bounded. */
 const RANGE_QUESTIONS_PER_LESSON = 5;
 

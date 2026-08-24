@@ -1,6 +1,7 @@
 import type { StudyActivity } from '../lib/activities';
 import Dexie, { type EntityTable } from 'dexie';
 import { CURRENT_SCHEMA_VERSION, DB_NAME } from './constants';
+import type { LearningPathActivityKind } from '../types/learning-path';
 
 export interface Word {
   id?: number;
@@ -141,6 +142,17 @@ export interface Snapshot {
   sizeBytes: number;
 }
 
+export interface GuidedActivityProgress {
+  id: string; // `${language}/${milestoneId}`
+  language: string;
+  milestoneId: string;
+  activity: LearningPathActivityKind;
+  completedAt: string | null;
+  attempts: number;
+  itemsCompleted: number;
+  bestScore?: number;
+}
+
 const db = new Dexie(DB_NAME) as Dexie & {
   words: EntityTable<Word, 'id'>;
   reviews: EntityTable<Review, 'id'>;
@@ -154,6 +166,7 @@ const db = new Dexie(DB_NAME) as Dexie & {
   badges: EntityTable<Badge, 'id'>;
   reviewLog: EntityTable<ReviewLogEntry, 'id'>;
   snapshots: EntityTable<Snapshot, 'id'>;
+  guidedActivityProgress: EntityTable<GuidedActivityProgress, 'id'>;
 };
 
 db.version(1).stores({
@@ -289,6 +302,21 @@ db.version(9).stores({
     });
 });
 
+db.version(10).stores({
+  words: '++id, [language+createdAt], [word+language], language, word, createdAt, *tags, type',
+  reviews: '++id, [wordId+nextReviewDate], wordId, nextReviewDate',
+  texts: '++id, language, createdAt',
+  studySessions: '++id, startTime, activity',
+  settings: 'key',
+  dailyActivity: 'date, goalMet, challengeComplete',
+  lessonProgress: 'id, language, lessonId',
+  characterProgress: 'id, language, mastery',
+  testHistory: '++id, language, type, score, date',
+  badges: 'id, unlockedAt',
+  reviewLog: '++id, reviewId, wordId, isLapse, [language+date], date',
+  snapshots: '++id, createdAt',
+});
+
 db.version(CURRENT_SCHEMA_VERSION).stores({
   words: '++id, [language+createdAt], [word+language], language, word, createdAt, *tags, type',
   reviews: '++id, [wordId+nextReviewDate], wordId, nextReviewDate',
@@ -302,6 +330,7 @@ db.version(CURRENT_SCHEMA_VERSION).stores({
   badges: 'id, unlockedAt',
   reviewLog: '++id, reviewId, wordId, isLapse, [language+date], date',
   snapshots: '++id, createdAt',
+  guidedActivityProgress: 'id, language, milestoneId, activity, completedAt',
 });
 
 /** Schema version the running bundle expects. Snapshots record it so a restore

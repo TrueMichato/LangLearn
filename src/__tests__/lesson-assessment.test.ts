@@ -5,6 +5,7 @@ import {
   passesAssessment,
   scorePercent,
 } from '../lib/lesson-assessment';
+import { MAX_TEST_OUT_LESSONS } from '../lib/lesson-assessment-limits';
 
 const lessons = [
   { id: 'l1' },
@@ -51,6 +52,73 @@ describe('computeTestOutRange', () => {
 
   it('returns null for an empty lesson track', () => {
     expect(computeTestOutRange([], new Set(), 'l1')).toBeNull();
+  });
+
+  it('uses an explicit path-ordered lesson set without filling index gaps', () => {
+    expect(
+      computeTestOutRange(lessons, new Set(), 'l4', ['l2', 'l1', 'l4']),
+    ).toEqual(['l2', 'l1', 'l4']);
+  });
+
+  it('starts an explicit set at its first incomplete lesson', () => {
+    expect(
+      computeTestOutRange(
+        lessons,
+        new Set(['l1']),
+        'l4',
+        ['l1', 'l2', 'l4'],
+      ),
+    ).toEqual(['l2', 'l4']);
+  });
+
+  it.each([
+    ['unknown lesson', ['l1', 'missing', 'l4']],
+    ['duplicate lesson', ['l1', 'l1', 'l4']],
+    ['wrong endpoint', ['l1', 'l2']],
+  ])('rejects an explicit set with an %s', (_label, requested) => {
+    expect(computeTestOutRange(lessons, new Set(), 'l4', requested)).toBeNull();
+  });
+
+  it('rejects contiguous and explicit ranges that cannot fit one question per lesson', () => {
+    const oversized = Array.from(
+      { length: MAX_TEST_OUT_LESSONS + 1 },
+      (_, index) => ({ id: `lesson-${index + 1}` }),
+    );
+    const ids = oversized.map((lesson) => lesson.id);
+
+    expect(
+      computeTestOutRange(
+        oversized,
+        new Set(),
+        ids[ids.length - 1],
+      ),
+    ).toBeNull();
+    expect(
+      computeTestOutRange(
+        oversized,
+        new Set(),
+        ids[ids.length - 1],
+        ids,
+      ),
+    ).toBeNull();
+  });
+
+  it('allows the remaining part of a long explicit range once it fits', () => {
+    const oversized = Array.from(
+      { length: MAX_TEST_OUT_LESSONS + 5 },
+      (_, index) => ({ id: `lesson-${index + 1}` }),
+    );
+    const ids = oversized.map((lesson) => lesson.id);
+    const completed = new Set(ids.slice(0, 5));
+
+    expect(
+      computeTestOutRange(
+        oversized,
+        completed,
+        ids[ids.length - 1],
+        ids,
+      ),
+    ).toHaveLength(MAX_TEST_OUT_LESSONS);
   });
 });
 

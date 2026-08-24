@@ -26,19 +26,39 @@ export const RO_LEARNING_PATH = defineLearningPath({
       id: 'new-things',
       title: 'New people and things',
       description: 'Introduce someone or something for the first time.',
-      lessons: [vocab('body'), grammar('indefinite-article'), vocab('house')],
+      lessons: [
+        vocab('body'),
+        grammar('indefinite-article'),
+        vocab('house'),
+      ],
     },
     {
-      id: 'one-and-many',
-      title: 'One and many',
-      description: 'Build plural nouns around school, work, and transport.',
-      lessons: [vocab('school-work'), grammar('plurals'), vocab('transport')],
-    },
-    {
-      id: 'being-having',
-      title: 'Being and having',
-      description: 'Use a fi and a avea in practical daily situations.',
-      lessons: [vocab('weather'), grammar('present-a-fi-avea'), vocab('shopping')],
+      id: 'nouns-and-verbs',
+      title: 'Nouns and core verbs',
+      description:
+        'Practice plural nouns and essential verbs in either order. Both paths support fuller everyday sentences.',
+      strands: [
+        {
+          id: 'one-and-many',
+          title: 'One and many',
+          description: 'Build plural nouns around school, work, and transport.',
+          lessons: [
+            vocab('school-work'),
+            grammar('plurals'),
+            vocab('transport'),
+          ],
+        },
+        {
+          id: 'being-having',
+          title: 'Being and having',
+          description: 'Use a fi and a avea in practical daily situations.',
+          lessons: [
+            vocab('weather'),
+            grammar('present-a-fi-avea'),
+            vocab('shopping'),
+          ],
+        },
+      ],
     },
     {
       id: 'everyday-actions',

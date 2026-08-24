@@ -1,8 +1,19 @@
 import { describe, expect, it } from 'vitest';
 import { getAlphabetsForLanguage } from '../data/alphabets';
 import { LEARNING_PATHS } from '../data/learning-paths';
+import {
+  defineLearningPath,
+  grammar,
+  unitLessons,
+  vocab,
+} from '../data/learning-paths/shared';
 import { resolveLearningPath } from '../lib/learning-path';
+import { activity } from '../data/learning-paths/shared';
 import type { LessonProgress } from '../db/schema';
+import type {
+  LearningPathActivityKind,
+  LearningPathManifest,
+} from '../types/learning-path';
 
 interface LessonMeta {
   id: string;
@@ -46,7 +57,7 @@ function manifestLessons(
 ) {
   return [
     ...(manifest.letterUnitLessons ?? []),
-    ...manifest.units.flatMap((unit) => unit.lessons),
+    ...manifest.units.flatMap(unitLessons),
   ];
 }
 
@@ -81,8 +92,9 @@ describe('learning path manifests', () => {
         ).toBe(true);
       }
       for (const unit of manifest.units) {
-        expect(unit.lessons.length).toBeGreaterThan(0);
-        for (const lesson of unit.lessons) {
+        const lessons = unitLessons(unit);
+        expect(lessons.length).toBeGreaterThan(0);
+        for (const lesson of lessons) {
           const key = `${lesson.kind}:${lesson.lessonId}`;
           expect(seen.has(key)).toBe(false);
           seen.add(key);
@@ -145,7 +157,32 @@ describe('learning path manifests', () => {
     },
   );
 
-  it('places Russian alphabet sounds in the script unit before regular lessons', () => {
+  const curriculumBranches = [
+    ['ja', 'everyday-foundations', ['Time and actions', 'People and things']],
+    ['ru', 'foundations', ['Sound and rhythm', 'People and things']],
+    ['ar', 'sounds-and-time', ['Hear and count', 'Read and tell time']],
+    ['es', 'expanding-actions', ['More actions', 'Being and being there']],
+    ['pt', 'expanding-actions', ['More actions', 'Being and being there']],
+    ['ro', 'nouns-and-verbs', ['One and many', 'Being and having']],
+  ] as const;
+
+  it.each(curriculumBranches)(
+    '%s includes a meaningful %s fork',
+    (language, unitId, strandTitles) => {
+      const unit = LEARNING_PATHS[language].units.find(
+        (candidate) => candidate.id === unitId,
+      );
+
+      expect(unit?.strands?.map((strand) => strand.title)).toEqual(
+        strandTitles,
+      );
+      expect(
+        unit?.strands?.every((strand) => strand.lessons.length > 0),
+      ).toBe(true);
+    },
+  );
+
+  it('offers Russian letter practice and alphabet sounds together', () => {
     const manifest = LEARNING_PATHS.ru;
     const path = resolveLearningPath(
       manifest,
@@ -155,7 +192,7 @@ describe('learning path manifests', () => {
       },
       {
         progress: [],
-        completedLetters: new Set(manifest.letterPrerequisites),
+        completedLetters: new Set(),
       },
     );
 
@@ -165,7 +202,16 @@ describe('learning path manifests', () => {
       'Cyrillic (Lowercase)',
       'The Russian Alphabet & Sounds',
     ]);
-    expect(path.units[0].nodes[2].state).toBe('available');
+    expect(path.units[0].strands.map((strand) => strand.title)).toEqual([
+      'Practice the letters',
+      'Hear the sounds',
+    ]);
+    expect(path.units[0].nodes.map((node) => node.state)).toEqual([
+      'available',
+      'locked',
+      'available',
+    ]);
+    expect(path.recommendedNodeId).toBe('letters:Cyrillic (Uppercase)');
     expect(path.units[0].checkpoints[0]).toMatchObject({
       kind: 'grammar',
       lessonIds: ['alphabet-sounds'],
@@ -179,7 +225,7 @@ describe('learning path manifests', () => {
     );
   });
 
-  it('counts Russian alphabet sounds as ahead progress inside the script unit', () => {
+  it('treats completed alphabet sounds as current strand progress, not ahead work', () => {
     const manifest = LEARNING_PATHS.ru;
     const path = resolveLearningPath(
       manifest,
@@ -198,7 +244,32 @@ describe('learning path manifests', () => {
       title: 'The Russian Alphabet & Sounds',
       state: 'completed',
     });
-    expect(path.completedAheadCount).toBe(1);
+    expect(path.units[0].nodes[1].state).toBe('locked');
+    expect(path.completedAheadCount).toBe(0);
+  });
+
+  it('keeps First steps locked until letter practice and alphabet sounds are complete', () => {
+    const manifest = LEARNING_PATHS.ru;
+    const content = {
+      grammar: indexFor(GRAMMAR_INDEXES, 'ru'),
+      vocab: indexFor(VOCAB_INDEXES, 'ru'),
+    };
+    const withLettersOnly = resolveLearningPath(manifest, content, {
+      progress: [],
+      completedLetters: new Set(manifest.letterPrerequisites),
+    });
+    const withBothStrands = resolveLearningPath(manifest, content, {
+      progress: [progress('alphabet-sounds', 'ru')],
+      completedLetters: new Set(manifest.letterPrerequisites),
+    });
+
+    expect(
+      withLettersOnly.units[1].nodes.every(
+        (node) => node.state === 'locked',
+      ),
+    ).toBe(true);
+    expect(withLettersOnly.recommendedNodeId).toBe('grammar:alphabet-sounds');
+    expect(withBothStrands.recommendedNodeId).toBe('vocab:greetings');
   });
 });
 
@@ -218,7 +289,12 @@ describe('resolveLearningPath', () => {
 
     expect(nodes[0].kind).toBe('letters');
     expect(nodes[0].state).toBe('available');
-    expect(nodes.slice(1).every((node) => node.state === 'locked')).toBe(true);
+    expect(
+      nodes
+        .slice(1)
+        .filter((node) => node.requirement !== 'enrichment')
+        .every((node) => node.state === 'locked'),
+    ).toBe(true);
     expect(
       path.units
         .flatMap((unit) => unit.checkpoints)
@@ -238,11 +314,16 @@ describe('resolveLearningPath', () => {
     const lessonNodes = nodes.filter((node) => node.kind !== 'letters');
 
     expect(lessonNodes[0].state).toBe('available');
-    expect(lessonNodes.slice(1).every((node) => node.state === 'locked')).toBe(true);
+    expect(
+      lessonNodes
+        .slice(1)
+        .filter((node) => node.requirement !== 'enrichment')
+        .every((node) => node.state === 'locked'),
+    ).toBe(true);
     const firstUnit = path.units.find((unit) => unit.id === manifest.units[0].id);
     expect(firstUnit?.checkpoints.map((checkpoint) => checkpoint.route)).toEqual([
-      '/vocab-lessons?testOut=numbers&from=learn',
-      '/grammar?testOut=particles&from=learn',
+      '/vocab-lessons?testOut=numbers&from=learn&testOutLesson=greetings&testOutLesson=numbers',
+      '/grammar?testOut=particles&from=learn&testOutLesson=particles',
     ]);
     expect(
       firstUnit?.checkpoints.every((checkpoint) => checkpoint.state === 'available'),
@@ -260,6 +341,7 @@ describe('resolveLearningPath', () => {
 
   it('advances to one next node while preserving completed history', () => {
     const firstUnit = manifest.units[0];
+    if (!firstUnit.lessons) throw new Error('Expected a linear first unit');
     const completedProgress = firstUnit.lessons.slice(0, 2).map((lesson) =>
       progress(
         lesson.kind === 'vocab'
@@ -304,17 +386,84 @@ describe('resolveLearningPath', () => {
     });
     const option = path.testOutOptions.find(
       (candidate) =>
-        candidate.unitId === 'everyday-time' &&
+        candidate.unitId === 'everyday-foundations' &&
         candidate.kind === 'grammar',
     );
 
     expect(option).toMatchObject({
-      lessonCount: 2,
+      lessonCount: 3,
       firstLessonTitle: 'Basic Particles (は、が、を、に、で)',
-      lastLessonTitle: 'Verb Forms (ます、て、た)',
+      lastLessonTitle: 'Adjective Types (い vs な adjectives)',
       state: 'available',
     });
   });
+
+  it.each([
+    ['ja', 'everyday-foundations'],
+    ['ru', 'foundations'],
+    ['ar', 'sounds-and-time'],
+    ['es', 'expanding-actions'],
+    ['pt', 'expanding-actions'],
+    ['ro', 'nouns-and-verbs'],
+  ] as const)(
+    'opens both %s curriculum strands together and rejoins before the next unit',
+    (language, unitId) => {
+      const branchManifest = LEARNING_PATHS[language];
+      const branchIndex = branchManifest.units.findIndex(
+        (unit) => unit.id === unitId,
+      );
+      const beforeBranch = [
+        ...(branchManifest.letterUnitLessons ?? []),
+        ...branchManifest.units
+          .slice(0, branchIndex)
+          .flatMap(unitLessons),
+      ];
+      const branchLessons = unitLessons(branchManifest.units[branchIndex]);
+      const toProgress = (lesson: (typeof branchLessons)[number]) =>
+        progress(
+          lesson.kind === 'vocab'
+            ? `vocab/${lesson.lessonId}`
+            : lesson.lessonId,
+          language,
+        );
+      const branchContent = {
+        grammar: indexFor(GRAMMAR_INDEXES, language),
+        vocab: indexFor(VOCAB_INDEXES, language),
+      };
+      const atFork = resolveLearningPath(branchManifest, branchContent, {
+        progress: beforeBranch.map(toProgress),
+        completedLetters: new Set(branchManifest.letterPrerequisites),
+      });
+      const fork = atFork.units.find((unit) => unit.id === unitId);
+
+      expect(
+        fork?.strands.map((strand) =>
+          strand.nodes.filter((node) => node.state === 'available').length,
+        ),
+      ).toEqual([1, 1]);
+      expect(
+        fork?.strands.map((strand) => strand.nodes[0].id),
+      ).toContain(atFork.recommendedNodeId);
+      expect(
+        atFork.units[branchIndex + (branchManifest.letterPrerequisites.length > 0 ? 1 : 0) + 1]
+          ?.nodes.every((node) => node.state === 'locked'),
+      ).toBe(true);
+
+      const afterFork = resolveLearningPath(branchManifest, branchContent, {
+        progress: [...beforeBranch, ...branchLessons].map(toProgress),
+        completedLetters: new Set(branchManifest.letterPrerequisites),
+      });
+      const resolvedForkIndex = afterFork.units.findIndex(
+        (unit) => unit.id === unitId,
+      );
+      const nextUnit = afterFork.units[resolvedForkIndex + 1];
+
+      expect(nextUnit.nodes[0].state).toBe('available');
+      expect(nextUnit.nodes.slice(1).every((node) => node.state === 'locked')).toBe(
+        true,
+      );
+    },
+  );
 });
 
 describe('resolveLearningPath completedAheadCount', () => {
@@ -333,21 +482,393 @@ describe('resolveLearningPath completedAheadCount', () => {
     expect(path.completedAheadCount).toBe(0);
   });
 
-  it('is zero once every node on the path is complete', () => {
-    const allLessons = manifest.units.flatMap((unit) => unit.lessons);
-    const completedProgress = allLessons.map((lesson) =>
-      progress(
-        lesson.kind === 'vocab' ? `vocab/${lesson.lessonId}` : lesson.lessonId,
-      ),
+  describe('resolveLearningPath activity milestones', () => {
+    const sentence = activity(
+      'sentence',
+      'foundations-1',
+      'Build foundation sentences',
+      '/sentence-builder',
+      { minItems: 5, targetItems: 10, maxItems: 20 },
+      'enrichment',
     );
+    const manifest: LearningPathManifest = {
+      language: 'es',
+      letterPrerequisites: [],
+      units: [
+        {
+          id: 'foundations',
+          title: 'Foundations',
+          description: 'Start here.',
+          lessons: [sentence, { kind: 'grammar', lessonId: 'g1' }],
+        },
+        {
+          id: 'next',
+          title: 'Next',
+          description: 'Keep going.',
+          lessons: [{ kind: 'vocab', lessonId: 'v1' }],
+        },
+      ],
+    };
+    const content = {
+      grammar: [{ id: 'g1', title: 'Grammar one' }],
+      vocab: [{ id: 'v1', title: 'Vocabulary one' }],
+    };
+
+    it('keeps enrichment available without taking the required recommendation', () => {
+      const path = resolveLearningPath(manifest, content, {
+        progress: [],
+        completedLetters: new Set(),
+      });
+      const [enrichment, required, next] = path.units.flatMap(
+        (unit) => unit.nodes,
+      );
+
+      expect(enrichment).toMatchObject({
+        id: 'sentence:foundations-1',
+        milestoneId: 'sentence:foundations-1',
+        state: 'available',
+        requirement: 'enrichment',
+      });
+      expect(required).toMatchObject({
+        state: 'available',
+        requirement: 'required',
+      });
+      expect(path.recommendedNodeId).toBe('grammar:g1');
+      expect(next.state).toBe('locked');
+      expect(path.totalCount).toBe(2);
+      expect(path.enrichmentTotalCount).toBe(1);
+    });
+
+    it('does not let incomplete enrichment block the following unit', () => {
+      const path = resolveLearningPath(manifest, content, {
+        progress: [progress('g1', 'es')],
+        completedLetters: new Set(),
+      });
+      const nodes = path.units.flatMap((unit) => unit.nodes);
+
+      expect(nodes.find((node) => node.id === sentence.lessonId)?.state).toBe(
+        'available',
+      );
+      expect(nodes.find((node) => node.id === 'vocab:v1')).toMatchObject({
+        state: 'available',
+      });
+      expect(path.recommendedNodeId).toBe('vocab:v1');
+    });
+
+    it('recognises durable activity completion', () => {
+      const path = resolveLearningPath(manifest, content, {
+        progress: [],
+        completedLetters: new Set(),
+        activityProgress: [
+          {
+            id: `es/${sentence.lessonId}`,
+            language: 'es',
+            milestoneId: sentence.lessonId,
+            activity: 'sentence',
+            completedAt: '2026-01-01T00:00:00.000Z',
+            attempts: 1,
+            itemsCompleted: 10,
+          },
+        ],
+      });
+
+      expect(path.units[0].nodes[0]).toMatchObject({
+        state: 'completed',
+        milestoneId: sentence.lessonId,
+        session: { targetItems: 10 },
+      });
+      expect(path.enrichmentCompletedCount).toBe(1);
+    });
+
+    it('opens a parallel unit together but keeps one required recommendation', () => {
+      const parallelManifest: LearningPathManifest = {
+        language: 'es',
+        letterPrerequisites: [],
+        units: [
+          {
+            id: 'parallel',
+            title: 'Parallel practice',
+            description: 'Choose either track.',
+            strands: [
+              {
+                id: 'grammar',
+                title: 'Grammar',
+                description: 'Grammar strand.',
+                lessons: [{ kind: 'grammar', lessonId: 'g1' }],
+              },
+              {
+                id: 'vocab',
+                title: 'Vocabulary',
+                description: 'Vocabulary strand.',
+                lessons: [{ kind: 'vocab', lessonId: 'v1' }],
+              },
+            ],
+          },
+        ],
+      };
+      const path = resolveLearningPath(parallelManifest, content, {
+        progress: [],
+        completedLetters: new Set(),
+      });
+
+      expect(path.units[0].nodes.map((node) => node.state)).toEqual([
+        'available',
+        'available',
+      ]);
+      expect(path.recommendedNodeId).toBe('grammar:g1');
+    });
+  });
+
+  it('is zero once every node on the path is complete', () => {
+    const unresolved = resolveLearningPath(manifest, content, {
+      progress: [],
+      completedLetters: new Set(),
+    });
+    const completedProgress = unresolved.units
+      .flatMap((unit) => unit.nodes)
+      .filter((node) => node.kind === 'grammar' || node.kind === 'vocab')
+      .map((node) => progress(node.lessonId));
+    const activityProgress = unresolved.units
+      .flatMap((unit) => unit.nodes)
+      .filter(
+        (node) =>
+          node.kind !== 'letters' &&
+          node.kind !== 'grammar' &&
+          node.kind !== 'vocab',
+      )
+      .map((node) => ({
+        id: `ja/${node.milestoneId}`,
+        language: 'ja',
+        milestoneId: node.milestoneId!,
+        activity: node.kind as LearningPathActivityKind,
+        completedAt: '2026-08-21T00:00:00.000Z',
+        attempts: 1,
+        itemsCompleted: node.session?.targetItems ?? 1,
+      }));
     const path = resolveLearningPath(manifest, content, {
       progress: completedProgress,
       completedLetters: new Set(manifest.letterPrerequisites),
+      activityProgress,
     });
 
     expect(path.completedCount).toBe(path.totalCount);
     expect(path.completedAheadCount).toBe(0);
   });
+
+    describe('parallel learning path units', () => {
+      const manifest = LEARNING_PATHS.ru;
+      const content = {
+        grammar: indexFor(GRAMMAR_INDEXES, 'ru'),
+        vocab: indexFor(VOCAB_INDEXES, 'ru'),
+      };
+      const beforeFork = [
+        progress('alphabet-sounds', 'ru'),
+        progress('vocab/greetings', 'ru'),
+        progress('pronunciation-rules', 'ru'),
+        progress('vocab/numbers', 'ru'),
+      ];
+      const completedLetters = new Set(manifest.letterPrerequisites);
+
+      it('offers one lesson in each strand while recommending only the first', () => {
+        const path = resolveLearningPath(manifest, content, {
+          progress: beforeFork,
+          completedLetters,
+        });
+        const foundations = path.units.find((unit) => unit.id === 'foundations');
+        const available = foundations?.nodes.filter(
+          (node) => node.state === 'available',
+        );
+
+        expect(foundations?.strands.map((strand) => strand.title)).toEqual([
+          'Sound and rhythm',
+          'People and things',
+        ]);
+        expect(available?.map((node) => node.id)).toEqual([
+          'vocab:days-months',
+          'vocab:family',
+        ]);
+        expect(path.recommendedNodeId).toBe('vocab:days-months');
+        expect(
+          path.units
+            .find((unit) => unit.id === 'food-cases')
+            ?.nodes.every((node) => node.state === 'locked'),
+        ).toBe(true);
+        expect(path.completedAheadCount).toBe(0);
+      });
+
+      it('advances strands independently without treating current branch work as ahead', () => {
+        const path = resolveLearningPath(manifest, content, {
+          progress: [
+            ...beforeFork,
+            progress('vocab/days-months', 'ru'),
+            progress('vocab/family', 'ru'),
+          ],
+          completedLetters,
+        });
+        const foundations = path.units.find((unit) => unit.id === 'foundations');
+
+        expect(
+          foundations?.nodes
+            .filter((node) => node.state === 'available')
+            .map((node) => node.id),
+        ).toEqual(['grammar:stress', 'grammar:spelling-rules']);
+        expect(path.recommendedNodeId).toBe('grammar:stress');
+        expect(path.completedAheadCount).toBe(0);
+      });
+
+      it('keeps the join locked until every strand is complete', () => {
+        const path = resolveLearningPath(manifest, content, {
+          progress: [
+            ...beforeFork,
+            progress('vocab/days-months', 'ru'),
+            progress('stress', 'ru'),
+            progress('vocab/colors', 'ru'),
+          ],
+          completedLetters,
+        });
+
+        expect(path.recommendedNodeId).toBe('vocab:family');
+        expect(
+          path.units
+            .find((unit) => unit.id === 'food-cases')
+            ?.nodes.every((node) => node.state === 'locked'),
+        ).toBe(true);
+      });
+
+      it('rejoins after every strand and unlocks one next lesson', () => {
+        const path = resolveLearningPath(manifest, content, {
+          progress: [
+            ...beforeFork,
+            progress('vocab/days-months', 'ru'),
+            progress('stress', 'ru'),
+            progress('vocab/colors', 'ru'),
+            progress('vocab/family', 'ru'),
+            progress('spelling-rules', 'ru'),
+            progress('vocab/animals', 'ru'),
+          ],
+          completedLetters,
+        });
+        const food = path.units.find((unit) => unit.id === 'food-cases');
+
+        expect(path.recommendedNodeId).toBe('vocab:food');
+        expect(food?.nodes[0].state).toBe('available');
+        expect(food?.nodes.slice(1).every((node) => node.state === 'locked')).toBe(
+          true,
+        );
+      });
+
+      it('counts a completed locked branch lesson as ahead progress', () => {
+        const path = resolveLearningPath(manifest, content, {
+          progress: [...beforeFork, progress('vocab/animals', 'ru')],
+          completedLetters,
+        });
+
+        expect(path.completedAheadCount).toBe(1);
+        expect(path.recommendedNodeId).toBe('vocab:days-months');
+      });
+
+      it('does not unlock past a fully completed future unit when an earlier unit is incomplete', () => {
+        const path = resolveLearningPath(manifest, content, {
+          progress: [
+            ...beforeFork,
+            progress('vocab/food', 'ru'),
+            progress('cases', 'ru'),
+            progress('vocab/body', 'ru'),
+          ],
+          completedLetters,
+        });
+
+        expect(path.recommendedNodeId).toBe('vocab:days-months');
+        expect(
+          path.units
+            .find((unit) => unit.id === 'actions')
+            ?.nodes.every((node) => node.state === 'locked'),
+        ).toBe(true);
+      });
+
+      it('builds deterministic cumulative checks across both strands', () => {
+        const path = resolveLearningPath(manifest, content, {
+          progress: beforeFork,
+          completedLetters,
+        });
+        const checkpoints = path.units.find(
+          (unit) => unit.id === 'foundations',
+        )?.checkpoints;
+
+        expect(checkpoints).toEqual(
+          expect.arrayContaining([
+            expect.objectContaining({
+              kind: 'vocab',
+              lessonIds: ['days-months', 'colors', 'family', 'animals'],
+              state: 'available',
+              route:
+                '/vocab-lessons?testOut=animals&from=learn&testOutLesson=days-months&testOutLesson=colors&testOutLesson=family&testOutLesson=animals',
+            }),
+            expect.objectContaining({
+              kind: 'grammar',
+              lessonIds: ['stress', 'spelling-rules'],
+              state: 'available',
+            }),
+          ]),
+        );
+      });
+    });
+
+    describe('defineLearningPath parallel-unit validation', () => {
+      it('rejects a parallel unit with fewer than two strands', () => {
+        expect(() =>
+          defineLearningPath({
+            language: 'xx',
+            letterPrerequisites: [],
+            units: [
+              {
+                id: 'fork',
+                title: 'Fork',
+                description: 'Invalid fork.',
+                strands: [
+                  {
+                    id: 'only',
+                    title: 'Only',
+                    description: 'Only strand.',
+                    lessons: [vocab('one')],
+                  },
+                ],
+              },
+            ],
+          }),
+        ).toThrow('must contain at least two strands');
+      });
+
+      it('rejects duplicate lessons across strands', () => {
+        expect(() =>
+          defineLearningPath({
+            language: 'xx',
+            letterPrerequisites: [],
+            units: [
+              {
+                id: 'fork',
+                title: 'Fork',
+                description: 'Invalid fork.',
+                strands: [
+                  {
+                    id: 'one',
+                    title: 'One',
+                    description: 'First strand.',
+                    lessons: [grammar('shared')],
+                  },
+                  {
+                    id: 'two',
+                    title: 'Two',
+                    description: 'Second strand.',
+                    lessons: [grammar('shared')],
+                  },
+                ],
+              },
+            ],
+          }),
+        ).toThrow('repeats lesson grammar:shared');
+      });
+    });
 
   it('counts a single future vocab lesson finished while letters are still current, without moving the current step or unlocking anything', () => {
     const path = resolveLearningPath(manifest, content, {
@@ -361,7 +882,12 @@ describe('resolveLearningPath completedAheadCount', () => {
 
     expect(path.completedAheadCount).toBe(1);
     expect(katakana?.state).toBe('available');
-    expect(nodes.filter((node) => node.state === 'available')).toHaveLength(1);
+    expect(
+      nodes.filter(
+        (node) =>
+          node.state === 'available' && node.requirement !== 'enrichment',
+      ),
+    ).toHaveLength(1);
     expect(greetings?.state).toBe('completed');
     expect(particles?.state).toBe('locked');
   });
