@@ -126,7 +126,13 @@ describe('curriculum classification policy', () => {
       dialects: ['egyptian'],
     });
     expect(AR_DIALECT_GRAMMAR['egyptian-basics']).toEqual(['egyptian']);
-    expect(AR_DIALECT_GRAMMAR['dialect-comparison']).toBe('shared');
+    expect(AR_DIALECT_GRAMMAR['dialect-comparison']).toEqual([]);
+    expect(AR_DIALECT_GRAMMAR['dialect-pronouns-verbs']).toEqual([
+      'egyptian',
+      'levantine',
+      'maghrebi',
+    ]);
+    expect(AR_DIALECT_GRAMMAR['dialect-negation']).not.toContain('iraqi');
 
     const colloquialGrammarIds = indexFor(GRAMMAR_INDEXES, 'ar')
       .filter((entry) => entry.group === '🗣️ Colloquial & Dialects')

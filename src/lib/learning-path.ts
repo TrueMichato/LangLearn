@@ -28,6 +28,7 @@ import {
   vocabLessonRoute,
   vocabTestOutRoute,
 } from './routes';
+import { MAX_TEST_OUT_LESSONS } from './lesson-assessment-limits';
 import { guidedActivityRoute } from './guided-practice';
 import {
   composeComprehensiveLearningPath,
@@ -213,7 +214,7 @@ export function resolveLearningPath(
       ),
     ] as Array<'grammar' | 'vocab'>;
 
-    return kinds.map((kind) => {
+    return kinds.flatMap((kind) => {
       const lessons = encounteredLessons[kind];
       const target = lessons[lessons.length - 1];
       const firstIncompleteIndex = lessons.findIndex(
@@ -223,6 +224,7 @@ export function resolveLearningPath(
         firstIncompleteIndex === -1
           ? []
           : lessons.slice(firstIncompleteIndex);
+      if (assessmentRange.length > MAX_TEST_OUT_LESSONS) return [];
       const lessonId =
         kind === 'vocab'
           ? target.lessonId.replace(/^vocab\//, '')
@@ -232,7 +234,7 @@ export function resolveLearningPath(
           ? node.lessonId.replace(/^vocab\//, '')
           : node.lessonId,
       );
-      return {
+      return [{
         kind,
         lessonId,
         route:
@@ -251,7 +253,7 @@ export function resolveLearningPath(
         firstLessonTitle: assessmentRange[0]?.title ?? target.title,
         lastLessonTitle:
           assessmentRange[assessmentRange.length - 1]?.title ?? target.title,
-      };
+      }];
     });
   };
 

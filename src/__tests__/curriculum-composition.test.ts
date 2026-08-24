@@ -12,6 +12,7 @@ import {
   type CurriculumLanguage,
 } from '../lib/curriculum-policy';
 import { parseGuidedPracticeQuery } from '../lib/guided-practice';
+import { MAX_TEST_OUT_LESSONS } from '../lib/lesson-assessment-limits';
 import { resolveLearningPath } from '../lib/learning-path';
 import type {
   ArabicDialect,
@@ -193,6 +194,27 @@ describe('comprehensive curriculum composition', () => {
     },
   );
 
+  it('keeps Iraqi comparison-only and unsupported dialect grammar optional', () => {
+    const iraqi = new Map(
+      lessonRefs('ar', 'iraqi').map((ref) => [
+        `${ref.kind}:${ref.lessonId}`,
+        ref,
+      ]),
+    );
+
+    expect(iraqi.get('grammar:dialect-future-continuous')?.requirement).toBe(
+      'required',
+    );
+    for (const lessonId of [
+      'msa-vs-dialects',
+      'dialect-comparison',
+      'dialect-pronouns-verbs',
+      'dialect-negation',
+    ]) {
+      expect(iraqi.get(`grammar:${lessonId}`)?.requirement).toBe('enrichment');
+    }
+  });
+
   it.each(CURRICULUM_LANGUAGES)(
     'recurs every supported %s activity with valid deterministic descriptors',
     (language) => {
@@ -260,6 +282,11 @@ describe('comprehensive curriculum composition', () => {
             .filter((ref) => ref.requirement !== 'enrichment')
             .some((ref) => ref.lessonId === lessonId),
         ),
+      ),
+    ).toBe(true);
+    expect(
+      path.testOutOptions.every(
+        (checkpoint) => checkpoint.lessonCount <= MAX_TEST_OUT_LESSONS,
       ),
     ).toBe(true);
   });

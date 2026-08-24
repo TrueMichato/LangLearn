@@ -148,7 +148,7 @@ export default function PathTestOutPanel({
                   index === 0
                     ? 'Start small'
                     : index === presets.length - 1
-                      ? 'Everything remaining'
+                      ? 'Go furthest'
                       : 'Go a little further';
                 return (
                   <button

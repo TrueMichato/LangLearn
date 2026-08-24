@@ -123,6 +123,11 @@ export default function VocabLessons() {
       }
       return a.order - b.order;
     });
+  const completedVocabIds = new Set(
+    [...progress.values()]
+      .filter((item) => item.completed)
+      .map((item) => item.lessonId.replace(/^vocab\//, '')),
+  );
 
   const exitToLessons = () => {
     navigate(
@@ -155,12 +160,9 @@ export default function VocabLessons() {
   }
 
   if (testOutTarget && !loading && progressLanguage === selectedLang) {
-    const completedIds = new Set(
-      [...progress.values()].filter((p) => p.completed).map((p) => p.lessonId.replace(/^vocab\//, '')),
-    );
     const range = computeTestOutRange(
       visibleLessons,
-      completedIds,
+      completedVocabIds,
       testOutTarget,
       requestedTestOutLessons,
     );
@@ -283,6 +285,12 @@ export default function VocabLessons() {
           <div className="space-y-3">
             {visibleLessons.map((lesson, idx) => {
               const lp = progress.get(`vocab/${lesson.id}`);
+              const canTestOut =
+                computeTestOutRange(
+                  visibleLessons,
+                  completedVocabIds,
+                  lesson.id,
+                ) !== null;
               // Lock relative to the visible (dialect-filtered, colloquial-sorted) list
               const prevLesson = idx > 0 ? visibleLessons[idx - 1] : null;
               const isLocked =
@@ -340,7 +348,7 @@ export default function VocabLessons() {
                       </div>
                     </div>
                   </button>
-                  {!lp?.completed && (
+                  {canTestOut && !lp?.completed && (
                     <button
                       onClick={() =>
                         navigate(

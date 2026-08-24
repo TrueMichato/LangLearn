@@ -5,6 +5,7 @@ import {
   hasBlank,
   type GrammarCardSource,
 } from './grammar-cards';
+import { MAX_TEST_OUT_LESSONS } from './lesson-assessment-limits';
 
 export type TestType = 'vocabulary' | 'grammar' | 'mixed' | 'full';
 
@@ -276,7 +277,7 @@ export async function generateTestQuestions(
 //   2. Every generated question carries the `lessonId` it came from.
 
 /** A cap so an enormous range (most of a course) can't generate an unbounded quiz. */
-const MAX_RANGE_QUESTIONS = 40;
+const MAX_RANGE_QUESTIONS = MAX_TEST_OUT_LESSONS;
 /** Five checks make an 80% pass meaningful while keeping each lesson bounded. */
 const RANGE_QUESTIONS_PER_LESSON = 5;
 

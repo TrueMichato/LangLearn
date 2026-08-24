@@ -7,6 +7,7 @@ import LessonAssessment from '../components/assessment/LessonAssessment';
 import { getLessonProgress } from '../db/lessons';
 import type { LessonProgress } from '../db/schema';
 import { SkeletonList } from '../components/common/Skeleton';
+import { JA_CORE_GRAMMAR_IDS } from '../lib/curriculum-policy';
 import { computeTestOutRange } from '../lib/lesson-assessment';
 import {
   LESSON_ORIGIN_QUERY_PARAM,
@@ -48,6 +49,13 @@ export default function GrammarPage() {
   const requestedLessonId = searchParams.get(LESSON_QUERY_PARAM);
   const displayedLessonId = activeLessonId ?? requestedLessonId;
   const loading = loadedLanguage !== selectedLang;
+  const grammarTestOutLessons =
+    selectedLang === 'ja'
+      ? lessons.filter((lesson) => JA_CORE_GRAMMAR_IDS.has(lesson.id))
+      : lessons;
+  const grammarTestOutLessonIds = new Set(
+    grammarTestOutLessons.map((lesson) => lesson.id),
+  );
 
   // Load lesson progress whenever language changes or returning from a lesson
   useEffect(() => {
@@ -114,21 +122,18 @@ export default function GrammarPage() {
   }
 
   if (testOutTarget && !loading && progressLanguage === selectedLang) {
-    // Imported Tofugu references are supplemental. Native lessons form the
-    // ordered test-out track even when their index uses curriculum groups.
-    const originalLessons = lessons.filter((l) => l.source !== 'tofugu');
     const completedIds = new Set(
       [...progress.values()].filter((p) => p.completed).map((p) => p.lessonId),
     );
     const range = computeTestOutRange(
-      originalLessons,
+      grammarTestOutLessons,
       completedIds,
       testOutTarget,
       requestedTestOutLessons,
     );
     if (range && range.length > 0) {
       const titleById = new Map(lessons.map((l) => [l.id, l.title]));
-      const targetIndex = originalLessons.findIndex(
+      const targetIndex = grammarTestOutLessons.findIndex(
         (lesson) => lesson.id === testOutTarget,
       );
       return (
@@ -146,7 +151,7 @@ export default function GrammarPage() {
           failActionLabel={
             assessmentFromLearn ? 'Back to path' : 'Study the lessons'
           }
-          nextLessonTitle={originalLessons[targetIndex + 1]?.title}
+          nextLessonTitle={grammarTestOutLessons[targetIndex + 1]?.title}
         />
       );
     }
@@ -215,6 +220,11 @@ export default function GrammarPage() {
               const originalLessons = lessons.filter((l) => !l.group);
               const groupedLessons = lessons.filter((l) => l.group);
               const groups = [...new Set(groupedLessons.map((l) => l.group!))];
+              const completedIds = new Set(
+                [...progress.values()]
+                  .filter((item) => item.completed)
+                  .map((item) => item.lessonId),
+              );
 
               const toggleGroup = (group: string) => {
                 setCollapsedGroups((prev) => {
@@ -227,6 +237,13 @@ export default function GrammarPage() {
 
               const renderLesson = (lesson: LessonMeta, locked: boolean, showTestOut: boolean) => {
                 const lp = progress.get(lesson.id);
+                const canTestOut =
+                  showTestOut &&
+                  computeTestOutRange(
+                    grammarTestOutLessons,
+                    completedIds,
+                    lesson.id,
+                  ) !== null;
                 return (
                   <div key={lesson.id}>
                     <button
@@ -270,7 +287,7 @@ export default function GrammarPage() {
                         </div>
                       </div>
                     </button>
-                    {showTestOut && !lp?.completed && (
+                    {canTestOut && !lp?.completed && (
                       <button
                         onClick={() =>
                           navigate(
@@ -338,7 +355,11 @@ export default function GrammarPage() {
                         {!isCollapsed && (
                           <div className="space-y-3 mt-2">
                             {groupLessons.map((lesson) =>
-                              renderLesson(lesson, false, !isTofuguGroup),
+                              renderLesson(
+                                lesson,
+                                false,
+                                grammarTestOutLessonIds.has(lesson.id),
+                              ),
                             )}
                           </div>
                         )}

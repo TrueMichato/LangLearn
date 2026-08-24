@@ -9,6 +9,8 @@
  * that pin the 80% boundary.
  */
 
+import { MAX_TEST_OUT_LESSONS } from './lesson-assessment-limits';
+
 export type AssessmentTrack = 'grammar' | 'vocab';
 
 /** Minimum score (inclusive) a test-out attempt must reach to pass. */
@@ -16,6 +18,10 @@ export const PASS_THRESHOLD_PERCENT = 80;
 
 export interface OrderedLessonRef {
   id: string;
+}
+
+function supportedRange(lessonIds: string[]): string[] | null {
+  return lessonIds.length <= MAX_TEST_OUT_LESSONS ? lessonIds : null;
 }
 
 /**
@@ -65,7 +71,9 @@ export function computeTestOutRange(
     const fromIndex = requestedLessonIds.findIndex(
       (lessonId) => !completedIds.has(lessonId),
     );
-    return fromIndex === -1 ? null : requestedLessonIds.slice(fromIndex);
+    return fromIndex === -1
+      ? null
+      : supportedRange(requestedLessonIds.slice(fromIndex));
   }
 
   const uptoIndex = lessons.findIndex((lesson) => lesson.id === uptoLessonId);
@@ -75,7 +83,9 @@ export function computeTestOutRange(
   if (fromIndex === -1) return null;
   if (uptoIndex < fromIndex) return null;
 
-  return lessons.slice(fromIndex, uptoIndex + 1).map((lesson) => lesson.id);
+  return supportedRange(
+    lessons.slice(fromIndex, uptoIndex + 1).map((lesson) => lesson.id),
+  );
 }
 
 /** Round a raw correct/total tally to the nearest whole percent. */
