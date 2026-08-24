@@ -166,20 +166,18 @@ function topicLabel(title: string): string {
   return `${shortened.slice(0, wordBoundary > 18 ? wordBoundary : 28).trim()}…`;
 }
 
-function generatedUnitTitle(batch: readonly ClassifiedLesson[]): string {
-  const grammarTopic = batch.find((lesson) => lesson.kind === 'grammar');
-  const vocabTopic = batch.find((lesson) => lesson.kind === 'vocab');
-  const topics = [grammarTopic, vocabTopic]
-    .filter((lesson): lesson is ClassifiedLesson => lesson != null)
-    .map((lesson) => topicLabel(lesson.entry.title))
-    .filter(
-      (topic, index, allTopics) =>
-        allTopics.findIndex(
-          (candidate) => candidate.toLowerCase() === topic.toLowerCase(),
-        ) === index,
-    );
-  if (topics.length > 1) return topics.join(' · ');
-  return `${topics[0] ?? 'Language'} practice`;
+function generatedUnitTitle(
+  batch: readonly ClassifiedLesson[],
+  phaseTitle: string,
+): string {
+  const lesson =
+    batch.find((candidate) => candidate.kind === 'vocab') ?? batch[0];
+  const phase = topicLabel(phaseTitle);
+  const topic = lesson ? topicLabel(lesson.entry.title) : 'Language practice';
+  if (phase.toLowerCase() === topic.toLowerCase()) {
+    return `${topic} practice`;
+  }
+  return `${phase} · ${topic}`;
 }
 
 function phaseBoundaryIndex(
@@ -239,20 +237,26 @@ function coreUnits(
   language: CurriculumLanguage,
   lessons: readonly ClassifiedLesson[],
   continuation: readonly LearningPathContinuationPhaseStart[],
+  phases: readonly LearningPathPhase[],
 ): LearningPathUnitManifest[] {
   return batches(lessons, CORE_BATCH_SIZE).map((batch, index) => {
     const id = generatedUnitId('core', batch);
+    const phaseId = phaseIdForBatch(
+      lessons,
+      Math.min(lessons.length - 1, (index + 1) * CORE_BATCH_SIZE - 1),
+      continuation,
+    );
+    const phaseTitle =
+      phases.find((phase) => phase.id === phaseId)?.title ??
+      phases[0]?.title ??
+      'Language practice';
     return {
       id,
-      title: generatedUnitTitle(batch),
+      title: generatedUnitTitle(batch, phaseTitle),
       description:
         'Alternate lesson work with a short guided practice session.',
       presentation: 'continuation',
-      phaseId: phaseIdForBatch(
-        lessons,
-        Math.min(lessons.length - 1, (index + 1) * CORE_BATCH_SIZE - 1),
-        continuation,
-      ),
+      phaseId,
       lessons: [
         ...batch.map(toLessonRef),
         ...practiceRefsForUnit(language, id, index),
@@ -358,6 +362,7 @@ export function composeComprehensiveLearningPath(
     manifest.language,
     requiredCore,
     phasePlan?.continuation ?? [],
+    phasePlan?.phases ?? [],
   );
   if (
     manifest.language === 'ar' &&

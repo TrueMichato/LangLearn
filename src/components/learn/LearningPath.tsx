@@ -10,6 +10,7 @@ import type { LearningPath as LearningPathModel } from '../../types/learning-pat
 import { isRTL } from '../../lib/rtl';
 import { ROUTES } from '../../lib/routes';
 import { shouldCompactContinuationUnit } from '../../lib/path-unit-presentation';
+import { activePathUnitId } from '../../lib/path-scroll-context';
 import PathNode from './PathNode';
 import PathTestOutPanel from './PathTestOutPanel';
 
@@ -19,6 +20,24 @@ interface Props {
 }
 
 type PathView = 'current' | 'full';
+const FULL_PATH_GUIDE_DISMISSED_KEY =
+  'langlearn-full-path-guide-dismissed';
+const VIEW_CONTEXT_OFFSET = 64;
+
+function requiredNodes(
+  unit: LearningPathModel['units'][number],
+): LearningPathModel['units'][number]['nodes'] {
+  return unit.nodes.filter(
+    (node) => (node.requirement ?? 'required') === 'required',
+  );
+}
+
+function requiredUnitComplete(
+  unit: LearningPathModel['units'][number],
+): boolean {
+  const nodes = requiredNodes(unit);
+  return nodes.length > 0 && nodes.every((node) => node.state === 'completed');
+}
 
 export default function LearningPath({ path, focusCurrent = false }: Props) {
   const complete = path.completedCount === path.totalCount;
@@ -33,6 +52,12 @@ export default function LearningPath({ path, focusCurrent = false }: Props) {
   const anchorTopBeforeExpansion = useRef<number | null>(null);
   const navigationFrameRef = useRef<number | null>(null);
   const [announcement, setAnnouncement] = useState('');
+  const [viewedUnitId, setViewedUnitId] = useState<string | null>(null);
+  const [fullPathGuideDismissed, setFullPathGuideDismissed] = useState(
+    () =>
+      typeof window === 'undefined' ||
+      window.localStorage.getItem(FULL_PATH_GUIDE_DISMISSED_KEY) === 'true',
+  );
   const [viewState, setViewState] = useState<{
     language: string;
     view: PathView;
@@ -71,14 +96,26 @@ export default function LearningPath({ path, focusCurrent = false }: Props) {
   const landmarkUnit = currentUnit ?? (complete ? requiredUnits.at(-1) : undefined);
   const landmarkUnitId = landmarkUnit?.id;
   const landmarkPhase = landmarkUnit ? phaseForUnit(landmarkUnit) : phases[0];
-  const landmarkPhaseIndex = Math.max(
-    0,
-    phases.findIndex((phase) => phase.id === landmarkPhase.id),
-  );
   const landmarkRequiredUnitIndex = Math.max(
     0,
     requiredUnits.findIndex((unit) => unit.id === landmarkUnitId),
   );
+  const viewedUnit =
+    requiredUnits.find((unit) => unit.id === viewedUnitId) ?? landmarkUnit;
+  const viewedPhase = viewedUnit ? phaseForUnit(viewedUnit) : landmarkPhase;
+  const viewedPhaseIndex = Math.max(
+    0,
+    phases.findIndex((phase) => phase.id === viewedPhase.id),
+  );
+  const viewedPhaseUnits = requiredUnits.filter(
+    (unit) => phaseForUnit(unit).id === viewedPhase.id,
+  );
+  const viewedUnitInPhaseIndex = Math.max(
+    0,
+    viewedPhaseUnits.findIndex((unit) => unit.id === viewedUnit?.id),
+  );
+  const previousPhase = phases[viewedPhaseIndex - 1];
+  const nextPhase = phases[viewedPhaseIndex + 1];
   const previousUnits =
     currentUnitIndex > 0
       ? requiredUnits.slice(0, currentUnitIndex)
@@ -154,6 +191,70 @@ export default function LearningPath({ path, focusCurrent = false }: Props) {
     fullPathJumpRef.current?.focus({ preventScroll: true });
   }, [landmarkUnitId, path.language, showFullPath]);
 
+  useEffect(() => {
+    if (!showFullPath) return;
+
+    const section = sectionRef.current;
+    if (!section) return;
+    const unitElements = Array.from(
+      section.querySelectorAll<HTMLElement>('[data-path-unit-id]'),
+    );
+    const observedElements = Array.from(
+      section.querySelectorAll<HTMLElement>(
+        '[data-path-unit-id], [data-path-phase]',
+      ),
+    );
+    let scrollFrame: number | null = null;
+
+    const updateViewedContext = () => {
+      scrollFrame = null;
+      const activationLine =
+        (stickyToolbarRef.current?.getBoundingClientRect().bottom ?? 0) +
+        VIEW_CONTEXT_OFFSET;
+      setViewedUnitId(
+        activePathUnitId(
+          unitElements.map((element) => {
+            const rect = element.getBoundingClientRect();
+            return {
+              id: element.dataset.pathUnitId ?? '',
+              top: rect.top,
+              bottom: rect.bottom,
+            };
+          }),
+          activationLine,
+        ),
+      );
+    };
+    const scheduleUpdate = () => {
+      if (scrollFrame != null) return;
+      scrollFrame = window.requestAnimationFrame(updateViewedContext);
+    };
+
+    scheduleUpdate();
+    window.addEventListener('scroll', scheduleUpdate, { passive: true });
+    window.addEventListener('resize', scheduleUpdate);
+    const observer =
+      'IntersectionObserver' in window
+        ? new IntersectionObserver(scheduleUpdate, {
+            rootMargin: '0px 0px -60% 0px',
+            threshold: [0, 1],
+          })
+        : null;
+    observedElements.forEach((element) => observer?.observe(element));
+
+    return () => {
+      if (scrollFrame != null) window.cancelAnimationFrame(scrollFrame);
+      window.removeEventListener('scroll', scheduleUpdate);
+      window.removeEventListener('resize', scheduleUpdate);
+      observer?.disconnect();
+    };
+  }, [
+    landmarkUnitId,
+    path.language,
+    requiredUnits.length,
+    showFullPath,
+  ]);
+
   useEffect(
     () => () => {
       if (navigationFrameRef.current != null) {
@@ -171,6 +272,7 @@ export default function LearningPath({ path, focusCurrent = false }: Props) {
     const anchor = landmarkUnitRef.current ?? completionSummaryRef.current;
     anchorTopBeforeExpansion.current =
       anchor?.getBoundingClientRect().top ?? null;
+    setViewedUnitId(landmarkUnitId ?? null);
     setViewState({ language: path.language, view: 'full' });
     setAnnouncement(
       `Full path shown. ${requiredUnits.length} units. ${
@@ -200,6 +302,7 @@ export default function LearningPath({ path, focusCurrent = false }: Props) {
   function jumpToLandmark() {
     const target = landmarkHeadingRef.current;
     if (!target) return;
+    setViewedUnitId(landmarkUnitId ?? null);
     target.focus({ preventScroll: true });
     target.scrollIntoView({
       behavior: reducedMotion() ? 'auto' : 'smooth',
@@ -214,6 +317,10 @@ export default function LearningPath({ path, focusCurrent = false }: Props) {
     const phase = phases.find((item) => item.id === phaseId);
     const target = phaseHeadingRefs.current.get(phaseId);
     if (!phase || !target) return;
+    const firstUnit = requiredUnits.find(
+      (unit) => phaseForUnit(unit).id === phaseId,
+    );
+    setViewedUnitId(firstUnit?.id ?? null);
     target.focus({ preventScroll: true });
     target.scrollIntoView({
       behavior: reducedMotion() ? 'auto' : 'smooth',
@@ -222,25 +329,26 @@ export default function LearningPath({ path, focusCurrent = false }: Props) {
     setAnnouncement(`Moved to ${phase.title}.`);
   }
 
+  function dismissFullPathGuide() {
+    setFullPathGuideDismissed(true);
+    window.localStorage.setItem(FULL_PATH_GUIDE_DISMISSED_KEY, 'true');
+  }
+
   function renderUnit(
     unit: LearningPathModel['units'][number],
     unitIndex: number,
   ) {
     const UnitHeading = showFullPath ? 'h5' : 'h4';
     const StrandHeading = showFullPath ? 'h6' : 'h5';
-    const requiredNodes = unit.nodes.filter(
-      (node) => (node.requirement ?? 'required') === 'required',
-    );
+    const requiredNodesInUnit = requiredNodes(unit);
     const recommendedNode = unit.nodes.find(
       (node) => node.id === path.recommendedNodeId,
     );
-    const hasLockedSteps = requiredNodes.some(
+    const hasLockedSteps = requiredNodesInUnit.some(
       (node) => node.state === 'locked',
     );
-    const unitComplete = requiredNodes.every(
-      (node) => node.state === 'completed',
-    );
-    const completedRequired = requiredNodes.filter(
+    const unitComplete = requiredUnitComplete(unit);
+    const completedRequired = requiredNodesInUnit.filter(
       (node) => node.state === 'completed',
     ).length;
     const isLandmark = unit.id === landmarkUnitId;
@@ -258,6 +366,10 @@ export default function LearningPath({ path, focusCurrent = false }: Props) {
       0,
       phases.findIndex((item) => item.id === phase.id),
     );
+    const phaseUnits = requiredUnits.filter(
+      (item) => phaseForUnit(item).id === phase.id,
+    );
+    const completedPhaseUnits = phaseUnits.filter(requiredUnitComplete).length;
     const lessonCount = unit.nodes.filter(
       (node) => node.kind === 'grammar' || node.kind === 'vocab',
     ).length;
@@ -326,12 +438,16 @@ export default function LearningPath({ path, focusCurrent = false }: Props) {
               }}
               id={`path-phase-${phase.id}`}
               tabIndex={-1}
-              className="scroll-mt-[calc(var(--shell-header-height)+8.5rem)] text-base font-semibold text-slate-800 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 dark:text-slate-100"
+              className="scroll-mt-[calc(var(--shell-header-height)+12rem)] text-base font-semibold text-slate-800 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 dark:text-slate-100"
             >
               {phase.title}
             </h4>
             <p className="mt-1 text-sm text-slate-500 dark:text-slate-400">
               {phase.description}
+            </p>
+            <p className="mt-2 text-xs font-medium text-slate-600 dark:text-slate-300">
+              {completedPhaseUnits} of {phaseUnits.length}{' '}
+              {phaseUnits.length === 1 ? 'unit' : 'units'} complete
             </p>
           </div>
         )}
@@ -341,6 +457,7 @@ export default function LearningPath({ path, focusCurrent = false }: Props) {
         data-path-landmark={isLandmark ? true : undefined}
         data-path-presentation={unit.presentation ?? 'standard'}
         data-path-density={compactContinuation ? 'compact' : 'standard'}
+        data-path-unit-id={unit.id}
         aria-labelledby={`path-unit-${unit.id}`}
         className={`${compactContinuation ? 'px-4 py-3' : 'p-4'} ${
           unitIndex > 0 && !startsPhase
@@ -355,7 +472,7 @@ export default function LearningPath({ path, focusCurrent = false }: Props) {
             tabIndex={isLandmark ? -1 : undefined}
             className={`font-semibold text-slate-800 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 dark:text-slate-100 ${
               showFullPath
-                ? 'scroll-mt-[calc(var(--shell-header-height)+8.5rem)]'
+                ? 'scroll-mt-[calc(var(--shell-header-height)+12rem)]'
                 : 'scroll-mt-[calc(var(--shell-header-height)+4rem)]'
             } ${
               compactContinuation ? 'text-sm' : 'text-base'
@@ -395,7 +512,7 @@ export default function LearningPath({ path, focusCurrent = false }: Props) {
                 compactContinuation ? '' : 'mt-1'
               }`}
             >
-              {completedRequired} of {requiredNodes.length} complete
+              {completedRequired} of {requiredNodesInUnit.length} complete
             </p>
             {visualFork && !compactContinuation && (
               <svg
@@ -542,60 +659,114 @@ export default function LearningPath({ path, focusCurrent = false }: Props) {
       {showFullPath && (
         <div
           ref={stickyToolbarRef}
-          className="sticky top-[var(--shell-header-height)] z-30 -mx-1 mb-3 grid min-h-[60px] grid-cols-[minmax(0,1fr)_auto] items-center gap-2 rounded-xl border border-slate-200/70 bg-slate-50 p-2 shadow-sm dark:border-white/10 dark:bg-slate-900"
+          className="sticky top-[var(--shell-header-height)] z-30 -mx-1 mb-3 grid min-h-[60px] grid-cols-1 items-center gap-2 rounded-xl border border-slate-200/70 bg-slate-50 p-2 shadow-sm sm:grid-cols-[minmax(0,1fr)_auto] dark:border-white/10 dark:bg-slate-900"
           role="group"
           aria-label="Full path controls"
         >
           <span className="min-w-0 px-1">
             <span className="block text-sm font-semibold text-slate-800 dark:text-slate-100">
-              {landmarkPhase.title}
+              Now viewing: {viewedPhase.title}
             </span>
             <span className="block text-xs text-slate-500 dark:text-slate-400">
-              Phase {landmarkPhaseIndex + 1} of {phases.length} · Unit{' '}
-              {landmarkRequiredUnitIndex + 1} of {requiredUnits.length}
+              Phase {viewedPhaseIndex + 1} of {phases.length} · Unit{' '}
+              {viewedUnitInPhaseIndex + 1} of {viewedPhaseUnits.length} in this
+              phase
+            </span>
+            <span className="mt-0.5 block text-xs text-slate-500 dark:text-slate-400">
+              Your position: {landmarkPhase.title} · Unit{' '}
+              {landmarkRequiredUnitIndex + 1}
             </span>
           </span>
-          <span className={`flex shrink-0 gap-1 ${rtl ? 'flex-row-reverse' : ''}`}>
+          <span
+            className={`flex w-full shrink-0 gap-1 sm:w-auto ${
+              rtl ? 'flex-row-reverse' : ''
+            }`}
+          >
             <button
               ref={fullPathJumpRef}
               type="button"
               onClick={jumpToLandmark}
-              className="min-h-[44px] rounded-lg px-2 text-xs font-semibold text-slate-700 hover:bg-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 dark:text-slate-200 dark:hover:bg-slate-800"
+              className="min-h-[44px] flex-1 rounded-lg px-2 text-xs font-semibold text-slate-700 hover:bg-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 sm:flex-none dark:text-slate-200 dark:hover:bg-slate-800"
             >
-              Jump to {complete ? 'latest' : 'current'}
+              Back to your position
             </button>
             <button
               type="button"
               aria-controls="learning-path-units"
               onClick={showCurrentView}
-              className="min-h-[44px] rounded-lg border border-slate-300 bg-white px-2 text-xs font-semibold text-slate-700 hover:bg-slate-100 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 dark:border-slate-600 dark:bg-slate-800 dark:text-slate-200 dark:hover:bg-slate-700"
+              className="min-h-[44px] flex-1 rounded-lg border border-slate-300 bg-white px-2 text-xs font-semibold text-slate-700 hover:bg-slate-100 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 sm:flex-none dark:border-slate-600 dark:bg-slate-800 dark:text-slate-200 dark:hover:bg-slate-700"
             >
               {complete ? 'Show summary' : 'Current only'}
             </button>
           </span>
           {phases.length > 1 && (
-            <label className="col-span-2 grid grid-cols-[auto_minmax(0,1fr)] items-center gap-2 text-xs font-medium text-slate-600 dark:text-slate-300">
-              Jump to phase
-              <select
-                defaultValue=""
-                onChange={(event) => {
-                  jumpToPhase(event.currentTarget.value);
-                  event.currentTarget.value = '';
-                }}
-                className="min-h-[44px] min-w-0 rounded-lg border border-slate-300 bg-white px-3 text-sm text-slate-800 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 dark:border-slate-600 dark:bg-slate-800 dark:text-slate-100"
-              >
-                <option value="" disabled>
-                  Choose a phase
-                </option>
-                {phases.map((phase, index) => (
-                  <option key={phase.id} value={phase.id}>
-                    {index + 1}. {phase.title}
-                  </option>
-                ))}
-              </select>
-            </label>
+            <div className="grid grid-cols-[44px_minmax(0,1fr)_44px] items-center gap-2 sm:col-span-2">
+             <button
+               type="button"
+               disabled={!previousPhase}
+               aria-label={
+                 previousPhase
+                   ? `Previous phase: ${previousPhase.title}`
+                   : 'No previous phase'
+               }
+               onClick={() => previousPhase && jumpToPhase(previousPhase.id)}
+               className="flex min-h-[44px] min-w-[44px] items-center justify-center rounded-lg text-slate-600 hover:bg-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 disabled:cursor-not-allowed disabled:text-slate-300 dark:text-slate-300 dark:hover:bg-slate-800 dark:disabled:text-slate-600"
+             >
+               <span aria-hidden="true">{rtl ? '→' : '←'}</span>
+             </button>
+             <label className="min-w-0">
+               <span className="sr-only">Now viewing phase</span>
+               <select
+                 value={viewedPhase.id}
+                 onChange={(event) => jumpToPhase(event.currentTarget.value)}
+                 className="min-h-[44px] w-full min-w-0 rounded-lg border border-slate-300 bg-white px-3 text-sm text-slate-800 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 dark:border-slate-600 dark:bg-slate-800 dark:text-slate-100"
+               >
+                 {phases.map((phase, index) => (
+                   <option key={phase.id} value={phase.id}>
+                     {index + 1}. {phase.title}
+                   </option>
+                 ))}
+               </select>
+             </label>
+             <button
+               type="button"
+               disabled={!nextPhase}
+               aria-label={
+                 nextPhase
+                   ? `Next phase: ${nextPhase.title}`
+                   : 'No next phase'
+               }
+               onClick={() => nextPhase && jumpToPhase(nextPhase.id)}
+               className="flex min-h-[44px] min-w-[44px] items-center justify-center rounded-lg text-slate-600 hover:bg-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 disabled:cursor-not-allowed disabled:text-slate-300 dark:text-slate-300 dark:hover:bg-slate-800 dark:disabled:text-slate-600"
+             >
+               <span aria-hidden="true">{rtl ? '←' : '→'}</span>
+             </button>
+            </div>
           )}
         </div>
+      )}
+
+      {showFullPath && !fullPathGuideDismissed && (
+        <aside
+          aria-label="About Full path"
+          className="mb-3 flex items-start gap-3 rounded-2xl border border-slate-200/70 bg-white p-4 dark:border-white/10 dark:bg-slate-800"
+        >
+          <p className="flex-1 text-sm leading-relaxed text-slate-600 dark:text-slate-300">
+            <span className="font-semibold text-slate-800 dark:text-slate-100">
+             Explore at your pace.
+            </span>{' '}
+            Replay completed lessons, preview what is ahead, move by phase, or
+            return to your position whenever you are ready to continue.
+          </p>
+          <button
+            type="button"
+            onClick={dismissFullPathGuide}
+            aria-label="Dismiss Full path guide"
+            className="-m-2 flex min-h-[44px] min-w-[44px] shrink-0 items-center justify-center rounded-lg text-slate-500 hover:bg-slate-100 hover:text-slate-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 dark:text-slate-400 dark:hover:bg-slate-700 dark:hover:text-slate-200"
+          >
+            <span aria-hidden="true">×</span>
+          </button>
+        </aside>
       )}
 
       {previousUnits.length > 0 && !complete && !showFullPath && (
@@ -640,14 +811,14 @@ export default function LearningPath({ path, focusCurrent = false }: Props) {
                 <p className="mt-1 text-sm text-slate-500 dark:text-slate-400">
                   {complete
                     ? 'Every lesson stays open whenever you want to revisit it.'
-                    : `Jump back to ${landmarkName} when you're ready to keep learning.`}
+                    : `Return to ${landmarkName} when you're ready to keep learning.`}
                 </p>
                 <button
                   type="button"
                   onClick={jumpToLandmark}
                   className="mt-2 min-h-[44px] rounded-xl px-2 text-sm font-medium text-indigo-600 hover:bg-indigo-50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 dark:text-indigo-300 dark:hover:bg-indigo-950/40"
                 >
-                  Back to {complete ? 'latest' : 'current'}
+                  Back to your position
                 </button>
               </div>
             )}

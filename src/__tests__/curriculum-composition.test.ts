@@ -280,10 +280,17 @@ describe('comprehensive curriculum composition', () => {
         (item): item is LearningPathLessonRef =>
           item.kind === 'grammar' || item.kind === 'vocab',
       );
+      const phaseTitle = composed.phases?.find(
+        (phase) => phase.id === unit.phaseId,
+      )?.title;
       expect(unit.title).not.toMatch(/^Build on\b/);
       expect(unit.title.length).toBeLessThanOrEqual(64);
       const topics = unit.title.split(' · ').map((topic) => topic.toLowerCase());
       expect(new Set(topics).size).toBe(topics.length);
+      expect(phaseTitle).toBeDefined();
+      expect(unit.title).toMatch(
+        new RegExp(`^${phaseTitle?.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')} · `),
+      );
       expect(unit.title).not.toBe(
         firstLesson
           ? titleByLesson.get(`${firstLesson.kind}:${firstLesson.lessonId}`)
