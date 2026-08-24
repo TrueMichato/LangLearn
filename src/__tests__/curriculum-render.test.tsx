@@ -78,7 +78,7 @@ describe('CurriculumOutline', () => {
     );
 
     expect(html).toContain('Course outline');
-    expect(html).toContain('Current unit · 1 of 3 required steps');
+    expect(html).toContain('Current unit · 1 of 3 path steps');
     expect(html).toContain('aria-expanded="true"');
     expect(html).toContain('aria-expanded="false"');
     expect(html.match(/aria-controls=/g)).toHaveLength(1);
@@ -174,7 +174,9 @@ describe('CurriculumOutline', () => {
     expect(html).toContain('Sound and rhythm');
     expect(html).toContain('People and things');
     expect(html).toContain('Also available');
-    expect(html).toContain('These strands are both required');
+    expect(html).toContain(
+      'Both strands are part of the main path, but either can come first.',
+    );
     expect(html.match(/aria-current="step"/g)).toHaveLength(1);
   });
 

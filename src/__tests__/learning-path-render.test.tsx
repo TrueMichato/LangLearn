@@ -8,6 +8,8 @@ const PATH: LearningPathModel = {
   language: 'ja',
   completedCount: 1,
   totalCount: 4,
+  enrichmentCompletedCount: 0,
+  enrichmentTotalCount: 2,
   completedAheadCount: 0,
   recommendedNodeId: 'vocab:greetings',
   testOutOptions: [
@@ -130,19 +132,15 @@ describe('LearningPath', () => {
     expect(html).toContain('aria-current="step"');
     expect(html).toContain('Basic Particles. Grammar. Locked.');
     expect(html).toContain('First steps · 1 of 3 steps complete');
-    expect(html).toContain('Core path');
-    expect(html).toContain('1 of 4 required');
-    expect(html).toContain('Up next');
     expect(html).toContain('Coming next');
     expect(html).toContain('Later');
-    expect(html).toContain('Browse course outline');
-    expect(html).toContain('aria-label="Path view"');
+    expect(html).toContain('Explore optional practice');
     expect(html).toContain('aria-controls="learning-path-units"');
-    expect(html).toContain('aria-pressed="true"');
-    expect(html).toContain('aria-pressed="false"');
-    expect(html).toContain('Current unit');
     expect(html).toContain('Full path');
-    expect(html).toContain('A focused view of what to do now.');
+    expect(html).toContain(
+      'Show full path to revisit completed units and preview what is ahead',
+    );
+    expect(html).not.toContain('1 of 4 required');
     expect(html).not.toContain('Future Grammar');
     expect(html).toContain(
       'Complete Greetings &amp; Introductions to unlock the next lesson.',
@@ -447,11 +445,6 @@ describe('LearningPath completed-ahead acknowledgment', () => {
 
     expect(html).toContain("You&#x27;ve already finished 1 lesson ahead of this step.");
     expect(html).not.toContain('1 lessons ahead');
-    expect(html).toContain('Browse course outline');
-    const [href] = html.match(/href="[^"]*"/g)?.filter((link) =>
-      link.includes('/learn/curriculum'),
-    ) ?? [];
-    expect(href).toBeDefined();
     // Ahead completions never move the current step or unlock anything: the
     // learner is still on Katakana, and the not-yet-guided unit isn't
     // rendered as if it were unlocked.
@@ -482,6 +475,7 @@ describe('LearningPath completed-ahead acknowledgment', () => {
       ...LETTERS_CURRENT_PATH,
       language: 'ar',
       completedAheadCount: 1,
+      enrichmentTotalCount: 1,
     };
     const html = renderToStaticMarkup(
       <MemoryRouter>
@@ -489,7 +483,7 @@ describe('LearningPath completed-ahead acknowledgment', () => {
       </MemoryRouter>,
     );
 
-    expect(html).toContain('Browse course outline');
+    expect(html).toContain('Explore optional practice');
     expect(html).toContain('←');
     expect(html).not.toContain('→');
   });
@@ -499,6 +493,7 @@ describe('LearningPath completed-ahead acknowledgment', () => {
       ...LETTERS_CURRENT_PATH,
       completedCount: LETTERS_CURRENT_PATH.totalCount,
       completedAheadCount: 3,
+      enrichmentTotalCount: 1,
     };
     const html = renderToStaticMarkup(
       <MemoryRouter>
@@ -507,8 +502,8 @@ describe('LearningPath completed-ahead acknowledgment', () => {
     );
 
     expect(html).not.toContain('finished');
-    expect(html).toContain('Core path complete');
-    expect(html).toContain('Browse course outline');
+    expect(html).toContain('Path complete');
+    expect(html).toContain('Explore optional practice');
     expect(html).not.toContain('aria-current="step"');
     expect(html).toContain('data-path-focus-fallback');
   });
