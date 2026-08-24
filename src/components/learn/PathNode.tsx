@@ -1,8 +1,10 @@
 import { Link } from 'react-router-dom';
-import type {
-  LearningPathNode as LearningPathNodeModel,
-  LearningPathNodeKind,
-} from '../../types/learning-path';
+import {
+  PATH_KIND_DETAILS,
+  pathNodeAccessibleLabel,
+  pathNodeStatus,
+} from '../../lib/path-node-presentation';
+import type { LearningPathNode as LearningPathNodeModel } from '../../types/learning-path';
 
 interface Props {
   node: LearningPathNodeModel;
@@ -13,23 +15,6 @@ interface Props {
   nextPosition?: number;
   rtl?: boolean;
 }
-
-const KIND_DETAILS: Record<LearningPathNodeKind, { emoji: string; label: string }> = {
-  letters: { emoji: '🔤', label: 'Letters' },
-  vocab: { emoji: '📝', label: 'Vocabulary' },
-  grammar: { emoji: '📖', label: 'Grammar' },
-  sentence: { emoji: '🧩', label: 'Sentences' },
-  cloze: { emoji: '✍️', label: 'Cloze' },
-  listening: { emoji: '🎧', label: 'Listening' },
-  dictation: { emoji: '🎙️', label: 'Dictation' },
-  conjugation: { emoji: '🔁', label: 'Conjugation' },
-  translation: { emoji: '🌐', label: 'Translation' },
-  'minimal-pairs': { emoji: '👂', label: 'Minimal pairs' },
-  numbers: { emoji: '🔢', label: 'Numbers' },
-  reading: { emoji: '📚', label: 'Reading' },
-  lyrics: { emoji: '🎵', label: 'Lyrics' },
-  tests: { emoji: '✅', label: 'Test' },
-};
 
 function nodeClasses(
   node: LearningPathNodeModel,
@@ -45,6 +30,9 @@ function nodeClasses(
 
   if (recommended) {
     return `${base} bg-indigo-50 text-indigo-950 hover:bg-indigo-100 dark:bg-indigo-500/10 dark:text-indigo-100 dark:hover:bg-indigo-500/15 press-feedback`;
+  }
+  if (node.requirement === 'enrichment') {
+    return `${base} text-slate-600 hover:bg-slate-50 dark:text-slate-300 dark:hover:bg-slate-700/40 press-feedback`;
   }
   if (node.state === 'available') {
     return `${base} bg-slate-50 text-slate-800 hover:bg-slate-100 dark:bg-slate-700/50 dark:text-slate-100 dark:hover:bg-slate-700 press-feedback`;
@@ -64,12 +52,14 @@ function Marker({
   recommended: boolean;
   compact?: boolean;
 }) {
-  const detail = KIND_DETAILS[node.kind];
+  const detail = PATH_KIND_DETAILS[node.kind];
   const markerClasses =
     recommended
       ? 'bg-indigo-600 text-white shadow-sm'
+      : node.requirement === 'enrichment' && node.state === 'available'
+        ? 'bg-transparent text-slate-500 ring-1 ring-inset ring-slate-200 dark:text-slate-400 dark:ring-slate-600'
       : node.state === 'available'
-        ? 'bg-indigo-50 text-indigo-700 ring-1 ring-inset ring-indigo-200 dark:bg-indigo-500/10 dark:text-indigo-200 dark:ring-indigo-400/30'
+        ? 'bg-slate-100 text-slate-700 ring-1 ring-inset ring-slate-200 dark:bg-slate-700 dark:text-slate-200 dark:ring-slate-600'
       : node.state === 'completed'
         ? 'bg-green-100 text-green-700 dark:bg-green-900/40 dark:text-green-300'
         : 'bg-slate-100 text-slate-500 dark:bg-slate-700 dark:text-slate-400';
@@ -97,7 +87,8 @@ function Body({
   layout: 'winding' | 'branch';
   rtl: boolean;
 }) {
-  const detail = KIND_DETAILS[node.kind];
+  const detail = PATH_KIND_DETAILS[node.kind];
+  const status = pathNodeStatus(node, recommended);
   const labelClasses =
     recommended
       ? 'text-indigo-700 dark:text-indigo-300'
@@ -121,12 +112,7 @@ function Body({
       />
       <span className="min-w-0 flex-1">
         <span className={`block text-xs font-medium ${labelClasses}`}>
-          {detail.label}
-          {recommended
-            ? ' · Up next'
-            : node.state === 'available'
-              ? ' · Also available'
-              : ''}
+          {detail.label} · {status}
         </span>
         <span className={`mt-0.5 block text-sm font-semibold leading-snug ${titleClasses}`}>
           {node.title}
@@ -190,24 +176,27 @@ export default function PathNode({
         </svg>
       )}
       {node.state === 'locked' ? (
-        <button
-          type="button"
-          disabled
+        <div
           className={`${nodeClasses(node, recommended, layout, rtl)} ${positionClass}`}
-          aria-label={`${node.title}, locked`}
         >
-          <Body
-            node={node}
-            recommended={recommended}
-            layout={layout}
-            rtl={rtl}
-          />
-        </button>
+          <span className="sr-only">
+            {pathNodeAccessibleLabel(node, recommended)}
+          </span>
+          <span className="contents" aria-hidden="true">
+            <Body
+              node={node}
+              recommended={recommended}
+              layout={layout}
+              rtl={rtl}
+            />
+          </span>
+        </div>
       ) : (
         <Link
           to={node.route}
           className={`${nodeClasses(node, recommended, layout, rtl)} ${positionClass}`}
           aria-current={recommended ? 'step' : undefined}
+          aria-label={pathNodeAccessibleLabel(node, recommended)}
         >
           <Body
             node={node}

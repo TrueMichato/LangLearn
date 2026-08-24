@@ -287,7 +287,7 @@ export default function MinimalPairsPage() {
           Train your ear to distinguish similar sounds. Listen to a word, then pick which one you heard.
         </p>
 
-        {!isSupported && (
+        {!guided.descriptor && !isSupported && (
           <LanguageUnavailable
             className="mb-4"
             requested={requested}
@@ -298,16 +298,18 @@ export default function MinimalPairsPage() {
           />
         )}
 
-        <LanguagePicker
-          className="mb-4"
-          options={pairLanguages}
-          value={language}
-          onChange={(code) => {
-            setLanguage(code);
-            setSelectedCategories(new Set());
-          }}
-          label="Minimal pair language"
-        />
+        {!guided.descriptor && (
+          <LanguagePicker
+            className="mb-4"
+            options={pairLanguages}
+            value={language}
+            onChange={(code) => {
+              setLanguage(code);
+              setSelectedCategories(new Set());
+            }}
+            label="Minimal pair language"
+          />
+        )}
 
         {/* Category filter */}
         <div className="bg-white dark:bg-slate-800 rounded-2xl shadow p-4 mb-4">
@@ -352,7 +354,7 @@ export default function MinimalPairsPage() {
           Session Complete!
         </h2>
         <div className="bg-white dark:bg-slate-800 rounded-2xl shadow p-6 space-y-3">
-          <div className="text-4xl font-bold text-indigo-600 dark:text-indigo-400">
+          <div className="text-4xl font-bold text-slate-800 dark:text-slate-100">
             {score}/{total}
           </div>
           <p className="text-sm text-slate-500 dark:text-slate-400">correct answers</p>

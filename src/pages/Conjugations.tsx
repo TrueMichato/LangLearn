@@ -389,7 +389,7 @@ export default function ConjugationsPage() {
       </div>
       <GuidedPracticeNotice guided={guided} />
 
-      {!isSupported && (
+      {!guided.descriptor && !isSupported && (
         <LanguageUnavailable
           requested={requested}
           options={supportedActive}
@@ -399,7 +399,7 @@ export default function ConjugationsPage() {
         />
       )}
 
-      {supportedActive.length > 1 && (
+      {!guided.descriptor && supportedActive.length > 1 && (
         <div className="bg-white dark:bg-slate-800 rounded-2xl shadow p-4 space-y-2">
           <label className="text-sm font-medium text-slate-600 dark:text-slate-300">Language</label>
           <LanguagePicker

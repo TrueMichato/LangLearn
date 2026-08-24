@@ -128,9 +128,10 @@ describe('LearningPath', () => {
     );
 
     expect(html).toContain('aria-current="step"');
-    expect(html).toContain('Basic Particles, locked');
-    expect(html).toContain('disabled');
+    expect(html).toContain('Basic Particles. Grammar. Locked.');
     expect(html).toContain('First steps · 1 of 3 steps complete');
+    expect(html).toContain('Core path');
+    expect(html).toContain('1 of 4 required');
     expect(html).toContain('Up next');
     expect(html).toContain('Coming next');
     expect(html).toContain('Later');
@@ -423,6 +424,7 @@ describe('LearningPath completed-ahead acknowledgment', () => {
 
     expect(html).not.toContain('finished');
     expect(html).not.toContain('View in curriculum');
+    expect(html).toContain('aria-current="step"');
   });
 
   it('renders a singular acknowledgment while letters are current and one future vocab lesson is already done', () => {
@@ -498,6 +500,9 @@ describe('LearningPath completed-ahead acknowledgment', () => {
     );
 
     expect(html).not.toContain('finished');
-    expect(html).not.toContain('View in curriculum');
+    expect(html).toContain('Core path complete');
+    expect(html).toContain('View full curriculum');
+    expect(html).not.toContain('aria-current="step"');
+    expect(html).toContain('data-path-focus-fallback');
   });
 });

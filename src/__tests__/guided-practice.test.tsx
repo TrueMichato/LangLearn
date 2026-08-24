@@ -221,6 +221,33 @@ describe('guided activity integration contract', () => {
     expect(hookSource).not.toMatch(/useXPStore|addXP\s*\(/);
   });
 
+  it('keeps guided setup controls from invalidating their own descriptor', () => {
+    for (const file of [
+      'SentenceBuilder.tsx',
+      'ClozePractice.tsx',
+      'TranslationPractice.tsx',
+      'MinimalPairs.tsx',
+      'Conjugations.tsx',
+      'Listening.tsx',
+    ]) {
+      expect(sourceFor(file), file).toContain('!guided.descriptor');
+    }
+    expect(sourceFor('Listening.tsx')).toMatch(
+      /!guided\.descriptor && \(\s*<>\s*<label[^>]*>\s*Mode/s,
+    );
+  });
+
+  it('ends a guided test load failure in a recoverable error state', () => {
+    const testsSource = sourceFor('Tests.tsx');
+    expect(testsSource).toContain("'guided-error'");
+    expect(testsSource).toContain(
+      'qs.length < guided.descriptor.session.minItems',
+    );
+    expect(testsSource).toContain(
+      '<GuidedPracticeError message={guidedLoadError} />',
+    );
+  });
+
   it('renders consistent invalid-link and return-to-path actions', () => {
     const guided = {
       descriptor: descriptor(),
@@ -241,6 +268,7 @@ describe('guided activity integration contract', () => {
 
     expect(html).toContain('Invalid guided step');
     expect(html.match(/Return to learning path/g)).toHaveLength(2);
+    expect(html.match(/href="\/learn"/g)).toHaveLength(2);
     expect(html).toContain('Path step complete.');
     expect(html).toContain('Keep practicing');
   });

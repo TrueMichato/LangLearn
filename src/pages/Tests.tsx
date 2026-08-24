@@ -14,7 +14,7 @@ import {
 } from '../components/learn/GuidedPractice';
 import { createSeededRandom } from '../lib/guided-practice';
 
-type Phase = 'setup' | 'loading' | 'active' | 'results';
+type Phase = 'setup' | 'loading' | 'active' | 'results' | 'guided-error';
 type TimeLimit = 0 | 5 | 10 | 15;
 
 const TEST_LABELS: Record<TestType, string> = {
@@ -51,6 +51,7 @@ export default function TestsPage() {
   const [result, setResult] = useState<TestHistory | null>(null);
   const [xpEarned, setXpEarned] = useState(0);
   const [history, setHistory] = useState<TestHistory[]>([]);
+  const [guidedLoadError, setGuidedLoadError] = useState('');
 
   const timerRef = useRef<ReturnType<typeof setInterval> | null>(null);
   const finishingRef = useRef(false);
@@ -144,6 +145,16 @@ export default function TestsPage() {
     const qs = guided.descriptor
       ? generated.slice(0, guided.descriptor.session.targetItems)
       : generated;
+    if (
+      guided.descriptor &&
+      qs.length < guided.descriptor.session.minItems
+    ) {
+      setGuidedLoadError(
+        'This guided test could not load enough lesson content. Return to your learning path and try again when the content is available.',
+      );
+      setPhase('guided-error');
+      return;
+    }
     if (qs.length === 0) {
       alert('No content available for this language and test type. Try another combination.');
       setPhase('setup');
@@ -154,6 +165,7 @@ export default function TestsPage() {
     setCurrentIndex(0);
     setSelectedOption(null);
     setShowFeedback(false);
+    setGuidedLoadError('');
     setSecondsLeft(timeLimit * 60);
     setStartTime(Date.now());
     setPhase('active');
@@ -202,6 +214,9 @@ export default function TestsPage() {
 
   if (guided.invalidMessage) {
     return <GuidedPracticeError message={guided.invalidMessage} />;
+  }
+  if (phase === 'guided-error') {
+    return <GuidedPracticeError message={guidedLoadError} />;
   }
 
   // ─── SETUP ────────────────────────────────────────────
@@ -369,7 +384,7 @@ export default function TestsPage() {
                 }
               } else {
                 btnClass +=
-                  'border-slate-200 dark:border-white/10 text-slate-700 dark:text-slate-200 hover:border-indigo-400 hover:bg-indigo-50 dark:hover:bg-indigo-900/20';
+                  'border-slate-200 text-slate-700 hover:border-slate-300 hover:bg-slate-50 dark:border-white/10 dark:text-slate-200 dark:hover:border-white/20 dark:hover:bg-slate-700';
               }
 
               return (
@@ -393,7 +408,7 @@ export default function TestsPage() {
         <h2 className="text-lg font-semibold text-slate-700 dark:text-slate-200 mb-4">Test Complete!</h2>
 
         <div className="bg-white dark:bg-slate-800 rounded-2xl shadow p-6 mb-4 text-center">
-          <div className="text-5xl font-bold text-indigo-600 dark:text-indigo-400 mb-2">{result.score}%</div>
+          <div className="mb-2 text-5xl font-bold text-slate-800 dark:text-slate-100">{result.score}%</div>
           <div className={`inline-block text-sm font-semibold px-3 py-1 rounded-full capitalize mb-4 ${levelColor(testLevel.level)}`}>
             {testLevel.label}
           </div>

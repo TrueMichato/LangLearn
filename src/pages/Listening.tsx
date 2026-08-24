@@ -286,7 +286,7 @@ export default function ListeningPage() {
         </h2>
         <GuidedPracticeNotice guided={guided} />
 
-        {!isSupported && (
+        {!guided.descriptor && !isSupported && (
           <LanguageUnavailable
             className="mb-6"
             requested={requested}
@@ -296,7 +296,7 @@ export default function ListeningPage() {
           />
         )}
 
-        {supportedLanguages.length > 1 && (
+        {!guided.descriptor && supportedLanguages.length > 1 && (
           <>
             <label className="block text-sm font-medium text-slate-600 dark:text-slate-300 mb-1">
               Language
@@ -311,28 +311,31 @@ export default function ListeningPage() {
           </>
         )}
 
-        {/* Mode */}
-        <label className="block text-sm font-medium text-slate-600 dark:text-slate-300 mb-1">
-          Mode
-        </label>
-        <div className="flex gap-2 mb-6">
-          {([
-            { key: 'comprehension' as Mode, label: '🎧 Comprehension' },
-            { key: 'dictation' as Mode, label: '✍️ Dictation' },
-          ]).map(({ key, label }) => (
-            <button
-              key={key}
-              onClick={() => setMode(key)}
-              className={`px-4 py-2 min-h-[44px] rounded-xl text-sm font-medium transition-colors min-h-[44px] ${
-                mode === key
-                  ? 'bg-indigo-600 text-white'
-                  : 'bg-slate-100 dark:bg-slate-700 text-slate-700 dark:text-slate-200'
-              }`}
-            >
-              {label}
-            </button>
-          ))}
-        </div>
+        {!guided.descriptor && (
+          <>
+            <label className="block text-sm font-medium text-slate-600 dark:text-slate-300 mb-1">
+              Mode
+            </label>
+            <div className="flex gap-2 mb-6">
+              {([
+                { key: 'comprehension' as Mode, label: '🎧 Comprehension' },
+                { key: 'dictation' as Mode, label: '✍️ Dictation' },
+              ]).map(({ key, label }) => (
+                <button
+                  key={key}
+                  onClick={() => setMode(key)}
+                  className={`px-4 py-2 min-h-[44px] rounded-xl text-sm font-medium transition-colors ${
+                    mode === key
+                      ? 'bg-indigo-600 text-white'
+                      : 'bg-slate-100 dark:bg-slate-700 text-slate-700 dark:text-slate-200'
+                  }`}
+                >
+                  {label}
+                </button>
+              ))}
+            </div>
+          </>
+        )}
 
         {/* Difficulty */}
         <label className="block text-sm font-medium text-slate-600 dark:text-slate-300 mb-1">

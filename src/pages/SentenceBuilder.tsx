@@ -24,6 +24,9 @@ type Difficulty = 'easy' | 'medium' | 'hard' | 'all';
 type Phase = 'setup' | 'session' | 'summary';
 
 const SENTENCES_PER_SESSION = 10;
+const ACTIVE_OPTION_CLASSES = 'bg-indigo-600 text-white';
+const INACTIVE_OPTION_CLASSES =
+  'border border-slate-300 bg-white text-slate-700 dark:border-white/10 dark:bg-slate-700 dark:text-slate-300';
 
 function shuffle<T>(arr: T[]): T[] {
   const a = [...arr];
@@ -110,7 +113,7 @@ export default function SentenceBuilderPage() {
         </div>
         <GuidedPracticeNotice guided={guided} />
 
-        {!isSupported && (
+        {!guided.descriptor && !isSupported && (
           <LanguageUnavailable
             requested={requested}
             options={supportedLanguages}
@@ -119,7 +122,7 @@ export default function SentenceBuilderPage() {
           />
         )}
 
-        {supportedLanguages.length > 1 && (
+        {!guided.descriptor && supportedLanguages.length > 1 && (
           <div>
             <label className="block text-sm font-medium text-slate-600 dark:text-slate-400 mb-1">Language</label>
             <LanguagePicker
@@ -140,7 +143,7 @@ export default function SentenceBuilderPage() {
                 key={m}
                 onClick={() => setMode(m)}
                 className={`px-4 py-2 min-h-[44px] rounded-xl text-sm font-medium transition-colors ${
-                  mode === m ? 'bg-indigo-600 text-white' : 'bg-white dark:bg-slate-700 text-slate-700 dark:text-slate-300 border border-slate-300 dark:border-white/10'
+                  mode === m ? ACTIVE_OPTION_CLASSES : INACTIVE_OPTION_CLASSES
                 }`}
               >
                 {m === 'tiles' ? '🧩 Tiles' : '⌨️ Type'}
@@ -158,7 +161,9 @@ export default function SentenceBuilderPage() {
                 key={d}
                 onClick={() => setDifficulty(d)}
                 className={`px-4 py-2 min-h-[44px] rounded-xl text-sm font-medium capitalize transition-colors ${
-                  difficulty === d ? 'bg-indigo-600 text-white' : 'bg-white dark:bg-slate-700 text-slate-700 dark:text-slate-300 border border-slate-300 dark:border-white/10'
+                  difficulty === d
+                    ? ACTIVE_OPTION_CLASSES
+                    : INACTIVE_OPTION_CLASSES
                 }`}
               >
                 {d}

@@ -17,7 +17,8 @@ export function GuidedPracticeError({ message }: { message: string }) {
         </p>
       </div>
       <Link
-        to={ROUTES.learnCurriculum}
+        to={ROUTES.learn}
+        state={{ focusCurrentPathStep: true }}
         className="inline-flex min-h-[44px] w-full items-center justify-center rounded-xl bg-indigo-600 px-5 py-3 font-semibold text-white transition-colors hover:bg-indigo-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 focus-visible:ring-offset-2 dark:focus-visible:ring-offset-slate-900"
       >
         Return to learning path
@@ -81,7 +82,8 @@ export function GuidedCompletionActions({
         </p>
       </div>
       <Link
-        to={ROUTES.learnCurriculum}
+        to={ROUTES.learn}
+        state={{ focusCurrentPathStep: true }}
         className="inline-flex min-h-[44px] w-full items-center justify-center rounded-xl bg-indigo-600 px-5 py-3 font-semibold text-white transition-colors hover:bg-indigo-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 focus-visible:ring-offset-2 dark:focus-visible:ring-offset-slate-900"
       >
         Return to learning path

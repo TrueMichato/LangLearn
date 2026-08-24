@@ -15,26 +15,29 @@ export default function LearningPath({ path, focusCurrent = false }: Props) {
   const complete = path.completedCount === path.totalCount;
   const rtl = isRTL(path.language);
   const sectionRef = useRef<HTMLElement>(null);
-  const currentUnitIndex = path.units.findIndex((unit) =>
+  const requiredUnits = path.units.filter((unit) =>
+    unit.nodes.some(
+      (node) => (node.requirement ?? 'required') === 'required',
+    ),
+  );
+  const currentUnit = path.units.find((unit) =>
     unit.nodes.some((node) => node.id === path.recommendedNodeId),
   );
-  const currentUnitId = path.units[currentUnitIndex]?.id;
+  const currentUnitIndex = requiredUnits.findIndex(
+    (unit) => unit.id === currentUnit?.id,
+  );
+  const currentUnitId = currentUnit?.id;
   const previousUnits =
     currentUnitIndex > 0
-      ? path.units.slice(0, currentUnitIndex)
-      : currentUnitIndex < 0
-        ? path.units.slice(0, -1)
+      ? requiredUnits.slice(0, currentUnitIndex)
+      : complete
+        ? requiredUnits
         : [];
-  const visibleUnits =
-    currentUnitIndex >= 0
-      ? path.units.slice(currentUnitIndex, currentUnitIndex + 1)
-      : path.units.slice(-1);
+  const visibleUnits = currentUnit ? [currentUnit] : [];
   const futureUnits =
     currentUnitIndex >= 0
-      ? path.units.slice(currentUnitIndex + 1)
+      ? requiredUnits.slice(currentUnitIndex + 1)
       : [];
-  const currentUnit =
-    path.units[currentUnitIndex >= 0 ? currentUnitIndex : path.units.length - 1];
   const currentRequiredNodes =
     currentUnit?.nodes.filter(
       (node) => (node.requirement ?? 'required') === 'required',
@@ -57,6 +60,8 @@ export default function LearningPath({ path, focusCurrent = false }: Props) {
     const frame = window.requestAnimationFrame(() => {
       const current = sectionRef.current?.querySelector<HTMLElement>(
         '[aria-current="step"]',
+      ) ?? sectionRef.current?.querySelector<HTMLElement>(
+        '[data-path-focus-fallback]',
       );
       if (!current) return;
       const reduceMotion = window.matchMedia(
@@ -88,6 +93,11 @@ export default function LearningPath({ path, focusCurrent = false }: Props) {
       (node) => node.state === 'completed',
     );
     const parallel = unit.strands.length > 0;
+    const requiredStrands = unit.strands.filter((strand) =>
+      strand.nodes.some(
+        (node) => (node.requirement ?? 'required') === 'required',
+      ),
+    );
     const visualFork = unit.strands.length === 2;
     const renderNodes = (
       nodes: typeof unit.nodes,
@@ -132,7 +142,9 @@ export default function LearningPath({ path, focusCurrent = false }: Props) {
         {parallel ? (
           <div className="mt-4">
             <p className="text-sm text-slate-600 dark:text-slate-300">
-              Choose either path first. Complete both to continue.
+              {requiredStrands.length > 1
+                ? 'Choose either path first. Complete both to continue.'
+                : 'Follow the core strand, and explore the optional strand whenever you like.'}
             </p>
             {visualFork && (
               <svg
@@ -251,18 +263,43 @@ export default function LearningPath({ path, focusCurrent = false }: Props) {
           </h3>
           <p className="mt-1 text-sm text-slate-500 dark:text-slate-400">
             {complete
-              ? 'You completed every step on this path.'
+              ? 'Every required step is complete. Optional enrichment stays open.'
               : `${currentUnit?.title ?? 'Current unit'} · ${currentUnitCompleted} of ${
                   currentRequiredNodes.length
                 } steps complete`}
           </p>
         </div>
         <p className="shrink-0 text-sm font-medium text-slate-600 dark:text-slate-300">
-          {complete ? 'Complete' : 'Up next'}
+          {complete ? 'Core path complete' : 'Up next'}
         </p>
       </div>
 
-      {previousUnits.length > 0 && (
+      <dl className="mb-4 divide-y divide-slate-200/70 border-y border-slate-200/70 text-sm dark:divide-white/10 dark:border-white/10">
+        <div className="flex min-h-[44px] items-center justify-between gap-3 py-2">
+          <dt className="font-medium text-slate-700 dark:text-slate-200">
+            Core path
+          </dt>
+          <dd className="text-slate-600 dark:text-slate-300">
+            {complete
+              ? 'Core path complete'
+              : `${path.completedCount} of ${path.totalCount} required`}
+          </dd>
+        </div>
+        <div className="flex min-h-[44px] items-center justify-between gap-3 py-2">
+          <dt className="font-medium text-slate-700 dark:text-slate-200">
+            Enrichment
+          </dt>
+          <dd className="text-slate-500 dark:text-slate-400">
+            {(path.enrichmentTotalCount ?? 0) > 0
+              ? `${path.enrichmentCompletedCount ?? 0} of ${
+                  path.enrichmentTotalCount
+                } explored`
+              : 'Nothing optional yet'}
+          </dd>
+        </div>
+      </dl>
+
+      {previousUnits.length > 0 && !complete && (
         <p className="mb-3 text-sm text-slate-500 dark:text-slate-400">
           <span
             className="mr-2 text-green-600 dark:text-green-400"
@@ -275,9 +312,28 @@ export default function LearningPath({ path, focusCurrent = false }: Props) {
         </p>
       )}
       <div className="rounded-2xl border border-slate-200/70 bg-white shadow-sm dark:border-white/10 dark:bg-slate-800">
-        {visibleUnits.map(renderUnit)}
+        {complete ? (
+          <div
+            className="p-4"
+            data-path-focus-fallback
+            tabIndex={-1}
+          >
+            <h4 className="font-semibold text-slate-800 dark:text-slate-100">
+              Core path complete
+            </h4>
+            <p className="mt-1 text-sm text-slate-500 dark:text-slate-400">
+              You can revisit any core lesson or explore optional enrichment at
+              your own pace.
+            </p>
+          </div>
+        ) : (
+          visibleUnits.map(renderUnit)
+        )}
       </div>
-      {(futureUnits.length > 0 || showAheadAcknowledgment) && (
+      {(futureUnits.length > 0 ||
+        showAheadAcknowledgment ||
+        complete ||
+        (path.enrichmentTotalCount ?? 0) > 0) && (
         <div className="mt-4 border-t border-slate-200/70 pt-4 dark:border-white/10">
           {futureUnits.length > 0 && (
             <>

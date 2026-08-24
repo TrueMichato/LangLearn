@@ -31,6 +31,7 @@ const VOCAB_INDEXES = import.meta.glob(
 const EXPECTED_CORE_COUNTS = {
   ja: { grammar: 50, vocab: 60, enrichment: 129 },
   ru: { grammar: 47, vocab: 70, enrichment: 0 },
+  ar: { grammar: 166, vocab: 135, enrichment: 67 },
   es: { grammar: 55, vocab: 63, enrichment: 0 },
   pt: { grammar: 38, vocab: 41, enrichment: 0 },
   ro: { grammar: 50, vocab: 67, enrichment: 0 },
@@ -163,6 +164,35 @@ describe('comprehensive curriculum composition', () => {
     );
   });
 
+  it.each([
+    'egyptian',
+    'levantine',
+    'gulf',
+    'maghrebi',
+    'iraqi',
+  ] satisfies ArabicDialect[])(
+    'requires shared and %s Arabic material while leaving other dialects optional',
+    (dialect) => {
+      const refs = lessonRefs('ar', dialect);
+      const byKey = new Map(
+        refs.map((ref) => [`${ref.kind}:${ref.lessonId}`, ref]),
+      );
+
+      for (const kind of ['grammar', 'vocab'] as const) {
+        for (const entry of catalogs('ar')[kind]) {
+          const classification = classifyCatalogEntry('ar', kind, entry);
+          const selected =
+            classification.requirement === 'required' ||
+            classification.dialects === 'shared' ||
+            classification.dialects?.includes(dialect);
+          expect(
+            byKey.get(`${kind}:${entry.id}`)?.requirement ?? 'required',
+          ).toBe(selected ? 'required' : 'enrichment');
+        }
+      }
+    },
+  );
+
   it.each(CURRICULUM_LANGUAGES)(
     'recurs every supported %s activity with valid deterministic descriptors',
     (language) => {
@@ -233,6 +263,41 @@ describe('comprehensive curriculum composition', () => {
       ),
     ).toBe(true);
   });
+
+  it.each(CURRICULUM_LANGUAGES)(
+    'keeps %s core and enrichment counts separate with one recommendation',
+    (language) => {
+      const path = resolveLearningPath(
+        LEARNING_PATHS[language],
+        catalogs(language),
+        {
+          progress: [],
+          completedLetters: new Set(),
+        },
+      );
+      const nodes = path.units.flatMap((unit) => unit.nodes);
+      const required = nodes.filter(
+        (node) => (node.requirement ?? 'required') === 'required',
+      );
+      const enrichment = nodes.filter(
+        (node) => node.requirement === 'enrichment',
+      );
+      const recommended = nodes.filter(
+        (node) => node.id === path.recommendedNodeId,
+      );
+
+      expect(path.completedCount).toBe(0);
+      expect(path.totalCount).toBe(required.length);
+      expect(path.enrichmentCompletedCount).toBe(0);
+      expect(path.enrichmentTotalCount).toBe(enrichment.length);
+      expect(recommended).toHaveLength(1);
+      expect(recommended[0]).toMatchObject({
+        requirement: 'required',
+        state: 'available',
+      });
+      expect(enrichment.every((node) => node.state === 'available')).toBe(true);
+    },
+  );
 
   it('uses stable semantic IDs for generated activities', () => {
     const activities = milestones('es').filter(

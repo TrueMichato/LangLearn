@@ -187,7 +187,7 @@ export default function TranslationPracticePage() {
         </div>
         <GuidedPracticeNotice guided={guided} />
 
-        {!isSupported && (
+        {!guided.descriptor && !isSupported && (
           <LanguageUnavailable
             requested={requested}
             options={supportedLanguages}
@@ -196,7 +196,7 @@ export default function TranslationPracticePage() {
           />
         )}
 
-        {supportedLanguages.length > 1 && (
+        {!guided.descriptor && supportedLanguages.length > 1 && (
           <div className="bg-white dark:bg-slate-800 rounded-2xl shadow p-4 space-y-3">
             <label className="block text-sm font-medium text-slate-700 dark:text-slate-300">
               Language
@@ -385,7 +385,7 @@ export default function TranslationPracticePage() {
 
       {/* Score card */}
       <div className="bg-white dark:bg-slate-800 rounded-2xl shadow p-6 text-center space-y-3">
-        <p className="text-4xl font-bold text-indigo-600 dark:text-indigo-400">
+        <p className="text-4xl font-bold text-slate-800 dark:text-slate-100">
           {totalScore}/{maxScore}
         </p>
         <p className="text-sm text-slate-500 dark:text-slate-400">{percentage}% accuracy</p>

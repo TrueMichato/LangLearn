@@ -22,6 +22,9 @@ type Phase = 'setup' | 'session' | 'summary';
 const QUESTIONS_PER_SESSION = 10;
 const XP_BASE = 20;
 const XP_PER_CORRECT = 3;
+const ACTIVE_DIFFICULTY_CLASSES = 'bg-indigo-600 text-white';
+const INACTIVE_DIFFICULTY_CLASSES =
+  'border border-slate-300 bg-white text-slate-700 dark:border-white/10 dark:bg-slate-700 dark:text-slate-300';
 
 const CLOZE_LANGUAGES = ['ja', 'ru', 'pt', 'es', 'ar', 'ro'];
 
@@ -189,7 +192,7 @@ export default function ClozePracticePage() {
         </div>
         <GuidedPracticeNotice guided={guided} />
 
-        {!isSupported && (
+        {!guided.descriptor && !isSupported && (
           <LanguageUnavailable
             requested={requested}
             options={supportedLanguages}
@@ -198,7 +201,7 @@ export default function ClozePracticePage() {
           />
         )}
 
-        {supportedLanguages.length > 1 && (
+        {!guided.descriptor && supportedLanguages.length > 1 && (
           <div>
             <label className="block text-sm font-medium text-slate-600 dark:text-slate-400 mb-1">Language</label>
             <LanguagePicker
@@ -219,7 +222,9 @@ export default function ClozePracticePage() {
                 key={d}
                 onClick={() => setDifficulty(d)}
                 className={`px-4 py-2 min-h-[44px] rounded-xl text-sm font-medium capitalize transition-colors min-h-[44px] ${
-                  difficulty === d ? 'bg-indigo-600 text-white' : 'bg-white dark:bg-slate-700 text-slate-700 dark:text-slate-300 border border-slate-300 dark:border-white/10'
+                  difficulty === d
+                    ? ACTIVE_DIFFICULTY_CLASSES
+                    : INACTIVE_DIFFICULTY_CLASSES
                 }`}
               >
                 {d === 'all' ? '🌀 All Levels' : d === 'beginner' ? '🟢 Beginner' : d === 'intermediate' ? '🟡 Intermediate' : '🔴 Advanced'}

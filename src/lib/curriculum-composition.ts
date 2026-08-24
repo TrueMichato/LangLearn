@@ -19,6 +19,7 @@ import {
   ACTIVITY_CAPABILITIES,
   GUIDED_ACTIVITY_KINDS,
 } from './activity-capabilities';
+import { getDialectInfo } from './arabic-dialects';
 import {
   classifyCatalogEntry,
   CURRICULUM_LANGUAGES,
@@ -203,6 +204,8 @@ function attachSpokenArabicStrands(
   dialect: ArabicLearningPathPolicy['currentDialect'],
 ): LearningPathUnitManifest[] {
   const spokenBatches = batches(spokenLessons, SPOKEN_BATCH_SIZE);
+  const dialectName =
+    (dialect && getDialectInfo(dialect)?.name) ?? dialect ?? 'Arabic';
   if (spokenBatches.length === 0) return units;
   if (spokenBatches.length > units.length) {
     throw new Error('Arabic spoken strand has no core unit to run alongside');
@@ -223,7 +226,7 @@ function attachSpokenArabicStrands(
         },
         {
           id: `spoken-${dialect}`,
-          title: `Spoken ${dialect}`,
+          title: `Spoken ${dialectName}`,
           description:
             'Build the selected spoken variety alongside the shared core.',
           lessons: spoken.map(toLessonRef),

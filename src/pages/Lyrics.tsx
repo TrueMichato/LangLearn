@@ -224,7 +224,8 @@ function LyricsViewer({
       {/* Back button */}
       {guided.isGuided ? (
         <Link
-          to={ROUTES.learnCurriculum}
+          to={ROUTES.learn}
+          state={{ focusCurrentPathStep: true }}
           className="mb-4 flex min-h-[44px] items-center gap-1 text-sm font-medium text-indigo-600 dark:text-indigo-400"
         >
           ← Return to learning path
