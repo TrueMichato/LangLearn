@@ -1,4 +1,4 @@
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
 import type { LearningPath as LearningPathModel } from '../../types/learning-path';
 import { isRTL } from '../../lib/rtl';
@@ -11,10 +11,22 @@ interface Props {
   focusCurrent?: boolean;
 }
 
+type PathView = 'current' | 'full';
+
 export default function LearningPath({ path, focusCurrent = false }: Props) {
   const complete = path.completedCount === path.totalCount;
   const rtl = isRTL(path.language);
   const sectionRef = useRef<HTMLElement>(null);
+  const [viewState, setViewState] = useState<{
+    language: string;
+    view: PathView;
+  }>({
+    language: path.language,
+    view: 'current',
+  });
+  const view =
+    viewState.language === path.language ? viewState.view : 'current';
+  const showFullPath = view === 'full';
   const requiredUnits = path.units.filter((unit) =>
     unit.nodes.some(
       (node) => (node.requirement ?? 'required') === 'required',
@@ -33,7 +45,11 @@ export default function LearningPath({ path, focusCurrent = false }: Props) {
       : complete
         ? requiredUnits
         : [];
-  const visibleUnits = currentUnit ? [currentUnit] : [];
+  const visibleUnits = showFullPath
+    ? requiredUnits
+    : currentUnit
+      ? [currentUnit]
+      : [];
   const futureUnits =
     currentUnitIndex >= 0
       ? requiredUnits.slice(currentUnitIndex + 1)
@@ -299,7 +315,44 @@ export default function LearningPath({ path, focusCurrent = false }: Props) {
         </div>
       </dl>
 
-      {previousUnits.length > 0 && !complete && (
+      <div
+        className="mb-3 grid grid-cols-2 gap-1 rounded-xl bg-slate-100 p-1 dark:bg-slate-800"
+        role="group"
+        aria-label="Path view"
+        aria-describedby="learning-path-view-description"
+      >
+        {(['current', 'full'] as const).map((option) => {
+          const selected = view === option;
+          return (
+            <button
+              key={option}
+              type="button"
+              aria-pressed={selected}
+              aria-controls="learning-path-units"
+              onClick={() =>
+                setViewState({ language: path.language, view: option })
+              }
+              className={`min-h-[44px] rounded-lg px-3 text-sm font-semibold transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 ${
+                selected
+                  ? 'bg-indigo-600 text-white shadow-sm'
+                  : 'text-slate-600 hover:bg-white/70 hover:text-slate-800 dark:text-slate-300 dark:hover:bg-slate-700/70 dark:hover:text-slate-100'
+              }`}
+            >
+              {option === 'current' ? 'Current unit' : 'Full path'}
+            </button>
+          );
+        })}
+      </div>
+      <p
+        id="learning-path-view-description"
+        className="mb-3 text-sm text-slate-500 dark:text-slate-400"
+      >
+        {showFullPath
+          ? 'Completed lessons are open to revisit; locked steps show what comes next.'
+          : 'A focused view of what to do now.'}
+      </p>
+
+      {previousUnits.length > 0 && !complete && !showFullPath && (
         <p className="mb-3 text-sm text-slate-500 dark:text-slate-400">
           <span
             className="mr-2 text-green-600 dark:text-green-400"
@@ -311,8 +364,11 @@ export default function LearningPath({ path, focusCurrent = false }: Props) {
           {previousUnits.length === 1 ? 'earlier unit' : 'earlier units'} complete
         </p>
       )}
-      <div className="rounded-2xl border border-slate-200/70 bg-white shadow-sm dark:border-white/10 dark:bg-slate-800">
-        {complete ? (
+      <div
+        id="learning-path-units"
+        className="rounded-2xl border border-slate-200/70 bg-white shadow-sm dark:border-white/10 dark:bg-slate-800"
+      >
+        {complete && !showFullPath ? (
           <div
             className="p-4"
             data-path-focus-fallback
@@ -335,7 +391,7 @@ export default function LearningPath({ path, focusCurrent = false }: Props) {
         complete ||
         (path.enrichmentTotalCount ?? 0) > 0) && (
         <div className="mt-4 border-t border-slate-200/70 pt-4 dark:border-white/10">
-          {futureUnits.length > 0 && (
+          {futureUnits.length > 0 && !showFullPath && (
             <>
               <p className="text-sm font-semibold text-slate-800 dark:text-slate-100">
                 Coming next
@@ -349,10 +405,10 @@ export default function LearningPath({ path, focusCurrent = false }: Props) {
               </p>
             </>
           )}
-          {showAheadAcknowledgment && (
+          {showAheadAcknowledgment && !showFullPath && (
             <p
               className={`text-sm text-slate-500 dark:text-slate-400 ${
-                futureUnits.length > 0 ? 'mt-2' : ''
+                futureUnits.length > 0 && !showFullPath ? 'mt-2' : ''
               }`}
             >
               {aheadMessage}
@@ -364,7 +420,7 @@ export default function LearningPath({ path, focusCurrent = false }: Props) {
               rtl ? 'flex-row-reverse' : ''
             }`}
           >
-            View full curriculum
+            Browse course outline
             <span aria-hidden="true">{aheadArrow}</span>
           </Link>
         </div>
