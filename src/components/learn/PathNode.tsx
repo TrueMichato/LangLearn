@@ -25,7 +25,7 @@ function nodeClasses(
   const base = `group relative z-10 flex scroll-mb-[var(--shell-bottom-clearance)] rounded-xl px-2 py-2 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 focus-visible:ring-offset-2 dark:focus-visible:ring-offset-slate-800 ${
     layout === 'branch'
       ? 'min-h-[88px] w-full flex-col items-center justify-center gap-1 text-center'
-      : `min-h-[56px] items-center gap-3 text-left ${rtl ? 'flex-row-reverse' : ''}`
+      : `min-h-[56px] items-start gap-3 text-start ${rtl ? 'flex-row-reverse' : ''}`
   }`;
 
   if (recommended) {
@@ -97,8 +97,12 @@ function Body({
       : 'text-slate-500 dark:text-slate-400';
   const titleClasses =
     recommended
-      ? 'text-indigo-950 dark:text-indigo-100'
-      : 'text-slate-800 dark:text-slate-100';
+      ? 'font-semibold text-indigo-950 dark:text-indigo-100'
+      : node.state === 'locked'
+        ? 'font-medium text-slate-500 dark:text-slate-400'
+        : node.state === 'available'
+          ? 'font-semibold text-slate-800 dark:text-slate-100'
+          : 'font-medium text-slate-700 dark:text-slate-200';
   const arrowClasses =
     recommended
       ? 'text-indigo-600 dark:text-indigo-300'
@@ -110,16 +114,24 @@ function Body({
         recommended={recommended}
         compact={layout === 'branch'}
       />
-      <span className="min-w-0 flex-1">
-        <span className={`block text-xs font-medium ${labelClasses}`}>
+      <span className={`min-w-0 flex-1 ${layout === 'branch' ? 'w-full' : ''}`}>
+        <span
+          className={`text-xs font-medium ${labelClasses} ${
+            layout === 'branch'
+              ? 'flex min-h-8 items-center justify-center'
+              : 'block'
+          }`}
+        >
           {detail.label} · {status}
         </span>
-        <span className={`mt-0.5 block text-sm font-semibold leading-snug ${titleClasses}`}>
+        <span
+          className={`mt-0.5 block text-sm leading-snug ${titleClasses}`}
+        >
           {node.title}
         </span>
       </span>
       {layout === 'winding' && node.state !== 'locked' && (
-        <span className={`shrink-0 ${arrowClasses}`} aria-hidden="true">
+        <span className={`shrink-0 self-center ${arrowClasses}`} aria-hidden="true">
           {rtl ? '←' : '→'}
         </span>
       )}
@@ -140,35 +152,53 @@ export default function PathNode({
   rtl = false,
 }: Props) {
   const visualPosition = rtl ? 2 - position : position;
-  const visualNextPosition =
-    nextPosition == null ? visualPosition : rtl ? 2 - nextPosition : nextPosition;
   const positionClass =
     layout === 'branch'
       ? 'w-full'
       : (POSITION_CLASSES[visualPosition] ?? POSITION_CLASSES[0]);
-  const startX = (POSITION_OFFSET[visualPosition] ?? 0) + 22;
+  const startX = (POSITION_OFFSET[position] ?? 0) + 30;
   const endX =
-    (POSITION_OFFSET[visualNextPosition] ??
-      POSITION_OFFSET[visualPosition] ??
+    (POSITION_OFFSET[nextPosition ?? position] ??
+      POSITION_OFFSET[position] ??
       0) +
-    22;
+    30;
 
   return (
     <li className="relative">
       {layout === 'branch' && !isLast && (
         <span
           aria-hidden="true"
-          className="pointer-events-none absolute -bottom-2 left-1/2 top-[5rem] z-0 w-px bg-slate-200 dark:bg-slate-700"
+          className="pointer-events-none absolute -bottom-2 left-1/2 top-full z-0 w-px bg-slate-200 dark:bg-slate-700"
         />
       )}
       {layout === 'winding' && !isLast && (
         <svg
           aria-hidden="true"
-          className="pointer-events-none absolute left-0 top-[2.75rem] z-0 h-8 w-full overflow-visible text-slate-200 dark:text-slate-700"
-          preserveAspectRatio="none"
+          data-path-connector
+          className="pointer-events-none absolute left-0 top-[3.25rem] z-0 h-[calc(100%_-_2.25rem)] w-full overflow-visible text-slate-200 dark:text-slate-700"
+          style={rtl ? { transform: 'scaleX(-1)' } : undefined}
         >
-          <path
-            d={`M ${startX} 0 C ${startX} 16, ${endX} 16, ${endX} 32`}
+          <line
+            x1={startX}
+            y1="0"
+            x2={startX}
+            y2="35%"
+            stroke="currentColor"
+            strokeWidth="1.5"
+          />
+          <line
+            x1={startX}
+            y1="35%"
+            x2={endX}
+            y2="65%"
+            stroke="currentColor"
+            strokeWidth="1.5"
+          />
+          <line
+            x1={endX}
+            y1="65%"
+            x2={endX}
+            y2="100%"
             fill="none"
             stroke="currentColor"
             strokeWidth="1.5"

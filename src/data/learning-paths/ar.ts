@@ -43,16 +43,29 @@ export const AR_LEARNING_PATH = defineLearningPath({
       ],
     },
     {
-      id: 'people-things',
-      title: 'People and things',
-      description: 'Use the definite article with colors and family.',
-      lessons: [vocab('colors'), grammar('definite-article'), vocab('family')],
-    },
-    {
-      id: 'describing',
-      title: 'Describing the world',
-      description: 'Notice grammatical gender while describing people and things.',
-      lessons: [vocab('body'), grammar('gender'), vocab('food-drink')],
+      id: 'people-descriptions',
+      title: 'People and descriptions',
+      description:
+        'Learn the definite article or grammatical gender first. Both paths support clear descriptions.',
+      strands: [
+        {
+          id: 'people-things',
+          title: 'People and things',
+          description: 'Use the definite article with colors and family.',
+          lessons: [
+            vocab('colors'),
+            grammar('definite-article'),
+            vocab('family'),
+          ],
+        },
+        {
+          id: 'describing',
+          title: 'Describing the world',
+          description:
+            'Notice grammatical gender while describing people and things.',
+          lessons: [vocab('body'), grammar('gender'), vocab('food-drink')],
+        },
+      ],
     },
     {
       id: 'simple-sentences',

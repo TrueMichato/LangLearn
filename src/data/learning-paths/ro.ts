@@ -61,16 +61,32 @@ export const RO_LEARNING_PATH = defineLearningPath({
       ],
     },
     {
-      id: 'everyday-actions',
-      title: 'Everyday actions',
-      description: 'Use common Group 1 verbs for routines and feelings.',
-      lessons: [vocab('verbs'), grammar('present-group1'), vocab('time-routine')],
-    },
-    {
-      id: 'social-world',
-      title: 'Your social world',
-      description: 'Expand your verbs through emotions and hobbies.',
-      lessons: [vocab('emotions'), grammar('present-group4'), vocab('hobbies')],
+      id: 'everyday-expression',
+      title: 'Everyday expression',
+      description:
+        'Build routine language or social expression first. Both paths expand your present-tense range.',
+      strands: [
+        {
+          id: 'everyday-actions',
+          title: 'Everyday actions',
+          description: 'Use common Group 1 verbs for routines and feelings.',
+          lessons: [
+            vocab('verbs'),
+            grammar('present-group1'),
+            vocab('time-routine'),
+          ],
+        },
+        {
+          id: 'social-world',
+          title: 'Your social world',
+          description: 'Expand your verbs through emotions and hobbies.',
+          lessons: [
+            vocab('emotions'),
+            grammar('present-group4'),
+            vocab('hobbies'),
+          ],
+        },
+      ],
     },
   ],
 });

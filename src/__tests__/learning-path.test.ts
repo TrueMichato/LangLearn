@@ -10,6 +10,7 @@ import {
 import { resolveLearningPath } from '../lib/learning-path';
 import { activity } from '../data/learning-paths/shared';
 import type { LessonProgress } from '../db/schema';
+import { composeComprehensiveLearningPath } from '../lib/curriculum-composition';
 import type {
   LearningPathActivityKind,
   LearningPathManifest,
@@ -60,6 +61,25 @@ function manifestLessons(
     ...manifest.units.flatMap(unitLessons),
   ];
 }
+
+const CURRICULUM_BRANCHES = [
+  ['ja', 'everyday-foundations', ['Time and actions', 'People and things']],
+  ['ja', 'practical-foundations', ['Food and counting', 'Actions and places']],
+  ['ja', 'movement-routines', ['Getting around', 'Daily life']],
+  ['ru', 'foundations', ['Sound and rhythm', 'People and things']],
+  ['ru', 'objects-actions', ['Food and cases', 'Everyday actions']],
+  ['ru', 'description-movement', ['Describing people', 'Getting around']],
+  ['ar', 'sounds-and-time', ['Hear and count', 'Read and tell time']],
+  ['ar', 'people-descriptions', ['People and things', 'Describing the world']],
+  ['es', 'describing-acting', ['Making words agree', 'First actions']],
+  ['es', 'expanding-actions', ['More actions', 'Being and being there']],
+  ['es', 'everyday-connections', ['Practical life', 'Your social world']],
+  ['pt', 'describing-acting', ['Making words agree', 'First actions']],
+  ['pt', 'expanding-actions', ['More actions', 'Being and being there']],
+  ['pt', 'everyday-connections', ['Practical life', 'Your social world']],
+  ['ro', 'nouns-and-verbs', ['One and many', 'Being and having']],
+  ['ro', 'everyday-expression', ['Everyday actions', 'Your social world']],
+] as const;
 
 describe('learning path manifests', () => {
   it.each(Object.entries(LEARNING_PATHS))(
@@ -157,28 +177,19 @@ describe('learning path manifests', () => {
     },
   );
 
-  const curriculumBranches = [
-    ['ja', 'everyday-foundations', ['Time and actions', 'People and things']],
-    ['ru', 'foundations', ['Sound and rhythm', 'People and things']],
-    ['ar', 'sounds-and-time', ['Hear and count', 'Read and tell time']],
-    ['es', 'expanding-actions', ['More actions', 'Being and being there']],
-    ['pt', 'expanding-actions', ['More actions', 'Being and being there']],
-    ['ro', 'nouns-and-verbs', ['One and many', 'Being and having']],
-  ] as const;
-
-  it.each(curriculumBranches)(
+  it.each(CURRICULUM_BRANCHES)(
     '%s includes a meaningful %s fork',
     (language, unitId, strandTitles) => {
       const unit = LEARNING_PATHS[language].units.find(
         (candidate) => candidate.id === unitId,
       );
+      const strands = unit?.strands ?? [];
 
-      expect(unit?.strands?.map((strand) => strand.title)).toEqual(
-        strandTitles,
-      );
-      expect(
-        unit?.strands?.every((strand) => strand.lessons.length > 0),
-      ).toBe(true);
+      expect(strands.map((strand) => strand.title)).toEqual(strandTitles);
+      expect(strands).toHaveLength(2);
+      expect(new Set(strands.map((strand) => strand.id)).size).toBe(2);
+      expect(strands.every((strand) => strand.lessons.length > 0)).toBe(true);
+      expect(strands.every((strand) => strand.title.length <= 24)).toBe(true);
     },
   );
 
@@ -197,6 +208,7 @@ describe('learning path manifests', () => {
     );
 
     expect(path.units[0].id).toBe('letters');
+    expect(path.units[0].presentation).toBe('standard');
     expect(path.units[0].nodes.map((node) => node.title)).toEqual([
       'Cyrillic (Uppercase)',
       'Cyrillic (Lowercase)',
@@ -303,6 +315,16 @@ describe('resolveLearningPath', () => {
     expect(path.testOutOptions.every((option) => option.state === 'locked')).toBe(
       true,
     );
+    expect(
+      path.units
+        .filter((unit) => unit.id.startsWith('core-'))
+        .every((unit) => unit.presentation === 'continuation'),
+    ).toBe(true);
+    expect(
+      path.units
+        .filter((unit) => !unit.id.startsWith('core-'))
+        .every((unit) => unit.presentation === 'standard'),
+    ).toBe(true);
   });
 
   it('opens the first lesson only after every letter prerequisite', () => {
@@ -398,17 +420,17 @@ describe('resolveLearningPath', () => {
     });
   });
 
-  it.each([
-    ['ja', 'everyday-foundations'],
-    ['ru', 'foundations'],
-    ['ar', 'sounds-and-time'],
-    ['es', 'expanding-actions'],
-    ['pt', 'expanding-actions'],
-    ['ro', 'nouns-and-verbs'],
-  ] as const)(
+  it.each(CURRICULUM_BRANCHES)(
     'opens both %s curriculum strands together and rejoins before the next unit',
     (language, unitId) => {
-      const branchManifest = LEARNING_PATHS[language];
+      const branchContent = {
+        grammar: indexFor(GRAMMAR_INDEXES, language),
+        vocab: indexFor(VOCAB_INDEXES, language),
+      };
+      const branchManifest = composeComprehensiveLearningPath(
+        LEARNING_PATHS[language],
+        branchContent,
+      );
       const branchIndex = branchManifest.units.findIndex(
         (unit) => unit.id === unitId,
       );
@@ -426,10 +448,6 @@ describe('resolveLearningPath', () => {
             : lesson.lessonId,
           language,
         );
-      const branchContent = {
-        grammar: indexFor(GRAMMAR_INDEXES, language),
-        vocab: indexFor(VOCAB_INDEXES, language),
-      };
       const atFork = resolveLearningPath(branchManifest, branchContent, {
         progress: beforeBranch.map(toProgress),
         completedLetters: new Set(branchManifest.letterPrerequisites),
@@ -444,24 +462,64 @@ describe('resolveLearningPath', () => {
       expect(
         fork?.strands.map((strand) => strand.nodes[0].id),
       ).toContain(atFork.recommendedNodeId);
+      expect(atFork.completedAheadCount).toBe(0);
+      const resolvedForkIndex = atFork.units.findIndex(
+        (unit) => unit.id === unitId,
+      );
       expect(
-        atFork.units[branchIndex + (branchManifest.letterPrerequisites.length > 0 ? 1 : 0) + 1]
-          ?.nodes.every((node) => node.state === 'locked'),
+        atFork.units[resolvedForkIndex + 1]?.nodes.every(
+          (node) => node.state === 'locked',
+        ),
+      ).toBe(true);
+
+      const firstStrandLesson = branchLessons[0];
+      const withinFork = resolveLearningPath(branchManifest, branchContent, {
+        progress: [...beforeBranch, firstStrandLesson].map(toProgress),
+        completedLetters: new Set(branchManifest.letterPrerequisites),
+      });
+      const progressedFork = withinFork.units.find(
+        (unit) => unit.id === unitId,
+      );
+
+      expect(progressedFork?.strands[0].nodes[0].state).toBe('completed');
+      expect(
+        progressedFork?.strands.map(
+          (strand) =>
+            strand.nodes.filter((node) => node.state === 'available').length,
+        ),
+      ).toEqual([1, 1]);
+      expect(withinFork.completedAheadCount).toBe(0);
+      expect(
+        withinFork.units[resolvedForkIndex + 1]?.nodes.every(
+          (node) => node.state === 'locked',
+        ),
       ).toBe(true);
 
       const afterFork = resolveLearningPath(branchManifest, branchContent, {
         progress: [...beforeBranch, ...branchLessons].map(toProgress),
         completedLetters: new Set(branchManifest.letterPrerequisites),
       });
-      const resolvedForkIndex = afterFork.units.findIndex(
-        (unit) => unit.id === unitId,
-      );
       const nextUnit = afterFork.units[resolvedForkIndex + 1];
-
-      expect(nextUnit.nodes[0].state).toBe('available');
-      expect(nextUnit.nodes.slice(1).every((node) => node.state === 'locked')).toBe(
-        true,
+      expect(nextUnit).toBeDefined();
+      if (!nextUnit) {
+        throw new Error(`Missing successor unit after ${language}/${unitId}`);
+      }
+      const nextAvailable = nextUnit.nodes.filter(
+        (node) => node.state === 'available',
       );
+      const expectedAvailable = Math.max(1, nextUnit.strands.length);
+
+      expect(nextAvailable).toHaveLength(expectedAvailable);
+      if (nextUnit.strands.length > 0) {
+        expect(
+          nextUnit.strands.map((strand) => strand.nodes[0].state),
+        ).toEqual(nextUnit.strands.map(() => 'available'));
+      } else {
+        expect(nextUnit.nodes[0].state).toBe('available');
+        expect(
+          nextUnit.nodes.slice(1).every((node) => node.state === 'locked'),
+        ).toBe(true);
+      }
     },
   );
 });
@@ -690,7 +748,7 @@ describe('resolveLearningPath completedAheadCount', () => {
         expect(path.recommendedNodeId).toBe('vocab:days-months');
         expect(
           path.units
-            .find((unit) => unit.id === 'food-cases')
+            .find((unit) => unit.id === 'objects-actions')
             ?.nodes.every((node) => node.state === 'locked'),
         ).toBe(true);
         expect(path.completedAheadCount).toBe(0);
@@ -730,12 +788,12 @@ describe('resolveLearningPath completedAheadCount', () => {
         expect(path.recommendedNodeId).toBe('vocab:family');
         expect(
           path.units
-            .find((unit) => unit.id === 'food-cases')
+            .find((unit) => unit.id === 'objects-actions')
             ?.nodes.every((node) => node.state === 'locked'),
         ).toBe(true);
       });
 
-      it('rejoins after every strand and unlocks one next lesson', () => {
+      it('rejoins after every strand and opens both strands in the next fork', () => {
         const path = resolveLearningPath(manifest, content, {
           progress: [
             ...beforeFork,
@@ -748,13 +806,17 @@ describe('resolveLearningPath completedAheadCount', () => {
           ],
           completedLetters,
         });
-        const food = path.units.find((unit) => unit.id === 'food-cases');
+        const food = path.units.find((unit) => unit.id === 'objects-actions');
 
         expect(path.recommendedNodeId).toBe('vocab:food');
-        expect(food?.nodes[0].state).toBe('available');
-        expect(food?.nodes.slice(1).every((node) => node.state === 'locked')).toBe(
-          true,
-        );
+        expect(
+          food?.strands.map((strand) =>
+            strand.nodes.map((node) => node.state),
+          ),
+        ).toEqual([
+          ['available', 'locked', 'locked'],
+          ['available', 'locked', 'locked'],
+        ]);
       });
 
       it('counts a completed locked branch lesson as ahead progress', () => {
@@ -774,6 +836,9 @@ describe('resolveLearningPath completedAheadCount', () => {
             progress('vocab/food', 'ru'),
             progress('cases', 'ru'),
             progress('vocab/body', 'ru'),
+            progress('vocab/verbs', 'ru'),
+            progress('verb-aspects', 'ru'),
+            progress('vocab/house', 'ru'),
           ],
           completedLetters,
         });
@@ -781,7 +846,7 @@ describe('resolveLearningPath completedAheadCount', () => {
         expect(path.recommendedNodeId).toBe('vocab:days-months');
         expect(
           path.units
-            .find((unit) => unit.id === 'actions')
+            .find((unit) => unit.id === 'description-movement')
             ?.nodes.every((node) => node.state === 'locked'),
         ).toBe(true);
       });

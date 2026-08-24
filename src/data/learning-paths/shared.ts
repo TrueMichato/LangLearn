@@ -67,6 +67,7 @@ export function activity(
 export function defineLearningPath(
   manifest: LearningPathManifest,
 ): LearningPathManifest {
+  const phaseIds = new Set<string>();
   const unitIds = new Set<string>();
   const lessonIds = new Set<string>();
   const registerMilestone = (milestone: LearningPathMilestoneRef) => {
@@ -84,6 +85,18 @@ export function defineLearningPath(
     lessonIds.add(milestoneKey);
   };
 
+  for (const phase of manifest.phases ?? []) {
+    if (!/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(phase.id)) {
+      throw new Error(`Learning path phase id must be kebab-case: ${phase.id}`);
+    }
+    if (phaseIds.has(phase.id)) {
+      throw new Error(
+        `Learning path ${manifest.language} repeats phase ${phase.id}`,
+      );
+    }
+    phaseIds.add(phase.id);
+  }
+
   for (const lesson of manifest.letterUnitLessons ?? []) {
     registerMilestone(lesson);
   }
@@ -100,6 +113,11 @@ export function defineLearningPath(
       );
     }
     unitIds.add(unit.id);
+    if (unit.phaseId && !phaseIds.has(unit.phaseId)) {
+      throw new Error(
+        `Learning path ${manifest.language} unit ${unit.id} references missing phase ${unit.phaseId}`,
+      );
+    }
 
     if (unit.strands) {
       if (unit.strands.length < 2) {

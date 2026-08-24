@@ -2,6 +2,7 @@ import { renderToStaticMarkup } from 'react-dom/server';
 import { MemoryRouter } from 'react-router-dom';
 import { describe, expect, it } from 'vitest';
 import LearningPath from '../components/learn/LearningPath';
+import { shouldCompactContinuationUnit } from '../lib/path-unit-presentation';
 import type { LearningPath as LearningPathModel } from '../types/learning-path';
 
 const PATH: LearningPathModel = {
@@ -42,7 +43,8 @@ const PATH: LearningPathModel = {
     {
       id: 'first-steps',
       title: 'First steps',
-      description: 'A gentle beginning.',
+      description: 'Alternate lesson work with a short guided practice session.',
+      presentation: 'continuation',
       checkpoints: [
         {
           kind: 'vocab',
@@ -104,6 +106,7 @@ const PATH: LearningPathModel = {
       id: 'later',
       title: 'Later',
       description: 'Future work.',
+      presentation: 'standard',
       checkpoints: [],
       strands: [],
       nodes: [
@@ -122,6 +125,19 @@ const PATH: LearningPathModel = {
 };
 
 describe('LearningPath', () => {
+  it('compacts only non-landmark continuation units in Full path', () => {
+    expect(shouldCompactContinuationUnit(true, 'continuation', false)).toBe(
+      true,
+    );
+    expect(shouldCompactContinuationUnit(true, 'continuation', true)).toBe(
+      false,
+    );
+    expect(shouldCompactContinuationUnit(false, 'continuation', false)).toBe(
+      false,
+    );
+    expect(shouldCompactContinuationUnit(true, 'standard', false)).toBe(false);
+  });
+
   it('exposes completed, current, and locked steps semantically', () => {
     const html = renderToStaticMarkup(
       <MemoryRouter>
@@ -132,6 +148,12 @@ describe('LearningPath', () => {
     expect(html).toContain('aria-current="step"');
     expect(html).toContain('Basic Particles. Grammar. Locked.');
     expect(html).toContain('First steps · 1 of 3 steps complete');
+    expect(html).toContain('data-path-presentation="continuation"');
+    expect(html).toContain('data-path-density="standard"');
+    expect(html).not.toContain('2 lessons · 1 practice session');
+    expect(html).toContain(
+      'Alternate lesson work with a short guided practice session.',
+    );
     expect(html).toContain('Coming next');
     expect(html).toContain('Later');
     expect(html).toContain('Explore optional practice');
@@ -170,6 +192,12 @@ describe('LearningPath', () => {
     );
 
     expect(html).toContain('flex-row-reverse');
+    expect(html).toContain('text-start');
+    expect(html).toContain('transform:scaleX(-1)');
+    expect(html).toContain('data-path-connector="true"');
+    expect(html).toContain('x1="30"');
+    expect(html).toContain('x2="58"');
+    expect(html).toContain('y2="100%"');
     expect(html).toContain('←');
   });
 });
@@ -232,6 +260,7 @@ const BRANCH_PATH: LearningPathModel = {
       id: 'first-steps',
       title: 'First steps',
       description: 'A completed beginning.',
+      presentation: 'standard',
       checkpoints: [],
       strands: [],
       nodes: [
@@ -250,6 +279,7 @@ const BRANCH_PATH: LearningPathModel = {
       id: 'foundations',
       title: 'Build your foundations',
       description: 'Grow two useful foundations.',
+      presentation: 'standard',
       checkpoints: [],
       nodes: [...SOUND_NODES, ...PEOPLE_NODES],
       strands: [
@@ -271,6 +301,7 @@ const BRANCH_PATH: LearningPathModel = {
       id: 'food-cases',
       title: 'Food and cases',
       description: 'Continue after both strands.',
+      presentation: 'standard',
       checkpoints: [],
       strands: [],
       nodes: [
@@ -302,10 +333,16 @@ describe('LearningPath parallel unit', () => {
     expect(html).toContain('Family Members');
     expect(html).toContain('Also available');
     expect(html).toContain('href="/vocab-lessons?lesson=family"');
-    expect(html).toContain('Choose either path first. Complete both to continue.');
+    expect(html).toContain(
+      'Both tracks are open. Finish both to unlock the next unit.',
+    );
     expect(html).toContain('Parallel learning paths');
     expect(html).toContain('grid-cols-2');
-    expect(html).toContain('Both paths rejoin before the next unit.');
+    expect(html).toContain('Practice stress and rhythm.');
+    expect(html).toContain('Name people and notice spelling.');
+    expect(html).toContain('0 of 4 complete');
+    expect(html).not.toContain('0/2 complete');
+    expect(html).toContain('Both tracks rejoin before the next unit.');
     expect(html).toContain('1 earlier unit');
     expect(html).not.toContain('Greetings &amp; Introductions');
   });
@@ -340,8 +377,10 @@ describe('LearningPath parallel unit', () => {
       </MemoryRouter>,
     );
 
-    expect(html).toContain('Both paths rejoin before the next unit.');
-    expect(html).toContain('🔒');
+    expect(html).toContain('Both tracks rejoin before the next unit.');
+    expect(html).not.toContain(
+      'rounded-full bg-slate-100 text-sm text-slate-500',
+    );
   });
 });
 
@@ -357,6 +396,7 @@ const LETTERS_CURRENT_PATH: LearningPathModel = {
       id: 'letters',
       title: 'Learn the script',
       description: 'Get comfortable with the writing system before lessons begin.',
+      presentation: 'standard',
       checkpoints: [],
       strands: [],
       nodes: [
@@ -384,6 +424,7 @@ const LETTERS_CURRENT_PATH: LearningPathModel = {
       id: 'first-steps',
       title: 'First steps',
       description: 'A gentle beginning.',
+      presentation: 'standard',
       checkpoints: [],
       strands: [],
       nodes: [

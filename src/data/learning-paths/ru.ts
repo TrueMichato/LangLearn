@@ -36,28 +36,54 @@ export const RU_LEARNING_PATH = defineLearningPath({
       ],
     },
     {
-      id: 'food-cases',
-      title: 'Food and cases',
-      description: 'Talk about food while meeting the case system.',
-      lessons: [vocab('food'), grammar('cases'), vocab('body')],
+      id: 'objects-actions',
+      title: 'Objects and actions',
+      description:
+        'Explore the case system through food or build everyday verbs first. Both paths support practical sentences.',
+      strands: [
+        {
+          id: 'food-cases',
+          title: 'Food and cases',
+          description: 'Talk about food while meeting the case system.',
+          lessons: [vocab('food'), grammar('cases'), vocab('body')],
+        },
+        {
+          id: 'actions',
+          title: 'Everyday actions',
+          description:
+            'Use common verbs and notice completed versus ongoing actions.',
+          lessons: [vocab('verbs'), grammar('verb-aspects'), vocab('house')],
+        },
+      ],
     },
     {
-      id: 'actions',
-      title: 'Everyday actions',
-      description: 'Use common verbs and notice completed versus ongoing actions.',
-      lessons: [vocab('verbs'), grammar('verb-aspects'), vocab('house')],
-    },
-    {
-      id: 'describing',
-      title: 'Describing people',
-      description: 'Match descriptive words to the people and things around you.',
-      lessons: [vocab('adjectives'), grammar('gender'), vocab('school-work')],
-    },
-    {
-      id: 'getting-around',
-      title: 'Getting around',
-      description: 'Move through places and use direct objects confidently.',
-      lessons: [vocab('transport'), grammar('nominative-accusative'), vocab('weather')],
+      id: 'description-movement',
+      title: 'Describe and navigate',
+      description:
+        'Describe people or practice movement and direct objects first. Both paths build clearer everyday sentences.',
+      strands: [
+        {
+          id: 'describing',
+          title: 'Describing people',
+          description:
+            'Match descriptive words to the people and things around you.',
+          lessons: [
+            vocab('adjectives'),
+            grammar('gender'),
+            vocab('school-work'),
+          ],
+        },
+        {
+          id: 'getting-around',
+          title: 'Getting around',
+          description: 'Move through places and use direct objects confidently.',
+          lessons: [
+            vocab('transport'),
+            grammar('nominative-accusative'),
+            vocab('weather'),
+          ],
+        },
+      ],
     },
     {
       id: 'daily-life',

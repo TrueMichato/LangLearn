@@ -14,6 +14,7 @@ import type {
   LearningPathNode,
   LearningPathNodeState,
   LearningPathRequirement,
+  LearningPathPhase,
   LearningPathStrand,
   LearningPathUnit,
 } from '../types/learning-path';
@@ -96,6 +97,18 @@ export function resolveLearningPath(
   const progress = new Map(
     resolution.progress.map((item) => [item.lessonId, item]),
   );
+  const fallbackPhase: LearningPathPhase = {
+    id: 'guided-path',
+    title: 'Guided path',
+    description: 'Follow the curriculum from foundations to broader practice.',
+  };
+  const phases =
+    manifest.phases && manifest.phases.length > 0
+      ? manifest.phases
+      : [fallbackPhase];
+  const phaseById = new Map(phases.map((phase) => [phase.id, phase]));
+  const phaseForUnit = (phaseId?: string) =>
+    (phaseId ? phaseById.get(phaseId) : undefined) ?? phases[0];
   const activityProgress = new Map(
     (resolution.activityProgress ?? []).map((item) => [item.milestoneId, item]),
   );
@@ -192,6 +205,7 @@ export function resolveLearningPath(
     nodes: LearningPathNode[],
     unitId: string,
     unitTitle: string,
+    phaseTitle: string,
     prerequisitesComplete: boolean,
   ) => {
     for (const node of nodes) {
@@ -248,6 +262,7 @@ export function resolveLearningPath(
             : ('available' as const),
         unitId,
         unitTitle,
+        phaseTitle,
         lessonCount: assessmentRange.length,
         lessonIds,
         firstLessonTitle: assessmentRange[0]?.title ?? target.title,
@@ -317,11 +332,13 @@ export function resolveLearningPath(
     letterLessonNodes,
     'letters',
     'Learn the script',
+    phases[0].title,
     parallelLetterUnit || lettersComplete,
   );
 
   let previousUnitComplete = prerequisitesComplete;
   const units: LearningPathUnit[] = manifest.units.map((unit) => {
+    const phase = phaseForUnit(unit.phaseId);
     const strands: LearningPathStrand[] = unit.strands
       ? unit.strands.map((strand) => ({
           id: strand.id,
@@ -342,6 +359,7 @@ export function resolveLearningPath(
       nodes,
       unit.id,
       unit.title,
+      phase.title,
       prerequisitesComplete,
     );
 
@@ -349,6 +367,8 @@ export function resolveLearningPath(
       id: unit.id,
       title: unit.title,
       description: unit.description,
+      presentation: unit.presentation ?? 'standard',
+      phase,
       nodes,
       checkpoints,
       strands,
@@ -372,6 +392,8 @@ export function resolveLearningPath(
               : letterLessonNodes.length > 0
                 ? 'Get comfortable with the writing system and its sounds before lessons begin.'
                 : 'Get comfortable with the writing system before lessons begin.',
+            presentation: 'standard' as const,
+            phase: phases[0],
             nodes: letterUnitNodes,
             strands: letterUnitStrands,
             checkpoints: letterUnitCheckpoints,
@@ -389,6 +411,7 @@ export function resolveLearningPath(
 
   return {
     language: manifest.language,
+    phases,
     units: allUnits,
     testOutOptions: allUnits.flatMap((unit) => unit.checkpoints),
     completedCount: requiredNodes.filter(

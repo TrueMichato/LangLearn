@@ -28,6 +28,10 @@ function scopePresets(
   return [options[0], options[middleIndex], options[options.length - 1]];
 }
 
+function approximateMinutes(lessonCount: number): number {
+  return Math.max(2, lessonCount * 2);
+}
+
 export default function PathTestOutPanel({
   options,
   language,
@@ -147,9 +151,7 @@ export default function PathTestOutPanel({
                 const label =
                   index === 0
                     ? 'Start small'
-                    : index === presets.length - 1
-                      ? 'Go furthest'
-                      : 'Go a little further';
+                    : `Through ${option.phaseTitle ?? option.unitTitle}`;
                 return (
                   <button
                     key={option.lessonId}
@@ -166,7 +168,8 @@ export default function PathTestOutPanel({
                       <span className="block text-sm font-medium">{label}</span>
                       <span className="mt-0.5 block text-xs leading-relaxed text-slate-600 dark:text-slate-300">
                         {option.lessonCount}{' '}
-                        {option.lessonCount === 1 ? 'lesson' : 'lessons'} through{' '}
+                        {option.lessonCount === 1 ? 'lesson' : 'lessons'} · about{' '}
+                        {approximateMinutes(option.lessonCount)} min · through{' '}
                         {option.unitTitle}
                       </span>
                     </span>
@@ -193,7 +196,9 @@ export default function PathTestOutPanel({
                 >
                   {trackOptions.map((option) => (
                     <option key={option.lessonId} value={option.lessonId}>
-                      {option.unitTitle}
+                      {option.phaseTitle
+                        ? `${option.phaseTitle} · ${option.unitTitle}`
+                        : option.unitTitle}
                     </option>
                   ))}
                 </select>
@@ -207,7 +212,10 @@ export default function PathTestOutPanel({
             <span className="font-medium text-slate-800 dark:text-slate-100">
               {selected.unitTitle}
             </span>
-            .
+            {selected.phaseTitle ? ` in ${selected.phaseTitle}` : ''}.
+            <span className="block">
+              About {approximateMinutes(selected.lessonCount)} minutes.
+            </span>
           </p>
           <p className="mt-1 text-xs leading-relaxed text-slate-500 dark:text-slate-400">
             Checking ahead does not grant normal lesson XP.
