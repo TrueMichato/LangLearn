@@ -12,7 +12,10 @@
   --safe-bottom: env(safe-area-inset-bottom, 0px);
   /* 3.875rem of nav content + its 1px top border. */
   --nav-height: calc(3.875rem + 1px);
+  /* 4.25rem of header content + its 1px bottom border. */
+  --shell-header-height: calc(4.25rem + 1px + var(--safe-top));
   --shell-bottom-clearance: calc(var(--nav-height) + var(--safe-bottom));
+  scroll-padding-top: var(--shell-header-height);
   scroll-padding-bottom: var(--shell-bottom-clearance);
 
   /* Focused app column width (phone-first, framed on desktop) */

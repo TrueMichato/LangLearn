@@ -53,6 +53,7 @@ export default function LearnPage() {
         </div>
       ) : path ? (
         <LearningPath
+          key={currentLanguage}
           path={path}
           focusCurrent={
             location.state?.focusCurrentPathStep === true

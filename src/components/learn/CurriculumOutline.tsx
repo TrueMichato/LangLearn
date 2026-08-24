@@ -187,17 +187,17 @@ export default function CurriculumOutline({ path }: Props) {
       <dl className="mb-4 divide-y divide-slate-200/70 border-y border-slate-200/70 text-sm dark:divide-white/10 dark:border-white/10">
         <div className="flex min-h-[44px] items-center justify-between gap-3 py-2">
           <dt className="font-medium text-slate-700 dark:text-slate-200">
-            Core path
+            Main path
           </dt>
           <dd className="text-slate-600 dark:text-slate-300">
             {coreComplete
-              ? 'Core path complete'
-              : `${path.completedCount} of ${path.totalCount} required`}
+              ? 'Main path complete'
+              : `${path.completedCount} of ${path.totalCount} complete`}
           </dd>
         </div>
         <div className="flex min-h-[44px] items-center justify-between gap-3 py-2">
           <dt className="font-medium text-slate-700 dark:text-slate-200">
-            Enrichment
+            Optional practice
           </dt>
           <dd className="text-slate-500 dark:text-slate-400">
             {enrichmentTotal > 0
@@ -227,7 +227,7 @@ export default function CurriculumOutline({ path }: Props) {
                     : 'bg-slate-100 text-slate-700 hover:bg-slate-200 dark:bg-slate-700 dark:text-slate-200 dark:hover:bg-slate-600'
                 }`}
               >
-                {option === 'core' ? 'Core path' : 'Enrichment'}
+                {option === 'core' ? 'Main path' : 'Optional practice'}
               </button>
             );
           })}
@@ -236,8 +236,8 @@ export default function CurriculumOutline({ path }: Props) {
 
       <p className="mb-3 text-sm text-slate-500 dark:text-slate-400">
         {scope === 'core'
-          ? 'Required units unlock in order.'
-          : 'Optional lessons are always open and never block your core path.'}
+          ? 'Main path units unlock in order.'
+          : 'Optional lessons are always open and never block your main path.'}
       </p>
 
       <div className="overflow-hidden rounded-2xl border border-slate-200/70 bg-white shadow-sm dark:border-white/10 dark:bg-slate-800">
@@ -288,10 +288,10 @@ export default function CurriculumOutline({ path }: Props) {
                       {current ? 'Current unit · ' : ''}
                       {completed === nodes.length
                         ? scope === 'core'
-                          ? 'Core complete'
+                          ? 'Main path complete'
                           : 'Explored'
                         : `${completed} of ${nodes.length} ${
-                            scope === 'core' ? 'required steps' : 'optional lessons'
+                            scope === 'core' ? 'path steps' : 'optional lessons'
                           }`}
                     </span>
                   </span>
@@ -352,7 +352,7 @@ export default function CurriculumOutline({ path }: Props) {
                     availableNodes.length > 1 &&
                     strands.length > 1 && (
                       <p className="mt-3 text-xs leading-relaxed text-slate-500 dark:text-slate-400">
-                        These strands are both required, but either can come first.
+                        Both strands are part of the main path, but either can come first.
                       </p>
                     )}
                   {scope === 'core' &&
