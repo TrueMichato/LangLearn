@@ -4,12 +4,11 @@ import { useCurrentLanguage } from '../hooks/useCurrentLanguage';
 import LanguagePicker from '../components/common/LanguagePicker';
 import LanguageUnavailable from '../components/common/LanguageUnavailable';
 import { useXPStore } from '../stores/xpStore';
-import { jaSentences } from '../data/sentences/ja-sentences';
-import { ruSentences } from '../data/sentences/ru-sentences';
-import { ptSentences } from '../data/sentences/pt-sentences';
-import { arSentences } from '../data/sentences/ar-sentences';
-import { roSentences } from '../data/sentences/ro-sentences';
-import type { PracticeSentence } from '../data/sentences/ja-sentences';
+import {
+  getPracticeSentences,
+  SENTENCE_LANGUAGES,
+  type PracticeSentence,
+} from '../data/sentences';
 import TileBuilder from '../components/sentences/TileBuilder';
 import TypeBuilder from '../components/sentences/TypeBuilder';
 
@@ -19,18 +18,6 @@ type Phase = 'setup' | 'session' | 'summary';
 
 const SENTENCES_PER_SESSION = 10;
 
-const SENTENCE_DATA: Record<string, PracticeSentence[]> = {
-  ja: jaSentences,
-  ru: ruSentences,
-  pt: ptSentences,
-  ar: arSentences,
-  ro: roSentences,
-};
-
-function getSentences(lang: string): PracticeSentence[] {
-  return SENTENCE_DATA[lang] ?? [];
-}
-
 function shuffle<T>(arr: T[]): T[] {
   const a = [...arr];
   for (let i = a.length - 1; i > 0; i--) {
@@ -39,8 +26,6 @@ function shuffle<T>(arr: T[]): T[] {
   }
   return a;
 }
-
-const SENTENCE_LANGUAGES = Object.keys(SENTENCE_DATA);
 
 export default function SentenceBuilderPage() {
   const {
@@ -59,7 +44,7 @@ export default function SentenceBuilderPage() {
   const [currentIdx, setCurrentIdx] = useState(0);
   const [score, setScore] = useState(0);
 
-  const allSentences = useMemo(() => getSentences(language), [language]);
+  const allSentences = useMemo(() => getPracticeSentences(language), [language]);
 
   const startSession = () => {
     let pool = allSentences;

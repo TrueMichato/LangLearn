@@ -24,6 +24,7 @@ describe('backup coverage', () => {
         'characterProgress',
         'testHistory',
         'badges',
+        'guidedActivityProgress',
       ]),
     );
   });
@@ -124,6 +125,11 @@ describe('mergeKey', () => {
   it('identifies keyed rows by id', () => {
     expect(mergeKey('lessonProgress', { id: 'ja/particles' })).toBe('ja/particles');
     expect(mergeKey('badges', { id: 'streak-7' })).toBe('streak-7');
+    expect(
+      mergeKey('guidedActivityProgress', {
+        id: 'es/sentence:foundations-1',
+      }),
+    ).toBe('es/sentence:foundations-1');
   });
 
   it('returns null when a row cannot be identified', () => {

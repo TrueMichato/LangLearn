@@ -34,6 +34,7 @@ const TABLES = {
   testHistory: { autoIncrement: true },
   badges: { autoIncrement: false },
   reviewLog: { autoIncrement: true },
+  guidedActivityProgress: { autoIncrement: false },
 } as const;
 
 export type BackupTableName = keyof typeof TABLES;
@@ -187,6 +188,36 @@ export function tablesInPayload(payload: BackupPayload): {
 
 type Row = Record<string, unknown>;
 
+function numericMax(left: unknown, right: unknown): number | undefined {
+  const values = [left, right].filter(
+    (value): value is number =>
+      typeof value === 'number' && Number.isFinite(value),
+  );
+  return values.length > 0 ? Math.max(...values) : undefined;
+}
+
+function earliestDate(left: unknown, right: unknown): string | null {
+  const dates = [left, right].filter(
+    (value): value is string => typeof value === 'string' && value.length > 0,
+  );
+  return dates.sort()[0] ?? null;
+}
+
+export function mergeGuidedActivityProgress(
+  existing: Row,
+  incoming: Row,
+): Row {
+  return {
+    ...incoming,
+    ...existing,
+    completedAt: earliestDate(existing.completedAt, incoming.completedAt),
+    attempts: numericMax(existing.attempts, incoming.attempts) ?? 0,
+    itemsCompleted:
+      numericMax(existing.itemsCompleted, incoming.itemsCompleted) ?? 0,
+    bestScore: numericMax(existing.bestScore, incoming.bestScore),
+  };
+}
+
 /**
  * A stable identity for a row, used by merge mode to recognise something the
  * learner already has. Returns null when the row cannot be identified, in which
@@ -203,6 +234,7 @@ export function mergeKey(table: BackupTableName, row: Row): string | null {
     case 'lessonProgress':
     case 'characterProgress':
     case 'badges':
+    case 'guidedActivityProgress':
       return row.id != null ? String(row.id) : null;
     case 'studySessions':
       return row.startTime != null ? String(row.startTime) : null;
@@ -359,6 +391,27 @@ async function importMerge(payload: BackupPayload): Promise<ImportResult> {
     for (const name of standalone) {
       const rows = (payload.tables[name] ?? []) as Row[];
       const existing = (await db.table(name).toArray()) as Row[];
+      if (name === 'guidedActivityProgress') {
+        const existingByKey = new Map(
+          existing
+            .map((row) => [mergeKey(name, row), row] as const)
+            .filter(
+              (entry): entry is readonly [string, Row] => entry[0] !== null,
+            ),
+        );
+        for (const row of rows) {
+          const key = mergeKey(name, row);
+          const current = key == null ? undefined : existingByKey.get(key);
+          const merged = current
+            ? mergeGuidedActivityProgress(current, row)
+            : row;
+          await db.table(name).put(merged as never);
+          if (key != null) existingByKey.set(key, merged);
+        }
+        written[name] = rows.length;
+        skipped[name] = 0;
+        continue;
+      }
       const existingKeys = new Set(
         existing.map((r) => mergeKey(name, r)).filter((k): k is string => k !== null),
       );

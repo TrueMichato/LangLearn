@@ -120,6 +120,7 @@ const PROGRESS_TABLES = [
   'testHistory',
   'badges',
   'reviewLog',
+  'guidedActivityProgress',
 ] as const;
 
 const DATA_LOSS_DISMISSED_KEY = 'langlearn-data-loss-dismissed';

@@ -1,6 +1,11 @@
 import type {
+  LearningPathActivityKind,
+  LearningPathActivityRef,
   LearningPathLessonRef,
   LearningPathManifest,
+  LearningPathMilestoneRef,
+  LearningPathRequirement,
+  LearningPathSessionBounds,
   LearningPathUnitManifest,
 } from '../../types/learning-path';
 
@@ -16,10 +21,47 @@ export const vocab = (lessonId: string): LearningPathLessonRef => ({
 
 export function unitLessons(
   unit: LearningPathUnitManifest,
-): LearningPathLessonRef[] {
+): LearningPathMilestoneRef[] {
   return unit.strands
     ? unit.strands.flatMap((strand) => strand.lessons)
     : unit.lessons;
+}
+
+export function activityMilestoneId(
+  kind: LearningPathActivityKind,
+  id: string,
+): string {
+  if (!/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(id)) {
+    throw new Error(`Activity milestone id must be kebab-case: ${id}`);
+  }
+  return `${kind}:${id}`;
+}
+
+export function activity(
+  kind: LearningPathActivityKind,
+  id: string,
+  title: string,
+  route: string,
+  session: LearningPathSessionBounds,
+  requirement: LearningPathRequirement = 'required',
+): LearningPathActivityRef {
+  if (
+    session.minItems < 1 ||
+    session.minItems > session.targetItems ||
+    session.targetItems > session.maxItems
+  ) {
+    throw new Error(`Invalid session bounds for ${kind}:${id}`);
+  }
+  const milestoneId = activityMilestoneId(kind, id);
+  return {
+    kind,
+    milestoneId,
+    lessonId: milestoneId,
+    title,
+    route,
+    session,
+    requirement,
+  };
 }
 
 export function defineLearningPath(
@@ -27,18 +69,23 @@ export function defineLearningPath(
 ): LearningPathManifest {
   const unitIds = new Set<string>();
   const lessonIds = new Set<string>();
-  const registerLesson = (lesson: LearningPathLessonRef) => {
-    const lessonKey = `${lesson.kind}:${lesson.lessonId}`;
-    if (lessonIds.has(lessonKey)) {
+  const registerMilestone = (milestone: LearningPathMilestoneRef) => {
+    const milestoneKey =
+      'milestoneId' in milestone
+        ? milestone.milestoneId
+        : `${milestone.kind}:${milestone.lessonId}`;
+    if (lessonIds.has(milestoneKey)) {
+      const itemLabel =
+        'milestoneId' in milestone ? 'milestone' : 'lesson';
       throw new Error(
-        `Learning path ${manifest.language} repeats lesson ${lessonKey}`,
+        `Learning path ${manifest.language} repeats ${itemLabel} ${milestoneKey}`,
       );
     }
-    lessonIds.add(lessonKey);
+    lessonIds.add(milestoneKey);
   };
 
   for (const lesson of manifest.letterUnitLessons ?? []) {
-    registerLesson(lesson);
+    registerMilestone(lesson);
   }
 
   for (const unit of manifest.units) {
@@ -78,7 +125,7 @@ export function defineLearningPath(
       throw new Error(`Learning path unit ${unit.id} has no lessons`);
     }
 
-    for (const lesson of unitLessons(unit)) registerLesson(lesson);
+    for (const milestone of unitLessons(unit)) registerMilestone(milestone);
   }
 
   return manifest;

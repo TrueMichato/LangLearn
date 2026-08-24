@@ -4,6 +4,7 @@ import { beforeEach, describe, expect, it, vi } from 'vitest';
 import { getPathRecommendations } from '../lib/learn-activity-recommendations';
 import BrowseActivitiesPage from '../pages/BrowseActivities';
 import LearnPage from '../pages/Learn';
+import ListeningPage from '../pages/Listening';
 import { ROUTES } from '../lib/routes';
 import type { LearningPath } from '../types/learning-path';
 
@@ -11,6 +12,9 @@ const mockActiveLanguages = ['ja', 'ar'] as const;
 const mockCurrentLanguage = {
   language: 'ja',
   setLanguage: vi.fn(),
+  options: ['ja', 'ar'],
+  isSupported: true,
+  requested: 'ja',
 };
 
 vi.mock('../stores/settingsStore', () => ({
@@ -60,6 +64,16 @@ describe('Learn and Browse activities pages', () => {
     expect(html).toContain('Lessons &amp; practice');
     expect(html).not.toContain('Recommended Resources');
     expect(html).not.toContain('Cloze Practice');
+  });
+
+  it('opens guided dictation links in dictation mode', () => {
+    const html = renderToStaticMarkup(
+      <MemoryRouter initialEntries={['/listening?mode=dictation']}>
+        <ListeningPage />
+      </MemoryRouter>,
+    );
+
+    expect(html).toContain('Start Dictation Practice');
   });
 
   it('keeps lesson libraries and all practice routes visible', () => {

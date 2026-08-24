@@ -1,5 +1,5 @@
 import { useState, useCallback, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useSearchParams } from 'react-router-dom';
 import { useCurrentLanguage } from '../hooks/useCurrentLanguage';
 import LanguagePicker from '../components/common/LanguagePicker';
 import LanguageUnavailable from '../components/common/LanguageUnavailable';
@@ -37,6 +37,7 @@ type Screen = 'setup' | 'practice' | 'questions' | 'summary' | 'dictation' | 'di
 const LISTENING_LANGUAGES = Object.keys(LANG_PASSAGES);
 
 export default function ListeningPage() {
+  const [searchParams] = useSearchParams();
   const {
     language: currentLanguage,
     setLanguage,
@@ -49,7 +50,9 @@ export default function ListeningPage() {
   const [difficulty, setDifficulty] = useState<Difficulty>('all');
   const timerStart = useTimerStore((s) => s.start);
   const timerRunning = useTimerStore((s) => s.isRunning);
-  const [mode, setMode] = useState<Mode>('comprehension');
+  const [mode, setMode] = useState<Mode>(() =>
+    searchParams.get('mode') === 'dictation' ? 'dictation' : 'comprehension',
+  );
   const [screen, setScreen] = useState<Screen>('setup');
   const [passage, setPassage] = useState<ListeningPassage | null>(null);
   const [usedIds, setUsedIds] = useState<Set<string>>(new Set());

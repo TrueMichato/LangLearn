@@ -1,16 +1,30 @@
 import { Link } from 'react-router-dom';
 import { isRTL } from '../../lib/rtl';
-import type { LearningPath } from '../../types/learning-path';
+import type {
+  LearningPath,
+  LearningPathNodeKind,
+} from '../../types/learning-path';
 
 interface Props {
   path: LearningPath;
 }
 
-const KIND_LABELS = {
+const KIND_LABELS: Record<LearningPathNodeKind, string> = {
   letters: 'Letters',
   vocab: 'Vocabulary',
   grammar: 'Grammar',
-} as const;
+  sentence: 'Sentences',
+  cloze: 'Cloze',
+  listening: 'Listening',
+  dictation: 'Dictation',
+  conjugation: 'Conjugation',
+  translation: 'Translation',
+  'minimal-pairs': 'Minimal pairs',
+  numbers: 'Numbers',
+  reading: 'Reading',
+  lyrics: 'Lyrics',
+  tests: 'Tests',
+};
 
 export default function CurriculumOutline({ path }: Props) {
   const rtl = isRTL(path.language);
@@ -45,13 +59,19 @@ export default function CurriculumOutline({ path }: Props) {
 
       <div className="overflow-hidden rounded-2xl border border-slate-200/70 bg-white shadow-sm dark:border-white/10 dark:bg-slate-800">
         {path.units.map((unit, unitIndex) => {
-          const completed = unit.nodes.filter(
+          const requiredNodes = unit.nodes.filter(
+            (node) => (node.requirement ?? 'required') === 'required',
+          );
+          const completed = requiredNodes.filter(
             (node) => node.state === 'completed',
           ).length;
           const availableNodes = unit.nodes.filter(
             (node) => node.state === 'available',
           );
           const current = unitIndex === currentUnitIndex;
+          const recommendedNode = unit.nodes.find(
+            (node) => node.id === path.recommendedNodeId,
+          );
           const renderNode = (node: (typeof unit.nodes)[number]) => {
             const recommended = node.id === path.recommendedNodeId;
             const body = (
@@ -126,7 +146,7 @@ export default function CurriculumOutline({ path }: Props) {
                   </span>
                   <span className="mt-0.5 block text-xs text-slate-500 dark:text-slate-400">
                     {current ? 'Current unit · ' : ''}
-                    {completed} of {unit.nodes.length} steps
+                    {completed} of {requiredNodes.length} steps
                   </span>
                 </span>
                 <span
@@ -167,11 +187,11 @@ export default function CurriculumOutline({ path }: Props) {
                     {unit.nodes.map(renderNode)}
                   </ol>
                 )}
-                {availableNodes.length > 0 &&
-                  unit.nodes.some((node) => node.state === 'locked') &&
+                {recommendedNode &&
+                  requiredNodes.some((node) => node.state === 'locked') &&
                   unit.strands.length === 0 && (
                     <p className="mt-3 text-xs leading-relaxed text-slate-500 dark:text-slate-400">
-                      Complete {availableNodes[0].title} to unlock the next
+                      Complete {recommendedNode.title} to unlock the next
                       lesson.
                     </p>
                   )}

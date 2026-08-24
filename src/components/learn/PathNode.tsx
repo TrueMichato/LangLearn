@@ -1,5 +1,8 @@
 import { Link } from 'react-router-dom';
-import type { LearningPathNode as LearningPathNodeModel } from '../../types/learning-path';
+import type {
+  LearningPathNode as LearningPathNodeModel,
+  LearningPathNodeKind,
+} from '../../types/learning-path';
 
 interface Props {
   node: LearningPathNodeModel;
@@ -11,11 +14,22 @@ interface Props {
   rtl?: boolean;
 }
 
-const KIND_DETAILS = {
+const KIND_DETAILS: Record<LearningPathNodeKind, { emoji: string; label: string }> = {
   letters: { emoji: '🔤', label: 'Letters' },
   vocab: { emoji: '📝', label: 'Vocabulary' },
   grammar: { emoji: '📖', label: 'Grammar' },
-} as const;
+  sentence: { emoji: '🧩', label: 'Sentences' },
+  cloze: { emoji: '✍️', label: 'Cloze' },
+  listening: { emoji: '🎧', label: 'Listening' },
+  dictation: { emoji: '🎙️', label: 'Dictation' },
+  conjugation: { emoji: '🔁', label: 'Conjugation' },
+  translation: { emoji: '🌐', label: 'Translation' },
+  'minimal-pairs': { emoji: '👂', label: 'Minimal pairs' },
+  numbers: { emoji: '🔢', label: 'Numbers' },
+  reading: { emoji: '📚', label: 'Reading' },
+  lyrics: { emoji: '🎵', label: 'Lyrics' },
+  tests: { emoji: '✅', label: 'Test' },
+};
 
 function nodeClasses(
   node: LearningPathNodeModel,

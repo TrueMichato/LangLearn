@@ -8,7 +8,9 @@ import {
   vocab,
 } from '../data/learning-paths/shared';
 import { resolveLearningPath } from '../lib/learning-path';
+import { activity } from '../data/learning-paths/shared';
 import type { LessonProgress } from '../db/schema';
+import type { LearningPathManifest } from '../types/learning-path';
 
 interface LessonMeta {
   id: string;
@@ -465,6 +467,143 @@ describe('resolveLearningPath completedAheadCount', () => {
     });
 
     expect(path.completedAheadCount).toBe(0);
+  });
+
+  describe('resolveLearningPath activity milestones', () => {
+    const sentence = activity(
+      'sentence',
+      'foundations-1',
+      'Build foundation sentences',
+      '/sentence-builder',
+      { minItems: 5, targetItems: 10, maxItems: 20 },
+      'enrichment',
+    );
+    const manifest: LearningPathManifest = {
+      language: 'es',
+      letterPrerequisites: [],
+      units: [
+        {
+          id: 'foundations',
+          title: 'Foundations',
+          description: 'Start here.',
+          lessons: [sentence, { kind: 'grammar', lessonId: 'g1' }],
+        },
+        {
+          id: 'next',
+          title: 'Next',
+          description: 'Keep going.',
+          lessons: [{ kind: 'vocab', lessonId: 'v1' }],
+        },
+      ],
+    };
+    const content = {
+      grammar: [{ id: 'g1', title: 'Grammar one' }],
+      vocab: [{ id: 'v1', title: 'Vocabulary one' }],
+    };
+
+    it('keeps enrichment available without taking the required recommendation', () => {
+      const path = resolveLearningPath(manifest, content, {
+        progress: [],
+        completedLetters: new Set(),
+      });
+      const [enrichment, required, next] = path.units.flatMap(
+        (unit) => unit.nodes,
+      );
+
+      expect(enrichment).toMatchObject({
+        id: 'sentence:foundations-1',
+        milestoneId: 'sentence:foundations-1',
+        state: 'available',
+        requirement: 'enrichment',
+      });
+      expect(required).toMatchObject({
+        state: 'available',
+        requirement: 'required',
+      });
+      expect(path.recommendedNodeId).toBe('grammar:g1');
+      expect(next.state).toBe('locked');
+      expect(path.totalCount).toBe(2);
+      expect(path.enrichmentTotalCount).toBe(1);
+    });
+
+    it('does not let incomplete enrichment block the following unit', () => {
+      const path = resolveLearningPath(manifest, content, {
+        progress: [progress('g1', 'es')],
+        completedLetters: new Set(),
+      });
+      const nodes = path.units.flatMap((unit) => unit.nodes);
+
+      expect(nodes.find((node) => node.id === sentence.lessonId)?.state).toBe(
+        'available',
+      );
+      expect(nodes.find((node) => node.id === 'vocab:v1')).toMatchObject({
+        state: 'available',
+      });
+      expect(path.recommendedNodeId).toBe('vocab:v1');
+    });
+
+    it('recognises durable activity completion', () => {
+      const path = resolveLearningPath(manifest, content, {
+        progress: [],
+        completedLetters: new Set(),
+        activityProgress: [
+          {
+            id: `es/${sentence.lessonId}`,
+            language: 'es',
+            milestoneId: sentence.lessonId,
+            activity: 'sentence',
+            completedAt: '2026-01-01T00:00:00.000Z',
+            attempts: 1,
+            itemsCompleted: 10,
+          },
+        ],
+      });
+
+      expect(path.units[0].nodes[0]).toMatchObject({
+        state: 'completed',
+        milestoneId: sentence.lessonId,
+        session: { targetItems: 10 },
+      });
+      expect(path.enrichmentCompletedCount).toBe(1);
+    });
+
+    it('opens a parallel unit together but keeps one required recommendation', () => {
+      const parallelManifest: LearningPathManifest = {
+        language: 'es',
+        letterPrerequisites: [],
+        units: [
+          {
+            id: 'parallel',
+            title: 'Parallel practice',
+            description: 'Choose either track.',
+            strands: [
+              {
+                id: 'grammar',
+                title: 'Grammar',
+                description: 'Grammar strand.',
+                lessons: [{ kind: 'grammar', lessonId: 'g1' }],
+              },
+              {
+                id: 'vocab',
+                title: 'Vocabulary',
+                description: 'Vocabulary strand.',
+                lessons: [{ kind: 'vocab', lessonId: 'v1' }],
+              },
+            ],
+          },
+        ],
+      };
+      const path = resolveLearningPath(parallelManifest, content, {
+        progress: [],
+        completedLetters: new Set(),
+      });
+
+      expect(path.units[0].nodes.map((node) => node.state)).toEqual([
+        'available',
+        'available',
+      ]);
+      expect(path.recommendedNodeId).toBe('grammar:g1');
+    });
   });
 
   it('is zero once every node on the path is complete', () => {

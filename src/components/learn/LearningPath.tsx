@@ -35,8 +35,12 @@ export default function LearningPath({ path, focusCurrent = false }: Props) {
       : [];
   const currentUnit =
     path.units[currentUnitIndex >= 0 ? currentUnitIndex : path.units.length - 1];
+  const currentRequiredNodes =
+    currentUnit?.nodes.filter(
+      (node) => (node.requirement ?? 'required') === 'required',
+    ) ?? [];
   const currentUnitCompleted =
-    currentUnit?.nodes.filter((node) => node.state === 'completed').length ?? 0;
+    currentRequiredNodes.filter((node) => node.state === 'completed').length;
   const testOutOptions = path.testOutOptions.filter(
     (option) => option.state === 'available',
   );
@@ -71,11 +75,16 @@ export default function LearningPath({ path, focusCurrent = false }: Props) {
     unit: LearningPathModel['units'][number],
     unitIndex: number,
   ) {
-    const availableNodes = unit.nodes.filter(
-      (node) => node.state === 'available',
+    const requiredNodes = unit.nodes.filter(
+      (node) => (node.requirement ?? 'required') === 'required',
     );
-    const hasLockedSteps = unit.nodes.some((node) => node.state === 'locked');
-    const unitComplete = unit.nodes.every(
+    const recommendedNode = unit.nodes.find(
+      (node) => node.id === path.recommendedNodeId,
+    );
+    const hasLockedSteps = requiredNodes.some(
+      (node) => node.state === 'locked',
+    );
+    const unitComplete = requiredNodes.every(
       (node) => node.state === 'completed',
     );
     const parallel = unit.strands.length > 0;
@@ -215,10 +224,10 @@ export default function LearningPath({ path, focusCurrent = false }: Props) {
         )}
         {unit.id === currentUnitId &&
           !parallel &&
-          availableNodes[0] &&
+          recommendedNode &&
           hasLockedSteps && (
           <p className="mt-3 text-xs leading-relaxed text-slate-500 dark:text-slate-400">
-            Complete {availableNodes[0].title} to unlock the next lesson.
+            Complete {recommendedNode.title} to unlock the next lesson.
           </p>
         )}
         {unit.id === currentUnitId && parallel && !unitComplete && (
@@ -244,7 +253,7 @@ export default function LearningPath({ path, focusCurrent = false }: Props) {
             {complete
               ? 'You completed every step on this path.'
               : `${currentUnit?.title ?? 'Current unit'} · ${currentUnitCompleted} of ${
-                  currentUnit?.nodes.length ?? 0
+                  currentRequiredNodes.length
                 } steps complete`}
           </p>
         </div>

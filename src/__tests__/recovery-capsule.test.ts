@@ -92,6 +92,18 @@ describe('recovery capsule storage', () => {
     ).toBeNull();
   });
 
+  it('accepts a complete pre-v11 capsule without guided activity progress', () => {
+    const previous = capsule('2026-01-01T00:00:00.000Z');
+    previous.schemaVersion = CURRENT_SCHEMA_VERSION - 1;
+    previous.payload.schemaVersion = CURRENT_SCHEMA_VERSION - 1;
+    delete previous.payload.tables.guidedActivityProgress;
+
+    expect(
+      parseRecoveryCapsule(JSON.stringify(previous))?.payload.tables
+        .guidedActivityProgress,
+    ).toBeUndefined();
+  });
+
   it('keeps the last valid capsule when a quota write fails', () => {
     const storage = new MemoryStorage();
     const previous = capsule('2026-01-01T00:00:00.000Z');

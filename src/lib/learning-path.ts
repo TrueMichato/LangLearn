@@ -1,13 +1,19 @@
 import { getAlphabetsForLanguage } from '../data/alphabets';
 import { getLearningPathManifest } from '../data/learning-paths';
+import { loadGuidedActivityProgress } from '../db/guided-activities';
 import { getLessonProgress, markLessonComplete } from '../db/lessons';
-import type { LessonProgress } from '../db/schema';
 import type {
+  GuidedActivityProgress,
+  LessonProgress,
+} from '../db/schema';
+import type {
+  ArabicLearningPathPolicy,
   LearningPath,
-  LearningPathLessonRef,
   LearningPathManifest,
+  LearningPathMilestoneRef,
   LearningPathNode,
   LearningPathNodeState,
+  LearningPathRequirement,
   LearningPathStrand,
   LearningPathUnit,
 } from '../types/learning-path';
@@ -36,6 +42,8 @@ export interface LearningPathContent {
 export interface LearningPathResolution {
   progress: readonly LessonProgress[];
   completedLetters: ReadonlySet<string>;
+  activityProgress?: readonly GuidedActivityProgress[];
+  arabicPolicy?: ArabicLearningPathPolicy;
 }
 
 function contentMap(items: readonly LessonMeta[]): Map<string, LessonMeta> {
@@ -50,6 +58,25 @@ function resolveState(
   return prerequisitesComplete ? 'available' : 'locked';
 }
 
+function isLessonMilestone(
+  milestone: LearningPathMilestoneRef,
+): milestone is Extract<
+  LearningPathMilestoneRef,
+  { kind: 'grammar' | 'vocab' }
+> {
+  return milestone.kind === 'grammar' || milestone.kind === 'vocab';
+}
+
+function requirementOf(
+  milestone: Pick<LearningPathMilestoneRef, 'requirement'>,
+): LearningPathRequirement {
+  return milestone.requirement ?? 'required';
+}
+
+function nodeIsRequired(node: LearningPathNode): boolean {
+  return (node.requirement ?? 'required') === 'required';
+}
+
 export function resolveLearningPath(
   manifest: LearningPathManifest,
   content: LearningPathContent,
@@ -60,65 +87,93 @@ export function resolveLearningPath(
   const progress = new Map(
     resolution.progress.map((item) => [item.lessonId, item]),
   );
+  const activityProgress = new Map(
+    (resolution.activityProgress ?? []).map((item) => [item.milestoneId, item]),
+  );
   let completedAheadCount = 0;
   const encounteredLessons = {
     grammar: [] as LearningPathNode[],
     vocab: [] as LearningPathNode[],
   };
 
-  const resolveLessonNode = (
-    lesson: LearningPathLessonRef,
+  const resolveMilestoneNode = (
+    milestone: LearningPathMilestoneRef,
     unitId: string,
     prerequisitesComplete: boolean,
     strandId?: string,
   ): LearningPathNode => {
+    const requirement = requirementOf(milestone);
+    if (!isLessonMilestone(milestone)) {
+      const completed =
+        activityProgress.get(milestone.milestoneId)?.completedAt != null;
+      const state = resolveState(completed, prerequisitesComplete);
+      if (completed && !prerequisitesComplete) completedAheadCount += 1;
+      return {
+        id: milestone.milestoneId,
+        kind: milestone.kind,
+        milestoneId: milestone.milestoneId,
+        lessonId: milestone.lessonId,
+        title: milestone.title,
+        route: milestone.route,
+        state,
+        unitId,
+        strandId,
+        requirement,
+        session: milestone.session,
+      };
+    }
+
     const metadata =
-      lesson.kind === 'grammar'
-        ? grammar.get(lesson.lessonId)
-        : vocab.get(lesson.lessonId);
+      milestone.kind === 'grammar'
+        ? grammar.get(milestone.lessonId)
+        : vocab.get(milestone.lessonId);
     if (!metadata) {
       throw new Error(
-        `Learning path ${manifest.language} references missing ${lesson.kind} lesson ${lesson.lessonId}`,
+        `Learning path ${manifest.language} references missing ${milestone.kind} lesson ${milestone.lessonId}`,
       );
     }
 
     const progressId =
-      lesson.kind === 'vocab'
-        ? `vocab/${lesson.lessonId}`
-        : lesson.lessonId;
+      milestone.kind === 'vocab'
+        ? `vocab/${milestone.lessonId}`
+        : milestone.lessonId;
     const completed = progress.get(progressId)?.completed === true;
     const state = resolveState(completed, prerequisitesComplete);
     if (completed && !prerequisitesComplete) completedAheadCount += 1;
     return {
-      id: `${lesson.kind}:${lesson.lessonId}`,
-      kind: lesson.kind,
+      id: `${milestone.kind}:${milestone.lessonId}`,
+      kind: milestone.kind,
+      milestoneId: milestone.lessonId,
       lessonId: progressId,
       title: metadata.title,
       route:
-        lesson.kind === 'grammar'
-          ? grammarLessonRoute(lesson.lessonId)
-          : vocabLessonRoute(lesson.lessonId),
+        milestone.kind === 'grammar'
+          ? grammarLessonRoute(milestone.lessonId)
+          : vocabLessonRoute(milestone.lessonId),
       state,
       unitId,
       strandId,
+      requirement,
     };
   };
 
   const resolveSequence = (
-    lessons: readonly LearningPathLessonRef[],
+    milestones: readonly LearningPathMilestoneRef[],
     unitId: string,
     prerequisitesComplete: boolean,
     strandId?: string,
   ): LearningPathNode[] => {
     let nextPrerequisitesComplete = prerequisitesComplete;
-    return lessons.map((lesson) => {
-      const node = resolveLessonNode(
-        lesson,
+    return milestones.map((milestone) => {
+      const node = resolveMilestoneNode(
+        milestone,
         unitId,
         nextPrerequisitesComplete,
         strandId,
       );
-      if (node.state !== 'completed') nextPrerequisitesComplete = false;
+      if (nodeIsRequired(node) && node.state !== 'completed') {
+        nextPrerequisitesComplete = false;
+      }
       return node;
     });
   };
@@ -130,11 +185,25 @@ export function resolveLearningPath(
     prerequisitesComplete: boolean,
   ) => {
     for (const node of nodes) {
-      encounteredLessons[node.kind as 'grammar' | 'vocab'].push(node);
+      if (
+        nodeIsRequired(node) &&
+        (node.kind === 'grammar' || node.kind === 'vocab')
+      ) {
+        encounteredLessons[node.kind].push(node);
+      }
     }
-    const kinds = [...new Set(nodes.map((node) => node.kind))].filter(
-      (kind): kind is 'grammar' | 'vocab' => kind !== 'letters',
-    );
+    const kinds = [
+      ...new Set(
+        nodes
+          .filter(
+            (node) =>
+              nodeIsRequired(node) &&
+              (node.kind === 'grammar' || node.kind === 'vocab'),
+          )
+          .map((node) => node.kind),
+      ),
+    ] as Array<'grammar' | 'vocab'>;
+
     return kinds.map((kind) => {
       const lessons = encounteredLessons[kind];
       const target = lessons[lessons.length - 1];
@@ -193,12 +262,14 @@ export function resolveLearningPath(
       return {
         id: `letters:${alphabetName}`,
         kind: 'letters',
+        milestoneId: `letters:${alphabetName}`,
         lessonId,
         title: alphabetName,
         route: guidedLettersRoute(manifest.language, alphabetName),
         state,
         unitId: 'letters',
         strandId: parallelLetterUnit ? 'letter-practice' : undefined,
+        requirement: 'required',
       };
     },
   );
@@ -228,9 +299,9 @@ export function resolveLearningPath(
         },
       ]
     : [];
-  const prerequisitesComplete = letterUnitNodes.every(
-    (node) => node.state === 'completed',
-  );
+  const prerequisitesComplete = letterUnitNodes
+    .filter(nodeIsRequired)
+    .every((node) => node.state === 'completed');
   const letterUnitCheckpoints = buildCheckpoints(
     letterLessonNodes,
     'letters',
@@ -273,7 +344,9 @@ export function resolveLearningPath(
     };
     previousUnitComplete =
       previousUnitComplete &&
-      nodes.every((node) => node.state === 'completed');
+      nodes
+        .filter(nodeIsRequired)
+        .every((node) => node.state === 'completed');
     return resolvedUnit;
   });
 
@@ -283,10 +356,9 @@ export function resolveLearningPath(
           {
             id: 'letters',
             title: 'Learn the script',
-            description:
-              parallelLetterUnit
-                ? 'Learn the shapes and sounds side by side before lessons begin.'
-                : letterLessonNodes.length > 0
+            description: parallelLetterUnit
+              ? 'Learn the shapes and sounds side by side before lessons begin.'
+              : letterLessonNodes.length > 0
                 ? 'Get comfortable with the writing system and its sounds before lessons begin.'
                 : 'Get comfortable with the writing system before lessons begin.',
             nodes: letterUnitNodes,
@@ -298,14 +370,24 @@ export function resolveLearningPath(
       : units;
   const nodes = allUnits.flatMap((unit) => unit.nodes);
   const recommendedNodeId =
-    nodes.find((node) => node.state === 'available')?.id ?? null;
+    nodes.find(
+      (node) => nodeIsRequired(node) && node.state === 'available',
+    )?.id ?? null;
+  const requiredNodes = nodes.filter(nodeIsRequired);
+  const enrichmentNodes = nodes.filter((node) => !nodeIsRequired(node));
 
   return {
     language: manifest.language,
     units: allUnits,
     testOutOptions: allUnits.flatMap((unit) => unit.checkpoints),
-    completedCount: nodes.filter((node) => node.state === 'completed').length,
-    totalCount: nodes.length,
+    completedCount: requiredNodes.filter(
+      (node) => node.state === 'completed',
+    ).length,
+    totalCount: requiredNodes.length,
+    enrichmentCompletedCount: enrichmentNodes.filter(
+      (node) => node.state === 'completed',
+    ).length,
+    enrichmentTotalCount: enrichmentNodes.length,
     completedAheadCount,
     recommendedNodeId,
   };
@@ -330,10 +412,11 @@ export async function loadLearningPath(
   const manifest = getLearningPathManifest(language);
   if (!manifest) return null;
 
-  const [grammar, vocab, progress] = await Promise.all([
+  const [grammar, vocab, progress, activityProgress] = await Promise.all([
     fetchLessonIndex(language, 'grammar'),
     fetchLessonIndex(language, 'vocab'),
     getLessonProgress(language),
+    loadGuidedActivityProgress(language),
   ]);
   const alphabets = getAlphabetsForLanguage(language);
   const completedLetters = new Set<string>();
@@ -349,7 +432,11 @@ export async function loadLearningPath(
     if (isGuidedAlphabetComplete(alphabetName, language, groups)) {
       completedLetters.add(alphabetName);
       const lessonId = guidedLessonId(alphabetName);
-      if (!progress.some((item) => item.lessonId === lessonId && item.completed)) {
+      if (
+        !progress.some(
+          (item) => item.lessonId === lessonId && item.completed,
+        )
+      ) {
         await markLessonComplete(language, lessonId, 100);
       }
     }
@@ -358,6 +445,6 @@ export async function loadLearningPath(
   return resolveLearningPath(
     manifest,
     { grammar, vocab },
-    { progress, completedLetters },
+    { progress, completedLetters, activityProgress },
   );
 }

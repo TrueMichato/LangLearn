@@ -26,6 +26,7 @@ export const RECOVERY_CAPSULE_TABLES = [
   'characterProgress',
   'testHistory',
   'badges',
+  'guidedActivityProgress',
 ] as const satisfies readonly BackupTableName[];
 
 const RECOVERY_PROGRESS_TABLES = [
@@ -37,6 +38,7 @@ const RECOVERY_PROGRESS_TABLES = [
   'characterProgress',
   'testHistory',
   'badges',
+  'guidedActivityProgress',
 ] as const satisfies readonly BackupTableName[];
 
 export interface RecoveryCapsule {
@@ -115,15 +117,20 @@ export function parseRecoveryCapsule(
     }
 
     const payload = normalizePayload(raw.payload);
+    const requiredTables =
+      raw.schemaVersion >= 11
+        ? RECOVERY_CAPSULE_TABLES
+        : RECOVERY_CAPSULE_TABLES.filter(
+            (name) => name !== 'guidedActivityProgress',
+          );
     if (
       payload.schemaVersion !== raw.schemaVersion ||
-      RECOVERY_CAPSULE_TABLES.some(
+      requiredTables.some(
         (name) => !Array.isArray(payload.tables[name]),
       )
     ) {
       return null;
     }
-
     return {
       version: RECOVERY_CAPSULE_VERSION,
       createdAt: raw.createdAt,
