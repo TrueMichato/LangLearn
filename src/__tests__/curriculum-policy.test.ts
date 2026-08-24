@@ -52,7 +52,10 @@ describe('curriculum classification policy', () => {
   it('keeps canonical Japanese grammar required and reference catalogs enrichment', () => {
     const entries = indexFor(GRAMMAR_INDEXES, 'ja');
     const particles = entries.find((entry) => entry.id === 'particles');
-    const tofugu = entries.find((entry) => entry.id === 'tofugu-particle-wa');
+    const tofuguCore = entries.find((entry) => entry.id === 'tofugu-particle-wa');
+    const tofuguReference = entries.find(
+      (entry) => entry.id === 'tofugu-particle-kara',
+    );
     const taeKim = entries.find(
       (entry) => entry.id === 'taekim-state-of-being',
     );
@@ -60,7 +63,10 @@ describe('curriculum classification policy', () => {
     expect(classifyCatalogEntry('ja', 'grammar', particles!)).toEqual({
       requirement: 'required',
     });
-    expect(classifyCatalogEntry('ja', 'grammar', tofugu!)).toEqual({
+    expect(classifyCatalogEntry('ja', 'grammar', tofuguCore!)).toEqual({
+      requirement: 'required',
+    });
+    expect(classifyCatalogEntry('ja', 'grammar', tofuguReference!)).toEqual({
       requirement: 'enrichment',
     });
     expect(classifyCatalogEntry('ja', 'grammar', taeKim!)).toEqual({
@@ -75,7 +81,14 @@ describe('curriculum classification policy', () => {
           classifyCatalogEntry('ja', 'grammar', entry).requirement ===
           'required',
       ),
-    ).toHaveLength(35);
+    ).toHaveLength(50);
+    expect(
+      entries.filter(
+        (entry) =>
+          classifyCatalogEntry('ja', 'grammar', entry).requirement ===
+          'enrichment',
+      ),
+    ).toHaveLength(129);
     expect(
       entries
         .filter(
@@ -150,7 +163,10 @@ describe('guided activity capabilities', () => {
   it('matches the currently shipped activity data coverage', () => {
     for (const language of CURRICULUM_LANGUAGES) {
       for (const kind of GUIDED_ACTIVITY_KINDS) {
-        const expected = kind !== 'numbers' || language === 'ar';
+        const expected =
+          kind === 'letters'
+            ? language === 'ja' || language === 'ru' || language === 'ar'
+            : kind !== 'numbers' || language === 'ar';
         expect(
           ACTIVITY_CAPABILITIES[language][kind].available,
           `${language}/${kind}`,

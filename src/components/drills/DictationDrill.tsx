@@ -12,6 +12,10 @@ import { speakWithSpeed } from '../../lib/tts';
 import { isRTL } from '../../lib/rtl';
 import type { ListeningPassage } from '../../data/listening/ja-passages';
 import type { DiffResult } from '../../lib/text-diff';
+import {
+  selectGuidedItems,
+  type GuidedPracticeDescriptor,
+} from '../../lib/guided-practice';
 
 const LANG_PASSAGES: Record<string, ListeningPassage[]> = {
   ja: jaPassages,
@@ -32,6 +36,7 @@ interface DictationDrillProps {
   difficulty: string;
   onComplete: (stats: { correct: number; total: number; xpEarned: number }) => void;
   onBack: () => void;
+  guidedDescriptor?: GuidedPracticeDescriptor;
 }
 
 
@@ -62,11 +67,22 @@ function shuffle<T>(arr: T[]): T[] {
   return a;
 }
 
-export default function DictationDrill({ language, difficulty, onComplete, onBack }: DictationDrillProps) {
+export default function DictationDrill({
+  language,
+  difficulty,
+  onComplete,
+  onBack,
+  guidedDescriptor,
+}: DictationDrillProps) {
   const allSentences = useMemo(() => {
-    const pool = extractSentences(LANG_PASSAGES[language] ?? [], difficulty);
-    return shuffle(pool).slice(0, SENTENCES_PER_SESSION);
-  }, [language, difficulty]);
+    const pool = extractSentences(
+      LANG_PASSAGES[language] ?? [],
+      guidedDescriptor ? 'all' : difficulty,
+    );
+    return guidedDescriptor
+      ? selectGuidedItems(pool, guidedDescriptor, (sentence) => sentence)
+      : shuffle(pool).slice(0, SENTENCES_PER_SESSION);
+  }, [language, difficulty, guidedDescriptor]);
 
   const total = allSentences.length;
 

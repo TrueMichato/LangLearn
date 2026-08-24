@@ -102,6 +102,7 @@ const ALL_LANGUAGES = new Set<CurriculumLanguage>([
   'ro',
 ]);
 const NUMBER_LANGUAGES = new Set<CurriculumLanguage>(['ar']);
+const LETTER_LANGUAGES = new Set<CurriculumLanguage>(['ja', 'ru', 'ar']);
 
 export const ACTIVITY_CAPABILITIES: Record<
   CurriculumLanguage,
@@ -117,7 +118,9 @@ export const ACTIVITY_CAPABILITIES: Record<
           {
             ...definition,
             route: kind === 'letters' ? lettersRoute(language) : definition.route,
-            available: kind !== 'numbers' || NUMBER_LANGUAGES.has(language),
+            available:
+              (kind !== 'numbers' || NUMBER_LANGUAGES.has(language)) &&
+              (kind !== 'letters' || LETTER_LANGUAGES.has(language)),
           },
         ];
       }),

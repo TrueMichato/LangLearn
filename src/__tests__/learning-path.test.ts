@@ -10,7 +10,10 @@ import {
 import { resolveLearningPath } from '../lib/learning-path';
 import { activity } from '../data/learning-paths/shared';
 import type { LessonProgress } from '../db/schema';
-import type { LearningPathManifest } from '../types/learning-path';
+import type {
+  LearningPathActivityKind,
+  LearningPathManifest,
+} from '../types/learning-path';
 
 interface LessonMeta {
   id: string;
@@ -286,7 +289,12 @@ describe('resolveLearningPath', () => {
 
     expect(nodes[0].kind).toBe('letters');
     expect(nodes[0].state).toBe('available');
-    expect(nodes.slice(1).every((node) => node.state === 'locked')).toBe(true);
+    expect(
+      nodes
+        .slice(1)
+        .filter((node) => node.requirement !== 'enrichment')
+        .every((node) => node.state === 'locked'),
+    ).toBe(true);
     expect(
       path.units
         .flatMap((unit) => unit.checkpoints)
@@ -306,7 +314,12 @@ describe('resolveLearningPath', () => {
     const lessonNodes = nodes.filter((node) => node.kind !== 'letters');
 
     expect(lessonNodes[0].state).toBe('available');
-    expect(lessonNodes.slice(1).every((node) => node.state === 'locked')).toBe(true);
+    expect(
+      lessonNodes
+        .slice(1)
+        .filter((node) => node.requirement !== 'enrichment')
+        .every((node) => node.state === 'locked'),
+    ).toBe(true);
     const firstUnit = path.units.find((unit) => unit.id === manifest.units[0].id);
     expect(firstUnit?.checkpoints.map((checkpoint) => checkpoint.route)).toEqual([
       '/vocab-lessons?testOut=numbers&from=learn&testOutLesson=greetings&testOutLesson=numbers',
@@ -607,15 +620,35 @@ describe('resolveLearningPath completedAheadCount', () => {
   });
 
   it('is zero once every node on the path is complete', () => {
-    const allLessons = manifest.units.flatMap(unitLessons);
-    const completedProgress = allLessons.map((lesson) =>
-      progress(
-        lesson.kind === 'vocab' ? `vocab/${lesson.lessonId}` : lesson.lessonId,
-      ),
-    );
+    const unresolved = resolveLearningPath(manifest, content, {
+      progress: [],
+      completedLetters: new Set(),
+    });
+    const completedProgress = unresolved.units
+      .flatMap((unit) => unit.nodes)
+      .filter((node) => node.kind === 'grammar' || node.kind === 'vocab')
+      .map((node) => progress(node.lessonId));
+    const activityProgress = unresolved.units
+      .flatMap((unit) => unit.nodes)
+      .filter(
+        (node) =>
+          node.kind !== 'letters' &&
+          node.kind !== 'grammar' &&
+          node.kind !== 'vocab',
+      )
+      .map((node) => ({
+        id: `ja/${node.milestoneId}`,
+        language: 'ja',
+        milestoneId: node.milestoneId!,
+        activity: node.kind as LearningPathActivityKind,
+        completedAt: '2026-08-21T00:00:00.000Z',
+        attempts: 1,
+        itemsCompleted: node.session?.targetItems ?? 1,
+      }));
     const path = resolveLearningPath(manifest, content, {
       progress: completedProgress,
       completedLetters: new Set(manifest.letterPrerequisites),
+      activityProgress,
     });
 
     expect(path.completedCount).toBe(path.totalCount);
@@ -849,7 +882,12 @@ describe('resolveLearningPath completedAheadCount', () => {
 
     expect(path.completedAheadCount).toBe(1);
     expect(katakana?.state).toBe('available');
-    expect(nodes.filter((node) => node.state === 'available')).toHaveLength(1);
+    expect(
+      nodes.filter(
+        (node) =>
+          node.state === 'available' && node.requirement !== 'enrichment',
+      ),
+    ).toHaveLength(1);
     expect(greetings?.state).toBe('completed');
     expect(particles?.state).toBe('locked');
   });

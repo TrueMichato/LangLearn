@@ -1,4 +1,5 @@
-import { useState, useMemo, useCallback } from 'react';
+import { useState, useMemo, useCallback, useRef } from 'react';
+import { Link } from 'react-router-dom';
 import { useCurrentLanguage } from '../hooks/useCurrentLanguage';
 import LanguagePicker from '../components/common/LanguagePicker';
 import LanguageUnavailable from '../components/common/LanguageUnavailable';
@@ -8,6 +9,14 @@ import { allLyrics, getSongById } from '../data/lyrics';
 import { addWord, wordExists } from '../db/words';
 import { XP_LYRICS_BASE, XP_PER_LYRICS_VOCAB } from '../lib/xp';
 import type { Song, SongVocab } from '../data/lyrics';
+import { useGuidedPractice, type GuidedPracticeState } from '../hooks/useGuidedPractice';
+import {
+  GuidedCompletionActions,
+  GuidedPracticeError,
+  GuidedPracticeNotice,
+} from '../components/learn/GuidedPractice';
+import { selectGuidedItems } from '../lib/guided-practice';
+import { ROUTES } from '../lib/routes';
 
 const LYRIC_LANGUAGES = [...new Set(allLyrics.map((s) => s.language))];
 
@@ -149,9 +158,11 @@ function SongBrowser({
 function LyricsViewer({
   song,
   onBack,
+  guided,
 }: {
   song: Song;
   onBack: () => void;
+  guided: GuidedPracticeState;
 }) {
   const [showReading, setShowReading] = useState(true);
   const [showRomaji, setShowRomaji] = useState(false);
@@ -161,6 +172,7 @@ function LyricsViewer({
   const [addingWord, setAddingWord] = useState<string | null>(null);
   const [completed, setCompleted] = useState(false);
   const [vocabAddedCount, setVocabAddedCount] = useState(0);
+  const completionStarted = useRef(false);
 
   const youtubeUrl = `https://www.youtube.com/results?search_query=${encodeURIComponent(
     `${song.title} ${song.artist}`
@@ -192,22 +204,39 @@ function LyricsViewer({
     [addedWords, song.language, song.id]
   );
 
-  const handleComplete = useCallback(() => {
-    if (completed) return;
+  const handleComplete = useCallback(async () => {
+    if (completed || completionStarted.current) return;
+    completionStarted.current = true;
     const xp = XP_LYRICS_BASE + vocabAddedCount * XP_PER_LYRICS_VOCAB;
     useXPStore.getState().addXP(xp);
     setCompleted(true);
-  }, [completed, vocabAddedCount]);
+    await guided.complete({
+      itemsCompleted: 1,
+      score: song.vocab.length > 0
+        ? Math.round((vocabAddedCount / song.vocab.length) * 100)
+        : undefined,
+    });
+  }, [completed, guided, song.vocab.length, vocabAddedCount]);
 
   return (
     <div>
+      <GuidedPracticeNotice guided={guided} />
       {/* Back button */}
-      <button
-        onClick={onBack}
-        className="flex items-center gap-1 text-sm text-indigo-600 dark:text-indigo-400 font-medium mb-4 min-h-[44px]"
-      >
-        ← Back to songs
-      </button>
+      {guided.isGuided ? (
+        <Link
+          to={ROUTES.learnCurriculum}
+          className="mb-4 flex min-h-[44px] items-center gap-1 text-sm font-medium text-indigo-600 dark:text-indigo-400"
+        >
+          ← Return to learning path
+        </Link>
+      ) : (
+        <button
+          onClick={onBack}
+          className="mb-4 flex min-h-[44px] items-center gap-1 text-sm font-medium text-indigo-600 dark:text-indigo-400"
+        >
+          ← Back to songs
+        </button>
+      )}
 
       {/* Header */}
       <div className="bg-white dark:bg-slate-800 rounded-2xl shadow p-5 mb-4">
@@ -344,7 +373,7 @@ function LyricsViewer({
 
       {/* Complete button */}
       <button
-        onClick={handleComplete}
+        onClick={() => void handleComplete()}
         disabled={completed}
         className={`w-full py-3 rounded-xl text-sm font-semibold min-h-[44px] transition-colors ${
           completed
@@ -356,6 +385,17 @@ function LyricsViewer({
           ? `✓ Complete! +${XP_LYRICS_BASE + vocabAddedCount * XP_PER_LYRICS_VOCAB} XP`
           : `Study Complete (+${XP_LYRICS_BASE + vocabAddedCount * XP_PER_LYRICS_VOCAB} XP)`}
       </button>
+      {completed && guided.isGuided && (
+        <div className="mt-4">
+          <GuidedCompletionActions
+            guided={guided}
+            onPracticeAgain={() => {
+              completionStarted.current = false;
+              setCompleted(false);
+            }}
+          />
+        </div>
+      )}
     </div>
   );
 }
@@ -364,7 +404,26 @@ function LyricsViewer({
 
 export default function LyricsPage() {
   const [selectedSongId, setSelectedSongId] = useState<string | null>(null);
-  const selectedSong = selectedSongId ? getSongById(selectedSongId) : null;
+  const { language: currentLanguage } = useCurrentLanguage(LYRIC_LANGUAGES);
+  const language = currentLanguage ?? '';
+  const guided = useGuidedPractice('lyrics', language);
+  const guidedSong = useMemo(
+    () => guided.descriptor
+      ? selectGuidedItems(
+      allLyrics.filter((song) => song.language === language),
+      guided.descriptor,
+      (song) => song.id,
+    )[0] ?? null
+      : null,
+    [guided.descriptor, language],
+  );
+  const selectedSong = selectedSongId
+    ? getSongById(selectedSongId)
+    : guidedSong;
+
+  if (guided.invalidMessage) {
+    return <GuidedPracticeError message={guided.invalidMessage} />;
+  }
 
   if (selectedSong) {
     return (
@@ -372,6 +431,7 @@ export default function LyricsPage() {
         key={selectedSong.id}
         song={selectedSong}
         onBack={() => setSelectedSongId(null)}
+        guided={guided}
       />
     );
   }

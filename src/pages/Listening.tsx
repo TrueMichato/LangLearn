@@ -14,6 +14,13 @@ import { roPassages } from '../data/listening/ro-passages';
 import DictationDrill from '../components/drills/DictationDrill';
 import { speakWithSpeed } from '../lib/tts';
 import type { ListeningPassage, ListeningQuestion } from '../data/listening/ja-passages';
+import { useGuidedPractice } from '../hooks/useGuidedPractice';
+import {
+  GuidedCompletionActions,
+  GuidedPracticeError,
+  GuidedPracticeNotice,
+} from '../components/learn/GuidedPractice';
+import { selectGuidedItems } from '../lib/guided-practice';
 
 // ── helpers ─────────────────────────────────────────────
 
@@ -56,6 +63,8 @@ export default function ListeningPage() {
   const [screen, setScreen] = useState<Screen>('setup');
   const [passage, setPassage] = useState<ListeningPassage | null>(null);
   const [usedIds, setUsedIds] = useState<Set<string>>(new Set());
+  const [guidedPassages, setGuidedPassages] = useState<ListeningPassage[]>([]);
+  const [guidedPassageIndex, setGuidedPassageIndex] = useState(0);
 
   // practice
   const [speed, setSpeed] = useState(1.0);
@@ -73,6 +82,10 @@ export default function ListeningPage() {
 
   // dictation summary
   const [dictationStats, setDictationStats] = useState<{ correct: number; total: number; xpEarned: number } | null>(null);
+  const guided = useGuidedPractice(
+    mode === 'dictation' ? 'dictation' : 'listening',
+    language,
+  );
 
   // Cancel any ongoing speech when leaving the page
   useEffect(() => {
@@ -82,6 +95,21 @@ export default function ListeningPage() {
   // ── passage selection ─────────────────────────────────
 
   const pickPassage = useCallback(() => {
+    if (guided.descriptor) {
+      const guidedPool = (LANG_PASSAGES[language] ?? []).filter(
+        (candidate) =>
+          guided.descriptor ||
+          difficulty === 'all' ||
+          candidate.difficulty === difficulty,
+      );
+      return (
+        selectGuidedItems(
+          guidedPool,
+          guided.descriptor,
+          (candidate) => candidate.id,
+        )[0] ?? null
+      );
+    }
     const pool = (LANG_PASSAGES[language] ?? []).filter(
       (p) => (difficulty === 'all' || p.difficulty === difficulty) && !usedIds.has(p.id),
     );
@@ -94,11 +122,25 @@ export default function ListeningPage() {
       return fullPool[Math.floor(Math.random() * fullPool.length)] ?? null;
     }
     return pool[Math.floor(Math.random() * pool.length)] ?? null;
-  }, [language, difficulty, usedIds]);
+  }, [language, difficulty, usedIds, guided.descriptor]);
 
   // ── handlers ──────────────────────────────────────────
 
-  function startPractice() {
+  const beginPassage = useCallback((nextPassage: ListeningPassage) => {
+    setPassage(nextPassage);
+    setUsedIds((prev) => new Set(prev).add(nextPassage.id));
+    setPlaysLeft(3);
+    setHasPlayed(false);
+    setIsPlaying(false);
+    setSpeed(1.0);
+    setQIndex(0);
+    setAnswers(nextPassage.questions.map(() => null));
+    setRevealed(false);
+    setXpAwarded(0);
+    setScreen('practice');
+  }, []);
+
+  const startPractice = useCallback(() => {
     // Records listening time under its own activity so the study balance and
     // the "try listening" suggestion reflect what actually happened.
     if (!timerRunning) timerStart('listening');
@@ -106,20 +148,35 @@ export default function ListeningPage() {
       setScreen('dictation');
       return;
     }
-    const p = pickPassage();
+    let p = pickPassage();
+    if (guided.descriptor) {
+      const pool = (LANG_PASSAGES[language] ?? []).filter(
+        (candidate) =>
+          guided.descriptor ||
+          difficulty === 'all' ||
+          candidate.difficulty === difficulty,
+      );
+      const selected = selectGuidedItems(
+        pool,
+        guided.descriptor,
+        (candidate) => candidate.id,
+      );
+      setGuidedPassages(selected);
+      setGuidedPassageIndex(0);
+      p = selected[0] ?? null;
+    }
     if (!p) return;
-    setPassage(p);
-    setUsedIds((prev) => new Set(prev).add(p.id));
-    setPlaysLeft(3);
-    setHasPlayed(false);
-    setIsPlaying(false);
-    setSpeed(1.0);
-    setQIndex(0);
-    setAnswers(p.questions.map(() => null));
-    setRevealed(false);
-    setXpAwarded(0);
-    setScreen('practice');
-  }
+    beginPassage(p);
+  }, [
+    beginPassage,
+    difficulty,
+    guided.descriptor,
+    language,
+    mode,
+    pickPassage,
+    timerRunning,
+    timerStart,
+  ]);
 
   async function handlePlay() {
     if (!passage || isPlaying) return;
@@ -162,17 +219,39 @@ export default function ListeningPage() {
       const xp = 25 + correct * 5;
       useXPStore.getState().addXP(xp);
       setXpAwarded(xp);
+      if (
+        guided.descriptor &&
+        guidedPassageIndex + 1 >= guidedPassages.length
+      ) {
+        void guided.complete({
+          itemsCompleted: guidedPassages.length,
+          score: Math.round((correct / passage.questions.length) * 100),
+        });
+      }
       setScreen('summary');
     }
   }
 
   function handleNextPassage() {
+    if (
+      guided.descriptor &&
+      guidedPassageIndex + 1 < guidedPassages.length
+    ) {
+      const nextIndex = guidedPassageIndex + 1;
+      setGuidedPassageIndex(nextIndex);
+      beginPassage(guidedPassages[nextIndex]);
+      return;
+    }
     startPractice();
   }
 
   function handleBack() {
     window.speechSynthesis?.cancel();
     setScreen('setup');
+  }
+
+  if (guided.invalidMessage) {
+    return <GuidedPracticeError message={guided.invalidMessage} />;
   }
 
   // ── no supported languages ────────────────────────────
@@ -205,6 +284,7 @@ export default function ListeningPage() {
         <h2 className="text-lg font-semibold text-slate-700 dark:text-slate-200 mb-6">
           🎧 Listening Practice
         </h2>
+        <GuidedPracticeNotice guided={guided} />
 
         {!isSupported && (
           <LanguageUnavailable
@@ -289,7 +369,8 @@ export default function ListeningPage() {
 
   if (screen === 'practice' && passage) {
     return (
-      <div className="page-enter">
+      <div className="page-enter space-y-4">
+        <GuidedPracticeNotice guided={guided} />
         <button onClick={handleBack} className="text-sm text-indigo-600 dark:text-indigo-400 mb-4">
           ← Back
         </button>
@@ -417,6 +498,9 @@ export default function ListeningPage() {
       (sum, q, i) => sum + (answers[i] === q.correctIndex ? 1 : 0),
       0,
     );
+    const guidedFinished =
+      guided.isGuided &&
+      guidedPassageIndex + 1 >= guidedPassages.length;
 
     return (
       <div className="text-center py-6 page-enter">
@@ -431,20 +515,24 @@ export default function ListeningPage() {
           +{xpAwarded} XP earned
         </p>
 
-        <div className="flex gap-3">
-          <button
-            onClick={handleBack}
-            className="flex-1 py-3 rounded-2xl border border-slate-300 dark:border-white/10 text-slate-700 dark:text-slate-200 font-semibold hover:bg-slate-50 dark:hover:bg-slate-800 press-feedback transition-colors"
-          >
-            Back
-          </button>
-          <button
-            onClick={handleNextPassage}
-            className="flex-1 py-3 rounded-2xl bg-indigo-600 text-white font-semibold hover:bg-indigo-700 press-feedback transition-colors"
-          >
-            Next Passage
-          </button>
-        </div>
+        {guidedFinished ? (
+          <GuidedCompletionActions guided={guided} onPracticeAgain={handleBack} />
+        ) : (
+          <div className="flex gap-3">
+            <button
+              onClick={handleBack}
+              className="flex-1 py-3 rounded-2xl border border-slate-300 dark:border-white/10 text-slate-700 dark:text-slate-200 font-semibold hover:bg-slate-50 dark:hover:bg-slate-800 press-feedback transition-colors"
+            >
+              Back
+            </button>
+            <button
+              onClick={handleNextPassage}
+              className="flex-1 py-3 rounded-2xl bg-indigo-600 text-white font-semibold hover:bg-indigo-700 press-feedback transition-colors"
+            >
+              {guided.isGuided ? 'Next guided passage' : 'Next Passage'}
+            </button>
+          </div>
+        )}
       </div>
     );
   }
@@ -457,10 +545,15 @@ export default function ListeningPage() {
         language={language}
         difficulty={difficulty}
         onComplete={(stats) => {
+          void guided.complete({
+            itemsCompleted: stats.total,
+            score: Math.round((stats.correct / stats.total) * 100),
+          });
           setDictationStats(stats);
           setScreen('dictation-summary');
         }}
         onBack={handleBack}
+        guidedDescriptor={guided.descriptor ?? undefined}
       />
     );
   }
@@ -481,23 +574,26 @@ export default function ListeningPage() {
           +{dictationStats.xpEarned} XP earned
         </p>
 
-        <div className="flex gap-3">
-          <button
-            onClick={handleBack}
-            className="flex-1 py-3 rounded-2xl border border-slate-300 dark:border-white/10 text-slate-700 dark:text-slate-200 font-semibold hover:bg-slate-50 dark:hover:bg-slate-800 press-feedback transition-colors min-h-[44px]"
-          >
-            Back
-          </button>
-          <button
-            onClick={() => {
-              setDictationStats(null);
-              setScreen('dictation');
-            }}
-            className="flex-1 py-3 rounded-2xl bg-indigo-600 text-white font-semibold hover:bg-indigo-700 press-feedback transition-colors min-h-[44px]"
-          >
-            Try Again
-          </button>
-        </div>
+        <GuidedCompletionActions guided={guided} onPracticeAgain={handleBack} />
+        {!guided.isGuided && (
+          <div className="flex gap-3">
+            <button
+              onClick={handleBack}
+              className="flex-1 py-3 rounded-2xl border border-slate-300 dark:border-white/10 text-slate-700 dark:text-slate-200 font-semibold hover:bg-slate-50 dark:hover:bg-slate-800 press-feedback transition-colors min-h-[44px]"
+            >
+              Back
+            </button>
+            <button
+              onClick={() => {
+                setDictationStats(null);
+                setScreen('dictation');
+              }}
+              className="flex-1 py-3 rounded-2xl bg-indigo-600 text-white font-semibold hover:bg-indigo-700 press-feedback transition-colors min-h-[44px]"
+            >
+              Try Again
+            </button>
+          </div>
+        )}
       </div>
     );
   }

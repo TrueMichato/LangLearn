@@ -16,6 +16,16 @@ import { RO_NOUNS, RO_CASE_LABELS, type RoCaseName } from '../data/conjugations/
 import { RO_ADJECTIVES, RO_ADJ_FORM_LABELS, type RoAdjFormName } from '../data/conjugations/ro-adjectives';
 import TileDrill, { type DrillQuestion } from '../components/drills/TileDrill';
 import TypeDrill from '../components/drills/TypeDrill';
+import { useGuidedPractice } from '../hooks/useGuidedPractice';
+import {
+  GuidedCompletionActions,
+  GuidedPracticeError,
+  GuidedPracticeNotice,
+} from '../components/learn/GuidedPractice';
+import {
+  selectGuidedItems,
+  type GuidedPracticeDescriptor,
+} from '../lib/guided-practice';
 
 type Category = 'ja-verbs' | 'ru-verbs' | 'ru-nouns' | 'ru-adjectives' | 'pt-verbs' | 'es-verbs' | 'ar-verbs' | 'ro-verbs' | 'ro-nouns' | 'ro-adjectives';
 type DrillMode = 'tiles' | 'type';
@@ -75,7 +85,11 @@ function getFormOptions(category: Category): { value: string; label: string }[] 
   }
 }
 
-function buildQuestions(category: Category, selectedForms: string[]): DrillQuestion[] {
+function buildQuestions(
+  category: Category,
+  selectedForms: string[],
+  guided?: GuidedPracticeDescriptor,
+): DrillQuestion[] {
   const questions: DrillQuestion[] = [];
 
   if (category === 'ja-verbs') {
@@ -209,7 +223,9 @@ function buildQuestions(category: Category, selectedForms: string[]): DrillQuest
     }
   }
 
-  return shuffle(questions).slice(0, 10);
+  return guided
+    ? selectGuidedItems(questions, guided, (question) => question.prompt)
+    : shuffle(questions).slice(0, 10);
 }
 
 export default function ConjugationsPage() {
@@ -230,6 +246,7 @@ export default function ConjugationsPage() {
   const [result, setResult] = useState<{ correct: number; total: number } | null>(null);
 
   const formOptions = useMemo(() => getFormOptions(category), [category]);
+  const guided = useGuidedPractice('conjugation', language);
 
   const handleLanguageChange = useCallback(
     (lang: string) => {
@@ -262,22 +279,29 @@ export default function ConjugationsPage() {
   }, [formOptions]);
 
   const startDrill = useCallback(() => {
-    const forms = Array.from(selectedForms);
+    const forms =
+      guided.descriptor
+        ? formOptions.map((form) => form.value)
+        : Array.from(selectedForms);
     if (forms.length === 0) return;
-    const q = buildQuestions(category, forms);
+    const q = buildQuestions(category, forms, guided.descriptor ?? undefined);
     setQuestions(q);
     setResult(null);
     setDrilling(true);
-  }, [selectedForms, category]);
+  }, [selectedForms, category, guided.descriptor, formOptions]);
 
   const handleComplete = useCallback(
     (correct: number, total: number) => {
       const xp = 20 + 3 * correct;
       addXP(xp);
+      void guided.complete({
+        itemsCompleted: total,
+        score: Math.round((correct / total) * 100),
+      });
       setResult({ correct, total });
       setDrilling(false);
     },
-    [addXP],
+    [addXP, guided],
   );
 
   const resetDrill = useCallback(() => {
@@ -285,6 +309,10 @@ export default function ConjugationsPage() {
     setDrilling(false);
     setQuestions([]);
   }, []);
+
+  if (guided.invalidMessage) {
+    return <GuidedPracticeError message={guided.invalidMessage} />;
+  }
 
   // No supported languages active
   if (supportedActive.length === 0) {
@@ -316,12 +344,15 @@ export default function ConjugationsPage() {
           <p className="text-sm text-slate-500 dark:text-slate-400">{pct}% correct</p>
           <p className="text-sm font-medium text-yellow-600 dark:text-yellow-400">+{xp} XP</p>
         </div>
-        <button
-          onClick={resetDrill}
-          className="w-full bg-indigo-600 text-white px-5 py-2 rounded-xl hover:bg-indigo-700 press-feedback transition-colors"
-        >
-          Back to Setup
-        </button>
+        <GuidedCompletionActions guided={guided} onPracticeAgain={resetDrill} />
+        {!guided.isGuided && (
+          <button
+            onClick={resetDrill}
+            className="w-full bg-indigo-600 text-white px-5 py-2 rounded-xl hover:bg-indigo-700 press-feedback transition-colors"
+          >
+            Back to Setup
+          </button>
+        )}
       </div>
     );
   }
@@ -356,6 +387,7 @@ export default function ConjugationsPage() {
           Conjugation Drills
         </h2>
       </div>
+      <GuidedPracticeNotice guided={guided} />
 
       {!isSupported && (
         <LanguageUnavailable

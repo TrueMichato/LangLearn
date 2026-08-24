@@ -60,6 +60,21 @@ export const JA_CORE_GRAMMAR_IDS = new Set([
   'while-during',
   'respect-humble',
   'formal-written',
+  'tofugu-particle-wa',
+  'tofugu-particle-ga',
+  'tofugu-particle-wo',
+  'tofugu-particle-ni',
+  'tofugu-particle-de',
+  'tofugu-particle-he',
+  'tofugu-particle-to',
+  'tofugu-particle-mo',
+  'tofugu-particle-ka',
+  'tofugu-particle-ne',
+  'tofugu-particle-yo',
+  'tofugu-particle-yone',
+  'tofugu-particle-ya',
+  'tofugu-particle-no-noun-modifier',
+  'tofugu-particle-no-nominalizer',
 ]);
 
 /** Exact dialect applicability for Arabic colloquial grammar. */

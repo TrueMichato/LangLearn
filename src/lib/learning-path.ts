@@ -28,11 +28,14 @@ import {
   vocabLessonRoute,
   vocabTestOutRoute,
 } from './routes';
+import { guidedActivityRoute } from './guided-practice';
+import {
+  composeComprehensiveLearningPath,
+  type CurriculumCatalogEntry,
+} from './curriculum-composition';
+import { useSettingsStore } from '../stores/settingsStore';
 
-interface LessonMeta {
-  id: string;
-  title: string;
-}
+type LessonMeta = CurriculumCatalogEntry;
 
 export interface LearningPathContent {
   grammar: LessonMeta[];
@@ -82,6 +85,11 @@ export function resolveLearningPath(
   content: LearningPathContent,
   resolution: LearningPathResolution,
 ): LearningPath {
+  manifest = composeComprehensiveLearningPath(
+    manifest,
+    content,
+    resolution.arabicPolicy,
+  );
   const grammar = contentMap(content.grammar);
   const vocab = contentMap(content.vocab);
   const progress = new Map(
@@ -103,18 +111,19 @@ export function resolveLearningPath(
     strandId?: string,
   ): LearningPathNode => {
     const requirement = requirementOf(milestone);
+    const canOpen = prerequisitesComplete || requirement === 'enrichment';
     if (!isLessonMilestone(milestone)) {
       const completed =
         activityProgress.get(milestone.milestoneId)?.completedAt != null;
-      const state = resolveState(completed, prerequisitesComplete);
-      if (completed && !prerequisitesComplete) completedAheadCount += 1;
+      const state = resolveState(completed, canOpen);
+      if (completed && !canOpen) completedAheadCount += 1;
       return {
         id: milestone.milestoneId,
         kind: milestone.kind,
         milestoneId: milestone.milestoneId,
         lessonId: milestone.lessonId,
         title: milestone.title,
-        route: milestone.route,
+        route: guidedActivityRoute(milestone, manifest.language),
         state,
         unitId,
         strandId,
@@ -138,8 +147,8 @@ export function resolveLearningPath(
         ? `vocab/${milestone.lessonId}`
         : milestone.lessonId;
     const completed = progress.get(progressId)?.completed === true;
-    const state = resolveState(completed, prerequisitesComplete);
-    if (completed && !prerequisitesComplete) completedAheadCount += 1;
+    const state = resolveState(completed, canOpen);
+    if (completed && !canOpen) completedAheadCount += 1;
     return {
       id: `${milestone.kind}:${milestone.lessonId}`,
       kind: milestone.kind,
@@ -419,6 +428,17 @@ export async function loadLearningPath(
     loadGuidedActivityProgress(language),
   ]);
   const alphabets = getAlphabetsForLanguage(language);
+  const settings = useSettingsStore.getState();
+  const arabicPolicy =
+    language === 'ar'
+      ? {
+          currentDialect:
+            settings.arabicDialect === 'msa'
+              ? null
+              : settings.arabicDialect,
+          colloquialFocus: settings.arabicColloquialFocus,
+        }
+      : undefined;
   const completedLetters = new Set<string>();
 
   for (const alphabetName of manifest.letterPrerequisites) {
@@ -445,6 +465,6 @@ export async function loadLearningPath(
   return resolveLearningPath(
     manifest,
     { grammar, vocab },
-    { progress, completedLetters, activityProgress },
+    { progress, completedLetters, activityProgress, arabicPolicy },
   );
 }

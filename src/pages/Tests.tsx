@@ -6,6 +6,13 @@ import { useXPStore } from '../stores/xpStore';
 import { generateTestQuestions, type Question, type TestType } from '../lib/test-questions';
 import { getTestLevel, calculateXP } from '../lib/test-scoring';
 import { db, type TestHistory } from '../db/schema';
+import { useGuidedPractice } from '../hooks/useGuidedPractice';
+import {
+  GuidedCompletionActions,
+  GuidedPracticeError,
+  GuidedPracticeNotice,
+} from '../components/learn/GuidedPractice';
+import { createSeededRandom } from '../lib/guided-practice';
 
 type Phase = 'setup' | 'loading' | 'active' | 'results';
 type TimeLimit = 0 | 5 | 10 | 15;
@@ -46,6 +53,8 @@ export default function TestsPage() {
   const [history, setHistory] = useState<TestHistory[]>([]);
 
   const timerRef = useRef<ReturnType<typeof setInterval> | null>(null);
+  const finishingRef = useRef(false);
+  const guided = useGuidedPractice('tests', language);
 
   // Load history
   useEffect(() => {
@@ -76,6 +85,8 @@ export default function TestsPage() {
 
   const finishTest = useCallback(
     async (finalAnswers: (number | null)[]) => {
+      if (finishingRef.current) return;
+      finishingRef.current = true;
       if (timerRef.current) clearInterval(timerRef.current);
 
       const correctAnswers = questions.reduce(
@@ -99,14 +110,21 @@ export default function TestsPage() {
         date: new Date().toISOString(),
       };
 
-      await db.testHistory.add(entry);
-      useXPStore.getState().addXP(xp);
-
-      setResult(entry);
-      setXpEarned(xp);
-      setPhase('results');
+      try {
+        await db.testHistory.add(entry);
+        useXPStore.getState().addXP(xp);
+        await guided.complete({
+          itemsCompleted: finalAnswers.filter((answer) => answer != null).length,
+          score,
+        });
+        setResult(entry);
+        setXpEarned(xp);
+        setPhase('results');
+      } finally {
+        finishingRef.current = false;
+      }
     },
-    [questions, startTime, language, testType]
+    [guided, questions, startTime, language, testType]
   );
 
   // Auto-finish when time runs out
@@ -116,9 +134,16 @@ export default function TestsPage() {
     }
   }, [secondsLeft, phase, timeLimit, startTime, answers, finishTest]);
 
-  async function handleStart() {
+  const handleStart = useCallback(async () => {
     setPhase('loading');
-    const qs = await generateTestQuestions(language, testType);
+    const effectiveType = guided.descriptor ? 'mixed' : testType;
+    const random = guided.descriptor
+      ? createSeededRandom(guided.descriptor.seed)
+      : Math.random;
+    const generated = await generateTestQuestions(language, effectiveType, random);
+    const qs = guided.descriptor
+      ? generated.slice(0, guided.descriptor.session.targetItems)
+      : generated;
     if (qs.length === 0) {
       alert('No content available for this language and test type. Try another combination.');
       setPhase('setup');
@@ -132,7 +157,11 @@ export default function TestsPage() {
     setSecondsLeft(timeLimit * 60);
     setStartTime(Date.now());
     setPhase('active');
-  }
+  }, [guided.descriptor, language, testType, timeLimit]);
+
+  useEffect(() => {
+    if (guided.descriptor && phase === 'setup') void handleStart();
+  }, [guided.descriptor, handleStart, phase]);
 
   function handleAnswer(optionIndex: number) {
     if (showFeedback) return;
@@ -171,6 +200,10 @@ export default function TestsPage() {
     return `${m}:${sec.toString().padStart(2, '0')}`;
   }
 
+  if (guided.invalidMessage) {
+    return <GuidedPracticeError message={guided.invalidMessage} />;
+  }
+
   // ─── SETUP ────────────────────────────────────────────
   if (phase === 'setup') {
     return (
@@ -179,6 +212,7 @@ export default function TestsPage() {
           ← Back to Learn
         </Link>
         <h2 className="text-lg font-semibold text-slate-700 dark:text-slate-200 mb-4">Proficiency Tests</h2>
+        <GuidedPracticeNotice guided={guided} />
 
         <div className="space-y-4">
           {/* Language selector */}
@@ -387,12 +421,16 @@ export default function TestsPage() {
           </div>
         </div>
 
-        <button
-          onClick={handleRestart}
-          className="w-full bg-indigo-600 text-white px-5 py-3 rounded-xl hover:bg-indigo-700 font-semibold press-feedback transition-colors"
-        >
-          Take Another Test
-        </button>
+        {guided.isGuided ? (
+          <GuidedCompletionActions guided={guided} onPracticeAgain={handleRestart} />
+        ) : (
+          <button
+            onClick={handleRestart}
+            className="w-full bg-indigo-600 text-white px-5 py-3 rounded-xl hover:bg-indigo-700 font-semibold press-feedback transition-colors"
+          >
+            Take Another Test
+          </button>
+        )}
       </div>
     );
   }
