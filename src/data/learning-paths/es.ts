@@ -17,16 +17,25 @@ export const ES_LEARNING_PATH = defineLearningPath({
       lessons: [vocab('family'), grammar('articles'), vocab('colors')],
     },
     {
-      id: 'agreement',
-      title: 'Making words agree',
-      description: 'Match nouns and descriptions while talking about daily life.',
-      lessons: [vocab('food'), grammar('gender-number'), vocab('animals')],
-    },
-    {
-      id: 'first-actions',
-      title: 'First actions',
-      description: 'Use regular -ar verbs for everyday activities.',
-      lessons: [vocab('verbs'), grammar('present-ar'), vocab('body')],
+      id: 'describing-acting',
+      title: 'Describe and act',
+      description:
+        'Practice agreement or everyday -ar actions first. Both paths prepare you for fuller sentences.',
+      strands: [
+        {
+          id: 'agreement',
+          title: 'Making words agree',
+          description:
+            'Match nouns and descriptions while talking about daily life.',
+          lessons: [vocab('food'), grammar('gender-number'), vocab('animals')],
+        },
+        {
+          id: 'first-actions',
+          title: 'First actions',
+          description: 'Use regular -ar verbs for everyday activities.',
+          lessons: [vocab('verbs'), grammar('present-ar'), vocab('body')],
+        },
+      ],
     },
     {
       id: 'expanding-actions',
@@ -57,16 +66,32 @@ export const ES_LEARNING_PATH = defineLearningPath({
       ],
     },
     {
-      id: 'practical-life',
-      title: 'Practical life',
-      description: 'Use essential irregular verbs for shopping and routines.',
-      lessons: [vocab('shopping'), grammar('irregular-verbs'), vocab('time-routine')],
-    },
-    {
-      id: 'social-world',
-      title: 'Your social world',
-      description: 'Connect people, places, feelings, and hobbies.',
-      lessons: [vocab('emotions'), grammar('prepositions'), vocab('hobbies')],
+      id: 'everyday-connections',
+      title: 'Everyday connections',
+      description:
+        'Build practical routines or social language first. Both paths expand independent conversation.',
+      strands: [
+        {
+          id: 'practical-life',
+          title: 'Practical life',
+          description: 'Use essential irregular verbs for shopping and routines.',
+          lessons: [
+            vocab('shopping'),
+            grammar('irregular-verbs'),
+            vocab('time-routine'),
+          ],
+        },
+        {
+          id: 'social-world',
+          title: 'Your social world',
+          description: 'Connect people, places, feelings, and hobbies.',
+          lessons: [
+            vocab('emotions'),
+            grammar('prepositions'),
+            vocab('hobbies'),
+          ],
+        },
+      ],
     },
   ],
 });

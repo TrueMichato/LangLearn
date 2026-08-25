@@ -27,6 +27,11 @@ import {
   type CatalogPolicyEntry,
   type CurriculumLanguage,
 } from './curriculum-policy';
+import { getLearningPathPhasePlan } from '../data/learning-paths/phases';
+import type {
+  LearningPathContinuationPhaseStart,
+  LearningPathPhase,
+} from '../types/learning-path';
 
 export interface CurriculumCatalogEntry extends CatalogPolicyEntry {
   title: string;
@@ -150,6 +155,56 @@ function generatedUnitId(
   return `${prefix}-${first.kind}-${slug(first.entry.id)}-to-${last.kind}-${slug(last.entry.id)}`;
 }
 
+function topicLabel(title: string): string {
+  const cleaned = title
+    .replace(/\s*\([^)]*\)/g, '')
+    .replace(/^(?:an? |the |introduction to )/i, '')
+    .trim();
+  if (cleaned.length <= 28) return cleaned;
+  const shortened = cleaned.slice(0, 28);
+  const wordBoundary = shortened.lastIndexOf(' ');
+  return `${shortened.slice(0, wordBoundary > 18 ? wordBoundary : 28).trim()}…`;
+}
+
+function generatedUnitTitle(
+  batch: readonly ClassifiedLesson[],
+  phaseTitle: string,
+): string {
+  const lesson =
+    batch.find((candidate) => candidate.kind === 'vocab') ?? batch[0];
+  const phase = topicLabel(phaseTitle);
+  const topic = lesson ? topicLabel(lesson.entry.title) : 'Language practice';
+  if (phase.toLowerCase() === topic.toLowerCase()) {
+    return `${topic} practice`;
+  }
+  return `${phase} · ${topic}`;
+}
+
+function phaseBoundaryIndex(
+  lessons: readonly ClassifiedLesson[],
+  boundary: LearningPathContinuationPhaseStart,
+): number {
+  if (!boundary.startsAt) return 0;
+  return lessons.findIndex(
+    (lesson) =>
+      lesson.kind === boundary.startsAt?.kind &&
+      lesson.entry.id === boundary.startsAt.lessonId,
+  );
+}
+
+function phaseIdForBatch(
+  lessons: readonly ClassifiedLesson[],
+  batchEnd: number,
+  continuation: readonly LearningPathContinuationPhaseStart[],
+): string | undefined {
+  return continuation.reduce<string | undefined>((phaseId, boundary) => {
+    const startIndex = phaseBoundaryIndex(lessons, boundary);
+    return startIndex >= 0 && startIndex <= batchEnd
+      ? boundary.phaseId
+      : phaseId;
+  }, undefined);
+}
+
 function availablePracticeKinds(
   language: CurriculumLanguage,
 ): LearningPathActivityKind[] {
@@ -181,15 +236,27 @@ function practiceRefsForUnit(
 function coreUnits(
   language: CurriculumLanguage,
   lessons: readonly ClassifiedLesson[],
+  continuation: readonly LearningPathContinuationPhaseStart[],
+  phases: readonly LearningPathPhase[],
 ): LearningPathUnitManifest[] {
   return batches(lessons, CORE_BATCH_SIZE).map((batch, index) => {
     const id = generatedUnitId('core', batch);
-    const firstTitle = batch[0].entry.title;
+    const phaseId = phaseIdForBatch(
+      lessons,
+      Math.min(lessons.length - 1, (index + 1) * CORE_BATCH_SIZE - 1),
+      continuation,
+    );
+    const phaseTitle =
+      phases.find((phase) => phase.id === phaseId)?.title ??
+      phases[0]?.title ??
+      'Language practice';
     return {
       id,
-      title: `Build on ${firstTitle}`,
+      title: generatedUnitTitle(batch, phaseTitle),
       description:
         'Alternate lesson work with a short guided practice session.',
+      presentation: 'continuation',
+      phaseId,
       lessons: [
         ...batch.map(toLessonRef),
         ...practiceRefsForUnit(language, id, index),
@@ -217,6 +284,8 @@ function attachSpokenArabicStrands(
       id: unit.id,
       title: unit.title,
       description: unit.description,
+      presentation: unit.presentation,
+      phaseId: unit.phaseId,
       strands: [
         {
           id: 'msa-core',
@@ -238,12 +307,14 @@ function attachSpokenArabicStrands(
 
 function enrichmentUnits(
   lessons: readonly ClassifiedLesson[],
+  phaseId?: string,
 ): LearningPathUnitManifest[] {
   return batches(lessons, ENRICHMENT_BATCH_SIZE).map((batch) => ({
     id: generatedUnitId('enrichment', batch),
     title: `Explore ${batch[0].entry.title}`,
     description:
       'Optional reference material that stays available without blocking the core path.',
+    phaseId,
     lessons: batch.map(toLessonRef),
   }));
 }
@@ -254,6 +325,8 @@ export function composeComprehensiveLearningPath(
   policy?: ArabicLearningPathPolicy,
 ): LearningPathManifest {
   if (!isCurriculumLanguage(manifest.language)) return manifest;
+  const phasePlan = getLearningPathPhasePlan(manifest.language);
+  const firstPhaseId = phasePlan?.phases[0]?.id;
 
   const authoredKeys = new Set(
     [
@@ -285,7 +358,12 @@ export function composeComprehensiveLearningPath(
     classified.filter((lesson) => lesson.requirement === 'enrichment'),
   );
 
-  let generatedCore = coreUnits(manifest.language, requiredCore);
+  let generatedCore = coreUnits(
+    manifest.language,
+    requiredCore,
+    phasePlan?.continuation ?? [],
+    phasePlan?.phases ?? [],
+  );
   if (
     manifest.language === 'ar' &&
     policy?.colloquialFocus &&
@@ -298,12 +376,26 @@ export function composeComprehensiveLearningPath(
     );
   }
 
+  const authoredUnits = manifest.units.map((unit) => ({
+    ...unit,
+    phaseId: unit.phaseId ?? firstPhaseId,
+  }));
+  const usedPhaseIds = new Set(
+    [...authoredUnits, ...generatedCore]
+      .map((unit) => unit.phaseId)
+      .filter((phaseId): phaseId is string => phaseId != null),
+  );
+  const phases: LearningPathPhase[] =
+    phasePlan?.phases.filter((phase) => usedPhaseIds.has(phase.id)) ?? [];
+  const lastPhaseId = phases.at(-1)?.id ?? firstPhaseId;
+
   return defineLearningPath({
     ...manifest,
+    phases,
     units: [
-      ...manifest.units,
+      ...authoredUnits,
       ...generatedCore,
-      ...enrichmentUnits(enrichment),
+      ...enrichmentUnits(enrichment, lastPhaseId),
     ],
   });
 }

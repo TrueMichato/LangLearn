@@ -262,11 +262,52 @@ describe('comprehensive curriculum composition', () => {
     );
     const generated = composed.units.slice(LEARNING_PATHS[language].units.length);
     expect(generated.every((unit) => unitLessons(unit).length <= 7)).toBe(true);
+    expect(
+      generated
+        .filter((unit) => unit.id.startsWith('core-'))
+        .every((unit) => unit.presentation === 'continuation'),
+    ).toBe(true);
+    const titleByLesson = new Map(
+      (['grammar', 'vocab'] as const).flatMap((kind) =>
+        catalogs(language)[kind].map((entry) => [
+          `${kind}:${entry.id}`,
+          entry.title,
+        ] as const),
+      ),
+    );
+    for (const unit of generated.filter((item) => item.id.startsWith('core-'))) {
+      const firstLesson = unitLessons(unit).find(
+        (item): item is LearningPathLessonRef =>
+          item.kind === 'grammar' || item.kind === 'vocab',
+      );
+      const phaseTitle = composed.phases?.find(
+        (phase) => phase.id === unit.phaseId,
+      )?.title;
+      expect(unit.title).not.toMatch(/^Build on\b/);
+      expect(unit.title.length).toBeLessThanOrEqual(64);
+      const topics = unit.title.split(' · ').map((topic) => topic.toLowerCase());
+      expect(new Set(topics).size).toBe(topics.length);
+      expect(phaseTitle).toBeDefined();
+      expect(unit.title).toMatch(
+        new RegExp(`^${phaseTitle?.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')} · `),
+      );
+      expect(unit.title).not.toBe(
+        firstLesson
+          ? titleByLesson.get(`${firstLesson.kind}:${firstLesson.lessonId}`)
+          : undefined,
+      );
+    }
+    expect(
+      generated
+        .filter((unit) => unit.id.startsWith('enrichment-'))
+        .every((unit) => unit.presentation == null),
+    ).toBe(true);
 
     const path = resolveLearningPath(LEARNING_PATHS[language], catalogs(language), {
       progress: [],
       completedLetters: new Set(),
     });
+
     const enrichment = path.units
       .flatMap((unit) => unit.nodes)
       .filter((node) => node.requirement === 'enrichment');
@@ -290,6 +331,82 @@ describe('comprehensive curriculum composition', () => {
       ),
     ).toBe(true);
   });
+
+  it('preserves continuation presentation when Arabic spoken strands are attached', () => {
+    const composed = composeComprehensiveLearningPath(
+      LEARNING_PATHS.ar,
+      catalogs('ar'),
+      { colloquialFocus: true, currentDialect: 'egyptian' },
+    );
+    const generatedWithStrands = composed.units.filter(
+      (unit) => unit.id.startsWith('core-') && unit.strands,
+    );
+
+    expect(generatedWithStrands.length).toBeGreaterThan(0);
+    expect(
+      generatedWithStrands.every(
+        (unit) => unit.presentation === 'continuation',
+      ),
+    ).toBe(true);
+    expect(
+      generatedWithStrands.every((unit) => unit.phaseId != null),
+    ).toBe(true);
+  });
+
+  it.each(CURRICULUM_LANGUAGES)(
+    'authors 3–5 ordered, fully used phases for %s',
+    (language) => {
+      const composed = composeComprehensiveLearningPath(
+        LEARNING_PATHS[language],
+        catalogs(language),
+      );
+      const requiredUnits = composed.units.filter((unit) =>
+        unitLessons(unit).some(
+          (milestone) => milestone.requirement !== 'enrichment',
+        ),
+      );
+      const phases = composed.phases ?? [];
+      const phaseIndex = new Map(
+        phases.map((phase, index) => [phase.id, index]),
+      );
+      const usedPhaseIds = new Set(requiredUnits.map((unit) => unit.phaseId));
+      const positions = requiredUnits.map((unit) =>
+        phaseIndex.get(unit.phaseId ?? ''),
+      );
+
+      expect(phases.length).toBeGreaterThanOrEqual(3);
+      expect(phases.length).toBeLessThanOrEqual(5);
+      expect(usedPhaseIds).toEqual(new Set(phases.map((phase) => phase.id)));
+      expect(positions.every((position) => position != null)).toBe(true);
+      expect(positions).toEqual(
+        [...positions].sort((left, right) => (left ?? 0) - (right ?? 0)),
+      );
+
+      const resolved = resolveLearningPath(
+        LEARNING_PATHS[language],
+        catalogs(language),
+        {
+          progress: [],
+          completedLetters: new Set(),
+        },
+      );
+      expect(resolved.phases?.map((phase) => phase.id)).toEqual(
+        phases.map((phase) => phase.id),
+      );
+      expect(
+        resolved.units
+          .filter((unit) =>
+            unit.nodes.some(
+              (node) => (node.requirement ?? 'required') === 'required',
+            ),
+          )
+          .every((unit) => unit.phase != null),
+      ).toBe(true);
+      if (resolved.units[0]?.id === 'letters') {
+        expect(resolved.units[0].phase?.id).toBe(phases[0].id);
+      }
+    },
+  );
 
   it.each(CURRICULUM_LANGUAGES)(
     'keeps %s core and enrichment counts separate with one recommendation',

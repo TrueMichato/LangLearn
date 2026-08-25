@@ -16,6 +16,7 @@ export type LearningPathNodeKind =
   | LearningPathLessonKind
   | LearningPathActivityKind;
 export type LearningPathRequirement = 'required' | 'enrichment';
+export type LearningPathUnitPresentation = 'standard' | 'continuation';
 export type ArabicDialect =
   | 'egyptian'
   | 'levantine'
@@ -35,10 +36,23 @@ export interface LearningPathLessonRef {
   requirement?: LearningPathRequirement;
 }
 
+export interface LearningPathPhase {
+  id: string;
+  title: string;
+  description: string;
+}
+
+export interface LearningPathContinuationPhaseStart {
+  phaseId: string;
+  startsAt?: LearningPathLessonRef;
+}
+
 interface LearningPathUnitManifestBase {
   id: string;
   title: string;
   description: string;
+  presentation?: LearningPathUnitPresentation;
+  phaseId?: string;
 }
 
 export interface LearningPathActivityRef {
@@ -85,6 +99,7 @@ export interface LearningPathManifest {
   letterPrerequisites: string[];
   /** Lessons that belong in the generated "Learn the script" unit. */
   letterUnitLessons?: LearningPathLessonRef[];
+  phases?: LearningPathPhase[];
   units: LearningPathUnitManifest[];
 }
 
@@ -114,6 +129,7 @@ export interface LearningPathCheckpoint {
   state: LearningPathCheckpointState;
   unitId: string;
   unitTitle: string;
+  phaseTitle?: string;
   lessonCount: number;
   lessonIds: string[];
   firstLessonTitle: string;
@@ -131,6 +147,8 @@ export interface LearningPathUnit {
   id: string;
   title: string;
   description: string;
+  presentation?: LearningPathUnitPresentation;
+  phase?: LearningPathPhase;
   nodes: LearningPathNode[];
   strands: LearningPathStrand[];
   checkpoints: LearningPathCheckpoint[];
@@ -138,6 +156,7 @@ export interface LearningPathUnit {
 
 export interface LearningPath {
   language: string;
+  phases?: LearningPathPhase[];
   units: LearningPathUnit[];
   testOutOptions: LearningPathCheckpoint[];
   completedCount: number;
