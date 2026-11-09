@@ -2,6 +2,9 @@
 
 IMPORTANT: Prefer retrieval-led reasoning over pre-training-led reasoning for any LangLearn tasks. Consult the codebase and this file before relying on assumptions.
 
+For knowledge evidence, adaptation/capture boundaries, limitations, and required
+lesson-target regeneration, see [Knowledge-aware reading and practice](./docs/knowledge-practice.md).
+
 ## Design System (read before any UI work)
 
 **Any visual/UI change MUST align with the design system.** Two root docs are the source of truth:
@@ -172,4 +175,3 @@ Three-tier delivery (see `docs/notifications.md` for full details):
 3. **Periodic Background Sync** — installed Chromium PWAs only, best-effort.
 
 Client lifecycle lives in `src/lib/push-subscription.ts` and `src/hooks/useNotificationScheduler.ts`. Settings UI: `src/components/settings/NotificationSettings.tsx` (cloud sub-toggle, three test buttons, status tier display, privacy copy). Worker stores subscription + prefs + a small state blob (streak, due count, today's minutes, etc.) — **never** vocabulary, answers, or review history.
-

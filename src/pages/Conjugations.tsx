@@ -1,5 +1,5 @@
 import { useState, useMemo, useCallback } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import { useXPStore } from '../stores/xpStore';
 import { useCurrentLanguage } from '../hooks/useCurrentLanguage';
 import LanguagePicker from '../components/common/LanguagePicker';
@@ -22,10 +22,9 @@ import {
   GuidedPracticeError,
   GuidedPracticeNotice,
 } from '../components/learn/GuidedPractice';
-import {
-  selectGuidedItems,
-  type GuidedPracticeDescriptor,
-} from '../lib/guided-practice';
+import { useAdaptivePractice } from '../hooks/useAdaptivePractice';
+import AdaptivePracticeNotice from '../components/common/AdaptivePracticeNotice';
+import PracticeWordCapture from '../components/common/PracticeWordCapture';
 
 type Category = 'ja-verbs' | 'ru-verbs' | 'ru-nouns' | 'ru-adjectives' | 'pt-verbs' | 'es-verbs' | 'ar-verbs' | 'ro-verbs' | 'ro-nouns' | 'ro-adjectives';
 type DrillMode = 'tiles' | 'type';
@@ -48,15 +47,6 @@ const CATEGORIES: Record<string, { value: Category; label: string }[]> = {
 };
 
 const SUPPORTED_LANGUAGES = ['ja', 'ru', 'pt', 'es', 'ar', 'ro'];
-
-function shuffle<T>(arr: T[]): T[] {
-  const a = [...arr];
-  for (let i = a.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [a[i], a[j]] = [a[j], a[i]];
-  }
-  return a;
-}
 
 function getFormOptions(category: Category): { value: string; label: string }[] {
   switch (category) {
@@ -88,9 +78,10 @@ function getFormOptions(category: Category): { value: string; label: string }[] 
 function buildQuestions(
   category: Category,
   selectedForms: string[],
-  guided?: GuidedPracticeDescriptor,
 ): DrillQuestion[] {
   const questions: DrillQuestion[] = [];
+  const validForms = new Set(getFormOptions(category).map((form) => form.value));
+  selectedForms = selectedForms.filter((form) => validForms.has(form));
 
   if (category === 'ja-verbs') {
     const forms = selectedForms as JaFormName[];
@@ -100,6 +91,7 @@ function buildQuestions(
           prompt: `Conjugate 「${verb.dictionary}」 (${verb.meaning}) → ${JA_FORM_LABELS[form]}`,
           correctAnswer: verb.conjugations[form],
           language: 'ja',
+          lemma: verb.dictionary, meaning: verb.meaning,
         });
       }
     }
@@ -112,6 +104,7 @@ function buildQuestions(
           prompt: `${verb.infinitive} (${verb.meaning}) → ${RU_VERB_FORM_LABELS[form]}`,
           correctAnswer: verb.conjugations[form],
           language: 'ru',
+          lemma: verb.infinitive, meaning: verb.meaning,
         });
       }
     }
@@ -123,11 +116,13 @@ function buildQuestions(
           prompt: `${noun.nominative} (${noun.meaning}) → ${RU_CASE_LABELS[c]} singular`,
           correctAnswer: noun.declensions[c].singular,
           language: 'ru',
+          lemma: noun.nominative, meaning: noun.meaning,
         });
         questions.push({
           prompt: `${noun.nominative} (${noun.meaning}) → ${RU_CASE_LABELS[c]} plural`,
           correctAnswer: noun.declensions[c].plural,
           language: 'ru',
+          lemma: noun.nominative, meaning: noun.meaning,
         });
       }
     }
@@ -142,6 +137,7 @@ function buildQuestions(
             prompt: `${adj.masculine_nom} (${adj.meaning}) → ${RU_ADJ_CASE_LABELS[c]} ${genderLabels[g]}`,
             correctAnswer: adj.declensions[c][g],
             language: 'ru',
+            lemma: adj.masculine_nom, meaning: adj.meaning,
           });
         }
       }
@@ -155,6 +151,7 @@ function buildQuestions(
           prompt: `${verb.infinitive} (${verb.meaning}) → ${PT_FORM_LABELS[form]}`,
           correctAnswer: verb.conjugations[form],
           language: 'pt',
+          lemma: verb.infinitive, meaning: verb.meaning,
         });
       }
     }
@@ -167,6 +164,7 @@ function buildQuestions(
           prompt: `${verb.infinitive} (${verb.meaning}) → ${ES_FORM_LABELS[form]}`,
           correctAnswer: verb.conjugations[form],
           language: 'es',
+          lemma: verb.infinitive, meaning: verb.meaning,
         });
       }
     }
@@ -179,6 +177,7 @@ function buildQuestions(
           prompt: `${verb.infinitive} (${verb.meaning}) → ${AR_FORM_LABELS[form]}`,
           correctAnswer: verb.conjugations[form],
           language: 'ar',
+          lemma: verb.infinitive, meaning: verb.meaning,
         });
       }
     }
@@ -191,6 +190,7 @@ function buildQuestions(
           prompt: `${verb.infinitive} (${verb.meaning}) → ${RO_FORM_LABELS[form]}`,
           correctAnswer: verb.conjugations[form],
           language: 'ro',
+          lemma: verb.infinitive, meaning: verb.meaning,
         });
       }
     }
@@ -202,11 +202,13 @@ function buildQuestions(
           prompt: `${noun.nominative} (${noun.meaning}) → ${RO_CASE_LABELS[c]} singular`,
           correctAnswer: noun.declensions[c].singular,
           language: 'ro',
+          lemma: noun.nominative, meaning: noun.meaning,
         });
         questions.push({
           prompt: `${noun.nominative} (${noun.meaning}) → ${RO_CASE_LABELS[c]} plural`,
           correctAnswer: noun.declensions[c].plural,
           language: 'ro',
+          lemma: noun.nominative, meaning: noun.meaning,
         });
       }
     }
@@ -218,17 +220,22 @@ function buildQuestions(
           prompt: `${adj.base} (${adj.meaning}) → ${RO_ADJ_FORM_LABELS[form]}`,
           correctAnswer: adj.forms[form],
           language: 'ro',
+          lemma: adj.base, meaning: adj.meaning,
         });
       }
     }
   }
 
-  return guided
-    ? selectGuidedItems(questions, guided, (question) => question.prompt)
-    : shuffle(questions).slice(0, 10);
+  return questions;
 }
 
 export default function ConjugationsPage() {
+  const current = useCurrentLanguage(SUPPORTED_LANGUAGES);
+  const { search } = useLocation();
+  return <ConjugationsSession key={`${current.requested}/${search}`} current={current} />;
+}
+
+export function ConjugationsSession({ current: languageState }: { current: ReturnType<typeof useCurrentLanguage> }) {
   const addXP = useXPStore((s) => s.addXP);
   const {
     language: currentLanguage,
@@ -236,7 +243,7 @@ export default function ConjugationsPage() {
     options: supportedActive,
     requested,
     isSupported,
-  } = useCurrentLanguage(SUPPORTED_LANGUAGES);
+  } = languageState;
   const language = currentLanguage ?? 'ja';
   const [category, setCategory] = useState<Category>(CATEGORIES[language]?.[0]?.value ?? 'ja-verbs');
   const [selectedForms, setSelectedForms] = useState<Set<string>>(new Set());
@@ -247,6 +254,8 @@ export default function ConjugationsPage() {
 
   const formOptions = useMemo(() => getFormOptions(category), [category]);
   const guided = useGuidedPractice('conjugation', language);
+  const adaptive = useAdaptivePractice<DrillQuestion>(language);
+  const resetAdaptive = adaptive.reset;
 
   const handleLanguageChange = useCallback(
     (lang: string) => {
@@ -261,34 +270,50 @@ export default function ConjugationsPage() {
   );
 
   const handleCategoryChange = useCallback((cat: Category) => {
+    resetAdaptive();
     setCategory(cat);
     setSelectedForms(new Set());
-  }, []);
+  }, [resetAdaptive]);
 
   const toggleForm = useCallback((form: string) => {
+    resetAdaptive();
     setSelectedForms((prev) => {
       const next = new Set(prev);
       if (next.has(form)) next.delete(form);
       else next.add(form);
       return next;
     });
-  }, []);
+  }, [resetAdaptive]);
 
   const selectAllForms = useCallback(() => {
+    resetAdaptive();
     setSelectedForms(new Set(formOptions.map((f) => f.value)));
-  }, [formOptions]);
+  }, [formOptions, resetAdaptive]);
 
-  const startDrill = useCallback(() => {
+  const startDrill = async () => {
+    if (!isSupported || adaptive.status === 'loading') return;
     const forms =
-      guided.descriptor
+      guided.descriptor?.scope?.forms ?? (guided.descriptor && selectedForms.size === 0
         ? formOptions.map((form) => form.value)
-        : Array.from(selectedForms);
-    if (forms.length === 0) return;
-    const q = buildQuestions(category, forms, guided.descriptor ?? undefined);
+        : Array.from(selectedForms));
+    const categories = guided.descriptor?.scope?.categories;
+    let pool = categories && !categories.includes(category)
+      ? [] : buildQuestions(category, [...forms]);
+    const scope = guided.descriptor?.scope?.itemIds;
+    if (scope) pool = pool.filter((item) => scope.includes(item.prompt));
+    const q = await adaptive.start(pool, {
+      seed: guided.descriptor?.seed ?? `${language}/${category}`,
+      session: guided.descriptor?.session ?? { minItems: 1, targetItems: 10, maxItems: 10 },
+    }, (item, index) => ({
+      id: item.prompt, language: item.language,
+      vocabulary: [{ surface: item.lemma ?? item.correctAnswer, lemma: item.lemma }],
+      order: index,
+    }));
+    if (!q) return;
     setQuestions(q);
     setResult(null);
     setDrilling(true);
-  }, [selectedForms, category, guided.descriptor, formOptions]);
+  };
 
   const handleComplete = useCallback(
     (correct: number, total: number) => {
@@ -308,10 +333,17 @@ export default function ConjugationsPage() {
     setResult(null);
     setDrilling(false);
     setQuestions([]);
-  }, []);
+    resetAdaptive();
+  }, [resetAdaptive]);
 
   if (guided.invalidMessage) {
     return <GuidedPracticeError message={guided.invalidMessage} />;
+  }
+  if (!isSupported && (drilling || result)) {
+    return <LanguageUnavailable requested={requested} options={supportedActive} onChange={handleLanguageChange} feature="Conjugation drills" />;
+  }
+  if ((drilling || result) && adaptive.selection?.language !== language) {
+    return <p role="status">Preparing this language…</p>;
   }
 
   // No supported languages active
@@ -344,6 +376,9 @@ export default function ConjugationsPage() {
           <p className="text-sm text-slate-500 dark:text-slate-400">{pct}% correct</p>
           <p className="text-sm font-medium text-yellow-600 dark:text-yellow-400">+{xp} XP</p>
         </div>
+        <PracticeWordCapture language={language} source="conjugation" words={questions.map((question) => ({
+          word: question.correctAnswer, lemma: question.lemma, meaning: question.meaning,
+        }))} />
         <GuidedCompletionActions guided={guided} onPracticeAgain={resetDrill} />
         {!guided.isGuided && (
           <button
@@ -361,6 +396,7 @@ export default function ConjugationsPage() {
   if (drilling && questions.length > 0) {
     return (
       <div className="max-w-md mx-auto py-4 page-enter">
+        <AdaptivePracticeNotice {...adaptive} />
         <button
           onClick={resetDrill}
           className="mb-4 text-sm text-slate-500 dark:text-slate-400 hover:text-slate-700 dark:hover:text-slate-200"
@@ -388,6 +424,7 @@ export default function ConjugationsPage() {
         </h2>
       </div>
       <GuidedPracticeNotice guided={guided} />
+      <AdaptivePracticeNotice {...adaptive} />
 
       {!guided.descriptor && !isSupported && (
         <LanguageUnavailable
@@ -419,6 +456,7 @@ export default function ConjugationsPage() {
             {CATEGORIES[language].map((cat) => (
               <button
                 key={cat.value}
+                disabled={adaptive.status === 'loading' || (!!guided.descriptor?.scope?.categories && !guided.descriptor.scope.categories.includes(cat.value))}
                 onClick={() => handleCategoryChange(cat.value)}
                 className={`px-4 py-2 min-h-[44px] rounded-xl text-sm font-medium transition-colors ${
                   category === cat.value
@@ -440,6 +478,7 @@ export default function ConjugationsPage() {
             {category === 'ru-nouns' || category === 'ru-adjectives' ? 'Cases' : 'Forms'} to practice
           </label>
           <button
+            disabled={!!guided.descriptor?.scope?.forms || adaptive.status === 'loading'}
             onClick={selectAllForms}
             className="inline-flex min-h-[44px] items-center text-xs text-indigo-600 dark:text-indigo-400 hover:underline"
           >
@@ -450,9 +489,10 @@ export default function ConjugationsPage() {
           {formOptions.map((f) => (
             <button
               key={f.value}
+              disabled={!!guided.descriptor?.scope?.forms || adaptive.status === 'loading'}
               onClick={() => toggleForm(f.value)}
               className={`px-3 py-1.5 min-h-[44px] rounded-lg text-sm transition-colors ${
-                selectedForms.has(f.value)
+                (guided.descriptor?.scope?.forms?.includes(f.value) ?? selectedForms.has(f.value))
                   ? 'bg-indigo-100 dark:bg-indigo-900 text-indigo-700 dark:text-indigo-300 border border-indigo-300 dark:border-indigo-700'
                   : 'bg-slate-100 dark:bg-slate-700 text-slate-700 dark:text-slate-200 border border-transparent'
               }`}
@@ -493,7 +533,7 @@ export default function ConjugationsPage() {
       {/* Start button */}
       <button
         onClick={startDrill}
-        disabled={selectedForms.size === 0}
+        disabled={!isSupported || adaptive.status === 'loading' || (!guided.descriptor && selectedForms.size === 0)}
         className="w-full bg-indigo-600 text-white px-5 py-3 rounded-xl hover:bg-indigo-700 disabled:opacity-50 disabled:cursor-not-allowed press-feedback transition-colors font-semibold text-lg"
       >
         Start Drill

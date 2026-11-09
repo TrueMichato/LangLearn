@@ -9,6 +9,9 @@ interface TokenResult {
   surface_form: string;
   reading: string;
   word_type: string;
+  basic_form: string;
+  pos: string;
+  pos_detail_1: string;
 }
 
 interface TokenizeResponse {
@@ -25,7 +28,7 @@ function initTokenizer(): Promise<void> {
 
   initPromise = new Promise((resolve, reject) => {
     kuromoji
-      .builder({ dicPath: '/LangLearn/dict/' })
+      .builder({ dicPath: `${import.meta.env.BASE_URL}dict/` })
       .build((err, built) => {
         if (err) {
           initPromise = null;
@@ -51,6 +54,9 @@ self.onmessage = async (e: MessageEvent<TokenizeRequest>) => {
       surface_form: t.surface_form,
       reading: t.reading ?? '',
       word_type: t.word_type,
+      basic_form: t.basic_form,
+      pos: t.pos,
+      pos_detail_1: t.pos_detail_1,
     }));
 
     const response: TokenizeResponse = { id, tokens };

@@ -153,6 +153,15 @@ export interface GuidedActivityProgress {
   bestScore?: number;
 }
 
+export interface SkillProgress {
+  id: string;
+  language: string;
+  activity: 'minimal-pairs' | 'numbers';
+  skill: string;
+  attempts: number;
+  correct: number;
+}
+
 const db = new Dexie(DB_NAME) as Dexie & {
   words: EntityTable<Word, 'id'>;
   reviews: EntityTable<Review, 'id'>;
@@ -167,6 +176,7 @@ const db = new Dexie(DB_NAME) as Dexie & {
   reviewLog: EntityTable<ReviewLogEntry, 'id'>;
   snapshots: EntityTable<Snapshot, 'id'>;
   guidedActivityProgress: EntityTable<GuidedActivityProgress, 'id'>;
+  skillProgress: EntityTable<SkillProgress, 'id'>;
 };
 
 db.version(1).stores({
@@ -317,6 +327,22 @@ db.version(10).stores({
   snapshots: '++id, createdAt',
 });
 
+db.version(11).stores({
+  words: '++id, [language+createdAt], [word+language], language, word, createdAt, *tags, type',
+  reviews: '++id, [wordId+nextReviewDate], wordId, nextReviewDate',
+  texts: '++id, language, createdAt',
+  studySessions: '++id, startTime, activity',
+  settings: 'key',
+  dailyActivity: 'date, goalMet, challengeComplete',
+  lessonProgress: 'id, language, lessonId',
+  characterProgress: 'id, language, mastery',
+  testHistory: '++id, language, type, score, date',
+  badges: 'id, unlockedAt',
+  reviewLog: '++id, reviewId, wordId, isLapse, [language+date], date',
+  snapshots: '++id, createdAt',
+  guidedActivityProgress: 'id, language, milestoneId, activity, completedAt',
+});
+
 db.version(CURRENT_SCHEMA_VERSION).stores({
   words: '++id, [language+createdAt], [word+language], language, word, createdAt, *tags, type',
   reviews: '++id, [wordId+nextReviewDate], wordId, nextReviewDate',
@@ -331,6 +357,35 @@ db.version(CURRENT_SCHEMA_VERSION).stores({
   reviewLog: '++id, reviewId, wordId, isLapse, [language+date], date',
   snapshots: '++id, createdAt',
   guidedActivityProgress: 'id, language, milestoneId, activity, completedAt',
+  skillProgress: 'id, language, [language+activity]',
+}).upgrade(async (tx) => {
+  // Freeze the old evidence before any v2 checkpoint can affect access.
+  const lessons = await tx.table<LessonProgress>('lessonProgress').toArray();
+  const activities = await tx.table<GuidedActivityProgress>('guidedActivityProgress').toArray();
+  for (const language of ['ja', 'ru', 'ar', 'es', 'pt', 'ro']) {
+    const guidedGroups: Record<string, string[]> = {};
+    try {
+      if (typeof localStorage !== 'undefined') {
+        const prefix = `langlearn-guided-${language}-`;
+        for (let index = 0; index < localStorage.length; index++) {
+          const key = localStorage.key(index);
+          if (!key?.startsWith(prefix)) continue;
+          const groups: unknown = JSON.parse(localStorage.getItem(key) ?? '[]');
+          if (Array.isArray(groups) && groups.every((group) => typeof group === 'string')) {
+            guidedGroups[key.slice(prefix.length)] = groups;
+          }
+        }
+      }
+    } catch { /* IndexedDB lesson completions remain authoritative if storage is unavailable. */ }
+    await tx.table('settings').put({
+      key: `guided-path-source-v1/${language}`,
+      value: JSON.stringify({
+        progress: lessons.filter((row) => row.language === language),
+        activityProgress: activities.filter((row) => row.language === language),
+        guidedGroups,
+      }),
+    });
+  }
 });
 
 /** Schema version the running bundle expects. Snapshots record it so a restore

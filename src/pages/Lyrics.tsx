@@ -1,12 +1,14 @@
 import { useState, useMemo, useCallback, useRef } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useSearchParams } from 'react-router-dom';
 import { useCurrentLanguage } from '../hooks/useCurrentLanguage';
 import LanguagePicker from '../components/common/LanguagePicker';
 import LanguageUnavailable from '../components/common/LanguageUnavailable';
 import { useXPStore } from '../stores/xpStore';
 import { isRTL } from '../lib/rtl';
 import { allLyrics, getSongById } from '../data/lyrics';
-import { addWord, wordExists } from '../db/words';
+import { saveWordsToVocabulary } from '../db/words';
+import { useLexicalRecommendations } from '../hooks/useLexicalRecommendations';
+import LexicalCoverageNote from '../components/common/LexicalCoverageNote';
 import { XP_LYRICS_BASE, XP_PER_LYRICS_VOCAB } from '../lib/xp';
 import type { Song, SongVocab } from '../data/lyrics';
 import { useGuidedPractice, type GuidedPracticeState } from '../hooks/useGuidedPractice';
@@ -64,6 +66,14 @@ function SongBrowser({
     }
     return songs;
   }, [selectedLang, difficulty, search]);
+  const recommendationItems = useMemo(() => filteredSongs.map((song) => ({
+    id: song.id, language: song.language, difficulty: song.difficulty,
+    text: song.lines.map((line) => line.original).join('\n'),
+  })), [filteredSongs]);
+  const recommendations = useLexicalRecommendations(selectedLang, recommendationItems);
+  const rankedSongs = recommendations.selection
+    ? recommendations.selection.itemIds.flatMap((id) => filteredSongs.filter((song) => song.id === id))
+    : filteredSongs;
 
   return (
     <div>
@@ -93,6 +103,7 @@ function SongBrowser({
       {/* Search */}
       <input
         type="text"
+        aria-label="Search songs"
         placeholder="Search songs…"
         value={search}
         onChange={(e) => setSearch(e.target.value)}
@@ -117,36 +128,54 @@ function SongBrowser({
       </div>
 
       {/* Song cards */}
+      <p role="status" className="mb-3 text-sm text-slate-500 dark:text-slate-400">
+        {recommendations.status === 'loading' ? 'Estimating song vocabulary…'
+          : recommendations.status === 'error' ? 'Vocabulary estimates could not load. All songs remain available; reopen this list to retry.'
+            : 'Suggested order uses full lyric vocabulary. Your song choice is always yours.'}
+      </p>
+      {recommendations.selection?.limitedMatch && (
+        <details className="mb-3 text-sm text-slate-500 dark:text-slate-400">
+          <summary className="min-h-[44px] cursor-pointer py-3">About this limited match</summary>
+          {recommendations.selection.reasons.map((reason) => <p key={reason}>{reason}</p>)}
+        </details>
+      )}
       <div className="space-y-3">
         {filteredSongs.length === 0 && (
           <p className="text-center text-slate-500 dark:text-slate-400 py-8">
             No songs found for this filter.
           </p>
         )}
-        {filteredSongs.map((song) => (
-          <button
+        {rankedSongs.map((song) => (
+          <div
             key={song.id}
-            onClick={() => onSelect(song.id)}
-            className="w-full text-left bg-white dark:bg-slate-800 rounded-2xl shadow hover:shadow-md transition-all p-4 border border-slate-100 dark:border-slate-700 min-h-[44px]"
+            className="bg-white dark:bg-slate-800 rounded-2xl p-4 border border-slate-200/70 dark:border-white/10"
           >
-            <div className="flex items-start justify-between gap-2">
-              <div className="min-w-0 flex-1">
-                <div className="flex items-center gap-2 mb-1">
-                  <span className="text-lg">🎶</span>
-                  <p className="font-semibold text-slate-800 dark:text-slate-100 truncate">
-                    {song.title}
+            <button
+              onClick={() => onSelect(song.id)}
+              className="w-full text-left min-h-[44px] rounded-xl hover:bg-slate-50 dark:hover:bg-slate-700/50 transition-colors"
+            >
+              <div className="flex items-start justify-between gap-2">
+                <div className="min-w-0 flex-1">
+                  <div className="flex items-center gap-2 mb-1">
+                    <span className="text-lg">🎶</span>
+                    <p className="font-semibold text-slate-800 dark:text-slate-100 truncate">
+                      {song.title}
+                    </p>
+                  </div>
+                  <p className="text-sm text-slate-500 dark:text-slate-400 truncate">
+                    {song.titleRomanized} · {song.artist}
+                  </p>
+                  <p className="text-xs text-slate-500 dark:text-slate-400 mt-1">
+                    {song.context} · {song.lines.length} lines
                   </p>
                 </div>
-                <p className="text-sm text-slate-500 dark:text-slate-400 truncate">
-                  {song.titleRomanized} · {song.artist}
-                </p>
-                <p className="text-xs text-slate-500 dark:text-slate-400 mt-1">
-                  {song.context} · {song.lines.length} lines
-                </p>
+                <DifficultyBadge difficulty={song.difficulty} />
               </div>
-              <DifficultyBadge difficulty={song.difficulty} />
-            </div>
-          </button>
+            </button>
+            {recommendations.selection?.items.find((item) => item.id === song.id)?.coverage && (
+              <LexicalCoverageNote coverage={recommendations.selection.items.find((item) => item.id === song.id)!.coverage!} />
+            )}
+          </div>
         ))}
       </div>
     </div>
@@ -169,9 +198,12 @@ function LyricsViewer({
   const [showTranslation, setShowTranslation] = useState(false);
   const [highlightedLine, setHighlightedLine] = useState<number | null>(null);
   const [addedWords, setAddedWords] = useState<Set<string>>(new Set());
+  const [existingWords, setExistingWords] = useState<Set<string>>(new Set());
   const [addingWord, setAddingWord] = useState<string | null>(null);
   const [completed, setCompleted] = useState(false);
   const [vocabAddedCount, setVocabAddedCount] = useState(0);
+  const [saveError, setSaveError] = useState('');
+  const [editingWord, setEditingWord] = useState<SongVocab | null>(null);
   const completionStarted = useRef(false);
 
   const youtubeUrl = `https://www.youtube.com/results?search_query=${encodeURIComponent(
@@ -182,10 +214,9 @@ function LyricsViewer({
     async (v: SongVocab) => {
       if (addedWords.has(v.word)) return;
       setAddingWord(v.word);
+      setSaveError('');
       try {
-        const exists = await wordExists(v.word, song.language);
-        if (!exists) {
-          await addWord({
+        const result = await saveWordsToVocabulary([{
             language: song.language,
             word: v.word,
             reading: v.reading,
@@ -193,10 +224,13 @@ function LyricsViewer({
             contextSentence: '',
             sourceTextId: null,
             tags: ['lyrics', song.id],
-          });
-        }
+          }]);
         setAddedWords((prev) => new Set(prev).add(v.word));
-        setVocabAddedCount((c) => c + 1);
+        if (result.alreadySaved) setExistingWords((prev) => new Set(prev).add(v.word));
+        setVocabAddedCount((c) => c + result.added);
+        setEditingWord(null);
+      } catch {
+        setSaveError('This word could not be saved. Your edits are still here; try again.');
       } finally {
         setAddingWord(null);
       }
@@ -356,20 +390,37 @@ function LyricsViewer({
                   <p className="text-sm text-slate-500 dark:text-slate-400 truncate">{v.meaning}</p>
                 </div>
                 <button
-                  onClick={() => handleAddVocab(v)}
-                  disabled={isAdded || isAdding}
+                  onClick={() => { setEditingWord({ ...v }); setSaveError(''); }}
+                  disabled={isAdded || addingWord !== null}
                   className={`px-3 py-1.5 min-h-[44px] rounded-lg text-xs font-medium whitespace-nowrap min-h-[36px] transition-colors ${
                     isAdded
                       ? 'bg-green-100 dark:bg-green-900/50 text-green-700 dark:text-green-300'
                       : 'bg-indigo-100 dark:bg-indigo-900/40 text-indigo-700 dark:text-indigo-200 hover:bg-indigo-200 dark:hover:bg-indigo-800/50'
                   }`}
                 >
-                  {isAdded ? '✓ Added' : isAdding ? '…' : 'Add +'}
+                  {existingWords.has(v.word) ? 'Already saved' : isAdded ? '✓ Added' : isAdding ? 'Saving…' : 'Add +'}
                 </button>
               </div>
             );
           })}
         </div>
+              {editingWord && (
+                <form onSubmit={(event) => { event.preventDefault(); void handleAddVocab(editingWord); }} className="mt-4 space-y-3">
+                  <p className="text-sm text-slate-500 dark:text-slate-400">Bundled vocabulary works offline. Check these details before saving.</p>
+                  {(['word', 'reading', 'meaning'] as const).map((field) => (
+                    <label key={field} className="block text-sm text-slate-800 dark:text-slate-100">
+                      {field === 'word' ? 'Word' : field === 'reading' ? 'Reading' : 'Meaning'}
+                      <input value={editingWord[field]} required={field !== 'reading'} disabled={addingWord !== null}
+                        dir={field !== 'meaning' && isRTL(song.language) ? 'rtl' : undefined}
+                        onChange={(event) => setEditingWord({ ...editingWord, [field]: event.target.value })}
+                        className="block w-full min-h-[44px] rounded-xl border border-slate-200 dark:border-white/10 bg-white dark:bg-slate-800 px-3 text-slate-800 dark:text-slate-100" />
+                    </label>
+                  ))}
+                  <button disabled={addingWord !== null} className="min-h-[44px] px-4 rounded-xl bg-indigo-600 text-white">Save word</button>
+                  <button type="button" onClick={() => setEditingWord(null)} className="min-h-[44px] px-4 text-slate-600 dark:text-slate-300">Cancel</button>
+                </form>
+              )}
+              {saveError && <p role="alert" className="mt-3 text-sm text-slate-700 dark:text-slate-300">{saveError}</p>}
       </div>
 
       {/* Complete button */}
@@ -404,6 +455,12 @@ function LyricsViewer({
 /* ─── Main Page ─── */
 
 export default function LyricsPage() {
+  const { language, requested } = useCurrentLanguage(LYRIC_LANGUAGES);
+  const [params] = useSearchParams();
+  return <LyricsAttempt key={`${language ?? requested}:${params}`} />;
+}
+
+function LyricsAttempt() {
   const [selectedSongId, setSelectedSongId] = useState<string | null>(null);
   const { language: currentLanguage } = useCurrentLanguage(LYRIC_LANGUAGES);
   const language = currentLanguage ?? '';
@@ -418,7 +475,7 @@ export default function LyricsPage() {
       : null,
     [guided.descriptor, language],
   );
-  const selectedSong = selectedSongId
+  const selectedSong = selectedSongId && getSongById(selectedSongId)?.language === language
     ? getSongById(selectedSongId)
     : guidedSong;
 

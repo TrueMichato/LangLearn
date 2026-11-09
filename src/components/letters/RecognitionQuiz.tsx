@@ -6,12 +6,15 @@ import { speak } from '../../lib/tts';
 import { XP_PER_QUIZ_CORRECT } from '../../lib/xp';
 import { useTimerStore } from '../../stores/timerStore';
 import { useXPStore } from '../../stores/xpStore';
+import type { CharacterProgress } from '../../db/schema';
+import { selectCharacterItems } from '../../lib/skill-adaptation';
 
 interface Props {
   characters: Character[];
   alphabetName: string;
   language: string;
   onProgress: () => void;
+  progress?: ReadonlyMap<string, CharacterProgress>;
 }
 
 type Round = 'char-to-romanji' | 'romanji-to-char' | 'listen-to-char';
@@ -42,17 +45,14 @@ function shuffle<T>(arr: T[]): T[] {
   return a;
 }
 
-function generateQuestions(characters: Character[], count: number) {
-  const shuffled = shuffle(characters);
-  return shuffled.slice(0, Math.min(count, shuffled.length));
-}
-
 function getDistractors(correct: Character, all: Character[], count: number): Character[] {
   const others = all.filter((c) => c.char !== correct.char);
   return shuffle(others).slice(0, count);
 }
 
-export default function RecognitionQuiz({ characters, alphabetName, language, onProgress }: Props) {
+export default function RecognitionQuiz({ characters, alphabetName, language, onProgress, progress }: Props) {
+  const [snapshot, setSnapshot] = useState(() => progress ?? new Map<string, CharacterProgress>());
+  const [attempt, setAttempt] = useState(0);
   const [roundIndex, setRoundIndex] = useState(0);
   const [questionIndex, setQuestionIndex] = useState(0);
   const [score, setScore] = useState(0);
@@ -70,9 +70,9 @@ export default function RecognitionQuiz({ characters, alphabetName, language, on
   const rounds = useMemo(() => getRounds(language), [language]);
 
   const questions = useMemo(
-    () => generateQuestions(characters, QUESTIONS_PER_ROUND),
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-    [characters, roundIndex],
+    () => selectCharacterItems(characters, snapshot, language, alphabetName,
+      QUESTIONS_PER_ROUND, `${language}/${alphabetName}/${attempt}/${roundIndex}`),
+    [characters, snapshot, language, alphabetName, attempt, roundIndex],
   );
 
   const currentQuestion = questions[questionIndex];
@@ -160,6 +160,8 @@ export default function RecognitionQuiz({ characters, alphabetName, language, on
   }
 
   function handleRestart() {
+    setSnapshot(progress ?? new Map<string, CharacterProgress>());
+    setAttempt((value) => value + 1);
     setRoundIndex(0);
     setQuestionIndex(0);
     setScore(0);
@@ -263,6 +265,7 @@ export default function RecognitionQuiz({ characters, alphabetName, language, on
         {currentRound.type === 'listen-to-char' && (
           <button
             onClick={playAudio}
+            aria-label="Hear the character"
             className="text-6xl p-4 rounded-full bg-indigo-100 dark:bg-indigo-900/40 hover:bg-indigo-200 dark:hover:bg-indigo-900/60 transition-colors press-feedback"
           >
             🔊

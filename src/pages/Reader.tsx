@@ -1,6 +1,6 @@
 import { useState, useEffect, useCallback, useRef } from 'react';
 import { db, type Text as TextRecord } from '../db/schema';
-import { addWord } from '../db/words';
+import { saveWordsToVocabulary } from '../db/words';
 import { getTextCount } from '../db/texts';
 import { useTimerStore } from '../stores/timerStore';
 import { useSettingsStore } from '../stores/settingsStore';
@@ -16,7 +16,7 @@ import { splitSentences, findSentenceAt, type SentenceSpan } from '../lib/senten
 import { isRTL } from '../lib/rtl';
 import { SkeletonCard, SkeletonList } from '../components/common/Skeleton';
 import ComprehensionIndicator from '../components/reader/ComprehensionIndicator';
-import { getKnownWordSet } from '../lib/text-analysis';
+import { useKnowledge } from '../hooks/useKnowledge';
 import { buildWordStatusMap, type WordStatusMap, getStatusColor } from '../lib/word-status';
 import { parseWithIchiMoe, getIchiMoeUrl, type IchiMoeWord } from '../lib/ichimoe';
 import WordDefinitions from '../components/reader/WordDefinitions';
@@ -29,16 +29,24 @@ import {
 } from '../components/learn/GuidedPractice';
 import { selectGuidedItems } from '../lib/guided-practice';
 import type { CuratedText } from '../components/reader/TextLibrary';
+import { loadReaderStory } from '../lib/reader-coverage';
 
 type Tab = 'import' | 'library';
 
 export default function ReaderPage() {
   const [tab, setTab] = useState<Tab>('import');
   const [tabReady, setTabReady] = useState(false);
+  const [readingError, setReadingError] = useState('');
+  const openRequest = useRef(0);
+  const textLanguage = useRef<string | null>(null);
   const [text, setText] = useState('');
   const [title, setTitle] = useState('');
   const { language: currentLanguage, setLanguage, options: activeLanguages } = useCurrentLanguage();
   const language = currentLanguage ?? 'ja';
+  const knowledge = useKnowledge(language);
+  const knowledgeSnapshot = knowledge.snapshot;
+  const highlightRequest = useRef(0);
+  const invalidateHighlight = useCallback(() => { highlightRequest.current++; }, []);
   const [savedTextId, setSavedTextId] = useState<number | null>(null);
   const [tokens, setTokens] = useState<string[]>([]);
   const [tokenOffsets, setTokenOffsets] = useState<number[]>([]);
@@ -102,18 +110,18 @@ export default function ReaderPage() {
 
   // Load known words and word status map when highlighting is toggled on or text/language changes
   const refreshKnownWords = useCallback(async () => {
+    const request = ++highlightRequest.current;
     if (!highlightKnown) return;
-    const [known, statusMap] = await Promise.all([
-      getKnownWordSet(language),
-      buildWordStatusMap(language),
-    ]);
-    setKnownWordSet(known);
+    setKnownWordSet(new Set(knowledgeSnapshot?.entries.filter((entry) => entry.familiar).map((entry) => entry.key) ?? []));
+    const statusMap = await buildWordStatusMap(language);
+    if (request !== highlightRequest.current) return;
     setWordStatusMap(statusMap);
-  }, [highlightKnown, language]);
+  }, [highlightKnown, language, knowledgeSnapshot]);
 
   useEffect(() => {
-    refreshKnownWords();
-  }, [refreshKnownWords]);
+    void refreshKnownWords().catch(() => { setWordStatusMap(null); });
+    return invalidateHighlight;
+  }, [refreshKnownWords, invalidateHighlight]);
 
   // Default to the Library: it holds both saved texts and the curated graded
   // readings, so a first-time reader sees real content instead of a blank
@@ -124,6 +132,9 @@ export default function ReaderPage() {
   }, []);
 
   const resetReadingState = useCallback(() => {
+    openRequest.current++;
+    setIsTokenizing(false);
+    setReadingError('');
     logReadingSession();
     setTokens([]);
     setTokenOffsets([]);
@@ -146,6 +157,12 @@ export default function ReaderPage() {
     setGuidedReadingFinished(false);
   }, [logReadingSession]);
 
+  useEffect(() => {
+    if (textLanguage.current && textLanguage.current !== language) resetReadingState();
+    textLanguage.current = language;
+  }, [language, resetReadingState]);
+  useEffect(() => () => { openRequest.current++; }, []);
+
   function switchTab(newTab: Tab) {
     if (newTab === tab) return;
     resetReadingState();
@@ -154,6 +171,12 @@ export default function ReaderPage() {
 
   async function openTextFromLibrary(record: TextRecord) {
     resetReadingState();
+    if (!record.content.trim()) {
+      setReadingError('This saved text is empty. Choose another text or import something to read.');
+      return;
+    }
+    const request = openRequest.current;
+    textLanguage.current = record.language;
     setText(record.content);
     setTitle(record.title);
     setLanguage(record.language);
@@ -169,6 +192,7 @@ export default function ReaderPage() {
       setIsTokenizing(true);
       try {
         const result = await tokenizeJapanese(record.content);
+        if (request !== openRequest.current) return;
         setJaTokens(result);
         const offsets: number[] = [];
         let pos = 0;
@@ -178,11 +202,12 @@ export default function ReaderPage() {
         }
         setJaTokenOffsets(offsets);
       } catch {
+        if (request !== openRequest.current) return;
         const chars = record.content.split('');
         setTokens(chars);
         setTokenOffsets(chars.map((_, i) => i));
       } finally {
-        setIsTokenizing(false);
+        if (request === openRequest.current) setIsTokenizing(false);
       }
     } else {
       const isCJK = /[\u3000-\u9fff\uf900-\ufaff]/.test(record.content);
@@ -210,14 +235,19 @@ export default function ReaderPage() {
     curatedTitle: string,
   ) => {
     resetReadingState();
+    const request = openRequest.current;
+    textLanguage.current = lang;
     setIsTokenizing(true);
     setLanguage(lang);
     setTitle(curatedTitle);
 
     try {
-      const res = await fetch(`${import.meta.env.BASE_URL}content/reading/${lang}/${id}.txt`);
-      if (!res.ok) throw new Error('Failed to load text');
-      const content = await res.text();
+      const content = await loadReaderStory(id, lang);
+      if (request !== openRequest.current) return false;
+      if (!content.trim()) {
+        setReadingError('This story is empty. Please choose another text to read.');
+        return false;
+      }
       setText(content);
       setSentences(splitSentences(content));
 
@@ -229,6 +259,7 @@ export default function ReaderPage() {
       if (lang === 'ja') {
         try {
           const result = await tokenizeJapanese(content);
+          if (request !== openRequest.current) return false;
           setJaTokens(result);
           const offsets: number[] = [];
           let pos = 0;
@@ -238,6 +269,7 @@ export default function ReaderPage() {
           }
           setJaTokenOffsets(offsets);
         } catch {
+          if (request !== openRequest.current) return false;
           const chars = content.split('');
           setTokens(chars);
           setTokenOffsets(chars.map((_, i) => i));
@@ -262,10 +294,12 @@ export default function ReaderPage() {
       }
       return true;
     } catch {
+      if (request !== openRequest.current) return false;
       resetReadingState();
+      setReadingError('This story could not be opened. Please choose it again when it is available.');
       return false;
     } finally {
-      setIsTokenizing(false);
+      if (request === openRequest.current) setIsTokenizing(false);
     }
   }, [resetReadingState, setLanguage]);
 
@@ -325,6 +359,8 @@ export default function ReaderPage() {
 
   const handleImport = async () => {
     if (!text.trim()) return;
+    const request = ++openRequest.current;
+    textLanguage.current = language;
 
     const id = await db.texts.add({
       language,
@@ -332,6 +368,7 @@ export default function ReaderPage() {
       content: text,
       createdAt: new Date().toISOString(),
     }) as number;
+    if (request !== openRequest.current) return;
     setSavedTextId(id);
 
     setSentences(splitSentences(text));
@@ -345,6 +382,7 @@ export default function ReaderPage() {
       setIsTokenizing(true);
       try {
         const result = await tokenizeJapanese(text);
+        if (request !== openRequest.current) return;
         setJaTokens(result);
         // Compute character offsets for each Japanese token
         const offsets: number[] = [];
@@ -355,12 +393,13 @@ export default function ReaderPage() {
         }
         setJaTokenOffsets(offsets);
       } catch {
+        if (request !== openRequest.current) return;
         // Fallback to character-level split if tokenizer fails
         const chars = text.split('');
         setTokens(chars);
         setTokenOffsets(chars.map((_, i) => i));
       } finally {
-        setIsTokenizing(false);
+        if (request === openRequest.current) setIsTokenizing(false);
       }
     } else {
       const isCJK = /[\u3000-\u9fff\uf900-\ufaff]/.test(text);
@@ -388,7 +427,7 @@ export default function ReaderPage() {
 
     if (!isRunning) start('reading');
 
-    await addWord({
+    const result = await saveWordsToVocabulary([{
       language,
       word,
       reading,
@@ -396,12 +435,13 @@ export default function ReaderPage() {
       contextSentence,
       sourceTextId: savedTextId,
       tags: [],
-    });
+    }]);
 
     setSelectedWord(null);
     setSelectedReading('');
     // Refresh known word set so highlight updates after mining
     refreshKnownWords();
+    return result;
   };
 
   const handleParseWithIchiMoe = async () => {
@@ -508,6 +548,7 @@ export default function ReaderPage() {
       </h2>
       <GuidedPracticeNotice guided={guided} />
       {tabToggle}
+      {readingError && <p role="status" className="mb-3 text-sm text-slate-500 dark:text-slate-400">{readingError}</p>}
       {tab === 'library' ? (
         <TextLibrary onSelectText={openTextFromLibrary} onSelectCurated={openCuratedText} />
       ) : (
@@ -609,6 +650,7 @@ export default function ReaderPage() {
         highlightEnabled={highlightKnown}
         onToggleHighlight={() => setHighlightKnown((v) => !v)}
         wordStatusMap={wordStatusMap ?? undefined}
+        knowledge={knowledge}
       />
 
       {translation.trim() && (
@@ -670,7 +712,7 @@ export default function ReaderPage() {
 
       {/* Bilingual translation panel */}
       {showBilingual && translation.trim() && (
-        <div className="bg-amber-50 dark:bg-amber-900/20 rounded-2xl shadow p-4 mt-3 leading-relaxed text-sm text-slate-700 dark:text-slate-300 border border-amber-200 dark:border-amber-800/50">
+        <div className="bg-slate-50 dark:bg-slate-800 rounded-2xl p-4 mt-3 leading-relaxed text-sm text-slate-700 dark:text-slate-300 border border-slate-200/70 dark:border-white/10">
           <div className="flex items-center gap-1.5 text-xs font-medium text-amber-700 dark:text-amber-400 mb-2">
             <span>🌐</span> Translation
           </div>
@@ -783,6 +825,7 @@ export default function ReaderPage() {
 
       {selectedWord && (
         <WordLookupSheet
+          key={`${language}/${selectedWord}`}
           word={selectedWord}
           language={language}
           initialReading={selectedReading}

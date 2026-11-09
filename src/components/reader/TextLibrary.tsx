@@ -1,8 +1,12 @@
 import { useState, useEffect } from 'react';
+import { liveQuery } from 'dexie';
 import type { Text } from '../../db/schema';
 import { getAllTexts, deleteText } from '../../db/texts';
 import { relativeDate } from '../../lib/dates';
 import { getLanguageLabel } from '../../lib/languages';
+import { useKnowledge } from '../../hooks/useKnowledge';
+import StoryCoverage from './StoryCoverage';
+import { isRTL } from '../../lib/rtl';
 
 /**
  * Languages with curated reading texts in `public/content/reading/`.
@@ -12,6 +16,7 @@ import { getLanguageLabel } from '../../lib/languages';
 const CURATED_LANGUAGES = ['ja', 'ru', 'pt', 'es', 'ar', 'ro'] as const;
 import { useCurrentLanguage } from '../../hooks/useCurrentLanguage';
 import LanguagePicker from '../common/LanguagePicker';
+import LanguageUnavailable from '../common/LanguageUnavailable';
 
 const LANGUAGE_COLORS: Record<string, string> = {
   ja: 'bg-red-100 text-red-700 dark:bg-red-900 dark:text-red-300',
@@ -60,6 +65,8 @@ interface TextLibraryProps {
 export default function TextLibrary({ onSelectText, onSelectCurated }: TextLibraryProps) {
   const [subTab, setSubTab] = useState<SubTab>('curated');
   const [texts, setTexts] = useState<Text[]>([]);
+  const [savedError, setSavedError] = useState('');
+  const [savedLoading, setSavedLoading] = useState(true);
   const [filterLang, setFilterLang] = useState<string>('');
   const [confirmDeleteId, setConfirmDeleteId] = useState<number | null>(null);
 
@@ -68,47 +75,51 @@ export default function TextLibrary({ onSelectText, onSelectCurated }: TextLibra
     language: curatedLang,
     setLanguage: setCuratedLang,
     options: curatedLangs,
+    isSupported: curatedSupported,
+    requested: requestedLanguage,
   } = useCurrentLanguage(CURATED_LANGUAGES);
   const [curatedTexts, setCuratedTexts] = useState<CuratedText[]>([]);
-  const [curatedLoading, setCuratedLoading] = useState(false);
+  const [indexLanguage, setIndexLanguage] = useState('');
   const [curatedError, setCuratedError] = useState<string | null>(null);
   const [difficultyFilter, setDifficultyFilter] = useState<DifficultyFilter>('all');
+  const [indexRetry, setIndexRetry] = useState(0);
+  const indexKey = `${curatedLang}/${indexRetry}`;
+  const [settledIndex, setSettledIndex] = useState('');
 
   useEffect(() => {
-    loadTexts();
-  }, [filterLang]);
+    let active = true;
+    const subscription = liveQuery(() => getAllTexts()).subscribe({
+      next: (result) => { if (active) { setTexts(result); setSavedError(''); setSavedLoading(false); } },
+      error: () => { if (active) { setSavedError('Saved texts could not be loaded. Reopen the library to try again.'); setSavedLoading(false); } },
+    });
+    return () => { active = false; subscription.unsubscribe(); };
+  }, []);
 
   useEffect(() => {
-    if (subTab === 'curated') {
-      fetchCuratedTexts(curatedLang ?? CURATED_LANGUAGES[0]);
-    }
-  }, [subTab, curatedLang]);
-
-  async function fetchCuratedTexts(lang: string) {
-    setCuratedLoading(true);
-    setCuratedError(null);
-    try {
-      const res = await fetch(`${import.meta.env.BASE_URL}content/reading/${lang}/index.json`);
-      if (!res.ok) throw new Error(`Failed to load curated texts`);
-      const data = await res.json();
-      setCuratedTexts(data.texts ?? []);
-    } catch {
-      setCuratedError('Could not load curated texts.');
-      setCuratedTexts([]);
-    } finally {
-      setCuratedLoading(false);
-    }
-  }
-
-  async function loadTexts() {
-    const result = await getAllTexts(filterLang || undefined);
-    setTexts(result);
-  }
+    if (subTab !== 'curated' || !curatedLang || !curatedSupported) return;
+    const controller = new AbortController();
+    void fetch(`${import.meta.env.BASE_URL}content/reading/${curatedLang}/index.json`, { signal: controller.signal })
+      .then(async (res) => {
+        if (!res.ok) throw new Error('Failed to load curated texts');
+        const data = await res.json();
+        if (!controller.signal.aborted) {
+          setCuratedTexts(data.texts ?? []); setIndexLanguage(curatedLang);
+          setCuratedError(null); setSettledIndex(indexKey);
+        }
+      }).catch(() => {
+        if (!controller.signal.aborted) {
+          setCuratedError('Could not load curated texts. Try again when the library is available.');
+          setSettledIndex(indexKey);
+        }
+      });
+    return () => controller.abort();
+  }, [subTab, curatedLang, curatedSupported, indexKey]);
 
   async function handleDelete(id: number) {
-    await deleteText(id);
-    setConfirmDeleteId(null);
-    await loadTexts();
+    try {
+      await deleteText(id);
+      setConfirmDeleteId(null);
+    } catch { setSavedError('Could not delete this text. Please try again.'); }
   }
 
   function handleCuratedClick(ct: CuratedText) {
@@ -117,9 +128,10 @@ export default function TextLibrary({ onSelectText, onSelectCurated }: TextLibra
 
   const uniqueLangs = [...new Set(texts.map((t) => t.language))].sort();
 
+  const currentTexts = indexLanguage === curatedLang ? curatedTexts : [];
   const filteredCurated = difficultyFilter === 'all'
-    ? curatedTexts
-    : curatedTexts.filter((t) => t.difficulty === difficultyFilter);
+    ? currentTexts
+    : currentTexts.filter((t) => t.difficulty === difficultyFilter);
 
   return (
     <div className="space-y-3">
@@ -148,21 +160,26 @@ export default function TextLibrary({ onSelectText, onSelectCurated }: TextLibra
         </button>
       </div>
 
-      {subTab === 'curated' ? (
+      {subTab === 'curated' && !curatedSupported ? (
+        <LanguageUnavailable requested={requestedLanguage} options={curatedLangs} onChange={setCuratedLang} feature="Curated reading" />
+      ) : subTab === 'curated' ? (
         <CuratedLibrary
           langs={curatedLangs.length > 0 ? curatedLangs : CURATED_LANGUAGES}
           currentLang={curatedLang ?? CURATED_LANGUAGES[0]}
           onChangeLang={setCuratedLang}
           texts={filteredCurated}
-          loading={curatedLoading}
-          error={curatedError}
+          loading={settledIndex !== indexKey}
+          error={settledIndex === indexKey ? curatedError : null}
           difficultyFilter={difficultyFilter}
           onChangeDifficulty={setDifficultyFilter}
           onSelect={handleCuratedClick}
+          onRetry={() => setIndexRetry((value) => value + 1)}
         />
       ) : (
-        <MyTextsTab
-          texts={texts}
+        <div>
+        {savedError && <p role="status" className="text-sm text-slate-500 dark:text-slate-400">{savedError}</p>}
+        {savedLoading ? <p role="status" className="text-sm text-slate-500 dark:text-slate-400">Loading saved texts…</p> : <MyTextsTab
+          texts={filterLang ? texts.filter((text) => text.language === filterLang) : texts}
           filterLang={filterLang}
           setFilterLang={setFilterLang}
           uniqueLangs={uniqueLangs}
@@ -170,7 +187,8 @@ export default function TextLibrary({ onSelectText, onSelectCurated }: TextLibra
           setConfirmDeleteId={setConfirmDeleteId}
           onSelectText={onSelectText}
           onDelete={handleDelete}
-        />
+        />}
+        </div>
       )}
     </div>
   );
@@ -188,6 +206,7 @@ function CuratedLibrary({
   difficultyFilter,
   onChangeDifficulty,
   onSelect,
+  onRetry,
 }: {
   langs: readonly string[];
   currentLang: string;
@@ -198,7 +217,9 @@ function CuratedLibrary({
   difficultyFilter: DifficultyFilter;
   onChangeDifficulty: (d: DifficultyFilter) => void;
   onSelect: (t: CuratedText) => void;
+  onRetry: () => void;
 }) {
+  const knowledge = useKnowledge(currentLang);
   return (
     <div className="space-y-3">
       <LanguagePicker
@@ -236,6 +257,7 @@ function CuratedLibrary({
       ) : error ? (
         <div className="flex flex-col items-center justify-center py-12 text-center">
           <p className="text-slate-500 dark:text-slate-400 text-sm">{error}</p>
+          <button type="button" onClick={onRetry} className="min-h-[44px] text-indigo-600 dark:text-indigo-400">Retry library</button>
         </div>
       ) : texts.length === 0 ? (
         <div className="flex flex-col items-center justify-center py-12 text-center">
@@ -248,12 +270,11 @@ function CuratedLibrary({
           {texts.map((t) => (
             <div
               key={t.id}
-              onClick={() => onSelect(t)}
-              className="bg-white dark:bg-slate-800 rounded-2xl shadow p-4 cursor-pointer hover:shadow-md transition-shadow"
+              className="bg-white dark:bg-slate-800 rounded-2xl border border-slate-200/70 dark:border-white/10 p-4"
             >
               <div className="flex items-start justify-between gap-2 mb-1">
                 <div className="flex-1 min-w-0">
-                  <h3 className="font-bold text-slate-800 dark:text-slate-100 truncate">
+                  <h3 dir={isRTL(currentLang) ? 'rtl' : 'ltr'} className="font-bold text-slate-800 dark:text-slate-100 truncate">
                     {t.title}
                   </h3>
                   <p className="text-sm text-slate-500 dark:text-slate-400">{t.titleEn}</p>
@@ -278,6 +299,11 @@ function CuratedLibrary({
                   </span>
                 ))}
               </div>
+              <StoryCoverage storyId={t.id} language={currentLang} knowledge={knowledge} />
+              <button type="button" onClick={() => onSelect(t)}
+                className="min-h-[44px] text-sm font-medium text-indigo-600 dark:text-indigo-400">
+                Read <span dir={isRTL(currentLang) ? 'rtl' : 'ltr'}>{t.title}</span>
+              </button>
             </div>
           ))}
         </div>
@@ -337,16 +363,28 @@ function MyTextsTab({
         </div>
       ) : (
         <div className="space-y-2">
-          {texts.map((t) => (
+          {[...new Set(texts.map((t) => t.language))].map((language) => <SavedTextGroup key={language} language={language} texts={texts.filter((t) => t.language === language)}
+            confirmDeleteId={confirmDeleteId} setConfirmDeleteId={setConfirmDeleteId} onSelectText={onSelectText} onDelete={onDelete} />)}
+        </div>
+      )}
+    </div>
+  );
+}
+
+function SavedTextGroup({ language, texts, confirmDeleteId, setConfirmDeleteId, onSelectText, onDelete }: {
+  language: string; texts: Text[]; confirmDeleteId: number | null;
+  setConfirmDeleteId: (id: number | null) => void; onSelectText: (text: Text) => void; onDelete: (id: number) => void;
+}) {
+  const knowledge = useKnowledge(language);
+  return <>{texts.map((t) => (
             <div
               key={t.id}
-              className="bg-white dark:bg-slate-800 rounded-2xl shadow p-4 cursor-pointer hover:shadow-md transition-shadow"
-              onClick={() => onSelectText(t)}
+              className="bg-white dark:bg-slate-800 rounded-2xl border border-slate-200/70 dark:border-white/10 p-4"
             >
               <div className="flex items-start justify-between gap-2">
                 <div className="flex-1 min-w-0">
                   <div className="flex items-center gap-2 mb-1">
-                    <h3 className="font-bold text-slate-800 dark:text-slate-100 truncate">
+                    <h3 dir={isRTL(language) ? 'rtl' : 'ltr'} className="font-bold text-slate-800 dark:text-slate-100 truncate">
                       {t.title}
                     </h3>
                     <span
@@ -357,7 +395,7 @@ function MyTextsTab({
                       {getLanguageLabel(t.language)}
                     </span>
                   </div>
-                  <p className="text-sm text-slate-500 dark:text-slate-400 line-clamp-2 mb-2">
+                  <p dir={isRTL(language) ? 'rtl' : 'ltr'} className="text-sm text-slate-500 dark:text-slate-400 line-clamp-2 mb-2">
                     {t.content.slice(0, 100)}
                     {t.content.length > 100 ? '…' : ''}
                   </p>
@@ -374,12 +412,16 @@ function MyTextsTab({
                     e.stopPropagation();
                     setConfirmDeleteId(confirmDeleteId === t.id! ? null : t.id!);
                   }}
-                  className="text-slate-400 hover:text-red-500 dark:text-slate-500 dark:hover:text-red-400 transition-colors p-1 shrink-0 press-feedback"
+                  className="min-h-[44px] min-w-[44px] text-slate-500 dark:text-slate-400 transition-colors p-1 shrink-0 press-feedback"
                   aria-label="Delete text"
                 >
                   🗑️
                 </button>
               </div>
+              <StoryCoverage text={t.content} language={language} knowledge={knowledge} />
+              <button type="button" onClick={() => onSelectText(t)} className="min-h-[44px] text-sm text-indigo-600 dark:text-indigo-400">
+                Read <span dir={isRTL(language) ? 'rtl' : 'ltr'}>{t.title}</span>
+              </button>
               {confirmDeleteId === t.id && (
                 <div className="mt-2 flex items-center gap-2 pt-2 border-t border-slate-100 dark:border-slate-700">
                   <span className="text-sm text-red-600 dark:text-red-400">Delete this text?</span>
@@ -404,9 +446,5 @@ function MyTextsTab({
                 </div>
               )}
             </div>
-          ))}
-        </div>
-      )}
-    </div>
-  );
+          ))}</>;
 }

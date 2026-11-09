@@ -1,4 +1,4 @@
-import { useState, useEffect, useCallback, useMemo } from 'react';
+import { useState, useEffect, useCallback, useMemo, useRef } from 'react';
 import { useCurrentLanguage } from '../hooks/useCurrentLanguage';
 import LanguagePicker from '../components/common/LanguagePicker';
 import LanguageUnavailable from '../components/common/LanguageUnavailable';
@@ -18,6 +18,9 @@ import {
   selectGuidedItems,
   type GuidedPracticeDescriptor,
 } from '../lib/guided-practice';
+import { loadSkillProgress, recordSkillAnswer } from '../db/skill-progress';
+import { selectSkillItems } from '../lib/skill-adaptation';
+import type { SkillProgress } from '../db/schema';
 
 type Phase = 'setup' | 'session' | 'summary';
 type Direction = 'numeral-to-word' | 'word-to-numeral';
@@ -51,10 +54,11 @@ function shuffle<T>(arr: T[]): T[] {
 function buildQuestions(
   pool: NumberEntry[],
   guided?: GuidedPracticeDescriptor,
+  selected?: NumberEntry[],
 ): Question[] {
-  const order = guided
+  const order = selected ?? (guided
     ? selectGuidedItems(pool, guided, (entry) => String(entry.value))
-    : shuffle(pool).slice(0, Math.min(SESSION_LENGTH, pool.length));
+    : shuffle(pool).slice(0, Math.min(SESSION_LENGTH, pool.length)));
   return order.map((entry) => {
     const distractorPool = pool.filter((n) => n.value !== entry.value);
     const distractors = guided
@@ -105,6 +109,27 @@ export default function NumberPracticePage() {
     return selectedRanges.size > 0 ? all.filter((n) => selectedRanges.has(n.range)) : all;
   }, [language, selectedRanges]);
   const guided = useGuidedPractice('numbers', language);
+  const practiceDirection = guided.descriptor?.scope?.task === 'numeral-to-word' ||
+    guided.descriptor?.scope?.task === 'word-to-numeral'
+    ? guided.descriptor.scope.task : direction;
+  const [starting, setStarting] = useState(false);
+  const [skillError, setSkillError] = useState('');
+  const answerLock = useRef(false);
+  const advanceLock = useRef(false);
+  const sessionIdentity = `${language}/${guided.descriptor?.milestoneId ?? ''}/${JSON.stringify(guided.descriptor?.scope ?? null)}`;
+  const activeIdentity = useRef(sessionIdentity);
+  const [loadedIdentity, setLoadedIdentity] = useState('');
+  if (loadedIdentity !== sessionIdentity) {
+    setLoadedIdentity(sessionIdentity);
+    setPhase('setup');
+    setQuestions([]);
+    setStarting(false);
+  }
+  useEffect(() => {
+    activeIdentity.current = sessionIdentity;
+    answerLock.current = false;
+    advanceLock.current = false;
+  }, [sessionIdentity]);
 
   const speakEntry = useCallback(
     (entry: NumberEntry) => {
@@ -113,15 +138,39 @@ export default function NumberPracticePage() {
     [language],
   );
 
-  const startSession = useCallback(() => {
+  const startSession = useCallback(async () => {
+    if (starting || (!isSupported && !guided.isGuided)) return;
+    const identity = sessionIdentity;
+    setStarting(true);
+    setSkillError('');
     const sessionPool = guided.descriptor
-      ? getNumbersForLanguage(language)
+      ? getNumbersForLanguage(language).filter((entry) =>
+          (!guided.descriptor?.scope?.ranges || guided.descriptor.scope.ranges.includes(entry.range)) &&
+          (!guided.descriptor?.scope?.itemIds || guided.descriptor.scope.itemIds.includes(String(entry.value))))
       : pool;
-    if (sessionPool.length < 4) return;
+    let history: SkillProgress[];
+    try {
+      history = await loadSkillProgress(language, 'numbers');
+    } catch {
+      history = [];
+      setSkillError('Number practice history could not be loaded. Practice can continue without adaptation.');
+    }
+    if (activeIdentity.current !== identity) return;
+    setStarting(false);
+    if (sessionPool.length < Math.max(4, guided.descriptor?.session.minItems ?? 4)) {
+      setSkillError('There are not enough numbers for this scope. Choose another range or return to your path.');
+      return;
+    }
+    const selected = selectSkillItems(sessionPool, history, (entry) => `${practiceDirection}/${entry.range}`,
+      guided.descriptor?.session.targetItems ?? SESSION_LENGTH,
+      guided.descriptor?.seed ?? `${language}/${Date.now()}`);
     const qs = buildQuestions(
       sessionPool,
       guided.descriptor ?? undefined,
+      selected,
     );
+    answerLock.current = false;
+    advanceLock.current = false;
     setQuestions(qs);
     setIndex(0);
     setScore(0);
@@ -129,13 +178,18 @@ export default function NumberPracticePage() {
     setBestStreak(0);
     setAnswered(null);
     setPhase('session');
-  }, [guided.descriptor, language, pool]);
+  }, [guided.descriptor, guided.isGuided, language, pool, practiceDirection, starting, sessionIdentity, isSupported]);
 
   const handleAnswer = useCallback(
     (value: number) => {
-      if (answered !== null || !current) return;
+      if (answered !== null || !current || answerLock.current) return;
+      answerLock.current = true;
+      advanceLock.current = false;
       setAnswered(value);
       const isCorrect = value === current.entry.value;
+      void recordSkillAnswer(language, 'numbers', `${practiceDirection}/${current.entry.range}`, isCorrect).catch(() => {
+        setSkillError('Your answer counts, but number practice history could not be saved on this device.');
+      });
       if (isCorrect) {
         setScore((s) => s + 1);
         setStreak((st) => {
@@ -143,15 +197,17 @@ export default function NumberPracticePage() {
           setBestStreak((b) => (next > b ? next : b));
           return next;
         });
-        if (direction === 'word-to-numeral') speakEntry(current.entry);
+        if (practiceDirection === 'word-to-numeral') speakEntry(current.entry);
       } else {
         setStreak(0);
       }
     },
-    [answered, current, direction, speakEntry],
+    [answered, current, practiceDirection, speakEntry, language],
   );
 
   const next = useCallback(() => {
+    if (answered === null || advanceLock.current) return;
+    advanceLock.current = true;
     const nextIdx = index + 1;
     if (nextIdx >= questions.length) {
       const xp = XP_NUMBER_BASE + score * XP_PER_NUMBER_CORRECT;
@@ -164,13 +220,16 @@ export default function NumberPracticePage() {
       return;
     }
     setIndex(nextIdx);
+    answerLock.current = false;
     setAnswered(null);
-  }, [index, questions.length, score, guided]);
+  }, [index, questions.length, score, guided, answered]);
 
   // Keyboard shortcuts
   useEffect(() => {
     if (phase !== 'session' || !current) return;
     const handler = (e: KeyboardEvent) => {
+      if (e.target instanceof HTMLElement &&
+        e.target.closest('input, textarea, select, button, a, [role="dialog"], [contenteditable="true"]')) return;
       if (answered === null) {
         const n = parseInt(e.key, 10);
         if (n >= 1 && n <= current.options.length) {
@@ -232,7 +291,7 @@ export default function NumberPracticePage() {
           />
         )}
 
-        <LanguagePicker
+        {!guided.isGuided && <LanguagePicker
           className="mb-4"
           options={numberLanguages}
           value={language}
@@ -241,10 +300,10 @@ export default function NumberPracticePage() {
             setSelectedRanges(new Set());
           }}
           label="Number language"
-        />
+        />}
 
         {/* Direction toggle */}
-        <div className="bg-white dark:bg-slate-800 rounded-2xl shadow p-4 mb-4">
+        {!guided.isGuided && <div className="bg-white dark:bg-slate-800 rounded-2xl shadow p-4 mb-4">
           <h3 className="text-sm font-medium text-slate-700 dark:text-slate-300 mb-3">Mode</h3>
           <div className="grid grid-cols-2 gap-2">
             <button
@@ -268,10 +327,10 @@ export default function NumberPracticePage() {
               Word → Digit
             </button>
           </div>
-        </div>
+        </div>}
 
         {/* Range filter */}
-        <div className="bg-white dark:bg-slate-800 rounded-2xl shadow p-4 mb-4">
+        {!guided.isGuided && <div className="bg-white dark:bg-slate-800 rounded-2xl shadow p-4 mb-4">
           <h3 className="text-sm font-medium text-slate-700 dark:text-slate-300 mb-3">
             Ranges {selectedRanges.size > 0 ? `(${selectedRanges.size} selected)` : '(all)'}
           </h3>
@@ -290,14 +349,14 @@ export default function NumberPracticePage() {
               </button>
             ))}
           </div>
-        </div>
-
+        </div>}
+        {skillError && <p role="status" className="mb-3 text-sm text-slate-500 dark:text-slate-400">{skillError}</p>}
         <button
           onClick={startSession}
-          disabled={pool.length < 4}
+          disabled={pool.length < 4 || starting || (!isSupported && !guided.isGuided)}
           className="w-full bg-indigo-600 text-white py-3 rounded-xl font-semibold hover:bg-indigo-700 transition-colors disabled:opacity-40 press-feedback min-h-[44px]"
         >
-          Start Practice ({Math.min(SESSION_LENGTH, pool.length)} questions)
+          {starting ? 'Preparing practice…' : `Start Practice (${Math.min(guided.descriptor?.session.targetItems ?? SESSION_LENGTH, pool.length)} questions)`}
         </button>
         {pool.length < 4 && (
           <p className="text-xs text-center text-slate-500 dark:text-slate-400 mt-2">
@@ -317,7 +376,7 @@ export default function NumberPracticePage() {
         <div className="text-6xl">{pct >= 80 ? '🎉' : pct >= 50 ? '👍' : '💪'}</div>
         <h2 className="text-2xl font-bold text-slate-800 dark:text-slate-100">Session Complete!</h2>
         <div className="bg-white dark:bg-slate-800 rounded-2xl shadow p-6 space-y-3">
-          <div className="text-4xl font-bold text-indigo-600 dark:text-indigo-400">
+          <div className="text-4xl font-bold text-slate-800 dark:text-slate-100">
             {score}/{total}
           </div>
           <p className="text-sm text-slate-500 dark:text-slate-400">correct answers</p>
@@ -362,7 +421,7 @@ export default function NumberPracticePage() {
   // SESSION PHASE
   if (!current) return null;
   const total = questions.length;
-  const isNumeralPrompt = direction === 'numeral-to-word';
+  const isNumeralPrompt = practiceDirection === 'numeral-to-word';
   const correctValue = current.entry.value;
 
   return (

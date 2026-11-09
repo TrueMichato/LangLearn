@@ -5,23 +5,21 @@ import { addWord, wordExists } from '../../db/words';
 import { XP_PER_CHARACTER_PRACTICE } from '../../lib/xp';
 import { useTimerStore } from '../../stores/timerStore';
 import { useXPStore } from '../../stores/xpStore';
+import type { CharacterProgress } from '../../db/schema';
+import { selectCharacterItems } from '../../lib/skill-adaptation';
 
 interface Props {
   characters: Character[];
   alphabetName: string;
   language: string;
   onProgress: () => void;
+  progress?: ReadonlyMap<string, CharacterProgress>;
 }
 
 const PASS_THRESHOLD = 55;
 const SCORE_DEBOUNCE_MS = 1000;
 const ADVANCE_DELAY_MS = 1500;
 const ALPHA_THRESHOLD = 50;
-
-function prioritizeCharacters(characters: Character[]): Character[] {
-  const shuffled = [...characters].sort(() => Math.random() - 0.5);
-  return shuffled;
-}
 
 function calculateSimilarity(
   drawingCanvas: HTMLCanvasElement,
@@ -80,7 +78,7 @@ function renderReferenceChar(canvas: HTMLCanvasElement, char: string) {
 
 type ScoreResult = { score: number; passed: boolean } | null;
 
-export default function DrawingCanvas({ characters, alphabetName, language, onProgress }: Props) {
+export default function DrawingCanvas({ characters, alphabetName, language, onProgress, progress }: Props) {
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const refCanvasRef = useRef<HTMLCanvasElement>(null);
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -90,13 +88,15 @@ export default function DrawingCanvas({ characters, alphabetName, language, onPr
   const [scoreResult, setScoreResult] = useState<ScoreResult>(null);
   const [isGraded, setIsGraded] = useState(false);
   const [srsToast, setSrsToast] = useState(false);
-  const orderedChars = useRef(prioritizeCharacters(characters));
+  const [ordered] = useState(() => selectCharacterItems(characters,
+    progress ?? new Map(), language, alphabetName, characters.length,
+    `${language}/${alphabetName}/drawing/${Date.now()}`));
   const debounceTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
   const advanceTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
   const timerStart = useTimerStore((s) => s.start);
   const timerIsRunning = useTimerStore((s) => s.isRunning);
 
-  const current = orderedChars.current[currentIndex % orderedChars.current.length];
+  const current = ordered[currentIndex % ordered.length];
 
   const clearCanvas = useCallback(() => {
     const canvas = canvasRef.current;
@@ -155,12 +155,12 @@ export default function DrawingCanvas({ characters, alphabetName, language, onPr
     renderReferenceChar(refCanvas, current.char);
   }, [clearCanvas, current.char]);
 
-  // Reset score state when character changes
-  useEffect(() => {
+  function advanceCharacter() {
     setScoreResult(null);
     setIsGraded(false);
     setSrsToast(false);
-  }, [currentIndex]);
+    setCurrentIndex((index) => index + 1);
+  }
 
   // Cleanup timers on unmount
   useEffect(() => clearTimers, [clearTimers]);
@@ -269,7 +269,7 @@ export default function DrawingCanvas({ characters, alphabetName, language, onPr
     }
 
     advanceTimerRef.current = setTimeout(() => {
-      setCurrentIndex((i) => i + 1);
+      advanceCharacter();
     }, ADVANCE_DELAY_MS);
   }
 
@@ -303,7 +303,7 @@ export default function DrawingCanvas({ characters, alphabetName, language, onPr
       createSrsCardIfNeeded(current);
     }
     advanceTimerRef.current = setTimeout(() => {
-      setCurrentIndex((i) => i + 1);
+      advanceCharacter();
     }, ADVANCE_DELAY_MS);
   }
 
@@ -413,7 +413,7 @@ export default function DrawingCanvas({ characters, alphabetName, language, onPr
       )}
 
       <p className="text-xs text-center text-slate-500 dark:text-slate-400">
-        Character {(currentIndex % orderedChars.current.length) + 1} of {orderedChars.current.length}
+        Character {(currentIndex % ordered.length) + 1} of {ordered.length}
       </p>
     </div>
   );

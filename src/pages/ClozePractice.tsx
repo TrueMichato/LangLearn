@@ -1,5 +1,5 @@
 import { useState, useMemo, useRef, useEffect, useCallback } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import { useCurrentLanguage } from '../hooks/useCurrentLanguage';
 import LanguagePicker from '../components/common/LanguagePicker';
 import LanguageUnavailable from '../components/common/LanguageUnavailable';
@@ -14,7 +14,9 @@ import {
   GuidedPracticeError,
   GuidedPracticeNotice,
 } from '../components/learn/GuidedPractice';
-import { selectGuidedItems } from '../lib/guided-practice';
+import { useAdaptivePractice } from '../hooks/useAdaptivePractice';
+import AdaptivePracticeNotice from '../components/common/AdaptivePracticeNotice';
+import PracticeWordCapture from '../components/common/PracticeWordCapture';
 
 type Difficulty = 'beginner' | 'intermediate' | 'advanced' | 'all';
 type Phase = 'setup' | 'session' | 'summary';
@@ -38,15 +40,6 @@ function getClozeSentences(lang: string): ClozeSentence[] {
   return [];
 }
 
-function shuffle<T>(arr: T[]): T[] {
-  const a = [...arr];
-  for (let i = a.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [a[i], a[j]] = [a[j], a[i]];
-  }
-  return a;
-}
-
 function buildClozeDisplay(sentence: string, blankedWord: string) {
   const idx = sentence.indexOf(blankedWord);
   if (idx === -1) return { before: sentence, after: '' };
@@ -57,13 +50,19 @@ function buildClozeDisplay(sentence: string, blankedWord: string) {
 }
 
 export default function ClozePracticePage() {
+  const current = useCurrentLanguage(CLOZE_LANGUAGES);
+  const { search } = useLocation();
+  return <ClozePracticeSession key={`${current.requested}/${search}`} current={current} />;
+}
+
+export function ClozePracticeSession({ current: languageState }: { current: ReturnType<typeof useCurrentLanguage> }) {
   const {
     language: currentLanguage,
     setLanguage,
     options: supportedLanguages,
     isSupported,
     requested,
-  } = useCurrentLanguage(CLOZE_LANGUAGES);
+  } = languageState;
 
   const [phase, setPhase] = useState<Phase>('setup');
   const language = currentLanguage ?? 'ja';
@@ -79,27 +78,26 @@ export default function ClozePracticePage() {
 
   const allSentences = useMemo(() => getClozeSentences(language), [language]);
   const guided = useGuidedPractice('cloze', language);
+  const adaptive = useAdaptivePractice<ClozeSentence>(language);
 
-  const startSession = useCallback(() => {
+  const startSession = async () => {
+    if (!isSupported || adaptive.status === 'loading') return;
     let pool = allSentences;
-    if (!guided.descriptor && difficulty !== 'all') {
-      pool = pool.filter((s) => s.difficulty === difficulty);
+    const level = guided.descriptor?.scope?.difficulty ?? difficulty;
+    if (level !== 'all') {
+      pool = pool.filter((s) => s.difficulty === level);
     }
-    // Sort by frequency (lower rank = more common words first)
-    const sorted = [...pool].sort((a, b) => a.frequencyRank - b.frequencyRank);
-    const candidates = sorted.slice(
-      0,
-      Math.min(
-        sorted.length,
-        guided.descriptor
-          ? guided.descriptor.session.maxItems * 3
-          : QUESTIONS_PER_SESSION * 3,
-      ),
-    );
-    const selected = guided.descriptor
-      ? selectGuidedItems(candidates, guided.descriptor, (sentence) => sentence.id)
-      : shuffle(candidates).slice(0, QUESTIONS_PER_SESSION);
-    if (selected.length === 0) return;
+    const scope = guided.descriptor?.scope?.itemIds;
+    if (scope) pool = pool.filter((item) => scope.includes(item.id));
+    const selected = await adaptive.start(pool, {
+      seed: guided.descriptor?.seed ?? `${language}/cloze`,
+      session: guided.descriptor?.session ?? { minItems: 1, targetItems: QUESTIONS_PER_SESSION, maxItems: QUESTIONS_PER_SESSION },
+      difficulties: level === 'all' ? undefined : [level],
+    }, (item) => ({
+      id: item.id, language, difficulty: item.difficulty, text: item.target,
+      order: ({ beginner: 0, intermediate: 1000, advanced: 2000 }[item.difficulty]) + item.frequencyRank,
+    }));
+    if (!selected) return;
     setSessionQuestions(selected);
     setCurrentIdx(0);
     setScore(0);
@@ -107,7 +105,7 @@ export default function ClozePracticePage() {
     setInput('');
     setAnswered(false);
     setPhase('session');
-  }, [allSentences, difficulty, guided.descriptor]);
+  };
 
   useEffect(() => {
     if (phase === 'session' && !answered) {
@@ -151,6 +149,12 @@ export default function ClozePracticePage() {
   if (guided.invalidMessage) {
     return <GuidedPracticeError message={guided.invalidMessage} />;
   }
+  if (!isSupported && phase !== 'setup') {
+    return <LanguageUnavailable requested={requested} options={supportedLanguages} onChange={setLanguage} feature="Cloze practice" />;
+  }
+  if (phase !== 'setup' && adaptive.selection?.language !== language) {
+    return <p role="status">Preparing this language…</p>;
+  }
 
   const handleKeyDown = (e: React.KeyboardEvent) => {
     if (e.key === 'Enter') {
@@ -168,6 +172,7 @@ export default function ClozePracticePage() {
   };
 
   const restart = () => {
+    adaptive.reset();
     setPhase('setup');
     setScore(0);
     setCurrentIdx(0);
@@ -187,10 +192,11 @@ export default function ClozePracticePage() {
           </Link>
           <h2 className="text-lg font-semibold text-slate-700 dark:text-slate-200">🧩 Cloze Practice</h2>
           <p className="text-sm text-slate-500 dark:text-slate-400 mt-1">
-            Fill in the missing word from context. Sentences are sorted by word frequency — master common words first.
+            Fill in the missing word from context. Practice matches your vocabulary within your chosen level.
           </p>
         </div>
         <GuidedPracticeNotice guided={guided} />
+        <AdaptivePracticeNotice {...adaptive} />
 
         {!guided.descriptor && !isSupported && (
           <LanguageUnavailable
@@ -220,9 +226,10 @@ export default function ClozePracticePage() {
             {(['all', 'beginner', 'intermediate', 'advanced'] as const).map((d) => (
               <button
                 key={d}
-                onClick={() => setDifficulty(d)}
+                disabled={!!guided.descriptor?.scope?.difficulty || adaptive.status === 'loading'}
+                onClick={() => { adaptive.reset(); setDifficulty(d); }}
                 className={`px-4 py-2 min-h-[44px] rounded-xl text-sm font-medium capitalize transition-colors min-h-[44px] ${
-                  difficulty === d
+                  (guided.descriptor?.scope?.difficulty ?? difficulty) === d
                     ? ACTIVE_DIFFICULTY_CLASSES
                     : INACTIVE_DIFFICULTY_CLASSES
                 }`}
@@ -241,7 +248,7 @@ export default function ClozePracticePage() {
         {/* Start */}
         <button
           onClick={startSession}
-          disabled={supportedLanguages.length === 0 || allSentences.filter((s) => difficulty === 'all' || s.difficulty === difficulty).length === 0}
+          disabled={!isSupported || adaptive.status === 'loading' || allSentences.filter((s) => difficulty === 'all' || s.difficulty === difficulty).length === 0}
           className="w-full py-3 bg-indigo-600 text-white rounded-xl font-semibold hover:bg-indigo-700 press-feedback transition-colors disabled:opacity-40 min-h-[44px]"
         >
           Start Cloze Practice
@@ -292,6 +299,7 @@ export default function ClozePracticePage() {
     <div className="max-w-md mx-auto space-y-4 page-enter">
       <GuidedPracticeNotice guided={guided} />
       {/* Progress bar */}
+      <AdaptivePracticeNotice {...adaptive} />
       <div className="flex items-center justify-between text-sm text-slate-500 dark:text-slate-400">
         <span>
           {currentIdx + 1} / {sessionQuestions.length}
@@ -341,6 +349,8 @@ export default function ClozePracticePage() {
         {/* Answer area */}
         {answered ? (
           <div className="text-center space-y-3">
+            <PracticeWordCapture key={current.id} language={language} text={current.target} context={current.target} source="cloze"
+              words={[{ word: current.blankedWord, reading: current.blankedReading }]} />
             {isCorrect ? (
               <p className="text-green-600 dark:text-green-400 font-semibold text-lg">✓ Correct!</p>
             ) : (

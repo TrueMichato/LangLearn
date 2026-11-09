@@ -198,7 +198,7 @@ describe('guided activity integration contract', () => {
       expect(sources).toMatch(
         activity === 'tests'
           ? /createSeededRandom/
-          : /selectGuidedItems/,
+          : /selectGuidedItems|useAdaptivePractice/,
       );
       expect(sources).toMatch(
         activity === 'dictation'

@@ -12,10 +12,10 @@ import { speakWithSpeed } from '../../lib/tts';
 import { isRTL } from '../../lib/rtl';
 import type { ListeningPassage } from '../../data/listening/ja-passages';
 import type { DiffResult } from '../../lib/text-diff';
-import {
-  selectGuidedItems,
-  type GuidedPracticeDescriptor,
-} from '../../lib/guided-practice';
+import { useAdaptivePractice } from '../../hooks/useAdaptivePractice';
+import AdaptivePracticeNotice from '../common/AdaptivePracticeNotice';
+import PracticeWordCapture from '../common/PracticeWordCapture';
+import type { GuidedPracticeDescriptor } from '../../lib/guided-practice';
 
 const LANG_PASSAGES: Record<string, ListeningPassage[]> = {
   ja: jaPassages,
@@ -58,15 +58,6 @@ function extractSentences(passages: ListeningPassage[], difficulty: string): str
   return sentences;
 }
 
-function shuffle<T>(arr: T[]): T[] {
-  const a = [...arr];
-  for (let i = a.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [a[i], a[j]] = [a[j], a[i]];
-  }
-  return a;
-}
-
 export default function DictationDrill({
   language,
   difficulty,
@@ -74,15 +65,28 @@ export default function DictationDrill({
   onBack,
   guidedDescriptor,
 }: DictationDrillProps) {
-  const allSentences = useMemo(() => {
+  const adaptive = useAdaptivePractice<string>(language);
+  const [allSentences, setAllSentences] = useState<string[]>([]);
+  const [retry, setRetry] = useState(0);
+  const { start } = adaptive;
+  const pool = useMemo(() => {
     const pool = extractSentences(
       LANG_PASSAGES[language] ?? [],
-      guidedDescriptor ? 'all' : difficulty,
+      guidedDescriptor?.scope?.difficulty ?? difficulty,
     );
-    return guidedDescriptor
-      ? selectGuidedItems(pool, guidedDescriptor, (sentence) => sentence)
-      : shuffle(pool).slice(0, SENTENCES_PER_SESSION);
+    const scopedIds = guidedDescriptor?.scope?.itemIds;
+    return [...new Set(pool)].filter((sentence) => !scopedIds || scopedIds.includes(sentence));
   }, [language, difficulty, guidedDescriptor]);
+  useEffect(() => {
+    let active = true;
+    void start(pool, {
+      seed: guidedDescriptor?.seed ?? `dictation:${language}:${retry}`,
+      session: guidedDescriptor?.session ?? { minItems: 1, targetItems: SENTENCES_PER_SESSION, maxItems: SENTENCES_PER_SESSION },
+    }, (text, order) => ({ id: text, language, text, order })).then((selected) => {
+      if (active && selected) setAllSentences(selected);
+    });
+    return () => { active = false; };
+  }, [start, pool, language, guidedDescriptor, retry]);
 
   const total = allSentences.length;
 
@@ -145,10 +149,17 @@ export default function DictationDrill({
   if (total === 0) {
     return (
       <div className="text-center py-12 page-enter">
+        <AdaptivePracticeNotice {...adaptive} />
         <p className="text-4xl mb-4">🎧</p>
         <p className="text-slate-600 dark:text-slate-300 mb-4">
-          No sentences available for this difficulty.
+          {adaptive.status === 'loading' || adaptive.status === 'idle'
+            ? 'Preparing your dictation session…' : 'No matching sentences could be prepared for this difficulty.'}
         </p>
+        <button
+          onClick={() => setRetry((value) => value + 1)}
+          disabled={adaptive.status === 'loading'}
+          className="min-h-[44px] px-4 text-indigo-600 dark:text-indigo-400"
+        >Try matching again</button>
         <button
           onClick={onBack}
           className="px-5 py-2 rounded-xl bg-indigo-600 text-white hover:bg-indigo-700 press-feedback transition-colors min-h-[44px]"
@@ -169,6 +180,7 @@ export default function DictationDrill({
       </button>
 
       {/* Progress */}
+      <AdaptivePracticeNotice {...adaptive} />
       <div className="flex items-center justify-between mb-4">
         <h3 className="text-lg font-semibold text-slate-800 dark:text-slate-100">
           ✍️ Dictation
@@ -252,6 +264,7 @@ export default function DictationDrill({
           }`}>
             {diffResult.score >= ACCURACY_THRESHOLD ? '✅' : '📝'} {diffResult.score}% accurate
           </div>
+          <PracticeWordCapture key={currentSentence} language={language} text={currentSentence} source="dictation" />
 
           {/* Diff display */}
           <div className="bg-white dark:bg-slate-800 rounded-2xl shadow p-4">

@@ -1,12 +1,9 @@
 import { useState, useCallback, useRef, useEffect } from 'react';
 import { speak } from '../../lib/tts';
 import { isRTL } from '../../lib/rtl';
+import type { DrillQuestion } from './TileDrill';
 
-export interface DrillQuestion {
-  prompt: string;
-  correctAnswer: string;
-  language: string;
-}
+export type { DrillQuestion } from './TileDrill';
 
 interface TypeDrillProps {
   questions: DrillQuestion[];
@@ -19,6 +16,10 @@ export default function TypeDrill({ questions, onComplete }: TypeDrillProps) {
   const [input, setInput] = useState('');
   const [feedback, setFeedback] = useState<'correct' | 'wrong' | null>(null);
   const inputRef = useRef<HTMLInputElement>(null);
+  const advanceTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
+  useEffect(() => () => {
+    if (advanceTimer.current !== null) clearTimeout(advanceTimer.current);
+  }, []);
 
   const current = questions[index];
   const total = questions.length;
@@ -29,7 +30,7 @@ export default function TypeDrill({ questions, onComplete }: TypeDrillProps) {
 
   const advance = useCallback(
     (wasCorrect: boolean) => {
-      setTimeout(() => {
+      advanceTimer.current = setTimeout(() => {
         if (index + 1 >= total) {
           onComplete(wasCorrect ? correct + 1 : correct, total);
         } else {

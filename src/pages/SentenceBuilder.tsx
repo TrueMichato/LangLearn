@@ -1,5 +1,5 @@
-import { useState, useMemo, useCallback } from 'react';
-import { Link } from 'react-router-dom';
+import { useState, useMemo } from 'react';
+import { Link, useLocation } from 'react-router-dom';
 import { useCurrentLanguage } from '../hooks/useCurrentLanguage';
 import LanguagePicker from '../components/common/LanguagePicker';
 import LanguageUnavailable from '../components/common/LanguageUnavailable';
@@ -17,7 +17,8 @@ import {
   GuidedPracticeError,
   GuidedPracticeNotice,
 } from '../components/learn/GuidedPractice';
-import { selectGuidedItems } from '../lib/guided-practice';
+import { useAdaptivePractice } from '../hooks/useAdaptivePractice';
+import AdaptivePracticeNotice from '../components/common/AdaptivePracticeNotice';
 
 type Mode = 'tiles' | 'type';
 type Difficulty = 'easy' | 'medium' | 'hard' | 'all';
@@ -28,23 +29,20 @@ const ACTIVE_OPTION_CLASSES = 'bg-indigo-600 text-white';
 const INACTIVE_OPTION_CLASSES =
   'border border-slate-300 bg-white text-slate-700 dark:border-white/10 dark:bg-slate-700 dark:text-slate-300';
 
-function shuffle<T>(arr: T[]): T[] {
-  const a = [...arr];
-  for (let i = a.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [a[i], a[j]] = [a[j], a[i]];
-  }
-  return a;
+export default function SentenceBuilderPage() {
+  const current = useCurrentLanguage(SENTENCE_LANGUAGES);
+  const { search } = useLocation();
+  return <SentenceBuilderSession key={`${current.requested}/${search}`} current={current} />;
 }
 
-export default function SentenceBuilderPage() {
+export function SentenceBuilderSession({ current: languageState }: { current: ReturnType<typeof useCurrentLanguage> }) {
   const {
     language: currentLanguage,
     setLanguage,
     options: supportedLanguages,
     isSupported,
     requested,
-  } = useCurrentLanguage(SENTENCE_LANGUAGES);
+  } = languageState;
 
   const [phase, setPhase] = useState<Phase>('setup');
   const language = currentLanguage ?? 'ja';
@@ -56,21 +54,31 @@ export default function SentenceBuilderPage() {
 
   const allSentences = useMemo(() => getPracticeSentences(language), [language]);
   const guided = useGuidedPractice('sentence', language);
+  const adaptive = useAdaptivePractice<PracticeSentence>(language);
 
-  const startSession = useCallback(() => {
+  const startSession = async () => {
+    if (!isSupported || adaptive.status === 'loading') return;
     let pool = allSentences;
-    if (!guided.descriptor && difficulty !== 'all') {
-      pool = pool.filter((s) => s.difficulty === difficulty);
+    const level = guided.descriptor?.scope?.difficulty ?? difficulty;
+    if (level !== 'all') {
+      pool = pool.filter((s) => s.difficulty === level);
     }
-    const selected = guided.descriptor
-      ? selectGuidedItems(pool, guided.descriptor, (sentence) => sentence.id)
-      : shuffle(pool).slice(0, SENTENCES_PER_SESSION);
-    if (selected.length === 0) return;
+    const scope = guided.descriptor?.scope?.itemIds;
+    if (scope) pool = pool.filter((item) => scope.includes(item.id));
+    const selected = await adaptive.start(pool, {
+      seed: guided.descriptor?.seed ?? `${language}/sentence`,
+      session: guided.descriptor?.session ?? { minItems: 1, targetItems: SENTENCES_PER_SESSION, maxItems: SENTENCES_PER_SESSION },
+      difficulties: level === 'all' ? undefined : [level],
+    }, (item, index) => ({
+      id: item.id, language, difficulty: item.difficulty, text: item.target,
+      order: ({ easy: 0, medium: 1000, hard: 2000 }[item.difficulty]) + index,
+    }));
+    if (!selected) return;
     setSessionSentences(selected);
     setCurrentIdx(0);
     setScore(0);
     setPhase('session');
-  }, [allSentences, difficulty, guided.descriptor]);
+  };
 
   const handleResult = (correct: boolean) => {
     if (correct) setScore((s) => s + 1);
@@ -93,12 +101,19 @@ export default function SentenceBuilderPage() {
   if (guided.invalidMessage) {
     return <GuidedPracticeError message={guided.invalidMessage} />;
   }
+  if (!isSupported && phase !== 'setup') {
+    return <LanguageUnavailable requested={requested} options={supportedLanguages} onChange={setLanguage} feature="Sentence Builder" />;
+  }
+  if (phase !== 'setup' && adaptive.selection?.language !== language) {
+    return <p role="status">Preparing this language…</p>;
+  }
 
   const restart = () => {
     setPhase('setup');
     setScore(0);
     setCurrentIdx(0);
     setSessionSentences([]);
+    adaptive.reset();
   };
 
   // ── Setup ──
@@ -112,6 +127,7 @@ export default function SentenceBuilderPage() {
           <h2 className="text-lg font-semibold text-slate-700 dark:text-slate-200">✍️ Sentence Builder</h2>
         </div>
         <GuidedPracticeNotice guided={guided} />
+        <AdaptivePracticeNotice {...adaptive} />
 
         {!guided.descriptor && !isSupported && (
           <LanguageUnavailable
@@ -159,9 +175,10 @@ export default function SentenceBuilderPage() {
             {(['all', 'easy', 'medium', 'hard'] as const).map((d) => (
               <button
                 key={d}
-                onClick={() => setDifficulty(d)}
+                disabled={!!guided.descriptor?.scope?.difficulty || adaptive.status === 'loading'}
+                onClick={() => { adaptive.reset(); setDifficulty(d); }}
                 className={`px-4 py-2 min-h-[44px] rounded-xl text-sm font-medium capitalize transition-colors ${
-                  difficulty === d
+                  (guided.descriptor?.scope?.difficulty ?? difficulty) === d
                     ? ACTIVE_OPTION_CLASSES
                     : INACTIVE_OPTION_CLASSES
                 }`}
@@ -175,7 +192,7 @@ export default function SentenceBuilderPage() {
         {/* Start */}
         <button
           onClick={startSession}
-          disabled={supportedLanguages.length === 0}
+          disabled={!isSupported || adaptive.status === 'loading'}
           className="w-full py-3 bg-indigo-600 text-white rounded-xl font-semibold hover:bg-indigo-700 press-feedback transition-colors disabled:opacity-40"
         >
           Start Practice
@@ -216,6 +233,7 @@ export default function SentenceBuilderPage() {
   return (
     <div className="max-w-md mx-auto space-y-4 page-enter">
       <GuidedPracticeNotice guided={guided} />
+      <AdaptivePracticeNotice {...adaptive} />
       {/* Progress */}
       <div className="flex items-center justify-between text-sm text-slate-500 dark:text-slate-400">
         <span>

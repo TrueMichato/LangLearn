@@ -7,14 +7,21 @@ import {
   unitLessons,
   vocab,
 } from '../data/learning-paths/shared';
-import { resolveLearningPath } from '../lib/learning-path';
+import { resolveLearningPath as resolvePath } from '../lib/learning-path';
 import { activity } from '../data/learning-paths/shared';
 import type { LessonProgress } from '../db/schema';
-import { composeComprehensiveLearningPath } from '../lib/curriculum-composition';
+import { composeComprehensiveLearningPath as composePath } from '../lib/curriculum-composition';
 import type {
   LearningPathActivityKind,
   LearningPathManifest,
 } from '../types/learning-path';
+
+// Keep the pre-v2 sequencing fixtures as compatibility regression tests.
+// Current checkpoint placement and gates are covered in guided-checkpoints.test.ts.
+const resolveLearningPath = (...args: Parameters<typeof resolvePath>) =>
+  resolvePath(args[0], args[1], { ...args[2], pathVersion: 1 });
+const composeComprehensiveLearningPath = (...args: Parameters<typeof composePath>) =>
+  composePath(args[0], args[1], args[2], 1);
 
 interface LessonMeta {
   id: string;

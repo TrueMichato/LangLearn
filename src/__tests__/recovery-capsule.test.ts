@@ -94,14 +94,26 @@ describe('recovery capsule storage', () => {
 
   it('accepts a complete pre-v11 capsule without guided activity progress', () => {
     const previous = capsule('2026-01-01T00:00:00.000Z');
-    previous.schemaVersion = CURRENT_SCHEMA_VERSION - 1;
-    previous.payload.schemaVersion = CURRENT_SCHEMA_VERSION - 1;
+    previous.schemaVersion = 10;
+    previous.payload.schemaVersion = 10;
     delete previous.payload.tables.guidedActivityProgress;
+    delete previous.payload.tables.skillProgress;
 
     expect(
       parseRecoveryCapsule(JSON.stringify(previous))?.payload.tables
         .guidedActivityProgress,
     ).toBeUndefined();
+  });
+
+  it('accepts v11 without skill counters but requires them in v12', () => {
+    const previous = capsule('2026-01-01T00:00:00.000Z');
+    previous.schemaVersion = 11;
+    previous.payload.schemaVersion = 11;
+    delete previous.payload.tables.skillProgress;
+    expect(parseRecoveryCapsule(JSON.stringify(previous))).not.toBeNull();
+    previous.schemaVersion = 12;
+    previous.payload.schemaVersion = 12;
+    expect(parseRecoveryCapsule(JSON.stringify(previous))).toBeNull();
   });
 
   it('keeps the last valid capsule when a quota write fails', () => {

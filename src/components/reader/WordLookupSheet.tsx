@@ -1,7 +1,9 @@
-import { useState } from 'react';
+import { useCallback, useEffect, useId, useRef, useState } from 'react';
 import { speak, isTTSSupported } from '../../lib/tts';
 import { lookupWord } from '../../lib/dictionary';
+import { isRTL } from '../../lib/rtl';
 import { getForvoUrl } from '../../lib/forvo';
+import type { SaveWordsResult } from '../../db/words';
 import type { WordStatusMap } from '../../lib/word-status';
 import { getStatusLabel, getStatusBadgeClass } from '../../lib/word-status';
 
@@ -9,134 +11,138 @@ interface WordLookupSheetProps {
   word: string;
   language: string;
   initialReading?: string;
+  initialMeaning?: string;
   contextSentence?: string;
-  onAdd: (word: string, reading: string, meaning: string, contextSentence: string) => void;
+  onAdd: (word: string, reading: string, meaning: string, context: string) => void | Promise<void | SaveWordsResult>;
   onClose: () => void;
   wordStatusMap?: WordStatusMap;
 }
 
+/** Shared editor for Reader mining and revealed practice vocabulary. */
 export default function WordLookupSheet({
-  word,
-  language,
-  initialReading = '',
-  contextSentence = '',
-  onAdd,
-  onClose,
-  wordStatusMap,
+  word, language, initialReading = '', initialMeaning = '', contextSentence = '', onAdd, onClose, wordStatusMap,
 }: WordLookupSheetProps) {
+  const [editableWord, setWord] = useState(word);
   const [reading, setReading] = useState(initialReading);
-  const [meaning, setMeaning] = useState('');
-  const [loading, setLoading] = useState(false);
+  const [meaning, setMeaning] = useState(initialMeaning);
+  const [context, setContext] = useState(contextSentence);
+  const [lookupLoading, setLookupLoading] = useState(false);
+  const [lookupError, setLookupError] = useState('');
+  const [saveState, setSaveState] = useState<'idle' | 'saving' | 'saved' | 'exists' | 'error'>('idle');
+  const generation = useRef(0);
+  const saving = useRef(false);
+  const panel = useRef<HTMLDivElement>(null);
+  const closeRef = useRef(onClose);
+  const id = useId();
+  const invalidateLookup = useCallback(() => { generation.current++; }, []);
+  useEffect(() => { closeRef.current = onClose; }, [onClose]);
+  useEffect(() => {
+    const previous = document.activeElement as HTMLElement | null;
+    panel.current?.querySelector<HTMLInputElement>('input')?.focus();
+    return () => { invalidateLookup(); previous?.focus(); };
+  }, [invalidateLookup]);
 
-  const handleLookup = async () => {
-    setLoading(true);
+  async function handleLookup() {
+    const request = ++generation.current;
+    setLookupLoading(true);
+    setLookupError('');
     try {
-      const result = await lookupWord(word, language);
-      if (result) {
-        setReading(result.reading);
-        setMeaning(result.meanings.join('; '));
-      }
+      const result = await lookupWord(editableWord.trim(), language);
+      if (request !== generation.current) return;
+      if (!result?.meanings.length) throw new Error('No definition');
+      setReading(result.reading);
+      setMeaning(result.meanings.join('; '));
+    } catch {
+      if (request === generation.current) setLookupError('Lookup unavailable. Enter a meaning yourself or retry lookup when online.');
     } finally {
-      setLoading(false);
+      if (request === generation.current) setLookupLoading(false);
     }
-  };
-
-  return (
-    <div className="fixed inset-x-0 bottom-0 bg-white dark:bg-slate-900 border-t border-slate-200 dark:border-slate-700 rounded-t-2xl shadow-lg p-4 pb-[calc(1rem+env(safe-area-inset-bottom))] z-[60] animate-[slideUp_0.2s_ease-out]">
-      <div className="max-w-lg mx-auto">
-        <div className="flex items-center justify-between mb-3">
-          <div className="flex items-center gap-2">
-            <span className="text-xl font-bold dark:text-slate-100">{word}</span>
-            {wordStatusMap && (
-              <span className={`text-xs font-medium px-2 py-0.5 rounded-full ${getStatusBadgeClass(wordStatusMap.getStatus(word))}`}>
-                {getStatusLabel(wordStatusMap.getStatus(word))}
-              </span>
-            )}
-            {isTTSSupported() && (
-              <button
-                onClick={() => speak(word, language)}
-                aria-label="Listen"
-                className="text-lg hover:scale-110 transition-transform"
-              >
-                🔊
-              </button>
-            )}
-            {getForvoUrl(word, language) && (
-              <a
-                href={getForvoUrl(word, language)!}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-xs bg-emerald-100 dark:bg-emerald-900/50 text-emerald-700 dark:text-emerald-300 px-2 py-1 rounded-lg hover:bg-emerald-200 dark:hover:bg-emerald-800 transition-colors"
-                title="Hear native pronunciation on Forvo"
-              >
-                🎙️ Forvo
-              </a>
-            )}
-            <button
-              onClick={handleLookup}
-              disabled={loading}
-              className="text-sm bg-indigo-100 dark:bg-indigo-900 text-indigo-700 dark:text-indigo-300 px-2 py-1 rounded-lg hover:bg-indigo-200 dark:hover:bg-indigo-800 transition-colors disabled:opacity-50"
-            >
-              {loading ? (
-                <span className="inline-flex items-center gap-1">
-                  <svg
-                    className="animate-spin h-4 w-4"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                  >
-                    <circle
-                      className="opacity-25"
-                      cx="12"
-                      cy="12"
-                      r="10"
-                      stroke="currentColor"
-                      strokeWidth="4"
-                    />
-                    <path
-                      className="opacity-75"
-                      fill="currentColor"
-                      d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4z"
-                    />
-                  </svg>
-                  Looking up…
-                </span>
-              ) : (
-                '🔍 Look up'
-              )}
-            </button>
-          </div>
-          <button
-            onClick={onClose}
-            className="text-slate-400 hover:text-slate-600 dark:hover:text-slate-300 press-feedback"
-          >
-            ✕
-          </button>
+  }
+  function edit() {
+    generation.current++;
+    setLookupLoading(false);
+    setSaveState('idle');
+  }
+  async function save() {
+    if (saving.current || !editableWord.trim() || !meaning.trim()) return;
+    saving.current = true;
+    generation.current++;
+    setLookupLoading(false);
+    setSaveState('saving');
+    try {
+      const result = await onAdd(editableWord.trim(), reading.trim(), meaning.trim(), context);
+      setSaveState(result && result.added === 0 ? 'exists' : 'saved');
+    } catch {
+      setSaveState('error');
+    } finally {
+      saving.current = false;
+    }
+  }
+  const busy = saveState === 'saving';
+  const inputClass = 'w-full min-h-[44px] px-3 py-2 border border-slate-300 dark:border-slate-600 rounded-lg bg-white dark:bg-slate-800 text-slate-800 dark:text-slate-100';
+  return <div className="fixed inset-0 z-[60] bg-slate-950/40" onClick={(event) => {
+    if (event.target === event.currentTarget && !busy) onClose();
+  }}>
+    <div ref={panel} role="dialog" aria-modal="true" aria-labelledby={`${id}-heading`}
+      className="absolute inset-x-0 bottom-0 max-h-[85dvh] overflow-y-auto rounded-t-2xl border border-slate-200/70 dark:border-white/10 bg-white dark:bg-slate-900 p-4 pb-[calc(1rem+env(safe-area-inset-bottom))] shadow-lg"
+      onKeyDown={(event) => {
+        event.stopPropagation();
+        if (event.key === 'Escape' && !busy) closeRef.current();
+        if (event.key === 'Tab') {
+          const controls = panel.current?.querySelectorAll<HTMLElement>('button:not(:disabled), input:not(:disabled)');
+          if (!controls?.length) return;
+          const first = controls[0], last = controls[controls.length - 1];
+          if (event.shiftKey && document.activeElement === first) { event.preventDefault(); last.focus(); }
+          if (!event.shiftKey && document.activeElement === last) { event.preventDefault(); first.focus(); }
+        }
+      }}>
+      <div className="max-w-lg mx-auto space-y-3">
+        <div className="flex items-center justify-between gap-2">
+          <h2 id={`${id}-heading`} className="font-semibold text-slate-800 dark:text-slate-100">Save a word</h2>
+          {wordStatusMap && <span className={`rounded-full px-2 py-1 text-xs ${getStatusBadgeClass(wordStatusMap.getStatus(editableWord))}`}>
+            {getStatusLabel(wordStatusMap.getStatus(editableWord))}
+          </span>}
+          <button type="button" disabled={busy} onClick={onClose} aria-label="Close word editor"
+            className="min-h-[44px] min-w-[44px] text-slate-500 dark:text-slate-400">✕</button>
         </div>
-        {contextSentence && (
-          <p className="text-sm text-slate-500 dark:text-slate-400 italic mb-3">"{contextSentence}"</p>
-        )}
-        <input
-          type="text"
-          placeholder="Reading / pronunciation"
-          value={reading}
-          onChange={(e) => setReading(e.target.value)}
-          className="w-full px-3 py-2 border border-slate-300 dark:border-slate-600 rounded-lg mb-2 focus:outline-none focus:ring-2 focus:ring-indigo-300 dark:focus:ring-indigo-700 bg-white dark:bg-slate-800 dark:text-slate-100"
-        />
-        <input
-          type="text"
-          placeholder="Meaning / translation"
-          value={meaning}
-          onChange={(e) => setMeaning(e.target.value)}
-          className="w-full px-3 py-2 border border-slate-300 dark:border-slate-600 rounded-lg mb-3 focus:outline-none focus:ring-2 focus:ring-indigo-300 dark:focus:ring-indigo-700 bg-white dark:bg-slate-800 dark:text-slate-100"
-        />
-        <button
-          onClick={() => onAdd(word, reading, meaning, contextSentence)}
-          disabled={!meaning}
-          className="w-full bg-emerald-600 text-white py-2 rounded-xl font-semibold hover:bg-emerald-700 transition-colors disabled:opacity-40 press-feedback"
-        >
-          + Add to SRS
+        <label className="block text-sm text-slate-700 dark:text-slate-200">Word
+          <input className={inputClass} dir={isRTL(language) ? 'rtl' : 'ltr'} value={editableWord} disabled={busy}
+            onChange={(event) => { edit(); setWord(event.target.value); }} />
+        </label>
+        <div className="flex gap-2">
+          {isTTSSupported() && <button type="button" aria-label="Listen to word" onClick={() => speak(editableWord, language)}
+            className="min-h-[44px] min-w-[44px] text-slate-700 dark:text-slate-200">🔊</button>}
+          <button type="button" onClick={handleLookup} disabled={busy || lookupLoading || !editableWord.trim()}
+            className="min-h-[44px] text-indigo-600 dark:text-indigo-400 disabled:opacity-50">{lookupLoading ? 'Looking up…' : lookupError ? 'Retry lookup' : 'Look up meaning'}</button>
+          {getForvoUrl(editableWord, language) && <a href={getForvoUrl(editableWord, language)!}
+            target="_blank" rel="noopener noreferrer"
+            className="min-h-[44px] inline-flex items-center text-indigo-600 dark:text-indigo-400"
+            title="Hear native pronunciation on Forvo">Forvo ↗</a>}
+        </div>
+        {lookupError && <p role="status" className="text-sm text-slate-500 dark:text-slate-400">{lookupError}</p>}
+        <label className="block text-sm text-slate-700 dark:text-slate-200">Reading / pronunciation
+          <input className={inputClass} dir={isRTL(language) ? 'rtl' : 'ltr'} value={reading} disabled={busy}
+            onChange={(event) => { edit(); setReading(event.target.value); }} />
+        </label>
+        <label className="block text-sm text-slate-700 dark:text-slate-200">Meaning / translation
+          <input className={inputClass} value={meaning} disabled={busy}
+            onChange={(event) => { edit(); setMeaning(event.target.value); }} />
+        </label>
+        <label className="block text-sm text-slate-700 dark:text-slate-200">Context sentence
+          <input className={inputClass} dir={isRTL(language) ? 'rtl' : 'ltr'} value={context} disabled={busy}
+            onChange={(event) => { edit(); setContext(event.target.value); }} />
+        </label>
+        <p role="status" className="text-sm text-slate-500 dark:text-slate-400">
+          {saveState === 'saved' ? 'Saved to your vocabulary and ready for review.'
+            : saveState === 'exists' ? 'Already saved in your vocabulary. No duplicate was added.'
+              : saveState === 'error' ? 'Could not save this word. Your edits are still here; try again.'
+                : 'You can edit these fields and save offline. Saving does not mark a word as familiar.'}
+        </p>
+        <button type="button" onClick={save} disabled={busy || !editableWord.trim() || !meaning.trim() || saveState === 'saved' || saveState === 'exists'}
+          className="w-full min-h-[44px] rounded-xl bg-indigo-600 text-white px-4 py-2 hover:bg-indigo-700 disabled:opacity-50">
+          {busy ? 'Saving…' : saveState === 'error' ? 'Retry save' : saveState === 'saved' || saveState === 'exists' ? 'Saved' : 'Save to vocabulary'}
         </button>
       </div>
     </div>
-  );
+  </div>;
 }

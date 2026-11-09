@@ -1,5 +1,6 @@
 import { useState, type Ref } from 'react';
 import { rtlProps, rtlTextAlign } from '../../lib/rtl';
+import PracticeWordCapture, { type PracticeCaptureWord } from '../common/PracticeWordCapture';
 
 interface GrammarQuizProps {
   type: 'multiple-choice';
@@ -10,6 +11,8 @@ interface GrammarQuizProps {
   onSelect?: (index: number, correct: boolean) => void;
   selectedIndex?: number | null;
   language?: string;
+  captureAfterAnswer?: boolean;
+  captureWords?: readonly PracticeCaptureWord[];
   questionDirection?: 'target';
   targetOptionIndices?: number[];
   /**
@@ -32,6 +35,8 @@ export default function GrammarQuiz({
   onSelect,
   selectedIndex,
   language,
+  captureAfterAnswer = false,
+  captureWords,
   questionDirection,
   targetOptionIndices = [],
   promptRef,
@@ -136,6 +141,15 @@ export default function GrammarQuiz({
               </span>
               . Keep going! 💪
             </>
+          )}
+          {selected !== null && captureAfterAnswer && language && (
+            <PracticeWordCapture
+              language={language}
+              words={captureWords}
+              text={questionDirection === 'target' ? question
+                : targetOptionIndices.map((index) => options[index]).join(' ')}
+              source="grammar-lesson"
+            />
           )}
         </p>
       )}

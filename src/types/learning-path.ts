@@ -30,6 +30,15 @@ export interface LearningPathSessionBounds {
   maxItems: number;
 }
 
+export interface GuidedPracticeScope {
+  itemIds?: readonly string[];
+  difficulty?: string;
+  categories?: readonly string[];
+  ranges?: readonly string[];
+  task?: string;
+  forms?: readonly string[];
+}
+
 export interface LearningPathLessonRef {
   kind: LearningPathLessonKind;
   lessonId: string;
@@ -65,6 +74,10 @@ export interface LearningPathActivityRef {
   route: string;
   session: LearningPathSessionBounds;
   requirement?: LearningPathRequirement;
+  scope?: GuidedPracticeScope;
+  /** Explicit instructional anchors; IDs use grammar:/vocab: namespaces. */
+  prerequisites?: readonly string[];
+  introducedIn?: number;
 }
 
 export type LearningPathMilestoneRef =
@@ -118,6 +131,7 @@ export interface LearningPathNode {
   strandId?: string;
   requirement?: LearningPathRequirement;
   session?: LearningPathSessionBounds;
+  catchUp?: boolean;
 }
 
 export type LearningPathCheckpointState = 'available' | 'completed' | 'locked';

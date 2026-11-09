@@ -5,6 +5,7 @@ import {
   unitLessons,
   vocab,
 } from '../data/learning-paths/shared';
+import { withFoundationCheckpoints } from '../data/learning-paths/checkpoints';
 import type {
   ArabicLearningPathPolicy,
   LearningPathActivityKind,
@@ -323,6 +324,7 @@ export function composeComprehensiveLearningPath(
   manifest: LearningPathManifest,
   catalogs: CurriculumCatalogs,
   policy?: ArabicLearningPathPolicy,
+  pathVersion = 2,
 ): LearningPathManifest {
   if (!isCurriculumLanguage(manifest.language)) return manifest;
   const phasePlan = getLearningPathPhasePlan(manifest.language);
@@ -389,7 +391,7 @@ export function composeComprehensiveLearningPath(
     phasePlan?.phases.filter((phase) => usedPhaseIds.has(phase.id)) ?? [];
   const lastPhaseId = phases.at(-1)?.id ?? firstPhaseId;
 
-  return defineLearningPath({
+  const composed = defineLearningPath({
     ...manifest,
     phases,
     units: [
@@ -398,4 +400,5 @@ export function composeComprehensiveLearningPath(
       ...enrichmentUnits(enrichment, lastPhaseId),
     ],
   });
+  return pathVersion >= 2 ? defineLearningPath(withFoundationCheckpoints(composed)) : composed;
 }

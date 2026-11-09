@@ -35,6 +35,7 @@ const TABLES = {
   badges: { autoIncrement: false },
   reviewLog: { autoIncrement: true },
   guidedActivityProgress: { autoIncrement: false },
+  skillProgress: { autoIncrement: false },
 } as const;
 
 export type BackupTableName = keyof typeof TABLES;
@@ -187,6 +188,11 @@ export function tablesInPayload(payload: BackupPayload): {
 // ─── Merge keys ───
 
 type Row = Record<string, unknown>;
+interface CompatibilitySource {
+  progress?: Row[];
+  activityProgress?: Row[];
+  guidedGroups?: Record<string, string[]>;
+}
 
 function numericMax(left: unknown, right: unknown): number | undefined {
   const values = [left, right].filter(
@@ -235,6 +241,7 @@ export function mergeKey(table: BackupTableName, row: Row): string | null {
     case 'characterProgress':
     case 'badges':
     case 'guidedActivityProgress':
+    case 'skillProgress':
       return row.id != null ? String(row.id) : null;
     case 'studySessions':
       return row.startTime != null ? String(row.startTime) : null;
@@ -279,14 +286,17 @@ function stripId(row: Row): Row {
  * Primary keys are preserved so that `review.wordId`, `reviewLog.wordId` and
  * every other cross-table reference still resolves after the restore.
  */
-async function importReplace(payload: BackupPayload): Promise<ImportResult> {
+async function importReplace(
+  payload: BackupPayload,
+  upsertOnlySettings = false,
+): Promise<ImportResult> {
   const { present, untouched } = tablesInPayload(payload);
   const written: Partial<Record<BackupTableName, number>> = {};
 
   await db.transaction('rw', present.map((n) => db.table(n)), async () => {
     for (const name of present) {
       const rows = payload.tables[name] ?? [];
-      await db.table(name).clear();
+      if (name !== 'settings' || !upsertOnlySettings) await db.table(name).clear();
       if (rows.length) await db.table(name).bulkPut(rows as never[]);
       written[name] = rows.length;
     }
@@ -391,7 +401,32 @@ async function importMerge(payload: BackupPayload): Promise<ImportResult> {
     for (const name of standalone) {
       const rows = (payload.tables[name] ?? []) as Row[];
       const existing = (await db.table(name).toArray()) as Row[];
-      if (name === 'guidedActivityProgress') {
+      if (name === 'settings') {
+        for (const row of rows) {
+          if (typeof row.key !== 'string' || !row.key.startsWith('guided-path-source-v1/')) continue;
+          const current = existing.find((item) => item.key === row.key);
+          const incoming = JSON.parse(String(row.value)) as CompatibilitySource;
+          const previous = current ? JSON.parse(String(current.value)) as CompatibilitySource : {};
+          const guidedGroups = { ...previous.guidedGroups };
+          for (const [alphabet, groups] of Object.entries(incoming.guidedGroups ?? {})) {
+            guidedGroups[alphabet] = [...new Set([...(guidedGroups[alphabet] ?? []), ...groups])];
+          }
+          const merged: Record<string, unknown> = {
+            guidedGroups,
+          };
+          for (const field of ['progress', 'activityProgress'] as const) {
+            const byId = new Map((previous[field] ?? []).map((item) => [item.id, item]));
+            for (const item of incoming[field] ?? []) {
+              const prior = byId.get(item.id);
+              if (!prior || item.completed || item.completedAt) byId.set(item.id, item);
+            }
+            merged[field] = [...byId.values()];
+          }
+          await db.settings.put({ key: row.key, value: JSON.stringify(merged) });
+          await db.settings.delete(row.key.replace('guided-path-source-v1/', 'guided-path-baseline-v2/'));
+        }
+      }
+      if (name === 'guidedActivityProgress' || name === 'skillProgress') {
         const existingByKey = new Map(
           existing
             .map((row) => [mergeKey(name, row), row] as const)
@@ -403,7 +438,10 @@ async function importMerge(payload: BackupPayload): Promise<ImportResult> {
           const key = mergeKey(name, row);
           const current = key == null ? undefined : existingByKey.get(key);
           const merged = current
-            ? mergeGuidedActivityProgress(current, row)
+            ? name === 'skillProgress'
+              ? { ...current, attempts: Math.max(Number(current.attempts) || 0, Number(row.attempts) || 0),
+                  correct: Math.max(Number(current.correct) || 0, Number(row.correct) || 0) }
+              : mergeGuidedActivityProgress(current, row)
             : row;
           await db.table(name).put(merged as never);
           if (key != null) existingByKey.set(key, merged);
@@ -419,6 +457,12 @@ async function importMerge(payload: BackupPayload): Promise<ImportResult> {
       let added = 0;
       let dupes = 0;
       for (const row of rows) {
+        if (name === 'settings' && typeof row.key === 'string' &&
+          row.key.startsWith('guided-path-baseline-v2/') &&
+          rows.some((item) => item.key === row.key!.toString().replace('guided-path-baseline-v2/', 'guided-path-source-v1/'))) {
+          dupes++;
+          continue;
+        }
         const key = mergeKey(name, row);
         if (key !== null && existingKeys.has(key)) {
           dupes++;
@@ -453,11 +497,26 @@ export async function importAllData(
   mode: ImportMode = 'replace',
 ): Promise<ImportResult> {
   const payload = normalizePayload(JSON.parse(json));
+  const settingsWereOmitted = payload.tables.settings === undefined;
+  if (payload.schemaVersion < 12 && payload.tables.lessonProgress) {
+    const settings = (payload.tables.settings ?? []) as Row[];
+    for (const language of ['ja', 'ru', 'ar', 'es', 'pt', 'ro']) {
+      const key = `guided-path-source-v1/${language}`;
+      if (!settings.some((row) => row.key === key)) settings.push({
+        key,
+        value: JSON.stringify({
+          progress: (payload.tables.lessonProgress as Row[]).filter((row) => row.language === language),
+          activityProgress: ((payload.tables.guidedActivityProgress ?? []) as Row[]).filter((row) => row.language === language),
+        }),
+      });
+    }
+    payload.tables.settings = settings;
+  }
   const { present } = tablesInPayload(payload);
   if (present.length === 0 && Object.keys(payload.localStorage).length === 0) {
     throw new Error('Backup file contains no data');
   }
-  return mode === 'merge' ? importMerge(payload) : importReplace(payload);
+  return mode === 'merge' ? importMerge(payload) : importReplace(payload, settingsWereOmitted);
 }
 
 export function downloadJson(json: string, filename: string): void {

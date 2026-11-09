@@ -34,6 +34,9 @@ export function useGuidedPractice(
   const [isCompletionPending, setIsCompletionPending] = useState(false);
   const [completionError, setCompletionError] = useState('');
   const completionInFlight = useRef(false);
+  const identity = `${currentLanguage}/${location.key}/${location.search}`;
+  const activeIdentity = useRef(identity);
+  activeIdentity.current = identity;
 
   useEffect(() => {
     let cancelled = false;
@@ -64,6 +67,8 @@ export function useGuidedPractice(
     async ({ itemsCompleted, score }: GuidedCompletion) => {
       if (
         !descriptor ||
+        descriptor.language !== currentLanguage ||
+        activeIdentity.current !== identity ||
         alreadyCompleted ||
         completedNow ||
         completionInFlight.current
@@ -97,17 +102,19 @@ export function useGuidedPractice(
           itemsCompleted,
           score,
         });
-        setCompletedNow(true);
+        if (activeIdentity.current === identity) setCompletedNow(true);
       } catch {
-        setCompletionError(
-          'Your path progress could not be saved. Check your connection and finish the session again.',
-        );
+        if (activeIdentity.current === identity) {
+          setCompletionError('Your path progress could not be saved locally. Free some device storage and finish the session again.');
+        }
       } finally {
-        completionInFlight.current = false;
-        setIsCompletionPending(false);
+        if (activeIdentity.current === identity) {
+          completionInFlight.current = false;
+          setIsCompletionPending(false);
+        }
       }
     },
-    [alreadyCompleted, completedNow, descriptor],
+    [alreadyCompleted, completedNow, descriptor, currentLanguage, identity],
   );
 
   const languageMismatch =
