@@ -6,6 +6,7 @@ import type {
   GuidedActivityProgress,
   LessonProgress,
 } from '../db/schema';
+import { db } from '../db/schema';
 import type {
   ArabicLearningPathPolicy,
   LearningPath,
@@ -49,6 +50,43 @@ export interface LearningPathResolution {
   completedLetters: ReadonlySet<string>;
   activityProgress?: readonly GuidedActivityProgress[];
   arabicPolicy?: ArabicLearningPathPolicy;
+  pathVersion?: number;
+  baseline?: LearningPathBaseline;
+}
+
+export interface LearningPathBaseline {
+  version: 2;
+  accessibleNodeIds: string[];
+  completedLessonIds: string[];
+}
+
+/** Resolve the old path, never the newly gated one, to capture earned access. */
+export function deriveLearningPathBaseline(
+  manifest: LearningPathManifest, content: LearningPathContent,
+  resolution: LearningPathResolution,
+): LearningPathBaseline {
+  const legacy = resolveLearningPath(manifest, content, { ...resolution, baseline: undefined, pathVersion: 1 });
+  const completedLessonIds: string[] = [];
+  let unitOpen = true;
+  for (const unit of legacy.units) {
+    const sequences = unit.strands.length ? unit.strands.map((strand) => strand.nodes) : [unit.nodes];
+    for (const sequence of sequences) {
+      let open = unitOpen;
+      for (const node of sequence) {
+        if (open && node.state === 'completed' && (node.kind === 'grammar' || node.kind === 'vocab')) {
+          completedLessonIds.push(node.id);
+        }
+        if (nodeIsRequired(node) && node.state !== 'completed') open = false;
+      }
+    }
+    unitOpen = unitOpen && unit.nodes.filter(nodeIsRequired).every((node) => node.state === 'completed');
+  }
+  return {
+    version: 2,
+    accessibleNodeIds: legacy.units.flatMap((unit) => unit.nodes)
+      .filter((node) => node.state !== 'locked').map((node) => node.id),
+    completedLessonIds,
+  };
 }
 
 function contentMap(items: readonly LessonMeta[]): Map<string, LessonMeta> {
@@ -91,6 +129,7 @@ export function resolveLearningPath(
     manifest,
     content,
     resolution.arabicPolicy,
+    resolution.pathVersion,
   );
   const grammar = contentMap(content.grammar);
   const vocab = contentMap(content.vocab);
@@ -125,7 +164,13 @@ export function resolveLearningPath(
     strandId?: string,
   ): LearningPathNode => {
     const requirement = requirementOf(milestone);
-    const canOpen = prerequisitesComplete || requirement === 'enrichment';
+    const nodeId = isLessonMilestone(milestone)
+      ? `${milestone.kind}:${milestone.lessonId}` : milestone.milestoneId;
+    const retainedAccess = resolution.baseline?.accessibleNodeIds.includes(nodeId) ?? false;
+    const catchUp = !isLessonMilestone(milestone) && milestone.introducedIn === 2 &&
+      (milestone.prerequisites ?? []).length > 0 &&
+      milestone.prerequisites!.every((id) => resolution.baseline?.completedLessonIds.includes(id));
+    const canOpen = prerequisitesComplete || requirement === 'enrichment' || retainedAccess || catchUp;
     if (!isLessonMilestone(milestone)) {
       const completed =
         activityProgress.get(milestone.milestoneId)?.completedAt != null;
@@ -143,6 +188,7 @@ export function resolveLearningPath(
         strandId,
         requirement,
         session: milestone.session,
+        catchUp: catchUp && !completed,
       };
     }
 
@@ -194,7 +240,7 @@ export function resolveLearningPath(
         nextPrerequisitesComplete,
         strandId,
       );
-      if (nodeIsRequired(node) && node.state !== 'completed') {
+      if (nodeIsRequired(node) && node.state !== 'completed' && !node.catchUp) {
         nextPrerequisitesComplete = false;
       }
       return node;
@@ -327,7 +373,7 @@ export function resolveLearningPath(
     : [];
   const prerequisitesComplete = letterUnitNodes
     .filter(nodeIsRequired)
-    .every((node) => node.state === 'completed');
+    .every((node) => node.state === 'completed' || node.catchUp);
   const letterUnitCheckpoints = buildCheckpoints(
     letterLessonNodes,
     'letters',
@@ -377,7 +423,7 @@ export function resolveLearningPath(
       previousUnitComplete &&
       nodes
         .filter(nodeIsRequired)
-        .every((node) => node.state === 'completed');
+        .every((node) => node.state === 'completed' || node.catchUp);
     return resolvedUnit;
   });
 
@@ -404,8 +450,8 @@ export function resolveLearningPath(
   const nodes = allUnits.flatMap((unit) => unit.nodes);
   const recommendedNodeId =
     nodes.find(
-      (node) => nodeIsRequired(node) && node.state === 'available',
-    )?.id ?? null;
+      (node) => nodeIsRequired(node) && node.state === 'available' && !node.catchUp,
+    )?.id ?? nodes.find((node) => node.catchUp && node.state === 'available')?.id ?? null;
   const requiredNodes = nodes.filter(nodeIsRequired);
   const enrichmentNodes = nodes.filter((node) => !nodeIsRequired(node));
 
@@ -487,9 +533,36 @@ export async function loadLearningPath(
     }
   }
 
+  const baselineKey = `guided-path-baseline-v2/${language}`;
+  let baseline: LearningPathBaseline;
+  const savedBaseline = await db.settings.get(baselineKey);
+  if (savedBaseline) {
+    baseline = JSON.parse(savedBaseline.value) as LearningPathBaseline;
+  } else {
+    const source = await db.settings.get(`guided-path-source-v1/${language}`);
+    const frozen = source ? JSON.parse(source.value) as {
+      progress: LessonProgress[]; activityProgress: GuidedActivityProgress[];
+      guidedGroups?: Record<string, string[]>;
+    } : { progress: [], activityProgress: [] };
+    const frozenLetters = new Set(alphabets.filter((alphabet) => {
+      const groups = [...new Set(alphabet.characters.map((character) => character.group))];
+      return groups.length > 0 && groups.every((group) => frozen.guidedGroups?.[alphabet.name]?.includes(group));
+    }).map((alphabet) => alphabet.name));
+    baseline = deriveLearningPathBaseline(manifest, { grammar, vocab }, {
+      ...frozen, completedLetters: frozenLetters, arabicPolicy,
+    });
+    await db.transaction('rw', db.settings, async () => {
+      // Another path load may have resolved against a different settings snapshot.
+      if (!(await db.settings.get(baselineKey))) {
+        await db.settings.put({ key: baselineKey, value: JSON.stringify(baseline) });
+      } else {
+        baseline = JSON.parse((await db.settings.get(baselineKey))!.value) as LearningPathBaseline;
+      }
+    });
+  }
   return resolveLearningPath(
     manifest,
     { grammar, vocab },
-    { progress, completedLetters, activityProgress, arabicPolicy },
+    { progress, completedLetters, activityProgress, arabicPolicy, baseline },
   );
 }

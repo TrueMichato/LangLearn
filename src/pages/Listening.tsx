@@ -20,7 +20,11 @@ import {
   GuidedPracticeError,
   GuidedPracticeNotice,
 } from '../components/learn/GuidedPractice';
-import { selectGuidedItems } from '../lib/guided-practice';
+import { useAdaptivePractice } from '../hooks/useAdaptivePractice';
+import AdaptivePracticeNotice from '../components/common/AdaptivePracticeNotice';
+import PracticeWordCapture from '../components/common/PracticeWordCapture';
+import LexicalCoverageNote from '../components/common/LexicalCoverageNote';
+import { isRTL } from '../lib/rtl';
 
 // ── helpers ─────────────────────────────────────────────
 
@@ -44,6 +48,12 @@ type Screen = 'setup' | 'practice' | 'questions' | 'summary' | 'dictation' | 'di
 const LISTENING_LANGUAGES = Object.keys(LANG_PASSAGES);
 
 export default function ListeningPage() {
+  const current = useCurrentLanguage(LISTENING_LANGUAGES);
+  const [params] = useSearchParams();
+  return <ListeningAttempt key={`${current.language ?? current.requested}:${params}`} current={current} />;
+}
+
+function ListeningAttempt({ current }: { current: ReturnType<typeof useCurrentLanguage> }) {
   const [searchParams] = useSearchParams();
   const {
     language: currentLanguage,
@@ -51,9 +61,10 @@ export default function ListeningPage() {
     options: supportedLanguages,
     isSupported,
     requested,
-  } = useCurrentLanguage(LISTENING_LANGUAGES);
+  } = current;
 
   const language = currentLanguage ?? '';
+  const adaptive = useAdaptivePractice<ListeningPassage>(language);
   const [difficulty, setDifficulty] = useState<Difficulty>('all');
   const timerStart = useTimerStore((s) => s.start);
   const timerRunning = useTimerStore((s) => s.isRunning);
@@ -94,36 +105,6 @@ export default function ListeningPage() {
 
   // ── passage selection ─────────────────────────────────
 
-  const pickPassage = useCallback(() => {
-    if (guided.descriptor) {
-      const guidedPool = (LANG_PASSAGES[language] ?? []).filter(
-        (candidate) =>
-          guided.descriptor ||
-          difficulty === 'all' ||
-          candidate.difficulty === difficulty,
-      );
-      return (
-        selectGuidedItems(
-          guidedPool,
-          guided.descriptor,
-          (candidate) => candidate.id,
-        )[0] ?? null
-      );
-    }
-    const pool = (LANG_PASSAGES[language] ?? []).filter(
-      (p) => (difficulty === 'all' || p.difficulty === difficulty) && !usedIds.has(p.id),
-    );
-    if (pool.length === 0) {
-      // reset used ids if exhausted
-      setUsedIds(new Set());
-      const fullPool = (LANG_PASSAGES[language] ?? []).filter(
-        (p) => difficulty === 'all' || p.difficulty === difficulty,
-      );
-      return fullPool[Math.floor(Math.random() * fullPool.length)] ?? null;
-    }
-    return pool[Math.floor(Math.random() * pool.length)] ?? null;
-  }, [language, difficulty, usedIds, guided.descriptor]);
-
   // ── handlers ──────────────────────────────────────────
 
   const beginPassage = useCallback((nextPassage: ListeningPassage) => {
@@ -140,7 +121,7 @@ export default function ListeningPage() {
     setScreen('practice');
   }, []);
 
-  const startPractice = useCallback(() => {
+  const startPractice = async () => {
     // Records listening time under its own activity so the study balance and
     // the "try listening" suggestion reflect what actually happened.
     if (!timerRunning) timerStart('listening');
@@ -148,35 +129,30 @@ export default function ListeningPage() {
       setScreen('dictation');
       return;
     }
-    let p = pickPassage();
+    const effectiveDifficulty = guided.descriptor?.scope?.difficulty ?? difficulty;
+    let pool = (LANG_PASSAGES[language] ?? []).filter((p) =>
+      effectiveDifficulty === 'all' || p.difficulty === effectiveDifficulty);
     if (guided.descriptor) {
-      const pool = (LANG_PASSAGES[language] ?? []).filter(
-        (candidate) =>
-          guided.descriptor ||
-          difficulty === 'all' ||
-          candidate.difficulty === difficulty,
-      );
-      const selected = selectGuidedItems(
-        pool,
-        guided.descriptor,
-        (candidate) => candidate.id,
-      );
+      const scopedIds = guided.descriptor.scope?.itemIds;
+      if (scopedIds) pool = pool.filter((p) => scopedIds.includes(p.id));
+    } else {
+      const unused = pool.filter((p) => !usedIds.has(p.id));
+      if (unused.length) pool = unused;
+      else setUsedIds(new Set());
+    }
+    const selected = await adaptive.start(pool, {
+      seed: guided.descriptor?.seed ?? `listening:${language}:${Date.now()}`,
+      session: guided.descriptor?.session ?? { minItems: 1, targetItems: 1, maxItems: 1 },
+    }, (p, order) => ({
+      id: p.id, language, difficulty: p.difficulty, order, text: p.text,
+    }));
+    if (!selected?.length) return;
+    if (guided.descriptor) {
       setGuidedPassages(selected);
       setGuidedPassageIndex(0);
-      p = selected[0] ?? null;
     }
-    if (!p) return;
-    beginPassage(p);
-  }, [
-    beginPassage,
-    difficulty,
-    guided.descriptor,
-    language,
-    mode,
-    pickPassage,
-    timerRunning,
-    timerStart,
-  ]);
+    beginPassage(selected[0]);
+  };
 
   async function handlePlay() {
     if (!passage || isPlaying) return;
@@ -261,7 +237,7 @@ export default function ListeningPage() {
       <div className="text-center py-12 page-enter">
         <p className="text-4xl mb-4">🎧</p>
         <p className="text-slate-600 dark:text-slate-300 mb-2">
-          Listening practice is available for Japanese and Russian.
+          No listening content is available for your active languages.
         </p>
         <p className="text-sm text-slate-500 dark:text-slate-400 mb-6">
           Add one of these languages in Settings to get started.
@@ -359,11 +335,12 @@ export default function ListeningPage() {
 
         <button
           onClick={startPractice}
-          disabled={!language}
+          disabled={!language || adaptive.status === 'loading'}
           className="w-full py-3 rounded-2xl bg-indigo-600 text-white font-semibold text-lg disabled:opacity-50 hover:bg-indigo-700 press-feedback transition-colors"
         >
           {mode === 'dictation' ? 'Start Dictation Practice' : 'Start Listening Practice'}
         </button>
+        <AdaptivePracticeNotice {...adaptive} />
       </div>
     );
   }
@@ -374,6 +351,7 @@ export default function ListeningPage() {
     return (
       <div className="page-enter space-y-4">
         <GuidedPracticeNotice guided={guided} />
+        <AdaptivePracticeNotice {...adaptive} />
         <button onClick={handleBack} className="text-sm text-indigo-600 dark:text-indigo-400 mb-4">
           ← Back
         </button>
@@ -517,6 +495,11 @@ export default function ListeningPage() {
         <p className="text-indigo-600 dark:text-indigo-400 font-semibold mb-8">
           +{xpAwarded} XP earned
         </p>
+        <p dir={isRTL(language) ? 'rtl' : undefined} className="mb-3 text-slate-800 dark:text-slate-100">{passage.text}</p>
+        {adaptive.selection?.items.find((item) => item.id === passage.id)?.coverage && (
+          <LexicalCoverageNote coverage={adaptive.selection.items.find((item) => item.id === passage.id)!.coverage!} />
+        )}
+        <PracticeWordCapture language={language} text={passage.text} source="listening" />
 
         {guidedFinished ? (
           <GuidedCompletionActions guided={guided} onPracticeAgain={handleBack} />

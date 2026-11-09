@@ -41,6 +41,7 @@ function requiredUnitComplete(
 
 export default function LearningPath({ path, focusCurrent = false }: Props) {
   const complete = path.completedCount === path.totalCount;
+  const catchUpCount = path.units.flatMap((unit) => unit.nodes).filter((node) => node.catchUp).length;
   const rtl = isRTL(path.language);
   const sectionRef = useRef<HTMLElement>(null);
   const landmarkUnitRef = useRef<HTMLElement>(null);
@@ -656,6 +657,12 @@ export default function LearningPath({ path, focusCurrent = false }: Props) {
         )}
       </div>
 
+      {catchUpCount > 0 && (
+        <p className="mb-4 text-sm text-slate-500 dark:text-slate-400">
+          Your earlier access is kept. {catchUpCount} new practice {catchUpCount === 1 ? 'step is' : 'steps are'} available
+          as catch-up in the full path, without blocking your next lessons.
+        </p>
+      )}
       {showFullPath && (
         <div
           ref={stickyToolbarRef}

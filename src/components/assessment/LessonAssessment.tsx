@@ -5,6 +5,8 @@ import { markLessonsComplete } from '../../db/lessons';
 import { passesAssessment, scorePercent } from '../../lib/lesson-assessment';
 import { SkeletonList } from '../common/Skeleton';
 import AssessmentResult from './AssessmentResult';
+import PracticeWordCapture from '../common/PracticeWordCapture';
+import { assessmentVocabulary } from '../../lib/assessment-vocabulary';
 import AssessmentBlocked from './AssessmentBlocked';
 import {
   deleteAssessmentDraft,
@@ -339,6 +341,7 @@ export default function LessonAssessment({
 
   if (phase === 'result') {
     return (
+      <>
       <AssessmentResult
         passed={passed}
         score={finalScore}
@@ -350,6 +353,8 @@ export default function LessonAssessment({
         studyLabel={failActionLabel}
         nextLessonTitle={nextLessonTitle}
       />
+      <PracticeWordCapture language={lang} words={assessmentVocabulary(questions)} source="lesson-testout-results" />
+      </>
     );
   }
 

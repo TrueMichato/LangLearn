@@ -1,10 +1,13 @@
-import { useState, useCallback, useMemo } from 'react';
+import { useState, useCallback, useMemo, useRef, useEffect } from 'react';
 import { speak } from '../../lib/tts';
+import { seededShuffle } from '../../lib/guided-practice';
 
 export interface DrillQuestion {
   prompt: string;
   correctAnswer: string;
   language: string;
+  lemma?: string;
+  meaning?: string;
 }
 
 interface TileDrillProps {
@@ -12,20 +15,15 @@ interface TileDrillProps {
   onComplete: (correct: number, total: number) => void;
 }
 
-function shuffle<T>(arr: T[]): T[] {
-  const a = [...arr];
-  for (let i = a.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [a[i], a[j]] = [a[j], a[i]];
-  }
-  return a;
-}
-
 export default function TileDrill({ questions, onComplete }: TileDrillProps) {
   const [index, setIndex] = useState(0);
   const [correct, setCorrect] = useState(0);
   const [selected, setSelected] = useState<string | null>(null);
   const [answered, setAnswered] = useState(false);
+  const advanceTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
+  useEffect(() => () => {
+    if (advanceTimer.current !== null) clearTimeout(advanceTimer.current);
+  }, []);
 
   const current = questions[index];
   const total = questions.length;
@@ -36,12 +34,13 @@ export default function TileDrill({ questions, onComplete }: TileDrillProps) {
   );
 
   const tiles = useMemo(() => {
-    const distractors = allAnswers
-      .filter((a) => a !== current.correctAnswer)
-      .sort(() => Math.random() - 0.5)
-      .slice(0, 4);
+    const seed = `${current.language}/${current.prompt}`;
+    const distractors = seededShuffle(
+      allAnswers.filter((answer) => answer !== current.correctAnswer),
+      `${seed}/distractors`,
+    ).slice(0, 4);
     const options = [current.correctAnswer, ...distractors].slice(0, 5);
-    return shuffle(options);
+    return seededShuffle(options, `${seed}/options`);
   }, [current, allAnswers]);
 
   const handleTap = useCallback(
@@ -55,7 +54,7 @@ export default function TileDrill({ questions, onComplete }: TileDrillProps) {
         speak(current.correctAnswer, current.language);
       }
 
-      setTimeout(() => {
+      advanceTimer.current = setTimeout(() => {
         if (index + 1 >= total) {
           onComplete(isCorrect ? correct + 1 : correct, total);
         } else {

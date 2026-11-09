@@ -16,6 +16,11 @@ import {
   seededBoolean,
   selectGuidedItems,
 } from '../lib/guided-practice';
+import { loadSkillProgress, recordSkillAnswer } from '../db/skill-progress';
+import { selectSkillItems } from '../lib/skill-adaptation';
+import PracticeWordCapture from '../components/common/PracticeWordCapture';
+import { lexicalPairWords } from '../lib/skill-adaptation';
+import type { SkillProgress } from '../db/schema';
 type Phase = 'setup' | 'session' | 'summary';
 
 const CATEGORIES: Record<string, string> = {
@@ -73,15 +78,6 @@ function getCategoriesForLanguage(language: string): string[] {
   return [...new Set(pairs.map((p) => p.category))];
 }
 
-function shuffle<T>(arr: T[]): T[] {
-  const copy = [...arr];
-  for (let i = copy.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [copy[i], copy[j]] = [copy[j], copy[i]];
-  }
-  return copy;
-}
-
 export default function MinimalPairsPage() {
   const {
     language: currentLanguage,
@@ -109,6 +105,24 @@ export default function MinimalPairsPage() {
 
   const current = queue[index] ?? null;
   const guided = useGuidedPractice('minimal-pairs', language);
+  const [starting, setStarting] = useState(false);
+  const [skillError, setSkillError] = useState('');
+  const answerLock = useRef(false);
+  const finishLock = useRef(false);
+  const sessionIdentity = `${language}/${guided.descriptor?.milestoneId ?? ''}/${JSON.stringify(guided.descriptor?.scope ?? null)}`;
+  const activeIdentity = useRef(sessionIdentity);
+
+  useEffect(() => {
+    activeIdentity.current = sessionIdentity;
+    cancelPendingAudio();
+    setPhase('setup');
+    setQueue([]);
+    setStarting(false);
+    answerLock.current = false;
+    finishLock.current = false;
+    // Audio cleanup is stable and independent of the selected language.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [sessionIdentity]);
 
   const cancelPendingAudio = useCallback(() => {
     if (autoplayTimer.current) {
@@ -144,18 +158,42 @@ export default function MinimalPairsPage() {
     };
   }, [cancelPendingAudio]);
 
-  const startSession = () => {
+  const startSession = async () => {
+    if (starting || (!isSupported && !guided.isGuided)) return;
+    const identity = sessionIdentity;
+    setStarting(true);
+    setSkillError('');
     cancelPendingAudio();
     const allPairs = getPairsForLanguage(language);
-    const filtered = guided.descriptor
-      ? allPairs
+    const filtered = guided.descriptor?.scope?.categories
+      ? allPairs.filter((pair) => guided.descriptor!.scope!.categories!.includes(pair.category))
+      : guided.descriptor ? allPairs
       : selectedCategories.size > 0
       ? allPairs.filter((p) => selectedCategories.has(p.category))
       : allPairs;
-    if (filtered.length === 0) return;
-    const shuffled = guided.descriptor
-      ? selectGuidedItems(filtered, guided.descriptor, (pair) => pair.id)
-      : shuffle(filtered);
+    let history: SkillProgress[];
+    try {
+      history = await loadSkillProgress(language, 'minimal-pairs');
+    } catch {
+      setSkillError('Sound practice history could not be loaded. Practice can continue without adaptation.');
+      history = [];
+    }
+    if (activeIdentity.current !== identity) return;
+    const candidates = guided.descriptor
+      ? selectGuidedItems(filtered, { ...guided.descriptor, session: {
+          ...guided.descriptor.session, targetItems: filtered.length,
+        } }, (pair) => pair.id)
+      : filtered;
+    const shuffled = selectSkillItems(candidates, history, (pair) => pair.id,
+      guided.descriptor?.session.targetItems ?? 12,
+      guided.descriptor?.seed ?? `${language}/${Date.now()}`);
+    setStarting(false);
+    if (shuffled.length === 0 || (guided.descriptor && shuffled.length < guided.descriptor.session.minItems)) {
+      setSkillError('There are not enough pairs for this scope. Return to the learning path and reopen the step.');
+      return;
+    }
+    answerLock.current = false;
+    finishLock.current = false;
     setQueue(shuffled);
     setIndex(0);
     setScore(0);
@@ -184,11 +222,15 @@ export default function MinimalPairsPage() {
   };
 
   const handleAnswer = useCallback((choice: 'a' | 'b') => {
-    if (answered !== null) return;
+    if (answered !== null || answerLock.current || !current) return;
+    answerLock.current = true;
     setAnswered(choice);
     setShowingPair(true);
 
     const isCorrect = choice === correctAnswer;
+    void recordSkillAnswer(language, 'minimal-pairs', current.id, isCorrect).catch(() => {
+      setSkillError('Your answer counts, but sound practice history could not be saved on this device.');
+    });
     if (isCorrect) {
       const newStreak = streak + 1;
       setScore((s) => s + 1);
@@ -197,12 +239,14 @@ export default function MinimalPairsPage() {
     } else {
       setStreak(0);
     }
-  }, [answered, bestStreak, correctAnswer, streak]);
+  }, [answered, bestStreak, correctAnswer, streak, current, language]);
 
   const nextPair = useCallback(() => {
+    if (answered === null || finishLock.current) return;
     cancelPendingAudio();
     const nextIdx = index + 1;
     if (nextIdx >= queue.length) {
+      finishLock.current = true;
       // Session complete
       const finalScore = score + (answered === correctAnswer ? 0 : 0); // score already updated
       const xp = 15 + finalScore * 2;
@@ -215,6 +259,7 @@ export default function MinimalPairsPage() {
       return;
     }
     setIndex(nextIdx);
+    answerLock.current = false;
     setAnswered(null);
     setShowingPair(false);
 
@@ -237,9 +282,14 @@ export default function MinimalPairsPage() {
   useEffect(() => {
     if (phase !== 'session') return;
     const handler = (e: KeyboardEvent) => {
+      if (e.target instanceof HTMLElement &&
+        e.target.closest('input, textarea, select, button, a, [role="dialog"], [contenteditable="true"]')) return;
       if (e.key === '1' || e.key === 'a') handleAnswer('a');
       else if (e.key === '2' || e.key === 'b') handleAnswer('b');
-      else if ((e.key === 'Enter' || e.key === ' ') && answered !== null) nextPair();
+      else if ((e.key === 'Enter' || e.key === ' ') && answered !== null) {
+        e.preventDefault();
+        nextPair();
+      }
       else if (e.key === 'r' && current) {
         playAudio(current, correctAnswer);
       }
@@ -273,7 +323,9 @@ export default function MinimalPairsPage() {
   if (phase === 'setup') {
     const categories = getCategoriesForLanguage(language);
     const allPairs = getPairsForLanguage(language);
-    const filteredCount = selectedCategories.size > 0
+    const filteredCount = guided.descriptor?.scope?.categories
+      ? allPairs.filter((pair) => guided.descriptor!.scope!.categories!.includes(pair.category)).length
+      : selectedCategories.size > 0
       ? allPairs.filter((p) => selectedCategories.has(p.category)).length
       : allPairs.length;
 
@@ -312,7 +364,7 @@ export default function MinimalPairsPage() {
         )}
 
         {/* Category filter */}
-        <div className="bg-white dark:bg-slate-800 rounded-2xl shadow p-4 mb-4">
+        {!guided.isGuided && <div className="bg-white dark:bg-slate-800 rounded-2xl shadow p-4 mb-4">
           <h3 className="text-sm font-medium text-slate-700 dark:text-slate-300 mb-3">
             Categories {selectedCategories.size > 0 ? `(${selectedCategories.size} selected)` : '(all)'}
           </h3>
@@ -331,14 +383,14 @@ export default function MinimalPairsPage() {
               </button>
             ))}
           </div>
-        </div>
-
+        </div>}
+        {skillError && <p role="status" className="mb-3 text-sm text-slate-500 dark:text-slate-400">{skillError}</p>}
         <button
           onClick={startSession}
-          disabled={filteredCount === 0}
+          disabled={filteredCount === 0 || starting || (!isSupported && !guided.isGuided)}
           className="w-full bg-indigo-600 text-white py-3 rounded-xl font-semibold hover:bg-indigo-700 transition-colors disabled:opacity-40 press-feedback min-h-[44px]"
         >
-          Start Practice ({filteredCount} pairs)
+          {starting ? 'Preparing practice…' : `Start Practice (${Math.min(guided.descriptor?.session.targetItems ?? 12, filteredCount)} pairs)`}
         </button>
       </div>
     );
@@ -404,6 +456,11 @@ export default function MinimalPairsPage() {
   return (
     <div>
       <GuidedPracticeNotice guided={guided} />
+      {answered !== null && (
+        <PracticeWordCapture language={language} words={lexicalPairWords(current)}
+          source="minimal-pairs" />
+      )}
+      {skillError && <p role="status" className="my-3 text-sm text-slate-500 dark:text-slate-400">{skillError}</p>}
       {/* Progress bar and stats */}
       <div className="flex justify-between items-center mb-2">
         <span className="text-sm text-slate-500 dark:text-slate-400">

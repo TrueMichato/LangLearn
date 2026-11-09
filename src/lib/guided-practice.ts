@@ -7,6 +7,7 @@ import type {
   LearningPathActivityKind,
   LearningPathActivityRef,
   LearningPathSessionBounds,
+  GuidedPracticeScope,
 } from '../types/learning-path';
 
 export const GUIDED_MILESTONE_QUERY_PARAM = 'guided';
@@ -21,6 +22,7 @@ const GUIDED_PARAMS = [
   GUIDED_MIN_ITEMS_QUERY_PARAM,
   GUIDED_TARGET_ITEMS_QUERY_PARAM,
   GUIDED_MAX_ITEMS_QUERY_PARAM,
+  'guidedScope',
 ] as const;
 
 export interface GuidedPracticeDescriptor {
@@ -29,6 +31,7 @@ export interface GuidedPracticeDescriptor {
   language: CurriculumLanguage;
   session: LearningPathSessionBounds;
   seed: string;
+  scope?: GuidedPracticeScope;
 }
 
 export type GuidedPracticeQuery =
@@ -63,6 +66,7 @@ export function guidedActivityRoute(
   params.set(GUIDED_MIN_ITEMS_QUERY_PARAM, String(milestone.session.minItems));
   params.set(GUIDED_TARGET_ITEMS_QUERY_PARAM, String(milestone.session.targetItems));
   params.set(GUIDED_MAX_ITEMS_QUERY_PARAM, String(milestone.session.maxItems));
+  if (milestone.scope) params.set('guidedScope', JSON.stringify(milestone.scope));
   return `${milestone.route.split('?')[0]}?${params.toString()}`;
 }
 
@@ -120,9 +124,8 @@ export function parseGuidedPracticeQuery(
   const capability = ACTIVITY_CAPABILITIES[language][expectedActivity];
   if (
     !capability.available ||
-    minItems !== capability.session.minItems ||
-    targetItems !== capability.session.targetItems ||
-    maxItems !== capability.session.maxItems
+    minItems < capability.session.minItems ||
+    maxItems > capability.session.maxItems
   ) {
     return {
       kind: 'invalid',
@@ -131,6 +134,24 @@ export function parseGuidedPracticeQuery(
     };
   }
 
+  let scope: GuidedPracticeScope | undefined;
+  if (params.has('guidedScope')) {
+    try {
+      const value = JSON.parse(params.get('guidedScope')!);
+      if (!value || typeof value !== 'object' || Array.isArray(value)) throw new Error();
+      const lists = ['itemIds', 'categories', 'ranges', 'forms'];
+      const scalars = ['difficulty', 'task'];
+      for (const [key, entry] of Object.entries(value)) {
+        if (lists.includes(key)) {
+          if (!Array.isArray(entry) || entry.length === 0 || entry.length > 200 ||
+            entry.some((item) => typeof item !== 'string' || item.length === 0 || item.length > 160)) throw new Error();
+        } else if (!scalars.includes(key) || typeof entry !== 'string' || entry.length > 80) throw new Error();
+      }
+      scope = value;
+    } catch {
+      return { kind: 'invalid', message: 'This guided practice scope is invalid. Return to your learning path and open the step again.' };
+    }
+  }
   return {
     kind: 'guided',
     descriptor: {
@@ -139,6 +160,7 @@ export function parseGuidedPracticeQuery(
       language,
       session: { minItems, targetItems, maxItems },
       seed: `${language}/${milestoneId}`,
+      ...(scope ? { scope } : {}),
     },
   };
 }
@@ -181,7 +203,10 @@ export function selectGuidedItems<T>(
   descriptor: GuidedPracticeDescriptor,
   itemKey: (item: T) => string,
 ): T[] {
-  const stableItems = [...items].sort((left, right) =>
+  const scopedItems = descriptor.scope?.itemIds
+    ? items.filter((item) => descriptor.scope!.itemIds!.includes(itemKey(item)))
+    : items;
+  const stableItems = [...scopedItems].sort((left, right) =>
     itemKey(left).localeCompare(itemKey(right)),
   );
   return seededShuffle(stableItems, descriptor.seed).slice(

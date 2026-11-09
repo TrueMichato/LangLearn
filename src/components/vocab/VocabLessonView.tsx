@@ -7,6 +7,7 @@ import { markLessonComplete } from '../../db/lessons';
 import { useTimerStore } from '../../stores/timerStore';
 import { useXPStore } from '../../stores/xpStore';
 import MatchExercise from './MatchExercise';
+import PracticeWordCapture from '../common/PracticeWordCapture';
 import FillBlankExercise from './FillBlankExercise';
 import VocabQuiz from './VocabQuiz';
 import { SkeletonList } from '../common/Skeleton';
@@ -488,6 +489,9 @@ export default function VocabLessonView({ lang, lessonId, onBack }: Props) {
       </div>
 
       <div className="space-y-3">
+        <PracticeWordCapture language={lang} words={lesson.words.map((word) => ({
+          ...word, context: word.example,
+        }))} source="vocab-lesson" tags={[lessonId]} />
         <AddAllWordsButton status={bulkStatus} result={bulkResult} onClick={handleAddAllWords} />
         {bulkSaveError && (
           <p role="alert" className="text-sm text-amber-700 dark:text-amber-300">

@@ -1,5 +1,5 @@
-import { useState, useMemo, useRef, useEffect, useCallback } from 'react';
-import { Link } from 'react-router-dom';
+import { useState, useMemo, useRef, useEffect } from 'react';
+import { Link, useLocation } from 'react-router-dom';
 import { useCurrentLanguage } from '../hooks/useCurrentLanguage';
 import LanguagePicker from '../components/common/LanguagePicker';
 import LanguageUnavailable from '../components/common/LanguageUnavailable';
@@ -24,7 +24,9 @@ import {
   GuidedPracticeError,
   GuidedPracticeNotice,
 } from '../components/learn/GuidedPractice';
-import { selectGuidedItems } from '../lib/guided-practice';
+import { useAdaptivePractice } from '../hooks/useAdaptivePractice';
+import AdaptivePracticeNotice from '../components/common/AdaptivePracticeNotice';
+import PracticeWordCapture from '../components/common/PracticeWordCapture';
 
 type Difficulty = 'easy' | 'medium' | 'hard' | 'all';
 type Phase = 'setup' | 'practice' | 'summary';
@@ -54,25 +56,22 @@ function getSentences(lang: string): PracticeSentence[] {
   return [];
 }
 
-function shuffle<T>(arr: T[]): T[] {
-  const a = [...arr];
-  for (let i = a.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [a[i], a[j]] = [a[j], a[i]];
-  }
-  return a;
-}
-
 const TRANSLATION_LANGUAGES = ['ja', 'ru', 'pt', 'es', 'ar', 'ro'];
 
 export default function TranslationPracticePage() {
+  const current = useCurrentLanguage(TRANSLATION_LANGUAGES);
+  const { search } = useLocation();
+  return <TranslationPracticeSession key={`${current.requested}/${search}`} current={current} />;
+}
+
+export function TranslationPracticeSession({ current: languageState }: { current: ReturnType<typeof useCurrentLanguage> }) {
   const {
     language: currentLanguage,
     setLanguage,
     options: supportedLanguages,
     isSupported,
     requested,
-  } = useCurrentLanguage(TRANSLATION_LANGUAGES);
+  } = languageState;
 
   const [phase, setPhase] = useState<Phase>('setup');
   const language = currentLanguage ?? 'ja';
@@ -86,22 +85,33 @@ export default function TranslationPracticePage() {
 
   const allSentences = useMemo(() => getSentences(language), [language]);
   const guided = useGuidedPractice('translation', language);
+  const adaptive = useAdaptivePractice<PracticeSentence>(language);
 
-  const startSession = useCallback(() => {
+  const startSession = async () => {
+    if (!isSupported || adaptive.status === 'loading') return;
     let pool = allSentences;
-    if (!guided.descriptor && difficulty !== 'all') {
-      pool = pool.filter((s) => s.difficulty === difficulty);
+    const level = guided.descriptor?.scope?.difficulty ?? difficulty;
+    if (level !== 'all') {
+      pool = pool.filter((s) => s.difficulty === level);
     }
-    const selected = guided.descriptor
-      ? selectGuidedItems(pool, guided.descriptor, (sentence) => sentence.id)
-      : shuffle(pool).slice(0, SENTENCES_PER_SESSION);
+    const scope = guided.descriptor?.scope?.itemIds;
+    if (scope) pool = pool.filter((item) => scope.includes(item.id));
+    const selected = await adaptive.start(pool, {
+      seed: guided.descriptor?.seed ?? `${language}/translation`,
+      session: guided.descriptor?.session ?? { minItems: 1, targetItems: SENTENCES_PER_SESSION, maxItems: SENTENCES_PER_SESSION },
+      difficulties: level === 'all' ? undefined : [level],
+    }, (item, index) => ({
+      id: item.id, language, difficulty: item.difficulty, text: item.target,
+      order: ({ easy: 0, medium: 1000, hard: 2000 }[item.difficulty]) + index,
+    }));
+    if (!selected) return;
     setSessionSentences(selected);
     setCurrentIdx(0);
     setInput('');
     setSubmitted(false);
     setResults([]);
     setPhase('practice');
-  }, [allSentences, difficulty, guided.descriptor]);
+  };
 
   useEffect(() => {
     if (phase === 'practice' && !submitted) {
@@ -110,11 +120,12 @@ export default function TranslationPracticePage() {
   }, [phase, currentIdx, submitted]);
 
   const handleCheck = () => {
-    if (!input.trim()) return;
+    if (submitted || !input.trim()) return;
     setSubmitted(true);
   };
 
   const handleGrade = (grade: Grade) => {
+    if (!submitted) return;
     const graded: GradedSentence = {
       sentence: sessionSentences[currentIdx],
       userAnswer: input.trim(),
@@ -160,16 +171,23 @@ export default function TranslationPracticePage() {
     results.filter((r) => r.grade === 'partial').length * XP_PER_TRANSLATION_PARTIAL;
   const missedSentences = results.filter((r) => r.grade === 'missed');
 
-  const resetPractice = useCallback(() => {
+  const resetPractice = () => {
+    adaptive.reset();
     setPhase('setup');
     setResults([]);
     setCurrentIdx(0);
     setInput('');
     setSubmitted(false);
-  }, []);
+  };
 
   if (guided.invalidMessage) {
     return <GuidedPracticeError message={guided.invalidMessage} />;
+  }
+  if (!isSupported && phase !== 'setup') {
+    return <LanguageUnavailable requested={requested} options={supportedLanguages} onChange={setLanguage} feature="Translation practice" />;
+  }
+  if (phase !== 'setup' && adaptive.selection?.language !== language) {
+    return <p role="status">Preparing this language…</p>;
   }
 
   /* ─── Setup ─── */
@@ -186,6 +204,7 @@ export default function TranslationPracticePage() {
           </p>
         </div>
         <GuidedPracticeNotice guided={guided} />
+        <AdaptivePracticeNotice {...adaptive} />
 
         {!guided.descriptor && !isSupported && (
           <LanguageUnavailable
@@ -219,9 +238,10 @@ export default function TranslationPracticePage() {
             {(['easy', 'medium', 'hard', 'all'] as Difficulty[]).map((d) => (
               <button
                 key={d}
-                onClick={() => setDifficulty(d)}
+                disabled={!!guided.descriptor?.scope?.difficulty || adaptive.status === 'loading'}
+                onClick={() => { adaptive.reset(); setDifficulty(d); }}
                 className={`px-4 py-2 min-h-[44px] rounded-xl text-sm font-medium min-h-[44px] capitalize transition-colors ${
-                  difficulty === d
+                  (guided.descriptor?.scope?.difficulty ?? difficulty) === d
                     ? 'bg-indigo-600 text-white'
                     : 'bg-slate-100 dark:bg-slate-700 text-slate-700 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-600'
                 }`}
@@ -234,7 +254,7 @@ export default function TranslationPracticePage() {
 
         <button
           onClick={startSession}
-          disabled={allSentences.length === 0}
+          disabled={!isSupported || adaptive.status === 'loading' || allSentences.length === 0}
           className="w-full bg-indigo-600 text-white px-5 py-3 rounded-xl font-semibold min-h-[44px] hover:bg-indigo-700 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
         >
           Start Practice
@@ -320,8 +340,10 @@ export default function TranslationPracticePage() {
         </div>
 
         {/* After submission — show reference & grading */}
+        <AdaptivePracticeNotice {...adaptive} />
         {submitted && (
           <div className="space-y-4">
+            <PracticeWordCapture key={current.id} language={language} text={current.target} context={current.target} source="translation" />
             {/* User answer */}
             <div className="bg-white dark:bg-slate-800 rounded-2xl shadow p-4">
               <p className="text-xs text-slate-500 dark:text-slate-400 mb-1">

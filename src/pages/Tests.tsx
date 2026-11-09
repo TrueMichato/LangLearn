@@ -13,6 +13,8 @@ import {
   GuidedPracticeNotice,
 } from '../components/learn/GuidedPractice';
 import { createSeededRandom } from '../lib/guided-practice';
+import PracticeWordCapture from '../components/common/PracticeWordCapture';
+import { assessmentVocabulary } from '../lib/assessment-vocabulary';
 
 type Phase = 'setup' | 'loading' | 'active' | 'results' | 'guided-error';
 type TimeLimit = 0 | 5 | 10 | 15;
@@ -446,6 +448,7 @@ export default function TestsPage() {
             Take Another Test
           </button>
         )}
+        <PracticeWordCapture language={result.language} words={assessmentVocabulary(questions)} source="proficiency-results" />
       </div>
     );
   }

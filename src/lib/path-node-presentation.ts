@@ -27,6 +27,7 @@ export function pathNodeStatus(
   node: LearningPathNode,
   recommended: boolean,
 ): string {
+  if (node.catchUp && node.state !== 'completed') return 'Catch-up practice';
   if (recommended) return 'Up next';
   if (node.requirement === 'enrichment') {
     if (node.state === 'completed') return 'Explored';

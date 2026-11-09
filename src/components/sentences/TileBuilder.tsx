@@ -2,6 +2,7 @@ import { useState, useMemo, useCallback } from 'react';
 import type { PracticeSentence } from '../../data/sentences/ja-sentences';
 import { speak } from '../../lib/tts';
 import { rtlProps } from '../../lib/rtl';
+import PracticeWordCapture from '../common/PracticeWordCapture';
 
 interface TileBuilderProps {
   sentence: PracticeSentence;
@@ -108,6 +109,7 @@ export default function TileBuilder({ sentence, language, allSentences, onResult
       </div>
 
       {/* Actions */}
+      {checked && <PracticeWordCapture language={language} text={sentence.target} context={sentence.target} source="sentence" />}
       <div className="flex justify-center gap-3">
         {!checked ? (
           <button

@@ -194,18 +194,22 @@ export default function LetterPractice() {
           )}
           {mode === 'draw' && (
             <DrawingCanvas
+              key={`${lang}/${currentAlphabet.name}/draw`}
               characters={currentAlphabet.characters}
               alphabetName={currentAlphabet.name}
               language={lang}
               onProgress={refreshProgress}
+              progress={progress}
             />
           )}
           {mode === 'quiz' && (
             <RecognitionQuiz
+              key={`${lang}/${currentAlphabet.name}/quiz`}
               characters={currentAlphabet.characters}
               alphabetName={currentAlphabet.name}
               language={lang}
               onProgress={refreshProgress}
+              progress={progress}
             />
           )}
         </>

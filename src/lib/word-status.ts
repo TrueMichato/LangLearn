@@ -1,4 +1,6 @@
 import { db } from '../db/schema';
+import { MATURE_REVIEW_INTERVAL } from './knowledge';
+import { isLexical, normalizeLanguage, normalizeLexeme } from './lexical';
 
 export type WordStatus = 'new' | 'seen' | 'learning' | 'known';
 
@@ -21,7 +23,9 @@ export interface WordStatusMap {
  */
 export async function buildWordStatusMap(language: string): Promise<WordStatusMap> {
   // language is indexed — safe to .where()
-  const words = await db.words.where('language').equals(language).toArray();
+  const lang = normalizeLanguage(language);
+  const words = (await db.words.where('language').equals(lang).toArray())
+    .filter((word) => (!word.type || word.type === 'word') && isLexical(word.word));
 
   const wordIds = words.map((w) => w.id!).filter((id) => id != null);
 
@@ -38,12 +42,12 @@ export async function buildWordStatusMap(language: string): Promise<WordStatusMa
   let seenCount = 0;
 
   for (const w of words) {
-    const key = w.word.toLowerCase();
+    const key = normalizeLexeme(w.word, lang);
     const review = reviewByWordId.get(w.id!);
 
     let status: WordStatus;
     if (review) {
-      status = review.interval >= 21 ? 'known' : 'learning';
+      status = review.interval >= MATURE_REVIEW_INTERVAL ? 'known' : 'learning';
     } else {
       status = 'seen';
     }
@@ -64,7 +68,7 @@ export async function buildWordStatusMap(language: string): Promise<WordStatusMa
 
   return {
     getStatus(word: string): WordStatus {
-      return statusMap.get(word.toLowerCase()) ?? 'new';
+      return statusMap.get(normalizeLexeme(word, lang)) ?? 'new';
     },
     size: statusMap.size,
     knownCount,

@@ -326,7 +326,16 @@ export default function LessonView({ lang, lessonId, onBack, lessons, onNavigate
             </ReactMarkdown>
           ) : (
             <div key={i} className="my-6 border border-indigo-200 dark:border-indigo-800/60 bg-indigo-50 dark:bg-indigo-950/30 rounded-2xl">
-              <GrammarQuiz {...seg.data} onAnswer={handleQuizAnswer} />
+              <GrammarQuiz {...seg.data} language={lang} captureAfterAnswer
+                captureWords={candidates.filter((candidate) =>
+                  `${seg.data.question} ${seg.data.options.join(' ')}`.includes(candidate.word))
+                  .map((candidate) => ({ ...candidate, context: candidate.contextSentence }))}
+                targetOptionIndices={seg.data.options.flatMap((option, index) =>
+                  lang === 'ja' ? /[\p{Script=Han}\p{Script=Hiragana}\p{Script=Katakana}]/u.test(option) ? [index] : []
+                    : lang === 'ru' ? /\p{Script=Cyrillic}/u.test(option) ? [index] : []
+                      : lang === 'ar' ? /\p{Script=Arabic}/u.test(option) ? [index] : []
+                        : [])}
+                onAnswer={handleQuizAnswer} />
             </div>
           )
         )}

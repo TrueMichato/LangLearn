@@ -31,6 +31,12 @@ npm run preview  # Preview the production build locally
 npm test
 ```
 
+## Contributing
+
+Read [AGENTS.md](./AGENTS.md) for development conventions and
+[knowledge-aware reading and practice](./docs/knowledge-practice.md) before
+changing vocabulary content, adaptive selection, coverage, or word capture.
+
 ## Deployment
 
 The app is deployed to **GitHub Pages** via a workflow in `.github/workflows/`.

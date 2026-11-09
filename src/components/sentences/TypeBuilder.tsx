@@ -2,6 +2,7 @@ import { useState, useRef, useEffect } from 'react';
 import type { PracticeSentence } from '../../data/sentences/ja-sentences';
 import { speak } from '../../lib/tts';
 import { rtlProps } from '../../lib/rtl';
+import PracticeWordCapture from '../common/PracticeWordCapture';
 
 interface TypeBuilderProps {
   sentence: PracticeSentence;
@@ -86,6 +87,7 @@ export default function TypeBuilder({ sentence, language, onResult }: TypeBuilde
       )}
 
       {/* Actions */}
+      {checked && <PracticeWordCapture language={language} text={sentence.target} context={sentence.target} source="sentence" />}
       <div className="flex justify-center gap-3">
         {!checked ? (
           <button

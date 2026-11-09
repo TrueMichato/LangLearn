@@ -244,7 +244,11 @@ describe('comprehensive curriculum composition', () => {
           );
           expect(parsed.kind).toBe('guided');
           if (parsed.kind === 'guided') {
-            expect(parsed.descriptor.session).toEqual(capability.session);
+            expect(parsed.descriptor.session).toEqual(node.session);
+            expect(parsed.descriptor.session.minItems).toBeGreaterThanOrEqual(capability.session.minItems);
+            expect(parsed.descriptor.session.maxItems).toBeLessThanOrEqual(capability.session.maxItems);
+            expect(parsed.descriptor.session.targetItems).toBeGreaterThanOrEqual(parsed.descriptor.session.minItems);
+            expect(parsed.descriptor.session.targetItems).toBeLessThanOrEqual(parsed.descriptor.session.maxItems);
             expect(parsed.descriptor.seed).toBe(
               `${language}/${(node as typeof node & { milestoneId: string }).milestoneId}`,
             );
@@ -448,9 +452,15 @@ describe('comprehensive curriculum composition', () => {
       (item): item is LearningPathActivityRef =>
         item.kind !== 'grammar' && item.kind !== 'vocab',
     );
-    expect(activities.every((item) => item.milestoneId.includes('after-core-'))).toBe(
-      true,
-    );
+    for (const item of activities) {
+      if (item.introducedIn === 2) {
+        expect(item.milestoneId).toMatch(/^[a-z-]+:foundation-(?:sounds|sentences)-after-(?:grammar|vocab)-[a-z0-9-]+-v2$/);
+        expect(item.prerequisites).toHaveLength(1);
+        expect(item.milestoneId).toContain(`-after-${item.prerequisites![0].replace(':', '-')}-v2`);
+      } else {
+        expect(item.milestoneId).toContain('after-core-');
+      }
+    }
     expect(new Set(activities.map((item) => item.milestoneId)).size).toBe(
       activities.length,
     );
