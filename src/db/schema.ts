@@ -3,6 +3,24 @@ import Dexie, { type EntityTable } from 'dexie';
 import { CURRENT_SCHEMA_VERSION, DB_NAME } from './constants';
 import type { LearningPathActivityKind } from '../types/learning-path';
 
+export interface LessonItemSource {
+  lessonId: string;
+  itemId: string;
+  provenance: 'authored' | 'legacy' | 'formatting' | 'custom';
+  sourceSection?: string;
+  legacyAliases?: Array<{ rule: string; example: string }>;
+}
+
+export interface LessonSourceSnapshot {
+  word: string;
+  reading: string;
+  meaning: string;
+  contextSentence: string;
+  grammarRule?: string;
+  grammarKind?: 'rule' | 'concept';
+  grammarFormat?: 'qa' | 'cloze';
+}
+
 export interface Word {
   id?: number;
   language: string;
@@ -15,6 +33,14 @@ export interface Word {
   type: 'word' | 'letter' | 'grammar';
   /** For grammar cards: the grammar rule/point, shown only on the answer side. */
   grammarRule?: string;
+  grammarKind?: 'rule' | 'concept';
+  grammarFormat?: 'qa' | 'cloze';
+  /** Grammar ownership and additive lexical lesson associations are non-indexed. */
+  lessonSource?: LessonItemSource;
+  lessonSources?: LessonItemSource[];
+  /** Last source-owned wording, used to detect edits made outside the lesson. */
+  lessonSourceSnapshot?: LessonSourceSnapshot;
+  learnerEdited?: boolean;
   createdAt: string;
 }
 

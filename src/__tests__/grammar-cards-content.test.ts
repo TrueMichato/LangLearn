@@ -3,9 +3,9 @@ import {
   buildGrammarCardFields,
   fillBlank,
   hasBlank,
-  parseAnswer,
   type GrammarCardSource,
 } from '../lib/grammar-cards';
+import { parseLessonReviewItems } from '../lib/lesson-capture';
 
 /**
  * Every `grammar-card` block shipped in the repository, checked through the real
@@ -93,11 +93,30 @@ describe('shipped grammar-card blocks', () => {
     expect(failures).toEqual([]);
   });
 
+  it('validate explicit metadata rather than treating malformed blocks as missing material', () => {
+    const failures = Object.entries(LESSONS).flatMap(([path, markdown]) =>
+      parseLessonReviewItems(markdown).diagnostics.map((diagnostic) => ({
+        source: path.split('/').slice(-2).join('/'),
+        ...diagnostic,
+      })),
+    );
+    expect(failures).toEqual([]);
+  });
+
+  it('preserve explicit question-answer prompts and answers verbatim', () => {
+    for (const block of BLOCKS.filter((b) => b.format === 'qa')) {
+      expect(buildGrammarCardFields(block), block.source).toMatchObject({
+        contextSentence: block.example,
+        word: block.answer,
+      });
+    }
+  });
+
   it('never leave a gloss in the answer token', () => {
     // `دَارِسٌ (dārisun) — student` substituted verbatim printed the English
     // translation into the middle of an Arabic sentence.
     const failures = BLOCKS.filter((b) =>
-      /\s[—–]\s/.test(parseAnswer(b.answer ?? '', b.example ?? '').token),
+      b.format !== 'qa' && /\s[—–]\s/.test(buildGrammarCardFields(b)?.word ?? ''),
     ).map((b) => `${b.source}: ${b.answer}`);
     expect(failures).toEqual([]);
   });
@@ -106,8 +125,8 @@ describe('shipped grammar-card blocks', () => {
     // A reveal identical to the prompt means the answer never reached the blank.
     const failures = BLOCKS.filter((b) => {
       const prompt = b.example ?? '';
-      if (!hasBlank(prompt)) return false;
-      const { token } = parseAnswer(b.answer ?? '', prompt);
+      if (b.format === 'qa' || !hasBlank(prompt)) return false;
+      const token = buildGrammarCardFields(b)?.word ?? '';
       return fillBlank(prompt, token) === prompt;
     }).map((b) => `${b.source}: ${b.example} / ${b.answer}`);
     expect(failures).toEqual([]);
@@ -121,14 +140,14 @@ describe('shipped grammar-card blocks', () => {
     // count, so they are not mistaken for the bug.
     const failures = BLOCKS.filter((b) => {
       const prompt = b.example ?? '';
-      if (!hasBlank(prompt)) return false;
+      if (b.format === 'qa' || !hasBlank(prompt)) return false;
       // No minimum stem length: the original Japanese failure had a one
       // character stem, and comparing against the prompt's own count already
       // tolerates a stem that legitimately recurs.
       const stem = prompt.split(/[_＿]{2,}/)[0].trim();
       if (!stem) return false;
       const probe = stem.slice(0, Math.min(6, stem.length));
-      const { token } = parseAnswer(b.answer ?? '', prompt);
+      const token = buildGrammarCardFields(b)?.word ?? '';
       return occurrences(fillBlank(prompt, token), probe) > occurrences(prompt, probe);
     }).map((b) => `${b.source}: ${b.example} / ${b.answer}`);
     expect(failures).toEqual([]);
@@ -137,8 +156,8 @@ describe('shipped grammar-card blocks', () => {
   it('leave no blank unfilled in the reveal', () => {
     const failures = BLOCKS.filter((b) => {
       const prompt = b.example ?? '';
-      if (!hasBlank(prompt)) return false;
-      const { token } = parseAnswer(b.answer ?? '', prompt);
+      if (b.format === 'qa' || !hasBlank(prompt)) return false;
+      const token = buildGrammarCardFields(b)?.word ?? '';
       return hasBlank(fillBlank(prompt, token));
     }).map((b) => `${b.source}: ${b.example} / ${b.answer}`);
     expect(failures).toEqual([]);
@@ -162,8 +181,8 @@ describe('shipped grammar-card blocks', () => {
     return counts;
   }
 
-  it('give every new card a blank to fill', () => {
-    const counts = countByLang(BLOCKS.filter((b) => !hasBlank(b.example ?? '')));
+  it('give cloze cards a blank while admitting validated explicit question-answer cards', () => {
+    const counts = countByLang(BLOCKS.filter((b) => b.format !== 'qa' && !hasBlank(b.example ?? '')));
     for (const [lang, count] of Object.entries(counts)) {
       expect(
         count,
@@ -173,7 +192,7 @@ describe('shipped grammar-card blocks', () => {
   });
 
   it('keep the gloss out of the raw answer field', () => {
-    const counts = countByLang(BLOCKS.filter((b) => /[—–]/.test(b.answer ?? '')));
+    const counts = countByLang(BLOCKS.filter((b) => b.format !== 'qa' && /[—–]/.test(b.answer ?? '')));
     for (const [lang, count] of Object.entries(counts)) {
       expect(
         count,

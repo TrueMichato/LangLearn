@@ -218,9 +218,9 @@ export default function OnboardingOverlay() {
       </h1>
       <div className="max-w-md space-y-3 text-slate-600 dark:text-slate-300">
         <p>
-          Words you choose to save become review cards. Finishing a vocabulary
-          lesson doesn't automatically save its words. The app schedules your
-          saved cards for practice over time.
+          Choose material from lessons to save as review cards. Finishing a
+          lesson doesn't automatically save review material. The app schedules
+          your saved cards for practice over time.
         </p>
         <p className="font-medium text-indigo-600 dark:text-indigo-400">
           Got one wrong? You'll simply see it again sooner. No penalties, ever.

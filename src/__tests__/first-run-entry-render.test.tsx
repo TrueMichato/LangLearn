@@ -65,7 +65,8 @@ describe('first-run handoff and current language', () => {
     expect(html).toContain('Starting language');
     expect(html).not.toContain('about two minutes');
     expect(html).not.toContain('Everything you learn turns into a review card');
-    expect(html).toContain('Words you choose to save become review cards');
+    expect(html).toContain('Choose material from lessons to save as review cards');
+    expect(html).toContain("lesson doesn&#x27;t automatically save review material");
     expect(html).toContain('Skip');
     const point = getStartingPoints('es')[0];
     controls.select!(point);
