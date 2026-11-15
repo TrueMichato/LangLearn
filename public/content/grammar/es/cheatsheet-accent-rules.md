@@ -17,11 +17,19 @@ Every Spanish word has one stressed syllable. The position of that syllable dete
 
 > 💡 Quick mnemonic: **n, s, vowel → llana default; other consonants → aguda default.** Anything that breaks the default needs a tilde.
 
+The n/s shortcut assumes that n or s is **not preceded by another consonant**. Words ending in a consonant cluster follow the other-consonant pattern: **robots** is aguda without a tilde, while **bíceps** is llana with one. Final **y** counts as a consonant for these rules.
+
+<!-- grammar-card: {"id":"aguda-accent-condition","kind":"concept","format":"qa","priority":"essential","sourceSection":"The Three Stress Rules","rule":"Agudas take a tilde with a vowel or single n/s ending","example":"When does an aguda, stressed on the last syllable, need a written tilde?","answer":"When it ends in a vowel, or in n or s not preceded by another consonant.","explanation":"Café, canción, and francés need tildes; ciudad and reloj do not. Final y and consonant clusters do not use the vowel/single-n/s condition."} -->
+
+<!-- grammar-card: {"id":"esdrujula-accent","kind":"concept","format":"qa","priority":"essential","sourceSection":"The Three Stress Rules","rule":"Esdrújulas always carry a tilde","example":"A word is stressed on its third-to-last syllable. Does its final letter decide whether it takes a tilde?","answer":"No. Esdrújulas always take a tilde.","explanation":"Pájaro, médico, and teléfono retain their tildes regardless of their final letters."} -->
+
+<!-- grammar-card: {"id":"sobreesdrujula-application","kind":"rule","format":"qa","priority":"optional","sourceSection":"The Three Stress Rules","rule":"Verb-plus-pronoun sobresdrújulas keep a written stress mark","example":"Add the required tilde to digamelo (tell it to me), stressed on dí.","answer":"dígamelo","explanation":"With stress before the third-to-last syllable, this verb-plus-pronoun form is sobresdrújula and takes a tilde."} -->
+
 <!-- quiz: {"type":"multiple-choice","question":"Why does 'lápiz' carry a written tilde?","options":["All -iz words have accents","It is a llana ending in a consonant other than n or s","It is an aguda","It is irregular and must be memorised"],"answer":1} -->
 
-## The Tilde Diacrítica — One-Letter Words That Change Meaning
+## The Tilde Diacrítica — Words That Change Meaning
 
-The **tilde diacrítica** distinguishes pairs of words that are spelled the same but play different grammatical roles. The accent is purely a written signal — pronunciation is identical.
+The **tilde diacrítica** distinguishes words with different meanings or grammatical roles. It often contrasts a stressed word with an unstressed one, such as **él** (he) and **el** (the); do not assume their spoken stress is identical.
 
 | Without tilde | Meaning | With tilde | Meaning |
 |---|---|---|---|
@@ -40,11 +48,19 @@ The **tilde diacrítica** distinguishes pairs of words that are spelled the same
 
 > 💡 Memorisation trick: the **stressed** member of each pair is the one with strong meaning (pronoun, question word, affirmation) — the one you'd "lean on" in spoken stress.
 
+<!-- vocab-card: {"id":"vocab-tu-possessive","word":"tu","meaning":"your (possessive)","priority":"optional","sourceSection":"The Tilde Diacrítica — Words That Change Meaning"} -->
+<!-- vocab-card: {"id":"vocab-tu-pronoun","word":"tú","meaning":"you (subject pronoun)","priority":"optional","sourceSection":"The Tilde Diacrítica — Words That Change Meaning"} -->
+<!-- vocab-card: {"id":"vocab-tea","word":"té","meaning":"tea","priority":"optional","sourceSection":"The Tilde Diacrítica — Words That Change Meaning"} -->
+
+<!-- grammar-card: {"id":"diacritic-tu-contrast","kind":"concept","format":"qa","priority":"essential","sourceSection":"The Tilde Diacrítica — Words That Change Meaning","rule":"Tilde diacrítica distinguishes grammatical roles","example":"What is the difference between tu and tú?","answer":"tu means your (possessive); tú means you (subject pronoun).","explanation":"This is a grammatical-role contrast, not an exception determined by the word's final vowel."} -->
+
+<!-- grammar-card: {"id":"diacritic-el-application","kind":"rule","format":"cloze","priority":"optional","sourceSection":"The Tilde Diacrítica — Words That Change Meaning","rule":"The subject pronoun él takes a tilde","example":"___ me lo explicó ayer. (He explained it to me yesterday.)","answer":"Él","explanation":"The subject pronoun él carries a tilde, unlike the article el. Sentence-initial capitalization does not remove it."} -->
+
 ## Hiatos vs Diptongos — When -ía and -ío Force a Tilde
 
 Two adjacent vowels in Spanish either form a **diptongo** (one syllable) or a **hiato** (two syllables). The dividing line determines tildes.
 
-- A **diptongo** combines a strong vowel (a, e, o) with a weak one (i, u), or two weak vowels — stress falls on the strong vowel and **no tilde is needed by default**:
+- A **diptongo** combines a strong vowel (a, e, o) with an **unstressed** weak one (i, u), in either order, or two different weak vowels. The word follows the **general accent rules**; a diptongo does not automatically mean “no tilde”:
   - **estu-dio** (es-TU-dyo) — diptongo *io* in one syllable
   - **a-gua** (A-gwa) — diptongo *ua*
   - **bue-no** (BWE-no) — diptongo *ue*
@@ -58,25 +74,42 @@ Two adjacent vowels in Spanish either form a **diptongo** (one syllable) or a **
 
 | Pattern | Result | Example |
 |---|---|---|
-| Strong + weak, stress on strong | Diptongo, no tilde | bai-le, cau-sa, vie-jo |
+| Strong + unstressed weak, in either order | Diptongo; apply general accent rules | bai-le, cau-sa, vie-jo; can-ción |
 | Strong + weak, stress on weak | Hiato, **tilde on weak vowel** | ma-íz, ba-úl, re-ír |
 | Two strong vowels | Hiato (always two syllables) | ca-er, le-ón, po-e-ta |
+
+<!-- vocab-card: {"id":"vocab-arbol","word":"árbol","meaning":"tree","priority":"essential","sourceSection":"The Three Stress Rules"} -->
+<!-- vocab-card: {"id":"vocab-lapiz","word":"lápiz","meaning":"pencil","priority":"optional","sourceSection":"The Three Stress Rules"} -->
+<!-- vocab-card: {"id":"vocab-pais","word":"país","meaning":"country","priority":"essential","sourceSection":"Hiatos vs Diptongos — When -ía and -ío Force a Tilde"} -->
+<!-- vocab-card: {"id":"vocab-dia","word":"día","meaning":"day","priority":"optional","sourceSection":"Hiatos vs Diptongos — When -ía and -ío Force a Tilde"} -->
+<!-- vocab-card: {"id":"vocab-vacio","word":"vacío","meaning":"empty","priority":"optional","sourceSection":"Hiatos vs Diptongos — When -ía and -ío Force a Tilde"} -->
+<!-- vocab-card: {"id":"vocab-baul","word":"baúl","meaning":"trunk (storage chest)","priority":"optional","sourceSection":"Hiatos vs Diptongos — When -ía and -ío Force a Tilde"} -->
+
+<!-- grammar-card: {"id":"hiatus-weak-vowel-condition","kind":"concept","format":"qa","priority":"essential","sourceSection":"Hiatos vs Diptongos — When -ía and -ío Force a Tilde","rule":"A stressed i/u next to an unstressed a/e/o requires a tilde","example":"What happens when a stressed i or u is next to an unstressed a, e, or o?","answer":"They form a hiato, and the stressed i or u takes a tilde even if the general accent rules would not require one.","explanation":"Día and María need the mark on í to show separate syllables and stress on the weak vowel."} -->
+
+<!-- grammar-card: {"id":"hiatus-pais-application","kind":"rule","format":"qa","priority":"essential","sourceSection":"Hiatos vs Diptongos — When -ía and -ío Force a Tilde","rule":"País marks a stressed weak vowel in hiatus","example":"Write the Spanish word for country with its required accent mark: pais.","answer":"país","explanation":"The stressed í next to a forms a hiato: pa-ís. The weak vowel therefore needs a tilde."} -->
+
+<!-- grammar-card: {"id":"diphthong-general-rules","kind":"concept","format":"qa","priority":"essential","sourceSection":"Hiatos vs Diptongos — When -ía and -ío Force a Tilde","rule":"Diptongos still follow the general accent rules","example":"Does having a diptongo mean a word can never carry a tilde? Use canción as a check.","answer":"No. Diptongos follow the general accent rules; canción takes a tilde because it is aguda and ends in n.","explanation":"The accent on the strong vowel ó does not split the ió diptongo. This differs from a stressed weak vowel in a hiato."} -->
 
 <!-- quiz: {"type":"multiple-choice","question":"Why does 'María' carry a tilde on the í?","options":["It marks a feminine name","To break the diptongo and create a hiato with stress on the weak vowel","Because it ends in -a","All names need tildes"],"answer":1} -->
 
 ## Modern RAE Rules: "sólo" and "este / ese / aquel"
 
-The Real Academia Española simplified two old accent rules in its 2010 *Ortografía*. Older books still use the obsolete accents, so it's worth recognising both forms.
+The Real Academia Española recommends writing **solo** and demonstratives without a tilde. Current guidance permits an optional tilde on adverbial **solo** and pronominal demonstratives only where the writer judges there is a risk of ambiguity. Without that risk, write them without a tilde. Older books use the marks more widely.
 
-- **sólo** vs **solo**: Historically, *sólo* (with tilde) meant "only" (adverb) and *solo* (no tilde) meant "alone" (adjective). Since 2010 the tilde is **optional** and is recommended only in cases of genuine ambiguity. RAE now prefers plain **solo** in all uses.
+- **sólo** vs **solo**: Historically, *sólo* (with tilde) marked "only" (adverb) and *solo* (no tilde) meant "alone" (adjective). Today, the adverb may take an optional tilde **only when there is a risk of ambiguity**. The adjective never takes it. RAE recommends plain **solo** in all uses.
   - *Vivo solo* — I live alone *(adjective)*
   - *Solo quiero un café* — I only want a coffee *(adverb)*
 
-- **Demonstrative pronouns (éste, ése, aquél, etc.)**: Historically, demonstratives took a tilde when used as pronouns (*éste es mío*) and no tilde when used as adjectives (*este libro*). Since 2010 the tilde is **optional** for pronoun use and **forbidden** when the demonstrative is an adjective.
+- **Demonstrative pronouns (éste, ése, aquél, etc.)**: Historically, demonstratives took a tilde in some pronoun uses (*éste es mío*) and no tilde when accompanying nouns (*este libro*). Today, an optional tilde is limited to **pronominal uses with a risk of ambiguity**; it is not allowed on a demonstrative accompanying a noun.
   - *Este libro es bueno* — adjective, never with tilde
-  - *Este / éste es bueno* — pronoun, modern RAE prefers no tilde
+  - *Este es bueno* — pronoun without ambiguity, no tilde
 
 > ⚠️ The neuter forms **esto, eso, aquello** **never** carry a tilde — they can only be pronouns and there is no ambiguity.
+
+<!-- grammar-card: {"id":"solo-ambiguity-qualification","kind":"concept","format":"qa","priority":"optional","sourceSection":"Modern RAE Rules: \"sólo\" and \"este / ese / aquel\"","rule":"An optional tilde on adverbial solo is limited to possible ambiguity","example":"Under current RAE guidance, is sólo an unrestricted alternative whenever solo means only?","answer":"No. An optional tilde is limited to adverbial solo where the writer judges a risk of ambiguity; writing solo without a tilde is recommended.","explanation":"Without ambiguity the adverb is written solo. Adjectival solo meaning alone never takes a tilde."} -->
+
+<!-- grammar-card: {"id":"demonstrative-ambiguity-qualification","kind":"concept","format":"qa","priority":"optional","sourceSection":"Modern RAE Rules: \"sólo\" and \"este / ese / aquel\"","rule":"Demonstrative tildes are limited to potentially ambiguous pronoun uses","example":"When may este, ese, or aquel optionally carry a tilde, and can esto ever take one?","answer":"Only in pronominal uses with a risk of ambiguity; not when accompanying a noun. Esto, eso, and aquello never take a tilde.","explanation":"Plain demonstratives are recommended. Merely being a pronoun does not make the tilde optional in every context."} -->
 
 ## Capital Letters Keep Their Tildes
 
@@ -89,6 +122,8 @@ A common myth claims that uppercase letters don't need accents. **RAE has been e
 
 The same applies to **ñ → Ñ**: the tilde is part of the letter itself, not optional.
 
+<!-- grammar-card: {"id":"uppercase-accent-application","kind":"rule","format":"qa","priority":"essential","sourceSection":"Capital Letters Keep Their Tildes","rule":"Capitalization does not remove required accent marks","example":"Write África entirely in capital letters, preserving correct spelling.","answer":"ÁFRICA","explanation":"Uppercase letters keep required tildes. The word is esdrújula, so ÁFRICA must retain its accent."} -->
+
 ## Mini-Dialogue
 
 > — ¿**Tú** sabes **cómo** se escribe "país"? *(too SAH-behs KOH-moh seh ehs-KREE-beh pah-EES)*
@@ -98,10 +133,12 @@ The same applies to **ñ → Ñ**: the tilde is part of the letter itself, not o
 >
 > **Translation:** — Do you know how to spell "país"? — Yes, it carries a tilde on the *i* because it's a hiatus. He explained it to me yesterday. — Ah, right. And I know capital letters also take tildes, don't they? — Exactly. "ÁFRICA" is spelled with a tilde, not "AFRICA".
 
-<!-- grammar-card: {"rule":"Words ending in vowel, n, or s are llanas by default — no tilde unless stress falls elsewhere","hint":"casa, comen, lunes have no tilde; árbol, lápiz do","example":"The word 'árbol' carries a tilde because it ends in ___ and is stressed on the first syllable.","answer":"l (a consonant other than n or s)","explanation":"'Árbol' is a llana (stressed on second-to-last syllable), but it ends in -l, which is not n, s, or a vowel. That breaks the default, so a written tilde is required. Compare 'casa' (ends in vowel) which keeps its llana stress without a written mark."} -->
+<!-- grammar-card: {"id":"llana-arbol-application","kind":"rule","format":"cloze","priority":"essential","sourceSection":"The Three Stress Rules","rule":"Words ending in vowel, n, or s are llanas by default — no tilde unless stress falls elsewhere","hint":"casa, comen, lunes have no tilde; árbol, lápiz do","example":"The word 'árbol' carries a tilde because it ends in ___ and is stressed on the first syllable.","answer":"l (a consonant other than n or s)","explanation":"'Árbol' is a llana (stressed on second-to-last syllable), but it ends in -l, which is not n, s, or a vowel. That breaks the default, so a written tilde is required. Compare 'casa' (ends in vowel) which keeps its llana stress without a written mark."} -->
 
 ## Sources
 
 - [RAE — Ortografía de la lengua española](https://www.rae.es/) — Official rules for tildes, including the 2010 reforms on *sólo* and demonstratives
+- [RAE — Tilde](https://www.rae.es/dpd/tilde) — Stress classes, diphthongs, hiatus, and consonant-cluster qualifications
+- [RAE — Solo and demonstratives](https://www.rae.es/espanol-al-dia/el-adverbio-solo-y-los-pronombres-demostrativos-sin-tilde) — Current ambiguity condition and recommendation to omit optional tildes
 - [SpanishDict — Accent Marks Guide](https://www.spanishdict.com/guide/spanish-accent-marks) — Practical examples and audio for all stress patterns
 - [Hispanoteca — Acentuación](http://hispanoteca.eu/) — Comparative analysis of Spanish orthography rules with hiato/diptongo charts

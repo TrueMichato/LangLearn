@@ -4,7 +4,11 @@ import {
   combineExplanation,
   fillBlank,
   hasBlank,
+  extractGrammarCardSources,
+  normalizeGrammarCardSource,
   parseAnswer,
+  parseGrammarCardSources,
+  stripGrammarCardSources,
   type GrammarCardSource,
 } from '../lib/grammar-cards';
 
@@ -49,6 +53,114 @@ describe('buildGrammarCardFields', () => {
 
   it('returns null when there is nothing to test', () => {
     expect(buildGrammarCardFields({ rule: 'r', explanation: 'e' })).toBeNull();
+  });
+
+  it('keeps an explicit Q&A answer verbatim rather than splitting English prose at a dash', () => {
+    const answer = '  No — Ц is not in the seven-letter set. (Compare огурцы.)  ';
+    const fields = buildGrammarCardFields({
+      rule: 'The seven-letter set excludes Ц',
+      example: 'Is огурцы an exception to the seven-letter rule?',
+      answer,
+      explanation: 'The rule applies to г, к, х, ж, ч, ш and щ.',
+      format: 'qa',
+    })!;
+    expect(fields.word).toBe(answer);
+    expect(fields.meaning).toBe('The rule applies to г, к, х, ж, ч, ш and щ.');
+  });
+});
+
+describe('grammar metadata compatibility and diagnostics', () => {
+  const legacy: GrammarCardSource = {
+    rule: 'Use は for the topic',
+    example: '私＿＿学生です。',
+    answer: '私は学生です。',
+    explanation: 'The topic particle is は.',
+  };
+  const explicit: GrammarCardSource = {
+    ...legacy,
+    id: 'topic-particle',
+    kind: 'rule',
+    format: 'cloze',
+    priority: 'essential',
+    sourceSection: 'Topic marking',
+    answer: 'は',
+  };
+  const block = (value: unknown) => `<!-- grammar-card: ${JSON.stringify(value)} -->`;
+
+  it('adapts old blocks without changing legacy token extraction or priority', () => {
+    const parsed = extractGrammarCardSources(block(legacy));
+    expect(parsed).toEqual([legacy]);
+    expect(normalizeGrammarCardSource(parsed[0])).toMatchObject({
+      kind: 'rule',
+      format: 'cloze',
+      provenance: 'legacy',
+      priority: 'optional',
+      prompt: legacy.example,
+      answer: 'は',
+    });
+  });
+
+  it('reads multiline metadata and preserves exact legacy aliases', () => {
+    const source = { ...explicit, legacyAliases: [{ rule: legacy.rule, example: legacy.example }] };
+    const markdown = `before\n<!-- grammar-card:\n${JSON.stringify(source, null, 2)}\n-->\nafter`;
+    const parsed = parseGrammarCardSources(markdown);
+    expect(parsed.diagnostics).toEqual([]);
+    expect(parsed.items).toEqual([source]);
+    expect(normalizeGrammarCardSource(parsed.items[0])).toMatchObject({
+      id: 'topic-particle',
+      provenance: 'authored',
+      priority: 'essential',
+      sourceSection: 'Topic marking',
+      legacyAliases: source.legacyAliases,
+    });
+    expect(stripGrammarCardSources(markdown)).toBe('before\n\nafter');
+  });
+
+  it('retains authored identity when a prompt and rule wording change', () => {
+    const original = normalizeGrammarCardSource(explicit)!;
+    const changed = normalizeGrammarCardSource({ ...explicit, example: '彼＿＿先生です。', rule: 'Updated wording' })!;
+    expect(changed.id).toBe(original.id);
+  });
+
+  it('rejects partial new metadata rather than treating it as a legacy card', () => {
+    const parsed = parseGrammarCardSources(`heading\n${block({ ...legacy, id: 'partial' })}`);
+    expect(parsed.items).toEqual([]);
+    expect(parsed.diagnostics).toEqual([
+      expect.objectContaining({ code: 'invalid-metadata', block: 'grammar-card', line: 2, itemId: 'partial' }),
+    ]);
+  });
+
+  it.each([
+    { ...explicit, format: 'cloze', example: 'No blank here' },
+    { ...explicit, kind: 'vocabulary' },
+    { ...explicit, id: 'Unstable ID' },
+    { ...explicit, legacyAliases: [{ rule: 'old', prompt: 'wrong field' }] },
+    { ...explicit, answer: '' },
+  ])('reports invalid explicit field shapes: %j', (source) => {
+    expect(parseGrammarCardSources(block(source))).toMatchObject({
+      items: [],
+      diagnostics: [expect.objectContaining({ code: 'invalid-metadata' })],
+    });
+  });
+
+  it('reports invalid JSON, wrong root shapes, missing colons and unclosed metadata', () => {
+    const markdown = [
+      '<!-- grammar-card: {bad json} -->',
+      '<!-- grammar-card: null -->',
+      '<!-- grammar-card {"id":"missing-colon"} -->',
+      '<!-- grammar-card: {"id":"unfinished"}',
+    ].join('\n');
+    expect(parseGrammarCardSources(markdown).diagnostics.map(({ code, line }) => ({ code, line }))).toEqual([
+      { code: 'invalid-json', line: 1 },
+      { code: 'invalid-metadata', line: 2 },
+      { code: 'invalid-metadata', line: 3 },
+      { code: 'unterminated-block', line: 4 },
+    ]);
+  });
+
+  it('ignores metadata demonstrations inside both Markdown fence styles', () => {
+    const markdown = ['```md', block(explicit), '```', '~~~', block(explicit), '~~~', block(legacy)].join('\n');
+    expect(parseGrammarCardSources(markdown)).toEqual({ items: [legacy], diagnostics: [] });
   });
 });
 

@@ -25,6 +25,135 @@ It reads only `words[].word`, never example sentences, grammar prose, or answers
 Missing target data produces an incomplete estimate, not an assertion of zero
 knowledge. Do not edit the generated `src/data/lesson-targets.json` by hand.
 
+### Grammar lesson review material
+
+Grammar completion and saving review material are separate decisions. Completing,
+leaving, reopening, or reloading a lesson does **not** automatically add its
+grammar cards. The completed-lesson picker previews **Words and phrases** and
+**Rules and concepts** before an explicit save. Unsaved authored essential items
+start selected; optional items and formatting-derived suggestions do not.
+Skipping is normal and never blocks progression or changes the quiz score.
+Previously completed lessons expose the picker without a quiz retake.
+
+The shared capture tools work in all six lesson languages. Visible prose
+vocabulary remains saveable before completion; quiz capture appears only after
+that quiz is answered. The full authored rule/concept picker is available after
+completion, not as a list of hidden answers during a fresh attempt. Learners can
+also save additional words/phrases or compose their own rule/concept questions.
+Manual entry works without a dictionary or an AI service. Selected visible text
+is only a draft: the learner supplies and confirms a useful prompt and answer.
+Do not mine incorrect quiz alternatives or infer vocabulary from English rule
+prose.
+
+#### Authoring contract
+
+Place valid JSON inside single-line HTML comments near the relevant teaching
+section. These comments are review metadata, not visible lesson prose. Continue
+to explain the material in the lesson itself.
+
+```html
+<!-- vocab-card: {"id":"vocab-kniga","word":"кни́га","reading":"kníga","meaning":"book","priority":"essential","sourceSection":"1. The 7-Letter Rule"} -->
+
+<!-- grammar-card: {"id":"seven-letter-plural","kind":"rule","format":"cloze","priority":"essential","sourceSection":"1. The 7-Letter Rule","rule":"After the seven consonants write и instead of ы","example":"Хоро́шие ___ лежа́т на по́лке.","answer":"кни́ги","explanation":"The stem ends in г, so the plural is кни́ги."} -->
+
+<!-- grammar-card: {"id":"seven-letter-scope","kind":"concept","format":"qa","priority":"essential","sourceSection":"1. The 7-Letter Rule","rule":"The seven-letter set excludes ц","example":"Is ц one of the seven consonants that require и instead of ы?","answer":"No. The set is к, г, х, ж, ш, щ, ч.","explanation":"Огурцы́ does not violate a rule whose consonant set never included ц."} -->
+```
+
+- Every maintained item needs an `id`, `priority` (`essential` or `optional`),
+  and nonempty `sourceSection`. IDs use lowercase letters/digits separated by
+  `-`, `_`, or `.` and must be unique **across both block types in one lesson**.
+  Keep an ID stable when wording changes; do not generate it from the answer,
+  position, or current prompt. `sourceSection` names a real instructional section,
+  not a new identity.
+- `vocab-card` requires `word` and `meaning`; `reading` and `contextSentence`
+  are optional. Supply a genuine target-language context, not a gloss that gives
+  away the meaning on the front. Keep dictionary vocabulary separate from
+  suffixes and paradigms: **ти́хий = quiet** is lexical; choosing **-ий** after
+  х is an application task. Inflected examples are not all essential vocabulary.
+- `grammar-card` additionally requires `kind` (`rule` for application, `concept`
+  for conceptual recall), `format` (`qa` or `cloze`), `rule`, `example`, `answer`,
+  and `explanation`. `hint` is optional. The historical field `example` is the
+  **question/prompt**, including for Q&A. Ask one focused recall task per item.
+  The rule should state the actual condition, not merely repeat the lesson title.
+- A `cloze` prompt contains `___` or `＿＿`. Put only what belongs in the blank
+  in `answer`, with transliteration, glosses, and qualifications in the reading,
+  hint, or explanation where appropriate. A `qa` prompt asks a question and
+  reveals the full answer separately. Explicit answers are kept **verbatim**,
+  including English conceptual answers; they do not pass through the legacy
+  answer-token/gloss extraction heuristic.
+- Preserve Russian stress, Arabic vocalization and case where taught, Japanese
+  readings and exceptions, meaningful Latin diacritics, and variety/register
+  qualifications. A Form I Arabic example is not a universal maṣdar formula;
+  Brazilian progressive preferences are not a ban on European gerunds.
+- Mark the small set of central lexical targets, applications, and concepts
+  essential. Additional examples can reinforce the same objective as optional
+  items. Essential means *suggested for selection*, not already learned or
+  mandatory to save. Explicit vocabulary takes precedence over a formatting
+  candidate with the same NFC word; conservative list/table suggestions remain
+  optional. Do not broaden parsing to treat arbitrary prose as vocabulary.
+- Check prose mnemonics and memory aids as well as examples. When useful, author
+  an optional concept Q&A with the cue, its meaning, and the precise mapping to
+  the rule, including any skipped connective words. Do not auto-convert prose or
+  duplicate the essential rule-recall task.
+- Legacy `grammar-card` blocks without this metadata remain supported and
+  optional. When upgrading an existing block, keep its exact old `rule` and
+  `example` strings whenever possible. If either must change, retain the exact
+  previous pair in `legacyAliases`, for example
+  `"legacyAliases":[{"rule":"old rule","example":"old prompt"}]`.
+  This permits in-place adoption without resetting the existing review.
+  Do not fuzzy-match unrelated questions that happen to share an answer.
+
+`parseLessonReviewItems()` in `src/lib/lesson-capture.ts` returns both normalized
+`items` and `diagnostics`. Malformed JSON, incomplete explicit metadata, and
+duplicate IDs are errors, not an empty lesson. Consumers must surface failures
+honestly rather than silently dropping material. Rule/concept cards use the
+existing grammar card type and normal scheduled Review; words use lexical cards.
+Authored identity is language + lesson + stable item ID, not answer text. Personal
+cards have a separate local identity and are not source-owned content.
+
+Saving is additive and transactional with initial reviews. Repeated saves reuse
+existing cards; unchecked items are not deleted. A grammar answer must not mark
+an unsaved lexical word as saved, and distinct questions with the same answer
+must remain distinct. Adoption and wording repairs preserve schedules and review
+history, and must not overwrite learner edits. Use **full backup/recovery** to
+preserve these identities and associations. Portable Deck v1 is not a faithful
+backup format for grammar cards.
+
+#### Pilot coverage and focused gates
+
+This is a manually reviewed six-lesson pilot, not a completeness audit of all
+555 grammar lessons. Shared tools cover all six languages immediately; authored
+coverage is staged by missing useful teaching points, not by whether a lesson
+already contains a card.
+
+| Pilot lesson | Named teaching units |
+| --- | --- |
+| `ru/spelling-rules` | `seven-letter-scope` and `seven-letter-plural`; `five-letter-stress-condition` with separate stressed/unstressed applications; `ts-u-application` and `ts-rule-exceptions`; lexical `vocab-kniga`, `vocab-rubashka`, `vocab-lampa`, `vocab-tikhiy`, plus optional glossed verbs |
+| `ja/taekim-verb-classification` | `classification-heuristic`, ichidan/godan applications, deceptive る-verbs, irregular verbs and する compounds; explicit meanings/readings including `vocab-nomu` and `vocab-oyogu` |
+| `es/cheatsheet-accent-rules` | Stress classes beyond `llana-arbol-application`, diacritic contrasts, hiatus/diphthong conditions, capital accents, and qualified current RAE guidance |
+| `pt/gerund-progressive` | `gerund-endings` versus present/past applications, exceptional `pondo`, `gerund-versus-progressive`, variety/register contrasts, optional auxiliary meanings |
+| `ro/cognates-false-friends` | Cognate spelling as a tendency, lexical false friends, `librarie-biblioteca-contrast`, actual/real and personality contrasts |
+| `ar/masdar` | Individually learned vocalized lexical maṣdars, action-noun usage, `form-one-dirasah-application` versus `form-one-not-predictable`, optional derived-form examples |
+
+`src/__tests__/lesson-retention-content.test.ts` reads the real six lesson files
+through the canonical parser and checks named IDs, exact prompts/answers,
+kinds/formats, lexical meanings/readings, and essential/optional treatment.
+The general grammar-card and quiz content gates still apply; only validated
+explicit Q&A is exempt from legacy cloze-only constraints. Counts cannot prove
+semantic completeness. Review the teaching inventory and its fixtures together
+when editing a pilot, and run:
+
+```sh
+npm test -- src/__tests__/lesson-retention-content.test.ts src/__tests__/grammar-cards-content.test.ts src/__tests__/grammar-quiz-content.test.ts
+```
+
+Changing grammar metadata alone does **not** require regenerating vocabulary
+lesson targets. Saving grammar material, completing a grammar lesson, or selecting
+an essential item does not add familiar-vocabulary evidence. A lexical save
+becomes available for review but still needs the existing evidence rules above.
+This feature makes material reviewable; it is not measured proof of better
+long-term human retention.
+
 ## Coverage is vocabulary, not comprehension
 
 Reader and full song lyrics count both familiar **word occurrences** and
@@ -75,9 +204,11 @@ lemmatization, synonym inference, or AI-generated exercise content is provided.
 - Vocabulary/grammar lessons retain authored exercise sequence. Vocabulary
   capture is offered at the completed-lesson summary. Embedded grammar quizzes
   offer it after reveal, using explicit lesson vocabulary or recognizable
-  target-script options. English rule prose is not guessed into vocabulary;
-  Latin-script grammar content without explicit lexical metadata may therefore
-  have no capture candidates.
+  target-script options. Grammar completion offers the opt-in review-material
+  picker described above instead of automatically saving authored cards.
+  English rule prose is not guessed into vocabulary; Latin-script grammar
+  content without explicit lexical metadata may therefore have no capture
+  candidates.
 - **Proficiency tests and lesson test-outs are not adaptive.** Generation,
   distribution, scoring, timing, and test-out's no-XP policy are unchanged.
   Capture is offered only on final results. Assessment capture recognizes
