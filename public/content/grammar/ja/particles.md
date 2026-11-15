@@ -1,5 +1,7 @@
 # Basic Particles (は、が、を、に、で)
 
+<!-- vocab-inventory: {"mode":"explicit"} -->
+
 Particles are small words that follow nouns and other elements to indicate their grammatical role in a sentence. They are the backbone of Japanese grammar — mastering them is essential for constructing natural sentences.
 
 ## は (wa) — Topic Marker
@@ -11,6 +13,10 @@ The particle **は** marks the **topic** of a sentence — what you are talking 
 
 Think of は as saying "As for X, ..."
 
+<!-- vocab-card: {"id":"vocab-gakusei","word":"学生","reading":"がくせい","meaning":"student","priority":"optional","sourceSection":"は (wa) — Topic Marker"} -->
+<!-- grammar-card: {"id":"topic-marker","kind":"rule","format":"cloze","priority":"essential","sourceSection":"は (wa) — Topic Marker","rule":"は (topic marker)","hint":"Mark the topic of a sentence","example":"私＿＿学生です。","answer":"は","explanation":"は marks the topic: as for me, I am a student. The particle is written は but pronounced わ (wa)."} -->
+<!-- grammar-card: {"id":"topic-reading-cue","kind":"concept","format":"qa","priority":"optional","sourceSection":"は (wa) — Topic Marker","rule":"The cue As for X identifies the topic, not necessarily the grammatical subject","example":"What does the cue “As for X, …” help you remember about は?","answer":"は sets X as the topic of discussion, not necessarily as the grammatical subject.","explanation":"The cue introduces what the sentence is about. The particle is written は but pronounced わ (wa)."} -->
+
 ## が (ga) — Subject Marker
 
 The particle **が** marks the **subject** — specifically who or what performs the action or has the quality. It often introduces new information or emphasis.
@@ -20,6 +26,10 @@ The particle **が** marks the **subject** — specifically who or what performs
 
 **は vs が:** Use は for known/contrasted topics, and が for new information or emphasis.
 
+<!-- vocab-card: {"id":"vocab-neko","word":"猫","reading":"ねこ","meaning":"cat","priority":"optional","sourceSection":"が (ga) — Subject Marker"} -->
+<!-- grammar-card: {"id":"subject-marker","kind":"rule","format":"cloze","priority":"essential","sourceSection":"が (ga) — Subject Marker","rule":"が (subject marker)","hint":"Introduce the presence of a cat","example":"猫＿＿います。","answer":"が","explanation":"が introduces 猫 as the subject of います, presenting its presence as new information."} -->
+<!-- grammar-card: {"id":"topic-subject-contrast","kind":"concept","format":"qa","priority":"essential","sourceSection":"が (ga) — Subject Marker","rule":"は frames a topic while が identifies a subject","example":"Why does 誰が来ましたか use が rather than treating 誰 as an established topic?","answer":"It asks which person is the subject who came; that identity is new information, not an established topic.","explanation":"は often frames known or contrasted topics. が identifies the subject, including the unknown person in this question."} -->
+
 ## を (wo/o) — Direct Object Marker
 
 The particle **を** marks the **direct object** — the thing being acted upon.
@@ -27,11 +37,11 @@ The particle **を** marks the **direct object** — the thing being acted upon.
 - **水を飲みます。** (Mizu o nomimasu.) — I drink water.
 - **本を読みます。** (Hon o yomimasu.) — I read a book.
 
+<!-- vocab-card: {"id":"vocab-mizu","word":"水","reading":"みず","meaning":"water","priority":"optional","sourceSection":"を (wo/o) — Direct Object Marker"} -->
+<!-- vocab-card: {"id":"vocab-hon","word":"本","reading":"ほん","meaning":"book","priority":"optional","sourceSection":"を (wo/o) — Direct Object Marker"} -->
+<!-- grammar-card: {"id":"object-marker","kind":"rule","format":"cloze","priority":"essential","sourceSection":"を (wo/o) — Direct Object Marker","rule":"を (direct object marker)","hint":"Mark what is being acted upon","example":"水＿＿飲みます。","answer":"を","explanation":"Water is what is drunk, so 水 takes the direct-object particle を, usually pronounced お (o)."} -->
+
 <!-- quiz:{"type":"multiple-choice","question":"Which particle marks the direct object?","options":["は","が","を","に"],"answer":2} -->
-
-<!-- grammar-card: {"rule":"は (topic marker)","hint":"Mark the topic of a sentence","example":"私＿＿学生です。","answer":"は","explanation":"は marks the topic — what you're talking about. Think of it as 'As for X, …'. Written は but pronounced 'wa'."} -->
-
-<!-- grammar-card: {"rule":"が (subject marker)","hint":"Mark the subject or introduce new information","example":"猫＿＿います。","answer":"が","explanation":"が marks the subject, especially for new information or emphasis. Use は for known topics, が for new subjects."} -->
 
 ## に (ni) — Direction / Target / Time
 
@@ -41,6 +51,11 @@ The particle **に** has several uses: indicating direction, target of an action
 - **友達にあげます。** (Tomodachi ni agemasu.) — I give it to a friend. *(target)*
 - **三時に起きます。** (San-ji ni okimasu.) — I wake up at 3 o'clock. *(time)*
 
+<!-- grammar-card: {"id":"ni-destination","kind":"rule","format":"cloze","priority":"essential","sourceSection":"に (ni) — Direction / Target / Time","rule":"に marks a destination with 行く","example":"学校___行きます。 (Use the target/destination particle taught here.)","answer":"に","explanation":"学校に identifies school as the destination of going. へ can also mark direction, but is not the target particle practiced in this section."} -->
+<!-- grammar-card: {"id":"ni-recipient","kind":"rule","format":"cloze","priority":"optional","sourceSection":"に (ni) — Direction / Target / Time","rule":"に marks the recipient of あげる","example":"友達___あげます。 (I give it to a friend.)","answer":"に","explanation":"友達に marks the friend as the target or recipient, not the thing given."} -->
+<!-- grammar-card: {"id":"ni-time","kind":"rule","format":"cloze","priority":"essential","sourceSection":"に (ni) — Direction / Target / Time","rule":"に marks a specific clock time","example":"三時___起きます。","answer":"に","explanation":"三時 is a specific clock time, so に marks when waking occurs."} -->
+<!-- grammar-card: {"id":"ni-existence","kind":"rule","format":"cloze","priority":"essential","sourceSection":"に (ni) — Direction / Target / Time","rule":"に marks the location of existence","example":"学校___猫がいます。 (A cat is at school.)","answer":"に","explanation":"The cat exists at school. Existence uses に, unlike studying at a location with で."} -->
+
 ## で (de) — Location of Action / Means
 
 The particle **で** indicates where an action takes place or the means by which something is done.
@@ -48,11 +63,11 @@ The particle **で** indicates where an action takes place or the means by which
 - **図書館で勉強します。** (Toshokan de benkyō shimasu.) — I study at the library. *(location)*
 - **バスで行きます。** (Basu de ikimasu.) — I go by bus. *(means)*
 
+<!-- grammar-card: {"id":"action-location","kind":"rule","format":"cloze","priority":"essential","sourceSection":"で (de) — Location of Action / Means","rule":"で (location/means marker)","hint":"Indicate where studying happens","example":"図書館＿＿勉強します。","answer":"で","explanation":"で marks the library as the place where the action of studying takes place."} -->
+<!-- grammar-card: {"id":"de-means","kind":"rule","format":"cloze","priority":"optional","sourceSection":"で (de) — Location of Action / Means","rule":"で marks a means of transport","example":"バス___行きます。 (I go by bus.)","answer":"で","explanation":"バスで identifies the means used to travel, not the destination."} -->
+<!-- vocab-card: {"id":"vocab-toshokan","word":"図書館","reading":"としょかん","meaning":"library","priority":"optional","sourceSection":"で (de) — Location of Action / Means"} -->
+
 <!-- quiz:{"type":"multiple-choice","question":"'図書館で勉強します' — what does で indicate here?","options":["Direction","Direct object","Location of action","Time"],"answer":2} -->
-
-<!-- grammar-card: {"rule":"を (direct object marker)","hint":"Mark what is being acted upon","example":"水＿＿飲みます。","answer":"を","explanation":"を marks the direct object of a verb — the thing being acted upon. E.g. 本を読みます (I read a book)."} -->
-
-<!-- grammar-card: {"rule":"で (location/means marker)","hint":"Indicate where an action happens or means used","example":"図書館＿＿勉強します。","answer":"で","explanation":"で indicates the location of an action or means by which something is done. E.g. バスで行きます (go by bus)."} -->
 
 ## Summary
 

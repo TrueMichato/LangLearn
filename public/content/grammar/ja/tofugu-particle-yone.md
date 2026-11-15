@@ -1,5 +1,7 @@
 # よね (yone) — Seeking Agreement
 
+<!-- vocab-inventory: {"mode":"explicit"} -->
+
 > **Source:** Content from [Tofugu](https://www.tofugu.com/japanese-grammar/particle-yone/). For personal study.
 
 Particle よね
@@ -17,6 +19,9 @@ Particle
 よね is a sentence-ending particle that adds a certain nuance to the entire sentence. It's a combination of the particles よ and ね and carries both of their nuances. That is, よ indicates that you believe you're providing new information, and ね suggests you think you are probably on the same page as your listener. So the meaning of よね falls somewhere in between the two, and it's mainly used for confirmation when you're pretty sure, but not certain, that the listener agrees.
 
 ### Conceptualizing よね
+
+<!-- grammar-card: {"id":"confirmation-leeway","kind":"concept","format":"qa","priority":"essential","sourceSection":"Conceptualizing よね","rule":"よね combines an offered view with a check for shared understanding","example":"Compared with ね alone, what room does よね usually leave when checking information?","answer":"It leaves more room for the listener to correct or disagree with the speaker's expectation.","explanation":"The speaker generally expects agreement but does not present it as completely settled. This is a conversational stance, not a measurable level of certainty."} -->
+<!-- grammar-card: {"id":"shared-observation-comparison","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Conceptualizing よね","rule":"ね presents an observation as shared without よ's added informative stance","hint":"Use the single agreement particle for a shared observation.","example":"今日(きょう)は暑(あつ)いです___。","answer":"ね","explanation":"ね shares the observation. よね could also be natural when the speaker actively checks agreement; the original sentence does not make other particles ungrammatical.","legacyAliases":[{"rule":"ね on its own seeks agreement without asserting anything","example":"今日(きょう)は暑(あつ)いです___。"}]} -->
 
 Take a look at this image. Here you can see two people, the speaker and the listener. There's also a speech bubble with よね inside of it, which represents a statement ending in よね. In the speech bubble, the よ has no background pattern, just like the speaker, whereas the ね has the same pattern as the listener. Both people are extending their hands towards the speech bubble, indicating they probably share the same knowledge about the information.
 
@@ -41,6 +46,9 @@ Thus, よね is a communication tool between the speaker and the listener. The s
 ### Patterns of Use
 
 #### よね at the End of Sentences
+
+<!-- grammar-card: {"id":"noun-neutral-ending","kind":"rule","format":"cloze","priority":"essential","sourceSection":"よね at the End of Sentences","rule":"A noun or な-adjective commonly takes だ before よね in neutral casual speech","hint":"Supply the casual copula.","example":"しずか___よね。","answer":"だ","explanation":"しずかですよね is polite. Bare しずかよね can sound traditionally feminine in some styles; this does not restrict its use to a particular gender."} -->
+<!-- grammar-card: {"id":"standalone-agreement","kind":"concept","format":"qa","priority":"optional","sourceSection":"よね at the End of Sentences","rule":"だよね or ですよね can acknowledge a preceding assertion on its own","example":"After そうだよ confirms tomorrow's exam, what can a standalone だよね do?","answer":"It acknowledges or agrees with the confirmation, much like right, that's what I thought.","explanation":"The preceding exchange supplies the omitted content. ですよね gives the response a polite form."} -->
 
 We've seen how よね is used at the end of a sentence. A Japanese sentence can even consist of just one word with よね tacked on when the meaning is clear from context.
 
@@ -102,6 +110,10 @@ You: Right, right. Oh, what should I do…
 
 ### よね for Confirmation
 
+<!-- grammar-card: {"id":"meeting-confirmation-application","kind":"rule","format":"cloze","priority":"essential","sourceSection":"よね for Confirmation","rule":"よね states something while checking that it is right","hint":"You think the meeting starts at three but want to double-check.","example":"明日(あした)の会議(かいぎ)、三時(さんじ)からです___。","answer":"よね","explanation":"The combined particle offers the speaker's understanding while inviting confirmation or correction."} -->
+<!-- grammar-card: {"id":"known-answer-small-talk","kind":"concept","format":"qa","priority":"optional","sourceSection":"よね for Confirmation","rule":"A confirmation frame can open a conversation even when the answer is known","example":"Can 最近日本語の勉強始めたんだよね？ be natural if the friend already told the speaker about starting Japanese?","answer":"Yes. It can reopen the shared topic and invite further discussion rather than reveal actual ignorance.","explanation":"The form leaves space for a reply. よね does not logically entail that the speaker doubts the information."} -->
+<!-- vocab-card: {"id":"vocab-saishin","word":"最新","reading":"さいしん","meaning":"latest; most recent","priority":"optional","sourceSection":"よね for Confirmation"} -->
+
 As mentioned, the most common use of よね is to confirm something with your listener while also implying your lack of total certainty. One of the most common scenarios for this is when you want to make sure that your knowledge is accurate or your understanding of something is the same as your listener's.
 
 For example, let's imagine that you and your friend are chatting in the school cafeteria. You want to talk about the latest episode of the Tofugu podcast, which you're both big fans of. You're pretty sure your friend has already listened to it, but to be sure, you ask:
@@ -123,6 +135,11 @@ This gesture of double-checking is a good device to begin small talk, as よね 
 In other words, よね is commonly used after an icebreaker question. It's similar to what we do in English, like you may say, "beautiful day, isn't it?" to start talking about the weather.
 
 ### よね for Seeking Agreement
+
+<!-- grammar-card: {"id":"opinion-particle-contrast","kind":"concept","format":"qa","priority":"essential","sourceSection":"よね for Seeking Agreement","rule":"よ, ね, and よね frame an opinion differently","example":"How does 漢字が難しいよね differ in stance from the versions ending in only よ or only ね?","answer":"よ offers the speaker's view; ね presents it as shared; よね offers it while seeking the listener's agreement.","explanation":"The same factual proposition remains. よね can seek sympathy without guaranteeing that the listener actually agrees."} -->
+<!-- grammar-card: {"id":"request-can-strengthen","kind":"concept","format":"qa","priority":"essential","sourceSection":"よね for Seeking Agreement","rule":"よね after a request can reinforce the expectation of compliance","example":"Does 誰にも言わないでよね necessarily sound softer than the same request without final particles?","answer":"No. It can sound stronger by emphasizing both the request and the expectation of agreement.","explanation":"Its apparent togetherness can be insistent. Tone and relationship matter; the combination is not an automatic politeness device."} -->
+<!-- grammar-card: {"id":"harsh-prohibition-restriction","kind":"concept","format":"qa","priority":"essential","sourceSection":"よね for Seeking Agreement","rule":"The harsh prohibition 言うな does not normally take agreement-seeking ね or よね","example":"Which ending fits the strong prohibition here: 言うなよ, 言うなね, or 言うなよね?","answer":"言うなよ is the ordinary option among these.","explanation":"The bare-verb-plus-な prohibition clashes with the shared-agreement stance in the other two. The softer 言わないで request is a different construction."} -->
+<!-- vocab-card: {"id":"vocab-kanji","word":"漢字","reading":"かんじ","meaning":"kanji; Chinese characters used in Japanese","priority":"optional","sourceSection":"よね for Seeking Agreement"} -->
 
 This is very similar to confirmation, but you can also use よね for seeking agreement. In this case, よね suggests that you're stating your own thoughts or opinions and hoping your listener will be on the same side as you.
 
@@ -157,6 +174,10 @@ It's also noteworthy that you can add neither ね nor よね to strong orders, a
 If you'd like to learn more about the differences between よ, ね, and よね, check out our article: よ and ね: What Do These Particles Really Mean to Japanese Speakers?
 
 ### よね for Showing Agreement
+
+<!-- grammar-card: {"id":"emphatic-empathy","kind":"concept","format":"qa","priority":"optional","sourceSection":"よね for Showing Agreement","rule":"Repeating a view with よね can actively show agreement or empathy","example":"What can そうだよね。難しいよね add when a friend says kanji is difficult?","answer":"It explicitly aligns the speaker's own view with the friend's and can show empathy.","explanation":"ね alone can also agree. よ adds an active expression of the responder's stance; empathy can be genuine or a conversational gesture."} -->
+<!-- grammar-card: {"id":"reminder-shared-memory","kind":"concept","format":"qa","priority":"optional","sourceSection":"よね for Showing Agreement","rule":"よね can remind a listener of something the speaker remembers","example":"Why can the speaker say さっきカバンの中に入れたよね when the friend is unsure where the laptop is?","answer":"The speaker offers their memory while inviting the friend to recognize the same event.","explanation":"よ contributes the reminder and ね seeks alignment. Agreement use is not limited to matching emotional opinions."} -->
+<!-- vocab-card: {"id":"vocab-tashika","word":"確か","reading":"たしか","meaning":"if I remember correctly; fairly sure (adverbial use)","priority":"optional","sourceSection":"よね for Showing Agreement"} -->
 
 If someone says something to you and you want to show agreement, you can repeat whatever they said and add よね to the end. For example, when you shared with your friend that learning kanji is difficult, your friend could agree with you by saying:
 
@@ -253,10 +274,6 @@ by Yasuko Goto
 <!-- quiz: {"type":"multiple-choice","question":"What does \"あ、雨が降ってるよね。\" mean?","options":["Oh, it's raining, right?","Oh, it's raining.","You'll eat it, right?","It's hot, isn't it?"],"answer":0} -->
 
 <!-- quiz: {"type":"multiple-choice","question":"What does \"食べるよね。\" mean?","options":["You'll eat it, right?","Oh, it's raining.","Oh, it's raining, right?","It's hot, isn't it?"],"answer":0} -->
-
-<!-- grammar-card: {"rule":"ね on its own seeks agreement without asserting anything","hint":"よね / ね","example":"今日(きょう)は暑(あつ)いです___。","answer":"ね","explanation":"ね shares an obvious observation, where よね would add a claim the listener might not share."} -->
-
-<!-- grammar-card: {"rule":"よね states something while checking that it is right","hint":"よ + ね","example":"明日(あした)の会議(かいぎ)、三時(さんじ)からです___。","answer":"よね","explanation":"よね combines telling and confirming — the speaker is fairly sure but wants agreement."} -->
 
 ## Sources
 

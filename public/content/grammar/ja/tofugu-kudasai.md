@@ -1,5 +1,7 @@
 # ください — Please
 
+<!-- vocab-inventory: {"mode":"explicit"} -->
+
 > **Source:** Content from [Tofugu](https://www.tofugu.com/japanese-grammar/kudasai/). For personal study.
 
 ください for Making Requests
@@ -10,9 +12,13 @@
 
 Phrase
 
-ください indicates a direct request while paying respect to the speaker. By adding it to a verb in its て form, you can request that someone do something.
+ください indicates a direct request while paying respect to the listener. By adding it to a verb in its て form, you can request that someone do something.
 
 ## The Basics
+
+<!-- grammar-card: {"id":"favor-question","kind":"rule","format":"cloze","priority":"essential","sourceSection":"The Basics","rule":"てもらえませんか is softer than てください","example":"もう少しゆっくり話して___？","answer":"もらえませんか","explanation":"The negative potential question asks whether you can receive a favor rather than directly instructing the listener."} -->
+<!-- grammar-card: {"id":"direct-request","kind":"rule","format":"cloze","priority":"essential","sourceSection":"The Basics","rule":"The て-form plus ください makes a polite request","example":"もう少しゆっくり話して___。","answer":"ください","explanation":"話してください asks the listener directly but politely to speak more slowly."} -->
+<!-- grammar-card: {"id":"polite-not-indirect","kind":"concept","format":"qa","priority":"essential","sourceSection":"The Basics","rule":"Respectful directness is not the same as a tentative favor request","example":"Why might a polite instruction still feel too direct when asking someone to slow their speech for you?","answer":"It tells the listener what to do; a question about receiving the favor gives them more room to decline.","explanation":"ください respects the listener but does not automatically make a request indirect or establish social rank."} -->
 
 ください is an honorific expression used to indicate a request. It sounds direct but polite, like "please" in English, so you can use it to ask for all sorts of things.
 
@@ -60,6 +66,8 @@ Here, using 〜てください sounds like you're giving instructions even thoug
 
 #### Noun + を + ください
 
+<!-- grammar-card: {"id":"noun-request","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Noun + を + ください","rule":"An object request can use noun を ください","example":"Ask for apples using the object particle: りんご___ください。","answer":"を","explanation":"を marks the requested thing and is often omitted in conversation. This lexical giving use may also be written 下さい."} -->
+
 As mentioned in the beginning, ください can be used to ask for something, as in:
 
   - りんごを**ください**。
@@ -69,6 +77,8 @@ As mentioned in the beginning, ください can be used to ask for something, as
 Note that this use of ください can also be written in kanji, as in 下さい, though the kana version is still common, and を is commonly omitted in spoken language unless you want to underline *what* you're getting.
 
 #### Quantity + ください
+
+<!-- grammar-card: {"id":"quantity-request","kind":"concept","format":"qa","priority":"optional","sourceSection":"Quantity + ください","rule":"A quantity can directly precede ください","example":"Why does 三つください not need を immediately after 三つ?","answer":"The omitted object takes を; the quantity follows that object, as in りんごを三つください.","explanation":"A number plus counter specifies how much is requested, rather than being an object requiring its own を here."} -->
 
 ください can also follow a quantity of something, as in:
 
@@ -85,6 +95,9 @@ In this case, you don't need the particle を between the quantity and くださ
 Note that in Japanese, quantities are usually a combination of a number and a counter, such as 〜つ. If you're not familiar with counters and want to learn about them, check out our counter guide!
 
 #### Verb て-form  + ください
+
+<!-- vocab-card: {"id":"vocab-yameru","priority":"optional","sourceSection":"Verb て-form  + ください","word":"やめる","reading":"やめる","meaning":"to stop; to quit"} -->
+<!-- grammar-card: {"id":"verb-te-request","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Verb て-form  + ください","rule":"ください attaches to the て-form, never the dictionary form","example":"もし寒かったら、窓を閉め___。","answer":"てください","explanation":"In the ordinary verb request pattern, 閉める becomes 閉めて before ください. The separate honorific stem pattern uses お閉めください."} -->
 
 As learned earlier, ください can follow the て form of a verb to request that someone do something. For example, if you want to tell someone to stop doing something, you can turn the verb やめる (to stop) into its て form and say:
 
@@ -118,11 +131,10 @@ Let's say even though you asked them to not copy, they don't stop teasing you. I
 
   - **Please** don't tease me.
 
-Although these are straight requests, ください still shows that you're expressing them respectfully. So you can assume that the person teasing you may be your boss or someone with a higher social status than you.
+Although these are straight requests, ください still shows that you're expressing them respectfully. It does not by itself establish the listener's status: polite requests can also be addressed to peers or students.
 
-<!-- grammar-card: {"rule":"てもらえませんか is softer than てください","hint":"a gentler request","example":"もう少しゆっくり話して___？","answer":"もらえませんか","explanation":"Framing the request as a negative question makes it less direct and more courteous."} -->
-
-<!-- grammar-card: {"rule":"The て-form plus ください makes a polite request","hint":"話して + ?","example":"もう少しゆっくり話して___。","answer":"ください","explanation":"話してください asks the listener directly but politely to speak more slowly."} -->
+<!-- vocab-card: {"id":"vocab-karakau","priority":"optional","sourceSection":"Verb Negative Form + で + ください","word":"からかう","reading":"からかう","meaning":"to tease"} -->
+<!-- grammar-card: {"id":"negative-request","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Verb Negative Form + で + ください","rule":"A negative request uses the ない form plus でください","example":"Ask someone not to tease you: からかわない___ください。","answer":"で","explanation":"Use からかわないでください, not a negative て-form instruction."} -->
 
 ## Beyond the Basics
 
@@ -162,6 +174,9 @@ In other words, when the **speaker's** benefit is involved, お/ご〜くださ�
 
 Even in these scenarios, though, the messages are presented in such a way that the benefit of the person who posted them is deemphasized. To put it another way, お/ご〜ください displays that these are only polite and formal instructions, with the listener having the last say.
 
+<!-- grammar-card: {"id":"honorific-instruction","kind":"rule","format":"cloze","priority":"optional","sourceSection":"ご/お〜ください for Formal Instruction","rule":"Formal instructions can use お plus a verb stem plus ください","example":"Invite a guest to close the window if cold, using the formal stem pattern: 窓をお閉め___。","answer":"ください","explanation":"お閉めください uses 閉め, not 閉めて, in this honorific instruction pattern."} -->
+<!-- grammar-card: {"id":"formal-not-universal","kind":"concept","format":"qa","priority":"essential","sourceSection":"ご/お〜ください for Formal Instruction","rule":"The honorific stem pattern is not a universal upgrade for personal favor requests","example":"Why is お閉めください awkward when a guest asks the host to close a window for the guest?","answer":"It is characteristically a formal invitation or instruction, often for the listener's benefit, not a general way to ask a personal favor.","explanation":"Public ご遠慮ください and ご協力ください show that this is a pragmatic tendency, not a ban whenever the speaker benefits."} -->
+
 ### 〜てくださいませんか？ for Asking Someone to Do Something
 
 In the previous section, you learned that 〜てください can be used to simply instruct someone to do something if needed, as well as to request that they do something for you. But we also said earlier that 〜てください can sound too direct and come across a bit rude if you're asking a favor. As a nicer way to ask someone to do something, we suggested using the phrase 〜てもらえませんか？
@@ -194,6 +209,9 @@ So 〜てくれる indicates you are the receiver of a favor, but its focus is s
 
 For this nuance, 〜てもらえませんか is more suitable in most situations when you're respectfully asking for a favor. You can still use ​​〜てくれませんか, but it has a tad more casual ring to it.
 
+<!-- grammar-card: {"id":"request-perspective","kind":"concept","format":"qa","priority":"optional","sourceSection":"〜てくださいませんか？ for Asking Someone to Do Something","rule":"Giving and receiving questions frame the same favor differently","example":"How does the perspective of 〜てもらえませんか differ from 〜てくれませんか?","answer":"The first foregrounds you receiving the favor; the second foregrounds the listener giving it.","explanation":"〜てくださいませんか is a highly courteous honorific giving question. Appropriate formality depends on the relationship and situation."} -->
+<!-- grammar-card: {"id":"very-formal-question","kind":"rule","format":"cloze","priority":"optional","sourceSection":"〜てくださいませんか？ for Asking Someone to Do Something","rule":"くださいませんか makes the giving request a very courteous question","example":"Use the very formal honorific question: このデータを見て___？","answer":"くださいませんか","explanation":"This is more ceremonious than an ordinary favor question and can sound stiff in everyday conversation."} -->
+
 ### Ways to Make Casual Requests
 
 We've seen how to politely make requests with ください up to this point, but what if you want to make a casual request to someone close to you?
@@ -213,6 +231,9 @@ When you're making a request to do something, all you have to do is turn the ver
   - Get me that apple.
 
 How easy!
+
+<!-- vocab-card: {"id":"vocab-choudai","priority":"optional","sourceSection":"Ways to Make Casual Requests","word":"ちょうだい","reading":"ちょうだい","meaning":"give me; please give (casual request)"} -->
+<!-- grammar-card: {"id":"casual-te-request","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Ways to Make Casual Requests","rule":"A bare て-form can request an action from someone close","example":"Casually ask a friend to get that apple, using 取る: そのりんごを___。","answer":"取って","explanation":"The bare connective can act as a casual request; ください is omitted."} -->
 
 ---
 
@@ -249,8 +270,6 @@ by Mieko Ohso
 <!-- quiz: {"type":"multiple-choice","question":"What does \"バニラアイスを**ください**。\" mean?","options":["Vanilla ice cream, **please**.","This skirt, **please**.","Apples, **please**.","Three, **please**."],"answer":0} -->
 
 <!-- quiz: {"type":"multiple-choice","question":"What does \"りんごを**ください**。\" mean?","options":["Apples, **please**.","This skirt, **please**.","Vanilla ice cream, **please**.","Three, **please**."],"answer":0} -->
-
-<!-- grammar-card: {"rule":"ください attaches to the て-form, never the dictionary form","hint":"閉める → ?","example":"もし寒かったら、窓を閉め___。","answer":"てください","explanation":"閉める has to become 閉めて before ください can be added."} -->
 
 ## Sources
 

@@ -1,5 +1,7 @@
 # が (ga) — Subject Marker
 
+<!-- vocab-inventory: {"mode":"explicit"} -->
+
 > **Source:** Content from [Tofugu](https://www.tofugu.com/japanese-grammar/particle-ga/). For personal study.
 
 Particle が: Subject Marker
@@ -14,9 +16,11 @@ Particle
 
 ## The Basics
 
-The particle が goes after a noun to show us that the noun is the subject of a sentence. That is, the noun before が is the person or thing that's doing whatever comes next. In other words, が marks the grammatical subject. Beyond marking the subject, が also puts emphasis onto that subject, and excludes other possible subjects.
+The particle が goes after a noun to show us that the noun is the subject of a sentence. The subject can perform an action, exist, or have a property. Depending on the context, が can also focus on that subject to the exclusion of alternatives; a neutral description with が does not always exclude other possible subjects.
 
 ### Patterns of Use
+
+<!-- grammar-card: {"id":"subject-not-only-agent","kind":"concept","format":"qa","priority":"essential","sourceSection":"Patterns of Use","rule":"A が subject can act, exist, or have a property","example":"In この納豆がおいしい, what does が mark even though nothing performs an action?","answer":"この納豆 is the subject of the property おいしい.","explanation":"Grammatical subject is broader than an intentional doer. The same particle marks the existing person in 誰かがいる."} -->
 
 The particle が always goes immediately after a noun — or something that behaves like a noun — to show that this noun is the subject. For example, in the sentence below, あの犬 (dog) is the subject. It is the one doing what comes next. In this case, that's the verb "barked":
 
@@ -39,9 +43,13 @@ In this final example, the subject is この納豆 (this natto). What is "this n
 
 ### Conceptualizing が
 
-So just to recap, the particle が points a finger at the subject in the sentence, and in doing so puts emphasis on that subject, telling us that it is a very important piece of information in the sentence.　We like to think of が as the witness in a police lineup. It is picking out the subject from a lineup of potential subjects, and saying, "this is the one that did it."
+<!-- grammar-card: {"id":"subject-question-application","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Conceptualizing が","rule":"Use が for the unknown subject in an ordinary who-question","hint":"Ask who came.","example":"誰(だれ)___来(き)ましたか。","answer":"が","explanation":"誰 identifies the unknown subject. は is not the ordinary topic marker for that unknown referent.","legacyAliases":[{"rule":"A question word used as the subject always takes が","example":"誰(だれ)___来(き)ましたか。"}]} -->
+<!-- grammar-card: {"id":"identification-versus-topic","kind":"concept","format":"qa","priority":"essential","sourceSection":"Conceptualizing が","rule":"Identifying who fills a role differs from commenting on a known person","example":"Why answer a question about who the president is with 私が社長です rather than a neutral self-description?","answer":"が identifies me as the person filling the role, instead of merely giving information about me as a topic.","explanation":"Here the lineup image fits: one person is selected from alternatives. This focused reading is contextual, not a universal exclusion meaning of every が."} -->
+<!-- grammar-card: {"id":"lineup-mnemonic","kind":"concept","format":"qa","priority":"optional","sourceSection":"Conceptualizing が","rule":"The police-lineup image is a mnemonic for identificational が","example":"What does the police-lineup mnemonic map to in a focused が sentence?","answer":"The witness selects the subject from other candidates, just as identificational が picks out the relevant person or thing.","explanation":"Use this for identification such as the president question, not as proof that a neutral sentence like 犬が吠えた denies that other dogs barked."} -->
 
-As with a lineup, the act of picking out the subject — the doer — also lets the others in the lineup off the hook. So, が is simultaneously telling us what the subject is, putting emphasis on it, and making it clear that nothing else is the subject.
+In an identifying context, the particle が points a finger at the subject in the sentence, putting emphasis on that subject as the important information. We can think of this use of が as the witness in a police lineup. It picks out the subject from a lineup of potential subjects, saying, "this is the one that did it."
+
+As with a lineup, this identifying use selects the relevant subject rather than other candidates. The analogy describes a focused identification; it does not mean that an ordinary descriptive sentence with が always rules out other people or things.
 
 To give you a better idea of what we mean, let's look at an example. Imagine everyone at Tofugu is hanging out, and someone from outside the company is trying to figure out which one of us is the president. They might say:
 
@@ -60,6 +68,8 @@ Both the question and the answer use が, because が emphasizes that Koichi is 
 By way of comparison, if someone asked Koichi what his role was, he might answer 私は社長です. To read more about the differences in nuance created by は and が, take a look at our article.
 
 ### Subject Omission
+
+<!-- grammar-card: {"id":"contextual-subject-omission","kind":"concept","format":"qa","priority":"essential","sourceSection":"Subject Omission","rule":"A recoverable subject can be left unspoken","example":"After うちの犬が何かしましたか, why is 吠えました a complete conversational answer?","answer":"The dog is recoverable from context, so Japanese does not require an overt subject or pronoun.","explanation":"Repeating おたくの犬が can deliberately add emphasis. Omission depends on a recoverable referent, not on a missing English translation."} -->
 
 Subject omission is extremely common in Japanese when we know what that subject is from context. Take a look at the dialogue below, for example:
 
@@ -82,6 +92,9 @@ Because it's so common to leave out the subject, leaving it in can often bring a
 In English, referring to the subject as "your dog" rather than "it" throws a certain emphasis onto the dog, right? The same is true of the Japanese version. Choosing to include the subject when it's more natural to leave it out leads to the subject being emphasized. Maybe you're doing that to show how annoyed you are about the dog barking at you, or maybe the dog is freaking you out.
 
 ### が Omission
+
+<!-- grammar-card: {"id":"particle-omission-focus","kind":"concept","format":"qa","priority":"optional","sourceSection":"が Omission","rule":"Conversational が omission is constrained by informational focus","example":"Why is が more important to retain when identifying Jenny as the culprit than in an ordinary casual 犬が吠えた?","answer":"It carries the identification of Jenny against alternative suspects, rather than only marking an easily understood subject.","explanation":"が is often omitted in casual speech and sometimes polite speech when the role is clear. That does not make omission neutral in a focused identification."} -->
+<!-- vocab-card: {"id":"vocab-hannin","word":"犯人","reading":"はんにん","meaning":"culprit; perpetrator","priority":"optional","sourceSection":"が Omission"} -->
 
 Even when the subject is included, it is really common to omit が in informal speaking, as well as writing that closely resembles spoken styles, like casual text messages. This generally doesn't result in any significant difference in nuance.
 
@@ -112,6 +125,10 @@ Here, we really are pointing our fingers at the perpetrator, and ruling out othe
 Many textbooks and linguists say that が can also mark the object, but others believe it's still marking the subject in these situations. We believe that it's more helpful and consistent to consider that が always marks the subject in Japanese, even when the same word is the object in the English translation.
 
 #### が with Verb-like adjectives
+
+<!-- grammar-card: {"id":"suki-target-application","kind":"rule","format":"cloze","priority":"essential","sourceSection":"が with Verb-like adjectives","rule":"The target of 好き, 嫌い, or 上手 normally takes が in the neutral pattern","hint":"Use the neutral pattern for liking dogs.","example":"私は犬(いぬ)___好(す)きです。","answer":"が","explanation":"好き is a な-adjective, not an English-style transitive verb. Analyses differ on calling its が phrase a subject or an object, but the neutral particle here is が.","legacyAliases":[{"rule":"The object of 好き, 嫌い and 上手 is marked with が","example":"私は犬(いぬ)___好(す)きです。"}]} -->
+<!-- grammar-card: {"id":"tai-particle-choice","kind":"concept","format":"qa","priority":"optional","sourceSection":"が with Verb-like adjectives","rule":"Both が and を can occur with a transitive verb's たい form","example":"Must 梅干が食べたい use が rather than を?","answer":"No. 梅干を食べたい is also possible; が can foreground the desired thing, while を can foreground the intended action.","explanation":"The lesson associates が with spontaneous desire and を with practical intention. These are contextual tendencies, not a rigid distinction between desire and certainty of acting."} -->
+<!-- vocab-card: {"id":"vocab-hoshii","word":"欲しい","reading":"ほしい","meaning":"wanted; desired; to want something","priority":"optional","sourceSection":"が with Verb-like adjectives"} -->
 
 The first obvious example of this is the use of が with things we like, love, hate, want, and so on. In English, the objects of our desire or distaste are exactly that — objects. In Japanese, however, they can be considered subjects, because they are the ones that are desirable, or detestable.
 
@@ -145,6 +162,11 @@ See that い on the end? That's a clue that this form has basically "become" an 
 We should point out that it's also totally possible to say 梅干を食べたい, but this changes the nuance somewhat. The most likely interpretation if you use を is that you're not only craving pickled plums, but you are more practically thinking about eating some. The particle を shows that you have more intention of following up on what you want. The sentence with が, on the other hand, implies that you have a spontaneous desire to eat pickled plums, which may or may not be fulfilled.
 
 #### が with Verbs that Describe States
+
+<!-- grammar-card: {"id":"state-target-application","kind":"rule","format":"cloze","priority":"essential","sourceSection":"が with Verbs that Describe States","hint":"Use the neutral particle for what is comprehensible.","rule":"分かる commonly marks what is understood with が","example":"日本語___分かる。","answer":"が","explanation":"The Japanese pattern is not copied from the English direct object in understand Japanese. Similar が patterns occur with 見える and 聞こえる."} -->
+<!-- vocab-card: {"id":"vocab-wakaru","word":"分かる","reading":"わかる","meaning":"to understand; to be comprehensible","priority":"optional","sourceSection":"が with Verbs that Describe States"} -->
+<!-- vocab-card: {"id":"vocab-mieru","word":"見える","reading":"みえる","meaning":"to be visible; to be able to see","priority":"optional","sourceSection":"が with Verbs that Describe States"} -->
+<!-- vocab-card: {"id":"vocab-kikoeru","word":"聞こえる","reading":"きこえる","meaning":"to be audible; to be able to hear","priority":"optional","sourceSection":"が with Verbs that Describe States"} -->
 
 Have a look at the sentence below, along with its most obvious translation into English:
 
@@ -188,6 +210,8 @@ You can read more about the different takes on transitivity in English and Japan
 
 #### が with Verbs for "Exist"
 
+<!-- grammar-card: {"id":"possession-as-existence","kind":"concept","format":"qa","priority":"optional","sourceSection":"が with Verbs for \"Exist\"","rule":"ある and いる can express having through existence","example":"In 私には夢がある, what is marked by が, and how does the sentence express having?","answer":"夢 is the thing that exists; the sentence says a dream exists for me, naturally translated as I have a dream.","explanation":"が marks the existing thing, not the possessor. In the corresponding dog and children examples, いる is used for animate beings."} -->
+
 We're already seen an example of the verb いる used in it's basic meaning "to exist." You can also use the verbs ある and いる (both "exist") to talk about things that you have. In this case, が is still used to show us what exists.
 
   - 私（に）は夢がある。
@@ -211,13 +235,13 @@ The exact same logic is behind these next two sentences:
 
 In English, the Kanae and Mami are doing the having. In Japanese, the dog and kids are doing the existing.
 
-<!-- grammar-card: {"rule":"A question word used as the subject always takes が","hint":"が / は","example":"誰(だれ)___来(き)ましたか。","answer":"が","explanation":"誰は is impossible — unknown or new information is marked with が."} -->
-
 ## Beyond The Basics
 
 ### が in Relative Clauses
 
-The particle が is generally used in relative clauses — clauses that give extra info, not vital to the sentence — even if は is used in the corresponding main clause.
+<!-- grammar-card: {"id":"relative-subject-alternation","kind":"concept","format":"qa","priority":"essential","sourceSection":"が in Relative Clauses","rule":"が can alternate with の in the illustrated noun-modifying clauses","example":"Can の replace が in スミスさんが見つけたお金 and in the independent sentence スイスは物価が高い?","answer":"It can in the noun-modifying clause スミスさんの見つけたお金, but not in that independent sentence.","explanation":"The relative-clause environment matters. This is not a license to replace every subject が with の."} -->
+
+The particle が is generally used for the subject in relative clauses — clauses that modify a noun — even if は is used in the corresponding main clause.
 
 Let's take a look at an example of a main clause first:
 
@@ -269,6 +293,8 @@ The reason that が and の are sometimes interchangeable in this way is rooted 
 
 ### が in Embedded Clauses
 
+<!-- grammar-card: {"id":"embedded-subject-not-no","kind":"concept","format":"qa","priority":"optional","sourceSection":"が in Embedded Clauses","rule":"A quoted embedded clause is not the same environment as a relative clause","example":"Can 犬が吠えたと言いました become 犬の吠えたと言いました by the relative-clause substitution?","answer":"No. This embedded quotation does not license that が-to-の substitution.","explanation":"が is the ordinary subject marker inside the quoted clause; there is no following head noun that it modifies."} -->
+
 が is also generally used in embedded clauses even if は is used in the corresponding main clause. Let's go back to our noisy dog to see what we mean:
 
   - 犬は吠えました。
@@ -284,6 +310,8 @@ But if someone tells you that the dog barked, what that person said becomes an "
 Just in case you were wondering, the particle の can't replace が in this case!
 
 ### Two Subjects with が
+
+<!-- grammar-card: {"id":"double-ga-context","kind":"concept","format":"qa","priority":"optional","sourceSection":"Two Subjects with が","rule":"Double が can be focused in a main clause without the same emphasis in a report","example":"What reading does スイスが物価が高い have as the focused main-clause example here?","answer":"It is Switzerland that has a high cost of living.","explanation":"The first が selects Switzerland. In 先生はスイスが物価が高いと言いました, the embedded clause need not have that same contrastive emphasis."} -->
 
 It's possible to have two subjects, each marked by が, in a Japanese sentence. However, when this is the main clause, one of the subjects will usually be presented as the topic, as we saw earlier in this example:
 
@@ -442,8 +470,6 @@ by Toshiyuki Kumashiro
 <!-- quiz: {"type":"multiple-choice","question":"What does \"誰かがいる。\" mean?","options":["Someone's here.","That dog barked.","This natto is delicious.","Which person is the president of Tofugu?"],"answer":0} -->
 
 <!-- quiz: {"type":"multiple-choice","question":"What does \"この納豆がおいしい。\" mean?","options":["This natto is delicious.","That dog barked.","Someone's here.","Which person is the president of Tofugu?"],"answer":0} -->
-
-<!-- grammar-card: {"rule":"The object of 好き, 嫌い and 上手 is marked with が","hint":"が / を","example":"私は犬(いぬ)___好(す)きです。","answer":"が","explanation":"好き is an adjective rather than a verb, so what you like takes が, not を."} -->
 
 ## Sources
 

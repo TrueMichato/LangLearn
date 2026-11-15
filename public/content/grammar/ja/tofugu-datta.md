@@ -1,5 +1,7 @@
 # だった (datta) — Past Copula (Plain)
 
+<!-- vocab-inventory: {"mode":"explicit"} -->
+
 > **Source:** Content from [Tofugu](https://www.tofugu.com/japanese-grammar/datta/). For personal study.
 
 だった: Japanese Word for Past/Positiveness
@@ -44,6 +46,8 @@ In Japanese, all past tense markers end in 〜た. だった is formed by taking
 
 Tada! Now you have だった 👍🏼
 
+<!-- grammar-card: {"id":"datta-nominal-scope","kind":"concept","format":"qa","priority":"essential","sourceSection":"Forming だった","rule":"だった is the plain affirmative past of だ for nouns and な-adjectives","example":"Which predicate types take だった directly for the plain affirmative past?","answer":"Nouns and な-adjective stems.","explanation":"だ becomes だった. Verbs and い-adjectives have their own past conjugations rather than directly adding this copula."} -->
+
 ## Patterns of Use
 
 だった pops up in a couple of different places. You’ll find it at the end of sentences, and in the middle of sentences for a few different reasons.
@@ -55,6 +59,10 @@ When だった appears at the end of a sentence, it has two roles. As always, it
   - 締め切りは昨日**だった**。
 
   - The deadline was yesterday.
+
+<!-- grammar-card: {"id":"deshita-polite-alternative","kind":"rule","format":"cloze","priority":"optional","sourceSection":"At the End of a Sentence","rule":"でした is the polite past of です","hint":"Use the polite past copula","example":"締め切りは昨日___。","answer":"でした","explanation":"The deadline was yesterday; でした gives the polite version of the plain だった statement."} -->
+<!-- vocab-card: {"id":"vocab-shimekiri","word":"締め切り","reading":"しめきり","meaning":"deadline","priority":"essential","sourceSection":"At the End of a Sentence"} -->
+<!-- vocab-card: {"id":"vocab-kinou","word":"昨日","reading":"きのう","meaning":"yesterday","priority":"optional","sourceSection":"At the End of a Sentence"} -->
 
 Let’s say that the 締め切り (deadline) being discussed is for a homework assignment, and this sentence occurred in a conversation between friends. In this case, the casual だった would make perfect sense. However, if this sentence occurred in a business setting, it might be better to switch out だった for the more polite でした.
 
@@ -90,9 +98,12 @@ This sentence has two clauses, and they are connected together by the particle �
 
 When だった appears in the middle of a sentence like this, it does not mark the sentence overall as casual sounding. In Japanese, politeness is indicated at the end of the entire sentence. In this case, the 〜ました ending indicates the polite form.
 
-<!-- grammar-card: {"rule":"でした is the polite past of です","hint":"です → ?","example":"締め切りは昨日___。","answer":"でした","explanation":"The deadline was yesterday, so です moves into the past as でした."} -->
-
-<!-- grammar-card: {"rule":"だった is the plain past of だ","hint":"だ → ?","example":"それは子供の時からの夢___。","answer":"だった","explanation":"だった reports the dream as something that was held in the past."} -->
+<!-- grammar-card: {"id":"datta-plain-past","kind":"rule","format":"cloze","priority":"essential","sourceSection":"In the Middle of a Sentence","rule":"だった is the plain past of だ","hint":"Use the plain past copula","example":"それは子供の時からの夢___。","answer":"だった","explanation":"だった reports the dream as something that was held in the past."} -->
+<!-- grammar-card: {"id":"datta-noun-modification","kind":"rule","format":"cloze","priority":"essential","sourceSection":"In the Middle of a Sentence","rule":"A past な-adjective clause in だった can modify a following noun","example":"綺麗___花 (flowers that were beautiful)","answer":"だった","explanation":"The whole past clause 綺麗だった precedes 花. Present 綺麗な花 and past 綺麗だった花 use different links."} -->
+<!-- grammar-card: {"id":"datta-main-clause-politeness","kind":"concept","format":"qa","priority":"optional","sourceSection":"In the Middle of a Sentence","rule":"だった in a reason clause does not make a polite main clause casual","example":"Does 夢だったから force the following 頑張りました into casual style?","answer":"No. The main clause's ました ending keeps the whole sentence polite.","explanation":"A plain past reason clause can occur within a polite sentence; sentence-final style is the main politeness signal."} -->
+<!-- vocab-card: {"id":"vocab-kirei","word":"綺麗","reading":"きれい","meaning":"beautiful; pretty","priority":"optional","sourceSection":"In the Middle of a Sentence"} -->
+<!-- vocab-card: {"id":"vocab-yume","word":"夢","reading":"ゆめ","meaning":"dream","priority":"optional","sourceSection":"In the Middle of a Sentence"} -->
+<!-- vocab-card: {"id":"vocab-isshokenmei","word":"一所懸命","reading":"いっしょけんめい","meaning":"with all one's might; as hard as one can","priority":"optional","sourceSection":"In the Middle of a Sentence"} -->
 
 ## Beyond the Basics
 
@@ -108,6 +119,8 @@ Let’s say you want to ask a question ending in だった You’d add the quest
 
   - How was that comic book?
 
+<!-- grammar-card: {"id":"datta-question-style","kind":"concept","format":"qa","priority":"essential","sourceSection":"だった in Questions","rule":"Neutral casual questions with だった usually use rising intonation rather than か","example":"Why is 宿題、大変だった？ usually safer than 大変だったか for a neutral casual question?","answer":"Rising intonation asks the question without the gruff, traditionally masculine nuance that plain か can add.","explanation":"だったか is possible, but it is not the neutral equivalent of polite でしたか in every social setting."} -->
+<!-- vocab-card: {"id":"vocab-taihen","word":"大変","reading":"たいへん","meaning":"difficult; tough; terrible","priority":"optional","sourceSection":"だった in Questions"} -->
 ### だった for the Non-Past
 
 Sometimes, だった is used to refer to things happening in the present, or even the future. In these cases though, the past tense meaning of だった adds a nuance that the information being discussed is something that was known from before the present moment.
@@ -131,6 +144,11 @@ You can exploit this emphasis on past knowledge that だった adds to a sentenc
   - 誕生日いつだった？
 
   - When was your birthday?
+
+<!-- grammar-card: {"id":"datta-recalled-nonpast","kind":"concept","format":"qa","priority":"essential","sourceSection":"だった for the Non-Past","rule":"だった can mark the recovery of previously known information about now or the future","example":"Does 明日テストだった！ say that tomorrow's exam already happened?","answer":"No. The speaker has just remembered the previously known fact that the exam is tomorrow.","explanation":"The past form points to prior knowledge, not past event time. The same recollection nuance can appear in 今日休みだった."} -->
+<!-- grammar-card: {"id":"datta-kke-reminder","kind":"concept","format":"qa","priority":"optional","sourceSection":"だった for the Non-Past","rule":"だったっけ asks the listener to help recall previously known information","example":"What does 誕生日いつだったっけ？ suggest about the speaker's knowledge?","answer":"That the birthday was known or discussed before, but the speaker needs a reminder.","explanation":"っけ strengthens the recollection flavor. It can imply shared history rather than asking whether the birthday ceased to exist."} -->
+<!-- vocab-card: {"id":"vocab-yasumi","word":"休み","reading":"やすみ","meaning":"day off; break; rest","priority":"optional","sourceSection":"だった for the Non-Past"} -->
+<!-- vocab-card: {"id":"vocab-tanjoubi","word":"誕生日","reading":"たんじょうび","meaning":"birthday","priority":"optional","sourceSection":"だった for the Non-Past"} -->
 
 By using だった, I highlight that this is a topic we’ve discussed before. This creates a nuance of closeness between the speaker and listener, since it suggests that we have a shared history. Unlike the previous examples, English uses the past tense in a similar way as Japanese in this case.
 

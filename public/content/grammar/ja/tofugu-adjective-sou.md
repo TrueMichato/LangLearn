@@ -1,5 +1,7 @@
 # 〜そう — Looks Like / Seems
 
+<!-- vocab-inventory: {"mode":"explicit"} -->
+
 > **Source:** Content from [Tofugu](https://www.tofugu.com/japanese-grammar/adjective-sou/). For personal study.
 
 Japanese い-Adjective そう Form
@@ -43,6 +45,11 @@ Putting a な-adjective into this form is very simple as well. Simply add 〜そ
 > 
 > 
 
+<!-- grammar-card: {"id":"i-stem-appearance","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Forming 〜そう","rule":"Appearance そう replaces an い-adjective's final い","example":"おいしい → looks delicious: おいし___。","answer":"そう","explanation":"Removing い distinguishes the speaker's impression from hearsay おいしいそう."} -->
+<!-- grammar-card: {"id":"na-stem-appearance","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Forming 〜そう","rule":"A な-adjective stem takes appearance そう without な","example":"便利 → looks convenient: 便利___。","answer":"そう","explanation":"Use 便利そう, not 便利なそう or 便利だそう for this appearance meaning."} -->
+<!-- vocab-card: {"id":"vocab-oishii","word":"おいしい","reading":"おいしい","meaning":"delicious","priority":"optional","sourceSection":"Forming 〜そう"} -->
+<!-- vocab-card: {"id":"vocab-benri","word":"便利","reading":"べんり","meaning":"convenient","priority":"optional","sourceSection":"Forming 〜そう"} -->
+
 ### Negative 〜そう
 
 For negative い-adjectives ending in 〜くない, we'll need to take an extra step to add 〜そう. After removing the final 〜い, we'll add さ before そう
@@ -63,6 +70,10 @@ To use 〜そう in the negative with な-adjectives, you'll have to add 〜そ�
 > 
 > 
 
+<!-- grammar-card: {"id":"negative-appearance","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Negative 〜そう","rule":"A negative adjective ending in ない uses なさ before appearance そう","example":"おいしくない → looks unappetizing: おいしく___そう。","answer":"なさ","explanation":"Replace the final い in ない with さ: おいしくなさそう. The same step gives 便利じゃなさそう."} -->
+<!-- grammar-card: {"id":"ii-exception","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Negative 〜そう","rule":"いい uses the exceptional stem よさ before appearance そう","example":"いい → looks good: ___そう。","answer":"よさ","explanation":"The form is よさそう, not いそう or よそう. The exceptional さ is needed even in the affirmative."} -->
+<!-- vocab-card: {"id":"vocab-ii","word":"いい","reading":"いい","meaning":"good","priority":"optional","sourceSection":"Negative 〜そう"} -->
+
 ### Politeness
 
 Politeness in Japanese is marked at the end of a sentence with forms like です. You can add です after 〜そう to level-up your politeness:
@@ -71,7 +82,7 @@ Politeness in Japanese is marked at the end of a sentence with forms like です
 
   - It looks delicious.
 
-<!-- grammar-card: {"rule":"そう ends a polite sentence with です","hint":"そう + ?","example":"おいしそう___。","answer":"です","explanation":"おいしそうです says the thing looks delicious, judging by its appearance."} -->
+<!-- grammar-card: {"id":"polite-appearance","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Politeness","rule":"そう ends a polite sentence with です","hint":"Add the polite copula.","example":"おいしそう___。","answer":"です","explanation":"The final copula marks politeness; appearance そう itself remains unchanged."} -->
 
 ## Patterns of Use
 
@@ -107,9 +118,10 @@ And we can even turn it into an adverb with に:
 
   - They look like they’re eating enjoyably.
 
-<!-- grammar-card: {"rule":"そう takes に when it modifies a verb","hint":"そう + 食べる","example":"おいしそう___食べています。","answer":"に","explanation":"おいしそうに describes how the eating looks, so そう becomes adverbial with に."} -->
+<!-- grammar-card: {"id":"adverbial-ni","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Patterns of Use","rule":"そう takes に when it modifies a verb","example":"おいしそう___食べています。","answer":"に","explanation":"The な-adjective-like form becomes adverbial with に, describing how the eating appears."} -->
 
-<!-- grammar-card: {"rule":"そう behaves as a な-adjective before a noun","hint":"そう + ケーキ","example":"おいしそう___ケーキだね！","answer":"な","explanation":"おいしそうな modifies ケーキ, so そう takes な just like any な-adjective."} -->
+<!-- grammar-card: {"id":"attributive-na","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Patterns of Use","rule":"そう behaves as a な-adjective before a noun","example":"おいしそう___ケーキだね！","answer":"な","explanation":"Appearance そう takes な before ケーキ, even though its source adjective was an い-adjective."} -->
+<!-- grammar-card: {"id":"negative-scope","kind":"concept","format":"qa","priority":"optional","sourceSection":"Patterns of Use","rule":"Negating the impression differs from forming an impression of a negative quality","example":"How does おいしそうじゃない differ in emphasis from おいしくなさそう?","answer":"The first denies that it looks delicious; the second presents an impression that it is not delicious.","explanation":"The first can be a softer denial of a positive appearance, rather than a direct negative assessment."} -->
 
 ## Uses
 
@@ -125,6 +137,9 @@ You can use this form to explain what you think is a characteristic of something
 
   - That person looks kind!
 
+<!-- vocab-card: {"id":"vocab-semai","word":"狭い","reading":"せまい","meaning":"narrow; cramped","priority":"optional","sourceSection":"〜そう for Interpreting Things We Can See"} -->
+<!-- vocab-card: {"id":"vocab-yasashii","word":"優しい","reading":"やさしい","meaning":"kind; gentle","priority":"optional","sourceSection":"〜そう for Interpreting Things We Can See"} -->
+
 ### 〜そう for Interpreting Information We're Given
 
 You can also use 〜そう in situations where you are assuming something is true based on information you've been given, even if it isn't visual information. Imagine, for example, that your friend in Okinawa tells you she doesn't have air conditioning in her room:
@@ -134,6 +149,8 @@ You can also use 〜そう in situations where you are assuming something is tru
   - You don’t have air conditioning? Wow, your room must get hot.
 
 In this case, you're not actually looking at your friend's room, but imagining what it must be like based on what they've told you.
+
+<!-- grammar-card: {"id":"inference-not-only-vision","kind":"concept","format":"qa","priority":"essential","sourceSection":"〜そう for Interpreting Information We're Given","rule":"Appearance そう can express an inference from information, not just direct sight","example":"Why can you say 部屋暑そう after hearing that a friend's room has no air conditioning, without seeing the room?","answer":"You are drawing your own inference from the information provided, rather than reporting someone else's statement that it is hot.","explanation":"The evidence need not be visual. The speaker still interprets it personally."} -->
 
 ## Common Mistakes
 
@@ -146,6 +163,8 @@ You may have come across a very similar construction, where you add 〜そう to
   - あのケーキ、おいしいそうです。
 
   - I've heard that cake is delicious.
+
+<!-- grammar-card: {"id":"appearance-hearsay-contrast","kind":"concept","format":"qa","priority":"essential","sourceSection":"Common Mistakes","rule":"Keeping or dropping adjective い separates hearsay from appearance","example":"What is the difference between おいしそうです and おいしいそうです?","answer":"The first means it looks delicious; the second means I have heard it is delicious.","explanation":"Appearance attaches to the adjective stem; hearsay attaches to the complete plain predicate."} -->
 
 ---
 

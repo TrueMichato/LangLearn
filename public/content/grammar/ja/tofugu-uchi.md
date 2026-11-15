@@ -1,5 +1,7 @@
 # うちに — While / Before It's Too Late
 
+<!-- vocab-inventory: {"mode":"explicit"} -->
+
 > **Source:** Content from [Tofugu](https://www.tofugu.com/japanese-grammar/uchi/). For personal study.
 
 うち: Japanese Word For "Inside"
@@ -14,7 +16,14 @@ Vocabulary
 
 ## The Basics
 
+<!-- grammar-card: {"id":"home-reference","kind":"rule","format":"cloze","priority":"optional","sourceSection":"The Basics","rule":"うち can also mean one's own home or in-group","hint":"Use the familiar home/in-group expression, not 私.","example":"___の犬(いぬ)はとても大(おお)きい。","answer":"うち","explanation":"うちの犬 means the dog of my household; this is a home/in-group reference, not a temporal window."} -->
+
+<!-- vocab-card: {"id":"vocab-uchi","priority":"essential","sourceSection":"The Basics","word":"内","reading":"うち","meaning":"inside; within"} -->
+<!-- vocab-card: {"id":"vocab-kotoshi","priority":"optional","sourceSection":"The Basics","word":"今年","reading":"ことし","meaning":"this year"} -->
+
 内 (うち), is a word that originally means "inside." When it's written in hiragana and combined with particles, it's used to specify the scope of quantity or time. For example, うち can be used to specify the number of items in total:
+
+In another everyday sense, うち refers to one's own home or in-group: うちの犬 means "the dog of my household." This is distinct from the temporal-window use below.
 
   - ３つのタマゴのうち１つ割れていた。
 
@@ -36,6 +45,8 @@ In this section, we'll list the basic patterns used with うち.
 
 #### Noun + の + うち
 
+<!-- grammar-card: {"id":"noun-link","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Noun + の + うち","rule":"A noun connects to うち with の","example":"Finish before summer vacation ends: 夏休み___うちに宿題を終わらせる。","answer":"の","explanation":"夏休みのうちに sets the vacation as the period before whose end the task is done."} -->
+
 うち can follow a noun, but in this case, you'll need to add the particle の between the noun and うち.
 
   - 二つのうち一つ
@@ -48,6 +59,8 @@ In this section, we'll list the basic patterns used with うち.
 
 #### い-adjective + うち
 
+<!-- grammar-card: {"id":"i-adjective-link","kind":"rule","format":"cloze","priority":"optional","sourceSection":"い-adjective + うち","rule":"An い-adjective attaches directly before うち","example":"While the children are still little: 子どもが小さ___うちは大変だ。","answer":"い","explanation":"小さいうち needs neither の nor な."} -->
+
 うち can directly follow an い-adjective, as in:
 
   - 子どもが小さいうちは大変だ。
@@ -56,6 +69,8 @@ In this section, we'll list the basic patterns used with うち.
 
 #### な-adjective + な + うち
 
+<!-- grammar-card: {"id":"na-adjective-link","kind":"rule","format":"cloze","priority":"optional","sourceSection":"な-adjective + な + うち","rule":"A な-adjective takes な before うち","example":"Use the な-adjective pattern: 元気___うちに旅行したい。","answer":"な","explanation":"元気なうちに means while still healthy; it follows the same linking pattern taught here."} -->
+
 When うち follows a な-adjective, you'll need to add な between them.
 
   - 人気なうちに、稼ぎまくろう。
@@ -63,6 +78,9 @@ When うち follows a な-adjective, you'll need to add な between them.
   - Let's make a lot of money while we're still popular.
 
 #### Verb + うち
+
+<!-- vocab-card: {"id":"vocab-iru","priority":"optional","sourceSection":"Verb + うち","word":"いる","reading":"いる","meaning":"to be; to stay (for a living being)"} -->
+<!-- grammar-card: {"id":"negative-before-change","kind":"concept","format":"qa","priority":"essential","sourceSection":"Verb + うち","rule":"A negative state before うちに can mean before the opposite change occurs","example":"Why does 暗くならないうちに帰ろう mean go home before it gets dark?","answer":"It means act while the state of not yet becoming dark still holds, before that state ends.","explanation":"The negative clause describes the still-available window, not a command never to go home."} -->
 
 うち can also follow verbs. When it indicates a time period, it's common to attach to いる, the 〜ている form, 〜れる form, and 〜ない form of a verb.
 
@@ -74,11 +92,14 @@ When うち follows a な-adjective, you'll need to add な between them.
 
   - Let's go home before it gets dark.
 
-<!-- grammar-card: {"rule":"うちに means 'while the condition still holds'","hint":"うち","example":"明(あか)るい___に帰(かえ)りましょう。","answer":"うち","explanation":"明るいうちに urges going home before the light goes."} -->
+<!-- grammar-card: {"id":"while-still-light","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Verb + うち","rule":"うちに means 'while the condition still holds'","hint":"before it gets dark","example":"明(あか)るい___に帰(かえ)りましょう。","answer":"うち","explanation":"明るいうちに urges going home while it is still light, before that condition ends."} -->
 
 ## Uses of うち
 
 ### うち For Narrowing Down Items
+
+<!-- grammar-card: {"id":"subset-range","kind":"rule","format":"cloze","priority":"essential","sourceSection":"うち For Narrowing Down Items","rule":"のうち identifies the total range from which a subset is selected","example":"Two of three are pianists: 三人___二人はピアニストです。","answer":"のうち","explanation":"三人のうち establishes the total of three; 二人 is the subset."} -->
+<!-- grammar-card: {"id":"comparison-range","kind":"concept","format":"qa","priority":"optional","sourceSection":"うち For Narrowing Down Items","rule":"のうちで can set the range for a comparison","example":"What does 五人のうちで specify in 彼は五人のうちで一番背が高い?","answer":"The five people form the comparison group within which he is tallest.","explanation":"で can make the comparison range explicit; の中で can also set this comparison group."} -->
 
 When the particle の and the word うち follow a specific number of something, it's used like "between," "among," or "out of (a specific number)" in English. It indicates a range of items in which you make a differentiation between them.
 
@@ -115,6 +136,11 @@ Note this うち can be replaced with 中, as in:
 To see the difference between うち and 中, check out this article!
 
 ### うち For A Period In Time
+
+<!-- vocab-card: {"id":"vocab-soto","priority":"optional","sourceSection":"うち For A Period In Time","word":"外","reading":"そと","meaning":"outside"} -->
+<!-- vocab-card: {"id":"vocab-wasureru","priority":"optional","sourceSection":"うち For A Period In Time","word":"忘れる","reading":"わすれる","meaning":"to forget"} -->
+<!-- grammar-card: {"id":"inside-outside-cue","kind":"concept","format":"qa","priority":"optional","sourceSection":"うち For A Period In Time","rule":"The inside/outside image cues the end of a temporal opportunity","example":"How does the image of an inside and an outside help with 忘れないうちにメモしておこう?","answer":"The inside is the time when the memory still remains; the outside is the later state after forgetting, so make the note before crossing that boundary.","explanation":"This is a memory aid for the closing window, not a requirement to know exact clock times."} -->
+<!-- grammar-card: {"id":"uchi-other-particles","kind":"concept","format":"qa","priority":"optional","sourceSection":"うち For A Period In Time","rule":"Temporal うち is not restricted to the particle に","example":"In 若いうちは苦労しておいた方がいい, what does は do after うち?","answer":"It makes the period of still being young the topic of the advice.","explanation":"が can also follow うち, as in 叱られるうちが華だ, where the period is the subject."} -->
 
 When うち gets used for a scope of time, it works like "while it's (still)〜,"  as in:
 
@@ -154,6 +180,9 @@ You may also see this use of うち with other particles, such as the subject ma
 
 ### 〜うちに VS 〜間に
 
+<!-- vocab-card: {"id":"vocab-tsumetai","priority":"optional","sourceSection":"〜うちに VS 〜間に","word":"冷たい","reading":"つめたい","meaning":"cold to the touch; cold (a drink, for example)"} -->
+<!-- grammar-card: {"id":"uchi-aida-contrast","kind":"concept","format":"qa","priority":"essential","sourceSection":"〜うちに VS 〜間に","rule":"うちに emphasizes the continuing condition while 間に identifies an interval","example":"Why is 冷たいうちに飲んでね more natural than 冷たい間に飲んでね in the juice example?","answer":"It urges drinking before the cold condition changes, rather than treating coldness as a clearly delimited time interval.","explanation":"Both can work for a bounded nap, but うち highlights the opportunity before it ends; 間 focuses on the interval."} -->
+
 You've learned how 〜うちに expresses the time before a given action or state ends. When what comes before 〜うちに is something that indicates an interval of time, 〜うちに can be replaced with 〜間に.
 
 For example, imagine your baby finally falls asleep and you want to eat your lunch while they are still napping. In this case, you can either use 〜うちに and 〜間に and say:
@@ -183,6 +212,8 @@ In the same way, if you want to do some weeding outside before it gets hot, う�
   - I'm going to pull weeds before it gets too hot.
 
 #### Tense of the Clause Before うち
+
+<!-- grammar-card: {"id":"nonpast-before-uchi","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Tense of the Clause Before うち","rule":"The ongoing clause before temporal うち normally uses nonpast even with a past main event","example":"My phone was stolen while I was sleeping: 寝て___うちに、iPhoneを盗まれた。","answer":"いる","explanation":"寝ている views sleeping as ongoing at the time of the theft. This is the ordinary pattern, not a claim that no exceptional past contexts exist."} -->
 
 As you've seen, うち can be preceded by different types of words. One last note is that the clause that comes before うち usually has to be non-past tense, even if the main clause is in the past tense.
 
@@ -219,8 +250,6 @@ by Seiichi Makino and Michio Tsutsui
 <!-- quiz: {"type":"multiple-choice","question":"What does \"今年のうちに日本人の友だちをつくる！\" mean?","options":["By the end of this year, I'll make some Japanese friends!","Out of three eggs, one was broken.","one of the two things","I finished my homework by the end of the summer vacation."],"answer":0} -->
 
 <!-- quiz: {"type":"multiple-choice","question":"What does \"二つのうち一つ\" mean?","options":["one of the two things","Out of three eggs, one was broken.","By the end of this year, I'll make some Japanese friends!","I finished my homework by the end of the summer vacation."],"answer":0} -->
-
-<!-- grammar-card: {"rule":"うち can also mean one's own home or in-group","hint":"my home","example":"___の犬(いぬ)はとても大(おお)きい。","answer":"うち","explanation":"うちの犬 means the dog at my house — a completely different sense of うち."} -->
 
 ## Sources
 

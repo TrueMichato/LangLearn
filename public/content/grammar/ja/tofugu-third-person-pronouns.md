@@ -1,5 +1,7 @@
 # Third Person Pronouns (He/She/They)
 
+<!-- vocab-inventory: {"mode":"explicit"} -->
+
 > **Source:** Content from [Tofugu](https://www.tofugu.com/japanese-grammar/third-person-pronouns/). For personal study.
 
 Japanese Third-Person Pronouns: Ways of Saying "He/She" And More
@@ -36,6 +38,14 @@ There's some ambiguity around the words — 彼 and 彼女 can also mean "boyfr
 
 As third-person pronouns, 彼 and 彼女 are not used as often as "he" and "she" in English, especially in speaking. This is because pronouns (or rather, subjects and objects in general) are frequently omitted in Japanese. When you do refer to someone, it's more common to use their name, or social or family role, than a third-person pronoun (and you can do so repeatedly without it sounding redundant, unlike in English). So 彼 and 彼女 don't sound like neutral third-person pronouns in spoken Japanese. Depending on the context, person, and other factors, using these pronouns might be taken as a sign of intelligence, arrogance, or westernization. For more details about 彼 and 彼女, check out our podcast episode about it.
 
+<!-- vocab-card: {"id":"vocab-kare","word":"彼","reading":"かれ","meaning":"he; him; boyfriend (depending on context)","priority":"essential","sourceSection":"彼 (かれ) and 彼女 (かのじょ)"} -->
+<!-- vocab-card: {"id":"vocab-kanojo","word":"彼女","reading":"かのじょ","meaning":"she; her; girlfriend (depending on context)","priority":"essential","sourceSection":"彼 (かれ) and 彼女 (かのじょ)"} -->
+<!-- vocab-card: {"id":"vocab-kareshi","word":"彼氏","reading":"かれし","meaning":"boyfriend","priority":"optional","sourceSection":"彼 (かれ) and 彼女 (かのじょ)"} -->
+<!-- grammar-card: {"id":"partner-ambiguity","kind":"concept","format":"qa","priority":"essential","sourceSection":"彼 (かれ) and 彼女 (かのじょ)","rule":"彼 and 彼女 can name romantic partners as well as third-person referents","example":"Why might ケンイチの彼 and 私の彼女 refer to partners rather than simply his he and my she?","answer":"In this relationship context, 彼 means boyfriend and 彼女 means girlfriend; 彼氏 is a more explicit common word for boyfriend.","explanation":"Resolve the lexical meaning from context rather than translating each as a neutral English pronoun."} -->
+
+<!-- grammar-card: {"id":"kare-reference","kind":"rule","format":"cloze","priority":"optional","sourceSection":"彼 (かれ) and 彼女 (かのじょ)","rule":"彼 is the third-person pronoun for a man","hint":"Use the kanji pronoun for an already identified man.","example":"___はベーコンが好き。","answer":"彼","explanation":"彼 (かれ) can refer back to a man; context may instead favor a name or no explicit pronoun."} -->
+<!-- grammar-card: {"id":"kanojo-reference","kind":"rule","format":"cloze","priority":"optional","sourceSection":"彼 (かれ) and 彼女 (かのじょ)","rule":"彼女 refers to a woman already mentioned","hint":"Use the kanji pronoun referring back to Mami.","example":"あっちにいるのが、マミさん。___はベーコン売り場の担当ね。","answer":"彼女","explanation":"彼女 (かのじょ) picks Mami up from the sentence before; this is not the girlfriend sense."} -->
+
 ### こいつ, そいつ and あいつ
 
 Some Japanese third-person pronouns are actually "demonstratives" — words that help to point something or someone out, kind of like "this" and "that" in English. Japanese demonstratives are easy to recognize since they all start with こ〜, そ〜, or あ〜.
@@ -50,11 +60,11 @@ Keep in mind that they're *very* casual words, with a similar vibe to "this guy"
 
 Since they could come off as rude, using words for directions, such as こちら (here), そちら (there) and あちら (over there) is more appropriate in polite Japanese, because of the indirectness of these words.
 
-<!-- grammar-card: {"rule":"そいつ is a rough third-person reference","hint":"that guy, rude","example":"___が来なければ、面接うまく行ったのに！","answer":"そいつ","explanation":"そいつ conveys the speaker's irritation in a way that 彼 would not."} -->
-
-<!-- grammar-card: {"rule":"彼 is the third-person pronoun for a man","hint":"he","example":"___はベーコンが好き。","answer":"彼","explanation":"彼 refers back to a male person both speakers already know about."} -->
-
-<!-- grammar-card: {"rule":"彼女 refers to a woman already mentioned","hint":"she","example":"あっちにいるのが、マミさん。___はベーコン売り場の担当ね。","answer":"彼女","explanation":"彼女 picks Mami up from the sentence before."} -->
+<!-- vocab-card: {"id":"vocab-koitsu","word":"こいつ","reading":"こいつ","meaning":"this person; this guy (very casual, potentially rude; not gender-specific)","priority":"optional","sourceSection":"こいつ, そいつ and あいつ"} -->
+<!-- vocab-card: {"id":"vocab-soitsu","word":"そいつ","reading":"そいつ","meaning":"that person; that guy (very casual, potentially rude; not gender-specific)","priority":"optional","sourceSection":"こいつ, そいつ and あいつ"} -->
+<!-- vocab-card: {"id":"vocab-aitsu","word":"あいつ","reading":"あいつ","meaning":"that person over there (very casual, potentially rude; not gender-specific)","priority":"optional","sourceSection":"こいつ, そいつ and あいつ"} -->
+<!-- grammar-card: {"id":"demonstrative-social-tone","kind":"concept","format":"qa","priority":"essential","sourceSection":"こいつ, そいつ and あいつ","rule":"こいつ-family references are casual and may convey hostility or close familiarity","example":"Do こいつ, そいつ, and あいつ inherently mean a male person or guarantee affectionate intent?","answer":"No. They are not gender-specific, and context can make them hostile or affectionately familiar; they can be rude.","explanation":"こちら, そちら, and あちら are more indirect choices in polite introductions or reference."} -->
+<!-- grammar-card: {"id":"soitsu-reference","kind":"rule","format":"cloze","priority":"optional","sourceSection":"こいつ, そいつ and あいつ","rule":"そいつ is a rough third-person reference","hint":"Use the casual そ-series person reference.","example":"___が来なければ、面接うまく行ったのに！","answer":"そいつ","explanation":"そいつ conveys irritation here. 来なければ is read こなければ, preserving 来る's irregular reading."} -->
 
 ## Beyond The Basics
 
@@ -67,6 +77,8 @@ Plural suffixes carry different nuances, mainly the level of formality. So some 
 Compatibility also depends on how pronouns and suffixes sound together when they're paired up. For example, 彼たち is less common than 彼女たち, even though 彼 and 彼女 are generally considered to be a pair, and don't have any obvious difference in politeness level. 彼ら is a far more frequently used than 彼たち as the plural version of 彼.
 
 To give you a clearer picture, below is a mix-and-match chart of common pronouns and suffixes! △ shows that the combination works okay, but is not very common. ✖️ shows that the combination is rarely used.
+
+<!-- grammar-card: {"id":"third-person-plurals","kind":"concept","format":"qa","priority":"optional","sourceSection":"Plural Forms of Third-Person Pronouns","rule":"Common plural combinations depend on the pronoun, not just a freely chosen suffix","example":"Which ordinary plural forms pair with 彼 and 彼女 in this lesson?","answer":"彼ら (かれら) and 彼女たち (かのじょたち); 彼女ら is also possible.","explanation":"彼たち is less common. Honorific 方 is not normally attached to these nonhonorific bases; こいつら and related forms remain very casual."} -->
 
   
    
@@ -165,6 +177,8 @@ So if you use 彼 to say "his," it's going to look like:
 
 There are many more possible combinations of third-person pronouns and particles, but here's a short list of major ones to give you an idea!
 
+<!-- grammar-card: {"id":"third-person-possessive","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Third-Person Pronouns and Particles","rule":"Particles mark grammatical roles while 彼 and 彼女 remain unchanged","example":"His book: 彼___本。","answer":"の","explanation":"の marks possession, while が, は, and を mark subject, topic, and object respectively. There is no separate pronoun form corresponding to English him."} -->
+
   
    Subject
    
@@ -226,6 +240,8 @@ One of the reasons that third-person pronouns are not as commonly used in Japane
 
 In this example, 彼に (him) can be omitted. The topic of this whole chunk of conversation is Cameron, as he is brought up in the previous sentence and nobody else is mentioned here. So it's obvious that the following sentence "I had something that I wanted to ask" is referring to him. Because of this, third-person pronouns can often be omitted in Japanese, unless you want to clarify that it's "him" or "her" that you're talking about, or you want to change topics.
 
+<!-- grammar-card: {"id":"omit-third-person","kind":"concept","format":"qa","priority":"essential","sourceSection":"Third-Person Pronouns Can Be Omitted (Especially 彼 and 彼女)","rule":"An understood third-person reference can be omitted when the conversational topic supplies it","example":"After Cameron has been established as the topic, must 聞きたいことがあった include 彼に to mean I wanted to ask him?","answer":"No. The context can supply Cameron as the intended person.","explanation":"Add a name or other reference if the person would otherwise be unclear."} -->
+
 ### Japanese Third-Person Pronouns Are Not Necessary To Avoid Redundancy
 
 In English, third-person pronouns are often used to avoid using people's names again and again, as this can sound repetitive. In Japanese, it's more common to use people's names — or family or social roles — repeatedly in conversation, and so they don't give the listener the same feeling of redundancy. Let's take a look at an example.
@@ -235,6 +251,8 @@ In English, third-person pronouns are often used to avoid using people's names a
   - Has Cameron already left? I had something that I wanted to ask him about.
 
 See how キャメロン is repeated in Japanese, while the second appearance is replaced with "him" in the English translation? Using Cameron's name twice in a row would have sounded a bit unnatural in English, since it's preferable to avoid repetition. However, this works just fine in Japanese, especially in conversation.
+
+<!-- grammar-card: {"id":"repeat-name","kind":"concept","format":"qa","priority":"essential","sourceSection":"Japanese Third-Person Pronouns Are Not Necessary To Avoid Redundancy","rule":"Repeating a name or role in Japanese need not be replaced by an English-style pronoun","example":"Is repeating キャメロン in consecutive Japanese sentences necessarily an error to fix with 彼?","answer":"No. Repeating a name or role is natural, particularly in conversation.","explanation":"Japanese does not share the same pressure as English to alternate every repeated name with he or she."} -->
 
 ---
 
@@ -274,6 +292,19 @@ Second-Person Pronouns
 帰っちゃった (かえっちゃった) — went home (godan verb / ちゃう form / past tense)
 
 聞きたい (ききたい) — want to ask (godan verb / desiderative 〜たい form)
+
+<!-- vocab-card: {"id":"vocab-bekon","word":"ベーコン","reading":"べーこん","meaning":"bacon","priority":"optional","sourceSection":"Vocabulary"} -->
+<!-- vocab-card: {"id":"vocab-suki","word":"好き","reading":"すき","meaning":"liked; favorite","priority":"optional","sourceSection":"Vocabulary"} -->
+<!-- vocab-card: {"id":"vocab-uriba","word":"売り場","reading":"うりば","meaning":"sales area; counter; department","priority":"optional","sourceSection":"Vocabulary"} -->
+<!-- vocab-card: {"id":"vocab-tantou","word":"担当","reading":"たんとう","meaning":"being in charge; person responsible","priority":"optional","sourceSection":"Vocabulary"} -->
+<!-- vocab-card: {"id":"vocab-double-date","word":"ダブルデート","reading":"だぶるでーと","meaning":"double date","priority":"optional","sourceSection":"Vocabulary"} -->
+<!-- vocab-card: {"id":"vocab-iku","word":"行く","reading":"いく","meaning":"to go","priority":"optional","sourceSection":"Vocabulary"} -->
+<!-- vocab-card: {"id":"vocab-omou","word":"思う","reading":"おもう","meaning":"to think","priority":"optional","sourceSection":"Vocabulary"} -->
+<!-- vocab-card: {"id":"vocab-kuru","word":"来る","reading":"くる","meaning":"to come","priority":"optional","sourceSection":"Vocabulary"} -->
+<!-- vocab-card: {"id":"vocab-mensetsu","word":"面接","reading":"めんせつ","meaning":"interview","priority":"optional","sourceSection":"Vocabulary"} -->
+<!-- vocab-card: {"id":"vocab-umaku-iku","word":"うまく行く","reading":"うまくいく","meaning":"to go well","priority":"optional","sourceSection":"Vocabulary"} -->
+<!-- vocab-card: {"id":"vocab-kaeru","word":"帰る","reading":"かえる","meaning":"to return home","priority":"optional","sourceSection":"Vocabulary"} -->
+<!-- vocab-card: {"id":"vocab-kiku","word":"聞く","reading":"きく","meaning":"to hear; to ask","priority":"optional","sourceSection":"Vocabulary"} -->
 
 #### Sources and Additional Readings
 

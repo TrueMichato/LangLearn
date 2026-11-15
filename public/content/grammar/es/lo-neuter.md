@@ -1,5 +1,7 @@
 # Lo + Adjetivo (The Neuter Article 'Lo')
 
+<!-- vocab-inventory: {"mode":"explicit"} -->
+
 Spanish has a special **neuter article** — **lo** — that has no English equivalent. It doesn't refer to a masculine or feminine noun; instead, it **turns adjectives, participles, or possessives into abstract nouns**. Once you internalize **lo**, your Spanish leaps in sophistication.
 
 ## The Core Construction
@@ -12,7 +14,14 @@ Spanish has a special **neuter article** — **lo** — that has no English equi
 - **Lo malo** — the bad part
 - **Lo interesante** — the interesting thing
 
-The adjective is always **masculine singular** — it's not agreeing with any noun; it's used as a generic abstract concept.
+In this abstract **lo + adjective** pattern, the adjective has the **masculine singular form**; there is no masculine noun being referred to. Other constructions, such as emphatic *lo buenas que son*, are different.
+
+<!-- vocab-card: {"id":"vocab-lo-importante","word":"lo importante","meaning":"the important thing; what is important","priority":"essential","sourceSection":"The Core Construction"} -->
+<!-- vocab-card: {"id":"vocab-lo-dificil","word":"lo difícil","meaning":"the difficult part; what is difficult","priority":"optional","sourceSection":"The Core Construction"} -->
+<!-- vocab-card: {"id":"vocab-lo-mejor","word":"lo mejor","meaning":"the best thing","priority":"optional","sourceSection":"The Core Construction"} -->
+<!-- vocab-card: {"id":"vocab-lo-malo","word":"lo malo","meaning":"the bad part","priority":"optional","sourceSection":"The Core Construction"} -->
+<!-- vocab-card: {"id":"vocab-lo-interesante","word":"lo interesante","meaning":"the interesting thing","priority":"optional","sourceSection":"The Core Construction"} -->
+<!-- grammar-card: {"id":"abstract-adjective","kind":"rule","format":"cloze","priority":"essential","sourceSection":"The Core Construction","rule":"Lo + masculine singular adjective creates an abstract noun: 'the [adjective] thing'","example":"___ ___ es que estamos juntos. (The important thing is that we're together)","answer":"Lo importante","explanation":"This abstract pattern uses the masculine singular adjective form rather than agreeing with a feminine or plural noun."} -->
 
 ## Typical Sentence Patterns
 
@@ -37,6 +46,8 @@ The pronoun **lo** refers to a specific masculine noun or whole idea ("it"). The
 - **Lo veo** → pronoun (in front of verb) — I see it.
 - **Lo bueno es...** → article (in front of adjective) — The good thing is...
 
+<!-- grammar-card: {"id":"article-versus-object","kind":"concept","format":"qa","priority":"essential","sourceSection":"Don't Confuse with the Object Pronoun \"lo\"","rule":"Abstract article lo and direct-object lo have different jobs","example":"How does lo function differently in Lo veo and Lo bueno es estudiar?","answer":"Lo veo uses an object pronoun, him or it; Lo bueno uses the neuter article to form the abstract good thing.","explanation":"Look at the syntax and meaning, not merely the spelling lo."} -->
+
 ## Lo + Que (What…)
 
 > **Lo que** = "what" (as a noun clause)
@@ -45,7 +56,7 @@ The pronoun **lo** refers to a specific masculine noun or whole idea ("it"). The
 - **No entendí lo que dijiste** — I didn't understand what you said.
 - **Hago lo que puedo** — I do what I can.
 
-**Lo que** = a relative pronoun chunk meaning "what / the thing that". It's how Spanish translates **"what"** when it's not a direct question.
+**Lo que** is a relative expression meaning "what / the thing that". It is not the interrogative **qué**, which can also occur in an indirect question (*No sé qué quiere*).
 
 | English | Spanish |
 |---|---|
@@ -54,7 +65,8 @@ The pronoun **lo** refers to a specific masculine noun or whole idea ("it"). The
 | Tell me what you did. | Dime **lo que** hiciste. |
 | What I need is time. | **Lo que** necesito es tiempo. |
 
-<!-- grammar-card: {"rule":"Lo + masculine singular adjective creates an abstract noun: 'the [adjective] thing'","hint":"Lo importante = the important thing. Lo bueno = the good part.","example":"___ ___ es que estamos juntos. (The important thing is that we're together)","answer":"Lo importante","explanation":"'Lo + adjective' (masculine singular) creates abstract nouns. 'Lo importante' = 'what's important' / 'the important thing'. Never agrees with feminine or plural — always masculine singular."} -->
+<!-- vocab-card: {"id":"vocab-lo-que","word":"lo que","meaning":"what; the thing that (relative expression)","priority":"essential","sourceSection":"Lo + Que (What…)"} -->
+<!-- grammar-card: {"id":"relative-what","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Lo + Que (What…)","rule":"Lo que introduces a relative noun clause meaning what or the thing that","example":"No me gusta ___ ___ dijiste. (I don't like what you said)","answer":"lo que","explanation":"The fixed clause already contains dijiste; adding another que would produce incorrect lo que que dijiste.","legacyAliases":[{"rule":"Lo que = 'what' (as a noun clause); lo de = 'the thing about / matter of'","example":"No me gusta ___ ___ que dijiste. (I don't like what you said)"}]} -->
 
 ## Lo de + Noun ("The Thing About / The Matter of")
 
@@ -67,12 +79,17 @@ The pronoun **lo** refers to a specific masculine noun or whole idea ("it"). The
 
 This is a common conversational shortcut to refer to a topic, event, or situation without spelling it out.
 
+<!-- vocab-card: {"id":"vocab-lo-de","word":"lo de","meaning":"the matter of; the thing about (a topic or situation)","priority":"optional","sourceSection":"Lo de + Noun (\"The Thing About / The Matter of\")"} -->
+<!-- grammar-card: {"id":"topic-contraction","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Lo de + Noun (\"The Thing About / The Matter of\")","rule":"De plus el still contracts inside lo del","example":"No me hables de lo ___ trabajo. (the work matter; de + el)","answer":"del","explanation":"Lo de can introduce a topic; de el trabajo contracts to del trabajo."} -->
+
 ## Lo de + Infinitive ("The Whole Thing of")
 
 - **Lo de estudiar todas las noches me cansa** — The whole studying-every-night thing is wearing me out.
 - **No me gusta lo de levantarme temprano** — I don't like the getting-up-early thing.
 
 The infinitive turns into a kind of noun phrase, and **lo de** introduces it as a topic.
+
+<!-- grammar-card: {"id":"activity-topic","kind":"concept","format":"qa","priority":"optional","sourceSection":"Lo de + Infinitive (\"The Whole Thing of\")","rule":"Lo de can introduce an infinitival activity as a conversational topic","example":"What does lo de introduce in No me gusta lo de levantarme temprano?","answer":"The activity or whole business of getting up early, treated as a topic.","explanation":"Lo de is not restricted to an ordinary noun or a person's name."} -->
 
 <!-- quiz: {"type":"multiple-choice","question":"What does '¿Sabes lo de Marta?' mean?","options":["Do you know Marta?","Do you know what Marta said?","Did you hear about (the thing with) Marta?","Do you know where Marta is?"],"answer":2} -->
 
@@ -85,6 +102,9 @@ The infinitive turns into a kind of noun phrase, and **lo de** introduces it as 
 
 This is the standard way to form abstract superlatives.
 
+<!-- grammar-card: {"id":"abstract-superlative","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Lo Más / Lo Menos + Adjective (Superlatives)","rule":"Lo más or lo menos plus an adjective forms an abstract extreme","example":"___ ___ importante es descansar. (The most important thing)","answer":"Lo más","explanation":"Lo menos importante would instead mean the least important thing."} -->
+<!-- vocab-card: {"id":"vocab-lo-mas-pronto-posible","word":"lo más pronto posible","meaning":"as soon as possible","priority":"optional","sourceSection":"Lo Más / Lo Menos + Adjective (Superlatives)"} -->
+
 ## Mini-Dialogue
 
 > — ¿Qué piensas de la situación? _(keh PYEHN-sahs deh lah see-twah-SYOHN)_
@@ -95,8 +115,6 @@ This is the standard way to form abstract superlatives.
 > Translation: "What do you think about the situation?" — "Look, the important thing is not to lose calm. The bad part is we don't know what will happen." — "Yes, and what worries me most is the money issue." — "Don't worry. We'll do what we can. The best thing would be to talk to a lawyer as soon as possible."
 
 Notice **lo + adjective** (lo importante, lo malo, lo mejor), **lo que** (lo que más, lo que podamos), **lo de + noun** (lo del dinero), and **lo más + adjective** (lo más pronto) all in one short exchange.
-
-<!-- grammar-card: {"rule":"Lo que = 'what' (as a noun clause); lo de = 'the thing about / matter of'","hint":"Use 'lo que' before a clause (verb), 'lo de' before a noun.","example":"No me gusta ___ ___ que dijiste. (I don't like what you said)","answer":"lo que","explanation":"'Lo que dijiste' = 'what you said' — a noun clause introduced by 'lo que'. Use 'lo de' instead when followed by a noun: 'lo de ayer' (the thing about yesterday)."} -->
 
 ## Sources
 

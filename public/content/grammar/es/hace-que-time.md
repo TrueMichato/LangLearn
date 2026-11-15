@@ -1,5 +1,7 @@
 # Hace + Time + Que / Desde Hace (Time Expressions)
 
+<!-- vocab-inventory: {"mode":"explicit"} -->
+
 The Spanish verb **hacer** is recycled for time expressions in three closely related — and easily confused — constructions. The critical distinction is between **"for [time]"** (ongoing) and **"[time] ago"** (one-time event). The tense you use with **hace** changes the meaning completely.
 
 ## Construction 1: Hace + Time + Que + Present (Ongoing)
@@ -10,7 +12,11 @@ The Spanish verb **hacer** is recycled for time expressions in three closely rel
 - **Hace una hora que espero** — I've been waiting for an hour.
 - **Hace mucho tiempo que vivo aquí** — I've been living here for a long time.
 
-The action **started in the past and is still happening**. Spanish uses the **present** tense here — never the perfect.
+The action **started in the past and is still happening**. This construction uses the **present** for that ongoing situation; it is not a general ban on perfect tenses in time expressions.
+
+<!-- grammar-card: {"id":"ongoing-present","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Construction 1: Hace + Time + Que + Present (Ongoing)","rule":"Ongoing hace… que uses the present for an action continuing now","example":"Hace dos años que ___ español. (estudiar; I still study it.)","answer":"estudio","explanation":"Spanish present describes the ongoing situation where English uses have been studying."} -->
+
+<!-- grammar-card: {"id":"ongoing-knowing","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Construction 1: Hace + Time + Que + Present (Ongoing)","rule":"Hace + time + que + present = 'for [time]' (still ongoing) — equivalent to 'desde hace + time'","example":"Hace dos años ___ a Andrés. (I've known Andrés for 2 years)","answer":"que conozco","explanation":"Use que and present conozco to connect the duration to knowing Andrés now."} -->
 
 ## Construction 2: Present + Desde Hace + Time (Same Meaning)
 
@@ -26,6 +32,9 @@ This is the **mirror version** of Construction 1 — same meaning, different wor
 |---|---|
 | **Hace dos años que estudio español** | **Estudio español desde hace dos años** |
 | Time first, then **que**, then verb | Verb first, then **desde hace**, then time |
+
+<!-- vocab-card: {"id":"vocab-desde-hace","word":"desde hace","meaning":"for (an elapsed duration continuing to the reference point)","priority":"essential","sourceSection":"Construction 2: Present + Desde Hace + Time (Same Meaning)"} -->
+<!-- grammar-card: {"id":"desde-hace-equivalent","kind":"rule","format":"qa","priority":"essential","sourceSection":"Construction 2: Present + Desde Hace + Time (Same Meaning)","rule":"Present plus desde hace expresses the same ongoing duration","example":"Rewrite Hace dos años que estudio español starting with Estudio español.","answer":"Estudio español desde hace dos años.","explanation":"The duration follows desde hace; the activity remains present."} -->
 
 <!-- quiz: {"type":"multiple-choice","question":"Which means 'I've been working here for three years'?","options":["Hace tres años trabajé aquí","Hace tres años que trabajo aquí","Trabajé desde hace tres años","Hace tres años trabajaba aquí"],"answer":1} -->
 
@@ -43,6 +52,9 @@ The action is **a one-time completed event** in the past. Spanish uses the **pre
 - *Hace dos años estudié en España* ✓ (more common)
 - *Hace dos años que estudié en España* ✓ (also fine, slightly emphatic)
 
+<!-- grammar-card: {"id":"ago-preterite","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Construction 3: Hace + Time + Preterite (\"Ago\")","rule":"Hace with a completed preterite event measures time ago","example":"Hace una hora ___. (llegar; I arrived an hour ago.)","answer":"llegué","explanation":"The completed arrival contrasts with an activity still ongoing now."} -->
+<!-- grammar-card: {"id":"que-not-sole-test","kind":"concept","format":"qa","priority":"optional","sourceSection":"Construction 3: Hace + Time + Preterite (\"Ago\")","rule":"Que alone does not distinguish duration from time ago","example":"Can hace… que occur with a preterite event meaning time ago?","answer":"Yes. Que may appear there too; inspect the verb tense and context, not just que.","explanation":"Hace dos años que estudié en España can still describe a completed past event."} -->
+
 ## The Critical Distinction
 
 The same opening — **hace dos años** — produces **opposite meanings** depending on the verb tense.
@@ -54,7 +66,8 @@ The same opening — **hace dos años** — produces **opposite meanings** depen
 
 This is the single most important rule of the whole topic. Learn it and you've mastered 90% of it.
 
-<!-- grammar-card: {"rule":"Hace + time + present = 'for' (ongoing); Hace + time + preterite = 'ago' (one-time)","hint":"The verb tense determines whether it's duration or distance into the past.","example":"___ dos años que vivo en Madrid. (I've been living in Madrid for 2 years)","answer":"Hace","explanation":"With the present tense ('vivo'), 'hace 2 años que' means 'for 2 years (still ongoing)'. If it were 'viví' (preterite), the same phrase would mean 'I lived in Madrid 2 years ago' (one-time past event)."} -->
+<!-- grammar-card: {"id":"hace-duration","kind":"rule","format":"cloze","priority":"optional","sourceSection":"The Critical Distinction","rule":"Hace + time + present = 'for' (ongoing); Hace + time + preterite = 'ago' (one-time)","example":"___ dos años que vivo en Madrid. (I've been living in Madrid for 2 years)","answer":"Hace","explanation":"Vivo describes a situation continuing now; viví would present a completed past situation."} -->
+<!-- grammar-card: {"id":"for-versus-ago","kind":"concept","format":"qa","priority":"essential","sourceSection":"The Critical Distinction","rule":"The activity tense distinguishes ongoing duration from a completed past event","example":"How do Hace dos años que estudio and Hace dos años estudié differ?","answer":"The first means I have been studying for two years and still do; the second places completed studying two years ago.","explanation":"Both start with the same time expression, but the activity tense changes its interpretation."} -->
 
 ## Questions: How Long?
 
@@ -66,6 +79,8 @@ To ask "for how long?" or "how long ago?":
 
 The verb tense in the question signals which meaning is intended.
 
+<!-- grammar-card: {"id":"question-tense","kind":"concept","format":"qa","priority":"optional","sourceSection":"Questions: How Long?","rule":"Present and preterite questions ask different kinds of how long","example":"Does ¿Cuánto tiempo hace que llegaste? ask about an ongoing arrival?","answer":"No. It asks how long ago you arrived; llegaste is preterite.","explanation":"A present activity such as estudias instead asks for duration continuing now; desde cuándo asks since when."} -->
+
 ## Negative: Time Without an Action
 
 > **Hace + time + que + no + verb (present)** = "I haven't done X for [time]"
@@ -75,6 +90,8 @@ The verb tense in the question signals which meaning is intended.
 
 This **competes** with *llevar + sin* — both are correct:
 - *Hace dos meses que no lo veo* = *Llevo dos meses sin verlo*
+
+<!-- grammar-card: {"id":"negative-time","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Negative: Time Without an Action","rule":"No before the present verb marks a duration without an action","example":"Hace dos meses que ___ lo veo. (I have not seen him.)","answer":"no","explanation":"This is equivalent in meaning to llevo dos meses sin verlo."} -->
 
 <!-- quiz: {"type":"multiple-choice","question":"Translate: 'I called you an hour ago.'","options":["Hace una hora que te llamo","Hace una hora te llamé","Te llamé desde hace una hora","Hace una hora te llamaba"],"answer":1} -->
 
@@ -90,8 +107,6 @@ This **competes** with *llevar + sin* — both are correct:
 > Translation: "Have you been living in Barcelona for long?" — "Yes, I've been living here for six years." — "Wow! And when did you move?" — "Exactly six years ago; I arrived on a day like today." — "And your family, how long has it been since you've seen them?" — "Ugh, I haven't visited them for three months."
 
 Notice all three constructions appearing naturally: **hace + present** (ongoing), **desde hace** (mirror form), **hace + preterite** (ago), and the **negative** (haven't done X).
-
-<!-- grammar-card: {"rule":"Hace + time + que + present = 'for [time]' (still ongoing) — equivalent to 'desde hace + time'","hint":"Hace dos años que estudio = Estudio desde hace dos años.","example":"Hace dos años ___ a Andrés. (I've known Andrés for 2 years)","answer":"que conozco","explanation":"Use 'hace + tiempo + que + present' for ongoing actions. 'Hace dos años que conozco a Andrés' = 'I've known Andrés for 2 years (and still do)'. The 'que' is required in this construction."} -->
 
 ## Sources
 

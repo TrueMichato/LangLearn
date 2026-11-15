@@ -1,23 +1,31 @@
 # Cheat Sheet: Accent Marks (Tildes) — All Rules
 
+<!-- vocab-inventory: {"mode":"explicit"} -->
+
 Spanish accent marks (tildes) are **not decoration** — they are stress signals and word-distinguishers governed by a small, predictable rule set. Master these rules once and you'll never have to guess again.
 
 > 📌 This is a quick-reference summary. For the full introduction to pronunciation, see lesson 1 (Pronunciation & Accent Marks).
 
 ## The Three Stress Rules
 
-Every Spanish word has one stressed syllable. The position of that syllable determines whether a written tilde is needed.
+For ordinary stressed words, the position of the stressed syllable determines the general accent rule. Unstressed function words and diacritic contrasts need separate treatment.
 
 | Stress Pattern | Stressed Syllable | Default (no tilde) when… | Written tilde required when… | Examples |
 |---|---|---|---|---|
-| **Aguda** | Last syllable | Word ends in any consonant **except n or s** | Word ends in **vowel, n, or s** | ca**fé**, can**ción**, fran**cés** vs. ciu**dad**, re**loj** |
-| **Llana / Grave** | Second-to-last | Word ends in **vowel, n, or s** | Word ends in any consonant **except n or s** | **ca**sa, **co**men vs. **ár**bol, **lá**piz |
+| **Aguda** | Last syllable | Other-consonant ending, including final y and consonant + n/s | Vowel, or n/s **not preceded by a consonant** | ca**fé**, can**ción**, fran**cés** vs. ciu**dad**, re**loj** |
+| **Llana / Grave** | Second-to-last | Vowel, or n/s **not preceded by a consonant** | Other-consonant ending, including final y and consonant + n/s | **ca**sa, **co**men vs. **ár**bol, **lá**piz |
 | **Esdrújula** | Third-to-last | (never) | **Always** | **pá**jaro, **mé**dico, te**lé**fono |
 | **Sobreesdrújula** | Fourth-to-last or earlier (usually verb + pronouns) | (never) | **Always** | **dí**gamelo, **ex**plíquemelo, **cóm**pratelo |
 
 > 💡 Quick mnemonic: **n, s, vowel → llana default; other consonants → aguda default.** Anything that breaks the default needs a tilde.
 
 The n/s shortcut assumes that n or s is **not preceded by another consonant**. Words ending in a consonant cluster follow the other-consonant pattern: **robots** is aguda without a tilde, while **bíceps** is llana with one. Final **y** counts as a consonant for these rules.
+
+<!-- vocab-card: {"id":"vocab-arbol","word":"árbol","meaning":"tree","priority":"essential","sourceSection":"The Three Stress Rules"} -->
+<!-- vocab-card: {"id":"vocab-lapiz","word":"lápiz","meaning":"pencil","priority":"optional","sourceSection":"The Three Stress Rules"} -->
+<!-- grammar-card: {"id":"stress-default-mnemonic","kind":"concept","format":"qa","priority":"optional","sourceSection":"The Three Stress Rules","rule":"The n/s/vowel cue recalls qualified default stress","example":"Recall the n/s/vowel stress shortcut, its syllable mapping, and the qualifications for consonant clusters and final y.","answer":"n, s, vowel → llana default; other consonants → aguda default. Llana means second-to-last stress; aguda means final stress. The n/s shortcut applies only when n or s is not preceded by another consonant; final y counts as a consonant.","explanation":"Robots follows the other-consonant default; bíceps needs a tilde for llana stress. This cue summarizes general stress, not hiatus or diacritic exceptions."} -->
+<!-- grammar-card: {"id":"llana-accent-condition","kind":"concept","format":"qa","priority":"essential","sourceSection":"The Three Stress Rules","rule":"Llanas take a tilde with other-consonant endings including clusters and final y","example":"When does a llana, stressed on the second-to-last syllable, need a tilde under the general rules?","answer":"When it ends in a consonant other than single n or s, including consonant + n/s and final y.","explanation":"Árbol and bíceps need tildes; casa does not. The n/s default requires no preceding consonant."} -->
+<!-- grammar-card: {"id":"llana-arbol-application","kind":"rule","format":"cloze","priority":"essential","sourceSection":"The Three Stress Rules","rule":"Words ending in vowel, n, or s are llanas by default — no tilde unless stress falls elsewhere","hint":"casa, comen, lunes have no tilde; árbol, lápiz do","example":"The word 'árbol' carries a tilde because it ends in ___ and is stressed on the first syllable.","answer":"l (a consonant other than n or s)","explanation":"'Árbol' is a llana (stressed on second-to-last syllable), but it ends in -l, which is not n, s, or a vowel. That breaks the default, so a written tilde is required. Compare 'casa' (ends in vowel) which keeps its llana stress without a written mark."} -->
 
 <!-- grammar-card: {"id":"aguda-accent-condition","kind":"concept","format":"qa","priority":"essential","sourceSection":"The Three Stress Rules","rule":"Agudas take a tilde with a vowel or single n/s ending","example":"When does an aguda, stressed on the last syllable, need a written tilde?","answer":"When it ends in a vowel, or in n or s not preceded by another consonant.","explanation":"Café, canción, and francés need tildes; ciudad and reloj do not. Final y and consonant clusters do not use the vowel/single-n/s condition."} -->
 
@@ -46,11 +54,34 @@ The **tilde diacrítica** distinguishes words with different meanings or grammat
 | quien | who *(relative)* | **quién** | who? |
 | te | you *(pronoun)* | **té** | tea |
 
-> 💡 Memorisation trick: the **stressed** member of each pair is the one with strong meaning (pronoun, question word, affirmation) — the one you'd "lean on" in spoken stress.
+> 💡 Memorisation trick: "lean on" the **stressed** member of these conventional diacritic pairs: a subject/prepositional pronoun, a question word, or an affirmation. This is a recall cue, not permission to accent every word you emphasize: **té** and **sé** must also be learned by their meanings.
 
 <!-- vocab-card: {"id":"vocab-tu-possessive","word":"tu","meaning":"your (possessive)","priority":"optional","sourceSection":"The Tilde Diacrítica — Words That Change Meaning"} -->
 <!-- vocab-card: {"id":"vocab-tu-pronoun","word":"tú","meaning":"you (subject pronoun)","priority":"optional","sourceSection":"The Tilde Diacrítica — Words That Change Meaning"} -->
 <!-- vocab-card: {"id":"vocab-tea","word":"té","meaning":"tea","priority":"optional","sourceSection":"The Tilde Diacrítica — Words That Change Meaning"} -->
+<!-- vocab-card: {"id":"vocab-el-article","word":"el","meaning":"the (masculine singular article)","priority":"optional","sourceSection":"The Tilde Diacrítica — Words That Change Meaning"} -->
+<!-- vocab-card: {"id":"vocab-el-pronoun","word":"él","meaning":"he (subject pronoun)","priority":"optional","sourceSection":"The Tilde Diacrítica — Words That Change Meaning"} -->
+<!-- vocab-card: {"id":"vocab-se","word":"se","meaning":"reflexive pronoun; oneself (also other clitic uses)","priority":"optional","sourceSection":"The Tilde Diacrítica — Words That Change Meaning"} -->
+<!-- vocab-card: {"id":"vocab-se-verb","word":"sé","meaning":"I know (saber); be (affirmative tú command of ser)","priority":"optional","sourceSection":"The Tilde Diacrítica — Words That Change Meaning"} -->
+<!-- vocab-card: {"id":"vocab-si-if","word":"si","meaning":"if","priority":"optional","sourceSection":"The Tilde Diacrítica — Words That Change Meaning"} -->
+<!-- vocab-card: {"id":"vocab-si-yes","word":"sí","meaning":"yes","priority":"optional","sourceSection":"The Tilde Diacrítica — Words That Change Meaning"} -->
+<!-- vocab-card: {"id":"vocab-mi-possessive","word":"mi","meaning":"my (possessive)","priority":"optional","sourceSection":"The Tilde Diacrítica — Words That Change Meaning"} -->
+<!-- vocab-card: {"id":"vocab-mi-pronoun","word":"mí","meaning":"me (after a preposition)","priority":"optional","sourceSection":"The Tilde Diacrítica — Words That Change Meaning"} -->
+<!-- vocab-card: {"id":"vocab-mas-but","word":"mas","meaning":"but (literary)","priority":"optional","sourceSection":"The Tilde Diacrítica — Words That Change Meaning"} -->
+<!-- vocab-card: {"id":"vocab-mas-more","word":"más","meaning":"more","priority":"optional","sourceSection":"The Tilde Diacrítica — Words That Change Meaning"} -->
+<!-- vocab-card: {"id":"vocab-que-relative","word":"que","meaning":"that; which (relative or conjunction)","priority":"optional","sourceSection":"The Tilde Diacrítica — Words That Change Meaning"} -->
+<!-- vocab-card: {"id":"vocab-que-question","word":"qué","meaning":"what (interrogative or exclamative)","priority":"optional","sourceSection":"The Tilde Diacrítica — Words That Change Meaning"} -->
+<!-- vocab-card: {"id":"vocab-como-relative","word":"como","meaning":"as; like","priority":"optional","sourceSection":"The Tilde Diacrítica — Words That Change Meaning"} -->
+<!-- vocab-card: {"id":"vocab-como-question","word":"cómo","meaning":"how (interrogative or exclamative)","priority":"optional","sourceSection":"The Tilde Diacrítica — Words That Change Meaning"} -->
+<!-- vocab-card: {"id":"vocab-donde-relative","word":"donde","meaning":"where (relative)","priority":"optional","sourceSection":"The Tilde Diacrítica — Words That Change Meaning"} -->
+<!-- vocab-card: {"id":"vocab-donde-question","word":"dónde","meaning":"where (interrogative or exclamative)","priority":"optional","sourceSection":"The Tilde Diacrítica — Words That Change Meaning"} -->
+<!-- vocab-card: {"id":"vocab-cuando-relative","word":"cuando","meaning":"when (relative)","priority":"optional","sourceSection":"The Tilde Diacrítica — Words That Change Meaning"} -->
+<!-- vocab-card: {"id":"vocab-cuando-question","word":"cuándo","meaning":"when (interrogative or exclamative)","priority":"optional","sourceSection":"The Tilde Diacrítica — Words That Change Meaning"} -->
+<!-- vocab-card: {"id":"vocab-quien-relative","word":"quien","meaning":"who; whoever (relative)","priority":"optional","sourceSection":"The Tilde Diacrítica — Words That Change Meaning"} -->
+<!-- vocab-card: {"id":"vocab-quien-question","word":"quién","meaning":"who (interrogative or exclamative)","priority":"optional","sourceSection":"The Tilde Diacrítica — Words That Change Meaning"} -->
+<!-- vocab-card: {"id":"vocab-te-pronoun","word":"te","meaning":"you; yourself (object or reflexive pronoun)","priority":"optional","sourceSection":"The Tilde Diacrítica — Words That Change Meaning"} -->
+<!-- grammar-card: {"id":"diacritic-memory-cue","kind":"concept","format":"qa","priority":"optional","sourceSection":"The Tilde Diacrítica — Words That Change Meaning","rule":"The lean-on cue recalls conventional stressed diacritic members, not arbitrary emphasis","example":"What does the lean-on mnemonic mean for diacritic pairs, and why is it not a universal accent rule?","answer":"It associates the stressed member with pronouns like tú, question words like qué and affirmation sí; stressed té and sé still require their learned meanings. Emphasis alone does not license a tilde.","explanation":"The cue maps spoken prominence to these conventional pairs only; ordinary stressed monosyllables do not all take tildes."} -->
+<!-- grammar-card: {"id":"interrogative-indirect","kind":"concept","format":"qa","priority":"optional","sourceSection":"The Tilde Diacrítica — Words That Change Meaning","rule":"Interrogative words retain their tilde inside indirect questions","example":"Does cómo lose its tilde in No sé cómo se escribe because there are no question marks?","answer":"No. It introduces an indirect question and keeps the tilde.","explanation":"Relative como and interrogative cómo differ by function, not by whether question marks are printed."} -->
 
 <!-- grammar-card: {"id":"diacritic-tu-contrast","kind":"concept","format":"qa","priority":"essential","sourceSection":"The Tilde Diacrítica — Words That Change Meaning","rule":"Tilde diacrítica distinguishes grammatical roles","example":"What is the difference between tu and tú?","answer":"tu means your (possessive); tú means you (subject pronoun).","explanation":"This is a grammatical-role contrast, not an exception determined by the word's final vowel."} -->
 
@@ -78,8 +109,6 @@ Two adjacent vowels in Spanish either form a **diptongo** (one syllable) or a **
 | Strong + weak, stress on weak | Hiato, **tilde on weak vowel** | ma-íz, ba-úl, re-ír |
 | Two strong vowels | Hiato (always two syllables) | ca-er, le-ón, po-e-ta |
 
-<!-- vocab-card: {"id":"vocab-arbol","word":"árbol","meaning":"tree","priority":"essential","sourceSection":"The Three Stress Rules"} -->
-<!-- vocab-card: {"id":"vocab-lapiz","word":"lápiz","meaning":"pencil","priority":"optional","sourceSection":"The Three Stress Rules"} -->
 <!-- vocab-card: {"id":"vocab-pais","word":"país","meaning":"country","priority":"essential","sourceSection":"Hiatos vs Diptongos — When -ía and -ío Force a Tilde"} -->
 <!-- vocab-card: {"id":"vocab-dia","word":"día","meaning":"day","priority":"optional","sourceSection":"Hiatos vs Diptongos — When -ía and -ío Force a Tilde"} -->
 <!-- vocab-card: {"id":"vocab-vacio","word":"vacío","meaning":"empty","priority":"optional","sourceSection":"Hiatos vs Diptongos — When -ía and -ío Force a Tilde"} -->
@@ -90,6 +119,8 @@ Two adjacent vowels in Spanish either form a **diptongo** (one syllable) or a **
 <!-- grammar-card: {"id":"hiatus-pais-application","kind":"rule","format":"qa","priority":"essential","sourceSection":"Hiatos vs Diptongos — When -ía and -ío Force a Tilde","rule":"País marks a stressed weak vowel in hiatus","example":"Write the Spanish word for country with its required accent mark: pais.","answer":"país","explanation":"The stressed í next to a forms a hiato: pa-ís. The weak vowel therefore needs a tilde."} -->
 
 <!-- grammar-card: {"id":"diphthong-general-rules","kind":"concept","format":"qa","priority":"essential","sourceSection":"Hiatos vs Diptongos — When -ía and -ío Force a Tilde","rule":"Diptongos still follow the general accent rules","example":"Does having a diptongo mean a word can never carry a tilde? Use canción as a check.","answer":"No. Diptongos follow the general accent rules; canción takes a tilde because it is aguda and ends in n.","explanation":"The accent on the strong vowel ó does not split the ió diptongo. This differs from a stressed weak vowel in a hiato."} -->
+<!-- grammar-card: {"id":"two-strong-vowels","kind":"concept","format":"qa","priority":"optional","sourceSection":"Hiatos vs Diptongos — When -ía and -ío Force a Tilde","rule":"Two strong vowels form hiatus without automatically requiring a tilde","example":"Do the adjacent vowels in caer form one syllable, and must a tilde be added just to separate them?","answer":"They form two syllables, ca-er; no extra tilde is needed solely for that hiatus.","explanation":"Two a/e/o vowels form hiatus. Apply the general accent rules, unlike the special stressed-i/u condition."} -->
+<!-- grammar-card: {"id":"two-weak-vowels","kind":"concept","format":"qa","priority":"optional","sourceSection":"Hiatos vs Diptongos — When -ía and -ío Force a Tilde","rule":"Two different weak vowels count as a diphthong for general accentuation","example":"How are two different adjacent weak vowels, i and u, treated by the accentuation pattern described here?","answer":"As a diphthong following the general accent rules.","explanation":"Do not extend the stressed-i/u next to a/e/o hiatus condition indiscriminately to two different weak vowels."} -->
 
 <!-- quiz: {"type":"multiple-choice","question":"Why does 'María' carry a tilde on the í?","options":["It marks a feminine name","To break the diptongo and create a hiato with stress on the weak vowel","Because it ends in -a","All names need tildes"],"answer":1} -->
 
@@ -122,6 +153,8 @@ A common myth claims that uppercase letters don't need accents. **RAE has been e
 
 The same applies to **ñ → Ñ**: the tilde is part of the letter itself, not optional.
 
+<!-- grammar-card: {"id":"enye-uppercase","kind":"rule","format":"qa","priority":"optional","sourceSection":"Capital Letters Keep Their Tildes","rule":"Ñ retains the distinguishing mark of ñ in capitals","example":"Write España entirely in capital letters.","answer":"ESPAÑA","explanation":"Ñ is a distinct letter, not an optional accent on N."} -->
+
 <!-- grammar-card: {"id":"uppercase-accent-application","kind":"rule","format":"qa","priority":"essential","sourceSection":"Capital Letters Keep Their Tildes","rule":"Capitalization does not remove required accent marks","example":"Write África entirely in capital letters, preserving correct spelling.","answer":"ÁFRICA","explanation":"Uppercase letters keep required tildes. The word is esdrújula, so ÁFRICA must retain its accent."} -->
 
 ## Mini-Dialogue
@@ -132,8 +165,6 @@ The same applies to **ñ → Ñ**: the tilde is part of the letter itself, not o
 > — Exacto. "ÁFRICA" se escribe con tilde, no "AFRICA". *(ehk-SAHK-toh. AH-free-kah seh ehs-KREE-beh kohn TEEL-deh)*
 >
 > **Translation:** — Do you know how to spell "país"? — Yes, it carries a tilde on the *i* because it's a hiatus. He explained it to me yesterday. — Ah, right. And I know capital letters also take tildes, don't they? — Exactly. "ÁFRICA" is spelled with a tilde, not "AFRICA".
-
-<!-- grammar-card: {"id":"llana-arbol-application","kind":"rule","format":"cloze","priority":"essential","sourceSection":"The Three Stress Rules","rule":"Words ending in vowel, n, or s are llanas by default — no tilde unless stress falls elsewhere","hint":"casa, comen, lunes have no tilde; árbol, lápiz do","example":"The word 'árbol' carries a tilde because it ends in ___ and is stressed on the first syllable.","answer":"l (a consonant other than n or s)","explanation":"'Árbol' is a llana (stressed on second-to-last syllable), but it ends in -l, which is not n, s, or a vowel. That breaks the default, so a written tilde is required. Compare 'casa' (ends in vowel) which keeps its llana stress without a written mark."} -->
 
 ## Sources
 

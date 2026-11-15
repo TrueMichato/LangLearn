@@ -1,5 +1,7 @@
 # Second Person Pronouns (You)
 
+<!-- vocab-inventory: {"mode":"explicit"} -->
+
 > **Source:** Content from [Tofugu](https://www.tofugu.com/japanese-grammar/second-person-pronouns/). For personal study.
 
 Japanese Second-Person Pronouns: Ways of Saying "You"
@@ -58,6 +60,9 @@ Since she normally uses your name when talking to you, switching to あなた wo
 
 Interested in learning more about あなた? Check out our article, *Is あなた Polite or Rude?*. We'll take you on a deep dive there.
 
+<!-- vocab-card: {"id":"vocab-anata","word":"あなた","reading":"あなた","meaning":"you (relatively neutral pronoun, but direct or distancing in some contexts)","priority":"essential","sourceSection":"貴方 (あなた)"} -->
+<!-- grammar-card: {"id":"anata-context","kind":"concept","format":"qa","priority":"essential","sourceSection":"貴方 (あなた)","rule":"あなた can address a general audience but can create distance in personal conversation","example":"Why might a boss switching from your name to あなた sound unusually stern?","answer":"The switch creates distance and can convey a serious or confrontational stance, rather than extra politeness.","explanation":"Advertisements and textbooks use it for an unspecified audience. Its old-fashioned spousal endearment use is a separate context."} -->
+
 ### 君 (きみ)
 
 君 is a second-person pronoun with various nuances. Some dictionaries define 君 as a pronoun you can use in a friendly way towards someone of equal or lower status. These days, however, the way 君 is perceived varies quite a bit from person to person.
@@ -78,6 +83,11 @@ Outside of hierarchical situations like the workplace, 君 is used a lot to soun
 
 This is the title of the 2016 hit anime movie. See how the original title uses 君? Even though you may not hear 君 used in real-life all the time, in creative writing it has the effect of adding a poetic vibe.
 
+<!-- vocab-card: {"id":"vocab-kimi","word":"君","reading":"きみ","meaning":"you (familiar or downward-addressing; also literary or poetic)","priority":"optional","sourceSection":"君 (きみ)"} -->
+<!-- grammar-card: {"id":"kimi-literary","kind":"concept","format":"qa","priority":"optional","sourceSection":"君 (きみ)","rule":"君 can be poetic in creative work without being a universally welcome conversational address","example":"Does frequent 君 in song lyrics make it a safe default for addressing a coworker?","answer":"No. Its literary intimacy does not remove the risk of sounding condescending in a workplace hierarchy.","explanation":"Reception varies by person and relationship; recognizing it in a title is different from adopting it as everyday address."} -->
+
+<!-- grammar-card: {"id":"kimi-choice","kind":"rule","format":"cloze","priority":"optional","sourceSection":"君 (きみ)","rule":"君 is used downward or between close equals","hint":"Use the familiar pronoun associated here with an older supervisor's address.","example":"___、これやっておいてもらえないかな？","answer":"君","explanation":"君 (きみ) can sound hierarchical or condescending even when a senior says it; it is not a universally recommended workplace choice."} -->
+
 ### お前 (おまえ)
 
 お前 is a second-person pronoun that's masculine and rough, it's often in combination with vulgar language!
@@ -90,11 +100,8 @@ Although it's associated with masculinity, that doesn't mean it's a pronoun only
 
 お前 can also be a way to show affection in a very casual way towards close friends, partners, and family. In this case, the above example would be playful, rather than showing genuine anger.
 
-<!-- grammar-card: {"rule":"お前 is blunt and can be confrontational","hint":"you, rough","example":"___、ふざけてんのか？","answer":"お前","explanation":"お前 matches the aggressive tone of the question."} -->
-
-<!-- grammar-card: {"rule":"君 is used downward or between close equals","hint":"you, familiar","example":"___、これやっておいてもらえないかな？","answer":"君","explanation":"君 suits a senior addressing a junior, and would be rude aimed upward."} -->
-
-<!-- grammar-card: {"rule":"あなた is the neutral, polite word for 'you'","hint":"you, neutral","example":"___はベーコン好きですか？","answer":"あなた","explanation":"あなた is safe with a stranger, though a name is preferred once you know it."} -->
+<!-- vocab-card: {"id":"vocab-omae","word":"お前","reading":"おまえ","meaning":"you (rough, very casual; hostile or affectionate depending on the relationship)","priority":"optional","sourceSection":"お前 (おまえ)"} -->
+<!-- grammar-card: {"id":"omae-choice","kind":"rule","format":"cloze","priority":"optional","sourceSection":"お前 (おまえ)","rule":"お前 is blunt and can be confrontational","hint":"Use the rough pronoun discussed here, not a polite term of address.","example":"___、ふざけてんのか？","answer":"お前","explanation":"お前 (おまえ) can fit anger or very familiar teasing; it is not restricted to male speakers or automatically affectionate."} -->
 
 ## Beyond The Basics
 
@@ -108,7 +115,11 @@ For example, 貴様 is a derogatory second-person pronoun that's seen as "very r
 
 These days, there is no second-person pronoun that is guaranteed to give a respectful impression. That's why their use is often discouraged in conversation, especially when talking to your teacher or your boss, or other people to whom society expects you to be polite.
 
+<!-- grammar-card: {"id":"historical-politeness","kind":"concept","format":"qa","priority":"optional","sourceSection":"Second-Person Pronouns and Politeness","rule":"A pronoun's historical honorific components do not guarantee its current politeness","example":"Can 貴様 be assumed polite because its kanji include noble and an honorific title?","answer":"No. In modern use it is derogatory, despite those historical components.","explanation":"Present-day usage and relationships matter more than a literal character-by-character gloss."} -->
+
 So how would you refer to them when you need to? Instead of using second-person pronouns, it's common to use their names, or social or family roles, like お母さん (mom) or sensei. This adds another layer of impoliteness that comes from choosing a second person pronoun over using names or other terms of address. It's sort of similar to referring to someone as "he," "she" or "they," even though they're taking part in the conversation.
+
+<!-- grammar-card: {"id":"respectful-address","kind":"concept","format":"qa","priority":"essential","sourceSection":"Second-Person Pronouns and Politeness","rule":"No second-person pronoun is guaranteed to be respectful in every context","example":"What is usually safer than choosing a Japanese pronoun to address your teacher or boss?","answer":"Use their name with an appropriate title, their role such as 先生, or omit the reference when it is clear.","explanation":"Even relatively neutral あなた can be too direct. It is not guaranteed polite with a stranger.","legacyAliases":[{"rule":"あなた is the neutral, polite word for 'you'","example":"___はベーコン好きですか？"}]} -->
 
 ### Plural Forms of Second-Person Pronouns
 
@@ -117,6 +128,8 @@ We've introduced some different ways to say "you" in the *singular* in Japanese.
 The plural suffixes carry different nuances, mainly the level of formality. Both second-person pronouns *and* plural suffixes express different kinds and levels of politeness. So some combinations are more common than others. For example, 〜方 is generally considered to be a polite way  to refer to others, so it doesn't go well with a derogatory pronoun like お前. Sometimes it's also about how they sound together when they're paired up.
 
 To give you a clearer picture, below is a mix-and-match chart of common pronouns and suffixes! ✖️ shows that the combination is rarely used.
+
+<!-- grammar-card: {"id":"plural-register","kind":"concept","format":"qa","priority":"optional","sourceSection":"Plural Forms of Second-Person Pronouns","rule":"Plural suffixes must fit the address form and its politeness","example":"Why is あなた方 a plausible polite plural while お前方 is not a normal polite choice?","answer":"方 honors the addressees and fits あなた better than the rough お前.","explanation":"あなたたち, 君たち, and お前ら retain different social tones; suffixes do not erase the base pronoun's register."} -->
 
   
    
@@ -199,6 +212,8 @@ So if you use あなた to say "your," it's going to look like:
 
 It's exactly the same for other pronouns, so 君の and お前の also mean "your."
 
+<!-- grammar-card: {"id":"your-particle","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Possessive Form of Second-Person Pronouns","rule":"の marks possession without changing the pronoun's form","example":"Your town: あなた___町。","answer":"の","explanation":"君の and お前の have the same possessive structure, but retain their different address nuances."} -->
+
 ### Second-Person Pronouns Can Be Omitted
 
 Keep in mind that pronouns (or rather, subjects and objects in general) can be omitted in Japanese. This is unlike English, where they are more essential elements in sentences.
@@ -210,6 +225,8 @@ Keep in mind that pronouns (or rather, subjects and objects in general) can be o
 The above example works fine without the second person pronoun part — あなたは.
 
 If someone says ベーコンが好きですか？, it's natural to assume that it's about you, the listener, as in "Do you like bacon?" unless this was in the flow of conversation about someone else or something else. Because of this, second-person pronouns can often  be omitted in Japanese, unless you want to clarify that what you're saying is about the person you're talking to, or you want to change topics. Even when you do refer to the person, it's still a lot more common to use their name, or their family or social role, for example by calling your teacher sensei.
+
+<!-- grammar-card: {"id":"omit-listener","kind":"concept","format":"qa","priority":"essential","sourceSection":"Second-Person Pronouns Can Be Omitted","rule":"Context can identify the addressee without an explicit second-person pronoun","example":"Can ベーコンが好きですか ask whether the listener likes bacon without あなたは?","answer":"Yes. Context can make the listener the understood subject.","explanation":"Omission avoids unnecessary direct address, but the intended person still depends on the conversation."} -->
 
 ---
 
@@ -257,6 +274,23 @@ Third-Person Pronouns
 貴様 (きさま) — you (noun)
 
 お母さん (おかあさん) — mom, mother (noun)
+
+<!-- vocab-card: {"id":"vocab-bekon","word":"ベーコン","reading":"べーこん","meaning":"bacon","priority":"optional","sourceSection":"Vocabulary"} -->
+<!-- vocab-card: {"id":"vocab-suki","word":"好き","reading":"すき","meaning":"liked; favorite","priority":"optional","sourceSection":"Vocabulary"} -->
+<!-- vocab-card: {"id":"vocab-machi","word":"町","reading":"まち","meaning":"town; city","priority":"optional","sourceSection":"Vocabulary"} -->
+<!-- vocab-card: {"id":"vocab-nihon","word":"日本","reading":"にほん","meaning":"Japan","priority":"optional","sourceSection":"Vocabulary"} -->
+<!-- vocab-card: {"id":"vocab-restaurant","word":"レストラン","reading":"れすとらん","meaning":"restaurant","priority":"optional","sourceSection":"Vocabulary"} -->
+<!-- vocab-card: {"id":"vocab-kuruma","word":"車","reading":"くるま","meaning":"car","priority":"optional","sourceSection":"Vocabulary"} -->
+<!-- vocab-card: {"id":"vocab-takai","word":"高い","reading":"たかい","meaning":"high; expensive","priority":"optional","sourceSection":"Vocabulary"} -->
+<!-- vocab-card: {"id":"vocab-kaitoru","word":"買い取る","reading":"かいとる","meaning":"to buy; to purchase from someone","priority":"optional","sourceSection":"Vocabulary"} -->
+<!-- vocab-card: {"id":"vocab-kagi","word":"鍵","reading":"かぎ","meaning":"key; lock","priority":"optional","sourceSection":"Vocabulary"} -->
+<!-- vocab-card: {"id":"vocab-shiwasureru","word":"し忘れる","reading":"しわすれる","meaning":"to forget to do","priority":"optional","sourceSection":"Vocabulary"} -->
+<!-- vocab-card: {"id":"vocab-ohiru","word":"お昼","reading":"おひる","meaning":"lunch; midday","priority":"optional","sourceSection":"Vocabulary"} -->
+<!-- vocab-card: {"id":"vocab-nani","word":"何","reading":"なに","meaning":"what","priority":"optional","sourceSection":"Vocabulary"} -->
+<!-- vocab-card: {"id":"vocab-tabetai","word":"食べたい","reading":"たべたい","meaning":"want to eat","priority":"optional","sourceSection":"Vocabulary"} -->
+<!-- vocab-card: {"id":"vocab-na","word":"名","reading":"な","meaning":"name","priority":"optional","sourceSection":"Vocabulary"} -->
+<!-- vocab-card: {"id":"vocab-kisama","word":"貴様","reading":"きさま","meaning":"you (derogatory in modern use)","priority":"optional","sourceSection":"Vocabulary"} -->
+<!-- vocab-card: {"id":"vocab-okaasan","word":"お母さん","reading":"おかあさん","meaning":"mother; mom","priority":"optional","sourceSection":"Vocabulary"} -->
 
 #### Sources and Additional Readings
 

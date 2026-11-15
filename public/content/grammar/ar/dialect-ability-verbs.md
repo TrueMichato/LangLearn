@@ -1,12 +1,27 @@
 # Being Able in the Dialects: Can and Cannot
 
-MSA often says أَسْتَطِيعُ (astaṭīʿu), "I am able," before a subjunctive verb. Spoken dialects usually prefer shorter everyday forms, especially words built from the root ق-د-ر or Levantine فِي (fī) with pronoun endings.
+<!-- vocab-inventory: {"mode":"explicit"} -->
+
+MSA often says أَسْتَطِيعُ (astaṭīʿu), "I am able," followed by أَنْ and a subjunctive verb. Spoken dialects usually prefer shorter everyday forms, especially words built from the root ق-د-ر or Levantine فِي (fī) with pronoun endings.
 
 ## Core idea
+
+<!-- grammar-card: {"id":"ability-not-literal-container","kind":"concept","format":"qa","priority":"optional","sourceSection":"Core idea","rule":"Levantine فِينِي has an idiomatic ability use.","example":"Why is a literal “in me” translation misleading for فِينِي رُوح?","answer":"The expression means I can go, not that something is located inside me.","explanation":"The construction uses fī plus a pronoun to express ability."} -->
 
 Most dialects use a form like "I can" directly before the main verb. Egyptian, Gulf, Iraqi, and Maghrebi commonly use q-d-r forms; Levantine often uses فِينِي (fīnī), literally "in me," as a practical way to say "I can."
 
 ## Forms and examples
+
+<!-- grammar-card: {"id":"regional-negative-frames","kind":"concept","format":"qa","priority":"optional","sourceSection":"Forms and examples","rule":"The ability-negative frame varies by dialect.","example":"Do the illustrated Gulf/Iraqi ability negatives require the final -sh used in the Egyptian and Moroccan-style examples?","answer":"No. The Gulf/Iraqi examples use مَا before the ability verb without final -sh.","explanation":"Keep the negative construction with its variety rather than treating mā…sh as pan-Arabic."} -->
+
+These are illustrative local forms, not universal regional standards. Spellings and vowel marks are approximate; Egyptian qāf is represented here by ʾ, Gulf/Iraqi by g, and Iraqi گ explicitly writes that g sound. The Maghrebi column is Moroccan-style.
+
+<!-- vocab-card: {"id":"vocab-astatiu","word":"أَسْتَطِيعُ","reading":"astaṭīʿu","meaning":"I can; I am able; MSA","priority":"optional","sourceSection":"Forms and examples"} -->
+<!-- vocab-card: {"id":"vocab-aqdar","word":"أَقْدَر","reading":"aʾdar (Egyptian); agdar (Gulf example)","meaning":"I can; Egyptian and illustrated Gulf usage","priority":"essential","sourceSection":"Forms and examples"} -->
+<!-- vocab-card: {"id":"vocab-fini","word":"فِينِي","reading":"fīnī","meaning":"I can; Levantine ability expression","priority":"essential","sourceSection":"Forms and examples"} -->
+<!-- vocab-card: {"id":"vocab-agdar","word":"أَگْدَر","reading":"agdar","meaning":"I can; Iraqi","priority":"optional","sourceSection":"Forms and examples"} -->
+<!-- vocab-card: {"id":"vocab-nqdar","word":"نَقْدَر","reading":"nqdar","meaning":"I can; Moroccan-style example","priority":"optional","sourceSection":"Forms and examples"} -->
+<!-- grammar-card: {"id":"levantine-cannot","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Forms and examples","rule":"Levantine negates the illustrated ability expression with مَا.","example":"Levantine “I cannot go”: ___ رُوح.","answer":"مَا فِينِي","explanation":"The pronoun-bearing expression fīnī is negated with mā before the main verb."} -->
 
 | Meaning | MSA | Egyptian | Levantine | Gulf | Iraqi | Maghrebi |
 |---|---|---|---|---|---|---|
@@ -20,7 +35,7 @@ Most dialects use a form like "I can" directly before the main verb. Egyptian, G
 
 After the ability expression, dialects normally use the plain main verb without MSA أَنْ (an). Egyptian negation wraps the q-d-r form with مَا...ش (ma...sh), while Levantine negates فِينِي (fīnī) with مَا (mā).
 
-<!-- grammar-card: {"rule": "Dialect ability expressions are usually followed directly by the main verb, without MSA أَنْ.", "hint": "Compare MSA أَسْتَطِيعُ أَنْ أَذْهَبَ with Egyptian أَقْدَر أَرُوح.", "example": "أَقْدَر أَسَاعْدَك (aʾdar asāʿdak)", "answer": "I can help you", "explanation": "Egyptian uses أَقْدَر followed directly by the verb help."} -->
+<!-- grammar-card: {"id":"direct-main-verb","kind":"rule","format":"qa","priority":"essential","sourceSection":"Usage notes","rule":"Dialect ability expressions are usually followed directly by the main verb, without MSA أَنْ.","example":"Using أَقْدَر and أَسَاعْدَك, build Egyptian “I can help you.”","answer":"أَقْدَر أَسَاعْدَك","explanation":"The main verb follows directly; do not insert the MSA complementizer أَنْ into this dialect pattern.","legacyAliases":[{"rule":"Dialect ability expressions are usually followed directly by the main verb, without MSA أَنْ.","example":"أَقْدَر أَسَاعْدَك (aʾdar asāʿdak)"}]} -->
 
 ## Practice patterns
 
@@ -32,7 +47,7 @@ Practice both positive and negative forms:
 
 <!-- quiz: {"type": "multiple-choice", "question": "Which Egyptian pattern negates I can?", "options": ["مَاقْدَرْش (maʾdarsh)", "فِينِي (fīnī)", "دُول (dōl)", "دْيَالِي (dyālī)"], "answer": 0} -->
 
-<!-- grammar-card: {"rule": "Egyptian commonly negates ability with مَا...ش around أَقْدَر, producing مَاقْدَرْش.", "hint": "The final -sh is the clue.", "example": "مَاقْدَرْش أَسْتَنَّى (maʾdarsh astannā)", "answer": "I cannot wait", "explanation": "The Egyptian negative frame surrounds the ability verb, then the main verb follows."} -->
+<!-- grammar-card: {"id":"egyptian-cannot","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Practice patterns","rule":"Egyptian commonly negates ability with مَا...ش around أَقْدَر, producing مَاقْدَرْش.","example":"Egyptian “I cannot wait”: ___ أَسْتَنَّى.","answer":"مَاقْدَرْش","explanation":"The negative frame surrounds the ability expression, not the following main verb.","legacyAliases":[{"rule":"Egyptian commonly negates ability with مَا...ش around أَقْدَر, producing مَاقْدَرْش.","example":"مَاقْدَرْش أَسْتَنَّى (maʾdarsh astannā)"}]} -->
 
 ## Sources
 

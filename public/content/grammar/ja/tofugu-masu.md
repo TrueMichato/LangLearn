@@ -1,5 +1,7 @@
 # ます (masu) — Polite Form
 
+<!-- vocab-inventory: {"mode":"explicit"} -->
+
 > **Source:** Content from [Tofugu](https://www.tofugu.com/japanese-grammar/masu/). For personal study.
 
 〜ます: Verb Polite Form
@@ -41,6 +43,10 @@ As in these examples, ます is normally used when speaking to someone you aren'
 
 If you're not sure if a situation calls for formality, you can always err on the side of caution using the polite form.
 
+<!-- vocab-card: {"id":"vocab-nomu","priority":"optional","sourceSection":"The Basics","word":"飲む","reading":"のむ","meaning":"to drink"} -->
+<!-- vocab-card: {"id":"vocab-taberu","priority":"optional","sourceSection":"The Basics","word":"食べる","reading":"たべる","meaning":"to eat"} -->
+<!-- grammar-card: {"id":"polite-listener","kind":"concept","format":"qa","priority":"essential","sourceSection":"The Basics","rule":"ます marks politeness toward the listener","example":"Why might you use ます even with a friend in an office?","answer":"The formal setting can call for polite speech even when the relationship is close.","explanation":"Acquaintance, relative status, and setting all influence the choice."} -->
+
 ### How To Make The ます Form
 
 Let's have a look at how to conjugate a verb to the ます form. Basically, you take the stem form of a verb and attach ます at the end. So it's important to first know how to make the stem form. While it isn't difficult, the method differs depending on the type of verb.
@@ -62,6 +68,18 @@ Give it a try with some of the verbs below:
 For ichidan verbs, simply remove the final る, and add ます instead. So to bring back the first example, you can change 食べる (to eat) into the ます form by replacing the final る with ます, as in 食べます. That's it!
 
 Apart from the verb types above, there are the irregular verbs  来(く)る (to come) and する (to do). For these, you can just remember their ます forms are  来(き)ます and します respectively.
+
+<!-- vocab-card: {"id":"vocab-kau","priority":"optional","sourceSection":"How To Make The ます Form","word":"買う","reading":"かう","meaning":"to buy"} -->
+<!-- vocab-card: {"id":"vocab-yomu","priority":"optional","sourceSection":"How To Make The ます Form","word":"読む","reading":"よむ","meaning":"to read"} -->
+<!-- vocab-card: {"id":"vocab-kaku","priority":"optional","sourceSection":"How To Make The ます Form","word":"書く","reading":"かく","meaning":"to write"} -->
+<!-- vocab-card: {"id":"vocab-hanasu","priority":"optional","sourceSection":"How To Make The ます Form","word":"話す","reading":"はなす","meaning":"to speak"} -->
+<!-- vocab-card: {"id":"vocab-kiku","priority":"optional","sourceSection":"How To Make The ます Form","word":"聞く","reading":"きく","meaning":"to listen; to hear"} -->
+<!-- vocab-card: {"id":"vocab-kuru","priority":"optional","sourceSection":"How To Make The ます Form","word":"来る","reading":"くる","meaning":"to come"} -->
+<!-- vocab-card: {"id":"vocab-suru","priority":"optional","sourceSection":"How To Make The ます Form","word":"する","reading":"する","meaning":"to do"} -->
+<!-- grammar-card: {"id":"godan-polite","kind":"rule","format":"cloze","priority":"essential","sourceSection":"How To Make The ます Form","rule":"Godan verbs change their final kana to the い row before ます","example":"飲む → polite nonpast: ___.","answer":"飲みます","explanation":"む changes to み, giving the stem 飲み before ます."} -->
+<!-- grammar-card: {"id":"ichidan-polite","kind":"rule","format":"cloze","priority":"essential","sourceSection":"How To Make The ます Form","rule":"Ichidan verbs replace final る with ます","example":"食べる → polite nonpast: ___.","answer":"食べます","explanation":"There is no godan vowel shift; remove る."} -->
+<!-- grammar-card: {"id":"suru-polite","kind":"rule","format":"cloze","priority":"essential","sourceSection":"How To Make The ます Form","rule":"する has the irregular polite form します","example":"する → polite nonpast: ___.","answer":"します","explanation":"Use the irregular stem し."} -->
+<!-- grammar-card: {"id":"kuru-polite","kind":"rule","format":"qa","priority":"essential","sourceSection":"How To Make The ます Form","rule":"来る uses the reading き before ます","example":"Give the polite nonpast of 来る, including its kana reading.","answer":"来ます (きます).","explanation":"The reading changes from くる to きます."} -->
 
 ### Conjugating The ます Form
 
@@ -104,6 +122,9 @@ If you want to add another sentence to show the sense of achievement, you can al
 
 I bet your teacher must feel very proud of you.
 
+<!-- vocab-card: {"id":"vocab-goukaku-suru","priority":"optional","sourceSection":"ました: The Past Tense of ます","word":"合格する","reading":"ごうかくする","meaning":"to pass an examination"} -->
+<!-- grammar-card: {"id":"polite-past","kind":"rule","format":"cloze","priority":"essential","sourceSection":"ました: The Past Tense of ます","rule":"Replace ます with ました for polite past","example":"合格します → polite past: 合格___.","answer":"しました","explanation":"The stem 合格し stays; ます changes to ました."} -->
+
 ### ません: The Negative ます
 
 ません is the negative form of ます. You can use it when you want to politely say that you don't do something. Say your teacher writes something on the blackboard but the letters are too small and you can't see them. In this case, you can use 見える (to be able to see) with ません and say:
@@ -126,6 +147,11 @@ And if you want to add "sorry," you can also say:
 
 Although it's now an integrated phrase, すみません is made up of the verb 済む (to finish) conjugated with the 〜ません ending. It originally meant "unfinished," and people would use it in an irresolvable situation that led them to feel remorse or uneasiness. So it should make sense that it eventually came to signify "sorry" or "excuse me."
 
+<!-- vocab-card: {"id":"vocab-mieru","priority":"optional","sourceSection":"ません: The Negative ます","word":"見える","reading":"みえる","meaning":"to be visible; to be in sight"} -->
+<!-- vocab-card: {"id":"vocab-wakaru","priority":"optional","sourceSection":"ません: The Negative ます","word":"分かる","reading":"わかる","meaning":"to understand"} -->
+<!-- vocab-card: {"id":"vocab-sumimasen","priority":"optional","sourceSection":"ません: The Negative ます","word":"すみません","reading":"すみません","meaning":"excuse me; I am sorry"} -->
+<!-- grammar-card: {"id":"polite-negative","kind":"rule","format":"cloze","priority":"essential","sourceSection":"ません: The Negative ます","rule":"Replace ます with ません for polite negation","example":"分かります → polite negative: 分かり___.","answer":"ません","explanation":"分かりません means that the speaker does not understand."} -->
+
 ### ませんでした: The Negative ます In The Past Tense
 
 By adding 〜でした to ません, as in ませんでした, you can politely talk about something you didn't do. For example, if you weren't able to do your homework, you can use  出来(でき)る (to be able to do) with 〜ませんでした and say:
@@ -141,6 +167,8 @@ And since you couldn't do your homework, you didn't want to go to school and end
   - I didn't go to school.
 
 I hope you finish your homework soon and go to school tomorrow!
+
+<!-- grammar-card: {"id":"polite-past-negative","kind":"rule","format":"cloze","priority":"essential","sourceSection":"ませんでした: The Negative ます In The Past Tense","rule":"The polite past negative is ませんでした","hint":"past negative of 出来る","example":"宿題(しゅくだい)が出来___。","answer":"ませんでした","explanation":"出来ませんでした politely reports inability to do the homework in the past."} -->
 
 ### 〜ますか？ and 〜ませんか？ For Politely Asking Questions
 
@@ -172,9 +200,8 @@ Using ませんか here adds the nuance that you are not only asking the listene
 
   - Shall we dance?
 
-<!-- grammar-card: {"rule":"ますか turns a polite statement into a question","hint":"ます + か","example":"料理(りょうり)をし___？","answer":"ますか","explanation":"しますか politely asks whether the listener cooks."} -->
-
-<!-- grammar-card: {"rule":"The polite past negative is ませんでした","hint":"ます, past negative","example":"宿題(しゅくだい)が出来___。","answer":"ませんでした","explanation":"出来ませんでした politely reports that the homework could not be done."} -->
+<!-- grammar-card: {"id":"polite-question","kind":"rule","format":"cloze","priority":"essential","sourceSection":"〜ますか？ and 〜ませんか？ For Politely Asking Questions","rule":"ますか turns a polite statement into a question","example":"料理(りょうり)をし___？","answer":"ますか","explanation":"The particle か turns polite します into a question about cooking."} -->
+<!-- grammar-card: {"id":"inviting-negative","kind":"concept","format":"qa","priority":"optional","sourceSection":"〜ますか？ and 〜ませんか？ For Politely Asking Questions","rule":"ませんか can make a welcoming invitation rather than merely negate a statement","example":"How does よかったら、食べませんか differ in nuance from the positive question 食べますか？","answer":"It sounds more like a welcoming invitation to eat, rather than simply asking whether the listener will eat.","explanation":"The same negative-question pattern can invite joint action, as in おどりませんか."} -->
 
 ## Beyond The Basics
 
@@ -202,13 +229,16 @@ Now, let's go back to the scenario. Let's say you hang up the phone and your sen
 
   - I was called in by the boss.
 
-You then visit your boss's office and find out he is making you put together a presentation. To describe this situation, you can use the させる (causative) form of プレゼンする (to do a presentation), which is プレゼンさせる with ました:
+You then visit your boss's office and find out he is making you put together a presentation. To describe being made to do it, use the causative-passive form プレゼンさせられる with the polite past ending ました:
 
   - ボスに**プレゼンさせられました**。
 
   - I was made to do a presentation by the boss.
 
 Just like that, you can attach ます to various verb forms, even complicated ones like the passive causative form!
+
+<!-- grammar-card: {"id":"derived-form-polite","kind":"rule","format":"cloze","priority":"optional","sourceSection":"ます Attached To Various Verb Forms","rule":"Potential and other る-ending derived forms take ます like ichidan verbs","example":"行ける → polite: ___.","answer":"行けます","explanation":"Once the potential form is built, replace its final る with ます; do not conjugate it again as godan."} -->
+<!-- grammar-card: {"id":"causative-passive-polite","kind":"rule","format":"cloze","priority":"optional","sourceSection":"ます Attached To Various Verb Forms","rule":"The polite past of a causative-passive replaces final る with ました","example":"I was made to present: ボスにプレゼン___。 (Use the polite past of させられる.)","answer":"させられました","explanation":"Causative-passive させられる becomes させられました, not the active causative させました."} -->
 
 ### ます in the Middle of a Sentence
 
@@ -235,6 +265,9 @@ Do you see the two independent sentences here? Here's how to break it down:
   - [A: I will go to college], but [B: I will also work].
 
 These two sentences are connected by the particle が. Each sentence would work as a stand-alone even without が, so you can call them independent sentences. In cases like this, you can add ます to both sentences. For more information about ます and clauses, check out our clause page.
+
+<!-- grammar-card: {"id":"quoted-polite","kind":"rule","format":"cloze","priority":"optional","sourceSection":"ます in the Middle of a Sentence","rule":"A quotation keeps whatever politeness the speaker actually used","hint":"行く, polite","example":"ケンは「大学に行き___」と言いました。","answer":"ます","explanation":"The quotation preserves Ken's original polite wording."} -->
+<!-- grammar-card: {"id":"coordinate-polite","kind":"concept","format":"qa","priority":"optional","sourceSection":"ます in the Middle of a Sentence","rule":"Independent clauses linked by が can each carry ます","example":"Why is ます acceptable before が in 大学に行きますが、仕事もします？","answer":"The two linked clauses can each stand as a sentence, so both may carry polite endings.","explanation":"This is not a license to insert ます into every dependent clause."} -->
 
 ---
 
@@ -293,8 +326,6 @@ by 東京外国語大学
 <!-- quiz: {"type":"multiple-choice","question":"What does \"食べ**ます**。\" mean?","options":["I eat (chocolate).","I drink (coffee).","I passed.","I did it!"],"answer":0} -->
 
 <!-- quiz: {"type":"multiple-choice","question":"What does \"合格し**ました**。\" mean?","options":["I passed.","I drink (coffee).","I eat (chocolate).","I did it!"],"answer":0} -->
-
-<!-- grammar-card: {"rule":"A quotation keeps whatever politeness the speaker actually used","hint":"行く, polite","example":"ケンは「大学に行き___」と言いました。","answer":"ます","explanation":"Ken himself spoke politely, so 行きます is preserved inside the quotation."} -->
 
 ## Sources
 

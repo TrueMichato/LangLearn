@@ -1,5 +1,7 @@
 # The Verbal Noun (al-Maṣdar)
 
+<!-- vocab-inventory: {"mode":"explicit"} -->
+
 Arabic verbs often have a noun that names the action itself: writing, study, entrance, knowledge. These nouns are essential for natural MSA style.
 
 ## Core idea
@@ -50,6 +52,8 @@ Maṣdar shapes are not all identical. Learn common verbs with their maṣdars a
 - **اِسْتَعْمَلَ** (istaʿmala) — he used; **اِسْتِعْمَالٌ** (istiʿmālun) — use.
 
 For derived forms, a recognizable pattern can help: Form V **تَعَلَّمَ → تَعَلُّمٌ** and Form X **اِسْتَعْمَلَ → اِسْتِعْمَالٌ**. Many **Form I** maṣdars, however, must be learned individually; do not extend **دَرَسَ → دِرَاسَةٌ** into a universal formula.
+
+<!-- grammar-card: {"id":"travel-lexical-association","kind":"concept","format":"qa","priority":"optional","sourceSection":"Practice patterns","rule":"A related travel noun is not a universal Form III derivation.","example":"Does pairing سَافَرَ with سَفَرٌ supply a general formula for Form III maṣdars?","answer":"No. This is a useful travel-vocabulary association, not a general Form III maṣdar formula.","explanation":"Learn the lexical association without extending it to every derived verb."} -->
 
 <!-- vocab-card: {"id":"vocab-safara","word":"سَافَرَ","reading":"sāfara","meaning":"he traveled; to travel (dictionary form)","priority":"optional","sourceSection":"Practice patterns"} -->
 <!-- vocab-card: {"id":"vocab-safar","word":"سَفَرٌ","reading":"safarun","meaning":"travel","priority":"optional","sourceSection":"Practice patterns"} -->

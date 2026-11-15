@@ -1,5 +1,7 @@
 # kāna & inna Sisters in Depth
 
+<!-- vocab-inventory: {"mode":"explicit"} -->
+
 The sisters of **كَانَ** (kāna) — was and **إِنَّ** (inna) — indeed/that reshape nominal sentences by changing case and nuance.
 
 > kāna changes the predicate to accusative. inna changes the subject to accusative. Both keep the nominal sentence at the center.
@@ -15,7 +17,7 @@ A **كَانَ وَأَخَوَاتُهَا** (kāna wa-akhawātuhā) — kāna 
 
 <!-- quiz: {"type": "multiple-choice", "question": "What happens to the predicate after kāna?", "options": ["It becomes accusative", "It becomes genitive", "It becomes dual", "It disappears"], "answer": 0} -->
 
-<!-- grammar-card: {"rule":"After كَانَ (kāna), the predicate is accusative.","hint":"kāna plus subject-u plus predicate-an.","example":"Complete “the weather was cold”: كَانَ الجَوُّ بَارِد___ (kāna al-jawwu bārid___).","answer":"ـًا (-an)","explanation":"accusative indefinite ending — بَارِدٌ (bāridun) becomes بَارِدًا (bāridan) as خَبَرُ كَانَ (khabaru kāna)."} -->
+<!-- grammar-card: {"id":"kana-predicate","kind":"rule","format":"cloze","priority":"essential","sourceSection":"kāna and her sisters","rule":"After كَانَ (kāna), the predicate is accusative.","example":"Complete “the weather was cold”: كَانَ الجَوُّ ___.","answer":"بَارِدًا","explanation":"بَارِدًا (bāridan) is accusative as khabar kāna; the noun الجَوُّ stays nominative.","legacyAliases":[{"rule":"After كَانَ (kāna), the predicate is accusative.","example":"Complete “the weather was cold”: كَانَ الجَوُّ بَارِد___ (kāna al-jawwu bārid___)."}]} -->
 
 ## Common kāna sisters
 
@@ -26,6 +28,11 @@ A **كَانَ وَأَخَوَاتُهَا** (kāna wa-akhawātuhā) — kāna 
 | **لَيْسَ** | laysa | is not | **لَيْسَ البَابُ مَفْتُوحًا** (laysa al-bābu maftūḥan) — the door is not open |
 | **مَا زَالَ** | mā zāla | still | **مَا زَالَتِ الطَّالِبَةُ حَاضِرَةً** (mā zālati aṭ-ṭālibatu ḥāḍiratan) — the student is still present |
 
+<!-- vocab-card: {"id":"vocab-asbaha","word":"أَصْبَحَ","reading":"aṣbaḥa","meaning":"became; became in the morning","priority":"optional","sourceSection":"Common kāna sisters"} -->
+<!-- vocab-card: {"id":"vocab-sara","word":"صَارَ","reading":"ṣāra","meaning":"became","priority":"optional","sourceSection":"Common kāna sisters"} -->
+<!-- vocab-card: {"id":"vocab-laysa","word":"لَيْسَ","reading":"laysa","meaning":"is not; masculine singular form","priority":"optional","sourceSection":"Common kāna sisters"} -->
+<!-- vocab-card: {"id":"vocab-ma-zala","word":"مَا زَالَ","reading":"mā zāla","meaning":"still; continues to be","priority":"optional","sourceSection":"Common kāna sisters"} -->
+<!-- grammar-card: {"id":"laysa-predicate","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Common kāna sisters","rule":"لَيْسَ follows the kāna case pattern despite expressing present negation.","example":"Complete “the door is not open”: لَيْسَ البَابُ ___.","answer":"مَفْتُوحًا","explanation":"مَفْتُوحًا (maftūḥan) is accusative as the predicate of لَيْسَ; the door remains nominative."} -->
 <!-- quiz: {"type": "multiple-choice", "question": "Which sentence correctly uses laysa?", "options": ["لَيْسَ البَابُ مَفْتُوحًا (laysa al-bābu maftūḥan)", "لَيْسَ البَابَ مَفْتُوحٌ (laysa al-bāba maftūḥun)", "لَيْسَ البَابِ مَفْتُوحٍ (laysa al-bābi maftūḥin)", "لَيْسَ البَابُ مَفْتُوحٍ (laysa al-bābu maftūḥin)"], "answer": 0} -->
 
 ## inna and her sisters
@@ -37,7 +44,7 @@ A **كَانَ وَأَخَوَاتُهَا** (kāna wa-akhawātuhā) — kāna 
 | **الجَوُّ بَارِدٌ** (al-jawwu bāridun) — the weather is cold | **إِنَّ الجَوَّ بَارِدٌ** (inna al-jawwa bāridun) — indeed, the weather is cold |
 | **الوَلَدُ مَرِيضٌ** (al-waladu marīḍun) — the boy is sick | **لَعَلَّ الوَلَدَ مَرِيضٌ** (laʿalla al-walada marīḍun) — perhaps the boy is sick |
 
-<!-- grammar-card: {"rule":"After إِنَّ (inna), the noun is accusative and the predicate remains nominative.","hint":"inna plus subject-a plus predicate-un.","example":"Complete “indeed, the weather is cold”: إِنَّ الجَو___ بَارِدٌ (inna al-jaww___ bāridun).","answer":"ـَ (-a)","explanation":"accusative ending — الجَوُّ (al-jawwu) becomes الجَوَّ (al-jawwa) as اسْمُ إِنَّ (ismu inna)."} -->
+<!-- grammar-card: {"id":"inna-noun","kind":"rule","format":"cloze","priority":"essential","sourceSection":"inna and her sisters","rule":"After إِنَّ (inna), the noun is accusative and the predicate remains nominative.","example":"Complete “indeed, the weather is cold”: إِنَّ ___ بَارِدٌ.","answer":"الجَوَّ","explanation":"الجَوَّ (al-jawwa) is accusative as ism inna, while the predicate بَارِدٌ stays nominative.","legacyAliases":[{"rule":"After إِنَّ (inna), the noun is accusative and the predicate remains nominative.","example":"Complete “indeed, the weather is cold”: إِنَّ الجَو___ بَارِدٌ (inna al-jaww___ bāridun)."}]} -->
 
 ## Common inna sisters
 
@@ -49,9 +56,15 @@ A **كَانَ وَأَخَوَاتُهَا** (kāna wa-akhawātuhā) — kāna 
 | **لَيْتَ** | layta | if only | **لَيْتَ الوَقْتَ كَافٍ** (layta al-waqta kāfin) — if only the time were enough |
 | **لَعَلَّ** | laʿalla | perhaps | **لَعَلَّ الدَّرْسَ سَهْلٌ** (laʿalla ad-darsa sahlun) — perhaps the lesson is easy |
 
+<!-- vocab-card: {"id":"vocab-anna","word":"أَنَّ","reading":"anna","meaning":"that; introduces a content clause","priority":"optional","sourceSection":"Common inna sisters"} -->
+<!-- vocab-card: {"id":"vocab-kaanna","word":"كَأَنَّ","reading":"kaʾanna","meaning":"as if","priority":"optional","sourceSection":"Common inna sisters"} -->
+<!-- vocab-card: {"id":"vocab-lakinna","word":"لَكِنَّ","reading":"lākinna","meaning":"but; however","priority":"optional","sourceSection":"Common inna sisters"} -->
+<!-- vocab-card: {"id":"vocab-layta","word":"لَيْتَ","reading":"layta","meaning":"if only; expresses a wish","priority":"optional","sourceSection":"Common inna sisters"} -->
+<!-- vocab-card: {"id":"vocab-laalla","word":"لَعَلَّ","reading":"laʿalla","meaning":"perhaps","priority":"optional","sourceSection":"Common inna sisters"} -->
 <!-- quiz: {"type": "multiple-choice", "question": "What happens to the noun after inna?", "options": ["It becomes accusative", "It becomes genitive", "It becomes jussive", "It must be plural"], "answer": 0} -->
 
-<!-- grammar-card: {"rule":"Do not mix the two systems: kāna accusative predicate; inna accusative noun.","hint":"kāna affects khabar; inna affects ism.","example":"Choose the ending in إِنَّ الطَّالِب___ مُجْتَهِدٌ (inna aṭ-ṭālib___ mujtahidun).","answer":"ـَ (-a)","explanation":"accusative ending — After إِنَّ (inna), الطَّالِبُ (aṭ-ṭālibu) becomes الطَّالِبَ (aṭ-ṭāliba), while the predicate stays مُجْتَهِدٌ (mujtahidun)."} -->
+<!-- grammar-card: {"id":"inna-student-ending","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Common inna sisters","rule":"Do not mix the two systems: kāna accusative predicate; inna accusative noun.","example":"Supply the case vowel: إِنَّ الطَّالِب___ مُجْتَهِدٌ.","answer":"َ","explanation":"The fatḥa makes الطَّالِبَ accusative after إِنَّ; the predicate remains nominative.","legacyAliases":[{"rule":"Do not mix the two systems: kāna accusative predicate; inna accusative noun.","example":"Choose the ending in إِنَّ الطَّالِب___ مُجْتَهِدٌ (inna aṭ-ṭālib___ mujtahidun)."}]} -->
+<!-- grammar-card: {"id":"kana-inna-case-contrast","kind":"concept","format":"qa","priority":"essential","sourceSection":"Common inna sisters","rule":"Kāna and inna assign accusative to different parts of a nominal sentence.","example":"Which part becomes accusative with kāna, and which with inna?","answer":"With kāna, the predicate; with inna, the noun/subject.","explanation":"The other part stays nominative in each system. Their sisters share the relevant case pattern while adding meanings such as becoming, negation, wishing or uncertainty."} -->
 
 ## Sources
 

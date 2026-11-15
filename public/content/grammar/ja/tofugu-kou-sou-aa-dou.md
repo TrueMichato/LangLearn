@@ -1,5 +1,7 @@
 # こう・そう・ああ・どう
 
+<!-- vocab-inventory: {"mode":"explicit"} -->
+
 > **Source:** Content from [Tofugu](https://www.tofugu.com/japanese-grammar/kou-sou-aa-dou/). For personal study.
 
 Japanese Demonstratives: こう(Kou) • そう(Sou) • ああ(Aa) • どう(Dou)
@@ -15,6 +17,11 @@ Demonstrative
 ## The Basics
 
 こう, そう, ああ, and どう are a set of こそあど words. They get placed before an adjective or verb to give information about the way the adjective or verb that follows acts. In general, こう is used for an adjective or verb that the speaker thinks is close to them, そう for those that are close to the listener, and ああ for those that are far from both the speaker and listener. どう is the question word that goes together with the set, and asks "how?" or "in what manner?"
+
+<!-- vocab-card: {"id":"vocab-kou","priority":"essential","sourceSection":"The Basics","word":"こう","reading":"こう","meaning":"like this; in this way"} -->
+<!-- vocab-card: {"id":"vocab-sou","priority":"essential","sourceSection":"The Basics","word":"そう","reading":"そう","meaning":"like that; in that way"} -->
+<!-- vocab-card: {"id":"vocab-aa","priority":"essential","sourceSection":"The Basics","word":"ああ","reading":"ああ","meaning":"like that over there; in that distant manner"} -->
+<!-- vocab-card: {"id":"vocab-dou","priority":"essential","sourceSection":"The Basics","word":"どう","reading":"どう","meaning":"how; in what way"} -->
 
 ### Conceptualizing こそあど
 
@@ -63,6 +70,8 @@ If you'd like to read scenarios that illustrate these concepts and learn more ab
 
   - Hot weather **like this** makes me want to do nothing.
 
+<!-- grammar-card: {"id":"current-degree","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Patterns of Use","rule":"こう means 'in this way', pointing at the present situation","hint":"Refer to the speaker's current heat: this hot","example":"___暑いと何もする気にならない。","answer":"こう","explanation":"こう can precede an adjective, not only an action verb. It can also stand with だ in こうだよ."} -->
+
 ### こう, そう, ああ for Describing "How"
 
 こう, そう, and ああ are used with an adjective or verb to describe the way the adjective is, or how the verb is done. It's the equivalent of "like this" or "like that" in English. Unlike the other words in this set, the あ-word doesn't end with う but あ, as ああ.
@@ -97,6 +106,10 @@ The question word that goes with this set is どう, and it asks "how?" or "like
 
   - **How** should I roll it?
 
+<!-- grammar-card: {"id":"listener-method","kind":"rule","format":"cloze","priority":"essential","sourceSection":"こう, そう, ああ for Describing \"How\"","rule":"そう refers to the way the listener is doing something","hint":"Approve the listener's demonstrated rolling method","example":"うんうん！___巻けばいいよ！上手いじゃん！","answer":"そう","explanation":"そう points to the listener's method, while こう would present the speaker's own demonstration."} -->
+<!-- grammar-card: {"id":"how-question","kind":"rule","format":"cloze","priority":"essential","sourceSection":"こう, そう, ああ for Describing \"How\"","rule":"どう asks how to carry out an action","example":"How should I roll it? ___巻けばいいの？","answer":"どう","explanation":"どう asks for a manner; どんな normally describes the kind of a following noun."} -->
+<!-- grammar-card: {"id":"distant-manner-spelling","kind":"concept","format":"qa","priority":"optional","sourceSection":"こう, そう, ああ for Describing \"How\"","rule":"The distant member of this series is ああ, not あう","example":"Which manner word refers to a third person's method distant from both speaker and listener?","answer":"ああ.","explanation":"Its second vowel is あ, unlike the う in こう, そう and どう."} -->
+
 ### そう for Agreement
 
 When someone asks you a question, and your reply uses そう with a falling intonation, it shows your confirmation and agreement.
@@ -127,9 +140,7 @@ For example, imagine you receive a compliment. Because you feel shy about it, yo
 
   - Is that true?
 
-<!-- grammar-card: {"rule":"そう refers to the way the listener is doing something","hint":"こう / そう / ああ","example":"うんうん！___巻けばいいよ！上手いじゃん！","answer":"そう","explanation":"そう praises the listener's own method: roll it just like that."} -->
-
-<!-- grammar-card: {"rule":"こう means 'in this way', pointing at the present situation","hint":"こう / そう / ああ","example":"___暑いと何もする気にならない。","answer":"こう","explanation":"こう暑い means 'this hot', referring to the heat the speaker is in right now."} -->
+<!-- grammar-card: {"id":"sou-intonation","kind":"concept","format":"qa","priority":"essential","sourceSection":"そう for Agreement","rule":"Falling and rising intonation distinguish confirmation from questioning","example":"How does falling そう differ from rising そう？ in a reply?","answer":"Falling intonation confirms or agrees; rising intonation asks Really? or questions what was said.","explanation":"そうです is polite confirmation; そうだよ and repeated そうそう are more casual."} -->
 
 ## Beyond the Basics
 
@@ -151,6 +162,10 @@ For example, imagine you receive a compliment. Because you feel shy about it, yo
 
 This last example only applies to そうそう, but not to そういえば.
 
+<!-- vocab-card: {"id":"vocab-souieba","priority":"optional","sourceSection":"そうそう and そういえば","word":"そういえば","reading":"そういえば","meaning":"speaking of which; come to think of it"} -->
+<!-- vocab-card: {"id":"vocab-sousou","priority":"optional","sourceSection":"そうそう and そういえば","word":"そうそう","reading":"そうそう","meaning":"right, right; oh yes; that's it (casual)"} -->
+<!-- grammar-card: {"id":"encouragement-versus-recollection","kind":"concept","format":"qa","priority":"optional","sourceSection":"そうそう and そういえば","rule":"そうそう can encourage an ongoing action; そういえば does not","example":"Can そういえば replace そうそう in そうそう、その調子！ while coaching someone's action?","answer":"No. そうそう can mean That's it, keep going; そういえば introduces a recollection or related topic.","explanation":"Both can signal a newly remembered thought, but only そうそう has this encouragement use."} -->
+
 ### Common Combinations
 
 With the verb いう, you can make another set — こういう, そういう, ああいう, and どういう. They're also the equivalents of "like this" and "like that," but are used to describe the way a noun acts or is.
@@ -161,13 +176,17 @@ For example, imagine you are in a clothing store and come across a shirt that's 
 
   - I wanted a shirt **like this**.
 
-こういう can also be combined with other words such as  様(よう),  風 (ふう), and 感じ, to make こういう様, そういう風 or ああいう感じ. These sets are used in a similar way to こういう, そういう, ああいう, and どういう, but they're a little less direct. They also function like な-adjectives, so they behave slightly differently in a sentence compared to こういう, and such.
+こういう can also combine with 様(よう), 風(ふう), and 感じ to describe a manner less directly. Before a noun, use 様な or 風な, but 感じの: 感じ is a noun, not a な-adjective.
 
 In this case, 〜様 is the most formal of the three, 〜風 is an ordinary expression used in daily conversation, and 〜感じ is very casual. If you make a mistake at work, you may want to go with the most formal expression, such as:
 
   - 今後**こういう様な**ことはないよう気をつけます。
 
   - I will be careful not to do anything **like this** in the future.
+
+<!-- grammar-card: {"id":"noun-kind-kouiu","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Common Combinations","rule":"こういう modifies a noun, meaning 'this kind of'","hint":"A shirt of the type right here; use the いう combination","example":"___シャツが欲しかったんだよね。","answer":"こういう","explanation":"こういう directly modifies シャツ, unlike adverbial こう by itself."} -->
+<!-- grammar-card: {"id":"noun-link-feeling","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Common Combinations","rule":"感じ takes の before a following noun","example":"An event with that sort of feel: そういう感じ___こと。","answer":"の","explanation":"Use 感じの, compared with 様な and 風な; do not treat all three as な-adjectives."} -->
+<!-- grammar-card: {"id":"manner-formality","kind":"concept","format":"qa","priority":"optional","sourceSection":"Common Combinations","rule":"The choice of manner expression can change formality","example":"Which is more formal in these manner descriptions, 様 or 感じ?","answer":"様 (よう) is more formal; 感じ (かんじ) is casual, with 風 (ふう) more neutral.","explanation":"The register qualification applies to these expressions rather than every use of each word."} -->
 
 ---
 
@@ -332,8 +351,6 @@ by 金水 敏 and 田窪 行則
 <!-- quiz: {"type":"multiple-choice","question":"What does \"**こう**暑いと何もする気にならない。\" mean?","options":["Hot weather **like this** makes me want to do nothing.","Oh, you write it **like that**, huh?","You roll sushi **like this**.","Yes, yes! That's how you roll it! You're good!"],"answer":0} -->
 
 <!-- quiz: {"type":"multiple-choice","question":"What does \"寿司は**こう**巻くんだよ。\" mean?","options":["You roll sushi **like this**.","Oh, you write it **like that**, huh?","Hot weather **like this** makes me want to do nothing.","Yes, yes! That's how you roll it! You're good!"],"answer":0} -->
-
-<!-- grammar-card: {"rule":"こういう modifies a noun, meaning 'this kind of'","hint":"こう + いう","example":"___シャツが欲しかったんだよね。","answer":"こういう","explanation":"こういうシャツ means a shirt of this particular type."} -->
 
 ## Sources
 

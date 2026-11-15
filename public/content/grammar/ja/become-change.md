@@ -1,5 +1,7 @@
 # Becoming & Changing (になる、くなる、にする)
 
+<!-- vocab-inventory: {"mode":"explicit"} -->
+
 Japanese uses specific patterns to express becoming something or changing a state. The core idea revolves around **なる** (to become) and **する** (to make/do). This lesson covers all the major patterns for describing natural change, acquired abilities, and decisions.
 
 ## になる — Becoming (な-adjectives & Nouns)
@@ -40,7 +42,8 @@ Use **になる** with **な-adjectives** (drop な) and **nouns** to express "b
 > *Nihongo ga jouzu ni narimashita ne.*
 > Your Japanese has gotten good!
 
-<!-- grammar-card: {"rule":"Nouns and な-adjectives take に before なる","hint":"医者 (doctor) + なる, polite past","example":"弟(おとうと)は___。","answer":"医者(いしゃ)になりました","explanation":"医者になりました says he became a doctor; a noun always needs に before なる."} -->
+<!-- grammar-card: {"id":"noun-become","kind":"rule","format":"cloze","priority":"essential","sourceSection":"になる — Becoming (な-adjectives & Nouns)","rule":"Nouns and な-adjectives take に before なる","hint":"医者 (いしゃ, doctor) + なる, polite past","example":"弟(おとうと)は___。","answer":"医者になりました","explanation":"医者になりました describes becoming a doctor. Noun + に + なる differs from the く form of い-adjectives."} -->
+<!-- grammar-card: {"id":"na-adjective-become","kind":"rule","format":"cloze","priority":"optional","sourceSection":"になる — Becoming (な-adjectives & Nouns)","rule":"A な-adjective uses its stem plus になる","example":"The room became quiet: 部屋が静か___なった。","answer":"に","explanation":"静かになった (しずかになった) has に, not なに or く. 綺麗 also follows the な-adjective pattern despite its final い sound."} -->
 
 ## くなる — Becoming (い-adjectives)
 
@@ -84,7 +87,9 @@ Use **くなる** with **い-adjectives** by replacing い with く.
 
 <!-- quiz:{"type":"multiple-choice","question":"How do you say 'It became cold'?","options":["寒いになった","寒くになった","寒くなった","寒になった"],"answer":2} -->
 
-<!-- grammar-card: {"rule":"い-adjectives replace い with く before なる","hint":"寒い + なる, polite past","example":"最近(さいきん)、寒(さむ)___。","answer":"くなりました","explanation":"寒い becomes 寒くなりました — the weather has turned cold."} -->
+<!-- grammar-card: {"id":"iadjective-become","kind":"rule","format":"cloze","priority":"essential","sourceSection":"くなる — Becoming (い-adjectives)","rule":"い-adjectives replace い with く before なる","hint":"寒い + なる, polite past","example":"最近(さいきん)、寒(さむ)___。","answer":"くなりました","explanation":"寒くなりました (さむくなりました) describes becoming cold. No に follows the く form."} -->
+<!-- grammar-card: {"id":"ii-change-exception","kind":"rule","format":"cloze","priority":"essential","sourceSection":"くなる — Becoming (い-adjectives)","rule":"いい uses the よい stem for the く form","example":"Become better: いい → ___なる。","answer":"よく","explanation":"いい becomes よくなる (良くなる), not いくなる. The same よく form appears in よくする."} -->
+<!-- grammar-card: {"id":"desire-become","kind":"concept","format":"qa","priority":"optional","sourceSection":"くなる — Becoming (い-adjectives)","rule":"たい changes to たく before なる like an い-adjective","example":"What changed in コーヒーが飲みたくなった?","answer":"The speaker has come to want to drink coffee.","explanation":"飲みたい becomes 飲みたくなる, expressing a change in desire rather than the act of drinking."} -->
 
 ## にする — Making/Changing to (な-adjectives & Nouns)
 
@@ -122,7 +127,7 @@ Use **にする** with **な-adjectives** and **nouns** to express "make ~" or "
 
 <!-- quiz:{"type":"multiple-choice","question":"At a restaurant, how do you say 'I'll have the sushi'?","options":["寿司をなる","寿司になる","寿司をする","寿司にする"],"answer":3} -->
 
-<!-- grammar-card: {"rule":"にする expresses a deliberate choice","hint":"coffee + する, polite","example":"私はコーヒー___。","answer":"にします","explanation":"コーヒーにします is how you order: I'll go with the coffee."} -->
+<!-- grammar-card: {"id":"noun-choice","kind":"rule","format":"cloze","priority":"essential","sourceSection":"にする — Making/Changing to (な-adjectives & Nouns)","rule":"にする expresses a deliberate choice","hint":"Politely decide on coffee.","example":"私はコーヒー___。","answer":"にします","explanation":"コーヒーにします means I'll have coffee or I'll go with coffee, not become coffee."} -->
 
 ## くする — Making (い-adjectives)
 
@@ -157,6 +162,7 @@ Use **くする** with **い-adjectives** to express "make ~".
 > *Heya wo akaruku shiyou.*
 > Let's make the room brighter.
 
+<!-- grammar-card: {"id":"iadjective-make","kind":"rule","format":"cloze","priority":"essential","sourceSection":"くする — Making (い-adjectives)","rule":"い-adjective stem + くする expresses causing a change","example":"Please make the sound louder: 音を大き___してください。","answer":"く","explanation":"大きくする (おおきくする) actively makes something bigger or louder; 大きくなる describes it becoming so."} -->
 ## なる vs する — Comparison
 
 The key difference: **なる** describes a **natural change**, while **する** implies someone **actively causes** the change.
@@ -175,6 +181,7 @@ The key difference: **なる** describes a **natural change**, while **する** 
 > *Heya wo kuraku shita.*
 > I made the room dark. (intentional action)
 
+<!-- grammar-card: {"id":"become-make-agency","kind":"concept","format":"qa","priority":"essential","sourceSection":"なる vs する — Comparison","rule":"なる describes a change without foregrounding an agent; する presents causing or choosing it","example":"Does 暗くなった prove that no person caused the darkness?","answer":"No. It describes becoming dark without focusing on who caused it; 暗くした presents someone making it dark.","explanation":"Natural change is a useful teaching cue, not a claim that なる excludes human causes."} -->
 <!-- quiz:{"type":"multiple-choice","question":"Which sentence means 'The child grew tall' (natural change)?","options":["子供を背が高くした","子供の背が高くなった","子供は背が高くする","子供に背が高くなる"],"answer":1} -->
 
 ## ようになる — "Come to ~ / Become able to ~"
@@ -209,7 +216,9 @@ The key difference: **なる** describes a **natural change**, while **する** 
 
 > 💡 **ようになる** focuses on gradual, natural change — not a sudden decision.
 
-<!-- grammar-card: {"rule":"ようになる marks reaching a new ability","hint":"話せる + ?","example":"日本語が話(はな)せる___。","answer":"ようになりました","explanation":"話せるようになりました says the speaker has come to be able to speak Japanese."} -->
+<!-- grammar-card: {"id":"acquired-ability","kind":"rule","format":"cloze","priority":"essential","sourceSection":"ようになる — \"Come to ~ / Become able to ~\"","rule":"ようになる marks reaching a new ability","hint":"Politely describe becoming able, in the past.","example":"日本語が話(はな)せる___。","answer":"ようになりました","explanation":"話せる is already potential. ようになりました describes the change into that ability, not a one-time decision."} -->
+<!-- grammar-card: {"id":"habit-change","kind":"concept","format":"qa","priority":"essential","sourceSection":"Positive: Acquiring an ability or habit","rule":"ようになる can describe a new habit without a potential verb","example":"Does 毎日運動するようになった only mean becoming physically able to exercise?","answer":"No. It normally means coming to exercise every day as a new habit.","explanation":"運動する is not potential; the pattern describes a change in behavior. Potential 話せるようになる instead describes ability."} -->
+<!-- grammar-card: {"id":"negative-habit-change","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Negative: Losing an ability or stopping a habit","rule":"ない changes to なく before なる when an action stops occurring","example":"I stopped watching TV: テレビを見___なった。","answer":"なく","explanation":"見なくなった (みなくなった) describes no longer watching. 飲まないようになった is another way to describe a new negative habit."} -->
 
 ## ことになる — "It has been decided that ~"
 
@@ -231,6 +240,7 @@ The key difference: **なる** describes a **natural change**, while **する** 
 > *Rainen kara seifuku wo kinai koto ni natta.*
 > It's been decided that we won't wear uniforms from next year.
 
+<!-- grammar-card: {"id":"external-arrangement","kind":"rule","format":"cloze","priority":"essential","sourceSection":"ことになる — \"It has been decided that ~\"","rule":"ことになる presents an arrangement or resulting decision","example":"The company arranged my transfer: 大阪に転勤する___。 (plain past)","answer":"ことになった","explanation":"転勤することになった (てんきんすることになった) presents the outcome without foregrounding the speaker as decision-maker."} -->
 ## ことにする — "Decide to ~" (Personal Decision)
 
 **ことにする** expresses a **personal, deliberate decision** made by the speaker.
@@ -256,6 +266,7 @@ The key difference: **なる** describes a **natural change**, while **する** 
 
 > 💡 In Japanese business culture, ことになる is often used even for personal decisions to sound more humble and less assertive.
 
+<!-- grammar-card: {"id":"decision-framing","kind":"concept","format":"qa","priority":"essential","sourceSection":"ことになる vs ことにする","rule":"ことにする foregrounds making a decision; ことになる foregrounds the arrangement","example":"Does ことになった always prove that the speaker had no part in the decision?","answer":"No. It presents an arrangement or outcome without foregrounding personal choice; speakers can use it even for decisions they helped make.","explanation":"ことにした explicitly presents the choice as one's own. The contrast is framing, not a guaranteed account of who participated."} -->
 <!-- quiz:{"type":"multiple-choice","question":"Your company transfers you to Osaka. Which is correct?","options":["大阪に転勤することにした","大阪に転勤するようになった","大阪に転勤することになった","大阪に転勤するくなった"],"answer":2} -->
 
 ## Complete Summary

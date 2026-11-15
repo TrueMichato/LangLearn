@@ -1,12 +1,18 @@
 # Comparatives and Superlatives (Comparativos e Superlativos)
 
+<!-- vocab-inventory: {"mode":"explicit"} -->
+
 Comparatives and superlatives let you compare things — saying something is bigger, better, more interesting, or the most beautiful. Portuguese has regular patterns for most adjectives and a few important irregular forms that you'll use every day.
 
 ## Comparatives of Superiority: Mais...do que
 
+<!-- grammar-card: {"id":"superiority-application","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Comparatives of Superiority: Mais...do que","rule":"Regular superiority comparisons use mais + adjective + do que","example":"Ela é ___ alta do que eu. (more)","answer":"mais","explanation":"Regular superiority comparisons use mais + adjective + do que; grande normally compares as maior.","legacyAliases":[{"rule":"Comparatives use: mais...do que (more than), menos...do que (less than), tão...quanto (as...as)","example":"O Brasil é ___ grande ___ Portugal"}]} -->
+<!-- grammar-card: {"id":"comparison-actions","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Comparatives of Superiority: Mais...do que","rule":"Mais can compare amounts of an action","example":"Eu estudo ___ do que ele. (more)","answer":"mais","explanation":"Mais can follow a verb directly when comparing amounts of an action."} -->
+<!-- grammar-card: {"id":"comparison-que-variant","kind":"concept","format":"qa","priority":"optional","sourceSection":"Comparatives of Superiority: Mais...do que","rule":"Comparative que need not always include do","example":"Must every Portuguese more-than comparison include do before que?","answer":"No. Que alone is also possible, and is common in spoken Brazilian Portuguese.","explanation":"Both mais alta do que eu and mais alta que eu are comparison constructions."} -->
+
 To say something is "more...than," use **mais + adjective + do que**:
 
-- **O Brasil é mais grande do que Portugal** (oo brah-zeel eh mahyz gran-jee doo kee por-too-gow) — Brazil is bigger than Portugal
+- **O Brasil é maior do que Portugal** (oo brah-zeel eh mah-ee-or doo kee por-too-gow) — Brazil is bigger than Portugal *(irregular size comparison; see below)*
 - **Ela é mais alta do que eu** (eh-lah eh mahyz ow-tah doo kee eh-oo) — She is taller than me
 - **Este livro é mais interessante do que aquele** (esh-chee lee-vroo eh mahyz een-teh-reh-san-chee doo kee ah-keh-lee) — This book is more interesting than that one
 - **São Paulo é mais populosa do que o Rio** (sow pow-loo eh mahyz poh-poo-loh-zah doo kee oo hee-oo) — São Paulo is more populated than Rio
@@ -21,6 +27,8 @@ You can also compare actions with **mais...do que**:
 
 ## Comparatives of Inferiority: Menos...do que
 
+<!-- grammar-card: {"id":"inferiority-application","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Comparatives of Inferiority: Menos...do que","rule":"Inferiority uses menos + adjective + do que","example":"Este filme é ___ interessante do que o outro. (less)","answer":"menos","explanation":"Inferiority uses menos + adjective + do que."} -->
+
 To say something is "less...than," use **menos + adjective + do que**:
 
 - **Este filme é menos interessante do que o outro** (esh-chee feel-mee eh meh-nooz een-teh-reh-san-chee doo kee oo oh-troo) — This movie is less interesting than the other one
@@ -29,6 +37,9 @@ To say something is "less...than," use **menos + adjective + do que**:
 - **Ele é menos paciente do que a irmã** (eh-lee eh meh-nooz pah-see-en-chee doo kee ah eer-mah) — He is less patient than his sister
 
 ## Comparatives of Equality: Tão...quanto
+
+<!-- grammar-card: {"id":"equality-adjective","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Comparatives of Equality: Tão...quanto","rule":"Quality equality uses tão + adjective + quanto","example":"Ela é ___ inteligente quanto ele. (as intelligent as)","answer":"tão","explanation":"Use tão + adjective + quanto for equality of a quality."} -->
+<!-- grammar-card: {"id":"equality-quantity","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Comparatives of Equality: Tão...quanto","rule":"Tanto agrees with a noun in quantity comparisons","example":"Ele bebe ___ água quanto eu. (as much water as)","answer":"tanta","explanation":"Tanto agrees with the noun in quantity comparisons: tanta água, tantos livros."} -->
 
 To say something is "as...as," use **tão + adjective + quanto**:
 
@@ -45,6 +56,16 @@ For quantities, use **tanto/tanta/tantos/tantas...quanto**:
 <!-- quiz: {"type":"multiple-choice","question":"How do you say 'She is taller than me' in Portuguese?","options":["Ela é mais alta do que eu","Ela é menos alta do que eu","Ela é tão alta quanto eu","Ela é a mais alta"],"answer":0} -->
 
 ## Irregular Comparatives
+
+<!-- grammar-card: {"id":"irregular-better","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Irregular Comparatives","rule":"Irregular comparatives: bom→melhor, mau/ruim→pior, grande→maior, pequeno→menor","example":"Este café é ___ do que aquele (better)","answer":"melhor","explanation":"Bom compares as melhor; standard usage does not add mais to melhor."} -->
+<!-- grammar-card: {"id":"irregular-worse","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Irregular Comparatives","rule":"Mau and ruim compare as pior","example":"A situação está ___ do que antes. (worse)","answer":"pior","explanation":"Mau and ruim compare as pior, not mais pior."} -->
+<!-- grammar-card: {"id":"irregular-bigger","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Irregular Comparatives","rule":"Ordinary size comparison uses maior for grande","example":"O Brasil é ___ do que Portugal. (bigger)","answer":"maior","explanation":"Use maior for an ordinary comparison of size between two entities."} -->
+<!-- grammar-card: {"id":"irregular-smaller","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Irregular Comparatives","rule":"Pequeno compares as menor","example":"O preço é ___ do que eu pensava. (smaller)","answer":"menor","explanation":"Pequeno has the irregular comparative menor."} -->
+<!-- vocab-card: {"id":"vocab-bom","word":"bom","meaning":"good","priority":"optional","sourceSection":"Irregular Comparatives"} -->
+<!-- vocab-card: {"id":"vocab-mau","word":"mau","meaning":"bad","priority":"optional","sourceSection":"Irregular Comparatives"} -->
+<!-- vocab-card: {"id":"vocab-ruim","word":"ruim","meaning":"bad","priority":"optional","sourceSection":"Irregular Comparatives"} -->
+<!-- vocab-card: {"id":"vocab-grande","word":"grande","meaning":"big; large","priority":"optional","sourceSection":"Irregular Comparatives"} -->
+<!-- vocab-card: {"id":"vocab-pequeno","word":"pequeno","meaning":"small","priority":"optional","sourceSection":"Irregular Comparatives"} -->
 
 Some common adjectives have irregular comparative forms — they don't use **mais**:
 
@@ -70,6 +91,9 @@ Some common adjectives have irregular comparative forms — they don't use **mai
 
 ### Relative Superlative: o/a mais...
 
+<!-- grammar-card: {"id":"relative-superlative","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Relative Superlative: o/a mais...","rule":"A relative superlative has an agreeing article","example":"Ela é ___ mais inteligente da turma. (the most intelligent)","answer":"a","explanation":"A relative superlative uses an agreeing article with mais or menos and identifies a comparison group."} -->
+<!-- grammar-card: {"id":"least-superlative","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Relative Superlative: o/a mais...","rule":"O/a menos forms a relative superlative of inferiority","example":"Este é o filme ___ interessante. (least)","answer":"menos","explanation":"O/a menos + adjective forms the relative superlative of inferiority."} -->
+
 To say something is "the most..." or "the ...est," use **o/a mais + adjective**:
 
 - **Ela é a mais inteligente da turma** (eh-lah eh ah mahyz een-teh-lee-zhen-chee dah toor-mah) — She is the most intelligent in the class
@@ -83,6 +107,8 @@ For "the least...":
 
 ### Irregular Superlatives
 
+<!-- grammar-card: {"id":"irregular-best","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Irregular Superlatives","rule":"An article makes melhor a relative superlative","example":"Ela é a ___ aluna. (best)","answer":"melhor","explanation":"An article turns melhor into a relative superlative: a melhor aluna."} -->
+
 | Adjective | Superlative |
 |-----------|-------------|
 | bom | o/a melhor |
@@ -95,6 +121,21 @@ For "the least...":
 - **São Paulo é a maior cidade do Brasil** (sow pow-loo eh ah mah-ee-or see-dah-jee doo brah-zeel) — São Paulo is the biggest city in Brazil
 
 ### Absolute Superlative: -íssimo
+
+<!-- grammar-card: {"id":"absolute-good-agreement","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Absolute Superlative: -íssimo","rule":"The absolute superlative suffix -íssimo/a means 'extremely' or 'very' and agrees in gender","example":"A comida estava ___! (extremely good, feminine)","answer":"boníssima","explanation":"Boníssima is a feminine absolute superlative of boa; ótima is another form taught here."} -->
+<!-- grammar-card: {"id":"absolute-difficult","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Absolute Superlative: -íssimo","rule":"Difícil has absolute superlative dificílimo","example":"O exame foi ___. (extremely difficult; difícil)","answer":"dificílimo","explanation":"Difícil has the absolute superlative dificílimo, not a mechanically appended -íssimo."} -->
+<!-- grammar-card: {"id":"absolute-rich-spelling","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Absolute Superlative: -íssimo","rule":"Rico preserves its hard consonant with qu before íssimo","example":"Ele é ___. (extremely rich; rico)","answer":"riquíssimo","explanation":"Rico becomes riquíssimo, with qu preserving the /k/ sound before i."} -->
+<!-- grammar-card: {"id":"absolute-versus-relative","kind":"concept","format":"qa","priority":"optional","sourceSection":"Absolute Superlative: -íssimo","rule":"Absolute intensity does not require group ranking","example":"Does caríssimo necessarily mean the most expensive item in a group?","answer":"No. It means extremely expensive; a relative superlative ranks it against a group.","explanation":"Absolute superlatives intensify a quality without requiring comparison with other things."} -->
+<!-- vocab-card: {"id":"vocab-lindo","word":"lindo","meaning":"beautiful","priority":"optional","sourceSection":"Absolute Superlative: -íssimo"} -->
+<!-- vocab-card: {"id":"vocab-facil","word":"fácil","meaning":"easy","priority":"optional","sourceSection":"Absolute Superlative: -íssimo"} -->
+<!-- vocab-card: {"id":"vocab-dificil","word":"difícil","meaning":"difficult","priority":"optional","sourceSection":"Absolute Superlative: -íssimo"} -->
+<!-- vocab-card: {"id":"vocab-rico","word":"rico","meaning":"rich","priority":"optional","sourceSection":"Absolute Superlative: -íssimo"} -->
+<!-- vocab-card: {"id":"vocab-caro","word":"caro","meaning":"expensive","priority":"optional","sourceSection":"Absolute Superlative: -íssimo"} -->
+<!-- vocab-card: {"id":"vocab-frio","word":"frio","meaning":"cold","priority":"optional","sourceSection":"Absolute Superlative: -íssimo"} -->
+<!-- grammar-card: {"id":"absolute-easy-spelling","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Absolute Superlative: -íssimo","rule":"Fácil shifts stress when forming facilíssimo","example":"O exercício é ___. (extremely easy; fácil)","answer":"facilíssimo","explanation":"Fácil becomes facilíssimo, with stress on íssimo rather than the original first syllable."} -->
+<!-- grammar-card: {"id":"absolute-cold-spelling","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Absolute Superlative: -íssimo","rule":"The taught friíssimo form preserves the stem i before -íssimo","example":"O dia está ___. (extremely cold; frio)","answer":"friíssimo","explanation":"Frio becomes friíssimo in the form taught here, preserving the stem i before -íssimo."} -->
+<!-- vocab-card: {"id":"vocab-otimo","word":"ótimo","meaning":"excellent; extremely good","priority":"optional","sourceSection":"Absolute Superlative: -íssimo"} -->
+<!-- vocab-card: {"id":"vocab-pessimo","word":"péssimo","meaning":"terrible; extremely bad","priority":"optional","sourceSection":"Absolute Superlative: -íssimo"} -->
 
 The suffix **-íssimo/a** adds emphasis, meaning "very" or "extremely." It agrees in gender:
 
@@ -117,12 +158,6 @@ The suffix **-íssimo/a** adds emphasis, meaning "very" or "extremely." It agree
 <!-- quiz: {"type":"multiple-choice","question":"How do you say 'This is the best restaurant in the city'?","options":["Este é o mais bom restaurante da cidade","Este é o melhor restaurante da cidade","Este é o restaurante bonior da cidade","Este é mais melhor restaurante da cidade"],"answer":1} -->
 
 <!-- quiz: {"type":"multiple-choice","question":"What does 'caríssimo' mean?","options":["Very cheap","Somewhat expensive","Extremely expensive","A little dear"],"answer":2} -->
-
-<!-- grammar-card: {"rule":"Comparatives use: mais...do que (more than), menos...do que (less than), tão...quanto (as...as)","hint":"'Do que' can be shortened to 'que' in speech","example":"O Brasil é ___ grande ___ Portugal","answer":"mais...do que","explanation":"To compare two things where one is superior, use 'mais + adjective + do que': 'O Brasil é mais grande do que Portugal.'"} -->
-
-<!-- grammar-card: {"rule":"Irregular comparatives: bom→melhor, mau/ruim→pior, grande→maior, pequeno→menor","hint":"Never say 'mais melhor' or 'mais pior' — the comparative is built in","example":"Este café é ___ do que aquele (better)","answer":"melhor","explanation":"'Melhor' is the irregular comparative of 'bom.' Do not use 'mais bom' — use 'melhor' directly."} -->
-
-<!-- grammar-card: {"rule":"The absolute superlative suffix -íssimo/a means 'extremely' or 'very' and agrees in gender","hint":"lindo → lindíssimo (m.) / lindíssima (f.)","example":"A comida estava ___! (extremely good, feminine)","answer":"boníssima","explanation":"The absolute superlative of 'bom/boa' is 'boníssimo/boníssima.' Since 'comida' is feminine, use 'boníssima.'"} -->
 
 ## Sources
 

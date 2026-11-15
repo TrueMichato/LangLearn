@@ -1,5 +1,7 @@
 # The Imperative
 
+<!-- vocab-inventory: {"mode":"explicit"} -->
+
 The imperative is used for commands, instructions, invitations, and requests: **Come!**, **Read!**, **Please wait!** Romanian has different patterns for informal singular **tu** and plural/formal **voi / dumneavoastră**.
 
 ## Positive Commands: tu
@@ -21,6 +23,12 @@ Many positive singular commands use a special or present-like form.
 - **Vino aici!** (VEE-noh ah-CH) — Come here!
 - **Fă tema!** (fuh TEH-mah) — Do the homework!
 
+<!-- grammar-card: {"id":"imperative-address-distinction","kind":"concept","format":"qa","priority":"essential","sourceSection":"Positive Commands: tu","rule":"The imperative distinguishes informal singular from plural/formal address","example":"What address distinction determines whether to use a tu command or a voi/dumneavoastră command?","answer":"One informal addressee versus plural or polite formal address.","explanation":"Imperatives can be instructions, invitations, or requests, not only harsh orders."} -->
+<!-- grammar-card: {"id":"positive-read-command","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Positive Commands: tu","rule":"The positive tu command of a citi is citește","example":"___ textul! (Read; one informal addressee)","answer":"Citește","explanation":"The positive tu command is not the infinitive citi."} -->
+<!-- grammar-card: {"id":"irregular-come-command","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Positive Commands: tu","rule":"A veni has irregular positive tu imperative vino","example":"___ aici! (Come; one informal addressee)","answer":"Vino","explanation":"Learn the special command vino rather than predicting it from the indicative."} -->
+<!-- grammar-card: {"id":"irregular-do-command","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Positive Commands: tu","rule":"A face has positive tu imperative fă","example":"___ tema! (Do; one informal addressee)","answer":"Fă","explanation":"The special positive command fă contrasts with negative nu face."} -->
+<!-- grammar-card: {"id":"irregular-give-command","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Positive Commands: tu","rule":"A da has positive tu imperative dă","example":"___ cartea! (Give; one informal addressee)","answer":"Dă","explanation":"The positive command dă retains ă; negative uses nu da."} -->
+<!-- grammar-card: {"id":"go-singular-command","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Positive Commands: tu","rule":"A merge has positive tu imperative mergi","example":"___ acasă! (Go; one informal addressee)","answer":"Mergi","explanation":"Positive mergi differs from negative nu merge."} -->
 <!-- quiz: {"type":"multiple-choice","question":"Which command means 'Come!'?","options":["Mergi!","Vino!","Fă!","Dă!"],"answer":1} -->
 
 ## Negative Commands: tu
@@ -40,11 +48,12 @@ Negative singular commands usually use **nu + infinitive without a**.
 - **Nu pleca acum.** — Don't leave now.
 - **Nu face zgomot.** — Don't make noise.
 
-<!-- grammar-card: {"rule":"Negative tu commands use nu + infinitive without a","hint":"Vorbește! but Nu vorbi!","example":"___ pleca acum. (Don't leave now.)","answer":"Nu","explanation":"Negative commands begin with nu, followed by the infinitive form without a: Nu pleca."} -->
+<!-- grammar-card: {"id":"negative-singular-marker","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Negative Commands: tu","rule":"Negative tu commands use nu + infinitive without a","example":"___ pleca acum. (Don't leave now.)","answer":"Nu","explanation":"Negative singular commands use nu followed by the infinitive without a."} -->
+<!-- grammar-card: {"id":"negative-singular-verb-form","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Negative Commands: tu","rule":"A negative tu command uses the infinitive rather than simply negating the positive command","example":"Nu ___ zgomot! (Don't make noise; one informal addressee)","answer":"face","explanation":"Use nu face, not nu fă. Similarly vorbește becomes nu vorbi."} -->
 
 ## Plural and Formal Commands
 
-For **voi** or polite **dumneavoastră**, use the second-person plural present form.
+For most verbs, **voi** or polite **dumneavoastră** commands use the second-person plural present form. **A fi** is an important exception: the command is **Fiți!**, not present-tense **sunteți**.
 
 | Infinitive | Command | English |
 |------------|---------|---------|
@@ -63,6 +72,10 @@ Negative plural/formal commands keep the same verb form after **nu**:
 - **Nu plecați.** — Don't leave. (plural/formal)
 - **Nu vorbiți tare.** — Don't speak loudly.
 
+<!-- grammar-card: {"id":"formal-wait-command","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Plural and Formal Commands","rule":"Formal or plural a aștepta uses așteptați","example":"___ aici, vă rog. (Wait; polite address)","answer":"Așteptați","explanation":"Use the plural/formal command even when addressing one person politely."} -->
+<!-- grammar-card: {"id":"fi-command-exception","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Plural and Formal Commands","rule":"A fi has exceptional plural/formal imperative fiți","example":"___ atenți! (Be; plural/formal)","answer":"Fiți","explanation":"The command is fiți, not the indicative present sunteți."} -->
+<!-- grammar-card: {"id":"negative-plural-same-form","kind":"concept","format":"qa","priority":"essential","sourceSection":"Plural and Formal Commands","rule":"Negative plural/formal commands retain the positive command's verb form","example":"Does a negative plural command change vorbiți to infinitive vorbi?","answer":"No. It keeps vorbiți: Nu vorbiți!","explanation":"The infinitive-based negative rule concerns tu commands, not all commands."} -->
+<!-- vocab-card: {"id":"vocab-a-astepta","word":"a aștepta","meaning":"to wait; to wait for","priority":"optional","sourceSection":"Plural and Formal Commands"} -->
 <!-- quiz: {"type":"multiple-choice","question":"Which is a polite/formal command meaning 'Wait here, please'?","options":["Așteaptă aici, vă rog.","Așteptați aici, vă rog.","Nu aștepta aici.","Aștept aici, vă rog."],"answer":1} -->
 
 ## Commands with Pronouns
@@ -79,6 +92,8 @@ With negative commands, the pronoun comes before the verb:
 - **Nu mă ajuta.** — Don't help me.
 - **Nu te spăla aici.** — Don't wash yourself here.
 
+<!-- grammar-card: {"id":"negative-command-clitic-order","kind":"rule","format":"qa","priority":"essential","sourceSection":"Commands with Pronouns","rule":"Negative commands place the short pronoun before the verb","example":"Make Spală-te aici! negative for one informal addressee.","answer":"Nu te spăla aici!","explanation":"The pronoun moves before the verb after nu; the negative tu verb is infinitive spăla."} -->
+<!-- grammar-card: {"id":"dative-positive-command","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Commands with Pronouns","rule":"A positive command attaches a short dative pronoun with a hyphen","example":"___ cartea! (Give me the book!)","answer":"Dă-mi","explanation":"Mi follows dă with a hyphen in a positive command."} -->
 ## Making Commands Kind
 
 Commands can sound abrupt. Add **te rog** (please, informal) or **vă rog** (please, formal/plural).
@@ -87,9 +102,12 @@ Commands can sound abrupt. Add **te rog** (please, informal) or **vă rog** (ple
 - **Repetați, vă rog.** — Repeat, please.
 - **Vorbește mai încet, te rog.** — Speak more slowly, please.
 
+<!-- vocab-card: {"id":"vocab-te-rog","word":"te rog","meaning":"please (singular informal)","priority":"essential","sourceSection":"Making Commands Kind"} -->
+<!-- vocab-card: {"id":"vocab-va-rog","word":"vă rog","meaning":"please (formal or plural)","priority":"essential","sourceSection":"Making Commands Kind"} -->
+<!-- grammar-card: {"id":"kind-command-register","kind":"concept","format":"qa","priority":"optional","sourceSection":"Making Commands Kind","rule":"Please expressions should match the register of address","example":"How do te rog and vă rog differ when softening a command?","answer":"Te rog is singular informal; vă rog is formal or plural.","explanation":"These phrases make requests kinder without erasing the command's person distinction."} -->
 <!-- quiz: {"type":"multiple-choice","question":"Which sentence correctly says 'Help me!'?","options":["Mă ajută!","Ajută-mă!","Nu ajută-mă!","Ajut-mă!"],"answer":1} -->
 
-<!-- grammar-card: {"rule":"Positive commands attach object/reflexive pronouns after the verb","hint":"ajută-mă, spune-mi, spală-te","example":"___! (Help me!)","answer":"Ajută-mă","explanation":"With a positive imperative, mă attaches after ajută with a hyphen: Ajută-mă!"} -->
+<!-- grammar-card: {"id":"positive-command-clitic-order","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Commands with Pronouns","rule":"Positive commands attach object/reflexive pronouns after the verb","example":"___! (Help me!)","answer":"Ajută-mă","explanation":"Mă follows the positive imperative with a hyphen."} -->
 
 ## Sources
 

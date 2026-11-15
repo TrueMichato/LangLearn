@@ -1,5 +1,7 @@
 # Telling Time & Dates
 
+<!-- vocab-inventory: {"mode":"explicit"} -->
+
 Romanian time expressions use **ora** for the hour, **la ora** for at a time, and everyday words such as **jumătate** (half), **un sfert** (a quarter), **și** (past), and **fără** (to / minus). Dates use lowercase days and months: **luni**, **martie**, **august**.
 
 ## Asking and Giving the Time
@@ -20,6 +22,11 @@ The most common question is **Cât e ceasul?** You will also hear **Ce oră este
 
 <!-- quiz: {"type":"multiple-choice","question":"How do you ask What time is it? in Romanian?","options":["Cât e ceasul?","Unde e ceasul?","Cine e ceasul?","Cum e ziua?"],"answer":0} -->
 
+<!-- vocab-card: {"id":"vocab-cat-e-ceasul","priority":"essential","sourceSection":"Asking and Giving the Time","word":"Cât e ceasul?","meaning":"What time is it?"} -->
+<!-- vocab-card: {"id":"vocab-ce-ora-este","priority":"optional","sourceSection":"Asking and Giving the Time","word":"Ce oră este?","meaning":"What time is it?"} -->
+<!-- vocab-card: {"id":"vocab-fix","priority":"optional","sourceSection":"Asking and Giving the Time","word":"fix","meaning":"exactly; sharp (of a stated time)"} -->
+<!-- grammar-card: {"id":"hour-numeral-forms","priority":"optional","sourceSection":"Asking and Giving the Time","kind":"concept","format":"qa","rule":"Clock-time expressions use unu but două and douăsprezece","example":"Which forms are used for one and two o'clock in the examples?","answer":"Ora unu and ora două.","explanation":"Ora unu and ora două."} -->
+
 ## At a Time: la ora
 
 Use **la ora** for scheduled times: at three o'clock, at eight thirty, at noon.
@@ -36,7 +43,11 @@ Use **la ora** for scheduled times: at three o'clock, at eight thirty, at noon.
 - **Trenul pleacă la ora șapte seara.** — The train leaves at seven in the evening.
 - **Ne vedem la prânz.** — We will see each other at noon.
 
-<!-- grammar-card: {"rule":"Use la ora for at a specific clock time","hint":"at three = la ora trei","example":"Întâlnirea este ___ ora cinci.","answer":"la","explanation":"Romanian uses la ora before a scheduled clock time: la ora cinci."} -->
+<!-- vocab-card: {"id":"vocab-la-pranz","priority":"optional","sourceSection":"At a Time: la ora","word":"la prânz","meaning":"at noon"} -->
+<!-- vocab-card: {"id":"vocab-la-miezul-noptii","priority":"optional","sourceSection":"At a Time: la ora","word":"la miezul nopții","meaning":"at midnight"} -->
+<!-- vocab-card: {"id":"vocab-dimineata","priority":"optional","sourceSection":"At a Time: la ora","word":"dimineața","meaning":"in the morning"} -->
+<!-- vocab-card: {"id":"vocab-seara","priority":"optional","sourceSection":"At a Time: la ora","word":"seara","meaning":"in the evening"} -->
+<!-- grammar-card: {"id":"scheduled-time-la","priority":"essential","sourceSection":"At a Time: la ora","kind":"rule","format":"cloze","rule":"Use la ora for at a specific clock time","example":"Întâlnirea este ___ ora cinci.","answer":"la","explanation":"La ora cinci means at five o'clock."} -->
 
 ## Half, Quarter, Past, and To
 
@@ -55,6 +66,13 @@ For conversational time, Romanian often uses **și** for minutes after the hour 
 - **Ajung la două și zece.** — I arrive at ten past two.
 
 <!-- quiz: {"type":"multiple-choice","question":"What does patru fără un sfert mean?","options":["quarter to four","quarter past four","half past four","four exactly"],"answer":0} -->
+
+<!-- vocab-card: {"id":"vocab-si-time","priority":"optional","sourceSection":"Half, Quarter, Past, and To","word":"și","meaning":"past (minutes after an hour); and"} -->
+<!-- vocab-card: {"id":"vocab-fara-time","priority":"optional","sourceSection":"Half, Quarter, Past, and To","word":"fără","meaning":"to; minus (minutes before the next hour)"} -->
+<!-- vocab-card: {"id":"vocab-jumatate","priority":"optional","sourceSection":"Half, Quarter, Past, and To","word":"jumătate","meaning":"half"} -->
+<!-- vocab-card: {"id":"vocab-sfert","priority":"optional","sourceSection":"Half, Quarter, Past, and To","word":"sfert","meaning":"quarter"} -->
+<!-- grammar-card: {"id":"half-past-three","priority":"essential","sourceSection":"Half, Quarter, Past, and To","kind":"rule","format":"cloze","rule":"Minutes after an hour use și","example":"E trei ___ jumătate.","answer":"și","explanation":"Trei și jumătate is 3:30."} -->
+<!-- grammar-card: {"id":"quarter-to-four","priority":"essential","sourceSection":"Half, Quarter, Past, and To","kind":"rule","format":"cloze","rule":"Fără subtracts minutes from the following hour","example":"3:45: patru ___ un sfert","answer":"fără","explanation":"A quarter before four is 3:45."} -->
 
 ## Days and Months
 
@@ -76,6 +94,28 @@ Days and months are not capitalized unless they begin a sentence. Use the day na
 
 Common months include **ianuarie**, **februarie**, **martie**, **aprilie**, **mai**, **iunie**, **iulie**, **august**, **septembrie**, **octombrie**, **noiembrie**, **decembrie**.
 
+<!-- vocab-card: {"id":"vocab-luni","priority":"optional","sourceSection":"Days and Months","word":"luni","meaning":"Monday; on Monday"} -->
+<!-- vocab-card: {"id":"vocab-marti","priority":"optional","sourceSection":"Days and Months","word":"marți","meaning":"Tuesday; on Tuesday"} -->
+<!-- vocab-card: {"id":"vocab-miercuri","priority":"optional","sourceSection":"Days and Months","word":"miercuri","meaning":"Wednesday; on Wednesday"} -->
+<!-- vocab-card: {"id":"vocab-joi","priority":"optional","sourceSection":"Days and Months","word":"joi","meaning":"Thursday; on Thursday"} -->
+<!-- vocab-card: {"id":"vocab-vineri","priority":"optional","sourceSection":"Days and Months","word":"vineri","meaning":"Friday; on Friday"} -->
+<!-- vocab-card: {"id":"vocab-sambata","priority":"optional","sourceSection":"Days and Months","word":"sâmbătă","meaning":"Saturday; on Saturday"} -->
+<!-- vocab-card: {"id":"vocab-duminica","priority":"optional","sourceSection":"Days and Months","word":"duminică","meaning":"Sunday; on Sunday"} -->
+<!-- vocab-card: {"id":"vocab-ianuarie","priority":"optional","sourceSection":"Days and Months","word":"ianuarie","meaning":"January"} -->
+<!-- vocab-card: {"id":"vocab-februarie","priority":"optional","sourceSection":"Days and Months","word":"februarie","meaning":"February"} -->
+<!-- vocab-card: {"id":"vocab-martie","priority":"optional","sourceSection":"Days and Months","word":"martie","meaning":"March"} -->
+<!-- vocab-card: {"id":"vocab-aprilie","priority":"optional","sourceSection":"Days and Months","word":"aprilie","meaning":"April"} -->
+<!-- vocab-card: {"id":"vocab-mai","priority":"optional","sourceSection":"Days and Months","word":"mai","meaning":"May (month)"} -->
+<!-- vocab-card: {"id":"vocab-iunie","priority":"optional","sourceSection":"Days and Months","word":"iunie","meaning":"June"} -->
+<!-- vocab-card: {"id":"vocab-iulie","priority":"optional","sourceSection":"Days and Months","word":"iulie","meaning":"July"} -->
+<!-- vocab-card: {"id":"vocab-august","priority":"optional","sourceSection":"Days and Months","word":"august","meaning":"August"} -->
+<!-- vocab-card: {"id":"vocab-septembrie","priority":"optional","sourceSection":"Days and Months","word":"septembrie","meaning":"September"} -->
+<!-- vocab-card: {"id":"vocab-octombrie","priority":"optional","sourceSection":"Days and Months","word":"octombrie","meaning":"October"} -->
+<!-- vocab-card: {"id":"vocab-noiembrie","priority":"optional","sourceSection":"Days and Months","word":"noiembrie","meaning":"November"} -->
+<!-- vocab-card: {"id":"vocab-decembrie","priority":"optional","sourceSection":"Days and Months","word":"decembrie","meaning":"December"} -->
+<!-- grammar-card: {"id":"calendar-lowercase","priority":"essential","sourceSection":"Days and Months","kind":"concept","format":"qa","rule":"Day and month names are lowercase except at sentence starts","example":"Should the month in pe 3 martie be capitalized merely because it names a month?","answer":"No. Romanian day and month names are lowercase unless they begin a sentence.","explanation":"No. Romanian day and month names are lowercase unless they begin a sentence."} -->
+<!-- grammar-card: {"id":"month-in","priority":"optional","sourceSection":"Days and Months","kind":"rule","format":"cloze","rule":"Months take în while a weekday alone can mean on that day","example":"Mergem ___ iulie.","answer":"în","explanation":"În iulie means in July."} -->
+
 ## Dates and Years
 
 Use **pe** before a calendar date when you mean on that date. Use **în** for years.
@@ -94,7 +134,10 @@ Use **pe** before a calendar date when you mean on that date. Use **în** for ye
 
 <!-- quiz: {"type":"multiple-choice","question":"Which phrase means on March 3?","options":["pe 3 martie","în 3 martie","la 2024","de martie 3"],"answer":0} -->
 
-<!-- grammar-card: {"rule":"Use pe for calendar dates and în for years or months","hint":"pe 3 martie, în 2024","example":"Ne vedem ___ 3 martie.","answer":"pe","explanation":"A specific calendar date takes pe: pe 3 martie."} -->
+<!-- grammar-card: {"id":"calendar-date-pe","priority":"essential","sourceSection":"Dates and Years","kind":"rule","format":"cloze","rule":"Use pe for calendar dates and în for years or months","example":"Ne vedem ___ 3 martie.","answer":"pe","explanation":"A specific calendar date takes pe."} -->
+<!-- grammar-card: {"id":"year-in","priority":"optional","sourceSection":"Dates and Years","kind":"rule","format":"cloze","rule":"Years use în for in","example":"M-am născut ___ 2000.","answer":"în","explanation":"În 2000 means in the year 2000."} -->
+<!-- vocab-card: {"id":"vocab-din-time","priority":"optional","sourceSection":"Dates and Years","word":"din","meaning":"since; from (a starting time)"} -->
+<!-- vocab-card: {"id":"vocab-pana-in","priority":"optional","sourceSection":"Dates and Years","word":"până în","meaning":"until (a stated year or period)"} -->
 
 ## Sources
 

@@ -1,5 +1,7 @@
 # こと — Nominalizer
 
+<!-- vocab-inventory: {"mode":"explicit"} -->
+
 > **Source:** Content from [Tofugu](https://www.tofugu.com/japanese-grammar/koto/). For personal study.
 
 こと (事) for Abstract Things
@@ -35,6 +37,8 @@ In a nutshell, 事 refers to "something intangible." Sometimes it's what you say
 So, if you think 事 is elusive, you've actually come close to understanding it, because 事 is, indeed, a term for cloudy, fuzzy ideas that are difficult to grasp. In short, it's a word that helps you turn those hazy notions into something more solid so you can talk about them.
 
 That being said, this page will assist you in developing a more concrete understanding of 事, giving plenty of examples while explaining what 事 is doing in each instance. So without further ado, let's go check out how 事 is put to use!
+
+<!-- vocab-card: {"id":"vocab-koto","word":"事","reading":"こと","meaning":"thing; matter; event (intangible or abstract)","priority":"essential","sourceSection":"The Basics"} -->
 
 ### 〜事 for "Thing(s)"
 
@@ -78,6 +82,12 @@ In this case, 事 indicates "all the things from yesterday."
 
 Got it? In the examples we've seen so far 事 is basically serving the same function as "thing(s)" does in English. However, this isn't its only function, only its most essential. Having a strong understanding of 事 as "thing(s)" should help you grasp the other, more difficult examples, so let's keep going.
 
+<!-- vocab-card: {"id":"vocab-ayamaru","word":"謝る","reading":"あやまる","meaning":"to apologize","priority":"optional","sourceSection":"〜事 for \"Thing(s)\""} -->
+<!-- grammar-card: {"id":"thing-modification","kind":"rule","format":"cloze","priority":"optional","sourceSection":"〜事 for \"Thing(s)\"","rule":"A な-adjective takes な before the noun 事","example":"Unpleasant things: 嫌___事。","answer":"な","explanation":"嫌な事 (いやなこと) describes an unpleasant matter. An い-adjective or plain verb can modify 事 directly."} -->
+<!-- grammar-card: {"id":"thing-number","kind":"concept","format":"qa","priority":"optional","sourceSection":"〜事 for \"Thing(s)\"","rule":"事 does not itself specify singular or plural","example":"Does 面白い事 necessarily mean several interesting things rather than one?","answer":"No. Context determines whether it refers to one thing or several treated together.","explanation":"Japanese 事 does not encode the English distinction between thing and things."} -->
+
+<!-- grammar-card: {"id":"matter-spelling","kind":"rule","format":"cloze","priority":"optional","sourceSection":"〜事 for \"Thing(s)\"","rule":"事 can denote a matter or issue, whether written in kanji or kana","hint":"Write the noun for an intangible matter in kanji.","example":"小さい___で、友達とケンカをした。","answer":"事","explanation":"小さい事 means a trivial matter. Writing 事 instead of こと does not make the referent physical or concrete.","legacyAliases":[{"rule":"事 written in kanji keeps its concrete meaning 'matter'","example":"小さい___で、友達とケンカをした。"}]} -->
+
 ### 〜事 for About "Activity/Action"
 
 It's common to use 事 to refer to a certain activity or action. 運動をする, for example, is a verb phrase that means "to exercise." By adding 事, you can talk about the general concept of exercise, as in:
@@ -105,6 +115,10 @@ Did you notice that by attaching to a verb, 事 is sort of turning it into a nou
   - Licking your own elbow is impossible.
 
 While mostly interchangeable, there is a slight difference in nuance between 事 and の. While 事 is used to talk about broad, abstract concepts, の is used to talk about more concrete actions or something familiar to you. So using the particle の here sounds more casual because it indicates you're referring to something personal.
+
+<!-- grammar-card: {"id":"activity-nominalization","kind":"rule","format":"cloze","priority":"essential","sourceSection":"〜事 for About \"Activity/Action\"","rule":"こと turns a plain verb phrase into a noun phrase for a general activity","example":"Use the abstract nominalizer: 運動をする___は、大切だ。","answer":"こと","explanation":"運動をすること packages exercising as a general concept so it can be marked with は."} -->
+
+<!-- grammar-card: {"id":"no-koto-contrast","kind":"concept","format":"qa","priority":"essential","sourceSection":"〜事 for About \"Activity/Action\"","rule":"こと tends toward abstract activity while の can present a concrete or familiar action","example":"When both nominalizers are possible, how does の differ in nuance from こと?","answer":"の tends to present a concrete or familiar action, while こと tends to package an abstract activity or fact.","explanation":"This is a tendency, not a rule that allows free substitution in every fixed construction.","legacyAliases":[{"rule":"の nominalises a verb into a concrete, everyday activity","example":"運動をする___は、大切だ。"}]} -->
 
 ### 〜事 for "Fact"
 
@@ -137,6 +151,8 @@ Grammatically, what 事 is doing here is creating a noun phrase — a sentence w
 
 To reiterate, 事 tends to refer to abstract concepts while の is generally used to talk about something that is more concrete or familiar to you. So in this case too, the 事 version sounds more rigid, whereas the の version sounds quite casual.
 
+<!-- grammar-card: {"id":"fact-nominalization","kind":"rule","format":"cloze","priority":"optional","sourceSection":"〜事 for \"Fact\"","rule":"A negative plain clause can be nominalized with こと as the object of knowing","example":"Use the abstract nominalizer: ジェニーがお肉を食べない___を知っていますか。","answer":"こと","explanation":"食べないこと is the fact that Jenny does not eat meat; ということ can make the clause-content link explicit."} -->
+
 ### 〜の事 To Talk About "Someone/Something" As A Whole Entity
 
 When talking about something or someone, 〜の事 is often attached to the word referring to them. For example, when describing that you're in love with someone it's quite common to use 〜の事, as in:
@@ -145,7 +161,9 @@ When talking about something or someone, 〜の事 is often attached to the word
 
   - I'm in love with Hanako.
 
-"Why do you add 〜の事?" you might be wondering. You can just say 花子が好きなんだよね too, but that just indicates that you like Hanako, and that's it. By adding 〜の事 you're implying that you like everything about Hanako — what she does, what she says, her looks, her personality, even the way that she smells. You love everything that has to do with Hanako.
+"Why do you add 〜の事?" you might be wondering. You can also say 花子が好きなんだよね. Adding 〜の事 frames Hanako more broadly, as a person and what relates to her; it does not literally assert that you like every single trait or detail.
+
+<!-- grammar-card: {"id":"person-no-koto","kind":"concept","format":"qa","priority":"optional","sourceSection":"〜の事 To Talk About \"Someone/Something\" As A Whole Entity","rule":"Noun + のこと frames a person or matter and what relates to it","example":"Does 花子の事が好き literally guarantee liking every detail about Hanako?","answer":"No. の事 frames her more broadly as a person and what concerns her, without a literal every-detail claim.","explanation":"With an event, の事 can mean information about it; with a person it can also make the reference less direct."} -->
 
 Let's take a look at a different scenario. Let's say your friend is throwing a birthday party and you're curious whether Hanako has been invited. You might want to ask:
 
@@ -162,10 +180,6 @@ And if your friend isn't planning on inviting Hanako, they might respond with:
   - Uh, I'm sorry, but I'm not inviting Hanako.
 
 You might think the use of 〜の事 seems strange here. You are not inviting "everything about Hanako" — what does that even mean? Technically your friend could say 花子は誘わない, which can be taken as quite a direct statement. However, by adding 〜の事, your friend can make a more ambiguous reference to all sorts of things related to Hanako. Here, the 〜の事 softens the seemingly harsh comment by making sound a bit more indirect, and adds the nuance "given that,” — whatever "that" unspoken thing is — "I won't invite Hanako."
-
-<!-- grammar-card: {"rule":"の nominalises a verb into a concrete, everyday activity","hint":"こと / の","example":"運動をする___は、大切だ。","answer":"の","explanation":"運動をするの treats exercising as a practical habit rather than an abstract principle."} -->
-
-<!-- grammar-card: {"rule":"事 written in kanji keeps its concrete meaning 'matter'","hint":"matter","example":"小さい___で、友達とケンカをした。","answer":"事","explanation":"小さい事 is a trivial matter — a real noun here, not a nominaliser."} -->
 
 ## Beyond The Basics
 
@@ -187,6 +201,8 @@ If you've been to Japan but never eaten sushi, you can say お寿司を食べた
 
 Earlier you learned that 事 can be replaced with the nominalizer の when talking about something of a more personal nature. However, using の like this, as in 日本に行った**の**がある or お寿司を食べた**の**がない doesn't work.
 
+<!-- grammar-card: {"id":"experience-construction","kind":"concept","format":"qa","priority":"essential","sourceSection":"〜た事がある To Talk About \"Past Experience\"","rule":"The experience construction requires たことがある, not たのがある","example":"Can 日本に行ったことがある use の in place of こと while retaining the experience meaning?","answer":"No. The fixed experience construction uses the plain past plus ことがある.","explanation":"The negative 食べたことがない means never having eaten it; this is not unrestricted nominalizer interchange."} -->
+
 ### 〜事がある To Talk About "Occasional Experiences"
 
 事 can also refer to occasions. This is especially true of a verb in the dictionary form followed by 〜事がある. Itt indicates that the activity or event happens only occasionally. For example, if you and your partner are in a mostly-good relationship but sometimes have disagreements, you can say:
@@ -206,6 +222,8 @@ And if these quarrels occasionally lead to a week of not speaking to each other,
 Here, the particle が in 〜事がある is replaced with the particle も (also) to indicate that it's additional information. Otherwise, what 〜事がある is doing is the same, which is to refer to an event (not talking to each other) or occasion.
 
 Note that when used this way, you can't replace 事 with the nominalizer の.
+
+<!-- grammar-card: {"id":"occasional-versus-experiential","kind":"concept","format":"qa","priority":"optional","sourceSection":"〜事がある To Talk About \"Occasional Experiences\"","rule":"Nonpast + ことがある describes occasions, whereas past + ことがある describes experience","example":"How does ケンカをすることがある differ from ケンカをしたことがある?","answer":"The first means quarrels sometimes happen; the second means having had the experience of quarreling.","explanation":"A negative clause before こともある can likewise describe occasions when an action does not happen. の cannot replace こと in this construction."} -->
 
 ### 〜事 for "Giving Rules or Directions"
 
@@ -233,6 +251,8 @@ It's also common to add something to wrap up your bullet points, such as:
 
   - Don't be mean to your friends. Be nice to them. Help each other out. **These things should be followed to the letter.**
 
+<!-- grammar-card: {"id":"instruction-ending","kind":"concept","format":"qa","priority":"optional","sourceSection":"〜事 for \"Giving Rules or Directions\"","rule":"Sentence-final plain clauses plus こと can state rules or directions","example":"What function does こと have in the teacher's 友達には、意地悪しないこと?","answer":"It presents a rule or instruction: do not be mean to your friends.","explanation":"This is list-like directive language, not a statement that an experience exists."} -->
+
 ### 〜事ができる To Talk About "Ability"
 
 事 can also be used to talk about someone's ability to do something using the verb, できる (can do). In case you're not familiar with できる, it's a convenient word — you can use it with a noun and describe the thing you can do, as in これができる (I can do this) or スキーができる (I can ski). Since 事 is a noun, it can connect to できる as in 事ができる. With this pattern, you can talk about abilities by describing exactly what "kind of thing" you're referring to with 事.
@@ -243,15 +263,20 @@ Let's take a look at an example. Imagine you're at a job interview where they as
 
   - I can sing in Japanese.
 
-Here, 日本語で歌う事 represents "singing in Japanese" as a general act and 〜ができます (the polite form of 〜ができる) states you are capable of doing it. As a result, the 事 here, when talking about your generalized ability to sing in Japanese, cannot be replaced with the nominalizer の because it is used for concrete actions, not general activities. So the sentence 日本語で歌う**の**ができます doesn't make sense here.
+Here, 日本語で歌う事 represents "singing in Japanese" as a general act and 〜ができます (the polite form of 〜ができる) states you are capable of doing it. This ability construction specifically uses 事, not the nominalizer の: 日本語で歌う**の**ができます does not express the intended ability. The abstract/concrete tendency alone does not determine which nominalizer a fixed construction permits.
 
 Now, some of you might have been wondering how 〜事ができる is different from 〜れる, or the potential form of verbs. This verb suffix expresses the ability, or possibility, to do the action described by the verb, so you can conjugate the verb 歌う to 歌える to mean "can sing." The difference is that the potential form frequently reflects the speaker's view, as in "I can do this!," whereas 〜事ができる objectively describes the fact that someone can do something.
 
 Hence, 〜事ができる is generally more appropriate in a formal setting, such as a job interview, or when objectively describing someone else's abilities. On the other hand, if you're casually talking to your friend about your talents, it's more common to employ the potential form of a verb, like:
 
+<!-- vocab-card: {"id":"vocab-utau","word":"歌う","reading":"うたう","meaning":"to sing","priority":"optional","sourceSection":"〜事ができる To Talk About \"Ability\""} -->
+<!-- grammar-card: {"id":"ability-construction","kind":"rule","format":"cloze","priority":"essential","sourceSection":"〜事ができる To Talk About \"Ability\"","rule":"Dictionary form + ことができる expresses ability; の cannot replace こと here","example":"I can sing in Japanese: 日本語で歌う___ができます。","answer":"こと","explanation":"こと nominalizes the activity before できる. The potential 歌える is often more compact in conversation; both forms can state ability."} -->
+
   - 私この曲、日本語で**歌える**よ！
 
   - I can sing this song in Japanese.
+
+<!-- grammar-card: {"id":"potential-alternative","kind":"rule","format":"cloze","priority":"optional","sourceSection":"〜事ができる To Talk About \"Ability\"","rule":"The potential form can replace ことができる","hint":"Use the potential of 歌う (うたう).","example":"私この曲、日本語で___よ！","answer":"歌える","explanation":"歌える (うたえる) is the compact potential counterpart of 歌うことができる and is common in conversation."} -->
 
 ---
 
@@ -329,8 +354,6 @@ by Yasuko Ichikawa
 <!-- quiz: {"type":"multiple-choice","question":"What does \"謝りたい**事**がたくさんある。\" mean?","options":["I have a lot of **things** I want to apologize for.","I got into a fight with a friend over the littlest **thing**.","They told me interesting **things**.","They told me unpleasant **things**."],"answer":0} -->
 
 <!-- quiz: {"type":"multiple-choice","question":"What does \"面白い**事**を言われた。\" mean?","options":["They told me interesting **things**.","I got into a fight with a friend over the littlest **thing**.","I have a lot of **things** I want to apologize for.","They told me unpleasant **things**."],"answer":0} -->
-
-<!-- grammar-card: {"rule":"The potential form can replace ことができる","hint":"歌う → ?","example":"私この曲、日本語で___よ！","answer":"歌える","explanation":"歌える says the same thing as 歌うことができる but far more naturally in speech."} -->
 
 ## Sources
 

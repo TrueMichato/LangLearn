@@ -1,5 +1,7 @@
 # Exclamation & Wonder (mā afʿalahu!)
 
+<!-- vocab-inventory: {"mode":"explicit"} -->
+
 Arabic has compact classical patterns for exclaiming over how beautiful, strange, strong, or surprising something is. These patterns are common in formal writing and elevated speech.
 
 ## Core idea
@@ -13,27 +15,34 @@ Two famous patterns are مَا أَفْعَلَهُ (mā afʿalahu) — how ... 
 | أَفْعِلْ بِهِ (afʿil bihi) — how ... it is | أَجْمِلْ بِالْبَيْتِ (ajmil bil-bayti) — how beautiful the house is | alternate exclamation |
 | أَفْعِلْ بِهَا (afʿil bihā) — how ... she/it is | أَسْرِعْ بِهَا (asriʿ bihā) — how fast she is | alternate feminine |
 
+<!-- grammar-card: {"id":"literary-wonder-register","kind":"concept","format":"qa","priority":"essential","sourceSection":"Core idea","rule":"Classical wonder formulas express admiration rather than ordinary commands or comparisons.","example":"Does أَجْمِلْ بِالْبَيْتِ command the house to become beautiful, and what register does it suggest?","answer":"No. It exclaims how beautiful the house is, in a literary or elevated register.","explanation":"The imperative-looking form is a conventional exclamation, not an instruction; everyday conversation often uses other expressions."} -->
+<!-- grammar-card: {"id":"feminine-wonder-pronoun","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Core idea","rule":"A feminine admired referent can be represented by the attached pronoun هَا.","example":"Complete “how fast she is”: مَا أَسْرَعَ___.","answer":"هَا","explanation":"مَا أَسْرَعَهَا (mā asraʿahā) uses the feminine object pronoun, not a feminine ending on the exclamatory verb."} -->
+
 <!-- quiz: {"type":"multiple-choice","question":"Which phrase means how beautiful the house is?","options":["مَا أَجْمَلَ الْبَيْتَ (mā ajmala al-bayta) — how beautiful the house is","مَا جَمِيلٌ الْبَيْتُ (mā jamīlun al-baytu) — not the pattern","أَجْمَلُ مِنَ الْبَيْتِ (ajmalu mina al-bayti) — more beautiful than the house","لَمْ يَجْمُلِ الْبَيْتُ (lam yajmuli al-baytu) — the house was not beautiful"],"answer":0} -->
 
 ## The mā afʿalahu pattern
 
 In مَا أَجْمَلَ اللُّغَةَ (mā ajmala al-lughata) — how beautiful the language is, the thing admired is accusative: اللُّغَةَ (al-lughata) — the language. The ending matters in fully vocalized formal Arabic.
 
-<!-- grammar-card: {"rule":"The exclamation pattern مَا أَفْعَلَهُ (mā afʿalahu) often takes the admired thing in the accusative.","hint":"After مَا أَجْمَلَ, expect the noun to end like اللُّغَةَ.","example":"Complete “how beautiful the language is”: مَا أَجْمَلَ ___ (al-lughata).","answer":"اللُّغَةَ","explanation":"the language in accusative — مَا أَجْمَلَ اللُّغَةَ uses the classical wonder pattern, with اللُّغَةَ as the thing admired."} -->
+<!-- grammar-card: {"id":"wonder-accusative","kind":"rule","format":"cloze","priority":"essential","sourceSection":"The mā afʿalahu pattern","rule":"The exclamation pattern مَا أَفْعَلَهُ (mā afʿalahu) often takes the admired thing in the accusative.","example":"Complete “how beautiful the language is”: مَا أَجْمَلَ ___.","answer":"اللُّغَةَ","explanation":"اللُّغَةَ (al-lughata) is the admired thing in the accusative, not nominative.","legacyAliases":[{"rule":"The exclamation pattern مَا أَفْعَلَهُ (mā afʿalahu) often takes the admired thing in the accusative.","example":"Complete “how beautiful the language is”: مَا أَجْمَلَ ___ (al-lughata)."}]} -->
+<!-- vocab-card: {"id":"vocab-lughah","word":"اللُّغَةَ","reading":"al-lughata","meaning":"the language; accusative","priority":"optional","sourceSection":"The mā afʿalahu pattern"} -->
 
 ## When the adjective is not simple
 
 Some qualities do not form the direct pattern easily, especially colors and defects. Arabic can use أَشْدِدْ بِـ (ashdid bi-) or مَا أَشَدَّ (mā ashadda) with a verbal noun: مَا أَشَدَّ حُمْرَةَ الْوَرْدَةِ (mā ashadda ḥumrata al-wardati) — how intense the redness of the rose is.
 
 - مَا أَكْرَمَ الْمُعَلِّمَ (mā akrama al-muʿallima) — how generous the teacher is.
-- مَا أَسْهَلَ الدَّرْسَ (mā ashala ad-darsa) — how easy the lesson is.
+- مَا أَسْهَلَ الدَّرْسَ (mā as-hala ad-darsa) — how easy the lesson is.
 - أَكْرِمْ بِالْمُعَلِّمِ (akrim bil-muʿallimi) — how generous the teacher is.
 
 > These patterns sound more literary than everyday. Recognize them first; use them when the style calls for formal elegance.
 
 <!-- quiz: {"type":"multiple-choice","question":"Which alternate pattern also expresses wonder?","options":["أَجْمِلْ بِالْبَيْتِ (ajmil bil-bayti) — how beautiful the house is","لَا جَمِيلَ بَيْتٌ (lā jamīla baytun) — no beautiful house","جَمِيلٌ مِنْ بَيْتٍ (jamīlun min baytin) — beautiful from a house","اِسْتَجْمَلَ الْبَيْتَ (istajmala al-bayta) — he sought beauty in the house"],"answer":0} -->
 
-<!-- grammar-card: {"rule":"أَفْعِلْ بِهِ (afʿil bihi) is another classical exclamation pattern.","hint":"It looks like an imperative plus بِـ, but it means how ... it is.","example":"Complete “how generous the teacher is”: أَكْرِمْ ___ (bil-muʿallimi).","answer":"بِالْمُعَلِّمِ","explanation":"with the teacher — أَكْرِمْ بِالْمُعَلِّمِ uses the أَفْعِلْ بِهِ pattern to express wonder at the teacher’s generosity."} -->
+<!-- grammar-card: {"id":"wonder-bi-pattern","kind":"rule","format":"cloze","priority":"essential","sourceSection":"When the adjective is not simple","rule":"أَفْعِلْ بِهِ (afʿil bihi) is another classical exclamation pattern.","example":"Complete “how generous the teacher is”: أَكْرِمْ ___.","answer":"بِالْمُعَلِّمِ","explanation":"بِالْمُعَلِّمِ (bil-muʿallimi) follows the exclamatory verb with بِـ and genitive case.","legacyAliases":[{"rule":"أَفْعِلْ بِهِ (afʿil bihi) is another classical exclamation pattern.","example":"Complete “how generous the teacher is”: أَكْرِمْ ___ (bil-muʿallimi)."}]} -->
+<!-- grammar-card: {"id":"indirect-colour-wonder","kind":"rule","format":"cloze","priority":"optional","sourceSection":"When the adjective is not simple","rule":"Qualities such as colours can use an intensity expression with a verbal noun instead of a direct exclamation.","example":"Complete “how intense the redness of the rose is”: مَا أَشَدَّ ___ الْوَرْدَةِ.","answer":"حُمْرَةَ","explanation":"حُمْرَةَ (ḥumrata) is the accusative verbal noun redness, governing الْوَرْدَةِ in an iḍāfa. Do not mechanically derive the direct pattern for colours and defects."} -->
+<!-- vocab-card: {"id":"vocab-humrah","word":"حُمْرَةَ","reading":"ḥumrata","meaning":"redness; accusative construct form","priority":"optional","sourceSection":"When the adjective is not simple"} -->
+<!-- vocab-card: {"id":"vocab-wardah","word":"الْوَرْدَةِ","reading":"al-wardati","meaning":"the rose; genitive","priority":"optional","sourceSection":"When the adjective is not simple"} -->
 
 ## Sources
 

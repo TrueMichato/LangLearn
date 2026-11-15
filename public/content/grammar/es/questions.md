@@ -1,5 +1,7 @@
 # Question Words (qué, quién, dónde, cuándo)
 
+<!-- vocab-inventory: {"mode":"explicit"} -->
+
 Every Spanish question word carries a written accent mark (tilde) — no exceptions. The inverted question mark **¿** must open every written question, and **?** closes it. These marks are mandatory in formal written Spanish and signal to the reader that a question is coming before the verb even appears.
 
 ## Question Words at a Glance
@@ -13,9 +15,19 @@ Every Spanish question word carries a written accent mark (tilde) — no excepti
 | **cuándo** | KWAHN-doh | when | |
 | **cuál / cuáles** | kwahl / KWAH-lehs | which (one/ones) | picking from options |
 | **cómo** | KOH-moh | how | also used in greetings |
-| **por qué** | pohr keh | why | two words with separate accents |
+| **por qué** | pohr keh | why | two words; only qué has a written accent |
 | **cuánto / cuánta** | KWAHN-toh | how much | agrees with noun gender |
 | **cuántos / cuántas** | KWAHN-tohs | how many | agrees with noun gender |
+
+<!-- vocab-card: {"id":"vocab-que","word":"qué","meaning":"what (interrogative)","priority":"optional","sourceSection":"Question Words at a Glance"} -->
+<!-- vocab-card: {"id":"vocab-quien","word":"quién","meaning":"who; whom (singular interrogative)","priority":"optional","sourceSection":"Question Words at a Glance"} -->
+<!-- vocab-card: {"id":"vocab-donde","word":"dónde","meaning":"where (interrogative)","priority":"optional","sourceSection":"Question Words at a Glance"} -->
+<!-- vocab-card: {"id":"vocab-adonde","word":"adónde","meaning":"where to (interrogative)","priority":"optional","sourceSection":"Question Words at a Glance"} -->
+<!-- vocab-card: {"id":"vocab-cuando","word":"cuándo","meaning":"when (interrogative)","priority":"optional","sourceSection":"Question Words at a Glance"} -->
+<!-- vocab-card: {"id":"vocab-cual","word":"cuál","meaning":"which one (interrogative)","priority":"optional","sourceSection":"Question Words at a Glance"} -->
+<!-- vocab-card: {"id":"vocab-como","word":"cómo","meaning":"how (interrogative)","priority":"optional","sourceSection":"Question Words at a Glance"} -->
+<!-- vocab-card: {"id":"vocab-por-que","word":"por qué","meaning":"why (interrogative)","priority":"optional","sourceSection":"Question Words at a Glance"} -->
+<!-- vocab-card: {"id":"vocab-cuanto","word":"cuánto","meaning":"how much (interrogative)","priority":"optional","sourceSection":"Question Words at a Glance"} -->
 
 ## Opening and Closing Questions
 
@@ -25,6 +37,8 @@ Spanish wraps questions with **¿** at the start and **?** at the end. Unlike En
 - **¿Dónde vives?** (DOHN-deh VEE-vehs) — Where do you live?
 - **¿Cuándo llegaste?** (KWAHN-doh yeh-GAHS-teh) — When did you arrive?
 - **¿Adónde vas?** — Where are you going?
+
+<!-- grammar-card: {"id":"question-punctuation","kind":"rule","format":"qa","priority":"essential","sourceSection":"Opening and Closing Questions","rule":"Written direct questions use both question marks","example":"Punctuate the direct question Dónde vives.","answer":"¿Dónde vives?","explanation":"The opening inverted mark is required along with the closing mark."} -->
 
 <!-- quiz: {"type":"multiple-choice","question":"Which is written correctly?","options":["Como te llamas?","¿Como te llamas?","¿Cómo te llamas?","¿Cómo te llamas"],"answer":2} -->
 
@@ -43,7 +57,8 @@ Spanish wraps questions with **¿** at the start and **?** at the end. Unlike En
 - **¿Qué película vemos?** (keh peh-LEE-koo-lah VEH-mohs) — What movie do we watch? *(open question)*
 - **¿Cuál prefieres, la de acción o la comedia?** — Which do you prefer, the action or the comedy?
 
-<!-- grammar-card: {"rule":"'Qué' asks for definitions; 'cuál/cuáles' asks to choose from options","hint":"Qué = what IS it? Cuál = which one IS it?","example":"¿___ es tu número de teléfono? (asking someone to report their specific number)","answer":"Cuál","explanation":"'¿Cuál es tu número de teléfono?' asks you to identify your specific number from all possible numbers — it is a selection. '¿Qué es un número de teléfono?' would ask for the meaning of the term. Use cuál when selecting, qué when defining."} -->
+<!-- grammar-card: {"id":"cual-identification","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Qué vs Cuál — A Key Distinction","rule":"'Qué' asks for definitions; 'cuál/cuáles' asks to choose from options","example":"¿___ es tu número de teléfono? (asking someone to report their specific number)","answer":"Cuál","explanation":"Cuál asks for the specific number; Qué es un número de teléfono would ask for a definition."} -->
+<!-- grammar-card: {"id":"que-definition","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Qué vs Cuál — A Key Distinction","rule":"Qué es asks for a definition","example":"¿___ es un taco? (asking what a taco is)","answer":"Qué","explanation":"This asks for a definition, not the identification of someone's preferred taco."} -->
 
 ## Por Qué, Porque, Porqué, Por Que
 
@@ -57,6 +72,10 @@ These four look nearly identical but have very different roles:
 | **por que** | prep + rel. pronoun (rare) | La razón por que llegué tarde... — The reason for which I arrived late... |
 
 The most important pair: **¿Por qué?** asks the question; **porque** gives the answer.
+
+<!-- grammar-card: {"id":"porque-answer","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Por Qué, Porque, Porqué, Por Que","rule":"Porque introduces a reason rather than asking why","example":"Estoy triste ___ perdí mi llave. (because)","answer":"porque","explanation":"The conjunction is one word without an accent; the question is por qué."} -->
+<!-- grammar-card: {"id":"porque-noun","kind":"concept","format":"qa","priority":"optional","sourceSection":"Por Qué, Porque, Porqué, Por Que","rule":"El porqué is a noun meaning the reason","example":"What role does porqué have in No entiendo el porqué?","answer":"It is a noun meaning the reason or the why.","explanation":"The article el signals the noun; it is not the question phrase por qué or conjunction porque."} -->
+<!-- grammar-card: {"id":"por-que-relative","kind":"concept","format":"qa","priority":"optional","sourceSection":"Por Qué, Porque, Porqué, Por Que","rule":"Unaccented por que can be a preposition plus a relative pronoun","example":"What is por que doing in La razón por que llegué tarde?","answer":"It combines the preposition por with relative que, meaning for which.","explanation":"This less common relative construction is distinct from interrogative por qué."} -->
 
 <!-- quiz: {"type":"multiple-choice","question":"Complete: '¿___ estás triste?' — 'Estoy triste ___ perdí mi llave.'","options":["Por qué / porque","Porque / por qué","Porqué / porque","Por que / porque"],"answer":0} -->
 
@@ -78,9 +97,12 @@ The most important pair: **¿Por qué?** asks the question; **porque** gives the
 - **¿Cuántos libros compraste?** — How many books? (*libros* = masc. pl.)
 - **¿Cuántas personas vinieron?** — How many people came? (*personas* = fem. pl.)
 
+<!-- grammar-card: {"id":"cuanto-agreement","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Cuánto — Gender Agreement","rule":"Interrogative cuánto agrees with the noun it modifies","example":"¿___ agua queda? (How much water is left?)","answer":"Cuánta","explanation":"Agua is feminine even though its singular definite article is el."} -->
+<!-- grammar-card: {"id":"quienes-plural","kind":"rule","format":"cloze","priority":"optional","sourceSection":"More Question Words in Use","rule":"Quién becomes quiénes for a plural identity question","example":"¿___ son ellos? (Who are they?)","answer":"Quiénes","explanation":"Use the plural interrogative when asking the identity of several people."} -->
+
 <!-- quiz: {"type":"multiple-choice","question":"¿___ personas hay en la clase?","options":["Cuánto","Cuánta","Cuántos","Cuántas"],"answer":3} -->
 
-<!-- grammar-card: {"rule":"All Spanish question words carry a written accent mark (tilde)","hint":"qué, quién, dónde, cuándo, cuál, cómo, por qué, cuánto — every one, no exceptions","example":"¿___ vives? (Where do you live?)","answer":"Dónde","explanation":"Question words always carry a tilde in Spanish: dónde, cuándo, qué, etc. Without the tilde they become relative pronouns or conjunctions: 'donde' = where (relative clause), 'cuando' = when (conjunction), 'que' = that/which. The tilde marks the interrogative function."} -->
+<!-- grammar-card: {"id":"interrogative-accent","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Question Words at a Glance","rule":"All Spanish question words carry a written accent mark (tilde)","example":"¿___ vives? (Where do you live?)","answer":"Dónde","explanation":"Dónde is interrogative here and takes a tilde, unlike relative donde."} -->
 
 ## Sources
 

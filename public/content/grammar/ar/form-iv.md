@@ -1,10 +1,17 @@
 # Verb Form IV (afʿala): the causative
 
+<!-- vocab-inventory: {"mode":"explicit"} -->
+
 Form IV is one of the most common ways Arabic turns a basic action into causing, bringing, entering, or making something happen.
 
 ## Core idea
 
 The pattern أَفْعَلَ (afʿala) — he caused / made happen begins with أَـ (a-) — causative prefix. Its present is often يُفْعِلُ (yufʿilu) — he causes, and its verbal noun is often إِفْعَالٌ (ifʿālun) — causing / making happen.
+
+<!-- vocab-card: {"id":"vocab-akhraja","word":"أَخْرَجَ","reading":"akhraja","meaning":"he brought out","priority":"essential","sourceSection":"Core idea"} -->
+<!-- vocab-card: {"id":"vocab-adkhala","word":"أَدْخَلَ","reading":"adkhala","meaning":"he put in; he made enter","priority":"essential","sourceSection":"Core idea"} -->
+<!-- vocab-card: {"id":"vocab-anzala","word":"أَنْزَلَ","reading":"anzala","meaning":"he sent down","priority":"optional","sourceSection":"Core idea"} -->
+<!-- vocab-card: {"id":"vocab-afhama","word":"أَفْهَمَ","reading":"afhama","meaning":"he made understand","priority":"optional","sourceSection":"Core idea"} -->
 
 | Form I idea | Form IV verb | Meaning shift |
 |---|---|---|
@@ -19,7 +26,10 @@ The pattern أَفْعَلَ (afʿala) — he caused / made happen begins with �
 
 Many English verbs hide the causative idea: أَيْقَظَ (ayqaẓa) — he woke someone, أَرْسَلَ (arsala) — he sent, and أَسْلَمَ (aslama) — he submitted / became Muslim are all Form IV. The pattern helps you guess the family relationship even when the translation is not word-for-word “cause.”
 
-<!-- grammar-card: {"rule":"Form IV أَفْعَلَ (afʿala) commonly creates a causative verb.","hint":"Ask: did the subject make someone or something enter, leave, know, or happen?","example":"Complete “he brought out”: ___ (akhraja) — he brought out.","answer":"أَخْرَجَ","explanation":"he brought out — أَخْرَجَ (akhraja) is Form IV from خَرَجَ (kharaja) — he went out. It means he caused something to go out."} -->
+<!-- grammar-card: {"id":"iv-causative","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Why it matters","rule":"Form IV أَفْعَلَ (afʿala) commonly creates a causative verb.","example":"خَرَجَ (he went out) → Form IV, he brought out: ___.","answer":"أَخْرَجَ","explanation":"Initial a- makes a causative here; not every Form IV meaning is mechanically predictable.","legacyAliases":[{"rule":"Form IV أَفْعَلَ (afʿala) commonly creates a causative verb.","example":"Complete “he brought out”: ___ (akhraja) — he brought out."}]} -->
+<!-- vocab-card: {"id":"vocab-ayqaza","word":"أَيْقَظَ","reading":"ayqaẓa","meaning":"he woke someone","priority":"optional","sourceSection":"Why it matters"} -->
+<!-- vocab-card: {"id":"vocab-arsala","word":"أَرْسَلَ","reading":"arsala","meaning":"he sent","priority":"optional","sourceSection":"Why it matters"} -->
+<!-- vocab-card: {"id":"vocab-aslama","word":"أَسْلَمَ","reading":"aslama","meaning":"he submitted; he became Muslim","priority":"optional","sourceSection":"Why it matters"} -->
 
 ## Forms to recognize
 
@@ -31,9 +41,13 @@ Many English verbs hide the causative idea: أَيْقَظَ (ayqaẓa) — he w
 
 > Form IV is productive, but not every Form IV verb translates neatly with “cause.” Learn the pattern and the individual verb together.
 
+<!-- grammar-card: {"id":"iv-present","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Forms to recognize","rule":"Sound Form IV presents follow yufʿilu.","example":"أَخْرَجَ → he brings out: ___.","answer":"يُخْرِجُ","explanation":"The prefix vowel is u and the penultimate root vowel i."} -->
+<!-- grammar-card: {"id":"iv-participle-contrast","kind":"concept","format":"qa","priority":"optional","sourceSection":"Forms to recognize","rule":"Form IV active/passive participles differ in the vowel before the last radical.","example":"In sound Form IV participles, how does the vowel before the final radical distinguish active from passive?","answer":"Active has i; passive has a.","explanation":"Both begin mu-; weak roots may require adjustments."} -->
+<!-- grammar-card: {"id":"iv-meaning-limit","kind":"concept","format":"qa","priority":"essential","sourceSection":"Forms to recognize","rule":"Form IV is not a one-translation formula.","example":"Must a Form IV verb always be translated literally as cause to?","answer":"No. The pattern is a family clue; learn the individual lexical meaning.","explanation":"Arsala means sent and aslama can mean submitted or became Muslim."} -->
+
 <!-- quiz: {"type":"multiple-choice","question":"Which verb means he put in or made enter?","options":["أَدْخَلَ (adkhala) — he put in","دَخَلَ (dakhala) — he entered","خَرَجَ (kharaja) — he went out","قَابَلَ (qābala) — he met"],"answer":0} -->
 
-<!-- grammar-card: {"rule":"The Form IV verbal noun is often إِفْعَالٌ (ifʿālun), as in إِخْرَاجٌ (ikhrājun) — bringing out.","hint":"The initial إِـ and long ā near the end are clues.","example":"Complete “bringing out”: ___ (ikhrājun) — bringing out.","answer":"إِخْرَاجٌ","explanation":"bringing out — إِخْرَاجٌ (ikhrājun) is the verbal noun of أَخْرَجَ (akhraja) — he brought out."} -->
+<!-- grammar-card: {"id":"iv-masdar","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Forms to recognize","rule":"The Form IV verbal noun is often إِفْعَالٌ (ifʿālun), as in إِخْرَاجٌ (ikhrājun) — bringing out.","example":"أَخْرَجَ → its maṣdar, bringing out: ___.","answer":"إِخْرَاجٌ","explanation":"This sound verb follows ifʿālun.","legacyAliases":[{"rule":"The Form IV verbal noun is often إِفْعَالٌ (ifʿālun), as in إِخْرَاجٌ (ikhrājun) — bringing out.","example":"Complete “bringing out”: ___ (ikhrājun) — bringing out."}]} -->
 
 ## Sources
 

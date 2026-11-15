@@ -1,5 +1,7 @@
 # Imperative & Prohibitive (食べろ、食べるな)
 
+<!-- vocab-inventory: {"mode":"explicit"} -->
+
 The imperative form gives direct commands, while the prohibitive form expresses "don't do ~." These forms range from rough and masculine to polite, depending on context.
 
 ## Imperative Form (命令形 / めいれいけい)
@@ -44,7 +46,10 @@ Drop the final **る** and add **ろ** (colloquial) or **よ** (literary):
 
 <!-- quiz:{"type":"multiple-choice","question":"What is the imperative form of 走る (to run)?","options":["走ろ","走れ","走り","走る"],"answer":1} -->
 
-<!-- grammar-card: {"rule":"Godan verbs form the imperative by shifting the final う sound to え","hint":"走る → ?","example":"早(はや)く___！","answer":"走(はし)れ","explanation":"走る becomes 走れ — a blunt, forceful order to run."} -->
+<!-- grammar-card: {"id":"godan-imperative","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Group 1 (u-verbs)","rule":"Godan verbs form the imperative by shifting the final う sound to え","hint":"走る, direct command","example":"早(はや)く___！","answer":"走れ","explanation":"走れ (はしれ) changes godan る to れ. It is a blunt command, not the ichidan pattern."} -->
+<!-- grammar-card: {"id":"ichidan-imperative","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Group 2 (ru-verbs)","rule":"Ichidan commands replace る with ろ in ordinary speech","example":"Eat! 食べる → ___！ (spoken imperative)","answer":"食べろ","explanation":"食べろ (たべろ) drops る. The alternative 食べよ belongs chiefly to literary, older, or certain dialectal usage."} -->
+<!-- grammar-card: {"id":"suru-command-register","kind":"concept","format":"qa","priority":"essential","sourceSection":"Group 3 (Irregular)","rule":"する uses different irregular commands in speech and formal writing","example":"What are the ordinary spoken and formal written imperatives of する?","answer":"しろ in ordinary speech; せよ in formal written instructions.","explanation":"Neither form is a normal polite request; せよ appears in official or literary instructions."} -->
+<!-- grammar-card: {"id":"kuru-imperative","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Group 3 (Irregular)","rule":"来る has an irregular imperative read こい","example":"Come here! ここに___！ (来る, imperative)","answer":"来い","explanation":"来い is read こい. The reading changes from dictionary-form くる."} -->
 
 ## Prohibitive Form (禁止形 / きんしけい)
 
@@ -64,7 +69,8 @@ The prohibitive is much simpler — just add **な** to the **dictionary form**:
 
 <!-- quiz:{"type":"multiple-choice","question":"How do you say 'Don't eat!' using the prohibitive form?","options":["食べな","食べないで","食べるな","食べろな"],"answer":2} -->
 
-<!-- grammar-card: {"rule":"な after the dictionary form forbids an action","hint":"prohibitive particle","example":"ここで写真(しゃしん)を撮(と)る___！","answer":"な","explanation":"撮るな is a flat 'don't take photos here', with no softening at all."} -->
+<!-- grammar-card: {"id":"dictionary-prohibitive","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Prohibitive Form (禁止形 / きんしけい)","rule":"な after the dictionary form forbids an action","hint":"Use a blunt prohibitive ending.","example":"ここで写真(しゃしん)を撮(と)る___！","answer":"な","explanation":"撮るな is a direct prohibition. Keep the dictionary form before な, including 食べるな and するな."} -->
+<!-- grammar-card: {"id":"prohibitive-na-context","kind":"concept","format":"qa","priority":"optional","sourceSection":"Prohibitive Form (禁止形 / きんしけい)","rule":"Not every sentence-final な is a prohibition","example":"Does every sentence ending in な mean don't do it?","answer":"No. な can also express emotion or emphasis; the construction, context, and tone determine its role.","explanation":"A command such as 動くな uses dictionary form + な to forbid an action, unlike an emotional sentence-final particle."} -->
 
 ## When Is the Imperative Used?
 
@@ -127,7 +133,9 @@ Between close male friends or in arguments:
 > *Koko ni koi!*
 > Come here!
 
-> 💡 The imperative is generally associated with **male speech** in casual contexts. Women can and do use it, but it sounds rougher. Both genders use it in emergencies.
+> 💡 Plain imperatives are often stereotyped as masculine in casual speech, but this is not a restriction on who can use them. Context, relationship, and urgency determine their force; people of any gender use them in emergencies or cheering.
+
+<!-- grammar-card: {"id":"imperative-social-force","kind":"concept","format":"qa","priority":"essential","sourceSection":"When Is the Imperative Used?","rule":"Plain commands are context-sensitive, not default polite requests","example":"Is 行け a safe default when politely asking a stranger to go somewhere?","answer":"No. It is a forceful command; use a request such as 行ってください in an ordinary polite interaction.","explanation":"Urgent warnings, sports cheering, signs, fiction, or rough interaction can license plain imperatives. Their use is not limited to one gender."} -->
 
 ## Softer Alternatives to the Imperative
 
@@ -157,6 +165,7 @@ Used by parents, teachers, and authority figures:
 > *Hayaku nenasai.*
 > Go to bed early.
 
+<!-- grammar-card: {"id":"nasai-stem","kind":"rule","format":"cloze","priority":"essential","sourceSection":"〜なさい (Authoritative but softer)","rule":"なさい attaches to the ます-stem to give an authoritative instruction","example":"A parent says go to bed early: 早く寝___。","answer":"なさい","explanation":"寝なさい (ねなさい) is softer than 寝ろ but still expresses authority; it is not a deferential request to a superior."} -->
 | Form | Strength | Example |
 |---|---|---|
 | 〜て | Casual request | 見て |
@@ -166,7 +175,7 @@ Used by parents, teachers, and authority figures:
 
 <!-- quiz:{"type":"multiple-choice","question":"Which form would a mother most likely use to tell her child to eat vegetables?","options":["野菜を食べろ","野菜を食べなさい","野菜を食べてください","野菜を食べるな"],"answer":1} -->
 
-<!-- grammar-card: {"rule":"てください gives the same instruction politely","hint":"待つ + ください","example":"ちょっと待(ま)っ___。","answer":"てください","explanation":"待ってください asks rather than orders, unlike the bare imperative 待て."} -->
+<!-- grammar-card: {"id":"polite-positive-request","kind":"rule","format":"cloze","priority":"essential","sourceSection":"〜てください (Please do ~)","rule":"てください gives the same instruction politely","hint":"待つ, standard polite request","example":"ちょっと待(ま)っ___。","answer":"てください","explanation":"待ってください uses the て-form plus ください. Casual 待って is a request too, while 待て is a direct command."} -->
 
 ## Softer Alternatives to the Prohibitive
 
@@ -176,6 +185,7 @@ Used by parents, teachers, and authority figures:
 > *Koko de shashin wo toranai de kudasai.*
 > Please don't take photos here.
 
+<!-- grammar-card: {"id":"polite-negative-request","kind":"rule","format":"cloze","priority":"essential","sourceSection":"〜ないでください (Please don't ~)","rule":"ないでください makes a polite negative request","example":"Please don't take photos: 写真を撮ら___。","answer":"ないでください","explanation":"撮らないでください (とらないでください) uses the negative form plus でください rather than dictionary form + な."} -->
 ### 〜ないで (Casual: Don't ~)
 
 > 心配(しんぱい)しないで。
@@ -192,6 +202,7 @@ Used by parents, teachers, and authority figures:
 > *Sawaccha dame!*
 > Don't touch! (casual)
 
+<!-- grammar-card: {"id":"prohibition-rule-versus-request","kind":"concept","format":"qa","priority":"optional","sourceSection":"〜てはいけない / 〜ちゃだめ (Must not ~)","rule":"A rule-based prohibition differs from a softened negative request","example":"How does 見てはいけない differ from 見ないでください?","answer":"見てはいけない states that looking is not allowed; 見ないでください asks someone politely not to look.","explanation":"見るな is a direct command not to look. 見ちゃだめ is a casual prohibition."} -->
 | Form | Strength | Example |
 |---|---|---|
 | 〜ないで | Casual request | 見ないで |
@@ -213,6 +224,15 @@ Used by parents, teachers, and authority figures:
 | 諦(あきら)めるな | Akirameru na | Don't give up! |
 | 心配(しんぱい)するな | Shinpai suru na | Don't worry! |
 
+<!-- vocab-card: {"id":"vocab-nigeru","word":"逃げる","reading":"にげる","meaning":"to run away; to escape","priority":"optional","sourceSection":"Common Imperative & Prohibitive Expressions"} -->
+<!-- vocab-card: {"id":"vocab-damaru","word":"黙る","reading":"だまる","meaning":"to fall silent; to keep quiet","priority":"optional","sourceSection":"Common Imperative & Prohibitive Expressions"} -->
+<!-- vocab-card: {"id":"vocab-sawaru","word":"触る","reading":"さわる","meaning":"to touch","priority":"optional","sourceSection":"Common Imperative & Prohibitive Expressions"} -->
+<!-- vocab-card: {"id":"vocab-akirameru","word":"諦める","reading":"あきらめる","meaning":"to give up","priority":"optional","sourceSection":"Common Imperative & Prohibitive Expressions"} -->
+<!-- vocab-card: {"id":"vocab-ganbare","word":"頑張れ","reading":"がんばれ","meaning":"Do your best!; Go for it! (encouragement)","priority":"optional","sourceSection":"Common Imperative & Prohibitive Expressions"} -->
+<!-- vocab-card: {"id":"vocab-kiwotsukeru","word":"気をつける","reading":"きをつける","meaning":"to be careful; to take care","priority":"optional","sourceSection":"Common Imperative & Prohibitive Expressions"} -->
+<!-- vocab-card: {"id":"vocab-matsu","word":"待つ","reading":"まつ","meaning":"to wait","priority":"optional","sourceSection":"Common Imperative & Prohibitive Expressions"} -->
+<!-- vocab-card: {"id":"vocab-ugoku","word":"動く","reading":"うごく","meaning":"to move","priority":"optional","sourceSection":"Common Imperative & Prohibitive Expressions"} -->
+<!-- vocab-card: {"id":"vocab-shinpai-suru","word":"心配する","reading":"しんぱいする","meaning":"to worry","priority":"optional","sourceSection":"Common Imperative & Prohibitive Expressions"} -->
 > 諦(あきら)めるな！最後(さいご)まで頑張(がんば)れ！
 > *Akirameru na! Saigo made ganbare!*
 > Don't give up! Do your best until the end!

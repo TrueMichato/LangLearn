@@ -1,5 +1,7 @@
 # Time Expressions & Frequency
 
+<!-- vocab-inventory: {"mode":"explicit"} -->
+
 This lesson covers how to talk about **when** things happen, express **before** and **after**, describe actions happening **while** doing something else, and use **frequency adverbs** to say how often you do things.
 
 ## 前(まえ)に — "Before"
@@ -22,7 +24,9 @@ This lesson covers how to talk about **when** things happen, express **before** 
 
 <!-- quiz:{"type":"multiple-choice","question":"How do you say 'I brush my teeth before sleeping'?","options":["寝た前に歯を磨きます","寝る前に歯を磨きます","寝ている前に歯を磨きます","寝て前に歯を磨きます"],"answer":1} -->
 
-<!-- grammar-card: {"rule":"前に always follows the plain non-past form","hint":"before","example":"寝(ね)る___、歯(は)を磨(みが)きます。","answer":"前に","explanation":"前に takes 寝る in the dictionary form regardless of when the action actually happens."} -->
+<!-- grammar-card: {"id":"before-verb","kind":"rule","format":"cloze","priority":"essential","sourceSection":"With verbs: Dictionary form + 前に","rule":"With a verb, 前に follows the dictionary form even in a past-time sentence","hint":"before","example":"寝(ね)る___、歯(は)を磨(みが)きます。","answer":"前に","explanation":"寝る stays dictionary form before 前に; nouns instead use の前に.","legacyAliases":[{"rule":"前に always follows the plain non-past form","example":"寝(ね)る___、歯(は)を磨(みが)きます。"}]} -->
+<!-- grammar-card: {"id":"before-noun","kind":"rule","format":"cloze","priority":"essential","sourceSection":"With nouns: Noun + の前に","rule":"A noun connects to 前に with の","example":"Before the exam: 試験___前に。","answer":"の","explanation":"Use 試験の前に, whereas a dictionary verb attaches directly."} -->
+<!-- grammar-card: {"id":"before-past-main","kind":"rule","format":"cloze","priority":"optional","sourceSection":"With verbs: Dictionary form + 前に","rule":"A past main clause does not make the verb before 前に past","example":"I studied Japanese before going to Japan: 日本に___前に、日本語を勉強しました。 (行く)","answer":"行く","explanation":"The later event remains 行く before 前に even though 勉強しました is past."} -->
 
 ## 後(あと)で — "After"
 
@@ -44,7 +48,10 @@ This lesson covers how to talk about **when** things happen, express **before** 
 
 > 💡 You may also see 後(あと)に instead of 後で — the meaning is similar, but 後で is more common in everyday speech.
 
-<!-- grammar-card: {"rule":"後で follows the plain past form","hint":"after","example":"ご飯(はん)を食べた___、散歩(さんぽ)します。","answer":"後で","explanation":"The first action must be complete, so 食べる appears as 食べた before 後で."} -->
+<!-- grammar-card: {"id":"after-variant","kind":"concept","format":"qa","priority":"optional","sourceSection":"With nouns: Noun + の後で","rule":"後に is also possible in after expressions","example":"Is 映画を見た後に necessarily wrong because this lesson practices 後で?","answer":"No. 後に can also mean after; 後で is the everyday form emphasized in this lesson.","explanation":"Recognize the alternative without treating the practiced particle as the only grammatical choice."} -->
+
+<!-- grammar-card: {"id":"after-verb","kind":"rule","format":"cloze","priority":"essential","sourceSection":"With verbs: た-form + 後で","rule":"後で follows the plain past form","hint":"after","example":"ご飯(はん)を食べた___、散歩(さんぽ)します。","answer":"後で","explanation":"With verbs, 後で follows the た-form to place that action before the next one; nouns use の後で."} -->
+<!-- grammar-card: {"id":"after-noun","kind":"rule","format":"cloze","priority":"optional","sourceSection":"With nouns: Noun + の後で","rule":"A noun connects to 後で with の","example":"After class: 授業___後で、図書館に行きます。","answer":"の","explanation":"授業の後で uses a noun, not a verbal た-form."} -->
 
 ## てから — "After Doing"
 
@@ -63,7 +70,8 @@ This lesson covers how to talk about **when** things happen, express **before** 
 
 <!-- quiz:{"type":"multiple-choice","question":"'手を洗ってから食べてください' means:","options":["Please eat while washing your hands","Please eat before washing your hands","Please eat after washing your hands","Please wash your hands after eating"],"answer":2} -->
 
-<!-- grammar-card: {"rule":"てから stresses the order of two actions","hint":"洗う → ?","example":"手を洗っ___、食べてください。","answer":"てから","explanation":"洗って plus から makes washing an explicit precondition for eating."} -->
+<!-- grammar-card: {"id":"after-sequence","kind":"rule","format":"cloze","priority":"essential","sourceSection":"てから — \"After Doing\"","rule":"てから stresses the order of two actions","hint":"洗う → ?","example":"手を洗っ___、食べてください。","answer":"てから","explanation":"洗ってから explicitly places washing before eating."} -->
+<!-- grammar-card: {"id":"after-sequence-contrast","kind":"concept","format":"qa","priority":"essential","sourceSection":"後で vs てから","rule":"てから emphasizes sequence more strongly than 後で","example":"Which more strongly conveys “first A, then B,” 後で or てから?","answer":"てから; 後で can more loosely mean sometime after.","explanation":"Both order events, but てから stresses the first action as preceding the second."} -->
 
 ## 間(あいだ)に — "While / During"
 
@@ -91,6 +99,9 @@ This lesson covers how to talk about **when** things happen, express **before** 
 - **赤ちゃんが寝ている**間**、静(しず)かにしてください。** — Please be quiet the whole time the baby is sleeping.
 - **赤ちゃんが寝ている**間に**、掃除(そうじ)をしました。** — I cleaned (at some point) while the baby was sleeping.
 
+<!-- grammar-card: {"id":"aida-window","kind":"rule","format":"cloze","priority":"essential","sourceSection":"With verbs: ている + 間に","rule":"ている間に places an event within an ongoing time window","example":"It snowed while I was sleeping: 私が寝ている___、雪が降りました。","answer":"間に","explanation":"寝ている supplies the ongoing background during which snow fell."} -->
+<!-- grammar-card: {"id":"aida-noun","kind":"rule","format":"cloze","priority":"optional","sourceSection":"With nouns: Noun + の間に","rule":"A noun connects to 間に with の","example":"During lunch break: 昼休み___間に、銀行に行きました。","answer":"の","explanation":"昼休みの間に names a time interval with a noun."} -->
+<!-- grammar-card: {"id":"aida-duration-contrast","kind":"concept","format":"qa","priority":"essential","sourceSection":"間 vs 間に","rule":"間 describes throughout the interval, while 間に locates an event within it","example":"How does 赤ちゃんが寝ている間、静かにしてください differ from 間に、掃除をしました?","answer":"Be quiet throughout the baby's sleep; cleaning happened within that sleep interval.","explanation":"間に need not mean the event lasted the whole interval; 間 foregrounds continued duration."} -->
 ## ながら — "While Doing (Simultaneously)"
 
 **ながら** means doing two things at the same time. Attach it to the verb stem.
@@ -105,6 +116,8 @@ This lesson covers how to talk about **when** things happen, express **before** 
 
 > 💡 The main action comes second. The ながら action is secondary/simultaneous.
 
+<!-- grammar-card: {"id":"nagara-stem","kind":"rule","format":"cloze","priority":"essential","sourceSection":"ながら — \"While Doing (Simultaneously)\"","rule":"ながら attaches to the ます-stem for simultaneous actions","example":"I study while listening to music: 音楽を聞き___、勉強します。","answer":"ながら","explanation":"聞く → 聞き + ながら; studying is the main action that follows."} -->
+<!-- grammar-card: {"id":"nagara-main-action","kind":"concept","format":"qa","priority":"essential","sourceSection":"ながら — \"While Doing (Simultaneously)\"","rule":"The second clause is the main action in the ながら pattern","example":"In テレビを見ながら、ご飯を食べます, which action is primary?","answer":"Eating the meal; watching TV is the simultaneous secondary action.","explanation":"The ながら action supports the main action after it."} -->
 <!-- quiz:{"type":"multiple-choice","question":"'音楽を聞きながら勉強します' means:","options":["I study music by listening","I listen to music after studying","I study while listening to music","I listen while studying music"],"answer":2} -->
 
 ## Frequency Adverbs
@@ -122,6 +135,15 @@ Japanese frequency adverbs tell you **how often** something happens.
 | めったに〜ない | めったに〜ない | rarely | ~5% |
 | 全然(ぜんぜん)〜ない | ぜんぜん〜ない | never / not at all | 0% |
 
+<!-- vocab-card: {"id":"vocab-itsumo","word":"いつも","reading":"いつも","meaning":"always","priority":"optional","sourceSection":"Frequency Adverbs"} -->
+<!-- vocab-card: {"id":"vocab-taitei","word":"たいてい","reading":"たいてい","meaning":"usually","priority":"optional","sourceSection":"Frequency Adverbs"} -->
+<!-- vocab-card: {"id":"vocab-yoku","word":"よく","reading":"よく","meaning":"often","priority":"optional","sourceSection":"Frequency Adverbs"} -->
+<!-- vocab-card: {"id":"vocab-tokidoki","word":"時々","reading":"ときどき","meaning":"sometimes","priority":"optional","sourceSection":"Frequency Adverbs"} -->
+<!-- vocab-card: {"id":"vocab-tamani","word":"たまに","reading":"たまに","meaning":"occasionally","priority":"optional","sourceSection":"Frequency Adverbs"} -->
+<!-- vocab-card: {"id":"vocab-amari","word":"あまり","reading":"あまり","meaning":"not very much; not very often (with a negative)","priority":"optional","sourceSection":"Frequency Adverbs"} -->
+<!-- vocab-card: {"id":"vocab-mettani","word":"めったに","reading":"めったに","meaning":"rarely (with a negative)","priority":"essential","sourceSection":"Frequency Adverbs"} -->
+<!-- vocab-card: {"id":"vocab-zenzen","word":"全然","reading":"ぜんぜん","meaning":"not at all (with a negative in the pattern taught here)","priority":"optional","sourceSection":"Frequency Adverbs"} -->
+
 ### Examples
 
 - **いつも七時(しちじ)に起(お)きます。** — I always wake up at 7.
@@ -133,7 +155,11 @@ Japanese frequency adverbs tell you **how often** something happens.
 - **めったに遅刻(ちこく)しません。** — I rarely arrive late.
 - **全然運動(うんどう)しません。** — I don't exercise at all.
 
-> ⚠️ あまり, めったに, and 全然 must be used with **negative** verb forms.
+> ⚠️ In the meanings taught here, あまり, めったに, and 全然 pair with **negative** forms. The percentages are rough memory aids, not exact usage frequencies. Modern colloquial 全然 also occurs with affirmative expressions such as 全然大丈夫 (“totally fine”).
+
+<!-- grammar-card: {"id":"negative-frequency","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Examples","rule":"めったに pairs with a negative to express rarely","example":"I rarely arrive late: めったに遅刻___。 (する, polite negative)","answer":"しません","explanation":"めったに plus しません means rarely, not never arriving late with mathematical certainty."} -->
+<!-- grammar-card: {"id":"frequency-not-percentages","kind":"concept","format":"qa","priority":"optional","sourceSection":"Frequency Adverbs","rule":"The frequency percentages are illustrative cues rather than measured definitions","example":"Does よく mean exactly 70% of occasions?","answer":"No. The percentages are rough memory cues, not precise definitions or measured frequencies.","explanation":"Keep the useful frequency ordering without treating approximate figures as universal laws."} -->
+<!-- grammar-card: {"id":"zenzen-register","kind":"concept","format":"qa","priority":"optional","sourceSection":"Examples","rule":"The negative 全然 pattern does not prohibit affirmative colloquial uses","example":"Must 全然 always be followed by a negative in modern speech?","answer":"No. The lesson teaches the negative pattern, but colloquial affirmative expressions such as 全然大丈夫 also occur.","explanation":"全然大丈夫 means totally fine; retain the register qualification rather than a universal negative-only claim."} -->
 
 ## Time-Related Expressions
 
@@ -145,6 +171,14 @@ Japanese frequency adverbs tell you **how often** something happens.
 | 毎年(まいとし) | every year | 毎年旅行します |
 | 毎朝(まいあさ) | every morning | 毎朝ジョギングします |
 | 毎晩(まいばん) | every night | 毎晩日記(にっき)を書きます |
+
+<!-- vocab-card: {"id":"vocab-mainichi","word":"毎日","reading":"まいにち","meaning":"every day","priority":"optional","sourceSection":"Time-Related Expressions"} -->
+<!-- vocab-card: {"id":"vocab-maishuu","word":"毎週","reading":"まいしゅう","meaning":"every week","priority":"optional","sourceSection":"Time-Related Expressions"} -->
+<!-- vocab-card: {"id":"vocab-maitsuki","word":"毎月","reading":"まいつき","meaning":"every month","priority":"optional","sourceSection":"Time-Related Expressions"} -->
+<!-- vocab-card: {"id":"vocab-maitoshi","word":"毎年","reading":"まいとし","meaning":"every year","priority":"optional","sourceSection":"Time-Related Expressions"} -->
+<!-- vocab-card: {"id":"vocab-maiasa","word":"毎朝","reading":"まいあさ","meaning":"every morning","priority":"optional","sourceSection":"Time-Related Expressions"} -->
+<!-- vocab-card: {"id":"vocab-maiban","word":"毎晩","reading":"まいばん","meaning":"every night","priority":"optional","sourceSection":"Time-Related Expressions"} -->
+<!-- vocab-card: {"id":"vocab-maishuumatsu","word":"毎週末","reading":"まいしゅうまつ","meaning":"every weekend","priority":"optional","sourceSection":"Time-Related Expressions"} -->
 
 - **毎朝コーヒーを飲みます。** — I drink coffee every morning.
 - **毎週末(まいしゅうまつ)、買い物に行きます。** — I go shopping every weekend.

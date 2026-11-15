@@ -1,5 +1,7 @@
 # くらい / ぐらい — About / Approximately
 
+<!-- vocab-inventory: {"mode":"explicit"} -->
+
 > **Source:** Content from [Tofugu](https://www.tofugu.com/japanese-grammar/kurai/). For personal study.
 
 くらい For Approximation
@@ -36,6 +38,8 @@ Then, you ask your friend as to how long they think it will take to prepare that
 
 Unlike those hamburgers, learning about the basic uses of くらい should take no time at all.
 
+<!-- vocab-card: {"id":"vocab-chokkei","word":"直径","reading":"ちょっけい","meaning":"diameter","priority":"optional","sourceSection":"The Basics"} -->
+
 There are a lot of different uses with くらい, but we'll stick to the essentials on this page. If you're new to くらい, read on and see what's in store!
 
 ### Amount + くらい for "Approximate Quantity"
@@ -56,6 +60,10 @@ What if you've read only about half of chapter one? In this case, you can link �
 
 Other ways to say "about half" include 〜の５０％くらい (about 50%) and 〜の二分の一くらい (about ½).
 
+<!-- grammar-card: {"id":"quantity-approximation","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Amount + くらい for \"Approximate Quantity\"","rule":"くらい approximates numerical and nonnumerical quantities","example":"About half: 半分___。 (Use the unvoiced variant.)","answer":"くらい","explanation":"The particle can follow a number with a counter or a quantity such as 半分. ぐらい is another common variant."} -->
+<!-- vocab-card: {"id":"vocab-hanbun","word":"半分","reading":"はんぶん","meaning":"half","priority":"optional","sourceSection":"Amount + くらい for \"Approximate Quantity\""} -->
+<!-- vocab-card: {"id":"vocab-onaji","word":"同じ","reading":"おなじ","meaning":"the same","priority":"optional","sourceSection":"Amount + くらい for \"Approximate Quantity\""} -->
+
 Let's imagine you also lent a book to a friend a week ago and now you're asking them (in the same conversation), "What about you? How much of it have you read?" If they've read about half of it as well, they can combine 同じ and くらい to say:
 
   - 同じ**くらい**。
@@ -72,7 +80,7 @@ How simple! Now, you might be wondering how you can add "a point of comparison,"
 
   - Come over at **around** six o'clock.
 
-Even after adding くらい, keep in mind that you'll still need to mark the approximate time with the particle に, which signifies a point in time. Also, when くらい is used with a point in time, it can be replaced with the word 頃, like:
+Even after adding くらい, に can mark the approximate point in time. It is included in these examples, though conversational Japanese can omit it. With a point in time, 頃 (ごろ) is also possible, as in:
 
   - 六時**頃に**来て。
 
@@ -85,6 +93,9 @@ Let's take a look at a different scenario. Assume you're planning a trip to Japa
   - I'm planning to go to Japan **around** March.
 
 The point in time marked by くらい doesn't have to be precise. If your plan to go to Japan is maybe for next year, you can say 来年くらい (around next year). If it's spring, you can say 春くらい (around spring). And if it's in about six months from now, you can say 半年後くらい (in around six months).
+
+<!-- grammar-card: {"id":"approximate-time","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Time/Date + くらいに for \"Approximate Point in Time\"","rule":"くらいに makes a point in time approximate","hint":"Use the unvoiced approximation particle and retain the time marker.","example":"三月___日本に行く予定です。","answer":"くらいに","explanation":"三月くらいに means around March; に marks the approximate time. It is not obligatory in every conversational context."} -->
+<!-- grammar-card: {"id":"goro-time-scope","kind":"concept","format":"qa","priority":"optional","sourceSection":"Time/Date + くらいに for \"Approximate Point in Time\"","rule":"頃 approximates a point in time rather than a duration","example":"Can 頃 replace the approximation particle in 六時くらいに, and does that make 四時間頃 a normal way to say about four hours?","answer":"It can replace it for six o'clock, but not normally for a four-hour duration.","explanation":"六時ごろ refers to a clock time; 四時間くらい refers to an amount of time."} -->
 
 #### Placement of くらい with 後/前
 
@@ -101,6 +112,9 @@ The point in time marked by くらい doesn't have to be precise. If your plan t
 When 前 (before/earlier) is used instead of 後 (later), as in 半年前くらい or 半年くらい前, the distinction between the two is almost negligible because they both refer to the past, which is "about six months ago."
 
 However, there is a very tiny difference! In Japanese, the meaning of what comes later in a statement is generally prioritized. So in 半年前くらい, the "approximately" meaning of くらい is a little stronger. It sounds hazier, like you're less certain about when something took place. 半年くらい前 is still an approximation, but it sounds a little more confident about the timeframe. The difference is so small that you can also just go with your personal preference, though, so don't sweat it!
+
+<!-- grammar-card: {"id":"future-time-placement","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Placement of くらい with 後/前","rule":"くらい can follow 後 to approximate a future point","hint":"Use the order suited to a future point: later, approximately, time marker.","example":"半年___日本に行く予定です。","answer":"後くらいに","explanation":"半年後くらいに means in about six months. 半年くらい後に can emphasize an elapsed interval, especially in past narration; this is a tendency, not a tense rule."} -->
+<!-- grammar-card: {"id":"mae-placement-nuance","kind":"concept","format":"qa","priority":"optional","sourceSection":"Placement of くらい with 後/前","rule":"The two placements around 前 differ only subtly","example":"Do 半年前くらい and 半年くらい前 identify different sides of the present?","answer":"No. Both mean about six months ago; any difference in emphasis or haziness is very small.","explanation":"Do not memorize the order as a rigid past-versus-future contrast."} -->
 
 ### こそあど Words + くらい for "Approximate Amount/Level"
 
@@ -129,6 +143,8 @@ The こそあ words can also refer to the "extent" of something. For example, le
   - You should **at least** be able to do **that kind of thing**.
 
 Here, あれ or あの refers to the earlier action of cracking an egg, and くらい indicates that the assistant should be able to do *at least* that much. Just like this example, くらい can denote the approximate level of a minimum requirement. This use of くらい is discussed more in Beyond the Basics.
+
+<!-- grammar-card: {"id":"demonstrative-level","kind":"concept","format":"qa","priority":"optional","sourceSection":"こそあど Words + くらい for \"Approximate Amount/Level\"","rule":"Demonstratives point to an amount or level supplied by context","example":"What does これくらい refer to when a chef gestures at milk in a bowl?","answer":"Approximately this much milk, with the amount shown by the gesture.","explanation":"それ/その can refer to an amount nearer the listener; あれ/あの can refer back to a previously observed action or level."} -->
 
 ### Question word + くらい for "About How Much/Many?"
 
@@ -186,9 +202,10 @@ So if you want to be more explicit about *what* you're inquiring about, you may 
 
   - I wonder **(around) what time** we can go back home.
 
-<!-- grammar-card: {"rule":"くらい can follow 後 to approximate a future point","hint":"後 + くらいに","example":"半年___日本に行く予定です。","answer":"後くらいに","explanation":"半年後くらいに means in about six months' time."} -->
-
-<!-- grammar-card: {"rule":"くらいに makes a point in time approximate","hint":"くらい + に","example":"三月___日本に行く予定です。","answer":"くらいに","explanation":"三月くらいに means around March, with に marking it as the time of the trip."} -->
+<!-- grammar-card: {"id":"question-scope","kind":"concept","format":"qa","priority":"essential","sourceSection":"Question word + くらい for \"About How Much/Many?\"","rule":"どのくらい and どれくらい ask about an amount supplied by context","example":"Why might どれくらいかかる be ambiguous while waiting for a bus?","answer":"It could ask how much time or how much money is required; context decides.","explanation":"These expressions are not restricted to countable or uncountable nouns. A counter can specify minutes, yen, or another measurement."} -->
+<!-- grammar-card: {"id":"counter-question","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Question word + くらい for \"About How Much/Many?\"","rule":"何 plus a counter specifies the quantity being asked about","example":"About how many minutes will it take? ___くらいかかりますかね。","answer":"何分","explanation":"何分 (なんぷん) specifies minutes, unlike the context-dependent どのくらい. 何円 asks yen and 何時 asks clock time."} -->
+<!-- vocab-card: {"id":"vocab-otsumami","word":"おつまみ","reading":"おつまみ","meaning":"snacks eaten with drinks","priority":"optional","sourceSection":"Question word + くらい for \"About How Much/Many?\""} -->
+<!-- vocab-card: {"id":"vocab-kaikei","word":"会計","reading":"かいけい","meaning":"bill; payment; accounting","priority":"optional","sourceSection":"Question word + くらい for \"About How Much/Many?\""} -->
 
 ## Beyond the Basics
 
@@ -204,7 +221,7 @@ You can mark the point of comparison by using the particle と, as in 〜と同�
 
 Easy, huh? However, there is one little thing to discuss here. When making comparisons, 〜と同じ can be omitted and くらい can directly attach to someone's name or the point of comparison.
 
-For example, say your friend asks you how tall your brother is. You think your brother's height is roughly the same as a classmate called Ken. To say that, instead of saying ケンと同くらいだよ, you can omit 〜と同じ and say:
+For example, say your friend asks you how tall your brother is. You think your brother's height is roughly the same as a classmate called Ken. To say that, instead of saying ケンと同じくらいだよ, you can omit 〜と同じ and say:
 
   - ケン**くらい**だよ。
 
@@ -227,6 +244,10 @@ This pattern is also commonly used to explain how someone or something possesses
   - 日本（と同じ）**くらいの**物価だともっと暮らしやすいだろう。
 
   - It would be more liveable if the cost of living were **(about) the same as** in Japan.
+
+<!-- grammar-card: {"id":"comparison-size","kind":"rule","format":"cloze","priority":"optional","sourceSection":"〜くらい for \"Almost the Same As…\"","rule":"くらい compares one thing's size to another","hint":"Use the unvoiced approximation particle.","example":"ボールの大きさは、アボカド___だよ。","answer":"くらい","explanation":"アボカドくらい means roughly the size of an avocado; the comparison phrase と同じ can be omitted."} -->
+<!-- grammar-card: {"id":"comparison-linkers","kind":"rule","format":"cloze","priority":"optional","sourceSection":"〜くらい for \"Almost the Same As…\"","rule":"と marks the comparison and の links the approximate level to a noun","example":"Prices about the same as Japan: 日本___同じくらいの物価。","answer":"と","explanation":"The comparison is 日本と; くらいの then modifies 物価."} -->
+<!-- vocab-card: {"id":"vocab-bukka","word":"物価","reading":"ぶっか","meaning":"prices; cost of living","priority":"optional","sourceSection":"〜くらい for \"Almost the Same As…\""} -->
 
 ### 〜くらい for "At Least…"
 
@@ -254,6 +275,8 @@ Are you getting a sense of how くらい is used in this scenario? Because of th
 
 In this example, くらい denotes the same thing, which is the approximate level of the skill required to make pancakes. In this case, however, it often translates to "at most" or "at best" rather than "at least," because you're modestly claiming that that's the limit of your cooking skill.
 
+<!-- grammar-card: {"id":"minimum-versus-limit","kind":"concept","format":"qa","priority":"essential","sourceSection":"〜くらい for \"At Least…\"","rule":"A trivial benchmark can be a minimum achievement or a modest limit","example":"Why does パンケーキくらいしか作れない not mean I can make at least pancakes and many harder things?","answer":"しか with the negative limits the ability to pancakes; it means that is about all I can make.","explanation":"Without that limit, くらい can present something as easy enough to be a minimum expectation, sometimes sounding dismissive."} -->
+
 ### Difference Between くらい and ほど
 
 くらい and ほど are similar words as both can be used to indicate an approximate amount or level of something. When they're used with an amount of something, the difference is the level of formality — くらい is casual and ほど is formal. For example, if your friend is asking if you can bake fifty cookies by tonight, you may say:
@@ -270,7 +293,7 @@ In this example, くらい denotes the same thing, which is the approximate leve
 
 Even though くらい can still be used in semi-formal situations, ほど is a more presentable and professional-sounding option here.
 
-However, くらい and ほど aren't always interchangeable because there's another difference than the level of formality. That is, くらい expresses an approximate lower bound while ほど expresses an approximate upper bound. Let's do an experiment to demonstrate what this means. Let's carry on with the previous examples, but this time, you are using これくらい and これほど to refer to the amount of cookies instead of saying the number:
+くらい and ほど are not interchangeable in every use. In the following contrast, これくらい presents an amount as manageable, while emphatic これほど highlights how large it is. This is a contextual contrast, not a universal rule that every くらい is a lower bound and every ほど an upper bound.
 
   - **これくらい**なら作れると思う。
 
@@ -280,13 +303,15 @@ However, くらい and ほど aren't always interchangeable because there's anot
 
   - I think I can make them if it's about **that much**.
 
-Since くらい implies the lower bound of what you're able to do, it's appropriate here and sounds like making fifty cookies should be no trouble — you're an experienced baker after all. But since ほど is used to express *upper* limits, it suggests there may be some difficulty (or impossibility) with the amount in question, so it clashes with the なら、作れる part that follows (if it's…, I can…). On the other hand, ほど works better when highlighting how much someone else can do, like:
+Here これくらいなら fits the intended reassurance that the amount is no trouble. The marked これほど example is awkward for that intended reading because it emphasizes a large degree; this is not a blanket grammatical ban on ほど with なら. ほど fits naturally when expressing surprise at how much someone can make:
 
   - **これほど**の量が作れるんですか！？
 
   - You can make **this much**!?
 
-Keep in mind that ほど still carries a formal tone, and it can sound excessive in praise and come off as a little odd in casual conversation.
+For approximate quantities, ほど often sounds more formal than くらい. Emphatic praise with これほど can also sound grand or excessive in a casual exchange, depending on context.
+
+<!-- grammar-card: {"id":"hodo-register-and-degree","kind":"concept","format":"qa","priority":"optional","sourceSection":"Difference Between くらい and ほど","rule":"ほど can sound more formal for quantities and more emphatic about degree","example":"Is くらい always a strict lower bound and ほど always a strict upper bound?","answer":"No. Both can approximate quantities; ほど is often more formal, and emphatic degree comparisons depend on context.","explanation":"これくらいなら can downplay a manageable amount, whereas これほどの量 can emphasize its surprising size. Do not turn that contrast into a universal numeric rule."} -->
 
 ---
 
@@ -378,8 +403,6 @@ pp. 220-224, 228-235
 <!-- quiz: {"type":"multiple-choice","question":"What does \"六時**頃に**来て。\" mean?","options":["Come over at **around** six o'clock.","I'm planning to go to Japan **around** March.","I'm planning to go to Japan **in about** half a year.","I went to Japan last March. And **after about** six months, I went back to America."],"answer":0} -->
 
 <!-- quiz: {"type":"multiple-choice","question":"What does \"三月**くらいに**日本に行く予定です。\" mean?","options":["I'm planning to go to Japan **around** March.","Come over at **around** six o'clock.","I went to Japan in March.","I'm planning to go to Japan **in about** half a year."],"answer":0} -->
-
-<!-- grammar-card: {"rule":"くらい compares one thing's size to another","hint":"くらい","example":"ボールの大きさは、アボカド___だよ。","answer":"くらい","explanation":"アボカドくらい means roughly the size of an avocado."} -->
 
 ## Sources
 

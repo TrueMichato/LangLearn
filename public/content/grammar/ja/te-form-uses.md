@@ -1,5 +1,7 @@
 # て-Form Advanced Uses (ている、てある、ておく)
 
+<!-- vocab-inventory: {"mode":"explicit"} -->
+
 The て form is one of the most powerful connectors in Japanese. Beyond simple requests and sequencing, it combines with auxiliary verbs to express ongoing actions, resultant states, preparation, and directional continuity. Mastering these patterns will dramatically expand your expressive range.
 
 ## Review: て Form Basics
@@ -42,15 +44,15 @@ With **action verbs** (verbs that describe activities), ている expresses an a
 
 ### 2. Resultant State
 
-With **instantaneous verbs** (verbs that describe a change of state), ている expresses the **result** of a completed action:
+With **change-of-state verbs**, ている often expresses the **result** of a completed change. Some other verbs, such as 住む and 持つ, also conventionally describe continuing states with ている:
 
 | Verb | ている meaning | Note |
 |------|--------------|------|
 | 知(し)る (to get to know) | 知っている = know | NOT "am getting to know" |
 | 結婚(けっこん)する (to marry) | 結婚している = is married | NOT "is marrying" |
 | 死(し)ぬ (to die) | 死んでいる = is dead | NOT "is dying" |
-| 住(す)む (to settle) | 住んでいる = lives (in) | NOT "is settling" |
-| 持(も)つ (to grab) | 持っている = has/holds | NOT "is grabbing" |
+| 住(す)む (to live / reside) | 住んでいる = lives (in) | A continuing residence |
+| 持(も)つ (to hold / have) | 持っている = has/holds | A continuing possession or hold |
 
 > **東京(とうきょう)に住(す)んでいます。**
 > *Tōkyō ni sunde imasu.*
@@ -64,7 +66,15 @@ With **instantaneous verbs** (verbs that describe a change of state), ている 
 > *Kono kotoba o shitte imasu ka.*
 > Do you know this word?
 
-> 💡 The negative of 知っている is 知**らない** (not 知っていない). This is an important exception!
+> 💡 The normal negative for “do not know” is 知**らない**. 知っていない can occur in marked or contrastive contexts, but it is not the ordinary beginner equivalent.
+
+<!-- grammar-card: {"id":"teiru-result-not-progress","kind":"concept","format":"qa","priority":"essential","sourceSection":"2. Resultant State","rule":"ている can describe a resulting state rather than an action in progress","example":"In 彼はもう結婚している, is the marriage ceremony happening now?","answer":"No. He is already married; ている describes the resulting state.","explanation":"Likewise 知っている means know and 死んでいる means be dead in their normal state readings."} -->
+<!-- grammar-card: {"id":"shiru-normal-negative","kind":"rule","format":"cloze","priority":"essential","sourceSection":"2. Resultant State","rule":"The ordinary negative of 知っている meaning know is 知らない","example":"I don't know that word: その言葉を___。 (plain negative)","answer":"知らない","explanation":"知らない is read しらない. Do not mechanically use 知っていない as the neutral everyday negative."} -->
+<!-- vocab-card: {"id":"vocab-sumu","word":"住む","reading":"すむ","meaning":"to live; to reside","priority":"optional","sourceSection":"2. Resultant State"} -->
+<!-- vocab-card: {"id":"vocab-motsu","word":"持つ","reading":"もつ","meaning":"to hold; to have; to take in one's hand","priority":"optional","sourceSection":"2. Resultant State"} -->
+<!-- vocab-card: {"id":"vocab-shiru","word":"知る","reading":"しる","meaning":"to get to know; to learn of","priority":"optional","sourceSection":"2. Resultant State"} -->
+<!-- vocab-card: {"id":"vocab-kekkon-suru","word":"結婚する","reading":"けっこんする","meaning":"to marry; to get married","priority":"optional","sourceSection":"2. Resultant State"} -->
+<!-- vocab-card: {"id":"vocab-shinu","word":"死ぬ","reading":"しぬ","meaning":"to die","priority":"optional","sourceSection":"2. Resultant State"} -->
 
 > **彼女(かのじょ)は眼鏡(めがね)をかけています。**
 > *Kanojo wa megane o kakete imasu.*
@@ -79,7 +89,7 @@ In casual speech, ている is often shortened:
 | ている | てる | 食べている → 食べてる |
 | ています | てます | 読んでいます → 読んでます |
 | ていた | てた | 見ていた → 見てた |
-| ていない | てない | 知っていない → 知ってない |
+| ていない | てない | 食べていない → 食べてない |
 
 > **何(なに)してる？**
 > *Nani shiteru?*
@@ -87,7 +97,8 @@ In casual speech, ている is often shortened:
 
 <!-- quiz:{"type":"multiple-choice","question":"What does 知っています mean?","options":["I am getting to know","I know","I am studying","I knew"],"answer":1} -->
 
-<!-- grammar-card: {"rule":"ている with an action verb describes something in progress","hint":"読む + いる, polite","example":"今(いま)、本(ほん)を読(よ)ん___。","answer":"でいます","explanation":"読んでいます says the reading is happening at this moment."} -->
+<!-- grammar-card: {"id":"teiru-progressive","kind":"rule","format":"cloze","priority":"essential","sourceSection":"1. Ongoing Action (Progressive)","rule":"ている with an action verb describes something in progress","hint":"読む, ongoing action politely","example":"今(いま)、本(ほん)を読(よ)ん___。","answer":"でいます","explanation":"読んでいます (よんでいます) describes reading happening now; 読む has て-form 読んで."} -->
+<!-- grammar-card: {"id":"teiru-contraction","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Casual Forms of ている","rule":"Conversational ている often loses い","example":"Contract 食べている in casual speech: 食べ___。","answer":"てる","explanation":"食べてる keeps the progressive meaning. The same い-deletion yields 読んでます and 見てた."} -->
 
 ## てある — Resultant State of Transitive Verbs
 
@@ -97,7 +108,7 @@ In casual speech, ている is often shortened:
 
 > Transitive verb (て form) + ある
 
-The object of the action is marked with **が** (not を):
+In the **result-focused pattern shown here**, the thing affected is marked with **が**. An agent-focused preparatory construction can retain **を**, as in 窓を開けてあります (“I have opened the window ready for later”); を is not universally wrong with てある.
 
 | Action (someone did) | Resultant State (てある) |
 |---------------------|------------------------|
@@ -134,7 +145,8 @@ The object of the action is marked with **が** (not を):
 
 <!-- quiz:{"type":"multiple-choice","question":"Which particle typically marks the object in a てある sentence?","options":["を","に","が","で"],"answer":2} -->
 
-<!-- grammar-card: {"rule":"てある marks a state someone set up on purpose","hint":"開ける + ある, polite","example":"窓(まど)が開(あ)け___。","answer":"てあります","explanation":"開けてあります says someone opened the window and deliberately left it that way."} -->
+<!-- grammar-card: {"id":"tearu-deliberate-state","kind":"rule","format":"cloze","priority":"essential","sourceSection":"てある — Resultant State of Transitive Verbs","rule":"てある marks a state someone set up on purpose","hint":"開ける, deliberate result politely","example":"窓(まど)が開(あ)け___。","answer":"てあります","explanation":"開けてあります (あけてあります) describes the remaining result of someone intentionally opening the window."} -->
+<!-- grammar-card: {"id":"teiru-tearu-contrast","kind":"concept","format":"qa","priority":"essential","sourceSection":"ている vs てある","rule":"てある foregrounds a deliberate action behind a state","example":"What does 窓が開けてある add compared with 窓が開いている?","answer":"Someone deliberately opened the window and the result remains; 開いている simply describes it as open.","explanation":"開ける is transitive (あける), while 開く in 開いている is intransitive (あく)."} -->
 
 ## ておく — Doing Something in Advance
 
@@ -195,7 +207,9 @@ In casual speech, ておく contracts to **とく**:
 
 <!-- quiz:{"type":"multiple-choice","question":"What does 買っておく mean?","options":["To finish buying","To keep buying","To buy in advance","To want to buy"],"answer":2} -->
 
-<!-- grammar-card: {"rule":"ておく means preparing something ahead of time","hint":"する + おく, polite","example":"明日(あした)の会議(かいぎ)の資料(しりょう)を準備(じゅんび)し___。","answer":"ておきます","explanation":"準備しておきます gets the documents ready before the meeting happens."} -->
+<!-- grammar-card: {"id":"teoku-preparation","kind":"rule","format":"cloze","priority":"essential","sourceSection":"ておく — Doing Something in Advance","rule":"ておく means preparing something ahead of time","hint":"する, preparation politely","example":"明日(あした)の会議(かいぎ)の資料(しりょう)を準備(じゅんび)し___。","answer":"ておきます","explanation":"準備しておきます gets the materials ready for a future purpose, not merely earlier on a timeline."} -->
+<!-- grammar-card: {"id":"teoku-leave-as-is","kind":"concept","format":"qa","priority":"essential","sourceSection":"ておく for \"Leaving as is\"","rule":"ておく can maintain a state as well as prepare an action","example":"What is requested by そのままにしておいてください?","answer":"Please leave it as it is.","explanation":"ておく includes deliberately leaving a condition unchanged, not only completing a task beforehand."} -->
+<!-- grammar-card: {"id":"teoku-voiced-contraction","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Casual Contraction: とく","rule":"でおく contracts to どく, while ておく contracts to とく","example":"Contract 読んでおく conversationally: 読ん___。","answer":"どく","explanation":"読んどく (よんどく) preserves voicing from で; 買っておく instead becomes 買っとく."} -->
 
 ## ていく & てくる — Directional Continuity
 
@@ -260,13 +274,16 @@ Describes an action that **moves toward** the speaker or has **continued from th
 
 <!-- quiz:{"type":"multiple-choice","question":"日本語が上手になってきました means:","options":["My Japanese will get better","My Japanese has been getting better","I started studying Japanese","I want to improve my Japanese"],"answer":1} -->
 
-<!-- grammar-card: {"rule":"てくる traces a change forward up to the present","hint":"なる + くる, polite past","example":"だんだん暖(あたた)かくなっ___。","answer":"てきました","explanation":"なってきました says it has been gradually warming up until now."} -->
+<!-- grammar-card: {"id":"tekuru-change-until-now","kind":"rule","format":"cloze","priority":"essential","sourceSection":"てくる — Coming Toward / From the Past","rule":"てくる traces a change forward up to the present","hint":"なる + くる, polite past","example":"だんだん暖(あたた)かくなっ___。","answer":"てきました","explanation":"暖かくなってきました presents warming as developing toward the current reference point."} -->
+<!-- grammar-card: {"id":"teiku-future-change","kind":"rule","format":"cloze","priority":"essential","sourceSection":"ていく — Continuing Away / Into the Future","rule":"ていく can trace a development onward into the future","example":"The population will keep decreasing: 人口が減っ___でしょう。","answer":"ていく","explanation":"減っていく (へっていく) follows the change onward, unlike a change traced up to now with てくる."} -->
+<!-- grammar-card: {"id":"direction-bring-take","kind":"concept","format":"qa","priority":"essential","sourceSection":"Summary Table: ていく vs てくる","rule":"ていく and てくる can indicate physical direction relative to a viewpoint","example":"What is the directional difference between 持っていく and 持ってくる?","answer":"持っていく means take along away from the viewpoint; 持ってくる means bring toward it.","explanation":"The same away/toward perspective underlies many temporal uses, but these examples describe physical movement."} -->
+<!-- grammar-card: {"id":"tekuru-go-return","kind":"concept","format":"qa","priority":"optional","sourceSection":"てくる — Coming Toward / From the Past","rule":"てくる can present going to do something and returning","example":"Does コンビニに行ってきます suggest leaving with no expectation of returning?","answer":"No. It means I'll go to the convenience store and come back.","explanation":"行ってきます (いってきます) is also the conventional phrase said when leaving home."} -->
 
 ## All Patterns at a Glance
 
 | Pattern | Meaning | Example |
 |---------|---------|---------|
-| ている | Ongoing action / resultant state | 食べている (is eating / has eaten) |
+| ている | Ongoing action / resultant state | 食べている (is eating); 開いている (is open) |
 | てある | Resultant state (deliberate) | 書いてある (is written — by someone) |
 | ておく | Do in advance / leave as is | 買っておく (buy in advance) |
 | ていく | Continue away / into future | 減っていく (keep decreasing) |
@@ -280,10 +297,12 @@ Describes an action that **moves toward** the speaker or has **continued from th
 - ✅ ドアが開いている (the door is open)
 - ✅ ドアが開けてある (the door has been opened — deliberate, transitive)
 
-### 2. Using を with てある
+### 2. Choosing が or を with てある
 
-- ❌ 窓を開けてあります
-- ✅ 窓**が**開けてあります
+- 窓**が**開けてあります — focuses on the resulting open window.
+- 窓**を**開けてあります — can report an action already done in preparation.
+
+<!-- grammar-card: {"id":"tearu-particle-scope","kind":"concept","format":"qa","priority":"optional","sourceSection":"2. Choosing が or を with てある","rule":"The result-focused が construction does not exclude every を construction with てある","example":"Is 窓を開けてあります always ungrammatical?","answer":"No. を can retain the object in a preparatory-action construction; が is typical when focusing on the resulting state.","explanation":"Do not turn the lesson's result-focused が pattern into a blanket prohibition on を."} -->
 
 ### 3. Forgetting the nuance of ておく
 

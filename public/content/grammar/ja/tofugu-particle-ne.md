@@ -1,5 +1,7 @@
 # ね (ne) — Confirmation / Agreement
 
+<!-- vocab-inventory: {"mode":"explicit"} -->
+
 > **Source:** Content from [Tofugu](https://www.tofugu.com/japanese-grammar/particle-ne/). For personal study.
 
 Particle ね: For Sharing Information & Feelings 
@@ -17,6 +19,8 @@ Particle
 Particle ね is a sentence-ending particle — a type of particle that adds nuance or tone to a sentence. A speaker uses ね when they want to imply that the listener agrees with what they're saying, or give the impression that they're both on the same page. For this reason, ね is often used to acknowledge or confirm something with the listener, kind of like tagging a question onto the end of a sentence in English, as in "…isn't it?," "…right?" or "…okay?"
 
 ### Conceptualizing ね
+
+<!-- grammar-card: {"id":"shared-information-concept","kind":"concept","format":"qa","priority":"essential","sourceSection":"Conceptualizing ね","rule":"ね presents information as shared or mutually acknowledged","example":"What stance does ね add to あ、雨が降ってるね compared with the particle-free statement?","answer":"It directs the observation to the listener as something to acknowledge or share.","explanation":"The shared-hands image cues a joint perspective. It does not mean the listener has in fact agreed or that the speaker is asking a completely open information question."} -->
 
 At the core of particle ね is the idea that it presents information as shared between the speaker and the listener. In the image above, you can see how both the speaker and the listener are holding the ね sentence in their hands, and the speech bubble combines visual elements of both. This represents the feeling of togetherness that ね adds to a statement.
 
@@ -39,6 +43,8 @@ In this way, ね can be used to make a sentence sound more conversational.
 ね can actually pop up in a few different positions in a sentence. As it is a sentence-ending particle, we'll start off with when it appears at the end of sentences.
 
 #### ね at the End of Sentences
+
+<!-- grammar-card: {"id":"noun-neutral-ending","kind":"rule","format":"cloze","priority":"essential","sourceSection":"ね at the End of Sentences","rule":"A noun or な-adjective commonly takes だ before ね in neutral casual speech","hint":"Use the casual copula, not the polite one.","example":"しずか___ね。","answer":"だ","explanation":"しずかですね is polite. Bare しずかね can sound traditionally feminine in some styles; that is a stylistic association, not a restriction based on the speaker's gender."} -->
 
 You'll often see ね tagged onto the end of a sentence, and Japanese sentences can consist of just one word if the context allows it. For example, ね can come directly after a verb:
 
@@ -80,6 +86,9 @@ Sometimes, another particle can be added after the な-adjective or noun, but in
 
 #### ね Elsewhere In Sentences
 
+<!-- grammar-card: {"id":"attention-getting-ne","kind":"concept","format":"qa","priority":"optional","sourceSection":"ね Elsewhere In Sentences","rule":"Initial or repeated ね can be a casual attention getter","example":"What is ねーねー doing at the start of a friendly conversation?","answer":"It gets the listener's attention, like hey, rather than confirming a completed statement.","explanation":"This use is familiar and casual; elongation and repetition do not make it an appropriate formal way to summon anyone."} -->
+<!-- grammar-card: {"id":"turn-holding-ne","kind":"concept","format":"qa","priority":"optional","sourceSection":"ね Elsewhere In Sentences","rule":"Medial ね can hold a conversational turn while inviting acknowledgment","example":"What is the effect of repeatedly inserting ね between phrases during a story?","answer":"It signals that the speaker is continuing and invites the listener to stay engaged.","explanation":"The listener may respond with nods or short aizuchi. This is turn management, not a series of independent yes-no questions."} -->
+
 ね generally comes at the end of a sentence, but it can also be used at the beginning or in the middle, to catch the listener's attention. Since this has a casual feel, ね is typically only used in this way between people who are on friendly terms, a bit like "hey!" in English. ね can also be repeated when used for attention, and in writing you'll often see it with the vowel part elongated:
 
   - ね！
@@ -101,6 +110,10 @@ That's, like, a lot of ねs! The idea that ね is used to suggest the speaker an
 There are various situations when ね comes in handy, and we'll examine the different uses one by one.
 
 ### ね for Consensus and Togetherness
+
+<!-- grammar-card: {"id":"shared-weather-application","kind":"rule","format":"cloze","priority":"essential","sourceSection":"ね for Consensus and Togetherness","rule":"ね invites the listener to agree","hint":"Invite agreement about a mutually felt warm day.","example":"今日、あったかい___。","answer":"ね","explanation":"ね makes this a shared observation. A lengthened ねー can itself acknowledge agreement in reply."} -->
+<!-- grammar-card: {"id":"disagreement-not-shared","kind":"concept","format":"qa","priority":"optional","sourceSection":"ね for Consensus and Togetherness","rule":"Direct disagreement is normally offered as a new perspective rather than a shared one","example":"Why does the lesson prefer あったかくないよ when contradicting a friend's claim that it is warm?","answer":"よ offers the conflicting perspective, whereas ね would present it as shared.","explanation":"This is about the intended stance in that exchange, not a ban on all negative statements ending in ね."} -->
+<!-- vocab-card: {"id":"vocab-attakai","word":"あったかい","reading":"あったかい","meaning":"warm (colloquial form of あたたかい)","priority":"optional","sourceSection":"ね for Consensus and Togetherness"} -->
 
 Since ね is used to present information as shared or mutually understood between the speaker and the listener, it can be used to build consensus or create a feeling of togetherness. For example, let's say you're hanging out with your friend on a very warm spring day. You may say to your friend something like:
 
@@ -132,6 +145,9 @@ Of course, your friend might *not* be on the same page as you. In that case, the
 If you'd like to read a more in-depth comparison of these two particles, check out this article.
 
 ### ね for Confirmation
+
+<!-- grammar-card: {"id":"confirmation-versus-open-question","kind":"concept","format":"qa","priority":"essential","sourceSection":"ね for Confirmation","rule":"ね double-checks a presumed answer rather than asking from complete ignorance","example":"Why can the waiter confirm a reservation with 佐藤さんですね instead of asking 佐藤さんですか?","answer":"The waiter is checking an identity already understood or expected, rather than asking without a presumed answer.","explanation":"The speaker presents the knowledge as shared. When less certain, よね can leave more room for correction."} -->
+<!-- vocab-card: {"id":"vocab-yoyaku","word":"予約","reading":"よやく","meaning":"reservation; booking","priority":"optional","sourceSection":"ね for Confirmation"} -->
 
 Since ね shows that you believe you and your listener are on the same page, ね can also be used when the speaker wants to officially confirm something.
 
@@ -167,6 +183,9 @@ Particle ね can be used to soften requests and suggestions. It draws on the und
 
 #### て Form + ね
 
+<!-- grammar-card: {"id":"request-agreement-application","kind":"rule","format":"cloze","priority":"optional","sourceSection":"て Form + ね","rule":"ね after a て-form request invites agreement and can soften it","hint":"Check that the listener is on board with reading the article.","example":"この記事を読んで___。","answer":"ね","explanation":"The request is framed as if cooperation is expected. Softening is a contextual effect, not an assurance that every request with ね is polite."} -->
+<!-- vocab-card: {"id":"vocab-kiji","word":"記事","reading":"きじ","meaning":"article (written piece)","priority":"optional","sourceSection":"て Form + ね"} -->
+
 One way to form a request in Japanese is to use the て form of a verb. For example, if your teacher told you to read this page on particle ね, they might say:
 
   - この記事を読んで。
@@ -186,6 +205,8 @@ For example, imagine you're talking to your partner just as they are about to ea
 Using ね makes this sound as though it isn't a direct order. It carries the nuance of it being a request, but one that is basically already agreed to because you and your partner are on the same page about this.
 
 #### 〜よう + ね
+
+<!-- grammar-card: {"id":"volitional-social-tone","kind":"concept","format":"qa","priority":"optional","sourceSection":"〜よう + ね","rule":"A volitional plus ね can be a nurturing prompt or a shared commitment","example":"Why can そろそろ宿題しようね sound parental rather than like a promise to do homework together?","answer":"The adult can be gently prompting the child while assuming cooperation, without intending to join the activity.","explanation":"With a genuinely shared activity, such as また会おうね, ね instead conveys hope for agreement or a promise. Tone can also make a parental prompt sound insistent."} -->
 
 Similar to a request, you can also add ね to a suggestion. In this case, it's attached to the 〜よう form of a verb.
 
@@ -210,6 +231,8 @@ Imagine you're saying goodbye to your friend and you hope to see them again. In 
 Without ね, this would sound like a simple suggestion. By adding ね, it shows you are hoping your friend is on the same page and will agree with your suggestion.
 
 ### Sarcastic ね
+
+<!-- grammar-card: {"id":"shared-stance-social-risk","kind":"concept","format":"qa","priority":"essential","sourceSection":"Sarcastic ね","rule":"Pretending unfamiliar information is shared can sound condescending","example":"Why might ね sound arrogant when naming an expensive drink the listener has just asked about?","answer":"It can imply that the listener should already know, presenting unfamiliar information as obvious shared knowledge.","explanation":"Context and tone determine whether this is friendly confirmation or talking down. The same mechanism can make a defiant できないね sound like obviously I cannot."} -->
 
 While so far, ね has mostly been butterflies and sunshine, it can also be used in a negative way. If you add ね to a statement that contains information the listener is clearly *not* aware of, you can sound a bit arrogant.
 
@@ -312,8 +335,6 @@ pp. 25-26
 <!-- quiz: {"type":"multiple-choice","question":"What does \"あ、雨が降ってるね。\" mean?","options":["Oh, it's raining, isn't it?","Oh, it's raining.","I'll eat it, okay?","It's hot, isn't it?"],"answer":0} -->
 
 <!-- quiz: {"type":"multiple-choice","question":"What does \"食べる**ね**。\" mean?","options":["I'll eat it, okay?","Oh, it's raining.","Oh, it's raining, isn't it?","It's hot, isn't it?"],"answer":0} -->
-
-<!-- grammar-card: {"rule":"ね invites the listener to agree","hint":"ね","example":"今日、あったかい___。","answer":"ね","explanation":"ね turns a remark about the weather into a shared observation."} -->
 
 ## Sources
 

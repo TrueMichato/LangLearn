@@ -1,5 +1,7 @@
 # もう — A Little More
 
+<!-- vocab-inventory: {"mode":"explicit"} -->
+
 > **Source:** Content from [Tofugu](https://www.tofugu.com/japanese-grammar/mou-little-more/). For personal study.
 
 もう for "A Little More..."
@@ -13,6 +15,9 @@ Adverb
 もう suggests "a little more" than the current quantity or condition.
 
 ## The Basics
+
+<!-- grammar-card: {"id":"slightly-louder","kind":"rule","format":"cloze","priority":"essential","sourceSection":"The Basics","rule":"もう少し means 'a little more'","example":"Ask for a slightly louder voice: ___大きい声で言ってもらえませんか？","answer":"もう少し","explanation":"The increment is relative to the speaker's current volume, rather than a general description of their voice.","legacyAliases":[{"rule":"もう少し means 'a little more'","example":"___声で言ってもらえませんか？"}]} -->
+<!-- grammar-card: {"id":"one-more-repetition","kind":"rule","format":"cloze","priority":"essential","sourceSection":"The Basics","rule":"もう plus a counted quantity adds that amount to what already exists","example":"Ask for one further repetition: ___言ってもらえませんか？","answer":"もう一回","explanation":"一回 counts one occurrence; もう marks it as additional. A different number would request a different additional amount.","legacyAliases":[{"rule":"もう plus a counter means 'one more'","example":"___言ってもらえませんか？"}]} -->
 
 Combined with a word that indicates a small amount or extent, もう can indicate that it's "a little more" than the *existing* quantity or a slight change (again, "a little more") in the *present* situation or condition of something.
 
@@ -64,13 +69,18 @@ He still refuses and tries to leave home, but you already have the cereal in the
 
 Here notice that もうすぐ means "soon" rather than "quickly." By adding もう to すぐ, you're talking about when the breakfast will be ready, referencing **the current point in time**. Remember, もう expresses something relative to the existing amount or state of things. And, "soon" is a relative expression that's always based on a certain point in time.
 
-Since もうすぐ reflects your perspective in the present, you cannot use もうすぐ when talking about the past. Say, for instance, that breakfast was thrown together quickly. To say this, you would need to use すぐ on its own, rather than もうすぐ.
+もうすぐ means that an event is near the reference time, not that it was completed quickly. In an ordinary report that breakfast was thrown together quickly, use すぐ, not もうすぐ. Narratives can shift the reference time into the past, so this is not a blanket ban on もうすぐ in past narration.
 
   - ほらね、[⭕️**すぐ**・❌**もうすぐ**]できたでしょ。
 
   - See, it's made quickly, right?
 
 In some cases, もう can also mean "already" or "not any more." Though all of its uses stem from the same concept, they are quite different in terms of nuance. To keep it simple, these uses have their own page. If you want to learn more, check out もう for Already/Not Any More.
+
+<!-- vocab-card: {"id":"vocab-mou-sugu","priority":"essential","sourceSection":"The Basics","word":"もうすぐ","reading":"もうすぐ","meaning":"soon; before long"} -->
+<!-- vocab-card: {"id":"vocab-sugu","priority":"optional","sourceSection":"The Basics","word":"すぐ","reading":"すぐ","meaning":"immediately; right away; quickly"} -->
+<!-- grammar-card: {"id":"relative-addition","kind":"concept","format":"qa","priority":"essential","sourceSection":"The Basics","rule":"Additive もう measures an increment from the existing amount or condition","example":"What changes when 一つ買おう becomes もう一つ買おう?","answer":"It changes from buying one to buying one more, in addition to the existing amount.","explanation":"The same relative addition can apply to another repetition or a slight adjustment in volume."} -->
+<!-- grammar-card: {"id":"soon-not-speed","kind":"concept","format":"qa","priority":"essential","sourceSection":"The Basics","rule":"もうすぐ locates a near event; すぐ can describe prompt completion","example":"To report that breakfast was made quickly, why is すぐできた the relevant expression rather than using the near-future adverb?","answer":"It describes how promptly breakfast was completed, not an event still approaching the reference time.","explanation":"もうすぐ means soon relative to a reference time; that time can shift in narration, so past context alone is not forbidden."} -->
 
 ### Patterns of Use
 
@@ -94,6 +104,8 @@ Notice the above examples described the extra bottle of beer as もう一**本**
 
 This is because in Japanese, quantities are usually a combination of a number and a counter, such as 〜つ, 〜個, 〜回, or 〜本. If you're not familiar with counters and want to learn more, or if you need a refresher, check out our counter guide!
 
+<!-- grammar-card: {"id":"additional-bottle","kind":"rule","format":"cloze","priority":"optional","sourceSection":"もう + Quantity","rule":"もう before a counted quantity requests that much more","example":"Request another bottle of beer: ビール、___一本ください。","answer":"もう","explanation":"The number need not be one: もう二、三個 means two or three more. 本 is the counter used for the bottle."} -->
+
 #### もう + Adverb
 
 You can also use もう with adverbs that indicate "a little (change)," such as 少し (a little) , ちょっと (a little), or すぐ (soon). You've already seen some examples, but here are a few more.
@@ -106,7 +118,7 @@ You can also use もう with adverbs that indicate "a little (change)," such as 
 
   - I'm **almost** there.
 
-In the first example, もうちょっと indicates that you're getting closer to the object you're trying to reach and you only need to stretch out your hand a little further. In the second example, もうちょっと indicates that it will take only a little more time for you to get wherever you’re heading.
+In the first example, もうちょっと indicates that you're getting closer to the object you're trying to reach and you only need to stretch out your hand a little further. In the second example, もうすぐ indicates that it will take only a little more time for you to get wherever you’re heading.
 
 As you can see in the examples above, もう〜 is sometimes translated as "almost…" It's also with noting that すぐ of もうすぐ is often omitted if the context is clear enough, as in:
 
@@ -120,11 +132,10 @@ As you can see in the examples above, もう〜 is sometimes translated as "almo
 
 Be careful though, because もう can't be combined with every adverb. It works best with ちょっと、少し、すぐ、and しばらく, as in もうちょっと, もう少し, もうすぐ, and もうしばらく.
 
-<!-- grammar-card: {"rule":"もうすぐ means 'very soon'","hint":"もう + すぐ","example":"___頂上(ちょうじょう)だよ。","answer":"もうすぐ","explanation":"もうすぐ頂上 says the summit is nearly reached."} -->
+<!-- vocab-card: {"id":"vocab-shibaraku","priority":"optional","sourceSection":"もう + Adverb","word":"しばらく","reading":"しばらく","meaning":"a while; for some time"} -->
+<!-- grammar-card: {"id":"near-summit","kind":"rule","format":"cloze","priority":"optional","sourceSection":"もう + Adverb","rule":"もうすぐ means 'very soon'","example":"Tell a companion the summit will be reached very soon: ___頂上(ちょうじょう)だよ。","answer":"もうすぐ","explanation":"The summit is nearly reached. すぐ may be omitted when the context makes this clear.","legacyAliases":[{"rule":"もうすぐ means 'very soon'","example":"___頂上(ちょうじょう)だよ。"}]} -->
 
-<!-- grammar-card: {"rule":"もう少し means 'a little more'","hint":"もう + 少し","example":"___声で言ってもらえませんか？","answer":"もう少し大きい","explanation":"もう少し大きい声 asks for a slightly louder voice."} -->
-
-<!-- grammar-card: {"rule":"もう plus a counter means 'one more'","hint":"もう + 一回","example":"___言ってもらえませんか？","answer":"もう一回","explanation":"もう一回 asks for one further repetition."} -->
+<!-- grammar-card: {"id":"adverb-selection","kind":"concept","format":"qa","priority":"optional","sourceSection":"もう + Adverb","rule":"Additive もう combines naturally with certain small-extent expressions","example":"Does additive もう combine freely with every adverb?","answer":"No. Common combinations include ちょっと, 少し, すぐ, and しばらく, referring to a small further extent or time.","explanation":"もうちょっとで届く describes almost reaching; the extra amount is the remaining distance or effort."} -->
 
 ## Beyond the Basics
 
@@ -144,7 +155,7 @@ Here, こける means "to fall down," ところ indicates that you’re at the p
 
 It's worth noting that sometimes the English "almost did…" and Japanese もう少しで〜ところだった don't mean the exact same thing. This is because some verbs in Japanese and English focus on different stages of an action.
 
-If you say "to be drowned" in English, for example, it usually indicates the tragic outcome of submersion in and the inhalation of water. The Japanese counterpart  溺(おぼ)れる, on the other hand, denotes a struggle in the water and does not necessarily imply a sad outcome.
+For example, 溺(おぼ)れる describes drowning or struggling in water and does not necessarily imply death. English "drown" is also not always fatal, so take care when translating exactly which outcome was narrowly avoided.
 
 As a result, もう少しで溺れるところだった can mean that you were on the verge of struggling in the water for whatever reason, but it's possible the struggle never actually happened.
 
@@ -152,13 +163,19 @@ As a result, もう少しで溺れるところだった can mean that you were o
 
   - I almost started struggling in the water.
 
-In English, however, saying "I almost drowned" suggests that you struggled in the water but were able to avoid the tragic outcome. To clarify this meaning in Japanese, you would need to make a compound verb by adding 死ぬ (to die) to 溺れる, like:
+If you specifically mean that you were already struggling in the water and almost died, you can make that outcome explicit by adding 死ぬ (to die) to 溺れる:
 
   - もう少しで溺れ死ぬところだった。
 
   - I almost drowned.
 
 (*Literally*: I almost died of struggling in the water.)
+
+<!-- vocab-card: {"id":"vocab-kokeru","priority":"optional","sourceSection":"もう少しで〜ところだった for \"Almost Did…\"","word":"こける","reading":"こける","meaning":"to fall down; to trip"} -->
+<!-- vocab-card: {"id":"vocab-oboreru","priority":"optional","sourceSection":"もう少しで〜ところだった for \"Almost Did…\"","word":"溺れる","reading":"おぼれる","meaning":"to drown; to struggle in water (not necessarily fatally)"} -->
+<!-- vocab-card: {"id":"vocab-obore-shinu","priority":"optional","sourceSection":"もう少しで〜ところだった for \"Almost Did…\"","word":"溺れ死ぬ","reading":"おぼれしぬ","meaning":"to die by drowning"} -->
+<!-- grammar-card: {"id":"almost-fell","kind":"rule","format":"cloze","priority":"essential","sourceSection":"もう少しで〜ところだった for \"Almost Did…\"","rule":"もう少しで plus a dictionary verb plus ところだった describes a narrowly avoided event","example":"I almost fell: もう少しでこける___。","answer":"ところだった","explanation":"The speaker approached the point of falling but did not fall."} -->
+<!-- grammar-card: {"id":"avoided-outcome-scope","kind":"concept","format":"qa","priority":"optional","sourceSection":"もう少しで〜ところだった for \"Almost Did…\"","rule":"The verb determines which event or outcome was narrowly avoided","example":"Why distinguish 溺れる from 溺れ死ぬ when describing a narrowly avoided event in water?","answer":"The first does not entail death; the second explicitly names dying by drowning.","explanation":"Choose the event you mean was avoided rather than assuming every English or Japanese drowning expression has the same endpoint."} -->
 
 ---
 

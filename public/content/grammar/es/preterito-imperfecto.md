@@ -1,5 +1,7 @@
 # Pretérito Imperfecto (Imperfect Past)
 
+<!-- vocab-inventory: {"mode":"explicit"} -->
+
 The *pretérito imperfecto* describes past actions that were **ongoing, repeated, or habitual** — things you used to do, what was happening at a moment, or what conditions were like. Unlike the indefinido, there is no defined start or end point. It paints the background rather than listing events.
 
 ## -AR Verb Endings: hablar (to speak)
@@ -13,7 +15,9 @@ The *pretérito imperfecto* describes past actions that were **ongoing, repeated
 | vosotros | **-abais** | hablabais | ah-BLAH-byss |
 | ellos / ustedes | **-aban** | hablaban | ah-BLAH-bahn |
 
-> 📌 The **yo** and **él/ella** forms are identical: context and subject always make the meaning clear.
+> 📌 The **yo** and **él/ella** forms are identical: context or an explicit subject can clarify the meaning.
+
+<!-- grammar-card: {"id":"ar-imperfect-nosotros","kind":"rule","format":"cloze","priority":"essential","sourceSection":"-AR Verb Endings: hablar (to speak)","rule":"The -ar imperfect nosotros ending is -ábamos","example":"Nosotros ___ español cada día. (hablar; past habit)","answer":"hablábamos","explanation":"The nosotros form keeps its written accent: hablábamos."} -->
 
 ## -ER / -IR Verb Endings: comer / vivir
 
@@ -29,6 +33,9 @@ The *pretérito imperfecto* describes past actions that were **ongoing, repeated
 - **Comía pizza todos los viernes** (koh-MEE-ah PEET-sah) — I used to eat pizza every Friday
 - **Vivían cerca del río** (bee-BEE-ahn) — They used to live near the river
 
+<!-- grammar-card: {"id":"er-ir-imperfect","kind":"rule","format":"cloze","priority":"essential","sourceSection":"-ER / -IR Verb Endings: comer / vivir","rule":"Regular -er and -ir imperfects share accented -ía endings","example":"Ellos ___ cerca del río. (vivir; background)","answer":"vivían","explanation":"Viv- takes ían for ellos; the accent preserves the stressed í and hiatus."} -->
+<!-- grammar-card: {"id":"shared-imperfect-form","kind":"concept","format":"qa","priority":"optional","sourceSection":"-AR Verb Endings: hablar (to speak)","rule":"Yo and él/ella/usted share imperfect forms","example":"Does hablaba alone distinguish I used to speak from she used to speak?","answer":"No. Context or an explicit subject is needed.","explanation":"The ending aba is shared by yo and third-person singular."} -->
+
 <!-- quiz: {"type":"multiple-choice","question":"What is the yo-form imperfect of 'hablar'?","options":["hablé","hablo","hablaba","hablará"],"answer":2} -->
 
 ## Only Three Irregular Verbs
@@ -40,6 +47,8 @@ The imperfect is remarkably regular — only **three** verbs are irregular:
 | yo | tú | él / ella | nosotros | vosotros | ellos |
 |----|----|-----------|----------|----------|-------|
 | era | eras | era | éramos | erais | eran |
+
+<!-- grammar-card: {"id":"ser-imperfect","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Ser (to be)","rule":"Ser has the irregular imperfect era","example":"Cuando yo ___ niño, vivía aquí. (ser)","answer":"era","explanation":"Ser uses era rather than a regular aba or ía form."} -->
 
 ### Ir (to go)
 
@@ -53,10 +62,12 @@ The imperfect is remarkably regular — only **three** verbs are irregular:
 |----|----|-----------|----------|----------|-------|
 | veía | veías | veía | veíamos | veíais | veían |
 
+<!-- grammar-card: {"id":"ver-imperfect","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Ver (to see)","rule":"Ver retains ve- before its imperfect ending","example":"Nosotros ___ la tele cada noche. (ver)","answer":"veíamos","explanation":"The imperfect is veíamos, retaining e and the accented ía sequence."} -->
+
 - **Cuando era niño, iba al parque todos los días** (EH-rah NEE-nyoh) — When I was a child, I used to go to the park every day
 - **Veíamos la tele cada noche** (beh-EE-ah-mohs) — We used to watch TV every night
 
-<!-- grammar-card: {"rule":"Use the imperfecto for habits, descriptions, and background states in the past","hint":"Think 'used to' or 'was -ing' — no clear start or end to the action","example":"Cuando era niño, ___ al fútbol todos los días. (jugar, él)","answer":"jugaba","explanation":"'Jugaba' is the imperfect of jugar (yo/él form, -aba). The phrase 'cuando era niño' plus 'todos los días' signals a childhood habit — exactly what the imperfecto expresses: 'Cuando era niño, jugaba al fútbol todos los días.'"} -->
+<!-- grammar-card: {"id":"past-habit","kind":"rule","format":"cloze","priority":"essential","sourceSection":"When to Use the Imperfecto","rule":"Use the imperfecto for habits, descriptions, and background states in the past","example":"Cuando era niño, ___ al fútbol todos los días. (jugar, él)","answer":"jugaba","explanation":"Jugar takes the regular imperfect aba without the present-tense stem change; the sentence recalls a childhood habit."} -->
 
 ## When to Use the Imperfecto
 
@@ -68,6 +79,10 @@ The imperfect is remarkably regular — only **three** verbs are irregular:
 | Age in the past | **Tenía doce años cuando llegamos.** (I was twelve when we arrived.) |
 | Time in the past | **Eran las tres de la tarde.** (It was three in the afternoon.) |
 | Polite / softened requests | **Quería un café, por favor.** (I would like a coffee, please.) |
+
+<!-- grammar-card: {"id":"past-age","kind":"rule","format":"cloze","priority":"essential","sourceSection":"When to Use the Imperfecto","rule":"Background age in the past uses imperfect tener","example":"Yo ___ doce años cuando llegamos. (tener)","answer":"tenía","explanation":"Age is presented as an ongoing background state when the arrival occurred."} -->
+<!-- grammar-card: {"id":"past-clock-time","kind":"rule","format":"cloze","priority":"optional","sourceSection":"When to Use the Imperfecto","rule":"Background clock time uses imperfect ser","example":"___ las tres cuando llamó. (It was three.)","answer":"Eran","explanation":"Eran describes the background time; the call is the completed event."} -->
+<!-- grammar-card: {"id":"polite-imperfect","kind":"concept","format":"qa","priority":"optional","sourceSection":"When to Use the Imperfecto","rule":"The imperfect can soften a present request","example":"Must Quería un café, por favor mean that the speaker no longer wants coffee?","answer":"No. It can be a polite present request: I would like a coffee, please.","explanation":"The imperfect has pragmatic uses beyond narrating past events."} -->
 
 ## Trigger Words for the Imperfecto
 
@@ -86,9 +101,16 @@ The imperfect is remarkably regular — only **three** verbs are irregular:
 - **Mientras estudiaba, sonó el teléfono** — While I was studying, the phone rang
 - **Antes vivíamos en el campo** — We used to live in the countryside
 
+<!-- vocab-card: {"id":"vocab-siempre","word":"siempre","meaning":"always","priority":"optional","sourceSection":"Trigger Words for the Imperfecto"} -->
+<!-- vocab-card: {"id":"vocab-a-menudo","word":"a menudo","meaning":"often","priority":"optional","sourceSection":"Trigger Words for the Imperfecto"} -->
+<!-- vocab-card: {"id":"vocab-todos-los-dias","word":"todos los días","meaning":"every day","priority":"optional","sourceSection":"Trigger Words for the Imperfecto"} -->
+<!-- vocab-card: {"id":"vocab-mientras","word":"mientras","meaning":"while","priority":"optional","sourceSection":"Trigger Words for the Imperfecto"} -->
+<!-- vocab-card: {"id":"vocab-antes","word":"antes","meaning":"before; in the old days","priority":"optional","sourceSection":"Trigger Words for the Imperfecto"} -->
+<!-- vocab-card: {"id":"vocab-de-nino","word":"de niño","meaning":"as a child (masculine speaker or referent)","priority":"optional","sourceSection":"Trigger Words for the Imperfecto"} -->
+
 <!-- quiz: {"type":"multiple-choice","question":"'Mientras leía el libro...' — what tense is 'leía' and why?","options":["Indefinido — it happened once","Imperfecto — it describes an ongoing background action","Present — it is happening now","Future — it is a prediction"],"answer":1} -->
 
-<!-- grammar-card: {"rule":"Only three imperfect irregulars: ser (era), ir (iba), ver (veía)","hint":"Every other Spanish verb follows -aba or -ía endings with no exceptions","example":"Cuando tenía diez años, ___ a mi abuela todos los domingos. (ir, yo)","answer":"iba","explanation":"'Ir' in the imperfect uses the irregular stem: iba, ibas, iba, íbamos, ibais, iban. 'Iba a ver a mi abuela todos los domingos' means 'I used to visit my grandmother every Sunday' — a repeated past action signaled by 'todos los domingos'."} -->
+<!-- grammar-card: {"id":"ir-imperfect","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Ir (to go)","rule":"Only three imperfect irregulars: ser (era), ir (iba), ver (veía)","legacyAliases":[{"rule":"Only three imperfect irregulars: ser (era), ir (iba), ver (veía)","example":"Cuando tenía diez años, ___ a mi abuela todos los domingos. (ir, yo)"}],"example":"Cuando tenía diez años, ___ a ver a mi abuela todos los domingos. (ir, yo)","answer":"iba","explanation":"Iba a ver a mi abuela means I used to go to see my grandmother. The infinitive ver is needed to express the visit here."} -->
 
 ## Sources
 

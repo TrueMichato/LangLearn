@@ -1,5 +1,7 @@
 # こちら・そちら・あちら・どちら
 
+<!-- vocab-inventory: {"mode":"explicit"} -->
+
 > **Source:** Content from [Tofugu](https://www.tofugu.com/japanese-grammar/kochira-sochira-achira-dochira/). For personal study.
 
 Japanese Demonstratives: こちら(Kochira) • そちら(Sochira) • あちら(Achira) • どちら(Dochira)
@@ -20,7 +22,13 @@ In general, こちら is used for a direction or a place that is close to the sp
 
 どちら is the question word that goes with this set, and it means "which one?" out of a choice of two directions, places, people, or the like. どちら can also ask "who?" or "where?" politely.
 
-こっち, そっち, あっち, and どっち are contractions of こちら, そちら, あちら, and どちら. They refer to exactly the same things, in a more casual way. The only exception is どっち, which only means "which one?" out of two choices, but not "who?" or "where?"
+こっち, そっち, あっち, and どっち are casual counterparts of こちら, そちら, あちら, and どちら. In choice questions どっち normally asks “which of two?” or “which way?” It does not replace the courteous “who?” or “where?” uses of どちら in expressions such as どちら様 or どちらまで.
+
+<!-- vocab-card: {"id":"vocab-kochira","priority":"essential","sourceSection":"The Basics","word":"こちら","reading":"こちら","meaning":"this way; here; this one; our side (polite)"} -->
+<!-- vocab-card: {"id":"vocab-sochira","priority":"essential","sourceSection":"The Basics","word":"そちら","reading":"そちら","meaning":"that way; there; that one; your side (polite)"} -->
+<!-- vocab-card: {"id":"vocab-achira","priority":"essential","sourceSection":"The Basics","word":"あちら","reading":"あちら","meaning":"over that way; over there; that side (polite)"} -->
+<!-- vocab-card: {"id":"vocab-dochira","priority":"essential","sourceSection":"The Basics","word":"どちら","reading":"どちら","meaning":"which of two; which way; where or who (polite uses)"} -->
+<!-- grammar-card: {"id":"casual-series","kind":"concept","format":"qa","priority":"optional","sourceSection":"The Basics","rule":"The っち series is more casual than the ちら series","example":"Give the casual counterparts of こちら, そちら, あちら, and どちら.","answer":"こっち, そっち, あっち, and どっち.","explanation":"They share directional and choice functions, but どっち does not carry the courteous identity-question use of どちら様."} -->
 
 ### Conceptualizing こそあど
 
@@ -69,6 +77,8 @@ Like nouns, these words can also be attached to another noun with the particle �
 
   - I'll go with **this** skirt.
 
+<!-- grammar-card: {"id":"polite-noun-link","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Patterns of Use","rule":"どちら is the polite word for 'which'","hint":"Politely ask which of these two skirts","example":"___スカートになさいますか。","answer":"どちらの","explanation":"の links the noun-like どちら to スカート. Unlike どの, どちら cannot directly modify the noun without の."} -->
+
 ### こちら, そちら, あちら for Directions and Places
 
 こちら, そちら, and あちら (こっち, そっち, and あっち) can be used to refer to a direction. In this case, they are the equivalent of "this way," "that way," or "that way over there" in English.
@@ -86,6 +96,8 @@ You can also use こっち, そっち, and あっち to say "here," "there," and
   - Oh, hey look! There is also a path **over there**.
 
 In this case, you could choose to replace あっち with あそこ, which is a こそあど word specifically for locations. The difference is that, while あそこ simply points to a location that's distant from where you are, あっち indicates you are pointing to a distant location and comparing it with at least one other option.
+
+<!-- grammar-card: {"id":"direction-versus-place","kind":"concept","format":"qa","priority":"optional","sourceSection":"こちら, そちら, あちら for Directions and Places","rule":"The ちら series can foreground a direction or side rather than just a location","example":"How can あっち differ in focus from あそこ when indicating a path?","answer":"あっち can emphasize that direction or side, often relative to another option; あそこ identifies the distant place.","explanation":"The distinction is one of focus, not a ban on using あっち for a location."} -->
 
 ### こちら, そちら, あちら for Things
 
@@ -105,6 +117,8 @@ In this example, you use casual expressions because what you are saying is self-
 
 Here, the staff would usually use the more polite こちら to pay respect to you, the customer.
 
+<!-- grammar-card: {"id":"courteous-item","kind":"rule","format":"cloze","priority":"essential","sourceSection":"こちら, そちら, あちら for Things","rule":"こちら is the polite equivalent of これ and ここ","hint":"The cake near the staff member; use the courteous this one","example":"今ですと、___のピーチのケーキが旬でおいしいですよ。","answer":"こちら","explanation":"こちらの politely points out the cake near the speaker; this series also covers people, directions and sides."} -->
+
 ### どちら for "Which One?" Out of Two Choices
 
 The question word that comes with this set is どちら (どっち), and it's used to ask "which one?" Unlike こちら, そちら, あちら, which can be used with any number of choices, どちら is only used when there are just two choices.
@@ -121,9 +135,8 @@ However, at the beginning when you were wondering which cake to pick out of a wi
 
   - I wonder **which** one to get.
 
-<!-- grammar-card: {"rule":"こちら is the polite equivalent of これ and ここ","hint":"this one, polite","example":"今ですと、___のピーチのケーキが旬でおいしいですよ。","answer":"こちら","explanation":"こちら points to what is near the speaker in a courteous register."} -->
-
-<!-- grammar-card: {"rule":"どちら is the polite word for 'which'","hint":"which, polite","example":"___スカートになさいますか。","answer":"どちらの","explanation":"どちらの asks politely which skirt, with の linking it to the noun."} -->
+<!-- grammar-card: {"id":"two-or-many","kind":"concept","format":"qa","priority":"essential","sourceSection":"どちら for \"Which One?\" Out of Two Choices","rule":"Choice どちら normally contrasts two while どれ selects among three or more","example":"Which question word normally fits choosing between two cakes, rather than a whole display?","answer":"どちら, or casual どっち; use どれ for the wider selection.","explanation":"This restriction concerns the which-one choice use, not polite どちら meaning where or who."} -->
+<!-- vocab-card: {"id":"vocab-docchi","priority":"optional","sourceSection":"どちら for \"Which One?\" Out of Two Choices","word":"どっち","reading":"どっち","meaning":"which one of two; which way (casual)"} -->
 
 ## Beyond the Basics
 
@@ -155,6 +168,11 @@ In formal speaking or writing, you'd switch こっち, そっち, and あっち 
 
   - Thankfully, **everyone here** is doing well.
 
+<!-- vocab-card: {"id":"vocab-kocchi","priority":"optional","sourceSection":"こちら, そちら, あちら for People","word":"こっち","reading":"こっち","meaning":"this way; here; my or our side (casual)"} -->
+<!-- vocab-card: {"id":"vocab-socchi","priority":"optional","sourceSection":"こちら, そちら, あちら for People","word":"そっち","reading":"そっち","meaning":"that way; there; your side (casual)"} -->
+<!-- vocab-card: {"id":"vocab-acchi","priority":"optional","sourceSection":"こちら, そちら, あちら for People","word":"あっち","reading":"あっち","meaning":"over there; that side (casual)"} -->
+<!-- grammar-card: {"id":"distant-group","kind":"rule","format":"cloze","priority":"optional","sourceSection":"こちら, そちら, あちら for People","rule":"あっち is the casual form of あちら","hint":"A third group, not our side or your side; casual","example":"___もみんな元気にしてるみたいだよ。","answer":"あっち","explanation":"あっち can refer to that group even when they are out of sight. こっち and そっち can represent our and your side."} -->
+
 ### どちら for "Who?" or "Where?"
 
 Both どちら and どっち can mean "which person?" or "which place?" out of two choices.
@@ -181,11 +199,13 @@ However, only どちら can be used to directly ask "who?" or "where?" politely.
 
   - **Where** are you off to?
 
+<!-- grammar-card: {"id":"polite-identity","kind":"rule","format":"cloze","priority":"essential","sourceSection":"どちら for \"Who?\" or \"Where?\"","rule":"どちら様 politely asks identity, not a binary choice","example":"May I ask who this is? ___様ですか。","answer":"どちら","explanation":"This is a courteous who question. どっち様 is not the casual equivalent; どなた is another polite who word."} -->
+
 ### こちら, そちら, あちら with 〜こそ
 
 〜こそ emphasizes the word that comes before it. It's often used with こちら, そちら, and あちら (こっち, そっち, あっち) when they are referring to people.
 
-This combination of words is only used to express opposition to what someone else has said or done. For example, imagine you quarrel with your partner and they ask you for an apology. In this case, your partner can't refer to you as そっちこそ because they are the first one to ask for the apology. In this case, they may just say:
+This combination responds by emphasizing whose side something applies to. It can express opposition, but also reciprocal thanks or apology. For example, imagine your partner is the first to demand an apology. Without a prior comparison to respond to, they may simply say:
 
   - 謝れよ！
 
@@ -221,6 +241,9 @@ If someone says よろしくお願いします to you, you may say よろしく�
 
 You can also say こっちの方こそ or こちらの方こそ in a more formal conversation.
 
+<!-- vocab-card: {"id":"vocab-kochirakoso","priority":"optional","sourceSection":"こちら, そちら, あちら with 〜こそ","word":"こちらこそ","reading":"こちらこそ","meaning":"likewise; it is I who should say so (courteous response)"} -->
+<!-- grammar-card: {"id":"reciprocal-koso","kind":"concept","format":"qa","priority":"optional","sourceSection":"こちら, そちら, あちら with 〜こそ","rule":"こそ can redirect emphasis reciprocally rather than only disagree","example":"Does こちらこそ、ありがとうございます reject the other person's thanks?","answer":"No. It reciprocates them, emphasizing that I am the one who should be thanking you.","explanation":"そっちこそ can oppose a demand, but こちらこそ also supports kind reciprocal replies and よろしくお願いします."} -->
+
 ### こちらのもの
 
 You've learned こちら can indicate you, or the people in your group, when you are addressing others. With the particle の and もの (thing), you can create this expression: こちらのもの.
@@ -238,6 +261,9 @@ For example, imagine you just found out Michael Jordan is joining your basketbal
 I hope this announcement wasn't just a jōdan, or 冗談 (joke), and Michael Jordan really joins your team!
 
 Finally, you can replace こちらのもの with こっちのもの in a casual conversation.
+
+<!-- vocab-card: {"id":"vocab-kochiranomono","priority":"optional","sourceSection":"こちらのもの","word":"こちらのもの","reading":"こちらのもの","meaning":"ours; in our hands (confident of success)"} -->
+<!-- grammar-card: {"id":"ours-success","kind":"concept","format":"qa","priority":"optional","sourceSection":"こちらのもの","rule":"こちらのもの can express confidence that success is on our side","example":"What does 勝負はこちらのものだ express beyond literal ownership?","answer":"Confidence that we will win or that the contest is as good as ours.","explanation":"Casual こっちのもの has the same idiomatic idea in a less formal register."} -->
 
   
 
@@ -412,8 +438,6 @@ by 金水 敏 and 田窪 行則
 <!-- quiz: {"type":"multiple-choice","question":"What does \"**こちら**と**そちら**、**どちら**がいいですか？\" mean?","options":["Out of **this one** and **that one**, **which one** would you like?","Let's go **over there**.","I'll go with **this** skirt.","Is it **this** way or **that** way?"],"answer":0} -->
 
 <!-- quiz: {"type":"multiple-choice","question":"What does \"**こちらの**スカートにします。\" mean?","options":["I'll go with **this** skirt.","Let's go **over there**.","Out of **this one** and **that one**, **which one** would you like?","Is it **this** way or **that** way?"],"answer":0} -->
-
-<!-- grammar-card: {"rule":"あっち is the casual form of あちら","hint":"over there, casual","example":"___もみんな元気にしてるみたいだよ。","answer":"あっち","explanation":"あっち refers to the distant group in relaxed, everyday speech."} -->
 
 ## Sources
 

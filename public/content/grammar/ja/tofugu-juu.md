@@ -1,5 +1,7 @@
 # 中 (じゅう) — Throughout / All Over
 
+<!-- vocab-inventory: {"mode":"explicit"} -->
+
 > **Source:** Content from [Tofugu](https://www.tofugu.com/japanese-grammar/juu/). For personal study.
 
 〜中（じゅう）for "Within"
@@ -33,6 +35,13 @@ Note: We also have separate grammar pages for 〜 中(ちゅう) and 〜 中(な
 
 ### A Word For An Area + 中
 
+<!-- grammar-card: {"id":"whole-house","kind":"rule","format":"cloze","priority":"essential","sourceSection":"A Word For An Area + 中","rule":"中 after a place means all over it","hint":"Use the suffix for the whole area.","example":"家___ピッカピカに掃除するぞー！","answer":"中","explanation":"家中 is read うちじゅう here: throughout the whole house, not just its middle."} -->
+
+<!-- vocab-card: {"id":"vocab-uchijuu","priority":"essential","sourceSection":"A Word For An Area + 中","word":"家中","reading":"うちじゅう","meaning":"the whole house; throughout the house"} -->
+<!-- vocab-card: {"id":"vocab-sokorajuu","priority":"optional","sourceSection":"A Word For An Area + 中","word":"そこら中","reading":"そこらじゅう","meaning":"all over the place; everywhere around there"} -->
+<!-- grammar-card: {"id":"social-area","kind":"concept","format":"qa","priority":"optional","sourceSection":"A Word For An Area + 中","rule":"The range of じゅう can be a social group rather than a physical area","example":"In クラス中で噂された, does 中 identify just the middle seat in the classroom?","answer":"No. It indicates that the rumor spread throughout the class as a group.","explanation":"The boundary can be the members of a class, not only a physical enclosure."} -->
+<!-- grammar-card: {"id":"sokoira-register","kind":"concept","format":"qa","priority":"optional","sourceSection":"A Word For An Area + 中","rule":"そこいら中 is an older-sounding variant of そこら中","example":"What register difference does this lesson note between そこいら中 and そこら中?","answer":"そこいら中 has a somewhat old-fashioned feel; both refer to all over the place.","explanation":"The variant does not change the whole-area meaning."} -->
+
 First, let's check out the spatial use of  中(じゅう). As a quick review, when  中(じゅう) follows a word for a particular area, it indicates "everything *within* that area."
 
 Imagine you decide to do some spring cleaning and are determined to make the entire house sparkle. In this situation, you can combine the words  家(いえ) (house) and  中(じゅう), as in  家中(うちじゅう), and say:
@@ -63,6 +72,12 @@ Sometimes, this expression is also written as そこいら 中(じゅう), but t
 
 ### A Word For A Period of Time + 中
 
+<!-- vocab-card: {"id":"vocab-hitobanjuu","priority":"optional","sourceSection":"A Word For A Period of Time + 中","word":"一晩中","reading":"ひとばんじゅう","meaning":"all night"} -->
+<!-- vocab-card: {"id":"vocab-ichinichijuu","priority":"essential","sourceSection":"A Word For A Period of Time + 中","word":"一日中","reading":"いちにちじゅう","meaning":"all day"} -->
+<!-- vocab-card: {"id":"vocab-zutto","priority":"optional","sourceSection":"A Word For A Period of Time + 中","word":"ずっと","reading":"ずっと","meaning":"all the time; continuously (in this temporal use)"} -->
+<!-- grammar-card: {"id":"vacation-readings","kind":"concept","format":"qa","priority":"essential","sourceSection":"A Word For A Period of Time + 中","rule":"じゅう emphasizes full temporal coverage while ちゅう identifies a period","example":"Does 夏休み中 have the same emphasis when read なつやすみちゅう and なつやすみじゅう?","answer":"No. ちゅう means during the vacation; じゅう emphasizes all through it.","explanation":"Context and established collocations choose the reading; not every period word accepts either suffix."} -->
+<!-- grammar-card: {"id":"duration-collocations","kind":"rule","format":"qa","priority":"optional","sourceSection":"A Word For A Period of Time + 中","rule":"An arbitrary measured duration does not take じゅう directly","example":"How can you express throughout three hours without directly attaching 中 to 三時間?","answer":"三時間の間 (さんじかんのあいだ), optionally 三時間の間中 (さんじかんのあいだじゅう).","explanation":"Learn accepted combinations. セール期間中 can be read ちゅう for during the sale period; that does not make it an unrestricted じゅう expression."} -->
+
 Next, let's check out the temporal use of  中(じゅう). As you learned earlier, when  中(じゅう) follows a time-specific word, it signifies "all throughout that period of time."
 
 For example, if you stayed up all night playing video games, you can combine  一晩(ひとばん) (one night) and  中(じゅう), as in  一晩中(ひとばんじゅう), and say:
@@ -89,7 +104,7 @@ If you aren't familiar with 〜 中(ちゅう), you can learn more about it here
 
 Finally, 〜 中(じゅう) can't directly follow just any word that signifies a period of time.
 
-For example, you can't really say 三時間中 (throughout the three hours), セール期間中 (a sale period), or 映画中 (throughout the movie). To say that, you have to add 〜の間 (during…) and 中 is usually omitted.
+For example, 三時間中, セール期間中, and 映画中 are not ordinary direct-suffix expressions for "throughout" with the reading じゅう. セール期間中 is perfectly usable with ちゅう to mean "during the sale period"; that is a different reading and emphasis. To express the full duration, use 〜の間 or 〜の間中, as below.
 
   - 三時間**の間**(**中**)
 
@@ -105,11 +120,17 @@ For example, you can't really say 三時間中 (throughout the three hours), セ
 
 Although the use of each  中(じゅう) tends to follow certain trends, the "rule" as to which 中 can stick to which word isn't really clear cut, so you'll need to learn them by heart. But don't worry! If you keep practicing, you'll eventually get used to the common patterns and memorize them without knowing. 😊
 
-<!-- grammar-card: {"rule":"中 after a place means all over it","hint":"家 + ?","example":"家___ピッカピカに掃除するぞー！","answer":"中","explanation":"家中 means throughout the whole house, and is read じゅう rather than ちゅう."} -->
-
 ## Beyond The Basics
 
 ### 一年中 VS. 年中
+
+<!-- grammar-card: {"id":"all-year","kind":"rule","format":"cloze","priority":"optional","sourceSection":"一年中 VS. 年中","rule":"中 after a time span means all through it","hint":"Use the expression with 一年 for all year round.","example":"私が住んでいるところは、___夏だ。","answer":"一年中","explanation":"一年中 (いちねんじゅう) means all year round; not every arbitrary duration noun takes じゅう directly."} -->
+
+<!-- vocab-card: {"id":"vocab-ichinenjuu","priority":"optional","sourceSection":"一年中 VS. 年中","word":"一年中","reading":"いちねんじゅう","meaning":"all year round"} -->
+<!-- vocab-card: {"id":"vocab-nenjuu","priority":"optional","sourceSection":"一年中 VS. 年中","word":"年中","reading":"ねんじゅう","meaning":"all the time; throughout the year"} -->
+<!-- vocab-card: {"id":"vocab-nen-gara-nenjuu","priority":"optional","sourceSection":"一年中 VS. 年中","word":"年がら年中","reading":"ねんがらねんじゅう","meaning":"all the time; constantly (emphatic)"} -->
+<!-- grammar-card: {"id":"year-constant-contrast","kind":"concept","format":"qa","priority":"optional","sourceSection":"一年中 VS. 年中","rule":"年中 can generalize from a whole year to constant recurrence","example":"What additional everyday sense can 年中 have compared with the literal all-year scope of 一年中?","answer":"It can mean constantly or all the time, rather than focusing on a particular year's span.","explanation":"年がら年中 adds emphasis to that constant-recurrence sense."} -->
+<!-- grammar-card: {"id":"nenchuu-homograph","kind":"concept","format":"qa","priority":"optional","sourceSection":"一年中 VS. 年中","rule":"The same written 年中 has a distinct kindergarten reading","example":"What does 年中 mean when read ねんちゅう rather than ねんじゅう?","answer":"The middle class or year of a three-year Japanese kindergarten program, typically for four- to five-year-olds.","explanation":"Do not assign the throughout reading or meaning mechanically to every written 中."} -->
 
 By now, you can probably guess what  一年中(いちねんじゅう) means. It's a combination of 一年 (one year) and 中, so it means "all throughout the year." For instance, if you live in a tropical location that feels like summer all year-round, you can say:
 
@@ -173,8 +194,6 @@ by 違い.site
 <!-- quiz: {"type":"multiple-choice","question":"What does \"クラス**中**で噂された。\" mean?","options":["The rumor was spread **throughout** the class.","I'm going to clean **the whole** house, **from top to bottom**, and make it sparkle.","Look out! There are cops **everywhere**!","I played video games **all** night."],"answer":0} -->
 
 <!-- quiz: {"type":"multiple-choice","question":"What does \"気をつけろ！そこら**中**に警察がいるぞ！\" mean?","options":["Look out! There are cops **everywhere**!","I'm going to clean **the whole** house, **from top to bottom**, and make it sparkle.","The rumor was spread **throughout** the class.","I played video games **all** night."],"answer":0} -->
-
-<!-- grammar-card: {"rule":"中 after a time span means all through it","hint":"一年 + ?","example":"私が住んでいるところは、___夏だ。","answer":"一年中","explanation":"一年中 means all year round — summer never lets up there."} -->
 
 ## Sources
 

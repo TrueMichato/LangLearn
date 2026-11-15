@@ -3,9 +3,11 @@ import {
   buildGrammarCardFields,
   fillBlank,
   hasBlank,
+  parseGrammarCardSources,
   type GrammarCardSource,
 } from '../lib/grammar-cards';
 import { parseLessonReviewItems } from '../lib/lesson-capture';
+import { clozeAnswerRepeatsFrame } from './helpers/grammar-retention';
 
 /**
  * Every `grammar-card` block shipped in the repository, checked through the real
@@ -52,8 +54,6 @@ function lessonTitles(): Map<string, string> {
   return titles;
 }
 
-const BLOCK_RE = /<!--\s*grammar-card:\s*(.*?)\s*-->/g;
-
 function allBlocks(): Block[] {
   const titles = lessonTitles();
   const blocks: Block[] = [];
@@ -63,11 +63,9 @@ function allBlocks(): Block[] {
     const lang = parts[parts.length - 2];
     const source = `${lang}/${file}`;
     const title = titles.get(`${lang}/${file.replace(/\.md$/, '')}`) ?? '';
-    BLOCK_RE.lastIndex = 0;
-    let match: RegExpExecArray | null;
-    while ((match = BLOCK_RE.exec(markdown))) {
+    for (const card of parseGrammarCardSources(markdown).items) {
       blocks.push({
-        ...(JSON.parse(match[1]) as Omit<Block, 'source' | 'lang' | 'title'>),
+        ...card,
         source,
         lang,
         title,
@@ -75,10 +73,6 @@ function allBlocks(): Block[] {
     }
   }
   return blocks;
-}
-
-function occurrences(haystack: string, needle: string): number {
-  return haystack.split(needle).length - 1;
 }
 
 const BLOCKS = allBlocks();
@@ -132,23 +126,15 @@ describe('shipped grammar-card blocks', () => {
     expect(failures).toEqual([]);
   });
 
-  it('never repeat the prompt stem more often than the prompt itself does', () => {
-    // This is the exact `私＿＿学生です。` + `私は学生です。` failure: naive
-    // substitution repeated the stem on both sides of the blank. Prompts that
-    // legitimately repeat their own stem (`O Rio de Janeiro ___ ... O Rio de
-    // Janeiro ___ ...`) are compared against themselves rather than a fixed
-    // count, so they are not mistaken for the bug.
+  it('never put the complete cloze frame inside its missing-span answer', () => {
+    // A filled 私は学生です。 is not the missing は in 私＿＿学生です。.
+    // Shared letters alone prove nothing: a ___ → cincea and
+    // student → studențesc are valid.
     const failures = BLOCKS.filter((b) => {
       const prompt = b.example ?? '';
       if (b.format === 'qa' || !hasBlank(prompt)) return false;
-      // No minimum stem length: the original Japanese failure had a one
-      // character stem, and comparing against the prompt's own count already
-      // tolerates a stem that legitimately recurs.
-      const stem = prompt.split(/[_＿]{2,}/)[0].trim();
-      if (!stem) return false;
-      const probe = stem.slice(0, Math.min(6, stem.length));
       const token = buildGrammarCardFields(b)?.word ?? '';
-      return occurrences(fillBlank(prompt, token), probe) > occurrences(prompt, probe);
+      return clozeAnswerRepeatsFrame(prompt, token);
     }).map((b) => `${b.source}: ${b.example} / ${b.answer}`);
     expect(failures).toEqual([]);
   });

@@ -1,5 +1,7 @@
 # てある — Resulting State
 
+<!-- vocab-inventory: {"mode":"explicit"} -->
+
 > **Source:** Content from [Tofugu](https://www.tofugu.com/japanese-grammar/tearu/). For personal study.
 
 〜てある for When Something Is Done (and Left That Way)
@@ -41,6 +43,10 @@ Let's say the memo was left by your partner. It says そうじしてある meani
 
 Catch the drift? SOMEone did SOMEthing, and left it that way for SOME reason…!
 
+<!-- vocab-card: {"id":"vocab-oku","word":"置く","reading":"おく","meaning":"to put; to place","priority":"optional","sourceSection":"The Basics"} -->
+<!-- vocab-card: {"id":"vocab-souji","word":"掃除","reading":"そうじ","meaning":"cleaning","priority":"optional","sourceSection":"The Basics"} -->
+<!-- grammar-card: {"id":"result-and-agency","kind":"concept","format":"qa","priority":"essential","sourceSection":"The Basics","rule":"てある presents a remaining result as due to someone's earlier action","example":"What does メモが置いてある imply beyond the mere existence of a memo?","answer":"Someone placed it there and left it in that state, usually for a purpose.","explanation":"The person and precise purpose need not be known or stated."} -->
+
 This unique nuance can be applied in a number of other situations as well; you can give a heads-up to others about an odd situation you created and left for some purpose, or you can even generate an air of purposeful ambiguity that implies a hesitation or unwillingness to assign blame, too.
 
 Either way, 〜てある has a convenient catch-all sort of function that can be applied in a lot of different situations. We'll go into more detail about all the interesting functions 〜てある has on this page, so keep reading!
@@ -81,6 +87,10 @@ The てある form can then itself be conjugated like other godan verbs. Here ar
     
   
 
+<!-- grammar-card: {"id":"result-polite","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Conjugating Verbs to Take 〜てある","rule":"Polite てある uses てあります","example":"Make メモが置いてある polite: メモが置い___。","answer":"てあります","explanation":"Conjugate the auxiliary ある to あります."} -->
+<!-- grammar-card: {"id":"result-past","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Conjugating Verbs to Take 〜てある","rule":"A past resultant state uses てあった","example":"メモが置い___。 (A memo had been left there; plain past.)","answer":"てあった","explanation":"The state held at the past reference point."} -->
+<!-- grammar-card: {"id":"result-negative","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Conjugating Verbs to Take 〜てある","rule":"The plain negative of auxiliary ある is ない","example":"メモはまだ置い___。 (The memo has not been placed there yet; plain form.)","answer":"てない","explanation":"The table's polite counterpart is てありません; the past negative is てなかった."} -->
+
 ### Patterns of Use
 
 In a sentence with 〜てある, you commonly use particle は, が, or を to denote the thing that has been affected by the action.
@@ -99,6 +109,8 @@ For example, if your colleague asks you about the location of a memo, you can us
 
 In this case, it's obvious that your colleague knows about the existence of a memo as they've just asked you where it is. So you use は to refer to the topic of the memo, saying "As for the memo…" and explain that it's on the desk.
 
+<!-- grammar-card: {"id":"known-topic-ha","kind":"concept","format":"qa","priority":"optional","sourceSection":"〜は〜てある","rule":"は frames a known affected thing as the topic","example":"Why is は natural in メモはデスクに置いてある when a colleague has just asked where the memo is?","answer":"The memo is already a shared topic; は frames the reply as as for that memo.","explanation":"The remaining state is the location in which someone left it."} -->
+
 #### 〜が〜てある
 
 Particle が is used to mark the subject of a sentence. So when using ​​が with 〜てある, it calls attention to the thing that someone left in a certain state in a way that simply describes the situation before your eyes with no particular implication. It's a good way to express a sense of realization or recognition.
@@ -111,6 +123,8 @@ For example, the sentence below sounds as if you've just noticed that there is a
 
 (*Nuance*: Oh! A memo has been left on the desk.)
 
+<!-- grammar-card: {"id":"noticed-subject-ga","kind":"concept","format":"qa","priority":"optional","sourceSection":"〜が〜てある","rule":"が can introduce a newly noticed result","example":"What focus does メモがデスクに置いてある have when you first notice the memo?","answer":"It draws attention to a memo having been left on the desk as a newly recognized situation.","explanation":"Changing the information structure does not remove てある's implication of prior human action."} -->
+
 #### 〜を〜てある
 
 Particle を is an object marker. When を is used with 〜てある, it stresses that the subject has created the situation *on purpose*. The subject is often the (unmentioned) speaker themselves. This can be inferred because the subject — like 私 ("I") — tends to be omitted when you are talking about your own action or an action you've been involved in. In other words, when you hear sentences using 〜を〜てある, even though the subject may not be explicitly stated, most likely the speaker is talking about something they themself have *intentionally* done.
@@ -122,6 +136,8 @@ So in the example below, メモ (memo) is the object that someone has placed on 
   - The memo is on the desk.
 
 (*Nuance*: I/we placed and left the memo on the desk.)
+
+<!-- grammar-card: {"id":"object-wo-agency","kind":"concept","format":"qa","priority":"essential","sourceSection":"〜を〜てある","rule":"をてある keeps the affected thing as an object and foregrounds preparatory agency","example":"Does を in メモをデスクに置いてある force the unspoken agent to be the speaker?","answer":"No. The speaker or their group is often understood, but context can supply another agent; を emphasizes having intentionally taken care of the action.","explanation":"It differs in focus from simply noticing メモが置いてある."} -->
 
 #### Noun Modification
 
@@ -147,6 +163,8 @@ Anticlimactic, am I right?
 
 But now you can see how that works!
 
+<!-- grammar-card: {"id":"relative-clause","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Noun Modification","rule":"てある can modify the following noun without an extra な","example":"デスクに置いて___メモ。 (the memo left on the desk)","answer":"ある","explanation":"The complete relative clause 置いてある comes directly before メモ, without an extra な."} -->
+
 #### Transitivity With 〜てある
 
 〜てある implies *someone* has caused a situation, so you can only pair it up with a transitive verb.
@@ -162,6 +180,10 @@ To add the nuance "someone left it open," you can combine the transitive verb  �
 In this example, you don't know who opened the door and your focus is more on the door *being* open. When not focusing on *who* did *what*, you'd usually go with an intransitive verb, like ドアが 開(あ)く (The door opens).
 
 However, 〜てある always implies that someone had a direct hand in the action earlier, which conflicts with the intransitive nature of  開(あ)く. Thus, 〜てある only attaches to a transitive verb.
+
+<!-- vocab-card: {"id":"vocab-akeru","word":"開ける","reading":"あける","meaning":"to open something","priority":"optional","sourceSection":"Transitivity With 〜てある"} -->
+<!-- vocab-card: {"id":"vocab-aku","word":"開く","reading":"あく","meaning":"to open; to become open","priority":"optional","sourceSection":"Transitivity With 〜てある"} -->
+<!-- grammar-card: {"id":"transitive-result-application","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Transitivity With 〜てある","rule":"An intentionally opened door uses transitive 開ける before てある","example":"ドアが___てある。 (Someone opened it and left it open; use 開ける.)","answer":"開け","explanation":"The verb is あける, not intransitive あく, even though ドア is marked with が."} -->
 
 ### 〜てある for Good Surprises (and Expressing Gratitude for Them)
 
@@ -184,6 +206,8 @@ Next, say it's a snowy morning and you expect to have to shovel the driveway bef
   - Oh, the snow has been shoveled.
 
 In this case, you don't know who did it, but you're sure someone did it and you just are not 100% sure *who* did the nice thing for you. But keep in mind that 〜てある can sometimes make a sentence sound standoffish so if you want to acknowledge the person who did it, it's more common to use 〜てくれる as in 「あ、お弁当、作っ**てくれたんだ**。」to mean "Oh, you made a bento for me!" or "Oh, he made a bento for me!" — depending on who you know did it.
+
+<!-- grammar-card: {"id":"gratitude-not-entailed","kind":"concept","format":"qa","priority":"optional","sourceSection":"〜てある for Good Surprises (and Expressing Gratitude for Them)","rule":"てある can suggest appreciation without explicitly crediting a benefactor","example":"If you want to acknowledge the person who made your bento for you, why might 作ってくれたんだ be warmer than 作ってある?","answer":"てくれる explicitly frames the action as a favor for you; てある focuses on the resulting prepared state.","explanation":"Discovering that state can convey gratitude in context, but gratitude is not the construction's fixed meaning."} -->
 
 ### 〜てある for Showing Initiative
 
@@ -213,6 +237,9 @@ You can also use 〜てある to show that you're impressed with someone else's 
 
 Here, もう〜てある indicates that your assistant has done the task ahead of schedule and demonstrated their initiative. It shows you are impressed and pleased with the prompt work, just like the situations described in 〜てある for Good Suprises.
 
+<!-- vocab-card: {"id":"vocab-sudeni","word":"既に","reading":"すでに","meaning":"already","priority":"optional","sourceSection":"〜てある for Showing Initiative"} -->
+<!-- grammar-card: {"id":"already-prepared","kind":"concept","format":"qa","priority":"optional","sourceSection":"〜てある for Showing Initiative","rule":"もう or 既に with てある can reassure that preparation is complete","example":"What reassurance does 場所は既におさえてあります offer about the party?","answer":"The venue has already been secured, so that preparation has been taken care of.","explanation":"The current ready state is foregrounded, rather than a plan to reserve later."} -->
+
 ### 〜てある for Unusual Situations
 
 Another situation in which people might use 〜てある is when describing an unusual state that they suspect has been intentionally created by somebody else.
@@ -241,6 +268,8 @@ Your mom could also use 〜てある to notify you that the situation is intenti
 
 By using 〜てある, she can convey that she is leaving the banana there on purpose. Maybe it's part of an initiation ritual for the banana cult she just joined or something. ¯_(ツ)_/¯ The "don't touch it," isn't explicitly stated, but it's implied in the message.
 
+<!-- grammar-card: {"id":"unusual-left-state","kind":"rule","format":"cloze","priority":"essential","sourceSection":"〜てある for Unusual Situations","rule":"てある marks a state someone deliberately left behind","example":"真夏なのに、暖房がつけ___。","answer":"てある","explanation":"The heating is on because someone turned it on and left it so; the speaker can wonder why without knowing the person or purpose."} -->
+
 ### 〜てある for Blaming Someone for Their Actions
 
 You can also use 〜てある to call people out for their (perhaps innocent or unintentional, yet still blame-worthy) actions.
@@ -255,7 +284,7 @@ For example, imagine you have an untidy roommate who always leaves their dirty c
 
 Notice 〜っぱなしにする is used here. It's an expression that adds the nuance of "leaving things as is," or "leaving things unfinished," and it perfectly matches the objectionable tone we are going for here. For this reason, it's often paired up with 〜てある to blame someone for their inconsiderate action.
 
-<!-- grammar-card: {"rule":"てある marks a state someone deliberately left behind","hint":"つける + ある","example":"真夏なのに、暖房がつけ___。","answer":"てある","explanation":"つけてある says someone turned the heating on and left it that way."} -->
+<!-- grammar-card: {"id":"blame-as-left-state","kind":"concept","format":"qa","priority":"optional","sourceSection":"〜てある for Blaming Someone for Their Actions","rule":"っぱなしにしてある can present an objectionable state left behind","example":"In また服が脱ぎっぱなしにしてある, must the clothes have been left for a useful planned purpose?","answer":"No. The speaker is blaming someone for leaving them as they are; a helpful purpose is not required in this complaint.","explanation":"The result is attributed to someone's behavior even if that person was merely careless."} -->
 
 ## Beyond the Basics
 
@@ -279,6 +308,9 @@ If you use 〜ている, it simply describes the door being open without further
 
   - The door is open.
 
+<!-- grammar-card: {"id":"intransitive-plain-state","kind":"rule","format":"cloze","priority":"essential","sourceSection":"〜てある VS 〜ている","rule":"ている with an intransitive verb describes a plain state","example":"ドアが開(あ)い___。","answer":"ている","explanation":"開いている states that the door is open without itself asserting whether someone opened it."} -->
+<!-- grammar-card: {"id":"aru-iru-agency-contrast","kind":"concept","format":"qa","priority":"essential","sourceSection":"〜てある VS 〜ている","rule":"The open-door contrast separates an attributed action from a neutral state","example":"What differs between ドアが開けてある and ドアが開いている?","answer":"The first implies someone opened and left the door that way; the second simply describes it as open.","explanation":"The former uses transitive あける, the latter intransitive あく."} -->
+
 Notice the verbs in the above examples are also slightly different. The example with 〜てある is **開け**てある while the one with 〜ている is **開い**ている. The first verb is the transitive verb  開(あ)ける and the second is the intransitive verb  開(あ)く.
 
 As mentioned earlier, when not focusing on *who* did *what*, you'd usually go with an intransitive verb. However, 〜てある can only attach to the transitive verb because it implies someone did something earlier and left it that way. On the other hand, 〜ている doesn't have that restriction, so it can take the intransitive verb to simply depict that the door is open.
@@ -294,6 +326,8 @@ Then, what's the difference between the two?
 Although 〜を 開(あ)ける1 indicates that a specific person (you) is leaving the door open, 〜ている still simply conveys the situation as-is. So the ている version sounds like you are just explaining that you opened the door and left it that way, and that's what's going on right now. 2
 
 On the other hand, 〜てある emphasizes your intention behind the situation, like "I've opened the door and left it that way because I intended to do so." So this version is commonly used when you want to give a heads-up to others, like "please be aware that this situation may be unusual, but I'm purposefully leaving it that way."
+
+<!-- grammar-card: {"id":"transitive-iru-context","kind":"concept","format":"qa","priority":"optional","sourceSection":"〜てある VS 〜ている","rule":"Transitive ている can describe an action in progress or a maintained state","example":"Does ドアを開けている always mean that the door is already being kept open?","answer":"No. Context can also make it mean that someone is in the process of opening the door.","explanation":"てある instead foregrounds the remaining result of the earlier action."} -->
 
 ### When Transitive Verbs Don't Work With 〜てある
 
@@ -314,6 +348,8 @@ For example, say you visit a friend's house. You walk up to the door and you not
   - The door is in the state of having been knocked upon to the degree of being damaged.
 
 Since it's not a typical situation, this sentence still sounds slightly odd without some very specific context. For example, if your friend were consulting you about strange occurrences, like a ghost trying to open the door to their room every night, then noticing this unique state of the door and describing it with 〜てある may sound more appropriate.
+
+<!-- grammar-card: {"id":"result-restriction","kind":"concept","format":"qa","priority":"essential","sourceSection":"When Transitive Verbs Don't Work With 〜てある","rule":"Transitivity alone does not ensure a natural てある result","example":"Why is ドアがノックしてある odd in an ordinary situation?","answer":"Ordinary knocking does not leave a relevant altered state of the door to describe.","explanation":"A very specific context such as visible damage can make a resulting-state interpretation more plausible; this is not an everyday recommended phrase."} -->
 
   
 
@@ -401,8 +437,6 @@ by Nerida Jarkey
 <!-- quiz: {"type":"multiple-choice","question":"What does \"メモ**が**デスクに置い**てある**。\" mean?","options":["A memo is on the desk.","The memo is on the desk.","Someone is putting a memo on the desk.","the memo that is on the desk"],"answer":0} -->
 
 <!-- quiz: {"type":"multiple-choice","question":"What does \"メモ**を**デスクに置い**てある**。\" mean?","options":["The memo is on the desk.","A memo is on the desk.","the memo that is on the desk","The door is open (because someone left it open)."],"answer":0} -->
-
-<!-- grammar-card: {"rule":"ている with an intransitive verb describes a plain state","hint":"開く + いる","example":"ドアが開(あ)い___。","answer":"ている","explanation":"開いている just says the door is open, with no hint that anyone opened it."} -->
 
 ## Sources
 

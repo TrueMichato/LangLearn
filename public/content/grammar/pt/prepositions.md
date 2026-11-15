@@ -1,10 +1,14 @@
 # Prepositions & Contractions (de+o=do, em+a=na)
 
-Prepositions in Portuguese work similarly to English, but there's a twist: they **contract** (merge) with articles and some pronouns to form new words. These contractions are mandatory — you must use them every time. Once you learn the patterns, they become automatic.
+<!-- vocab-inventory: {"mode":"explicit"} -->
+
+Prepositions in Portuguese work similarly to English, but there's a twist: some **contract** (merge) with articles and pronouns to form new words. The definite-article and demonstrative contractions taught below are normally required within a noun phrase; indefinite-article contractions vary by register.
 
 ## Essential Prepositions
 
 ### De (jee) — Of, From
+
+<!-- vocab-card: {"id":"vocab-de","word":"de","meaning":"of; from","priority":"essential","sourceSection":"De (jee) — Of, From"} -->
 
 **De** indicates origin, possession, material, or content:
 
@@ -15,6 +19,8 @@ Prepositions in Portuguese work similarly to English, but there's a twist: they 
 
 ### Em (ayn) — In, On, At
 
+<!-- vocab-card: {"id":"vocab-em","word":"em","meaning":"in; on; at","priority":"essential","sourceSection":"Em (ayn) — In, On, At"} -->
+
 **Em** indicates location or time:
 
 - **Eu moro em São Paulo** (eh-oo moh-roo ayn sow pow-loo) — I live in São Paulo
@@ -24,6 +30,8 @@ Prepositions in Portuguese work similarly to English, but there's a twist: they 
 
 ### A (ah) — To, At
 
+<!-- vocab-card: {"id":"vocab-a","word":"a","meaning":"to; at (preposition)","priority":"optional","sourceSection":"A (ah) — To, At"} -->
+
 **A** indicates direction or destination:
 
 - **Eu vou a São Paulo** (eh-oo voh ah sow pow-loo) — I go to São Paulo
@@ -31,15 +39,21 @@ Prepositions in Portuguese work similarly to English, but there's a twist: they 
 
 ### Para (pah-rah) — To, For
 
+<!-- vocab-card: {"id":"vocab-para","word":"para","meaning":"to; for (destination, purpose, or recipient)","priority":"essential","sourceSection":"Para (pah-rah) — To, For"} -->
+
 **Para** indicates destination, purpose, or recipient:
 
 - **Isso é para você** (ee-soo eh pah-rah voh-say) — This is for you
 - **Eu vou para casa** (eh-oo voh pah-rah kah-zah) — I'm going home
 - **Ela estuda para a prova** (eh-lah esh-too-dah pah-rah ah proh-vah) — She studies for the test
 
-> **A vs Para:** Both can mean "to" with direction. **Para** implies a longer stay or final destination. **A** implies a shorter visit. In everyday Brazilian Portuguese, **para** is much more common.
+> **A vs Para:** Both can mean "to" with direction. **Para** can suggest a final destination or a longer stay, and **a** can suggest a visit, but this is a tendency, not a fixed duration rule. Destination **para** is very common in everyday Brazilian Portuguese.
+
+<!-- grammar-card: {"id":"a-para-tendency","kind":"concept","format":"qa","priority":"optional","sourceSection":"Para (pah-rah) — To, For","rule":"A versus para is not an absolute duration rule","example":"Does para always mean a long stay while a always means a short visit?","answer":"No. That is a possible tendency, not a strict rule; both can mark a destination.","explanation":"Para also expresses purpose and recipient, as in para a prova and para você."} -->
 
 ### Com (kohn) — With
+
+<!-- vocab-card: {"id":"vocab-com","word":"com","meaning":"with","priority":"optional","sourceSection":"Com (kohn) — With"} -->
 
 - **Eu moro com minha família** (eh-oo moh-roo kohn mee-nyah fah-mee-lee-ah) — I live with my family
 - **Café com leite** (kah-feh kohn lay-chee) — Coffee with milk
@@ -47,11 +61,16 @@ Prepositions in Portuguese work similarly to English, but there's a twist: they 
 
 ### Por (pohr) — By, Through, For (reason)
 
+<!-- vocab-card: {"id":"vocab-por","word":"por","meaning":"by; through; for (reason)","priority":"optional","sourceSection":"Por (pohr) — By, Through, For (reason)"} -->
+<!-- vocab-card: {"id":"vocab-por-favor","word":"por favor","meaning":"please","priority":"optional","sourceSection":"Por (pohr) — By, Through, For (reason)"} -->
+
 - **Obrigado por tudo** (oh-bree-gah-doo pohr too-doo) — Thank you for everything
 - **Nós passamos por aqui** (nohz pah-sah-mooz pohr ah-kee) — We pass through here
 - **Por favor** (pohr fah-vohr) — Please (literally: by/for favor)
 
 ### Sobre (soh-bree) — About, On top of
+
+<!-- vocab-card: {"id":"vocab-sobre","word":"sobre","meaning":"about; on top of","priority":"optional","sourceSection":"Sobre (soh-bree) — About, On top of"} -->
 
 - **O livro é sobre história** (oo lee-vroo eh soh-bree ees-toh-ree-ah) — The book is about history
 - **O gato está sobre a mesa** (oo gah-too esh-tah soh-bree ah meh-zah) — The cat is on the table
@@ -73,7 +92,11 @@ When prepositions meet articles, they **must** contract. You cannot say "de o" �
 - **Os livros dos alunos** (ooz lee-vrooz dooz ah-loo-nooz) — The students' books
 - **O sabor das frutas** (oo sah-bohr dahz froo-tahz) — The flavor of the fruits
 
+<!-- grammar-card: {"id":"de-definite-contraction","kind":"rule","format":"cloze","priority":"essential","sourceSection":"De + Articles","rule":"De contracts with definite articles","example":"Os livros ___ alunos. (de + os)","answer":"dos","explanation":"De + o/a/os/as gives do/da/dos/das."} -->
+
 ### Em + Articles
+
+<!-- grammar-card: {"id":"em-definite-contraction","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Em + Articles","rule":"de+o=do, de+a=da, em+o=no, em+a=na, a+o=ao, a+a=à","example":"Eu moro ___ Brasil. (em + o)","answer":"no","explanation":"Within this noun phrase, em + o contracts to no; em + a/as/os gives na/nas/nos."} -->
 
 | | o | a | os | as |
 |--|---|---|----|----|
@@ -99,13 +122,15 @@ When prepositions meet articles, they **must** contract. You cannot say "de o" �
 
 <!-- quiz: {"type":"multiple-choice","question":"What is the contraction of 'de + os'?","options":["do","dos","nos","das"],"answer":1} -->
 
-<!-- grammar-card: {"rule":"de+o=do, de+a=da, em+o=no, em+a=na, a+o=ao, a+a=à","hint":"Preposition + article = mandatory contraction","example":"Eu moro ___ Brasil. (em + o)","answer":"no","explanation":"When 'em' meets the article 'o', they must contract to 'no'. This is mandatory — 'em o Brasil' is grammatically incorrect."} -->
+<!-- grammar-card: {"id":"a-definite-contraction","kind":"rule","format":"cloze","priority":"essential","sourceSection":"A + Articles","rule":"A contracts with feminine a/as as à/às","example":"Ela vai ___ escola. (a + a)","answer":"à","explanation":"The grave accent marks crase; masculine a + o/os gives ao/aos."} -->
 
 ## Contractions with Indefinite Articles
 
 Prepositions also contract with **um**, **uma**, **uns**, **umas**:
 
 ### De + Indefinite Articles
+
+<!-- grammar-card: {"id":"de-indefinite-application","kind":"rule","format":"cloze","priority":"optional","sourceSection":"De + Indefinite Articles","rule":"De can contract with um as dum","example":"de + um → ___.","answer":"dum","explanation":"The parallel forms are duma, duns, and dumas; full de um is also possible."} -->
 
 | | um | uma | uns | umas |
 |--|---|---|----|----|
@@ -122,6 +147,8 @@ Prepositions also contract with **um**, **uma**, **uns**, **umas**:
 
 > **Note:** These contractions with indefinite articles are common in speech but sometimes written in full (em um, de um) in formal writing.
 
+<!-- grammar-card: {"id":"indefinite-contraction-register","kind":"concept","format":"qa","priority":"optional","sourceSection":"Contractions with Indefinite Articles","rule":"Indefinite-article contractions are not required in every register","example":"Are both em uma casa and numa casa possible?","answer":"Yes. Numa is the contraction; the full form em uma is also possible, especially in formal writing.","explanation":"The same distinction allows de um alongside dum; do not extend the mandatory definite-article rule to every indefinite."} -->
+<!-- grammar-card: {"id":"em-indefinite-application","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Em + Indefinite Articles","rule":"Em can contract with uma as numa","example":"Eu moro ___ casa pequena. (contract em + uma)","answer":"numa","explanation":"Other forms are num, nuns, and numas."} -->
 ## Contractions with Demonstratives
 
 Prepositions also contract with demonstrative pronouns (este, esse, aquele):
@@ -132,6 +159,7 @@ Prepositions also contract with demonstrative pronouns (este, esse, aquele):
 - **de + esse = desse** — of that
 - **de + aquele = daquele** — of that (far)
 
+<!-- grammar-card: {"id":"de-demonstrative","kind":"rule","format":"cloze","priority":"optional","sourceSection":"De + Demonstratives","rule":"De contracts with demonstratives","example":"Você se lembra ___ dia? (de + aquele)","answer":"daquele","explanation":"Compare deste from de + este and desse from de + esse."} -->
 ### Em + Demonstratives
 
 - **em + este = neste** — in this
@@ -141,6 +169,8 @@ Prepositions also contract with demonstrative pronouns (este, esse, aquele):
 - **Eu gosto desse restaurante** (eh-oo gosh-too deh-see hesh-tow-rahn-chee) — I like that restaurant
 - **Nós moramos neste bairro** (nohz moh-rah-mooz nehs-chee bai-hoo) — We live in this neighborhood
 - **Você se lembra daquele dia?** (voh-say see lehm-brah dah-keh-lee jee-ah) — Do you remember that day?
+
+<!-- grammar-card: {"id":"em-demonstrative","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Em + Demonstratives","rule":"Em contracts with demonstratives","example":"Nós moramos ___ bairro. (em + este)","answer":"neste","explanation":"Em + esse gives nesse; em + aquele gives naquele."} -->
 
 <!-- quiz: {"type":"multiple-choice","question":"How do you say 'in this' (em + este)?","options":["deste","neste","nesse","desse"],"answer":1} -->
 
@@ -158,7 +188,9 @@ Prepositions also contract with demonstrative pronouns (este, esse, aquele):
 - **Você quer sair comigo?** (voh-say kehr sah-eer koh-mee-goo) — Do you want to go out with me?
 - **Eles vão conosco** (eh-leez vow koh-nohs-koo) — They go with us
 
-<!-- grammar-card: {"rule":"'Com + mim' becomes 'comigo', 'com + nós' becomes 'conosco'","hint":"Special fused forms for first person","example":"Você quer ir _____? (with me)","answer":"comigo","explanation":"'Com' has special forms with certain pronouns: comigo (with me) and conosco (with us). Other pronouns keep the regular form: com você, com ele, com eles."} -->
+<!-- grammar-card: {"id":"comigo-application","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Special Preposition: Com + Pronouns","rule":"'Com + mim' becomes 'comigo', 'com + nós' becomes 'conosco'","example":"Você quer ir _____? (with me)","answer":"comigo","explanation":"The first-person fused forms taught here are comigo and conosco."} -->
+<!-- vocab-card: {"id":"vocab-comigo","word":"comigo","meaning":"with me","priority":"optional","sourceSection":"Special Preposition: Com + Pronouns"} -->
+<!-- vocab-card: {"id":"vocab-conosco","word":"conosco","meaning":"with us (Brazilian spelling; European connosco)","priority":"optional","sourceSection":"Special Preposition: Com + Pronouns"} -->
 
 <!-- quiz: {"type":"multiple-choice","question":"Complete: 'Ela vai _____ praia.' (to the beach: a + a)","options":["a a","à","ao","na"],"answer":1} -->
 

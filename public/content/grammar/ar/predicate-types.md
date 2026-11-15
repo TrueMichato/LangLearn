@@ -1,12 +1,19 @@
 # Predicate Types in Nominal Sentences
 
+<!-- vocab-inventory: {"mode":"explicit"} -->
+
 A nominal sentence, **جُمْلَةٌ اِسْمِيَّةٌ** (jumlatun ismiyyatun), has a topic, **مُبْتَدَأٌ** (mubtadaʾun), and a predicate, **خَبَرٌ** (khabarun). The predicate does not have to be one adjective or noun; it can be a phrase or a whole sentence.
+
+<!-- vocab-card: {"id":"vocab-mubtada","word":"مُبْتَدَأٌ","reading":"mubtadaʾun","meaning":"topic; subject of a nominal sentence","priority":"optional","sourceSection":"Predicate Types in Nominal Sentences"} -->
+<!-- vocab-card: {"id":"vocab-khabar","word":"خَبَرٌ","reading":"khabarun","meaning":"predicate; information about a topic in this grammatical use","priority":"optional","sourceSection":"Predicate Types in Nominal Sentences"} -->
 
 ## Core idea
 
 The predicate tells us something about the topic. In **الْبَيْتُ كَبِيرٌ** (al-baytu kabīrun) — the house is big, the predicate is one word. In **الْكِتَابُ عَلَى الطَّاوِلَةِ** (al-kitābu ʿalā aṭ-ṭāwilati) — the book is on the table, the predicate is a prepositional phrase.
 
 ## Forms and examples
+
+<!-- grammar-card: {"id":"predicate-inventory","kind":"concept","format":"qa","priority":"essential","sourceSection":"Forms and examples","rule":"A predicate can be non-clausal, a clause, or a semi-sentence.","example":"Which four predicate types does this lesson distinguish?","answer":"Single-word/non-clausal; nominal sentence; verbal sentence; semi-sentence such as a prepositional or adverbial phrase.","explanation":"Khabar mufrad contrasts with sentence and semi-sentence predicates; it does not mean every predicate must be an adjective."} -->
 
 | Predicate type | Arabic name | Link to topic | Example |
 |---|---|---|---|
@@ -21,9 +28,11 @@ The predicate tells us something about the topic. In **الْبَيْتُ كَب
 
 When the predicate is a whole sentence, Arabic usually needs a link back to the topic. In **الطَّالِبُ أَبُوهُ مُهَنْدِسٌ** (aṭ-ṭālibu abūhu muhandisun) — the student's father is an engineer, the attached pronoun **ـهُ** (hu) — his links the inner sentence to **الطَّالِبُ** (aṭ-ṭālibu) — the student.
 
-<!-- grammar-card: {"rule": "A khabar may be a single word, a nominal sentence, a verbal sentence, or a semi-sentence such as a prepositional phrase.", "hint": "Ask what information is being given about the mubtadaʾ.", "example": "الْمِصْبَاحُ فِي الْغُرْفَةِ (al-miṣbāḥu fī al-ghurfati)", "answer": "The lamp is in the room", "explanation": "The predicate is the semi-sentence فِي الْغُرْفَةِ, not a single adjective."} -->
+<!-- grammar-card: {"id":"phrase-predicate","kind":"rule","format":"qa","priority":"essential","sourceSection":"Usage notes","rule":"A khabar may be a single word, a nominal sentence, a verbal sentence, or a semi-sentence such as a prepositional phrase.","example":"What type of predicate is used in الْمِصْبَاحُ فِي الْغُرْفَةِ?","answer":"A semi-sentence prepositional-phrase predicate.","explanation":"The location phrase supplies the information about the lamp.","legacyAliases":[{"rule":"A khabar may be a single word, a nominal sentence, a verbal sentence, or a semi-sentence such as a prepositional phrase.","example":"الْمِصْبَاحُ فِي الْغُرْفَةِ (al-miṣbāḥu fī al-ghurfati)"}]} -->
 
 ## Practice patterns
+
+<!-- grammar-card: {"id":"verbal-predicate","kind":"rule","format":"qa","priority":"essential","sourceSection":"Practice patterns","rule":"A verbal clause can supply the information about a nominal topic.","example":"Identify the predicate and its type in الْمُدِيرُ يَتَكَلَّمُ بِهُدُوءٍ.","answer":"يَتَكَلَّمُ بِهُدُوءٍ; a verbal-sentence predicate.","explanation":"The verb's understood subject points back to the director."} -->
 
 Identify the predicate in each nominal sentence:
 
@@ -33,7 +42,7 @@ Identify the predicate in each nominal sentence:
 
 <!-- quiz: {"type": "multiple-choice", "question": "Which sentence has a verbal sentence as its predicate?", "options": ["الْمُدِيرُ يَتَكَلَّمُ بِهُدُوءٍ", "الْحَدِيقَةُ جَمِيلَةٌ", "السَّيَّارَةُ أَمَامَ الْبَيْتِ", "الْقَلَمُ جَدِيدٌ"], "answer": 0} -->
 
-<!-- grammar-card: {"rule": "A sentence predicate often contains a pronoun or verb form that connects it back to the mubtadaʾ.", "hint": "Look for an attached pronoun like ـهُ or a verb whose subject is the topic.", "example": "الْبِنْتُ أُمُّهَا طَبِيبَةٌ (al-bintu ummuhā ṭabībatun)", "answer": "The girl's mother is a doctor", "explanation": "The pronoun ـهَا links the inner nominal sentence أُمُّهَا طَبِيبَةٌ back to الْبِنْتُ."} -->
+<!-- grammar-card: {"id":"sentence-link","kind":"rule","format":"qa","priority":"essential","sourceSection":"Practice patterns","rule":"A sentence predicate often contains a pronoun or verb form that connects it back to the mubtadaʾ.","example":"Which element links the inner sentence to the girl in الْبِنْتُ أُمُّهَا طَبِيبَةٌ?","answer":"ـهَا on أُمُّهَا.","explanation":"The possessive pronoun refers to the outer topic; the entire inner nominal sentence is its predicate.","legacyAliases":[{"rule":"A sentence predicate often contains a pronoun or verb form that connects it back to the mubtadaʾ.","example":"الْبِنْتُ أُمُّهَا طَبِيبَةٌ (al-bintu ummuhā ṭabībatun)"}]} -->
 
 ## Sources
 

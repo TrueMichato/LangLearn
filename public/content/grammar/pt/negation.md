@@ -1,8 +1,14 @@
 # Negation Patterns (Padrões de Negação)
 
-Negation in Portuguese is surprisingly simple at its core — just put **não** before the verb. But Portuguese also has a unique feature that confuses English speakers: **double negation is perfectly correct** and even preferred! Understanding negation patterns will help you sound natural and avoid common mistakes.
+<!-- vocab-inventory: {"mode":"explicit"} -->
+
+Negation in Portuguese is surprisingly simple at its core — just put **não** before the verb. Portuguese also uses **negative concord**: multiple negative words can reinforce one negation rather than cancel it. This is standard Portuguese, even though standard English uses different patterns.
 
 ## Basic Negation with "Não"
+
+<!-- grammar-card: {"id":"basic-negation","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Basic Negation with \"Não\"","rule":"Ordinary não precedes the verb or clitic-plus-verb group","example":"Eu ___ falo português. (not)","answer":"não","explanation":"Ordinary sentence negation places não before the verb; an object pronoun can intervene."} -->
+<!-- grammar-card: {"id":"negative-clitic-order","kind":"rule","format":"qa","priority":"optional","sourceSection":"Basic Negation with \"Não\"","rule":"Não precedes a preverbal object clitic","example":"Negate Eu te vi without moving or omitting the object pronoun.","answer":"Eu não te vi.","explanation":"Negation precedes the clitic-plus-verb group: não te vi."} -->
+<!-- vocab-card: {"id":"vocab-nao","word":"não","meaning":"not; no","priority":"essential","sourceSection":"Basic Negation with \"Não\""} -->
 
 The word **não** goes directly before the verb to negate a sentence:
 
@@ -12,11 +18,20 @@ The word **não** goes directly before the verb to negate a sentence:
 - **Ele tem dinheiro.** → **Ele não tem dinheiro.** (eh-lee now teng jee-nyay-roo) — He doesn't have money.
 - **Eles moram aqui.** → **Eles não moram aqui.** (eh-leez now moh-rahm ah-kee) — They don't live here.
 
-> **Key rule:** *Não* always comes immediately before the verb. Object pronouns can go between *não* and the verb: **Eu não te vi.** (I didn't see you.)
+> **Key rule:** In ordinary sentence negation, *não* precedes the verb or clitic-plus-verb group: **Eu não te vi.** (I didn't see you.) It need not be immediately adjacent to the verb.
 
 <!-- quiz: {"type":"multiple-choice","question":"How do you negate 'Eu falo inglês' (I speak English)?","options":["Eu falo não inglês.","Eu não falo inglês.","Não eu falo inglês.","Eu falo inglês não."],"answer":1} -->
 
 ## Negative Words (Palavras Negativas)
+
+<!-- grammar-card: {"id":"negative-subject","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Negative Words (Palavras Negativas)","rule":"A preverbal negative subject can negate the clause alone","example":"___ veio à festa. (nobody)","answer":"Ninguém","explanation":"A negative subject before the verb can carry the negation without não.","legacyAliases":[{"rule":"Negative words: nada, ninguém, nenhum, nunca, jamais, nem","example":"___ veio à festa. (nobody)"}]} -->
+<!-- vocab-card: {"id":"vocab-nada","word":"nada","meaning":"nothing; not anything","priority":"essential","sourceSection":"Negative Words (Palavras Negativas)"} -->
+<!-- vocab-card: {"id":"vocab-ninguem","word":"ninguém","meaning":"nobody; no one","priority":"essential","sourceSection":"Negative Words (Palavras Negativas)"} -->
+<!-- vocab-card: {"id":"vocab-nenhum","word":"nenhum","meaning":"no; none; not any (masculine singular)","priority":"optional","sourceSection":"Negative Words (Palavras Negativas)"} -->
+<!-- vocab-card: {"id":"vocab-nunca","word":"nunca","meaning":"never","priority":"optional","sourceSection":"Negative Words (Palavras Negativas)"} -->
+<!-- vocab-card: {"id":"vocab-jamais","word":"jamais","meaning":"never (often emphatic)","priority":"optional","sourceSection":"Negative Words (Palavras Negativas)"} -->
+<!-- vocab-card: {"id":"vocab-nem","word":"nem","meaning":"neither; nor; not even","priority":"optional","sourceSection":"Negative Words (Palavras Negativas)"} -->
+<!-- vocab-card: {"id":"vocab-tampouco","word":"tampouco","meaning":"neither; not either","priority":"optional","sourceSection":"Negative Words (Palavras Negativas)"} -->
 
 Portuguese has several negative words that work with or without *não*:
 
@@ -36,11 +51,11 @@ Portuguese has several negative words that work with or without *não*:
 - **Nenhum aluno passou.** (neh-nyoon ah-loo-noo pah-soh) — No student passed.
 - **Ela nunca viajou para o exterior.** (eh-lah noon-kah vee-ah-zhoh pah-rah oo esh-teh-ree-or) — She has never traveled abroad.
 
-<!-- grammar-card: {"rule":"Negative words: nada, ninguém, nenhum, nunca, jamais, nem","hint":"Can be used alone or with não (double negation)","example":"___ veio à festa. (nobody)","answer":"Ninguém veio à festa.","explanation":"Negative words like 'ninguém' (nobody) can stand alone at the beginning of a sentence without needing 'não'."} -->
-
 ## Double Negation — Perfectly Correct!
 
-Unlike English, where double negation is considered incorrect ("I don't have nothing"), in Portuguese **double negation is standard and natural**. When a negative word comes *after* the verb, you also add **não** before the verb:
+<!-- grammar-card: {"id":"negative-concord","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Double Negation — Perfectly Correct!","rule":"Postverbal negative words normally need earlier clause negation","example":"Eu ___ vi ninguém. (I did not see anyone.)","answer":"não","explanation":"Portuguese negative concord combines a preverbal negator with a postverbal negative word; the negatives do not cancel out."} -->
+
+Unlike standard English, Portuguese normally uses **negative concord**. A negative word *after* the verb normally needs a preverbal negative licensor, most often **não**. An earlier negative word can also supply it, as in **Ninguém disse nada**:
 
 - **Não tenho nada.** (now teh-nyoo nah-dah) — I have nothing. / I don't have anything.
 - **Não vi ninguém.** (now vee neen-gayn) — I didn't see anyone.
@@ -48,11 +63,14 @@ Unlike English, where double negation is considered incorrect ("I don't have not
 - **Não comprei nenhum livro.** (now kohm-pray neh-nyoon lee-vroo) — I didn't buy any book.
 - **Ela não disse nada.** (eh-lah now jee-see nah-dah) — She didn't say anything.
 
-> **Think of it this way:** When the negative word follows the verb, *não* is required. The two negatives reinforce each other rather than cancelling out.
+> **Think of it this way:** A postverbal negative normally needs negation earlier in the clause. Often this is *não*; it can also be another negative word. They reinforce one another rather than cancelling out.
 
 <!-- quiz: {"type":"multiple-choice","question":"Which sentence is correct Portuguese for 'I didn't see anyone'?","options":["Eu vi ninguém.","Eu não vi ninguém.","Eu não vi alguém.","Eu vi não ninguém."],"answer":1} -->
 
 ## Negative Words Without "Não"
+
+<!-- grammar-card: {"id":"negative-position-choice","kind":"concept","format":"qa","priority":"essential","sourceSection":"Negative Words Without \"Não\"","rule":"Double negation: não + verb + negative word (after verb) OR negative word + verb (before verb)","example":"Why is Ninguém veio possible without não, while Não veio ninguém normally includes it?","answer":"A preverbal negative word supplies negation itself; a postverbal negative word normally needs a preverbal negative licensor.","explanation":"These are two standard ways to express the same negative proposition; a preceding nunca or ninguém can also license later negative words.","legacyAliases":[{"rule":"Double negation: não + verb + negative word (after verb) OR negative word + verb (before verb)","example":"___ aconteceu ___ ontem. (nothing happened)"}]} -->
+<!-- grammar-card: {"id":"negative-nenhum-agreement","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Negative Words Without \"Não\"","rule":"Nenhum agrees with its noun","example":"___ pessoa ligou. (No person called.)","answer":"Nenhuma","explanation":"Nenhum agrees with its noun: nenhuma pessoa."} -->
 
 When a negative word comes **before the verb**, you do **not** need *não*. In this position, the negative word carries the negation on its own:
 
@@ -72,13 +90,13 @@ Compare the two patterns:
 
 Both forms mean the same thing. The "before verb" version is slightly more emphatic.
 
-<!-- grammar-card: {"rule":"Double negation: não + verb + negative word (after verb) OR negative word + verb (before verb)","hint":"Both are correct: 'Ninguém veio' = 'Não veio ninguém'","example":"___ aconteceu ___ ontem. (nothing happened)","answer":"Não ... nada","explanation":"When 'nada' comes after the verb, you must add 'não' before the verb. You could also say 'Nada aconteceu ontem' with the negative word before the verb and no 'não'."} -->
-
 ## "Nem" — Neither, Nor, Not Even
 
 **Nem** is a versatile negative word:
 
 ### As "not even"
+
+<!-- grammar-card: {"id":"nem-not-even","kind":"rule","format":"cloze","priority":"optional","sourceSection":"As \"not even\"","rule":"Nem can express scalar not-even negation","example":"Ele ___ tentou. (He did not even try.)","answer":"nem","explanation":"Nem can express not even before the verb without a separate não."} -->
 
 - **Nem eu sei.** (neng eh-oo say) — Not even I know.
 - **Ele nem tentou.** (eh-lee neng ten-toh) — He didn't even try.
@@ -86,11 +104,16 @@ Both forms mean the same thing. The "before verb" version is slightly more empha
 
 ### As "neither…nor" (nem…nem)
 
+<!-- grammar-card: {"id":"nem-pair","kind":"rule","format":"cloze","priority":"optional","sourceSection":"As \"neither…nor\" (nem…nem)","rule":"Repeated nem coordinates two negative alternatives","example":"Ele nem come ___ bebe. (neither eats nor drinks)","answer":"nem","explanation":"Nem can be repeated to coordinate two negative alternatives."} -->
+
 - **Não gosto nem de café nem de chá.** (now gosh-too neng jee kah-feh neng jee shah) — I like neither coffee nor tea.
 - **Nem eu nem ela fomos à festa.** (neng eh-oo neng eh-lah foh-moosh ah fesh-tah) — Neither I nor she went to the party.
 - **Ele nem come nem bebe.** (eh-lee neng koh-mee neng beh-bee) — He neither eats nor drinks.
 
 ## "Não é?" — Tag Questions
+
+<!-- grammar-card: {"id":"negative-tag","kind":"rule","format":"cloze","priority":"optional","sourceSection":"\"Não é?\" — Tag Questions","rule":"'Não é?' / 'Né?' — Portuguese tag question","example":"Está frio, ___? (full confirmation tag)","answer":"não é","explanation":"Não é? seeks confirmation; informal né? is its common shortened form.","legacyAliases":[{"rule":"'Não é?' / 'Né?' — Portuguese tag question","example":"Está frio, ___?"}]} -->
+<!-- vocab-card: {"id":"vocab-ne","word":"né","meaning":"right?; isn't it? (informal confirmation tag)","priority":"optional","sourceSection":"\"Não é?\" — Tag Questions"} -->
 
 **Não é?** (literally "isn't it?") is used as a tag question at the end of sentences, similar to "right?", "isn't it?", or "don't you think?" in English:
 
@@ -107,6 +130,14 @@ In casual speech, this is often shortened to **né?** (neh):
 
 ## Common Negative Expressions
 
+<!-- vocab-card: {"id":"vocab-jeito-nenhum","word":"de jeito nenhum","meaning":"no way; absolutely not","priority":"optional","sourceSection":"Common Negative Expressions"} -->
+<!-- vocab-card: {"id":"vocab-nem-pensar","word":"nem pensar","meaning":"don't even think about it; no way","priority":"optional","sourceSection":"Common Negative Expressions"} -->
+<!-- vocab-card: {"id":"vocab-maneira","word":"de maneira nenhuma","meaning":"no way; absolutely not (more formal)","priority":"optional","sourceSection":"Common Negative Expressions"} -->
+<!-- vocab-card: {"id":"vocab-nem-isso","word":"nem por isso","meaning":"not really; not because of that","priority":"optional","sourceSection":"Common Negative Expressions"} -->
+<!-- vocab-card: {"id":"vocab-nem-tanto","word":"nem tanto","meaning":"not that much","priority":"optional","sourceSection":"Common Negative Expressions"} -->
+<!-- vocab-card: {"id":"vocab-nao-mal","word":"não faz mal","meaning":"it doesn't matter; no worries","priority":"optional","sourceSection":"Common Negative Expressions"} -->
+<!-- vocab-card: {"id":"vocab-nao-problema","word":"não tem problema","meaning":"no problem","priority":"optional","sourceSection":"Common Negative Expressions"} -->
+
 These idiomatic expressions are used frequently in everyday Brazilian Portuguese:
 
 - **De jeito nenhum!** (jee zhay-too neh-nyoon) — No way! / Absolutely not!
@@ -119,17 +150,17 @@ These idiomatic expressions are used frequently in everyday Brazilian Portuguese
 
 ## Contrasting with English
 
+<!-- grammar-card: {"id":"negative-additive","kind":"concept","format":"qa","priority":"optional","sourceSection":"Contrasting with English","rule":"Também não and tampouco can both express negative addition","example":"How can She does not speak either be expressed with também or tampouco?","answer":"Ela também não fala or Ela tampouco fala.","explanation":"Também não and tampouco can both express not either."} -->
+
 | English | Portuguese | Notes |
 |---|---|---|
 | I don't have anything. | **Não tenho nada.** | Double negation = correct! |
 | I have nothing. | **Não tenho nada.** / **Nada tenho.** | Both patterns work |
 | Nobody came. | **Ninguém veio.** / **Não veio ninguém.** | Negative before or after verb |
-| ~~I don't have nothing.~~ ✗ | **Não tenho nada.** ✓ | Invalid in English, standard in Portuguese |
+| I don't have nothing. (nonstandard in formal English) | **Não tenho nada.** | Standard Portuguese negative concord; English dialects vary |
 | She doesn't speak either. | **Ela também não fala.** / **Ela tampouco fala.** | "Also not" or "neither" |
 
 <!-- quiz: {"type":"multiple-choice","question":"Which is the correct way to say 'I never eat sushi' in Portuguese?","options":["Eu não como sushi nunca. / Eu nunca como sushi.","Eu como não sushi nunca.","Eu sushi nunca como não.","Nunca eu não como sushi."],"answer":0} -->
-
-<!-- grammar-card: {"rule":"'Não é?' / 'Né?' — Portuguese tag question","hint":"Add to the end of any statement to ask for confirmation","example":"Está frio, ___?","answer":"não é","explanation":"'Não é?' (or the informal 'né?') works like English 'right?' or 'isn't it?' — add it to the end of any statement to turn it into a confirmation question."} -->
 
 ## Sources
 

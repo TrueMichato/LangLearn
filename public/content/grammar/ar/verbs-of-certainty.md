@@ -1,5 +1,7 @@
 # Verbs of the Heart & Certainty (ẓanna, ʿalima… and their two objects)
 
+<!-- vocab-inventory: {"mode":"explicit"} -->
+
 Some Arabic verbs describe judgment, belief, knowledge, or mental perception. Traditional grammar calls many of them أَفْعَالُ الْقُلُوبِ (afʿāl al-qulūb) — verbs of the hearts.
 
 ## Core idea
@@ -17,6 +19,11 @@ The two accusatives are often translated with an English that-clause, but Arabic
 | حَسِبَ (ḥasiba) — to reckon, consider | حَسِبْتُ الطَّرِيقَ طَوِيلًا (ḥasib-tu aṭ-ṭarīqa ṭawīlan) — I considered the road long |
 | وَجَدَ (wajada) — to find, discover | وَجَدْتُ الْمَسْأَلَةَ سَهْلَةً (wajadtu al-masʾalata sahlatan) — I found the problem easy |
 
+<!-- vocab-card: {"id":"vocab-zanna","word":"ظَنَّ","reading":"ẓanna","meaning":"to think; suppose","priority":"essential","sourceSection":"Forms and examples"} -->
+<!-- vocab-card: {"id":"vocab-alima","word":"عَلِمَ","reading":"ʿalima","meaning":"to know","priority":"essential","sourceSection":"Forms and examples"} -->
+<!-- vocab-card: {"id":"vocab-hasiba","word":"حَسِبَ","reading":"ḥasiba","meaning":"to reckon; consider","priority":"optional","sourceSection":"Forms and examples"} -->
+<!-- vocab-card: {"id":"vocab-wajada","word":"وَجَدَ","reading":"wajada","meaning":"to find; discover","priority":"optional","sourceSection":"Forms and examples"} -->
+
 <!-- quiz: {"type":"multiple-choice","question":"In ظَنَنْتُ الطَّالِبَ مُجْتَهِدًا (ẓanantu aṭ-ṭāliba mujtahidan), what are الطَّالِبَ and مُجْتَهِدًا?","options":["Two accusative objects","Two genitive nouns","A subject and a jussive verb","Two vocatives"],"answer":0} -->
 
 ## From nominal sentence to two objects
@@ -28,29 +35,35 @@ The original nominal sentence has a subject and predicate:
 
 The first noun becomes the first object, and the predicate becomes the second object.
 
-<!-- grammar-card: {"rule":"ظَنَّ (ẓanna) and similar verbs can take two accusative objects from an original nominal sentence.","hint":"The original subject and predicate both become accusative.","example":"Change to I thought: الطَّالِبُ مُجْتَهِدٌ (aṭ-ṭālibu mujtahidun).","answer":"ظَنَنْتُ الطَّالِبَ مُجْتَهِدًا (ẓanantu aṭ-ṭāliba mujtahidan) — I thought the student diligent","explanation":"After ظَنَنْتُ, both الطَّالِبَ and مُجْتَهِدًا are accusative objects."} -->
+<!-- grammar-card: {"id":"two-object-transformation","kind":"rule","format":"qa","priority":"essential","sourceSection":"From nominal sentence to two objects","rule":"ظَنَّ (ẓanna) and similar verbs can take two accusative objects from an original nominal sentence.","example":"Change to I thought: الطَّالِبُ مُجْتَهِدٌ (aṭ-ṭālibu mujtahidun).","answer":"ظَنَنْتُ الطَّالِبَ مُجْتَهِدًا","explanation":"Ẓanantu aṭ-ṭāliba mujtahidan: the original subject becomes object one and its predicate becomes object two, both accusative."} -->
 
 ## Certainty versus assumption
 
 The verb itself tells you how certain the speaker is. ظَنَّ (ẓanna) often means to think or suppose. عَلِمَ (ʿalima) and أَيْقَنَ (ayqana) point to knowledge or certainty.
 
 - ظَنَّتْ لَيْلَى السَّفَرَ قَرِيبًا (ẓannat Laylā as-safara qarīban) — Layla thought the trip was near.
-- أَيْقَنْتُ النَّجَاحَ مُمْكِنًا (ayqantu an-najāḥa mumkinan) — I became certain that success was possible.
+- أَيْقَنْتُ بِأَنَّ النَّجَاحَ مُمْكِنٌ (ayqantu bi-anna an-najāḥa mumkinun) — I became certain that success was possible. Here أَيْقَنَ takes بِـ plus an أَنَّ clause; certainty in meaning does not by itself license the two-direct-object construction. النَّجَاحَ is the noun of أَنَّ, and مُمْكِنٌ is its nominative predicate.
+
+<!-- vocab-card: {"id":"vocab-ayqana","word":"أَيْقَنَ","reading":"ayqana","meaning":"to become certain; be convinced","priority":"optional","sourceSection":"Certainty versus assumption"} -->
+<!-- grammar-card: {"id":"certainty-versus-assumption","kind":"concept","format":"qa","priority":"essential","sourceSection":"Certainty versus assumption","rule":"The chosen mental verb signals the speaker's degree of commitment.","example":"What distinction in commitment is taught between ẓanna and ʿalima?","answer":"Ẓanna commonly expresses thinking or supposing; ʿalima expresses knowing.","explanation":"The verb's meaning matters, but it does not by itself predict the government of every other certainty verb."} -->
+<!-- grammar-card: {"id":"ayqana-government","kind":"concept","format":"qa","priority":"optional","sourceSection":"Certainty versus assumption","rule":"The certainty example with ayqana uses a prepositional embedded clause.","example":"Why are the noun and adjective not two direct objects in أَيْقَنْتُ بِأَنَّ النَّجَاحَ مُمْكِنٌ?","answer":"بِـ introduces an أَنَّ clause: النَّجَاحَ is its accusative noun and مُمْكِنٌ its nominative predicate.","explanation":"This repairs the temptation to give every certainty verb the same government as ظَنَّ."} -->
 
 <!-- quiz: {"type":"multiple-choice","question":"Which verb most clearly expresses certainty rather than mere assumption?","options":["عَلِمَ (ʿalima) — to know","ظَنَّ (ẓanna) — to suppose","حَسِبَ (ḥasiba) — to reckon","تَوَهَّمَ (tawahhama) — to imagine"],"answer":0} -->
 
-<!-- grammar-card: {"rule":"عَلِمَ (ʿalima) may introduce two objects when it means to know that something is so.","hint":"Translate with knew that, but watch the two accusatives.","example":"Complete: I knew the news was true: عَلِمْتُ ___ ___ (ʿalimtu ___ ___).","answer":"الْخَبَرَ صَحِيحًا (al-khabara ṣaḥīḥan)","explanation":"the news true — عَلِمْتُ الْخَبَرَ صَحِيحًا has two accusative objects: الْخَبَرَ and صَحِيحًا."} -->
+<!-- grammar-card: {"id":"knowledge-application","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Certainty versus assumption","rule":"In the two-object knowledge construction, both original nominal parts are accusative.","example":"Complete the object phrase in “I knew the news was true”: عَلِمْتُ ___.","answer":"الْخَبَرَ صَحِيحًا","explanation":"Al-khabara ṣaḥīḥan contains two accusatives, unlike the noun-plus-nominative-predicate structure inside an أَنَّ clause.","legacyAliases":[{"rule":"عَلِمَ (ʿalima) may introduce two objects when it means to know that something is so.","example":"Complete: I knew the news was true: عَلِمْتُ ___ ___ (ʿalimtu ___ ___)."}]} -->
 
 ## Practice patterns
 
-When you see two accusatives after a mental verb, test whether they could form a nominal sentence by themselves.
+When you see two accusatives after a mental verb in a judgment or knowledge sense, test whether they could form a nominal sentence by themselves. This is a useful diagnostic, not proof by endings alone: physical seeing can instead have an object and a circumstantial qualifier (ḥāl).
+
+<!-- grammar-card: {"id":"diagnostic-limit","kind":"concept","format":"qa","priority":"optional","sourceSection":"Practice patterns","rule":"The nominal-sentence test must be combined with the verb's meaning in context.","example":"Does finding two accusatives that could form “X is Y” prove they are two objects in every seeing sentence?","answer":"No. Physical seeing can instead take an object and a circumstantial qualifier, so the intended sense matters.","explanation":"The two-object judgment analysis is not determined by the two case endings alone."} -->
 
 - رَأَيْتُ الْحَلَّ وَاضِحًا (raʾaytu al-ḥalla wāḍiḥan) — I saw the solution as clear.
 - الْحَلُّ وَاضِحٌ (al-ḥallu wāḍiḥun) — The solution is clear.
 
 <!-- quiz: {"type":"multiple-choice","question":"What is the likely original nominal sentence behind وَجَدْتُ الْمَسْأَلَةَ سَهْلَةً (wajadtu al-masʾalata sahlatan)?","options":["الْمَسْأَلَةُ سَهْلَةٌ (al-masʾalatu sahlatun) — The problem is easy","الْمَسْأَلَةَ سَهْلَةً (al-masʾalata sahlatan) — Accusative phrase only","سَهْلَةٌ الْمَسْأَلَةَ (sahlatun al-masʾalata) — Mixed endings","الْمَسْأَلَةِ سَهْلَةٍ (al-masʾalati sahlatin) — Genitive phrase"],"answer":0} -->
 
-<!-- grammar-card: {"rule":"If two accusatives after a mental verb can form a nominal sentence, they are probably its two objects.","hint":"Test them as X is Y.","example":"Analyze: وَجَدْتُ الْمَسْأَلَةَ سَهْلَةً (wajadtu al-masʾalata sahlatan).","answer":"الْمَسْأَلَةَ is object one, and سَهْلَةً is object two","explanation":"The underlying idea is الْمَسْأَلَةُ سَهْلَةٌ, so the verb وَجَدْتُ makes both parts accusative."} -->
+<!-- grammar-card: {"id":"underlying-predication","kind":"concept","format":"qa","priority":"optional","sourceSection":"Practice patterns","rule":"A judgment reading may preserve the predication of an underlying nominal sentence.","example":"What nominal proposition underlies وَجَدْتُ الْمَسْأَلَةَ سَهْلَةً in its judgment sense?","answer":"الْمَسْأَلَةُ سَهْلَةٌ — the problem is easy.","explanation":"In this reading the problem and easy become the first and second objects of وَجَدْتُ. Endings alone do not rule out an object-plus-ḥāl analysis in other contexts.","legacyAliases":[{"rule":"If two accusatives after a mental verb can form a nominal sentence, they are probably its two objects.","example":"Analyze: وَجَدْتُ الْمَسْأَلَةَ سَهْلَةً (wajadtu al-masʾalata sahlatan)."}]} -->
 
 ## Sources
 

@@ -1,5 +1,7 @@
 # Question Words (誰, 何, どこ, etc.)
 
+<!-- vocab-inventory: {"mode":"explicit"} -->
+
 > **Source:** Content from [Tofugu](https://www.tofugu.com/japanese-grammar/question-words/). For personal study.
 
 Japanese Question Words: 何・どこ・だれ and More
@@ -64,6 +66,11 @@ You can even ask both "who" and "what" using this method! In that case, the sent
 
   - **Who** did you give **what** to?
 
+<!-- grammar-card: {"id":"in-place-question","kind":"concept","format":"qa","priority":"essential","sourceSection":"Question Pronouns","rule":"Japanese question pronouns occupy the corresponding noun's position rather than moving to the sentence front","example":"Must 何 move to the start when プレゼント is replaced in ケンイチにプレゼントをあげたの?","answer":"No. It stays in the object position: ケンイチに何をあげたの?","explanation":"Particles retain the grammatical role. A sentence can replace more than one unknown noun at once."} -->
+
+<!-- grammar-card: {"id":"what-object","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Question Pronouns","rule":"何 asks which thing","hint":"Ask what was given, using kanji.","example":"ケンイチに___をあげたの？","answer":"何","explanation":"何を (なにを) asks what was given to Kenichi."} -->
+<!-- grammar-card: {"id":"who-recipient","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Question Pronouns","rule":"誰 asks which person","hint":"Ask who received the present, using kanji.","example":"___にプレゼントをあげたの？","answer":"誰","explanation":"誰に (だれに) asks who received the present."} -->
+
 #### Question Adverbs
 
 Question adverbs are question words that are classified as adverbs. In Japanese, they are なぜ/ なんで/どうして (why), どう (how), いくら (how much), and いくつ (how many). Although many dictionaries define いつ (when) as a noun, it can also act like an adverb.
@@ -91,6 +98,8 @@ Now check out another common position where question adverbs can appear. That is
 
   - **Why** is it that the earth is blue?
 
+<!-- grammar-card: {"id":"question-adverb-position","kind":"concept","format":"qa","priority":"optional","sourceSection":"Question Adverbs","rule":"Question adverbs can precede what they modify or form a sentence-final reason question","example":"What changes when なんで moves from なんで地球は青いの to 地球はなんで青いの?","answer":"Its placement can focus the question more closely on why the earth is blue, rather than on the whole situation.","explanation":"地球が青いのはなんでですか instead asks for the reason at the end. This is not a noun replacement in subject position."} -->
+
 This is a way of putting emphasis on the rest of the sentence. When would you use a question like this? Perhaps you wanted to know the reason the earth is blue, but the person who's answering has started talking about why the ocean is blue instead. In this case, you can emphasize that you're asking why *the earth is blue*, not why *the ocean is blue*. When a question adverb is at the end of a sentence, it can be followed by だ・です, or their variants.
 
   - 地球が青いのは**なんで**ですか？
@@ -111,6 +120,8 @@ Just like in English, these Japanese question determiners come before a noun.
 
   - **What kind of** house do you want to live in?
 
+<!-- grammar-card: {"id":"determiner-needs-noun","kind":"concept","format":"qa","priority":"essential","sourceSection":"Question Determiners","rule":"どの and どんな modify a following noun rather than standing alone like どれ","example":"Why is どの followed by バス in どのバスに乗ればいいですか?","answer":"It is a determiner meaning which bus, so it requires the noun it modifies.","explanation":"どれ can replace a known thing by itself; どんな asks for details about the following noun."} -->
+
 ### 何 for "What"
 
 何 is a question pronoun, used for asking "what" in Japanese.
@@ -122,9 +133,14 @@ Just like in English, these Japanese question determiners come before a noun.
 
 As a side note, the way you read/pronounce 何 will depend on what kind of sounds come immediately after it. When it's followed by sounds in the な, だ, and た-lines of the Japanese writing system, 何 usually gets read as なん instead of なに. For example, the sentence below uses 何 and the sound that comes after it is で, which is in だ-line — だぢづ**で**ど. So in this case, 何 gets read as なん to make it easier to say.
 
+This is a useful tendency, not an exceptionless sound rule. For example, 何で can be なにで when asking “by what means,” whereas なんで commonly asks “why.”
+
   - 好きなお酒は**何**ですか？
 
   - **What** is your favorite alcoholic drink?
+
+<!-- vocab-card: {"id":"vocab-nani","word":"何","reading":"なに; なん (depending on the expression)","meaning":"what","priority":"essential","sourceSection":"何 for \"What\""} -->
+<!-- grammar-card: {"id":"nani-nan-reading","kind":"concept","format":"qa","priority":"optional","sourceSection":"何 for \"What\"","rule":"何 has なに and なん readings shaped by the expression, not just an automatic consonant substitution","example":"How is 何 read in 何ですか, and does that force every 何で to have the same reading?","answer":"なんですか; no, 何で can be なにで for by what means, while なんで commonly means why.","explanation":"The sound-based shortcut is a tendency. Learn conventional expressions and their meanings together."} -->
 
 ### 誰 / どなた for "Who"
 
@@ -150,6 +166,11 @@ Additionally, we have どいつ, which is a variant in the こいつ family. It 
 
 In English we use different varieties of "who" — namely "whom" and "whose" — to fulfill different grammatical roles. But in Japanese 誰 is the only word you need, and the particles you attach to it will change the grammatical role it plays. For example, to say "whom" in Japanese, you can use the object marker を and say 誰を. Similarly, if you use the particle の, which can express ownership as in 誰の, it means "whose" in Japanese.
 
+<!-- vocab-card: {"id":"vocab-dare","word":"誰","reading":"だれ","meaning":"who","priority":"essential","sourceSection":"誰 / どなた for \"Who\""} -->
+<!-- vocab-card: {"id":"vocab-donata","word":"どなた","reading":"どなた","meaning":"who (polite or refined)","priority":"optional","sourceSection":"誰 / どなた for \"Who\""} -->
+<!-- vocab-card: {"id":"vocab-doitsu","word":"どいつ","reading":"どいつ","meaning":"which person; who (very casual or gruff)","priority":"optional","sourceSection":"誰 / どなた for \"Who\""} -->
+<!-- grammar-card: {"id":"whose-particle","kind":"rule","format":"cloze","priority":"optional","sourceSection":"誰 / どなた for \"Who\"","rule":"の turns a who question into an ownership question without changing 誰","example":"Whose car: 誰___車？","answer":"の","explanation":"誰の means whose. 誰を marks an object and 誰に a recipient, without English-style changes to whom."} -->
+
 ### どこ for "Where"
 
 どこ, sometimes written as 何処 (literally, "what place" in kanji), is a question pronoun that's used to ask about a place, just like "where" in English. It's the question pronoun version of ここ (here), そこ (there) and あそこ (over there).
@@ -164,6 +185,9 @@ In English we use different varieties of "who" — namely "whom" and "whose" —
 
   - **What part** of the Japanese language do you like?
 
+<!-- vocab-card: {"id":"vocab-doko","word":"どこ","reading":"どこ","meaning":"where; what place or part","priority":"essential","sourceSection":"どこ for \"Where\""} -->
+<!-- grammar-card: {"id":"figurative-place","kind":"concept","format":"qa","priority":"optional","sourceSection":"どこ for \"Where\"","rule":"どこ can ask about an aspect or part as well as a literal location","example":"Does 日本語のどこが好きですか ask for the language's physical location?","answer":"No. It asks what part or aspect of Japanese the listener likes.","explanation":"The location word has a figurative part-of-something use."} -->
+
 ### どれ / どっち / どちら for "Which One"
 
 There are three ways of saying "which one" in Japanese: どれ, どっち, and どちら.
@@ -176,6 +200,8 @@ There are three ways of saying "which one" in Japanese: どれ, どっち, and �
 
   - Out of all foods, **which one** is your most favorite?
 
+<!-- vocab-card: {"id":"vocab-dore","word":"どれ","reading":"どれ","meaning":"which one (among available options)","priority":"optional","sourceSection":"どれ"} -->
+
 #### どっち
 
 どっち is the question word version of こっち, そっち, and あっち, which are typically used for indicating directions or for pointing out things (and sometimes even people). So in addition to asking "which one," you can also use どっち to ask for directions, as in "which way?" Note that どっち is only used for asking "which one" out of two options, never more than two. It's a relatively casual word.
@@ -187,6 +213,8 @@ There are three ways of saying "which one" in Japanese: どれ, どっち, and �
   - **どっち**が私のですか？
 
   - **Which one** (of the two) is mine?
+
+<!-- vocab-card: {"id":"vocab-docchi","word":"どっち","reading":"どっち","meaning":"which of two; which way (casual)","priority":"optional","sourceSection":"どっち"} -->
 
 #### どちら
 
@@ -209,6 +237,10 @@ As こちら, そちら and あちら are polite ways of referring to a person o
 
   - May I ask **who**'s speaking/**who**'s there?
 
+<!-- vocab-card: {"id":"vocab-dochira","word":"どちら","reading":"どちら","meaning":"which one; which direction; who (indirect or polite, depending on context)","priority":"optional","sourceSection":"どちら"} -->
+<!-- vocab-card: {"id":"vocab-dochirasama","word":"どちら様","reading":"どちらさま","meaning":"who (polite inquiry about the caller or visitor)","priority":"optional","sourceSection":"どちら"} -->
+<!-- grammar-card: {"id":"choice-number-register","kind":"concept","format":"qa","priority":"optional","sourceSection":"どちら","rule":"どっち commonly selects between two casually; polite どちら need not be limited to two","example":"Must a polite offer of three kinds of beer avoid どちら?","answer":"No. どちら can cover three or more choices; casual どっち normally frames a two-way choice.","explanation":"どちら can also indirectly ask who or which school/workplace, so context determines whether a direction is intended."} -->
+
 ### どの〜 for "Which 〜"
 
 どの is a determiner, so it precedes a noun. It adds the meaning of "which 〜" to the noun that follows it, so this is the question word you use when you ask "*which* apple?" or "*which* table?" It's the question word version of この (this 〜), その (that 〜), and あの (that 〜 over there), which also precede the nouns they point out.
@@ -223,6 +255,9 @@ As long as the speech style of the rest of the sentence is polite, it wouldn't n
 
   - **Which** watermelon (of the two) tastes good?
 
+<!-- vocab-card: {"id":"vocab-dono","word":"どの","reading":"どの","meaning":"which (before a noun)","priority":"optional","sourceSection":"どの〜 for \"Which 〜\""} -->
+<!-- grammar-card: {"id":"dono-dochira-no","kind":"concept","format":"qa","priority":"optional","sourceSection":"どの〜 for \"Which 〜\"","rule":"どの directly modifies a noun; どちらの is a more indirect alternative often used for two choices","example":"How does polite どちら become a modifier before スイカ, unlike どの?","answer":"It takes の: どちらのスイカ, while どのスイカ needs no additional particle.","explanation":"どちらの is commonly used for a two-way selection here; polite speech does not make どの inherently rude."} -->
+
 ### どんな〜 / どういう〜 / どのような〜 for "What Kind of 〜"
 
 どんな, どういう, and どのような are determiners, and they are used for asking for details and information about things. Although the closest translation here is "what kind of 〜," usually these words are used to ask for details and impressions rather than kinds, types, or categories. For example, let's say your friend has just asked if you could adopt a stray dog they've found. You may say something like:
@@ -232,6 +267,11 @@ As long as the speech style of the rest of the sentence is polite, it wouldn't n
   - **What kind of** dog?
 
 Even though this could be meant as "What breed of dog?" in English, the question is more open-ended in Japanese, simply asking for details about the dog. As an answer, your friend might tell you the breed of the dog, but they may talk about the size, color, fur, temperament, or personality of the dog too — simply providing more details or information.
+
+<!-- vocab-card: {"id":"vocab-donna","word":"どんな","reading":"どんな","meaning":"what kind of; what is it like (before a noun)","priority":"optional","sourceSection":"どんな〜 / どういう〜 / どのような〜 for \"What Kind of 〜\""} -->
+<!-- vocab-card: {"id":"vocab-douiu","word":"どういう","reading":"どういう","meaning":"what kind of; what is meant by (before a noun)","priority":"optional","sourceSection":"どんな〜 / どういう〜 / どのような〜 for \"What Kind of 〜\""} -->
+<!-- vocab-card: {"id":"vocab-donoyouna","word":"どのような","reading":"どのような","meaning":"what kind of; what sort of (before a noun, relatively formal)","priority":"optional","sourceSection":"どんな〜 / どういう〜 / どのような〜 for \"What Kind of 〜\""} -->
+<!-- grammar-card: {"id":"kind-open-details","kind":"concept","format":"qa","priority":"optional","sourceSection":"どんな〜 / どういう〜 / どのような〜 for \"What Kind of 〜\"","rule":"どんな asks for descriptive details, not necessarily a taxonomic category","example":"Must the answer to どんな犬 be only the dog's breed?","answer":"No. Size, appearance, temperament, or other relevant details may answer it.","explanation":"What kind of is an approximate gloss, not a restriction to formally named categories."} -->
 
 ### いつ for "When"
 
@@ -260,22 +300,32 @@ You can also use いつ as an indirect object with the particle に, which marks
 
   - **When** would you like to move the appointment to?
 
+<!-- vocab-card: {"id":"vocab-itsu","word":"いつ","reading":"いつ","meaning":"when","priority":"optional","sourceSection":"いつ for \"When\""} -->
+<!-- grammar-card: {"id":"itsu-particles","kind":"concept","format":"qa","priority":"optional","sourceSection":"いつ for \"When\"","rule":"Adverbial いつ often lacks a time particle, but nominal or result-target uses can take particles","example":"Is いつに always wrong because いつ東京に行きますか has no に?","answer":"No. いつに can ask the new target time of a rescheduled appointment; いつが can mark a time as the subject.","explanation":"Adverbial いつ needs no ordinary time に, while other grammatical uses remain possible."} -->
+
 ### なぜ / なんで / どうして for "Why?"
 
 There are a few ways of asking "why" in Japanese: 何故, 何で, and どうして. They are all question adverbs and their functions are almost the same. However, they carry different nuances and levels of formality.
+
+<!-- grammar-card: {"id":"why-register","kind":"concept","format":"qa","priority":"optional","sourceSection":"なぜ / なんで / どうして for \"Why?\"","rule":"The common why words differ in register and stance rather than basic interrogative function","example":"Which why word tends to sound most formal and logical, compared with casual なんで?","answer":"なぜ; どうして is often intermediate in formality and can sound more personally engaged.","explanation":"These are tendencies, not a guarantee about the emotion of every question."} -->
 
 #### なぜ
 
 なぜ, or 何故, is the most suitable option for formal situations in both conversation and writing. It has a more logical, matter-of-fact nuance compared to the other two common ways of asking why.
 
+<!-- vocab-card: {"id":"vocab-naze","word":"なぜ","reading":"なぜ","meaning":"why (often formal or logical in tone)","priority":"optional","sourceSection":"なぜ"} -->
+
 #### なんで
 
 なんで, or 何で, is the most casual option of the three. Compared to the rational, almost philosophical sound of なぜ, なんで can give more emotional weight to the question "why."
+
+<!-- vocab-card: {"id":"vocab-nande","word":"なんで","reading":"なんで","meaning":"why (casual, often emotionally engaged)","priority":"optional","sourceSection":"なんで"} -->
 
 #### どうして
 
 In terms of formality, どうして is somewhere between なぜ and なんで. Like なんで, it can express a personal or emotional investment in the question, and it lacks the more thoughtful, rational tone of なぜ.
 
+<!-- vocab-card: {"id":"vocab-doushite","word":"どうして","reading":"どうして","meaning":"why (between なぜ and なんで in formality)","priority":"optional","sourceSection":"どうして"} -->
 ### どう for "How"
 
 どう is a question adverb that is used for asking about the way things happen or the way things are. It's the question word version of こう, そう, and ああ.
@@ -310,6 +360,11 @@ There's also a very polite version of どう — いかが. You may hear it in c
 
   - **How** was it?
 
+<!-- vocab-card: {"id":"vocab-dou","word":"どう","reading":"どう","meaning":"how; in what way or condition","priority":"optional","sourceSection":"どう for \"How\""} -->
+<!-- vocab-card: {"id":"vocab-douyatte","word":"どうやって","reading":"どうやって","meaning":"how; by what method","priority":"optional","sourceSection":"どう for \"How\""} -->
+<!-- vocab-card: {"id":"vocab-ikaga","word":"いかが","reading":"いかが","meaning":"how (polite)","priority":"optional","sourceSection":"どう for \"How\""} -->
+<!-- grammar-card: {"id":"method-decision-contrast","kind":"concept","format":"qa","priority":"optional","sourceSection":"どう for \"How\"","rule":"どうやって asks a method, while どうする often asks what action to choose","example":"How does asking どうやって調理する differ from asking 練習のあと、どうする?","answer":"The first asks how to cook it; the second asks what to do after practice.","explanation":"どうしたんですか commonly asks what happened or what is wrong, rather than requesting a technical method."} -->
+
 ### どのくらい for "How Much" (Amount)
 
 Being a combination of どの (which) and 位 (amount), どのくらい is a question word to ask about amounts. For example, to ask someone *how much* water they usually drink, you can say:
@@ -333,6 +388,9 @@ Although this kind of question could be asked with a combination of prefix 何�
   - **How tall** are you?
 
 (*Literally*: How much height do you have?)
+
+<!-- vocab-card: {"id":"vocab-donokurai","word":"どのくらい","reading":"どのくらい","meaning":"how much; how long or far (amount or extent)","priority":"optional","sourceSection":"どのくらい for \"How Much\" (Amount)"} -->
+<!-- vocab-card: {"id":"vocab-dorekurai","word":"どれくらい","reading":"どれくらい","meaning":"how much; how long or far (amount or extent)","priority":"optional","sourceSection":"どのくらい for \"How Much\" (Amount)"} -->
 
 どれくらい, which is a mixture of どれ (which thing) and くらい (amount), can also be used interchangeably here.
 
@@ -370,6 +428,11 @@ And finally, it can also occur with 〜ても to emphasize that no amount of eff
 
   - **No matter how much** I wash this, the stain doesn't come off.
 
+<!-- vocab-card: {"id":"vocab-ikura","word":"いくら","reading":"いくら","meaning":"how much (usually a price or monetary amount in questions)","priority":"optional","sourceSection":"いくら for \"How Much\" (Cost/Price)"} -->
+<!-- vocab-card: {"id":"vocab-oikura","word":"おいくら","reading":"おいくら","meaning":"how much (polite price question)","priority":"optional","sourceSection":"いくら for \"How Much\" (Cost/Price)"} -->
+<!-- grammar-card: {"id":"price-amount-contrast","kind":"concept","format":"qa","priority":"essential","sourceSection":"いくら for \"How Much\" (Cost/Price)","rule":"Interrogative いくら normally asks money, whereas どのくらい asks broader extent","example":"Which expression normally asks how much water someone drinks: いくら or どのくらい?","answer":"どのくらい; いくら normally asks a price or monetary amount.","explanation":"どのくらい also covers time, distance, and height, with countable or uncountable quantities."} -->
+<!-- grammar-card: {"id":"ikura-temo","kind":"concept","format":"qa","priority":"optional","sourceSection":"いくら for \"How Much\" (Cost/Price)","rule":"いくら…ても expresses no matter how much rather than asking a price","example":"What does いくら洗っても汚れが落ちない mean about washing?","answer":"No matter how much one washes it, the stain does not come off.","explanation":"This concessive use is not a money question and does not share the interrogative price restriction."} -->
+
 ### いくつ for "How Many"
 
 いくつ is a question pronoun for asking the quantity of countable things, especially things that can be counted with 〜つ and 〜個 counters.
@@ -391,16 +454,15 @@ Another thing that 〜つ can count is difference in age. So いくつ can be us
   - How much older/younger than your wife are you?
 (*Literally*: How many years apart from your wife are you?)
 
+<!-- vocab-card: {"id":"vocab-ikutsu","word":"いくつ","reading":"いくつ","meaning":"how many; how old (in age questions)","priority":"optional","sourceSection":"いくつ for \"How Many\""} -->
+<!-- grammar-card: {"id":"count-age","kind":"concept","format":"qa","priority":"optional","sourceSection":"いくつ for \"How Many\"","rule":"いくつ asks counts and can ask age or an age difference; お adds politeness","example":"Is いくつ limited to asking the number of objects, never a person's age?","answer":"No. It can ask a child's age or an age difference, and おいくつ is a polite age-question form.","explanation":"The child's つ-counter use does not prohibit conventional おいくつ for an adult's age."} -->
+
 Just like いくら, you can attach an honorific prefix 御 (お) to いくつ to sound polite.
 
   - 奥さんとはおいくつ離れてるんですか？
 
   - How much older/younger than your wife are you? 
 (*Literally*: How many years apart from your wife are you?)
-
-<!-- grammar-card: {"rule":"何 asks which thing","hint":"what","example":"ケンイチに___をあげたの？","answer":"何","explanation":"何を asks what was given to Kenichi."} -->
-
-<!-- grammar-card: {"rule":"誰 asks which person","hint":"who","example":"___にプレゼントをあげたの？","answer":"誰","explanation":"誰に asks who received the present."} -->
 
 ## Beyond the Basics
 
@@ -421,6 +483,8 @@ When the context is clear, you can even omit the information between the questio
   - We haven't decided [when (we're getting married)]. However, we are going to get married.
 
 Be careful not to confuse this structure with the other times a question word can pair up with か, when it's used to indicate something unknown or of unspecified quantity.
+
+<!-- grammar-card: {"id":"embedded-ka","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Embedded Questions Using Question Words","rule":"か closes an embedded question clause","example":"We haven't decided when to marry: いつ結婚する___決めてない。","answer":"か","explanation":"か marks the embedded question's boundary. Context can shorten it to いつか, which must not automatically be read as someday."} -->
 
 ### Question Word + か
 
@@ -477,6 +541,16 @@ When question words are combined with the particle か, they indicate an unspeci
   - アイス**いくつか**買ってくるよ。
 
   - I'll get **a few** ice creams.
+
+<!-- vocab-card: {"id":"vocab-nanika","word":"何か","reading":"なにか","meaning":"something","priority":"optional","sourceSection":"Question Word + か"} -->
+<!-- vocab-card: {"id":"vocab-dareka","word":"誰か","reading":"だれか","meaning":"someone","priority":"optional","sourceSection":"Question Word + か"} -->
+<!-- vocab-card: {"id":"vocab-dokoka","word":"どこか","reading":"どこか","meaning":"somewhere","priority":"optional","sourceSection":"Question Word + か"} -->
+<!-- vocab-card: {"id":"vocab-doreka","word":"どれか","reading":"どれか","meaning":"one of them; any one (unspecified)","priority":"optional","sourceSection":"Question Word + か"} -->
+<!-- vocab-card: {"id":"vocab-itsuka","word":"いつか","reading":"いつか","meaning":"sometime; someday (indefinite use)","priority":"optional","sourceSection":"Question Word + か"} -->
+<!-- vocab-card: {"id":"vocab-ikuraka","word":"いくらか","reading":"いくらか","meaning":"some amount; somewhat","priority":"optional","sourceSection":"Question Word + か"} -->
+<!-- vocab-card: {"id":"vocab-ikutsuka","word":"いくつか","reading":"いくつか","meaning":"some; a few","priority":"optional","sourceSection":"Question Word + か"} -->
+
+<!-- grammar-card: {"id":"indefinite-something","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Question Word + か","rule":"か after a question word turns it into 'some-'","hint":"Use the indefinite expression meaning something, in kanji and kana.","example":"コンビニで___甘いの買ってきて。","answer":"何か","explanation":"何か (なにか) means something here, not an embedded question asking what."} -->
 
 ### Question Word + も
 
@@ -558,6 +632,12 @@ And then there are question words that work in both negative and positive senten
 
 Some of the pairs of question words + も are used idiomatically. For example, どうしても means "no matter what" and いつも means "always."
 
+<!-- grammar-card: {"id":"mo-polarity","kind":"concept","format":"qa","priority":"optional","sourceSection":"Question Word + も","rule":"Question-word + も depends on both the expression and sentence polarity","example":"Does every question word plus も mean everything in an affirmative sentence?","answer":"No. 何も and 誰も normally pair with negatives, while どれも can mean every one affirmatively or none with a negative.","explanation":"どこも can be affirmative for everywhere, and いつも and どうしても have conventional idiomatic meanings."} -->
+<!-- vocab-card: {"id":"vocab-itsumo","word":"いつも","reading":"いつも","meaning":"always; usually","priority":"optional","sourceSection":"Question Word + も"} -->
+<!-- vocab-card: {"id":"vocab-doushitemo","word":"どうしても","reading":"どうしても","meaning":"no matter what; by all means","priority":"optional","sourceSection":"Question Word + も"} -->
+<!-- vocab-card: {"id":"vocab-nanimo","word":"何も","reading":"なにも","meaning":"nothing; not anything (with a negative predicate)","priority":"optional","sourceSection":"Question Word + も"} -->
+<!-- vocab-card: {"id":"vocab-doremo","word":"どれも","reading":"どれも","meaning":"every one; none of them (with a negative predicate)","priority":"optional","sourceSection":"Question Word + も"} -->
+
 #### Question Word + でも
 
 When a question word is used with でも, it means "no matter 〜," such as "no matter where (anywhere)" or "no matter what (anything)."
@@ -625,6 +705,12 @@ Like the combination of question words and も, some other words and particles c
 
   - This dog is kind to anyone.
 
+<!-- grammar-card: {"id":"demo-free-choice","kind":"concept","format":"qa","priority":"optional","sourceSection":"Question Word + でも","rule":"Question-word + でも expresses free choice; a case particle may intervene","example":"What does 誰にでも express in この犬は、誰にでも優しい?","answer":"Kind to anyone, regardless of which person it is.","explanation":"に retains the recipient/target relation inside 誰にでも; 何でも similarly means anything."} -->
+<!-- vocab-card: {"id":"vocab-nandemo","word":"何でも","reading":"なんでも","meaning":"anything; whatever","priority":"optional","sourceSection":"Question Word + でも"} -->
+<!-- vocab-card: {"id":"vocab-daredemo","word":"誰でも","reading":"だれでも","meaning":"anyone; whoever","priority":"optional","sourceSection":"Question Word + でも"} -->
+<!-- vocab-card: {"id":"vocab-dokodemo","word":"どこでも","reading":"どこでも","meaning":"anywhere; wherever","priority":"optional","sourceSection":"Question Word + でも"} -->
+<!-- vocab-card: {"id":"vocab-itsudemo","word":"いつでも","reading":"いつでも","meaning":"anytime; whenever","priority":"optional","sourceSection":"Question Word + でも"} -->
+
 ### 何〜 As Prefix
 
 When you want to ask a specific question like "what time" or "how many people," you can use 何 (what) as a prefix.
@@ -656,6 +742,9 @@ This  何(なに)〜 prefix usually works with word variants that have a common 
   - **どの国**に行きましたか？
 
   - **Which country(s)** did you go to?
+
+<!-- grammar-card: {"id":"counter-reading-contrast","kind":"concept","format":"qa","priority":"optional","sourceSection":"何〜 As Prefix","rule":"何人 readings distinguish a numerical count from nationality","example":"How do なんにん and なにじん change the question written 何人?","answer":"なんにん asks how many people; なにじん asks what nationality.","explanation":"Similarly, なんけん asks how many prefectures while なにけん asks which prefecture. Do not save isolated counter or sound fragments as vocabulary."} -->
+<!-- grammar-card: {"id":"country-determiner","kind":"concept","format":"qa","priority":"optional","sourceSection":"何〜 As Prefix","rule":"どの can identify items when their names do not share a conventional suffix for 何","example":"Why is どの国 a more natural general question for which country than copying 何県 into 何国?","answer":"Country names do not consistently share the suffix 国, so the determiner どの is a natural way to select a country.","explanation":"The lesson's 何-prefix pattern depends on established word formations, not automatic replacement before every noun."} -->
 
   
 
@@ -752,8 +841,6 @@ by niwa saburoo の日本語文法概説
 <!-- quiz: {"type":"multiple-choice","question":"What does \"**ケンイチ**に**プレゼント**をあげたの？\" mean?","options":["Did you give **Kenichi** **a present**?","Did you go to **a restaurant**?","Out of all foods, **which one** is your most favorite?","We have draft beer, bottled beer, and canned beer. **Which one** would you prefer?"],"answer":0} -->
 
 <!-- quiz: {"type":"multiple-choice","question":"What does \"食べ物の中で、**どれ**が一番好き？\" mean?","options":["Out of all foods, **which one** is your most favorite?","Did you go to **a restaurant**?","Did you give **Kenichi** **a present**?","We have draft beer, bottled beer, and canned beer. **Which one** would you prefer?"],"answer":0} -->
-
-<!-- grammar-card: {"rule":"か after a question word turns it into 'some-'","hint":"何 + か","example":"コンビニで___甘いの買ってきて。","answer":"何か","explanation":"何か甘いの asks for something sweet without asking a question."} -->
 
 ## Sources
 

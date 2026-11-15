@@ -1,5 +1,7 @@
 # 行く vs 来る — Go and Come
 
+<!-- vocab-inventory: {"mode":"explicit"} -->
+
 > **Source:** Content from [Tofugu](https://www.tofugu.com/japanese-grammar/iku-kuru/). For personal study.
 
 行く・来る: Japanese Verbs for "Go" and "Come"
@@ -45,6 +47,13 @@ On the other hand, "to come" in English can refer to movements shared between th
 
 On this page, you'll learn how 行く and 来る can be used with other words or in different forms to acquire additional meanings — let's *go*!
 
+<!-- vocab-card: {"id":"vocab-iku","word":"行く","reading":"いく","meaning":"to go","priority":"essential","sourceSection":"The Basics"} -->
+<!-- vocab-card: {"id":"vocab-kuru","word":"来る","reading":"くる","meaning":"to come","priority":"essential","sourceSection":"The Basics"} -->
+<!-- grammar-card: {"id":"iku-yuku-reading","kind":"concept","format":"qa","priority":"optional","sourceSection":"The Basics","rule":"行く also has the reading ゆく, often in poetic contexts","example":"How does the less usual reading ゆく of 行く differ in register from everyday いく?","answer":"ゆく often sounds poetic; いく is the usual modern reading.","explanation":"Both readings refer to going. The alternate reading is a register distinction, not a different direction of movement."} -->
+<!-- grammar-card: {"id":"iku-speaker-departure","kind":"rule","format":"cloze","priority":"essential","sourceSection":"The Basics","rule":"A speaker moving away from their current location normally uses 行く, even for English I'm coming","example":"Your friend calls you over from elsewhere: ちょっと待って！今___よ！","answer":"行く","explanation":"The speaker is on the departure side. Japanese does not normally adopt the waiting listener's location merely because English would use coming."} -->
+<!-- grammar-card: {"id":"kuru-incoming-train","kind":"rule","format":"cloze","priority":"essential","sourceSection":"The Basics","rule":"来る is movement towards where the speaker is","hint":"The speaker is waiting on the platform","example":"電車(でんしゃ)、もうすぐ___よ。","answer":"来る","explanation":"The train approaches the speaker's arrival-side viewpoint. 行く would describe movement away instead."} -->
+<!-- grammar-card: {"id":"iku-completed-contraction","kind":"rule","format":"cloze","priority":"optional","sourceSection":"The Basics","rule":"ちゃった marks an action completed, often with regret","hint":"Contract 行ってしまった in casual speech","example":"電車、___ね。","answer":"行っちゃった","explanation":"行っちゃった contracts 行ってしまった. Here the train has already gone, to the speakers' disappointment; regret is common but not obligatory in every use."} -->
+
 ### Patterns of Use
 
 Like all main verbs in Japanese, 行く and 来る generally go at the end of a sentence or clause.
@@ -80,6 +89,10 @@ When different particles mark multiple parts, you can switch around the position
 バスで学校に [行く・来る]
 
   - go/come to school by bus
+
+<!-- grammar-card: {"id":"iku-destination-particles","kind":"concept","format":"qa","priority":"optional","sourceSection":"Particle + 行く・来る","rule":"に and へ can mark the destination while まで highlights how far the movement extends","example":"What extra focus can 学校まで行く have compared with simply naming school as the destination?","answer":"It highlights school as the endpoint, potentially all the way to school.","explanation":"に names the destination, へ emphasizes direction and may sound more formal in this use, while まで sets the terminal extent."} -->
+<!-- grammar-card: {"id":"iku-transport","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Particle + 行く・来る","rule":"で marks the means of travel","example":"バス___学校に行く。 (by bus)","answer":"で","explanation":"で marks transport, while に marks the destination. The two phrases can change order without reversing their roles."} -->
+<!-- vocab-card: {"id":"vocab-toho","word":"徒歩","reading":"とほ","meaning":"going on foot; walking","priority":"optional","sourceSection":"Particle + 行く・来る"} -->
 
 #### て form + 行く・来る
 
@@ -145,6 +158,10 @@ The verb 行く is a godan verb and the verb 来る is an irregular verb, so the
     
   
 
+<!-- grammar-card: {"id":"iku-irregular-past","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Conjugations","rule":"行く is godan but has the exceptional plain past 行った","example":"昨日、学校に___。 (行く, plain past)","answer":"行った","explanation":"The past is 行った, not the regular く-verb pattern ending in いた. Its て form likewise uses 行って."} -->
+<!-- grammar-card: {"id":"kuru-reading-change","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Conjugations","rule":"Irregular 来る uses the こ reading in its plain negative","example":"来る → plain negative: ___。 (write the kana reading)","answer":"こない","explanation":"来る is くる, but 来ない is こない. The polite 来ます and past 来た instead use き: きます and きた."} -->
+<!-- grammar-card: {"id":"iku-polite-past-negative","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Conjugations","rule":"Polite past negative 行く uses the stem 行き plus ませんでした","example":"昨日は学校に行き___。 (did not go; polite)","answer":"ませんでした","explanation":"The godan polite stem is 行き. Compare irregular 来ませんでした, read きませんでした, in the conjugation table."} -->
+
 ### Politeness
 
 The formal versions are exactly the same for both 行く and 来る. The respectful ways of saying 行く and 来る are いらっしゃる or おいでになる, while the humble way of saying 行く and 来る is  参(まい)る. These words are used in formal situations.
@@ -169,9 +186,10 @@ The formal versions are exactly the same for both 行く and 来る. The respect
 おいでになる
       参る
 
-<!-- grammar-card: {"rule":"ちゃった marks an action completed, often with regret","hint":"行ってしまった → ?","example":"電車、___ね。","answer":"行っちゃった","explanation":"行っちゃった is the casual contraction of 行ってしまった: the train has gone, unfortunately."} -->
-
-<!-- grammar-card: {"rule":"来る is movement towards where the speaker is","hint":"行く / 来る","example":"電車(でんしゃ)、もうすぐ___よ。","answer":"来る","explanation":"The train is approaching the speaker's position, so 来る is used rather than 行く."} -->
+<!-- grammar-card: {"id":"iku-kuru-honorific-humble","kind":"concept","format":"qa","priority":"optional","sourceSection":"Politeness","rule":"行く and 来る share honorific and humble replacements chosen by social role","example":"How do the honorific and humble replacements for 行く and 来る differ in whom they elevate?","answer":"いらっしゃる or おいでになる honors the person going or coming; 参る humbly describes the speaker's or in-group's movement.","explanation":"Both basic verbs share these replacements. Humble language is not a respectful label for a superior's movement."} -->
+<!-- vocab-card: {"id":"vocab-irassharu","word":"いらっしゃる","reading":"いらっしゃる","meaning":"to go; to come (honorific in this lesson)","priority":"optional","sourceSection":"Politeness"} -->
+<!-- vocab-card: {"id":"vocab-oide-ni-naru","word":"おいでになる","reading":"おいでになる","meaning":"to go; to come (honorific in this lesson)","priority":"optional","sourceSection":"Politeness"} -->
+<!-- vocab-card: {"id":"vocab-mairu","word":"参る","reading":"まいる","meaning":"to go; to come (humble)","priority":"optional","sourceSection":"Politeness"} -->
     
   
 
@@ -195,11 +213,15 @@ Let's take a look at another situation. Imagine one of your friends is moving so
 
 Similarly, "go buy coffee" is コーヒーを買いに行く and "come eat sushi" is  寿司(すし)を食べに来る. You can make many sentences with this pattern!
 
+<!-- grammar-card: {"id":"iku-purpose-stem","kind":"rule","format":"cloze","priority":"essential","sourceSection":"〜に行く/来る for \"To Go/Come To Do Something\"","rule":"Verb stem plus に行く or に来る expresses the purpose of movement","example":"コーヒーを買い___行く。 (go to buy coffee)","answer":"に","explanation":"The purpose verb uses its stem 買い, not its dictionary form or て form. Verbal nouns can also precede に, as in 勉強に行く."} -->
+
 ## 〜て行く/来る for Supplementing Meaning
 
 行く and 来る can also follow another verb in its て form. Here they work as helping verbs, a.k.a. auxiliary verbs, which supplement the main verb. In this use, 行く and 来る are commonly written in kana, as in 〜ていく/くる, because they become a grammatical feature and their literal meanings are weakened.
 
 What nuance いく and くる supplement can change depending on the main verb. This section will look at how they work with different types of verbs!
+
+<!-- grammar-card: {"id":"iku-kuru-auxiliary-writing","kind":"concept","format":"qa","priority":"optional","sourceSection":"〜て行く/来る for Supplementing Meaning","rule":"Auxiliary いく and くる commonly use kana because they supplement another verb","example":"Why are いく and くる often written in kana after another verb's て form?","answer":"They function as helping verbs with weakened literal go/come meanings.","explanation":"The auxiliary can add direction, sequence, return, or temporal development depending on the main verb and context; it is not always literal travel."} -->
 
 ### General Action
 
@@ -222,12 +244,16 @@ For example, imagine you are going to visit your friend's place. If you are gett
 
 Here, it doesn't matter if you buy them on the way there or ahead of time. It simply means you'll purchase the donuts sometime before getting there.
 
+<!-- grammar-card: {"id":"teiku-action-then-go","kind":"rule","format":"cloze","priority":"essential","sourceSection":"General Action","rule":"ていく adds 'and go' to an action","hint":"Buy the donuts before going to the friend's place","example":"ドーナツを買っ___よ！","answer":"ていく","explanation":"買っていく combines buying first and then going there. The purchase can happen earlier or on the way; the speaker is still on the departure side."} -->
+
 If the donuts are a surprise gift, you might not tell your friend until after you get to their house. In this case, you'll change いく to くる since you've already bought the donuts and arrived at your friend's house.
 
   - ドーナツを買っ**てきた**よ！
 
   - I got some donuts for you/us.
 (*Literally*: I bought some donuts and then came here.)
+
+<!-- grammar-card: {"id":"tekita-action-then-arrive","kind":"rule","format":"cloze","priority":"optional","sourceSection":"General Action","rule":"てきた can describe an action completed before arrival at the current location","example":"You have arrived with the donuts: ドーナツを買っ___よ！","answer":"てきた","explanation":"The speaker has bought them and come here. Arrival changes the viewpoint compared with the earlier promise 買っていく."} -->
 
 Similarly, if you are going somewhere after eating lunch, you can say 昼ごはんを食べていく (I'll eat lunch and then go there). And after you arrive at your destination, you can say 昼ごはんを食べてきた (I ate lunch and then came here). It's pretty straightforward, right?
 
@@ -251,6 +277,9 @@ Let's take a look at one more example. Imagine after you and your friend have hu
 (*Literally*: Are you going to eat supper and then go?)
 
 If you look at the literal meaning, it may seem a strange way of asking the question. However, by adding 行く, your friend's mother can show she is aware that you have to leave at some point. It's a small additional nuance, but now the question can ask if you are willing to eat dinner *while you are still at their place*. 2
+
+<!-- grammar-card: {"id":"teiku-stay-for-dinner","kind":"concept","format":"qa","priority":"optional","sourceSection":"General Action","rule":"食べていく can invite a guest to eat before leaving","example":"At your host's house, what does 夕飯、食べていく？ invite you to do?","answer":"Stay for supper before going home or leaving.","explanation":"The host acknowledges your later departure. This is not a request to take the meal away; 食べていく can also have the separate livelihood idiom noted later."} -->
+<!-- vocab-card: {"id":"vocab-tabeteiku-livelihood","word":"食べていく","reading":"たべていく","meaning":"to make a living; to sustain oneself (idiomatic use)","priority":"optional","sourceSection":"General Action"} -->
 
 ### Accompaniment
 
@@ -276,6 +305,13 @@ This use also applies to clothes-related verbs, such as  着(き)る ("to wear" 
 
   - go/come to the hike wearing pumps
 
+<!-- grammar-card: {"id":"iku-accompaniment","kind":"concept","format":"qa","priority":"optional","sourceSection":"Accompaniment","rule":"持って and 連れて combine with いく/くる to express taking or bringing","example":"How do 持っていく and 連れていく differ in the kind of accompaniment they describe?","answer":"持っていく takes a thing along; 連れていく takes a person or animal along.","explanation":"Switch to くる for bringing toward the arrival-side viewpoint. With 着る or はく, the same auxiliary pattern describes going or coming while wearing the clothing."} -->
+<!-- vocab-card: {"id":"vocab-motsu","word":"持つ","reading":"もつ","meaning":"to hold; to carry; to have","priority":"optional","sourceSection":"Accompaniment"} -->
+<!-- vocab-card: {"id":"vocab-tsureru","word":"連れる","reading":"つれる","meaning":"to take along; to accompany (a person or animal)","priority":"optional","sourceSection":"Accompaniment"} -->
+<!-- vocab-card: {"id":"vocab-kiru","word":"着る","reading":"きる","meaning":"to wear; to put on (upper-body or general clothing)","priority":"optional","sourceSection":"Accompaniment"} -->
+<!-- vocab-card: {"id":"vocab-haku","word":"はく","reading":"はく","meaning":"to wear; to put on (lower-body clothing, shoes, or socks)","priority":"optional","sourceSection":"Accompaniment"} -->
+<!-- grammar-card: {"id":"iku-clothing-state","kind":"concept","format":"qa","priority":"optional","sourceSection":"Accompaniment","rule":"A clothing verb plus ていく can describe what one wears while going","example":"Does パーティーに赤いドレスを着ていく mean putting on the dress after arriving?","answer":"No. It describes going to the party wearing the red dress.","explanation":"着る establishes the clothing state that continues while going; it does not mean go first, then get dressed."} -->
+
 ### Movement
 
 Often, 行く and 来る also follow movement verbs, such as 歩く (to walk), 走る (to run),  泳(およ)ぐ (to swim), and  飛(と)ぶ (to fly).
@@ -297,6 +333,8 @@ If you are at or around the office and your focus shifts to the movement towards
   - I came to the office on foot.
 
 Similarly, if you are running to the office, you may 会社に走っていく/くる. If your office is on an island surrounded by a lake, you may 会社に泳いでいく/くる. And if you can fly like Anpanman, you may 会社に飛んでいく/くる.
+
+<!-- grammar-card: {"id":"iku-manner-direction","kind":"concept","format":"qa","priority":"optional","sourceSection":"Movement","rule":"A manner verb such as 歩く can use ていく or てくる to supply destination-oriented movement","example":"Why is 会社に歩いていく more natural than simply 会社に歩く for walking to the office?","answer":"歩く names the manner of movement; いく supplies the directed going toward the destination.","explanation":"From the arrival-side viewpoint one can instead say 歩いてきた. Other directional expressions such as まで are possible too; the auxiliary is not universally obligatory."} -->
 
 ### Motion
 
@@ -352,7 +390,11 @@ On the other hand, if you're a member of Hanako's family in Japan and talking ab
 
   - Hanako came back to Japan.
 
-<!-- grammar-card: {"rule":"ていく adds 'and go' to an action","hint":"買う + いく","example":"ドーナツを買っ___よ！","answer":"ていく","explanation":"買っていく means to buy the doughnuts and take them along."} -->
+<!-- grammar-card: {"id":"iku-motion-viewpoint","kind":"concept","format":"qa","priority":"optional","sourceSection":"Motion","rule":"Directional verbs can omit いく/くる for a neutral report or add them to locate the observer's viewpoint","example":"What does 入ってきた add beyond a neutral 入った report?","answer":"It pictures the entering movement toward the speaker's side of the scene.","explanation":"出ていった similarly presents departure away from the observer. Bare 入りました or 出ました suits an objective report without foregrounding the observer."} -->
+<!-- grammar-card: {"id":"iku-future-return-viewpoint","kind":"concept","format":"qa","priority":"optional","sourceSection":"Motion","rule":"Future くる can naturally picture a return toward the speaker's base","example":"Why can Hanako's family in Japan naturally say 来月帰ってくる about her future return?","answer":"They are on the arrival side and can picture her coming back toward them.","explanation":"From the departure side, a neutral future report often uses 帰る/戻る alone. The lesson's vivid 帰っていく reading can sound more marked, not categorically impossible."} -->
+<!-- vocab-card: {"id":"vocab-kaeru","word":"帰る","reading":"かえる","meaning":"to return home or to one's base","priority":"optional","sourceSection":"Motion"} -->
+<!-- vocab-card: {"id":"vocab-modoru","word":"戻る","reading":"もどる","meaning":"to return to a previous place or state","priority":"optional","sourceSection":"Motion"} -->
+<!-- grammar-card: {"id":"kaeru-modoru-contrast","kind":"rule","format":"qa","priority":"optional","sourceSection":"Motion","rule":"帰る normally returns to a base, while 戻る can also restore a previous state","example":"Which return verb fits a frog returning to its former appearance as a prince?","answer":"戻る.","explanation":"帰る centers on going back to a home or base. 戻る also covers a previous state, so 王子の姿に戻った is appropriate."} -->
 
 ## Beyond The Basics
 
@@ -384,6 +426,10 @@ You'll use this expression not only when you go out somewhere but also when you 
 
 In this case, 〜てくる adds the nuance of "brb" (be right back). It indicates that you'll leave the table to make a phone call and will be back afterward. 5
 
+<!-- grammar-card: {"id":"tekuru-out-and-back","kind":"concept","format":"qa","priority":"essential","sourceSection":"〜て来る for Going and Coming Back","rule":"てくる can frame an outing as doing something elsewhere and returning","example":"Why can a speaker still at home say 友達とランチ食べてくる before leaving?","answer":"They frame the outing as eating elsewhere and then coming back to the shared base.","explanation":"The expected return matters to those staying behind. It does not contradict the normal departure-side use of 行く for simply going toward a listener elsewhere."} -->
+<!-- vocab-card: {"id":"vocab-ittekimasu","word":"行ってきます","reading":"いってきます","meaning":"I'm off (and will come back)","priority":"optional","sourceSection":"〜て来る for Going and Coming Back"} -->
+<!-- vocab-card: {"id":"vocab-itterasshai","word":"行ってらっしゃい","reading":"いってらっしゃい","meaning":"See you later; have a safe trip (said to someone leaving)","priority":"optional","sourceSection":"〜て来る for Going and Coming Back"} -->
+<!-- grammar-card: {"id":"tekuru-phone-etiquette","kind":"concept","format":"qa","priority":"optional","sourceSection":"〜て来る for Going and Coming Back","rule":"電話してくる can politely signal a brief departure and return","example":"At a restaurant table, what does ちょっと電話してくるよ indicate beyond making a call?","answer":"That the speaker will step away to call and then return.","explanation":"The lesson connects this brb framing to avoiding phone conversations at the table, especially in formal restaurants; it is a social practice, not a grammar prohibition."} -->
 ### 〜て来る for Emphasizing Pushy Actions
 
 When someone offers unsolicited or unwelcome action, you can add 〜てくる to express its pushiness. For example, imagine some backseat driver-type keeps lecturing you about the way you study Japanese. Here, you may complain about it to someone else, like:
@@ -400,7 +446,9 @@ What if you want to show your gratitude towards someone's act? In that case, you
 
   - They always teach me a lot.
 
-Here, 〜てくれる is a humble way of saying someone is doing something for you. 〜てもらう is basically the same, but it's often suited for when the favor is done upon your request.
+Here, 〜てくれる presents someone doing something for you as a benefit; it is not itself a humble verb form. 〜てもらう presents you as receiving the favor and often fits a favor you requested.
+
+<!-- grammar-card: {"id":"tekuru-pushy-action","kind":"concept","format":"qa","priority":"optional","sourceSection":"〜て来る for Emphasizing Pushy Actions","rule":"てくる can portray an unsolicited action as directed toward the speaker","example":"In the unwanted-advice example, what makes 教えてくる different from grateful 教えてくれる?","answer":"It presents the teaching as coming at the speaker, potentially pushy or unwelcome, rather than as a welcome favor.","explanation":"Context supplies the unwelcome nuance; not every てくる is pushy. てくれる and てもらう mark a benefit, not automatically a humble register."} -->
 
 ### 行っている
 
@@ -420,6 +468,8 @@ You can use 行っている for more day-to-day outings as well. For example, im
 
   - Mom is out shopping now.
 
+<!-- grammar-card: {"id":"itteiru-result-state","kind":"concept","format":"qa","priority":"essential","sourceSection":"行っている","rule":"行っている can describe the continuing state of having gone and being away","example":"Does 母は今、買い物に行っています necessarily mean Mom is still traveling to the shops?","answer":"No. It can mean she has gone shopping and is still out.","explanation":"The state begins with departure and lasts until the return. The daughter studying in New York illustrates the same gone-away state over a longer period."} -->
+
 ### 来ている
 
 When 来る is in its ている form, you can express that you are currently visiting somewhere. For example, if you want to say you are visiting New York, you can say:
@@ -431,6 +481,8 @@ When 来る is in its ている form, you can express that you are currently vis
 Again, a verb in the ている form describes an ongoing situation that began in the past. When you arrive in New York, you enter a "visiting New York" or "having come to New York" condition. That condition will last as long as your stay does, so until you leave you can say you're 来ている in New York.
 
 To learn more about how the ている form works in general, check out its dedicated page!
+
+<!-- grammar-card: {"id":"kiteiru-result-state","kind":"concept","format":"qa","priority":"optional","sourceSection":"来ている","rule":"来ている can describe a visit continuing after arrival","example":"In 今ニューヨークに来ているんです, has the speaker arrived or must they still be on the way?","answer":"They have arrived and are currently staying or visiting there.","explanation":"The resulting visiting state continues until departure, rather than requiring motion at the instant of speaking."} -->
 
 ### 〜ていく and 〜てくる for Gradual Processes
 
@@ -455,6 +507,9 @@ After months of lessons, let's say you've mastered whatever you were learning. Y
 Again, 〜てくる indicates the endpoint of a gradual process. In this example, it shows you and your friends had worked hard together, but now you are at the endpoint or at least some milestone from which you can look back at your past efforts.
 
 To learn more about this use of 〜ていく and 〜てくる, check out its dedicated page.
+
+<!-- grammar-card: {"id":"teiku-temporal-process","kind":"concept","format":"qa","priority":"optional","sourceSection":"〜ていく and 〜てくる for Gradual Processes","rule":"Temporal ていく looks forward along a developing process","example":"What perspective does 一緒に頑張っていきましょう give to the learning journey?","answer":"Continuing forward together from the present point.","explanation":"The process can begin now or already be underway. The polite ましょう proposes continuing together; literal travel is not required."} -->
+<!-- grammar-card: {"id":"tekuru-temporal-process","kind":"concept","format":"qa","priority":"optional","sourceSection":"〜ていく and 〜てくる for Gradual Processes","rule":"Temporal てくる looks back at development leading up to a present endpoint or milestone","example":"What does 一緒に頑張ってきた仲間 highlight about the shared effort?","answer":"The effort accumulated together up to the point now being looked back from.","explanation":"The endpoint may be a milestone, not the permanent end of all effort. This contrasts with forward-looking 頑張っていく."} -->
 
 ---
 

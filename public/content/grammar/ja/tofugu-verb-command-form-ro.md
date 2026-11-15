@@ -1,5 +1,7 @@
 # ろ / れ — Command Form
 
+<!-- vocab-inventory: {"mode":"explicit"} -->
+
 > **Source:** Content from [Tofugu](https://www.tofugu.com/japanese-grammar/verb-command-form-ro/). For personal study.
 
 Japanese Verb Command Form ろ
@@ -75,6 +77,10 @@ For godan verbs, take a look at the ending of the verb in plain form, which alwa
 > 
 > 
 
+<!-- vocab-card: {"id":"vocab-tatsu","priority":"optional","sourceSection":"Godan Verbs","word":"立つ","reading":"たつ","meaning":"to stand"} -->
+<!-- grammar-card: {"id":"godan-command","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Godan Verbs","rule":"Godan verbs shift the final う sound to え","hint":"頑張る → command","example":"もっと頑張(がんば)___。","answer":"れ","explanation":"頑張る is godan despite ending in る; 頑張れ can encourage someone."} -->
+<!-- grammar-card: {"id":"tsu-command","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Godan Verbs","rule":"Final つ becomes て in the godan command form","example":"立つ → direct command: ___.","answer":"立て","explanation":"This is a command-form vowel shift, not the connective 立って."} -->
+
 #### Ichidan Verbs
 
 For ichidan verbs, you simply remove the 〜る from the plain form verb and add 〜ろ:
@@ -86,6 +92,10 @@ For ichidan verbs, you simply remove the 〜る from the plain form verb and add
 > 見**る**　+　ろ　=　見**ろ**
 > 
 > 
+
+<!-- vocab-card: {"id":"vocab-taberu","priority":"optional","sourceSection":"Ichidan Verbs","word":"食べる","reading":"たべる","meaning":"to eat"} -->
+<!-- vocab-card: {"id":"vocab-miru","priority":"optional","sourceSection":"Ichidan Verbs","word":"見る","reading":"みる","meaning":"to see; to look"} -->
+<!-- grammar-card: {"id":"ichidan-command","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Ichidan Verbs","rule":"Ichidan verbs form the command by replacing る with ろ","hint":"食べる → command","example":"早(はや)く___！","answer":"食べろ","explanation":"This is a blunt order to eat, not a polite request."} -->
 
 #### Irregular verbs
 
@@ -107,6 +117,13 @@ The ichidan verb くれる is also irregular in this form. Instead of becoming �
 > 
 > 
 
+<!-- vocab-card: {"id":"vocab-kuru","priority":"optional","sourceSection":"Irregular verbs","word":"来る","reading":"くる","meaning":"to come"} -->
+<!-- vocab-card: {"id":"vocab-suru","priority":"optional","sourceSection":"Irregular verbs","word":"する","reading":"する","meaning":"to do"} -->
+<!-- vocab-card: {"id":"vocab-kureru","priority":"optional","sourceSection":"Irregular verbs","word":"くれる","reading":"くれる","meaning":"to give to me or my group"} -->
+<!-- grammar-card: {"id":"kuru-command","kind":"rule","format":"qa","priority":"essential","sourceSection":"Irregular verbs","rule":"来る has the irregular command 来い, read こい","example":"Give the direct command of 来る, including its kana reading.","answer":"来い (こい).","explanation":"This is not 来ろ."} -->
+<!-- grammar-card: {"id":"suru-command","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Irregular verbs","rule":"する has the command しろ","example":"する → direct command taught here: ___.","answer":"しろ","explanation":"Memorize the irregular form rather than applying a godan shift."} -->
+<!-- grammar-card: {"id":"kureru-command","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Irregular verbs","rule":"くれる generally drops る without adding ろ in the command form","example":"くれる → usual direct command: ___.","answer":"くれ","explanation":"This is the lesson's exception to ordinary ichidan command formation."} -->
+
 ### Using the Command Form
 
 Since the command form is pretty uh, commanding, it isn't considered super polite. For this reason, it's mostly used in by people in a position of authority to their subordinates. For example:
@@ -123,7 +140,8 @@ The command form is also used in situations where relative social standing is no
 
   - A bear! Run away!
 
-<!-- grammar-card: {"rule":"Ichidan verbs form the command by replacing る with ろ","hint":"食べる → ?","example":"早(はや)く___！","answer":"食(た)べろ","explanation":"食べる becomes 食べろ, a blunt order to eat."} -->
+<!-- vocab-card: {"id":"vocab-nigeru","priority":"optional","sourceSection":"Using the Command Form","word":"逃げる","reading":"にげる","meaning":"to escape; to flee"} -->
+<!-- grammar-card: {"id":"command-social-boundary","kind":"concept","format":"qa","priority":"essential","sourceSection":"Using the Command Form","rule":"Direct commands are forceful; emergencies can override ordinary social caution","example":"Why can 逃げろ！ be appropriate in immediate danger but unsuitable as an ordinary polite request?","answer":"Urgent safety takes priority in an emergency; otherwise the form imposes a strong order and can offend.","explanation":"Authority or urgency can explain its use, but authority does not make it universally courteous."} -->
 
 ## Beyond the Basics
 
@@ -149,6 +167,11 @@ Ok, so what if they keep on smiling at you? This time, you can put a different e
 〜って and 〜ってば indicate that you are repeating the same command, which does a great job of expressing your frustration. Even still, this is less aggressive than やめろ all on its own.
 
 Some older or more traditional learning materials will tell you that the command form is a feature of "male speech," and women do not use it. This is total BS though. If you're mad or wanna be a bit aggressive, you should go for it, no matter who you are!
+
+<!-- grammar-card: {"id":"command-not-gender-exclusive","kind":"concept","format":"qa","priority":"optional","sourceSection":"Softening the Command Form with Particles","rule":"The forceful command form is not restricted to male speakers","example":"Is the direct command form grammatically available only to men?","answer":"No. Speakers of any gender can use it; appropriateness depends on tone, relationship, and situation.","explanation":"A traditional masculine association is not a categorical restriction on who can speak."} -->
+
+<!-- grammar-card: {"id":"command-particle-nuance","kind":"concept","format":"qa","priority":"optional","sourceSection":"Softening the Command Form with Particles","rule":"Particles and closeness can affect the tone of a command without making it polite","example":"Does adding よ to やめろ automatically turn it into a polite request for a superior?","answer":"No. It may soften or reshape the tone between close people, but it remains a command.","explanation":"Intonation and relationship matter; the form is not restricted to men."} -->
+<!-- grammar-card: {"id":"repeated-command","kind":"concept","format":"qa","priority":"optional","sourceSection":"Softening the Command Form with Particles","rule":"って and ってば can mark an insistently repeated command","example":"What does やめろってば convey beyond simply ordering someone to stop?","answer":"The speaker is repeating or insisting on the order: “I said stop it!”","explanation":"It often conveys frustration; it is not a general-purpose politeness marker."} -->
 
 ### The Command Form for Motivation
 
@@ -178,6 +201,10 @@ It's not only coaches that can use this form for encouragement. Let's say you're
 
 Keep in mind, this might not be appropriate if you're speaking face-to-face with the athletes. The distance created between you and them when they're on the field though makes this totally acceptable.
 
+<!-- vocab-card: {"id":"vocab-ganbaru","priority":"optional","sourceSection":"The Command Form for Motivation","word":"頑張る","reading":"がんばる","meaning":"to persevere; to do one's best"} -->
+<!-- vocab-card: {"id":"vocab-yaru","priority":"optional","sourceSection":"The Command Form for Motivation","word":"やる","reading":"やる","meaning":"to do (less formal than する)"} -->
+<!-- grammar-card: {"id":"cheering-context","kind":"concept","format":"qa","priority":"optional","sourceSection":"The Command Form for Motivation","rule":"Commands can encourage in cheering contexts without licensing every face-to-face use","example":"Why does hearing 頑張れ from spectators not prove it suits every direct address to an athlete?","answer":"Cheering from the stands creates a conventional, distanced encouragement context; face-to-face relationships can call for different wording.","explanation":"Command morphology is not inherently angry, but the social setting remains important."} -->
+
 ### Commanding NOT To Do Something
 
 To command someone **not** to do something in Japanese is very easy. Simply add な after the plain form of a verb.
@@ -193,6 +220,8 @@ One common situation where this form of speech is used is when the speaker has a
   - Don't cry! You're a boy, aren't you?
 
 Wow sis, get with the times. Boys can cry too!
+
+<!-- grammar-card: {"id":"negative-command","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Commanding NOT To Do Something","rule":"Add な to dictionary form to make a strong prohibition","example":"Don't worry: 心配する___。","answer":"な","explanation":"Use dictionary form する before な, not positive command しろ."} -->
 
 ---
 
@@ -216,8 +245,6 @@ by 森川 正博
 <!-- quiz: {"type":"multiple-choice","question":"What does \"熊だ！逃げろー！\" mean?","options":["A bear! Run away!","Look straight at the blackboard!","Hey, stop grinning at me like that!","Believe in yourself!"],"answer":0} -->
 
 <!-- quiz: {"type":"multiple-choice","question":"What does \"おい、にやにやするのやめろよ！\" mean?","options":["Hey, stop grinning at me like that!","Look straight at the blackboard!","A bear! Run away!","Believe in yourself!"],"answer":0} -->
-
-<!-- grammar-card: {"rule":"Godan verbs shift the final う sound to え","hint":"頑張る → ?","example":"もっと頑張(がんば)___。","answer":"れ","explanation":"頑張る becomes 頑張れ, which is also the standard cheer at sports events."} -->
 
 ## Sources
 

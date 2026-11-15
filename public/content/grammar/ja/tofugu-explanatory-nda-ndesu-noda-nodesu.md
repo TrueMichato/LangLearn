@@ -1,5 +1,7 @@
 # んです / のです — Explanatory
 
+<!-- vocab-inventory: {"mode":"explicit"} -->
+
 > **Source:** Content from [Tofugu](https://www.tofugu.com/japanese-grammar/explanatory-nda-ndesu-noda-nodesu/). For personal study.
 
 んだ: Japanese Explanatory Form (んです/のだ/のです)
@@ -24,6 +26,9 @@ An example? Let’s say today is your lucky day — you unintentionally impresse
 
 Simply saying 実はイタリアで育った without adding んだ still gives the same information, but it doesn’t sound quite as natural and may come off as a random statement. On the other hand, adding んだ creates a natural flow for you to complete the context by explaining why you can speak Italian, which is something your date is obviously wondering. So even though it’s not a universal translation, the nuance んだ adds in this case is almost like “It’s because…” Whether or not your date explicitly asks why you speak Italian, it’s natural to use んだ in this case.
 
+<!-- vocab-card: {"id":"vocab-sodatsu","priority":"optional","sourceSection":"The Basics","word":"育つ","reading":"そだつ","meaning":"to grow up"} -->
+<!-- grammar-card: {"id":"context-gap","kind":"concept","format":"qa","priority":"essential","sourceSection":"The Basics","rule":"Explanatory forms connect information to a gap in understanding","example":"Why add an explanatory ending when telling a surprised date that you grew up in Italy?","answer":"It presents your upbringing as the missing context explaining your Italian ability, rather than as an unrelated fact.","explanation":"The information itself is unchanged; the ending links it to the listener's implicit question, not to a universal English translation."} -->
+
 Still cloudy? That’s understandable. Although it’s a common expression, it has a very unique and subtle nuance and there’s no exact translation in English. So keep reading to observe more examples to deepen your understanding!
 
 ### Patterns of Use
@@ -31,6 +36,8 @@ Still cloudy? That’s understandable. Although it’s a common expression, it h
 んだ and its variants are made out of the same set of two components. The first part is the particle の (nominalizer). This の often changes to ん especially in spoken Japanese, and that’s why you see variations like んです or んだ. The second part is です and だ, which are very common sentence enders in Japanese. With that in mind, let’s take a look at how you can form a sentence with them.
 
 #### With Verbs
+
+<!-- grammar-card: {"id":"plain-verb-link","kind":"rule","format":"cloze","priority":"essential","sourceSection":"With Verbs","rule":"The plain form comes directly before んです","example":"実(じつ)は、来週(らいしゅう)引(ひ)っ越(こ)す___です。","answer":"ん","explanation":"引っ越すんです keeps the verb plain, with です carrying all the politeness."} -->
 
 Like we mentioned earlier, the first part of んだ is the nominalizer の. So if you are familiar with how verbs interact with the nominalizer の, you might already know how you can attach んだ to verbs.
 For those who are not sure, don’t worry, it’s quite simple with verbs. You can use pretty much any form of verb, like present form, passive form, potential form, negative form, you name it. Then you simply attach んだ (or its variation) at the end.
@@ -71,6 +78,9 @@ Another thing to note is that it only works with the plain form as opposed to th
 
 If you want to be polite, んです would be a good option for you!
 
+<!-- vocab-card: {"id":"vocab-benkyou-suru","priority":"optional","sourceSection":"With Verbs","word":"勉強する","reading":"べんきょうする","meaning":"to study"} -->
+<!-- grammar-card: {"id":"verb-form-limits","kind":"concept","format":"qa","priority":"optional","sourceSection":"With Verbs","rule":"Explanatory endings follow plain descriptive verb forms, not command or volitional forms","example":"Can you attach the explanatory ending directly to 勉強します or 勉強しろ?","answer":"No. Use a plain descriptive form such as 勉強する; put politeness in the final explanatory ending.","explanation":"Past, negative, potential, and passive forms can describe a situation. An imperative or volitional is not the descriptive base used here."} -->
+
 > 
 > 
 > 勉強するんです。
@@ -100,6 +110,8 @@ If you want to be polite, んです would be a good option for you!
   - I wasn’t sad.
 
 い-Adjectives should be in the plain form, not in the polite form.
+
+<!-- grammar-card: {"id":"i-adjective-negative","kind":"rule","format":"cloze","priority":"optional","sourceSection":"With い-Adjectives","rule":"The plain negative adjective precedes the explanatory ending","example":"Explain politely that you are not sad: 悲しくない___。","answer":"んです","explanation":"Keep 悲しくない plain; do not insert です before ん."} -->
 
 > 
 > 
@@ -137,7 +149,13 @@ What about if you wanted to say “I *was* a vegetarian“ or “It *isn’t* ea
 
 In case you were wondering why we added な to the present form instead of だ — that’s because historically, な comes from だ. Crazy, right? But hopefully that explains why we use it with both nouns and な-adjectives (which are noun-based adjectives). Both of these can also precede だ to form a sentence.
 
+<!-- vocab-card: {"id":"vocab-kantan","priority":"optional","sourceSection":"With Nouns And な-Adjectives","word":"簡単","reading":"かんたん","meaning":"easy; simple"} -->
+<!-- grammar-card: {"id":"noun-na-link","kind":"rule","format":"cloze","priority":"essential","sourceSection":"With Nouns And な-Adjectives","rule":"Nouns and な-adjectives take な before んです","example":"彼(かれ)はまだ学生(がくせい)___です。","answer":"なん","explanation":"学生なんです needs な after the affirmative nonpast noun."} -->
+<!-- grammar-card: {"id":"noun-past-link","kind":"rule","format":"cloze","priority":"optional","sourceSection":"With Nouns And な-Adjectives","rule":"Past noun predicates keep だった before the explanatory ending","example":"Explain casually that you were a vegetarian: ベジタリアン___んだ。","answer":"だった","explanation":"The な linker belongs to the affirmative nonpast pattern, not after だった or じゃない."} -->
+
 ### んだ for Explaining
+
+<!-- grammar-card: {"id":"background-response","kind":"rule","format":"cloze","priority":"essential","sourceSection":"んだ for Explaining","rule":"んです supplies the background to a situation","example":"どうしたんですか。— 頭(あたま)が痛(いた)い___。","answer":"んです","explanation":"痛いんです offers the headache as the explanation being asked for."} -->
 
 Adding an explanatory tone is one of the most common features of んだ. We already saw an example of んだ being used for this purpose earlier. In the previous example, you humblebragged about why you speak Italian after you unpurposefully impressed your date with your Italian skills, saying:
 
@@ -165,9 +183,7 @@ For example, your sister is upset because her favorite ice cream (that she even 
 
 Just like that, you can use it to provide information to resolve a misunderstanding. You’ll often see the sentence ending particle よ paired up with this んだ. They match up well because よ indicates you’re trying to offer a new perspective that your listener does not have.
 
-<!-- grammar-card: {"rule":"The plain form comes directly before んです","hint":"引っ越す + んです","example":"実(じつ)は、来週(らいしゅう)引(ひ)っ越(こ)す___です。","answer":"ん","explanation":"引っ越すんです keeps the verb plain, with です carrying all the politeness."} -->
-
-<!-- grammar-card: {"rule":"んです supplies the background to a situation","hint":"explanatory, polite","example":"どうしたんですか。— 頭(あたま)が痛(いた)い___。","answer":"んです","explanation":"痛いんです offers the headache as the explanation being asked for."} -->
+<!-- grammar-card: {"id":"misunderstanding-yo","kind":"concept","format":"qa","priority":"optional","sourceSection":"んだ for Resolving Misunderstandings","rule":"Explanatory んだよ can supply a corrective perspective","example":"What is the role of the ending in 違うよ、お母さんが食べたんだよ when someone wrongly blames you?","answer":"It presents the mother eating it as the explanation that corrects the listener's mistaken belief.","explanation":"よ highlights a perspective the listener lacks; the explanatory ending connects that information to the accusation."} -->
 
 ## Beyond The Basics
 
@@ -197,6 +213,9 @@ Let’s take a look at an example. On a different occasion, your roomie looks ki
 
 んだ is perfect to express realizations with the nuance of “Oh, gotcha” because you use it when the gap of understanding is filled. It’s like you put the puzzle pieces together yourself.
 
+<!-- vocab-card: {"id":"vocab-shoushin-suru","priority":"optional","sourceSection":"んだ And んですか for Realization","word":"昇進する","reading":"しょうしんする","meaning":"to get promoted"} -->
+<!-- grammar-card: {"id":"realization-register","kind":"concept","format":"qa","priority":"optional","sourceSection":"んだ And んですか for Realization","rule":"Self-directed realization favors んだ; a polite confirming response can use んですか","example":"After discovering why someone is happy, how does a private realization differ from a polite confirming response?","answer":"A private realization can end in んだ; a polite response to the person can use んですか as confirmation.","explanation":"昇進したんだ processes the discovery; 昇進したんですか politely checks it. This is not a requirement to question every polite explanation."} -->
+
 ### の And んですか For Seeking Explanation
 
 んだ can also be used for asking for an explanation or a request to fill in the blank in the form of a question. And in real-life conversations, the variants, の and んですか, are most commonly applied for this use. We mentioned it briefly in the previous section, but んですか is a combination of んです and the question marker, か).
@@ -218,6 +237,8 @@ In this case, you want to use の or んですか as you’re seeking an explana
 
 Ew, a cockroach!? Yikes, but it all makes sense now why everyone is freaking out!
 
+<!-- grammar-card: {"id":"seek-explanation","kind":"rule","format":"cloze","priority":"essential","sourceSection":"の And んですか For Seeking Explanation","rule":"んですか asks for the context behind an observed situation","example":"Everyone at work is panicking. Ask politely what happened: 何かあった___？","answer":"んですか","explanation":"The question asks the listener to fill a contextual gap. Casual speech can use 何かあったの？"} -->
+
 ### んだ For Introducing A New Topic
 
 We’ve seen examples where んだ gets used for explanation when something is unclear — there’s a gap in understanding that needs to be filled. For example, your friend might call you and say:
@@ -233,6 +254,8 @@ This is the good ol’ んだ at play. You were probably wondering why your frie
   - I can’t see you today. I caught a cold. I’m sorry.
 
 With んだ, your listener can expect some sort of relevant statement coming. That way, んだ can be a good way of introducing a new topic, or starting a conversation.
+
+<!-- grammar-card: {"id":"context-first","kind":"concept","format":"qa","priority":"optional","sourceSection":"んだ For Introducing A New Topic","rule":"An explanatory sentence may supply context before the main message","example":"Why can the sentence about catching a cold come before the cancellation in 風邪ひいちゃったんだ。だから今日は会えない?","answer":"It establishes background first and leads the listener to expect a relevant consequence.","explanation":"The gap need not already have been asked about; context can prepare the next statement."} -->
 
 ### Different Forms of んだ — んです / のです / のだ
 
@@ -251,6 +274,8 @@ The other components are です and だ. To put it simply, です is a politenes
   - I’m going to the beach tomorrow.
 
 のです, on the other hand, sounds a bit stiff or overly polite when it’s used in conversation, but you would see it in casual readings like blogs or novels.
+
+<!-- grammar-card: {"id":"variant-registers","kind":"concept","format":"qa","priority":"essential","sourceSection":"Different Forms of んだ — んです / のです / のだ","rule":"Contraction and politeness are separate dimensions of explanatory endings","example":"How do the contracted and uncontracted explanatory endings differ in register?","answer":"んだ and んです are colloquial, with んです polite; のだ and のです are more characteristic of writing, with のです polite.","explanation":"のだ can be assertive in formal writing. のです may sound stiff in conversation; these are tendencies, not bans on spoken use."} -->
 
   - 母は最初ケンイチの結婚に反対したのです。
 
@@ -279,6 +304,9 @@ While you might not see んだ being used like this in real-life too often, you�
   - You eat breakfast everyday, okay?
 
 This probably comes from you knowing your son’s habit of skipping breakfast. You’re worried about him and you use んだよ to express that you’re wanting him to understand he should eat breakfast everyday.
+
+<!-- vocab-card: {"id":"vocab-nigeru","priority":"optional","sourceSection":"んだ For Commands","word":"逃げる","reading":"にげる","meaning":"to escape; to run away"} -->
+<!-- grammar-card: {"id":"explanatory-command","kind":"concept","format":"qa","priority":"optional","sourceSection":"んだ For Commands","rule":"A plain descriptive verb with んだ can function as an emphatic directive","example":"In an urgent movie scene, what does 逃げるんだ！ do beyond merely explaining an escape?","answer":"It urges the listener to run, as if making them understand the seriousness of the situation.","explanation":"The directive uses dictionary-form 逃げる, not an imperative followed by んだ. Everyday んだよ can also convey concerned instructions."} -->
 
 ---
 
@@ -316,8 +344,6 @@ by 石黒 圭
 <!-- quiz: {"type":"multiple-choice","question":"What does \"勉強したんだ。\" mean?","options":["I studied.","I study.","I was made to study.","I’m sad."],"answer":0} -->
 
 <!-- quiz: {"type":"multiple-choice","question":"What does \"勉強させられたんだ。\" mean?","options":["I was made to study.","I study.","I studied.","I’m sad."],"answer":0} -->
-
-<!-- grammar-card: {"rule":"Nouns and な-adjectives take な before んです","hint":"学生 + んです","example":"彼(かれ)はまだ学生(がくせい)___です。","answer":"なん","explanation":"学生なんです inserts the な that is required after a noun."} -->
 
 ## Sources
 

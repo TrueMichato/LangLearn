@@ -1,5 +1,7 @@
 # Possessive Adjectives & Pronouns
 
+<!-- vocab-inventory: {"mode":"explicit"} -->
+
 Spanish possessives come in two forms: **short (unstressed)** forms that sit directly before the noun, and **long (stressed)** forms that follow the noun or stand alone as pronouns. The crucial rule throughout: possessives agree in gender and number with the **thing owned**, not with the owner.
 
 ## Short Possessive Adjectives (Before the Noun)
@@ -20,6 +22,10 @@ These are the everyday forms. They go directly before the noun and **never chang
 - **Mi casa es tu casa** (mee KAH-sah ehs too KAH-sah) — My house is your house
 - **Nuestros amigos son divertidos** — Our friends are fun *(amigos = masc. pl. → nuestros)*
 - **Nuestra profesora es muy buena** — Our teacher is very good *(profesora = fem. → nuestra)*
+
+<!-- vocab-card: {"id":"vocab-mi","word":"mi","meaning":"my (singular possessed noun)","priority":"optional","sourceSection":"Short Possessive Adjectives (Before the Noun)"} -->
+<!-- vocab-card: {"id":"vocab-tu","word":"tu","meaning":"your (informal singular owner; singular possessed noun)","priority":"optional","sourceSection":"Short Possessive Adjectives (Before the Noun)"} -->
+<!-- grammar-card: {"id":"mi-accent","kind":"concept","format":"qa","priority":"essential","sourceSection":"Short Possessive Adjectives (Before the Noun)","rule":"Possessive mi and prepositional mí differ","example":"How do mi in mi casa and mí in para mí differ?","answer":"Mi means my and has no accent; mí means me after a preposition and has an accent.","explanation":"Do not add an accent to the possessive merely because it refers to the speaker."} -->
 
 <!-- quiz: {"type":"multiple-choice","question":"Choose the correct possessive: 'We have ___ books here.' (books = masculine plural)","options":["nuestro","nuestra","nuestros","nuestras"],"answer":2} -->
 
@@ -42,13 +48,18 @@ Stressed forms follow the noun for emphasis, or stand alone as pronouns with a d
 - **¿Es amigo tuyo?** (ah-MEE-goh TOO-yoh) — Is he a friend of yours?
 - **Un colega nuestro llegó tarde** — A colleague of ours arrived late
 
+<!-- grammar-card: {"id":"long-possessive-position","kind":"rule","format":"cloze","priority":"essential","sourceSection":"After the noun (emphasis)","rule":"A stressed possessive follows the noun","example":"Es un amigo ___. (of yours; tú)","answer":"tuyo","explanation":"Amigo is masculine singular, so the following stressed form is tuyo rather than pre-nominal tu."} -->
+
 ### Standalone pronouns
 
 - **¿De quién es esto? — Es mío** (ehs MEE-oh) — Whose is this? — It's mine
 - **Mi libro es azul; el tuyo es rojo** (ehl TOO-yoh) — My book is blue; yours is red
 - **Las llaves son suyas** (lahs YAH-vehs sohn SOO-yahs) — The keys are his/hers/theirs
 
-<!-- grammar-card: {"rule":"Possessives agree with the THING owned in gender and number — not with the owner","hint":"mis libros = MY books (libros drives the plural, not the owner)","example":"Tenemos ___ maletas listas para el viaje. (our — fem. pl.)","answer":"nuestras","explanation":"'Maletas' is feminine plural, so the possessive must be 'nuestras' (feminine plural). Even if all the owners are male, the possessive matches the owned noun. This is the same rule as for all Spanish adjectives — they agree with the noun, not the speaker."} -->
+<!-- grammar-card: {"id":"standalone-article","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Standalone pronouns","rule":"A possessive replacing a known noun can take its definite article","example":"Mi libro es azul; ___ es rojo. (yours; el libro)","answer":"el tuyo","explanation":"The omitted noun libro is masculine singular; el tuyo replaces it."} -->
+<!-- grammar-card: {"id":"predicate-no-article","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Standalone pronouns","rule":"Predicative possession after ser normally omits the article","example":"¿De quién es esto? — Es ___. (mine)","answer":"mío","explanation":"Es mío states possession directly; it does not require el."} -->
+
+<!-- grammar-card: {"id":"possessed-agreement","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Short Possessive Adjectives (Before the Noun)","rule":"Possessives agree with the THING owned in gender and number — not with the owner","example":"Tenemos ___ maletas listas para el viaje. (our — fem. pl.)","answer":"nuestras","explanation":"Maletas is feminine plural, so use nuestras regardless of the owners' genders."} -->
 
 ## The Ambiguity of Su / Suyo
 
@@ -64,17 +75,20 @@ Stressed forms follow the noun for emphasis, or stand alone as pronouns with a d
 - **¿Es el carro de ella o de él?** — Is it her car or his car?
 - **El libro de usted está aquí** — Your book is right here (formal, unambiguous)
 
+<!-- grammar-card: {"id":"su-ambiguity","kind":"concept","format":"qa","priority":"essential","sourceSection":"The Ambiguity of Su / Suyo","rule":"Su does not uniquely identify its owner","example":"Does su carro alone tell you whether the car is his, hers, yours or theirs?","answer":"No. Context identifies the owner; de él, de ella, de usted or de ellos can clarify.","explanation":"Su agrees with the singular owned noun, not the owner's gender or number."} -->
+<!-- grammar-card: {"id":"su-clarification","kind":"rule","format":"qa","priority":"optional","sourceSection":"The Ambiguity of Su / Suyo","rule":"De plus a pronoun can make the owner explicit","example":"Rewrite su casa to unambiguously mean her house.","answer":"la casa de ella","explanation":"De ella identifies a female owner without relying on ambiguous su."} -->
+
 <!-- quiz: {"type":"multiple-choice","question":"'¿Es mío o tuyo?' means:","options":["Is it mine or ours?","Is it mine or yours?","Is it his or yours?","Is it theirs or mine?"],"answer":1} -->
 
 ## Mi vs Mis, Tu vs Tus — Only Number Changes
 
-Short possessives *mi, tu, su* never change for gender — only for number. *Nuestro/a* is the exception that also changes for gender:
+Short possessives *mi, tu, su* never change for gender — only for number. *Nuestro/a* and *vuestro/a* also change for gender:
 
 - **mi amigo / mi amiga** — my friend (masc./fem.) — *mi* stays the same
 - **mis amigos / mis amigas** — my friends — *mis* for all plurals
 - **nuestro amigo / nuestra amiga** — our friend — *nuestro/nuestra* changes for gender
 
-<!-- grammar-card: {"rule":"Short possessives mi/tu/su never change for gender — only for number (mi/mis, tu/tus, su/sus)","hint":"Nuestro/nuestra IS the exception — it changes for both gender and number","example":"Perdí ___ llaves y ___ cartera. (my keys, my wallet — both belong to me)","answer":"mis, mi","explanation":"'Llaves' is feminine plural — use 'mis' (plural). 'Cartera' is feminine singular — use 'mi' (singular). Note that 'mi' doesn't change for gender: it is 'mi cartera' and 'mi reloj' equally. Only number triggers the change to 'mis'."} -->
+<!-- grammar-card: {"id":"mi-number","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Mi vs Mis, Tu vs Tus — Only Number Changes","rule":"Short possessives mi/tu/su never change for gender — only for number (mi/mis, tu/tus, su/sus)","legacyAliases":[{"rule":"Short possessives mi/tu/su never change for gender — only for number (mi/mis, tu/tus, su/sus)","example":"Perdí ___ llaves y ___ cartera. (my keys, my wallet — both belong to me)"}],"example":"Perdí ___ llaves. (my keys)","answer":"mis","explanation":"The possessed noun llaves is plural, requiring mis; its feminine gender does not change mi/mis."} -->
 
 <!-- quiz: {"type":"multiple-choice","question":"How do you clarify 'su casa' to specifically mean 'her house'?","options":["la casa suya","la casa de ella","su casa ella","su casa mía"],"answer":1} -->
 

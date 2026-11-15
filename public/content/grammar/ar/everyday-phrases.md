@@ -1,10 +1,22 @@
 # Everyday Phrases, Politeness & Greetings
 
+<!-- vocab-inventory: {"mode":"explicit"} -->
+
 Polite phrases make grammar feel human. Many Arabic greetings are shared across regions, and even when dialects adapt pronunciation, the core expressions are widely understood.
 
 ## Core idea
 
 The most important greeting is **السَّلَامُ عَلَيْكُمْ** (as-salāmu ʿalaykum) — peace be upon you. The reply is **وَعَلَيْكُمُ السَّلَامُ** (wa-ʿalaykumu as-salāmu) — and upon you be peace.
+
+<!-- vocab-card: {"id":"vocab-salam","word":"السَّلَامُ عَلَيْكُمْ","reading":"as-salāmu ʿalaykum","meaning":"peace be upon you (greeting)","priority":"essential","sourceSection":"Core idea"} -->
+<!-- vocab-card: {"id":"vocab-salam-reply","word":"وَعَلَيْكُمُ السَّلَامُ","reading":"wa-ʿalaykumu as-salāmu","meaning":"and upon you be peace (greeting reply)","priority":"optional","sourceSection":"Core idea"} -->
+<!-- vocab-card: {"id":"vocab-morning","word":"صَبَاحُ الْخَيْرِ","reading":"ṣabāḥu al-khayri","meaning":"good morning","priority":"essential","sourceSection":"Forms and examples"} -->
+<!-- vocab-card: {"id":"vocab-evening","word":"مَسَاءُ الْخَيْرِ","reading":"masāʾu al-khayri","meaning":"good evening","priority":"optional","sourceSection":"Forms and examples"} -->
+<!-- vocab-card: {"id":"vocab-thanks","word":"شُكْرًا","reading":"shukran","meaning":"thank you","priority":"essential","sourceSection":"Forms and examples"} -->
+<!-- vocab-card: {"id":"vocab-afwan","word":"عَفْوًا","reading":"ʿafwan","meaning":"you are welcome; excuse me","priority":"optional","sourceSection":"Forms and examples"} -->
+<!-- vocab-card: {"id":"vocab-please-male","word":"مِنْ فَضْلِكَ","reading":"min faḍlika","meaning":"please (to a male)","priority":"optional","sourceSection":"Forms and examples"} -->
+<!-- vocab-card: {"id":"vocab-please-female","word":"مِنْ فَضْلِكِ","reading":"min faḍliki","meaning":"please (to a female)","priority":"optional","sourceSection":"Forms and examples"} -->
+<!-- vocab-card: {"id":"vocab-goodbye","word":"مَعَ السَّلَامَةِ","reading":"maʿa as-salāmati","meaning":"goodbye","priority":"essential","sourceSection":"Forms and examples"} -->
 
 ## Forms and examples
 
@@ -26,7 +38,8 @@ The most important greeting is **السَّلَامُ عَلَيْكُمْ** (as
 
 Arabic politeness often uses blessings and warm formulas. **جَزَاكَ اللهُ خَيْرًا** (jazāka allāhu khayran) — may God reward you with good, to a male, is a heartfelt thank-you in many contexts.
 
-<!-- grammar-card: {"rule":"The greeting السَّلَامُ عَلَيْكُمْ (as-salāmu ʿalaykum) — peace be upon you has a set reply.","hint":"Reply with “and upon you be peace.”","example":"Complete the reply: ___ (wa-ʿalaykumu as-salāmu) — and peace be upon you.","answer":"وَعَلَيْكُمُ السَّلَامُ","explanation":"and peace be upon you — وَعَلَيْكُمُ السَّلَامُ (wa-ʿalaykumu as-salāmu) is the standard reply to the greeting."} -->
+<!-- grammar-card: {"id":"greeting-reply","kind":"rule","format":"qa","priority":"essential","sourceSection":"Core idea","rule":"The greeting السَّلَامُ عَلَيْكُمْ (as-salāmu ʿalaykum) — peace be upon you has a set reply.","example":"How do you reply to السَّلَامُ عَلَيْكُمْ?","answer":"وَعَلَيْكُمُ السَّلَامُ","explanation":"The set reply returns the wish of peace.","legacyAliases":[{"rule":"The greeting السَّلَامُ عَلَيْكُمْ (as-salāmu ʿalaykum) — peace be upon you has a set reply.","example":"Complete the reply: ___ (wa-ʿalaykumu as-salāmu) — and peace be upon you."}]} -->
+<!-- vocab-card: {"id":"vocab-blessing-thanks","word":"جَزَاكَ اللهُ خَيْرًا","reading":"jazāka allāhu khayran","meaning":"may God reward you with good (heartfelt thanks, to a male)","priority":"optional","sourceSection":"Usage notes"} -->
 
 ## Practice patterns
 
@@ -39,7 +52,9 @@ Mini-dialogue:
 
 <!-- quiz: {"type": "multiple-choice", "question": "Which phrase means “please” to a female?", "options": ["مِنْ فَضْلِكَ (min faḍlika) — please, to a male", "مِنْ فَضْلِكِ (min faḍliki) — please, to a female", "صَبَاحُ الْخَيْرِ (ṣabāḥu al-khayri) — good morning", "عَفْوًا (ʿafwan) — you are welcome / excuse me"], "answer": 1} -->
 
-<!-- grammar-card: {"rule":"مِنْ فَضْلِكَ (min faḍlika) — please changes with the person addressed.","hint":"Final -ka for a male, -ki for a female.","example":"Complete “please” to a female: مِنْ ___ (min ___).","answer":"فَضْلِكِ (faḍliki)","explanation":"your favor, to a female — مِنْ فَضْلِكِ (min faḍliki) — please, to a female uses the feminine attached pronoun."} -->
+<!-- grammar-card: {"id":"please-feminine","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Forms and examples","rule":"مِنْ فَضْلِكَ (min faḍlika) — please changes with the person addressed.","example":"Complete “please” to a female: مِنْ ___ (min ___).","answer":"فَضْلِكِ","explanation":"The addressee is female, so the attached pronoun ends -ki."} -->
+<!-- vocab-card: {"id":"vocab-how-are-you","word":"كَيْفَ حَالُكَ؟","reading":"kayfa ḥāluka?","meaning":"how are you? (to a male)","priority":"optional","sourceSection":"Practice patterns"} -->
+<!-- vocab-card: {"id":"vocab-i-am-well","word":"أَنَا بِخَيْرٍ، شُكْرًا","reading":"anā bikhayrin, shukran","meaning":"I am well, thank you","priority":"optional","sourceSection":"Practice patterns"} -->
 
 ## Sources
 

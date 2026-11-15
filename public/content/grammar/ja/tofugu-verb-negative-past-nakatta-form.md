@@ -1,5 +1,7 @@
 # なかった — Negative Past
 
+<!-- vocab-inventory: {"mode":"explicit"} -->
+
 > **Source:** Content from [Tofugu](https://www.tofugu.com/japanese-grammar/verb-negative-past-nakatta-form/). For personal study.
 
 Japanese Verb Negative Plain Past なかった Form
@@ -13,7 +15,7 @@ Verb Form
 #### Grammar Equations
 
 - 
-V-ない + かった
+V-ない (replace final い with かった)
 
 〜なかった is the past tense negative plain form of verbs. It adds the meaning of "did not do [verb]" to a sentence.
 
@@ -25,15 +27,23 @@ To conjugate verbs into 〜なかった, first conjugate verbs into the negative
 
 > 
 > 
-> 食べない + かった
+> 食べない → 食べなかった (い → かった)
 > 
 > 
 
 Just like the た form of verbs, 〜なかった is used to talk about the past. However, its use is a little more limited than its positive counterpart.
 
+<!-- vocab-card: {"id":"vocab-taberu","priority":"optional","sourceSection":"What Is なかった?","word":"食べる","reading":"たべる","meaning":"to eat"} -->
+<!-- vocab-card: {"id":"vocab-nomu","priority":"optional","sourceSection":"What Is なかった?","word":"飲む","reading":"のむ","meaning":"to drink"} -->
+<!-- vocab-card: {"id":"vocab-kuru","priority":"optional","sourceSection":"What Is なかった?","word":"来る","reading":"くる","meaning":"to come"} -->
+<!-- grammar-card: {"id":"negative-past-formation","kind":"rule","format":"cloze","priority":"essential","sourceSection":"What Is なかった?","rule":"Change final い of the ない form to かった","example":"食べない → plain past negative: ___.","answer":"食べなかった","explanation":"ない inflects like an い-adjective; do not append かった to the intact ない."} -->
+<!-- grammar-card: {"id":"godan-negative-past","kind":"rule","format":"cloze","priority":"essential","sourceSection":"What Is なかった?","rule":"Preserve the godan あ-row negative stem before なかった","example":"飲む → plain past negative: ___.","answer":"飲まなかった","explanation":"First 飲まない, then replace final い with かった."} -->
+<!-- grammar-card: {"id":"kuru-negative-past","kind":"rule","format":"qa","priority":"optional","sourceSection":"What Is なかった?","rule":"The past negative of 来る retains the negative reading こ","example":"Give the plain past negative of 来る, including its kana reading.","answer":"来なかった (こなかった).","explanation":"Build from 来ない (こない), not from 来た (きた)."} -->
+<!-- grammar-card: {"id":"plain-past-negative-register","kind":"concept","format":"qa","priority":"essential","sourceSection":"What Is なかった?","rule":"なかった is plain past negative, unlike polite ませんでした","example":"What politeness difference does 食べなかった have from 食べませんでした at sentence end?","answer":"食べなかった is plain or casual; 食べませんでした is polite.","explanation":"Both deny an action in the past; the distinction here is register."} -->
+
 ## なかった for the Past
 
-We can use the past form 〜なかった to talk about a one-off action, a situation or a "general truth" in the past. It isn't generally used to talk about habitual actions (we tend to use 〜ていなかった to talk about habits). So if we watched our favorite Japanese TV show without subtitles last night, we might lament our inability to follow along by saying:
+We can use the past form 〜なかった to talk about a one-off action, a situation or a "general truth" in the past. It can also describe past habits, while 〜ていなかった emphasizes an ongoing past situation or pattern. So if we watched our favorite Japanese TV show without subtitles last night, we might lament our inability to follow along by saying:
 
   - 全然分からなかった。
 
@@ -50,6 +60,11 @@ In speaking, 〜なかった is often combined with particles to add a particula
   - 全く意味がなかったよね。
 
   - It made no sense, huh?
+
+<!-- vocab-card: {"id":"vocab-wakaru","priority":"optional","sourceSection":"なかった for the Past","word":"分かる","reading":"わかる","meaning":"to understand"} -->
+<!-- vocab-card: {"id":"vocab-kachi","priority":"optional","sourceSection":"なかった for the Past","word":"価値","reading":"かち","meaning":"value; worth"} -->
+<!-- vocab-card: {"id":"vocab-imi","priority":"optional","sourceSection":"なかった for the Past","word":"意味","reading":"いみ","meaning":"meaning; significance"} -->
+<!-- grammar-card: {"id":"aru-negative-past","kind":"rule","format":"cloze","priority":"optional","sourceSection":"なかった for the Past","rule":"The past of negative ない is なかった, including the negative of ある","example":"It had no meaning: 全く意味が___。","answer":"なかった","explanation":"ある has the irregular negative ない, whose past is なかった."} -->
 
 ## When You Can't Use なかった
 
@@ -85,7 +100,7 @@ The reason for this might be easier to understand if you're familiar with Britis
 
 The Japanese words もう (already) and まだ (yet) have exactly the same effect as "yet" and "already" in British English. When someone says もう食べた？ this is the equivalent of "Have you eaten yet?" and so calls for the Japanese equivalent of "I haven't eaten yet," which is 食べていない.
 
-Here's another way to think about it: 〜なかった indicates that the event happened at a particular moment in time in the past. However, the situation you are trying to describe here, "not eating lunch yet," is something that still continues. Therefore, 〜なかった doesn't match, and you have to use 〜ている, which indicates the continuation of events.
+Here's another way to think about it: 〜なかった denies an event within a past timeframe. However, the situation you are trying to describe here, "not eating lunch yet," still holds now. In this context, 〜ていない expresses the current state of not having eaten yet.
 
 Technically, you could answer without まだ and then 〜なかった would be possible. However, if you say 食べなかった, this gives the impression that lunchtime is long gone, and so it would be a little odd in this context.
 
@@ -107,11 +122,17 @@ The second situation where you might be tempted to use 〜なかった is if you
 
 Rather than using 行かなかった or 行ってない, we use the past plain form 行った plus ことがない, or ことない in informal speech.
 
+<!-- vocab-card: {"id":"vocab-mada","priority":"optional","sourceSection":"When You Can't Use なかった","word":"まだ","reading":"まだ","meaning":"still; yet"} -->
+<!-- vocab-card: {"id":"vocab-mou","priority":"optional","sourceSection":"When You Can't Use なかった","word":"もう","reading":"もう","meaning":"already; now"} -->
+<!-- grammar-card: {"id":"not-yet-now","kind":"rule","format":"cloze","priority":"essential","sourceSection":"When You Can't Use なかった","rule":"Use the negative ている form for a current “not yet” state","example":"I have not eaten yet (uncontracted): まだ食べ___。","answer":"ていない","explanation":"食べなかった denies eating in a past timeframe, rather than describing the still-current state."} -->
+<!-- grammar-card: {"id":"not-yet-past","kind":"rule","format":"cloze","priority":"optional","sourceSection":"When You Can't Use なかった","rule":"ていなかった can describe a “not yet” state at a past reference time","example":"Even after two, I still had not eaten: 2時すぎたのに、まだ昼ご飯を食べ___。","answer":"ていなかった","explanation":"The uneaten-lunch state held at the past reference point."} -->
+<!-- grammar-card: {"id":"never-experience","kind":"rule","format":"cloze","priority":"essential","sourceSection":"When You Can't Use なかった","rule":"Past verb plus ことがない expresses lack of experience","example":"I have never been to Sapporo (include が): 札幌に行った___。","answer":"ことがない","explanation":"This denies any experience up to now; 行かなかった would only deny a past trip."} -->
+
 ## なかった in the Middle of Sentences
 
 Just like other plain forms, 〜なかった can be used in the middle of a sentence. In this case, it no longer makes the sentence casual because politeness is generally shown at the end of a sentence. We say "generally" because if the parts of a sentence are self-contained (what linguists call "independent clauses"), politeness can be shown in the middle of a sentence. More about this later!
 
-Plenty of structures in Japanese only work when paired up with some kind of plain form. For this, 〜なかった will come in very handy. For example, かもしれない (probably) and と思う (I think) can both be used only with the plain form. So if we want to say we probably won't go to a party tomorrow, we can use かもしれない or its polite form かもしれません:
+Plenty of structures in Japanese only work when paired up with some kind of plain form. For this, 〜なかった will come in very handy. For example, かもしれない (might) and と思う (I think) take a plain predicate. To say Kanae might not have gone to a party, use かもしれない or its polite form かもしれません:
 
   - かなえはパーティーに**行かなかった**かもしれません。
 
@@ -125,7 +146,7 @@ Although the overall sentence above is polite, and so has the polite form 〜ま
 > 
 > 
 
-The 〜なかった form also behaves like other plain forms in the way it fits together with nouns. If we want to say "a TV show that wasn't interesting," we can simply put おもしろかった (was-interesting) before 番組 (TV program) to give us おもしろかった番組. We can do exactly the same thing with verbs ending in 〜なかった too. This use is limited to situations where we really want to emphasize that the action happened in the past for some reason.
+The 〜なかった form also behaves like other plain forms in the way it fits together with nouns. For "a TV show that wasn't interesting," put おもしろくなかった (was-not-interesting) before 番組 (TV program): おもしろくなかった番組. Verbs ending in 〜なかった can likewise modify nouns when the denied action belongs to a past timeframe.
 
   - 行かなかった場所
 
@@ -137,6 +158,9 @@ The 〜なかった form also behaves like other plain forms in the way it fits 
 
 In English, we need to put the additional information afterwards, and often a word like "who" or "that," but in Japanese we can simply add the extra information (in plain form) before the word. While this takes a little getting used to, it's a very handy way to make more complex sentences, and you'll come across it in Japanese all the time.
 
+<!-- grammar-card: {"id":"embedded-negative-past","kind":"rule","format":"cloze","priority":"essential","sourceSection":"なかった in the Middle of Sentences","rule":"The plain past negative appears before かもしれません","hint":"行く, plain past negative","example":"かなえはパーティーに___かもしれません。","answer":"行かなかった","explanation":"The embedded predicate stays plain, while the final expression supplies politeness."} -->
+<!-- grammar-card: {"id":"past-negative-modifier","kind":"rule","format":"cloze","priority":"optional","sourceSection":"なかった in the Middle of Sentences","rule":"A past-negative modifier goes before its head noun","example":"A place I did not go to: ___場所。 (行く)","answer":"行かなかった","explanation":"The past-negative predicate precedes 場所 directly; it does not determine the main sentence's politeness."} -->
+
 ---
 
 <!-- quiz: {"type":"multiple-choice","question":"What does \"全然分からなかった。\" mean?","options":["I didn't understand anything.","Watching it was pointless!","It made no sense, huh?","Have you had lunch yet?"],"answer":0} -->
@@ -144,8 +168,6 @@ In English, we need to put the additional information afterwards, and often a wo
 <!-- quiz: {"type":"multiple-choice","question":"What does \"見る価値がなかった！\" mean?","options":["Watching it was pointless!","I didn't understand anything.","It made no sense, huh?","Have you had lunch yet?"],"answer":0} -->
 
 <!-- quiz: {"type":"multiple-choice","question":"What does \"全く意味がなかったよね。\" mean?","options":["It made no sense, huh?","I didn't understand anything.","Watching it was pointless!","Have you had lunch yet?"],"answer":0} -->
-
-<!-- grammar-card: {"rule":"The plain past negative appears before かもしれません","hint":"行く, plain past negative","example":"かなえはパーティーに___かもしれません。","answer":"行かなかった","explanation":"行かなかった stays plain; the politeness sits in かもしれません at the end."} -->
 
 ## Sources
 

@@ -1,5 +1,7 @@
 # たことがある — Have Done Before
 
+<!-- vocab-inventory: {"mode":"explicit"} -->
+
 > **Source:** Content from [Tofugu](https://www.tofugu.com/japanese-grammar/takotogaaru/). For personal study.
 
 〜たことがある for Past Experiences
@@ -69,7 +71,7 @@ Since 〜ことがある ends with the verb ある, it follows the verb's conjug
       〜ことがない
       〜ことがありません 
  〜ことがないです
-      I never do...
+      I have never done... (with a past-form clause before こと)
   
   
       Negative Past
@@ -80,6 +82,8 @@ Since 〜ことがある ends with the verb ある, it follows the verb's conjug
   
 
 The particle が can often be omitted in conversations, and in the case of 〜ことがある can be replaced with a different particle, such as は or も. The choice of particle will convey a certain nuance depending on the situation you're describing. Keep an eye out for the different particle uses in the sections below.
+
+<!-- grammar-card: {"id":"experience-breakdown","kind":"concept","format":"qa","priority":"optional","sourceSection":"Breakdown of ことがある and its Conjugations","rule":"A past-form clause names the experience while the final ある states its existence","example":"Which part of 食べたことがあります carries polite speech: the clause before こと or the final verb?","answer":"The final verb, あります; the experience clause remains plain past 食べた.","explanation":"こと nominalizes the past event; が marks it as the subject of ある. The final verb can also be negative or past."} -->
 
 ### Patterns of Use
 
@@ -95,6 +99,9 @@ In its most common use, ことがある attaches to the た form of a verb. For 
 
 If you aren't familiar with how to conjugate verbs in the た form, check out this page.
 
+<!-- vocab-card: {"id":"vocab-iku","word":"行く","reading":"いく","meaning":"to go","priority":"optional","sourceSection":"Verbた + ことがある"} -->
+<!-- grammar-card: {"id":"experience-iku","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Verbた + ことがある","rule":"Experiential ことがある follows the plain past, including 行く → 行った","example":"Use 行く to say you have been to Japan: 日本に___ことがある。","answer":"行った","explanation":"行く has the exceptional past 行った (いった), not 行いた. 行くことがある instead describes occasional trips."} -->
+
 #### Adjectives in the Past Tense + ことがある
 
 ことがある can also follow adjectives in the past tense. For example, if you're talking about how plane tickets to Japan used to be more affordable, you can use the past tense of the い-adjective 安い (cheap), which is 安かった, like:
@@ -109,6 +116,10 @@ And if you want to brag about how famous you were in Japan at one point, you can
 
   - There was a time when I was famous in Japan.
 
+<!-- vocab-card: {"id":"vocab-yuumei","word":"有名","reading":"ゆうめい","meaning":"famous","priority":"optional","sourceSection":"Adjectives in the Past Tense + ことがある"} -->
+<!-- grammar-card: {"id":"na-experience","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Adjectives in the Past Tense + ことがある","rule":"A な-adjective uses だった before experiential ことがある","example":"There was a time I was famous: 日本で有名___ことがある。","answer":"だった","explanation":"有名だった is the plain past predicate; 有名な would not express the past state."} -->
+<!-- grammar-card: {"id":"i-experience","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Adjectives in the Past Tense + ことがある","rule":"The past form plus ことがある reports a past experience","hint":"Use 安い (やすい) to express that tickets were cheap at some point.","example":"日本行きのチケットが___。","answer":"安かったことがある","explanation":"安かったことがある says there have been times when the tickets were cheap."} -->
+
 #### Nouns in the Past Tense + ことがある
 
 If you also want to boast about having worked as a model in Japan, you can use the noun モデル (model) with だった and say:
@@ -118,6 +129,8 @@ If you also want to boast about having worked as a model in Japan, you can use t
   - There was also a time when I was a model in Japan.
 
 In this second example, the particle が is replaced with も (also) to express that this information is supplementary to the previous sentence.
+
+<!-- grammar-card: {"id":"noun-experience","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Nouns in the Past Tense + ことがある","rule":"A noun uses だった before ことがある; も makes the information additive","example":"There was also a time I was a model: 日本でモデル___こともある。","answer":"だった","explanation":"モデルだった names a former state, while も means this is an additional past experience."} -->
 
 ### 〜たことがある For Past Experiences
 
@@ -139,6 +152,8 @@ Using 〜ことがある in this way carries the nuance of something that you ha
 
   - I taught Japanese yesterday.
 
+<!-- grammar-card: {"id":"experience-event-contrast","kind":"concept","format":"qa","priority":"essential","sourceSection":"〜たことがある For Past Experiences","rule":"Experiential たことがある presents prior experience, not a routine report of a specific recent event","example":"For simply reporting yesterday's teaching, why prefer 昨日、日本語を教えた over adding ことがある?","answer":"The ordinary past reports that particular event; たことがある frames it as prior experience.","explanation":"This is a discourse distinction, not a rule that experience can never have occurred recently."} -->
+
 Another thing to keep in mind is that 日本語を教えたことがある simply indicates the fact that you have previously taught Japanese, at least once. If you want to convey that you taught Japanese for a while, you need to use the ている form of the verb in the past tense, like:
 
   - 日本語を**教えていたことがある**。
@@ -159,6 +174,9 @@ But if you also want to indicate that you lived there for some time, you'd need 
 
 If you learned that 〜ている is the equivalent of "-ing" in English, this sentence may sound like you're emphasizing that it was a temporary living situation, like saying "I was living in Tokyo." However, that's not necessarily the case, because in Japanese, 住んでいる is used to describe a current living situation and 住んでいた for a past living situation, no matter how temporary (or not).
 
+<!-- vocab-card: {"id":"vocab-sumu","word":"住む","reading":"すむ","meaning":"to live; to reside","priority":"optional","sourceSection":"〜たことがある For Past Experiences"} -->
+<!-- grammar-card: {"id":"experience-duration","kind":"concept","format":"qa","priority":"optional","sourceSection":"〜たことがある For Past Experiences","rule":"ていたことがある can foreground a sustained former activity or state","example":"What does 住んでいたことがある foreground compared with 住んだことがある?","answer":"A former period of residing there, rather than only the fact of having had that experience.","explanation":"住んでいた does not by itself mean the residence was short-term."} -->
+
 ### 〜たことがない For Things You've Never Experienced
 
 The negative 〜たことがない can be used to describe an experience you never had, or a situation that has never occurred. For example, if someone asks if you've ever eaten natto, or fermented beans, you can say:
@@ -177,6 +195,9 @@ Here, the English translation is the same, but the nuance of は is to indicate 
 
 It's also worth noting that 〜たことがない is frequently used in combination with the time-related word まだ to signify that you haven't done something "yet," but you will, or you might, in the future.
 
+<!-- vocab-card: {"id":"vocab-mada","word":"まだ","reading":"まだ","meaning":"yet; still","priority":"optional","sourceSection":"〜たことがない For Things You've Never Experienced"} -->
+<!-- grammar-card: {"id":"never-experienced","kind":"rule","format":"cloze","priority":"essential","sourceSection":"〜たことがない For Things You've Never Experienced","rule":"たことがない denies prior experience; まだ adds not yet","example":"I haven't eaten it yet: まだ食べたことが___。","answer":"ない","explanation":"Keep 食べた past and negate the existence of the experience, not the eating verb."} -->
+
 Let's take a look at a scenario using まだ with たこと（が）ない. This time, assume no one asked, but you just want to state that you've never eaten natto.
 
   - 納豆、まだ食べたこと(が)ない**ん**です。
@@ -185,9 +206,7 @@ Let's take a look at a scenario using まだ with たこと（が）ない. This
 
 In this situation, you'll usually put ん between ない and です (or its more casual equivalent だ) to demonstrate that you're explaining yourself by supplying information that your audience doesn't have. If you'd like to know more about ん, check out our grammar page んだ・んです.
 
-<!-- grammar-card: {"rule":"んです adds explanatory nuance","hint":"の → ?","example":"納豆、まだ食べたことがない___です。","answer":"ん","explanation":"ないんです explains the speaker's situation rather than merely stating it."} -->
-
-<!-- grammar-card: {"rule":"The past form plus ことがある reports a past experience","hint":"安かった + ことがある","example":"日本行きのチケットが___。","answer":"安かったことがある","explanation":"安かったことがある says there have been times when the tickets were cheap."} -->
+<!-- grammar-card: {"id":"explanatory-n","kind":"rule","format":"cloze","priority":"optional","sourceSection":"〜たことがない For Things You've Never Experienced","rule":"んです adds explanatory nuance","hint":"Add the contracted explanatory marker.","example":"納豆、まだ食べたことがない___です。","answer":"ん","explanation":"ないんです explains the speaker's situation rather than merely stating it."} -->
 
 ## Beyond The Basics
 
@@ -218,6 +237,10 @@ However, this doesn't mean **が**ありますか is never used in casual conver
   - どこの国に行ったこと**が**ありますか？
 
   - What countries have you been to?
+
+<!-- grammar-card: {"id":"experience-question-register","kind":"concept","format":"qa","priority":"optional","sourceSection":"〜たことがある For Asking About Past Experiences","rule":"は, って, and omission are common conversational alternatives, without banning が","example":"Is が always wrong in questions about past experience, such as どこの国に行ったことがありますか?","answer":"No. It works in context, including open-ended questions; は is common for topic-based yes-or-no questions, and って or omission is more colloquial.","explanation":"Choose the particle for discourse and register, not a blanket rule that conversational が is unnatural."} -->
+
+<!-- grammar-card: {"id":"experience-contrast-wa","kind":"rule","format":"cloze","priority":"optional","sourceSection":"〜たことがある For Asking About Past Experiences","rule":"は can replace が to add contrast","hint":"Use the topic/contrast particle.","example":"日本に行ったこと___ありますか？","answer":"は","explanation":"ことはありますか asks specifically about that experience, setting it apart from others."} -->
 
 ### 〜たことがある For the Way Things Were
 
@@ -252,6 +275,8 @@ Because the particle も indicates "also," this condition can be presented as a 
   - There was this time when the rice was hard.
 
 In this case, the nuance of は is to indicate a comparison, as in "the rice was hard on occasion, but most of the time it wasn't."
+
+<!-- grammar-card: {"id":"former-state","kind":"concept","format":"qa","priority":"optional","sourceSection":"〜たことがある For the Way Things Were","rule":"A past state plus ことがある identifies at least one former occasion or period","example":"What does この店は寿司屋だったことがある assert about the shop?","answer":"It was a sushi restaurant at some point, without claiming that was its only former identity.","explanation":"With 硬かったこともある, も adds a contrasting past occasion; は can foreground a concession. Neither particle fixes an exact number of occurrences."} -->
 
 ---
 
@@ -327,8 +352,6 @@ by Robert Fiengo and William McClure
 <!-- quiz: {"type":"multiple-choice","question":"What does \"見**たことがある**。\" mean?","options":["I've seen it.","I've heard of it.","I've been to Japan.","There were times when a ticket to Japan was more reasonably priced."],"answer":0} -->
 
 <!-- quiz: {"type":"multiple-choice","question":"What does \"日本に**行ったことがある**。\" mean?","options":["I've been to Japan.","I've heard of it.","I've seen it.","There were times when a ticket to Japan was more reasonably priced."],"answer":0} -->
-
-<!-- grammar-card: {"rule":"は can replace が to add contrast","hint":"が → ?","example":"日本に行ったこと___ありますか？","answer":"は","explanation":"ことはありますか asks specifically about that experience, setting it apart from others."} -->
 
 ## Sources
 

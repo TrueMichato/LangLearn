@@ -1,5 +1,7 @@
 # てみる — Try Doing
 
+<!-- vocab-inventory: {"mode":"explicit"} -->
+
 > **Source:** Content from [Tofugu](https://www.tofugu.com/japanese-grammar/temiru/). For personal study.
 
 〜てみる for Attempts
@@ -19,7 +21,7 @@ V-て
  + 
 みる
 
-〜てみる follows the stem form of a verb and expresses an exploratory nuance, as in "to try doing something" to find out more about it.
+〜てみる combines a verb's て form with みる and expresses an exploratory nuance, as in "to try doing something" to find out more about it.
 
 ## The Basics
 
@@ -37,7 +39,7 @@ Here, you can use the verb 食べる (to eat) and say:
 
 The above sentence may also simply be translated as "I'll eat it." Translations for 〜てみる verbs can vary, and depending on context "try" might not be necessary.
 
-Keep in mind that 〜てみる indicates the act of actually trying and seeing — in other words, completing an attempt. For that reason, you *can't* use 〜てみる for unsuccessful attempts. This is one way it differs from the English verb "to try," which can be used with both successful and failed efforts at something. What's important with 〜てみる here is whether you actually get to see what something is like, which you can only do after following through on your attempt. This matters especially when you describe something you *tried* in the past.
+In its exploratory use, 〜てみる means actually doing the action to see what happens, not merely making an effort without carrying it out. The experiment's desired result can still fail: trying a method does not guarantee that it works. The distinction matters especially when describing a past attempt that never got as far as the action itself.
 
 For example, if you ordered that takoyaki but couldn't bring yourself to eat it in the end, you have to use the past tense of 〜ようとする instead of 〜てみる.
 
@@ -48,6 +50,11 @@ For example, if you ordered that takoyaki but couldn't bring yourself to eat it 
   - I tried to eat it, but I couldn't.
 
 Since 〜てみる suggests that the attempted action will be carried out, 食べてみた always indicates that you not only attempted to eat but also succeeded in trying — in short, you ate it!
+
+<!-- vocab-card: {"id":"vocab-taberu","word":"食べる","reading":"たべる","meaning":"to eat","priority":"optional","sourceSection":"The Basics"} -->
+<!-- grammar-card: {"id":"trial-not-success-guarantee","kind":"concept","format":"qa","priority":"essential","sourceSection":"The Basics","rule":"Exploratory てみる distinguishes doing a trial from merely attempting to begin","example":"Does 食べてみた merely mean trying to bring yourself to eat without eating anything?","answer":"No. In this context it means you actually tasted or ate it to find out what it was like.","explanation":"Carrying out the trial does not guarantee a desired outcome such as liking the food or solving a problem."} -->
+<!-- grammar-card: {"id":"see-and-discover-cue","kind":"concept","format":"qa","priority":"optional","sourceSection":"The Basics","rule":"The seeing origin of みる is a cue for the exploratory meaning","example":"How does the cue do it and see help distinguish てみる from a bare intention?","answer":"It pictures doing the action to discover what happens, rather than only planning or trying to start it.","explanation":"The helping verb is normally written みる; literal visual observation is not required."} -->
+<!-- grammar-card: {"id":"attempt-without-action","kind":"rule","format":"cloze","priority":"essential","sourceSection":"The Basics","rule":"ようとする can describe an attempt without the action being carried out","example":"食べ___けど、食べられなかった。","answer":"ようとした","explanation":"The context supplies the failure. ようとする itself does not mean that every attempt necessarily fails.","legacyAliases":[{"rule":"ようとする means attempting without succeeding","example":"食べ___けど、食べられなかった。"}]} -->
 
 ### Conjugating Verbs to Take 〜てみる
 
@@ -95,6 +102,11 @@ The てみる form of a verb can then be conjugated like other ichidan verbs, wh
     
   
 
+<!-- grammar-card: {"id":"trial-te-formation","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Conjugating Verbs to Take 〜てみる","rule":"Attach みる to the main verb's て form","example":"食べる → try eating, plain nonpast: ___.","answer":"食べてみる","explanation":"食べて is the connective; みる is the helping verb."} -->
+<!-- grammar-card: {"id":"trial-voiced-connective","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Conjugating Verbs to Take 〜てみる","rule":"A voiced で connective stays voiced before みる","example":"飲む → try drinking, plain nonpast: ___.","answer":"飲んでみる","explanation":"Use 飲んで, not 飲んて."} -->
+<!-- grammar-card: {"id":"trial-polite","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Conjugating Verbs to Take 〜てみる","rule":"The auxiliary みる conjugates as ichidan","example":"食べてみる → polite nonpast: 食べて___。","answer":"みます","explanation":"Only the helping verb changes to the polite form."} -->
+<!-- grammar-card: {"id":"trial-negative","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Conjugating Verbs to Take 〜てみる","rule":"The negative trial form uses みない","example":"食べてみる → plain negative: 食べて___。","answer":"みない","explanation":"The past negative counterpart is みなかった."} -->
+
 ### 〜てみたい for "Want to Try…"
 
 〜てみる often attaches to the verb suffix 〜たい, as in 〜てみたい, which indicates a desire to try doing something.
@@ -112,6 +124,9 @@ Although 〜てみる implies that you are performing the action, you can use �
   - I want to go to Mars someday.
 
 Well, if people ever colonize Mars, this sentence might no longer be an example of something that is unfeasible!
+
+<!-- vocab-card: {"id":"vocab-yaru","word":"やる","reading":"やる","meaning":"to do (casual)","priority":"optional","sourceSection":"〜てみたい for \"Want to Try…\""} -->
+<!-- grammar-card: {"id":"desire-to-try","kind":"rule","format":"cloze","priority":"essential","sourceSection":"〜てみたい for \"Want to Try…\"","rule":"てみたい expresses wanting to try rather than claiming the trial occurred","example":"いつか火星に行っ___。 (I want to go to Mars someday.)","answer":"てみたい","explanation":"The irregular て form 行って is retained. A wish can concern an unfeasible experience."} -->
 
 ### 〜てみよう for "Let's Try…"
 
@@ -133,8 +148,9 @@ Additionally, the particle か is often added to 〜てみよう, as in 〜て�
 
 This is because, as with "let's" in English, the suffix 〜よう generally only means that *you* want to do something and that *you* want someone to do it with you. To communicate that you're concerned about whether the person you're addressing would agree with doing that or not, you may want to add か. This か functions similarly to adding "shall we?" at the end.
 
-<!-- grammar-card: {"rule":"ようとする means attempting without succeeding","hint":"食べる, volitional + する","example":"食べ___けど、食べられなかった。","answer":"ようとした","explanation":"食べようとした fits because the attempt failed; 食べてみた would imply it was actually tried."} -->
-
+<!-- vocab-card: {"id":"vocab-akeru","word":"開ける","reading":"あける","meaning":"to open something","priority":"optional","sourceSection":"〜てみよう for \"Let's Try…\""} -->
+<!-- grammar-card: {"id":"volitional-trial","kind":"rule","format":"cloze","priority":"essential","sourceSection":"〜てみよう for \"Let's Try…\"","rule":"てみよう expresses a decision or invitation to try","example":"よし、開け___。 (Alright, let's open it and see.)","answer":"てみよう","explanation":"The polite invitation is てみましょう."} -->
+<!-- grammar-card: {"id":"invitation-ka","kind":"concept","format":"qa","priority":"optional","sourceSection":"〜てみよう for \"Let's Try…\"","rule":"か can invite the listener's agreement with the proposed trial","example":"What conversational function does か add in 開けてみようか or casual 開けてみよっか?","answer":"It checks agreement, like shall we, rather than simply announcing the speaker's volition.","explanation":"The shortened よっか belongs to casual speech."} -->
 ## Beyond the Basics
 
 ### 〜てみたら for "Triggering of a Discovery"
@@ -157,6 +173,10 @@ Imagine you have the conviction that the Earth is not flat — a perfectly norma
 
 Note that in both examples, 〜てみたら can be replaced with 〜てみると. Between the two, 〜てみると is literary and slightly more formal.
 
+<!-- grammar-card: {"id":"trial-discovery","kind":"rule","format":"cloze","priority":"essential","sourceSection":"〜てみたら for \"Triggering of a Discovery\"","rule":"てみたら reports what was discovered by trying","example":"飲ん___、結構美味しかった。","answer":"でみたら","explanation":"The trial of drinking reveals that it tasted quite good."} -->
+<!-- grammar-card: {"id":"passive-retrospective-discovery","kind":"rule","format":"cloze","priority":"optional","sourceSection":"〜てみたら for \"Triggering of a Discovery\"","rule":"言われてみたら can frame a realization prompted by what somebody said","example":"そう言われ___、そんな気もしてきた。","answer":"てみたら","explanation":"This means now that you put it that way. It is not a deliberate trial of being told something or a rule licensing arbitrary passive experiments.","legacyAliases":[{"rule":"てみる works with the passive too","example":"そう言われ___、そんな気もしてきた。"}]} -->
+<!-- grammar-card: {"id":"discovery-tara-to-register","kind":"concept","format":"qa","priority":"optional","sourceSection":"〜てみたら for \"Triggering of a Discovery\"","rule":"てみると can also introduce a discovery","example":"What alternative to てみたら introduces the same discovery with a somewhat more literary or formal tone here?","answer":"てみると.","explanation":"This compares these discovery clauses, not all uses of と and たら."} -->
+
 ### 〜てみたら？ for "What If/Why Don't You…?"
 
 As was noted in the preceding section, 〜てみたら signifies the "triggering of a discovery." So, when said with a rising intonation, 〜てみたら? suggests taking some action to see if it has any good outcomes.
@@ -177,6 +197,8 @@ To suggest something more politely, however, you would add どう as well as the
 
 If you aren't sure when to use polite language, check out our article!
 
+<!-- grammar-card: {"id":"trial-suggestion","kind":"concept","format":"qa","priority":"optional","sourceSection":"〜てみたら？ for \"What If/Why Don't You…?\"","rule":"Rising てみたら suggests an exploratory action","example":"Is 行ってみたら？ with rising intonation a report that somebody already went?","answer":"No. It suggests why don't you try going; 行ってみたらどうですか is a more polite version.","explanation":"The suggestion invites finding out what happens by doing it."} -->
+
 ### 〜てみて for "After Doing Something for the First Time…"
 
 When turning 〜てみる into its て form, as in 〜てみて, you can express that you discover or learn something "after a certain circumstance occurs." This expression is usually accompanied by はじめて (for the first time) or やっと/ついに (finally), like:
@@ -190,6 +212,9 @@ When turning 〜てみる into its て form, as in 〜てみて, you can express
   - After suffering a serious illness, I finally understood how thankful I should be to be healthy.
 
 Keep in mind that みて in this expression never means "you intentionally try something," but that "a certain situation arises."
+
+<!-- vocab-card: {"id":"vocab-kosodate","word":"子育て","reading":"こそだて","meaning":"child-rearing; raising children","priority":"optional","sourceSection":"〜てみて for \"After Doing Something for the First Time…\""} -->
+<!-- grammar-card: {"id":"experience-before-realization","kind":"concept","format":"qa","priority":"optional","sourceSection":"〜てみて for \"After Doing Something for the First Time…\"","rule":"てみて can frame a realization gained through experience","example":"Does 親になってみて、はじめて… mean somebody became a parent merely as an intentional experiment?","answer":"No. It frames what they understood only after experiencing parenthood.","explanation":"This experiential reading also fits an illness one did not choose; it is distinct from the deliberate exploratory use."} -->
 
 ### 〜てもみない for "Not Even Try"
 
@@ -215,11 +240,14 @@ Lastly, 思ってもみなかった is an idiomatic expression with the meaning 
 
 Oftentimes, 思ってもみなかった can also be replaced with 考えてもみなかった, but there is a slight difference between 思う and 考える. If you aren't familiar with it, check out Let's Think About "Thinking": 思う vs 考える.
 
+<!-- grammar-card: {"id":"not-even-try","kind":"rule","format":"cloze","priority":"optional","sourceSection":"〜てもみない for \"Not Even Try\"","rule":"も between the connective and みない emphasizes not even trying","example":"無理だと思ったから、やっ___。 (I didn't even try; plain past.)","answer":"てもみなかった","explanation":"The emphasis can describe one's own lack of effort or criticize somebody for giving up without a trial."} -->
+<!-- grammar-card: {"id":"unexpected-idiom","kind":"concept","format":"qa","priority":"optional","sourceSection":"〜てもみない for \"Not Even Try\"","rule":"思ってもみなかった idiomatically expresses an unexpected outcome","example":"What does こんなに簡単だって思ってもみなかった communicate after doing the task?","answer":"I had never imagined it would be this easy; the outcome was utterly unexpected.","explanation":"This is not a literal unsuccessful attempt to think."} -->
+
   
 
     - 
       
-〜てみる can only be used with volitional verbs, which means verbs that can be carried out voluntarily. ↩
+The deliberate exploratory use of 〜てみる normally takes a volitional action. The experiential and discovery expressions discussed above do not require a deliberate experiment. ↩
 
     
 
@@ -270,10 +298,6 @@ pp. 289-291
 <!-- quiz: {"type":"multiple-choice","question":"What does \"私もやっ**てみたい**！\" mean?","options":["I want to try that too!","I'll try it.","I want to go to Mars someday.","Alright, I'll open it and see what's inside."],"answer":0} -->
 
 <!-- quiz: {"type":"multiple-choice","question":"What does \"いつか火星に行っ**てみたい**。\" mean?","options":["I want to go to Mars someday.","I'll try it.","I want to try that too!","Alright, I'll open it and see what's inside."],"answer":0} -->
-
-<!-- grammar-card: {"rule":"てみる works with the passive too","hint":"言われる + みる + たら","example":"そう言われ___、そんな気もしてきた。","answer":"てみたら","explanation":"言われてみたら means 'now that you mention it', framing the remark as something tried out."} -->
-
-<!-- grammar-card: {"rule":"てみたら reports what was discovered by trying","hint":"飲む + みる + たら","example":"飲ん___、結構美味しかった。","answer":"でみたら","explanation":"飲んでみたら leads into the discovery that it tasted good after all."} -->
 
 ## Sources
 

@@ -1,10 +1,17 @@
 # MSA vs Dialects: What Actually Changes
 
+<!-- vocab-inventory: {"mode":"explicit"} -->
+
 Modern Standard Arabic is the shared written and formal spoken standard. Dialects are the everyday spoken varieties people use at home, with friends, and in local media. Learning MSA gives you a strong shared base; dialects add local warmth.
 
 ## Core idea
 
 The biggest changes are usually pronunciation, everyday vocabulary, verb prefixes, and the loss of formal case endings in speech. MSA **أُرِيدُ أَنْ أَذْهَبَ** (urīdu an adh-haba) — I want to go may become Egyptian **عَايِزْ أَرُوحْ** (ʿāyiz arūḥ) — I want to go, masculine, or Levantine **بَدِّي أَرُوحْ** (baddī arūḥ) — I want to go.
+
+<!-- grammar-card: {"id":"register-choice","kind":"concept","format":"qa","priority":"essential","sourceSection":"Core idea","rule":"MSA and dialect serve different contexts.","example":"Which Arabic layer is the shared formal standard, and which is used in everyday local conversation?","answer":"MSA is the shared formal standard; local dialects serve everyday conversation.","explanation":"Neither layer is incorrect Arabic; choose by context."} -->
+<!-- vocab-card: {"id":"vocab-uridu","word":"أُرِيدُ","reading":"urīdu","meaning":"I want (MSA)","priority":"essential","sourceSection":"Core idea"} -->
+<!-- vocab-card: {"id":"vocab-ayiz","word":"عَايِزْ","reading":"ʿāyiz","meaning":"wanting; I want (Egyptian, masculine speaker)","priority":"optional","sourceSection":"Core idea"} -->
+<!-- vocab-card: {"id":"vocab-baddi","word":"بَدِّي","reading":"baddī","meaning":"I want (Levantine)","priority":"optional","sourceSection":"Core idea"} -->
 
 ## Forms and examples
 
@@ -22,7 +29,8 @@ The biggest changes are usually pronunciation, everyday vocabulary, verb prefixe
 
 Do not frame dialect as “incorrect.” Dialects are native, rich, and systematic. MSA and dialect simply serve different social purposes.
 
-<!-- grammar-card: {"rule":"MSA is the shared formal standard; dialects are everyday spoken varieties.","hint":"Both are real Arabic layers.","example":"Complete the MSA phrase “I want to go”: ___ أَنْ أَذْهَبَ (___ an adh-haba).","answer":"أُرِيدُ (urīdu)","explanation":"أُرِيدُ أَنْ أَذْهَبَ (urīdu an adh-haba) — I want to go is standard MSA."} -->
+<!-- grammar-card: {"id":"msa-want-application","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Usage notes","rule":"MSA is the shared formal standard; dialects are everyday spoken varieties.","example":"Complete the MSA phrase “I want to go”: ___ أَنْ أَذْهَبَ (___ an adh-haba).","answer":"أُرِيدُ","explanation":"Urīdu introduces the desired action in this MSA sentence."} -->
+<!-- grammar-card: {"id":"dialect-variation","kind":"concept","format":"qa","priority":"essential","sourceSection":"Usage notes","rule":"Regional systems differ in more than pronunciation.","example":"Can Egyptian present markers and Levantine progressive markers be treated as one universal spoken-Arabic grammar?","answer":"No. Dialects differ in vocabulary, pronunciation and grammar; learn the target community's system.","explanation":"The table contrasts Egyptian baktub with Levantine ʿam baktub, not a universal dialect paradigm."} -->
 
 ## Practice patterns
 
@@ -34,7 +42,10 @@ A healthy path is: learn MSA grammar for reading and shared structure, then choo
 
 <!-- quiz: {"type": "multiple-choice", "question": "Which is a respectful way to think about dialects?", "options": ["They are incorrect MSA", "They are native spoken systems with their own rules", "They have no grammar", "They should never be learned"], "answer": 1} -->
 
-<!-- grammar-card: {"rule":"Dialects often drop formal case endings in everyday speech.","hint":"The sentence remains meaningful without final iʿrāb.","example":"Dialect-style “the house is big” can sound like ___ (il-bēt kibīr) — the house is big.","answer":"الْبَيْتْ كِبِيرْ","explanation":"the house is big, dialect-style pronunciation — الْبَيْتْ كِبِيرْ (il-bēt kibīr) shows final consonant pauses rather than formal case endings."} -->
+<!-- grammar-card: {"id":"case-endings-contrast","kind":"concept","format":"qa","priority":"essential","sourceSection":"Forms and examples","rule":"Dialects often drop formal case endings in everyday speech.","example":"What formal endings are absent in dialect-style il-bēt kibīr compared with al-baytu kabīrun?","answer":"The nominative -u and indefinite nominative -un endings.","explanation":"Everyday dialect generally lacks the MSA case-ending system, not just careful pausal pronunciation.","legacyAliases":[{"rule":"Dialects often drop formal case endings in everyday speech.","example":"Dialect-style “the house is big” can sound like ___ (il-bēt kibīr) — the house is big."}]} -->
+<!-- vocab-card: {"id":"vocab-kayfa-haluka","word":"كَيْفَ حَالُكَ؟","reading":"kayfa ḥāluka?","meaning":"how are you? (MSA, to a male)","priority":"optional","sourceSection":"Practice patterns"} -->
+<!-- vocab-card: {"id":"vocab-izzayak","word":"إِزَّايَكْ؟","reading":"izzayak?","meaning":"how are you? (Egyptian, to a male)","priority":"optional","sourceSection":"Practice patterns"} -->
+<!-- vocab-card: {"id":"vocab-kifak","word":"كِيفَكْ؟","reading":"kīfak?","meaning":"how are you? (Levantine, to a male)","priority":"optional","sourceSection":"Practice patterns"} -->
 
 ## Sources
 

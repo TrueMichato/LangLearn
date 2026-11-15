@@ -1,5 +1,7 @@
 # する — To Do (Irregular)
 
+<!-- vocab-inventory: {"mode":"explicit"} -->
+
 > **Source:** Content from [Tofugu](https://www.tofugu.com/japanese-grammar/suru/). For personal study.
 
 する for "To Do"
@@ -34,9 +36,12 @@ However, する and "to do" aren't always interchangeable. There are meanings th
 
 And, this is just the tip of the iceberg — する is a must-know verb that is very versatile and useful to keep in your pocket. Read on, and you'll find out all kinds of ways you can use する!
 
+<!-- vocab-card: {"id":"vocab-suru","word":"する","reading":"する","meaning":"to do; to perform an action","priority":"essential","sourceSection":"The Basics"} -->
+<!-- vocab-card: {"id":"vocab-shukudai","word":"宿題","reading":"しゅくだい","meaning":"homework","priority":"optional","sourceSection":"The Basics"} -->
+
 ### Conjugating する
 
-To master the useful する verb, you should first know how to conjugate it. する is an irregular verb, which means that there are no other verbs that conjugate the way it does. Conjugating する is pretty straightforward though. As seen in the below table, only the base form する begins with す (su). When you conjugate it, you'll have to change す to し (shi). Then, instead of る, you'll use different polite or plain endings like ます or た.
+To master the useful する verb, you should first know how to conjugate it. する and its compounds use an irregular pattern rather than the regular godan or ichidan pattern. In the basic forms in the table below, the base する begins with す (su), while the other listed forms use し (shi) with endings such as ます or た. This is not a rule for every conjugation of する.
 
   
       
@@ -63,6 +68,11 @@ To master the useful する verb, you should first know how to conjugate it. す
       しなかった
       しませんでした
   
+
+<!-- grammar-card: {"id":"suru-polite","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Conjugating する","rule":"The polite nonpast of する is irregular","example":"する → polite nonpast: ___.","answer":"します","explanation":"Use the し stem in this form, not すります or すます."} -->
+<!-- grammar-card: {"id":"suru-past","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Conjugating する","rule":"The plain past of する uses し","example":"する → plain past: ___.","answer":"した","explanation":"The polite counterpart is しました."} -->
+<!-- grammar-card: {"id":"suru-negative","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Conjugating する","rule":"The plain negative of する uses しない","example":"する → plain negative: ___.","answer":"しない","explanation":"The corresponding polite form is しません."} -->
+<!-- grammar-card: {"id":"suru-negative-past","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Conjugating する","rule":"The plain negative past of する is しなかった","example":"する → plain negative past: ___.","answer":"しなかった","explanation":"The polite negative past is しませんでした."} -->
 
 ### Patterns of Use
 
@@ -92,6 +102,9 @@ Next, your mom asks you to help her with some house chores. To tell her you'll d
 
   - I'll do the laundry (but not other chores).
 
+<!-- grammar-card: {"id":"action-object","kind":"rule","format":"cloze","priority":"essential","sourceSection":"〜をする","rule":"を marks the action noun as the object of する","example":"宿題___する。 (Do homework; use the object marker.)","answer":"を","explanation":"The noun names what is being done."} -->
+<!-- grammar-card: {"id":"action-particle-contrast","kind":"concept","format":"qa","priority":"optional","sourceSection":"〜をする","rule":"も and は can replace を to add inclusion or contrast","example":"How do 宿題もする and 洗濯はする differ in focus?","answer":"も includes homework too; は contrasts doing the laundry with not doing other chores in this context.","explanation":"These particles do more than identify the object; they change how the action is presented."} -->
+
 #### 〜にする
 
 You can also use する when selecting something (from a number of options). In this case, the thing you're selecting is marked by the particle に.
@@ -103,6 +116,8 @@ Say you're in a donut shop, deciding what kind of donut to buy. When you've made
   - I'll go with this one.
 
 〜にする can also be used with a different meaning, "to change the state of something/someone (else)," but we'll talk about that usage later on.
+
+<!-- grammar-card: {"id":"selection-ni","kind":"rule","format":"cloze","priority":"essential","sourceSection":"〜にする","rule":"にする marks a selection from available options","example":"これ___する。 (I'll choose this one.)","answer":"に","explanation":"This is a decision, not an object-marked action such as 宿題をする."} -->
 
 #### 〜がする
 
@@ -117,6 +132,9 @@ For example, if you wake up and smell coffee, you can use 〜がする with コ�
 (*Literally*: It smells of coffee.)
 
 We'll see more examples of this use later on this page.
+
+<!-- vocab-card: {"id":"vocab-nioi","word":"におい","reading":"におい","meaning":"smell; odor","priority":"optional","sourceSection":"〜がする"} -->
+<!-- grammar-card: {"id":"sensation-ga","kind":"rule","format":"cloze","priority":"essential","sourceSection":"〜がする","rule":"が marks a perceived sensation with する","example":"コーヒーのにおい___する。","answer":"が","explanation":"This reports smelling coffee, not deliberately doing a smell."} -->
 
 #### Noun + する (する Verbs)
 
@@ -133,6 +151,10 @@ It's also common to use する with loanwords from other countries, such as ド�
   - to drive
 
 Note you can often use the particle を to mark the compound or loan word itself as the direct object of する, such as 旅行**を**する or ドライブ**を**する. The two versions technically mean the same thing, but the one with を puts a little more emphasis on the specific action — not on the doing itself, in other words, but on *what* you're doing. If it helps, you can kind of imagine the noun that を marks as being underlined.
+
+<!-- vocab-card: {"id":"vocab-ryokou-suru","word":"旅行する","reading":"りょこうする","meaning":"to travel; to take a trip","priority":"optional","sourceSection":"Noun + する (する Verbs)"} -->
+<!-- grammar-card: {"id":"noun-compound-scope","kind":"concept","format":"qa","priority":"essential","sourceSection":"Noun + する (する Verbs)","rule":"Many action nouns form する verbs, but a kanji spelling alone is not sufficient","example":"Can you attach する to every noun just because it has several kanji?","answer":"No. Many actionable Sino-Japanese nouns and loanwords form conventional する verbs, but the combination must actually be used.","explanation":"旅行する and ドライブする work; spelling is a clue rather than a universal verb-making rule."} -->
+<!-- grammar-card: {"id":"compound-object-alternative","kind":"concept","format":"qa","priority":"optional","sourceSection":"Noun + する (する Verbs)","rule":"Some action nouns allow both direct compounding and をする","example":"Does adding を in 旅行をする instead of 旅行する create a different basic activity?","answer":"No. Both mean to travel; the version with を can give more focus to the named activity.","explanation":"This is an option for these conventional action nouns, not permission to insert を into every compound indiscriminately."} -->
 
 ### する for "To Do"
 
@@ -183,6 +205,9 @@ Another example is workout-related expressions that use する in Japanese and "
       to do squats
   
 
+<!-- vocab-card: {"id":"vocab-sentaku","word":"洗濯","reading":"せんたく","meaning":"laundry; washing clothes","priority":"optional","sourceSection":"する for \"To Do\""} -->
+<!-- vocab-card: {"id":"vocab-araimono","word":"洗い物","reading":"あらいもの","meaning":"washing up; dishes to be washed","priority":"optional","sourceSection":"する for \"To Do\""} -->
+
 ### する for "To Have" or "To Take"
 
 To express certain activities, especially occasions that involve other people, like a party or a meeting, it's common to use "to have" in English. There are also activities that you express with the verb "to take," like a walk or a trip. However, in Japanese, we can often use する instead, for the nouns that usually combine with "have" or "take" in English.
@@ -190,7 +215,7 @@ To express certain activities, especially occasions that involve other people, l
 Here are some examples:
 
   
-      話しをする
+      話をする
       to have a chat
   
   
@@ -240,6 +265,10 @@ Here are some examples:
 
 You should also know that while する is a versatile verb that works for all this, some of these activities could also be described with more specific verbs too. You can say お茶を飲む (to drink tea), for example, or パーティーを開く ("to have a party" in Japanese; literally "to open a party").
 
+<!-- vocab-card: {"id":"vocab-sanpo-suru","word":"散歩する","reading":"さんぽする","meaning":"to take a walk","priority":"optional","sourceSection":"する for \"To Have\" or \"To Take\""} -->
+<!-- vocab-card: {"id":"vocab-kyuukei","word":"休憩","reading":"きゅうけい","meaning":"break; rest","priority":"optional","sourceSection":"する for \"To Have\" or \"To Take\""} -->
+<!-- grammar-card: {"id":"english-light-verb-mismatch","kind":"concept","format":"qa","priority":"optional","sourceSection":"する for \"To Have\" or \"To Take\"","rule":"Japanese する is not restricted to activities expressed with English do","example":"Why can 散歩をする be correct even though English says take a walk?","answer":"Japanese conventionally combines that activity noun with する; English and Japanese choose different light verbs.","explanation":"Other examples include having a meeting or taking a break; some also allow more specific Japanese verbs."} -->
+
 ### する for "To Make"
 
 する can also be used as a translation for some of the English expressions that use "to make." When する is used this way, it is commonly used when preparing something or making a public announcement.
@@ -264,6 +293,10 @@ You should also know that while する is a versatile verb that works for all th
       プレゼンをする
       to make (give) a presentation
   
+
+<!-- vocab-card: {"id":"vocab-yoyaku-suru","word":"予約する","reading":"よやくする","meaning":"to make a reservation; to book","priority":"optional","sourceSection":"する for \"To Make\""} -->
+<!-- vocab-card: {"id":"vocab-junbi","word":"準備","reading":"じゅんび","meaning":"preparation; preparations","priority":"optional","sourceSection":"する for \"To Make\""} -->
+<!-- grammar-card: {"id":"reservation-application","kind":"rule","format":"cloze","priority":"optional","sourceSection":"する for \"To Make\"","rule":"A reservation is conventionally made with 予約をする","example":"予約を___。 (Make a reservation; plain nonpast.)","answer":"する","explanation":"English make does not require 作る in this conventional activity expression."} -->
 
 ### する for "To Play"
 
@@ -319,6 +352,9 @@ However, する can be used to describe a state in which someone is practicing m
   - Oh, you're taking piano lessons?
 
 Note that the particle を is often omitted in casual conversation, as above.
+
+<!-- vocab-card: {"id":"vocab-hiku","word":"弾く","reading":"ひく","meaning":"to play a stringed or keyboard instrument","priority":"optional","sourceSection":"する for \"To Play\""} -->
+<!-- grammar-card: {"id":"game-versus-instrument","kind":"concept","format":"qa","priority":"optional","sourceSection":"する for \"To Play\"","rule":"Games and sports commonly use する, but instruments normally use a more specific verb","example":"For playing a guitar, why is ギターをする not the ordinary counterpart of テニスをする?","answer":"Use ギターを弾く for playing the instrument; する is normal for the sport.","explanation":"ピアノしてる can refer informally to habitually practicing or taking piano lessons, so this is not an absolute ban in every context."} -->
 
 ### する for "To Wear (Accessories)"
 
@@ -377,6 +413,10 @@ For more examples of this use, check out the below list!
       to wear a necktie
   
 
+<!-- vocab-card: {"id":"vocab-necktie","word":"ネクタイ","reading":"ネクタイ","meaning":"necktie","priority":"optional","sourceSection":"する for \"To Wear (Accessories)\""} -->
+<!-- grammar-card: {"id":"wearing-current-state","kind":"rule","format":"cloze","priority":"optional","sourceSection":"する for \"To Wear (Accessories)\"","rule":"している describes the state an action left behind","example":"今日は赤いネクタイを___。","answer":"している","explanation":"In this accessory context, している describes having the tie on now; not every use of している is a resultant state."} -->
+<!-- grammar-card: {"id":"put-on-accessory","kind":"rule","format":"cloze","priority":"optional","sourceSection":"する for \"To Wear (Accessories)\"","rule":"する can mean 'wear' for accessories","example":"明日は赤いネクタイを___。","answer":"する","explanation":"With tomorrow's plan, ネクタイをする means putting on or wearing a tie."} -->
+
 ### 〜にする for Selecting or Deciding Something
 
 You've already seen some examples of how 〜にする is used when selecting something, but let's do a quick review. Imagine you're in a cafe with your friend and you're looking at the menu to figure out what to order. To ask your friend which one they're thinking of choosing, you can use 〜にする with the question word どれ (which one) and say:
@@ -399,9 +439,7 @@ Piece of cake, right? This nuance of 〜にする can also be applied when you'r
 
 In this example, 〜にする implies that the action in question can be taken at your discretion — or the listener's. It lets them know the decision is still theirs, so it's suitable for when you want to softly suggest that it's time to do something.
 
-<!-- grammar-card: {"rule":"している describes the state an action left behind","hint":"する, continuous","example":"今日は赤いネクタイを___。","answer":"している","explanation":"ネクタイをしている says the tie is on right now."} -->
-
-<!-- grammar-card: {"rule":"する can mean 'wear' for accessories","hint":"する","example":"明日は赤いネクタイを___。","answer":"する","explanation":"ネクタイをする is the ordinary way to say wearing a tie."} -->
+<!-- grammar-card: {"id":"discretionary-suggestion","kind":"concept","format":"qa","priority":"optional","sourceSection":"〜にする for Selecting or Deciding Something","rule":"にする can suggest choosing an activity at the participants' discretion","example":"What does そろそろランチにする？ suggest to a study partner?","answer":"Shall we make it lunchtime soon, leaving the choice open to the partner?","explanation":"The choice construction can concern what to do next as well as a menu item."} -->
 
 ## Beyond the Basics
 
@@ -418,6 +456,8 @@ It's also common to emphasize the amount of money using the particle も.
   - げ、一万円**も**する！
 
   - Oh no, it costs 10,000 yen!
+
+<!-- grammar-card: {"id":"price-application","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Price + する for Indicating How Much Something Costs","rule":"する after a money amount indicates cost","example":"一万円も___！ (It costs as much as 10,000 yen!)","answer":"する","explanation":"も emphasizes the amount as notable or high; する supplies the cost meaning."} -->
 
 ### する for What You Do for a Living
 
@@ -439,6 +479,8 @@ And if you are explaining that you work as a manager, you can say:
 
   - I work as a manager.
 
+<!-- grammar-card: {"id":"occupation-state","kind":"rule","format":"cloze","priority":"optional","sourceSection":"する for What You Do for a Living","rule":"Role + をしている describes an ongoing occupation","example":"兄は警察官を___。 (My older brother works as a police officer.)","answer":"している","explanation":"The continuing state here is holding an occupation, not putting on an accessory."} -->
+
 ### 〜を〜にする for "Turning … Into …"
 
 When you turn one thing into another thing (like water into wine or lead into gold, for example), you can use 〜にする to express that change in state. In this usage, you mark *what* you are changing with the particle を and mark the *result* of a change of state with the particle に.
@@ -457,6 +499,8 @@ Or, it can also be a な-adjective, such as 簡単 (easy).
 
 Note in this pattern, the 〜を part is often omitted when it's obvious from the context or situation.
 
+<!-- grammar-card: {"id":"result-noun-ni","kind":"rule","format":"cloze","priority":"essential","sourceSection":"〜を〜にする for \"Turning … Into …\"","rule":"を marks the affected entity and に the noun or な-adjective result","example":"テストを簡単___する。","answer":"に","explanation":"The test is what is changed; 簡単 is the resulting easy state."} -->
+
 #### 〜を + い-adjective く Form + する
 
 The use of する as "to turn … into …" can also work with い-adjectives. When the result of a change of state is described with an い-adjective, you'll need to turn it into the く form and add する, instead of adding 〜にする.
@@ -466,6 +510,8 @@ For example, the く form of かわいい (cute) is かわいく, so if you're s
   - 髪型**を**かわいく**する**。
 
   - I'll make my hairstyle cute.
+
+<!-- grammar-card: {"id":"result-i-adjective","kind":"rule","format":"cloze","priority":"essential","sourceSection":"〜を + い-adjective く Form + する","rule":"い-adjective results use the く form before する","example":"髪型をかわい___する。","answer":"く","explanation":"Remove final い from かわいい and add く rather than に."} -->
 
 ### する with Adverbs
 
@@ -496,6 +542,10 @@ Remember how する can be used when turning something into something else? It's
 
   - Can you turn up the A/C a little more?
 
+<!-- vocab-card: {"id":"vocab-yukkuri-suru","word":"ゆっくりする","reading":"ゆっくりする","meaning":"to relax; to take one's time","priority":"optional","sourceSection":"する with Adverbs"} -->
+<!-- vocab-card: {"id":"vocab-daiji-ni-suru","word":"大事にする","reading":"だいじにする","meaning":"to take good care of; to treasure","priority":"optional","sourceSection":"する with Adverbs"} -->
+<!-- grammar-card: {"id":"adverb-manner","kind":"concept","format":"qa","priority":"optional","sourceSection":"する with Adverbs","rule":"An adverb before する specifies a manner of acting","example":"What is a parent urging with 早くしなさい？","answer":"Hurry up, literally do it quickly.","explanation":"The adverb specifies manner; related combinations such as ゆっくりする can develop idiomatic senses."} -->
+
 ### する with Onomatopoeia
 
 する can directly attach to an onomatopoeic word and turn it into a verb as well. For example, する can be added to ドキドキ (onomatopoeia for heartbeats):
@@ -504,7 +554,7 @@ Remember how する can be used when turning something into something else? It's
 
   - to be nervous/thrilled
 
-Japanese onomatopoeia is often a repetition of the same sound, such as ドキドキ. It's to represent that the sound or action repeats or continues. On the other hand, if it's used only once, it expresses a momentary sound or action. When the unrepeated version consists of one or two syllables, you usually need to add っ/ッ with と between the word and する.
+Repeated onomatopoeia such as ドキドキ often suggests a repeated or continuing sensation. A form such as ドキッとする instead presents a momentary reaction. The conventional form of each expression should be learned rather than generated by counting syllables.
 
   - ドキ**ッとする**
 
@@ -514,11 +564,15 @@ Japanese onomatopoeia is often a repetition of the same sound, such as ドキド
 
   - to be stunned
 
-If the unrepeated onomatopoeia has more than two syllables, you can simply add 〜とする directly.
+Other conventional expressions use と without the small っ:
 
   - びくり**とする**
 
   - to get startled
+
+<!-- vocab-card: {"id":"vocab-dokidoki-suru","word":"ドキドキする","reading":"ドキドキする","meaning":"to feel one's heart pounding with nerves or excitement","priority":"optional","sourceSection":"する with Onomatopoeia"} -->
+<!-- vocab-card: {"id":"vocab-dokitto-suru","word":"ドキッとする","reading":"ドキッとする","meaning":"to be startled; to feel a sudden jolt","priority":"optional","sourceSection":"する with Onomatopoeia"} -->
+<!-- grammar-card: {"id":"sound-symbolic-duration","kind":"concept","format":"qa","priority":"optional","sourceSection":"する with Onomatopoeia","rule":"Conventional sound-symbolic forms can distinguish continuing and momentary reactions","example":"How does ドキドキする differ from ドキッとする in the heartbeat examples?","answer":"The repeated form suggests continuing heart-pounding; the second presents a sudden momentary jolt.","explanation":"Learn the complete expressions, including ッと where present; they are not freely generated phonetic fragments."} -->
 
 ### 〜がする for Reporting Sensations and Feelings
 
@@ -558,6 +612,9 @@ You can also use 〜がする when describing how you feel. For example, if you'
 
 When you use 〜がする, however, it sounds like you're more objectively describing how you feel. You might use it while communicating your feelings to others, but when simply expressing your sad emotion, it's more common just to say 悲しい (I'm sad).
 
+<!-- vocab-card: {"id":"vocab-aji","word":"味","reading":"あじ","meaning":"taste; flavor","priority":"optional","sourceSection":"〜がする for Reporting Sensations and Feelings"} -->
+<!-- grammar-card: {"id":"feeling-report-style","kind":"concept","format":"qa","priority":"optional","sourceSection":"〜がする for Reporting Sensations and Feelings","rule":"気持ちがする describes a feeling as an experienced sensation","example":"How does 悲しい気持ちがする frame sadness differently from simply saying 悲しい?","answer":"It reports or describes a sad feeling more reflectively, rather than simply expressing the emotion directly.","explanation":"The difference is one of presentation; it does not make the speaker's feeling an objective fact about everyone."} -->
+
 Since 〜がする indicates that you're articulating a sense, it's suitable when you suspect that something is the case or something might happen. For example, if you're watching a detective show and suspect a mail carrier is the culprit, you can say:
 
   - あの郵便屋さんが犯人な気**がする**。
@@ -569,6 +626,8 @@ Also, if you are positive that you will be able to visit Japan this year, you ca
   - 今年は日本に行ける気**がする**。
 
   - I have a feeling that I can go to Japan this year.
+
+<!-- grammar-card: {"id":"hunch-expression","kind":"rule","format":"cloze","priority":"essential","sourceSection":"〜がする for Reporting Sensations and Feelings","rule":"気がする expresses a hunch or feeling","example":"あの郵便屋さんが犯人な気___。","answer":"がする","explanation":"The speaker has a feeling about the culprit, rather than asserting certain knowledge."} -->
 
 ---
 
@@ -649,8 +708,6 @@ by Seiki Ayano
 <!-- quiz: {"type":"multiple-choice","question":"What does \"宿題を**する**\" mean?","options":["to **do** homework","I'll **do** it.","to put on a necklace","to do homework"],"answer":0} -->
 
 <!-- quiz: {"type":"multiple-choice","question":"What does \"ネックレスを**する**\" mean?","options":["to put on a necklace","I'll **do** it.","to **do** homework","to do homework"],"answer":0} -->
-
-<!-- grammar-card: {"rule":"気がする expresses a hunch or feeling","hint":"気 + する","example":"あの郵便屋さんが犯人な気___。","answer":"がする","explanation":"気がする says the speaker has a feeling the postman is the culprit."} -->
 
 ## Sources
 

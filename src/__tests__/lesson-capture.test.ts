@@ -291,9 +291,152 @@ describe('canonical lesson review items', () => {
     expect(parsed).toEqual({ items: [], diagnostics: [] });
   });
 
+  it('uses a reviewed inventory for lexical capture without losing authored words or rule identities', () => {
+    const markdown = [
+      block('vocab-inventory', { mode: 'explicit' }),
+      '## Pronunciation',
+      '- **casa** (kah-zah) — house',
+      '- **ã** — nasal "ah": **maçã** (mah-sah) — apple',
+      '- **Initial R / RR** — sounds like English "h": **rio** (hee-oo) — river',
+      '- **Don\'t pronounce H** — "hotel" is (oh-TEW), not "ho-tel"',
+      '| Spelling | English sound |',
+      '|---|---|',
+      '| **h** | pronounced, as in hotel |',
+      block('vocab-card', { ...vocab, id: 'house', word: 'casa', reading: 'kah-zah', meaning: 'house' }),
+      block('vocab-card', { ...vocab, id: 'grandmother', word: 'avó', meaning: 'grandmother' }),
+      block('vocab-card', { ...vocab, id: 'article', word: 'a', meaning: 'the (feminine singular)' }),
+      block('vocab-card', { ...vocab, id: 'one', word: 'um', meaning: 'one', priority: 'optional' }),
+      block('grammar-card', grammar),
+      block('grammar-card', { ...grammar, id: 'sound-rule', kind: 'rule' }),
+    ].join('\n');
+    const parsed = parseLessonReviewItems(markdown);
+    expect(parsed.diagnostics).toEqual([]);
+    expect(parsed.items.map((item) => item.id)).toEqual([
+      'house', 'grandmother', 'article', 'one', grammar.id, 'sound-rule',
+    ]);
+    expect(parsed.items).toEqual(expect.arrayContaining([
+      expect.objectContaining({ id: 'article', kind: 'vocabulary', word: 'a', provenance: 'authored' }),
+      expect.objectContaining({ id: 'one', kind: 'vocabulary', word: 'um', priority: 'optional' }),
+      expect.objectContaining({ id: grammar.id, kind: 'concept', prompt: grammar.example, answer: grammar.answer }),
+      expect.objectContaining({ id: 'sound-rule', kind: 'rule', prompt: grammar.example, answer: grammar.answer }),
+    ]));
+    const candidates = parseLessonCandidates(markdown);
+    expect(candidates.map((item) => item.id)).toEqual(['house', 'grandmother', 'article', 'one']);
+    expect(candidates[0]).toMatchObject({ sourceText: 'casa (kah-zah) — house', reading: 'kah-zah' });
+  });
+
+  it('supports an intentionally empty lexical inventory while retaining authored and legacy rules', () => {
+    const legacy = { rule: 'A sound rule', example: 'A ___ prompt', answer: 'focused', explanation: 'A useful explanation.' };
+    const rules = [block('grammar-card', grammar), block('grammar-card', legacy)].join('\n');
+    const markdown = [
+      block('vocab-inventory', { mode: 'explicit' }),
+      '- **ã** — nasal "ah": **maçã** (mah-sah) — apple',
+      '| Spelling | English sound |',
+      '|---|---|',
+      '| **h** | pronounced, as in hotel |',
+      block('quiz', { question: 'Choose', options: ['casa', 'caso'], answer: 0 }),
+      rules,
+    ].join('\n');
+    expect(parseLessonReviewItems(markdown)).toEqual(parseLessonReviewItems(rules));
+    expect(parseLessonCandidates(markdown)).toEqual([]);
+  });
+
+  it('retains the legacy formatting fallback in partially authored lessons with no inventory control', () => {
+    const markdown = [
+      block('vocab-card', vocab),
+      '- **ла́мпа** — lamp',
+      '| Word | Meaning |',
+      '|---|---|',
+      '| a | the (feminine singular) |',
+    ].join('\n');
+    expect(parseLessonReviewItems(markdown)).toMatchObject({
+      diagnostics: [],
+      items: [
+        expect.objectContaining({ id: vocab.id, provenance: 'authored' }),
+        expect.objectContaining({ id: 'formatting:ла́мпа::lamp', priority: 'optional', provenance: 'formatting' }),
+        expect.objectContaining({ word: 'a', priority: 'optional', provenance: 'formatting' }),
+      ],
+    });
+    expect(parseLessonCandidates(markdown).map((item) => item.word)).toEqual(['кни́га', 'ла́мпа', 'a']);
+  });
+
+  it.each([
+    ['unknown mode', '<!-- vocab-inventory: {"mode":"automatic"} -->', 'invalid-metadata'],
+    ['unknown property', '<!-- vocab-inventory: {"mode":"explicit","complete":true} -->', 'invalid-metadata'],
+    ['missing mode', '<!-- vocab-inventory: {} -->', 'invalid-metadata'],
+    ['malformed JSON', '<!-- vocab-inventory: {bad json} -->', 'invalid-json'],
+    ['non-object JSON', '<!-- vocab-inventory: null -->', 'invalid-metadata'],
+    ['missing colon', '<!-- vocab-inventory {"mode":"explicit"} -->', 'invalid-metadata'],
+    ['multiple lines', '<!-- vocab-inventory:\n{"mode":"explicit"}\n-->', 'invalid-metadata'],
+    ['unclosed comment', '<!-- vocab-inventory: {"mode":"explicit"}', 'unterminated-block'],
+  ])('reports %s instead of silently accepting a zero inventory', (_name, control, code) => {
+    const markdown = `- **casa** — house\n${control}`;
+    expect(parseLessonReviewItems(markdown)).toMatchObject({
+      items: [expect.objectContaining({ word: 'casa', provenance: 'formatting' })],
+      diagnostics: [expect.objectContaining({ block: 'vocab-inventory', code, line: 2 })],
+    });
+    expect(parseLessonCandidates(markdown).map((item) => item.word)).toEqual(['casa']);
+  });
+
+  it.each([
+    '<!-- vocab-inventory: {"mode":"explicit"} -->',
+    '<!-- vocab-inventory: {"mode":"automatic"} -->',
+    '<!-- vocab-inventory: {bad json} -->',
+  ])('rejects duplicate or conflicting inventory controls, including malformed duplicates: %s', (second) => {
+    const markdown = [
+      '- **casa** — house',
+      block('vocab-inventory', { mode: 'explicit' }),
+      second,
+    ].join('\n');
+    const parsed = parseLessonReviewItems(markdown);
+    expect(parsed.items).toEqual([expect.objectContaining({ word: 'casa', provenance: 'formatting' })]);
+    expect(parsed.diagnostics).toEqual(expect.arrayContaining([
+      expect.objectContaining({ block: 'vocab-inventory', line: 3, message: expect.stringMatching(/only one|duplicate/i) }),
+    ]));
+    expect(parseLessonCandidates(markdown).map((item) => item.word)).toEqual(['casa']);
+  });
+
+  it.each(['```html', '~~~~html'])('does not activate inventory examples inside %s fences', (fence) => {
+    const markdown = [
+      fence,
+      block('vocab-inventory', { mode: 'explicit' }),
+      fence.replace('html', ''),
+      '- **casa** — house',
+    ].join('\n');
+    expect(parseLessonReviewItems(markdown)).toMatchObject({
+      items: [expect.objectContaining({ word: 'casa', provenance: 'formatting' })],
+      diagnostics: [],
+    });
+    expect(parseLessonCandidates(markdown).map((item) => item.word)).toEqual(['casa']);
+  });
+
+  it('reports malformed lexical cards even when an explicit inventory intentionally disables fallback', () => {
+    const parsed = parseLessonReviewItems([
+      block('vocab-inventory', { mode: 'explicit' }),
+      block('vocab-card', { ...vocab, meaning: null }),
+      '- **casa** — house',
+    ].join('\n'));
+    expect(parsed).toMatchObject({
+      items: [],
+      diagnostics: [expect.objectContaining({ block: 'vocab-card', code: 'invalid-metadata', itemId: vocab.id })],
+    });
+  });
+
   it('removes both metadata kinds before display without removing ordinary prose', () => {
     const markdown = ['# Lesson', block('vocab-card', vocab), 'An example.', block('grammar-card', grammar)].join('\n');
     expect(stripLessonReviewSources(markdown)).toBe('# Lesson\n\nAn example.\n');
+  });
+
+  it('strips valid and malformed inventory controls from display, but preserves fenced authoring examples', () => {
+    const example = ['~~~html', block('vocab-inventory', { mode: 'explicit' }), '~~~'].join('\n');
+    const markdown = [
+      '# Lesson',
+      block('vocab-inventory', { mode: 'explicit' }),
+      '<!-- vocab-inventory: {bad json} -->',
+      example,
+      'An example.',
+    ].join('\n');
+    expect(stripLessonReviewSources(markdown)).toBe(`# Lesson\n\n\n${example}\nAn example.`);
   });
 });
 

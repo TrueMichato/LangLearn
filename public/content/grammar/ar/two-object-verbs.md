@@ -1,12 +1,21 @@
 # Verbs with Two Objects
 
+<!-- vocab-inventory: {"mode":"explicit"} -->
+
 Some Arabic verbs naturally take **two direct objects**: a person who receives or learns something, and the thing received or learned. Both objects are in the accusative, even when English uses “to” or “for.”
 
 ## Core idea
 
+<!-- grammar-card: {"id":"recipient-object","kind":"concept","format":"qa","priority":"essential","sourceSection":"Core idea","rule":"The recipient can be a direct object in an Arabic two-object construction.","example":"Does English “to the student” require an Arabic preposition in أَعْطَى الْمُعَلِّمُ الطَّالِبَ قَلَمًا?","answer":"No. The student is the first direct object; the pen is the second.","explanation":"Both complements are accusative in this permitted verb pattern; English prepositions do not determine Arabic case."} -->
+
 In **أَعْطَى الْمُعَلِّمُ الطَّالِبَ قَلَمًا** (aʿṭā al-muʿallimu aṭ-ṭāliba qalaman) — “the teacher gave the student a pen,” **الطَّالِبَ** (aṭ-ṭāliba) and **قَلَمًا** (qalaman) are both objects. The first object is usually the recipient; the second is the item, information, or quality transferred.
 
 ## Forms and examples
+
+<!-- vocab-card: {"id":"vocab-aata","word":"أَعْطَى","reading":"aʿṭā","meaning":"he gave; to give (dictionary form)","priority":"essential","sourceSection":"Forms and examples"} -->
+<!-- vocab-card: {"id":"vocab-manaha","word":"مَنَحَ","reading":"manaḥa","meaning":"he granted; he awarded","priority":"optional","sourceSection":"Forms and examples"} -->
+<!-- vocab-card: {"id":"vocab-allama","word":"عَلَّمَ","reading":"ʿallama","meaning":"he taught","priority":"essential","sourceSection":"Forms and examples"} -->
+<!-- vocab-card: {"id":"vocab-kasa","word":"كَسَا","reading":"kasā","meaning":"he clothed","priority":"optional","sourceSection":"Forms and examples"} -->
 
 | Verb type | Verb | First object | Second object | Example |
 |---|---|---|---|---|
@@ -19,9 +28,10 @@ In **أَعْطَى الْمُعَلِّمُ الطَّالِبَ قَلَمًا
 
 ## Usage notes
 
-A preposition can be used in looser modern style, especially with **إِلَى** (ilā) or **لِـ** (li-), but the classical pattern treats both complements as direct objects. With pronouns, the first object often attaches to the verb: **أَعْطَيْتُهُ كِتَابًا** (aʿṭaytuhu kitāban) — “I gave him a book.”
+Some verbs also permit a prepositional recipient, especially with **إِلَى** (ilā) or **لِـ** (li-), depending on the verb and construction; these are not freely interchangeable after every verb in the table. The two-object pattern treats both complements as direct objects. With pronouns, the first object often attaches to the verb: **أَعْطَيْتُهُ كِتَابًا** (aʿṭaytuhu kitāban) — “I gave him a book.”
 
-<!-- grammar-card: {"rule": "Some verbs such as أَعْطَى, مَنَحَ, عَلَّمَ, and كَسَا can take two accusative objects.", "hint": "Ask: who received it, and what was received?", "example": "مَنَحَ الْمُدِيرُ الْمُوَظَّفَ جَائِزَةً (manaḥa al-mudīru al-muwaẓẓafa jāʾizatan)", "answer": "The manager awarded the employee a prize", "explanation": "الْمُوَظَّفَ is the first object and جَائِزَةً is the second object; both are accusative."} -->
+<!-- grammar-card: {"id":"second-object-accusative","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Usage notes","rule":"Some verbs such as أَعْطَى, مَنَحَ, عَلَّمَ, and كَسَا can take two accusative objects.","example":"مَنَحَ الْمُدِيرُ الْمُوَظَّفَ ___. (a prize)","answer":"جَائِزَةً","explanation":"The prize is the second accusative object; the employee is the first.","legacyAliases":[{"rule":"Some verbs such as أَعْطَى, مَنَحَ, عَلَّمَ, and كَسَا can take two accusative objects.","example":"مَنَحَ الْمُدِيرُ الْمُوَظَّفَ جَائِزَةً (manaḥa al-mudīru al-muwaẓẓafa jāʾizatan)"}]} -->
+<!-- grammar-card: {"id":"preposition-not-free","kind":"concept","format":"qa","priority":"optional","sourceSection":"Usage notes","rule":"Prepositional alternatives depend on the governing verb.","example":"Can you freely replace the first object of every verb here with إِلَى plus a noun?","answer":"No. A prepositional alternative must be licensed by the particular verb and construction.","explanation":"The existence of a recipient does not authorize the same preposition after every two-object verb."} -->
 
 ## Practice patterns
 
@@ -33,7 +43,7 @@ Turn the English “to someone” into a first object when the Arabic verb allow
 
 <!-- quiz: {"type": "multiple-choice", "question": "Which sentence best shows a verb taking two direct objects?", "options": ["عَلَّمَ الْأَبُ بِنْتَهُ الْقِرَاءَةَ", "جَلَسَ الطِّفْلُ عَلَى الْكُرْسِيِّ", "ذَهَبَتِ الطَّالِبَةُ إِلَى الْمَدْرَسَةِ", "نَامَ الْوَلَدُ مُبَكِّرًا"], "answer": 0} -->
 
-<!-- grammar-card: {"rule": "The first object of a two-object verb may be an attached pronoun, while the second object remains a visible accusative noun.", "hint": "Look for a suffix like ـهُ followed by an accusative noun.", "example": "أَعْطَيْتُهُ نَصِيحَةً (aʿṭaytuhu naṣīḥatan)", "answer": "I gave him advice", "explanation": "The suffix ـهُ is the first object, and نَصِيحَةً is the second object."} -->
+<!-- grammar-card: {"id":"attached-first-object","kind":"rule","format":"qa","priority":"essential","sourceSection":"Practice patterns","rule":"The first object of a two-object verb may be an attached pronoun, while the second object remains a visible accusative noun.","example":"What is the first object in أَعْطَيْتُهُ نَصِيحَةً?","answer":"ـهُ, the attached pronoun meaning him.","explanation":"The attached recipient occupies the first-object slot; نَصِيحَةً is still the second object.","legacyAliases":[{"rule":"The first object of a two-object verb may be an attached pronoun, while the second object remains a visible accusative noun.","example":"أَعْطَيْتُهُ نَصِيحَةً (aʿṭaytuhu naṣīḥatan)"}]} -->
 
 ## Sources
 

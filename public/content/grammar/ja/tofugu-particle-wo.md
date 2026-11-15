@@ -1,5 +1,7 @@
 # を (wo) — Object Marker
 
+<!-- vocab-inventory: {"mode":"explicit"} -->
+
 > **Source:** Content from [Tofugu](https://www.tofugu.com/japanese-grammar/particle-wo/). For personal study.
 
 Particle を: Direct Object Marker
@@ -35,6 +37,10 @@ Particle を can appear after nouns to make them the object of the sentence.
 In these sentences, particle を comes after the nouns that are affected by verbs. In the first one, ボール (ball) is the thing that is Kanae hits. In the second sentence, 梅酒 (plum wine) is the thing that Machiko makes. These are the direct objects of the sentence!
 
 #### を at the End of a Sentence
+
+<!-- grammar-card: {"id":"object-final-ellipsis","kind":"concept","format":"qa","priority":"essential","sourceSection":"を at the End of a Sentence","rule":"A sentence can end in を when the verb is recoverable","example":"Why can the reply クラブケーキを！ end with を after a question about eating too much?","answer":"The verb is understood from the conversation, so only the object needs to be said.","explanation":"The same omission can make a familiar slogan catchy or shorten a conventional greeting. を has not become a general sentence-ending emotion particle."} -->
+<!-- grammar-card: {"id":"year-end-greeting-season","kind":"concept","format":"qa","priority":"optional","sourceSection":"を at the End of a Sentence","rule":"良いお年を is a conventional pre-New-Year greeting","example":"When is 良いお年を normally said in the seasonal use taught here?","answer":"At the end of December, before the new year begins.","explanation":"The fuller expression 良いお年をお迎えください supplies the omitted verb. This is not the ordinary greeting after the year has already begun."} -->
+<!-- vocab-card: {"id":"vocab-yoi-otoshi-wo","word":"良いお年を","reading":"よいおとしを","meaning":"Have a good new year! (said before New Year)","priority":"optional","sourceSection":"を at the End of a Sentence"} -->
 
 Another place you'll find を is at the very end of a sentence. In this kind of sentence, the verb is purposefully missing, and the listener or reader is expected to complete the sentence in their head using world knowledge or context clues. There are three main reasons why this happens — you might be clarifying what the object of a verb is, you might be trying to make something sound catchy or attention-grabbing, or it could be part of a set-phrase greeting. Let's look at an example of each:
 
@@ -75,6 +81,11 @@ The example above is a common saying used to greet people during the New Year se
 
 ### を for Direct Objects
 
+<!-- grammar-card: {"id":"direct-object-application","kind":"rule","format":"cloze","priority":"essential","sourceSection":"を for Direct Objects","rule":"を marks the direct object of a transitive verb","hint":"Supply cockroach plus its object particle.","example":"キャメロンが___つぶした。","answer":"ゴキブリを","explanation":"The cockroach is what gets squashed. Direct objects can also be psychologically affected, as with blaming someone; physical change is not required."} -->
+<!-- grammar-card: {"id":"created-object-application","kind":"rule","format":"cloze","priority":"optional","sourceSection":"を for Direct Objects","rule":"The thing created by a verb takes を","hint":"Supply political party plus its object particle.","example":"ゴキブリ等が___作りました。","answer":"政党を","explanation":"The party is the result created by 作る and takes を, even though it did not exist before the action."} -->
+<!-- vocab-card: {"id":"vocab-tsukuru","word":"作る","reading":"つくる","meaning":"to make; to create","priority":"optional","sourceSection":"を for Direct Objects"} -->
+<!-- vocab-card: {"id":"vocab-semeru","word":"責める","reading":"せめる","meaning":"to blame; to criticize","priority":"optional","sourceSection":"を for Direct Objects"} -->
+
 When particle を is used with a transitive verb, it marks the object of that verb. This use of を is very similar to English, so we doubt you'll have any problems with it. を marks objects that are somehow affected by the action of the subject.
 
   - キャメロンが**ゴキブリを**つぶした。
@@ -99,10 +110,6 @@ Finally, objects can be the result of some process. This too is like English, so
 
 In this sentence, a  政党(せいとう) (political party) is what was created. The object is still being affected by the action — it comes into existence due to the completion of a process. Now those cockroaches can protest against their human oppressors!
 
-<!-- grammar-card: {"rule":"The thing created by a verb takes を","hint":"political party + object particle","example":"ゴキブリ等が___作りました。","answer":"政党を","explanation":"政党 is what was formed, so it is marked as the object with を."} -->
-
-<!-- grammar-card: {"rule":"を marks the direct object of a transitive verb","hint":"cockroach + object particle","example":"キャメロンが___つぶした。","answer":"ゴキブリを","explanation":"ゴキブリ is the thing squashed, so it takes を."} -->
-
 ## Beyond the Basics
 
 In general, we can say that particle を marks objects of verbs. This doesn't always mean though that the object of a Japanese sentence is always the object of the equivalent English translation, though. Let's take a look at the different ways that particle を gets used.
@@ -112,6 +119,10 @@ In general, we can say that particle を marks objects of verbs. This doesn't al
 Sometimes, you'll see particle を used with movement verbs, such as 歩く (walk), 泳ぐ (swim), 帰る (return). If you've learned about intransitive verbs before, this might come as a surprise to you — don't only transitive verbs take を? Shouldn't we use something different, like particle で  or particle から , with a verb of movement? Let's take a look at this puzzling particle use!
 
 #### を vs. で
+
+<!-- grammar-card: {"id":"motion-path-application","kind":"rule","format":"cloze","priority":"essential","sourceSection":"を vs. で","rule":"を can mark the path a motion verb travels along","hint":"Treat the plank as the route, not merely the site of walking.","example":"ケンイチが厚板の上___歩かされた！","answer":"を","explanation":"を marks a traversed route. The pirate context suggests walking off the end, but を alone does not entail falling."} -->
+<!-- grammar-card: {"id":"path-versus-place","kind":"concept","format":"qa","priority":"essential","sourceSection":"を vs. で","rule":"Path を differs from activity-location で","example":"What changes between 公園を散歩する and 公園で散歩する?","answer":"を treats the park as the route of the stroll; で identifies it as the place where strolling happens.","explanation":"This を can occur with movement verbs otherwise called intransitive. It does not turn the park into something physically affected by the walk."} -->
+<!-- vocab-card: {"id":"vocab-sanpo-suru","word":"散歩する","reading":"さんぽする","meaning":"to take a walk; to stroll","priority":"optional","sourceSection":"を vs. で"} -->
 
   - ケンイチが厚板の上**を**歩かされた！
 
@@ -136,6 +147,10 @@ So what causes this nuance difference? Well, particle を treats the noun before
 How are these sentences different? The sentence with 公園を suggests that the park is being treated as a route, or that the person strolling is moving with some purpose or direction. The sentence with 公園で on the other hand, simply tells us where the person strolls — in the park. Not on the beach, on the moon, or in the wilderness.
 
 #### を vs. から
+
+<!-- grammar-card: {"id":"departure-source-contrast","kind":"concept","format":"qa","priority":"essential","sourceSection":"を vs. から","rule":"Departure を marks what is left; から explicitly marks a source","example":"Why does 家から庭に出た fit the movement from a house into a garden better than 家を庭に出た?","answer":"から explicitly marks the house as the source paired with the garden as destination; を foregrounds leaving the house behind.","explanation":"Use the construction appropriate to this departure verb, not a universal rule that を sentences can never mention destinations."} -->
+<!-- grammar-card: {"id":"abstract-departure","kind":"concept","format":"qa","priority":"optional","sourceSection":"を vs. から","rule":"Departure particles can describe a nonphysical phase change","example":"Does アニメを卒業しました necessarily mean graduating from a school?","answer":"No. Here it means moving on from the phase of being into anime.","explanation":"から can also express this abstract source and may foreground movement into a new phase. 卒業する is not limited to physical departure."} -->
+<!-- vocab-card: {"id":"vocab-sotsugyou-suru","word":"卒業する","reading":"そつぎょうする","meaning":"to graduate; to move on from a phase","priority":"optional","sourceSection":"を vs. から"} -->
 
 Particle を can also be used with movement verbs that express departure — verbs like 出る (leave) and 下りる (disembark). Unlike the movement verbs in the previous section, which express some kind of extended movement, these verbs occur in an instant. Just like we said with を and で above, we can choose between two particles with verbs of departure as well: を and から.
 
@@ -301,8 +316,6 @@ by Shigehiro Kato
 <!-- quiz: {"type":"multiple-choice","question":"What does \"まちこは**梅酒を**作った。\" mean?","options":["Machiko made **plum wine**.","Kanae hit **the ball**.","A new wind into Japanese language education!","Have a great year!"],"answer":0} -->
 
 <!-- quiz: {"type":"multiple-choice","question":"What does \"日本語教育に新しい風を！\" mean?","options":["A new wind into Japanese language education!","Kanae hit **the ball**.","Machiko made **plum wine**.","Have a great year!"],"answer":0} -->
-
-<!-- grammar-card: {"rule":"を can mark the path a motion verb travels along","hint":"を / で","example":"ケンイチが厚板の上___歩かされた！","answer":"を","explanation":"歩く with を marks the plank as the route walked along, not a mere location."} -->
 
 ## Sources
 

@@ -1,10 +1,19 @@
 # Verbs with Prepositions (raghiba fī, baḥatha ʿan…)
 
+<!-- vocab-inventory: {"mode":"explicit"} -->
+
 Arabic verbs often come with a preferred preposition. The preposition can be as important as the verb itself, and changing it can change the meaning.
 
 ## Core idea
 
 Think of a verb plus preposition as one vocabulary unit. رَغِبَ فِي (raghiba fī) — he desired is not the same as رَغِبَ عَنْ (raghiba ʿan) — he turned away from.
+
+<!-- vocab-card: {"id":"vocab-raghiba-fi","word":"رَغِبَ فِي","reading":"raghiba fī","meaning":"he desired","priority":"essential","sourceSection":"Core idea"} -->
+<!-- vocab-card: {"id":"vocab-raghiba-an","word":"رَغِبَ عَنْ","reading":"raghiba ʿan","meaning":"he turned away from","priority":"essential","sourceSection":"Core idea"} -->
+<!-- vocab-card: {"id":"vocab-bahatha-an","word":"بَحَثَ عَنْ","reading":"baḥatha ʿan","meaning":"he searched for","priority":"essential","sourceSection":"Core idea"} -->
+<!-- vocab-card: {"id":"vocab-nazara-ila","word":"نَظَرَ إِلَى","reading":"naẓara ilā","meaning":"he looked at","priority":"optional","sourceSection":"Core idea"} -->
+<!-- vocab-card: {"id":"vocab-istamaa-ila","word":"اِسْتَمَعَ إِلَى","reading":"istamaʿa ilā","meaning":"he listened to","priority":"essential","sourceSection":"Core idea"} -->
+<!-- vocab-card: {"id":"vocab-amana-bi","word":"آمَنَ بِـ","reading":"āmana bi-","meaning":"he believed in","priority":"optional","sourceSection":"Core idea"} -->
 
 | Verb + preposition | Meaning | Example |
 |---|---|---|
@@ -19,7 +28,7 @@ Think of a verb plus preposition as one vocabulary unit. رَغِبَ فِي (ra
 
 Some verbs have more than one preposition pattern. رَغِبَ فِي السَّفَرِ (raghiba fī as-safari) — he desired travel. رَغِبَ عَنِ السَّفَرِ (raghiba ʿani as-safari) — he turned away from travel. The verb is the same, but the preposition changes the direction.
 
-<!-- grammar-card: {"rule":"Many Arabic verbs should be learned with their preposition because the preposition can change the meaning.","hint":"رَغِبَ فِي means desire, but رَغِبَ عَنْ means turn away from.","example":"Complete “he desired travel”: رَغِبَ ___ السَّفَرِ (fī as-safari).","answer":"فِي (fī)","explanation":"in / toward desire — رَغِبَ فِي (raghiba fī) means he desired. With عَنْ (ʿan), the meaning changes to turning away."} -->
+<!-- grammar-card: {"id":"desire-preposition","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Meaning changes","rule":"Many Arabic verbs should be learned with their preposition because the preposition can change the meaning.","example":"He desired travel: رَغِبَ ___ السَّفَرِ.","answer":"فِي","explanation":"With ʿan instead, the direction reverses: he turned away from travel.","legacyAliases":[{"rule":"Many Arabic verbs should be learned with their preposition because the preposition can change the meaning.","example":"Complete “he desired travel”: رَغِبَ ___ السَّفَرِ (fī as-safari)."}]} -->
 
 ## Common pairs to memorize
 
@@ -28,11 +37,16 @@ Some verbs have more than one preposition pattern. رَغِبَ فِي السّ�
 - شَكَرَ لِـ (shakara li-) — he thanked someone / was grateful to.
 - اِهْتَمَّ بِـ (ihtamma bi-) — he cared about.
 
+<!-- vocab-card: {"id":"vocab-saala-an","word":"سَأَلَ عَنْ","reading":"saʾala ʿan","meaning":"he asked about","priority":"optional","sourceSection":"Common pairs to memorize"} -->
+<!-- vocab-card: {"id":"vocab-itamada-ala","word":"اِعْتَمَدَ عَلَى","reading":"iʿtamada ʿalā","meaning":"he relied on","priority":"optional","sourceSection":"Common pairs to memorize"} -->
+<!-- vocab-card: {"id":"vocab-shakara-li","word":"شَكَرَ لِـ","reading":"shakara li-","meaning":"he was grateful to; he thanked (with this construction)","priority":"optional","sourceSection":"Common pairs to memorize"} -->
+<!-- vocab-card: {"id":"vocab-ihtamma-bi","word":"اِهْتَمَّ بِـ","reading":"ihtamma bi-","meaning":"he cared about","priority":"optional","sourceSection":"Common pairs to memorize"} -->
+
 > When your Arabic sounds grammatically right but unnatural, check the verb’s preposition. This is often where the problem lives.
 
 <!-- quiz: {"type":"multiple-choice","question":"Which pair means he listened to?","options":["اِسْتَمَعَ إِلَى (istamaʿa ilā) — he listened to","نَظَرَ عَنْ (naẓara ʿan) — he looked away from","آمَنَ إِلَى (āmana ilā) — he believed to","بَحَثَ فِي (baḥatha fī) — he searched in"],"answer":0} -->
 
-<!-- grammar-card: {"rule":"اِسْتَمَعَ (istamaʿa) normally takes إِلَى (ilā) when it means listen to.","hint":"Listening is directed toward a sound or speaker.","example":"Complete “I listened to the lesson”: اِسْتَمَعْتُ ___ الدَّرْسِ (ilā ad-darsi).","answer":"إِلَى (ilā)","explanation":"اِسْتَمَعْتُ إِلَى الدَّرْسِ (istamaʿtu ilā ad-darsi) means I listened to the lesson."} -->
+<!-- grammar-card: {"id":"listen-preposition","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Common pairs to memorize","rule":"اِسْتَمَعَ (istamaʿa) normally takes إِلَى (ilā) when it means listen to.","example":"I listened to the lesson: اِسْتَمَعْتُ ___ الدَّرْسِ.","answer":"إِلَى","explanation":"The noun after the preposition is genitive.","legacyAliases":[{"rule":"اِسْتَمَعَ (istamaʿa) normally takes إِلَى (ilā) when it means listen to.","example":"Complete “I listened to the lesson”: اِسْتَمَعْتُ ___ الدَّرْسِ (ilā ad-darsi)."}]} -->
 
 ## Sources
 

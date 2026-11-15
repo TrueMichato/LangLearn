@@ -1,10 +1,12 @@
 # The Supine (de făcut, ușor de învățat)
 
+<!-- vocab-inventory: {"mode":"explicit"} -->
+
 Romanian has a useful verbal form called the **supine**. It often looks like **de + past participle**: **de făcut**, **de citit**, **de mâncat**. English may translate it as **to do**, **for reading**, **to eat**, or **to be done**.
 
 ## The Basic Form
 
-The supine is usually built with **de** plus the same short form used as a past participle.
+The supine is usually built with **de** plus the same short form used as a past participle. In these supine constructions, that form is invariable; it does not agree like a passive participle.
 
 | Infinitive | Supine | English idea |
 |------------|--------|--------------|
@@ -19,6 +21,14 @@ The supine is usually built with **de** plus the same short form used as a past 
 - **Mai este mult de lucru.** — There is still a lot of work to do.
 
 <!-- quiz: {"type":"multiple-choice","question":"What is the supine of a face?","options":["de fac","de făcut","să fac","făcând"],"answer":1} -->
+
+<!-- vocab-card: {"id":"vocab-a-face","priority":"optional","sourceSection":"The Basic Form","word":"a face","meaning":"to do; to make"} -->
+<!-- vocab-card: {"id":"vocab-a-citi","priority":"optional","sourceSection":"The Basic Form","word":"a citi","meaning":"to read"} -->
+<!-- vocab-card: {"id":"vocab-a-manca","priority":"optional","sourceSection":"The Basic Form","word":"a mânca","meaning":"to eat"} -->
+<!-- vocab-card: {"id":"vocab-a-vedea","priority":"optional","sourceSection":"The Basic Form","word":"a vedea","meaning":"to see"} -->
+<!-- vocab-card: {"id":"vocab-a-spala","priority":"optional","sourceSection":"The Basic Form","word":"a spăla","meaning":"to wash"} -->
+<!-- grammar-card: {"id":"supine-shape","priority":"essential","sourceSection":"The Basic Form","kind":"concept","format":"qa","rule":"The supine commonly combines de with an invariable participle-shaped form","example":"What is the usual shape of the supine taught here, as in de făcut?","answer":"De plus the short participle-shaped verb form.","explanation":"De plus the short participle-shaped verb form."} -->
+<!-- grammar-card: {"id":"supine-do","priority":"optional","sourceSection":"The Basic Form","kind":"rule","format":"cloze","rule":"A face has the supine de făcut","example":"Am ceva de ___. (a face)","answer":"făcut","explanation":"The form after de is făcut, not a finite form of face."} -->
 
 ## After a avea: Obligation or Task
 
@@ -35,7 +45,8 @@ A very common pattern is **a avea + de + supine**, meaning **to have to do somet
 - **Ea are multe de rezolvat azi.** — She has many things to solve today.
 - **Copiii nu au nimic de făcut.** — The children have nothing to do.
 
-<!-- grammar-card: {"rule":"a avea + de + supine expresses a task or obligation","hint":"I have work to do = Am de lucru","example":"Eu am multe ___ făcut.","answer":"de","explanation":"The task pattern uses de plus the supine: am multe de făcut."} -->
+<!-- grammar-card: {"id":"have-task-de","priority":"essential","sourceSection":"After a avea: Obligation or Task","kind":"rule","format":"cloze","rule":"a avea + de + supine expresses a task or obligation","example":"Eu am multe ___ făcut.","answer":"de","explanation":"Am multe de făcut means I have many things to do."} -->
+<!-- grammar-card: {"id":"have-task-meaning","priority":"optional","sourceSection":"After a avea: Obligation or Task","kind":"concept","format":"qa","rule":"A avea with de plus supine expresses an outstanding task","example":"What does Am de citit trei pagini say about the three pages?","answer":"They are pages I have to read or have left to read.","explanation":"They are pages I have to read or have left to read."} -->
 
 ## After Adjectives: Easy, Hard, Good
 
@@ -50,6 +61,12 @@ In this use, the thing described is the object of the action: **textul este greu
 
 <!-- quiz: {"type":"multiple-choice","question":"Which sentence means This rule is easy to remember?","options":["Regula este ușor de ținut minte.","Regula este ușor ținând minte.","Regula este ușor să ținut minte.","Regula este ușor de ține minte."],"answer":0} -->
 
+<!-- vocab-card: {"id":"vocab-a-tine-minte","priority":"optional","sourceSection":"After Adjectives: Easy, Hard, Good","word":"a ține minte","meaning":"to remember"} -->
+<!-- vocab-card: {"id":"vocab-greu","priority":"optional","sourceSection":"After Adjectives: Easy, Hard, Good","word":"greu","meaning":"hard; difficult"} -->
+<!-- vocab-card: {"id":"vocab-usor","priority":"optional","sourceSection":"After Adjectives: Easy, Hard, Good","word":"ușor","meaning":"easy; easily"} -->
+<!-- grammar-card: {"id":"hard-to-read","priority":"essential","sourceSection":"After Adjectives: Easy, Hard, Good","kind":"rule","format":"cloze","rule":"After adjectives like greu and ușor, use de + supine","example":"Cartea este greu ___. (to read)","answer":"de citit","explanation":"Greu de citit describes a book that is hard to read.","legacyAliases":[{"rule":"After adjectives like greu and ușor, use de + supine","example":"Cartea este greu ___."}]} -->
+<!-- grammar-card: {"id":"supine-object-role","priority":"optional","sourceSection":"After Adjectives: Easy, Hard, Good","kind":"concept","format":"qa","rule":"The described thing is the understood object of the supine action","example":"In Textul este greu de citit, is textul doing the reading?","answer":"No. It is the thing being read.","explanation":"No. It is the thing being read."} -->
+
 ## Noun-Like Uses
 
 The supine can describe the purpose of an object, much like English **for washing** or **drinking**.
@@ -63,7 +80,11 @@ The supine can describe the purpose of an object, much like English **for washin
 
 - **Caut o carte bună de citit în tren.** — I am looking for a good book to read on the train.
 - **Avem apă de băut pentru toată lumea.** — We have drinking water for everyone.
-- **Aceasta este lista de cumpărat.** — This is the shopping list.
+- **Acestea sunt lucrurile de cumpărat.** — These are the things to buy.
+
+<!-- vocab-card: {"id":"vocab-masina-de-spalat","priority":"essential","sourceSection":"Noun-Like Uses","word":"mașină de spălat","meaning":"washing machine"} -->
+<!-- vocab-card: {"id":"vocab-apa-de-baut","priority":"essential","sourceSection":"Noun-Like Uses","word":"apă de băut","meaning":"drinking water"} -->
+<!-- grammar-card: {"id":"supine-purpose","priority":"optional","sourceSection":"Noun-Like Uses","kind":"concept","format":"qa","rule":"A noun followed by de plus supine can describe its intended use","example":"What does de spălat contribute to mașină de spălat?","answer":"It identifies the machine's purpose: washing.","explanation":"It identifies the machine's purpose: washing."} -->
 
 ## Supine vs. Infinitive and Subjunctive
 
@@ -79,7 +100,7 @@ Do not replace every English **to** with the supine. Learn the fixed patterns: *
 
 <!-- quiz: {"type":"multiple-choice","question":"Which phrase naturally means drinking water?","options":["apă de băut","apă să beau","apă bând","apă de beau"],"answer":0} -->
 
-<!-- grammar-card: {"rule":"After adjectives like greu and ușor, use de + supine","hint":"hard to read = greu de citit","example":"Cartea este greu ___.","answer":"de citit","explanation":"After greu, Romanian uses de plus the supine: greu de citit."} -->
+<!-- grammar-card: {"id":"want-reading-subjunctive","priority":"essential","sourceSection":"Supine vs. Infinitive and Subjunctive","kind":"rule","format":"cloze","rule":"A desire after vreau normally uses să plus a finite verb","example":"Vreau ___ citesc.","answer":"să","explanation":"Vreau să citesc contrasts with Am ceva de citit."} -->
 
 ## Sources
 

@@ -1,5 +1,7 @@
 # とき — When / At the Time
 
+<!-- vocab-inventory: {"mode":"explicit"} -->
+
 > **Source:** Content from [Tofugu](https://www.tofugu.com/japanese-grammar/toki/). For personal study.
 
 〜とき for "When"
@@ -31,6 +33,11 @@ And if you want to say that you were surprised when you saw the ghost, you say:
 So far, so good?
 
 It's important to remember that とき, despite its grammatical functionality, is still a noun. As you can see, とき is used *at the end* of the time clause, while in English, "when" is placed *at the beginning*. This is because とき is a noun, and in Japanese, you modify a noun by placing a word or a sentence before it. とき can also take a particle after it just like other nouns. We'll have a closer look at combinations of とき and different particles later on this page!
+
+<!-- vocab-card: {"id":"vocab-toki","word":"時","reading":"とき","meaning":"time; occasion","priority":"optional","sourceSection":"The Basics"} -->
+<!-- grammar-card: {"id":"time-clause-position","kind":"concept","format":"qa","priority":"essential","sourceSection":"The Basics","rule":"とき is a noun following the clause that describes the time","example":"Where does とき go relative to the clause meaning I was a child?","answer":"After it: 子供だったとき, rather than before the clause as English when would be.","explanation":"The resulting time noun phrase can take particles such as に, は, or も."} -->
+
+<!-- grammar-card: {"id":"time-noun","kind":"rule","format":"cloze","priority":"optional","sourceSection":"The Basics","rule":"とき marks the time at which something happened","hint":"Add the time noun meaning when.","example":"子供だった___、おばけを見た。","answer":"とき","explanation":"子供だったとき means back when the speaker was a child."} -->
 
 ### Tense Used in 〜とき
 
@@ -72,6 +79,10 @@ So what if you used the present tense, as in 日本に 着(つ)**く**とき ins
 
 Do you have a clearer picture now? It's important to keep in mind this difference from English. You'll be running into Japanese sentences where different parts have different tenses. When you see it (or 見**た**とき), hopefully you remember that it's just a question of the speaker's perspective.
 
+<!-- grammar-card: {"id":"relative-tense","kind":"concept","format":"qa","priority":"essential","sourceSection":"Tense Used in 〜とき","rule":"Tense before とき can express relative completion and viewpoint, not simply match the main clause","example":"Why can 日本に着いたとき describe a future occasion for using airport Wi-Fi?","answer":"It pictures the arrival as completed at that future time, before using the Wi-Fi.","explanation":"着くとき instead pictures approaching or reaching arrival. A past-shaped subordinate verb need not locate the whole sentence in the past."} -->
+
+<!-- grammar-card: {"id":"departure-viewpoint","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Tense Used in 〜とき","rule":"Nonpast before とき can picture an event before completion at the reference time","hint":"Picture being about to leave, not an already completed departure.","example":"あれ、家を出___とき、カギ閉めたよね？","answer":"る","explanation":"出るとき can picture the locking at departure, before leaving is complete; it does not universally place the subordinate event before the main event.","legacyAliases":[{"rule":"The non-past before とき places the action before the main clause","example":"あれ、家を出___とき、カギ閉めたよね？"}]} -->
+
 ### Patterns of Use
 
 As mentioned earlier, とき is grammatically a noun. To modify a noun, there are different rules depending on the type of the word immediately before it, so let's check them out!
@@ -91,6 +102,8 @@ The verb before とき can conjugate. For example, if you want to say that you w
   - **When** I was driving, I was wearing glasses.
 
 If you'd like to learn about verb conjugation, check out its dedicated page!
+
+<!-- grammar-card: {"id":"verb-link","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Verb + とき","rule":"A plain verb directly modifies とき","example":"Change します to the form needed here: 運転を___とき、メガネをかける。","answer":"する","explanation":"The noun-modifying clause stays plain, without します or a linking の."} -->
 
 #### い-Adjective + とき
 
@@ -120,6 +133,8 @@ You can also turn it into its なかった form to talk about the past negative,
 
 If you want to learn more about い-adjectives, check out its special page!
 
+<!-- grammar-card: {"id":"i-adjective-link","kind":"rule","format":"cloze","priority":"optional","sourceSection":"い-Adjective + とき","rule":"An い-adjective modifies とき directly in its chosen plain form","example":"When it was not hot: 暑___とき。","answer":"くなかった","explanation":"暑くなかったとき uses the past-negative adjective directly, without な or の."} -->
+
 #### な-Adjective + とき
 
 When とき follows a な-adjective, you'll need to add な between them, as in:
@@ -148,6 +163,9 @@ To use past-tense negatives with な-adjectives, you can add じゃなかった:
 
 If you want to learn more about な-adjectives, check out its dedicated page!
 
+<!-- vocab-card: {"id":"vocab-fuan","word":"不安","reading":"ふあん","meaning":"anxiety; anxious","priority":"optional","sourceSection":"な-Adjective + とき"} -->
+<!-- grammar-card: {"id":"na-adjective-link","kind":"rule","format":"cloze","priority":"essential","sourceSection":"な-Adjective + とき","rule":"An affirmative nonpast な-adjective uses な before とき","example":"When anxious: 不安___とき。","answer":"な","explanation":"Other plain predicates also fit: 不安だったとき, 不安じゃないとき, 不安じゃなかったとき."} -->
+
 #### Noun  + とき
 
 When you use とき with a noun, you'll need to add の between them, as in:
@@ -171,6 +189,8 @@ This also applies to negative sentences. For example, to refer to when it is NOT
   - 雨じゃない**とき**、サンダルをはく。
 
   - **When** it doesn't rain, I wear sandals.
+
+<!-- grammar-card: {"id":"noun-link","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Noun  + とき","rule":"A noun normally uses の before とき; plain copular forms express other tenses or negation","example":"When it rains: 雨___とき、レインコートを着る。","answer":"の","explanation":"Compare 雨じゃないとき and 子供だったとき. Do not use bare だ before とき."} -->
 
 ### 〜とき and Different Particles
 
@@ -206,6 +226,8 @@ What about this situation? Imagine you're really busy, but accidentally put regu
 
 Here, に is necessary because you're upset that this awful event occurred at this very specific time of when you're busy. It's sort of like saying "At a time like *this*?!" Without に, the sentence feels mismatched or unfinished.
 
+<!-- grammar-card: {"id":"time-ni","kind":"concept","format":"qa","priority":"optional","sourceSection":"〜ときに","rule":"に pinpoints the time and is often optional in a full time clause, but matters in some fragments","example":"Is に always required after とき in 小さいとき、日本に住んでいました?","answer":"No. Adding it gives more focus to when; in an exclamation like この忙しいときに, it helps complete the at-a-time-like-this meaning.","explanation":"Do not turn optional に in many full sentences into a rule that it can always be omitted."} -->
+
 #### 〜ときは
 
 You can also add particle は after とき. For example, you can throw は into the earlier example 小さいとき、日本に住んでいました, as in:
@@ -223,6 +245,8 @@ You can also combine particle に and は, as in:
   - **When** I was little, I lived in Japan.
 
 In this case, the particle に stresses "when I was little" as a specific time and は marks it as a topic and/or expresses a contrast between "when I was little" and "when I wasn't little." When you phrase it all together, you sound as if you're emphatically declaring that you only lived in Japan *when you were a child* and not any other times.
+
+<!-- grammar-card: {"id":"time-wa","kind":"concept","format":"qa","priority":"optional","sourceSection":"〜ときは","rule":"は topicalizes or contrasts the time; には adds time focus as well","example":"What does は add to 小さいときは、日本に住んでいました?","answer":"It makes childhood the topic and can contrast it with another period, such as now.","explanation":"には combines the time focus of に and the topic or contrast of は; context supplies the particular contrast."} -->
 
 #### 〜ときも
 
@@ -242,6 +266,8 @@ You can also combine particle に and も, as in:
 
 As you know now, に underlines the time period you're referring to, while も indicates you lived in Japan at that time *in addition to* some other time(s).
 
+<!-- grammar-card: {"id":"time-mo","kind":"concept","format":"qa","priority":"optional","sourceSection":"〜ときも","rule":"も adds the named time to other relevant times; にも also focuses the time","example":"What does 小さいときも、日本に住んでいました imply beyond childhood residence?","answer":"That the speaker also lived in Japan at another relevant time.","explanation":"も is additive, not a way of saying childhood was the only period."} -->
+
 #### 〜ときから and 〜ときまで
 
 You can use particle から with とき to talk about *since when* you've done something. For example, if you've lived in Japan since you were five, you can say:
@@ -257,6 +283,8 @@ What if you lived in Japan from five to seven but not anymore? In this case, you
   - I lived in Japan **from when** I was five **to** seven.
 
 Keep in mind that it's also common to omit 〜のとき and just say 五才から七才まで.
+
+<!-- grammar-card: {"id":"time-start-end","kind":"concept","format":"qa","priority":"optional","sourceSection":"〜ときから and 〜ときまで","rule":"から marks the beginning of a time span and まで its endpoint","example":"What endpoints does 五才のときから七才のときまで give?","answer":"From age five through age seven.","explanation":"のとき can be omitted here: 五才から七才まで. から by itself can mark since when."} -->
 
 #### 〜ときが
 
@@ -274,10 +302,7 @@ Or if you're speaking out what's going on while playing a horror game, for examp
 
 In both cases, が indicates that this is *the time*  when you had the most fun or when you always get very scared.
 
-<!-- grammar-card: {"rule":"The non-past before とき places the action before the main clause","hint":"出る / 出た","example":"あれ、家を出___とき、カギ閉めたよね？","answer":"る","explanation":"出るとき puts the locking before actually leaving the house."} -->
-
-<!-- grammar-card: {"rule":"とき marks the time at which something happened","hint":"とき","example":"子供だった___、おばけを見た。","answer":"とき","explanation":"子供だったとき means back when the speaker was a child."} -->
-
+<!-- grammar-card: {"id":"time-subject","kind":"rule","format":"cloze","priority":"optional","sourceSection":"〜ときが","rule":"が can mark the time noun phrase as the subject of an evaluation","example":"Mark childhood as the time that was most fun: 小さいとき___、一番楽しかった。","answer":"が","explanation":"The time itself is identified as the subject of the evaluation."} -->
 ## Beyond The Basics
 
 ### More About Tense Used in 〜とき
@@ -302,6 +327,10 @@ For instance, let's imagine you want to find out what your friend was doing whil
 Although the meaning remains the same, the implication differs slightly. That is, using the past tense makes it sound as if you are looking back from the present. The present tense, on the other hand, sounds like you're speaking from the perspective of yourself when you were cooking in the past.
 
 It's worth noting that this shift of viewpoints occurs only in the time clause. The main clauses are still in the past tense, suggesting that you are referring to a point in the past.
+
+<!-- grammar-card: {"id":"ongoing-viewpoints","kind":"concept","format":"qa","priority":"optional","sourceSection":"〜ている Used in 〜とき","rule":"ているとき and ていたとき can both frame an ongoing situation in a past account","example":"Must a past main clause force 料理をしているとき to become 料理をしていたとき?","answer":"No. Both can describe the past cooking period; the nonpast form views the scene from within it, while the past looks back on it.","explanation":"The main clause remains past. The choice need not change which cooking period is meant."} -->
+
+<!-- grammar-card: {"id":"ongoing-past","kind":"rule","format":"cloze","priority":"optional","sourceSection":"〜ている Used in 〜とき","rule":"ていたとき looks back on an ongoing past situation","hint":"Use the past form to look back on the cooking period.","example":"Complete the time phrase for a retrospectively viewed cooking scene: 私が料理をしてい___とき。","answer":"た","explanation":"The ongoing aspect comes from ている, not from past tense alone. しているとき can also frame this past scene from within it.","legacyAliases":[{"rule":"The past before とき means the action was already under way","example":"私が料理をしてい___とき、あなたは何をしていたの？"}]} -->
 
 #### Objective Viewpoints
 
@@ -338,6 +367,8 @@ Now, for a quick exercise, let's bring in earlier examples we used in Patterns o
 Can you tell the difference in nuance?
 
 In this example, since it's not talking about a specific moment, the first one sounds like you're simply referring to a time when you were a child. On the other hand, the second one sounds as if you're somehow attempting to draw a distinction between when you were a child and when you weren't anymore.
+
+<!-- grammar-card: {"id":"objective-nonpast","kind":"concept","format":"qa","priority":"optional","sourceSection":"Objective Viewpoints","rule":"Nonpast descriptions before とき can frame recurring past circumstances without a vivid reliving viewpoint","example":"Must いつもの先生じゃないとき、緊張した mean the speaker is vividly reliving one particular event?","answer":"No. It can also describe general past occasions with a different teacher from an observer's viewpoint.","explanation":"The form before とき is not a mechanical English-style tense match, nor does each nonpast clause require dramatic reenactment."} -->
 
 ---
 
@@ -391,8 +422,6 @@ by 樋口 万里子
 <!-- quiz: {"type":"multiple-choice","question":"What does \"あれ、家を出**る**とき、カギ閉めたよね？\" mean?","options":["Wait, when I was leaving, I locked the door, right?","Wait, when I left the house, I locked the door, right?","When I arrive in Japan, I wonder if I can use the Wi-Fi right away.","Even **when** it wasn't hot, you ate ice cream, didn't you?"],"answer":0} -->
 
 <!-- quiz: {"type":"multiple-choice","question":"What does \"日本に着い**た**とき、すぐにWi-Fi使えるかな？\" mean?","options":["When I arrive in Japan, I wonder if I can use the Wi-Fi right away.","Wait, when I left the house, I locked the door, right?","Wait, when I was leaving, I locked the door, right?","Even **when** it wasn't hot, you ate ice cream, didn't you?"],"answer":0} -->
-
-<!-- grammar-card: {"rule":"The past before とき means the action was already under way","hint":"している / していた","example":"私が料理をしてい___とき、あなたは何をしていたの？","answer":"た","explanation":"していたとき sets the cooking as the period the question is asking about."} -->
 
 ## Sources
 

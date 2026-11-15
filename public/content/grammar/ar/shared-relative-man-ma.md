@@ -1,5 +1,7 @@
 # Shared Relative Nouns: man and mā
 
+<!-- vocab-inventory: {"mode":"explicit"} -->
+
 Most Arabic relative pronouns change for gender and number, but **مَنْ** (man) and **مَا** (mā) are shared relative nouns, **أَسْمَاءٌ مَوْصُولَةٌ مُشْتَرَكَةٌ** (asmāʾun mawṣūlatun mushtarakatun). They stay the same while the surrounding sentence tells you who or what is meant.
 
 ## Core idea
@@ -7,6 +9,11 @@ Most Arabic relative pronouns change for gender and number, but **مَنْ** (ma
 Use **مَنْ** (man) for people and **مَا** (mā) for things, ideas, or actions. Each introduces a relative clause called **صِلَةُ الْمَوْصُولِ** (ṣilatu al-mawṣūli), and that clause often contains a returning pronoun when needed.
 
 ## Forms and examples
+
+<!-- vocab-card: {"id":"vocab-man","word":"مَنْ","reading":"man","meaning":"whoever; the one(s) who; relative use for people","priority":"optional","sourceSection":"Forms and examples"} -->
+<!-- vocab-card: {"id":"vocab-ma","word":"مَا","reading":"mā","meaning":"what; that which; relative use for things or ideas","priority":"optional","sourceSection":"Forms and examples"} -->
+<!-- grammar-card: {"id":"ma-thing","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Forms and examples","rule":"Relative مَا normally refers to things or ideas.","example":"“Choose what suits you”: اِخْتَرْ ___ يُنَاسِبُكَ.","answer":"مَا","explanation":"The referent is what is suitable, not a person; the following clause completes the relative meaning."} -->
+<!-- grammar-card: {"id":"invariable-agreement","kind":"concept","format":"qa","priority":"essential","sourceSection":"Forms and examples","rule":"The fixed relative noun need not change when agreement follows its meaning.","example":"Why can the verbs be feminine in جَاءَتْ مَنْ فَازَتْ بِالْجَائِزَةِ while مَنْ stays unchanged?","answer":"مَنْ is invariable, while the verbs can agree with its female referent.","explanation":"Context supplies gender and number; an unchanged relative form does not force masculine meaning."} -->
 
 | Relative noun | Typical referent | Agreement behavior | Example |
 |---|---|---|---|
@@ -21,7 +28,8 @@ Use **مَنْ** (man) for people and **مَا** (mā) for things, ideas, or act
 
 Do not confuse relative **مَنْ** (man) — whoever with question **مَنْ؟** (man?) — who? Word order and punctuation help. In **مَنْ يَجْتَهِدْ يَنْجَحْ** (man yajtahid yanjaḥ) — whoever works hard succeeds, **مَنْ** is conditional rather than relative, but it still shows how one fixed form can carry broad meaning.
 
-<!-- grammar-card: {"rule": "مَنْ and مَا are invariable shared relative nouns: مَنْ usually points to people, and مَا usually points to things or ideas.", "hint": "Look at the following clause to identify the referent.", "example": "أَكْرِمْ مَنْ يُعَلِّمُكَ (akrim man yuʿallimuka)", "answer": "Honor whoever teaches you", "explanation": "مَنْ introduces a relative clause about a person; its form does not change for gender or number."} -->
+<!-- grammar-card: {"id":"man-person","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Usage notes","rule":"مَنْ and مَا are invariable shared relative nouns: مَنْ usually points to people, and مَا usually points to things or ideas.","example":"“Honor whoever teaches you”: أَكْرِمْ ___ يُعَلِّمُكَ.","answer":"مَنْ","explanation":"The relative denotes a person and stays fixed regardless of gender or number.","legacyAliases":[{"rule":"مَنْ and مَا are invariable shared relative nouns: مَنْ usually points to people, and مَا usually points to things or ideas.","example":"أَكْرِمْ مَنْ يُعَلِّمُكَ (akrim man yuʿallimuka)"}]} -->
+<!-- grammar-card: {"id":"relative-conditional-question","kind":"concept","format":"qa","priority":"essential","sourceSection":"Usage notes","rule":"Context distinguishes relative, interrogative and conditional مَنْ.","example":"What use of مَنْ appears in مَنْ يَجْتَهِدْ يَنْجَحْ, and what signals it?","answer":"Conditional “whoever”; the two imperfect verbs are jussive in a condition-result pattern.","explanation":"Relative مَنْ does not itself impose this two-verb jussive pattern; interrogative مَنْ instead asks who."} -->
 
 ## Practice patterns
 
@@ -33,7 +41,7 @@ Build relative meanings with a full clause after **مَنْ** or **مَا**:
 
 <!-- quiz: {"type": "multiple-choice", "question": "In هَذَا مَا بَحَثْتُ عَنْهُ (hādhā mā baḥathtu ʿanhu), what links the clause back to مَا?", "options": ["The pronoun ـهُ in عَنْهُ", "The demonstrative هَذَا", "The past tense ending تُ", "The long vowel ā"], "answer": 0} -->
 
-<!-- grammar-card: {"rule": "A relative clause after مَنْ or مَا may need a return pronoun when the relative noun is not the clause subject.", "hint": "Search for a suffix such as ـهُ or ـكَ inside the clause.", "example": "حَفِظْتُ مَا سَمِعْتُهُ (ḥafiẓtu mā samiʿtuhu)", "answer": "I memorized what I heard", "explanation": "The suffix ـهُ in سَمِعْتُهُ returns to مَا and completes the relative link."} -->
+<!-- grammar-card: {"id":"relative-return","kind":"rule","format":"qa","priority":"essential","sourceSection":"Practice patterns","rule":"A relative clause after مَنْ or مَا may need a return pronoun when the relative noun is not the clause subject.","example":"In هَذَا مَا بَحَثْتُ عَنْهُ, which suffix links the relative clause to the thing searched for?","answer":"ـهُ in عَنْهُ.","explanation":"The pronoun returns to مَا as the complement of عَنْ; an unrelated addressee suffix is not automatically a return pronoun.","legacyAliases":[{"rule":"A relative clause after مَنْ or مَا may need a return pronoun when the relative noun is not the clause subject.","example":"حَفِظْتُ مَا سَمِعْتُهُ (ḥafiẓtu mā samiʿtuhu)"}]} -->
 
 ## Sources
 

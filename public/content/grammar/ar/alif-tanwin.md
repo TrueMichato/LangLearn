@@ -1,5 +1,7 @@
 # Alif al-Tanwīn in Spelling
 
+<!-- vocab-inventory: {"mode":"explicit"} -->
+
 The accusative tanwīn **ـً** (fatḥatān) often needs a support alif in spelling. This is the familiar final **ـًا** in words like **كِتَابًا** (kitāban), but not every word receives an added alif.
 
 ## Core idea
@@ -7,6 +9,13 @@ The accusative tanwīn **ـً** (fatḥatān) often needs a support alif in spel
 When an indefinite noun ends in a regular consonant and is accusative, Arabic usually writes an extra alif after the final consonant: **قَرَأْتُ كِتَابًا** (qaraʾtu kitāban) — “I read a book.” The sound is -an; the alif is mainly spelling support.
 
 ## Forms and examples
+
+<!-- vocab-card: {"id":"vocab-kitab","word":"كِتَابٌ","reading":"kitābun","meaning":"book","priority":"optional","sourceSection":"Forms and examples"} -->
+<!-- vocab-card: {"id":"vocab-madrasah","word":"مَدْرَسَةٌ","reading":"madrasatun","meaning":"school","priority":"optional","sourceSection":"Forms and examples"} -->
+<!-- vocab-card: {"id":"vocab-samaa","word":"سَمَاءٌ","reading":"samāʾun","meaning":"sky","priority":"optional","sourceSection":"Forms and examples"} -->
+<!-- vocab-card: {"id":"vocab-fata","word":"فَتًى","reading":"fatan","meaning":"young man; boy","priority":"optional","sourceSection":"Forms and examples"} -->
+<!-- grammar-card: {"id":"hamza-after-alif","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Forms and examples","rule":"Hamza preceded by alif takes no additional tanwīn alif.","example":"Indefinite accusative of سَمَاءٌ: ___.","answer":"سَمَاءً","explanation":"The hamza is already preceded by alif, so another support alif is not added."} -->
+<!-- grammar-card: {"id":"maqsura-no-extra-alif","kind":"rule","format":"qa","priority":"optional","sourceSection":"Forms and examples","rule":"A noun ending in alif maqṣūra receives no extra support alif.","example":"Write the indefinite accusative of the taught word for a young man, ending in alif maqṣūra.","answer":"فَتًى","explanation":"The existing maqṣūra remains; this noun's written form does not distinguish its nominative and accusative cases."} -->
 
 | Noun ending | Nominative | Accusative with tanwīn | Added alif? | Example |
 |---|---|---|---|---|
@@ -21,7 +30,8 @@ When an indefinite noun ends in a regular consonant and is accusative, Arabic us
 
 Do not add a second alif after endings that already block it. **مَدْرَسَةً** (madrasatan) ends with tāʾ marbūṭa, so it does not become **مَدْرَسَةًا**. **سَمَاءً** (samāʾan) already has a final hamza after alif, so no extra support alif is added. Proper names and diptotes may be accusative without tanwīn, such as **رَأَيْتُ أَحْمَدَ** (raʾaytu aḥmada).
 
-<!-- grammar-card: {"rule": "Most regular nouns add an alif when they take accusative tanwīn, producing the spelling ـًا.", "hint": "If the word ends in a normal consonant, expect the support alif.", "example": "شَرِبْتُ مَاءً وَأَكَلْتُ خُبْزًا (sharibtu māʾan wa-akaltu khubzan)", "answer": "I drank water and ate bread", "explanation": "خُبْزًا has the added tanwīn alif because it ends in a regular consonant; مَاءً does not add another alif after hamza preceded by alif."} -->
+<!-- grammar-card: {"id":"regular-support-alif","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Usage notes","rule":"Most regular nouns add an alif when they take accusative tanwīn, producing the spelling ـًا.","example":"أَكَلْتُ ___. (خُبْزٌ; I ate bread)","answer":"خُبْزًا","explanation":"The ordinary consonant ending takes fatḥatān with a support alif, unlike مَاءً.","legacyAliases":[{"rule":"Most regular nouns add an alif when they take accusative tanwīn, producing the spelling ـًا.","example":"شَرِبْتُ مَاءً وَأَكَلْتُ خُبْزًا (sharibtu māʾan wa-akaltu khubzan)"}]} -->
+<!-- grammar-card: {"id":"diptote-no-tanwin","kind":"concept","format":"qa","priority":"essential","sourceSection":"Usage notes","rule":"Accusative case does not always involve tanwīn.","example":"Why is there no support alif on أَحْمَدَ in رَأَيْتُ أَحْمَدَ?","answer":"أَحْمَدَ is a diptote and does not take tanwīn here.","explanation":"Support-alif rules apply to the relevant tanwīn spelling, not to every accusative noun."} -->
 
 ## Practice patterns
 
@@ -33,7 +43,7 @@ Spell the -an ending according to the noun ending:
 
 <!-- quiz: {"type": "multiple-choice", "question": "Which spelling is correct for an indefinite accusative noun meaning a school?", "options": ["مَدْرَسَةً", "مَدْرَسَةًا", "مَدْرَسَتًا", "مَدْرَسًا"], "answer": 0} -->
 
-<!-- grammar-card: {"rule": "Words ending in tāʾ marbūṭa take fatḥatān directly on the tāʾ marbūṭa, without an added alif.", "hint": "Look for ةً at the end.", "example": "قَرَأْتُ قِصَّةً جَمِيلَةً (qaraʾtu qiṣṣatan jamīlatan)", "answer": "I read a beautiful story", "explanation": "قِصَّةً and جَمِيلَةً end in tāʾ marbūṭa, so neither takes an added alif."} -->
+<!-- grammar-card: {"id":"ta-marbuta-no-alif","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Practice patterns","rule":"Words ending in tāʾ marbūṭa take fatḥatān directly on the tāʾ marbūṭa, without an added alif.","example":"قَرَأْتُ ___ جَمِيلَةً. (قِصَّةٌ; a story)","answer":"قِصَّةً","explanation":"Place fatḥatān directly on ة; do not append an alif.","legacyAliases":[{"rule":"Words ending in tāʾ marbūṭa take fatḥatān directly on the tāʾ marbūṭa, without an added alif.","example":"قَرَأْتُ قِصَّةً جَمِيلَةً (qaraʾtu qiṣṣatan jamīlatan)"}]} -->
 
 ## Sources
 

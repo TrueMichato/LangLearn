@@ -1,5 +1,7 @@
 # い-Adjective く-Form
 
+<!-- vocab-inventory: {"mode":"explicit"} -->
+
 > **Source:** Content from [Tofugu](https://www.tofugu.com/japanese-grammar/i-adjective-ku-form/). For personal study.
 
 Japanese い-Adjective く Form
@@ -16,6 +18,8 @@ This page teaches you how to put an adjective into the くform and provides basi
 
 〜く is one possible ending that an い-adjective can take. In traditional Japanese grammar, it is called the 連用形, or the “continuative form,” because it allows い-adjectives to “continue” on and connect to other elements, forming new words and meanings. For example, the く form is the first step when putting an い-adjective into both its て form and its negative form.
 
+<!-- grammar-card: {"id":"continuative-purpose","kind":"concept","format":"qa","priority":"essential","sourceSection":"The Basics","rule":"The continuative connects an adjective to following material","example":"Why is く called the continuative form rather than just an adverb ending?","answer":"It lets an adjective continue into other elements, including て and ない, as well as supporting adverbial, linking and limited noun uses.","explanation":"The same form has several functions; its role depends on what follows."} -->
+
 ### Forming 〜く
 
 Conjugating い-adjectives into the く Form is very simple: remove the 〜い to find the stem form, and then replace that ending with 〜く.
@@ -27,6 +31,11 @@ Conjugating い-adjectives into the く Form is very simple: remove the 〜い t
 > 
 
 As usual, though, bear in mind that when you’re conjugating いい (good), its stem form is よ.
+
+<!-- vocab-card: {"id":"vocab-hayai","priority":"optional","sourceSection":"Forming 〜く","word":"速い","reading":"はやい","meaning":"fast"} -->
+<!-- vocab-card: {"id":"vocab-ii","priority":"optional","sourceSection":"Forming 〜く","word":"いい","reading":"いい","meaning":"good"} -->
+<!-- grammar-card: {"id":"regular-ku","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Forming 〜く","rule":"Replace final い with く to make the continuative form","example":"速い → continuative form: ___.","answer":"速く","explanation":"速く (はやく) keeps the stem and replaces only the final い."} -->
+<!-- grammar-card: {"id":"ii-ku","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Forming 〜く","rule":"いい uses よ as its inflecting stem","example":"いい → continuative form: ___.","answer":"よく","explanation":"The form is よく, not いく."} -->
 
 ## Uses
 
@@ -40,13 +49,21 @@ The く form allows an い-adjective to be used as an adverb. While adjectives d
 
   - They lived **happily**.
 
+<!-- vocab-card: {"id":"vocab-tanoshii","priority":"optional","sourceSection":"As an Adverb","word":"楽しい","reading":"たのしい","meaning":"fun; enjoyable"} -->
+<!-- grammar-card: {"id":"ku-adverb","kind":"rule","format":"cloze","priority":"essential","sourceSection":"As an Adverb","rule":"The く-form is what lets an い-adjective attach to a verb","hint":"楽しい → ?","example":"彼らは___暮らしていました。","answer":"楽しく","explanation":"楽しく describes how they lived. Here the く form modifies 暮らす rather than a noun."} -->
+
 ### As a Linking Device
 
 The く form can also be used to link い-adjectives together. This is nearly identical to the 〜くて ending for い-adjectives, however 〜く gives a more formal and literary nuance. For this reason, you’ll mostly see words and clauses linked together with 〜く in writing.
 
+<!-- grammar-card: {"id":"linking-register","kind":"concept","format":"qa","priority":"essential","sourceSection":"As a Linking Device","rule":"Bare く linking is more literary than くて","example":"How does linking descriptions with bare く differ in register from using くて?","answer":"Bare く is more formal and literary, especially in writing; くて is more usual in conversation.","explanation":"Do not add て automatically when a written passage deliberately uses continuative linking."} -->
+
 ### As Nouns of Time or Location
 
 The く form can be used to change い-adjectives into nouns. However, the number of adjectives that can be used in this way is very limited in Japanese. Apart from 多い, only い-adjectives that describe characteristics of time or place can turn into く nouns.
+
+<!-- vocab-card: {"id":"vocab-ooi","priority":"optional","sourceSection":"As Nouns of Time or Location","word":"多い","reading":"おおい","meaning":"many; numerous"} -->
+<!-- grammar-card: {"id":"noun-use-limits","kind":"concept","format":"qa","priority":"essential","sourceSection":"As Nouns of Time or Location","rule":"Noun-like く forms are lexically restricted","example":"Can any い-adjective become a noun merely by changing い to く?","answer":"No. Noun-like uses are limited, mainly to established time or place expressions and 多く.","explanation":"The existence of a continuative form does not guarantee every possible noun use."} -->
 
 ---
 
@@ -71,8 +88,6 @@ by Shoichi Iwasaki
 p. 87
 
 <!-- quiz: {"type":"multiple-choice","question":"What does \"彼らは**楽しく**暮らしていました。\" mean?","options":["They lived **happily**.","This sentence is grammatically incorrect","This is a polite expression","This describes a past action"],"answer":0} -->
-
-<!-- grammar-card: {"rule":"The く-form is what lets an い-adjective attach to a verb","hint":"楽しい → ?","example":"彼らは___暮らしていました。","answer":"楽しく","explanation":"楽しく modifies 暮らす; without the く-form the adjective could only modify a noun."} -->
 
 ## Sources
 

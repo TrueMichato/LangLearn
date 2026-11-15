@@ -1,8 +1,12 @@
 # Imperfect Subjunctive (Subjuntivo Imperfeito)
 
+<!-- vocab-inventory: {"mode":"explicit"} -->
+
 The imperfect subjunctive — **imperfeito do subjuntivo** — is used for hypothetical situations, unreal conditions, and wishes about the present or past. It's the tense behind all those "if I were..." sentences. The great news? Unlike the present subjunctive, the imperfect subjunctive is completely regular — every verb follows the same pattern, derived from the third-person plural of the pretérito perfeito.
 
 ## Formation
+
+<!-- grammar-card: {"id":"imperfect-formation","kind":"concept","format":"qa","priority":"essential","sourceSection":"Formation","rule":"The imperfect subjunctive derives from the eles preterite minus -ram","example":"Which form supplies the base of the imperfect subjunctive, and what is removed?","answer":"The eles/elas preterite form, with -ram removed before adding -sse endings.","explanation":"The endings are predictable, but any irregular preterite stem must still be known."} -->
 
 To form the imperfect subjunctive:
 
@@ -11,6 +15,8 @@ To form the imperfect subjunctive:
 3. Add the imperfect subjunctive endings: **-sse, -sse, -ssemos, -ssem**
 
 ### -AR Verbs: falar → falaram → fala- → falasse
+
+<!-- grammar-card: {"id":"imperfect-falar","kind":"rule","format":"cloze","priority":"essential","sourceSection":"-AR Verbs: falar → falaram → fala- → falasse","rule":"The imperfect subjunctive is formed from the eles preterite stem + -sse, -sse, -ssemos, -ssem","example":"Se eu ___ português, moraria no Brasil (falar)","answer":"falasse","explanation":"Falaram minus -ram plus -sse gives falasse."} -->
 
 | Pronoun | Subjunctive |
 |---------|-------------|
@@ -21,6 +27,8 @@ To form the imperfect subjunctive:
 
 ### -ER Verbs: comer → comeram → come- → comesse
 
+<!-- grammar-card: {"id":"imperfect-comer","kind":"rule","format":"cloze","priority":"optional","sourceSection":"-ER Verbs: comer → comeram → come- → comesse","rule":"The nós imperfect subjunctive marks its stressed vowel","example":"se nós ___ (comer; imperfect subjunctive)","answer":"comêssemos","explanation":"Comeram supplies come-; the stressed nós form is comêssemos."} -->
+
 | Pronoun | Subjunctive |
 |---------|-------------|
 | se eu | comesse |
@@ -29,6 +37,8 @@ To form the imperfect subjunctive:
 | se vocês / eles / elas | comessem |
 
 ### -IR Verbs: partir → partiram → parti- → partisse
+
+<!-- grammar-card: {"id":"imperfect-partir","kind":"rule","format":"cloze","priority":"optional","sourceSection":"-IR Verbs: partir → partiram → parti- → partisse","rule":"Partiram supplies the imperfect-subjunctive base parti-","example":"Se nós ___ agora, chegaríamos a tempo. (partir)","answer":"partíssemos","explanation":"Partiram supplies parti-; the nós form is partíssemos."} -->
 
 | Pronoun | Subjunctive |
 |---------|-------------|
@@ -49,6 +59,8 @@ The beauty of the imperfect subjunctive is that even "irregular" verbs follow th
 
 ### Ser/Ir (foram → fo- → fosse)
 
+<!-- grammar-card: {"id":"imperfect-ser","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Ser/Ir (foram → fo- → fosse)","rule":"Hypothetical conditions use: se + imperfect subjunctive + conditional","example":"Se eu ___ rico, viajaria pelo mundo (ser)","answer":"fosse","explanation":"Ser and ir share foram, which yields fosse; context selects the meaning."} -->
+
 | Pronoun | Subjunctive |
 |---------|-------------|
 | se eu | fosse |
@@ -60,6 +72,8 @@ The beauty of the imperfect subjunctive is that even "irregular" verbs follow th
 - **Se ele fosse mais paciente, teria mais amigos** (see eh-lee foh-see mahyz pah-see-en-chee teh-ree-ah mahyz ah-mee-gooz) — If he were more patient, he would have more friends
 
 ### Ter (tiveram → tive- → tivesse)
+
+<!-- grammar-card: {"id":"imperfect-ter","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Ter (tiveram → tive- → tivesse)","rule":"Even irregular verbs are predictable in the imperfect subjunctive — they all follow the preterite stem pattern","example":"Se nós ___ mais tempo, estudaríamos mais (ter)","answer":"tivéssemos","explanation":"Tiveram supplies tive-; adding the nós ending gives tivéssemos."} -->
 
 | Pronoun | Subjunctive |
 |---------|-------------|
@@ -73,6 +87,8 @@ The beauty of the imperfect subjunctive is that even "irregular" verbs follow th
 
 ### Fazer (fizeram → fize- → fizesse)
 
+<!-- grammar-card: {"id":"imperfect-fazer","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Fazer (fizeram → fize- → fizesse)","rule":"Fizeram supplies the imperfect-subjunctive base fize-","example":"Se eu ___ exercício, seria mais saudável. (fazer)","answer":"fizesse","explanation":"Fizeram supplies fize-, giving fizesse."} -->
+
 | Pronoun | Subjunctive |
 |---------|-------------|
 | se eu | fizesse |
@@ -83,6 +99,17 @@ The beauty of the imperfect subjunctive is that even "irregular" verbs follow th
 - **Se eu fizesse exercício, seria mais saudável** (see eh-oo fee-zeh-see eh-zer-see-see-oo seh-ree-ah mahyz sow-dah-vew) — If I exercised, I would be healthier
 
 ### More Common Irregular Stems
+
+<!-- grammar-card: {"id":"imperfect-estar","kind":"rule","format":"cloze","priority":"optional","sourceSection":"More Common Irregular Stems","rule":"Estiveram supplies estive-","example":"se eu ___ (estar; imperfect subjunctive)","answer":"estivesse","explanation":"Estiveram supplies estive-, giving estivesse."} -->
+<!-- grammar-card: {"id":"imperfect-poder","kind":"rule","format":"cloze","priority":"optional","sourceSection":"More Common Irregular Stems","rule":"Puderam supplies pude-","example":"Se eu ___, iria com você. (poder)","answer":"pudesse","explanation":"Puderam supplies pude-, giving pudesse."} -->
+<!-- grammar-card: {"id":"imperfect-saber","kind":"rule","format":"cloze","priority":"optional","sourceSection":"More Common Irregular Stems","rule":"Souberam supplies soube-","example":"Se eu ___ a resposta, te diria. (saber)","answer":"soubesse","explanation":"Souberam supplies soube-, giving soubesse."} -->
+<!-- grammar-card: {"id":"imperfect-dizer","kind":"rule","format":"cloze","priority":"optional","sourceSection":"More Common Irregular Stems","rule":"Disseram supplies disse-","example":"se eu ___ (dizer; imperfect subjunctive)","answer":"dissesse","explanation":"Disseram supplies disse-, giving dissesse."} -->
+<!-- grammar-card: {"id":"imperfect-trazer","kind":"rule","format":"cloze","priority":"optional","sourceSection":"More Common Irregular Stems","rule":"Trouxeram supplies trouxe-","example":"se eu ___ (trazer; imperfect subjunctive)","answer":"trouxesse","explanation":"Trouxeram supplies trouxe-, giving trouxesse."} -->
+<!-- grammar-card: {"id":"imperfect-ver","kind":"rule","format":"cloze","priority":"optional","sourceSection":"More Common Irregular Stems","rule":"Ver and vir have distinct preterite bases","example":"se eu ___ (ver; imperfect subjunctive)","answer":"visse","explanation":"Ver has viram, yielding visse; vir has vieram, yielding viesse."} -->
+<!-- grammar-card: {"id":"imperfect-vir","kind":"rule","format":"cloze","priority":"optional","sourceSection":"More Common Irregular Stems","rule":"Vieram supplies vie-","example":"Se ele ___, seria ótimo. (vir)","answer":"viesse","explanation":"Vieram supplies vie-, giving viesse."} -->
+<!-- grammar-card: {"id":"imperfect-dar","kind":"rule","format":"cloze","priority":"optional","sourceSection":"More Common Irregular Stems","rule":"Deram supplies de-","example":"se eu ___ (dar; imperfect subjunctive)","answer":"desse","explanation":"Deram supplies de-, giving desse."} -->
+<!-- grammar-card: {"id":"imperfect-querer","kind":"rule","format":"cloze","priority":"optional","sourceSection":"More Common Irregular Stems","rule":"Quiseram supplies quise-","example":"Se eu ___, eu sairia. (querer)","answer":"quisesse","explanation":"Quiseram supplies quise-, giving quisesse."} -->
+<!-- grammar-card: {"id":"imperfect-por","kind":"rule","format":"cloze","priority":"optional","sourceSection":"More Common Irregular Stems","rule":"Puseram supplies puse-","example":"se eu ___ (pôr; imperfect subjunctive)","answer":"pusesse","explanation":"Puseram supplies puse-, giving pusesse."} -->
 
 | Verb | Preterite (eles) | Stem | Subjunctive (eu) |
 |------|-------------------|------|-------------------|
@@ -106,17 +133,21 @@ The beauty of the imperfect subjunctive is that even "irregular" verbs follow th
 
 ## Usage 1: Hypothetical / Unreal Conditions
 
+<!-- grammar-card: {"id":"imperfect-hypothetical-pairing","kind":"concept","format":"qa","priority":"essential","sourceSection":"Usage 1: Hypothetical / Unreal Conditions","rule":"An unreal present condition can use the imperfect subjunctive","example":"Which forms usually pair in the hypothetical pattern Se eu morasse na praia, seria feliz?","answer":"Imperfect subjunctive in the se clause and conditional in the result clause.","explanation":"The imperfect subjunctive can describe an unreal present situation, not only a past event."} -->
+
 The most common use — expressing what would happen if something (that isn't true) were the case:
 
 **Structure: Se + imperfeito do subjuntivo + conditional (futuro do pretérito)**
 
 - **Se eu fosse você, não faria isso** (see eh-oo foh-see voh-seh now fah-ree-ah ee-soo) — If I were you, I wouldn't do that
 - **Se eu morasse na praia, seria muito feliz** (see eh-oo moh-rah-see nah prah-yah seh-ree-ah mween-too feh-leez) — If I lived at the beach, I would be very happy
-- **Se chuvesse menos, sairíamos** (see shoh-veh-see meh-nooz sah-ee-ree-ah-mooz) — If it rained less, we would go out
+- **Se chovesse menos, sairíamos** (see shoh-veh-see meh-nooz sah-ee-ree-ah-mooz) — If it rained less, we would go out
 - **Se eu ganhasse na loteria, compraria uma ilha** (see eh-oo gahn-yah-see nah loh-teh-ree-ah kon-prah-ree-ah oo-mah eel-yah) — If I won the lottery, I would buy an island
 - **Se eu soubesse cozinhar, faria um jantar especial** (see eh-oo soh-beh-see koh-zeen-yar fah-ree-ah ung zhan-tar esh-peh-see-ow) — If I knew how to cook, I would make a special dinner
 
 ## Usage 2: Wishes About the Present
+
+<!-- grammar-card: {"id":"imperfect-present-wish","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Usage 2: Wishes About the Present","rule":"Queria que can introduce an imperfect-subjunctive wish about now","example":"Eu queria que você ___ aqui. (estar; wish about now)","answer":"estivesse","explanation":"Queria que can introduce an imperfect-subjunctive wish about the present."} -->
 
 Expressing what you wish were true right now:
 
@@ -127,6 +158,9 @@ Expressing what you wish were true right now:
 
 ## Usage 3: Polite Forms
 
+<!-- grammar-card: {"id":"imperfect-politeness","kind":"concept","format":"qa","priority":"optional","sourceSection":"Usage 3: Polite Forms","rule":"A hypothetical condition can soften a request","example":"What does Se você pudesse me ajudar add to a request for help?","answer":"Tentativeness and politeness: if you could help me.","explanation":"A hypothetical condition can soften a request."} -->
+<!-- vocab-card: {"id":"vocab-incomodo","word":"incômodo","meaning":"inconvenience; trouble (Brazilian spelling)","priority":"optional","sourceSection":"Usage 3: Polite Forms"} -->
+
 The imperfect subjunctive makes expressions more polite and tentative:
 
 - **Se você pudesse me ajudar, eu agradeceria** (see voh-seh poo-deh-see mee ah-zhoo-dar eh-oo ah-grah-deh-seh-ree-ah) — If you could help me, I would appreciate it
@@ -134,6 +168,9 @@ The imperfect subjunctive makes expressions more polite and tentative:
 - **Se não fosse muito incômodo...** (see now foh-see mween-too een-koh-moh-doo) — If it weren't too much trouble...
 
 ## Usage 4: After "Como se" (As if)
+
+<!-- grammar-card: {"id":"como-se-application","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Usage 4: After \"Como se\" (As if)","rule":"Como se introduces an imagined comparison with the subjunctive","example":"Ele fala como se ___ brasileiro. (ser)","answer":"fosse","explanation":"Como se introduces an imagined comparison and takes the imperfect subjunctive here."} -->
+<!-- vocab-card: {"id":"vocab-como-se","word":"como se","meaning":"as if","priority":"optional","sourceSection":"Usage 4: After \"Como se\" (As if)"} -->
 
 - **Ele fala como se fosse brasileiro** (eh-lee fah-lah koh-moo see foh-see brah-zee-lay-roo) — He speaks as if he were Brazilian
 - **Ela age como se soubesse tudo** (eh-lah ah-zhee koh-moo see soh-beh-see too-doo) — She acts as if she knew everything
@@ -150,12 +187,6 @@ Here's a paragraph using the imperfect subjunctive naturally:
 Translation: If I could go back in time, I would do many things differently. If I had known what I know today, I would have studied more. If I lived in another country, I would learn another language. But life is like that — if it were perfect, it wouldn't be interesting!
 
 <!-- quiz: {"type":"multiple-choice","question":"What structure pairs with the imperfect subjunctive to form hypothetical sentences?","options":["Present indicative","Pretérito perfeito","Futuro do pretérito (conditional)","Futuro simples"],"answer":2} -->
-
-<!-- grammar-card: {"rule":"The imperfect subjunctive is formed from the eles preterite stem + -sse, -sse, -ssemos, -ssem","hint":"falaram → fala- → falasse, comeram → come- → comesse","example":"Se eu ___ português, moraria no Brasil (falar)","answer":"falasse","explanation":"Take the eles form 'falaram,' remove '-ram' to get 'fala-,' then add '-sse': 'falasse.' The formation is 100% regular for all verbs."} -->
-
-<!-- grammar-card: {"rule":"Hypothetical conditions use: se + imperfect subjunctive + conditional","hint":"Se eu fosse... eu faria... (If I were... I would do...)","example":"Se eu ___ rico, viajaria pelo mundo (ser)","answer":"fosse","explanation":"'Ser' in the preterite eles form is 'foram.' Remove '-ram' to get 'fo-,' add '-sse': 'fosse.' The conditional 'viajaria' completes the hypothetical."} -->
-
-<!-- grammar-card: {"rule":"Even irregular verbs are predictable in the imperfect subjunctive — they all follow the preterite stem pattern","hint":"ter: tiveram → tivesse, fazer: fizeram → fizesse, poder: puderam → pudesse","example":"Se nós ___ mais tempo, estudaríamos mais (ter)","answer":"tivéssemos","explanation":"From 'tiveram,' remove '-ram' → 'tive-,' add '-ssemos' for nós: 'tivéssemos.' Note the accent on the é. Even this irregular verb follows the predictable pattern."} -->
 
 ## Sources
 

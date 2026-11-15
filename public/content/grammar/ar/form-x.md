@@ -1,10 +1,18 @@
 # Verb Form X (istafʿala): seeking / considering
 
+<!-- vocab-inventory: {"mode":"explicit"} -->
+
 Form X is visually easy to spot because it often begins with اِسْتَـ (ista-) — a prefix that can suggest seeking, requesting, extracting, or considering something to be a certain way.
 
 ## Core idea
 
 The basic pattern is اِسْتَفْعَلَ (istafʿala) — he sought / considered. Its present is يَسْتَفْعِلُ (yastafʿilu) — he seeks, and its verbal noun is اِسْتِفْعَالٌ (istifʿālun) — seeking / requesting.
+
+<!-- vocab-card: {"id":"vocab-istaghfara","word":"اِسْتَغْفَرَ","reading":"istaghfara","meaning":"he sought forgiveness","priority":"essential","sourceSection":"Core idea"} -->
+<!-- vocab-card: {"id":"vocab-istamala","word":"اِسْتَعْمَلَ","reading":"istaʿmala","meaning":"he used","priority":"essential","sourceSection":"Core idea"} -->
+<!-- vocab-card: {"id":"vocab-istakhraja","word":"اِسْتَخْرَجَ","reading":"istakhraja","meaning":"he extracted","priority":"optional","sourceSection":"Core idea"} -->
+<!-- vocab-card: {"id":"vocab-istahsana","word":"اِسْتَحْسَنَ","reading":"istaḥsana","meaning":"he considered good","priority":"essential","sourceSection":"Core idea"} -->
+<!-- grammar-card: {"id":"x-present","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Core idea","rule":"The sound Form X present follows yastafʿilu.","example":"اِسْتَعْمَلَ → he uses: ___.","answer":"يَسْتَعْمِلُ","explanation":"The present retains st and has i before the last radical."} -->
 
 | Verb | Meaning | Meaning clue |
 |---|---|---|
@@ -19,7 +27,9 @@ The basic pattern is اِسْتَفْعَلَ (istafʿala) — he sought / consi
 
 Many Form X verbs mean asking for the root idea. اِسْتَأْذَنَ (istaʾdhana) — he asked permission, اِسْتَغَاثَ (istaghātha) — he sought help, and اِسْتَغْفَرَ (istaghfara) — he sought forgiveness all fit this pattern.
 
-<!-- grammar-card: {"rule":"Form X اِسْتَفْعَلَ (istafʿala) often expresses seeking or requesting the root meaning.","hint":"The prefix اِسْتَـ (ista-) is the clue.","example":"Complete “he sought forgiveness”: ___ (istaghfara) — he sought forgiveness.","answer":"اِسْتَغْفَرَ","explanation":"he sought forgiveness — اِسْتَغْفَرَ (istaghfara) uses Form X to mean seeking غُفْرَانٌ (ghufrānun) — forgiveness."} -->
+<!-- grammar-card: {"id":"x-seeking","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Seeking and requesting","rule":"Form X اِسْتَفْعَلَ (istafʿala) often expresses seeking or requesting the root meaning.","example":"Form X of غ ف ر, he sought forgiveness: ___.","answer":"اِسْتَغْفَرَ","explanation":"This verb requests the root idea, forgiveness.","legacyAliases":[{"rule":"Form X اِسْتَفْعَلَ (istafʿala) often expresses seeking or requesting the root meaning.","example":"Complete “he sought forgiveness”: ___ (istaghfara) — he sought forgiveness."}]} -->
+<!-- vocab-card: {"id":"vocab-istadhana","word":"اِسْتَأْذَنَ","reading":"istaʾdhana","meaning":"he asked permission","priority":"optional","sourceSection":"Seeking and requesting"} -->
+<!-- vocab-card: {"id":"vocab-istaghatha","word":"اِسْتَغَاثَ","reading":"istaghātha","meaning":"he sought help","priority":"optional","sourceSection":"Seeking and requesting"} -->
 
 ## Considering and extracting
 
@@ -31,9 +41,14 @@ Form X can also mean “to regard as” or “to bring out.” اِسْتَحْ�
 
 > The prefix is helpful, but the exact meaning belongs to the verb. Confirm common Form X verbs as vocabulary items, not as guesses only.
 
+<!-- vocab-card: {"id":"vocab-istaqbala","word":"اِسْتَقْبَلَ","reading":"istaqbala","meaning":"he received; he faced","priority":"optional","sourceSection":"Considering and extracting"} -->
+<!-- vocab-card: {"id":"vocab-istaadda","word":"اِسْتَعَدَّ","reading":"istaʿadda","meaning":"he prepared","priority":"optional","sourceSection":"Considering and extracting"} -->
+<!-- vocab-card: {"id":"vocab-istamarra","word":"اِسْتَمَرَّ","reading":"istamarra","meaning":"he continued","priority":"optional","sourceSection":"Considering and extracting"} -->
+<!-- grammar-card: {"id":"x-meaning-range","kind":"concept","format":"qa","priority":"essential","sourceSection":"Considering and extracting","rule":"Seeking is only one common Form X meaning.","example":"Beyond requesting something, what other meaning types are illustrated by Form X here?","answer":"Considering something good, extracting, using, receiving, preparing and continuing.","explanation":"Recognize the family but learn each verb; weak and doubled roots can alter its visible shape."} -->
+
 <!-- quiz: {"type":"multiple-choice","question":"Which Form X verb means he considered good?","options":["اِسْتَحْسَنَ (istaḥsana) — he considered good","حَسُنَ (ḥasuna) — it was good","أَحْسَنَ (aḥsana) — he did well","تَحَسَّنَ (taḥassana) — it improved"],"answer":0} -->
 
-<!-- grammar-card: {"rule":"The Form X verbal noun is often اِسْتِفْعَالٌ (istifʿālun).","hint":"After اِسْتِـ, listen for a long ā near the end.","example":"Complete “using”: ___ (istiʿmālun) — using.","answer":"اِسْتِعْمَالٌ","explanation":"using — اِسْتِعْمَالٌ (istiʿmālun) is the verbal noun of اِسْتَعْمَلَ (istaʿmala) — he used."} -->
+<!-- grammar-card: {"id":"x-masdar","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Core idea","rule":"The Form X verbal noun is often اِسْتِفْعَالٌ (istifʿālun).","example":"اِسْتَعْمَلَ → its maṣdar, using: ___.","answer":"اِسْتِعْمَالٌ","explanation":"This sound-root example follows istifʿālun.","legacyAliases":[{"rule":"The Form X verbal noun is often اِسْتِفْعَالٌ (istifʿālun).","example":"Complete “using”: ___ (istiʿmālun) — using."}]} -->
 
 ## Sources
 

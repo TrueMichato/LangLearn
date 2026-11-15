@@ -1,5 +1,7 @@
 # 中 (なか) — Inside / Among
 
+<!-- vocab-inventory: {"mode":"explicit"} -->
+
 > **Source:** Content from [Tofugu](https://www.tofugu.com/japanese-grammar/naka/). For personal study.
 
 中（なか）for "Among"
@@ -13,6 +15,13 @@ Noun
 中（なか）is a word for "inside." It can also mark items for comparison, as in "among" these things, or indicate the circumstances "in which" another action or event takes place.
 
 ## The Basics
+
+<!-- vocab-card: {"id":"vocab-naka","priority":"essential","sourceSection":"The Basics","word":"中","reading":"なか","meaning":"inside; middle"} -->
+<!-- vocab-card: {"id":"vocab-hako","priority":"optional","sourceSection":"The Basics","word":"箱","reading":"はこ","meaning":"box"} -->
+<!-- vocab-card: {"id":"vocab-ie","priority":"optional","sourceSection":"The Basics","word":"家","reading":"いえ","meaning":"house; home"} -->
+<!-- vocab-card: {"id":"vocab-nakayubi","priority":"optional","sourceSection":"The Basics","word":"中指","reading":"なかゆび","meaning":"middle finger"} -->
+<!-- vocab-card: {"id":"vocab-machinaka","priority":"optional","sourceSection":"The Basics","word":"街中","reading":"まちなか","meaning":"downtown; the central area of a town or city"} -->
+<!-- grammar-card: {"id":"town-reading-contrast","kind":"concept","format":"qa","priority":"optional","sourceSection":"The Basics","rule":"街中 changes spatial scope with its reading","example":"How does 街中 read まちなか differ from まちじゅう?","answer":"まちなか refers to the central town area; まちじゅう means all over or throughout the town.","explanation":"The same written 中 does not guarantee the same reading or scope."} -->
 
 At its most basic,  中(なか) is a word that refers to the inside of certain boundaries in space. So, "inside the box" is  箱(はこ)の 中(なか), and "inside the house" is  家(いえ)の 中(なか).
 
@@ -44,6 +53,10 @@ Note: We also have separate grammar pages for 〜中 (ちゅう) and 〜中(じ�
 
 #### 〜の中
 
+<!-- vocab-card: {"id":"vocab-kioku","priority":"optional","sourceSection":"〜の中","word":"記憶","reading":"きおく","meaning":"memory"} -->
+<!-- grammar-card: {"id":"inside-link","kind":"rule","format":"cloze","priority":"essential","sourceSection":"〜の中","rule":"の connects the reference noun to its inside","example":"Inside the car: 車___中。","answer":"の","explanation":"車の中 names the car's interior. The reference space can also be figurative, as in 記憶の中."} -->
+<!-- grammar-card: {"id":"inside-omission","kind":"concept","format":"qa","priority":"optional","sourceSection":"〜の中","rule":"の中 can be omitted when the interior is already understood","example":"Can 車で寝た convey sleeping inside the car without explicitly saying の中?","answer":"Yes, when context makes the interior clear; の中 can be omitted without losing that intended location.","explanation":"Omission depends on context, not on all uses of 中 being redundant."} -->
+
 As seen in the first set of examples, the particle の is used to mark the object whose "inside" you're talking about. For example, if something is inside the car, you can say:
 
   - 車**の**中
@@ -59,6 +72,9 @@ The location marked by の can be a figurative place, too. For instance, to say 
 That being said, 〜の 中(なか) is often omitted as the context and other elements, such as に or で, can imply that you are talking about the inside of something.
 
 #### (〜の)中 + に/で
+
+<!-- grammar-card: {"id":"existence-location","kind":"rule","format":"cloze","priority":"essential","sourceSection":"(〜の)中 + に/で","rule":"に pinpoints where something exists inside a space","example":"The keys are in the car: カギは車の中___ある。","answer":"に","explanation":"に marks the keys' location, whereas で would mark the setting of an action."} -->
+<!-- grammar-card: {"id":"activity-location","kind":"rule","format":"cloze","priority":"essential","sourceSection":"(〜の)中 + に/で","rule":"で marks where an activity occurs","example":"I slept in the car: 昨日は車の中___寝た。","answer":"で","explanation":"Sleeping is the activity taking place in the car. With 忘れた, に or で can instead focus on the keys' location or the act of leaving them."} -->
 
 Different particles can follow  中(なか), but the most common ones are に and で. Between the two, に simply pinpoints a location while で specifies where an event or an activity takes place.
 
@@ -86,7 +102,10 @@ Oh, and again, in both of the examples above 〜の 中(なか) can be omitted w
 
 #### 〜の中から For "From Among The Choices…"
 
-Used with the particle から,  中(なか) can set a boundary between three or more choices.3
+<!-- grammar-card: {"id":"selection-from","kind":"rule","format":"cloze","priority":"essential","sourceSection":"〜の中から For \"From Among The Choices…\"","rule":"の中から marks the range from which a choice is selected","example":"Pick one of these three: 三つ___、一つ選んでね。","answer":"の中から","explanation":"から marks the source range of the selection."} -->
+<!-- grammar-card: {"id":"two-choice-alternative","kind":"concept","format":"qa","priority":"optional","sourceSection":"〜の中から For \"From Among The Choices…\"","rule":"Two-choice comparisons commonly use うち or direct から instead of a larger-group framing","example":"What simple expression does this lesson recommend for choosing from just two options?","answer":"この二つから; for comparing the two, この二つのうちで or この二つなら are natural options.","explanation":"The three-or-more framing is a useful teaching preference here, not a universal prohibition on every two-member use of 中."} -->
+
+Used with the particle から, 中(なか) sets a range of choices, typically presented here as three or more. For two choices, direct から or うち is often more natural; this is not an absolute ban on 中 with every two-member set.3
 For instance, consider a scenario where you take your child to the toy store. They pick up three toys they really want, but they're only allowed to have one. You can use 〜の 中(なか)から and say:
 
   - 三つ**の中から**、一つ選んでね。
@@ -105,7 +124,9 @@ In this case, 〜の 中(なか) can be omitted, because the boundary is already
 
 #### 〜の中で For "(Out) of…"
 
-Used with the particle で,  中(なか) can set a boundary of items for comparison. In this case, again, the choice must be between three or more items. 4
+<!-- grammar-card: {"id":"comparison-group","kind":"rule","format":"cloze","priority":"essential","sourceSection":"〜の中で For \"(Out) of…\"","rule":"中で marks the group a comparison is made within","hint":"Use the inside-group comparison expression.","example":"タカシは三人の___一番背が高い。","answer":"中で","explanation":"三人の中で sets the comparison group of three. うちで can also express this comparison range."} -->
+
+Used with the particle で, 中(なか) can set a range of items for comparison. The examples here use three or more; with just two, うちで or なら is often the more natural choice. 4
 
 This pattern is frequently used to indicate who or what takes the highest or lowest position among the subjects up for comparison. 5
 
@@ -145,13 +166,15 @@ If the context is clear, you can omit the 〜の part of 〜の 中(なか)に�
 
 I guess it's pretty common nowadays as online classes become more mainstream!
 
-<!-- grammar-card: {"rule":"中には introduces some members of a larger group","hint":"中 + には","example":"生徒の___、カメラを付けない者もいる。","answer":"中には","explanation":"生徒の中には means 'among the students, there are some who…'."} -->
-
-<!-- grammar-card: {"rule":"中で marks the group a comparison is made within","hint":"中 + で","example":"タカシは三人の___一番背が高い。","answer":"中で","explanation":"三人の中で sets the three people as the field within which Takashi is tallest."} -->
+<!-- grammar-card: {"id":"some-members","kind":"rule","format":"cloze","priority":"essential","sourceSection":"(〜の)中には For \"Some of…\"","rule":"中には introduces some members of a larger group","hint":"among them, some","example":"生徒の___、カメラを付けない者もいる。","answer":"中には","explanation":"生徒の中には means among the students, there are some who… . The reference group can be omitted when already clear."} -->
 
 ## Beyond The Basics
 
 ### 中 For "Under Certain Circumstances"
+
+<!-- vocab-card: {"id":"vocab-arashi","priority":"optional","sourceSection":"中 For \"Under Certain Circumstances\"","word":"嵐","reading":"あらし","meaning":"storm"} -->
+<!-- vocab-card: {"id":"vocab-samayou","priority":"optional","sourceSection":"中 For \"Under Certain Circumstances\"","word":"さまよう","reading":"さまよう","meaning":"to wander; to roam"} -->
+<!-- grammar-card: {"id":"circumstance-path","kind":"concept","format":"qa","priority":"optional","sourceSection":"中 For \"Under Certain Circumstances\"","rule":"を can mark circumstances conceived as a path through which one moves","example":"Why can を follow 嵐の中 in 嵐の中を歩いた?","answer":"The stormy circumstances are treated like a space or path walked through, not as the direct object being changed.","explanation":"を can be omitted in these expressions. お忙しい中 also frames an action against difficult circumstances."} -->
 
  中(なか) can also be used to describe the circumstances under which an action takes place; i.e. "under certain circumstances."
 
@@ -205,13 +228,13 @@ When the are only two things to choose from, you would directly combine 二つ a
 
     - 
       
-When are only two things to compare, you would use 〜のうちで instead of 〜の中で, as in この二つのうちで、どっちがいい? (Which one do you prefer between the two?), or the conditional form なら or だったら, as in この二つ[なら・だったら]、どっちがいい? (If it's between these two, which one do you prefer?). You can also use どちらか or どっちか (either one), but in this case, なら or だったら are more common collocations than 〜のうちで. ↩
+With only two things to compare, 〜のうちで is often more natural, as in この二つのうちで、どっちがいい? (Which one do you prefer between the two?), or you can use the conditional form なら or だったら, as in この二つ[なら・だったら]、どっちがいい? (If it's between these two, which one do you prefer?). These are useful preferences, not a blanket prohibition on 中 with every two-member group. ↩
 
     
 
     - 
       
-Among all the grammatical uses on this page, only this 中 (〜の中で) can be replaced with うち, which is another word for "inside" in Japanese. For example, the same things as the examples listed here can be said using うち, as in タカシは三人の**うちで**一番背が高い。(Takashi is the tallest **of** the three.) or 三人の**うちで**面白いのはケンタだけだ。(**Of** the three, the only amusing one is Kenta.). If you aren't familiar with うち and how it differs from 中, check out our article: 中 vs 内: The Difference Between These Two Japanese Words for "Inside". ↩
+In these comparison examples, 中 (〜の中で) can be replaced with うち, another word for "inside": タカシは三人の**うちで**一番背が高い。(Takashi is the tallest **of** the three.) or 三人の**うちで**面白いのはケンタだけだ。(**Of** the three, the only amusing one is Kenta.). Do not assume the two words are interchangeable in every other construction. ↩
 
     
 

@@ -1,5 +1,7 @@
 # Honorific & Humble Speech (敬語)
 
+<!-- vocab-inventory: {"mode":"explicit"} -->
+
 Japanese has a formal speech system called **敬語(けいご)** that shows respect for others and humility about yourself. It is essential for business, customer service, and speaking with elders or superiors.
 
 ## Three Types of 敬語
@@ -11,6 +13,9 @@ Japanese has a formal speech system called **敬語(けいご)** that shows resp
 | 丁寧語(ていねいご) | Polite | General politeness (です/ます) |
 
 > 💡 You already know 丁寧語 — it's the です/ます form you have been using! This lesson focuses on 尊敬語 and 謙譲語.
+
+<!-- vocab-card: {"id":"vocab-keigo","word":"敬語","reading":"けいご","meaning":"respectful language; honorific speech","priority":"optional","sourceSection":"Three Types of 敬語"} -->
+<!-- grammar-card: {"id":"three-respect-functions","kind":"concept","format":"qa","priority":"essential","sourceSection":"Three Types of 敬語","rule":"Honorific, humble, and polite language serve different functions","example":"How do 尊敬語, 謙譲語, and 丁寧語 differ in what they show respect toward?","answer":"尊敬語 elevates a respected person's action; 謙譲語 lowers one's own action; 丁寧語 adds general politeness toward the listener.","explanation":"Using ます does not by itself determine whether the verb elevates the actor or humbles the speaker."} -->
 
 ## 丁寧語 (Polite Language) — Quick Review
 
@@ -24,7 +29,7 @@ This is the most basic level of politeness:
 - **お水(みず)はありますか。** — Is there water? (polite)
 - **お水はございますか。** — Is there water? (very polite)
 
-<!-- grammar-card: {"rule":"ございます is the elevated equivalent of あります","hint":"あります → ?","example":"お水は___か。","answer":"ございます","explanation":"ございます raises the politeness of あります without changing what it means."} -->
+<!-- grammar-card: {"id":"gozaimasu","kind":"rule","format":"cloze","priority":"optional","sourceSection":"丁寧語 (Polite Language) — Quick Review","rule":"ございます is the elevated equivalent of あります","hint":"あります → very polite","example":"お水は___か。","answer":"ございます","explanation":"ございます makes existence more polite without honoring water as an actor."} -->
 
 ## 尊敬語 (Honorific Language)
 
@@ -48,6 +53,8 @@ For many verbs, use **お + verb stem + になる**:
 - **お客様(きゃくさま)はもうお食事(しょくじ)になりましたか。** — Has the customer already eaten?
 - **こちらのペンをお使いになりますか。** — Would you like to use this pen?
 
+<!-- grammar-card: {"id":"honorific-productive","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Pattern 1: お + stem + になる","rule":"お plus ます-stem plus になる honors another person's action","example":"The teacher has gone home (use お〜になる): 先生はもうお帰り___。","answer":"になりました","explanation":"帰る → 帰り → お帰りになる. Do not use this form to elevate your own leaving."} -->
+
 ### Pattern 2: Special honorific verbs
 
 Some common verbs have dedicated honorific forms:
@@ -61,6 +68,14 @@ Some common verbs have dedicated honorific forms:
 | 見る | ご覧(らん)になる | look / see |
 | 知(し)っている | ご存知(ぞんじ) | know |
 | くれる | くださる | give (to me) |
+
+<!-- vocab-card: {"id":"vocab-irassharu","word":"いらっしゃる","reading":"いらっしゃる","meaning":"to go; to come; to be (honorific)","priority":"essential","sourceSection":"Pattern 2: Special honorific verbs"} -->
+<!-- vocab-card: {"id":"vocab-meshiagaru","word":"召し上がる","reading":"めしあがる","meaning":"to eat; to drink (honorific)","priority":"essential","sourceSection":"Pattern 2: Special honorific verbs"} -->
+<!-- vocab-card: {"id":"vocab-ossharu","word":"おっしゃる","reading":"おっしゃる","meaning":"to say (honorific)","priority":"essential","sourceSection":"Pattern 2: Special honorific verbs"} -->
+<!-- vocab-card: {"id":"vocab-nasaru","word":"なさる","reading":"なさる","meaning":"to do (honorific)","priority":"optional","sourceSection":"Pattern 2: Special honorific verbs"} -->
+<!-- vocab-card: {"id":"vocab-goran-ni-naru","word":"ご覧になる","reading":"ごらんになる","meaning":"to look; to see (honorific)","priority":"optional","sourceSection":"Pattern 2: Special honorific verbs"} -->
+<!-- vocab-card: {"id":"vocab-gozonji","word":"ご存知","reading":"ごぞんじ","meaning":"knowing; acquainted (honorific expression)","priority":"optional","sourceSection":"Pattern 2: Special honorific verbs"} -->
+<!-- vocab-card: {"id":"vocab-kudasaru","word":"くださる","reading":"くださる","meaning":"to give to me or my group (honorific)","priority":"optional","sourceSection":"Pattern 2: Special honorific verbs"} -->
 
 - **先生はいらっしゃいますか。** — Is the teacher here?
 - **何(なに)を召し上がりますか。** — What would you like to eat?
@@ -79,6 +94,8 @@ The passive form can also be used as a lighter honorific:
 - **部長はもう帰られました。** — The department head has already left.
 
 This is less formal than the お〜になる pattern or special verbs.
+
+<!-- grammar-card: {"id":"passive-honorific","kind":"concept","format":"qa","priority":"essential","sourceSection":"Pattern 3: 〜れる / 〜られる (Passive as honorific)","rule":"Passive-shaped forms can honor the actor rather than express a passive event","example":"In 先生は何時に来られますか, must 来られる mean “is come to” or “can come”?","answer":"No. In this context it can honor the teacher's coming: “What time will the teacher come?”","explanation":"The form is shared with passive and potential; context and the respected actor select the honorific reading."} -->
 
 ## 謙譲語 (Humble Language)
 
@@ -100,6 +117,8 @@ Used to describe **your own actions** when speaking to someone you respect. You 
 - **伝言(でんごん)をお伝えします。** — I'll pass on the message.
 - **ご自宅(じたく)にお届けします。** — I'll deliver it to your home.
 
+<!-- grammar-card: {"id":"humble-productive","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Pattern 1: お + stem + する","rule":"お plus ます-stem plus する humbles one's action for another person","example":"I will carry your luggage (use お〜する): お荷物をお持ち___。","answer":"します","explanation":"持つ → 持ち → お持ちする. This describes the speaker's action in service of the listener."} -->
+
 ### Pattern 2: Special humble verbs
 
 | Plain | Humble | Meaning |
@@ -115,6 +134,17 @@ Used to describe **your own actions** when speaking to someone you respect. You 
 | もらう | いただく | receive |
 | 聞(き)く | うかがう | ask / hear |
 | 会(あ)う | お目(め)にかかる | meet |
+
+<!-- vocab-card: {"id":"vocab-mairu","word":"参る","reading":"まいる","meaning":"to go; to come (humble)","priority":"essential","sourceSection":"Pattern 2: Special humble verbs"} -->
+<!-- vocab-card: {"id":"vocab-oru","word":"おる","reading":"おる","meaning":"to be (humble in this register)","priority":"optional","sourceSection":"Pattern 2: Special humble verbs"} -->
+<!-- vocab-card: {"id":"vocab-itadaku","word":"いただく","reading":"いただく","meaning":"to receive; to eat; to drink (humble)","priority":"essential","sourceSection":"Pattern 2: Special humble verbs"} -->
+<!-- vocab-card: {"id":"vocab-mousu","word":"申す","reading":"もうす","meaning":"to say; to be called (humble)","priority":"essential","sourceSection":"Pattern 2: Special humble verbs"} -->
+<!-- vocab-card: {"id":"vocab-itasu","word":"いたす","reading":"いたす","meaning":"to do (humble)","priority":"optional","sourceSection":"Pattern 2: Special humble verbs"} -->
+<!-- vocab-card: {"id":"vocab-haiken-suru","word":"拝見する","reading":"はいけんする","meaning":"to look; to see (humble)","priority":"essential","sourceSection":"Pattern 2: Special humble verbs"} -->
+<!-- vocab-card: {"id":"vocab-zonjite-iru","word":"存じている","reading":"ぞんじている","meaning":"to know (humble)","priority":"optional","sourceSection":"Pattern 2: Special humble verbs"} -->
+<!-- vocab-card: {"id":"vocab-sashiageru","word":"さしあげる","reading":"さしあげる","meaning":"to give (humble)","priority":"optional","sourceSection":"Pattern 2: Special humble verbs"} -->
+<!-- vocab-card: {"id":"vocab-ukagau","word":"うかがう","reading":"うかがう","meaning":"to ask; to hear (humble)","priority":"optional","sourceSection":"Pattern 2: Special humble verbs"} -->
+<!-- vocab-card: {"id":"vocab-omenikakaru","word":"お目にかかる","reading":"おめにかかる","meaning":"to meet (humble)","priority":"optional","sourceSection":"Pattern 2: Special humble verbs"} -->
 
 - **明日(あした)参ります。** — I will come tomorrow. (humble)
 - **田中と申します。** — My name is Tanaka. (humble)
@@ -143,6 +173,15 @@ Used to describe **your own actions** when speaking to someone you respect. You 
 - **お先に失礼します。** — Excuse me for leaving before you.
 - **少々お待ちくださいませ。** — Please wait a moment.
 
+<!-- vocab-card: {"id":"vocab-phone-thanks","word":"お電話ありがとうございます","reading":"おでんわありがとうございます","meaning":"thank you for calling","priority":"optional","sourceSection":"Common Business Expressions"} -->
+<!-- vocab-card: {"id":"vocab-itadakimasu","word":"いただきます","reading":"いただきます","meaning":"expression of gratitude said before eating","priority":"optional","sourceSection":"Common Business Expressions"} -->
+<!-- vocab-card: {"id":"vocab-osaki-ni-shitsurei","word":"お先に失礼します","reading":"おさきにしつれいします","meaning":"excuse me for leaving before you","priority":"optional","sourceSection":"Common Business Expressions"} -->
+<!-- vocab-card: {"id":"vocab-irasshaimase","word":"いらっしゃいませ","reading":"いらっしゃいませ","meaning":"welcome (to a customer)","priority":"optional","sourceSection":"Common Business Expressions"} -->
+<!-- vocab-card: {"id":"vocab-moushiwake-gozaimasen","word":"申し訳ございません","reading":"もうしわけございません","meaning":"I am very sorry (formal apology)","priority":"optional","sourceSection":"Common Business Expressions"} -->
+<!-- vocab-card: {"id":"vocab-kashikomarimashita","word":"かしこまりました","reading":"かしこまりました","meaning":"certainly; understood (deferential)","priority":"optional","sourceSection":"Common Business Expressions"} -->
+<!-- vocab-card: {"id":"vocab-enryo-sasete-itadakimasu","word":"ご遠慮させていただきます","reading":"ごえんりょさせていただきます","meaning":"I will politely decline","priority":"optional","sourceSection":"Common Business Expressions"} -->
+<!-- grammar-card: {"id":"self-introduction","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Common Business Expressions","rule":"と申します introduces one's name humbly","example":"My name is Tanaka (humble): 田中と___。","answer":"申します","explanation":"申す (もうす) supplies the humble alternative to 言う in this self-introduction."} -->
+
 <!-- quiz:{"type":"multiple-choice","question":"At a restaurant, the staff says 'いらっしゃいませ'. This is:","options":["Humble language (the staff lowers themselves)","Honorific language (elevating the customer)","Casual language","Potential form"],"answer":1} -->
 
 ## Honorific vs Humble — Side by Side
@@ -166,6 +205,8 @@ Used to describe **your own actions** when speaking to someone you respect. You 
 - ❌ 私がいらっしゃいます。 (using honorific for yourself)
 - ✅ 私が参ります。 (humble for yourself)
 
+<!-- grammar-card: {"id":"self-versus-other","kind":"concept","format":"qa","priority":"essential","sourceSection":"1. Using honorifics for yourself","rule":"Choose honorific or humble according to whose action is described","example":"When speaking respectfully, which fits “I will come,” 参ります or いらっしゃいます?","answer":"参ります. いらっしゃいます would elevate the speaker's own action.","explanation":"Conversely, honor a teacher's saying with おっしゃる, not the humble 申す."} -->
+
 ### 2. Using humble forms for others
 
 - ❌ 先生が申しました。 (using humble for teacher)
@@ -176,6 +217,8 @@ Used to describe **your own actions** when speaking to someone you respect. You 
 - ❌ お召し上がりになる (double honor)
 - ✅ 召し上がる (one honorific is enough)
 
+<!-- grammar-card: {"id":"avoid-double-honorific","kind":"concept","format":"qa","priority":"optional","sourceSection":"3. Double honorifics","rule":"A dedicated honorific normally does not need another honorific wrapper","example":"Which form should a learner prefer here: 召し上がる or お召し上がりになる?","answer":"召し上がる, the single dedicated honorific.","explanation":"The lesson recommends avoiding stacked honorifics rather than adding お〜になる to an already honorific verb."} -->
+
 ## When to Use 敬語
 
 | Situation | Level |
@@ -185,6 +228,7 @@ Used to describe **your own actions** when speaking to someone you respect. You 
 | Boss, teacher, elders | 尊敬語 + 謙譲語 |
 | Customers, formal business | Full 敬語 |
 
+<!-- grammar-card: {"id":"register-choice","kind":"concept","format":"qa","priority":"essential","sourceSection":"When to Use 敬語","rule":"The relationship and setting determine the appropriate politeness register","example":"Must a conversation with close friends use the same full 敬語 as formal customer service?","answer":"No. Plain or casual speech suits close friends, while customer service typically calls for polite, honorific, and humble forms.","explanation":"These are contextual choices, not a requirement to use the most elaborate form everywhere."} -->
 <!-- quiz:{"type":"multiple-choice","question":"You want to say 'I looked at the documents' to your boss. Choose the humble form:","options":["資料を見ました","資料をご覧になりました","資料を拝見しました","資料を見られました"],"answer":2} -->
 
 ## Practice Tips

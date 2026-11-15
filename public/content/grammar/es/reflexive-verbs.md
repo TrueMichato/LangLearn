@@ -1,6 +1,10 @@
 # Reflexive Verbs (lavarse, vestirse)
 
+<!-- vocab-inventory: {"mode":"explicit"} -->
+
 Reflexive verbs express actions that the subject performs **on or for themselves**. You can recognize them by the **-se** ending on the infinitive: *lavarse* (to wash oneself), *vestirse* (to get dressed). They appear constantly in daily-routine vocabulary and some change meaning entirely when used reflexively.
+
+The same pronoun forms also occur with **pronominal verbs** whose meanings are not literally "do something to oneself," such as *irse* (to leave).
 
 ## Reflexive Pronouns
 
@@ -12,6 +16,9 @@ Reflexive verbs express actions that the subject performs **on or for themselves
 | nosotros | **nos** |
 | vosotros | **os** |
 | ellos / ustedes | **se** |
+
+<!-- grammar-card: {"id":"reflexive-meaning","kind":"concept","format":"qa","priority":"essential","sourceSection":"Reflexive Pronouns","rule":"A reflexive pronoun refers back to the subject","example":"Who is being washed in María se lava?","answer":"María herself.","explanation":"In a literal reflexive use, the subject and the person affected are the same."} -->
+<!-- grammar-card: {"id":"reflexive-nosotros","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Reflexive Pronouns","rule":"Nos is the reflexive pronoun for nosotros","example":"Nosotros ___ lavamos las manos.","answer":"nos","explanation":"The reflexive pronoun matches the subject nosotros, not the plural body part."} -->
 
 ## Conjugating lavarse (to wash oneself)
 
@@ -38,6 +45,10 @@ Drop the **-se**, conjugate the stem verb, then place the matching pronoun **bef
 
 > ⚠️ When the pronoun attaches to the gerund, add an accent to keep the stress: *duchando* → **duchándome**; *levantando* → **levantándose**.
 
+<!-- grammar-card: {"id":"reflexive-infinitive","kind":"rule","format":"qa","priority":"essential","sourceSection":"Where to Place the Reflexive Pronoun","rule":"A reflexive pronoun can attach to an infinitive in a verbal phrase","example":"Rewrite Me quiero lavar with the pronoun attached to the infinitive.","answer":"Quiero lavarme.","explanation":"Both placements are possible; the pronoun is still me because the subject is yo."} -->
+<!-- grammar-card: {"id":"reflexive-gerund","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Where to Place the Reflexive Pronoun","rule":"Gerund attachment preserves the original stress with a tilde","example":"Estoy ___. (ducharse, yo; attach the pronoun to the gerund)","answer":"duchándome","explanation":"Duchando plus me becomes duchándome; stress stays on chan."} -->
+<!-- grammar-card: {"id":"reflexive-command-contrast","kind":"concept","format":"qa","priority":"essential","sourceSection":"Where to Place the Reflexive Pronoun","rule":"Affirmative and negative commands place reflexive pronouns differently","example":"How is te placed in the tú commands Wash yourself and Do not wash yourself?","answer":"Attached in Lávate; before the verb in No te laves.","explanation":"The negative also changes the verb form to the subjunctive."} -->
+
 <!-- quiz: {"type":"multiple-choice","question":"Where does the reflexive pronoun go with an affirmative command?","options":["Before the verb","After the verb as a separate word","Attached to the end of the verb","It is dropped"],"answer":2} -->
 
 ## Common Reflexive Verbs — Daily Routine
@@ -54,11 +65,22 @@ Drop the **-se**, conjugate the stem verb, then place the matching pronoun **bef
 | **sentirse** (sehn-TEER-seh) | to feel |
 | **divertirse** (dee-behr-TEER-seh) | to have fun |
 
+<!-- vocab-card: {"id":"vocab-lavarse","word":"lavarse","meaning":"to wash oneself","priority":"optional","sourceSection":"Conjugating lavarse (to wash oneself)"} -->
+<!-- vocab-card: {"id":"vocab-levantarse","word":"levantarse","meaning":"to get up","priority":"optional","sourceSection":"Common Reflexive Verbs — Daily Routine"} -->
+<!-- vocab-card: {"id":"vocab-despertarse","word":"despertarse","meaning":"to wake up","priority":"optional","sourceSection":"Common Reflexive Verbs — Daily Routine"} -->
+<!-- vocab-card: {"id":"vocab-ducharse","word":"ducharse","meaning":"to shower","priority":"optional","sourceSection":"Common Reflexive Verbs — Daily Routine"} -->
+<!-- vocab-card: {"id":"vocab-peinarse","word":"peinarse","meaning":"to comb one's hair","priority":"optional","sourceSection":"Common Reflexive Verbs — Daily Routine"} -->
+<!-- vocab-card: {"id":"vocab-vestirse","word":"vestirse","meaning":"to get dressed","priority":"optional","sourceSection":"Common Reflexive Verbs — Daily Routine"} -->
+<!-- vocab-card: {"id":"vocab-acostarse","word":"acostarse","meaning":"to go to bed","priority":"optional","sourceSection":"Common Reflexive Verbs — Daily Routine"} -->
+<!-- vocab-card: {"id":"vocab-llamarse","word":"llamarse","meaning":"to be called; to be named","priority":"optional","sourceSection":"Common Reflexive Verbs — Daily Routine"} -->
+<!-- vocab-card: {"id":"vocab-sentirse","word":"sentirse","meaning":"to feel","priority":"optional","sourceSection":"Common Reflexive Verbs — Daily Routine"} -->
+<!-- vocab-card: {"id":"vocab-divertirse","word":"divertirse","meaning":"to have fun","priority":"optional","sourceSection":"Common Reflexive Verbs — Daily Routine"} -->
+
 - **Me llamo María** (meh YAH-moh mah-REE-ah) — My name is María (lit. I call myself María)
 - **Me despierto a las siete** — I wake up at seven
 - **Los niños se divirtieron mucho** — The children had a lot of fun
 
-<!-- grammar-card: {"rule":"Reflexive infinitives end in -se; conjugate the stem verb and match the pronoun to the subject","hint":"me/te/se/nos/os/se — the pronoun must agree with who performs the action on themselves","example":"Yo ___ los dientes todas las mañanas. (lavarse)","answer":"me lavo","explanation":"Drop -se from lavarse, conjugate lavar for yo (lavo), and place the matching pronoun me before it: 'Yo me lavo los dientes todas las mañanas.' The reflexive pronoun shows that the subject acts on themselves."} -->
+<!-- grammar-card: {"id":"lavarse-yo","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Conjugating lavarse (to wash oneself)","rule":"Reflexive infinitives end in -se; conjugate the stem verb and match the pronoun to the subject","example":"Yo ___ los dientes todas las mañanas. (lavarse)","answer":"me lavo","explanation":"Conjugate lavar as lavo and replace infinitive se with the yo pronoun me."} -->
 
 ## Verbs That Change Meaning Reflexively
 
@@ -76,9 +98,15 @@ Some verbs have a related but distinct meaning when used with a reflexive pronou
 - **Me pongo el abrigo** (meh POHN-goh) — I put on my coat
 - **¡Vete ya!** (BEH-teh yah) — Leave already! (from *irse*)
 
+<!-- vocab-card: {"id":"vocab-irse","word":"irse","meaning":"to leave; to go away","priority":"optional","sourceSection":"Verbs That Change Meaning Reflexively"} -->
+<!-- vocab-card: {"id":"vocab-ponerse","word":"ponerse","meaning":"to put on clothing; to become","priority":"optional","sourceSection":"Verbs That Change Meaning Reflexively"} -->
+<!-- vocab-card: {"id":"vocab-llevarse","word":"llevarse","meaning":"to take away; to get along with","priority":"optional","sourceSection":"Verbs That Change Meaning Reflexively"} -->
+<!-- vocab-card: {"id":"vocab-hacerse","word":"hacerse","meaning":"to become","priority":"optional","sourceSection":"Verbs That Change Meaning Reflexively"} -->
+<!-- grammar-card: {"id":"pronominal-not-literal","kind":"concept","format":"qa","priority":"optional","sourceSection":"Verbs That Change Meaning Reflexively","rule":"A pronominal verb need not express literal self-directed action","example":"Does irse mean to go oneself in a literal reflexive sense?","answer":"No. It means to leave or go away.","explanation":"Learn the pronominal verb's meaning rather than always translating its pronoun as oneself."} -->
+
 <!-- quiz: {"type":"multiple-choice","question":"'Se puso el abrigo' means:","options":["He put the coat somewhere","He put on his coat","He slept in his coat","He took off his coat"],"answer":1} -->
 
-<!-- grammar-card: {"rule":"'Dormirse' = to fall asleep (onset); 'dormir' = to sleep (ongoing state)","hint":"The reflexive adds a sense of the subject entering a new state — falling into it","example":"El niño ___ enseguida después de la cena. (dormirse, preterite, él)","answer":"se durmió","explanation":"'Dormirse' (to fall asleep) uses the reflexive: 'El niño se durmió enseguida.' Compare: 'El niño durmió diez horas' — he slept for ten hours (a fact about duration). The reflexive captures the onset of sleep, while the non-reflexive just describes the sleeping state."} -->
+<!-- grammar-card: {"id":"dormirse-onset","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Verbs That Change Meaning Reflexively","rule":"'Dormirse' = to fall asleep (onset); 'dormir' = to sleep (ongoing state)","example":"El niño ___ enseguida después de la cena. (dormirse, preterite, él)","answer":"se durmió","explanation":"Se durmió describes falling asleep; durmió diez horas describes the sleep's duration."} -->
 
 ## Sources
 

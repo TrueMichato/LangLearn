@@ -1,5 +1,7 @@
 # 〜たがる — Wants to (3rd Person)
 
+<!-- vocab-inventory: {"mode":"explicit"} -->
+
 > **Source:** Content from [Tofugu](https://www.tofugu.com/japanese-grammar/tagaru-form/). For personal study.
 
 Japanese Verb たがる Form
@@ -23,7 +25,7 @@ V (Masu-Stem)
 
 ## What Is たがる?
 
-The たい form generally can't be used to talk about what other people want—only what you personally want. So how can you say something like "Jerry wants to eat"? This is where the suffix 〜がる comes in.
+Bare たい normally expresses your own desire; an unqualified assertion about someone else's private desire can sound overconfident. Reporting, inference, and narrative contexts are exceptions to that generalization. For describing outward signs of desire, use 〜たがる.
 
 〜がる is similar to other grammar points like 〜そうだ, らしい, and みたい in that it can be used to talk about someone else's state by marking your statement as something you observed in them. So instead of saying "Jerry wants to eat," it's more like you're saying "It *seems like* Jerry wants to eat," or more accurately, "Jerry is showing signs that he wants to eat."
 
@@ -39,6 +41,10 @@ To add 〜がる to your たい form verb, drop the final 〜い and add 〜が�
 
 Instead of saying "want to [verb]," your たがる form verb now says, "shows signs of wanting to [verb]," and you can safely describe someone else's desires.
 
+<!-- grammar-card: {"id":"observed-desire","kind":"concept","format":"qa","priority":"essential","sourceSection":"What Is たがる?","rule":"たがる describes outward indications rather than direct access to private desire","example":"What perspective does 食べたがる add compared with a bare assertion of someone else's 食べたい?","answer":"It presents the speaker's observation that the person shows signs of wanting to eat.","explanation":"The form marks an outside perspective, not certainty about another person's mind."} -->
+<!-- grammar-card: {"id":"tagaru-formation","kind":"rule","format":"cloze","priority":"essential","sourceSection":"What Is たがる?","rule":"Remove the final い of たい before adding がる","example":"食べたい → shows signs of wanting to eat: 食べ___。","answer":"たがる","explanation":"The desire adjective contributes た, not たい, before がる; the result conjugates as a godan verb."} -->
+<!-- vocab-card: {"id":"vocab-taberu","word":"食べる","reading":"たべる","meaning":"to eat","priority":"optional","sourceSection":"What Is たがる?"} -->
+
 ## How to Use たがる
 
 Imagine you're enjoying a nice night in, when you hear that awful scratching sound at the door. It's your pesky dog again, wanting to go outside. You sigh to yourself and say:
@@ -47,7 +53,12 @@ Imagine you're enjoying a nice night in, when you hear that awful scratching sou
 
   - My dog always wants to go outside!
 
-While it can be used in the simple present form, 〜たがる is most commonly used in the continuous form: 〜たがっている. When you're describing someone wanting to do something in the moment (right now), you use the continuous form. But when you are talking about someone's general tendency or when the sentence is negative, you use 〜たがる. This is a bit tricky because in English "want" is used what you want in the moment, right now.
+A desire visible right now is commonly described with 〜たがっている. The simple nonpast 〜たがる commonly describes a general tendency. The negative 〜たがらない can describe not wanting or being unwilling to act; negative progressive 〜たがっていない is also possible when focusing on the current state.
+
+<!-- grammar-card: {"id":"habit-versus-current","kind":"concept","format":"qa","priority":"essential","sourceSection":"How to Use たがる","rule":"Simple and progressive forms differ in tendency versus current observation","example":"Why use 出たがる with いつも for the dog but 食べたがっている for Kimura right now?","answer":"The first describes a recurring tendency; the progressive describes signs of a desire currently being shown.","explanation":"This is an aspect distinction. Negative sentences are not categorically barred from the progressive."} -->
+<!-- vocab-card: {"id":"vocab-deru","word":"出る","reading":"でる","meaning":"to go out; to leave","priority":"optional","sourceSection":"How to Use たがる"} -->
+<!-- vocab-card: {"id":"vocab-hashiru","word":"走る","reading":"はしる","meaning":"to run","priority":"optional","sourceSection":"How to Use たがる"} -->
+<!-- vocab-card: {"id":"vocab-kenka-suru","word":"喧嘩する","reading":"けんかする","meaning":"to fight; to quarrel","priority":"optional","sourceSection":"How to Use たがる"} -->
 
 Let's look at some examples:
 
@@ -72,6 +83,9 @@ Now let's look at a negative example:
   - 木村さんは走りた**がらない**。
 
   - Kimura doesn't want to run.
+
+<!-- grammar-card: {"id":"negative-desire","kind":"rule","format":"cloze","priority":"optional","sourceSection":"How to Use たがる","rule":"たがる negates as たがらない","hint":"Use the plain negative, not the progressive.","example":"木村さんは走りた___。","answer":"がらない","explanation":"The godan verb がる becomes がらない. The sentence can express unwillingness to run, not merely the absence of a visible facial cue."} -->
+<!-- grammar-card: {"id":"current-desire","kind":"rule","format":"cloze","priority":"essential","sourceSection":"How to Use たがる","rule":"たがっている describes a desire visible right now","hint":"Use the plain progressive.","example":"木村さんは食べた___。","answer":"がっている","explanation":"The て-form of がる is がって, followed by いる; Kimura currently shows signs of wanting to eat."} -->
 
 It seems like you want to take a break. You've learned all about 〜たがる, so you've earned it. Before you come back and study this page again, check out our page on using 〜がる with い-adjectives. You're showing signs of wanting to become fluent in Japanese, so we're sure you'll do that no matter what.
 
@@ -118,10 +132,6 @@ by Maggie Sensei
 <!-- quiz: {"type":"multiple-choice","question":"What does \"木村さんは食べた**がっている**。\" mean?","options":["Kimura wants to eat.","My dog always wants to go outside!","Kimura wants to run.","Kimura wants to fight."],"answer":0} -->
 
 <!-- quiz: {"type":"multiple-choice","question":"What does \"木村さんは走りた**がっている**。\" mean?","options":["Kimura wants to run.","My dog always wants to go outside!","Kimura wants to eat.","Kimura wants to fight."],"answer":0} -->
-
-<!-- grammar-card: {"rule":"たがる negates as たがらない","hint":"たがる, negative","example":"木村さんは走りた___。","answer":"がらない","explanation":"走りたがらない says Kimura shows no sign of wanting to run."} -->
-
-<!-- grammar-card: {"rule":"たがっている describes a desire visible right now","hint":"たがる, continuous","example":"木村さんは食べた___。","answer":"がっている","explanation":"食べたがっている reports that Kimura is visibly wanting to eat."} -->
 
 ## Sources
 

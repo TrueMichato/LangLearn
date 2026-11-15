@@ -1,5 +1,7 @@
 # Rhetoric Basics: Simile, Metaphor & Metonymy (tashbīh, istiʿāra, kināya)
 
+<!-- vocab-inventory: {"mode":"explicit"} -->
+
 Arabic rhetoric, al-balāgha, studies how a sentence does more than report facts. A good first map has three tools: tashbīh, istiʿāra, and kināya.
 
 ## The core distinction
@@ -12,13 +14,21 @@ A tashbīh is an open comparison. It usually has a thing compared, a thing compa
 | tashbīh with ka-anna | كَأَنَّ الوَلَدَ أَسَدٌ (ka-anna al-walada asadun) | the boy is as if a lion |
 | comparison without a particle | أَنْتَ بَحْرٌ فِي الكَرَمِ (anta baḥrun fī al-karami) | you are a sea in generosity |
 
+<!-- grammar-card: {"id":"explicit-simile","kind":"rule","format":"qa","priority":"essential","sourceSection":"The core distinction","rule":"A visible comparison marker can make the likeness explicit.","example":"Identify the device: العِلْمُ كَالنُّورِ (al-ʿilmu ka-n-nūri).","answer":"تَشْبِيهٌ (tashbīhun) — simile","explanation":"كَـ explicitly compares knowledge with light. The expression names both sides.","legacyAliases":[{"rule":"A tashbīh is an explicit comparison, often with كَـ (ka-), مِثْلُ (mithlu), or كَأَنَّ (ka-anna).","example":"Identify the device: العِلْمُ كَالنُّورِ (al-ʿilmu ka-n-nūri)."}]} -->
+
+<!-- vocab-card: {"id":"vocab-nur","word":"النُّورِ","reading":"an-nūri","meaning":"the light; genitive in the example","priority":"optional","sourceSection":"The core distinction"} -->
+<!-- vocab-card: {"id":"vocab-karam","word":"الكَرَمِ","reading":"al-karami","meaning":"generosity; genitive in the example","priority":"optional","sourceSection":"The core distinction"} -->
+<!-- grammar-card: {"id":"simile-without-particle","kind":"concept","format":"qa","priority":"optional","sourceSection":"The core distinction","rule":"Omitting the comparison particle alone does not distinguish every metaphor from a simile.","example":"Why can أَنْتَ بَحْرٌ فِي الكَرَمِ still be analyzed as a simile without a particle?","answer":"Both compared sides remain explicit: you and a sea.","explanation":"An emphatic simile can omit like while naming both sides. A metaphor instead borrows an image with one side left implicit."} -->
+
 <!-- quiz: {"type":"multiple-choice","question":"Which example is an explicit tashbīh because it uses a comparison particle?","options":["العِلْمُ كَالنُّورِ (al-ʿilmu ka-n-nūri)","رَأَيْتُ أَسَدًا يَخْطُبُ (raʾaytu asadan yakhṭubu)","فُلَانٌ كَثِيرُ الرَّمَادِ (fulānun kathīru ar-ramādi)","لِلَّهِ الأَمْرُ (li-llāhi al-amru)"],"answer":0} -->
 
 ## Istiʿāra: borrowed meaning
 
-An istiʿāra is a metaphor: a word is borrowed from one domain and used in another. In رَأَيْتُ أَسَدًا يَخْطُبُ فِي المَجْلِسِ (raʾaytu asadan yakhṭubu fī al-majlisi) — I saw a lion giving a speech in the council, the word أَسَدًا (asadan) — lion points to a brave man. The comparison word is gone, so the image is stronger than a simple simile.
+An istiʿāra is a metaphor: a word is borrowed from one domain and used in another. In رَأَيْتُ أَسَدًا يَخْطُبُ فِي المَجْلِسِ (raʾaytu asadan yakhṭubu fī al-majlisi) — I saw a lion giving a speech in the council, the word أَسَدًا (asadan) — lion points to a brave man. The human is left implicit and the animal image stands in for him. Merely omitting “like” is not enough to distinguish a metaphor: أَنْتَ بَحْرٌ فِي الكَرَمِ still states both sides of a comparison.
 
-<!-- grammar-card: {"rule":"A tashbīh is an explicit comparison, often with كَـ (ka-), مِثْلُ (mithlu), or كَأَنَّ (ka-anna).","hint":"Look for a visible comparison word.","example":"Identify the device: العِلْمُ كَالنُّورِ (al-ʿilmu ka-n-nūri).","answer":"تَشْبِيهٌ (tashbīhun) — simile","explanation":"The particle كَـ (ka-) makes the comparison open and explicit: knowledge is like light."} -->
+<!-- grammar-card: {"id":"borrowed-lion","kind":"concept","format":"qa","priority":"essential","sourceSection":"Istiʿāra: borrowed meaning","rule":"A borrowed animal image can stand for an unstated human referent.","example":"Explain أَسَدًا in رَأَيْتُ أَسَدًا يَخْطُبُ (raʾaytu asadan yakhṭubu).","answer":"It is a metaphor for a brave speaker.","explanation":"The human is implicit and lion supplies the image; the absence of a comparison particle alone is not the full test.","legacyAliases":[{"rule":"An istiʿāra removes the comparison particle and uses a borrowed image as if it were literal.","example":"Explain أَسَدًا in رَأَيْتُ أَسَدًا يَخْطُبُ (raʾaytu asadan yakhṭubu)."}]} -->
+
+<!-- vocab-card: {"id":"vocab-asad","word":"أَسَدًا","reading":"asadan","meaning":"lion; accusative in the example","priority":"essential","sourceSection":"Istiʿāra: borrowed meaning"} -->
 
 <!-- quiz: {"type":"multiple-choice","question":"In رَأَيْتُ أَسَدًا يَخْطُبُ (raʾaytu asadan yakhṭubu), what does أَسَدًا most likely suggest?","options":["A brave man","A literal animal in every reading","A written contract","A question particle"],"answer":0} -->
 
@@ -30,11 +40,12 @@ A kināya is an indirect expression. The literal image can still be understood, 
 - هِيَ نَظِيفَةُ اليَدِ (hiya naẓīfatu al-yadi) — she is clean-handed; she is honest.
 - هُوَ طَوِيلُ النِّجَادِ (huwa ṭawīlu an-nijādi) — he has a long sword-belt; he is tall or noble in older style.
 
-<!-- grammar-card: {"rule":"An istiʿāra removes the comparison particle and uses a borrowed image as if it were literal.","hint":"The image stands directly in the sentence.","example":"Explain أَسَدًا in رَأَيْتُ أَسَدًا يَخْطُبُ (raʾaytu asadan yakhṭubu).","answer":"It is a metaphor for a brave speaker.","explanation":"The speaker does not say like a lion; the word lion is borrowed for a courageous person."} -->
+<!-- grammar-card: {"id":"ash-cultural-inference","kind":"concept","format":"qa","priority":"optional","sourceSection":"Kināya: meaning by indication","rule":"An indirect image can evoke a quality through cultural inference.","example":"How does “he has much ash” imply generosity in the traditional example?","answer":"Many guests require many cooking fires, leaving much ash.","explanation":"هُوَ كَثِيرُ الرَّمَادِ hints at hospitality; the literal image remains possible. This is kināya rather than a universal literal equation of ash with generosity."} -->
+<!-- grammar-card: {"id":"sword-belt-register","kind":"concept","format":"qa","priority":"optional","sourceSection":"Kināya: meaning by indication","rule":"Some indirect images belong especially to older literary convention.","example":"What does the long sword-belt image suggest here, and in what register?","answer":"Tallness or nobility in older literary style.","explanation":"هُوَ طَوِيلُ النِّجَادِ depends on a traditional cultural image, not a neutral modern description of every belt."} -->
 
 <!-- quiz: {"type":"multiple-choice","question":"Which sentence is a kināya for generosity?","options":["هُوَ كَثِيرُ الرَّمَادِ (huwa kathīru ar-ramādi)","العِلْمُ كَالنُّورِ (al-ʿilmu ka-n-nūri)","كَأَنَّ الوَلَدَ أَسَدٌ (ka-anna al-walada asadun)","مَا نَجَحَ إِلَّا خَالِدٌ (mā najaḥa illā khālidun)"],"answer":0} -->
 
-<!-- grammar-card: {"rule":"A kināya gives an indirect clue to the intended meaning while leaving the literal wording possible.","hint":"The phrase hints rather than names the quality directly.","example":"What does هِيَ نَظِيفَةُ اليَدِ (hiya naẓīfatu al-yadi) imply?","answer":"She is honest or free from corruption.","explanation":"Clean hand can be literal, but as kināya it points indirectly to moral integrity."} -->
+<!-- grammar-card: {"id":"clean-hand-implication","kind":"concept","format":"qa","priority":"essential","sourceSection":"Kināya: meaning by indication","rule":"A kināya gives an indirect clue to the intended meaning while leaving the literal wording possible.","example":"What does هِيَ نَظِيفَةُ اليَدِ (hiya naẓīfatu al-yadi) imply?","answer":"She is honest or free from corruption.","explanation":"The clean-hand wording may remain literally possible while indirectly indicating moral integrity."} -->
 
 ## Sources
 

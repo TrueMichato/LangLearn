@@ -1,5 +1,7 @@
 # Quadriliteral Verb Patterns
 
+<!-- vocab-inventory: {"mode":"explicit"} -->
+
 Most Arabic verb lessons focus on three-root verbs. MSA also has quadriliteral verbs, **الْأَفْعَالُ الرُّبَاعِيَّةُ** (al-afʿālu ar-rubāʿiyyatu), built from four root consonants.
 
 ## Core idea
@@ -16,13 +18,21 @@ The basic quadriliteral pattern is **فَعْلَلَ** (faʿlala). It often giv
 | Repeated action | **زَلْزَلَتِ الْأَرْضُ** (zalzalati al-arḍu) | the earth shook |
 | Reflexive-like derived form | **تَدَحْرَجَتِ الْكُرَةُ** (tadaḥrajati al-kuratu) | the ball rolled by itself |
 
+<!-- vocab-card: {"id":"vocab-dahraja","word":"دَحْرَجَ","reading":"daḥraja","meaning":"he rolled something; to roll (transitive)","priority":"essential","sourceSection":"Forms and examples"} -->
+<!-- vocab-card: {"id":"vocab-dahrajah","word":"دَحْرَجَةٌ","reading":"daḥrajatun","meaning":"rolling; the act of rolling","priority":"optional","sourceSection":"Forms and examples"} -->
+<!-- grammar-card: {"id":"quadriliteral-masdar","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Forms and examples","rule":"The basic quadriliteral verbal noun commonly follows فَعْلَلَةٌ.","example":"Give the indefinite nominative maṣdar of دَحْرَجَ: ___.","answer":"دَحْرَجَةٌ","explanation":"دَحْرَجَةٌ (daḥrajatun) names rolling. The table shows its construct form دَحْرَجَةُ الْكُرَةِ."} -->
+
 <!-- quiz: {"type": "multiple-choice", "question": "Which pattern is the basic quadriliteral past pattern?", "options": ["فَعْلَلَ (faʿlala)", "فَاعَلَ (fāʿala)", "اِسْتَفْعَلَ (istafʿala)", "اِفْتَعَلَ (iftaʿala)"], "answer": 0} -->
 
 ## Usage notes
 
 Quadriliteral roots are not just “long triliterals.” Treat all four consonants as root material: **د-ح-ر-ج** in **دَحْرَجَ** (daḥraja), **ز-ل-ز-ل** in **زَلْزَلَ** (zalzala), and **و-س-و-س** in **وَسْوَسَ** (waswasa). Many derived quadriliteral verbs begin with **تَـ**, as in **تَبَعْثَرَتِ الْأَوْرَاقُ** (tabaʿtharati al-awrāqu) — the papers scattered.
 
-<!-- grammar-card: {"rule": "The basic quadriliteral verb pattern is فَعْلَلَ, with an imperfect like يُفَعْلِلُ.", "hint": "Look for four root consonants instead of three.", "example": "دَحْرَجَ يُدَحْرِجُ دَحْرَجَةً", "answer": "to roll, he rolls, rolling", "explanation": "د-ح-ر-ج are four root consonants arranged on the quadriliteral pattern."} -->
+<!-- vocab-card: {"id":"vocab-zalzala","word":"زَلْزَلَ","reading":"zalzala","meaning":"he shook; to shake","priority":"optional","sourceSection":"Usage notes"} -->
+<!-- vocab-card: {"id":"vocab-waswasa","word":"وَسْوَسَ","reading":"waswasa","meaning":"he whispered; to whisper","priority":"optional","sourceSection":"Usage notes"} -->
+<!-- vocab-card: {"id":"vocab-tabaathara","word":"تَبَعْثَرَ","reading":"tabaʿthara","meaning":"scattered (intransitive); became scattered","priority":"optional","sourceSection":"Usage notes","contextSentence":"تَبَعْثَرَتِ الْأَوْرَاقُ."} -->
+<!-- grammar-card: {"id":"quadriliteral-imperfect","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Usage notes","rule":"The basic quadriliteral verb pattern is فَعْلَلَ, with an imperfect like يُفَعْلِلُ.","example":"Complete the indicative imperfect: دَحْرَجَ → ___.","answer":"يُدَحْرِجُ","explanation":"يُدَحْرِجُ (yudaḥriju) follows يُفَعْلِلُ, keeping all four radicals د-ح-ر-ج.","legacyAliases":[{"rule":"The basic quadriliteral verb pattern is فَعْلَلَ, with an imperfect like يُفَعْلِلُ.","example":"دَحْرَجَ يُدَحْرِجُ دَحْرَجَةً"}]} -->
+<!-- grammar-card: {"id":"four-radicals-not-triliteral","kind":"concept","format":"qa","priority":"essential","sourceSection":"Usage notes","rule":"A quadriliteral root contains four radicals, including repeated consonants.","example":"What are the four root consonants of وَسْوَسَ?","answer":"و-س-و-س","explanation":"Repeated consonants still occupy separate root positions. Do not remove one to force a three-radical analysis."} -->
 
 ## Practice patterns
 
@@ -32,9 +42,13 @@ Practice by naming the four radicals:
 - **بَعْثَرَتِ الرِّيحُ الْوَرَقَ** (baʿtharati ar-rīḥu al-waraqa) — the wind scattered the paper; root **ب-ع-ث-ر**.
 - **تَدَحْرَجَ الْحَجَرُ** (tadaḥraja al-ḥajaru) — the stone rolled; derived reflexive-like form.
 
+<!-- vocab-card: {"id":"vocab-baathara","word":"بَعْثَرَ","reading":"baʿthara","meaning":"he scattered something; to scatter (transitive)","priority":"optional","sourceSection":"Practice patterns","contextSentence":"بَعْثَرَتِ الرِّيحُ الْوَرَقَ."} -->
+<!-- vocab-card: {"id":"vocab-tadahraja","word":"تَدَحْرَجَ","reading":"tadaḥraja","meaning":"it rolled; to roll (intransitive)","priority":"optional","sourceSection":"Practice patterns"} -->
+<!-- grammar-card: {"id":"scatter-root","kind":"rule","format":"qa","priority":"optional","sourceSection":"Practice patterns","rule":"The four radicals remain root material in basic quadriliteral verbs.","example":"Identify the root of بَعْثَرَتِ in بَعْثَرَتِ الرِّيحُ الْوَرَقَ.","answer":"ب-ع-ث-ر","explanation":"The final ت is the feminine past suffix for الرِّيحُ, not a fifth radical."} -->
+
 <!-- quiz: {"type": "multiple-choice", "question": "What is the verbal noun pattern shown by دَحْرَجَةٌ (daḥrajatun)?", "options": ["فَعْلَلَةٌ (faʿlalatun)", "مَفْعُولٌ (mafʿūlun)", "فَاعِلٌ (fāʿilun)", "اِفْعِلَالٌ (ifʿilālun)"], "answer": 0} -->
 
-<!-- grammar-card: {"rule": "Many تَفَعْلَلَ quadriliteral verbs describe the subject undergoing or doing the action by itself.", "hint": "The added تَـ often feels reflexive or intransitive.", "example": "تَدَحْرَجَتِ الْكُرَةُ (tadaḥrajati al-kuratu)", "answer": "The ball rolled by itself", "explanation": "The تَـ form contrasts with دَحْرَجَ الْوَلَدُ الْكُرَةَ, where someone rolls the ball."} -->
+<!-- grammar-card: {"id":"derived-rolling-subject","kind":"concept","format":"qa","priority":"optional","sourceSection":"Practice patterns","rule":"Many تَفَعْلَلَ quadriliteral verbs describe the subject undergoing or doing the action by itself.","example":"How does the ball's role change between دَحْرَجَ الْوَلَدُ الْكُرَةَ and تَدَحْرَجَتِ الْكُرَةُ?","answer":"It is the object someone rolls in the first, but the subject that rolls in the second.","explanation":"The added ta- gives this verb an intransitive, reflexive-like use. This is a common meaning tendency, not a guarantee for every derived quadriliteral.","legacyAliases":[{"rule":"Many تَفَعْلَلَ quadriliteral verbs describe the subject undergoing or doing the action by itself.","example":"تَدَحْرَجَتِ الْكُرَةُ (tadaḥrajati al-kuratu)"}]} -->
 
 ## Sources
 

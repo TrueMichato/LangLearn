@@ -1,15 +1,22 @@
 # Speech Level Overview (Casual to Formal)
 
+<!-- vocab-inventory: {"mode":"explicit"} -->
+
 Japanese speech levels reflect the relationship between speaker and listener. Choosing the right level is a core part of communication.
+
+These headings are a guide, not five mutually exclusive rungs. Polite endings address the listener; honorific and humble choices also track whose actions are described. They can occur together in the same sentence.
 
 ## Level 1: Plain / Casual Form
 
-Plain form uses dictionary endings (だ, る, い) with no ます or です. Used with friends, family, and inner thoughts.
+Plain form uses non-polite predicates, including dictionary forms, plain pasts, and plain negatives, without ます or です. It is common with close friends, family, and inner thoughts.
 
 - **これ、おいしい。** (Kore, oishii.) — This is good.
 - **明日行く。** (Ashita iku.) — I'm going tomorrow.
 
 Plain form is also used inside subordinate clauses: 明日行く**と思います** (I think I'll go tomorrow).
+
+<!-- grammar-card: {"id":"plain-form-scope","kind":"concept","format":"qa","priority":"essential","sourceSection":"Level 1: Plain / Casual Form","rule":"Plain form includes past and negative predicates, not only dictionary forms","example":"Is 食べなかった excluded from plain form because it is not a dictionary form?","answer":"No. It is a plain past-negative form, without a polite ending.","explanation":"Plain versus polite is not the same distinction as nonpast versus past."} -->
+<!-- grammar-card: {"id":"plain-inside-polite","kind":"concept","format":"qa","priority":"optional","sourceSection":"Level 1: Plain / Casual Form","rule":"A plain embedded clause can appear in a polite sentence","example":"Why does 明日行くと思います contain both a plain verb and a polite main ending?","answer":"The inner clause uses plain 行く, while 思います makes the overall statement polite toward the listener.","explanation":"This grammatical combination is not automatically a social register mistake."} -->
 
 <!-- quiz:{"type":"multiple-choice","question":"When is plain form appropriate?","options":["In a job interview","Talking to your boss","Chatting with a close friend","Writing a business email"],"answer":2} -->
 
@@ -23,11 +30,11 @@ The standard polite form. Used with strangers, acquaintances, coworkers, and in 
 
 > 💡 Textbooks teach polite form first, but plain form is what you hear in anime and casual conversation. Both are essential.
 
-<!-- grammar-card: {"rule":"です and ます form the default polite level","hint":"行く, polite","example":"明日(あした)、学校(がっこう)へ行(い)き___。","answer":"ます","explanation":"行きます is the safe register for anyone you are not close to."} -->
+<!-- grammar-card: {"id":"polite-ending","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Level 2: Polite Form (です/ます)","rule":"です and ます form the default polite level","hint":"行く, polite affirmative nonpast","example":"明日(あした)、学校(がっこう)へ行(い)き___。","answer":"ます","explanation":"行きます is a useful default with strangers and acquaintances; choose the level for the actual setting."} -->
 
 ## Level 3: Honorific Language (尊敬語)
 
-Honorific language (尊敬語 / sonkeigo) **elevates the actions of others**. You never use it for your own actions.
+Honorific language (尊敬語 / sonkeigo) **elevates the actions of the person being respected**. Do not use it to elevate your own actions.
 
 Adding お or ご to nouns adds respect: お名前 (your name), ご家族 (your family).
 
@@ -35,7 +42,7 @@ Adding お or ご to nouns adds respect: お名前 (your name), ご家族 (your 
 
 | Plain | Honorific | Meaning |
 |-------|-----------|---------|
-| 行く/来る | いらっしゃる | go / come / be |
+| 行く/来る/いる | いらっしゃる | go / come / be |
 | 言う | おっしゃる | say |
 | 食べる/飲む | 召し上がる | eat / drink |
 | する | なさる | do |
@@ -46,11 +53,20 @@ Adding お or ご to nouns adds respect: お名前 (your name), ご家族 (your 
 
 <!-- quiz:{"type":"multiple-choice","question":"Which is the honorific form of '食べる'?","options":["いただく","召し上がる","参る","申す"],"answer":1} -->
 
-<!-- grammar-card: {"rule":"Honorific verbs raise the other person's action","hint":"いる / 来る / 行く, honorific","example":"社長(しゃちょう)がもうすぐ___。","answer":"いらっしゃいます","explanation":"いらっしゃいます elevates the president, and covers being, coming and going alike."} -->
+<!-- vocab-card: {"id":"vocab-sonkeigo","word":"尊敬語","reading":"そんけいご","meaning":"honorific language that elevates the person referred to","priority":"optional","sourceSection":"Level 3: Honorific Language (尊敬語)"} -->
+<!-- grammar-card: {"id":"honorific-direction","kind":"concept","format":"qa","priority":"essential","sourceSection":"Level 3: Honorific Language (尊敬語)","rule":"Honorific verbs elevate the person whose action is described","example":"Should you use an honorific verb to elevate your own action in a normal self-description?","answer":"No. Honorific verbs elevate the respected other person's action, not the speaker's own.","explanation":"This differs from listener-facing です/ます politeness."} -->
+<!-- grammar-card: {"id":"respectful-noun-prefixes","kind":"concept","format":"qa","priority":"optional","sourceSection":"Level 3: Honorific Language (尊敬語)","rule":"お and ご can add respect to appropriate nouns","example":"What do the prefixes contribute in お名前 and ご家族?","answer":"Respect toward the person whose name or family is being referred to.","explanation":"These are established respectful noun forms, not an instruction to attach either prefix freely to every noun."} -->
+<!-- vocab-card: {"id":"vocab-irassharu","word":"いらっしゃる","reading":"いらっしゃる","meaning":"to go; to come; to be (honorific)","priority":"optional","sourceSection":"Special Honorific Verbs"} -->
+<!-- vocab-card: {"id":"vocab-ossharu","word":"おっしゃる","reading":"おっしゃる","meaning":"to say (honorific)","priority":"optional","sourceSection":"Special Honorific Verbs"} -->
+<!-- vocab-card: {"id":"vocab-meshiagaru","word":"召し上がる","reading":"めしあがる","meaning":"to eat; to drink (honorific)","priority":"optional","sourceSection":"Special Honorific Verbs"} -->
+<!-- vocab-card: {"id":"vocab-nasaru","word":"なさる","reading":"なさる","meaning":"to do (honorific)","priority":"optional","sourceSection":"Special Honorific Verbs"} -->
+<!-- vocab-card: {"id":"vocab-kudasaru","word":"くださる","reading":"くださる","meaning":"to give to me or my side (honorific)","priority":"optional","sourceSection":"Special Honorific Verbs"} -->
+<!-- grammar-card: {"id":"irassharu-polite","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Special Honorific Verbs","rule":"Honorific verbs raise the other person's action","hint":"The president will arrive soon; use honorific polite nonpast.","example":"社長(しゃちょう)がもうすぐ___。","answer":"いらっしゃいます","explanation":"いらっしゃいます elevates the president and also adds polite ます; its basic verb covers being, coming, and going."} -->
+<!-- grammar-card: {"id":"meshiagaru-request","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Special Honorific Verbs","rule":"召し上がる honors another person's eating or drinking","example":"どうぞ___ください。 (Invite a guest to eat honorifically.)","answer":"召し上がって","explanation":"Use the honorific verb's て-form before ください, rather than the speaker-humble いただく."} -->
 
 ## Level 4: Humble Language (謙譲語)
 
-Humble language (謙譲語 / kenjougo) **lowers your own actions** to show respect. It is the mirror of honorific language.
+Humble language (謙譲語 / kenjougo) presents **your own or your group's actions modestly** to show respect. It does not mean lowering every other person's actions.
 
 ### Special Humble Verbs
 
@@ -71,22 +87,37 @@ Humble language (謙譲語 / kenjougo) **lowers your own actions** to show respe
 
 <!-- quiz:{"type":"multiple-choice","question":"You are introducing yourself to a client. Which is correct?","options":["田中と言います","田中と申します","田中とおっしゃいます","田中でいらっしゃいます"],"answer":1} -->
 
-<!-- grammar-card: {"rule":"Humble verbs lower your own action","hint":"行く, humble","example":"明日(あした)、そちらへ___。","answer":"参(まい)ります","explanation":"参ります lowers the speaker's own going, which raises the listener by contrast."} -->
+<!-- vocab-card: {"id":"vocab-kenjougo","word":"謙譲語","reading":"けんじょうご","meaning":"humble language","priority":"optional","sourceSection":"Level 4: Humble Language (謙譲語)"} -->
+<!-- grammar-card: {"id":"humble-direction","kind":"concept","format":"qa","priority":"essential","sourceSection":"Level 4: Humble Language (謙譲語)","rule":"Humble language presents the speaker's or in-group's action modestly","example":"Whose action is normally presented modestly with humble language?","answer":"The speaker's own action or an action of someone represented as part of the speaker's group.","explanation":"Do not humble a client's action when the purpose is to honor that client."} -->
+<!-- grammar-card: {"id":"raise-lower-memory-cue","kind":"concept","format":"qa","priority":"optional","sourceSection":"Level 4: Humble Language (謙譲語)","rule":"Raise others and lower self is a perspective cue, not two listener-politeness endings","example":"Map the cue raise others, lower self to the two respectful language categories.","answer":"Raise others maps to 尊敬語 (そんけいご); lower self or one's group maps to 謙譲語 (けんじょうご).","explanation":"The cue tracks whose action is respected. Either category can combine with polite sentence endings."} -->
+<!-- vocab-card: {"id":"vocab-mairu","word":"参る","reading":"まいる","meaning":"to go; to come (humble)","priority":"optional","sourceSection":"Special Humble Verbs"} -->
+<!-- vocab-card: {"id":"vocab-mousu","word":"申す","reading":"もうす","meaning":"to say; to be called (humble)","priority":"optional","sourceSection":"Special Humble Verbs"} -->
+<!-- vocab-card: {"id":"vocab-itadaku","word":"いただく","reading":"いただく","meaning":"to eat; to drink; to receive (humble)","priority":"optional","sourceSection":"Special Humble Verbs"} -->
+<!-- vocab-card: {"id":"vocab-itasu","word":"いたす","reading":"いたす","meaning":"to do (humble)","priority":"optional","sourceSection":"Special Humble Verbs"} -->
+<!-- vocab-card: {"id":"vocab-haiken-suru","word":"拝見する","reading":"はいけんする","meaning":"to look at; to see (humble)","priority":"optional","sourceSection":"Special Humble Verbs"} -->
+<!-- grammar-card: {"id":"mairu-polite","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Special Humble Verbs","rule":"Humble verbs lower your own action","hint":"My going, humble polite nonpast; write the verb normally without a parenthetical reading.","example":"明日(あした)、そちらへ___。","answer":"参ります","explanation":"参ります (まいります) presents the speaker's own going humbly."} -->
+<!-- grammar-card: {"id":"mousu-introduction","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Special Humble Verbs","rule":"申す humbly introduces the speaker's name","example":"田中と___。 (My name is Tanaka; humble polite form.)","answer":"申します","explanation":"Use 申します (もうします) for your own introduction rather than honoring yourself with おっしゃいます."} -->
+<!-- grammar-card: {"id":"haiken-past","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Special Humble Verbs","rule":"拝見する humbly describes the speaker's seeing or reading","example":"メールを___。 (I read your email; humble polite past.)","answer":"拝見しました","explanation":"The する compound becomes しました; 拝見 (はいけん) remains unchanged."} -->
 
 ## Level 5: Ultra-Polite (ございます)
 
-ございます is the most polite form of ある. It appears in fixed expressions and formal service language.
+ございます is a very polite form of ある. It appears in fixed expressions and formal service language; でございます is a formal polite copular ending.
 
 - **ありがとうございます。** (Arigatou gozaimasu.) — Thank you very much.
 - **お手洗いはあちらでございます。** (Otearai wa achira de gozaimasu.) — The restroom is over there.
 
-<!-- grammar-card: {"rule":"ございます is the ultra-polite form of ある","hint":"polite ある","example":"おはよう___。","answer":"ございます","explanation":"ございます appears in set greetings and throughout service language."} -->
+<!-- vocab-card: {"id":"vocab-arigatou-gozaimasu","word":"ありがとうございます","reading":"ありがとうございます","meaning":"thank you very much (polite)","priority":"optional","sourceSection":"Level 5: Ultra-Polite (ございます)"} -->
+<!-- grammar-card: {"id":"gozaimasu-greeting","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Level 5: Ultra-Polite (ございます)","rule":"ございます is the ultra-polite form of ある","example":"おはよう___。","answer":"ございます","explanation":"ございます appears in this set greeting and in formal service language; it is not an ending to append freely to any verb."} -->
+<!-- grammar-card: {"id":"degozaimasu-copula","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Level 5: Ultra-Polite (ございます)","rule":"でございます is a formal polite copular ending","example":"お手洗いはあちら___。 (Use the formal service equivalent of です.)","answer":"でございます","explanation":"Keep で before ございます in this copular pattern."} -->
 
 ## Practical Tips
 
 **Mixing is normal.** People often mix levels as they get comfortable.
-**Match your partner.** If they use casual form, shift too. If they use です/ます, stick with it.
-**When in doubt, be polite.** です/ます when casual is expected is awkward but harmless. The reverse can be rude.
+**Consider your partner and setting.** Do not automatically switch to casual just because a senior uses it with you; relationships can be asymmetric. Follow shared expectations or an invitation to relax the register.
+**When in doubt, start polite.** です/ます is usually a safer conversational default with strangers. Excessive formality can still create distance, so adjust thoughtfully.
+
+<!-- grammar-card: {"id":"speech-levels-combine","kind":"concept","format":"qa","priority":"essential","sourceSection":"Practical Tips","rule":"Listener politeness and honorific perspective can coexist","example":"Does using いらっしゃいます mean choosing honorific language instead of polite language?","answer":"No. The verb honors the person described, and its ます ending also makes the sentence polite toward the listener.","explanation":"The overview is not a set of mutually exclusive levels."} -->
+<!-- grammar-card: {"id":"asymmetric-register","kind":"concept","format":"qa","priority":"optional","sourceSection":"Practical Tips","rule":"A senior's casual speech does not automatically license reciprocal casual address","example":"Should you automatically copy a senior's casual endings when speaking back to them?","answer":"No. Consider the relationship, setting, and whether a shared move to casual speech is appropriate.","explanation":"Matching is a social judgment, not a mechanical rule; polite speech is a useful initial default."} -->
 
 <!-- quiz:{"type":"multiple-choice","question":"A stranger asks you for directions. Which speech level should you default to?","options":["Plain form (だ/る)","Polite form (です/ます)","Honorific language (尊敬語)","Humble language (謙譲語)"],"answer":1} -->
 

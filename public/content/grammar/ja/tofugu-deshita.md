@@ -1,5 +1,7 @@
 # でした (deshita) — Past Copula (Polite)
 
+<!-- vocab-inventory: {"mode":"explicit"} -->
+
 > **Source:** Content from [Tofugu](https://www.tofugu.com/japanese-grammar/deshita/). For personal study.
 
 でした: Polite Japanese Word for the Past
@@ -44,6 +46,9 @@ In Japanese, all past tense markers end in 〜た. でした is formed by removi
 
 And there you have it. 簡単でしたね！
 
+<!-- grammar-card: {"id":"deshita-formation","kind":"concept","format":"qa","priority":"optional","sourceSection":"Forming でした","rule":"The polite copula changes from です to でした for an affirmative nominal past","example":"How does the polite copula change to mark a noun predicate as past?","answer":"です becomes でした.","explanation":"The change can be described as replacing the final す with した. It is the copula that changes, not the noun itself."} -->
+<!-- vocab-card: {"id":"vocab-kantan","word":"簡単","reading":"かんたん","meaning":"easy; simple","priority":"optional","sourceSection":"Forming でした"} -->
+
 ## Patterns of Use
 
 ### At the End of a Sentence
@@ -72,6 +77,12 @@ In this sentence, the な-adjective 素敵 (wonderful) is marked as both polite 
 
 In this sentence, the 〜ません, ending on the verb 食べません (not eat) tells us that it is in the negative polite form. 〜ません cannot be conjugated to show tense on its own, so we stick でした on the end to mark for the past tense. This adds the past tense “did” meaning that we see in the English translation.
 
+<!-- grammar-card: {"id":"deshita-noun-past","kind":"rule","format":"cloze","priority":"essential","sourceSection":"At the End of a Sentence","rule":"でした puts a noun predicate into the polite past","hint":"Use the polite past copula","example":"昨日はペットのハムスターの誕生日___。","answer":"でした","explanation":"誕生日 is a noun; でした supplies the past tense and polite style. The task tests the copula rather than guessing the birthday noun.","legacyAliases":[{"rule":"でした puts a noun predicate into the polite past","example":"昨日はペットのハムスターの___でした。"}]} -->
+<!-- grammar-card: {"id":"deshita-na-past","kind":"rule","format":"cloze","priority":"optional","sourceSection":"At the End of a Sentence","rule":"A な-adjective stem takes でした for a polite affirmative past","example":"ハムスターの誕生日会は素敵___。 (polite past)","answer":"でした","explanation":"素敵 is a な-adjective, so it takes the copula rather than the かった ending of an い-adjective."} -->
+<!-- grammar-card: {"id":"deshita-masen-past","kind":"rule","format":"cloze","priority":"essential","sourceSection":"At the End of a Sentence","rule":"A polite negative verb in ません takes でした for past tense","example":"ハムスターはケーキを食べません___。 (did not eat)","answer":"でした","explanation":"食べませんでした is the polite past negative. This is not permission to append でした to affirmative 食べる."} -->
+<!-- vocab-card: {"id":"vocab-tanjoubi","word":"誕生日","reading":"たんじょうび","meaning":"birthday","priority":"essential","sourceSection":"At the End of a Sentence"} -->
+<!-- vocab-card: {"id":"vocab-suteki","word":"素敵","reading":"すてき","meaning":"wonderful; lovely","priority":"optional","sourceSection":"At the End of a Sentence"} -->
+<!-- vocab-card: {"id":"vocab-hamusutaa","word":"ハムスター","reading":"はむすたー","meaning":"hamster","priority":"optional","sourceSection":"At the End of a Sentence"} -->
 ### In the Middle of a Sentence
 
 When でした appears in the middle of a sentence, it means that there are actually *two* or more clauses within that sentence. A clause is essentially a sentence that exists inside or connected to another sentence. でした can appear in the middle of a sentence if there are two independent clauses that are joined together into one sentence:
@@ -96,7 +107,7 @@ Even though clause A is marked with だった, this sentence feels polite overal
 
 It’s *possible* that someone could say this sentence in spoken Japanese for some reason, but it is definitely awkward to have the first clause more polite than the second. In general, you should avoid putting the polite clause before the plain form clause.
 
-<!-- grammar-card: {"rule":"でした puts a noun predicate into the polite past","hint":"birthday","example":"昨日はペットのハムスターの___でした。","answer":"誕生日","explanation":"誕生日でした states politely that yesterday was the hamster's birthday."} -->
+<!-- grammar-card: {"id":"deshita-clause-style","kind":"concept","format":"qa","priority":"optional","sourceSection":"In the Middle of a Sentence","rule":"A plain past reason clause can precede a polite past main clause","example":"Does 誕生日だったから conflict with a main clause ending in でした?","answer":"No. The final polite ending determines the overall style.","explanation":"Both clauses can also be polite. A polite reason followed by an abrupt plain main clause is generally awkward in a neutral explanation, though context may motivate a style shift."} -->
 
 ## Beyond the Basics
 
@@ -113,6 +124,8 @@ When asking a question that ends in でした, you have two options. You can add
   - Was the hamster doing well?
 
 When か is used after the plain form だった, it can add a strong, assertive tone to the question. With でした though, か does not add any feeling of assertion. In fact, でしたか would be the preferred form in formal situations. でした with rising intonation does somehow feel softer than でしたか though, albeit not as formal.
+
+<!-- grammar-card: {"id":"deshita-question-style","kind":"concept","format":"qa","priority":"essential","sourceSection":"でした in Questions","rule":"でしたか is a neutral polite question, unlike potentially gruff plain だったか","example":"For a formal question, should 元気でしたか be avoided because か sounds gruff after だった?","answer":"No. でしたか is the appropriate formal polite option.","explanation":"でした with only a rise is also a question, often softer and less formal. The plain-form social nuance of だったか does not transfer automatically."} -->
 
 ### でした for the Non-Past
 
@@ -139,6 +152,10 @@ Similarly, you can use でした in questions that you feel are so silly, you sh
   - 今日、何日でした？
 
   - What day is it today?
+
+<!-- grammar-card: {"id":"deshita-recollection","kind":"concept","format":"qa","priority":"optional","sourceSection":"でした for the Non-Past","rule":"でした can politely mark recollection of current information or a sheepish reminder question","example":"Does コーヒー嫌いでした？ necessarily ask about a dislike that has ended?","answer":"No. It can ask for a reminder about the listener's current dislike, implying the speaker should have remembered.","explanation":"The past form can refer to prior knowledge rather than an ended state. でしたっけ makes the reminder flavor explicit, and polite でした addresses someone rather than just thinking aloud."} -->
+<!-- vocab-card: {"id":"vocab-kirai","word":"嫌い","reading":"きらい","meaning":"disliked; not fond of","priority":"optional","sourceSection":"でした for the Non-Past"} -->
+<!-- vocab-card: {"id":"vocab-nannichi","word":"何日","reading":"なんにち","meaning":"what day of the month; how many days","priority":"optional","sourceSection":"でした for the Non-Past"} -->
 
 The particle っけ is often added to this use of でした:
 
@@ -173,6 +190,9 @@ Verbs:
 > 
 
 It can be especially hard to remember that い-adjectives take 〜かった for past tense rather than でした, since they still take です for politeness. Just try to remember that でした should only be used to mark a word as past tense if it cannot do it on it’s own.
+
+<!-- grammar-card: {"id":"deshita-i-adjective-past","kind":"rule","format":"cloze","priority":"essential","sourceSection":"With Past Tense い-adjectives or Verbs","rule":"An い-adjective takes its own past form, never でした","hint":"美味しい, past","example":"美味し___です。","answer":"かった","explanation":"美味しかったです is correct: the adjective supplies past tense and です supplies politeness. Do not directly attach でした to the adjective."} -->
+<!-- grammar-card: {"id":"deshita-affirmative-verb","kind":"rule","format":"cloze","priority":"essential","sourceSection":"With Past Tense い-adjectives or Verbs","rule":"An affirmative verb uses its own polite past conjugation rather than directly taking でした","example":"食べ___。 (ate; polite affirmative)","answer":"ました","explanation":"Use 食べました. 食べるでした is not grammatical; the special ませんでした pattern is a polite negative."} -->
 
 ---
 
@@ -232,8 +252,6 @@ by 定延 利之
 <!-- quiz: {"type":"multiple-choice","question":"What does \"ハムスターの誕生日会は**素敵**でした。\" mean?","options":["The hamster’s birthday party was wonderful.","Yesterday was my hamster’s birthday.","The hamster did not eat cake.","Because it was her birthday, the hamster should have eaten cake."],"answer":0} -->
 
 <!-- quiz: {"type":"multiple-choice","question":"What does \"ハムスターはケーキを**食べません**でした。\" mean?","options":["The hamster did not eat cake.","Yesterday was my hamster’s birthday.","The hamster’s birthday party was wonderful.","Because it was her birthday, the hamster should have eaten cake."],"answer":0} -->
-
-<!-- grammar-card: {"rule":"An い-adjective takes its own past form, never でした","hint":"美味しい, past","example":"美味し___です。","answer":"かった","explanation":"美味しかったです is correct; 美味しいでした is not a possible form."} -->
 
 ## Sources
 

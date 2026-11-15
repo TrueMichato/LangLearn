@@ -1,6 +1,8 @@
 # Reflexive Verbs (Verbos Reflexivos)
 
-Reflexive verbs are actions that the subject performs on themselves. In Portuguese, they're formed with reflexive pronouns — small words like **me**, **se**, and **nos** that indicate the action reflects back on the subject. You use reflexive verbs constantly in daily life: getting up, getting dressed, washing yourself, and even remembering things.
+<!-- vocab-inventory: {"mode":"explicit"} -->
+
+Reflexive verbs can describe actions that the subject performs on themselves, as in washing oneself. Portuguese uses **me**, **se**, and **nos** both for these literal reflexive actions and for pronominal verbs such as **se lembrar** (to remember), which do not literally mean acting on oneself.
 
 ## Reflexive Pronouns
 
@@ -15,9 +17,14 @@ In Brazilian Portuguese, the reflexive pronouns are:
 
 > **Brazilian Portuguese tip:** In everyday speech, the reflexive pronoun usually comes **before** the verb. This is different from European Portuguese, where it often comes after.
 
+<!-- grammar-card: {"id":"reflexive-eu","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Reflexive Pronouns","rule":"Eu takes reflexive me","example":"Eu ___ levanto cedo. (I get up early.)","answer":"me","explanation":"The pronoun agrees with eu; você/ele/ela and vocês/eles/elas instead use se."} -->
+<!-- grammar-card: {"id":"reflexive-versus-pronominal","kind":"concept","format":"qa","priority":"essential","sourceSection":"Reflexive Verbs (Verbos Reflexivos)","rule":"Pronominal verbs do not all express a literal action on oneself","example":"Does se lembrar mean performing the act of remembering on oneself in the same literal way as se lavar?","answer":"No. Se lembrar is a pronominal construction meaning to remember; se lavar can literally mean washing oneself.","explanation":"The same pronoun forms serve several constructions, so retain the verb's lexical meaning."} -->
+
 ## Essential Reflexive Verbs
 
 ### Se levantar — To get up
+
+<!-- vocab-card: {"id":"vocab-se-levantar","word":"se levantar","meaning":"to get up","priority":"essential","sourceSection":"Se levantar — To get up"} -->
 
 - **Eu me levanto às sete horas** (eh-oo mee leh-van-too ahz seh-chee oh-rahz) — I get up at seven o'clock
 - **Ela se levanta cedo** (eh-lah see leh-van-tah seh-doo) — She gets up early
@@ -25,11 +32,16 @@ In Brazilian Portuguese, the reflexive pronouns are:
 
 ### Se lavar — To wash (oneself)
 
+<!-- vocab-card: {"id":"vocab-se-lavar","word":"se lavar","meaning":"to wash oneself","priority":"essential","sourceSection":"Se lavar — To wash (oneself)"} -->
+
 - **Eu me lavo antes de sair** (eh-oo mee lah-voo an-cheez jee sah-eer) — I wash (myself) before going out
 - **Ele se lava rápido** (eh-lee see lah-vah hah-pee-doo) — He washes himself quickly
 - **As crianças se lavam sozinhas** (ahz kree-an-sahz see lah-vang soh-zeen-yahz) — The children wash themselves on their own
 
 ### Se vestir — To get dressed
+
+<!-- vocab-card: {"id":"vocab-se-vestir","word":"se vestir","meaning":"to get dressed","priority":"optional","sourceSection":"Se vestir — To get dressed"} -->
+<!-- grammar-card: {"id":"vestir-eu","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Se vestir — To get dressed","rule":"Vestir has present eu form visto","example":"Eu me ___ em cinco minutos. (vestir; present)","answer":"visto","explanation":"The eu stem vowel changes: visto, while ela uses veste."} -->
 
 - **Eu me visto em cinco minutos** (eh-oo mee veesh-too eng seen-koo mee-noo-tooz) — I get dressed in five minutes
 - **Ela se veste muito bem** (eh-lah see vesh-chee mween-too beng) — She dresses very well
@@ -37,11 +49,16 @@ In Brazilian Portuguese, the reflexive pronouns are:
 
 ### Se deitar — To lie down / go to bed
 
+<!-- vocab-card: {"id":"vocab-se-deitar","word":"se deitar","meaning":"to lie down; to go to bed","priority":"optional","sourceSection":"Se deitar — To lie down / go to bed"} -->
+
 - **Eu me deito às onze** (eh-oo mee day-too ahz on-zee) — I go to bed at eleven
 - **As crianças se deitam cedo** (ahz kree-an-sahz see day-tang seh-doo) — The children go to bed early
 - **Ela se deitou no sofá** (eh-lah see day-toh noo soh-fah) — She lay down on the sofa
 
 ### Se sentir — To feel
+
+<!-- vocab-card: {"id":"vocab-se-sentir","word":"se sentir","meaning":"to feel (a state or condition)","priority":"optional","sourceSection":"Se sentir — To feel"} -->
+<!-- grammar-card: {"id":"sentir-eu","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Se sentir — To feel","rule":"Sentir has present eu form sinto","example":"Eu me ___ bem. (sentir; present)","answer":"sinto","explanation":"Eu uses sinto; ela uses sente and nós sentimos."} -->
 
 - **Eu me sinto bem** (eh-oo mee seen-too beng) — I feel good
 - **Ela se sente cansada** (eh-lah see sen-chee kan-sah-dah) — She feels tired
@@ -52,12 +69,19 @@ In Brazilian Portuguese, the reflexive pronouns are:
 
 ### Se lembrar — To remember
 
+<!-- vocab-card: {"id":"vocab-se-lembrar","word":"se lembrar","meaning":"to remember (with de before the remembered thing)","priority":"optional","sourceSection":"Se lembrar — To remember"} -->
+<!-- grammar-card: {"id":"lembrar-pronoun","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Se lembrar — To remember","rule":"The pronominal se lembrar construction uses me with eu","example":"Eu ___ lembro da minha infância (I remember my childhood)","answer":"me","explanation":"This pronominal remembering construction uses me; it is not literally an action performed on oneself.","legacyAliases":[{"rule":"Reflexive verbs indicate that the subject performs the action on themselves","example":"Eu ___ lembro da minha infância (I remember my childhood)"}]} -->
+<!-- grammar-card: {"id":"lembrar-de","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Se lembrar — To remember","rule":"Se lembrar takes de before the remembered thing","example":"Você se lembra ___ viagem? (de + aquela)","answer":"daquela","explanation":"De combines with aquela. Non-pronominal lembrar also has other constructions."} -->
+
 - **Eu me lembro da minha infância** (eh-oo mee len-broo dah meen-yah een-fan-see-ah) — I remember my childhood
 - **Você se lembra dele?** (voh-seh see len-brah deh-lee) — Do you remember him?
 - **Nós nos lembramos daquela viagem** (nohs nooz len-brah-mooz dah-keh-lah vee-ah-zheng) — We remember that trip
 - **Ela não se lembra de nada** (eh-lah now see len-brah jee nah-dah) — She doesn't remember anything
 
 ### Se esquecer — To forget
+
+<!-- vocab-card: {"id":"vocab-se-esquecer","word":"se esquecer","meaning":"to forget (with de before the forgotten thing)","priority":"optional","sourceSection":"Se esquecer — To forget"} -->
+<!-- grammar-card: {"id":"esquecer-de","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Se esquecer — To forget","rule":"Se esquecer takes de before its complement","example":"Ele se esquece ___ tudo. (of everything)","answer":"de","explanation":"The pronominal construction is esquecer-se de algo; spoken Brazilian placement gives se esquece de."} -->
 
 - **Eu me esqueci da reunião** (eh-oo mee esh-keh-see dah heh-oo-nee-ow) — I forgot about the meeting
 - **Ele se esquece de tudo** (eh-lee see esh-keh-see jee too-doo) — He forgets everything
@@ -72,6 +96,13 @@ In Brazilian Portuguese, the reflexive pronouns are:
 - **Se preparar** (to get ready): **Ela se prepara para sair** (eh-lah see preh-pah-rah pah-rah sah-eer) — She gets ready to go out
 - **Se acostumar** (to get used to): **Eu me acostumei com o calor** (eh-oo mee ah-kosh-too-may kong oo kah-lor) — I got used to the heat
 
+<!-- vocab-card: {"id":"vocab-se-chamar","word":"se chamar","meaning":"to be called; to be named","priority":"optional","sourceSection":"More Useful Reflexive Verbs"} -->
+<!-- vocab-card: {"id":"vocab-se-sentar","word":"se sentar","meaning":"to sit down","priority":"optional","sourceSection":"More Useful Reflexive Verbs"} -->
+<!-- vocab-card: {"id":"vocab-se-preocupar","word":"se preocupar","meaning":"to worry","priority":"optional","sourceSection":"More Useful Reflexive Verbs"} -->
+<!-- vocab-card: {"id":"vocab-se-interessar","word":"se interessar","meaning":"to be interested (with por)","priority":"optional","sourceSection":"More Useful Reflexive Verbs"} -->
+<!-- vocab-card: {"id":"vocab-se-preparar","word":"se preparar","meaning":"to get ready; to prepare oneself","priority":"optional","sourceSection":"More Useful Reflexive Verbs"} -->
+<!-- vocab-card: {"id":"vocab-se-acostumar","word":"se acostumar","meaning":"to get used to (with com in this example)","priority":"optional","sourceSection":"More Useful Reflexive Verbs"} -->
+<!-- grammar-card: {"id":"interessar-por","kind":"rule","format":"cloze","priority":"optional","sourceSection":"More Useful Reflexive Verbs","rule":"Se interessar uses por for the object of interest","example":"Eu me interesso ___ música.","answer":"por","explanation":"The taught construction is interessar-se por algo."} -->
 <!-- quiz: {"type":"multiple-choice","question":"Which reflexive pronoun goes with 'nós'?","options":["me","se","nos","te"],"answer":2} -->
 
 ## Pronoun Placement in Brazilian Portuguese
@@ -80,22 +111,27 @@ In Brazilian Portuguese, the reflexive pronoun almost always comes **before** th
 
 ### Standard (spoken) position — Before the verb:
 
+<!-- grammar-card: {"id":"spoken-reflexive-placement","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Standard (spoken) position — Before the verb:","rule":"In Brazilian Portuguese, reflexive pronouns go BEFORE the verb in everyday speech","example":"Ela ___ veste rápido (gets dressed quickly)","answer":"se","explanation":"This is the common Brazilian spoken position; other varieties and formal constructions can use enclisis."} -->
+
 - **Eu me levanto cedo** — I get up early
 - **Ela se veste rápido** — She gets dressed quickly
 - **Nós nos sentamos aqui** — We sat down here
 
 ### After the verb — In formal writing and with certain constructions:
 
+<!-- grammar-card: {"id":"formal-reflexive-enclisis","kind":"concept","format":"qa","priority":"optional","sourceSection":"After the verb — In formal writing and with certain constructions:","rule":"Enclisis attaches a reflexive pronoun after the verb with a hyphen","example":"How is the reflexive pronoun attached in formal Levantei-me às seis?","answer":"After the verb with a hyphen: levantei-me.","explanation":"Compare everyday Brazilian Eu me levantei; placement depends on register and construction."} -->
+
 - **Levantei-me às seis** — I got up at six (formal)
 - **Sente-se, por favor** — Sit down, please (polite command)
 - **Preparou-se para a entrevista** — He/She prepared for the interview (formal)
 
-### After infinitives — Common in both speech and writing:
+### With infinitives — Common Brazilian preverbal placement:
 
 - **Eu preciso me levantar** (eh-oo preh-see-zoo mee leh-van-tar) — I need to get up
 - **Ela vai se vestir** (eh-lah vah-ee see vesh-cheer) — She's going to get dressed
 - **Vamos nos preparar** (vah-mooz nooz preh-pah-rar) — Let's get ready
 
+<!-- grammar-card: {"id":"infinitive-placement","kind":"concept","format":"qa","priority":"optional","sourceSection":"With infinitives — Common Brazilian preverbal placement:","rule":"A reflexive pronoun commonly precedes the infinitive in Brazilian speech","example":"Where is me placed in Eu preciso me levantar?","answer":"Immediately before the infinitive levantar.","explanation":"It follows preciso but precedes levantar; it is not attached after the infinitive."} -->
 > **Practical rule for learners:** In daily Brazilian Portuguese, just put the pronoun before the verb. You'll sound natural and be understood perfectly.
 
 ## Reflexive vs. Non-Reflexive
@@ -116,6 +152,7 @@ Many verbs can be used both reflexively and non-reflexively, with different mean
 - **Ela vestiu a filha** (eh-lah vesh-chee-oo ah feel-yah) — She dressed her daughter
 - **Ela se vestiu** (eh-lah see vesh-chee-oo) — She got dressed
 
+<!-- grammar-card: {"id":"reflexive-transitive-contrast","kind":"concept","format":"qa","priority":"essential","sourceSection":"Reflexive vs. Non-Reflexive","rule":"Adding a reflexive pronoun can change who receives the action","example":"How does Ela vestiu a filha differ from Ela se vestiu?","answer":"She dressed her daughter versus she got dressed herself.","explanation":"Compare lavar a roupa with se lavar; the non-reflexive action has a separate object."} -->
 <!-- quiz: {"type":"multiple-choice","question":"What is the difference between 'lavar' and 'se lavar'?","options":["They mean the same thing","'Lavar' is past tense, 'se lavar' is present","'Lavar' = to wash something, 'se lavar' = to wash oneself","'Se lavar' is more formal"],"answer":2} -->
 
 ## Reciprocal Usage
@@ -133,13 +170,10 @@ Reflexive pronouns can also express reciprocal actions — when two or more peop
 > - **Ela se lava** — She washes herself (reflexive — one person)
 > - **Eles se abraçam** — They hug each other (reciprocal — two or more people)
 
+<!-- grammar-card: {"id":"reciprocal-interpretation","kind":"concept","format":"qa","priority":"optional","sourceSection":"Reciprocal Usage","rule":"Plural reflexive forms can be reciprocal depending on context","example":"In the reciprocal reading of Eles se abraçam, who hugs whom?","answer":"They hug each other.","explanation":"The plural pronoun alone does not force reciprocity; context distinguishes each other from themselves."} -->
 <!-- quiz: {"type":"multiple-choice","question":"What does 'Eles se amam' mean?","options":["They love themselves","They love each other","They loved themselves","He loves himself"],"answer":1} -->
 
-<!-- grammar-card: {"rule":"In Brazilian Portuguese, reflexive pronouns go BEFORE the verb in everyday speech","hint":"Eu ME levanto, Ela SE veste, Nós NOS sentamos","example":"Ela ___ veste rápido (gets dressed quickly)","answer":"se","explanation":"In Brazilian Portuguese, the reflexive pronoun 'se' goes before the verb in normal speech: 'Ela se veste.'"} -->
-
-<!-- grammar-card: {"rule":"Reflexive verbs indicate that the subject performs the action on themselves","hint":"se lavar = to wash ONESELF, se vestir = to dress ONESELF","example":"Eu ___ lembro da minha infância (I remember my childhood)","answer":"me","explanation":"'Se lembrar' is reflexive — the 'eu' form uses 'me': 'Eu me lembro.' The action of remembering reflects back on the subject."} -->
-
-<!-- grammar-card: {"rule":"Reflexive pronouns with plural subjects can indicate reciprocal actions (each other)","hint":"Eles se amam = They love EACH OTHER","example":"Nós ___ conhecemos na escola (We met each other at school)","answer":"nos","explanation":"With 'nós,' the reflexive pronoun is 'nos.' Here it has a reciprocal meaning: we met each other. Context makes this clear."} -->
+<!-- grammar-card: {"id":"reciprocal-nos","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Reciprocal Usage","rule":"Reflexive pronouns with plural subjects can indicate reciprocal actions (each other)","example":"Nós ___ conhecemos na escola (We met each other at school)","answer":"nos","explanation":"Nós takes nos; this context supplies the reciprocal reading met each other."} -->
 
 ## Sources
 

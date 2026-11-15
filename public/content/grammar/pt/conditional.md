@@ -1,8 +1,13 @@
 # Conditional (Futuro do Pretérito)
 
+<!-- vocab-inventory: {"mode":"explicit"} -->
+
 The conditional mood in Portuguese — called **futuro do pretérito** (literally "future of the past") — expresses hypothetical situations, polite requests, wishes, and what would happen under certain conditions. It's equivalent to "would" in English: "I would go," "she would like," "we would buy."
 
 ## Regular Conjugation
+
+<!-- grammar-card: {"id":"conditional-regular","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Regular Conjugation","rule":"The conditional (futuro do pretérito) adds -ia, -ia, -íamos, -iam to the full infinitive","example":"Nós ___ juntos se tivéssemos tempo (viajar)","answer":"viajaríamos","explanation":"Add -íamos to the full infinitive for nós in the conditional."} -->
+<!-- grammar-card: {"id":"conditional-singular-syncretism","kind":"concept","format":"qa","priority":"optional","sourceSection":"Regular Conjugation","rule":"Eu and você share the singular conditional ending","example":"Do eu and você use different conditional forms of falar?","answer":"No. Both use falaria; the subject or context identifies the person.","explanation":"The conditional singular forms taught here share -ia, while nós uses -íamos and eles uses -iam."} -->
 
 Like the futuro simples, the conditional adds endings to the **full infinitive**. The endings are the same for all verb groups (-ar, -er, -ir):
 
@@ -21,6 +26,10 @@ Like the futuro simples, the conditional adds endings to the **full infinitive**
 - **Eles comprariam a casa** (eh-leez kon-prah-ree-ang ah kah-zah) — They would buy the house
 
 ## Polite Requests: Eu Gostaria
+
+<!-- grammar-card: {"id":"polite-gostaria","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Polite Requests: Eu Gostaria","rule":"The conditional of 'gostar' (gostaria) is the standard polite form for 'I would like'","example":"Eu ___ de fazer uma pergunta (I would like to ask a question)","answer":"gostaria","explanation":"Gostaria de + noun or infinitive is a conventional polite request construction."} -->
+<!-- grammar-card: {"id":"polite-poderia","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Polite Requests: Eu Gostaria","rule":"Conditional poder softens a request","example":"Você ___ me ajudar? (Could you help me?)","answer":"poderia","explanation":"The conditional poderia makes the request more tentative."} -->
+<!-- vocab-card: {"id":"vocab-gostar","word":"gostar de","meaning":"to like","priority":"optional","sourceSection":"Polite Requests: Eu Gostaria"} -->
 
 One of the most common uses of the conditional is making polite requests. **Gostaria** (would like) is essential for everyday politeness:
 
@@ -44,6 +53,8 @@ The conditional is used for things that would happen under certain conditions, o
 
 ### Se + Imperfeito do Subjuntivo + Conditional
 
+<!-- grammar-card: {"id":"conditional-if-clause","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Se + Imperfeito do Subjuntivo + Conditional","rule":"Hypothetical conditions use: se + imperfeito do subjuntivo + conditional","example":"Se eu ___ você, eu aceitaria o emprego (ser)","answer":"fosse","explanation":"A hypothetical se clause uses the imperfect subjunctive; its result can use the conditional."} -->
+
 - **Se eu tivesse dinheiro, eu compraria uma casa** (see eh-oo chee-veh-see jeen-yay-roo eh-oo kon-prah-ree-ah oo-mah kah-zah) — If I had money, I would buy a house
 - **Se eu pudesse, eu iria para a praia** (see eh-oo poo-deh-see eh-oo ee-ree-ah pah-rah ah prah-yah) — If I could, I would go to the beach
 - **Se ele estudasse mais, passaria na prova** (see eh-lee esh-too-dah-see mahyz pah-sah-ree-ah nah proh-vah) — If he studied more, he would pass the test
@@ -53,6 +64,8 @@ The conditional is used for things that would happen under certain conditions, o
 > **Important pattern:** The "if" clause uses the **imperfeito do subjuntivo** (se eu tivesse, se eu pudesse), and the result clause uses the **conditional** (compraria, iria).
 
 ## Wishes and Desires
+
+<!-- grammar-card: {"id":"conditional-wish","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Wishes and Desires","rule":"The conditional can express imagined desires","example":"Eu ___ morar na praia. (adorar; would love)","answer":"adoraria","explanation":"The conditional can express something the speaker would love to do, without asserting it as fact."} -->
 
 The conditional expresses what you wish were true:
 
@@ -65,9 +78,11 @@ The conditional expresses what you wish were true:
 
 ## Irregular Verbs
 
-The same three verbs that are irregular in the futuro simples are also irregular in the conditional:
+The same three basic shortened stems from the futuro simples occur in the conditional. Related compounds can inherit them too:
 
 ### Fazer (to do/make) → far-
+
+<!-- grammar-card: {"id":"conditional-fazer","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Fazer (to do/make) → far-","rule":"Fazer uses far- in the conditional","example":"O que você ___? (fazer; would do)","answer":"faria","explanation":"Fazer uses far- in both the simple future and conditional: faria."} -->
 
 | Pronoun | Conjugation |
 |---------|-------------|
@@ -81,6 +96,8 @@ The same three verbs that are irregular in the futuro simples are also irregular
 
 ### Dizer (to say) → dir-
 
+<!-- grammar-card: {"id":"conditional-dizer","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Dizer (to say) → dir-","rule":"Dizer uses dir- in the conditional","example":"Eu não ___ isso. (dizer; would say)","answer":"diria","explanation":"Dizer uses dir- in the conditional: diria."} -->
+
 | Pronoun | Conjugation |
 |---------|-------------|
 | eu | diria |
@@ -92,6 +109,8 @@ The same three verbs that are irregular in the futuro simples are also irregular
 - **Ele diria a mesma coisa** (eh-lee jee-ree-ah ah mez-mah koy-zah) — He would say the same thing
 
 ### Trazer (to bring) → trar-
+
+<!-- grammar-card: {"id":"conditional-trazer","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Trazer (to bring) → trar-","rule":"Trazer uses trar- in the conditional","example":"Eles ___ os documentos. (trazer; would bring)","answer":"trariam","explanation":"Trazer uses trar- plus the conditional plural ending -iam."} -->
 
 | Pronoun | Conjugation |
 |---------|-------------|
@@ -107,6 +126,8 @@ The same three verbs that are irregular in the futuro simples are also irregular
 
 ## Conditional in Reported Speech
 
+<!-- grammar-card: {"id":"conditional-reported-future","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Conditional in Reported Speech","rule":"The conditional can locate a future relative to a past reporting moment","example":"Ele disse que ___. (vir; would come)","answer":"viria","explanation":"The conditional can express a future event viewed from a past reporting time."} -->
+
 The conditional is also used to report what someone said they would do (indirect speech):
 
 - **Ele disse que viria** (eh-lee jee-see kee vee-ree-ah) — He said he would come
@@ -116,6 +137,11 @@ The conditional is also used to report what someone said they would do (indirect
 
 ## Common Expressions with the Conditional
 
+<!-- vocab-card: {"id":"vocab-sentido","word":"fazer sentido","meaning":"to make sense","priority":"optional","sourceSection":"Common Expressions with the Conditional"} -->
+<!-- vocab-card: {"id":"vocab-pena","word":"valer a pena","meaning":"to be worth it","priority":"optional","sourceSection":"Common Expressions with the Conditional"} -->
+<!-- vocab-card: {"id":"vocab-eu-diria","word":"eu diria que sim","meaning":"I would say yes","priority":"optional","sourceSection":"Common Expressions with the Conditional"} -->
+<!-- vocab-card: {"id":"vocab-seria-bom","word":"seria bom","meaning":"that would be good","priority":"optional","sourceSection":"Common Expressions with the Conditional"} -->
+
 - **Eu diria que sim** (eh-oo jee-ree-ah kee seeng) — I would say yes
 - **Seria bom** (seh-ree-ah bong) — That would be good
 - **Não faria sentido** (now fah-ree-ah sen-chee-doo) — That wouldn't make sense
@@ -123,12 +149,6 @@ The conditional is also used to report what someone said they would do (indirect
 - **Eu no seu lugar não faria isso** (eh-oo noo seh-oo loo-gar now fah-ree-ah ee-soo) — In your place, I wouldn't do that
 
 <!-- quiz: {"type":"multiple-choice","question":"Which sentence correctly uses the conditional for a polite request?","options":["Eu quero um café","Eu quereria um café","Você poderia me ajudar?","Você pode me ajudar?"],"answer":2} -->
-
-<!-- grammar-card: {"rule":"The conditional (futuro do pretérito) adds -ia, -ia, -íamos, -iam to the full infinitive","hint":"falar + ia = falaria, comer + ia = comeria","example":"Nós ___ juntos se tivéssemos tempo (viajar)","answer":"viajaríamos","explanation":"Add -íamos to the full infinitive 'viajar': viajaríamos. The conditional expresses what would happen in a hypothetical situation."} -->
-
-<!-- grammar-card: {"rule":"Hypothetical conditions use: se + imperfeito do subjuntivo + conditional","hint":"Se eu tivesse... eu compraria... (If I had... I would buy...)","example":"Se eu ___ você, eu aceitaria o emprego (ser)","answer":"fosse","explanation":"The 'if' clause uses the imperfeito do subjuntivo: 'se eu fosse' (if I were). The result clause uses the conditional: 'aceitaria' (would accept)."} -->
-
-<!-- grammar-card: {"rule":"The conditional of 'gostar' (gostaria) is the standard polite form for 'I would like'","hint":"Eu gostaria de + noun/infinitive","example":"Eu ___ de fazer uma pergunta (I would like to ask a question)","answer":"gostaria","explanation":"'Gostaria' (would like) is the conditional of 'gostar.' It's the standard polite way to make requests: 'Eu gostaria de + infinitive.'"} -->
 
 ## Sources
 

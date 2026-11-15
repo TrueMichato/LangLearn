@@ -1,5 +1,7 @@
 # Emphasis (at-tawkīd): lexical & with inna/la-
 
+<!-- vocab-inventory: {"mode":"explicit"} -->
+
 Arabic can strengthen a statement with repeated wording, special confirming nouns, and particles such as إِنَّ (inna) and لَـ (la-). The goal is not only volume; it tells the listener that the statement is firm.
 
 ## Lexical emphasis
@@ -12,6 +14,12 @@ Tawkīd lafẓī repeats a word or phrase. Tawkīd maʿnawī uses confirming wor
 | nafs | جَاءَ المُدِيرُ نَفْسُهُ (jāʾa al-mudīru nafsuhu) | the director himself came |
 | kull | حَضَرَ الطُّلَّابُ كُلُّهُمْ (ḥaḍara aṭ-ṭullābu kulluhum) | all the students attended |
 
+<!-- vocab-card: {"id":"vocab-nafs","word":"نَفْسٌ","reading":"nafsun","meaning":"self","priority":"essential","sourceSection":"Lexical emphasis"} -->
+<!-- vocab-card: {"id":"vocab-ayn","word":"عَيْنٌ","reading":"ʿaynun","meaning":"very same; emphatic use","priority":"optional","sourceSection":"Lexical emphasis"} -->
+<!-- vocab-card: {"id":"vocab-kull","word":"كُلٌّ","reading":"kullun","meaning":"all; totality","priority":"optional","sourceSection":"Lexical emphasis"} -->
+<!-- vocab-card: {"id":"vocab-jami","word":"جَمِيعٌ","reading":"jamīʿun","meaning":"all together; all","priority":"optional","sourceSection":"Lexical emphasis"} -->
+<!-- grammar-card: {"id":"two-emphasis-types","kind":"concept","format":"qa","priority":"essential","sourceSection":"Lexical emphasis","rule":"Repetition and confirming nouns are different methods of emphasis.","example":"How do lafẓī and maʿnawī emphasis differ?","answer":"Lafẓī repeats wording; maʿnawī uses confirming words such as self, very same or all.","explanation":"نَعَمْ نَعَمْ repeats a word; نَفْسُهُ and كُلُّهُمْ confirm the identity or totality of a preceding noun."} -->
+
 <!-- quiz: {"type":"multiple-choice","question":"Which sentence uses maʿnawī emphasis with نَفْسُهُ?","options":["جَاءَ المُدِيرُ نَفْسُهُ (jāʾa al-mudīru nafsuhu)","دَخَلَ فَجَلَسَ (dakhala fa-jalasa)","لَيْسَ البَيْتُ كَبِيرًا (laysa al-baytu kabīran)","مَنْ يَدْرُسْ يَنْجَحْ (man yadrus yanjaḥ)"],"answer":0} -->
 
 ## Agreement of confirming words
@@ -22,7 +30,9 @@ Words such as نَفْسٌ (nafsun), عَيْنٌ (ʿaynun), and كُلٌّ (kul
 - رَأَيْتُ المُعَلِّمَةَ نَفْسَهَا (raʾaytu al-muʿallimata nafsahā) — I saw the teacher herself.
 - سَلَّمْتُ عَلَى المُعَلِّمَةِ نَفْسِهَا (sallamtu ʿalā al-muʿallimati nafsihā) — I greeted the teacher herself.
 
-<!-- grammar-card: {"rule":"Confirming words such as نَفْسٌ (nafsun) follow the emphasized noun and carry a matching pronoun.","hint":"The pronoun points back to the noun being emphasized.","example":"Complete the emphasis: جَاءَتِ المُعَلِّمَةُ ___ (jāʾati al-muʿallimatu ___).","answer":"نَفْسُهَا (nafsuhā)","explanation":"herself — The feminine pronoun هَا (hā) refers back to المُعَلِّمَةُ (al-muʿallimatu), and the nominative ending follows the subject."} -->
+<!-- grammar-card: {"id":"herself-subject","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Agreement of confirming words","rule":"A confirming self-word follows its noun in case and carries a referring pronoun.","example":"Complete “the teacher herself came”: جَاءَتِ المُعَلِّمَةُ ___.","answer":"نَفْسُهَا","explanation":"Nafsuhā is nominative like the subject, and ـهَا refers to the female teacher.","legacyAliases":[{"rule":"Confirming words such as نَفْسٌ (nafsun) follow the emphasized noun and carry a matching pronoun.","example":"Complete the emphasis: جَاءَتِ المُعَلِّمَةُ ___ (jāʾati al-muʿallimatu ___)."}]} -->
+<!-- grammar-card: {"id":"herself-object","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Agreement of confirming words","rule":"Emphasis on an object retains accusative case.","example":"Complete “I saw the teacher herself”: رَأَيْتُ المُعَلِّمَةَ ___.","answer":"نَفْسَهَا","explanation":"Nafsahā follows accusative المُعَلِّمَةَ. Compare nominative نَفْسُهَا and genitive نَفْسِهَا in the other examples."} -->
+
 
 <!-- quiz: {"type":"multiple-choice","question":"Why is نَفْسَهَا accusative in رَأَيْتُ المُعَلِّمَةَ نَفْسَهَا (raʾaytu al-muʿallimata nafsahā)?","options":["It follows the case of the object المُعَلِّمَةَ","It is always genitive after any verb","It is a future marker","It replaces the subject"],"answer":0} -->
 
@@ -30,11 +40,13 @@ Words such as نَفْسٌ (nafsun), عَيْنٌ (ʿaynun), and كُلٌّ (kul
 
 إِنَّ (inna) adds certainty and makes its noun accusative. A lām may also enter the predicate: إِنَّ الطَّالِبَ لَمُجْتَهِدٌ (inna aṭ-ṭāliba la-mujtahidun) — indeed, the student is certainly hardworking. The lām is often called lām of emphasis; it strengthens the predicate without changing it into a verb.
 
-<!-- grammar-card: {"rule":"إِنَّ (inna) emphasizes a nominal sentence and puts its noun in the accusative.","hint":"After inna, expect naṣb on the noun.","example":"Complete: إِنَّ الطَّالِبَ ___ (inna aṭ-ṭāliba ___).","answer":"مُجْتَهِدٌ (mujtahidun)","explanation":"hardworking — The noun الطَّالِبَ is accusative after إِنَّ, while the predicate remains nominative."} -->
+<!-- vocab-card: {"id":"vocab-mujtahid","word":"مُجْتَهِدٌ","reading":"mujtahidun","meaning":"hardworking; diligent","priority":"optional","sourceSection":"إِنَّ and the emphatic lām"} -->
+<!-- grammar-card: {"id":"inna-predicate","kind":"rule","format":"cloze","priority":"essential","sourceSection":"إِنَّ and the emphatic lām","rule":"Inna changes its noun's case but leaves an ordinary adjectival predicate nominative.","example":"Complete “indeed, the student is hardworking”: إِنَّ الطَّالِبَ ___.","answer":"مُجْتَهِدٌ","explanation":"Mujtahidun remains nominative; الطَّالِبَ is accusative after إِنَّ.","legacyAliases":[{"rule":"إِنَّ (inna) emphasizes a nominal sentence and puts its noun in the accusative.","example":"Complete: إِنَّ الطَّالِبَ ___ (inna aṭ-ṭāliba ___)."}]} -->
+
 
 <!-- quiz: {"type":"multiple-choice","question":"What does the lām add in إِنَّ الطَّالِبَ لَمُجْتَهِدٌ (inna aṭ-ṭāliba la-mujtahidun)?","options":["Extra emphasis on the predicate","A command meaning","A genitive preposition only","A question meaning"],"answer":0} -->
 
-<!-- grammar-card: {"rule":"إِنَّ plus لَـ can combine for strong confirmation: إِنَّ زَيْدًا لَصَادِقٌ (inna zaydan la-ṣādiqun).","hint":"Inna confirms; la- further stresses the predicate.","example":"Translate the emphasis: إِنَّ زَيْدًا لَصَادِقٌ (inna zaydan la-ṣādiqun).","answer":"Indeed, Zayd is certainly truthful.","explanation":"The particle إِنَّ marks certainty, and the lām before صَادِقٌ adds emphatic force."} -->
+<!-- grammar-card: {"id":"inna-lam-confirmation","kind":"concept","format":"qa","priority":"optional","sourceSection":"إِنَّ and the emphatic lām","rule":"إِنَّ plus لَـ can combine for strong confirmation: إِنَّ زَيْدًا لَصَادِقٌ (inna zaydan la-ṣādiqun).","example":"Translate the emphasis: إِنَّ زَيْدًا لَصَادِقٌ (inna zaydan la-ṣādiqun).","answer":"Indeed, Zayd is certainly truthful.","explanation":"The lām strengthens the nominal predicate; it is neither a command nor the preposition for, and it does not change the predicate into a verb."} -->
 
 ## Sources
 

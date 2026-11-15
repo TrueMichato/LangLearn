@@ -1,5 +1,7 @@
 # い-Adjectives — Overview
 
+<!-- vocab-inventory: {"mode":"explicit"} -->
+
 > **Source:** Content from [Tofugu](https://www.tofugu.com/japanese-grammar/i-adjective/). For personal study.
 
 Japanese い-Adjective 
@@ -16,6 +18,9 @@ Adjective Form
 
 The primary function of い-adjectives is to describe nouns. For example, a **big** cat is **大きい**猫, a **beautiful** painting is **美しい**絵, and an **interesting** book is **面白い**本. The 〜い ending that gives this type of adjective its name is just one of many possible endings. Each ending expresses a different kind of information, such as tense—present or past—and truth value—positive or negative. This is the major way in which they differ from な-adjectives, which rely on an additional word (だ or です) to show tense and truth information.
 
+<!-- vocab-card: {"id":"vocab-ookii","priority":"optional","sourceSection":"The Basics","word":"大きい","reading":"おおきい","meaning":"big"} -->
+<!-- vocab-card: {"id":"vocab-utsukushii","priority":"optional","sourceSection":"The Basics","word":"美しい","reading":"うつくしい","meaning":"beautiful"} -->
+
 ### い-Adjective Stem Form
 
 The first step to fully understanding い-adjectives is to be able to find the stem form. The stem form of an い-adjective is the part of the word that always stays the same, no matter what ending the adjective takes. It’s usually quite simple to find. You just remove the ending and what is left is the stem. Let’s take a look, using the い-adjective, 安い (cheap):
@@ -29,6 +34,9 @@ The first step to fully understanding い-adjectives is to be able to find the s
 > 安**くない**    →　安くない   →　安
 > 
 > 
+
+<!-- vocab-card: {"id":"vocab-yasui","priority":"optional","sourceSection":"い-Adjective Stem Form","word":"安い","reading":"やすい","meaning":"cheap; inexpensive"} -->
+<!-- grammar-card: {"id":"regular-stem","kind":"rule","format":"qa","priority":"optional","sourceSection":"い-Adjective Stem Form","rule":"Remove the final い of a dictionary-form い-adjective to find its stem","example":"What remains when you remove the dictionary ending from 安い (やすい)?","answer":"安 (やす).","explanation":"The stem is やす, not a standalone dictionary word; endings such as い, かった and くない attach to it."} -->
 
 ### A Few Tricky Stem Forms
 
@@ -48,7 +56,13 @@ The confusion arises when we remove the 〜い ending from 良い to find its st
 
 So, the stem form of いい is **よ**.
 
+<!-- vocab-card: {"id":"vocab-ii","priority":"essential","sourceSection":"良い","word":"いい","reading":"いい","meaning":"good"} -->
+<!-- grammar-card: {"id":"ii-readings","kind":"concept","format":"qa","priority":"essential","sourceSection":"良い","rule":"良い has two dictionary readings, but inflection uses よ","example":"How do the readings of 良い differ from the reading of 良かった?","answer":"良い can be いい or the more formal よい; 良かった is よかった, not いかった.","explanation":"Use the よ stem for the inflected forms of いい."} -->
+
 This applies to い-adjectives that include いい, such as かっこいい (cool), which comprises  格好(かっこう) (appearance) and いい (good). When かっこいい conjugates, don’t forget to use よ as the stem of いい. For example, the past tense form is かっこ**よ**かった.
+
+<!-- vocab-card: {"id":"vocab-kakkoii","priority":"optional","sourceSection":"良い","word":"かっこいい","reading":"かっこいい","meaning":"cool; good-looking"} -->
+<!-- grammar-card: {"id":"compound-ii-past","kind":"rule","format":"cloze","priority":"optional","sourceSection":"良い","rule":"The いい component of かっこいい also inflects with よ","example":"かっこいい → plain past: ___.","answer":"かっこよかった","explanation":"The compound preserves かっこ and changes いい to よかった."} -->
 
 #### かわいい
 
@@ -62,6 +76,9 @@ Unlike かっこいい, かわいい does not include いい, despite having two
 > 
 
 Making this mistake is かわいくない, so don’t do it! 😉
+
+<!-- vocab-card: {"id":"vocab-kawaii","priority":"optional","sourceSection":"かわいい","word":"かわいい","reading":"かわいい","meaning":"cute"} -->
+<!-- grammar-card: {"id":"kawaii-not-ii","kind":"rule","format":"cloze","priority":"essential","sourceSection":"かわいい","rule":"かわいい is regular, not a compound of いい","example":"かわいい → plain past: ___.","answer":"かわいかった","explanation":"Only the last い is replaced; the stem かわい stays intact."} -->
 
 Now that you know all about the stem form, let’s explore the three main い-adjective endings, 〜い, 〜かった, and 〜くない. There are others to learn as well, but these three are the most important to get a handle on first.
 
@@ -77,6 +94,9 @@ To show the present tense, い-adjectives end in 〜い. This indicates that we 
 
   - Tomorrow will be hot.
 
+<!-- vocab-card: {"id":"vocab-atsui","priority":"optional","sourceSection":"Present Tense 〜い","word":"暑い","reading":"あつい","meaning":"hot (weather)"} -->
+<!-- grammar-card: {"id":"nonpast-time","kind":"concept","format":"qa","priority":"essential","sourceSection":"Present Tense 〜い","rule":"The plain い ending is nonpast, not exclusively present","example":"Why can 暑い describe both 今日 and 明日?","answer":"The same nonpast adjective form can describe the present or future; the time expression supplies the time reference.","explanation":"Japanese does not require a separate future adjective ending."} -->
+
 ### Negative 〜くない
 
 To show that something is negative, the ending 〜くない replaces 〜い. For example, 面白**い** (funny) becomes 面白**くない** (not-funny):
@@ -89,6 +109,8 @@ To show that something is negative, the ending 〜くない replaces 〜い. For
 
   - I don’t want to become a not-funny comedian.
 
+<!-- grammar-card: {"id":"negative-formation","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Negative 〜くない","rule":"Replace final い with くない to negate an い-adjective","example":"面白い → not interesting: 面白___.","answer":"くない","explanation":"面白くない (おもしろくない) is the negative, with the stem 面白 unchanged."} -->
+
 ### Past Tense 〜かった
 
 To show the past tense, い-adjectives end in 〜かった. For example, 寒**い** (cold) becomes 寒**かった** (was cold):
@@ -97,7 +119,8 @@ To show the past tense, い-adjectives end in 〜かった. For example, 寒**�
 
   - Yesterday was cold.
 
-<!-- grammar-card: {"rule":"An い-adjective can end a sentence by itself","hint":"interesting","example":"この本(ほん)は___。","answer":"面白(おもしろ)い","explanation":"面白い is a complete predicate — no verb is needed after it."} -->
+<!-- vocab-card: {"id":"vocab-samui","priority":"optional","sourceSection":"Past Tense 〜かった","word":"寒い","reading":"さむい","meaning":"cold (weather; feeling cold)"} -->
+<!-- grammar-card: {"id":"past-formation","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Past Tense 〜かった","rule":"い-adjectives form their past with かった","hint":"難しい, plain past","example":"昨日(きのう)のテストは難(むずか)___。","answer":"しかった","explanation":"難しい (むずかしい) replaces its final い with かった: 難しかった. No past copula is needed."} -->
 
 ## The Position of い-Adjectives in a Sentence
 
@@ -118,6 +141,10 @@ It’s very common in Japanese for the subject to be left out of the sentence if
   - おいしい！
 
   - (This) is delicious!
+
+<!-- vocab-card: {"id":"vocab-oishii","priority":"optional","sourceSection":"At the End of a Sentence","word":"おいしい","reading":"おいしい","meaning":"delicious"} -->
+<!-- vocab-card: {"id":"vocab-omoshiroi","priority":"optional","sourceSection":"At the End of a Sentence","word":"面白い","reading":"おもしろい","meaning":"interesting; funny"} -->
+<!-- grammar-card: {"id":"independent-predicate","kind":"rule","format":"cloze","priority":"essential","sourceSection":"At the End of a Sentence","rule":"An い-adjective can end a sentence by itself","hint":"interesting","example":"この本(ほん)は___。","answer":"面白(おもしろ)い","explanation":"面白い is a complete predicate, with no だ after it. The subject can also be omitted when context makes it clear."} -->
 
 Perhaps you’ve just taken the first bite of your mother’s cooking, and you say this to let her know how much you like it. There’s no need to say what is delicious, because it is clear from the situation. While English requires a dummy subject like "this" or "it" in similar situations, Japanese does not require a subject for a sentence to be grammatical.
 
@@ -143,7 +170,8 @@ These words joined together can be used anywhere that a noun can be used, such a
 
   - My father drives an old car.
 
-<!-- grammar-card: {"rule":"An い-adjective sits directly before the noun it modifies","hint":"old","example":"___映画(えいが)を見(み)ました。","answer":"古(ふる)い","explanation":"古い映画 needs no particle between the adjective and the noun."} -->
+<!-- vocab-card: {"id":"vocab-furui","priority":"optional","sourceSection":"Before a Noun","word":"古い","reading":"ふるい","meaning":"old (things)"} -->
+<!-- grammar-card: {"id":"direct-noun-modifier","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Before a Noun","rule":"An い-adjective sits directly before the noun it modifies","hint":"old","example":"___映画(えいが)を見(み)ました。","answer":"古(ふる)い","explanation":"古い映画 needs no linking な or の. The whole noun phrase can serve as a subject or object."} -->
 
 ## Beyond the Basics
 
@@ -157,6 +185,15 @@ Very occasionally, new い-adjectives can also be formed from loan words, such a
 
 Whether they are shortened versions of existing い-adjectives or brand new ones derived from loan words, these new い-adjectives are almost always considered colloquial or even slang.
 
+<!-- vocab-card: {"id":"vocab-emoi","priority":"optional","sourceSection":"Fun (and Useful) Facts about い-Adjectives","word":"エモい","reading":"えもい","meaning":"emotionally evocative; moving (slang)"} -->
+<!-- vocab-card: {"id":"vocab-kimoi","priority":"optional","sourceSection":"Fun (and Useful) Facts about い-Adjectives","word":"キモい","reading":"きもい","meaning":"gross; creepy (slang)"} -->
+<!-- vocab-card: {"id":"vocab-kimochiwarui","priority":"optional","sourceSection":"Fun (and Useful) Facts about い-Adjectives","word":"気持ち悪い","reading":"きもちわるい","meaning":"unpleasant; creepy; nauseating"} -->
+<!-- vocab-card: {"id":"vocab-muzui","priority":"optional","sourceSection":"Fun (and Useful) Facts about い-Adjectives","word":"ムズい","reading":"むずい","meaning":"difficult (colloquial shortening)"} -->
+<!-- vocab-card: {"id":"vocab-muzukashii","priority":"optional","sourceSection":"Fun (and Useful) Facts about い-Adjectives","word":"難しい","reading":"むずかしい","meaning":"difficult"} -->
+<!-- vocab-card: {"id":"vocab-hazui","priority":"optional","sourceSection":"Fun (and Useful) Facts about い-Adjectives","word":"ハズい","reading":"はずい","meaning":"embarrassing; embarrassed (slang)"} -->
+<!-- vocab-card: {"id":"vocab-hazukashii","priority":"optional","sourceSection":"Fun (and Useful) Facts about い-Adjectives","word":"恥ずかしい","reading":"はずかしい","meaning":"embarrassing; embarrassed"} -->
+<!-- grammar-card: {"id":"new-adjective-register","kind":"concept","format":"qa","priority":"optional","sourceSection":"Fun (and Useful) Facts about い-Adjectives","rule":"New and shortened い-adjectives are generally colloquial","example":"Are newer adjectives such as エモい and ムズい neutral choices for formal writing?","answer":"No. They are colloquial or slang; い-adjectives are mostly native words and new members are relatively rare.","explanation":"Their productive-looking ending does not make their register formal."} -->
+
 ### The Difference Between い-adjectives Ending in 〜い and 〜しい
 
 い-adjectives can be divided into two broad types: those ending in 〜い and those ending in 〜しい. い-adjectives with 〜い endingsーlike 暑い (hot), 高い (high/expensive), and 青い (blue)ーgenerally describe physical characteristics like temperature, size, and color.
@@ -165,9 +202,16 @@ Whether they are shortened versions of existing い-adjectives or brand new ones
 
 Some 〜しい adjectives, like 美しい (beautiful), do describe more external characteristics, but their original meaning is generally a personal emotion. In the case of 美しい, it originally described the tender emotion we feel towards someone or something cute, and the word later developed into its modern meaning of "beautiful."
 
+<!-- grammar-card: {"id":"shii-tendency","kind":"concept","format":"qa","priority":"optional","sourceSection":"The Difference Between い-adjectives Ending in 〜い and 〜しい","rule":"The physical versus emotive grouping is a tendency, not a conjugation split","example":"Does the ending しい prove an adjective describes only an internal emotion?","answer":"No. It is a tendency; 美しい can describe external beauty, and both groups follow い-adjective conjugation.","explanation":"Do not turn this semantic observation into an absolute classification rule."} -->
+
+<!-- vocab-card: {"id":"vocab-takai","priority":"optional","sourceSection":"The Difference Between い-adjectives Ending in 〜い and 〜しい","word":"高い","reading":"たかい","meaning":"high; expensive"} -->
+<!-- vocab-card: {"id":"vocab-aoi","priority":"optional","sourceSection":"The Difference Between い-adjectives Ending in 〜い and 〜しい","word":"青い","reading":"あおい","meaning":"blue"} -->
+<!-- vocab-card: {"id":"vocab-kurushii","priority":"optional","sourceSection":"The Difference Between い-adjectives Ending in 〜い and 〜しい","word":"苦しい","reading":"くるしい","meaning":"painful; distressing"} -->
+<!-- vocab-card: {"id":"vocab-kanashii","priority":"optional","sourceSection":"The Difference Between い-adjectives Ending in 〜い and 〜しい","word":"悲しい","reading":"かなしい","meaning":"sad"} -->
+
 ### 〜しい adjectives and Corresponding Verbs
 
-Because 〜しい adjectives are personal and subjective, they are generally only appropriate for describing our own feelings. So we can say 楽しい when we're having fun, but not when we think someone else is having fun.
+When an adjective describes an inner feeling, a bare statement most naturally reports the speaker's own experience. This is a perspective issue, not a ban on all third-person uses or all 〜しい adjectives. To report someone else's apparent feelings, use evidence-based wording such as 〜そう, 〜がる, or an appropriate verb.
 
   - 形容詞の勉強、楽しい！
 
@@ -179,13 +223,19 @@ Many 〜しい adjectives have corresponding verbs, to allow us to talk about ho
 
   - Mami's having a great time studying い-adjectives, isn't she!
 
-Because the adjective itself describes our own emotions, we can't use the adjective in its original form to describe Mami's emotions. If we do this, as in the following example, it gives the meaning that it's the speaker who enjoys studying, rather than Mami:
+Without an evidential or reported-speech context, addressing Mami with the adjective in the following example naturally shares the speaker's own enjoyment rather than directly reporting Mami's private feelings:
 
   - マミさん、形容詞の勉強めっちゃ楽しいね！
 
   - Mami, studying い-adjectives is great fun, isn't it!
 
 It's worth noting that there are other ways to change い-adjectives so that we can use them for other people. The two main ways are 〜そう and 〜がる.
+
+<!-- vocab-card: {"id":"vocab-tanoshii","priority":"optional","sourceSection":"〜しい adjectives and Corresponding Verbs","word":"楽しい","reading":"たのしい","meaning":"fun; enjoyable"} -->
+<!-- vocab-card: {"id":"vocab-tanoshimu","priority":"optional","sourceSection":"〜しい adjectives and Corresponding Verbs","word":"楽しむ","reading":"たのしむ","meaning":"to enjoy; to have fun"} -->
+<!-- vocab-card: {"id":"vocab-kurushimu","priority":"optional","sourceSection":"〜しい adjectives and Corresponding Verbs","word":"苦しむ","reading":"くるしむ","meaning":"to suffer"} -->
+<!-- vocab-card: {"id":"vocab-kanashimu","priority":"optional","sourceSection":"〜しい adjectives and Corresponding Verbs","word":"悲しむ","reading":"かなしむ","meaning":"to grieve; to feel sad"} -->
+<!-- grammar-card: {"id":"feeling-perspective","kind":"concept","format":"qa","priority":"essential","sourceSection":"〜しい adjectives and Corresponding Verbs","rule":"Inner-feeling predicates require attention to whose experience is accessible","example":"Why use 楽しんでいる or 楽しそう when reporting Mami's apparent enjoyment?","answer":"They describe her behavior or how she seems, rather than directly claiming access to her private feelings.","explanation":"This is not a categorical ban on third-person adjectives: reported speech and narrative context can license them."} -->
 
 ---
 
@@ -266,8 +316,6 @@ by Tofugu
 <!-- quiz: {"type":"multiple-choice","question":"What does \"明日は暑い。\" mean?","options":["Tomorrow will be hot.","Today is hot.","That comedian isn’t funny at all.","I don’t want to become a not-funny comedian."],"answer":0} -->
 
 <!-- quiz: {"type":"multiple-choice","question":"What does \"その芸人は全然面白くない。\" mean?","options":["That comedian isn’t funny at all.","Today is hot.","Tomorrow will be hot.","I don’t want to become a not-funny comedian."],"answer":0} -->
-
-<!-- grammar-card: {"rule":"い-adjectives form their past with かった","hint":"難しい, plain past","example":"昨日(きのう)のテストは難(むずか)___。","answer":"しかった","explanation":"難しい drops い and takes かった, without any help from です or でした."} -->
 
 ## Sources
 

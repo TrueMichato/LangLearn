@@ -1,5 +1,7 @@
 # 〜すぎる — Too Much
 
+<!-- vocab-inventory: {"mode":"explicit"} -->
+
 > **Source:** Content from [Tofugu](https://www.tofugu.com/japanese-grammar/sugiru/). For personal study.
 
 すぎる for "Too Much"
@@ -57,6 +59,10 @@ Can you see how it works? Let's go on to the next part of the scenario. After ea
 
 The English equivalent "too" as in "too much" tends to carry a negative connotation, but すぎる is a bit more neutral — it is commonly used to mean "too much" in a positive sense as well. When すぎる is used in a positive context, it usually means "so much" rather than "too much." We do this in English as well, such as when we see a lovely kitten and exclaim, "Awww she's TOO CUTE!" Japanese just does this a lot more often with すぎる.
 
+<!-- grammar-card: {"id":"excess-not-only-bad","kind":"concept","format":"qa","priority":"essential","sourceSection":"The Basics","rule":"すぎる exceeds a contextual norm and can also convey enthusiastic praise","example":"Does 安すぎる always complain that the low price is a problem?","answer":"No. It can enthusiastically praise a surprisingly low price, as well as literally mean too cheap.","explanation":"The suffix indicates exceeding an expected or desirable degree; context decides whether that excess is welcome."} -->
+<!-- vocab-card: {"id":"vocab-sugiru","word":"過ぎる","reading":"すぎる","meaning":"to pass; to go beyond","priority":"optional","sourceSection":"The Basics"} -->
+<!-- vocab-card: {"id":"vocab-otoku","word":"お得","reading":"おとく","meaning":"good value; a good deal","priority":"optional","sourceSection":"The Basics"} -->
+
 ### Conjugating Verbs and Adjectives to Take 〜すぎる
 
 #### Verbs
@@ -113,6 +119,24 @@ Here are some other examples:
 
 Apart from the verb types above, there are the irregular verbs 来る (to come) and する (to do). For these, you can just remember their stem forms are 来 and し respectively. Then, you can add すぎる to form  来(き)すぎる (to come too often/close) or しすぎる (to do too much).
 
+<!-- grammar-card: {"id":"romaji-stem-cue","kind":"concept","format":"qa","priority":"optional","sourceSection":"Verbs","rule":"The romaji u-to-i cue changes the vowel while retaining the final consonant","example":"What does the memory aid nomu → nomi tell you to do in kana before the excess suffix?","answer":"Change 飲む to 飲み, retaining the m sound while changing its vowel; do not replace む with standalone い.","explanation":"The cue maps final /mu/ to /mi/. Apply the same consonant-preserving vowel shift to godan stems such as 読む → 読み and 書く → 書き."} -->
+
+<!-- grammar-card: {"id":"godan-stem","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Verbs","rule":"Godan verbs use their い-row ます-stem before すぎる","example":"飲む → drink too much: ___すぎる。","answer":"飲み","explanation":"飲む (のむ) uses 飲み (のみ), not its dictionary or て-form. Other examples include 読み and 書き."} -->
+<!-- grammar-card: {"id":"ichidan-stem","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Verbs","rule":"Ichidan verbs drop る before すぎる","example":"寝る → sleep too much: ___すぎる。","answer":"寝","explanation":"The stem is 寝 (ね), giving 寝すぎる. 食べる, 見る, and 煮る behave in the same way."} -->
+<!-- grammar-card: {"id":"kuru-stem-reading","kind":"rule","format":"qa","priority":"optional","sourceSection":"Verbs","rule":"来る uses its き stem before すぎる","example":"Give the form meaning come too often from 来る, including its kana reading.","answer":"来すぎる (きすぎる).","explanation":"The irregular stem is read き, not く or こ. The other basic irregular verb gives しすぎる."} -->
+<!-- grammar-card: {"id":"suru-stem","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Verbs","rule":"する uses the irregular stem し before すぎる","example":"する → do too much: ___すぎる。","answer":"し","explanation":"Do not attach the suffix to the unchanged dictionary form."} -->
+<!-- vocab-card: {"id":"vocab-nomu","word":"飲む","reading":"のむ","meaning":"to drink","priority":"optional","sourceSection":"Verbs"} -->
+<!-- vocab-card: {"id":"vocab-neru","word":"寝る","reading":"ねる","meaning":"to sleep","priority":"optional","sourceSection":"Verbs"} -->
+<!-- vocab-card: {"id":"vocab-niru","word":"煮る","reading":"にる","meaning":"to boil; to simmer","priority":"optional","sourceSection":"Verbs"} -->
+<!-- vocab-card: {"id":"vocab-kuru","word":"来る","reading":"くる","meaning":"to come","priority":"optional","sourceSection":"Verbs"} -->
+<!-- vocab-card: {"id":"vocab-kau","word":"買う","reading":"かう","meaning":"to buy","priority":"optional","sourceSection":"Verbs"} -->
+<!-- vocab-card: {"id":"vocab-yomu","word":"読む","reading":"よむ","meaning":"to read","priority":"optional","sourceSection":"Verbs"} -->
+<!-- vocab-card: {"id":"vocab-kaku","word":"書く","reading":"かく","meaning":"to write","priority":"optional","sourceSection":"Verbs"} -->
+<!-- vocab-card: {"id":"vocab-hanasu","word":"話す","reading":"はなす","meaning":"to speak; to talk","priority":"optional","sourceSection":"Verbs"} -->
+<!-- vocab-card: {"id":"vocab-taberu","word":"食べる","reading":"たべる","meaning":"to eat","priority":"optional","sourceSection":"Verbs"} -->
+<!-- vocab-card: {"id":"vocab-miru","word":"見る","reading":"みる","meaning":"to see; to watch","priority":"optional","sourceSection":"Verbs"} -->
+<!-- vocab-card: {"id":"vocab-suru","word":"する","reading":"する","meaning":"to do","priority":"optional","sourceSection":"Verbs"} -->
+
 #### い adjectives
 
 To make い-adjectives take 〜すぎる, you simply remove the final い and add すぎる. So to say the weather is "too hot," you can replace the い of 暑い (hot) with すぎる and say 暑すぎる (too hot). Easy peasy, right?
@@ -122,26 +146,33 @@ Here are some other examples:
   
      冷(つめ)たい "cold"
     →
-    冷たい
+    冷た
     →
     冷たすぎる "too cold"
   
   
      臭(くさ)い "stinky"
     →
-    臭い
+    臭
     →
     臭すぎる "too stinky"
   
   
      良(よ)い "good"
     →
-    良い
+    良
     →
     良すぎる "too good"
   
 
 Note that 良い can be read either as よい or いい, but with every other ending besides 〜い, 良 is always read as よ in standard Japanese. So 良すぎる is pronounced よすぎる, not いすぎる.
+
+<!-- grammar-card: {"id":"i-adjective-stem","kind":"rule","format":"cloze","priority":"essential","sourceSection":"い adjectives","rule":"An い-adjective loses final い before すぎる","example":"暑い → too hot: 暑___。","answer":"すぎる","explanation":"Use 暑すぎる, not 暑いすぎる. The same stem formation gives 冷たすぎる and 臭すぎる."} -->
+<!-- grammar-card: {"id":"good-exception","kind":"rule","format":"qa","priority":"optional","sourceSection":"い adjectives","rule":"いい uses the よ stem without the さ found in よさそう","example":"Give the form meaning too good from いい, with its kana reading if written in kanji.","answer":"良すぎる (よすぎる).","explanation":"Use よすぎる, not いすぎる; do not copy the さ of appearance よさそう into this standard form."} -->
+<!-- vocab-card: {"id":"vocab-tsumetai","word":"冷たい","reading":"つめたい","meaning":"cold to the touch","priority":"optional","sourceSection":"い adjectives"} -->
+<!-- vocab-card: {"id":"vocab-kusai","word":"臭い","reading":"くさい","meaning":"smelly; stinky","priority":"optional","sourceSection":"い adjectives"} -->
+<!-- vocab-card: {"id":"vocab-yoi","word":"良い","reading":"よい","meaning":"good (also read いい)","priority":"optional","sourceSection":"い adjectives"} -->
+<!-- vocab-card: {"id":"vocab-atsui","word":"暑い","reading":"あつい","meaning":"hot (weather)","priority":"optional","sourceSection":"い adjectives"} -->
 
 #### なadjectives
 
@@ -164,6 +195,12 @@ Here are some other examples:
     →
     便利すぎる "too convenient"
   
+
+<!-- grammar-card: {"id":"na-adjective-stem","kind":"rule","format":"cloze","priority":"optional","sourceSection":"なadjectives","rule":"A な-adjective takes すぎる directly on its stem","example":"静か → too quiet: 静か___。","answer":"すぎる","explanation":"Do not insert attributive な or copular だ before the suffix."} -->
+<!-- vocab-card: {"id":"vocab-heta","word":"下手","reading":"へた","meaning":"unskilled; poor at something","priority":"optional","sourceSection":"なadjectives"} -->
+<!-- vocab-card: {"id":"vocab-benri","word":"便利","reading":"べんり","meaning":"convenient","priority":"optional","sourceSection":"なadjectives"} -->
+<!-- vocab-card: {"id":"vocab-shizuka","word":"静か","reading":"しずか","meaning":"quiet","priority":"optional","sourceSection":"なadjectives"} -->
+<!-- vocab-card: {"id":"vocab-yuumei","word":"有名","reading":"ゆうめい","meaning":"famous","priority":"optional","sourceSection":"なadjectives"} -->
 
 ### Conjugating 〜すぎる
 
@@ -199,9 +236,11 @@ Since 過ぎる is an ichidan verb, a.k.a. る-verb, 〜すぎる conjugates as 
     
   
 
+<!-- grammar-card: {"id":"suffix-past","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Conjugating 〜すぎる","rule":"The added すぎる conjugates as ichidan","example":"食べすぎる → polite past: 食べすぎ___。","answer":"ました","explanation":"Tense and politeness are carried by the suffix: 食べすぎた, 食べすぎました, 食べすぎない, and 食べすぎません."} -->
+
 ### 〜なさすぎる for "Not … At All"
 
-すぎる can also be used with the negative form of verbs and adjectives which end with 〜ない. In this case, you replace the final い with さ, and then attach すぎる as in なさすぎる.
+すぎる can also follow negative forms ending in 〜ない. The examples here replace the final い with さ, producing 〜なさすぎる. With negative verbs, 〜なすぎる is also used, so do not treat the inserted さ as the only possible pattern in every negative construction.
 
 For example, suppose you're watching stand-up comedy but don't find it amusing at all. To express how you feel, you can combine すぎる with the negative form of the い-adjective 面白い (funny), which is 面白くない (not funny), and say:
 
@@ -225,7 +264,9 @@ Let's take a look at a different scenario. Imagine you have a kid who isn't a ve
 
 In this example, it doesn't necessarily mean your kid won't eat vegetables at all. 〜なさすぎる suggests that you have a sort of baseline for not eating enough vegetables, and the amount of vegetables your child *doesn't eat* goes beyond that threshold. Again, this is a creative and amusing way of expressing how your child eats relatively few vegetables.
 
-<!-- grammar-card: {"rule":"なさすぎる says there is far too little of something","hint":"食べない + すぎる","example":"うちの子は野菜(やさい)を食べ___！","answer":"なさすぎる","explanation":"食べなさすぎる complains that the child eats nowhere near enough vegetables."} -->
+<!-- grammar-card: {"id":"negative-excess","kind":"rule","format":"cloze","priority":"optional","sourceSection":"〜なさすぎる for \"Not … At All\"","rule":"なさすぎる says there is far too little of something","hint":"Use the negative-excess pattern with inserted さ illustrated here.","example":"うちの子は野菜(やさい)を食べ___！","answer":"なさすぎる","explanation":"The complaint is that the child eats far too few vegetables, not necessarily zero. Negative verb なすぎる is also found."} -->
+<!-- grammar-card: {"id":"threshold-not-zero","kind":"concept","format":"qa","priority":"essential","sourceSection":"〜なさすぎる for \"Not … At All\"","rule":"Negative excess expresses insufficiency relative to a threshold, not necessarily total absence","example":"Does 野菜を食べなさすぎる prove the child eats no vegetables at all?","answer":"No. It can mean the child eats far too few relative to the speaker's expected amount.","explanation":"The expressive threshold judgment differs from a straightforward 全然〜ない denial."} -->
+<!-- vocab-card: {"id":"vocab-yasai","word":"野菜","reading":"やさい","meaning":"vegetables","priority":"optional","sourceSection":"〜なさすぎる for \"Not … At All\""} -->
 
 ## Beyond The Basics
 
@@ -253,6 +294,8 @@ These 〜すぎ  phrases can also describe that *someone* or *something* is too 
 
   - You always **eat too much**.
 
+<!-- grammar-card: {"id":"overeating-noun","kind":"rule","format":"cloze","priority":"optional","sourceSection":"〜すぎ For A Standalone Noun Phrase","rule":"The ます-stem plus すぎ makes a noun","hint":"Form the noun meaning overeating from 食べる.","example":"___は体に良くない。","answer":"食べすぎ","explanation":"The nominal expression can be the topic marked by は; this is a construction task, not a suffix saved as a dictionary word."} -->
+<!-- grammar-card: {"id":"overdrinking-noun","kind":"rule","format":"cloze","priority":"optional","sourceSection":"〜すぎ For A Standalone Noun Phrase","rule":"すぎる can be nominalised as すぎ","hint":"Form the noun meaning excessive drinking from 飲む.","example":"___で頭(あたま)が痛(いた)い。","answer":"飲みすぎ","explanation":"The nominal expression takes causal で: a headache from drinking too much."} -->
 #### 〜すぎです vs 〜すぎます
 
 Because 〜すぎ functions as a noun, you can add です to the end to make it polite. For example, if you also want to playfully tell a friendly superior that they overeat, you can replace だ with です to increase the politeness:
@@ -277,6 +320,8 @@ However, when 〜すぎる is used after an adjective, such as 暑い, they both
 
 Again, in this case, the meaning of the two versions is the same. Just keep in mind that the stem-form version 〜すぎです is often regarded as more informal and colloquial than the verb-conjugated version 〜すぎます.
 
+<!-- grammar-card: {"id":"noun-versus-verb-polite","kind":"concept","format":"qa","priority":"optional","sourceSection":"〜すぎです vs 〜すぎます","rule":"Nominal すぎです and verbal すぎます frame excess differently","example":"Why can both 食べすぎです and 食べすぎます be grammatical?","answer":"The first uses the noun-like state 食べすぎ with です; the second conjugates the verb 食べすぎる politely.","explanation":"The nominal form can assess a condition and often sounds more colloquial. With adjectives, both can describe the same excessive state."} -->
+
 ### 〜ても〜すぎることはない For "It's never too…"
 
 すぎる can also be seen in an idiomatic expression 〜ても〜すぎることはない to mean "it's never too…" For example, if you think you can never be too cautious when driving, you can use this pattern and say:
@@ -292,6 +337,9 @@ In this case, the pattern is used to convey "the more careful, the better." Let'
   - It's **never too soon** to respond to our clients' emails.
 
 Again, the pattern is used to convey "the sooner the better" to responding to clients.
+
+<!-- grammar-card: {"id":"no-upper-caution-limit","kind":"concept","format":"qa","priority":"optional","sourceSection":"〜ても〜すぎることはない For \"It's never too…\"","rule":"The idiom denies that greater caution would be excessive","example":"What does 注意しても、しすぎることはない encourage while driving?","answer":"Being as careful as possible: one cannot be too careful.","explanation":"It does not prohibit caution or claim that caution is lacking; the idiom says greater degree is welcome."} -->
+<!-- grammar-card: {"id":"literal-pass-compound","kind":"concept","format":"qa","priority":"optional","sourceSection":"The Basics","rule":"Some compounds retain the literal sense of passing beyond a point","example":"Why is 行き過ぎる often written with 過 in the destination example?","answer":"It retains the literal meaning of going past the intended destination, rather than only adding an abstract too much.","explanation":"The footnote qualifies the kana-writing tendency; kanji is not prohibited in suffixal uses either."} -->
 
   
 
@@ -366,10 +414,6 @@ pp. 545-549
 <!-- quiz: {"type":"multiple-choice","question":"What does \"安**すぎる**！\" mean?","options":["It's **SO** reasonable!","I ate **too much.**","It's **SUCH** a good deal!","It's **not** funny **at all**!"],"answer":0} -->
 
 <!-- quiz: {"type":"multiple-choice","question":"What does \"お得**すぎる**！\" mean?","options":["It's **SUCH** a good deal!","I ate **too much.**","It's **SO** reasonable!","It's **not** funny **at all**!"],"answer":0} -->
-
-<!-- grammar-card: {"rule":"The ます-stem plus すぎ makes a noun","hint":"食べる + すぎ","example":"___は体に良くない。","answer":"食べすぎ","explanation":"食べすぎ means overeating, and here it serves as the topic of the sentence."} -->
-
-<!-- grammar-card: {"rule":"すぎる can be nominalised as すぎ","hint":"飲む + すぎ","example":"___で頭(あたま)が痛(いた)い。","answer":"飲みすぎ","explanation":"飲みすぎ is the noun 'drinking too much', which is why it can take で."} -->
 
 ## Sources
 

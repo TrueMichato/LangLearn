@@ -1,5 +1,7 @@
 # は (wa) — Topic Marker
 
+<!-- vocab-inventory: {"mode":"explicit"} -->
+
 > **Source:** Content from [Tofugu](https://www.tofugu.com/japanese-grammar/particle-wa/). For personal study.
 
 Particle は: Topic Marker
@@ -19,6 +21,12 @@ The particle は is attached after a word (or a group of words) to show that it 
 In fact, は is like a spotlight, shining on the topic and leaving other potential topics in the dark. This is because は creates a nuance of contrast between the topic it picks out and other potential topics, which are left in the shadows, whether those other topics are mentioned or not.
 
 ### は as a Topic Marker
+
+<!-- grammar-card: {"id":"topic-comment-application","kind":"rule","format":"cloze","priority":"essential","sourceSection":"は as a Topic Marker","rule":"は marks the topic the rest of the sentence comments on","hint":"Introduce 私 as the topic.","example":"私___学生です。","answer":"は","explanation":"は presents 私 as what is being talked about; 学生です is the comment about it. Particle は is pronounced わ."} -->
+<!-- grammar-card: {"id":"topic-information-structure","kind":"concept","format":"qa","priority":"essential","sourceSection":"は as a Topic Marker","rule":"An identifiable topic provides a frame for the comment","example":"In 日本語はおもしろい, which part is presented as already identifiable, and where is the new information?","answer":"日本語 is the identifiable topic; おもしろい is the new comment about it.","explanation":"The speaker assumes the listener can identify Japanese. A topic can also be a time or a nominalized phrase, not just the person doing an action."} -->
+<!-- grammar-card: {"id":"spotlight-mnemonic","kind":"concept","format":"qa","priority":"optional","sourceSection":"は as a Topic Marker","rule":"The spotlight metaphor illustrates topic selection and possible contrast","example":"How does the spotlight image help explain the contrast associated with は?","answer":"It lights up the chosen topic while leaving possible alternative topics in the shadows.","explanation":"The alternatives need not be spoken. How strongly they are contrasted depends on context and intonation; not every は is a strong contrast."} -->
+<!-- vocab-card: {"id":"vocab-nihongo","word":"日本語","reading":"にほんご","meaning":"Japanese language","priority":"optional","sourceSection":"は as a Topic Marker"} -->
+<!-- vocab-card: {"id":"vocab-omoshiroi","word":"面白い","reading":"おもしろい","meaning":"interesting; entertaining","priority":"optional","sourceSection":"は as a Topic Marker"} -->
 
 In its most basic use, the particle は goes after a noun, or a group of words that works like a noun (a noun phrase) to show that this noun is the topic. It shines a spotlight on that noun, and tells us that it is the theme of our discourse. In terms of meaning, は is the rough equivalent of "as for" in English, but は is used far more frequently than "as for."
 
@@ -76,6 +84,10 @@ We'll go into this in a little more depth further down this page.
 
 ### は for Contrasting Two Topics
 
+<!-- grammar-card: {"id":"paired-topic-contrast","kind":"concept","format":"qa","priority":"essential","sourceSection":"は for Contrasting Two Topics","rule":"Repeated は can explicitly contrast two topics","example":"What contrast is made by 東京は物価が高いけど、田舎は物価が安い?","answer":"It contrasts Tokyo's high cost of living with the countryside's low cost of living.","explanation":"Each は sets up a separate frame. A second contrasted topic can instead be left implicit when context supplies it."} -->
+<!-- vocab-card: {"id":"vocab-bukka","word":"物価","reading":"ぶっか","meaning":"prices; cost of living","priority":"optional","sourceSection":"は for Contrasting Two Topics"} -->
+<!-- vocab-card: {"id":"vocab-inaka","word":"田舎","reading":"いなか","meaning":"countryside; rural area","priority":"optional","sourceSection":"は for Contrasting Two Topics"} -->
+
 You can also have two topics in a sentence, in which case the nuance of contrast is generally pretty strong:
 
   - 東京は物価が高いけど、田舎は物価が安い。
@@ -94,6 +106,8 @@ In this case, you'll often be able to guess the second topic from context or pri
 
 ### は with い-Adjectives
 
+<!-- grammar-card: {"id":"adjective-qualified-negative","kind":"rule","format":"cloze","priority":"optional","sourceSection":"は with い-Adjectives","rule":"は can qualify a negative い-adjective between く and ない","hint":"Add contrast: it is not difficult, but it does take time.","example":"難しく___ないけど、ただ時間がかかる。","answer":"は","explanation":"難しくはない denies difficulty while suggesting a qualification. The affirmative 難しくはある similarly concedes difficulty while leaving room for a different positive point."} -->
+
 は can also be added to the middle of the negative form of い-adjectives to add emphasis. So for example, if we want to say that something isn't difficult in a neutral way, we'd take the negative form of the adjective 難しい (difficult):
 
   - 難しくない。
@@ -106,7 +120,7 @@ If, however, we slip the particle は in between the く form of the adjective a
 
   - It's not (exactly) difficult.
 
-Here we add a nuance that while this thing is difficult, that's not the whole story. You can imagine the speaker might continue with something like:
+Here we add a nuance that while this thing is not difficult, that's not the whole story. You can imagine the speaker might continue with something like:
 
   - 難しくはないけど、ただ時間がかかる。
 
@@ -134,6 +148,10 @@ In this case, there is that same nuance that we don't have the whole story. Perh
 
 ### は with Nouns and な-Adjectives
 
+<!-- grammar-card: {"id":"noun-adjective-qualified-negative","kind":"rule","format":"cloze","priority":"optional","sourceSection":"は with Nouns and な-Adjectives","rule":"ではない can contrast a denied noun or な-adjective with another property","hint":"Not famous, but popular; add the contrasting particle.","example":"有名で___ないが、人気はある。","answer":"は","explanation":"は follows で in this negative predicate. It does not mean the person is famous; the following clause supplies the positive qualification."} -->
+<!-- vocab-card: {"id":"vocab-yuumei","word":"有名","reading":"ゆうめい","meaning":"famous; well-known","priority":"optional","sourceSection":"は with Nouns and な-Adjectives"} -->
+<!-- vocab-card: {"id":"vocab-ninki","word":"人気","reading":"にんき","meaning":"popularity","priority":"optional","sourceSection":"は with Nouns and な-Adjectives"} -->
+
 は can be also added to the middle of the negative form of nouns and な-adjective, to very similar effect. Here's an example with the な-adjective 有名 (famous):
 
   - 有名ではない。
@@ -153,6 +171,8 @@ And here's an example with a noun, and in a more polite form:
   - They're not (actually) a teacher, but they are really good at explaining things.
 
 ### は and Question Words
+
+<!-- grammar-card: {"id":"unknown-question-word","kind":"concept","format":"qa","priority":"essential","sourceSection":"は and Question Words","rule":"An unknown question-word referent is not normally a は topic","example":"Why does an ordinary question use 誰がいましたか rather than 誰はいましたか?","answer":"誰 asks for an unknown person, while は normally frames something the listener can already identify.","explanation":"Use the particle required by the question word's role, such as が or を. This is a restriction on ordinary unknown-reference questions, not a ban on every metalinguistic use of question words."} -->
 
 Apart from very specific circumstances, は cannot be used immediately after question words like 誰 (who), 何 (what), どこ (where), and so on. This is because — as we've already seen — the topic is always something that is in the listener's consciousness. The very nature of question words is that they are asking about unknown information. If we know, we wouldn't ask the question, right?
 
@@ -176,6 +196,8 @@ It's common to answer a question with は, though:
 Here, we've flipped around the answer to make Yamada-san our topic. Since Yamada-san is familiar from the context, it's okay to use them as the topic!
 
 ### は in Combination with Other Particles
+
+<!-- grammar-card: {"id":"topic-particle-combinations","kind":"concept","format":"qa","priority":"essential","sourceSection":"は in Combination with Other Particles","rule":"は replaces が and を but follows particles such as で and と","example":"When making a phrase the topic, what happens to が or を, compared with で or と?","answer":"は replaces が or を; it follows で or と, producing では or とは.","explanation":"Do not stack がは or をは in these ordinary topic constructions. Destination に can remain in には or sometimes be omitted before は; that omission is context-dependent and more casual."} -->
 
 は can be combined with some other particles to make compound particles. However, it cannot be combined with が, を or も:
 
@@ -247,6 +269,8 @@ The は in the second sentence above generally adds quite a bit of contrast here
 
 ### は for Contrast
 
+<!-- grammar-card: {"id":"object-topic-contrast","kind":"concept","format":"qa","priority":"optional","sourceSection":"は for Contrast","rule":"Topicalizing an object can make an unstated contrast salient","example":"What extra implication can お肉は食べない have compared with お肉を食べない?","answer":"It singles out meat as something not eaten, leaving other foods or drinks available for contrast.","explanation":"It need not specifically imply eating fish. Context, stress on the topic, or a pause after は can strengthen the contrast."} -->
+
 As we mentioned before, there's always a pinch of contrast with は, because we’re always saying “I don’t know about that other stuff outside this spotlight, but as for my topic…”. But as we've already seen, the strength of the contrast depends on certain factors, such as the nature of the topic, and (in speaking) how much the topic and は are stressed. Let's look at this in a little more detail.
 
 You remember how if は follows something that we wouldn’t expect to be the topic, the contrast is greater? Let's look at a few more examples of what we mean by this.
@@ -307,11 +331,11 @@ The feeling of contrast can also be increased with a pause after the は when sp
 
   - I don't eat meat (but…)
 
-<!-- grammar-card: {"rule":"は marks the topic the rest of the sentence comments on","hint":"topic particle","example":"私___学生です。","answer":"は","explanation":"は presents 私 as what is being talked about, and 学生です is the comment made about it."} -->
-
 ## Beyond The Basics
 
 ### は for Hesitating When Speaking
+
+<!-- grammar-card: {"id":"hesitation-topic","kind":"concept","format":"qa","priority":"optional","sourceSection":"は for Hesitating When Speaking","rule":"A topic followed by a pause can buy thinking time","example":"What conversational purpose does お寿司はね… serve before the speaker gives an answer?","answer":"It introduces sushi as the topic and buys time to think; ね is optional.","explanation":"The speaker can instead pause after お寿司は… without completing the comment immediately."} -->
 
 は is often used to buy time when speaking, to give us a chance to think about what we want to say. To do this, it is often combined with the particle ね. 
 
@@ -330,6 +354,8 @@ The feeling of contrast can also be increased with a pause after the は when sp
   - Hmm, sushi…
 
 ### When は is Replaced with a Comma
+
+<!-- grammar-card: {"id":"comma-softens-contrast","kind":"concept","format":"qa","priority":"optional","sourceSection":"When は is Replaced with a Comma","rule":"A pause can frame familiar information without the same explicit topic contrast","example":"How does 今年、日本に行くんです differ from 今年は日本に行くんです in this discussion?","answer":"The comma or spoken pause generally reduces the explicit contrast with other years.","explanation":"The trip is still this year. This is a contextual omission pattern, not a rule that punctuation can replace every は."} -->
 
 は can be replaced with a comma in writing. The comma has a similar effect to は, but any notion of comparison (or other nuance) is softened. This is very common with time phrases such as 来週 (next week), 先月 (last month), or 今年 (this year):
 
@@ -357,6 +383,8 @@ In speaking, you can simply pause where the comma is, and this generally creates
 
 ### は for Changing Scenes
 
+<!-- grammar-card: {"id":"reintroduced-topic-scene","kind":"concept","format":"qa","priority":"optional","sourceSection":"は for Changing Scenes","rule":"Repeating an already obvious topic can signal a narrative transition","example":"Why repeat お兄ちゃんは when the story changes from his teaching to his playing a game?","answer":"Reintroducing the obvious topic highlights a break or change of scene.","explanation":"The subject could otherwise be omitted. The repeated topic draws attention to the transition, not to a newly introduced person."} -->
+
 は can be used both in conversation and in writing to create a change of scene. By repeating the topic when it's already obvious to the audience, the speaker shines the spotlight back onto that topic and shows that for some reason there is a break in the storyline or a shift in the dialogue.
 
 In the following example, the speaker is describing how her elder brother helped her with her homework yesterday:
@@ -369,6 +397,8 @@ The first mention of お兄ちゃん (big brother) is followed by が, because h
 This change of scene effect can be found in both speaking and writing. By repeating the topic when it's already obvious to the audience, the speaker shines the spotlight back onto that topic and shows that for some reason there is a break in the storyline or a shift in the dialogue.
 
 ### は in Relative Clauses
+
+<!-- grammar-card: {"id":"relative-clause-topic-restriction","kind":"concept","format":"qa","priority":"optional","sourceSection":"は in Relative Clauses","rule":"Neutral relative-clause subjects generally use が or の, not は","example":"Is は the neutral subject marker inside a clause that simply identifies which school Jenny failed to enter?","answer":"No. が or, where licensed, の is neutral; は needs a contrastive interpretation in the examples here.","explanation":"The lesson contrasts Jenny failing with the speaker succeeding. Without that contrast, ordinary noun description does not license the same は."} -->
 
 は is used less in relative clauses than が, but it is still possible under certain circumstances, and to add certain nuances. Look at this example from the children's story どうぞのいす:
 

@@ -1,5 +1,7 @@
 # つもり — Intend To
 
+<!-- vocab-inventory: {"mode":"explicit"} -->
+
 > **Source:** Content from [Tofugu](https://www.tofugu.com/japanese-grammar/tsumori/). For personal study.
 
 つもり For Expressing Intentions
@@ -46,6 +48,13 @@ And if you're talking about the intentions of someone who isn't present, you'll 
 
 Now that you know what つもり is used for, let's talk about how it functions grammatically.
 
+<!-- vocab-card: {"id":"vocab-tsumori","word":"つもり","reading":"つもり","meaning":"intention; one's intended understanding","priority":"optional","sourceSection":"The Basics"} -->
+<!-- grammar-card: {"id":"settled-not-spontaneous","kind":"concept","format":"qa","priority":"essential","sourceSection":"The Basics","rule":"Intentional つもり presents a decision already made, not one made on the spot","example":"Is つもり the natural choice for a new decision made right as you speak?","answer":"No. It presents an intention already settled before that moment.","explanation":"It can express short- or long-term plans, including determined ambitions, not merely a vague wish."} -->
+<!-- grammar-card: {"id":"person-access","kind":"concept","format":"qa","priority":"essential","sourceSection":"The Basics","rule":"つもり describes one's own intention directly; questions or evidence qualify access to another person's plan","example":"Why is a marker such as らしい useful when discussing an absent person's intention with つもり?","answer":"It shows that the speaker is reporting evidence about the other person's plan rather than claiming direct access to their mind.","explanation":"Second-person intentions are commonly asked about; third-person intentions may be reported or inferred. These are discourse constraints, not bans on all third-person subjects."} -->
+
+<!-- grammar-card: {"id":"reported-intention","kind":"rule","format":"cloze","priority":"optional","sourceSection":"The Basics","rule":"らしい after つもり reports someone else's intention","hint":"Report his settled plan as something apparently heard or inferred.","example":"あいつ、イラストレーターになる___よ。","answer":"つもりらしい","explanation":"つもりらしい reports an apparent plan rather than directly asserting the speaker's own intention."} -->
+<!-- grammar-card: {"id":"settled-intention","kind":"rule","format":"cloze","priority":"essential","sourceSection":"The Basics","rule":"つもりです states a settled intention","hint":"Complete the expression for an already-decided plan.","example":"今日はそうじをする___です。","answer":"つもり","explanation":"するつもりです says the speaker has already decided to clean today."} -->
+
 ### Patterns of Use
 
 When it comes to how つもり functions, the first thing you should know is that つもり is technically a noun. We could maybe say the noun for "intention," though you don't really see つもり used in standalone situations. It needs a "helper" to explain *what kind of* intention you have, so you'd be attaching information to clarify that to つもり. To do that, you'd use a relative clause. You'll get a better idea of how that works as we break it down in the next section.
@@ -75,6 +84,8 @@ It's worth noting that the ending verb only takes the plain form. In the above e
 
 Double politeness is a common blunder, so be cautious!
 
+<!-- grammar-card: {"id":"plain-before-tsumori","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Verb + つもり","rule":"A verb modifying つもり stays plain even when the sentence ends politely","example":"Change 食べます to the form needed for a settled lunch plan: ラーメンを___つもりです。","answer":"食べる","explanation":"食べますつもりです is not the noun-modifying pattern. Sentence-final です supplies the politeness."} -->
+
 #### Noun + の + つもり
 
 You can also use つもり with another noun. In this case, you'll need to add the particle の between the two to modify them.
@@ -85,7 +96,10 @@ Consider this scenario: you draw a tent, but when you show it to someone, they a
 
   - Oh, I intended it to be a tent.
 
-In this example, の comes between the nouns テント and つもり, modifying テント with つもり. Make sense? Good!
+In this example, の comes between the nouns テント and つもり, so テントの modifies つもり: the intended identity is “a tent.”
+
+<!-- vocab-card: {"id":"vocab-tento","word":"テント","reading":"てんと","meaning":"tent","priority":"optional","sourceSection":"Noun + の + つもり"} -->
+<!-- grammar-card: {"id":"noun-intended-identity","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Noun + の + つもり","rule":"A noun connects to つもり with の","example":"I intended the drawing to be a tent: テント___つもりなんだけど。","answer":"の","explanation":"テントの modifies つもり, describing what the drawing was meant to represent."} -->
 
 #### な-adjective + つもり
 
@@ -97,6 +111,8 @@ You can also use な-adjectives with つもり to express the way you intended t
 
 Again, in sentences, つもり acts like a noun. So when you attach a な-adjective to つもり, you need the な to glue them together. In this example, the な-adjective 大丈夫 has な at the end to connect it to つもり.
 
+<!-- grammar-card: {"id":"na-belief","kind":"rule","format":"cloze","priority":"optional","sourceSection":"な-adjective + つもり","rule":"A な-adjective uses な before つもり","example":"I thought I was okay: 大丈夫___つもりだった。","answer":"な","explanation":"大丈夫な modifies the noun つもり; here the construction expresses the speaker's understanding of their condition."} -->
+
 #### い-adjective + つもり
 
 Unlike な-adjectives, い-adjectives describe nouns as-is, so they can attach directly to つもり.
@@ -106,6 +122,8 @@ Take the following scenario for example: your brother is a wanna-be-comedian, bu
   - それで**おもしろいつもり**なの？
 
   - Is that supposed to be funny?
+
+<!-- grammar-card: {"id":"i-adjective-belief","kind":"rule","format":"cloze","priority":"optional","sourceSection":"い-adjective + つもり","rule":"An い-adjective modifies つもり directly","example":"Is that supposed to be funny? おもしろ___つもりなの？","answer":"い","explanation":"Keep the full い-adjective before つもり, without な."} -->
 
 #### Demonstrative Word + つもり
 
@@ -125,6 +143,8 @@ Here, その refers to your colleague's question, and つもり shows that this 
 
   - I'm sorry. I didn't intend to come off like that.
 
+<!-- grammar-card: {"id":"demonstrative-intention","kind":"concept","format":"qa","priority":"optional","sourceSection":"Demonstrative Word + つもり","rule":"そのつもり confirms a referenced plan, while そんなつもりじゃなかった rejects an attributed intention","example":"What contrast is conveyed by そのつもりです and そんなつもりじゃなかった?","answer":"The first confirms that intention; the second denies having meant it that way.","explanation":"その and そんな modify つもり directly, without の or な."} -->
+
 ### 〜ないつもり For Something You Intend Not to Do or Be
 
 When つもり follows a clause in the negative form ending with 〜ない, it indicates that you are planning *not* to do something.
@@ -134,6 +154,9 @@ Imagine you live outside of your home country and your parents ask if you're com
   - 今年は帰ら**ないつもり**なんだよね。
 
   - I'm planning on not visiting this year.
+
+<!-- vocab-card: {"id":"vocab-kaeru","word":"帰る","reading":"かえる","meaning":"to return home","priority":"optional","sourceSection":"〜ないつもり For Something You Intend Not to Do or Be"} -->
+<!-- grammar-card: {"id":"negative-plan","kind":"rule","format":"cloze","priority":"optional","sourceSection":"〜ないつもり For Something You Intend Not to Do or Be","rule":"Negative plain verb + つもり expresses an intention not to act","example":"Use 帰る to say you plan not to return: 今年は___つもりです。","answer":"帰らない","explanation":"帰る is godan: 帰らない (かえらない). The negative belongs inside the planned action."} -->
 
 Let's look at another example. This time, it's a quote by Hanayo Koizumi from the anime *Love Live!*. Hanayo is very enthusiastic about idols and wants to be one as well. When she tries to join an idol band, she says:
 
@@ -146,6 +169,8 @@ Let's look at another example. This time, it's a quote by Hanayo Koizumi from th
 ### 〜つもりだった For Something You Intended but Failed to Do or Be
 
 When つもり is used in the past tense, as in つもりだった, you can express something you intended to do but couldn't.
+
+<!-- grammar-card: {"id":"past-intention","kind":"concept","format":"qa","priority":"optional","sourceSection":"〜つもりだった For Something You Intended but Failed to Do or Be","rule":"Verb-nonpast + つもりだった reports a former intention, often contrasted with what actually happened","example":"Does 結婚するつもりだった itself state that a marriage occurred?","answer":"No. It states a past intention to marry; context often makes clear that the plan did not happen.","explanation":"The past is on the intention. The construction alone is not proof of the eventual outcome."} -->
 
 For example, imagine you are in a serious relationship with someone and are considering marrying them. However, something happened that changed your mind. When you start talking about ending the relationship, your partner blames you, saying, "you told me you were going to marry me." You had every intention of doing so, but that is no longer the case. In this situation, you can use つもり and say:
 
@@ -185,10 +210,7 @@ If you ended up failing the exam and learn that your preparation was, in fact, i
 
 See how we can combine these uses of つもり to express intentions in a different way, just by altering the tense? Pretty useful.
 
-<!-- grammar-card: {"rule":"らしい after つもり reports someone else's intention","hint":"つもり + らしい","example":"あいつ、イラストレーターになる___よ。","answer":"つもりらしい","explanation":"つもりらしい says the speaker heard about the plan rather than holding it himself."} -->
-
-<!-- grammar-card: {"rule":"つもりです states a settled intention","hint":"intention","example":"今日はそうじをする___です。","answer":"つもり","explanation":"するつもりです says the speaker has already decided to clean today."} -->
-
+<!-- grammar-card: {"id":"believed-completion","kind":"concept","format":"qa","priority":"essential","sourceSection":"〜たつもり For Something You Believe You Had Attained","rule":"たつもり expresses a belief that an action has been accomplished, not a future plan","example":"How does 勉強したつもりだ differ from 勉強するつもりだった?","answer":"The first says I believe I have studied; the second says I intended to study.","explanation":"勉強したつもりだった looks back on a prior belief of completion, often corrected by later evidence."} -->
 ## Beyond the Basics
 
 ### 〜つもりで For With The Intention of 〜
@@ -204,6 +226,10 @@ And if you indeed worked hard but with the intention of making your mark in hist
   - 歴史に名を残す**つもりで**頑張った。
 
   - I worked hard with the intention of making my mark in history.
+
+<!-- grammar-card: {"id":"intention-de","kind":"concept","format":"qa","priority":"optional","sourceSection":"〜つもりで For With The Intention of 〜","rule":"つもりで connects the intended mindset to the following action","example":"What relation does つもりで express in 歴史に名を残すつもりで頑張った?","answer":"The speaker worked hard with the intention of making a mark in history.","explanation":"で connects the intention or assumed mindset to the effort; it does not assert that the ambition succeeded."} -->
+
+<!-- grammar-card: {"id":"intention-de-application","kind":"rule","format":"cloze","priority":"optional","sourceSection":"〜つもりで For With The Intention of 〜","rule":"つもりで means acting as if something were so","hint":"Link the ambitious intention to the effort that follows.","example":"業界に革命を起こす___頑張ってくれよ。","answer":"つもりで","explanation":"起こすつもりで asks for effort with the ambition or mindset of revolutionizing the industry."} -->
 
 ### 〜つもり [は・が] ない
 
@@ -226,6 +252,8 @@ On the other hand, if you want to say that someone else has no intention of doin
 In this example, the land shark would use は if they believe that their boss is already aware of the topic of your selling the shop. By marking the topic with は, you can emphasize the information regarding the topic, rather than the topic itself. Here, that information is ない (doesn't exist) and using は draws attention to that.
 
 Particle が, on the other hand, marks the subject of a sentence. Using ​​が calls attention to the subject itself, which is the intention of selling your shop. Using が in this case would simply indicate that the intention isn't there. This is a good way to objectively report on a situation.
+
+<!-- grammar-card: {"id":"no-intention-contrast","kind":"concept","format":"qa","priority":"optional","sourceSection":"〜つもり [は・が] ない","rule":"つもりはない denies having the intention, rather than placing negation inside a plan","example":"How does 売るつもりはない differ in emphasis from 売らないつもりだ?","answer":"The first rejects any intention to sell; the second describes a plan not to sell.","explanation":"は can foreground a contrastive denial; が can neutrally report the absence of an intention, often with ようだ for another person's state."} -->
 
 ---
 
@@ -306,8 +334,6 @@ by Kaori Nakamura
 <!-- quiz: {"type":"multiple-choice","question":"What does \"いつか、イラストレーターになる**つもり**です。\" mean?","options":["I'm committed to being an illustrator one day.","Today, I'm planning to do some cleaning.","You're committed to becoming an illustrator!?","I heard he's committed to becoming an illustrator."],"answer":0} -->
 
 <!-- quiz: {"type":"multiple-choice","question":"What does \"イラストレーターになる**つもり**なの！？\" mean?","options":["You're committed to becoming an illustrator!?","Today, I'm planning to do some cleaning.","I'm committed to being an illustrator one day.","I heard he's committed to becoming an illustrator."],"answer":0} -->
-
-<!-- grammar-card: {"rule":"つもりで means acting as if something were so","hint":"つもり + で","example":"業界に革命を起こす___頑張ってくれよ。","answer":"つもりで","explanation":"起こすつもりで tells him to work as though he will revolutionise the industry."} -->
 
 ## Sources
 

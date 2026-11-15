@@ -1,5 +1,7 @@
 # Articles (el/la/los/las, un/una)
 
+<!-- vocab-inventory: {"mode":"explicit"} -->
+
 Articles are small words placed before nouns to signal whether you are referring to something specific or something general. In Spanish every article must agree with its noun in both **gender** and **number** — mastering them unlocks the foundation of Spanish sentence structure.
 
 ## Definite Articles — "The"
@@ -16,6 +18,11 @@ Use definite articles when both speaker and listener know which specific thing i
 - **Los libros** (lohs LEE-brohs) — The books
 - **Las casas** (lahs KAH-sahs) — The houses
 
+<!-- grammar-card: {"id":"definite-agreement","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Definite Articles — \"The\"","rule":"Definite articles match the noun's gender and number","example":"___ casas son bonitas. (the houses)","answer":"Las","explanation":"Casas is feminine plural, so the definite article is las."} -->
+<!-- grammar-card: {"id":"article-specificity","kind":"concept","format":"qa","priority":"essential","sourceSection":"Definite Articles — \"The\"","rule":"Definite and indefinite articles signal different reference","example":"What difference does el libro versus un libro normally signal?","answer":"El libro refers to an identifiable book; un libro introduces or refers to an unspecified book.","explanation":"The choice concerns reference as well as gender and number."} -->
+<!-- vocab-card: {"id":"vocab-libro","word":"libro","meaning":"book","priority":"optional","sourceSection":"Definite Articles — \"The\""} -->
+<!-- vocab-card: {"id":"vocab-casa","word":"casa","meaning":"house","priority":"optional","sourceSection":"Definite Articles — \"The\""} -->
+
 ## Indefinite Articles — "A / An / Some"
 
 Use indefinite articles when introducing a noun for the first time or speaking about it in general:
@@ -29,6 +36,8 @@ Use indefinite articles when introducing a noun for the first time or speaking a
 - **Una casa** (OO-nah KAH-sah) — A house
 - **Unos libros** (OO-nohs LEE-brohs) — Some books
 - **Unas casas** (OO-nahs KAH-sahs) — Some houses
+
+<!-- grammar-card: {"id":"indefinite-plural","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Indefinite Articles — \"A / An / Some\"","rule":"Unos and unas introduce indefinite plural nouns","example":"Tengo ___ libros. (some books)","answer":"unos","explanation":"Libros is masculine plural, so some books is unos libros."} -->
 
 <!-- quiz: {"type":"multiple-choice","question":"What is the correct definite article for 'libros' (books, masculine plural)?","options":["el","la","los","las"],"answer":2} -->
 
@@ -44,6 +53,9 @@ When the prepositions **a** or **de** are followed by the masculine singular art
 > ⚠️ These contractions apply only to the **article** el, NOT the **pronoun** él (he):
 > - Hablo **de él** — I am talking about him ✓ (no contraction)
 
+<!-- grammar-card: {"id":"del-contraction","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Mandatory Contractions: AL and DEL","rule":"De plus the article el contracts to del","example":"El libro ___ profesor. (de + el)","answer":"del","explanation":"The preposition de contracts with the masculine singular article el."} -->
+<!-- grammar-card: {"id":"pronoun-no-contraction","kind":"concept","format":"qa","priority":"optional","sourceSection":"Mandatory Contractions: AL and DEL","rule":"The pronoun él does not trigger article contractions","example":"Why is Hablo de él not written with del?","answer":"Él is a personal pronoun, not the article el.","explanation":"Al and del are article contractions; keep a él and de él separate."} -->
+
 ## Special Case: El Agua — Feminine Nouns with El
 
 Feminine nouns beginning with a **stressed a-** take the masculine-looking article **el** in the singular — but they remain grammatically **feminine**. This rule exists to avoid the awkward clash of two adjacent "a" sounds:
@@ -56,7 +68,12 @@ Adjectives and the plural still use feminine forms:
 
 - **el agua fría** — the cold water (*fría*, not *frío*)
 - **las aguas frías** (lahs AH-gwahs FREE-ahs) — the cold waters
-- **el agua está fría** ✓ (*está*, not *está frío*)
+- **el agua está fría** ✓ (*fría*, not *frío*)
+
+<!-- grammar-card: {"id":"agua-gender","kind":"concept","format":"qa","priority":"essential","sourceSection":"Special Case: El Agua — Feminine Nouns with El","rule":"El before a feminine stressed-a noun does not change its gender","example":"Does el agua become masculine because it takes el?","answer":"No. Agua remains feminine: el agua fría and las aguas frías.","explanation":"The immediately preceding singular article changes before stressed a; adjective and plural agreement remain feminine."} -->
+<!-- vocab-card: {"id":"vocab-agua","word":"agua","meaning":"water (feminine; el agua in the singular)","priority":"optional","sourceSection":"Special Case: El Agua — Feminine Nouns with El"} -->
+<!-- vocab-card: {"id":"vocab-aguila","word":"águila","meaning":"eagle (feminine; el águila in the singular)","priority":"optional","sourceSection":"Special Case: El Agua — Feminine Nouns with El"} -->
+<!-- vocab-card: {"id":"vocab-alma","word":"alma","meaning":"soul (feminine; el alma in the singular)","priority":"optional","sourceSection":"Special Case: El Agua — Feminine Nouns with El"} -->
 
 <!-- quiz: {"type":"multiple-choice","question":"Why do we say 'el agua' even though 'agua' is feminine?","options":["'Agua' is actually masculine","To avoid two 'a' sounds clashing together","It is an exception with no rule","Water has no grammatical gender"],"answer":1} -->
 
@@ -68,10 +85,12 @@ Unlike English, Spanish drops the indefinite article with professions after **se
 - **Es médica** (ehs MEH-dee-kah) — She is a doctor ✓
 - **Somos estudiantes** (SOH-mohs ehs-too-DYAHN-tehs) — We are students ✓
 
-The article returns when a **modifying adjective** is added:
+An indefinite article is normally used when an **evaluative or descriptive modifier** presents the person as a particular kind of professional:
 
 - **Es un profesor excelente** — He is an excellent teacher ✓
 - **Soy una médica muy ocupada** — I am a very busy doctor ✓
+
+<!-- grammar-card: {"id":"modified-profession","kind":"rule","format":"cloze","priority":"optional","sourceSection":"No Article with Professions after Ser","rule":"A descriptive modifier can license an indefinite article with a profession","example":"Es ___ profesor excelente. (an excellent teacher)","answer":"un","explanation":"The description presents him as a particular kind of teacher, unlike bare profession Soy profesor."} -->
 
 ## Articles with Country Names
 
@@ -79,9 +98,11 @@ Most country names take no article, but exceptions exist:
 
 - **México es grande** — Mexico is big (no article)
 - **Argentina es hermosa** — Argentina is beautiful (no article)
-- **Los Estados Unidos** (lohs ehs-TAH-dohs oo-NEE-dohs) — The United States (always with article)
+- **Los Estados Unidos** (lohs ehs-TAH-dohs oo-NEE-dohs) — The United States (article common, but also **Estados Unidos**)
 - **La India** — India (article commonly used)
 - **El Perú** or **Perú** — Peru (both are acceptable)
+
+<!-- grammar-card: {"id":"country-articles","kind":"concept","format":"qa","priority":"optional","sourceSection":"Articles with Country Names","rule":"Article use with country names varies by name and usage","example":"Must all country names take an article, and is Perú without el acceptable?","answer":"No. Most omit it, and both Perú and el Perú are acceptable.","explanation":"Do not transfer English article habits mechanically; even Estados Unidos can occur with or without an article."} -->
 
 ## Comparing Articles at a Glance
 
@@ -97,9 +118,9 @@ Most country names take no article, but exceptions exist:
 
 <!-- quiz: {"type":"multiple-choice","question":"How do you say 'I go to the park' in Spanish? (a + el parque)","options":["Voy a el parque","Voy del parque","Voy al parque","Voy en el parque"],"answer":2} -->
 
-<!-- grammar-card: {"rule":"a + el = al, de + el = del (mandatory contractions)","hint":"Only with the article 'el' — never with the pronoun 'él'","example":"Voy ___ mercado. (a + el mercado)","answer":"al","explanation":"'a' + 'el' must contract to 'al'. Saying 'a el mercado' is incorrect. Similarly, 'de el libro' → 'del libro'. These contractions are mandatory in all registers of Spanish."} -->
+<!-- grammar-card: {"id":"al-contraction","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Mandatory Contractions: AL and DEL","rule":"a + el = al, de + el = del (mandatory contractions)","example":"Voy ___ mercado. (a + el mercado)","answer":"al","explanation":"A plus the article el contracts to al in this ordinary noun phrase; the pronoun él does not contract."} -->
 
-<!-- grammar-card: {"rule":"No indefinite article with professions after ser — unless the profession is modified by an adjective","hint":"Soy médico ✓ but Es un médico brillante ✓","example":"Ella ___ enfermera. (She is a nurse — use the correct form of ser, no article)","answer":"es enfermera","explanation":"After ser, professions drop the article: 'Ella es enfermera.' The indefinite article comes back only when the profession is described by an adjective: 'Es una enfermera excelente.'"} -->
+<!-- grammar-card: {"id":"bare-profession","kind":"rule","format":"cloze","priority":"essential","sourceSection":"No Article with Professions after Ser","rule":"Bare professions after ser normally omit an indefinite article","legacyAliases":[{"rule":"No indefinite article with professions after ser — unless the profession is modified by an adjective","example":"Ella ___ enfermera. (She is a nurse — use the correct form of ser, no article)"}],"example":"Ella ___ enfermera. (She is a nurse — use the correct form of ser, no article)","answer":"es","explanation":"The blank supplies only es: Ella es enfermera. A bare profession normally has no indefinite article after ser."} -->
 
 ## Sources
 

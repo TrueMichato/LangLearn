@@ -1,5 +1,7 @@
 # でしょう — Probably (Polite)
 
+<!-- vocab-inventory: {"mode":"explicit"} -->
+
 > **Source:** Content from [Tofugu](https://www.tofugu.com/japanese-grammar/deshou/). For personal study.
 
 Japanese でしょう Form for Guessing
@@ -114,15 +116,20 @@ To make past sentences, you have to change the form of the words that come befor
 
   - (I assume) Koichi bought a TV.
 
-<!-- grammar-card: {"rule":"でしょう is the polite counterpart of だろう","hint":"だ, past","example":"昨夜は雨___でしょう。","answer":"だった","explanation":"だった supplies the past tense and でしょう adds the polite guess about last night."} -->
+<!-- grammar-card: {"id":"past-noun-prediction","kind":"rule","format":"cloze","priority":"essential","sourceSection":"What Is でしょう?","rule":"でしょう is the polite counterpart of だろう","hint":"だ, past","example":"昨夜は雨___でしょう。","answer":"だった","explanation":"だった supplies the past tense and でしょう adds the polite guess about last night."} -->
 
-<!-- grammar-card: {"rule":"でしょう follows the plain form of a verb","hint":"買う, past","example":"コウイチはテレビを___でしょう。","answer":"買った","explanation":"買ったでしょう guesses that he probably bought a television."} -->
+<!-- grammar-card: {"id":"past-verb-prediction","kind":"rule","format":"cloze","priority":"optional","sourceSection":"What Is でしょう?","rule":"でしょう follows the plain form of a verb","hint":"買う, past","example":"コウイチはテレビを___でしょう。","answer":"買った","explanation":"買ったでしょう guesses that he probably bought a television; tense belongs to the preceding verb."} -->
+<!-- grammar-card: {"id":"plain-before-polite-ending","kind":"rule","format":"cloze","priority":"essential","sourceSection":"What Is でしょう?","rule":"The speculative ending follows a noun without an extra copula","example":"Predict politely that tomorrow will be rainy: 明日は雨___。","answer":"でしょう","explanation":"Use 雨でしょう, not 雨ですでしょう or 雨だでしょう. Adjectives and verbs likewise supply the appropriate preceding plain predicate."} -->
+<!-- vocab-card: {"id":"vocab-muzukashii","word":"難しい","reading":"むずかしい","meaning":"difficult","priority":"optional","sourceSection":"What Is でしょう?"} -->
+<!-- vocab-card: {"id":"vocab-makeru","word":"負ける","reading":"まける","meaning":"to lose; to be defeated","priority":"optional","sourceSection":"What Is でしょう?"} -->
 
 ## でしょう for Speculation
 
 While these sentences are grammatically correct, you might not often hear people use でしょう to speculate something. Indeed if you say 明日は雨でしょう to your friend, it sounds like you are imitating a weather forecast. Why?
 
 Remember speakers are emphasizing that they are providing their own opinion and interpretation for their listeners when using でしょう. This creates an assertive and authoritative tone in speech as if the speaker is some sort of professional.
+
+<!-- grammar-card: {"id":"forecast-register","kind":"concept","format":"qa","priority":"essential","sourceSection":"でしょう for Speculation","rule":"Polite speculation can sound forecast-like in casual conversation","example":"Why can 明日は雨でしょう sound unusual as a prediction to a close friend?","answer":"It can sound like an authoritative or professional forecast rather than relaxed conversation.","explanation":"でしょう is polite, but polite does not automatically mean socially neutral in every conversational use."} -->
 
 ## でしょう for Showing Shared Understanding
 
@@ -145,6 +152,9 @@ Mami: いつも遅いから、大丈夫でしょ。
 
   - Kanae: Koichi is late. Is he okay?
  Mami: He's always late, so I guess he's fine.
+
+<!-- grammar-card: {"id":"shared-understanding","kind":"concept","format":"qa","priority":"optional","sourceSection":"でしょう for Showing Shared Understanding","rule":"でしょう can present a sympathetic inference as shared understanding","example":"What does 毎日、通勤大変でしょう convey when responding to someone who works in LA?","answer":"Commuting every day must be tough for you; it presents a sympathetic inference as something the listener can recognize.","explanation":"It need not be a request for new information. Casual conversation often shortens the ending to でしょ."} -->
+<!-- vocab-card: {"id":"vocab-tsuukin","word":"通勤","reading":"つうきん","meaning":"commuting to work","priority":"optional","sourceSection":"でしょう for Showing Shared Understanding"} -->
 
 ## でしょう for Seeking Agreement
 
@@ -174,6 +184,8 @@ The same sentence can be pronounced with rising intonation at the end of the sen
 
   - Don't cry. You're a big girl, right?
 
+<!-- grammar-card: {"id":"agreement-pressure","kind":"concept","format":"qa","priority":"optional","sourceSection":"でしょう for Seeking Agreement","rule":"Seeking agreement can become pressure rather than politeness","example":"Does a rising でしょう always make a statement considerate, as in お姉ちゃんでしょう？ said to a crying child?","answer":"No. It can pressure the listener to agree with the speaker's view.","explanation":"Rising intonation emphasizes the appeal for agreement; context can make it empathetic or imposing."} -->
+
 ## でしょう with Question Words
 
 In conversation, でしょう can also be used in information-seeking questions. In this case, question words such as なん, だれ, どこ, いつ, and なんで are often used together with でしょう. This adds a higher level of formality to the question.
@@ -190,7 +202,7 @@ For example, your speech is very formal when you say:
 
   - Who are you?
 
-While か is optional in wh-questions, it is necessary when we ask yes-no questions.
+While か is optional in these wh-questions, it makes a formal yes-no inquiry explicit rather than merely inviting agreement.
 
   - お困りでしょうか？
 
@@ -201,6 +213,8 @@ If we drop the か, it sounds like the speaker is confirming that their listener
   - お困りでしょう？
 
   - You are confused, aren't you?
+
+<!-- grammar-card: {"id":"inquiry-versus-confirmation","kind":"concept","format":"qa","priority":"essential","sourceSection":"でしょう with Question Words","rule":"か distinguishes an explicit polite inquiry from confirmation-seeking here","example":"How does お困りでしょうか differ from お困りでしょう in this service-style exchange?","answer":"The first explicitly asks whether the listener needs help; the second sounds like confirming that they do.","explanation":"With question words, どなたでしょう and どなたでしょうか are both formal inquiries. Without か, a yes-no utterance can still seek confirmation."} -->
 
 Now you know how to use this grammar point, でしょう? Take a quick break, and when you have energy for more Japanese learning, check out our page on だろう, so you can learn to guess and surmise in a less formal way.
 

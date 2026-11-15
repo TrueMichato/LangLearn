@@ -1,6 +1,9 @@
 /**
  * Pull vocabulary candidates out of grammar lesson markdown.
  *
+ * A valid explicit vocab-inventory makes authored vocab-card blocks authoritative.
+ * Unmarked lessons retain the conservative formatting fallback below.
+ *
  * Lessons present vocabulary in two ways: bold list items and markdown tables.
  * Only the list items were capturable before, which left the majority of terms
  * — every table row — with no way to reach the review deck.
@@ -491,6 +494,7 @@ function lexicalKey(word: string): string {
 function mergeVocabularyCandidates(
   authored: VocabularyReviewItem[],
   formatting: CaptureCandidate[],
+  explicitInventory: boolean,
 ): CaptureCandidate[] {
   const seen = new Set<string>();
   const result: CaptureCandidate[] = [];
@@ -500,6 +504,8 @@ function mergeVocabularyCandidates(
       candidate.source === 'list' && lexicalKey(candidate.word) === lexicalKey(item.word));
     result.push({ ...item, sourceText: visible?.sourceText ?? '' });
   }
+  // Formatting still locates inline buttons for authored words, never extra words.
+  if (explicitInventory) return result;
   for (const candidate of formatting) {
     if (explicitWords.has(lexicalKey(candidate.word))) continue;
     if (seen.has(candidate.id)) continue;
@@ -511,9 +517,11 @@ function mergeVocabularyCandidates(
 
 /** Compatibility entry point; parseLessonReviewItems also reports malformed metadata. */
 export function parseLessonCandidates(markdown: string): CaptureCandidate[] {
+  const inventory = readLessonReviewBlocks(markdown, 'vocab-inventory');
   return mergeVocabularyCandidates(
     parseVocabularyCardSources(markdown).items,
     [...parseListCandidates(markdown), ...parseTableCandidates(markdown)],
+    inventory.items.length === 1,
   );
 }
 
@@ -527,6 +535,7 @@ export function parseLessonReviewItems(markdown: string): LessonReviewParseResul
   const ids = new Set<string>();
   const explicit: LessonReviewItem[] = [];
   for (const { block, line, value } of metadata.items) {
+    if (block === 'vocab-inventory') continue;
     const errors = block === 'grammar-card'
       ? grammarCardMetadataErrors(value)
       : vocabularyMetadataErrors(value);
@@ -556,6 +565,7 @@ export function parseLessonReviewItems(markdown: string): LessonReviewParseResul
   const words = mergeVocabularyCandidates(
     explicit.filter((item): item is VocabularyReviewItem => item.kind === 'vocabulary'),
     [...parseListCandidates(markdown), ...parseTableCandidates(markdown)],
+    metadata.items.some((item) => item.block === 'vocab-inventory'),
   ).map((candidate): VocabularyReviewItem => ({
     ...candidate,
     id: candidate.provenance === 'authored' ? candidate.id : `formatting:${candidate.id}`,
@@ -571,10 +581,7 @@ export function parseLessonReviewItems(markdown: string): LessonReviewParseResul
   };
 }
 
-/** Remove review metadata for display, after parsing its diagnostics separately. */
-export function stripLessonReviewSources(markdown: string): string {
-  return markdown.replace(/<!--\s*(?:grammar-card|vocab-card)\b[\s\S]*?(?:-->|$)/g, '');
-}
+export { stripLessonReviewSources } from './lesson-review';
 
 /** The provenance tag that ties a saved word back to the lesson it came from. */
 export function lessonTag(lessonId: string): string {

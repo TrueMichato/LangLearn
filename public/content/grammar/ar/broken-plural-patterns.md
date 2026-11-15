@@ -1,10 +1,19 @@
 # Broken Plural Patterns
 
+<!-- vocab-inventory: {"mode":"explicit"} -->
+
 Many Arabic plurals are not made by adding a suffix. Instead, the inside of the word changes. These are called “broken” plurals because the singular pattern is reshaped.
 
 ## Core idea
 
 The **جَمْعُ التَّكْسِيرِ** (jamʿ at-taksīr) — broken plural changes the internal vowel-and-consonant pattern of a noun. There are common patterns, but many plurals are best learned with the singular.
+
+<!-- grammar-card: {"id":"plural-predictability","kind":"concept","format":"qa","priority":"essential","sourceSection":"Core idea","rule":"Broken plurals reshape stems and need lexical learning.","example":"Can every noun's broken plural be predicted by adding one suffix?","answer":"No. The internal pattern changes, and many singular/plural pairs must be learned individually.","explanation":"Common shapes help recognition but do not uniquely predict each plural."} -->
+<!-- vocab-card: {"id":"vocab-kutub","word":"كُتُبٌ","reading":"kutubun","meaning":"books (plural of كِتَابٌ)","priority":"essential","sourceSection":"Forms and examples"} -->
+<!-- vocab-card: {"id":"vocab-buyut","word":"بُيُوتٌ","reading":"buyūtun","meaning":"houses (plural of بَيْتٌ)","priority":"optional","sourceSection":"Forms and examples"} -->
+<!-- vocab-card: {"id":"vocab-rijal","word":"رِجَالٌ","reading":"rijālun","meaning":"men (plural of رَجُلٌ)","priority":"optional","sourceSection":"Forms and examples"} -->
+<!-- vocab-card: {"id":"vocab-aqlam","word":"أَقْلَامٌ","reading":"aqlāmun","meaning":"pens (plural of قَلَمٌ)","priority":"optional","sourceSection":"Forms and examples"} -->
+<!-- vocab-card: {"id":"vocab-mudun","word":"مُدُنٌ","reading":"mudunun","meaning":"cities (plural of مَدِينَةٌ)","priority":"optional","sourceSection":"Forms and examples"} -->
 
 ## Forms and examples
 
@@ -22,7 +31,7 @@ The **جَمْعُ التَّكْسِيرِ** (jamʿ at-taksīr) — broken plur
 
 Non-human broken plurals often take feminine singular agreement. Arabic says **الْكُتُبُ جَدِيدَةٌ** (al-kutubu jadīdatun) — the books are new, using **جَدِيدَةٌ** (jadīdatun) — feminine singular “new.”
 
-<!-- grammar-card: {"rule":"Many non-human broken plurals use feminine singular agreement.","hint":"Books can be grammatically “she” in plural agreement.","example":"Complete “the books are new”: الْكُتُبُ ___ (al-kutubu ___).","answer":"جَدِيدَةٌ (jadīdatun)","explanation":"new — الْكُتُبُ جَدِيدَةٌ (al-kutubu jadīdatun) uses feminine singular agreement because كُتُبٌ (kutubun) is a non-human broken plural."} -->
+<!-- grammar-card: {"id":"nonhuman-agreement","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Usage notes","rule":"Many non-human broken plurals use feminine singular agreement.","example":"Complete “the books are new”: الْكُتُبُ ___ (al-kutubu ___).","answer":"جَدِيدَةٌ","explanation":"The non-human plural takes feminine singular agreement here."} -->
 
 ## Practice patterns
 
@@ -34,7 +43,8 @@ A few common broken plural shapes appear again and again:
 
 <!-- quiz: {"type":"multiple-choice","question":"Which sentence uses typical non-human broken plural agreement?","options":["الْكُتُبُ جَدِيدَةٌ (al-kutubu jadīdatun) — the books are new","الْكُتُبُ جَدِيدُونَ (al-kutubu jadīdūna) — the books are male-new","الْكِتَابُ جَدِيدَةٌ (al-kitābu jadīdatun) — the book is feminine-new","الْكُتُبُ كِتَابٌ (al-kutubu kitābun) — the books are a book"],"answer":0} -->
 
-<!-- grammar-card: {"rule":"Broken plurals should be learned with their singular nouns because patterns are common but not fully predictable.","hint":"Memorize كِتَابٌ with كُتُبٌ.","example":"Complete “books”: كِتَابٌ (kitābun) → ___ (kutubun).","answer":"كُتُبٌ","explanation":"books — كُتُبٌ (kutubun) is the broken plural of كِتَابٌ (kitābun) — book."} -->
+<!-- grammar-card: {"id":"books-plural","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Forms and examples","rule":"Broken plurals should be learned with their singular nouns because patterns are common but not fully predictable.","example":"كِتَابٌ → books: ___.","answer":"كُتُبٌ","explanation":"The internal stem changes, not just its ending.","legacyAliases":[{"rule":"Broken plurals should be learned with their singular nouns because patterns are common but not fully predictable.","example":"Complete “books”: كِتَابٌ (kitābun) → ___ (kutubun)."}]} -->
+<!-- grammar-card: {"id":"plural-shape-recognition","kind":"concept","format":"qa","priority":"optional","sourceSection":"Practice patterns","rule":"Plural templates are recognition aids, not lexical words.","example":"Which taught examples illustrate أَفْعَالٌ, فُعُولٌ and فِعَالٌ respectively?","answer":"أَقْلَامٌ, بُيُوتٌ and رِجَالٌ.","explanation":"These are pattern-to-example mappings; their shapes do not generate every noun's plural."} -->
 
 ## Sources
 

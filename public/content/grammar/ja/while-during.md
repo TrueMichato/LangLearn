@@ -1,5 +1,7 @@
 # While & During (ながら、間に、うちに)
 
+<!-- vocab-inventory: {"mode":"explicit"} -->
+
 Japanese offers several ways to express **simultaneous actions** or events happening **during** a time period. Each form carries a distinct nuance — from doing two things at once, to taking advantage of a limited window of time.
 
 ## ながら — Simultaneous Actions
@@ -50,6 +52,9 @@ Japanese offers several ways to express **simultaneous actions** or events happe
 
 > 💡 The action attached to ながら is the **secondary** (less important) action. The **main** action comes at the end. "Studying while listening to music" puts studying as the focus.
 
+<!-- grammar-card: {"id":"nagara-stem","kind":"rule","format":"cloze","priority":"essential","sourceSection":"ながら — Simultaneous Actions","rule":"Simultaneous ながら attaches to the ます-stem","example":"Talk while walking: 歩く → ___ながら話す。","answer":"歩き","explanation":"歩きながら (あるきながら) uses the ます-stem, not dictionary 歩く or て-form 歩いて."} -->
+<!-- grammar-card: {"id":"nagara-shared-subject","kind":"concept","format":"qa","priority":"essential","sourceSection":"Important Rules","rule":"Simultaneous ながら normally shares one subject across its two actions","example":"Can simultaneous ながら connect mother cooking with me watching television?","answer":"No. Use an interval construction such as 母が料理している間、私はテレビを見た instead.","explanation":"The shared-subject restriction belongs to simultaneous-action ながら, not every concessive use of ながら."} -->
+<!-- grammar-card: {"id":"nagara-main-action","kind":"concept","format":"qa","priority":"essential","sourceSection":"Important Rules","rule":"The main action follows the ながら background clause","example":"In 音楽を聞きながら勉強する, which action is the main focus?","answer":"Studying; listening to music is the background action.","explanation":"Changing the clause order changes the information focus even when both actions overlap."} -->
 ### ながら with States
 
 ながら can also express doing something **while being in a state**:
@@ -62,6 +67,8 @@ Japanese offers several ways to express **simultaneous actions** or events happe
 > *Kare wa shitte inagara, nani mo iwanakatta.*
 > He knew, yet said nothing. (while knowing)
 
+<!-- grammar-card: {"id":"nagara-concessive-state","kind":"concept","format":"qa","priority":"optional","sourceSection":"ながら with States","rule":"State-based ながら can express concession rather than two simultaneous activities","example":"What contrast does 知っていながら何も言わなかった express?","answer":"The person knew, yet said nothing.","explanation":"This means despite knowing. 残念ながら is the fixed expression unfortunately, not an instruction to perform two actions."} -->
+<!-- vocab-card: {"id":"vocab-zannen-nagara","word":"残念ながら","reading":"ざんねんながら","meaning":"unfortunately; regrettably","priority":"optional","sourceSection":"ながら with States"} -->
 <!-- quiz:{"type":"multiple-choice","question":"How do you say 'I listen to music while running'?","options":["走っている間に音楽を聞く","走りながら音楽を聞く","走るうちに音楽を聞く","走っているついでに音楽を聞く"],"answer":1} -->
 
 ## 間(あいだ)に — During the Interval
@@ -99,6 +106,8 @@ Japanese offers several ways to express **simultaneous actions** or events happe
 > *Densha wo matte iru aida ni, meeru wo chekku shita.*
 > While waiting for the train, I checked my email.
 
+<!-- grammar-card: {"id":"aida-ni-event","kind":"rule","format":"cloze","priority":"essential","sourceSection":"間(あいだ)に — During the Interval","rule":"間に places an event within an interval","example":"A thief entered at some point while I slept: 寝ている___、泥棒が入った。","answer":"間に","explanation":"間に is read あいだに. The entry occurs within the sleeping interval, not throughout it."} -->
+<!-- grammar-card: {"id":"aida-noun-link","kind":"rule","format":"cloze","priority":"optional","sourceSection":"間(あいだ)に — During the Interval","rule":"A noun takes の before 間に","example":"During summer vacation: 夏休み___間に三冊読んだ。","answer":"の","explanation":"夏休みの間に uses noun + の. A な-adjective instead takes な, as in 静かな間に."} -->
 ## 間 without に — Throughout the Duration
 
 When you drop the に, the meaning shifts to **the entire duration** — the action continues throughout the whole time period.
@@ -124,6 +133,7 @@ When you drop the に, the meaning shifts to **the entire duration** — the act
 
 > 💡 Think of it this way: **間に** = a point event inside a window. **間** = a continuous state across the whole window.
 
+<!-- grammar-card: {"id":"interval-window-memory-aid","kind":"concept","format":"qa","priority":"optional","sourceSection":"間に vs 間 — Key Difference","rule":"The window analogy distinguishes an event within an interval from duration across it","example":"In the lesson's time-window analogy, what do a point inside the window and a state across the window correspond to?","answer":"A point event inside the window corresponds to 間に; a continuing state across the window corresponds to 間.","explanation":"に locates the event within the interval. A task may take some time; point event is a contrastive memory aid, not a claim that every 間に event is instantaneous."} -->
 <!-- quiz:{"type":"multiple-choice","question":"'寝ている間に泥棒が入った' means:","options":["I slept the whole time a thief was inside","A thief entered while I was sleeping","I entered while the thief was sleeping","The thief slept during the break-in"],"answer":1} -->
 
 ## うちに — While the Condition Still Holds
@@ -134,7 +144,7 @@ When you drop the に, the meaning shifts to **the entire duration** — the act
 
 | Pattern | Example |
 |---|---|
-| Verb (dictionary form) + うちに | 覚(おぼ)えているうちに |
+| Verb (plain form, often ている) + うちに | 覚(おぼ)えているうちに |
 | Verb (ない form) + うちに | 忘(わす)れないうちに |
 | い-adjective + うちに | 若(わか)いうちに |
 | な-adjective + なうちに | 元気(げんき)なうちに |
@@ -178,6 +188,7 @@ This is extremely common — it expresses doing something **before an undesirabl
 > *Kodomo ga okinai uchi ni, purezento wo kakushita.*
 > I hid the presents before the children woke up.
 
+<!-- grammar-card: {"id":"negative-uchi-before-change","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Negative + うちに: \"Before ~ happens\"","rule":"ないうちに frames acting before a condition changes","example":"Before I forget, I'll note it down: 忘れない___、メモしておこう。","answer":"うちに","explanation":"忘れないうちに (わすれないうちに) means while I still have not forgotten. The negative clause is part of the limited opportunity."} -->
 ### うちに with Unexpected Change
 
 うちに can also describe something that **naturally changes** over the course of a period:
@@ -190,6 +201,8 @@ This is extremely common — it expresses doing something **before an undesirabl
 > *Hanashite iru uchi ni, nakayoku natta.*
 > While talking, we became friends (naturally).
 
+<!-- grammar-card: {"id":"uchi-natural-development","kind":"concept","format":"qa","priority":"essential","sourceSection":"うちに with Unexpected Change","rule":"うちに can introduce a development occurring over a period, not only an urgent opportunity","example":"Does 日本に住んでいるうちに日本語が上手になった necessarily urge someone to hurry?","answer":"No. It describes improvement developing naturally while living in Japan.","explanation":"うちに has both act-while-the-condition-lasts and change-during-the-period uses."} -->
+<!-- grammar-card: {"id":"uchi-noun-na-links","kind":"rule","format":"cloze","priority":"optional","sourceSection":"うちに — While the Condition Still Holds","rule":"な-adjectives use な before うちに","example":"While still healthy: 元気___うちに旅行したい。","answer":"な","explanation":"元気なうちに uses な, while 今日のうちに uses noun + の. い-adjectives and plain verbs attach directly."} -->
 <!-- quiz:{"type":"multiple-choice","question":"How do you say 'Let's eat before it gets cold'?","options":["冷たくなる間に食べよう","冷たくならないうちに食べよう","冷たいながら食べよう","冷たくないついでに食べよう"],"answer":1} -->
 
 ## ついでに — While You're at It
@@ -241,19 +254,20 @@ This is extremely common — it expresses doing something **before an undesirabl
 ✅ 母が料理している**間**、私は宿題をした。
 → ながら requires the **same subject** for both actions.
 
-❌ 若(わか)い**間に**、色々(いろいろ)な経験(けいけん)をした方(ほう)がいい。
-✅ 若い**うちに**、色々な経験をした方がいい。
-→ When emphasizing "before the condition changes," use うちに.
+若(わか)い**間に** can locate experiences during youth; it is not inherently ungrammatical.
+若い**うちに**、色々な経験をした方がいい。
+→ When emphasizing taking the opportunity before youth passes, うちに is more natural.
 
 ❌ コンビニに行(い)く**ながら**、切手(きって)を買(か)った。
 ✅ コンビニに行(い)った**ついでに**、切手を買った。
 → Buying stamps at the convenience store is opportunistic, not simultaneous.
 
-<!-- grammar-card: {"rule":"ついでに means doing something while already out","hint":"ついで + に","example":"コンビニに行(い)った___、切手を買った。","answer":"ついでに","explanation":"行ったついでに makes buying stamps incidental to a trip made for another reason."} -->
+<!-- grammar-card: {"id":"tsuide-incidental-task","kind":"rule","format":"cloze","priority":"essential","sourceSection":"ついでに — While You're at It","rule":"ついでに describes an incidental extra action taken on another occasion","hint":"Use while I was at it, not simultaneous while.","example":"コンビニに行(い)った___、切手を買った。","answer":"ついでに","explanation":"Buying stamps is incidental to another errand. ついでに does not require going out or performing both actions at the same instant.","legacyAliases":[{"rule":"ついでに means doing something while already out","example":"コンビニに行(い)った___、切手を買った。"}]} -->
+<!-- grammar-card: {"id":"tsuide-noun-link","kind":"rule","format":"cloze","priority":"optional","sourceSection":"ついでに — While You're at It","rule":"A noun takes の before ついでに","example":"While out for a walk, I mailed a letter: 散歩___ついでに手紙を出した。","answer":"の","explanation":"散歩のついでに (さんぽのついでに) uses noun + の; verbs can use dictionary or past plain form directly."} -->
 
-<!-- grammar-card: {"rule":"うちに means 'while the chance still lasts'","hint":"うち + に","example":"若い___、色々な経験をした方がいい。","answer":"うちに","explanation":"若いうちに urges acting before youth runs out."} -->
+<!-- grammar-card: {"id":"uchi-limited-window","kind":"rule","format":"cloze","priority":"essential","sourceSection":"うちに — While the Condition Still Holds","rule":"うちに means 'while the chance still lasts'","hint":"Emphasize taking the opportunity before the condition changes.","example":"若い___、色々な経験をした方がいい。","answer":"うちに","explanation":"若いうちに (わかいうちに) emphasizes the opportunity while still young, rather than merely locating something during youth."} -->
 
-<!-- grammar-card: {"rule":"間 marks the whole span two actions overlap for","hint":"間","example":"母が料理している___、私は宿題をした。","answer":"間","explanation":"している間 means throughout the entire time the mother was cooking."} -->
+<!-- grammar-card: {"id":"aida-throughout","kind":"rule","format":"cloze","priority":"essential","sourceSection":"間 without に — Throughout the Duration","rule":"間 marks the whole span two actions overlap for","hint":"Use the interval form without に; homework continued throughout.","example":"母が料理している___、私は宿題をした。","answer":"間","explanation":"間 (あいだ) presents the homework as extending over the cooking interval; 間に would place it within that interval."} -->
 
 ## Summary
 

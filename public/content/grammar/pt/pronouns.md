@@ -1,5 +1,7 @@
 # Subject Pronouns & Verb Agreement
 
+<!-- vocab-inventory: {"mode":"explicit"} -->
+
 Understanding subject pronouns is crucial because Portuguese verbs change form based on who is performing the action. Brazilian Portuguese has its own unique pronoun system that differs from European Portuguese — most notably the widespread use of **você** and **a gente**.
 
 ## The Brazilian Portuguese Pronoun System
@@ -10,11 +12,21 @@ Understanding subject pronouns is crucial because Portuguese verbs change form b
 | 2nd singular | **você** | voh-say | you |
 | 3rd singular masc. | **ele** | eh-lee | he |
 | 3rd singular fem. | **ela** | eh-lah | she |
-| 1st plural (formal) | **nós** | nohz | we |
+| 1st plural | **nós** | nohz | we |
 | 1st plural (informal) | **a gente** | ah zhen-chee | we |
 | 2nd plural | **vocês** | voh-sehz | you (all) |
 | 3rd plural masc. | **eles** | eh-leez | they (masc.) |
 | 3rd plural fem. | **elas** | eh-lahz | they (fem.) |
+
+<!-- vocab-card: {"id":"vocab-eu","word":"eu","meaning":"I","priority":"optional","sourceSection":"The Brazilian Portuguese Pronoun System"} -->
+<!-- vocab-card: {"id":"vocab-voce","word":"você","meaning":"you (singular)","priority":"essential","sourceSection":"The Brazilian Portuguese Pronoun System"} -->
+<!-- vocab-card: {"id":"vocab-ele","word":"ele","meaning":"he","priority":"optional","sourceSection":"The Brazilian Portuguese Pronoun System"} -->
+<!-- vocab-card: {"id":"vocab-ela","word":"ela","meaning":"she","priority":"optional","sourceSection":"The Brazilian Portuguese Pronoun System"} -->
+<!-- vocab-card: {"id":"vocab-nos","word":"nós","meaning":"we","priority":"optional","sourceSection":"The Brazilian Portuguese Pronoun System"} -->
+<!-- vocab-card: {"id":"vocab-a-gente","word":"a gente","meaning":"we (informal Brazilian usage)","priority":"essential","sourceSection":"The Brazilian Portuguese Pronoun System"} -->
+<!-- vocab-card: {"id":"vocab-voces","word":"vocês","meaning":"you (plural)","priority":"optional","sourceSection":"The Brazilian Portuguese Pronoun System"} -->
+<!-- vocab-card: {"id":"vocab-eles","word":"eles","meaning":"they (masculine or mixed group)","priority":"optional","sourceSection":"The Brazilian Portuguese Pronoun System"} -->
+<!-- vocab-card: {"id":"vocab-elas","word":"elas","meaning":"they (feminine group)","priority":"optional","sourceSection":"The Brazilian Portuguese Pronoun System"} -->
 
 ## Você — The Brazilian "You"
 
@@ -26,6 +38,8 @@ In Brazilian Portuguese, **você** is the standard way to say "you" in most situ
 
 > **Important:** Although **você** means "you" (2nd person), it conjugates as **3rd person** (like ele/ela). This is because **você** historically comes from **Vossa Mercê** (Your Grace).
 
+<!-- grammar-card: {"id":"voce-agreement","kind":"concept","format":"qa","priority":"essential","sourceSection":"Você — The Brazilian \"You\"","rule":"Você addresses the listener but takes third-person singular forms","example":"Does você use the verb form of tu or of ele/ela in standard agreement?","answer":"The third-person singular form of ele/ela.","explanation":"Você fala and ela fala share the same verb form."} -->
+
 ### Tu — Regional Variation
 
 Some regions of Brazil (especially the south and northeast) use **tu** instead of **você**. However, in casual speech, many Brazilians use **tu** with **você** conjugation:
@@ -33,6 +47,9 @@ Some regions of Brazil (especially the south and northeast) use **tu** instead o
 - **Tu fala português?** (too fah-lah por-too-gesh) — Do you speak Portuguese? (informal, common in some regions)
 
 For learning purposes, stick with **você** — it's understood everywhere in Brazil.
+
+<!-- grammar-card: {"id":"tu-regional-agreement","kind":"concept","format":"qa","priority":"optional","sourceSection":"Tu — Regional Variation","rule":"Brazilian tu usage varies by region and register","example":"Does the informal regional Tu fala replace standard Tu falas in every context?","answer":"No. Tu fala occurs in some Brazilian speech; standard tu agreement is tu falas.","explanation":"Regional tu usage is not a universal rule or an error to impose on all speakers."} -->
+<!-- vocab-card: {"id":"vocab-tu","word":"tu","meaning":"you (singular; regional in Brazil)","priority":"optional","sourceSection":"Tu — Regional Variation"} -->
 
 <!-- quiz: {"type":"multiple-choice","question":"How does 'você' conjugate?","options":["Like eu (1st person)","Like tu (2nd person)","Like ele/ela (3rd person)","It has its own unique forms"],"answer":2} -->
 
@@ -57,13 +74,13 @@ For learning purposes, stick with **você** — it's understood everywhere in Br
 - **Nós falamos português** = **A gente fala português** (same meaning, different formality)
 - **Nós vamos à festa** = **A gente vai à festa** (same meaning)
 
-<!-- grammar-card: {"rule":"'A gente' means 'we' but conjugates as 3rd person singular","hint":"A gente fala (not falamos)","example":"A gente _____ (ir) ao cinema hoje.","answer":"vai","explanation":"'A gente' always conjugates like ele/ela/você (3rd person singular): a gente vai, a gente fala, a gente come. Even though it means 'we', never use 'vamos' or 'falamos' with it."} -->
+<!-- grammar-card: {"id":"a-gente-agreement","kind":"rule","format":"cloze","priority":"essential","sourceSection":"A Gente — The Informal \"We\"","rule":"'A gente' means 'we' but conjugates as 3rd person singular","example":"A gente _____ (ir) ao cinema hoje.","answer":"vai","explanation":"In standard agreement, a gente uses vai, not the nós form vamos. Nós is also used in ordinary speech, not only formal settings."} -->
 
 ## Verb Agreement Patterns
 
 ### Group 1: Eu (always unique)
 
-The **eu** form always has its own ending (-o for present tense):
+The **eu** forms illustrated here differ from the other subject groups. Regular present-tense verbs use **-o**; irregular verbs such as **ser** have other forms:
 
 - **Eu falo** — I speak
 - **Eu como** — I eat
@@ -92,6 +109,8 @@ These pronouns share the same plural verb form:
 - **Vocês falam / Eles falam / Elas falam** — You all speak / They speak
 - **Vocês comem / Eles comem / Elas comem** — You all eat / They eat
 
+<!-- grammar-card: {"id":"plural-subject-agreement","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Group 4: Vocês / Eles / Elas (all conjugate the same)","rule":"Vocês takes third-person plural verb forms","example":"Vocês ___ português. (falar; present)","answer":"falam","explanation":"Vocês shares falam with eles and elas; nós instead takes falamos."} -->
+
 <!-- quiz: {"type":"multiple-choice","question":"Which pronouns share the same verb conjugation?","options":["eu and você","nós and a gente","você and ele/ela","nós and vocês"],"answer":2} -->
 
 ## Dropping Pronouns
@@ -105,7 +124,7 @@ However, since **você/ele/ela/a gente** all share the same form, you usually ke
 
 - **Ela fala português** (not just "fala português," which could mean you/he/she/we)
 
-<!-- grammar-card: {"rule":"Pronouns can be dropped when the verb form is unambiguous","hint":"Drop eu, nós (unique forms). Keep você/ele/ela (shared forms)","example":"_____ falamos português. (We speak Portuguese)","answer":"(Nós)","explanation":"pronoun can be dropped — Since 'falamos' can only be 'nós', the pronoun is optional. But 'fala' could be você/ele/ela/a gente, so you should keep the pronoun for clarity."} -->
+<!-- grammar-card: {"id":"subject-omission","kind":"concept","format":"qa","priority":"essential","sourceSection":"Dropping Pronouns","rule":"Pronouns can be dropped when the verb form is unambiguous","example":"Why can Falamos português omit nós more readily than Fala português can identify its subject alone?","answer":"Falamos identifies nós; fala is shared by você, ele, ela, and a gente.","explanation":"Context can also resolve shared forms; an explicit subject helps when the reference would otherwise be unclear.","legacyAliases":[{"rule":"Pronouns can be dropped when the verb form is unambiguous","example":"_____ falamos português. (We speak Portuguese)"}]} -->
 
 ## Formal Address
 
@@ -119,6 +138,9 @@ These conjugate like **você** (3rd person):
 - **O senhor quer café?** (oo seh-nyohr kehr kah-feh) — Would you like coffee, sir?
 - **A senhora mora aqui?** (ah seh-nyoh-rah moh-rah ah-kee) — Do you live here, ma'am?
 
+<!-- vocab-card: {"id":"vocab-o-senhor","word":"o senhor","meaning":"you (respectful address to a man); sir","priority":"optional","sourceSection":"Formal Address"} -->
+<!-- vocab-card: {"id":"vocab-a-senhora","word":"a senhora","meaning":"you (respectful address to a woman); ma'am","priority":"optional","sourceSection":"Formal Address"} -->
+<!-- grammar-card: {"id":"formal-address-agreement","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Formal Address","rule":"O senhor and a senhora take third-person singular forms","example":"A senhora ___ café? (querer; present)","answer":"quer","explanation":"Respectful singular address agrees like você, not like tu."} -->
 ## Mixed Gender Groups
 
 When referring to a mixed-gender group, use the masculine plural:
@@ -128,6 +150,8 @@ When referring to a mixed-gender group, use the masculine plural:
 
 - **Maria e João? Eles são amigos** (eh-leez sow ah-mee-gooz) — Maria and João? They are friends
 - **Maria e Ana? Elas são amigas** (eh-lahz sow ah-mee-gahz) — Maria and Ana? They are friends
+
+<!-- grammar-card: {"id":"mixed-group-pronoun","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Mixed Gender Groups","rule":"Traditional agreement uses eles for a mixed group","example":"Maria e João? ___ são amigos. (They)","answer":"Eles","explanation":"Elas refers to an all-feminine group; eles can refer to an all-masculine or mixed group."} -->
 
 <!-- quiz: {"type":"multiple-choice","question":"How would you refer to a group of 3 women and 1 man?","options":["elas","eles","vocês","a gente"],"answer":1} -->
 

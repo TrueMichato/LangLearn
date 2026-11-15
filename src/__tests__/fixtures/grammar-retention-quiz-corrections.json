@@ -1,0 +1,90 @@
+{
+  "baselineCommit": "605abceda40372fe69c20ca6f19eec6d9b727971",
+  "corrections": [
+    {
+      "lessonKey": "es/relative-pronouns",
+      "position": 2,
+      "rationale": "Cuyo agrees with the possessed noun, not the possessor. Novels corresponds to feminine plural novelas, so cuyas is the only correct agreement.",
+      "original": {
+        "type": "multiple-choice",
+        "question": "'The author whose novels I love' — which form of cuyo is correct?",
+        "options": ["cuyo", "cuya", "cuyos", "cuyas"],
+        "answer": 2
+      },
+      "corrected": {
+        "type": "multiple-choice",
+        "question": "'The author whose novels I love' — which form of cuyo is correct?",
+        "options": ["cuyo", "cuya", "cuyos", "cuyas"],
+        "answer": 3
+      }
+    },
+    {
+      "lessonKey": "pt/numbers-dates",
+      "position": 3,
+      "rationale": "Both São quatro e trinta and São quatro e meia express 4:30. Replacing only the first option with 4:15 removes the duplicate correct meaning while preserving answer 1 and every other quiz field.",
+      "original": {
+        "type": "multiple-choice",
+        "question": "How do you say 'It's 4:30' in Portuguese?",
+        "options": ["São quatro e trinta", "São quatro e meia", "É quatro e meia", "São meia e quatro"],
+        "answer": 1
+      },
+      "corrected": {
+        "type": "multiple-choice",
+        "question": "How do you say 'It's 4:30' in Portuguese?",
+        "options": ["São quatro e quinze", "São quatro e meia", "É quatro e meia", "São meia e quatro"],
+        "answer": 1
+      }
+    },
+    {
+      "lessonKey": "ja/purpose",
+      "position": 2,
+      "rationale": "Both negative ように and negative ために can express the intended purpose in an appropriate context. Specifying ように makes the existing answer unambiguous without declaring the other construction ungrammatical or changing any option or key.",
+      "original": {
+        "type": "multiple-choice",
+        "question": "Which is correct for 'I set an alarm so as not to oversleep'?",
+        "options": ["寝坊するために、アラームをかけた", "寝坊しないように、アラームをかけた", "寝坊しないために、アラームをかけた", "寝坊するように、アラームをかけた"],
+        "answer": 1
+      },
+      "corrected": {
+        "type": "multiple-choice",
+        "question": "Using ように, how do you say 'I set an alarm so as not to oversleep'?",
+        "options": ["寝坊するために、アラームをかけた", "寝坊しないように、アラームをかけた", "寝坊しないために、アラームをかけた", "寝坊するように、アラームをかけた"],
+        "answer": 1
+      }
+    },
+    {
+      "lessonKey": "ja/taekim-desire-volition",
+      "position": 2,
+      "rationale": "An unqualified たい assertion normally presents the speaker's own desire, but third-person uses are possible with appropriate perspective or context. Qualifying the question and its existing correct option removes an absolute grammatical prohibition while preserving the answer key and all other options.",
+      "original": {
+        "type": "multiple-choice",
+        "question": "Why can't you say '彼は行きたい' in normal conversation?",
+        "options": ["行きたい is too casual", "たい can only describe your own desires", "彼 requires humble language", "行く doesn't have a たい form"],
+        "answer": 1
+      },
+      "corrected": {
+        "type": "multiple-choice",
+        "question": "Why is an unqualified '彼は行きたい' often avoided in ordinary conversation?",
+        "options": ["行きたい is too casual", "An unqualified たい assertion normally presents the speaker's own desire", "彼 requires humble language", "行く doesn't have a たい form"],
+        "answer": 1
+      }
+    },
+    {
+      "lessonKey": "ar/istighatha-nudba",
+      "position": 2,
+      "rationale": "The lament's final hāʾ is pausal hāʾ al-sakt, not the possessive suffix -hu. Final هْ matches the taught pausal qalbāh and its existing transliteration; only this vowel mark changes, not the question, answer key, or other choices.",
+      "original": {
+        "type": "multiple-choice",
+        "question": "Which phrase is an example of nudba?",
+        "options": ["وَا قَلْبَاهُ (wā qalbāh)", "كَتَبَ الطَّالِبُ (kataba aṭ-ṭālibu)", "فِي الْبَيْتِ (fī al-bayti)", "لَيْسَ صَعْبًا (laysa ṣaʿban)"],
+        "answer": 0
+      },
+      "corrected": {
+        "type": "multiple-choice",
+        "question": "Which phrase is an example of nudba?",
+        "options": ["وَا قَلْبَاهْ (wā qalbāh)", "كَتَبَ الطَّالِبُ (kataba aṭ-ṭālibu)", "فِي الْبَيْتِ (fī al-bayti)", "لَيْسَ صَعْبًا (laysa ṣaʿban)"],
+        "answer": 0
+      }
+    }
+  ]
+}

@@ -1,5 +1,7 @@
 # Relative Clauses
 
+<!-- vocab-inventory: {"mode":"explicit"} -->
+
 In English, we use words like "who," "which," and "that" to create relative clauses: "the book **that I bought**." Japanese has no relative pronouns — instead, you simply place the modifying clause **directly before the noun**. This lesson shows you how.
 
 ## Basic Concept
@@ -10,6 +12,8 @@ In Japanese, anything that describes a noun goes **before** it:
 - Relative clauses: **友達(ともだち)がくれた** 本(ほん) — the book my friend gave me
 
 The relative clause works just like a long adjective placed before the noun.
+
+<!-- grammar-card: {"id":"relative-order","kind":"concept","format":"qa","priority":"essential","sourceSection":"Basic Concept","rule":"A Japanese relative clause directly precedes its head noun without a relative pronoun","example":"Where does “my friend gave me” go in “the book my friend gave me,” and is a word for “that” required?","answer":"Before 本: 友達がくれた本. No relative pronoun is required.","explanation":"The whole clause modifies the noun like a long adjective."} -->
 
 ## Simple Examples
 
@@ -25,6 +29,9 @@ Relative clause: **昨日買った**本 — the book I bought yesterday
 - **日本で撮(と)った写真(しゃしん)を見せてください。** — Please show me the photos you took in Japan.
 - **友達がくれたプレゼントを大切(たいせつ)にしています。** — I treasure the present my friend gave me.
 - **先生が書いた本を読(よ)みました。** — I read the book the teacher wrote.
+
+<!-- grammar-card: {"id":"relative-past","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Verbs modifying nouns","rule":"A completed action can modify a noun with the plain past form","example":"The cake my mother made: 母が___ケーキ。 (作る)","answer":"作った","explanation":"作る (つくる) becomes plain past 作った before ケーキ, with 母が inside the clause."} -->
+<!-- vocab-card: {"id":"vocab-ryouri","word":"料理","reading":"りょうり","meaning":"cooking; food; a dish","priority":"optional","sourceSection":"Verbs modifying nouns"} -->
 
 <!-- quiz:{"type":"multiple-choice","question":"How do you say 'the cake my mother made'?","options":["母のケーキが作った","ケーキが母を作った","母が作ったケーキ","作った母がケーキ"],"answer":2} -->
 
@@ -49,6 +56,9 @@ Notice: Japanese uses **no relative pronouns** (who, where, when, why). The clau
 - **英語(えいご)を話(はな)せる人を探(さが)しています。** — I'm looking for someone who can speak English.
 - **東京(とうきょう)に住んでいる友達に会(あ)いました。** — I met a friend who lives in Tokyo.
 
+<!-- grammar-card: {"id":"relative-ongoing","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Present tense clauses","rule":"ている can modify a noun to describe an ongoing state or activity","example":"A person who lives here: ここに___人。 (住む)","answer":"住んでいる","explanation":"住む (すむ) becomes 住んでいる before 人, not the polite 住んでいます."} -->
+<!-- grammar-card: {"id":"relative-ability","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Present tense clauses","rule":"A plain potential verb can modify a person noun","example":"Someone who can speak English: 英語を___人。 (話す)","answer":"話せる","explanation":"話す → 話せる; the ability is part of the description before 人."} -->
+
 ### Past tense clauses
 
 - **去年(きょねん)行った国(くに)はタイです。** — The country I went to last year is Thailand.
@@ -67,6 +77,9 @@ Notice: Japanese uses **no relative pronouns** (who, where, when, why). The clau
 - **食べたことがない料理を試(ため)しました。** — I tried food I'd never eaten.
 - **誰(だれ)も住んでいない家がありました。** — There was a house where nobody lives.
 
+<!-- grammar-card: {"id":"relative-negative","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Negative clauses","rule":"A plain negative clause can modify a noun","example":"A person I do not know: ___人。 (知る)","answer":"知らない","explanation":"知る (しる) is godan: 知らない, not 知ない."} -->
+<!-- vocab-card: {"id":"vocab-basho","word":"場所","reading":"ばしょ","meaning":"place; location","priority":"optional","sourceSection":"Negative clauses"} -->
+
 ## Adjective Clauses
 
 Both い-adjectives and な-adjectives can form relative clauses:
@@ -74,7 +87,8 @@ Both い-adjectives and な-adjectives can form relative clauses:
 ### い-adjectives
 
 - **値段(ねだん)が高(たか)いレストランには行きません。** — I don't go to restaurants that are expensive.
-- **景色(けしき)がきれいな場所に住みたいです。** — I want to live in a place with beautiful scenery.
+
+<!-- grammar-card: {"id":"relative-i-adjective","kind":"rule","format":"cloze","priority":"essential","sourceSection":"い-adjectives","rule":"An い-adjective clause keeps final い directly before the noun","example":"A restaurant whose prices are high: 値段が高___レストラン。","answer":"い","explanation":"Use 高い before the noun, without だ or な."} -->
 
 ### な-adjectives
 
@@ -82,15 +96,19 @@ Use **な** before the noun (same as usual):
 
 - **静(しず)かな場所が好きです。** — I like quiet places.
 - **便利(べんり)な道具(どうぐ)を買いました。** — I bought a convenient tool.
+- **景色(けしき)がきれいな場所に住みたいです。** — I want to live in a place with beautiful scenery.
+
+<!-- vocab-card: {"id":"vocab-keshiki","word":"景色","reading":"けしき","meaning":"scenery; view","priority":"optional","sourceSection":"な-adjectives"} -->
+<!-- grammar-card: {"id":"relative-na-adjective","kind":"rule","format":"cloze","priority":"essential","sourceSection":"な-adjectives","rule":"A な-adjective keeps な inside a relative clause","hint":"きれい + 場所","example":"景色(けしき)がきれい___場所に住みたいです。","answer":"な","explanation":"きれい modifies 場所 directly and takes な, not predicate です."} -->
 
 ### Combined verb + adjective clauses
 
 - **駅(えき)から近(ちか)くて値段が安(やす)いアパートを探しています。** — I'm looking for an apartment that's close to the station and cheap.
 - **日本語が上手(じょうず)で、英語も話せる人を探しています。** — I'm looking for someone who's good at Japanese and can also speak English.
 
-<!-- quiz:{"type":"multiple-choice","question":"How do you say 'a person I don't know'?","options":["知らない人","人が知らない","知らなくて人","人の知らない"],"answer":0} -->
+<!-- grammar-card: {"id":"combined-clause-link","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Combined verb + adjective clauses","rule":"A な-adjective description can link with で inside a longer noun modifier","example":"A person good at Japanese who can also speak English: 日本語が上手___、英語も話せる人。","answer":"で","explanation":"上手 is a な-adjective, so で links the first description to the second before the shared head 人."} -->
 
-<!-- grammar-card: {"rule":"A な-adjective keeps な inside a relative clause","hint":"きれい + 場所","example":"景色(けしき)がきれい___場所に住みたいです。","answer":"な","explanation":"きれい modifies 場所 directly, so it needs な rather than the predicate です."} -->
+<!-- quiz:{"type":"multiple-choice","question":"How do you say 'a person I don't know'?","options":["知らない人","人が知らない","知らなくて人","人の知らない"],"answer":0} -->
 
 ## Longer Relative Clauses
 
@@ -102,6 +120,8 @@ Japanese relative clauses can be quite long:
 
 > 💡 Even though these are long, the structure is the same: **[clause] + noun**.
 
+<!-- grammar-card: {"id":"long-clause-head","kind":"rule","format":"qa","priority":"optional","sourceSection":"Longer Relative Clauses","rule":"The head noun follows the entire modifying clause, however long it is","example":"In 私が去年の夏に友達と一緒に行ったレストランは最近閉まりました, what noun does the long clause modify?","answer":"レストラン (restaurant).","explanation":"私が…行った is all before レストラン; the main statement is that the restaurant recently closed."} -->
+
 ## Relative Clauses with の
 
 The particle **の** can replace the noun in some relative clause patterns:
@@ -112,7 +132,7 @@ The particle **の** can replace the noun in some relative clause patterns:
 - **あそこに立(た)っているのは誰ですか。** — Who is the one standing over there?
 - **一番(いちばん)安いのはどれですか。** — Which one is the cheapest?
 
-<!-- grammar-card: {"rule":"の stands in for a noun that is already obvious","hint":"the red one","example":"赤(あか)い___をください。","answer":"の","explanation":"の replaces the thing being asked for, working exactly like English 'one'."} -->
+<!-- grammar-card: {"id":"nominal-no","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Relative Clauses with の","rule":"の stands in for a noun that is already obvious","hint":"the red one","example":"赤(あか)い___をください。","answer":"の","explanation":"の stands for the contextually understood thing, as in English the red one."} -->
 
 ## Common Patterns with Relative Clauses
 
@@ -121,11 +141,14 @@ The particle **の** can replace the noun in some relative clause patterns:
 - **富士山(ふじさん)に登(のぼ)ったことがあります。** — I have climbed Mt. Fuji.
 - **日本に行ったことがない人も多いです。** — There are also many people who have never been to Japan.
 
+<!-- grammar-card: {"id":"experience-koto","kind":"rule","format":"cloze","priority":"optional","sourceSection":"〜ことがある (have the experience of)","rule":"Plain past plus ことがある expresses experience","example":"I have climbed Mt. Fuji: 富士山に登った___があります。","answer":"こと","explanation":"登った modifies こと to name the experience; がある says that experience exists."} -->
+
 ### 〜ところ (the place/moment where)
 
 - **今住んでいるところは静かです。** — The place where I live now is quiet.
 - **食べているところを写真に撮られました。** — Someone took a photo of me while I was eating.
 
+<!-- grammar-card: {"id":"tokoro-moment","kind":"concept","format":"qa","priority":"optional","sourceSection":"〜ところ (the place/moment where)","rule":"ところ can refer to a moment in an action, not just a physical place","example":"What does 食べているところ refer to when someone takes a photo of it?","answer":"The moment or scene of someone eating, not a place named eating.","explanation":"The modifying clause gives ところ its temporal or situational meaning."} -->
 <!-- quiz:{"type":"multiple-choice","question":"'昨日買ったのはこれです' — what does の replace?","options":["A person","A place","A thing (the item bought)","A time"],"answer":2} -->
 
 ## Summary
@@ -135,6 +158,8 @@ The particle **の** can replace the noun in some relative clause patterns:
 - Use plain form (not です/ます) inside relative clauses
 - の can replace the noun when the context is clear
 - Clauses can be as long as needed — just keep them before the noun
+
+<!-- grammar-card: {"id":"relative-plain-form","kind":"concept","format":"qa","priority":"essential","sourceSection":"Summary","rule":"Ordinary relative clauses use plain rather than polite predicate forms","example":"For “the book I bought,” should an ordinary relative clause use 買った本 or 買いました本?","answer":"買った本.","explanation":"The main sentence may end politely, but the noun-modifying clause normally uses plain form."} -->
 
 Practice by describing things around you: "the coffee I'm drinking," "the chair I'm sitting on," "the friend who called me." Think of the Japanese clause and put it before the noun!
 

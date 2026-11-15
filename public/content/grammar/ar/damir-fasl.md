@@ -1,5 +1,7 @@
 # The Separating Pronoun (Ḍamīr al-Faṣl)
 
+<!-- vocab-inventory: {"mode":"explicit"} -->
+
 **ضَمِيرُ الْفَصْلِ** (ḍamīru al-faṣli) is an independent pronoun placed between two definite elements. It helps separate subject and predicate, adds emphasis, and prevents the second element from being read as a simple adjective.
 
 ## Core idea
@@ -7,6 +9,11 @@
 Compare **زَيْدٌ الْمُدَرِّسُ** (Zaydun al-mudarrisu) — Zayd, the teacher or Zayd is the teacher, with **زَيْدٌ هُوَ الْمُدَرِّسُ** (Zaydun huwa al-mudarrisu) — Zayd is indeed the teacher. The pronoun **هُوَ** (huwa) makes the predicate relationship clear and emphatic.
 
 ## Forms and examples
+
+<!-- vocab-card: {"id":"vocab-huwa","word":"هُوَ","reading":"huwa","meaning":"he; it (masculine singular independent pronoun)","priority":"optional","sourceSection":"Forms and examples"} -->
+<!-- vocab-card: {"id":"vocab-hiya","word":"هِيَ","reading":"hiya","meaning":"she; it (feminine singular independent pronoun)","priority":"optional","sourceSection":"Forms and examples"} -->
+<!-- vocab-card: {"id":"vocab-hum","word":"هُمْ","reading":"hum; humu in the connected example","meaning":"they; masculine plural independent pronoun","priority":"optional","sourceSection":"Forms and examples"} -->
+<!-- grammar-card: {"id":"inna-case-unchanged","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Forms and examples","rule":"A separating pronoun does not undo إِنَّ government.","example":"إِنَّ ___ هُوَ النُّورُ. (الْعِلْمُ; knowledge is truly the light)","answer":"الْعِلْمَ","explanation":"The noun after إِنَّ remains accusative and the predicate remains nominative despite the intervening pronoun."} -->
 
 | Topic | Separating pronoun | Predicate | Example |
 |---|---|---|---|
@@ -21,7 +28,8 @@ Compare **زَيْدٌ الْمُدَرِّسُ** (Zaydun al-mudarrisu) — Zayd
 
 Ḍamīr al-faṣl usually has no new case role of its own; it points back to the first element and highlights the second as the predicate. It is common between definite nouns and after particles such as **إِنَّ** (inna) — indeed: **إِنَّ الْقُرْآنَ هُوَ الْهُدَى** (inna al-Qurʾāna huwa al-hudā) — the Qur'an is guidance itself.
 
-<!-- grammar-card: {"rule": "Ḍamīr al-faṣl is an independent pronoun inserted between a definite subject and definite predicate for separation and emphasis.", "hint": "The pronoun matches the first element but does not replace the predicate.", "example": "الْحَقُّ هُوَ الْوَاضِحُ (al-ḥaqqu huwa al-wāḍiḥu)", "answer": "The truth is the clear thing", "explanation": "هُوَ separates الْحَقُّ from الْوَاضِحُ and confirms that the second definite phrase is the predicate."} -->
+<!-- grammar-card: {"id":"separation-function","kind":"concept","format":"qa","priority":"essential","sourceSection":"Usage notes","rule":"Ḍamīr al-faṣl is an independent pronoun inserted between a definite subject and definite predicate for separation and emphasis.","example":"What does هُوَ clarify in الْحَقُّ هُوَ الْوَاضِحُ?","answer":"The second definite phrase is the predicate, not merely an adjective modifying the first.","explanation":"The pronoun emphasizes the predicative relationship and is not itself the lexical predicate.","legacyAliases":[{"rule":"Ḍamīr al-faṣl is an independent pronoun inserted between a definite subject and definite predicate for separation and emphasis.","example":"الْحَقُّ هُوَ الْوَاضِحُ (al-ḥaqqu huwa al-wāḍiḥu)"}]} -->
+<!-- grammar-card: {"id":"fasl-case-role","kind":"concept","format":"qa","priority":"optional","sourceSection":"Usage notes","rule":"The separating pronoun has no independent case position in the faṣl analysis.","example":"In the ḍamīr al-faṣl analysis, does the separating pronoun introduce another independently case-governed noun?","answer":"No. It has no independent case position in that analysis.","explanation":"It points back to the first element and distinguishes the predicate rather than adding a new participant."} -->
 
 ## Practice patterns
 
@@ -33,7 +41,7 @@ Insert a matching pronoun when the intended meaning is emphatic identity:
 
 <!-- quiz: {"type": "multiple-choice", "question": "Which pronoun best fits الْمَدِينَةُ ___ الْقَاهِرَةُ for a separating pronoun?", "options": ["هِيَ", "هُوَ", "هُمْ", "أَنْتَ"], "answer": 0} -->
 
-<!-- grammar-card: {"rule": "The separating pronoun should match the first definite element in gender and number.", "hint": "For a feminine singular topic, choose هِيَ.", "example": "الْجَامِعَةُ هِيَ الْمَسْؤُولَةُ (al-jāmiʿatu hiya al-masʾūlatu)", "answer": "The university is the responsible party", "explanation": "الْجَامِعَةُ is feminine singular, so the separating pronoun is هِيَ."} -->
+<!-- grammar-card: {"id":"feminine-fasl","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Practice patterns","rule":"The separating pronoun should match the first definite element in gender and number.","example":"الْجَامِعَةُ ___ الْمَسْؤُولَةُ. (insert a separating pronoun)","answer":"هِيَ","explanation":"The first element is feminine singular, so its separating pronoun agrees.","legacyAliases":[{"rule":"The separating pronoun should match the first definite element in gender and number.","example":"الْجَامِعَةُ هِيَ الْمَسْؤُولَةُ (al-jāmiʿatu hiya al-masʾūlatu)"}]} -->
 
 ## Sources
 

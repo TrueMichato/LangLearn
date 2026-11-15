@@ -1,5 +1,7 @@
 # The Gerund and Progressive Tenses (Gerúndio e Tempos Progressivos)
 
+<!-- vocab-inventory: {"mode":"explicit"} -->
+
 In Brazilian Portuguese, the gerund is commonly used to express ongoing actions, similar to the English "-ing" form. A common variety difference is Brazilian **estou falando** versus European **estou a falar** (I am speaking). These are tendencies, not a ban on gerunds in European Portuguese.
 
 ## Gerund Formation
@@ -52,6 +54,11 @@ Even verbs that are irregular elsewhere can follow the usual replacement rule he
 
 ## Present Progressive: estar + gerund
 
+<!-- vocab-card: {"id":"vocab-estudar","word":"estudar","meaning":"to study","priority":"optional","sourceSection":"Present Progressive: estar + gerund"} -->
+<!-- vocab-card: {"id":"vocab-cozinhar","word":"cozinhar","meaning":"to cook","priority":"optional","sourceSection":"Present Progressive: estar + gerund"} -->
+<!-- vocab-card: {"id":"vocab-trabalhar","word":"trabalhar","meaning":"to work","priority":"optional","sourceSection":"Present Progressive: estar + gerund"} -->
+<!-- vocab-card: {"id":"vocab-aprender","word":"aprender","meaning":"to learn","priority":"optional","sourceSection":"Present Progressive: estar + gerund"} -->
+
 The most common progressive form combines **estar** with the gerund to express what is happening right now:
 
 - **Eu estou estudando português.** (eu es-TOH es-too-DAN-doo) — I am studying Portuguese.
@@ -73,6 +80,8 @@ In informal spoken Brazilian Portuguese, **estar** is often shortened. Use the f
 
 ## Past Progressive: estava + gerund
 
+<!-- vocab-card: {"id":"vocab-ler","word":"ler","meaning":"to read","priority":"optional","sourceSection":"Past Progressive: estava + gerund"} -->
+
 To express what was happening at a specific moment in the past:
 
 - **Eu estava dormindo quando você ligou.** (eu es-TAH-vah dor-MEEN-doo) — I was sleeping when you called.
@@ -84,20 +93,29 @@ To express what was happening at a specific moment in the past:
 
 ### continuar + gerund (to keep doing)
 
+<!-- vocab-card: {"id":"vocab-continuar","word":"continuar","meaning":"to continue; to keep doing","priority":"optional","sourceSection":"continuar + gerund (to keep doing)"} -->
+
 - **Ele continua estudando mesmo cansado.** (EH-lee con-CHEE-noo-ah es-too-DAN-doo) — He keeps studying even though he's tired.
 - **Continuamos tentando até conseguir.** (con-chee-noo-AH-mohs ten-TAN-doo) — We keep trying until we succeed.
 
 ### ficar + gerund (to stay doing / end up doing)
+
+<!-- vocab-card: {"id":"vocab-esperar","word":"esperar","meaning":"to wait; to wait for","priority":"optional","sourceSection":"ficar + gerund (to stay doing / end up doing)"} -->
 
 - **Ela ficou esperando por horas.** (EH-lah fee-KOH es-peh-RAN-doo) — She stayed waiting for hours.
 - **Não fica falando isso!** (nown FEE-kah fah-LAN-doo) — Don't keep saying that!
 
 ### ir + gerund (gradual action)
 
+<!-- vocab-card: {"id":"vocab-aos-poucos","word":"aos poucos","meaning":"little by little","priority":"optional","sourceSection":"ir + gerund (gradual action)"} -->
+<!-- vocab-card: {"id":"vocab-melhorar","word":"melhorar","meaning":"to improve; to get better","priority":"optional","sourceSection":"ir + gerund (gradual action)"} -->
+
 - **A situação vai melhorando aos poucos.** (ah see-too-ah-SOWN vai meh-lyo-RAN-doo) — The situation keeps getting better little by little.
 - **O dia foi escurecendo.** (oo JEE-ah foy es-koo-reh-SEN-doo) — The day gradually got dark.
 
 ### andar + gerund (to go around doing)
+
+<!-- vocab-card: {"id":"vocab-demais","word":"demais","meaning":"too much","priority":"optional","sourceSection":"andar + gerund (to go around doing)"} -->
 
 - **Ele anda trabalhando demais.** (EH-lee AN-dah trah-bah-LYAN-doo) — He's been working too much (lately).
 - **Ando pensando em mudar de cidade.** (AN-doo pen-SAN-doo) — I've been thinking about moving to another city.

@@ -1,5 +1,7 @@
 # Impersonal & Weather Verbs (plouă, trebuie, se pare)
 
+<!-- vocab-inventory: {"mode":"explicit"} -->
+
 Impersonal verbs do not have a normal personal subject like **eu** or **noi**. Romanian uses them for weather, necessity, possibility, appearance, and many feelings or needs.
 
 ## Weather Verbs
@@ -21,6 +23,15 @@ Weather verbs usually appear in the third person singular.
 
 <!-- quiz: {"type":"multiple-choice","question":"Which verb means it is raining?","options":["ninge","plouă","trebuie","pare"],"answer":1} -->
 
+<!-- vocab-card: {"id":"vocab-ploua","priority":"essential","sourceSection":"Weather Verbs","word":"plouă","meaning":"it rains; it is raining"} -->
+<!-- vocab-card: {"id":"vocab-ninge","priority":"essential","sourceSection":"Weather Verbs","word":"ninge","meaning":"it snows; it is snowing"} -->
+<!-- vocab-card: {"id":"vocab-tuna","priority":"optional","sourceSection":"Weather Verbs","word":"tună","meaning":"it thunders; it is thundering"} -->
+<!-- vocab-card: {"id":"vocab-fulgera","priority":"optional","sourceSection":"Weather Verbs","word":"fulgeră","meaning":"there is lightning"} -->
+<!-- vocab-card: {"id":"vocab-se-insenineaza","priority":"optional","sourceSection":"Weather Verbs","word":"se înseninează","meaning":"it is clearing up (weather)"} -->
+<!-- vocab-card: {"id":"vocab-se-intuneca","priority":"optional","sourceSection":"Weather Verbs","word":"se întunecă","meaning":"it is getting dark"} -->
+<!-- grammar-card: {"id":"weather-rain","priority":"essential","sourceSection":"Weather Verbs","kind":"rule","format":"cloze","rule":"Weather verbs usually use third-person singular forms","example":"Afară ___ tare. (It is raining hard.)","answer":"plouă","explanation":"Plouă is the third-person singular weather form; no English-style it pronoun is needed."} -->
+<!-- grammar-card: {"id":"weather-person","priority":"essential","sourceSection":"Weather Verbs","kind":"concept","format":"qa","rule":"Ordinary weather predicates usually take third-person singular","example":"Does Romanian normally need an explicit pronoun meaning it before plouă?","answer":"No. The weather verb normally stands in the third-person singular without a dummy personal subject.","explanation":"No. The weather verb normally stands in the third-person singular without a dummy personal subject."} -->
+
 ## Weather with e / este
 
 Romanian also uses **e** or **este** with weather nouns and adjectives.
@@ -38,7 +49,12 @@ Romanian also uses **e** or **este** with weather nouns and adjectives.
 - **Dimineața era ceață.** — In the morning it was foggy.
 - **La munte bate vântul tare.** — In the mountains the wind is blowing hard.
 
-<!-- grammar-card: {"rule":"Weather verbs usually use third-person singular forms","hint":"it rains = plouă; it snows = ninge","example":"Afară ___ tare. (It is raining hard.)","answer":"plouă","explanation":"Plouă is the impersonal third-person singular weather verb meaning it rains."} -->
+<!-- vocab-card: {"id":"vocab-e-frig","priority":"optional","sourceSection":"Weather with e / este","word":"E frig.","meaning":"It is cold."} -->
+<!-- vocab-card: {"id":"vocab-e-cald","priority":"optional","sourceSection":"Weather with e / este","word":"E cald.","meaning":"It is hot."} -->
+<!-- vocab-card: {"id":"vocab-e-soare","priority":"optional","sourceSection":"Weather with e / este","word":"E soare.","meaning":"It is sunny."} -->
+<!-- vocab-card: {"id":"vocab-e-ceata","priority":"optional","sourceSection":"Weather with e / este","word":"E ceață.","meaning":"It is foggy."} -->
+<!-- vocab-card: {"id":"vocab-e-vant","priority":"optional","sourceSection":"Weather with e / este","word":"E vânt.","meaning":"It is windy."} -->
+<!-- vocab-card: {"id":"vocab-bate-vantul","priority":"optional","sourceSection":"Weather with e / este","word":"Bate vântul.","meaning":"The wind is blowing."} -->
 
 ## trebuie, se poate, se pare
 
@@ -59,6 +75,14 @@ These impersonal expressions are extremely common.
 
 <!-- quiz: {"type":"multiple-choice","question":"How do you say I have to leave now?","options":["Trebuie să plec acum.","Trebuie plec acum.","Mă trebuie să plec acum.","Trebuiesc să plec acum."],"answer":0} -->
 
+<!-- vocab-card: {"id":"vocab-trebuie","priority":"optional","sourceSection":"trebuie, se poate, se pare","word":"trebuie","meaning":"it is necessary; must (with să)"} -->
+<!-- vocab-card: {"id":"vocab-se-poate","priority":"optional","sourceSection":"trebuie, se poate, se pare","word":"se poate","meaning":"it is possible; one may"} -->
+<!-- vocab-card: {"id":"vocab-nu-se-poate","priority":"optional","sourceSection":"trebuie, se poate, se pare","word":"nu se poate","meaning":"it is not possible; it is not allowed"} -->
+<!-- vocab-card: {"id":"vocab-se-pare","priority":"optional","sourceSection":"trebuie, se poate, se pare","word":"se pare","meaning":"it seems"} -->
+<!-- vocab-card: {"id":"vocab-merita","priority":"optional","sourceSection":"trebuie, se poate, se pare","word":"merită","meaning":"it is worth it"} -->
+<!-- grammar-card: {"id":"necessity-sa","priority":"essential","sourceSection":"trebuie, se poate, se pare","kind":"rule","format":"cloze","rule":"Trebuie normally introduces a personal action with să","example":"Trebuie ___ plec acum.","answer":"să","explanation":"The person is expressed by plec in the să clause."} -->
+<!-- grammar-card: {"id":"appearance-ca","priority":"optional","sourceSection":"trebuie, se poate, se pare","kind":"rule","format":"cloze","rule":"Se pare introduces a proposition with că","example":"Se pare ___ trenul întârzie.","answer":"că","explanation":"Că introduces the proposition that the train is late."} -->
+
 ## Dative Experiencers
 
 Some Romanian expressions put the experiencer in the dative, not as a normal subject. English often uses **I** as the subject.
@@ -75,9 +99,14 @@ Some Romanian expressions put the experiencer in the dative, not as a normal sub
 - **Ne trebuie două bilete.** — We need two tickets.
 - **Le e frică de furtună.** — They are afraid of the storm.
 
-The thing liked or needed often controls the verb: **Îmi place cartea** (singular), but **Îmi plac cărțile** (plural).
+With **a plăcea**, the thing liked controls the verb: **Îmi place cartea** (singular), but **Îmi plac cărțile** (plural). Do not extend this alternation mechanically to **a trebui**: in the everyday present-tense need construction, **trebuie** usually stays unchanged, as in **Ne trebuie două bilete**.
 
 <!-- quiz: {"type":"multiple-choice","question":"Which sentence correctly means I like the books?","options":["Îmi place cărțile.","Îmi plac cărțile.","Eu plac cărțile.","Mă plac cărțile."],"answer":1} -->
+
+<!-- grammar-card: {"id":"liked-flowers-agreement","priority":"essential","sourceSection":"Dative Experiencers","kind":"rule","format":"cloze","rule":"In îmi place constructions, the liked thing controls singular or plural agreement","example":"Îmi ___ florile. (I like the flowers.)","answer":"plac","explanation":"Florile is plural, so use plac."} -->
+<!-- vocab-card: {"id":"vocab-mi-e-dor","priority":"optional","sourceSection":"Dative Experiencers","word":"Mi-e dor de tine.","meaning":"I miss you."} -->
+<!-- vocab-card: {"id":"vocab-le-e-frica","priority":"optional","sourceSection":"Dative Experiencers","word":"Le e frică.","meaning":"They are afraid."} -->
+<!-- grammar-card: {"id":"need-like-agreement","priority":"optional","sourceSection":"Dative Experiencers","kind":"concept","format":"qa","rule":"Place alternates with plac; everyday present trebuie usually remains unchanged","example":"Must plural tickets force the same verb change in Ne trebuie două bilete as plural books do in Îmi plac cărțile?","answer":"No. A plăcea agrees as place/plac, but present trebuie usually remains unchanged in the everyday need construction.","explanation":"No. A plăcea agrees as place/plac, but present trebuie usually remains unchanged in the everyday need construction."} -->
 
 ## Body and Feeling Expressions
 
@@ -89,7 +118,8 @@ Romanian often uses body-part subjects with **a durea**.
 
 Notice the verb agrees with the body part: **capul doare** (singular), **ochii dor** (plural).
 
-<!-- grammar-card: {"rule":"In îmi place constructions, the liked thing controls singular or plural agreement","hint":"cartea place, cărțile plac","example":"Îmi ___ florile. (I like the flowers.)","answer":"plac","explanation":"Florile is plural, so the verb is plac: Îmi plac florile."} -->
+<!-- vocab-card: {"id":"vocab-a-durea","priority":"optional","sourceSection":"Body and Feeling Expressions","word":"a durea","meaning":"to hurt; to ache"} -->
+<!-- grammar-card: {"id":"pain-plural-body","priority":"essential","sourceSection":"Body and Feeling Expressions","kind":"rule","format":"cloze","rule":"A durea agrees with the body part while the sufferer is an accusative clitic","example":"Îl ___ ochii. (His eyes hurt.)","answer":"dor","explanation":"Ochii is plural, so use dor; the experiencer is îl, not dative îi."} -->
 
 ## Sources
 

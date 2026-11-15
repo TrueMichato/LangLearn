@@ -1,5 +1,7 @@
 # The Interpreted Maṣdar: an + Verb as a Noun
 
+<!-- vocab-inventory: {"mode":"explicit"} -->
+
 Arabic can turn a whole verb phrase into a noun-like idea. The structure **أَنْ** (an) plus a subjunctive imperfect verb is called a **مَصْدَرٌ مُؤَوَّلٌ** (maṣdarun muʾawwalun), an “interpreted verbal noun.”
 
 ## Core idea
@@ -14,21 +16,30 @@ Arabic can turn a whole verb phrase into a noun-like idea. The structure **أَ�
 | Subject-like idea | **يُسْعِدُنِي أَنْ تَنْجَحَ** (yusʿidunī an tanjaḥa) | **يُسْعِدُنِي نَجَاحُكَ** (yusʿidunī najāḥuka) | Your success makes me happy. |
 | After purpose **لِـ** | **جِئْتُ لِأَنْ أَتَعَلَّمَ** (jiʾtu li-an ataʿallama) | **جِئْتُ لِلتَّعَلُّمِ** (jiʾtu lit-taʿallumi) | I came to learn. |
 
+<!-- vocab-card: {"id":"vocab-dirasah","word":"الدِّرَاسَةَ","reading":"ad-dirāsata","meaning":"study; studying","priority":"optional","sourceSection":"Common roles"} -->
+<!-- vocab-card: {"id":"vocab-najahuka","word":"نَجَاحُكَ","reading":"najāḥuka","meaning":"your success","priority":"optional","sourceSection":"Common roles"} -->
+<!-- vocab-card: {"id":"vocab-taallum","word":"التَّعَلُّمِ","reading":"at-taʿallumi","meaning":"learning","priority":"optional","sourceSection":"Common roles"} -->
+<!-- grammar-card: {"id":"clause-can-be-subject","kind":"rule","format":"qa","priority":"optional","sourceSection":"Common roles","rule":"An interpreted maṣdar can fill a subject role as well as an object role.","example":"What makes the speaker happy in يُسْعِدُنِي أَنْ تَنْجَحَ?","answer":"Your succeeding; أَنْ تَنْجَحَ functions as the subject-like cause of happiness.","explanation":"The phrase can be paraphrased by nominative نَجَاحُكَ, your success. It is not the object represented by -nī."} -->
+<!-- grammar-card: {"id":"purpose-clause-versus-noun","kind":"concept","format":"qa","priority":"optional","sourceSection":"Common roles","rule":"A purpose phrase can contain an interpreted maṣdar or a regular genitive maṣdar.","example":"Why is أَتَعَلَّمَ subjunctive in لِأَنْ أَتَعَلَّمَ while التَّعَلُّمِ is genitive in لِلتَّعَلُّمِ?","answer":"أَنْ governs the verb's subjunctive mood; لِـ gives the noun phrase its genitive role, visibly marked on the ordinary maṣdar.","explanation":"The whole interpreted phrase occupies the genitive position after li-, but the verb inside still has mood rather than noun case."} -->
+
 <!-- quiz: {"type": "multiple-choice", "question": "What mood does أَنْ (an) usually cause in the following imperfect verb?", "options": ["Subjunctive", "Jussive", "Imperative", "Nominative only"], "answer": 0} -->
 
 ## Case and meaning
 
 The whole phrase has a sentence role even though the verb inside is not marked for case. In **أُحِبُّ أَنْ أَقْرَأَ** (uḥibbu an aqraʾa) — I like to read, the interpreted maṣdar is the object of **أُحِبُّ** (uḥibbu).
 
-<!-- grammar-card: {"rule": "أَنْ plus a subjunctive imperfect verb can function like a verbal noun phrase.", "hint": "Replace it mentally with the act of doing something.", "example": "أُفَضِّلُ أَنْ أَكْتُبَ (ufaḍḍilu an aktuba)", "answer": "I prefer to write", "explanation": "أَنْ أَكْتُبَ means the act of writing and serves as the object of أُفَضِّلُ."} -->
+<!-- grammar-card: {"id":"an-subjunctive-writing","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Case and meaning","rule":"أَنْ plus a subjunctive imperfect verb can function like a verbal noun phrase.","example":"Put أَكْتُبُ into the required mood: أُفَضِّلُ أَنْ ___.","answer":"أَكْتُبَ","explanation":"أَكْتُبَ (aktuba) is subjunctive after أَنْ. The whole أَنْ أَكْتُبَ phrase serves as the object of أُفَضِّلُ.","legacyAliases":[{"rule":"أَنْ plus a subjunctive imperfect verb can function like a verbal noun phrase.","example":"أُفَضِّلُ أَنْ أَكْتُبَ (ufaḍḍilu an aktuba)"}]} -->
+<!-- grammar-card: {"id":"whole-phrase-role-inner-mood","kind":"concept","format":"qa","priority":"essential","sourceSection":"Case and meaning","rule":"The interpreted phrase has a noun-like sentence role while its internal verb retains verbal mood.","example":"In أُحِبُّ أَنْ أَقْرَأَ, is the object only the particle أَنْ, or the whole following action phrase?","answer":"The whole أَنْ أَقْرَأَ phrase is the object; أَقْرَأَ itself is a subjunctive verb.","explanation":"Do not assign a nominal accusative case ending to the verb merely because its clause fills an object position."} -->
 
 ## Practice patterns
 
 The subject of the verb inside the interpreted maṣdar can be clear from the verb ending or context: **أَرَادَتْ أَنْ تُسَافِرَ** (arādat an tusāfira) — She wanted to travel. With attached objects, the whole phrase still works as one noun-like unit: **أَتَمَنَّى أَنْ تُسَاعِدَنِي** (atamannā an tusāʿidanī) — I hope that you help me.
 
+<!-- grammar-card: {"id":"internal-person-and-object","kind":"rule","format":"qa","priority":"optional","sourceSection":"Practice patterns","rule":"The embedded verb can carry its own subject reference and attached object.","example":"Who helps whom in أَتَمَنَّى أَنْ تُسَاعِدَنِي?","answer":"You help me; the speaker is the one hoping.","explanation":"The ta- subject reference and -nī object remain inside the noun-like action phrase. Nominal function does not erase the verb's participants."} -->
+
 <!-- quiz: {"type": "multiple-choice", "question": "Which phrase is a مَصْدَرٌ مُؤَوَّلٌ (maṣdarun muʾawwalun)?", "options": ["أَنْ تَقْرَأَ (an taqraʾa) — that you read", "قِرَاءَةٌ (qirāʾatun) — reading", "الْكِتَابُ (al-kitābu) — the book", "فِي الْبَيْتِ (fī al-bayti) — in the house"], "answer": 0} -->
 
-<!-- grammar-card: {"rule": "A masdar muʾawwal can often be paraphrased with a regular maṣdar, though the wording and emphasis may change.", "hint": "Try replacing أَنْ plus verb with a noun of action.", "example": "يُفْرِحُنِي أَنْ تَحْضُرَ (yufriḥunī an taḥḍura)", "answer": "Your attending makes me happy", "explanation": "The phrase أَنْ تَحْضُرَ can be understood like حُضُورُكَ, your attendance."} -->
+<!-- grammar-card: {"id":"attendance-masdar-paraphrase","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Practice patterns","rule":"A masdar muʾawwal can often be paraphrased with a regular maṣdar, though the wording and emphasis may change.","example":"Replace أَنْ تَحْضُرَ with the ordinary maṣdar meaning “your attendance”: يُفْرِحُنِي ___.","answer":"حُضُورُكَ","explanation":"حُضُورُكَ (ḥuḍūruka) is nominative as what makes the speaker happy. Preserve the addressee with -ka; a paraphrase can alter wording and emphasis.","legacyAliases":[{"rule":"A masdar muʾawwal can often be paraphrased with a regular maṣdar, though the wording and emphasis may change.","example":"يُفْرِحُنِي أَنْ تَحْضُرَ (yufriḥunī an taḥḍura)"}]} -->
 
 ## Sources
 

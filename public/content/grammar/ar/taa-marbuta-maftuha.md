@@ -1,5 +1,7 @@
 # Tāʾ Marbūṭa vs the Open Tāʾ
 
+<!-- vocab-inventory: {"mode":"explicit"} -->
+
 **تَاءٌ مَرْبُوطَةٌ** (tāʾ marbūṭatun) — tied tāʾ is the rounded final **ة / ـة** often used on feminine nouns and adjectives. **تَاءٌ مَفْتُوحَةٌ** (tāʾ maftūḥatun) — open tāʾ is the normal letter **ت / ـت** and is always pronounced as t.
 
 ## Core idea
@@ -16,13 +18,18 @@ Tāʾ marbūṭa behaves like a quiet feminine ending. In careful connected spee
 | **ـاتٌ** | sound feminine plural | **طَالِبَاتٌ** (ṭālibātun) — female students |
 | **ـتٌ** | root letter t | **وَقْتٌ** (waqtun) — time |
 
+<!-- vocab-card: {"id":"vocab-madrasah","word":"مَدْرَسَةٌ","reading":"madrasatun","meaning":"school","priority":"optional","sourceSection":"Core idea"} -->
+<!-- vocab-card: {"id":"vocab-bayt","word":"بَيْتٌ","reading":"baytun","meaning":"house","priority":"optional","sourceSection":"Core idea"} -->
+<!-- vocab-card: {"id":"vocab-talibah","word":"طَالِبَةٌ","reading":"ṭālibatun","meaning":"female student","priority":"optional","sourceSection":"Forms and examples"} -->
+<!-- vocab-card: {"id":"vocab-waqt","word":"وَقْتٌ","reading":"waqtun","meaning":"time","priority":"optional","sourceSection":"Forms and examples"} -->
+<!-- grammar-card: {"id":"pause-open-t","kind":"concept","format":"qa","priority":"essential","sourceSection":"Core idea","rule":"Open tāʾ keeps its consonant in pause, unlike the usual pausal reading of tāʾ marbūṭa.","example":"In pause, does the final ت in بَيْتٌ behave like the ة in مَدْرَسَةٌ?","answer":"No. بَيْت keeps t, while مَدْرَسَة usually ends in -a or -ah.","explanation":"Open ت is a consonant in a word or verb ending; tied ة often changes its pausal realization."} -->
 <!-- quiz: {"type":"multiple-choice","question":"What happens to تَاءٌ مَرْبُوطَةٌ (tāʾ marbūṭatun) — tied tāʾ in careful connected speech?","options":["It is usually pronounced -at","It always disappears completely","It becomes the letter m","It marks masculine plural"],"answer":0} -->
 
 ## Usage notes
 
 A possessive suffix reveals the t clearly. **مَدْرَسَةٌ** (madrasatun) — school becomes **مَدْرَسَتُهَا** (madrasatuhā) — her school. That does not mean the base word is written with open tāʾ; the suffix simply connects to the feminine ending.
 
-<!-- grammar-card: {"rule":"Tāʾ marbūṭa is pronounced -at when connected, but often -ah or -a when pausing.","hint":"Connected speech wakes up the t.","example":"Read in connection: طَالِبَةٌ جَدِيدَةٌ = ___.","answer":"ṭālibatun jadīdatun","explanation":"a new female student — Both feminine endings are tied tāʾ, so careful connected reading pronounces them with -at."} -->
+<!-- grammar-card: {"id":"connected-t-reading","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Usage notes","rule":"Tāʾ marbūṭa is pronounced -at when connected, but often -ah or -a when pausing.","hint":"Connected speech wakes up the t.","example":"Read in connection: طَالِبَةٌ جَدِيدَةٌ = ___.","answer":"ṭālibatun jadīdatun","explanation":"In this fully inflected reading both feminine endings are pronounced -atun. At a final pause the last word can instead end -a(h)."} -->
 
 ## Common contrasts
 
@@ -33,9 +40,14 @@ A possessive suffix reveals the t clearly. **مَدْرَسَةٌ** (madrasatun)
 
 > If the t belongs to the root or to a verb ending, expect open **ت**. If it is a feminine noun/adjective ending, expect **ة**.
 
+<!-- vocab-card: {"id":"vocab-bint","word":"بِنْتٌ","reading":"bintun","meaning":"girl","priority":"optional","sourceSection":"Common contrasts"} -->
+<!-- vocab-card: {"id":"vocab-ukht","word":"أُخْتٌ","reading":"ʾukhtun","meaning":"sister","priority":"optional","sourceSection":"Common contrasts"} -->
+<!-- vocab-card: {"id":"vocab-ghurfah","word":"غُرْفَةٌ","reading":"ghurfatun","meaning":"room","priority":"optional","sourceSection":"Common contrasts"} -->
+<!-- vocab-card: {"id":"vocab-sayyarah","word":"سَيَّارَةٌ","reading":"sayyāratun","meaning":"car","priority":"optional","sourceSection":"Common contrasts"} -->
+<!-- grammar-card: {"id":"gender-not-letter-test","kind":"concept","format":"qa","priority":"essential","sourceSection":"Common contrasts","rule":"Feminine meaning alone does not require tāʾ marbūṭa.","example":"Must the feminine nouns for girl and sister end in ة?","answer":"No. بِنْتٌ and أُخْتٌ end in open ت.","explanation":"Keep the actual lexical spelling; feminine gender does not turn a word's fixed t into ة."} -->
 <!-- quiz: {"type":"multiple-choice","question":"Which word should normally be written with تَاءٌ مَرْبُوطَةٌ (tāʾ marbūṭatun) — tied tāʾ?","options":["بَيْتٌ (baytun) — house","كَتَبَتْ (katabat) — she wrote","غُرْفَةٌ (ghurfatun) — room","وَقْتٌ (waqtun) — time"],"answer":2} -->
 
-<!-- grammar-card: {"rule":"When a suffix attaches to a word ending in ة, the written form changes to ت before the suffix.","hint":"The hidden t becomes visible before a pronoun.","example":"Add her to مَدْرَسَةٌ (madrasatun) — school: ___ .","answer":"مَدْرَسَتُهَا (madrasatuhā)","explanation":"her school — The tied tāʾ connects to the suffix and appears as ت, but the unsuffixed word remains مَدْرَسَةٌ."} -->
+<!-- grammar-card: {"id":"suffix-opens-ta","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Common contrasts","rule":"When a suffix attaches to a word ending in ة, the written form changes to ت before the suffix.","example":"Add “her” to مَدْرَسَةٌ, retaining nominative case: ___.","answer":"مَدْرَسَتُهَا","explanation":"مَدْرَسَتُهَا (madrasatuhā) displays ت before the suffix and loses tanwīn; the unsuffixed noun is still مَدْرَسَةٌ.","legacyAliases":[{"rule":"When a suffix attaches to a word ending in ة, the written form changes to ت before the suffix.","example":"Add her to مَدْرَسَةٌ (madrasatun) — school: ___ ."}]} -->
 
 ## Sources
 

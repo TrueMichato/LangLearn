@@ -1,5 +1,7 @@
 # Counting & Counters (一つ、一人、一匹)
 
+<!-- vocab-inventory: {"mode":"explicit"} -->
+
 In Japanese, you cannot just use a number by itself to count things. You must pair numbers with special **counter words** (助数詞/じょすうし) that match the type of object you are counting. This lesson covers the most common counters you will need.
 
 ## Numbers Review
@@ -20,6 +22,8 @@ Before learning counters, make sure you know the basic numbers:
 | 10 | 十 | じゅう |
 
 > 💡 Numbers 4, 7, and 9 have two readings each. The preferred reading often depends on the counter used.
+
+<!-- grammar-card: {"id":"number-reading-context","kind":"concept","format":"qa","priority":"optional","sourceSection":"Numbers Review","rule":"A counter can determine which reading of a number is used","example":"Why should you not use し, しち, and く automatically for every counter combination?","answer":"Four, seven, and nine have alternative readings, and the preferred reading depends on the counter.","explanation":"For example, 四人 is よにん and 四匹 is よんひき. Learn the number and counter together."} -->
 
 ## つ Counter — General Objects
 
@@ -46,7 +50,17 @@ The **つ** counter uses native Japanese numbers (ひとつ, ふたつ, etc.) an
 
 <!-- quiz:{"type":"multiple-choice","question":"How do you say 'three apples please'?","options":["りんごを三ください","りんごを三つください","りんごを三個ください","りんごを三本ください"],"answer":1} -->
 
-<!-- grammar-card: {"rule":"The つ counter covers general objects up to ten","hint":"two problems","example":"問題(もんだい)が二___あります。","answer":"つ","explanation":"問題 has no counter of its own, so the generic 二つ is used."} -->
+<!-- grammar-card: {"id":"general-counter","kind":"rule","format":"cloze","priority":"essential","sourceSection":"つ Counter — General Objects","rule":"The つ counter covers general objects up to ten","hint":"two problems","example":"問題(もんだい)が二___あります。","answer":"つ","explanation":"二つ (ふたつ) is a natural general count for two problems. Specific counters such as 問 also exist."} -->
+<!-- grammar-card: {"id":"native-one","kind":"rule","format":"qa","priority":"essential","sourceSection":"つ Counter — General Objects","rule":"The general counter uses native Japanese readings","example":"Read 一つ in kana.","answer":"ひとつ","explanation":"One general object is ひとつ, not いちつ."} -->
+<!-- grammar-card: {"id":"native-two","kind":"rule","format":"qa","priority":"essential","sourceSection":"つ Counter — General Objects","rule":"二つ has the native reading ふたつ","example":"Read 二つ in kana.","answer":"ふたつ","explanation":"The general count uses ふた-, unlike に in many other counters."} -->
+<!-- grammar-card: {"id":"native-three","kind":"rule","format":"qa","priority":"optional","sourceSection":"つ Counter — General Objects","rule":"三つ has the native reading みっつ","example":"Read 三つ in kana.","answer":"みっつ","explanation":"Three apples in the example are りんごをみっつ."} -->
+<!-- grammar-card: {"id":"native-four","kind":"rule","format":"qa","priority":"optional","sourceSection":"つ Counter — General Objects","rule":"四つ has the native reading よっつ","example":"Read 四つ in kana.","answer":"よっつ","explanation":"Use よっつ for four general objects."} -->
+<!-- grammar-card: {"id":"native-five","kind":"rule","format":"qa","priority":"optional","sourceSection":"つ Counter — General Objects","rule":"五つ has the native reading いつつ","example":"Read 五つ in kana.","answer":"いつつ","explanation":"Five questions in the example are しつもんがいつつ."} -->
+<!-- grammar-card: {"id":"native-six","kind":"rule","format":"qa","priority":"optional","sourceSection":"つ Counter — General Objects","rule":"六つ has the native reading むっつ","example":"Read 六つ in kana.","answer":"むっつ","explanation":"Six general objects are むっつ, with a small っ."} -->
+<!-- grammar-card: {"id":"native-seven","kind":"rule","format":"qa","priority":"optional","sourceSection":"つ Counter — General Objects","rule":"七つ has the native reading ななつ","example":"Read 七つ in kana.","answer":"ななつ","explanation":"The general count uses ななつ, not しちつ."} -->
+<!-- grammar-card: {"id":"native-eight","kind":"rule","format":"qa","priority":"optional","sourceSection":"つ Counter — General Objects","rule":"八つ has the native reading やっつ","example":"Read 八つ in kana.","answer":"やっつ","explanation":"Eight general objects are やっつ, with a small っ."} -->
+<!-- grammar-card: {"id":"native-nine","kind":"rule","format":"qa","priority":"optional","sourceSection":"つ Counter — General Objects","rule":"九つ has the native reading ここのつ","example":"Read 九つ in kana.","answer":"ここのつ","explanation":"Nine general objects use ここのつ."} -->
+<!-- grammar-card: {"id":"native-ten-limit","kind":"rule","format":"qa","priority":"essential","sourceSection":"つ Counter — General Objects","rule":"The native general-object series ends with とお at ten","example":"Read 十 when it is the tenth member of the general-object series.","answer":"とお","explanation":"This is とお, without つ. The native general series taught here only runs from one to ten."} -->
 
 ## 人(にん) Counter — People
 
@@ -73,7 +87,10 @@ The **人** counter is used for counting people. The first two have irregular re
 
 <!-- quiz:{"type":"multiple-choice","question":"How do you read 二人?","options":["ににん","ふたにん","ふたり","にじん"],"answer":2} -->
 
-<!-- grammar-card: {"rule":"People are counted with 人","hint":"three students","example":"学生(がくせい)が三___います。","answer":"人","explanation":"三人 counts the students, since 人 is the counter reserved for people."} -->
+<!-- grammar-card: {"id":"people-counter","kind":"rule","format":"cloze","priority":"essential","sourceSection":"人(にん) Counter — People","rule":"People are counted with 人","hint":"three students","example":"学生(がくせい)が三___います。","answer":"人","explanation":"三人 is さんにん, using the counter for people."} -->
+<!-- grammar-card: {"id":"people-one-reading","kind":"rule","format":"qa","priority":"essential","sourceSection":"人(にん) Counter — People","rule":"一人 has an irregular reading","example":"How do you read 一人 when counting one person?","answer":"ひとり","explanation":"Do not read it いちにん in this everyday counting pattern."} -->
+<!-- grammar-card: {"id":"people-two-reading","kind":"rule","format":"qa","priority":"essential","sourceSection":"人(にん) Counter — People","rule":"二人 has an irregular reading","example":"How do you read 二人 when counting two people?","answer":"ふたり","explanation":"The first two people-counts are ひとり and ふたり; ordinary にん begins at 三人."} -->
+<!-- grammar-card: {"id":"people-four-reading","kind":"rule","format":"qa","priority":"optional","sourceSection":"人(にん) Counter — People","rule":"四人 uses よ, not よん or し","example":"Read 四人 in kana.","answer":"よにん","explanation":"The counting form is よにん. Counter-specific number readings must be learned together."} -->
 
 ## 匹(ひき) Counter — Small Animals
 
@@ -100,7 +117,8 @@ The **匹** counter is used for small to medium animals (cats, dogs, fish, insec
 
 > ⚠️ Notice the sound changes: 1, 6, 8, 10 use **っぴき**, and 3 uses **びき**.
 
-<!-- grammar-card: {"rule":"匹 counts small animals","hint":"two cats","example":"猫(ねこ)を二___飼(か)っています。","answer":"匹","explanation":"Cats are small animals, so 二匹 is used rather than the generic 二つ."} -->
+<!-- grammar-card: {"id":"animals-counter","kind":"rule","format":"cloze","priority":"essential","sourceSection":"匹(ひき) Counter — Small Animals","rule":"匹 counts small animals","hint":"two cats","example":"猫(ねこ)を二___飼(か)っています。","answer":"匹","explanation":"二匹 (にひき) counts cats as small animals."} -->
+<!-- grammar-card: {"id":"hiki-sound-groups","kind":"concept","format":"qa","priority":"essential","sourceSection":"匹(ひき) Counter — Small Animals","rule":"匹 alternates between ひき, びき, and っぴき","example":"In the 1–10 table, which counts change 匹 to っぴき, and which uses びき?","answer":"1, 6, 8, and 10 use っぴき; 3 uses びき. The other counts use ひき.","explanation":"Examples are いっぴき, ろっぴき, はっぴき, じゅっぴき, and さんびき."} -->
 
 ## 枚(まい) Counter — Flat Objects
 
@@ -119,6 +137,8 @@ The **枚** counter is used for flat, thin objects: paper, shirts, plates, ticke
 - **シャツを二枚買いました。** — I bought two shirts.
 - **切手(きって)が一枚必要(ひつよう)です。** — I need one stamp.
 - **お皿(さら)を四枚出(だ)してください。** — Please take out four plates.
+
+<!-- grammar-card: {"id":"flat-counter","kind":"rule","format":"cloze","priority":"essential","sourceSection":"枚(まい) Counter — Flat Objects","rule":"枚 counts flat, thin objects","example":"Three sheets of paper: 紙を三___ください。","answer":"枚","explanation":"三枚 (さんまい) counts sheets, as well as other flat items such as tickets and shirts."} -->
 
 <!-- quiz:{"type":"multiple-choice","question":"Which counter would you use for a sheet of paper?","options":["本(ほん)","匹(ひき)","枚(まい)","台(だい)"],"answer":2} -->
 
@@ -147,6 +167,10 @@ The **本** counter is for long, cylindrical objects: pens, bottles, trees, road
 
 > ⚠️ Like 匹, this counter has sound changes: 1, 6, 8, 10 → **っぽん**, 3 → **ぼん**.
 
+<!-- grammar-card: {"id":"long-counter","kind":"rule","format":"cloze","priority":"essential","sourceSection":"本(ほん) Counter — Long, Thin Objects","rule":"本 counts long cylindrical objects, not bound books","example":"Two pens: ペンを二___持っています。","answer":"本","explanation":"二本 is にほん. Pens and bottles take 本, whereas books take 冊."} -->
+<!-- grammar-card: {"id":"hon-sound-groups","kind":"concept","format":"qa","priority":"essential","sourceSection":"本(ほん) Counter — Long, Thin Objects","rule":"本 alternates between ほん, ぼん, and っぽん","example":"In the 1–10 table, which counts use っぽん, and which uses ぼん?","answer":"1, 6, 8, and 10 use っぽん; 3 uses ぼん. The other counts use ほん.","explanation":"The pattern parallels 匹: いっぽん, ろっぽん, はっぽん, じゅっぽん, and さんぼん."} -->
+<!-- grammar-card: {"id":"hon-movies","kind":"rule","format":"cloze","priority":"optional","sourceSection":"本(ほん) Counter — Long, Thin Objects","rule":"本 also conventionally counts films","example":"Five movies: 映画を五___見ました。","answer":"本","explanation":"映画を五本 (ごほん) uses the conventional film counter even without a physical roll of film."} -->
+
 ## 台(だい) Counter — Machines & Vehicles
 
 The **台** counter is used for machines, vehicles, and large equipment: cars, computers, TVs, bicycles.
@@ -156,6 +180,8 @@ The **台** counter is used for machines, vehicles, and large equipment: cars, c
 - **自転車(じてんしゃ)が二台あります。** — There are two bicycles.
 - **テレビが四台あります。** — There are four TVs.
 - **エアコンを二台つけました。** — I turned on two air conditioners.
+
+<!-- grammar-card: {"id":"machine-counter","kind":"rule","format":"cloze","priority":"essential","sourceSection":"台(だい) Counter — Machines & Vehicles","rule":"台 counts machines and vehicles","example":"Three cars: 車が三___あります。","answer":"台","explanation":"三台 (さんだい) counts cars; 台 is also used for computers and bicycles."} -->
 
 ## 冊(さつ) Counter — Books & Bound Items
 
@@ -175,6 +201,9 @@ The **冊** counter is used for books, notebooks, magazines — anything bound t
 - **辞書(じしょ)が二冊必要です。** — I need two dictionaries.
 - **漫画(まんが)を十冊持っています。** — I have ten manga volumes.
 
+<!-- grammar-card: {"id":"bound-counter","kind":"rule","format":"cloze","priority":"essential","sourceSection":"冊(さつ) Counter — Books & Bound Items","rule":"冊 counts bound items such as books and magazines","example":"Three books: 本を三___読みました。","answer":"冊","explanation":"三冊 (さんさつ) counts bound volumes, not 本 as a counter."} -->
+<!-- grammar-card: {"id":"satsu-one-reading","kind":"rule","format":"qa","priority":"optional","sourceSection":"冊(さつ) Counter — Books & Bound Items","rule":"一冊 contracts to いっさつ","example":"Read 一冊 in kana.","answer":"いっさつ","explanation":"The first count has a small っ before さつ."} -->
+
 ## Counter Placement in Sentences
 
 Counters typically appear **after the noun + particle** or **before the verb**:
@@ -183,6 +212,8 @@ Counters typically appear **after the noun + particle** or **before the verb**:
 - **二匹の猫を飼っています。** — I keep two cats. (counter before noun with の)
 
 Both patterns are natural, but the first is more common in everyday speech.
+
+<!-- grammar-card: {"id":"counter-before-noun","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Counter Placement in Sentences","rule":"A counted quantity before a noun connects with の","example":"Two cats, with the quantity before the noun: 二匹___猫を飼っています。","answer":"の","explanation":"Compare 猫を二匹飼っています with 二匹の猫を飼っています. The floating count after the particle needs no の."} -->
 
 - **りんごを三つ食(た)べました。** — I ate three apples.
 - **三つのりんごを食べました。** — I ate three apples.
@@ -199,6 +230,13 @@ Use the question words:
 - **何枚(なんまい)** — how many (flat things)?
 - **何本(なんぼん)** — how many (long things)?
 - **何冊(なんさつ)** — how many (books)?
+
+<!-- vocab-card: {"id":"vocab-ikutsu","word":"いくつ","reading":"いくつ","meaning":"how many (general objects)","priority":"essential","sourceSection":"Asking \"How many?\""} -->
+<!-- vocab-card: {"id":"vocab-nannin","word":"何人","reading":"なんにん","meaning":"how many people","priority":"optional","sourceSection":"Asking \"How many?\""} -->
+<!-- vocab-card: {"id":"vocab-nanbiki","word":"何匹","reading":"なんびき","meaning":"how many animals","priority":"optional","sourceSection":"Asking \"How many?\""} -->
+<!-- vocab-card: {"id":"vocab-nanmai","word":"何枚","reading":"なんまい","meaning":"how many flat objects","priority":"optional","sourceSection":"Asking \"How many?\""} -->
+<!-- vocab-card: {"id":"vocab-nanbon","word":"何本","reading":"なんぼん","meaning":"how many long objects","priority":"optional","sourceSection":"Asking \"How many?\""} -->
+<!-- vocab-card: {"id":"vocab-nansatsu","word":"何冊","reading":"なんさつ","meaning":"how many books or bound volumes","priority":"optional","sourceSection":"Asking \"How many?\""} -->
 
 - **りんごはいくつありますか。** — How many apples are there?
 - **何人家族ですか。** — How many people are in your family?

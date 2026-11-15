@@ -1,6 +1,8 @@
 # Pretérito Indefinido (Simple Past)
 
-The *pretérito indefinido* is used for **single, completed actions in the past** — events that happened once, at a specific time, and are now finished. It is the main past tense for describing what you did yesterday, last year, or at any defined point in the past. Regular verbs follow predictable patterns; a handful of high-frequency verbs are irregular and must be memorized.
+<!-- vocab-inventory: {"mode":"explicit"} -->
+
+The *pretérito indefinido* presents past events as **completed wholes**. These can be single events, sequences, or repetitions within a bounded period — not only actions that happened once. It is a main past tense for describing what you did yesterday or last year. Usage relative to the present perfect varies across regions; a time expression alone does not determine the tense. Regular verbs follow predictable patterns; high-frequency irregulars must be learned.
 
 ## Regular -AR Verbs: hablar (to speak)
 
@@ -14,6 +16,9 @@ The *pretérito indefinido* is used for **single, completed actions in the past*
 | ellos / ustedes | **-aron** | hablaron | ah-BLAH-rohn |
 
 > 📌 The *nosotros* form of -ar verbs is identical in present and preterite: **hablamos** can mean "we speak" or "we spoke" — context and time expressions tell them apart.
+
+<!-- grammar-card: {"id":"ar-preterite-nosotros","kind":"concept","format":"qa","priority":"essential","sourceSection":"Regular -AR Verbs: hablar (to speak)","rule":"Regular -ar nosotros forms overlap in present and preterite","example":"Does hablamos alone distinguish we speak from we spoke?","answer":"No. The form is identical; context identifies the tense.","explanation":"A finished past setting favors the preterite interpretation, while a present habit favors the present."} -->
+<!-- grammar-card: {"id":"ar-preterite-third","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Regular -AR Verbs: hablar (to speak)","rule":"Regular -ar preterite él forms end in -ó","example":"Ayer ella ___ con Ana. (hablar; completed conversation)","answer":"habló","explanation":"The accent distinguishes habló from present-tense hablo, which also has a different subject."} -->
 
 ## Regular -ER / -IR Verbs (Shared Endings)
 
@@ -30,6 +35,8 @@ The *pretérito indefinido* is used for **single, completed actions in the past*
 
 - **Comí pizza anoche** (koh-MEE PEET-sah ah-NOH-cheh) — I ate pizza last night
 - **Mis abuelos vivieron en Colombia** — My grandparents lived in Colombia
+
+<!-- grammar-card: {"id":"er-ir-preterite","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Regular -ER / -IR Verbs (Shared Endings)","rule":"Regular -er and -ir verbs share preterite endings","example":"Anoche yo ___ pizza. (comer; completed meal)","answer":"comí","explanation":"Com- plus í gives comí; regular ir verbs use the same preterite endings."} -->
 
 <!-- quiz: {"type":"multiple-choice","question":"What is the yo-form of 'hablar' in the pretérito indefinido?","options":["hablo","hablé","habló","hablaba"],"answer":1} -->
 
@@ -52,6 +59,16 @@ These time expressions typically signal the pretérito indefinido:
 - **Ayer fui al médico** (ah-YEHR fwee) — Yesterday I went to the doctor
 - **El año pasado viajé a Argentina** — Last year I traveled to Argentina
 - **De repente empezó a llover** — Suddenly it started to rain
+
+<!-- vocab-card: {"id":"vocab-ayer","word":"ayer","meaning":"yesterday","priority":"optional","sourceSection":"Common Trigger Words"} -->
+<!-- vocab-card: {"id":"vocab-anoche","word":"anoche","meaning":"last night","priority":"optional","sourceSection":"Common Trigger Words"} -->
+<!-- vocab-card: {"id":"vocab-la-semana-pasada","word":"la semana pasada","meaning":"last week","priority":"optional","sourceSection":"Common Trigger Words"} -->
+<!-- vocab-card: {"id":"vocab-el-mes-pasado","word":"el mes pasado","meaning":"last month","priority":"optional","sourceSection":"Common Trigger Words"} -->
+<!-- vocab-card: {"id":"vocab-el-ano-pasado","word":"el año pasado","meaning":"last year","priority":"optional","sourceSection":"Common Trigger Words"} -->
+<!-- vocab-card: {"id":"vocab-hace-dos-dias","word":"hace dos días","meaning":"two days ago","priority":"optional","sourceSection":"Common Trigger Words"} -->
+<!-- vocab-card: {"id":"vocab-de-repente","word":"de repente","meaning":"suddenly","priority":"optional","sourceSection":"Common Trigger Words"} -->
+<!-- vocab-card: {"id":"vocab-una-vez","word":"una vez","meaning":"once; one time","priority":"optional","sourceSection":"Common Trigger Words"} -->
+<!-- grammar-card: {"id":"bounded-not-once","kind":"concept","format":"qa","priority":"essential","sourceSection":"Common Trigger Words","rule":"Bounded aspect matters more than a trigger word or a single occurrence","example":"Can the indefinido describe three visits within a finished week, rather than only one event?","answer":"Yes. Repeated actions can be presented as a completed, bounded whole.","explanation":"Time markers support an interpretation but do not mechanically select the tense in every context or variety."} -->
 
 ## Irregular Verbs — High-Priority List
 
@@ -79,7 +96,9 @@ These high-frequency verbs have completely irregular preterite stems. Their endi
 |----|----|----|----------|-------|
 | hice | hiciste | **hizo** | hicimos | hicieron |
 
-> ⚠️ Third-person singular is **hizo** (not *hizó*, not *hicó*) — c → z before *o* to preserve the /s/ sound.
+> ⚠️ Third-person singular is **hizo** (not *hizó*, not *hicó*) — c → z before *o* preserves the s-like or th-like sound, according to the speaker's variety.
+
+<!-- grammar-card: {"id":"hacer-third","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Hacer (to do / make)","rule":"Hacer has the irregular unaccented preterite hizo with él","example":"Él ___ la tarea ayer. (hacer)","answer":"hizo","explanation":"The form is hizo, with z before o and no written accent; the s-like or th-like sound follows the speaker's variety."} -->
 
 ### More Irregular Stems
 
@@ -97,6 +116,17 @@ These high-frequency verbs have completely irregular preterite stems. Their endi
 
 > ⚠️ **Decir** and **traer**: because the stem ends in **j**, the third-person plural drops the *i* → **dijeron** (not *dijieron*), **trajeron** (not *trajieron*).
 
+<!-- grammar-card: {"id":"irregular-stem-tener","kind":"rule","format":"cloze","priority":"essential","sourceSection":"More Irregular Stems","rule":"Tener uses tuv- in the preterite","example":"Ayer yo ___ mucho trabajo. (tener; bounded past situation)","answer":"tuve","explanation":"The irregular stem tuv- takes unaccented e for yo."} -->
+<!-- grammar-card: {"id":"irregular-estar","kind":"rule","format":"cloze","priority":"optional","sourceSection":"More Irregular Stems","rule":"Estar uses estuv- in the preterite","example":"Ayer él ___ aquí dos horas. (estar; bounded stay)","answer":"estuvo","explanation":"The preterite stem estuv- takes unaccented o for él."} -->
+<!-- grammar-card: {"id":"irregular-poder","kind":"rule","format":"cloze","priority":"optional","sourceSection":"More Irregular Stems","rule":"Poder uses pud- in the preterite","example":"Finalmente yo ___ abrir la puerta. (poder; preterite)","answer":"pude","explanation":"The irregular stem pud- takes e for yo, without a written accent."} -->
+<!-- grammar-card: {"id":"irregular-poner","kind":"rule","format":"cloze","priority":"optional","sourceSection":"More Irregular Stems","rule":"Poner uses pus- in the preterite","example":"Yo ___ el libro en la mesa. (poner; preterite)","answer":"puse","explanation":"The strong stem is pus-, with unaccented e for yo."} -->
+<!-- grammar-card: {"id":"irregular-saber","kind":"rule","format":"cloze","priority":"optional","sourceSection":"More Irregular Stems","rule":"Saber uses sup- in the preterite","example":"Ayer yo ___ la verdad. (saber; found out)","answer":"supe","explanation":"The strong preterite stem is sup- rather than the present-tense stem."} -->
+<!-- grammar-card: {"id":"irregular-querer","kind":"rule","format":"cloze","priority":"optional","sourceSection":"More Irregular Stems","rule":"Querer uses quis- in the preterite","example":"Yo ___ hablar con ella. (querer; preterite)","answer":"quise","explanation":"Quis- takes e for yo; the ending has no accent."} -->
+<!-- grammar-card: {"id":"irregular-venir","kind":"rule","format":"cloze","priority":"optional","sourceSection":"More Irregular Stems","rule":"Venir uses vin- in the preterite","example":"Ayer yo ___ a verte. (venir)","answer":"vine","explanation":"The preterite stem is vin-, not the present vengo or vien-."} -->
+<!-- grammar-card: {"id":"irregular-traer","kind":"rule","format":"cloze","priority":"optional","sourceSection":"More Irregular Stems","rule":"Traer uses traj- and plural -eron in the preterite","example":"Ellos ___ flores ayer. (traer)","answer":"trajeron","explanation":"The j stem traj- takes eron without an extra i."} -->
+<!-- grammar-card: {"id":"j-stem-plural","kind":"rule","format":"cloze","priority":"essential","sourceSection":"More Irregular Stems","rule":"Preterite j stems take -eron rather than -ieron","example":"Ellos ___ la verdad. (decir; preterite)","answer":"dijeron","explanation":"Dij- takes eron, without an extra i; trajeron follows the same pattern."} -->
+<!-- grammar-card: {"id":"strong-stem-accents","kind":"concept","format":"qa","priority":"optional","sourceSection":"More Irregular Stems","rule":"The taught strong preterite stems use unaccented endings","example":"Do tuve, estuvo and pusieron take the written accents of regular hablé or comió?","answer":"No. These irregular strong-stem forms use unaccented endings.","explanation":"Learn the stems tuv-, estuv-, pud-, pus-, sup-, quis-, vin-, dij- and traj- with their forms."} -->
+
 ### Dar and Ver — Short but Irregular
 
 | Pronoun | dar | ver |
@@ -109,7 +139,9 @@ These high-frequency verbs have completely irregular preterite stems. Their endi
 
 *Dar* uses -er/-ir endings despite being an -ar verb. *Ver* is irregular only in losing the accent marks (vi not *ví*, vio not *vió*).
 
-<!-- grammar-card: {"rule":"The preterite of 'ser' and 'ir' are identical: fui, fuiste, fue, fuimos, fuisteis, fueron","hint":"Context and meaning are the only way to tell them apart — there is no other clue","example":"Ayer ___ al mercado con mi mamá. (went — ir)","answer":"fui","explanation":"'fui' is the yo-form preterite of both ser and ir. 'Ayer fui al mercado' clearly uses ir (went to the market). 'Fui presidente' would clearly use ser (was president). Context always resolves the ambiguity — this overlap is rarely a problem in practice."} -->
+<!-- grammar-card: {"id":"dar-ver-accents","kind":"rule","format":"qa","priority":"optional","sourceSection":"Dar and Ver — Short but Irregular","rule":"The short preterite forms di and vi have no written accent","example":"Write the yo preterite of ver with correct accentuation.","answer":"vi","explanation":"The monosyllabic form vi has no tilde; dar similarly uses di."} -->
+
+<!-- grammar-card: {"id":"ser-ir-preterite","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Ser and Ir — Identical Forms (Context Distinguishes)","rule":"The preterite of 'ser' and 'ir' are identical: fui, fuiste, fue, fuimos, fuisteis, fueron","example":"Ayer ___ al mercado con mi mamá. (went — ir)","answer":"fui","explanation":"The destination makes the ir reading natural; fui can also be the preterite of ser in a different context."} -->
 
 ## Spelling-Change Verbs (yo Form Only)
 
@@ -123,7 +155,11 @@ Verbs ending in **-car, -gar, -zar** change spelling in the *yo* form to preserv
 
 All other forms are regular: llegaste, llegó, llegamos, llegasteis, llegaron.
 
-<!-- grammar-card: {"rule":"Preterite trigger words: ayer, anoche, la semana pasada, el año pasado, hace X días, en [year]","hint":"These expressions pin the action to a specific, finished moment in time","example":"La semana pasada ___ con mis amigos. (I spoke — hablar, yo)","answer":"hablé","explanation":"'La semana pasada' is a definite past time marker that calls for the pretérito indefinido: 'La semana pasada hablé con mis amigos.' The -é ending marks the yo form of -ar verbs in the preterite. Compare: 'Normalmente hablo con mis amigos' (present — habitual action)."} -->
+<!-- grammar-card: {"id":"car-spelling","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Spelling-Change Verbs (yo Form Only)","rule":"Preterite yo forms of -car verbs use qu before é","example":"Ayer ___ mis llaves. (buscar, yo)","answer":"busqué","explanation":"Qu keeps the hard k sound before é."} -->
+<!-- grammar-card: {"id":"gar-spelling","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Spelling-Change Verbs (yo Form Only)","rule":"Preterite yo forms of -gar verbs use gu before é","example":"Ayer ___ tarde. (llegar, yo)","answer":"llegué","explanation":"The silent u preserves hard g before é."} -->
+<!-- grammar-card: {"id":"zar-spelling","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Spelling-Change Verbs (yo Form Only)","rule":"Preterite yo forms of -zar verbs use c before é","example":"Ayer ___ a estudiar. (empezar, yo)","answer":"empecé","explanation":"The spelling changes z to c before é, maintaining the variety's s or th pronunciation."} -->
+
+<!-- grammar-card: {"id":"ar-preterite-yo","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Regular -AR Verbs: hablar (to speak)","rule":"Preterite trigger words: ayer, anoche, la semana pasada, el año pasado, hace X días, en [year]","example":"La semana pasada ___ con mis amigos. (I spoke — hablar, yo)","answer":"hablé","explanation":"The completed conversation uses the yo preterite hablé. A past time marker alone is not a universal tense-selection rule."} -->
 
 <!-- quiz: {"type":"multiple-choice","question":"Which is the correct preterite of 'hacer' for él/ella?","options":["hacó","hizó","hizo","hació"],"answer":2} -->
 

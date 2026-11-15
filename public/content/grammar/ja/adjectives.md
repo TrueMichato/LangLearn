@@ -1,5 +1,7 @@
 # Adjective Types (い vs な adjectives)
 
+<!-- vocab-inventory: {"mode":"explicit"} -->
+
 Japanese has two main types of adjectives: **い-adjectives** and **な-adjectives**. They behave differently when modifying nouns and when used as predicates. Understanding the difference is key to building natural sentences.
 
 ## い-Adjectives (i-adjectives)
@@ -13,6 +15,13 @@ Japanese has two main types of adjectives: **い-adjectives** and **な-adjectiv
 - **おいしい** — delicious
 - **新しい(あたらしい)** — new
 
+<!-- vocab-card: {"id":"vocab-ookii","word":"大きい","reading":"おおきい","meaning":"big","priority":"optional","sourceSection":"い-Adjectives (i-adjectives)"} -->
+<!-- vocab-card: {"id":"vocab-chiisai","word":"小さい","reading":"ちいさい","meaning":"small","priority":"optional","sourceSection":"い-Adjectives (i-adjectives)"} -->
+<!-- vocab-card: {"id":"vocab-takai","word":"高い","reading":"たかい","meaning":"tall; expensive","priority":"essential","sourceSection":"い-Adjectives (i-adjectives)"} -->
+<!-- vocab-card: {"id":"vocab-yasui","word":"安い","reading":"やすい","meaning":"cheap; inexpensive","priority":"optional","sourceSection":"い-Adjectives (i-adjectives)"} -->
+<!-- vocab-card: {"id":"vocab-oishii","word":"おいしい","reading":"おいしい","meaning":"delicious","priority":"optional","sourceSection":"い-Adjectives (i-adjectives)"} -->
+<!-- vocab-card: {"id":"vocab-atarashii","word":"新しい","reading":"あたらしい","meaning":"new","priority":"optional","sourceSection":"い-Adjectives (i-adjectives)"} -->
+
 ### Using い-adjectives with nouns
 
 Place the い-adjective directly before the noun:
@@ -22,6 +31,8 @@ Place the い-adjective directly before the noun:
 - **新しい本(あたらしいほん)** — a new book
 - **高いビル** — a tall building
 - **小さい猫(ちいさいねこ)** — a small cat
+
+<!-- grammar-card: {"id":"i-noun-modifier","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Using い-adjectives with nouns","rule":"An い-adjective directly precedes a noun without な","example":"A new book: 新し___本。","answer":"い","explanation":"新しい modifies 本 directly. Do not insert な or の."} -->
 
 ### Using い-adjectives as predicates
 
@@ -35,7 +46,7 @@ Use the adjective at the end of the sentence with です for politeness:
 
 <!-- quiz:{"type":"multiple-choice","question":"Which of these is an い-adjective?","options":["元気(げんき)","静か(しずか)","高い(たかい)","きれい"],"answer":2} -->
 
-<!-- grammar-card: {"rule":"An い-adjective keeps its final い before です","hint":"安 (cheap)","example":"あの店(みせ)は安___です。","answer":"い","explanation":"安い is an い-adjective, so the い stays and です is simply added after it."} -->
+<!-- grammar-card: {"id":"i-predicate","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Using い-adjectives as predicates","rule":"An い-adjective keeps its final い before です","hint":"安 (cheap)","example":"あの店(みせ)は安___です。","answer":"い","explanation":"The adjective is 安い. Add です for politeness without replacing final い."} -->
 
 ## い-Adjective Conjugation
 
@@ -51,6 +62,8 @@ Drop い, add **くない**:
 - 新しい → **新しくない** — not new
 - 難しい → **難しくない** — not difficult
 
+<!-- grammar-card: {"id":"i-negative","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Negative (〜くない)","rule":"An い-adjective replaces final い with くない in the negative","example":"高い → not expensive: 高___.","answer":"くない","explanation":"Drop い and add くない: 高くない (たかくない)."} -->
+
 ### Past (〜かった)
 
 Drop い, add **かった**:
@@ -61,6 +74,8 @@ Drop い, add **かった**:
 - 楽しい(たのしい) → **楽しかった** — was fun
 - 暑い(あつい) → **暑かった** — was hot
 
+<!-- grammar-card: {"id":"i-past","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Past (〜かった)","rule":"An い-adjective replaces final い with かった in the past","example":"おいしい → was delicious: おいし___.","answer":"かった","explanation":"The plain past is おいしかった, not おいしいだった."} -->
+
 ### Past Negative (〜くなかった)
 
 Drop い, add **くなかった**:
@@ -70,6 +85,8 @@ Drop い, add **くなかった**:
 - 難しい → **難しくなかった** — was not difficult
 - 寒い → **寒くなかった** — was not cold
 - 楽しい → **楽しくなかった** — was not fun
+
+<!-- grammar-card: {"id":"i-past-negative","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Past Negative (〜くなかった)","rule":"An い-adjective replaces final い with くなかった for past negative","example":"寒い → was not cold: 寒___.","answer":"くなかった","explanation":"寒い (さむい) becomes 寒くなかった (さむくなかった)."} -->
 
 | Form | Pattern | Example (高い) |
 |------|---------|---------------|
@@ -88,6 +105,10 @@ The adjective いい (good) is irregular. It conjugates from its older form **�
 - いい → **よかった** (was good)
 - いい → **よくなかった** (was not good)
 
+<!-- vocab-card: {"id":"vocab-ii","word":"いい","reading":"いい","meaning":"good","priority":"essential","sourceSection":"Special case: いい (good)"} -->
+<!-- grammar-card: {"id":"ii-negative","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Special case: いい (good)","rule":"いい conjugates from よい rather than an い- stem","example":"いい → not good: ___.","answer":"よくない","explanation":"The irregular stem is よ-, so いくない is not the negative of いい."} -->
+<!-- grammar-card: {"id":"ii-past","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Special case: いい (good)","rule":"The past of いい uses よ-","example":"いい → was good: ___.","answer":"よかった","explanation":"Use よい → よかった, not いかった."} -->
+<!-- grammar-card: {"id":"ii-past-negative","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Special case: いい (good)","rule":"The past negative of いい uses よ-","example":"いい → was not good: ___.","answer":"よくなかった","explanation":"Keep the よ- stem and add くなかった."} -->
 ## な-Adjectives (na-adjectives)
 
 な-adjectives do not end in い in most cases. They require **な** when modifying a noun directly.
@@ -101,6 +122,14 @@ The adjective いい (good) is irregular. It conjugates from its older form **�
 
 > ⚠️ **Watch out!** きれい and 有名(ゆうめい) end in い but are な-adjectives. Not all words ending in い are い-adjectives!
 
+<!-- vocab-card: {"id":"vocab-genki","word":"元気","reading":"げんき","meaning":"energetic; healthy","priority":"optional","sourceSection":"な-Adjectives (na-adjectives)"} -->
+<!-- vocab-card: {"id":"vocab-shizuka","word":"静か","reading":"しずか","meaning":"quiet","priority":"essential","sourceSection":"な-Adjectives (na-adjectives)"} -->
+<!-- vocab-card: {"id":"vocab-kirei","word":"きれい","reading":"きれい","meaning":"pretty; clean","priority":"essential","sourceSection":"な-Adjectives (na-adjectives)"} -->
+<!-- vocab-card: {"id":"vocab-yuumei","word":"有名","reading":"ゆうめい","meaning":"famous","priority":"optional","sourceSection":"な-Adjectives (na-adjectives)"} -->
+<!-- vocab-card: {"id":"vocab-benri","word":"便利","reading":"べんり","meaning":"convenient","priority":"optional","sourceSection":"な-Adjectives (na-adjectives)"} -->
+<!-- vocab-card: {"id":"vocab-kantan","word":"簡単","reading":"かんたん","meaning":"easy; simple","priority":"optional","sourceSection":"な-Adjectives (na-adjectives)"} -->
+<!-- grammar-card: {"id":"adjective-type-exceptions","kind":"concept","format":"qa","priority":"essential","sourceSection":"な-Adjectives (na-adjectives)","rule":"A final /i/ sound does not prove that an adjective is an い-adjective","example":"Are きれい and 有名 (ゆうめい) い-adjectives because their readings end in /i/?","answer":"No. Both are な-adjectives and need な directly before a noun.","explanation":"Learn adjective class with vocabulary rather than relying only on the final sound."} -->
+
 ### Using な-adjectives with nouns
 
 Add **な** between the adjective and the noun:
@@ -110,6 +139,8 @@ Add **な** between the adjective and the noun:
 - **有名なレストラン** — a famous restaurant
 - **元気な子供(げんきなこども)** — an energetic child
 - **便利な道具(べんりなどうぐ)** — a convenient tool
+
+<!-- grammar-card: {"id":"na-noun-modifier","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Using な-adjectives with nouns","rule":"A な-adjective takes な directly before a noun","example":"A quiet room: 静か___部屋。","answer":"な","explanation":"静かな部屋 (しずかなへや) uses な to link the adjective to the noun."} -->
 
 ### Using な-adjectives as predicates
 
@@ -123,7 +154,7 @@ Use **です** after the adjective (no な needed):
 
 <!-- quiz:{"type":"multiple-choice","question":"How do you say 'a quiet park' in Japanese?","options":["静かの公園","静か公園","静かな公園","静いの公園"],"answer":2} -->
 
-<!-- grammar-card: {"rule":"A な-adjective drops な when it stands before です","hint":"pretty","example":"彼女(かのじょ)は___です。","answer":"きれい","explanation":"きれいな becomes plain きれい as a predicate; the な only appears before a noun."} -->
+<!-- grammar-card: {"id":"na-predicate","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Using な-adjectives as predicates","rule":"A な-adjective drops な when it stands before です","hint":"pretty; use the predicate without な","example":"彼女(かのじょ)は___です。","answer":"きれい","explanation":"Use きれいです as a predicate, not きれいなです."} -->
 
 ## な-Adjective Conjugation
 
@@ -139,6 +170,9 @@ Add **じゃない** (casual) or **ではありません** (polite):
 - 便利 → **便利じゃない** — not convenient
 - 簡単 → **簡単じゃない** — not easy
 
+<!-- grammar-card: {"id":"na-negative","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Negative (〜じゃない / 〜ではない)","rule":"な-adjectives use copular negative endings rather than くない","example":"静か → casual negative: 静か___.","answer":"じゃない","explanation":"Use 静かじゃない, not 静かくない. A polite alternative is 静かではありません."} -->
+<!-- grammar-card: {"id":"na-negative-polite","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Negative (〜じゃない / 〜ではない)","rule":"ではありません is a polite negative ending for a な-adjective","example":"元気 → polite negative (uncontracted): 元気___.","answer":"ではありません","explanation":"元気ではありません means not healthy or not energetic; じゃない is the casual form taught here."} -->
+
 ### Past (〜だった / 〜でした)
 
 Add **だった** (casual) or **でした** (polite):
@@ -149,6 +183,9 @@ Add **だった** (casual) or **でした** (polite):
 - きれい → **きれいだった** — was pretty
 - 便利 → **便利だった** — was convenient
 
+<!-- grammar-card: {"id":"na-past","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Past (〜だった / 〜でした)","rule":"な-adjectives take だった in the casual past","example":"静か → casual past: 静か___.","answer":"だった","explanation":"The adjective itself stays unchanged. Polite past uses でした."} -->
+<!-- grammar-card: {"id":"na-past-polite","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Past (〜だった / 〜でした)","rule":"な-adjectives take でした in the polite past","example":"便利 → polite past: 便利___.","answer":"でした","explanation":"便利でした means was convenient; do not use 便利かった."} -->
+
 ### Past Negative (〜じゃなかった / 〜ではありませんでした)
 
 Add **じゃなかった** (casual) or **ではありませんでした** (polite):
@@ -158,6 +195,9 @@ Add **じゃなかった** (casual) or **ではありませんでした** (polit
 - 簡単 → **簡単じゃなかった** — was not easy
 - きれい → **きれいじゃなかった** — was not pretty
 - 有名 → **有名じゃなかった** — was not famous
+
+<!-- grammar-card: {"id":"na-past-negative","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Past Negative (〜じゃなかった / 〜ではありませんでした)","rule":"な-adjectives use じゃなかった in the casual past negative","example":"静か → casual past negative: 静か___.","answer":"じゃなかった","explanation":"静かじゃなかった means was not quiet. The polite alternative is 静かではありませんでした."} -->
+<!-- grammar-card: {"id":"na-past-negative-polite","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Past Negative (〜じゃなかった / 〜ではありませんでした)","rule":"ではありませんでした is a polite past negative for な-adjectives","example":"簡単 → polite past negative (uncontracted): 簡単___.","answer":"ではありませんでした","explanation":"The adjective 簡単 stays intact; the copular ending carries negation, past, and politeness."} -->
 
 | Form | い-adjective (高い) | な-adjective (静か) |
 |------|-------------------|-------------------|
@@ -180,6 +220,8 @@ Change い to **くて**:
 - **安くて新しい服(ふく)** — cheap and new clothes
 - **この部屋は広(ひろ)くて明るい(あかるい)です。** — This room is spacious and bright.
 
+<!-- grammar-card: {"id":"i-linking","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Combining い-adjectives","rule":"To join い-adjectives, change い to くて","hint":"広い + 明るい","example":"この部屋は広(ひろ)___明るい(あかるい)です。","answer":"くて","explanation":"広い becomes 広くて to link to the next description, regardless of the following adjective's class."} -->
+
 ### Combining な-adjectives
 
 Change to **〜で**:
@@ -187,6 +229,8 @@ Change to **〜で**:
 - **静かできれいな公園(こうえん)** — a quiet and pretty park
 - **便利で簡単なアプリ** — a convenient and easy app
 - **彼(かれ)は元気で親切(しんせつ)です。** — He is energetic and kind.
+
+<!-- grammar-card: {"id":"na-linking","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Combining な-adjectives","rule":"A な-adjective links to another description with で","example":"A quiet and pretty park: 静か___きれいな公園。","answer":"で","explanation":"The first な-adjective takes で; the final きれい still needs な before 公園."} -->
 
 ### Mixing both types
 
@@ -196,12 +240,16 @@ Change to **〜で**:
 
 <!-- quiz:{"type":"multiple-choice","question":"How do you combine 安い and おいしい to say 'cheap and delicious'?","options":["安いとおいしい","安くておいしい","安いでおいしい","安なておいしい"],"answer":1} -->
 
-<!-- grammar-card: {"rule":"To join い-adjectives, change い to くて","hint":"広い + 明るい","example":"この部屋は広(ひろ)___明るい(あかるい)です。","answer":"くて","explanation":"広い becomes 広くて so that it can link on to the adjective that follows."} -->
+<!-- grammar-card: {"id":"mixed-linking","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Mixing both types","rule":"The first adjective's class determines its linking form","example":"Big and pretty: 大き___きれい。","answer":"くて","explanation":"大きい is an い-adjective, so it uses くて even though きれい is a な-adjective."} -->
 
 ## Practice Tips
 
 - When you see a new adjective, always check if it is い or な — this determines how it conjugates.
 - Remember the exceptions: きれい, 有名, 嫌い(きらい) look like い-adjectives but are な-adjectives.
+
+<!-- vocab-card: {"id":"vocab-kirai","word":"嫌い","reading":"きらい","meaning":"disliked; not fond of","priority":"optional","sourceSection":"Practice Tips"} -->
+<!-- grammar-card: {"id":"kirai-class","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Practice Tips","rule":"嫌い is a な-adjective despite final い","example":"Vegetables I dislike: 嫌い___野菜。","answer":"な","explanation":"嫌い (きらい) belongs with な-adjectives; its final い is not an い-adjective inflection."} -->
+
 - Practice conjugating both types until it becomes automatic!
 
 ## Sources

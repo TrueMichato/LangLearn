@@ -1,5 +1,7 @@
 # Negation (nu, niciodată, nimic)
 
+<!-- vocab-inventory: {"mode":"explicit"} -->
+
 Romanian negation is built around **nu**, placed before the verb. Romanian also uses negative words like **nimic** (nothing), **nimeni** (nobody), and **niciodată** (never).
 
 ## Basic Negation with nu
@@ -16,6 +18,8 @@ Put **nu** directly before the conjugated verb.
 - **Nu merg azi.** (noo merg ahzʲ) — I am not going today.
 - **Nu avem cafea.** (noo ah-VEM kah-FEAH) — We don't have coffee.
 
+<!-- vocab-card: {"id":"vocab-nu","word":"nu","meaning":"not; no","priority":"essential","sourceSection":"Basic Negation with nu"} -->
+<!-- grammar-card: {"id":"basic-negative-order","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Basic Negation with nu","rule":"Nu precedes the conjugated verb in a basic negative","example":"Ea ___ este acasă. (is not)","answer":"nu","explanation":"No English-style do auxiliary is required."} -->
 <!-- quiz: {"type":"multiple-choice","question":"Where does 'nu' usually go?","options":["After the noun","Before the conjugated verb","At the end of the sentence","Only before adjectives"],"answer":1} -->
 
 ## Negative Words
@@ -33,7 +37,15 @@ Romanian standard grammar uses a kind of **negative concord**: the negative word
 - **Nu știu nimic.** (noo shtyoo nee-MEEK) — I don't know anything.
 - **Nu cunosc pe nimeni aici.** (noo koo-NOSK peh nee-MENʲ ah-CH) — I don't know anyone here.
 
-<!-- grammar-card: {"rule":"Romanian uses nu together with words like nimic and nimeni","hint":"Do not drop nu","example":"Nu văd ___. (I do not see anything.)","answer":"nimic","explanation":"Romanian negative concord requires nu before the verb and a negative word such as nimic after it."} -->
+<!-- vocab-card: {"id":"vocab-nimic","word":"nimic","meaning":"nothing; anything in a negative sentence","priority":"essential","sourceSection":"Negative Words"} -->
+<!-- vocab-card: {"id":"vocab-nimeni","word":"nimeni","meaning":"nobody; anybody in a negative sentence","priority":"essential","sourceSection":"Negative Words"} -->
+<!-- vocab-card: {"id":"vocab-niciodata","word":"niciodată","meaning":"never","priority":"essential","sourceSection":"Negative Words"} -->
+<!-- vocab-card: {"id":"vocab-nicaieri","word":"nicăieri","meaning":"nowhere; anywhere in a negative sentence","priority":"optional","sourceSection":"Negative Words"} -->
+<!-- vocab-card: {"id":"vocab-niciun","word":"niciun","meaning":"no; not any (masculine/neuter singular before a noun)","priority":"optional","sourceSection":"Negative Words"} -->
+<!-- vocab-card: {"id":"vocab-nicio","word":"nicio","meaning":"no; not any (feminine singular before a noun)","priority":"optional","sourceSection":"Negative Words"} -->
+<!-- grammar-card: {"id":"negative-concord-application","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Negative Words","rule":"Romanian uses nu together with words like nimic and nimeni","example":"Nu văd ___. (I do not see anything.)","answer":"nimic","explanation":"Nimic occurs with nu; the two negatives reinforce one negative meaning rather than canceling."} -->
+<!-- grammar-card: {"id":"negative-concord-concept","kind":"concept","format":"qa","priority":"essential","sourceSection":"Negative Words","rule":"Standard Romanian pairs negative words with nu","example":"Do nu and nimeni cancel each other to make a positive sentence?","answer":"No. They form negative concord and express a single negative meaning.","explanation":"Nu vine nimeni means nobody is coming; nu is not dropped just because nimeni is present."} -->
+<!-- grammar-card: {"id":"negative-determiner-gender","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Negative Words","rule":"Niciun and nicio agree with singular nouns","example":"Nu am ___ soră. (no sister)","answer":"nicio","explanation":"Soră is feminine singular; masculine frate takes niciun."} -->
 
 ## Never: niciodată
 
@@ -44,6 +56,7 @@ Romanian standard grammar uses a kind of **negative concord**: the negative word
 
 Both are correct. The second is more emphatic.
 
+<!-- grammar-card: {"id":"never-fronting-emphasis","kind":"concept","format":"qa","priority":"optional","sourceSection":"Never: niciodată","rule":"Niciodată can be fronted for emphasis while nu remains","example":"What changes when Nu beau cafea niciodată becomes Niciodată nu beau cafea?","answer":"Never is fronted for emphasis; the negative meaning remains and nu is still required.","explanation":"The word order changes emphasis, not the need for negative concord."} -->
 <!-- quiz: {"type":"multiple-choice","question":"Which sentence correctly means 'I never drink coffee'?","options":["Beau niciodată cafea.","Nu beau cafea niciodată.","Nu niciodată beau cafea.","Beau nu cafea niciodată."],"answer":1} -->
 
 ## No Longer and Not Yet
@@ -58,6 +71,9 @@ Two useful negative expressions are **nu mai** and **încă nu**.
 - **Nu mai am timp.** (noo mai ahm teemp) — I don't have time anymore.
 - **Încă nu am terminat.** (UHN-kuh noo ahm ter-mee-NAHT) — I haven't finished yet.
 
+<!-- vocab-card: {"id":"vocab-nu-mai","word":"nu mai","meaning":"no longer; not anymore","priority":"optional","sourceSection":"No Longer and Not Yet"} -->
+<!-- vocab-card: {"id":"vocab-inca-nu","word":"încă nu","meaning":"not yet","priority":"optional","sourceSection":"No Longer and Not Yet"} -->
+<!-- grammar-card: {"id":"not-yet-application","kind":"rule","format":"cloze","priority":"essential","sourceSection":"No Longer and Not Yet","rule":"Încă nu expresses not yet","example":"___ am terminat. (I have not finished yet.)","answer":"Încă nu","explanation":"This differs from nu mai, which says that something no longer holds."} -->
 ## Negation with Pronouns
 
 When object or reflexive pronouns appear before the verb, **nu** comes before the pronoun.
@@ -69,9 +85,10 @@ When object or reflexive pronouns appear before the verb, **nu** comes before th
 
 In fast speech, forms may contract, but the written beginner pattern is clear: **nu + pronoun + verb**.
 
+<!-- grammar-card: {"id":"negative-clitic-order","kind":"rule","format":"qa","priority":"essential","sourceSection":"Negation with Pronouns","rule":"Nu precedes a preverbal object or reflexive pronoun","example":"Negate Mă duc without changing the verb tense.","answer":"Nu mă duc.","explanation":"Use nu + pronoun + verb, not mă nu duc. Nu îl văd follows the same ordering with an object pronoun."} -->
 <!-- quiz: {"type":"multiple-choice","question":"Which sentence correctly means 'I am not going'?","options":["Mă nu duc.","Nu mă duc.","Duc nu mă.","Nu duc mă."],"answer":1} -->
 
-<!-- grammar-card: {"rule":"Nu mai means no longer; încă nu means not yet","hint":"nu mai am, încă nu știu","example":"___ am timp. (I no longer have time.)","answer":"Nu mai","explanation":"Nu mai before the verb means no longer or not anymore."} -->
+<!-- grammar-card: {"id":"no-longer-application","kind":"rule","format":"cloze","priority":"essential","sourceSection":"No Longer and Not Yet","rule":"Nu mai means no longer; încă nu means not yet","example":"___ am timp. (I no longer have time.)","answer":"Nu mai","explanation":"Nu mai means a previous state has stopped; încă nu means it has not happened yet."} -->
 
 ## Sources
 

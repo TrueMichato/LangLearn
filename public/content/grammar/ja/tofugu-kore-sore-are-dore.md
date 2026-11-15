@@ -1,5 +1,7 @@
 # これ・それ・あれ・どれ
 
+<!-- vocab-inventory: {"mode":"explicit"} -->
+
 > **Source:** Content from [Tofugu](https://www.tofugu.com/japanese-grammar/kore-sore-are-dore/). For personal study.
 
 Japanese Demonstratives: これ(Kore) • それ(Sore) • あれ(Are) • どれ(Dore)
@@ -15,6 +17,11 @@ Demonstrative
 ## The Basics
 
 これ, それ, あれ, and どれ are a set of こそあど words. You can use them to refer to things you want to talk about, without specifying what they are. In general, これ is used for things that are close to the speaker, それ is used for things that are close to the listener, and あれ is used for things that are close to neither of them. どれ is the question word that accompanies them, and asks "Which one?" out of a choice of three or more objects.
+
+<!-- vocab-card: {"id":"vocab-kore","priority":"essential","sourceSection":"The Basics","word":"これ","reading":"これ","meaning":"this; this one (near the speaker)"} -->
+<!-- vocab-card: {"id":"vocab-sore","priority":"essential","sourceSection":"The Basics","word":"それ","reading":"それ","meaning":"that; that one (near the listener or previously mentioned)"} -->
+<!-- vocab-card: {"id":"vocab-are","priority":"essential","sourceSection":"The Basics","word":"あれ","reading":"あれ","meaning":"that; that one over there (away from both speaker and listener)"} -->
+<!-- vocab-card: {"id":"vocab-dore","priority":"essential","sourceSection":"The Basics","word":"どれ","reading":"どれ","meaning":"which one (normally among three or more)"} -->
 
 ### Conceptualizing こそあど
 
@@ -65,6 +72,9 @@ The plural versions of これ, それ, and あれ are これら, それら, and 
 
   - These mountains
 
+<!-- grammar-card: {"id":"pronoun-not-determiner","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Patterns of Use","rule":"Use この before a noun rather than treating これ as a determiner","example":"This mountain: ___山。","answer":"この","explanation":"これ stands as a noun-like pronoun; この directly modifies 山. これの can have a possessive use in context, but it is not the ordinary determiner this."} -->
+<!-- grammar-card: {"id":"plural-no","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Patterns of Use","rule":"Explicit plural これら links to a following noun with の","example":"These mountains, using これら: これら___山。","answer":"の","explanation":"これらの山 is possible even though ordinary this mountain uses この山."} -->
+
 ### これ, それ, and あれ for Physical Objects
 
 これ, それ, and あれ are used to refer to specific objects that are physically present. They are the equivalent of "this one," "that one," and "that one over there" in English.
@@ -89,6 +99,8 @@ This time, you use それ because that's closer to your friend, the listener. Yo
 
 You follow your friend's gaze to someone who's enjoying a giant chocolate donut. In this example, あれ is used because it's referring to a donut that is far from both of you. The grass is always greener on the other side of the fence, huh?
 
+<!-- grammar-card: {"id":"distant-object","kind":"rule","format":"cloze","priority":"essential","sourceSection":"これ, それ, and あれ for Physical Objects","rule":"あれ refers to something distant from both speakers","hint":"A donut far from both people","example":"___が、すごくおいしそう。","answer":"あれ","explanation":"Choose あれ for the distant donut, not これ near the speaker or それ near the listener."} -->
+
 ### どれ for "Which One?" Out of Three or More Choices
 
 The corresponding question word is どれ, and it's used to ask "Which one?" or "Which ones?" However, どれ can only be used when asking about a choice of three or more people or things. When you only have a choice of two options, you'll use  どっち (or its polite version どちら) instead.
@@ -106,6 +118,9 @@ Here, you use どれ because there are multiple choices. You narrow it down, but
   - Oh, **which one** should I pick for the last one?
 
 In this example, you use どっち instead of どれ because the options have been narrowed down to two.
+
+<!-- vocab-card: {"id":"vocab-docchi","priority":"optional","sourceSection":"どれ for \"Which One?\" Out of Three or More Choices","word":"どっち","reading":"どっち","meaning":"which one of two; which way (casual)"} -->
+<!-- grammar-card: {"id":"two-choice-question","kind":"rule","format":"cloze","priority":"essential","sourceSection":"どれ for \"Which One?\" Out of Three or More Choices","rule":"どっち is the casual form of どちら","hint":"which of the two remaining cakes, casual","example":"ああ、最後の一つ___にしよう。","answer":"どっち","explanation":"どっち or polite どちら normally asks between two; どれ normally selects among three or more."} -->
 
 ### これ, それ, あれ for Multiple Objects
 
@@ -126,6 +141,8 @@ There are the plural versions of これ, それ, and あれ, which are これら
   - 大豆とバナナとピーナッツのアレルギーがあるので、**それら**の含まれているものは食べられません。
 
   - I'm allergic to soybeans, bananas, and peanuts, so I can't eat anything that contains them.
+
+<!-- grammar-card: {"id":"plural-not-required","kind":"concept","format":"qa","priority":"optional","sourceSection":"これ, それ, あれ for Multiple Objects","rule":"Japanese demonstratives do not obligatorily mark number","example":"Must これ change to これら whenever it refers to several things?","answer":"No. The unmarked form can refer to one or several; explicit ら plurals tend to sound explanatory or more formal.","explanation":"The corresponding question word is still どれ; do not invent どれら."} -->
 
 ### これ, それ, あれ for Points in Time
 
@@ -173,9 +190,12 @@ In the future:
 
   - What did you do **afterward**?
 
-<!-- grammar-card: {"rule":"どっち is the casual form of どちら","hint":"which, casual","example":"ああ、最後の一つ___にしよう。","answer":"どっち","explanation":"どっち asks which of two options in relaxed speech."} -->
-
-<!-- grammar-card: {"rule":"あれ refers to something distant from both speakers","hint":"これ / それ / あれ","example":"___が、すごくおいしそう。","answer":"あれ","explanation":"The food is away from both of them, so あれ is used."} -->
+<!-- vocab-card: {"id":"vocab-korekara","priority":"optional","sourceSection":"これ, それ, あれ for Points in Time","word":"これから","reading":"これから","meaning":"from now on; after this"} -->
+<!-- vocab-card: {"id":"vocab-koremade","priority":"optional","sourceSection":"これ, それ, あれ for Points in Time","word":"これまで","reading":"これまで","meaning":"until now; so far"} -->
+<!-- vocab-card: {"id":"vocab-sorekara","priority":"optional","sourceSection":"これ, それ, あれ for Points in Time","word":"それから","reading":"それから","meaning":"after that; and then"} -->
+<!-- vocab-card: {"id":"vocab-soremade","priority":"optional","sourceSection":"これ, それ, あれ for Points in Time","word":"それまで","reading":"それまで","meaning":"until then"} -->
+<!-- vocab-card: {"id":"vocab-sorede","priority":"optional","sourceSection":"これ, それ, あれ for Points in Time","word":"それで","reading":"それで","meaning":"so; and then"} -->
+<!-- grammar-card: {"id":"shared-past-time","kind":"concept","format":"qa","priority":"optional","sourceSection":"これ, それ, あれ for Points in Time","rule":"あれから points back to an identifiable remembered time","example":"What makes あれから natural when asking what happened afterward?","answer":"The speaker and listener can identify the earlier event or time from shared knowledge.","explanation":"これから starts from now; それから can refer neutrally to an established past or future point."} -->
 
 ## Beyond the Basics
 
@@ -213,6 +233,9 @@ In the same scenario, after you complained about the coffee your girlfriend made
 
 Here, your friend uses あれ to refer to a coffee you two had at the cafe together. It hints that you both have the same, or a similar memory of, the experience.
 
+<!-- grammar-card: {"id":"vivid-reference","kind":"rule","format":"cloze","priority":"optional","sourceSection":"これ, それ, and あれ for Information Given Previously","rule":"これ can refer back to something just mentioned","hint":"Re-present the speaker's cake experience vividly, as if present","example":"彼女がケーキを作ってくれたんだけどさ、___がまた美味しいんだよ！","answer":"これ","explanation":"これ gives vivid immediacy; それ would be a more neutral reference, so context rather than syntax motivates the choice."} -->
+<!-- grammar-card: {"id":"memory-neutral-contrast","kind":"concept","format":"qa","priority":"essential","sourceSection":"これ, それ, and あれ for Information Given Previously","rule":"Discourse reference depends on perspective and shared knowledge, not only physical distance","example":"How does あれ differ from neutral それ when recalling the cafe coffee?","answer":"あれ invites a shared recollection that both people can identify; それ can simply refer back to mentioned information.","explanation":"The coffee need not be physically visible; これ can instead bring an experience vividly into the speaker's current perspective."} -->
+
 ### あれ for *Implying* Something You are Talking About
 
 You've learned あれ is used for information that both you and your listener know about. Linked to this, it can also be used to vaguely refer to something that the speaker is hesitant to say and leaves it up to the interpretation of the person they're talking to. In this usage, あれ is written in either hiragana or katakana.
@@ -225,6 +248,8 @@ Let's take a look at one example. Imagine you work with someone who often makes 
 
 Wow, how mean! Just like in this example, あれ can usually *imply* a negative nuance and is often used when talking behind someone's back.
 
+<!-- grammar-card: {"id":"vague-are","kind":"concept","format":"qa","priority":"optional","sourceSection":"あれ for *Implying* Something You are Talking About","rule":"Vague アレ can leave an evaluation unsaid","example":"What social caution applies when アレ vaguely describes a coworker?","answer":"It can imply an unstated negative judgment and sound unkind or gossipy.","explanation":"The listener is expected to infer the omitted description; it is not a neutral substitute for every adjective."} -->
+
 ### あれ for Exclamation
 
 Since あれ implies you are recollecting some memory, it can also be used when *something* clicks in your mind and you say "Oh!", "Wait!", or "Huh?"
@@ -234,6 +259,8 @@ For example, if you are cleaning your room and suddenly realize you forgot where
   - **あれ**、スマホどこに置いたっけ？
 
   - **Wait**, where did I put my phone?
+
+<!-- grammar-card: {"id":"are-interjection","kind":"concept","format":"qa","priority":"optional","sourceSection":"あれ for Exclamation","rule":"あれ can express sudden puzzlement or realization","example":"Is あれ in あれ、スマホどこに置いたっけ？ pointing at a distant object?","answer":"No. It is an interjection like Huh? or Wait!, expressing sudden puzzlement.","explanation":"This use is distinct from the demonstrative pronoun that one over there."} -->
 
   
 
@@ -408,8 +435,6 @@ by 金水 敏 and 田窪 行則
 <!-- quiz: {"type":"multiple-choice","question":"What does \"❌ これの山\" mean?","options":["This mountain","What is **this**?","These mountains","I wonder **which one** to get."],"answer":0} -->
 
 <!-- quiz: {"type":"multiple-choice","question":"What does \"⭕ この山\" mean?","options":["This mountain","What is **this**?","These mountains","I wonder **which one** to get."],"answer":0} -->
-
-<!-- grammar-card: {"rule":"これ can refer back to something just mentioned","hint":"これ","example":"彼女がケーキを作ってくれたんだけどさ、___がまた美味しいんだよ！","answer":"これ","explanation":"これ picks the cake up from the previous clause, which adds immediacy to the praise."} -->
 
 ## Sources
 

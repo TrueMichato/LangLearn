@@ -1,5 +1,7 @@
 # もう — Already / Not Anymore
 
+<!-- vocab-inventory: {"mode":"explicit"} -->
+
 > **Source:** Content from [Tofugu](https://www.tofugu.com/japanese-grammar/mou-already-not-anymore/). For personal study.
 
 もう for "Already / Not Anymore"
@@ -40,6 +42,9 @@ In the second example **もう**食べれ**ない**よ (I ca**n't** eat **any mo
 
 In some cases, もう can also mean "a little more" than the current quantity or condition. Though all of its uses stem from the same concept, they are quite different in terms of nuance. To keep it simple, these uses have their own page. If you want to learn more, check out もう for A Little More.
 
+<!-- vocab-card: {"id":"vocab-mou","priority":"essential","sourceSection":"The Basics","word":"もう","reading":"もう","meaning":"already; anymore (with a negative predicate)"} -->
+<!-- grammar-card: {"id":"crossed-threshold","kind":"concept","format":"qa","priority":"essential","sourceSection":"The Basics","rule":"もう presents a relevant threshold as reached or crossed","example":"What reference-point contrast distinguishes this lesson's adverb from まだ?","answer":"もう presents the relevant point as already reached or passed; まだ presents it as not yet passed.","explanation":"The predicate determines whether an event is complete or an earlier ability or state no longer holds."} -->
+
 ### Patterns of Use
 
 #### もう + Verb
@@ -71,6 +76,9 @@ If you want to say that you were attempting to do something but were unable to c
   - **もうそれ以上**でき**なかった**。
 
   - I could**n't** do it **any further beyond that**.
+
+<!-- grammar-card: {"id":"no-longer-able","kind":"rule","format":"cloze","priority":"essential","sourceSection":"もう + Verb","rule":"もう with a negative predicate marks no longer holding or continuing","example":"I can't do it anymore: ___できない。","answer":"もう","explanation":"The previous possibility has ended; まだできない would mean I cannot do it yet."} -->
+<!-- grammar-card: {"id":"past-negative-limit","kind":"concept","format":"qa","priority":"optional","sourceSection":"もう + Verb","rule":"それ以上 can specify the point beyond which continuation was impossible","example":"What does それ以上 clarify in もうそれ以上できなかった?","answer":"That the speaker could not continue or do any further beyond that point.","explanation":"The past negative alone can also describe an opportunity that was no longer available."} -->
 
 #### もう + Adjective
 
@@ -106,6 +114,9 @@ Note that い-adjectives are changed into their く form to take the verb なる
 
   - He's **not** famous **anymore**.
 
+<!-- grammar-card: {"id":"adjective-no-longer","kind":"rule","format":"cloze","priority":"optional","sourceSection":"もう + Adjective","rule":"An い-adjective uses くない in the no-longer pattern","example":"The pan is no longer hot: もう熱___。","answer":"くない","explanation":"熱い becomes 熱くない. A な-adjective instead uses a negative copula, as in もう有名じゃない."} -->
+<!-- grammar-card: {"id":"changed-state","kind":"concept","format":"qa","priority":"optional","sourceSection":"もう + Adjective","rule":"なる in the ている form describes the result of a change","example":"Why does もう熱くなってる describe a pan that is already hot rather than only an ongoing heating action?","answer":"The ている form of なる describes the current state resulting from becoming hot.","explanation":"い-adjectives use く before なる; な-adjectives use に, as in 有名になってる."} -->
+
 #### もう + Noun
 
 もう can also be paired with nouns that describe age, roles, time, places, events, or anything else that can eventually reach or pass a point.
@@ -124,7 +135,12 @@ On the other hand, if you want to highlight that you are no longer a high school
 
   - I'm **not** a high school student **anymore**.
 
+<!-- grammar-card: {"id":"noun-no-longer","kind":"rule","format":"cloze","priority":"optional","sourceSection":"もう + Noun","rule":"もう plus a negative noun predicate marks a role that no longer holds","example":"I am no longer a high school student: もう高校生___。 (casual)","answer":"じゃない","explanation":"The same noun with an affirmative copula would mean the high-school stage has already been reached."} -->
+
 ### もう For Asking "Have You Already…?"
+
+<!-- grammar-card: {"id":"not-yet-reply","kind":"rule","format":"cloze","priority":"essential","sourceSection":"もう For Asking \"Have You Already…?\"","rule":"まだ with a negative means 'not yet'","example":"Reply 'Not yet' when asked whether you have eaten: ___（食べてない）。","answer":"まだ","explanation":"The event has not occurred yet. もう食べてない would not be the intended not-yet answer.","legacyAliases":[{"rule":"まだ with a negative means 'not yet'","example":"___（食べてない）。"}]} -->
+<!-- grammar-card: {"id":"already-question","kind":"rule","format":"cloze","priority":"essential","sourceSection":"もう For Asking \"Have You Already…?\"","rule":"もう with a past verb asks whether something is done already","example":"___宿題(しゅくだい)した？","answer":"もう","explanation":"The intended question asks whether the homework is already done. A negative not-yet reply uses まだ."} -->
 
 You learned how to use もう to say that you've "already" done something. This use of もう is also frequently used to *ask* whether someone has already done something.
 
@@ -172,9 +188,7 @@ Let's continue on with the same scenario. Say you tell your friend that you were
 
 Here, もう expresses that twenty should *already* be old enough (and passed the age) that you should have to adhere to a curfew.
 
-<!-- grammar-card: {"rule":"まだ with a negative means 'not yet'","hint":"もう / まだ","example":"___（食べてない）。","answer":"まだ","explanation":"まだ食べてない says the eating has not happened so far."} -->
-
-<!-- grammar-card: {"rule":"もう with a past verb asks whether something is done already","hint":"もう / まだ","example":"___宿題(しゅくだい)した？","answer":"もう","explanation":"もうした？ asks whether the homework has been finished yet."} -->
+<!-- grammar-card: {"id":"late-old-implication","kind":"concept","format":"qa","priority":"optional","sourceSection":"もう and Time/Age","rule":"もう can frame a time or age as later or older than expected","example":"What does もう add to 十一時だ after you lose track of time?","answer":"It presents eleven o'clock as already reached, often later than expected.","explanation":"The same relative framing can present an age as old enough for an expectation, as with もう二十才."} -->
 
 ## Beyond the Basics
 
@@ -212,6 +226,9 @@ And if the hiders are ready, they say: 1
 
 In this situation, もう shows whether or not the hiders had sufficient time to properly conceal themselves. So, yeah, Japanese hide & seek requires a bit more civility than simply declaring, "Ready or not, here I come!" and hunting folks down. 😝
 
+<!-- vocab-card: {"id":"vocab-juubun","priority":"optional","sourceSection":"もう For \"Sufficiency\"","word":"十分","reading":"じゅうぶん","meaning":"enough; sufficient"} -->
+<!-- grammar-card: {"id":"sufficiency-point","kind":"concept","format":"qa","priority":"optional","sourceSection":"もう For \"Sufficiency\"","rule":"もう can mark that a sufficient amount has been reached","example":"What does もう contribute when someone says they are full after a meal?","answer":"It marks the amount eaten as already sufficient, so they do not need more.","explanation":"Readiness in もういいよ and reassurance in もう十分頑張った similarly involve a reached threshold."} -->
+
 ### もう For "Enough!"
 
 While もう can be used in a positive manner to indicate that an amount of something has reached a satisfactory level, it can also be used negatively, implying that the limit has been reached and so you can't take it anymore.
@@ -231,6 +248,10 @@ Let's take another example. Suppose you go hiking with your partner, but your le
   - I can't do this anymore…I'm at my limit.
 
 In this example, もう denotes that you have reached your physical limit and can't walk any further. These phrases can also be used when something unbearable happens to you and you are at your wits' end.
+
+<!-- vocab-card: {"id":"vocab-muri","priority":"optional","sourceSection":"もう For \"Enough!\"","word":"無理","reading":"むり","meaning":"impossible; beyond one's capacity"} -->
+<!-- vocab-card: {"id":"vocab-genkai","priority":"optional","sourceSection":"もう For \"Enough!\"","word":"限界","reading":"げんかい","meaning":"limit"} -->
+<!-- grammar-card: {"id":"iiyo-context","kind":"concept","format":"qa","priority":"optional","sourceSection":"もう For \"Enough!\"","rule":"A reached threshold can be satisfactory or intolerable","example":"Why can the same もういいよ mean readiness in hide-and-seek but exasperation in an argument?","answer":"Context and tone determine whether the reached limit is sufficient preparation or having had enough.","explanation":"The wording alone does not guarantee a positive or negative emotional stance."} -->
 
 ### もう for "Interjection"
 
@@ -259,6 +280,8 @@ This もう can also be used to playfully tease someone. For example, if your fa
   - **Hey**! Dad, you're making dad jokes again.
 
 Simple as that, もう can be used as an interjection to express a range of emotions, depending on the context and *how* you say it.
+
+<!-- grammar-card: {"id":"emotional-interjection","kind":"concept","format":"qa","priority":"optional","sourceSection":"もう for \"Interjection\"","rule":"Interjectional もう can convey emotion rather than temporal already","example":"Must the opening もう in もう！いい加減にしてよ be translated as a time expression?","answer":"No. It can express frustration, like Come on!; other contexts can convey delight or playful reproach.","explanation":"Intonation and the surrounding situation distinguish the emotional uses."} -->
 
   
 

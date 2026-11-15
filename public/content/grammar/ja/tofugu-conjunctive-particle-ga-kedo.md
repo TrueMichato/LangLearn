@@ -1,5 +1,7 @@
 # が / けど — But / However
 
+<!-- vocab-inventory: {"mode":"explicit"} -->
+
 > **Source:** Content from [Tofugu](https://www.tofugu.com/japanese-grammar/conjunctive-particle-ga-kedo/). For personal study.
 
 Conjunctive Particles が・けど: "But" in Japanese
@@ -27,6 +29,8 @@ Easy so far? Here's the catch. Unlike "but" in English, が and けど can also 
   - I don't have a pen with me. Can you lend me one?
 
 が and けど work in pretty much the same way, but the difference is that が carries a more formal nuance, while けど feels more colloquial. が is overall more suitable for writing, but is still used in conversation, combined with the polite form (です/ます style).
+
+<!-- grammar-card: {"id":"contrast-or-background","kind":"concept","format":"qa","priority":"essential","sourceSection":"The Basics","rule":"が and けど can introduce background without an adversative meaning","example":"Must ペン持ってないんだけど、貸してくれない？ contain a contradiction?","answer":"No. The first clause supplies the background for asking to borrow a pen.","explanation":"These connectors can link contrasting facts or prepare the listener for a request; translating every instance as but is misleading."} -->
 
 ### Patterns of Use
 
@@ -58,6 +62,10 @@ The same goes for な-adjectives. For example, using the な-adjective しずか
 
   - [It's quiet at night] **but** [it's loud during the day].
 
+<!-- grammar-card: {"id":"noun-copula","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Connecting Sentences","rule":"A noun or な-adjective needs a copula before the conjunctive connector","example":"It's summer, but it is cool today (plain style): 夏___けど、今日は涼しい。","answer":"だ","explanation":"The affirmative noun uses だけど; a な-adjective similarly uses 静かだけど. Polite style uses です."} -->
+<!-- vocab-card: {"id":"vocab-suzushii","word":"涼しい","reading":"すずしい","meaning":"cool; pleasantly cool","priority":"optional","sourceSection":"Connecting Sentences"} -->
+<!-- vocab-card: {"id":"vocab-shizuka","word":"静か","reading":"しずか","meaning":"quiet","priority":"optional","sourceSection":"Connecting Sentences"} -->
+
 ### が and けど for Contrast
 
 Like we covered earlier, the most typical use of が and けど is to illustrate ideas that contrast, like "but" does in English.
@@ -86,7 +94,9 @@ If you cut straight to the point and say "Would you lend me 500 yen?" your boss 
 
 You may also have noticed that が and けど follow んです or んだ. Since んです and んだ are used for providing explanations, they are a good match — you'll often see them paired up with が and けど.
 
-<!-- grammar-card: {"rule":"が is the formal counterpart of けど","hint":"が / けど","example":"白ワインは好きです___、赤ワインはあまり好きではないです。","answer":"が","explanation":"The sentence is in です form throughout, so the more formal が matches the register."} -->
+<!-- grammar-card: {"id":"formal-contrast","kind":"rule","format":"cloze","priority":"essential","sourceSection":"が and けど for Providing Context","rule":"が is the formal counterpart of けど","hint":"Choose the more formal connector contrasted in this lesson.","example":"白ワインは好きです___、赤ワインはあまり好きではないです。","answer":"が","explanation":"が suits a more formal contrast. Polite です does not prohibit けど; this is a register choice, not a required agreement rule."} -->
+<!-- grammar-card: {"id":"explanatory-background","kind":"concept","format":"qa","priority":"optional","sourceSection":"が and けど for Providing Context","rule":"Explanatory んです pairs naturally with context-setting connectors","example":"Why start a loan request with 財布を忘れてしまったんですが?","answer":"It explains the situation that motivates the request, making the request less abrupt.","explanation":"んです provides an explanatory framing and が links it to what follows."} -->
+<!-- vocab-card: {"id":"vocab-saifu","word":"財布","reading":"さいふ","meaning":"wallet; purse","priority":"optional","sourceSection":"が and けど for Providing Context"} -->
 
 ## Beyond The Basics
 
@@ -95,6 +105,8 @@ You may also have noticed that が and けど follow んです or んだ. Since 
 Although they're less common than けど, you may sometimes run into these variants of けど: けれども, けども, and けれど.
 
 In fact, けれども is the original form, and the others are its short forms. They're all still colloquial, especially compared to が, but they contain different levels of formality — けれども has the highest level of formality, followed in order by けども, けれど, and けど.
+
+<!-- grammar-card: {"id":"kedo-variants-register","kind":"concept","format":"qa","priority":"optional","sourceSection":"Variations of けど","rule":"Longer variants of けど generally sound less clipped","example":"Which is generally less clipped and more formal: けれども or けど?","answer":"けれども.","explanation":"けれど and けども also occur. Register is contextual; the variants are not separate dictionary vocabulary targets."} -->
 
 ### が and けど at The End of Sentences
 
@@ -115,6 +127,10 @@ What けど is doing here is providing the context, which is that you want to ma
 By pausing at けど and not saying anything after that, you're not specifying what exactly you're asking for. Rather, you're leaving it vague so that the listener can respond to you in a way that's convenient for them. Instead of specifying your request to achieve the goal of making a reservation, you're implying that you want the staff to decide the next move to make it happen.
 
 So, in response to the phrase 予約したいんですけど, the restaurant staff have the freedom to choose how to respond, like "What date?" or "How many guests?" etc. depending on how they want to handle the reservation process going forward — So in a way, this is a considerate way of communicating.
+
+<!-- grammar-card: {"id":"trailing-request","kind":"rule","format":"cloze","priority":"optional","sourceSection":"が and けど at The End of Sentences","rule":"けど can be left hanging to soften a request","hint":"Use the shortest colloquial connector to leave the request open.","example":"予約したいんです___…。","answer":"けど","explanation":"The listener can infer the request and choose how to proceed. This is a context-sensitive indirect strategy, not an automatic politeness guarantee."} -->
+<!-- grammar-card: {"id":"unfinished-response-space","kind":"concept","format":"qa","priority":"optional","sourceSection":"が and けど at The End of Sentences","rule":"A trailing connector can deliberately leave the next conversational move open","example":"Is 予約したいんですけど… necessarily a mistake with a missing second clause?","answer":"No. It can intentionally provide context and invite the staff to take the next turn.","explanation":"The omitted continuation may be a request or question inferred from the situation."} -->
+<!-- vocab-card: {"id":"vocab-yoyaku","word":"予約","reading":"よやく","meaning":"reservation; booking","priority":"optional","sourceSection":"が and けど at The End of Sentences"} -->
 
 Like I mentioned earlier, there are more effects that が and けど can create. To explore more, check out Kanae's article Kedo: Why Do Japanese People End Sentences with "But"…?
 
@@ -166,8 +182,6 @@ p. 120
 <!-- quiz: {"type":"multiple-choice","question":"What does \"ペン持ってないんだ**けど**、貸してくれない？\" mean?","options":["I don't have a pen with me. Can you lend me one?","I like white wine **but** I am not a big fan of red wine.","My mother came to the concert, **but** my older sister didn't.","It's raining, **but** the children are playing outside."],"answer":0} -->
 
 <!-- quiz: {"type":"multiple-choice","question":"What does \"母さんはコンサートに来た**が**、姉は来なかった。\" mean?","options":["My mother came to the concert, **but** my older sister didn't.","I like white wine **but** I am not a big fan of red wine.","I don't have a pen with me. Can you lend me one?","It's raining, **but** the children are playing outside."],"answer":0} -->
-
-<!-- grammar-card: {"rule":"けど can be left hanging to soften a request","hint":"が / けど","example":"予約したいんです___…。","answer":"けど","explanation":"Trailing off after けど leaves the request unfinished, which makes it indirect and polite."} -->
 
 ## Sources
 
