@@ -1,11 +1,40 @@
 /** Pure helpers for grammar SRS cards, shared by lesson generation and the review card. */
 
+import {
+  authoredMetadataErrors,
+  isMetadataObject,
+  isNonemptyString,
+  readLessonReviewBlocks,
+  type GrammarReviewItem,
+  type LegacyGrammarAlias,
+  type LessonReviewFormat,
+  type LessonReviewParseResult,
+  type LessonReviewPriority,
+} from './lesson-review';
+
 export interface GrammarCardSource {
   rule: string;
   hint?: string;
   example?: string;
   answer?: string;
   explanation: string;
+  id?: string;
+  kind?: 'rule' | 'concept';
+  format?: LessonReviewFormat;
+  priority?: LessonReviewPriority;
+  sourceSection?: string;
+  /** Exact old rule/prompt pairs, used only for adopting existing saved rows. */
+  legacyAliases?: LegacyGrammarAlias[];
+}
+
+export interface AuthoredGrammarCardSource extends GrammarCardSource {
+  id: string;
+  kind: 'rule' | 'concept';
+  format: LessonReviewFormat;
+  priority: LessonReviewPriority;
+  sourceSection: string;
+  example: string;
+  answer: string;
 }
 
 export interface GrammarCardFields {
@@ -16,21 +45,88 @@ export interface GrammarCardFields {
   grammarRule: string;
 }
 
-const GRAMMAR_CARD_BLOCK_REGEX = /<!--\s*grammar-card:\s*(.*?)\s*-->/g;
+const GRAMMAR_CARD_BLOCK_REGEX = /<!--\s*grammar-card:\s*[\s\S]*?-->/g;
 
-/** Parse every valid grammar-card metadata block from lesson markdown. */
-export function extractGrammarCardSources(markdown: string): GrammarCardSource[] {
-  const cards: GrammarCardSource[] = [];
-  GRAMMAR_CARD_BLOCK_REGEX.lastIndex = 0;
-  let match: RegExpExecArray | null;
-  while ((match = GRAMMAR_CARD_BLOCK_REGEX.exec(markdown)) !== null) {
-    try {
-      cards.push(JSON.parse(match[1]) as GrammarCardSource);
-    } catch {
-      // Malformed content is ignored here and surfaced by content validation.
-    }
+export function grammarCardMetadataErrors(value: Record<string, unknown>): string[] {
+  const errors: string[] = [];
+  if (!isNonemptyString(value.rule)) errors.push('rule must be nonempty text');
+  if (!isNonemptyString(value.explanation)) errors.push('explanation must be nonempty text');
+  for (const key of ['hint', 'example', 'answer']) {
+    if (value[key] !== undefined && typeof value[key] !== 'string') errors.push(`${key} must be text`);
   }
-  return cards;
+  const authored = ['id', 'kind', 'format', 'priority', 'sourceSection', 'legacyAliases']
+    .some((key) => key in value);
+  if (authored) {
+    errors.push(...authoredMetadataErrors(value));
+    if (value.kind !== 'rule' && value.kind !== 'concept') errors.push('kind must be "rule" or "concept"');
+    if (value.format !== 'qa' && value.format !== 'cloze') errors.push('format must be "qa" or "cloze"');
+    if (!isNonemptyString(value.example)) errors.push('example must be a nonempty prompt');
+    if (!isNonemptyString(value.answer)) errors.push('answer must be nonempty text');
+    if (value.format === 'cloze' && !hasBlank(typeof value.example === 'string' ? value.example : '')) {
+      errors.push('a cloze example must contain a ___ or ＿＿ blank');
+    }
+    if (value.legacyAliases !== undefined && (
+      !Array.isArray(value.legacyAliases) ||
+      !value.legacyAliases.every((alias) =>
+        isMetadataObject(alias) && isNonemptyString(alias.rule) && typeof alias.example === 'string')
+    )) {
+      errors.push('legacyAliases must be exact {rule, example} pairs');
+    }
+  } else if (!isNonemptyString(value.example) && !isNonemptyString(value.answer)) {
+    errors.push('a legacy card needs an example or answer');
+  }
+  return errors;
+}
+
+/** Detailed parser: consumers must surface diagnostics rather than claiming an empty lesson. */
+export function parseGrammarCardSources(markdown: string): LessonReviewParseResult<GrammarCardSource> {
+  const parsed = readLessonReviewBlocks(markdown, 'grammar-card');
+  const cards: GrammarCardSource[] = [];
+  const diagnostics = [...parsed.diagnostics];
+  const ids = new Set<string>();
+  for (const { block, line, value } of parsed.items) {
+    const errors = grammarCardMetadataErrors(value);
+    if (errors.length) {
+      diagnostics.push({
+        code: 'invalid-metadata', block, line, message: errors.join('; '),
+        ...(typeof value.id === 'string' ? { itemId: value.id } : {}),
+      });
+      continue;
+    }
+    if (typeof value.id === 'string' && ids.has(value.id)) {
+      diagnostics.push({ code: 'duplicate-id', block, line, itemId: value.id as string, message: `Duplicate review item id "${value.id}"` });
+      continue;
+    }
+    if (typeof value.id === 'string') ids.add(value.id);
+    cards.push(value as unknown as GrammarCardSource);
+  }
+  return { items: cards, diagnostics };
+}
+
+/** Compatibility entry point; use parseGrammarCardSources when displaying authoring failures. */
+export function extractGrammarCardSources(markdown: string): GrammarCardSource[] {
+  return parseGrammarCardSources(markdown).items;
+}
+
+/** Adapt legacy answers once; explicit formats always keep the author's answer verbatim. */
+export function normalizeGrammarCardSource(card: GrammarCardSource): GrammarReviewItem | null {
+  const fields = buildGrammarCardFields(card);
+  if (!fields) return null;
+  return {
+    id: card.id ?? `legacy:${JSON.stringify([card.rule.trim(), (card.example ?? '').trim()])}`,
+    kind: card.kind ?? 'rule',
+    source: 'grammar-card',
+    provenance: card.id ? 'authored' : 'legacy',
+    priority: card.priority ?? 'optional',
+    sourceSection: card.sourceSection ?? '',
+    format: card.format ?? (hasBlank(card.example) ? 'cloze' : 'qa'),
+    rule: card.rule,
+    hint: fields.reading,
+    prompt: fields.contextSentence,
+    answer: fields.word,
+    explanation: fields.meaning,
+    legacyAliases: card.legacyAliases ?? [],
+  };
 }
 
 /** Remove grammar-card metadata before rendering lesson markdown. */
@@ -365,7 +461,9 @@ export function combineExplanation(explanation: string, gloss: string): string {
  */
 export function buildGrammarCardFields(card: GrammarCardSource): GrammarCardFields | null {
   const prompt = card.example ?? '';
-  const { token, gloss } = parseAnswer(card.answer ?? '', prompt);
+  const { token, gloss } = card.format
+    ? { token: card.answer ?? '', gloss: '' }
+    : parseAnswer(card.answer ?? '', prompt);
   if (!token && !prompt) return null;
   return {
     word: token || card.rule,

@@ -80,8 +80,8 @@ export default function StudyPlan({
 
       {!hasData ? (
         <p className="text-sm text-slate-600 dark:text-slate-300">
-          Nothing due yet — that's normal on day one. Finish a lesson below and
-          your first reviews will show up here.
+          Nothing due yet — that's normal on day one. Try a lesson below, then
+          choose material to save for your first reviews.
         </p>
       ) : (
         <>

@@ -1,25 +1,27 @@
 import { db, type Word, type Review } from './schema';
 import { getFrequencyRank } from '../data/frequency';
+import { mergeStoredCardMetadata, sameStoredCard } from '../lib/card-identity';
 
 export async function addWord(
   word: Omit<Word, 'id' | 'createdAt' | 'type'> & { type?: Word['type'] }
 ): Promise<number> {
-  const id = await db.words.add({
-    ...word,
-    type: word.type ?? 'word',
-    createdAt: new Date().toISOString(),
-  }) as number;
+  return db.transaction('rw', [db.words, db.reviews], async () => {
+    const id = await db.words.add({
+      ...word,
+      type: word.type ?? 'word',
+      createdAt: new Date().toISOString(),
+    }) as number;
 
-  await db.reviews.add({
-    wordId: id,
-    ease: 2.5,
-    interval: 0,
-    repetitions: 0,
-    nextReviewDate: new Date().toISOString(),
-    lastReviewDate: new Date().toISOString(),
+    await db.reviews.add({
+      wordId: id,
+      ease: 2.5,
+      interval: 0,
+      repetitions: 0,
+      nextReviewDate: new Date().toISOString(),
+      lastReviewDate: new Date().toISOString(),
+    });
+    return id;
   });
-
-  return id;
 }
 
 export async function getWordsByLanguage(language: string): Promise<Word[]> {
@@ -68,7 +70,8 @@ export async function getTotalWordCount(language?: string): Promise<number> {
 }
 
 export async function wordExists(word: string, language: string): Promise<boolean> {
-  const match = await db.words.where({ word, language }).first();
+  const match = await db.words.where({ word, language })
+    .filter((row) => row.type !== 'grammar').first();
   return !!match;
 }
 
@@ -114,9 +117,13 @@ export async function saveWordsToVocabulary(
       const existing = await db.words
         .where('[word+language]')
         .equals([w.word, w.language])
+        .filter((row) => sameStoredCard(row, w))
         .first();
 
       if (existing) {
+        if (w.lessonSources?.length) {
+          await db.words.update(existing.id!, mergeStoredCardMetadata(existing, w));
+        }
         result.alreadySaved++;
         result.outcomes[key] = 'exists';
         continue;
@@ -257,7 +264,17 @@ export async function getKnownWordCount(language?: string): Promise<WordCountByL
 }
 
 export async function updateWord(id: number, updates: Partial<Word>): Promise<void> {
-  await db.words.update(id, updates);
+  await db.transaction('rw', db.words, async () => {
+    const existing = await db.words.get(id);
+    if (!existing) return;
+    const wording = ['word', 'reading', 'meaning', 'contextSentence', 'grammarRule', 'grammarKind', 'grammarFormat'] as const;
+    const edited = existing.type === 'grammar' &&
+      wording.some((key) => key in updates && updates[key] !== existing[key]);
+    await db.words.update(id, {
+      ...updates,
+      ...(edited ? { learnerEdited: true } : {}),
+    });
+  });
 }
 
 export async function bulkAddWords(

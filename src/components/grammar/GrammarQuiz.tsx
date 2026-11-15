@@ -56,6 +56,8 @@ export default function GrammarQuiz({
   };
 
   const isCorrect = selected === answer;
+  const correctMaterial = `${question} ${options[answer] ?? ''}`.normalize('NFC');
+  const revealedWords = captureWords?.filter((word) => correctMaterial.includes(word.word.normalize('NFC'))) ?? [];
   const isAssessmentPrompt = promptRef !== undefined || questionNumber !== undefined;
   const promptFocusClass = isAssessmentPrompt
     ? 'rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 dark:focus:ring-indigo-400 dark:focus:ring-offset-slate-800'
@@ -117,6 +119,7 @@ export default function GrammarQuiz({
         })}
       </div>
       {selected !== null && (
+        <>
         <p
           role="status"
           aria-live="polite"
@@ -142,16 +145,11 @@ export default function GrammarQuiz({
               . Keep going! 💪
             </>
           )}
-          {selected !== null && captureAfterAnswer && language && (
-            <PracticeWordCapture
-              language={language}
-              words={captureWords}
-              text={questionDirection === 'target' ? question
-                : targetOptionIndices.map((index) => options[index]).join(' ')}
-              source="grammar-lesson"
-            />
-          )}
         </p>
+        {captureAfterAnswer && language && revealedWords.length > 0 && (
+          <PracticeWordCapture language={language} words={revealedWords} source="grammar-lesson" />
+        )}
+        </>
       )}
     </div>
   );

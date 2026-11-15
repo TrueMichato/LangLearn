@@ -9,12 +9,17 @@ interface GrammarCardProps {
   onFlip: () => void;
 }
 
+function textDirection(text: string | undefined, language: string) {
+  const firstLetter = text?.match(/\p{Letter}/u)?.[0] ?? '';
+  return /\p{Script=Arabic}/u.test(firstLetter) ? rtlProps(language) : { dir: 'ltr' as const };
+}
+
 export default function GrammarCard({ word, isFlipped, onFlip }: GrammarCardProps) {
   // Front shows the prompt (example sentence with a blank, or a question) and an optional hint —
   // never the answer (word.word) or the grammar rule.
   const prompt = word.contextSentence;
   const answer = word.word;
-  const promptHasBlank = hasBlank(prompt);
+  const promptHasBlank = word.grammarFormat !== 'qa' && hasBlank(prompt);
   const filledSentence = fillBlank(prompt, answer);
   const lessonId = lessonIdFromTags(word.tags);
 
@@ -41,21 +46,21 @@ export default function GrammarCard({ word, isFlipped, onFlip }: GrammarCardProp
       role={!isFlipped ? 'button' : undefined}
       tabIndex={!isFlipped ? 0 : undefined}
       aria-label={!isFlipped ? 'Reveal the answer' : undefined}
-      className={`relative w-full min-h-[240px] rounded-2xl p-6 flex flex-col items-center justify-center transition-all duration-300 bg-white dark:bg-slate-800 border border-slate-200/70 dark:border-white/10 shadow-lg ${
+      className={`relative w-full min-h-[240px] rounded-2xl p-6 flex flex-col items-center justify-center transition-all duration-300 motion-reduce:transition-none bg-white dark:bg-slate-800 border border-slate-200/70 dark:border-white/10 shadow-lg ${
         isFlipped
           ? ''
           : 'cursor-pointer hover:shadow-xl focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600'
       }`}
     >
       <span className="absolute top-3 right-3 text-xs bg-indigo-50 dark:bg-indigo-950/40 text-indigo-700 dark:text-indigo-300 px-2 py-0.5 rounded-full font-medium">
-        Grammar
+        {word.grammarKind === 'concept' ? 'Concept' : 'Grammar'}
       </span>
 
       {!isFlipped ? (
         /* Front: question side — prompt + hint only */
         <div className="text-center space-y-3 w-full">
           {word.reading && (
-            <p className="text-sm text-slate-500 dark:text-slate-400 italic">
+            <p className="text-sm text-slate-500 dark:text-slate-400 italic" {...textDirection(word.reading, word.language)}>
               {word.reading}
             </p>
           )}
@@ -65,7 +70,7 @@ export default function GrammarCard({ word, isFlipped, onFlip }: GrammarCardProp
               <p
                 className="text-base text-slate-700 dark:text-slate-200"
                 style={{ fontSize: 'var(--app-font-size)' }}
-                {...rtlProps(word.language)}
+                {...textDirection(question, word.language)}
               >
                 {question}
               </p>
@@ -84,29 +89,29 @@ export default function GrammarCard({ word, isFlipped, onFlip }: GrammarCardProp
         /* Back: answer side — answer, filled sentence, rule, explanation */
         <div className="text-center space-y-3 w-full">
           <p
-            className="text-2xl font-bold text-green-700 dark:text-green-400"
+            className={`${word.grammarFormat === 'qa' ? 'text-lg font-semibold' : 'text-2xl font-bold'} break-words text-slate-800 dark:text-slate-100`}
             style={{ fontSize: 'var(--app-font-size)' }}
-            {...rtlProps(word.language)}
+            {...textDirection(answer, word.language)}
           >
             {answer}
           </p>
 
           {promptHasBlank && (
             <div className="mt-2 bg-slate-50 dark:bg-slate-900/40 rounded-xl px-4 py-3">
-              <p className="text-base text-slate-800 dark:text-slate-100 font-medium" {...rtlProps(word.language)}>
+              <p className="text-base text-slate-800 dark:text-slate-100 font-medium" {...textDirection(filledSentence, word.language)}>
                 {filledSentence}
               </p>
             </div>
           )}
 
           {word.grammarRule && !ruleIsQuestion && (
-            <p className="text-sm text-indigo-700 dark:text-indigo-300 font-medium mt-2">
+            <p className="text-sm text-indigo-700 dark:text-indigo-300 font-medium mt-2" {...textDirection(word.grammarRule, word.language)}>
               {word.grammarRule}
             </p>
           )}
 
           {word.meaning && (
-            <p className="text-sm text-slate-600 dark:text-slate-300 mt-1">
+            <p className="text-sm text-slate-600 dark:text-slate-300 mt-1" {...textDirection(word.meaning, word.language)}>
               {word.meaning}
             </p>
           )}

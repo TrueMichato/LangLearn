@@ -192,8 +192,8 @@ export default function OnboardingOverlay() {
       <h1 className={heading}>Reviews come back at the right time</h1>
       <div className="max-w-md space-y-3 text-slate-600 dark:text-slate-300">
         <p>
-          Everything you learn turns into a review card. The app brings each one
-          back just before you'd forget it — you only have to show up.
+          Choose material from lessons to save as review cards. The app brings
+          your saved cards back over time — you only have to show up.
         </p>
         <p className="font-medium text-indigo-600 dark:text-indigo-400">
           Got one wrong? You'll simply see it again sooner. No penalties, ever.

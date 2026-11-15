@@ -19,7 +19,8 @@
  *     install without choosing which half of their progress to keep.
  */
 
-import { db, CURRENT_SCHEMA_VERSION } from './schema';
+import { db, CURRENT_SCHEMA_VERSION, type Word } from './schema';
+import { mergeStoredCardMetadata, sameStoredCard, storedCardKey, storedWordType } from '../lib/card-identity';
 
 /** Table name → whether Dexie assigns its primary key (`++id`). */
 const TABLES = {
@@ -116,6 +117,28 @@ export async function exportAllData(): Promise<string> {
 
 // ─── Payload normalisation ───
 
+function normalizeLegacyGrammarWords(
+  tables: BackupPayload['tables'],
+  schemaVersion: number,
+): BackupPayload['tables'] {
+  if (schemaVersion >= 9 || !tables.words) return tables;
+  return {
+    ...tables,
+    words: tables.words.map((value) => {
+      if (!value || typeof value !== 'object') return value;
+      const word = value as Record<string, unknown>;
+      if (word.type !== 'grammar' || word.grammarRule !== undefined) return value;
+      // Apply the same non-destructive field realignment as schema v9.
+      return {
+        ...word,
+        grammarRule: word.word,
+        word: word.contextSentence || word.word,
+        contextSentence: '',
+      };
+    }),
+  };
+}
+
 /**
  * Read either payload shape.
  *
@@ -139,7 +162,7 @@ export function normalizePayload(raw: unknown): BackupPayload {
       version: 1,
       exportedAt: typeof obj.exportedAt === 'string' ? obj.exportedAt : '',
       schemaVersion: 0,
-      tables,
+      tables: normalizeLegacyGrammarWords(tables, 0),
       localStorage: {},
     };
   }
@@ -170,7 +193,7 @@ export function normalizePayload(raw: unknown): BackupPayload {
     version: typeof obj.version === 'number' ? obj.version : BACKUP_PAYLOAD_VERSION,
     exportedAt: typeof obj.exportedAt === 'string' ? obj.exportedAt : '',
     schemaVersion: typeof obj.schemaVersion === 'number' ? obj.schemaVersion : 0,
-    tables,
+    tables: normalizeLegacyGrammarWords(tables, typeof obj.schemaVersion === 'number' ? obj.schemaVersion : 0),
     localStorage: storage,
   };
 }
@@ -232,7 +255,8 @@ export function mergeGuidedActivityProgress(
 export function mergeKey(table: BackupTableName, row: Row): string | null {
   switch (table) {
     case 'words':
-      return row.word != null && row.language != null ? `${row.language}\u0000${row.word}` : null;
+      return typeof row.word === 'string' && typeof row.language === 'string'
+        ? storedCardKey(row as unknown as Word) : null;
     case 'settings':
       return row.key != null ? String(row.key) : null;
     case 'dailyActivity':
@@ -314,7 +338,7 @@ async function importReplace(
 /**
  * Fold the payload into what is already there, keeping both.
  *
- * Words are matched on `[word+language]` and imported ones get fresh ids, so
+ * Words use typed, source-aware identity and imported ones get fresh ids, so
  * their reviews and review-log entries are re-pointed at the new id rather than
  * colliding with an unrelated local row that happens to share a number.
  */
@@ -331,27 +355,41 @@ async function importMerge(payload: BackupPayload): Promise<ImportResult> {
   await db.transaction('rw', tablesToLock.map((n) => db.table(n)), async () => {
     // ─ Words (and everything hanging off them) ─
     const wordIdRemap = new Map<number, number>();
+    const reviewIdRemap = new Map<number, number>();
     if (payload.tables.words) {
       const incoming = payload.tables.words as Row[];
       const existing = await db.words.toArray();
-      const existingKeys = new Set(
-        existing
-          .map((w) => mergeKey('words', w as unknown as Row))
-          .filter((k): k is string => k !== null),
-      );
-
+      const byKey = new Map<string, Word>();
+      const grammar = existing.filter((word) => storedWordType(word) === 'grammar');
+      for (const word of existing) {
+        const key = storedCardKey(word);
+        if (!byKey.has(key)) byKey.set(key, word);
+      }
       let added = 0;
       let dupes = 0;
       for (const row of incoming) {
+        const incomingWord = row as unknown as Word;
         const key = mergeKey('words', row);
-        if (key !== null && existingKeys.has(key)) {
+        const direct = key === null ? undefined : byKey.get(key);
+        const match = direct && sameStoredCard(direct, incomingWord)
+          ? direct
+          : key !== null && storedWordType(incomingWord) === 'grammar'
+            ? grammar.find((word) => sameStoredCard(word, incomingWord))
+            : undefined;
+        if (match) {
+          const metadata = mergeStoredCardMetadata(match, incomingWord);
+          await db.words.update(match.id!, metadata);
+          Object.assign(match, metadata);
+          byKey.set(storedCardKey(match), match);
           dupes++;
           continue;
         }
         const oldId = typeof row.id === 'number' ? row.id : null;
         const newId = (await db.words.add(stripId(row) as never)) as number;
         if (oldId !== null) wordIdRemap.set(oldId, newId);
-        if (key !== null) existingKeys.add(key);
+        const imported = { ...incomingWord, id: newId };
+        if (key !== null) byKey.set(key, imported);
+        if (storedWordType(imported) === 'grammar') grammar.push(imported);
         added++;
       }
       written.words = added;
@@ -372,7 +410,8 @@ async function importMerge(payload: BackupPayload): Promise<ImportResult> {
           dropped++;
           continue;
         }
-        await db.reviews.add({ ...stripId(row), wordId: newWordId } as never);
+        const newReviewId = await db.reviews.add({ ...stripId(row), wordId: newWordId } as never) as number;
+        if (typeof row.id === 'number') reviewIdRemap.set(row.id, newReviewId);
         added++;
       }
       written.reviews = added;
@@ -390,7 +429,12 @@ async function importMerge(payload: BackupPayload): Promise<ImportResult> {
           dropped++;
           continue;
         }
-        await db.reviewLog.add({ ...stripId(row), wordId: newWordId } as never);
+        await db.reviewLog.add({
+          ...stripId(row),
+          wordId: newWordId,
+          ...(typeof row.reviewId === 'number' && reviewIdRemap.has(row.reviewId)
+            ? { reviewId: reviewIdRemap.get(row.reviewId) } : {}),
+        } as never);
         added++;
       }
       written.reviewLog = added;

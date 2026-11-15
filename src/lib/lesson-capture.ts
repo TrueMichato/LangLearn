@@ -13,6 +13,21 @@
  */
 
 import type { ReactNode } from 'react';
+import {
+  grammarCardMetadataErrors,
+  normalizeGrammarCardSource,
+  type GrammarCardSource,
+} from './grammar-cards';
+import {
+  authoredMetadataErrors,
+  isNonemptyString,
+  readLessonReviewBlocks,
+  type LessonReviewItem,
+  type LessonReviewParseResult,
+  type LessonReviewPriority,
+  type LessonReviewProvenance,
+  type VocabularyReviewItem,
+} from './lesson-review';
 
 export interface CaptureCandidate {
   /** Stable identity for dedupe and selection state. */
@@ -33,7 +48,10 @@ export interface CaptureCandidate {
   contextSentence: string;
   /** Whether the term is a full sentence rather than a single word or phrase. */
   isSentence: boolean;
-  source: 'list' | 'table';
+  source: 'list' | 'table' | 'vocab-card';
+  priority?: LessonReviewPriority;
+  sourceSection?: string;
+  provenance?: LessonReviewProvenance;
   /**
    * The plain text of the line this came from, used to attach an inline save
    * button to the matching rendered list item.
@@ -215,8 +233,11 @@ function buildCandidate(
 /** Capture candidates from bold list items: `- **term (reading)** — meaning`. */
 export function parseListCandidates(markdown: string): CaptureCandidate[] {
   const candidates: CaptureCandidate[] = [];
+  let sourceSection = '';
 
   for (const line of usableLines(markdown)) {
+    const heading = /^#{1,6}\s+(.+)$/.exec(line);
+    if (heading) sourceSection = stripMarkdown(heading[1]);
     const item = line.match(/^\s*(?:[-*+]|\d+\.)\s+(.*)$/);
     if (!item) continue;
     const body = item[1].trim();
@@ -226,7 +247,7 @@ export function parseListCandidates(markdown: string): CaptureCandidate[] {
     const parsed = parseGlossed(body);
     if (!parsed) continue;
     const candidate = buildCandidate(parsed, 'list', stripMarkdown(body));
-    if (candidate) candidates.push(candidate);
+    if (candidate) candidates.push({ ...candidate, sourceSection });
   }
 
   return candidates;
@@ -290,8 +311,11 @@ export function parseTableCandidates(markdown: string): CaptureCandidate[] {
   const candidates: CaptureCandidate[] = [];
   let roles: ColumnRoles | null = null;
   let expectSeparator = false;
+  let sourceSection = '';
 
   for (const line of lines) {
+    const heading = /^#{1,6}\s+(.+)$/.exec(line);
+    if (heading) sourceSection = stripMarkdown(heading[1]);
     const isRow = /^\s*\|.*\|\s*$/.test(line);
     if (!isRow) {
       roles = null;
@@ -329,7 +353,7 @@ export function parseTableCandidates(markdown: string): CaptureCandidate[] {
       'table',
       stripMarkdown(targetCell),
     );
-    if (candidate) candidates.push(candidate);
+    if (candidate) candidates.push({ ...candidate, sourceSection });
   }
 
   return candidates;
@@ -398,24 +422,158 @@ export function indexBySourceText(
 ): Map<string, CaptureCandidate> {
   const index = new Map<string, CaptureCandidate>();
   for (const candidate of candidates) {
-    if (candidate.source !== 'list') continue;
+    if (candidate.source === 'table' || !candidate.sourceText) continue;
     index.set(normalizeForMatch(candidate.sourceText), candidate);
   }
   return index;
 }
 
-/** Every capturable term in a lesson, in document order, without duplicates. */
-export function parseLessonCandidates(markdown: string): CaptureCandidate[] {
+function vocabularyMetadataErrors(value: Record<string, unknown>): string[] {
+  const errors = authoredMetadataErrors(value);
+  if (!isNonemptyString(value.word)) errors.push('word must be nonempty text');
+  if (!isNonemptyString(value.meaning)) errors.push('meaning must be nonempty text');
+  for (const key of ['reading', 'contextSentence']) {
+    if (value[key] !== undefined && typeof value[key] !== 'string') errors.push(`${key} must be text`);
+  }
+  return errors;
+}
+
+function vocabularyFromMetadata(value: Record<string, unknown>): VocabularyReviewItem {
+  const word = (value.word as string).trim();
+  const isSentence = looksLikeSentence(word);
+  const context = ((value.contextSentence as string | undefined) ?? '').trim();
+  return {
+    id: value.id as string,
+    kind: 'vocabulary',
+    source: 'vocab-card',
+    provenance: 'authored',
+    priority: value.priority as LessonReviewPriority,
+    sourceSection: value.sourceSection as string,
+    word,
+    reading: ((value.reading as string | undefined) ?? '').trim(),
+    meaning: (value.meaning as string).trim(),
+    contextSentence: isSentence || context === word ? '' : context,
+    isSentence,
+    sourceText: '',
+  };
+}
+
+/** Explicit lexical metadata; no prose, quiz alternatives, or dictionary lookup is inferred. */
+export function parseVocabularyCardSources(markdown: string): LessonReviewParseResult<VocabularyReviewItem> {
+  const parsed = readLessonReviewBlocks(markdown, 'vocab-card');
+  const items: VocabularyReviewItem[] = [];
+  const diagnostics = [...parsed.diagnostics];
+  const ids = new Set<string>();
+  for (const { block, line, value } of parsed.items) {
+    const errors = vocabularyMetadataErrors(value);
+    if (errors.length) {
+      diagnostics.push({
+        code: 'invalid-metadata', block, line, message: errors.join('; '),
+        ...(typeof value.id === 'string' ? { itemId: value.id } : {}),
+      });
+      continue;
+    }
+    const id = value.id as string;
+    if (ids.has(id)) {
+      diagnostics.push({ code: 'duplicate-id', block, line, itemId: id, message: `Duplicate review item id "${id}"` });
+      continue;
+    }
+    ids.add(id);
+    items.push(vocabularyFromMetadata(value));
+  }
+  return { items, diagnostics };
+}
+
+function lexicalKey(word: string): string {
+  return word.trim().normalize('NFC');
+}
+
+function mergeVocabularyCandidates(
+  authored: VocabularyReviewItem[],
+  formatting: CaptureCandidate[],
+): CaptureCandidate[] {
   const seen = new Set<string>();
   const result: CaptureCandidate[] = [];
-
-  for (const candidate of [...parseListCandidates(markdown), ...parseTableCandidates(markdown)]) {
+  const explicitWords = new Set(authored.map((item) => lexicalKey(item.word)));
+  for (const item of authored) {
+    const visible = formatting.find((candidate) =>
+      candidate.source === 'list' && lexicalKey(candidate.word) === lexicalKey(item.word));
+    result.push({ ...item, sourceText: visible?.sourceText ?? '' });
+  }
+  for (const candidate of formatting) {
+    if (explicitWords.has(lexicalKey(candidate.word))) continue;
     if (seen.has(candidate.id)) continue;
     seen.add(candidate.id);
     result.push(candidate);
   }
-
   return result;
+}
+
+/** Compatibility entry point; parseLessonReviewItems also reports malformed metadata. */
+export function parseLessonCandidates(markdown: string): CaptureCandidate[] {
+  return mergeVocabularyCandidates(
+    parseVocabularyCardSources(markdown).items,
+    [...parseListCandidates(markdown), ...parseTableCandidates(markdown)],
+  );
+}
+
+/**
+ * Canonical lesson material for preview/selection. A nonempty diagnostics array
+ * means incomplete/invalid metadata, not a lesson with nothing worth reviewing.
+ */
+export function parseLessonReviewItems(markdown: string): LessonReviewParseResult {
+  const metadata = readLessonReviewBlocks(markdown);
+  const diagnostics = [...metadata.diagnostics];
+  const ids = new Set<string>();
+  const explicit: LessonReviewItem[] = [];
+  for (const { block, line, value } of metadata.items) {
+    const errors = block === 'grammar-card'
+      ? grammarCardMetadataErrors(value)
+      : vocabularyMetadataErrors(value);
+    if (errors.length) {
+      diagnostics.push({
+        code: 'invalid-metadata', block, line, message: errors.join('; '),
+        ...(typeof value.id === 'string' ? { itemId: value.id } : {}),
+      });
+      continue;
+    }
+    if (typeof value.id === 'string') {
+      if (ids.has(value.id)) {
+        diagnostics.push({ code: 'duplicate-id', block, line, itemId: value.id, message: `Duplicate review item id "${value.id}"` });
+        continue;
+      }
+      ids.add(value.id);
+    }
+    const item = block === 'grammar-card'
+      ? normalizeGrammarCardSource(value as unknown as GrammarCardSource)
+      : vocabularyFromMetadata(value);
+    if (item) {
+      if (item.provenance === 'legacy' && ids.has(item.id)) continue;
+      ids.add(item.id);
+      explicit.push(item);
+    }
+  }
+  const words = mergeVocabularyCandidates(
+    explicit.filter((item): item is VocabularyReviewItem => item.kind === 'vocabulary'),
+    [...parseListCandidates(markdown), ...parseTableCandidates(markdown)],
+  ).map((candidate): VocabularyReviewItem => ({
+    ...candidate,
+    id: candidate.provenance === 'authored' ? candidate.id : `formatting:${candidate.id}`,
+    kind: 'vocabulary',
+    priority: candidate.priority ?? 'optional',
+    sourceSection: candidate.sourceSection ?? '',
+    provenance: candidate.provenance ?? 'formatting',
+  }));
+  diagnostics.sort((a, b) => a.line - b.line);
+  return {
+    items: [...words, ...explicit.filter((item) => item.kind !== 'vocabulary')],
+    diagnostics,
+  };
+}
+
+/** Remove review metadata for display, after parsing its diagnostics separately. */
+export function stripLessonReviewSources(markdown: string): string {
+  return markdown.replace(/<!--\s*(?:grammar-card|vocab-card)\b[\s\S]*?(?:-->|$)/g, '');
 }
 
 /** The provenance tag that ties a saved word back to the lesson it came from. */
