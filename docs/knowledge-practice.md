@@ -43,6 +43,17 @@ lemmatization, synonym inference, or AI-generated exercise content is provided.
 
 ## Practice and assessment boundaries
 
+- Review home separates scheduled reviews from explicit optional practice.
+  Scheduled answers use the selected scheduler and write review logs. Optional
+  practice includes future-dated saved cards, uses the existing review batch
+  size, and requeues misses only in memory: it never changes any review field,
+  review log, familiarity evidence, retention or mistake statistics. Existing
+  timer-based effort/XP still counts. Queues freeze at explicit start; changing
+  recall direction does not reroll membership. Manual study sets store word IDs;
+  tag sets require all selected tags. Both respect their language scope and
+  exclude deleted/unavailable members without substitution. Smart Due Today
+  remains due-only even in practice. Legacy set links remain scheduled due-only
+  and mistake/topic links retain curated scheduling unless practice is explicit.
 - The practice selector is separate from the due-card scheduler and does not
   modify SRS intervals. Its 80–90% familiar-occurrence target is a **soft ranking
   preference**, not an eligibility gate or an accuracy claim. Supplied target-only

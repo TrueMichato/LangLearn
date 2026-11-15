@@ -73,8 +73,8 @@ src/
 ├── App.tsx              # Router (19 routes), ErrorBoundary wrapper
 ├── pages/               # 19 route pages
 │   ├── Dashboard.tsx    # Home — stats, vocab size widget, streak, badges, heat map
-│   ├── Review.tsx       # SRS review — 6 card types (incl. grammar), keyboard shortcuts
-│   ├── Words.tsx        # Vocabulary browser — search, filter, study sets, CSV import
+│   ├── Review.tsx       # Review home, scheduled reviews, schedule-free practice, manual/tag study sets
+│   ├── Words.tsx        # Vocabulary browser/editor — search, filter, CSV import; Review sets shortcut
 │   ├── Reader.tsx       # Immersion reader — furigana, word status highlighting, word mining
 │   ├── Learn.tsx        # Hub → Grammar, Letters, Vocab, Dialects, Sentences, Conjugations, Listening, Music, Translation, Minimal Pairs, Numbers, Tests
 │   ├── Grammar.tsx      # Grammar lesson browser + LessonView (auto-creates SRS grammar cards)
@@ -125,6 +125,15 @@ Key interfaces: `Word` (id, language, word, reading, meaning, contextSentence, t
 ## SRS System
 
 SM-2 algorithm in `src/lib/sm2.ts`. Grade 0-2 resets card; grade 3-5 advances interval. 6 card types: classic (rep 0+), reverse/cloze (rep 2+), listening/MC (rep 4+), grammar (always for type='grammar'). MC and cloze auto-grade; others show manual grade buttons. Failed cards re-queue to end. Grammar cards auto-created from `<!-- grammar-card: {...} -->` blocks in lessons on completion.
+
+`/review` is the review home and owns study sets. Scheduled sessions use
+`processReview` (SM-2 or FSRS); explicit optional practice uses all available
+source members and the same batch-size setting, but grades only in memory.
+Practice never writes review rows or review logs; timer-based effort/XP remains.
+Legacy set links stay due-only, and mistake/topic links retain curated scheduling
+semantics unless `session=practice` is explicit. Sets persist in
+`langlearn-study-sets` v2 with manual word IDs or AND tag rules; missing IDs are
+not replaced. Smart Due Today is always due-only.
 
 ## XP Constants (src/lib/xp.ts)
 
