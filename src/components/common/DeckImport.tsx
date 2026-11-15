@@ -1,5 +1,7 @@
 import { useState, useRef } from 'react';
 import { parseDeck, importDeck, type Deck } from '../../lib/decks';
+import { getLanguageLabel } from '../../lib/languages';
+import { rtlProps } from '../../lib/rtl';
 
 export default function DeckImport() {
   const fileInputRef = useRef<HTMLInputElement>(null);
@@ -53,6 +55,9 @@ export default function DeckImport() {
       </button>
       <input
         ref={fileInputRef}
+        id="settings-deck-file"
+        name="deckFile"
+        aria-label="Choose a vocabulary deck file"
         type="file"
         accept=".json"
         onChange={handleFileChange}
@@ -66,7 +71,7 @@ export default function DeckImport() {
       {deck && (
         <div className="bg-slate-50 dark:bg-slate-800 rounded-xl p-3 space-y-2">
           <p className="text-sm font-medium text-slate-800 dark:text-slate-200">
-            {deck.name} <span className="text-slate-500">({deck.language.toUpperCase()})</span>
+            {deck.name} <span className="text-slate-600 dark:text-slate-300">({getLanguageLabel(deck.language)})</span>
           </p>
           <p className="text-xs text-slate-500 dark:text-slate-400">
             {deck.words.length} word{deck.words.length !== 1 ? 's' : ''}
@@ -75,19 +80,19 @@ export default function DeckImport() {
             <ul className="text-xs text-slate-600 dark:text-slate-400 space-y-0.5">
               {deck.words.slice(0, 5).map((w, i) => (
                 <li key={i}>
-                  <span className="font-medium">{w.word}</span>
-                  {w.reading ? ` (${w.reading})` : ''} — {w.meaning}
+                  <span className="font-medium" {...rtlProps(deck.language)}>{w.word}</span>
+                  {w.reading && <> (<span {...rtlProps(deck.language)}>{w.reading}</span>)</>} — {w.meaning}
                 </li>
               ))}
               {deck.words.length > 5 && (
-                <li className="text-slate-400">…and {deck.words.length - 5} more</li>
+                <li className="text-slate-600 dark:text-slate-300">…and {deck.words.length - 5} more</li>
               )}
             </ul>
           )}
           <button
             onClick={handleImport}
             disabled={importing}
-            className="w-full bg-indigo-600 text-white py-2 rounded-xl font-semibold hover:bg-indigo-700 transition-colors disabled:opacity-50"
+            className="w-full min-h-[44px] bg-indigo-600 text-white py-2 rounded-xl font-semibold hover:bg-indigo-700 transition-colors disabled:opacity-50"
           >
             {importing ? 'Importing…' : 'Import Deck'}
           </button>

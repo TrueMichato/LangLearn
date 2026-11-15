@@ -122,6 +122,20 @@ describe('test-out deep links', () => {
     expect(vocabTestOutRoute('days-months')).toBe(`${ROUTES.vocabLessons}?${TEST_OUT_QUERY_PARAM}=days-months`);
   });
 
+  describe('guided column deep links', () => {
+    it('round-trips persisted names with spaces and non-ASCII marks', () => {
+      const route = guidedLettersRoute('ar', 'Vowels & Marks (Ḥarakāt)', 'Short Vowels (Fatḥa, Kasra, Ḍamma)');
+      const params = new URLSearchParams(route.split('?')[1]);
+      expect(params.get('alphabet')).toBe('Vowels & Marks (Ḥarakāt)');
+      expect(params.get('group')).toBe('Short Vowels (Fatḥa, Kasra, Ḍamma)');
+      expect(params.get('mode')).toBe('learn');
+    });
+
+    it('keeps the existing column browser route when no group is requested', () => {
+      expect(guidedLettersRoute('ja', 'Hiragana')).toBe('/letters/ja?mode=learn&alphabet=Hiragana');
+    });
+  });
+
   describe('lesson library deep links', () => {
     it('keeps the Lessons & practice origin on ordered lesson libraries', () => {
       expect(lessonLibraryRoute(ROUTES.grammar)).toBe(

@@ -1,10 +1,11 @@
-import { useState, useEffect, useRef } from 'react';
+import { useState, useEffect, useRef, useId } from 'react';
 import { useSettingsStore } from '../../stores/settingsStore';
 import { currentLanguageOf } from '../../lib/current-language';
 import { addWord } from '../../db/words';
 import { lookupWord } from '../../lib/dictionary';
 import { speak, isTTSSupported } from '../../lib/tts';
 import { getLanguageLabel } from '../../lib/languages';
+import { useModalFocus } from '../../hooks/useModalFocus';
 
 interface AddWordModalProps {
   isOpen: boolean;
@@ -24,6 +25,11 @@ export default function AddWordModal({ isOpen, onClose }: AddWordModalProps) {
   const [success, setSuccess] = useState('');
   const [error, setError] = useState('');
   const wordRef = useRef<HTMLInputElement>(null);
+  const dialogRef = useRef<HTMLDivElement>(null);
+  const id = useId();
+  const { focusInitial } = useModalFocus({
+    isOpen, dialogRef, initialFocusRef: wordRef, onEscape: onClose,
+  });
 
   /* Read at open time, not as a dependency: the default should follow the
      language you were studying when you opened this, and must not yank the
@@ -32,7 +38,6 @@ export default function AddWordModal({ isOpen, onClose }: AddWordModalProps) {
     if (isOpen) {
       const current = currentLanguageOf(useSettingsStore.getState());
       if (current) setLanguage(current);
-      setTimeout(() => wordRef.current?.focus(), 50);
     }
   }, [isOpen]);
 
@@ -91,7 +96,7 @@ export default function AddWordModal({ isOpen, onClose }: AddWordModalProps) {
       setSuccess(`Added "${word.trim()}"!`);
       clearForm();
       setTimeout(() => setSuccess(''), 2000);
-      setTimeout(() => wordRef.current?.focus(), 50);
+      focusInitial();
     } catch {
       setError('Failed to add word');
     }
@@ -100,25 +105,34 @@ export default function AddWordModal({ isOpen, onClose }: AddWordModalProps) {
   if (!isOpen) return null;
 
   const inputClass =
-    'w-full px-3 py-2 rounded-lg border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-700 text-slate-900 dark:text-slate-100 focus:outline-none focus:ring-2 focus:ring-indigo-500';
+    'w-full min-h-[44px] px-3 py-2 rounded-lg border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-700 text-slate-900 dark:text-slate-100 focus:outline-none focus:ring-2 focus:ring-indigo-500';
 
   return (
-    <div className="fixed inset-0 z-[60] flex items-end sm:items-center justify-center">
+    <div
+      ref={dialogRef}
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby={`${id}-title`}
+      tabIndex={-1}
+      className="fixed inset-0 z-[60] flex items-end sm:items-center justify-center"
+    >
       {/* Backdrop */}
       <div
         className="absolute inset-0 bg-black/50"
+        aria-hidden="true"
         onClick={onClose}
       />
 
       {/* Modal */}
-      <div className="relative w-full max-w-md mx-4 mb-4 sm:mb-0 bg-white dark:bg-slate-800 rounded-2xl shadow-xl max-h-[85vh] overflow-y-auto">
+      <div className="relative w-full max-w-md mx-4 mb-4 sm:mb-0 bg-white dark:bg-slate-800 border border-slate-200/70 dark:border-white/10 rounded-2xl shadow-xl max-h-[85vh] overflow-y-auto">
         <div className="p-5 space-y-4">
           {/* Header */}
           <div className="flex items-center justify-between">
-            <h2 className="text-lg font-bold text-slate-900 dark:text-slate-100">Add Word</h2>
+            <h2 id={`${id}-title`} className="text-lg font-bold text-slate-900 dark:text-slate-100">Add Word</h2>
             <button
               onClick={onClose}
-              className="text-slate-400 hover:text-slate-600 dark:hover:text-slate-300 text-xl leading-none"
+              aria-label="Close add word"
+              className="min-h-[44px] min-w-[44px] flex items-center justify-center rounded-xl text-slate-500 dark:text-slate-400 hover:text-slate-600 dark:hover:text-slate-300 text-xl leading-none"
             >
               ✕
             </button>
@@ -126,10 +140,12 @@ export default function AddWordModal({ isOpen, onClose }: AddWordModalProps) {
 
           {/* Language */}
           <div>
-            <label className="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-1">
+            <label htmlFor={`${id}-language`} className="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-1">
               Language
             </label>
-            <select aria-label="Language"
+            <select
+              id={`${id}-language`}
+              name="wordLanguage"
               value={language}
               onChange={(e) => setLanguage(e.target.value)}
               className={inputClass}
@@ -144,26 +160,30 @@ export default function AddWordModal({ isOpen, onClose }: AddWordModalProps) {
 
           {/* Word + lookup */}
           <div>
-            <label className="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-1">
+            <label htmlFor={`${id}-word`} className="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-1">
               Word <span className="text-red-500">*</span>
             </label>
             <div className="flex gap-2">
               <input
                 ref={wordRef}
+                id={`${id}-word`}
+                name="word"
+                aria-required="true"
                 type="text"
                 value={word}
                 onChange={(e) => setWord(e.target.value)}
                 onKeyDown={(e) => {
                   if (e.key === 'Enter') handleLookup();
                 }}
-                className={`${inputClass} flex-1`}
+                className={`${inputClass} flex-1 min-w-0`}
                 placeholder="e.g. 食べる"
               />
               <button
                 onClick={handleLookup}
                 disabled={looking || !word.trim()}
-                className="px-3 py-2 rounded-lg bg-slate-100 dark:bg-slate-700 text-slate-700 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-600 disabled:opacity-50 shrink-0"
+                className="min-h-[44px] min-w-[44px] px-3 py-2 rounded-lg bg-slate-100 dark:bg-slate-700 text-slate-700 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-600 disabled:opacity-50 shrink-0"
                 title="Look up"
+                aria-label="Look up word"
               >
                 {looking ? (
                   <span className="inline-block w-4 h-4 border-2 border-slate-400 border-t-transparent rounded-full animate-spin" />
@@ -174,8 +194,9 @@ export default function AddWordModal({ isOpen, onClose }: AddWordModalProps) {
               {isTTSSupported() && word.trim() && (
                 <button
                   onClick={() => speak(word.trim(), language)}
-                  className="px-3 py-2 rounded-lg bg-slate-100 dark:bg-slate-700 text-slate-700 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-600 shrink-0"
+                  className="min-h-[44px] min-w-[44px] px-3 py-2 rounded-lg bg-slate-100 dark:bg-slate-700 text-slate-700 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-600 shrink-0"
                   title="Listen"
+                  aria-label="Listen to word"
                 >
                   🔊
                 </button>
@@ -185,10 +206,12 @@ export default function AddWordModal({ isOpen, onClose }: AddWordModalProps) {
 
           {/* Reading */}
           <div>
-            <label className="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-1">
+            <label htmlFor={`${id}-reading`} className="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-1">
               Reading
             </label>
             <input
+              id={`${id}-reading`}
+              name="reading"
               type="text"
               value={reading}
               onChange={(e) => setReading(e.target.value)}
@@ -199,10 +222,13 @@ export default function AddWordModal({ isOpen, onClose }: AddWordModalProps) {
 
           {/* Meaning */}
           <div>
-            <label className="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-1">
+            <label htmlFor={`${id}-meaning`} className="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-1">
               Meaning <span className="text-red-500">*</span>
             </label>
             <input
+              id={`${id}-meaning`}
+              name="meaning"
+              aria-required="true"
               type="text"
               value={meaning}
               onChange={(e) => setMeaning(e.target.value)}
@@ -216,10 +242,12 @@ export default function AddWordModal({ isOpen, onClose }: AddWordModalProps) {
 
           {/* Tags */}
           <div>
-            <label className="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-1">
+            <label htmlFor={`${id}-tags`} className="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-1">
               Tags
             </label>
             <input
+              id={`${id}-tags`}
+              name="tags"
               type="text"
               value={tags}
               onChange={(e) => setTags(e.target.value)}
@@ -230,10 +258,10 @@ export default function AddWordModal({ isOpen, onClose }: AddWordModalProps) {
 
           {/* Messages */}
           {error && (
-            <p className="text-sm text-red-600 dark:text-red-400">{error}</p>
+            <p role="alert" className="text-sm text-red-600 dark:text-red-400">{error}</p>
           )}
           {success && (
-            <p className="text-sm text-green-600 dark:text-green-400">{success}</p>
+            <p role="status" className="text-sm text-green-600 dark:text-green-400">{success}</p>
           )}
 
           {/* Actions */}
@@ -241,13 +269,13 @@ export default function AddWordModal({ isOpen, onClose }: AddWordModalProps) {
             <button
               onClick={handleAdd}
               disabled={!word.trim() || !meaning.trim()}
-              className="flex-1 py-2 rounded-xl bg-indigo-600 text-white font-semibold hover:bg-indigo-700 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
+              className="flex-1 min-h-[44px] py-2 rounded-xl bg-indigo-600 text-white font-semibold hover:bg-indigo-700 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
             >
               Add
             </button>
             <button
               onClick={onClose}
-              className="px-4 py-2 rounded-xl bg-slate-200 dark:bg-slate-700 text-slate-700 dark:text-slate-300 font-semibold hover:bg-slate-300 dark:hover:bg-slate-600 transition-colors"
+              className="min-h-[44px] px-4 py-2 rounded-xl bg-slate-200 dark:bg-slate-700 text-slate-700 dark:text-slate-300 font-semibold hover:bg-slate-300 dark:hover:bg-slate-600 transition-colors"
             >
               Done
             </button>

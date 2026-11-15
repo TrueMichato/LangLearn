@@ -262,6 +262,7 @@ export default function DataSafetySection({
           </label>
           <select
             id="import-mode"
+            name="importMode"
             value={importMode}
             onChange={(e) => setImportMode(e.target.value as ImportMode)}
             className="w-full min-h-[44px] rounded-xl border border-slate-200/70 dark:border-white/10 bg-white dark:bg-slate-800 px-3 text-sm text-slate-700 dark:text-slate-200"
@@ -280,6 +281,8 @@ export default function DataSafetySection({
         </button>
         <input
           ref={fileInputRef}
+          id="settings-backup-file"
+          name="backupFile"
           type="file"
           accept=".json"
           onChange={handleImport}

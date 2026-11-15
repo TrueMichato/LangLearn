@@ -52,7 +52,12 @@ export default function DeckExport() {
     <div className="space-y-3">
       <h4 className="text-sm font-medium text-slate-600 dark:text-slate-400">Export Deck</h4>
 
-      <select aria-label="Export language"
+      <label htmlFor="settings-export-language" className="block text-xs font-medium text-slate-500 dark:text-slate-400">
+        Deck language
+      </label>
+      <select
+        id="settings-export-language"
+        name="deckLanguage"
         value={language}
         onChange={(e) => handleLanguageChange(e.target.value)}
         className="w-full min-h-[44px] px-3 py-2 rounded-xl bg-slate-100 dark:bg-slate-700 text-slate-800 dark:text-slate-200 text-sm"
@@ -63,20 +68,30 @@ export default function DeckExport() {
         ))}
       </select>
 
+      <label htmlFor="settings-export-name" className="block text-xs font-medium text-slate-500 dark:text-slate-400">
+        Deck name
+      </label>
       <input
+        id="settings-export-name"
+        name="deckName"
         type="text"
         placeholder="Deck name"
         value={deckName}
         onChange={(e) => setDeckName(e.target.value)}
-        className="w-full min-h-[44px] px-3 py-2 rounded-xl bg-slate-100 dark:bg-slate-700 text-slate-800 dark:text-slate-200 text-sm placeholder-slate-500 dark:placeholder-slate-400"
+        className="w-full min-h-[44px] px-3 py-2 rounded-xl bg-slate-100 dark:bg-slate-700 text-slate-800 dark:text-slate-200 text-sm placeholder-slate-600 dark:placeholder-slate-300"
       />
 
+      <label htmlFor="settings-export-tag" className="block text-xs font-medium text-slate-500 dark:text-slate-400">
+        Tag filter (optional)
+      </label>
       <input
+        id="settings-export-tag"
+        name="deckTagFilter"
         type="text"
         placeholder="Tag filter (optional)"
         value={tag}
         onChange={(e) => handleTagChange(e.target.value)}
-        className="w-full min-h-[44px] px-3 py-2 rounded-xl bg-slate-100 dark:bg-slate-700 text-slate-800 dark:text-slate-200 text-sm placeholder-slate-500 dark:placeholder-slate-400"
+        className="w-full min-h-[44px] px-3 py-2 rounded-xl bg-slate-100 dark:bg-slate-700 text-slate-800 dark:text-slate-200 text-sm placeholder-slate-600 dark:placeholder-slate-300"
       />
 
       {wordCount !== null && (

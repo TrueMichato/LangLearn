@@ -41,14 +41,14 @@ export function lettersRoute(lang: string): string {
   return `/letters/${lang}`;
 }
 
-/**
- * Letter practice opens on the Chart reference wall by default, which is the
- * wrong first impression for someone who has never seen the script. The
- * on-ramp links here instead, so "Learn the letters" opens the guided flow.
- */
-export function guidedLettersRoute(lang: string, alphabet?: string): string {
+export const GUIDED_GROUP_QUERY_PARAM = 'group';
+export const NEXT_GUIDED_GROUP = 'next';
+
+/** Omit group for the column browser; use a persisted group name or "next" to teach directly. */
+export function guidedLettersRoute(lang: string, alphabet?: string, group?: string): string {
   const params = new URLSearchParams({ mode: 'learn' });
   if (alphabet) params.set('alphabet', alphabet);
+  if (group !== undefined) params.set(GUIDED_GROUP_QUERY_PARAM, group);
   return `${lettersRoute(lang)}?${params.toString()}`;
 }
 

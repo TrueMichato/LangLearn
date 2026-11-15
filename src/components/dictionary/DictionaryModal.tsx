@@ -1,9 +1,10 @@
-import { useState, useEffect, useCallback, useRef } from 'react';
+import { useState, useEffect, useCallback, useRef, useId } from 'react';
 import { useSettingsStore } from '../../stores/settingsStore';
 import { currentLanguageOf } from '../../lib/current-language';
 import { getLanguageLabel } from '../../lib/languages';
 import { searchDictionary, type DictResult } from '../../lib/dictionary-search';
 import { addWord, wordExists } from '../../db/words';
+import { useModalFocus } from '../../hooks/useModalFocus';
 
 interface Props {
   isOpen: boolean;
@@ -21,6 +22,9 @@ export default function DictionaryModal({ isOpen, onClose }: Props) {
   const [loading, setLoading] = useState(false);
   const [addedWords, setAddedWords] = useState<Set<string>>(new Set());
   const inputRef = useRef<HTMLInputElement>(null);
+  const dialogRef = useRef<HTMLDivElement>(null);
+  const id = useId();
+  useModalFocus({ isOpen, dialogRef, initialFocusRef: inputRef, onEscape: onClose });
 
   /* Read at open time, not as a dependency: the default should follow the
      language you were studying when you opened this, and must not yank the
@@ -34,7 +38,6 @@ export default function DictionaryModal({ isOpen, onClose }: Props) {
       setResults([]);
       setAddedWords(new Set());
       setLoading(false);
-      setTimeout(() => inputRef.current?.focus(), 50);
     }
   }, [isOpen]);
 
@@ -81,16 +84,6 @@ export default function DictionaryModal({ isOpen, onClose }: Props) {
     setAddedWords((prev) => new Set(prev).add(key));
   }, [language]);
 
-  // Close on Escape
-  useEffect(() => {
-    if (!isOpen) return;
-    const handler = (e: KeyboardEvent) => {
-      if (e.key === 'Escape') onClose();
-    };
-    window.addEventListener('keydown', handler);
-    return () => window.removeEventListener('keydown', handler);
-  }, [isOpen, onClose]);
-
   if (!isOpen) return null;
 
   return (
@@ -100,33 +93,48 @@ export default function DictionaryModal({ isOpen, onClose }: Props) {
         if (e.target === e.currentTarget) onClose();
       }}
     >
-      <div className="bg-white dark:bg-slate-900 rounded-2xl shadow-xl w-full max-w-md mx-4 max-h-[70vh] flex flex-col">
+      <div
+        ref={dialogRef}
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby={`${id}-title`}
+        tabIndex={-1}
+        className="bg-white dark:bg-slate-900 border border-slate-200/70 dark:border-white/10 rounded-2xl shadow-xl w-full max-w-md mx-4 max-h-[70vh] flex flex-col"
+      >
         {/* Header */}
         <div className="p-4 border-b border-slate-200 dark:border-slate-700">
           <div className="flex items-center justify-between mb-3">
-            <h3 className="font-semibold text-slate-800 dark:text-slate-100">Dictionary</h3>
+            <h3 id={`${id}-title`} className="font-semibold text-slate-800 dark:text-slate-100">Dictionary</h3>
             <button
               onClick={onClose}
-              className="text-slate-500 hover:text-slate-800 dark:hover:text-slate-200 text-lg"
+              className="min-h-[44px] min-w-[44px] flex items-center justify-center rounded-xl text-slate-500 dark:text-slate-400 hover:text-slate-800 dark:hover:text-slate-200 text-lg"
               aria-label="Close dictionary"
             >
               ✕
             </button>
           </div>
 
+          <label htmlFor={`${id}-search`} className="block mb-1 text-sm font-medium text-slate-700 dark:text-slate-300">
+            Search dictionary
+          </label>
           <input
             ref={inputRef}
+            id={`${id}-search`}
+            name="dictionarySearch"
             type="text"
             value={query}
             onChange={(e) => setQuery(e.target.value)}
             placeholder="Search..."
-            className="w-full px-3 py-2 rounded-lg border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-800 text-slate-900 dark:text-slate-100 focus:outline-none focus:ring-2 focus:ring-indigo-400 mb-2"
+            className="w-full min-h-[44px] px-3 py-2 rounded-lg border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-800 text-slate-900 dark:text-slate-100 focus:outline-none focus:ring-2 focus:ring-indigo-400 mb-2"
           />
 
-          <select aria-label="Filter by language"
+          <label htmlFor={`${id}-language`} className="sr-only">Filter by language</label>
+          <select
+            id={`${id}-language`}
+            name="dictionaryLanguage"
             value={language}
             onChange={(e) => setLanguage(e.target.value)}
-            className="w-full px-3 py-2 rounded-lg border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-800 text-slate-900 dark:text-slate-100"
+            className="w-full min-h-[44px] px-3 py-2 rounded-lg border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-800 text-slate-900 dark:text-slate-100"
           >
             {activeLanguages.map((lang) => (
               <option key={lang} value={lang}>
@@ -187,7 +195,7 @@ export default function DictionaryModal({ isOpen, onClose }: Props) {
                   ) : (
                     <button
                       onClick={() => handleAdd(r)}
-                      className="text-xs px-3 py-1 rounded-lg bg-indigo-500 hover:bg-indigo-600 text-white transition-colors"
+                      className="min-h-[44px] text-xs px-3 py-1 rounded-lg bg-indigo-600 hover:bg-indigo-700 text-white transition-colors"
                     >
                       ➕ Add to flashcards
                     </button>

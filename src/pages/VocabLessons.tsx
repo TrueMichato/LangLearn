@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { useCurrentLanguage } from '../hooks/useCurrentLanguage';
 import LanguagePicker from '../components/common/LanguagePicker';
+import LanguageUnavailable from '../components/common/LanguageUnavailable';
 import { useNavigate, useSearchParams } from 'react-router-dom';
 import { useSettingsStore } from '../stores/settingsStore';
 import { getLessonProgress } from '../db/lessons';
@@ -11,6 +12,7 @@ import type { VocabLessonMeta } from '../types/vocab';
 import type { LessonProgress } from '../db/schema';
 import { SkeletonList } from '../components/common/Skeleton';
 import { computeTestOutRange } from '../lib/lesson-assessment';
+import { LEARNING_PATHS } from '../data/learning-paths';
 import {
   LESSON_ORIGIN_QUERY_PARAM,
   LESSON_BROWSE_ORIGIN,
@@ -21,20 +23,23 @@ import {
   ROUTES,
 } from '../lib/routes';
 
+const VOCAB_LANGUAGES = Object.keys(LEARNING_PATHS);
+
 export default function VocabLessons() {
   const navigate = useNavigate();
   const [searchParams] = useSearchParams();
-  const activeLanguages = useSettingsStore((s) => s.activeLanguages);
   const arabicDialect = useSettingsStore((s) => s.arabicDialect);
   const arabicColloquialFocus = useSettingsStore((s) => s.arabicColloquialFocus);
-  const { language, setLanguage } = useCurrentLanguage();
-  const selectedLang = language ?? 'ja';
+  const { language, requested, isSupported, options, setLanguage } = useCurrentLanguage(VOCAB_LANGUAGES);
+  const selectedLang = isSupported ? language : undefined;
   const [lessons, setLessons] = useState<VocabLessonMeta[]>([]);
-  const [loadedLanguage, setLoadedLanguage] = useState('');
+  const [loadedIndexKey, setLoadedIndexKey] = useState('');
   const [activeLessonId, setActiveLessonId] = useState<string | null>(null);
   const [progress, setProgress] = useState<Map<string, LessonProgress>>(new Map());
-  const [progressLanguage, setProgressLanguage] = useState('');
-  const [availableLangs, setAvailableLangs] = useState<string[]>([]);
+  const [loadedProgressKey, setLoadedProgressKey] = useState('');
+  const [indexFailure, setIndexFailure] = useState<{ key: string; message: string } | null>(null);
+  const [progressFailure, setProgressFailure] = useState<{ key: string; message: string } | null>(null);
+  const [indexRetry, setIndexRetry] = useState(0);
   const testOutTarget = searchParams.get(TEST_OUT_QUERY_PARAM);
   const requestedTestOutLessons = searchParams.getAll(
     TEST_OUT_LESSON_QUERY_PARAM,
@@ -45,54 +50,55 @@ export default function VocabLessons() {
     searchParams.get(LESSON_ORIGIN_QUERY_PARAM) === LESSON_BROWSE_ORIGIN;
   const requestedLessonId = searchParams.get(LESSON_QUERY_PARAM);
   const displayedLessonId = activeLessonId ?? requestedLessonId;
-  const loading = loadedLanguage !== selectedLang;
-
-  // Determine which languages have vocab content
-  useEffect(() => {
-    async function checkLangs() {
-      const available: string[] = [];
-      for (const lang of activeLanguages) {
-        try {
-          const res = await fetch(`${import.meta.env.BASE_URL}content/vocab/${lang}/index.json`);
-          if (res.ok) available.push(lang);
-        } catch {
-          // no content for this language
-        }
-      }
-      setAvailableLangs(available);
-    }
-    checkLangs();
-  }, [activeLanguages]);
+  const indexKey = JSON.stringify([selectedLang, indexRetry]);
+  const progressKey = JSON.stringify([selectedLang, displayedLessonId, testOutTarget, indexRetry]);
+  const loading = loadedIndexKey !== indexKey;
+  const indexError = indexFailure?.key === indexKey ? indexFailure.message : '';
+  const progressError = progressFailure?.key === progressKey ? progressFailure.message : '';
 
   // Load lesson progress
   useEffect(() => {
-    if (displayedLessonId) return;
+    if (!selectedLang || displayedLessonId) return;
+    let cancelled = false;
     getLessonProgress(selectedLang).then((items) => {
+      if (cancelled) return;
       const map = new Map<string, LessonProgress>();
       for (const item of items) map.set(item.lessonId, item);
       setProgress(map);
-      setProgressLanguage(selectedLang);
+      setLoadedProgressKey(progressKey);
+      setProgressFailure(null);
+    }).catch(() => {
+      if (!cancelled) setProgressFailure({ key: progressKey, message: 'Your lesson progress could not be loaded. Please try again.' });
     });
-  }, [selectedLang, displayedLessonId, testOutTarget]);
+    return () => { cancelled = true; };
+  }, [selectedLang, displayedLessonId, progressKey]);
 
   // Load lesson index
   useEffect(() => {
+    if (!selectedLang) return;
     const controller = new AbortController();
     fetch(`${import.meta.env.BASE_URL}content/vocab/${selectedLang}/index.json`, {
       signal: controller.signal,
     })
-      .then((res) => (res.ok ? res.json() : []))
+      .then((res) => {
+        if (!res.ok) throw new Error('The vocabulary lesson list could not be loaded. Please try again.');
+        return res.json();
+      })
       .then((data: VocabLessonMeta[]) => {
+        if (controller.signal.aborted) return;
         setLessons(data.sort((a, b) => a.order - b.order));
-        setLoadedLanguage(selectedLang);
+        setLoadedIndexKey(indexKey);
+        setIndexFailure(null);
       })
       .catch((error: unknown) => {
         if (error instanceof DOMException && error.name === 'AbortError') return;
+        if (controller.signal.aborted) return;
         setLessons([]);
-        setLoadedLanguage(selectedLang);
+        setIndexFailure({ key: indexKey, message: 'The vocabulary lesson list could not be loaded. Please try again.' });
+        setLoadedIndexKey(indexKey);
       });
     return () => controller.abort();
-  }, [selectedLang]);
+  }, [selectedLang, indexKey]);
 
   // ── Arabic dialect overlay ──────────────────────────────
   // MSA is the shared core (always shown). A dialect-tagged lesson is shown
@@ -149,17 +155,31 @@ export default function VocabLessons() {
     exitToLessons();
   };
 
+  if (!selectedLang) {
+    return (
+      <LanguageUnavailable
+        requested={requested}
+        options={options}
+        onChange={setLanguage}
+        feature="Vocabulary lessons"
+        plural
+      />
+    );
+  }
+
   if (displayedLessonId) {
     return (
       <VocabLessonView
+        key={`${selectedLang}/${displayedLessonId}`}
         lang={selectedLang}
         lessonId={displayedLessonId}
+        title={!loading ? lessons.find((lesson) => lesson.id === displayedLessonId)?.title : undefined}
         onBack={exitToLessons}
       />
     );
   }
 
-  if (testOutTarget && !loading && progressLanguage === selectedLang) {
+  if (testOutTarget && !loading && loadedProgressKey === progressKey && !indexError && !progressError) {
     const range = computeTestOutRange(
       visibleLessons,
       completedVocabIds,
@@ -218,7 +238,7 @@ export default function VocabLessons() {
       <h2 className="text-lg font-semibold text-slate-700 dark:text-slate-200 mb-4">Vocabulary Lessons</h2>
 
       <LanguagePicker
-        options={availableLangs}
+        options={options}
         value={selectedLang}
         onChange={(lang) => {
           setLanguage(lang);
@@ -228,7 +248,14 @@ export default function VocabLessons() {
         className="mb-4"
       />
 
-      {loading ? (
+      {indexError || progressError ? (
+        <div role="alert" className="py-4 text-sm text-slate-700 dark:text-slate-200">
+          <p>{indexError || progressError}</p>
+          <button onClick={() => setIndexRetry((value) => value + 1)} className="mt-2 min-h-[44px] text-indigo-600 dark:text-indigo-400 hover:underline">
+            Try again
+          </button>
+        </div>
+      ) : loading ? (
         <SkeletonList count={4} />
       ) : lessons.length === 0 ? (
         <p className="text-slate-500 dark:text-slate-400 text-center py-8">

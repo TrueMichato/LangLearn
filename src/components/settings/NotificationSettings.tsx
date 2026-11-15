@@ -17,34 +17,7 @@ import {
 } from '../../lib/push-subscription';
 import type { NotificationPreset } from '../../lib/notification-presets';
 import { usePWAInstall } from '../../hooks/usePWAInstall';
-
-function Toggle({
-  checked,
-  onChange,
-  disabled,
-}: {
-  checked: boolean;
-  onChange: () => void;
-  disabled?: boolean;
-}) {
-  return (
-    <button
-      onClick={onChange}
-      disabled={disabled}
-      className={`relative inline-flex h-6 w-11 shrink-0 items-center rounded-full after:absolute after:inset-x-0 after:top-1/2 after:h-11 after:-translate-y-1/2 after:content-[''] transition-all duration-200 ease-out ${
-        checked ? 'fill-primary' : 'bg-slate-300 dark:bg-slate-600'
-      } ${disabled ? 'opacity-50 cursor-not-allowed' : ''}`}
-      role="switch"
-      aria-checked={checked}
-    >
-      <span
-        className={`inline-block h-4 w-4 rounded-full bg-white shadow-sm transition-all duration-200 ease-out ${
-          checked ? 'translate-x-6' : 'translate-x-1'
-        }`}
-      />
-    </button>
-  );
-}
+import { SettingRange, SettingToggle } from './SettingControls';
 
 const PRESET_LABELS: Record<NotificationPreset, string> = {
   gentle: 'Gentle',
@@ -55,7 +28,7 @@ const PRESET_LABELS: Record<NotificationPreset, string> = {
 
 const PRESET_HELP: Record<NotificationPreset, string> = {
   gentle: 'One reminder a day. Weekly digest. No nags.',
-  balanced: 'Daily anchor + smart nudges when slipping. Up to 3/day.',
+  balanced: 'A daily reminder and gentle check-ins. Up to 3 per day.',
   persistent: 'Maximum support — daily, due-card, streak, milestones. Up to 5/day.',
   custom: 'Your own mix.',
 };
@@ -96,7 +69,6 @@ export default function NotificationSettings() {
     setCloudRemindersEnabled,
   } = useSettingsStore();
   const [permissionError, setPermissionError] = useState('');
-  const [showAdvanced, setShowAdvanced] = useState(false);
   const [bgStatus, setBgStatus] = useState<BackgroundNotifStatus>('not-supported');
   const [lastSyncWake, setLastSyncWake] = useState<number | null>(null);
   const [testFeedback, setTestFeedback] = useState('');
@@ -137,7 +109,7 @@ export default function NotificationSettings() {
 
   if (!isNotificationSupported()) {
     return (
-      <section className="bg-white dark:bg-slate-800/90 rounded-2xl shadow-sm border border-slate-200/60 dark:border-white/10 p-4">
+      <section className="bg-white dark:bg-slate-800/90 rounded-2xl shadow-sm border border-slate-200/70 dark:border-white/10 p-4">
         <h3 className="text-sm font-semibold text-slate-500 dark:text-slate-400 mb-2">
           🔔 Notifications
         </h3>
@@ -149,32 +121,25 @@ export default function NotificationSettings() {
   }
 
   return (
-    <section className="bg-white dark:bg-slate-800/90 rounded-2xl shadow-sm border border-slate-200/60 dark:border-white/10 p-4 space-y-4">
+    <section className="bg-white dark:bg-slate-800/90 rounded-2xl shadow-sm border border-slate-200/70 dark:border-white/10 p-4 space-y-4">
       <h3 className="text-sm font-semibold text-slate-500 dark:text-slate-400 mb-2">
         🔔 Notifications
       </h3>
 
       {/* Master toggle */}
-      <div className="flex items-center justify-between">
-        <div>
-          <p className="text-sm text-slate-700 dark:text-slate-200">
-            Enable notifications
-          </p>
-          <p className="text-xs text-slate-500 dark:text-slate-400">
-            {permission === 'denied'
-              ? 'Blocked by browser — check site settings'
-              : 'Habit-supporting reminders & nudges'}
-          </p>
-        </div>
-        <Toggle
-          checked={notificationsEnabled}
-          onChange={handleToggle}
-          disabled={permission === 'denied'}
-        />
-      </div>
+      <SettingToggle
+        id="settings-notifications"
+        label="Enable notifications"
+        description={permission === 'denied'
+          ? 'Blocked by browser — check site settings'
+          : 'Habit-supporting reminders and nudges'}
+        checked={notificationsEnabled}
+        onChange={handleToggle}
+        disabled={permission === 'denied'}
+      />
 
       {permissionError && (
-        <p className="text-sm text-red-600 dark:text-red-400">
+        <p role="alert" className="text-sm text-amber-800 dark:text-amber-300">
           {permissionError}
         </p>
       )}
@@ -197,10 +162,10 @@ export default function NotificationSettings() {
               <>
                 <p>✅ Cloud reminders active — works on every browser, even fully closed. Pushed from your own LangLearn worker on a 15-minute cadence.</p>
                 {lastWorkerCheck != null && lastWorkerCheck > 0 && (
-                  <p className="opacity-80">Last server-side check: {new Date(lastWorkerCheck).toLocaleString()}</p>
+                  <p>Last server-side check: {new Date(lastWorkerCheck).toLocaleString()}</p>
                 )}
                 {(lastWorkerCheck == null || lastWorkerCheck === 0) && (
-                  <p className="opacity-80">Last server-side check: pending — usually arrives within 15 min of subscribing.</p>
+                  <p>Last server-side check: pending — usually arrives within 15 min of subscribing.</p>
                 )}
               </>
             )}
@@ -211,10 +176,10 @@ export default function NotificationSettings() {
               <>
                 <p>📶 Best-effort background sync registered. Your OS decides when to wake the app — usually every few hours, sometimes not at all on mobile. Reminders also fire whenever you open LangLearn.</p>
                 {lastSyncWake && (
-                  <p className="opacity-80">Last background wake: {new Date(lastSyncWake).toLocaleString()}</p>
+                  <p>Last background wake: {new Date(lastSyncWake).toLocaleString()}</p>
                 )}
                 {!lastSyncWake && (
-                  <p className="opacity-80">Last background wake: never recorded yet — keep using the app to build OS engagement.</p>
+                  <p>Last background wake: never recorded yet — keep using the app to build OS engagement.</p>
                 )}
               </>
             )}
@@ -230,7 +195,7 @@ export default function NotificationSettings() {
                         setBgStatus(s);
                       }
                     }}
-                    className="mt-1 fill-primary text-white text-xs font-semibold px-3 py-1.5 rounded-lg press-feedback"
+                    className="mt-1 min-h-[44px] fill-primary text-white text-xs font-semibold px-3 py-1.5 rounded-lg press-feedback"
                   >
                     Install LangLearn
                   </button>
@@ -243,7 +208,7 @@ export default function NotificationSettings() {
             {bgStatus === 'not-supported' && (
               <>
                 <p>ℹ️ This browser can't fire reminders while LangLearn is closed.</p>
-                <p className="opacity-80">
+                <p>
                   Real "while-closed" notifications need either Chromium with{' '}
                   <a
                     href="chrome://flags/#enable-experimental-web-platform-features"
@@ -253,9 +218,9 @@ export default function NotificationSettings() {
                   >
                     Notification Triggers enabled
                   </a>{' '}
-                  or a Web Push backend (not yet built). Firefox and iOS Safari don't currently support periodic background sync.
+                  or configured cloud reminders. Firefox and iOS Safari don't currently support periodic background sync.
                 </p>
-                <p className="opacity-80">
+                <p>
                   In the meantime: reminders fire while LangLearn is open, and missed important ones surface as in-app nudges next time you visit.
                 </p>
               </>
@@ -265,60 +230,65 @@ export default function NotificationSettings() {
           {/* Cloud reminders sub-toggle */}
           {cloudConfigured && (
             <div className="rounded-lg border border-slate-200 dark:border-slate-700 px-3 py-2 space-y-2">
-              <div className="flex items-center justify-between">
-                <div className="pr-3">
-                  <p className="text-sm text-slate-700 dark:text-slate-200">Use cloud reminders</p>
-                  <p className="text-xs text-slate-500 dark:text-slate-400">
-                    The only way to get reliable notifications when LangLearn is fully closed.
-                    Your subscription, prefs, and a tiny progress blob (streak, due count, today's
-                    minutes) are stored on the LangLearn push worker. <strong>No vocabulary,
-                    no answers, no review history</strong> ever leaves the device.
-                  </p>
-                </div>
-                <Toggle
-                  checked={cloudRemindersEnabled}
-                  onChange={() => setCloudRemindersEnabled(!cloudRemindersEnabled)}
-                />
-              </div>
+              <SettingToggle
+                id="settings-cloud-reminders"
+                label="Use cloud reminders"
+                description={<>The only way to get reliable notifications when LangLearn is fully closed.
+                  Your subscription, reminder preferences, and limited progress (streak, due count, today&apos;s
+                  minutes) are stored on the LangLearn push worker. <strong>No vocabulary,
+                  no answers, no review history</strong> ever leaves the device.</>}
+                checked={cloudRemindersEnabled}
+                onChange={() => setCloudRemindersEnabled(!cloudRemindersEnabled)}
+              />
             </div>
           )}
           {!cloudConfigured && (
-            <p className="text-xs text-slate-500 dark:text-slate-400">
-              Cloud reminders aren't configured for this build. Deploy
-              {' '}<code className="font-mono">infra/push-worker</code>{' '}and set
-              {' '}<code className="font-mono">VITE_VAPID_PUBLIC</code>{' '}/
-              {' '}<code className="font-mono">VITE_PUSH_API_URL</code>{' '}
-              to enable them.
-            </p>
+            <details>
+              <summary className="min-h-[44px] cursor-pointer py-3 rounded-lg text-xs text-slate-500 dark:text-slate-400">
+                Cloud reminders are not configured for this build
+              </summary>
+              <p className="text-xs text-slate-500 dark:text-slate-400">
+                For self-hosting: deploy <code className="font-mono">infra/push-worker</code> and set
+                {' '}<code className="font-mono">VITE_VAPID_PUBLIC</code>{' '}/
+                {' '}<code className="font-mono">VITE_PUSH_API_URL</code> to enable them.
+              </p>
+            </details>
           )}
 
           {/* Daily anchor time */}
           <div>
-            <p className="text-sm text-slate-700 dark:text-slate-200 mb-1">
-              Daily anchor time
-            </p>
-            <p className="text-xs text-slate-500 dark:text-slate-400 mb-2">
-              Same time every day builds the habit fastest.
+            <label htmlFor="settings-reminder-time" className="block text-sm text-slate-700 dark:text-slate-200 mb-1">
+              Daily reminder time
+            </label>
+            <p id="settings-reminder-time-help" className="text-xs text-slate-500 dark:text-slate-400 mb-2">
+              Choose a time that fits your day.
             </p>
             <input
               type="time"
+              id="settings-reminder-time"
+              name="dailyReminderTime"
+              aria-describedby="settings-reminder-time-help"
               value={dailyReminderTime}
               onChange={(e) => setDailyReminderTime(e.target.value)}
-              className="px-3 py-2 rounded-lg border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-700 text-slate-900 dark:text-slate-100 focus:outline-none focus:ring-2 focus:ring-indigo-500"
+              className="min-h-[44px] max-w-full px-3 py-2 rounded-lg border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-700 text-slate-900 dark:text-slate-100 focus:ring-2 focus:ring-indigo-500"
             />
           </div>
 
           {/* Intensity preset */}
           <div>
-            <p className="text-sm text-slate-700 dark:text-slate-200 mb-1">
-              Intensity
+            <p id="settings-notification-preset-label" className="text-sm text-slate-700 dark:text-slate-200 mb-1">
+              Reminder frequency
             </p>
-            <div className="flex gap-2 flex-wrap">
+            <div role="group" aria-labelledby="settings-notification-preset-label" className="flex gap-2 flex-wrap">
               {(['gentle', 'balanced', 'persistent', 'custom'] as NotificationPreset[]).map((p) => (
                 <button
                   key={p}
+                  id={`settings-notification-preset-${p}`}
+                  name="notificationPreset"
+                  type="button"
+                  value={p}
                   onClick={() => setNotificationPreset(p)}
-                  className={`px-3 py-1.5 min-h-[44px] rounded-full text-sm font-medium transition-colors min-h-[36px] ${
+                  className={`px-3 py-1.5 min-h-[44px] rounded-full text-sm font-medium transition-colors ${
                     notificationPreset === p
                       ? 'fill-primary text-white'
                       : 'bg-slate-100 dark:bg-slate-700 text-slate-700 dark:text-slate-200 hover:bg-slate-200 dark:hover:bg-slate-600'
@@ -342,41 +312,47 @@ export default function NotificationSettings() {
             <p className="text-xs text-slate-500 dark:text-slate-400 mb-2">
               No notifications during this window.
             </p>
-            <div className="flex items-center gap-2">
-              <input
-                type="time"
-                value={quietHoursStart}
-                onChange={(e) => setQuietHoursStart(e.target.value)}
-                className="px-3 py-2 rounded-lg border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-700 text-slate-900 dark:text-slate-100 focus:outline-none focus:ring-2 focus:ring-indigo-500"
-              />
-              <span className="text-sm text-slate-500 dark:text-slate-400">to</span>
-              <input
-                type="time"
-                value={quietHoursEnd}
-                onChange={(e) => setQuietHoursEnd(e.target.value)}
-                className="px-3 py-2 rounded-lg border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-700 text-slate-900 dark:text-slate-100 focus:outline-none focus:ring-2 focus:ring-indigo-500"
-              />
+            <div className="flex flex-wrap gap-3">
+              <div className="min-w-0">
+                <label htmlFor="settings-quiet-start" className="block text-xs text-slate-500 dark:text-slate-400 mb-1">
+                  Quiet hours start
+                </label>
+                <input
+                  id="settings-quiet-start"
+                  name="quietHoursStart"
+                  type="time"
+                  value={quietHoursStart}
+                  onChange={(e) => setQuietHoursStart(e.target.value)}
+                  className="min-h-[44px] max-w-full px-3 py-2 rounded-lg border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-700 text-slate-900 dark:text-slate-100 focus:ring-2 focus:ring-indigo-500"
+                />
+              </div>
+              <div className="min-w-0">
+                <label htmlFor="settings-quiet-end" className="block text-xs text-slate-500 dark:text-slate-400 mb-1">
+                  Quiet hours end
+                </label>
+                <input
+                  id="settings-quiet-end"
+                  name="quietHoursEnd"
+                  type="time"
+                  value={quietHoursEnd}
+                  onChange={(e) => setQuietHoursEnd(e.target.value)}
+                  className="min-h-[44px] max-w-full px-3 py-2 rounded-lg border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-700 text-slate-900 dark:text-slate-100 focus:ring-2 focus:ring-indigo-500"
+                />
+              </div>
             </div>
           </div>
 
           {/* Daily budget */}
-          <div>
-            <div className="flex items-center justify-between mb-1">
-              <p className="text-sm text-slate-700 dark:text-slate-200">Max notifications per day</p>
-              <span className="text-sm font-mono text-slate-600 dark:text-slate-300 bg-slate-100 dark:bg-slate-700/60 rounded-lg px-2 py-0.5">
-                {dailyNotificationBudget}
-              </span>
-            </div>
-            <input
-              type="range"
-              min={1}
-              max={5}
-              step={1}
-              value={dailyNotificationBudget}
-              onChange={(e) => setDailyNotificationBudget(Number(e.target.value))}
-              className="w-full accent-indigo-600 dark:accent-indigo-400"
-            />
-          </div>
+          <SettingRange
+            id="settings-notification-budget"
+            label="Maximum notifications per day"
+            min={1}
+            max={5}
+            step={1}
+            value={dailyNotificationBudget}
+            valueText={`${dailyNotificationBudget} notification${dailyNotificationBudget === 1 ? '' : 's'} per day`}
+            onChange={setDailyNotificationBudget}
+          />
 
           {/* Test buttons */}
           <div className="space-y-2">
@@ -401,7 +377,7 @@ export default function NotificationSettings() {
                   }
                 }}
                 disabled={!cloudActive}
-                className="w-full bg-emerald-100 dark:bg-emerald-900/40 text-emerald-700 dark:text-emerald-300 py-2 rounded-xl font-semibold hover:bg-emerald-200 dark:hover:bg-emerald-800 transition-colors press-feedback disabled:opacity-50 disabled:cursor-not-allowed"
+                className="w-full min-h-[44px] bg-indigo-100 dark:bg-indigo-900/50 text-indigo-700 dark:text-indigo-300 py-2 rounded-xl font-semibold hover:bg-indigo-200 dark:hover:bg-indigo-800 transition-colors press-feedback disabled:opacity-50 disabled:cursor-not-allowed"
               >
                 ☁ Send a test push from the server
               </button>
@@ -417,45 +393,43 @@ export default function NotificationSettings() {
                   setTestFeedback('Notifications are not granted on this device.');
                 }
               }}
-              className="w-full bg-slate-100 dark:bg-slate-700/60 text-slate-700 dark:text-slate-200 py-2 rounded-xl font-semibold hover:bg-slate-200 dark:hover:bg-slate-600 transition-colors press-feedback"
+              className="w-full min-h-[44px] bg-slate-100 dark:bg-slate-700/60 text-slate-700 dark:text-slate-200 py-2 rounded-xl font-semibold hover:bg-slate-200 dark:hover:bg-slate-600 transition-colors press-feedback"
             >
               ⏱ Schedule test for 60 s (verify while-closed)
             </button>
             {testFeedback && (
-              <p className="text-xs text-slate-500 dark:text-slate-400 px-1">{testFeedback}</p>
+              <p role="status" className="text-xs text-slate-500 dark:text-slate-400 px-1">{testFeedback}</p>
             )}
           </div>
 
           {/* Advanced */}
-          <button
-            onClick={() => setShowAdvanced((v) => !v)}
-            className="w-full text-left text-sm font-medium text-slate-600 dark:text-slate-300 hover:text-slate-800 dark:hover:text-slate-100 flex items-center justify-between py-1"
-          >
-            <span>Advanced — fine-tune categories</span>
-            <span>{showAdvanced ? '▾' : '▸'}</span>
-          </button>
-
-          {showAdvanced && (
+          <details>
+            <summary className="min-h-[44px] cursor-pointer py-3 rounded-lg text-sm font-medium text-slate-700 dark:text-slate-200 hover:bg-slate-50 dark:hover:bg-slate-700/50">
+              Advanced notification categories
+            </summary>
             <div className="space-y-4 border-t border-slate-200 dark:border-slate-700 pt-4">
               {/* Cards due */}
-              <div className="flex items-center justify-between">
-                <div>
-                  <p className="text-sm text-slate-700 dark:text-slate-200">Due-card alerts</p>
-                  <p className="text-xs text-slate-500 dark:text-slate-400">
-                    A mid-day pulse when reviews pile up.
-                  </p>
-                </div>
-                <Toggle checked={dueCardAlerts} onChange={() => setDueCardAlerts(!dueCardAlerts)} />
-              </div>
+              <SettingToggle
+                id="settings-due-card-alerts"
+                label="Due-card alerts"
+                description="A midday reminder when reviews reach your chosen threshold."
+                checked={dueCardAlerts}
+                onChange={() => setDueCardAlerts(!dueCardAlerts)}
+              />
               {dueCardAlerts && (
                 <div>
-                  <p className="text-sm text-slate-700 dark:text-slate-200 mb-1">Alert threshold</p>
-                  <div className="flex gap-2">
+                  <p id="settings-due-threshold-label" className="text-sm text-slate-700 dark:text-slate-200 mb-1">Alert threshold</p>
+                  <div role="group" aria-labelledby="settings-due-threshold-label" className="flex flex-wrap gap-2">
                     {[5, 10, 25, 50].map((n) => (
                       <button
                         key={n}
+                        id={`settings-due-threshold-${n}`}
+                        name="dueCardThreshold"
+                        type="button"
+                        value={n}
+                        aria-pressed={dueCardThreshold === n}
                         onClick={() => setDueCardThreshold(n)}
-                        className={`px-3 py-1.5 rounded-lg text-sm font-medium transition-colors min-h-[36px] ${
+                        className={`px-3 py-1.5 rounded-lg text-sm font-medium transition-colors min-h-[44px] ${
                           dueCardThreshold === n
                             ? 'bg-indigo-600 text-white'
                             : 'bg-slate-100 dark:bg-slate-700 text-slate-600 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-600'
@@ -469,24 +443,27 @@ export default function NotificationSettings() {
               )}
 
               {/* Streak protection */}
-              <div className="flex items-center justify-between">
-                <div>
-                  <p className="text-sm text-slate-700 dark:text-slate-200">Streak protection</p>
-                  <p className="text-xs text-slate-500 dark:text-slate-400">
-                    Evening reminder when your streak is at risk.
-                  </p>
-                </div>
-                <Toggle checked={streakReminders} onChange={() => setStreakReminders(!streakReminders)} />
-              </div>
+              <SettingToggle
+                id="settings-streak-reminders"
+                label="Streak reminders"
+                description="An evening reminder if you have not studied today."
+                checked={streakReminders}
+                onChange={() => setStreakReminders(!streakReminders)}
+              />
               {streakReminders && (
                 <div>
-                  <p className="text-sm text-slate-700 dark:text-slate-200 mb-1">Min streak length to protect</p>
-                  <div className="flex gap-2">
+                  <p id="settings-streak-length-label" className="text-sm text-slate-700 dark:text-slate-200 mb-1">Minimum streak for reminders</p>
+                  <div role="group" aria-labelledby="settings-streak-length-label" className="flex flex-wrap gap-2">
                     {[1, 3, 7].map((n) => (
                       <button
                         key={n}
+                        id={`settings-streak-length-${n}`}
+                        name="streakReminderMinDays"
+                        type="button"
+                        value={n}
+                        aria-pressed={streakReminderMinDays === n}
                         onClick={() => setStreakReminderMinDays(n)}
-                        className={`px-3 py-1.5 rounded-lg text-sm font-medium transition-colors min-h-[36px] ${
+                        className={`px-3 py-1.5 rounded-lg text-sm font-medium transition-colors min-h-[44px] ${
                           streakReminderMinDays === n
                             ? 'bg-indigo-600 text-white'
                             : 'bg-slate-100 dark:bg-slate-700 text-slate-600 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-600'
@@ -500,67 +477,51 @@ export default function NotificationSettings() {
               )}
 
               {/* Comeback */}
-              <div className="flex items-center justify-between">
-                <div>
-                  <p className="text-sm text-slate-700 dark:text-slate-200">Comeback nudges</p>
-                  <p className="text-xs text-slate-500 dark:text-slate-400">
-                    Warm welcome after 2+ days away (in-app).
-                  </p>
-                </div>
-                <Toggle checked={comebackNudges} onChange={() => setComebackNudges(!comebackNudges)} />
-              </div>
+              <SettingToggle
+                id="settings-comeback-nudges"
+                label="Comeback nudges"
+                description="A warm welcome after 2+ days away (in-app)."
+                checked={comebackNudges}
+                onChange={() => setComebackNudges(!comebackNudges)}
+              />
 
               {/* Slipping */}
-              <div className="flex items-center justify-between">
-                <div>
-                  <p className="text-sm text-slate-700 dark:text-slate-200">Mid-week slipping warning</p>
-                  <p className="text-xs text-slate-500 dark:text-slate-400">
-                    Wednesday check-in if behind on weekly goal.
-                  </p>
-                </div>
-                <Toggle checked={slippingWarnings} onChange={() => setSlippingWarnings(!slippingWarnings)} />
-              </div>
+              <SettingToggle
+                id="settings-weekly-checkin"
+                label="Midweek goal check-in"
+                description="A Wednesday check-in if you are behind on your weekly goal."
+                checked={slippingWarnings}
+                onChange={() => setSlippingWarnings(!slippingWarnings)}
+              />
 
               {/* Goal met */}
-              <div className="flex items-center justify-between">
-                <div>
-                  <p className="text-sm text-slate-700 dark:text-slate-200">Daily goal celebration</p>
-                  <p className="text-xs text-slate-500 dark:text-slate-400">
-                    A small ✅ when you hit today's target.
-                  </p>
-                </div>
-                <Toggle
-                  checked={dailyGoalMetCelebration}
-                  onChange={() => setDailyGoalMetCelebration(!dailyGoalMetCelebration)}
-                />
-              </div>
+              <SettingToggle
+                id="settings-goal-celebration"
+                label="Daily goal celebration"
+                description="A small ✅ when you reach today's target."
+                checked={dailyGoalMetCelebration}
+                onChange={() => setDailyGoalMetCelebration(!dailyGoalMetCelebration)}
+              />
 
               {/* Milestones */}
-              <div className="flex items-center justify-between">
-                <div>
-                  <p className="text-sm text-slate-700 dark:text-slate-200">Streak milestones</p>
-                  <p className="text-xs text-slate-500 dark:text-slate-400">
-                    3 / 7 / 14 / 30 / 60 / 100-day celebrations.
-                  </p>
-                </div>
-                <Toggle
-                  checked={streakMilestoneAlerts}
-                  onChange={() => setStreakMilestoneAlerts(!streakMilestoneAlerts)}
-                />
-              </div>
+              <SettingToggle
+                id="settings-streak-milestones"
+                label="Streak milestones"
+                description="3 / 7 / 14 / 30 / 60 / 100-day celebrations."
+                checked={streakMilestoneAlerts}
+                onChange={() => setStreakMilestoneAlerts(!streakMilestoneAlerts)}
+              />
 
               {/* Weekly digest */}
-              <div className="flex items-center justify-between">
-                <div>
-                  <p className="text-sm text-slate-700 dark:text-slate-200">Weekly summary</p>
-                  <p className="text-xs text-slate-500 dark:text-slate-400">
-                    Sunday-evening recap of your week.
-                  </p>
-                </div>
-                <Toggle checked={weeklyDigest} onChange={() => setWeeklyDigest(!weeklyDigest)} />
-              </div>
+              <SettingToggle
+                id="settings-weekly-summary"
+                label="Weekly summary"
+                description="A Sunday-evening recap of your week."
+                checked={weeklyDigest}
+                onChange={() => setWeeklyDigest(!weeklyDigest)}
+              />
             </div>
-          )}
+          </details>
         </>
       )}
     </section>

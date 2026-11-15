@@ -5,7 +5,7 @@ import { searchWords, updateWord, deleteWord, type WordFilter } from '../db/word
 import { db, type Word, type Review } from '../db/schema';
 import AddWordModal from '../components/srs/AddWordModal';
 import CSVImport from '../components/common/CSVImport';
-import { getLanguageFlag } from '../lib/languages';
+import { getLanguageFlag, getLanguageLabel } from '../lib/languages';
 import { useCurrentLanguage } from '../hooks/useCurrentLanguage';
 import LanguagePicker from '../components/common/LanguagePicker';
 import { SkeletonList } from '../components/common/Skeleton';
@@ -49,7 +49,7 @@ function EaseDots({ ease }: { ease: number }) {
     return 'bg-red-400 dark:bg-red-500';
   };
   return (
-    <span className="inline-flex gap-0.5" title={`Ease: ${ease.toFixed(2)}`}>
+    <span className="inline-flex gap-0.5" role="img" aria-label={`Review spacing factor: ${ease.toFixed(2)}`} title={`SM-2 ease: ${ease.toFixed(2)}. A higher factor increases the spacing between reviews.`}>
       <span className={`w-1.5 h-1.5 rounded-full ${ease >= 1.5 ? color(1.5) : 'bg-slate-300 dark:bg-slate-600'}`} />
       <span className={`w-1.5 h-1.5 rounded-full ${ease >= 2.2 ? color(2.2) : 'bg-slate-300 dark:bg-slate-600'}`} />
       <span className={`w-1.5 h-1.5 rounded-full ${ease >= 2.8 ? color(2.8) : 'bg-slate-300 dark:bg-slate-600'}`} />
@@ -204,10 +204,12 @@ export default function WordsPage() {
         {(['all', 'learning', 'mature', 'due'] as StatusFilter[]).map((s) => (
           <button
             key={s}
+            aria-pressed={status === s}
+            title={s === 'mature' ? 'Review intervals of 21 days or more; not a guarantee of mastery.' : undefined}
             className={`${chipBase} ${status === s ? chipActive : chipInactive}`}
             onClick={() => setStatus(s)}
           >
-            {s.charAt(0).toUpperCase() + s.slice(1)}
+            {s === 'mature' ? 'Longer intervals' : s.charAt(0).toUpperCase() + s.slice(1)}
           </button>
         ))}
         <select aria-label="Sort words"
@@ -300,7 +302,7 @@ export default function WordsPage() {
                   </div>
                   <div className="flex flex-col items-end gap-1 shrink-0">
                     <span className={`text-xs px-2 py-0.5 rounded-full ${langColor(word.language)}`}>
-                      {word.language.toUpperCase()}
+                      {getLanguageLabel(word.language)}
                     </span>
                     {isDue(review.nextReviewDate) ? (
                       <span className="text-xs px-2 py-0.5 rounded-full bg-amber-100 text-amber-800 dark:bg-amber-900 dark:text-amber-200">
@@ -372,12 +374,12 @@ export default function WordsPage() {
                         )}
                         <div className="grid grid-cols-3 gap-2 text-xs text-slate-500 dark:text-slate-400">
                           <div>
-                            <div className="font-medium">Ease</div>
+                            <div className="font-medium" title="SM-2 ease: a higher factor increases the spacing between reviews.">Spacing factor</div>
                             <div>{review.ease.toFixed(2)}</div>
                           </div>
                           <div>
-                            <div className="font-medium">Interval</div>
-                            <div>{review.interval}d</div>
+                            <div className="font-medium">Review interval</div>
+                            <div>{review.interval} days</div>
                           </div>
                           <div>
                             <div className="font-medium">Added</div>

@@ -97,11 +97,17 @@ function isIsoDate(value: unknown): value is string {
   );
 }
 
+export function countVocabAttemptRows(rows: unknown): number {
+  return Array.isArray(rows) ? rows.filter((row) =>
+    !!row && typeof row === 'object' && typeof row.key === 'string' &&
+    row.key.startsWith('vocab-attempt:v1:')).length : 0;
+}
+
 function progressRows(payload: BackupPayload): number {
   return RECOVERY_PROGRESS_TABLES.reduce(
     (sum, name) => sum + (payload.tables[name]?.length ?? 0),
     0,
-  );
+  ) + countVocabAttemptRows(payload.tables.settings);
 }
 
 export function parseRecoveryCapsule(
@@ -213,6 +219,11 @@ export async function buildRecoveryCapsule(): Promise<RecoveryCapsule> {
   });
 
   const createdAt = new Date().toISOString();
+  // Pending vocabulary receipts live in settings; their idempotency tokens
+  // must travel with the XP total, including the cross-store failure window.
+  const storage: Record<string, string> = {};
+  const xp = browserStorage()?.getItem('langlearn-xp');
+  if (xp != null) storage['langlearn-xp'] = xp;
   return {
     version: RECOVERY_CAPSULE_VERSION,
     createdAt,
@@ -222,7 +233,7 @@ export async function buildRecoveryCapsule(): Promise<RecoveryCapsule> {
       exportedAt: createdAt,
       schemaVersion: CURRENT_SCHEMA_VERSION,
       tables,
-      localStorage: {},
+      localStorage: storage,
     },
   };
 }

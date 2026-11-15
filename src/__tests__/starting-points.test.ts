@@ -1,10 +1,27 @@
-import { describe, it, expect } from 'vitest';
+import { afterEach, beforeEach, describe, it, expect, vi } from 'vitest';
 import { getStartingPoints } from '../lib/starting-points';
 import { LANGUAGES } from '../lib/languages';
-import { isKnownRoute } from '../lib/routes';
+import { getAlphabetsForLanguage } from '../data/alphabets';
+import { LEARNING_PATHS } from '../data/learning-paths';
+import { unitLessons } from '../data/learning-paths/shared';
+import { resolveLearningPath } from '../lib/learning-path';
+import { guidedLettersRoute, isKnownRoute, NEXT_GUIDED_GROUP, vocabLessonRoute } from '../lib/routes';
 
 const SCRIPT_LANGUAGES = ['ja', 'ru', 'ar'];
 const LATIN_LANGUAGES = ['es', 'pt', 'ro'];
+const INDEXES = import.meta.glob('../../public/content/{grammar,vocab}/*/index.json', {
+  eager: true, import: 'default',
+}) as Record<string, { id: string; title: string }[]>;
+const stored = new Map<string, string>();
+
+beforeEach(() => {
+  stored.clear();
+  vi.stubGlobal('localStorage', {
+    getItem: (key: string) => stored.get(key) ?? null,
+    setItem: (key: string, value: string) => stored.set(key, value),
+  });
+});
+afterEach(() => vi.unstubAllGlobals());
 
 describe('getStartingPoints', () => {
   it.each(Object.keys(LANGUAGES))(
@@ -28,16 +45,42 @@ describe('getStartingPoints', () => {
   it.each(SCRIPT_LANGUAGES)('starts %s with the letters', (lang) => {
     const points = getStartingPoints(lang);
     expect(points[0].id).toBe('letters');
-    // Must be the guided flow, not the bare route — /letters/:lang alone opens
-    // the Chart reference wall, which is the wrong first thing to hand a
-    // learner who has never seen the script.
-    expect(points[0].route).toBe(`/letters/${lang}?mode=learn`);
+    expect(points[0].route).toBe(guidedLettersRoute(
+      lang, LEARNING_PATHS[lang].letterPrerequisites[0], NEXT_GUIDED_GROUP,
+    ));
   });
 
   it.each(LATIN_LANGUAGES)('starts %s with words, not letters', (lang) => {
     const points = getStartingPoints(lang);
     expect(points[0].id).toBe('words');
     expect(points.find((p) => p.id === 'letters')?.recommended).not.toBe(true);
+  });
+
+  it.each(Object.keys(LANGUAGES))('opens %s\'s canonical authored vocabulary lesson, not its catalog', (lang) => {
+    const manifest = LEARNING_PATHS[lang];
+    const first = manifest.units.flatMap(unitLessons).find((node) => node.kind === 'vocab')!;
+    const point = getStartingPoints(lang).find((item) => item.id === 'words')!;
+    expect(point.route).toBe(vocabLessonRoute(first.lessonId));
+    expect(INDEXES[`../../public/content/vocab/${lang}/index.json`].some((item) => item.id === first.lessonId)).toBe(true);
+    expect(point.sublabel).not.toMatch(/two minutes|short lesson/i);
+  });
+
+  it.each(Object.entries(LEARNING_PATHS))('agrees with %s\'s fresh Learn path', (language, manifest) => {
+    const path = resolveLearningPath(manifest, {
+      grammar: INDEXES[`../../public/content/grammar/${language}/index.json`],
+      vocab: INDEXES[`../../public/content/vocab/${language}/index.json`],
+    }, { progress: [], completedLetters: new Set() });
+    const first = path.units.flatMap((unit) => unit.nodes).find((node) => node.id === path.recommendedNodeId);
+    expect(getStartingPoints(language)[0].route).toBe(first?.route);
+  });
+
+  it('continues at the next canonical alphabet without changing completion', () => {
+    const hiragana = getAlphabetsForLanguage('ja')[0];
+    const groups = [...new Set(hiragana.characters.map((character) => character.group))];
+    localStorage.setItem('langlearn-guided-ja-Hiragana', JSON.stringify(groups));
+    expect(getStartingPoints('ja')[0].route).toBe(guidedLettersRoute('ja', 'Katakana', NEXT_GUIDED_GROUP));
+    expect(stored.size).toBe(1);
+    expect(JSON.parse(localStorage.getItem('langlearn-guided-ja-Hiragana')!)).toEqual(groups);
   });
 
   it('never offers lessons that do not exist for a custom language', () => {

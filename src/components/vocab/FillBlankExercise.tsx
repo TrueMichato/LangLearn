@@ -1,40 +1,33 @@
-import { useState } from 'react';
 import type { FillBlankItem } from '../../types/vocab';
+import { rtlProps } from '../../lib/rtl';
+import { nextVocabItem, submitVocabItem, vocabItemFeedback, type VocabItemState } from '../../lib/vocab-lesson-state';
 
 interface Props {
   items: FillBlankItem[];
   onComplete: (correct: number) => void;
+  state: VocabItemState;
+  onChange: (state: VocabItemState) => void;
+  language: string;
 }
 
-export default function FillBlankExercise({ items, onComplete }: Props) {
-  const [current, setCurrent] = useState(0);
-  const [input, setInput] = useState('');
-  const [showHint, setShowHint] = useState(false);
-  const [feedback, setFeedback] = useState<'correct' | 'wrong' | null>(null);
-  const [correct, setCorrect] = useState(0);
-
+export default function FillBlankExercise({ items, onComplete, state, onChange, language }: Props) {
+  const { index: current, input, showHint } = state;
+  const feedback = vocabItemFeedback(state);
   const item = items[current];
 
   function handleCheck() {
-    if (!input.trim()) return;
-
+    if (!input.trim() || feedback) return;
     const isCorrect = input.trim().toLowerCase() === item.answer.toLowerCase();
-    if (isCorrect) {
-      setCorrect((c) => c + 1);
-    }
-    setFeedback(isCorrect ? 'correct' : 'wrong');
+    onChange(submitVocabItem(state, isCorrect));
   }
 
   function handleNext() {
     const nextIdx = current + 1;
     if (nextIdx >= items.length) {
-      onComplete(feedback === 'correct' ? correct : correct);
+      onComplete(state.answers.filter(Boolean).length);
       return;
     }
-    setCurrent(nextIdx);
-    setInput('');
-    setShowHint(false);
-    setFeedback(null);
+    onChange(nextVocabItem(state));
   }
 
   return (
@@ -44,7 +37,7 @@ export default function FillBlankExercise({ items, onComplete }: Props) {
       </p>
 
       <div className="bg-white dark:bg-slate-800 rounded-2xl shadow p-5 mb-4 border border-slate-200/70 dark:border-white/10">
-        <p className="text-lg text-slate-800 dark:text-slate-100 text-center leading-relaxed">
+        <p lang={language} {...rtlProps(language)} className="text-lg text-slate-800 dark:text-slate-100 text-center leading-relaxed">
           {item.sentence}
         </p>
       </div>
@@ -58,21 +51,23 @@ export default function FillBlankExercise({ items, onComplete }: Props) {
       {feedback ? (
         <div className="space-y-3">
           <div
+            role="status"
             className={`rounded-xl p-4 text-center font-medium ${
               feedback === 'correct'
                 ? 'bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-300'
-                : 'bg-red-100 dark:bg-red-900/30 text-red-700 dark:text-red-300'
+                : 'bg-amber-50 dark:bg-amber-900/30 text-amber-800 dark:text-amber-200'
             }`}
           >
             {feedback === 'correct' ? (
               <span>✅ Correct!</span>
             ) : (
               <span>
-                ❌ Incorrect — the answer is <strong>{item.answer}</strong>
+                Keep going — the answer is <strong {...rtlProps(language)}>{item.answer}</strong>
               </span>
             )}
           </div>
           <button
+            autoFocus
             onClick={handleNext}
             className="w-full py-3 rounded-xl bg-indigo-600 text-white font-medium hover:bg-indigo-700 transition-colors min-h-[44px]"
           >
@@ -83,8 +78,13 @@ export default function FillBlankExercise({ items, onComplete }: Props) {
         <div className="space-y-3">
           <input
             type="text"
+            id="vocab-fill-answer"
+            name="vocab-fill-answer"
+            aria-label="Your answer"
+            lang={language}
+            {...rtlProps(language)}
             value={input}
-            onChange={(e) => setInput(e.target.value)}
+            onChange={(e) => onChange({ ...state, input: e.target.value })}
             onKeyDown={(e) => e.key === 'Enter' && handleCheck()}
             placeholder="Type your answer..."
             className="w-full px-4 py-3 rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 text-slate-800 dark:text-slate-100 focus:ring-2 focus:ring-indigo-400 focus:outline-none min-h-[44px]"
@@ -92,7 +92,7 @@ export default function FillBlankExercise({ items, onComplete }: Props) {
           />
           <div className="flex gap-2">
             <button
-              onClick={() => setShowHint(true)}
+              onClick={() => onChange({ ...state, showHint: true })}
               className="flex-1 py-3 rounded-xl bg-slate-100 dark:bg-slate-700 text-slate-600 dark:text-slate-300 font-medium hover:bg-slate-200 dark:hover:bg-slate-600 transition-colors min-h-[44px] press-feedback"
             >
               Show Hint

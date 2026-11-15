@@ -35,17 +35,22 @@ export default function ImmersionSection() {
   return (
     <section className="bg-white dark:bg-slate-800/90 rounded-2xl shadow-sm border border-slate-200/60 dark:border-white/10 p-4">
       <h3 className="text-sm font-semibold text-slate-500 dark:text-slate-400 mb-1">
-        🌍 Immersion Ideas
+        🌍 Optional study ideas
       </h3>
       <p className="text-xs text-slate-500 dark:text-slate-400 mb-3">
         Extend your learning beyond the app
       </p>
 
       {/* Category filter tabs */}
-      <div className="flex flex-wrap gap-1.5 mb-4">
+      <div role="group" aria-label="Study idea categories" className="flex flex-wrap gap-1.5 mb-4">
         {categories.map((cat) => (
           <button
             key={cat}
+            id={`settings-study-ideas-${cat}`}
+            name="studyIdeaCategory"
+            type="button"
+            value={cat}
+            aria-pressed={selectedCategory === cat}
             onClick={() => setSelectedCategory(cat)}
             className={`px-3 py-1 min-h-[44px] min-w-[44px] rounded-full text-xs font-medium transition-all duration-200 press-feedback ${
               selectedCategory === cat

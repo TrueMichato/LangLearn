@@ -1,4 +1,4 @@
-import { useState, useEffect, useCallback, useRef } from 'react';
+import { useState, useEffect, useCallback, useRef, useId } from 'react';
 import { db, type Text as TextRecord } from '../db/schema';
 import { saveWordsToVocabulary } from '../db/words';
 import { getTextCount } from '../db/texts';
@@ -8,16 +8,14 @@ import { useCurrentLanguage } from '../hooks/useCurrentLanguage';
 import LanguagePicker from '../components/common/LanguagePicker';
 import WordLookupSheet from '../components/reader/WordLookupSheet';
 import TextLibrary from '../components/reader/TextLibrary';
-import { tokenizeJapanese } from '../lib/tokenizer';
-import type { Token } from '../lib/tokenizer';
+import { loadReaderSegments, type ReaderSegment } from '../lib/reader-segments';
 import FuriganaText from '../components/reader/FuriganaText';
-import { applyStress } from '../lib/russian-stress';
 import { splitSentences, findSentenceAt, type SentenceSpan } from '../lib/sentences';
 import { isRTL } from '../lib/rtl';
 import { SkeletonCard, SkeletonList } from '../components/common/Skeleton';
 import ComprehensionIndicator from '../components/reader/ComprehensionIndicator';
 import { useKnowledge } from '../hooks/useKnowledge';
-import { buildWordStatusMap, type WordStatusMap, getStatusColor } from '../lib/word-status';
+import { buildWordStatusMap, type WordStatusMap } from '../lib/word-status';
 import { parseWithIchiMoe, getIchiMoeUrl, type IchiMoeWord } from '../lib/ichimoe';
 import WordDefinitions from '../components/reader/WordDefinitions';
 import { parseSrt, srtToText } from '../lib/srt-parser';
@@ -30,6 +28,7 @@ import {
 import { selectGuidedItems } from '../lib/guided-practice';
 import type { CuratedText } from '../components/reader/TextLibrary';
 import { loadReaderStory } from '../lib/reader-coverage';
+import type { WordLookupDraft } from '../lib/word-lookup';
 
 type Tab = 'import' | 'library';
 
@@ -48,15 +47,17 @@ export default function ReaderPage() {
   const highlightRequest = useRef(0);
   const invalidateHighlight = useCallback(() => { highlightRequest.current++; }, []);
   const [savedTextId, setSavedTextId] = useState<number | null>(null);
-  const [tokens, setTokens] = useState<string[]>([]);
-  const [tokenOffsets, setTokenOffsets] = useState<number[]>([]);
-  const [jaTokens, setJaTokens] = useState<Token[]>([]);
-  const [jaTokenOffsets, setJaTokenOffsets] = useState<number[]>([]);
+  const [segments, setSegments] = useState<ReaderSegment[]>([]);
   const [sentences, setSentences] = useState<SentenceSpan[]>([]);
   const [isTokenizing, setIsTokenizing] = useState(false);
   const [selectedWord, setSelectedWord] = useState<string | null>(null);
   const [selectedReading, setSelectedReading] = useState('');
   const [selectedSentence, setSelectedSentence] = useState('');
+  const [selectedLemma, setSelectedLemma] = useState<string | undefined>();
+  const [selectedSegmentIndex, setSelectedSegmentIndex] = useState<number | null>(null);
+  const lookupDrafts = useRef(new Map<string, WordLookupDraft>());
+  const readerInstructionsId = useId();
+  const selectedLookupKey = `${language}/${selectedSegmentIndex ?? ''}`;
   const { isRunning, start } = useTimerStore();
   const { showStressMarks } = useSettingsStore();
   const [highlightKnown, setHighlightKnown] = useState(false);
@@ -136,10 +137,7 @@ export default function ReaderPage() {
     setIsTokenizing(false);
     setReadingError('');
     logReadingSession();
-    setTokens([]);
-    setTokenOffsets([]);
-    setJaTokens([]);
-    setJaTokenOffsets([]);
+    setSegments([]);
     setSentences([]);
     setText('');
     setTitle('');
@@ -147,6 +145,9 @@ export default function ReaderPage() {
     setSelectedWord(null);
     setSelectedReading('');
     setSelectedSentence('');
+    setSelectedLemma(undefined);
+    setSelectedSegmentIndex(null);
+    lookupDrafts.current.clear();
     setWordStatusMap(null);
     setIchiMoeWords([]);
     setIchiMoeCorsBlocked(false);
@@ -169,6 +170,15 @@ export default function ReaderPage() {
     setTab(newTab);
   }
 
+  const prepareReadingText = useCallback(async (content: string, lang: string, request: number) => {
+    setIsTokenizing(lang === 'ja');
+    const result = await loadReaderSegments(content, lang);
+    if (request !== openRequest.current) return false;
+    setSegments(result);
+    setIsTokenizing(false);
+    return true;
+  }, []);
+
   async function openTextFromLibrary(record: TextRecord) {
     resetReadingState();
     if (!record.content.trim()) {
@@ -188,45 +198,7 @@ export default function ReaderPage() {
     readingStartRef.current = Date.now();
     readingMetaRef.current = { language: record.language, wordCount, title: record.title };
 
-    if (record.language === 'ja') {
-      setIsTokenizing(true);
-      try {
-        const result = await tokenizeJapanese(record.content);
-        if (request !== openRequest.current) return;
-        setJaTokens(result);
-        const offsets: number[] = [];
-        let pos = 0;
-        for (const t of result) {
-          offsets.push(pos);
-          pos += t.surface.length;
-        }
-        setJaTokenOffsets(offsets);
-      } catch {
-        if (request !== openRequest.current) return;
-        const chars = record.content.split('');
-        setTokens(chars);
-        setTokenOffsets(chars.map((_, i) => i));
-      } finally {
-        if (request === openRequest.current) setIsTokenizing(false);
-      }
-    } else {
-      const isCJK = /[\u3000-\u9fff\uf900-\ufaff]/.test(record.content);
-      let rawTokens: string[];
-      if (isCJK) {
-        rawTokens = record.content.split('');
-      } else {
-        rawTokens = record.content.split(/(\s+)/).filter((t) => t.trim());
-      }
-      const offsets: number[] = [];
-      let pos = 0;
-      for (const t of rawTokens) {
-        const idx = record.content.indexOf(t, pos);
-        offsets.push(idx >= 0 ? idx : pos);
-        pos = (idx >= 0 ? idx : pos) + t.length;
-      }
-      setTokens(rawTokens);
-      setTokenOffsets(offsets);
-    }
+    await prepareReadingText(record.content, record.language, request);
   }
 
   const openCuratedText = useCallback(async (
@@ -256,43 +228,7 @@ export default function ReaderPage() {
       readingStartRef.current = Date.now();
       readingMetaRef.current = { language: lang, wordCount, title: curatedTitle };
 
-      if (lang === 'ja') {
-        try {
-          const result = await tokenizeJapanese(content);
-          if (request !== openRequest.current) return false;
-          setJaTokens(result);
-          const offsets: number[] = [];
-          let pos = 0;
-          for (const t of result) {
-            offsets.push(pos);
-            pos += t.surface.length;
-          }
-          setJaTokenOffsets(offsets);
-        } catch {
-          if (request !== openRequest.current) return false;
-          const chars = content.split('');
-          setTokens(chars);
-          setTokenOffsets(chars.map((_, i) => i));
-        }
-      } else {
-        const isCJK = /[\u3000-\u9fff\uf900-\ufaff]/.test(content);
-        let rawTokens: string[];
-        if (isCJK) {
-          rawTokens = content.split('');
-        } else {
-          rawTokens = content.split(/(\s+)/).filter((t) => t.trim());
-        }
-        const offsets: number[] = [];
-        let pos = 0;
-        for (const t of rawTokens) {
-          const idx = content.indexOf(t, pos);
-          offsets.push(idx >= 0 ? idx : pos);
-          pos = (idx >= 0 ? idx : pos) + t.length;
-        }
-        setTokens(rawTokens);
-        setTokenOffsets(offsets);
-      }
-      return true;
+      return await prepareReadingText(content, lang, request);
     } catch {
       if (request !== openRequest.current) return false;
       resetReadingState();
@@ -301,7 +237,7 @@ export default function ReaderPage() {
     } finally {
       if (request === openRequest.current) setIsTokenizing(false);
     }
-  }, [resetReadingState, setLanguage]);
+  }, [prepareReadingText, resetReadingState, setLanguage]);
 
   useEffect(() => {
     if (!guided.descriptor) return;
@@ -378,48 +314,7 @@ export default function ReaderPage() {
     readingStartRef.current = Date.now();
     readingMetaRef.current = { language, wordCount, title: title || 'Untitled' };
 
-    if (language === 'ja') {
-      setIsTokenizing(true);
-      try {
-        const result = await tokenizeJapanese(text);
-        if (request !== openRequest.current) return;
-        setJaTokens(result);
-        // Compute character offsets for each Japanese token
-        const offsets: number[] = [];
-        let pos = 0;
-        for (const t of result) {
-          offsets.push(pos);
-          pos += t.surface.length;
-        }
-        setJaTokenOffsets(offsets);
-      } catch {
-        if (request !== openRequest.current) return;
-        // Fallback to character-level split if tokenizer fails
-        const chars = text.split('');
-        setTokens(chars);
-        setTokenOffsets(chars.map((_, i) => i));
-      } finally {
-        if (request === openRequest.current) setIsTokenizing(false);
-      }
-    } else {
-      const isCJK = /[\u3000-\u9fff\uf900-\ufaff]/.test(text);
-      let rawTokens: string[];
-      if (isCJK) {
-        rawTokens = text.split('');
-      } else {
-        rawTokens = text.split(/(\s+)/).filter((t) => t.trim());
-      }
-      // Compute character offsets by finding each token in the text
-      const offsets: number[] = [];
-      let pos = 0;
-      for (const t of rawTokens) {
-        const idx = text.indexOf(t, pos);
-        offsets.push(idx >= 0 ? idx : pos);
-        pos = (idx >= 0 ? idx : pos) + t.length;
-      }
-      setTokens(rawTokens);
-      setTokenOffsets(offsets);
-    }
+    await prepareReadingText(text, language, request);
   };
 
   const handleAddWord = async (word: string, reading: string, meaning: string, contextSentence: string) => {
@@ -437,8 +332,6 @@ export default function ReaderPage() {
       tags: [],
     }]);
 
-    setSelectedWord(null);
-    setSelectedReading('');
     // Refresh known word set so highlight updates after mining
     refreshKnownWords();
     return result;
@@ -458,7 +351,7 @@ export default function ReaderPage() {
     }
   };
 
-  const hasTokens = tokens.length > 0 || jaTokens.length > 0;
+  const hasTokens = segments.length > 0;
 
   if (guided.invalidMessage) {
     return <GuidedPracticeError message={guided.invalidMessage} />;
@@ -666,48 +559,30 @@ export default function ReaderPage() {
         </button>
       )}
 
-      <div className="bg-white dark:bg-slate-800 rounded-2xl shadow p-4 leading-relaxed text-[1.1rem] dark:text-slate-100" style={{ fontSize: 'var(--app-font-size)' }} dir={isRTL(language) ? 'rtl' : undefined}>
-        {jaTokens.length > 0 ? (
-          <FuriganaText
-            tokens={jaTokens}
-            selectedWord={selectedWord}
-            onWordClick={(surface, reading, tokenIndex) => {
-              setSelectedWord(surface);
-              setSelectedReading(reading);
-              const offset = jaTokenOffsets[tokenIndex] ?? 0;
-              setSelectedSentence(findSentenceAt(sentences, offset));
-            }}
-            highlightKnown={highlightKnown}
-            knownWords={knownWordSet}
-            wordStatusMap={wordStatusMap ?? undefined}
-            statusHighlight={highlightKnown && !!wordStatusMap}
-          />
-        ) : (
-          tokens.map((token, i) => {
-            const isSelected = selectedWord === token;
-            const useStatus = highlightKnown && wordStatusMap && token.trim();
-            const statusClass = useStatus && !isSelected
-              ? getStatusColor(wordStatusMap!.getStatus(token))
-              : '';
-            const isKnown = !useStatus && highlightKnown && knownWordSet.has(token.toLowerCase());
-            return (
-            <span
-              key={i}
-              onClick={() => {
-                if (token.trim()) {
-                  setSelectedWord(token);
-                  setSelectedSentence(findSentenceAt(sentences, tokenOffsets[i] ?? 0));
-                }
-              }}
-              className={`cursor-pointer transition-colors hover:bg-indigo-100 dark:hover:bg-indigo-900 rounded px-0.5 ${
-                isSelected ? 'bg-indigo-200 dark:bg-indigo-800' : ''
-              }${isKnown ? ' bg-green-50 dark:bg-green-900/20' : ''} ${statusClass}`}
-            >
-              {showStressMarks && language === 'ru' ? applyStress(token) : token}
-            </span>
-            );
-          })
-        )}
+      <p id={readerInstructionsId} className="mb-2 text-xs text-slate-500 dark:text-slate-400">
+        Select a word for its meaning. Keyboard: use Left/Right to move between words, then Enter or Space to open.
+        {isRTL(language) ? ' Left moves to the next word in reading order.' : ''}
+      </p>
+      <div className="bg-white dark:bg-slate-800 rounded-2xl shadow p-4 leading-relaxed whitespace-pre-wrap text-[1.1rem] dark:text-slate-100" style={{ fontSize: 'var(--app-font-size)' }} dir={isRTL(language) ? 'rtl' : undefined}>
+        <FuriganaText
+          segments={segments}
+          selectedWord={selectedWord}
+          onWordClick={(surface, reading, segmentIndex) => {
+            setSelectedWord(surface);
+            setSelectedReading(reading);
+            setSelectedLemma(segments[segmentIndex]?.token?.lemma);
+            setSelectedSegmentIndex(segmentIndex);
+            const offset = segments[segmentIndex]?.start ?? 0;
+            setSelectedSentence(findSentenceAt(sentences, offset));
+          }}
+          highlightKnown={highlightKnown}
+          knownWords={knownWordSet}
+          wordStatusMap={wordStatusMap ?? undefined}
+          statusHighlight={highlightKnown && !!wordStatusMap}
+          language={language}
+          showStressMarks={showStressMarks}
+          instructionsId={readerInstructionsId}
+        />
       </div>
 
       {/* Bilingual translation panel */}
@@ -825,11 +700,14 @@ export default function ReaderPage() {
 
       {selectedWord && (
         <WordLookupSheet
-          key={`${language}/${selectedWord}`}
+          key={selectedLookupKey}
           word={selectedWord}
           language={language}
           initialReading={selectedReading}
+          lemma={selectedLemma}
           contextSentence={selectedSentence}
+          initialDraft={lookupDrafts.current.get(selectedLookupKey)}
+          onDraftChange={(draft) => { lookupDrafts.current.set(selectedLookupKey, draft); }}
           onAdd={handleAddWord}
           onClose={() => setSelectedWord(null)}
           wordStatusMap={wordStatusMap ?? undefined}

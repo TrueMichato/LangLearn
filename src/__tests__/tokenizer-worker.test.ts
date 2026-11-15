@@ -12,11 +12,24 @@ class MockWorker {
 afterEach(() => {
   vi.useRealTimers();
   vi.unstubAllGlobals();
+  vi.doUnmock('kuromoji');
   vi.resetModules();
   MockWorker.instances = [];
 });
 
 describe('Japanese tokenizer worker contract', () => {
+  it('imports Reader helpers without evaluating kuromoji or starting a main-thread tokenizer', async () => {
+    const rawKuromoji = vi.fn(() => { throw new Error('kuromoji must stay in the worker'); });
+    vi.doMock('kuromoji', rawKuromoji);
+    vi.stubGlobal('Worker', MockWorker);
+    const { loadReaderSegments } = await import('../lib/reader-segments');
+    await import('../lib/word-lookup');
+    const segments = await loadReaderSegments('hola  mundo.\n', 'es');
+    expect(segments.map((segment) => segment.surface).join('')).toBe('hola  mundo.\n');
+    expect(rawKuromoji).not.toHaveBeenCalled();
+    expect(MockWorker.instances).toHaveLength(0);
+  });
+
   it('preserves the Reader token contract while exposing dictionary metadata', async () => {
     vi.stubGlobal('Worker', MockWorker);
     const { tokenizeJapanese } = await import('../lib/tokenizer');

@@ -10,9 +10,8 @@ interface StartingPointsProps {
 
 /**
  * The shared on-ramp: three ways into a language, one of them recommended.
- * Rendered both at the end of onboarding and on a first-run Dashboard, so a
- * learner who skipped the intro lands in exactly the same place as one who
- * did not.
+ * The routes name authored lessons or validated guided columns, not catalogs.
+ * A learner who skips onboarding receives the same instructional entry later.
  */
 export default function StartingPoints({
   language,

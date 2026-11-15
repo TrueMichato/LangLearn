@@ -39,6 +39,7 @@ import {
 import {
   readRecoveryCapsule,
   refreshRecoveryCapsule,
+  countVocabAttemptRows,
   type RecoveryCapsule,
 } from './recovery-capsule';
 
@@ -131,7 +132,8 @@ export function snapshotProgressRows(payload: string): number {
   try {
     const parsed = JSON.parse(payload) as { tables?: Record<string, unknown[]> };
     const tables = parsed.tables ?? {};
-    return PROGRESS_TABLES.reduce((sum, name) => sum + (tables[name]?.length ?? 0), 0);
+    return PROGRESS_TABLES.reduce((sum, name) => sum + (tables[name]?.length ?? 0), 0) +
+      countVocabAttemptRows(tables.settings);
   } catch {
     return 0;
   }
@@ -188,6 +190,8 @@ export async function findSuspectedDataLoss(): Promise<RecoveryPoint | null> {
       liveProgressRows += await db.table(name).count();
       if (liveProgressRows > 0) return null;
     }
+    liveProgressRows += countVocabAttemptRows(await db.settings.toArray());
+    if (liveProgressRows > 0) return null;
 
     // The newest recovery point is not necessarily useful — restoring creates a
     // safety snapshot of whatever was there at the time, which may itself be
@@ -280,7 +284,7 @@ export async function takeSnapshot(reason: string): Promise<Snapshot | null> {
     const payload = await buildBackupPayload();
     const serialized = JSON.stringify(payload);
 
-    // Only progress counts. A database holding nothing but a settings row has
+    // Only progress counts. A database holding only ordinary preference rows has
     // nothing worth protecting, and snapshotting it anyway would push a real
     // recovery point out of the retention window — which is exactly what you
     // need when the next thing that happens is a wipe.
@@ -322,7 +326,7 @@ export async function restoreRecoveryPoint(
   }
 
   await takeSnapshot('before restoring browser recovery copy');
-  await importAllData(JSON.stringify(recovery.capsule.payload), 'replace');
+  await importAllData(JSON.stringify(recovery.capsule.payload), 'replace', { preserveLiveXP: true });
   await refreshRecoveryCapsule();
 }
 

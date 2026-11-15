@@ -7,6 +7,7 @@ import DeckExport from '../components/common/DeckExport';
 import DeckImport from '../components/common/DeckImport';
 import NotificationSettings from '../components/settings/NotificationSettings';
 import ImmersionSection from '../components/settings/ImmersionSection';
+import { SettingRange, SettingToggle } from '../components/settings/SettingControls';
 import { LANGUAGES, getLanguageLabel } from '../lib/languages';
 import { DIALECTS, DIALECT_CODES } from '../lib/arabic-dialects';
 import { diagnoseTTS } from '../lib/tts';
@@ -19,36 +20,8 @@ function SectionHeading({ icon, label }: { icon: string; label: string }) {
   );
 }
 
-function Toggle({
-  checked,
-  onChange,
-  disabled,
-}: {
-  checked: boolean;
-  onChange: () => void;
-  disabled?: boolean;
-}) {
-  return (
-    <button
-      onClick={onChange}
-      disabled={disabled}
-      className={`relative inline-flex h-6 w-11 shrink-0 items-center rounded-full after:absolute after:inset-x-0 after:top-1/2 after:h-11 after:-translate-y-1/2 after:content-[''] transition-all duration-200 ease-out ${
-        checked ? 'fill-primary' : 'bg-slate-300 dark:bg-slate-600'
-      } ${disabled ? 'opacity-50 cursor-not-allowed' : ''}`}
-      role="switch"
-      aria-checked={checked}
-    >
-      <span
-        className={`inline-block h-4 w-4 rounded-full bg-white shadow-sm transition-all duration-200 ease-out ${
-          checked ? 'translate-x-6' : 'translate-x-1'
-        }`}
-      />
-    </button>
-  );
-}
-
 const sectionCard =
-  'bg-white dark:bg-slate-800/90 rounded-2xl shadow-sm border border-slate-200/60 dark:border-white/10 p-4';
+  'bg-white dark:bg-slate-800/90 rounded-2xl shadow-sm border border-slate-200/70 dark:border-white/10 p-4';
 
 export default function SettingsPage() {
   const { weeklyGoalMinutes, setWeeklyGoal, dailyGoalMinutes, setDailyGoal, activeLanguages, addLanguage, removeLanguage, showStressMarks, toggleStressMarks, darkMode, toggleDarkMode, fontSize, setFontSize, ttsRate, setTtsRate, reviewBatchSize, setReviewBatchSize, adaptiveReview, toggleAdaptiveReview, scheduler, setScheduler, fsrsRequestRetention, setFsrsRequestRetention, arabicDialect, setArabicDialect, arabicColloquialFocus, setArabicColloquialFocus } =
@@ -61,78 +34,22 @@ export default function SettingsPage() {
     <div className="space-y-6 page-enter">
       <h2 className="text-lg font-semibold text-slate-700 dark:text-slate-200">Settings</h2>
 
-      {/* Appearance */}
-      <section className={sectionCard}>
-        <SectionHeading icon="🎨" label="Appearance" />
-        <div className="flex items-center justify-between">
-          <div>
-            <p className="text-sm font-medium text-slate-700 dark:text-slate-200">Theme</p>
-            <p className="text-xs text-slate-500 dark:text-slate-400">{darkMode ? 'Dark mode' : 'Light mode'}</p>
-          </div>
-          <button
-            onClick={toggleDarkMode}
-            className="flex min-h-[44px] min-w-[44px] items-center justify-center text-2xl rounded-full hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors press-feedback"
-            aria-label="Toggle dark mode"
-          >
-            {darkMode ? '☀️' : '🌙'}
-          </button>
-        </div>
-      </section>
-
-      {/* Notifications */}
-      <NotificationSettings />
-
-      {/* Languages */}
-      <section className={sectionCard}>
+      <section className={`${sectionCard} space-y-4`}>
         <SectionHeading icon="🌐" label="Languages" />
-
-        {/* Daily Study Goal */}
-        <p className="text-sm font-medium text-slate-700 dark:text-slate-200 mb-1">Daily Study Goal</p>
-        <p className="text-xs text-slate-500 dark:text-slate-400 mb-2">
-          A small daily target builds the habit. Tiny is fine — even 5 minutes counts.
+        <p id="settings-active-languages" className="text-sm font-medium text-slate-700 dark:text-slate-200">
+          Languages you study
         </p>
-        <div className="flex items-center gap-3 mb-4">
-          <input
-            type="range"
-            min={2}
-            max={60}
-            step={1}
-            value={dailyGoalMinutes}
-            onChange={(e) => setDailyGoal(Number(e.target.value))}
-            className="flex-1 accent-indigo-600 dark:accent-indigo-400"
-          />
-          <span className="text-sm font-mono w-16 text-right text-slate-600 dark:text-slate-300 bg-slate-100 dark:bg-slate-700/60 rounded-lg px-2 py-0.5">
-            {dailyGoalMinutes}m
-          </span>
-        </div>
-
-        {/* Weekly Study Goal */}
-        <p className="text-sm font-medium text-slate-700 dark:text-slate-200 mb-1">Weekly Study Goal</p>
-        <div className="flex items-center gap-3 mb-4">
-          <input
-            type="range"
-            min={15}
-            max={420}
-            step={15}
-            value={weeklyGoalMinutes}
-            onChange={(e) => setWeeklyGoal(Number(e.target.value))}
-            className="flex-1 accent-indigo-600 dark:accent-indigo-400"
-          />
-          <span className="text-sm font-mono w-16 text-right text-slate-600 dark:text-slate-300 bg-slate-100 dark:bg-slate-700/60 rounded-lg px-2 py-0.5">
-            {weeklyGoalMinutes >= 60
-              ? `${Math.floor(weeklyGoalMinutes / 60)}h${weeklyGoalMinutes % 60 ? ` ${weeklyGoalMinutes % 60}m` : ''}`
-              : `${weeklyGoalMinutes}m`}
-          </span>
-        </div>
-
-        {/* Active Languages */}
-        <p className="text-sm font-medium text-slate-700 dark:text-slate-200 mb-2">Active Languages</p>
-        <div className="flex flex-wrap gap-2">
+        <div role="group" aria-labelledby="settings-active-languages" className="flex flex-wrap gap-2">
           {languageOptions.map((lang) => {
             const isActive = activeLanguages.includes(lang.code);
             return (
               <button
                 key={lang.code}
+                id={`settings-language-${lang.code}`}
+                name="activeLanguages"
+                type="button"
+                value={lang.code}
+                aria-pressed={isActive}
                 onClick={() =>
                   isActive
                     ? removeLanguage(lang.code)
@@ -149,60 +66,122 @@ export default function SettingsPage() {
             );
           })}
         </div>
+
+        {activeLanguages.includes('ru') && (
+          <div className="border-t border-slate-200/70 dark:border-white/10 pt-4">
+            <h4 className="text-sm font-semibold text-slate-800 dark:text-slate-100 mb-3">
+              {getLanguageLabel('ru')} options
+            </h4>
+            <SettingToggle
+              id="settings-stress-marks"
+              label="Show stress marks"
+              description="Display accent marks on stressed vowels in the Reader."
+              checked={showStressMarks}
+              onChange={toggleStressMarks}
+            />
+          </div>
+        )}
+
+        {activeLanguages.includes('ar') && (
+          <div className="border-t border-slate-200/70 dark:border-white/10 pt-4 space-y-4">
+            <h4 className="text-sm font-semibold text-slate-800 dark:text-slate-100">
+              {getLanguageLabel('ar')} options
+            </h4>
+            <div>
+              <p id="settings-dialect-label" className="text-sm font-medium text-slate-700 dark:text-slate-200 mb-1">
+                Spoken dialect
+              </p>
+              <p className="text-xs text-slate-500 dark:text-slate-400 mb-3">
+                Everyone learns Modern Standard Arabic (fuṣḥā) as the shared core. Pick a spoken
+                dialect to also see its everyday words, pronunciation notes and colloquial lessons.
+              </p>
+              <div role="group" aria-labelledby="settings-dialect-label" className="space-y-2">
+                {DIALECT_CODES.map((code) => {
+                  const d = DIALECTS[code];
+                  const isActive = arabicDialect === code;
+                  return (
+                    <button
+                      key={code}
+                      id={`settings-dialect-${code}`}
+                      name="arabicDialect"
+                      type="button"
+                      value={code}
+                      onClick={() => setArabicDialect(code)}
+                      className={`w-full min-h-[44px] text-left rounded-xl border px-3 py-2 transition-colors press-feedback ${
+                        isActive
+                          ? 'border-indigo-300 bg-indigo-50 dark:bg-indigo-900/40 dark:border-indigo-400'
+                          : 'border-slate-200 dark:border-slate-700 hover:bg-slate-50 dark:hover:bg-slate-700/50'
+                      }`}
+                      aria-pressed={isActive}
+                    >
+                      <span className="flex flex-wrap items-center gap-2">
+                        <span className="text-lg leading-none" aria-hidden="true">{d.flag}</span>
+                        <span className="text-sm font-semibold text-slate-800 dark:text-slate-100">{d.name}</span>
+                        <span className="text-sm text-slate-600 dark:text-slate-300" dir="rtl">{d.nativeName}</span>
+                        {isActive && <span aria-hidden="true" className="ml-auto text-indigo-600 dark:text-indigo-300 text-sm">✓</span>}
+                      </span>
+                      <span className="block text-xs text-slate-600 dark:text-slate-300 mt-1">{d.blurb}</span>
+                      <span className="block text-xs text-slate-600 dark:text-slate-300 mt-0.5">{d.region}</span>
+                    </button>
+                  );
+                })}
+              </div>
+            </div>
+            <SettingToggle
+              id="settings-colloquial-focus"
+              label="Colloquial focus"
+              description={<>Emphasize everyday spoken Arabic in your chosen dialect over formal fuṣḥā when both exist.
+                {arabicDialect === 'msa' && ' Pick a dialect above to get the most from this.'}</>}
+              checked={arabicColloquialFocus}
+              onChange={() => setArabicColloquialFocus(!arabicColloquialFocus)}
+            />
+          </div>
+        )}
       </section>
 
-      {/* Accessibility */}
       <section className={`${sectionCard} space-y-4`}>
-        <SectionHeading icon="♿" label="Accessibility" />
+        <SectionHeading icon="🎯" label="Study goals" />
+        <SettingRange
+          id="settings-daily-goal"
+          label="Daily study goal"
+          description="A small daily target builds the habit. Tiny is fine — even 5 minutes counts."
+          min={2}
+          max={60}
+          step={1}
+          value={dailyGoalMinutes}
+          valueText={`${dailyGoalMinutes} minutes per day`}
+          onChange={setDailyGoal}
+        />
+        <SettingRange
+          id="settings-weekly-goal"
+          label="Weekly study goal"
+          min={15}
+          max={420}
+          step={15}
+          value={weeklyGoalMinutes}
+          valueText={`${weeklyGoalMinutes} minutes per week`}
+          onChange={setWeeklyGoal}
+        />
+      </section>
 
-        {/* Font Size */}
-        <div>
-          <div className="flex items-center justify-between mb-1">
-            <p className="text-sm text-slate-700 dark:text-slate-200">Content font size</p>
-            <span
-              className="text-sm font-mono text-slate-600 dark:text-slate-300 bg-slate-100 dark:bg-slate-700/60 rounded-lg px-2 py-0.5"
-              style={{ fontSize: fontSize + 'px' }}
-            >
-              {fontSize}px
-            </span>
-          </div>
-          <input
-            type="range"
-            min={14}
-            max={24}
-            step={1}
-            value={fontSize}
-            onChange={(e) => setFontSize(Number(e.target.value))}
-            className="w-full accent-indigo-600 dark:accent-indigo-400"
-          />
-        </div>
+      <NotificationSettings />
 
-        {/* TTS Speed */}
+      <section className={`${sectionCard} space-y-4`}>
+        <SectionHeading icon="🃏" label="Reviews and scheduling" />
         <div>
-          <div className="flex items-center justify-between mb-1">
-            <p className="text-sm text-slate-700 dark:text-slate-200">TTS speed</p>
-            <span className="text-sm font-mono text-slate-600 dark:text-slate-300 bg-slate-100 dark:bg-slate-700/60 rounded-lg px-2 py-0.5">
-              {ttsRate.toFixed(1)}x
-            </span>
-          </div>
-          <input
-            type="range"
-            min={0.5}
-            max={2.0}
-            step={0.1}
-            value={ttsRate}
-            onChange={(e) => setTtsRate(Number(e.target.value))}
-            className="w-full accent-indigo-600 dark:accent-indigo-400"
-          />
-        </div>
-
-        {/* Review Batch Size */}
-        <div>
-          <p className="text-sm text-slate-700 dark:text-slate-200 mb-2">Review batch size</p>
-          <div className="flex gap-2">
+          <p id="settings-batch-label" className="text-sm font-medium text-slate-700 dark:text-slate-200 mb-2">
+            Cards per session
+          </p>
+          <div role="group" aria-labelledby="settings-batch-label" className="flex flex-wrap gap-2">
             {[10, 25, 50, 0].map((size) => (
               <button
                 key={size}
+                id={`settings-batch-${size}`}
+                name="reviewBatchSize"
+                type="button"
+                value={size}
+                aria-pressed={reviewBatchSize === size}
+                aria-label={size === 0 ? 'All available cards' : `${size} cards`}
                 onClick={() => setReviewBatchSize(size)}
                 className={`flex-1 py-1.5 min-h-[44px] rounded-xl text-sm font-semibold transition-all duration-200 press-feedback ${
                   reviewBatchSize === size
@@ -215,32 +194,36 @@ export default function SettingsPage() {
             ))}
           </div>
         </div>
-
-        {/* Adaptive review */}
-        <div className="flex items-center justify-between">
-          <div className="pr-3">
-            <p className="text-sm text-slate-700 dark:text-slate-200">Adaptive review focus</p>
-            <p className="text-xs text-slate-500 dark:text-slate-400">
-              Gently weight each session toward cards you find tricky. No penalties — just a little extra practice where it helps.
-            </p>
-          </div>
-          <Toggle checked={adaptiveReview} onChange={toggleAdaptiveReview} />
-        </div>
-
-        {/* Scheduler */}
-        <div>
-          <p className="text-sm text-slate-700 dark:text-slate-200 mb-1">Scheduling algorithm</p>
-          <p className="text-xs text-slate-500 dark:text-slate-400 mb-2">
-            SM-2 is the classic, predictable scheduler. FSRS adapts intervals to how well you
-            actually remember each card — often fewer reviews for the same recall.
+        <SettingToggle
+          id="settings-adaptive-review"
+          label="Focus on tricky cards"
+          description="Gently weight each session toward cards you find tricky. No penalties — just a little extra practice where it helps."
+          checked={adaptiveReview}
+          onChange={toggleAdaptiveReview}
+        />
+        <details className="border-t border-slate-200/70 dark:border-white/10 pt-2">
+          <summary className="min-h-[44px] cursor-pointer py-3 rounded-lg text-sm font-medium text-slate-700 dark:text-slate-200 hover:bg-slate-50 dark:hover:bg-slate-700/50">
+            Advanced scheduling
+          </summary>
+          <p id="settings-scheduler-label" className="text-sm font-medium text-slate-700 dark:text-slate-200 mt-2 mb-1">
+            How review dates are chosen
           </p>
-          <div className="flex gap-2">
+          <p className="text-xs text-slate-500 dark:text-slate-400 mb-2">
+            Classic (SM-2) uses a predictable interval schedule. Adaptive (FSRS) adjusts
+            intervals to your recall of each card. Switching is safe — your existing cards carry over.
+          </p>
+          <div role="group" aria-labelledby="settings-scheduler-label" className="flex flex-wrap gap-2">
             {([
-              { value: 'sm2', label: 'SM-2' },
-              { value: 'fsrs', label: 'FSRS' },
+              { value: 'sm2', label: 'Classic (SM-2)' },
+              { value: 'fsrs', label: 'Adaptive (FSRS)' },
             ] as const).map((opt) => (
               <button
                 key={opt.value}
+                id={`settings-scheduler-${opt.value}`}
+                name="scheduler"
+                type="button"
+                value={opt.value}
+                aria-pressed={scheduler === opt.value}
                 onClick={() => setScheduler(opt.value)}
                 className={`flex-1 py-1.5 min-h-[44px] rounded-xl text-sm font-semibold transition-all duration-200 press-feedback ${
                   scheduler === opt.value
@@ -254,116 +237,68 @@ export default function SettingsPage() {
           </div>
           {scheduler === 'fsrs' && (
             <div className="mt-3">
-              <div className="flex items-center justify-between mb-1">
-                <p className="text-sm text-slate-700 dark:text-slate-200">Target retention</p>
-                <span className="text-sm font-semibold text-indigo-600 dark:text-indigo-300 tabular-nums">
-                  {Math.round(fsrsRequestRetention * 100)}%
-                </span>
-              </div>
-              <input
-                type="range"
+              <SettingRange
+                id="settings-retention"
+                label="Target recall"
+                description="The recall level FSRS aims for (target retention). Higher means more frequent reviews; lower means fewer."
                 min={0.8}
                 max={0.97}
                 step={0.01}
                 value={fsrsRequestRetention}
-                onChange={(e) => setFsrsRequestRetention(parseFloat(e.target.value))}
-                className="w-full accent-indigo-600"
+                valueText={`${Math.round(fsrsRequestRetention * 100)}% target recall`}
+                onChange={setFsrsRequestRetention}
               />
-              <p className="text-xs text-slate-500 dark:text-slate-400 mt-1">
-                Higher means more frequent reviews and stronger recall; lower means fewer reviews.
-                Switching schedulers is safe — your existing cards carry over.
-              </p>
             </div>
           )}
-        </div>
+        </details>
       </section>
 
-      {/* Decks */}
       <section className={`${sectionCard} space-y-4`}>
-        <SectionHeading icon="🌐" label="Decks" />
-        <DeckExport />
-        <hr className="border-slate-200 dark:border-slate-700" />
-        <DeckImport />
+        <SectionHeading icon="♿" label="Display, audio and accessibility" />
+        <SettingToggle
+          id="settings-dark-mode"
+          label="Dark mode"
+          description={darkMode ? 'Dark appearance is on.' : 'Light appearance is on.'}
+          checked={darkMode}
+          onChange={toggleDarkMode}
+        />
+        <SettingRange
+          id="settings-font-size"
+          label="Content font size"
+          min={14}
+          max={24}
+          step={1}
+          value={fontSize}
+          valueText={`${fontSize} pixels`}
+          onChange={setFontSize}
+        />
+        <SettingRange
+          id="settings-speech-speed"
+          label="Speech speed"
+          min={0.5}
+          max={2.0}
+          step={0.1}
+          value={ttsRate}
+          valueText={`${ttsRate.toFixed(1)} times normal speed`}
+          onChange={setTtsRate}
+        />
+        <TTSDiagPanel />
       </section>
 
-      {/* Russian Features */}
-      {activeLanguages.includes('ru') && (
-        <section className={sectionCard}>
-          <SectionHeading icon="🌐" label="Russian Features" />
-          <div className="flex items-center justify-between">
-            <div>
-              <p className="text-sm text-slate-700 dark:text-slate-200">Show stress marks (ударе&#x0301;ние)</p>
-              <p className="text-xs text-slate-500 dark:text-slate-400">Display accent marks on stressed vowels in the Reader</p>
-            </div>
-            <Toggle checked={showStressMarks} onChange={toggleStressMarks} />
-          </div>
-        </section>
-      )}
-
-      {/* Arabic Features */}
-      {activeLanguages.includes('ar') && (
+      <section aria-labelledby="settings-data-heading" className="space-y-4">
+        <h3 id="settings-data-heading" className="text-sm font-semibold text-slate-800 dark:text-slate-100">
+          Data and privacy
+        </h3>
+        <DataSafetySection persistence={persistence} />
         <section className={`${sectionCard} space-y-4`}>
-          <SectionHeading icon="🌐" label="Arabic Features" />
-
-          <div>
-            <p className="text-sm font-medium text-slate-700 dark:text-slate-200 mb-1">Dialect</p>
-            <p className="text-xs text-slate-500 dark:text-slate-400 mb-3">
-              Everyone learns Modern Standard Arabic (fuṣḥā) as the shared core. Pick a spoken
-              dialect to also see its everyday words, pronunciation notes and colloquial lessons.
-            </p>
-            <div className="space-y-2">
-              {DIALECT_CODES.map((code) => {
-                const d = DIALECTS[code];
-                const isActive = arabicDialect === code;
-                return (
-                  <button
-                    key={code}
-                    onClick={() => setArabicDialect(code)}
-                    className={`w-full text-left rounded-xl border px-3 py-2 transition-all duration-200 press-feedback ${
-                      isActive
-                        ? 'border-indigo-500 bg-indigo-50 dark:bg-indigo-900/40 dark:border-indigo-400'
-                        : 'border-slate-200 dark:border-slate-700 hover:bg-slate-50 dark:hover:bg-slate-700/50'
-                    }`}
-                    aria-pressed={isActive}
-                  >
-                    <div className="flex items-center gap-2">
-                      <span className="text-lg leading-none" aria-hidden="true">{d.flag}</span>
-                      <span className="text-sm font-semibold text-slate-800 dark:text-slate-100">{d.name}</span>
-                      <span className="text-sm text-slate-500 dark:text-slate-400" dir="rtl">{d.nativeName}</span>
-                      {isActive && <span className="ml-auto text-indigo-600 dark:text-indigo-300 text-sm">✓</span>}
-                    </div>
-                    <p className="text-xs text-slate-500 dark:text-slate-400 mt-1">{d.blurb}</p>
-                    <p className="text-xs text-slate-500 dark:text-slate-400 mt-0.5">{d.region}</p>
-                  </button>
-                );
-              })}
-            </div>
-          </div>
-
-          <div className="flex items-center justify-between border-t border-slate-200 dark:border-slate-700 pt-3">
-            <div className="pr-3">
-              <p className="text-sm text-slate-700 dark:text-slate-200">Colloquial focus</p>
-              <p className="text-xs text-slate-500 dark:text-slate-400">
-                Emphasize everyday spoken Arabic in your chosen dialect over formal fuṣḥā when both exist.
-                {arabicDialect === 'msa' && ' Pick a dialect above to get the most from this.'}
-              </p>
-            </div>
-            <Toggle
-              checked={arabicColloquialFocus}
-              onChange={() => setArabicColloquialFocus(!arabicColloquialFocus)}
-            />
-          </div>
+          <SectionHeading icon="🌐" label="Share vocabulary decks" />
+          <DeckExport />
+          <hr className="border-slate-200 dark:border-slate-700" />
+          <DeckImport />
         </section>
-      )}
+      </section>
 
-      {/* Immersion Ideas */}
       <ImmersionSection />
-
-      {/* Backup */}
-      <DataSafetySection persistence={persistence} />
-
-      {/* TTS Diagnostics */}
-      <TTSDiagPanel />
     </div>
   );
 }
@@ -391,37 +326,41 @@ function TTSDiagPanel() {
   };
 
   return (
-    <section className="card p-4 space-y-3">
-      <SectionHeading icon="🔊" label="TTS Diagnostics" />
-      <p className="text-xs text-slate-500 dark:text-slate-400">
-        Runs 4 TTS tests with different configurations for {getLanguageLabel(lang)}.
-      </p>
-      <button
-        onClick={runTest}
-        disabled={testing}
-        className="w-full min-h-[44px] fill-primary text-white py-2 rounded-xl font-semibold hover:opacity-90 transition-opacity press-feedback disabled:opacity-50"
-      >
-        {testing ? '⏳ Running tests…' : '▶ Run TTS Tests'}
-      </button>
-      {result && (
-        <div className="bg-slate-100 dark:bg-slate-700 rounded-xl p-3 text-xs font-mono space-y-2 text-slate-700 dark:text-slate-300 break-all">
-          <p>mode: {result.displayMode}</p>
-          <p>voices: {result.voiceCount} total, {result.voicesForLang.length} for {lang}</p>
-          {result.voicesForLang.length > 0 && (
-            <p className="text-xs">{result.voicesForLang.join(', ')}</p>
-          )}
-          <hr className="border-slate-300 dark:border-slate-600" />
-          {result.tests.map((t, i) => (
-            <div key={i} className="rounded-lg border border-slate-300/70 dark:border-slate-600 p-2">
-              <p className={t.result === 'started' ? 'text-green-600 dark:text-green-400 font-bold' : 'text-red-600 dark:text-red-400 font-bold'}>
-                Test {i + 1}: {t.result}
-              </p>
-              <p className="text-xs opacity-75">{t.label}</p>
-              {t.error && <p className="text-xs">↳ {t.error}</p>}
-            </div>
-          ))}
-        </div>
-      )}
-    </section>
+    <details className="border-t border-slate-200/70 dark:border-white/10 pt-2">
+      <summary className="min-h-[44px] cursor-pointer py-3 rounded-lg text-sm font-medium text-slate-700 dark:text-slate-200 hover:bg-slate-50 dark:hover:bg-slate-700/50">
+        Speech troubleshooting
+      </summary>
+      <div className="space-y-3 mt-2">
+        <p className="text-xs text-slate-500 dark:text-slate-400">
+          Runs 4 text-to-speech (TTS) tests with different configurations for {getLanguageLabel(lang)}.
+        </p>
+        <button
+          onClick={runTest}
+          disabled={testing}
+          className="w-full min-h-[44px] fill-primary text-white py-2 rounded-xl font-semibold hover:opacity-90 transition-opacity press-feedback disabled:opacity-50"
+        >
+          {testing ? '⏳ Testing speech…' : '▶ Test speech playback'}
+        </button>
+        {result && (
+          <div role="status" className="bg-slate-100 dark:bg-slate-700 rounded-xl p-3 text-xs font-mono space-y-2 text-slate-700 dark:text-slate-300 break-words">
+            <p>mode: {result.displayMode}</p>
+            <p>voices: {result.voiceCount} total, {result.voicesForLang.length} for {getLanguageLabel(lang)}</p>
+            {result.voicesForLang.length > 0 && (
+              <p className="text-xs">{result.voicesForLang.join(', ')}</p>
+            )}
+            <hr className="border-slate-300 dark:border-slate-600" />
+            {result.tests.map((t, i) => (
+              <div key={i} className="rounded-lg border border-slate-300/70 dark:border-slate-600 p-2">
+                <p className={t.result === 'started' ? 'text-green-800 dark:text-green-300 font-bold' : 'text-amber-800 dark:text-amber-300 font-bold'}>
+                  Test {i + 1}: {t.result}
+                </p>
+                <p className="text-xs">{t.label}</p>
+                {t.error && <p className="text-xs">↳ {t.error}</p>}
+              </div>
+            ))}
+          </div>
+        )}
+      </div>
+    </details>
   );
 }
