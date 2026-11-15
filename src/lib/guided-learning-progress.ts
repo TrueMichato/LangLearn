@@ -1,4 +1,5 @@
 import { markLessonComplete } from '../db/lessons';
+import { NEXT_GUIDED_GROUP } from './routes';
 
 const GROUP_ORDER = [
   'Vowels',
@@ -34,6 +35,36 @@ export function getOrderedGuidedGroups(groups: Iterable<string>): string[] {
     if (!ordered.includes(group)) ordered.push(group);
   }
   return ordered;
+}
+
+export function getGuidedGroupStatus(
+  group: string,
+  groups: readonly string[],
+  completed: ReadonlySet<string>,
+): 'completed' | 'unlocked' | 'locked' {
+  if (!groups.includes(group)) return 'locked';
+  if (completed.has(group)) return 'completed';
+  const index = groups.indexOf(group);
+  return index === 0 || completed.has(groups[index - 1]) ? 'unlocked' : 'locked';
+}
+
+/** Query values are persisted group names, never positions in the catalog. */
+export function resolveGuidedGroupEntry(
+  requested: string | undefined,
+  groups: readonly string[],
+  completed: ReadonlySet<string>,
+): { group: string; error: string } {
+  if (requested === undefined) return { group: '', error: '' };
+  const group = requested === NEXT_GUIDED_GROUP
+    ? groups.find((item) => getGuidedGroupStatus(item, groups, completed) === 'unlocked') ?? groups[0]
+    : requested;
+  if (!group || !groups.includes(group)) {
+    return { group: '', error: 'That column could not be found. Choose an available column below.' };
+  }
+  if (getGuidedGroupStatus(group, groups, completed) === 'locked') {
+    return { group: '', error: 'That column is still locked. Complete the earlier columns first.' };
+  }
+  return { group, error: '' };
 }
 
 export function loadCompletedGuidedGroups(

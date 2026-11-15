@@ -1,4 +1,4 @@
-import { useState, useCallback, useMemo, useEffect } from 'react';
+import { useState, useCallback, useMemo, useEffect, useRef } from 'react';
 import type { Character } from '../../data/alphabets';
 import { updateCharacterProgress } from '../../db/characters';
 import { speak } from '../../lib/tts';
@@ -7,7 +7,9 @@ import { useXPStore } from '../../stores/xpStore';
 import { useTimerStore } from '../../stores/timerStore';
 import {
   getOrderedGuidedGroups,
+  getGuidedGroupStatus,
   loadCompletedGuidedGroups,
+  resolveGuidedGroupEntry,
   saveCompletedGuidedGroups,
 } from '../../lib/guided-learning-progress';
 
@@ -16,6 +18,8 @@ interface Props {
   alphabetName: string;
   language: string;
   onProgress: () => void;
+  requestedGroup?: string;
+  onShowColumns?: () => void;
 }
 
 type Phase = 'overview' | 'learning' | 'quiz' | 'result';
@@ -32,15 +36,22 @@ function shuffle<T>(arr: T[]): T[] {
   return a;
 }
 
-export default function GuidedLearning({ characters, alphabetName, language, onProgress }: Props) {
+export default function GuidedLearning({
+  characters, alphabetName, language, onProgress, requestedGroup, onShowColumns,
+}: Props) {
   const [completed, setCompleted] = useState(() =>
     loadCompletedGuidedGroups(alphabetName, language),
   );
-  const [phase, setPhase] = useState<Phase>('overview');
-  const [hasStartedTimer, setHasStartedTimer] = useState(false);
+  const orderedGroups = useMemo(
+    () => getOrderedGuidedGroups(characters.map((c) => c.group)),
+    [characters],
+  );
+  const [entry] = useState(() => resolveGuidedGroupEntry(requestedGroup, orderedGroups, completed));
+  const [phase, setPhase] = useState<Phase>(entry.group ? 'learning' : 'overview');
+  const hasStartedTimer = useRef(false);
   const timerStart = useTimerStore((s) => s.start);
   const timerIsRunning = useTimerStore((s) => s.isRunning);
-  const [activeGroup, setActiveGroup] = useState('');
+  const [activeGroup, setActiveGroup] = useState(entry.group);
 
   // Learning state
   const [cardIndex, setCardIndex] = useState(0);
@@ -59,18 +70,6 @@ export default function GuidedLearning({ characters, alphabetName, language, onP
   const [xpEarned, setXpEarned] = useState(0);
   const [missedChars, setMissedChars] = useState<Character[]>([]);
 
-  // Reset when alphabet/language changes
-  useEffect(() => {
-    const cols = loadCompletedGuidedGroups(alphabetName, language);
-    setCompleted(cols);
-    setPhase('overview');
-  }, [alphabetName, language]);
-
-  // Build ordered groups from characters
-  const orderedGroups = useMemo(() => {
-    return getOrderedGuidedGroups(characters.map((c) => c.group));
-  }, [characters]);
-
   const groupCharacters = useCallback(
     (group: string) => characters.filter((c) => c.group === group),
     [characters],
@@ -78,13 +77,7 @@ export default function GuidedLearning({ characters, alphabetName, language, onP
 
   // Determine unlock status: a column is unlocked if all previous columns are completed
   const getStatus = useCallback(
-    (group: string): 'completed' | 'unlocked' | 'locked' => {
-      if (completed.has(group)) return 'completed';
-      const idx = orderedGroups.indexOf(group);
-      if (idx === 0) return 'unlocked';
-      const prev = orderedGroups[idx - 1];
-      return completed.has(prev) ? 'unlocked' : 'locked';
-    },
+    (group: string) => getGuidedGroupStatus(group, orderedGroups, completed),
     [completed, orderedGroups],
   );
 
@@ -100,11 +93,18 @@ export default function GuidedLearning({ characters, alphabetName, language, onP
      study. Without it the learner finishes their first session and the
      dashboard still reports zero minutes. */
   const startTimer = useCallback(() => {
-    if (!hasStartedTimer && !timerIsRunning) {
+    if (!hasStartedTimer.current && !timerIsRunning) {
       timerStart('letters');
-      setHasStartedTimer(true);
+      hasStartedTimer.current = true;
     }
-  }, [hasStartedTimer, timerIsRunning, timerStart]);
+  }, [timerIsRunning, timerStart]);
+
+  useEffect(() => {
+    if (entry.group) {
+      startTimer();
+      hasStartedTimer.current = true;
+    }
+  }, [entry.group, startTimer]);
 
   const startLearning = useCallback(
     (group: string) => {
@@ -121,22 +121,6 @@ export default function GuidedLearning({ characters, alphabetName, language, onP
     () => groupCharacters(activeGroup),
     [activeGroup, groupCharacters],
   );
-
-  const handleNextCard = useCallback(() => {
-    const char = activeChars[cardIndex];
-    if (char) {
-      // Award XP for viewing the character
-      useXPStore.getState().addXP(XP_PER_CHARACTER_PRACTICE);
-      const charId = `${language}/${alphabetName}/${char.char}`;
-      updateCharacterProgress(charId, language, char.char, char.romanji, true);
-    }
-    if (cardIndex + 1 < activeChars.length) {
-      setCardIndex(cardIndex + 1);
-    } else {
-      // Transition to quiz
-      buildQuiz();
-    }
-  }, [cardIndex, activeChars, language, alphabetName]);
 
   const buildQuiz = useCallback(() => {
     // Quiz pool = current column + all previously completed columns
@@ -171,6 +155,21 @@ export default function GuidedLearning({ characters, alphabetName, language, onP
     setSelectedOption(null);
     setPhase('quiz');
   }, [activeChars, allCompletedChars, characters]);
+
+  const handleNextCard = useCallback(() => {
+    const char = activeChars[cardIndex];
+    if (char) {
+      // Award XP for viewing the character
+      useXPStore.getState().addXP(XP_PER_CHARACTER_PRACTICE);
+      const charId = `${language}/${alphabetName}/${char.char}`;
+      updateCharacterProgress(charId, language, char.char, char.romanji, true);
+    }
+    if (cardIndex + 1 < activeChars.length) {
+      setCardIndex(cardIndex + 1);
+    } else {
+      buildQuiz();
+    }
+  }, [cardIndex, activeChars, language, alphabetName, buildQuiz]);
 
   const handleQuizAnswer = useCallback(
     (optionIndex: number) => {
@@ -250,13 +249,19 @@ export default function GuidedLearning({ characters, alphabetName, language, onP
   const handleBackToOverview = useCallback(() => {
     setPhase('overview');
     setActiveGroup('');
-  }, []);
+    onShowColumns?.();
+  }, [onShowColumns]);
 
   // --- Render ---
 
   if (phase === 'overview') {
     return (
       <div className="space-y-2">
+        {entry.error && (
+          <p role="alert" className="mb-4 text-sm text-amber-800 dark:text-amber-200">
+            {entry.error}
+          </p>
+        )}
         <h3 className="text-base font-semibold text-slate-800 dark:text-slate-100 mb-3">
           Learn {alphabetName} — Column by Column
         </h3>
@@ -314,7 +319,7 @@ export default function GuidedLearning({ characters, alphabetName, language, onP
       <div className="space-y-4">
         <button
           onClick={handleBackToOverview}
-          className="text-indigo-600 dark:text-indigo-400 text-sm font-medium hover:underline press-feedback"
+          className="inline-flex min-h-[44px] items-center text-indigo-600 dark:text-indigo-400 text-sm font-medium hover:underline press-feedback"
         >
           ← Back to columns
         </button>
@@ -401,7 +406,7 @@ export default function GuidedLearning({ characters, alphabetName, language, onP
       <div className="space-y-4">
         <button
           onClick={handleBackToOverview}
-          className="text-indigo-600 dark:text-indigo-400 text-sm font-medium hover:underline press-feedback"
+          className="inline-flex min-h-[44px] items-center text-indigo-600 dark:text-indigo-400 text-sm font-medium hover:underline press-feedback"
         >
           ← Back to columns
         </button>

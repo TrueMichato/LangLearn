@@ -45,6 +45,7 @@ The app owes a beginner a **sequence, not an inventory**: every first-run surfac
 
 - Onboarding **hands off into content** — its last step is "pick your starting point" and its button navigates into a lesson. It never ends on the Dashboard.
 - The recommendation is derived, not guessed: languages with an unfamiliar script (`ja`, `ru`, `ar`) start at **Letters**; Latin-script languages start at **First words**. The logic lives in `src/lib/starting-points.ts` and is the single source used by onboarding, the zero-data Dashboard, and the Learn hub — so the app never gives three different answers.
+- Entry opens an existing teaching card or the full authored vocabulary lesson, not another catalog. Lessons keep their complete workload and saved place; no unmeasured duration is promised. Saving words for review remains an explicit choice.
 - **Zero words is the design centre, not an edge case.** Instrumentation (stats, forecasts, heat maps, badges) stays hidden until there is something to instrument.
 - Adding a word manually is an *expert* action. Never make a beginner type 食べる before they have been taught it.
 

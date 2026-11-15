@@ -3,6 +3,7 @@ import { speak, isTTSSupported } from '../../lib/tts';
 import { contextRevealsAnswer } from '../../lib/card-types';
 import { useSettingsStore } from '../../stores/settingsStore';
 import { rtlProps } from '../../lib/rtl';
+import { getLanguageLabel } from '../../lib/languages';
 
 function HighlightedContext({ sentence, word }: { sentence: string; word: string }) {
   const idx = sentence.toLowerCase().indexOf(word.toLowerCase());
@@ -46,7 +47,7 @@ export default function Flashcard({ word, isFlipped, onFlip }: FlashcardProps) {
       }`}
     >
       <span className="text-xs text-slate-500 dark:text-slate-400 mb-2">
-        {word.language}
+        {getLanguageLabel(word.language)}
         {contextOnFront && (
           <span className="ml-1" title="Has context sentence">📝</span>
         )}
@@ -66,7 +67,7 @@ export default function Flashcard({ word, isFlipped, onFlip }: FlashcardProps) {
             e.stopPropagation();
             speak(word.word, word.language);
           }}
-          className="text-xl mb-3 hover:scale-110 transition-transform"
+          className="min-h-[44px] min-w-[44px] rounded-xl text-xl mb-3 hover:scale-110 transition-transform"
           aria-label="Listen"
         >
           🔊
@@ -89,7 +90,7 @@ export default function Flashcard({ word, isFlipped, onFlip }: FlashcardProps) {
           )}
         </div>
       ) : (
-        <p className="text-sm text-indigo-400 dark:text-indigo-300 mt-4">Tap to reveal</p>
+        <p className="text-sm text-indigo-600 dark:text-indigo-300 mt-4">Tap to reveal</p>
       )}
     </div>
   );

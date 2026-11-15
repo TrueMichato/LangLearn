@@ -1,9 +1,12 @@
-import { useState, useRef } from 'react';
+import { useState, useRef, useId } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useSettingsStore } from '../../stores/settingsStore';
 import { LANGUAGES, getLanguageLabel } from '../../lib/languages';
 import StartingPoints from './StartingPoints';
 import type { StartingPoint } from '../../lib/starting-points';
+import { useModalFocus } from '../../hooks/useModalFocus';
+import { useCurrentLanguage } from '../../hooks/useCurrentLanguage';
+import LanguagePicker from '../common/LanguagePicker';
 
 const KNOWN_LANGUAGES = Object.values(LANGUAGES).map(l => ({ code: l.code, label: `${l.name} ${l.flag}` }));
 
@@ -48,15 +51,25 @@ export default function OnboardingOverlay() {
   const [step, setStep] = useState(0);
   const [customLang, setCustomLang] = useState('');
   const customInputRef = useRef<HTMLInputElement>(null);
+  const dialogRef = useRef<HTMLDivElement>(null);
+  const headingRef = useRef<HTMLHeadingElement>(null);
+  const id = useId();
+  useModalFocus({
+    isOpen: true,
+    dialogRef,
+    initialFocusRef: headingRef,
+    layer: 100,
+    focusKey: step,
+  });
   const navigate = useNavigate();
 
   const activeLanguages = useSettingsStore((s) => s.activeLanguages);
   const addLanguage = useSettingsStore((s) => s.addLanguage);
   const removeLanguage = useSettingsStore((s) => s.removeLanguage);
   const completeOnboarding = useSettingsStore((s) => s.completeOnboarding);
+  const { language, setLanguage } = useCurrentLanguage();
 
   const hasLanguage = activeLanguages.length > 0;
-  const firstLanguage = activeLanguages[0];
 
   const toggleLanguage = (code: string) => {
     if (activeLanguages.includes(code)) {
@@ -86,11 +99,17 @@ export default function OnboardingOverlay() {
   };
 
   const heading = 'text-3xl font-bold text-indigo-600 dark:text-indigo-400';
+  const headingProps = (index: number) => ({
+    id: `${id}-step-${index}`,
+    ref: step === index ? headingRef : undefined,
+    tabIndex: -1,
+  });
 
   const steps = [
     // Step 1: Welcome
     <div key="welcome" className="flex flex-col items-center gap-6 text-center">
-      <h1 className="text-4xl font-bold text-indigo-600 dark:text-indigo-400">
+      <h1 {...headingProps(0)} className="text-4xl font-bold text-indigo-600 dark:text-indigo-400">
+        <span className="sr-only">Step 1 of {TOTAL_STEPS}. </span>
         Welcome to LangLearn 🎓
       </h1>
       <p className="text-lg text-slate-600 dark:text-slate-300 max-w-md">
@@ -108,7 +127,7 @@ export default function OnboardingOverlay() {
           {KNOWN_LANGUAGES.map((lang) => (
             <label
               key={lang.code}
-              className="flex items-center gap-3 rounded-lg border border-slate-200 dark:border-slate-700 px-4 py-3 cursor-pointer hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors"
+              className="flex min-h-[44px] items-center gap-3 rounded-lg border border-slate-200 dark:border-slate-700 px-4 py-3 cursor-pointer hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors"
             >
               <input
                 type="checkbox"
@@ -128,7 +147,7 @@ export default function OnboardingOverlay() {
             .map((code) => (
               <label
                 key={code}
-                className="flex items-center gap-3 rounded-lg border border-slate-200 dark:border-slate-700 px-4 py-3 cursor-pointer hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors"
+                className="flex min-h-[44px] items-center gap-3 rounded-lg border border-slate-200 dark:border-slate-700 px-4 py-3 cursor-pointer hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors"
               >
                 <input
                   type="checkbox"
@@ -155,7 +174,7 @@ export default function OnboardingOverlay() {
               onChange={(e) => setCustomLang(e.target.value)}
               onKeyDown={(e) => e.key === 'Enter' && addCustomLanguage()}
               placeholder="Add another language…"
-              className="flex-1 min-h-[44px] rounded-lg border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 px-4 py-2 text-slate-800 dark:text-slate-100 placeholder-slate-500 dark:placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-indigo-500"
+              className="flex-1 min-w-0 min-h-[44px] rounded-lg border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 px-4 py-2 text-slate-800 dark:text-slate-100 placeholder-slate-500 dark:placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-indigo-500"
             />
             <button
               type="button"
@@ -172,11 +191,15 @@ export default function OnboardingOverlay() {
     // Step 2: What a session actually looks like
     <div key="lessons" className="flex flex-col items-center gap-6 text-center">
       <div className="text-7xl">📚</div>
-      <h1 className={heading}>Short lessons, one at a time</h1>
+      <h1 {...headingProps(1)} className={heading}>
+        <span className="sr-only">Step 2 of {TOTAL_STEPS}. </span>
+        Learn at your own pace
+      </h1>
       <div className="max-w-md space-y-3 text-slate-600 dark:text-slate-300">
         <p>
-          A lesson takes about two minutes: a handful of words, a few real
-          examples, and a quick check that it stuck.
+          Vocabulary lessons include words, examples, and several kinds of
+          practice. You'll see the full workload, and your place is saved if
+          you leave partway through.
         </p>
         <p>
           Lessons unlock in order, so you never have to decide what to study
@@ -189,11 +212,15 @@ export default function OnboardingOverlay() {
     // Step 3: Reviews, in plain language
     <div key="reviews" className="flex flex-col items-center gap-6 text-center">
       <div className="text-7xl">🃏</div>
-      <h1 className={heading}>Reviews come back at the right time</h1>
+      <h1 {...headingProps(2)} className={heading}>
+        <span className="sr-only">Step 3 of {TOTAL_STEPS}. </span>
+        Reviews come back at the right time
+      </h1>
       <div className="max-w-md space-y-3 text-slate-600 dark:text-slate-300">
         <p>
-          Everything you learn turns into a review card. The app brings each one
-          back just before you'd forget it — you only have to show up.
+          Words you choose to save become review cards. Finishing a vocabulary
+          lesson doesn't automatically save its words. The app schedules your
+          saved cards for practice over time.
         </p>
         <p className="font-medium text-indigo-600 dark:text-indigo-400">
           Got one wrong? You'll simply see it again sooner. No penalties, ever.
@@ -205,28 +232,44 @@ export default function OnboardingOverlay() {
     // Step 4: The hand-off
     <div key="start" className="flex w-full max-w-sm flex-col gap-6">
       <div className="text-center">
-        <h1 className={heading}>Where would you like to start?</h1>
-        {firstLanguage && (
+        <h1 {...headingProps(3)} className={heading}>
+          <span className="sr-only">Step 4 of {TOTAL_STEPS}. </span>
+          Where would you like to start?
+        </h1>
+        {language && (
           <p className="mt-2 text-slate-600 dark:text-slate-300">
-            in {getLanguageLabel(firstLanguage)}
+            in {getLanguageLabel(language)}
           </p>
         )}
       </div>
-      {firstLanguage && (
-        <StartingPoints language={firstLanguage} onSelect={startHere} />
+      <LanguagePicker
+        options={activeLanguages}
+        value={language}
+        onChange={setLanguage}
+        label="Starting language"
+      />
+      {language && (
+        <StartingPoints language={language} onSelect={startHere} />
       )}
     </div>,
   ];
 
   return (
-    <div className="fixed inset-0 z-[100] app-surface flex flex-col">
+    <div
+      ref={dialogRef}
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby={`${id}-step-${step}`}
+      tabIndex={-1}
+      className="fixed inset-0 z-[100] app-surface flex flex-col"
+    >
       {/* Skip — only once a language is chosen, so nobody lands language-less */}
       <div className="flex justify-end p-4">
         {hasLanguage && (
           <button
             type="button"
             onClick={completeOnboarding}
-            className="min-h-[44px] px-2 text-sm text-slate-500 dark:text-slate-400 hover:text-slate-600 dark:hover:text-slate-300 transition-colors"
+            className="min-h-[44px] min-w-[44px] px-3 text-sm text-slate-500 dark:text-slate-400 hover:text-slate-600 dark:hover:text-slate-300 transition-colors"
           >
             Skip
           </button>
@@ -242,11 +285,11 @@ export default function OnboardingOverlay() {
           {steps.map((content, i) => (
             <div
               key={i}
-              className="w-full flex-shrink-0 flex items-center justify-center px-6"
+              className="w-full flex-shrink-0 flex justify-center overflow-y-auto px-6 py-4"
               aria-hidden={i !== step}
               inert={i !== step}
             >
-              {content}
+              <div className="my-auto w-full flex justify-center">{content}</div>
             </div>
           ))}
         </div>

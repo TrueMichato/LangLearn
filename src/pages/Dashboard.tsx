@@ -1,10 +1,9 @@
 import { useState, useEffect, useCallback, useMemo } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { db } from '../db/schema';
 import type { StudySession, DailyActivity } from '../db/schema';
 import { getDueCount } from '../db/reviews';
 import { getTotalWordCount } from '../db/words';
-import { formatStudyTime } from '../lib/xp';
 import { calculateCurrentStreak, calculateLongestStreak, todayStr, reconcileFreezes } from '../lib/streaks';
 import { useSettingsStore } from '../stores/settingsStore';
 import { useCurrentLanguage } from '../hooks/useCurrentLanguage';
@@ -13,18 +12,19 @@ import HeatMap from '../components/dashboard/HeatMap';
 import LanguageStats from '../components/dashboard/LanguageStats';
 import StudyPlan from '../components/dashboard/StudyPlan';
 import AddWordModal from '../components/srs/AddWordModal';
-import BadgeCollection from '../components/badges/BadgeCollection';import DailyChallengeCard from '../components/dashboard/DailyChallengeCard';
+import BadgeCollection from '../components/badges/BadgeCollection';
+import DailyChallengeCard from '../components/dashboard/DailyChallengeCard';
 import MistakeDeckCard from '../components/dashboard/MistakeDeckCard';
 import ReviewForecast from '../components/dashboard/ReviewForecast';
 import WeeklyGoals from '../components/dashboard/WeeklyGoals';
 import WeeklyRecapModal from '../components/dashboard/WeeklyRecapModal';
-import SuggestedNext from '../components/dashboard/SuggestedNext';
+import HomeNextAction from '../components/dashboard/HomeNextAction';
+import DashboardProgress from '../components/dashboard/DashboardProgress';
 import Milestones from '../components/dashboard/Milestones';
 import VocabSizeCard from '../components/dashboard/VocabSizeCard';
 import { PageSkeleton } from '../components/common/Skeleton';
 import StudyTip from '../components/common/StudyTip';
-import StartingPoints from '../components/onboarding/StartingPoints';
-import { hasStarted, hasHistory } from '../lib/dashboard-gates';
+import { hasStarted, hasMatureDashboard, hasHistory } from '../lib/dashboard-gates';
 import { useBadgeStore } from '../stores/badgeStore';
 import { badgeTally } from '../lib/badge-visibility';
 
@@ -47,8 +47,35 @@ function getGreeting(): { text: string; emoji: string } {
   return { text: 'Good evening', emoji: '🌙' };
 }
 
+async function loadDashboardData(streakFreezes: number) {
+  const [totalWords, dueCards, sessions, dailyActivities, charactersTouched, lessonsTouched] = await Promise.all([
+    getTotalWordCount(),
+    getDueCount(),
+    db.studySessions.toArray(),
+    db.dailyActivity.toArray(),
+    db.characterProgress.count(),
+    db.lessonProgress.count(),
+  ]);
+  const weekAgo = new Date();
+  weekAgo.setDate(weekAgo.getDate() - 7);
+  const stats: Stats = {
+    totalWords, dueCards,
+    totalStudySeconds: sessions.reduce((sum, session) => sum + session.durationSeconds, 0),
+    weekStudySeconds: sessions.filter((session) => new Date(session.startTime) >= weekAgo)
+      .reduce((sum, session) => sum + session.durationSeconds, 0),
+    timeXP: sessions.reduce((sum, session) => sum + session.xpEarned, 0),
+    lessonsTouched: charactersTouched + lessonsTouched,
+  };
+  const spent = await reconcileFreezes(streakFreezes);
+  return {
+    stats, sessions, spent,
+    activities: spent > 0 ? await db.dailyActivity.toArray() : dailyActivities,
+  };
+}
+
 export default function Dashboard() {
   const [stats, setStats] = useState<Stats | null>(null);
+  const [loadError, setLoadError] = useState(false);
   const [allSessions, setAllSessions] = useState<StudySession[]>([]);
   const [activities, setActivities] = useState<DailyActivity[]>([]);
   const weeklyGoalMinutes = useSettingsStore((s) => s.weeklyGoalMinutes);
@@ -61,53 +88,16 @@ export default function Dashboard() {
   const bonusXP = useXPStore((s) => s.bonusXP);
   const unlockedBadges = useBadgeStore((s) => s.unlockedBadges);
   const [showAddModal, setShowAddModal] = useState(false);
-  const greeting = useMemo(getGreeting, []);
-  const navigate = useNavigate();
+  const greeting = useMemo(() => getGreeting(), []);
 
-  const loadData = useCallback(async () => {
-    const totalWords = await getTotalWordCount();
-    const dueCards = await getDueCount();
-
-    const sessions = await db.studySessions.toArray();
-    setAllSessions(sessions);
-    const totalStudySeconds = sessions.reduce(
-      (sum, s) => sum + s.durationSeconds,
-      0
-    );
-    const timeXP = sessions.reduce((sum, s) => sum + s.xpEarned, 0);
-
-    const weekAgo = new Date();
-    weekAgo.setDate(weekAgo.getDate() - 7);
-    const weekSessions = sessions.filter(
-      (s) => new Date(s.startTime) >= weekAgo
-    );
-    const weekStudySeconds = weekSessions.reduce(
-      (sum, s) => sum + s.durationSeconds,
-      0
-    );
-
-    const lessonsTouched =
-      (await db.characterProgress.count()) + (await db.lessonProgress.count());
-
-    setStats({
-      totalWords,
-      dueCards,
-      totalStudySeconds,
-      weekStudySeconds,
-      timeXP,
-      lessonsTouched,
-    });
-
-    const dailyActivities = await db.dailyActivity.toArray();
-
-    // Spend explicit streak freezes on any missed days that need bridging.
-    const spent = await reconcileFreezes(streakFreezes);
-    if (spent > 0) {
-      consumeStreakFreezes(spent);
-      setActivities(await db.dailyActivity.toArray());
-    } else {
-      setActivities(dailyActivities);
-    }
+  const loadData = useCallback(() => {
+    return loadDashboardData(streakFreezes).then((data) => {
+      setAllSessions(data.sessions);
+      setStats(data.stats);
+      setActivities(data.activities);
+      if (data.spent > 0) consumeStreakFreezes(data.spent);
+      setLoadError(false);
+    }).catch(() => { setLoadError(true); });
   }, [streakFreezes, consumeStreakFreezes]);
 
   // Load on mount
@@ -135,6 +125,13 @@ export default function Dashboard() {
     }
   }, [activities, streakFreezes, grantStreakFreeze]);
 
+  if (loadError) {
+    return <div role="alert" className="space-y-3 text-slate-700 dark:text-slate-200">
+      <h1 className="text-xl font-semibold">Home could not be loaded</h1>
+      <p>Your review count and progress could not be read. Please try again.</p>
+      <button onClick={() => { void loadData(); }} className="min-h-[44px] rounded-xl bg-indigo-600 px-5 py-2 font-semibold text-white hover:bg-indigo-700">Retry loading Home</button>
+    </div>;
+  }
   if (!stats) {
     return <PageSkeleton />;
   }
@@ -144,31 +141,28 @@ export default function Dashboard() {
   const currentStreak = calculateCurrentStreak(activities, streakFreezes);
   const longestStreak = calculateLongestStreak(activities);
 
-  const streakEmoji =
-    currentStreak >= 30 ? '🔥🔥🔥' : currentStreak >= 7 ? '🔥🔥' : '🔥';
-  const isMilestone = currentStreak >= 100 || currentStreak === 30 || currentStreak === 7;
-
-  // Three layers, two gates — see src/lib/dashboard-gates.ts for why.
+  const badges = badgeTally(activeLanguages, unlockedBadges);
   const activity = {
     totalWords: stats.totalWords,
     totalStudySeconds: stats.totalStudySeconds,
     lessonsTouched: stats.lessonsTouched,
     bonusXP,
+    earnedBadges: badges.unlocked,
+    activeDays: activities.filter((a) => a.studySeconds > 0 || a.cardsReviewed > 0 || a.wordsAdded > 0 || a.challengeComplete).length,
   };
   const started = hasStarted(activity);
+  const mature = hasMatureDashboard(activity);
   const history = hasHistory(activity);
-  const firstLanguage = currentLanguage ?? activeLanguages[0];
-  const badges = badgeTally(activeLanguages, unlockedBadges);
 
   return (
     <div className="page-enter">
-      <WeeklyRecapModal />
+      {history && <WeeklyRecapModal />}
       <div className="flex items-center justify-between mb-4">
         <div>
           <p className="text-lg font-semibold text-slate-700 dark:text-slate-200">
             {greeting.text} {greeting.emoji}
           </p>
-          <h2 className="text-sm text-slate-500 dark:text-slate-400">Dashboard</h2>
+          <p className="text-sm text-slate-500 dark:text-slate-400">Home</p>
         </div>
         <Link
           to="/settings"
@@ -179,153 +173,40 @@ export default function Dashboard() {
         </Link>
       </div>
 
-      <StudyPlan
-        dueCards={stats.dueCards}
-        todayStudySeconds={activities.find((a) => a.date === todayStr())?.studySeconds ?? 0}
-        dailyGoalSeconds={dailyGoalMinutes * 60}
-        weekStudySeconds={stats.weekStudySeconds}
-        weeklyGoalSeconds={weeklyGoalSeconds}
-        currentStreak={currentStreak}
-        streakFreezes={streakFreezes}
-        hasData={started}
-      />
+      <HomeNextAction key={currentLanguage ?? ''} dueCards={stats.dueCards} language={currentLanguage} />
 
-      {!started ? (
-        <div className="mb-6">
-          {firstLanguage ? (
-            <StartingPoints
-              language={firstLanguage}
-              onSelect={(point) => navigate(point.route)}
-              heading="Start here"
-              description="Pick one — it takes about two minutes."
-            />
-          ) : (
-            <div className="rounded-2xl border border-slate-200/70 dark:border-white/10 bg-white dark:bg-slate-800 p-4">
-              <p className="font-semibold text-slate-800 dark:text-slate-100">
-                Choose a language to begin
-              </p>
-              <p className="mt-1 text-sm text-slate-500 dark:text-slate-400">
-                Pick what you're learning and we'll suggest where to start.
-              </p>
-              <Link
-                to="/settings"
-                className="mt-3 inline-flex min-h-[44px] items-center rounded-xl bg-indigo-600 px-5 py-2 font-semibold text-white transition-colors hover:bg-indigo-700"
-              >
-                Choose a language
-              </Link>
-            </div>
-          )}
-          <button
-            onClick={() => setShowAddModal(true)}
-            className="mt-3 min-h-[44px] px-1 text-sm font-medium text-indigo-600 dark:text-indigo-400 hover:underline"
-          >
-            Already have a word list? Add one manually
-          </button>
-        </div>
-      ) : (
+      <DashboardProgress activity={activity} totalXP={stats.timeXP + bonusXP} />
+
+      {mature && (
         <>
-          <div className="grid grid-cols-2 gap-3 mb-6">
-            <StatCard label="Words Learned" value={stats.totalWords} icon="📚" />
-            <StatCard label="Cards Due" value={stats.dueCards} icon="🃏" />
-            <StatCard label="Total Study Time" value={formatStudyTime(stats.totalStudySeconds)} icon="⏱️" />
-            <StatCard label="Total XP" value={stats.timeXP + bonusXP} icon="⭐" />
-          </div>
-
-          <SuggestedNext />
-
+          <h2 className="mb-3 text-sm font-semibold text-slate-500 dark:text-slate-400">Optional practice</h2>
           <MistakeDeckCard />
-
           <DailyChallengeCard />
-
-          <h3 className="text-sm font-semibold text-slate-500 dark:text-slate-400 mb-3 mt-8">
-            Your progress
-          </h3>
-
-          {/* Earned, not measured — always reachable once you've begun. */}
-          <Link
-            to="/achievements"
-            className="block bg-white dark:bg-slate-800/90 border border-slate-200/70 dark:border-white/10 rounded-2xl shadow-sm p-4 mb-3 hover:shadow-md transition-shadow"
-          >
-            <div className="flex items-center justify-between">
-              <div className="flex items-center gap-3">
-                <span className="text-2xl">🏅</span>
-                <div>
-                  <p className="font-semibold text-slate-800 dark:text-slate-100">Achievements</p>
-                  <p className="text-sm text-slate-500 dark:text-slate-400">
-                    {badges.unlocked > 0
-                      ? `${badges.unlocked} of ${badges.total} badges earned`
-                      : 'Badges, milestones and your streak'}
-                  </p>
-                </div>
-              </div>
-              <span className="text-slate-500 dark:text-slate-400">→</span>
-            </div>
-          </Link>
-
-          <Link
-            to="/analytics"
-            className="block bg-white dark:bg-slate-800/90 border border-slate-200/70 dark:border-white/10 rounded-2xl shadow-sm p-4 mb-6 hover:shadow-md transition-shadow"
-          >
-            <div className="flex items-center justify-between">
-              <div className="flex items-center gap-3">
-                <span className="text-2xl">📈</span>
-                <div>
-                  <p className="font-semibold text-slate-800 dark:text-slate-100">Your stats</p>
-                  <p className="text-sm text-slate-500 dark:text-slate-400">Retention, forecasts and review history</p>
-                </div>
-              </div>
-              <span className="text-slate-500 dark:text-slate-400">→</span>
-            </div>
-          </Link>
-
-          <div className="bg-white dark:bg-slate-800/90 rounded-2xl shadow p-4 mb-6">
-            {currentStreak > 0 ? (
-              <>
-                <p className="text-2xl font-bold text-slate-800 dark:text-slate-100 text-center">
-                  <span
-                    className="inline-block animate-[wiggle_0.8s_ease-in-out_2]"
-                    style={isMilestone ? { filter: 'drop-shadow(0 0 8px #f59e0b) drop-shadow(0 0 16px #f97316)' } : undefined}
-                  >
-                    {streakEmoji}
-                  </span>{' '}
-                  {currentStreak}-day streak
-                </p>
-                <p className="text-sm text-slate-500 dark:text-slate-400 text-center mt-1">
-                  Best: {longestStreak} days
-                </p>
-              </>
-            ) : (
-              <p className="text-lg font-semibold text-slate-700 dark:text-slate-200 text-center">
-                Start your streak today! 💪
-              </p>
-            )}
-          </div>
-
-          {/* Trends only once there is a trend to draw. */}
-          {history && (
-            <>
-              <WeeklyGoals />
-
-              <ReviewForecast />
-
-              <Milestones />
-
-              {stats.totalWords > 0 && (
-                <LanguageStats languages={activeLanguages} />
-              )}
-
-              <VocabSizeCard />
-
-              <BadgeCollection />
-            </>
-          )}
         </>
       )}
 
-      <StudyTip context="dashboard" className="mb-6" />
+      {history && (
+        <>
+          <StudyPlan
+            todayStudySeconds={activities.find((a) => a.date === todayStr())?.studySeconds ?? 0}
+            dailyGoalSeconds={dailyGoalMinutes * 60}
+            weekStudySeconds={stats.weekStudySeconds}
+            weeklyGoalSeconds={weeklyGoalSeconds}
+            currentStreak={currentStreak}
+            longestStreak={longestStreak}
+            streakFreezes={streakFreezes}
+          />
+          <WeeklyGoals />
+          <ReviewForecast />
+          <Milestones />
+          {stats.totalWords > 0 && <LanguageStats languages={activeLanguages} />}
+          <VocabSizeCard />
+          <BadgeCollection />
+        </>
+      )}
 
       {history && (
-        <div className="bg-white dark:bg-slate-800/90 rounded-2xl shadow p-4 mt-4">
+        <div className="bg-white dark:bg-slate-800/90 border border-slate-200/70 dark:border-white/10 rounded-2xl shadow-sm p-4 mb-6">
           <h3 className="font-semibold text-slate-700 dark:text-slate-200 mb-3">
             Study Activity
           </h3>
@@ -333,25 +214,12 @@ export default function Dashboard() {
         </div>
       )}
 
+      {started && <StudyTip context="dashboard" className="mb-6" />}
+      <button onClick={() => setShowAddModal(true)}
+        className="mb-3 min-h-[44px] rounded-xl px-1 text-sm font-medium text-indigo-600 hover:underline dark:text-indigo-400">
+        Already have a word list? Add one manually
+      </button>
       <AddWordModal isOpen={showAddModal} onClose={() => { setShowAddModal(false); loadData(); }} />
-    </div>
-  );
-}
-
-function StatCard({
-  label,
-  value,
-  icon,
-}: {
-  label: string;
-  value: string | number;
-  icon: string;
-}) {
-  return (
-    <div className="bg-white dark:bg-slate-800/90 border border-slate-200/70 dark:border-white/10 rounded-2xl shadow-sm p-4 text-center">
-      <span className="text-2xl">{icon}</span>
-      <p className="text-2xl font-bold text-slate-800 dark:text-slate-100 mt-1">{value}</p>
-      <p className="text-xs text-slate-500 dark:text-slate-400">{label}</p>
     </div>
   );
 }

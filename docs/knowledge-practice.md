@@ -41,6 +41,21 @@ Latin accents remain significant. Names, phrases, unlisted inflections, and
 unsupported segmentation can reduce matching. No full multilingual
 lemmatization, synonym inference, or AI-generated exercise content is provided.
 
+Reader displays the original source separators, punctuation, and paragraph breaks.
+Lookup context uses positions in that unmodified source, even with furigana or
+optional Russian stress display. Keyboard users Tab into one lexical word, move
+with Left/Right (reversed for RTL reading order), and open details with Enter or
+Space. Closing details returns focus to that word; separators are never targets.
+
+Word details show supplied metadata or exact saved/bundled song-vocabulary
+meanings first. This is not a complete offline dictionary and does not infer
+inflections beyond a verified Japanese lemma. Online lookup is an explicit action.
+Editing and saving are separate deliberate steps; lookup never saves a word.
+Late responses cannot replace edits, and lookup/save failures retain the draft.
+Reader retains a separate draft per source word while that text is open, including
+across closing details or selecting another word; opening a new text clears them.
+The shared modal focus contract contains focus and restores the opener.
+
 ## Practice and assessment boundaries
 
 - Review home separates scheduled reviews from explicit optional practice.
@@ -113,6 +128,98 @@ and preserves the existing `round((30 + 5 × correct) × 1.5)` XP formula and re
 reward behavior. A deliberate Next question action replaces auto-advance so
 post-answer vocabulary editing does not disappear beneath the learner.
 
+## Vocabulary lesson continuity
+
+The content loader accepts canonical exercise arrays unchanged and wraps the
+known legacy singleton multiple-choice shape (`type`, `question`, `options`,
+`answer`) in a one-item `items` array. Question text, option order, answer and
+stage order are preserved; authored files are not rewritten. Frozen snapshots
+use that normalized payload, so reloading the same legacy asset does not signal
+a content change. Missing question data, invalid answers and malformed explicit
+`items` arrays remain honest load errors rather than silently skipped questions.
+
+Vocabulary lessons checkpoint meaningful changes in the existing local settings
+table under `vocab-attempt:v1:LANGUAGE:LESSON` (identity segments are URL-encoded).
+Each versioned record carries a unique attempt ID, optimistic revision, saved
+time, source-content compatibility marker, full lesson snapshot, frozen authored
+and generated exercise payloads (including matching/choice order), stage/item
+position, input, hints, selections and submitted results. Checkpoints begin only
+after reading the saved record. There is no vocabulary-attempt expiry or global
+count cap; the assessment-draft retention rules do not apply.
+
+Returning to a lesson resumes automatically with a saved-place indicator. Saved
+material is immediately usable while its source is checked, and remains usable
+offline without waiting for a refetch. Missing, changed or invalid source content
+offers an explicit saved-copy/retry/restart choice where recovery is possible.
+Malformed or unsupported checkpoints are retained, with a recovery download and
+explicit restart rather than a silent reset. Restart creates a new identity and
+archives the replaced record under `vocab-attempt-recovery:v1:ID`. Other languages
+and lessons are untouched. A stale tab cannot overwrite/restart a newer revision.
+Failed checkpoints leave the current session usable, visibly unsaved and
+retryable. Revealed answers wait for an explicit Next/Continue action; resuming
+does not recreate auto-advance timers.
+
+Finishing commits lesson progress and a pending `vocab-receipt:v1:ATTEMPT_ID`
+record together in Dexie, preserving the existing lesson-progress attempt count.
+A separate reward step persists the attempt's token and XP total together in
+`langlearn-xp` version 2; version 0/1 totals migrate unchanged. The receipt is
+finalized only after that succeeds. These stores are **not atomic together**:
+failure leaves a pending completion, and its retry consults durable credited
+tokens instead of awarding again. XP is not presented as earned until confirmed.
+A deliberate retake has a new attempt ID and retains the existing reward formula.
+Word saving remains explicit and duplicate-safe; checkpointing/completion does
+not add vocabulary/review rows or change knowledge-evidence rules.
+
+Full backups, replacement imports, snapshots and recovery capsules carry the
+settings records; new recovery capsules also carry the XP payload/token ledger,
+including the award-before-receipt-finalization window. Old backups/capsules
+without attempts or XP remain supported. Merge keeps live attempts on key
+conflicts and never imports a source XP total. Instead, source credited-token
+evidence settles matching imported pending receipts, preventing a merge from
+re-awarding XP that the source already credited.
+Browser-capsule recovery is distinct from an intentional full-backup replacement:
+after IndexedDB-only loss it preserves the higher valid XP total, combines live
+and capsule credited tokens, and settles recovered receipts against that durable
+evidence. Surviving XP is re-read at the storage-write boundary. Explicit full
+backup replacement retains its deliberate replacement semantics. Settings-held
+attempts count as progress consistently for capsule/snapshot creation, empty-data
+discovery and the live-data guard; ordinary preferences and archived replacements
+do not make an empty database look populated.
+
+Home integration uses
+`loadLatestVocabAttemptSummary(language)` from
+`src/lib/vocab-lesson-attempt.ts`. It returns
+`Promise<VocabAttemptSummary | null>` for the latest compatible unfinished
+attempt (including an unconfirmed completion), with `language`, stable
+`lessonId`, `attemptId`, `title`, readable `stage`, one-based `position`,
+`itemCount`, millisecond `updatedAt`, and the lesson `route`. It does not choose a
+curricular next step or change the current language; read failures propagate.
+Pass the catalog title through `VocabLessonView`'s optional `title` prop when
+starting a new attempt.
+Late catalog-title updates change only metadata on the same live session,
+including unsaved work; they never rehydrate its state or reroll its questions.
+
+## First instructional entry
+
+Onboarding and shared starting points resolve the first vocabulary lesson from
+the existing learning-path manifest, using `/vocab-lessons?lesson=ID` in the
+global current language. They do not create a shorter lesson or change its
+authored exercises. Catalogs and test-outs remain separate browsing choices.
+The onboarding handoff uses the current language, not the first active language;
+Skip and “I'll look around first” still dismiss without starting a lesson.
+Only words explicitly saved become vocabulary review cards.
+
+Guided script links use `/letters/LANGUAGE?mode=learn&alphabet=NAME&group=next`
+to open a teaching card directly. `group` also accepts an exact persisted column
+name, URL-encoded rather than an array position. `next` resolves the next unlocked
+incomplete column, or the first completed column when all are complete.
+Unknown/locked groups show an explanation and the existing column browser,
+without recording completion. Later script alphabets check the real learning
+path state, including retained access; a failed check offers retry rather than
+silently opening a locked alphabet. Omitting `group`, or choosing Back to
+columns, preserves independent browsing, charts and quizzes. Unsupported
+languages are named explicitly; another language is never silently substituted.
+
 ## Guided checkpoints and nonlexical evidence
 
 The six guided paths retain their existing continuation activity IDs. New
@@ -155,6 +262,7 @@ bookmark subsystem. Source, lesson, and dialect tags should be passed through
 when the activity has them.
 
 All evidence and frozen attempts remain local. Generated target content ships
-with the app; runtime lesson assets still need to have been loaded/cached for
-offline access. Browser speech/voice availability and online dictionaries are
+with the app; unstarted runtime lesson assets still need to have been loaded/cached
+for offline access. Saved vocabulary attempts include their lesson material.
+Browser speech/voice availability and online dictionaries are
 not guaranteed offline. Knowledge estimates are not proficiency assessments.

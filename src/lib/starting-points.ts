@@ -1,6 +1,9 @@
 import { LANGUAGES } from './languages';
 import { getAlphabetsForLanguage } from '../data/alphabets';
-import { ROUTES, guidedLettersRoute } from './routes';
+import { getLearningPathManifest } from '../data/learning-paths';
+import { unitLessons } from '../data/learning-paths/shared';
+import { isGuidedAlphabetComplete } from './guided-learning-progress';
+import { NEXT_GUIDED_GROUP, ROUTES, guidedLettersRoute, vocabLessonRoute } from './routes';
 
 export interface StartingPoint {
   id: 'letters' | 'words' | 'reading' | 'import';
@@ -38,13 +41,18 @@ function lettersSublabel(lang: string): string {
  * card, so both give an identical on-ramp.
  */
 export function getStartingPoints(lang: string): StartingPoint[] {
-  const isKnown = Boolean(LANGUAGES[lang]);
-  const hasLetters = getAlphabetsForLanguage(lang).length > 0;
+  const manifest = getLearningPathManifest(lang);
+  const alphabets = getAlphabetsForLanguage(lang);
+  const hasLetters = alphabets.length > 0;
+  const firstVocab = manifest && [
+    ...(manifest.letterUnitLessons ?? []),
+    ...manifest.units.flatMap(unitLessons),
+  ].find((node) => node.kind === 'vocab');
 
   // Custom languages added by hand ship no bundled content, so the honest
   // on-ramp is the Reader and the vocabulary list rather than lessons that
   // do not exist.
-  if (!isKnown) {
+  if (!firstVocab) {
     return [
       {
         id: 'import',
@@ -58,7 +66,7 @@ export function getStartingPoints(lang: string): StartingPoint[] {
         id: 'words',
         emoji: '✏️',
         label: 'Add words yourself',
-        sublabel: 'Build a list you can review from tomorrow',
+        sublabel: 'Choose which words to save for review',
         route: ROUTES.words,
         recommended: false,
       },
@@ -73,8 +81,8 @@ export function getStartingPoints(lang: string): StartingPoint[] {
       id: 'words',
       emoji: '✨',
       label: 'Learn your first words',
-      sublabel: 'A short themed lesson, about two minutes',
-      route: ROUTES.vocabLessons,
+      sublabel: 'A full lesson with words, examples, and practice. Your place is saved.',
+      route: vocabLessonRoute(firstVocab.lessonId),
       recommended: !startWithLetters,
     },
     {
@@ -88,12 +96,20 @@ export function getStartingPoints(lang: string): StartingPoint[] {
   ];
 
   if (hasLetters) {
+    const pathAlphabets = (manifest?.letterPrerequisites ?? [])
+      .map((name) => alphabets.find((alphabet) => alphabet.name === name))
+      .filter((alphabet) => alphabet !== undefined);
+    const alphabet = pathAlphabets.find((item) =>
+      !isGuidedAlphabetComplete(
+        item.name, lang, [...new Set(item.characters.map((character) => character.group))],
+      ),
+    ) ?? pathAlphabets[0] ?? alphabets[0];
     points.unshift({
       id: 'letters',
       emoji: '🔤',
       label: 'Learn the letters',
       sublabel: lettersSublabel(lang),
-      route: guidedLettersRoute(lang),
+      route: guidedLettersRoute(lang, alphabet.name, NEXT_GUIDED_GROUP),
       recommended: startWithLetters,
     });
   }

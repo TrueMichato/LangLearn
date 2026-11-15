@@ -70,8 +70,9 @@ describe('shared practice word capture', () => {
     expect(html).toContain('role="dialog"');
     expect(html).toContain('aria-modal="true"');
     expect(html).toContain('dir="rtl"');
-    expect(html).toContain('value="coffee"');
-    expect(html).toContain('Meaning / translation');
+    expect(html).toContain('coffee');
+    expect(html).toContain('Edit and save to vocabulary');
+    expect(html).toContain('aria-expanded="false"');
     expect(html).toContain('aria-label="Close word editor"');
     expect(html).toContain('z-[60]');
     expect(html).toContain('save offline');

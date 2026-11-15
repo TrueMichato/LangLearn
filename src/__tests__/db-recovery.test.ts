@@ -78,6 +78,16 @@ describe('snapshotProgressRows', () => {
     expect(snapshotProgressRows(payload({ settings: [1, 2], texts: [1] }))).toBe(0);
   });
 
+  it('counts saved vocabulary attempts without treating preferences or archived replacements as live progress', () => {
+    expect(snapshotProgressRows(payload({
+      settings: [
+        { key: 'vocab-attempt:v1:ja:intro', value: '{retained evidence}' },
+        { key: 'ordinary-preference', value: 'yes' },
+        { key: 'vocab-attempt-recovery:v1:old-id', value: '{archived evidence}' },
+      ],
+    }))).toBe(1);
+  });
+
   it('treats an unreadable payload as empty rather than throwing', () => {
     expect(snapshotProgressRows('not json')).toBe(0);
   });

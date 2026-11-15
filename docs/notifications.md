@@ -75,6 +75,15 @@ Settings → Notifications has three test buttons:
 - **⏱ Schedule test for 60 s** — uses TimestampTrigger; close the browser
   to verify tier 2 fires while-closed.
 
+### Settings controls
+
+Daily reminder time, quiet-hour times, notification limits and switches have
+persistent labels. Switches expose their checked state, and choice buttons expose
+their selected state. **Advanced notification categories** is a native,
+keyboard-operable disclosure: opening or closing it does not change any saved
+preferences. Category thresholds remain available when their category is enabled.
+Cloud-reminder privacy information stays next to its switch.
+
 ## Tier 2 — TimestampTrigger
 
 `src/lib/notifications.ts` exposes `scheduleTriggeredNotification`. Up to 7

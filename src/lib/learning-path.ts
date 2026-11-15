@@ -27,6 +27,7 @@ import {
   grammarLessonRoute,
   grammarTestOutRoute,
   guidedLettersRoute,
+  NEXT_GUIDED_GROUP,
   vocabLessonRoute,
   vocabTestOutRoute,
 } from './routes';
@@ -337,7 +338,7 @@ export function resolveLearningPath(
         milestoneId: `letters:${alphabetName}`,
         lessonId,
         title: alphabetName,
-        route: guidedLettersRoute(manifest.language, alphabetName),
+        route: guidedLettersRoute(manifest.language, alphabetName, NEXT_GUIDED_GROUP),
         state,
         unitId: 'letters',
         strandId: parallelLetterUnit ? 'letter-practice' : undefined,

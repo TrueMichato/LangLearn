@@ -260,12 +260,74 @@ export function mergeKey(table: BackupTableName, row: Row): string | null {
 
 // ─── Import ───
 
-function restoreLocalStorage(payload: BackupPayload): string[] {
+interface RecoveryXP {
+  state: Row & { bonusXP: number; creditedVocabAttempts: Record<string, number> };
+}
+
+function recoveryXP(raw: string | null | undefined): RecoveryXP | null {
+  if (!raw) return null;
+  try {
+    const parsed = JSON.parse(raw) as { version?: number; state?: Row };
+    const state = parsed.state;
+    if ((parsed.version !== undefined && (!Number.isInteger(parsed.version) || parsed.version < 0 || parsed.version > 2)) ||
+      !state || typeof state.bonusXP !== 'number' || !Number.isFinite(state.bonusXP) || state.bonusXP < 0) return null;
+    const tokens = state.creditedVocabAttempts ?? {};
+    if (!tokens || typeof tokens !== 'object' || Array.isArray(tokens) ||
+      !Object.values(tokens).every((xp) => typeof xp === 'number' && Number.isInteger(xp) && xp >= 0)) return null;
+    return { state: { ...state, bonusXP: state.bonusXP, creditedVocabAttempts: tokens as Record<string, number> } };
+  } catch { return null; }
+}
+
+function recoveryXPValue(source: string, liveRaw: string | null): string {
+  const live = recoveryXP(liveRaw);
+  const incoming = recoveryXP(source);
+  // An IDB-only recovery is not permission to replace surviving opaque XP.
+  if (liveRaw && !live) return liveRaw;
+  if (!live) return source;
+  if (!incoming) return liveRaw!;
+  return JSON.stringify({
+    version: 2,
+    state: {
+      ...incoming.state, ...live.state,
+      bonusXP: Math.max(live.state.bonusXP, incoming.state.bonusXP),
+      creditedVocabAttempts: { ...incoming.state.creditedVocabAttempts, ...live.state.creditedVocabAttempts },
+    },
+  });
+}
+
+function reconcileRecoveryReceipts(payload: BackupPayload): void {
+  let live: RecoveryXP | null = null;
+  try {
+    if (typeof localStorage !== 'undefined') live = recoveryXP(localStorage.getItem('langlearn-xp'));
+  } catch { /* An unavailable XP store must not erase the capsule's evidence. */ }
+  const tokens = {
+    ...recoveryXP(payload.localStorage['langlearn-xp'])?.state.creditedVocabAttempts,
+    ...live?.state.creditedVocabAttempts,
+  };
+  if (!payload.tables.settings) return;
+  payload.tables.settings = payload.tables.settings.map((row) => {
+    try {
+      const setting = row as { key: string; value: string };
+      if (typeof setting.key !== 'string' || !setting.key.startsWith('vocab-receipt:v1:')) return row;
+      const receipt = JSON.parse(setting.value) as Row;
+      if (receipt.version !== 1 || typeof receipt.attemptId !== 'string' ||
+        setting.key !== `vocab-receipt:v1:${receipt.attemptId}` || receipt.status !== 'pending' ||
+        typeof receipt.xp !== 'number' || tokens[receipt.attemptId] !== receipt.xp) return row;
+      return { ...setting, value: JSON.stringify({ ...receipt, status: 'credited' }) };
+    } catch { return row; }
+  });
+}
+
+function restoreLocalStorage(payload: BackupPayload, preserveLiveXP = false): string[] {
   if (typeof localStorage === 'undefined') return [];
   const restored: string[] = [];
   for (const [key, value] of Object.entries(payload.localStorage)) {
     try {
-      localStorage.setItem(key, value);
+      // Re-read at the actual write boundary: another tab may have earned XP
+      // while the IndexedDB replacement transaction was running.
+      const restoredValue = preserveLiveXP && key === 'langlearn-xp'
+        ? recoveryXPValue(value, localStorage.getItem(key)) : value;
+      localStorage.setItem(key, restoredValue);
       restored.push(key);
     } catch {
       /* quota or private mode — keep going, the IndexedDB restore still counts */
@@ -289,7 +351,9 @@ function stripId(row: Row): Row {
 async function importReplace(
   payload: BackupPayload,
   upsertOnlySettings = false,
+  preserveLiveXP = false,
 ): Promise<ImportResult> {
+  if (preserveLiveXP) reconcileRecoveryReceipts(payload);
   const { present, untouched } = tablesInPayload(payload);
   const written: Partial<Record<BackupTableName, number>> = {};
 
@@ -306,7 +370,7 @@ async function importReplace(
     mode: 'replace',
     written,
     skipped: {},
-    restoredStorageKeys: restoreLocalStorage(payload),
+    restoredStorageKeys: restoreLocalStorage(payload, preserveLiveXP),
     untouchedTables: untouched,
   };
 }
@@ -402,6 +466,32 @@ async function importMerge(payload: BackupPayload): Promise<ImportResult> {
       const rows = (payload.tables[name] ?? []) as Row[];
       const existing = (await db.table(name).toArray()) as Row[];
       if (name === 'settings') {
+        // Merge intentionally keeps the live XP total. Preserve the source's
+        // credited-reward evidence in its receipt instead of re-awarding a
+        // pending receipt whose XP write had already succeeded in the export.
+        let credited: Record<string, unknown> = {};
+        try {
+          credited = JSON.parse(payload.localStorage['langlearn-xp'] ?? '{}')
+            ?.state?.creditedVocabAttempts ?? {};
+        } catch { /* Older backups need not contain an XP payload. */ }
+        for (const row of rows) {
+          if (typeof row.key !== 'string' || !row.key.startsWith('vocab-receipt:v1:')) continue;
+          try {
+            const receipt = JSON.parse(String(row.value)) as Record<string, unknown>;
+            if (receipt.version !== 1 || typeof receipt.attemptId !== 'string' ||
+              typeof receipt.xp !== 'number' ||
+              row.key !== `vocab-receipt:v1:${receipt.attemptId}` ||
+              (receipt.status !== 'credited' && credited[receipt.attemptId] !== receipt.xp)) continue;
+            const current = existing.find((item) => item.key === row.key);
+            if (current) {
+              const previous = JSON.parse(String(current.value)) as Record<string, unknown>;
+              if (previous.attemptId !== receipt.attemptId || previous.language !== receipt.language ||
+                previous.lessonId !== receipt.lessonId || previous.xp !== receipt.xp) continue;
+              await db.settings.put({ key: row.key, value: JSON.stringify({ ...previous, status: 'credited' }) });
+            }
+            row.value = JSON.stringify({ ...receipt, status: 'credited' });
+          } catch { /* Preserve malformed records verbatim for explicit recovery. */ }
+        }
         for (const row of rows) {
           if (typeof row.key !== 'string' || !row.key.startsWith('guided-path-source-v1/')) continue;
           const current = existing.find((item) => item.key === row.key);
@@ -495,6 +585,7 @@ async function importMerge(payload: BackupPayload): Promise<ImportResult> {
 export async function importAllData(
   json: string,
   mode: ImportMode = 'replace',
+  options: { preserveLiveXP?: boolean } = {},
 ): Promise<ImportResult> {
   const payload = normalizePayload(JSON.parse(json));
   const settingsWereOmitted = payload.tables.settings === undefined;
@@ -516,7 +607,7 @@ export async function importAllData(
   if (present.length === 0 && Object.keys(payload.localStorage).length === 0) {
     throw new Error('Backup file contains no data');
   }
-  return mode === 'merge' ? importMerge(payload) : importReplace(payload, settingsWereOmitted);
+  return mode === 'merge' ? importMerge(payload) : importReplace(payload, settingsWereOmitted, options.preserveLiveXP);
 }
 
 export function downloadJson(json: string, filename: string): void {

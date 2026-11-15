@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest';
-import { hasStarted, hasHistory, type DashboardActivity } from '../lib/dashboard-gates';
+import { hasStarted, hasMatureDashboard, hasHistory, type DashboardActivity } from '../lib/dashboard-gates';
 
 const blank: DashboardActivity = {
   totalWords: 0,
@@ -38,9 +38,21 @@ describe('dashboard gates', () => {
     expect(hasHistory(oneShortSession)).toBe(false);
   });
 
-  it('opens the scoreboard once a full minute or a first word lands', () => {
-    expect(hasHistory({ ...blank, totalStudySeconds: 60 })).toBe(true);
-    expect(hasHistory({ ...blank, totalWords: 1 })).toBe(true);
+  it('does not open mature telemetry for a first saved word or one short session', () => {
+    for (const activity of [{ ...blank, totalStudySeconds: 60 }, { ...blank, totalWords: 1 }]) {
+      expect(hasStarted(activity)).toBe(true);
+      expect(hasMatureDashboard(activity)).toBe(false);
+      expect(hasHistory(activity)).toBe(false);
+    }
+  });
+
+  it('requires meaningful activity and multiple active days for trends', () => {
+    expect(hasMatureDashboard({ ...blank, totalWords: 10 })).toBe(true);
+    expect(hasHistory({ ...blank, totalWords: 10, activeDays: 1 })).toBe(false);
+    expect(hasHistory({ ...blank, totalWords: 10, activeDays: 2 })).toBe(true);
+    expect(hasMatureDashboard({ ...blank, totalStudySeconds: 300 })).toBe(true);
+    expect(hasHistory({ ...blank, totalStudySeconds: 300, activeDays: 2 })).toBe(true);
+    expect(hasMatureDashboard({ ...blank, totalWords: 9, totalStudySeconds: 299 })).toBe(false);
   });
 
   /* The bug this file exists to prevent, second edition. Badges unlock from XP
@@ -52,6 +64,8 @@ describe('dashboard gates', () => {
     const lettersAndDrills = { ...blank, lessonsTouched: 12, bonusXP: 420 };
     expect(hasStarted(lettersAndDrills)).toBe(true);
     expect(hasHistory(lettersAndDrills)).toBe(false);
+    expect(hasMatureDashboard(lettersAndDrills)).toBe(false);
+    expect(hasStarted({ ...blank, earnedBadges: 1 })).toBe(true);
   });
 
   it('never shows trends to someone who has not started', () => {
