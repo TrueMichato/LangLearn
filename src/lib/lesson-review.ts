@@ -2,7 +2,7 @@
 export type LessonReviewPriority = 'essential' | 'optional';
 export type LessonReviewFormat = 'qa' | 'cloze';
 export type LessonReviewProvenance = 'authored' | 'legacy' | 'formatting' | 'custom';
-export type LessonReviewBlock = 'grammar-card' | 'vocab-card';
+export type LessonReviewBlock = 'grammar-card' | 'vocab-card' | 'vocab-inventory';
 
 export interface LegacyGrammarAlias {
   rule: string;
@@ -46,7 +46,7 @@ export interface GrammarReviewItem extends LessonReviewItemBase {
 export type LessonReviewItem = VocabularyReviewItem | GrammarReviewItem;
 
 export interface LessonReviewDiagnostic {
-  code: 'invalid-json' | 'invalid-metadata' | 'duplicate-id' | 'unterminated-block';
+  code: 'invalid-json' | 'invalid-metadata' | 'duplicate-id' | 'duplicate-inventory' | 'unterminated-block';
   block: LessonReviewBlock;
   /** One-based source line, suitable for an author-facing error. */
   line: number;
@@ -88,13 +88,10 @@ export function authoredMetadataErrors(value: Record<string, unknown>): string[]
   return errors;
 }
 
-/** Read actual HTML comments, not metadata examples inside fenced code. */
-export function readLessonReviewBlocks(
-  markdown: string,
-  only?: LessonReviewBlock,
-): LessonReviewParseResult<LessonReviewMetadataBlock> {
+/** Preserve offsets and line numbers while hiding fenced authoring examples. */
+function maskFencedCode(markdown: string): string {
   let fence: { marker: string; length: number } | undefined;
-  const visible = markdown.split('\n').map((line) => {
+  return markdown.split('\n').map((line) => {
     const marker = /^\s{0,3}(`{3,}|~{3,})(.*)$/.exec(line);
     if (marker) {
       if (!fence) {
@@ -110,16 +107,34 @@ export function readLessonReviewBlocks(
     }
     return fence ? ' '.repeat(line.length) : line;
   }).join('\n');
+}
+
+/**
+ * Read actual HTML comments, not fenced examples. Inventory controls are emitted
+ * only when exactly one valid declaration exists; failures retain diagnostics.
+ */
+export function readLessonReviewBlocks(
+  markdown: string,
+  only?: LessonReviewBlock,
+): LessonReviewParseResult<LessonReviewMetadataBlock> {
+  const visible = maskFencedCode(markdown);
   const items: LessonReviewMetadataBlock[] = [];
   const diagnostics: LessonReviewDiagnostic[] = [];
   const comments = /<!--([\s\S]*?)(?:-->|$)/g;
+  let inventoryCount = 0;
   let match: RegExpExecArray | null;
   while ((match = comments.exec(visible))) {
-    const metadata = /^\s*(grammar-card|vocab-card)\b\s*(:?)([\s\S]*)$/.exec(match[1]);
+    const metadata = /^\s*(grammar-card|vocab-card|vocab-inventory)\b\s*(:?)([\s\S]*)$/.exec(match[1]);
     if (!metadata) continue;
     const block = metadata[1] as LessonReviewBlock;
     if (only && block !== only) continue;
     const line = markdown.slice(0, match.index).split('\n').length;
+    if (block === 'vocab-inventory' && ++inventoryCount > 1) {
+      diagnostics.push({
+        code: 'duplicate-inventory', block, line,
+        message: 'Only one vocab-inventory control is allowed per lesson',
+      });
+    }
     if (!match[0].endsWith('-->')) {
       diagnostics.push({ code: 'unterminated-block', block, line, message: `Unclosed ${block} comment` });
       continue;
@@ -139,7 +154,37 @@ export function readLessonReviewBlocks(
       diagnostics.push({ code: 'invalid-metadata', block, line, message: `${block} must contain an object` });
       continue;
     }
+    if (block === 'vocab-inventory' && (
+      /[\r\n]/.test(match[0]) ||
+      value.mode !== 'explicit' ||
+      Object.keys(value).some((key) => key !== 'mode')
+    )) {
+      diagnostics.push({
+        code: 'invalid-metadata', block, line,
+        message: 'vocab-inventory must be a single-line comment containing only {"mode":"explicit"}',
+      });
+      continue;
+    }
     items.push({ block, line, value });
   }
-  return { items, diagnostics };
+  // An ambiguous or broken control must never masquerade as an empty inventory.
+  return {
+    items: diagnostics.some((diagnostic) => diagnostic.block === 'vocab-inventory')
+      ? items.filter((item) => item.block !== 'vocab-inventory')
+      : items,
+    diagnostics,
+  };
+}
+
+/** Hide review controls, including malformed ones, but leave fenced examples intact. */
+export function stripLessonReviewSources(markdown: string): string {
+  const visible = maskFencedCode(markdown);
+  const comments = /<!--\s*(?:grammar-card|vocab-card|vocab-inventory)\b[\s\S]*?(?:-->|$)/g;
+  let result = '';
+  let lastIndex = 0;
+  for (const match of visible.matchAll(comments)) {
+    result += markdown.slice(lastIndex, match.index);
+    lastIndex = match.index + match[0].length;
+  }
+  return result + markdown.slice(lastIndex);
 }

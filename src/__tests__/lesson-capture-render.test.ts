@@ -7,7 +7,11 @@ import {
   indexBySourceText,
   matchCandidate,
   nodeText,
+  parseLessonCandidates,
+  parseLessonReviewItems,
   parseListCandidates,
+  parseVocabularyCardSources,
+  stripLessonReviewSources,
 } from '../lib/lesson-capture';
 
 /**
@@ -121,10 +125,53 @@ describe('rendered list items match parsed candidates', () => {
     expect(matched).toContain('пишу́');
     expect(matched).toContain('писа́ть');
   });
+
+  it('only attaches reviewed lexical items, never adjacent phonetic or instructional bullets', () => {
+    const markdown = [
+      '<!-- vocab-inventory: {"mode":"explicit"} -->',
+      '- **casa** (kah-zah) — house',
+      '- **ã** — nasal "ah": **maçã** (mah-sah) — apple',
+      '- **Initial R / RR** — sounds like English "h": **rio** (hee-oo) — river',
+      '- **Don\'t pronounce H** — "hotel" is (oh-TEW), not "ho-tel"',
+      '<!-- vocab-card: {"id":"house","word":"casa","meaning":"house","priority":"essential","sourceSection":"Vowels"} -->',
+    ].join('\n');
+    const index = indexBySourceText(parseLessonCandidates(markdown));
+    const matched = renderedListItemTexts(stripLessonReviewSources(markdown))
+      .map((item) => matchCandidate(index, item)?.id);
+    expect(matched).toEqual(['house', undefined, undefined, undefined]);
+  });
 });
 
 describe('real lesson content', () => {
   const byLang = lessonsByLanguage();
+
+  it.each([
+    ['pt', 'casa', 'house'],
+    ['ro', 'copil', 'child'],
+  ])('honors the explicit boundary through real %s pronunciation prose and inline matching', (lang, word, meaning) => {
+    const original = byLang.get(lang)!.find((lesson) => lesson.file === 'pronunciation.md')!.markdown;
+    const markdown = [
+      '<!-- vocab-inventory: {"mode":"explicit"} -->',
+      original.replace(/<!--\s*vocab-inventory\b[\s\S]*?-->/g, ''),
+      `<!-- vocab-card: ${JSON.stringify({ id: 'capture-test-word', word, meaning, priority: 'optional', sourceSection: 'Pronunciation' })} -->`,
+    ].join('\n');
+    const authored = parseVocabularyCardSources(markdown).items;
+    const parsed = parseLessonReviewItems(markdown);
+    expect(parsed.diagnostics).toEqual([]);
+    expect(parsed.items.filter((item) => item.kind === 'vocabulary').map((item) => item.id))
+      .toEqual(authored.map((item) => item.id));
+    expect(parsed.items.filter((item) => item.kind !== 'vocabulary'))
+      .toEqual(parseLessonReviewItems(original).items.filter((item) => item.kind !== 'vocabulary'));
+    const candidates = parseLessonCandidates(markdown);
+    expect(candidates.map((item) => item.id)).toEqual(authored.map((item) => item.id));
+    const forbidden = ["Don't pronounce H", 'ã', 'Initial R / RR', 'h'];
+    expect(candidates.filter((item) => forbidden.includes(item.word))).toEqual([]);
+    const index = indexBySourceText(candidates);
+    const matched = renderedListItemTexts(stripLessonReviewSources(markdown))
+      .flatMap((text) => matchCandidate(index, text)?.id ?? []);
+    expect(matched).toContain('capture-test-word');
+    expect(matched.every((id) => authored.some((item) => item.id === id))).toBe(true);
+  });
 
   it('has lessons to check', () => {
     expect(byLang.size).toBeGreaterThan(0);

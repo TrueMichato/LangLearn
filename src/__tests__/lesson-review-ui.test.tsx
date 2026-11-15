@@ -302,9 +302,9 @@ describe('lesson completion stays separate from review saving', () => {
 <!-- vocab-card: {"id":"shirt","priority":"essential","sourceSection":"Quiz","word":"рубашка","meaning":"shirt"} -->
 <!-- grammar-card: {"id":"rule","kind":"concept","format":"qa","priority":"essential","sourceSection":"Rule","rule":"A rule","example":"A hidden authored question?","answer":"A hidden authored answer","explanation":"Why"} -->
 <!-- quiz: {"type":"multiple-choice","question":"Choose the correctly spelled shirt","options":["рубашка","рубашкы"],"answer":0} -->`;
-  function lesson() {
+  function lesson(lang = 'ru') {
     const props = {
-      lang: 'ru', lessonId: 'spelling-rules', onBack: vi.fn(), onNavigate: vi.fn(),
+      lang, lessonId: 'spelling-rules', onBack: vi.fn(), onNavigate: vi.fn(),
       lessons: [{ id: 'spelling-rules', title: 'Spelling', order: 1 }, { id: 'next', title: 'Next', order: 2 }],
     };
     const outer = LessonView(props);
@@ -420,5 +420,39 @@ describe('lesson completion stays separate from review saving', () => {
     tree = hooks.render(() => GrammarQuiz({ ...props, captureWords: [{ word: 'книги', meaning: 'books' }, { word: 'книгы' }] }));
     expect(child(tree, PracticeWordCapture).props.words).toEqual([{ word: 'книги', meaning: 'books' }]);
     expect(child(tree, PracticeWordCapture).props.text).toBeUndefined();
+  });
+
+  it.each([true, false])('keeps phonetics out of the picker and revealed quiz capture with authored vocabulary=%s', async (hasVocabulary) => {
+    const source = `# Pronunciation
+<!-- vocab-inventory: {"mode":"explicit"} -->
+- **casa** — house
+- **ã** — nasal "ah": **maçã** (mah-sah) — apple
+- **Don't pronounce H** — "hotel" is (oh-TEW), not "ho-tel"
+${hasVocabulary ? '<!-- vocab-card: {"id":"house","word":"casa","meaning":"house","priority":"essential","sourceSection":"Vowels"} -->' : ''}
+<!-- quiz: {"type":"multiple-choice","question":"Which guidance accompanies casa and ã?","options":["Don't pronounce H","Roll every R"],"answer":0} -->`;
+    mocks.progress.mockResolvedValue([{ lessonId: 'spelling-rules', completed: true, quizScore: 100 }]);
+    vi.stubGlobal('fetch', vi.fn().mockResolvedValue({ ok: true, text: async () => source }));
+    const render = lesson('pt');
+    render(); await settle();
+    let tree = render();
+    const quiz = child(tree, GrammarQuiz);
+    expect(quiz.props.captureWords).toEqual(hasVocabulary
+      ? [expect.objectContaining({ id: 'house', word: 'casa', meaning: 'house' })]
+      : []);
+    click(tree, 'Choose review material');
+    tree = render();
+    expect((child(tree, LessonCaptureModal).props.items as LessonReviewItem[]).map((item) => item.id))
+      .toEqual(hasVocabulary ? ['house'] : []);
+    hooks.reset();
+    const revealed = hooks.render(() => GrammarQuiz({
+      ...quiz.props as unknown as Parameters<typeof GrammarQuiz>[0], selectedIndex: 0,
+    }));
+    const tools = elements(revealed).filter((element) => element.type === PracticeWordCapture);
+    expect(tools).toHaveLength(hasVocabulary ? 1 : 0);
+    if (hasVocabulary) {
+      expect(tools[0].props.words).toEqual([expect.objectContaining({ word: 'casa' })]);
+      expect(tools[0].props.text).toBeUndefined();
+    }
+    expect(mocks.save).not.toHaveBeenCalled();
   });
 });
