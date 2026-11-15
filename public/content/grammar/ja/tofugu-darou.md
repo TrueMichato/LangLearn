@@ -1,5 +1,7 @@
 # だろう — Probably (Plain)
 
+<!-- vocab-inventory: {"mode":"explicit"} -->
+
 > **Source:** Content from [Tofugu](https://www.tofugu.com/japanese-grammar/darou/). For personal study.
 
 Japanese だろう Form for Guessing
@@ -38,7 +40,10 @@ B: I assume it will be the Giants.
 
 B's use of だろう indicates that B has a reason to support his speculation. Maybe the Giants are the strongest team and always win.
 
-<!-- grammar-card: {"rule":"だろうね checks a guess with the listener","hint":"だろう + ね","example":"B: ジャイアンツ___。","answer":"だろうね","explanation":"ね invites agreement, softening the guess into a shared assumption."} -->
+<!-- grammar-card: {"id":"guess-with-ne","kind":"rule","format":"cloze","priority":"optional","sourceSection":"What Is だろう?","rule":"だろうね checks a guess with the listener","hint":"Give a plain speculative ending that also invites agreement.","example":"B: ジャイアンツ___。","answer":"だろうね","explanation":"ね invites agreement, softening the guess into a shared assumption."} -->
+<!-- grammar-card: {"id":"reasoned-speculation","kind":"concept","format":"qa","priority":"essential","sourceSection":"What Is だろう?","rule":"だろう presents a reasoned guess rather than a proven fact","example":"Does コウイチは金持ちだろう present his wealth as proven, or as the speaker's judgment?","answer":"It presents the speaker's fairly confident judgment, based on their interpretation rather than proof.","explanation":"The speaker may have a reason without saying what it is; there is no fixed numerical probability."} -->
+<!-- grammar-card: {"id":"spoken-written-tone","kind":"concept","format":"qa","priority":"optional","sourceSection":"What Is だろう?","rule":"Spoken だろう can sound assertive even though written speculation is ordinary","example":"Why might a conversational prediction ending in plain だろう sound stronger than the same prediction in writing?","answer":"In conversation it can carry the assertive tone associated with だ; in writing it can simply mark speculation.","explanation":"Context and sentence-final particles matter. It is not a universally neutral conversational ending."} -->
+<!-- vocab-card: {"id":"vocab-kanemochi","word":"金持ち","reading":"かねもち","meaning":"rich person; wealthy","priority":"optional","sourceSection":"What Is だろう?"} -->
 
 ## How to Make Sentences with だろう
 
@@ -154,7 +159,7 @@ You can manipulate the level of certainty of the speculation by using adverbs su
 
   - It will probably be cold tomorrow.
 
-It is important to know that lower-probability adverbs such as もしかして and もしかしたら, which are roughly translated as "maybe" in English, cannot be used with だろう. These adverbs don't match the certainty level that だろう carries.
+Lower-probability adverbs such as もしかして and もしかしたら, roughly "maybe," can clash with the fairly confident prediction illustrated here. The marked example below shows that mismatch in this context, not a universal grammatical ban on every combination with だろう.
 
 > 
 > 
@@ -174,9 +179,17 @@ So far we've discussed cases where だろう is used at the end of a sentence, b
 
 These sentences are common in both writing and speaking.
 
-<!-- grammar-card: {"rule":"だろう attaches straight to the plain form of a verb","hint":"休む, progressive","example":"彼は会社を休___だろう。","answer":"んでいる","explanation":"休んでいる is the plain progressive, and だろう follows it without any だ."} -->
+<!-- grammar-card: {"id":"current-progressive","kind":"rule","format":"cloze","priority":"essential","sourceSection":"How to Make Sentences with だろう","rule":"だろう attaches straight to the plain form of a verb","hint":"休む, progressive","example":"彼は会社を休___だろう。","answer":"んでいる","explanation":"休んでいる is the plain progressive, and だろう follows it without an extra copula."} -->
 
-<!-- grammar-card: {"rule":"だろう states a confident guess","hint":"だ → ?","example":"明日雨___から、傘が必要だね。","answer":"だろう","explanation":"だろう turns the claim into a prediction: it will probably rain."} -->
+<!-- grammar-card: {"id":"noun-prediction","kind":"rule","format":"cloze","priority":"essential","sourceSection":"How to Make Sentences with だろう","rule":"だろう states a confident guess","hint":"Use the plain speculative ending taught here.","example":"明日雨___から、傘が必要だね。","answer":"だろう","explanation":"The noun 雨 takes だろう directly. から then uses that prediction as a reason."} -->
+<!-- grammar-card: {"id":"past-copula","kind":"rule","format":"cloze","priority":"optional","sourceSection":"How to Make Sentences with だろう","rule":"Past time is expressed before the unchanged speculative ending","example":"彼は歌手___だろう。 (He was probably a singer.)","answer":"だった","explanation":"歌手だった supplies the past copula; だろう itself does not become past."} -->
+<!-- grammar-card: {"id":"negative-adjective","kind":"rule","format":"cloze","priority":"optional","sourceSection":"How to Make Sentences with だろう","rule":"An い-adjective is negated before adding だろう","example":"暑い → probably not hot: 暑___だろう。","answer":"くない","explanation":"暑くない is the plain negative adjective; no copula is added before だろう."} -->
+<!-- grammar-card: {"id":"adverb-confidence","kind":"concept","format":"qa","priority":"optional","sourceSection":"How to Make Sentences with だろう","rule":"Adverbs can adjust the confidence of a prediction","example":"How does replacing 多分 with きっと change 明日は寒いだろう?","answer":"It makes the prediction sound more confident: surely rather than probably.","explanation":"恐らく is a more formal probably. Very tentative adverbs can clash with an ordinary confident prediction, but this is not a numerical certainty scale."} -->
+<!-- vocab-card: {"id":"vocab-kashu","word":"歌手","reading":"かしゅ","meaning":"singer","priority":"optional","sourceSection":"How to Make Sentences with だろう"} -->
+<!-- vocab-card: {"id":"vocab-yasumu","word":"休む","reading":"やすむ","meaning":"to rest; to take time off","priority":"optional","sourceSection":"How to Make Sentences with だろう"} -->
+<!-- vocab-card: {"id":"vocab-tabun","word":"多分","reading":"たぶん","meaning":"probably; perhaps","priority":"optional","sourceSection":"How to Make Sentences with だろう"} -->
+<!-- vocab-card: {"id":"vocab-osoraku","word":"恐らく","reading":"おそらく","meaning":"probably (relatively formal)","priority":"optional","sourceSection":"How to Make Sentences with だろう"} -->
+<!-- vocab-card: {"id":"vocab-kitto","word":"きっと","reading":"きっと","meaning":"surely; almost certainly","priority":"optional","sourceSection":"How to Make Sentences with だろう"} -->
 
 ## だろう for Seeking Confirmation
 
@@ -195,6 +208,8 @@ While this question is your speculation, in reality it is often understood as se
 Just like the previous example, it is not you, but your listener who knows what their own opinion about your girlfriend is. This is why this kind of question often comes off as seeking confirmation.
 
 This use of だろう is common in both writing and speaking. However, when it is used in seeking confirmation, だろう is almost always shortened to だろ. Because of the assertive and definitive tone it carries, だろ is often associated with masculine speech.
+
+<!-- grammar-card: {"id":"confirmation-social-tone","kind":"concept","format":"qa","priority":"essential","sourceSection":"だろう for Seeking Confirmation","rule":"A guess about what the listener knows can seek confirmation","example":"What is 僕のプリン、食べただろう doing socially, and why should you be careful with this ending?","answer":"It presses for confirmation that the listener ate the pudding; the often-shortened だろ can sound assertive and masculine.","explanation":"This is not merely a neutral forecast. The listener is in a position to confirm the claim."} -->
 
 ## だろう for Seeking Information
 
@@ -223,6 +238,8 @@ B: うーん、なんだろ(う)。猫か犬？
 B: Well, l don't know… cats or dogs?
 
 While か can be used together with だろう to explicitly indicate the sentence is a question, it makes the speech more formal and authoritative. If you say コウイチはどこだろうか, it can make you sound like a character in a novel.
+
+<!-- grammar-card: {"id":"wh-wondering","kind":"concept","format":"qa","priority":"optional","sourceSection":"だろう for Seeking Information","rule":"Question words with だろう can express wondering or seek information","example":"Must コウイチはどこだろう be an assertive confirmation question?","answer":"No. With どこ it can mean I wonder where Koichi is, spoken to oneself or to someone else depending on context.","explanation":"This wondering use need not have the masculine tone of confirmation-seeking だろ. Adding か can make it more formal or literary."} -->
 
 ---
 

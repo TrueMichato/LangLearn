@@ -1,5 +1,7 @@
 # のに — Even Though / Despite
 
+<!-- vocab-inventory: {"mode":"explicit"} -->
+
 > **Source:** Content from [Tofugu](https://www.tofugu.com/japanese-grammar/conjunctive-particle-noni/). For personal study.
 
 Conjunctive Particle のに: For Expressing Surprise / Frustration
@@ -62,7 +64,9 @@ Doesn't sound like のに is showing a contradiction here, right? That's because
 
 Just like that, when you find のに in a sentence, it could be something else that's made out of different uses of particle の and に. So keep in mind it's not always the のに that's used to show your contradictions.
 
-<!-- grammar-card: {"rule":"のに marks a result that contradicts expectation","hint":"のに","example":"雨(あめ)が降(ふ)っている___、彼(かれ)は出(で)かけた。","answer":"のに","explanation":"のに expresses surprise that he went out in spite of the rain."} -->
+<!-- grammar-card: {"id":"unexpected-result","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Connecting Sentences","rule":"のに marks a result that contradicts expectation","hint":"Use the connector that emphasizes an unexpected outcome.","example":"雨(あめ)が降(ふ)っている___、彼(かれ)は出(で)かけた。","answer":"のに","explanation":"Going out conflicts with the expectation suggested by the rain; the connector can express surprise or frustration."} -->
+<!-- grammar-card: {"id":"noun-na-link","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Connecting Sentences","rule":"Nouns and な-adjectives need な before のに","example":"静(しず)か___、集中(しゅうちゅう)できない。","answer":"なのに","explanation":"静かなのに inserts な after a な-adjective; the noun pattern is レモンなのに."} -->
+<!-- grammar-card: {"id":"possession-destination","kind":"concept","format":"qa","priority":"essential","sourceSection":"Other の + に Combinations","rule":"Possessive の followed by destination に is not the concessive connector","example":"Does 私のに in ミルクは私のに入れないでね mean even though?","answer":"No. 私の means mine, and に marks it as the destination for putting the milk.","explanation":"The adjacent particles retain separate functions: do not put milk into mine."} -->
 
 ## Uses of のに
 
@@ -76,6 +80,7 @@ Just like that, when you find のに in a sentence, it could be something else t
 
 A five year old who speaks three languages? That's impressive, right? のに here implies that this is not something you usually expect a five year old to be able to do, and it's emphasizing how surprising it is.
 
+<!-- grammar-card: {"id":"surprise-not-only-complaint","kind":"concept","format":"qa","priority":"essential","sourceSection":"のに For Expressing Surprises","rule":"A violated expectation can be impressive rather than disappointing","example":"Must のに express annoyance in まだ五才なのに三ヶ国語も喋れる?","answer":"No. It can express impressed surprise that a five-year-old speaks three languages.","explanation":"The central meaning is unexpectedness; context supplies positive surprise or frustration."} -->
 Here's another example:
 
   - 夜中の三時なのに、こんなに人がいる。
@@ -100,7 +105,10 @@ When you clean, you hope it stays clean for a while. However, despite your earne
 
 Considering how hard you studied, you expected or at least hoped to pass the test, however you couldn't. In this case, のに is helping to express the sense of frustration and sorrow for the unfortunate result.
 
-<!-- grammar-card: {"rule":"Nouns and な-adjectives need な before のに","hint":"静か + のに","example":"静(しず)か___、集中(しゅうちゅう)できない。","answer":"なのに","explanation":"静かなのに inserts the な that のに requires after a な-adjective."} -->
+<!-- grammar-card: {"id":"effort-frustration","kind":"concept","format":"qa","priority":"optional","sourceSection":"のに for Complaint and Frustration","rule":"せっかく and わざわざ can heighten disappointment about wasted effort","example":"What expectation is frustrated in せっかく掃除したのに、すぐにまた汚くなった?","answer":"The speaker made an effort to clean and expected it to stay clean, but it quickly became dirty again.","explanation":"のに presents the failed expectation; せっかく highlights the effort or opportunity that seems wasted."} -->
+<!-- vocab-card: {"id":"vocab-sekkaku","word":"せっかく","reading":"せっかく","meaning":"with special effort; taking a valuable opportunity","priority":"optional","sourceSection":"のに for Complaint and Frustration"} -->
+<!-- vocab-card: {"id":"vocab-wazawaza","word":"わざわざ","reading":"わざわざ","meaning":"specially; going out of one's way","priority":"optional","sourceSection":"のに for Complaint and Frustration"} -->
+<!-- vocab-card: {"id":"vocab-fugoukaku","word":"不合格","reading":"ふごうかく","meaning":"failure to pass an examination","priority":"optional","sourceSection":"のに for Complaint and Frustration"} -->
 
 ## Beyond The Basics
 
@@ -134,6 +142,8 @@ Now, even though they didn't explicitly say it, you can guess what the result wa
 
 Well, if you put yourself in your friends' shoes, it may be hard to articulate your thoughts while you're still processing the fact that you failed an important test. Although your friend doesn't explicitly tell you they failed, のに helps you understand what happened and how your friend is feeling. Just like that, のに can be found at the end of a sentence and lets you guess what may come after it.
 
+<!-- grammar-card: {"id":"unfinished-complaint","kind":"rule","format":"cloze","priority":"optional","sourceSection":"のに at the End of a Sentence","rule":"A sentence can end on のに, leaving the complaint unsaid","hint":"Leave the disappointed continuation implicit.","example":"せっかく来(き)た___。","answer":"のに","explanation":"The listener infers an outcome that frustrated the effort of coming; the continuation need not be spoken."} -->
+
 ### のに For Counterfactual Wishes
 
 Especially when paired up with the conditional form たら and placed at the end of a sentence, のに can express your wish or desire for things to be different from what they are or were. For example, let's say you're staying at an Airbnb. You're wanting to heat up some leftovers from last night, but the Airbnb doesn't have a microwave. This means you'll have to use a pan to heat it up. You may say:
@@ -150,6 +160,8 @@ The reality is that there's no microwave available, but you're wishing there was
 
 The hidden sentence, the one that should follow the contradiction, is usually one that indicates the reality doesn't fulfill the desire. And, as you can see, it can be pretty repetitive if you finish the full sentence, and that's why it's usually omitted.
 
+<!-- grammar-card: {"id":"counterfactual-wish","kind":"concept","format":"qa","priority":"optional","sourceSection":"のに For Counterfactual Wishes","rule":"A conditional followed by final のに can contrast a wish with reality","example":"What does 電子レンジがあったら楽なのに imply about the speaker's situation?","answer":"A microwave would make things easier, but one is not available; the speaker wishes reality were different.","explanation":"The omitted contrast is the actual situation, not a second useful condition."} -->
+<!-- vocab-card: {"id":"vocab-denshirenji","word":"電子レンジ","reading":"でんしレンジ","meaning":"microwave oven","priority":"optional","sourceSection":"のに For Counterfactual Wishes"} -->
 ### のに for "On Top of That"
 
 のに can be used to add the meaning of "on top of that" by emphasizing the unexpectedness of something adding up.
@@ -168,6 +180,8 @@ Another example of this use of のに is to explain a sequence of tragedies by e
 
   - I feel bad for Kenichi as his company went bankrupt, and on top of that, he got broken into as well.
 
+<!-- grammar-card: {"id":"cumulative-unexpectedness","kind":"concept","format":"qa","priority":"optional","sourceSection":"のに for \"On Top of That\"","rule":"のに can emphasize an unexpected addition rather than a logical opposite","example":"Why can paying for a taxi follow paying for dinner with のに in a thank-you?","answer":"The second kindness is unexpectedly generous on top of the first, not its logical opposite.","explanation":"Unexpected accumulation can also link misfortunes; the shared feature is exceeding the expectation set by the first event."} -->
+
 ### のに For Purposes
 
 This one is a little bit of a curve ball, but のに can be used to explain the purpose of your actions as well. It's not close to what we've explained so far, and it has nothing to do with contradictions. However, if you take a close look at what のに consists of, it may make more sense — の is the nominalizer の, which turns a verb into the noun form. And に is the particle に, and in this case, it is used for showing purpose.
@@ -175,6 +189,9 @@ This one is a little bit of a curve ball, but のに can be used to explain the 
   - 海に行くのに水着を買った。
 
   - For going to the beach, I bought swimwear.
+
+<!-- grammar-card: {"id":"purpose-not-concession","kind":"concept","format":"qa","priority":"essential","sourceSection":"のに For Purposes","rule":"Nominalizer の plus purpose に has a different function from concessive のに","example":"What does 海に行くのに水着を買った express: an unexpected outcome or a purpose?","answer":"A purpose: the speaker bought swimwear for going to the beach.","explanation":"の nominalizes going to the beach and に marks its purpose-related role; no frustrated expectation is required."} -->
+<!-- vocab-card: {"id":"vocab-mizugi","word":"水着","reading":"みずぎ","meaning":"swimwear; swimsuit","priority":"optional","sourceSection":"のに For Purposes"} -->
 
 ---
 
@@ -194,8 +211,6 @@ pp. 310-316
 <!-- quiz: {"type":"multiple-choice","question":"What does \"[クーラーをつけた]のに[全然涼しくならなかった]。\" mean?","options":["[I turned on the AC] but [it wasn't getting any cooler].","I turned on the AC, but it wasn't getting any cooler.","[It's a lemon] but [it's very sweet].","[It's quiet] but [I can't sleep]."],"answer":0} -->
 
 <!-- quiz: {"type":"multiple-choice","question":"What does \"[レモン]なのに[すごく甘い]。\" mean?","options":["[It's a lemon] but [it's very sweet].","I turned on the AC, but it wasn't getting any cooler.","[I turned on the AC] but [it wasn't getting any cooler].","[It's quiet] but [I can't sleep]."],"answer":0} -->
-
-<!-- grammar-card: {"rule":"A sentence can end on のに, leaving the complaint unsaid","hint":"のに","example":"せっかく来(き)た___。","answer":"のに","explanation":"来たのに trails off, letting the listener infer the disappointment."} -->
 
 ## Sources
 

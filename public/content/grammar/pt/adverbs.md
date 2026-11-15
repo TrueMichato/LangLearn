@@ -1,8 +1,19 @@
 # Adverbs (Advérbios)
 
+<!-- vocab-inventory: {"mode":"explicit"} -->
+
 Adverbs modify verbs, adjectives, or other adverbs. In Portuguese, many adverbs are formed from adjectives, but many of the most common adverbs are standalone words. Learning adverbs will make your sentences richer and more natural — they tell you *how*, *when*, *where*, and *how much*.
 
 ## Formation from Adjectives (-mente)
+
+<!-- grammar-card: {"id":"adverb-mente","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Formation from Adjectives (-mente)","rule":"Adverbs with -mente: use the feminine form of the adjective + mente","example":"Ela explicou ___. (clearly, from 'claro')","answer":"claramente","explanation":"Add -mente to the feminine adjective; remove a written stress accent from the adjective base where applicable."} -->
+<!-- grammar-card: {"id":"adverb-mente-accent","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Formation from Adjectives (-mente)","rule":"Same-gender adjective bases also lose their written stress accents before -mente","example":"fácil → ___ (adverb)","answer":"facilmente","explanation":"Fácil has no separate feminine form; -mente gives facilmente, without the base's written acute accent."} -->
+<!-- vocab-card: {"id":"vocab-rapidamente","word":"rapidamente","meaning":"quickly","priority":"optional","sourceSection":"Formation from Adjectives (-mente)"} -->
+<!-- vocab-card: {"id":"vocab-felizmente","word":"felizmente","meaning":"happily; fortunately","priority":"optional","sourceSection":"Formation from Adjectives (-mente)"} -->
+<!-- vocab-card: {"id":"vocab-claramente","word":"claramente","meaning":"clearly","priority":"optional","sourceSection":"Formation from Adjectives (-mente)"} -->
+<!-- vocab-card: {"id":"vocab-facilmente","word":"facilmente","meaning":"easily","priority":"optional","sourceSection":"Formation from Adjectives (-mente)"} -->
+<!-- vocab-card: {"id":"vocab-lentamente","word":"lentamente","meaning":"slowly","priority":"optional","sourceSection":"Formation from Adjectives (-mente)"} -->
+<!-- vocab-card: {"id":"vocab-tristemente","word":"tristemente","meaning":"sadly","priority":"optional","sourceSection":"Formation from Adjectives (-mente)"} -->
 
 The most productive way to form adverbs is adding **-mente** to the feminine form of an adjective. This is similar to adding "-ly" in English:
 
@@ -20,11 +31,26 @@ The most productive way to form adverbs is adding **-mente** to the feminine for
 - **Ele explicou claramente.** (eh-lee esh-plee-koh klah-rah-men-chee) — He explained clearly.
 - **O professor falou lentamente.** (oo proh-feh-sohr fah-loh len-tah-men-chee) — The teacher spoke slowly.
 
-> **Tip:** If the adjective has no separate feminine form (like *feliz* or *fácil*), just add **-mente** directly.
+> **Tip:** If the adjective has no separate feminine form (like *feliz* or *fácil*), use that form as the base. Written stress accents on the adjective disappear with **-mente**: **rápida → rapidamente**, **fácil → facilmente**.
 
 <!-- quiz: {"type":"multiple-choice","question":"How do you form the adverb from the adjective 'rápido' (fast)?","options":["rápidamente","rapidamente","rápidomente","rápidemente"],"answer":1} -->
 
 ## Adverbs of Time (Advérbios de Tempo)
+
+<!-- grammar-card: {"id":"adverb-never","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Adverbs of Time (Advérbios de Tempo)","rule":"Preverbal nunca can negate the clause without não","example":"Eu ___ fui ao Japão. (never)","answer":"nunca","explanation":"Nunca means never and can precede the verb without não.","legacyAliases":[{"rule":"Common adverbs of time: agora, hoje, amanhã, ontem, sempre, nunca, já, ainda","example":"Eu ___ fui ao Japão. (never)"}]} -->
+<!-- vocab-card: {"id":"vocab-agora","word":"agora","meaning":"now","priority":"optional","sourceSection":"Adverbs of Time (Advérbios de Tempo)"} -->
+<!-- vocab-card: {"id":"vocab-hoje","word":"hoje","meaning":"today","priority":"optional","sourceSection":"Adverbs of Time (Advérbios de Tempo)"} -->
+<!-- vocab-card: {"id":"vocab-amanha","word":"amanhã","meaning":"tomorrow","priority":"optional","sourceSection":"Adverbs of Time (Advérbios de Tempo)"} -->
+<!-- vocab-card: {"id":"vocab-ontem","word":"ontem","meaning":"yesterday","priority":"optional","sourceSection":"Adverbs of Time (Advérbios de Tempo)"} -->
+<!-- vocab-card: {"id":"vocab-sempre","word":"sempre","meaning":"always","priority":"optional","sourceSection":"Adverbs of Time (Advérbios de Tempo)"} -->
+<!-- vocab-card: {"id":"vocab-nunca","word":"nunca","meaning":"never","priority":"optional","sourceSection":"Adverbs of Time (Advérbios de Tempo)"} -->
+<!-- vocab-card: {"id":"vocab-ja","word":"já","meaning":"already; right now","priority":"essential","sourceSection":"Adverbs of Time (Advérbios de Tempo)"} -->
+<!-- vocab-card: {"id":"vocab-ainda","word":"ainda","meaning":"still; yet","priority":"essential","sourceSection":"Adverbs of Time (Advérbios de Tempo)"} -->
+<!-- vocab-card: {"id":"vocab-logo","word":"logo","meaning":"soon","priority":"optional","sourceSection":"Adverbs of Time (Advérbios de Tempo)"} -->
+<!-- vocab-card: {"id":"vocab-cedo","word":"cedo","meaning":"early","priority":"optional","sourceSection":"Adverbs of Time (Advérbios de Tempo)"} -->
+<!-- vocab-card: {"id":"vocab-tarde","word":"tarde","meaning":"late (adverb)","priority":"optional","sourceSection":"Adverbs of Time (Advérbios de Tempo)"} -->
+<!-- vocab-card: {"id":"vocab-depois","word":"depois","meaning":"after; later","priority":"optional","sourceSection":"Adverbs of Time (Advérbios de Tempo)"} -->
+<!-- vocab-card: {"id":"vocab-antes","word":"antes","meaning":"before","priority":"optional","sourceSection":"Adverbs of Time (Advérbios de Tempo)"} -->
 
 These tell you *when* something happens:
 
@@ -51,9 +77,21 @@ These tell you *when* something happens:
 - **Ele já chegou.** (eh-lee zhah sheh-goh) — He already arrived.
 - **Ainda estou esperando.** (ah-een-dah esh-toh esh-peh-rahn-doo) — I'm still waiting.
 
-<!-- grammar-card: {"rule":"Common adverbs of time: agora, hoje, amanhã, ontem, sempre, nunca, já, ainda","hint":"Memorize these high-frequency time words","example":"Eu ___ fui ao Japão. (never)","answer":"Eu nunca fui ao Japão.","explanation":"'Nunca' means 'never' and is placed before the verb in Portuguese."} -->
-
 ## Adverbs of Place (Advérbios de Lugar)
+
+<!-- grammar-card: {"id":"place-deictic-contrast","kind":"concept","format":"qa","priority":"optional","sourceSection":"Adverbs of Place (Advérbios de Lugar)","rule":"Aqui and aí contrast speaker-near and listener-near locations","example":"What location contrast do aqui and aí commonly make?","answer":"Aqui is near the speaker; aí is near the listener.","explanation":"Ali and lá can indicate locations away from both; actual deictic choices depend on context."} -->
+<!-- vocab-card: {"id":"vocab-aqui","word":"aqui","meaning":"here; near the speaker","priority":"essential","sourceSection":"Adverbs of Place (Advérbios de Lugar)"} -->
+<!-- vocab-card: {"id":"vocab-ai","word":"aí","meaning":"there; near the listener","priority":"essential","sourceSection":"Adverbs of Place (Advérbios de Lugar)"} -->
+<!-- vocab-card: {"id":"vocab-ali","word":"ali","meaning":"there; over there","priority":"optional","sourceSection":"Adverbs of Place (Advérbios de Lugar)"} -->
+<!-- vocab-card: {"id":"vocab-la","word":"lá","meaning":"there; over there; far away","priority":"optional","sourceSection":"Adverbs of Place (Advérbios de Lugar)"} -->
+<!-- vocab-card: {"id":"vocab-perto","word":"perto","meaning":"nearby; close","priority":"optional","sourceSection":"Adverbs of Place (Advérbios de Lugar)"} -->
+<!-- vocab-card: {"id":"vocab-longe","word":"longe","meaning":"far away","priority":"optional","sourceSection":"Adverbs of Place (Advérbios de Lugar)"} -->
+<!-- vocab-card: {"id":"vocab-dentro","word":"dentro","meaning":"inside","priority":"optional","sourceSection":"Adverbs of Place (Advérbios de Lugar)"} -->
+<!-- vocab-card: {"id":"vocab-fora","word":"fora","meaning":"outside","priority":"optional","sourceSection":"Adverbs of Place (Advérbios de Lugar)"} -->
+<!-- vocab-card: {"id":"vocab-acima","word":"acima","meaning":"above","priority":"optional","sourceSection":"Adverbs of Place (Advérbios de Lugar)"} -->
+<!-- vocab-card: {"id":"vocab-abaixo","word":"abaixo","meaning":"below","priority":"optional","sourceSection":"Adverbs of Place (Advérbios de Lugar)"} -->
+<!-- vocab-card: {"id":"vocab-atras","word":"atrás","meaning":"behind","priority":"optional","sourceSection":"Adverbs of Place (Advérbios de Lugar)"} -->
+<!-- vocab-card: {"id":"vocab-frente","word":"em frente","meaning":"in front","priority":"optional","sourceSection":"Adverbs of Place (Advérbios de Lugar)"} -->
 
 These tell you *where* something happens:
 
@@ -82,6 +120,14 @@ These tell you *where* something happens:
 
 ## Adverbs of Manner (Advérbios de Modo)
 
+<!-- vocab-card: {"id":"vocab-bem","word":"bem","meaning":"well","priority":"essential","sourceSection":"Adverbs of Manner (Advérbios de Modo)"} -->
+<!-- vocab-card: {"id":"vocab-mal","word":"mal","meaning":"badly; poorly","priority":"optional","sourceSection":"Adverbs of Manner (Advérbios de Modo)"} -->
+<!-- vocab-card: {"id":"vocab-assim","word":"assim","meaning":"like this; so","priority":"optional","sourceSection":"Adverbs of Manner (Advérbios de Modo)"} -->
+<!-- vocab-card: {"id":"vocab-devagar","word":"devagar","meaning":"slowly","priority":"optional","sourceSection":"Adverbs of Manner (Advérbios de Modo)"} -->
+<!-- vocab-card: {"id":"vocab-depressa","word":"depressa","meaning":"quickly; fast","priority":"optional","sourceSection":"Adverbs of Manner (Advérbios de Modo)"} -->
+<!-- vocab-card: {"id":"vocab-melhor","word":"melhor","meaning":"better","priority":"optional","sourceSection":"Adverbs of Manner (Advérbios de Modo)"} -->
+<!-- vocab-card: {"id":"vocab-pior","word":"pior","meaning":"worse","priority":"optional","sourceSection":"Adverbs of Manner (Advérbios de Modo)"} -->
+
 These tell you *how* something is done. Some are standalone words (not formed with -mente):
 
 | Adverb | Pronunciation | Meaning |
@@ -101,6 +147,9 @@ These tell you *how* something is done. Some are standalone words (not formed wi
 
 ### Bom vs Bem — A Common Mistake!
 
+<!-- grammar-card: {"id":"adverb-bem","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Bom vs Bem — A Common Mistake!","rule":"Bem modifies an action while bom describes a noun","example":"Ela dança ___. (well)","answer":"bem","explanation":"Bem modifies the dancing action; bom describes a noun, as in um bom professor.","legacyAliases":[{"rule":"Bom (adjective) vs Bem (adverb)","example":"Ela dança ___. (well)"}]} -->
+<!-- grammar-card: {"id":"adverb-bom-bem-contrast","kind":"concept","format":"qa","priority":"essential","sourceSection":"Bom vs Bem — A Common Mistake!","rule":"The modification target determines adjective bom or adverb bem","example":"Why do um bom professor and ele ensina bem use different words for a positive quality?","answer":"Bom is an adjective describing the teacher; bem is an adverb describing how he teaches.","explanation":"The target of modification determines the adjective or adverb in these examples."} -->
+
 This is one of the most common errors for learners:
 
 - **Bom** is an adjective — it describes *nouns*: **O filme é bom.** (The movie is good.)
@@ -109,11 +158,19 @@ This is one of the most common errors for learners:
 - **Ele é um bom professor.** (eh-lee eh oon bong proh-feh-sohr) — He is a good teacher. (adjective)
 - **Ele ensina bem.** (eh-lee en-see-nah beng) — He teaches well. (adverb)
 
-<!-- grammar-card: {"rule":"Bom (adjective) vs Bem (adverb)","hint":"Bom describes nouns; Bem describes verbs","example":"Ela dança ___. (well)","answer":"bem","explanation":"Use 'bem' (adverb) to modify a verb. 'Bom' is the adjective form used to describe nouns: 'um bom livro' (a good book)."} -->
-
 <!-- quiz: {"type":"multiple-choice","question":"Which sentence correctly uses 'bem' (well)?","options":["Ele é bem professor.","Ele cozinha bem.","O café é bem.","Bem dia!"],"answer":1} -->
 
 ## Adverbs of Quantity (Advérbios de Intensidade)
+
+<!-- vocab-card: {"id":"vocab-muito","word":"muito","meaning":"very; a lot","priority":"essential","sourceSection":"Adverbs of Quantity (Advérbios de Intensidade)"} -->
+<!-- vocab-card: {"id":"vocab-pouco","word":"pouco","meaning":"little; not much","priority":"optional","sourceSection":"Adverbs of Quantity (Advérbios de Intensidade)"} -->
+<!-- vocab-card: {"id":"vocab-bastante","word":"bastante","meaning":"quite; enough","priority":"optional","sourceSection":"Adverbs of Quantity (Advérbios de Intensidade)"} -->
+<!-- vocab-card: {"id":"vocab-demais","word":"demais","meaning":"too much","priority":"optional","sourceSection":"Adverbs of Quantity (Advérbios de Intensidade)"} -->
+<!-- vocab-card: {"id":"vocab-mais","word":"mais","meaning":"more","priority":"optional","sourceSection":"Adverbs of Quantity (Advérbios de Intensidade)"} -->
+<!-- vocab-card: {"id":"vocab-menos","word":"menos","meaning":"less","priority":"optional","sourceSection":"Adverbs of Quantity (Advérbios de Intensidade)"} -->
+<!-- vocab-card: {"id":"vocab-tao","word":"tão","meaning":"so (before an adjective or adverb)","priority":"optional","sourceSection":"Adverbs of Quantity (Advérbios de Intensidade)"} -->
+<!-- vocab-card: {"id":"vocab-tanto","word":"tanto","meaning":"so much","priority":"optional","sourceSection":"Adverbs of Quantity (Advérbios de Intensidade)"} -->
+<!-- vocab-card: {"id":"vocab-quase","word":"quase","meaning":"almost","priority":"optional","sourceSection":"Adverbs of Quantity (Advérbios de Intensidade)"} -->
 
 These tell you *how much*:
 
@@ -137,6 +194,13 @@ These tell you *how much*:
 
 ## Adverbs of Affirmation & Negation
 
+<!-- vocab-card: {"id":"vocab-sim","word":"sim","meaning":"yes","priority":"optional","sourceSection":"Adverbs of Affirmation & Negation"} -->
+<!-- vocab-card: {"id":"vocab-nao","word":"não","meaning":"no; not","priority":"optional","sourceSection":"Adverbs of Affirmation & Negation"} -->
+<!-- vocab-card: {"id":"vocab-certamente","word":"certamente","meaning":"certainly","priority":"optional","sourceSection":"Adverbs of Affirmation & Negation"} -->
+<!-- vocab-card: {"id":"vocab-realmente","word":"realmente","meaning":"really","priority":"optional","sourceSection":"Adverbs of Affirmation & Negation"} -->
+<!-- vocab-card: {"id":"vocab-claro","word":"claro","meaning":"of course (affirmative response)","priority":"optional","sourceSection":"Adverbs of Affirmation & Negation"} -->
+<!-- vocab-card: {"id":"vocab-certeza","word":"com certeza","meaning":"for sure; certainly","priority":"optional","sourceSection":"Adverbs of Affirmation & Negation"} -->
+
 | Adverb | Pronunciation | Meaning |
 |---|---|---|
 | sim | seen | yes |
@@ -153,6 +217,10 @@ These tell you *how much*:
 
 ## Position in Sentences
 
+<!-- grammar-card: {"id":"adverb-adjective-position","kind":"rule","format":"qa","priority":"essential","sourceSection":"Position in Sentences","rule":"An adjective intensifier normally precedes its adjective","example":"Put muito in the appropriate position in Ela é bonita.","answer":"Ela é muito bonita.","explanation":"An adverb intensifying an adjective normally comes before the adjective."} -->
+<!-- grammar-card: {"id":"adverb-adverb-position","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Position in Sentences","rule":"An adverb intensifier precedes the adverb it modifies","example":"Ele corre ___ depressa. (very)","answer":"muito","explanation":"An adverb intensifying another adverb precedes it: muito depressa."} -->
+<!-- grammar-card: {"id":"adverb-flexible-time","kind":"concept","format":"qa","priority":"optional","sourceSection":"Position in Sentences","rule":"Time adverbs can move for emphasis","example":"Must a time adverb such as ontem always follow the verb?","answer":"No. It can start a sentence for emphasis, as in Ontem eu fui ao cinema.","explanation":"Adverb placement is relatively flexible; manner, degree, and time have different typical patterns."} -->
+
 Adverbs are relatively flexible in Portuguese, but here are the main patterns:
 
 1. **After the verb** (most common): **Ela fala bem.** — She speaks well.
@@ -161,8 +229,6 @@ Adverbs are relatively flexible in Portuguese, but here are the main patterns:
 4. **Before another adverb**: **Ele corre muito depressa.** — He runs very fast.
 
 <!-- quiz: {"type":"multiple-choice","question":"Where does the adverb usually go when modifying an adjective?","options":["After the adjective","Before the adjective","At the end of the sentence","Before the subject"],"answer":1} -->
-
-<!-- grammar-card: {"rule":"Adverbs with -mente: use the feminine form of the adjective + mente","hint":"rápida→rapidamente, clara→claramente, fácil→facilmente","example":"Ela explicou ___. (clearly, from 'claro')","answer":"claramente","explanation":"To form an adverb from an adjective, take the feminine form (clara) and add -mente: claramente. If the adjective has no distinct feminine form (like fácil), just add -mente directly."} -->
 
 ## Sources
 

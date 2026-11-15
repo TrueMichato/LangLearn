@@ -1,5 +1,7 @@
 # の (no) — Noun Modifier
 
+<!-- vocab-inventory: {"mode":"explicit"} -->
+
 > **Source:** Content from [Tofugu](https://www.tofugu.com/japanese-grammar/particle-no-noun-modifier/). For personal study.
 
 Particle の: Noun Modifier
@@ -18,6 +20,9 @@ Particle の has various roles in Japanese grammar, such as to modify nouns and 
 
 ### Conceptualizing Particle の
 
+<!-- grammar-card: {"id":"label-mnemonic","kind":"concept","format":"qa","priority":"optional","sourceSection":"Conceptualizing Particle の","rule":"の makes a modifying label from the preceding noun","example":"In the label-maker image, what does 犬の contribute to 犬のおもちゃ?","answer":"It labels the toy as related to dogs, here a toy for dogs.","explanation":"The first noun supplies the label and the following noun is the head. の does not itself specify ownership in every relationship."} -->
+<!-- vocab-card: {"id":"vocab-omocha","word":"おもちゃ","reading":"おもちゃ","meaning":"toy","priority":"optional","sourceSection":"Conceptualizing Particle の"} -->
+
 We like to think of particle の as a label maker. It changes the word that comes before it into a label, which can be stuck onto something else to give extra information about it.
 
 For example, if you want to say "dog toy" in Japanese, you take the word 犬 (dog), stick の onto the end to make a label, and then attach this to the word おもちゃ (toy). And voilà! Now you have 犬のおもちゃ, or "dog toy." の creates a label that says "dog" so that everyone knows what kind of "toy" it is. It's for dogs! Not for human babies, or your pet iguana.
@@ -29,6 +34,9 @@ You'll see though that the way these labels get translated into English might de
 Before we jump into the many uses of の, let's take a look at what kinds of words and grammatical patterns it pops up in.
 
 #### Noun + の (+ Noun)
+
+<!-- grammar-card: {"id":"omitted-head-noun","kind":"concept","format":"qa","priority":"essential","sourceSection":"Noun + の (+ Noun)","rule":"The modified noun can be omitted when recoverable","example":"Why can 私の mean mine without a following 車?","answer":"Context supplies the omitted thing, such as the car being discussed.","explanation":"The possessive label remains while the understood head noun is left out. This differs from turning a verb phrase into a noun with nominalizing の."} -->
+<!-- grammar-card: {"id":"stacked-label-head","kind":"concept","format":"qa","priority":"essential","sourceSection":"Noun + の (+ Noun)","rule":"In a stack of noun labels the head comes last","example":"What is the main thing named by 犬のおもちゃの店, and what describes its kind?","answer":"It names a store; dog toys describe the kind of store.","explanation":"犬 modifies おもちゃ, and 犬のおもちゃ then modifies 店. Do not reverse this into a toy belonging to a store merely by following English word order."} -->
 
 As we've seen so far, the particle の can attach to a noun, which is then stuck to another noun to give more information about it.
 
@@ -58,6 +66,8 @@ See how 店 comes at the end? In Japanese, the main word will always come at the
 
 #### Another Particle + の + Noun
 
+<!-- grammar-card: {"id":"directional-label-contrast","kind":"concept","format":"qa","priority":"essential","sourceSection":"Another Particle + の + Noun","rule":"A retained directional particle makes the noun label's relationship explicit","example":"What does へ add in アメリカへの飛行機 compared with アメリカの飛行機?","answer":"It specifies a plane going to the U.S., rather than merely an American-associated plane.","explanation":"からの instead marks origin, and との can attach a quotation to a message noun. の lets the whole particle phrase modify the head noun."} -->
+
 The noun modifier の can be used with other particles. For example, particle へ marks a destination that something travels towards, so アメリカへ means "to the U.S." By adding の,  it becomes a label to stick to another noun. So, to say "airplanes to the U.S.," you can stick this onto  飛行機(ひこうき) (airplane) as a label:
 
   - アメリカへの飛行機
@@ -86,6 +96,8 @@ With particle と, you can use a quote to label a noun, such as メッセージ 
 
 #### Non-noun Word + の
 
+<!-- grammar-card: {"id":"nominalizer-versus-modifier","kind":"concept","format":"qa","priority":"optional","sourceSection":"Non-noun Word + の","rule":"Nominalizing の turns a predicate into a noun phrase","example":"Is の in 食べるのが好きだ merely connecting two ordinary nouns?","answer":"No. It nominalizes the verb 食べる, making eating available as a noun phrase.","explanation":"This lesson distinguishes nominalization from noun-to-noun labeling and refers its fuller treatment to a separate lesson."} -->
+
 The particle の can also turn a non-noun word or phrase into a noun. For example, if の attaches to the verb 食べる (eat), you can use it as a noun in a sentence:
 
   - 食べるのが好きだ。
@@ -95,6 +107,8 @@ The particle の can also turn a non-noun word or phrase into a noun. For exampl
 We call this use "nominalization" since it turns non-nouns into nouns. We won't focus on this use on this page, but you can read all about it on its dedicated page.
 
 ### Isn't の the Japanese Possessive?
+
+<!-- grammar-card: {"id":"relationship-context","kind":"concept","format":"qa","priority":"essential","sourceSection":"Isn't の the Japanese Possessive?","rule":"Context determines the relationship expressed by a noun label","example":"Must バナナの本 mean a book owned by a banana?","answer":"No. It can mean a book about bananas, shaped like a banana, or associated with a person named Banana.","explanation":"Ownership is only one possible relation. The head noun and context resolve the intended interpretation."} -->
 
 You might think of particle の like Japanese equivalent of the possessive **'s** ending in English, as in **Tom's** car of **Granny's** kittens. However, the label maker is really a better way to think of particle の, since the relationship between the label and the noun can result in various different interpretations. For example, let's say your friend has a book recommendation:
 
@@ -112,6 +126,8 @@ As you just read with バナナの, particle の can be translated in many diffe
 
 #### Ownership
 
+<!-- grammar-card: {"id":"possession-application","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Ownership","rule":"の marks possession between two nouns","hint":"My book; link the possessor and the thing owned.","example":"これは私(わたし)___本(ほん)です。","answer":"の","explanation":"In this context 私 labels the book's possessor. The same particle has many nonpossessive uses elsewhere."} -->
+
 の can express ownership or possession when it comes after a person or a group of people. This is the use that is similar to …'s in English. You put your name on your things, right? Labelling is important for showing ownership!
 
   - ジェニーのバッグ
@@ -125,6 +141,9 @@ With a personal pronoun, の can be used to make equivalents of "my," "your," an
   - my mother
 
 #### Affiliation
+
+<!-- grammar-card: {"id":"affiliation-application","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Affiliation","rule":"An organization plus の can label a person's affiliation","hint":"A professor at Tokyo University.","example":"東京大学___教授","answer":"の","explanation":"The institution precedes the person or role in the Japanese label. This does not mean the university literally owns the professor."} -->
+<!-- vocab-card: {"id":"vocab-kyouju","word":"教授","reading":"きょうじゅ","meaning":"professor","priority":"optional","sourceSection":"Affiliation"} -->
 
 の is also often used after the name of an organization to show affiliation. In other words, it shows what organization a person belongs to. For example, when you make a business phone call and explain who you are — Kyoko, who works for a company called Tofugu — you can say:
 
@@ -142,6 +161,9 @@ It's interesting to note that in English, we tend to place the person's name *be
 
 #### Topic
 
+<!-- grammar-card: {"id":"explicit-about-application","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Topic","rule":"についての explicitly labels the subject matter of a noun","hint":"Research about whales; supply the topic phrase and its noun linker.","example":"クジラ___研究","answer":"についての","explanation":"This specifies whales as the research topic. クジラの研究 alone can leave more than one relationship open in a suitable context."} -->
+<!-- vocab-card: {"id":"vocab-chishiki","word":"知識","reading":"ちしき","meaning":"knowledge","priority":"optional","sourceSection":"Topic"} -->
+
 Particle の can also be used to label the topic of something. Typically, this creates an "about" relationship between the label noun and the main noun:
 
   - 日本語の知識
@@ -156,6 +178,8 @@ However, it's possible that there could be some ambiguity here. Perhaps the whal
 
 #### Location and Time
 
+<!-- grammar-card: {"id":"time-label-application","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Location and Time","rule":"A time noun can label another noun with の without a verb","hint":"The five-a.m. alarm.","example":"朝五時___アラーム","answer":"の","explanation":"の labels the alarm's time. に would instead normally mark the time of a predicate, not directly link these nouns."} -->
+
 While you might initially think of particle に when you think of location or time, particle の can be used as well. The difference is that with particle の, we don't need to use a verb, we just use the time or location noun as a label for our main noun:
 
   - ニューヨークの自由の女神
@@ -168,6 +192,8 @@ While you might initially think of particle に when you think of location or ti
 
 #### Degree: Amount, Quantity, Price, Size, and More
 
+<!-- grammar-card: {"id":"price-label-application","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Degree: Amount, Quantity, Price, Size, and More","rule":"A measured amount or price can modify a noun through の","hint":"A four-thousand-yen mango.","example":"四千円___マンゴー","answer":"の","explanation":"The price phrase labels the mango. Other examples label an amount or quantity using a numeral and the appropriate counter."} -->
+
 の can be used with a number and a counter to express the degree of something: the amount, quantity, price, size, and so on.
 
   - 五十人のアメリカ人
@@ -179,6 +205,9 @@ While you might initially think of particle に when you think of location or ti
   - a four-thousand-yen mango
 
 #### Order and Rank
+
+<!-- grammar-card: {"id":"order-label-application","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Order and Rank","rule":"Order and rank expressions can modify nouns with の","hint":"The first test.","example":"最初___テスト","answer":"の","explanation":"最初 labels which test. 三人目の孫 and 世界一の温泉 similarly express order or rank."} -->
+<!-- vocab-card: {"id":"vocab-saisho","word":"最初","reading":"さいしょ","meaning":"first; beginning","priority":"optional","sourceSection":"Order and Rank"} -->
 
 の gets used to express the order or the rank of something.
 
@@ -196,6 +225,8 @@ While you might initially think of particle に when you think of location or ti
 
 #### Apposition
 
+<!-- grammar-card: {"id":"apposition-application","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Apposition","rule":"の can equate two nouns, meaning 'who is'","hint":"Tanaka, who is my friend; connect the description to the name.","example":"こちらは友達(ともだち)___田中(たなか)さんです。","answer":"の","explanation":"友達 and 田中さん identify the same person. This is apposition, not a friend belonging to Tanaka."} -->
+
 の is commonly used for apposition, which is the relationship between multiple words that refer to the same thing. In English, we use a comma (,) for apposition to say something like "banana, the fruit."
 
   - フルーツのバナナ
@@ -208,6 +239,8 @@ While you might initially think of particle に when you think of location or ti
 
 #### Materials and Ingredients
 
+<!-- grammar-card: {"id":"material-label-application","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Materials and Ingredients","rule":"の can connect a material label directly to a noun","hint":"A plastic cup.","example":"プラスティック___コップ","answer":"の","explanation":"The first noun names the material; the second names the object. This is a noun phrase, unlike a full made-of predicate with で."} -->
+
 の can label the materials or ingredients of something. It's commonly used to explain what ingredients are used in a dish, for example.
 
   - アサリの味噌汁
@@ -218,11 +251,13 @@ While you might initially think of particle に when you think of location or ti
 
   - plastic cup
 
-<!-- grammar-card: {"rule":"の marks possession between two nouns","hint":"possessive","example":"これは私(わたし)___本(ほん)です。","answer":"の","explanation":"私の本 makes 私 the owner of the book."} -->
-
 ## Beyond The Basics
 
 #### Attributes (の-Adjectives)
+
+<!-- grammar-card: {"id":"attribute-no-application","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Attributes (の-Adjectives)","rule":"Some attribute nouns modify another noun with の rather than な","hint":"A normal car, using 普通.","example":"普通___車","answer":"の","explanation":"普通 and 久しぶり are used as noun-like attribute labels here. Learn their linking pattern rather than replacing every adjective's linker with の."} -->
+<!-- vocab-card: {"id":"vocab-futsuu","word":"普通","reading":"ふつう","meaning":"normal; ordinary; usual","priority":"optional","sourceSection":"Attributes (の-Adjectives)"} -->
+<!-- vocab-card: {"id":"vocab-hisashiburi","word":"久しぶり","reading":"ひさしぶり","meaning":"after a long time; first time in a long while","priority":"optional","sourceSection":"Attributes (の-Adjectives)"} -->
 
 In Japanese, we have adjective-like nouns that are used for abstract concepts. They are nouns like 普通 (normality) or 久しぶり (a concept of not doing something for a long time). To describe something "normal" or something that you haven't seen or experienced for a long time, you can use these nouns to modify another noun like adjectives do.
 
@@ -237,6 +272,8 @@ In Japanese, we have adjective-like nouns that are used for abstract concepts. T
 Some dictionaries and textbooks call these words "の-adjectives" because they express attributes, just like a typical い-adjective or な-adjective. However, their use of の to modify nouns makes them also quite similar to nouns. If you're interested in this weird hybrid word type, we recommend checking out our article about な-adjectives and の-adjectives for more information.
 
 #### の Can Replace が in Relative Clauses
+
+<!-- grammar-card: {"id":"relative-clause-subject-no","kind":"concept","format":"qa","priority":"optional","sourceSection":"の Can Replace が in Relative Clauses","rule":"の can mark a subject in the illustrated noun-modifying relative clause","example":"What does の do in カナエの作ったネックレス compared with カナエが作ったネックレス?","answer":"It marks Kanae as the maker inside the relative clause, with the same basic meaning as が here.","explanation":"The clause modifies ネックレス. This is not permission to replace subject が with の in independent sentences or every embedded clause."} -->
 
 A noun can be modified in various ways. Using adjectives is a common way of doing so, and this page has introduced how a noun can be modified with another noun using の. Another way to modify a noun is to use a clause. A clause that modifies a noun is called a "relative clause," and this is when you might run into の in place of the subject-marking particle が.
 
@@ -294,8 +331,6 @@ by 柴谷 方良
 <!-- quiz: {"type":"multiple-choice","question":"What does \"私の\" mean?","options":["mine","my car","airplanes to the U.S.","airplanes from the U.S."],"answer":0} -->
 
 <!-- quiz: {"type":"multiple-choice","question":"What does \"アメリカへの飛行機\" mean?","options":["airplanes to the U.S.","my car","mine","airplanes from the U.S."],"answer":0} -->
-
-<!-- grammar-card: {"rule":"の can equate two nouns, meaning 'who is'","hint":"apposition","example":"こちらは友達(ともだち)___田中(たなか)さんです。","answer":"の","explanation":"友達の田中さん means 'Tanaka, who is my friend', not a friend belonging to Tanaka."} -->
 
 ## Sources
 

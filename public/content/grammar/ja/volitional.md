@@ -1,5 +1,7 @@
 # Volitional Form (食べよう、行こう)
 
+<!-- vocab-inventory: {"mode":"explicit"} -->
+
 The volitional form expresses the speaker's **will**, **intention**, or an **invitation** — similar to "let's ~" or "I'll ~" in English. It is one of the most common verb forms in everyday conversation.
 
 ## Formation
@@ -51,7 +53,10 @@ The polite volitional replaces ます with **ましょう**:
 
 <!-- quiz:{"type":"multiple-choice","question":"What is the volitional form of 泳ぐ (to swim)?","options":["泳ごう","泳ぐよう","泳がよう","泳ぎよう"],"answer":0} -->
 
-<!-- grammar-card: {"rule":"Ichidan verbs drop る and add よう","hint":"見る → ?","example":"一緒(いっしょ)に映画(えいが)を見(み)___。","answer":"よう","explanation":"見よう is the plain volitional — let's watch."} -->
+<!-- grammar-card: {"id":"ichidan-volitional","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Group 2 (ru-verbs)","rule":"Ichidan verbs drop る and add よう","hint":"見る, plain volitional","example":"一緒(いっしょ)に映画(えいが)を見(み)___。","answer":"よう","explanation":"見る becomes 見よう (みよう), inviting someone to watch together."} -->
+<!-- grammar-card: {"id":"godan-volitional","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Group 1 (u-verbs)","rule":"Godan volitionals use the o-row sound followed by う","example":"Let's swim: 泳ぐ → ___。","answer":"泳ごう","explanation":"泳ごう (およごう) changes ぐ to ごう, not ぎよう."} -->
+<!-- grammar-card: {"id":"suru-volitional","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Group 3 (Irregular)","rule":"する has an irregular volitional","example":"Let's do it: する → ___。","answer":"しよう","explanation":"The irregular volitional is しよう, including in する compounds such as 勉強しよう."} -->
+<!-- grammar-card: {"id":"kuru-volitional","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Group 3 (Irregular)","rule":"来る has an irregular volitional with the reading こ","example":"Come here again together: 来る → ___。 (plain volitional)","answer":"来よう","explanation":"来よう is read こよう, not くよう or きよう."} -->
 
 ## Usage 1: "Let's ~" (Invitation / Suggestion)
 
@@ -73,7 +78,7 @@ The most common use — inviting someone to do something together:
 > *Kyou wa nani wo shiyou?*
 > What shall we do today?
 
-<!-- grammar-card: {"rule":"ましょう is the polite volitional","hint":"帰る, polite volitional","example":"そろそろ帰(かえ)り___。","answer":"ましょう","explanation":"帰りましょう politely proposes that everyone head home."} -->
+<!-- grammar-card: {"id":"polite-volitional","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Usage 1: \"Let's ~\" (Invitation / Suggestion)","rule":"ましょう is the polite volitional","hint":"帰る, polite volitional","example":"そろそろ帰(かえ)り___。","answer":"ましょう","explanation":"帰りましょう politely proposes going home; replace ます with ましょう."} -->
 
 ## Usage 2: Personal Intention ("I think I'll ~")
 
@@ -91,6 +96,7 @@ When speaking to yourself or expressing a personal decision:
 > *Mou sukoshi ganbarou.*
 > I'll try a bit harder.
 
+<!-- grammar-card: {"id":"volitional-intention-invitation","kind":"concept","format":"qa","priority":"essential","sourceSection":"Usage 2: Personal Intention (\"I think I'll ~\")","rule":"A bare volitional can express an individual decision or a joint invitation","example":"Does 今日は早く寝よう necessarily invite another person to sleep?","answer":"No. It can express the speaker's own decision to go to bed early.","explanation":"Context determines whether the volitional means I'll do it or let's do it."} -->
 <!-- quiz:{"type":"multiple-choice","question":"'一緒に食べましょう' means:","options":["I will eat alone","Please eat","Let's eat together","You should eat"],"answer":2} -->
 
 ## Usage 3: 〜ようと思(おも)う (I'm thinking of ~)
@@ -109,7 +115,8 @@ Combining the volitional with **と思(おも)う** expresses a plan or intentio
 - **〜ようと思う** = I'm thinking (just now deciding)
 - **〜ようと思っている** = I've been thinking / I intend to (ongoing plan)
 
-<!-- grammar-card: {"rule":"The volitional plus と思う states a plan","hint":"think, polite","example":"来年(らいねん)日本(にほん)へ行(い)こう___。","answer":"と思います","explanation":"行こうと思います says the speaker is thinking of going next year."} -->
+<!-- grammar-card: {"id":"volitional-plan","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Usage 3: 〜ようと思(おも)う (I'm thinking of ~)","rule":"The volitional plus と思う states a plan","hint":"Express I think, politely.","example":"来年(らいねん)日本(にほん)へ行(い)こう___。","answer":"と思います","explanation":"行こうと思います states an intention to go; the volitional precedes the quotation particle と."} -->
+<!-- grammar-card: {"id":"plan-ongoing-contrast","kind":"concept","format":"qa","priority":"optional","sourceSection":"Usage 3: 〜ようと思(おも)う (I'm thinking of ~)","rule":"と思っている presents an intention as ongoing","example":"What does 行こうと思っている emphasize compared with 行こうと思う?","answer":"An intention or plan already being held, rather than just presenting a current thought or decision.","explanation":"The contrast is one of viewpoint and ongoing intention, not a rigid rule that 思う must always be a brand-new decision."} -->
 
 ## Usage 4: 〜ようとする (To try / be about to)
 
@@ -129,7 +136,7 @@ The volitional + **とする** means "to try to" or "to be about to":
 
 <!-- quiz:{"type":"multiple-choice","question":"'日本語を勉強しようと思っている' means:","options":["I studied Japanese","I'm thinking of studying Japanese","I tried to study Japanese","I should study Japanese"],"answer":1} -->
 
-<!-- grammar-card: {"rule":"ようとする means being on the point of doing something","hint":"出かける, volitional + する","example":"出(で)かけ___時(とき)、電話(でんわ)が鳴(な)った。","answer":"ようとした","explanation":"出かけようとした時 is the moment just before leaving."} -->
+<!-- grammar-card: {"id":"about-to-leave","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Usage 4: 〜ようとする (To try / be about to)","rule":"ようとする means being on the point of doing something","hint":"出かける, volitional + とする in the past","example":"出(で)かけ___時(とき)、電話(でんわ)が鳴(な)った。","answer":"ようとした","explanation":"出かけようとした時 describes being about to leave when the phone rang; the construction can also describe an attempt."} -->
 
 ## Usage 5: 〜ようか (Offering help)
 
@@ -147,6 +154,7 @@ Used to offer to do something for someone:
 > *Eki made okurou ka?*
 > Shall I take you to the station?
 
+<!-- grammar-card: {"id":"volitional-help-offer","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Usage 5: 〜ようか (Offering help)","rule":"A volitional followed by か can offer help","example":"Shall I help? 手伝おう___？","answer":"か","explanation":"手伝おうか (てつだおうか) offers the speaker's help; ましょうか makes the offer polite."} -->
 ## Volitional vs Other Invitation Forms
 
 | Expression | Nuance | Example |
@@ -168,6 +176,7 @@ Used to offer to do something for someone:
 > *Eiga wo mi ni ikou!*
 > Let's go see a movie! (assertive)
 
+<!-- grammar-card: {"id":"invitation-negative-question","kind":"concept","format":"qa","priority":"optional","sourceSection":"Volitional vs Other Invitation Forms","rule":"Negative questions can make invitations less assertive than a volitional proposal","example":"In an invitation, how does 行きませんか differ from 行きましょう?","answer":"行きませんか asks whether the listener would like to go; 行きましょう proposes let's go.","explanation":"行かない？ is the casual negative-question invitation. These are invitations, not literal refusals."} -->
 ## Common Set Phrases
 
 | Japanese | Romaji | Meaning |
@@ -179,6 +188,10 @@ Used to offer to do something for someone:
 | 始(はじ)めましょう | Hajimemashou | Let's begin |
 | 乾杯(かんぱい)しよう | Kanpai shiyou | Let's toast |
 
+<!-- vocab-card: {"id":"vocab-ganbarou","word":"頑張ろう","reading":"がんばろう","meaning":"Let's do our best; I'll keep trying","priority":"optional","sourceSection":"Common Set Phrases"} -->
+<!-- vocab-card: {"id":"vocab-yarou","word":"やろう","reading":"やろう","meaning":"Let's do it (volitional of やる)","priority":"optional","sourceSection":"Common Set Phrases"} -->
+<!-- vocab-card: {"id":"vocab-sou-shiyou","word":"そうしよう","reading":"そうしよう","meaning":"Let's do that","priority":"optional","sourceSection":"Common Set Phrases"} -->
+<!-- vocab-card: {"id":"vocab-kanpai","word":"乾杯する","reading":"かんぱいする","meaning":"to make a toast","priority":"optional","sourceSection":"Common Set Phrases"} -->
 <!-- quiz:{"type":"multiple-choice","question":"How do you say 'I tried to call but no one answered'?","options":["電話しようとしたが誰も出なかった","電話しようと思ったが誰も出なかった","電話しようが誰も出なかった","電話したが誰も出なかった"],"answer":0} -->
 
 ## Summary

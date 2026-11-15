@@ -1,5 +1,7 @@
 # Colloquial Genitive Markers: bitāʿ, tabaʿ, māl, dyāl
 
+<!-- vocab-inventory: {"mode":"explicit"} -->
+
 MSA possession is often expressed through the iḍāfa construct, as in كِتَابُ الطَّالِبِ (kitābu aṭ-ṭālibi), "the student's book." Dialects still use noun-noun possession, but they also use clear genitive markers that behave like "of" or "belonging to."
 
 ## Core idea
@@ -7,6 +9,14 @@ MSA possession is often expressed through the iḍāfa construct, as in كِتَ
 The marker changes by region: Egyptian بِتَاع (bitāʿ), Levantine تَبَع (tabaʿ), Gulf and Iraqi مَال (māl), and Maghrebi دْيَال (dyāl). These are especially useful when the possessed noun is definite, long, or needs a pronoun ending.
 
 ## Forms and examples
+
+These are regional examples, not universal choices: مَال is used in Iraqi and some Gulf varieties, while دْيَال is Moroccan-style. Other local markers exist; spellings and vowel marks are approximate.
+
+<!-- vocab-card: {"id":"vocab-bitaa","word":"بِتَاع","reading":"bitāʿ","meaning":"of; belonging to; Egyptian masculine marker","priority":"essential","sourceSection":"Forms and examples"} -->
+<!-- vocab-card: {"id":"vocab-taba","word":"تَبَع","reading":"tabaʿ","meaning":"of; belonging to; Levantine marker","priority":"essential","sourceSection":"Forms and examples"} -->
+<!-- vocab-card: {"id":"vocab-mal","word":"مَال","reading":"māl","meaning":"of; belonging to; Iraqi and some Gulf varieties","priority":"optional","sourceSection":"Forms and examples"} -->
+<!-- vocab-card: {"id":"vocab-dyal","word":"دْيَال","reading":"dyāl","meaning":"of; belonging to; Moroccan-style marker","priority":"optional","sourceSection":"Forms and examples"} -->
+<!-- grammar-card: {"id":"egyptian-marker-agreement","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Forms and examples","rule":"The illustrated Egyptian feminine possessed noun takes بِتَاعَة.","example":"Egyptian “the teacher's car”: الْعَرَبِيَّة ___ الْمُدَرِّس.","answer":"بِتَاعَة","explanation":"The feminine marker is pronounced bitāʿit before its complement in this example; it agrees with the car, not the owner."} -->
 
 | Meaning | MSA | Egyptian | Levantine | Gulf | Iraqi | Maghrebi |
 |---|---|---|---|---|---|---|
@@ -20,7 +30,8 @@ The marker changes by region: Egyptian بِتَاع (bitāʿ), Levantine تَب�
 
 Short, close possessions such as "my house" or "your name" often still use suffixes: بَيْتِي (bētī), اِسْمَك (ismak). Genitive markers are helpful when you want to stress ownership, avoid ambiguity, or attach ownership to a definite noun phrase.
 
-<!-- grammar-card: {"rule": "Colloquial dialects often use regional genitive markers where MSA would use iḍāfa or a possessive suffix.", "hint": "Match bitāʿ with Egyptian, tabaʿ with Levantine, māl with Gulf and Iraqi, and dyāl with Maghrebi.", "example": "الْكْتَاب دْيَالِي (l-ktāb dyālī)", "answer": "My book", "explanation": "Maghrebi دْيَال plus the suffix -ī marks possession by me."} -->
+<!-- grammar-card: {"id":"moroccan-my-book","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Usage notes","rule":"Colloquial dialects often use regional genitive markers where MSA would use iḍāfa or a possessive suffix.","example":"Moroccan-style “my book,” using the genitive marker: الْكْتَاب ___.","answer":"دْيَالِي","explanation":"The possessive -ī attaches to دْيَال after the definite possessed noun.","legacyAliases":[{"rule":"Colloquial dialects often use regional genitive markers where MSA would use iḍāfa or a possessive suffix.","example":"الْكْتَاب دْيَالِي (l-ktāb dyālī)"}]} -->
+<!-- grammar-card: {"id":"suffixes-still-used","kind":"concept","format":"qa","priority":"essential","sourceSection":"Usage notes","rule":"Analytic genitive markers do not replace all possessive suffixes.","example":"Do these dialect genitive markers make short possessive forms such as بَيْتِي obsolete?","answer":"No. Short close possessions still often use noun suffixes; markers can emphasize ownership or clarify a definite phrase.","explanation":"Analytic markers coexist with suffixes and noun-noun possession; choice depends on dialect and context."} -->
 
 ## Practice patterns
 
@@ -32,7 +43,8 @@ Build possession by placing the marker between the thing owned and the owner:
 
 <!-- quiz: {"type": "multiple-choice", "question": "In Levantine Arabic, which marker commonly means of or belonging to?", "options": ["تَبَع (tabaʿ)", "دْيَال (dyāl)", "مَاكُو (māku)", "دَه (da)"], "answer": 0} -->
 
-<!-- grammar-card: {"rule": "The genitive marker usually follows the possessed item and comes before the owner or possessive suffix.", "hint": "Thing owned first, marker second, owner last.", "example": "السَّيَّارَة مَال الْمُعَلِّم (is-sayyāra māl il-muʿallim)", "answer": "The teacher's car", "explanation": "The Gulf and Iraqi marker مَال links the car to its owner."} -->
+<!-- grammar-card: {"id":"marker-word-order","kind":"rule","format":"qa","priority":"essential","sourceSection":"Practice patterns","rule":"The genitive marker usually follows the possessed item and comes before the owner or possessive suffix.","example":"Using مَال, arrange السَّيَّارَة and الْمُعَلِّم to mean “the teacher's car” in the illustrated Iraqi pattern.","answer":"السَّيَّارَة مَال الْمُعَلِّم","explanation":"The owned item comes first, then the marker, then the owner.","legacyAliases":[{"rule":"The genitive marker usually follows the possessed item and comes before the owner or possessive suffix.","example":"السَّيَّارَة مَال الْمُعَلِّم (is-sayyāra māl il-muʿallim)"}]} -->
+<!-- grammar-card: {"id":"levantine-your-house","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Practice patterns","rule":"A possessive pronoun can attach to the genitive marker.","example":"Levantine “your house” to a male addressee, using تَبَع: الْبَيْت ___.","answer":"تَبَعَك","explanation":"The -ak suffix marks the owner on the marker rather than directly on the noun."} -->
 
 ## Sources
 

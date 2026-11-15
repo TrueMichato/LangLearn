@@ -1,5 +1,7 @@
 # Plain Present Form (Dictionary Form)
 
+<!-- vocab-inventory: {"mode":"explicit"} -->
+
 > **Source:** Content from [Tofugu](https://www.tofugu.com/japanese-grammar/verb-plain-present-form/). For personal study.
 
 Verb Plain Present る Form
@@ -36,6 +38,12 @@ But if it can refer to both the present and future tenses, how can you tell whic
 
 Take the previous example. Regardless of the indication of present or future tense, the verb remains in the plain present form. In this case, 食べる (to eat). However, it's usually the context that helps to distinguish tense. In the case of these examples, that context comes in the form of additional time-related words like 毎日 (everyday) and 明日 (tomorrow).
 
+<!-- vocab-card: {"id":"vocab-taberu","priority":"optional","sourceSection":"The Basics","word":"食べる","reading":"たべる","meaning":"to eat"} -->
+<!-- vocab-card: {"id":"vocab-mainichi","priority":"optional","sourceSection":"The Basics","word":"毎日","reading":"まいにち","meaning":"every day"} -->
+<!-- vocab-card: {"id":"vocab-ashita","priority":"optional","sourceSection":"The Basics","word":"明日","reading":"あした","meaning":"tomorrow"} -->
+<!-- grammar-card: {"id":"nonpast-context","kind":"concept","format":"qa","priority":"essential","sourceSection":"The Basics","rule":"The dictionary form is nonpast; context distinguishes habits from future actions","example":"Does 食べる itself distinguish “eats habitually” from “will eat tomorrow”?","answer":"No. The same nonpast form serves both; time expressions and context distinguish them.","explanation":"毎日 suggests a habit, while 明日 places the action in the future."} -->
+<!-- grammar-card: {"id":"habit-eating","kind":"rule","format":"cloze","priority":"essential","sourceSection":"The Basics","rule":"The plain non-past covers habits as well as the future","hint":"to eat, dictionary form","example":"朝は、いつもサンドイッチを___。","answer":"食べる","explanation":"いつも makes this a habitual action."} -->
+
 You can think of it like this, in English: "My brother (will) eat/s pasta."
 
 The added context clues are what distinguish the tense – he *eats* pasta, as in it's part of his diet, or he *will eat* pasta, as in, he is going to eat it tomorrow.
@@ -68,6 +76,12 @@ Since the plain present form indicates the future, it's also commonly used to as
 
  (*Literally*: **Will** you **drink** it?)
 
+<!-- vocab-card: {"id":"vocab-suru","priority":"optional","sourceSection":"Future Actions","word":"する","reading":"する","meaning":"to do"} -->
+<!-- vocab-card: {"id":"vocab-nomu","priority":"optional","sourceSection":"Future Actions","word":"飲む","reading":"のむ","meaning":"to drink"} -->
+<!-- vocab-card: {"id":"vocab-maitoshi","priority":"optional","sourceSection":"Future Actions","word":"毎年","reading":"まいとし","meaning":"every year"} -->
+<!-- grammar-card: {"id":"party-nonpast","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Future Actions","rule":"する is the plain non-past of the irregular verb","hint":"use the irregular doing verb, plain nonpast","example":"パーティーを___。","answer":"する","explanation":"With no habitual context this can announce a future party; 毎年 would make it a recurring event."} -->
+<!-- grammar-card: {"id":"casual-offer","kind":"concept","format":"qa","priority":"essential","sourceSection":"Future Actions","rule":"A plain nonpast question can offer an action to the listener","example":"When a friend holds out a drink and asks 飲む？, what are they doing conversationally?","answer":"Offering the drink: “Want some?” or “Will you drink it?”","explanation":"The context turns the future-action question into a casual offer."} -->
+
 And to answer that kind of question, you can simply repeat the same verb in the same form:
 
   - **飲む**！
@@ -89,6 +103,9 @@ What else can the plain present form of Japanese verbs describe? Well, just like
   - 水は100度で **沸騰(ふっとう)する**。
 
   - Water **boils** at 100 celsius.
+
+<!-- vocab-card: {"id":"vocab-futtou-suru","priority":"optional","sourceSection":"Habits, Facts, or Generalizations","word":"沸騰する","reading":"ふっとうする","meaning":"to boil; to reach boiling point"} -->
+<!-- grammar-card: {"id":"general-truth","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Habits, Facts, or Generalizations","rule":"The plain non-past states general truths","hint":"to boil","example":"水は100度で___。","answer":"沸騰する","explanation":"This presents boiling at 100 degrees as a general fact, not a particular ongoing event."} -->
 
 In this case, if the speaker believes it's a fact, whether it's actually true or false doesn't really matter. So if you're under the impression that Labradors eat well, you can also use the plain present form and say:
 
@@ -116,6 +133,11 @@ For example, to talk about the fact that your brother *has* three computers, you
 
   - My brother **has** three computers.
 
+<!-- vocab-card: {"id":"vocab-motsu","priority":"optional","sourceSection":"Verb-る vs. Verb-ている","word":"持つ","reading":"もつ","meaning":"to hold; to have"} -->
+<!-- vocab-card: {"id":"vocab-mawaru","priority":"optional","sourceSection":"Verb-る vs. Verb-ている","word":"回る","reading":"まわる","meaning":"to turn; to revolve"} -->
+<!-- grammar-card: {"id":"possession-state","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Verb-る vs. Verb-ている","rule":"An ongoing state of possession is normally expressed with 持っている","example":"My brother currently has three computers: 兄はパソコンを三台も___。 (持つ)","answer":"持っている","explanation":"The state of already having the computers calls for ている, not the bare dictionary form."} -->
+<!-- grammar-card: {"id":"continuous-generalization","kind":"concept","format":"qa","priority":"optional","sourceSection":"Verb-る vs. Verb-ている","rule":"Even a general fact may use ている when continuity is foregrounded","example":"Why does the lesson prefer 月は地球の周りを回っている for the moon's orbit?","answer":"It presents the revolution as continuously ongoing, rather than merely listing a general fact.","explanation":"English present-tense wording does not determine the Japanese aspect."} -->
+
 This might seem like a difficult nuance to master, but don't worry! As you study and gain more exposure to Japanese you'll start to distinguish the patterns for when the ている form is used over the plain present form. And if you're not familiar with ている, you can check out its dedicated page, too!
 
 ### Politeness
@@ -141,6 +163,9 @@ But this doesn't mean you never use the plain form in formal situations. In thes
 Make sense? Even though you may be aware that your boss might be listening, this type of plain form expression works totally fine, and is even more natural.
 
 Additionally, the plain form is used more frequently in formal writing where the author makes assertions as they're expressing their inner thoughts.
+
+<!-- grammar-card: {"id":"listener-politeness","kind":"concept","format":"qa","priority":"essential","sourceSection":"Politeness","rule":"Plain speech suits close relationships; ます is safer for a boss or unfamiliar listener","example":"Would クッキー食べる？ normally be the safest direct offer to your boss?","answer":"No. A polite offer such as クッキー食べますか？ is generally more appropriate.","explanation":"Plain forms sound casual when directed at the listener."} -->
+<!-- grammar-card: {"id":"plain-not-always-informal","kind":"concept","format":"qa","priority":"optional","sourceSection":"Politeness","rule":"Plain forms also occur in self-directed thought and formal expository writing","example":"Does a plain verb automatically make every use inappropriate in a formal setting?","answer":"No. Self-directed thinking aloud and assertions in formal writing can naturally use plain forms.","explanation":"Who the utterance addresses and the writing style matter, not just who is nearby."} -->
 
 If you are interested in the differences between the polite form and the casual form, you can check out our article Da (だ) vs Desu (です) — How People Use them in Real Life. Here, だ represents the plain form and です represents the polite form.
 
@@ -197,12 +222,6 @@ pp. 126-143
 <!-- quiz: {"type":"multiple-choice","question":"What does \"兄は明日パスタを**食べる**。\" mean?","options":["My brother **will eat** pasta tomorrow.","My brother **eats** pasta everyday.","I **throw** a party **every year.**","Want some?"],"answer":0} -->
 
 <!-- quiz: {"type":"multiple-choice","question":"What does \"**毎年**パーティーを**する**。\" mean?","options":["I **throw** a party **every year.**","My brother **eats** pasta everyday.","My brother **will eat** pasta tomorrow.","Want some?"],"answer":0} -->
-
-<!-- grammar-card: {"rule":"The plain non-past states general truths","hint":"to boil","example":"水は100度で___。","answer":"沸騰(ふっとう)する","explanation":"沸騰する describes what always happens, rather than a future event."} -->
-
-<!-- grammar-card: {"rule":"する is the plain non-past of the irregular verb","hint":"する","example":"パーティーを___。","answer":"する","explanation":"パーティーをする means to hold a party, stated in the plain form."} -->
-
-<!-- grammar-card: {"rule":"The plain non-past covers habits as well as the future","hint":"食べる","example":"朝は、いつもサンドイッチを___。","answer":"食べる","explanation":"食べる here describes what the speaker does every morning, not a single future act."} -->
 
 ## Sources
 

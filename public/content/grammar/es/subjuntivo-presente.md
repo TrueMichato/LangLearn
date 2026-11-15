@@ -1,5 +1,7 @@
 # Present Subjunctive (Subjuntivo Presente)
 
+<!-- vocab-inventory: {"mode":"explicit"} -->
+
 The **subjuntivo** is the mood of doubt, desire, emotion, and hypothesis. While the indicative states facts ("She studies"), the subjunctive expresses subjectivity ("I want her to study"). It appears in subordinate clauses triggered by certain expressions — and once you learn those triggers, the pattern clicks into place.
 
 ## Formation — The "Opposite Vowel" Rule
@@ -24,6 +26,11 @@ Because the form is built from the **yo indicative**, verbs irregular in yo carr
 - conocer → conozco → **conozca**, conozcas...
 - poner → pongo → **ponga**, pongas...
 
+<!-- grammar-card: {"id":"opposite-vowels","kind":"concept","format":"qa","priority":"essential","sourceSection":"Formation — The \"Opposite Vowel\" Rule","rule":"Regular present subjunctives use the present yo stem with opposite-vowel endings","example":"After dropping -o from the present yo form, which vowel series do -ar verbs and -er/-ir verbs use?","answer":"-ar uses e endings; -er and -ir use a endings.","explanation":"Hablo gives hable; como gives coma; vivo gives viva. The irregular verbs below need separate attention."} -->
+<!-- grammar-card: {"id":"ar-subjunctive","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Formation — The \"Opposite Vowel\" Rule","rule":"Tú present subjunctive of regular -ar verbs ends in -es","example":"Quiero que tú ___ conmigo. (hablar)","answer":"hables","explanation":"Habl- takes -es, not the indicative ending -as."} -->
+<!-- grammar-card: {"id":"yo-irregular-transfer","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Formation — The \"Opposite Vowel\" Rule","rule":"A yo stem such as teng- carries into the present subjunctive","example":"Espero que tú ___ tiempo. (tener)","answer":"tengas","explanation":"Tengo loses -o, then takes -as."} -->
+<!-- grammar-card: {"id":"conocer-transfer","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Formation — The \"Opposite Vowel\" Rule","rule":"Conozco supplies conozc- for the present subjunctive","example":"Espero que ella ___ la ciudad. (conocer)","answer":"conozca","explanation":"Keep the yo stem conozc- and add -a."} -->
+
 <!-- quiz: {"type":"multiple-choice","question":"What is the 'tú' form of 'hablar' in the present subjunctive?","options":["hablas","habla","hables","hablés"],"answer":2} -->
 
 ## Fully Irregular Subjunctives (Memorize These)
@@ -40,11 +47,19 @@ A handful of verbs have irregular subjunctive forms that don't follow the yo-dro
 | saber | **sepa** | sepa, sepas, sepa, sepamos, sepan |
 | ver | **vea** | vea, veas, vea, veamos, vean |
 
-<!-- grammar-card: {"rule":"The 6+1 fully irregular present subjunctives: sea, esté, vaya, haya, dé, sepa, vea","hint":"SEVIDAH: Ser, Estar, Ir, Dar, Haber — these don't follow the yo-drop rule","example":"Espero que todo ___ (estar) bien.","answer":"esté","explanation":"'Estar' is one of the irregular subjunctives. Its yo subjunctive form is 'esté', not 'este' (which would follow the regular rule but is wrong). The accent distinguishes it from the imperative."} -->
+Ver is worth learning alongside these, but **veo → vea** does follow the yo-drop procedure. For the other six, the mnemonic **DIS HES** maps **D**ar, **I**r, **S**aber, **H**aber, **E**star, **S**er.
+
+<!-- grammar-card: {"id":"irregular-estar","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Fully Irregular Subjunctives (Memorize These)","rule":"Estar has accented esté in singular yo/él present subjunctive","example":"Espero que todo ___ (estar) bien.","answer":"esté","explanation":"Keep the accent in esté. The usted imperative is also esté, so the tilde does not distinguish it from that imperative.","legacyAliases":[{"rule":"The 6+1 fully irregular present subjunctives: sea, esté, vaya, haya, dé, sepa, vea","example":"Espero que todo ___ (estar) bien."}]} -->
+<!-- grammar-card: {"id":"irregular-ser","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Fully Irregular Subjunctives (Memorize These)","rule":"Ser has sea in the present subjunctive","example":"Dudo que eso ___ verdad. (ser)","answer":"sea","explanation":"Ser does not form its subjunctive by dropping -o from soy."} -->
+<!-- grammar-card: {"id":"irregular-ir","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Fully Irregular Subjunctives (Memorize These)","rule":"Ir uses vay- in the present subjunctive","example":"Quiero que tú ___ conmigo. (ir)","answer":"vayas","explanation":"The tú form is vayas."} -->
+<!-- grammar-card: {"id":"irregular-haber","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Fully Irregular Subjunctives (Memorize These)","rule":"Existential haber uses haya in present subjunctive","example":"Espero que ___ tiempo. (haber: there be)","answer":"haya","explanation":"Existential haya is singular."} -->
+<!-- grammar-card: {"id":"irregular-dar","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Fully Irregular Subjunctives (Memorize These)","rule":"Dar has accented dé in yo/él present subjunctive","example":"Espero que ella me ___ permiso. (dar)","answer":"dé","explanation":"Dé takes a diacritic accent, unlike the preposition de."} -->
+<!-- grammar-card: {"id":"irregular-saber","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Fully Irregular Subjunctives (Memorize These)","rule":"Saber uses sep- in present subjunctive","example":"Espero que tú ___ la respuesta. (saber)","answer":"sepas","explanation":"The tú form uses sep- plus -as."} -->
+<!-- grammar-card: {"id":"irregular-mnemonic","kind":"concept","format":"qa","priority":"optional","sourceSection":"Fully Irregular Subjunctives (Memorize These)","rule":"DIS HES recalls six irregular present-subjunctive verbs","example":"Expand the DIS HES mnemonic into its six infinitives.","answer":"Dar, Ir, Saber, Haber, Estar, Ser.","explanation":"Each initial maps to one verb. Ver is separate: veo → vea follows the yo-drop procedure."} -->
 
 ## WEIRDO — Trigger Categories
 
-Subjunctive is triggered in a subordinate **que**-clause whenever the main clause expresses one of these:
+WEIRDO is a guide to common subjunctive contexts, not a rule that every emotional or impersonal expression must take it. The examples below use subjunctive **que**-clauses; same-subject wishes commonly use an infinitive (*Quiero estudiar*). Ojalá can appear with or without *que*.
 
 | Letter | Category | Trigger Examples |
 |--------|----------|-----------------|
@@ -54,6 +69,9 @@ Subjunctive is triggered in a subordinate **que**-clause whenever the main claus
 | **R** | Recommendations | recomendar que, sugerir que, pedir que, aconsejar que |
 | **D** | Doubt / Denial | dudar que, no creer que, no pensar que, negar que |
 | **O** | Ojalá | ojalá (+ any subjunctive) |
+
+<!-- grammar-card: {"id":"weirdo-mnemonic","kind":"concept","format":"qa","priority":"optional","sourceSection":"WEIRDO — Trigger Categories","rule":"WEIRDO groups common subjunctive contexts rather than replacing construction-specific rules","example":"What do the six WEIRDO letters stand for in this lesson?","answer":"Wishes, Emotion, Impersonal expressions, Recommendations, Doubt/Denial, Ojalá.","explanation":"These are common contexts, not a guarantee for every expression in a category; factual certainty can take indicative, and same-subject wishes often use an infinitive."} -->
+<!-- grammar-card: {"id":"same-subject-wish","kind":"rule","format":"cloze","priority":"essential","sourceSection":"WEIRDO — Trigger Categories","rule":"A simple same-subject wish normally takes an infinitive","example":"Quiero ___. (I want to study.)","answer":"estudiar","explanation":"Compare Quiero que estudies, where the desired action has a different subject."} -->
 
 ## Examples in Context
 
@@ -77,6 +95,9 @@ Subjunctive is triggered in a subordinate **que**-clause whenever the main claus
 - **Ojalá llueva** (oh-hah-LAH YWEH-vah) — Hopefully it will rain / I hope it rains
 - **Ojalá tengas suerte** — I hope you have luck
 
+<!-- vocab-card: {"id":"vocab-ojala","word":"ojalá","meaning":"hopefully; I hope that","priority":"essential","sourceSection":"Examples in Context"} -->
+<!-- grammar-card: {"id":"impersonal-subjunctive","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Examples in Context","rule":"Es importante que takes subjunctive in the taught recommendation","example":"Es importante que tú ___ a tiempo. (llegar)","answer":"llegues","explanation":"Llegar changes g to gu before e, preserving the hard g sound."} -->
+
 <!-- quiz: {"type":"multiple-choice","question":"Which sentence correctly uses the subjunctive?","options":["Quiero que vienes conmigo.","Quiero que vengas conmigo.","Quiero que viene conmigo.","Quiero que vendrás conmigo."],"answer":1} -->
 
 ## Subjunctive vs Indicative — The Trigger Test
@@ -87,9 +108,10 @@ If the main clause expresses a **fact or certainty**, use the indicative in the 
 - **No sé si viene** — I don't know if he's coming (uncertainty → no trigger, still indicative)
 - **Dudo que venga** — I doubt he's coming (doubt → subjunctive ✓)
 
+<!-- grammar-card: {"id":"uncertainty-not-enough","kind":"concept","format":"qa","priority":"essential","sourceSection":"Subjunctive vs Indicative — The Trigger Test","rule":"Mood depends on the construction, not uncertainty alone","example":"Why does No sé si viene use indicative even though the speaker is uncertain?","answer":"An indirect question with si does not automatically trigger subjunctive; compare Dudo que venga.","explanation":"The taught contrast is sé que viene, no sé si viene, and dudo que venga. WEIRDO is a memory aid, not a universal uncertainty test."} -->
 <!-- quiz: {"type":"multiple-choice","question":"'Es importante que tú ___ (llegar) a tiempo.' Which form?","options":["llegas","llegues","llegarás","llegaste"],"answer":1} -->
 
-<!-- grammar-card: {"rule":"Subjunctive is triggered in que-clauses after WEIRDO expressions (Wish, Emotion, Impersonal, Recommendation, Doubt, Ojalá)","hint":"Ask: does the main clause express desire, emotion, doubt, or a recommendation? If yes → subjunctive","example":"___ que haya paz en el mundo. (Ojalá)","answer":"Ojalá","explanation":"'Ojalá' always triggers the subjunctive. The sentence means 'I hope there will be peace in the world.' Ojalá is one of the most iconic subjunctive triggers in Spanish."} -->
+<!-- grammar-card: {"id":"ojala-subjunctive","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Examples in Context","rule":"Ojalá introduces a wish with subjunctive, with or without que","example":"Ojalá ___ suerte. (tener, tú; present subjunctive)","answer":"tengas","explanation":"The wish takes subjunctive; choose the tense for the intended time and likelihood.","legacyAliases":[{"rule":"Subjunctive is triggered in que-clauses after WEIRDO expressions (Wish, Emotion, Impersonal, Recommendation, Doubt, Ojalá)","example":"___ que haya paz en el mundo. (Ojalá)"}]} -->
 
 ## Sources
 

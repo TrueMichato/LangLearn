@@ -1,5 +1,7 @@
 # Likening & Comparison Structures (ka-, mithl, ka-anna)
 
+<!-- vocab-inventory: {"mode":"explicit"} -->
+
 Arabic comparison is not only about more and most. It also has compact ways to say like, similar to, and as if. Three common tools are كَـ (ka-) — like / as, مِثْلَ (mithla) — like / the same as, and كَأَنَّ (ka-anna) — as if.
 
 ## Core idea
@@ -9,6 +11,10 @@ The prefix كَـ (ka-) is a preposition, so the noun after it is genitive. It a
 - اَلْعِلْمُ كَالنُّورِ (al-ʿilmu ka-n-nūri) — knowledge is like light.
 - وَجْهُهَا كَالْقَمَرِ (wajhuhā ka-l-qamari) — her face is like the moon.
 - يَجْرِي الْوَلَدُ كَالرِّيحِ (yajrī al-waladu ka-r-rīḥi) — the boy runs like the wind.
+
+<!-- grammar-card: {"id":"ka-genitive","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Core idea","rule":"The prefixed simile preposition governs genitive case.","example":"Complete “knowledge is like light” with the full comparison phrase: اَلْعِلْمُ ___.","answer":"كَالنُّورِ","explanation":"Ka-n-nūri has genitive النُّورِ after attached كَـ. There is only one Arabic target, without a mirrored transliteration blank.","legacyAliases":[{"rule":"كَـ (ka-) — like is a preposition and makes the following noun genitive.","example":"Complete: knowledge is like light — اَلْعِلْمُ كَالنُّور___ (al-ʿilmu ka-n-nūr___)."}]} -->
+
+<!-- grammar-card: {"id":"ka-attaches","kind":"concept","format":"qa","priority":"essential","sourceSection":"Core idea","rule":"The short simile marker attaches to its complement in writing.","example":"Is the simile marker ka- written as a separate word before its noun?","answer":"No. It is a prefixed preposition attached directly to the noun.","explanation":"كَالْقَمَرِ combines ka-, the article and the genitive noun; it is not the independent noun مِثْلُ."} -->
 
 <!-- quiz: {"type": "multiple-choice", "question": "Which phrase means like the moon?", "options": ["كَالْقَمَرِ (ka-l-qamari)", "مِنَ الْقَمَرِ (mina al-qamari)", "إِلَى الْقَمَرِ (ilā al-qamari)", "عَلَى الْقَمَرِ (ʿalā al-qamari)"], "answer": 0} -->
 
@@ -20,7 +26,8 @@ The prefix كَـ (ka-) is a preposition, so the noun after it is genitive. It a
 - هٰذَا الْقَلَمُ مِثْلُ ذٰلِكَ الْقَلَمِ (hādhā al-qalamu mithlu dhālika al-qalami) — this pen is like that pen.
 - لَيْسَ هٰذَا مِثْلَ ذٰلِكَ (laysa hādhā mithla dhālika) — this is not like that.
 
-<!-- grammar-card: {"rule": "كَـ (ka-) — like is a preposition and makes the following noun genitive.", "hint": "كَالنُّورِ (ka-n-nūri) ends with kasra.", "example": "Complete: knowledge is like light — اَلْعِلْمُ كَالنُّور___ (al-ʿilmu ka-n-nūr___).", "answer": "ـِ (-i): كَالنُّورِ (ka-n-nūri)", "explanation": "The noun after كَـ (ka-) is genitive, so النُّورِ (an-nūri) ends in kasra."} -->
+<!-- vocab-card: {"id":"vocab-mithl","word":"مِثْلَ","reading":"mithla","meaning":"like; likeness; equivalent, accusative form","priority":"essential","sourceSection":"Using mithl"} -->
+<!-- grammar-card: {"id":"mithl-own-case","kind":"concept","format":"qa","priority":"optional","sourceSection":"Using mithl","rule":"The comparison noun itself is declined according to its sentence role.","example":"Why does mithl have different endings in هٰذَا الْقَلَمُ مِثْلُ ذٰلِكَ and لَيْسَ هٰذَا مِثْلَ ذٰلِكَ?","answer":"It is a nominative predicate in the first and an accusative predicate of laysa in the second.","explanation":"Its own role changes its case; its complement remains in genitive position in either construction."} -->
 
 ## As if with ka-anna
 
@@ -30,9 +37,13 @@ The prefix كَـ (ka-) is a preposition, so the noun after it is genitive. It a
 - كَأَنَّ الْبَيْتَ قَلْعَةٌ (ka-anna al-bayta qalʿatun) — the house is as if it were a fortress.
 - كَأَنَّ صَوْتَهُ بَحْرٌ هَادِئٌ (ka-anna ṣawtahu baḥrun hādiʾun) — his voice is as if it were a calm sea.
 
+<!-- vocab-card: {"id":"vocab-kaanna","word":"كَأَنَّ","reading":"ka-anna","meaning":"as if","priority":"essential","sourceSection":"As if with ka-anna"} -->
+<!-- vocab-card: {"id":"vocab-misbah","word":"مِصْبَاحٌ","reading":"miṣbāḥun","meaning":"a lamp","priority":"optional","sourceSection":"As if with ka-anna"} -->
+<!-- vocab-card: {"id":"vocab-qalah","word":"قَلْعَةٌ","reading":"qalʿatun","meaning":"a fortress","priority":"optional","sourceSection":"As if with ka-anna"} -->
+
 <!-- quiz: {"type": "multiple-choice", "question": "What does كَأَنَّ (ka-anna) usually mean?", "options": ["as if", "because", "before", "except"], "answer": 0} -->
 
-<!-- grammar-card: {"rule": "كَأَنَّ (ka-anna) makes its noun accusative.", "hint": "It works like إِنَّ (inna).", "example": "Complete: كَأَنَّ الْقَمَر___ مِصْبَاحٌ (ka-anna al-qamar___ miṣbāḥun).", "answer": "الْقَمَرَ (al-qamara)", "explanation": "After كَأَنَّ (ka-anna), الْقَمَرَ (al-qamara) is accusative, while مِصْبَاحٌ (miṣbāḥun) is nominative."} -->
+<!-- grammar-card: {"id":"kaanna-noun","kind":"rule","format":"cloze","priority":"essential","sourceSection":"As if with ka-anna","rule":"The as-if particle has the case government of the inna family.","example":"Complete the full moon noun: كَأَنَّ ___ مِصْبَاحٌ.","answer":"الْقَمَرَ","explanation":"Al-qamara is accusative as the noun of كَأَنَّ; miṣbāḥun is the nominative predicate.","legacyAliases":[{"rule":"كَأَنَّ (ka-anna) makes its noun accusative.","example":"Complete: كَأَنَّ الْقَمَر___ مِصْبَاحٌ (ka-anna al-qamar___ miṣbāḥun)."}]} -->
 
 ## Practice patterns
 
@@ -44,7 +55,7 @@ Use كَـ (ka-) for quick similes, مِثْلَ (mithla) when you want a fuller
 
 <!-- quiz: {"type": "multiple-choice", "question": "In كَأَنَّ النُّجُومَ عُيُونٌ (ka-anna an-nujūma ʿuyūnun), why is النُّجُومَ accusative?", "options": ["It is after كَأَنَّ (ka-anna)", "It follows a preposition", "It is dual", "It is the object of a command"], "answer": 0} -->
 
-<!-- grammar-card: {"rule": "مِثْلُ (mithlu) behaves like a noun and its complement is genitive.", "hint": "In مِثْلُ ذٰلِكَ (mithlu dhālika), ذٰلِكَ is the complement.", "example": "Complete: this pen is like that pen — هٰذَا الْقَلَمُ مِثْلُ ذٰلِكَ الْقَلَم___ (hādhā al-qalamu mithlu dhālika al-qalam___).", "answer": "ـِ (-i): الْقَلَمِ (al-qalami)", "explanation": "The complement after مِثْلُ (mithlu) is genitive in the iḍāfa-like phrase."} -->
+<!-- grammar-card: {"id":"mithl-complement","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Practice patterns","rule":"The complement of mithl is genitive even when mithl itself is nominative.","example":"Complete the full comparison noun phrase: هٰذَا الْقَلَمُ مِثْلُ ___. (that pen)","answer":"ذٰلِكَ الْقَلَمِ","explanation":"Dhālika is an indeclinable demonstrative in genitive position; the following identifying noun shows genitive الْقَلَمِ.","legacyAliases":[{"rule":"مِثْلُ (mithlu) behaves like a noun and its complement is genitive.","example":"Complete: this pen is like that pen — هٰذَا الْقَلَمُ مِثْلُ ذٰلِكَ الْقَلَم___ (hādhā al-qalamu mithlu dhālika al-qalam___)."}]} -->
 
 ## Sources
 

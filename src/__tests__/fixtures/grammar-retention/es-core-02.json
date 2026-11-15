@@ -1,0 +1,569 @@
+{
+  "language": "es",
+  "lessons": [
+    {
+      "lessonId": "future",
+      "teachingPoints": [
+        {"id":"planned-future","kind":"rule","priority":"essential","sourceSection":"Periphrastic Future — ir + a + infinitive","objective":"Supply present ir for a third-person future plan.","format":"cloze","prompt":"Ella ___ a trabajar mañana. (ir, present)","answer":"va"},
+        {"id":"vocab-comer","kind":"vocabulary","priority":"optional","sourceSection":"Periphrastic Future — ir + a + infinitive","objective":"Understand the eating action in the future example.","word":"comer","meaning":"to eat"},
+        {"id":"vocab-estudiar","kind":"vocabulary","priority":"optional","sourceSection":"Periphrastic Future — ir + a + infinitive","objective":"Understand the study plan rather than its auxiliary alone.","word":"estudiar","meaning":"to study"},
+        {"id":"vocab-salir","kind":"vocabulary","priority":"optional","sourceSection":"Periphrastic Future — ir + a + infinitive","objective":"Retain the departure/going-out sense of the plan.","word":"salir","meaning":"to go out; to leave"},
+        {"id":"regular-future","kind":"rule","priority":"essential","sourceSection":"Futuro Simple — Regular Endings","objective":"Attach the future yo ending to the whole infinitive.","format":"cloze","prompt":"Mañana ___ (hablar, yo) con mi jefe.","answer":"hablaré"},
+        {"id":"future-nosotros","kind":"rule","priority":"optional","sourceSection":"Futuro Simple — Regular Endings","objective":"Apply the unaccented nosotros future ending to an -ir verb.","format":"cloze","prompt":"Nosotros ___ allí. (vivir, future)","answer":"viviremos"},
+        {"id":"future-vosotros","kind":"rule","priority":"optional","sourceSection":"Futuro Simple — Regular Endings","objective":"Preserve the Spain informal-plural ending and tilde.","format":"cloze","prompt":"Vosotros ___ mañana. (hablar, future; informal plural in much of Spain)","answer":"hablaréis"},
+        {"id":"future-irregular-stems","kind":"concept","priority":"essential","sourceSection":"Irregular Stems (Futuro Simple)","objective":"Separate stem irregularity from unchanged endings and conditional transfer.","format":"qa","prompt":"Do the shortened future stems also need a separate set of person endings?","answer":"No. Use the regular future endings; the same irregular stems also recur in the conditional."},
+        {"id":"future-tener","kind":"rule","priority":"essential","sourceSection":"Irregular Stems (Futuro Simple)","objective":"Produce tendr- rather than tener- in the future.","format":"cloze","prompt":"Yo ___ tiempo mañana. (tener, future)","answer":"tendré"},
+        {"id":"future-hacer","kind":"rule","priority":"essential","sourceSection":"Irregular Stems (Futuro Simple)","objective":"Produce the shortened har- future stem.","format":"cloze","prompt":"Nosotros ___ la tarea. (hacer, future)","answer":"haremos"},
+        {"id":"future-poder","kind":"rule","priority":"optional","sourceSection":"Irregular Stems (Futuro Simple)","objective":"Apply podr- with the tú future ending.","format":"cloze","prompt":"¿Tú ___ venir? (poder, future)","answer":"podrás"},
+        {"id":"future-decir","kind":"rule","priority":"optional","sourceSection":"Irregular Stems (Futuro Simple)","objective":"Recall the strongly reduced dir- stem.","format":"cloze","prompt":"Yo te lo ___. (decir, future)","answer":"diré"},
+        {"id":"future-querer","kind":"rule","priority":"optional","sourceSection":"Irregular Stems (Futuro Simple)","objective":"Retain double r in the querer future.","format":"cloze","prompt":"Ella ___ descansar. (querer, future)","answer":"querrá"},
+        {"id":"future-saber","kind":"rule","priority":"optional","sourceSection":"Irregular Stems (Futuro Simple)","objective":"Use sabr- without the infinitive's e.","format":"cloze","prompt":"Mañana yo ___ la respuesta. (saber, future)","answer":"sabré"},
+        {"id":"future-venir","kind":"rule","priority":"optional","sourceSection":"Irregular Stems (Futuro Simple)","objective":"Recall vendr- for future coming.","format":"cloze","prompt":"Ella ___ mañana. (venir, future)","answer":"vendrá"},
+        {"id":"future-salir","kind":"rule","priority":"optional","sourceSection":"Irregular Stems (Futuro Simple)","objective":"Recall the inserted d of saldr-.","format":"cloze","prompt":"Yo ___ temprano. (salir, future)","answer":"saldré"},
+        {"id":"future-poner","kind":"rule","priority":"optional","sourceSection":"Irregular Stems (Futuro Simple)","objective":"Recall pondr- for the future of poner.","format":"cloze","prompt":"Yo ___ la mesa. (poner, future)","answer":"pondré"},
+        {"id":"future-haber","kind":"rule","priority":"optional","sourceSection":"Irregular Stems (Futuro Simple)","objective":"Produce singular existential habrá with a plural noun.","format":"cloze","prompt":"En 2050 ___ más robots. (haber, future: there will be)","answer":"habrá"},
+        {"id":"future-caber","kind":"rule","priority":"optional","sourceSection":"Irregular Stems (Futuro Simple)","objective":"Recall cabr- in a concrete future-fitting context.","format":"cloze","prompt":"La maleta ___ aquí. (caber, future)","answer":"cabrá"},
+        {"id":"future-valer","kind":"rule","priority":"optional","sourceSection":"Irregular Stems (Futuro Simple)","objective":"Recall valdr- for future value.","format":"cloze","prompt":"El billete ___ más mañana. (valer, future)","answer":"valdrá"},
+        {"id":"present-conjecture","kind":"rule","priority":"essential","sourceSection":"Futuro Simple as Conjecture","objective":"Use the future for a guess about the present time.","format":"cloze","prompt":"No sé qué hora es. ___ las nueve. (must be)","answer":"Serán"},
+        {"id":"future-choice","kind":"concept","priority":"essential","sourceSection":"ir + a vs futuro simple — Which to Use?","objective":"Avoid treating near versus distant time as an obligatory tense split.","format":"qa","prompt":"Is ir a restricted to near events, with futuro simple obligatory for distant events?","answer":"No. These are tendencies: ir a is common for conversational plans, while futuro simple often suits predictions, formal writing and present conjecture."}
+      ],
+      "exclusions": [
+        {"sourceSection":"Sources","reason":"Reference links only; not separate recall targets."}
+      ]
+    },
+    {
+      "lessonId": "conditional",
+      "teachingPoints": [
+        {"id":"conditional-regular","kind":"rule","priority":"essential","sourceSection":"Formation — Regular Verbs","objective":"Build a nosotros conditional without dropping the infinitive ending.","format":"cloze","prompt":"Nosotros ___ juntos. (comer, conditional)","answer":"comeríamos"},
+        {"id":"conditional-endings","kind":"concept","priority":"essential","sourceSection":"Formation — Regular Verbs","objective":"Recall the person-ending series with all required í accents.","format":"qa","prompt":"Give the conditional endings in yo, tú, él, nosotros, vosotros, ellos order.","answer":"-ía, -ías, -ía, -íamos, -íais, -ían."},
+        {"id":"vocab-despacio","kind":"vocabulary","priority":"optional","sourceSection":"Formation — Regular Verbs","objective":"Understand the slow-speaking example.","word":"despacio","meaning":"slowly"},
+        {"id":"conditional-irregular","kind":"rule","priority":"essential","sourceSection":"Irregular Stems","objective":"Transfer the future's irregular podr- stem into conditional.","format":"cloze","prompt":"Con más tiempo, ___ (poder, yo) estudiar más.","answer":"podría"},
+        {"id":"hypothetical-result","kind":"rule","priority":"essential","sourceSection":"1. Hypothetical Situations (with si-clauses)","objective":"Put conditional in the hypothetical result, not the condition.","format":"cloze","prompt":"Si tuviera dinero, yo ___. (viajar, conditional)","answer":"viajaría"},
+        {"id":"polite-request","kind":"rule","priority":"essential","sourceSection":"2. Polite Requests","objective":"Soften an ability-based request with the conditional.","format":"cloze","prompt":"¿___ ayudarme? (poder, tú; courteous request)","answer":"Podrías"},
+        {"id":"vocab-ayudar","kind":"vocabulary","priority":"optional","sourceSection":"2. Polite Requests","objective":"Retain the help action in the courteous question.","word":"ayudar","meaning":"to help"},
+        {"id":"past-conjecture","kind":"concept","priority":"essential","sourceSection":"4. Probability in the Past","objective":"Interpret conditional conjecture as a guess about a past situation.","format":"qa","prompt":"In a guess about a past scene, does Serían las diez describe a definite future appointment?","answer":"No. It means it must have been about ten o'clock."},
+        {"id":"reported-future","kind":"rule","priority":"essential","sourceSection":"3. Future-in-the-Past (Reported Speech)","objective":"Place coming after a past promise using vendría.","format":"cloze","prompt":"Ella prometió que ___ (venir) a la fiesta.","answer":"vendría"},
+        {"id":"si-condition","kind":"rule","priority":"essential","sourceSection":"The si-Clause Pattern","objective":"Distinguish hypothetical conditional si from interrogative whether.","format":"cloze","prompt":"Si yo ___ tiempo, iría. (tener; hypothetical condition)","answer":"tuviera"}
+      ],
+      "exclusions": [
+        {"sourceSection":"Irregular Stems","reason":"The twelve-stem reference table repeats the future lesson; the retained poder application tests transfer rather than duplicating every future-stem item."},
+        {"sourceSection":"Sources","reason":"Bibliographic/reference material only."}
+      ]
+    },
+    {
+      "lessonId": "subjuntivo-presente",
+      "teachingPoints": [
+        {"id":"opposite-vowels","kind":"concept","priority":"essential","sourceSection":"Formation — The \"Opposite Vowel\" Rule","objective":"Map the yo-derived stem to the opposite-vowel ending series.","format":"qa","prompt":"After dropping -o from the present yo form, which vowel series do -ar verbs and -er/-ir verbs use?","answer":"-ar uses e endings; -er and -ir use a endings."},
+        {"id":"ar-subjunctive","kind":"rule","priority":"essential","sourceSection":"Formation — The \"Opposite Vowel\" Rule","objective":"Replace indicative -as with subjunctive -es for hablar.","format":"cloze","prompt":"Quiero que tú ___ conmigo. (hablar)","answer":"hables"},
+        {"id":"yo-irregular-transfer","kind":"rule","priority":"essential","sourceSection":"Formation — The \"Opposite Vowel\" Rule","objective":"Preserve the irregular tengo stem in a subjunctive wish.","format":"cloze","prompt":"Espero que tú ___ tiempo. (tener)","answer":"tengas"},
+        {"id":"conocer-transfer","kind":"rule","priority":"optional","sourceSection":"Formation — The \"Opposite Vowel\" Rule","objective":"Carry conozc- into third-person subjunctive.","format":"cloze","prompt":"Espero que ella ___ la ciudad. (conocer)","answer":"conozca"},
+        {"id":"irregular-estar","kind":"rule","priority":"essential","sourceSection":"Fully Irregular Subjunctives (Memorize These)","objective":"Keep the tilde in esté without confusing it with the identical usted imperative.","format":"cloze","prompt":"Espero que todo ___ (estar) bien.","answer":"esté","explanation":"Keep the accent in esté. The usted imperative is also esté, so the tilde does not distinguish it from that imperative."},
+        {"id":"irregular-ser","kind":"rule","priority":"essential","sourceSection":"Fully Irregular Subjunctives (Memorize These)","objective":"Recall sea rather than deriving a stem from soy.","format":"cloze","prompt":"Dudo que eso ___ verdad. (ser)","answer":"sea"},
+        {"id":"irregular-ir","kind":"rule","priority":"optional","sourceSection":"Fully Irregular Subjunctives (Memorize These)","objective":"Produce the irregular tú subjunctive vayas.","format":"cloze","prompt":"Quiero que tú ___ conmigo. (ir)","answer":"vayas"},
+        {"id":"irregular-haber","kind":"rule","priority":"optional","sourceSection":"Fully Irregular Subjunctives (Memorize These)","objective":"Recall existential haya.","format":"cloze","prompt":"Espero que ___ tiempo. (haber: there be)","answer":"haya"},
+        {"id":"irregular-dar","kind":"rule","priority":"optional","sourceSection":"Fully Irregular Subjunctives (Memorize These)","objective":"Distinguish the accented dar form from preposition de.","format":"cloze","prompt":"Espero que ella me ___ permiso. (dar)","answer":"dé"},
+        {"id":"irregular-saber","kind":"rule","priority":"optional","sourceSection":"Fully Irregular Subjunctives (Memorize These)","objective":"Produce sep- rather than a stem from sé.","format":"cloze","prompt":"Espero que tú ___ la respuesta. (saber)","answer":"sepas"},
+        {"id":"irregular-mnemonic","kind":"concept","priority":"optional","sourceSection":"Fully Irregular Subjunctives (Memorize These)","objective":"Expand each mnemonic initial into its irregular verb, with ver correctly excluded.","format":"qa","prompt":"Expand the DIS HES mnemonic into its six infinitives.","answer":"Dar, Ir, Saber, Haber, Estar, Ser.","explanation":"Each initial maps to one verb. Ver is separate: veo → vea follows the yo-drop procedure."},
+        {"id":"weirdo-mnemonic","kind":"concept","priority":"optional","sourceSection":"WEIRDO — Trigger Categories","objective":"Recall the category mnemonic without turning it into an unconditional mood rule.","format":"qa","prompt":"What do the six WEIRDO letters stand for in this lesson?","answer":"Wishes, Emotion, Impersonal expressions, Recommendations, Doubt/Denial, Ojalá."},
+        {"id":"same-subject-wish","kind":"rule","priority":"essential","sourceSection":"WEIRDO — Trigger Categories","objective":"Use infinitive for a simple same-subject wish.","format":"cloze","prompt":"Quiero ___. (I want to study.)","answer":"estudiar"},
+        {"id":"vocab-ojala","kind":"vocabulary","priority":"essential","sourceSection":"Examples in Context","objective":"Understand the lexical wish expression independently of conjugation.","word":"ojalá","meaning":"hopefully; I hope that"},
+        {"id":"impersonal-subjunctive","kind":"rule","priority":"essential","sourceSection":"Examples in Context","objective":"Apply subjunctive and g/gu spelling after es importante que.","format":"cloze","prompt":"Es importante que tú ___ a tiempo. (llegar)","answer":"llegues"},
+        {"id":"uncertainty-not-enough","kind":"concept","priority":"essential","sourceSection":"Subjunctive vs Indicative — The Trigger Test","objective":"Reject an automatic uncertainty-to-subjunctive inference.","format":"qa","prompt":"Why does No sé si viene use indicative even though the speaker is uncertain?","answer":"An indirect question with si does not automatically trigger subjunctive; compare Dudo que venga."},
+        {"id":"ojala-subjunctive","kind":"rule","priority":"essential","sourceSection":"Examples in Context","objective":"Select subjunctive after ojalá without revealing the missing form.","format":"cloze","prompt":"Ojalá ___ suerte. (tener, tú; present subjunctive)","answer":"tengas"}
+      ],
+      "exclusions": [
+        {"sourceSection":"Examples in Context","reason":"Additional desire/emotion examples reinforce the WEIRDO categories and yo-stem patterns already inventoried; they are not separate vocabulary lists."},
+        {"sourceSection":"Sources","reason":"Reference links only."}
+      ]
+    },
+    {
+      "lessonId": "subjuntivo-imperfecto",
+      "teachingPoints": [
+        {"id":"preterite-base","kind":"concept","priority":"essential","sourceSection":"Formation — The Preterite Trick","objective":"Choose the third-person plural preterite, not imperfect or future, as the stem source.","format":"qa","prompt":"Which indicative form supplies the imperfect-subjunctive stem, and what do you remove?","answer":"The ellos/ustedes preterite; remove -ron."},
+        {"id":"irregular-decir-base","kind":"rule","priority":"optional","sourceSection":"Formation — The Preterite Trick","objective":"Retain the no-extra-i irregular base from dijeron.","format":"cloze","prompt":"Quería que yo te lo ___. (decir, -ra form)","answer":"dijera"},
+        {"id":"two-series-scope","kind":"concept","priority":"essential","sourceSection":"Two Sets of Endings (-ra and -se)","objective":"Qualify the interchangeability of the two endings and polite quisiera.","format":"qa","prompt":"Can -ra and -se be exchanged in an ordinary si-condition, and does that mean every use is interchangeable?","answer":"They can alternate in ordinary subjunctive si-conditions, but not freely in uses such as polite quisiera."},
+        {"id":"nosotros-accent","kind":"rule","priority":"essential","sourceSection":"Two Sets of Endings (-ra and -se)","objective":"Keep the mandatory nosotros tilde in the derived form.","format":"cloze","prompt":"Quería que nosotros ___. (hablar, -ra form)","answer":"habláramos"},
+        {"id":"se-series","kind":"rule","priority":"optional","sourceSection":"Full Conjugation Examples","objective":"Construct the alternative -se form from fueron.","format":"cloze","prompt":"Si ella ___ aquí, ayudaría. (ser, -se form)","answer":"fuese"},
+        {"id":"hypothetical-condition","kind":"rule","priority":"essential","sourceSection":"1. Hypothetical si-Clauses (Contrary to Fact)","objective":"Form tuviera in the condition of a hypothetical statement.","format":"cloze","prompt":"Si ___ (tener, yo) más tiempo, aprendería más idiomas.","answer":"tuviera"},
+        {"id":"real-condition","kind":"concept","priority":"essential","sourceSection":"1. Hypothetical si-Clauses (Contrary to Fact)","objective":"Contrast an open real possibility with a remote hypothetical viewpoint.","format":"qa","prompt":"How does Si tengo tiempo, voy differ from Si tuviera tiempo, iría?","answer":"The first presents an open real possibility; the second presents a hypothetical or remote condition."},
+        {"id":"past-trigger","kind":"rule","priority":"essential","sourceSection":"2. Past-Context Subjunctive Triggers","objective":"Frame a desired coming from a past viewpoint.","format":"cloze","prompt":"Quería que tú ___. (venir, -ra form; past viewpoint)","answer":"vinieras"},
+        {"id":"polite-quisiera","kind":"rule","priority":"essential","sourceSection":"3. Polite Expressions with quisiera / pudiera","objective":"Use the conventional polite ordering form without a front-side answer.","format":"cloze","prompt":"___ un café con leche, por favor.","answer":"Quisiera"},
+        {"id":"vocab-reservar","kind":"vocabulary","priority":"optional","sourceSection":"3. Polite Expressions with quisiera / pudiera","objective":"Understand the restaurant reservation phrase.","word":"reservar una mesa","meaning":"to reserve a table"}
+      ],
+      "exclusions": [
+        {"sourceSection":"Full Conjugation Examples","reason":"The remaining cells repeat the already-taught preterite-base procedure and -ra/-se endings; the inventory retains irregular-base, -se and accented nosotros applications."},
+        {"sourceSection":"Sources","reason":"Bibliographic links only."}
+      ]
+    },
+    {
+      "lessonId": "por-vs-para",
+      "teachingPoints": [
+        {"id":"por-cause","kind":"rule","priority":"essential","sourceSection":"Cause or Reason (\"because of / on behalf of\")","objective":"Select por for the reason behind thanks.","format":"cloze","prompt":"Gracias ___ tu ayuda.","answer":"por"},
+        {"id":"por-exchange","kind":"rule","priority":"essential","sourceSection":"Exchange or Substitution","objective":"Identify payment as an exchange rather than recipient relation.","format":"cloze","prompt":"Pagué veinte dólares ___ el libro.","answer":"por"},
+        {"id":"duration-variation","kind":"concept","priority":"optional","sourceSection":"Duration of Time","objective":"Avoid obligatory English-for transfer and retain regional duration variation.","format":"qa","prompt":"Must a duration such as dos horas always be introduced by por?","answer":"No. Por is possible, especially in some American varieties; a bare duration or durante is also common."},
+        {"id":"por-means","kind":"rule","priority":"optional","sourceSection":"Means, Agent, or Mode","objective":"Use por for a communication channel.","format":"cloze","prompt":"Hablamos ___ teléfono.","answer":"por"},
+        {"id":"por-agent","kind":"rule","priority":"optional","sourceSection":"Means, Agent, or Mode","objective":"Recognize the passive agent introduced by por.","format":"cloze","prompt":"El libro fue escrito ___ Cervantes.","answer":"por"},
+        {"id":"vocab-por-correo","kind":"vocabulary","priority":"optional","sourceSection":"Means, Agent, or Mode","objective":"Retain the mail delivery expression as a phrase.","word":"por correo","meaning":"by mail"},
+        {"id":"por-route","kind":"rule","priority":"essential","sourceSection":"Movement Through or Along","objective":"Distinguish traversal from destination.","format":"cloze","prompt":"Caminamos ___ el parque. (through the park)","answer":"por"},
+        {"id":"por-rate","kind":"rule","priority":"optional","sourceSection":"Per / Rate","objective":"Express frequency per time unit.","format":"cloze","prompt":"Tres veces ___ semana.","answer":"por"},
+        {"id":"para-purpose","kind":"rule","priority":"essential","sourceSection":"Purpose or Goal (\"in order to\")","objective":"Mark an infinitival purpose rather than a motive.","format":"cloze","prompt":"Estudio ___ aprender.","answer":"para"},
+        {"id":"vocab-ahorrar","kind":"vocabulary","priority":"optional","sourceSection":"Purpose or Goal (\"in order to\")","objective":"Understand saving money for a goal.","word":"ahorrar","meaning":"to save money"},
+        {"id":"para-recipient","kind":"rule","priority":"essential","sourceSection":"Recipient (\"for someone\")","objective":"Identify the flowers' intended recipient without a two-answer cloze.","format":"cloze","prompt":"Compré flores ___ mi madre. (intended recipient)","answer":"para"},
+        {"id":"para-deadline","kind":"rule","priority":"essential","sourceSection":"Deadline","objective":"Use para for the report's due date.","format":"cloze","prompt":"Necesito el informe ___ el lunes. (by Monday)","answer":"para"},
+        {"id":"para-destination","kind":"rule","priority":"optional","sourceSection":"Direction Toward a Destination","objective":"Mark a travel destination instead of a route.","format":"cloze","prompt":"Salgo ___ Madrid mañana. (heading for Madrid)","answer":"para"},
+        {"id":"para-viewpoint","kind":"rule","priority":"optional","sourceSection":"Opinion or Point of View","objective":"Introduce a personal judgment.","format":"cloze","prompt":"___ mí, es muy difícil. (in my opinion)","answer":"Para"},
+        {"id":"para-employer","kind":"rule","priority":"optional","sourceSection":"Employment","objective":"Identify the client/employer receiving the work.","format":"cloze","prompt":"Trabajo ___ una marca española.","answer":"para"},
+        {"id":"para-standard","kind":"rule","priority":"optional","sourceSection":"Comparison / Unexpected Standard","objective":"Set a beginner's skill as an unexpectedly exceeded standard.","format":"cloze","prompt":"___ ser principiante, tocas muy bien.","answer":"Para"},
+        {"id":"arrow-mnemonic","kind":"concept","priority":"optional","sourceSection":"Memory Hooks","objective":"Map the two visual hooks to their precise prepositional meanings.","format":"qa","prompt":"What do the forward-arrow and exchange-cycle memory hooks suggest for the two Spanish for-prepositions?","answer":"Para points toward a purpose, destination, deadline or recipient; por evokes cause, exchange, means or movement through."}
+      ],
+      "exclusions": [
+        {"sourceSection":"Side-by-Side Contrast","reason":"The comparison table repeats the individually inventoried cause, exchange, purpose, recipient, route and agent contrasts."},
+        {"sourceSection":"Sources","reason":"Reference links only."}
+      ]
+    },
+    {
+      "lessonId": "gerund-progressive",
+      "teachingPoints": [
+        {"id":"gerund-endings","kind":"concept","priority":"essential","sourceSection":"Regular Patterns","objective":"Separate regular -ando and -iendo formation by infinitive class.","format":"qa","prompt":"Which gerund endings replace the infinitive endings of hablar, comer and vivir?","answer":"-ando for -ar; -iendo for -er and -ir."},
+        {"id":"gerund-leyendo","kind":"rule","priority":"essential","sourceSection":"Spelling and Stem Changes","objective":"Apply the y spelling of the leer gerund.","format":"cloze","prompt":"Estoy ___ un libro. (leer)","answer":"leyendo"},
+        {"id":"gerund-yendo","kind":"rule","priority":"optional","sourceSection":"Spelling and Stem Changes","objective":"Recall ir's exceptional gerund.","format":"cloze","prompt":"Estamos ___ a casa. (ir, gerund)","answer":"yendo"},
+        {"id":"gerund-durmiendo","kind":"rule","priority":"essential","sourceSection":"Spelling and Stem Changes","objective":"Apply the o-to-u gerund stem change.","format":"cloze","prompt":"El niño está ___. (dormir)","answer":"durmiendo"},
+        {"id":"gerund-pidiendo","kind":"rule","priority":"optional","sourceSection":"Spelling and Stem Changes","objective":"Apply the e-to-i gerund stem change.","format":"cloze","prompt":"Está ___ ayuda. (pedir)","answer":"pidiendo"},
+        {"id":"gerund-poder-exception","kind":"concept","priority":"optional","sourceSection":"Spelling and Stem Changes","objective":"Keep poder classified as an -er exception, not an -ir verb.","format":"qa","prompt":"Why should pudiendo not be described as the gerund of an -ir verb?","answer":"Its infinitive is poder, an -er verb with an exceptional o→u gerund."},
+        {"id":"past-progressive","kind":"rule","priority":"essential","sourceSection":"The Progressive: estar + gerundio","objective":"Conjugate only estar for an interrupted past-progressive frame.","format":"cloze","prompt":"Ellos ___ hablando cuando llegué. (estar, imperfect)","answer":"estaban"},
+        {"id":"gerund-invariability","kind":"concept","priority":"essential","sourceSection":"The Progressive: estar + gerundio","objective":"Distinguish auxiliary agreement from an invariable gerund.","format":"qa","prompt":"In estoy comiendo and estaban comiendo, does the second word agree with the subject?","answer":"No. The gerund is invariable; estar carries tense and person."},
+        {"id":"continuing-action","kind":"rule","priority":"optional","sourceSection":"seguir / continuar + gerundio = keep doing","objective":"Express continuing rain with seguir plus gerund.","format":"cloze","prompt":"Sigue ___. (llover: it keeps raining)","answer":"lloviendo"},
+        {"id":"vocab-seguir","kind":"vocabulary","priority":"optional","sourceSection":"seguir / continuar + gerundio = keep doing","objective":"Understand the continuation auxiliary's lexical contribution.","word":"seguir","meaning":"to continue; to keep doing (with a gerund)"},
+        {"id":"duration-llevar","kind":"rule","priority":"essential","sourceSection":"llevar + time expression + gerundio = have been doing for X time","objective":"Place llevar around a duration of continuing work.","format":"cloze","prompt":"___ tres años trabajando aquí. (llevar, yo)","answer":"Llevo"},
+        {"id":"infinitive-after-preposition","kind":"rule","priority":"essential","sourceSection":"DON'T use gerund after a preposition → use infinitive","objective":"Use the infinitive after antes de, not an English-style gerund.","format":"cloze","prompt":"Antes de ___, lávate las manos. (before eating)","answer":"comer"},
+        {"id":"future-plan-choice","kind":"concept","priority":"essential","sourceSection":"DON'T use gerund for future → use ir + a or present","objective":"Translate a future travel plan without a blanket ban on future-context progressives.","format":"qa","prompt":"How would you naturally announce Tomorrow I'm going to Madrid without copying English -ing?","answer":"Mañana voy a Madrid. / Mañana voy a ir a Madrid."},
+        {"id":"infinitive-as-noun","kind":"rule","priority":"essential","sourceSection":"DON'T use gerund as a noun → use infinitive","objective":"Name the liked activity with an infinitive.","format":"cloze","prompt":"Me gusta ___ (run) por las mañanas.","answer":"correr"},
+        {"id":"habitual-present","kind":"concept","priority":"essential","sourceSection":"Simple present covers English continuous in many cases","objective":"Express a daily habit with natural simple present.","format":"qa","prompt":"Give a natural Spanish sentence for the habit I study Spanish every day, without forcing a progressive.","answer":"Estudio español todos los días."},
+        {"id":"vocab-correr","kind":"vocabulary","priority":"optional","sourceSection":"DON'T use gerund as a noun → use infinitive","objective":"Retain the running action independently of its grammatical form.","word":"correr","meaning":"to run"}
+      ],
+      "exclusions": [
+        {"sourceSection":"The Progressive: estar + gerundio","reason":"The remaining tense examples illustrate the same conjugated-auxiliary/invariable-gerund distinction, not new paradigms to memorize."},
+        {"sourceSection":"Sources","reason":"Reference links only."}
+      ]
+    },
+    {
+      "lessonId": "relative-pronouns",
+      "teachingPoints": [
+        {"id":"relative-que","kind":"rule","priority":"essential","sourceSection":"Que — The All-Purpose Relative Pronoun","objective":"Link a thing antecedent to a restrictive clause with invariable que.","format":"cloze","prompt":"El libro ___ leo es interesante.","answer":"que"},
+        {"id":"bare-que-preposition","kind":"concept","priority":"optional","sourceSection":"Que — The All-Purpose Relative Pronoun","objective":"Qualify the short-preposition shortcut for bare que.","format":"qa","prompt":"Does La ciudad en que nací imply that every short preposition always permits bare que?","answer":"No. Bare que is possible in certain constructions; article-bearing forms such as en la que are also available."},
+        {"id":"relative-quienes","kind":"rule","priority":"essential","sourceSection":"Quien / Quienes — For People Only","objective":"Apply human-reference and plural agreement after a preposition.","format":"cloze","prompt":"Los estudiantes a ___ enseño son amables. (use the quien series)","answer":"quienes"},
+        {"id":"restrictive-person","kind":"concept","priority":"essential","sourceSection":"Quien / Quienes — For People Only","objective":"Avoid choosing bare quien solely because the antecedent is human.","format":"qa","prompt":"Why is El chico que vi the taught choice rather than El chico quien vi?","answer":"Without a preposition, this restrictive clause uses que; quien is mainly used after prepositions or in parenthetical clauses."},
+        {"id":"cual-agreement","kind":"rule","priority":"essential","sourceSection":"El cual / La cual / Los cuales / Las cuales — Formal Clarity","objective":"Match a formal prepositional relative's article to razón.","format":"cloze","prompt":"La razón por ___ cual vine es importante.","answer":"la"},
+        {"id":"cuyo-possessed-agreement","kind":"rule","priority":"essential","sourceSection":"Cuyo / Cuya / Cuyos / Cuyas — Whose","objective":"Agree with possessed casa despite masculine possessor.","format":"cloze","prompt":"El hombre ___ casa vendí vive aquí. (whose)","answer":"cuya"},
+        {"id":"cuyas-novelas","kind":"rule","priority":"optional","sourceSection":"Cuyo / Cuya / Cuyos / Cuyas — Whose","objective":"Produce feminine plural cuyas for novelas.","format":"cloze","prompt":"La autora ___ novelas leo es famosa. (whose)","answer":"cuyas"},
+        {"id":"cuyo-register","kind":"concept","priority":"optional","sourceSection":"Cuyo / Cuya / Cuyos / Cuyas — Whose","objective":"Retain the written/formal preference without changing ownership into recipient meaning.","format":"qa","prompt":"Why might a speaker recast a sentence with cuyo in ordinary conversation?","answer":"Cuyo is relatively formal/written; a recast with de can express the same ownership more conversationally."},
+        {"id":"vocab-donde","kind":"vocabulary","priority":"optional","sourceSection":"Donde — Relative of Place","objective":"Recognize the unaccented place relative.","word":"donde","meaning":"where (relative of place)"},
+        {"id":"nominal-lo-que","kind":"rule","priority":"essential","sourceSection":"Lo que / Lo cual — Neuter Relatives","objective":"Form a nominal relative with no specific noun antecedent.","format":"cloze","prompt":"No entiendo ___ que dijiste.","answer":"lo"},
+        {"id":"propositional-lo-cual","kind":"rule","priority":"optional","sourceSection":"Lo que / Lo cual — Neuter Relatives","objective":"Refer back to the whole arrival event rather than a gendered noun.","format":"cloze","prompt":"Llegó tarde, lo ___ me molestó. (which bothered me)","answer":"cual"}
+      ],
+      "exclusions": [
+        {"sourceSection":"Cuyo / Cuya / Cuyos / Cuyas — Whose","reason":"Assessment is covered by the reviewed second-quiz answer correction: index 2 (cuyos) becomes index 3 (cuyas), agreeing with feminine plural novelas. Question, options, count and order remain unchanged; cuyas-novelas independently retains the same agreement application."},
+        {"sourceSection":"Quick Reference Table","reason":"Summary repeats the individually inventoried relative series and usage restrictions."},
+        {"sourceSection":"Sources","reason":"Bibliography only."}
+      ]
+    },
+    {
+      "lessonId": "passive-voice",
+      "teachingPoints": [
+        {"id":"passive-structure","kind":"concept","priority":"essential","sourceSection":"Formal Passive: ser + Past Participle","objective":"Identify conjugated ser as the tense-bearing element rather than the participle.","format":"qa","prompt":"Which element carries tense in La carta fue escrita por Ana?","answer":"Fue, the conjugated form of ser."},
+        {"id":"passive-agent","kind":"rule","priority":"optional","sourceSection":"Formal Passive: ser + Past Participle","objective":"Introduce the writer as agent rather than confuse agent with patient subject.","format":"cloze","prompt":"La carta fue escrita ___ Ana.","answer":"por"},
+        {"id":"regular-participle","kind":"rule","priority":"optional","sourceSection":"Regular Past Participles","objective":"Form a regular -er participle independently of passive agreement.","format":"cloze","prompt":"The participle of comer is ___.","answer":"comido"},
+        {"id":"passive-agreement","kind":"rule","priority":"essential","sourceSection":"Formal Passive: ser + Past Participle","objective":"Inflect irregular escrito for the feminine plural patient subject.","format":"cloze","prompt":"Las cartas fueron ___ por el director. (escribir)","answer":"escritas"},
+        {"id":"irregular-abrir","kind":"rule","priority":"optional","sourceSection":"Irregular Past Participles","objective":"Recall abierto and apply feminine singular agreement.","format":"cloze","prompt":"La ventana fue ___ ayer. (abrir)","answer":"abierta"},
+        {"id":"irregular-romper","kind":"rule","priority":"optional","sourceSection":"Irregular Past Participles","objective":"Recall roto rather than a regularized participle.","format":"cloze","prompt":"Los cristales fueron ___. (romper)","answer":"rotos"},
+        {"id":"vocab-roto","kind":"vocabulary","priority":"optional","sourceSection":"Irregular Past Participles","objective":"Retain the lexical broken sense of the irregular participle.","word":"roto","meaning":"broken"},
+        {"id":"vocab-cubierto","kind":"vocabulary","priority":"optional","sourceSection":"Irregular Past Participles","objective":"Understand the covering participle as a real lexical form.","word":"cubierto","meaning":"covered (participle of cubrir)"},
+        {"id":"se-agreement","kind":"rule","priority":"essential","sourceSection":"Se Passive — Everyday Usage","objective":"Test plural verb agreement, not merely supply se.","format":"cloze","prompt":"Se ___ libros en esa tienda. (vender, present)","answer":"venden"},
+        {"id":"se-singular","kind":"rule","priority":"optional","sourceSection":"Se Passive — Everyday Usage","objective":"Contrast singular passive subject agreement with venden casas.","format":"cloze","prompt":"Se ___ una casa. (vender, present)","answer":"vende"},
+        {"id":"impersonal-personal-a","kind":"rule","priority":"essential","sourceSection":"Impersonal se with People","objective":"Keep singular verb agreement with an a-marked human object.","format":"cloze","prompt":"Se ___ a los sospechosos ayer. (detener, preterite)","answer":"detuvo"},
+        {"id":"human-passive-scope","kind":"concept","priority":"optional","sourceSection":"Impersonal se with People","objective":"Distinguish a human passive subject from a personal-a object.","format":"qa","prompt":"Why can Se necesitan médicos have a plural verb, unlike Se busca a los culpables?","answer":"Médicos is an indefinite passive subject; a los culpables is a personal-a object in an impersonal construction."},
+        {"id":"passive-register","kind":"concept","priority":"essential","sourceSection":"Comparing the Two Constructions","objective":"Choose a construction based on agent expression and register.","format":"qa","prompt":"Which passive construction conveniently names an agent with por, and which normally leaves the agent unexpressed?","answer":"Ser + participle can name the agent with por; the ordinary se passive leaves it unexpressed."}
+      ],
+      "exclusions": [
+        {"sourceSection":"Irregular Past Participles","reason":"The unchanged irregular-participle reference list recurs in the two perfect-tense lessons; agreement applications here and focused perfect applications avoid making each repeated table a new mandatory deck."},
+        {"sourceSection":"Sources","reason":"Bibliographic references only."}
+      ]
+    },
+    {
+      "lessonId": "diminutives",
+      "teachingPoints": [
+        {"id":"diminutive-tone","kind":"concept","priority":"essential","sourceSection":"Diminutives — Small, Sweet, or Soft","objective":"Retain affection and politeness alongside literal size.","format":"qa","prompt":"Does a diminutive always mean the referent is physically small?","answer":"No. It can convey affection, warmth or a softened request as well as small size."},
+        {"id":"vocab-casita","kind":"vocabulary","priority":"optional","sourceSection":"-ito / -ita (Most Common)","objective":"Understand both size and affectionate house senses.","word":"casita","meaning":"little house; dear house"},
+        {"id":"vocab-perrito","kind":"vocabulary","priority":"optional","sourceSection":"-ito / -ita (Most Common)","objective":"Retain the puppy/small-dog lexical example.","word":"perrito","meaning":"little dog; puppy"},
+        {"id":"vocab-abuelita","kind":"vocabulary","priority":"essential","sourceSection":"-ito / -ita (Most Common)","objective":"Understand the affectionate kinship term without literal smallness.","word":"abuelita","meaning":"grandma (affectionate)"},
+        {"id":"vocab-momentito","kind":"vocabulary","priority":"essential","sourceSection":"-ito / -ita (Most Common)","objective":"Recognize the softened short-wait request.","word":"un momentito","meaning":"just a moment (softened request)"},
+        {"id":"vocab-cafecito","kind":"vocabulary","priority":"optional","sourceSection":"-ito / -ita (Most Common)","objective":"Retain coffee's affectionate or softened diminutive meaning separately from suffix spelling.","word":"cafecito","meaning":"a little coffee; a coffee (affectionate or softened request)"},
+        {"id":"cafecito-formation","kind":"rule","priority":"essential","sourceSection":"-ito / -ita (Most Common)","objective":"Complete cafecito with only the missing suffix tokens.","format":"cloze","prompt":"El café está rico. Voy a pedir un cafe___.","answer":"cito"},
+        {"id":"diminutive-variants","kind":"concept","priority":"optional","sourceSection":"-ito / -ita (Most Common)","objective":"Avoid an exceptionless suffix rule based only on final letters.","format":"qa","prompt":"Do amorcito and panecito establish one compulsory diminutive suffix for every n-, r- or e-final word?","answer":"No. -cito and -ecito are common patterns whose distribution varies by word and region."},
+        {"id":"vocab-chiquillo","kind":"vocabulary","priority":"optional","sourceSection":"-illo / -illa","objective":"Keep the familiar and potentially dismissive child sense.","word":"chiquillo","meaning":"kid; little child (familiar, sometimes dismissive)"},
+        {"id":"vocab-ventanilla","kind":"vocabulary","priority":"essential","sourceSection":"-illo / -illa","objective":"Retain the conventional ticket-window meaning.","word":"ventanilla","meaning":"ticket window; small window"},
+        {"id":"vocab-pajilla","kind":"vocabulary","priority":"optional","sourceSection":"-illo / -illa","objective":"Qualify the regional drinking-straw sense.","word":"pajilla","meaning":"drinking straw (in some countries; other senses vary)"},
+        {"id":"vocab-bolsillo","kind":"vocabulary","priority":"essential","sourceSection":"-illo / -illa","objective":"Learn pocket rather than mechanically translate little bag.","word":"bolsillo","meaning":"pocket"},
+        {"id":"lexicalized-diminutive","kind":"concept","priority":"essential","sourceSection":"-illo / -illa","objective":"Explain why lexicalized diminutives require whole-word meanings.","format":"qa","prompt":"Why should bolsillo be learned as a whole word instead of translated mechanically as little bag?","answer":"It is lexicalized with the meaning pocket."},
+        {"id":"ico-regional","kind":"concept","priority":"optional","sourceSection":"-ico / -ica (Regional)","objective":"Associate the -ico pattern with its named regions rather than all Spanish.","format":"qa","prompt":"Where does this lesson locate common -ico/-ica diminutives such as momentico?","answer":"Costa Rica, Colombia, parts of Venezuela and Aragón in Spain."},
+        {"id":"vocab-sillon","kind":"vocabulary","priority":"essential","sourceSection":"-ón / -ona","objective":"Retain the lexicalized armchair meaning and accent.","word":"sillón","meaning":"armchair"},
+        {"id":"vocab-solteron","kind":"vocabulary","priority":"optional","sourceSection":"-ón / -ona","objective":"Retain the often pejorative habitual-state meaning.","word":"solterón","meaning":"confirmed bachelor (often pejorative)"},
+        {"id":"vocab-pregunton","kind":"vocabulary","priority":"optional","sourceSection":"-ón / -ona","objective":"Learn the corrected questioning-person adjective.","word":"preguntón","meaning":"inquisitive; always asking questions (sometimes disapproving)"},
+        {"id":"vocab-casona","kind":"vocabulary","priority":"optional","sourceSection":"-ón / -ona","objective":"Understand the corrected large-house augmentative example.","word":"casona","meaning":"large house"},
+        {"id":"augmentative-tone","kind":"concept","priority":"essential","sourceSection":"Augmentatives — Big, Intense, or Negative","objective":"Distinguish admiration from negative augmentative attitudes.","format":"qa","prompt":"Does an augmentative necessarily praise its referent?","answer":"No. It can express admiration, intensity, large size or a negative attitude, depending on the word and context."},
+        {"id":"vocab-golpazo","kind":"vocabulary","priority":"optional","sourceSection":"-azo / -aza","objective":"Understand impact rather than merely physical bigness.","word":"golpazo","meaning":"powerful blow"},
+        {"id":"vocab-cochazo","kind":"vocabulary","priority":"optional","sourceSection":"-azo / -aza","objective":"Retain the admiring car meaning.","word":"cochazo","meaning":"great or impressive car (admiring)"},
+        {"id":"vocab-grandote","kind":"vocabulary","priority":"optional","sourceSection":"-ote / -ota","objective":"Recognize the oversized informal adjective.","word":"grandote","meaning":"very big; oversized (often informal)"},
+        {"id":"vocab-palabrota","kind":"vocabulary","priority":"essential","sourceSection":"-ote / -ota","objective":"Learn the lexicalized swear-word meaning.","word":"palabrota","meaning":"swear word"},
+        {"id":"adjective-diminutive","kind":"rule","priority":"optional","sourceSection":"Diminutives on Adjectives and Adverbs","objective":"Apply a diminutive to an adjective without duplicating the stem on reveal.","format":"cloze","prompt":"Es pequeñ___. (pequeño, affectionate diminutive)","answer":"ito"},
+        {"id":"vocab-ahorita","kind":"vocabulary","priority":"essential","sourceSection":"Diminutives on Adjectives and Adverbs","objective":"Preserve the region-dependent timing of ahorita.","word":"ahorita","meaning":"now; very soon, or later depending on region and context"}
+      ],
+      "exclusions": [
+        {"sourceSection":"Sources","reason":"Bibliographic references only."}
+      ]
+    },
+    {
+      "lessonId": "expressions",
+      "teachingPoints": [
+        {"id":"vocab-tomar-el-pelo","kind":"vocabulary","priority":"essential","sourceSection":"Body-Part Idioms","objective":"Recognize teasing rather than literal hair-taking.","word":"tomar el pelo","meaning":"to tease; to pull someone's leg"},
+        {"id":"vocab-pelos-lengua","kind":"vocabulary","priority":"optional","sourceSection":"Body-Part Idioms","objective":"Retain the outspoken-person idiom as a whole phrase.","word":"no tener pelos en la lengua","meaning":"to be outspoken; to speak bluntly"},
+        {"id":"vocab-ojo-cara","kind":"vocabulary","priority":"optional","sourceSection":"Body-Part Idioms","objective":"Understand the idiom for a very high price.","word":"costar un ojo de la cara","meaning":"to cost an arm and a leg; to be very expensive"},
+        {"id":"vocab-meter-pata","kind":"vocabulary","priority":"essential","sourceSection":"Body-Part Idioms","objective":"Recognize a blunder rather than a literal foot movement.","word":"meter la pata","meaning":"to mess up; to put one's foot in it"},
+        {"id":"vocab-vista-gorda","kind":"vocabulary","priority":"optional","sourceSection":"Body-Part Idioms","objective":"Retain the deliberate-ignoring idiom.","word":"hacer la vista gorda","meaning":"to turn a blind eye"},
+        {"id":"vocab-echar-menos","kind":"vocabulary","priority":"essential","sourceSection":"Feelings & State of Mind","objective":"Retain the missing-someone phrase independently of its conjugation.","word":"echar de menos","meaning":"to miss someone or something"},
+        {"id":"vocab-nubes","kind":"vocabulary","priority":"optional","sourceSection":"Feelings & State of Mind","objective":"Recognize mental distraction in the clouds idiom.","word":"estar en las nubes","meaning":"to daydream; to be distracted"},
+        {"id":"vocab-hecho-polvo","kind":"vocabulary","priority":"optional","sourceSection":"Feelings & State of Mind","objective":"Retain exhaustion with informal Spain-leaning usage.","word":"estar hecho polvo","meaning":"to be exhausted or shattered (informal, especially Spain)"},
+        {"id":"vocab-cabra","kind":"vocabulary","priority":"optional","sourceSection":"Feelings & State of Mind","objective":"Recognize the potentially insulting informal expression.","word":"estar como una cabra","meaning":"to be crazy; to be off one's rocker (informal, potentially insulting)"},
+        {"id":"vocab-ganas","kind":"vocabulary","priority":"essential","sourceSection":"Feelings & State of Mind","objective":"Retain the desire construction with its de complement.","word":"tener ganas de","meaning":"to feel like; to want to (followed by an infinitive)"},
+        {"id":"miss-family","kind":"rule","priority":"optional","sourceSection":"Feelings & State of Mind","objective":"Conjugate the missing-family expression for yo.","format":"cloze","prompt":"___ de menos a mi familia cuando viajo.","answer":"Echo"},
+        {"id":"vocab-valer-pena","kind":"vocabulary","priority":"essential","sourceSection":"Effort, Worth & Action","objective":"Understand that an effort is worthwhile rather than painful.","word":"valer la pena","meaning":"to be worth it"},
+        {"id":"vocab-pan-comido","kind":"vocabulary","priority":"optional","sourceSection":"Effort, Worth & Action","objective":"Recognize the ease idiom.","word":"ser pan comido","meaning":"to be a piece of cake; to be very easy"},
+        {"id":"vocab-dar-lata","kind":"vocabulary","priority":"optional","sourceSection":"Effort, Worth & Action","objective":"Retain the nuisance expression's informal regional preference.","word":"dar la lata","meaning":"to bother; to be a nuisance (informal, especially Spain)"},
+        {"id":"vocab-cruzar-dedos","kind":"vocabulary","priority":"optional","sourceSection":"Effort, Worth & Action","objective":"Recognize crossing fingers as a wish for luck.","word":"cruzar los dedos","meaning":"to cross one's fingers for luck"},
+        {"id":"vocab-no-hay-mal","kind":"vocabulary","priority":"optional","sourceSection":"Proverbs & Fixed Sayings","objective":"Interpret the silver-lining proverb as a complete saying.","word":"No hay mal que por bien no venga","meaning":"Every cloud has a silver lining"},
+        {"id":"vocab-quien-madruga","kind":"vocabulary","priority":"optional","sourceSection":"Proverbs & Fixed Sayings","objective":"Understand the proverb praising early effort.","word":"A quien madruga, Dios le ayuda","meaning":"The early bird catches the worm (proverb praising early effort)"},
+        {"id":"vocab-mas-vale-tarde","kind":"vocabulary","priority":"optional","sourceSection":"Proverbs & Fixed Sayings","objective":"Retain the better-late-than-never fixed saying.","word":"Más vale tarde que nunca","meaning":"Better late than never"},
+        {"id":"feel-like-pattern","kind":"rule","priority":"essential","sourceSection":"Feelings & State of Mind","objective":"Supply ganas in the desire-plus-infinitive construction without a revealing hint.","format":"cloze","prompt":"Tengo ___ de salir a caminar.","answer":"ganas"}
+      ],
+      "exclusions": [
+        {"sourceSection":"Quick Pronunciation Tips","reason":"Pronunciation strings repeat five phrases already inventoried; the study advice recommends contextual practice, not a further lexical or rule target."},
+        {"sourceSection":"Sources","reason":"Bibliography/reference links only."}
+      ]
+    },
+    {
+      "lessonId": "pluscuamperfecto",
+      "teachingPoints": [
+        {"id":"haber-nosotros","kind":"rule","priority":"essential","sourceSection":"Haber in the Imperfect","objective":"Supply the accented nosotros auxiliary for a prior past event.","format":"cloze","prompt":"Nosotros ya ___ comido cuando llamaste.","answer":"habíamos"},
+        {"id":"haber-ellos","kind":"rule","priority":"optional","sourceSection":"Haber in the Imperfect","objective":"Agree the imperfect auxiliary, not the participle, with ellos.","format":"cloze","prompt":"Ellos ya ___ llegado cuando salí.","answer":"habían"},
+        {"id":"pluperfect-regular-participle","kind":"rule","priority":"optional","sourceSection":"Regular Past Participles","objective":"Form a regular -ado participle after haber without feminine agreement.","format":"cloze","prompt":"Ella había ___ con él. (hablar)","answer":"hablado"},
+        {"id":"pluperfect-hecho","kind":"rule","priority":"essential","sourceSection":"Irregular Past Participles","objective":"Use the irregular hacer participle in an earlier completed action.","format":"cloze","prompt":"Ellos habían ___ la tarea. (hacer)","answer":"hecho"},
+        {"id":"pluperfect-dicho","kind":"rule","priority":"optional","sourceSection":"Irregular Past Participles","objective":"Recall dicho rather than regularizing decir.","format":"cloze","prompt":"Yo había ___ la verdad. (decir)","answer":"dicho"},
+        {"id":"pluperfect-vuelto","kind":"rule","priority":"optional","sourceSection":"Irregular Past Participles","objective":"Use invariant vuelto with a feminine subject after haber.","format":"cloze","prompt":"Ella había ___ a casa. (volver)","answer":"vuelto"},
+        {"id":"pluperfect-puesto","kind":"rule","priority":"optional","sourceSection":"Irregular Past Participles","objective":"Recall the irregular poner participle.","format":"cloze","prompt":"Habíamos ___ la mesa. (poner)","answer":"puesto"},
+        {"id":"pluperfect-formation","kind":"rule","priority":"essential","sourceSection":"Formation","objective":"Supply había after the reflexive pronoun without changing ido.","format":"cloze","prompt":"Cuando llegué, ella ya se ___ ido.","answer":"había"},
+        {"id":"past-before-past","kind":"concept","priority":"essential","sourceSection":"Usage — The Past Before the Past","objective":"Order the leaving and arrival events using the pluperfect.","format":"qa","prompt":"In Cuando llegué, ella ya se había ido, which happened first: her leaving or my arrival?","answer":"Her leaving happened before my arrival."},
+        {"id":"vocab-ya","kind":"vocabulary","priority":"essential","sourceSection":"Trigger Words & Phrases","objective":"Retain the prior-completion cue.","word":"ya","meaning":"already"},
+        {"id":"vocab-todavia-no","kind":"vocabulary","priority":"essential","sourceSection":"Trigger Words & Phrases","objective":"Recognize noncompletion up to the reference point.","word":"todavía no","meaning":"not yet"},
+        {"id":"vocab-antes-de-que","kind":"vocabulary","priority":"optional","sourceSection":"Trigger Words & Phrases","objective":"Recognize the clause-introducing before expression.","word":"antes de que","meaning":"before (introducing a clause)"},
+        {"id":"vocab-despues-de-que","kind":"vocabulary","priority":"optional","sourceSection":"Trigger Words & Phrases","objective":"Recognize the clause-introducing after expression.","word":"después de que","meaning":"after (introducing a clause)"},
+        {"id":"temporal-cues-not-triggers","kind":"concept","priority":"optional","sourceSection":"Trigger Words & Phrases","objective":"Avoid treating a common adverb as an automatic tense selector.","format":"qa","prompt":"Does ya on its own force the pluperfect?","answer":"No. The pluperfect needs a past reference point and an earlier event; ya simply reinforces already."},
+        {"id":"prior-action-application","kind":"rule","priority":"essential","sourceSection":"Pluperfect vs. Other Past Tenses","objective":"Encode eating completed before a later past arrival.","format":"cloze","prompt":"Cuando llegó el jefe, tú ya ___ comido. (haber; completed before his arrival)","answer":"habías"}
+      ],
+      "exclusions": [
+        {"sourceSection":"Irregular Past Participles","reason":"The remaining reference-table forms repeat the passive/perfect irregular-participle inventory; hacer, decir, volver and poner retain focused pluperfect practice."},
+        {"sourceSection":"Timeline Visualization","reason":"The diagram repeats the event-order relation tested by past-before-past."},
+        {"sourceSection":"Sources","reason":"Bibliography only."}
+      ]
+    },
+    {
+      "lessonId": "presente-perfecto",
+      "teachingPoints": [
+        {"id":"perfect-nosotros","kind":"rule","priority":"essential","sourceSection":"Haber in the Present Tense","objective":"Use standard hemos rather than habemos as perfect auxiliary.","format":"cloze","prompt":"Nosotros ___ terminado.","answer":"hemos"},
+        {"id":"perfect-vosotros","kind":"rule","priority":"optional","sourceSection":"Haber in the Present Tense","objective":"Recall accented habéis for vosotros.","format":"cloze","prompt":"Vosotros ___ llegado pronto.","answer":"habéis"},
+        {"id":"perfect-regular-participle","kind":"rule","priority":"optional","sourceSection":"Regular Past Participles","objective":"Construct the regular -ir participle.","format":"cloze","prompt":"He ___ aquí muchos años. (vivir)","answer":"vivido"},
+        {"id":"perfect-hecho","kind":"rule","priority":"essential","sourceSection":"Irregular Past Participles","objective":"Recall the irregular participle in hemos hecho.","format":"cloze","prompt":"Hemos ___ la tarea. (hacer)","answer":"hecho"},
+        {"id":"perfect-visto","kind":"rule","priority":"optional","sourceSection":"Irregular Past Participles","objective":"Recall visto in an experience question.","format":"cloze","prompt":"¿Has ___ esa película? (ver)","answer":"visto"},
+        {"id":"perfect-abierto","kind":"rule","priority":"optional","sourceSection":"Irregular Past Participles","objective":"Keep abierto invariable after haber despite feminine nouns.","format":"cloze","prompt":"Ella ha ___ la puerta. (abrir)","answer":"abierto"},
+        {"id":"perfect-muerto","kind":"rule","priority":"optional","sourceSection":"Irregular Past Participles","objective":"Recall invariant muerto for a completed dying event.","format":"cloze","prompt":"La planta ha ___. (morir)","answer":"muerto"},
+        {"id":"perfect-formation","kind":"rule","priority":"essential","sourceSection":"Formation","objective":"Choose the tú auxiliary without an unstated-person ambiguity.","format":"cloze","prompt":"¿Alguna vez ___ comido ceviche? (tú)","answer":"has"},
+        {"id":"life-experience","kind":"concept","priority":"essential","sourceSection":"Key Usage — Life Experiences","objective":"Interpret an experience question without a finished past date.","format":"qa","prompt":"What time frame does ¿Alguna vez has estado en Perú? ask about?","answer":"Experience at any time up to now, without naming a finished past occasion."},
+        {"id":"perfect-regional-choice","kind":"concept","priority":"essential","sourceSection":"Regional Difference — Spain vs. Latin America","objective":"Preserve within-region variation rather than a continental correctness or formality claim.","format":"qa","prompt":"Are Hoy he comido and Hoy comí separated by a rule that one continent's form is incorrect on the other?","answer":"No. The perfect is common in current time frames in much of central/northern Spain; many American varieties prefer preterite for completed events, with variation within both areas.","explanation":"The perfect also has ordinary conversational uses in Latin America; avoid treating it as uniformly bookish."},
+        {"id":"vocab-alguna-vez","kind":"vocabulary","priority":"essential","sourceSection":"Trigger Words","objective":"Recognize the experience-question time phrase.","word":"alguna vez","meaning":"ever; at some time"},
+        {"id":"vocab-recientemente","kind":"vocabulary","priority":"optional","sourceSection":"Trigger Words","objective":"Understand the recent-time cue without automatically choosing a tense.","word":"recientemente","meaning":"recently"},
+        {"id":"vocab-todavia-no","kind":"vocabulary","priority":"essential","sourceSection":"Trigger Words","objective":"Understand the still-unfinished response context.","word":"todavía no","meaning":"not yet"},
+        {"id":"perfect-cue-scope","kind":"concept","priority":"optional","sourceSection":"Trigger Words","objective":"Reject an automatic hoy-to-perfect rule.","format":"qa","prompt":"Does hoy make a simple preterite sentence automatically wrong?","answer":"No. Time words interact with regional usage and the speaker's view of the event."},
+        {"id":"haber-invariability","kind":"rule","priority":"essential","sourceSection":"Participle Invariability — A Common Mistake","objective":"Contrast invariant escrito after haber with agreeing escrita after ser.","format":"cloze","prompt":"Ella ha ___ la carta. (escribir)","answer":"escrito"}
+      ],
+      "exclusions": [
+        {"sourceSection":"Irregular Past Participles","reason":"The repeated reference list is shared with passive/pluperfect teaching; focused perfect practice covers hacer, ver, abrir, morir and escribir without another mandatory table-recall card."},
+        {"sourceSection":"Trigger Words","reason":"Hoy, ya, nunca and current-period examples repeat the time vocabulary and temporal-cue contrasts already inventoried in this batch; they are not independent tense triggers."},
+        {"sourceSection":"Sources","reason":"Reference/bibliographic material only."}
+      ]
+    },
+    {
+      "lessonId": "advanced-prepositions",
+      "teachingPoints": [
+        {"id":"vocab-ante","kind":"vocabulary","priority":"optional","sourceSection":"Less Common Prepositions","objective":"Retain the formal in-the-presence-of sense.","word":"ante","meaning":"before; in the presence of (often formal/legal)"},
+        {"id":"vocab-bajo","kind":"vocabulary","priority":"optional","sourceSection":"Less Common Prepositions","objective":"Recognize literal and figurative under.","word":"bajo","meaning":"under (also figuratively)"},
+        {"id":"vocab-contra","kind":"vocabulary","priority":"optional","sourceSection":"Less Common Prepositions","objective":"Retain the opposition preposition.","word":"contra","meaning":"against"},
+        {"id":"vocab-hacia","kind":"vocabulary","priority":"essential","sourceSection":"Less Common Prepositions","objective":"Distinguish direction and approximate time senses.","word":"hacia","meaning":"toward; around (a time)"},
+        {"id":"vocab-hasta","kind":"vocabulary","priority":"essential","sourceSection":"Less Common Prepositions","objective":"Retain even as well as an endpoint.","word":"hasta","meaning":"until; up to; even"},
+        {"id":"vocab-mediante","kind":"vocabulary","priority":"essential","sourceSection":"Less Common Prepositions","objective":"Retain the formal means expression.","word":"mediante","meaning":"by means of (formal)"},
+        {"id":"vocab-segun","kind":"vocabulary","priority":"essential","sourceSection":"Less Common Prepositions","objective":"Recognize attribution to a source and keep the accent.","word":"según","meaning":"according to"},
+        {"id":"vocab-tras","kind":"vocabulary","priority":"optional","sourceSection":"Less Common Prepositions","objective":"Retain both after and behind with literary register.","word":"tras","meaning":"after; behind (often formal/literary)"},
+        {"id":"vocab-durante","kind":"vocabulary","priority":"optional","sourceSection":"Less Common Prepositions","objective":"Recognize the duration preposition.","word":"durante","meaning":"during"},
+        {"id":"vocab-aunque","kind":"vocabulary","priority":"essential","sourceSection":"aunque — although / even though / even if","objective":"Retain both factual and hypothetical concessive translations.","word":"aunque","meaning":"although; even though; even if"},
+        {"id":"aunque-mood","kind":"concept","priority":"essential","sourceSection":"aunque — although / even though / even if","objective":"Separate asserted fact from hypothetical or set-aside concession.","format":"qa","prompt":"How does Aunque está cansado differ from Aunque esté cansado in the examples?","answer":"Indicative presents his tiredness as an asserted fact; subjunctive can present it as hypothetical or set it aside as irrelevant."},
+        {"id":"sino-replacement","kind":"rule","priority":"essential","sourceSection":"pero vs. sino / sino que","objective":"Replace a negated profession rather than merely contrast ideas.","format":"cloze","prompt":"No es médico ___ abogado.","answer":"sino"},
+        {"id":"sino-que-clause","kind":"rule","priority":"essential","sourceSection":"pero vs. sino / sino que","objective":"Include que when the replacement is a conjugated clause.","format":"cloze","prompt":"No cantó, ___ bailó. (but rather)","answer":"sino que"},
+        {"id":"vocab-pero","kind":"vocabulary","priority":"optional","sourceSection":"pero vs. sino / sino que","objective":"Retain ordinary contrast rather than replacement.","word":"pero","meaning":"but (simple contrast)"},
+        {"id":"vocab-mientras","kind":"vocabulary","priority":"optional","sourceSection":"mientras — while","objective":"Recognize simultaneous-action linkage.","word":"mientras","meaning":"while (simultaneous actions)"},
+        {"id":"vocab-porque","kind":"vocabulary","priority":"optional","sourceSection":"Causal Conjunctions","objective":"Retain the neutral reason conjunction.","word":"porque","meaning":"because (neutral)"},
+        {"id":"vocab-ya-que","kind":"vocabulary","priority":"optional","sourceSection":"Causal Conjunctions","objective":"Recognize a since/given-that reason often presented as background.","word":"ya que","meaning":"since; given that (reason, often backgrounded)"},
+        {"id":"vocab-puesto-que","kind":"vocabulary","priority":"optional","sourceSection":"Causal Conjunctions","objective":"Retain the more formal background-reason connector.","word":"puesto que","meaning":"since; given that (often formal/written)"},
+        {"id":"vocab-dado-que","kind":"vocabulary","priority":"optional","sourceSection":"Causal Conjunctions","objective":"Recognize the formal given-that connector.","word":"dado que","meaning":"given that (often formal/written)"},
+        {"id":"vocab-a-pesar-de-que","kind":"vocabulary","priority":"essential","sourceSection":"Concessive & Conditional Conjunctions + Subjunctive","objective":"Understand the concession without imposing an automatic mood.","word":"a pesar de que","meaning":"despite the fact that; although"},
+        {"id":"vocab-con-tal-de-que","kind":"vocabulary","priority":"essential","sourceSection":"Concessive & Conditional Conjunctions + Subjunctive","objective":"Recognize a permission condition.","word":"con tal de que","meaning":"provided that"},
+        {"id":"vocab-a-menos-que","kind":"vocabulary","priority":"essential","sourceSection":"Concessive & Conditional Conjunctions + Subjunctive","objective":"Recognize the unless condition.","word":"a menos que","meaning":"unless"},
+        {"id":"unless-subjunctive","kind":"rule","priority":"essential","sourceSection":"Concessive & Conditional Conjunctions + Subjunctive","objective":"Use third-person subjunctive for stopping impersonal rain.","format":"cloze","prompt":"No saldré a menos que ___ de llover. (parar)","answer":"pare","explanation":"The subject of impersonal llover is not tú: use third-person singular pare, not pares."},
+        {"id":"provided-subjunctive","kind":"rule","priority":"optional","sourceSection":"Concessive & Conditional Conjunctions + Subjunctive","objective":"Apply subjunctive to a condition for permission.","format":"cloze","prompt":"Puedes ir con tal de que ___. (terminar, tú)","answer":"termines"},
+        {"id":"despite-indicative","kind":"concept","priority":"essential","sourceSection":"Concessive & Conditional Conjunctions + Subjunctive","objective":"Reject the lesson's former blanket subjunctive claim for a pesar de que.","format":"qa","prompt":"Why is indicative llueve valid in A pesar de que llueve, salimos?","answer":"The rain is presented as an asserted fact; a pesar de que permits indicative as well as context-dependent subjunctive."}
+      ],
+      "exclusions": [
+        {"sourceSection":"Usage Notes","reason":"Notes reinforce the inventoried hasta, según, ante and tras senses/register; they introduce no separate lexical forms."},
+        {"sourceSection":"Sources","reason":"Bibliography only."}
+      ]
+    },
+    {
+      "lessonId": "latin-vs-european",
+      "teachingPoints": [
+        {"id":"plural-address","kind":"concept","priority":"essential","sourceSection":"Pronouns: Plural \"You\"","objective":"Preserve the plural-address contrast with exceptions inside Spain.","format":"qa","prompt":"How does ordinary plural address in Latin America differ from the usual mainland-Spain informal/formal distinction?","answer":"Latin America normally uses ustedes for both; much of mainland Spain uses informal vosotros and formal ustedes."},
+        {"id":"voseo-present","kind":"rule","priority":"essential","sourceSection":"Voseo: The vos Pronoun","objective":"Apply the illustrated accented present voseo rather than all-tense generalization.","format":"cloze","prompt":"Vos ___ español. (hablar; the voseo pattern shown here)","answer":"hablás"},
+        {"id":"voseo-ser","kind":"rule","priority":"optional","sourceSection":"Voseo: The vos Pronoun","objective":"Recall sos as the irregular ser form in the illustrated voseo.","format":"cloze","prompt":"Vos ___ de Argentina. (ser)","answer":"sos"},
+        {"id":"seseo-application","kind":"rule","priority":"essential","sourceSection":"Seseo vs. Distinción","objective":"Match z to s in the standard seseo system.","format":"cloze","prompt":"La letra 'z' en 'zapato' suena igual que la ___ en 'sala'.","answer":"s"},
+        {"id":"regional-pronunciation-status","kind":"concept","priority":"essential","sourceSection":"Seseo vs. Distinción","objective":"Treat both regional pronunciation systems as standard.","format":"qa","prompt":"Is seseo an incorrect version of mainland-Spain distinción?","answer":"No. Both are standard within their regions."},
+        {"id":"yeismo-sound-variation","kind":"concept","priority":"essential","sourceSection":"Yeísmo","objective":"Separate the ll/y merger from regional y/sh/zh realizations.","format":"qa","prompt":"Does yeísmo require ll and y to sound exactly like English y in yes?","answer":"No. It means ll and y merge; their shared sound may be y-like or, in Río de la Plata varieties, sh/zh-like."},
+        {"id":"regional-recent-past","kind":"concept","priority":"essential","sourceSection":"Tense Preference: Recent Past","objective":"Retain recent-past tense preferences without erasing within-continent variation.","format":"qa","prompt":"What broad regional tendency is illustrated by Ya comí versus Ya he comido?","answer":"Many American varieties favor preterite for a completed event; much of central/northern Spain favors perfect for a present-connected event."},
+        {"id":"vocab-carro","kind":"vocabulary","priority":"optional","sourceSection":"Vocabulary Differences","objective":"Recognize a common American car word without continental exclusivity.","word":"carro","meaning":"car (common in many American regions)"},
+        {"id":"vocab-auto","kind":"vocabulary","priority":"optional","sourceSection":"Vocabulary Differences","objective":"Recognize the Southern-Cone car preference.","word":"auto","meaning":"car (common in the Southern Cone and elsewhere)"},
+        {"id":"vocab-coche","kind":"vocabulary","priority":"optional","sourceSection":"Vocabulary Differences","objective":"Retain car usage on both sides of the Atlantic.","word":"coche","meaning":"car (common in Spain and Mexico)"},
+        {"id":"vocab-computadora","kind":"vocabulary","priority":"essential","sourceSection":"Vocabulary Differences","objective":"Recognize the common American computer term.","word":"computadora","meaning":"computer (common in Latin America)"},
+        {"id":"vocab-ordenador","kind":"vocabulary","priority":"essential","sourceSection":"Vocabulary Differences","objective":"Recognize the Spain computer term.","word":"ordenador","meaning":"computer (Spain)"},
+        {"id":"vocab-jugo","kind":"vocabulary","priority":"essential","sourceSection":"Vocabulary Differences","objective":"Recognize the American juice term.","word":"jugo","meaning":"juice (common in Latin America)"},
+        {"id":"vocab-zumo","kind":"vocabulary","priority":"essential","sourceSection":"Vocabulary Differences","objective":"Recognize the Spain juice term.","word":"zumo","meaning":"juice (Spain)"},
+        {"id":"vocab-manejar","kind":"vocabulary","priority":"optional","sourceSection":"Vocabulary Differences","objective":"Retain the driving sense alongside general handling.","word":"manejar","meaning":"to drive (common in Latin America; also to handle)"},
+        {"id":"vocab-conducir","kind":"vocabulary","priority":"optional","sourceSection":"Vocabulary Differences","objective":"Avoid restricting conducir exclusively to Spain.","word":"conducir","meaning":"to drive (common in Spain and also used elsewhere)"},
+        {"id":"vocab-celular","kind":"vocabulary","priority":"optional","sourceSection":"Vocabulary Differences","objective":"Recognize the American phone noun.","word":"celular","meaning":"cell phone (Latin America)"},
+        {"id":"vocab-movil","kind":"vocabulary","priority":"optional","sourceSection":"Vocabulary Differences","objective":"Recognize the Spain phone noun and accent.","word":"móvil","meaning":"mobile phone (Spain)"},
+        {"id":"vocab-departamento","kind":"vocabulary","priority":"optional","sourceSection":"Vocabulary Differences","objective":"Understand the housing sense common in American regions.","word":"departamento","meaning":"apartment (many American regions)"},
+        {"id":"vocab-piso","kind":"vocabulary","priority":"optional","sourceSection":"Vocabulary Differences","objective":"Retain apartment in Spain alongside the floor sense.","word":"piso","meaning":"apartment (Spain); floor"},
+        {"id":"vocab-refrigerador","kind":"vocabulary","priority":"optional","sourceSection":"Vocabulary Differences","objective":"Recognize a common American fridge term.","word":"refrigerador","meaning":"refrigerator (common in many American regions)"},
+        {"id":"vocab-nevera","kind":"vocabulary","priority":"optional","sourceSection":"Vocabulary Differences","objective":"Retain fridge vocabulary shared across regions.","word":"nevera","meaning":"refrigerator (Spain and parts of Latin America)"},
+        {"id":"vocab-frigorifico","kind":"vocabulary","priority":"optional","sourceSection":"Vocabulary Differences","objective":"Recognize another Spain fridge term with its accent.","word":"frigorífico","meaning":"refrigerator (common in Spain)"},
+        {"id":"vocab-papa","kind":"vocabulary","priority":"optional","sourceSection":"Vocabulary Differences","objective":"Retain potato vocabulary beyond an America-only boundary.","word":"papa","meaning":"potato (Latin America, Canary Islands and elsewhere)"},
+        {"id":"vocab-patata","kind":"vocabulary","priority":"optional","sourceSection":"Vocabulary Differences","objective":"Recognize the mainland-Spain potato preference.","word":"patata","meaning":"potato (common in mainland Spain)"},
+        {"id":"vocab-tomar","kind":"vocabulary","priority":"optional","sourceSection":"Vocabulary Differences","objective":"Retain the taking/having senses relevant to avoiding regional vulgarity.","word":"tomar","meaning":"to take; to have (food/drink)"},
+        {"id":"vocab-coger","kind":"vocabulary","priority":"essential","sourceSection":"Vocabulary Differences","objective":"Keep the local neutral-versus-vulgar qualification with the meaning.","word":"coger","meaning":"to take or grab (neutral in Spain and some American regions; vulgar sexual sense in many others)"},
+        {"id":"vocab-plata","kind":"vocabulary","priority":"optional","sourceSection":"Vocabulary Differences","objective":"Retain colloquial money across many American regions.","word":"plata","meaning":"money (colloquial in many American regions); silver"},
+        {"id":"vocab-pasta","kind":"vocabulary","priority":"optional","sourceSection":"Vocabulary Differences","objective":"Recognize the Spain money slang sense.","word":"pasta","meaning":"money (slang, Spain); pasta"},
+        {"id":"vocab-lentes","kind":"vocabulary","priority":"optional","sourceSection":"Vocabulary Differences","objective":"Recognize the common American eyewear term.","word":"lentes","meaning":"glasses (eyewear; common in many American regions)"},
+        {"id":"vocab-gafas","kind":"vocabulary","priority":"optional","sourceSection":"Vocabulary Differences","objective":"Avoid an exclusive Spain boundary for eyewear vocabulary.","word":"gafas","meaning":"glasses (eyewear; Spain and some American regions)"},
+        {"id":"coger-register","kind":"concept","priority":"essential","sourceSection":"Vocabulary Differences","objective":"Choose a taking verb with awareness of local social risk.","format":"qa","prompt":"Why should a learner check local usage before using coger to mean take?","answer":"It is neutral in Spain and some American regions but has a vulgar sexual sense in many others."}
+      ],
+      "exclusions": [
+        {"sourceSection":"Sources","reason":"Reference/bibliographic material only."}
+      ]
+    },
+    {
+      "lessonId": "register-formality",
+      "teachingPoints": [
+        {"id":"address-context","kind":"concept","priority":"essential","sourceSection":"Overview of Second-Person Pronouns","objective":"Use relationship and local norms rather than country-only etiquette rules.","format":"qa","prompt":"Can a country label alone determine the polite pronoun for every interaction?","answer":"No. Relationship, setting, age and local usage also matter."},
+        {"id":"informal-tu","kind":"rule","priority":"essential","sourceSection":"tú — Informal Singular","objective":"Use second-person singular agreement with ordinary tuteo.","format":"cloze","prompt":"¿Tú ___ inglés? (hablar, present)","answer":"hablas"},
+        {"id":"usted-agreement","kind":"rule","priority":"essential","sourceSection":"usted — Formal Singular","objective":"Separate listener address from third-person grammatical agreement.","format":"cloze","prompt":"¿Cómo ___ usted? (estar, present)","answer":"está"},
+        {"id":"vocab-tomar-asiento","kind":"vocabulary","priority":"optional","sourceSection":"usted — Formal Singular","objective":"Understand the polite seating invitation.","word":"tomar asiento","meaning":"to take a seat"},
+        {"id":"voseo-tener","kind":"rule","priority":"essential","sourceSection":"vos — Informal Singular (Voseo Regions)","objective":"Apply the illustrated present voseo without generalizing across all tenses.","format":"cloze","prompt":"Vos ___ razón. (tener)","answer":"tenés"},
+        {"id":"vosotros-endings","kind":"concept","priority":"optional","sourceSection":"vosotros — Informal Plural (Spain Only)","objective":"Recall the three regular present informal-plural forms and their tildes.","format":"qa","prompt":"Give the present vosotros forms of hablar, comer and vivir.","answer":"habláis, coméis, vivís."},
+        {"id":"ustedes-agreement","kind":"rule","priority":"essential","sourceSection":"ustedes — Plural (Universal)","objective":"Choose third-person plural agreement for listener groups.","format":"cloze","prompt":"¿De dónde ___ ustedes? (ser, present)","answer":"son"},
+        {"id":"colombian-usted","kind":"concept","priority":"essential","sourceSection":"Regional Address Guide","objective":"Retain affectionate usted usage in some Colombian relationships.","format":"qa","prompt":"Does usted necessarily create social distance between Colombian friends or relatives?","answer":"No. In some Colombian usage it can express warmth and closeness."},
+        {"id":"vocab-tutear","kind":"vocabulary","priority":"essential","sourceSection":"Switching Register","objective":"Recognize the verb for tú address.","word":"tutear","meaning":"to address someone with tú"},
+        {"id":"vocab-ustedear","kind":"vocabulary","priority":"optional","sourceSection":"Switching Register","objective":"Recognize the verb for usted address.","word":"ustedear","meaning":"to address someone with usted"},
+        {"id":"vocab-vosear","kind":"vocabulary","priority":"optional","sourceSection":"Switching Register","objective":"Recognize the verb for vos address.","word":"vosear","meaning":"to address someone with vos"},
+        {"id":"vocab-podemos-tutearnos","kind":"vocabulary","priority":"optional","sourceSection":"Switching Register","objective":"Understand a mutual invitation to change address.","word":"Podemos tutearnos","meaning":"We can address each other with tú"},
+        {"id":"mexico-plural","kind":"rule","priority":"essential","sourceSection":"ustedes — Plural (Universal)","objective":"Address Mexican friends with ustedes, not Spain's vosotros.","format":"cloze","prompt":"¿___ quieren ir al cine? (addressing a group of friends in Mexico)","answer":"Ustedes"},
+        {"id":"switch-register","kind":"concept","priority":"optional","sourceSection":"Switching Register","objective":"Interpret the social proposal rather than just the lexical tutear meaning.","format":"qa","prompt":"What social move does Podemos tutearnos propose?","answer":"A mutual switch to tú address."}
+      ],
+      "exclusions": [
+        {"sourceSection":"Regional Address Guide","reason":"Country-table cells repeat the individually inventoried address patterns; the distinctive Colombian closeness qualification is explicitly retained."},
+        {"sourceSection":"Sources","reason":"Bibliography only."}
+      ]
+    },
+    {
+      "lessonId": "adverbs",
+      "teachingPoints": [
+        {"id":"mente-formation","kind":"rule","priority":"essential","sourceSection":"Forming Adverbs with -mente","objective":"Build the adverb from a feminine adjective, not its masculine form.","format":"cloze","prompt":"Trabaja ___. (cuidadoso → adverb)","answer":"cuidadosamente"},
+        {"id":"mente-accent","kind":"rule","priority":"essential","sourceSection":"Forming Adverbs with -mente","objective":"Preserve the adjective's accent when adding -mente.","format":"cloze","prompt":"Lo hizo ___. (fácil → adverb)","answer":"fácilmente"},
+        {"id":"vocab-rapidamente","kind":"vocabulary","priority":"optional","sourceSection":"Forming Adverbs with -mente","objective":"Understand the quick-manner adverb and preserve its tilde.","word":"rápidamente","meaning":"quickly"},
+        {"id":"vocab-claramente","kind":"vocabulary","priority":"optional","sourceSection":"Forming Adverbs with -mente","objective":"Retain the clear-manner meaning.","word":"claramente","meaning":"clearly"},
+        {"id":"vocab-lentamente","kind":"vocabulary","priority":"optional","sourceSection":"Forming Adverbs with -mente","objective":"Retain the slow-manner meaning.","word":"lentamente","meaning":"slowly"},
+        {"id":"vocab-cuidadosamente","kind":"vocabulary","priority":"optional","sourceSection":"Forming Adverbs with -mente","objective":"Retain the careful-manner meaning independently of suffix formation.","word":"cuidadosamente","meaning":"carefully"},
+        {"id":"vocab-tranquilamente","kind":"vocabulary","priority":"optional","sourceSection":"Forming Adverbs with -mente","objective":"Recognize calm manner.","word":"tranquilamente","meaning":"calmly"},
+        {"id":"vocab-facilmente","kind":"vocabulary","priority":"optional","sourceSection":"Forming Adverbs with -mente","objective":"Retain ease as the adverb's lexical meaning.","word":"fácilmente","meaning":"easily"},
+        {"id":"vocab-felizmente","kind":"vocabulary","priority":"optional","sourceSection":"Forming Adverbs with -mente","objective":"Retain the happy-manner meaning.","word":"felizmente","meaning":"happily"},
+        {"id":"coordinated-mente","kind":"rule","priority":"optional","sourceSection":"Two -mente Adverbs in a Row","objective":"Use the shortened coordinated pattern without claiming full repetition is ungrammatical.","format":"cloze","prompt":"Lo explicó lenta y ___. (claro → adverb)","answer":"claramente"},
+        {"id":"vocab-bien","kind":"vocabulary","priority":"essential","sourceSection":"Manner","objective":"Distinguish the lexical well adverb from regular -mente forms.","word":"bien","meaning":"well"},
+        {"id":"vocab-mal","kind":"vocabulary","priority":"essential","sourceSection":"Manner","objective":"Retain badly as a whole adverb.","word":"mal","meaning":"badly"},
+        {"id":"vocab-muy","kind":"vocabulary","priority":"essential","sourceSection":"Quantity","objective":"Retain the quality intensifier's meaning.","word":"muy","meaning":"very"},
+        {"id":"vocab-mucho","kind":"vocabulary","priority":"essential","sourceSection":"Quantity","objective":"Retain the quantity adverb's meaning.","word":"mucho","meaning":"a lot; much"},
+        {"id":"vocab-poco","kind":"vocabulary","priority":"optional","sourceSection":"Quantity","objective":"Recognize a small quantity.","word":"poco","meaning":"little; a little"},
+        {"id":"vocab-bastante","kind":"vocabulary","priority":"optional","sourceSection":"Quantity","objective":"Retain sufficient and fairly-high degree senses.","word":"bastante","meaning":"quite; enough"},
+        {"id":"vocab-demasiado","kind":"vocabulary","priority":"optional","sourceSection":"Quantity","objective":"Recognize excessive quantity.","word":"demasiado","meaning":"too much"},
+        {"id":"vocab-siempre","kind":"vocabulary","priority":"essential","sourceSection":"Frequency","objective":"Recognize universal frequency.","word":"siempre","meaning":"always"},
+        {"id":"vocab-nunca","kind":"vocabulary","priority":"optional","sourceSection":"Frequency","objective":"Retain ordinary negative frequency with contextual ever use.","word":"nunca","meaning":"never; ever in some question contexts"},
+        {"id":"vocab-jamas","kind":"vocabulary","priority":"optional","sourceSection":"Frequency","objective":"Retain emphatic never without an unrestricted ever equivalence.","word":"jamás","meaning":"never (often emphatic); ever in some contexts"},
+        {"id":"vocab-a-veces","kind":"vocabulary","priority":"essential","sourceSection":"Frequency","objective":"Recognize intermittent frequency as a multiword unit.","word":"a veces","meaning":"sometimes"},
+        {"id":"vocab-ya","kind":"vocabulary","priority":"optional","sourceSection":"Frequency","objective":"Retain context-dependent already/now senses.","word":"ya","meaning":"already; now; right away (depending on context)"},
+        {"id":"vocab-aqui","kind":"vocabulary","priority":"essential","sourceSection":"Place","objective":"Retain the here adverb with its accent.","word":"aquí","meaning":"here"},
+        {"id":"vocab-aca","kind":"vocabulary","priority":"optional","sourceSection":"Place","objective":"Recognize the alternative here form without erasing regional usage.","word":"acá","meaning":"here (usage varies regionally)"},
+        {"id":"vocab-alli","kind":"vocabulary","priority":"optional","sourceSection":"Place","objective":"Retain the there adverb.","word":"allí","meaning":"there"},
+        {"id":"vocab-alla","kind":"vocabulary","priority":"optional","sourceSection":"Place","objective":"Recognize over-there reference.","word":"allá","meaning":"there; over there"},
+        {"id":"vocab-cerca","kind":"vocabulary","priority":"essential","sourceSection":"Place","objective":"Retain nearby location.","word":"cerca","meaning":"near; nearby"},
+        {"id":"vocab-lejos","kind":"vocabulary","priority":"essential","sourceSection":"Place","objective":"Retain far-away location.","word":"lejos","meaning":"far; far away"},
+        {"id":"vocab-hoy","kind":"vocabulary","priority":"essential","sourceSection":"Time","objective":"Recognize today's time frame.","word":"hoy","meaning":"today"},
+        {"id":"vocab-ayer","kind":"vocabulary","priority":"essential","sourceSection":"Time","objective":"Recognize yesterday's time frame.","word":"ayer","meaning":"yesterday"},
+        {"id":"vocab-manana","kind":"vocabulary","priority":"essential","sourceSection":"Time","objective":"Retain tomorrow and morning while preserving ñ.","word":"mañana","meaning":"tomorrow; morning"},
+        {"id":"vocab-pronto","kind":"vocabulary","priority":"optional","sourceSection":"Time","objective":"Recognize near-future timing.","word":"pronto","meaning":"soon"},
+        {"id":"vocab-temprano","kind":"vocabulary","priority":"optional","sourceSection":"Time","objective":"Distinguish early timing from late.","word":"temprano","meaning":"early"},
+        {"id":"vocab-tarde","kind":"vocabulary","priority":"optional","sourceSection":"Time","objective":"Retain the late adverb rather than the afternoon noun sense.","word":"tarde","meaning":"late (adverb)"},
+        {"id":"vocab-todavia","kind":"vocabulary","priority":"essential","sourceSection":"Time","objective":"Recognize continued or not-yet state.","word":"todavía","meaning":"still; yet"},
+        {"id":"muy-quality","kind":"rule","priority":"essential","sourceSection":"muy vs. mucho","objective":"Intensify a noncomparative adjective rather than quantify a verb.","format":"cloze","prompt":"El examen estuvo ___ difícil.","answer":"muy"},
+        {"id":"mucho-verb","kind":"rule","priority":"essential","sourceSection":"muy vs. mucho","objective":"Keep adverbial mucho invariable with a feminine plural subject.","format":"cloze","prompt":"Ellas trabajan ___. (a lot)","answer":"mucho"},
+        {"id":"muchos-noun","kind":"rule","priority":"optional","sourceSection":"muy vs. mucho","objective":"Make the noun quantifier agree without claiming adverbs agree.","format":"cloze","prompt":"Tengo ___ amigas. (many)","answer":"muchas"}
+      ],
+      "exclusions": [
+        {"sourceSection":"Sources","reason":"Bibliography only."}
+      ]
+    },
+    {
+      "lessonId": "negation",
+      "teachingPoints": [
+        {"id":"no-pronoun-order","kind":"rule","priority":"essential","sourceSection":"Basic Negation with no","objective":"Place no before all preverbal object pronouns.","format":"cloze","prompt":"___ lo sé. (I do not know it.)","answer":"No"},
+        {"id":"vocab-nada","kind":"vocabulary","priority":"essential","sourceSection":"Negative Words","objective":"Retain nothing/negative-anything meanings.","word":"nada","meaning":"nothing; anything in a negative context"},
+        {"id":"vocab-nunca","kind":"vocabulary","priority":"essential","sourceSection":"Negative Words","objective":"Retain never and qualified ever use.","word":"nunca","meaning":"never; ever in some question contexts"},
+        {"id":"vocab-jamas","kind":"vocabulary","priority":"optional","sourceSection":"Negative Words","objective":"Recognize the more emphatic negative frequency word.","word":"jamás","meaning":"never (often emphatic); ever in some contexts"},
+        {"id":"vocab-nadie","kind":"vocabulary","priority":"essential","sourceSection":"Negative Words","objective":"Recognize no-person reference in negative contexts.","word":"nadie","meaning":"nobody; anybody in a negative context"},
+        {"id":"vocab-ninguno","kind":"vocabulary","priority":"essential","sourceSection":"Negative Words","objective":"Retain none/not-any and the feminine counterpart.","word":"ninguno","meaning":"none; not any (masculine form; feminine ninguna)"},
+        {"id":"vocab-tampoco","kind":"vocabulary","priority":"essential","sourceSection":"Negative Words","objective":"Retain negative agreement rather than affirmative also.","word":"tampoco","meaning":"neither; not either"},
+        {"id":"vocab-ni-ni","kind":"vocabulary","priority":"optional","sourceSection":"Negative Words","objective":"Recognize the paired exclusion construction.","word":"ni...ni","meaning":"neither...nor"},
+        {"id":"ningun-apocope","kind":"rule","priority":"essential","sourceSection":"Negative Words","objective":"Shorten ninguno before a masculine singular noun with required tilde.","format":"cloze","prompt":"No tengo ___ problema. (ninguno)","answer":"ningún"},
+        {"id":"postverbal-negative","kind":"rule","priority":"essential","sourceSection":"The Double Negative Rule","objective":"License a postverbal negative when there is no other preverbal negative.","format":"cloze","prompt":"No conozco a ___. (anybody)","answer":"nadie"},
+        {"id":"negative-concord-meaning","kind":"concept","priority":"essential","sourceSection":"The Double Negative Rule","objective":"Understand that negative concord reinforces rather than cancels negation.","format":"qa","prompt":"Does No tengo nada mean that the two negatives cancel and I have something?","answer":"No. It means I do not have anything; the negatives reinforce one negation."},
+        {"id":"preverbal-negative","kind":"rule","priority":"essential","sourceSection":"Negative Word Before the Verb","objective":"Use preverbal nunca to license nadie without extra no.","format":"cloze","prompt":"___ viene nadie los lunes. (never)","answer":"Nunca"},
+        {"id":"negative-agreement-response","kind":"rule","priority":"essential","sourceSection":"tampoco — Neither / Not Either","objective":"Respond me neither to a negative preference.","format":"cloze","prompt":"— No me gusta el brócoli. — A mí ___.","answer":"tampoco"},
+        {"id":"tampoco-position","kind":"concept","priority":"optional","sourceSection":"tampoco — Neither / Not Either","objective":"Apply the same negative word-order principle to tampoco.","format":"qa","prompt":"Why do Tampoco me gusta and No me gusta tampoco differ in whether no appears?","answer":"Preverbal tampoco supplies negation itself; postverbal tampoco needs a preceding negative in the taught clause."}
+      ],
+      "exclusions": [
+        {"sourceSection":"Negative Word Before the Verb","reason":"The paired rewrite table repeats the negative-order principle; one focused application retains the rule instead of duplicating every equivalent sentence."},
+        {"sourceSection":"Sources","reason":"Bibliography only."}
+      ]
+    },
+    {
+      "lessonId": "cognates",
+      "teachingPoints": [
+        {"id":"vocab-informacion","kind":"vocabulary","priority":"optional","sourceSection":"True Cognates: Similar Form, Same Meaning","objective":"Recognize the accented information cognate.","word":"información","meaning":"information"},
+        {"id":"vocab-hospital","kind":"vocabulary","priority":"optional","sourceSection":"True Cognates: Similar Form, Same Meaning","objective":"Recognize the same-spelled medical-institution cognate.","word":"hospital","meaning":"hospital; medical institution"},
+        {"id":"vocab-problema","kind":"vocabulary","priority":"essential","sourceSection":"True Cognates: Similar Form, Same Meaning","objective":"Retain masculine gender despite final a.","word":"problema","meaning":"problem (masculine: el problema)"},
+        {"id":"vocab-momento","kind":"vocabulary","priority":"optional","sourceSection":"True Cognates: Similar Form, Same Meaning","objective":"Retain the moment cognate.","word":"momento","meaning":"moment"},
+        {"id":"vocab-animal","kind":"vocabulary","priority":"optional","sourceSection":"True Cognates: Similar Form, Same Meaning","objective":"Recognize the living-creature cognate.","word":"animal","meaning":"animal; living creature"},
+        {"id":"vocab-doctor","kind":"vocabulary","priority":"optional","sourceSection":"True Cognates: Similar Form, Same Meaning","objective":"Recognize the doctor/physician cognate.","word":"doctor","meaning":"doctor; physician"},
+        {"id":"vocab-idea","kind":"vocabulary","priority":"optional","sourceSection":"True Cognates: Similar Form, Same Meaning","objective":"Retain the thought cognate.","word":"idea","meaning":"idea; thought"},
+        {"id":"vocab-musica","kind":"vocabulary","priority":"essential","sourceSection":"True Cognates: Similar Form, Same Meaning","objective":"Keep music's Spanish spelling and stress mark.","word":"música","meaning":"music"},
+        {"id":"vocab-posible","kind":"vocabulary","priority":"optional","sourceSection":"True Cognates: Similar Form, Same Meaning","objective":"Recognize the single-s Spanish possibility adjective.","word":"posible","meaning":"possible"},
+        {"id":"vocab-importante","kind":"vocabulary","priority":"optional","sourceSection":"True Cognates: Similar Form, Same Meaning","objective":"Recognize the importance adjective.","word":"importante","meaning":"important"},
+        {"id":"vocab-diferente","kind":"vocabulary","priority":"optional","sourceSection":"True Cognates: Similar Form, Same Meaning","objective":"Recognize the different cognate.","word":"diferente","meaning":"different"},
+        {"id":"vocab-profesor","kind":"vocabulary","priority":"optional","sourceSection":"True Cognates: Similar Form, Same Meaning","objective":"Retain teacher as well as professor and the single-s spelling.","word":"profesor","meaning":"teacher; professor"},
+        {"id":"vocab-restaurante","kind":"vocabulary","priority":"optional","sourceSection":"True Cognates: Similar Form, Same Meaning","objective":"Retain the final-e restaurant cognate.","word":"restaurante","meaning":"restaurant"},
+        {"id":"vocab-universidad","kind":"vocabulary","priority":"optional","sourceSection":"True Cognates: Similar Form, Same Meaning","objective":"Recognize the university cognate.","word":"universidad","meaning":"university"},
+        {"id":"cion-application","kind":"rule","priority":"essential","sourceSection":"Spelling Patterns for Cognates","objective":"Produce nación with the required ó and feminine article.","format":"cloze","prompt":"The nation — la ___.","answer":"nación"},
+        {"id":"dad-application","kind":"rule","priority":"optional","sourceSection":"Spelling Patterns for Cognates","objective":"Apply the common -ty/-dad correspondence.","format":"cloze","prompt":"Reality — la ___.","answer":"realidad"},
+        {"id":"oso-application","kind":"rule","priority":"optional","sourceSection":"Spelling Patterns for Cognates","objective":"Apply -ous/-oso with feminine adjective agreement.","format":"cloze","prompt":"A famous woman — una mujer ___.","answer":"famosa"},
+        {"id":"ble-application","kind":"rule","priority":"optional","sourceSection":"Spelling Patterns for Cognates","objective":"Apply a -ble cognate while keeping Spanish hiatus accent.","format":"cloze","prompt":"Incredible — ___.","answer":"increíble"},
+        {"id":"ista-application","kind":"rule","priority":"optional","sourceSection":"Spelling Patterns for Cognates","objective":"Apply the -ist/-ista pattern to a person noun.","format":"cloze","prompt":"Tourist — ___.","answer":"turista"},
+        {"id":"ismo-application","kind":"rule","priority":"optional","sourceSection":"Spelling Patterns for Cognates","objective":"Apply the -ism/-ismo noun correspondence.","format":"cloze","prompt":"Tourism — el ___.","answer":"turismo"},
+        {"id":"greek-ma-gender","kind":"concept","priority":"essential","sourceSection":"Spelling Patterns for Cognates","objective":"Retain common masculine Greek-origin exceptions without making all -ma words masculine.","format":"qa","prompt":"Why are el problema and el sistema not reliable evidence for a rule that every a-final noun is feminine?","answer":"These common Greek-origin -ma nouns are masculine; final a alone does not determine gender."},
+        {"id":"vocab-embarazada","kind":"vocabulary","priority":"essential","sourceSection":"False Friends: Words That Are NOT What They Look Like","objective":"Distinguish pregnancy from embarrassment.","word":"embarazada","meaning":"pregnant (feminine)"},
+        {"id":"vocab-avergonzada","kind":"vocabulary","priority":"optional","sourceSection":"False Friends: Words That Are NOT What They Look Like","objective":"Retain the actual embarrassed/ashamed adjective.","word":"avergonzada","meaning":"embarrassed; ashamed (feminine)"},
+        {"id":"vocab-exito","kind":"vocabulary","priority":"essential","sourceSection":"False Friends: Words That Are NOT What They Look Like","objective":"Retain success with its mandatory accent.","word":"éxito","meaning":"success"},
+        {"id":"vocab-salida","kind":"vocabulary","priority":"essential","sourceSection":"False Friends: Words That Are NOT What They Look Like","objective":"Retain the actual exit noun.","word":"salida","meaning":"exit; way out"},
+        {"id":"vocab-sensible","kind":"vocabulary","priority":"essential","sourceSection":"False Friends: Words That Are NOT What They Look Like","objective":"Avoid English sensible transfer into the sensitivity adjective.","word":"sensible","meaning":"sensitive"},
+        {"id":"vocab-sensato","kind":"vocabulary","priority":"optional","sourceSection":"False Friends: Words That Are NOT What They Look Like","objective":"Retain a genuine Spanish equivalent of sensible.","word":"sensato","meaning":"sensible; level-headed"},
+        {"id":"vocab-razonable","kind":"vocabulary","priority":"optional","sourceSection":"False Friends: Words That Are NOT What They Look Like","objective":"Retain the reasonable alternative to false-friend sensible.","word":"razonable","meaning":"reasonable; sensible"},
+        {"id":"vocab-constipado","kind":"vocabulary","priority":"optional","sourceSection":"False Friends: Words That Are NOT What They Look Like","objective":"Qualify the cold/congestion sense by region.","word":"constipado","meaning":"having a cold; congested (especially Spain; usage varies regionally)"},
+        {"id":"vocab-estrenido","kind":"vocabulary","priority":"optional","sourceSection":"False Friends: Words That Are NOT What They Look Like","objective":"Retain the actual constipation adjective and ñ.","word":"estreñido","meaning":"constipated"},
+        {"id":"vocab-ropa","kind":"vocabulary","priority":"essential","sourceSection":"False Friends: Words That Are NOT What They Look Like","objective":"Distinguish clothing from rope.","word":"ropa","meaning":"clothes; clothing"},
+        {"id":"vocab-cuerda","kind":"vocabulary","priority":"optional","sourceSection":"False Friends: Words That Are NOT What They Look Like","objective":"Retain the actual rope noun.","word":"cuerda","meaning":"rope; cord"},
+        {"id":"vocab-carpeta","kind":"vocabulary","priority":"essential","sourceSection":"False Friends: Words That Are NOT What They Look Like","objective":"Distinguish a folder/binder from carpet.","word":"carpeta","meaning":"folder; binder"},
+        {"id":"vocab-alfombra","kind":"vocabulary","priority":"optional","sourceSection":"False Friends: Words That Are NOT What They Look Like","objective":"Retain the actual carpet/rug noun.","word":"alfombra","meaning":"carpet; rug"},
+        {"id":"vocab-libreria","kind":"vocabulary","priority":"essential","sourceSection":"False Friends: Words That Are NOT What They Look Like","objective":"Distinguish a bookstore from a library.","word":"librería","meaning":"bookstore"},
+        {"id":"vocab-biblioteca","kind":"vocabulary","priority":"optional","sourceSection":"False Friends: Words That Are NOT What They Look Like","objective":"Retain the actual library noun.","word":"biblioteca","meaning":"library"},
+        {"id":"vocab-asistir","kind":"vocabulary","priority":"optional","sourceSection":"False Friends: Words That Are NOT What They Look Like","objective":"Retain the event-attending sense without denying other contextual senses.","word":"asistir","meaning":"to attend (an event; other senses depend on context)"},
+        {"id":"vocab-ayudar","kind":"vocabulary","priority":"optional","sourceSection":"False Friends: Words That Are NOT What They Look Like","objective":"Retain ordinary help/assist vocabulary.","word":"ayudar","meaning":"to help; to assist"},
+        {"id":"vocab-largo","kind":"vocabulary","priority":"essential","sourceSection":"False Friends: Words That Are NOT What They Look Like","objective":"Distinguish long from large.","word":"largo","meaning":"long"},
+        {"id":"vocab-grande","kind":"vocabulary","priority":"optional","sourceSection":"False Friends: Words That Are NOT What They Look Like","objective":"Retain the actual big/large adjective.","word":"grande","meaning":"big; large"},
+        {"id":"vocab-molestar","kind":"vocabulary","priority":"optional","sourceSection":"False Friends: Words That Are NOT What They Look Like","objective":"Retain ordinary bother/annoy rather than overtranslating the English lookalike.","word":"molestar","meaning":"to bother; to annoy (not the default English sexual sense of molest)"},
+        {"id":"exito-application","kind":"rule","priority":"optional","sourceSection":"False Friends: Words That Are NOT What They Look Like","objective":"Use correctly accented éxito in a success context.","format":"cloze","prompt":"La película fue un gran ___. (success)","answer":"éxito"},
+        {"id":"cognate-limits","kind":"concept","priority":"essential","sourceSection":"Tips for Using Cognates Effectively","objective":"Verify meanings, gender and Spanish orthography instead of trusting resemblance.","format":"qa","prompt":"What should you verify before trusting an English-looking Spanish word?","answer":"Its actual meaning, gender and Spanish spelling, including accent marks."}
+      ],
+      "exclusions": [
+        {"sourceSection":"Spelling Patterns for Cognates","reason":"Additional transparent examples repeat each inventoried correspondence; suffix fragments are application targets, not fake vocabulary words."},
+        {"sourceSection":"Sources","reason":"Bibliographic references only."}
+      ]
+    },
+    {
+      "lessonId": "saber-vs-conocer",
+      "teachingPoints": [
+        {"id":"vocab-saber","kind":"vocabulary","priority":"essential","sourceSection":"Saber — Facts, Information, Skills","objective":"Retain factual-knowledge and learned-skill senses.","word":"saber","meaning":"to know facts or information; to know how to do something"},
+        {"id":"skill-infinitive","kind":"rule","priority":"essential","sourceSection":"Saber — Facts, Information, Skills","objective":"Name a learned swimming skill directly with an infinitive.","format":"cloze","prompt":"Sé ___. (I know how to swim.)","answer":"nadar"},
+        {"id":"como-qualification","kind":"concept","priority":"optional","sourceSection":"Saber — Facts, Information, Skills","objective":"Avoid turning the basic skill pattern into a ban on saber cómo.","format":"qa","prompt":"Is saber cómo + infinitive always an error?","answer":"No. Saber + infinitive is the basic skill pattern; saber cómo can emphasize manner or procedure."},
+        {"id":"saber-yo","kind":"rule","priority":"essential","sourceSection":"Conjugation: Saber (Present)","objective":"Recall yo sé with the distinguishing tilde.","format":"cloze","prompt":"Yo ___ que es tarde. (saber)","answer":"sé"},
+        {"id":"vocab-conocer","kind":"vocabulary","priority":"essential","sourceSection":"Conocer — People, Places, Things","objective":"Retain acquaintance/familiarity across people, places and things.","word":"conocer","meaning":"to know; to be acquainted or familiar with a person, place or thing"},
+        {"id":"personal-a","kind":"rule","priority":"essential","sourceSection":"Conocer — People, Places, Things","objective":"Mark a specific human direct object with personal a.","format":"cloze","prompt":"Conozco ___ María.","answer":"a"},
+        {"id":"place-familiarity","kind":"rule","priority":"optional","sourceSection":"Conocer — People, Places, Things","objective":"Express experiential familiarity with a city.","format":"cloze","prompt":"Yo ___ Madrid. (know the city from experience)","answer":"conozco"},
+        {"id":"facts-saber","kind":"rule","priority":"essential","sourceSection":"Saber — Facts, Information, Skills","objective":"Choose the ordinary factual-information verb for possessing an answer.","format":"cloze","prompt":"¿___ tú la respuesta? (the answer = a fact)","answer":"Sabes"},
+        {"id":"conocer-yo","kind":"rule","priority":"essential","sourceSection":"Conjugation: Conocer (Present)","objective":"Produce the irregular -zco yo spelling.","format":"cloze","prompt":"Yo ___ a Laura. (conocer)","answer":"conozco"},
+        {"id":"finding-out","kind":"rule","priority":"essential","sourceSection":"Meaning Shift in the Preterite","objective":"Focus on acquiring information with the preterite.","format":"cloze","prompt":"Ayer ___ que estás casado. (I found out yesterday that you are married)","answer":"supe"},
+        {"id":"first-meeting","kind":"rule","priority":"essential","sourceSection":"Meaning Shift in the Preterite","objective":"Focus on the first meeting rather than an existing acquaintance.","format":"cloze","prompt":"___ a tu hermano en la fiesta. (I met him there for the first time)","answer":"Conocí"},
+        {"id":"background-knowing","kind":"concept","priority":"optional","sourceSection":"Meaning Shift in the Preterite","objective":"Contrast background knowing with the moment of discovery.","format":"qa","prompt":"What contrast does sabía versus supe usually convey in these examples?","answer":"Sabía describes already knowing; supe highlights the moment of finding out."}
+      ],
+      "exclusions": [
+        {"sourceSection":"Mini-Dialogue","reason":"Reinforces person acquaintance, first meeting and factual knowledge already inventoried; does not introduce a separate lexical set."},
+        {"sourceSection":"Quick Decision Guide","reason":"Decision steps summarize the retained fact/skill/familiarity and past-viewpoint contrasts."},
+        {"sourceSection":"Sources","reason":"Reference links only."}
+      ]
+    },
+    {
+      "lessonId": "pedir-vs-preguntar",
+      "teachingPoints": [
+        {"id":"vocab-pedir","kind":"vocabulary","priority":"essential","sourceSection":"Pedir — To Request Something","objective":"Retain requesting objects/favors rather than asking a question.","word":"pedir","meaning":"to request; to ask for"},
+        {"id":"vocab-pedir-favor","kind":"vocabulary","priority":"optional","sourceSection":"Pedir — To Request Something","objective":"Retain the favor-request collocation.","word":"pedir un favor","meaning":"to ask a favor"},
+        {"id":"vocab-pedir-ayuda","kind":"vocabulary","priority":"essential","sourceSection":"Pedir — To Request Something","objective":"Recognize a help request with no translated English for.","word":"pedir ayuda","meaning":"to ask for help"},
+        {"id":"request-direct-object","kind":"rule","priority":"essential","sourceSection":"Pedir — To Request Something","objective":"Use pedir directly before the requested thing.","format":"cloze","prompt":"Voy a ___ ayuda. (ask for help)","answer":"pedir"},
+        {"id":"present-pido","kind":"rule","priority":"essential","sourceSection":"Conjugation: Pedir (Stem-changing e → i)","objective":"Apply the present e-to-i change for yo.","format":"cloze","prompt":"Yo ___ un café. (pedir, present)","answer":"pido"},
+        {"id":"present-pedimos","kind":"rule","priority":"optional","sourceSection":"Conjugation: Pedir (Stem-changing e → i)","objective":"Preserve e in the nosotros present exception.","format":"cloze","prompt":"Nosotros ___ ayuda. (pedir, present)","answer":"pedimos"},
+        {"id":"vocab-preguntar","kind":"vocabulary","priority":"essential","sourceSection":"Preguntar — To Ask a Question","objective":"Retain asking a question or seeking information.","word":"preguntar","meaning":"to ask a question; to ask for information"},
+        {"id":"question-information","kind":"rule","priority":"essential","sourceSection":"Preguntar — To Ask a Question","objective":"Use regular preguntar for a bathroom-location question.","format":"cloze","prompt":"Ella ___ dónde está el baño. (preguntar, present)","answer":"pregunta"},
+        {"id":"request-bill","kind":"rule","priority":"essential","sourceSection":"Pedir — To Request Something","objective":"Request the bill with an indirect-object reference to the waiter.","format":"cloze","prompt":"Voy a ___ al camarero la cuenta. (I'm going to ask the waiter for the check)","answer":"pedirle"},
+        {"id":"preguntar-por","kind":"rule","priority":"essential","sourceSection":"Preguntar por vs Preguntar","objective":"Ask after someone's well-being with preguntar por.","format":"cloze","prompt":"Me preguntó ___ ti. (asked how you were)","answer":"por"},
+        {"id":"vocab-pedir-cuenta","kind":"vocabulary","priority":"essential","sourceSection":"Side-by-Side Comparison","objective":"Retain the restaurant bill-request phrase.","word":"pedir la cuenta","meaning":"to ask for the bill/check"},
+        {"id":"vocab-pedir-permiso","kind":"vocabulary","priority":"optional","sourceSection":"Side-by-Side Comparison","objective":"Retain the permission-request phrase.","word":"pedir permiso","meaning":"to ask for permission"},
+        {"id":"vocab-preguntar-hora","kind":"vocabulary","priority":"optional","sourceSection":"Side-by-Side Comparison","objective":"Retain asking the time as an information question.","word":"preguntar la hora","meaning":"to ask the time"},
+        {"id":"request-test-limits","kind":"concept","priority":"optional","sourceSection":"Side-by-Side Comparison","objective":"Keep the useful request mnemonic without overextending an English synonym.","format":"qa","prompt":"What distinction should the request memory aid help you recall, even though English can request information too?","answer":"Pedir asks for a thing, favor or action; preguntar asks a question seeking information."},
+        {"id":"preterite-pidio","kind":"rule","priority":"essential","sourceSection":"Conjugation: Pedir (Stem-changing e → i)","objective":"Apply the third-person singular preterite stem change with required accent.","format":"cloze","prompt":"Ayer Juan ___ una pizza. (yesterday Juan ordered a pizza)","answer":"pidió"},
+        {"id":"preterite-pidieron","kind":"rule","priority":"optional","sourceSection":"Conjugation: Pedir (Stem-changing e → i)","objective":"Retain the third-person plural preterite stem change.","format":"cloze","prompt":"Ayer ellos ___ ayuda. (pedir)","answer":"pidieron"}
+      ],
+      "exclusions": [
+        {"sourceSection":"Mini-Dialogue","reason":"Reinforces the question-versus-favor distinction and polite request context already inventoried."},
+        {"sourceSection":"Sources","reason":"Reference links only."}
+      ]
+    }
+  ]
+}

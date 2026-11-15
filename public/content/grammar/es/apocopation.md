@@ -1,5 +1,7 @@
 # Apocopation (buen, gran, san, primer, etc.)
 
+<!-- vocab-inventory: {"mode":"explicit"} -->
+
 **Apocopation** (*apócope* in Spanish) is the dropping of a final vowel or syllable from certain adjectives **before specific nouns**. You'll say **un buen amigo** — never *un bueno amigo*. The rule is small but pervasive: get it wrong and your Spanish instantly sounds non-native.
 
 ## What Apocopates Before a Masculine Singular Noun
@@ -19,11 +21,26 @@ These adjectives **lose their final -o** when placed **before** a masculine sing
 
 Crucial details:
 
-- The drop happens **only** before a **masculine singular** noun.
-- After the noun, or before a **feminine / plural** noun, use the **full form**:
+- This is the basic pattern before a **masculine singular** noun.
+- After the noun, or before an ordinary **feminine / plural** noun, use the **full form**:
   - **un buen amigo** ✓ → **una buena amiga** ✓ → **unos buenos amigos** ✓
   - **el primer día** ✓ → **la primera vez** ✓ → **los primeros días** ✓
-- **Algún** and **ningún** carry a written accent because the stress shifts to the final syllable.
+- **Algún** and **ningún** carry a written accent because the same stressed syllable is now final in a word ending in n.
+
+There is a feminine exception for **uno, alguno** and **ninguno** before a noun beginning with stressed **a-/ha-**: *un águila*, *algún águila*, *ningún águila*. The noun remains feminine. This does not turn *buena amiga* into *buen amiga*.
+
+<!-- grammar-card: {"id":"stressed-a-feminine","kind":"concept","format":"qa","priority":"optional","sourceSection":"What Apocopates Before a Masculine Singular Noun","rule":"Uno, alguno and ninguno can shorten before feminine stressed-a nouns","example":"Why can un águila, algún águila and ningún águila occur even though águila is feminine?","answer":"Uno, alguno and ninguno also shorten before feminine nouns beginning with stressed a or ha; the noun remains feminine.","explanation":"This exception does not extend to shortening buena before an ordinary feminine noun."} -->
+
+<!-- vocab-card: {"id":"vocab-bueno","word":"bueno","meaning":"good","priority":"optional","sourceSection":"What Apocopates Before a Masculine Singular Noun"} -->
+<!-- vocab-card: {"id":"vocab-malo","word":"malo","meaning":"bad","priority":"optional","sourceSection":"What Apocopates Before a Masculine Singular Noun"} -->
+<!-- vocab-card: {"id":"vocab-primero","word":"primero","meaning":"first","priority":"optional","sourceSection":"What Apocopates Before a Masculine Singular Noun"} -->
+<!-- vocab-card: {"id":"vocab-tercero","word":"tercero","meaning":"third","priority":"optional","sourceSection":"What Apocopates Before a Masculine Singular Noun"} -->
+<!-- vocab-card: {"id":"vocab-alguno","word":"alguno","meaning":"some; any (indefinite)","priority":"optional","sourceSection":"What Apocopates Before a Masculine Singular Noun"} -->
+<!-- vocab-card: {"id":"vocab-ninguno","word":"ninguno","meaning":"no; none; not any","priority":"optional","sourceSection":"What Apocopates Before a Masculine Singular Noun"} -->
+<!-- vocab-card: {"id":"vocab-postrero","word":"postrero","meaning":"last; final (literary)","priority":"optional","sourceSection":"What Apocopates Before a Masculine Singular Noun"} -->
+<!-- grammar-card: {"id":"masculine-apocope","kind":"rule","format":"cloze","priority":"essential","sourceSection":"What Apocopates Before a Masculine Singular Noun","rule":"bueno/malo/primero/tercero/alguno/ninguno/uno drop final -o before a masculine singular noun","example":"No tengo ___ problema con eso. (I have no problem with that)","answer":"ningún","explanation":"Problema is masculine singular. The shortened form needs a written accent to preserve its stress."} -->
+<!-- grammar-card: {"id":"full-form-after","kind":"rule","format":"cloze","priority":"essential","sourceSection":"What Apocopates Before a Masculine Singular Noun","rule":"Bueno keeps its full inflected form after a noun","example":"Es un amigo ___. (good; put the adjective after the noun)","answer":"bueno","explanation":"Compare un buen amigo, una buena amiga and unos buenos amigos."} -->
+<!-- grammar-card: {"id":"ordinal-third","kind":"rule","format":"cloze","priority":"optional","sourceSection":"What Apocopates Before a Masculine Singular Noun","rule":"Tercero shortens before a masculine singular noun","example":"Vivo en el ___ piso. (third)","answer":"tercer","explanation":"Before a feminine noun use tercera; before plural nouns use the matching plural form."} -->
 
 <!-- quiz: {"type":"multiple-choice","question":"Which is correct?","options":["el primero piso","el primer piso","la primer página","el primer páginas"],"answer":1} -->
 
@@ -36,9 +53,11 @@ The apocope still applies even when **another word** sits between the adjective 
 
 The trigger is being **before** a masculine singular noun in the phrase — not literal adjacency.
 
+<!-- grammar-card: {"id":"intervening-modifier","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Apocopation Survives a Modifier","rule":"A modifier does not necessarily block apocopation in the noun phrase","example":"Fue el ___ y único intento. (primero)","answer":"primer","explanation":"The adjective still precedes masculine singular intento despite y único."} -->
+
 ## Grande → Gran (Before ANY Singular Noun)
 
-**Grande** is special: it apocopates to **gran** before **any singular noun**, masculine or feminine. Plus, the meaning shifts depending on position:
+**Grande** normally apocopates to **gran** before a singular noun of either gender. After **más** or **menos**, the full form is retained (*la más grande ciudad*). Position also often changes the interpretation:
 
 | Position | Form | Meaning |
 |---|---|---|
@@ -55,11 +74,13 @@ Examples:
 
 **Plural** stays **grandes** in both positions. Only the **singular** apocopates.
 
-<!-- grammar-card: {"rule":"grande → gran before any singular noun; meaning shifts (gran = great; grande after noun = physically big)","hint":"Position changes the meaning, not just the form.","example":"Cervantes fue un ___ escritor. (Cervantes was a great writer)","answer":"gran","explanation":"Before a singular noun, 'grande' apocopates to 'gran' and means 'great' (importance). 'Un escritor grande' would mean a physically large writer — wrong here. The plural stays 'grandes' in both positions."} -->
+<!-- grammar-card: {"id":"gran-quality","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Grande → Gran (Before ANY Singular Noun)","rule":"Grande normally shortens before singular nouns of either gender, often with a quality reading","example":"Cervantes fue un ___ escritor. (Cervantes was a great writer)","answer":"gran","explanation":"Gran here praises importance or quality; grande after a noun often describes size. Plural grandes does not shorten; más/menos grande retains grande.","legacyAliases":[{"rule":"grande → gran before any singular noun; meaning shifts (gran = great; grande after noun = physically big)","example":"Cervantes fue un ___ escritor. (Cervantes was a great writer)"}]} -->
+<!-- grammar-card: {"id":"gran-size-contrast","kind":"concept","format":"qa","priority":"optional","sourceSection":"Grande → Gran (Before ANY Singular Noun)","rule":"Position often distinguishes greatness from physical size","example":"How does una gran ciudad usually differ from una ciudad grande?","answer":"The first praises a great city; the second describes a physically big city.","explanation":"This is a common interpretation, not a claim that size and quality can never overlap."} -->
+<!-- grammar-card: {"id":"grande-comparative-exception","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Grande → Gran (Before ANY Singular Noun)","rule":"Más or menos blocks the usual shortening of grande","example":"Es la más ___ ciudad de la región. (big)","answer":"grande","explanation":"The comparative más keeps the full form before the singular noun."} -->
 
 ## Santo → San (Before Most Male Saints' Names)
 
-**Santo** apocopates to **san** before a **male saint's name** — with one exception: it stays **Santo** when the name **starts with Do- or To-**.
+**Santo** normally apocopates to **san** before a male saint's name. Conventional exceptions include **Santo Domingo, Santo Tomás, Santo Tomé** and **Santo Toribio**. The Do-/To- cue helps remember these names; it is not a productive rule for every possible name beginning with those letters.
 
 | Apocope | No Apocope |
 |---|---|
@@ -73,7 +94,11 @@ The feminine **Santa** **never apocopates**:
 
 - **Santa María**, **Santa Bárbara**, **Santa Teresa**.
 
-This is partly euphonic (avoiding *San Tomás*, which would clash awkwardly with the Sant-/Tom- sounds).
+Learn the conventional saint-name forms rather than trying to derive every name from a sound rule.
+
+<!-- vocab-card: {"id":"vocab-santo","word":"santo","meaning":"saint; holy","priority":"optional","sourceSection":"Santo → San (Before Most Male Saints' Names)"} -->
+<!-- grammar-card: {"id":"saint-name","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Santo → San (Before Most Male Saints' Names)","rule":"Most male saint names take san","example":"___ Pedro. (Saint Peter)","answer":"San","explanation":"The feminine remains Santa, as in Santa María; conventional exceptions retain Santo."} -->
+<!-- grammar-card: {"id":"saint-exception-cue","kind":"concept","format":"qa","priority":"optional","sourceSection":"Santo → San (Before Most Male Saints' Names)","rule":"Do-/To- recalls conventional Santo exceptions, not an unrestricted prefix rule","example":"Which Santo exceptions does the Do-/To- memory cue recall, and what is its limit?","answer":"Santo Domingo, Santo Tomás, Santo Tomé and Santo Toribio; the cue recalls these names rather than predicting every Do-/To- name.","explanation":"Do maps to Domingo; To maps to Tomás, Tomé and Toribio. Female saint names retain Santa."} -->
 
 <!-- quiz: {"type":"multiple-choice","question":"Which is correct?","options":["San Tomás","Santo Tomás","Santo Pedro","San Bárbara"],"answer":1} -->
 
@@ -91,7 +116,12 @@ It stays **ciento** in compound numbers:
 | Form | When | Example |
 |---|---|---|
 | **cien** | Before noun, mil, millones | **cien libros**, **cien mil euros** |
-| **ciento** | Counting / compound numbers | **ciento veinte (120)** |
+| **ciento** | Compound numbers above 100 | **ciento veinte (120)** |
+
+Exactly 100 on its own is **cien**, not *ciento*.
+
+<!-- grammar-card: {"id":"hundred-noun","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Ciento → Cien (Before a Noun or Mil/Millones)","rule":"One hundred is cien before a noun, mil or millones, and on its own","example":"Hay ___ personas. (100)","answer":"cien","explanation":"Use cien personas, cien mil and cien millones; standalone 100 is also cien."} -->
+<!-- grammar-card: {"id":"compound-hundred","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Ciento → Cien (Before a Noun or Mil/Millones)","rule":"Numbers from 101 to 199 retain ciento","example":"Hay ___ veinte libros. (120)","answer":"ciento","explanation":"Ciento veinte contrasts with exactly cien."} -->
 
 ## Cualquiera → Cualquier (Before Any Singular Noun)
 
@@ -101,7 +131,11 @@ It stays **ciento** in compound numbers:
 - **Cualquier mujer** — any woman.
 - **Cualquiera de los dos** *(after noun / standalone)* — either of the two.
 
-The plural is **cualesquiera** (rare, literary) — usually replaced by *cualquiera de* + plural noun.
+The plural **cualesquiera** is rare and literary. A common alternative selects one member of a plural set: *cualquiera de los libros* — any one of the books.
+
+<!-- vocab-card: {"id":"vocab-cualquiera","word":"cualquiera","meaning":"any; any one; either (of two)","priority":"optional","sourceSection":"Cualquiera → Cualquier (Before Any Singular Noun)"} -->
+<!-- grammar-card: {"id":"any-feminine","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Cualquiera → Cualquier (Before Any Singular Noun)","rule":"Cualquiera shortens before a singular noun of either gender","example":"___ mujer puede participar. (Any woman)","answer":"Cualquier","explanation":"Gender does not block this apocope; standalone cualquiera retains its final a."} -->
+<!-- grammar-card: {"id":"cualesquiera-register","kind":"concept","format":"qa","priority":"optional","sourceSection":"Cualquiera → Cualquier (Before Any Singular Noun)","rule":"Cualesquiera is a literary plural; cualquiera de selects one member","example":"What register does cualesquiera have, and how would you commonly say any one of the books?","answer":"It is rare or literary; cualquiera de los libros selects any one of the books.","explanation":"The alternative contains de plus a definite plural set, not just de plus a bare plural noun."} -->
 
 ## Mini-Dialogue
 
@@ -116,13 +150,11 @@ The plural is **cualesquiera** (rare, literary) — usually replaced by *cualqui
 
 Notice **san**, **santo** (before Do-), **primera** (before fem. noun → no apocope), **primer** (before masc.), **buen**, **gran**, and **ningún** — all in one short exchange.
 
-<!-- grammar-card: {"rule":"bueno/malo/primero/tercero/alguno/ninguno/uno drop final -o before a masculine singular noun","hint":"un buen libro, but una buena novela / unos buenos libros (no apocope).","example":"No tengo ___ problema con eso. (I have no problem with that)","answer":"ningún","explanation":"'Ninguno' apocopates to 'ningún' before a masculine singular noun: 'ningún problema'. Note the written accent — stress shifts to the final syllable. Before a feminine noun it would be 'ninguna': 'ninguna duda'."} -->
-
 ## Quick Apocope Reference
 
 - **bueno → buen** | **malo → mal** | **primero → primer** | **tercero → tercer** | **alguno → algún** | **ninguno → ningún** | **uno → un** — only before **masculine singular** nouns.
-- **grande → gran** — before **any singular** noun.
-- **santo → san** — before **male saint names** (not Do-/To-).
+- **grande → gran** — normally before singular nouns of either gender; not after *más/menos*.
+- **santo → san** — before most male saint names; learn the conventional Santo exceptions above.
 - **ciento → cien** — before **nouns**, *mil*, *millones*.
 - **cualquiera → cualquier** — before **any singular** noun.
 

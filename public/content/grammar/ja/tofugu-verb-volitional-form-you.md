@@ -1,5 +1,7 @@
 # よう — Volitional ("Let's")
 
+<!-- vocab-inventory: {"mode":"explicit"} -->
+
 > **Source:** Content from [Tofugu](https://www.tofugu.com/japanese-grammar/verb-volitional-form-you/). For personal study.
 
 Japanese Verb Volitional Form よう
@@ -14,10 +16,7 @@ Verb Form
 
 - 
 
-V (Masu-Stem)
-
- + 
-よう
+Ichidan V (Masu-Stem) + よう; godan final kana shifts to the お row + う. Irregular: する → しよう, 来る → 来よう (こよう).
 
 〜よう is a verb suffix that expresses volition, proposition, or invitation, akin to "let's" or "shall we?" in English.
 
@@ -90,6 +89,10 @@ If your verb ends in つ, your new volitional ending will be 〜とう. As in �
 
 The same pattern follows for all godan verbs!
 
+<!-- vocab-card: {"id":"vocab-aruku","priority":"optional","sourceSection":"Godan Verbs","word":"歩く","reading":"あるく","meaning":"to walk"} -->
+<!-- vocab-card: {"id":"vocab-matsu","priority":"optional","sourceSection":"Godan Verbs","word":"待つ","reading":"まつ","meaning":"to wait"} -->
+<!-- grammar-card: {"id":"godan-volitional","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Godan Verbs","rule":"Godan verbs shift the final う sound to お and add う","hint":"行く → volitional","example":"一緒(いっしょ)に行(い)___。","answer":"こう","explanation":"行く becomes 行こう, suggesting going together."} -->
+
 #### Ichidan Verbs
 
 For ichidan verbs, just replace the 〜る ending with 〜よう! For example, 食べ**る** (to eat) becomes 食べ**よう** in its volitional form (this is important to know for those of you who love eating).
@@ -100,9 +103,17 @@ For ichidan verbs, just replace the 〜る ending with 〜よう! For example, �
 > 
 > 
 
+<!-- vocab-card: {"id":"vocab-taberu","priority":"optional","sourceSection":"Ichidan Verbs","word":"食べる","reading":"たべる","meaning":"to eat"} -->
+<!-- grammar-card: {"id":"ichidan-volitional","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Ichidan Verbs","rule":"Ichidan verbs drop る and add よう","hint":"起きる → volitional","example":"明日(あした)は早(はや)く起(お)き___。","answer":"よう","explanation":"Use the ichidan stem 起き followed by よう."} -->
+
 #### Irregular Verbs
 
 As for irregular verbs, the volitional form of  来**る**(く　) (to come) is  来**よう**(こ　　), and **する** (to do) is **しよう**.
+
+<!-- vocab-card: {"id":"vocab-kuru","priority":"optional","sourceSection":"Irregular Verbs","word":"来る","reading":"くる","meaning":"to come"} -->
+<!-- vocab-card: {"id":"vocab-suru","priority":"optional","sourceSection":"Irregular Verbs","word":"する","reading":"する","meaning":"to do"} -->
+<!-- grammar-card: {"id":"kuru-volitional","kind":"rule","format":"qa","priority":"essential","sourceSection":"Irregular Verbs","rule":"Volitional 来よう uses the reading こ","example":"Give the plain volitional of 来る, including its kana reading.","answer":"来よう (こよう).","explanation":"Use こ rather than く or the polite stem き."} -->
+<!-- grammar-card: {"id":"suru-volitional","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Irregular Verbs","rule":"する has the irregular volitional しよう","example":"する → plain volitional: ___.","answer":"しよう","explanation":"The form starts with し."} -->
 
 ### Fundamental Uses of 〜よう
 
@@ -128,7 +139,11 @@ As you can see in the second example sentence, questions in Japanese do not nece
 
 For some speakers, this might come across as slightly gruff or masculine. However, using the polite form 〜ましょう and adding か sounds perfectly neutral and can be used by anyone.
 
+<!-- grammar-card: {"id":"volitional-register","kind":"concept","format":"qa","priority":"essential","sourceSection":"Proposing and Inviting","rule":"Plain volitional invitations are casual; ましょうか is a polite alternative","example":"What polite invitation can replace casual 行こうか when the listener relationship calls for it?","answer":"行きましょうか.","explanation":"A plain invitation can use rising intonation without か; explicit plain か may sound gruff to some speakers, not exclusively male."} -->
+
 Apart from conversation, 〜よう is also used in slogans for the purpose of encouraging the public to do something or to suggest rules of conduct, such as 地球を守ろう！ (Save the Earth!) When it comes to slogans, to emphasize the verb, it's sometimes placed at the beginning of the sentence, as in 守ろう、地球を！
+
+<!-- grammar-card: {"id":"slogan-volitional","kind":"concept","format":"qa","priority":"optional","sourceSection":"Proposing and Inviting","rule":"A volitional can encourage collective action in a slogan","example":"Is 地球を守ろう！ necessarily a prediction about one person's private future action?","answer":"No. It can urge everyone to act together: “Let's protect the Earth!”","explanation":"Slogans can even front the verb for emphasis, as in 守ろう、地球を."} -->
 
 #### Expressing Your Will
 
@@ -148,9 +163,8 @@ Notice that the subject, 私, is marked by particle が. This is common for this
 
   - I think I'll make the curry.
 
-<!-- grammar-card: {"rule":"Ichidan verbs drop る and add よう","hint":"起きる → ?","example":"明日(あした)は早(はや)く起(お)き___。","answer":"よう","explanation":"起きる becomes 起きよう, taking よう rather than a bare う."} -->
-
-<!-- grammar-card: {"rule":"Godan verbs shift the final う sound to お and add う","hint":"行く → ?","example":"一緒(いっしょ)に行(い)___。","answer":"こう","explanation":"行く becomes 行こう — let's go."} -->
+<!-- grammar-card: {"id":"individual-versus-joint-will","kind":"concept","format":"qa","priority":"essential","sourceSection":"Expressing Your Will","rule":"The volitional can express an individual offer as well as a joint invitation","example":"Must 私がカレーを作ろう mean that everyone will make curry together?","answer":"No. With 私が it can mean that the speaker volunteers to make it.","explanation":"Context and the marked subject distinguish “I'll do it” from “let's do it”; adding か or と思う can soften the offer."} -->
+<!-- grammar-card: {"id":"standing-intention","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Expressing Your Will","rule":"The volitional plus と思っている states a standing intention","hint":"する → volitional","example":"来年(らいねん)留学(りゅうがく)し___と思(おも)っています。","answer":"よう","explanation":"しようと思っています presents an intention the speaker has been considering."} -->
 
 ## Beyond the Basics
 
@@ -166,6 +180,8 @@ The first way is to make your verb negative with the 〜ない ending, and then 
 
   - Let's actually not go to the zoo.
 
+<!-- grammar-card: {"id":"leave-undone","kind":"rule","format":"cloze","priority":"optional","sourceSection":"〜よう in the Negative","rule":"ないでおこう proposes leaving an action undone","example":"Let's refrain from going: やっぱり動物園には行か___。","answer":"ないでおこう","explanation":"The negative predicate combines with volitional おこう, often because there is a reason to avoid the action."} -->
+
 You might utter this sentence if some reason has come up why going to the zoo is no longer a good option. Maybe your favorite elephant is sick and you won't be able to see her today, or maybe it's bad weather outside. Whatever the reason, this allows you to cancel your plans using 〜よう.
 
 The second way is to use the verb やめる (to quit) or よす (to stop) in the volitional form. While やめる is common in conversation, よす is more common in writing. In this case, you make the whole action into a subject of the sentence by using こと or の. It is more direct than 〜ないでおく.
@@ -176,6 +192,11 @@ The second way is to use the verb やめる (to quit) or よす (to stop) in the
   - Let's actually not go to the zoo.
 
 You can also combine やめる or よす and ておく in the volitional form and say やめておこう or よしておこう, which literally means "let's stop it and leave it as is." It carries the nuance of "let's pass on it this time (but maybe some other time)." Again, this is commonly used when there is a certain reason you should avoid a situation.
+
+<!-- vocab-card: {"id":"vocab-yameru","priority":"optional","sourceSection":"〜よう in the Negative","word":"やめる","reading":"やめる","meaning":"to stop; to quit"} -->
+<!-- vocab-card: {"id":"vocab-yosu","priority":"optional","sourceSection":"〜よう in the Negative","word":"よす","reading":"よす","meaning":"to stop; to desist"} -->
+<!-- grammar-card: {"id":"stop-nominalized-action","kind":"rule","format":"cloze","priority":"optional","sourceSection":"〜よう in the Negative","rule":"A nominalized action can precede volitional やめよう","example":"Let's cancel going to the zoo: 動物園に行くのは___。 (やめる)","answer":"やめよう","explanation":"の nominalizes the planned action; やめよう proposes stopping it. よそう is the more written alternative from よす."} -->
+<!-- grammar-card: {"id":"pass-this-time","kind":"concept","format":"qa","priority":"optional","sourceSection":"〜よう in the Negative","rule":"やめておこう can frame cancellation as passing on something this time","example":"What nuance can やめておこう add compared with a direct やめよう?","answer":"Let's pass on it this time or leave it for now, perhaps doing it another time.","explanation":"The おく component suggests leaving things as they are for a reason."} -->
 
   - やっぱり動物園に行くのはやめておこう。
 やっぱり動物園に行くのはよしておこう。
@@ -195,6 +216,8 @@ However, this usage sounds literary and not as common as あるだろう, except
   - こんなこともあろう(か)と思って、これを持ってきたんだよ。
 
   - I guessed this might be the case, so I've brought this.
+
+<!-- grammar-card: {"id":"literary-arou","kind":"concept","format":"qa","priority":"optional","sourceSection":"Guesses and Assumptions","rule":"Literary あろう can express conjecture rather than volition","example":"Does 文句があろう invite someone to deliberately have complaints?","answer":"No. あろう can mean “I suppose there are complaints,” a literary conjecture usually expressed with あるだろう.","explanation":"The conjectural reading also survives in expressions such as こんなこともあろうかと思って."} -->
 
 ---
 
@@ -223,8 +246,6 @@ pp. 229-233
 <!-- quiz: {"type":"multiple-choice","question":"What does \"そろそろ動物園に行こう？\" mean?","options":["Shall we get going to the zoo?","Let's go to the zoo!","I'll make the curry.","Shall I make the curry?"],"answer":0} -->
 
 <!-- quiz: {"type":"multiple-choice","question":"What does \"そろそろ動物園に行こうか。\" mean?","options":["Shall we get going to the zoo?","Let's go to the zoo!","I'll make the curry.","Shall I make the curry?"],"answer":0} -->
-
-<!-- grammar-card: {"rule":"The volitional plus と思っている states a standing intention","hint":"する → ?","example":"来年(らいねん)留学(りゅうがく)し___と思(おも)っています。","answer":"よう","explanation":"しようと思っています says the plan has been on the speaker's mind for some time."} -->
 
 ## Sources
 

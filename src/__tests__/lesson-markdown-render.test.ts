@@ -2,6 +2,7 @@ import { describe, it, expect } from 'vitest';
 import { createElement } from 'react';
 import { renderToStaticMarkup } from 'react-dom/server';
 import ReactMarkdown from 'react-markdown';
+import { stripLessonReviewSources } from '../lib/lesson-capture';
 import { LESSON_REMARK_PLUGINS } from '../lib/markdown-plugins';
 
 /**
@@ -29,10 +30,9 @@ const LESSONS = import.meta.glob('../../public/content/grammar/*/*.md', {
   eager: true,
 }) as Record<string, string>;
 
-// Mirrors LessonView: grammar-card blocks are stripped and quiz blocks are
+// Mirrors LessonView: review sources are stripped and quiz blocks are
 // pulled out into their own components, so neither reaches the markdown render.
 const QUIZ_REGEX = /<!--\s*quiz:(.*?)\s*-->/g;
-const GRAMMAR_CARD_REGEX = /<!--\s*grammar-card:\s*(.*?)\s*-->/g;
 
 /** Markers that must never survive into rendered output. */
 const MARKERS = ['**', '~~'];
@@ -50,7 +50,7 @@ function lessonsByLanguage(): Map<string, Array<{ file: string; markdown: string
 }
 
 function renderLesson(markdown: string): string {
-  const display = markdown.replace(GRAMMAR_CARD_REGEX, '').replace(QUIZ_REGEX, '');
+  const display = stripLessonReviewSources(markdown).replace(QUIZ_REGEX, '');
   return renderToStaticMarkup(
     createElement(ReactMarkdown, {
       remarkPlugins: LESSON_REMARK_PLUGINS,
@@ -69,6 +69,46 @@ function withoutCode(html: string): string {
 
 describe('grammar lesson markdown rendering', () => {
   const byLang = lessonsByLanguage();
+  const reviewSources = [
+    '<!-- grammar-card: {"rule":"Hidden rule","sourceSection":"**Always**"} -->',
+    '<!-- vocab-card: {"word":"hidden","sourceSection":"**Always**"} -->',
+    '<!-- vocab-inventory: {"mode":"explicit"} -->',
+  ].join('\n');
+
+  it('strips mixed review sources without changing visible headings or CJK emphasis', () => {
+    const markdown = [
+      '# **言葉**の練習', '', reviewSources,
+      '<!-- quiz: {"question":"Hidden quiz"} -->',
+      '', '## **Always** use the correct form', '', '**日本語**の説明。',
+    ].join('\n');
+    const html = withoutCode(renderLesson(markdown));
+    expect(html).toContain('<h1><strong>言葉</strong>の練習</h1>');
+    expect(html).toContain('<h2><strong>Always</strong> use the correct form</h2>');
+    expect(html).toContain('<strong>日本語</strong>の説明。');
+    expect(html).not.toContain('Hidden');
+    expect(html).not.toContain('sourceSection');
+    expect(html).not.toContain('vocab-inventory');
+    for (const marker of MARKERS) expect(html).not.toContain(marker);
+  });
+
+  it.each(['```html', '~~~~html'])('preserves fenced review examples in %s without treating their markers as prose failures', (fence) => {
+    const markdown = [
+      '# Lesson', '', fence, reviewSources, fence.replace('html', ''), '', '**言葉**の練習。',
+    ].join('\n');
+    const html = renderLesson(markdown);
+    expect(html).toContain('&lt;!-- grammar-card:');
+    expect(html).toContain('&lt;!-- vocab-card:');
+    expect(html).toContain('&lt;!-- vocab-inventory:');
+    expect(html).toContain('**Always**');
+    const prose = withoutCode(html);
+    expect(prose).toContain('<strong>言葉</strong>の練習。');
+    expect(prose).not.toContain('sourceSection');
+    for (const marker of MARKERS) expect(prose).not.toContain(marker);
+  });
+
+  it('still exposes malformed CJK emphasis outside metadata and code', () => {
+    expect(withoutCode(renderLesson('** 御礼(おれい)**'))).toContain('**');
+  });
 
   it('finds lessons to check', () => {
     expect(byLang.size).toBeGreaterThan(0);

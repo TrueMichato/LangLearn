@@ -1,5 +1,7 @@
 # 〜み — Adjective → Noun (Quality)
 
+<!-- vocab-inventory: {"mode":"explicit"} -->
+
 > **Source:** Content from [Tofugu](https://www.tofugu.com/japanese-grammar/adjective-suffix-mi/). For personal study.
 
 Japanese Adjective Suffix み
@@ -30,7 +32,7 @@ Adding 〜み to an adjective turns it into a noun with a subjective quality, li
 
 ## The Basics
 
-い-adjectives (and a small number of な-adjectives can be turned into a noun with the suffix 〜み. This is similar to adding -ness to an adjective in English, but there's a twist. Nouns formed with 〜み represent qualities or states that are not objectively measurable. In other words, 〜み is used to express subjective ideas.
+Some い-adjectives (and a small number of な-adjectives) can be turned into nouns with the suffix 〜み. This is similar to adding -ness to an adjective in English, but there's a twist. These nouns often foreground a perceived quality or state rather than a measured degree. This subjective framing does not mean the underlying property can never be measured.
 
 ### Forming 〜み
 
@@ -50,9 +52,18 @@ To form a み noun, take the stem form of an adjective and add 〜み.
 
 Unlike 〜さ, which can turn almost any adjective into a noun, 〜み can only pair with a limited number of adjectives. These adjectives that take 〜み tend to express qualities that are subjective in nature.
 
+<!-- vocab-card: {"id":"vocab-shinsenmi","priority":"optional","sourceSection":"Forming 〜み","word":"新鮮み","reading":"しんせんみ","meaning":"freshness; novelty"} -->
+<!-- grammar-card: {"id":"restricted-productivity","kind":"concept","format":"qa","priority":"essential","sourceSection":"Forming 〜み","rule":"み attaches to a restricted lexical set, including only a few な-adjectives","example":"Can you turn any subjective adjective into a standard noun by replacing its ending with this lesson's suffix?","answer":"No. Established み nouns are limited; subjectivity alone does not license a new form.","explanation":"Unlike broad さ formation, both the existence of the noun and its meaning need checking. 新鮮み is an established な-adjective example."} -->
+<!-- grammar-card: {"id":"na-mi-formation","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Forming 〜み","rule":"An established な-adjective み noun uses the stem without な","example":"新鮮な → established noun for freshness: ___.","answer":"新鮮み","explanation":"Remove attributive な; this particular lexical formation does not license the suffix on all な-adjectives."} -->
+
 ## Uses
 
 ### 〜み for Expressing a Subjective Perspective
+
+<!-- vocab-card: {"id":"vocab-amami","priority":"essential","sourceSection":"〜み for Expressing a Subjective Perspective","word":"甘み","reading":"あまみ","meaning":"sweetness (a perceived quality)"} -->
+<!-- grammar-card: {"id":"felt-sweetness","kind":"rule","format":"cloze","priority":"essential","sourceSection":"〜み for Expressing a Subjective Perspective","rule":"み turns an adjective into a quality you sense","hint":"甘い → established quality noun","example":"このトマトには特別な___が出てくる。","answer":"甘み","explanation":"The intended reading is the perceived quality of the tomato's sweetness, rather than a chosen scale level."} -->
+<!-- grammar-card: {"id":"sweetness-setting","kind":"rule","format":"cloze","priority":"essential","sourceSection":"〜み for Expressing a Subjective Perspective","rule":"さ turns an adjective into a measurable degree","hint":"甘い → degree noun","example":"バブルティーの___はどうしますか？","answer":"甘さ","explanation":"The lesson's scale from one to ten asks for sweetness as a chosen degree, contrasting with the tomato's perceived 甘み."} -->
+<!-- grammar-card: {"id":"quality-not-measurement-ban","kind":"concept","format":"qa","priority":"optional","sourceSection":"〜み for Expressing a Subjective Perspective","rule":"The suffix contrast frames a quality rather than proving it objectively unmeasurable","example":"Does contrasting tomato sweetness with a drink's sweetness setting mean sweetness can never be measured?","answer":"No. The contrast is between a perceived quality and a degree being selected or measured in that context.","explanation":"The same underlying property can be discussed from different perspectives; the suffix does not make a scientific claim."} -->
 
 Choosing 〜み to create a noun implies that you’re treating that noun as something subjective or personal. If you want the noun to express something objective and measurable, then 〜さ is more appropriate.
 
@@ -80,11 +91,10 @@ The amount or level of sweetness you want in your bubble tea is different than t
 
 These ideas of "weight" and "warmth" are not literal, and they depend on personal perspective. Maybe others would think that the movie’s story is light and breezy. Perhaps some people find Maeda to be absolutely unbearable.
 
-<!-- grammar-card: {"rule":"み names an intangible quality something possesses","hint":"重い → ?","example":"あの映画には___がある。","answer":"重み","explanation":"重み here is gravitas rather than weight in kilograms, which would be 重さ."} -->
+<!-- vocab-card: {"id":"vocab-omomi","priority":"optional","sourceSection":"〜み for Metaphorical Ideas","word":"重み","reading":"おもみ","meaning":"weight; significance; gravitas"} -->
+<!-- vocab-card: {"id":"vocab-atatakami","priority":"optional","sourceSection":"〜み for Metaphorical Ideas","word":"温かみ","reading":"あたたかみ","meaning":"warmth; a warm or kind quality"} -->
+<!-- grammar-card: {"id":"metaphorical-weight","kind":"rule","format":"cloze","priority":"optional","sourceSection":"〜み for Metaphorical Ideas","rule":"み names an intangible quality something possesses","hint":"重い → established quality noun","example":"あの映画には___がある。","answer":"重み","explanation":"In this example, 重み is the movie's gravitas rather than a measurement in kilograms."} -->
 
-<!-- grammar-card: {"rule":"み turns an adjective into a quality you sense","hint":"甘い → ?","example":"このトマトには特別な___が出てくる。","answer":"甘み","explanation":"甘み is a perceived sweetness with character, not a number on a scale."} -->
-
-<!-- grammar-card: {"rule":"さ turns an adjective into a measurable degree","hint":"甘い → ?","example":"バブルティーの___はどうしますか？","answer":"甘さ","explanation":"甘さ is sweetness as a level you can dial up or down, which is what the question asks about."} -->
 
 ## Beyond the Basics
 
@@ -135,7 +145,14 @@ As you know, み nouns have a subjective and personal nuance, so it should be no
    
   
 
-Emotion adjectives such as 寂しい and 嬉しい do not have む ending verb counterparts, so in standard Japanese, they cannot form み nouns. As we know though, language changes over time, and these adjectives are beginning to be used as み nouns by young people.
+The links with む verbs are useful lexical associations, not a general test for whether a み noun exists. 寂しみ and 嬉しみ are not ordinary neutral standard forms, but they occur in playful youth or internet usage.
+
+<!-- vocab-card: {"id":"vocab-tanoshimu","priority":"optional","sourceSection":"み Nouns with Verb Equivalents","word":"楽しむ","reading":"たのしむ","meaning":"to enjoy oneself; to enjoy"} -->
+<!-- vocab-card: {"id":"vocab-kanashimu","priority":"optional","sourceSection":"み Nouns with Verb Equivalents","word":"悲しむ","reading":"かなしむ","meaning":"to grieve; to feel sad"} -->
+<!-- vocab-card: {"id":"vocab-itamu","priority":"optional","sourceSection":"み Nouns with Verb Equivalents","word":"痛む","reading":"いたむ","meaning":"to hurt; to ache"} -->
+<!-- vocab-card: {"id":"vocab-kurushimu","priority":"optional","sourceSection":"み Nouns with Verb Equivalents","word":"苦しむ","reading":"くるしむ","meaning":"to suffer"} -->
+<!-- grammar-card: {"id":"verb-noun-association","kind":"concept","format":"qa","priority":"optional","sourceSection":"み Nouns with Verb Equivalents","rule":"Some established emotion nouns relate to む verbs","example":"How can 楽しむ help you remember 楽しみ without becoming a universal noun-formation rule?","answer":"楽しむ means to enjoy and 楽しみ names enjoyment; the related verb helps remember this established noun, not predict every possible み noun.","explanation":"The lesson also pairs 悲しむ/悲しみ, 痛む/痛み, and 苦しむ/苦しみ. These are lexical associations."} -->
+<!-- grammar-card: {"id":"innovative-mi-register","kind":"concept","format":"qa","priority":"optional","sourceSection":"み Nouns with Verb Equivalents","rule":"Innovative み coinages belong to marked styles rather than unrestricted standard usage","example":"How should a learner treat 寂しみ and 嬉しみ when choosing a neutral standard expression?","answer":"Recognize them as playful youth or internet-style coinages, not ordinary neutral standard nouns.","explanation":"Language change and stylistic creativity do not remove the ordinary lexical limits on み."} -->
 
   - 寂しみがヤバい。
 
@@ -147,7 +164,11 @@ Emotion adjectives such as 寂しい and 嬉しい do not have む ending verb c
 
 ### み Nouns with Flavor Adjectives
 
-Another common type of み noun is related to flavor. In some cases, especially with flavors, the kanji 味 (flavor) is used instead of the hiragana み — 旨味 (flavorful-ness), 辛味 (spiciness), 甘味 (sweetness). When you think of it from this angle, flavor is not something you can objectively measure. What’s spicy to you may not be spicy to someone else.
+<!-- vocab-card: {"id":"vocab-umami","priority":"optional","sourceSection":"み Nouns with Flavor Adjectives","word":"旨味","reading":"うまみ","meaning":"savoriness; savory taste"} -->
+<!-- vocab-card: {"id":"vocab-karami","priority":"optional","sourceSection":"み Nouns with Flavor Adjectives","word":"辛味","reading":"からみ","meaning":"spiciness; pungency"} -->
+<!-- grammar-card: {"id":"flavor-spelling","kind":"concept","format":"qa","priority":"optional","sourceSection":"み Nouns with Flavor Adjectives","rule":"Flavor nouns may write the mi element as 味","example":"What spelling alternative occurs in flavor nouns such as 甘み?","answer":"The mi element can be written 味, as in 甘味 (あまみ).","explanation":"旨味 (うまみ) and 辛味 (からみ) are other established flavor words; this is not a general spelling rule for all subjective nouns."} -->
+
+Another common type of み noun is related to flavor. In some cases, especially with flavors, the kanji 味 (flavor) is used instead of the hiragana み — 旨味 (flavorful-ness), 辛味 (spiciness), 甘味 (sweetness). These expressions can foreground perceived flavor, even though aspects of taste can also be measured. What’s spicy to you may not be spicy to someone else.
 
 ---
 

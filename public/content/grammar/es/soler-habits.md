@@ -1,5 +1,7 @@
 # Soler + Infinitivo (Habitual Actions)
 
+<!-- vocab-inventory: {"mode":"explicit"} -->
+
 **Soler + infinitivo** is the elegant Spanish way to express **habit** — what someone usually or typically does. English uses adverbs like "usually" or "tends to", but Spanish has a dedicated verb. It's high-frequency, native-sounding, and used constantly in everyday conversation.
 
 ## The Core Construction
@@ -13,6 +15,8 @@
 
 The English equivalent is a sentence with **"usually"**, **"tend to"**, or **"normally"** — but in Spanish it's wrapped into the verb.
 
+<!-- vocab-card: {"id":"vocab-soler","word":"soler","meaning":"to usually do; to tend to (followed by an infinitive)","priority":"essential","sourceSection":"The Core Construction"} -->
+<!-- grammar-card: {"id":"present-habit","kind":"rule","format":"cloze","priority":"essential","sourceSection":"The Core Construction","rule":"Soler is conjugated before an unchanged infinitive","example":"Yo ___ desayunar a las ocho. (I usually have breakfast.)","answer":"suelo","explanation":"Use present suelo for the current habit; desayunar stays infinitive."} -->
 ## Conjugation: Soler (Stem-changing o → ue)
 
 **Soler** is a stem-changing verb: **o → ue** in stressed forms (everywhere except *nosotros* and *vosotros*).
@@ -26,16 +30,21 @@ The English equivalent is a sentence with **"usually"**, **"tend to"**, or **"no
 | vosotros | **soléis** | soh-LAYS |
 | ellos / ustedes | **suelen** | SWEH-lehn |
 
+<!-- grammar-card: {"id":"unstressed-stem","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Conjugation: Soler (Stem-changing o → ue)","rule":"Nosotros does not diphthongize the present stem","example":"Nosotros ___ cenar tarde. (soler)","answer":"solemos","explanation":"The stem vowel is unstressed, so it remains o, unlike suelo and suelen."} -->
+<!-- grammar-card: {"id":"vosotros-habit","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Conjugation: Soler (Stem-changing o → ue)","rule":"Vosotros retains o in soléis","example":"Vosotros ___ cenar tarde. (soler; Spain, informal plural)","answer":"soléis","explanation":"The accented ending carries stress. Ustedes uses suelen."} -->
+
 <!-- quiz: {"type":"multiple-choice","question":"How do you say 'They usually arrive late' using soler?","options":["Suelen llegando tarde","Suelen llegar tarde","Solen llegar tarde","Suelan llegar tarde"],"answer":1} -->
 
-## Critical Rule: Only Present and Imperfect
+## Usual Tenses: Present and Imperfect
 
-Like **acabar de**, **soler** is **defective** — it works only in two tenses:
+**Soler** has restricted usage. Its overwhelmingly common indicative tenses are:
 
 1. **Present** (suelo, sueles…) → "usually do" — habitual in the present.
 2. **Imperfect** (solía, solías…) → "used to" — habitual in the past.
 
-It is **not used in the preterite**, **future**, **conditional**, or **subjunctive** in everyday Spanish.
+The simple preterite, future, and conditional are not ordinary choices for these habits. Do not invent *solí* to translate "used to". But present subjunctive **suela** and compound forms such as **ha solido** do exist; "only two tenses" would be too absolute.
+
+<!-- grammar-card: {"id":"restricted-not-absent","kind":"concept","format":"qa","priority":"optional","sourceSection":"Usual Tenses: Present and Imperfect","rule":"Restricted usage does not mean every non-present/imperfect form is nonexistent","example":"Does soler's restricted usage mean suela and ha solido are impossible?","answer":"No. Those forms exist; present and imperfect indicative are the main everyday habit forms taught here.","explanation":"Avoid invented simple-preterite forms for used to without banning real subjunctive or compound uses."} -->
 
 ## Imperfect: "Used To"
 
@@ -56,7 +65,7 @@ This is the cleanest way to translate English **"used to"** for habits. (For "us
 | vosotros solíais | soh-LEE-ahys |
 | ellos solían | soh-LEE-ahn |
 
-<!-- grammar-card: {"rule":"soler + infinitivo: present = 'usually do'; imperfect = 'used to'. No preterite, future, or conditional.","hint":"Suelo correr = I usually run. Solía correr = I used to run.","example":"De niño, ___ jugar en el parque. (As a kid, I used to play in the park)","answer":"solía","explanation":"For past habits, use the imperfect 'solía + infinitivo'. The present 'suelo' would be wrong because the habit is in the past. Never use preterite ('solí') — this idiom doesn't exist in the preterite."} -->
+<!-- grammar-card: {"id":"past-habit","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Imperfect: \"Used To\"","rule":"Imperfect soler expresses a past habit","example":"De niño, ___ jugar en el parque. (As a kid, I used to play in the park)","answer":"solía","explanation":"Use imperfect solía, not present suelo or an invented simple preterite.","legacyAliases":[{"rule":"soler + infinitivo: present = 'usually do'; imperfect = 'used to'. No preterite, future, or conditional.","example":"De niño, ___ jugar en el parque. (As a kid, I used to play in the park)"}]} -->
 
 ## Soler vs the Plain Present
 
@@ -69,6 +78,7 @@ Use **soler** when you want to **emphasize regularity** — to mark something as
 
 Native speakers reach for **soler** especially when adding details about **when**, **how often**, or **under what circumstances** something happens.
 
+<!-- grammar-card: {"id":"habit-emphasis","kind":"concept","format":"qa","priority":"optional","sourceSection":"Soler vs the Plain Present","rule":"Soler explicitly emphasizes regularity already possible with the plain present","example":"What does Suelo estudiar add to neutral Estudio?","answer":"It explicitly marks studying as what I usually do, a recurring habit.","explanation":"The plain present can also describe habits; soler is not required for every habitual statement."} -->
 ## Negative: "Usually Don't"
 
 Place **no** before **soler**:
@@ -78,6 +88,8 @@ Place **no** before **soler**:
 - **No solía hacer ejercicio** — I didn't use to exercise.
 
 This is a softer, more natural negation than *nunca* (never).
+
+<!-- grammar-card: {"id":"negative-habit","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Negative: \"Usually Don't\"","rule":"Negate soler with 'no' before the verb: 'no suelo / no solía + infinitivo'","example":"___ ___ ver la televisión por la mañana. (I don't usually watch TV in the morning)","answer":"No suelo","explanation":"No precedes suelo. This means not usually, not the absolute never expressed by nunca."} -->
 
 <!-- quiz: {"type":"multiple-choice","question":"Translate: 'We used to live in Madrid' using soler.","options":["Solimos vivir en Madrid","Solemos vivir en Madrid","Solíamos vivir en Madrid","Soliéramos vivir en Madrid"],"answer":2} -->
 
@@ -92,13 +104,11 @@ This is a softer, more natural negation than *nunca* (never).
 
 Notice **suelo** (present habit), **solía** (past habit), and **no suele** (negative habit) all together.
 
-<!-- grammar-card: {"rule":"Negate soler with 'no' before the verb: 'no suelo / no solía + infinitivo'","hint":"Softer than 'nunca' — means 'don't usually' rather than 'never'.","example":"___ ___ ver la televisión por la mañana. (I don't usually watch TV in the morning)","answer":"No suelo","explanation":"'No suelo + infinitivo' means 'I don't usually + verb'. 'Nunca veo la tele por la mañana' would be stronger: 'I never watch TV in the morning'. Soler gives a softer, habit-based negation."} -->
-
 ## Quick Recap
 
 - **Suelo / Sueles / Suele / Solemos / Soléis / Suelen + infinitivo** → "usually + verb"
 - **Solía / Solías / Solía / Solíamos / Solíais / Solían + infinitivo** → "used to + verb"
-- **Only present and imperfect** — no other tenses
+- **Main everyday indicative forms: present and imperfect** — other forms have restricted usage.
 - **No suelo + inf** → "don't usually + verb"
 
 ## Sources

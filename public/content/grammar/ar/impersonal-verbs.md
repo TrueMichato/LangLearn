@@ -1,5 +1,7 @@
 # Impersonal & Weather Verbs
 
+<!-- vocab-inventory: {"mode":"explicit"} -->
+
 English uses a dummy subject in sentences such as it rained or it is necessary. Arabic usually avoids a meaningless it. Instead, it uses a real subject, a natural phenomenon as the subject, or a fixed impersonal verb followed by a clause.
 
 ## Core idea
@@ -7,6 +9,13 @@ English uses a dummy subject in sentences such as it rained or it is necessary. 
 Weather sentences often name the thing that acts: السَّمَاءُ (as-samāʾu) — the sky, الْمَطَرُ (al-maṭaru) — rain, الثَّلْجُ (ath-thalju) — snow, الْحَرُّ (al-ḥarru) — heat, or اللَّيْلُ (al-laylu) — night.
 
 Impersonal necessity and suitability often use a third-person masculine singular verb such as يَجِبُ (yajibu) — it is necessary or يَنْبَغِي (yanbaghī) — it ought, followed by أَنْ (an) and a subjunctive verb.
+
+<!-- vocab-card: {"id":"vocab-matar","word":"الْمَطَرُ","reading":"al-maṭaru","meaning":"rain","priority":"optional","sourceSection":"Core idea"} -->
+<!-- vocab-card: {"id":"vocab-thalj","word":"الثَّلْجُ","reading":"ath-thalju","meaning":"snow","priority":"optional","sourceSection":"Core idea"} -->
+<!-- vocab-card: {"id":"vocab-harr","word":"الْحَرُّ","reading":"al-ḥarru","meaning":"heat","priority":"optional","sourceSection":"Core idea"} -->
+<!-- vocab-card: {"id":"vocab-yajibu","word":"يَجِبُ","reading":"yajibu","meaning":"it is necessary; must","priority":"essential","sourceSection":"Core idea"} -->
+<!-- vocab-card: {"id":"vocab-yanbaghi","word":"يَنْبَغِي","reading":"yanbaghī","meaning":"it ought; should","priority":"optional","sourceSection":"Core idea"} -->
+<!-- grammar-card: {"id":"no-dummy-subject","kind":"concept","format":"qa","priority":"essential","sourceSection":"Core idea","rule":"English dummy subjects need not have an Arabic pronoun counterpart.","example":"Should the meaningless it in English weather and necessity sentences normally become Arabic هُوَ?","answer":"No. Arabic usually uses a real natural subject or an impersonal construction.","explanation":"The sky, snow or heat can be the subject; a necessity verb can instead introduce a clause."} -->
 
 ## Weather examples
 
@@ -27,7 +36,8 @@ The verbs يَجِبُ (yajibu) and يَنْبَغِي (yanbaghī) do not need a
 - يَنْبَغِي أَنْ تَسْأَلَ بِأَدَبٍ (yanbaghī an tasʾala bi-adabin) — One should ask politely.
 - لَا يَجُوزُ أَنْ نَنْسَى الْوَعْدَ (lā yajūzu an nansā al-waʿda) — It is not permissible to forget the promise.
 
-<!-- grammar-card: {"rule":"يَجِبُ أَنْ (yajibu an) is followed by a subjunctive present verb.","hint":"After أَنْ, expect the ending ـَ on sound verbs.","example":"Complete: We must arrive: يَجِبُ أَنْ ___ (yajibu an ___).","answer":"نَحْضُرَ (naḥḍura)","explanation":"that we arrive — أَنْ puts نَحْضُرُ into the subjunctive form نَحْضُرَ after يَجِبُ."} -->
+<!-- grammar-card: {"id":"necessity-subjunctive","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Impersonal necessity","rule":"The complement of an after a necessity verb is subjunctive.","example":"Complete “we must arrive”: يَجِبُ أَنْ ___.","answer":"نَحْضُرَ","explanation":"Naḥḍura has final fatḥa after أَنْ; the first-person plural is inside the complement, not a plural inflection of يَجِبُ.","legacyAliases":[{"rule":"يَجِبُ أَنْ (yajibu an) is followed by a subjunctive present verb.","example":"Complete: We must arrive: يَجِبُ أَنْ ___ (yajibu an ___)."}]} -->
+<!-- grammar-card: {"id":"not-permissible","kind":"concept","format":"qa","priority":"optional","sourceSection":"Impersonal necessity","rule":"Necessity, recommendation and permission are different meanings.","example":"What force does لَا يَجُوزُ add in لَا يَجُوزُ أَنْ نَنْسَى الْوَعْدَ?","answer":"It is not permissible to forget the promise.","explanation":"This is a ban or lack of permission, not merely a prediction that forgetting will not happen."} -->
 
 ## Reading strategy
 
@@ -36,9 +46,11 @@ If an English translation begins with it, do not automatically search for هُو
 - يَبْدُو أَنَّ الْبَابَ مَفْتُوحٌ (yabdū anna al-bāba maftūḥun) — It seems that the door is open.
 - يَحْسُنُ أَنْ نَنْتَظِرَ قَلِيلًا (yaḥsunu an nantaẓira qalīlan) — It is good for us to wait a little.
 
+<!-- grammar-card: {"id":"an-anna-complements","kind":"concept","format":"qa","priority":"optional","sourceSection":"Reading strategy","rule":"A verbal an-clause and a nominal anna-clause have different internal government.","example":"How does the complement of يَبْدُو أَنَّ الْبَابَ مَفْتُوحٌ differ from يَحْسُنُ أَنْ نَنْتَظِرَ?","answer":"Anna introduces a nominal clause with an accusative noun; an introduces a subjunctive verb.","explanation":"Al-bāba is the noun of أَنَّ and maftūḥun its predicate; nantaẓira is subjunctive after أَنْ."} -->
+
 <!-- quiz: {"type":"multiple-choice","question":"After يَجِبُ أَنْ (yajibu an), which form is expected for we attend?","options":["نَحْضُرَ (naḥḍura)","نَحْضُرُ (naḥḍuru)","حَضَرْنَا (ḥaḍarnā)","نَحْضُرْنَ (naḥḍurna)"],"answer":0} -->
 
-<!-- grammar-card: {"rule":"Arabic weather verbs often use a real natural subject instead of a dummy it.","hint":"Look for sky, rain, snow, heat, night, or wind as the subject.","example":"Translate naturally: تَسَاقَطَ الثَّلْجُ (tasāqaṭa ath-thalju).","answer":"It snowed or snow fell","explanation":"The Arabic subject is الثَّلْجُ, but idiomatic English can use it snowed."} -->
+<!-- grammar-card: {"id":"snow-translation","kind":"rule","format":"qa","priority":"essential","sourceSection":"Reading strategy","rule":"Arabic weather verbs often use a real natural subject instead of a dummy it.","example":"Translate naturally: تَسَاقَطَ الثَّلْجُ (tasāqaṭa ath-thalju).","answer":"It snowed or snow fell","explanation":"Snow is the actual Arabic subject; English can idiomatically use a dummy it."} -->
 
 ## Common pairs
 
@@ -46,9 +58,13 @@ If an English translation begins with it, do not automatically search for هُو
 - صَفَا الْجَوُّ (ṣafā al-jawwu) — The weather cleared.
 - بَرَدَ الْهَوَاءُ (barada al-hawāʾu) — The air became cold.
 
+<!-- vocab-card: {"id":"vocab-rih","word":"الرِّيحُ","reading":"ar-rīḥu","meaning":"the wind","priority":"optional","sourceSection":"Common pairs"} -->
+<!-- vocab-card: {"id":"vocab-safa-jaww","word":"صَفَا الْجَوُّ","reading":"ṣafā al-jawwu","meaning":"the weather cleared","priority":"optional","sourceSection":"Common pairs"} -->
+<!-- vocab-card: {"id":"vocab-barada-hawa","word":"بَرَدَ الْهَوَاءُ","reading":"barada al-hawāʾu","meaning":"the air became cold","priority":"optional","sourceSection":"Common pairs"} -->
+
 <!-- quiz: {"type":"multiple-choice","question":"Which sentence uses a real natural subject rather than a dummy pronoun?","options":["هَبَّتِ الرِّيحُ (habbati ar-rīḥu) — The wind blew","هُوَ هَبَّ (huwa habba) — He blew","أَنْ يَهُبَّ (an yahubba) — That he blow","رِيحٍ هَبَّتْ (rīḥin habbat) — Genitive wind blew"],"answer":0} -->
 
-<!-- grammar-card: {"rule":"Do not translate English dummy it mechanically as هُوَ in weather and necessity sentences.","hint":"Arabic usually chooses a natural subject or an impersonal verb.","example":"Which is idiomatic for it got hot: اِشْتَدَّ ___ (ishtadda ___).","answer":"الْحَرُّ (al-ḥarru)","explanation":"اِشْتَدَّ الْحَرُّ literally says the heat intensified, which is the idiomatic way to say it got very hot."} -->
+<!-- grammar-card: {"id":"heat-subject","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Common pairs","rule":"A natural phenomenon can be the subject of an Arabic weather statement.","example":"Complete the taught expression for “it got very hot”: اِشْتَدَّ ___.","answer":"الْحَرُّ","explanation":"Ishtadda al-ḥarru literally says the heat intensified. The natural subject is nominative.","legacyAliases":[{"rule":"Do not translate English dummy it mechanically as هُوَ in weather and necessity sentences.","example":"Which is idiomatic for it got hot: اِشْتَدَّ ___ (ishtadda ___)."}]} -->
 
 ## Sources
 

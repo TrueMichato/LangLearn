@@ -1,5 +1,7 @@
 # Adverbs & Adverbs of Manner
 
+<!-- vocab-inventory: {"mode":"explicit"} -->
+
 Adverbs describe verbs, adjectives, or whole sentences. They answer questions like **how?**, **when?**, **where?**, and **how much?** Romanian adverbs are often simple and do not agree with gender or number.
 
 ## Common Adverbs of Manner
@@ -20,6 +22,13 @@ Adverbs of manner answer **how?**
 
 <!-- quiz: {"type":"multiple-choice","question":"Which adverb means 'well'?","options":["rău","bine","repede","aproape"],"answer":1} -->
 
+<!-- vocab-card: {"id":"vocab-bine","priority":"essential","sourceSection":"Common Adverbs of Manner","word":"bine","meaning":"well"} -->
+<!-- vocab-card: {"id":"vocab-rau","priority":"optional","sourceSection":"Common Adverbs of Manner","word":"rău","meaning":"badly"} -->
+<!-- vocab-card: {"id":"vocab-repede","priority":"optional","sourceSection":"Common Adverbs of Manner","word":"repede","meaning":"quickly"} -->
+<!-- vocab-card: {"id":"vocab-incet","priority":"essential","sourceSection":"Common Adverbs of Manner","word":"încet","meaning":"slowly; quietly"} -->
+<!-- vocab-card: {"id":"vocab-clar","priority":"optional","sourceSection":"Common Adverbs of Manner","word":"clar","meaning":"clearly (adverb)"} -->
+<!-- vocab-card: {"id":"vocab-frumos","priority":"optional","sourceSection":"Common Adverbs of Manner","word":"frumos","meaning":"nicely; beautifully (adverb)"} -->
+
 ## Adjectives Used as Adverbs
 
 Many Romanian adverbs look like the masculine singular adjective form.
@@ -39,7 +48,10 @@ The adverb does **not** agree with the subject.
 
 Do not change **frumos** to **frumoasă** when it describes the verb.
 
-<!-- grammar-card: {"rule":"Adverbs do not agree with gender or number","hint":"Ea cântă frumos, not frumoasă","example":"Ea scrie ___. (She writes beautifully/neatly.)","answer":"frumos","explanation":"Frumos is used adverbially here, so it stays unchanged even with a feminine subject."} -->
+<!-- grammar-card: {"id":"invariable-manner","priority":"essential","sourceSection":"Adjectives Used as Adverbs","kind":"rule","format":"cloze","rule":"Adverbs do not agree with gender or number","example":"Ea scrie ___. (She writes beautifully/neatly.)","answer":"frumos","explanation":"Frumos describes scrie, not the gender of ea."} -->
+<!-- grammar-card: {"id":"adverb-adjective-contrast","priority":"essential","sourceSection":"Adjectives Used as Adverbs","kind":"concept","format":"qa","rule":"An adverb modifies an action rather than agreeing with its subject","example":"Why does frumos stay unchanged in both El cântă frumos and Ele cântă frumos?","answer":"It describes how they sing, not the people singing.","explanation":"It describes how they sing, not the people singing."} -->
+<!-- vocab-card: {"id":"vocab-corect","priority":"optional","sourceSection":"Adjectives Used as Adverbs","word":"corect","meaning":"correctly (adverb)"} -->
+<!-- vocab-card: {"id":"vocab-rapid","priority":"optional","sourceSection":"Adjectives Used as Adverbs","word":"rapid","meaning":"quickly (adverb)"} -->
 
 ## Time and Frequency Adverbs
 
@@ -60,6 +72,19 @@ Do not change **frumos** to **frumoasă** when it describes the verb.
 - **Uneori citesc seara.** — Sometimes I read in the evening.
 - **Nu beau cafea niciodată.** — I never drink coffee.
 
+<!-- vocab-card: {"id":"vocab-acum","priority":"optional","sourceSection":"Time and Frequency Adverbs","word":"acum","meaning":"now"} -->
+<!-- vocab-card: {"id":"vocab-azi","priority":"optional","sourceSection":"Time and Frequency Adverbs","word":"azi","meaning":"today"} -->
+<!-- vocab-card: {"id":"vocab-astazi","priority":"optional","sourceSection":"Time and Frequency Adverbs","word":"astăzi","meaning":"today"} -->
+<!-- vocab-card: {"id":"vocab-ieri","priority":"optional","sourceSection":"Time and Frequency Adverbs","word":"ieri","meaning":"yesterday"} -->
+<!-- vocab-card: {"id":"vocab-maine","priority":"optional","sourceSection":"Time and Frequency Adverbs","word":"mâine","meaning":"tomorrow"} -->
+<!-- vocab-card: {"id":"vocab-mereu","priority":"optional","sourceSection":"Time and Frequency Adverbs","word":"mereu","meaning":"always; continually"} -->
+<!-- vocab-card: {"id":"vocab-adesea","priority":"optional","sourceSection":"Time and Frequency Adverbs","word":"adesea","meaning":"often"} -->
+<!-- vocab-card: {"id":"vocab-uneori","priority":"optional","sourceSection":"Time and Frequency Adverbs","word":"uneori","meaning":"sometimes"} -->
+<!-- vocab-card: {"id":"vocab-niciodata","priority":"optional","sourceSection":"Time and Frequency Adverbs","word":"niciodată","meaning":"never"} -->
+<!-- vocab-card: {"id":"vocab-deja","priority":"optional","sourceSection":"Time and Frequency Adverbs","word":"deja","meaning":"already"} -->
+<!-- vocab-card: {"id":"vocab-inca","priority":"optional","sourceSection":"Time and Frequency Adverbs","word":"încă","meaning":"still; yet"} -->
+<!-- grammar-card: {"id":"never-concord","priority":"optional","sourceSection":"Time and Frequency Adverbs","kind":"rule","format":"cloze","rule":"Niciodată normally accompanies nu in a finite negative clause","example":"___ beau cafea niciodată.","answer":"Nu","explanation":"Nu beau cafea niciodată means I never drink coffee."} -->
+
 ## Place Adverbs
 
 | Romanian | English | Example |
@@ -73,6 +98,13 @@ Do not change **frumos** to **frumoasă** when it describes the verb.
 
 <!-- quiz: {"type":"multiple-choice","question":"Which adverb means 'tomorrow'?","options":["ieri","mâine","acum","mereu"],"answer":1} -->
 
+<!-- vocab-card: {"id":"vocab-aici","priority":"optional","sourceSection":"Place Adverbs","word":"aici","meaning":"here"} -->
+<!-- vocab-card: {"id":"vocab-acolo","priority":"optional","sourceSection":"Place Adverbs","word":"acolo","meaning":"there"} -->
+<!-- vocab-card: {"id":"vocab-aproape","priority":"optional","sourceSection":"Place Adverbs","word":"aproape","meaning":"near; nearby"} -->
+<!-- vocab-card: {"id":"vocab-departe","priority":"optional","sourceSection":"Place Adverbs","word":"departe","meaning":"far; far away"} -->
+<!-- vocab-card: {"id":"vocab-sus","priority":"optional","sourceSection":"Place Adverbs","word":"sus","meaning":"up; upstairs"} -->
+<!-- vocab-card: {"id":"vocab-jos","priority":"optional","sourceSection":"Place Adverbs","word":"jos","meaning":"down; downstairs"} -->
+
 ## Language Adverbs in -ește
 
 Romanian often uses **-ește** adverbs to mean **in a language** or **in a certain manner**.
@@ -85,9 +117,15 @@ Romanian often uses **-ește** adverbs to mean **in a language** or **in a certa
 - **Vorbesc românește puțin.** (vor-BESK roh-muh-NESH-teh poo-TSIN) — I speak a little Romanian.
 - **Poți explica englezește?** — Can you explain in English?
 
+<!-- vocab-card: {"id":"vocab-romaneste","priority":"optional","sourceSection":"Language Adverbs in -ește","word":"românește","meaning":"in Romanian"} -->
+<!-- vocab-card: {"id":"vocab-englezeste","priority":"optional","sourceSection":"Language Adverbs in -ește","word":"englezește","meaning":"in English"} -->
+<!-- vocab-card: {"id":"vocab-frantuzeste","priority":"optional","sourceSection":"Language Adverbs in -ește","word":"franțuzește","meaning":"in French"} -->
+<!-- vocab-card: {"id":"vocab-prieteneste","priority":"optional","sourceSection":"Language Adverbs in -ește","word":"prietenește","meaning":"in a friendly way"} -->
+<!-- grammar-card: {"id":"este-suffix-scope","priority":"optional","sourceSection":"Language Adverbs in -ește","kind":"concept","format":"qa","rule":"Adverbs in -ește can express a language or another manner","example":"Do all adverbs ending in -ește name languages?","answer":"No. Românește means in Romanian, but prietenește means in a friendly way.","explanation":"No. Românește means in Romanian, but prietenește means in a friendly way."} -->
+
 ## Comparative Adverbs
 
-Use **mai** with adverbs just as with adjectives.
+Use **mai** with adverbs just as with adjectives. The adverbial superlative uses fixed **cel mai**, even with a feminine or plural subject; it does not agree with the subject.
 
 - **mai bine** — better
 - **mai repede** — faster
@@ -99,7 +137,8 @@ Use **mai** with adverbs just as with adjectives.
 
 <!-- quiz: {"type":"multiple-choice","question":"Which sentence uses an adverb correctly?","options":["Ea cântă frumoasă.","Ea cântă frumos.","Ea cântă frumoși.","Ea cântă frumoase."],"answer":1} -->
 
-<!-- grammar-card: {"rule":"Mai forms comparative adverbs too","hint":"mai repede, mai bine","example":"Vorbește ___ încet, te rog.","answer":"mai","explanation":"Mai before an adverb forms the comparative: mai încet means more slowly."} -->
+<!-- grammar-card: {"id":"comparative-slower","priority":"essential","sourceSection":"Comparative Adverbs","kind":"rule","format":"cloze","rule":"Mai forms comparative adverbs too","example":"Vorbește ___ încet, te rog. (more slowly)","answer":"mai","explanation":"Mai încet means more slowly or more quietly.","legacyAliases":[{"rule":"Mai forms comparative adverbs too","example":"Vorbește ___ încet, te rog."}]} -->
+<!-- grammar-card: {"id":"adverb-superlative","priority":"optional","sourceSection":"Comparative Adverbs","kind":"rule","format":"cloze","rule":"Adverbial superlatives use fixed cel mai","example":"Ea aleargă ___ mai repede. (She runs the fastest.)","answer":"cel","explanation":"Here cel mai modifies repede, not the feminine subject ea."} -->
 
 ## Sources
 

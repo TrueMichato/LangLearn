@@ -1,10 +1,14 @@
 # Naʿt Sababī: Adjectives Linked to a Related Noun
 
+<!-- vocab-inventory: {"mode":"explicit"} -->
+
 Most adjectives directly describe the noun before them. Naʿt sababī is different: the adjective describes a related noun that comes after it, often with a possessive pronoun.
 
 ## Core idea
 
 **النَّعْتُ السَّبَبِيُّ** (an-naʿtu as-sababiyyu) agrees with the first noun in case and definiteness, but its gender follows the related noun after it. The adjective normally stays singular.
+
+<!-- grammar-card: {"id":"split-agreement-singular","kind":"concept","format":"qa","priority":"essential","sourceSection":"Core idea","rule":"Naʿt sababī splits agreement between the owner and the following related noun.","example":"In naʿt sababī, which noun controls case and definiteness, and which controls gender?","answer":"The first noun controls case and definiteness; the following related noun controls gender. The adjective normally stays singular.","explanation":"Unlike a direct adjective, it does not simply copy every agreement feature of the first noun."} -->
 
 ## Forms and examples
 
@@ -23,7 +27,9 @@ Compare the direct adjective **رَأَيْتُ الرَّجُلَ الْكَر�
 
 The related noun after the adjective is often nominative because it behaves like the doer or bearer of the adjective.
 
-<!-- grammar-card: {"rule": "Naʿt sababī agrees with the first noun in case and definiteness but follows the related noun in gender.", "hint": "Ask who actually has the quality.", "example": "رَأَيْتُ الرَّجُلَ الْجَمِيلَةَ بِنْتُهُ", "answer": "I saw the man whose daughter is beautiful", "explanation": "The adjective is accusative and definite like الرَّجُلَ, but feminine because بِنْتُهُ is feminine."} -->
+<!-- grammar-card: {"id":"daughter-adjective-agreement","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Usage notes","rule":"Naʿt sababī agrees with the first noun in case and definiteness but follows the related noun in gender.","example":"Complete “I saw the man whose daughter is beautiful”: رَأَيْتُ الرَّجُلَ ___ بِنْتُهُ.","answer":"الْجَمِيلَةَ","explanation":"الْجَمِيلَةَ (al-jamīlata) is definite and accusative like الرَّجُلَ, but feminine singular because the daughter bears the quality.","legacyAliases":[{"rule":"Naʿt sababī agrees with the first noun in case and definiteness but follows the related noun in gender.","example":"رَأَيْتُ الرَّجُلَ الْجَمِيلَةَ بِنْتُهُ"}]} -->
+<!-- grammar-card: {"id":"related-noun-nominative","kind":"rule","format":"qa","priority":"optional","sourceSection":"Usage notes","rule":"The related noun after a sababī adjective is nominative as the bearer of its quality.","example":"Why is أَبُوهُ nominative in رَأَيْتُ الرَّجُلَ الْكَرِيمَ أَبُوهُ even though الرَّجُلَ is accusative?","answer":"The father is the bearer of the adjective's quality; its case is not copied from the fronted owner.","explanation":"الْكَرِيمَ takes the first noun's case, while أَبُوهُ functions as the adjective's raised subject."} -->
+<!-- grammar-card: {"id":"direct-versus-related-quality","kind":"concept","format":"qa","priority":"optional","sourceSection":"Usage notes","rule":"A sababī adjective describes the related noun rather than directly attributing the quality to the owner.","example":"Who is generous in رَأَيْتُ الرَّجُلَ الْكَرِيمَ أَبُوهُ, compared with رَأَيْتُ الرَّجُلَ الْكَرِيمَ?","answer":"The father is generous in the first; the man himself is generous in the second.","explanation":"The related noun and its return pronoun change who actually bears the quality."} -->
 
 ## Practice patterns
 
@@ -35,7 +41,7 @@ Build the pattern in three steps:
 
 <!-- quiz: {"type": "multiple-choice", "question": "Which sentence means I met a student whose brother is hardworking?", "options": ["قَابَلْتُ طَالِبًا مُجْتَهِدًا أَخُوهُ", "قَابَلْتُ طَالِبًا مُجْتَهِدَةً أُخْتُهُ", "قَابَلْتُ طَالِبٌ مُجْتَهِدٌ أَخُوهُ", "قَابَلْتُ الطَّالِبُ الْمُجْتَهِدُ"], "answer": 0} -->
 
-<!-- grammar-card: {"rule": "The noun after a naʿt sababī often carries a pronoun linking it to the first noun.", "hint": "Look for endings like ـهُ, ـهَا, or ـهُمْ.", "example": "مَرَرْتُ بِطَالِبٍ حَسَنٍ خُلُقُهُ", "answer": "I passed by a student whose character is good", "explanation": "The pronoun ـهُ in خُلُقُهُ links the character to the student."} -->
+<!-- grammar-card: {"id":"character-owner-return","kind":"rule","format":"qa","priority":"essential","sourceSection":"Practice patterns","rule":"The noun after a naʿt sababī often carries a pronoun linking it to the first noun.","example":"What does the attached pronoun in خُلُقُهُ refer to in مَرَرْتُ بِطَالِبٍ حَسَنٍ خُلُقُهُ?","answer":"The student, طَالِبٍ; the character is his.","explanation":"The pronoun supplies the owner link. حَسَنٍ is indefinite and genitive like طَالِبٍ, while خُلُقُهُ is nominative.","legacyAliases":[{"rule":"The noun after a naʿt sababī often carries a pronoun linking it to the first noun.","example":"مَرَرْتُ بِطَالِبٍ حَسَنٍ خُلُقُهُ"}]} -->
 
 ## Sources
 

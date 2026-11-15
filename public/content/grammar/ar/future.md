@@ -1,10 +1,17 @@
 # The Future (sa- / sawfa)
 
+<!-- vocab-inventory: {"mode":"explicit"} -->
+
 Arabic forms the future by adding a small marker before the present tense. The verb itself stays in the present form, which makes future statements easy to build.
 
 ## Core idea
 
 Use **سَـ** (sa-) — will / going to for near or simple future, and **سَوْفَ** (sawfa) — will for a slightly more explicit or sometimes more distant future. Both come before the present-tense verb.
+
+These are tendencies, not a fixed near-versus-distant deadline. Both markers can refer to future events; context supplies the timing.
+
+<!-- grammar-card: {"id":"future-marker-scope","kind":"concept","format":"qa","priority":"essential","sourceSection":"Core idea","rule":"Both future markers precede a present-form verb, without a rigid timing division","example":"Does سَوْفَ always require a distant future while سَـ can only mean a near future?","answer":"No. Both mark future events; the timing distinction is a tendency, not a fixed rule.","explanation":"Sa- is compact and attached; sawfa is separate and can feel more deliberate."} -->
+<!-- vocab-card: {"id":"vocab-sawfa","word":"سَوْفَ","reading":"sawfa","meaning":"will; future marker","priority":"optional","sourceSection":"Core idea"} -->
 
 ## Forms and examples
 
@@ -21,7 +28,7 @@ Use **سَـ** (sa-) — will / going to for near or simple future, and **سَو
 
 In everyday MSA, **سَـ** (sa-) — will is very common and compact. **سَوْفَ** (sawfa) — will is a separate word, so it can feel a little more deliberate.
 
-<!-- grammar-card: {"rule":"The prefix سَـ (sa-) — will attaches directly to a present-tense verb.","hint":"Small marker, future meaning.","example":"Complete “we will go”: ___ نَذْهَبُ (nadhhabu) — we go.","answer":"سَـ (sa-)","explanation":"سَنَذْهَبُ (sa-nadhhabu) — we will go attaches سَـ (sa-) to the present verb."} -->
+<!-- grammar-card: {"id":"attached-future","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Usage notes","rule":"The prefix سَـ (sa-) — will attaches directly to a present-tense verb.","example":"Complete “we will go” using the attached future marker: ___نَذْهَبُ.","answer":"سَ","explanation":"Sa-nadhhabu is written as one word, سَنَذْهَبُ. The verb remains indicative here.","legacyAliases":[{"rule":"The prefix سَـ (sa-) — will attaches directly to a present-tense verb.","example":"Complete “we will go”: ___ نَذْهَبُ (nadhhabu) — we go."}]} -->
 
 ## Practice patterns
 
@@ -31,9 +38,12 @@ Future with time words:
 - **سَوْفَ نَزُورُ الْمَتْحَفَ** (sawfa nazūru al-matḥafa) — we will visit the museum.
 - **لَنْ أَتَأَخَّرَ** (lan ataʾakhkhara) — I will not be late.
 
+<!-- vocab-card: {"id":"vocab-ghadan","word":"غَدًا","reading":"ghadan","meaning":"tomorrow","priority":"optional","sourceSection":"Practice patterns"} -->
+<!-- grammar-card: {"id":"negative-future","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Practice patterns","rule":"Negative future uses لَنْ with the subjunctive, not a positive future marker","example":"Complete “I will not be late”: لَنْ ___. (أَتَأَخَّرُ)","answer":"أَتَأَخَّرَ","explanation":"The negative marker lan takes subjunctive -a in this example; no sa- or sawfa is added."} -->
+
 <!-- quiz: {"type": "multiple-choice", "question": "What follows سَوْفَ (sawfa) — will?", "options": ["A past-tense verb", "A present-tense verb", "Only a noun", "A genitive preposition"], "answer": 1} -->
 
-<!-- grammar-card: {"rule":"سَوْفَ (sawfa) — will is a separate future marker before the present verb.","hint":"A full word before the verb.","example":"Complete “he will read”: ___ يَقْرَأُ (yaqraʾu) — he reads.","answer":"سَوْفَ (sawfa)","explanation":"سَوْفَ يَقْرَأُ (sawfa yaqraʾu) — he will read uses the separate future marker."} -->
+<!-- grammar-card: {"id":"separate-future","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Practice patterns","rule":"سَوْفَ (sawfa) — will is a separate future marker before the present verb.","example":"Complete “he will read”: ___ يَقْرَأُ (yaqraʾu) — he reads.","answer":"سَوْفَ","explanation":"Sawfa is written separately before the present indicative yaqraʾu."} -->
 
 ## Sources
 

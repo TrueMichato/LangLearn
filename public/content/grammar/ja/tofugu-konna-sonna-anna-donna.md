@@ -1,5 +1,7 @@
 # こんな・そんな・あんな・どんな
 
+<!-- vocab-inventory: {"mode":"explicit"} -->
+
 > **Source:** Content from [Tofugu](https://www.tofugu.com/japanese-grammar/konna-sonna-anna-donna/). For personal study.
 
 Japanese Demonstratives: こんな(Konna) • そんな(Sonna) • あんな(Anna) • どんな(Donna)
@@ -17,6 +19,12 @@ Demonstrative
 こんな, そんな, あんな, and どんな are a set of こそあど words. They go before nouns to indicate what that noun is like. In general, こんな is chosen to go before something close to the speaker, そんな for something close to the listener, or relatively far from both of them, and あんな with something close to neither the speaker nor listener. どんな is the question word that goes together with this set, and asks "what kind of…?" or "what is … like?"
 
 こんな, そんな, あんな, and どんな are casual expressions. In more formal settings, such as in an official speech or for formal writing, you'll use この 様(よう)な, その 様(よう)な, あの 様(よう)な, and どの 様(よう)な instead.
+
+<!-- vocab-card: {"id":"vocab-konna","priority":"essential","sourceSection":"The Basics","word":"こんな","reading":"こんな","meaning":"this kind of; like this (before a noun)"} -->
+<!-- vocab-card: {"id":"vocab-sonna","priority":"essential","sourceSection":"The Basics","word":"そんな","reading":"そんな","meaning":"that kind of; like that (listener-related or mentioned)"} -->
+<!-- vocab-card: {"id":"vocab-anna","priority":"essential","sourceSection":"The Basics","word":"あんな","reading":"あんな","meaning":"that kind of; like that over there"} -->
+<!-- vocab-card: {"id":"vocab-donna","priority":"essential","sourceSection":"The Basics","word":"どんな","reading":"どんな","meaning":"what kind of; what ... like"} -->
+<!-- grammar-card: {"id":"formal-youna","kind":"rule","format":"qa","priority":"essential","sourceSection":"The Basics","rule":"このような is a more formal counterpart of こんな","example":"Give a more formal equivalent of こんな本, with the reading of 様.","answer":"この様な本 (このようなほん).","explanation":"The corresponding series is この／その／あの／どの様な; 様 is read よう here."} -->
 
 ### Conceptualizing こそあど
 
@@ -69,6 +77,8 @@ These words can also go before the particle に​​, which emphasizes the exte
 
   - I wonder if they are okay eating **that much**.
 
+<!-- grammar-card: {"id":"nominal-no","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Patterns of Use","rule":"の turns あんな into a noun that can stand alone","hint":"something like that over there","example":"___は見たことがありません。","answer":"あんなの","explanation":"の substitutes for the noun after あんな, so the phrase can serve as the topic."} -->
+
 ### こんな, そんな, あんな for Describing the Way Something Is
 
 こんな, そんな, and あんな are used before nouns to casually and subjectively describe the way the noun is. They are similar to "like this," "like that," "this kind of," or "that kind of" in English.
@@ -113,9 +123,8 @@ On the other hand, そんな indicates you are stepping back a little from the t
 
 Lastly, あんな is used when you are looking back at what happened. Even though it just happened yesterday, this adds the feel that you're looking at the experience from a distance. You're describing your recollection of your unusual encounter, rather than reliving the moment.
 
-<!-- grammar-card: {"rule":"の turns あんな into a noun that can stand alone","hint":"あんな + の","example":"___は見たことがありません。","answer":"あんなの","explanation":"あんなの means 'a thing like that', which lets it serve as the topic by itself."} -->
-
-<!-- grammar-card: {"rule":"そんな refers to something in the listener's sphere","hint":"こんな / そんな / あんな","example":"___おもしろい本どこで買ったの？","answer":"そんな","explanation":"The book belongs to the listener, so そんな is chosen rather than こんな."} -->
+<!-- grammar-card: {"id":"listener-kind","kind":"rule","format":"cloze","priority":"essential","sourceSection":"こんな, そんな, あんな for Describing the Way Something Is","rule":"そんな refers to something in the listener's sphere","hint":"Ask about the interesting book the listener is holding","example":"___おもしろい本どこで買ったの？","answer":"そんな","explanation":"そんな describes the kind of book near the listener; おもしろい may intervene before the head noun 本."} -->
+<!-- grammar-card: {"id":"unseen-kind-perspective","kind":"concept","format":"qa","priority":"optional","sourceSection":"こんな, そんな, あんな for Describing the Way Something Is","rule":"Unseen experiences can be presented with different conceptual distances","example":"How does あんな体験 differ in viewpoint from vivid こんな体験 when recalling an event?","answer":"あんな looks back on the experience at a psychological distance, while こんな presents it as emotionally close or vivid.","explanation":"そんな can refer back more neutrally. These choices do not require the event to be physically present."} -->
 
 ## Beyond the Basics
 
@@ -155,6 +164,9 @@ In this example, あんなに shows your friend is looking back at all of her ef
 
   - What, **this much**!?
 
+<!-- grammar-card: {"id":"degree-ni","kind":"rule","format":"cloze","priority":"essential","sourceSection":"こんな, そんな, あんな, どんな with に","rule":"こんなに modifies an adjective, meaning 'this much'","hint":"Intensify the degree: this delicious","example":"___美味しいキムチを食べたのは初めて。","answer":"こんなに","explanation":"に makes a degree expression before 美味しい; こんな by itself normally introduces a noun phrase."} -->
+<!-- grammar-card: {"id":"degree-question","kind":"concept","format":"qa","priority":"optional","sourceSection":"こんな, そんな, あんな, どんな with に","rule":"どんなに asks about extent rather than the kind of a noun","example":"What distinction separates どんな本 from どんなに心配しているか?","answer":"The first asks what kind of book; the second asks how worried someone is, focusing on degree.","explanation":"In some dialects or very casual speech the に of degree expressions may be omitted; that is not the neutral standard pattern to generalize."} -->
+
 ### そんな for Interjections
 
 そんな can be used alone as an interjection to express a combination of surprise and frustration. The translations vary depending on the context, but the common ones are: "Oh no!" "No way!" and "Nooo!"
@@ -168,6 +180,8 @@ When そんな is used alone, you can usually guess from context what would come
   - え、**そんな**！
 
   - What!? **No way**!
+
+<!-- grammar-card: {"id":"sonna-interjection","kind":"concept","format":"qa","priority":"optional","sourceSection":"そんな for Interjections","rule":"Standalone そんな can express dismayed surprise","example":"When someone reacts to bad news with え、そんな！, must an audible noun follow?","answer":"No. The context supplies the omitted idea; the reaction means something like No way! or Oh no!","explanation":"It is an elliptical interjection, not evidence that every そんな noun phrase can freely drop its noun."} -->
 
 ### こんな, そんな, あんな, どんな with 風
 
@@ -194,6 +208,12 @@ To make your hairstyle request even vaguer, you can also combine 〜風 and 〜�
   - **こんな風な感じ**の髪型にしてください。
 
   - Please make my hair **kind of like this style**.
+
+<!-- vocab-card: {"id":"vocab-fuu","priority":"optional","sourceSection":"こんな, そんな, あんな, どんな with 風","word":"風","reading":"ふう","meaning":"style; manner (in this use)"} -->
+<!-- vocab-card: {"id":"vocab-kanji","priority":"optional","sourceSection":"こんな, そんな, あんな, どんな with 風","word":"感じ","reading":"かんじ","meaning":"feeling; impression"} -->
+<!-- grammar-card: {"id":"approximate-fuu","kind":"concept","format":"qa","priority":"optional","sourceSection":"こんな, そんな, あんな, どんな with 風","rule":"風 can make a requested resemblance more approximate","example":"What nuance can こんな風な髪型 add compared with こんな髪型?","answer":"A hairstyle kind of like this, rather than necessarily an exact copy.","explanation":"風 is read ふう here and can soften the precision of the comparison."} -->
+<!-- grammar-card: {"id":"manner-register","kind":"concept","format":"qa","priority":"optional","sourceSection":"こんな, そんな, あんな, どんな with 風","rule":"様, 風 and 感じ differ in register","example":"How does the lesson order 様, 風 and 感じ by formality in manner descriptions?","answer":"様 (よう) is most formal, 風 (ふう) is neutral, and 感じ (かんじ) is casual.","explanation":"The comparison concerns these constructions, not every dictionary sense of the kanji."} -->
+<!-- grammar-card: {"id":"manner-noun-linkers","kind":"rule","format":"cloze","priority":"optional","sourceSection":"こんな, そんな, あんな, どんな with 風","rule":"感じ is a noun and links to a following noun with の","example":"A hairstyle with this sort of feel: こんな感じ___髪型。","answer":"の","explanation":"Use 感じの, compared with 風な or 様な. They do not all take the same noun linker."} -->
 
   
 
@@ -374,8 +394,6 @@ by 金水 敏 and 田窪 行則
 <!-- quiz: {"type":"multiple-choice","question":"What does \"**そんな**おもしろい本どこで買ったの？\" mean?","options":["Where did you buy an interesting book **like that**?","I wanted **this kind of** book!","I've never seen **something like that over there**.","I wonder if they are okay eating **that much**."],"answer":0} -->
 
 <!-- quiz: {"type":"multiple-choice","question":"What does \"**あんなの**は見たことがありません。\" mean?","options":["I've never seen **something like that over there**.","I wanted **this kind of** book!","Where did you buy an interesting book **like that**?","I wonder if they are okay eating **that much**."],"answer":0} -->
-
-<!-- grammar-card: {"rule":"こんなに modifies an adjective, meaning 'this much'","hint":"こんな + に","example":"___美味しいキムチを食べたのは初めて。","answer":"こんなに","explanation":"こんなに intensifies 美味しい — kimchi this delicious."} -->
 
 ## Sources
 

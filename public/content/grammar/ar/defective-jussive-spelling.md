@@ -1,5 +1,7 @@
 # Defective Verb Spelling in the Jussive
 
+<!-- vocab-inventory: {"mode":"explicit"} -->
+
 Defective verbs end in a weak letter: **و** (wāw), **ي** (yāʾ), or **ى** (alif maqṣūra). In the jussive, that final weak letter is normally removed, and the remaining vowel hints at what disappeared.
 
 ## Core idea
@@ -7,6 +9,13 @@ Defective verbs end in a weak letter: **و** (wāw), **ي** (yāʾ), or **ى** (
 After jussive particles such as **لَمْ** (lam), the sign of jazm for a defective verb is deletion of the final weak letter. Compare **يَدْعُو** (yadʿū) “he calls” with **لَمْ يَدْعُ** (lam yadʿu) “he did not call.”
 
 ## Forms and examples
+
+<!-- vocab-card: {"id":"vocab-yadu","word":"يَدْعُو","reading":"yadʿū","meaning":"he calls; indicative","priority":"optional","sourceSection":"Forms and examples"} -->
+<!-- vocab-card: {"id":"vocab-yarmi","word":"يَرْمِي","reading":"yarmī","meaning":"he throws; indicative","priority":"optional","sourceSection":"Forms and examples"} -->
+<!-- vocab-card: {"id":"vocab-yakhsha","word":"يَخْشَى","reading":"yakhshā","meaning":"he fears; indicative","priority":"optional","sourceSection":"Forms and examples"} -->
+<!-- vocab-card: {"id":"vocab-yansa","word":"يَنْسَى","reading":"yansā","meaning":"he forgets; indicative","priority":"optional","sourceSection":"Forms and examples"} -->
+<!-- grammar-card: {"id":"waw-deletion","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Forms and examples","rule":"Final wāw is deleted in the singular jussive, leaving ḍamma.","example":"Negate يَدْعُو with لَمْ: لَمْ ___.","answer":"يَدْعُ","explanation":"The final ū becomes short u; no extra wāw or silent alif is added."} -->
+<!-- grammar-card: {"id":"ya-deletion","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Forms and examples","rule":"Final yāʾ is deleted in the singular jussive, leaving kasra.","example":"Negate يَرْمِي with لَمْ: لَمْ ___.","answer":"يَرْمِ","explanation":"Delete the long-vowel yāʾ and keep short i; this is deletion, not ordinary final sukūn."} -->
 
 | Final weak type | Indicative | Jussive | Remaining vowel | Example |
 |---|---|---|---|---|
@@ -21,7 +30,8 @@ After jussive particles such as **لَمْ** (lam), the sign of jazm for a defec
 
 The spelling can look short because the weak letter disappears. Do not add an extra silent letter in singular forms: write **لَمْ يَدْعُ** (lam yadʿu), not **لَمْ يَدْعُو** for “he did not call.” With plural masculine forms, the final **ـُوا** belongs to the plural ending, so patterns like **لَمْ يَدْعُوا** (lam yadʿū) follow a different agreement rule.
 
-<!-- grammar-card: {"rule": "The jussive of a defective singular verb is formed by deleting the final weak letter.", "hint": "After لَمْ, لَا النَّاهِيَة, or لِـ command, look for a shortened ending.", "example": "لَا تَنْسَ الْوَاجِبَ (lā tansa al-wājiba)", "answer": "Do not forget the homework", "explanation": "تَنْسَ lost the final alif of تَنْسَى because the prohibition particle makes it jussive."} -->
+<!-- grammar-card: {"id":"prohibitive-alif-deletion","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Usage notes","rule":"The jussive of a defective singular verb is formed by deleting the final weak letter.","example":"“Do not forget the homework”: لَا ___ الْوَاجِبَ. (تَنْسَى)","answer":"تَنْسَ","explanation":"Prohibitive لَا deletes the final alif maqṣūra, leaving short fatḥa.","legacyAliases":[{"rule":"The jussive of a defective singular verb is formed by deleting the final weak letter.","example":"لَا تَنْسَ الْوَاجِبَ (lā tansa al-wājiba)"}]} -->
+<!-- grammar-card: {"id":"singular-plural-spelling","kind":"concept","format":"qa","priority":"essential","sourceSection":"Usage notes","rule":"Plural ـُوا is not the final weak letter of a singular indicative.","example":"Why can لَمْ يَدْعُوا retain ـُوا while singular لَمْ يَدْعُ cannot?","answer":"The first is masculine plural with its plural ending and spelling alif; the second is singular and deletes its final weak letter.","explanation":"Distinguish agreement from stem spelling: lam yadʿū is plural, lam yadʿu singular."} -->
 
 ## Practice patterns
 
@@ -33,7 +43,7 @@ Match the vowel to the deleted weak letter:
 
 <!-- quiz: {"type": "multiple-choice", "question": "Which jussive form is correctly spelled for يَنْسَى (yansā)?", "options": ["لَمْ يَنْسَ", "لَمْ يَنْسَى", "لَمْ يَنْسُو", "لَمْ يَنْسِي"], "answer": 0} -->
 
-<!-- grammar-card: {"rule": "A fatḥa before the end often signals a deleted final alif in the jussive of verbs like يَخْشَى and يَنْسَى.", "hint": "Look for ـَ after لَمْ with no final ى.", "example": "لَمْ يَخْشَ الْمُسَافِرُ الطَّرِيقَ (lam yakhsha al-musāfiru aṭ-ṭarīqa)", "answer": "The traveler did not fear the road", "explanation": "يَخْشَ lost the final alif maqṣūra of يَخْشَى in the jussive."} -->
+<!-- grammar-card: {"id":"fear-alif-deletion","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Practice patterns","rule":"A fatḥa before the end often signals a deleted final alif in the jussive of verbs like يَخْشَى and يَنْسَى.","example":"لَمْ ___ الْمُسَافِرُ الطَّرِيقَ. (يَخْشَى; did not fear)","answer":"يَخْشَ","explanation":"Final ى disappears in the jussive; the remaining fatḥa is not an accusative marker.","legacyAliases":[{"rule":"A fatḥa before the end often signals a deleted final alif in the jussive of verbs like يَخْشَى and يَنْسَى.","example":"لَمْ يَخْشَ الْمُسَافِرُ الطَّرِيقَ (lam yakhsha al-musāfiru aṭ-ṭarīqa)"}]} -->
 
 ## Sources
 

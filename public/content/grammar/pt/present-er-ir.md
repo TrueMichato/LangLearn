@@ -1,5 +1,7 @@
 # Present Tense: Regular -er/-ir Verbs
 
+<!-- vocab-inventory: {"mode":"explicit"} -->
+
 Now that you know how to conjugate -ar verbs, let's learn the other two verb families: **-er** and **-ir** verbs. The good news is that these two groups are very similar to each other — they share most of their endings!
 
 ## -er Verb Conjugation
@@ -21,11 +23,18 @@ To conjugate a regular -er verb, remove **-er** from the infinitive to get the s
 - **Nós comemos juntos** (nohz koh-meh-mooz zhoon-tooz) — We eat together
 - **Eles comem no restaurante** (eh-leez koh-mayn noo hesh-tow-rahn-chee) — They eat at the restaurant
 
+<!-- vocab-card: {"id":"vocab-comer","word":"comer","meaning":"to eat","priority":"essential","sourceSection":"-er Verb Conjugation"} -->
+<!-- grammar-card: {"id":"er-singular","kind":"rule","format":"cloze","priority":"essential","sourceSection":"-er Verb Conjugation","rule":"Regular -er verbs use -e with você/ele/ela/a gente","example":"Ela ___ carne. (comer)","answer":"come","explanation":"Remove -er and add -e: com- + e."} -->
+<!-- grammar-card: {"id":"er-plural","kind":"rule","format":"cloze","priority":"optional","sourceSection":"-er Verb Conjugation","rule":"Regular -er verbs use -em with vocês/eles/elas","example":"Eles ___ no restaurante. (comer)","answer":"comem","explanation":"Com- + -em gives comem."} -->
+
 <!-- quiz: {"type":"multiple-choice","question":"What is the 'eu' form of 'comer' (to eat)?","options":["come","comem","como","comemos"],"answer":2} -->
 
 ## Common -er Verbs
 
 ### Beber (beh-behr) — to drink
+
+<!-- vocab-card: {"id":"vocab-beber","word":"beber","meaning":"to drink","priority":"essential","sourceSection":"Beber (beh-behr) — to drink"} -->
+<!-- grammar-card: {"id":"er-eu","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Beber (beh-behr) — to drink","rule":"Regular present eu forms use -o in all three families","example":"Eu _____ (beber) água.","answer":"bebo","explanation":"Beb- + -o gives bebo. This rule concerns regular present-tense verbs, not every verb or tense.","legacyAliases":[{"rule":"Eu always ends in -o regardless of verb family","example":"Eu _____ (beber) água. Eu _____ (abrir) a porta."}]} -->
 
 - **Eu bebo água** (eh-oo beh-boo ah-gwah) — I drink water
 - **Ela bebe suco de laranja** (eh-lah beh-bee soo-koo jee lah-rahn-zhah) — She drinks orange juice
@@ -36,9 +45,15 @@ To conjugate a regular -er verb, remove **-er** from the infinitive to get the s
 - **Eu vivo no Brasil** (eh-oo vee-voo noo brah-zeew) — I live in Brazil
 - **Nós vivemos bem** (nohz vee-veh-mooz bayn) — We live well
 
-> **Note:** **Viver** means "to live" in the sense of being alive or experiencing life. For "to live/reside," use **morar** (-ar verb).
+> **Note:** **Viver** often means "to live" in the sense of being alive or experiencing life; it can also mean residing somewhere, as in the example above. **Morar** specifically emphasizes residence.
+
+<!-- vocab-card: {"id":"vocab-viver","word":"viver","meaning":"to live; to be alive","priority":"optional","sourceSection":"Viver (vee-vehr) — to live (to be alive)"} -->
+<!-- grammar-card: {"id":"viver-morar-contrast","kind":"concept","format":"qa","priority":"optional","sourceSection":"Viver (vee-vehr) — to live (to be alive)","rule":"Morar emphasizes residence; viver has broader life meanings","example":"Does viver exclude the meaning reside, as in Eu vivo no Brasil?","answer":"No. Viver can also describe residence; morar specifically emphasizes living in a place.","explanation":"Do not turn this useful meaning contrast into a ban on viver with locations."} -->
 
 ### Aprender (ah-prehn-dehr) — to learn
+
+<!-- vocab-card: {"id":"vocab-aprender","word":"aprender","meaning":"to learn","priority":"optional","sourceSection":"Aprender (ah-prehn-dehr) — to learn"} -->
+<!-- grammar-card: {"id":"er-nos","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Aprender (ah-prehn-dehr) — to learn","rule":"-er verb endings: -o, -e, -emos, -em","example":"Nós aprend_____ português.","answer":"emos","explanation":"The prompt already prints aprend-; only emos is missing."} -->
 
 - **Eu aprendo português** (eh-oo ah-prehn-doo por-too-gesh) — I learn Portuguese
 - **Ela aprende rápido** (eh-lah ah-prehn-jee hah-pee-doo) — She learns fast
@@ -46,10 +61,14 @@ To conjugate a regular -er verb, remove **-er** from the infinitive to get the s
 
 ### Escrever (esh-kreh-vehr) — to write
 
+<!-- vocab-card: {"id":"vocab-escrever","word":"escrever","meaning":"to write","priority":"optional","sourceSection":"Escrever (esh-kreh-vehr) — to write"} -->
+
 - **Eu escrevo e-mails** (eh-oo esh-kreh-voo ee-may-ooz) — I write emails
 - **Você escreve bem** (voh-say esh-kreh-vee bayn) — You write well
 
 ### Entender (ehn-tehn-dehr) — to understand
+
+<!-- vocab-card: {"id":"vocab-entender","word":"entender","meaning":"to understand","priority":"optional","sourceSection":"Entender (ehn-tehn-dehr) — to understand"} -->
 
 - **Eu entendo português** (eh-oo ehn-tehn-doo por-too-gesh) — I understand Portuguese
 - **Você entende?** (voh-say ehn-tehn-jee) — Do you understand?
@@ -57,10 +76,10 @@ To conjugate a regular -er verb, remove **-er** from the infinitive to get the s
 
 ### Correr (koh-hehr) — to run
 
+<!-- vocab-card: {"id":"vocab-correr","word":"correr","meaning":"to run","priority":"optional","sourceSection":"Correr (koh-hehr) — to run"} -->
+
 - **Eu corro no parque** (eh-oo koh-hoo noo pahr-kee) — I run in the park
 - **Nós corremos toda manhã** (nohz koh-heh-mooz toh-dah mah-nyah) — We run every morning
-
-<!-- grammar-card: {"rule":"-er verb endings: -o, -e, -emos, -em","hint":"Compare with -ar: where -ar has 'a', -er has 'e'","example":"Nós aprend_____ português.","answer":"aprendemos","explanation":"For 'nós' with -er verbs, remove -er and add -emos: aprender → aprend + emos = aprendemos."} -->
 
 ## -ir Verb Conjugation
 
@@ -80,9 +99,14 @@ The -ir verbs are very similar to -er verbs. The only differences are in the **n
 - **O trem parte às oito** (oo trehn pahr-chee ahz oy-too) — The train departs at eight
 - **Nós partimos cedo** (nohz pahr-chee-mooz seh-doo) — We leave early
 
+<!-- vocab-card: {"id":"vocab-partir","word":"partir","meaning":"to leave; to depart","priority":"essential","sourceSection":"-ir Verb Conjugation"} -->
+<!-- grammar-card: {"id":"ir-nos","kind":"rule","format":"cloze","priority":"essential","sourceSection":"-ir Verb Conjugation","rule":"Regular -ir verbs use -imos with nós","example":"Nós ___ cedo. (partir; present)","answer":"partimos","explanation":"Part- + -imos gives partimos."} -->
+
 ## Common -ir Verbs
 
 ### Abrir (ah-breer) — to open
+
+<!-- vocab-card: {"id":"vocab-abrir","word":"abrir","meaning":"to open","priority":"optional","sourceSection":"Abrir (ah-breer) — to open"} -->
 
 - **Eu abro a porta** (eh-oo ah-broo ah pohr-tah) — I open the door
 - **A loja abre às nove** (ah loh-zhah ah-bree ahz noh-vee) — The store opens at nine
@@ -90,12 +114,16 @@ The -ir verbs are very similar to -er verbs. The only differences are in the **n
 
 ### Decidir (deh-see-jeer) — to decide
 
+<!-- vocab-card: {"id":"vocab-decidir","word":"decidir","meaning":"to decide","priority":"optional","sourceSection":"Decidir (deh-see-jeer) — to decide"} -->
+
 - **Eu decido rápido** (eh-oo deh-see-doo hah-pee-doo) — I decide fast
 - **Nós decidimos juntos** (nohz deh-see-jee-mooz zhoon-tooz) — We decide together
 
 ### Assistir (ah-sees-cheer) — to watch
 
-In Brazilian Portuguese, **assistir** means "to watch" (not "to assist"):
+In these examples, **assistir** means "to watch." It can also mean "to assist" in other contexts. Conversational Brazilian Portuguese often omits **a** before what is watched; formal usage commonly retains it (**assistir ao filme**).
+
+<!-- vocab-card: {"id":"vocab-assistir","word":"assistir","meaning":"to watch (in these examples); also to assist in other contexts","priority":"optional","sourceSection":"Assistir (ah-sees-cheer) — to watch"} -->
 
 - **Eu assisto televisão** (eh-oo ah-sees-too teh-leh-vee-zow) — I watch television
 - **Ela assiste filmes brasileiros** (eh-lah ah-sees-chee fee-ooh-meez brah-zee-lay-rooz) — She watches Brazilian movies
@@ -103,10 +131,14 @@ In Brazilian Portuguese, **assistir** means "to watch" (not "to assist"):
 
 ### Dividir (jee-vee-jeer) — to divide/share
 
+<!-- vocab-card: {"id":"vocab-dividir","word":"dividir","meaning":"to divide; to share","priority":"optional","sourceSection":"Dividir (jee-vee-jeer) — to divide/share"} -->
+
 - **Nós dividimos a conta** (nohz jee-vee-jee-mooz ah kohn-tah) — We split the bill
 - **Eles dividem o apartamento** (eh-leez jee-vee-dayn oo ah-pahr-tah-mehn-too) — They share the apartment
 
 ### Existir (eh-zeez-cheer) — to exist
+
+<!-- vocab-card: {"id":"vocab-existir","word":"existir","meaning":"to exist","priority":"optional","sourceSection":"Existir (eh-zeez-cheer) — to exist"} -->
 
 - **O problema existe** (oo proh-bleh-mah eh-zeez-chee) — The problem exists
 - **Essas coisas não existem** (eh-sahz koy-zahz now eh-zeez-tayn) — Those things don't exist
@@ -123,11 +155,11 @@ In Brazilian Portuguese, **assistir** means "to watch" (not "to assist"):
 | Vocês/Eles | fal**am** | com**em** | part**em** |
 
 Notice the pattern:
-- **Eu** always ends in **-o** (all three groups)
+- Regular present-tense **eu** forms end in **-o** (all three groups)
 - **-er** and **-ir** are identical except for the **nós** form (-emos vs -imos)
 - The "theme vowel" (a/e/i) appears throughout
 
-<!-- grammar-card: {"rule":"The only difference between -er and -ir is the nós form: -emos vs -imos","hint":"eu -o, você -e, nós -emos/-imos, eles -em","example":"Nós viv_____ (viver) bem. Nós part_____ (partir) cedo.","answer":"vivemos, partimos","explanation":"-er verbs use -emos for nós (vivemos), while -ir verbs use -imos (partimos). All other forms are identical between the two groups."} -->
+<!-- grammar-card: {"id":"er-ir-nos-contrast","kind":"concept","format":"qa","priority":"essential","sourceSection":"Comparing All Three Conjugation Families","rule":"The regular -er/-ir patterns shown differ in the nós ending","example":"In the regular present-tense forms shown here, which ending distinguishes -er from -ir for nós?","answer":"-er uses -emos; -ir uses -imos.","explanation":"The other subject groups shown share -o, -e, and -em endings, not identical whole verbs.","legacyAliases":[{"rule":"The only difference between -er and -ir is the nós form: -emos vs -imos","example":"Nós viv_____ (viver) bem. Nós part_____ (partir) cedo."}]} -->
 
 <!-- quiz: {"type":"multiple-choice","question":"Which verb means 'to watch' in Brazilian Portuguese?","options":["atender","assistir","ajudar","acontecer"],"answer":1} -->
 
@@ -147,8 +179,6 @@ Just like -ar verbs, negation and questions work the same way:
 - **Eles vivem aqui?** (eh-leez vee-vayn ah-kee) — Do they live here?
 
 <!-- quiz: {"type":"multiple-choice","question":"Complete: 'Elas _____ (escrever) muito bem.'","options":["escreve","escrevem","escrevemos","escrevo"],"answer":1} -->
-
-<!-- grammar-card: {"rule":"Eu always ends in -o regardless of verb family","hint":"-ar: falo, -er: como, -ir: parto — all end in -o","example":"Eu _____ (beber) água. Eu _____ (abrir) a porta.","answer":"bebo, abro","explanation":"The first person singular (eu) always uses the ending -o: beber → bebo, abrir → abro. This is consistent across all three verb families."} -->
 
 ## Sources
 

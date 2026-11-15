@@ -1,5 +1,7 @@
 # わ — Sentence-Ending (Feminine)
 
+<!-- vocab-inventory: {"mode":"explicit"} -->
+
 > **Source:** Content from [Tofugu](https://www.tofugu.com/japanese-grammar/sentence-ending-particle-wa/). For personal study.
 
 Particle わ
@@ -72,7 +74,10 @@ Although falling intonation of わ was used in all of the audio examples above, 
 
   - I'll do better on the next exam.
 
-It's worth noting that わ said with rising intonation is regarded as highly feminine, whereas said with falling intonation  わ is considered more neutral. The feminine わ used to be customary, but is no longer common in ordinary interactions. Nowadays, it's generally used to emphasize femininity in queer speech or to accentuate the femininity of a character in creative productions. 1
+In the standard-Japanese pattern discussed here, rising わ is strongly associated with feminine speech, while falling わ is more gender-neutral. Actual usage varies with region, generation, speaker, and situation. The strongly feminine style is less common in many everyday settings today and is often stylized in fiction or in performances of femininity; it is not restricted to any one gender or community. 1
+
+<!-- grammar-card: {"id":"personal-observation","kind":"concept","format":"qa","priority":"essential","sourceSection":"The Basics","rule":"Sentence-final わ conveys a personal judgment grounded in observation or experience","example":"What does the ending add when someone reflects on an exam result with 落ちたと思うわ?","answer":"It marks the statement as their personally felt judgment based on how the exam went, without changing its basic proposition.","explanation":"Tone can convey confidence, regret, or resignation; the particle does not always simply soften."} -->
+<!-- grammar-card: {"id":"intonation-gender","kind":"concept","format":"qa","priority":"essential","sourceSection":"The Basics","rule":"Intonation and social variety qualify the gender associations of わ","example":"Is sentence-final わ exclusively for women?","answer":"No. Rising わ is strongly feminine in the standard pattern, while falling わ is more gender-neutral; usage also varies by region, generation, and speaker.","explanation":"Gender associations are stylistic tendencies, not hard permissions or bans."} -->
 
 We'll talk about this in more detail later on, but for now let's get down to brass tacks and see how わactually works in a sentence.
 
@@ -134,7 +139,13 @@ The following table lists some examples of different verb forms that *can* be us
    
   
 
+<!-- vocab-card: {"id":"vocab-yameru","priority":"optional","sourceSection":"Verb + わ","word":"やめる","reading":"やめる","meaning":"to quit; to stop"} -->
+<!-- grammar-card: {"id":"verb-statement","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Verb + わ","rule":"わ can follow a completed statement about one's intention","example":"Add the particle of personal resolution: やめる___。 (I'll quit.)","answer":"わ","explanation":"It follows dictionary-form やめる here. The ordinary pattern is a statement, not an imperative, bare stem, or question."} -->
+<!-- grammar-card: {"id":"tewa-spelling","kind":"concept","format":"qa","priority":"optional","sourceSection":"Verb + わ","rule":"The wa sound after a て-form may be particle は, not sentence-final わ","example":"In a construction pronounced tewa or dewa, should you automatically write the final sound as this sentence-ending particle?","answer":"No. It may be the て-form followed by は, pronounced wa.","explanation":"The statement-oriented sentence-ending particle is not generally added directly to a bare て-form."} -->
+
 #### い-adjective + わ
+
+<!-- grammar-card: {"id":"i-adjective-wa","kind":"rule","format":"cloze","priority":"optional","sourceSection":"い-adjective + わ","rule":"わ attaches to the plain form","example":"Add the personal-observation particle to 暑い: 暑___。","answer":"いわ","explanation":"暑いわ keeps the adjective's final い and adds わ without だ.","legacyAliases":[{"rule":"わ attaches to the plain form","example":"暑___。"}]} -->
 
 わ can also follow many forms of い-adjectives. Here are some examples.
 
@@ -172,6 +183,8 @@ The following table lists some examples of different verb forms that *can* be us
   
 
 #### な-adjective + だわ
+
+<!-- grammar-card: {"id":"na-copula","kind":"rule","format":"cloze","priority":"optional","sourceSection":"な-adjective + だわ","rule":"An affirmative nonpast な-adjective predicate uses だ before わ","example":"On noticing how quiet it is: 静か___わ。","answer":"だ","explanation":"静かだわ has the copula, not attributive な; 静かじゃないわ retains the negative copula."} -->
 
 With a な-adjective, you insert the affirmative だ or its different forms and add わ. Here are some examples.
 
@@ -245,6 +258,8 @@ With a noun, you also insert the affirmative だ or its different forms and add 
    
   
 
+<!-- grammar-card: {"id":"noun-copula","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Noun + だわ","rule":"An affirmative nonpast noun predicate uses だ before わ","example":"On recognizing a cat: 猫___わ。","answer":"だ","explanation":"猫だわ uses the affirmative copula. Past and negative predicates instead retain だった and じゃない."} -->
+
 ### わ For Casually Telling Someone About Your Availability
 
 You've learned that わ follows a statement and indicates that what you've said is based on personal observation or prior experience. In this section we'll talk about how わ can be used to casually tell someone whether you are/aren't available to do something.
@@ -262,6 +277,8 @@ If you're not able to attend the party, you can use わ and say:
   - Sorry, I can't make it.
 
 In both cases, adding わ implies that you've checked your schedule to see if you're available. It functions similarly to adding "It looks like" in English, like "It looks like I can/can't make it." It's less direct, and may be preferred, especially when declining an offer.
+
+<!-- grammar-card: {"id":"availability-discovery","kind":"concept","format":"qa","priority":"optional","sourceSection":"わ For Casually Telling Someone About Your Availability","rule":"A personal availability statement can reflect a newly checked situation","example":"What does ごめん、行けないわ suggest after checking your schedule?","answer":"That you have checked and found you cannot attend, presenting that conclusion as your personal realization.","explanation":"This is a casual use, not a general-purpose formal refusal formula."} -->
 
 ### わ For Casually Telling Someone "I'll Do It"
 
@@ -282,6 +299,9 @@ Remember when we touched on the importance of intonation when using わ? It's im
   -  私、ふく**わ**↘
 
   - I'll wipe it up.
+
+<!-- vocab-card: {"id":"vocab-fuku","priority":"optional","sourceSection":"わ For Casually Telling Someone \"I'll Do It\"","word":"ふく","reading":"ふく","meaning":"to wipe"} -->
+<!-- grammar-card: {"id":"volunteering-tone","kind":"concept","format":"qa","priority":"optional","sourceSection":"わ For Casually Telling Someone \"I'll Do It\"","rule":"Falling わ can announce a personal decision to help without soliciting confirmation","example":"How does falling わ function in 私、ふくわ after a drink spills?","answer":"It casually announces the speaker's own decision to wipe it up, rather than asking the listener to confirm.","explanation":"よ more directly informs and asserts; ね can seek interpersonal confirmation. This use of わ is partly self-directed."} -->
 
 ### わ With Self-Directed Sentences
 
@@ -313,13 +333,14 @@ However, if you couldn't remember where you got the hat, and it takes you a minu
 
 Just like that, you can use わ to indicate your realization of something based on your knowledge or personal experience, or when suddenly recalling a piece of information.
 
-<!-- grammar-card: {"rule":"わ attaches to the plain form","hint":"暑い + わ","example":"暑___。","answer":"いわ","explanation":"暑いわ keeps 暑い plain and simply adds わ at the end."} -->
-
-<!-- grammar-card: {"rule":"わ softens a statement into a personal realisation","hint":"わ","example":"えっと、どこだっけな。あ、GAPのだ___。","answer":"わ","explanation":"だわ marks the moment of remembering as the speaker's own thought."} -->
+<!-- grammar-card: {"id":"remembered-origin","kind":"rule","format":"cloze","priority":"optional","sourceSection":"わ With Self-Directed Sentences","rule":"わ can mark a personally recalled realization","example":"えっと、どこだっけな。あ、GAPのだ___。","answer":"わ","explanation":"The intended ending marks a moment of remembering. A routine immediate answer with no discovery would more naturally omit it or use よ.","legacyAliases":[{"rule":"わ softens a statement into a personal realisation","example":"えっと、どこだっけな。あ、GAPのだ___。"}]} -->
+<!-- grammar-card: {"id":"known-versus-recalled","kind":"concept","format":"qa","priority":"optional","sourceSection":"わ With Self-Directed Sentences","rule":"Fresh realization differs from routinely reporting known information","example":"Why is a self-directed observation ending more natural after struggling to remember where a hat came from than in an immediate routine answer?","answer":"The act of recalling supplies a new personal realization, whereas the routine answer has no such discovery.","explanation":"The difference is pragmatic, not a ban on ever using わ with previously known facts."} -->
 
 ## Beyond the Basics
 
 ### Feminine わ Used With よ, ね, or よね
+
+<!-- grammar-card: {"id":"wa-yo","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Feminine わ Used With よ, ね, or よね","rule":"わ can combine with よ","example":"Use the conventionally feminine combination of personal observation and informing: これ、すごく甘い___。","answer":"わよ","explanation":"わ conveys the tasted judgment and よ informs the listener. The combination is feminine-associated in this standard register, not restricted to women.","legacyAliases":[{"rule":"わ can combine with よ","example":"これ、すごく甘い___。"}]} -->
 
 Earlier, you learned that わ said with rising intonation is regarded as very feminine. When わ is followed by other particles, such as よ, ね, or よね, it is also considered feminine, regardless of its tone.
 
@@ -347,7 +368,9 @@ Then, without even taking a bite, the third lady nods and says:
 
 This final comment indicates that the third lady has tried the cake before and already knew how it would taste. How do we know this? Because わ indicates that she thought it was sweet from personal experience, よ indicates that she is informing her friends of that fact, and ね indicates that she is confirming what her friends said.
 
-Again, this combination of particles is considered feminine regardless of intonation. ​​Nowadays, it's most commonly employed to emphasize femininity in queer speech or to spotlight a character's femininity in writing or other creative productions.
+In the standard-Japanese style described here, these combinations are conventionally feminine regardless of intonation and often sound stylized today. This is a register association, not a restriction on the speaker's gender.
+
+<!-- grammar-card: {"id":"wa-ne-yone","kind":"concept","format":"qa","priority":"optional","sourceSection":"Feminine わ Used With よ, ね, or よね","rule":"Following particles add interpersonal functions to わ","example":"In the cake examples, what does adding ね or よね contribute beyond the personally experienced judgment?","answer":"ね adds confirmation or agreement; よね combines informing with seeking confirmation.","explanation":"わね and わよね are conventionally feminine combinations in the standard style, not gender-exclusive forms."} -->
 
 ### わ With です and ます
 
@@ -372,6 +395,8 @@ There are many factors that determine status in Japanese social hierarchy, but o
 Finally, keep take mind that this explanation applies only to わ used with falling intonation. It sounds hyper-feminine to say ですわ or ますわ with rising intonation.
 
 So, who would use these "polite-yet-almost-too-casual" expressions with a highly feminine tone? You'll probably hear it most often coming from a wealthy female character in anime, also known as the お 嬢様(じょうさま)キャラクター.
+
+<!-- grammar-card: {"id":"polite-wa-variety","kind":"concept","format":"qa","priority":"optional","sourceSection":"わ With です and ます","rule":"Polite endings can combine with わ but do not neutralize its social tone","example":"Are ですわ and ますわ impossible because this particle normally follows plain forms?","answer":"No. Falling forms occur in friendly regional styles, notably Kansai; rising forms can sound strongly feminine or stylized.","explanation":"They can be too familiar or assertive for a formal relationship. Age, region, relationship, and intonation matter more than an absolute gender rule."} -->
 
   
 
@@ -489,8 +514,6 @@ by Junko Nakamura
 <!-- quiz: {"type":"multiple-choice","question":"What does \"落ちたと思う**わ**\" mean?","options":["Oh yea, I think I failed.","I think I failed.","Man… I think I failed.","I'll do better on the next exam."],"answer":0} -->
 
 <!-- quiz: {"type":"multiple-choice","question":"What does \"落ちたと思う**わ**\" mean?","options":["Man… I think I failed.","I think I failed.","Oh yea, I think I failed.","I'll do better on the next exam."],"answer":0} -->
-
-<!-- grammar-card: {"rule":"わ can combine with よ","hint":"わ + よ","example":"これ、すごく甘い___。","answer":"わよ","explanation":"わよ tells the listener something in a soft, feminine register."} -->
 
 ## Sources
 

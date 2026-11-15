@@ -1,5 +1,7 @@
 # Compound Verbs (始める、続ける、終わる)
 
+<!-- vocab-inventory: {"mode":"explicit"} -->
+
 Compound verbs (複合動詞 / ふくごうどうし) combine a verb stem with another verb to add meaning like "start doing," "keep doing," or "finish doing." They are extremely common in natural Japanese.
 
 ## What Are Compound Verbs?
@@ -46,7 +48,8 @@ Expresses the **beginning** of an action:
 
 > 💡 Compare with 始まる (intransitive): 授業が始まった (The class started). 〜始める is used when an ongoing action begins.
 
-<!-- grammar-card: {"rule":"Compound verbs attach to the ます-stem of the first verb","hint":"読む + 始める, plain past","example":"本(ほん)を読(よ)み___。","answer":"始めた","explanation":"読む gives the stem 読み, so 読み始めた means started reading."} -->
+<!-- grammar-card: {"id":"compound-start","kind":"rule","format":"cloze","priority":"essential","sourceSection":"〜始(はじ)める (\"Start ~ing\")","rule":"Compound verbs attach to the ます-stem of the first verb","hint":"読む + 始める, plain past","example":"本(ほん)を読(よ)み___。","answer":"始めた","explanation":"読み始めた (よみはじめた) uses the ます-stem 読み. Tense and politeness are carried by the final verb."} -->
+<!-- grammar-card: {"id":"compound-stem","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Formation","rule":"The first member of these compounds takes its ます-stem","example":"Start speaking: 話す → ___始める。","answer":"話し","explanation":"話し始める (はなしはじめる) uses 話し, not dictionary 話す or て-form 話して."} -->
 
 ## 〜続(つづ)ける ("Continue ~ing" / "Keep ~ing")
 
@@ -70,7 +73,7 @@ Expresses an action that **continues** or **persists**:
 
 <!-- quiz:{"type":"multiple-choice","question":"'三時間歩き続けた' means:","options":["I started walking three hours ago","I walked for three hours (and stopped)","I kept walking for three hours","I will walk for three hours"],"answer":2} -->
 
-<!-- grammar-card: {"rule":"続ける after the ます-stem means to keep doing something","hint":"走る + 続ける, plain past","example":"三時間(さんじかん)走(はし)り___。","answer":"続けた","explanation":"走り続けた says the running went on for three hours without a break."} -->
+<!-- grammar-card: {"id":"compound-continue","kind":"rule","format":"cloze","priority":"essential","sourceSection":"〜続(つづ)ける (\"Continue ~ing\" / \"Keep ~ing\")","rule":"続ける after the ます-stem means to keep doing something","hint":"走る + 続ける, plain past","example":"三時間(さんじかん)走(はし)り___。","answer":"続けた","explanation":"走り続けた (はしりつづけた) emphasizes persistence over the three-hour period."} -->
 
 ## 〜終(お)わる ("Finish ~ing")
 
@@ -92,6 +95,7 @@ Expresses the **completion** of an action:
 > *Yatto shukudai wo yari owatta!*
 > I finally finished my homework!
 
+<!-- grammar-card: {"id":"compound-finish","kind":"rule","format":"cloze","priority":"essential","sourceSection":"〜終(お)わる (\"Finish ~ing\")","rule":"ます-stem + 終わる expresses completing an action","example":"I finished writing the report: レポートを書き___。 (plain past)","answer":"終わった","explanation":"書き終わった (かきおわった) combines 書き with godan 終わる, whose past is 終わった."} -->
 ## 〜出(だ)す ("Suddenly start ~ing")
 
 Unlike 始める (which is neutral), **出す** adds a nuance of **sudden or unexpected** beginning:
@@ -114,7 +118,7 @@ Compare:
 
 <!-- quiz:{"type":"multiple-choice","question":"Which expresses a SUDDEN start of rain?","options":["雨が降り始めた","雨が降り出した","雨が降り続けた","雨が降り終わった"],"answer":1} -->
 
-<!-- grammar-card: {"rule":"出す marks a sudden, unexpected start","hint":"泣く + 出す, plain past","example":"赤(あか)ちゃんが突然(とつぜん)泣(な)き___。","answer":"出した","explanation":"泣き出した is a burst into tears, where 泣き始めた would sound neutral."} -->
+<!-- grammar-card: {"id":"compound-sudden-start","kind":"rule","format":"cloze","priority":"essential","sourceSection":"〜出(だ)す (\"Suddenly start ~ing\")","rule":"出す marks a sudden, unexpected start","hint":"泣く + 出す, plain past","example":"赤(あか)ちゃんが突然(とつぜん)泣(な)き___。","answer":"出した","explanation":"泣き出した (なきだした) means burst into tears; 始めた would express a more neutral beginning."} -->
 
 ## 〜過(す)ぎる ("Do too much ~" / "Over-~")
 
@@ -138,6 +142,8 @@ Expresses **excess** — doing something too much:
 
 > 💡 過ぎる also works with adjectives: 高すぎる (too expensive), 難しすぎる (too difficult). For い-adjectives, drop い before adding すぎる.
 
+<!-- grammar-card: {"id":"compound-excess","kind":"rule","format":"cloze","priority":"essential","sourceSection":"〜過(す)ぎる (\"Do too much ~\" / \"Over-~\")","rule":"ます-stem + 過ぎる expresses doing something excessively","example":"I ate too much: 食べ___。 (過ぎる, plain past)","answer":"過ぎた","explanation":"食べ過ぎた (たべすぎた) expresses excess, not merely finishing the food."} -->
+<!-- grammar-card: {"id":"adjective-excess","kind":"rule","format":"cloze","priority":"optional","sourceSection":"〜過(す)ぎる (\"Do too much ~\" / \"Over-~\")","rule":"い-adjectives drop い before すぎる","example":"Too long: 長い → ___すぎる。","answer":"長","explanation":"長すぎる is read ながすぎる. Here すぎる attaches to an adjective stem, not a ます-stem."} -->
 ## 〜直(なお)す ("Redo ~" / "Do ~ again properly")
 
 Expresses doing something **over again**, usually to correct it:
@@ -154,7 +160,7 @@ Expresses doing something **over again**, usually to correct it:
 > *Yari naoshimashou.*
 > Let's redo it.
 
-<!-- grammar-card: {"rule":"直す means doing something over in order to correct it","hint":"書く + 直す, plain past","example":"レポートを書(か)き___。","answer":"直した","explanation":"書き直した means the report was rewritten properly."} -->
+<!-- grammar-card: {"id":"compound-redo","kind":"rule","format":"cloze","priority":"essential","sourceSection":"〜直(なお)す (\"Redo ~\" / \"Do ~ again properly\")","rule":"直す means doing something over in order to correct it","hint":"書く + 直す, plain past","example":"レポートを書(か)き___。","answer":"直した","explanation":"書き直した (かきなおした) describes rewriting, usually to improve or correct the earlier work."} -->
 
 ## 〜合(あ)う ("Do ~ together / mutually")
 
@@ -172,6 +178,7 @@ Expresses a **mutual** or **reciprocal** action:
 > *Futari wa mitsume atta.*
 > The two gazed at each other.
 
+<!-- grammar-card: {"id":"compound-mutual","kind":"rule","format":"cloze","priority":"optional","sourceSection":"〜合(あ)う (\"Do ~ together / mutually\")","rule":"ます-stem + 合う can express reciprocal action","example":"We helped each other: 助け___。 (plain past)","answer":"合った","explanation":"助け合った (たすけあった) makes the helping mutual, not just two unrelated actions."} -->
 ## 〜忘(わす)れる ("Forget to ~")
 
 > 鍵(かぎ)を持(も)って行(い)き忘(わす)れた。
@@ -182,6 +189,7 @@ Expresses a **mutual** or **reciprocal** action:
 > *Ii wasureta koto ga aru.*
 > There's something I forgot to say.
 
+<!-- grammar-card: {"id":"compound-forget","kind":"rule","format":"cloze","priority":"optional","sourceSection":"〜忘(わす)れる (\"Forget to ~\")","rule":"ます-stem + 忘れる expresses forgetting to do something","example":"I forgot to say it: 言い___。 (plain past)","answer":"忘れた","explanation":"言い忘れた (いいわすれた) means the intended saying was forgotten."} -->
 ## More Useful Compound Verbs
 
 | Compound | Meaning | Example |
@@ -204,6 +212,12 @@ Expresses a **mutual** or **reciprocal** action:
 > *Nihon no tabemono ni tabe nareta.*
 > I got used to eating Japanese food.
 
+<!-- grammar-card: {"id":"compound-incomplete","kind":"concept","format":"qa","priority":"optional","sourceSection":"More Useful Compound Verbs","rule":"かける can present an action as begun but unfinished","example":"In 言いかけてやめた, did the speaker finish saying what they intended?","answer":"No. They started to say it, then stopped.","explanation":"言いかける (いいかける) highlights an incomplete start; other contexts can convey being about to begin."} -->
+<!-- grammar-card: {"id":"compound-depth","kind":"concept","format":"qa","priority":"optional","sourceSection":"More Useful Compound Verbs","rule":"込む has context-dependent inward or intensive meanings","example":"How does 込む contribute differently to 考え込む and 飛び込む?","answer":"考え込む means think deeply; 飛び込む means jump into something.","explanation":"込む (こむ) is not translated by one English word in every compound."} -->
+<!-- grammar-card: {"id":"compound-through-completion","kind":"rule","format":"cloze","priority":"optional","sourceSection":"More Useful Compound Verbs","rule":"切る can emphasize carrying an action all the way through","example":"I ran the entire marathon: マラソンを走り___。 (切る, plain past)","answer":"切った","explanation":"走り切った (はしりきった) emphasizes thorough completion; 使い切る similarly means use up."} -->
+<!-- vocab-card: {"id":"vocab-tabenareru","word":"食べ慣れる","reading":"たべなれる","meaning":"to get used to eating something","priority":"optional","sourceSection":"More Useful Compound Verbs"} -->
+<!-- vocab-card: {"id":"vocab-norisokonau","word":"乗り損なう","reading":"のりそこなう","meaning":"to miss taking or boarding a vehicle","priority":"optional","sourceSection":"More Useful Compound Verbs"} -->
+<!-- vocab-card: {"id":"vocab-misokonau","word":"見損なう","reading":"みそこなう","meaning":"to fail to see; to miss seeing something (sense here)","priority":"optional","sourceSection":"More Useful Compound Verbs"} -->
 <!-- quiz:{"type":"multiple-choice","question":"'レポートを書き終わった' means:","options":["I started writing the report","I keep writing the report","I finished writing the report","I forgot to write the report"],"answer":2} -->
 
 ## Quick Reference

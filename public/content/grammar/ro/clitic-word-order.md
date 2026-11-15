@@ -1,5 +1,7 @@
 # Word Order & Clitic Pronoun Placement
 
+<!-- vocab-inventory: {"mode":"explicit"} -->
+
 Romanian object pronouns such as **îl**, **o**, **îi**, **le**, **îmi**, and **îți** are clitics: short words that attach closely to the verb. Their position changes with tense, negation, and commands.
 
 ## Before Finite Verbs
@@ -10,7 +12,7 @@ With most finite verb forms, object clitics come before the verb.
 |----------|---------|
 | **Îl văd.** | I see him/it. |
 | **O cunosc.** | I know her. |
-| **Îi scriu.** | I write to him/her/them. |
+| **Îi scriu.** | I write to him/her. |
 | **Le trimit un mesaj.** | I send them a message. |
 | **Te aștept.** | I am waiting for you. |
 
@@ -19,6 +21,10 @@ With most finite verb forms, object clitics come before the verb.
 - **Îți mulțumesc.** — I thank you.
 
 <!-- quiz: {"type":"multiple-choice","question":"Which sentence correctly means I see him?","options":["Văd îl.","Îl văd.","Îi văd.","Văd-l."],"answer":1} -->
+
+<!-- vocab-card: {"id":"vocab-a-astepta","priority":"optional","sourceSection":"Before Finite Verbs","word":"a aștepta","meaning":"to wait for"} -->
+<!-- vocab-card: {"id":"vocab-a-multumi","priority":"optional","sourceSection":"Before Finite Verbs","word":"a mulțumi","meaning":"to thank (with a dative recipient)"} -->
+<!-- grammar-card: {"id":"finite-clitic-position","priority":"essential","sourceSection":"Before Finite Verbs","kind":"concept","format":"qa","rule":"Object clitics normally precede finite indicative verbs","example":"Where does the short object pronoun go in a simple present statement such as I see him?","answer":"Before the finite verb: Îl văd.","explanation":"Before the finite verb: Îl văd."} -->
 
 ## With perfectul compus
 
@@ -36,7 +42,8 @@ In the compound past, the clitic usually attaches to the auxiliary with a hyphen
 - **Am citit-o deja.** — I have already read it. (about a feminine noun)
 - **Nu i-am răspuns încă.** — I have not answered him/her yet.
 
-<!-- grammar-card: {"rule":"In perfectul compus, many clitics attach to the auxiliary with a hyphen","hint":"îl + am = l-am","example":"Eu ___ văzut ieri. (I saw him yesterday.)","answer":"l-am","explanation":"The direct object clitic îl becomes l- before am: L-am văzut ieri."} -->
+<!-- grammar-card: {"id":"past-clitic-contraction","priority":"essential","sourceSection":"With perfectul compus","kind":"rule","format":"cloze","rule":"In perfectul compus, many clitics attach to the auxiliary with a hyphen","example":"Eu ___ văzut ieri. (I saw him yesterday.)","answer":"l-am","explanation":"Îl becomes l- before am: l-am văzut."} -->
+<!-- grammar-card: {"id":"past-feminine-o","priority":"essential","sourceSection":"With perfectul compus","kind":"rule","format":"cloze","rule":"Feminine direct-object o follows the compound-past participle","example":"Am citit-___ deja. (I have already read it; cartea)","answer":"o","explanation":"Say Am citit-o rather than placing o before am."} -->
 
 ## Double Clitics: Indirect Before Direct
 
@@ -58,6 +65,10 @@ With the compound past, the cluster is split differently: **Mi l-a dat**, **Ți 
 
 <!-- quiz: {"type":"multiple-choice","question":"Which sentence correctly means He gave it to me?","options":["Mi-l a dat.","Mi l-a dat.","L-a mi dat.","A dat mi-l."],"answer":1} -->
 
+<!-- grammar-card: {"id":"double-clitic-present","priority":"essential","sourceSection":"Double Clitics: Indirect Before Direct","kind":"rule","format":"cloze","rule":"In double clitic clusters, the indirect object comes before the direct object","example":"El ___ dă. (He gives it to me.)","answer":"mi-l","explanation":"Mi is the indirect clitic and l the direct clitic."} -->
+<!-- grammar-card: {"id":"double-clitic-past","priority":"essential","sourceSection":"Double Clitics: Indirect Before Direct","kind":"rule","format":"cloze","rule":"In a compound past, the direct clitic joins the auxiliary after the indirect clitic","example":"El ___ dat. (He gave it to me; masculine object.)","answer":"mi l-a","explanation":"The correct cluster is mi l-a, not mi-l a."} -->
+<!-- grammar-card: {"id":"double-clitic-plural-recipient","priority":"optional","sourceSection":"Double Clitics: Indirect Before Direct","kind":"rule","format":"cloze","rule":"Ne has the cluster form ni before le","example":"Maria ___ trimite. (She sends them to us; feminine objects.)","answer":"ni le","explanation":"Ni precedes direct-object le."} -->
+
 ## Negation
 
 **Nu** comes before the clitic cluster.
@@ -68,6 +79,9 @@ With the compound past, the cluster is split differently: **Mi l-a dat**, **Ți 
 - **Nu i-am spus nimic.** — I did not tell him/her anything.
 
 Both full and contracted spellings occur, but learners should recognize the common hyphenated forms: **nu-l**, **n-o**, **nu i-am**.
+
+<!-- grammar-card: {"id":"negative-cluster","priority":"essential","sourceSection":"Negation","kind":"rule","format":"cloze","rule":"Nu precedes the entire object-clitic cluster","example":"___ mi-l dă. (He does not give it to me.)","answer":"Nu","explanation":"The order is nu + indirect + direct + verb."} -->
+<!-- grammar-card: {"id":"negative-contractions","priority":"optional","sourceSection":"Negation","kind":"concept","format":"qa","rule":"Full and contracted negative-object spellings coexist","example":"Are Nu îl văd and Nu-l văd both possible spellings?","answer":"Yes. The full form and the hyphenated contraction are both used.","explanation":"Yes. The full form and the hyphenated contraction are both used."} -->
 
 ## Commands: After Affirmative Imperatives
 
@@ -89,9 +103,12 @@ In negative commands, the clitics go before the verb: **Nu mi-l da!**, **Nu o su
 
 <!-- quiz: {"type":"multiple-choice","question":"Which command means Give it to me?","options":["Dă-mi-l!","Mi-l dă!","Nu mi-l da!","Dă-l-mi!"],"answer":0} -->
 
+<!-- grammar-card: {"id":"affirmative-double-command","priority":"essential","sourceSection":"Commands: After Affirmative Imperatives","kind":"rule","format":"cloze","rule":"Affirmative imperatives take suffixed clitics in indirect-before-direct order","example":"Dă-___! (Give it to me; masculine object.)","answer":"mi-l","explanation":"Dă-mi-l contrasts with the finite statement Mi-l dă."} -->
+<!-- grammar-card: {"id":"negative-command-position","priority":"optional","sourceSection":"Commands: After Affirmative Imperatives","kind":"rule","format":"cloze","rule":"Negative commands put clitics before the verb","example":"Nu ___ da! (Do not give it to me; masculine object.)","answer":"mi-l","explanation":"The cluster goes before da in Nu mi-l da."} -->
+
 ## Infinitives and Gerunds
 
-With infinitives and gerunds, clitics can attach after the verb form.
+With the **a** infinitive, object clitics come after **a** but before the lexical verb: **a-l vedea**. With gerunds, they attach after the verb form, often with a linking **u**: **văzându-l**.
 
 - **Pentru a-l vedea, am venit devreme.** — In order to see him, I came early.
 - **Văzându-l, am zâmbit.** — Seeing him, I smiled.
@@ -99,7 +116,8 @@ With infinitives and gerunds, clitics can attach after the verb form.
 
 For everyday speech, master these first: **îl văd**, **l-am văzut**, **mi-l dă**, **mi l-a dat**, **dă-mi-l**.
 
-<!-- grammar-card: {"rule":"In double clitic clusters, the indirect object comes before the direct object","hint":"to me + it = mi-l","example":"El ___ dă. (He gives it to me.)","answer":"mi-l","explanation":"The indirect clitic mi comes before the direct clitic l: mi-l dă."} -->
+<!-- grammar-card: {"id":"infinitive-clitic","priority":"optional","sourceSection":"Infinitives and Gerunds","kind":"rule","format":"cloze","rule":"An infinitival clitic follows a and precedes the lexical verb","example":"Pentru ___ vedea, am venit devreme. (in order to see him)","answer":"a-l","explanation":"The clitic attaches to a, not after the lexical infinitive."} -->
+<!-- grammar-card: {"id":"gerund-clitic","priority":"optional","sourceSection":"Infinitives and Gerunds","kind":"rule","format":"cloze","rule":"A gerund can take a suffixed clitic with a linking u","example":"Văzându-___, am zâmbit. (Seeing him, I smiled.)","answer":"l","explanation":"Văzându-l has its clitic after the gerund."} -->
 
 ## Sources
 

@@ -1,10 +1,12 @@
 # The Many Lāms (purpose, command, denial, emphasis)
 
+<!-- vocab-inventory: {"mode":"explicit"} -->
+
 The Arabic letter **ل** can introduce purpose, command, possession, denial, or emphasis. Advanced reading often depends on recognizing which **لَامٌ** (lāmun) is being used.
 
 ## Core idea
 
-The vowel on **ل** and the verb mood after it are clues. **لِـ** often means “for” or “in order to,” while **لَـ** often gives emphasis. In **جِئْتُ لِأَتَعَلَّمَ** (jiʾtu li-atʿallama) — I came in order to learn, the verb is subjunctive because **لِـ** expresses purpose.
+The vowel on **ل** and the verb mood after it are clues. **لِـ** often means “for” or “in order to,” while **لَـ** often gives emphasis. In **جِئْتُ لِأَتَعَلَّمَ** (jiʾtu li-ataʿallama) — I came in order to learn, the verb is subjunctive because **لِـ** expresses purpose.
 
 ## Forms and examples
 
@@ -16,13 +18,19 @@ The vowel on **ل** and the verb mood after it are clues. **لِـ** often means
 | Emphasis, **لَامُ الِابْتِدَاءِ** | **لَأَنْتَ صَادِقٌ** (la-anta ṣādiqun) | you are certainly truthful |
 | Possession, prepositional **لِـ** | **لِلْمُعَلِّمِ كِتَابٌ** (li-l-muʿallimi kitābun) | the teacher has a book |
 
+<!-- vocab-card: {"id":"vocab-sadiq","word":"صَادِقٌ","reading":"ṣādiqun","meaning":"truthful","priority":"optional","sourceSection":"Forms and examples"} -->
+<!-- grammar-card: {"id":"denial-lam","kind":"concept","format":"qa","priority":"essential","sourceSection":"Forms and examples","rule":"Denial lām follows a negated kāna construction and introduces a subjunctive verb.","example":"What identifies the lām of denial in مَا كَانَ الطَّالِبُ لِيَغِيبَ?","answer":"It follows negated kāna and introduces a subjunctive verb, expressing that the student would not be absent.","explanation":"The similar written لِـ is not a command here; context and mood distinguish the uses."} -->
+<!-- grammar-card: {"id":"possessive-lam","kind":"concept","format":"qa","priority":"optional","sourceSection":"Forms and examples","rule":"Prepositional lām can express possession and govern a noun.","example":"What is the function and government of lām in لِلْمُعَلِّمِ كِتَابٌ?","answer":"It expresses possession and makes the teacher noun genitive.","explanation":"The teacher has a book. This is a prepositional phrase, not lām governing an imperfect verb."} -->
+
 <!-- quiz: {"type": "multiple-choice", "question": "What does the لِـ mean in جِئْتُ لِأَتَعَلَّمَ (jiʾtu li-atʿallama)?", "options": ["purpose, in order to", "past negation", "ordinary coordination", "feminine agreement"], "answer": 0} -->
 
 ## Usage notes
 
 Purpose **لِـ** is followed by a subjunctive imperfect: **لِأَكْتُبَ** (li-aktuba) — in order that I write. Command **لِـ** is followed by a jussive imperfect: **لِيَكْتُبْ** (li-yaktub) — let him write. Emphatic **لَـ** does not mean “for”; it strengthens the statement, as in **إِنَّ الْعِلْمَ لَنَافِعٌ** (inna al-ʿilma la-nāfiʿun) — indeed knowledge is truly beneficial.
 
-<!-- grammar-card: {"rule": "Purpose لِـ usually makes the following imperfect verb subjunctive.", "hint": "Translate it as in order to.", "example": "جِئْتُ لِأَتَعَلَّمَ (jiʾtu li-atʿallama)", "answer": "I came in order to learn", "explanation": "The لِـ expresses purpose, and أَتَعَلَّمَ ends with fatḥa as a subjunctive imperfect."} -->
+<!-- grammar-card: {"id":"purpose-lam-reading","kind":"rule","format":"qa","priority":"essential","sourceSection":"Usage notes","rule":"Purpose lām introduces a subjunctive imperfect complement.","example":"Translate جِئْتُ لِأَتَعَلَّمَ.","answer":"I came in order to learn","explanation":"Li-ataʿallama expresses purpose with a subjunctive imperfect. In traditional analysis, an implicit أَنْ supplies the subjunctive government after purpose lām.","legacyAliases":[{"rule":"Purpose لِـ usually makes the following imperfect verb subjunctive.","example":"جِئْتُ لِأَتَعَلَّمَ (jiʾtu li-atʿallama)"}]} -->
+<!-- vocab-card: {"id":"vocab-nafi","word":"نَافِعٌ","reading":"nāfiʿun","meaning":"beneficial; useful","priority":"optional","sourceSection":"Usage notes"} -->
+<!-- grammar-card: {"id":"emphatic-lam","kind":"concept","format":"qa","priority":"essential","sourceSection":"Usage notes","rule":"Emphatic lām strengthens a statement rather than expressing purpose or possession.","example":"What does the lām contribute in إِنَّ الْعِلْمَ لَنَافِعٌ?","answer":"Emphasis on the predicate: knowledge is truly beneficial.","explanation":"The vowel is la-, not prepositional li-. نَافِعٌ remains a nominative predicate."} -->
 
 ## Practice patterns
 
@@ -34,7 +42,7 @@ Read the vowel and the context together:
 
 <!-- quiz: {"type": "multiple-choice", "question": "Which example uses لَـ for emphasis rather than purpose?", "options": ["لَأَنْتَ صَادِقٌ (la-anta ṣādiqun)", "ذَهَبْتُ لِأَدْرُسَ (dhahabtu li-adrusa)", "لِيَكْتُبْ أَخُوكَ (li-yaktub akhūka)", "لِلْمَدِينَةِ بَابٌ (li-l-madīnati bābun)"], "answer": 0} -->
 
-<!-- grammar-card: {"rule": "Command لِـ takes a jussive imperfect and often means let someone do something.", "hint": "Look for a sukun or shortened ending on the verb.", "example": "لِيَقْرَأْ أَخُوكَ (li-yaqraʾ akhūka)", "answer": "Let your brother read", "explanation": "يَقْرَأْ is jussive after the command lām, so the sentence expresses a third-person command."} -->
+<!-- grammar-card: {"id":"command-lam-reading","kind":"rule","format":"qa","priority":"essential","sourceSection":"Practice patterns","rule":"Command لِـ takes a jussive imperfect and often means let someone do something.","example":"Translate لِيَقْرَأْ أَخُوكَ.","answer":"Let your brother read","explanation":"Li-yaqraʾ has final sukūn after command lām. Compare the subjunctive of purpose and denial lām.","legacyAliases":[{"rule":"Command لِـ takes a jussive imperfect and often means let someone do something.","example":"لِيَقْرَأْ أَخُوكَ (li-yaqraʾ akhūka)"}]} -->
 
 ## Sources
 

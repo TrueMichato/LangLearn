@@ -1,5 +1,7 @@
 # Saber vs Conocer (Two Verbs for 'To Know')
 
+<!-- vocab-inventory: {"mode":"explicit"} -->
+
 Spanish splits the English verb "to know" into two separate verbs. **Saber** means to know facts, information, or how to do something. **Conocer** means to be acquainted or familiar with people, places, or things. Choosing the wrong one is a classic learner mistake — and the two verbs even shift meaning in the preterite.
 
 ## Saber — Facts, Information, Skills
@@ -10,7 +12,11 @@ Use **saber** (sah-BEHR) for:
 - **How to do something** (saber + infinitive): **Sé hablar inglés** (seh ah-BLAR een-GLEHS) — I know how to speak English.
 - **Memorized data** (numbers, dates, addresses): **No sé su teléfono** — I don't know his phone number.
 
-Note: there is **no "cómo"** with skills. ❌ *Sé cómo hablar inglés* → ✅ *Sé hablar inglés*.
+For a general learned skill, use **saber + infinitive**: *Sé hablar inglés*. **Saber cómo + infinitive** is also grammatical when emphasizing the manner or procedure; it is not universally forbidden.
+
+<!-- vocab-card: {"id":"vocab-saber","word":"saber","meaning":"to know facts or information; to know how to do something","priority":"essential","sourceSection":"Saber — Facts, Information, Skills"} -->
+<!-- grammar-card: {"id":"skill-infinitive","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Saber — Facts, Information, Skills","rule":"Saber + infinitive expresses a learned skill","example":"Sé ___. (I know how to swim.)","answer":"nadar","explanation":"Use the infinitive directly for the general skill; conocer does not take this skill construction."} -->
+<!-- grammar-card: {"id":"como-qualification","kind":"concept","format":"qa","priority":"optional","sourceSection":"Saber — Facts, Information, Skills","rule":"Saber cómo is grammatical for manner or procedure","example":"Is saber cómo + infinitive always an error?","answer":"No. Saber + infinitive is the basic skill pattern; saber cómo can emphasize manner or procedure.","explanation":"Do not turn a useful learner shortcut into a ban on a grammatical construction."} -->
 
 ### Conjugation: Saber (Present)
 
@@ -25,6 +31,7 @@ Note: there is **no "cómo"** with skills. ❌ *Sé cómo hablar inglés* → �
 
 The only irregular form is **yo sé** — don't forget the written accent (distinguishes it from the pronoun *se*).
 
+<!-- grammar-card: {"id":"saber-yo","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Conjugation: Saber (Present)","rule":"The irregular present yo form of saber is sé with a tilde","example":"Yo ___ que es tarde. (saber)","answer":"sé","explanation":"Sé is the verb; unaccented se is a pronoun."} -->
 <!-- quiz: {"type":"multiple-choice","question":"Which sentence is correct for 'I know how to swim'?","options":["Conozco nadar","Sé nadar","Sé cómo a nadar","Conozco a nadar"],"answer":1} -->
 
 ## Conocer — People, Places, Things
@@ -35,6 +42,9 @@ Use **conocer** (koh-noh-SEHR) for being **acquainted or familiar** with someone
 - **Places:** **Conozco Madrid** — I know / I've been to Madrid.
 - **Things you're familiar with:** **Conozco esta canción** — I know this song.
 
+<!-- vocab-card: {"id":"vocab-conocer","word":"conocer","meaning":"to know; to be acquainted or familiar with a person, place or thing","priority":"essential","sourceSection":"Conocer — People, Places, Things"} -->
+<!-- grammar-card: {"id":"personal-a","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Conocer — People, Places, Things","rule":"Conocer takes personal a before a specific human direct object","example":"Conozco ___ María.","answer":"a","explanation":"María is a specific person; compare Conozco Madrid without personal a."} -->
+<!-- grammar-card: {"id":"place-familiarity","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Conocer — People, Places, Things","rule":"Conocer expresses familiarity with a place","example":"Yo ___ Madrid. (know the city from experience)","answer":"conozco","explanation":"This describes acquaintance with the city, not a fact introduced by que."} -->
 ### Conjugation: Conocer (Present)
 
 The yo form has the **-zco** spelling: **conozco**.
@@ -48,11 +58,12 @@ The yo form has the **-zco** spelling: **conozco**.
 | vosotros | **conocéis** | koh-noh-SAYS |
 | ellos / ustedes | **conocen** | koh-NOH-sehn |
 
-<!-- grammar-card: {"rule":"saber = facts/skills/how-to; conocer = be acquainted with (people/places/things)","hint":"If you can answer it with information, use saber. If you can shake its hand or visit it, use conocer.","example":"¿___ tú la respuesta? (the answer = a fact)","answer":"Sabes","explanation":"'Saber' is used for facts and information. 'Sabes la respuesta' = You know the answer. 'Conocer' would mean being acquainted with the answer as if it were a person — wrong here."} -->
+<!-- grammar-card: {"id":"facts-saber","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Saber — Facts, Information, Skills","rule":"saber = facts/skills/how-to; conocer = be acquainted with (people/places/things)","example":"¿___ tú la respuesta? (the answer = a fact)","answer":"Sabes","explanation":"Saber is the ordinary choice when asking whether someone has the answer. Conocer is not limited to people and can overlap with saber in some contexts."} -->
+<!-- grammar-card: {"id":"conocer-yo","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Conjugation: Conocer (Present)","rule":"Conocer has conozco in present yo","example":"Yo ___ a Laura. (conocer)","answer":"conozco","explanation":"The irregular yo spelling is -zco; other present forms in the table use conoc-."} -->
 
 ## Meaning Shift in the Preterite
 
-In the **pretérito indefinido**, both verbs change meaning subtly:
+In these **pretérito indefinido** contexts, both verbs often focus on the **start** of knowing. The translations below are common readings, not replacements required in every possible context:
 
 | Verb | Imperfect (background) | Preterite (the moment) |
 |---|---|---|
@@ -75,7 +86,9 @@ Notice how both verbs co-exist naturally: *conocer* for the person, *saber* for 
 
 <!-- quiz: {"type":"multiple-choice","question":"In Spanish, 'Conocí a Juan en 2020' means:","options":["I knew Juan in 2020","I was familiar with Juan in 2020","I met Juan (for the first time) in 2020","I found out about Juan in 2020"],"answer":2} -->
 
-<!-- grammar-card: {"rule":"In the preterite, 'supe' = found out / learned; 'conocí' = met for the first time","hint":"The preterite captures the moment of acquisition.","example":"Ayer ___ que estás casado. (I found out yesterday that you are married)","answer":"supe","explanation":"'Supe' in the preterite shifts from 'I knew' to 'I found out' — the moment knowledge was acquired. Compare 'sabía' (background: I already knew)."} -->
+<!-- grammar-card: {"id":"finding-out","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Meaning Shift in the Preterite","rule":"In the preterite, 'supe' = found out / learned; 'conocí' = met for the first time","example":"Ayer ___ que estás casado. (I found out yesterday that you are married)","answer":"supe","explanation":"Here supe focuses on acquiring the information; sabía would describe an existing knowledge state. These are contextual aspectual readings, not universal translations."} -->
+<!-- grammar-card: {"id":"first-meeting","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Meaning Shift in the Preterite","rule":"Conocí commonly marks a first meeting in the taught past-event context","example":"___ a tu hermano en la fiesta. (I met him there for the first time)","answer":"Conocí","explanation":"Compare conocía for already being acquainted with him."} -->
+<!-- grammar-card: {"id":"background-knowing","kind":"concept","format":"qa","priority":"optional","sourceSection":"Meaning Shift in the Preterite","rule":"Imperfect sabía/conocía describe background knowledge or familiarity","example":"What contrast does sabía versus supe usually convey in these examples?","answer":"Sabía describes already knowing; supe highlights the moment of finding out.","explanation":"The imperfect versus preterite viewpoint supplies the difference; context remains important."} -->
 
 ## Quick Decision Guide
 

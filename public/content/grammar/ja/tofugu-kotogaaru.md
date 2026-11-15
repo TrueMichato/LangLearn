@@ -1,5 +1,7 @@
 # ことがある — Sometimes
 
+<!-- vocab-inventory: {"mode":"explicit"} -->
+
 > **Source:** Content from [Tofugu](https://www.tofugu.com/japanese-grammar/kotogaaru/). For personal study.
 
 〜ことがある for Occasional Things
@@ -67,10 +69,13 @@ Since 〜ことがある ends with the verb ある, it follows the verb's conjug
       Negative Past
       〜ことがなかった
       〜ことがありませんでした 
- 〜ことがなか"ったです
+ 〜ことがなかったです
   
 
 The particle が can often be omitted in conversation, and in the case of 〜ことがある can be replaced with a different particle, such as は or も. The choice of particle will convey a certain nuance depending on the situation you're describing. Keep an eye out for the different particle uses in the sections below.
+
+<!-- grammar-card: {"id":"occasion-breakdown","kind":"concept","format":"qa","priority":"optional","sourceSection":"Breakdown of ことがある and its Conjugations","rule":"こと names occasions, が marks the subject, and ある states their existence","example":"How do the three parts of ことがある produce its occasional-event meaning?","answer":"こと packages occasions, が marks them as the subject, and ある says they exist: there are times when something happens.","explanation":"Politeness and tense on the final ある change normally: あります, あった, ない, なかった."} -->
+<!-- grammar-card: {"id":"occasion-polite-past","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Breakdown of ことがある and its Conjugations","rule":"The final ある carries tense and politeness","example":"Make only ある polite past: 話すことが___。","answer":"ありました","explanation":"話すことがありました describes there having been occasions of speaking; the plain clause stays before こと."} -->
 
 ### Patterns of Use
 
@@ -84,6 +89,10 @@ In its most common use, 〜ことがある attaches to the dictionary form of a 
 
   - I sometimes go to Japan on business.
 
+<!-- vocab-card: {"id":"vocab-shucchou","word":"出張","reading":"しゅっちょう","meaning":"business trip","priority":"optional","sourceSection":"Verb + ことがある"} -->
+
+<!-- grammar-card: {"id":"verb-occasion","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Verb + ことがある","rule":"Dictionary form plus ことがある means something happens from time to time","hint":"Use 行く to express occasional trips, in the plain form.","example":"出張(しゅっちょう)で日本に___。","answer":"行くことがある","explanation":"行くことがある reports an occasional occurrence, not a past experience."} -->
+
 #### い-adjective + ことがある
 
 〜ことがある can also directly follow an い-adjective. For instance, if you want to say the plane can occasionally be stinky, you can combine 臭い (stinky) and 〜ことがある:
@@ -92,6 +101,9 @@ In its most common use, 〜ことがある attaches to the dictionary form of a 
 
   - The inside of the plane is sometimes stinky.
 
+<!-- vocab-card: {"id":"vocab-kusai","word":"臭い","reading":"くさい","meaning":"stinky; smelly","priority":"optional","sourceSection":"い-adjective + ことがある"} -->
+<!-- grammar-card: {"id":"i-adjective-occasion","kind":"rule","format":"cloze","priority":"optional","sourceSection":"い-adjective + ことがある","rule":"An い-adjective attaches directly to ことがある","example":"Sometimes smelly: 臭___ことがある。","answer":"い","explanation":"臭い stays in its plain nonpast form; do not insert な or だ."} -->
+
 #### な-adjective + ことがある
 
 When using 〜ことがある with a な-adjective, don't forget to keep the な at the end. For example, if your in-flight experience is usually noisy but can *sometimes* be quiet, you might use 静か (quiet) with な to say:
@@ -99,6 +111,8 @@ When using 〜ことがある with a な-adjective, don't forget to keep the な
   - 飛行機の中は、**静かなことがある**。
 
   - The plane is sometimes quiet.
+
+<!-- grammar-card: {"id":"na-adjective-occasion","kind":"rule","format":"cloze","priority":"essential","sourceSection":"な-adjective + ことがある","rule":"A な-adjective needs な before ことがある","example":"飛行機の中は、静か___ことがある。","answer":"な","explanation":"静かなことがある means there are occasions when it is quiet."} -->
 
 #### Noun + の・である + ことがある
 
@@ -112,6 +126,10 @@ To connect 〜ことがある with a noun you'll need to add either the particle
 
 Either の or である technically work in this case, but the particle の is more commonly used, as である is declarative and generally considered to be more formal.
 
+<!-- grammar-card: {"id":"noun-formal-linker","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Noun + の・である + ことがある","rule":"A noun may use formal である instead of の before ことがある","example":"Use the formal alternative to の: ダブルブッキング___ことがある。","answer":"である","explanation":"である explicitly presents the noun predicate and sounds more formal than の."} -->
+
+<!-- grammar-card: {"id":"noun-occasion","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Noun + の・である + ことがある","rule":"A noun connects to ことがある with の","hint":"Use the ordinary noun-linking particle.","example":"ダブルブッキング___ことがある。","answer":"の","explanation":"The common linker here is の; the more formal である is also possible."} -->
+
 ### ことがある For Occasionally Experienced Things
 
 You've learned that 〜ことがある, when it follows the plain, non-past form of word describes something you do occasionally. For example, if you don't normally use a paper dictionary but there are still times where you refer to one, you can say:
@@ -121,6 +139,10 @@ You've learned that 〜ことがある, when it follows the plain, non-past form
   - Sometimes, I use a paper dictionary.
 
 The key point to remember is that the action 〜ことがある is describing has to be something you have "occasion to do." This is why 時々 (sometimes) and 〜ことがある go well together. 〜ことがある may still be used with よく (often) or 結構よく (quite often) as it's possible that some occasions pop up frequently, but 〜ことがある never works with いつも (always) because then it's just something that happens all the time.
+
+<!-- vocab-card: {"id":"vocab-tokidoki","word":"時々","reading":"ときどき","meaning":"sometimes; from time to time","priority":"optional","sourceSection":"ことがある For Occasionally Experienced Things"} -->
+<!-- grammar-card: {"id":"occasion-frequency","kind":"concept","format":"qa","priority":"essential","sourceSection":"ことがある For Occasionally Experienced Things","rule":"Occasional ことがある does not describe an action as occurring without exception","example":"Why is いつも a poor match for the occasional-event use of ことがある?","answer":"It means always, while this construction singles out occasions rather than saying the action happens every time.","explanation":"時々 is a natural match. よく can describe frequent occasions without turning them into an exceptionless habit."} -->
+<!-- grammar-card: {"id":"additive-occasion","kind":"concept","format":"qa","priority":"optional","sourceSection":"ことがある For Occasionally Experienced Things","rule":"Replacing が with も adds an also-or-other-times contrast","example":"What does も add in 日本語の文法は、面白いこともある?","answer":"It presents being interesting as an additional possibility, against other occasions or qualities such as being difficult.","explanation":"が simply presents the occurrence; も makes an alternative salient."} -->
 
 While 〜ことがある is often employed to talk about things you do, it can also describe the occasional condition or state of something. For instance, say you think that Japanese grammar is difficult, but it can also be interesting at times. In this case, you might say:
 
@@ -168,6 +190,9 @@ You can place even more emphasis on this fact by added an adverb between こと�
 
 In this case, 全然ない conveys that you don't have the opportunity *at all* and ほとんどない indicates that while you may have the opportunity it is only on *rare* occasions, or *almost never*.
 
+<!-- grammar-card: {"id":"negative-occasion","kind":"concept","format":"qa","priority":"essential","sourceSection":"ことがない For Things That Never Happen","rule":"Nonpast + ことがない denies occasions of an event, not necessarily lifetime experience","example":"How does クッキーを作ることがない differ from クッキーを作ったことがない?","answer":"The first says making cookies does not occur in one's routine or circumstances; the second says one has never had that experience.","explanation":"The verb form before こと distinguishes a pattern of occurrence from experiential history."} -->
+<!-- grammar-card: {"id":"rare-occasion","kind":"concept","format":"qa","priority":"optional","sourceSection":"ことがない For Things That Never Happen","rule":"全然ない denies occurrence, while ほとんどない allows rare exceptions","example":"Does 作ることがほとんどない strictly rule out every occasion of making something?","answer":"No. It means almost never, whereas 全然ない means not at all.","explanation":"The adverb between が and ない controls how strongly the absence of occasions is asserted."} -->
+
 ### 〜ことがある？ For "Do You Ever Do…?"
 
 With 〜ことがある, you also can ask if someone else ever has any occasion to do something. 1 For example, if you want to ask if someone is a fan of anime you coild say:
@@ -194,10 +219,7 @@ In the same way, you want to ask your colleague if they've been to Japan, so you
 
 Again, using the particle が sounds a little overly-dramatic and could come across a bit odd in ordinary conversation. This version sounds more natural.
 
-<!-- grammar-card: {"rule":"A noun connects to ことがある with の","hint":"noun + ことがある","example":"ダブルブッキング___ことがある。","answer":"の","explanation":"ダブルブッキング is a noun, so it needs の before ことがある."} -->
-
-<!-- grammar-card: {"rule":"Dictionary form plus ことがある means something happens from time to time","hint":"行く + ことがある","example":"出張(しゅっちょう)で日本に___。","answer":"行くことがある","explanation":"行くことがある reports an occasional occurrence, not a past experience."} -->
-
+<!-- grammar-card: {"id":"conversation-particles","kind":"concept","format":"qa","priority":"optional","sourceSection":"〜ことがある？ For \"Do You Ever Do…?\"","rule":"Conversational yes-or-no questions often use は, って, or no particle after こと","example":"Must が be retained in every conversational question asking whether something ever happens?","answer":"No. は is a common topic-marking choice, while って or omission is more colloquial; が remains possible in context.","explanation":"Particle choice affects discourse nuance and register. It is not a categorical ban on が."} -->
 ## Beyond The Basics
 
 ### 〜こともあれば、〜こともある For "Sometimes…, sometimes…"
@@ -221,6 +243,8 @@ Note that 〜こともあれば、〜こともある can also be used to talk ab
   - 本当の**こともあれば**、ウソの**こともある**。
 
   - Some things are true, but some are false.
+
+<!-- grammar-card: {"id":"alternating-occasions","kind":"rule","format":"cloze","priority":"optional","sourceSection":"〜こともあれば、〜こともある For \"Sometimes…, sometimes…\"","rule":"こともあれば…こともある pairs alternative occasions or aspects","example":"Sometimes nice, other times scary: 優しいことも___、怖いこともある。","answer":"あれば","explanation":"The ば-form of ある links the two alternatives; they may be different occasions or different aspects."} -->
 
 #### ないことがない vs ないことはない
 
@@ -269,6 +293,9 @@ Note that ending a sentence with けど is extremely common in Japanese. If you'
   
 
 ---
+
+<!-- grammar-card: {"id":"hedged-double-negative","kind":"rule","format":"cloze","priority":"optional","sourceSection":"ないことがない vs ないことはない","rule":"ないことはない is a hedged double negative","hint":"Use a topic-marked double negative to concede that he does bathe.","example":"お風呂に入ら___けど、嫌がるんだよね。","answer":"ないことはない","explanation":"It concedes that the thing does happen, just grudgingly."} -->
+<!-- grammar-card: {"id":"double-negative-contrast","kind":"concept","format":"qa","priority":"optional","sourceSection":"ないことがない vs ないことはない","rule":"ないことがない directly denies non-occurrence; ないことはない can offer a qualified concession","example":"In the bath examples, how does 入らないことがない differ from 入らないことはないけど…?","answer":"The が version says there is never a time he skips a bath; the は version concedes he does bathe, but introduces a reservation.","explanation":"The same two negatives support a strong assertion or a hedged concession depending on the particle and context."} -->
 
 #### Related Grammar
 
@@ -342,8 +369,6 @@ by Robert Fiengo and William McClure
 <!-- quiz: {"type":"multiple-choice","question":"What does \"このフレーズを使う**ことがある**。\" mean?","options":["There are times I use this phrase.","There are times I speak in Japanese.","I sometimes go to Japan on business.","The inside of the plane is sometimes stinky."],"answer":0} -->
 
 <!-- quiz: {"type":"multiple-choice","question":"What does \"出張(しゅっちょう)で日本に**行くことがある**。\" mean?","options":["I sometimes go to Japan on business.","There are times I speak in Japanese.","There are times I use this phrase.","The inside of the plane is sometimes stinky."],"answer":0} -->
-
-<!-- grammar-card: {"rule":"ないことはない is a hedged double negative","hint":"double negative","example":"お風呂に入ら___けど、嫌がるんだよね。","answer":"ないことはない","explanation":"It concedes that the thing does happen, just grudgingly."} -->
 
 ## Sources
 

@@ -1,5 +1,8 @@
 import { isValidElement, type ReactElement, type ReactNode } from 'react';
 import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest';
+import ReactMarkdown from 'react-markdown';
+import portuguesePronunciation from '../../public/content/grammar/pt/pronunciation.md?raw';
+import romanianPronunciation from '../../public/content/grammar/ro/pronunciation.md?raw';
 
 const hooks = vi.hoisted(() => {
   let slots: unknown[] = [];
@@ -66,6 +69,7 @@ import LessonReviewEditor from '../components/grammar/LessonReviewEditor';
 import GrammarQuiz from '../components/grammar/GrammarQuiz';
 import WordLookupSheet from '../components/reader/WordLookupSheet';
 import PracticeWordCapture from '../components/common/PracticeWordCapture';
+import { parseListCandidates, parseTableCandidates } from '../lib/lesson-capture';
 import type { GrammarReviewItem, LessonReviewItem } from '../lib/lesson-review';
 
 type Props = { children?: ReactNode; onClick?: () => unknown; [key: string]: unknown };
@@ -454,5 +458,55 @@ ${hasVocabulary ? '<!-- vocab-card: {"id":"house","word":"casa","meaning":"house
       expect(tools[0].props.text).toBeUndefined();
     }
     expect(mocks.save).not.toHaveBeenCalled();
+  });
+
+  it.each([
+    {
+      language: 'pt', source: portuguesePronunciation,
+      badTerms: ["Don't pronounce H", 'ã', 'Initial R / RR'],
+      lexicalIds: ['vocab-casa', 'vocab-maca'], ruleIds: ['initial-h', 'cedilla-application'],
+      inlineWord: 'casa', inlineId: 'vocab-casa',
+    },
+    {
+      language: 'ro', source: romanianPronunciation, badTerms: ['h'],
+      lexicalIds: ['vocab-casa', 'vocab-harta'], ruleIds: ['pronounced-h', 'country-diacritic'],
+      inlineWord: 'copil', inlineId: 'vocab-copil',
+    },
+  ])('uses the real $language inventory for picker rows and inline saves', async ({
+    language, source, badTerms, lexicalIds, ruleIds, inlineWord, inlineId,
+  }) => {
+    const markdown = `<!-- vocab-inventory: {"mode":"explicit"} -->\n${source.replace(/<!--\s*vocab-inventory\b[\s\S]*?-->/g, '')}`;
+    mocks.progress.mockResolvedValue([{ lessonId: 'spelling-rules', completed: true, quizScore: 100 }]);
+    vi.stubGlobal('fetch', vi.fn().mockResolvedValue({ ok: true, text: async () => markdown }));
+    const render = lesson(language);
+    render(); await settle();
+    const tree = render();
+    const prose = child(tree, ReactMarkdown);
+    expect(prose.props.children).not.toContain('vocab-inventory');
+    const renderListItem = (prose.props.components as { li: (props: { children: string }) => ReactNode }).li;
+    const inline = (sourceText: string) => elements(renderListItem({ children: sourceText }))
+      .flatMap((element) => element.props.item ? [element.props.item as LessonReviewItem] : []);
+    const raw = [...parseListCandidates(markdown), ...parseTableCandidates(markdown)];
+    for (const word of badTerms) {
+      const candidates = raw.filter((item) => item.word === word);
+      expect(candidates.length).toBeGreaterThan(0);
+      for (const candidate of candidates) expect(inline(candidate.sourceText)).toEqual([]);
+    }
+    const visibleWord = raw.find((item) => item.word === inlineWord)!;
+    expect(inline(visibleWord.sourceText)).toEqual([
+      expect.objectContaining({ id: inlineId, word: inlineWord, provenance: 'authored' }),
+    ]);
+
+    click(tree, 'Choose review material');
+    const picker = child(render(), LessonCaptureModal);
+    const items = picker.props.items as LessonReviewItem[];
+    expect(picker.props.diagnostics).toEqual([]);
+    const vocabulary = items.filter((item) => item.kind === 'vocabulary');
+    for (const word of badTerms) expect(vocabulary.some((item) => item.word === word)).toBe(false);
+    expect(vocabulary.every((item) => item.provenance === 'authored')).toBe(true);
+    expect(vocabulary.map((item) => item.id)).toEqual(expect.arrayContaining(lexicalIds));
+    expect(items.filter((item) => item.kind !== 'vocabulary').map((item) => item.id)).toEqual(expect.arrayContaining(ruleIds));
+    expect(mocks.save).not.toHaveBeenCalled();
+    expect(mocks.xp).not.toHaveBeenCalled();
   });
 });

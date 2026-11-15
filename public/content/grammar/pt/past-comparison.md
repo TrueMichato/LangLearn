@@ -1,6 +1,10 @@
 # Perfeito vs. Imperfeito: Choosing the Right Past Tense
 
+<!-- vocab-inventory: {"mode":"explicit"} -->
+
 One of the biggest challenges for Portuguese learners is knowing when to use the pretérito perfeito and when to use the pretérito imperfeito. Both describe the past, but they paint very different pictures. Think of it this way: the **perfeito** is a camera snapshot — a single, completed moment. The **imperfeito** is a video camera — recording an ongoing scene, a background, or a repeated routine.
+
+<!-- grammar-card: {"id":"snapshot-video-mnemonic","kind":"concept","format":"qa","priority":"optional","sourceSection":"Perfeito vs. Imperfeito: Choosing the Right Past Tense","rule":"Snapshot versus video is a viewpoint mnemonic","example":"What do snapshot and video represent in the lesson's past-tense mnemonic?","answer":"Snapshot cues an event viewed as a completed whole with the perfeito; video cues an ongoing scene, background, or routine with the imperfeito.","explanation":"This is a viewpoint aid, not a rule that perfeito events must be brief or cannot repeat."} -->
 
 ## Quick Comparison
 
@@ -11,6 +15,8 @@ One of the biggest challenges for Portuguese learners is knowing when to use the
 | "What happened" | "What was happening" |
 | Snapshots | Video footage |
 | One-time events | Repeated routines |
+
+<!-- grammar-card: {"id":"past-viewpoint","kind":"concept","format":"qa","priority":"essential","sourceSection":"Quick Comparison","rule":"The past tenses present different viewpoints on events","example":"What is the core viewpoint contrast between perfeito and imperfeito?","answer":"Perfeito presents an event as a completed whole; imperfeito presents an ongoing, habitual, or background situation without focusing on its endpoint.","explanation":"Duration or a time word alone does not choose the tense; a long event can be presented as a completed whole."} -->
 
 ## When to Use the Pretérito Perfeito
 
@@ -24,6 +30,12 @@ Use the perfeito when the action is **completed** and has a clear beginning and/
 
 **Key signals for perfeito:** ontem, na semana passada, de repente, uma vez, naquele dia, às três horas
 
+These are contextual clues, not automatic tense rules. A completed series can use perfeito even if it repeats; an ongoing description can use imperfeito even with **ontem**.
+
+<!-- vocab-card: {"id":"vocab-de-repente","word":"de repente","meaning":"suddenly","priority":"optional","sourceSection":"When to Use the Pretérito Perfeito"} -->
+<!-- vocab-card: {"id":"vocab-uma-vez","word":"uma vez","meaning":"once; one time","priority":"optional","sourceSection":"When to Use the Pretérito Perfeito"} -->
+<!-- vocab-card: {"id":"vocab-naquele-dia","word":"naquele dia","meaning":"on that day","priority":"optional","sourceSection":"When to Use the Pretérito Perfeito"} -->
+<!-- grammar-card: {"id":"marker-not-mechanical","kind":"concept","format":"qa","priority":"essential","sourceSection":"When to Use the Pretérito Perfeito","rule":"Time markers suggest context but do not mechanically choose a tense","example":"Must a past sentence containing ontem always use perfeito?","answer":"No. An ongoing background description can use imperfeito even with ontem.","explanation":"Viewpoint matters; time expressions are clues, not tense switches."} -->
 ## When to Use the Pretérito Imperfeito
 
 Use the imperfeito for **ongoing states**, **habitual actions**, and **descriptions**:
@@ -36,6 +48,10 @@ Use the imperfeito for **ongoing states**, **habitual actions**, and **descripti
 
 **Key signals for imperfeito:** sempre, todo dia, toda semana, geralmente, antigamente, quando era criança, naquela época
 
+<!-- vocab-card: {"id":"vocab-geralmente","word":"geralmente","meaning":"usually; generally","priority":"optional","sourceSection":"When to Use the Pretérito Imperfeito"} -->
+<!-- vocab-card: {"id":"vocab-antigamente","word":"antigamente","meaning":"formerly; in the old days","priority":"optional","sourceSection":"When to Use the Pretérito Imperfeito"} -->
+<!-- vocab-card: {"id":"vocab-naquela-epoca","word":"naquela época","meaning":"at that time; in those days","priority":"optional","sourceSection":"When to Use the Pretérito Imperfeito"} -->
+<!-- grammar-card: {"id":"habitual-marker","kind":"rule","format":"cloze","priority":"optional","sourceSection":"When to Use the Pretérito Imperfeito","rule":"Sempre can mark a past habit but does not force the imperfect in every context","example":"Ela ___ chegava atrasada (always arrived late)","answer":"sempre","explanation":"Here chegava presents a repeated habit; elsewhere sempre can accompany a bounded completed period.","legacyAliases":[{"rule":"Time markers help you choose: 'ontem' and 'de repente' → perfeito; 'sempre' and 'todo dia' → imperfeito","example":"Ela ___ chegava atrasada (always arrived late)"}]} -->
 <!-- quiz: {"type":"multiple-choice","question":"'Eu ___ sorvete quando era criança.' — Which tense fits a habitual past action?","options":["comi (perfeito)","comia (imperfeito)","como (presente)","comerei (futuro)"],"answer":1} -->
 
 ## Using Both Together: Narrating Stories
@@ -57,7 +73,12 @@ The imperfeito sets the scene, and the perfeito interrupts it with a sudden even
 > perfeito:              |  (interrupts!)
 > ```
 
+<!-- grammar-card: {"id":"background-action","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Pattern 1: Background (imperfeito) + Interruption (perfeito)","rule":"Use the perfeito for completed actions and the imperfeito for ongoing/habitual past actions","example":"Eu ___ quando ele chegou. (dormir; ongoing background)","answer":"dormia","explanation":"The sleeping was in progress when the arrival occurred.","legacyAliases":[{"rule":"Use the perfeito for completed actions and the imperfeito for ongoing/habitual past actions","example":"Eu ___ (dormir, imperfeito) quando ele ___ (chegar, perfeito)"}]} -->
+<!-- grammar-card: {"id":"intervening-event","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Pattern 1: Background (imperfeito) + Interruption (perfeito)","rule":"The completed intervening event uses perfeito","example":"Eu dormia quando ele ___. (chegar; completed arrival)","answer":"chegou","explanation":"Chegou supplies the arrival event against the ongoing dormia background."} -->
+
 ### Pattern 2: Scene Description (imperfeito) + Action (perfeito)
+
+<!-- grammar-card: {"id":"scene-description","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Pattern 2: Scene Description (imperfeito) + Action (perfeito)","rule":"When telling stories, the imperfeito sets the scene (background) and the perfeito advances the plot (events)","example":"O dia ___ bonito. De repente, começou a chover. (estar; scene description)","answer":"estava","explanation":"Estava describes the background day; começou supplies the event that moves the story forward.","legacyAliases":[{"rule":"When telling stories, the imperfeito sets the scene (background) and the perfeito advances the plot (events)","example":"O dia ___ bonito. De repente, ___ a chover. (estar / começar)"}]} -->
 
 First describe the setting, then tell what happened:
 
@@ -67,12 +88,16 @@ First describe the setting, then tell what happened:
 
 ### Pattern 3: Two Simultaneous Background Actions (imperfeito + imperfeito)
 
+<!-- grammar-card: {"id":"simultaneous-background","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Pattern 3: Two Simultaneous Background Actions (imperfeito + imperfeito)","rule":"Two ongoing background actions can both use imperfect","example":"Enquanto eu cozinhava, ela ___. (estudar; simultaneous ongoing action)","answer":"estudava","explanation":"Neither action is framed as an intervening completed event; both are background."} -->
+
 When two ongoing actions happen at the same time:
 
 - **Enquanto eu cozinhava, ela estudava** (en-kwan-too eh-oo koh-zeen-yah-vah eh-lah esh-too-dah-vah) — While I was cooking, she was studying
 - **Ele cantava enquanto tomava banho** (eh-lee kan-tah-vah en-kwan-too toh-mah-vah bahn-yoo) — He was singing while he was taking a shower
 
 ### Pattern 4: Sequence of Completed Actions (perfeito + perfeito)
+
+<!-- grammar-card: {"id":"completed-sequence","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Pattern 4: Sequence of Completed Actions (perfeito + perfeito)","rule":"A completed event sequence uses perfeito","example":"Eu acordei, tomei café e ___. (sair; completed sequence)","answer":"saí","explanation":"Saí completes the sequence of waking up, having coffee, and leaving."} -->
 
 A chain of events that happened one after another:
 
@@ -91,11 +116,15 @@ Consider these pairs and notice how the meaning changes:
 | **Eu soube a resposta** — I found out the answer (at that moment) | **Eu sabia a resposta** — I knew the answer (ongoing knowledge) |
 | **Ele foi gentil** — He was kind (on that occasion) | **Ele era gentil** — He was kind (characteristically) |
 | **Eu tive medo** — I got scared (at a specific moment) | **Eu tinha medo** — I was scared / I used to be scared |
-| **Ela pode sair** — She was able to leave (and did) | **Ela podia sair** — She could leave (ability, not necessarily did) |
+| **Ela pôde sair** — She was able to leave (on that occasion) | **Ela podia sair** — She could leave (ongoing ability or permission) |
 
 - **Eu conheci minha esposa em 2010** (eh-oo koh-nyeh-see meen-yah esh-poh-zah eng doysh meel ee dez) — I met my wife in 2010 (first time meeting)
 - **Eu conhecia minha esposa há muitos anos** (eh-oo koh-nyeh-see-ah meen-yah esh-poh-zah ah mween-tooz ah-nooz) — I knew my wife for many years (ongoing familiarity)
 
+<!-- grammar-card: {"id":"soube-sabia-contrast","kind":"concept","format":"qa","priority":"optional","sourceSection":"Practice: Choosing the Right Tense","rule":"Saber can contrast finding out with an ongoing state of knowledge","example":"How does Eu soube a resposta differ from Eu sabia a resposta here?","answer":"Soube means I found out the answer; sabia means I knew the answer.","explanation":"The perfective viewpoint can highlight entering the state of knowledge."} -->
+<!-- grammar-card: {"id":"conheci-conhecia-contrast","kind":"concept","format":"qa","priority":"optional","sourceSection":"Practice: Choosing the Right Tense","rule":"Conhecer can contrast first meeting with ongoing familiarity","example":"How does Eu conheci minha esposa em 2010 differ from Eu conhecia minha esposa há muitos anos?","answer":"Conheci describes meeting her; conhecia describes already knowing her over a past period.","explanation":"The same lexical verb has a different event/state interpretation under the two viewpoints."} -->
+<!-- grammar-card: {"id":"bounded-state-contrast","kind":"concept","format":"qa","priority":"optional","sourceSection":"Practice: Choosing the Right Tense","rule":"States can be presented as bounded occasions or as ongoing background","example":"How does Ele foi gentil differ from Ele era gentil in the comparison?","answer":"Foi gentil describes kindness on a bounded occasion; era gentil characterizes him in the past.","explanation":"The same viewpoint contrast affects morei/morava and tive medo/tinha medo; perfeito need not mean a momentary physical action."} -->
+<!-- grammar-card: {"id":"pode-podia-contrast","kind":"concept","format":"qa","priority":"optional","sourceSection":"Practice: Choosing the Right Tense","rule":"Pôde is a bounded past form; podia presents ongoing ability or permission","example":"How does Ela pôde sair differ in viewpoint from Ela podia sair?","answer":"Pôde presents a bounded past occasion; podia presents an ongoing ability or permission.","explanation":"Unaccented pode is present tense. The actual occurrence of leaving still depends on context."} -->
 <!-- quiz: {"type":"multiple-choice","question":"'Ontem eu ___ ao parque.' — 'Ontem' signals a completed action. Which tense?","options":["ia (imperfeito)","fui (perfeito)","vou (presente)","irei (futuro)"],"answer":1} -->
 
 ## A Full Narrative Example
@@ -110,11 +139,6 @@ Translation: It was a beautiful day. The sun was shining and the birds were sing
 
 <!-- quiz: {"type":"multiple-choice","question":"In the story above, why is 'começou a chover' in the perfeito?","options":["Because rain is always perfeito","Because it describes an ongoing action","Because it's a sudden event that interrupts the scene","Because 'começar' is always irregular"],"answer":2} -->
 
-<!-- grammar-card: {"rule":"Use the perfeito for completed actions and the imperfeito for ongoing/habitual past actions","hint":"Perfeito = snapshot, Imperfeito = video","example":"Eu ___ (dormir, imperfeito) quando ele ___ (chegar, perfeito)","answer":"dormia ... chegou","explanation":"'Dormia' (imperfeito) is the background action in progress. 'Chegou' (perfeito) is the event that interrupted it."} -->
-
-<!-- grammar-card: {"rule":"Time markers help you choose: 'ontem' and 'de repente' → perfeito; 'sempre' and 'todo dia' → imperfeito","hint":"Specific time = perfeito, repeated time = imperfeito","example":"Ela ___ chegava atrasada (always arrived late)","answer":"sempre","explanation":"'Sempre' (always) signals a habitual action, which requires the imperfeito. The ongoing, repeated nature of the action is the key."} -->
-
-<!-- grammar-card: {"rule":"When telling stories, the imperfeito sets the scene (background) and the perfeito advances the plot (events)","hint":"Description → imperfeito, Action → perfeito","example":"O dia ___ bonito. De repente, ___ a chover. (estar / começar)","answer":"estava ... começou","explanation":"'Estava' (imperfeito) describes the background scene. 'Começou' (perfeito) is the sudden event that changes the situation."} -->
 
 ## Sources
 

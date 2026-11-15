@@ -1,8 +1,12 @@
 # Cheat Sheet: Ser / Estar / Haber (Three Verbs for "To Be")
 
+<!-- vocab-inventory: {"mode":"explicit"} -->
+
 English collapses three very different ideas into a single verb: *to be*. Spanish keeps them strictly separate. **Ser** describes what something *is* in essence; **estar** describes the state or location it happens to be in; **haber** is used impersonally (*hay* = there is/are) and as the auxiliary in compound tenses.
 
 > 📌 If you only remember one thing: **ser = identity; estar = condition; haber = existence/auxiliary.** Everything else flows from this triple.
+
+<!-- grammar-card: {"id":"three-verb-cue","kind":"concept","format":"qa","priority":"optional","sourceSection":"Cheat Sheet: Ser / Estar / Haber (Three Verbs for \"To Be\")","rule":"Identity-condition-existence is a qualified three-way memory cue","example":"Recall the three-part cue for choosing among Spanish verbs translated as be, including haber's second job.","answer":"Ser = identity; estar = condition; haber = existence/auxiliary. Ser also locates events, estar locates things or people, and haber builds compound tenses.","explanation":"The mapping is not permanent versus temporary: Madrid's location uses estar and a brief party's location uses ser."} -->
 
 ## Quick Rule Grid
 
@@ -47,6 +51,15 @@ English collapses three very different ideas into a single verb: *to be*. Spanis
    - *Es importante estudiar.* — It is important to study.
    - *Es necesario que vengas.* — It's necessary that you come.
 
+<!-- grammar-card: {"id":"ser-identity","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Ser — Eight Core Uses","rule":"Ser identifies what something is","example":"Esto ___ un libro.","answer":"es","explanation":"The noun phrase identifies the thing, rather than locating it."} -->
+<!-- grammar-card: {"id":"ser-profession","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Ser — Eight Core Uses","rule":"Ser states a profession without an article before the bare occupation","example":"Ella ___ profesora. (She is a teacher.)","answer":"es","explanation":"Ser presents her occupation; the bare profession normally has no indefinite article."} -->
+<!-- grammar-card: {"id":"ser-origin","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Ser — Eight Core Uses","rule":"Origin uses ser de","example":"Yo ___ de Argentina.","answer":"soy","explanation":"Origin differs from current location, which uses estar."} -->
+<!-- grammar-card: {"id":"ser-material","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Ser — Eight Core Uses","rule":"Ser de expresses material","example":"La mesa ___ de madera.","answer":"es","explanation":"The complement describes what the table is made of."} -->
+<!-- grammar-card: {"id":"ser-possession","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Ser — Eight Core Uses","rule":"Ser de identifies ownership","example":"El libro ___ de Juan.","answer":"es","explanation":"De Juan names the owner, not the current location."} -->
+<!-- grammar-card: {"id":"ser-clock","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Ser — Eight Core Uses","rule":"Clock time uses singular es at one and plural son for other hours","example":"___ las tres y media.","answer":"Son","explanation":"Compare es la una; days and dates also use ser, as in hoy es lunes."} -->
+<!-- grammar-card: {"id":"ser-event","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Ser — Eight Core Uses","rule":"Event location uses ser even for a temporary event","example":"La fiesta ___ en mi casa.","answer":"es","explanation":"The event takes place there; a person at the house instead está there."} -->
+<!-- grammar-card: {"id":"ser-evaluation","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Ser — Eight Core Uses","rule":"Impersonal evaluation uses ser","example":"___ importante estudiar.","answer":"Es","explanation":"This evaluates studying; es necesario que vengas also uses ser with a subordinate clause."} -->
+
 <!-- quiz: {"type":"multiple-choice","question":"Which sentence correctly uses ser?","options":["Estoy de Madrid","Soy de Madrid","Hay de Madrid","Estás de Madrid"],"answer":1} -->
 
 ## Estar — Eight Core Uses
@@ -85,6 +98,17 @@ English collapses three very different ideas into a single verb: *to be*. Spanis
    - *Estar de vacaciones* — to be on vacation
    - *Estar a punto de* — to be about to
 
+<!-- grammar-card: {"id":"estar-known-location","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Estar — Eight Core Uses","rule":"Estar locates a known person or thing","example":"Los libros ___ en la mesa.","answer":"están","explanation":"The definite books are being located; hay would introduce their existence."} -->
+<!-- grammar-card: {"id":"estar-state","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Estar — Eight Core Uses","rule":"Estar presents a current physical or emotional state","example":"Hoy yo ___ cansado.","answer":"estoy","explanation":"This answers how I feel, not who I am."} -->
+<!-- grammar-card: {"id":"estar-weather","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Estar — Eight Core Uses","rule":"Nublado with estar describes current weather","example":"Hoy ___ nublado.","answer":"está","explanation":"Estar also combines with haciendo in está haciendo frío."} -->
+<!-- grammar-card: {"id":"estar-progressive","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Estar — Eight Core Uses","rule":"Progressive estar takes a gerund","example":"Estamos ___. (estudiar; studying now)","answer":"estudiando","explanation":"The gerund describes the ongoing activity; it is not a participle after haber."} -->
+<!-- grammar-card: {"id":"estar-result","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Estar — Eight Core Uses","rule":"A participle after estar describes a resulting or adjectival state and agrees","example":"Las puertas están ___. (cerrado)","answer":"cerradas","explanation":"The adjective agrees with puertas. Dormido, casado and roto likewise describe states; haber plus participle does not agree."} -->
+<!-- grammar-card: {"id":"estar-calendar","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Estar — Eight Core Uses","rule":"Estamos a introduces the current calendar date","example":"Estamos ___ 5 de marzo.","answer":"a","explanation":"The date idiom uses estar a; hoy es lunes uses ser."} -->
+<!-- vocab-card: {"id":"vocab-estar-de-acuerdo","word":"estar de acuerdo","meaning":"to agree","priority":"optional","sourceSection":"Estar — Eight Core Uses"} -->
+<!-- vocab-card: {"id":"vocab-estar-de-pie","word":"estar de pie","meaning":"to be standing","priority":"optional","sourceSection":"Estar — Eight Core Uses"} -->
+<!-- vocab-card: {"id":"vocab-estar-de-vacaciones","word":"estar de vacaciones","meaning":"to be on vacation","priority":"optional","sourceSection":"Estar — Eight Core Uses"} -->
+<!-- vocab-card: {"id":"vocab-estar-a-punto-de","word":"estar a punto de","meaning":"to be about to (followed by an infinitive)","priority":"optional","sourceSection":"Estar — Eight Core Uses"} -->
+
 ## Haber — Six Core Uses
 
 1. **Existence (hay = there is/are)** — impersonal, **always singular** regardless of number
@@ -117,6 +141,16 @@ English collapses three very different ideas into a single verb: *to be*. Spanis
 
 > ⚠️ Common mistake: **hay** is always singular. Even with plural objects: *hay tres coches* ✓ — never *han tres coches*.
 
+<!-- grammar-card: {"id":"haber-existence","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Haber — Six Core Uses","rule":"Ser = identity/essence; Estar = state/location; Haber (hay) = existence","example":"___ tres libros en la mesa. (There are three books on the table.)","answer":"Hay","explanation":"Impersonal hay introduces existence regardless of number; los libros están locates already identified books."} -->
+<!-- grammar-card: {"id":"haber-singular-past","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Haber — Six Core Uses","rule":"Existential haber remains singular in the past too","example":"Ayer ___ muchos estudiantes. (haber; imperfect)","answer":"había","explanation":"Use había, not habían, for existential there were. Auxiliary haber can be plural, as in habían comido."} -->
+<!-- grammar-card: {"id":"haber-weather","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Haber — Six Core Uses","rule":"Hay can introduce a weather noun","example":"Hoy ___ niebla. (There is fog.)","answer":"hay","explanation":"Hay takes a noun; está nublado uses an adjective."} -->
+<!-- grammar-card: {"id":"haber-obligation","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Haber — Six Core Uses","rule":"Impersonal hay que takes an infinitive","example":"Hay ___ llegar a tiempo.","answer":"que","explanation":"Hay que expresses a general necessity, not a named person's obligation."} -->
+<!-- grammar-card: {"id":"haber-auxiliary","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Haber — Six Core Uses","rule":"Auxiliary haber agrees with its subject in compound tenses","example":"Nosotros ___ visto la película. (had seen)","answer":"habíamos","explanation":"This is personal auxiliary haber, unlike singular existential había."} -->
+<!-- grammar-card: {"id":"archaic-ha-time","kind":"concept","format":"qa","priority":"optional","sourceSection":"Haber — Six Core Uses","rule":"Elapsed-time ha is archaic or literary; common hace comes from hacer","example":"Are literary ha in años ha and everyday hace tres años forms of the same verb?","answer":"No. Ha is from haber; hace is from hacer. Elapsed-time ha is archaic or literary.","explanation":"Do not treat common hace time expressions as modern existential haber."} -->
+<!-- vocab-card: {"id":"vocab-hay-de-todo","word":"Hay de todo.","meaning":"There is a bit of everything.","priority":"optional","sourceSection":"Haber — Six Core Uses"} -->
+<!-- vocab-card: {"id":"vocab-no-hay-de-que","word":"No hay de qué.","meaning":"You are welcome; do not mention it.","priority":"optional","sourceSection":"Haber — Six Core Uses"} -->
+<!-- vocab-card: {"id":"vocab-no-hay-mal","word":"No hay mal que por bien no venga.","meaning":"Every cloud has a silver lining.","priority":"optional","sourceSection":"Haber — Six Core Uses"} -->
+
 <!-- quiz: {"type":"multiple-choice","question":"Which is correct: 'There are five students in the classroom'?","options":["Son cinco estudiantes en el aula","Están cinco estudiantes en el aula","Hay cinco estudiantes en el aula","Han cinco estudiantes en el aula"],"answer":2} -->
 
 ## Side-by-Side Meaning Shifts — Same Adjective, Different Verb
@@ -134,6 +168,15 @@ A small set of adjectives change meaning depending on whether they pair with **s
 | vivo | *Es vivo* — He is sharp / clever | *Está vivo* — He is alive |
 | verde | *Es verde* — It is green (color) | *Está verde* — It is unripe / inexperienced |
 
+<!-- vocab-card: {"id":"vocab-bueno","word":"bueno","meaning":"good with ser; tasty or colloquially attractive with estar","priority":"optional","sourceSection":"Side-by-Side Meaning Shifts — Same Adjective, Different Verb"} -->
+<!-- vocab-card: {"id":"vocab-listo","word":"listo","meaning":"clever with ser; ready with estar","priority":"optional","sourceSection":"Side-by-Side Meaning Shifts — Same Adjective, Different Verb"} -->
+<!-- vocab-card: {"id":"vocab-aburrido","word":"aburrido","meaning":"boring with ser; bored with estar","priority":"optional","sourceSection":"Side-by-Side Meaning Shifts — Same Adjective, Different Verb"} -->
+<!-- vocab-card: {"id":"vocab-seguro","word":"seguro","meaning":"safe with ser; certain or sure with estar","priority":"optional","sourceSection":"Side-by-Side Meaning Shifts — Same Adjective, Different Verb"} -->
+<!-- vocab-card: {"id":"vocab-rico","word":"rico","meaning":"wealthy with ser; delicious with estar","priority":"optional","sourceSection":"Side-by-Side Meaning Shifts — Same Adjective, Different Verb"} -->
+<!-- vocab-card: {"id":"vocab-malo","word":"malo","meaning":"bad with ser; sick or bad-tasting with estar","priority":"optional","sourceSection":"Side-by-Side Meaning Shifts — Same Adjective, Different Verb"} -->
+<!-- vocab-card: {"id":"vocab-vivo","word":"vivo","meaning":"sharp or clever with ser; alive with estar","priority":"optional","sourceSection":"Side-by-Side Meaning Shifts — Same Adjective, Different Verb"} -->
+<!-- vocab-card: {"id":"vocab-verde","word":"verde","meaning":"green with ser; unripe or inexperienced with estar","priority":"optional","sourceSection":"Side-by-Side Meaning Shifts — Same Adjective, Different Verb"} -->
+
 ## Mini-Dialogue
 
 > — ¿Dónde **está** Marta? *(DOHN-deh ehs-TAH MAHR-tah)*
@@ -142,8 +185,6 @@ A small set of adjectives change meaning depending on whether they pair with **s
 > — Sí, **hay** dos amigas. **Están** preparando la cena, que **es** a las ocho. La comida **está** muy rica, según dicen. *(see, ahy dohs ah-MEE-gahs. ehs-TAHN preh-pah-RAHN-doh lah SEH-nah, keh ehs ah lahs OH-choh. lah koh-MEE-dah ehs-TAH mwee REE-kah, seh-GOON DEE-sehn)*
 >
 > **Translation:** — Where is Marta? — She's at home. She's a teacher and today she's not working. — And is anyone with her? — Yes, there are two friends. They're preparing dinner, which is at 8. The food tastes really good, they say.
-
-<!-- grammar-card: {"rule":"Ser = identity/essence; Estar = state/location; Haber (hay) = existence","hint":"Use ser for 'who/what', estar for 'how/where', hay for 'there is/are'","example":"___ tres libros en la mesa. (There are three books on the table.)","answer":"Hay","explanation":"Existence uses haber in its impersonal form 'hay' (always singular). Compare: 'Los libros están en la mesa' (location of specific known books) vs 'Hay tres libros en la mesa' (existence/quantity)."} -->
 
 ## Sources
 

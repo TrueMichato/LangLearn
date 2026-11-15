@@ -1,5 +1,7 @@
 # れる / られる — Potential
 
+<!-- vocab-inventory: {"mode":"explicit"} -->
+
 > **Source:** Content from [Tofugu](https://www.tofugu.com/japanese-grammar/verb-potential-form-reru/). For personal study.
 
 Japanese Verb Potential れる Form
@@ -78,9 +80,13 @@ Let's take a look at another example. What about 読む (to read)? You would wan
 
 > 
 > 
-> 読**む**　+　え　+　る　=　読**める**
+> 読**む**　+　め　+　る　=　読**める**
 > 
 > 
+
+<!-- vocab-card: {"id":"vocab-kau","priority":"optional","sourceSection":"Godan Verbs","word":"買う","reading":"かう","meaning":"to buy"} -->
+<!-- vocab-card: {"id":"vocab-yomu","priority":"optional","sourceSection":"Godan Verbs","word":"読む","reading":"よむ","meaning":"to read"} -->
+<!-- grammar-card: {"id":"godan-potential","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Godan Verbs","rule":"Godan verbs form the potential by shifting the final う sound to える","hint":"読む → potential","example":"遠くからでも小さい文字が___。","answer":"読める","explanation":"む shifts to め and る is added. The sentence describes being able to read small letters from afar."} -->
 
 #### Ichidan Verbs
 
@@ -94,11 +100,24 @@ The way the potential form attaches to ichidan verbs is where language shifts ar
 
 However, this 〜られる ending is actually completely identical in structure to the passive form! For this reason, the Japanese languages has shifted and it's become common to omit the ら part of the ending. Many kids these days (and even those who are not so young) say 食べ**れる** instead of 食べ**られる**. This phenomenon is called ら抜き言葉, literally meaning "taking ら off words." While the usage of ら抜き has been controversial, the trend is becoming more of a new standard.
 
+Usage remains register-sensitive: formal writing and exams that expect standard Japanese generally retain られる.
+
+<!-- vocab-card: {"id":"vocab-taberu","priority":"optional","sourceSection":"Ichidan Verbs","word":"食べる","reading":"たべる","meaning":"to eat"} -->
+<!-- grammar-card: {"id":"ichidan-potential","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Ichidan Verbs","rule":"Standard ichidan potential replaces final る with られる","example":"食べる → standard potential: ___.","answer":"食べられる","explanation":"The standard form contains ら; 食べれる is a widespread spoken alternative."} -->
+<!-- grammar-card: {"id":"potential-passive-overlap","kind":"concept","format":"qa","priority":"essential","sourceSection":"Ichidan Verbs","rule":"Standard ichidan potential and passive forms share the same morphology","example":"Does 食べられる alone prove that the intended meaning is “can eat,” not “be eaten”?","answer":"No. Both meanings share this form, so context must distinguish them.","explanation":"The shortened potential helps distinguish the meanings in speech, but is not appropriate in every register."} -->
+<!-- grammar-card: {"id":"ranuki-register","kind":"concept","format":"qa","priority":"optional","sourceSection":"Ichidan Verbs","rule":"ら-dropping is common in speech but standard られる remains important in formal contexts","example":"Is widespread spoken 食べれる an unrestricted replacement for 食べられる in formal writing or an exam?","answer":"No. ら抜き is common and variable in speech; retain the standard form for formal writing and contexts expecting it.","explanation":"Frequency of a spoken variant does not erase register expectations."} -->
+
 #### Irregular Verbs
 
 As for irregular verbs, the potential form of  来(く)る (to come) is  来(こ)られる. As you might have guessed from the られる ending, you will see people using ら抜き言葉 form,  来(こ)れる, quite often.
 
 する (to do) becomes a totally-different-looking verb—できる.
+
+<!-- vocab-card: {"id":"vocab-kuru","priority":"optional","sourceSection":"Irregular Verbs","word":"来る","reading":"くる","meaning":"to come"} -->
+<!-- vocab-card: {"id":"vocab-suru","priority":"optional","sourceSection":"Irregular Verbs","word":"する","reading":"する","meaning":"to do"} -->
+<!-- vocab-card: {"id":"vocab-dekiru","priority":"optional","sourceSection":"Irregular Verbs","word":"できる","reading":"できる","meaning":"to be able to do"} -->
+<!-- grammar-card: {"id":"kuru-potential","kind":"rule","format":"qa","priority":"essential","sourceSection":"Irregular Verbs","rule":"Standard potential 来られる uses the reading こ","example":"Give the standard potential of 来る, including its kana reading.","answer":"来られる (こられる).","explanation":"Spoken 来れる (これる) omits ら, but still uses こ."} -->
+<!-- grammar-card: {"id":"suru-potential","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Irregular Verbs","rule":"The potential of する is できる","example":"する → potential: ___.","answer":"できる","explanation":"This is a distinct irregular form, not すれる."} -->
 
 ### Potential Form for Skill and Ability
 
@@ -136,7 +155,12 @@ Another example is:
 
   - In Japan, you **can drink** alcohol in parks.
 
-In case you didn't know, and good news for those who love drinking—this is all true! Japan allows people to drink in public, and there is no problem with drinking in parks. So in this case, it is situationally possible to drink at parks because public drinking is socially and legally allowed in Japan.
+This illustrates situational permission: drinking in public is generally allowed in Japan, but legal drinking-age restrictions and local park or event rules still apply. The grammar example is not permission to drink in every park or situation.
+
+<!-- grammar-card: {"id":"situational-potential","kind":"concept","format":"qa","priority":"optional","sourceSection":"Potential Form for Possibilities","rule":"The potential can express situational opportunity, not only learned skill","example":"Does そのカフェでは村上春樹の本が読める necessarily describe acquiring a reading skill?","answer":"No. It can mean the cafe makes those books available to read there.","explanation":"The surroundings can make an action possible."} -->
+<!-- grammar-card: {"id":"potential-drinking","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Potential Form for Possibilities","rule":"飲む forms the potential 飲める; が is common but を can also occur with potential verbs","hint":"飲む → potential","example":"日本では公園でお酒が___。","answer":"飲める","explanation":"Here が marks what can be drunk. Potential constructions can also use を; this sentence is not a universal rule about park permissions.","legacyAliases":[{"rule":"The object of a potential verb takes が","example":"日本では公園でお酒が___。"}]} -->
+
+The potential examples often mark the thing involved with が, but を can also occur; が is not an obligatory replacement in every potential construction.
 
 ### Potential Form for "-bility" Attributes
 
@@ -158,9 +182,8 @@ Let's look at another example. Imagine your mom says to you:
 
 Your classmate eats erasers, and your mom wears a bowl on her head? Sounds like you are surrounded by interesting people! Anyway, it's more important to note that in this type of context, the particle は is often used instead of が or を to neutrally state whatever has the "-bility" attribute.
 
-<!-- grammar-card: {"rule":"The object of a potential verb takes が","hint":"飲む → ?","example":"日本では公園でお酒が___。","answer":"飲める","explanation":"お酒が飲める says drinking in parks is possible, with が rather than を."} -->
-
-<!-- grammar-card: {"rule":"Godan verbs form the potential by shifting the final う sound to える","hint":"読む → ?","example":"遠くからでも小さい文字が___。","answer":"読める","explanation":"読む becomes 読める: the small letters can be read even from far away."} -->
+<!-- vocab-card: {"id":"vocab-tsukau","priority":"optional","sourceSection":"Potential Form for \"-bility\" Attributes","word":"使う","reading":"つかう","meaning":"to use"} -->
+<!-- grammar-card: {"id":"usability-attribute","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Potential Form for \"-bility\" Attributes","rule":"A potential predicate can describe an object's usability","example":"The bowl is usable as a hat: ボウルは帽子として___。 (使う)","answer":"使える","explanation":"は makes the bowl the topic bearing the usability attribute."} -->
 
 ## Beyond the Basics
 
@@ -200,6 +223,8 @@ Just like with the robots, this example indicates that Kanae has the ability to 
 
 Since this information is based on your experience seeing Kanae being annoying at times, it is more natural to express it in this way.
 
+<!-- grammar-card: {"id":"occurrence-not-ability","kind":"concept","format":"qa","priority":"essential","sourceSection":"When Something Can Happen without Volition","rule":"An occasional occurrence is not the same as a subject's ability to perform an action","example":"Why prefer ロボットも間違えることがある for accidental robot mistakes rather than the potential?","answer":"It says mistakes sometimes occur, without presenting mistake-making as an ability exercised at will.","explanation":"English “can” covers both meanings, but the Japanese potential is not a general marker for every possibility."} -->
+
 ### Asking for Permission
 
 One use of "can" in English is to ask for permission, as in, "Can I go to the bathroom?" Of course, your snobby English grammar teacher might have sneered when you asked this, and responded, "I don't know, **can** you?" Even though traditionally, "May I go to the bathroom?" would be the "correct" way to ask this question, people use "can" all the time in this context.
@@ -230,6 +255,8 @@ So how do you ask permission to take a sip of the dang drink!? Here's a great wa
 
 In general, 〜てもいい is used for this kind of situation instead of the potential form. This is similar to saying, "Is it okay if…?" in English. Yay! Now take that sip — you must be thirsty by now!
 
+<!-- grammar-card: {"id":"permission-request","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Asking for Permission","rule":"てもいい asks whether doing something is permitted","example":"May I take a sip? これ一口飲ん___？","answer":"でもいい","explanation":"飲む takes the voiced connective 飲んで; もいい asks permission, rather than merely asking about ability."} -->
+
 ### Making Requests
 
 The potential form can be used to make requests in Japanese, but just be aware that the nuance might not be exactly the same as "Can you…?" questions for making requests in English. For example, if you want your friend to come over to help with your homework at 5:00, you might say:
@@ -245,6 +272,8 @@ This works fine as a way to make a request, though the nuance is purely asking i
   - Will you come over at 5:00 (for me)?
 
 With くれる attached to the verb 来る (to come), you add the nuance that the action will be done as a favor. Thus, using くれる makes the question seem more like a request, not just to check someone's availability.
+
+<!-- grammar-card: {"id":"availability-versus-favor","kind":"concept","format":"qa","priority":"optional","sourceSection":"Making Requests","rule":"A potential question checks availability; てくれる explicitly frames the action as a favor","example":"How does 五時に来てくれる？ differ from 五時に来れる？ in the lesson's request scenario?","answer":"The first asks the person to come as a favor; the second primarily checks whether they are able or available to come.","explanation":"Both can lead to a request, but the benefactive wording makes the favor explicit."} -->
 
 ### Intransitive Verbs With Potential Nuance
 
@@ -272,7 +301,12 @@ We do have situations where we can use 見られる as the potential form of 見
 
   - Will you be able to take a look at this document by tomorrow?
 
-There are some other intransitive verbs that you'll want to be careful with as well—聞ける and 燃える, for example.
+There are some other intransitive verbs that you'll want to be careful with as well—聞こえる (to be audible) and 燃える (to burn), for example. 聞ける is instead the potential of 聞く.
+
+<!-- vocab-card: {"id":"vocab-mieru","priority":"optional","sourceSection":"Intransitive Verbs With Potential Nuance","word":"見える","reading":"みえる","meaning":"to be visible; to be in sight"} -->
+<!-- vocab-card: {"id":"vocab-kikoeru","priority":"optional","sourceSection":"Intransitive Verbs With Potential Nuance","word":"聞こえる","reading":"きこえる","meaning":"to be audible"} -->
+<!-- vocab-card: {"id":"vocab-moeru","priority":"optional","sourceSection":"Intransitive Verbs With Potential Nuance","word":"燃える","reading":"もえる","meaning":"to burn; to be on fire"} -->
+<!-- grammar-card: {"id":"visibility-versus-opportunity","kind":"concept","format":"qa","priority":"essential","sourceSection":"Intransitive Verbs With Potential Nuance","rule":"見える expresses spontaneous visibility, unlike an opportunity to look expressed by 見られる","example":"Which verb suits a sign naturally being in your line of sight, rather than having time to examine a document?","answer":"見える suits spontaneous visibility; 見られる can describe having an opportunity to look.","explanation":"The document-by-tomorrow example asks about opportunity, not whether the document is physically visible."} -->
 
 ---
 

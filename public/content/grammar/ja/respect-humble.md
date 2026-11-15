@@ -1,6 +1,8 @@
 # Advanced Keigo Patterns (お〜になる、お〜する)
 
-Building on basic 敬語(けいご), this lesson covers the systematic patterns for creating honorific and humble verb forms. These patterns let you apply keigo to almost any verb — not just the special irregular forms.
+<!-- vocab-inventory: {"mode":"explicit"} -->
+
+Building on basic 敬語(けいご), this lesson covers the systematic patterns for creating honorific and humble verb forms. These patterns extend beyond special irregular forms, but they are not mechanical substitutions for every verb. Learn conventional combinations and which person's action or recipient is being honored.
 
 ## The お〜になる Pattern (Honorific)
 
@@ -51,7 +53,8 @@ Since になる is a regular godan verb, it conjugates normally:
 > *Mada o-kime ni natte imasen ka.*
 > Haven't you decided yet?
 
-<!-- grammar-card: {"rule":"お plus the ます-stem plus になる honours someone else's action","hint":"帰る → ?","example":"社長(しゃちょう)はもう___になりました。","answer":"お帰(かえ)り","explanation":"お帰りになりました elevates the president's act of leaving."} -->
+<!-- grammar-card: {"id":"honorific-okaeri","kind":"rule","format":"cloze","priority":"essential","sourceSection":"The お〜になる Pattern (Honorific)","rule":"お plus the ます-stem plus になる honours someone else's action","hint":"帰る, regular honorific stem","example":"社長(しゃちょう)はもう___になりました。","answer":"お帰り","explanation":"お帰りになりました (おかえりになりました) honors the president's leaving. Conjugate the final なる, not the inner stem."} -->
+<!-- grammar-card: {"id":"keigo-direction","kind":"concept","format":"qa","priority":"essential","sourceSection":"The お〜になる Pattern (Honorific)","rule":"Honorific and humble forms honor different participants","example":"Should you normally use お〜になる to elevate your own action?","answer":"No. It elevates a respected person's action; use an appropriate humble form for your own or your in-group's action.","explanation":"Honorific 尊敬語 and humble 謙譲語 are relational choices, not interchangeable degrees of politeness."} -->
 
 ## The お〜する / お〜いたす Pattern (Humble)
 
@@ -88,7 +91,9 @@ This is the standard way to make **humble** (謙譲語) forms. It lowers your ow
 
 <!-- quiz:{"type":"multiple-choice","question":"How do you say 'I will carry (your bags)' in humble form?","options":["お持ちになります","お持ちいたします","持っていらっしゃいます","お持ちくださいます"],"answer":1} -->
 
-<!-- grammar-card: {"rule":"お plus the ます-stem plus する lowers your own action","hint":"持つ → ?","example":"荷物(にもつ)を___します。","answer":"お持(も)ち","explanation":"お持ちします humbly offers to carry the luggage for the listener."} -->
+<!-- grammar-card: {"id":"humble-omochi","kind":"rule","format":"cloze","priority":"essential","sourceSection":"The お〜する / お〜いたす Pattern (Humble)","rule":"お plus the ます-stem plus する lowers your own action","hint":"持つ, regular humble stem","example":"荷物(にもつ)を___します。","answer":"お持ち","explanation":"お持ちします (おもちします) humbly describes carrying the listener's luggage. This pattern normally relates one's action to someone being respected."} -->
+<!-- grammar-card: {"id":"humble-recipient-scope","kind":"concept","format":"qa","priority":"essential","sourceSection":"The お〜する / お〜いたす Pattern (Humble)","rule":"お〜する is not a universal polite replacement for any private action","example":"Can you mechanically add お〜する to every action you perform alone to make it humble?","answer":"No. Conventional お〜する forms normally relate your action to a respected recipient or person affected.","explanation":"お持ちする can honor the person whose luggage is carried. いたす can also provide formal self-presentation, but does not make every prefixed form natural."} -->
+<!-- grammar-card: {"id":"extra-humble-itasu","kind":"rule","format":"cloze","priority":"optional","sourceSection":"The お〜する / お〜いたす Pattern (Humble)","rule":"いたす can replace する for more formal humble self-presentation","example":"I will deliver it, very humbly: お届け___。 (いたす, polite present)","answer":"いたします","explanation":"お届けいたします (おとどけいたします) is suitable for formal service or business contexts; お届けします is less elaborate."} -->
 
 ## The ご〜になる / ご〜する Pattern (Sino-Japanese)
 
@@ -104,7 +109,9 @@ For verbs based on **Sino-Japanese (漢語) nouns** + する, use ご instead of
 | 確認(かくにん)する | ご確認になる | ご確認する |
 | 連絡(れんらく)する | ご連絡になる | ご連絡する |
 | 説明(せつめい)する | ご説明になる | ご説明する |
-| 出席(しゅっせき)する | ご出席になる | ご出席する |
+| 出席(しゅっせき)する | ご出席になる | 出席いたす |
+
+These are conventional patterns, not permission to prefix every する verb indiscriminately. In particular, ご出席する is not the normal humble counterpart of ご出席になる: say 出席いたします for your own attendance. ご確認する and ご利用する also require care about who is respected; polite-looking prefixes alone do not establish humility.
 
 > こちらのサービスをご利用になりますか。
 > *Kochira no sābisu wo go-riyō ni narimasu ka.*
@@ -129,11 +136,14 @@ A few Sino-Japanese words conventionally take お rather than ご:
 | 電話(でんわ) | お電話 | ~~ご電話~~ |
 | 食事(しょくじ) | お食事 | ~~ご食事~~ |
 | 時間(じかん) | お時間 | ~~ご時間~~ |
-| 返事(へんじ) | お返事 | ~~ご返事~~ |
+| 返事(へんじ) | お返事 / ご返事 | Both are used; choice depends on context |
+
+<!-- grammar-card: {"id":"prefix-tendency-exceptions","kind":"concept","format":"qa","priority":"essential","sourceSection":"Exceptions: お with 漢語","rule":"Native お and Sino-Japanese ご are tendencies with conventional exceptions","example":"Must every Sino-Japanese word use ご, including 電話 and 返事?","answer":"No. お電話 is conventional, and both お返事 and ご返事 occur.","explanation":"Learn fixed combinations such as お食事 and お時間 rather than treating word origin as an exceptionless formula."} -->
 
 <!-- quiz:{"type":"multiple-choice","question":"Which is the correct honorific form of ご利用する (to use)?","options":["お利用になる","ご利用になる","ご利用される","利用おなさる"],"answer":1} -->
 
-<!-- grammar-card: {"rule":"Sino-Japanese nouns take ご instead of お","hint":"連絡 (contact)","example":"後(のち)ほど___いたします。","answer":"ご連絡(れんらく)","explanation":"連絡 is a 漢語 word, so it takes ご rather than お in the humble form."} -->
+<!-- grammar-card: {"id":"humble-gorenraku","kind":"rule","format":"cloze","priority":"essential","sourceSection":"The ご〜になる / ご〜する Pattern (Sino-Japanese)","rule":"Many Sino-Japanese action nouns conventionally take ご in keigo patterns","hint":"連絡 (れんらく, contact), conventional humble expression","example":"後(のち)ほど___いたします。","answer":"ご連絡","explanation":"ご連絡いたします is a conventional humble way to say I will contact you. Sino-Japanese origin suggests ご but is not an exceptionless rule.","legacyAliases":[{"rule":"Sino-Japanese nouns take ご instead of お","example":"後(のち)ほど___いたします。"}]} -->
+<!-- grammar-card: {"id":"honorific-goriyou","kind":"rule","format":"cloze","priority":"essential","sourceSection":"The ご〜になる / ご〜する Pattern (Sino-Japanese)","rule":"ご + an appropriate Sino-Japanese action noun + になる can honor the actor","example":"Will you use this service? このサービスを___になりますか。 (利用, honorific)","answer":"ご利用","explanation":"ご利用になりますか (ごりようになりますか) honors the person using the service. It is not a humble description of your own use."} -->
 
 ## Special Keigo Verbs — Review & Expansion
 
@@ -157,6 +167,29 @@ Some verbs have unique honorific and humble forms that don't follow the patterns
 | 会(あ)う | — | お目(め)にかかる |
 | 訪(たず)ねる | — | うかがう |
 
+<!-- vocab-card: {"id":"vocab-irassharu","word":"いらっしゃる","reading":"いらっしゃる","meaning":"to go; to come; to be (respectful)","priority":"essential","sourceSection":"Special Keigo Verbs — Review & Expansion"} -->
+<!-- vocab-card: {"id":"vocab-mairu","word":"参る","reading":"まいる","meaning":"to go; to come (humble or deferential)","priority":"essential","sourceSection":"Special Keigo Verbs — Review & Expansion"} -->
+<!-- vocab-card: {"id":"vocab-oide-ni-naru","word":"おいでになる","reading":"おいでになる","meaning":"to come; to be (respectful; senses here)","priority":"optional","sourceSection":"Special Keigo Verbs — Review & Expansion"} -->
+<!-- vocab-card: {"id":"vocab-oru","word":"おる","reading":"おる","meaning":"to be; to exist (humble/deferential in standard keigo)","priority":"optional","sourceSection":"Special Keigo Verbs — Review & Expansion"} -->
+<!-- vocab-card: {"id":"vocab-meshiagaru","word":"召し上がる","reading":"めしあがる","meaning":"to eat; to drink (respectful)","priority":"essential","sourceSection":"Special Keigo Verbs — Review & Expansion"} -->
+<!-- vocab-card: {"id":"vocab-itadaku","word":"いただく","reading":"いただく","meaning":"to receive; to eat; to drink (humble)","priority":"essential","sourceSection":"Special Keigo Verbs — Review & Expansion"} -->
+<!-- vocab-card: {"id":"vocab-ossharu","word":"おっしゃる","reading":"おっしゃる","meaning":"to say (respectful)","priority":"essential","sourceSection":"Special Keigo Verbs — Review & Expansion"} -->
+<!-- vocab-card: {"id":"vocab-mousu","word":"申す","reading":"もうす","meaning":"to say; to be called (humble/deferential)","priority":"optional","sourceSection":"Special Keigo Verbs — Review & Expansion"} -->
+<!-- vocab-card: {"id":"vocab-moushiageru","word":"申し上げる","reading":"もうしあげる","meaning":"to say to someone respected (humble)","priority":"optional","sourceSection":"Special Keigo Verbs — Review & Expansion"} -->
+<!-- vocab-card: {"id":"vocab-nasaru","word":"なさる","reading":"なさる","meaning":"to do (respectful)","priority":"essential","sourceSection":"Special Keigo Verbs — Review & Expansion"} -->
+<!-- vocab-card: {"id":"vocab-itasu","word":"いたす","reading":"いたす","meaning":"to do (humble/deferential)","priority":"essential","sourceSection":"Special Keigo Verbs — Review & Expansion"} -->
+<!-- vocab-card: {"id":"vocab-goran-ni-naru","word":"ご覧になる","reading":"ごらんになる","meaning":"to see; to look (respectful)","priority":"essential","sourceSection":"Special Keigo Verbs — Review & Expansion"} -->
+<!-- vocab-card: {"id":"vocab-haiken-suru","word":"拝見する","reading":"はいけんする","meaning":"to see; to look at (humble)","priority":"essential","sourceSection":"Special Keigo Verbs — Review & Expansion"} -->
+<!-- vocab-card: {"id":"vocab-gozonji","word":"ご存知だ","reading":"ごぞんじだ","meaning":"to know (respectful)","priority":"optional","sourceSection":"Special Keigo Verbs — Review & Expansion"} -->
+<!-- vocab-card: {"id":"vocab-zonjiteiru","word":"存じている","reading":"ぞんじている","meaning":"to know (humble/deferential)","priority":"optional","sourceSection":"Special Keigo Verbs — Review & Expansion"} -->
+<!-- vocab-card: {"id":"vocab-zonjiageteiru","word":"存じ上げている","reading":"ぞんじあげている","meaning":"to know a respected person (humble)","priority":"optional","sourceSection":"Special Keigo Verbs — Review & Expansion"} -->
+<!-- vocab-card: {"id":"vocab-choudai-suru","word":"頂戴する","reading":"ちょうだいする","meaning":"to receive (humble)","priority":"optional","sourceSection":"Special Keigo Verbs — Review & Expansion"} -->
+<!-- vocab-card: {"id":"vocab-sashiageru","word":"さしあげる","reading":"さしあげる","meaning":"to give to someone respected (humble)","priority":"optional","sourceSection":"Special Keigo Verbs — Review & Expansion"} -->
+<!-- vocab-card: {"id":"vocab-kudasaru","word":"くださる","reading":"くださる","meaning":"to give to me or my in-group (respectful)","priority":"optional","sourceSection":"Special Keigo Verbs — Review & Expansion"} -->
+<!-- vocab-card: {"id":"vocab-ukagau","word":"うかがう","reading":"うかがう","meaning":"to ask; to hear; to visit someone respected (humble)","priority":"optional","sourceSection":"Special Keigo Verbs — Review & Expansion"} -->
+<!-- vocab-card: {"id":"vocab-haichou-suru","word":"拝聴する","reading":"はいちょうする","meaning":"to listen (humble)","priority":"optional","sourceSection":"Special Keigo Verbs — Review & Expansion"} -->
+<!-- vocab-card: {"id":"vocab-ome-ni-kakaru","word":"お目にかかる","reading":"おめにかかる","meaning":"to meet someone respected (humble)","priority":"optional","sourceSection":"Special Keigo Verbs — Review & Expansion"} -->
+
 > 社長(しゃちょう)は何(なん)とおっしゃいましたか。
 > *Shachō wa nan to osshaimashita ka.*
 > What did the president say? (honorific)
@@ -171,6 +204,7 @@ Some verbs have unique honorific and humble forms that don't follow the patterns
 
 > 💡 申す is general humble speech, while 申し上げる specifically implies speaking **to** someone of higher status. Use 申し上げる for greater formality.
 
+<!-- grammar-card: {"id":"mousu-moushiageru-recipient","kind":"concept","format":"qa","priority":"optional","sourceSection":"Special Keigo Verbs — Review & Expansion","rule":"申し上げる specifically honors the person addressed","example":"What distinction is lost by treating 申す and 申し上げる as simply two politeness levels?","answer":"申す is deferential self-presentation; 申し上げる also directs respect toward the person being addressed.","explanation":"Choose with the action's recipient in mind, rather than always selecting the longer form."} -->
 ## Common Keigo Mistakes
 
 ### 1. Using honorifics for your own actions
@@ -185,13 +219,14 @@ Some verbs have unique honorific and humble forms that don't follow the patterns
 
 ### 3. Double honorifics (二重敬語)
 
-Stacking two honorific patterns on one verb is incorrect:
+Avoid mechanically stacking honorific patterns. Some combinations are conventional, but the following are poor default models for learners:
 
 - ❌ お召し上がりになる (お〜になる + 召し上がる)
 - ✅ 召し上がる
 - ❌ おっしゃられる (おっしゃる + れる)
 - ✅ おっしゃる
 
+<!-- grammar-card: {"id":"avoid-double-keigo","kind":"concept","format":"qa","priority":"essential","sourceSection":"3. Double honorifics (二重敬語)","rule":"An already honorific verb does not automatically need an additional honorific pattern","example":"Is おっしゃられる the recommended default honorific for 言う?","answer":"No. Use おっしゃる without automatically adding another honorific れる.","explanation":"Avoid mechanical double honorifics. Conventional exceptions exist, so the warning is not a claim that every historically layered form is unacceptable."} -->
 ### 4. Overusing させていただく
 
 The pattern 〜させていただく (allow me to ~) is often overused:
@@ -199,15 +234,17 @@ The pattern 〜させていただく (allow me to ~) is often overused:
 - ❌ 発表(はっぴょう)させていただきたいと思(おも)わせていただきます。
 - ✅ 発表させていただきます。 or simply 発表いたします。
 
-> 💡 させていただく is correct only when (1) someone actually gives permission, and (2) you benefit from it. Otherwise, いたします is cleaner.
+> 💡 させていただく is best supported when (1) someone's permission, explicit or understood, is relevant, and (2) you benefit from being allowed to act. Without that relationship, いたします is often cleaner.
 
+<!-- grammar-card: {"id":"saseteitadaku-conditions","kind":"concept","format":"qa","priority":"essential","sourceSection":"4. Overusing させていただく","rule":"させていただく is most appropriate when permission and a received benefit are relevant","example":"Before choosing させていただく over いたします, what two contextual conditions should you check?","answer":"Whether permission from someone else is relevant and whether the speaker benefits from being allowed to act.","explanation":"Without that framing, simple いたします is often clearer. Making a sentence longer does not by itself make it more appropriate."} -->
 ### 5. Using お with する-verbs incorrectly
 
-- ❌ おコピーする (katakana/foreign words don't take お)
+- ❌ おコピーする (do not mechanically prefix a loanword verb with お)
 - ✅ コピーいたす
 - ❌ お勉強(べんきょう)になる (certain words sound unnatural)
 - ✅ 勉強なさる
 
+<!-- grammar-card: {"id":"keigo-not-mechanical","kind":"concept","format":"qa","priority":"essential","sourceSection":"5. Using お with する-verbs incorrectly","rule":"Conventional usage limits productive keigo patterns","example":"Can every する compound be made humble by adding お before it?","answer":"No. For example, コピーいたす is natural, while mechanically forming おコピーする is not the standard pattern.","explanation":"Loanword compounds, special keigo verbs, short stems, and recipient relationships require conventional forms rather than automatic prefixing."} -->
 <!-- quiz:{"type":"multiple-choice","question":"Which sentence has a keigo mistake?","options":["先生がおっしゃいました。","お客様が召し上がります。","私がいらっしゃいます。","資料を拝見しました。"],"answer":2} -->
 
 ## Business Japanese Set Phrases
@@ -225,6 +262,14 @@ These fixed expressions are essential for professional settings:
 | Email closing | 何卒(なにとぞ)よろしくお願(ねが)い申し上げます。 | I humbly ask for your kind consideration. |
 | Visiting a company | お世話(せわ)になっております。 | Thank you for your continued support. |
 
+<!-- vocab-card: {"id":"vocab-kashikomarimashita","word":"かしこまりました","reading":"かしこまりました","meaning":"Understood; certainly (deferential acknowledgment)","priority":"optional","sourceSection":"Business Japanese Set Phrases"} -->
+<!-- vocab-card: {"id":"vocab-osoreirimasu","word":"恐れ入りますが","reading":"おそれいりますが","meaning":"I'm sorry to trouble you, but (deferential preface)","priority":"optional","sourceSection":"Business Japanese Set Phrases"} -->
+<!-- vocab-card: {"id":"vocab-moushiwakegozaimasen","word":"大変申し訳ございません","reading":"たいへんもうしわけございません","meaning":"I'm terribly sorry (formal apology)","priority":"optional","sourceSection":"Business Japanese Set Phrases"} -->
+<!-- vocab-card: {"id":"vocab-osewaninatteorimasu","word":"お世話になっております","reading":"おせわになっております","meaning":"Thank you for your continued support (business greeting)","priority":"optional","sourceSection":"Business Japanese Set Phrases"} -->
+<!-- grammar-card: {"id":"business-phone-identity","kind":"concept","format":"qa","priority":"optional","sourceSection":"Business Japanese Set Phrases","rule":"でございます provides formal identification in a business phone greeting","example":"What is the function of 〇〇会社の△△でございます when answering a company phone?","answer":"It formally identifies the speaker as △△ from company 〇〇.","explanation":"The company and personal names are variable slots, so the whole template is not a fixed lexical word."} -->
+<!-- grammar-card: {"id":"business-call-transfer","kind":"concept","format":"qa","priority":"optional","sourceSection":"Business Japanese Set Phrases","rule":"A call-transfer formula combines a respectful wait request with humble connecting","example":"What does 少々お待ちくださいませ。おつなぎいたします accomplish during a phone call?","answer":"It asks the caller to wait briefly and says the speaker will connect the call.","explanation":"お待ちくださいませ addresses the caller; おつなぎいたします describes the staff member's own action."} -->
+<!-- grammar-card: {"id":"business-meeting-thanks","kind":"concept","format":"qa","priority":"optional","sourceSection":"Business Japanese Set Phrases","rule":"お忙しい中 acknowledges the time a busy person has given","example":"What does 本日はお忙しい中、ありがとうございました thank the listener for?","answer":"Their time today despite being busy.","explanation":"It is a conventional closing expression of appreciation rather than a literal comment on the room or location."} -->
+<!-- grammar-card: {"id":"business-email-closing","kind":"concept","format":"qa","priority":"optional","sourceSection":"Business Japanese Set Phrases","rule":"何卒よろしくお願い申し上げます is a formal request for consideration or cooperation","example":"What does 何卒よろしくお願い申し上げます convey at the end of a business message?","answer":"A humble request for the recipient's kind consideration or cooperation.","explanation":"何卒 is read なにとぞ. This is a formal closing formula, not a greeting for a first casual meeting."} -->
 > 恐れ入りますが、もう一度(いちど)おっしゃっていただけますか。
 > *Osore irimasu ga, mō ichido osshatte itadakemasu ka.*
 > I'm sorry to trouble you, but could you say that once more?

@@ -1,5 +1,7 @@
 # Pluperfect (Pretérito Pluscuamperfecto)
 
+<!-- vocab-inventory: {"mode":"explicit"} -->
+
 The pluperfect tense describes the "past before the past" — an action that was already completed before another past event occurred. It corresponds directly to the English "had + past participle" (e.g., *I had eaten*, *she had left*).
 
 ## Formation
@@ -19,6 +21,8 @@ The past participle never changes form here — it is always invariable.
 | vosotros | **habíais** | ah-BEE-ais |
 | ellos/ustedes | **habían** | ah-BEE-ahn |
 
+<!-- grammar-card: {"id":"haber-nosotros","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Haber in the Imperfect","rule":"Nosotros pluperfect uses habíamos plus participle","example":"Nosotros ya ___ comido cuando llamaste.","answer":"habíamos","explanation":"Imperfect haber carries person and number, including the accent on í."} -->
+<!-- grammar-card: {"id":"haber-ellos","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Haber in the Imperfect","rule":"Ellos pluperfect uses habían plus participle","example":"Ellos ya ___ llegado cuando salí.","answer":"habían","explanation":"The auxiliary agrees with ellos; the participle stays llegado."} -->
 ### Regular Past Participles
 
 | Ending | Participle | Example |
@@ -27,6 +31,7 @@ The past participle never changes form here — it is always invariable.
 | -er verbs | -ido | comer → **comido** |
 | -ir verbs | -ido | vivir → **vivido** |
 
+<!-- grammar-card: {"id":"pluperfect-regular-participle","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Regular Past Participles","rule":"Regular -ar participles use -ado after haber","example":"Ella había ___ con él. (hablar)","answer":"hablado","explanation":"The -ar infinitive becomes hablado, without feminine agreement."} -->
 ### Irregular Past Participles
 
 | Infinitive | Participle | Infinitive | Participle |
@@ -37,6 +42,10 @@ The past participle never changes form here — it is always invariable.
 | poner | **puesto** | morir | **muerto** |
 | escribir | **escrito** | cubrir | **cubierto** |
 
+<!-- grammar-card: {"id":"pluperfect-hecho","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Irregular Past Participles","rule":"Hacer has hecho rather than hacido","example":"Ellos habían ___ la tarea. (hacer)","answer":"hecho","explanation":"Use the irregular participle unchanged after habían."} -->
+<!-- grammar-card: {"id":"pluperfect-dicho","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Irregular Past Participles","rule":"Decir has dicho","example":"Yo había ___ la verdad. (decir)","answer":"dicho","explanation":"The participle is dicho, not decido."} -->
+<!-- grammar-card: {"id":"pluperfect-vuelto","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Irregular Past Participles","rule":"Volver has vuelto","example":"Ella había ___ a casa. (volver)","answer":"vuelto","explanation":"The participle remains vuelto, not vuelta, after haber."} -->
+<!-- grammar-card: {"id":"pluperfect-puesto","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Irregular Past Participles","rule":"Poner has puesto","example":"Habíamos ___ la mesa. (poner)","answer":"puesto","explanation":"Poner has an irregular participle."} -->
 <!-- quiz: {"type":"multiple-choice","question":"What is the pluperfect of 'ellos / hacer'?","options":["ellos habían hacido","ellos habían hecho","ellos hubieron hecho","ellos habían hechado"],"answer":1} -->
 
 ## Usage — The Past Before the Past
@@ -56,11 +65,12 @@ Past ←────────────────────────
          pluperfect       preterite
 ```
 
-<!-- grammar-card: {"rule":"Pluperfect = había/habías/había... + invariable past participle","hint":"The past participle never changes — no gender/number agreement with the subject","example":"Cuando llegué, ella ya se ___ ido.","answer":"había","explanation":"The pluperfect of 'irse' is 'se había ido'. We use 'había' (3rd person singular imperfect of haber) because the subject is 'ella'. The participle 'ido' is invariable."} -->
+<!-- grammar-card: {"id":"pluperfect-formation","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Formation","rule":"Pluperfect = había/habías/había... + invariable past participle","example":"Cuando llegué, ella ya se ___ ido.","answer":"había","explanation":"The subject ella takes había; the pronoun se precedes haber and ido stays invariable."} -->
+<!-- grammar-card: {"id":"past-before-past","kind":"concept","format":"qa","priority":"essential","sourceSection":"Usage — The Past Before the Past","rule":"The pluperfect places an action before a past reference point","example":"In Cuando llegué, ella ya se había ido, which happened first: her leaving or my arrival?","answer":"Her leaving happened before my arrival.","explanation":"The pluperfect marks prior completion, while llegué supplies the later past reference point."} -->
 
 ## Trigger Words & Phrases
 
-These expressions often appear alongside the pluperfect:
+These expressions often appear alongside the pluperfect, but do not select it automatically. The temporal relation between events determines the tense:
 
 | Trigger | Meaning |
 |---------|---------|
@@ -75,6 +85,11 @@ These expressions often appear alongside the pluperfect:
 - **Nunca había viajado al extranjero** — I had never traveled abroad
 - **Antes de que llegaras, yo ya había cocinado** — Before you arrived, I had already cooked
 
+<!-- vocab-card: {"id":"vocab-ya","word":"ya","meaning":"already","priority":"essential","sourceSection":"Trigger Words & Phrases"} -->
+<!-- vocab-card: {"id":"vocab-todavia-no","word":"todavía no","meaning":"not yet","priority":"essential","sourceSection":"Trigger Words & Phrases"} -->
+<!-- vocab-card: {"id":"vocab-antes-de-que","word":"antes de que","meaning":"before (introducing a clause)","priority":"optional","sourceSection":"Trigger Words & Phrases"} -->
+<!-- vocab-card: {"id":"vocab-despues-de-que","word":"después de que","meaning":"after (introducing a clause)","priority":"optional","sourceSection":"Trigger Words & Phrases"} -->
+<!-- grammar-card: {"id":"temporal-cues-not-triggers","kind":"concept","format":"qa","priority":"optional","sourceSection":"Trigger Words & Phrases","rule":"Temporal words are context cues, not automatic tense selectors","example":"Does ya on its own force the pluperfect?","answer":"No. The pluperfect needs a past reference point and an earlier event; ya simply reinforces already.","explanation":"The same word occurs with other tenses, such as ya terminé or ya he terminado."} -->
 <!-- quiz: {"type":"multiple-choice","question":"'When she called, I had already left.' Which tense pair is correct?","options":["Cuando llamó, ya salía","Cuando llamaba, ya había salido","Cuando llamó, ya había salido","Cuando llamó, ya he salido"],"answer":2} -->
 
 ## Pluperfect vs. Other Past Tenses
@@ -85,9 +100,9 @@ These expressions often appear alongside the pluperfect:
 | Pretérito imperfecto | Ongoing/habitual past | *Llegaba tarde siempre.* |
 | **Pluscuamperfecto** | Past before another past | *Ya había llegado cuando llamaste.* |
 
-> 💡 **Colloquial note:** In fast informal speech, especially in Latin America, the pluperfect is sometimes replaced by the simple preterite — "Cuando llegué, ella ya se fue." The pluperfect remains the standard for clarity and is always preferred in writing.
+> 💡 **Colloquial note:** Some varieties use a simple preterite when context supplies the sequence, but this is not uniform across Latin America. The pluperfect is the clearest way to make earlier completion explicit; a simple preterite can instead suggest a different event sequence.
 
-<!-- grammar-card: {"rule":"Use the pluperfect for an action that happened before another past action","hint":"Look for 'ya', 'cuando + preterite', or 'antes de que' as signals","example":"___ habías comido antes de que llegara el jefe.","answer":"Ya","explanation":"'Ya habías comido' (you had already eaten) establishes an action that was completed before the boss arrived ('antes de que llegara el jefe'). 'Ya' reinforces the prior completion."} -->
+<!-- grammar-card: {"id":"prior-action-application","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Pluperfect vs. Other Past Tenses","rule":"Use the pluperfect for an action that happened before another past action","example":"Cuando llegó el jefe, tú ya ___ comido. (haber; completed before his arrival)","answer":"habías","explanation":"The eating was already complete at the past arrival; habías comido makes the sequence explicit.","legacyAliases":[{"rule":"Use the pluperfect for an action that happened before another past action","example":"___ habías comido antes de que llegara el jefe."}]} -->
 
 ## Sources
 

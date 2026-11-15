@@ -1,5 +1,7 @@
 # Number–Noun Agreement 3–10 (the reverse agreement / polarity rule)
 
+<!-- vocab-inventory: {"mode":"explicit"} -->
+
 Arabic numbers from three to ten use a famous pattern: the number shows the opposite grammatical gender from the counted noun, while the counted noun appears as a plural genitive.
 
 > Think of 3–10 as a small iḍāfa-like package: number first, plural noun second, and gender polarity on the number.
@@ -15,6 +17,11 @@ The counted noun is the **مَعْدُودٌ** (maʿdūdun) — counted item. Fo
 | **قَلَمٌ** (qalamun) — pen | masculine | **سَبْعَةُ أَقْلَامٍ** (sabʿatu aqlāmin) — seven pens | number has tāʾ marbūṭa |
 | **مَدِينَةٌ** (madīnatun) — city | feminine | **سَبْعُ مُدُنٍ** (sabʿu mudunin) — seven cities | number lacks tāʾ marbūṭa |
 
+<!-- vocab-card: {"id":"vocab-kitab","word":"كِتَابٌ","reading":"kitābun","meaning":"book; masculine","priority":"optional","sourceSection":"Core idea"} -->
+<!-- vocab-card: {"id":"vocab-sayyarah","word":"سَيَّارَةٌ","reading":"sayyāratun","meaning":"car; feminine","priority":"optional","sourceSection":"Core idea"} -->
+<!-- vocab-card: {"id":"vocab-qalam","word":"قَلَمٌ","reading":"qalamun","meaning":"pen; masculine","priority":"optional","sourceSection":"Core idea"} -->
+<!-- vocab-card: {"id":"vocab-madinah","word":"مَدِينَةٌ","reading":"madīnatun","meaning":"city; feminine","priority":"optional","sourceSection":"Core idea"} -->
+<!-- grammar-card: {"id":"masculine-number-choice","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Core idea","rule":"Numbers 3–10 use gender polarity relative to the singular counted noun.","example":"Complete “three books”, nominative: ___ كُتُبٍ.","answer":"ثَلَاثَةُ","explanation":"كِتَابٌ is masculine, so use ثَلَاثَةُ (thalāthatu) with tāʾ marbūṭa, followed by plural genitive."} -->
 <!-- quiz: {"type": "multiple-choice", "question": "For numbers 3–10, which phrase correctly says “three books”?", "options": ["ثَلَاثَةُ كُتُبٍ (thalāthatu kutubin) — three books", "ثَلَاثُ كِتَابٍ (thalāthu kitābin) — three book", "ثَلَاثَةٌ كِتَابٌ (thalāthatun kitābun) — three book", "ثَلَاثُ كُتُبًا (thalāthu kutuban) — three books"], "answer": 0} -->
 
 ## How to choose the form
@@ -31,7 +38,9 @@ Examples:
 - **عَشَرَةُ بُيُوتٍ** (ʿasharatu buyūtin) — ten houses.
 - **عَشْرُ غُرَفٍ** (ʿashru ghurafin) — ten rooms.
 
-<!-- grammar-card: {"rule":"For numbers 3–10, a masculine counted noun takes the feminine-looking number form with tāʾ marbūṭa.","hint":"Masculine noun, number with -atun/-atu.","example":"Complete “five pens”: خَمْسَةُ ___ (khamsatu ___).","answer":"أَقْلَامٍ (aqlāmin)","explanation":"pens, genitive plural — قَلَمٌ (qalamun) — pen is masculine, so the number is خَمْسَةُ (khamsatu), and the counted noun is plural genitive."} -->
+<!-- grammar-card: {"id":"five-pens-genitive","kind":"rule","format":"cloze","priority":"essential","sourceSection":"How to choose the form","rule":"For numbers 3–10, a masculine counted noun takes the feminine-looking number form with tāʾ marbūṭa.","example":"Complete “five pens”: خَمْسَةُ ___.","answer":"أَقْلَامٍ","explanation":"أَقْلَامٍ (aqlāmin) is plural genitive. The number already has the form required by masculine قَلَمٌ.","legacyAliases":[{"rule":"For numbers 3–10, a masculine counted noun takes the feminine-looking number form with tāʾ marbūṭa.","example":"Complete “five pens”: خَمْسَةُ ___ (khamsatu ___)."}]} -->
+<!-- vocab-card: {"id":"vocab-talib","word":"طَالِبٌ","reading":"ṭālibun","meaning":"male student","priority":"optional","sourceSection":"How to choose the form"} -->
+<!-- vocab-card: {"id":"vocab-talibah","word":"طَالِبَةٌ","reading":"ṭālibatun","meaning":"female student","priority":"optional","sourceSection":"How to choose the form"} -->
 
 ## Case on the number
 
@@ -45,7 +54,8 @@ The number itself changes case according to its role in the sentence. The counte
 
 <!-- quiz: {"type": "multiple-choice", "question": "What case is the counted noun after numbers 3–10?", "options": ["Plural genitive", "Singular accusative", "Dual nominative", "Always nominative"], "answer": 0} -->
 
-<!-- grammar-card: {"rule":"The counted noun after 3–10 is normally plural genitive.","hint":"Look for a plural ending with -in.","example":"Complete “seven cities”: سَبْعُ ___ (sabʿu ___).","answer":"مُدُنٍ (mudunin)","explanation":"cities, genitive plural — مَدِينَةٌ (madīnatun) is feminine, so the number is سَبْعُ (sabʿu), and the counted noun is the plural genitive مُدُنٍ (mudunin)."} -->
+<!-- grammar-card: {"id":"seven-cities-genitive","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Case on the number","rule":"The counted noun after 3–10 is normally plural genitive.","example":"Complete “seven cities”: سَبْعُ ___.","answer":"مُدُنٍ","explanation":"مُدُنٍ (mudunin) is plural genitive after the number, regardless of the number's own syntactic case.","legacyAliases":[{"rule":"The counted noun after 3–10 is normally plural genitive.","example":"Complete “seven cities”: سَبْعُ ___ (sabʿu ___)."}]} -->
+<!-- grammar-card: {"id":"number-case-object","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Case on the number","rule":"The number takes the case required by its role; the counted noun stays plural genitive.","example":"Complete “I saw five students”: رَأَيْتُ ___ طُلَّابٍ.","answer":"خَمْسَةَ","explanation":"خَمْسَةَ (khamsata) is accusative as the object, unlike nominative خَمْسَةُ or genitive خَمْسَةِ. طُلَّابٍ stays genitive."} -->
 
 ## Common learner traps
 
@@ -53,7 +63,10 @@ Do not choose gender from the English translation; choose it from the Arabic sin
 
 <!-- quiz: {"type": "multiple-choice", "question": "Which phrase correctly says “four rooms,” using غُرْفَةٌ (ghurfatun) — room?", "options": ["أَرْبَعُ غُرَفٍ (arbaʿu ghurafin) — four rooms", "أَرْبَعَةُ غُرَفٍ (arbaʿatu ghurafin) — four rooms", "أَرْبَعُ غُرْفَةٍ (arbaʿu ghurfatin) — four room", "أَرْبَعَةً غُرَفًا (arbaʿatan ghurafan) — four rooms"], "answer": 0} -->
 
-<!-- grammar-card: {"rule":"For feminine counted nouns from 3–10, use the masculine-looking number form without tāʾ marbūṭa.","hint":"Feminine noun, number without final -a.","example":"Complete “ten rooms”: عَشْرُ ___ (ʿashru ___).","answer":"غُرَفٍ (ghurafin)","explanation":"rooms, genitive plural — غُرْفَةٌ (ghurfatun) — room is feminine, so the number is عَشْرُ (ʿashru), not عَشَرَةُ (ʿasharatu)."} -->
+<!-- grammar-card: {"id":"feminine-number-choice","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Common learner traps","rule":"For feminine counted nouns from 3–10, use the masculine-looking number form without tāʾ marbūṭa.","example":"Complete “ten rooms”, nominative: ___ غُرَفٍ.","answer":"عَشْرُ","explanation":"غُرْفَةٌ is feminine, so use عَشْرُ (ʿashru), not the form with tāʾ marbūṭa.","legacyAliases":[{"rule":"For feminine counted nouns from 3–10, use the masculine-looking number form without tāʾ marbūṭa.","example":"Complete “ten rooms”: عَشْرُ ___ (ʿashru ___)."}]} -->
+<!-- grammar-card: {"id":"singular-gender-diagnostic","kind":"concept","format":"qa","priority":"essential","sourceSection":"Common learner traps","rule":"Choose polarity from the Arabic singular noun, not the plural shape or English meaning.","example":"When counting بُيُوتٍ, should you choose number gender from English “houses” or from بَيْتٌ?","answer":"From Arabic بَيْتٌ, which is masculine; four houses is أَرْبَعَةُ بُيُوتٍ.","explanation":"The rule applies to 3–10. An English noun's lack of grammatical gender does not remove Arabic polarity."} -->
+<!-- vocab-card: {"id":"vocab-bayt","word":"بَيْتٌ","reading":"baytun","meaning":"house; masculine","priority":"optional","sourceSection":"Common learner traps"} -->
+<!-- vocab-card: {"id":"vocab-ghurfah","word":"غُرْفَةٌ","reading":"ghurfatun","meaning":"room; feminine","priority":"optional","sourceSection":"Common learner traps"} -->
 
 ## Sources
 

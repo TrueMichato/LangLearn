@@ -1,5 +1,7 @@
 # ておく — Prepare in Advance
 
+<!-- vocab-inventory: {"mode":"explicit"} -->
+
 > **Source:** Content from [Tofugu](https://www.tofugu.com/japanese-grammar/teoku/). For personal study.
 
 〜ておく To Do Something for Future Convenience
@@ -44,6 +46,9 @@ In a way, it's sort of like checking a task off of your to-do list. There is som
 Although the basic concept remains the same, the nuances of 〜ておく change depending on the context. Often, it means you are preparing for something in advance, but it can also mean that you are taking care of something at hand, or even "leaving something as-is" if focusing on the long-lasting state of something being set-aside.
 
 Are you excited to learn all that? We'll take a look at each nuance more closely in the later sections, so read on!
+
+<!-- vocab-card: {"id":"vocab-oku","word":"置く","reading":"おく","meaning":"to put; to place","priority":"optional","sourceSection":"The Basics"} -->
+<!-- grammar-card: {"id":"put-aside-memory-cue","kind":"concept","format":"qa","priority":"optional","sourceSection":"The Basics","rule":"The placing origin of おく is a memory cue for getting an action out of the way","example":"How does the cue put it out of your mind help explain ておく?","answer":"It pictures taking care of an action and setting it aside for later convenience; it need not involve physically putting an object somewhere.","explanation":"The helping verb is usually written おく in kana. Context also allows tentative action or leaving a state as it is."} -->
 
 ### Conjugating Verbs to Take 〜ておく
 
@@ -92,6 +97,12 @@ The ておく form of a verb can then be conjugated like other godan verbs. Here
     
   
 
+<!-- grammar-card: {"id":"teoku-formation","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Conjugating Verbs to Take 〜ておく","rule":"Add おく after the main verb's て or で form","example":"読む → read in advance, plain nonpast: ___.","answer":"読んでおく","explanation":"読む has the voiced connective 読んで."} -->
+<!-- grammar-card: {"id":"casual-toku","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Conjugating Verbs to Take 〜ておく","rule":"Casual ておく contracts to とく","example":"Shorten 見ておく for casual conversation: ___.","answer":"見とく","explanation":"The contraction is conversational, not a new dictionary verb ending to add after any stem."} -->
+<!-- grammar-card: {"id":"casual-doku","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Conjugating Verbs to Take 〜ておく","rule":"Casual でおく contracts to どく","example":"Shorten 読んでおく for casual conversation: ___.","answer":"読んどく","explanation":"Preserve voicing in the contraction."} -->
+<!-- grammar-card: {"id":"teoku-negative","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Conjugating Verbs to Take 〜ておく","rule":"The auxiliary おく conjugates as godan","example":"しておく → plain negative: して___。","answer":"おかない","explanation":"The table also gives negative past おかなかった and polite negative おきません."} -->
+<!-- grammar-card: {"id":"teoku-volitional","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Conjugating Verbs to Take 〜ておく","rule":"The auxiliary おく has volitional おこう","example":"今のうちに、勉強し___。 (I should get some studying done while I have time.)","answer":"ておこう","explanation":"The volitional presents a decision to take care of it now; polite invitation uses ておきましょう."} -->
+
 ### 〜ておく For Doing Something In Advance
 
 Most commonly, 〜ておく indicates doing something in advance for future convenience. For example, if you know you are going to Japan next year, you may get a head start on studying Japanese to understand the language better once you get over there. To describe this situation, you can use 〜ておく and say:
@@ -128,6 +139,11 @@ In this case, you would use 〜ておく over plainly asking 予約してくれ�
 
 This way 〜ておく sounds less direct, kind of similar to adding "when you get a chance" in English.
 
+<!-- vocab-card: {"id":"vocab-yoyaku-suru","word":"予約する","reading":"よやくする","meaning":"to make a reservation; to book","priority":"optional","sourceSection":"〜ておく For Doing Something In Advance"} -->
+<!-- grammar-card: {"id":"advance-preparation","kind":"rule","format":"cloze","priority":"essential","sourceSection":"〜ておく For Doing Something In Advance","rule":"ておく means doing something in advance","example":"来年日本に行くので、日本語を勉強し___。","answer":"ておく","explanation":"The study is undertaken as preparation for the future trip."} -->
+<!-- grammar-card: {"id":"advance-request-connective","kind":"rule","format":"cloze","priority":"optional","sourceSection":"〜ておく For Doing Something In Advance","rule":"ておく becomes ておいて before くれる","example":"悪いんだけど、予約し___くれないかな？","answer":"ておいて","explanation":"The auxiliary おく takes its て form おいて before the request. Preparation may be done at a convenient time, as long as it is ready when needed."} -->
+<!-- grammar-card: {"id":"future-purpose-need-not-fixed","kind":"concept","format":"qa","priority":"optional","sourceSection":"〜ておく For Doing Something In Advance","rule":"Future convenience need not be tied to a precisely scheduled event","example":"Can 今のうちに勉強しておこう make sense without a definite trip booked?","answer":"Yes. It can mean getting studying done while time is available because later circumstances may change.","explanation":"A specific dated purpose is one possible context, not a grammatical requirement."} -->
+
 ### 〜ておく For Doing Something "For Now"
 
 You can also use 〜ておく to describe doing something as a temporary or tentative solution. Because of the core meaning of 〜ておく (getting something done), you can show that something is being taken care of, at least for the time being.
@@ -155,6 +171,9 @@ And finally, we can use 〜ておく to say:
   - Let's wrap up this topic right around here.
 
 In this example, 〜ておく expresses that we're aware that the section is getting long and we should wrap it up for now, though it may not be the perfect place to end it.
+
+<!-- vocab-card: {"id":"vocab-toriaezu","word":"とりあえず","reading":"とりあえず","meaning":"for now; for the time being","priority":"optional","sourceSection":"〜ておく For Doing Something \"For Now\""} -->
+<!-- grammar-card: {"id":"tentative-action","kind":"concept","format":"qa","priority":"essential","sourceSection":"〜ておく For Doing Something \"For Now\"","rule":"ておく can mark a provisional measure rather than only advance preparation","example":"What does とりあえず、なんか頼んでおく？ suggest while waiting for the rest of the group?","answer":"Shall we order something to get started for now, without treating it as everyone's final order?","explanation":"The action handles the current situation provisionally."} -->
 
 ### 〜ておく For Leaving Something As-Is
 
@@ -190,9 +209,7 @@ Now, what if you left the light on purpose? For example, you may leave the light
 
 Just like this, the nuances of the exact phrase can be different depending on the situation, and sometimes nuances can overlap. In the next section, let's check out some other examples with 〜ておく indicating mixed nuances.
 
-<!-- grammar-card: {"rule":"ておく becomes ておいて before くれる","hint":"ておく + くれる","example":"悪いんだけど、予約し___くれないかな？","answer":"ておいて","explanation":"予約しておいてくれない asks the listener to book ahead as a favour."} -->
-
-<!-- grammar-card: {"rule":"ておく means doing something in advance","hint":"する + おく","example":"来年日本に行くので、日本語を勉強し___。","answer":"ておく","explanation":"勉強しておく prepares for next year's trip ahead of time."} -->
+<!-- grammar-card: {"id":"left-state-not-always-plan","kind":"concept","format":"qa","priority":"essential","sourceSection":"〜ておく For Leaving Something As-Is","rule":"ておく can focus on a state left as it is without implying helpful preparation","example":"Does 電気をつけっぱなしにしておいた always mean the light was left on as a deliberate precaution?","answer":"No. Context may describe carelessly leaving it on, or deliberately leaving it on for security.","explanation":"The same construction can describe an abandoned state or combine that state with future convenience."} -->
 
 ## Beyond the Basics
 
@@ -234,6 +251,10 @@ Lastly, imagine a scenario where you spot some tomato cans in your pantry that y
 
 In this situation, 〜ておく indicates that you probably bought them because you thought you would use them later. So it was an intentional purpose in the past, but you forgot about it and left it there up until now. So, you can say 〜ておく here is a mix of "getting things done in advance" and "leaving something as-is." I wonder what the inside would look like…🤢
 
+<!-- vocab-card: {"id":"vocab-henkyaku-suru","word":"返却する","reading":"へんきゃくする","meaning":"to return something borrowed","priority":"optional","sourceSection":"〜ておく For Mixed Nuances"} -->
+<!-- grammar-card: {"id":"polite-taking-responsibility","kind":"rule","format":"cloze","priority":"optional","sourceSection":"〜ておく For Mixed Nuances","rule":"ておく takes ます for politeness","example":"分かりました。返却し___ね。","answer":"ておきます","explanation":"The staff member takes responsibility for processing the return, not necessarily promising to do it immediately."} -->
+<!-- grammar-card: {"id":"overlapping-readings","kind":"concept","format":"qa","priority":"optional","sourceSection":"〜ておく For Mixed Nuances","rule":"The advance, provisional, and left-state readings can overlap","example":"Must the canned-food example 買っておいた belong to only one of the three readings?","answer":"No. Buying for later use can combine advance preparation with leaving the cans there afterward.","explanation":"Later forgetting them does not erase the original intention."} -->
+
 ### 〜させておく For Letting Someone Continue To Do…
 
 You can use 〜ておく with a verb in the causative form ending in 〜させる, as in 〜させておく.
@@ -257,6 +278,9 @@ You may also hear this expression when you watch movies or TV shows about detect
 (*Literally*: Let's let him swim a little longer.)
 
 泳ぐ means "to swim," so 泳がせておく literally means "let someone continue to swim," but it's used figuratively here to mean intentionally leaving someone at large. It's like the detective is the fisher and the culprit is a small baitfish to attract a large predatory fish.
+
+<!-- grammar-card: {"id":"causative-continue","kind":"concept","format":"qa","priority":"optional","sourceSection":"〜させておく For Letting Someone Continue To Do…","rule":"Causative + ておく can let somebody remain in an ongoing activity","example":"What does このまま寝かせておいてあげよう mean when a friend is already asleep?","answer":"Let's let her keep sleeping as she is.","explanation":"The causative is permissive here; if the action is not underway, the same broader pattern can instead arrange or require a state for later."} -->
+<!-- grammar-card: {"id":"oyogaseru-figurative","kind":"concept","format":"qa","priority":"optional","sourceSection":"〜させておく For Letting Someone Continue To Do…","rule":"泳がせておく can figuratively mean leaving a suspect at large under observation","example":"Why might a detective say アイツはもう少し泳がせておこう rather than arresting the culprit immediately?","answer":"To let him remain at large a little longer and learn more from his activities, not literally to let him swim.","explanation":"This is a contextual figurative use of allowing continued activity."} -->
 
 ### 〜ておく VS 〜てある
 
@@ -283,6 +307,11 @@ Next, say it's already evening. You are just getting ready to go out when your s
   - The dinner is already made, okay?
 
 In this case, you can use either 〜ておく in the past tense or 〜てある in the present tense. When using 〜ておく, your focus is the action of getting dinner ready. It stresses *you* having prepared dinner. On the other hand, 〜てある pays more attention to the fact that dinner *is* ready. It does imply that you prepared it, but that information is now in the background.
+
+<!-- grammar-card: {"id":"action-versus-ready-state","kind":"concept","format":"qa","priority":"essential","sourceSection":"〜ておく VS 〜てある","rule":"ておく foregrounds taking care of an action; てある foregrounds the remaining ready state","example":"How does 夕飯を作っておいた differ in focus from 夕飯を作ってある?","answer":"The first foregrounds having prepared dinner in advance; the second foregrounds dinner now being ready as the result.","explanation":"Both can describe the already-made dinner. A future intention to cook is not itself a present ready state."} -->
+<!-- vocab-card: {"id":"vocab-houchi-suru","word":"放置する","reading":"ほうちする","meaning":"to leave unattended; to neglect","priority":"optional","sourceSection":"〜ておく VS 〜てある"} -->
+<!-- vocab-card: {"id":"vocab-hotte-oku","word":"放っておく","reading":"ほうっておく","meaning":"to leave alone; to leave as it is","priority":"optional","sourceSection":"〜ておく VS 〜てある"} -->
+<!-- grammar-card: {"id":"integrated-leave-alone","kind":"concept","format":"qa","priority":"optional","sourceSection":"〜ておく VS 〜てある","rule":"The integrated expression 放っておく does not keep its meaning if おく is removed","example":"Why can't you shorten 放っておく to 放る and retain leave alone?","answer":"放る means to throw; 放っておく is an integrated leave-alone expression, with 放っておいて commonly meaning leave me alone.","explanation":"By contrast, 放置する can already mean leave unattended without an additional ておく."} -->
 
   
 
@@ -426,8 +455,6 @@ by 徐 梓競
 <!-- quiz: {"type":"multiple-choice","question":"What does \"今のうちに、勉強し**ておこう**。\" mean?","options":["While I have time, I should get some studying done.","I'm going to Japan next year, so I'm going to study Japanese **beforehand**.","Then, I'll make a reservation!","I'm sorry (to ask you this), but can you make a reservation for us?"],"answer":0} -->
 
 <!-- quiz: {"type":"multiple-choice","question":"What does \"じゃあ、私が予約 [する・し**ておく**] よ！\" mean?","options":["Then, I'll make a reservation!","I'm going to Japan next year, so I'm going to study Japanese **beforehand**.","While I have time, I should get some studying done.","I'm sorry (to ask you this), but can you make a reservation for us?"],"answer":0} -->
-
-<!-- grammar-card: {"rule":"ておく takes ます for politeness","hint":"ておく, polite","example":"分かりました。返却し___ね。","answer":"ておきます","explanation":"返却しておきます promises to return it in good time."} -->
 
 ## Sources
 

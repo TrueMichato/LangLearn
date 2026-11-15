@@ -1,5 +1,7 @@
 # られる — Passive
 
+<!-- vocab-inventory: {"mode":"explicit"} -->
+
 > **Source:** Content from [Tofugu](https://www.tofugu.com/japanese-grammar/verb-passive-form-rareru/). For personal study.
 
 Japanese Verb Passive られる Form
@@ -84,15 +86,29 @@ This pattern holds for most godan verbs, but watch out for verbs ending in 〜�
 
 When it comes to grammar, we like to leave no stone unturned. If you'd like to know more about this curious conjugation, check out its historical context.
 
+<!-- vocab-card: {"id":"vocab-yomu","priority":"optional","sourceSection":"Godan Verbs","word":"読む","reading":"よむ","meaning":"to read"} -->
+<!-- vocab-card: {"id":"vocab-kau","priority":"optional","sourceSection":"Godan Verbs","word":"買う","reading":"かう","meaning":"to buy"} -->
+<!-- grammar-card: {"id":"godan-passive","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Godan Verbs","rule":"A godan verb shifts its final kana to the あ row before れる","example":"読む → passive: ___.","answer":"読まれる","explanation":"む changes to ま before れる."} -->
+<!-- grammar-card: {"id":"u-wa-passive","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Godan Verbs","rule":"Godan final う becomes われる, not あれる","example":"買う → passive: ___.","answer":"買われる","explanation":"The stem is 買わ before れる."} -->
+
 #### Ichidan Verbs
 
 For ichidan verbs, it's easy. Just replace the 〜る ending of the verb with 〜られる. For example, 食べ**る** (to eat) becomes 食べ**られる**.
 
 Take note though — the 〜られる ending can also be used for the potential form. Due to this overlap, modern Japanese is developing a distinct potential form ending, 〜れる. Isn't it cool to see how language shifts and adapts to its users' needs over time?
 
+<!-- vocab-card: {"id":"vocab-taberu","priority":"optional","sourceSection":"Ichidan Verbs","word":"食べる","reading":"たべる","meaning":"to eat"} -->
+<!-- grammar-card: {"id":"ichidan-passive","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Ichidan Verbs","rule":"Ichidan passive replaces final る with られる","example":"食べる → passive: ___.","answer":"食べられる","explanation":"Unlike a spoken shortened potential, the standard passive retains ら."} -->
+<!-- grammar-card: {"id":"passive-potential-ambiguity","kind":"concept","format":"qa","priority":"essential","sourceSection":"Ichidan Verbs","rule":"Ichidan passive and standard potential need context to distinguish them","example":"Can you decide between “can eat” and “be eaten” from 食べられる alone?","answer":"No. The same form can express either; the participants and context determine the reading.","explanation":"Do not treat every られる as unambiguously passive."} -->
+
 #### Irregular Verbs
 
 As for our two typical irregular verbs, the passive form of  来る(く　) (to come) is  来られる(こ　　　), and する (to do) is される.
+
+<!-- vocab-card: {"id":"vocab-kuru","priority":"optional","sourceSection":"Irregular Verbs","word":"来る","reading":"くる","meaning":"to come"} -->
+<!-- vocab-card: {"id":"vocab-suru","priority":"optional","sourceSection":"Irregular Verbs","word":"する","reading":"する","meaning":"to do"} -->
+<!-- grammar-card: {"id":"kuru-passive","kind":"rule","format":"qa","priority":"essential","sourceSection":"Irregular Verbs","rule":"Passive 来られる uses the reading こ","example":"Give the passive of 来る, including its kana reading.","answer":"来られる (こられる).","explanation":"The passive uses こ, not the dictionary reading く."} -->
+<!-- grammar-card: {"id":"suru-passive","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Irregular Verbs","rule":"する has the irregular passive される","example":"する → passive: ___.","answer":"される","explanation":"This differs from potential できる."} -->
 
 ### Conjugating られる
 
@@ -127,6 +143,9 @@ Now you’ve learned how to conjugate a verb into the られる form, but there�
   
 
 Simple, right? But you might be wondering why we picked 刺される as an example verb. Well, it’s because we’re going to use it to talk about forming a passive sentence next!
+
+<!-- vocab-card: {"id":"vocab-sasu","priority":"optional","sourceSection":"Conjugating られる","word":"刺す","reading":"さす","meaning":"to sting; to stab"} -->
+<!-- grammar-card: {"id":"passive-further-conjugation","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Conjugating られる","rule":"A passive form conjugates as ichidan even if its base verb is godan","example":"刺される → plain past negative: ___.","answer":"刺されなかった","explanation":"Drop final る and use なかった, rather than treating the derived form as godan."} -->
 
 ### Forming a Passive Sentence
 
@@ -163,6 +182,9 @@ It's also common to omit the doer from a passive sentence, and this is actually 
   - I was suddenly punched (by that man).
 
 We can omit (by that man) from the sentence above in both Japanese *and* English. Maybe we don't care *who* punched you, and we just want to focus on how it affected you. Or, maybe you *just* got punched, so the big bully puncher is still standing right there and there's no need to say it! 💥
+
+<!-- vocab-card: {"id":"vocab-hachi","priority":"optional","sourceSection":"Forming a Passive Sentence","word":"蜂","reading":"はち","meaning":"bee; wasp"} -->
+<!-- grammar-card: {"id":"passive-participants","kind":"concept","format":"qa","priority":"essential","sourceSection":"Forming a Passive Sentence","rule":"The passive foregrounds the affected participant; に commonly marks the doer","example":"In 私は蜂に刺された, who experiences the sting and who causes it?","answer":"私 is the affected experiencer; 蜂 is the doer marked by に.","explanation":"Either participant can be omitted when understood; omission does not change the passive relationship."} -->
 
 ## Beyond the Basics
 
@@ -214,6 +236,10 @@ However, it seems to be acceptable with some weather related verbs:
 
   - All of a sudden, I was rained on.
 
+<!-- vocab-card: {"id":"vocab-suu","priority":"optional","sourceSection":"Direct vs. Indirect Passive","word":"吸う","reading":"すう","meaning":"to inhale; to smoke"} -->
+<!-- grammar-card: {"id":"indirect-passive","kind":"concept","format":"qa","priority":"essential","sourceSection":"Direct vs. Indirect Passive","rule":"An indirect passive can mark someone affected without making them the action's direct object","example":"In 私はタバコを吸われた, is 私 the thing that is smoked?","answer":"No. The cigarette is smoked; 私 is affected by someone else's smoking.","explanation":"This commonly conveys nuisance, but the feeling is not necessarily negative in every context."} -->
+<!-- grammar-card: {"id":"indirect-passive-boundary","kind":"concept","format":"qa","priority":"optional","sourceSection":"Direct vs. Indirect Passive","rule":"Indirect passives are constrained; weather expressions are a recognized exception to the usual intentional-doer pattern","example":"Does the acceptability of 雨に降られた mean any inanimate event can freely become an indirect passive?","answer":"No. Weather expressions are conventional exceptions; a book falling on one's head does not freely follow the same pattern.","explanation":"Avoid extending the adversative pattern mechanically to every unwanted event."} -->
+
 ### Marking the Doer with に, から or によって
 
 The particle に usually marks the doer of the action, but it can sometimes be replaced with から or によって.
@@ -225,12 +251,16 @@ If both the doer and the experiencer are people, and the action is done directly
 
   - I was laughed at by Picasso.
 
+<!-- grammar-card: {"id":"human-agent-kara","kind":"concept","format":"qa","priority":"optional","sourceSection":"Marking the Doer with に, から or によって","rule":"から can mark a human doer in suitable direct passives between people","example":"Why are both ピカソに笑われた and ピカソから笑われた acceptable in the example?","answer":"Both doer and experiencer are people in a direct passive, so から can mark the source of the action as an alternative to に.","explanation":"This does not make から interchangeable with に in all passive sentences."} -->
+
 However, if the doer is not a person, only に can mark the doer. So, if your friend was hit by a car, you can only use に:
 
   - ⭕ 友達が車**に**はねられた。
  ❌ 友達が車**から**はねられた。
 
   - My friend was hit by a car.
+
+<!-- grammar-card: {"id":"nonhuman-agent-ni","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Marking the Doer with に, から or によって","rule":"に marks the agent in a passive sentence","hint":"choose に or から","example":"友達が車___はねられた。","answer":"に","explanation":"The nonhuman doer 車 takes に in this example, not から."} -->
 
 And if you were stung by a wasp, the same rule applies:
 
@@ -251,12 +281,17 @@ And if you were stung by a wasp, the same rule applies:
 
   - I had my phone stolen by a thief.
 
+<!-- grammar-card: {"id":"indirect-agent-ni","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Marking the Doer with に, から or によって","rule":"Use に rather than から for the doer in this indirect passive","example":"I had my phone stolen: 泥棒___携帯をとられた。 (に or から)","answer":"に","explanation":"The phone is taken; the speaker is indirectly affected. から is not a universal passive-agent marker."} -->
+
 If you are talking about something that is made from something, you should use から rather than に:
 
   - ⭕️ このお酒は芋**から**作られている。
 ❌ このお酒は芋**に**作られている。
 
   - This alcohol is made from potatoes.
+
+<!-- vocab-card: {"id":"vocab-imo","priority":"optional","sourceSection":"Marking the Doer with に, から or によって","word":"芋","reading":"いも","meaning":"potato; sweet potato; tuber"} -->
+<!-- grammar-card: {"id":"material-kara","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Marking the Doer with に, から or によって","rule":"から can mark the raw material rather than a passive doer","hint":"mark the source material","example":"このお酒は芋___作られている。","answer":"から","explanation":"芋 is the source ingredient, not the agent doing the making. This example does not establish a universal から-versus-で rule.","legacyAliases":[{"rule":"から marks a raw material that is transformed beyond recognition","example":"このお酒は芋___作られている。"}]} -->
 
 Finally, what about によって? You can use this in formal settings (especially writing):
 
@@ -265,6 +300,8 @@ Finally, what about によって? You can use this in formal settings (especiall
  🔺 この落書きはピカソ**に**描かれた。
 
   - This doodle was drawn by Picasso.
+
+<!-- grammar-card: {"id":"formal-creator","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Marking the Doer with に, から or によって","rule":"によって marks the creator in a formal passive","hint":"use the formal agent expression","example":"この落書きはピカソ___描かれた。","answer":"によって","explanation":"によって identifies the creator in a formal, especially written, passive."} -->
 
 ---
 
@@ -301,12 +338,6 @@ by Wasabi – Learn Japanese Online
 <!-- quiz: {"type":"multiple-choice","question":"What does \"私は蜂に刺された。\" mean?","options":["I was stung by a bee.","X　is 〜ed　by Y.","I was suddenly punched (by that man).","I was kissed by Picasso."],"answer":0} -->
 
 <!-- quiz: {"type":"multiple-choice","question":"What does \"いきなり(あの男に)殴られた。\" mean?","options":["I was suddenly punched (by that man).","X　is 〜ed　by Y.","I was stung by a bee.","I was kissed by Picasso."],"answer":0} -->
-
-<!-- grammar-card: {"rule":"によって marks the creator in a formal passive","hint":"に / によって","example":"この落書きはピカソ___描かれた。","answer":"によって","explanation":"によって is used when the agent produced something, and sounds more formal than plain に."} -->
-
-<!-- grammar-card: {"rule":"から marks a raw material that is transformed beyond recognition","hint":"から / で","example":"このお酒は芋___作られている。","answer":"から","explanation":"芋から says the potato is changed completely into sake, so から is used rather than で."} -->
-
-<!-- grammar-card: {"rule":"に marks the agent in a passive sentence","hint":"に / から","example":"友達が車___はねられた。","answer":"に","explanation":"車に marks the car as the thing that did the hitting."} -->
 
 ## Sources
 

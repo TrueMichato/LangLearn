@@ -1,5 +1,7 @@
 # いる vs ある — Existence Verbs
 
+<!-- vocab-inventory: {"mode":"explicit"} -->
+
 > **Source:** Content from [Tofugu](https://www.tofugu.com/japanese-grammar/iru-aru/). For personal study.
 
 いる and ある: Japanese Verbs "To Exist" or "There Is"
@@ -22,6 +24,10 @@ However, いる and ある are not interchangeable. So what are the differences 
 
 Since movement is typically associated with living things, いる is generally used for animate objects, while ある is used for inanimate objects.
 
+<!-- vocab-card: {"id":"vocab-iru","word":"いる","reading":"いる","meaning":"to be; to exist (normally people and animals)","priority":"essential","sourceSection":"The Basics"} -->
+<!-- vocab-card: {"id":"vocab-aru","word":"ある","reading":"ある","meaning":"to be; to exist (normally inanimate or abstract things)","priority":"essential","sourceSection":"The Basics"} -->
+<!-- grammar-card: {"id":"existence-animate-scope","kind":"concept","format":"qa","priority":"essential","sourceSection":"The Basics","rule":"Modern existence normally uses いる for people and animals and ある for plants and things","example":"Is biological life alone enough to choose いる for everything alive?","answer":"No. Plants normally take ある; people and animals normally take いる, even while motionless.","explanation":"The lesson's movement image concerns expected mobility and how the entity is viewed, not whether it is moving this second. Machines and literary conceptual people have qualified exceptions."} -->
+
 ### Sentence Structure
 
 Like all Japanese verbs, いる and ある are generally found at the end of a sentence or clause.
@@ -33,6 +39,8 @@ Like all Japanese verbs, いる and ある are generally found at the end of a s
   - 山が**ある**。
 
   - There is a mountain.
+
+<!-- grammar-card: {"id":"existence-location-ni","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Sentence Structure","rule":"に marks where an entity exists, while が marks the entity","example":"川の中___魚がいる。","answer":"に","explanation":"川の中 is the location; 魚 is what exists there. Existence verbs usually end the clause."} -->
 
 ### Conjugations
 
@@ -83,7 +91,14 @@ The verb いる is an ichidan verb and the verb ある is a godan verb, so they 
     
   
 
-It's worth mentioning that neither いる nor ある can be put into the ている form, so you'll hardly ever see いている or あっている. Some dialects, such as Kansai-ben, do use いて(い)る to describe a person's temporary stay in one place, though.
+In these existence meanings, standard Japanese normally uses simple いる and ある rather than adding ている. Some dialects, such as Kansai-ben, do use いて(い)る to describe a person's temporary stay in one place, though.
+
+<!-- grammar-card: {"id":"existence-verb-classes","kind":"concept","format":"qa","priority":"optional","sourceSection":"Conjugations","rule":"Existential いる is ichidan while ある is godan","example":"Do いる and ある belong to the same conjugation class?","answer":"No. いる is ichidan; ある is godan.","explanation":"Compare polite います and あります, and plain past いた and あった. Do not classify ある as ichidan just because it ends in る."} -->
+<!-- grammar-card: {"id":"aru-irregular-negative","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Conjugations","rule":"The plain negative of existential ある is ない","example":"予定が___。 (There are no plans; plain negative.)","answer":"ない","explanation":"ある has the exceptional negative ない, not an ordinary godan あらない form."} -->
+<!-- grammar-card: {"id":"iru-past","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Conjugations","rule":"Ichidan いる has plain past いた","example":"昨日は犬が___。 (There was a dog; plain past.)","answer":"いた","explanation":"Drop る and form the past いた; the matching godan past of ある is あった."} -->
+<!-- grammar-card: {"id":"aru-past-negative","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Conjugations","rule":"The negative ない forms its past as なかった","example":"昨日は予定が___。 (There were no plans; plain past negative.)","answer":"なかった","explanation":"The exceptional negative ない follows the adjective-like past pattern. The corresponding いる form is いなかった."} -->
+<!-- grammar-card: {"id":"iru-polite-negative","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Conjugations","rule":"The polite negative of いる is いません","hint":"いる, polite negative","example":"この仕事への応募者はまだ___。","answer":"いません","explanation":"いません is the normal polite negative when applicants are viewed as people. Formal conceptual ありません is also illustrated in the lesson, so the choice is not an absolute ban."} -->
+<!-- grammar-card: {"id":"existence-dialect-progressive","kind":"concept","format":"qa","priority":"optional","sourceSection":"Conjugations","rule":"Existence normally uses simple forms in standard Japanese, with dialectal いてる exceptions","example":"Does Kansai いてる for a temporary stay mean standard existence normally requires a ている ending?","answer":"No. Standard existence normally uses simple いる or ある; いてる is a dialectal use here.","explanation":"Keep the dialect qualification. This concerns these existence verbs, not every verb or homophone spelled いる or ある."} -->
 
 ### いる for Animate Objects
 
@@ -108,6 +123,8 @@ This is because they are living creatures and movement is always regarded as pos
 いる is also used when talking about someone who's in a coma or in a vegetative state. Immediate movement may not be anticipated, but it's still possible. When there is even a slight possibility of movement, even if it's not likely, いる is still your verb of choice.
 
 What about plants? Sure, you can watch them grow and change in a time-lapse video. Branches grow, new buds appear, and flowers open. However, they have no true mobility. That is, they can't freely move in a specified direction or change their position to any significant degree. Hence they're inanimate objects, and they take the verb ある. This will be explored in the next section.
+
+<!-- grammar-card: {"id":"iru-people-exist","kind":"rule","format":"cloze","priority":"essential","sourceSection":"いる for Animate Objects","rule":"People and animals normally take いる even when not currently moving","hint":"いる / ある","example":"オフィスに弁護士と依頼人が___。","answer":"いる","explanation":"Lawyers and clients are people, so ordinary modern location uses いる even while they sit still. Biological life alone is not the rule, since plants take ある.","legacyAliases":[{"rule":"いる is used for the existence of living things","example":"オフィスに弁護士と依頼人が___。"}]} -->
 
 ### ある for Inanimate Physical Objects
 
@@ -134,6 +151,8 @@ Similarly, if you caught one of those fish you saw swimming in the river earlier
   - テーブルの上に照り焼きにした魚が**ある**。
 
   - There's teriyaki fish on the table.
+
+<!-- grammar-card: {"id":"aru-plants-food","kind":"rule","format":"cloze","priority":"optional","sourceSection":"ある for Inanimate Physical Objects","rule":"Plants and objects without expected independent mobility normally take ある","example":"庭にはたくさんの花と木が___。","answer":"ある","explanation":"Living plants still normally use ある. A fish painting or cooked fish likewise takes ある because the object being located is not a mobile living fish."} -->
 
 ### ある for Abstract Objects
 
@@ -164,7 +183,11 @@ So if your friend wanted to tell you that they've been to the town festival in t
   - I've been to that festival before.
 (*Literally*: I have the experience of going to that festival before.)
 
-<!-- grammar-card: {"rule":"いる is used for the existence of living things","hint":"いる / ある","example":"オフィスに弁護士と依頼人が___。","answer":"いる","explanation":"Lawyers and clients are people, so their existence takes いる."} -->
+<!-- grammar-card: {"id":"aru-abstract-plans","kind":"rule","format":"cloze","priority":"essential","sourceSection":"ある for Abstract Objects","rule":"Plans, events, and other abstract entities take ある","example":"その日はもう予定が___。","answer":"ある","explanation":"予定 is an abstract plan, so its existence uses ある. Events such as a festival and abstractions such as laws follow the same ordinary pattern."} -->
+<!-- grammar-card: {"id":"aru-experience","kind":"concept","format":"qa","priority":"optional","sourceSection":"ある for Abstract Objects","rule":"Past verb plus ことがある expresses having the experience of that action","example":"What does そのお祭り、行ったことがあるよ assert?","answer":"The speaker has been to that festival before.","explanation":"こと is an abstract experience here, so ある is used; the sentence does not simply locate the speaker at the festival now."} -->
+<!-- vocab-card: {"id":"vocab-yotei","word":"予定","reading":"よてい","meaning":"plan; schedule","priority":"optional","sourceSection":"ある for Abstract Objects"} -->
+<!-- vocab-card: {"id":"vocab-keiken","word":"経験","reading":"けいけん","meaning":"experience","priority":"optional","sourceSection":"ある for Abstract Objects"} -->
+<!-- vocab-card: {"id":"vocab-youji","word":"用事","reading":"ようじ","meaning":"errand; business to attend to","priority":"optional","sourceSection":"ある for Abstract Objects"} -->
 
 ## Beyond the Basics
 
@@ -244,6 +267,10 @@ The distinction between いる and ある is a rule that is also applied at the 
 
 When you use ある, you’re simply talking about them as something that exists. On the other hand, when using いる, you’re probably conjuring up an anthropomorphic image of them acting in your body and causing something bad (so imagining them in motion). This is due to the fact that they are frequently personified in order to explain what they are and how they work.
 
+<!-- grammar-card: {"id":"iru-mobile-machine","kind":"concept","format":"qa","priority":"optional","sourceSection":"いる for Inanimate but Mobile Objects","rule":"A vehicle can take いる when viewed as operational and expected to move","example":"Why can a bus waiting with its driver take いる while stored buses with engines off take ある?","answer":"The waiting bus is viewed as mobile and about to move; the stored buses are simply objects that exist there.","explanation":"A moving Roomba and an elevator's current moving-position reading can work similarly. The choice reflects focus, not a requirement that every machine have a will."} -->
+<!-- grammar-card: {"id":"aru-fixed-machine","kind":"concept","format":"qa","priority":"optional","sourceSection":"いる for Inanimate but Mobile Objects","rule":"Moving parts alone do not normally make a fixed machine take いる","example":"Why does a fixed ketchup-filling machine normally take ある even while operating?","answer":"Its parts move, but the whole machine is not moving from place to place.","explanation":"The mobility image concerns the whole entity. A machine that travels around the warehouse could instead be viewed with いる."} -->
+<!-- grammar-card: {"id":"iru-perception-exceptions","kind":"concept","format":"qa","priority":"optional","sourceSection":"いる for Inanimate but Mobile Objects","rule":"Motion-focused or personified views can extend いる beyond ordinary animate entities","example":"Why can the lesson use either ある or いる for planets or cells?","answer":"ある presents their existence; いる foregrounds observed motion or an active, personified view.","explanation":"These are context-dependent extensions, not new dictionary categories that require all planets or all cells to take いる."} -->
+<!-- grammar-card: {"id":"aru-elevator-exists","kind":"rule","format":"cloze","priority":"optional","sourceSection":"いる for Inanimate but Mobile Objects","rule":"ある is used for the existence of inanimate things","hint":"State that this building has an elevator, not where a moving car currently is","example":"このビルにはエレベーターが___。","answer":"ある","explanation":"The sentence announces the building's facility. An elevator viewed as currently moving or about to move can take いる in a different context, so lack of will is not an absolute test."} -->
 ### ある for Animate but Conceptual Objects
 
 In old-fashioned and literary Japanese, ある can be used to describe an animate object if it's being viewed more as concept than a physical entity.
@@ -320,6 +347,9 @@ I know this section is getting long but let me throw in another interesting exam
 
 In this example, you're talking about yourself, an animate object. However, the nuance is slightly different depending on whether you use いる or ある. By using いる, the focus is on your presence at the moment. You are where you are now thanks to so many different people. On the other hand, ある suggests that you are talking about yourself conceptually, so the focus here is on who you have become as a person, rather than your physical presence.
 
+<!-- grammar-card: {"id":"aru-conceptual-family","kind":"concept","format":"qa","priority":"optional","sourceSection":"ある for Animate but Conceptual Objects","rule":"Literary or old-fashioned ある can present close relationships as attributes","example":"Why can literary キョーコには子供がある use ある without making 子供 an inanimate object?","answer":"It presents having a child as a conceptual attribute of Kyoko rather than locating an individual child.","explanation":"Modern Japanese normally uses いる. The old-fashioned ある reading is restricted; it is not the ordinary choice for a loosely attached housekeeper or children physically at school."} -->
+<!-- grammar-card: {"id":"aru-uchi-versus-ie","kind":"concept","format":"qa","priority":"optional","sourceSection":"ある for Animate but Conceptual Objects","rule":"うち can refer to an in-group, permitting a conceptual guest reading unlike physical 家","example":"Why can changing うち to 家 make お客さんがある sound strange?","answer":"家 focuses on a physical house and the guests' physical presence; うち can frame hosting guests as a family attribute.","explanation":"Use いる for ordinary people located in a house. The conceptual ある option is literary/old-fashioned, not a neutral location alternative."} -->
+<!-- grammar-card: {"id":"aru-conceptual-self","kind":"concept","format":"qa","priority":"optional","sourceSection":"ある for Animate but Conceptual Objects","rule":"ある can present a person's identity conceptually rather than their physical presence","example":"In 今の私がある, what does ある emphasize in the gratitude example?","answer":"Who the speaker has become as a person.","explanation":"今の私がいる instead foregrounds the speaker's present existence or presence. Nonspecific applicants can likewise take formal ある when treated as a category, though いる is the ordinary choice."} -->
 ### ある for Animate Objects in Classical Japanese
 
 In classical Japanese, ある was used for everything, regardless of whether it moved or not. So, a long time ago, you didn't have to choose between いる and ある, because it was all ある. I know, everything was so much easier a thousand years ago!
@@ -343,6 +373,8 @@ Sometimes, using ある to introduce something adds more than just a classical f
   - Yanomami means "human". They are born in the forest, they eat from the forest, they are eaten by the forest, and they existed within the forest.
 
 In this example, ある is used to show the existence of the Yanomami people. It does add a classical touch to the narrator's words, but it goes beyond that. Here ある indicates that we aren't just talking about the tribe's physical presence in the forest, as いる would suggest, but rather their existence throughout time. The Yanomami people have been in the forest for over 10,000 years. They are an integral part of the forest.
+
+<!-- grammar-card: {"id":"aru-literary-people","kind":"concept","format":"qa","priority":"optional","sourceSection":"ある for Animate Objects in Classical Japanese","rule":"Traditional narrative may use ある for a person's existence with an archaic or conceptual effect","example":"Should the woman in a traditional tale's 女があった be treated as an ordinary modern inanimate noun?","answer":"No. This is a classical or literary existence usage; neutral modern Japanese normally uses いた for the woman.","explanation":"Narrative ある can add an archaic feel or foreground existence over time. Do not generalize this stylistic choice to ordinary modern location sentences."} -->
 
 ### ある for Unspecified Nouns
 
@@ -371,6 +403,9 @@ Similarly, if you worked on a project and it didn't go the way you wanted, but i
   - In a way, it was a success.
 
 In this example, ある indicates that it wasn't a total success but it was still a success in a certain sense.
+
+<!-- grammar-card: {"id":"aru-unspecified-noun","kind":"concept","format":"qa","priority":"optional","sourceSection":"ある for Unspecified Nouns","rule":"Prenominal ある can mean a certain or one, with either animate or inanimate nouns","example":"Does ある人 mean that the person must be inanimate?","answer":"No. Before a noun, ある can mean a certain, so ある人 means a certain person.","explanation":"This use leaves the referent unspecified. It also appears in ある日, ある程度, and ある意味, rather than asserting an exact day, degree, or sense."} -->
+<!-- vocab-card: {"id":"vocab-teido","word":"程度","reading":"ていど","meaning":"degree; extent","priority":"optional","sourceSection":"ある for Unspecified Nouns"} -->
 
 ---
 
@@ -423,10 +458,6 @@ by Sung-Yeo Chung and Naohiko Kurokawa
 <!-- quiz: {"type":"multiple-choice","question":"What does \"山が**ある**。\" mean?","options":["There is a mountain.","There is a dog.","There are fish in the river.","There is a lawyer and a client in the office."],"answer":0} -->
 
 <!-- quiz: {"type":"multiple-choice","question":"What does \"川の中に魚が**いる**。\" mean?","options":["There are fish in the river.","There is a dog.","There is a mountain.","There is a lawyer and a client in the office."],"answer":0} -->
-
-<!-- grammar-card: {"rule":"The polite negative of いる is いません","hint":"いる, polite negative","example":"この仕事への応募者はまだ___。","answer":"いません","explanation":"Applicants are people, so their absence is reported with いません rather than ありません."} -->
-
-<!-- grammar-card: {"rule":"ある is used for the existence of inanimate things","hint":"いる / ある","example":"このビルにはエレベーターが___。","answer":"ある","explanation":"An elevator cannot move under its own will, so its existence takes ある."} -->
 
 ## Sources
 

@@ -1,5 +1,7 @@
 # や (ya) — Non-exhaustive Listing
 
+<!-- vocab-inventory: {"mode":"explicit"} -->
+
 > **Source:** Content from [Tofugu](https://www.tofugu.com/japanese-grammar/particle-ya/). For personal study.
 
 Particle や For Listing Multiple Items
@@ -13,6 +15,9 @@ Particle
 や is used to list multiple items (usually two or three) as examples. It implies that there are more items on the list that you haven't mentioned.
 
 ## The Basics
+
+<!-- grammar-card: {"id":"list-completeness-contrast","kind":"concept","format":"qa","priority":"essential","sourceSection":"The Basics","rule":"や presents examples whereas と presents the stated list as exhaustive","example":"How does using や rather than と change a list of tomatoes, bananas, and strawberries?","answer":"や implies other items are left unmentioned; と presents those as the complete stated list.","explanation":"Exhaustivity concerns the list under discussion, not a universal claim that the speaker owns or likes nothing else."} -->
+<!-- grammar-card: {"id":"listing-register","kind":"concept","format":"qa","priority":"essential","sourceSection":"The Basics","rule":"や is relatively writing-oriented; とか is a common conversational counterpart","example":"What conversational alternative to や does the lesson use for an informal examples-list to a friend?","answer":"とか.","explanation":"This is a register tendency, not a ban on spoken や or a claim that とか must replace it in every conversation."} -->
 
 The particle や joins two or more nouns and presents them as examples. In other words, it implies that the nouns are just a few things from a longer list, and there are more that you haven't mentioned.
 
@@ -41,6 +46,11 @@ Make sense? If you'd like to read more on the particle と, check out its dedica
 ### Patterns of Use
 
 #### Noun + や + Noun
+
+<!-- grammar-card: {"id":"example-list-application","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Noun + や + Noun","rule":"や lists examples, implying there are more","hint":"Name pens and books as examples among other desk items.","example":"デスクには、ペン___本がある。","answer":"や","explanation":"や leaves the list open. The next noun can take the case particle for the whole list; repeating や permits more listed examples."} -->
+<!-- grammar-card: {"id":"noun-phrases-versus-tari","kind":"concept","format":"qa","priority":"essential","sourceSection":"Noun + や + Noun","rule":"や joins nouns or nominalized phrases, not bare verb or adjective predicates","example":"Why can 本を読むことや音楽を聴くこと use や while the Sunday activity example uses 読んだり聴いたり?","answer":"こと makes the activities noun phrases for や; たり lists actions or conditions as predicates in a flow.","explanation":"Use the appropriate conjugated たり forms rather than inserting や between bare verbs. The noun-phrase version treats the activities more independently."} -->
+<!-- vocab-card: {"id":"vocab-pen","word":"ペン","reading":"ぺん","meaning":"pen","priority":"optional","sourceSection":"Noun + や + Noun"} -->
+<!-- vocab-card: {"id":"vocab-hon","word":"本","reading":"ほん","meaning":"book","priority":"optional","sourceSection":"Noun + や + Noun"} -->
 
 や gets used to list two or more nouns, such as ペン (pen) and 本 (book). So if you want to describe what's on a desk, you can say:
 
@@ -76,11 +86,13 @@ If you list verbs or adjectives without turning them into noun phrases, you'll n
 
 When using たり, actions or conditions are listed as though they occurred as part of a flow. However, when they're listed as noun phrases with や, each action or condition becomes more independent. As a result, it's more common to use たり when simply expressing what you did or how someone behaves, like in the above examples.
 
-<!-- grammar-card: {"rule":"や lists examples, implying there are more","hint":"と / や","example":"デスクには、ペン___本がある。","answer":"や","explanation":"や names pens and books among other things, unlike と which would close the list."} -->
-
 ## Beyond the Basics
 
 ### Quantity + や + Quantity
+
+<!-- grammar-card: {"id":"small-quantity-language-application","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Quantity + や + Quantity","rule":"や can give approximate small quantities and downplay their size in context","hint":"One or two, using the general counter rather than the book counter.","example":"今の時代、外国語の___は勉強しておいた方がいい。","answer":"一つや二つ","explanation":"The phrase gives a small approximate number of languages. Here it suggests that learning a language or two is a reasonable expectation, not a literal universal minimum.","legacyAliases":[{"rule":"や between two numbers downplays the quantity","example":"今の時代、外国語の___は勉強しておいた方がいい。"}]} -->
+<!-- grammar-card: {"id":"small-quantity-book-application","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Quantity + や + Quantity","rule":"An approximate pair of counts can dismiss an amount as small","hint":"One or two books, with the appropriate counter.","example":"本の___なら一日で読めちゃう。","answer":"一冊や二冊","explanation":"一冊 is read いっさつ and 二冊 is にさつ. The speaker treats that approximate number as easy to read in a day; や is not limited to these two exact counts.","legacyAliases":[{"rule":"や between two counts dismisses the amount as trivial","example":"本の___なら一日で読めちゃう。"}]} -->
+<!-- vocab-card: {"id":"vocab-gaikokugo","word":"外国語","reading":"がいこくご","meaning":"foreign language","priority":"optional","sourceSection":"Quantity + や + Quantity"} -->
 
 In English we might say "one or two" to express an approximate amount of something, and we can do the same thing in Japanese with the help of や. You can use や to list examples of (small) quantities, often accompanied by counters, in order to indicate an approximate amount.
 
@@ -160,10 +172,6 @@ pp. 646-647
 <!-- quiz: {"type":"multiple-choice","question":"What does \"トマト**とか**バナナ**とか**ストロベリーだよ。\" mean?","options":["I've got tomatoes, bananas, strawberries, and so on.","I've got tomatoes, bananas, and strawberries.","There are things like pens and books on the desk.","There are things like pens, books, and scissors on the desk."],"answer":0} -->
 
 <!-- quiz: {"type":"multiple-choice","question":"What does \"トマト**と**バナナ**と**ストロベリーだよ。\" mean?","options":["I've got tomatoes, bananas, and strawberries.","I've got tomatoes, bananas, strawberries, and so on.","I've got tomatoes **or** bananas **or** strawberries.","There are things like pens and books on the desk."],"answer":0} -->
-
-<!-- grammar-card: {"rule":"や between two numbers downplays the quantity","hint":"一つ + や + 二つ","example":"今の時代、外国語の___は勉強しておいた方がいい。","answer":"一つや二つ","explanation":"一つや二つ presents one or two languages as the bare minimum."} -->
-
-<!-- grammar-card: {"rule":"や between two counts dismisses the amount as trivial","hint":"一冊 + や + 二冊","example":"本の___なら一日で読めちゃう。","answer":"一冊や二冊","explanation":"一冊や二冊 treats one or two books as nothing much."} -->
 
 ## Sources
 

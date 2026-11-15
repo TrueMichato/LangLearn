@@ -1,5 +1,7 @@
 # て-Form — Connecting / Requesting
 
+<!-- vocab-inventory: {"mode":"explicit"} -->
+
 > **Source:** Content from [Tofugu](https://www.tofugu.com/japanese-grammar/te-form/). For personal study.
 
 Te Form: Connecting words and clauses in Japanese
@@ -19,6 +21,8 @@ The て form links actions, events, and states. The relationship between linked 
 ## The Basics
 
 You can think of the て form like a hook. It attaches to the word at the tail of a clause (or just a word) and links it up with the word or clause that comes next. The て form can be used for many purposes, but the most basic use is to connect simultaneous or sequential actions, events, or states together. For example, to say “I woke up and went to a bathroom,” you can hook the two actions together with て, as in 起きてトイレに行った。
+
+<!-- grammar-card: {"id":"hook-memory-cue","kind":"concept","format":"qa","priority":"optional","sourceSection":"The Basics","rule":"The hook image represents connecting a clause to what follows","example":"What does the lesson's “hook” image help you remember about て?","answer":"It hooks the end of one word or clause onto the next, linking actions or states.","explanation":"The image is about connection, not a guarantee that every connection means chronological “then”."} -->
 
 ### て Form Conjugations
 
@@ -149,6 +153,25 @@ As usual,  来(く)る (to come) and する (to do) conjugate irregularly. In th
 > 
 > 
 
+<!-- vocab-card: {"id":"vocab-au","priority":"optional","sourceSection":"For Verbs","word":"会う","reading":"あう","meaning":"to meet"} -->
+<!-- vocab-card: {"id":"vocab-shinu","priority":"optional","sourceSection":"For Verbs","word":"死ぬ","reading":"しぬ","meaning":"to die"} -->
+<!-- vocab-card: {"id":"vocab-hanasu","priority":"optional","sourceSection":"For Verbs","word":"話す","reading":"はなす","meaning":"to speak"} -->
+<!-- vocab-card: {"id":"vocab-kaku","priority":"optional","sourceSection":"For Verbs","word":"書く","reading":"かく","meaning":"to write"} -->
+<!-- vocab-card: {"id":"vocab-oyogu","priority":"optional","sourceSection":"For Verbs","word":"泳ぐ","reading":"およぐ","meaning":"to swim"} -->
+<!-- vocab-card: {"id":"vocab-miru","priority":"optional","sourceSection":"For Verbs","word":"見る","reading":"みる","meaning":"to see; to watch"} -->
+<!-- vocab-card: {"id":"vocab-iku","priority":"optional","sourceSection":"For Verbs","word":"行く","reading":"いく","meaning":"to go"} -->
+<!-- vocab-card: {"id":"vocab-kuru","priority":"optional","sourceSection":"For Verbs","word":"来る","reading":"くる","meaning":"to come"} -->
+<!-- vocab-card: {"id":"vocab-suru","priority":"optional","sourceSection":"For Verbs","word":"する","reading":"する","meaning":"to do"} -->
+<!-- grammar-card: {"id":"godan-utsuru","kind":"rule","format":"cloze","priority":"essential","sourceSection":"For Verbs","rule":"Godan う, つ, and る endings become って","example":"会う → て-form: ___.","answer":"会って","explanation":"Replace final う with って; the same pattern covers 立つ and 割る."} -->
+<!-- grammar-card: {"id":"godan-nubumu","kind":"rule","format":"cloze","priority":"essential","sourceSection":"For Verbs","rule":"Godan ぬ, ぶ, and む endings become んで","example":"死ぬ → て-form: ___.","answer":"死んで","explanation":"The nasal group takes voiced で, as do 遊ぶ and 休む."} -->
+<!-- grammar-card: {"id":"godan-su","kind":"rule","format":"cloze","priority":"essential","sourceSection":"For Verbs","rule":"Godan final す becomes して","example":"話す → て-form: ___.","answer":"話して","explanation":"Replace す with して."} -->
+<!-- grammar-card: {"id":"godan-ku","kind":"rule","format":"cloze","priority":"essential","sourceSection":"For Verbs","rule":"Regular godan く becomes いて","example":"書く → て-form: ___.","answer":"書いて","explanation":"書く follows the regular く pattern; 行く does not."} -->
+<!-- grammar-card: {"id":"godan-gu","kind":"rule","format":"cloze","priority":"essential","sourceSection":"For Verbs","rule":"Godan ぐ becomes voiced いで","example":"泳ぐ → て-form: ___.","answer":"泳いで","explanation":"Keep the distinction between く → いて and ぐ → いで."} -->
+<!-- grammar-card: {"id":"ichidan-te","kind":"rule","format":"cloze","priority":"essential","sourceSection":"For Verbs","rule":"Ichidan verbs replace final る with て","example":"見る → て-form: ___.","answer":"見て","explanation":"There is no godan sound change."} -->
+<!-- grammar-card: {"id":"iku-exception","kind":"rule","format":"cloze","priority":"essential","sourceSection":"For Verbs","rule":"行く exceptionally takes って rather than いて","example":"行く → て-form: ___.","answer":"行って","explanation":"行く remains a godan verb, but this conjugation must be learned as an exception."} -->
+<!-- grammar-card: {"id":"kuru-te","kind":"rule","format":"qa","priority":"essential","sourceSection":"For Verbs","rule":"来る has the irregular connective 来て, read きて","example":"Give the て-form of 来る, including its kana reading.","answer":"来て (きて).","explanation":"The reading is き, not dictionary-form く."} -->
+<!-- grammar-card: {"id":"suru-te","kind":"rule","format":"cloze","priority":"essential","sourceSection":"For Verbs","rule":"する has the irregular connective して","example":"する → て-form: ___.","answer":"して","explanation":"Memorize して separately from the godan and ichidan patterns."} -->
+
 #### For い-Adjectives
 
 Like verbs, い-adjectives can be conjugated into the て form, which is actually much simpler than verbs. All you need to do is remove the 〜い ending from the い-adjective and replace it with 〜く, to create the く Form. This allows the い-adjective to stick to another word or element, in this case, て.
@@ -161,6 +184,10 @@ Like verbs, い-adjectives can be conjugated into the て form, which is actuall
 
 This works for all い-adjectives, without exception🎉 Bear in mind that the stem form of いい is よ, so its て form is **よくて**.
 
+<!-- vocab-card: {"id":"vocab-amai","priority":"optional","sourceSection":"For い-Adjectives","word":"甘い","reading":"あまい","meaning":"sweet"} -->
+<!-- grammar-card: {"id":"i-adjective-link","kind":"rule","format":"cloze","priority":"essential","sourceSection":"For い-Adjectives","rule":"い-adjectives replace final い with くて to link descriptions","example":"あの店は広＿＿静かだ。","answer":"くて","explanation":"Replace final い with くて to link adjective descriptions.","legacyAliases":[{"rule":"くて form (い-adjectives)","example":"あの店は広＿＿静かだ。"}]} -->
+<!-- grammar-card: {"id":"ii-exception","kind":"rule","format":"cloze","priority":"essential","sourceSection":"For い-Adjectives","rule":"いい uses the よ stem before くて","example":"いい → connective: ___.","answer":"よくて","explanation":"The special stem produces よくて, not いくて."} -->
+
 #### For な-Adjectives and Nouns (Changing だ to で)
 
 な-adjectives and nouns don’t conjugate themselves. Instead, you simply add で, which is the て form of だ.
@@ -172,6 +199,10 @@ This works for all い-adjectives, without exception🎉 Bear in mind that the s
 > 頭痛**だ**　+　で　=　頭痛**で**
 > 
 > 
+
+<!-- vocab-card: {"id":"vocab-shizuka","priority":"optional","sourceSection":"For な-Adjectives and Nouns (Changing だ to で)","word":"静か","reading":"しずか","meaning":"quiet"} -->
+<!-- vocab-card: {"id":"vocab-zutsuu","priority":"optional","sourceSection":"For な-Adjectives and Nouns (Changing だ to で)","word":"頭痛","reading":"ずつう","meaning":"headache"} -->
+<!-- grammar-card: {"id":"na-adjective-link","kind":"rule","format":"cloze","priority":"essential","sourceSection":"For な-Adjectives and Nouns (Changing だ to で)","rule":"な-adjectives link with で rather than くて","example":"静かだ → connective: 静か___.","answer":"で","explanation":"The adjective does not inflect; the copula changes to で."} -->
 
 ### Fundamental Uses of the て Form
 
@@ -189,6 +220,10 @@ Depending on the context though, the relationship between the actions or events 
 
   - I go to the station **by** running.
 (*Literally*: I run **and** go to the station.)
+
+<!-- vocab-card: {"id":"vocab-hashiru","priority":"optional","sourceSection":"て Form For “And”","word":"走る","reading":"はしる","meaning":"to run"} -->
+<!-- grammar-card: {"id":"sequence-link","kind":"rule","format":"cloze","priority":"essential","sourceSection":"て Form For “And”","rule":"A verb's て-form can link it to a following action","example":"走っ＿＿シャワーをする。","answer":"て","explanation":"Here て links running and showering as successive actions.","legacyAliases":[{"rule":"て form (verbs)","example":"走っ＿＿シャワーをする。"}]} -->
+<!-- grammar-card: {"id":"sequence-versus-means","kind":"concept","format":"qa","priority":"optional","sourceSection":"て Form For “And”","rule":"The meaning of the connection comes from context","example":"Does 走って駅に行く mean that running ends before the trip to the station begins?","answer":"Not necessarily. Running can be the means of going to the station, so the actions overlap.","explanation":"て can connect sequential actions, simultaneous actions, or a means and its main action."} -->
 
 With this example, the relationship between these can also be interpreted as a main action (go to the station) and a sub-action, which is the means or the manner in which the main action was completed (by running).
 
@@ -237,6 +272,9 @@ You can also link verbs, な-adjectives or nouns to create this causal relations
 
 For this causal relationship usage of the て form, the consequence is usually something you don't have control over, such as can’t sleep or being dizzy.
 
+<!-- grammar-card: {"id":"noun-cause","kind":"rule","format":"cloze","priority":"essential","sourceSection":"て Form For \"So\"","rule":"Nouns link with で, which can introduce a cause","example":"頭痛＿＿眠れなかった。","answer":"で","explanation":"The noun links with で and supplies the cause of the inability to sleep.","legacyAliases":[{"rule":"で form (な-adjectives/nouns)","example":"頭痛＿＿眠れなかった。"}]} -->
+<!-- grammar-card: {"id":"causal-boundary","kind":"concept","format":"qa","priority":"optional","sourceSection":"て Form For \"So\"","rule":"Causal て commonly introduces an uncontrolled consequence","example":"Why is a headache followed by inability to sleep a natural causal use of で?","answer":"The consequence is an uncontrolled situation, not a deliberate command or decision.","explanation":"The context supplies a causal reading; て does not always mean “so”."} -->
+
 Again, this relationship is decided depending on the context. For example, the next example can be interpreted as either sequential relationship, simultaneous relationship, the means and the main action relationship, or a casual "so" relationship.
 
   - 睡眠薬を飲**んで**眠った。
@@ -266,6 +304,9 @@ In fact, when the て form finishes a sentence all by itself, it is interpreted 
 
   - Wake up.
 
+<!-- grammar-card: {"id":"polite-request","kind":"rule","format":"cloze","priority":"essential","sourceSection":"て Form With Other Sentence Endings","rule":"A verb's て-form can precede ください in a request","example":"Please wake up: 起き___ください。","answer":"て","explanation":"起きる becomes 起きて before ください."} -->
+<!-- grammar-card: {"id":"bare-te-register","kind":"concept","format":"qa","priority":"optional","sourceSection":"て Form With Other Sentence Endings","rule":"A sentence-final bare て-form can be a casual request","example":"How does 起きて differ in register from 起きてください？","answer":"The bare form is more casual; ください adds politeness, though the relationship still matters.","explanation":"A bare connective at sentence end can function as a request rather than an unfinished sequence."} -->
+
 There are other elements that can follow the て form, such as aspect markers that indicate time-related or direction-related characteristics, such as いる, ある, おく, くる, and いく. We'll cover those on separate, dedicated pages.
 
 ### て Form And Subjects in Linked Clauses
@@ -290,6 +331,8 @@ When the two clauses have different subjects, you'll most often see particle が
   - This bacon is crispy  **and** this bread is fluffy.
 
 If you are curious about the difference in nuance between は and が, check out our article about it!
+
+<!-- grammar-card: {"id":"linked-subjects","kind":"concept","format":"qa","priority":"optional","sourceSection":"て Form And Subjects in Linked Clauses","rule":"て-linked clauses often share a subject but need not do so","example":"Must the bacon and bread in このベーコンはカリカリで、このパンはフワフワだ have the same subject?","answer":"No. The first clause describes the bacon and the second describes the bread.","explanation":"Shared subjects are common, not mandatory; explicit subjects can distinguish the clauses."} -->
 
 ---
 
@@ -362,12 +405,6 @@ by Yasuko Watanabe
 <!-- quiz: {"type":"multiple-choice","question":"What does \"走っ**て**駅に行く。\" mean?","options":["I go to the station **by** running.","I run **and** shower .","That restaurant is spacious **and** quiet.","That restaurant is quiet **and** spacious."],"answer":0} -->
 
 <!-- quiz: {"type":"multiple-choice","question":"What does \"あの店は広**くて**静かだ。\" mean?","options":["That restaurant is spacious **and** quiet.","I run **and** shower .","I go to the station **by** running.","That restaurant is quiet **and** spacious."],"answer":0} -->
-
-<!-- grammar-card: {"rule":"て form (verbs)","hint":"Connect sequential or simultaneous actions","example":"走っ＿＿シャワーをする。","answer":"て","explanation":"The て form links actions together, like 'and' or 'then' in English. Conjugation depends on verb type (godan, ichidan, irregular)."} -->
-
-<!-- grammar-card: {"rule":"くて form (い-adjectives)","hint":"Connect adjective descriptions with て","example":"あの店は広＿＿静かだ。","answer":"くて","explanation":"For い-adjectives, replace い with くて to link descriptions. E.g. 甘い → 甘くて (sweet and…)."} -->
-
-<!-- grammar-card: {"rule":"で form (な-adjectives/nouns)","hint":"Connect な-adjectives and nouns with で","example":"頭痛＿＿眠れなかった。","answer":"で","explanation":"For な-adjectives and nouns, add で (the て form of だ) to link clauses. Can express 'and' or causal 'so'."} -->
 
 ## Sources
 

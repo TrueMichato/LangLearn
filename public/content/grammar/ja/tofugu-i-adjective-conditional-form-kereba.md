@@ -1,5 +1,7 @@
 # い → ければ Conditional
 
+<!-- vocab-inventory: {"mode":"explicit"} -->
+
 > **Source:** Content from [Tofugu](https://www.tofugu.com/japanese-grammar/i-adjective-conditional-form-kereba/). For personal study.
 
 Japanese い-Adjective Conditional Form ければ
@@ -34,6 +36,11 @@ To attach 〜ければ to an い-adjective, simply drop the final 〜い from th
 
 All い-adjectives conjugate this way. Just don't forget that the stem form of いい (good) is よ, so its conditional form is **よければ**.
 
+<!-- vocab-card: {"id":"vocab-kawaii","priority":"optional","sourceSection":"Forming 〜ければ","word":"かわいい","reading":"かわいい","meaning":"cute"} -->
+<!-- vocab-card: {"id":"vocab-ii","priority":"essential","sourceSection":"Forming 〜ければ","word":"いい","reading":"いい","meaning":"good"} -->
+<!-- grammar-card: {"id":"negative-conditional","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Forming 〜ければ","rule":"A negative adjective changes the final い of ない to ければ","example":"かわいくない → if not cute: かわいく___.","answer":"なければ","explanation":"かわいくなければ preserves the negative component; かわいければ means if cute."} -->
+<!-- grammar-card: {"id":"ii-conditional","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Forming 〜ければ","rule":"いい uses よ in its conditional form","example":"いい → if good: ___.","answer":"よければ","explanation":"Use よければ, not いければ."} -->
+
 ## Patterns of Use
 
 When 〜ければ is used in a sentence, you can separate the sentence into two distinct parts: the condition and the result. Usually, the conditional part of the sentence (marked with 〜ければ) comes before the result.
@@ -48,7 +55,9 @@ In spoken Japanese, the conditional part sometimes follows the result. This give
 
   - I think it will sell well… if it’s delicious, that is.
 
-<!-- grammar-card: {"rule":"An い-adjective forms its conditional by replacing い with ければ","hint":"おいしい → ?","example":"おいし___、売れるでしょう。","answer":"ければ","explanation":"おいしい becomes おいしければ: if it tastes good, it will sell."} -->
+<!-- vocab-card: {"id":"vocab-oishii","priority":"optional","sourceSection":"Patterns of Use","word":"おいしい","reading":"おいしい","meaning":"delicious"} -->
+<!-- grammar-card: {"id":"positive-conditional","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Patterns of Use","rule":"An い-adjective forms its conditional by replacing い with ければ","hint":"おいしい → ?","example":"おいし___、売れるでしょう。","answer":"ければ","explanation":"おいしければ gives the condition for the predicted result."} -->
+<!-- grammar-card: {"id":"condition-afterthought","kind":"concept","format":"qa","priority":"optional","sourceSection":"Patterns of Use","rule":"A spoken condition can follow its result as an afterthought","example":"What conversational effect does 売れると思うよ…おいしければ create?","answer":"The speaker first gives the prediction, then adds if it is delicious as an afterthought.","explanation":"The usual order is condition before result, but spoken Japanese can reverse it."} -->
 
 ## Uses
 
@@ -61,6 +70,8 @@ In this use, we are talking about general facts, or things that are believed to 
   - 終わりよ**ければ**全てよし。
 
   - All's well that ends well.
+
+<!-- grammar-card: {"id":"proverb-memory-cue","kind":"concept","format":"qa","priority":"optional","sourceSection":"〜ければ for General Truths","rule":"A proverb supplies a memorable example of the よ stem and ければ","example":"Recall the proverb meaning All's well that ends well, and identify its adjective conditional.","answer":"終わりよければ全てよし。 The conditional is よければ, from よい／いい.","explanation":"おわりよければすべてよし literally says if the ending is good, everything is good; it cues the exceptional よ stem."} -->
 
 ### 〜ければ for Habits
 
@@ -88,6 +99,9 @@ In more old-fashioned—and written—Japanese, it's common to add ものだ to 
 
 This use of ものだ emphasizes the fact that we are recalling the "old days."
 
+<!-- grammar-card: {"id":"past-habit-tense","kind":"concept","format":"qa","priority":"essential","sourceSection":"〜ければ for Habits","rule":"The result clause can place a repeated conditional situation in the past","example":"In 天気がよければよく外を走りました, which part marks the habit as past?","answer":"走りました in the result clause; よければ itself does not change to a past ending.","explanation":"Unlike a timeless general truth, a past habit can be located in the past by its result."} -->
+<!-- grammar-card: {"id":"habit-monoda","kind":"concept","format":"qa","priority":"optional","sourceSection":"〜ければ for Habits","rule":"Past verb plus ものだ can recall a former habit","example":"What nuance does 走ったものだ add when remembering past runs?","answer":"It recalls something the speaker used to do, often with a nostalgic looking-back tone.","explanation":"This is a past-habit use, not a requirement for every ければ sentence."} -->
+
 ## Beyond the Basics
 
 ### 〜ければ for Future Uncertainty
@@ -101,6 +115,10 @@ So far, we've seen how 〜ければ can be used to talk about things that are de
   - **もし**天気が悪ければ、遠足は中止になる**かもしれない**。
 
   - If the weather's bad, the excursion will probably be cancelled.
+
+<!-- vocab-card: {"id":"vocab-warui","priority":"optional","sourceSection":"〜ければ for Future Uncertainty","word":"悪い","reading":"わるい","meaning":"bad"} -->
+<!-- vocab-card: {"id":"vocab-moshi","priority":"optional","sourceSection":"〜ければ for Future Uncertainty","word":"もし","reading":"もし","meaning":"if; supposing"} -->
+<!-- grammar-card: {"id":"uncertain-result","kind":"concept","format":"qa","priority":"optional","sourceSection":"〜ければ for Future Uncertainty","rule":"A conditional does not guarantee its condition or result","example":"What does かもしれない contribute to 遠足は中止になるかもしれない?","answer":"It makes cancellation a possibility rather than a certainty.","explanation":"もし can highlight the hypothetical condition; neither element makes the condition an established fact."} -->
 
 ### 〜ければ for Intentions and Future Wishes
 
@@ -116,7 +134,8 @@ This also works with 〜ましょう, the Japanese equivalent of "let's".
 
   - If it's good quality, let's buy it.
 
-<!-- grammar-card: {"rule":"つもりです states what the speaker intends to do","hint":"intention","example":"質が良ければ、買う___です。","answer":"つもり","explanation":"買うつもりです says the speaker intends to buy, provided the condition is met."} -->
+<!-- grammar-card: {"id":"conditional-intention","kind":"rule","format":"cloze","priority":"optional","sourceSection":"〜ければ for Intentions and Future Wishes","rule":"つもりです states what the speaker intends to do","hint":"intention","example":"質が良ければ、買う___です。","answer":"つもり","explanation":"買うつもりです expresses an intention contingent on the quality being good."} -->
+<!-- grammar-card: {"id":"conditional-invitation","kind":"rule","format":"cloze","priority":"optional","sourceSection":"〜ければ for Intentions and Future Wishes","rule":"An adjective condition can precede a polite invitation","example":"If the quality is good, let's buy it: 質が良ければ、買い___。","answer":"ましょう","explanation":"The adjective condition can be followed by the speaker's proposed action."} -->
 
 ## Common Mistakes
 
@@ -130,6 +149,10 @@ The noun form of some verbs look like い-adjectives. For example, 違**う** (t
   - If it’s different/incorrect, please tell me.
 
 This mistake is not limited to Japanese learners. You will sometimes see younger native Japanese speakers using 違い like an い-adjective quite, both intentionally and unintentionally.
+
+<!-- vocab-card: {"id":"vocab-chigau","priority":"essential","sourceSection":"い-Adjective Look-Alikes","word":"違う","reading":"ちがう","meaning":"to differ; to be incorrect"} -->
+<!-- vocab-card: {"id":"vocab-chigai","priority":"optional","sourceSection":"い-Adjective Look-Alikes","word":"違い","reading":"ちがい","meaning":"difference"} -->
+<!-- grammar-card: {"id":"verb-lookalike","kind":"rule","format":"cloze","priority":"essential","sourceSection":"い-Adjective Look-Alikes","rule":"違う is a verb, so its conditional is 違えば","hint":"違う → ?","example":"違___、言ってください。","answer":"えば","explanation":"Standard 違う is a godan verb: 違えば (ちがえば), not 違ければ. The noun 違い is not an い-adjective."} -->
 
 ---
 
@@ -178,8 +201,6 @@ pp. 512-523
 <!-- quiz: {"type":"multiple-choice","question":"What does \"売れると思うよ…おいし**ければ**。\" mean?","options":["I think it will sell well… if it’s delicious, that is.","If it's delicious, it will sell well.","All's well that ends well.","I go for a run outside every day, if the weather's nice."],"answer":0} -->
 
 <!-- quiz: {"type":"multiple-choice","question":"What does \"終わりよ**ければ**全てよし。\" mean?","options":["All's well that ends well.","If it's delicious, it will sell well.","I think it will sell well… if it’s delicious, that is.","I go for a run outside every day, if the weather's nice."],"answer":0} -->
-
-<!-- grammar-card: {"rule":"違う is a verb, so its conditional is 違えば","hint":"違う → ?","example":"違___、言ってください。","answer":"えば","explanation":"違う looks adjective-like but conjugates as a verb, giving 違えば rather than 違ければ."} -->
 
 ## Sources
 

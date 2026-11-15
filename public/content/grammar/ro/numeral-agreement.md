@@ -1,5 +1,7 @@
 # Numerals & Agreement (unu/una, doi/două)
 
+<!-- vocab-inventory: {"mode":"explicit"} -->
+
 Romanian numerals are not always fixed forms. **One** and **two** agree with gender, compounds such as **douăzeci și două** can agree too, and numbers from **20 upward** normally use **de** before the counted noun.
 
 ## One: un, o, unu, una
@@ -18,6 +20,10 @@ Before a singular noun, use **un** with masculine or neuter nouns and **o** with
 
 <!-- quiz: {"type":"multiple-choice","question":"Which phrase means one girl?","options":["o fată","un fată","unu fată","una fată"],"answer":0} -->
 
+<!-- grammar-card: {"id":"one-position","priority":"essential","sourceSection":"One: un, o, unu, una","kind":"concept","format":"qa","rule":"One has short prenominal and full standalone forms","example":"How do the forms of one before a noun differ from the standalone forms taught here?","answer":"Before a noun use un or o; standing alone use unu or una, with unul in unul dintre băieți.","explanation":"Before a noun use un or o; standing alone use unu or una, with unul in unul dintre băieți."} -->
+<!-- grammar-card: {"id":"one-feminine","priority":"optional","sourceSection":"One: un, o, unu, una","kind":"rule","format":"cloze","rule":"A feminine singular noun takes o for one before it","example":"Am ___ soră. (one sister)","answer":"o","explanation":"Use o soră, not una soră."} -->
+<!-- grammar-card: {"id":"one-partitive","priority":"optional","sourceSection":"One: un, o, unu, una","kind":"rule","format":"cloze","rule":"Masculine one of uses unul dintre","example":"___ dintre studenți lipsește.","answer":"Unul","explanation":"Unul dintre studenți means one of the students."} -->
+
 ## Two: doi and două
 
 Use **doi** with masculine plural nouns. Use **două** with feminine plural nouns and neuter plural nouns.
@@ -32,7 +38,8 @@ Use **doi** with masculine plural nouns. Use **două** with feminine plural noun
 - **Cumpăr două mașini.** (koom-PUHR DOH-uh mah-SHEENʲ) — I buy two cars.
 - **Avem două scaune libere.** — We have two free chairs.
 
-<!-- grammar-card: {"rule":"Use doi with masculine plurals and două with feminine or neuter plurals","hint":"doi băieți, două fete, două scaune","example":"Am ___ mașini.","answer":"două","explanation":"Mașini is feminine plural, so the numeral is două."} -->
+<!-- grammar-card: {"id":"two-cars","priority":"essential","sourceSection":"Two: doi and două","kind":"rule","format":"cloze","rule":"Use doi with masculine plurals and două with feminine or neuter plurals","example":"Am ___ mașini. (two)","answer":"două","explanation":"Mașini is feminine plural, so use două.","legacyAliases":[{"rule":"Use doi with masculine plurals and două with feminine or neuter plurals","example":"Am ___ mașini."}]} -->
+<!-- grammar-card: {"id":"two-neuter","priority":"optional","sourceSection":"Two: doi and două","kind":"rule","format":"cloze","rule":"Neuter nouns take două in the plural","example":"Avem ___ scaune libere. (two)","answer":"două","explanation":"Neuter scaun has feminine-pattern plural agreement."} -->
 
 ## Compounds Ending in One or Two
 
@@ -50,9 +57,13 @@ The last part of a compound number can still show gender. This is most visible w
 
 <!-- quiz: {"type":"multiple-choice","question":"Which phrase is correct for thirty-two female students?","options":["treizeci și două de eleve","treizeci și doi de eleve","treizeci două eleve","treizeci și doi eleve"],"answer":0} -->
 
+<!-- grammar-card: {"id":"compound-thirty-two","priority":"essential","sourceSection":"Compounds Ending in One or Two","kind":"rule","format":"cloze","rule":"The final two of a compound agrees with the counted noun","example":"treizeci și ___ de eleve (thirty-two female students)","answer":"două","explanation":"Eleve is feminine plural; the final numeral is două."} -->
+<!-- grammar-card: {"id":"compound-twenty-one","priority":"optional","sourceSection":"Compounds Ending in One or Two","kind":"rule","format":"cloze","rule":"The final one of a compound can reflect feminine gender","example":"douăzeci și ___ de zile (twenty-one days)","answer":"una","explanation":"Zi is feminine, so the compound ends in una."} -->
+<!-- grammar-card: {"id":"twelve-feminine","priority":"optional","sourceSection":"Compounds Ending in One or Two","kind":"rule","format":"cloze","rule":"Twelve has a feminine form douăsprezece","example":"___ fete (twelve girls)","answer":"douăsprezece","explanation":"Use douăsprezece for feminine fete, versus doisprezece băieți."} -->
+
 ## The de Rule After 20
 
-For counted nouns, numbers from **20 upward** normally take **de** before the noun. Numbers from 1 to 19 usually do not.
+For counted nouns, numbers from **20 upward** normally take **de** before the noun. Numbers from 1 to 19 usually do not. For larger compounds, a final part from **1 to 19** normally connects directly to the noun: **o sută două cărți** (102 books), but **o sută douăzeci de cărți** (120 books). Exact hundreds take **de**, as in **o sută de cărți**.
 
 | Number Phrase | With Noun |
 |---------------|-----------|
@@ -67,7 +78,8 @@ For counted nouns, numbers from **20 upward** normally take **de** before the no
 
 <!-- quiz: {"type":"multiple-choice","question":"Which phrase correctly means twenty cars?","options":["douăzeci de mașini","douăzeci mașini","doi zeci de mașini","douăzeci de mașină"],"answer":0} -->
 
-<!-- grammar-card: {"rule":"Numbers from 20 upward normally take de before counted nouns","hint":"douăzeci de mașini","example":"Sunt patruzeci ___ studenți.","answer":"de","explanation":"After patruzeci, Romanian inserts de before the counted noun: patruzeci de studenți."} -->
+<!-- grammar-card: {"id":"forty-de","priority":"essential","sourceSection":"The de Rule After 20","kind":"rule","format":"cloze","rule":"Numbers from 20 upward normally take de before counted nouns","example":"Sunt patruzeci ___ studenți.","answer":"de","explanation":"Patruzeci de studenți uses de before the counted plural noun."} -->
+<!-- grammar-card: {"id":"larger-number-de-exception","priority":"essential","sourceSection":"The de Rule After 20","kind":"concept","format":"qa","rule":"Larger compounds ending in 1–19 normally connect directly to the counted noun","example":"Does every number above nineteen require de, including o sută două cărți?","answer":"No. Larger compounds whose final part is 1–19 normally omit de; o sută două cărți has no de.","explanation":"Compare o sută două cărți (102) with o sută douăzeci de cărți (120)."} -->
 
 ## Both: amândoi and amândouă
 
@@ -82,6 +94,10 @@ For counted nouns, numbers from **20 upward** normally take **de** before the no
 - **Amândouă fetele vor cafea.** — Both girls want coffee.
 - **Am citit amândouă cărțile.** — I read both books.
 
+<!-- vocab-card: {"id":"vocab-amandoi","priority":"essential","sourceSection":"Both: amândoi and amândouă","word":"amândoi","meaning":"both (masculine or mixed group)"} -->
+<!-- vocab-card: {"id":"vocab-amandoua","priority":"essential","sourceSection":"Both: amândoi and amândouă","word":"amândouă","meaning":"both (feminine or neuter plural)"} -->
+<!-- grammar-card: {"id":"both-neuter","priority":"optional","sourceSection":"Both: amândoi and amândouă","kind":"rule","format":"cloze","rule":"Both agrees like doi and două","example":"___ scaunele sunt libere. (Both chairs are free.)","answer":"Amândouă","explanation":"Scaunele is neuter plural, so use amândouă."} -->
+
 ## Ordinal Agreement Reminder
 
 Ordinal numbers also agree. Use **al** for masculine or neuter nouns and **a** for feminine nouns.
@@ -94,7 +110,7 @@ Ordinal numbers also agree. Use **al** for masculine or neuter nouns and **a** f
 - **Este al doilea tren.** — It is the second train.
 - **Este a doua mașină.** — It is the second car.
 
-<!-- grammar-card: {"rule":"Ordinals use al for masculine/neuter and a for feminine","hint":"al doilea tren, a doua mașină","example":"___ doua lecție este ușoară.","answer":"A","explanation":"Lecție is feminine, so the ordinal begins with a: a doua lecție."} -->
+<!-- grammar-card: {"id":"ordinal-feminine-reminder","priority":"optional","sourceSection":"Ordinal Agreement Reminder","kind":"rule","format":"cloze","rule":"Ordinals use al for masculine/neuter and a for feminine","example":"___ doua lecție este ușoară.","answer":"A","explanation":"Lecție is feminine, so the ordinal begins with a."} -->
 
 ## Sources
 

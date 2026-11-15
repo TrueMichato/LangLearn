@@ -1,5 +1,7 @@
 # Expressing Purpose (ために、ように、のに)
 
+<!-- vocab-inventory: {"mode":"explicit"} -->
+
 Japanese has several ways to express **purpose** — why you do something, or what you're aiming for. Each construction carries a different nuance depending on whether the action is intentional, a hoped-for result, or a practical use.
 
 ## ために — Intentional Purpose
@@ -42,7 +44,10 @@ When the purpose is a noun, attach **のために**:
 > *Shourai no tame ni, chokin wo shite imasu.*
 > I'm saving money for the future.
 
-> 💡 ために always implies the subject **actively and intentionally** does something to achieve the purpose. Don't use it with uncontrollable outcomes — use ように instead.
+> 💡 In this **purpose** use, ために frames a goal being actively pursued. ように often frames a desired ability or state instead. These are useful tendencies, not a claim that every outcome must be fully controllable: 合格するために is natural even though passing is not guaranteed. Other uses of ために, such as cause, are outside this lesson.
+
+<!-- grammar-card: {"id":"intentional-purpose","kind":"rule","format":"cloze","priority":"essential","sourceSection":"ために — Intentional Purpose","rule":"Dictionary form + ために frames an intentionally pursued purpose","example":"I work to buy a car: 車を買う___、働いています。","answer":"ために","explanation":"買うために (かうために) presents buying the car as the worker's goal; no volitional conjugation such as 買おう is used here."} -->
+<!-- grammar-card: {"id":"noun-purpose","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Noun + のために","rule":"A noun takes の before ために","example":"For my family: 家族___ために働いています。","answer":"の","explanation":"家族のために (かぞくのために) means for the sake of the family. The noun links with の."} -->
 
 <!-- quiz:{"type":"multiple-choice","question":"How do you say 'I study every day in order to pass the exam'?","options":["試験に合格するように、毎日勉強しています","試験に合格するために、毎日勉強しています","試験に合格するのに、毎日勉強しています","試験に合格するから、毎日勉強しています"],"answer":1} -->
 
@@ -78,7 +83,10 @@ Use the **dictionary form** or **negative form** of non-volitional verbs + よ�
 
 > 💡 A key test: if you can replace the purpose clause with "I hope that ~" or "so that ~ will happen," then ように is the right choice.
 
-<!-- quiz:{"type":"multiple-choice","question":"Which is correct for 'I set an alarm so as not to oversleep'?","options":["寝坊するために、アラームをかけた","寝坊しないように、アラームをかけた","寝坊しないために、アラームをかけた","寝坊するように、アラームをかけた"],"answer":1} -->
+This is a meaning cue, not a mechanical English-translation test. Negative goals can also occur with ために (for example 失敗しないために); ように is especially natural for desired abilities, states, and avoiding unintended events.
+
+<!-- grammar-card: {"id":"negative-prevention-goal","kind":"rule","format":"cloze","priority":"essential","sourceSection":"ように — So That / In Hopes That","rule":"ない + ように can frame avoiding an unwanted event","example":"I woke early so as not to be late: 遅刻しない___、早く起きた。 (Frame the desired outcome.)","answer":"ように","explanation":"遅刻しないように frames preventing lateness as the desired result. Negative goals do not categorically ban ために in all contexts."} -->
+<!-- quiz:{"type":"multiple-choice","question":"Using ように, how do you say 'I set an alarm so as not to oversleep'?","options":["寝坊するために、アラームをかけた","寝坊しないように、アラームをかけた","寝坊しないために、アラームをかけた","寝坊するように、アラームをかけた"],"answer":1} -->
 
 ## ために vs ように — Key Differences
 
@@ -104,6 +112,8 @@ Compare these pairs:
 > *Kodomo ga anzen ni asoberu you ni, kouen wo tsukutta.*
 > They built a park so that children can play safely. (different subjects)
 
+<!-- grammar-card: {"id":"purpose-subjects","kind":"concept","format":"qa","priority":"essential","sourceSection":"ために vs ように — Key Differences","rule":"ように readily permits different actors in the purpose and main clauses","example":"In 子供が遊べるように、公園を作った, must the children have built the park?","answer":"No. Someone else can build it so that the children can play.","explanation":"The desired ability belongs to the children, while the main action can have a different subject. Intentional ために commonly shares its actor across clauses."} -->
+<!-- grammar-card: {"id":"purpose-control-limits","kind":"concept","format":"qa","priority":"optional","sourceSection":"ために vs ように — Key Differences","rule":"The control distinction is about goal framing, not guaranteed success","example":"Does 試験に合格するために imply that passing the exam is completely under the student's control?","answer":"No. It presents passing as an actively pursued goal, not a guaranteed result.","explanation":"Potential 話せるように instead frames a desired ability. Do not equate ために with certainty of success."} -->
 ## のに — Practical Purpose / "For Doing"
 
 のに connects to the **dictionary form** of a verb and expresses what something is used for, or evaluates how suitable something is for a purpose. It often appears with adjectives like 便利(べんり) (convenient), 必要(ひつよう) (necessary), or 時間(じかん)がかかる (takes time).
@@ -126,6 +136,8 @@ Compare these pairs:
 
 > 💡 Don't confuse this のに (purpose) with the のに that means "even though" (covered in the ても lesson). Context makes it clear — purpose のに evaluates *suitability*, while concessive のに expresses *frustration or surprise*.
 
+<!-- grammar-card: {"id":"purpose-noni-versus-concession","kind":"concept","format":"qa","priority":"essential","sourceSection":"のに — Practical Purpose / \"For Doing\"","rule":"Purpose のに evaluates a task rather than expressing an unexpected contrast","example":"Does 漢字を覚えるのに役に立つ mean even though I memorize kanji?","answer":"No. It means useful for memorizing kanji; のに marks the task or purpose.","explanation":"Practical-purpose のに appears with usefulness, necessity, cost, or time. Concessive のに contrasts an expectation and an outcome."} -->
+<!-- grammar-card: {"id":"purpose-time-required","kind":"rule","format":"cloze","priority":"optional","sourceSection":"のに — Practical Purpose / \"For Doing\"","rule":"Dictionary form + のに can mark a task's time requirement","example":"It took thirty minutes to solve this: この問題を解く___三十分かかった。","answer":"のに","explanation":"解くのに (とくのに) marks the task for which the time was needed, not a disappointed although clause."} -->
 ## に — Motion Purpose
 
 When a verb of **motion** (行(い)く, 来(く)る, 帰(かえ)る, 出(で)かける, etc.) follows a purpose, use the **ます-stem + に + motion verb** pattern:
@@ -155,6 +167,8 @@ When a verb of **motion** (行(い)く, 来(く)る, 帰(かえ)る, 出(で)か
 
 > 💡 For する verbs, use **noun + しに行く**: 買(か)い物(もの)しに行く (go shopping), 勉強(べんきょう)しに行く (go to study).
 
+<!-- grammar-card: {"id":"motion-purpose-stem","kind":"rule","format":"cloze","priority":"essential","sourceSection":"に — Motion Purpose","rule":"A motion purpose uses ます-stem + に + motion verb","example":"Go to eat ramen: ラーメンを___に行く。 (食べる)","answer":"食べ","explanation":"食べに行く (たべにいく) uses the ます-stem, not 食べるに or 食べてに."} -->
+<!-- grammar-card: {"id":"suru-motion-purpose","kind":"rule","format":"cloze","priority":"optional","sourceSection":"に — Motion Purpose","rule":"する compounds use し before purpose に","example":"I went to the library to study: 図書館に勉強___に行った。","answer":"し","explanation":"勉強しに行った uses the する stem し. A purpose before a motion verb does not use a volitional form."} -->
 <!-- quiz:{"type":"multiple-choice","question":"How do you say 'I went to the library to study'?","options":["図書館に勉強するために行った","図書館に勉強しに行った","図書館に勉強のに行った","図書館に勉強ように行った"],"answer":1} -->
 
 ## Complete Comparison Table
@@ -183,9 +197,9 @@ When a verb of **motion** (行(い)く, 来(く)る, 帰(かえ)る, 出(で)か
 
 <!-- quiz:{"type":"multiple-choice","question":"Which sentence correctly uses ように?","options":["日本に行くように、お金を貯めている","子供が読めるように、ふりがなをつけた","彼女のように、プレゼントを買った","勉強するように、図書館に行った"],"answer":1} -->
 
-<!-- grammar-card: {"rule":"のに marks what something is useful for","hint":"ために / のに","example":"この道具は料理する___便利だ。","answer":"のに","explanation":"With 便利 the purpose a tool serves is expressed by のに rather than ために."} -->
+<!-- grammar-card: {"id":"practical-use-noni","kind":"rule","format":"cloze","priority":"essential","sourceSection":"のに — Practical Purpose / \"For Doing\"","rule":"のに marks what something is useful for","hint":"Use the practical-task construction with 便利.","example":"この道具は料理する___便利だ。","answer":"のに","explanation":"料理するのに便利だ evaluates the tool as convenient for cooking; の nominalizes the task and に marks its purpose."} -->
 
-<!-- grammar-card: {"rule":"ように is used when the goal is an ability or a state","hint":"ために / ように","example":"日本語が話せる___、練習している。","answer":"ように","explanation":"話せる expresses ability, so ように fits; ために would need a deliberate action instead."} -->
+<!-- grammar-card: {"id":"ability-goal-youni","kind":"rule","format":"cloze","priority":"essential","sourceSection":"ように — So That / In Hopes That","rule":"ように is used when the goal is an ability or a state","hint":"Frame a desired ability.","example":"日本語が話せる___、練習している。","answer":"ように","explanation":"話せる (はなせる) is potential, so ように naturally introduces the hoped-for ability rather than an action framed as a deliberate goal."} -->
 
 ## Summary
 

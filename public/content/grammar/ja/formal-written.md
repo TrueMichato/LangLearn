@@ -1,5 +1,7 @@
 # Formal & Written Japanese (において、に関して、に対して)
 
+<!-- vocab-inventory: {"mode":"explicit"} -->
+
 In formal writing, news, academic papers, and business documents, Japanese uses a set of grammar patterns that replace everyday casual expressions. These patterns are essential for reading newspapers, understanding legal documents, and writing professional Japanese.
 
 ## において / における (In / At — Formal Context)
@@ -36,7 +38,8 @@ In formal writing, news, academic papers, and business documents, Japanese uses 
 
 > 💡 において is too stiff for everyday conversation. Use で in casual speech. You'll encounter において mainly in writing, speeches, and formal presentations.
 
-<!-- grammar-card: {"rule":"において is the formal equivalent of で","hint":"formal で","example":"会議(かいぎ)は東京(とうきょう)___行(おこな)われます。","answer":"において","explanation":"東京において suits a formal announcement, where 東京で would be everyday speech."} -->
+<!-- grammar-card: {"id":"formal-location-nioite","kind":"rule","format":"cloze","priority":"essential","sourceSection":"において / における (In / At — Formal Context)","rule":"において is the formal equivalent of で","hint":"Use the formal location expression.","example":"会議(かいぎ)は東京(とうきょう)___行(おこな)われます。","answer":"において","explanation":"東京において locates the meeting formally. This substitutes for the location/domain use of で, not every use of で."} -->
+<!-- grammar-card: {"id":"formal-location-attributive","kind":"rule","format":"cloze","priority":"essential","sourceSection":"において / における (In / At — Formal Context)","rule":"における modifies a following noun","example":"Education in Japan: 日本___教育。 (formal attributive)","answer":"における","explanation":"日本における教育 modifies 教育 directly. Adverbial において is not used unchanged in that position."} -->
 
 ## に関(かん)して / に関する (Regarding / About)
 
@@ -70,7 +73,8 @@ In formal writing, news, academic papers, and business documents, Japanese uses 
 
 <!-- quiz:{"type":"multiple-choice","question":"Which is the correct formal way to say 'a report regarding the economy'?","options":["経済に関する報告書","経済を関して報告書","経済に関して報告書する","経済の関する報告書"],"answer":0} -->
 
-<!-- grammar-card: {"rule":"に関して means 'regarding' in formal contexts","hint":"regarding","example":"この件(けん)___ご説明(せつめい)します。","answer":"に関して","explanation":"この件に関して formally introduces the matter about to be explained."} -->
+<!-- grammar-card: {"id":"formal-topic-nikanshite","kind":"rule","format":"cloze","priority":"essential","sourceSection":"に関(かん)して / に関する (Regarding / About)","rule":"に関して means 'regarding' in formal contexts","hint":"Use the formal topic expression built on 関する.","example":"この件(けん)___ご説明(せつめい)します。","answer":"に関して","explanation":"この件に関して introduces the topic formally. について is a more neutral alternative."} -->
+<!-- grammar-card: {"id":"formal-topic-attributive","kind":"rule","format":"cloze","priority":"essential","sourceSection":"に関(かん)して / に関する (Regarding / About)","rule":"に関する is the noun-modifying form of に関して","example":"A report regarding the economy: 経済___報告書。","answer":"に関する","explanation":"経済に関する報告書 (けいざいにかんするほうこくしょ) uses the attributive form before 報告書."} -->
 
 ## に対(たい)して / に対する (Toward / Against / In Contrast)
 
@@ -114,7 +118,9 @@ In formal writing, news, academic papers, and business documents, Japanese uses 
 
 <!-- quiz:{"type":"multiple-choice","question":"'政府に対する批判' means:","options":["Criticism from the government","Criticism toward the government","The government's criticism","Criticism despite the government"],"answer":1} -->
 
-<!-- grammar-card: {"rule":"に対して marks the target an action or attitude is aimed at","hint":"toward","example":"お客様(きゃくさま)___失礼(しつれい)な態度(たいど)をとってはいけません。","answer":"に対して","explanation":"お客様に対して marks customers as the ones the attitude is directed at."} -->
+<!-- grammar-card: {"id":"formal-target-nitaishite","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Meaning 1: Toward / Against","rule":"に対して marks the target an action or attitude is aimed at","hint":"Use the target expression built on 対する.","example":"お客様(きゃくさま)___失礼(しつれい)な態度(たいど)をとってはいけません。","answer":"に対して","explanation":"お客様に対して identifies the people toward whom the attitude is directed, not the topic merely being discussed."} -->
+<!-- grammar-card: {"id":"formal-target-attributive","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Meaning 1: Toward / Against","rule":"に対する modifies a following noun describing an attitude or action","example":"Criticism toward the government: 政府___批判。","answer":"に対する","explanation":"政府に対する批判 (せいふにたいするひはん) directs the criticism toward the government; it is not necessarily criticism made by the government."} -->
+<!-- grammar-card: {"id":"formal-contrast","kind":"concept","format":"qa","priority":"essential","sourceSection":"Meaning 2: In Contrast To","rule":"に対して can contrast two situations rather than identify a target","example":"In 兄は静かなのに対して、弟はにぎやかだ, does に対して mean the younger brother acts against the older brother?","answer":"No. It contrasts the older brother's quietness with the younger brother's liveliness.","explanation":"Clause + のに対して compares situations. Noun + に対して can instead mark a target or comparison standard."} -->
 
 ## について / につき (About / Concerning)
 
@@ -140,6 +146,7 @@ In formal writing, news, academic papers, and business documents, Japanese uses 
 > *Sono jiken ni tsuite no kuwashii jōhō wa mada arimasen.*
 > There is no detailed information about that incident yet.
 
+<!-- grammar-card: {"id":"neutral-topic-attributive","kind":"rule","format":"cloze","priority":"essential","sourceSection":"について — About","rule":"について takes の before a following noun","example":"Information about the incident: 事件について___情報。","answer":"の","explanation":"についての情報 uses の, unlike the attributive forms に関する or に対する, which modify nouns directly."} -->
 ### につき — Due To / Per (Formal Notices)
 
 > 工事中(こうじちゅう)につき、ご迷惑(めいわく)をおかけします。
@@ -156,9 +163,13 @@ In formal writing, news, academic papers, and business documents, Japanese uses 
 
 > 💡 につき often appears on signs and in formal announcements. It's almost never used in conversation.
 
+<!-- grammar-card: {"id":"nitsuki-notice-cause","kind":"concept","format":"qa","priority":"essential","sourceSection":"につき — Due To / Per (Formal Notices)","rule":"につき can state a reason in a formal notice","example":"In 工事中につき、ご迷惑をおかけします, what relation does につき express?","answer":"Due to construction; it introduces the reason for the inconvenience.","explanation":"This formal notice use differs from neutral について meaning about."} -->
+<!-- grammar-card: {"id":"nitsuki-per-unit","kind":"concept","format":"qa","priority":"essential","sourceSection":"につき — Due To / Per (Formal Notices)","rule":"につき can express a per-unit allocation","example":"What limit is expressed by 一人につき一枚まで?","answer":"Up to one sheet or ticket per person.","explanation":"につき distributes the quantity over each person; it is not causal due to in this sentence."} -->
 ## によって / により / による (By Means Of / Depending On)
 
 This versatile pattern has several meanings depending on context.
+
+For means, 話(はな)し合(あ)いによって解決(かいけつ)する means “resolve through discussion.”
 
 | Pattern | Usage |
 |---------|-------|
@@ -206,6 +217,11 @@ This versatile pattern has several meanings depending on context.
 
 > 💡 により is the written/formal version of によって. You'll see により in news articles and official statements, while によって is acceptable in both formal speech and writing.
 
+<!-- grammar-card: {"id":"niyotte-passive-agent","kind":"concept","format":"qa","priority":"essential","sourceSection":"Meaning 1: By Means Of / By (Agent in Passive)","rule":"によって can mark the creator or agent in a passive description","example":"Who wrote the novel in この小説は村上春樹によって書かれた?","answer":"村上春樹, Haruki Murakami.","explanation":"によって identifies the agent of the passive 書かれた; it does not mean depending on in this context."} -->
+<!-- grammar-card: {"id":"niyotte-means","kind":"rule","format":"cloze","priority":"optional","sourceSection":"によって / により / による (By Means Of / Depending On)","rule":"によって can identify the means by which something is done","example":"Solve the issue through discussion: 話し合い___解決する。 (Use the means construction with the て connection.)","answer":"によって","explanation":"話し合いによって names the means. This is a different contextual use from passive agency, cause, or variation."} -->
+<!-- grammar-card: {"id":"niyotte-depending","kind":"concept","format":"qa","priority":"essential","sourceSection":"Meaning 2: Depending On","rule":"によって can express variation according to a factor","example":"What does 人によって意見が異なる say about opinions?","answer":"They differ depending on the person.","explanation":"The people are the factor along which opinions vary, not passive agents who wrote something."} -->
+<!-- grammar-card: {"id":"niyoru-cause-attributive","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Meaning 3: Caused By / Due To","rule":"による modifies a noun with its cause or means","example":"Damage caused by the earthquake: 地震___被害。","answer":"による","explanation":"地震による被害 (じしんによるひがい) uses the attributive form; によって is not used unchanged directly before 被害."} -->
+<!-- grammar-card: {"id":"niyori-register","kind":"concept","format":"qa","priority":"optional","sourceSection":"によって / により / による (By Means Of / Depending On)","rule":"により is a more written or formal variant of によって","example":"Does changing によって to により automatically turn a means or cause into a different relation?","answer":"No. により is a more formal written variant; context still determines the relation.","explanation":"Do not assign all occurrences one English gloss. Cause, means, passive agency, and dependence are distinguished by context."} -->
 <!-- quiz:{"type":"multiple-choice","question":"'国によって文化が違います' means:","options":["Culture was changed by the country","Culture doesn't depend on the country","Culture differs depending on the country","The country was changed by culture"],"answer":2} -->
 
 ## として (As / In the Capacity Of)
@@ -239,11 +255,10 @@ This versatile pattern has several meanings depending on context.
 
 ### Casual Equivalent
 
-として doesn't have a direct casual replacement — it's used across all formality levels. However, in very casual speech, you might hear simpler constructions:
+として doesn't have a direct casual replacement — it's used across all formality levels. Keep 医者として when you mean “in the capacity of a doctor”; 医者で is not a reliable general replacement for that role relation.
 
-- 医者として → 医者で (less precise but casual)
-
-<!-- grammar-card: {"rule":"として marks the role or capacity someone acts in","hint":"as, in the role of","example":"彼(かれ)は通訳(つうやく)___来日(らいにち)した。","answer":"として","explanation":"通訳として says he came to Japan in the capacity of an interpreter."} -->
+<!-- grammar-card: {"id":"role-toshite","kind":"rule","format":"cloze","priority":"essential","sourceSection":"として (As / In the Capacity Of)","rule":"として marks the role or capacity someone acts in","hint":"Use the role or capacity marker.","example":"彼(かれ)は通訳(つうやく)___来日(らいにち)した。","answer":"として","explanation":"通訳として identifies interpreter as his capacity on coming to Japan; it is not a location or a topic."} -->
+<!-- grammar-card: {"id":"role-attributive","kind":"rule","format":"cloze","priority":"optional","sourceSection":"として (As / In the Capacity Of)","rule":"として takes の when modifying a following noun","example":"Experience as an exchange student: 留学生として___経験。","answer":"の","explanation":"としての経験 links the role to a following noun; as an adverbial it is simply 留学生として働く."} -->
 
 ## Comparison Table: Formal vs Casual
 
@@ -259,7 +274,9 @@ This versatile pattern has several meanings depending on context.
 | による | の / が原因(げんいん)の | caused by (attributive) |
 | として | として | as (used at all levels) |
 
-> 💡 A common mistake is mixing these formal patterns into casual conversation. They sound unnatural in everyday speech — save them for writing, presentations, and formal situations.
+> 💡 Match register to context rather than treating every item here as formal-only. において and notice-style につき are stiff in casual talk; について, によって, and として are also used in ordinary conversation.
+
+<!-- grammar-card: {"id":"formal-register-scope","kind":"concept","format":"qa","priority":"essential","sourceSection":"Comparison Table: Formal vs Casual","rule":"The lesson's expressions do not all share one formal-only register","example":"Must について, によって, and として all be avoided in ordinary conversation?","answer":"No. They occur across registers; において and notice-style につき are much more formal or written.","explanation":"A formal-writing lesson can include neutral building blocks. Choose the conventional register rather than replacing every particle with the longest expression."} -->
 
 <!-- quiz:{"type":"multiple-choice","question":"Which pattern is the casual equivalent of 'この問題は会議において議論された'?","options":["この問題は会議に関して議論された","この問題は会議に対して議論された","この問題は会議で議論された","この問題は会議として議論された"],"answer":2} -->
 

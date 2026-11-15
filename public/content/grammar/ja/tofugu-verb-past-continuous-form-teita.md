@@ -1,5 +1,7 @@
 # ていた — Past Continuous
 
+<!-- vocab-inventory: {"mode":"explicit"} -->
+
 > **Source:** Content from [Tofugu](https://www.tofugu.com/japanese-grammar/verb-past-continuous-form-teita/). For personal study.
 
 Japanese Verb Past Continuous Form ていた
@@ -27,6 +29,11 @@ The ていた ending on verbs puts them into the past continuous form, which pla
 
 You've probably already come across the verb form ending 〜ている, which can be used to describe something that is happening now. So 食べている means "is eating," and 話している means "is talking." This isn't the only use of 〜ている, but it is the one that is the most similar to English. The ていた form can have this same idea of an action being in progress, except that in this case the action is in the past. So 食べている becomes 食べていた and means "was eating."
 
+<!-- vocab-card: {"id":"vocab-taberu","priority":"optional","sourceSection":"What Is ていた?","word":"食べる","reading":"たべる","meaning":"to eat"} -->
+<!-- vocab-card: {"id":"vocab-nomu","priority":"optional","sourceSection":"What Is ていた?","word":"飲む","reading":"のむ","meaning":"to drink"} -->
+<!-- vocab-card: {"id":"vocab-kuru","priority":"optional","sourceSection":"What Is ていた?","word":"来る","reading":"くる","meaning":"to come"} -->
+<!-- grammar-card: {"id":"voiced-past-continuous","kind":"rule","format":"cloze","priority":"essential","sourceSection":"What Is ていた?","rule":"Add いた to the verb's correct て or で form","example":"飲む → was drinking: ___.","answer":"飲んでいた","explanation":"飲む has connective 飲んで, so its past continuous keeps voiced で."} -->
+
 ## ていた to Emphasize the Duration of an Action
 
 Just like in English, one use of this form is to put the emphasis on the duration of the action:
@@ -43,7 +50,9 @@ In the top image, the action of watching a movie is contained within a certain t
 
 In the bottom image, the use of 〜ていた makes it so that we don't know if the person finished watching the film or not. What is important is the duration of the action, rather than the result.
 
-<!-- grammar-card: {"rule":"ていた describes an action that went on for a stretch of past time","hint":"する + いる, plain past","example":"昨日(きのう)の夜(よる)、ずっと勉強(べんきょう)し___。","answer":"ていた","explanation":"していた says the studying continued right through the evening."} -->
+<!-- vocab-card: {"id":"vocab-miru","priority":"optional","sourceSection":"ていた to Emphasize the Duration of an Action","word":"見る","reading":"みる","meaning":"to see; to watch"} -->
+<!-- grammar-card: {"id":"past-duration","kind":"rule","format":"cloze","priority":"essential","sourceSection":"ていた to Emphasize the Duration of an Action","rule":"ていた describes an action that went on for a stretch of past time","hint":"する + いる, plain past","example":"昨日(きのう)の夜(よる)、ずっと勉強(べんきょう)し___。","answer":"ていた","explanation":"The focus is the stretch of time spent studying, rather than a bounded completed event."} -->
+<!-- grammar-card: {"id":"duration-not-completion","kind":"concept","format":"qa","priority":"essential","sourceSection":"ていた to Emphasize the Duration of an Action","rule":"A past ongoing action does not by itself assert completion","example":"Does 映画を見ていた establish that the speaker finished the movie?","answer":"No. It presents watching as ongoing in the past without settling whether it was completed.","explanation":"映画を見た instead presents the watching as a bounded past event."} -->
 
 ## ていた for the Results of Actions
 
@@ -54,6 +63,9 @@ When we are talking about an action that was completed in the past but continues
   - When I woke up in the morning, my mom **had left** already.
 
 If we translate "had left" into Japanese, we might be tempted to say 出た here, since 出ていた might seem like it means "was leaving." However, 出た would indicate that my mom left at the specific moment that I woke up. Instead, Japanese uses the continuous form to show that something has happened, and the result remains relevant. So when we would use "had left" in English, we can use 出ていた in Japanese.
+
+<!-- vocab-card: {"id":"vocab-deru","priority":"optional","sourceSection":"ていた for the Results of Actions","word":"出る","reading":"でる","meaning":"to go out; to leave"} -->
+<!-- grammar-card: {"id":"past-result","kind":"rule","format":"cloze","priority":"essential","sourceSection":"ていた for the Results of Actions","rule":"ていた can describe a resulting state that already held at a past reference point","example":"When I woke up, Mom had already left: 朝起きたら、お母さんがもう___。 (出る)","answer":"出ていた","explanation":"Her departure preceded waking, with the result still relevant then; the form need not mean she was in the act of leaving."} -->
 
 ## Other Forms of ていた
 
@@ -74,6 +86,12 @@ When 〜ていた is used in the middle of a sentence, it is sometimes interchan
 
 Both 住んでいる and 住んでいた can go before 時, without changing the meaning of the sentence.
 
+<!-- vocab-card: {"id":"vocab-sumu","priority":"optional","sourceSection":"Other Forms of ていた","word":"住む","reading":"すむ","meaning":"to live; to reside"} -->
+<!-- grammar-card: {"id":"polite-past-continuous","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Other Forms of ていた","rule":"The polite counterpart of ていた is ていました","example":"見ていた → polite: ___.","answer":"見ていました","explanation":"The final いる component takes its polite past form いました."} -->
+<!-- grammar-card: {"id":"past-continuous-contraction","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Other Forms of ていた","rule":"ていた contracts to てた in speech","hint":"use the casual contracted ending","example":"さっきまで寝(ね)___。","answer":"てた","explanation":"Dropping い from 寝ていた gives casual 寝てた."} -->
+<!-- grammar-card: {"id":"toki-relative-time","kind":"concept","format":"qa","priority":"optional","sourceSection":"Other Forms of ていた","rule":"Both ている and ていた can locate an overlapping situation before 時 in the taught past narrative","example":"Must 日本に住んでいる時に、日本語を習った mean the speaker still lives in Japan now?","answer":"No. Here the residence overlaps the past learning; 住んでいた時に can describe the same past period.","explanation":"The embedded form before 時 does not mechanically locate the residence at the moment of speaking."} -->
+<!-- grammar-card: {"id":"embedded-register","kind":"concept","format":"qa","priority":"optional","sourceSection":"Other Forms of ていた","rule":"Embedded plain ていた does not itself make the whole sentence casual","example":"Does a plain ていた inside a dependent clause decide the whole sentence's politeness?","answer":"No. The main sentence ending normally supplies that politeness.","explanation":"Sentence-final ていた is plain, but a dependent modifier has a different role."} -->
+
 ---
 
 #### Sources and Additional Readings
@@ -92,8 +110,6 @@ p. 131
 <!-- quiz: {"type":"multiple-choice","question":"What does \"映画を見ていた。\" mean?","options":["I was watching a movie.","I watched a movie.","When I woke up in the morning, my mom **had left** already.","This describes a past action"],"answer":0} -->
 
 <!-- quiz: {"type":"multiple-choice","question":"What does \"朝起きたら、お母さんがもう出ていた。\" mean?","options":["When I woke up in the morning, my mom **had left** already.","I watched a movie.","I was watching a movie.","This describes a past action"],"answer":0} -->
-
-<!-- grammar-card: {"rule":"ていた contracts to てた in speech","hint":"ていた → ?","example":"さっきまで寝(ね)___。","answer":"てた","explanation":"寝てた is the everyday spoken form of 寝ていた."} -->
 
 ## Sources
 

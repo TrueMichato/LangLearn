@@ -1,5 +1,7 @@
 # なら — If (Contextual)
 
+<!-- vocab-inventory: {"mode":"explicit"} -->
+
 > **Source:** Content from [Tofugu](https://www.tofugu.com/japanese-grammar/conditional-form-nara/). For personal study.
 
 Japanese Conditional Form なら
@@ -99,7 +101,10 @@ When describing something in the past, you have to change these forms into the p
    
    難しかった　+　なら　=　難しかった**なら**
 
-<!-- grammar-card: {"rule":"なら responds to something the other person has just raised","hint":"なら","example":"日本(にほん)に行(い)く___、京都(きょうと)がおすすめだよ。","answer":"なら","explanation":"なら takes the listener's stated plan as the premise for the advice that follows."} -->
+<!-- grammar-card: {"id":"contextual-advice","kind":"rule","format":"cloze","priority":"essential","sourceSection":"What Is なら?","rule":"なら responds to something the other person has just raised","hint":"Take the listener's stated travel plan as the premise for advice.","example":"日本(にほん)に行(い)く___、京都(きょうと)がおすすめだよ。","answer":"なら","explanation":"The advice rests on the plan; it need not occur after the trip, unlike an ordinary sequential たら reading."} -->
+<!-- grammar-card: {"id":"past-premise","kind":"rule","format":"cloze","priority":"optional","sourceSection":"What Is なら?","rule":"A past event is conjugated before adding なら","example":"行く → if they went: ___なら。","answer":"行った","explanation":"The past is on the verb. Nouns use だったなら, and い-adjectives use forms such as 難しかったなら."} -->
+<!-- grammar-card: {"id":"negative-premise","kind":"rule","format":"cloze","priority":"optional","sourceSection":"What Is なら?","rule":"A negative な-adjective can form the premise before なら","example":"不安だ → if you are not uneasy (contracted negative): 不安___なら。","answer":"じゃない","explanation":"Negate the nominal predicate before adding the contextual conditional; present affirmative 不安 takes なら directly."} -->
+<!-- vocab-card: {"id":"vocab-fuan","word":"不安","reading":"ふあん","meaning":"uneasy; anxiety","priority":"optional","sourceSection":"What Is なら?"} -->
    
   
 
@@ -115,13 +120,13 @@ As we mentioned, なら is used to indicate a condition where a certain situatio
 
   - If you are happy, I'm happy too.
 
-While this seems straightforward, there are some restrictions on the use of なら. For example, you cannot use なら if the condition you are describing will *definitely* happen.
+なら sets up a premise to consider rather than merely marking when a predictable event happens. For an ordinary plan tied to the inevitable arrival of spring, たら or another temporal construction is more natural:
 
   - ❌ 春になるなら、お花見をしましょう。
 
   - Let's go see cherry blossoms if spring comes.
 
-Using なら, you indicate the possibility that the conditional event might not happen. So it's not appropriate to use in this context.
+The marked example is awkward as a simple seasonal "when spring comes." It is not a universal ban on known facts with なら: an established fact can also be taken up as a conversational premise.
 
 This is also the case when using なら to describe someone's action as conditional.
 
@@ -137,27 +142,27 @@ You can say this even when you are pretty sure the listener will do what you des
 
   - If you go outside, take out the garbage.
 
-Since an action described as a condition has to be uncertain when なら is used, the next sentence is inappropriate.
+An additional issue is how you present another person's private desire. In the following isolated sentence, standalone 行きたい claims access to Koichi's feelings without explaining how you know:
 
   - ❌ 私が行くなら、コウイチも行きたい。
 
   - If I go there, Koichi wants to go there too.
 
-Because it is you who is doing the action of going, you know whether the condition is true or not, thus なら should not be used. However, you can describe your own action as a condition in a context like the one below:
+This is not a ban on using your own actions with なら: a plan of your own can be considered hypothetically. The following version explicitly marks the statement about Koichi as your inference:
 
   - ⭕️ 私が行くなら、コウイチも行きたがると思う。
 
   - If I go there, I think Koichi wants to come with me.
 
-Here, you are describing your assumption about Koichi's action. Because the sentence itself is an assumption, the actuality of your action described as a condition is uncertain.
+Here, you are describing an inference about Koichi's observable desire rather than simply asserting his private feelings. The premise about your own trip is still being considered hypothetically.
 
-In addition, なら is not appropriate when you are highlighting the causal relationship between the conditional action and the event or situation caused by that action. Imagine a situation where your friends suggested to race to their classroom, and you want to stop them by reminding them that it will make their teachers mad. It's weird to say:
+なら is also not the default choice for simply stating an automatic consequence. Imagine that you want to stop friends racing to their classroom by warning them of the consequence. For that intended reading, the following is less natural than a causal conditional such as と:
 
   - ❌ 走るなら先生に怒られるよ。
 
   - The teacher will be mad if you run!
 
-This is because you are stating the objective fact that the action (running) causes the event, (your teacher getting mad) to convince your friend not to run in school. Since なら is used to claim subjective opinions based on the speakers' assumption of a certain condition, it does not fit the nuance of this sentence.
+The intended warning focuses on the consequence of running, not on taking up a proposed plan for discussion. A suitable conversational premise could make 走るなら natural; the distinction is contextual, not a ban on consequences after なら.
 
 However, you can use なら in the following context. Imagine that your friends insisted that they race to the classroom, and you finally gave up.
 
@@ -167,7 +172,10 @@ However, you can use なら in the following context. Imagine that your friends 
 
 In this case, なら is appropriate because you are suggesting something for your friends, rather than reminding them of a possibility that their action might cause.
 
-<!-- grammar-card: {"rule":"なら attaches directly to a bare noun, with no だ","hint":"寿司 + ?","example":"寿司(すし)___、あの店(みせ)が一番(いちばん)おいしい。","answer":"なら","explanation":"寿司なら needs no だ, because なら follows the bare noun."} -->
+<!-- grammar-card: {"id":"bare-noun","kind":"rule","format":"cloze","priority":"essential","sourceSection":"なら for Describing Conditions","rule":"なら attaches directly to a bare noun, with no だ","hint":"Take sushi as the contextual topic for the recommendation.","example":"寿司(すし)___、あの店(みせ)が一番(いちばん)おいしい。","answer":"なら","explanation":"Use 寿司なら, not 寿司だなら. A present affirmative な-adjective likewise takes the conditional directly."} -->
+<!-- grammar-card: {"id":"premise-not-timeline","kind":"concept","format":"qa","priority":"essential","sourceSection":"なら for Describing Conditions","rule":"A contextual premise is not simply a marker of inevitable time sequence","example":"Why is なら awkward for an ordinary when spring comes plan, but natural after someone says they intend to go out?","answer":"It takes up a premise for a response or advice, rather than merely marking the time of an inevitable event.","explanation":"It can take up known information too; it does not require measurable uncertainty."} -->
+<!-- grammar-card: {"id":"own-action-not-banned","kind":"concept","format":"qa","priority":"optional","sourceSection":"なら for Describing Conditions","rule":"The speaker's own contemplated action can serve as a premise","example":"Is 私が行くなら impossible solely because the speaker knows their own plans?","answer":"No. A speaker can consider their own trip hypothetically; a separate claim about someone else's desire still needs an appropriate perspective.","explanation":"行きたがると思う marks an inference about Koichi, rather than using bare third-person 行きたい without context."} -->
+<!-- grammar-card: {"id":"causal-warning-contrast","kind":"concept","format":"qa","priority":"optional","sourceSection":"なら for Describing Conditions","rule":"なら suits advice on a proposed action more readily than an automatic causal warning","example":"Why does 走るなら人にぶつからないようにしなよ fit a response to friends insisting on a race?","answer":"It accepts their proposed running as the premise and gives advice about how to proceed.","explanation":"It is not simply presenting the automatic consequence of running; a causal conditional is more natural for that unframed warning."} -->
 
 ## なら for Describing Counterfactual Situations
 
@@ -195,7 +203,8 @@ In speech, it is common to state only the conditional part of the sentence. When
 
   - I wish today was Friday.
 
-<!-- grammar-card: {"rule":"なら can set up a hypothetical that is not actually true","hint":"私 + なら","example":"___、そんなことはしないよ。","answer":"私(わたし)なら","explanation":"私なら imagines the speaker standing in someone else's position."} -->
+<!-- grammar-card: {"id":"hypothetical-position","kind":"rule","format":"cloze","priority":"optional","sourceSection":"なら for Describing Counterfactual Situations","rule":"なら can set up a hypothetical that is not actually true","hint":"Say if it were me, including the reading of the pronoun.","example":"___、そんなことはしないよ。","answer":"私(わたし)なら","explanation":"The speaker imagines being in the relevant position rather than reporting an actual event."} -->
+<!-- grammar-card: {"id":"counterfactual-tense","kind":"concept","format":"qa","priority":"optional","sourceSection":"なら for Describing Counterfactual Situations","rule":"Counterfactual meaning does not always require past morphology","example":"Must 私があなたなら be changed into a past form to mean if I were you?","answer":"No. Present-shaped なら can be counterfactual; だったなら can emphasize unreality and may sound more literary.","explanation":"Final ならなあ can leave a wish or regret implicit, as in 今日が金曜日ならなあ."} -->
 
 ## Verb なら for Referring to Someone or Something
 
@@ -228,6 +237,9 @@ B: うーん、土曜日ならいいよ。
 B: Well, I'll go if it's Saturday.
 
 In this case, you are refusing your friend's suggestion but simultaneously providing a possible condition where you can go out with your friend.
+
+<!-- grammar-card: {"id":"reference-and-alternative","kind":"concept","format":"qa","priority":"optional","sourceSection":"Verb なら for Referring to Someone or Something","rule":"なら can take up an existing referent or offer an alternative premise","example":"What does 土曜日ならいいよ imply in response to an invitation for Friday?","answer":"Saturday would work, implicitly offering an alternative to Friday.","explanation":"The same premise-setting function can identify a mentioned hat or person, as in その帽子なら or マミなら."} -->
+<!-- vocab-card: {"id":"vocab-boushi","word":"帽子","reading":"ぼうし","meaning":"hat","priority":"optional","sourceSection":"Verb なら for Referring to Someone or Something"} -->
 
 ---
 

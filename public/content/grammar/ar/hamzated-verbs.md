@@ -1,5 +1,7 @@
 # Hamzated Verbs and Hamza Changes
 
+<!-- vocab-inventory: {"mode":"explicit"} -->
+
 Hamzated verbs have hamza as one of the root letters. Their meanings are normal, but spelling and some common commands need special attention.
 
 ## Core idea
@@ -15,6 +17,11 @@ A **فِعْلٌ مَهْمُوزٌ** (fiʿlun mahmūzun) contains hamza as the 
 | Final hamza | **قَرَأَ** (qaraʾa) | **يَقْرَأُ** (yaqraʾu) | **قَرَأَ الْوَلَدُ قِصَّةً** (qaraʾa al-waladu qiṣṣatan) — the boy read a story. |
 | Common short command | **أَكَلَ** (akala) | **يَأْكُلُ** (yaʾkulu) | **كُلْ خُبْزًا** (kul khubzan) — eat bread. |
 
+<!-- vocab-card: {"id":"vocab-akhadha","word":"أَخَذَ","reading":"akhadha","meaning":"he took; to take","priority":"optional","sourceSection":"Forms and examples"} -->
+<!-- vocab-card: {"id":"vocab-saala","word":"سَأَلَ","reading":"saʾala","meaning":"he asked; to ask","priority":"optional","sourceSection":"Forms and examples"} -->
+<!-- vocab-card: {"id":"vocab-qaraa","word":"قَرَأَ","reading":"qaraʾa","meaning":"he read; to read","priority":"optional","sourceSection":"Forms and examples"} -->
+<!-- vocab-card: {"id":"vocab-akala","word":"أَكَلَ","reading":"akala","meaning":"he ate; to eat","priority":"optional","sourceSection":"Forms and examples"} -->
+
 <!-- quiz: {"type": "multiple-choice", "question": "Which verb is final-hamzated?", "options": ["قَرَأَ", "أَخَذَ", "سَأَلَ", "كَتَبَ"], "answer": 0} -->
 
 ## Usage notes
@@ -23,7 +30,12 @@ Some very common initial-hamza verbs have short imperatives: **خُذْ** (khudh
 
 For spelling, watch the vowel environment around hamza: **سَأَلَ** (saʾala), **سُؤَالٌ** (suʾālun), and **مَسْؤُولٌ** (masʾūlun) all keep the same root idea of asking or responsibility.
 
-<!-- grammar-card: {"rule": "A hamzated verb has hamza as one of its root consonants.", "hint": "Find whether hamza appears first, middle, or final in the root.", "example": "قَرَأَ الْوَلَدُ قِصَّةً", "answer": "The boy read a story", "explanation": "قَرَأَ is final-hamzated because hamza is the third root consonant."} -->
+<!-- vocab-card: {"id":"vocab-sual","word":"سُؤَالٌ","reading":"suʾālun","meaning":"question","priority":"optional","sourceSection":"Usage notes"} -->
+<!-- vocab-card: {"id":"vocab-masul","word":"مَسْؤُولٌ","reading":"masʾūlun","meaning":"responsible","priority":"optional","sourceSection":"Usage notes"} -->
+<!-- grammar-card: {"id":"hamza-root-position","kind":"rule","format":"qa","priority":"essential","sourceSection":"Usage notes","rule":"A hamzated verb has hamza as one of its root consonants.","example":"Is قَرَأَ initial-, middle-, or final-hamzated?","answer":"Final-hamzated: hamza is its third root consonant.","explanation":"The root is ق-ر-ء. By contrast, أَخَذَ is initial-hamzated and سَأَلَ is middle-hamzated.","legacyAliases":[{"rule":"A hamzated verb has hamza as one of its root consonants.","example":"قَرَأَ الْوَلَدُ قِصَّةً"}]} -->
+<!-- grammar-card: {"id":"seat-not-new-root","kind":"concept","format":"qa","priority":"essential","sourceSection":"Usage notes","rule":"A changed hamza seat need not change the root consonant.","example":"Do أ in سَأَلَ and ؤ in سُؤَالٌ mean these words have different root consonants at that position?","answer":"No. Both represent hamza; its written seat changes with the vowel environment.","explanation":"Spelling support letters are not extra radicals. The asking-related family retains the root س-ء-ل."} -->
+<!-- grammar-card: {"id":"eat-short-command","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Usage notes","rule":"The frequent verb أَكَلَ has a shortened masculine singular imperative.","example":"Give the command “Eat bread”: ___ خُبْزًا.","answer":"كُلْ","explanation":"كُلْ (kul) is the conventional imperative of أَكَلَ, not a new root."} -->
+<!-- grammar-card: {"id":"command-short-form","kind":"rule","format":"qa","priority":"optional","sourceSection":"Usage notes","rule":"مُرْ is a common shortened command meaning command.","example":"Which short imperative taught here means “command,” rather than take or eat?","answer":"مُرْ","explanation":"مُرْ (mur) belongs with the high-frequency shortened commands. Learn these lexical exceptions rather than deleting hamza from every imperative."} -->
 
 ## Practice patterns
 
@@ -33,9 +45,12 @@ Conjugate slowly and keep the hamza audible:
 - **سَأَلَ، يَسْأَلُ، اِسْأَلْ** (saʾala, yasʾalu, isʾal) — asked, asks, ask.
 - **قَرَأَ، يَقْرَأُ، اِقْرَأْ** (qaraʾa, yaqraʾu, iqraʾ) — read, reads, read.
 
+<!-- grammar-card: {"id":"ask-retains-hamza","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Practice patterns","rule":"The imperative of سَأَلَ retains its root hamza.","example":"سَأَلَ → masculine singular command: ___.","answer":"اِسْأَلْ","explanation":"اِسْأَلْ (isʾal) keeps the middle hamza. The short commands خُذْ and كُلْ are not a general hamza-deletion formula."} -->
+<!-- grammar-card: {"id":"read-retains-hamza","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Practice patterns","rule":"The imperative of قَرَأَ retains its final root hamza.","example":"قَرَأَ → masculine singular command: ___.","answer":"اِقْرَأْ","explanation":"اِقْرَأْ (iqraʾ) retains the final hamza and its sukūn."} -->
+
 <!-- quiz: {"type": "multiple-choice", "question": "Which command means take from the verb أَخَذَ?", "options": ["خُذْ", "كُلْ", "اِقْرَأْ", "اِسْأَلْ"], "answer": 0} -->
 
-<!-- grammar-card: {"rule": "Some common initial-hamza verbs have shortened imperatives.", "hint": "Memorize خُذْ, كُلْ, and مُرْ as common commands.", "example": "خُذْ هٰذَا الْكِتَابَ", "answer": "Take this book", "explanation": "خُذْ is the shortened command from أَخَذَ."} -->
+<!-- grammar-card: {"id":"take-short-command","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Practice patterns","rule":"Some common initial-hamza verbs have shortened imperatives.","example":"Complete “Take this book” with the masculine singular command from أَخَذَ: ___ هٰذَا الْكِتَابَ.","answer":"خُذْ","explanation":"خُذْ (khudh) is the shortened command from أَخَذَ. Its missing surface hamza does not make it a different lexical root.","legacyAliases":[{"rule":"Some common initial-hamza verbs have shortened imperatives.","example":"خُذْ هٰذَا الْكِتَابَ"}]} -->
 
 ## Sources
 

@@ -1,5 +1,7 @@
 # Nouns of Instrument (ism al-ālah)
 
+<!-- vocab-inventory: {"mode":"explicit"} -->
+
 A noun of instrument, **اِسْمُ الْآلَةِ** (ismu al-ālati), names the tool or device used to perform an action. Many are built from familiar roots on recognizable patterns.
 
 ## Core idea
@@ -15,13 +17,26 @@ Instrument nouns connect vocabulary to roots. From **فَتَحَ** (fataḥa) �
 | **مِفْعَلَةٌ** | **طَرَقَ** (ṭaraqa) — struck | **مِطْرَقَةٌ** (miṭraqatun) — hammer | **ضَرَبَ النَّجَّارُ الْمِسْمَارَ بِالْمِطْرَقَةِ** (ḍaraba an-najjāru al-mismāra bi-l-miṭraqati) — the carpenter hit the nail with the hammer |
 | **فَعَّالَةٌ** | **غَسَلَ** (ghasala) — washed | **غَسَّالَةٌ** (ghassālatun) — washing machine | **الْغَسَّالَةُ جَدِيدَةٌ** (al-ghassālatu jadīdatun) — the washing machine is new |
 
+<!-- vocab-card: {"id":"vocab-miftah","word":"مِفْتَاحٌ","reading":"miftāḥun","meaning":"key","priority":"essential","sourceSection":"Forms and examples"} -->
+<!-- vocab-card: {"id":"vocab-miknasah","word":"مِكْنَسَةٌ","reading":"miknasatun","meaning":"broom","priority":"essential","sourceSection":"Forms and examples"} -->
+<!-- vocab-card: {"id":"vocab-mitraqah","word":"مِطْرَقَةٌ","reading":"miṭraqatun","meaning":"hammer","priority":"optional","sourceSection":"Forms and examples"} -->
+<!-- vocab-card: {"id":"vocab-ghassalah","word":"غَسَّالَةٌ","reading":"ghassālatun","meaning":"washing machine","priority":"optional","sourceSection":"Forms and examples"} -->
+<!-- vocab-card: {"id":"vocab-fataha","word":"فَتَحَ","reading":"fataḥa","meaning":"he opened; to open","priority":"optional","sourceSection":"Forms and examples"} -->
+<!-- vocab-card: {"id":"vocab-kanasa","word":"كَنَسَ","reading":"kanasa","meaning":"he swept; to sweep","priority":"optional","sourceSection":"Forms and examples"} -->
+<!-- vocab-card: {"id":"vocab-taraqa","word":"طَرَقَ","reading":"ṭaraqa","meaning":"he struck; to strike","priority":"optional","sourceSection":"Forms and examples"} -->
+<!-- vocab-card: {"id":"vocab-ghasala","word":"غَسَلَ","reading":"ghasala","meaning":"he washed; to wash","priority":"optional","sourceSection":"Forms and examples"} -->
+<!-- grammar-card: {"id":"broom-pattern","kind":"rule","format":"qa","priority":"optional","sourceSection":"Forms and examples","rule":"Common instrument nouns use several patterns, not one universal shape.","example":"Which instrument pattern fits مِكْنَسَةٌ?","answer":"مِفْعَلَةٌ","explanation":"The broom noun has mi-, a closed first root syllable, and final -a(tun); غَسَّالَةٌ instead illustrates فَعَّالَةٌ."} -->
+<!-- grammar-card: {"id":"washing-machine-pattern","kind":"rule","format":"qa","priority":"optional","sourceSection":"Forms and examples","rule":"The modern device غَسَّالَةٌ illustrates a tool pattern without initial mi-.","example":"Which pattern does غَسَّالَةٌ follow?","answer":"فَعَّالَةٌ","explanation":"The doubled س and long ā give faʿʿāla. Instrument vocabulary is not restricted to the two mi- patterns."} -->
+
 <!-- quiz: {"type": "multiple-choice", "question": "Which noun is the instrument noun from فَتَحَ (fataḥa), to open?", "options": ["مِفْتَاحٌ (miftāḥun)", "فَاتِحٌ (fātiḥun)", "مَفْتُوحٌ (maftūḥun)", "فَتْحٌ (fatḥun)"], "answer": 0} -->
 
 ## Usage notes
 
 Instrument nouns often appear after **بِـ** when you say what tool was used: **كَتَبْتُ بِالْقَلَمِ** (katabtu bi-l-qalami) — I wrote with the pen. Some common tools, such as **قَلَمٌ** (qalamun) — pen, are not transparent on the common instrument patterns, so dictionaries remain important.
 
-<!-- grammar-card: {"rule": "اِسْمُ الْآلَةِ names the tool used to perform an action, often on patterns like مِفْعَالٌ and مِفْعَلَةٌ.", "hint": "Connect the tool to a verb root.", "example": "فَتَحَ becomes مِفْتَاحٌ", "answer": "مِفْتَاحٌ means key, the tool for opening", "explanation": "The root ف-ت-ح relates to opening, and مِفْتَاحٌ is the instrument used for that action."} -->
+<!-- vocab-card: {"id":"vocab-qalam","word":"قَلَمٌ","reading":"qalamun","meaning":"pen","priority":"optional","sourceSection":"Usage notes"} -->
+<!-- grammar-card: {"id":"opening-instrument","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Usage notes","rule":"اِسْمُ الْآلَةِ names the tool used to perform an action, often on patterns like مِفْعَالٌ and مِفْعَلَةٌ.","example":"From فَتَحَ, give the instrument noun meaning key, in indefinite nominative form: ___.","answer":"مِفْتَاحٌ","explanation":"مِفْتَاحٌ (miftāḥun) follows مِفْعَالٌ and names the tool for opening, not the opener or the opened thing.","legacyAliases":[{"rule":"اِسْمُ الْآلَةِ names the tool used to perform an action, often on patterns like مِفْعَالٌ and مِفْعَلَةٌ.","example":"فَتَحَ becomes مِفْتَاحٌ"}]} -->
+<!-- grammar-card: {"id":"instrument-not-all-predictable","kind":"concept","format":"qa","priority":"essential","sourceSection":"Usage notes","rule":"Instrument patterns help recognition but do not predict every tool name.","example":"Must every tool name, including قَلَمٌ, transparently follow a common derived instrument pattern?","answer":"No. Some tool names must be learned lexically and checked in a dictionary.","explanation":"A word can name an instrument semantically without being a predictable derivation on مِفْعَالٌ or مِفْعَلَةٌ."} -->
 
 ## Practice patterns
 
@@ -33,7 +48,7 @@ When you learn a new tool word, ask three questions:
 
 <!-- quiz: {"type": "multiple-choice", "question": "Which pattern does مِكْنَسَةٌ (miknasatun), broom, follow?", "options": ["مِفْعَلَةٌ (mifʿalatun)", "فَعِيلٌ (faʿīlun)", "فَعْلَلَ (faʿlala)", "اِفْعَلَّ (ifʿalla)"], "answer": 0} -->
 
-<!-- grammar-card: {"rule": "The preposition بِـ often marks the instrument used for an action.", "hint": "Translate بِالْمِطْرَقَةِ as with the hammer.", "example": "ضَرَبَ النَّجَّارُ الْمِسْمَارَ بِالْمِطْرَقَةِ", "answer": "The carpenter hit the nail with the hammer", "explanation": "بِالْمِطْرَقَةِ identifies the tool used to perform the action."} -->
+<!-- grammar-card: {"id":"instrument-bi-government","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Practice patterns","rule":"The preposition بِـ often marks the instrument used for an action.","example":"Complete “with the hammer,” retaining the preposition and article: ضَرَبَ النَّجَّارُ الْمِسْمَارَ ___.","answer":"بِالْمِطْرَقَةِ","explanation":"بِالْمِطْرَقَةِ (bi-l-miṭraqati) names the instrument and has genitive -i after bi-.","legacyAliases":[{"rule":"The preposition بِـ often marks the instrument used for an action.","example":"ضَرَبَ النَّجَّارُ الْمِسْمَارَ بِالْمِطْرَقَةِ"}]} -->
 
 ## Sources
 

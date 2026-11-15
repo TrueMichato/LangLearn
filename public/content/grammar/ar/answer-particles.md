@@ -1,10 +1,18 @@
 # Answer Particles: naʿam, balā, kallā
 
+<!-- vocab-inventory: {"mode":"explicit"} -->
+
 Arabic has several short answer particles. They are small, but they matter because a negative question can flip the expected English yes or no.
 
 ## Core idea
 
 **نَعَمْ** (naʿam) confirms a positive statement or question. **بَلَى** (balā) rejects a negative question and answers yes, actually. **كَلَّا** (kallā) strongly rejects or warns, and **أَجَلْ** (ajal) is a formal yes, indeed.
+
+<!-- vocab-card: {"id":"vocab-naam","word":"نَعَمْ","reading":"naʿam","meaning":"yes; confirmation (including confirmation of a negation in traditional usage)","priority":"optional","sourceSection":"Core idea"} -->
+<!-- vocab-card: {"id":"vocab-bala","word":"بَلَى","reading":"balā","meaning":"yes, actually (overturning a negative)","priority":"essential","sourceSection":"Core idea"} -->
+<!-- vocab-card: {"id":"vocab-kalla","word":"كَلَّا","reading":"kallā","meaning":"certainly not; emphatic rejection or warning","priority":"optional","sourceSection":"Core idea"} -->
+<!-- vocab-card: {"id":"vocab-ajal","word":"أَجَلْ","reading":"ajal","meaning":"yes; indeed (formal)","priority":"optional","sourceSection":"Core idea"} -->
+<!-- grammar-card: {"id":"kalla-rejection-force","kind":"concept","format":"qa","priority":"optional","sourceSection":"Core idea","rule":"كَلَّا has forceful rejecting or warning force, not merely neutral confirmation.","example":"What extra force does كَلَّا carry compared with a neutral no?","answer":"Strong rejection or warning: certainly not.","explanation":"The lying and leaving-work examples reject the proposed action emphatically; أَجَلْ is instead a formal affirmative."} -->
 
 ## Forms and examples
 
@@ -23,7 +31,8 @@ After a negative question, English speakers are tempted to use yes. In careful A
 
 Using **نَعَمْ** (naʿam) after a negative question can sound like you are confirming the negative in traditional usage, so **بَلَى** is safer when you mean yes, actually.
 
-<!-- grammar-card: {"rule": "بَلَى answers a negative question by cancelling the negation.", "hint": "If the question contains not, use بَلَى for yes, actually.", "example": "أَلَسْتَ طَالِبًا؟ بَلَى", "answer": "Aren't you a student? Yes, I am", "explanation": "بَلَى rejects the negative wording and affirms that the speaker is a student."} -->
+<!-- grammar-card: {"id":"negative-question-overturn","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Usage notes","rule":"بَلَى answers a negative question by cancelling the negation.","example":"You are a student. Answer the negative question affirmatively: أَلَسْتَ طَالِبًا؟ ___.","answer":"بَلَى","explanation":"بَلَى (balā) overturns the negation and affirms that you are a student. It is not a general replacement for yes after positive questions.","legacyAliases":[{"rule":"بَلَى answers a negative question by cancelling the negation.","example":"أَلَسْتَ طَالِبًا؟ بَلَى"}]} -->
+<!-- grammar-card: {"id":"negative-confirmation-contrast","kind":"concept","format":"qa","priority":"essential","sourceSection":"Usage notes","rule":"Traditional نَعَمْ can confirm the negation, whereas بَلَى overturns it.","example":"In traditional usage, how does نَعَمْ differ from بَلَى after a negatively worded question?","answer":"نَعَمْ confirms the negative proposition; بَلَى cancels it and affirms the positive.","explanation":"English yes/no intuitions do not transfer reliably. State the full answer if necessary; careful Arabic uses بَلَى for yes, actually."} -->
 
 ## Practice patterns
 
@@ -35,7 +44,7 @@ Practice pairing the answer with the question type:
 
 <!-- quiz: {"type": "multiple-choice", "question": "Which answer fits أَلَمْ تَقْرَأِ الْكِتَابَ؟ if you did read it?", "options": ["بَلَى، قَرَأْتُهُ", "نَعَمْ، لَمْ أَقْرَأْهُ", "كَلَّا، قَرَأْتُهُ", "لَا، قَرَأْتُهُ"], "answer": 0} -->
 
-<!-- grammar-card: {"rule": "نَعَمْ is the ordinary yes for positive questions.", "hint": "Use it when the question is not negative.", "example": "هَلْ حَضَرَ عَلِيٌّ؟ نَعَمْ، حَضَرَ", "answer": "Did Ali attend? Yes, he attended", "explanation": "The question is positive, so نَعَمْ confirms it directly."} -->
+<!-- grammar-card: {"id":"positive-question-confirm","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Practice patterns","rule":"نَعَمْ is the ordinary yes for positive questions.","example":"Confirm that Ali attended: هَلْ حَضَرَ عَلِيٌّ؟ ___، حَضَرَ.","answer":"نَعَمْ","explanation":"نَعَمْ (naʿam) directly confirms the positive question. No negation needs to be overturned.","legacyAliases":[{"rule":"نَعَمْ is the ordinary yes for positive questions.","example":"هَلْ حَضَرَ عَلِيٌّ؟ نَعَمْ، حَضَرَ"}]} -->
 
 ## Sources
 

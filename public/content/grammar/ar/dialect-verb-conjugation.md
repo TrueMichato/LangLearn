@@ -1,10 +1,12 @@
 # How Dialect Verbs Conjugate (bi-/ʿam prefixes, dropped case endings)
 
+<!-- vocab-inventory: {"mode":"explicit"} -->
+
 Modern Arabic dialects are not one system, but many dialects share visible patterns that differ from formal MSA. Learners often notice prefixes such as بِـ (bi-) or عَمْ (ʿam), simpler endings, and the loss of case and mood vowels in everyday speech.
 
 ## Core idea
 
-MSA imperfect verbs have mood endings: أَكْتُبُ (aktubu) — I write, أَكْتُبَ (aktuba) — that I write, and أَكْتُبْ (aktub) — let me write / I did not write. In many dialects, the everyday form drops these final mood endings and adds a prefix for habitual or present meaning.
+MSA imperfect verbs have mood endings: أَكْتُبُ (aktubu) — I write, أَكْتُبَ (aktuba) — subjunctive, as after أَنْ, and أَكْتُبْ (aktub) — jussive, as in لَمْ أَكْتُبْ (lam aktub) — I did not write. The jussive form alone does not supply the negation. In many dialects, the everyday form lacks these final mood endings; some dialects also use a prefix for habitual or present meaning.
 
 | MSA | Common dialect-style pattern |
 |---|---|
@@ -23,7 +25,10 @@ In Egyptian-style patterns, بِـ (bi-) often marks present or habitual action:
 - نِحْنَا عَمْ نِدْرُسْ (niḥnā ʿam nidrus) — we are studying.
 - هُمْ بِيِسْأَلُوا سُؤَالْ (hum biyisʾalū suʾāl) — they ask / are asking a question.
 
-<!-- grammar-card: {"rule": "Many dialects use بِـ (bi-) before imperfect verbs for present or habitual meaning.", "hint": "Compare MSA يَكْتُبُ (yaktubu) with هُوَّ بِيَكْتُبْ (huwwa biyiktub).", "example": "Complete: he writes — هُوَّ ___ يَكْتُبْ in a dialect-style form.", "answer": "بِيَكْتُبْ (biyiktub)", "explanation": "The prefix بِـ (bi-) plus the imperfect stem gives هُوَّ بِيَكْتُبْ (huwwa biyiktub) — he writes or he is writing."} -->
+<!-- grammar-card: {"id":"am-progressive","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Habitual and progressive prefixes","rule":"A Levantine progressive marker introduces the activity currently in progress.","example":"Complete the taught b-prefixed variant of “I am studying”: أَنَا عَمْ ___.","answer":"بَدْرُسْ","explanation":"Ana ʿam badrus is one Levantine-style variant. Forms without b- also occur; the answer is one selected spelling, not alternative spellings pasted into a blank.","legacyAliases":[{"rule":"عَمْ (ʿam) commonly marks progressive action in Levantine-style dialect phrases.","example":"Complete: I am studying — أَنَا عَمْ ___ (ana ʿam ___)."}]} -->
+
+<!-- grammar-card: {"id":"bi-present","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Habitual and progressive prefixes","rule":"A bi-prefixed imperfect can express present or habitual action in the illustrated Egyptian-style pattern.","example":"Complete the whole verb in the taught dialect-style “he writes”: هُوَّ ___.","answer":"بِيَكْتُبْ","explanation":"Biyiktub is the complete verb, not a prefix to be followed by a second يَكْتُبْ. This bi-pattern is not universal across Arabic dialects.","legacyAliases":[{"rule":"Many dialects use بِـ (bi-) before imperfect verbs for present or habitual meaning.","example":"Complete: he writes — هُوَّ ___ يَكْتُبْ in a dialect-style form."}]} -->
+<!-- grammar-card: {"id":"bi-am-contrast","kind":"concept","format":"qa","priority":"essential","sourceSection":"Habitual and progressive prefixes","rule":"Present/habitual and progressive markers have regional distributions.","example":"What distinction is taught between Egyptian-style bi- and Levantine-style ʿam?","answer":"Bi- commonly marks present or habitual action; ʿam marks action in progress.","explanation":"An Egyptian bi-form can also describe an ongoing action in context. Levantine ʿam may combine with or without a b-prefixed form, depending on the variety."} -->
 
 ## Dropped case and mood endings
 
@@ -34,13 +39,17 @@ Dialect speech normally does not preserve the case endings of nouns or the mood 
 - MSA: أُرِيدُ أَنْ أَذْهَبَ (urīdu an adh-haba) — I want to go.
 - Dialect-style: بَدِّي رُوحْ (baddī rūḥ) — I want to go.
 
+<!-- vocab-card: {"id":"vocab-baddi","word":"بَدِّي","reading":"baddī","meaning":"I want; Levantine","priority":"optional","sourceSection":"Dropped case and mood endings"} -->
+<!-- grammar-card: {"id":"lost-endings","kind":"concept","format":"qa","priority":"essential","sourceSection":"Dropped case and mood endings","rule":"Spoken dialects generally do not retain the MSA case/mood ending system.","example":"Which two kinds of final grammatical endings are normally absent from the dialect examples compared with fully vocalized MSA?","answer":"Noun case endings and imperfect-verb mood endings.","explanation":"This is not a claim that all dialect words lose every final vowel or that every dialect shares one verb paradigm."} -->
+
 <!-- quiz: {"type": "multiple-choice", "question": "What does عَمْ (ʿam) often mark in Levantine-style verb phrases?", "options": ["Progressive action", "Past perfect only", "Dual agreement", "Genitive case"], "answer": 0} -->
 
-<!-- grammar-card: {"rule": "عَمْ (ʿam) commonly marks progressive action in Levantine-style dialect phrases.", "hint": "عَمْ بَكْتُبْ (ʿam baktub) means I am writing.", "example": "Complete: I am studying — أَنَا عَمْ ___ (ana ʿam ___).", "answer": "بَدْرُسْ (badrus) or بَدْرُس (badrus)", "explanation": "أَنَا عَمْ بَدْرُسْ (ana ʿam badrus) is a Levantine-style way to say I am studying."} -->
 
 ## Practice patterns
 
 Use these patterns for recognition, not for replacing formal MSA in essays or exams. Dialect spelling is less standardized than MSA spelling, and real forms vary by region.
+
+<!-- grammar-card: {"id":"dialect-variation-register","kind":"concept","format":"qa","priority":"optional","sourceSection":"Practice patterns","rule":"Dialect recognition and formal MSA production have different targets.","example":"Should the example spellings and bi-/ʿam patterns be imposed as one conjugation system for all dialects or for formal essays?","answer":"No. Regional forms and spellings vary; formal essays normally use MSA structures.","explanation":"The examples support recognition, not a universal dialect conjugation table."} -->
 
 - إِنْتِ بِتِكْتُبِي الرِّسَالَة (inti bitiktubī ar-risāla) — you, feminine singular, write the letter.
 - إِحْنَا بِنْرُوحْ عَلَى السُّوقْ (iḥnā binrūḥ ʿala as-sūq) — we go to the market.
@@ -48,7 +57,7 @@ Use these patterns for recognition, not for replacing formal MSA in essays or ex
 
 <!-- quiz: {"type": "multiple-choice", "question": "Which statement is true about many spoken dialects compared with fully vocalized MSA?", "options": ["They usually drop case and mood endings", "They always preserve nominative and accusative endings", "They never use prefixes", "They require dual verb endings in every sentence"], "answer": 0} -->
 
-<!-- grammar-card: {"rule": "Dialect examples are useful for recognition, but formal writing should keep MSA endings and structures.", "hint": "Use MSA in formal grammar exercises unless a dialect is specifically requested.", "example": "Choose the formal MSA form for I write: أَكْتُب___ (aktub___).", "answer": "أَكْتُبُ (aktubu)", "explanation": "Formal MSA keeps the indicative ending in أَكْتُبُ (aktubu), while many dialects use shorter forms such as بَكْتُبْ (baktub)."} -->
+<!-- grammar-card: {"id":"formal-indicative","kind":"rule","format":"qa","priority":"optional","sourceSection":"Practice patterns","rule":"Dialect recognition does not replace formal MSA mood distinctions.","example":"Give the fully vocalized MSA indicative “I write”, without a preceding mood-governing particle.","answer":"أَكْتُبُ","explanation":"Aktubu is indicative. Subjunctive أَكْتُبَ and jussive أَكْتُبْ need their grammatical contexts; the jussive alone does not mean I did not write.","legacyAliases":[{"rule":"Dialect examples are useful for recognition, but formal writing should keep MSA endings and structures.","example":"Choose the formal MSA form for I write: أَكْتُب___ (aktub___)."}]} -->
 
 ## Sources
 

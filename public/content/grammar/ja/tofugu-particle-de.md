@@ -1,5 +1,7 @@
 # で (de) — Location of Action / Means
 
+<!-- vocab-inventory: {"mode":"explicit"} -->
+
 > **Source:** Content from [Tofugu](https://www.tofugu.com/japanese-grammar/particle-de/). For personal study.
 
 Particle で: To Specify How / Where 
@@ -17,6 +19,8 @@ Particle
 Particle で appears in a lot of different contexts, and is an important particle to wrap your mind around. Its meaning shifts depending on how it's used, but, at its core, particle で helps specify *where* or *how* an activity or an event takes place. In this page, we'll walk you through the ins and outs of particle で, always referring back to the underlying concept it represents: specification.
 
 ### Conceptualizing Particle で
+
+<!-- grammar-card: {"id":"demarcation-mnemonic","kind":"concept","format":"qa","priority":"optional","sourceSection":"Conceptualizing Particle で","rule":"The selection-tool metaphor links で's specifications","example":"What do the selection tool and volleyball-court lines represent in the mnemonic for で?","answer":"They delimit the setting or specification within which an activity occurs.","explanation":"The de in demarcate cues で. Beyond physical area, the selected specification may be a tool, group, quantity, or time boundary."} -->
 
 Let's take a closer look at this underlying "specification" concept that particle で represents. We'll use a couple of metaphors to help make sense of this! To start, imagine that particle で is a computer's selection tool. You can use this tool to specify an area on your screen, right?
 
@@ -37,6 +41,9 @@ To really drive this difference home, let's turn to one more metaphor. Imagine p
 The lines around the court and the computer's selection tool do the same thing — they specify the area in which the activity will occur. As we move through the different uses of で, which expand beyond just specifying locations, we'll return to these metaphors to help you gain a holistic understanding of the particle.
 
 ### で for Specifying Places
+
+<!-- grammar-card: {"id":"activity-location-application","kind":"rule","format":"cloze","priority":"essential","sourceSection":"で for Specifying Places","rule":"で marks the place where an action happens","hint":"Locate the volleyball activity.","example":"ロングビーチ___バレーボールをする。","answer":"で","explanation":"で specifies the activity's setting. In contrast, に ordinarily locates existence or residence, as with いる or 住む."} -->
+<!-- grammar-card: {"id":"nonphysical-settings","kind":"concept","format":"qa","priority":"optional","sourceSection":"で for Specifying Places","rule":"An activity's で setting need not be a physical place","example":"Why can a household environment or Instagram be marked with で?","answer":"They can be treated as the setting or medium where an activity occurs.","explanation":"A poor household frames growing up; Instagram frames finding material. Virtual location and means can overlap, rather than requiring two unrelated particles."} -->
 
 As we've already discussed, one of the most fundamental uses of particle で is to specify the area in which an action or event occurs. This area is often a physical place:
 
@@ -65,6 +72,11 @@ See how you're treating it as if it's a virtual location? If the virtual locatio
 This use of で is hard to separate from the next use we'll talk about, which is to specify the means by which an action is carried out. Whether Instagram is the place where you found cat memes, or if it's the means through which you found them is unclear (and up to personal interpretation). The point is that particle で does both of these things. Let's take a closer look in the next section!
 
 ### で for Means of an Action
+
+<!-- grammar-card: {"id":"instrument-application","kind":"rule","format":"cloze","priority":"essential","sourceSection":"で for Means of an Action","rule":"で marks the tool used to perform an action","hint":"With scissors.","example":"ハサミ___紙を切ります。","answer":"で","explanation":"The scissors are the instrument, not the paper being cut. The same means relation extends to travel by a vehicle or on foot."} -->
+<!-- grammar-card: {"id":"language-means-application","kind":"rule","format":"cloze","priority":"optional","sourceSection":"で for Means of an Action","rule":"で marks the language used as a means of communication","hint":"In Japanese.","example":"日本語___話しましょう。","answer":"で","explanation":"Japanese is the medium of speaking. The particle does not mark a destination or the person spoken to."} -->
+<!-- vocab-card: {"id":"vocab-hasami","word":"ハサミ","reading":"はさみ","meaning":"scissors","priority":"optional","sourceSection":"で for Means of an Action"} -->
+<!-- vocab-card: {"id":"vocab-toho","word":"徒歩","reading":"とほ","meaning":"going on foot; walking as a means of travel","priority":"optional","sourceSection":"で for Means of an Action"} -->
 
 で is used to specify the means by which something is done. Returning to our selection tool metaphor, it's as though で specifies which tool is used by drawing a line around it.
 
@@ -98,6 +110,9 @@ To put it simply, this sentence is suggesting not to judge people only by means 
 
 ### で for Components
 
+<!-- grammar-card: {"id":"material-application","kind":"rule","format":"cloze","priority":"essential","sourceSection":"で for Components","rule":"で can mark the material or components of a whole","hint":"Made of wood.","example":"このテーブルは木___できている。","answer":"で","explanation":"Wood is the material making up the table. The lesson also applies this specification to ingredients and chapters."} -->
+<!-- vocab-card: {"id":"vocab-ki","word":"木","reading":"き","meaning":"tree; wood","priority":"optional","sourceSection":"で for Components"} -->
+
 Another use of で is to specify the components of a larger whole. These could be the materials, the ingredients, or the identifiable parts of something. So for example, if you're reading a novel made up of five chapters, you can say:
 
   - この小説は五つの章**で** 構成(こうせい)されている。
@@ -120,13 +135,13 @@ Or, if you are explaining the ingredients of the cookies you made, you can say:
 
 Here, で specifies flour and sugar as the ingredients for the cookies, indicating that they are what the cookies are made of. In each of the above examples, で specifies the components of a larger whole.
 
-<!-- grammar-card: {"rule":"で marks the place where an action happens","hint":"に / で","example":"ロングビーチ___バレーボールをする。","answer":"で","explanation":"Playing volleyball is an action, so its location takes で rather than に."} -->
-
 ## Beyond the Basics
 
 We've now covered the most fundamental uses of particle で. As we mentioned at the beginning of the page, though, で has a lot of uses. In the following sections, we'll introduce you to a few more. As we go, we'll do our best to connect them to our underlying concept of specification. Let's get to it!
 
 ### で for Categories
+
+<!-- grammar-card: {"id":"comparison-domain","kind":"concept","format":"qa","priority":"optional","sourceSection":"で for Categories","rule":"で can delimit the category within which a preference or comparison holds","example":"What role does スポーツで have in スポーツで好きなのはサッカーだよ?","answer":"It sets sports as the category: among sports, the favorite is soccer.","explanation":"スポーツの中で makes the comparison domain more explicit. This is not a physical location for playing soccer."} -->
 
 Particle で can be used to specify a category. In this use, it's like we're using that selection tool to narrow down the message of the sentence to a specific topic or category. For example, if your friend asked you what your favorite sport is, you might reply:
 
@@ -145,6 +160,10 @@ Let's take a look at another example. If you want to say Mt. Fuji is the tallest
 In this case, で marks 日本の山 (the mountains of Japan) as the category being discussed. As you can see, we can swap out the 中 from 〜の中で with more specific nouns, such as 山.
 
 ### で for Quantities and Measurements
+
+<!-- grammar-card: {"id":"priced-unit-application","kind":"rule","format":"cloze","priority":"optional","sourceSection":"で for Quantities and Measurements","rule":"で can group a quantity as the unit assigned a price","hint":"Ten tomatoes for one hundred yen.","example":"トマトは十個___百円です。","answer":"で","explanation":"The price belongs to the group of ten. In this pricing pattern で can often be omitted, unlike the speed-as-manner pattern below."} -->
+<!-- grammar-card: {"id":"speed-versus-price-omission","kind":"concept","format":"qa","priority":"optional","sourceSection":"で for Quantities and Measurements","rule":"Speed-as-manner で is not omitted like a pricing-unit で","example":"Can 時速百キロで走っていた omit で in the same way as 十個で百円?","answer":"No. The speed expression needs で to describe how the truck was moving in this pattern.","explanation":"The pricing expression can be shortened to 十個百円; speed modifies the manner of the event."} -->
+<!-- vocab-card: {"id":"vocab-jisoku","word":"時速","reading":"じそく","meaning":"speed per hour","priority":"optional","sourceSection":"で for Quantities and Measurements"} -->
 
 Another use of で is to specify quantities and measurements. For example, let's say you're at a farmer's market and see a pile of beautiful tomatoes. You ask how much they are, and the farmer replies:
 
@@ -165,6 +184,8 @@ When it comes to measuring speed or velocity though, で cannot be omitted. To e
 So why is the で required here? 時速百キロで describes the way the truck was driving, making the whole phrase function like an adverb. This use of で is one of the areas where it has some crossover with the て form, and in fact particle で is sometimes described as the て form version of だ. The same applies to other speed-related phrases like すごい速さ**で** and すごいスピード**で**, both meaning "at a very high speed."
 
 ### で for Groups of People
+
+<!-- grammar-card: {"id":"group-versus-subject","kind":"concept","format":"qa","priority":"essential","sourceSection":"で for Groups of People","rule":"Group で emphasizes participation as a unit rather than only identifying a subject","example":"How does 全員で考えました differ from 全員が考えました?","answer":"で highlights everyone's joint participation; が simply identifies everyone as the subject.","explanation":"二人で likewise specifies a two-person group. Institutional で can delimit who undertakes the task, such as the police rather than outsiders."} -->
 
 で can specify groups of people as well. It draws lines around the number of people who participate in an activity or event. For example, if you want to say you live in the house with your husband (so there are two people in your household), you can say:
 
@@ -189,6 +210,8 @@ This use of で to emphasize people as the means of doing an activity can be use
 Again, we could use particle が instead of で here without a major change in meaning. By using で, however, you are drawing the distinction between the police and those who are not in the police, and emphasizing that the investigation will be done by the police only. It may imply that they don't want outsiders to be involved.
 
 ### で for Time Boundaries
+
+<!-- grammar-card: {"id":"duration-versus-completion-limit","kind":"concept","format":"qa","priority":"essential","sourceSection":"で for Time Boundaries","rule":"Time-span で can mark the time needed or allowed for completion","example":"What changes when 五分話します becomes 五分で話します in the example here?","answer":"It changes from speaking for five minutes to finishing the talk within five minutes.","explanation":"で frames a completion boundary rather than a bare duration. With a clock time such as 三時で, it can mark the cutoff of an ongoing activity."} -->
 
 で can also be used to specify a time limit or boundary. For example, if you say 五分話します, it means you'll talk about something **for** five minutes. If you add で after 五分, however, the meaning changes to mean you'll finish the talk **within** five minutes.
 

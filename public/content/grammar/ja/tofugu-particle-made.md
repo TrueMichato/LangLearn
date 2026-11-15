@@ -1,5 +1,7 @@
 # まで (made) — Until / Up To
 
+<!-- vocab-inventory: {"mode":"explicit"} -->
+
 > **Source:** Content from [Tofugu](https://www.tofugu.com/japanese-grammar/particle-made/). For personal study.
 
 Particle まで: Endpoint Marker
@@ -44,6 +46,8 @@ However, から is not always used together with まで. For example, you may sa
 
 In this case, perhaps you are at home and are implying you walk from there to school. It's also possible you could be talking about walking from a different place to school, but in that case, the context of the conversation to this point would need to fill the information gap. Even in situations when から is not used, まで implies there is a start point somewhere that accompanies it.
 
+<!-- grammar-card: {"id":"made-spatial-endpoint","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Terminal Point まで","rule":"まで marks the endpoint of movement, even without an explicit starting point","example":"学校___歩く。 (I'll walk as far as school.)","answer":"まで","explanation":"The walk ends at school. A から phrase can be omitted when its starting point is understood or irrelevant."} -->
+<!-- vocab-card: {"id":"vocab-kyori","word":"距離","reading":"きょり","meaning":"distance","priority":"optional","sourceSection":"Terminal Point まで"} -->
 ### Pattern of Use
 
 In this section, we'll list the basic usage patterns for the particle まで. We'll explain these uses in more detail later.
@@ -80,6 +84,7 @@ You'll learn some other combinations later in this page.
 
 Japanese particles often get omitted, especially in speech, but まで is one of the particles that is not usually skipped, because the meaning of a sentence can be difficult to uncover without it.
 
+<!-- grammar-card: {"id":"made-omission","kind":"concept","format":"qa","priority":"optional","sourceSection":"Particle Omission and まで","rule":"まで normally stays expressed even when the から phrase is omitted","example":"Does omitting the understood starting location mean the endpoint particle can normally be dropped too?","answer":"No. まで is normally retained so the endpoint relation remains clear.","explanation":"Omitting a whole source phrase is different from omitting the particle that tells the listener how the remaining noun relates to the action."} -->
 ### Particle まで for End Point in Space
 
 As you've learned already, in its most basic use, まで marks the end point related to a location. In this usage, it's often used together with the particle から, as in:
@@ -136,6 +141,8 @@ Again, まで can be used alone when the context is clear, or if the part marked
 
   - I slept **until** midday. .
 
+<!-- grammar-card: {"id":"made-continuous-span","kind":"rule","format":"cloze","priority":"essential","sourceSection":"まで for End Point in Time","rule":"まで marks the end point of a continuous span","hint":"まで / までに","example":"イベントは今週の日曜日___です。","answer":"まで","explanation":"The event runs right up to Sunday, which is what まで expresses."} -->
+
 ### まで for End Point in Order
 
 When some things are aligned in a standard order, and each item has a number or name, the start and end points can also be marked by から and まで. Here's a couple of examples.
@@ -148,6 +155,7 @@ When some things are aligned in a standard order, and each item has a number or 
 
   - The alphabet is **from** A and **to** Z.
 
+<!-- grammar-card: {"id":"made-ordered-range","kind":"concept","format":"qa","priority":"optional","sourceSection":"まで for End Point in Order","rule":"から and まで can delimit a conventionally ordered series","example":"In アルファベットはAからZまでです, what does Z mark?","answer":"The final item in the ordered range.","explanation":"The endpoint need not be a location or time: verses, letters, and numbered items can also form a range."} -->
 ### まで for a Limit
 
 まで can also mark a limit of something. For example, if the maximum number of people your car can accommodate is four, you can use まで and say:
@@ -164,6 +172,8 @@ In the same way, if the top speed of your car is 400 km/h, you can say:
 
 In both cases, the starting point is zero and not relevant, so it's commonly omitted.
 
+<!-- grammar-card: {"id":"made-maximum","kind":"rule","format":"cloze","priority":"essential","sourceSection":"まで for a Limit","rule":"まで can mark an inclusive maximum quantity","example":"この車には４人___乗車できます。 (up to four people)","answer":"まで","explanation":"Four is the capacity limit, including four; the unimportant zero starting point need not be stated."} -->
+
 One more note to this section is that the limit is not always the highest point; it can also be a lower limit. For example, if you are taking an exam in which the passing score is 70/100, you can either say:
 
   - ７０点**から**が合格です。
@@ -176,9 +186,7 @@ One more note to this section is that the limit is not always the highest point;
 
 In the first sentence, から marks 70 as the starting point of a passing score, implying it goes up to a perfect score. On the other hand, the second sentence implies the starting point is a perfect score, and then it counts down to the lowest passable point.
 
-<!-- grammar-card: {"rule":"までに marks a deadline something must happen by","hint":"まで / までに","example":"１０時___帰る。","answer":"までに","explanation":"帰る is a single act completed before ten, so までに is required rather than まで."} -->
-
-<!-- grammar-card: {"rule":"まで marks the end point of a continuous span","hint":"まで / までに","example":"イベントは今週の日曜日___です。","answer":"まで","explanation":"The event runs right up to Sunday, which is what まで expresses."} -->
+<!-- grammar-card: {"id":"made-counting-down","kind":"concept","format":"qa","priority":"optional","sourceSection":"まで for a Limit","rule":"A まで limit follows the direction of the scale being considered","example":"How can ７０点までが合格です describe 70 as the lowest passing score?","answer":"The context counts downward from a perfect score to 70.","explanation":"７０点から counts upward from 70 instead. The lower-limit まで reading needs the descending-scale context; it is not the default interpretation of every score limit."} -->
 
 ## Beyond the Basics
 
@@ -208,6 +216,9 @@ To clarify the end point, まで can be used with the verbs that indicate ending
 
 In this case, まで marks the action 始まる (begin) has been completed. In other words, 始まるまで means "*until* the drama has begun."
 
+<!-- grammar-card: {"id":"made-verb-boundary","kind":"rule","format":"cloze","priority":"essential","sourceSection":"まで for \"Until 〜\"","rule":"Plain-form verb plus まで marks the event that ends the preceding activity","example":"ドラマが始まる___勉強する。","answer":"まで","explanation":"Studying continues until the drama starts. The boundary can be a beginning such as 始まる or a completion such as 終わる; まで itself does not mean every verb is an ending verb."} -->
+<!-- vocab-card: {"id":"vocab-owaru","word":"終わる","reading":"おわる","meaning":"to finish; to end","priority":"optional","sourceSection":"まで for \"Until 〜\""} -->
+<!-- vocab-card: {"id":"vocab-hajimaru","word":"始まる","reading":"はじまる","meaning":"to begin; to start","priority":"optional","sourceSection":"まで for \"Until 〜\""} -->
 ### Emphatic まで
 
 まで can also be used emphatically, and adds the nuance of "even〜" while emphasizing something surprising or extreme.
@@ -226,6 +237,7 @@ Let's continue the same scenario. You are surprised at your friend's reaction be
 
   - Are you surprised **that much**?
 
+<!-- grammar-card: {"id":"made-extreme-even","kind":"concept","format":"qa","priority":"optional","sourceSection":"Emphatic まで","rule":"Emphatic まで treats something as a surprising extreme endpoint","example":"Why can 納豆まで食べれるの express surprise rather than a travel endpoint?","answer":"Natto is treated as the extreme item on the imagined list of foods the person will eat.","explanation":"The endpoint image extends to even natto or, with そこまで, to that extent. The colloquial 食べれる form belongs to the quoted example."} -->
 In this case, まで marks そこ (there), referring to the extreme point of your friend's surprise. It suggests it was an overreaction, and you wonder if loving *natto* deserved a reaction "to that extent."
 
 #### Difference Between Emphatic まで and the Particle も
@@ -270,6 +282,9 @@ It's because the particle も emphasizes the amount when it marks a quantified a
 
  So far, I've eaten up to ten packs of natto.
 
+<!-- grammar-card: {"id":"made-versus-mo","kind":"concept","format":"qa","priority":"optional","sourceSection":"Difference Between Emphatic まで and the Particle も","rule":"まで marks extent, whereas も adds an item or emphasizes a quantity","example":"Does replacing まで with も preserve the meaning of そこまでビックリする?","answer":"No. まで asks about surprise to that extent; も would ask about surprise at that point too.","explanation":"Both can sometimes translate as even, but only まで sets the furthest extent. With a quantity, も can instead emphasize how large the amount is."} -->
+<!-- grammar-card: {"id":"mo-surprising-quantity","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Difference Between Emphatic まで and the Particle も","rule":"も after a quantity expresses surprise at how much","hint":"quantity + も","example":"納豆１０パック___食べた。","answer":"も","explanation":"１０パックも stresses that ten packs is a surprising amount; まで would frame ten packs as a reached endpoint or an additional extreme item."} -->
+
 ### まで and Other Particles
 
 As mentioned in the sentence structure section, まで can be used with other particles. We'll take a look at some of the uses in this section.
@@ -284,6 +299,8 @@ When まで is used with the particle に, it can specify the time by which some
 
 In this example, まで indicates the end point of your action, and に makes it clear it's completed by a particular time point.
 
+<!-- grammar-card: {"id":"made-deadline","kind":"rule","format":"cloze","priority":"essential","sourceSection":"まで + に","rule":"までに marks a deadline something must happen by","hint":"Return by ten, not remain until ten","example":"１０時___帰る。","answer":"までに","explanation":"The intended reading is a return completed no later than ten. までに marks that deadline, rather than a continuous activity lasting until ten."} -->
+
 #### まで + の
 
 The particle の can turn the word before it into a label, which attaches to the noun that follows it to provide additional information about the noun. When using this with まで for example, if you stick の to 東京まで (to Tokyo), it becomes a label. If you then attach that label to another noun, such as 切符 (ticket), it would mean "a ticket to Tokyo," like:
@@ -292,6 +309,8 @@ The particle の can turn the word before it into a label, which attaches to the
 
   - a ticket **to** Tokyo
 
+<!-- grammar-card: {"id":"made-noun-link","kind":"rule","format":"cloze","priority":"optional","sourceSection":"まで + の","rule":"までの links an endpoint phrase to a following noun","example":"東京まで___切符 (a ticket to Tokyo)","answer":"の","explanation":"の lets 東京まで modify 切符. The particle links the whole destination phrase, not just 東京."} -->
+<!-- vocab-card: {"id":"vocab-kippu","word":"切符","reading":"きっぷ","meaning":"ticket","priority":"optional","sourceSection":"まで + の"} -->
 #### まで + も
 
 The emphatic まで and も can be combined when both of their uses overlap to make a phrase even more emphatic than using either alone. For example, the previously mentioned example "You can even eat *natto*!?" can also be written using までも, like:
@@ -306,6 +325,8 @@ The emphatic まで and も can be combined when both of their uses overlap to m
 
 Since this is an exaggerated expression, it might not be commonly used when speaking, because you can emphasize things using just the tone of your voice. Because of this, similar expressions may appear more often in writing to create a particular effect.
 
+<!-- grammar-card: {"id":"made-mo-emphasis","kind":"concept","format":"qa","priority":"optional","sourceSection":"まで + も","rule":"までも can combine extreme extent with additive emphasis","example":"What effect does までも add in 納豆までも食べれるの?","answer":"Stronger, exaggerated emphasis on even natto.","explanation":"まで and も overlap in this example. The combined effect is often more conspicuous in writing; speech can supply emphasis through intonation."} -->
+
 Lastly, the combination of まで and も can also be used in a set phrase, 〜までもない. This phrase is combined with the plain form of a verb, and usually refers to a simple action that can be effortlessly carried out, adding the meaning "needless to 〜" or "It goes without 〜ing."
 
 For example, if you attach the phrase to the verb 言う (say), it can form a phrase:
@@ -317,6 +338,9 @@ For example, if you attach the phrase to the verb 言う (say), it can form a ph
  it goes without saying
 
 In this example, まで marks the easy action 言う (say) as the furthest action you'd take. And then, the "addition" marker particle も is combined with ない (there isn't) to mean "no need to make an addition." Combined, it adds the meaning of "I don't need even to make an additional action that goes as far as this easy action 言う (to say)," which translates to "needless to say" or "it goes without saying."
+
+<!-- vocab-card: {"id":"vocab-iu-mademo-nai","word":"言うまでもない","reading":"いうまでもない","meaning":"needless to say; it goes without saying","priority":"optional","sourceSection":"まで + も"} -->
+<!-- grammar-card: {"id":"made-needless-action","kind":"concept","format":"qa","priority":"optional","sourceSection":"まで + も","rule":"Plain verb plus までもない says there is no need to go as far as that action","example":"What does plain verb + までもない express about doing that action?","answer":"It is unnecessary to go so far as doing it.","explanation":"This is a productive needless-to construction, not a claim that the action never happens. 言うまでもない is its familiar it-goes-without-saying example."} -->
 
 ---
 
@@ -355,7 +379,6 @@ pp. 25, 50-52, 57-59, 80-81, 161, 168
 
 <!-- quiz: {"type":"multiple-choice","question":"What does \"学校**まで**歩く。\" mean?","options":["I'll walk **to** school.","The distance between my house and school is 1km.","I'll walk **from** my house **to** school.","Wait **until** I eat this!"],"answer":0} -->
 
-<!-- grammar-card: {"rule":"も after a quantity expresses surprise at how much","hint":"quantity + も","example":"納豆１０パック___食べた。","answer":"も","explanation":"１０パックも stresses that ten packs is a remarkable amount."} -->
 
 ## Sources
 

@@ -1,5 +1,7 @@
 # たら — If / When (Conditional)
 
+<!-- vocab-inventory: {"mode":"explicit"} -->
+
 > **Source:** Content from [Tofugu](https://www.tofugu.com/japanese-grammar/conditional-form-tara/). For personal study.
 
 Japanese Conditional Form たら
@@ -21,7 +23,7 @@ Conditional
 V-た
 
  + 
-たら
+ら
 
 - 
 
@@ -154,7 +156,7 @@ You can make negative versions of these patterns in the same way. You first chan
    
   
 
-For negative sentences, you usually don't use the です/ます forms.
+For negative conditions, plain negative + なかったら is usually the natural everyday choice. The following polite negative forms are cumbersome or contextually awkward, not impossible in every formal use.
 
 > 
 > 
@@ -165,7 +167,12 @@ For negative sentences, you usually don't use the です/ます forms.
 > 
 > 
 
-<!-- grammar-card: {"rule":"たら attaches to the past form, so voiced verbs take だら","hint":"飲む → ?","example":"お酒(さけ)を飲(の)ん___、運転(うんてん)しないでください。","answer":"だら","explanation":"飲む becomes 飲んだ, which gives 飲んだら rather than 飲んたら."} -->
+<!-- grammar-card: {"id":"voiced-conditional","kind":"rule","format":"cloze","priority":"essential","sourceSection":"What Is たら?","rule":"たら attaches to the past form, so voiced verbs take だら","hint":"Build the conditional of 飲む.","example":"お酒(さけ)を飲(の)ん___、運転(うんてん)しないでください。","answer":"だら","explanation":"Start with 飲んだ and add ら. The operation is past form + ら, not past form + たら."} -->
+<!-- grammar-card: {"id":"noun-na-conditional","kind":"rule","format":"cloze","priority":"optional","sourceSection":"What Is たら?","rule":"Nouns and な-adjectives use the past copula plus ら","example":"夏だ → if it is summer: 夏___。","answer":"だったら","explanation":"Use 夏だったら; 不安 similarly gives 不安だったら. The conditional form does not itself assert past time."} -->
+<!-- grammar-card: {"id":"negative-conditional","kind":"rule","format":"cloze","priority":"optional","sourceSection":"What Is たら?","rule":"A plain negative condition is built from なかった plus ら","example":"食べない → if they do not eat: 食べ___。","answer":"なかったら","explanation":"The same process gives 難しくなかったら and 夏じゃなかったら. Plain negatives are usually more natural than cumbersome polite negatives."} -->
+<!-- grammar-card: {"id":"polite-conditional","kind":"rule","format":"cloze","priority":"optional","sourceSection":"What Is たら?","rule":"A polite past verb can supply the base of a formal conditional","example":"食べます → polite conditional: 食べ___。","answer":"ましたら","explanation":"食べました + ら gives 食べましたら; nominal polite predicates use でしたら."} -->
+<!-- grammar-card: {"id":"conditional-not-past-time","kind":"concept","format":"qa","priority":"essential","sourceSection":"What Is たら?","rule":"A past-shaped conditional does not necessarily describe a past event","example":"Does 食べたら always mean that the eating has already happened?","answer":"No. The form uses the past-shaped base, but context can make it a future if, when, or after condition.","explanation":"Morphological formation and the actual time of the situation must be kept separate."} -->
+<!-- vocab-card: {"id":"vocab-fuan","word":"不安","reading":"ふあん","meaning":"uneasy; anxiety","priority":"optional","sourceSection":"What Is たら?"} -->
 
 ## たら for "When" and "After"
 
@@ -184,7 +191,7 @@ However, there are also situations where "when" is more appropriate as a transla
 
 Still, the basic idea is the same—the event expressed by the clause that precedes 〜たら has to start before another event, which is described in the following clause.
 
-Another important thing to know: you cannot use 〜たら to describe something you have control over.
+In a simple factual account of two completed, deliberately sequenced past actions, 〜たら is not the usual connector for merely saying "I did A and then B." It naturally introduces a discovery, reaction, or result conditional on the first situation instead.
 
   - 勉強をしたら、疲れた。
 
@@ -194,7 +201,7 @@ Another important thing to know: you cannot use 〜たら to describe something 
 
   - I played after studying.
 
-The first sentence indicates that studying makes you tired, which implies you had no control over the situation. But in the second sentence, you were able to control your actions after studying. In other words, the first action, studying, is not really a condition of the other action, playing, so 〜たら is not appropriate.
+The first sentence reports tiredness as a result of studying. The marked second example is awkward as a bare factual sequence of deliberate past actions; てから is a better ordinary choice for that intended meaning. This is not a blanket ban on intentional actions in a たら sentence.
 
 However, this is not applied to the future tense sentences.
 
@@ -202,9 +209,13 @@ However, this is not applied to the future tense sentences.
 
   - I'll study abroad when I graduate.
 
-This sentence is appropriate even though study abroad is your choice. This is because you don't have control over the actions or events of the future.
+This sentence is appropriate even though studying abroad is a choice: future plans, requests, and intentions can follow a condition introduced by たら.
 
-<!-- grammar-card: {"rule":"たら can mean 'once' or 'after'","hint":"着く + たら","example":"家(いえ)に着(つ)い___、電話(でんわ)してね。","answer":"たら","explanation":"着いたら sets arriving as the point after which the call should happen."} -->
+<!-- grammar-card: {"id":"once-arrived","kind":"rule","format":"cloze","priority":"essential","sourceSection":"たら for \"When\" and \"After\"","rule":"たら can mean 'once' or 'after'","hint":"Build the conditional of arriving.","example":"家(いえ)に着(つ)い___、電話(でんわ)してね。","answer":"たら","explanation":"着いたら sets arriving as the condition for calling afterward; requests are allowed in this future use."} -->
+<!-- grammar-card: {"id":"progressive-timing","kind":"concept","format":"qa","priority":"optional","sourceSection":"たら for \"When\" and \"After\"","rule":"A progressive condition can place the next event during an ongoing activity","example":"Why does 走っていたら友達に会った not mean the friend was met only after the run finished?","answer":"The condition is already being in the middle of running, so meeting the friend occurs during that ongoing activity.","explanation":"Compare 走ったらストレッチをします, where finishing the run precedes stretching."} -->
+<!-- grammar-card: {"id":"past-sequence-constraint","kind":"concept","format":"qa","priority":"optional","sourceSection":"たら for \"When\" and \"After\"","rule":"A factual sequence of deliberate past actions is not the default after-reading of たら","example":"Does the awkwardness of 勉強をしたら、遊んだ as simple past narration prohibit 卒業したら留学する?","answer":"No. A future intention can follow たら; the restriction concerns merely narrating a deliberate completed sequence, where てから is more natural.","explanation":"Do not generalize a past-narrative constraint into a ban on all controlled actions."} -->
+<!-- vocab-card: {"id":"vocab-sotsugyou","word":"卒業","reading":"そつぎょう","meaning":"graduation","priority":"optional","sourceSection":"たら for \"When\" and \"After\""} -->
+<!-- vocab-card: {"id":"vocab-ryuugaku","word":"留学","reading":"りゅうがく","meaning":"study abroad","priority":"optional","sourceSection":"たら for \"When\" and \"After\""} -->
 
 ## たら for "If"
 
@@ -223,11 +234,13 @@ It can either mean "I'll go back home after eating this pudding," or "I'll go ba
   - ❌ I'll go back home when I finish eating this pudding.
 ⭕️ I'll go back home if you eat this pudding.
 
+もし(も) highlights the hypothetical reading, but it does not identify an omitted subject: context still decides who eats the pudding.
+
 〜たら can also be used to describe a counterfactual situation.
 
   - お金があったら留学するのに。
 
-  - If I had money, I would have studied abroad.
+  - If I had money, I would study abroad.
 
   - 雨じゃなかったら出かけたのに。
 
@@ -235,7 +248,9 @@ It can either mean "I'll go back home after eating this pudding," or "I'll go ba
 
 In this case, のに is often used at the end of the sentence to emphasize the feeling of regretting the described event or situation.
 
-<!-- grammar-card: {"rule":"い-adjectives take かったら","hint":"安い + たら","example":"安(やす)かっ___、買(か)います。","answer":"たら","explanation":"安い becomes 安かったら, built on the past form 安かった."} -->
+<!-- grammar-card: {"id":"i-adjective-conditional","kind":"rule","format":"cloze","priority":"optional","sourceSection":"たら for \"If\"","rule":"い-adjectives take かったら","hint":"Complete the conditional adjective.","example":"安(やす)かっ___、買(か)います。","answer":"たら","explanation":"安かった + ら gives 安かったら. Only たら is missing from this printed frame."} -->
+<!-- grammar-card: {"id":"moshi-subject","kind":"concept","format":"qa","priority":"optional","sourceSection":"たら for \"If\"","rule":"もし highlights a hypothetical condition without supplying its subject","example":"Does adding もし to このプリン食べたら automatically make the eater you rather than I?","answer":"No. It highlights if rather than a straightforward when/after reading, but context still identifies the eater.","explanation":"Omitted Japanese subjects are not assigned by the word もし."} -->
+<!-- grammar-card: {"id":"counterfactual-noni","kind":"concept","format":"qa","priority":"optional","sourceSection":"たら for \"If\"","rule":"Final のに can contrast a hypothetical outcome with reality","example":"What regret is conveyed by 雨じゃなかったら出かけたのに?","answer":"The speaker would have gone out if it had not been rainy, but the actual rainy situation prevented it.","explanation":"The conditional plus final のに highlights an unrealized alternative."} -->
 
 ## たら for Reference and Suggestion
 
@@ -254,6 +269,9 @@ Kanae: このプリン食べたら？
 Kanae: How about eating this pudding?
 
 In this conversation, Kanae is giving Koichi a condition which might solve his problem. Don't forget to add rising intonation to your voice at the end of the sentence to indicate a question. Otherwise, people will think you plan to continue the sentence.
+
+<!-- grammar-card: {"id":"reference-use","kind":"concept","format":"qa","priority":"optional","sourceSection":"たら for Reference and Suggestion","rule":"A nominal conditional can identify the person being referred to","example":"What does コウイチだったら、外にいますよ do when someone is looking for Koichi?","answer":"It takes Koichi as the person in question: if you mean Koichi, he is outside.","explanation":"This need not predict a future event; it sets the referential condition for the answer."} -->
+<!-- grammar-card: {"id":"rising-suggestion","kind":"rule","format":"cloze","priority":"optional","sourceSection":"たら for Reference and Suggestion","rule":"A rising standalone たら can suggest an action","hint":"Use a conditional with rising intonation to suggest asking.","example":"先生(せんせい)に聞(き)い___？","answer":"たら","explanation":"聞いたら？ can mean why not ask? Without the question-like delivery it may instead sound unfinished.","legacyAliases":[{"rule":"A sentence that ends on たら makes a suggestion","example":"先生(せんせい)に聞(き)い___？"}]} -->
 
 ---
 
@@ -300,8 +318,6 @@ by ニサンサラー・セッワンディ
 <!-- quiz: {"type":"multiple-choice","question":"What does \"走っていたら友達に会った。\" mean?","options":["I ran into my friend when I was running.","❌ I stretch when running.","I became tired after studying.","I played after studying."],"answer":0} -->
 
 <!-- quiz: {"type":"multiple-choice","question":"What does \"勉強をしたら、疲れた。\" mean?","options":["I became tired after studying.","❌ I stretch when running.","I ran into my friend when I was running.","I played after studying."],"answer":0} -->
-
-<!-- grammar-card: {"rule":"A sentence that ends on たら makes a suggestion","hint":"聞く + たら","example":"先生(せんせい)に聞(き)い___？","answer":"たら","explanation":"聞いたら？ means 'why not ask?', leaving どう unsaid."} -->
 
 ## Sources
 

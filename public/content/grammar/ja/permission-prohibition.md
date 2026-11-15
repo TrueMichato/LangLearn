@@ -1,5 +1,7 @@
 # Permission & Prohibition (てもいい、てはいけない)
 
+<!-- vocab-inventory: {"mode":"explicit"} -->
+
 Knowing how to ask for permission, grant it, and express prohibition is essential for everyday Japanese. This lesson covers the key grammar patterns from casual to formal, including how to say "you don't have to."
 
 ## Asking & Giving Permission: てもいい
@@ -66,7 +68,9 @@ In casual speech, ですか is dropped:
 
 <!-- quiz:{"type":"multiple-choice","question":"How do you ask 'May I take a photo?' politely?","options":["写真を撮ってはいけませんか","写真を撮ってもいいですか","写真を撮らなくてもいいですか","写真を撮るべきですか"],"answer":1} -->
 
-<!-- grammar-card: {"rule":"The て-form plus もいい asks for permission","hint":"座る + もいい","example":"ここに座(すわ)っ___ですか。","answer":"てもいい","explanation":"座ってもいいですか politely asks whether sitting here is allowed."} -->
+<!-- grammar-card: {"id":"permission-temoii","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Asking & Giving Permission: てもいい","rule":"The て-form plus もいい asks for permission","hint":"Use the standard permission construction.","example":"ここに座(すわ)っ___ですか。","answer":"てもいい","explanation":"座ってもいいですか (すわってもいいですか) asks permission politely; omitting ですか gives casual 座ってもいい？."} -->
+<!-- vocab-card: {"id":"vocab-douzo","word":"どうぞ","reading":"どうぞ","meaning":"Go ahead; please do (granting permission here)","priority":"optional","sourceSection":"Granting Permission"} -->
+<!-- vocab-card: {"id":"vocab-mochiron","word":"もちろん","reading":"もちろん","meaning":"of course","priority":"optional","sourceSection":"Granting Permission"} -->
 
 ## Formal Alternative: てもかまわない
 
@@ -94,6 +98,10 @@ For more formal or written contexts, **てもかまわない** replaces ても�
 
 > 💡 てもかまわない sounds more polite and considerate than てもいい. It is preferred in business situations and when speaking to superiors.
 
+When **granting** permission to a superior, both てもいい and てもかまわない can sound as if you have authority to approve their action. Choose a response suited to the relationship; grammatical formality alone is not social appropriateness.
+
+<!-- grammar-card: {"id":"formal-permission-kamawanai","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Formal Alternative: てもかまわない","rule":"てもかまわない expresses that an action is acceptable or not minded","example":"I don't mind if you're a little late: 少し遅れても___。 (polite negative of かまう)","answer":"かまいません","explanation":"遅れてもかまいません states acceptance. かまう means mind; this does not automatically make granting permission to a superior appropriate."} -->
+<!-- vocab-card: {"id":"vocab-kamau","word":"かまう","reading":"かまう","meaning":"to mind; to care about (sense here)","priority":"optional","sourceSection":"Formal Alternative: てもかまわない"} -->
 ### Formality Comparison for Permission
 
 | Expression | Formality | Usage |
@@ -107,6 +115,7 @@ For more formal or written contexts, **てもかまわない** replaces ても�
 > *Kochira ni suwatte mo yoroshii desu ka.*
 > May I sit here? (very polite)
 
+<!-- grammar-card: {"id":"very-polite-permission","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Formality Comparison for Permission","rule":"よろしい can replace いい in a very polite permission question","example":"May I sit here? こちらに座っても___ですか。 (very polite)","answer":"よろしい","explanation":"座ってもよろしいですか is a deferential permission question, not a way to make every grant of permission socially safe."} -->
 ## Prohibition: てはいけない
 
 To express "must not" or "may not," use **て form + はいけない**.
@@ -160,7 +169,9 @@ In casual speech, ては contracts to **ちゃ** and では contracts to **じ�
 
 <!-- quiz:{"type":"multiple-choice","question":"What is the casual contraction of 食べてはいけない?","options":["食べちゃいけない","食べてもいけない","食べたらいけない","食べないでいけない"],"answer":0} -->
 
-<!-- grammar-card: {"rule":"てはいけない forbids an action outright","hint":"吸う, polite prohibition","example":"ここでタバコを吸(す)っ___。","answer":"てはいけません","explanation":"吸ってはいけません states that smoking here is not permitted."} -->
+<!-- grammar-card: {"id":"prohibition-tewaikenai","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Prohibition: てはいけない","rule":"てはいけない forbids an action outright","hint":"吸う, standard polite prohibition","example":"ここでタバコを吸(す)っ___。","answer":"てはいけません","explanation":"吸ってはいけません states a prohibition. は belongs in this construction; it is not merely 吸っていけません."} -->
+<!-- grammar-card: {"id":"prohibition-contraction-cha","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Casual Contraction: ちゃ / じゃ","rule":"ては contracts to ちゃ in casual prohibitions","example":"Contract 食べてはいけない: 食べ___いけない。","answer":"ちゃ","explanation":"食べちゃいけない keeps the prohibition meaning. It is informal, not a polite replacement."} -->
+<!-- grammar-card: {"id":"prohibition-contraction-ja","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Casual Contraction: ちゃ / じゃ","rule":"では contracts to じゃ in casual prohibitions","example":"Contract 飲んではいけない: 飲ん___いけない。","answer":"じゃ","explanation":"飲んじゃいけない (のんじゃいけない) keeps the voiced で/じゃ pattern, unlike て/ちゃ."} -->
 
 ## Alternative Prohibition Expressions
 
@@ -192,6 +203,7 @@ More formal and literary than てはいけない. Used in rules, laws, and writt
 > *Hōritsu ni ihan shite wa naranai.*
 > One must not violate the law.
 
+<!-- grammar-card: {"id":"prohibition-register-choice","kind":"concept","format":"qa","priority":"essential","sourceSection":"Alternative Prohibition Expressions","rule":"だめ and ならない express prohibition in different registers","example":"Which better suits a formal written rule, 触っちゃだめ or 触ってはならない?","answer":"触ってはならない; 触っちゃだめ is conversational and casual.","explanation":"てはいけない is a standard prohibition; てはだめ is more conversational, and てはならない is formal or literary."} -->
 ### Formality Comparison for Prohibition
 
 | Expression | Formality | Usage |
@@ -244,7 +256,8 @@ To express that something is **not necessary** (but is allowed), use **なくて
 
 <!-- quiz:{"type":"multiple-choice","question":"明日来なくてもいいです means:","options":["You must not come tomorrow","You should come tomorrow","You don't have to come tomorrow","You cannot come tomorrow"],"answer":2} -->
 
-<!-- grammar-card: {"rule":"なくてもいい removes an obligation rather than granting permission","hint":"来る, negative + もいい","example":"明日(あした)は来(こ)___。","answer":"なくてもいいです","explanation":"来なくてもいいです says there is no need to come tomorrow."} -->
+<!-- grammar-card: {"id":"no-obligation","kind":"rule","format":"cloze","priority":"essential","sourceSection":"なくてもいい — \"Don't Have To\"","rule":"なくてもいい removes an obligation rather than granting permission","hint":"来る, politely say there is no need to come.","example":"明日(あした)は来(こ)___。","answer":"なくてもいいです","explanation":"来なくてもいいです permits not coming; it does not forbid coming. 来 is read こ in this negative form."} -->
+<!-- grammar-card: {"id":"no-obligation-versus-ban","kind":"concept","format":"qa","priority":"essential","sourceSection":"なくてもいい — \"Don't Have To\"","rule":"Permission not to act is different from prohibition","example":"Does 食べなくてもいい mean you are forbidden to eat?","answer":"No. You do not have to eat, but may do so. 食べてはいけない forbids eating.","explanation":"The negative in なくてもいい removes necessity; it does not make the positive action impermissible."} -->
 
 ## Adjective & Noun Permission/Prohibition
 
@@ -265,6 +278,8 @@ These patterns also work with い-adjectives, な-adjectives, and nouns:
 | | | 学生(がくせい)でもいい (it's okay if you're a student) |
 | Prohibition | ～ではいけない | 不親切(ふしんせつ)ではいけない (you mustn't be unkind) |
 
+<!-- grammar-card: {"id":"adjective-permission","kind":"rule","format":"cloze","priority":"optional","sourceSection":"い-adjectives","rule":"い-adjectives replace い with く before てもいい","example":"It's okay if expensive: 高い → 高___てもいい。","answer":"く","explanation":"高くてもいい uses the adjective's くて-form. 高いでもいい is not this pattern."} -->
+<!-- grammar-card: {"id":"noun-permission","kind":"rule","format":"cloze","priority":"optional","sourceSection":"な-adjectives & Nouns","rule":"Nouns and な-adjectives use でもいい or ではいけない","example":"It's okay if you're a student: 学生___もいい。","answer":"で","explanation":"学生でもいい uses で. For prohibition, 不親切ではいけない uses では before いけない."} -->
 ## Common Mistakes
 
 ### 1. Confusing てもいい and てはいけない

@@ -1,5 +1,7 @@
 # な — Prohibition
 
+<!-- vocab-inventory: {"mode":"explicit"} -->
+
 > **Source:** Content from [Tofugu](https://www.tofugu.com/japanese-grammar/na/). For personal study.
 
 〜な For ''Don't...!''
@@ -43,6 +45,10 @@ If it's ever used, 〜な is likely to come out as an emotional reaction like th
 
 Are you getting a sense of how powerful 〜な is? Having said that, there is a way to soften the tone, and this softer variant is frequently used in everyday speech. We'll get to that soon, but first let's look at the patterns of use.
 
+<!-- vocab-card: {"id":"vocab-ugoku","priority":"optional","sourceSection":"The Basics","word":"動く","reading":"うごく","meaning":"to move"} -->
+<!-- vocab-card: {"id":"vocab-sawaru","priority":"optional","sourceSection":"The Basics","word":"触る","reading":"さわる","meaning":"to touch"} -->
+<!-- grammar-card: {"id":"prohibition-register","kind":"concept","format":"qa","priority":"essential","sourceSection":"The Basics","rule":"Direct prohibitive な is forceful and traditionally masculine-associated, not gender-exclusive","example":"Is the dictionary-form prohibition a neutral polite request, or a form restricted to men?","answer":"Neither. It is a blunt prohibition, traditionally masculine-associated but usable by speakers of any gender, especially in urgent or emotional situations.","explanation":"Tone, relationship, and context matter. The form can startle a friend and is not a default courteous request."} -->
+
 ### Patterns of Use
 
 #### Plain Form Verb + な
@@ -72,6 +78,10 @@ Note that in casual speech, る at the end of a verb often contracts to ん, lik
   - Don't come!
 
 Now, be careful about getting this mixed up with the stem form of a verb paired up with な, such as 食べな or  来(き)な. This is actually a very casual way of telling someone to "eat" or "come," so it's the total opposite of the "Don't" meaning that we're covering here!
+
+<!-- vocab-card: {"id":"vocab-kuru","priority":"optional","sourceSection":"Plain Form Verb + な","word":"来る","reading":"くる","meaning":"to come"} -->
+<!-- grammar-card: {"id":"negative-versus-stem-command","kind":"concept","format":"qa","priority":"essential","sourceSection":"Plain Form Verb + な","rule":"Dictionary form plus な prohibits; stem plus な can encourage the action","example":"How do 来るな and 来な differ, including their readings?","answer":"来るな (くるな) means don't come; 来な (きな) is a very casual come instruction.","explanation":"The vowel in 来 changes with the base. Similarly, 食べるな prohibits eating, while 食べな tells someone to eat."} -->
+<!-- grammar-card: {"id":"colloquial-contraction","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Plain Form Verb + な","rule":"Final る can contract to ん before prohibitive な in casual speech","example":"Contract 食べるな in blunt casual speech: 食べ___！","answer":"んな","explanation":"食べんな still means don't eat, unlike positive stem command 食べな. 来るな can likewise become 来んな (くんな)."} -->
 
 ### Additional Elements for Making 〜な More Friendly
 
@@ -109,6 +119,11 @@ Here, 〜って is a colloquial particle that marks a quote, so it adds a nuance
 
 Just like よ, it can sound really frustrated depending on your tone, but it can also allow you to use 〜な in a nicer, more friendly or concerned manner.
 
+<!-- vocab-card: {"id":"vocab-muri-suru","priority":"optional","sourceSection":"Additional Elements for Making 〜な More Friendly","word":"無理する","reading":"むりする","meaning":"to overdo it; to push oneself too hard"} -->
+<!-- vocab-card: {"id":"vocab-uso-tsuku","priority":"optional","sourceSection":"Additional Elements for Making 〜な More Friendly","word":"嘘をつく","reading":"うそをつく","meaning":"to tell a lie"} -->
+<!-- grammar-card: {"id":"friendly-yo","kind":"concept","format":"qa","priority":"optional","sourceSection":"Additional Elements for Making 〜な More Friendly","rule":"よ can make a prohibition more communicative without making it polite","example":"Does adding よ to 無理すんな automatically make it a polite or gentle request?","answer":"No. It can convey familiar concern, but the directive remains direct and can still sound stern depending on tone.","explanation":"無理すんなよ can be friendly advice among close people, not a universally appropriate formal request."} -->
+<!-- grammar-card: {"id":"tteba-repetition","kind":"concept","format":"qa","priority":"optional","sourceSection":"Additional Elements for Making 〜な More Friendly","rule":"って and ってば can add an I'm-saying nuance to a prohibition","example":"What does the ending add in 嘘つくなってば?","answer":"It emphasizes that the speaker is telling the listener not to lie, often with insistence, frustration, or concern.","explanation":"って marks quoted speech and ば adds emphasis; ってば is associated with って言えば. Tone can be friendly or exasperated."} -->
+
 ### Neutral 〜な for Slogans
 
 Because 〜な is the most direct and succinct way to tell someone not to do something, you may see it used in titles or slogans. In this case, it doesn't usually carry an aggressive tone and just helps to make the title or slogans more crisp and clear.
@@ -129,7 +144,8 @@ In Japan, there is also a well-known slogan encouraging people not to drive afte
 
 〜な not only strengthens the message, but it also makes the slogan more succinct and vigorous.
 
-<!-- grammar-card: {"rule":"The particle な after a dictionary form is a blunt prohibition","hint":"な","example":"乾燥に負ける___！","answer":"な","explanation":"負けるな means 'don't lose' — an order rather than a request."} -->
+<!-- grammar-card: {"id":"dictionary-prohibition","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Neutral 〜な for Slogans","rule":"The particle な after a dictionary form is a blunt prohibition","example":"乾燥に負ける___！","answer":"な","explanation":"負けるな means don't be defeated. In a slogan the direct grammar gives a crisp message without necessarily sounding personally aggressive."} -->
+<!-- grammar-card: {"id":"slogan-tone","kind":"concept","format":"qa","priority":"optional","sourceSection":"Neutral 〜な for Slogans","rule":"Slogan prohibitions can be vigorous without interpersonal aggression","example":"Why need 飲んだら乗るな in a public safety slogan not sound like an angry personal rebuke?","answer":"Its concise prohibition makes a general message crisp and vigorous rather than necessarily expressing anger at an individual.","explanation":"The direct negative imperative remains, but the public-message context changes its social effect."} -->
 
 ## Beyond the Basics
 
@@ -152,6 +168,9 @@ You may not always quote a previous statement word for word, but you can make it
 In this use, 〜な is neutral and doesn't carry a brusque tone. It's merely a quick recap of past speech (or sometimes thought), and the listener will understand that you're not giving a direct quote.
 
 This simplification occurs frequently in writing where the narrator tells a story from the past, so don't be surprised if some gentle character's request is suddenly cited with 〜な.
+
+<!-- grammar-card: {"id":"reported-tone-not-verbatim","kind":"concept","format":"qa","priority":"essential","sourceSection":"Neutral 〜な for Indirectly Referring to Past Speech","rule":"A summarized prohibition does not establish the tone of the original request","example":"Does テレビを見るなって言われた prove that the original speaker used a blunt command?","answer":"No. It can summarize a polite request not to watch TV without quoting its exact words or tone.","explanation":"な can be neutral in an indirect report; distinguish a recap from a verbatim quotation."} -->
+<!-- grammar-card: {"id":"reported-prohibition","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Neutral 〜な for Indirectly Referring to Past Speech","rule":"A prohibition can be reported with って","example":"十時以降はテレビを___って言われたんだ。","answer":"見るな","explanation":"見るな summarizes what the speaker was told not to do. It may report the content of a polite request, not the original words."} -->
 
   
 
@@ -215,8 +234,6 @@ by Yukiko Nishimura
 <!-- quiz: {"type":"multiple-choice","question":"What does \"触る**な**！\" mean?","options":["Don't touch it!","Don't move!","Don't eat it!","Don't come!"],"answer":0} -->
 
 <!-- quiz: {"type":"multiple-choice","question":"What does \"食べる**な**！\" mean?","options":["Don't eat it!","Don't move!","Don't touch it!","Don't come!"],"answer":0} -->
-
-<!-- grammar-card: {"rule":"A prohibition can be reported with って","hint":"見る + な","example":"十時以降はテレビを___って言われたんだ。","answer":"見るな","explanation":"見るな is the original command, quoted here with って."} -->
 
 ## Sources
 

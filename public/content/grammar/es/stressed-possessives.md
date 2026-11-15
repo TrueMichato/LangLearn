@@ -1,5 +1,7 @@
 # Stressed Possessives (el mío, la tuya, etc.)
 
+<!-- vocab-inventory: {"mode":"explicit"} -->
+
 Spanish has **two sets** of possessives: **short (unstressed)** ones that go **before** the noun (*mi libro*) and **long (stressed)** ones that go **after** the noun or stand alone as pronouns (*un libro mío*, *el mío*). The stressed forms add emphasis and let you avoid repeating the noun.
 
 ## The Two Sets — Side by Side
@@ -15,11 +17,16 @@ Spanish has **two sets** of possessives: **short (unstressed)** ones that go **b
 
 Note: **nuestro/a** and **vuestro/a** have a **single form** that serves both positions. Only the others (mi, tu, su) have distinct short and long variants.
 
+**Vosotros/vuestro** is the usual informal plural system in Spain. **Ustedes/suyo** is used for plural address throughout Latin America and for formal plural address in Spain.
+
+<!-- grammar-card: {"id":"possessive-form-families","kind":"concept","format":"qa","priority":"essential","sourceSection":"The Two Sets — Side by Side","rule":"Mi, tu and su have distinct long forms","example":"Which long possessive bases correspond to short mi, tu and su?","answer":"Mío, tuyo and suyo, each agreeing in gender and number with the possessed noun.","explanation":"Nuestro and vuestro already serve both pre-noun and long-form positions."} -->
+<!-- grammar-card: {"id":"unchanged-families","kind":"concept","format":"qa","priority":"optional","sourceSection":"The Two Sets — Side by Side","rule":"Nuestro and vuestro use the same gender/number forms in both positions","example":"Which two possessive families do not need a distinct short-versus-long base?","answer":"Nuestro and vuestro, with their ordinary gender and number agreement.","explanation":"Vuestro belongs to the vosotros system, chiefly informal plural address in Spain."} -->
+
 <!-- quiz: {"type":"multiple-choice","question":"What is the long form of 'mi' (feminine singular)?","options":["mío","mía","mí","mis"],"answer":1} -->
 
 ## Position 1: After the Noun ("A Friend of Mine")
 
-Place the long possessive **after the noun**, with no article needed:
+Place the long possessive **after the noun**. It does not need a separate article immediately before the possessive; the noun phrase may still have *un*, *este*, etc.:
 
 - **Un amigo mío** (oon ah-MEE-goh MEE-oh) — A friend of mine.
 - **Una prima tuya** — A cousin of yours.
@@ -32,6 +39,9 @@ The English equivalent is "a/some [noun] of mine/yours" — Spanish drops the "o
 
 - **una amiga mía** ✓ (a female friend of mine — *mía* matches *amiga*)
 - **dos libros nuestros** ✓ (two books of ours — *nuestros* matches *libros*)
+
+<!-- grammar-card: {"id":"possessed-noun-agreement","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Position 1: After the Noun (\"A Friend of Mine\")","rule":"Long-form possessives agree with the thing possessed (gender + number), not the owner","example":"María tiene un coche pequeño. Es un coche ___. (her car; add the long possessive)","answer":"suyo","explanation":"Coche is masculine singular, so use suyo despite the female owner.","legacyAliases":[{"rule":"Long-form possessives agree with the thing possessed (gender + number), not the owner","example":"María tiene un coche pequeño. Es ___ ___ (her car) ___. (Add long possessive after the noun)"}]} -->
+<!-- grammar-card: {"id":"female-friend","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Position 1: After the Noun (\"A Friend of Mine\")","rule":"Mía agrees with a feminine singular possessed noun","example":"Laura es una amiga ___. (of mine)","answer":"mía","explanation":"The possessive matches amiga, not the speaker's gender. Preserve the accent."} -->
 
 ## Position 2: Pronoun ("Mine, Yours")
 
@@ -51,7 +61,7 @@ Notice you **need the article** (el/la/los/las) to make the possessive stand alo
 | **sus llaves** — his keys | **las suyas** — his (ones) |
 | **nuestro coche** — our car | **el nuestro** — ours |
 
-<!-- grammar-card: {"rule":"Long-form possessives agree with the thing possessed (gender + number), not the owner","hint":"una amiga mía: 'mía' matches 'amiga' (fem.), not 'me' the owner.","example":"María tiene un coche pequeño. Es ___ ___ (her car) ___. (Add long possessive after the noun)","answer":"un coche suyo","explanation":"After the noun, the long possessive agrees with the noun: 'un coche suyo' (his/her car). 'Suyo' is masculine singular to match 'coche'. The owner's gender (María) doesn't change the possessive form."} -->
+<!-- grammar-card: {"id":"standalone-article","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Position 2: Pronoun (\"Mine, Yours\")","rule":"As a standalone pronoun, the long possessive needs an article: el mío, la tuya, los suyos","example":"Mi coche es viejo, pero ___ ___ es nuevo. (yours)","answer":"el tuyo","explanation":"El tuyo replaces masculine singular coche here. Predicate possessives directly after ser normally omit the article.","legacyAliases":[{"rule":"As a standalone pronoun, the long possessive needs an article: el mío, la tuya, los suyos","example":"Mi coche es viejo, pero ___ ___ (yours - el coche tuyo) es nuevo."}]} -->
 
 ## Position 3: After Ser (Predicate Use)
 
@@ -64,8 +74,11 @@ After **ser**, the long form is used without an article:
 
 Compare with using **de**:
 
-- **Es mío** ≈ **Es de mí** (rarely used) — It's mine.
+- **Es mío** — It's mine. Use the possessive for ordinary first-person ownership, not *es de mí*.
 - **Es de Juan** — It's Juan's. (When the owner is named, prefer **de + name**.)
+
+<!-- grammar-card: {"id":"predicate-no-article","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Position 3: After Ser (Predicate Use)","rule":"A predicate possessive directly after ser normally omits the article","example":"Estas llaves son ___. (mine)","answer":"mías","explanation":"Use feminine plural mías for llaves. Contrast las mías when replacing the noun as a full noun phrase."} -->
+<!-- vocab-card: {"id":"vocab-la-culpa-es-tuya","word":"La culpa es tuya.","meaning":"The fault is yours.","priority":"optional","sourceSection":"Position 3: After Ser (Predicate Use)"} -->
 
 ## The Ambiguity of "Suyo" — and How to Fix It
 
@@ -77,6 +90,8 @@ Compare with using **de**:
 | **Es suyo** | Es **de él** / **de ella** / **de ustedes** / **de ellos** |
 
 This **de + pronoun** trick is used constantly in real Spanish to clarify ownership.
+
+<!-- grammar-card: {"id":"suyo-ambiguity","kind":"concept","format":"qa","priority":"essential","sourceSection":"The Ambiguity of \"Suyo\" — and How to Fix It","rule":"Suyo does not identify a unique owner","example":"Which owners can suyo refer to, and how can you explicitly specify a female third-person owner?","answer":"His, hers, formal singular yours, plural yours or theirs; de ella explicitly identifies her.","explanation":"Ustedes is ordinary plural address in Latin America and formal plural in Spain; agreement remains with the possessed noun."} -->
 
 ## Stressed vs. Unstressed: Same Word, Different Meaning Position
 
@@ -102,8 +117,6 @@ Each form does a different syntactic job.
 > Translation: "Whose coat is this? Is it yours?" — "No, it's not mine. Mine is black." — "Then it must be Andrés's. Or maybe Marta's?" — "If it's hers/his, we'll keep it. Oh, look! Here's a friend of ours, Laura. Is it yours, Laura?" — "Yes, it's mine, thanks."
 
 Notice **tuyo** (predicative), **mío** (predicative), **el mío** (pronoun with article), **suyo** (ambiguous), and **nuestra** (after noun) — all naturally in one exchange.
-
-<!-- grammar-card: {"rule":"As a standalone pronoun, the long possessive needs an article: el mío, la tuya, los suyos","hint":"Without the article, the long form only works after a noun or after ser.","example":"Mi coche es viejo, pero ___ ___ (yours - el coche tuyo) es nuevo.","answer":"el tuyo","explanation":"As a pronoun replacing the noun, you need the article: 'el tuyo' = 'yours'. The article and the possessive both agree with the noun being replaced ('coche', masculine singular). Without the article — 'tuyo' alone — would not stand as a pronoun here."} -->
 
 ## Quick Reference
 

@@ -1,5 +1,7 @@
 # か (ka) — Question Marker
 
+<!-- vocab-inventory: {"mode":"explicit"} -->
+
 > **Source:** Content from [Tofugu](https://www.tofugu.com/japanese-grammar/particle-ka/). For personal study.
 
 Particle か: A Marker of the Unknown
@@ -18,6 +20,8 @@ We often think of particle か as "the Japanese question mark," but it's actuall
 
 ### か for Asking Questions
 
+<!-- grammar-card: {"id":"polite-question-application","kind":"rule","format":"cloze","priority":"essential","sourceSection":"か for Asking Questions","rule":"Sentence-final か can turn a polite statement into a question","hint":"Ask whether it is hot today.","example":"今日は暑いです___。","answer":"か","explanation":"Word order need not change. Written questions can end with 。 because か marks the question; informal writing also uses ？."} -->
+
 It's very simple to form a question sentence in Japanese. Simply adding か to the end of a sentence does the trick.
 
 Statement:
@@ -35,6 +39,8 @@ Question:
 That's all it takes! In English, we have to switch the word order to form a question — notice how "it" and "is" switch places in the translation? In Japanese, there is no such requirement. Just add か! You may have also noticed that the Japanese question has the same punctuation as the statement. Traditionally, written questions in Japanese still end in "。" since the か particle is enough to signal that the sentence is a question. Nowadays though, you'll see "？" replace "。" in a lot of informal writing.
 
 ### か for Alternatives
+
+<!-- grammar-card: {"id":"alternatives-application","kind":"rule","format":"cloze","priority":"essential","sourceSection":"か for Alternatives","rule":"か joins alternatives rather than an exhaustive and-list","hint":"Either curry or pasta.","example":"今日はカレー___パスタを作ると思う。","answer":"か","explanation":"The speaker has not settled which dish. Before が or を, the final か in a longer alternative list is often dropped, as in this example."} -->
 
 The next use of か we'll look at is how they mark two or more elements as alternatives. This is kind of like using "either … or …" in English.
 
@@ -57,6 +63,10 @@ This also applies if the alternatives are the object of the sentence, in which c
   - I think I'll make either curry or pasta today.
 
 ### か for Indefinite Pronouns
+
+<!-- vocab-card: {"id":"vocab-dareka","word":"誰か","reading":"だれか","meaning":"someone","priority":"optional","sourceSection":"か for Indefinite Pronouns"} -->
+<!-- vocab-card: {"id":"vocab-itsuka","word":"いつか","reading":"いつか","meaning":"sometime; someday","priority":"optional","sourceSection":"か for Indefinite Pronouns"} -->
+<!-- vocab-card: {"id":"vocab-dokoka","word":"どこか","reading":"どこか","meaning":"somewhere","priority":"optional","sourceSection":"か for Indefinite Pronouns"} -->
 
 This next use of か also draws on its role as a marker of the unknown. If you add か to the end of a question word, it transforms it into an indefinite pronoun. An indefinite pronoun is a word that replaces a noun, and leaves the identity of that noun unknown. In English, these are words like "something," "someone," and "somewhere."
 
@@ -106,11 +116,16 @@ Object:
 
   - It's their birthday, so let's buy **something** for them.
 
-<!-- grammar-card: {"rule":"か after a question word makes it indefinite","hint":"何 + か","example":"誕生日だから、___買ってあげようよ。","answer":"何か","explanation":"何か means 'something', with か turning the question word into a vague reference."} -->
+<!-- grammar-card: {"id":"indefinite-something-application","kind":"rule","format":"cloze","priority":"essential","sourceSection":"か for Indefinite Pronouns","rule":"か after a question word makes it indefinite","hint":"Something, not a question asking what.","example":"誕生日だから、___買ってあげようよ。","answer":"何か","explanation":"何か is read なにか and means something. The identity is unknown rather than being directly requested."} -->
 
 ## Beyond the Basics
 
 ### Intonation of か in Questions
+
+<!-- grammar-card: {"id":"ka-intonation","kind":"concept","format":"qa","priority":"essential","sourceSection":"Intonation of か in Questions","rule":"Intonation distinguishes a plain question from a realization in the illustrated か sentences","example":"How can falling intonation change もう行ったか from a question?","answer":"It can express realizing or acknowledging that they have already gone.","explanation":"Rising そうか？ can challenge a statement; falling そうか can mean I see. This does not imply that every embedded or written question requires audible rising pitch."} -->
+<!-- grammar-card: {"id":"plain-ka-register","kind":"concept","format":"qa","priority":"essential","sourceSection":"Intonation of か in Questions","rule":"Plain-form questions with か can sound direct or rough","example":"Is もう行ったか？ with rising intonation a neutral polite question to a stranger?","answer":"No. It can sound blunt or masculine; a polite question normally uses the appropriate polite form.","explanation":"Register depends on relationship and tone. The same bluntness is not automatically carried by か inside an indirect embedded question."} -->
+<!-- grammar-card: {"id":"question-without-ka","kind":"concept","format":"qa","priority":"optional","sourceSection":"Intonation of か in Questions","rule":"Conversational questions can use rising intonation without か","example":"Can そろそろ行く？ be a question without a final question particle?","answer":"Yes. Rising intonation and context can make it a question.","explanation":"Polite conversational questions can also omit か, as in 何時に食べに行きます？. This is not a requirement to omit か from polite questions."} -->
+<!-- vocab-card: {"id":"vocab-sorosoro","word":"そろそろ","reading":"そろそろ","meaning":"soon; about time; gradually (according to context)","priority":"optional","sourceSection":"Intonation of か in Questions"} -->
 
 Remember how we said か isn't a question marker, but a marker of the unknown? Well we're really gonna dive into that idea in this section! The nuance that か adds to a sentence often hinges on whether it's pronounced with rising or falling intonation. Let's check it out.
 
@@ -160,6 +175,8 @@ An embedded clause is kind of like a sentence within a sentence. If the clause y
 
 #### Embedded Questions
 
+<!-- grammar-card: {"id":"embedded-question-application","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Embedded Questions","rule":"か can mark a question embedded before a reporting verb","hint":"Mark the clause as an embedded question.","example":"キャメロンがウェイターに「グラスワインはいくら___」と聞きました。","answer":"か","explanation":"か marks the unknown price being asked about. と can be omitted with か retained; in the direct-quote-like alternative here, か can be omitted with と retained.","legacyAliases":[{"rule":"An embedded question keeps its か","example":"キャメロンがウェイターに「グラスワインはいくら___」と聞きました。"}]} -->
+
   - キャメロンがウェイターに [グラスワインはいくら**か**] と聞きました。
 
   - Cameron asked the waiter how much a glass of wine is.
@@ -181,6 +198,9 @@ However, since the embedded clause in this case contains the question word い�
 Without か, this sentence sounds a bit more like a direct quote (notice the quotation marks in the English translation). This is because asking questions in the plain form without か (and using rising intonation) is a common way to ask questions, so this could be a direct quote of the way Cameron asked the waiter his question. Particle と reinforces this, since it is a marker of quotation. The resulting nuance is that Cameron sounds a bit overly casual with the waiter. Typically, it is more appropriate to ask questions to people you don't know in the polite form, so グラスワインはいくら**ですか** would be more appropriate.
 
 #### Embedded Alternatives
+
+<!-- grammar-card: {"id":"embedded-alternative-meaning","kind":"concept","format":"qa","priority":"optional","sourceSection":"Embedded Alternatives","rule":"Repeated clause-final か embeds alternative possibilities","example":"What is still undecided in 赤ワインにするか白ワインにするかまだ決まってない?","answer":"Whether to choose red wine or white wine.","explanation":"These are alternatives inside a larger statement, not two direct questions addressed to the listener. A quotation と is not needed for this construction."} -->
+<!-- grammar-card: {"id":"whether-or-not-application","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Embedded Alternatives","rule":"かどうか means 'whether or not'","hint":"Add or not after the embedded question marker.","example":"今日はまみさんも来るか___知ってる？","answer":"どうか","explanation":"来るかどうか embeds whether Mami will come. どうか is optional here; 来るか alone can still embed the uncertainty."} -->
 
 In addition to embedding a question clause, you can also embed clauses into a sentence as alternatives. In this case, か works similarly to "whether … or …" in English. Since we're no longer quoting anyone, we won't use particle と this time.
 
@@ -242,10 +262,6 @@ by Rumiko Shinzato
 <!-- quiz: {"type":"multiple-choice","question":"What does \"今日は暑いです + か。\" mean?","options":["Is it hot out today?","It is hot out today.","On my birthday, **either** my mom **or** my dad will make me a cake.","On my birthday, either my mom or my dad will make me a cake."],"answer":0} -->
 
 <!-- quiz: {"type":"multiple-choice","question":"What does \"誕生日は [お母さん**か**] [お父さん**か**] がケーキを作ってくれる。\" mean?","options":["On my birthday, **either** my mom **or** my dad will make me a cake.","It is hot out today.","Is it hot out today?","On my birthday, either my mom or my dad will make me a cake."],"answer":0} -->
-
-<!-- grammar-card: {"rule":"An embedded question keeps its か","hint":"いくら + ?","example":"キャメロンがウェイターに「グラスワインはいくら___」と聞きました。","answer":"か","explanation":"か marks the quoted clause as the question that was actually asked."} -->
-
-<!-- grammar-card: {"rule":"かどうか means 'whether or not'","hint":"か + どうか","example":"今日はまみさんも来るか___知ってる？","answer":"どうか","explanation":"来るかどうか embeds a yes-no question inside the larger sentence."} -->
 
 ## Sources
 

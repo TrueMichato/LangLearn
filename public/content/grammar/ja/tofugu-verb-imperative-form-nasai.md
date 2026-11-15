@@ -1,5 +1,7 @@
 # なさい — Imperative (Polite)
 
+<!-- vocab-inventory: {"mode":"explicit"} -->
+
 > **Source:** Content from [Tofugu](https://www.tofugu.com/japanese-grammar/verb-imperative-form-nasai/). For personal study.
 
 Japanese Verb なさい Form
@@ -47,7 +49,16 @@ To connect 〜なさい to a verb, you'll need to use the stem form of the verb.
    **する**　=　**しなさい**
 **来る(く　)　=　 来なさい(き　　　)**
 
-<!-- grammar-card: {"rule":"なさい attaches to the ます-stem, not the dictionary form","hint":"する + なさい","example":"ちゃんと宿題(しゅくだい)を___。","answer":"しなさい","explanation":"する gives the stem し, so the command is しなさい and never するなさい."} -->
+<!-- vocab-card: {"id":"vocab-miru","priority":"optional","sourceSection":"What Is the Polite Imperative Form なさい?","word":"見る","reading":"みる","meaning":"to see; to look"} -->
+<!-- vocab-card: {"id":"vocab-taberu","priority":"optional","sourceSection":"What Is the Polite Imperative Form なさい?","word":"食べる","reading":"たべる","meaning":"to eat"} -->
+<!-- vocab-card: {"id":"vocab-au","priority":"optional","sourceSection":"What Is the Polite Imperative Form なさい?","word":"会う","reading":"あう","meaning":"to meet"} -->
+<!-- vocab-card: {"id":"vocab-kaku","priority":"optional","sourceSection":"What Is the Polite Imperative Form なさい?","word":"書く","reading":"かく","meaning":"to write"} -->
+<!-- vocab-card: {"id":"vocab-suru","priority":"optional","sourceSection":"What Is the Polite Imperative Form なさい?","word":"する","reading":"する","meaning":"to do"} -->
+<!-- vocab-card: {"id":"vocab-kuru","priority":"optional","sourceSection":"What Is the Polite Imperative Form なさい?","word":"来る","reading":"くる","meaning":"to come"} -->
+<!-- grammar-card: {"id":"suru-nasai","kind":"rule","format":"cloze","priority":"essential","sourceSection":"What Is the Polite Imperative Form なさい?","rule":"なさい attaches to the ます-stem, not the dictionary form","hint":"する, なさい command","example":"ちゃんと宿題(しゅくだい)を___。","answer":"しなさい","explanation":"する supplies the irregular stem し."} -->
+<!-- grammar-card: {"id":"godan-nasai","kind":"rule","format":"cloze","priority":"essential","sourceSection":"What Is the Polite Imperative Form なさい?","rule":"Godan verbs use their い-row stem before なさい","example":"書く → なさい command: ___.","answer":"書きなさい","explanation":"Change く to き before the ending."} -->
+<!-- grammar-card: {"id":"ichidan-nasai","kind":"rule","format":"cloze","priority":"essential","sourceSection":"What Is the Polite Imperative Form なさい?","rule":"Ichidan verbs drop る before なさい","example":"食べる → なさい command: ___.","answer":"食べなさい","explanation":"The stem is 食べ, not 食べり."} -->
+<!-- grammar-card: {"id":"kuru-nasai","kind":"rule","format":"qa","priority":"essential","sourceSection":"What Is the Polite Imperative Form なさい?","rule":"来る uses the stem reading き before なさい","example":"Give the なさい command of 来る, including its kana reading.","answer":"来なさい (きなさい).","explanation":"This uses き, unlike blunt command 来い (こい)."} -->
    
   
 
@@ -79,7 +90,8 @@ In addition, 〜なさい is commonly used in questions on exams. If you have ta
 
   - Choose the correct answer from the given choices.
 
-<!-- grammar-card: {"rule":"なさい gives a firm command that is still polite","hint":"寝る + なさい","example":"早(はや)く寝(ね)___。","answer":"なさい","explanation":"寝なさい is what a parent says to a child — softer than 寝ろ but still an order."} -->
+<!-- grammar-card: {"id":"authority-boundary","kind":"concept","format":"qa","priority":"essential","sourceSection":"なさい for Polite Commands","rule":"なさい is softer than a blunt command but still asserts authority","example":"Is 教えなさい a safe respectful request to a senior colleague just because なさい is called polite?","answer":"No. It still commands the listener; use a request such as 教えてくれませんか instead.","explanation":"Parent-child directions and exam instructions are typical uses, not orders to a superior."} -->
+<!-- grammar-card: {"id":"parent-direction","kind":"rule","format":"cloze","priority":"optional","sourceSection":"なさい for Polite Commands","rule":"なさい gives a softer but still authoritative command","hint":"a parent's softer command, rather than 寝ろ","example":"早(はや)く寝(ね)___。","answer":"なさい","explanation":"寝なさい is softer than 寝ろ, but it is still an instruction from a position of authority.","legacyAliases":[{"rule":"なさい gives a firm command that is still polite","example":"早(はや)く寝(ね)___。"}]} -->
 
 ## なさい for Showing Care
 
@@ -97,7 +109,7 @@ The use of this form here gives you a caregiver-like tone, and reinforces your t
 
   - Good night.
 
-おやすみ is the polite imperative form of the verb 休む (to rest).
+おやすみ uses お + the stem of 休む (to rest); the full greeting おやすみなさい contains なさい.
 
 In addition to commands, 〜なさい can be used to make a suggestion. In this use, rising intonation helps to avoid sounding too pushy.
 
@@ -106,6 +118,9 @@ In addition to commands, 〜なさい can be used to make a suggestion. In this 
   - Don't be so polite, eat more!
 
 You made it through the ins and outs of 〜なさい! そろそろ休憩しなさいよ〜 (It's time for you to take a break!)
+
+<!-- vocab-card: {"id":"vocab-oyasuminasai","priority":"optional","sourceSection":"なさい for Showing Care","word":"おやすみなさい","reading":"おやすみなさい","meaning":"good night"} -->
+<!-- grammar-card: {"id":"care-and-intonation","kind":"concept","format":"qa","priority":"optional","sourceSection":"なさい for Showing Care","rule":"Closeness and intonation can give なさい a caring or encouraging tone","example":"Why can 遠慮しないで、たくさん食べなさい sound caring between close people?","answer":"The relationship and encouraging intonation can frame the instruction as looking after the listener.","explanation":"That warmth is contextual; it does not remove the form's authoritative potential in other relationships."} -->
 
 ---
 

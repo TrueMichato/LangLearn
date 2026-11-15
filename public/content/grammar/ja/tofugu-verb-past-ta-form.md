@@ -1,5 +1,7 @@
 # た-Form — Past Tense
 
+<!-- vocab-inventory: {"mode":"explicit"} -->
+
 > **Source:** Content from [Tofugu](https://www.tofugu.com/japanese-grammar/verb-past-ta-form/). For personal study.
 
 Japanese Verb Plain Past た Form
@@ -109,7 +111,7 @@ Verbs ending in **ぐ** change to **いだ**:
 
 > 
 > 
-> 泳**ぐ**　+　いた　=　泳**いだ**
+> 泳**ぐ**　+　いだ　=　泳**いだ**
 > 
 > 
 
@@ -120,6 +122,18 @@ Finally, verbs ending in **す** change to **した**
 > 写**す**　+　した　=　写**した**
 > 
 > 
+
+<!-- vocab-card: {"id":"vocab-au","priority":"optional","sourceSection":"Godan Verbs","word":"会う","reading":"あう","meaning":"to meet"} -->
+<!-- vocab-card: {"id":"vocab-yasumu","priority":"optional","sourceSection":"Godan Verbs","word":"休む","reading":"やすむ","meaning":"to rest; to take time off"} -->
+<!-- vocab-card: {"id":"vocab-kaku","priority":"optional","sourceSection":"Godan Verbs","word":"書く","reading":"かく","meaning":"to write"} -->
+<!-- vocab-card: {"id":"vocab-oyogu","priority":"optional","sourceSection":"Godan Verbs","word":"泳ぐ","reading":"およぐ","meaning":"to swim"} -->
+<!-- vocab-card: {"id":"vocab-utsusu","priority":"optional","sourceSection":"Godan Verbs","word":"写す","reading":"うつす","meaning":"to copy; to photograph"} -->
+<!-- grammar-card: {"id":"past-utsuru","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Godan Verbs","rule":"Godan う, つ, and る endings become った in the plain past","example":"会う → plain past: ___.","answer":"会った","explanation":"The same ending pattern applies to 立つ and 割る."} -->
+<!-- grammar-card: {"id":"past-munubu","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Godan Verbs","rule":"Godan む, ぬ, and ぶ endings become んだ","example":"休む → plain past: ___.","answer":"休んだ","explanation":"The nasal group uses voiced だ, also in 死んだ and 学んだ."} -->
+<!-- grammar-card: {"id":"past-ku","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Godan Verbs","rule":"Regular godan く becomes いた","example":"書く → plain past: ___.","answer":"書いた","explanation":"書く follows the regular pattern; 行く is exceptional."} -->
+<!-- grammar-card: {"id":"past-gu","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Godan Verbs","rule":"Godan ぐ becomes voiced いだ","example":"泳ぐ → plain past: ___.","answer":"泳いだ","explanation":"ぐ keeps its voicing in the past ending いだ."} -->
+<!-- grammar-card: {"id":"past-su","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Godan Verbs","rule":"Godan verbs ending in す take した","hint":"話す, plain past","example":"昨日(きのう)、友達(ともだち)と話(はな)___。","answer":"した","explanation":"話す becomes 話した."} -->
+<!-- grammar-card: {"id":"te-ta-shared-pattern","kind":"concept","format":"qa","priority":"optional","sourceSection":"Godan Verbs","rule":"The た and て forms share their stem changes and voicing patterns","example":"How can knowing a verb's て-form help you remember its plain past?","answer":"Keep the stem changes, replacing final て with た and final で with だ.","explanation":"For example, 書いて → 書いた and 泳いで → 泳いだ; do not turn every ending into unvoiced た."} -->
 
 #### Ichidan Verbs
 
@@ -132,6 +146,10 @@ For ichidan verbs, we simply remove the 〜る from the plain form and add 〜�
 > 見**る**　+　た　=　見**た**
 > 
 > 
+
+<!-- vocab-card: {"id":"vocab-taberu","priority":"optional","sourceSection":"Ichidan Verbs","word":"食べる","reading":"たべる","meaning":"to eat"} -->
+<!-- vocab-card: {"id":"vocab-miru","priority":"optional","sourceSection":"Ichidan Verbs","word":"見る","reading":"みる","meaning":"to see; to watch"} -->
+<!-- grammar-card: {"id":"past-ichidan","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Ichidan Verbs","rule":"Ichidan verbs drop る and add た","hint":"見る, plain past","example":"昨日(きのう)、映画(えいが)を見(み)___。","answer":"た","explanation":"見る is ichidan, so remove final る and attach た directly to the unchanged stem 見."} -->
 
 #### Irregular Verbs
 
@@ -152,6 +170,13 @@ While 行く (to go) usually behaves like a godan verb, you should learn it as a
 > 行**く**　+　った　=　行**った**
 > 
 > 
+
+<!-- vocab-card: {"id":"vocab-iku","priority":"optional","sourceSection":"Irregular Verbs","word":"行く","reading":"いく","meaning":"to go"} -->
+<!-- vocab-card: {"id":"vocab-kuru","priority":"optional","sourceSection":"Irregular Verbs","word":"来る","reading":"くる","meaning":"to come"} -->
+<!-- vocab-card: {"id":"vocab-suru","priority":"optional","sourceSection":"Irregular Verbs","word":"する","reading":"する","meaning":"to do"} -->
+<!-- grammar-card: {"id":"past-iku","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Irregular Verbs","rule":"行く exceptionally becomes 行った","example":"行く → plain past: ___.","answer":"行った","explanation":"Do not regularize this godan verb to 行いた."} -->
+<!-- grammar-card: {"id":"past-kuru","kind":"rule","format":"qa","priority":"essential","sourceSection":"Irregular Verbs","rule":"来る has the irregular past 来た, read きた","example":"Give the plain past of 来る, including its kana reading.","answer":"来た (きた).","explanation":"The reading changes to き in this form."} -->
+<!-- grammar-card: {"id":"past-suru","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Irregular Verbs","rule":"する has the irregular past した","example":"する → plain past: ___.","answer":"した","explanation":"Memorize the complete irregular form."} -->
 
 ### Uses of 〜た
 
@@ -187,9 +212,8 @@ Realizations:
 
   - Oh, there it is!
 
-<!-- grammar-card: {"rule":"Godan verbs ending in す take した","hint":"話す, plain past","example":"昨日(きのう)、友達(ともだち)と話(はな)___。","answer":"した","explanation":"話す becomes 話した, following the す pattern exactly."} -->
-
-<!-- grammar-card: {"rule":"Ichidan verbs drop る and add た","hint":"見る, plain past","example":"昨日(きのう)、映画(えいが)を見(み)___。","answer":"た","explanation":"見る becomes 見た with no sound change at all."} -->
+<!-- grammar-card: {"id":"past-discovery","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Uses of 〜た","rule":"The past form can report a discovery made right now","hint":"ある, discovery","example":"あ、鍵(かぎ)ここに___！","answer":"あった","explanation":"あった can mark finding the keys now, even though they are still here."} -->
+<!-- grammar-card: {"id":"completed-change","kind":"concept","format":"qa","priority":"optional","sourceSection":"Uses of 〜た","rule":"The plain past can present a completed change with a current result","example":"Does 日本語が上手になったね necessarily mean the person's Japanese is no longer good?","answer":"No. It presents becoming good as a completed change whose result can still hold.","explanation":"The form covers completed changes as well as narrated past events and discoveries."} -->
 
 ## Beyond the Basics
 
@@ -212,6 +236,8 @@ As we mentioned earlier, the 〜た form is the past tense *plain* form for verb
   - 日本にいた時、フグを食べた？
 
   - Did you eat blowfish while you were in Japan? (casual)
+
+<!-- grammar-card: {"id":"embedded-past-register","kind":"concept","format":"qa","priority":"essential","sourceSection":"〜た in the Middle of Sentences","rule":"A plain past inside a dependent construction does not make the whole sentence casual","example":"Is フグを食べたことがありますか casual just because it contains 食べた?","answer":"No. The sentence-final ありますか is polite; 食べた supplies the required plain form inside the construction.","explanation":"Compare the casual ending ことがある？ with polite ことがありますか."} -->
 
 ---
 
@@ -249,8 +275,6 @@ p. 124
 <!-- quiz: {"type":"multiple-choice","question":"What does \"昨日、映画を見た。\" mean?","options":["I watched a movie yesterday.","I bought a book.","I came to Japan two years ago.","You've gotten really good at Japanese."],"answer":0} -->
 
 <!-- quiz: {"type":"multiple-choice","question":"What does \"2年前、日本に来た。\" mean?","options":["I came to Japan two years ago.","I bought a book.","I watched a movie yesterday.","You've gotten really good at Japanese."],"answer":0} -->
-
-<!-- grammar-card: {"rule":"The past form can report a discovery made right now","hint":"ある, plain past","example":"あ、鍵(かぎ)ここに___！","answer":"あった","explanation":"あった is used at the moment of finding something, even though it is there in the present."} -->
 
 ## Sources
 

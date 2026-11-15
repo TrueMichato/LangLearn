@@ -1,5 +1,7 @@
 # てもいい — Permission ("May I?")
 
+<!-- vocab-inventory: {"mode":"explicit"} -->
+
 > **Source:** Content from [Tofugu](https://www.tofugu.com/japanese-grammar/temoii/). For personal study.
 
 〜てもいい for Permissions
@@ -41,6 +43,9 @@ As you can see, the answer is accompanied with the よ ending. This よ is calle
 
 Now, let's move on and check the patterns of use!
 
+<!-- grammar-card: {"id":"permission-question","kind":"rule","format":"cloze","priority":"essential","sourceSection":"The Basics","rule":"てもいい asks for or grants permission","example":"テレビ見___？","answer":"てもいい","explanation":"With rising intonation, this asks whether watching TV is allowed."} -->
+<!-- grammar-card: {"id":"permission-reply","kind":"concept","format":"qa","priority":"optional","sourceSection":"The Basics","rule":"よ commonly marks a permission reply as information for the listener","example":"How can you answer テレビ見てもいい？ affirmatively without repeating the whole question?","answer":"見てもいいよ or simply いいよ.","explanation":"The shared context supplies the activity; よ commonly accompanies the go-ahead but is not mandatory."} -->
+
 ### Patterns of Use
 
 〜てもいい can attach to four different word types — verbs, い-adjectives, な-adjectives, and nouns, but in slightly different ways. Let's take a look at them one by one.
@@ -61,7 +66,9 @@ With some verbs, however, we use 〜でもいい instead of 〜てもいい. Thi
 
   - It's okay to drink it.
 
-Apart from this pattern, there are several other ways to conjugate ichidan verbs and irregular verbs into the て form. For full explanations, please check out the dedicated page!
+Other godan verbs and the irregular verbs have their own て-form patterns. For example, 泳ぐ becomes 泳いで, so it also uses でもいい. Review the て-form patterns when needed.
+
+<!-- grammar-card: {"id":"voiced-permission","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Verb + 〜てもいい","rule":"Verbs ending in ぬ, ぶ or む take でもいい","example":"飲ん___よ。","answer":"でもいい","explanation":"飲む becomes 飲んで, then takes もいい. This is not an exhaustive list of voiced connectives: 泳ぐ also gives 泳いでもいい."} -->
 
 #### い-adjective + てもいい
 
@@ -83,6 +90,8 @@ In the same way, the て form of 大きい (big) is 大きくて. With もいい
 
 As you can see in the translation, the meaning of い-adjective + 〜てもいい is a bit different from that of verb + 〜てもいい. Instead of granting or requesting permission, you use it to express that you can compromise with a negative condition or to inquire about someone's tolerance for a certain condition that they might consider negative.
 
+<!-- grammar-card: {"id":"i-adjective-concession","kind":"rule","format":"cloze","priority":"essential","sourceSection":"い-adjective + てもいい","rule":"An い-adjective uses くてもいい to accept a condition","example":"小さ___もいい？ (Is it okay if it's small?)","answer":"くて","explanation":"Remove final い and add くて before もいい."} -->
+
 #### な-adjective + でもいい
 
 For な-adjectives, you simply add で, which is the て form of だ, to the な-adjective stem, and then add もいい. So with the な-adjective 下手 (to be not good at), you can say:
@@ -98,6 +107,9 @@ And with 同じ (the same), it'll be:
   - I don't mind if it's the same.
 
 As you can see, this use is the same as that of the い-adjective. You can use it to ask about someone's tolerance for a certain condition (like if you screw up something badly because you're not good at it, as in the above example). It can also indicate that you are willing to compromise with a situation even though it may not be the best.
+
+<!-- vocab-card: {"id":"vocab-heta","word":"下手","reading":"へた","meaning":"unskilled; poor at something","priority":"optional","sourceSection":"な-adjective + でもいい"} -->
+<!-- grammar-card: {"id":"na-adjective-concession","kind":"rule","format":"cloze","priority":"optional","sourceSection":"な-adjective + でもいい","rule":"A な-adjective stem takes でもいい rather than なてもいい","example":"下手___いい？ (Do you mind if I'm not good at it?)","answer":"でも","explanation":"で is the connective of だ in this construction."} -->
 
 #### Noun + でもいい
 
@@ -125,6 +137,10 @@ You can also use it with a word like 一個 (one thing), which is classified as 
 
 The nuance created by stating something in this way is that you are not perfectly content with the number, but that you can compromise or settle.
 
+<!-- vocab-card: {"id":"vocab-ikko","word":"一個","reading":"いっこ","meaning":"one item; one piece","priority":"optional","sourceSection":"Noun + でもいい"} -->
+<!-- grammar-card: {"id":"noun-concession","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Noun + でもいい","rule":"A noun takes でもいい to allow or settle for that option","example":"カレー___いい？ (Do you mind if it's curry?)","answer":"でも","explanation":"The speaker checks whether curry is acceptable, not necessarily the listener's first choice."} -->
+<!-- grammar-card: {"id":"concession-social-risk","kind":"concept","format":"qa","priority":"essential","sourceSection":"Noun + でもいい","rule":"Conceding that food is acceptable can sound unappreciative when someone else cooks","example":"Why might カレーでもいいよ sound rude when said to the person cooking your dinner?","answer":"It can sound as if curry is below your ideal choice but you are willing to settle for it.","explanation":"The same wording can be modest when the cook asks about their own offering; the social roles matter."} -->
+
 ### Polite Ways of Saying 〜てもいい
 
 To say 〜てもいい politely, you can simply add です to it, as in:
@@ -148,6 +164,10 @@ In a more formal setting, however, you may also come across more formal words su
   - I don't mind if it's hot.
 
 Between the two, 構いません is just slightly formal and is often used in formal settings. よろしい, however, is very formal and carries a somewhat elegant tone. In ordinary situations, it may come across as a bit overly polite.
+
+<!-- vocab-card: {"id":"vocab-atsui","word":"熱い","reading":"あつい","meaning":"hot (to the touch; of food or drink)","priority":"optional","sourceSection":"Polite Ways of Saying 〜てもいい"} -->
+<!-- grammar-card: {"id":"polite-permission","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Polite Ways of Saying 〜てもいい","rule":"ですか makes the question polite","example":"熱くてもいい___？ (Use polite question form.)","answer":"ですか","explanation":"The adjective-ending construction can be followed by です and the question particle."} -->
+<!-- grammar-card: {"id":"formal-alternatives","kind":"concept","format":"qa","priority":"optional","sourceSection":"Polite Ways of Saying 〜てもいい","rule":"構いません and よろしいです are more formal alternatives to いいです","example":"Which is the more elevated-sounding alternative here, 構いません or よろしいです?","answer":"よろしいです is the more elevated and very formal choice; 構いません is also formal but less so.","explanation":"Choose formality to fit the situation; ordinary speech need not use the most formal option."} -->
 
 ### 〜なくてもいい for "No Need To Do/Be…"
 
@@ -187,9 +207,9 @@ Your companion then requests coffee to accompany the cake. However, when you go 
 
 Again, in this case, 〜なくてもいい shows that it's still fine if it's not coffee.
 
-<!-- grammar-card: {"rule":"Verbs ending in ぬ, ぶ or む take でもいい","hint":"飲む → ?","example":"飲ん___よ。","answer":"でもいい","explanation":"飲む becomes 飲んで, so the permission form is 飲んでもいい."} -->
-
-<!-- grammar-card: {"rule":"てもいい asks for or grants permission","hint":"見る + もいい","example":"テレビ見___？","answer":"てもいい","explanation":"見てもいい？ asks whether watching TV is allowed."} -->
+<!-- grammar-card: {"id":"no-obligation","kind":"rule","format":"cloze","priority":"essential","sourceSection":"〜なくてもいい for \"No Need To Do/Be…\"","rule":"なくてもいい permits not doing something","example":"洗わ___よ。 (You don't need to wash them.)","answer":"なくてもいい","explanation":"The negative ない takes くてもいい, giving permission not to wash rather than forbidding washing."} -->
+<!-- grammar-card: {"id":"no-obligation-not-prohibition","kind":"concept","format":"qa","priority":"essential","sourceSection":"〜なくてもいい for \"No Need To Do/Be…\"","rule":"No need is different from must not","example":"Does 洗わなくてもいい prohibit washing?","answer":"No. Washing is not necessary; the listener may still choose to wash.","explanation":"The construction approves the negative option instead of ordering against the positive action."} -->
+<!-- grammar-card: {"id":"negative-noun-option","kind":"rule","format":"cloze","priority":"optional","sourceSection":"〜なくてもいい for \"No Need To Do/Be…\"","rule":"A noun can use じゃなくてもいい to allow a different option","example":"コーヒーじゃ___よ。 (It doesn't need to be coffee.)","answer":"なくてもいい","explanation":"The negative copula is treated like an い-adjective before てもいい. 甘くなくてもいい and 上手じゃなくてもいい follow the corresponding adjective negatives."} -->
 
 ## Beyond the Basics
 
@@ -217,6 +237,8 @@ When used with the て form, the も indicates the latter meaning. It marks the 
 
 "But this literal meaning seems to be too much for a casual conversation like this," you may think. Although it's much milder than the English "even," も here essentially adds that kind of vibe in the Japanese! Since this も is emphatic, it stresses what you're talking about as something that may be considered as "not okay" and/or "utterly unexpected," but you're still asking or confirming if it's okay.
 
+<!-- grammar-card: {"id":"mo-even-if-cue","kind":"concept","format":"qa","priority":"optional","sourceSection":"What's も?","rule":"も contributes an even-if concession in てもいい","example":"How does the even-if cue explain 食べてもいい？ rather than treating も simply as too?","answer":"It asks whether things remain okay even if the eating occurs; the concession can be much milder than English even.","explanation":"This explains the modest or compromising nuance without making surprise obligatory in every use."} -->
+
 #### The Nuance of も When Asking for Permission
 
 So, when asking for permission, this も helps it sound a little more modest. It shows that what you're asking might be surprising or else not the best option, and thus might not be accepted.
@@ -232,6 +254,8 @@ Since も is just extra fringe for the language, so to speak, it's totally okay 
 Without も, it's slightly more casual.
 
 #### The Nuance of も When Giving Permission
+
+<!-- grammar-card: {"id":"casual-mo-omission","kind":"rule","format":"cloze","priority":"optional","sourceSection":"The Nuance of も When Giving Permission","rule":"も can be dropped in casual speech","example":"ママのケーキ、食べ___よ。","answer":"ていい","explanation":"This is a casual go-ahead for the child to eat the cake, rather than a concession about the speaker's own action."} -->
 
 Now, what kind of nuance does も add if you're the one who is giving the go-ahead? You might have noticed already, but in this case, you might want to use a bit more caution in this situation – も can come across as a bit snobby. It's because も can also imply that you have the authority to give permission.
 
@@ -264,6 +288,8 @@ Let's take a look at another example. Imagine you are asked out on a date, and y
 (*Literally*: I'm cool with going on a date with you **even though** it's not ideal for me.)
 
 Again, in this case, 〜てもいい displays your authority over the decision and expresses that it's not something you really want to do, but that you could do it for the person you're addressing. As a result, it can sound like you're speaking with an air of importance. And if you said this while blushing, for example, it might make you look like a *tsundere* — someone so shy they can't help acting icily toward people they actually feel affection for.
+
+<!-- grammar-card: {"id":"own-action-concession","kind":"concept","format":"qa","priority":"essential","sourceSection":"The Nuance of も When Giving Permission","rule":"A concession about one's own action can sound patronizing and does not permit the same も omission","example":"Why is デートしてもいいよ risky as a warm acceptance of a date?","answer":"It can sound like I am willing to do you the favor despite reservations, placing the speaker above the other person.","explanation":"In that concession reading も cannot simply be dropped as in a casual permission for someone else to act; context and the understood doer matter."} -->
 
   
 
@@ -317,8 +343,6 @@ pp. 298-302
 <!-- quiz: {"type":"multiple-choice","question":"What does \"見**てもいい**よ。\" mean?","options":["Yes, it is.","Is it okay if I watch TV?","Is it okay to eat it?","It's okay to drink it."],"answer":0} -->
 
 <!-- quiz: {"type":"multiple-choice","question":"What does \"食べ**てもいい**？\" mean?","options":["Is it okay to eat it?","Is it okay if I watch TV?","Yes, it is.","It's okay to drink it."],"answer":0} -->
-
-<!-- grammar-card: {"rule":"も can be dropped in casual speech","hint":"てもいい → ?","example":"ママのケーキ、食べ___よ。","answer":"ていい","explanation":"食べていい is the relaxed spoken form of 食べてもいい."} -->
 
 ## Sources
 

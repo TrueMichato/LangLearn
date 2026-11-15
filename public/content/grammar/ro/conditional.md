@@ -1,5 +1,7 @@
 # The Conditional Mood (aș, ai, ar...)
 
+<!-- vocab-inventory: {"mode":"explicit"} -->
+
 The Romanian conditional expresses **would**, **could**, **would like**, and hypothetical situations. It is built with a short auxiliary plus the infinitive form without **a**.
 
 ## Present Conditional Forms
@@ -19,7 +21,14 @@ Use **aș, ai, ar, am, ați, ar + verb**.
 - **Noi am sta acasă.** (noy ahm stah ah-KAH-suh) — We would stay at home.
 - **Ei ar veni mâine.** (yay ar veh-NEE MUH-ee-neh) — They would come tomorrow.
 
+<!-- grammar-card: {"id":"conditional-formation","kind":"concept","format":"qa","priority":"essential","sourceSection":"Present Conditional Forms","rule":"The conditional auxiliary marks person before an infinitive without a","example":"What carries person in aș merge and am merge?","answer":"The auxiliary; merge remains the infinitive without a.","explanation":"The auxiliary paradigm is aș, ai, ar, am, ați, ar."} -->
+<!-- grammar-card: {"id":"conditional-eu-auxiliary","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Present Conditional Forms","rule":"Eu uses conditional auxiliary aș","example":"Eu ___ merge cu tine.","answer":"aș","explanation":"Aș gives I would; keep the ș."} -->
+<!-- grammar-card: {"id":"conditional-tu-auxiliary","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Present Conditional Forms","rule":"Tu uses conditional auxiliary ai","example":"Tu ___ merge cu mine?","answer":"ai","explanation":"The infinitive merge follows second singular ai."} -->
+<!-- grammar-card: {"id":"conditional-noi-auxiliary","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Present Conditional Forms","rule":"Noi uses conditional auxiliary am","example":"Noi ___ sta acasă.","answer":"am","explanation":"Before an infinitive, am marks we would, not the compound-past construction with a participle."} -->
+<!-- grammar-card: {"id":"conditional-voi-auxiliary","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Present Conditional Forms","rule":"Voi uses conditional auxiliary ați","example":"Voi ___ merge cu noi?","answer":"ați","explanation":"Ați is second plural; both third singular and third plural instead use ar."} -->
 <!-- quiz: {"type":"multiple-choice","question":"Which auxiliary is used for 'eu' in the conditional?","options":["ai","aș","ar","ați"],"answer":1} -->
+
+<!-- grammar-card: {"id":"conditional-third-plural","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Present Conditional Forms","rule":"Conditional uses aș, ai, ar, am, ați, ar + infinitive without a","example":"Ei ___ veni mâine.","answer":"ar","explanation":"Both third-person singular and plural use ar."} -->
 
 ## Polite Requests: aș vrea and aș dori
 
@@ -31,7 +40,9 @@ The conditional makes requests softer and more polite.
 
 **Aș vrea** is one of the most useful Romanian phrases for travel and everyday politeness.
 
-<!-- grammar-card: {"rule":"Aș vrea means I would like","hint":"polite request phrase","example":"___ o apă, vă rog.","answer":"Aș vrea","explanation":"The conditional aș vrea softens the request: Aș vrea o apă, vă rog."} -->
+<!-- grammar-card: {"id":"polite-would-like","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Polite Requests: aș vrea and aș dori","rule":"Aș vrea means I would like","example":"___ o apă, vă rog.","hint":"I would like","answer":"Aș vrea","explanation":"The conditional softens the request."} -->
+<!-- vocab-card: {"id":"vocab-as-dori","word":"aș dori","meaning":"I would like (polite request)","priority":"optional","sourceSection":"Polite Requests: aș vrea and aș dori"} -->
+<!-- grammar-card: {"id":"polite-could-request","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Polite Requests: aș vrea and aș dori","rule":"Ați putea makes a polite formal/plural could request","example":"___ putea să mă ajutați? (Could you help me?)","answer":"Ați","explanation":"The conditional of a putea softens the request and uses formal/plural agreement."} -->
 
 ## Hypothetical Sentences
 
@@ -41,7 +52,11 @@ Romanian often uses **dacă** (if) with the conditional.
 - **Dacă ar ploua, am rămâne acasă.** — If it rained, we would stay home.
 - **Dacă ai învăța mai mult, ai vorbi mai bine.** — If you studied more, you would speak better.
 
-These sentences often pair an imperfect-like or conditional idea in the if-clause with a conditional result.
+In these hypothetical examples, **both clauses use the conditional**. The English if-clause often uses a past-looking form such as **had** or **rained**, but the Romanian forms shown here are not imperfect-tense forms.
+
+<!-- vocab-card: {"id":"vocab-daca","word":"dacă","meaning":"if","priority":"optional","sourceSection":"Hypothetical Sentences"} -->
+<!-- grammar-card: {"id":"hypothetical-both-clauses","kind":"concept","format":"qa","priority":"essential","sourceSection":"Hypothetical Sentences","rule":"The hypothetical examples use conditional in both if-clause and result","example":"Which mood appears in both clauses of Dacă aș avea timp, aș merge?","answer":"The conditional in both clauses.","explanation":"English if I had does not make Romanian aș avea an imperfect form."} -->
+<!-- grammar-card: {"id":"hypothetical-result-application","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Hypothetical Sentences","rule":"A noi hypothetical result uses am plus infinitive","example":"Dacă ar ploua, ___ rămâne acasă. (we would stay)","answer":"am","explanation":"The result has subject noi, so the conditional auxiliary is am."} -->
 
 ## Conditional of Common Verbs
 
@@ -57,6 +72,9 @@ These sentences often pair an imperfect-like or conditional idea in the if-claus
 - **Am putea pleca acum.** — We could leave now.
 - **Ce ai face?** — What would you do?
 
+<!-- grammar-card: {"id":"conditional-fi-application","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Conditional of Common Verbs","rule":"A fi keeps infinitive fi after a conditional auxiliary","example":"Ar ___ bine. (It would be good.)","answer":"fi","explanation":"The main verb is infinitive fi, not indicative este or subjunctive fie."} -->
+<!-- grammar-card: {"id":"conditional-putea-meaning","kind":"concept","format":"qa","priority":"optional","sourceSection":"Conditional of Common Verbs","rule":"The conditional of a putea expresses could or would be able","example":"What does Am putea pleca acum mean?","answer":"We could leave now; we would be able to leave now.","explanation":"Putea is the infinitive after conditional am; the phrase expresses conditional ability, not a completed past action."} -->
+<!-- grammar-card: {"id":"conditional-avea-application","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Conditional of Common Verbs","rule":"The conditional uses avea without its dictionary marker a","example":"Noi am ___. (we would have)","answer":"avea","explanation":"Use infinitive avea, not present avem or a second a marker."} -->
 <!-- quiz: {"type":"multiple-choice","question":"How do you say 'we would have'?","options":["noi aș avea","noi ai avea","noi am avea","noi ar avea"],"answer":2} -->
 
 ## Negation
@@ -69,9 +87,9 @@ Put **nu** before the conditional auxiliary.
 
 In informal writing you may see contractions like **n-aș** and **n-ar**, but the full forms are clearer for learners.
 
+<!-- grammar-card: {"id":"conditional-negative-order","kind":"rule","format":"qa","priority":"essential","sourceSection":"Negation","rule":"Nu precedes the conditional auxiliary","example":"Negate Aș merge using the full written forms.","answer":"Nu aș merge.","explanation":"Do not place nu between the auxiliary and infinitive."} -->
+<!-- grammar-card: {"id":"conditional-contraction-register","kind":"concept","format":"qa","priority":"optional","sourceSection":"Negation","rule":"Negative conditional forms can contract in informal writing","example":"What full form does n-aș represent?","answer":"Nu aș.","explanation":"N-ar similarly represents nu ar; the lesson recommends full forms while learning."} -->
 <!-- quiz: {"type":"multiple-choice","question":"Which sentence means 'I would not go'?","options":["Aș nu merge.","Nu aș merge.","Nu merge aș.","Aș merge nu."],"answer":1} -->
-
-<!-- grammar-card: {"rule":"Conditional uses aș, ai, ar, am, ați, ar + infinitive without a","hint":"aș merge, ai merge, ar merge","example":"Ei ___ veni mâine.","answer":"ar","explanation":"For ei/ele in the conditional, the auxiliary is ar: Ei ar veni mâine."} -->
 
 ## Sources
 

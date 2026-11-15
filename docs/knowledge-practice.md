@@ -89,8 +89,9 @@ to explain the material in the lesson itself.
   essential. Additional examples can reinforce the same objective as optional
   items. Essential means *suggested for selection*, not already learned or
   mandatory to save. Explicit vocabulary takes precedence over a formatting
-  candidate with the same NFC word; conservative list/table suggestions remain
-  optional. Do not broaden parsing to treat arbitrary prose as vocabulary.
+  candidate with the same NFC word. In unmarked lessons, conservative list/table
+  suggestions remain optional. Do not broaden parsing to treat arbitrary prose
+  as vocabulary.
 - Check prose mnemonics and memory aids as well as examples. When useful, author
   an optional concept Q&A with the cue, its meaning, and the precise mapping to
   the rule, including any skipped connective words. Do not auto-convert prose or
@@ -102,6 +103,31 @@ to explain the material in the lesson itself.
   `"legacyAliases":[{"rule":"old rule","example":"old prompt"}]`.
   This permits in-place adoption without resetting the existing review.
   Do not fuzzy-match unrelated questions that happen to share an answer.
+
+For a **fully reviewed lexical inventory**, add exactly this single-line public
+control once, outside code fences:
+
+```html
+<!-- vocab-inventory: {"mode":"explicit"} -->
+```
+
+Use `vocab-inventory`, not `vocabulary-policy`. It makes valid authored
+`vocab-card` blocks the authoritative lexicon, **including optional items**.
+Zero lexical cards is an intentional empty lexical inventory only after
+review, not a reason to omit the control. Formatting may still locate an inline
+button for an authored word, but adds no extra vocabulary. Do not turn English
+instructions, pronunciation fragments, paradigms, or quiz alternatives into
+lexical cards. Grammar rules and concepts remain separate and are not suppressed.
+Unmarked legacy lessons retain the formatting fallback even when partly authored;
+adding one `vocab-card` is not an implicit completeness declaration.
+
+`readLessonReviewBlocks(markdown, 'vocab-inventory')` in
+`src/lib/lesson-review.ts` returns `{ items, diagnostics }`: `items.length === 1`
+identifies one valid control. Unknown modes/properties, malformed or multiline
+controls, missing colons or closing comments, and duplicates produce diagnostics
+and no valid control; they must not masquerade as an empty inventory. Fenced
+examples do not activate the control. `stripLessonReviewSources()` hides metadata and
+controls, including malformed ones, while preserving fenced authoring examples.
 
 `parseLessonReviewItems()` in `src/lib/lesson-capture.ts` returns both normalized
 `items` and `diagnostics`. Malformed JSON, incomplete explicit metadata, and
@@ -119,14 +145,57 @@ history, and must not overwrite learner edits. Use **full backup/recovery** to
 preserve these identities and associations. Portable Deck v1 is not a faithful
 backup format for grammar cards.
 
-#### Pilot coverage and focused gates
+#### Maintainer review and inventories
 
-This is a manually reviewed six-lesson pilot, not a completeness audit of all
-555 grammar lessons. Shared tools cover all six languages immediately; authored
-coverage is staged by missing useful teaching points, not by whether a lesson
-already contains a card.
+Review the actual lesson's prose, tables, exceptions, contrasts, and memory aids.
+Decide what deserves lexical recall, rule application, or conceptual recall;
+retain a small, content-appropriate essential core rather than meeting a card
+quota. Extra examples and mnemonics can remain optional. Preserve spelling,
+readings, dialect/register, and regional qualifications rather than turning a
+local tendency into a universal rule.
 
-| Pilot lesson | Named teaching units |
+Record that review in `src/__tests__/fixtures/grammar-retention/*.json`. Each
+lesson names its teaching points with an independent instructional `objective`,
+stable `id`, `kind`, `priority`, and real `sourceSection`. Rule/concept points
+specify exact `format`, `prompt`, and `answer`; lexical points specify exact
+`word` and `meaning`, plus `reading` where relevant. Optional `explanation` and
+`contextSentence` expectations are checked when specified. These are reviewed
+contracts, not snapshots generated from whatever the parser currently emits.
+Review inventory and metadata changes together; preserve exact legacy aliases.
+Section exclusions need a real heading and a reason limited to references,
+assessment, or repetition already covered by named points. An exclusion is not
+a blanket waiver for that heading's teaching material. All indexed lessons are
+instructional and included; no entire lesson is excluded.
+
+#### Catalog scope and focused gates
+
+The expansion has reviewed all **508 indexed lessons** in the Japanese, Arabic,
+Spanish, Portuguese, and Romanian grammar catalogs across **25 completed
+batches**. Shared capture tools support all six languages, but the rest of the
+Russian catalog is outside this expansion; `ru/spelling-rules` remains the
+original reference.
+This coverage applies to those five indexed catalogs, not non-indexed assets or
+the wider Russian catalog.
+
+| Catalog | Reviewed / indexed lessons | Named points | Inventory files |
+| --- | ---: | ---: | --- |
+| Japanese (`ja`) | 179 / 179 | 3,715 | 12 |
+| Arabic (`ar`) | 186 / 186 | 1,926 | 6 |
+| Spanish (`es`) | 55 / 55 | 1,204 | 3 |
+| Portuguese (`pt`) | 38 / 38 | 1,194 | 2 |
+| Romanian (`ro`) | 50 / 50 | 1,092 | 2 |
+
+All five catalogs are fully reviewed and canonical-validated. The independent
+full-508 catalog guard and focused retention gates pass. The inventories name
+**9,131 points**: 4,071 vocabulary targets, 3,173 rule applications, and 1,887
+concepts; 3,163 are essential and 5,968 optional. Counts describe the reviewed
+inventory, not semantic proof.
+
+The original six-lesson fixtures in
+`src/__tests__/lesson-retention-content.test.ts` remain focused semantic and
+legacy-adoption regressions, not the boundary of catalog coverage:
+
+| Original reference lesson | Named teaching units |
 | --- | --- |
 | `ru/spelling-rules` | `seven-letter-scope` and `seven-letter-plural`; `five-letter-stress-condition` with separate stressed/unstressed applications; `ts-u-application` and `ts-rule-exceptions`; lexical `vocab-kniga`, `vocab-rubashka`, `vocab-lampa`, `vocab-tikhiy`, plus optional glossed verbs |
 | `ja/taekim-verb-classification` | `classification-heuristic`, ichidan/godan applications, deceptive る-verbs, irregular verbs and する compounds; explicit meanings/readings including `vocab-nomu` and `vocab-oyogu` |
@@ -135,24 +204,88 @@ already contains a card.
 | `ro/cognates-false-friends` | Cognate spelling as a tendency, lexical false friends, `librarie-biblioteca-contrast`, actual/real and personality contrasts |
 | `ar/masdar` | Individually learned vocalized lexical maṣdars, action-noun usage, `form-one-dirasah-application` versus `form-one-not-predictable`, optional derived-form examples |
 
-`src/__tests__/lesson-retention-content.test.ts` reads the real six lesson files
-through the canonical parser and checks named IDs, exact prompts/answers,
-kinds/formats, lexical meanings/readings, and essential/optional treatment.
+Expanded examples include Spanish `cuyas-novelas` (agreement with the possessed
+noun), Portuguese `clock-time-agreement` (including singular noon/midnight),
+Romanian `presumptive-not-fact` (supposition versus assertion), Japanese
+`stem-formation` in `tofugu-verb-nagara`, and Arabic `gulf-qaf-scope` (qualified
+regional pronunciation, not a universal rule).
+
+`grammar-retention-catalog.test.ts`, `grammar-retention-validator.test.ts`, and
+`helpers/grammar-retention.ts` under `src/__tests__/` use the canonical parser
+against real indexed assets and reviewed inventories. The catalog gate requires
+every indexed lesson exactly once; missing inventories are errors, not exclusions.
+The fixed `grammar-retention-legacy.json` baseline protects **508 indexed assets,
+1,249 grammar identities, 137 stable authored IDs (including 87 vocabulary IDs),
+and 1,415 quiz payloads**. The fixture records
+`605abceda40372fe69c20ca6f19eec6d9b727971` as its authentic baseline; those grammar
+inputs were independently verified identical at `9102181`. Keep the recorded
+baseline independent of current parser output. Authored quiz sequence and payloads
+remain frozen except for exactly five reviewed inline-quiz data corrections:
+
+- `es/relative-pronouns`, second quiz: change zero-based `answer: 2` (**cuyos**)
+  to `answer: 3` (**cuyas**), agreeing with **novelas**.
+- `pt/numbers-dates`, third quiz (4:30): replace option 0, **São quatro e trinta**,
+  with `São quatro e quinze` (no trailing period). Retain `answer: 1`,
+  **São quatro e meia**; the old distractor was also a valid expression of 4:30.
+- `ja/purpose`, second quiz: change only the question to
+  “Using ように, how do you say 'I set an alarm so as not to oversleep'?”;
+  all options and `answer: 1` remain unchanged.
+- `ja/taekim-desire-volition`, second quiz: change the question to
+  “Why is an unqualified '彼は行きたい' often avoided in ordinary conversation?”
+  and option 1 to “An unqualified たい assertion normally presents the speaker's
+  own desire”; retain `answer: 1` and all other options.
+- `ar/istighatha-nudba`, second quiz: change only option 0 from
+  `وَا قَلْبَاهُ (wā qalbāh)` to `وَا قَلْبَاهْ (wā qalbāh)`, matching pausal
+  long ā + hāʾ as-sakt, not possessive -hu; retain the question, `answer: 0`,
+  and all other choices.
+
+All five source corrections are confirmed. The separate
+`src/__tests__/fixtures/grammar-retention-quiz-corrections.json` records
+`lessonKey`, one-based quiz `position`, linguistic `rationale`, and full
+`original`/`corrected` payloads. `validateLegacyLesson(markdown, baseline, lessonKey?)`
+requires the exact corrected payload in matching lesson context, then reverses
+**only those five approved changes** before comparing with the immutable original
+quiz hash. Catalog callers supply the lesson key. The old incorrect payload
+fails with that context; corrected payloads cannot use the exception without it.
+Keep the original baseline fixture and hashes unchanged; admit no other quiz
+rewrite. This is a narrow data repair, not a change to quiz ordering, generation,
+or the scoring algorithm.
+
+Focused mutation gates reject dropped or mistyped teaching units, changed
+kinds/priorities/prompts/answers, incorrect lexical meanings/readings, fabricated
+headings, malformed metadata, duplicate IDs, missing assets, stale/overlapping
+inventories, and lost or ambiguously assigned exact legacy identities. Quality
+checks catch specified front-side answer/meaning leaks, whole-sentence answers
+misused as cloze spans, corrupt reconstruction, and newly joined Arabic/Latin
+tokens. Capture/render tests also protect explicit-inventory authority, optional
+and intentional-zero vocabulary, legacy fallback, control diagnostics, and fenced
+examples. These checks protect specified contracts, not all possible bad prose.
 The general grammar-card and quiz content gates still apply; only validated
-explicit Q&A is exempt from legacy cloze-only constraints. Counts cannot prove
-semantic completeness. Review the teaching inventory and its fixtures together
-when editing a pilot, and run:
+explicit Q&A is exempt from legacy cloze-only constraints. Run the existing gates
+without new dependencies:
 
 ```sh
-npm test -- src/__tests__/lesson-retention-content.test.ts src/__tests__/grammar-cards-content.test.ts src/__tests__/grammar-quiz-content.test.ts
+gh cfs -- npm test -- \
+  src/__tests__/grammar-retention-catalog.test.ts \
+  src/__tests__/grammar-retention-validator.test.ts \
+  src/__tests__/grammar-retention-quiz-corrections.test.ts \
+  src/__tests__/lesson-retention-content.test.ts \
+  src/__tests__/lesson-capture.test.ts \
+  src/__tests__/lesson-capture-render.test.ts \
+  src/__tests__/lesson-markdown-render.test.ts \
+  src/__tests__/grammar-cards-content.test.ts \
+  src/__tests__/grammar-quiz-content.test.ts
 ```
 
 Changing grammar metadata alone does **not** require regenerating vocabulary
-lesson targets. Saving grammar material, completing a grammar lesson, or selecting
-an essential item does not add familiar-vocabulary evidence. A lexical save
-becomes available for review but still needs the existing evidence rules above.
-This feature makes material reviewable; it is not measured proof of better
-long-term human retention.
+lesson targets. The catalog expansion changes no UI, database schema, scheduler,
+XP, or lexical-familiarity rules. Saving grammar material, completing a grammar
+lesson, or selecting an essential item does not add familiar-vocabulary evidence.
+A lexical save becomes available for review but still needs the existing evidence
+rules above. Counts and passing gates are not semantic-completeness proof or a
+guarantee that future prose is captured automatically. Human/model linguistic
+review is not native-speaker certification. This feature makes material
+reviewable; it is not measured proof of better long-term human retention.
 
 ## Coverage is vocabulary, not comprehension
 

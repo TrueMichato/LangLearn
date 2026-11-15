@@ -1,5 +1,7 @@
 # 〜たい — Want to Do
 
+<!-- vocab-inventory: {"mode":"explicit"} -->
+
 > **Source:** Content from [Tofugu](https://www.tofugu.com/japanese-grammar/tai-form/). For personal study.
 
 Japanese Verb Desire Form たい
@@ -42,6 +44,12 @@ To attach 〜たい to a verb, start with the stem form of the verb and stick �
    
   
 
+<!-- grammar-card: {"id":"desire-masu-stem","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Conjugating Verbs to Take 〜たい","rule":"たい attaches to the ます-stem to express wanting to act","hint":"Use the stem of 行く.","example":"日本に＿＿たい。","answer":"行き","explanation":"行く becomes 行きます, whose stem is 行き. The completed phrase expresses wanting to go to Japan.","legacyAliases":[{"rule":"〜たい","example":"日本に＿＿たい。"}]} -->
+<!-- grammar-card: {"id":"ichidan-desire","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Conjugating Verbs to Take 〜たい","rule":"An ichidan verb drops る before たい","example":"食べる → want to eat: 食べ___。","answer":"たい","explanation":"The stem is 食べ, so the form is 食べたい, not 食べるたい."} -->
+<!-- grammar-card: {"id":"godan-desire","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Conjugating Verbs to Take 〜たい","rule":"A godan verb uses its い-row stem before たい","example":"走る → want to run: ___たい。","answer":"走り","explanation":"走る (はしる) is godan; 走ります supplies the stem 走り (はしり)."} -->
+<!-- vocab-card: {"id":"vocab-taberu","word":"食べる","reading":"たべる","meaning":"to eat","priority":"optional","sourceSection":"Conjugating Verbs to Take 〜たい"} -->
+<!-- vocab-card: {"id":"vocab-hashiru","word":"走る","reading":"はしる","meaning":"to run","priority":"optional","sourceSection":"Conjugating Verbs to Take 〜たい"} -->
+
 ### たい for Expressing Your Desire
 
 It's pretty straightforward, but 〜たい is used for expressing your desire. For example, you can use it for your run-of-the-mill daily urge.
@@ -56,6 +64,8 @@ Or, even for a bigger, long-term desire, like your future dream.
 
   - I want to become a pilot.
 
+<!-- vocab-card: {"id":"vocab-pairotto","word":"パイロット","reading":"ぱいろっと","meaning":"pilot","priority":"optional","sourceSection":"たい for Expressing Your Desire"} -->
+
 ## Beyond the Basics
 
 ### Expressing Desire of Someone Else
@@ -66,11 +76,16 @@ For example, if you want to speak for your bacon-obsessed friend, Mami, and say 
 
 You might still come across 〜たい being used for someone else's desire in a story (when characters' desires are narrated), but it is pretty rare in real-life speech. So even if you're pretty sure Mami wants to eat bacon (because she always does), it would be a good idea to make it clear that you're only assuming, or you have some evidence to back it up. Now, let's take a look at some of the options you can use:
 
+<!-- grammar-card: {"id":"private-desire-perspective","kind":"concept","format":"qa","priority":"essential","sourceSection":"Expressing Desire of Someone Else","rule":"Bare たい normally voices the speaker's own desire rather than an unqualified claim about another mind","example":"Why can an isolated マミはベーコンを食べたい sound overconfident in ordinary conversation?","answer":"It directly asserts Mami's private desire without explaining the speaker's access to it.","explanation":"This is a perspective constraint, not a ban on all third-person たい: reporting, inference, explanatory context, and narrative viewpoint can license it."} -->
+
 **と言っていた (they were saying)**
 
   - 木村さんはお好み焼きを食べたいと言っていた。
 
   - Kimura-san was saying he wants to eat okonomiyaki.
+
+<!-- grammar-card: {"id":"reported-desire","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Expressing Desire of Someone Else","rule":"と言っていた reports another person's stated desire","hint":"Report what Kimura said earlier, rather than asserting access to his mind.","example":"木村さんはお好み焼きを食べたい＿＿。","answer":"と言っていた","explanation":"The quotation identifies the source of the desire claim: Kimura said it.","legacyAliases":[{"rule":"〜たいと言っていた","example":"木村さんはお好み焼きを食べたい＿＿。"}]} -->
+<!-- vocab-card: {"id":"vocab-okonomiyaki","word":"お好み焼き","reading":"おこのみやき","meaning":"okonomiyaki; savory Japanese pancake","priority":"optional","sourceSection":"Expressing Desire of Someone Else"} -->
 
 **そうだ (I heard that)**
 
@@ -83,6 +98,9 @@ You might still come across 〜たい being used for someone else's desire in a 
   - 田中さんは帰りたそうだ。
 
   - It looks like Tanaka-san wants to go home.
+
+<!-- grammar-card: {"id":"visible-desire","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Expressing Desire of Someone Else","rule":"Appearance そう replaces the final い of たい","hint":"Express an appearance-based judgment, ending in the plain copula.","example":"田中さんは帰り＿＿。","answer":"たそうだ","explanation":"帰りたい becomes 帰りたそうだ: they look as if they want to go home.","legacyAliases":[{"rule":"〜たそうだ","example":"田中さんは帰り＿＿。"}]} -->
+<!-- grammar-card: {"id":"desire-hearsay-appearance","kind":"concept","format":"qa","priority":"essential","sourceSection":"Expressing Desire of Someone Else","rule":"Keeping or removing い distinguishes reported desire from apparent desire","example":"How does 帰りたいそうだ differ from 帰りたそうだ?","answer":"The first reports having heard that the person wants to go home; the second infers that desire from their appearance or behavior.","explanation":"Hearsay keeps the complete たい predicate; appearance uses its stem. らしい is another way to mark an inference."} -->
 
 Note: Check out our 〜そう for more details.
 
@@ -99,6 +117,9 @@ Note: Check out our 〜そう for more details.
   - (The situation is) Kimura-san wants to eat okonomiyaki.
 
 There's also a way of describing someone else's desire without using 〜たい. Check out 〜たがる to learn all about it!
+
+<!-- grammar-card: {"id":"explanatory-desire","kind":"concept","format":"qa","priority":"optional","sourceSection":"Expressing Desire of Someone Else","rule":"Explanatory んです can present a desire as relevant background","example":"What does んです contribute in 木村さんはお好み焼きを食べたいんです?","answer":"It presents Kimura's desire as an explanation of the situation.","explanation":"The explanatory context makes the claim relevant; it does not itself constitute evidence or grant mind-reading access."} -->
+<!-- vocab-card: {"id":"vocab-kenka","word":"喧嘩","reading":"けんか","meaning":"quarrel; fight","priority":"optional","sourceSection":"Expressing Desire of Someone Else"} -->
 
 ---
 
@@ -139,12 +160,6 @@ by Wasabi – Learn Japanese Online
 <!-- quiz: {"type":"multiple-choice","question":"What does \"パイロットになりたい。\" mean?","options":["I want to become a pilot.","I want to go to a bathroom.","Kimura-san was saying he wants to eat okonomiyaki.","I heard that Tanaka-san wants to go get a drink with Kimura-san."],"answer":0} -->
 
 <!-- quiz: {"type":"multiple-choice","question":"What does \"木村さんはお好み焼きを食べたいと言っていた。\" mean?","options":["Kimura-san was saying he wants to eat okonomiyaki.","I want to go to a bathroom.","I want to become a pilot.","I heard that Tanaka-san wants to go get a drink with Kimura-san."],"answer":0} -->
-
-<!-- grammar-card: {"rule":"〜たい","hint":"Express desire/want to do something","example":"日本に＿＿たい。","answer":"行き","explanation":"Attach たい to the verb masu-stem to express wanting to do something. E.g. 食べます → 食べたい (want to eat)."} -->
-
-<!-- grammar-card: {"rule":"〜たいと言っていた","hint":"Report someone else's desire","example":"木村さんはお好み焼きを食べたい＿＿。","answer":"と言っていた","explanation":"Use と言っていた after 〜たい to report what someone else said they wanted to do."} -->
-
-<!-- grammar-card: {"rule":"〜たそうだ","hint":"Express that someone appears to want something","example":"田中さんは帰り＿＿。","answer":"たそうだ","explanation":"Use 〜たそうだ (remove い, add そうだ) to say 'it looks like someone wants to…' based on observation."} -->
 
 ## Sources
 

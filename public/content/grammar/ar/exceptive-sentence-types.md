@@ -1,12 +1,18 @@
 # Exception Sentence Types with illā
 
+<!-- vocab-inventory: {"mode":"explicit"} -->
+
 Arabic exceptions with **إِلَّا** (illā) depend on the shape of the whole sentence. The three useful labels are complete affirmative, complete negative, and incomplete negative.
 
 ## Core idea
 
+<!-- grammar-card: {"id":"complete-vs-incomplete","kind":"concept","format":"qa","priority":"essential","sourceSection":"Core idea","rule":"A complete exception names the group from which something is excluded.","example":"What makes an exception construction “complete” rather than “incomplete” here?","answer":"It explicitly names the group before إِلَّا.","explanation":"This completeness label concerns the expressed group, not whether the utterance communicates a complete thought."} -->
+
 A complete sentence names the group before **إِلَّا** (illā). An incomplete negative sentence does not name that group, so the noun after **إِلَّا** (illā) simply fills the normal grammatical role needed by the sentence.
 
 ## Forms and examples
+
+<!-- vocab-card: {"id":"vocab-illa","word":"إِلَّا","reading":"illā","meaning":"except; only in a negative restrictive construction","priority":"optional","sourceSection":"Forms and examples"} -->
 
 | Type | Arabic label | Pattern | Case after إِلَّا | Example |
 |---|---|---|---|---|
@@ -19,9 +25,13 @@ A complete sentence names the group before **إِلَّا** (illā). An incomple
 
 ## Usage notes
 
+<!-- grammar-card: {"id":"complete-negative-choice","kind":"concept","format":"qa","priority":"essential","sourceSection":"Usage notes","rule":"A connected complete negative exception allows exception accusative or matching badal case.","example":"In مَا حَضَرَ الطُّلَّابُ إِلَّا طَالِبٌ, what alternative case can the excluded student take, and why is nominative allowed?","answer":"طَالِبًا is also allowed; طَالِبٌ can be a substitute matching the nominative group.","explanation":"This is a connected exception, with a member of the named group. Do not extend the substitute option indiscriminately to disconnected exceptions."} -->
+
 In a complete affirmative exception, the excluded noun is the **مُسْتَثْنَى** (mustathnā) and is usually accusative. In a complete negative sentence, Arabic allows either accusative exception or a substitute matching the group’s case. In an incomplete negative sentence, do not force an accusative; read what the sentence still needs.
 
-<!-- grammar-card: {"rule": "After إِلَّا in an incomplete negative sentence, the following noun takes the case required by its role, not automatic accusative.", "hint": "Remove إِلَّا and ask what role the noun fills.", "example": "مَا نَجَحَ إِلَّا الْمُجْتَهِدُ (mā najaḥa illā al-mujtahidu)", "answer": "Only the hardworking student succeeded", "explanation": "الْمُجْتَهِدُ is nominative because it is the subject of نَجَحَ."} -->
+The substitute option here concerns a connected exception, where the excluded member belongs to the named group; do not extend it indiscriminately to disconnected exceptions.
+
+<!-- grammar-card: {"id":"incomplete-subject","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Usage notes","rule":"After إِلَّا in an incomplete negative sentence, the following noun takes the case required by its role, not automatic accusative.","example":"“Only the hardworking student succeeded”: مَا نَجَحَ إِلَّا ___.","answer":"الْمُجْتَهِدُ","explanation":"The noun is the subject, hence nominative; there is no named group before إِلَّا.","legacyAliases":[{"rule":"After إِلَّا in an incomplete negative sentence, the following noun takes the case required by its role, not automatic accusative.","example":"مَا نَجَحَ إِلَّا الْمُجْتَهِدُ (mā najaḥa illā al-mujtahidu)"}]} -->
 
 ## Practice patterns
 
@@ -33,7 +43,8 @@ Notice how the case changes with the sentence type:
 
 <!-- quiz: {"type": "multiple-choice", "question": "In حَضَرَ الطُّلَّابُ إِلَّا طَالِبًا (ḥaḍara aṭ-ṭullābu illā ṭāliban), what type of exception is this?", "options": ["Complete affirmative", "Incomplete negative", "Complete negative", "Vocative exception"], "answer": 0} -->
 
-<!-- grammar-card: {"rule": "A complete affirmative exception with إِلَّا normally puts the excluded noun in the accusative.", "hint": "Look for a named group and no negation before إِلَّا.", "example": "سَافَرَ الْمُوَظَّفُونَ إِلَّا مُوَظَّفًا (sāfara al-muwaẓẓafūna illā muwaẓẓafan)", "answer": "The employees traveled except one employee", "explanation": "The group الْمُوَظَّفُونَ is named and the sentence is affirmative, so مُوَظَّفًا is accusative."} -->
+<!-- grammar-card: {"id":"complete-affirmative","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Practice patterns","rule":"A complete affirmative exception with إِلَّا normally puts the excluded noun in the accusative.","example":"“The employees traveled except one employee”: سَافَرَ الْمُوَظَّفُونَ إِلَّا ___.","answer":"مُوَظَّفًا","explanation":"The group is named and the sentence affirmative, so the excluded member is accusative.","legacyAliases":[{"rule":"A complete affirmative exception with إِلَّا normally puts the excluded noun in the accusative.","example":"سَافَرَ الْمُوَظَّفُونَ إِلَّا مُوَظَّفًا (sāfara al-muwaẓẓafūna illā muwaẓẓafan)"}]} -->
+<!-- grammar-card: {"id":"incomplete-object","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Practice patterns","rule":"An object after restrictive إِلَّا takes its ordinary accusative.","example":"“I read only one book”: مَا قَرَأْتُ إِلَّا ___.","answer":"كِتَابًا","explanation":"The book fills the direct-object slot; its accusative is not evidence that every noun after إِلَّا must be accusative."} -->
 
 ## Sources
 

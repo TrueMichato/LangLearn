@@ -1,5 +1,7 @@
 # Prepositions that Take the Genitive/Dative
 
+<!-- vocab-inventory: {"mode":"explicit"} -->
+
 Many Romanian prepositions are followed by ordinary accusative forms, but some important words and prepositional phrases require the **genitive** or **dative**. These are especially common when describing location, cause, opposition, and thanks.
 
 ## Genitive Prepositional Phrases
@@ -21,6 +23,14 @@ Many location phrases are built from a noun-like word with a definite article: *
 
 <!-- quiz: {"type":"multiple-choice","question":"Which phrase means in front of the house?","options":["în fața casei","în față casa","în fața casă","față de casa"],"answer":0} -->
 
+<!-- vocab-card: {"id":"vocab-in-fata","priority":"optional","sourceSection":"Genitive Prepositional Phrases","word":"în fața","meaning":"in front of (with genitive)"} -->
+<!-- vocab-card: {"id":"vocab-in-spatele","priority":"optional","sourceSection":"Genitive Prepositional Phrases","word":"în spatele","meaning":"behind (with genitive)"} -->
+<!-- vocab-card: {"id":"vocab-in-jurul","priority":"optional","sourceSection":"Genitive Prepositional Phrases","word":"în jurul","meaning":"around (with genitive)"} -->
+<!-- vocab-card: {"id":"vocab-deasupra","priority":"optional","sourceSection":"Genitive Prepositional Phrases","word":"deasupra","meaning":"above; on top of (with genitive)"} -->
+<!-- vocab-card: {"id":"vocab-dedesubtul","priority":"optional","sourceSection":"Genitive Prepositional Phrases","word":"dedesubtul","meaning":"under; underneath (with genitive)"} -->
+<!-- vocab-card: {"id":"vocab-inaintea","priority":"optional","sourceSection":"Genitive Prepositional Phrases","word":"înaintea","meaning":"before (with genitive)"} -->
+<!-- grammar-card: {"id":"genitive-school","priority":"essential","sourceSection":"Genitive Prepositional Phrases","kind":"rule","format":"cloze","rule":"Many phrases like în fața and din cauza take a genitive noun","example":"Stau în fața ___. (the school)","answer":"școlii","explanation":"Școala takes the genitive-dative form școlii after în fața."} -->
+
 ## Opposition and Cause
 
 Several common prepositions also take genitive forms.
@@ -39,7 +49,12 @@ Several common prepositions also take genitive forms.
 
 The noun after these expressions often has a form that looks like the definite genitive-dative: **ploii**, **traficului**, **deciziei**, **dificultăților**.
 
-<!-- grammar-card: {"rule":"Many phrases like în fața and din cauza take a genitive noun","hint":"house = casa; of the house = casei","example":"Stau în fața ___. (the school)","answer":"școlii","explanation":"After în fața, the noun școala appears in the genitive-dative form școlii."} -->
+<!-- vocab-card: {"id":"vocab-impotriva","priority":"optional","sourceSection":"Opposition and Cause","word":"împotriva","meaning":"against (with genitive)"} -->
+<!-- vocab-card: {"id":"vocab-contra","priority":"optional","sourceSection":"Opposition and Cause","word":"contra","meaning":"against (with genitive in the construction taught here)"} -->
+<!-- vocab-card: {"id":"vocab-asupra","priority":"optional","sourceSection":"Opposition and Cause","word":"asupra","meaning":"on; upon (with genitive)"} -->
+<!-- vocab-card: {"id":"vocab-din-cauza","priority":"optional","sourceSection":"Opposition and Cause","word":"din cauza","meaning":"because of (with genitive)"} -->
+<!-- vocab-card: {"id":"vocab-in-ciuda","priority":"optional","sourceSection":"Opposition and Cause","word":"în ciuda","meaning":"despite (with genitive)"} -->
+<!-- grammar-card: {"id":"cause-rain-genitive","priority":"optional","sourceSection":"Opposition and Cause","kind":"rule","format":"cloze","rule":"Din cauza governs a genitive noun","example":"Am întârziat din cauza ___. (ploaia)","answer":"ploii","explanation":"Ploaia becomes ploii in this genitive construction."} -->
 
 ## Dative Prepositions
 
@@ -59,6 +74,13 @@ Some prepositions take the dative. These often express benefit, conformity, or t
 
 <!-- quiz: {"type":"multiple-choice","question":"Which sentence correctly uses datorită?","options":["Datorită prietenilor, am reușit.","Datorită prietenii, am reușit.","Datorită pe prieteni, am reușit.","Datorită la prieteni, am reușit."],"answer":0} -->
 
+<!-- vocab-card: {"id":"vocab-datorita","priority":"optional","sourceSection":"Dative Prepositions","word":"datorită","meaning":"thanks to; owing to (with dative)"} -->
+<!-- vocab-card: {"id":"vocab-multumita","priority":"optional","sourceSection":"Dative Prepositions","word":"mulțumită","meaning":"thanks to (with dative)"} -->
+<!-- vocab-card: {"id":"vocab-gratie","priority":"optional","sourceSection":"Dative Prepositions","word":"grație","meaning":"thanks to (with dative)"} -->
+<!-- vocab-card: {"id":"vocab-conform","priority":"optional","sourceSection":"Dative Prepositions","word":"conform","meaning":"according to (with dative)"} -->
+<!-- vocab-card: {"id":"vocab-potrivit","priority":"optional","sourceSection":"Dative Prepositions","word":"potrivit","meaning":"according to (preposition with dative)"} -->
+<!-- grammar-card: {"id":"dative-conform","priority":"essential","sourceSection":"Dative Prepositions","kind":"rule","format":"cloze","rule":"Dative prepositions like datorită and conform require dative forms","example":"Conform ___, este permis. (legea)","answer":"legii","explanation":"Conform takes the dative; legii is the dative/genitive form of legea.","legacyAliases":[{"rule":"Dative prepositions like datorită and conform require dative forms","example":"___ legii, este permis."}]} -->
+
 ## Genitive-Dative Forms to Recognize
 
 For many nouns, the genitive and dative forms are identical. The article and endings do the work.
@@ -73,6 +95,9 @@ For many nouns, the genitive and dative forms are identical. The article and end
 
 Do not insert **la** after these prepositions: say **datorită mamei**, not **datorită la mama**, in standard Romanian.
 
+<!-- grammar-card: {"id":"case-shared-forms","priority":"essential","sourceSection":"Genitive-Dative Forms to Recognize","kind":"concept","format":"qa","rule":"Genitive and dative nouns often share the same visible form","example":"Does the identical ending in în fața casei and datorită mamei mean both prepositions govern the same case?","answer":"No. Genitive and dative forms often look alike; the preposition determines the case.","explanation":"No. Genitive and dative forms often look alike; the preposition determines the case."} -->
+<!-- grammar-card: {"id":"dative-no-la","priority":"optional","sourceSection":"Genitive-Dative Forms to Recognize","kind":"rule","format":"cloze","rule":"Standard datorită takes a dative directly, not la plus an ordinary form","example":"Am reușit datorită ___. (mama)","answer":"mamei","explanation":"Say datorită mamei in standard Romanian."} -->
+
 ## Choosing din cauza or datorită
 
 Both can translate **because of**, but the nuance differs.
@@ -82,7 +107,7 @@ Both can translate **because of**, but the nuance differs.
 
 <!-- quiz: {"type":"multiple-choice","question":"Which phrase means according to the rules?","options":["conform regulile","conform regulilor","conform pe reguli","conform la reguli"],"answer":1} -->
 
-<!-- grammar-card: {"rule":"Dative prepositions like datorită and conform require dative forms","hint":"rules = regulile; according to the rules = conform regulilor","example":"___ legii, este permis.","answer":"Conform","explanation":"Conform takes the dative; legii is the dative/genitive form of legea."} -->
+<!-- grammar-card: {"id":"cause-benefit-nuance","priority":"essential","sourceSection":"Choosing din cauza or datorită","kind":"concept","format":"qa","rule":"Din cauza often introduces a negative cause; datorită usually a positive cause","example":"Which expression is normally preferred for a helpful cause rather than an unwanted delay?","answer":"Datorită is normally used for a positive cause; din cauza often introduces a negative or neutral cause.","explanation":"Datorită is normally used for a positive cause; din cauza often introduces a negative or neutral cause."} -->
 
 ## Sources
 

@@ -1,5 +1,7 @@
 # い → くて Linking Form
 
+<!-- vocab-inventory: {"mode":"explicit"} -->
+
 > **Source:** Content from [Tofugu](https://www.tofugu.com/japanese-grammar/i-adjective-ku-form-linking/). For personal study.
 
 Japanese い-Adjective く Form
@@ -44,13 +46,18 @@ These are not strict rules by any means.
 
 What is worth remembering is that adjectives linked with the く form tend to be used in writing more than in conversation.
 
+<!-- vocab-card: {"id":"vocab-wakai","priority":"essential","sourceSection":"Linking Words","word":"若い","reading":"わかい","meaning":"young"} -->
+<!-- vocab-card: {"id":"vocab-utsukushii","priority":"optional","sourceSection":"Linking Words","word":"美しい","reading":"うつくしい","meaning":"beautiful"} -->
+<!-- grammar-card: {"id":"bare-ku-linking","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Linking Words","rule":"Bare く can link adjectives in a literary style","example":"Link 若い and 美しい without て: 若___美しい。","answer":"く","explanation":"若く美しい means young and beautiful; bare く is especially associated with writing."} -->
+<!-- grammar-card: {"id":"linking-punctuation","kind":"concept","format":"qa","priority":"optional","sourceSection":"Linking Words","rule":"Commas in く-linked descriptions follow tendencies rather than strict rules","example":"Must a comma always separate adjectives linked with bare く?","answer":"No. A comma is often omitted before a noun and is more common between sentence-final descriptions, but neither pattern is compulsory.","explanation":"若く美しい妻 and 妻は若く、美しい illustrate the tendencies."} -->
+
 ### Linking Clauses
 
 The く form can also be used to link two or more sentences together. Note that once the sentences are combined together, they are referred to as clauses. Together, these clauses make up a larger compound sentence.
 
 Let’s start with two sentences that we’ll stick together with the く form:
 
-  - 去年はとても暖かった。
+  - 去年はとても暖かかった。
 
   - Last year was very warm.
 
@@ -58,13 +65,17 @@ Let’s start with two sentences that we’ll stick together with the く form:
 
   - There was little rain.
 
-The い-adjectives in each sentence (暖かった and 少なかった) are in the past tense, indicated by 〜かった. In order to combine the sentences, the adjective at the end of the first sentence will change into the く form.
+The い-adjectives in each sentence (暖かかった and 少なかった) are in the past tense, indicated by 〜かった. In order to combine the sentences, the adjective at the end of the first sentence will change into the く form.
 
   - 去年はとても暖か**く**、雨が少な**かった**。
 
   - Last year was very warm, and there was little rain.
 
 Because the く form cannot show tense, the tense of the entire compound sentence is shown at the end of the second clause.
+
+<!-- vocab-card: {"id":"vocab-atatakai","priority":"essential","sourceSection":"Linking Clauses","word":"暖かい","reading":"あたたかい","meaning":"warm (weather; surroundings)"} -->
+<!-- vocab-card: {"id":"vocab-sukunai","priority":"optional","sourceSection":"Linking Clauses","word":"少ない","reading":"すくない","meaning":"few; little in quantity"} -->
+<!-- grammar-card: {"id":"clause-link-tense","kind":"concept","format":"qa","priority":"essential","sourceSection":"Linking Clauses","rule":"A continuative く clause does not independently mark past tense","example":"In 去年はとても暖かく、雨が少なかった, where is past tense expressed?","answer":"At the final predicate 少なかった; 暖かく itself does not carry a past ending.","explanation":"The time expression and final predicate place the linked descriptions in the past."} -->
 
 ## Beyond the Basics
 
@@ -88,6 +99,9 @@ Translation 2: With last year being very warm, there was little rain.
 While a translation between two languages can rarely capture every nuance, the theory is that translation 2 above is actually closer in feeling to the original Japanese than translation 1. This is because the く form implies a looser, more indirect relationship between the two clauses. Indirectness is one way of raising the formality level in Japanese, so this explains why the く form is more associated with formal writing than its て form equivalent.
 
 Despite the fact that the grammatical connection is looser, the く form may actually imply a closer relationship in terms of the meaning of the two clauses. This can be seen in the two translations above. Whereas "and" can connect two relatively unrelated ideas ("I'm British and I like cats"), an adverbial clause cannot ("Being British, I like cats"). So, while the lines may feel more blurred in sentences with く, they also feel more dependent on one another.
+
+<!-- grammar-card: {"id":"kute-linking","kind":"rule","format":"cloze","priority":"essential","sourceSection":"く Form vs て Form","rule":"くて links an い-adjective on to the next clause","hint":"暖かい → ?; use the て-form linker","example":"去年はとても暖か___、雨が少なかった。","answer":"くて","explanation":"暖かくて links the descriptions. Bare 暖かく is also grammatical but more literary."} -->
+<!-- grammar-card: {"id":"linker-register-contrast","kind":"concept","format":"qa","priority":"essential","sourceSection":"く Form vs て Form","rule":"Bare く linking is literary; くて is more usual in speech","example":"Which linker is more usual in conversation, bare く or くて?","answer":"くて is more usual in conversation; bare く sounds more formal and literary.","explanation":"The proposed looser adverbial connection is an analysis of the nuance, not a rule that either ending always means because."} -->
 
 ---
 
@@ -116,8 +130,6 @@ p. 153
 <!-- quiz: {"type":"multiple-choice","question":"What does \"彼の妻は若く、美しい。\" mean?","options":["His wife is young and beautiful.","He has a young and beautiful wife.","Last year was very warm.","There was little rain."],"answer":0} -->
 
 <!-- quiz: {"type":"multiple-choice","question":"What does \"去年はとても暖かった。\" mean?","options":["Last year was very warm.","He has a young and beautiful wife.","His wife is young and beautiful.","There was little rain."],"answer":0} -->
-
-<!-- grammar-card: {"rule":"くて links an い-adjective on to the next clause","hint":"暖かい → ?","example":"去年はとても暖か___、雨が少なかった。","answer":"くて","explanation":"暖かくて joins the two descriptions of last year into a single sentence."} -->
 
 ## Sources
 

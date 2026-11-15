@@ -1,10 +1,14 @@
 # Ighrāʾ and Taḥdhīr: Urging and Warning
 
+<!-- vocab-inventory: {"mode":"explicit"} -->
+
 اَلْإِغْرَاءُ (al-ighrāʾu) urges someone toward a desirable action or quality, while اَلتَّحْذِيرُ (at-taḥdhīru) warns someone away from danger or blameworthy behavior.
 
 ## Core idea
 
-Both styles often use an accusative noun governed by an understood verb. In إِلْزَمِ الصِّدْقَ (ilzami aṣ-ṣidqa) — hold to truthfulness, the verb is explicit. In الصِّدْقَ الصِّدْقَ (aṣ-ṣidqa aṣ-ṣidqa) — truthfulness, truthfulness, the command “hold to” is understood.
+Both styles often use an accusative noun governed by an understood verb. In اِلْزَمِ الصِّدْقَ (ilzami aṣ-ṣidqa) — hold to truthfulness, the verb is explicit. In الصِّدْقَ الصِّدْقَ (aṣ-ṣidqa aṣ-ṣidqa) — truthfulness, truthfulness, the command “hold to” is understood.
+
+<!-- grammar-card: {"id":"urging-versus-warning-intent","kind":"concept","format":"qa","priority":"essential","sourceSection":"Core idea","rule":"Ighrāʾ urges toward a desirable thing; taḥdhīr warns away from a danger.","example":"Does repeating an accusative noun by itself tell you whether the speaker is urging or warning?","answer":"No. The intended meaning and context distinguish urging toward something good from warning away from danger.","explanation":"الصِّدْقَ الصِّدْقَ urges truthfulness, while النَّارَ النَّارَ warns of fire. Both can rely on an omitted command."} -->
 
 ## Forms and examples
 
@@ -15,13 +19,19 @@ Both styles often use an accusative noun governed by an understood verb. In إِ
 | Taḥdhīr with إِيَّاكَ | إِيَّاكَ وَ + accusative | إِيَّاكَ وَالْكَذِبَ (iyyāka wa-l-kadhiba) — beware of lying |
 | Taḥdhīr by repetition | noun in accusative repeated | النَّارَ النَّارَ (an-nāra an-nāra) — beware the fire |
 
+<!-- vocab-card: {"id":"vocab-sidq","word":"الصِّدْقَ","reading":"aṣ-ṣidqa","meaning":"truthfulness (accusative)","priority":"optional","sourceSection":"Forms and examples"} -->
+<!-- vocab-card: {"id":"vocab-kadhib","word":"الْكَذِبَ","reading":"al-kadhiba","meaning":"lying; falsehood (accusative)","priority":"optional","sourceSection":"Forms and examples"} -->
+<!-- vocab-card: {"id":"vocab-nar","word":"النَّارَ","reading":"an-nāra","meaning":"the fire (accusative)","priority":"optional","sourceSection":"Forms and examples"} -->
+<!-- grammar-card: {"id":"coordinated-urging-accusative","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Forms and examples","rule":"Coordinated urging nouns are accusative under an understood command.","example":"Complete “Pursue knowledge and action”: الْعِلْمَ وَ___.","answer":"الْعَمَلَ","explanation":"الْعَمَلَ (al-ʿamala) is accusative along with الْعِلْمَ. The wāw coordinates the two desirable objects of the understood urging command."} -->
 <!-- quiz: {"type": "multiple-choice", "question": "What does إِيَّاكَ وَالْكَذِبَ (iyyāka wa-l-kadhiba) mean?", "options": ["Beware of lying", "Tell a lie", "Lying is easy", "You are a liar"], "answer": 0} -->
 
 ## Usage notes
 
 The accusative is a clue that an omitted command is being felt: اِلْزَمْ (ilzam) — hold to, or اِحْذَرْ (iḥdhar) — beware. These styles are common in advice, sermons, slogans, and elevated prose.
 
-<!-- grammar-card: {"rule": "Ighrāʾ urges the listener toward something good, often using an accusative noun with an understood command.", "hint": "Supply hold to or pursue in English.", "example": "الصَّبْرَ الصَّبْرَ (aṣ-ṣabra aṣ-ṣabra)", "answer": "Hold firmly to patience", "explanation": "الصَّبْرَ is accusative because an understood verb such as اِلْزَمْ governs it."} -->
+<!-- vocab-card: {"id":"vocab-sabr","word":"الصَّبْرَ","reading":"aṣ-ṣabra","meaning":"patience (accusative)","priority":"optional","sourceSection":"Usage notes"} -->
+<!-- grammar-card: {"id":"patience-urging-case","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Usage notes","rule":"Ighrāʾ urges the listener toward something good, often using an accusative noun with an understood command.","example":"Render “Hold firmly to patience” with a repeated accusative urging phrase: ___.","answer":"الصَّبْرَ الصَّبْرَ","explanation":"Both occurrences of الصَّبْرَ (aṣ-ṣabra) are accusative; an understood command such as اِلْزَمْ supplies the urging force.","legacyAliases":[{"rule":"Ighrāʾ urges the listener toward something good, often using an accusative noun with an understood command.","example":"الصَّبْرَ الصَّبْرَ (aṣ-ṣabra aṣ-ṣabra)"}]} -->
+<!-- grammar-card: {"id":"advice-elevated-register","kind":"concept","format":"qa","priority":"optional","sourceSection":"Usage notes","rule":"Accusative urging and warning formulas are common in advice and elevated rhetorical contexts.","example":"What kinds of discourse commonly use the compact urging and warning formulas taught here?","answer":"Advice, sermons, slogans, and elevated prose.","explanation":"Read the omitted command from context; the construction does not assert an ordinary subject-predicate fact."} -->
 
 ## Practice patterns
 
@@ -31,9 +41,13 @@ Decide whether the phrase urges or warns:
 - إِيَّاكَ وَالْغَفْلَةَ (iyyāka wa-l-ghaflata) — beware of heedlessness.
 - الطَّرِيقَ الطَّرِيقَ (aṭ-ṭarīqa aṭ-ṭarīqa) — mind the road.
 
+<!-- vocab-card: {"id":"vocab-amanah","word":"الْأَمَانَةَ","reading":"al-amānata","meaning":"trustworthiness (accusative)","priority":"optional","sourceSection":"Practice patterns"} -->
+<!-- vocab-card: {"id":"vocab-ghaflah","word":"الْغَفْلَةَ","reading":"al-ghaflata","meaning":"heedlessness (accusative)","priority":"optional","sourceSection":"Practice patterns"} -->
+<!-- vocab-card: {"id":"vocab-zulm","word":"الظُّلْمَ","reading":"aẓ-ẓulma","meaning":"injustice; oppression (accusative)","priority":"optional","sourceSection":"Practice patterns"} -->
+
 <!-- quiz: {"type": "multiple-choice", "question": "Which phrase is taḥdhīr?", "options": ["إِيَّاكَ وَالْغَفْلَةَ (iyyāka wa-l-ghaflata)", "الْعِلْمَ وَالْعَمَلَ (al-ʿilma wa-l-ʿamala)", "الصِّدْقَ الصِّدْقَ (aṣ-ṣidqa aṣ-ṣidqa)", "جَاءَ الْمُعَلِّمُ (jāʾa al-muʿallimu)"], "answer": 0} -->
 
-<!-- grammar-card: {"rule": "Taḥdhīr warns the listener away from danger, often with إِيَّاكَ وَ followed by an accusative noun.", "hint": "Translate إِيَّاكَ وَ as beware of.", "example": "إِيَّاكَ وَالظُّلْمَ (iyyāka wa-ẓ-ẓulma)", "answer": "Beware of injustice", "explanation": "الظُّلْمَ is accusative in a warning construction."} -->
+<!-- grammar-card: {"id":"injustice-warning-case","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Practice patterns","rule":"Taḥdhīr warns the listener away from danger, often with إِيَّاكَ وَ followed by an accusative noun.","example":"Complete “Beware of injustice”: إِيَّاكَ وَ___.","answer":"الظُّلْمَ","explanation":"الظُّلْمَ (aẓ-ẓulma) is accusative in this warning frame. The construction warns against injustice rather than commanding the listener to do it.","legacyAliases":[{"rule":"Taḥdhīr warns the listener away from danger, often with إِيَّاكَ وَ followed by an accusative noun.","example":"إِيَّاكَ وَالظُّلْمَ (iyyāka wa-ẓ-ẓulma)"}]} -->
 
 ## Sources
 

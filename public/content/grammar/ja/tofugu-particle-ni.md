@@ -1,5 +1,7 @@
 # に (ni) — Target / Location / Time
 
+<!-- vocab-inventory: {"mode":"explicit"} -->
+
 > **Source:** Content from [Tofugu](https://www.tofugu.com/japanese-grammar/particle-ni/). For personal study.
 
 Particle に: For Pin Pointing Locations
@@ -17,6 +19,8 @@ Particle
 Particle に is a complex particle with many uses. Some linguists have found that it can be used in more than twenty different ways! However, if you boil に down all the way to its basics, you'll find that it has a fundamental meaning that unites all its uses. In short, に shows you where something is, was, or will be in the future.
 
 ### Pinning Down に
+
+<!-- grammar-card: {"id":"pin-mnemonic","kind":"concept","format":"qa","priority":"optional","sourceSection":"Pinning Down に","rule":"A map pin links に's location, destination, and abstract target uses","example":"What does the map-pin mnemonic locate when に marks existence, movement, or a change of state?","answer":"It marks where something is, where it is going, or the state it changes into.","explanation":"The pin can also be imagined on a timeline or an interaction's source or recipient. It is a memory aid, not a way to predict every verb's particle."} -->
 
 To get a deeper understanding of the fundamental meaning of に, it's helpful to imagine it as a pin on a map. You can drop a pin on the location where something exists, or on a place that you want to go to.
 
@@ -58,6 +62,8 @@ There are a wide range of different uses as well, but you'll learn them one by o
 
 #### Verb Stem + に
 
+<!-- grammar-card: {"id":"stem-purpose-application","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Verb Stem + に","rule":"A verb stem plus に can mark the purpose of going","hint":"Use the stem of 探す (さがす), to search.","example":"コウイチは宇宙人を___に行きました。","answer":"探し","explanation":"探す becomes 探し before purpose に. The destination of going and the activity one goes to do are different roles."} -->
+
 When に follows a verb in its stem form, it pins down the activity represented by the verb as a purpose.
 
   - コウイチは宇宙人を探しに行きました。
@@ -67,6 +73,9 @@ When に follows a verb in its stem form, it pins down the activity represented 
 In this example, the verb 探す (search for) is in its stem form, 探し. The に that follows lets us know that this is the purpose for going.
 
 #### な-adj + に (=Adverb)
+
+<!-- grammar-card: {"id":"na-adjective-manner","kind":"rule","format":"cloze","priority":"optional","sourceSection":"な-adj + に (=Adverb)","rule":"に turns a な-adjective into an adverbial manner expression","hint":"Calmly; complete the manner expression.","example":"コウイチは宇宙船を冷静___運転する。","answer":"に","explanation":"冷静に describes how he drives. This is parallel in function to an い-adjective's く form, not a noun plus an English preposition."} -->
+<!-- vocab-card: {"id":"vocab-reisei","word":"冷静","reading":"れいせい","meaning":"calm; composed","priority":"optional","sourceSection":"な-adj + に (=Adverb)"} -->
 
 When に comes after an な-adjective, it pins down a state or condition:
 
@@ -94,13 +103,17 @@ In this case, に changes the adjective 冷静 (calm) into an adverb (calmly) an
 
   - Even though we went all the way to Mars, there wasn't a single alien.
 
-<!-- grammar-card: {"rule":"のに after a dictionary form means 'in order to'","hint":"の + に","example":"火星まで行く___、ロケットを使った。","answer":"のに","explanation":"行くのに marks reaching Mars as the purpose the rocket served."} -->
+<!-- grammar-card: {"id":"noni-purpose-application","kind":"rule","format":"cloze","priority":"optional","sourceSection":"の + に (=のに)","rule":"のに can relate an activity to the means used for it","hint":"Express what the rocket was used to do.","example":"火星まで行く___、ロケットを使った。","answer":"のに","explanation":"Here 行くのに means for going to Mars. Dictionary form alone does not force a purpose reading: のに can also mean although.","legacyAliases":[{"rule":"のに after a dictionary form means 'in order to'","example":"火星まで行く___、ロケットを使った。"}]} -->
+<!-- grammar-card: {"id":"noni-purpose-concession","kind":"concept","format":"qa","priority":"optional","sourceSection":"の + に (=のに)","rule":"Purpose のに and concessive のに must be distinguished in context","example":"What does のに express in 火星まで行ったのに、宇宙人が一人もいなかった?","answer":"Concession: even though we went all the way to Mars, there was not a single alien.","explanation":"Unlike the rocket-as-means example, this contrasts an outcome with an expectation. Concessive のに is also possible after a nonpast form, so tense alone is not the test."} -->
 
 ## Uses of に
 
 When に comes after a noun, it can have a very wide range of meanings depending on other elements of the sentence, particularly the kind of verb. Here, we'll introduce basic uses of に, while focusing on the elements that change its meaning.
 
 ### に for Location
+
+<!-- grammar-card: {"id":"existence-versus-destination","kind":"concept","format":"qa","priority":"essential","sourceSection":"に for Location","rule":"The verb distinguishes a location of existence from a destination","example":"How does NASAに change in interpretation between NASAにいる and NASAに行く?","answer":"With いる it locates someone at NASA; with 行く it marks NASA as the destination.","explanation":"に alone does not tell us whether the person is already there. The predicate supplies that distinction."} -->
+<!-- grammar-card: {"id":"walking-destination-pattern","kind":"concept","format":"qa","priority":"optional","sourceSection":"に for Location","rule":"A directional verb makes the intended destination clear with に and manner-of-motion verbs","example":"What natural construction expresses walking to NASA rather than simply using NASAに歩いた?","answer":"NASAに歩いて行った.","explanation":"歩いて supplies the manner and 行った supplies directional motion. This is the ordinary pattern taught here, not a ban on every contextually directional use of 走る or 歩く."} -->
 
 So far, you've learned that に works like a pin on a map. It points to the location where something is, or to a place you want to go. The type of verb that comes in the sentence will determine which meaning of に comes out.
 
@@ -126,6 +139,9 @@ Since you can say "I walked to NASA" in English, you may be tempted to say NASA�
 As you can see, we took the verb 歩く and changed it into its て Form in order to make this happen. Using 歩く alone to express direction is a common learner mistake, so watch out!
 
 ### に for Attachment
+
+<!-- grammar-card: {"id":"riding-attachment-application","kind":"rule","format":"cloze","priority":"essential","sourceSection":"に for Attachment","rule":"乗る marks the vehicle boarded or ridden with に","hint":"Ride the train, rather than mark a direct object.","example":"毎朝、電車___乗ります。","answer":"に","explanation":"The rider attaches to or gets onto the train. Contrast 電車で行く, where で marks the means of travel."} -->
+<!-- vocab-card: {"id":"vocab-noru","word":"乗る","reading":"のる","meaning":"to get on; to ride","priority":"optional","sourceSection":"に for Attachment"} -->
 
 に is also used to mark something as the place where attachment to another object occurs. For this reason, you'll often see に used with verbs that indicate some kind of attachment or contact, such as 貼る (affix), 付ける (attach), and 掛ける (hang).
 
@@ -153,6 +169,9 @@ English speakers are often tempted to use particle を to express things like "r
 
 ### に for Points in Time
 
+<!-- grammar-card: {"id":"time-point-application","kind":"rule","format":"cloze","priority":"essential","sourceSection":"に for Points in Time","rule":"に marks a specified time at which an event occurs","hint":"At three o'clock.","example":"NASAとの会議が３時___始まります。","answer":"に","explanation":"に pins the start to a time. This does not mean every relative time word such as 今日 requires に."} -->
+<!-- grammar-card: {"id":"time-point-versus-boundary","kind":"concept","format":"qa","priority":"optional","sourceSection":"に for Points in Time","rule":"で can emphasize an endpoint rather than a neutral event time","example":"Why can the lesson use ４時で終わります but not ordinarily ３時で始まります for the meeting's starting time?","answer":"で can mark the boundary where the meeting ends; に is the ordinary marker for when it starts.","explanation":"終わる supplies an endpoint interpretation. The choice is about the time's role, not simply past versus future."} -->
+
 に can also mark points in time, regardless of if they are in the past, present, or future. Just imagine you're dropping a pin on a timeline rather than a map.
 
   - NASAとの会議が３時に始まります。
@@ -170,6 +189,8 @@ Particle で can also a mark point in time, however it refers to the end point o
 Because the verb 終わる (finish) signifies that we're talking about an end point, で is possible here. However, で usually cannot replace に in the previous example sentence, since it signifies the starting point of the meeting.
 
 ### に for Purpose
+
+<!-- grammar-card: {"id":"tame-purpose","kind":"rule","format":"cloze","priority":"optional","sourceSection":"に for Purpose","rule":"ために can introduce the purpose of an action","hint":"For the purpose of the meeting.","example":"会議のため___NASAに行った。","answer":"に","explanation":"The first に belongs to ために and marks purpose; the second marks the destination. 会議をしに expresses going to hold the meeting."} -->
 
 に can be used to express a purpose when it follows ため (for the purpose of) or a verb in its stem form.
 
@@ -193,6 +214,8 @@ You learned earlier that marking a destination with に for motion verbs like �
 Think of it like this — a purpose is like a destination… in your mind 🧠✨
 
 ### に for Marking the Result of a Transformation
+
+<!-- grammar-card: {"id":"transformation-result-application","kind":"rule","format":"cloze","priority":"essential","sourceSection":"に for Marking the Result of a Transformation","rule":"に marks a noun or な-adjective as the resulting state with なる","hint":"Became an astronaut.","example":"ジェニーは宇宙飛行士___なった。","answer":"に","explanation":"に marks the result rather than a physical destination. The same relation can be described before the change happens, as in 赤に変わる."} -->
 
 Just like に can mark physical destinations, it can also be used to mark the result of a change of state. This use of に appears with verbs that denote some kind of change or transformation, such as なる (become) or 変わる (change).
 
@@ -223,6 +246,11 @@ In this sentence, the verb 変わった is in the past tense, so clearly the tra
 As we've already pointed out, に has a lot of different meanings that are related to this idea of dropping a pin on a map. In this next section, we'll explore some of the more abstract uses of に, all while making sure to tie them in with our analogy.
 
 ### に in Social Interactions and Transactions
+
+<!-- grammar-card: {"id":"giver-receiver-direction","kind":"concept","format":"qa","priority":"essential","sourceSection":"に in Social Interactions and Transactions","rule":"The transaction verb determines whether に marks giver or receiver","example":"Is Mami the receiver in both まみにあげた and まみにもらった?","answer":"No. With あげた Mami receives; with もらった Mami is the giver or source.","explanation":"Similarly, 教える directs knowledge to someone, while 習う receives it from someone. The particle alone does not fix a recipient interpretation."} -->
+<!-- grammar-card: {"id":"talk-to-versus-with","kind":"concept","format":"qa","priority":"optional","sourceSection":"に in Social Interactions and Transactions","rule":"に can mark an intended addressee whereas と highlights joint interaction","example":"What perspective differs between マミに話した and マミと話した?","answer":"に presents Mami as the person addressed; と presents the conversation as an interaction with Mami.","explanation":"The contrast concerns direction toward an addressee versus shared participation, not whether Mami was physically present."} -->
+<!-- vocab-card: {"id":"vocab-morau","word":"もらう","reading":"もらう","meaning":"to receive","priority":"optional","sourceSection":"に in Social Interactions and Transactions"} -->
+<!-- vocab-card: {"id":"vocab-narau","word":"習う","reading":"ならう","meaning":"to learn from someone; to take lessons","priority":"optional","sourceSection":"に in Social Interactions and Transactions"} -->
 
 に can be used to mark the giver and the receiver of social interactions. This is easy to see with verbs that denote some sort of transaction, such as あげる (give) and もらう (receive).
 
@@ -264,6 +292,8 @@ In this sentence, に drops a pin on まみ, indicating that Mami is Jenny's int
 
 ### に in Passive Sentences
 
+<!-- grammar-card: {"id":"passive-agent-application","kind":"rule","format":"cloze","priority":"optional","sourceSection":"に in Passive Sentences","rule":"に can mark the source or agent of an action in a passive sentence","hint":"Jenny is the one who recommended the restaurant.","example":"キャメロンはジェニー___そのレストランをすすめられた。","answer":"に","explanation":"Cameron receives the recommendation; Jenny is its source. This is the illustrated agent-marking use, not a claim that every passive agent must use に."} -->
+
 In a passive sentence, the person or thing that is being affected by the verb is placed at the beginning of the sentence. If に is included in the passive sentence, it marks the person or thing that causes the event to occur.
 
   - キャメロンはジェニーにそのレストランをすすめられた。
@@ -277,6 +307,8 @@ This is because in passive sentences, the person who was affected by the verb is
 We should point out that, just like English has lots of loose rules or suggestions about when to use (or not use) the passive voice, the passive voice in Japanese also has its own set of nuances and uses that make it quite distinct from English. Check out our page on the Japanese passive to learn more!
 
 ### に in Causative Sentences
+
+<!-- grammar-card: {"id":"causative-permission-application","kind":"rule","format":"cloze","priority":"optional","sourceSection":"に in Causative Sentences","rule":"に can mark the person made or allowed to act in this causative pattern","hint":"Present the children as recipients of permission, rather than as direct objects.","example":"まみは子供___外で遊ばせた。","answer":"に","explanation":"に can frame the children as recipients of permission or an instruction. を is also possible here and can sound more coercive; neither particle alone guarantees permission versus force.","legacyAliases":[{"rule":"The causative marks the person made to act with に","example":"まみは子供___外で遊ばせた。"}]} -->
 
 The causative form is a verb conjugation that is used when someone or something causes the situation described in the sentence. Depending on the context, it can have two different meanings — to make someone do something, or to allow someone to do something. Let's check it out.
 
@@ -362,8 +394,6 @@ by Eri Tanaka
 <!-- quiz: {"type":"multiple-choice","question":"What does \"コウイチは地球に帰る。\" mean?","options":["Koichi will return to Earth.","Koichi is in space.","I'm on Mars.","I'm going to Mars."],"answer":0} -->
 
 <!-- quiz: {"type":"multiple-choice","question":"What does \"火星にいる。\" mean?","options":["I'm on Mars.","Koichi is in space.","Koichi will return to Earth.","I'm going to Mars."],"answer":0} -->
-
-<!-- grammar-card: {"rule":"The causative marks the person made to act with に","hint":"に / を","example":"まみは子供___外で遊ばせた。","answer":"に","explanation":"遊ばせた lets the child play, and に marks who was allowed to do it."} -->
 
 ## Sources
 

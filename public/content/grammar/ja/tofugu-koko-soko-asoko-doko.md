@@ -1,5 +1,7 @@
 # ここ・そこ・あそこ・どこ
 
+<!-- vocab-inventory: {"mode":"explicit"} -->
+
 > **Source:** Content from [Tofugu](https://www.tofugu.com/japanese-grammar/koko-soko-asoko-doko/). For personal study.
 
 Japanese Demonstratives: ここ(Koko) • そこ(Soko) • あそこ(Asoko) • どこ(Doko)
@@ -17,6 +19,12 @@ Demonstrative
 ここ, そこ, あそこ, and どこ are a set of こそあど words. They can describe places you want to talk about without specifying exactly where they are. In general, ここ refers to places close to the speaker, そこ refers to places close to the listener, or reasonably far from both the speaker and listener if they're side by side, and あそこ refers to places close to neither of them. どこ is the question word that pairs together with these characters, and asks "where?"
 
 Just remember that it's あそこ not あこ, though some dialects, such as Kansai-ben, also use あこ or あっこ.
+
+<!-- vocab-card: {"id":"vocab-koko","priority":"essential","sourceSection":"The Basics","word":"ここ","reading":"ここ","meaning":"here; this place"} -->
+<!-- vocab-card: {"id":"vocab-soko","priority":"essential","sourceSection":"The Basics","word":"そこ","reading":"そこ","meaning":"there; that place (near the listener or a little away)"} -->
+<!-- vocab-card: {"id":"vocab-asoko","priority":"essential","sourceSection":"The Basics","word":"あそこ","reading":"あそこ","meaning":"over there; that place away from both people"} -->
+<!-- vocab-card: {"id":"vocab-doko","priority":"essential","sourceSection":"The Basics","word":"どこ","reading":"どこ","meaning":"where"} -->
+<!-- grammar-card: {"id":"standard-asoko","kind":"concept","format":"qa","priority":"optional","sourceSection":"The Basics","rule":"The standard distant-place demonstrative is あそこ","example":"Is あこ the standard distant-place member of the ここ series?","answer":"No. Standard Japanese uses あそこ; あこ or あっこ occurs in some dialects, including Kansai speech.","explanation":"Recognize a regional variant without replacing the standard lexical form."} -->
 
 ### Conceptualizing こそあど
 
@@ -63,6 +71,9 @@ Because they refer to places, they often come before the particle で and the pa
 
   - There's chocolate over there!
 
+<!-- grammar-card: {"id":"existence-ni","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Patterns of Use","rule":"Existence at a place is marked with に","hint":"に / で","example":"あそこ___チョコレートがある！","answer":"に","explanation":"ある describes existence, so に marks its location."} -->
+<!-- grammar-card: {"id":"action-de","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Patterns of Use","rule":"で marks where an action takes place","example":"Let's dance there: そこ___おどろう。","answer":"で","explanation":"Dancing is an action at a place; this contrasts with existence marked by に."} -->
+
 ### ここ, そこ, and あそこ for Physical Places
 
 ここ, そこ, and あそこ are used to refer to places in relation to where you are. They're the equivalent of "here," "there," and "over there" in English.
@@ -95,6 +106,8 @@ To say the same thing, you can also use こっち, そっち, and あっち.
 
   - **This one** or **that one**, which one should we go to?
 
+<!-- grammar-card: {"id":"side-by-side-distance","kind":"concept","format":"qa","priority":"essential","sourceSection":"ここ, そこ, and あそこ for Physical Places","rule":"When speaker and listener share a viewpoint, そこ can indicate intermediate distance","example":"Can two people standing together call a restaurant across the street そこ?","answer":"Yes. そこ can indicate a place felt to be a little away; あそこ presents it as farther from both.","explanation":"The choice is relative and perspective-dependent, not a fixed number of meters or an absolute listener-only rule."} -->
+
 ### どこ for "Where?"
 
 どこ is the Japanese word for "where?" The polite version of どこ is どちら.
@@ -104,6 +117,8 @@ To say the same thing, you can also use こっち, そっち, and あっち.
 **どちら**に行かれるんですか？
 
   - **Where** are you going?
+
+<!-- grammar-card: {"id":"polite-where","kind":"rule","format":"qa","priority":"optional","sourceSection":"どこ for \"Where?\"","rule":"どちら can ask where more politely than どこ","example":"Which demonstrative can replace どこ when politely asking where someone is going?","answer":"どちら.","explanation":"For example, どちらに行かれるんですか. It is not limited to choosing between two named destinations in this polite where use."} -->
 
 ### ここ, そこ, あそこ, and どこ for Parts of a Whole
 
@@ -115,15 +130,13 @@ For example, let's say you are discussing a project with your coworker. You agre
 
   - I agree with **this point**, but **that point** is non-negotiable.
 
-ここ, そこ, あこ, and どこ can also be used for a specific part of someone's character or nature. For example, if you want to tell off your friend who always lacks confidence, you may say:
+ここ, そこ, あそこ, and どこ can also be used for a specific part of someone's character or nature. For example, if you want to tell off your friend who always lacks confidence, you may say:
 
   - なんでそんなに自信ないの？**そこ**はあなたの直すべきところだよ。
 
   - Why are you so unconfident? **That**'s a part of you that you should try to fix.
 
-<!-- grammar-card: {"rule":"そこ can point at something the listener has just said","hint":"there","example":"なんでそんなに自信ないの？___はあなたの直すべきところだよ。","answer":"そこ","explanation":"そこ refers to the listener's own remark, not to a physical location."} -->
-
-<!-- grammar-card: {"rule":"Existence at a place is marked with に","hint":"に / で","example":"あそこ___チョコレートがある！","answer":"に","explanation":"ある states existence rather than an action, so あそこ takes に and not で."} -->
+<!-- grammar-card: {"id":"abstract-point","kind":"rule","format":"cloze","priority":"optional","sourceSection":"ここ, そこ, あそこ, and どこ for Parts of a Whole","rule":"そこ can point at something the listener has just said","hint":"Refer back neutrally to that lack of confidence","example":"なんでそんなに自信ないの？___はあなたの直すべきところだよ。","answer":"そこ","explanation":"そこ refers to the just-discussed trait or point rather than a physical location; the example's admonishing tone is not a polite template."} -->
 
 ## Beyond the Basics
 
@@ -143,6 +156,9 @@ This expression is usually used when a certain part of a place is different comp
 
   - **Just between you and me**, I won the lottery!
 
+<!-- grammar-card: {"id":"only-place","kind":"rule","format":"cloze","priority":"optional","sourceSection":"ここ, そこ, あそこ with 〜だけ for a Limit on Places","rule":"だけ can attach directly to a place word","hint":"only this spot","example":"なんで___雪がないんだろう。","answer":"ここだけ","explanation":"ここだけ singles out this place, in contrast with the surrounding snow."} -->
+<!-- vocab-card: {"id":"vocab-kokodakenohanashi","priority":"optional","sourceSection":"ここ, そこ, あそこ with 〜だけ for a Limit on Places","word":"ここだけの話","reading":"ここだけのはなし","meaning":"just between us; confidentially"} -->
+
 ### ここ, そこ, あそこ, どこ with 〜ら辺 for an Approximate of Places
 
 By adding 〜ら辺 to ここ, そこ, あそこ, and どこ, you can say ここら辺 (around here), そこら辺 (around there), あそこら辺 (about over there), or どこら辺 (about where).
@@ -154,6 +170,9 @@ For example, if you are hiking with your friend and want to suggest taking a bre
   - Let's take a break around **here**.
 
 Note ここら辺, そこら辺, and あそこら辺 are casual expressions. To describe an approximate place more formally, you use a different set of こそあど words この, その, あの, and どの with 〜辺 or 辺り, as in この辺 or この辺り.
+
+<!-- vocab-card: {"id":"vocab-kokorahen","priority":"optional","sourceSection":"ここ, そこ, あそこ, どこ with 〜ら辺 for an Approximate of Places","word":"ここら辺","reading":"ここらへん","meaning":"around here (casual)"} -->
+<!-- grammar-card: {"id":"approximate-place-register","kind":"concept","format":"qa","priority":"optional","sourceSection":"ここ, そこ, あそこ, どこ with 〜ら辺 for an Approximate of Places","rule":"ら辺 makes a casual approximate place expression","example":"What is a more formal alternative to ここら辺?","answer":"この辺 or この辺り.","explanation":"ここら辺 (ここらへん) and この辺り (このあたり) both mean around here; do not treat ら辺 as an independent dictionary word."} -->
 
 ### ここ, そこ, and あそこ for Points in Time
 
@@ -185,6 +204,9 @@ And since そこ is objective, it can be combined with the particle で and form
 
   - When I opened the refrigerator, I found that we were out of eggs and milk. **So** then I gave up on making pancakes.
 
+<!-- vocab-card: {"id":"vocab-sokode","priority":"optional","sourceSection":"ここ, そこ, and あそこ for Points in Time","word":"そこで","reading":"そこで","meaning":"so; thereupon (conjunction)"} -->
+<!-- grammar-card: {"id":"time-not-only-place","kind":"concept","format":"qa","priority":"optional","sourceSection":"ここ, そこ, and あそこ for Points in Time","rule":"Place demonstratives can refer to stages or moments","example":"Does あそこで in a reflection on a past decision have to mean a physical place?","answer":"No. It can mean at that point or time, recalled from memory.","explanation":"ここ can make a moment vivid or signal now; そこ can refer back to the established stage more neutrally."} -->
+
 ### ここ for Duration
 
 When ここ is attached to the beginning of a word for a duration, such as 三日間 (three days) or 一週間 (one week), it adds the meaning that you're talking about a specific period of time including the present moment.
@@ -201,6 +223,8 @@ It can also stretch into the future:
 
   - **These next** few days will be a critical time.
 
+<!-- grammar-card: {"id":"duration-includes-now","kind":"concept","format":"qa","priority":"optional","sourceSection":"ここ for Duration","rule":"ここ plus a duration anchors the interval to the present","example":"What does ここ add in ここ一週間会社に来ていない?","answer":"It specifies the past week up to now; with a future context, ここ can also cover the next few days.","explanation":"The construction includes the present reference point rather than naming any arbitrary week."} -->
+
 ### Referring to Extent
 
 Sometimes, ここ, そこ, and あそこ can be used to refer to an extent to which something is done. For example, if you work hard for someone but that person betrays you, you may say:
@@ -210,6 +234,8 @@ Sometimes, ここ, そこ, and あそこ can be used to refer to an extent to wh
   - I didn't expect to be betrayed after all I did for them.
 
 In this case, the choice between the three characters depends on how you feel about the amount of effort you put in. That is, ここ shows that you are still emotionally involved with, and frustrated by, all the work you put in for this person, given the outcome of the situation. It still feels raw. そこ sounds like you're calmly analyzing all your effort from an objective point of view. And あそこ indicates that you are looking back at what happened, so it often adds a sentimental tone, but with more distance than if you used ここ.
+
+<!-- grammar-card: {"id":"extent-made","kind":"concept","format":"qa","priority":"optional","sourceSection":"Referring to Extent","rule":"A place word plus まで can mark the extent of an effort","example":"What does ここまで refer to when someone says ここまでしたのに about their efforts?","answer":"The extent to which they went, not necessarily a place they reached.","explanation":"ここ keeps the effort psychologically close; そこ is more detached and あそこ can look back at it from a distance."} -->
 
 ---
 
@@ -374,8 +400,6 @@ by 金水 敏 and 田窪 行則
 <!-- quiz: {"type":"multiple-choice","question":"What does \"そこ**で**おどろう。\" mean?","options":["Let's dance there.","Where am I?","There's chocolate over there!","I agree with **this point**, but **that point** is non-negotiable."],"answer":0} -->
 
 <!-- quiz: {"type":"multiple-choice","question":"What does \"あそこ**に**チョコレートがある！\" mean?","options":["There's chocolate over there!","Where am I?","Let's dance there.","I agree with **this point**, but **that point** is non-negotiable."],"answer":0} -->
-
-<!-- grammar-card: {"rule":"だけ can attach directly to a place word","hint":"ここ + だけ","example":"なんで___雪がないんだろう。","answer":"ここだけ","explanation":"ここだけ singles this spot out: why is there no snow just here?"} -->
 
 ## Sources
 

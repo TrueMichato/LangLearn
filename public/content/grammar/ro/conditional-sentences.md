@@ -1,5 +1,7 @@
 # Conditional Sentences (real & unreal dacă-clauses)
 
+<!-- vocab-inventory: {"mode":"explicit"} -->
+
 Romanian conditional sentences use **dacă** to mean **if**. The tense and mood show whether the condition is real, possible, unlikely, or contrary to fact.
 
 ## Real Conditions
@@ -18,6 +20,10 @@ For real or open conditions, Romanian often uses present tense in the **dacă** 
 
 <!-- quiz: {"type":"multiple-choice","question":"Which word introduces an if-clause in Romanian?","options":["deci","dacă","dar","deoarece"],"answer":1} -->
 
+<!-- vocab-card: {"id":"vocab-daca","priority":"essential","sourceSection":"Real Conditions","word":"dacă","meaning":"if"} -->
+<!-- grammar-card: {"id":"open-condition","priority":"essential","sourceSection":"Real Conditions","kind":"concept","format":"qa","rule":"A real condition does not assert that its event is unreal","example":"What kind of possibility does Dacă ai timp, vino la noi leave open?","answer":"The addressee may actually have time; this is a real or open condition.","explanation":"The addressee may actually have time; this is a real or open condition."} -->
+<!-- grammar-card: {"id":"real-condition-daca","priority":"essential","sourceSection":"Real Conditions","kind":"rule","format":"cloze","rule":"Real conditions commonly use dacă plus present tense","example":"___ ai timp, vino la cafea.","answer":"Dacă","explanation":"Dacă introduces the condition; the main clause can be an imperative."} -->
+
 ## Future Real Conditions
 
 Romanian can use future forms in both clauses, but the present is also natural when the future meaning is clear.
@@ -28,7 +34,8 @@ Romanian can use future forms in both clauses, but the present is also natural w
 
 The **dacă** clause does not need a special subjunctive marker. Do not say **dacă să plouă** for **if it rains**.
 
-<!-- grammar-card: {"rule":"Real conditions commonly use dacă plus present tense","hint":"if it rains = dacă plouă","example":"___ ai timp, vino la cafea.","answer":"Dacă","explanation":"Dacă introduces the condition; present tense is natural for a real possible condition."} -->
+<!-- grammar-card: {"id":"future-if-flexibility","priority":"essential","sourceSection":"Future Real Conditions","kind":"concept","format":"qa","rule":"Romanian real future conditions can use present or future in the dacă clause","example":"Is a future tense forbidden after dacă when referring to tomorrow?","answer":"No. Both future forms and a present with clear future meaning are natural.","explanation":"No. Both future forms and a present with clear future meaning are natural."} -->
+<!-- grammar-card: {"id":"no-sa-after-daca","priority":"optional","sourceSection":"Future Real Conditions","kind":"rule","format":"cloze","rule":"An ordinary real dacă clause does not require să","example":"Dacă ___ mâine, vom pleca mai târziu. (a ninge; future with va)","answer":"va ninge","explanation":"Dacă va ninge is a standard future condition, not dacă să plouă."} -->
 
 ## Unreal Present or Future Conditions
 
@@ -47,6 +54,9 @@ In colloquial Romanian, you may also hear imperfect forms: **Dacă aveam bani, c
 
 <!-- quiz: {"type":"multiple-choice","question":"Which sentence means If I had time, I would come?","options":["Dacă am timp, vin.","Dacă aș avea timp, aș veni.","Dacă voi avea timp, veneam.","Dacă să am timp, vin."],"answer":1} -->
 
+<!-- grammar-card: {"id":"unreal-present-both","priority":"essential","sourceSection":"Unreal Present or Future Conditions","kind":"rule","format":"cloze","rule":"Standard imagined conditions commonly use the conditional in both clauses","example":"Eu ___ veni dacă ar fi soare. (I would come.)","answer":"aș","explanation":"Both clauses use conditional auxiliaries: aș veni and ar fi."} -->
+<!-- grammar-card: {"id":"unreal-imperfect-register","priority":"optional","sourceSection":"Unreal Present or Future Conditions","kind":"concept","format":"qa","rule":"Imperfect-for-conditional patterns also occur colloquially","example":"How should a learner interpret Dacă aveam bani, cumpăram o casă in the context of an imagined situation?","answer":"As a colloquial imperfect-based unreal condition; the explicit conditional pattern is the clearer standard model to learn first.","explanation":"As a colloquial imperfect-based unreal condition; the explicit conditional pattern is the clearer standard model to learn first."} -->
+
 ## Unreal Past Conditions
 
 For conditions that did not happen in the past, Romanian uses the conditional perfect: **aș fi**, **ai fi**, **ar fi**, **am fi**, **ați fi**, **ar fi** plus participle.
@@ -62,6 +72,10 @@ For conditions that did not happen in the past, Romanian uses the conditional pe
 
 <!-- quiz: {"type":"multiple-choice","question":"Which form means I would have told you?","options":["ți-aș spune","ți-aș fi spus","ți-am spus","îți spuneam"],"answer":1} -->
 
+<!-- grammar-card: {"id":"unreal-past-auxiliary","priority":"essential","sourceSection":"Unreal Past Conditions","kind":"rule","format":"cloze","rule":"Unreal past conditions use conditional perfect forms","example":"Dacă eu ___ știut, am fi venit.","answer":"aș fi","explanation":"Aș fi plus știut marks the unreal earlier knowing.","legacyAliases":[{"rule":"Unreal past conditions use conditional perfect forms","example":"Dacă ___ știut, aș fi venit."}]} -->
+<!-- grammar-card: {"id":"unreal-past-result","priority":"optional","sourceSection":"Unreal Past Conditions","kind":"rule","format":"cloze","rule":"A past counterfactual result also uses the conditional perfect","example":"Ți-aș ___ spus. (I would have told you.)","answer":"fi","explanation":"The completed counterfactual adds fi before the participle, unlike present ți-aș spune."} -->
+<!-- grammar-card: {"id":"conditional-time-contrast","priority":"essential","sourceSection":"Unreal Past Conditions","kind":"concept","format":"qa","rule":"Conditional present and perfect distinguish imagined now from a completed unreal past","example":"How does Dacă aș ști differ in time from Dacă aș fi știut?","answer":"The first imagines knowing now; the second imagines having known in the past.","explanation":"The first imagines knowing now; the second imagines having known in the past."} -->
+
 ## Punctuation and Word Order
 
 When the **dacă** clause comes first, a comma is common after it. When it comes second, no comma is usually needed in a short sentence.
@@ -71,7 +85,8 @@ When the **dacă** clause comes first, a comma is common after it. When it comes
 
 Romanian word order is flexible, but the conditional auxiliaries stay with the verb: **aș veni**, **aș fi venit**, **ți-aș spune**, **ți-aș fi spus**.
 
-<!-- grammar-card: {"rule":"Unreal past conditions use conditional perfect forms","hint":"if I had known = dacă aș fi știut","example":"Dacă ___ știut, aș fi venit.","answer":"aș fi","explanation":"The unreal past condition uses aș fi plus the participle: dacă aș fi știut."} -->
+<!-- grammar-card: {"id":"conditional-punctuation","priority":"optional","sourceSection":"Punctuation and Word Order","kind":"concept","format":"qa","rule":"An initial dacă clause is commonly separated by a comma","example":"Where does a comma normally go in Dacă ești gata plecăm?","answer":"After gata, separating the initial condition from the main clause.","explanation":"After gata, separating the initial condition from the main clause."} -->
+<!-- grammar-card: {"id":"conditional-clitic-order","priority":"optional","sourceSection":"Punctuation and Word Order","kind":"rule","format":"cloze","rule":"A clitic precedes the conditional auxiliary","example":"___ spune adevărul. (I would tell you; informal singular)","answer":"Ți-aș","explanation":"Ți-aș spune places the shortened dative before aș."} -->
 
 ## Sources
 

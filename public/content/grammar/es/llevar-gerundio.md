@@ -1,6 +1,8 @@
 # Llevar + Gerundio (Have Been Doing X for Time)
 
-To say **"I've been studying Spanish for two years"** in Spanish, you don't use the present perfect. You use a compact, idiomatic construction: **llevar + tiempo + gerundio**. This is the natural, everyday way to talk about ongoing duration.
+<!-- vocab-inventory: {"mode":"explicit"} -->
+
+To say **"I've been studying Spanish for two years"**, Spanish offers a compact, idiomatic construction: **llevar + tiempo + gerundio**. It is an everyday way to talk about ongoing duration, not the only grammatical one.
 
 ## The Core Construction
 
@@ -12,14 +14,21 @@ To say **"I've been studying Spanish for two years"** in Spanish, you don't use 
 
 The verb **llevar** literally means "to carry" — here it "carries" the time you've spent doing the action.
 
+<!-- vocab-card: {"id":"vocab-llevar","word":"llevar","meaning":"to carry; with duration and a gerund, to have been doing","priority":"essential","sourceSection":"The Core Construction"} -->
+<!-- grammar-card: {"id":"carrying-time-cue","kind":"concept","format":"qa","priority":"optional","sourceSection":"The Core Construction","rule":"Carrying time is a memory aid for accumulated duration","example":"What does the carrying-time image help remember about llevar with a gerund?","answer":"Llevar literally means to carry; figuratively it carries accumulated time spent doing an action that continues.","explanation":"Map llevar to the conjugated verb, the time carried to the duration, and the activity to the gerund."} -->
+
+<!-- grammar-card: {"id":"ongoing-duration","kind":"rule","format":"cloze","priority":"essential","sourceSection":"The Core Construction","rule":"llevar + tiempo + gerundio = have been doing X for [time]. Negative: llevar + tiempo + sin + infinitivo.","example":"___ tres horas estudiando. (I've been studying for three hours)","answer":"Llevo","explanation":"Conjugate llevar for yo and retain the duration and gerund. Other grammatical duration constructions also exist."} -->
+
 ## Why Not Use the Perfect?
 
-English says "I have been studying for X" using a perfect-progressive. Spanish has equivalents (*he estado estudiando*), but they sound **clunky and unnatural for duration**. **Llevar + gerundio** is the idiomatic choice — used constantly by native speakers.
+English says "I have been studying for X" using a perfect-progressive. Spanish also permits **he estado estudiando**; its suitability depends on context and variety. **Llevar + gerundio** clearly presents accumulated duration continuing to the reference point.
 
-| English | Spanish (natural) | Spanish (awkward) |
+| English | Llevar construction | Also grammatical in suitable contexts |
 |---|---|---|
 | I've been living here for 5 years | **Llevo cinco años viviendo aquí** | He estado viviendo aquí cinco años |
 | She's been studying medicine for ages | **Lleva mucho tiempo estudiando medicina** | Ha estado estudiando medicina mucho tiempo |
+
+<!-- grammar-card: {"id":"perfect-not-banned","kind":"concept","format":"qa","priority":"optional","sourceSection":"Why Not Use the Perfect?","rule":"Llevar is an idiomatic duration choice, not a ban on perfect-progressive forms","example":"Does learning Llevo cinco años viviendo aquí make He estado viviendo aquí cinco años ungrammatical?","answer":"No. The perfect progressive can be grammatical; llevar clearly emphasizes accumulated ongoing duration.","explanation":"Context and regional usage affect the choice."} -->
 
 <!-- quiz: {"type":"multiple-choice","question":"How do you say 'We've been waiting for an hour' naturally in Spanish?","options":["Hemos esperado una hora","Estamos esperando una hora","Llevamos una hora esperando","Esperamos por una hora"],"answer":2} -->
 
@@ -32,6 +41,8 @@ The standard pattern is **llevar → time → gerundio**, but the time and gerun
 
 Both are correct; the meaning is identical. Spoken Spanish slightly prefers placing the duration first.
 
+<!-- grammar-card: {"id":"duration-word-order","kind":"concept","format":"qa","priority":"optional","sourceSection":"Word Order","rule":"Duration may precede or follow the gerund","example":"Must the duration come before leyendo in a llevar duration construction?","answer":"No. Llevo dos horas leyendo and Llevo leyendo dos horas are both possible.","explanation":"Both orders express the same ongoing duration."} -->
+
 ## Negative: Llevar + sin + Infinitivo
 
 To say **"I haven't done X for [time]"**, use **llevar + tiempo + sin + infinitivo**:
@@ -42,7 +53,8 @@ To say **"I haven't done X for [time]"**, use **llevar + tiempo + sin + infiniti
 
 Note: with the **negative**, the gerundio is **replaced** by **sin + infinitive**.
 
-<!-- grammar-card: {"rule":"llevar + tiempo + gerundio = have been doing X for [time]. Negative: llevar + tiempo + sin + infinitivo.","hint":"Affirmative uses gerundio (-ando/-iendo); negative uses sin + infinitive.","example":"___ tres horas estudiando. (I've been studying for three hours)","answer":"Llevo","explanation":"Conjugate llevar to match the subject and place the time before the gerund. 'Llevo tres horas estudiando' is the idiomatic structure — never use the present perfect for duration in Spanish."} -->
+<!-- grammar-card: {"id":"negative-infinitive","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Negative: Llevar + sin + Infinitivo","rule":"Sin takes an infinitive in the negative duration construction","example":"Llevo una semana sin ___. (smoking)","answer":"fumar","explanation":"Sin fumar replaces the affirmative gerund fumando."} -->
+<!-- grammar-card: {"id":"negative-duration","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Negative: Llevar + sin + Infinitivo","rule":"For 'haven't done X for [time]', use llevar + tiempo + sin + infinitive","example":"___ dos semanas sin hablar con él. (I haven't spoken to him in 2 weeks)","answer":"Llevo","explanation":"Llevo measures the time during which speaking has not occurred; sin takes hablar, not a gerund."} -->
 
 ## Imperfect: "Had Been Doing X For Y"
 
@@ -53,6 +65,8 @@ For the past version ("had been doing"), conjugate **llevar in the imperfect**:
 
 This is parallel to the imperfect-progressive: the duration was ongoing at a moment in the past.
 
+<!-- grammar-card: {"id":"past-duration","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Imperfect: \"Had Been Doing X For Y\"","rule":"Imperfect llevar measures duration continuing at a past reference point","example":"___ dos años viviendo en Madrid cuando lo conocí. (I had been living there.)","answer":"Llevaba","explanation":"The imperfect places the accumulated duration at the time of meeting him."} -->
+
 ## Question Form: "How Long Have You Been…?"
 
 > **¿Cuánto tiempo llevas + gerundio?**
@@ -61,6 +75,9 @@ This is parallel to the imperfect-progressive: the duration was ongoing at a mom
 - **¿Cuántos años lleváis viviendo aquí?** — How many years have you been living here?
 
 Answer naturally with the same structure: *Llevo seis meses estudiando.*
+
+<!-- grammar-card: {"id":"duration-question","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Question Form: \"How Long Have You Been…?\"","rule":"Cuánto tiempo asks for accumulated duration","example":"¿___ tiempo llevas estudiando español? (How long?)","answer":"Cuánto","explanation":"Llevas agrees with tú; the activity remains a gerund."} -->
+<!-- grammar-card: {"id":"duration-vosotros","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Question Form: \"How Long Have You Been…?\"","rule":"Vosotros uses lleváis for the duration question","example":"¿Cuántos años ___ viviendo aquí? (vosotros; Spain, informal plural)","answer":"lleváis","explanation":"Use llevan with ustedes instead."} -->
 
 ## Mini-Dialogue
 
@@ -74,8 +91,6 @@ Answer naturally with the same structure: *Llevo seis meses estudiando.*
 Notice the **affirmative** (llevo trabajando), **negative** (lleva sin trabajar), and **question** (cuánto tiempo llevas) all naturally co-occurring.
 
 <!-- quiz: {"type":"multiple-choice","question":"Translate: 'I haven't smoked for a year.'","options":["No he fumado un año","Llevo un año fumando","Llevo un año sin fumar","No fumo un año"],"answer":2} -->
-
-<!-- grammar-card: {"rule":"For 'haven't done X for [time]', use llevar + tiempo + sin + infinitive","hint":"sin replaces the gerundio in negatives.","example":"___ dos semanas sin hablar con él. (I haven't spoken to him in 2 weeks)","answer":"Llevo","explanation":"The negative form is 'llevar + tiempo + sin + infinitivo'. Conjugate llevar, then add the duration, then 'sin' + infinitive. 'Llevo dos semanas sin hablar con él.'"} -->
 
 ## Quick Patterns to Memorize
 

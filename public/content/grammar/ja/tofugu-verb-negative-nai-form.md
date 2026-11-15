@@ -1,5 +1,7 @@
 # ない-Form — Negative
 
+<!-- vocab-inventory: {"mode":"explicit"} -->
+
 > **Source:** Content from [Tofugu](https://www.tofugu.com/japanese-grammar/verb-negative-nai-form/). For personal study.
 
 Japanese Verb Negative Plain ない Form
@@ -105,6 +107,14 @@ Also be on the lookout when a verb ends in 〜う. You would expect 〜あない
 > 
 > 
 
+<!-- vocab-card: {"id":"vocab-kaku","priority":"optional","sourceSection":"Godan Verbs","word":"書く","reading":"かく","meaning":"to write"} -->
+<!-- vocab-card: {"id":"vocab-tatsu","priority":"optional","sourceSection":"Godan Verbs","word":"立つ","reading":"たつ","meaning":"to stand"} -->
+<!-- vocab-card: {"id":"vocab-au","priority":"optional","sourceSection":"Godan Verbs","word":"会う","reading":"あう","meaning":"to meet"} -->
+<!-- vocab-card: {"id":"vocab-kau","priority":"optional","sourceSection":"Godan Verbs","word":"買う","reading":"かう","meaning":"to buy"} -->
+<!-- grammar-card: {"id":"godan-negative","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Godan Verbs","rule":"Godan verbs change their final kana to the あ row before ない","example":"書く → plain negative: ___.","answer":"書かない","explanation":"く changes to か before ない."} -->
+<!-- grammar-card: {"id":"tsu-negative","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Godan Verbs","rule":"Final つ changes to た before ない","example":"立つ → plain negative: ___.","answer":"立たない","explanation":"The corresponding あ-row kana is た, not つあ."} -->
+<!-- grammar-card: {"id":"u-wa-negative","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Godan Verbs","rule":"Godan final う changes to わ, not あ, before ない","example":"買う → plain negative: ___.","answer":"買わない","explanation":"The exceptional row mapping also gives 会わない."} -->
+
 #### Ichidan Verbs
 
 For ichidan verbs, the conjugation is—as usual—nice and simple. Just remove the 〜る at the end of the verb and add 〜ない:
@@ -116,6 +126,9 @@ For ichidan verbs, the conjugation is—as usual—nice and simple. Just remove 
 > 見**る**　+　ない　=　見**ない**
 > 
 > 
+
+<!-- vocab-card: {"id":"vocab-taberu","priority":"optional","sourceSection":"Ichidan Verbs","word":"食べる","reading":"たべる","meaning":"to eat"} -->
+<!-- grammar-card: {"id":"ichidan-negative","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Ichidan Verbs","rule":"Ichidan verbs drop る before ない","example":"食べる → plain negative: ___.","answer":"食べない","explanation":"Keep 食べ and attach ない without a godan vowel shift."} -->
 
 #### Irregular Verbs
 
@@ -137,6 +150,13 @@ Added to these staples is ある, which is usually regular, but behaves irregula
 > 
 > 
 
+<!-- vocab-card: {"id":"vocab-kuru","priority":"optional","sourceSection":"Irregular Verbs","word":"来る","reading":"くる","meaning":"to come"} -->
+<!-- vocab-card: {"id":"vocab-suru","priority":"optional","sourceSection":"Irregular Verbs","word":"する","reading":"する","meaning":"to do"} -->
+<!-- vocab-card: {"id":"vocab-aru","priority":"optional","sourceSection":"Irregular Verbs","word":"ある","reading":"ある","meaning":"to exist (normally inanimate); to have"} -->
+<!-- grammar-card: {"id":"kuru-negative","kind":"rule","format":"qa","priority":"essential","sourceSection":"Irregular Verbs","rule":"来る changes to 来ない, read こない","example":"Give the plain negative of 来る, including its kana reading.","answer":"来ない (こない).","explanation":"The negative uses こ, not く or き."} -->
+<!-- grammar-card: {"id":"suru-negative","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Irregular Verbs","rule":"する has the irregular negative しない","example":"する → plain negative: ___.","answer":"しない","explanation":"The whole form must be learned, rather than deriving it as godan."} -->
+<!-- grammar-card: {"id":"aru-negative","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Irregular Verbs","rule":"The plain negative of ある is ない, not あらない","example":"ある → plain negative: ___.","answer":"ない","explanation":"ある is exceptional in negation even though it otherwise often behaves regularly."} -->
+
 ### Patterns of Use
 
 In Japanese, you can form an entire sentence with a single verb, and verbs with the 〜ない ending are no exception. This is most common with mental verbs, like 分かる (to understand), and verbs for abilities and possibilities, like 出来る (to be able to do) and anything in the potential form.
@@ -155,6 +175,11 @@ In Japanese, you can form an entire sentence with a single verb, and verbs with 
 
 Note that in this last sentence, 泳げない is the negative version of 泳げる, which is the potential form of 泳ぐ. That's why it's 泳げない in this sentence, and not 泳がない.
 
+<!-- vocab-card: {"id":"vocab-wakaru","priority":"optional","sourceSection":"Patterns of Use","word":"分かる","reading":"わかる","meaning":"to understand"} -->
+<!-- vocab-card: {"id":"vocab-dekiru","priority":"optional","sourceSection":"Patterns of Use","word":"出来る","reading":"できる","meaning":"to be able to do"} -->
+<!-- grammar-card: {"id":"ability-versus-action-negative","kind":"concept","format":"qa","priority":"essential","sourceSection":"Patterns of Use","rule":"Negating the potential is different from negating the action itself","example":"How does 泳げない differ from 泳がない?","answer":"泳げない means cannot swim; 泳がない means do not or will not swim.","explanation":"Negate 泳げる to deny ability; negate 泳ぐ to deny the action."} -->
+<!-- grammar-card: {"id":"potential-negative","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Patterns of Use","rule":"A potential form negates like an ichidan verb","hint":"飲める → negative","example":"私はコーヒーが飲め___。","answer":"ない","explanation":"Drop る from potential 飲める and attach ない."} -->
+
 Of course, these sentences can include many other words, to give more details. In this case, the verb stays at the end of the sentence, perhaps followed by a sentence-ending particle or two.
 
   - スカイダイビングは面白そうだけど、僕は絶対に出来ないな！
@@ -170,6 +195,9 @@ Japanese verbs can also come just before a noun, to describe the noun, much like
   - 知らない人
 
   - a person I don't know
+
+<!-- vocab-card: {"id":"vocab-shiru","priority":"optional","sourceSection":"Patterns of Use","word":"知る","reading":"しる","meaning":"to know; to learn of"} -->
+<!-- grammar-card: {"id":"negative-noun-modifier","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Patterns of Use","rule":"A plain negative predicate can directly precede the noun it modifies","example":"A person I do not know: ___人。 (知る)","answer":"知らない","explanation":"知る is godan: る → ら before ない. The modifier precedes 人 without a relative pronoun."} -->
 
   - 言えない言葉
 
@@ -187,6 +215,8 @@ So far we've covered how to conjugate verbs to take 〜ない, as well as where 
 
 The 〜ない ending is said to be in the "non-past" tense, meaning that it can refer to the present moment, or to the future as well. Interestingly, even though 〜ない attaches to verbs, it conjugates just like an い-adjective (see that 〜い on the end?). So if you want to talk about something that *was* not, you'll use 〜なかった.
 
+<!-- grammar-card: {"id":"negative-adjective-inflection","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Time and Tense with 〜ない","rule":"The ない ending inflects like an い-adjective for past negation","example":"食べない → plain past negative: ___.","answer":"食べなかった","explanation":"Replace the final い of ない with かった; do not attach かった after the intact ない."} -->
+
 #### For the Present
 
 When 〜ない is used for the present, it is usually to talk about general truths or statements that have some kind of permanence.
@@ -200,6 +230,8 @@ The use of 食べない here suggests that this is a firm, somewhat permanent st
   - 最近、お肉を食べていない。
 
   - I'm not eating meat lately.
+
+<!-- grammar-card: {"id":"temporary-negative-state","kind":"concept","format":"qa","priority":"essential","sourceSection":"For the Present","rule":"ない can state a general stance while ていない can foreground a current temporary pattern","example":"Why might someone temporarily avoiding meat say 最近、お肉を食べていない rather than simply お肉を食べない?","answer":"The continuous negative foregrounds their current phase; the simple negative can sound like a general stance.","explanation":"This is a contextual contrast, not a ban on either form in all other situations."} -->
 
 When spoken, 〜ない is often combined with conversational particles to add a particular nuance or to give a more conversational tone:
 
@@ -220,6 +252,8 @@ It can also be used to talk about our intentions for the more distant future:
   - 絶対に地元に帰らない！
 
   - There's no way I'm ever going back to where I come from!
+
+<!-- grammar-card: {"id":"negative-nonpast","kind":"concept","format":"qa","priority":"optional","sourceSection":"For the Future","rule":"The plain negative is nonpast and can describe future intentions","example":"In 今夜のパーティーに行かない, is the refusal necessarily about a habitual action?","answer":"No. 今夜 places the negative action at tonight's future party.","explanation":"Like the affirmative nonpast, ない does not encode a present-versus-future distinction by itself."} -->
 
 ### 〜ない and Politeness
 
@@ -249,6 +283,9 @@ Although the overall sentence above is polite, and so has the polite form at the
 > 
 > 
 
+<!-- grammar-card: {"id":"polite-negative-options","kind":"concept","format":"qa","priority":"optional","sourceSection":"〜ない and Politeness","rule":"Polite negatives can use ません or conversational ないです","example":"What are the two polite alternatives to 飲めない taught here?","answer":"飲めません and 飲めないです.","explanation":"The first is the traditional textbook form; the second is common in conversation."} -->
+<!-- grammar-card: {"id":"embedded-negative","kind":"rule","format":"cloze","priority":"essential","sourceSection":"〜ない and Politeness","rule":"The plain negative is used before かもしれません","hint":"行く, plain negative","example":"明日のパーティーには___かもしれません。","answer":"行かない","explanation":"The uncertainty expression requires the plain predicate; the sentence-final form supplies politeness."} -->
+
 ### 〜ない for Invitations
 
 You may have already learned the polite way to make invitations using 〜ませんか. We can use the ない form in the same way, to make casual invitations. Simply adding the question particle か to the ない form is one way to do this:
@@ -256,6 +293,8 @@ You may have already learned the polite way to make invitations using 〜ませ�
   - 今度、一緒に行かないか。
 
   - How about we go together next time?
+
+<!-- grammar-card: {"id":"casual-negative-invitation","kind":"concept","format":"qa","priority":"optional","sourceSection":"〜ない for Invitations","rule":"A rising ない question can be a casual invitation; explicit か may sound assertive","example":"What does 今度、一緒に行かない？ do when said with inviting intonation?","answer":"It invites the listener to go together, rather than simply asserting that someone will not go.","explanation":"The version ending in か is possible but may sound more assertive."} -->
 
 However, this has an assertive feel to it so is not very common in everyday conversations. Rather, as so often happens in casual Japanese, we simply use the ない form as it is and rely on intonation to make it clear that we are asking a question:
 
@@ -270,10 +309,6 @@ However, this has an assertive feel to it so is not very common in everyday conv
 <!-- quiz: {"type":"multiple-choice","question":"What does \"出来ない！\" mean?","options":["I can't do it!","I don't understand!","I can't swim!","Sky diving looks interesting, but I definitely can't do it!"],"answer":0} -->
 
 <!-- quiz: {"type":"multiple-choice","question":"What does \"泳げない！\" mean?","options":["I can't swim!","I don't understand!","I can't do it!","Sky diving looks interesting, but I definitely can't do it!"],"answer":0} -->
-
-<!-- grammar-card: {"rule":"A potential form negates like an ichidan verb","hint":"飲める → ?","example":"私はコーヒーが飲め___。","answer":"ない","explanation":"飲める drops る and adds ない, giving 飲めない."} -->
-
-<!-- grammar-card: {"rule":"The plain negative is used before かもしれません","hint":"行く, plain negative","example":"明日のパーティーには___かもしれません。","answer":"行かない","explanation":"行かない stays plain because かもしれません already carries the politeness."} -->
 
 ## Sources
 

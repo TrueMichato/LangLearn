@@ -1,5 +1,7 @@
 # です (desu) — Polite Copula
 
+<!-- vocab-inventory: {"mode":"explicit"} -->
+
 > **Source:** Content from [Tofugu](https://www.tofugu.com/japanese-grammar/desu/). For personal study.
 
 です: Japanese Word for Politeness
@@ -63,6 +65,8 @@ V-なかった + です
 
 The most fundamental function of です is to mark a sentence as polite. You might be tempted to think of it as the polite form of だ, but these two words have some pretty big differences. Put simply, だ marks sentences as present tense and positive, whereas です is really just a simple marker of politeness.
 
+<!-- grammar-card: {"id":"desu-versus-da","kind":"concept","format":"qa","priority":"essential","sourceSection":"です as a Politeness Marker","rule":"です marks politeness and does not share all the attachment restrictions of だ","example":"Why is replacing every です with だ not a safe way to make a sentence plain?","answer":"です can follow い-adjectives and negative ない forms, where direct だ is ungrammatical.","explanation":"Compare おいしいです and 行かないです. Noun and な-adjective predicates permit だ, but the two endings are not universally interchangeable."} -->
+
 ## Patterns of Use
 
 です is found at the end of sentences, where it marks the sentence as polite.
@@ -101,6 +105,11 @@ With an い-adjective:
 
 In the first sentence, the な-adjective 健康的 (healthy) describes the subject of the sentence (納豆), and the い-adjective まずい (unpleasant) in the second sentence does the same thing. Just like with nouns, the meaning that です adds to these sentences is a feeling of politeness and social engagement.
 
+<!-- grammar-card: {"id":"desu-noun-predicate","kind":"rule","format":"cloze","priority":"essential","sourceSection":"です With Nouns and Adjectives","rule":"です makes a noun predicate polite","example":"私は萌子___。 (polite introduction)","answer":"です","explanation":"A name can be followed directly by です. The ending presents the introduction politely rather than adding an independent action."} -->
+<!-- grammar-card: {"id":"desu-i-adjective","kind":"rule","format":"cloze","priority":"essential","sourceSection":"です With Nouns and Adjectives","rule":"An い-adjective keeps its final い before polite です","example":"納豆はまず___です。 (unpleasant)","answer":"い","explanation":"まずい carries the adjective's non-past affirmative form; です adds politeness without replacing the final い."} -->
+<!-- vocab-card: {"id":"vocab-nattou","word":"納豆","reading":"なっとう","meaning":"natto; fermented soybeans","priority":"optional","sourceSection":"です With Nouns and Adjectives"} -->
+<!-- vocab-card: {"id":"vocab-kenkouteki","word":"健康的","reading":"けんこうてき","meaning":"healthy; healthful","priority":"essential","sourceSection":"です With Nouns and Adjectives"} -->
+<!-- vocab-card: {"id":"vocab-mazui","word":"まずい","reading":"まずい","meaning":"unpleasant; unappetizing (of taste)","priority":"optional","sourceSection":"です With Nouns and Adjectives"} -->
 ### です with Negative Marker ない
 
 です can be used with ない, a word that marks words as negative, or not true. This is one of the reasons that we say です is not the polite form of だ, and that they are inherently different words. だ tells us that a statement is positive, or true. For this reason だ is contradictory to ない, and can’t attach to it.
@@ -131,6 +140,10 @@ In the negative plain form of verbs, verbs conjugate to end in ない, showing t
 
 However, it’s good to know that, while polite, the 〜ないです ending of verbs is considered more colloquial, and less “proper” than the polite form verb ending 〜ません. Still, it is widely used in spoken Japanese and some informal writing as well.
 
+<!-- grammar-card: {"id":"desu-negative-noun","kind":"rule","format":"cloze","priority":"optional","sourceSection":"です with Negative Marker ない","rule":"です can make a negative noun predicate polite after じゃない","example":"トマトは野菜じゃない___。 (add politeness)","answer":"です","explanation":"The negative meaning comes from じゃない; です adds politeness without turning it affirmative."} -->
+<!-- grammar-card: {"id":"desu-negative-verb-register","kind":"concept","format":"qa","priority":"essential","sourceSection":"です with Negative Marker ない","rule":"Verb ないです is polite but more colloquial than ません","example":"Is 食べないです ungrammatical, or how does it differ from 食べません?","answer":"It is grammatical and polite, but more colloquial; 食べません is the more formal conventional polite negative.","explanation":"The ない form is a specific environment permitting です after a verb. It does not license affirmative 食べるです."} -->
+<!-- vocab-card: {"id":"vocab-yasai","word":"野菜","reading":"やさい","meaning":"vegetable","priority":"optional","sourceSection":"です with Negative Marker ない"} -->
+<!-- vocab-card: {"id":"vocab-shinsen","word":"新鮮","reading":"しんせん","meaning":"fresh","priority":"optional","sourceSection":"です with Negative Marker ない"} -->
 ### です With Past Tense Marker 〜かった
 
 です can be used with 〜かった, the past tense form of い-adjectives. This is the second reason that we think of です and だ as quite different from one another—だ marks a sentence as present tense, so using it after 〜かった is not possible.
@@ -173,9 +186,12 @@ Just like we mentioned before with the present tense 〜ない ending of verbs, 
 
 Since です can occur with the past tense い-adjectives and verbs, you should be able to see that it is not inherently a present tense marker. That being said, it’s important to know that です does have a past tense form itself, which is でした. When you want to mark a word as past tense that cannot be conjugated on its own (like a noun or な-adjective), then でした comes in very handy.
 
-<!-- grammar-card: {"rule":"A な-adjective forms its past negative with じゃなかった","hint":"元気, past negative","example":"納豆を食べる前は、___です。","answer":"元気じゃなかった","explanation":"元気 is noun-like, so it takes じゃなかった and です is added to keep the sentence polite."} -->
+<!-- grammar-card: {"id":"desu-na-past-negative","kind":"rule","format":"cloze","priority":"optional","sourceSection":"です With Past Tense Marker 〜かった","rule":"A な-adjective forms its past negative with じゃなかった","hint":"元気, past negative","example":"納豆を食べる前は、___です。","answer":"元気じゃなかった","explanation":"元気 is noun-like, so it takes じゃなかった and です is added to keep the sentence polite."} -->
 
-<!-- grammar-card: {"rule":"An い-adjective carries its own past and negative before です","hint":"美味しい, past negative","example":"でも、その前の日の納豆は___です。","answer":"美味しくなかった","explanation":"美味しくなかったです is the polite past negative; です never becomes でした after an い-adjective."} -->
+<!-- grammar-card: {"id":"desu-i-past-negative","kind":"rule","format":"cloze","priority":"essential","sourceSection":"です With Past Tense Marker 〜かった","rule":"An い-adjective carries its own past and negative before です","hint":"美味しい, past negative","example":"でも、その前の日の納豆は___です。","answer":"美味しくなかった","explanation":"美味しくなかった carries both past and negative marking; です remains the politeness marker rather than becoming でした."} -->
+<!-- grammar-card: {"id":"desu-i-past-positive","kind":"rule","format":"cloze","priority":"optional","sourceSection":"です With Past Tense Marker 〜かった","rule":"A past affirmative い-adjective takes かった followed by unchanged です","example":"昨日の納豆は美味し___です。","answer":"かった","explanation":"美味しい becomes 美味しかった. The adjective supplies past tense; です adds politeness."} -->
+<!-- grammar-card: {"id":"desu-verb-past-negative","kind":"concept","format":"qa","priority":"optional","sourceSection":"です With Past Tense Marker 〜かった","rule":"Verb なかったです is a colloquial polite past negative","example":"What is the more formal polite alternative to 行かなかったです?","answer":"行きませんでした。","explanation":"Both describe not going in the past. なかったです is common in speech; ませんでした uses the conventional polite verb pattern."} -->
+<!-- vocab-card: {"id":"vocab-genki","word":"元気","reading":"げんき","meaning":"well; healthy; energetic","priority":"optional","sourceSection":"です With Past Tense Marker 〜かった"} -->
 
 ## Beyond the Basics
 
@@ -189,13 +205,13 @@ Let’s start with a sentence-within-a-sentence (i.e. an embedded clause):
 
   - Koichi said “Natto is delicious.”
 
-In this sentence,「納豆はおいしいです」is a direct quote. It is exactly what Koichi said, word-for-word. This quote is called an “embedded clause” because it exists inside the larger, main clause,「コウイチは…と言いました」.  です can appear at the end of an embedded clause if it is a direct quote, but it *cannot* be used at the end of any other embedded clause. For example:
+In this sentence,「納豆はおいしいです」is a direct quote. It is exactly what Koichi said, word-for-word. This quote is called an “embedded clause” because it exists inside the larger, main clause,「コウイチは…と言いました」. A direct quote can retain です. In the neutral indirect report illustrated next, use the plain ending instead:
 
   - [納豆が健康的　です　**だ**] と世界中の皆さんに伝えたいです。
 
   - I want to tell the people of the world [that natto is healthy].
 
-In this sentence,「納豆が健康的だ」is not a direct quote of anyone, it is simply the message that you want to convey to the world. You probably won’t use those exact words to convey the message, so this clause just represents your idea or intention. Since です can only be used in embedded clauses that *are* direct quotes, this one needs to end with だ. Despite the plain form だ popping up, this sentence is still polite overall. This is because です appears at the end of the main clause, after the verb 伝えたい (want to tell).
+In this sentence,「納豆が健康的だ」is not a direct quote of anyone, it is simply the message that you want to convey to the world. You probably won’t use those exact words to convey the message, so this clause just represents your idea or intention. This neutral indirect-report clause uses だ. Despite the plain form だ popping up, this sentence is still polite overall. This is because です appears at the end of the main clause, after the verb 伝えたい (want to tell).
 
 Another reason です might appear in the middle of a sentence is if there are two clauses that are not embedded, but joined together into one sentence:
 
@@ -219,7 +235,9 @@ Even though clause A is marked with だ, this sentence feels polite overall, bec
 
 It’s *possible* that someone could say this sentence in spoken Japanese for some reason, but it is definitely awkward to have the first clause more polite than the second. In general, you should avoid putting the polite clause before the plain form clause.
 
-<!-- grammar-card: {"rule":"A clause quoted with と stays in the plain form","hint":"健康的 + ?","example":"「納豆が健康的___」と世界中の皆さんに伝えたいです。","answer":"だ","explanation":"Inside the quotation 健康的だ is plain, even though the sentence itself ends politely with です."} -->
+<!-- grammar-card: {"id":"desu-indirect-report","kind":"rule","format":"cloze","priority":"essential","sourceSection":"です in the Middle of a Sentence","rule":"A neutral indirect report uses a plain predicate before と","hint":"Report the idea, not someone's exact words","example":"納豆が健康的___と世界中の皆さんに伝えたいです。","answer":"だ","explanation":"This indirect content clause uses 健康的だ. A direct quote may retain です, so と alone does not force plain form in every quotation.","legacyAliases":[{"rule":"A clause quoted with と stays in the plain form","example":"「納豆が健康的___」と世界中の皆さんに伝えたいです。"}]} -->
+<!-- grammar-card: {"id":"desu-direct-quote","kind":"concept","format":"qa","priority":"optional","sourceSection":"です in the Middle of a Sentence","rule":"A direct quote preserves the quoted speaker's polite ending","example":"May コウイチは「納豆はおいしいです」と言いました retain です inside the quote?","answer":"Yes. It reproduces the exact polite words Koichi said.","explanation":"Direct quotation differs from the neutral indirect-report pattern. The outer clause has its own politeness marking."} -->
+<!-- grammar-card: {"id":"desu-main-clause-politeness","kind":"concept","format":"qa","priority":"optional","sourceSection":"です in the Middle of a Sentence","rule":"The main-clause ending is the strongest signal of overall politeness","example":"Does 第一だから make 健康は第一だから納豆は人気です a casual sentence overall?","answer":"No. The final です makes the overall sentence polite.","explanation":"A plain reason clause can precede a polite main clause. Starting politely and abruptly ending plain is generally awkward in a neutral explanation, though discourse can motivate style shifts."} -->
 
 ## Common Mistakes
 
@@ -236,6 +254,8 @@ It’s *possible* that someone could say this sentence in spoken Japanese for so
 > 行った (went)　→　⭕ 行き**ました**　/　❌ 行ったです
 > 
 > 
+
+<!-- grammar-card: {"id":"desu-affirmative-verbs","kind":"concept","format":"qa","priority":"essential","sourceSection":"Common Mistakes","rule":"Affirmative verbs normally express politeness through ます rather than directly adding です","example":"Why can't affirmative 行く take です directly to become polite?","answer":"It has its own polite conjugation, 行きます.","explanation":"The negative ないです exception does not extend to affirmative dictionary or past forms; verbs already have polite conjugations, such as 行きます and 行きました."} -->
 
 ---
 

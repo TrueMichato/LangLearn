@@ -1,5 +1,7 @@
 # この・その・あの・どの
 
+<!-- vocab-inventory: {"mode":"explicit"} -->
+
 > **Source:** Content from [Tofugu](https://www.tofugu.com/japanese-grammar/kono-sono-ano-dono/). For personal study.
 
 Japanese Demonstratives: この(Kono) • その(Sono) • あの(Ano) • どの(Dono)
@@ -15,6 +17,11 @@ Demonstrative
 ## The Basics
 
 この, その, あの, and どの are a set of こそあど words. They all go before nouns to give information about their location in relation to you. In general, この attaches to something close to the speaker, その to something close to the listener, and あの to something close to neither of them. どの is the question word that asks "which…?" out of a choice of three or more objects.
+
+<!-- vocab-card: {"id":"vocab-kono","priority":"essential","sourceSection":"The Basics","word":"この","reading":"この","meaning":"this (before a noun; near the speaker)"} -->
+<!-- vocab-card: {"id":"vocab-sono","priority":"essential","sourceSection":"The Basics","word":"その","reading":"その","meaning":"that (before a noun; near the listener or previously mentioned)"} -->
+<!-- vocab-card: {"id":"vocab-ano","priority":"essential","sourceSection":"The Basics","word":"あの","reading":"あの","meaning":"that over there (before a noun; away from both people)"} -->
+<!-- vocab-card: {"id":"vocab-dono","priority":"essential","sourceSection":"The Basics","word":"どの","reading":"どの","meaning":"which (before a noun; normally among three or more)"} -->
 
 ### Conceptualizing こそあど
 
@@ -61,6 +68,9 @@ You could even insert a whole string of words between その and the noun, to be
 
   - I like **that** [red frilly] skirt [on the right].
 
+<!-- grammar-card: {"id":"noun-required","kind":"concept","format":"qa","priority":"essential","sourceSection":"Patterns of Use","rule":"この-series words modify a following noun phrase","example":"Can この stand alone as the subject of このは何ですか when no noun is supplied?","answer":"No. Use これは何ですか, or supply a noun after この.","explanation":"Adjectives and longer modifiers may intervene before the head noun; these words are not the standalone これ series."} -->
+<!-- grammar-card: {"id":"listener-skirt","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Patterns of Use","rule":"その points at something near the listener","hint":"The red skirt is beside the listener","example":"___赤いスカートがいいな。","answer":"その","explanation":"その modifies the whole 赤いスカート noun phrase, without an extra の."} -->
+
 ### この, その, and あの with Physical Objects
 
 この, その, and あの can be used to refer to specific objects that are physically present, like このトマト (this tomato), そのトマト (that tomato), and あのトマト (that tomato over there).
@@ -85,11 +95,15 @@ This time, you use その because this tomato is closer to your sibling, who is 
 
 In this example, あの is used because it's referring to the tomato that is far from both of you.
 
+<!-- grammar-card: {"id":"distant-tomato","kind":"rule","format":"cloze","priority":"essential","sourceSection":"この, その, and あの with Physical Objects","rule":"あの points at something away from both speakers","hint":"The tomato is far from both people","example":"やばっ！___トマト、さらにデカイよ。","answer":"あの","explanation":"あの directly modifies トマト for the object distant from both speaker and listener."} -->
+
 ### どの For "Which…?" Out of Three or More Options
 
 The question word どの is used with a noun to ask things like どのドア (which door?) However, どの can only be used when asking "which…?" out of a choice of three or more people or things.
 
 When you only have a choice of two options, you'll use  どっち (or its polite version どちら) with the particle の instead, as in どっちのドア (which door?)
+
+<!-- grammar-card: {"id":"two-door-choice","kind":"rule","format":"cloze","priority":"optional","sourceSection":"どの For \"Which…?\" Out of Three or More Options","rule":"A two-way choice can use どちらの before a noun","example":"Which of the two doors, politely: ___ドアですか。","answer":"どちらの","explanation":"どちら needs の before ドア; どの is the ordinary choice question among three or more."} -->
 
 ### この, その, and あの with Multiple Objects
 
@@ -109,9 +123,7 @@ There are the plural versions of この, その, and あの, which are combinati
 
   - Grapes, blueberries, tomatoes… **these** fruits contain high levels of polyphenols.
 
-<!-- grammar-card: {"rule":"あの points at something away from both speakers","hint":"この / その / あの","example":"やばっ！___トマト、さらにデカイよ。","answer":"あの","explanation":"The tomato is over there, distant from both people, which is あの's job."} -->
-
-<!-- grammar-card: {"rule":"その points at something near the listener","hint":"この / その / あの","example":"___赤いスカートがいいな。","answer":"その","explanation":"The skirt is beside the listener, so その is the right choice."} -->
+<!-- grammar-card: {"id":"number-neutral","kind":"concept","format":"qa","priority":"optional","sourceSection":"この, その, and あの with Multiple Objects","rule":"この can modify a noun denoting one or several things","example":"Must このトマト become これらのトマト when several tomatoes are meant?","answer":"No. このトマト can refer to several; これらの makes plurality explicit and tends to sound more explanatory or formal.","explanation":"There is no required singular/plural inflection, and どれらの is not the question form."} -->
 
 ## Beyond The Basics
 
@@ -130,6 +142,8 @@ When attached to a longer phrase, the noun can be replaced with の, which has a
  I like that red **one**.
 
 If you'd like to learn more about this の, you can check out its dedicated page!
+
+<!-- grammar-card: {"id":"nominal-one","kind":"rule","format":"cloze","priority":"optional","sourceSection":"この, その, あの with Longer Phrases","rule":"Nominal の can replace the head noun after its descriptive phrase","example":"Replace スカート with one: その赤い___がいいな。","answer":"の","explanation":"その赤いの retains the adjective 赤い before the noun substitute; simply deleting スカート from そのスカート does not leave a complete noun phrase."} -->
 
 ### その with Numbers
 
@@ -153,6 +167,8 @@ And if you want to recommend a few items of interest on your YouTube channel, yo
 
   - Recommended items, No. 1 is this "tomato slicer." Item No. 2 is… Item No. 3 is…
 
+<!-- grammar-card: {"id":"sono-number","kind":"concept","format":"qa","priority":"optional","sourceSection":"その with Numbers","rule":"その plus a number can label an item or installment","example":"What does その２ label in a multipart blog post?","answer":"Part 2 or item No. 2.","explanation":"It is a numbering use, not a claim that the second part is physically near the listener."} -->
+
 ### Emphatic この
 
 You've learned that you can put この before words for people, like この人.
@@ -164,6 +180,8 @@ You will rarely see someone talking about themselves that way in real life, but 
   - お前は**この**私を誰だと思っているんだ？
 
   - Who do you think ***I*** am?
+
+<!-- grammar-card: {"id":"emphatic-self","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Emphatic この","rule":"この before 私 adds a note of self-importance","hint":"Add the emphatic determiner meaning I, of all people","example":"お前は___私を誰だと思っているんだ？","answer":"この","explanation":"この私 sounds theatrical or self-important; it is not ordinary neutral self-reference."} -->
 
 ### あの for Mutually Known Information
 
@@ -193,6 +211,8 @@ In writing, the author may use あの to add a similar effect. For example, the 
 
 In this case, あの indicates that the writer believes everyone knows who Welkin is and what he is like. Based on everyone's common knowledge, Welkin is not the kind of person to be selected as captain, so あの calls attention to that aspect and makes the announcement more remarkable, similar to the overexaggerated tone of "ta-da!"
 
+<!-- grammar-card: {"id":"shared-ano","kind":"concept","format":"qa","priority":"essential","sourceSection":"あの for Mutually Known Information","rule":"あの can invoke shared knowledge of an absent referent","example":"Why can あの寿司屋 refer to a restaurant neither person can currently see?","answer":"Both people know which restaurant is meant from a shared memory.","explanation":"あの can also emphasize a well-known person's reputation; physical distance is not required in this use."} -->
+
 ### Referring to Things You Can't See
 
 この, その, and あの can also be used when you are referring to something you can't physically see, such as an abstract concept that is never visible, or a physical object that is out of sight.
@@ -212,6 +232,8 @@ In this example, この suggests you regard the news as being close to you. One 
 On the other hand, その indicates you are *slightly* distanced from the news. It implies you are referring to the topic from an objective point of view.
 
 Lastly, あの shows you are referring to the news as something that's distant from you. This doesn't mean that you are unfamiliar with the news but means that you are looking back at the memory of the news. It's sort of like gazing off into the distance while trying to remember something.
+
+<!-- grammar-card: {"id":"invisible-perspective","kind":"concept","format":"qa","priority":"optional","sourceSection":"Referring to Things You Can't See","rule":"Conceptual proximity can determine a demonstrative for unseen information","example":"How can このニュース differ from neutral そのニュース when discussing the same unseen news?","answer":"この can present the news as vivid or emotionally close to the speaker; その can refer back more neutrally.","explanation":"あの can instead recall mutually identifiable news at a psychological distance. These are contextual nuances, not automatic tense markers."} -->
 
   
 
@@ -386,8 +408,6 @@ by 金水 敏 and 田窪 行則
 <!-- quiz: {"type":"multiple-choice","question":"What does \"**その**赤いスカートがいいな。\" mean?","options":["I like **that** red skirt.","Out of **this** skirt, **that** skirt, and **that** skirt over there, **which** one do you like the best?","I like **that** [red frilly] skirt [on the right].","Look! **This** tomato is so big."],"answer":0} -->
 
 <!-- quiz: {"type":"multiple-choice","question":"What does \"**その**[赤いヒラヒラの右の方においてあるスカート]がいいな。\" mean?","options":["I like **that** [red frilly] skirt [on the right].","Out of **this** skirt, **that** skirt, and **that** skirt over there, **which** one do you like the best?","I like **that** red skirt.","Look! **This** tomato is so big."],"answer":0} -->
-
-<!-- grammar-card: {"rule":"この before 私 adds a note of self-importance","hint":"この + 私","example":"お前は___私を誰だと思っているんだ？","answer":"この","explanation":"この私 means 'I, of all people', and gives the sentence its indignant tone."} -->
 
 ## Sources
 

@@ -1,5 +1,7 @@
 # Plural of Paucity vs Plural of Abundance
 
+<!-- vocab-inventory: {"mode":"explicit"} -->
+
 Some Arabic nouns have more than one broken plural. Traditional grammar may classify one pattern as a plural of paucity, often for a smaller number, and another as a plural of abundance.
 
 ## Core idea
@@ -7,6 +9,15 @@ Some Arabic nouns have more than one broken plural. Traditional grammar may clas
 The distinction is useful for reading older and formal texts, but modern usage often treats the common plural as neutral. Learn the pair when a noun has one, and let context decide how strongly “few” or “many” is meant.
 
 ## Forms and examples
+
+The “few” and “many” glosses below indicate traditional pattern classifications, not obligatory meanings in every sentence. Forms such as أَكْتُبٌ are uncommon in ordinary modern usage; كُتُبٌ is the normal neutral plural.
+
+<!-- vocab-card: {"id":"vocab-aklub","word":"أَكْلُبٌ","reading":"aklubun","meaning":"dogs; traditional paucity plural of كَلْبٌ","priority":"optional","sourceSection":"Forms and examples"} -->
+<!-- vocab-card: {"id":"vocab-kilab","word":"كِلَابٌ","reading":"kilābun","meaning":"dogs; traditional abundance/general plural","priority":"optional","sourceSection":"Forms and examples"} -->
+<!-- vocab-card: {"id":"vocab-ashhur","word":"أَشْهُرٌ","reading":"ashhurun","meaning":"months; traditional paucity plural","priority":"essential","sourceSection":"Forms and examples"} -->
+<!-- vocab-card: {"id":"vocab-shuhur","word":"شُهُورٌ","reading":"shuhūrun","meaning":"months; traditional abundance/general plural","priority":"essential","sourceSection":"Forms and examples"} -->
+<!-- vocab-card: {"id":"vocab-aktub","word":"أَكْتُبٌ","reading":"aktubun","meaning":"books; uncommon traditional paucity plural","priority":"optional","sourceSection":"Forms and examples"} -->
+<!-- vocab-card: {"id":"vocab-kutub","word":"كُتُبٌ","reading":"kutubun","meaning":"books; usual neutral modern plural","priority":"optional","sourceSection":"Forms and examples"} -->
 
 | Singular | Plural of paucity | Plural of abundance | Example |
 |---|---|---|---|
@@ -18,9 +29,12 @@ The distinction is useful for reading older and formal texts, but modern usage o
 
 ## Usage notes
 
+<!-- grammar-card: {"id":"paucity-pattern-set","kind":"concept","format":"qa","priority":"optional","sourceSection":"Usage notes","rule":"Four traditional patterns commonly express paucity.","example":"Which four paucity patterns are listed in the usage notes?","answer":"أَفْعُلٌ، أَفْعَالٌ، أَفْعِلَةٌ، فِعْلَةٌ.","explanation":"These are pattern labels, not dictionary vocabulary or a guarantee that every noun has a current few/many pair."} -->
+<!-- grammar-card: {"id":"abundance-pattern-set","kind":"concept","format":"qa","priority":"optional","sourceSection":"Usage notes","rule":"Abundance has more patterns than the four common paucity patterns.","example":"Which three abundance-pattern examples are listed here?","answer":"فُعُولٌ، فِعَالٌ، فَوَاعِلُ.","explanation":"They help identify traditional classifications; actual noun plurals must still be checked in real usage."} -->
+
 Common paucity patterns include **أَفْعُلٌ** (afʿulun), **أَفْعَالٌ** (afʿālun), **أَفْعِلَةٌ** (afʿilatun), and **فِعْلَةٌ** (fiʿlatun). Abundance patterns are more numerous, such as **فُعُولٌ** (fuʿūlun), **فِعَالٌ** (fiʿālun), and **فَوَاعِلُ** (fawāʿilu). Not every noun has a living contrast, so check real usage.
 
-<!-- grammar-card: {"rule": "A plural of paucity can suggest a smaller set, while a plural of abundance can suggest a larger or more general set.", "hint": "Look for paired plurals such as أَشْهُرٌ and شُهُورٌ.", "example": "عِنْدِي أَشْهُرٌ قَلِيلَةٌ", "answer": "I have a few months", "explanation": "أَشْهُرٌ is traditionally the paucity plural of شَهْرٌ, and قَلِيلَةٌ reinforces the small quantity."} -->
+<!-- grammar-card: {"id":"paucity-months","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Usage notes","rule":"A plural of paucity can suggest a smaller set, while a plural of abundance can suggest a larger or more general set.","example":"Using the traditional paucity plural of شَهْرٌ: عِنْدِي ___ قَلِيلَةٌ.","answer":"أَشْهُرٌ","explanation":"The paucity pattern and adjective few reinforce one another; the pattern is not an absolute count rule.","legacyAliases":[{"rule":"A plural of paucity can suggest a smaller set, while a plural of abundance can suggest a larger or more general set.","example":"عِنْدِي أَشْهُرٌ قَلِيلَةٌ"}]} -->
 
 ## Practice patterns
 
@@ -32,7 +46,7 @@ Use the contrast as a reading clue, not as a rigid translation rule:
 
 <!-- quiz: {"type": "multiple-choice", "question": "What is the safest modern reading of many abundance plurals such as كُتُبٌ (kutubun)?", "options": ["A general plural whose exact number comes from context", "Always exactly eleven things", "A singular adjective", "A verb in the passive"], "answer": 0} -->
 
-<!-- grammar-card: {"rule": "The paucity and abundance labels are traditional guides, but context controls the actual quantity in modern reading.", "hint": "Do not force few or many if the sentence does not support it.", "example": "مَرَّتْ شُهُورٌ كَثِيرَةٌ", "answer": "Many months passed", "explanation": "شُهُورٌ is an abundance plural, and كَثِيرَةٌ makes the large quantity explicit."} -->
+<!-- grammar-card: {"id":"context-not-fixed-count","kind":"concept","format":"qa","priority":"essential","sourceSection":"Practice patterns","rule":"The paucity and abundance labels are traditional guides, but context controls the actual quantity in modern reading.","example":"Must every occurrence of an abundance plural mean an explicitly large number?","answer":"No. Modern usage often uses the common plural neutrally; context supplies the number.","explanation":"In مَرَّتْ شُهُورٌ كَثِيرَةٌ, the adjective makes the large quantity explicit; the pattern alone is not a fixed numerical threshold.","legacyAliases":[{"rule":"The paucity and abundance labels are traditional guides, but context controls the actual quantity in modern reading.","example":"مَرَّتْ شُهُورٌ كَثِيرَةٌ"}]} -->
 
 ## Sources
 

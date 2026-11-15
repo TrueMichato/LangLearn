@@ -1,0 +1,707 @@
+{
+  "language": "ar",
+  "lessons": [
+    {
+      "lessonId": "exclamation-wonder",
+      "teachingPoints": [
+        {"id":"literary-wonder-register","kind":"concept","priority":"essential","sourceSection":"Core idea","objective":"Interpret the imperative-looking wonder formula without mistaking it for a command.","format":"qa","prompt":"Does أَجْمِلْ بِالْبَيْتِ command the house to become beautiful, and what register does it suggest?","answer":"No. It exclaims how beautiful the house is, in a literary or elevated register."},
+        {"id":"feminine-wonder-pronoun","kind":"rule","priority":"optional","sourceSection":"Core idea","objective":"Use the feminine admired-object pronoun without changing the exclamatory verb.","format":"cloze","prompt":"Complete “how fast she is”: مَا أَسْرَعَ___.","answer":"هَا"},
+        {"id":"wonder-accusative","kind":"rule","priority":"essential","sourceSection":"The mā afʿalahu pattern","objective":"Inflect the thing admired as an accusative in the mā formula.","format":"cloze","prompt":"Complete “how beautiful the language is”: مَا أَجْمَلَ ___.","answer":"اللُّغَةَ"},
+        {"id":"vocab-lughah","kind":"vocabulary","priority":"optional","sourceSection":"The mā afʿalahu pattern","objective":"Retain the meaning and taught accusative pronunciation of language.","word":"اللُّغَةَ","meaning":"the language; accusative","reading":"al-lughata"},
+        {"id":"wonder-bi-pattern","kind":"rule","priority":"essential","sourceSection":"When the adjective is not simple","objective":"Complete the alternate wonder formula with its genitive bi phrase.","format":"cloze","prompt":"Complete “how generous the teacher is”: أَكْرِمْ ___.","answer":"بِالْمُعَلِّمِ"},
+        {"id":"indirect-colour-wonder","kind":"rule","priority":"optional","sourceSection":"When the adjective is not simple","objective":"Use a verbal noun for a colour quality rather than overgeneralizing direct exclamatory derivation.","format":"cloze","prompt":"Complete “how intense the redness of the rose is”: مَا أَشَدَّ ___ الْوَرْدَةِ.","answer":"حُمْرَةَ"},
+        {"id":"vocab-humrah","kind":"vocabulary","priority":"optional","sourceSection":"When the adjective is not simple","objective":"Understand the lexical quality noun used in indirect wonder.","word":"حُمْرَةَ","meaning":"redness; accusative construct form","reading":"ḥumrata"},
+        {"id":"vocab-wardah","kind":"vocabulary","priority":"optional","sourceSection":"When the adjective is not simple","objective":"Retain rose in the colour-of-the-rose example.","word":"الْوَرْدَةِ","meaning":"the rose; genitive","reading":"al-wardati"}
+      ],
+      "exclusions": [
+        {"sourceSection":"Sources","reason":"Reference links only."},
+        {"sourceSection":"Core idea","reason":"The quiz and alternate house/speed examples repeat the two wonder constructions and pronoun contrast."},
+        {"sourceSection":"When the adjective is not simple","reason":"The quiz and parallel teacher/lesson exclamations assess already inventoried constructions; no separate rule is introduced."}
+      ]
+    },
+        {
+          "lessonId": "numbers-agreement",
+          "teachingPoints": [
+            {"id":"vocab-kitab","kind":"vocabulary","priority":"optional","sourceSection":"Core idea","objective":"Retain book with the singular gender needed for polarity.","word":"كِتَابٌ","meaning":"book; masculine","reading":"kitābun"},
+            {"id":"vocab-sayyarah","kind":"vocabulary","priority":"optional","sourceSection":"Core idea","objective":"Retain car with its feminine gender.","word":"سَيَّارَةٌ","meaning":"car; feminine","reading":"sayyāratun"},
+            {"id":"vocab-qalam","kind":"vocabulary","priority":"optional","sourceSection":"Core idea","objective":"Retain pen as the singular source of the counted plural.","word":"قَلَمٌ","meaning":"pen; masculine","reading":"qalamun"},
+            {"id":"vocab-madinah","kind":"vocabulary","priority":"optional","sourceSection":"Core idea","objective":"Retain city and its grammatical gender.","word":"مَدِينَةٌ","meaning":"city; feminine","reading":"madīnatun"},
+            {"id":"masculine-number-choice","kind":"rule","priority":"essential","sourceSection":"Core idea","objective":"Choose the polarity form of three for masculine book.","format":"cloze","prompt":"Complete “three books”, nominative: ___ كُتُبٍ.","answer":"ثَلَاثَةُ"},
+            {"id":"five-pens-genitive","kind":"rule","priority":"essential","sourceSection":"How to choose the form","objective":"Supply a plural genitive counted noun after five.","format":"cloze","prompt":"Complete “five pens”: خَمْسَةُ ___.","answer":"أَقْلَامٍ"},
+            {"id":"vocab-talib","kind":"vocabulary","priority":"optional","sourceSection":"How to choose the form","objective":"Retain the male student noun used to choose number gender.","word":"طَالِبٌ","meaning":"male student","reading":"ṭālibun"},
+            {"id":"vocab-talibah","kind":"vocabulary","priority":"optional","sourceSection":"How to choose the form","objective":"Retain the female student noun independently of its plural ending.","word":"طَالِبَةٌ","meaning":"female student","reading":"ṭālibatun"},
+            {"id":"seven-cities-genitive","kind":"rule","priority":"optional","sourceSection":"Case on the number","objective":"Reinforce genitive on a broken plural after seven.","format":"cloze","prompt":"Complete “seven cities”: سَبْعُ ___.","answer":"مُدُنٍ"},
+            {"id":"number-case-object","kind":"rule","priority":"optional","sourceSection":"Case on the number","objective":"Change the number's case without changing the counted noun's genitive.","format":"cloze","prompt":"Complete “I saw five students”: رَأَيْتُ ___ طُلَّابٍ.","answer":"خَمْسَةَ"},
+            {"id":"feminine-number-choice","kind":"rule","priority":"essential","sourceSection":"Common learner traps","objective":"Choose the non-tāʾ form of ten for feminine room.","format":"cloze","prompt":"Complete “ten rooms”, nominative: ___ غُرَفٍ.","answer":"عَشْرُ"},
+            {"id":"singular-gender-diagnostic","kind":"concept","priority":"essential","sourceSection":"Common learner traps","objective":"Base polarity on the Arabic singular rather than an English gloss or plural shape.","format":"qa","prompt":"When counting بُيُوتٍ, should you choose number gender from English “houses” or from بَيْتٌ?","answer":"From Arabic بَيْتٌ, which is masculine; four houses is أَرْبَعَةُ بُيُوتٍ."},
+            {"id":"vocab-bayt","kind":"vocabulary","priority":"optional","sourceSection":"Common learner traps","objective":"Retain house and the masculine gender absent from its English gloss.","word":"بَيْتٌ","meaning":"house; masculine","reading":"baytun"},
+            {"id":"vocab-ghurfah","kind":"vocabulary","priority":"optional","sourceSection":"Common learner traps","objective":"Retain room as the singular lexical source for the feminine count phrase.","word":"غُرْفَةٌ","meaning":"room; feminine","reading":"ghurfatun"}
+          ],
+          "exclusions": [
+            {"sourceSection":"Sources","reason":"Reference links only."},
+            {"sourceSection":"Core idea","reason":"The quiz and city/pen examples repeat polarity and plural-genitive composition; their central singular lexicon is explicit."},
+            {"sourceSection":"Case on the number","reason":"The quiz and subject/prepositional rows repeat case selection; the object application tests the contrast."},
+            {"sourceSection":"Common learner traps","reason":"The final quiz repeats the feminine-room polarity application."}
+          ]
+        },
+        {
+          "lessonId": "numbers-11-99",
+          "teachingPoints": [
+            {"id":"eleven-twelve-agreement","kind":"concept","priority":"essential","sourceSection":"11 and 12","objective":"Keep 11–12 gender agreement separate from the 3–10 polarity rule.","format":"qa","prompt":"Do 11 and 12 use the same gender polarity as 3–10?","answer":"No. Both parts agree with the counted noun: masculine with masculine, feminine with feminine."},
+            {"id":"twelve-oblique","kind":"rule","priority":"optional","sourceSection":"11 and 12","objective":"Decline the first part of twelve like a dual without nūn.","format":"cloze","prompt":"Complete the accusative “twelve books”: ___ عَشَرَ كِتَابًا.","answer":"اثْنَيْ"},
+            {"id":"teen-tamyiz","kind":"rule","priority":"essential","sourceSection":"13 through 19","objective":"Use singular accusative specification after a teen number.","format":"cloze","prompt":"Complete “thirteen books”: ثَلَاثَةَ عَشَرَ ___.","answer":"كِتَابًا"},
+            {"id":"teen-split-agreement","kind":"concept","priority":"essential","sourceSection":"13 through 19","objective":"Distinguish opposite-gender units from agreeing tens in 13–19.","format":"qa","prompt":"How do the unit and ten parts agree in the numbers 13–19?","answer":"The unit has the opposite gender to the singular counted noun; the ten part agrees with it."},
+            {"id":"tens-oblique-case","kind":"rule","priority":"essential","sourceSection":"The tens: 20, 30, 40...","objective":"Select the oblique tens form as a direct object.","format":"cloze","prompt":"Complete “I saw twenty students”: رَأَيْتُ ___ طَالِبًا.","answer":"عِشْرِينَ"},
+            {"id":"vocab-twenty","kind":"vocabulary","priority":"optional","sourceSection":"The tens: 20, 30, 40...","objective":"Retain the complete numeral twenty rather than a detached inflectional ending.","word":"عِشْرُونَ","meaning":"twenty; nominative","reading":"ʿishrūna"},
+            {"id":"compound-tamyiz","kind":"rule","priority":"optional","sourceSection":"21 through 99","objective":"Extend singular accusative specification to coordinated numbers.","format":"cloze","prompt":"Complete “forty-five books”: خَمْسَةٌ وَأَرْبَعُونَ ___.","answer":"كِتَابًا"},
+            {"id":"unit-before-tens","kind":"concept","priority":"optional","sourceSection":"21 through 99","objective":"Recall Arabic unit-and-tens order independently of gender.","format":"qa","prompt":"In Arabic twenty-one, does the tens word or the unit word come first?","answer":"The unit comes first, then وَ and the tens."},
+            {"id":"coordinated-unit-gender","kind":"concept","priority":"essential","sourceSection":"21 through 99","objective":"Preserve the agreeing 1–2 versus polar 3–9 unit distinction within each decade.","format":"qa","prompt":"How does unit gender behave in 21/22 compared with 23–29?","answer":"One and two agree with the counted noun; three through nine show opposite gender."},
+            {"id":"forty-five-cars","kind":"rule","priority":"optional","sourceSection":"21 through 99","objective":"Produce the feminine-counted-noun unit form with tanwīn in coordination.","format":"cloze","prompt":"Complete “forty-five cars”, nominative: ___ وَأَرْبَعُونَ سَيَّارَةً.","answer":"خَمْسٌ"},
+            {"id":"vocab-yawman","kind":"vocabulary","priority":"optional","sourceSection":"21 through 99","objective":"Retain day in its taught counted-noun form.","word":"يَوْمًا","meaning":"a day; accusative","reading":"yawman"},
+            {"id":"vocab-shahran","kind":"vocabulary","priority":"optional","sourceSection":"21 through 99","objective":"Retain month in the thirty-two-months example.","word":"شَهْرًا","meaning":"a month; accusative","reading":"shahran"}
+          ],
+          "exclusions": [
+            {"sourceSection":"Sources","reason":"Reference links only."},
+            {"sourceSection":"11 and 12","reason":"The first quiz and feminine twelve row reinforce the inventoried agreement, noun case and exceptional twelve declension."},
+            {"sourceSection":"13 through 19","reason":"The second quiz and nineteen-students example repeat the split agreement and tamyīz rules."},
+            {"sourceSection":"21 through 99","reason":"The final quiz tests the same oblique tens ending already covered by the object application."}
+          ]
+        },
+        {
+          "lessonId": "ordinal-numbers",
+          "teachingPoints": [
+            {"id":"vocab-awwal","kind":"vocabulary","priority":"optional","sourceSection":"Core forms","objective":"Retain masculine first with its doubled consonant.","word":"الأَوَّلُ","meaning":"the first; masculine nominative","reading":"al-awwalu"},
+            {"id":"vocab-ula","kind":"vocabulary","priority":"optional","sourceSection":"Core forms","objective":"Retain the irregular feminine ordinal first.","word":"الأُولَى","meaning":"the first; feminine","reading":"al-ūlā"},
+            {"id":"vocab-thani","kind":"vocabulary","priority":"optional","sourceSection":"Core forms","objective":"Retain the masculine second ordinal.","word":"الثَّانِي","meaning":"the second; masculine","reading":"ath-thānī"},
+            {"id":"vocab-thaniyah","kind":"vocabulary","priority":"optional","sourceSection":"Core forms","objective":"Retain the feminine second ordinal.","word":"الثَّانِيَةُ","meaning":"the second; feminine nominative","reading":"ath-thāniyatu"},
+            {"id":"vocab-thalith","kind":"vocabulary","priority":"optional","sourceSection":"Core forms","objective":"Retain the masculine third ordinal.","word":"الثَّالِثُ","meaning":"the third; masculine nominative","reading":"ath-thālithu"},
+            {"id":"vocab-thalithah","kind":"vocabulary","priority":"optional","sourceSection":"Core forms","objective":"Retain the feminine third ordinal.","word":"الثَّالِثَةُ","meaning":"the third; feminine nominative","reading":"ath-thālithatu"},
+            {"id":"vocab-rabi","kind":"vocabulary","priority":"optional","sourceSection":"Core forms","objective":"Retain the masculine fourth ordinal.","word":"الرَّابِعُ","meaning":"the fourth; masculine nominative","reading":"ar-rābiʿu"},
+            {"id":"vocab-rabiah","kind":"vocabulary","priority":"optional","sourceSection":"Core forms","objective":"Retain the feminine fourth ordinal.","word":"الرَّابِعَةُ","meaning":"the fourth; feminine nominative","reading":"ar-rābiʿatu"},
+            {"id":"vocab-ashir","kind":"vocabulary","priority":"optional","sourceSection":"Core forms","objective":"Retain the masculine tenth ordinal.","word":"العَاشِرُ","meaning":"the tenth; masculine nominative","reading":"al-ʿāshiru"},
+            {"id":"vocab-ashirah","kind":"vocabulary","priority":"optional","sourceSection":"Core forms","objective":"Retain the feminine tenth ordinal.","word":"العَاشِرَةُ","meaning":"the tenth; feminine nominative","reading":"al-ʿāshiratu"},
+            {"id":"cardinal-ordinal-contrast","kind":"concept","priority":"essential","sourceSection":"Core forms","objective":"Separate ranking from counting rather than transferring cardinal polarity.","format":"qa","prompt":"What distinction separates an Arabic cardinal from an ordinal number?","answer":"A cardinal counts how many; an ordinal ranks first, second, third, and so on."},
+            {"id":"ordinal-page-agreement","kind":"rule","priority":"essential","sourceSection":"Agreement with nouns","objective":"Match an ordinal to a definite feminine nominative page.","format":"cloze","prompt":"Complete “the second page”: الصَّفْحَةُ ___.","answer":"الثَّانِيَةُ"},
+            {"id":"date-genitive","kind":"rule","priority":"essential","sourceSection":"Dates","objective":"Use masculine date wording with the genitive required after fī.","format":"cloze","prompt":"Complete “on the tenth”: فِي ___.","answer":"العَاشِرِ"},
+            {"id":"special-feminine-first","kind":"rule","priority":"essential","sourceSection":"Compound ordinals","objective":"Apply the exceptional feminine first form to unit.","format":"cloze","prompt":"Complete “the first unit”: الوَحْدَةُ ___.","answer":"الأُولَى"},
+            {"id":"eleventh-chapter","kind":"rule","priority":"optional","sourceSection":"Compound ordinals","objective":"Produce the masculine eleventh compound with its special first component.","format":"cloze","prompt":"Complete “the eleventh chapter”: الفَصْلُ ___.","answer":"الحَادِي عَشَرَ"},
+            {"id":"twelfth-night","kind":"rule","priority":"optional","sourceSection":"Compound ordinals","objective":"Keep the feminine twelfth compound's fixed endings despite a nominative head noun.","format":"cloze","prompt":"Complete “the twelfth night”: اللَيْلَةُ ___.","answer":"الثَّانِيَةَ عَشْرَةَ"},
+            {"id":"twenty-first-century","kind":"rule","priority":"optional","sourceSection":"Compound ordinals","objective":"Produce the coordinated ordinal taught for the century.","format":"cloze","prompt":"Complete “the twenty-first century”: القَرْنُ ___.","answer":"الوَاحِدُ وَالعِشْرُونَ"}
+          ],
+          "exclusions": [
+            {"sourceSection":"Sources","reason":"Reference links only."},
+            {"sourceSection":"Core forms","reason":"The assessment repeats adjective-like ordinal behavior; lexical targets are the actual five masculine/feminine pairs shown, not an invented complete ten-item list."},
+            {"sourceSection":"Dates","reason":"The quiz and additional month phrases repeat masculine day reference and genitive after fī."},
+            {"sourceSection":"Compound ordinals","reason":"The final quiz repeats the special feminine first application."}
+          ]
+        },
+        {
+          "lessonId": "fractions-time",
+          "teachingPoints": [
+            {"id":"vocab-nisf","kind":"vocabulary","priority":"essential","sourceSection":"Common fractions","objective":"Retain the central half fraction noun.","word":"نِصْفٌ","meaning":"half","reading":"niṣfun"},
+            {"id":"vocab-thuluth","kind":"vocabulary","priority":"optional","sourceSection":"Common fractions","objective":"Retain the third fraction noun separately from an ordinal adjective.","word":"ثُلُثٌ","meaning":"one third","reading":"thuluthun"},
+            {"id":"vocab-rub","kind":"vocabulary","priority":"essential","sourceSection":"Common fractions","objective":"Retain the quarter noun used in clock expressions.","word":"رُبْعٌ","meaning":"one quarter","reading":"rubʿun"},
+            {"id":"half-hour-construct","kind":"rule","priority":"optional","sourceSection":"Common fractions","objective":"Build a fraction-plus-genitive construction with an indefinite hour.","format":"cloze","prompt":"Complete “half an hour”: نِصْفُ ___.","answer":"سَاعَةٍ"},
+            {"id":"two-thirds-construct","kind":"rule","priority":"optional","sourceSection":"Common fractions","objective":"Drop dual nūn from a fraction used as a construct head.","format":"cloze","prompt":"Complete “two thirds of the road”, nominative: ___ الطَّرِيقِ.","answer":"ثُلُثَا"},
+            {"id":"three-quarters","kind":"rule","priority":"optional","sourceSection":"Common fractions","objective":"Count plural quarters with the 3–10 construction.","format":"cloze","prompt":"Write “three quarters” as a nominative fraction phrase: ___.","answer":"ثَلَاثَةُ أَرْبَاعٍ"},
+            {"id":"percentage-phrase","kind":"rule","priority":"essential","sourceSection":"Percentages","objective":"Attach the taught two-word percentage expression after a number.","format":"cloze","prompt":"Complete “twenty-five percent” using the two-word percentage expression: خَمْسَةٌ وَعِشْرُونَ ___.","answer":"فِي المِئَةِ"},
+            {"id":"clock-feminine-hour","kind":"rule","priority":"essential","sourceSection":"Telling time","objective":"Use feminine hour agreement rather than cardinal gender polarity.","format":"cloze","prompt":"Complete “three o’clock”: السَّاعَةُ ___.","answer":"الثَّالِثَةُ"},
+            {"id":"half-past","kind":"rule","priority":"optional","sourceSection":"Telling time","objective":"Add a fraction for time past the hour.","format":"cloze","prompt":"Complete “three thirty”: السَّاعَةُ الثَّالِثَةُ ___.","answer":"وَالنِّصْفُ"},
+            {"id":"vocab-saah","kind":"vocabulary","priority":"optional","sourceSection":"Telling time","objective":"Retain the feminine hour noun underlying clock agreement.","word":"سَاعَةٌ","meaning":"hour","reading":"sāʿatun"},
+            {"id":"quarter-to","kind":"rule","priority":"essential","sourceSection":"Minutes in words","objective":"Express time before the next hour with an accusative quarter.","format":"cloze","prompt":"Complete “a quarter to five”: السَّاعَةُ الخَامِسَةُ ___.","answer":"إِلَّا رُبْعًا"},
+            {"id":"minute-count-range","kind":"concept","priority":"optional","sourceSection":"Minutes in words","objective":"Distinguish the minute noun's plural genitive diptote from singular accusative at 25.","format":"qa","prompt":"Why do five minutes and twenty-five minutes use دَقَائِقَ and دَقِيقَةً respectively?","answer":"Five takes plural genitive; دَقَائِقَ is a diptote with genitive fatḥa. Twenty-five takes singular accusative دَقِيقَةً.","explanation":"The final fatḥa on دَقَائِقَ does not make it an accusative in خَمْسُ دَقَائِقَ. The singular minute noun is feminine, hence خَمْسُ."},
+            {"id":"vocab-daqaiq","kind":"vocabulary","priority":"optional","sourceSection":"Minutes in words","objective":"Retain the complete minutes plural with its nominative vocalization.","word":"دَقَائِقُ","meaning":"minutes; nominative plural","reading":"daqāʾiqu"}
+          ],
+          "exclusions": [
+            {"sourceSection":"Sources","reason":"Reference links only."},
+            {"sourceSection":"Common fractions","reason":"The quiz and book/amount fraction examples repeat the inventoried fraction construction."},
+            {"sourceSection":"Telling time","reason":"The quiz and two-o'clock/quarter-past examples repeat feminine hour agreement and added fractions; the one-o'clock exception is retained in the application explanation."},
+            {"sourceSection":"Minutes in words","reason":"The final quiz and further minute totals assess the already covered quarter-to and counted-noun ranges."}
+          ]
+        },
+        {
+          "lessonId": "five-nouns",
+          "teachingPoints": [
+            {"id":"vocab-ab","kind":"vocabulary","priority":"optional","sourceSection":"The set","objective":"Retain father as a lexical noun rather than a case suffix.","word":"أَبٌ","meaning":"father","reading":"abun"},
+            {"id":"vocab-akh","kind":"vocabulary","priority":"optional","sourceSection":"The set","objective":"Retain brother as the second common five-noun member.","word":"أَخٌ","meaning":"brother","reading":"akhun"},
+            {"id":"vocab-ham","kind":"vocabulary","priority":"optional","sourceSection":"The set","objective":"Retain the less frequent male in-law noun.","word":"حَمٌ","meaning":"father-in-law; male in-law","reading":"ḥamun"},
+            {"id":"vocab-fam","kind":"vocabulary","priority":"optional","sourceSection":"The set","objective":"Retain the ordinary mouth noun, distinct from its special inflectional stem.","word":"فَمٌ","meaning":"mouth","reading":"famun"},
+            {"id":"vocab-dhu","kind":"vocabulary","priority":"optional","sourceSection":"The set","objective":"Retain the formal possessor-of word with its nominative qualification.","word":"ذُو","meaning":"possessor of; nominative, formal","reading":"dhū"},
+            {"id":"five-nouns-nominative","kind":"rule","priority":"essential","sourceSection":"Case with long vowels","objective":"Mark a qualifying father noun nominative with long ū.","format":"cloze","prompt":"Complete “your father came” (addressing a man): جَاءَ ___.","answer":"أَبُوكَ"},
+            {"id":"five-nouns-accusative","kind":"rule","priority":"essential","sourceSection":"Case with long vowels","objective":"Use long ā on the brother noun as a direct object.","format":"cloze","prompt":"Complete “I saw your brother” (addressing a man): رَأَيْتُ ___.","answer":"أَخَاكَ"},
+            {"id":"dhu-genitive","kind":"rule","priority":"optional","sourceSection":"ذُو (dhū) — possessor of","objective":"Inflect the formal possessor adjective to match a genitive man.","format":"cloze","prompt":"Complete “with a man of knowledge”: مَعَ رَجُلٍ ___ عِلْمٍ.","answer":"ذِي"},
+            {"id":"five-nouns-conditions","kind":"concept","priority":"essential","sourceSection":"Conditions and caveats","objective":"Recall the number, diminutive and first-person-attachment restrictions on special endings.","format":"qa","prompt":"What three general conditions license the special long-vowel endings of the five nouns?","answer":"They are singular, not diminutive, and in iḍāfa to something other than first-person ي."},
+            {"id":"mouth-special-condition","kind":"concept","priority":"optional","sourceSection":"Conditions and caveats","objective":"Avoid retaining mīm when applying the special mouth paradigm.","format":"qa","prompt":"Can فَمٌ keep its م and still display the special fū/fā/fī case pattern?","answer":"No. The special pattern uses فُو / فَا / فِي without م."},
+            {"id":"five-nouns-genitive","kind":"rule","priority":"essential","sourceSection":"Conditions and caveats","objective":"Mark the qualifying father noun genitive after bi-.","format":"cloze","prompt":"Complete “by your father” (addressing a man): بِ___.","answer":"أَبِيكَ"}
+          ],
+          "exclusions": [
+            {"sourceSection":"Sources","reason":"Reference links only."},
+            {"sourceSection":"The set","reason":"The first quiz assesses membership already explicit in the five lexical items."},
+            {"sourceSection":"Case with long vowels","reason":"The second quiz and paradigm table repeat the three case applications; letter names are grammatical scaffolding, not lexical targets."},
+            {"sourceSection":"Conditions and caveats","reason":"The final quiz and unattached/diminutive examples reinforce the covered genitive and licensing restrictions."}
+          ]
+        },
+        {
+          "lessonId": "diptotes",
+          "teachingPoints": [
+            {"id":"diptote-genitive","kind":"rule","priority":"essential","sourceSection":"Genitive with fatḥa","objective":"Use genitive fatḥa on a diptote proper name without falsely calling it indefinite.","format":"cloze","prompt":"Complete “to Damascus”: إِلَى ___.","answer":"دِمَشْقَ","explanation":"دِمَشْقَ (dimashqa) is genitive after إِلَى. A proper name is definite, but only the relevant article or construct condition restores kasra."},
+            {"id":"diptote-case-not-ending","kind":"concept","priority":"essential","sourceSection":"Core pattern","objective":"Distinguish syntactic genitive from its exceptional vowel marker.","format":"qa","prompt":"Does the -a of أَحْمَدَ after عَلَى mean the name is accusative?","answer":"No. It is genitive after the preposition, marked with fatḥa because it is a diptote."},
+            {"id":"vocab-maktab","kind":"vocabulary","priority":"optional","sourceSection":"Core pattern","objective":"Retain office as the ordinary triptote comparison noun.","word":"مَكْتَبٌ","meaning":"office","reading":"maktabun"},
+            {"id":"broken-plural-diptote","kind":"rule","priority":"optional","sourceSection":"Common diptote families","objective":"Apply diptote genitive marking while an accompanying ordinary adjective keeps kasra.","format":"cloze","prompt":"Complete “by many mosques”: بِ___ كَثِيرَةٍ.","answer":"مَسَاجِدَ"},
+            {"id":"families-not-all-names","kind":"concept","priority":"optional","sourceSection":"Common diptote families","objective":"Keep the listed name, pattern and feminine-ending families qualified rather than universal.","format":"qa","prompt":"Does the family table make every proper name or feminine noun a diptote?","answer":"No. Particular name patterns and endings matter; learn the relevant class, not just the broad label."},
+            {"id":"vocab-masajid","kind":"vocabulary","priority":"optional","sourceSection":"Common diptote families","objective":"Retain mosques as a meaningful diptote plural.","word":"مَسَاجِدُ","meaning":"mosques; nominative diptote plural","reading":"masājidu"},
+            {"id":"vocab-ahmar","kind":"vocabulary","priority":"optional","sourceSection":"Common diptote families","objective":"Retain red with its masculine diptote qualification.","word":"أَحْمَرُ","meaning":"red; masculine nominative diptote","reading":"aḥmaru"},
+            {"id":"vocab-sahra","kind":"vocabulary","priority":"optional","sourceSection":"Common diptote families","objective":"Retain desert as the feminine-ended diptote example.","word":"صَحْرَاءُ","meaning":"desert; nominative diptote","reading":"ṣaḥrāʾu"},
+            {"id":"article-restores-kasra","kind":"rule","priority":"essential","sourceSection":"When kasra returns","objective":"Restore genitive kasra when the diptote carries the definite article.","format":"cloze","prompt":"Complete “in the mosques”: فِي ___.","answer":"المَسَاجِدِ"},
+            {"id":"construct-restores-kasra","kind":"rule","priority":"essential","sourceSection":"When kasra returns","objective":"Restore genitive kasra on the construct head without requiring an article.","format":"cloze","prompt":"Complete “in the mosques of the city”: فِي ___ المَدِينَةِ.","answer":"مَسَاجِدِ"}
+          ],
+          "exclusions": [
+            {"sourceSection":"Sources","reason":"Reference links only."},
+            {"sourceSection":"Core pattern","reason":"The first assessment and nominative/accusative table rows reinforce the diptote diagnostic."},
+            {"sourceSection":"Common diptote families","reason":"The second quiz repeats genitive fatḥa; parallel proper names illustrate the qualified families rather than new declensions."},
+            {"sourceSection":"When kasra returns","reason":"The final quiz and desert example repeat the two restored-kasra conditions separately inventoried."}
+          ]
+        },
+    {
+      "lessonId": "oaths-emphasis",
+      "teachingPoints": [
+        {"id":"vocab-qasam","kind":"vocabulary","priority":"optional","sourceSection":"Core idea","objective":"Retain the name for an oath as a lexical noun.","word":"قَسَمٌ","meaning":"oath","reading":"qasamun"},
+        {"id":"vocab-wallahi","kind":"vocabulary","priority":"optional","sourceSection":"Core idea","objective":"Recognize the complete oath expression rather than capturing a bare suffix.","word":"وَٱللّٰهِ","meaning":"by God; an oath","reading":"wallāhi"},
+        {"id":"energetic-nun-contrast","kind":"concept","priority":"optional","sourceSection":"Core idea","objective":"Distinguish the two energetic endings and the rarity of the light form.","format":"qa","prompt":"How do the heavy and light energetic nūn differ in form and frequency?","answer":"Heavy نَّ has shadda and fatḥa; light نْ has sukūn and is rarer."},
+        {"id":"oath-energetic-ending","kind":"rule","priority":"essential","sourceSection":"Oath particles and the answer","objective":"Supply heavy energetic nūn on the emphatic oath response.","format":"cloze","prompt":"Supply the heavy emphatic ending in “I will surely say”: لَأَقُولَ___.","answer":"نَّ"},
+        {"id":"oath-genitive","kind":"concept","priority":"essential","sourceSection":"Oath particles and the answer","objective":"Explain the genitive shared by the three oath-particle examples.","format":"qa","prompt":"Why does the divine name end in -i in wallāhi, billāhi and tallāhi?","answer":"The sworn name is genitive after the oath particle."},
+        {"id":"inna-emphatic-subject","kind":"rule","priority":"essential","sourceSection":"Other emphasis tools","objective":"Keep the emphatic nominal subject accusative while leaving its predicate nominative.","format":"cloze","prompt":"Complete “indeed the student is hardworking”: إِنَّ ___ مُجْتَهِدٌ.","answer":"الطَّالِبَ"},
+        {"id":"qad-perfect-emphasis","kind":"concept","priority":"optional","sourceSection":"Other emphasis tools","objective":"Interpret qad with the taught past verb without universalizing its gloss.","format":"qa","prompt":"What nuance does قَدْ add in قَدْ نَجَحَ الطَّالِبُ?","answer":"The student has indeed or already succeeded."},
+        {"id":"emphatic-command","kind":"concept","priority":"optional","sourceSection":"Other emphasis tools","objective":"Recognize energetic nūn in an imperative outside an oath response.","format":"qa","prompt":"What force does اُكْتُبَنَّ الدَّرْسَ have?","answer":"A strongly emphasized command: surely write the lesson!"},
+        {"id":"vocab-haqq","kind":"vocabulary","priority":"optional","sourceSection":"Oath particles and the answer","objective":"Retain truth as the lexical object in the oath example.","word":"الْحَقَّ","meaning":"the truth; accusative","reading":"al-ḥaqqa"}
+      ],
+      "exclusions": [
+        {"sourceSection":"Sources","reason":"Reference links only."},
+        {"sourceSection":"Core idea","reason":"The first quiz assesses the energetic oath-response meaning already covered."},
+        {"sourceSection":"Other emphasis tools","reason":"The second quiz and parallel report/truth statements reinforce the inventoried emphatic particles."}
+      ]
+    },
+    {
+      "lessonId": "conditional-particles-deep",
+      "teachingPoints": [
+        {"id":"vocab-in","kind":"vocabulary","priority":"optional","sourceSection":"Core idea","objective":"Associate the open-condition conjunction with if.","word":"إِنْ","meaning":"if; an open condition","reading":"in"},
+        {"id":"vocab-idha","kind":"vocabulary","priority":"optional","sourceSection":"Core idea","objective":"Retain the conjunction for an often-expected event.","word":"إِذَا","meaning":"when; if, often an expected event","reading":"idhā"},
+        {"id":"vocab-law","kind":"vocabulary","priority":"optional","sourceSection":"Core idea","objective":"Retain the counterfactual conjunction with its qualified meaning.","word":"لَوْ","meaning":"if; often counterfactual, if ... had / were","reading":"law"},
+        {"id":"vocab-lawla","kind":"vocabulary","priority":"optional","sourceSection":"Core idea","objective":"Recognize the complete were-it-not-for conjunction.","word":"لَوْلَا","meaning":"were it not for; if not for","reading":"lawlā"},
+        {"id":"in-jussive-result","kind":"rule","priority":"essential","sourceSection":"In and idhā","objective":"Produce the jussive result verb after the open conditional.","format":"cloze","prompt":"Complete “if you study, you succeed”: إِنْ تَدْرُسْ ___.","answer":"تَنْجَحْ"},
+        {"id":"open-expected-contrast","kind":"concept","priority":"essential","sourceSection":"In and idhā","objective":"Choose a conditional particle from the speaker's expectation, not English if alone.","format":"qa","prompt":"Which particle typically suits an open uncertain condition, and which an expected arrival?","answer":"إِنْ for the open uncertain condition; إِذَا for the expected arrival."},
+        {"id":"linking-kasra-jussive","kind":"concept","priority":"optional","sourceSection":"In and idhā","objective":"Keep the connecting kasra distinct from a change of verb mood.","format":"qa","prompt":"Why can the conditional example read تَفْتَحِ النَّافِذَةَ rather than end audibly in sukūn?","answer":"A helping kasra avoids two adjacent vowelless consonants in connected speech; the verb is still jussive."},
+        {"id":"lawla-noun","kind":"rule","priority":"essential","sourceSection":"Law and lawlā","objective":"Use the nominative preventing factor after lawlā.","format":"cloze","prompt":"Complete “were it not for the rain”: لَوْلَا ___.","answer":"الْمَطَرُ"},
+        {"id":"law-counterfactual","kind":"concept","priority":"essential","sourceSection":"Law and lawlā","objective":"Interpret the unreal-past condition and its lām response.","format":"qa","prompt":"Does لَوْ دَرَسْتَ لَنَجَحْتَ normally assert that the person studied and succeeded?","answer":"No. It means if you had studied, you would have succeeded, imagining the opposite of what happened."},
+        {"id":"conditional-fa-command","kind":"concept","priority":"optional","sourceSection":"Law and lawlā","objective":"Explain the linking fāʾ before a result that is a command.","format":"qa","prompt":"Why does فَاتَّصِلْ بِي begin with فَـ in إِنْ سَافَرْتَ فَاتَّصِلْ بِي?","answer":"It links the command contact me to the condition if you travel."},
+        {"id":"vocab-matar","kind":"vocabulary","priority":"optional","sourceSection":"Law and lawlā","objective":"Retain the preventing-factor example's weather noun.","word":"الْمَطَرُ","meaning":"the rain","reading":"al-maṭaru"}
+      ],
+      "exclusions": [
+        {"sourceSection":"Sources","reason":"Reference links only."},
+        {"sourceSection":"Core idea","reason":"The first assessment and table summarize the same four conditional choices."},
+        {"sourceSection":"Law and lawlā","reason":"The quiz and water/teacher examples repeat the presence-prevents-result contrast already inventoried."}
+      ]
+    },
+    {
+      "lessonId": "adjective-clauses",
+      "teachingPoints": [
+        {"id":"indefinite-direct-clause","kind":"rule","priority":"essential","sourceSection":"Indefinite nouns: direct descriptive clauses","objective":"Attach a descriptive verb clause directly to an indefinite noun.","format":"cloze","prompt":"Complete “a student who reads”: طَالِبٌ ___.","answer":"يَقْرَأُ"},
+        {"id":"definiteness-clause-choice","kind":"concept","priority":"essential","sourceSection":"Core idea","objective":"Distinguish direct descriptive clauses from definite relative clauses.","format":"qa","prompt":"When describing a noun with a clause, what normally changes if طَالِبٌ becomes الطَّالِبُ?","answer":"The definite noun normally needs a matching relative pronoun before the clause; the indefinite noun takes the clause directly."},
+        {"id":"vocab-sifatun","kind":"vocabulary","priority":"optional","sourceSection":"Core idea","objective":"Retain the grammatical descriptor noun without treating the whole explanation as vocabulary.","word":"صِفَةٌ","meaning":"adjective; descriptor","reading":"ṣifatun"},
+        {"id":"vocab-sawtan","kind":"vocabulary","priority":"optional","sourceSection":"Indefinite nouns: direct descriptive clauses","objective":"Retain sound in the indefinite descriptive-clause example.","word":"صَوْتًا","meaning":"a sound; accusative","reading":"ṣawtan"},
+        {"id":"definite-relative-clause","kind":"rule","priority":"essential","sourceSection":"Definite nouns: relative pronouns and return pronouns","objective":"Insert the masculine singular relative after a definite book.","format":"cloze","prompt":"Complete “the book that I read”: الْكِتَابُ ___ قَرَأْتُهُ.","answer":"الَّذِي"},
+        {"id":"feminine-relative","kind":"rule","priority":"optional","sourceSection":"Definite nouns: relative pronouns and return pronouns","objective":"Match a definite story with its feminine relative pronoun.","format":"cloze","prompt":"Complete “the story that she wrote”: الْقِصَّةُ ___ كَتَبَتْهَا.","answer":"الَّتِي"},
+        {"id":"human-plural-relative","kind":"rule","priority":"optional","sourceSection":"Definite nouns: relative pronouns and return pronouns","objective":"Choose the masculine human plural relative rather than universalizing singular forms.","format":"cloze","prompt":"Complete “the male students who attended”: الطُّلَّابُ ___ حَضَرُوا.","answer":"الَّذِينَ"},
+        {"id":"resumptive-object","kind":"concept","priority":"essential","sourceSection":"Definite nouns: relative pronouns and return pronouns","objective":"Identify the returning object pronoun and its antecedent.","format":"qa","prompt":"What does هُ refer to in الْكِتَابُ الَّذِي قَرَأْتُهُ?","answer":"The book: هُ is the object of I read inside the relative clause."},
+        {"id":"vocab-qissah","kind":"vocabulary","priority":"optional","sourceSection":"Core idea","objective":"Retain story as the feminine lexical antecedent.","word":"الْقِصَّةَ","meaning":"the story; accusative","reading":"al-qiṣṣata"}
+      ],
+      "exclusions": [
+        {"sourceSection":"Sources","reason":"Reference links only."},
+        {"sourceSection":"Core idea","reason":"The first quiz assesses the inventoried indefinite clause construction."},
+        {"sourceSection":"Definite nouns: relative pronouns and return pronouns","reason":"The quiz and repeated pronoun list reinforce the three relative choices; the returning object is separately covered."}
+      ]
+    },
+    {
+      "lessonId": "dialect-pronouns-verbs",
+      "teachingPoints": [
+        {"id":"egyptian-present","kind":"rule","priority":"essential","sourceSection":"Pronouns shift too","objective":"Produce the Egyptian first-person present without a revealing transliteration.","format":"cloze","prompt":"Complete Egyptian “I write”: أَنَا ___.","answer":"بَكْتُبْ"},
+        {"id":"vocab-inta","kind":"vocabulary","priority":"optional","sourceSection":"Pronouns shift too","objective":"Recognize the spoken masculine second-person pronoun.","word":"إِنْتَ","meaning":"you; masculine singular, Egyptian and Levantine","reading":"inta"},
+        {"id":"vocab-inti","kind":"vocabulary","priority":"optional","sourceSection":"Pronouns shift too","objective":"Keep the feminine spoken second-person pronoun distinct.","word":"إِنْتِي","meaning":"you; feminine singular, Egyptian and Levantine","reading":"inti"},
+        {"id":"vocab-huwwa","kind":"vocabulary","priority":"optional","sourceSection":"Pronouns shift too","objective":"Retain the Egyptian masculine third-person pronunciation.","word":"هُوَّه","meaning":"he; Egyptian","reading":"huwwa"},
+        {"id":"vocab-hiyya","kind":"vocabulary","priority":"optional","sourceSection":"Pronouns shift too","objective":"Retain the Egyptian feminine third-person pronunciation.","word":"هِيَّه","meaning":"she; Egyptian","reading":"hiyya"},
+        {"id":"moroccan-present-markers","kind":"concept","priority":"optional","sourceSection":"Core idea","objective":"Recognize the Moroccan present marker and its qualified regional alternative.","format":"qa","prompt":"Which present marker appears in Moroccan كَنْكْتُبْ, and what regional alternative is introduced here?","answer":"كَـ (ka-); تَـ (ta-) occurs in some Maghrebi varieties."},
+        {"id":"levantine-progressive","kind":"rule","priority":"essential","sourceSection":"Do not mix registers accidentally","objective":"Complete the taught Levantine progressive speaking phrase.","format":"cloze","prompt":"Complete Levantine “I am speaking”: عَمْ ___.","answer":"بَحْكِي"},
+        {"id":"register-not-mixed-dialect","kind":"concept","priority":"essential","sourceSection":"Do not mix registers accidentally","objective":"Keep the MSA writing choice separate from regional conversational systems.","format":"qa","prompt":"For formal writing, should “I write” use أَكْتُبُ or a mixture of Egyptian and Moroccan present markers?","answer":"Use MSA أَنَا أَكْتُبُ; spoken markers belong to their own regional systems."}
+      ],
+      "exclusions": [
+        {"sourceSection":"Sources","reason":"Reference links only."},
+        {"sourceSection":"Core idea","reason":"The first quiz and person-by-person writing table repeat the inventoried regional markers; verb prefixes are applications, not lexical fragments."},
+        {"sourceSection":"Do not mix registers accidentally","reason":"The second quiz and marker list repeat the progressive and regional-register distinctions."}
+      ]
+    },
+    {
+      "lessonId": "dialect-negation",
+      "teachingPoints": [
+        {"id":"egyptian-negative-frame","kind":"rule","priority":"essential","sourceSection":"The mā…sh frame","objective":"Supply the final Egyptian negative element without saving it as a word.","format":"cloze","prompt":"Complete Egyptian “I do not write”: مَا بَكْتُبْ___.","answer":"شْ"},
+        {"id":"regional-verbal-negation","kind":"concept","priority":"essential","sourceSection":"Core idea","objective":"Avoid imposing the Egyptian final negative element on every regional verb.","format":"qa","prompt":"Must a Levantine or Gulf negative verb take the final شْ shown in Egyptian مَا بَكْتُبْشْ?","answer":"No. The examples use مَا بَكْتُبْ in Levantine and مَا أَكْتُبْ in Gulf speech, without final شْ."},
+        {"id":"moroccan-negative-recognition","kind":"concept","priority":"optional","sourceSection":"Core idea","objective":"Separate Moroccan present morphology from verbal and nominal negation.","format":"qa","prompt":"What makes مَا كَنْكْتُبْشْ negative, and which nominal negative expression is paired with it here?","answer":"مَا ... شْ surrounds the verb; the nominal example uses مَا شِي."},
+        {"id":"mish-predicate","kind":"rule","priority":"essential","sourceSection":"Mish and mū","objective":"Negate the ready predicate with the regional standalone negator.","format":"cloze","prompt":"Complete Egyptian “not ready”: ___ جَاهِزْ.","answer":"مِشْ"},
+        {"id":"gulf-mu-predicate","kind":"rule","priority":"optional","sourceSection":"Mish and mū","objective":"Use the Gulf-style predicate negator without presenting it as MSA.","format":"cloze","prompt":"Use the Gulf predicate negator taught here: ___ زَيْنْ — not good.","answer":"مُو"},
+        {"id":"vocab-jahiz","kind":"vocabulary","priority":"optional","sourceSection":"Mish and mū","objective":"Retain ready in its taught dialectal form.","word":"جَاهِزْ","meaning":"ready; masculine singular, dialectal pausal form","reading":"jāhiz"},
+        {"id":"vocab-mashghul","kind":"vocabulary","priority":"optional","sourceSection":"Mish and mū","objective":"Retain busy as a genuine lexical predicate.","word":"مَشْغُولْ","meaning":"busy; masculine singular, dialectal pausal form","reading":"mashghūl"},
+        {"id":"vocab-zayn","kind":"vocabulary","priority":"optional","sourceSection":"Mish and mū","objective":"Retain the Gulf good adjective with its regional qualification.","word":"زَيْنْ","meaning":"good; Gulf-style usage","reading":"zayn"},
+        {"id":"vocab-taaban","kind":"vocabulary","priority":"optional","sourceSection":"Core idea","objective":"Retain tired without inferring an MSA case ending from dialect examples.","word":"تَعْبَانْ","meaning":"tired; masculine singular, dialectal pausal form","reading":"taʿbān"}
+      ],
+      "exclusions": [
+        {"sourceSection":"Sources","reason":"Reference links only."},
+        {"sourceSection":"Core idea","reason":"The quiz and MSA comparison repeat previously taught negative meanings; the regional differences are inventoried."},
+        {"sourceSection":"Mish and mū","reason":"The quiz and know/busy/ready examples reinforce the covered verbal-versus-predicate contrasts."}
+      ]
+    },
+    {
+      "lessonId": "word-order",
+      "teachingPoints": [
+        {"id":"nominal-verbal-classification","kind":"concept","priority":"essential","sourceSection":"Two sentence types","objective":"Recognize a nominal topic followed by a verbal predicate, not just the presence of a verb.","format":"qa","prompt":"Is الطَّالِبُ كَتَبَ الرِّسَالَةَ nominal or verbal in the classification taught here, despite containing كَتَبَ?","answer":"Nominal: the student is the initial topic, and the verbal clause supplies information about him."},
+        {"id":"vocab-risalah","kind":"vocabulary","priority":"optional","sourceSection":"Two sentence types","objective":"Retain letter as the lexical object shared by the word-order contrast.","word":"الرِّسَالَةَ","meaning":"the letter; accusative","reading":"ar-risālata"},
+        {"id":"verb-first-singular","kind":"rule","priority":"essential","sourceSection":"Verbal sentence agreement","objective":"Keep a verb singular before an explicit masculine human plural subject.","format":"cloze","prompt":"Complete verb-first “the male students came”: ___ الطُّلَّابُ.","answer":"جَاءَ"},
+        {"id":"verb-first-feminine","kind":"rule","priority":"optional","sourceSection":"Verbal sentence agreement","objective":"Retain feminine gender and the connected-reading vowel before a following plural subject.","format":"cloze","prompt":"Complete verb-first “the female students came” in connected reading: ___ الطَّالِبَاتُ.","answer":"جَاءَتِ"},
+        {"id":"subject-first-plural","kind":"rule","priority":"essential","sourceSection":"Subject-first sentences","objective":"Use full human plural agreement after a fronted topic.","format":"cloze","prompt":"Complete subject-first “the male students came”: الطُّلَّابُ ___.","answer":"جَاؤُوا"},
+        {"id":"zero-present-copula","kind":"rule","priority":"optional","sourceSection":"Why word order matters","objective":"Complete a present nominal sentence without inserting a copula.","format":"cloze","prompt":"Complete “the house is big”: البَيْتُ ___.","answer":"كَبِيرٌ"},
+        {"id":"narration-topic-focus","kind":"concept","priority":"optional","sourceSection":"Why word order matters","objective":"Understand topic-first contrast as a discourse choice rather than a tense change.","format":"qa","prompt":"Why might the teacher be placed first in المُدَرِّسُ بَدَأَ الدَّرْسَ، لَا الطَّالِبُ?","answer":"To make the teacher the topic and contrast him with the student."},
+        {"id":"vocab-kabir","kind":"vocabulary","priority":"optional","sourceSection":"Why word order matters","objective":"Retain big independently of its predicate use.","word":"كَبِيرٌ","meaning":"big; masculine singular","reading":"kabīrun"}
+      ],
+      "exclusions": [
+        {"sourceSection":"Sources","reason":"Reference links only."},
+        {"sourceSection":"Two sentence types","reason":"The first quiz repeats the sentence-type classification."},
+        {"sourceSection":"Verbal sentence agreement","reason":"The second quiz and boys-reading example repeat verb-first number/gender agreement."},
+        {"sourceSection":"Why word order matters","reason":"The final quiz and narration example reinforce the inventoried discourse contrast."}
+      ]
+    },
+    {
+      "lessonId": "agreement-rules",
+      "teachingPoints": [
+        {"id":"adjective-agreement-features","kind":"concept","priority":"essential","sourceSection":"What agrees?","objective":"Recall all four attributive agreement dimensions without confusing them with tense or person.","format":"qa","prompt":"Which four noun features does an ordinary attributive adjective match?","answer":"Gender, number, definiteness and case."},
+        {"id":"vocab-mujtahid","kind":"vocabulary","priority":"optional","sourceSection":"What agrees?","objective":"Retain the hardworking adjective anchoring the human agreement table.","word":"مُجْتَهِدٌ","meaning":"hardworking; masculine singular","reading":"mujtahidun"},
+        {"id":"nonhuman-adjective","kind":"rule","priority":"essential","sourceSection":"The non-human plural rule","objective":"Apply feminine singular agreement to a definite non-human plural.","format":"cloze","prompt":"Complete “the new books”: الكُتُبُ ___.","answer":"الجَدِيدَةُ"},
+        {"id":"nonhuman-demonstrative","kind":"rule","priority":"optional","sourceSection":"The non-human plural rule","objective":"Choose a feminine singular demonstrative for plural houses.","format":"cloze","prompt":"Complete “these houses are big”: ___ البُيُوتُ كَبِيرَةٌ.","answer":"هَذِهِ"},
+        {"id":"nonhuman-verb","kind":"rule","priority":"optional","sourceSection":"The non-human plural rule","objective":"Extend the non-human plural convention to a following verb.","format":"cloze","prompt":"Complete “the papers fell”: الأَوْرَاقُ ___.","answer":"سَقَطَتْ"},
+        {"id":"vocab-maftuhah","kind":"vocabulary","priority":"optional","sourceSection":"The non-human plural rule","objective":"Retain open as the feminine predicate used with doors.","word":"مَفْتُوحَةٌ","meaning":"open; feminine singular","reading":"maftūḥatun"},
+        {"id":"human-feminine-adjective","kind":"rule","priority":"essential","sourceSection":"Human plural contrast","objective":"Keep plural adjective agreement for a group of women.","format":"cloze","prompt":"Complete “the new female teachers”: المُعَلِّمَاتُ ___.","answer":"الجَدِيدَاتُ"},
+        {"id":"human-demonstrative","kind":"rule","priority":"optional","sourceSection":"Human plural contrast","objective":"Use the human plural demonstrative with doctors.","format":"cloze","prompt":"Complete “these are skilled doctors”: ___ أَطِبَّاءُ مَاهِرُونَ.","answer":"هَؤُلَاءِ"},
+        {"id":"broken-plural-meaning","kind":"rule","priority":"optional","sourceSection":"Broken plurals and meaning","objective":"Apply non-human agreement to a broken plural without using shape as the cause.","format":"cloze","prompt":"Complete “old mosques”: مَسَاجِدُ ___.","answer":"قَدِيمَةٌ"},
+        {"id":"broken-not-nonhuman","kind":"concept","priority":"essential","sourceSection":"Broken plurals and meaning","objective":"Separate humanness from broken-plural morphology.","format":"qa","prompt":"Why do رِجَالٌ and مَسَاجِدُ have different adjective agreement although both are broken plurals?","answer":"Men are human and take plural agreement; mosques are non-human and commonly take feminine singular agreement."},
+        {"id":"vocab-rijal","kind":"vocabulary","priority":"optional","sourceSection":"Broken plurals and meaning","objective":"Retain men as the human broken-plural example.","word":"رِجَالٌ","meaning":"men","reading":"rijālun"},
+        {"id":"vocab-qadimah","kind":"vocabulary","priority":"optional","sourceSection":"Broken plurals and meaning","objective":"Retain old in the feminine form used with non-human plurals.","word":"قَدِيمَةٌ","meaning":"old; feminine singular","reading":"qadīmatun"}
+      ],
+      "exclusions": [
+        {"sourceSection":"Sources","reason":"Reference links only."},
+        {"sourceSection":"What agrees?","reason":"The first quiz and gender/number paradigm repeat the four agreement dimensions."},
+        {"sourceSection":"The non-human plural rule","reason":"The second quiz and doors example repeat the covered demonstrative, adjective and verb operations."},
+        {"sourceSection":"Broken plurals and meaning","reason":"The final quiz repeats the semantic human/non-human distinction."}
+      ]
+    },
+    {
+      "lessonId": "hal-vs-tamyiz",
+      "teachingPoints": [
+        {"id":"hal-smiling","kind":"rule","priority":"essential","sourceSection":"Ḥāl: state or circumstance","objective":"Supply an indefinite accusative state during the arrival action.","format":"cloze","prompt":"Complete “the student came smiling”: جَاءَ الطَّالِبُ ___.","answer":"مُبْتَسِمًا"},
+        {"id":"hal-possessor-object","kind":"concept","priority":"optional","sourceSection":"Ḥāl: state or circumstance","objective":"Identify an object as the participant described by a circumstantial accusative.","format":"qa","prompt":"Who is the possessor of the state in رَأَيْتُ الوَلَدَ نَائِمًا: the observer or the boy?","answer":"The boy, who is seen sleeping."},
+        {"id":"vocab-mubtasiman","kind":"vocabulary","priority":"optional","sourceSection":"Ḥāl: state or circumstance","objective":"Retain smiling with the taught accusative pronunciation.","word":"مُبْتَسِمًا","meaning":"smiling; masculine accusative","reading":"mubtasiman"},
+        {"id":"vocab-naiman","kind":"vocabulary","priority":"optional","sourceSection":"Ḥāl: state or circumstance","objective":"Retain sleeping as a lexical state independent of its syntax.","word":"نَائِمًا","meaning":"sleeping; masculine accusative","reading":"nāʾiman"},
+        {"id":"vocab-musriatan","kind":"vocabulary","priority":"optional","sourceSection":"Ḥāl: state or circumstance","objective":"Retain the feminine in-a-hurry example.","word":"مُسْرِعَةً","meaning":"in a hurry; feminine accusative","reading":"musriʿatan"},
+        {"id":"tamyiz-number","kind":"rule","priority":"essential","sourceSection":"Tamyīz: specification","objective":"Specify a number with a singular accusative noun rather than a state.","format":"cloze","prompt":"Complete “I have twenty books”: عِنْدِي عِشْرُونَ ___.","answer":"كِتَابًا"},
+        {"id":"tamyiz-comparative","kind":"concept","priority":"essential","sourceSection":"Tamyīz: specification","objective":"Recognize specification of the respect of comparison beyond quantities.","format":"qa","prompt":"What does صَبْرًا clarify in هِيَ أَكْثَرُ مِنِّي صَبْرًا?","answer":"In what respect she has more: patience."},
+        {"id":"vocab-inab","kind":"vocabulary","priority":"optional","sourceSection":"Tamyīz: specification","objective":"Retain grapes as the lexical content specified after a measure.","word":"عِنَبًا","meaning":"grapes; accusative","reading":"ʿinaban"},
+        {"id":"vocab-sabr","kind":"vocabulary","priority":"optional","sourceSection":"Tamyīz: specification","objective":"Retain patience in the comparative example.","word":"صَبْرًا","meaning":"patience; accusative","reading":"ṣabran"},
+        {"id":"classify-sitting","kind":"rule","priority":"essential","sourceSection":"Side-by-side test","objective":"Classify a participant's sitting state with the meaning-based diagnostic.","format":"qa","prompt":"Classify جَالِسًا in قَرَأْتُ الكِتَابَ جَالِسًا (qaraʾtu al-kitāba jālisan).","answer":"حَالٌ (ḥālun) — circumstantial accusative"},
+        {"id":"vocab-jalisan","kind":"vocabulary","priority":"optional","sourceSection":"Side-by-side test","objective":"Retain sitting separately from its grammatical classification.","word":"جَالِسًا","meaning":"sitting; masculine accusative","reading":"jālisan"}
+      ],
+      "exclusions": [
+        {"sourceSection":"Sources","reason":"Reference links only."},
+        {"sourceSection":"Ḥāl: state or circumstance","reason":"The first quiz asks the same state diagnostic covered in the applications."},
+        {"sourceSection":"Tamyīz: specification","reason":"The second quiz and measure/vague-air examples repeat specification of what or in what respect; they do not supply a new case rule."},
+        {"sourceSection":"Side-by-side test","reason":"The final quiz and twenty-pages comparison reinforce the state-versus-specification diagnostic."}
+      ]
+    },
+    {
+      "lessonId": "kana-inna-sisters-deep",
+      "teachingPoints": [
+        {"id":"kana-predicate","kind":"rule","priority":"essential","sourceSection":"kāna and her sisters","objective":"Assign accusative to the predicate while retaining a nominative kāna noun.","format":"cloze","prompt":"Complete “the weather was cold”: كَانَ الجَوُّ ___.","answer":"بَارِدًا"},
+        {"id":"vocab-asbaha","kind":"vocabulary","priority":"optional","sourceSection":"Common kāna sisters","objective":"Retain the becoming verb with its morning association.","word":"أَصْبَحَ","meaning":"became; became in the morning","reading":"aṣbaḥa"},
+        {"id":"vocab-sara","kind":"vocabulary","priority":"optional","sourceSection":"Common kāna sisters","objective":"Retain the general change-of-state sister.","word":"صَارَ","meaning":"became","reading":"ṣāra"},
+        {"id":"vocab-laysa","kind":"vocabulary","priority":"optional","sourceSection":"Common kāna sisters","objective":"Retain the negative copular verb with its form qualification.","word":"لَيْسَ","meaning":"is not; masculine singular form","reading":"laysa"},
+        {"id":"vocab-ma-zala","kind":"vocabulary","priority":"optional","sourceSection":"Common kāna sisters","objective":"Retain still as a complete construction, not a literal negation of ceasing.","word":"مَا زَالَ","meaning":"still; continues to be","reading":"mā zāla"},
+        {"id":"laysa-predicate","kind":"rule","priority":"optional","sourceSection":"Common kāna sisters","objective":"Apply kāna-style predicate case to present nominal negation.","format":"cloze","prompt":"Complete “the door is not open”: لَيْسَ البَابُ ___.","answer":"مَفْتُوحًا"},
+        {"id":"inna-noun","kind":"rule","priority":"essential","sourceSection":"inna and her sisters","objective":"Assign accusative to the inna noun while preserving nominative on its predicate.","format":"cloze","prompt":"Complete “indeed, the weather is cold”: إِنَّ ___ بَارِدٌ.","answer":"الجَوَّ"},
+        {"id":"vocab-anna","kind":"vocabulary","priority":"optional","sourceSection":"Common inna sisters","objective":"Retain the content-clause conjunction.","word":"أَنَّ","meaning":"that; introduces a content clause","reading":"anna"},
+        {"id":"vocab-kaanna","kind":"vocabulary","priority":"optional","sourceSection":"Common inna sisters","objective":"Retain the resemblance conjunction.","word":"كَأَنَّ","meaning":"as if","reading":"kaʾanna"},
+        {"id":"vocab-lakinna","kind":"vocabulary","priority":"optional","sourceSection":"Common inna sisters","objective":"Retain the contrasting conjunction with its long vowel.","word":"لَكِنَّ","meaning":"but; however","reading":"lākinna"},
+        {"id":"vocab-layta","kind":"vocabulary","priority":"optional","sourceSection":"Common inna sisters","objective":"Retain the wish particle separately from uncertainty.","word":"لَيْتَ","meaning":"if only; expresses a wish","reading":"layta"},
+        {"id":"vocab-laalla","kind":"vocabulary","priority":"optional","sourceSection":"Common inna sisters","objective":"Retain the perhaps particle separately from wishing.","word":"لَعَلَّ","meaning":"perhaps","reading":"laʿalla"},
+        {"id":"inna-student-ending","kind":"rule","priority":"optional","sourceSection":"Common inna sisters","objective":"Supply just the accusative vowel on a second inna subject.","format":"cloze","prompt":"Supply the case vowel: إِنَّ الطَّالِب___ مُجْتَهِدٌ.","answer":"َ"},
+        {"id":"kana-inna-case-contrast","kind":"concept","priority":"essential","sourceSection":"Common inna sisters","objective":"Recall which side of the nominal sentence each sister system changes.","format":"qa","prompt":"Which part becomes accusative with kāna, and which with inna?","answer":"With kāna, the predicate; with inna, the noun/subject."}
+      ],
+      "exclusions": [
+        {"sourceSection":"Sources","reason":"Reference links only."},
+        {"sourceSection":"kāna and her sisters","reason":"The first quiz and became-hardworking example repeat predicate accusative."},
+        {"sourceSection":"Common kāna sisters","reason":"The second quiz and further examples apply the same case frame to the separately inventoried meanings."},
+        {"sourceSection":"Common inna sisters","reason":"The final quiz and clause examples repeat the shared accusative-noun frame; the five distinct lexical meanings remain explicit."}
+      ]
+    },
+    {
+      "lessonId": "masdar-mimi",
+      "teachingPoints": [
+        {"id":"mimi-three-functions","kind":"concept","priority":"essential","sourceSection":"Three related terms","objective":"Distinguish action, place and time functions without mechanically translating initial mīm.","format":"qa","prompt":"Does the initial م alone tell you whether a derived noun names an action, a place or a time?","answer":"No. The lexical word and its context determine which of those meanings is intended."},
+        {"id":"entrance-pattern","kind":"rule","priority":"essential","sourceSection":"Form I patterns","objective":"Produce the learned mafʿal entrance noun without assuming all internal vowels match.","format":"cloze","prompt":"Complete “entrance” from دَخَلَ (dakhala): ___.","answer":"مَدْخَلٌ"},
+        {"id":"vocab-madkhal","kind":"vocabulary","priority":"essential","sourceSection":"Form I patterns","objective":"Retain entrance and entry as contextual senses of one noun.","word":"مَدْخَلٌ","meaning":"entrance; entry","reading":"madkhalun"},
+        {"id":"vocab-makhraj","kind":"vocabulary","priority":"optional","sourceSection":"Form I patterns","objective":"Retain exit and articulation point rather than translating the pattern alone.","word":"مَخْرَجٌ","meaning":"exit; articulation point","reading":"makhrajun"},
+        {"id":"vocab-majlis","kind":"vocabulary","priority":"optional","sourceSection":"Form I patterns","objective":"Retain the kasra-bearing council/sitting-place noun.","word":"مَجْلِسٌ","meaning":"sitting place; council","reading":"majlisun"},
+        {"id":"vocab-mawid","kind":"vocabulary","priority":"essential","sourceSection":"Form I patterns","objective":"Retain appointment with its actual learned internal vowel.","word":"مَوْعِدٌ","meaning":"appointment; appointed time","reading":"mawʿidun"},
+        {"id":"vocab-manzil","kind":"vocabulary","priority":"optional","sourceSection":"Form I patterns","objective":"Retain house/stopping place as a lexical derived noun.","word":"مَنْزِلٌ","meaning":"house; stopping place","reading":"manzilun"},
+        {"id":"classify-physical-entrance","kind":"rule","priority":"essential","sourceSection":"Context decides action, place, or time","objective":"Use physical-building context to classify the noun as a place.","format":"qa","prompt":"Classify مَدْخَلُ in مَدْخَلُ البِنَايَةِ وَاسِعٌ (madkhalu al-bināyati wāsiʿun).","answer":"اسْمُ مَكَانٍ (ismu makānin) — noun of place"},
+        {"id":"classify-topic-entry","kind":"rule","priority":"optional","sourceSection":"Context decides action, place, or time","objective":"Contrast the abstract topic-entry sense with the physical doorway sense.","format":"qa","prompt":"In كَانَ مَدْخَلُهُ إِلَى المَوْضُوعِ لَطِيفًا, does مَدْخَلُهُ name a building doorway?","answer":"No. It refers to his entry or approach into the topic, an abstract action sense."},
+        {"id":"vocab-dukhul","kind":"vocabulary","priority":"optional","sourceSection":"A useful contrast with ordinary maṣdar","objective":"Retain the ordinary entering verbal noun for comparison with entrance.","word":"دُخُولٌ","meaning":"entering","reading":"dukhūlun"},
+        {"id":"vocab-khuruj","kind":"vocabulary","priority":"optional","sourceSection":"A useful contrast with ordinary maṣdar","objective":"Retain the ordinary going-out verbal noun.","word":"خُرُوجٌ","meaning":"going out","reading":"khurūjun"},
+        {"id":"vocab-julus","kind":"vocabulary","priority":"optional","sourceSection":"A useful contrast with ordinary maṣdar","objective":"Retain sitting with the corrected short case vowel.","word":"جُلُوسٌ","meaning":"sitting","reading":"julūsun"},
+        {"id":"appointment-context","kind":"rule","priority":"optional","sourceSection":"A useful contrast with ordinary maṣdar","objective":"Select the appointed-time noun in a possession sentence.","format":"cloze","prompt":"Complete “we have an appointment”: لَنَا ___.","answer":"مَوْعِدٌ"}
+      ],
+      "exclusions": [
+        {"sourceSection":"Sources","reason":"Reference links only."},
+        {"sourceSection":"Three related terms","reason":"The first quiz repeats the three functional interpretations; grammatical labels are explained rather than captured as formatting fragments."},
+        {"sourceSection":"Form I patterns","reason":"The second quiz repeats the council lexical target; verb/root names support derivation and are not an exhaustive vocabulary assignment."},
+        {"sourceSection":"A useful contrast with ordinary maṣdar","reason":"The final quiz and paired table repeat the explicit lexical contrasts and time application."}
+      ]
+    },
+    {
+      "lessonId": "dialect-future-continuous",
+      "teachingPoints": [
+        {"id":"levantine-future","kind":"rule","priority":"essential","sourceSection":"Future markers","objective":"Complete a Levantine future expression without MSA mood vowels.","format":"cloze","prompt":"Complete Levantine “I will go”: رَحْ ___.","answer":"أَرُوحْ"},
+        {"id":"future-variety-contrast","kind":"concept","priority":"essential","sourceSection":"Future markers","objective":"Map the future markers to their actual standard or regional variety.","format":"qa","prompt":"Which future markers are contrasted for MSA, Levantine-style and Egyptian-style speech?","answer":"MSA سَـ or سَوْفَ; Levantine رَحْ; Egyptian حَـ."},
+        {"id":"levantine-continuous","kind":"rule","priority":"essential","sourceSection":"Continuous markers","objective":"Complete the taught ongoing-study phrase in its specified variety.","format":"cloze","prompt":"Complete Levantine “I am studying”: عَمْ ___.","answer":"بِدْرُسْ"},
+        {"id":"iraqi-continuous","kind":"rule","priority":"optional","sourceSection":"Continuous markers","objective":"Recognize the Iraqi continuous marker rather than substituting a Levantine one.","format":"cloze","prompt":"Supply the Iraqi-style continuous marker: ___ أَكْتُبْ — I am writing.","answer":"دَا"},
+        {"id":"vocab-dilwaqti","kind":"vocabulary","priority":"optional","sourceSection":"Continuous markers","objective":"Retain the Egyptian now adverb as genuine vocabulary.","word":"دِلْوَقْتِي","meaning":"now; Egyptian","reading":"dilwaʾtī"},
+        {"id":"msa-imperfect-context","kind":"concept","priority":"essential","sourceSection":"How this differs from MSA","objective":"Distinguish habitual and ongoing MSA readings through context rather than importing a dialect particle.","format":"qa","prompt":"Does MSA need عَمْ to distinguish studying now from studying every day?","answer":"No. Its imperfect can express both; الآنَ and كُلَّ يَوْمٍ clarify ongoing versus habitual meaning."},
+        {"id":"vocab-alana","kind":"vocabulary","priority":"optional","sourceSection":"How this differs from MSA","objective":"Retain the standard now adverb.","word":"الآنَ","meaning":"now; MSA","reading":"al-āna"},
+        {"id":"vocab-ghadan","kind":"vocabulary","priority":"optional","sourceSection":"How this differs from MSA","objective":"Retain tomorrow as the future-context adverb.","word":"غَدًا","meaning":"tomorrow","reading":"ghadan"},
+        {"id":"egyptian-future-recognition","kind":"rule","priority":"optional","sourceSection":"Variation and recognition","objective":"Classify the Egyptian future travel form from its prefix.","format":"qa","prompt":"Classify حَسَافِرْ (ḥa-sāfir).","answer":"Future dialect form — I will travel"},
+        {"id":"variation-not-fixed-spelling","kind":"concept","priority":"optional","sourceSection":"Variation and recognition","objective":"Keep practical spellings qualified by local and speaker variation.","format":"qa","prompt":"Should the future and continuous spellings in this lesson be treated as one fixed system for every Arabic speaker?","answer":"No. They are recognition patterns; city, generation and spelling habits vary."}
+      ],
+      "exclusions": [
+        {"sourceSection":"Sources","reason":"Reference links only."},
+        {"sourceSection":"Future markers","reason":"The first quiz and letter/tomorrow examples repeat the regional future-marker map."},
+        {"sourceSection":"Continuous markers","reason":"The second quiz and Egyptian-now row repeat the continuous and contextual distinctions."},
+        {"sourceSection":"Variation and recognition","reason":"The final quiz and travel/eat/arrive comparisons reinforce the inventoried variation principle and marker recognition."}
+      ]
+    },
+    {
+      "lessonId": "hamza-spelling",
+      "teachingPoints": [
+        {"id":"medial-vowel-ranking","kind":"concept","priority":"essential","sourceSection":"Core idea","objective":"Recall the medial vowel hierarchy while keeping its positional scope qualified.","format":"qa","prompt":"What is the short-vowel strength order used to choose a middle hamza seat?","answer":"Kasra (i), then ḍamma (u), then fatḥa (a)."},
+        {"id":"vocab-akala","kind":"vocabulary","priority":"optional","sourceSection":"Core idea","objective":"Retain the initial-fatḥa hamza verb ate.","word":"أَكَلَ","meaning":"he ate","reading":"ʾakala"},
+        {"id":"vocab-umm","kind":"vocabulary","priority":"optional","sourceSection":"Core idea","objective":"Retain mother as the initial-ḍamma example.","word":"أُمٌّ","meaning":"mother","reading":"ʾummun"},
+        {"id":"vocab-iman","kind":"vocabulary","priority":"optional","sourceSection":"Core idea","objective":"Retain faith as a genuine initial hamzat al-qaṭʿ with kasra.","word":"إِيمَانٌ","meaning":"faith","reading":"ʾīmānun"},
+        {"id":"vocab-biah","kind":"vocabulary","priority":"optional","sourceSection":"Seats in practice","objective":"Retain environment with its yāʾ-seat hamza.","word":"بِيئَةٌ","meaning":"environment","reading":"bīʾatun"},
+        {"id":"vocab-sual","kind":"vocabulary","priority":"optional","sourceSection":"Seats in practice","objective":"Retain question with its wāw-seat spelling.","word":"سُؤَالٌ","meaning":"question","reading":"suʾālun"},
+        {"id":"vocab-mumin","kind":"vocabulary","priority":"optional","sourceSection":"Seats in practice","objective":"Retain believer with the preceding ḍamma.","word":"مُؤْمِنٌ","meaning":"believer","reading":"muʾminun"},
+        {"id":"vocab-ras","kind":"vocabulary","priority":"optional","sourceSection":"Seats in practice","objective":"Retain head with its alif-seat hamza.","word":"رَأْسٌ","meaning":"head","reading":"raʾsun"},
+        {"id":"vocab-sama","kind":"vocabulary","priority":"optional","sourceSection":"Seats in practice","objective":"Retain sky as a final line-hamza word.","word":"سَمَاءٌ","meaning":"sky","reading":"samāʾun"},
+        {"id":"vocab-shay","kind":"vocabulary","priority":"optional","sourceSection":"Seats in practice","objective":"Retain thing with hamza following a vowelless glide.","word":"شَيْءٌ","meaning":"thing","reading":"shayʾun"},
+        {"id":"initial-kasra-seat","kind":"rule","priority":"essential","sourceSection":"Usage notes","objective":"Write below-alif hamza for faith without teaching the erroneous qaṭʿ spelling of name.","format":"cloze","prompt":"Supply the beginning of “faith”: ___يمَانٌ.","answer":"إِ","explanation":"إِيمَانٌ (ʾīmānun) starts with hamzat al-qaṭʿ and kasra. اسْمٌ instead has hamzat al-waṣl and is not spelled إِسْمٌ."},
+        {"id":"final-hamza-seat","kind":"rule","priority":"optional","sourceSection":"Usage notes","objective":"Apply the final-hamza seat choice after fatḥa rather than the medial comparison rule.","format":"cloze","prompt":"Supply the final hamza and nominative ending in “principle”: مَبْدَ___.","answer":"أٌ"},
+        {"id":"vocab-mabda","kind":"vocabulary","priority":"optional","sourceSection":"Usage notes","objective":"Retain principle as the final alif-seat example.","word":"مَبْدَأٌ","meaning":"principle","reading":"mabdaʾun"},
+        {"id":"passive-medial-seat","kind":"rule","priority":"essential","sourceSection":"Practice patterns","objective":"Choose the middle hamza seat from its kasra without duplicating the full verb in the blank.","format":"cloze","prompt":"Supply the middle hamza with its vowel in “he was asked”: سُ___لَ.","answer":"ئِ"},
+        {"id":"long-a-line-hamza","kind":"rule","priority":"optional","sourceSection":"Practice patterns","objective":"Preserve the line-hamza exception after long ā in reading.","format":"cloze","prompt":"Supply the hamza and its vowel in “reading”: قِرَا___ةٌ.","answer":"ءَ"},
+        {"id":"vocab-saala","kind":"vocabulary","priority":"optional","sourceSection":"Practice patterns","objective":"Retain asked as the active member of the vowel/seat contrast.","word":"سَأَلَ","meaning":"he asked","reading":"saʾala"},
+        {"id":"vocab-suila","kind":"vocabulary","priority":"optional","sourceSection":"Practice patterns","objective":"Retain was asked as the passive member of the contrast.","word":"سُئِلَ","meaning":"he was asked","reading":"suʾila"},
+        {"id":"vocab-qiraah","kind":"vocabulary","priority":"optional","sourceSection":"Practice patterns","objective":"Retain the complete reading noun rather than a hamza fragment.","word":"قِرَاءَةٌ","meaning":"reading","reading":"qirāʾatun"}
+      ],
+      "exclusions": [
+        {"sourceSection":"Sources","reason":"Reference links only."},
+        {"sourceSection":"Seats in practice","reason":"The quiz and initial brother/teacher examples repeat the inventoried seat conditions; isolated seats and vowel labels remain phonological scaffolding, not word candidates."},
+        {"sourceSection":"Practice patterns","reason":"The second quiz and repeated believer/asked examples assess the same seat choices already inventoried."}
+      ]
+    },
+    {
+      "lessonId": "taa-marbuta-maftuha",
+      "teachingPoints": [
+        {"id":"vocab-madrasah","kind":"vocabulary","priority":"optional","sourceSection":"Core idea","objective":"Retain school as the tied-tāʾ anchor.","word":"مَدْرَسَةٌ","meaning":"school","reading":"madrasatun"},
+        {"id":"vocab-bayt","kind":"vocabulary","priority":"optional","sourceSection":"Core idea","objective":"Retain house as a fixed open-tāʾ word.","word":"بَيْتٌ","meaning":"house","reading":"baytun"},
+        {"id":"vocab-talibah","kind":"vocabulary","priority":"optional","sourceSection":"Forms and examples","objective":"Retain female student independently of suffix fragments.","word":"طَالِبَةٌ","meaning":"female student","reading":"ṭālibatun"},
+        {"id":"vocab-waqt","kind":"vocabulary","priority":"optional","sourceSection":"Forms and examples","objective":"Retain time as a fixed final-t word.","word":"وَقْتٌ","meaning":"time","reading":"waqtun"},
+        {"id":"pause-open-t","kind":"concept","priority":"essential","sourceSection":"Core idea","objective":"Contrast the two final letters' pausal pronunciations.","format":"qa","prompt":"In pause, does the final ت in بَيْتٌ behave like the ة in مَدْرَسَةٌ?","answer":"No. بَيْت keeps t, while مَدْرَسَة usually ends in -a or -ah."},
+        {"id":"connected-t-reading","kind":"rule","priority":"essential","sourceSection":"Usage notes","objective":"Read tied tāʾ with its t in a fully inflected connected phrase.","format":"cloze","prompt":"Read in connection: طَالِبَةٌ جَدِيدَةٌ = ___.","answer":"ṭālibatun jadīdatun"},
+        {"id":"vocab-bint","kind":"vocabulary","priority":"optional","sourceSection":"Common contrasts","objective":"Retain girl with its lexical open-t spelling.","word":"بِنْتٌ","meaning":"girl","reading":"bintun"},
+        {"id":"vocab-ukht","kind":"vocabulary","priority":"optional","sourceSection":"Common contrasts","objective":"Retain sister with its lexical open-t spelling.","word":"أُخْتٌ","meaning":"sister","reading":"ʾukhtun"},
+        {"id":"vocab-ghurfah","kind":"vocabulary","priority":"optional","sourceSection":"Common contrasts","objective":"Retain room as a tied-tāʾ noun.","word":"غُرْفَةٌ","meaning":"room","reading":"ghurfatun"},
+        {"id":"vocab-sayyarah","kind":"vocabulary","priority":"optional","sourceSection":"Common contrasts","objective":"Retain car as a second tied-tāʾ noun.","word":"سَيَّارَةٌ","meaning":"car","reading":"sayyāratun"},
+        {"id":"gender-not-letter-test","kind":"concept","priority":"essential","sourceSection":"Common contrasts","objective":"Avoid treating feminine gender as proof of a tied-tāʾ spelling.","format":"qa","prompt":"Must the feminine nouns for girl and sister end in ة?","answer":"No. بِنْتٌ and أُخْتٌ end in open ت."},
+        {"id":"suffix-opens-ta","kind":"rule","priority":"essential","sourceSection":"Common contrasts","objective":"Expose the written t before a possessive suffix while keeping the base spelling distinct.","format":"cloze","prompt":"Add “her” to مَدْرَسَةٌ, retaining nominative case: ___.","answer":"مَدْرَسَتُهَا"}
+      ],
+      "exclusions": [
+        {"sourceSection":"Sources","reason":"Reference links only."},
+        {"sourceSection":"Forms and examples","reason":"The first quiz and verb/plural ending rows repeat the t-versus-pausal-a contrast; endings are grammatical examples, not dictionary words."},
+        {"sourceSection":"Common contrasts","reason":"The final quiz repeats tied-tāʾ recognition; the short t-wakes-up cue remains a hint on the connected-reading item rather than a duplicate recall task."}
+      ]
+    },
+    {
+      "lessonId": "sun-moon-letters",
+      "teachingPoints": [
+        {"id":"sun-letter-inventory","kind":"concept","priority":"optional","sourceSection":"Letter groups","objective":"Recall the actual assimilation-triggering consonant set.","format":"qa","prompt":"Which consonants are in the sun-letter group taught here?","answer":"ت ث د ذ ر ز س ش ص ض ط ظ ل ن"},
+        {"id":"moon-letter-inventory","kind":"concept","priority":"optional","sourceSection":"Letter groups","objective":"Recall the complementary article-lām-retaining group.","format":"qa","prompt":"Which letters are listed as moon letters here?","answer":"ا ب ج ح خ ع غ ف ق ك م هـ و ي"},
+        {"id":"vocab-shams","kind":"vocabulary","priority":"optional","sourceSection":"Core idea","objective":"Retain sun with its assimilated article reading.","word":"الشَّمْسُ","meaning":"the sun","reading":"ash-shamsu"},
+        {"id":"vocab-qamar","kind":"vocabulary","priority":"optional","sourceSection":"Core idea","objective":"Retain moon with its audible article-lām.","word":"الْقَمَرُ","meaning":"the moon","reading":"al-qamaru"},
+        {"id":"vocab-dars","kind":"vocabulary","priority":"optional","sourceSection":"Letter groups","objective":"Retain lesson as the dāl assimilation example.","word":"الدَّرْسُ","meaning":"the lesson","reading":"ad-darsu"},
+        {"id":"vocab-kitab","kind":"vocabulary","priority":"optional","sourceSection":"Letter groups","objective":"Retain book as the kāf non-assimilation example.","word":"الْكِتَابُ","meaning":"the book","reading":"al-kitābu"},
+        {"id":"sun-letter-reading","kind":"rule","priority":"essential","sourceSection":"In connected speech","objective":"Actually read the doubled sun consonant rather than merely naming assimilation.","format":"cloze","prompt":"Read the definite noun: الدَّرْسُ = ___ .","answer":"ad-darsu"},
+        {"id":"connected-article-vowel","kind":"rule","priority":"essential","sourceSection":"In connected speech","objective":"Drop the article's initial vowel after a preceding vowel while retaining doubling.","format":"cloze","prompt":"Transliterate in connection: فِي الشَّمْسِ = ___.","answer":"fī sh-shamsi"},
+        {"id":"moon-letter-reading","kind":"rule","priority":"essential","sourceSection":"Why spelling still matters","objective":"Read the article-lām before a moon letter.","format":"cloze","prompt":"Read the definite noun: الْقَلَمُ = ___ .","answer":"al-qalamu"},
+        {"id":"assimilation-not-spelling-loss","kind":"concept","priority":"essential","sourceSection":"Why spelling still matters","objective":"Separate sound assimilation from written article and definiteness.","format":"qa","prompt":"Does assimilation before a sun letter remove the written ل or make the noun indefinite?","answer":"No. The written article remains and the noun stays definite."}
+      ],
+      "exclusions": [
+        {"sourceSection":"Sources","reason":"Reference links only."},
+        {"sourceSection":"Letter groups","reason":"The first quiz repeats assimilation recognition; isolated consonants are group recall, not vocabulary."},
+        {"sourceSection":"Why spelling still matters","reason":"The second quiz and compound door/manager phrases repeat article recognition and connected reading."}
+      ]
+    },
+    {
+      "lessonId": "the-many-alifs",
+      "teachingPoints": [
+        {"id":"madda-sound","kind":"concept","priority":"essential","sourceSection":"Core idea","objective":"Decode madda as a sound combination rather than confusing it with maqṣūra.","format":"qa","prompt":"What two sound elements does آ represent in آدَمُ?","answer":"A glottal stop followed by long ā: ʾā."},
+        {"id":"vocab-ism","kind":"vocabulary","priority":"optional","sourceSection":"Forms and examples","objective":"Retain name with the correctly marked connecting hamza.","word":"ٱسْمٌ","meaning":"name","reading":"ismun"},
+        {"id":"vocab-ibn","kind":"vocabulary","priority":"optional","sourceSection":"Forms and examples","objective":"Retain son as a second connecting-hamza noun.","word":"ٱبْنٌ","meaning":"son","reading":"ibnun"},
+        {"id":"vocab-hadha","kind":"vocabulary","priority":"optional","sourceSection":"Forms and examples","objective":"Retain masculine this with its dagger-alif spelling.","word":"هٰذَا","meaning":"this; masculine singular","reading":"hādhā"},
+        {"id":"vocab-dhalika","kind":"vocabulary","priority":"optional","sourceSection":"Forms and examples","objective":"Retain masculine that with its taught long-vowel sign.","word":"ذٰلِكَ","meaning":"that; masculine singular","reading":"dhālika"},
+        {"id":"maqsura-reading","kind":"rule","priority":"essential","sourceSection":"Usage notes","objective":"Read final alif maqṣūra as long ā, not y.","format":"cloze","prompt":"Read عَلَى as ___ .","answer":"ʿalā"},
+        {"id":"wasl-connected-reading","kind":"rule","priority":"essential","sourceSection":"Usage notes","objective":"Remove the initial helping vowel after wa- without inserting a glottal stop.","format":"cloze","prompt":"Transliterate the connected phrase وَٱسْمُهُ عَلِيٌّ: ___.","answer":"wa-smuhu ʿaliyyun"},
+        {"id":"vocab-ala","kind":"vocabulary","priority":"optional","sourceSection":"Forms and examples","objective":"Retain on as a complete preposition rather than a final-alif fragment.","word":"عَلَى","meaning":"on","reading":"ʿalā"},
+        {"id":"dagger-alif-function","kind":"concept","priority":"essential","sourceSection":"Practice patterns","objective":"Explain the superscript alif's vowel-length function.","format":"qa","prompt":"What does the small vertical sign over ه in هٰذَا mark?","answer":"A long ā, written as dagger alif rather than a full-size alif."},
+        {"id":"vocab-ila","kind":"vocabulary","priority":"optional","sourceSection":"Practice patterns","objective":"Retain to as another final-maqṣūra word.","word":"إِلَى","meaning":"to","reading":"ʾilā"},
+        {"id":"vocab-quran","kind":"vocabulary","priority":"optional","sourceSection":"Practice patterns","objective":"Retain the named text with its internal hamza-plus-long-ā reading.","word":"قُرْآنٌ","meaning":"Qurʾān","reading":"qurʾānun"}
+      ],
+      "exclusions": [
+        {"sourceSection":"Sources","reason":"Reference links only."},
+        {"sourceSection":"Forms and examples","reason":"The first quiz and Adam/Moses examples repeat the four alif functions; isolated signs remain script concepts rather than lexical words."},
+        {"sourceSection":"Practice patterns","reason":"The second quiz and Qurʾānic-style article spelling reinforce connecting-hamza behavior; no new orthographic system is introduced."}
+      ]
+    },
+    {
+      "lessonId": "common-mistakes",
+      "teachingPoints": [
+        {"id":"vocab-tarif","kind":"vocabulary","priority":"optional","sourceSection":"Core idea","objective":"Retain the contextual definiteness term without assigning it every English sense of definition.","word":"تَعْرِيفٌ","meaning":"definiteness; making definite in this grammar context","reading":"taʿrīfun"},
+        {"id":"vocab-ittifaq","kind":"vocabulary","priority":"optional","sourceSection":"Core idea","objective":"Retain agreement as a genuine glossed noun.","word":"اِتِّفَاقٌ","meaning":"agreement","reading":"ittifāqun"},
+        {"id":"vocab-idafah","kind":"vocabulary","priority":"optional","sourceSection":"Core idea","objective":"Retain the construct-possession term with its contextual qualification.","word":"إِضَافَةٌ","meaning":"construct possession; iḍāfa in this grammar context","reading":"ʾiḍāfatun"},
+        {"id":"vocab-harf-jarr","kind":"vocabulary","priority":"optional","sourceSection":"Core idea","objective":"Retain the complete preposition term rather than its disconnected parts.","word":"حَرْفُ جَرٍّ","meaning":"preposition","reading":"ḥarfu jarrin"},
+        {"id":"attributive-definiteness-repair","kind":"rule","priority":"essential","sourceSection":"Frequent traps","objective":"Repair definiteness agreement without turning the noun phrase into a predicate sentence.","format":"cloze","prompt":"Complete “the big house” as an attributive phrase: الْبَيْتُ ___.","answer":"الْكَبِيرُ"},
+        {"id":"preposition-genitive-repair","kind":"rule","priority":"essential","sourceSection":"Frequent traps","objective":"Choose the genitive form of house after a preposition.","format":"cloze","prompt":"Complete “in the house” with the correct noun ending: فِي ___.","answer":"الْبَيْتِ"},
+        {"id":"nonhuman-predicate-repair","kind":"rule","priority":"essential","sourceSection":"Frequent traps","objective":"Repair the number/gender mismatch in a non-human plural predicate.","format":"cloze","prompt":"Complete “the books are new”: الْكُتُبُ ___.","answer":"جَدِيدَةٌ"},
+        {"id":"article-removes-tanwin","kind":"rule","priority":"essential","sourceSection":"Usage notes","objective":"Remove indefinite tanwīn while adding the article.","format":"cloze","prompt":"Make بَيْتٌ (baytun) — a house definite: ___ .","answer":"الْبَيْتُ"},
+        {"id":"idafa-possessor-repair","kind":"rule","priority":"essential","sourceSection":"A quick checking routine","objective":"Repair the possessor's case in the construct phrase.","format":"cloze","prompt":"Complete “the student's book”: كِتَابُ ___.","answer":"الطَّالِبِ"},
+        {"id":"checking-routine","kind":"concept","priority":"optional","sourceSection":"A quick checking routine","objective":"Apply a checking sequence before guessing case vowels.","format":"qa","prompt":"What order does this lesson recommend for checking a sentence's noun endings?","answer":"Find particles, identify noun relationships, then check definiteness and endings."}
+      ],
+      "exclusions": [
+        {"sourceSection":"Sources","reason":"Reference links only."},
+        {"sourceSection":"Frequent traps","reason":"The first quiz and marked incorrect forms assess the five separately inventoried repairs; incorrect examples are never lexical targets."},
+        {"sourceSection":"A quick checking routine","reason":"The final quiz and familiar preposition list repeat construct case and the checking routine."}
+      ]
+    },
+    {
+      "lessonId": "loanwords-arabization",
+      "teachingPoints": [
+        {"id":"arabization-not-ban","kind":"concept","priority":"essential","sourceSection":"Core idea","objective":"Understand borrowing adaptation rather than a prohibition on foreign words.","format":"qa","prompt":"Does taʿrīb exclude international vocabulary from MSA?","answer":"No. It adapts borrowed words to Arabic sounds, spelling and sometimes morphology."},
+        {"id":"borrowed-sound-substitutions","kind":"concept","priority":"optional","sourceSection":"Adaptation patterns","objective":"Recall the illustrated p/v substitutions as qualified tendencies.","format":"qa","prompt":"Which substitutions for foreign p and v are illustrated by Pakistan and video?","answer":"p often becomes ب (b), and v often becomes ف (f)."},
+        {"id":"film-broken-plural","kind":"rule","priority":"essential","sourceSection":"Adaptation patterns","objective":"Produce the conventional native plural of the borrowed film noun.","format":"cloze","prompt":"Give the taught plural of فِلْمٌ (film): ___.","answer":"أَفْلَامٌ"},
+        {"id":"vocab-tarib","kind":"vocabulary","priority":"optional","sourceSection":"Loanwords & Arabization (Taʿrīb)","objective":"Retain the process noun naming adaptation to Arabic.","word":"تَعْرِيبٌ","meaning":"Arabization; adapting a foreign word to Arabic","reading":"taʿrībun"},
+        {"id":"vocab-bank","kind":"vocabulary","priority":"optional","sourceSection":"Core idea","objective":"Retain bank with its taught nominative tanwīn.","word":"بَنْكٌ","meaning":"bank","reading":"bankun"},
+        {"id":"vocab-film","kind":"vocabulary","priority":"optional","sourceSection":"Core idea","objective":"Retain film as the singular loanword.","word":"فِلْمٌ","meaning":"film","reading":"filmun"},
+        {"id":"vocab-television","kind":"vocabulary","priority":"optional","sourceSection":"Core idea","objective":"Retain television with the vocalization used to illustrate cluster adaptation.","word":"تِلِفِزْيُونٌ","meaning":"television","reading":"tilifizyūnun"},
+        {"id":"vocab-internet","kind":"vocabulary","priority":"optional","sourceSection":"Core idea","objective":"Retain the taught internet borrowing.","word":"إِنْتَرْنِتٌ","meaning":"internet","reading":"ʾinternetun"},
+        {"id":"vocab-video","kind":"vocabulary","priority":"optional","sourceSection":"Adaptation patterns","objective":"Retain video as the f-for-v adaptation example.","word":"فِيدْيُو","meaning":"video","reading":"fīdyū"},
+        {"id":"loanword-case-ending","kind":"rule","priority":"essential","sourceSection":"Usage notes","objective":"Inflect a borrowed ordinary noun rather than treating all loans as indeclinable.","format":"cloze","prompt":"Add nominative tanwīn to بَنْك (bank) — bank: ___ .","answer":"بَنْكٌ"},
+        {"id":"loanword-register-choice","kind":"concept","priority":"optional","sourceSection":"Usage notes","objective":"Preserve country/register variation between native and borrowed technical vocabulary.","format":"qa","prompt":"Does the presence of حَاسُوبٌ make كُمْبْيُوتَرٌ impossible Arabic?","answer":"No. Both mean computer; choice varies by country and register."},
+        {"id":"vocab-hatif","kind":"vocabulary","priority":"optional","sourceSection":"Usage notes","objective":"Retain the Arabic telephone noun.","word":"هَاتِفٌ","meaning":"telephone","reading":"hātifun"},
+        {"id":"vocab-tilifun","kind":"vocabulary","priority":"optional","sourceSection":"Usage notes","objective":"Retain the borrowed telephone alternative.","word":"تِلِفُونٌ","meaning":"telephone; borrowed alternative","reading":"tilifūnun"},
+        {"id":"vocab-hasub","kind":"vocabulary","priority":"optional","sourceSection":"Usage notes","objective":"Retain the Arabic computer coinage.","word":"حَاسُوبٌ","meaning":"computer; Arabic coinage","reading":"ḥāsūbun"},
+        {"id":"vocab-kumbyutar","kind":"vocabulary","priority":"optional","sourceSection":"Usage notes","objective":"Retain the borrowed computer alternative without banning it.","word":"كُمْبْيُوتَرٌ","meaning":"computer; borrowed alternative","reading":"kumbyūtarun"},
+        {"id":"canadian-nisba","kind":"rule","priority":"optional","sourceSection":"Arabized families","objective":"Derive Canadian while dropping the source name's final ā.","format":"cloze","prompt":"Make كَنَدَا (kanadā) — Canada into Canadian: ___ .","answer":"كَنَدِيٌّ","explanation":"كَنَدِيٌّ (kanadiyyun) drops the final ā before adding -iyyun. Nisba formation is not invariably simple suffix attachment to an unchanged base."},
+        {"id":"vocab-democracy","kind":"vocabulary","priority":"optional","sourceSection":"Arabized families","objective":"Retain the abstract democracy noun as distinct from the adjective.","word":"دِيمُقْرَاطِيَّةٌ","meaning":"democracy","reading":"dīmuqrāṭiyyatun"},
+        {"id":"vocab-democratic","kind":"vocabulary","priority":"optional","sourceSection":"Arabized families","objective":"Retain the related democratic adjective.","word":"دِيمُقْرَاطِيٌّ","meaning":"democratic","reading":"dīmuqrāṭiyyun"},
+        {"id":"vocab-televisual","kind":"vocabulary","priority":"optional","sourceSection":"Arabized families","objective":"Retain the productive television-related nisba adjective.","word":"تِلِفِزْيُونِيٌّ","meaning":"televisual; television-related","reading":"tilifizyūniyyun"}
+      ],
+      "exclusions": [
+        {"sourceSection":"Sources","reason":"Reference links only."},
+        {"sourceSection":"Adaptation patterns","reason":"The first quiz and country example repeat adaptation tendencies; sound symbols and the nisba suffix are grammatical material, not lexical fragments."},
+        {"sourceSection":"Arabized families","reason":"The second quiz and repeated television base assess already inventoried pluralization and derived-family meanings."}
+      ]
+    },
+    {
+      "lessonId": "false-friends",
+      "teachingPoints": [
+        {"id":"vocab-akhiran","kind":"vocabulary","priority":"essential","sourceSection":"Common traps","objective":"Retain finally rather than substituting recently or currently.","word":"أَخِيرًا","meaning":"finally; at last","reading":"ʾakhīran"},
+        {"id":"vocab-haliyyan","kind":"vocabulary","priority":"optional","sourceSection":"Common traps","objective":"Retain the present-time adverb.","word":"حَالِيًّا","meaning":"currently","reading":"ḥāliyyan"},
+        {"id":"vocab-filiyyan","kind":"vocabulary","priority":"essential","sourceSection":"Common traps","objective":"Retain actually/in-practice independently of the time adverbs.","word":"فِعْلِيًّا","meaning":"actually; in practice","reading":"fiʿliyyan"},
+        {"id":"vocab-kulliyyah","kind":"vocabulary","priority":"optional","sourceSection":"Common traps","objective":"Retain the academic institution noun rather than quality.","word":"كُلِّيَّةٌ","meaning":"college; faculty","reading":"kulliyyatun"},
+        {"id":"vocab-jamiah","kind":"vocabulary","priority":"optional","sourceSection":"Common traps","objective":"Retain university with its feminine lexical ending.","word":"جَامِعَةٌ","meaning":"university","reading":"jāmiʿatun"},
+        {"id":"vocab-jami","kind":"vocabulary","priority":"optional","sourceSection":"Common traps","objective":"Retain mosque without confusing its gathering root with university.","word":"جَامِعٌ","meaning":"mosque","reading":"jāmiʿun"},
+        {"id":"vocab-majallah","kind":"vocabulary","priority":"optional","sourceSection":"Common traps","objective":"Retain magazine/journal in the publication sense.","word":"مَجَلَّةٌ","meaning":"magazine; journal","reading":"majallatun"},
+        {"id":"currently-not-finally","kind":"rule","priority":"essential","sourceSection":"Usage notes","objective":"Produce currently with the appropriate Arabic adverb.","format":"cloze","prompt":"Translate currently: ___ .","answer":"حَالِيًّا"},
+        {"id":"university-mosque-contrast","kind":"concept","priority":"essential","sourceSection":"Usage notes","objective":"Keep the two related institution nouns semantically distinct.","format":"qa","prompt":"What distinction must you preserve between جَامِعَةٌ and جَامِعٌ?","answer":"جَامِعَةٌ is a university; جَامِعٌ is a mosque."},
+        {"id":"vocab-munasabah","kind":"vocabulary","priority":"optional","sourceSection":"Usage notes","objective":"Retain occasion/event as a contextual lexical meaning.","word":"مُنَاسَبَةٌ","meaning":"occasion; event","reading":"munāsabatun"},
+        {"id":"faculty-collocation","kind":"rule","priority":"optional","sourceSection":"Checking collocations","objective":"Interpret faculty from the conventional medicine collocation.","format":"cloze","prompt":"كُلِّيَّةُ الطِّبِّ (kulliyyatu ṭ-ṭibbi) means ___ .","answer":"faculty of medicine"}
+      ],
+      "exclusions": [
+        {"sourceSection":"Sources","reason":"Reference links only."},
+        {"sourceSection":"Common traps","reason":"The first quiz repeats the central adverb distinction; all six trap rows have explicit lexical meanings."},
+        {"sourceSection":"Checking collocations","reason":"The second quiz and city/happy-occasion collocations reinforce the same lexical contrasts rather than adding new grammar rules."}
+      ]
+    },
+    {
+      "lessonId": "politeness-register",
+      "teachingPoints": [
+        {"id":"vocab-hadratuka","kind":"vocabulary","priority":"optional","sourceSection":"Core idea","objective":"Retain the masculine polite second-person expression.","word":"حَضْرَتُكَ","meaning":"your presence; polite you to a man","reading":"ḥaḍratuka"},
+        {"id":"vocab-hadratuki","kind":"vocabulary","priority":"optional","sourceSection":"Core idea","objective":"Retain the feminine polite second-person ending.","word":"حَضْرَتُكِ","meaning":"your presence; polite you to a woman","reading":"ḥaḍratuki"},
+        {"id":"vocab-sayyid","kind":"vocabulary","priority":"optional","sourceSection":"Core idea","objective":"Retain the masculine courtesy title.","word":"سَيِّدٌ","meaning":"Mr.; sir","reading":"sayyidun"},
+        {"id":"vocab-sayyidah","kind":"vocabulary","priority":"optional","sourceSection":"Core idea","objective":"Retain the feminine courtesy title.","word":"سَيِّدَةٌ","meaning":"Ms.; madam","reading":"sayyidatun"},
+        {"id":"vocab-ustadh","kind":"vocabulary","priority":"optional","sourceSection":"Core idea","objective":"Retain the professor/teacher title.","word":"أُسْتَاذٌ","meaning":"professor; teacher","reading":"ʾustādhun"},
+        {"id":"vocab-duktur","kind":"vocabulary","priority":"optional","sourceSection":"Core idea","objective":"Retain doctor as a form of address.","word":"دُكْتُورٌ","meaning":"doctor","reading":"duktūrun"},
+        {"id":"vocab-please-man","kind":"vocabulary","priority":"optional","sourceSection":"Request formulas","objective":"Retain the please formula addressed to one man.","word":"مِنْ فَضْلِكَ","meaning":"please; to one man","reading":"min faḍlika"},
+        {"id":"vocab-please-woman","kind":"vocabulary","priority":"essential","sourceSection":"Request formulas","objective":"Retain the gender-sensitive please formula addressed to one woman.","word":"مِنْ فَضْلِكِ","meaning":"please; to one woman","reading":"min faḍliki"},
+        {"id":"vocab-law-samahta","kind":"vocabulary","priority":"optional","sourceSection":"Request formulas","objective":"Retain the conditional-looking polite attention-getter as a complete phrase.","word":"لَوْ سَمَحْتَ","meaning":"if you please; to one man","reading":"law samaḥta"},
+        {"id":"vocab-many-thanks","kind":"vocabulary","priority":"essential","sourceSection":"Request formulas","objective":"Retain the complete warm thanks expression.","word":"شُكْرًا جَزِيلًا","meaning":"thank you very much; many thanks","reading":"shukran jazīlan"},
+        {"id":"vocab-udhran","kind":"vocabulary","priority":"optional","sourceSection":"Request formulas","objective":"Retain excuse me for apology or interruption.","word":"عُذْرًا","meaning":"excuse me; an apology or interruption","reading":"ʿudhran"},
+        {"id":"soften-imperative","kind":"rule","priority":"essential","sourceSection":"Usage notes","objective":"Add just the request softener without duplicating a complete imperative in the reveal.","format":"cloze","prompt":"Use the مِنْ request softener addressing a man: ___، اِفْتَحِ الْبَابَ.","answer":"مِنْ فَضْلِكَ"},
+        {"id":"title-before-name","kind":"rule","priority":"optional","sourceSection":"Register choices","objective":"Place the title before the name in a specified nominative noun phrase.","format":"cloze","prompt":"Write the title-and-name phrase “Mr. Ahmad” in the nominative: ___.","answer":"السَّيِّدُ أَحْمَدُ"},
+        {"id":"register-social-fit","kind":"concept","priority":"essential","sourceSection":"Register choices","objective":"Choose socially appropriate indirectness and register rather than equating correctness with politeness.","format":"qa","prompt":"Can a grammatically correct direct command still be too blunt, and must friendly Arabic always use formal MSA?","answer":"Yes, a direct command can be too blunt; friendly dialect speech may be warmer than formal MSA."},
+        {"id":"vocab-baddi","kind":"vocabulary","priority":"optional","sourceSection":"Register choices","objective":"Retain the Levantine want expression with its regional label.","word":"بَدِّي","meaning":"I want; Levantine","reading":"baddī"},
+        {"id":"vocab-can-you","kind":"vocabulary","priority":"optional","sourceSection":"Register choices","objective":"Retain the fuller indirect ability question.","word":"هَلْ يُمْكِنُكَ؟","meaning":"can you?; addressing a man","reading":"hal yumkinuka?"},
+        {"id":"vocab-mumkin","kind":"vocabulary","priority":"optional","sourceSection":"Register choices","objective":"Retain the shorter conversational request question.","word":"مُمْكِن؟","meaning":"possible?; an indirect conversational request","reading":"mumkin?"},
+        {"id":"vocab-tafaddal","kind":"vocabulary","priority":"optional","sourceSection":"Register choices","objective":"Retain go ahead as an invitation rather than a blunt take command.","word":"تَفَضَّلْ","meaning":"please go ahead; invitation to a man","reading":"tafaḍḍal"}
+      ],
+      "exclusions": [
+        {"sourceSection":"Sources","reason":"Reference links only."},
+        {"sourceSection":"Request formulas","reason":"The first quiz repeats the explicitly inventoried feminine please expression."},
+        {"sourceSection":"Register choices","reason":"The second quiz and direct want/take contrasts reinforce the social-fit principle and explicit invitation/request lexicon."}
+      ]
+    },
+    {
+      "lessonId": "arabizi-chat",
+      "teachingPoints": [
+        {"id":"arabizi-three","kind":"rule","priority":"essential","sourceSection":"Common symbols","objective":"Decode the most central 3-to-ʿayn mapping as a consonant task.","format":"cloze","prompt":"In the common chat mapping, 3 represents the Arabic consonant ___.","answer":"ع"},
+        {"id":"arabizi-two","kind":"rule","priority":"optional","sourceSection":"Common symbols","objective":"Decode 2 as hamza rather than a dual marker.","format":"cloze","prompt":"In the common chat mapping, 2 represents the consonant ___.","answer":"ء"},
+        {"id":"arabizi-seven","kind":"rule","priority":"optional","sourceSection":"Common symbols","objective":"Decode 7 as pharyngeal ḥ rather than ordinary h.","format":"cloze","prompt":"In the common chat mapping, 7 represents the Arabic consonant ___.","answer":"ح"},
+        {"id":"arabizi-five","kind":"rule","priority":"optional","sourceSection":"Common symbols","objective":"Map the two common khāʾ spellings without saving symbols as words.","format":"cloze","prompt":"Which Arabic consonant corresponds to 5 or kh in the table? ___","answer":"خ"},
+        {"id":"arabizi-six","kind":"rule","priority":"optional","sourceSection":"Common symbols","objective":"Decode 6 as emphatic ṭāʾ.","format":"cloze","prompt":"In the common chat mapping, 6 represents the Arabic consonant ___.","answer":"ط"},
+        {"id":"arabizi-nine","kind":"rule","priority":"optional","sourceSection":"Common symbols","objective":"Decode 9 as emphatic ṣād.","format":"cloze","prompt":"In the common chat mapping, 9 represents the Arabic consonant ___.","answer":"ص"},
+        {"id":"vocab-habibi","kind":"vocabulary","priority":"optional","sourceSection":"Common symbols","objective":"Retain the genuine affectionate address expression.","word":"حَبِيبِي","meaning":"my dear; addressing a man","reading":"ḥabībī"},
+        {"id":"vocab-khalas","kind":"vocabulary","priority":"optional","sourceSection":"Common symbols","objective":"Retain enough/done without adding formal case tanwīn to chat usage.","word":"خَلَاصْ","meaning":"enough; done; informal chat usage","reading":"khalāṣ"},
+        {"id":"vocab-sahh","kind":"vocabulary","priority":"optional","sourceSection":"Common symbols","objective":"Retain correct in its informal chat realization.","word":"صَحّْ","meaning":"correct; informal chat usage","reading":"ṣaḥḥ"},
+        {"id":"decode-habibi","kind":"rule","priority":"essential","sourceSection":"Reading strategy","objective":"Apply the digit-to-consonant strategy to a whole recognizable word.","format":"cloze","prompt":"Decode 7abībī into Arabic: ___ .","answer":"حَبِيبِي"},
+        {"id":"vocab-ana-mish-arif","kind":"vocabulary","priority":"optional","sourceSection":"Reading strategy","objective":"Retain the complete Egyptian-style negative expression with the speaker qualification.","word":"أَنَا مِشْ عَارِفْ","meaning":"I do not know; masculine speaker, Egyptian-style","reading":"ʾana mish ʿārif"},
+        {"id":"arabic-script-transfer","kind":"rule","priority":"optional","sourceSection":"Cautions","objective":"Transfer a chat word to the fully inflected formal-script counterpart.","format":"cloze","prompt":"For a formal text, write 3arabī as ___ .","answer":"عَرَبِيٌّ"},
+        {"id":"arabizi-variation-register","kind":"concept","priority":"essential","sourceSection":"Cautions","objective":"Keep chat conventions variable and inappropriate as a formal replacement script.","format":"qa","prompt":"Must all writers spell an Arabizi word identically, and is it appropriate for a formal Arabic essay?","answer":"No to both: chat conventions vary, and formal Arabic writing uses Arabic script."}
+      ],
+      "exclusions": [
+        {"sourceSection":"Sources","reason":"Reference links only."},
+        {"sourceSection":"Common symbols","reason":"The first quiz and student/I examples repeat symbol mappings; isolated digits, letter names and equations are not dictionary words."},
+        {"sourceSection":"Reading strategy","reason":"The greeting is a further application of the same decode-then-context routine; its formal pronunciation is not imposed on colloquial chat."},
+        {"sourceSection":"Cautions","reason":"The second quiz and alternative khalaas spellings repeat the mapped sounds and variation principle."}
+      ]
+    },
+    {
+      "lessonId": "dialect-comparison",
+      "teachingPoints": [
+        {"id":"vocab-how-msa","kind":"vocabulary","priority":"optional","sourceSection":"Everyday phrase table","objective":"Retain the formal masculine how-are-you expression.","word":"كَيْفَ حَالُكَ؟","meaning":"how are you?; MSA, to a man","reading":"kayfa ḥāluka?"},
+        {"id":"vocab-how-egyptian","kind":"vocabulary","priority":"essential","sourceSection":"Everyday phrase table","objective":"Recognize the Egyptian greeting as a regional phrase, not faulty MSA.","word":"إِزَّيَّك؟","meaning":"how are you?; Egyptian, to a man","reading":"izzayyak?"},
+        {"id":"vocab-how-levantine","kind":"vocabulary","priority":"optional","sourceSection":"Everyday phrase table","objective":"Retain the Levantine greeting with its masculine addressee.","word":"كِيفَك؟","meaning":"how are you?; Levantine, to a man","reading":"kīfak?"},
+        {"id":"vocab-how-gulf-iraqi","kind":"vocabulary","priority":"optional","sourceSection":"Everyday phrase table","objective":"Recognize the greeting shared by the Gulf and Iraqi examples without duplicate cards.","word":"شْلُونَك؟","meaning":"how are you?; Gulf and Iraqi examples, to a man","reading":"shlōnak?"},
+        {"id":"vocab-how-maghrebi","kind":"vocabulary","priority":"optional","sourceSection":"Everyday phrase table","objective":"Retain the illustrative Maghrebi masculine greeting without claiming regional uniformity.","word":"كِيفَ دَايِر؟","meaning":"how are you?; Maghrebi example, to a man","reading":"kīfa dāyir?"},
+        {"id":"vocab-coffee-msa","kind":"vocabulary","priority":"optional","sourceSection":"Everyday phrase table","objective":"Retain the formal coffee request with its object case.","word":"أُرِيدُ قَهْوَةً","meaning":"I want coffee; MSA","reading":"ʾurīdu qahwatan"},
+        {"id":"vocab-coffee-egyptian","kind":"vocabulary","priority":"optional","sourceSection":"Everyday phrase table","objective":"Retain the Egyptian participial want expression for a male speaker.","word":"عَايِزْ قَهْوَة","meaning":"I want coffee; Egyptian, masculine speaker","reading":"ʿāyiz qahwa"},
+        {"id":"vocab-coffee-levantine","kind":"vocabulary","priority":"essential","sourceSection":"Everyday phrase table","objective":"Retain the Levantine lexical want contrast in a complete useful phrase.","word":"بِدِّي قَهْوَة","meaning":"I want coffee; Levantine","reading":"biddī qahwe"},
+        {"id":"vocab-coffee-gulf","kind":"vocabulary","priority":"optional","sourceSection":"Everyday phrase table","objective":"Retain the Gulf want expression in the coffee example.","word":"أَبِي قَهْوَة","meaning":"I want coffee; Gulf example","reading":"abī gahwa"},
+        {"id":"vocab-coffee-iraqi","kind":"vocabulary","priority":"optional","sourceSection":"Everyday phrase table","objective":"Retain the Iraqi imperfect coffee request without MSA endings.","word":"أُرِيدْ قَهْوَة","meaning":"I want coffee; Iraqi example","reading":"urīd gahwa"},
+        {"id":"vocab-coffee-maghrebi","kind":"vocabulary","priority":"optional","sourceSection":"Everyday phrase table","objective":"Retain the contextual Maghrebi want expression.","word":"بْغِيتْ قَهْوَة","meaning":"I want coffee; Maghrebi example","reading":"bghīt qahwa"},
+        {"id":"vocab-where-msa","kind":"vocabulary","priority":"optional","sourceSection":"Everyday phrase table","objective":"Retain the complete MSA destination question to a man.","word":"إِلَى أَيْنَ تَذْهَبُ؟","meaning":"where are you going?; MSA, to a man","reading":"ʾilā ʾayna tadhhabu?"},
+        {"id":"vocab-where-egyptian","kind":"vocabulary","priority":"optional","sourceSection":"Everyday phrase table","objective":"Retain the Egyptian going-where phrase.","word":"رَايِحْ فِين؟","meaning":"where are you going?; Egyptian, to a man","reading":"rāyiḥ fēn?"},
+        {"id":"vocab-where-levantine","kind":"vocabulary","priority":"optional","sourceSection":"Everyday phrase table","objective":"Retain the Levantine destination question and its preposition.","word":"رَايِحْ عَلَى وِين؟","meaning":"where are you going?; Levantine, to a man","reading":"rāyiḥ ʿalā wēn?"},
+        {"id":"vocab-where-gulf","kind":"vocabulary","priority":"optional","sourceSection":"Everyday phrase table","objective":"Retain the Gulf where-before-going example.","word":"وَيْنَ رَايِح؟","meaning":"where are you going?; Gulf example, to a man","reading":"wēna rāyiḥ?"},
+        {"id":"vocab-where-iraqi","kind":"vocabulary","priority":"optional","sourceSection":"Everyday phrase table","objective":"Retain the Iraqi destination phrase as taught.","word":"لْوِينْ رَايِح؟","meaning":"where are you going?; Iraqi example, to a man","reading":"lwēn rāyiḥ?"},
+        {"id":"vocab-where-maghrebi","kind":"vocabulary","priority":"optional","sourceSection":"Everyday phrase table","objective":"Retain the Maghrebi going expression in a complete question.","word":"فِينْ غَادِي؟","meaning":"where are you going?; Maghrebi example, to a man","reading":"fīn ghādī?"},
+        {"id":"vocab-know-msa","kind":"vocabulary","priority":"optional","sourceSection":"Everyday phrase table","objective":"Retain the standard negative knowing expression.","word":"لَا أَعْرِفُ","meaning":"I do not know; MSA","reading":"lā ʾaʿrifu"},
+        {"id":"vocab-know-egyptian","kind":"vocabulary","priority":"optional","sourceSection":"Everyday phrase table","objective":"Retain the Egyptian negative participial phrase for a male speaker.","word":"مِشْ عَارِف","meaning":"I do not know; Egyptian, masculine speaker","reading":"mish ʿārif"},
+        {"id":"vocab-know-levantine","kind":"vocabulary","priority":"optional","sourceSection":"Everyday phrase table","objective":"Retain the Levantine verbal negation phrase.","word":"مَا بَعْرِف","meaning":"I do not know; Levantine","reading":"mā baʿrif"},
+        {"id":"vocab-know-gulf-iraqi","kind":"vocabulary","priority":"optional","sourceSection":"Everyday phrase table","objective":"Retain the common written negative phrase shared by the Gulf/Iraqi examples.","word":"مَا أَعْرِف","meaning":"I do not know; Gulf and Iraqi examples","reading":"mā aʿrif"},
+        {"id":"vocab-know-maghrebi","kind":"vocabulary","priority":"optional","sourceSection":"Everyday phrase table","objective":"Retain the context-sensitive Maghrebi negative-knowing example without making it universal.","word":"مَا عْرِفْتْش","meaning":"I do not know; Maghrebi example, context-sensitive","reading":"mā ʿriftsh"},
+        {"id":"formal-written-choice","kind":"rule","priority":"essential","sourceSection":"Usage notes","objective":"Produce the standard form for a formal written setting.","format":"cloze","prompt":"Choose the formal written phrase for I do not know: ___ .","answer":"لَا أَعْرِفُ"},
+        {"id":"gulf-qaf-variation","kind":"concept","priority":"optional","sourceSection":"Usage notes","objective":"Separate a regional sound change from a new lexical drink meaning.","format":"qa","prompt":"Does hearing gāhwa instead of qahwa necessarily mean a different drink?","answer":"No. Some Gulf speech uses g-like qāf in the word for coffee."},
+        {"id":"where-phrase-correspondence","kind":"rule","priority":"optional","sourceSection":"Reading comparisons kindly","objective":"Map a whole Egyptian question to its functional MSA counterpart.","format":"cloze","prompt":"Egyptian رَايِحْ فِين؟ (rāyiḥ fēn?) corresponds to MSA ___ .","answer":"إِلَى أَيْنَ تَذْهَبُ؟"},
+        {"id":"dialects-rule-governed","kind":"concept","priority":"essential","sourceSection":"Reading comparisons kindly","objective":"Recognize systematic spoken varieties and MSA's formal role without ranking dialects as errors.","format":"qa","prompt":"Why should the six columns be read as regional systems rather than a list of MSA mistakes?","answer":"Each spoken variety has its own systematic grammar, sounds and vocabulary; MSA serves a shared formal role."}
+      ],
+      "exclusions": [
+        {"sourceSection":"Sources","reason":"Reference links only."},
+        {"sourceSection":"Everyday phrase table","reason":"The first quiz repeats the Levantine want phrase; identical Gulf/Iraqi greeting and negative forms are deliberately represented once with both labels."},
+        {"sourceSection":"Reading comparisons kindly","reason":"The final quiz and recurring-marker list reinforce the separately inventoried regional-system concept; bound markers are not dictionary words."}
+      ]
+    },
+    {
+      "lessonId": "feminine-plural-verb",
+      "teachingPoints": [
+        {"id":"vocab-hunna","kind":"vocabulary","priority":"optional","sourceSection":"Forms and examples","objective":"Retain the third-person feminine plural pronoun.","word":"هُنَّ","meaning":"they; feminine plural","reading":"hunna"},
+        {"id":"vocab-antunna","kind":"vocabulary","priority":"optional","sourceSection":"Forms and examples","objective":"Retain the feminine plural addressee pronoun.","word":"أَنْتُنَّ","meaning":"you; feminine plural","reading":"antunna"},
+        {"id":"second-person-feminine-past","kind":"rule","priority":"optional","sourceSection":"Forms and examples","objective":"Distinguish second-person feminine past -tunna from third-person -na.","format":"cloze","prompt":"Complete “you women wrote”: أَنْتُنَّ ___.","answer":"كَتَبْتُنَّ"},
+        {"id":"second-person-feminine-present","kind":"rule","priority":"optional","sourceSection":"Forms and examples","objective":"Choose the second-person present prefix while retaining feminine plural nūn.","format":"cloze","prompt":"Complete “you women write”: أَنْتُنَّ ___.","answer":"تَكْتُبْنَ"},
+        {"id":"feminine-present-reading","kind":"rule","priority":"essential","sourceSection":"Usage notes","objective":"Produce a third-person feminine plural present verb after its pronoun.","format":"cloze","prompt":"Complete “they women read the lesson”: هُنَّ ___ الدَّرْسَ.","answer":"يَقْرَأْنَ"},
+        {"id":"feminine-verb-order-contrast","kind":"concept","priority":"essential","sourceSection":"Usage notes","objective":"Keep full fronted-subject agreement distinct from ordinary verb-first singular agreement.","format":"qa","prompt":"How does verb number normally differ between الطَّالِبَاتُ دَرَسْنَ and دَرَسَتِ الطَّالِبَاتُ?","answer":"A fronted subject takes a feminine plural verb; verb-first order normally uses a feminine singular verb."},
+        {"id":"fronted-feminine-past","kind":"rule","priority":"essential","sourceSection":"Mood and negation","objective":"Produce third-person feminine plural past after a fronted human noun.","format":"cloze","prompt":"Complete “the female students wrote”: الطَّالِبَاتُ ___ الرِّسَالَةَ.","answer":"كَتَبْنَ"},
+        {"id":"feminine-nun-retained","kind":"concept","priority":"essential","sourceSection":"Mood and negation","objective":"Preserve feminine subject nūn in subjunctive and jussive contexts.","format":"qa","prompt":"Does the feminine plural nūn disappear after لَنْ or لَمْ?","answer":"No. It remains, as in لَنْ يَخْرُجْنَ and لَمْ يَسْمَعْنَ."},
+        {"id":"feminine-prohibition","kind":"rule","priority":"optional","sourceSection":"Mood and negation","objective":"Apply retained feminine plural nūn to a negative command.","format":"cloze","prompt":"Complete “do not rush, you women”: لَا ___.","answer":"تَتَعَجَّلْنَ"}
+      ],
+      "exclusions": [
+        {"sourceSection":"Sources","reason":"Reference links only."},
+        {"sourceSection":"Forms and examples","reason":"The first quiz and explained/teach rows repeat person and feminine agreement; paradigm endings are application material, not vocabulary fragments."},
+        {"sourceSection":"Mood and negation","reason":"The second quiz and leave/hear examples repeat fronted feminine agreement and nūn retention."}
+      ]
+    },
+    {
+      "lessonId": "dual-verbs",
+      "teachingPoints": [
+        {"id":"dual-third-masculine-past","kind":"rule","priority":"optional","sourceSection":"Forms and examples","objective":"Mark exactly two masculine agents in the past without masculine plural wāw.","format":"cloze","prompt":"Complete “they two men wrote”: هُمَا ___.","answer":"كَتَبَا"},
+        {"id":"dual-third-feminine-past","kind":"rule","priority":"optional","sourceSection":"Forms and examples","objective":"Use the feminine third-person dual past ending.","format":"cloze","prompt":"Complete “they two women wrote”: هُمَا ___.","answer":"كَتَبَتَا"},
+        {"id":"dual-second-past","kind":"rule","priority":"optional","sourceSection":"Forms and examples","objective":"Address exactly two people with the second-person past form.","format":"cloze","prompt":"Complete “you two wrote”: أَنْتُمَا ___.","answer":"كَتَبْتُمَا"},
+        {"id":"dual-present-person-contrast","kind":"concept","priority":"essential","sourceSection":"Core idea","objective":"Disambiguate the present t-prefix's second-person and feminine third-person dual readings.","format":"qa","prompt":"Which readings can تَكْتُبَانِ have, and how does يَكْتُبَانِ differ?","answer":"تَكْتُبَانِ means they two feminine write or you two write; يَكْتُبَانِ means they two masculine write."},
+        {"id":"vocab-huma","kind":"vocabulary","priority":"optional","sourceSection":"Pronoun agreement and word order","objective":"Retain the dual pronoun with its either-gender scope.","word":"هُمَا","meaning":"they two; either gender","reading":"humā"},
+        {"id":"fronted-dual-present","kind":"rule","priority":"essential","sourceSection":"Pronoun agreement and word order","objective":"Use full indicative dual agreement after a fronted masculine subject.","format":"cloze","prompt":"Complete “the two male engineers are working”: الْمُهَنْدِسَانِ ___.","answer":"يَعْمَلَانِ"},
+        {"id":"verb-before-dual","kind":"rule","priority":"essential","sourceSection":"Pronoun agreement and word order","objective":"Use singular feminine agreement before an explicit feminine dual noun.","format":"cloze","prompt":"Complete verb-first “the two female students came” in connected reading: ___ الطَّالِبَتَانِ.","answer":"جَاءَتِ"},
+        {"id":"dual-jussive-nun-drop","kind":"rule","priority":"essential","sourceSection":"The five verbs and dropped nūn","objective":"Drop indicative nūn after lam while retaining the dual alif.","format":"cloze","prompt":"Complete “they two men did not enter”: لَمْ ___ الْبَيْتَ.","answer":"يَدْخُلَا"},
+        {"id":"dual-subjunctive-nun-drop","kind":"rule","priority":"optional","sourceSection":"The five verbs and dropped nūn","objective":"Apply the same nūn loss to the subjunctive after lan.","format":"cloze","prompt":"Complete “they two men will not write”: لَنْ ___.","answer":"يَكْتُبَا"}
+      ],
+      "exclusions": [
+        {"sourceSection":"Sources","reason":"Reference links only."},
+        {"sourceSection":"Forms and examples","reason":"The first quiz and paradigm table repeat the individually inventoried person/gender forms; suffixes remain grammar applications."},
+        {"sourceSection":"The five verbs and dropped nūn","reason":"The final quiz and indicative/negative trio repeat the contrast between retained indicative nūn and deletion after lan/lam."}
+      ]
+    },
+    {
+      "lessonId": "collective-unit-nouns",
+      "teachingPoints": [
+        {"id":"vocab-tamr","kind":"vocabulary","priority":"essential","sourceSection":"Forms and examples","objective":"Retain dates as a collective rather than assuming a count plural.","word":"تَمْرٌ","meaning":"dates collectively","reading":"tamrun"},
+        {"id":"vocab-tamrah","kind":"vocabulary","priority":"essential","sourceSection":"Forms and examples","objective":"Retain the lexical unit noun for one date.","word":"تَمْرَةٌ","meaning":"one date","reading":"tamratun"},
+        {"id":"vocab-shajar","kind":"vocabulary","priority":"optional","sourceSection":"Forms and examples","objective":"Retain trees as the collective member of the three-way contrast.","word":"شَجَرٌ","meaning":"trees collectively","reading":"shajarun"},
+        {"id":"vocab-shajarah","kind":"vocabulary","priority":"optional","sourceSection":"Forms and examples","objective":"Retain one tree as the unit noun.","word":"شَجَرَةٌ","meaning":"one tree","reading":"shajaratun"},
+        {"id":"vocab-samak","kind":"vocabulary","priority":"optional","sourceSection":"Forms and examples","objective":"Retain fish in the collective sense.","word":"سَمَكٌ","meaning":"fish collectively","reading":"samakun"},
+        {"id":"vocab-samakah","kind":"vocabulary","priority":"optional","sourceSection":"Forms and examples","objective":"Retain the lexical noun for one fish.","word":"سَمَكَةٌ","meaning":"one fish","reading":"samakatun"},
+        {"id":"vocab-baqar","kind":"vocabulary","priority":"optional","sourceSection":"Forms and examples","objective":"Retain cattle as a collective class noun.","word":"بَقَرٌ","meaning":"cattle collectively","reading":"baqarun"},
+        {"id":"vocab-baqarah","kind":"vocabulary","priority":"optional","sourceSection":"Forms and examples","objective":"Retain one cow as a unit noun.","word":"بَقَرَةٌ","meaning":"one cow","reading":"baqaratun"},
+        {"id":"fish-unit-formation","kind":"rule","priority":"essential","sourceSection":"Usage notes","objective":"Form the unit noun without duplicating its stem in a partial-word cloze.","format":"cloze","prompt":"Write the nominative noun for one fish, from سَمَكٌ: ___.","answer":"سَمَكَةٌ"},
+        {"id":"unit-feminine-agreement","kind":"rule","priority":"essential","sourceSection":"Usage notes","objective":"Match a feminine singular unit noun with its adjective.","format":"cloze","prompt":"Complete “this is a tall tree”: هٰذِهِ شَجَرَةٌ ___.","answer":"طَوِيلَةٌ"},
+        {"id":"collective-singular-agreement","kind":"concept","priority":"optional","sourceSection":"Usage notes","objective":"Understand singular collective construal despite a plural English gloss.","format":"qa","prompt":"Why can الشَّجَرُ كَثِيفٌ use a masculine singular predicate although English translates trees?","answer":"الشَّجَرُ is construed as a collective singular idea, not an ordinary count plural."},
+        {"id":"collective-unit-distinction","kind":"concept","priority":"optional","sourceSection":"Collective, unit, and plural","objective":"Distinguish the class word from the one-member word without showing the requested answer as a choice.","format":"qa","prompt":"What distinction separates بَقَرٌ from بَقَرَةٌ?","answer":"The first is a collective; the second names one cow."},
+        {"id":"tree-three-way-contrast","kind":"concept","priority":"essential","sourceSection":"Collective, unit, and plural","objective":"Keep collective, unit and ordinary count plural as three different meanings.","format":"qa","prompt":"How do شَجَرٌ, شَجَرَةٌ and أَشْجَارٌ differ?","answer":"Trees collectively; one tree; trees as an ordinary countable plural."},
+        {"id":"vocab-ashjar","kind":"vocabulary","priority":"optional","sourceSection":"Collective, unit, and plural","objective":"Retain the ordinary countable trees plural alongside the collective.","word":"أَشْجَارٌ","meaning":"trees; ordinary countable plural","reading":"ashjārun"}
+      ],
+      "exclusions": [
+        {"sourceSection":"Sources","reason":"Reference links only."},
+        {"sourceSection":"Forms and examples","reason":"The first quiz repeats the explicit date/unit lexical pair; every pair in the table is inventoried."},
+        {"sourceSection":"Collective, unit, and plural","reason":"The final quiz and three farmer sentences assess the separately inventoried class/unit/count-plural distinction."}
+      ]
+    }
+  ]
+}

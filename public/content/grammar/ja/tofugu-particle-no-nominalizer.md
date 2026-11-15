@@ -1,5 +1,7 @@
 # の (no) — Nominalizer
 
+<!-- vocab-inventory: {"mode":"explicit"} -->
+
 > **Source:** Content from [Tofugu](https://www.tofugu.com/japanese-grammar/particle-no-nominalizer/). For personal study.
 
 Particle の: Nominalizer
@@ -37,6 +39,9 @@ However, particle の is a lot more versatile than -ing in English. の can nomi
 Even though the only words we see are 走るの, which translates to "running," the meaning can include implied information. The context of the first sentence allows us to infer that 走るの contains *time* information, as in "the time for running." In fact, we could imagine that の is standing in for a noun, like 時間 (time). In the second example, we know that 走るの contains information about a *person*, as in "the person running." We could replace の with 人 (person) here and it would make sense.
 
 So to sum it up, we can think of particle の as a placeholder for another noun. We'll take a closer look at this idea throughout the page, so don't worry if you're still feeling a bit confused!
+
+<!-- grammar-card: {"id":"nominalizer-placeholder","kind":"concept","format":"qa","priority":"essential","sourceSection":"The Basics","rule":"Nominalizer の makes a clause noun-like, with its referent supplied by context","example":"Does 走るの always mean only the activity of running?","answer":"No. Depending on context it can refer to the activity, the person running, or the time for running.","explanation":"の is a noun-like placeholder, not a fixed equivalent of English -ing; the surrounding sentence supplies the interpretation."} -->
+<!-- vocab-card: {"id":"vocab-hashiru","word":"走る","reading":"はしる","meaning":"to run","priority":"optional","sourceSection":"The Basics"} -->
 
 ### Patterns of Use
 
@@ -80,6 +85,12 @@ The second point is for when the clause ends with a な-adjective in the present
 
   - What's important is kindness.
 
+<!-- grammar-card: {"id":"nominalizer-plain-clause","kind":"concept","format":"qa","priority":"essential","sourceSection":"Relative Clause + の","rule":"A clause modifying nominalizer の normally uses plain forms","example":"Should the verb before nominalizer の normally use the plain form or the polite ます form?","answer":"The plain form.","explanation":"Use 買ったの rather than 買いましたの in the ordinary relative-clause pattern taught here."} -->
+<!-- grammar-card: {"id":"nominalizer-na-link","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Relative Clause + の","rule":"A present affirmative な-adjective needs な before nominalizer の","example":"大切___のはやさしさだ。","answer":"な","explanation":"大切 is a な-adjective, so it modifies noun-like の as 大切なの; do not attach だ here."} -->
+<!-- vocab-card: {"id":"vocab-koto","word":"事","reading":"こと","meaning":"non-physical thing; matter","priority":"essential","sourceSection":"Relative Clause + の"} -->
+<!-- vocab-card: {"id":"vocab-mono","word":"物","reading":"もの","meaning":"material thing; physical object","priority":"essential","sourceSection":"Relative Clause + の"} -->
+<!-- grammar-card: {"id":"nominalizer-activity","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Relative Clause + の","rule":"の turns a verb phrase into a noun","hint":"nominaliser","example":"映画(えいが)を見(み)る___が好(す)きです。","answer":"の","explanation":"見るの becomes the thing that is liked, which is why it can take が."} -->
+
 #### こそあど Words + の
 
 Nominalizer の can be modified by some of the こそあど words, aka Japanese demonstratives. This is especially true for ones like こんな/そんな/あんな/どんな and こういう/そういう/ああいう/どういう, which mean "like this/that/etc."
@@ -91,6 +102,8 @@ Nominalizer の can be modified by some of the こそあど words, aka Japanese 
   - そういうのは、前もって教えてください。
 
   - Please let me know things like that in advance.
+
+<!-- grammar-card: {"id":"nominalizer-demonstrative","kind":"rule","format":"cloze","priority":"optional","sourceSection":"こそあど Words + の","rule":"こんな and そういう can modify noun-like の","example":"こんな___要らないよ。 (I don't need things like this.)","answer":"の","explanation":"こんなの means things like this; の supplies the noun-like head after the demonstrative."} -->
 
 #### の At The End of Sentences
 
@@ -116,6 +129,9 @@ Unless it's paired with a formal component such as the politeness marker です,
 
   - Do you clean first?
 
+<!-- grammar-card: {"id":"nominalizer-explanatory-ending","kind":"concept","format":"qa","priority":"optional","sourceSection":"の At The End of Sentences","rule":"Sentence-final の can explain or request an explanation","example":"What does sentence-final の contribute to an instruction such as まずは、洗うの?","answer":"An explanatory feel: it presents the action as what should be done.","explanation":"This is related to のです/んです. The same explanatory use can make a prohibition such as おしゃべりしないの sound like a strong instruction."} -->
+<!-- grammar-card: {"id":"nominalizer-ending-register","kind":"concept","format":"qa","priority":"optional","sourceSection":"の At The End of Sentences","rule":"Bare declarative の is informal and socially marked, unlike a rising の question","example":"Does a rising の question carry the same feminine or childish association as a bare declarative の ending?","answer":"No. A rising の question generally expresses curiosity without that age/gender association.","explanation":"Bare explanatory statements and instructions are usually informal and may sound feminine or childlike; pairing with です changes politeness. These are usage tendencies, not rules about who may speak."} -->
+
 ### Uses of Nominalizer の
 
 Meanings of nominalizer の change depending on the context because it acts like a placeholder for various words: 事 (non-physical thing), 物 (material thing) as well as "time," "place" and "reason." Now let's take a look at common examples of what の could mean.
@@ -134,6 +150,12 @@ Meanings of nominalizer の change depending on the context because it acts like
 
   - I'm frustrated about not being able to backflip.
 
+<!-- grammar-card: {"id":"nominalizer-abstract-koto","kind":"concept","format":"qa","priority":"optional","sourceSection":"Non-Physical Things","rule":"の and 事 can both name events or facts in the illustrated abstract uses","example":"Why can both の and 事 follow バク転できない in the frustration example?","answer":"Both can turn the clause into the non-physical fact of not being able to backflip.","explanation":"Interchangeability in these examples is not a claim that の and こと are interchangeable in every construction."} -->
+
+For direct perception of an event, use の: 彼が走るのを見た means “I saw him running.” In this direct-event sense, こと does not replace の.
+
+<!-- grammar-card: {"id":"nominalizer-direct-perception","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Non-Physical Things","rule":"Directly seeing an event uses の rather than こと in the event-object construction","hint":"I saw him running","example":"彼(かれ)が走(はし)る___を見(み)た。","answer":"の","explanation":"Here 見た describes direct perception of his running, not abstract knowledge of a fact, so the event is nominalized with の.","legacyAliases":[{"rule":"Verbs of direct perception take の, never こと","example":"彼(かれ)が走(はし)る___を見(み)た。"}]} -->
+
 #### Material Things
 
 の is also used to turn clauses into nouns to describe "material things" that have a physical presence. This includes "living things" such as people or animals.
@@ -150,6 +172,8 @@ Meanings of nominalizer の change depending on the context because it acts like
 
   - Who's there?
 (*Literally*: Who is it that is there?)
+
+<!-- grammar-card: {"id":"nominalizer-material-referent","kind":"concept","format":"qa","priority":"optional","sourceSection":"Material Things","rule":"Nominalizer の can stand for physical objects and living beings","example":"In 甘いのが食べたい, what does の stand for?","answer":"Sweet things to eat.","explanation":"Here の refers to material things, not merely the abstract property of being sweet. It can also refer to a person or animal in an appropriate clause."} -->
 
 #### Time and Place
 
@@ -171,6 +195,8 @@ Meanings of nominalizer の change depending on the context because it acts like
 
   - Where I was born is New York.
 
+<!-- grammar-card: {"id":"nominalizer-time-place","kind":"concept","format":"qa","priority":"optional","sourceSection":"Time and Place","rule":"The predicate can identify a nominalized clause as a time or place","example":"What does の refer to in 生まれたのはニューヨークです?","answer":"The place where the speaker was born.","explanation":"ニューヨーク supplies a place interpretation. With 届くのは明日です, 明日 instead supplies a time interpretation."} -->
+
 #### Reason
 
 の can be used as a placeholder for a "reason," especially when the purpose of the sentence is to explain or to ask for a reason.
@@ -184,7 +210,7 @@ Meanings of nominalizer の change depending on the context because it acts like
   - Why did you think so?
 (*Literally*: What's the reason for thinking so?)
 
-<!-- grammar-card: {"rule":"の turns a verb phrase into a noun","hint":"nominaliser","example":"映画(えいが)を見(み)る___が好(す)きです。","answer":"の","explanation":"見るの becomes the thing that is liked, which is why it can take が."} -->
+<!-- grammar-card: {"id":"nominalizer-reason","kind":"concept","format":"qa","priority":"optional","sourceSection":"Reason","rule":"の can introduce the reason being explained or questioned","example":"What information is requested by そう思ったのは、なぜですか?","answer":"The reason for thinking that way.","explanation":"The nominalized clause is the topic, and なぜ asks for its reason rather than for a physical thing."} -->
 
 ## Beyond The Basics
 
@@ -196,6 +222,8 @@ Nominalizer の can be used to list a couple of things that contrast with each o
 
   - We argued about whether to go to a restaurant or not.
 
+<!-- grammar-card: {"id":"nominalizer-listing-clauses","kind":"concept","format":"qa","priority":"optional","sourceSection":"Nominalizer の For Listing","rule":"の can list contrasting clauses as alternatives under discussion","example":"What alternatives are listed in レストランに行くの行かないのでもめた?","answer":"Going to the restaurant versus not going.","explanation":"The affirmative and negative clauses form a list of alternatives. This is the ordinary listing use, not the later idiom meaning extraordinarily delicious."} -->
+
 For nouns and な-adjectives, you'd need to add だ and say 〜だの〜だの.
 
   - テスト勉強だの部活だので忙しいよ。
@@ -204,12 +232,16 @@ For nouns and な-adjectives, you'd need to add だ and say 〜だの〜だの.
 
 This use of の often carries a negative connotation, and may sound like you're complaining. However, there is a special, idiomatic pattern used to enthusiastically say that something is extraordinary. This is achieved when you take the same adjective and repeat it twice, once in the positive and once in the negative, followed of course by our nominalizer の. For example, with the い-adjective 美味しい (delicious), you can say:
 
+<!-- grammar-card: {"id":"nominalizer-listing-nouns","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Nominalizer の For Listing","rule":"Listing nouns with の uses だの","example":"テスト勉強___部活だので忙しいよ。","answer":"だの","explanation":"Nouns and な-adjectives use だの in this listing construction. The list often sounds like a complaint, unlike a neutral noun list with と."} -->
+
   - ポートランドのビール、そりゃ美味しいの、美味しくないのって！
 
   - Beer in Portland is beyond delicious!
 (*Literally*: Beer in Portland is not even a matter of delicious or not delicious.)
 
 This is often interchangeable with another idiomatic expression, 〜のなんのって, as in 美味しいのなんのって.
+
+<!-- grammar-card: {"id":"nominalizer-extraordinary-idiom","kind":"concept","format":"qa","priority":"optional","sourceSection":"Nominalizer の For Listing","rule":"Affirmative/negative adjective repetition with の can express an extraordinary degree","example":"Does 美味しいの、美味しくないのって express uncertainty about whether something tastes good?","answer":"No. In this idiom it enthusiastically means beyond delicious.","explanation":"The positive/negative pair puts the quality beyond ordinary debate; 美味しいのなんのって can convey the same enthusiastic emphasis."} -->
 
 ---
 
@@ -265,8 +297,6 @@ by 柴谷 方良
 <!-- quiz: {"type":"multiple-choice","question":"What does \"[お父さんが買った]物は、バナナです。\" mean?","options":["The thing [dad bought] is a banana.","Running is fun.","What [dad bought] is a banana.","Dad bought a banana."],"answer":0} -->
 
 <!-- quiz: {"type":"multiple-choice","question":"What does \"[お父さんが買った]のは、バナナです。\" mean?","options":["What [dad bought] is a banana.","Running is fun.","The thing [dad bought] is a banana.","Dad bought a banana."],"answer":0} -->
-
-<!-- grammar-card: {"rule":"Verbs of direct perception take の, never こと","hint":"の / こと","example":"彼(かれ)が走(はし)る___を見(み)た。","answer":"の","explanation":"You watch a concrete event, so 走るのを見た is correct and 走ることを見た is not."} -->
 
 ## Sources
 

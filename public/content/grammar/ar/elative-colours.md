@@ -1,10 +1,15 @@
 # The Elative & Colours/Defects (afʿal pattern)
 
+<!-- vocab-inventory: {"mode":"explicit"} -->
+
 Arabic uses the أَفْعَلُ (afʿalu) — elative pattern for many comparative and superlative meanings. The same visible pattern also appears in many color and defect adjectives, but they behave differently.
 
 ## Core idea
 
 اِسْمُ التَّفْضِيلِ (ism at-tafḍīl) — the elative can mean “more” or “most,” depending on context. It often has the pattern أَفْعَلُ (afʿalu) — more / most.
+
+<!-- vocab-card: {"id":"vocab-akbar","word":"أَكْبَرُ","reading":"akbaru","meaning":"bigger; biggest","priority":"essential","sourceSection":"Core idea"} -->
+<!-- vocab-card: {"id":"vocab-afdal","word":"أَفْضَلُ","reading":"afḍalu","meaning":"better; best","priority":"optional","sourceSection":"Core idea"} -->
 
 | Use | Arabic | Meaning |
 |---|---|---|
@@ -19,7 +24,9 @@ Arabic uses the أَفْعَلُ (afʿalu) — elative pattern for many comparat
 
 هَذَا الْكِتَابُ أَطْوَلُ مِنْ ذَلِكَ الْكِتَابِ (hādhā al-kitābu aṭwalu min dhālika al-kitābi) — this book is longer than that book. With a following indefinite noun, أَطْوَلُ كِتَابٍ (aṭwalu kitābin) — the longest book.
 
-<!-- grammar-card: {"rule":"The elative أَفْعَلُ (afʿalu) plus مِنْ (min) forms many comparatives.","hint":"مِنْ (min) works like than after the elative.","example":"Complete “bigger than”: أَكْبَرُ ___ (min).","answer":"مِنْ","explanation":"أَكْبَرُ مِنْ (akbaru min) means bigger than. The elative gives the comparison, and مِنْ introduces what is compared."} -->
+<!-- grammar-card: {"id":"elative-than","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Comparative and superlative","rule":"The elative أَفْعَلُ (afʿalu) plus مِنْ (min) forms many comparatives.","example":"Bigger than: أَكْبَرُ ___.","answer":"مِنْ","explanation":"Min introduces the standard of comparison.","legacyAliases":[{"rule":"The elative أَفْعَلُ (afʿalu) plus مِنْ (min) forms many comparatives.","example":"Complete “bigger than”: أَكْبَرُ ___ (min)."}]} -->
+<!-- grammar-card: {"id":"elative-idafa","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Comparative and superlative","rule":"An elative in iḍāfa governs a genitive noun.","example":"The longest book: أَطْوَلُ ___. (كِتَابٌ)","answer":"كِتَابٍ","explanation":"The elative has no article here; the following noun is genitive."} -->
+<!-- grammar-card: {"id":"elative-definiteness","kind":"concept","format":"qa","priority":"optional","sourceSection":"Core idea","rule":"An attributive definite elative agrees in definiteness.","example":"Why does الْأَكْبَرُ have the article in اَلْبَيْتُ الْأَكْبَرُ?","answer":"It is an adjective describing a definite noun and agrees in definiteness.","explanation":"This differs from the article-free elative head in akbaru baytin."} -->
 
 ## Colors and defects
 
@@ -31,9 +38,21 @@ Color and defect adjectives often look like أَفْعَلُ (afʿalu) too: أَ
 
 > Do not translate every أَفْعَلُ (afʿalu) shape as “more.” First ask whether the word is an elative or a color/defect adjective.
 
+<!-- vocab-card: {"id":"vocab-ahmar","word":"أَحْمَرُ","reading":"aḥmaru","meaning":"red (masculine)","priority":"essential","sourceSection":"Colors and defects"} -->
+<!-- vocab-card: {"id":"vocab-hamra","word":"حَمْرَاءُ","reading":"ḥamrāʾu","meaning":"red (feminine)","priority":"optional","sourceSection":"Colors and defects"} -->
+<!-- vocab-card: {"id":"vocab-aswad","word":"أَسْوَدُ","reading":"aswadu","meaning":"black (masculine)","priority":"optional","sourceSection":"Colors and defects"} -->
+<!-- vocab-card: {"id":"vocab-sawda","word":"سَوْدَاءُ","reading":"sawdāʾu","meaning":"black (feminine)","priority":"optional","sourceSection":"Colors and defects"} -->
+<!-- vocab-card: {"id":"vocab-abyad","word":"أَبْيَضُ","reading":"abyaḍu","meaning":"white (masculine)","priority":"optional","sourceSection":"Colors and defects"} -->
+<!-- vocab-card: {"id":"vocab-bayda","word":"بَيْضَاءُ","reading":"bayḍāʾu","meaning":"white (feminine)","priority":"optional","sourceSection":"Colors and defects"} -->
+<!-- vocab-card: {"id":"vocab-araj","word":"أَعْرَجُ","reading":"aʿraju","meaning":"lame; having a limp (masculine adjective)","priority":"optional","sourceSection":"Colors and defects"} -->
+<!-- vocab-card: {"id":"vocab-arja","word":"عَرْجَاءُ","reading":"ʿarjāʾu","meaning":"lame; having a limp (feminine adjective)","priority":"optional","sourceSection":"Colors and defects"} -->
+<!-- vocab-card: {"id":"vocab-ama","word":"أَعْمَى","reading":"aʿmā","meaning":"blind (masculine)","priority":"optional","sourceSection":"Colors and defects"} -->
+<!-- vocab-card: {"id":"vocab-amya","word":"عَمْيَاءُ","reading":"ʿamyāʾu","meaning":"blind (feminine)","priority":"optional","sourceSection":"Colors and defects"} -->
+<!-- grammar-card: {"id":"redder-expression","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Colors and defects","rule":"A color comparison can use an intensity elative plus an accusative color noun.","example":"Redder, more intense in redness: أَشَدُّ ___.","answer":"حُمْرَةً","explanation":"Aḥmar means red, not automatically redder."} -->
+
 <!-- quiz: {"type":"multiple-choice","question":"Which phrase is a natural way to say redder?","options":["أَشَدُّ حُمْرَةً (ashaddu ḥumratan) — more intense in redness","أَحْمَرُ مِنْ (aḥmaru min) — red than","حَمْرَاءُ مِنْ (ḥamrāʾu min) — red feminine than","حُمْرٌ مِنْ (ḥumrun min) — reds than"],"answer":0} -->
 
-<!-- grammar-card: {"rule":"Color and defect adjectives often use masculine أَفْعَلُ (afʿalu) and feminine فَعْلَاءُ (faʿlāʾu), but they are not ordinary comparatives.","hint":"أَحْمَرُ and حَمْرَاءُ describe color, not more red by themselves.","example":"Complete “red feminine”: ___ (ḥamrāʾu) — red feminine.","answer":"حَمْرَاءُ","explanation":"red feminine — حَمْرَاءُ (ḥamrāʾu) is the feminine color adjective paired with أَحْمَرُ (aḥmaru)."} -->
+<!-- grammar-card: {"id":"color-feminine","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Colors and defects","rule":"Color and defect adjectives often use masculine أَفْعَلُ (afʿalu) and feminine فَعْلَاءُ (faʿlāʾu), but they are not ordinary comparatives.","example":"أَحْمَرُ → red, feminine: ___.","answer":"حَمْرَاءُ","explanation":"The faʿlāʾu feminine differs from simply adding tāʾ marbūṭah.","legacyAliases":[{"rule":"Color and defect adjectives often use masculine أَفْعَلُ (afʿalu) and feminine فَعْلَاءُ (faʿlāʾu), but they are not ordinary comparatives.","example":"Complete “red feminine”: ___ (ḥamrāʾu) — red feminine."}]} -->
 
 ## Sources
 

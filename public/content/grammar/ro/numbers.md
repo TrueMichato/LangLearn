@@ -1,5 +1,7 @@
 # Numbers & Counting
 
+<!-- vocab-inventory: {"mode":"explicit"} -->
+
 Romanian numbers are used for counting, prices, ages, dates, and quantities. The most important early points are that **one** and **two** agree with gender, and numbers from **20 upward** usually take **de** before a noun.
 
 ## Numbers 0-10
@@ -21,6 +23,18 @@ Romanian numbers are used for counting, prices, ages, dates, and quantities. The
 - **Am trei cărți.** (ahm tray kuhrtsʲ) — I have three books.
 - **Vreau șase mere.** (vrow SHAH-seh MEH-reh) — I want six apples.
 
+<!-- vocab-card: {"id":"vocab-zero","word":"zero","meaning":"zero; 0","priority":"optional","sourceSection":"Numbers 0-10"} -->
+<!-- vocab-card: {"id":"vocab-unu","word":"unu","meaning":"one; 1 (standalone counting form)","priority":"optional","sourceSection":"Numbers 0-10"} -->
+<!-- vocab-card: {"id":"vocab-doi","word":"doi","meaning":"two; 2 (masculine)","priority":"optional","sourceSection":"Numbers 0-10"} -->
+<!-- vocab-card: {"id":"vocab-doua","word":"două","meaning":"two; 2 (feminine and neuter plural)","priority":"optional","sourceSection":"Numbers 0-10"} -->
+<!-- vocab-card: {"id":"vocab-trei","word":"trei","meaning":"three; 3","priority":"optional","sourceSection":"Numbers 0-10"} -->
+<!-- vocab-card: {"id":"vocab-patru","word":"patru","meaning":"four; 4","priority":"optional","sourceSection":"Numbers 0-10"} -->
+<!-- vocab-card: {"id":"vocab-cinci","word":"cinci","meaning":"five; 5","priority":"optional","sourceSection":"Numbers 0-10"} -->
+<!-- vocab-card: {"id":"vocab-sase","word":"șase","meaning":"six; 6","priority":"optional","sourceSection":"Numbers 0-10"} -->
+<!-- vocab-card: {"id":"vocab-sapte","word":"șapte","meaning":"seven; 7","priority":"optional","sourceSection":"Numbers 0-10"} -->
+<!-- vocab-card: {"id":"vocab-opt","word":"opt","meaning":"eight; 8","priority":"optional","sourceSection":"Numbers 0-10"} -->
+<!-- vocab-card: {"id":"vocab-noua","word":"nouă","meaning":"nine; 9","priority":"optional","sourceSection":"Numbers 0-10"} -->
+<!-- vocab-card: {"id":"vocab-zece","word":"zece","meaning":"ten; 10","priority":"optional","sourceSection":"Numbers 0-10"} -->
 <!-- quiz: {"type":"multiple-choice","question":"What is 'five' in Romanian?","options":["patru","cinci","șase","șapte"],"answer":1} -->
 
 ## One and Two Agree
@@ -37,7 +51,9 @@ Neuter plurals use **două**: **două telefoane**, **două orașe**, **două sca
 - **Am un frate și o soră.** (ahm oon FRAH-teh shee oh SOH-ruh) — I have one brother and one sister.
 - **Văd doi câini și două pisici.** (vuhd doy kuhnʲ shee DOH-uh pee-SEECHʲ) — I see two dogs and two cats.
 
-<!-- grammar-card: {"rule":"Two is doi for masculine nouns and două for feminine or neuter plural nouns","hint":"doi băieți, două fete, două scaune","example":"Am ___ scaune.","answer":"două","explanation":"Scaun is neuter, and neuter plurals use the feminine number form două."} -->
+<!-- grammar-card: {"id":"two-neuter-agreement","kind":"rule","format":"cloze","priority":"essential","sourceSection":"One and Two Agree","rule":"Two is doi for masculine nouns and două for feminine or neuter plural nouns","example":"Am ___ scaune.","hint":"two chairs","answer":"două","explanation":"Scaune is neuter plural, so two takes the form două."} -->
+<!-- grammar-card: {"id":"one-noun-agreement","kind":"rule","format":"cloze","priority":"essential","sourceSection":"One and Two Agree","rule":"One before nouns is un for masculine/neuter and o for feminine","example":"Am ___ soră. (one sister)","answer":"o","explanation":"Use o before feminine soră, not the standalone counting form unu."} -->
+<!-- grammar-card: {"id":"two-masculine-agreement","kind":"rule","format":"cloze","priority":"optional","sourceSection":"One and Two Agree","rule":"Masculine plural nouns count with doi","example":"Văd ___ câini. (two dogs)","answer":"doi","explanation":"Câini is masculine plural; pisici would take două."} -->
 
 ## Numbers 11-19
 
@@ -58,6 +74,17 @@ For 12, you will hear gender agreement before nouns: **doisprezece băieți** bu
 - **Am unsprezece ani.** — I am eleven years old.
 - **Sunt douăsprezece luni într-un an.** — There are twelve months in a year.
 
+<!-- vocab-card: {"id":"vocab-unsprezece","word":"unsprezece","meaning":"eleven; 11","priority":"optional","sourceSection":"Numbers 11-19"} -->
+<!-- vocab-card: {"id":"vocab-doisprezece","word":"doisprezece","meaning":"twelve; 12 (masculine)","priority":"optional","sourceSection":"Numbers 11-19"} -->
+<!-- vocab-card: {"id":"vocab-douasprezece","word":"douăsprezece","meaning":"twelve; 12 (feminine and neuter plural)","priority":"optional","sourceSection":"Numbers 11-19"} -->
+<!-- vocab-card: {"id":"vocab-treisprezece","word":"treisprezece","meaning":"thirteen; 13","priority":"optional","sourceSection":"Numbers 11-19"} -->
+<!-- vocab-card: {"id":"vocab-paisprezece","word":"paisprezece","meaning":"fourteen; 14","priority":"optional","sourceSection":"Numbers 11-19"} -->
+<!-- vocab-card: {"id":"vocab-cincisprezece","word":"cincisprezece","meaning":"fifteen; 15","priority":"optional","sourceSection":"Numbers 11-19"} -->
+<!-- vocab-card: {"id":"vocab-saisprezece","word":"șaisprezece","meaning":"sixteen; 16","priority":"optional","sourceSection":"Numbers 11-19"} -->
+<!-- vocab-card: {"id":"vocab-saptesprezece","word":"șaptesprezece","meaning":"seventeen; 17","priority":"optional","sourceSection":"Numbers 11-19"} -->
+<!-- vocab-card: {"id":"vocab-optsprezece","word":"optsprezece","meaning":"eighteen; 18","priority":"optional","sourceSection":"Numbers 11-19"} -->
+<!-- vocab-card: {"id":"vocab-nouasprezece","word":"nouăsprezece","meaning":"nineteen; 19","priority":"optional","sourceSection":"Numbers 11-19"} -->
+<!-- grammar-card: {"id":"twelve-gender-agreement","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Numbers 11-19","rule":"Twelve agrees with the counted noun","example":"___ fete. (twelve girls)","answer":"Douăsprezece","explanation":"Use feminine douăsprezece, contrasting with doisprezece băieți."} -->
 ## Tens and Larger Numbers
 
 | Number | Romanian |
@@ -79,11 +106,22 @@ Use **și** (and) for numbers like 21, 35, and 99:
 - **treizeci și cinci** — thirty-five
 - **nouăzeci și nouă** — ninety-nine
 
+<!-- vocab-card: {"id":"vocab-douazeci","word":"douăzeci","meaning":"twenty; 20","priority":"optional","sourceSection":"Tens and Larger Numbers"} -->
+<!-- vocab-card: {"id":"vocab-treizeci","word":"treizeci","meaning":"thirty; 30","priority":"optional","sourceSection":"Tens and Larger Numbers"} -->
+<!-- vocab-card: {"id":"vocab-patruzeci","word":"patruzeci","meaning":"forty; 40","priority":"optional","sourceSection":"Tens and Larger Numbers"} -->
+<!-- vocab-card: {"id":"vocab-cincizeci","word":"cincizeci","meaning":"fifty; 50","priority":"optional","sourceSection":"Tens and Larger Numbers"} -->
+<!-- vocab-card: {"id":"vocab-saizeci","word":"șaizeci","meaning":"sixty; 60","priority":"optional","sourceSection":"Tens and Larger Numbers"} -->
+<!-- vocab-card: {"id":"vocab-saptezeci","word":"șaptezeci","meaning":"seventy; 70","priority":"optional","sourceSection":"Tens and Larger Numbers"} -->
+<!-- vocab-card: {"id":"vocab-optzeci","word":"optzeci","meaning":"eighty; 80","priority":"optional","sourceSection":"Tens and Larger Numbers"} -->
+<!-- vocab-card: {"id":"vocab-nouazeci","word":"nouăzeci","meaning":"ninety; 90","priority":"optional","sourceSection":"Tens and Larger Numbers"} -->
+<!-- vocab-card: {"id":"vocab-o-suta","word":"o sută","meaning":"one hundred; 100","priority":"optional","sourceSection":"Tens and Larger Numbers"} -->
+<!-- vocab-card: {"id":"vocab-o-mie","word":"o mie","meaning":"one thousand; 1000","priority":"optional","sourceSection":"Tens and Larger Numbers"} -->
+<!-- grammar-card: {"id":"tens-unit-connector","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Tens and Larger Numbers","rule":"Și joins a ten and a unit in numbers such as 35","example":"Treizeci ___ cinci. (35)","answer":"și","explanation":"The connector means and; de instead connects certain numerals to counted nouns."} -->
 <!-- quiz: {"type":"multiple-choice","question":"How do you say 'thirty-five'?","options":["treizeci și cinci","treisprezece cinci","treizeci de cinci","trei cinci"],"answer":0} -->
 
 ## The Important de Rule
 
-From **20 upward**, Romanian normally inserts **de** before a noun.
+For numbers **20–99**, Romanian inserts **de** before a noun. Exact hundreds and thousands also take **de**. With larger compound numbers ending in **01–19**, **de** is normally omitted: **o sută zece cărți** — 110 books.
 
 - **zece cărți** — ten books
 - **nouăsprezece cărți** — nineteen books
@@ -91,11 +129,13 @@ From **20 upward**, Romanian normally inserts **de** before a noun.
 - **treizeci și unu de ani** — thirty-one years
 - **o sută de lei** — one hundred lei
 
-This **de** is not translated into English, but it is required in standard Romanian quantity phrases.
+This **de** is not translated into English, but it is required in the standard quantity phrases illustrated above. Check the final two digits rather than assuming that every number larger than 20 behaves identically.
+
+<!-- grammar-card: {"id":"de-larger-number-limit","kind":"concept","format":"qa","priority":"essential","sourceSection":"The Important de Rule","rule":"Larger compound numbers ending in 01–19 normally omit de","example":"Does every number above 20 require de before a counted noun?","answer":"No. Larger compounds ending in 01–19 normally omit it, as in o sută zece cărți.","explanation":"The 20–99 pattern and exact hundreds take de, but a blanket above-20 rule misses this qualification."} -->
 
 <!-- quiz: {"type":"multiple-choice","question":"Which phrase is correct for 'twenty books'?","options":["douăzeci cărți","douăzeci de cărți","doi zeci cărți","douăzeci și cărți"],"answer":1} -->
 
-<!-- grammar-card: {"rule":"Numbers from 20 upward usually take de before a noun","hint":"douăzeci de cărți","example":"Am treizeci ___ ani.","answer":"de","explanation":"Romanian inserts de between numbers 20 and higher and the counted noun: treizeci de ani."} -->
+<!-- grammar-card: {"id":"de-thirty-application","kind":"rule","format":"cloze","priority":"essential","sourceSection":"The Important de Rule","rule":"Numbers from 20 upward usually take de before a noun","example":"Am treizeci ___ ani.","answer":"de","explanation":"Thirty belongs to the 20–99 pattern, so use treizeci de ani. Larger compounds ending in 01–19 normally omit de."} -->
 
 ## Sources
 

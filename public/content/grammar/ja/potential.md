@@ -1,5 +1,7 @@
 # Potential Form (食べられる)
 
+<!-- vocab-inventory: {"mode":"explicit"} -->
+
 The potential form expresses the ability to do something — "can do" or "be able to." In this lesson, you will learn how to form the potential for all verb groups and understand common usage patterns.
 
 ## Verb Groups Review
@@ -32,6 +34,10 @@ Change the final **u-sound** to the **e-sound** and add **る**:
 - **お酒(さけ)が飲めますか。** — Can you drink alcohol?
 - **ピアノが弾(ひ)けます。** — I can play the piano.
 - **明日(あした)は早(はや)く起きられます。** — I can wake up early tomorrow.
+
+<!-- grammar-card: {"id":"godan-potential","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Group 1 (u-verbs) — Potential Form","rule":"Godan potential changes the final u-vowel to e and adds る","example":"書く → can write: ___.","answer":"書ける","explanation":"書く (かく) becomes 書ける (かける), not the passive 書かれる."} -->
+<!-- vocab-card: {"id":"vocab-hanasu","word":"話す","reading":"はなす","meaning":"to speak","priority":"optional","sourceSection":"Group 1 (u-verbs) — Potential Form"} -->
+<!-- vocab-card: {"id":"vocab-oyogu","word":"泳ぐ","reading":"およぐ","meaning":"to swim","priority":"optional","sourceSection":"Group 1 (u-verbs) — Potential Form"} -->
 
 <!-- quiz:{"type":"multiple-choice","question":"What is the potential form of 書く (to write)?","options":["書ける","書かれる","書きれる","書くれる"],"answer":0} -->
 
@@ -68,9 +74,10 @@ This is called **ら抜き言葉** and is extremely common in speech. However, i
 
 <!-- quiz:{"type":"multiple-choice","question":"What is the formal potential form of 食べる?","options":["食べれる","食べるれる","食べられる","食べかれる"],"answer":2} -->
 
-<!-- grammar-card: {"rule":"Casual speech drops the ら from られる","hint":"食べられる → ?","example":"納豆(なっとう)___？","answer":"食べれる","explanation":"食べれる is the common spoken ra-dropped potential; 食べられる remains the standard written form."} -->
+<!-- grammar-card: {"id":"ra-dropped-potential","kind":"rule","format":"cloze","priority":"optional","sourceSection":"ら抜き言葉(ことば) — Dropping ら (Colloquial)","rule":"Casual speech drops the ら from られる","hint":"食べられる → common informal potential","example":"納豆(なっとう)___？","answer":"食べれる","explanation":"This is the colloquial ら-dropped potential. Use 食べられる for tests and formal writing; casual speech does not require the shortened form."} -->
+<!-- grammar-card: {"id":"ra-register","kind":"concept","format":"qa","priority":"essential","sourceSection":"ら抜き言葉(ことば) — Dropping ら (Colloquial)","rule":"ら-dropped potential forms are common but informal","example":"Which should you use on a formal test, 食べれる or 食べられる, and why?","answer":"食べられる, the standard full potential form; 食べれる is common informal speech.","explanation":"Common spoken usage is not the same as the standard form expected in formal writing."} -->
 
-<!-- grammar-card: {"rule":"Group 2 verbs form the potential by replacing る with られる","hint":"食べる → ?","example":"刺身(さしみ)が食べ___れます。","answer":"ら","explanation":"食べる drops its る and takes られる, giving 食べられます."} -->
+<!-- grammar-card: {"id":"ichidan-potential","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Group 2 (ru-verbs) — Potential Form","rule":"Group 2 verbs form the potential by replacing る with られる","hint":"食べる → standard potential","example":"刺身(さしみ)が食べ___れます。","answer":"ら","explanation":"食べる drops る and adds られる, producing 食べられます."} -->
 
 ## Group 3 (Irregular Verbs) — Potential Form
 
@@ -87,6 +94,10 @@ This is called **ら抜き言葉** and is extremely common in speech. However, i
 
 > 💡 する becomes **できる** — it is a completely different word, not a conjugation pattern.
 
+<!-- vocab-card: {"id":"vocab-dekiru","word":"できる","reading":"できる","meaning":"to be able to do","priority":"essential","sourceSection":"Group 3 (Irregular Verbs) — Potential Form"} -->
+<!-- vocab-card: {"id":"vocab-unten","word":"運転","reading":"うんてん","meaning":"driving","priority":"optional","sourceSection":"Group 3 (Irregular Verbs) — Potential Form"} -->
+<!-- grammar-card: {"id":"suru-potential","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Group 3 (Irregular Verbs) — Potential Form","rule":"する has the irregular potential できる","example":"I can drive: 運転が___。 (polite nonpast)","answer":"できます","explanation":"Use できる, not passive される, to express being able to do."} -->
+<!-- grammar-card: {"id":"kuru-potential","kind":"rule","format":"qa","priority":"essential","sourceSection":"Group 3 (Irregular Verbs) — Potential Form","rule":"来る has the standard potential 来られる, read こられる","example":"Give the standard potential form of 来る, including its kana reading.","answer":"来られる (こられる).","explanation":"The reading is こられる, not くられる or きられる."} -->
 ## Particle Change: を → が
 
 With the potential form, the object particle **を** often changes to **が**:
@@ -105,7 +116,7 @@ Both を and が are used in modern Japanese, but が is more traditional and co
 
 <!-- quiz:{"type":"multiple-choice","question":"Which particle is commonly used with the potential form?","options":["を","に","で","が"],"answer":3} -->
 
-<!-- grammar-card: {"rule":"The potential form changes を to が","hint":"を / が","example":"辛(から)い食(た)べ物(もの)___食べられません。","answer":"が","explanation":"With 食べられる the object is marked with が, because ability describes a state rather than an action."} -->
+<!-- grammar-card: {"id":"potential-ga","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Particle Change: を → が","rule":"Potential constructions often mark the object with が, but を is also possible","hint":"Use the traditionally taught state-like object marker for ability","example":"辛(から)い食(た)べ物(もの)___食べられません。","answer":"が","explanation":"が is the traditional textbook choice here. Modern Japanese can also retain を; the change is not obligatory.","legacyAliases":[{"rule":"The potential form changes を to が","example":"辛(から)い食(た)べ物(もの)___食べられません。"}]} -->
 
 ## Conjugating the Potential Form
 
@@ -124,6 +135,10 @@ The potential form itself behaves like a Group 2 (ru-verb), so it conjugates reg
 - **前(まえ)は食べられなかったけど、今(いま)は食べられます。** — I couldn't eat it before, but now I can.
 - **日本語が話せるようになりたいです。** — I want to become able to speak Japanese.
 
+<!-- grammar-card: {"id":"potential-negative","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Conjugating the Potential Form","rule":"Potential forms conjugate as ichidan verbs","example":"書ける → cannot write (plain): ___.","answer":"書けない","explanation":"Drop る from 書ける and add ない. Do not treat it as the original godan 書く."} -->
+<!-- grammar-card: {"id":"potential-past","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Conjugating the Potential Form","rule":"Potential plain past replaces る with た","example":"書ける → could write (plain past): ___.","answer":"書けた","explanation":"The potential verb is ichidan, so the past is 書けた."} -->
+<!-- grammar-card: {"id":"potential-past-negative","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Conjugating the Potential Form","rule":"Potential past negative uses なかった","example":"泳げる → could not swim (plain past negative): ___.","answer":"泳げなかった","explanation":"泳ぐ → 泳げる, then ichidan negation and past: 泳げなかった."} -->
+
 ## 〜ようになる — "Become able to"
 
 To express gaining an ability over time, use **potential form + ようになる**:
@@ -134,12 +149,16 @@ To express gaining an ability over time, use **potential form + ようになる*
 - **早起(はやお)きできるようになりたいです。** — I want to become able to wake up early.
 - **漢字が書けるようになるまで練習(れんしゅう)します。** — I'll practice until I can write kanji.
 
+<!-- grammar-card: {"id":"gaining-ability","kind":"rule","format":"cloze","priority":"essential","sourceSection":"〜ようになる — \"Become able to\"","rule":"Potential form plus ようになる expresses gaining an ability","example":"I became able to read Japanese: 日本語が読める___。","answer":"ようになりました","explanation":"読める supplies the ability; ようになりました describes the change into that state."} -->
+
 ## Common Mistakes
 
 ### 1. Using potential form with できる redundantly
 
 - ❌ 話せることができます
 - ✅ 話せます / 話すことができます
+
+<!-- grammar-card: {"id":"avoid-double-potential","kind":"concept","format":"qa","priority":"essential","sourceSection":"1. Using potential form with できる redundantly","rule":"Use a dictionary verb before ことができる rather than marking potential twice","example":"Repair 話せることができます while keeping the ことができます construction.","answer":"話すことができます。","explanation":"話せる already means can speak. An alternative without ことができる is 話せます."} -->
 
 ### 2. Confusing potential and passive for Group 2
 
@@ -148,6 +167,7 @@ For Group 2 verbs, the potential and passive forms look the same (食べられ�
 - **ケーキが食べられる。** — I can eat cake. (potential)
 - **猫にケーキが食べられた。** — The cake was eaten by the cat. (passive)
 
+<!-- grammar-card: {"id":"potential-passive-context","kind":"concept","format":"qa","priority":"essential","sourceSection":"2. Confusing potential and passive for Group 2","rule":"Ichidan potential and passive share the られる form","example":"Can 食べられる by itself tell you whether the meaning is “can eat” or “is eaten”?","answer":"No. The form is shared; context and the participants distinguish potential from passive.","explanation":"A cat as the agent marked に supports the passive reading in the lesson's example."} -->
 ### 3. Forgetting する → できる
 
 - ❌ 運転が**される** (this is passive, not potential)

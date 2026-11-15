@@ -1,5 +1,7 @@
 # Obligation & Necessity (なければならない、べき)
 
+<!-- vocab-inventory: {"mode":"explicit"} -->
+
 Japanese has several ways to express obligation, necessity, and expectation — from formal written rules to casual everyday speech. This lesson covers the full range, including casual contractions that native speakers use constantly.
 
 ## なければならない — "Must / Have To"
@@ -62,7 +64,8 @@ Replacing ならない with いけない is equally common and slightly less for
 
 <!-- quiz:{"type":"multiple-choice","question":"How do you say 'I must study' using なければならない?","options":["勉強しなければならない","勉強してはならない","勉強しなくてもいい","勉強するべきではない"],"answer":0} -->
 
-<!-- grammar-card: {"rule":"なければならない expresses an obligation","hint":"飲む, polite obligation","example":"毎日(まいにち)薬(くすり)を飲(の)ま___。","answer":"なければなりません","explanation":"飲まなければなりません says the medicine has to be taken every day."} -->
+<!-- grammar-card: {"id":"nakereba-obligation","kind":"rule","format":"cloze","priority":"essential","sourceSection":"なければならない — \"Must / Have To\"","rule":"なければならない expresses an obligation","hint":"飲む, polite obligation using なる","example":"毎日(まいにち)薬(くすり)を飲(の)ま___。","answer":"なければなりません","explanation":"飲まない becomes 飲まなければなりません: literally, not taking it will not do. The double negative expresses must."} -->
+<!-- grammar-card: {"id":"obligation-double-negative","kind":"concept","format":"qa","priority":"essential","sourceSection":"なければならない — \"Must / Have To\"","rule":"The negative condition and negative consequence together express necessity","example":"Why does 行かなければならない mean must go rather than must not go?","answer":"It says that not going will not do, so going is necessary.","explanation":"A prohibition instead uses 行ってはいけない. Removing necessity requires 行かなくてもいい, not another added negative."} -->
 
 ## なくてはならない — Alternate "Must"
 
@@ -102,6 +105,8 @@ Another pattern with the same meaning, using a different negative construction.
 
 Both mean: "must go"
 
+<!-- grammar-card: {"id":"nakutewa-obligation","kind":"rule","format":"cloze","priority":"essential","sourceSection":"なくてはならない — Alternate \"Must\"","rule":"なくてはならない is an alternative negative-condition obligation","example":"You must keep promises: 約束は守ら___。 (use なくては, polite なる ending)","answer":"なくてはなりません","explanation":"守らなくてはなりません (まもらなくてはなりません) is equivalent in obligation to 守らなければなりません."} -->
+<!-- grammar-card: {"id":"naranai-ikenai-register","kind":"concept","format":"qa","priority":"optional","sourceSection":"なければいけない — Slight Variant","rule":"ならない and いけない can complete the same obligation patterns","example":"Does replacing ならない with いけない in 行かなければならない reverse its meaning?","answer":"No. Both mean have to go; ならない tends to sound more formal or written.","explanation":"なければ/なくては combine with either ending; politeness is marked separately with なりません or いけません."} -->
 ## Casual Contractions: なきゃ & なくちゃ
 
 In everyday conversation, the long obligation forms are almost always shortened.
@@ -163,7 +168,8 @@ In everyday conversation, the long obligation forms are almost always shortened.
 
 <!-- quiz:{"type":"multiple-choice","question":"What is the casual contraction of 行かなければならない?","options":["行かなくちゃ","行かなきゃ","行っちゃ","行かないと"],"answer":1} -->
 
-<!-- grammar-card: {"rule":"なきゃ is the casual contraction of なければ","hint":"なければ → ?","example":"もう行(い)か___。","answer":"なきゃ","explanation":"行かなきゃ leaves ならない unsaid, which is completely normal in speech."} -->
+<!-- grammar-card: {"id":"nakya-contraction","kind":"rule","format":"cloze","priority":"essential","sourceSection":"なきゃ (from なければ)","rule":"なきゃ is the casual contraction of なければ","hint":"Contract なければ and leave the final obligation clause understood.","example":"もう行(い)か___。","answer":"なきゃ","explanation":"行かなきゃ is conversational gotta go; ならない or いけない can be omitted when understood."} -->
+<!-- grammar-card: {"id":"nakucha-contraction","kind":"rule","format":"cloze","priority":"essential","sourceSection":"なくちゃ (from なくては)","rule":"なくては contracts to なくちゃ in conversation","example":"Contract 帰らなくては: そろそろ帰ら___。","answer":"なくちゃ","explanation":"帰らなくちゃ (かえらなくちゃ) leaves the obligation ending understood; it is not a suitable formal written replacement."} -->
 
 ## べき / べきだ — "Should / Ought To"
 
@@ -226,7 +232,10 @@ In everyday conversation, the long obligation forms are almost always shortened.
 
 <!-- quiz:{"type":"multiple-choice","question":"Which sentence correctly uses べき?","options":["食べるべきではありません","食べてべきではない","食べないべきだ","食べなべきだ"],"answer":0} -->
 
-<!-- grammar-card: {"rule":"べき follows the dictionary form and gives moral advice","hint":"する + べき","example":"もっと勉強(べんきょう)する___。","answer":"べきだ","explanation":"するべきだ says one ought to study more — stronger than a mere suggestion."} -->
+<!-- grammar-card: {"id":"beki-duty","kind":"rule","format":"cloze","priority":"essential","sourceSection":"べき / べきだ — \"Should / Ought To\"","rule":"べき follows the dictionary form and gives moral advice","hint":"Use the strong ought-to expression.","example":"もっと勉強(べんきょう)する___。","answer":"べきだ","explanation":"するべきだ conveys what one ought to do. べき can express a moral or reasoned expectation of proper action, not only personal advice."} -->
+<!-- grammar-card: {"id":"beki-suru-exception","kind":"concept","format":"qa","priority":"essential","sourceSection":"べき / べきだ — \"Should / Ought To\"","rule":"する permits both すべき and するべき","example":"Is するべき incorrect because すべき also exists?","answer":"No. Both すべき and するべき are accepted.","explanation":"すべき preserves a classical shorter form. Other verbs normally retain the dictionary form before べき."} -->
+<!-- grammar-card: {"id":"beki-negative","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Negative: べきではない","rule":"The ordinary negative recommendation negates べきだ","example":"You shouldn't say that: そんなことを言うべき___。 (plain negative)","answer":"ではない","explanation":"言うべきではない negates the recommendation. This is the normal beginner pattern, rather than mechanically using 言わないべきだ."} -->
+<!-- grammar-card: {"id":"beki-advice-force","kind":"concept","format":"qa","priority":"optional","sourceSection":"べき vs ほうがいい","rule":"べき is usually more prescriptive than ほうがいい","example":"Which sounds more like stating a duty, 謝るべきだ or 謝ったほうがいい?","answer":"謝るべきだ; 謝ったほうがいい frames it as advice about what would be better.","explanation":"Choose with care when advising someone: べき can sound judgmental or forceful."} -->
 
 ## はず — "Supposed To / Expected To"
 
@@ -290,7 +299,11 @@ To say "there's no way that…" or "it can't be that…":
 > - 来るべきだ = He **should** come (it's his duty)
 > - 来るはずだ = He **should** come (I expect it based on what I know)
 
-<!-- grammar-card: {"rule":"はず expresses a confident expectation based on what you know","hint":"expectation, polite","example":"彼(かれ)は三時(さんじ)に来(く)る___。","answer":"はずです","explanation":"来るはずです says he is supposed to arrive at three, going by the arrangement."} -->
+<!-- grammar-card: {"id":"hazu-expectation","kind":"rule","format":"cloze","priority":"essential","sourceSection":"はず — \"Supposed To / Expected To\"","rule":"はず expresses a confident expectation based on what you know","hint":"Use the evidence-based expectation expression, politely.","example":"彼(かれ)は三時(さんじ)に来(く)る___。","answer":"はずです","explanation":"来るはずです predicts his arrival from an arrangement or prior knowledge, rather than saying it is his duty."} -->
+<!-- grammar-card: {"id":"hazu-beki-contrast","kind":"concept","format":"qa","priority":"essential","sourceSection":"はず — \"Supposed To / Expected To\"","rule":"はず concerns expected facts, while べき concerns what ought to happen","example":"Does 来るはずだ tell someone they have a moral obligation to come?","answer":"No. It expresses an expectation that they will come; 来るべきだ expresses that they ought to come.","explanation":"English should can translate both, but Japanese distinguishes prediction from duty."} -->
+<!-- grammar-card: {"id":"hazu-na-link","kind":"rule","format":"cloze","priority":"optional","sourceSection":"はず — \"Supposed To / Expected To\"","rule":"な-adjectives take な before はず","example":"It should be easy: 簡単___はずです。","answer":"な","explanation":"簡単なはずです (かんたんなはずです) uses the attributive な; verbs and い-adjectives attach directly."} -->
+<!-- grammar-card: {"id":"hazu-noun-link","kind":"rule","format":"cloze","priority":"optional","sourceSection":"はず — \"Supposed To / Expected To\"","rule":"Nouns take の before はず","example":"It should be a day off: 休み___はずです。","answer":"の","explanation":"休みのはずです (やすみのはずです) links the noun with の, not な."} -->
+<!-- grammar-card: {"id":"hazu-no-way","kind":"concept","format":"qa","priority":"essential","sourceSection":"Negative: はずがない","rule":"はずがない rejects a possibility based on expectation","example":"What does 彼女が嘘をつくはずがない express?","answer":"There is no way she would lie, according to the speaker's reasoning or knowledge.","explanation":"This is a strong judgment about possibility, not a command that she must not lie."} -->
 
 ## Comparison: All Obligation Expressions
 
@@ -316,6 +329,7 @@ In casual speech, **ないと** (short for ないといけない) is very common
 > *Hayaku junbi shinai to, okureru yo.*
 > If you don't get ready soon, you'll be late.
 
+<!-- grammar-card: {"id":"naito-obligation","kind":"concept","format":"qa","priority":"optional","sourceSection":"Additional Casual Expression: ないと","rule":"ないと can leave いけない unspoken in a casual obligation","example":"In もう寝ないと, is the speaker saying they must not sleep?","answer":"No. They mean they have to sleep now, with いけない understood after ないと.","explanation":"The literal negative condition is left unfinished; context supplies the obligation."} -->
 ## Adjective & Noun Obligation
 
 なければならない also works with adjectives and nouns:
@@ -344,6 +358,8 @@ In casual speech, **ないと** (short for ないといけない) is very common
 > *Ōbosha wa Nihon kokuseki denakereba narimasen.*
 > Applicants must be Japanese citizens.
 
+<!-- grammar-card: {"id":"iadjective-obligation","kind":"rule","format":"cloze","priority":"optional","sourceSection":"い-adjectives","rule":"い-adjectives replace い with く before なければならない","example":"The report must be long: レポートは長___なければなりません。","answer":"く","explanation":"長くなければなりません uses the negative conditional of 長い (ながい)."} -->
+<!-- grammar-card: {"id":"noun-na-obligation","kind":"rule","format":"cloze","priority":"optional","sourceSection":"な-adjectives","rule":"Nouns and な-adjectives take でなければならない","example":"The venue must be quiet: 会場は静か___なければなりません。","answer":"で","explanation":"静かでなければなりません uses で; nouns follow the same construction, as in 日本国籍でなければなりません."} -->
 <!-- quiz:{"type":"multiple-choice","question":"彼はもうすぐ来るはずです means:","options":["He must come soon (obligation)","He should come soon (I expect it)","He wants to come soon","He can come soon"],"answer":1} -->
 
 ## Common Mistakes

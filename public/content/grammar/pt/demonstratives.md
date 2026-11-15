@@ -1,5 +1,7 @@
 # Demonstratives (Pronomes Demonstrativos)
 
+<!-- vocab-inventory: {"mode":"explicit"} -->
+
 Demonstrative pronouns in Portuguese are more nuanced than in English. While English only distinguishes between "this" and "that," Brazilian Portuguese uses a three-way system based on distance from the speaker and the listener. Mastering demonstratives is essential for clear communication, as they help you point to objects, refer to ideas, and navigate everyday conversations.
 
 ## The Three Levels of Distance
@@ -10,6 +12,8 @@ Portuguese demonstratives are organized into three groups based on proximity:
 2. **Esse/Essa** — that (near the listener)
 3. **Aquele/Aquela** — that (far from both speaker and listener)
 
+<!-- grammar-card: {"id":"distance-system","kind":"concept","format":"qa","priority":"essential","sourceSection":"The Three Levels of Distance","rule":"The formal three-way system relates distance to speaker and listener","example":"In the three-way distinction, which series refers to something near the speaker, near the listener, and far from both?","answer":"Este/esta near the speaker; esse/essa near the listener; aquele/aquela far from both.","explanation":"This is the distinction taught for careful usage; casual Brazilian speech often merges este and esse."} -->
+
 ### Este/Esta — Near the Speaker
 
 Use **este** (masculine) and **esta** (feminine) when referring to something close to you:
@@ -18,6 +22,10 @@ Use **este** (masculine) and **esta** (feminine) when referring to something clo
 - **Esta casa é bonita** (esh-tah kah-zah eh boh-nee-tah) — This house is beautiful
 - **Este café está quente** (esh-chee kah-feh esh-tah ken-chee) — This coffee is hot
 - **Esta música é boa** (esh-tah moo-zee-kah eh boh-ah) — This music is good
+
+<!-- vocab-card: {"id":"vocab-este","word":"este","meaning":"this (masculine singular; near the speaker in the three-way system)","priority":"optional","sourceSection":"Este/Esta — Near the Speaker"} -->
+<!-- vocab-card: {"id":"vocab-esta","word":"esta","meaning":"this (feminine singular; near the speaker in the three-way system)","priority":"optional","sourceSection":"Este/Esta — Near the Speaker"} -->
+<!-- grammar-card: {"id":"speaker-demonstrative","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Este/Esta — Near the Speaker","rule":"Portuguese has three levels of demonstratives: este (near me), esse (near you), aquele (far from both)","example":"___ livro aqui é meu (this book here is mine)","answer":"Este","explanation":"In the three-way distinction, aqui places the masculine singular livro near the speaker."} -->
 
 ### Esse/Essa — Near the Listener
 
@@ -28,6 +36,9 @@ Use **esse** (masculine) and **essa** (feminine) when referring to something clo
 - **Me passa esse prato** (mee pah-sah eh-see prah-too) — Pass me that plate (near you)
 - **Essa ideia é interessante** (eh-sah ee-day-ah eh een-teh-reh-san-chee) — That idea is interesting
 
+<!-- vocab-card: {"id":"vocab-esse","word":"esse","meaning":"that (masculine singular; near the listener in the three-way system)","priority":"optional","sourceSection":"Esse/Essa — Near the Listener"} -->
+<!-- vocab-card: {"id":"vocab-essa","word":"essa","meaning":"that (feminine singular; near the listener in the three-way system)","priority":"optional","sourceSection":"Esse/Essa — Near the Listener"} -->
+
 ### Aquele/Aquela — Far from Both
 
 Use **aquele** (masculine) and **aquela** (feminine) when referring to something far from both speaker and listener:
@@ -36,6 +47,10 @@ Use **aquele** (masculine) and **aquela** (feminine) when referring to something
 - **Aquela montanha é linda** (ah-keh-lah mon-tahn-yah eh leen-dah) — That mountain (over there) is beautiful
 - **Você viu aquele carro?** (voh-seh vee-oo ah-keh-lee kah-hoo) — Did you see that car (over there)?
 - **Aquela loja está fechada** (ah-keh-lah loh-zhah esh-tah feh-shah-dah) — That store (over there) is closed
+
+<!-- vocab-card: {"id":"vocab-aquele","word":"aquele","meaning":"that over there (masculine singular)","priority":"optional","sourceSection":"Aquele/Aquela — Far from Both"} -->
+<!-- vocab-card: {"id":"vocab-aquela","word":"aquela","meaning":"that over there (feminine singular)","priority":"optional","sourceSection":"Aquele/Aquela — Far from Both"} -->
+<!-- grammar-card: {"id":"distant-agreement","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Aquele/Aquela — Far from Both","rule":"A distant demonstrative agrees with its noun","example":"___ montanha é linda. (That mountain far from both of us)","answer":"Aquela","explanation":"Montanha is feminine singular; use aquela rather than aquele."} -->
 
 ## Plural Forms
 
@@ -53,6 +68,8 @@ Each demonstrative has a plural form — just add **-s** for masculine or change
 - **Estes sapatos são confortáveis** (esh-cheez sah-pah-tooz sow kon-for-tah-veys) — These shoes are comfortable
 - **Essas flores são lindas** (eh-sahz floh-rees sow leen-dahz) — Those flowers (near you) are beautiful
 - **Aqueles meninos estão brincando** (ah-keh-leez meh-nee-nooz esh-tow breen-kan-doo) — Those boys (over there) are playing
+
+<!-- grammar-card: {"id":"demonstrative-plural","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Plural Forms","rule":"Demonstratives match noun number and gender","example":"___ flores são lindas. (Those flowers near you; three-way distinction)","answer":"Essas","explanation":"Flores is feminine plural, so singular essa becomes essas."} -->
 
 <!-- quiz: {"type":"multiple-choice","question":"Which demonstrative would you use to point at something close to YOU?","options":["Esse/Essa","Este/Esta","Aquele/Aquela","Isso"],"answer":1} -->
 
@@ -74,6 +91,12 @@ Examples:
 
 > **Tip:** In casual Brazilian Portuguese, **isso** is used very frequently, even when **isto** would be technically correct. You'll hear "isso!" as a way of saying "that's right!" or "exactly!"
 
+<!-- vocab-card: {"id":"vocab-isto","word":"isto","meaning":"this (neuter; an unspecified object or idea)","priority":"optional","sourceSection":"Neuter Forms: Isto, Isso, Aquilo"} -->
+<!-- vocab-card: {"id":"vocab-isso","word":"isso","meaning":"that (neuter; an unspecified object or idea)","priority":"optional","sourceSection":"Neuter Forms: Isto, Isso, Aquilo"} -->
+<!-- vocab-card: {"id":"vocab-aquilo","word":"aquilo","meaning":"that over there (neuter)","priority":"optional","sourceSection":"Neuter Forms: Isto, Isso, Aquilo"} -->
+<!-- grammar-card: {"id":"neuter-reference","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Neuter Forms: Isto, Isso, Aquilo","rule":"Neuter demonstratives (isto, isso, aquilo) refer to abstract ideas, situations, or unidentified objects","example":"___ é verdade! (That's true!)","answer":"Isso","explanation":"Isso refers to a statement or idea, not a masculine or feminine noun."} -->
+<!-- grammar-card: {"id":"neuter-noun-contrast","kind":"concept","format":"qa","priority":"essential","sourceSection":"Neuter Forms: Isto, Isso, Aquilo","rule":"Neuter demonstratives do not modify gendered nouns","example":"Why do you say este livro rather than isto livro?","answer":"Livro is a specific masculine noun; isto is a neuter form used without a noun to refer to something unspecified.","explanation":"The gendered series agrees with nouns; the neuter series refers independently."} -->
+
 <!-- quiz: {"type":"multiple-choice","question":"'Isso é muito bom!' — What does 'isso' refer to?","options":["A masculine object near the speaker","A feminine object near the listener","Something abstract or unspecified near the listener","A masculine object far from both"],"answer":2} -->
 
 ## Contractions with Prepositions
@@ -94,6 +117,8 @@ Demonstratives contract with the prepositions **de** (of/from), **em** (in/on), 
 - **O que você sabe disso?** (oo kee voh-seh sah-bee dee-soo) — What do you know about that?
 - **Ela saiu daquela loja** (eh-lah sah-ee-oo dah-keh-lah loh-zhah) — She left that store (over there)
 
+<!-- grammar-card: {"id":"de-demonstrative","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Contractions with \"de\"","rule":"De contracts with demonstratives","example":"Ela saiu ___ loja. (de + aquela)","answer":"daquela","explanation":"Compare deste, desse, and neuter disto/disso/daquilo."} -->
+
 ### Contractions with "em"
 
 | | este/esta | esse/essa | aquele/aquela |
@@ -107,6 +132,8 @@ Demonstratives contract with the prepositions **de** (of/from), **em** (in/on), 
 - **Neste momento, estou ocupado** (nesh-chee moh-men-too esh-toh oh-koo-pah-doo) — At this moment, I'm busy
 - **Eu penso nisso todo dia** (eh-oo pen-soo nee-soo toh-doo jee-ah) — I think about that every day
 - **Naquela época, eu era jovem** (nah-keh-lah eh-poh-kah eh-oo eh-rah zhoh-veng) — At that time, I was young
+
+<!-- grammar-card: {"id":"em-demonstrative","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Contractions with \"em\"","rule":"Demonstratives contract with prepositions de, em, and a","example":"Eu penso ___ todo dia (I think about that every day)","answer":"nisso","explanation":"Pensar em + isso gives pensar nisso. Only the aquele series contracts with a."} -->
 
 ### Contractions with "a"
 
@@ -123,6 +150,8 @@ Demonstratives contract with the prepositions **de** (of/from), **em** (in/on), 
 - **Eu fui àquela festa** (eh-oo foo-ee ah-keh-lah fesh-tah) — I went to that party (over there)
 - **Ela se referiu àquilo** (eh-lah see heh-feh-ree-oo ah-kee-loo) — She referred to that
 
+<!-- grammar-card: {"id":"a-demonstrative","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Contractions with \"a\"","rule":"A contracts with the aquele series but not este/esse","example":"Eu fui ___ festa. (a + aquela)","answer":"àquela","explanation":"Keep the grave accent in àquela, àquele, àqueles, àquelas, and àquilo."} -->
+
 <!-- quiz: {"type":"multiple-choice","question":"What is the contraction of 'em + esse'?","options":["neste","desse","nesse","esse"],"answer":2} -->
 
 ## Demonstratives in Everyday Speech
@@ -133,6 +162,8 @@ In casual Brazilian Portuguese, you'll notice some practical patterns:
 - **Isso** is extremely common as an interjection meaning "exactly!" or "that's it!"
 - **Aquele** is often used to refer to something previously mentioned
 
+<!-- grammar-card: {"id":"demonstrative-discourse","kind":"concept","format":"qa","priority":"optional","sourceSection":"Demonstratives in Everyday Speech","rule":"Demonstratives can point back to discourse or a past period","example":"Must aquele always point to a physically distant object?","answer":"No. It can also refer back to something mentioned or to a remote period, as in naquela época.","explanation":"Demonstratives organize ideas and remembered contexts as well as physical distance."} -->
+
 Common expressions:
 
 - **É isso aí!** (eh ee-soo ah-ee) — That's it! / Exactly!
@@ -141,13 +172,14 @@ Common expressions:
 - **Por isso** (por ee-soo) — Because of that / That's why
 - **Apesar disso** (ah-peh-zar dee-soo) — Despite that
 
+<!-- grammar-card: {"id":"spoken-esse-merge","kind":"concept","format":"qa","priority":"optional","sourceSection":"Demonstratives in Everyday Speech","rule":"Casual Brazilian speech often uses esse for este","example":"Does everyday Brazilian speech always maintain a strict este-versus-esse distance distinction?","answer":"No. Esse/essa and isso often extend to contexts assigned to este/esta and isto in the three-way system.","explanation":"Keep the careful three-way distinction available without calling ordinary Brazilian usage universally wrong."} -->
+<!-- vocab-card: {"id":"vocab-isso-ai","word":"É isso aí!","meaning":"That is it!; Exactly!","priority":"optional","sourceSection":"Demonstratives in Everyday Speech"} -->
+<!-- vocab-card: {"id":"vocab-nada-disso","word":"nada disso","meaning":"none of that; not at all","priority":"optional","sourceSection":"Demonstratives in Everyday Speech"} -->
+<!-- vocab-card: {"id":"vocab-alem-disso","word":"além disso","meaning":"besides that; moreover","priority":"optional","sourceSection":"Demonstratives in Everyday Speech"} -->
+<!-- vocab-card: {"id":"vocab-por-isso","word":"por isso","meaning":"because of that; that is why","priority":"optional","sourceSection":"Demonstratives in Everyday Speech"} -->
+<!-- vocab-card: {"id":"vocab-apesar-disso","word":"apesar disso","meaning":"despite that","priority":"optional","sourceSection":"Demonstratives in Everyday Speech"} -->
+
 <!-- quiz: {"type":"multiple-choice","question":"How do you say 'because of that' in Portuguese?","options":["Nada disso","Além disso","Por isso","Apesar disso"],"answer":2} -->
-
-<!-- grammar-card: {"rule":"Portuguese has three levels of demonstratives: este (near me), esse (near you), aquele (far from both)","hint":"Think of three circles of distance","example":"___ livro aqui é meu (this book here is mine)","answer":"Este","explanation":"Este is used for things near the speaker. The word 'aqui' (here) confirms proximity to the speaker."} -->
-
-<!-- grammar-card: {"rule":"Demonstratives contract with prepositions de, em, and a","hint":"de + esse = desse, em + este = neste","example":"Eu penso ___ todo dia (I think about that every day)","answer":"nisso","explanation":"'Nisso' is the contraction of 'em + isso.' The verb 'pensar' requires the preposition 'em' (pensar em = to think about)."} -->
-
-<!-- grammar-card: {"rule":"Neuter demonstratives (isto, isso, aquilo) refer to abstract ideas, situations, or unidentified objects","hint":"Use neuter when there's no specific gendered noun","example":"___ é verdade! (That's true!)","answer":"Isso","explanation":"'Isso' is the neuter form for something abstract (a statement or idea) near the listener or just mentioned. It's the most common neuter demonstrative in daily speech."} -->
 
 ## Sources
 

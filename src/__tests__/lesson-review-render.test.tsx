@@ -4,6 +4,9 @@ import GrammarCard from '../components/srs/GrammarCard';
 import LessonReviewEditor, { LessonReviewPreview } from '../components/grammar/LessonReviewEditor';
 import type { GrammarReviewItem, VocabularyReviewItem } from '../lib/lesson-review';
 import type { Word } from '../db/schema';
+import pluralsLesson from '../../public/content/grammar/ar/plurals.md?raw';
+import { parseLessonReviewItems } from '../lib/lesson-capture';
+import { fillBlank } from '../lib/grammar-cards';
 
 const concept: GrammarReviewItem = {
   id: 'form-i', kind: 'concept', source: 'grammar-card', provenance: 'authored',
@@ -69,6 +72,26 @@ describe('lesson review previews and normal grammar review', () => {
     expect(html).toContain('dir="rtl"');
     expect(html).toContain(vocabulary.meaning);
     expect(html).toContain(vocabulary.contextSentence);
+  });
+
+  it('reveals the real Arabic sound feminine plural without filling a Latin transliteration with Arabic', () => {
+    const parsed = parseLessonReviewItems(pluralsLesson);
+    expect(parsed.diagnostics).toEqual([]);
+    const item = parsed.items.find((candidate) => candidate.id === 'sound-feminine-teachers');
+    if (!item || item.kind === 'vocabulary') throw new Error('Missing sound feminine plural rule');
+    expect(fillBlank(item.prompt, item.answer)).toBe('Complete “female teachers”: مُعَلِّمَاتٌ.');
+    const cloze: Word = {
+      ...word, word: item.answer, reading: item.hint, meaning: item.explanation,
+      contextSentence: item.prompt, grammarRule: item.rule, grammarKind: item.kind,
+      grammarFormat: item.format, tags: ['grammar', 'lesson:plurals'],
+    };
+    const front = renderToStaticMarkup(<GrammarCard word={cloze} isFlipped={false} onFlip={() => {}} />);
+    expect(front).not.toContain('muʿallim');
+    expect(front).not.toContain('مُعَلِّمَاتٌ');
+    const back = renderToStaticMarkup(<GrammarCard word={cloze} isFlipped onFlip={() => {}} />);
+    expect(back).toContain('Complete “female teachers”: مُعَلِّمَاتٌ.');
+    expect(back).toContain('muʿallimātun');
+    expect(back).not.toContain('muʿallimَاتٌ');
   });
 
   it('provides a small labeled offline editor and an explicit preview, not a second dialog', () => {

@@ -1,5 +1,7 @@
 # Understanding Verb Types — る, う, and Irregular
 
+<!-- vocab-inventory: {"mode":"explicit"} -->
+
 Before you can conjugate Japanese verbs, you need to know which **type** a verb belongs to. Japanese verbs fall into three categories: **る-verbs** (ichidan), **う-verbs** (godan), and **irregular verbs**. The type determines how every single conjugation is formed, so getting this right is essential.
 
 ## る-Verbs (Ichidan / One-Row Verbs)
@@ -71,6 +73,8 @@ First set aside the irregular verbs **する** and **来る**, including compoun
 > **The honest truth:** The /i/ and /e/ rule works most of the time, but some common verbs break it. The safest approach is to memorize verb types when you learn new vocabulary.
 
 <!-- grammar-card: {"id":"classification-heuristic","kind":"concept","format":"qa","priority":"essential","sourceSection":"How to Tell Them Apart","rule":"An /i/ or /e/ sound before る is a clue, not proof of ichidan membership","example":"After setting aside する and 来る, does an /i/ or /e/ sound before る guarantee an ichidan verb?","answer":"No. It suggests ichidan, but godan exceptions such as 帰る (かえる) and 走る (はしる) must be learned with their verb type.","explanation":"帰る really does have /e/ before る. It is an exception to the shortcut, not an /a/-vowel verb."} -->
+<!-- grammar-card: {"id":"non-ru-classification","kind":"concept","format":"qa","priority":"optional","sourceSection":"How to Tell Them Apart","rule":"Ordinary dictionary verbs not ending in る are godan after irregulars are set aside","example":"After setting aside the irregular verbs, how do you classify a dictionary verb that does not end in る?","answer":"As a godan (う-) verb.","explanation":"This is the first branch of the decision guide; /i/ and /e/ matter only for verbs ending in る."} -->
+<!-- grammar-card: {"id":"a-u-o-ru-classification","kind":"concept","format":"qa","priority":"optional","sourceSection":"How to Tell Them Apart","rule":"An /a/, /u/, or /o/ sound before final る identifies a godan verb in this guide","example":"After irregulars are set aside, which class does a final る verb belong to if the preceding vowel is /a/, /u/, or /o/?","answer":"Godan (う-verb).","explanation":"The potentially ichidan branch requires /i/ or /e/, and even that branch has exceptions."} -->
 
 ## Watch Out: Trick Verbs
 
@@ -97,6 +101,9 @@ These must be memorized, but the list of common exceptions is small and you will
 <!-- grammar-card: {"id":"kaeru-godan-polite","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Watch Out: Trick Verbs","rule":"Some verbs ending in る are godan despite appearances","hint":"帰る, polite","example":"毎日(まいにち)六時(ろくじ)に家(いえ)に___。","answer":"帰(かえ)ります","explanation":"帰る looks ichidan but conjugates as godan, giving 帰ります rather than 帰ます."} -->
 
 <!-- grammar-card: {"id":"hashiru-godan-classification","kind":"rule","format":"qa","priority":"optional","sourceSection":"Watch Out: Trick Verbs","rule":"走る is a godan exception to the /i/ + る shortcut","example":"Classify 走る (はしる, to run): ichidan, godan, or irregular?","answer":"Godan (う-verb).","explanation":"The /i/ sound before る does not make 走る ichidan. Learn its type with its meaning."} -->
+<!-- grammar-card: {"id":"kiru-godan-classification","kind":"rule","format":"qa","priority":"optional","sourceSection":"Watch Out: Trick Verbs","rule":"切る is godan despite its /i/ + る ending","example":"Which verb class does 切る (きる, to cut) belong to?","answer":"Godan (う-verb).","explanation":"The verb meaning to cut is one of the listed exceptions; its spelling and meaning matter."} -->
+<!-- grammar-card: {"id":"shiru-godan-classification","kind":"rule","format":"qa","priority":"optional","sourceSection":"Watch Out: Trick Verbs","rule":"知る is godan despite its /i/ + る ending","example":"Which verb class does 知る (しる, to know) belong to?","answer":"Godan (う-verb).","explanation":"Do not infer ichidan membership solely from the vowel before る."} -->
+<!-- grammar-card: {"id":"hairu-godan-classification","kind":"rule","format":"qa","priority":"optional","sourceSection":"Watch Out: Trick Verbs","rule":"入る is godan despite its /i/ + る ending","example":"Which verb class does 入る (はいる, to enter) belong to?","answer":"Godan (う-verb).","explanation":"Its kana reading has /i/ immediately before る, but the verb belongs to the exception list."} -->
 
 ## Irregular Verbs
 
@@ -143,6 +150,8 @@ All する-compound verbs conjugate the same way — only the する part change
 | Irregular | — | Memorize these two | する, 来る |
 
 Knowing verb types is the foundation for every conjugation you will learn from here on — negative, past, て-form, potential, and more. In the next lesson, we will put this knowledge to use with the negative verb form.
+
+<!-- grammar-card: {"id":"row-names-memory-cue","kind":"concept","format":"qa","priority":"optional","sourceSection":"Quick Reference","rule":"The one-row and five-row names cue different conjugation behavior","example":"How do the names one-row and five-row help you remember the difference between ichidan and godan?","answer":"Ichidan keeps one stable stem after dropping る; godan changes the final kana across vowel rows for different conjugations.","explanation":"The names cue stem behavior, not a guarantee that every verb ending in る is ichidan."} -->
 
 ## Sources
 

@@ -1,5 +1,7 @@
 # かもしれない — Might / Maybe
 
+<!-- vocab-inventory: {"mode":"explicit"} -->
+
 > **Source:** Content from [Tofugu](https://www.tofugu.com/japanese-grammar/kamoshirenai/). For personal study.
 
 〜かもしれない for Uncertainty
@@ -16,7 +18,10 @@ Uncertainty
 
 ## The Basics
 
-〜かもしれない is the Japanese equivalent of "may" or "might." It's attached to a word or a sentence to convey the nuance that there's a possibility something is the case, but you're not entirely certain. In other words, it is used to describe your guess when you don't have any solid evidence to back it up. There are other ways to communicate your supposition like と思う or だろう, but 〜かもしれない shows the weakest degree of confidence towards the assumption.
+〜かもしれない is the Japanese equivalent of "may" or "might." It's attached to a word or a sentence to present something as a possibility rather than a confident conclusion. Compared with an ordinary prediction using だろう, it leaves more uncertainty; it does not assign a fixed probability or prohibit evidence.
+
+<!-- grammar-card: {"id":"possibility-not-proof","kind":"concept","format":"qa","priority":"essential","sourceSection":"The Basics","rule":"かもしれない leaves a possibility open rather than asserting a confident conclusion","example":"Does 雨が降るかもしれない require that the speaker has absolutely no evidence of rain?","answer":"No. It presents rain as a possibility, even if some evidence supports it, rather than committing to a confident prediction.","explanation":"The form marks the speaker's stance, not an exact probability or a ban on evidence."} -->
+<!-- vocab-card: {"id":"vocab-furu","word":"降る","reading":"ふる","meaning":"to fall (rain or snow)","priority":"optional","sourceSection":"The Basics"} -->
 
 For example, suppose someone rang your doorbell and you assumed it was a pizza delivery person. You can use 〜かもしれない and say:
 
@@ -24,7 +29,7 @@ For example, suppose someone rang your doorbell and you assumed it was a pizza d
 
   - It **may** be a pizza delivery person.
 
-Here, 〜かもしれない shows that you're guessing it's a delivery person but you aren't really sure. If you're quite confident that it *is* the pizza delivery person based on the delivery notification you received earlier, 〜かもしれない isn't what you want to use.
+Here, 〜かもしれない shows that you're presenting the delivery person as a possibility, not a confident conclusion. You can have evidence and still use it if you wish to leave the possibility open; it does not require having no evidence at all.
 
 Let's take a look at another scenario: you glance out the window, the sky is a little dark and you suspect it's going to rain. In this case, you can use 〜かもしれない and say:
 
@@ -32,7 +37,7 @@ Let's take a look at another scenario: you glance out the window, the sky is a l
 
   - It **might** rain.
 
-Again, 〜かもしれない here indicates that you think it might rain, but it's just a guess. If you checked the weather radar earlier or if the sky is for sure telling you it's going to rain soon, 〜かもしれない isn't suitable.
+Again, 〜かもしれない here leaves rain as a possibility. Even after checking a radar, you could use it if rain remains uncertain; a confident prediction calls for a different expression.
 
 You'll later learn additional expressions for when you're more confident in your prediction in Beyond the Basics, but for now, let's move on and check out the patterns of use.
 
@@ -68,6 +73,9 @@ You can also add じゃない or ではない to talk about negative things.
 
   - It **might not** be a cat.
 
+<!-- grammar-card: {"id":"noun-without-da","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Nouns + 〜かもしれない","rule":"A present affirmative noun takes かもしれない without だ","example":"It might be a cat: ネコ___。","answer":"かもしれない","explanation":"Do not insert present affirmative だ or です. The past だった and negatives じゃない/ではない can precede this ending."} -->
+<!-- grammar-card: {"id":"noun-past","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Nouns + 〜かもしれない","rule":"A past noun predicate keeps だった before かもしれない","example":"It might have been a cat: ネコ___かもしれない。","answer":"だった","explanation":"The past copula locates the possible identity in the past."} -->
+
 #### な-Adjective + 〜かもしれない
 
 Since な-adjectives are noun-based adjectives, they work very similarly. In the same way a noun connects to 〜かもしれない, a な-adjective (in its stem form) directly attaches to 〜かもしれない.
@@ -94,6 +102,9 @@ You also use じゃない or ではない to form negative sentences with 〜か
 
   - They **might not be** famous.
 
+<!-- grammar-card: {"id":"na-negative","kind":"rule","format":"cloze","priority":"optional","sourceSection":"な-Adjective + 〜かもしれない","rule":"A negative な-adjective can precede かもしれない","example":"They might not be famous (contracted negative): 有名___かもしれない。","answer":"じゃない","explanation":"Use the stem directly for the affirmative, but retain the negative predicate here; ではない is the uncontracted alternative."} -->
+<!-- vocab-card: {"id":"vocab-yuumei","word":"有名","reading":"ゆうめい","meaning":"famous","priority":"optional","sourceSection":"な-Adjective + 〜かもしれない"} -->
+
 #### い-Adjective + 〜かもしれない
 
 〜かもしれない can directly follow an い-adjective, like:
@@ -115,6 +126,9 @@ The negative (くない) form:
   - 面白**くない**かもしれない。
 
   - Maybe it **isn't** interesting.
+
+<!-- grammar-card: {"id":"i-past","kind":"rule","format":"cloze","priority":"optional","sourceSection":"い-Adjective + 〜かもしれない","rule":"An い-adjective supplies its own past form before かもしれない","example":"Maybe it was interesting: 面白___かもしれない。","answer":"かった","explanation":"面白い becomes 面白かった, not 面白いだった. The negative similarly uses 面白くない."} -->
+<!-- vocab-card: {"id":"vocab-omoshiroi","word":"面白い","reading":"おもしろい","meaning":"interesting; amusing","priority":"optional","sourceSection":"い-Adjective + 〜かもしれない"} -->
 
 #### Verb + 〜かもしれない
 
@@ -140,6 +154,8 @@ The negative (ない) form:
 
 Keep in mind that Japanese verbs have different conjugation patterns depending on type. If you aren't familiar with verb types, check out this page.
 
+<!-- grammar-card: {"id":"verb-negative","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Verb + 〜かもしれない","rule":"A verb is conjugated before adding かもしれない","example":"Maybe they will not eat it: 食べ___かもしれない。","answer":"ない","explanation":"食べない is the plain negative; past possibility instead uses 食べたかもしれない."} -->
+
 #### 〜かもしれない + Conjunction Particle
 
 So far we've only seen examples where 〜かもしれない is used at the end of a sentence, but it can also be used in the middle. In this case it's usually followed by a conjunction such as から (so) or けど (but).
@@ -151,6 +167,9 @@ So far we've only seen examples where 〜かもしれない is used at the end o
   - 雨が降る**かもしれないけど**、傘はいらない。
 
   - It **may** rain, **but** I don't need an umbrella.
+
+<!-- grammar-card: {"id":"possibility-concession","kind":"rule","format":"cloze","priority":"optional","sourceSection":"〜かもしれない + Conjunction Particle","rule":"けど after かもしれない concedes the possibility before dismissing it","hint":"Acknowledge possible rain, then contrast the umbrella decision.","example":"雨が降る___、傘はいらない。","answer":"かもしれないけど","explanation":"The possibility is conceded, but an umbrella is still judged unnecessary."} -->
+<!-- grammar-card: {"id":"possibility-reason","kind":"rule","format":"cloze","priority":"optional","sourceSection":"〜かもしれない + Conjunction Particle","rule":"かもしれない expresses a genuine possibility","hint":"Give possible rain as the reason for the suggestion.","example":"雨が降る___、傘を持っていったら？","answer":"かもしれないから","explanation":"から uses the possibility as a reason for taking an umbrella."} -->
 
 ### Conjugating 〜かもしれない
 
@@ -173,6 +192,9 @@ The ない part of 〜かもしれない conjugates like an い-adjective. Here 
       〜かもしれませんでした 
  〜かもしれなかったです
   
+
+<!-- grammar-card: {"id":"polite-possibility","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Conjugating 〜かもしれない","rule":"かもしれません is the polite form of かもしれない","hint":"Use the polite negative-style ending rather than adding です.","example":"このアイディア、面白い___。","answer":"かもしれません","explanation":"The polite form softens the judgment without changing the possible event into a negative one."} -->
+<!-- grammar-card: {"id":"past-modal-versus-past-event","kind":"concept","format":"qa","priority":"optional","sourceSection":"Conjugating 〜かもしれない","rule":"Past possibility and a possibility about a past event are different","example":"Which form says maybe they ate: 食べたかもしれない or 食べるかもしれなかった?","answer":"食べたかもしれない.","explanation":"Put past tense on 食べる to locate the eating in the past. Conjugating the modal itself instead places the possibility in a past setting."} -->
 
 ### かも For Casual Conversation
 
@@ -202,6 +224,9 @@ You may also see かも followed by だから〜 to say "so…," as in:
 
 Although not necessarily the most traditional and proper usage, these expressions using かも are becoming increasingly popular, particularly among younger generations.
 
+<!-- grammar-card: {"id":"casual-shortening","kind":"concept","format":"qa","priority":"optional","sourceSection":"かも For Casual Conversation","rule":"かも is a casual shortening with newer colloquial extensions","example":"What register does 日本に行くかも belong to, and are かもです and かもだから equally standard formal models?","answer":"It is casual speech; かもです and かもだから are colloquial extensions, not standard formal-writing models.","explanation":"The shortened form is common; the lesson's newer extensions should retain their usage qualification."} -->
+<!-- vocab-card: {"id":"vocab-mankai","word":"満開","reading":"まんかい","meaning":"full bloom","priority":"optional","sourceSection":"かも For Casual Conversation"} -->
+
 ### Expression Commonly Used with 〜かもしれない
 
 Because 〜かもしれない expresses uncertainty, it pairs nicely with other terms that connote a lesser likelihood, such as もしかしたら/もしかすると or ひょっとしたら/ひょっとすると (perhaps) and "if…" sentences with the conditional forms 〜ば or 〜たら.
@@ -224,7 +249,7 @@ As the probability level of the expression increases, it becomes less likely to 
 > 
 > 
 
-Although it may be obvious, 〜かもしれない cannot be used with words that indicate a very high probability, such as きっと (surely) or 必ず (inevitably).
+Words expressing very high confidence, such as きっと (surely) or 必ず (inevitably), normally clash with the tentative reading illustrated here. The following marks flag that pragmatic mismatch, not a universal syntactic prohibition.
 
 > 
 > 
@@ -246,9 +271,12 @@ However, 〜かもしれない can sometimes be used with a word like 確かに 
 
 That's because 確かに isn't just about expressing the likelihood of something happening. It can also be used to confirm a fact, and is used similarly to "indeed" or "you are correct that…" Hence, when 確かに is used in the latter sense, it can be used with 〜かもしれない.
 
-<!-- grammar-card: {"rule":"けど after かもしれない concedes the possibility before dismissing it","hint":"かもしれない + けど","example":"雨が降る___、傘はいらない。","answer":"かもしれないけど","explanation":"It admits rain is possible and then rejects the umbrella anyway."} -->
-
-<!-- grammar-card: {"rule":"かもしれない expresses a genuine possibility","hint":"かもしれない + から","example":"雨が降る___、傘を持っていったら？","answer":"かもしれないから","explanation":"から adds the reason: since it might rain, why not take an umbrella?"} -->
+<!-- grammar-card: {"id":"adverb-compatibility","kind":"concept","format":"qa","priority":"optional","sourceSection":"Expression Commonly Used with 〜かもしれない","rule":"Tentative adverbs fit possibility better than categorical certainty","example":"Why does もしかしたら fit a tentative possibility better than 必ず, while 確かに can still occur?","answer":"もしかしたら reinforces uncertainty, while 必ず normally clashes with it; 確かに can mean indeed or you are right, acknowledging a point rather than guaranteeing the outcome.","explanation":"多分 with かもしれない is heard too, though it may feel redundant or mismatched. These are contextual tendencies, not rigid probability equations."} -->
+<!-- vocab-card: {"id":"vocab-moshikashitara","word":"もしかしたら","reading":"もしかしたら","meaning":"perhaps; possibly","priority":"optional","sourceSection":"Expression Commonly Used with 〜かもしれない"} -->
+<!-- vocab-card: {"id":"vocab-bazuru","word":"バズる","reading":"ばずる","meaning":"to go viral (online)","priority":"optional","sourceSection":"Expression Commonly Used with 〜かもしれない"} -->
+<!-- vocab-card: {"id":"vocab-hyottoshitara","word":"ひょっとしたら","reading":"ひょっとしたら","meaning":"perhaps; by some chance","priority":"optional","sourceSection":"Expression Commonly Used with 〜かもしれない"} -->
+<!-- vocab-card: {"id":"vocab-kanarazu","word":"必ず","reading":"かならず","meaning":"without fail; certainly","priority":"optional","sourceSection":"Expression Commonly Used with 〜かもしれない"} -->
+<!-- vocab-card: {"id":"vocab-tashikani","word":"確かに","reading":"たしかに","meaning":"certainly; indeed; admittedly","priority":"optional","sourceSection":"Expression Commonly Used with 〜かもしれない"} -->
 
 ## Beyond The Basics
 
@@ -276,6 +304,8 @@ Let's take a look at a different scenario. Assume you're in charge of deciding y
 
 In this case, it's possible that you're using かもしれません because you're only guessing that this project idea, if selected, will generate interesting results. However, it's also possible that you're using かもしれません to make how you really feel a little more vague. Perhaps you wish to avoid being affirmative because you're concerned that your supervisor will have a negative reaction to your suggestion. Or, perhaps you wish to lessen your decision-making responsibility. Whatever the reason, かもしれません provides a buffer to your statement and allows you to avoid taking full responsibility for it.
 
+<!-- grammar-card: {"id":"feelings-hedge","kind":"concept","format":"qa","priority":"optional","sourceSection":"〜かもしれない For Adding Ambiguity To How You Feel","rule":"A possibility expression can soften a feeling the speaker already has","example":"Does すきかも always mean the speaker cannot tell how they feel?","answer":"No. In informal speech it can make an already-felt emotion less direct or less committal.","explanation":"The form can buffer a confession or an opinion, not just report factual uncertainty."} -->
+
 ### 〜のかもしれない
 
 The explanatory の can also be used with 〜かもしれない, as in 〜のかもしれない. For instance, to discuss your suspicion that your friend will not eat raw fish, you could use 〜かもしれない with or without の:
@@ -300,6 +330,10 @@ And here is an example with the な-adjective 必要 (necessary).
 
   - They **may** need money.
 
+<!-- grammar-card: {"id":"explanatory-hypothesis","kind":"concept","format":"qa","priority":"essential","sourceSection":"〜のかもしれない","rule":"Explanatory の frames a possibility as an account of a situation","example":"What does の add in 生魚は食べないのかもしれない compared with 生魚は食べないかもしれない?","answer":"It frames the possibility as an explanatory hypothesis prompted by some situation, rather than only a bare guess.","explanation":"The speaker may be interpreting something that has just happened."} -->
+<!-- grammar-card: {"id":"noun-explanatory-na","kind":"rule","format":"cloze","priority":"optional","sourceSection":"〜のかもしれない","rule":"A present noun needs な before explanatory の","example":"It may be snow tomorrow, as an explanatory hypothesis: 明日は雪___のかもしれない。","answer":"な","explanation":"雪なのかもしれない differs from the direct 雪かもしれない; な-adjectives follow the same explanatory pattern."} -->
+<!-- vocab-card: {"id":"vocab-namazakana","word":"生魚","reading":"なまざかな","meaning":"raw fish","priority":"optional","sourceSection":"〜のかもしれない"} -->
+
 ### かもしれぬ  for Character Development
 
 As you might've noticed, the ない of 〜かもしれない is the negative marker ない So, it's possible to swap it with the archaic version of ない, which is ぬ, as in 〜かもしれぬ. By changing ない to ぬ, you can make the speech sound more archaic and authoritative. Hence, an author might choose to employ this form in their creative writing to help develop their characters.
@@ -310,7 +344,9 @@ For example, a dignified, elderly character might use かもしれぬ like this:
 
   - That guy **might** not show up.
 
-Since ぬ is archaic, no one would use it this way in real life nowadays, but you still might come across it in novels or historical TV dramas and movies. By writing the character’s speech this way, the author can convey a sense of dignity and formality that provides the reader with clues as to their personality as well as the time period in which the piece is set.
+ぬ gives this expression an archaic or literary flavor, so かもしれぬ is not a neutral everyday conversational model. It can characterize dignified or old-fashioned speech in fiction, though marked real-life uses also exist.
+
+<!-- grammar-card: {"id":"archaic-possibility","kind":"concept","format":"qa","priority":"optional","sourceSection":"かもしれぬ  for Character Development","rule":"Replacing ない with ぬ creates a marked archaic or literary voice","example":"What characterization can かもしれぬ add in a novel?","answer":"It can suggest dignified, old-fashioned, or authoritative speech rather than neutral everyday conversation.","explanation":"This is a register effect, not a change from possibility into certainty."} -->
 
 #### かもしれん for Casual Speech
 
@@ -321,6 +357,8 @@ For instance, suppose you're meeting up with a friend, but he is yet to arrive. 
   - アイツ、まだ寝てんの**かもしれん**。
 
   - That guy **might** still be sleeping.
+
+<!-- grammar-card: {"id":"casual-regional-n","kind":"concept","format":"qa","priority":"optional","sourceSection":"かもしれん for Casual Speech","rule":"かもしれん has casual and regional uses rather than the literary flavor of かもしれぬ","example":"Should the ending in アイツ、まだ寝てんのかもしれん be treated as formal literary speech?","answer":"No. It is casual and is also used in regional speech such as Kansai Japanese.","explanation":"Do not assign the archaic register of かもしれぬ automatically to かもしれん."} -->
 
 ---
 
@@ -399,8 +437,6 @@ pp. 118-132
 <!-- quiz: {"type":"multiple-choice","question":"What does \"雨が降る**かもしれない**。\" mean?","options":["It **might** rain.","It **may** be a pizza delivery person.","It **might** be a cat.","It **will definitely** rain."],"answer":0} -->
 
 <!-- quiz: {"type":"multiple-choice","question":"What does \"ネコ**かもしれない**。\" mean?","options":["It **might** be a cat.","It **may** be a pizza delivery person.","It **might** rain.","It **might have been** a cat."],"answer":0} -->
-
-<!-- grammar-card: {"rule":"かもしれません is the polite form of かもしれない","hint":"polite","example":"このアイディア、面白い___。","answer":"かもしれません","explanation":"It softens the judgement politely: the idea might just be interesting."} -->
 
 ## Sources
 

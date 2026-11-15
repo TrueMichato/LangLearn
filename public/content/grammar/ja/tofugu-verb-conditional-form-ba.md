@@ -1,5 +1,7 @@
 # ば-Form — Conditional
 
+<!-- vocab-inventory: {"mode":"explicit"} -->
+
 > **Source:** Content from [Tofugu](https://www.tofugu.com/japanese-grammar/verb-conditional-form-ba/). For personal study.
 
 Japanese Verb Conditional Form ば
@@ -85,6 +87,16 @@ The second and final step is to add 〜ば:
 
 If you prefer to think of this in terms of romaji, remove the final "**u**" sound from any verb, and replace it with "**eba.**" So for example, the verb for "to meet," 会う (a**u**) becomes 会えば (a**eba**), and the verb for "to write," 書く(kak**u**) becomes 書けば (kak**eba**). What about 食べる (to eat)? Exactly the same! 食べる (taber**u**) turns into 食べれば (taber**eba**).
 
+<!-- vocab-card: {"id":"vocab-au","priority":"optional","sourceSection":"Conjugating Verbs to Take 〜ば","word":"会う","reading":"あう","meaning":"to meet"} -->
+<!-- vocab-card: {"id":"vocab-kaku","priority":"optional","sourceSection":"Conjugating Verbs to Take 〜ば","word":"書く","reading":"かく","meaning":"to write"} -->
+<!-- vocab-card: {"id":"vocab-taberu","priority":"optional","sourceSection":"Conjugating Verbs to Take 〜ば","word":"食べる","reading":"たべる","meaning":"to eat"} -->
+<!-- vocab-card: {"id":"vocab-kuru","priority":"optional","sourceSection":"Conjugating Verbs to Take 〜ば","word":"来る","reading":"くる","meaning":"to come"} -->
+<!-- vocab-card: {"id":"vocab-suru","priority":"optional","sourceSection":"Conjugating Verbs to Take 〜ば","word":"する","reading":"する","meaning":"to do"} -->
+<!-- grammar-card: {"id":"godan-ba","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Conjugating Verbs to Take 〜ば","rule":"Shift a godan verb's final kana to the え row and add ば","example":"書く → ば conditional: ___.","answer":"書けば","explanation":"く changes to け, followed by ば."} -->
+<!-- grammar-card: {"id":"ichidan-ba","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Conjugating Verbs to Take 〜ば","rule":"Ichidan final る becomes れば","example":"食べる → ば conditional: ___.","answer":"食べれば","explanation":"The final kana changes from る to れ before ば."} -->
+<!-- grammar-card: {"id":"kuru-ba","kind":"rule","format":"qa","priority":"essential","sourceSection":"Conjugating Verbs to Take 〜ば","rule":"来る retains its く reading in 来れば","example":"Give the ば conditional of 来る, including its kana reading.","answer":"来れば (くれば).","explanation":"Unlike many other conjugations of 来る, this one retains く."} -->
+<!-- grammar-card: {"id":"suru-ba","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Conjugating Verbs to Take 〜ば","rule":"する follows the regular final-kana shift for the ば conditional","example":"する → ば conditional: ___.","answer":"すれば","explanation":"Change final る to れ and add ば, retaining す."} -->
+
 ### What does "Conditional" Mean?
 
 Let's start things out by digging deeper into what "conditional" means. Essentially, we're talking about a sentence that has two parts (or clauses): a condition, and a result of that condition. The verb that takes 〜ば is always the condition, and whatever is in the other part of the sentence is the result of that condition. So for example, in the following sentence, "having time" (時間があれば) is the condition, and "making cookies" (クッキーを作る) is the result:
@@ -92,6 +104,9 @@ Let's start things out by digging deeper into what "conditional" means. Essentia
   - 時間があれば、クッキーを作るよ。
 
   - If I have time, I'll make cookies.
+
+<!-- grammar-card: {"id":"condition-result","kind":"concept","format":"qa","priority":"essential","sourceSection":"What does \"Conditional\" Mean?","rule":"The ば clause supplies the condition, not the result","example":"In 時間があれば、クッキーを作るよ, which event is conditional on which?","answer":"Making cookies depends on having time; 時間があれば is the condition.","explanation":"The following clause states what follows if that condition holds."} -->
+<!-- grammar-card: {"id":"conditional-register-contrast","kind":"concept","format":"qa","priority":"optional","sourceSection":"The Basics","rule":"ば is somewhat more written than たら; と often expresses an automatic result","example":"Is ば restricted to inevitable results in the way the lesson describes と?","answer":"No. ば also serves uncertain and hypothetical conditions; it tends to sound somewhat more formal or written than たら.","explanation":"These are usage tendencies, not an absolute ban on spoken ば."} -->
 
 If you understand what conditional means, move on to the next section. Hey wait, that's a conditional sentence itself! Let's see how it looks in Japanese:
 
@@ -135,6 +150,11 @@ These examples are either general facts or things that are believed to be facts 
 
   - If you take too much, medicine becomes poison.
 
+<!-- vocab-card: {"id":"vocab-kusuri","priority":"optional","sourceSection":"〜ば for General Truths","word":"薬","reading":"くすり","meaning":"medicine"} -->
+<!-- vocab-card: {"id":"vocab-doku","priority":"optional","sourceSection":"〜ば for General Truths","word":"毒","reading":"どく","meaning":"poison"} -->
+<!-- grammar-card: {"id":"general-truth-result","kind":"concept","format":"qa","priority":"optional","sourceSection":"〜ば for General Truths","rule":"A timeless general truth normally uses a nonpast result clause","example":"Why is なる nonpast in ３に２をかければ、６になる?","answer":"It states a timeless result of the condition, rather than one particular past multiplication.","explanation":"ば can express a general “when X, Y” relationship."} -->
+<!-- grammar-card: {"id":"dust-proverb","kind":"concept","format":"qa","priority":"optional","sourceSection":"〜ば for General Truths","rule":"A ば proverb can illustrate accumulation through a conditional image","example":"What lesson does 塵も積もれば山となる convey through its dust-and-mountain image?","answer":"Even tiny things can amount to something large when accumulated.","explanation":"Literally, even dust becomes a mountain if piled up; 積もれば supplies the condition."} -->
+
 ### 〜ば for Habits
 
 The ば form can also be used to talk about repeated actions that happen under a certain condition. So if you are lucky enough to go to Sapporo on a regular basis, you might say:
@@ -161,6 +181,8 @@ This also works in the past, so we can use this form to talk about past habits i
 
 Notice that here we have to change the tense in both parts of the sentence in English, whereas in Japanese it's only the second part of the sentence that changes.
 
+<!-- grammar-card: {"id":"past-habit-ba","kind":"concept","format":"qa","priority":"essential","sourceSection":"〜ば for Habits","rule":"For past conditional habits, the result clause carries past time","example":"In 札幌に行けば、いつもスープカレーを食べていた, does 行けば need a separate past suffix?","answer":"No. 行けば stays unchanged; 食べていた places the repeated result in the past.","explanation":"いつも signals repetition rather than a single trip."} -->
+
 Again, in more old-fashioned Japanese, it's common to add ものだ to the end of the second part of the sentence:
 
   - 札幌に行けば、スープカレーを食べたものだ。
@@ -172,6 +194,8 @@ Again, in more old-fashioned Japanese, it's common to add ものだ to the end o
   - When I was in high school, whenever I had time I used to go out with my friends.
 
 These sentences both convey a feeling that we're talking about "the old days."
+
+<!-- grammar-card: {"id":"reminiscent-monoda","kind":"concept","format":"qa","priority":"optional","sourceSection":"〜ば for Habits","rule":"Past result plus ものだ can convey nostalgic recollection","example":"What does 食べたものだ add in the recollection of repeated Sapporo trips?","answer":"A reminiscence about what the speaker used to do in the old days.","explanation":"The lesson contrasts this past-habit recollection with timeless nonpast ものだ."} -->
 
 ### 〜ば for the Future
 
@@ -192,6 +216,10 @@ In this example, the condition is in the future, but it's also possible to use t
   - If that's really what he thinks, he would say it directly.
 
 In this case, we're talking about a present condition, but we're expressing doubt that the condition is really true. In other words, we have a feeling that might not be what he really thinks.
+
+<!-- vocab-card: {"id":"vocab-moshi","priority":"optional","sourceSection":"〜ば for the Future","word":"もし","reading":"もし","meaning":"if; supposing"} -->
+<!-- grammar-card: {"id":"hedged-result","kind":"rule","format":"cloze","priority":"optional","sourceSection":"〜ば for the Future","rule":"ば can be followed by a hedged consequence","hint":"express a possibility","example":"もし雨が降れば、遠足は中止になる___。","answer":"かもしれない","explanation":"かもしれない marks cancellation as possible, not certain."} -->
+<!-- grammar-card: {"id":"moshi-condition","kind":"rule","format":"cloze","priority":"optional","sourceSection":"〜ば for the Future","rule":"もし signals a conditional early in the sentence","hint":"if","example":"___雨が降れば、遠足は中止になる。","answer":"もし","explanation":"もし anticipates the condition; the actual conditional verb is 降れば."} -->
 
 ### 〜ば for Hypothetical Situations
 
@@ -219,6 +247,9 @@ We can also use the ば form to talk about an alternative reality in the past. I
 
 When using 〜ば for hypothetical situations in the past, it's common for のに to be added to the end, as you can see in a couple of the example sentences above. This reinforces the nuance that the result didn't happen, but it could have if **only** the condition had been in place.
 
+<!-- grammar-card: {"id":"counterfactual-result","kind":"concept","format":"qa","priority":"essential","sourceSection":"〜ば for Hypothetical Situations","rule":"A past result with のに can present an unrealized alternative","example":"What does のに contribute in 札幌に行けば、スープカレーを食べられたのに?","answer":"An “if only” sense: the result was possible under that condition, but did not happen.","explanation":"The same conditional shape can describe an imagined past, not only a real future."} -->
+<!-- grammar-card: {"id":"present-hypothetical","kind":"concept","format":"qa","priority":"optional","sourceSection":"〜ば for Hypothetical Situations","rule":"ば can introduce an imagined present situation","example":"Does もし札幌に住んでいれば、毎日スープカレーを食べる assert that the speaker really lives there?","answer":"No. It can imagine living there and state what the speaker would do in that situation.","explanation":"Context determines whether the condition is real, uncertain, or contrary to fact."} -->
+
 ### 〜ば in Questions
 
 We can use this form in combination with the question particle か, or a question word plus the particle かな (I wonder), to make questions:
@@ -230,6 +261,8 @@ We can use this form in combination with the question particle か, or a questio
   - どこに行けばスープカレーが食べられるかな。
 
   - I wonder where I can eat soup curry.
+
+<!-- grammar-card: {"id":"conditional-question","kind":"rule","format":"cloze","priority":"optional","sourceSection":"〜ば in Questions","rule":"A ば condition can be embedded in a question","example":"If I take this medicine, will I recover? この薬を___、治りますか。 (飲む)","answer":"飲めば","explanation":"The conditional supplies the premise; か marks the question about the result."} -->
 
 That's all we have about the 〜ば, but if you want to learn about more conditional forms, there's also なら and 〜たら, not to mention the conditional form of い-adjectives.
 
@@ -280,10 +313,6 @@ pp. 512-523
 <!-- quiz: {"type":"multiple-choice","question":"What does \"「Conditional」の意味が分かれば、次のセクションに進んでください。\" mean?","options":["If you understand what \"conditional\" means, move on to the next section.","If I have time, I'll make cookies.","When you multiply three by two, you get six.","When you have money, you can do anything."],"answer":0} -->
 
 <!-- quiz: {"type":"multiple-choice","question":"What does \"３に２をかければ、６になる。\" mean?","options":["When you multiply three by two, you get six.","If I have time, I'll make cookies.","If you understand what \"conditional\" means, move on to the next section.","When you have money, you can do anything."],"answer":0} -->
-
-<!-- grammar-card: {"rule":"ば can be followed by a hedged consequence","hint":"possibility","example":"もし雨が降れば、遠足は中止になる___。","answer":"かもしれない","explanation":"かもしれない makes the cancellation a possibility rather than a certainty."} -->
-
-<!-- grammar-card: {"rule":"もし signals a conditional early in the sentence","hint":"if","example":"___雨が降れば、遠足は中止になる。","answer":"もし","explanation":"もし warns the listener a condition is coming, long before ば arrives."} -->
 
 ## Sources
 

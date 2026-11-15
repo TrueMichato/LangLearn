@@ -1,5 +1,7 @@
 # と — Conditional (Natural Consequence)
 
+<!-- vocab-inventory: {"mode":"explicit"} -->
+
 > **Source:** Content from [Tofugu](https://www.tofugu.com/japanese-grammar/verb-to/). For personal study.
 
 Japanese Verb と Form
@@ -71,6 +73,8 @@ Let's try applying this to the "**When** X happens, the result is always Y" equa
 
 See how the と is sandwiched between a condition and a result? When you try to translate と sentences, breaking down the sentence into those two parts might make it easier for you. Now let me walk you through different usages.
 
+<!-- grammar-card: {"id":"condition-result-structure","kind":"concept","format":"qa","priority":"essential","sourceSection":"The Basics","rule":"Conditional と connects a condition to its characteristic or ensuing result","example":"In X と Y, which part is the condition and which is the result?","answer":"X is the condition or cause; Y is the result that characteristically or immediately follows.","explanation":"The construction presents the link as a regular consequence or a narrated sequence, not necessarily a universal logical law."} -->
+
 ### と for Things that Always Happen
 
 The very basic idea of と is describing things that always—or at least usually—happen under a certain condition. Like when you say "When X happens, the result is always Y."
@@ -82,6 +86,10 @@ For example, to explain a particular eating tendency of yours, you can use と a
   - When I drink alcohol, I always crave for sweets (without exception).
 
 When と is used for things with inevitable results like this, it is commonly used with words like 必ず (without exception), いつも (always) or よく (usually). These words are compatible with this usage of と because of the nuance of high tendency.
+
+<!-- vocab-card: {"id":"vocab-kanarazu","word":"必ず","reading":"かならず","meaning":"without fail; certainly","priority":"optional","sourceSection":"と for Things that Always Happen"} -->
+<!-- vocab-card: {"id":"vocab-yoku","word":"よく","reading":"よく","meaning":"often; frequently","priority":"optional","sourceSection":"と for Things that Always Happen"} -->
+<!-- grammar-card: {"id":"regular-result","kind":"rule","format":"cloze","priority":"essential","sourceSection":"と for Things that Always Happen","rule":"と states a result that follows every time","example":"お酒を飲む___、必ずスイーツが食べたくなる。","answer":"と","explanation":"必ず makes this example explicitly without exception. More generally, と can also describe a usual tendency."} -->
 
 ### と for Habits
 
@@ -109,6 +117,10 @@ Here's another example for showing past habits, but in an old-fashioned way:
 
 と and the sentence ending ものだ (or ものです) are used for recalling and narrating the old days. If you want to reminisce about your younger days, starting with "when I was young…" this is a perfect way of telling your story (though it might make you sound like a grandma or grandpa). Also, because of its "narrative-ness," it is used in writing quite a bit.
 
+<!-- vocab-card: {"id":"vocab-hareru","word":"晴れる","reading":"はれる","meaning":"to clear up; to be sunny","priority":"optional","sourceSection":"と for Habits"} -->
+<!-- grammar-card: {"id":"past-habit-tense","kind":"concept","format":"qa","priority":"optional","sourceSection":"と for Habits","rule":"A past habitual result can follow a nonpast condition with と","example":"Why is 晴れるとよくランニングをした compatible with a past habit although 晴れる is nonpast?","answer":"The past tense in the result した locates the repeated habit in the past; the condition before と stays nonpast.","explanation":"This differs from changing the condition itself into a past-form conditional."} -->
+<!-- grammar-card: {"id":"reminiscent-monoda","kind":"concept","format":"qa","priority":"optional","sourceSection":"と for Habits","rule":"Past + ものだ adds a reminiscent narrative tone to an old habit","example":"What tone does ものだ add to 晴れるとよくランニングをしたものだ?","answer":"A reflective recollection of an old habit, often with a nostalgic or narrative tone.","explanation":"The plain past can already describe the old habit; ものだ adds the recollective framing."} -->
+
 ### と for General Conditions
 
 Since と is used for sentences like "When X happens, the result is always Y" to show the inevitability, you can use it for general conditions.
@@ -121,7 +133,10 @@ Let me give you an example:
 
 If you've ever been to a casual diner in Japan, you probably know what this is about (and how awesome it is). There is a button on your table to get the attention of servers. The sentence explains how the button works using と because that's what those buttons do at casual restaurants in Japan and it is a general fact.
 
-When と is used to express general conditions, the sentence is usually in the present tense. If someone uses it in the past sense and says "when this happens, the result *was* always this," it sounds awkward, right?
+When describing how something generally works now, the result is usually nonpast. A past result instead describes a past habit or a particular past sequence, as in the surrounding sections.
+
+<!-- vocab-card: {"id":"vocab-osu","word":"押す","reading":"おす","meaning":"to push; to press","priority":"optional","sourceSection":"と for General Conditions"} -->
+<!-- grammar-card: {"id":"general-mechanism","kind":"rule","format":"cloze","priority":"optional","sourceSection":"と for General Conditions","rule":"と describes the regular result of operating a mechanism","example":"このボタンを押す___、店員が来る。","answer":"と","explanation":"This explains what the button normally does, not a request for the staff to come."} -->
 
 ### と for Successive Actions
 
@@ -141,6 +156,9 @@ Also, a word like すぐに (right away), which adds a stronger nuance of immedi
 
   - **Once** I pushed a button, staff came **right** **away**.
 
+<!-- vocab-card: {"id":"vocab-suguni","word":"すぐに","reading":"すぐに","meaning":"immediately; right away","priority":"optional","sourceSection":"と for Successive Actions"} -->
+<!-- grammar-card: {"id":"single-past-sequence","kind":"concept","format":"qa","priority":"essential","sourceSection":"と for Successive Actions","rule":"と can narrate an immediately ensuing result on a single past occasion","example":"Can ボタンを押すと、店員が来た describe one past occasion?","answer":"Yes. It narrates the staff's arrival immediately after the button was pressed.","explanation":"Past-result と is not limited to repeated habits; すぐに can further emphasize the immediacy."} -->
+
 ### と for "What Happens If…?" Questions
 
 You can use と to ask questions like "what happens if…?" when you want to know the general result of the "what if" scenario.
@@ -153,6 +171,8 @@ Let me ask you a question using this feature of と:
 
 …Yes, I am still talking about that button at diners in Japan (N-not like I am obsessed with it). You probably know the answer from earlier—if you push the button on your table, staff will come to your table. That's the general result of the "if you push this button" scenario.
 
+<!-- grammar-card: {"id":"what-happens-question","kind":"rule","format":"cloze","priority":"optional","sourceSection":"と for \"What Happens If…?\" Questions","rule":"どうなりますか asks about the outcome of a condition","example":"このボタンを押すと___？ (What happens if you push this button? Use polite Japanese.)","answer":"どうなりますか","explanation":"The question asks for the general consequence of pressing the button."} -->
+
 ### と for Warnings
 
 Since one of the basic concepts of と is inevitability, you can use と for warnings by showing an inevitable consequence of doing something (or often *not* doing something with the negative form of verbs).
@@ -161,7 +181,8 @@ Since one of the basic concepts of と is inevitability, you can use と for war
 
   - If you don't get up soon, you'll be late.
 
-<!-- grammar-card: {"rule":"と states a result that follows every time","hint":"と","example":"お酒を飲む___、必ずスイーツが食べたくなる。","answer":"と","explanation":"飲むと says the craving happens without fail, each and every time."} -->
+<!-- vocab-card: {"id":"vocab-chikoku-suru","word":"遅刻する","reading":"ちこくする","meaning":"to be late","priority":"optional","sourceSection":"と for Warnings"} -->
+<!-- grammar-card: {"id":"negative-warning","kind":"rule","format":"cloze","priority":"essential","sourceSection":"と for Warnings","rule":"A negative condition with と can warn of the consequence of not acting","example":"早く起きない___遅刻するよ。","answer":"と","explanation":"The warning is that not getting up soon will lead to being late."} -->
 
 ## Beyond the Basics
 
@@ -191,6 +212,8 @@ In Japanese culture, people tend to try not to sound too direct or assertive. Th
   - Generally speaking…
 (*Literally*: If I look at it in a general way…)
 
+<!-- grammar-card: {"id":"perspective-framing","kind":"concept","format":"qa","priority":"optional","sourceSection":"と for Showing a Different Perspective","rule":"と can frame a statement under a specified way of saying or considering it","example":"What does はっきり言うと do before a statement?","answer":"It frames the statement as frankly speaking, literally if I say it clearly.","explanation":"The condition specifies a perspective rather than a physical trigger. It need not make the following statement less blunt."} -->
+
 ### How is と Different From たら?
 
 と and たら are quite similar because they can both show conditions and time sequence. In fact, they can often be used interchangeably. However, there are differences in nuance. The key to differentiating between the two is to remember that と shows *strong* causal relationship whereas the focus of たら is more of the condition as the trigger of the result.
@@ -219,6 +242,9 @@ Next, let's take a look at a comparison where both と and たら show time sequ
 
 The first sentence with と indicates that the result (staff's arrival) happened after the condition (pushing a button), emphasizing how immediately it happened. On the other hand, the second sentence using たら focuses on the if condition, stating the result as something that happened because of the condition as the trigger.
 
+<!-- grammar-card: {"id":"to-tara-focus","kind":"concept","format":"qa","priority":"essential","sourceSection":"How is と Different From たら?","rule":"と emphasizes a regular or immediate link, while たら foregrounds the triggering condition","example":"What focus changes between お酒を飲むと and お酒を飲んだら before the craving result?","answer":"と presents the craving as a regular consequence; たら foregrounds drinking as the condition or trigger.","explanation":"They can overlap, and both can describe a past sequence in the button example."} -->
+<!-- grammar-card: {"id":"tara-formation","kind":"rule","format":"cloze","priority":"optional","sourceSection":"How is と Different From たら?","rule":"たら attaches to the past form","example":"お酒を飲ん___、スイーツが食べたくなる。","answer":"だら","explanation":"飲む has past 飲んだ, giving 飲んだら."} -->
+<!-- grammar-card: {"id":"tara-past-discovery","kind":"rule","format":"cloze","priority":"optional","sourceSection":"How is と Different From たら?","rule":"たら can report a one-off discovery in the past","example":"ボタンを押し___、店員が来た。","answer":"たら","explanation":"押したら presents the button press as the trigger on that occasion. と can also narrate this past event, emphasizing the immediate succession."} -->
 ---
 
 #### Related Grammar
@@ -266,10 +292,6 @@ pp. 456-462
 <!-- quiz: {"type":"multiple-choice","question":"What does \"お酒を飲む**と**、(必ず) スイーツが食べたくなる。\" mean?","options":["When I drink alcohol, I always crave for sweets (without exception).","If you eat bacon without her permission, Mami always gets upset.","When it is sunny, I usually go for a run.","When it was sunny, I usually went for a run."],"answer":0} -->
 
 <!-- quiz: {"type":"multiple-choice","question":"What does \"晴れる**と**よくランニングをする。\" mean?","options":["When it is sunny, I usually go for a run.","If you eat bacon without her permission, Mami always gets upset.","When I drink alcohol, I always crave for sweets (without exception).","When it was sunny, I usually went for a run."],"answer":0} -->
-
-<!-- grammar-card: {"rule":"たら attaches to the past form","hint":"飲む → ?","example":"お酒を飲ん___、スイーツが食べたくなる。","answer":"だら","explanation":"飲む becomes 飲んだ, so its conditional is 飲んだら."} -->
-
-<!-- grammar-card: {"rule":"たら can report a one-off discovery in the past","hint":"押す + たら","example":"ボタンを押し___、店員が来た。","answer":"たら","explanation":"押したら reports what happened on that one occasion, which と cannot do for a single past event."} -->
 
 ## Sources
 

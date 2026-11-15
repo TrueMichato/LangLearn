@@ -1,5 +1,7 @@
 # The Definite Article (Enclitic -ul, -a, -le)
 
+<!-- vocab-inventory: {"mode":"explicit"} -->
+
 Romanian has a signature feature: the definite article **the** is usually attached to the end of the noun. This is called an **enclitic article**.
 
 ## The Basic Idea
@@ -17,6 +19,8 @@ English puts **the** before the noun. Romanian attaches it after the noun:
 - **Casa este mare.** (KAH-sah YES-teh MAH-reh) — The house is big.
 - **Floarea este frumoasă.** (FLOH-ah-ryah YES-teh froo-MOH-ah-suh) — The flower is beautiful.
 
+<!-- grammar-card: {"id":"enclitic-meaning","kind":"concept","format":"qa","priority":"essential","sourceSection":"The Basic Idea","rule":"The usual Romanian definite article is enclitic","example":"What does enclitic mean for the usual Romanian definite article?","answer":"It attaches to the end of the noun rather than standing before it.","explanation":"Compare English the boy with băiatul."} -->
+<!-- vocab-card: {"id":"vocab-floare","word":"floare","meaning":"flower (feminine; definite floarea)","priority":"optional","sourceSection":"The Basic Idea"} -->
 <!-- quiz: {"type":"multiple-choice","question":"How do you say 'the boy' in Romanian?","options":["băiat","băiatul","un băiat","băieții"],"answer":1} -->
 
 ## Masculine and Neuter Singular
@@ -39,6 +43,12 @@ Some masculine nouns ending in **-e** take **-le**:
 - **frate → fratele** — brother → the brother
 - **câine → câinele** — dog → the dog
 
+<!-- grammar-card: {"id":"u-final-article","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Masculine and Neuter Singular","rule":"A noun already ending in u adds l in forms such as teatrul","example":"Merg la ___. (the theater; teatru)","answer":"teatrul","explanation":"Teatru becomes teatrul, not teatruul."} -->
+<!-- grammar-card: {"id":"masculine-e-article","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Masculine and Neuter Singular","rule":"Some masculine nouns in -e take -le","example":"___ este aici. (The brother; frate)","answer":"Fratele","explanation":"Frate is masculine despite its -e ending, and the definite form is fratele."} -->
+<!-- vocab-card: {"id":"vocab-caine","word":"câine","meaning":"dog (masculine; definite câinele)","priority":"optional","sourceSection":"Masculine and Neuter Singular"} -->
+<!-- vocab-card: {"id":"vocab-teatru","word":"teatru","meaning":"theater (neuter; definite teatrul)","priority":"optional","sourceSection":"Masculine and Neuter Singular"} -->
+<!-- grammar-card: {"id":"masculine-ul-article","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Masculine and Neuter Singular","rule":"Romanian definite articles are attached to the noun","example":"___ citește. (The boy is reading.)","answer":"Băiatul","explanation":"Băiat adds ul: băiatul."} -->
+
 ## Feminine Singular
 
 Feminine nouns commonly change the ending:
@@ -53,7 +63,10 @@ Feminine nouns commonly change the ending:
 
 The pattern **-ă → -a** is very common. Nouns ending in **-e** often add **-a**, producing **-ea** in spelling: **carte → cartea**.
 
-<!-- grammar-card: {"rule":"Feminine nouns ending in -ă usually form the definite with -a","hint":"casă becomes casa","example":"___ este albă. (The house is white.)","answer":"Casa","explanation":"The feminine noun casă changes final -ă to -a when it receives the definite article."} -->
+<!-- grammar-card: {"id":"feminine-a-article","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Feminine Singular","rule":"Feminine nouns ending in -ă usually form the definite with -a","example":"___ este albă. (The house is white.)","answer":"Casa","explanation":"Casă replaces final ă with a: casa."} -->
+<!-- grammar-card: {"id":"feminine-e-article","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Feminine Singular","rule":"Feminine -e nouns often add -a","example":"Citesc ___. (the book; carte)","answer":"cartea","explanation":"Carte adds a to give cartea, unlike masculine frate → fratele."} -->
+<!-- grammar-card: {"id":"day-definite-exception","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Feminine Singular","rule":"Zi has the definite form ziua","example":"___ este frumoasă. (The day; zi)","answer":"Ziua","explanation":"Learn zi → ziua as the particular form shown in the table."} -->
+<!-- vocab-card: {"id":"vocab-zi","word":"zi","meaning":"day (feminine; definite ziua)","priority":"optional","sourceSection":"Feminine Singular"} -->
 
 ## Plural Definite Articles
 
@@ -73,7 +86,11 @@ Masculine plurals in **-i** often show an extra written **i** in the definite fo
 - **Casele sunt vechi.** (KAH-seh-leh soont vekʲ) — The houses are old.
 - **Scaunele sunt noi.** (SKOW-neh-leh soont noy) — The chairs are new.
 
+<!-- grammar-card: {"id":"masculine-plural-article","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Plural Definite Articles","rule":"Masculine plurals in i take another written i when definite","example":"___ sunt aici. (The boys; băieți)","answer":"Băieții","explanation":"Băieți is indefinite plural; băieții is definite plural."} -->
+<!-- grammar-card: {"id":"neuter-uri-article","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Plural Definite Articles","rule":"Neuter plurals in uri take le in the definite","example":"___ sunt simple. (The things; lucruri)","answer":"Lucrurile","explanation":"The definite article is added to the plural form: lucruri → lucrurile."} -->
 <!-- quiz: {"type":"multiple-choice","question":"What is the definite plural of 'case' (houses)?","options":["casa","casele","caselor","casă"],"answer":1} -->
+
+<!-- grammar-card: {"id":"plural-le-article","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Plural Definite Articles","rule":"Plural -e nouns usually add -le for the definite form","example":"___ sunt mari. (The houses are big.)","answer":"Casele","explanation":"Case is feminine plural; adding le gives casele."} -->
 
 ## Using the Definite Article
 
@@ -87,6 +104,8 @@ Romanian also uses the definite article in many general statements:
 - **Româna este frumoasă.** (roh-MUH-nah YES-teh froo-MOH-ah-suh) — Romanian is beautiful.
 - **Cafeaua este caldă.** (kah-FEH-ah-wah YES-teh KAHL-duh) — The coffee is hot.
 
+<!-- grammar-card: {"id":"definite-reference-use","kind":"concept","format":"qa","priority":"essential","sourceSection":"Using the Definite Article","rule":"The definite article marks known referents and also occurs in general statements","example":"Why does carte change to cartea after Am o carte?","answer":"The book has been introduced and is now a specific, known referent.","explanation":"The lesson also shows general Româna este frumoasă; Romanian definiteness is not an exact word-for-word copy of English."} -->
+<!-- grammar-card: {"id":"general-definite-use","kind":"concept","format":"qa","priority":"optional","sourceSection":"Using the Definite Article","rule":"Romanian can use a definite form in general statements","example":"Why is a definite form possible in Româna este frumoasă even though English says Romanian without the?","answer":"Romanian uses the definite article in many general statements.","explanation":"Do not require an English the before accepting a Romanian definite form."} -->
 ## With Adjectives
 
 Usually the noun receives the article, and the adjective follows:
@@ -97,11 +116,8 @@ Usually the noun receives the article, and the adjective follows:
 
 If an adjective comes before the noun, the article may attach to the adjective in a more literary style: **bunul prieten** — the good friend. As a beginner, use the normal pattern: **prietenul bun**.
 
+<!-- grammar-card: {"id":"adjective-article-position","kind":"concept","format":"qa","priority":"optional","sourceSection":"With Adjectives","rule":"The article normally attaches to the noun but can attach to a preceding adjective","example":"How do prietenul bun and bunul prieten differ in article placement and style?","answer":"The first attaches the article to the noun and is the normal beginner pattern; the second attaches it to the preceding adjective and is more literary.","explanation":"Both mean the good friend; do not treat the literary order as an ungrammatical form."} -->
 <!-- quiz: {"type":"multiple-choice","question":"Which form means 'the chairs'?","options":["scaun","scaunul","scaunele","un scaun"],"answer":2} -->
-
-<!-- grammar-card: {"rule":"Romanian definite articles are attached to the noun","hint":"the boy = băiat + ul","example":"___ citește. (The boy is reading.)","answer":"Băiatul","explanation":"Romanian normally places the definite article after the noun: băiat + ul = băiatul."} -->
-
-<!-- grammar-card: {"rule":"Plural -e nouns usually add -le for the definite form","hint":"case becomes casele","example":"___ sunt mari. (The houses are big.)","answer":"Casele","explanation":"Case is a feminine plural noun ending in -e, so the definite plural form is casele."} -->
 
 ## Sources
 

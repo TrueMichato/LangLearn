@@ -1,5 +1,7 @@
 # Trying & Attempting (てみる、ようとする)
 
+<!-- vocab-inventory: {"mode":"explicit"} -->
+
 In Japanese, there are several ways to express "trying" or "attempting" something. The two most important constructions are **てみる** (trying something out to see what happens) and **ようとする** (making an effort or attempt to do something). This lesson covers both, along with related decision-making patterns.
 
 ## てみる — "Try doing ~ (to see what it's like)"
@@ -57,7 +59,8 @@ Since みる is a Group 2 verb, てみる conjugates normally:
 
 <!-- quiz:{"type":"multiple-choice","question":"How do you say 'I tried wearing the kimono'?","options":["着物を着てみた","着物を着ようとした","着物を着ることにした","着物を着ることにしている"],"answer":0} -->
 
-<!-- grammar-card: {"rule":"てみる means trying something out of curiosity","hint":"着る + みる, polite","example":"この服(ふく)を着(き)___。","answer":"てみます","explanation":"着てみます tries the clothes on to see what they are like, with no effort implied."} -->
+<!-- grammar-card: {"id":"temiru-experiment","kind":"rule","format":"cloze","priority":"essential","sourceSection":"てみる — \"Try doing ~ (to see what it's like)\"","rule":"てみる means trying something out of curiosity","hint":"着る, politely try it to see what it is like.","example":"この服(ふく)を着(き)___。","answer":"てみます","explanation":"着てみます tests the clothes by wearing them. てみる does not itself assert difficulty, though a real experiment can be difficult."} -->
+<!-- grammar-card: {"id":"temiru-auxiliary-inflection","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Conjugation of てみる","rule":"The auxiliary みる conjugates as an ichidan verb","example":"I want to try eating it: 食べて___。","answer":"みたい","explanation":"The たい ending attaches to the stem み: 食べてみたい. Past and negative forms similarly change the auxiliary: みた, みない."} -->
 
 ## ようとする — "Try to ~ / Attempt to ~"
 
@@ -100,15 +103,17 @@ Since みる is a Group 2 verb, てみる conjugates normally:
 
 <!-- quiz:{"type":"multiple-choice","question":"'窓を開けようとしたが、開かなかった' means:","options":["I opened the window successfully","I tried to open the window but it wouldn't open","I decided to open the window","I want to try opening the window"],"answer":1} -->
 
-<!-- grammar-card: {"rule":"ようとする is an effort that may well fail","hint":"開ける, volitional + する","example":"ドアを開(あ)け___が、鍵(かぎ)がかかっていた。","answer":"ようとした","explanation":"開けようとした reports the attempt, and the locked door explains why it did not work."} -->
+<!-- grammar-card: {"id":"volitional-attempt","kind":"rule","format":"cloze","priority":"essential","sourceSection":"ようとする — \"Try to ~ / Attempt to ~\"","rule":"Volitional + とする describes an attempt or an imminent action, without guaranteeing its result","hint":"開ける, attempt in the past","example":"ドアを開(あ)け___が、鍵(かぎ)がかかっていた。","answer":"ようとした","explanation":"開けようとした describes trying to open it. The locked-door clause supplies the failure; the construction alone does not assert failure.","legacyAliases":[{"rule":"ようとする is an effort that may well fail","example":"ドアを開(あ)け___が、鍵(かぎ)がかかっていた。"}]} -->
+<!-- grammar-card: {"id":"godan-attempt-formation","kind":"rule","format":"cloze","priority":"essential","sourceSection":"ようとする — \"Try to ~ / Attempt to ~\"","rule":"Attempts use the verb's volitional, not its て-form","example":"Try to stand: 立つ → ___とする。","answer":"立とう","explanation":"立とうとする (たとうとする) uses the godan volitional. Not every verb simply adds よう."} -->
+<!-- grammar-card: {"id":"imminent-not-necessarily-struggle","kind":"concept","format":"qa","priority":"optional","sourceSection":"ようとする — \"Try to ~ / Attempt to ~\"","rule":"ようとしている can describe an imminent event","example":"Can ようとしている mean being about to act without describing a difficult struggle?","answer":"Yes. It can focus on the point just before an action begins.","explanation":"The attempt and imminence readings depend on context; neither guarantees success or failure."} -->
 
 ## てみる vs ようとする — Key Differences
 
 | | てみる | ようとする |
 |---|---|---|
 | **Nuance** | Try to experience / test | Make an effort / attempt |
-| **Implies** | Curiosity, interest | Difficulty, effort |
-| **Success?** | Usually succeeds | Often fails or is interrupted |
+| **Typical framing** | Experimenting or testing | Attempting or being about to act |
+| **Result?** | Presents a trial of the action, not guaranteed success | Does not guarantee completion or failure |
 | **Focus** | The experience of doing | The effort of doing |
 | **Example** | 寿司(すし)を食(た)べてみた | 寿司(すし)を食(た)べようとした |
 | **Translation** | I tried eating sushi (and experienced it) | I tried to eat sushi (but maybe couldn't) |
@@ -121,6 +126,7 @@ Since みる is a Group 2 verb, てみる conjugates normally:
 > *Nihongo wo hanasou to shita.*
 > I tried to speak Japanese. (I made an effort — it may have been difficult.)
 
+<!-- grammar-card: {"id":"trial-attempt-contrast","kind":"concept","format":"qa","priority":"essential","sourceSection":"てみる vs ようとする — Key Differences","rule":"てみる foregrounds a trial experience; ようとする foregrounds an attempt or imminent action","example":"How does 寿司を食べてみた differ from 寿司を食べようとした?","answer":"食べてみた presents trying sushi as an experience; 食べようとした presents an attempt to eat it without guaranteeing completion.","explanation":"Do not memorize a success/failure rule. A trial need not be successful, and an attempt need not fail."} -->
 ## ことにする — "Decide to ~"
 
 **ことにする** expresses a **personal decision** made by the speaker.
@@ -145,7 +151,8 @@ Since みる is a Group 2 verb, てみる conjugates normally:
 > *Kotoshi wa motto hon wo yomu koto ni suru.*
 > I'm going to decide to read more books this year.
 
-<!-- grammar-card: {"rule":"ことにする marks a decision the speaker made themselves","hint":"decide, polite past","example":"毎朝(まいあさ)走(はし)る___。","answer":"ことにしました","explanation":"走ることにしました says the speaker has decided to run each morning."} -->
+<!-- grammar-card: {"id":"personal-decision","kind":"rule","format":"cloze","priority":"essential","sourceSection":"ことにする — \"Decide to ~\"","rule":"ことにする marks a decision the speaker made themselves","hint":"State a personal decision, politely in the past.","example":"毎朝(まいあさ)走(はし)る___。","answer":"ことにしました","explanation":"走ることにしました reports deciding to run each morning. The content of the decision can itself be a repeated habit."} -->
+<!-- grammar-card: {"id":"negative-personal-decision","kind":"rule","format":"cloze","priority":"optional","sourceSection":"ことにする — \"Decide to ~\"","rule":"A decision not to act places the negative form before ことにする","example":"I decided not to drink alcohol: お酒を___ことにした。 (飲む)","answer":"飲まない","explanation":"飲まないことにした (のまないことにした) decides against drinking, rather than negating the decision itself."} -->
 
 ## ことにしている — "Make it a rule to ~ / Habitually decide to ~"
 
@@ -171,7 +178,7 @@ Since みる is a Group 2 verb, てみる conjugates normally:
 
 <!-- quiz:{"type":"multiple-choice","question":"Which sentence means 'I make it a rule to walk every day'?","options":["毎日歩くことにした","毎日歩くことにしている","毎日歩いてみている","毎日歩こうとしている"],"answer":1} -->
 
-<!-- grammar-card: {"rule":"ことにしている marks a standing personal rule","hint":"habit, polite","example":"毎日(まいにち)日記(にっき)を書(か)く___。","answer":"ことにしています","explanation":"書くことにしています says the speaker makes a point of writing every day."} -->
+<!-- grammar-card: {"id":"standing-personal-rule","kind":"rule","format":"cloze","priority":"essential","sourceSection":"ことにしている — \"Make it a rule to ~ / Habitually decide to ~\"","rule":"ことにしている marks a standing personal rule","hint":"State a maintained personal habit, politely.","example":"毎日(まいにち)日記(にっき)を書(か)く___。","answer":"ことにしています","explanation":"書くことにしています presents diary writing as a personal rule still maintained, not merely a decision made at one time."} -->
 
 ## Summary of All Patterns
 
@@ -204,11 +211,13 @@ Since みる is a Group 2 verb, てみる conjugates normally:
 
 ## Common Mistakes
 
-| ❌ Incorrect | ✅ Correct | Explanation |
+| Form or overgeneralization | Better choice / qualification | Explanation |
 |---|---|---|
 | この本を読んでようとした | この本を読もうとした | ようとする uses volitional, not て-form |
-| 食べてみようとした | 食べてみた or 食べようとした | Don't combine てみる and ようとする |
-| 毎日運動することにした | 毎日運動することにしている | Use ている for ongoing habits |
+| 食べてみた / 食べようとした | Choose according to the intended meaning | 食べてみようとした is also grammatical: attempted to try eating it |
+| 毎日運動することにした / 毎日運動することにしている | Choose a decision or a maintained rule | Both are grammatical; ことにした can report deciding on a daily habit |
+
+<!-- grammar-card: {"id":"combined-trial-attempt","kind":"concept","format":"qa","priority":"optional","sourceSection":"Common Mistakes","rule":"てみる and ようとする can combine when both meanings are intended","example":"Is 食べてみようとした always a grammar mistake?","answer":"No. It can mean attempted to try eating it; use it only when that combined meaning is intended.","explanation":"The auxiliary みる takes its volitional みよう before とした. Simpler 食べてみた and 食べようとした have different meanings."} -->
 
 ## Sources
 

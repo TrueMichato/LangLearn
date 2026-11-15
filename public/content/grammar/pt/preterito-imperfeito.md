@@ -1,5 +1,7 @@
 # Pretérito Imperfeito (Imperfect Past)
 
+<!-- vocab-inventory: {"mode":"explicit"} -->
+
 The pretérito imperfeito describes actions that were ongoing, habitual, or repeated in the past. Unlike the pretérito perfeito (which tells you *what happened*), the imperfeito tells you *what was happening*, *what used to happen*, or *how things were*. It's your go-to tense for painting pictures of the past — describing scenes, routines, and background actions.
 
 ## Regular Verbs: -AR
@@ -21,6 +23,10 @@ For **-ar** verbs, remove the ending and add **-ava** endings:
 - **Eles brincavam no parque todo dia** (eh-leez breen-kah-vang noo par-kee toh-doo jee-ah) — They played in the park every day
 - **Você trabalhava aqui antes?** (voh-seh trah-bah-lyah-vah ah-kee an-cheez) — Did you use to work here before?
 
+<!-- grammar-card: {"id":"imperfeito-ar-plural","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Regular Verbs: -AR","rule":"Regular -ar imperfect forms use -avam with eles/elas/vocês","example":"Eles ___ no parque todo dia. (brincar; imperfeito)","answer":"brincavam","explanation":"Brinc- + -avam gives brincavam; nós instead takes accented -ávamos."} -->
+
+<!-- grammar-card: {"id":"imperfeito-ar","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Regular Verbs: -AR","rule":"Regular -ar verbs in the imperfeito use -ava endings: -ava, -ava, -ávamos, -avam","example":"Ela ___ em São Paulo antes (morar)","answer":"morava","explanation":"Remove -ar and add -ava; eu and você/ele/ela share the form."} -->
+<!-- grammar-card: {"id":"imperfeito-ar-nos","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Regular Verbs: -AR","rule":"Nós uses accented -ávamos in the regular -ar imperfect","example":"Nós ___ juntos. (estudar; imperfeito)","answer":"estudávamos","explanation":"Keep the acute accent in estudávamos; plural eles instead uses estudavam."} -->
 ## Regular Verbs: -ER
 
 For **-er** verbs, remove the ending and add **-ia** endings:
@@ -37,7 +43,13 @@ For **-er** verbs, remove the ending and add **-ia** endings:
 - **Nós vivíamos no campo** (nohs vee-vee-ah-mooz noo kan-poo) — We used to live in the countryside
 - **Eles conheciam o bairro bem** (eh-leez koh-nyeh-see-ang oo bah-ee-hoo beng) — They knew the neighborhood well
 
+<!-- grammar-card: {"id":"imperfeito-er-ir-plural","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Regular Verbs: -ER","rule":"Regular -er/-ir imperfect forms use -iam with eles/elas/vocês","example":"Eles ___ o bairro bem. (conhecer; imperfeito)","answer":"conheciam","explanation":"Use -iam for the third-person plural; nós uses accented -íamos."} -->
+
+<!-- grammar-card: {"id":"imperfeito-er","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Regular Verbs: -ER","rule":"Regular -er verbs use -ia in the imperfect singular","example":"Ele ___ café toda manhã. (beber; imperfeito)","answer":"bebia","explanation":"The table gives -ia, -ia, -íamos, -iam for the subject groups shown."} -->
+<!-- grammar-card: {"id":"imperfeito-er-nos","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Regular Verbs: -ER","rule":"Nós uses accented -íamos in the regular -er imperfect","example":"Nós ___ no campo. (viver; imperfeito)","answer":"vivíamos","explanation":"Preserve stress with í in vivíamos."} -->
 ## Regular Verbs: -IR
+
+<!-- vocab-card: {"id":"vocab-antigamente","word":"antigamente","meaning":"formerly; in the old days","priority":"optional","sourceSection":"Regular Verbs: -IR"} -->
 
 For **-ir** verbs, the endings are the same as **-er** verbs:
 
@@ -52,11 +64,13 @@ For **-ir** verbs, the endings are the same as **-er** verbs:
 - **Ela saía de casa às sete** (eh-lah sah-ee-ah jee kah-zah ahz seh-chee) — She left the house at seven (habitually)
 - **Nós assistíamos novela toda noite** (nohs ah-sees-chee-ah-mooz noh-veh-lah toh-dah noy-chee) — We used to watch soap operas every night
 
+<!-- grammar-card: {"id":"imperfeito-ir","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Regular Verbs: -IR","rule":"Regular -ir verbs share the -er imperfect endings","example":"Nós ___ novela toda noite. (assistir; imperfeito)","answer":"assistíamos","explanation":"Use -ia, -ia, -íamos, -iam, not a new -ir-specific set."} -->
+<!-- grammar-card: {"id":"imperfeito-singular-sharing","kind":"concept","format":"qa","priority":"optional","sourceSection":"Regular Verbs: -IR","rule":"Imperfect eu and third-person singular forms coincide","example":"Can comia or partia alone distinguish eu from ele/ela/você?","answer":"No. The singular forms coincide; context or a subject pronoun identifies the person.","explanation":"The same sharing occurs with -ar falava."} -->
 <!-- quiz: {"type":"multiple-choice","question":"How do you conjugate 'morar' (to live) for 'eu' in the pretérito imperfeito?","options":["morei","morava","moro","moraria"],"answer":1} -->
 
 ## Irregular Verbs — Only Four!
 
-One of the best things about the pretérito imperfeito is that it has only **four irregular verbs**. Everything else follows the regular patterns above.
+Four basic irregular verbs to learn here are **ser, ter, ir, pôr**. Their compounds can inherit the irregularity (for example, **manter → mantinha** and **compor → compunha**), so “only four” is a shortcut for the basic verbs, not an exhaustive count of all derived verbs.
 
 ### Ser (to be — permanent)
 
@@ -72,6 +86,8 @@ One of the best things about the pretérito imperfeito is that it has only **fou
 - **Nós éramos vizinhos** (nohs eh-rah-mooz vee-zeen-yooz) — We were neighbors
 - **Eles eram felizes** (eh-leez eh-rang feh-lee-zeez) — They were happy
 
+<!-- grammar-card: {"id":"imperfeito-ser","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Ser (to be — permanent)","rule":"Four basic imperfect irregulars are ser, ter, ir, and pôr; compounds can inherit their forms","example":"Nós ___ vizinhos quando crianças (ser)","answer":"éramos","explanation":"Ser gives era, era, éramos, eram; retain the acute accent in éramos.","legacyAliases":[{"rule":"The pretérito imperfeito has only 4 irregular verbs: ser (era), ter (tinha), ir (ia), pôr (punha)","example":"Nós ___ vizinhos quando crianças (ser)"}]} -->
+<!-- grammar-card: {"id":"irregular-family-scope","kind":"concept","format":"qa","priority":"optional","sourceSection":"Irregular Verbs — Only Four!","rule":"The four-irregular shortcut names basic verbs, not every compound","example":"Does the four-irregular shortcut mean manter and compor must have regular imperfect stems?","answer":"No. They inherit irregular forms: mantinha and compunha.","explanation":"Learn ser, ter, ir, pôr as basic families; do not make only four an absolute claim about all verbs."} -->
 ### Ter (to have)
 
 | Pronoun | Conjugation |
@@ -85,6 +101,7 @@ One of the best things about the pretérito imperfeito is that it has only **fou
 - **Ela tinha medo do escuro** (eh-lah cheen-yah meh-doo doo esh-koo-roo) — She was afraid of the dark
 - **Nós tínhamos muitos amigos** (nohs cheen-yah-mooz mween-tooz ah-mee-gooz) — We had many friends
 
+<!-- grammar-card: {"id":"imperfeito-ter","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Ter (to have)","rule":"Ter has imperfect tinha","example":"Eu ___ um cachorro. (ter; imperfeito)","answer":"tinha","explanation":"The forms are tinha, tinha, tínhamos, tinham; nós preserves í."} -->
 ### Ir (to go)
 
 | Pronoun | Conjugation |
@@ -98,6 +115,7 @@ One of the best things about the pretérito imperfeito is that it has only **fou
 - **Nós íamos à praia todo verão** (nohs ee-ah-mooz ah prah-yah toh-doo veh-row) — We used to go to the beach every summer
 - **Eles iam ao cinema toda sexta** (eh-leez ee-ang ow see-neh-mah toh-dah sess-tah) — They used to go to the movies every Friday
 
+<!-- grammar-card: {"id":"imperfeito-ir-irregular","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Ir (to go)","rule":"Ir has imperfect ia","example":"Nós ___ à praia todo verão. (ir; imperfeito)","answer":"íamos","explanation":"Use ia, ia, íamos, iam. The accent marks stress in íamos."} -->
 ### Pôr (to put)
 
 | Pronoun | Conjugation |
@@ -110,6 +128,8 @@ One of the best things about the pretérito imperfeito is that it has only **fou
 - **Eu punha açúcar no café** (eh-oo poon-yah ah-soo-kar noo kah-feh) — I used to put sugar in my coffee
 - **Ela punha as crianças para dormir** (eh-lah poon-yah ahz kree-an-sahz pah-rah dor-meer) — She used to put the children to sleep
 
+<!-- vocab-card: {"id":"vocab-por","word":"pôr","meaning":"to put","priority":"optional","sourceSection":"Pôr (to put)"} -->
+<!-- grammar-card: {"id":"imperfeito-por","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Pôr (to put)","rule":"Pôr has imperfect punha","example":"Eu ___ açúcar no café. (pôr; imperfeito)","answer":"punha","explanation":"Pôr gives punha, punha, púnhamos, punham."} -->
 <!-- quiz: {"type":"multiple-choice","question":"Which of these verbs is irregular in the pretérito imperfeito?","options":["falar","comer","ter","partir"],"answer":2} -->
 
 ## When to Use the Pretérito Imperfeito
@@ -121,6 +141,8 @@ Things you did regularly or repeatedly in the past:
 - **Eu acordava às seis todo dia** (eh-oo ah-kor-dah-vah ahz says toh-doo jee-ah) — I used to wake up at six every day
 - **Nós almoçávamos juntos** (nohs ow-moh-sah-vah-mooz zhoon-tooz) — We used to have lunch together
 
+<!-- grammar-card: {"id":"past-habit","kind":"concept","format":"qa","priority":"essential","sourceSection":"1. Habitual Actions — \"Used To\"","rule":"The imperfect presents a past habit without a bounded event focus","example":"Why does Eu acordava às seis todo dia use the imperfect?","answer":"It describes a habitual past routine: I used to wake up at six every day.","explanation":"The focus is the repeated routine, not one completed awakening."} -->
+<!-- vocab-card: {"id":"vocab-todo-dia","word":"todo dia","meaning":"every day","priority":"optional","sourceSection":"1. Habitual Actions — \"Used To\""} -->
 ### 2. Descriptions in the Past
 
 Describing how things looked, felt, or were:
@@ -129,6 +151,7 @@ Describing how things looked, felt, or were:
 - **A casa tinha três quartos** (ah kah-zah cheen-yah trehz kwar-tooz) — The house had three bedrooms
 - **Ela usava um vestido azul** (eh-lah oo-zah-vah ung vesh-chee-doo ah-zoow) — She was wearing a blue dress
 
+<!-- grammar-card: {"id":"past-description","kind":"concept","format":"qa","priority":"optional","sourceSection":"2. Descriptions in the Past","rule":"The imperfect describes background states","example":"Why can A casa tinha três quartos use the imperfect without a repeated action?","answer":"It describes what the house was like in a past setting.","explanation":"The imperfect is not limited to habits; it also presents background states."} -->
 ### 3. Ongoing Actions — "Was ...ing"
 
 Actions that were in progress at a certain point:
@@ -136,25 +159,24 @@ Actions that were in progress at a certain point:
 - **Eu dormia quando o telefone tocou** (eh-oo dor-mee-ah kwan-doo oo teh-leh-foh-nee toh-koh) — I was sleeping when the phone rang
 - **Eles estudavam quando eu cheguei** (eh-leez esh-too-dah-vang kwan-doo eh-oo sheh-gay) — They were studying when I arrived
 
+<!-- grammar-card: {"id":"ongoing-background","kind":"rule","format":"cloze","priority":"essential","sourceSection":"3. Ongoing Actions — \"Was ...ing\"","rule":"Use the imperfeito for ongoing background actions, descriptions, and habitual past actions","example":"Eu ___ quando o telefone tocou (dormir)","answer":"dormia","explanation":"Dormia is the ongoing background; tocou is the completed intervening event."} -->
 ### 4. Age and Time in the Past
 
 - **Eu tinha dez anos** (eh-oo cheen-yah dez ah-nooz) — I was ten years old
 - **Eram três horas da tarde** (eh-rang trehz oh-rahz dah tar-jee) — It was three in the afternoon
 
+<!-- grammar-card: {"id":"past-age","kind":"rule","format":"cloze","priority":"optional","sourceSection":"4. Age and Time in the Past","rule":"Past age in a background description uses tinha","example":"Eu ___ dez anos. (I was ten years old; background)","answer":"tinha","explanation":"Portuguese expresses age with ter, here in the imperfect."} -->
+<!-- grammar-card: {"id":"past-clock-time","kind":"rule","format":"cloze","priority":"optional","sourceSection":"4. Age and Time in the Past","rule":"Past clock time as scene-setting uses ser in the imperfect","example":"___ três horas da tarde. (It was three in the afternoon.)","answer":"Eram","explanation":"Plural horas takes eram; singular uma hora would take era."} -->
 ### 5. Polite Requests (Softened Speech)
 
 - **Eu queria um café, por favor** (eh-oo keh-ree-ah ung kah-feh por fah-vor) — I'd like a coffee, please
 - **Você podia me ajudar?** (voh-seh poh-jee-ah mee ah-zhoo-dar) — Could you help me?
 
+<!-- grammar-card: {"id":"polite-imperfect","kind":"concept","format":"qa","priority":"optional","sourceSection":"5. Polite Requests (Softened Speech)","rule":"The imperfect can soften a present request","example":"Does Eu queria um café, por favor necessarily describe a wish that ended in the past?","answer":"No. It can politely mean I would like a coffee now.","explanation":"Podia in Você podia me ajudar? similarly softens a request."} -->
+<!-- vocab-card: {"id":"vocab-queria-cafe","word":"Eu queria um café, por favor.","meaning":"I would like a coffee, please.","priority":"optional","sourceSection":"5. Polite Requests (Softened Speech)"} -->
 <!-- quiz: {"type":"multiple-choice","question":"'Quando eu era criança, eu ___ sorvete todo dia.' — Which form completes this sentence?","options":["comi","como","comia","comerei"],"answer":2} -->
 
 <!-- quiz: {"type":"multiple-choice","question":"Which situation calls for the pretérito imperfeito?","options":["I ate pizza yesterday (completed action)","I used to eat pizza every Friday (habitual action)","I ate pizza and then left (sequence of events)","I will eat pizza tomorrow (future action)"],"answer":1} -->
-
-<!-- grammar-card: {"rule":"Regular -ar verbs in the imperfeito use -ava endings: -ava, -ava, -ávamos, -avam","hint":"All -ar verbs follow this pattern with no exceptions","example":"Ela ___ em São Paulo antes (morar)","answer":"morava","explanation":"Remove -ar from 'morar' and add -ava for the ela form: morava. This describes a habitual past situation."} -->
-
-<!-- grammar-card: {"rule":"The pretérito imperfeito has only 4 irregular verbs: ser (era), ter (tinha), ir (ia), pôr (punha)","hint":"Every other verb is regular — just learn these four!","example":"Nós ___ vizinhos quando crianças (ser)","answer":"éramos","explanation":"'Ser' is irregular in the imperfeito. The nós form is 'éramos.' It describes a state in the past."} -->
-
-<!-- grammar-card: {"rule":"Use the imperfeito for ongoing background actions, descriptions, and habitual past actions","hint":"Think 'used to' or 'was doing' — the action has no clear endpoint","example":"Eu ___ quando o telefone tocou (dormir)","answer":"dormia","explanation":"'Dormia' (was sleeping) describes the ongoing background action. The imperfeito sets the scene, while the perfeito (tocou) interrupts it."} -->
 
 ## Sources
 

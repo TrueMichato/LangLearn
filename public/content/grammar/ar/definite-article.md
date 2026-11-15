@@ -1,10 +1,16 @@
 # The Article al- & Sun/Moon Letters
 
+<!-- vocab-inventory: {"mode":"explicit"} -->
+
 Arabic has one definite article: **الْـ** (al-) — the. It attaches to the front of a noun. The spelling stays recognizable, but pronunciation changes before sun letters.
 
 ## Core idea
 
 With moon letters, pronounce the l in **الْـ** (al-) — the: **الْقَمَرُ** (al-qamaru) — the moon. With sun letters, the l assimilates into the next consonant: **الشَّمْسُ** (ash-shamsu) — the sun. The shadda on the sun letter shows the doubling.
+
+<!-- grammar-card: {"id":"article-spelling-sound","kind":"concept","format":"qa","priority":"essential","sourceSection":"Core idea","rule":"Sun-letter assimilation changes pronunciation, not the article's spelling","example":"Does the ل disappear from the spelling of الشَّمْسُ when its sound assimilates?","answer":"No. The article remains ال in writing; ش is doubled in pronunciation.","explanation":"The shadda marks the doubled sun consonant. Moon letters instead retain a pronounced l."} -->
+<!-- vocab-card: {"id":"vocab-qamar","word":"قَمَرٌ","reading":"qamarun","meaning":"moon","priority":"optional","sourceSection":"Core idea"} -->
+<!-- vocab-card: {"id":"vocab-shams","word":"شَمْسٌ","reading":"shamsun","meaning":"sun","priority":"optional","sourceSection":"Core idea"} -->
 
 ## Forms and examples
 
@@ -21,7 +27,8 @@ With moon letters, pronounce the l in **الْـ** (al-) — the: **الْقَم
 
 Definiteness matters in grammar. **بَيْتٌ** (baytun) — a house has tanwīn, while **الْبَيْتُ** (al-baytu) — the house loses tanwīn and takes **الْـ** (al-) — the.
 
-<!-- grammar-card: {"rule":"Before sun letters, the l of الْـ (al-) — the assimilates and the next consonant is doubled.","hint":"Look for shadda on the first consonant after the article.","example":"The definite form of شَمْسٌ (shamsun) — sun is ___ .","answer":"الشَّمْسُ (ash-shamsu)","explanation":"the sun — ش (shīn) — sh is a sun letter, so الْـ (al-) — the is pronounced ash- and the شّ (shsh) — doubled sh appears."} -->
+<!-- grammar-card: {"id":"sun-letter-application","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Usage notes","rule":"Before sun letters, the l of الْـ (al-) — the assimilates and the next consonant is doubled.","example":"The definite form of شَمْسٌ (shamsun) — sun is ___ .","answer":"الشَّمْسُ","explanation":"ش is a sun letter: ash-shamsu, with shadda and without tanwīn."} -->
+<!-- grammar-card: {"id":"article-removes-tanwin","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Usage notes","rule":"A noun with the definite article does not retain tanwīn","example":"Make بَيْتٌ definite, retaining nominative case: ___.","answer":"الْبَيْتُ","explanation":"Al-baytu has the article and a single final ḍamma, not indefinite -un."} -->
 
 ## Practice patterns
 
@@ -33,7 +40,7 @@ Useful pairs:
 
 <!-- quiz: {"type": "multiple-choice", "question": "What happens to tanwīn when a noun becomes definite with الْـ (al-) — the?", "options": ["It remains unchanged", "It usually disappears", "It becomes a verb prefix", "It marks dual"], "answer": 1} -->
 
-<!-- grammar-card: {"rule":"Before moon letters, pronounce the l of الْـ (al-) — the normally.","hint":"Moon letters keep the l sound.","example":"The definite form of قَمَرٌ (qamarun) — moon is ___ .","answer":"الْقَمَرُ (al-qamaru)","explanation":"ق (qāf) — q is a moon letter, so الْقَمَرُ (al-qamaru) — the moon keeps the l sound."} -->
+<!-- grammar-card: {"id":"moon-letter-application","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Practice patterns","rule":"Before moon letters, pronounce the l of الْـ (al-) — the normally.","example":"The definite form of قَمَرٌ (qamarun) — moon is ___ .","answer":"الْقَمَرُ","explanation":"ق is a moon letter, so al-qamaru keeps the l sound and has no tanwīn."} -->
 
 ## Sources
 

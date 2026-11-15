@@ -1,5 +1,7 @@
 # も (mo) — Also / Too
 
+<!-- vocab-inventory: {"mode":"explicit"} -->
+
 > **Source:** Content from [Tofugu](https://www.tofugu.com/japanese-grammar/particle-mo/). For personal study.
 
 Particle も:  Addition Marker
@@ -17,6 +19,10 @@ The particle も is similar to the English words "too" and "also." It is placed 
 The particle も is similar to the English words "too" and "also." It's attached to a word to mark that word as a part of a set of things that belong together.
 
 ### も As a Part of a Set
+
+<!-- grammar-card: {"id":"addition-scope","kind":"concept","format":"qa","priority":"essential","sourceSection":"も As a Part of a Set","rule":"も attaches to the particular member being added","example":"Does 鈴木さんも日本語の先生です add Suzuki to a set of teachers or add another occupation to Suzuki?","answer":"It adds Suzuki to the set of teachers, alongside someone else.","explanation":"To add another occupation, the lesson instead marks the predicate, as in ゲーマーでもあります. Position determines the scope of also."} -->
+<!-- grammar-card: {"id":"memo-mnemonic","kind":"concept","format":"qa","priority":"optional","sourceSection":"も As a Part of a Set","rule":"The me-mo list is a mnemonic for membership and addition","example":"How does the memo-sheet image explain the particle's additive use?","answer":"The sheet holds a set of related items, and も places the marked item on that list too.","explanation":"The me-mo sound cues も. The list is a conceptual set, not necessarily a written or previously enumerated list."} -->
+<!-- grammar-card: {"id":"also-person-application","kind":"rule","format":"cloze","priority":"essential","sourceSection":"も As a Part of a Set","rule":"も replaces は to mean 'also'","hint":"Suzuki is a Japanese teacher in addition to another person.","example":"鈴木さん___日本語の先生です。","answer":"も","explanation":"も marks the added person rather than forming はも. It can likewise take the place of が or を in ordinary additive noun phrases."} -->
 
 To conceptualize the particle も, it's helpful to imagine a list on a memo (me-も) sheet. The list is a group of things or people that belong together. When も goes after a word, it indicates that the word is a member of the group.
 
@@ -74,6 +80,10 @@ In this section, we'll list the basic structure used with the particle も. Late
 
 #### も at the End of a Sentence
 
+<!-- grammar-card: {"id":"additional-identity-application","kind":"rule","format":"cloze","priority":"optional","sourceSection":"も at the End of a Sentence","rule":"でもある adds a further identity to a noun","hint":"Add also a gamer, in polite style.","example":"鈴木さんは先生です。鈴木さんは___。","answer":"ゲーマーでもあります","explanation":"も goes inside the predicate であります to add another identity, rather than adding another teacher to the group."} -->
+<!-- grammar-card: {"id":"adjective-additional-property","kind":"rule","format":"cloze","priority":"optional","sourceSection":"も at the End of a Sentence","rule":"An い-adjective can add a property with くもある","hint":"Spiders are also cute; add the additive marker.","example":"クモはかわいく___ある。","answer":"も","explanation":"かわいい takes its く form before もある. Nouns and な-adjectives instead use でもある."} -->
+<!-- vocab-card: {"id":"vocab-gamer","word":"ゲーマー","reading":"げーまー","meaning":"gamer","priority":"optional","sourceSection":"も at the End of a Sentence"} -->
+
 も can also be used in the predicate. If the predicate is a noun or a な-adjective, も is generally added between で (the て form of だ) and ある, as in:
 
   - ジェニーは先生である。
@@ -104,6 +114,8 @@ If the predicate is an い-adjective, も comes after the く form of the word a
 
 #### も Combined with Other Particles
 
+<!-- grammar-card: {"id":"additional-recipient-application","kind":"rule","format":"cloze","priority":"optional","sourceSection":"も Combined with Other Particles","rule":"も can follow に to add another recipient","hint":"To Jenny too; retain the recipient marker and add the additive marker.","example":"ジェニー___あげる。","answer":"にも","explanation":"にも preserves the to relation. も can similarly follow particles such as で, と, and へ rather than replacing them."} -->
+
 も can be used with other particles, such as にも, でも, とも, or へも. Just like when it's used alone, も adds the nuance that the word or phrase is a part of a set. The following is one example, but you can learn more about double particles on their individual pages.
 
   - ジェニー**にも**あげる。
@@ -111,6 +123,8 @@ If the predicate is an い-adjective, も comes after the く form of the word a
   - I'll **also** give it **to** Jenny
 
 ### Particle も as in "Also"
+
+<!-- grammar-card: {"id":"paired-additions","kind":"concept","format":"qa","priority":"optional","sourceSection":"Particle も as in \"Also\"","rule":"Repeated も and と-grouping can both add multiple members","example":"How do 森さんも山田さんも学生です and 森さんと山田さんも学生です group the added people?","answer":"The first marks each person as an addition; the second joins them with と and adds the pair with も.","explanation":"With an earlier student already established, both add Mori and Yamada. The repeated pattern also works with a negative predicate."} -->
 
 The function of も is simple. It indicates an addition to a set, and you've already seen some examples. Here, we'll explore more examples to help you understand this better.
 
@@ -156,6 +170,8 @@ In this example, と groups together "Mori-san and Yamada-san" and then も mark
 
 ### Particle も as in "Either"
 
+<!-- grammar-card: {"id":"negative-addition","kind":"concept","format":"qa","priority":"essential","sourceSection":"Particle も as in \"Either\"","rule":"An additive も with a negative predicate corresponds to either","example":"After 林さんは学生じゃありません, what does 森さんも学生じゃありません add?","answer":"Mori is not a student either, joining Hayashi in the group of non-students.","explanation":"も does not itself negate the sentence. The negative predicate supplies not; multiple marked people can be translated with neither or nor."} -->
+
 The particle も can also mean "either," if the parts of the set consist of people or things who do not belong to a certain type of group. For example, to say Hayashi-san is not a student and Mori-san isn't either, you can say:
 
   - 林さんは学生じゃありません。森さん**も**学生じゃありません。
@@ -180,6 +196,8 @@ Or, you can first combine a group with と and then add them by using も at the
 
 ### Particle も for Emphasis
 
+<!-- grammar-card: {"id":"even-addition","kind":"concept","format":"qa","priority":"optional","sourceSection":"Particle も for Emphasis","rule":"An unexpected addition can make も mean even","example":"What makes パンプキンパイも emphatic after someone has already eaten ice cream and chocolate?","answer":"The whole pie is presented as a surprising extra item beyond what was expected.","explanation":"It is still an addition to a set, but the speaker's expectation makes even a natural translation."} -->
+
 The particle も can also add emphasis on what comes before it in both a positive or a negative way. It shows that something is either surprising or extreme. For example, imagine your sweet tooth has been acting up again and so you eat ice cream, chocolate, and even an entire pumpkin pie! When your roommate finds this out, she may be surprised, and say:
 
   - アイスとチョコを食べた後に、パンプキンパイ**も**食べたの！？
@@ -188,13 +206,12 @@ The particle も can also add emphasis on what comes before it in both a positiv
 
 In this example, パンプキンパイ is paired with も to indicate it's an additional part to the set of things you ate. In your roommate's eyes, this last addition is beyond what's considered "normal," so the particle も is used more emphatically.
 
-<!-- grammar-card: {"rule":"でもある adds a further identity to a noun","hint":"ゲーマー + でもある","example":"鈴木さんは先生です。鈴木さんは___。","answer":"ゲーマーでもあります","explanation":"でもあります says he is a gamer as well as a teacher."} -->
-
-<!-- grammar-card: {"rule":"も replaces は to mean 'also'","hint":"は → ?","example":"鈴木さん___日本語の先生です。","answer":"も","explanation":"も says Suzuki is a Japanese teacher too, and it pushes は out rather than sitting beside it."} -->
-
 ## Beyond the Basics
 
 ### Quantity + も
+
+<!-- grammar-card: {"id":"surprising-quantity","kind":"concept","format":"qa","priority":"essential","sourceSection":"Quantity + も","rule":"Quantity plus も can mark an unexpectedly large amount without a prior addition","example":"What does も add to ３時間も待った when no earlier waiting time has been mentioned?","answer":"It presents three hours as a surprisingly long time to wait.","explanation":"A previously mentioned item is not required for this emphatic quantity use. The amount is evaluated against the speaker's expectations."} -->
+<!-- vocab-card: {"id":"vocab-futoru","word":"太る","reading":"ふとる","meaning":"to gain weight; to become fat","priority":"optional","sourceSection":"Quantity + も"} -->
 
 The emphatic use of も can be used with a quantity even if there isn't anything in the set already. For example, if you are hungry and just ate six hamburgers, you can use も and say:
 
@@ -218,13 +235,17 @@ In the same way, if you had to wait for three hours at a hospital before seeing 
 
 ### Question Word + も
 
+<!-- grammar-card: {"id":"nothing-negative-application","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Question Word + も","rule":"何も with a negative predicate expresses not anything","hint":"I do not want to eat anything; supply the indefinite expression.","example":"___食べたくない。","answer":"何も","explanation":"何も is read なにも. Keep the negative predicate: this is not a rule that 何も alone always means everything or that all question-word combinations behave identically."} -->
+<!-- grammar-card: {"id":"universal-versus-free-choice","kind":"concept","format":"qa","priority":"optional","sourceSection":"Question Word + も","rule":"どれも includes every relevant item while どれでも permits any choice","example":"How does どれもおいしそう differ in focus from a choice expression with どれでも?","answer":"どれも says every relevant option looks delicious; どれでも means any one, no matter which.","explanation":"The available set and predicate matter. Related lexical combinations include いつも for always and いつでも for whenever."} -->
+<!-- grammar-card: {"id":"always-application","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Question Word + も","rule":"も is buried inside fixed words like いつも","hint":"Always; on every usual occasion.","example":"ここのパンは___おいしい。","answer":"いつも","explanation":"いつも means always or habitually. Learn the expression as a whole; いつ with も no longer asks when."} -->
+
 In a similar way, the emphatic も can follow a question word. For example, let's say you are at a bakery and you're very indecisive about which bread to buy because everything looks so delicious. Here, you can add も to the question word どれ (which one) and say:
 
   - **どれも**おいしそう！
 
   - Everything looks delicious!
 
-どれ is the question word that asks "which one?" out of two options. With も, a question word works like a wild card that can be added to the set. So here, も indicates every choice available is added to the set of "things that look delicious," making the sentence mean "everything looks delicious."
+どれ is the question word that asks "which one?" out of three or more options; どちら is the usual choice for two. With も, a question word works like a wild card that can be added to the set. So here, も indicates every choice available is added to the set of "things that look delicious," making the sentence mean "everything looks delicious."
 
 In the same way, if you add も to the question word いつ (when), it becomes the word いつも, which means "always." For example, if the above bakery's bread always tastes good, you can say:
 
@@ -245,6 +266,8 @@ Now, imagine you are not feeling well, you have nausea and don't want to eat any
 Question words can also be used with でも, which is the て form of だ with the particle も. In this case, it would add the meaning "no matter 〜," as in どれでも (no matter which one), いつでも (no matter when), or 何でも (no matter what).
 
 ### て Form + も + いい
+
+<!-- grammar-card: {"id":"permission-application","kind":"rule","format":"cloze","priority":"essential","sourceSection":"て Form + も + いい","rule":"A て form plus もいい can ask permission","hint":"Is it all right if I watch TV? Add the particle after the て form.","example":"テレビ観て___いい？","answer":"も","explanation":"The activity is presented as acceptable to the person whose permission is sought. Rising intonation makes this example a permission question."} -->
 
 You can use も with the て form of a word and pair it with いい to express or ask for permission or concession. For example, to ask your parent if it's okay for you to watch TV, you can use this form, as in:
 
@@ -289,8 +312,6 @@ by Takuro Moriyama
 <!-- quiz: {"type":"multiple-choice","question":"What does \"私**も**日本語を教えています。\" mean?","options":["I **also** teach Japanese.","Suzuki-san is **also** a Japanese teacher.","Suzuki-san is a teacher. Suzuki-san **is also a gamer**.","I cannot do **this, either**."],"answer":0} -->
 
 <!-- quiz: {"type":"multiple-choice","question":"What does \"鈴木さんは先生です。鈴木さんは**ゲーマーでもあります**。\" mean?","options":["Suzuki-san is a teacher. Suzuki-san **is also a gamer**.","Suzuki-san is **also** a Japanese teacher.","I **also** teach Japanese.","I cannot do **this, either**."],"answer":0} -->
-
-<!-- grammar-card: {"rule":"も is buried inside fixed words like いつも","hint":"何時 + も","example":"ここのパンは___おいしい。","answer":"いつも","explanation":"いつも means 'always' — literally 'whatever time too'."} -->
 
 ## Sources
 

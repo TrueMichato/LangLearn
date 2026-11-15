@@ -1,12 +1,21 @@
 # Sound Masculine and Feminine Plurals in Detail
 
+<!-- vocab-inventory: {"mode":"explicit"} -->
+
 Sound plurals keep the singular stem mostly intact and add a predictable ending. **جَمْعُ الْمُذَكَّرِ السَّالِمُ** (jamʿu al-mudhakkari as-sālimu) is usually for rational masculine nouns, while **جَمْعُ الْمُؤَنَّثِ السَّالِمُ** (jamʿu al-muʾannathi as-sālimu) is common for feminine nouns and many non-human categories.
 
 ## Core idea
 
+<!-- vocab-card: {"id":"vocab-mudarrisun","word":"مُدَرِّسُونَ","reading":"mudarrisūna","meaning":"teachers; masculine sound plural, nominative","priority":"optional","sourceSection":"Core idea"} -->
+
 The sound masculine plural changes by case: **مُدَرِّسُونَ** (mudarrisūna) — teachers as subject, but **مُدَرِّسِينَ** (mudarrisīna) — teachers as object or after a preposition. The sound feminine plural uses **ـَاتٌ** in the nominative and **ـَاتٍ** in both accusative and genitive.
 
 ## Forms and examples
+
+<!-- vocab-card: {"id":"vocab-talibat","word":"طَالِبَاتٌ","reading":"ṭālibātun","meaning":"female students; nominative","priority":"optional","sourceSection":"Forms and examples"} -->
+<!-- grammar-card: {"id":"masculine-nominative","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Forms and examples","rule":"A sound masculine plural subject takes ـُونَ.","example":"Complete “Muslims came” using the sound plural of مُسْلِمٌ: جَاءَ ___.","answer":"مُسْلِمُونَ","explanation":"The subject is nominative, so the sound masculine plural has -ūna."} -->
+<!-- grammar-card: {"id":"feminine-nominative","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Forms and examples","rule":"The sound feminine plural has ḍamma in the nominative.","example":"Write the definite nominative plural of طَالِبَةٌ: ___.","answer":"الطَّالِبَاتُ","explanation":"The article removes tanwīn; nominative -ātu contrasts with accusative/genitive -āti."} -->
+<!-- grammar-card: {"id":"plural-adjective-agreement","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Forms and examples","rule":"A sound masculine plural adjective agrees with its human plural noun.","example":"“They are hardworking students”: هُمْ طُلَّابٌ ___. (مُجْتَهِدٌ)","answer":"مُجْتَهِدُونَ","explanation":"The adjective is masculine plural and nominative with the students."} -->
 
 | Plural type | Nominative | Accusative | Genitive | Example |
 |---|---|---|---|---|
@@ -19,9 +28,10 @@ The sound masculine plural changes by case: **مُدَرِّسُونَ** (mudarr
 
 ## Usage notes
 
-Use the masculine sound plural mainly for humans or personified rational beings: **مُهَنْدِسُونَ** (muhandisūna) — engineers. Feminine sound plurals are broader: **مَدْرَسَاتٌ** (madrasātun) — schools and **سَيَّارَاتٌ** (sayyārātun) — cars are not female people, but their plural is sound feminine. Remember that the feminine sound plural takes kasra in the accusative: **قَرَأْتُ مَقَالَاتٍ جَدِيدَةً** (qaraʾtu maqālātin jadīdatan) — I read new articles.
+Use the masculine sound plural mainly for humans or personified rational beings: **مُهَنْدِسُونَ** (muhandisūna) — engineers. Feminine sound plurals are broader: **مَقَالَاتٌ** (maqālātun) — articles and **سَيَّارَاتٌ** (sayyārātun) — cars are not female people, but their plural is sound feminine. Remember that the feminine sound plural takes kasra in the accusative: **قَرَأْتُ مَقَالَاتٍ جَدِيدَةً** (qaraʾtu maqālātin jadīdatan) — I read new articles.
 
-<!-- grammar-card: {"rule": "The sound masculine plural is ـُونَ in the nominative and ـِينَ in both accusative and genitive.", "hint": "Watch the syntactic role before choosing the ending.", "example": "سَلَّمْتُ عَلَى الْمُعَلِّمِينَ (sallamtu ʿalā al-muʿallimīna)", "answer": "I greeted the teachers", "explanation": "After the preposition عَلَى, the sound masculine plural appears in the genitive form ـِينَ."} -->
+<!-- grammar-card: {"id":"masculine-genitive","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Usage notes","rule":"The sound masculine plural is ـُونَ in the nominative and ـِينَ in both accusative and genitive.","example":"سَلَّمْتُ عَلَى ___. (the teachers; sound masculine plural)","answer":"الْمُعَلِّمِينَ","explanation":"عَلَى governs genitive, so the plural takes -īna rather than -ūna.","legacyAliases":[{"rule":"The sound masculine plural is ـُونَ in the nominative and ـِينَ in both accusative and genitive.","example":"سَلَّمْتُ عَلَى الْمُعَلِّمِينَ (sallamtu ʿalā al-muʿallimīna)"}]} -->
+<!-- grammar-card: {"id":"plural-scope","kind":"concept","format":"qa","priority":"essential","sourceSection":"Usage notes","rule":"Sound feminine plural is not restricted to female humans.","example":"Does the label sound feminine plural mean that سَيَّارَاتٌ refers to female people?","answer":"No. The category also includes non-human nouns such as cars and articles.","explanation":"The masculine sound plural is mainly used for rational masculine referents; the feminine sound plural has a broader lexical range."} -->
 
 ## Practice patterns
 
@@ -33,7 +43,7 @@ Convert singular nouns and keep the case clear:
 
 <!-- quiz: {"type": "multiple-choice", "question": "Which sentence shows the sound feminine plural in the accusative?", "options": ["رَأَيْتُ الْمُعَلِّمَاتِ", "جَاءَتِ الْمُعَلِّمَاتُ", "هَؤُلَاءِ مُعَلِّمُونَ", "مَرَرْتُ بِمُعَلِّمِينَ"], "answer": 0} -->
 
-<!-- grammar-card: {"rule": "The sound feminine plural uses kasra, not fatḥa, for both accusative and genitive endings.", "hint": "Look for ـَاتِ or ـَاتٍ after verbs and prepositions.", "example": "زُرْتُ مَكْتَبَاتٍ كَثِيرَةً (zurtu maktabātin kathīratan)", "answer": "I visited many libraries", "explanation": "مَكْتَبَاتٍ is accusative after زُرْتُ, but its sound feminine plural ending is kasra."} -->
+<!-- grammar-card: {"id":"feminine-accusative","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Practice patterns","rule":"The sound feminine plural uses kasra, not fatḥa, for both accusative and genitive endings.","example":"زُرْتُ ___ كَثِيرَةً. (libraries; indefinite sound feminine plural)","answer":"مَكْتَبَاتٍ","explanation":"The object is accusative but its sound feminine plural marker is kasra, with tanwīn because it is indefinite.","legacyAliases":[{"rule":"The sound feminine plural uses kasra, not fatḥa, for both accusative and genitive endings.","example":"زُرْتُ مَكْتَبَاتٍ كَثِيرَةً (zurtu maktabātin kathīratan)"}]} -->
 
 ## Sources
 

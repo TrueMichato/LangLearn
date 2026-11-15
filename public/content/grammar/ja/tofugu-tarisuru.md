@@ -1,5 +1,7 @@
 # たりする — Do Things Like
 
+<!-- vocab-inventory: {"mode":"explicit"} -->
+
 > **Source:** Content from [Tofugu](https://www.tofugu.com/japanese-grammar/tarisuru/). For personal study.
 
 Japanese Listing Form たりする
@@ -31,14 +33,14 @@ V-た
 N
 
  + 
-だった
+だったり
 
 - 
 
 な-adj (Stem)
 
  + 
-だった
+だったり
 
 〜たりする is used to list actions and states. It indicates the list is incomplete, meaning that there are more things speakers could list.
 
@@ -85,6 +87,9 @@ Take a look at the table below to see how each word type connects to たり:
 
 You'll usually see たり occur twice in a sentence, as in 〜たり〜たりする, but it can be used alone, in lists of three, four, ten, or however many you want (depending on what the situation calls for). Read on to learn about how it used with different types of words!
 
+<!-- grammar-card: {"id":"nonexhaustive-list","kind":"concept","format":"qa","priority":"essential","sourceSection":"What Is たりする?","rule":"たりする presents examples from a nonexhaustive set of actions or states","example":"Does 食べたり飲んだりする assert that eating and drinking are the only activities?","answer":"No. They are examples, leaving other activities possible.","explanation":"The form has a built-in etc. implication and can list one, two, or more examples."} -->
+<!-- grammar-card: {"id":"list-tense","kind":"concept","format":"qa","priority":"essential","sourceSection":"What Is たりする?","rule":"The past-shaped material before り is connective; final する determines the sentence tense","example":"Why can 食べたり飲んだりします describe a present habit despite the past-shaped verbs?","answer":"Those forms build the list; the final します supplies nonpast tense and politeness.","explanation":"Changing final する to した makes a past report without changing the list members."} -->
+
 ## たりする with Verbs
 
 When paired with verbs, 〜たりする indicates an incomplete list of actions—more actions were taken, but only a few are actually being included in the list. It's often translated as "I do things like… and…" Let's take a look at this in an example sentence:
@@ -93,13 +98,15 @@ When paired with verbs, 〜たりする indicates an incomplete list of actions�
 
   - At the park, I did things like bike-riding and volleyball (among other things).
 
-Using 〜たり to list these actions implies that you did other things at the park too, and these are just some examples. Using the て form to connect these actions would imply you *only* rode your bike and played volleyball at the park, and did nothing else in addition:
+Using 〜たり presents these actions as examples rather than a complete account. Using the て form instead links the stated actions, often as a sequence; it does not by itself assert that you did nothing else:
 
   - 公園で自転車に**乗って**バレーボールした。
 
   - At the park, I rode my bike and played volleyball.
 
-<!-- grammar-card: {"rule":"The て-form lists actions in the order they happened","hint":"乗る → ?","example":"公園で自転車に___バレーボールした。","answer":"乗って","explanation":"乗って implies cycling and then volleyball in sequence, where 乗ったり would list them as examples."} -->
+<!-- vocab-card: {"id":"vocab-noru","word":"乗る","reading":"のる","meaning":"to ride; to get on","priority":"optional","sourceSection":"たりする with Verbs"} -->
+<!-- grammar-card: {"id":"verb-list-application","kind":"rule","format":"cloze","priority":"essential","sourceSection":"たりする with Verbs","rule":"Add り to the verb's plain past form to give a sample action","example":"Use 乗る as a listed example: 自転車に___、バレーボールしたりした。","answer":"乗ったり","explanation":"乗る has past 乗った, then adds り. A voiced past such as 飲んだ similarly gives 飲んだり."} -->
+<!-- grammar-card: {"id":"te-sequence","kind":"rule","format":"cloze","priority":"optional","sourceSection":"たりする with Verbs","rule":"The て-form can connect actions as a sequence without the explicit sample-list framing of たり","hint":"Use the て-form of 乗る (のる).","example":"公園で自転車に___バレーボールした。","answer":"乗って","explanation":"乗って connects cycling and volleyball, often sequentially. It does not logically exclude other activities.","legacyAliases":[{"rule":"The て-form lists actions in the order they happened","example":"公園で自転車に___バレーボールした。"}]} -->
 
 ## たりする with Adjectives
 
@@ -117,7 +124,10 @@ When used with adjectives, 〜たり creates an incomplete list of states of bei
 
 A quick reminder about tense: while the い-adjectives in the example sentences are in the past tense かった form, and the な-adjective is marked with the past tense marker だった, they are not referring to the past. This is simply a way for them to connect with the 〜り part of 〜たり. The tense of both of these sentences in present, marked by します at the end of the sentence.
 
-<!-- grammar-card: {"rule":"Adjectives take かったり to list alternating states","hint":"暑い / 寒い","example":"この辺は___します。","answer":"暑かったり寒かったり","explanation":"暑かったり寒かったりします says the area is hot at times and cold at others."} -->
+<!-- vocab-card: {"id":"vocab-atsui","word":"暑い","reading":"あつい","meaning":"hot (weather)","priority":"optional","sourceSection":"たりする with Adjectives"} -->
+<!-- vocab-card: {"id":"vocab-samui","word":"寒い","reading":"さむい","meaning":"cold (weather)","priority":"optional","sourceSection":"たりする with Adjectives"} -->
+<!-- grammar-card: {"id":"i-adjective-list","kind":"rule","format":"cloze","priority":"optional","sourceSection":"たりする with Adjectives","rule":"い-adjectives use かったり to list alternating states","example":"Make 暑い a listed state: この辺は暑___します。","answer":"かったり","explanation":"暑い becomes 暑かったり. The final します keeps the sentence nonpast.","legacyAliases":[{"rule":"Adjectives take かったり to list alternating states","example":"この辺は___します。"}]} -->
+<!-- grammar-card: {"id":"na-adjective-list","kind":"rule","format":"cloze","priority":"essential","sourceSection":"たりする with Adjectives","rule":"な-adjectives use だったり rather than かったり","example":"Sometimes quiet, sometimes noisy: 静か___うるさかったりします。","answer":"だったり","explanation":"静か is a な-adjective, so its listed form is 静かだったり; it can mix with an い-adjective."} -->
 
 ## たりする with Nouns
 
@@ -147,7 +157,13 @@ You can also combine たり and や:
 
 In this sentence, や lists two examples out of a bunch of items in your lunch, and だったり indicates that you are listing one example scenario out of a list of many different lunch scenarios.
 
+<!-- vocab-card: {"id":"vocab-onigiri","word":"おにぎり","reading":"おにぎり","meaning":"rice ball","priority":"optional","sourceSection":"たりする with Nouns"} -->
+<!-- grammar-card: {"id":"noun-list","kind":"rule","format":"cloze","priority":"optional","sourceSection":"たりする with Nouns","rule":"Nouns use だったり to list example states or scenarios","example":"Make salad one possible lunch scenario: お昼ごはんはサラダ___する。","answer":"だったり","explanation":"The noun predicate takes だったり, not bare たり."} -->
+<!-- grammar-card: {"id":"ya-scenario-contrast","kind":"concept","format":"qa","priority":"essential","sourceSection":"たりする with Nouns","rule":"や lists sample nouns within an account; だったり can list alternative scenarios","example":"How does サラダやおにぎりです differ from サラダだったりおにぎりだったりする?","answer":"The first lists sample lunch items; the second presents possible lunch scenarios, such as salad on some occasions and rice balls on others.","explanation":"や and たり can combine: サラダやおにぎりだったりします gives an example scenario containing sample items."} -->
+
 ---
+
+<!-- grammar-card: {"id":"ya-noun-samples","kind":"rule","format":"cloze","priority":"optional","sourceSection":"たりする with Nouns","rule":"や lists sample nouns, while nouns can also form predicates with だったり","hint":"Use the nonexhaustive noun-listing particle.","example":"今日のお昼ごはんはサラダ___おにぎりです。","answer":"や","explanation":"や lists salad and rice balls as examples of what lunch includes; it is not the only listing construction available to nouns.","legacyAliases":[{"rule":"Nouns use や where verbs use たり","example":"今日のお昼ごはんはサラダ___おにぎりです。"}]} -->
 
 #### Sources and Additional Readings
 
@@ -199,8 +215,6 @@ pp. 283-285
 <!-- quiz: {"type":"multiple-choice","question":"What does \"公園で自転車に**乗って**バレーボールした。\" mean?","options":["At the park, I rode my bike and played volleyball.","At the park, I did things like bike-riding and volleyball (among other things).","This area is sometimes hot and is sometimes cold (and sometimes is something else).","That library is sometimes quiet and is sometimes noisy (and sometimes is something else)."],"answer":0} -->
 
 <!-- quiz: {"type":"multiple-choice","question":"What does \"この辺は**暑かったり寒かったり**します。\" mean?","options":["This area is sometimes hot and is sometimes cold (and sometimes is something else).","At the park, I did things like bike-riding and volleyball (among other things).","At the park, I rode my bike and played volleyball.","That library is sometimes quiet and is sometimes noisy (and sometimes is something else)."],"answer":0} -->
-
-<!-- grammar-card: {"rule":"Nouns use や where verbs use たり","hint":"と / や","example":"今日のお昼ごはんはサラダ___おにぎりです。","answer":"や","explanation":"や lists salad and rice balls as examples of what lunch includes."} -->
 
 ## Sources
 

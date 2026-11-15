@@ -1,6 +1,8 @@
 # Negation & Double Negatives (no, nada, nunca, nadie)
 
-In Spanish, negation works differently from English in one crucial way: **double negatives are not only allowed — they are required**. Once you internalize this rule, building negative sentences becomes fast and natural.
+<!-- vocab-inventory: {"mode":"explicit"} -->
+
+Spanish uses **negative concord**: several negative words can reinforce one negation rather than cancel it. Whether **no** is needed depends on word order; it is not obligatory in every negative sentence.
 
 ## Basic Negation with no
 
@@ -15,6 +17,7 @@ If object pronouns appear before the verb, **no** goes before all of them:
 - **No lo sé.** — I do not know it.
 - **No me gusta el café.** — I do not like coffee.
 
+<!-- grammar-card: {"id":"no-pronoun-order","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Basic Negation with no","rule":"No precedes preverbal object pronouns in a basic negative clause","example":"___ lo sé. (I do not know it.)","answer":"No","explanation":"The order is no + lo + sé, not lo no sé."} -->
 ## Negative Words
 
 | Word | Pronunciation | Meaning |
@@ -29,11 +32,20 @@ If object pronouns appear before the verb, **no** goes before all of them:
 
 **ninguno** shortens to **ningún** before a masculine singular noun: **ningún problema** — no problem.
 
+<!-- vocab-card: {"id":"vocab-nada","word":"nada","meaning":"nothing; anything in a negative context","priority":"essential","sourceSection":"Negative Words"} -->
+<!-- vocab-card: {"id":"vocab-nunca","word":"nunca","meaning":"never; ever in some question contexts","priority":"essential","sourceSection":"Negative Words"} -->
+<!-- vocab-card: {"id":"vocab-jamas","word":"jamás","meaning":"never (often emphatic); ever in some contexts","priority":"optional","sourceSection":"Negative Words"} -->
+<!-- vocab-card: {"id":"vocab-nadie","word":"nadie","meaning":"nobody; anybody in a negative context","priority":"essential","sourceSection":"Negative Words"} -->
+<!-- vocab-card: {"id":"vocab-ninguno","word":"ninguno","meaning":"none; not any (masculine form; feminine ninguna)","priority":"essential","sourceSection":"Negative Words"} -->
+<!-- vocab-card: {"id":"vocab-tampoco","word":"tampoco","meaning":"neither; not either","priority":"essential","sourceSection":"Negative Words"} -->
+<!-- vocab-card: {"id":"vocab-ni-ni","word":"ni...ni","meaning":"neither...nor","priority":"optional","sourceSection":"Negative Words"} -->
+<!-- grammar-card: {"id":"ningun-apocope","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Negative Words","rule":"Ninguno shortens to ningún before a masculine singular noun","example":"No tengo ___ problema. (ninguno)","answer":"ningún","explanation":"The shortened form has a written accent."} -->
+
 <!-- quiz: {"type":"multiple-choice","question":"How do you say 'I do not have anything' in Spanish?","options":["No tengo algo.","No tengo nada.","Nada tengo algo.","No tengo ningún."],"answer":1} -->
 
 ## The Double Negative Rule
 
-When a negative word **follows** the verb, **no** must also appear before the verb. This looks like a double negative to English speakers, but it is standard and required:
+If all negative words **follow** the verb, **no** normally precedes it in a simple negative statement. A negative word already before the verb can instead license following negatives, as the next section shows:
 
 - **No tengo nada.** — I do not have anything. (literally: "I do not have nothing")
 - **No conozco a nadie.** — I do not know anyone.
@@ -44,7 +56,8 @@ You can stack multiple negatives freely:
 
 - **No le doy nada a nadie nunca.** — I never give anything to anyone.
 
-<!-- grammar-card: {"rule":"When a negative word follows the verb, 'no' must also precede the verb","hint":"Spanish requires both 'no' before the verb AND the negative word after it","example":"No conozco a ___.","answer":"nadie","explanation":"'Nadie' (nobody) follows the verb, so 'no' is required before the verb. Double negatives are grammatically mandatory in Spanish, unlike in English."} -->
+<!-- grammar-card: {"id":"postverbal-negative","kind":"rule","format":"cloze","priority":"essential","sourceSection":"The Double Negative Rule","rule":"With no preverbal negative word, a postverbal negative normally requires no before the verb","example":"No conozco a ___. (anybody)","answer":"nadie","explanation":"No and nadie express one negation. A preverbal nunca or nadie can instead license following negatives without no.","legacyAliases":[{"rule":"When a negative word follows the verb, 'no' must also precede the verb","example":"No conozco a ___."}]} -->
+<!-- grammar-card: {"id":"negative-concord-meaning","kind":"concept","format":"qa","priority":"essential","sourceSection":"The Double Negative Rule","rule":"Multiple Spanish negative words can express one negation","example":"Does No tengo nada mean that the two negatives cancel and I have something?","answer":"No. It means I do not have anything; the negatives reinforce one negation.","explanation":"This is standard negative concord, not an error copied from English."} -->
 
 ## Negative Word Before the Verb
 
@@ -76,7 +89,9 @@ When **tampoco** precedes the verb, no **no** is needed:
 
 - **Tampoco me gusta a mí.** — I do not like it either.
 
-<!-- grammar-card: {"rule":"A negative word before the verb replaces 'no' — never use both in that position","hint":"Negative before verb = no 'no' needed; negative after verb = 'no' required","example":"___ viene nadie los lunes.","answer":"Nunca","explanation":"'Nunca' precedes the verb, so no additional 'no' is needed. 'Nunca viene nadie' means 'Nobody ever comes on Mondays'. Adding 'no' before the verb when the negative precedes would be ungrammatical."} -->
+<!-- grammar-card: {"id":"preverbal-negative","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Negative Word Before the Verb","rule":"A negative word before the verb replaces 'no' — never use both in that position","example":"___ viene nadie los lunes. (never)","answer":"Nunca","explanation":"In this standard simple clause, nunca licenses the following nadie without an extra no.","legacyAliases":[{"rule":"A negative word before the verb replaces 'no' — never use both in that position","example":"___ viene nadie los lunes."}]} -->
+<!-- grammar-card: {"id":"negative-agreement-response","kind":"rule","format":"cloze","priority":"essential","sourceSection":"tampoco — Neither / Not Either","rule":"Tampoco agrees with a negative statement","example":"— No me gusta el brócoli. — A mí ___.","answer":"tampoco","explanation":"The reply means me neither; también would agree with an affirmative statement."} -->
+<!-- grammar-card: {"id":"tampoco-position","kind":"concept","format":"qa","priority":"optional","sourceSection":"tampoco — Neither / Not Either","rule":"Tampoco follows the same word-order contrast as other negative words","example":"Why do Tampoco me gusta and No me gusta tampoco differ in whether no appears?","answer":"Preverbal tampoco supplies negation itself; postverbal tampoco needs a preceding negative in the taught clause.","explanation":"Word order, not a change from negative to positive meaning, explains the contrast."} -->
 
 ## Sources
 

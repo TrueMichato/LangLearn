@@ -1,10 +1,15 @@
 # The Future Subjunctive (Futuro do Subjuntivo)
 
-The future subjunctive is one of the most fascinating features of Portuguese — it's a tense that other Romance languages have lost! While Spanish, French, and Italian dropped it centuries ago, Portuguese kept it alive and uses it daily. It expresses uncertain or conditional future events and appears after specific conjunctions.
+<!-- vocab-inventory: {"mode":"explicit"} -->
+
+The future subjunctive remains productive in everyday Portuguese, unlike in many other Romance languages. Spanish still preserves forms in some legal or fixed expressions, but Portuguese uses this tense daily. It expresses open or conditional future events and appears after specific conjunctions.
 
 ## Formation
 
-The future subjunctive is formed from the **third person plural preterite** (eles) stem. Take the preterite "eles" form, drop **-ram**, and add the future subjunctive endings:
+<!-- grammar-card: {"id":"future-subjunctive-formation","kind":"concept","format":"qa","priority":"essential","sourceSection":"Formation","rule":"Add -r, -r, -rmos, -rem to the eles preterite minus -ram","example":"After removing -ram from the eles preterite, what endings form the future subjunctive for eu, você, nós, and eles?","answer":"-r, -r, -rmos, and -rem respectively.","explanation":"The preterite base plus these endings gives falar, falar, falarmos, falarem; irregular preterite stems remain significant."} -->
+<!-- grammar-card: {"id":"future-subjunctive-regular-overlap","kind":"concept","format":"qa","priority":"essential","sourceSection":"Formation","rule":"Only regular future-subjunctive forms can be safely copied from their infinitives","example":"Can the regular-verb resemblance to the personal infinitive safely derive every future subjunctive?","answer":"No. Irregular verbs use their preterite stems, as ter → tiver rather than ter.","explanation":"Regular forms coincide with the personal infinitive; irregular forms can differ."} -->
+
+The future subjunctive is formed from the **third person plural preterite** (eles) stem. Take the preterite "eles" form, drop **-ram**, and add **-r, -r, -rmos, -rem** for the persons in the table:
 
 | Person | falar (falaram) | comer (comeram) | partir (partiram) |
 |--------|----------------|-----------------|-------------------|
@@ -16,6 +21,15 @@ The future subjunctive is formed from the **third person plural preterite** (ele
 For **regular** verbs, the future subjunctive looks identical to the personal infinitive. However, for **irregular** verbs, they are different!
 
 ## Irregular Future Subjunctive
+
+<!-- grammar-card: {"id":"future-subjunctive-saber","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Irregular Future Subjunctive","rule":"Future subjunctive from preterite stem","example":"Se eu ___ (saber) a resposta, te falo.","answer":"souber","explanation":"Souberam yields souber in the future subjunctive."} -->
+<!-- grammar-card: {"id":"future-subjunctive-ir","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Irregular Future Subjunctive","rule":"Ser and ir share for, formos, forem in the future subjunctive","example":"Quando nós ___ (ir) ao Brasil, vamos visitar o Rio.","answer":"formos","explanation":"Foram yields for, formos, forem; context distinguishes ser from ir.","legacyAliases":[{"rule":"Irregular: ser/ir in future subjunctive","example":"Quando nós ___ (ir) ao Brasil, vamos visitar o Rio."}]} -->
+<!-- grammar-card: {"id":"future-subjunctive-fazer","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Irregular Future Subjunctive","rule":"Fizeram yields future-subjunctive fizer","example":"quando nós ___ (fazer; future subjunctive)","answer":"fizermos","explanation":"Fizeram yields fizer, with nós fizermos."} -->
+<!-- grammar-card: {"id":"future-subjunctive-ver","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Irregular Future Subjunctive","rule":"Ver has future subjunctive vir, derived from viram","example":"quando eu ___ (ver; future subjunctive)","answer":"vir","explanation":"Ver has preterite viram and future subjunctive vir; this form is not the infinitive of the intended verb."} -->
+<!-- grammar-card: {"id":"future-subjunctive-dar","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Irregular Future Subjunctive","rule":"Deram yields future-subjunctive der","example":"se eu ___ (dar; future subjunctive)","answer":"der","explanation":"Deram yields der in the future subjunctive."} -->
+<!-- grammar-card: {"id":"future-subjunctive-dizer","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Irregular Future Subjunctive","rule":"Disseram yields future-subjunctive disser","example":"quando eu ___ (dizer; future subjunctive)","answer":"disser","explanation":"Disseram yields disser in the future subjunctive."} -->
+<!-- grammar-card: {"id":"future-subjunctive-trazer","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Irregular Future Subjunctive","rule":"Trouxeram yields future-subjunctive trouxer","example":"se eu ___ (trazer; future subjunctive)","answer":"trouxer","explanation":"Trouxeram yields trouxer in the future subjunctive."} -->
+<!-- grammar-card: {"id":"future-subjunctive-por","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Irregular Future Subjunctive","rule":"Puseram yields future-subjunctive puser","example":"se eu ___ (pôr; future subjunctive)","answer":"puser","explanation":"Puseram yields puser in the future subjunctive."} -->
 
 Irregular verbs show their true preterite stems in the future subjunctive:
 
@@ -41,12 +55,18 @@ The future subjunctive is used after specific conjunctions when referring to fut
 
 ### Quando (when)
 
+<!-- grammar-card: {"id":"future-subjunctive-poder","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Quando (when)","rule":"Future-oriented quando takes the future subjunctive here","example":"Quando você ___ (poder), me liga.","answer":"puder","explanation":"Future-oriented quando uses the future subjunctive here; poder derives puder from puderam.","legacyAliases":[{"rule":"Future subjunctive with 'quando'","example":"Quando você ___ (poder), me liga."}]} -->
+<!-- grammar-card: {"id":"future-subjunctive-vir","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Quando (when)","rule":"Vir has future subjunctive vier, derived from vieram","example":"Quando eles ___, avisa a gente. (vir)","answer":"vierem","explanation":"Vir has preterite vieram and future subjunctive vierem for eles."} -->
+
 - **Quando eu chegar em casa, vou descansar.** (KWAN-doo eu sheh-GAR) — When I arrive home, I'll rest.
 - **Quando você puder, me liga.** (KWAN-doo vo-SEH poo-DEHR) — When you can, call me.
 - **Quando nós tivermos tempo, vamos viajar.** (KWAN-doo nois chee-VEHR-mohs) — When we have time, we'll travel.
 - **Quando eles vierem, avisa a gente.** (KWAN-doo EH-lees vee-EH-rehn) — When they come, let us know.
 
 ### Se (if)
+
+<!-- grammar-card: {"id":"future-subjunctive-ter","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Se (if)","rule":"Tiveram yields future-subjunctive tiver","example":"Se eu ___ dinheiro, vou comprar um carro. (ter)","answer":"tiver","explanation":"Tiveram yields tiver in the future subjunctive."} -->
+<!-- grammar-card: {"id":"future-subjunctive-querer","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Se (if)","rule":"Quiseram yields future-subjunctive quiser","example":"Se você ___, a gente pode sair. (querer)","answer":"quiser","explanation":"Quiseram yields quiser in the future subjunctive."} -->
 
 - **Se eu tiver dinheiro, vou comprar um carro.** (see eu chee-VEHR jee-NYAY-roo) — If I have money, I'll buy a car.
 - **Se você quiser, a gente pode sair.** (see vo-SEH kee-ZEHR) — If you want, we can go out.
@@ -55,22 +75,32 @@ The future subjunctive is used after specific conjunctions when referring to fut
 
 ### Assim que (as soon as)
 
+<!-- grammar-card: {"id":"future-subjunctive-assim-que","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Assim que (as soon as)","rule":"Prospective assim que takes the future subjunctive","example":"Assim que ela ___, começamos. (arrive; future event)","answer":"chegar","explanation":"Assim que takes the future subjunctive for an anticipated event."} -->
+<!-- vocab-card: {"id":"vocab-assim-que","word":"assim que","meaning":"as soon as","priority":"optional","sourceSection":"Assim que (as soon as)"} -->
+
 - **Assim que eu souber, te aviso.** (ah-SEEN kee eu soh-BEHR) — As soon as I find out, I'll let you know.
 - **Assim que ela chegar, começamos.** (ah-SEEN kee EH-lah sheh-GAR) — As soon as she arrives, we'll start.
 
 ### Enquanto (while)
+
+<!-- grammar-card: {"id":"future-subjunctive-estar","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Enquanto (while)","rule":"Prospective enquanto can take the future subjunctive","example":"Enquanto vocês ___ aqui, fiquem à vontade. (estar)","answer":"estiverem","explanation":"Future-oriented enquanto uses estiverem, from estiveram."} -->
 
 - **Enquanto eu viver, vou te amar.** (en-KWAN-too eu vee-VEHR) — While I live, I'll love you.
 - **Enquanto vocês estiverem aqui, fiquem à vontade.** (en-KWAN-too vo-SEHS es-chee-VEH-rehn) — While you're here, make yourselves at home.
 
 ### Sempre que (whenever)
 
+<!-- grammar-card: {"id":"future-subjunctive-sempre","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Sempre que (whenever)","rule":"Prospective sempre que takes the future subjunctive","example":"Sempre que ela ___, traz comida. (vir; anticipated visits)","answer":"vier","explanation":"Prospective sempre que takes the future subjunctive; traz states what she does, unlike imperative traga."} -->
+<!-- vocab-card: {"id":"vocab-sempre-que","word":"sempre que","meaning":"whenever","priority":"optional","sourceSection":"Sempre que (whenever)"} -->
+
 - **Sempre que eu puder, vou te visitar.** (SEN-pree kee eu poo-DEHR) — Whenever I can, I'll visit you.
-- **Sempre que ela vier, traga comida.** (SEN-pree kee EH-lah vee-EHR) — Whenever she comes, she brings food.
+- **Sempre que ela vier, traz comida.** (SEN-pree kee EH-lah vee-EHR) — Whenever she comes, she brings food.
 
 ## Future Subjunctive vs. Present Subjunctive
 
-Don't confuse these two! The **future subjunctive** is used for future possibilities; the **present subjunctive** for present wishes, doubts, and commands:
+<!-- grammar-card: {"id":"future-present-trigger-contrast","kind":"concept","format":"qa","priority":"essential","sourceSection":"Future Subjunctive vs. Present Subjunctive","rule":"A governing construction selects subjunctive tense, not future time alone","example":"Why is it Se ele vier but Espero que ele venha, even if both concern tomorrow?","answer":"Se introduces an open future condition; espero que introduces a wish and takes the present subjunctive here.","explanation":"The governing construction selects the subjunctive form; present subjunctive can refer to future events."} -->
+
+Don't choose the tense from the calendar alone! The **future subjunctive** appears in open future conditions and temporal clauses such as those with **se** and **quando**. The **present subjunctive** follows wishes, doubts, and other triggers and can itself refer to the future, as in **Espero que ele venha amanhã**:
 
 | Future Subjunctive | Present Subjunctive |
 |-------------------|-------------------|
@@ -82,6 +112,11 @@ Don't confuse these two! The **future subjunctive** is used for future possibili
 - **Espero que eu vá ao Brasil em breve.** (es-PEH-roo kee eu vah) — I hope I go to Brazil soon.
 
 ## Common Patterns and Sentences
+
+<!-- vocab-card: {"id":"vocab-se-der","word":"se der","meaning":"if possible; if it works out","priority":"optional","sourceSection":"Common Patterns and Sentences"} -->
+<!-- vocab-card: {"id":"vocab-deus-quiser","word":"se Deus quiser","meaning":"God willing","priority":"optional","sourceSection":"Common Patterns and Sentences"} -->
+<!-- vocab-card: {"id":"vocab-custe-custar","word":"custe o que custar","meaning":"whatever the cost; no matter what","priority":"optional","sourceSection":"Common Patterns and Sentences"} -->
+<!-- vocab-card: {"id":"vocab-faca-quiser","word":"faça o que quiser","meaning":"do whatever you want","priority":"optional","sourceSection":"Common Patterns and Sentences"} -->
 
 - **Se der, eu vou.** (see dehr eu voh) — If possible, I'll go. (very common in speech)
 - **Se Deus quiser!** (see DEH-ooz kee-ZEHR) — God willing! (extremely common expression)
@@ -96,12 +131,6 @@ Don't confuse these two! The **future subjunctive** is used for future possibili
 <!-- quiz: {"type":"multiple-choice","question":"Which conjunction does NOT trigger the future subjunctive?","options":["quando","se","embora","enquanto"],"answer":2} -->
 
 <!-- quiz: {"type":"multiple-choice","question":"What is the future subjunctive of 'fazer' for 'nós'?","options":["façamos","fizermos","fazemos","faremos"],"answer":1} -->
-
-<!-- grammar-card: {"rule":"Future subjunctive from preterite stem","hint":"Take 'eles' preterite, drop -ram, add endings","example":"Se eu ___ (saber) a resposta, te falo.","answer":"souber","explanation":"The future subjunctive of 'saber' comes from the preterite stem: souberam → souber. Used after 'se' for uncertain future conditions."} -->
-
-<!-- grammar-card: {"rule":"Future subjunctive with 'quando'","hint":"Use future subjunctive (not present indicative) after 'quando' for future events","example":"Quando você ___ (poder), me liga.","answer":"puder","explanation":"After 'quando' referring to the future, use the future subjunctive. 'Poder': puderam → puder. NOT 'quando você pode' for future events."} -->
-
-<!-- grammar-card: {"rule":"Irregular: ser/ir in future subjunctive","hint":"Both 'ser' and 'ir' share the same future subjunctive: for/formos/forem","example":"Quando nós ___ (ir) ao Brasil, vamos visitar o Rio.","answer":"formos","explanation":"'Ir' and 'ser' share the same future subjunctive form: for (eu/você), formos (nós), forem (vocês/eles). Context clarifies which verb is meant."} -->
 
 ## Sources
 

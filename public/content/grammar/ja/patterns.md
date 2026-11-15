@@ -1,5 +1,7 @@
 # Useful Grammar Patterns
 
+<!-- vocab-inventory: {"mode":"explicit"} -->
+
 This lesson covers a collection of essential grammar patterns that you will encounter frequently in intermediate Japanese. These patterns add nuance and precision to your expression.
 
 ## ために — "In Order To" / "For the Sake Of"
@@ -22,7 +24,9 @@ This lesson covers a collection of essential grammar patterns that you will enco
 
 <!-- quiz:{"type":"multiple-choice","question":"'日本語を勉強するために日本に来ました' means:","options":["I came to Japan because I studied Japanese","I came to Japan in order to study Japanese","I study Japanese for Japan","Japan came for my Japanese study"],"answer":1} -->
 
-<!-- grammar-card: {"rule":"ために states a deliberate purpose the speaker controls","hint":"ために / ように","example":"日本語を勉強(べんきょう)する___、日本に来(き)ました。","answer":"ために","explanation":"ために follows the dictionary form and expresses an aim the speaker deliberately pursues."} -->
+<!-- grammar-card: {"id":"purpose-tameni","kind":"rule","format":"cloze","priority":"essential","sourceSection":"With verbs: Dictionary form + ために","rule":"ために states a deliberate purpose the speaker controls","hint":"Use the deliberate-purpose pattern","example":"日本語を勉強(べんきょう)する___、日本に来(き)ました。","answer":"ために","explanation":"The dictionary verb 勉強する names the speaker's intentional purpose in coming."} -->
+<!-- grammar-card: {"id":"beneficiary-noun","kind":"rule","format":"cloze","priority":"essential","sourceSection":"With nouns: Noun + のために","rule":"A noun connects with のために for a beneficiary or purpose","example":"I work for my family's sake: 家族___ために、一生懸命働いています。","answer":"の","explanation":"家族のために names the people who benefit, rather than a verb describing a deliberate action."} -->
+<!-- vocab-card: {"id":"vocab-chokin","word":"貯金","reading":"ちょきん","meaning":"saving money; savings","priority":"optional","sourceSection":"With nouns: Noun + のために"} -->
 
 ## ように — "So That" / "In Such a Way That"
 
@@ -46,7 +50,9 @@ This lesson covers a collection of essential grammar patterns that you will enco
 
 Both can translate as "in order to," but ために is more direct purpose and ように is more about reaching a desired state.
 
-<!-- grammar-card: {"rule":"ように is used for goals outside the speaker's direct control","hint":"ために / ように","example":"日本語が話(はな)せる___、毎日練習(れんしゅう)しています。","answer":"ように","explanation":"話せる is a potential, a state rather than a deliberate act, so ように is required instead of ために."} -->
+<!-- grammar-card: {"id":"goal-youni","kind":"rule","format":"cloze","priority":"essential","sourceSection":"With potential/negative verbs + ように","rule":"ように commonly expresses a desired state with potential, negative, or nonvolitional predicates","hint":"Use the desired-state pattern","example":"日本語が話(はな)せる___、毎日練習(れんしゅう)しています。","answer":"ように","explanation":"話せる is the desired ability rather than the deliberate act of speaking. The contrast is a useful construction choice, not a claim that every goal is wholly outside control.","legacyAliases":[{"rule":"ように is used for goals outside the speaker's direct control","example":"日本語が話(はな)せる___、毎日練習(れんしゅう)しています。"}]} -->
+<!-- grammar-card: {"id":"negative-goal","kind":"rule","format":"cloze","priority":"optional","sourceSection":"With potential/negative verbs + ように","rule":"A negative plain verb can state a goal to avoid an outcome before ように","example":"I took notes so I would not forget: 忘れない___、メモしました。","answer":"ように","explanation":"忘れない names the desired negative state, not an action one deliberately performs."} -->
+<!-- grammar-card: {"id":"purpose-state-contrast","kind":"concept","format":"qa","priority":"essential","sourceSection":"ために vs ように","rule":"ために foregrounds intentional purpose while ように foregrounds a desired state","example":"Why does 合格するために勉強する differ in focus from 合格できるように勉強する?","answer":"The first states passing as the aim; the second aims to reach the state of being able to pass.","explanation":"Both can translate as in order to, but potential できる fits the desired-state ように pattern."} -->
 
 ## ようにする — "Make an Effort To" / "Try To"
 
@@ -57,6 +63,9 @@ Both can translate as "in order to," but ために is more direct purpose and �
 - **お酒(さけ)を飲(の)まないようにしています。** — I try not to drink alcohol.
 - **毎朝(まいあさ)ジョギングするようにしています。** — I make it a point to jog every morning.
 - **悪口(わるくち)を言(い)わないようにしています。** — I try not to say bad things about others.
+
+<!-- grammar-card: {"id":"effort-habit","kind":"rule","format":"cloze","priority":"essential","sourceSection":"ようにする — \"Make an Effort To\" / \"Try To\"","rule":"ようにする expresses a conscious effort or maintained habit","example":"I make an effort to sleep early: 早く寝る___。 (ongoing polite habit)","answer":"ようにしています","explanation":"The speaker deliberately tries to maintain the practice; this is not just a statement that sleep is occurring."} -->
+<!-- grammar-card: {"id":"effort-negative-habit","kind":"rule","format":"cloze","priority":"optional","sourceSection":"ようにする — \"Make an Effort To\" / \"Try To\"","rule":"A negative verb before ようにする describes an effort to avoid an action","example":"I try not to drink alcohol: お酒を飲まない___。","answer":"ようにしています","explanation":"The negative belongs before ように, specifying the habit being maintained."} -->
 
 <!-- quiz:{"type":"multiple-choice","question":"'早く寝るようにしています' means:","options":["I am sleeping early","I try to go to bed early","I can go to bed early","I want to go to bed early"],"answer":1} -->
 
@@ -70,6 +79,9 @@ Both can translate as "in order to," but ために is more direct purpose and �
 - **最近(さいきん)、料理を作(つく)るようになりました。** — Recently, I started cooking.
 - **漢字(かんじ)が読(よ)めるようになりたいです。** — I want to become able to read kanji.
 
+<!-- grammar-card: {"id":"change-ability","kind":"rule","format":"cloze","priority":"essential","sourceSection":"ようになる — \"Come to / Become Able To\"","rule":"ようになる reports a change into a new ability or habitual state","example":"I became able to speak Japanese: 日本語が話せる___。","answer":"ようになりました","explanation":"話せる names the new ability; なりました reports the change, unlike effort-focused ようにしています."} -->
+<!-- grammar-card: {"id":"change-habit","kind":"concept","format":"qa","priority":"optional","sourceSection":"ようになる — \"Come to / Become Able To\"","rule":"ようになる can describe a new habit without a potential verb","example":"Does 最近、料理を作るようになりました necessarily mean “I became able to cook”?","answer":"No. With 作る it means I have started cooking or come to cook as a habit; potential 作れる would explicitly name ability.","explanation":"The construction marks a change; the predicate determines what changed."} -->
+
 ## ことがある — "There Are Times When" / "Have Experienced"
 
 ### Past: たことがある — "Have done (experience)"
@@ -80,11 +92,16 @@ Both can translate as "in order to," but ために is more direct purpose and �
 - **その映画を見(み)たことがありません。** — I have never seen that movie.
 - **着物(きもの)を着(き)たことがあります。** — I have worn a kimono.
 
+<!-- grammar-card: {"id":"past-experience","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Past: たことがある — \"Have done (experience)\"","rule":"Plain past plus ことがある expresses prior experience","example":"Have you ever eaten sushi? 寿司を___ことがありますか。 (食べる)","answer":"食べた","explanation":"The た-form marks the experienced event; this does not ask whether one habitually eats sushi."} -->
+
 ### Present: ことがある — "There are times when"
 
 - **朝(あさ)ご飯(はん)を食べないことがあります。** — There are times when I skip breakfast.
 - **電車(でんしゃ)が遅(おく)れることがあります。** — The train is sometimes late.
 - **道(みち)に迷(まよ)うことがあります。** — I sometimes get lost.
+
+<!-- grammar-card: {"id":"occasional-event","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Present: ことがある — \"There are times when\"","rule":"Nonpast plus ことがある expresses occasional occurrences","example":"There are times when I skip breakfast: 朝ご飯を食べない___。","answer":"ことがあります","explanation":"食べない is nonpast negative: sometimes I do not eat breakfast, not I have never eaten it."} -->
+<!-- grammar-card: {"id":"experience-versus-sometimes","kind":"concept","format":"qa","priority":"essential","sourceSection":"Present: ことがある — \"There are times when\"","rule":"The verb form before ことがある distinguishes experience from occasional events","example":"How do 行ったことがある and 行くことがある differ?","answer":"行ったことがある means have been/gone before; 行くことがある means there are times when one goes.","explanation":"Past た names experience, while nonpast names an occasional occurrence."} -->
 
 <!-- quiz:{"type":"multiple-choice","question":"'日本に行ったことがありますか' means:","options":["Do you go to Japan?","Will you go to Japan?","Have you ever been to Japan?","Are you going to Japan?"],"answer":2} -->
 
@@ -107,12 +124,16 @@ Both can translate as "in order to," but ために is more direct purpose and �
 - **パーティーは七時(しちじ)に始(はじ)まるはずです。** — The party should start at 7.
 - **田中さんはもう帰(かえ)ったはずです。** — Tanaka should have gone home already.
 
+<!-- grammar-card: {"id":"expectation-evidence","kind":"concept","format":"qa","priority":"essential","sourceSection":"はずだ — \"Should Be / Expected To\"","rule":"はずだ expresses an evidence-based expectation, not a command or duty","example":"Does もうすぐ届くはずです order someone to deliver something?","answer":"No. It expresses the expectation that it should arrive soon, based on reasoning or information.","explanation":"English should can express obligation; はず here means expected to."} -->
+<!-- grammar-card: {"id":"hazu-noun","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Formation","rule":"A noun uses の before はず","example":"He should be a student: 彼は学生___はずです。","answer":"の","explanation":"Noun + のはず differs from な-adjective + なはず and plain verb/adjective + はず."} -->
+<!-- grammar-card: {"id":"hazu-na-adjective","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Formation","rule":"A な-adjective uses な before はず","example":"It should be quiet: 静か___はずです。","answer":"な","explanation":"静かなはず uses the attributive な; it is not 静かだはず."} -->
 ### Negative: はずがない — "There's no way"
 
 - **そんなはずがない！** — That can't be! / No way!
 - **彼がそんなことを言うはずがありません。** — There's no way he said such a thing.
 - **こんな簡単(かんたん)な問題(もんだい)を間違(まちが)えるはずがない。** — There's no way I'd get such an easy problem wrong.
 
+<!-- grammar-card: {"id":"impossible-expectation","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Negative: はずがない — \"There's no way\"","rule":"はずがない strongly rejects an expected possibility","example":"There is no way that is true: そんな___！","answer":"はずがない","explanation":"This strongly denies the possibility on the speaker's reasoning, rather than merely predicting an ordinary negative event."} -->
 ## そうだ — Two Different Meanings!
 
 ### そうだ (Hearsay) — "I heard that"
@@ -124,6 +145,9 @@ Attach to the **plain form** of verbs, adjectives, and nouns + だ.
 - **田中さんは来月(らいげつ)結婚(けっこん)するそうです。** — I heard Tanaka is getting married next month.
 - **このレストランは有名(ゆうめい)だそうです。** — I heard this restaurant is famous.
 - **彼女は先生だそうです。** — I heard she is a teacher.
+
+<!-- grammar-card: {"id":"hearsay-nominal","kind":"rule","format":"cloze","priority":"optional","sourceSection":"そうだ (Hearsay) — \"I heard that\"","rule":"Hearsay そうだ keeps plain だ after nouns and な-adjectives","example":"I heard this restaurant is famous: このレストランは有名___そうです。","answer":"だ","explanation":"有名だそうです is a report; appearance would be 有名そうです without だ."} -->
+<!-- grammar-card: {"id":"hearsay-full-form","kind":"rule","format":"cloze","priority":"essential","sourceSection":"そうだ (Hearsay) — \"I heard that\"","rule":"Plain form plus そうです reports hearsay","hint":"Report information heard from another source","example":"明日は雨(あめ)が降(ふ)る___です。","answer":"そう","explanation":"Full 降る before そうです reports what was heard, unlike appearance 降りそうです."} -->
 
 ### そうだ (Appearance) — "It looks like"
 
@@ -141,6 +165,10 @@ Attach to the **verb stem** or **adjective stem** (drop い or だ).
 - **このバッグは高(たか)そうです。** — This bag looks expensive.
 - **眠(ねむ)そうですね。** — You look sleepy.
 
+<!-- grammar-card: {"id":"appearance-adjective","kind":"rule","format":"cloze","priority":"essential","sourceSection":"そうだ (Appearance) — \"It looks like\"","rule":"Appearance そう attaches to a regular adjective stem","example":"This cake looks delicious: このケーキはおいし___です。","answer":"そう","explanation":"Remove final い from おいしい. The full おいしいそうです instead reports hearsay."} -->
+<!-- grammar-card: {"id":"appearance-verb","kind":"rule","format":"cloze","priority":"essential","sourceSection":"そうだ (Appearance) — \"It looks like\"","rule":"Appearance そう attaches to a ます-stem to describe an imminent-looking event","example":"It looks as though it will rain: 雨が___そうです。 (降る)","answer":"降り","explanation":"降る → 降りそう. Full 降るそう is hearsay instead."} -->
+<!-- grammar-card: {"id":"appearance-na-adjective","kind":"rule","format":"cloze","priority":"optional","sourceSection":"そうだ (Appearance) — \"It looks like\"","rule":"Appearance そう follows a な-adjective without だ","example":"He looks healthy: 彼は元気___です。","answer":"そう","explanation":"Use 元気そう; 元気だそう would mean I heard he is healthy."} -->
+
 ### Hearsay vs Appearance — Key Difference
 
 | | Hearsay (伝聞) | Appearance (様態) |
@@ -153,8 +181,6 @@ Attach to the **verb stem** or **adjective stem** (drop い or だ).
 
 <!-- quiz:{"type":"multiple-choice","question":"'このケーキはおいしそうです' means:","options":["I heard this cake is delicious","This cake looks delicious","This cake is delicious","This cake was delicious"],"answer":1} -->
 
-<!-- grammar-card: {"rule":"Plain form plus そうです reports hearsay","hint":"そう","example":"明日は雨(あめ)が降(ふ)る___です。","answer":"そう","explanation":"Attached to the plain 降る, そうです means 'I hear it will rain', not 'it looks like rain'."} -->
-
 ## みたいだ / ようだ — "It Seems Like"
 
 Both express conjecture based on observation.
@@ -166,12 +192,15 @@ Both express conjecture based on observation.
 - **雨が止(や)んだみたいです。** — It seems like the rain stopped.
 - **この道(みち)は間違(まちが)いみたいです。** — This road seems to be wrong.
 
+<!-- grammar-card: {"id":"mitai-inference","kind":"rule","format":"cloze","priority":"essential","sourceSection":"みたいだ (casual)","rule":"みたいだ gives a relatively conversational inference from observation","example":"It seems the rain has stopped (conversational inference): 雨が止んだ___です。","answer":"みたい","explanation":"The speaker infers the situation. This is not the たい desire ending."} -->
+
 ### ようだ (formal)
 
 - **どうやら道に迷ったようです。** — It appears we are lost.
 - **彼は具合(ぐあい)が悪(わる)いようです。** — He appears to be feeling unwell.
 - **試合(しあい)はもう始まったようです。** — It seems the game has already started.
 
+<!-- grammar-card: {"id":"you-inference-register","kind":"concept","format":"qa","priority":"essential","sourceSection":"ようだ (formal)","rule":"ようだ and みたいだ can both express inference, with ようだ more formal","example":"How does 迷ったようです compare in register and basic meaning with 迷ったみたいです?","answer":"Both mean it seems we are lost; ようです is more formal than conversational みたいです.","explanation":"These report an inference based on observation, not hearsay そうだ."} -->
 ## Summary Table
 
 | Pattern | Meaning | Example |

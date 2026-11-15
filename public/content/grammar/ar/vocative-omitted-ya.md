@@ -1,12 +1,19 @@
 # Vocative with Omitted Yā
 
+<!-- vocab-inventory: {"mode":"explicit"} -->
+
 The normal vocative particle is **يَا** (yā) — O, hey. In elevated style, prayers, poetry, and clear direct address, **يَا** (yā) may be omitted while the noun still behaves like a vocative.
+
+<!-- vocab-card: {"id":"vocab-ya","word":"يَا","reading":"yā","meaning":"O; hey; vocative particle","priority":"optional","sourceSection":"Vocative with Omitted Yā"} -->
 
 ## Core idea
 
 Omitting **يَا** (yā) does not turn the addressed noun into an ordinary subject. The vocative meaning and its case behavior remain understood from context and intonation.
 
 ## Forms and examples
+
+<!-- vocab-card: {"id":"vocab-rabbi","word":"رَبِّ","reading":"rabbi","meaning":"my Lord; supplicatory vocative form here","priority":"optional","sourceSection":"Forms and examples"} -->
+<!-- grammar-card: {"id":"proper-name-vocative","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Forms and examples","rule":"An intended definite proper-name vocative stays built on ḍamma when يَا is omitted.","example":"Address Zayd with omitted يَا: ___، أَقْبِلْ.","answer":"زَيْدُ","explanation":"Direct address keeps the vocative form, not ordinary nominative tanwīn زَيْدٌ."} -->
 
 | Full vocative | With omitted **يَا** (yā) | Note |
 |---|---|---|
@@ -20,7 +27,8 @@ Omitting **يَا** (yā) does not turn the addressed noun into an ordinary subj
 
 The omission is clearest with names, divine address, and fixed rhetorical style. In ordinary prose, keeping **يَا** (yā) is usually safer. If the addressed word is annexed, as in **طَالِبَ الْعِلْمِ** (ṭāliba al-ʿilmi) — seeker of knowledge — it remains accusative whether **يَا** (yā) is spoken or merely understood.
 
-<!-- grammar-card: {"rule": "When يَا is omitted, the noun remains vocative and keeps the same vocative case behavior.", "hint": "Restore يَا before analyzing the noun.", "example": "رَبِّ، ارْحَمْنِي", "answer": "My Lord, have mercy on me", "explanation": "The phrase is understood as يَا رَبِّ، so رَبِّ is still a vocative form."} -->
+<!-- grammar-card: {"id":"hidden-ya","kind":"rule","format":"qa","priority":"essential","sourceSection":"Usage notes","rule":"When يَا is omitted, the noun remains vocative and keeps the same vocative case behavior.","example":"Restore the omitted vocative particle in رَبِّ، ارْحَمْنِي.","answer":"يَا رَبِّ، ارْحَمْنِي.","explanation":"The supplicatory address retains its vocative force; omission does not make the noun a subject.","legacyAliases":[{"rule":"When يَا is omitted, the noun remains vocative and keeps the same vocative case behavior.","example":"رَبِّ، ارْحَمْنِي"}]} -->
+<!-- grammar-card: {"id":"annexed-vocative","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Usage notes","rule":"An annexed vocative remains accusative without explicit يَا.","example":"Address a seeker of knowledge with omitted يَا: ___ الْعِلْمِ، اجْتَهِدْ.","answer":"طَالِبَ","explanation":"The construct-head vocative is accusative, unlike a simple proper name built on ḍamma."} -->
 
 ## Practice patterns
 
@@ -32,7 +40,7 @@ Add the hidden **يَا** (yā) mentally, then translate:
 
 <!-- quiz: {"type": "multiple-choice", "question": "Which version restores the omitted particle in رَبِّ، ارْحَمْنِي (rabbi, irḥamnī)?", "options": ["يَا رَبِّ، ارْحَمْنِي (yā rabbi, irḥamnī)", "فِي رَبِّ، ارْحَمْنِي (fī rabbi, irḥamnī)", "لَنْ رَبِّ، ارْحَمْنِي (lan rabbi, irḥamnī)", "مِنْ رَبِّ، ارْحَمْنِي (min rabbi, irḥamnī)"], "answer": 0} -->
 
-<!-- grammar-card: {"rule": "Omitted يَا is mostly a style choice; use explicit يَا when clarity matters.", "hint": "Direct address must be obvious from context.", "example": "زَيْدُ، أَقْبِلْ", "answer": "Zayd, come here", "explanation": "The command and pause make the address clear even without the visible particle يَا."} -->
+<!-- grammar-card: {"id":"omission-register","kind":"concept","format":"qa","priority":"essential","sourceSection":"Practice patterns","rule":"Omitted يَا is mostly a style choice; use explicit يَا when clarity matters.","example":"When is omitting the vocative particle clearest, and what is safer in ordinary prose?","answer":"In clear direct address, prayers, poetry or elevated style; keep يَا when clarity matters in ordinary prose.","explanation":"Context and intonation must make the address recoverable; omission is not a general change of noun syntax.","legacyAliases":[{"rule":"Omitted يَا is mostly a style choice; use explicit يَا when clarity matters.","example":"زَيْدُ، أَقْبِلْ"}]} -->
 
 ## Sources
 
