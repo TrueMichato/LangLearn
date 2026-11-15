@@ -1,23 +1,18 @@
 import { useStudySetsStore } from '../stores/studySetsStore';
-import { getWordsForSet } from './study-sets';
+import { dueCards, getWordsForSet } from './study-sets';
 import type { Word, Review } from '../db/schema';
+import type { ReviewSessionKind } from '../stores/reviewStore';
 
 /**
- * Get a review queue filtered to words from a specific study set
- * that are also currently due for review.
+ * Legacy set links are due-only. Only explicit practice includes future cards.
  */
 export async function getFilteredReviewQueue(
-  setId: string
+  setId: string,
+  kind: ReviewSessionKind = 'scheduled',
+  language?: string,
 ): Promise<Array<{ word: Word; review: Review }>> {
   const set = useStudySetsStore.getState().sets.find((s) => s.id === setId);
-  if (!set) return [];
-
-  // For "due-today" smart sets, all returned words are already due
-  if (set.type === 'smart' && set.smartFilter === 'due-today') {
-    return getWordsForSet(set);
-  }
-
-  const words = await getWordsForSet(set);
-  const now = new Date().toISOString();
-  return words.filter((item) => item.review.nextReviewDate <= now);
+  if (!set) throw new Error('This study set no longer exists. Choose another set on Review.');
+  const words = await getWordsForSet(set, language);
+  return kind === 'practice' ? words : dueCards(words);
 }

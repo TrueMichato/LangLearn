@@ -1,4 +1,5 @@
 import { useState, useEffect, useCallback } from 'react';
+import { Link } from 'react-router-dom';
 import SearchBar from '../components/common/SearchBar';
 import { searchWords, updateWord, deleteWord, type WordFilter } from '../db/words';
 import { db, type Word, type Review } from '../db/schema';
@@ -8,7 +9,6 @@ import { getLanguageFlag } from '../lib/languages';
 import { useCurrentLanguage } from '../hooks/useCurrentLanguage';
 import LanguagePicker from '../components/common/LanguagePicker';
 import { SkeletonList } from '../components/common/Skeleton';
-import StudySets from '../components/words/StudySets';
 import { getFrequencyRank, getFrequencyTier, getFrequencyLabel, type FrequencyTier } from '../data/frequency';
 import { getForvoUrl } from '../lib/forvo';
 import { getLeechWordIds } from '../lib/mistakes';
@@ -181,7 +181,9 @@ export default function WordsPage() {
         </div>
       </div>
 
-      <StudySets />
+      <Link to="/review?view=sets" className="inline-flex min-h-[44px] items-center text-sm font-medium text-indigo-600 dark:text-indigo-400 hover:underline">
+        Practise words & manage study sets →
+      </Link>
 
       <SearchBar value={search} onChange={setSearch} placeholder="Search words…" />
 

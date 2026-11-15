@@ -2,109 +2,79 @@ import { db, type Word, type Review } from '../db/schema';
 import { getDueReviews } from '../db/words';
 import type { StudySet } from '../stores/studySetsStore';
 
-export async function getWordsForSet(
-  set: StudySet
-): Promise<Array<{ word: Word; review: Review }>> {
-  if (set.type === 'smart') {
-    return getSmartSetWords(set);
-  }
-  return getCustomSetWords(set);
+export interface SavedCard {
+  word: Word;
+  review: Review;
 }
 
-async function getCustomSetWords(
-  set: StudySet
-): Promise<Array<{ word: Word; review: Review }>> {
-  if (set.tags.length === 0) return [];
-
-  // Start with the first tag using the multi-entry index, then AND with the rest
-  let words = await db.words.where('tags').equals(set.tags[0]).toArray();
-
-  for (let i = 1; i < set.tags.length; i++) {
-    const tag = set.tags[i];
-    words = words.filter((w) => w.tags.includes(tag));
-  }
-
-  if (set.language) {
-    words = words.filter((w) => w.language === set.language);
-  }
-
-  const results: Array<{ word: Word; review: Review }> = [];
-  for (const word of words) {
-    const review = await db.reviews.where('wordId').equals(word.id!).first();
-    if (review) results.push({ word, review });
-  }
-  return results;
+async function withReviews(words: Word[]): Promise<SavedCard[]> {
+  if (!words.length) return [];
+  const reviews = await db.reviews.where('wordId').anyOf(words.map((w) => w.id!)).toArray();
+  const byWord = new Map(reviews.map((review) => [review.wordId, review]));
+  return words.flatMap((word) => {
+    const review = byWord.get(word.id!);
+    return review ? [{ word, review }] : [];
+  });
 }
 
-async function getSmartSetWords(
-  set: StudySet
-): Promise<Array<{ word: Word; review: Review }>> {
+/** Unlike the vocabulary browser, Review also includes grammar and letter cards. */
+export async function getSavedCards(language?: string): Promise<SavedCard[]> {
+  const words = language
+    ? await db.words.where('language').equals(language).toArray()
+    : await db.words.toArray();
+  return withReviews(words);
+}
+
+/** Scope is intersected with a set's own language before ranking or limiting. */
+export async function getWordsForSet(set: StudySet, scopeLanguage?: string): Promise<SavedCard[]> {
+  if (set.language && scopeLanguage && set.language !== scopeLanguage) return [];
+  const language = set.language || scopeLanguage;
+
+  if (set.type === 'custom') {
+    let words: Word[];
+    if (set.selectionMode === 'manual') {
+      const ids = [...new Set((set.wordIds ?? []).filter((id) => Number.isSafeInteger(id) && id > 0))];
+      words = (await db.words.bulkGet(ids)).filter((word): word is Word => !!word);
+    } else {
+      // Legacy custom sets are tag rules, with ALL selected tags required.
+      if (!set.tags.length) return [];
+      words = await db.words.where('tags').equals(set.tags[0]).toArray();
+      words = words.filter((word) => set.tags.every((tag) => word.tags.includes(tag)));
+    }
+    return withReviews(words.filter((word) => !language || word.language === language));
+  }
+
   switch (set.smartFilter) {
     case 'due-today':
-      return getDueReviews(set.language);
-
+      // Intrinsically due-only, even for an optional practice attempt.
+      return getDueReviews(language);
     case 'weakest': {
-      const allReviews = await db.reviews.toArray();
-      allReviews.sort((a, b) => a.ease - b.ease);
-      const bottom = allReviews.slice(0, 20);
-      const results: Array<{ word: Word; review: Review }> = [];
-      for (const review of bottom) {
-        const word = await db.words.get(review.wordId);
-        if (word && (!set.language || word.language === set.language)) {
-          results.push({ word, review });
-        }
-      }
-      return results;
+      const cards = await getSavedCards(language);
+      return cards.sort((a, b) => a.review.ease - b.review.ease).slice(0, 20);
     }
-
-    case 'from-grammar': {
-      let words = await db.words.where('tags').equals('grammar').toArray();
-      if (set.language) words = words.filter((w) => w.language === set.language);
-      const results: Array<{ word: Word; review: Review }> = [];
-      for (const word of words) {
-        const review = await db.reviews.where('wordId').equals(word.id!).first();
-        if (review) results.push({ word, review });
-      }
-      return results;
-    }
-
+    case 'from-grammar':
     case 'from-letters': {
-      let words = await db.words.where('tags').equals('letter').toArray();
-      if (set.language) words = words.filter((w) => w.language === set.language);
-      const results: Array<{ word: Word; review: Review }> = [];
-      for (const word of words) {
-        const review = await db.reviews.where('wordId').equals(word.id!).first();
-        if (review) results.push({ word, review });
-      }
-      return results;
+      const tag = set.smartFilter === 'from-grammar' ? 'grammar' : 'letter';
+      const words = await db.words.where('tags').equals(tag).toArray();
+      return withReviews(words.filter((word) => !language || word.language === language));
     }
-
     case 'recent': {
-      const sevenDaysAgo = new Date(Date.now() - 7 * 24 * 60 * 60 * 1000).toISOString();
-      let words = await db.words
-        .where('createdAt')
-        .above(sevenDaysAgo)
-        .toArray();
-      if (set.language) words = words.filter((w) => w.language === set.language);
-      const results: Array<{ word: Word; review: Review }> = [];
-      for (const word of words) {
-        const review = await db.reviews.where('wordId').equals(word.id!).first();
-        if (review) results.push({ word, review });
-      }
-      return results;
+      const sevenDaysAgo = new Date(Date.now() - 7 * 86_400_000).toISOString();
+      const words = await db.words.where('createdAt').above(sevenDaysAgo).toArray();
+      return withReviews(words.filter((word) => !language || word.language === language));
     }
-
     default:
       return [];
   }
 }
 
-/** Get all unique tags from the user's word collection. */
+export function dueCards(cards: SavedCard[]): SavedCard[] {
+  const now = new Date().toISOString();
+  return cards.filter(({ review }) => review.nextReviewDate <= now);
+}
+
+/** Get all unique tags from the user's saved cards. */
 export async function getAllTags(): Promise<string[]> {
   const words = await db.words.toArray();
-  const tagSet = new Set<string>();
-  for (const w of words) {
-    for (const t of w.tags) tagSet.add(t);
-  }
-  return Array.from(tagSet).sort();
+  return [...new Set(words.flatMap((word) => word.tags))].sort();
 }

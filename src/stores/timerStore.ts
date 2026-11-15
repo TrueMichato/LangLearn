@@ -12,7 +12,7 @@ interface TimerState {
   sessionId: number | null;
   /** Seconds already persisted to studySessions/dailyActivity for the current session. */
   lastFlushedSeconds: number;
-  start: (activity: StudyActivity) => void;
+  start: (activity: StudyActivity) => Promise<void>;
   tick: () => void;
   /** Persist progress without ending the session. Safe to call from visibility/unmount handlers. */
   flush: () => Promise<void>;
@@ -40,6 +40,9 @@ async function persistProgress(
   return elapsed;
 }
 
+let pendingStart: Promise<void> | null = null;
+let pendingStop: Promise<void> | null = null;
+
 export const useTimerStore = create<TimerState>((set, get) => ({
   isRunning: false,
   elapsed: 0,
@@ -49,9 +52,11 @@ export const useTimerStore = create<TimerState>((set, get) => ({
 
   start: (activity) => {
     const state = get();
-    if (state.isRunning) return;
+    if (pendingStop) return pendingStop.then(() => get().start(activity));
+    if (pendingStart) return pendingStart;
+    if (state.isRunning) return Promise.resolve();
 
-    db.studySessions
+    pendingStart = db.studySessions
       .add({
         startTime: new Date().toISOString(),
         endTime: null,
@@ -67,7 +72,9 @@ export const useTimerStore = create<TimerState>((set, get) => ({
           sessionId: id,
           lastFlushedSeconds: 0,
         });
-      });
+      })
+      .finally(() => { pendingStart = null; });
+    return pendingStart;
   },
 
   tick: () => {
@@ -95,30 +102,37 @@ export const useTimerStore = create<TimerState>((set, get) => ({
     }
   },
 
-  stop: async () => {
-    const { sessionId, elapsed, lastFlushedSeconds, activity } = get();
-    if (sessionId == null) return;
+  stop: () => {
+    if (pendingStop) return pendingStop;
+    pendingStop = (async () => {
+      // Exit can race both session creation and completion/unmount cleanup.
+      // Join those operations so effort is flushed exactly once.
+      if (pendingStart) await pendingStart;
+      const { sessionId, elapsed, lastFlushedSeconds, activity } = get();
+      if (sessionId == null) return;
 
-    const delta = Math.max(0, elapsed - lastFlushedSeconds);
-    const xp = calculateTimeXP(elapsed);
-    await db.studySessions.update(sessionId, {
-      endTime: new Date().toISOString(),
-      durationSeconds: elapsed,
-      xpEarned: xp,
-    });
+      const delta = Math.max(0, elapsed - lastFlushedSeconds);
+      const xp = calculateTimeXP(elapsed);
+      await db.studySessions.update(sessionId, {
+        endTime: new Date().toISOString(),
+        durationSeconds: elapsed,
+        xpEarned: xp,
+      });
 
-    if (delta > 0) {
-      const { dailyGoalMinutes } = useSettingsStore.getState();
-      await updateDailyActivity({ addSeconds: delta, dailyGoalMinutes });
-    }
+      if (delta > 0) {
+        const { dailyGoalMinutes } = useSettingsStore.getState();
+        await updateDailyActivity({ addSeconds: delta, dailyGoalMinutes });
+      }
 
-    set({
-      isRunning: false,
-      elapsed: 0,
-      sessionId: null,
-      lastFlushedSeconds: 0,
-      activity,
-    });
+      set({
+        isRunning: false,
+        elapsed: 0,
+        sessionId: null,
+        lastFlushedSeconds: 0,
+        activity,
+      });
+    })().finally(() => { pendingStop = null; });
+    return pendingStop;
   },
 }));
 

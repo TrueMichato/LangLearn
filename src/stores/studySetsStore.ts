@@ -7,9 +7,27 @@ export interface StudySet {
   description: string;
   type: 'custom' | 'smart';
   tags: string[];
+  selectionMode?: 'manual' | 'tags';
+  wordIds?: number[];
   smartFilter?: 'due-today' | 'weakest' | 'from-grammar' | 'from-letters' | 'recent';
   language?: string;
   createdAt: string;
+}
+
+export function migrateStudySets(persisted: unknown) {
+  const state = (persisted ?? {}) as Partial<StudySetsState>;
+  return {
+    ...state,
+    sets: (Array.isArray(state.sets) ? state.sets : []).map((set) =>
+      set.type === 'custom'
+        ? {
+            ...set,
+            selectionMode: set.selectionMode ?? 'tags',
+            wordIds: [...new Set((set.wordIds ?? []).filter((id) => Number.isSafeInteger(id) && id > 0))],
+          }
+        : set
+    ),
+  };
 }
 
 interface StudySetsState {
@@ -99,11 +117,8 @@ export const useStudySetsStore = create<StudySetsState>()(
       storage: createJSONStorage(() => localStorage),
       // Study sets are learner-authored content. Version the store so a shape
       // change migrates them rather than discarding sets the learner built.
-      version: 1,
-      migrate: (persisted) => {
-        const state = (persisted ?? {}) as Partial<StudySetsState>;
-        return { ...state, sets: Array.isArray(state.sets) ? state.sets : [] };
-      },
+      version: 2,
+      migrate: migrateStudySets,
     }
   )
 );
