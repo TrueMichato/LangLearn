@@ -1,9 +1,12 @@
+import Dexie, { type ObservabilitySet } from 'dexie';
 import type { BackupPayload, BackupTableName } from './backup';
 import {
   BACKUP_PAYLOAD_VERSION,
   normalizePayload,
 } from './backup';
 import { CURRENT_SCHEMA_VERSION, db } from './schema';
+import { hasMissingRecoveryHistory, recoveryHistoryRows } from './recovery-history';
+export { countVocabAttemptRows } from './recovery-history';
 
 export const RECOVERY_CAPSULE_KEY = 'langlearn-recovery-capsule-v1';
 export const RECOVERY_CAPSULE_VERSION = 1;
@@ -30,19 +33,6 @@ export const RECOVERY_CAPSULE_TABLES = [
   'skillProgress',
 ] as const satisfies readonly BackupTableName[];
 
-const RECOVERY_PROGRESS_TABLES = [
-  'words',
-  'reviews',
-  'studySessions',
-  'dailyActivity',
-  'lessonProgress',
-  'characterProgress',
-  'testHistory',
-  'badges',
-  'guidedActivityProgress',
-  'skillProgress',
-] as const satisfies readonly BackupTableName[];
-
 export interface RecoveryCapsule {
   version: typeof RECOVERY_CAPSULE_VERSION;
   createdAt: string;
@@ -60,8 +50,11 @@ export type CapsuleWriteResult =
   | { kind: 'saved'; capsule: RecoveryCapsule; sizeBytes: number }
   | { kind: 'empty' }
   | { kind: 'too-large'; sizeBytes: number }
+  | { kind: 'kept'; reason: 'missing-history' | 'newer-copy' }
+  | { kind: 'kept'; reason: 'unreadable-copy'; error: Error }
+  | { kind: 'cancelled' }
   | { kind: 'unavailable' }
-  | { kind: 'failed'; error: Error };
+  | { kind: 'failed'; error: Error; phase?: 'read' | 'write' };
 
 export interface CapsuleStorage {
   getItem(key: string): string | null;
@@ -95,19 +88,6 @@ function isIsoDate(value: unknown): value is string {
     value.length > 0 &&
     !Number.isNaN(Date.parse(value))
   );
-}
-
-export function countVocabAttemptRows(rows: unknown): number {
-  return Array.isArray(rows) ? rows.filter((row) =>
-    !!row && typeof row === 'object' && typeof row.key === 'string' &&
-    row.key.startsWith('vocab-attempt:v1:')).length : 0;
-}
-
-function progressRows(payload: BackupPayload): number {
-  return RECOVERY_PROGRESS_TABLES.reduce(
-    (sum, name) => sum + (payload.tables[name]?.length ?? 0),
-    0,
-  ) + countVocabAttemptRows(payload.tables.settings);
 }
 
 export function parseRecoveryCapsule(
@@ -172,7 +152,7 @@ export function getRecoveryCapsuleInfo(
     return {
       createdAt: capsule.createdAt,
       sizeBytes: serializedBytes(serialized),
-      progressRows: progressRows(capsule.payload),
+      progressRows: recoveryHistoryRows(capsule.payload.tables),
     };
   } catch {
     return null;
@@ -190,9 +170,28 @@ export function storeRecoveryCapsule(
   maxBytes = MAX_RECOVERY_CAPSULE_BYTES,
 ): CapsuleWriteResult {
   if (!storage) return { kind: 'unavailable' };
-  if (progressRows(capsule.payload) === 0) return { kind: 'empty' };
 
   try {
+    // Do not turn a quiet reset (or a small amount of new activity afterwards)
+    // into the only remaining recovery copy.
+    const serializedPrevious = storage.getItem(RECOVERY_CAPSULE_KEY);
+    const previous = serializedPrevious ? parseRecoveryCapsule(serializedPrevious) : null;
+    if (serializedPrevious !== null && !previous) {
+      return {
+        kind: 'kept', reason: 'unreadable-copy',
+        error: new Error(
+          'This version of LangLearn cannot safely read the existing recovery copy. It was kept unchanged. ' +
+          'Update the app and export current data before retrying; do not clear site data.',
+        ),
+      };
+    }
+    if (previous && hasMissingRecoveryHistory(capsule.payload.tables, previous.payload.tables)) {
+      return { kind: 'kept', reason: 'missing-history' };
+    }
+    if (previous && previous.createdAt > capsule.createdAt) {
+      return { kind: 'kept', reason: 'newer-copy' };
+    }
+    if (recoveryHistoryRows(capsule.payload.tables) === 0) return { kind: 'empty' };
     const serialized = JSON.stringify(capsule);
     const sizeBytes = serializedBytes(serialized);
     if (sizeBytes > maxBytes) return { kind: 'too-large', sizeBytes };
@@ -201,12 +200,14 @@ export function storeRecoveryCapsule(
   } catch (error) {
     return {
       kind: 'failed',
+      phase: 'write',
       error: error instanceof Error ? error : new Error(String(error)),
     };
   }
 }
 
 export async function buildRecoveryCapsule(): Promise<RecoveryCapsule> {
+  const createdAt = new Date().toISOString();
   const tables: BackupPayload['tables'] = {};
   const dexieTables = RECOVERY_CAPSULE_TABLES.map((name) => db.table(name));
 
@@ -218,7 +219,6 @@ export async function buildRecoveryCapsule(): Promise<RecoveryCapsule> {
     );
   });
 
-  const createdAt = new Date().toISOString();
   // Pending vocabulary receipts live in settings; their idempotency tokens
   // must travel with the XP total, including the cross-store failure window.
   const storage: Record<string, string> = {};
@@ -238,19 +238,101 @@ export async function buildRecoveryCapsule(): Promise<RecoveryCapsule> {
   };
 }
 
-export async function refreshRecoveryCapsule(
+let captureQueue: Promise<unknown> = Promise.resolve();
+
+export function refreshRecoveryCapsule(
   storage: CapsuleStorage | null = browserStorage(),
+  shouldWrite: () => boolean = () => true,
 ): Promise<CapsuleWriteResult> {
-  try {
-    const result = storeRecoveryCapsule(await buildRecoveryCapsule(), storage);
+  // Capture inside the queue as well as writing inside it: an older read must
+  // never finish last and overwrite a newer copy.
+  const captureOnce = async (): Promise<CapsuleWriteResult> => {
+    if (!shouldWrite()) return { kind: 'cancelled' };
+    let result: CapsuleWriteResult;
+    try {
+      const capsule = await buildRecoveryCapsule();
+      if (!shouldWrite()) return { kind: 'cancelled' };
+      result = storeRecoveryCapsule(capsule, storage);
+    } catch (error) {
+      result = {
+        kind: 'failed',
+        phase: 'read',
+        error: error instanceof Error ? error : new Error(String(error)),
+      };
+    }
     lastWriteResult = result;
     return result;
-  } catch (error) {
+  };
+  const capture = captureQueue.then(() => {
+    const locks = typeof navigator === 'undefined' ? undefined : navigator.locks;
+    return locks
+      ? locks.request('langlearn-recovery-capsule', captureOnce)
+      : captureOnce();
+  }).catch((error: unknown): CapsuleWriteResult => {
     const result: CapsuleWriteResult = {
-      kind: 'failed',
+      kind: 'failed', phase: 'write',
       error: error instanceof Error ? error : new Error(String(error)),
     };
     lastWriteResult = result;
     return result;
-  }
+  });
+  captureQueue = capture;
+  return capture;
+}
+
+/**
+ * Dexie's supported global event runs after a write transaction commits,
+ * including writes from other tabs. Ignore snapshots and coalesce timer ticks
+ * and multi-table activity into one capture, with no overlapping reads/writes.
+ */
+export function startRecoveryCapsuleLifecycle(options: {
+  storage?: CapsuleStorage;
+  delayMs?: number;
+  visibilityTarget?: Pick<Document, 'visibilityState' | 'addEventListener' | 'removeEventListener'>;
+} = {}) {
+  let active = true;
+  let dirty = false;
+  let timer: ReturnType<typeof setTimeout> | undefined;
+  let running: Promise<unknown> | null = null;
+  const target = options.visibilityTarget ??
+    (typeof document === 'undefined' ? undefined : document);
+  const prefixes = RECOVERY_CAPSULE_TABLES.map((name) => `idb://${db.name}/${name}/`);
+
+  const schedule = () => {
+    if (!active || timer || running) return;
+    timer = setTimeout(() => { timer = undefined; void flush(); }, options.delayMs ?? 1000);
+  };
+  const flush = async (): Promise<void> => {
+    if (timer) { clearTimeout(timer); timer = undefined; }
+    if (running) {
+      await running;
+      if (active && dirty) await flush();
+      return;
+    }
+    if (!active || !dirty) return;
+    dirty = false;
+    running = refreshRecoveryCapsule(options.storage, () => active);
+    await running;
+    running = null;
+    if (dirty) schedule();
+  };
+  const changed = (parts: ObservabilitySet) => {
+    if (!Object.keys(parts).some((part) => prefixes.some((prefix) => part.startsWith(prefix)))) return;
+    dirty = true;
+    schedule();
+  };
+  const hidden = () => { if (target?.visibilityState === 'hidden') void flush(); };
+  Dexie.on('storagemutated', changed);
+  target?.addEventListener('visibilitychange', hidden);
+
+  return {
+    flush,
+    async stop() {
+      active = false;
+      if (timer) clearTimeout(timer);
+      Dexie.on('storagemutated').unsubscribe(changed);
+      target?.removeEventListener('visibilitychange', hidden);
+      await running;
+    },
+  };
 }

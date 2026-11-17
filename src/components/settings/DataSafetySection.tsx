@@ -13,10 +13,13 @@ import {
   takeSnapshot,
   exportSnapshot,
   MAX_SNAPSHOTS,
+  restoreRecoveryPoint,
+  exportRecoveryPoint,
 } from '../../db/recovery';
 import type { Snapshot } from '../../db/schema';
 import {
   getRecoveryCapsuleInfo,
+  readRecoveryCapsule,
   getLastRecoveryCapsuleWriteResult,
   refreshRecoveryCapsule,
   type CapsuleWriteResult,
@@ -45,8 +48,9 @@ export default function DataSafetySection({
   persistence: PersistenceState;
 }) {
   const [snapshots, setSnapshots] = useState<Snapshot[]>([]);
+  const [capsule, setCapsule] = useState(readRecoveryCapsule);
   const [capsuleInfo, setCapsuleInfo] = useState<RecoveryCapsuleInfo | null>(
-    null,
+    getRecoveryCapsuleInfo,
   );
   const [capsuleWriteResult, setCapsuleWriteResult] =
     useState<CapsuleWriteResult | null>(
@@ -62,18 +66,50 @@ export default function DataSafetySection({
   const fileInputRef = useRef<HTMLInputElement>(null);
 
   const refresh = () => {
-    listSnapshots().then(setSnapshots).catch(() => setSnapshots([]));
+    listSnapshots().then(setSnapshots).catch(() =>
+      setStatus('Saved snapshots could not be read. Reload and try again; your recovery copy has not been changed.'));
     getStorageEstimate().then(setUsage);
     setCapsuleInfo(getRecoveryCapsuleInfo());
+    setCapsule(readRecoveryCapsule());
     setCapsuleWriteResult(getLastRecoveryCapsuleWriteResult());
   };
 
   useEffect(refresh, []);
 
   const handleExport = async () => {
-    const json = await exportAllData();
-    downloadJson(json, `langlearn-backup-${new Date().toISOString().slice(0, 10)}.json`);
-    setStatus('Exported everything: words, reviews, streak, lessons, badges and settings.');
+    setBusy(true);
+    try {
+      const json = await exportAllData();
+      downloadJson(json, `langlearn-backup-${new Date().toISOString().slice(0, 10)}.json`);
+      setStatus('Exported everything: words, reviews, streak, lessons, badges and settings.');
+    } catch {
+      setStatus('Your current data could not be exported. Reload and try again before restoring anything.');
+    } finally { setBusy(false); }
+  };
+
+  const handleCapsuleDownload = () => {
+    if (!capsule) return;
+    downloadJson(exportRecoveryPoint({ kind: 'capsule', capsule }),
+      `langlearn-recovery-${capsule.createdAt.slice(0, 10)}.json`);
+  };
+
+  const handleCapsuleRestore = async () => {
+    if (!capsule || busy || !window.confirm(
+      'Restore missing progress from this recovery copy? Current progress, bonus XP, badges and study sets will be kept. ' +
+      'A safety snapshot is required first. If old and new records have conflicting IDs, restoration will stop without changes. ' +
+      'Please download this copy and export your current data first.',
+    )) return;
+    setBusy(true);
+    setStatus('');
+    try {
+      await restoreRecoveryPoint({ kind: 'capsule', capsule });
+      setStatus('Saved progress restored. Reloading…');
+      setTimeout(() => window.location.reload(), 800);
+    } catch (error) {
+      setStatus(error instanceof Error ? error.message :
+        'The recovery copy could not be restored. Keep both exported files and try again.');
+      setBusy(false);
+    }
   };
 
   const handleImport = async (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -165,6 +201,42 @@ export default function DataSafetySection({
           data and omits detailed answer history, so exported backups are still
           the safest complete long-term copy.
         </p>
+        {capsule && (
+          <>
+            <p className="mt-2 text-xs text-slate-500 dark:text-slate-400">
+              Download this copy before restoring. Restore adds missing progress
+              without replacing your current work. Conflicting saved IDs stop
+              restoration rather than changing the words in your study sets.
+            </p>
+            <div className="mt-3 flex flex-wrap gap-2">
+              <button
+                onClick={handleCapsuleDownload}
+                disabled={busy}
+                className="min-h-[44px] rounded-xl border border-slate-200/70 px-4 py-2 text-sm font-medium text-slate-700 hover:bg-slate-50 disabled:opacity-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 dark:border-white/10 dark:text-slate-200 dark:hover:bg-slate-700/50"
+              >
+                Download recovery copy
+              </button>
+              <button
+                onClick={handleCapsuleRestore}
+                disabled={busy}
+                className="min-h-[44px] rounded-xl bg-indigo-600 px-4 py-2 text-sm font-medium text-white hover:bg-indigo-700 disabled:opacity-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+              >
+                Restore missing progress
+              </button>
+            </div>
+          </>
+        )}
+        {capsuleWriteResult?.kind === 'kept' && capsuleWriteResult.reason === 'missing-history' && (
+          <p className="mt-2 text-xs text-amber-800 dark:text-amber-300" role="status">
+            Some history from the previous copy is missing in the main database.
+            That earlier recovery copy has been kept for you to download or restore.
+          </p>
+        )}
+        {capsuleWriteResult?.kind === 'kept' && capsuleWriteResult.reason === 'unreadable-copy' && (
+          <p className="mt-2 text-xs text-amber-800 dark:text-amber-300" role="status">
+            {capsuleWriteResult.error.message}
+          </p>
+        )}
         {capsuleWriteResult?.kind === 'too-large' && (
           <p className="mt-2 text-xs text-amber-800 dark:text-amber-300" role="status">
             Your current data is too large for this compact copy. The previous
@@ -188,8 +260,9 @@ export default function DataSafetySection({
               Update snapshots
             </p>
             <p className="text-xs text-slate-500 dark:text-slate-400">
-              Stored with the main database for undoing a bad app update. The last{' '}
-              {MAX_SNAPSHOTS} are kept.
+              Stored with the main database for undoing a bad app update. Up to{' '}
+              {MAX_SNAPSHOTS} routine copies are kept; recovery and pre-restore
+              safety copies may be kept longer.
             </p>
           </div>
           <button
@@ -248,7 +321,8 @@ export default function DataSafetySection({
       <div className="mt-5 border-t border-slate-200/70 dark:border-white/10 pt-4 space-y-2">
         <button
           onClick={handleExport}
-          className="w-full min-h-[44px] bg-indigo-100 dark:bg-indigo-900/50 text-indigo-700 dark:text-indigo-300 py-2 rounded-xl font-semibold hover:bg-indigo-200 dark:hover:bg-indigo-800 transition-colors press-feedback"
+          disabled={busy}
+          className="w-full min-h-[44px] bg-indigo-100 dark:bg-indigo-900/50 text-indigo-700 dark:text-indigo-300 py-2 rounded-xl font-semibold hover:bg-indigo-200 dark:hover:bg-indigo-800 transition-colors disabled:opacity-50 press-feedback"
         >
           📥 Export all data
         </button>
@@ -328,6 +402,10 @@ function describeSafetySave(
     return snapshot
       ? 'Update snapshot saved. The compact recovery copy is too large, so the previous valid copy was kept.'
       : 'The compact recovery copy is too large, so the previous valid copy was kept.';
+  }
+  if (capsule.kind === 'kept') {
+    if (capsule.reason === 'unreadable-copy') return capsule.error.message;
+    return 'The earlier recovery copy was kept. Download it before making further changes.';
   }
   if (capsule.kind === 'failed' || capsule.kind === 'unavailable') {
     return snapshot

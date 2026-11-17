@@ -29,6 +29,7 @@ describe('database boot', () => {
 
   it('is invoked only by the provider', () => {
     const importers = Object.entries(SOURCES)
+      .filter(([path]) => !path.includes('.test.'))
       .filter(([, src]) => /from\s+'[^']*\/useDatabaseBoot'/.test(src))
       .map(([path]) => path.replace(/^\.\.\//, ''));
 

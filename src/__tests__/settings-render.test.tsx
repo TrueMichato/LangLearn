@@ -1,10 +1,13 @@
 import { renderToStaticMarkup } from 'react-dom/server';
-import { beforeEach, describe, expect, it, vi } from 'vitest';
+import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest';
 import SettingsPage from '../pages/Settings';
 import Flashcard from '../components/srs/Flashcard';
 import { useSettingsStore } from '../stores/settingsStore';
 import { getNotificationPermission, isNotificationSupported } from '../lib/notifications';
 import { getLanguageLabel } from '../lib/languages';
+import DataSafetySection from '../components/settings/DataSafetySection';
+import { CURRENT_SCHEMA_VERSION } from '../db/schema';
+import { RECOVERY_CAPSULE_KEY, RECOVERY_CAPSULE_TABLES } from '../db/recovery-capsule';
 
 type SettingsState = ReturnType<typeof useSettingsStore.getState>;
 let settings: SettingsState;
@@ -68,8 +71,33 @@ beforeEach(() => {
   vi.mocked(isNotificationSupported).mockReturnValue(true);
   vi.mocked(getNotificationPermission).mockReturnValue('granted');
 });
+afterEach(() => vi.unstubAllGlobals());
 
 describe('Settings clarity', () => {
+  it('keeps recovery download and safe restore reachable even after a recovery dismissal', () => {
+    const savedAt = '2026-01-01T00:00:00.000Z';
+    const recovery = JSON.stringify({
+      version: 1, createdAt: savedAt, schemaVersion: CURRENT_SCHEMA_VERSION,
+      payload: {
+        version: 2, exportedAt: savedAt, schemaVersion: CURRENT_SCHEMA_VERSION,
+        tables: {
+          ...Object.fromEntries(RECOVERY_CAPSULE_TABLES.map((name) => [name, []])),
+          words: [{ id: 41, language: 'ja', word: '猫' }],
+        },
+        localStorage: {},
+      },
+    });
+    vi.stubGlobal('localStorage', {
+      getItem: (key: string) => key === RECOVERY_CAPSULE_KEY ? recovery :
+        key === 'langlearn-data-loss-dismissed' ? savedAt : null,
+    });
+    const html = renderToStaticMarkup(<DataSafetySection persistence="unsupported" />);
+    expect(html).toContain('Download recovery copy');
+    expect(html).toContain('Restore missing progress');
+    expect(html).toContain('without replacing your current work');
+    expect(html.indexOf('Download recovery copy')).toBeLessThan(html.indexOf('Restore missing progress'));
+  });
+
   it('names the default controls, keeps scheduling choices reachable, and puts backups before optional ideas', () => {
     const html = renderToStaticMarkup(<SettingsPage />);
 
