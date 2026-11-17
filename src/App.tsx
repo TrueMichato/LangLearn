@@ -52,7 +52,17 @@ function BootedApp() {
   // Rendering the app against a database that failed to open produces a blank
   // screen and a learner who reasonably concludes their data is gone. Show them
   // what actually happened, and how to get back, instead.
-  if (status.kind !== 'ready' && status.kind !== 'opening') {
+  if (status.kind === 'opening') {
+    return (
+      <main className="app-frame min-h-screen bg-slate-50 px-5 py-10 dark:bg-slate-900" aria-busy="true">
+        <h1 className="text-xl font-semibold text-slate-800 dark:text-slate-100">LangLearn</h1>
+        <p className="mt-3 text-sm text-slate-600 dark:text-slate-300" role="status">
+          Opening your saved progress…
+        </p>
+      </main>
+    );
+  }
+  if (status.kind !== 'ready') {
     return <DbRecoveryScreen status={status} onDismiss={dismissRecovery} />;
   }
 
@@ -61,7 +71,7 @@ function BootedApp() {
       <HashRouter>
         {!onboardingComplete && <OnboardingOverlay />}
         <Routes>
-          <Route element={<Shell />}>
+          <Route element={<Shell recoveryWarning={status.recoveryWarning} />}>
             <Route path={ROUTES.dashboard} element={<Dashboard />} />
             <Route path={ROUTES.review} element={<ReviewPage />} />
             <Route path={ROUTES.words} element={<WordsPage />} />

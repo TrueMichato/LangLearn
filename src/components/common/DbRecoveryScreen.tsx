@@ -2,7 +2,6 @@ import { useEffect, useState } from 'react';
 import type { DbStatus } from '../../db/recovery';
 import {
   listSnapshots,
-  restoreSnapshot,
   exportSnapshot,
   dismissDataLoss,
   exportRecoveryPoint,
@@ -31,23 +30,25 @@ export default function DbRecoveryScreen({
   onDismiss?: () => void;
 }) {
   const [snapshots, setSnapshots] = useState<Snapshot[]>([]);
+  const [snapshotError, setSnapshotError] = useState('');
   const [busy, setBusy] = useState(false);
   const [message, setMessage] = useState('');
 
   useEffect(() => {
-    listSnapshots().then(setSnapshots).catch(() => setSnapshots([]));
+    listSnapshots().then(setSnapshots).catch(() =>
+      setSnapshotError('Saved snapshots could not be read. Reload after resolving the storage problem above; do not clear site data.'));
   }, []);
 
-  const handleRestore = async (id: number) => {
-    if (busy) return;
+  const handleRestore = async (snapshot: Snapshot) => {
+    if (busy || !confirmRecoveryRestore()) return;
     setBusy(true);
     setMessage('');
     try {
-      await restoreSnapshot(id);
+      await restoreRecoveryPoint({ kind: 'snapshot', snapshot });
       setMessage('Restored. Reloading…');
       setTimeout(() => window.location.reload(), 800);
-    } catch {
-      setMessage('That snapshot could not be restored. Your data has not been changed.');
+    } catch (error) {
+      setMessage(error instanceof Error ? error.message : 'That snapshot could not be restored. Your data has not been changed.');
       setBusy(false);
     }
   };
@@ -73,14 +74,15 @@ export default function DbRecoveryScreen({
 
   const handleCapsuleRestore = async () => {
     if (!lostRecovery || lostRecovery.kind !== 'capsule' || busy) return;
+    if (!confirmRecoveryRestore()) return;
     setBusy(true);
     setMessage('');
     try {
       await restoreRecoveryPoint(lostRecovery);
       setMessage('Restored. Reloading…');
       setTimeout(() => window.location.reload(), 800);
-    } catch {
-      setMessage('The recovery copy could not be restored. Nothing was changed.');
+    } catch (error) {
+      setMessage(error instanceof Error ? error.message : 'The recovery copy could not be restored. Nothing was changed.');
       setBusy(false);
     }
   };
@@ -104,8 +106,8 @@ export default function DbRecoveryScreen({
         <div className="rounded-2xl border border-green-200/70 dark:border-green-900/40 bg-green-50 dark:bg-green-950/40 p-4">
           <p className="text-sm text-green-800 dark:text-green-200">
             {lostRecovery
-              ? "A recent copy of your progress is still on this device. Restoring it below brings back its saved words, current review schedules, study activity and lesson progress. Please don't clear the site data or delete the app first."
-              : "Your words, reviews and streak are still saved on this device. Please don't clear the site data or delete the app — that would remove them for good."}
+              ? "An earlier copy of your progress is still on this device. Download it before restoring. Please don't clear the site data or delete the app first."
+              : "An opening problem does not mean your data has been deleted. Please don't clear the site data or delete the app — that could remove data that is still recoverable."}
           </p>
         </div>
 
@@ -127,19 +129,24 @@ export default function DbRecoveryScreen({
               Saved {new Date(lostCapsule.createdAt).toLocaleString()}
               {capsuleInfo ? ` · ${formatBytes(capsuleInfo.sizeBytes)}` : ''}
             </p>
-            <div className="mt-3 flex gap-2">
+            <p className="mt-2 text-sm text-slate-600 dark:text-slate-300">
+              Missing progress can be added while keeping your current work.
+              If saved IDs conflict, restoration stops without changing your data.
+            </p>
+            <div className="mt-3 flex flex-wrap gap-2">
+              <button
+                onClick={handleCapsuleDownload}
+                disabled={busy}
+                className="min-h-[44px] rounded-xl border border-slate-200/70 px-4 py-2 text-sm font-medium text-slate-700 hover:bg-slate-50 disabled:opacity-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 dark:border-white/10 dark:text-slate-200 dark:hover:bg-slate-700/50"
+              >
+                Download
+              </button>
               <button
                 onClick={handleCapsuleRestore}
                 disabled={busy}
                 className="min-h-[44px] flex-1 rounded-xl bg-indigo-600 px-4 py-2 text-sm font-medium text-white hover:bg-indigo-700 disabled:opacity-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
               >
-                Restore progress
-              </button>
-              <button
-                onClick={handleCapsuleDownload}
-                className="min-h-[44px] rounded-xl border border-slate-200/70 px-4 py-2 text-sm font-medium text-slate-700 hover:bg-slate-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 dark:border-white/10 dark:text-slate-200 dark:hover:bg-slate-700/50"
-              >
-                Download
+                Restore missing progress
               </button>
             </div>
             {message && (
@@ -158,7 +165,9 @@ export default function DbRecoveryScreen({
             Copies stored with the main database for undoing a bad app update.
           </p>
 
-          {snapshots.length === 0 ? (
+          {snapshotError ? (
+            <p className="mt-3 text-sm text-slate-600 dark:text-slate-300" role="status">{snapshotError}</p>
+          ) : snapshots.length === 0 ? (
             <p className="mt-3 text-sm text-slate-500 dark:text-slate-400">
               No snapshots available yet.
             </p>
@@ -177,7 +186,7 @@ export default function DbRecoveryScreen({
                   </p>
                   <div className="mt-2 flex gap-2">
                     <button
-                      onClick={() => handleRestore(snapshot.id!)}
+                      onClick={() => handleRestore(snapshot)}
                       disabled={busy}
                       className="min-h-[44px] flex-1 rounded-xl bg-indigo-600 px-4 py-2 text-sm font-medium text-white hover:bg-indigo-700 disabled:opacity-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
                     >
@@ -208,11 +217,19 @@ export default function DbRecoveryScreen({
             disabled={busy}
             className="w-full min-h-[44px] rounded-xl border border-slate-200/70 dark:border-white/10 px-5 py-2 text-sm font-medium text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 disabled:opacity-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
           >
-            Start fresh instead
+            Continue without restoring
           </button>
         )}
       </div>
     </div>
+  );
+}
+
+function confirmRecoveryRestore(): boolean {
+  return window.confirm(
+    'Restore missing progress while keeping current work, bonus XP, badges and study sets? ' +
+    'A safety snapshot will be saved first. Conflicting IDs will stop restoration without changes. ' +
+    'Download the selected copy first; you can also export current data from Settings after continuing.',
   );
 }
 
@@ -222,6 +239,13 @@ function describe(status: DbStatus): {
   primaryAction: string | null;
 } {
   switch (status.kind) {
+    case 'reload-required':
+      return {
+        title: 'Reload to continue safely',
+        explanation:
+          'Another tab requested a database change, so this tab closed its connection. Reload before continuing your study.',
+        primaryAction: 'Reload the app',
+      };
     case 'version-mismatch':
       return {
         title: 'This version of the app is out of date',
@@ -240,7 +264,7 @@ function describe(status: DbStatus): {
       return {
         title: 'Your progress looks like it went missing',
         explanation:
-          'LangLearn opened normally but found none of your saved progress. A recent local recovery copy is available below so you can pick up close to where you left off.',
+          'Some previously saved history is missing from the main database. An earlier local recovery copy is available below. Download it before making changes.',
         primaryAction: null,
       };
     default:

@@ -99,9 +99,11 @@ function readLocalStorage(): Record<string, string> {
 
 export async function buildBackupPayload(): Promise<BackupPayload> {
   const tables: Partial<Record<BackupTableName, unknown[]>> = {};
-  for (const name of BACKUP_TABLE_NAMES) {
-    tables[name] = await db.table(name).toArray();
-  }
+  await db.transaction('r', BACKUP_TABLE_NAMES.map((name) => db.table(name)), async () => {
+    await Promise.all(BACKUP_TABLE_NAMES.map(async (name) => {
+      tables[name] = await db.table(name).toArray();
+    }));
+  });
   return {
     version: BACKUP_PAYLOAD_VERSION,
     exportedAt: new Date().toISOString(),
@@ -397,6 +399,94 @@ async function importReplace(
     restoredStorageKeys: restoreLocalStorage(payload, preserveLiveXP),
     untouchedTables: untouched,
   };
+}
+
+/**
+ * Recovery keeps original word IDs: surviving manual sets still point at them.
+ * Unlike a general file merge, assigning an arbitrary new ID would quietly
+ * retarget those sets. Refuse ambiguous collisions rather than guess.
+ */
+export async function importRecoveryData(
+  source: BackupPayload,
+  saveCurrent: (payload: BackupPayload) => Promise<void>,
+): Promise<void> {
+  const incoming = normalizePayload(source);
+  const storage = incoming.localStorage['langlearn-xp'];
+  // An IDB recovery must not roll back surviving settings, badges or set
+  // definitions. XP alone travels with vocabulary receipt idempotency tokens.
+  incoming.localStorage = storage == null ? {} : { 'langlearn-xp': storage };
+  let restored: BackupPayload = incoming;
+  await db.transaction('rw', [...BACKUP_TABLE_NAMES.map((name) => db.table(name)), db.snapshots], async () => {
+    const live = await buildBackupPayload();
+    const tables: BackupPayload['tables'] = {};
+    for (const name of BACKUP_TABLE_NAMES) {
+      const current = (live.tables[name] ?? []) as Row[];
+      const rows = (incoming.tables[name] ?? []) as Row[];
+      const keyField = name === 'settings' ? 'key' : name === 'dailyActivity' ? 'date' : 'id';
+      const byId = new Map(current.map((row) => [row[keyField], row]));
+      const currentIdentities = new Set(current.map((row) => mergeKey(name, row)));
+      let nextId = [...current, ...rows].reduce((max, row) => Math.max(max, Number(row.id) || 0), 0) + 1;
+      for (const row of rows) {
+        if ((name === 'studySessions' || name === 'testHistory') &&
+          mergeKey(name, row) !== null && currentIdentities.has(mergeKey(name, row))) continue;
+        const previous = byId.get(row[keyField]);
+        if (previous) {
+          if ((name === 'words' && !sameStoredCard(previous as unknown as Word, row as unknown as Word)) ||
+            (name === 'texts' && JSON.stringify(stripId(previous)) !== JSON.stringify(stripId(row))) ||
+            (name === 'reviews' && previous.wordId !== row.wordId)) {
+            throw new Error(
+              'The recovery copy conflicts with current progress using the same IDs. ' +
+              'Nothing was restored. Download the recovery copy and export your current data; ' +
+              'keep both files for a manual recovery without changing your study sets.',
+            );
+          }
+          if (name === 'studySessions' || name === 'testHistory') {
+            if (JSON.stringify(stripId(previous)) !== JSON.stringify(stripId(row))) {
+              const added = { ...row, id: nextId++ };
+              byId.set(added.id, added);
+              currentIdentities.add(mergeKey(name, row));
+            }
+          } else if (name === 'guidedActivityProgress') {
+            byId.set(row[keyField], mergeGuidedActivityProgress(previous, row));
+          } else if (name === 'dailyActivity' || name === 'lessonProgress' ||
+            name === 'characterProgress' || name === 'skillProgress') {
+            const merged = { ...row, ...previous };
+            for (const field of ['studySeconds', 'cardsReviewed', 'wordsAdded', 'attempts',
+              'quizScore', 'totalAttempts', 'correctCount', 'correct']) {
+              const value = numericMax(row[field], previous[field]);
+              if (value !== undefined) merged[field] = value;
+            }
+            for (const field of ['completed', 'goalMet', 'challengeComplete', 'freezeUsed']) {
+              if (row[field] || previous[field]) merged[field] = true;
+            }
+            if (name === 'lessonProgress' && row.completed && !previous.completed) {
+              merged.completedAt = row.completedAt;
+            }
+            if (name === 'characterProgress' &&
+              Number(row.totalAttempts) > Number(previous.totalAttempts)) merged.mastery = row.mastery;
+            byId.set(row[keyField], merged);
+          }
+          // Other keyed records keep the live version.
+          continue;
+        }
+        // A live review for the same word is the more recent schedule.
+        if (name === 'reviews' && current.some((review) => review.wordId === row.wordId)) continue;
+        byId.set(row[keyField], row);
+        currentIdentities.add(mergeKey(name, row));
+      }
+      tables[name] = [...byId.values()];
+    }
+    restored = { ...incoming, tables };
+    reconcileRecoveryReceipts(restored);
+    // Saving and restoring share one transaction: quota errors or collisions
+    // leave the live database and its relationships untouched.
+    await saveCurrent(live);
+    for (const name of BACKUP_TABLE_NAMES) {
+      const rows = restored.tables[name] ?? [];
+      if (rows.length) await db.table(name).bulkPut(rows as never[]);
+    }
+  });
+  restoreLocalStorage(restored, true);
 }
 
 /**

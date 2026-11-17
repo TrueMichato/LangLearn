@@ -64,18 +64,19 @@ describe('snapshot retention', () => {
 describe('snapshotProgressRows', () => {
   const payload = (tables: Record<string, unknown[]>) => JSON.stringify({ tables });
 
-  it('counts rows across every progress table', () => {
+  it('counts real history, not surviving badges or empty activity placeholders', () => {
     expect(
       snapshotProgressRows(
-        payload({ words: [1, 2, 3], reviews: [1], badges: [1], dailyActivity: [1, 2] }),
+        payload({ words: [1, 2, 3], reviews: [1], badges: [1],
+          dailyActivity: [{ studySeconds: 20 }, { studySeconds: 0 }] }),
       ),
-    ).toBe(7);
+    ).toBe(5);
   });
 
   it('ignores tables that do not represent progress', () => {
-    // Settings and texts can be legitimately empty for a long-time learner, so
-    // counting them would make an empty database look populated.
-    expect(snapshotProgressRows(payload({ settings: [1, 2], texts: [1] }))).toBe(0);
+    expect(snapshotProgressRows(payload({ settings: [1, 2], badges: [1],
+      studySessions: [{ durationSeconds: 0, xpEarned: 0 }] }))).toBe(0);
+    expect(snapshotProgressRows(payload({ texts: [{ content: 'a saved text' }] }))).toBe(1);
   });
 
   it('counts saved vocabulary attempts without treating preferences or archived replacements as live progress', () => {

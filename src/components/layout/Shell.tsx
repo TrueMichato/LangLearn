@@ -1,5 +1,5 @@
 import { useState, Suspense } from 'react';
-import { Outlet } from 'react-router-dom';
+import { Link, Outlet } from 'react-router-dom';
 import BottomNav from './BottomNav';
 import StudyTimer from '../common/StudyTimer';
 import DictionaryModal from '../dictionary/DictionaryModal';
@@ -11,8 +11,9 @@ import BadgeToast from '../badges/BadgeToast';
 import { useBadgeChecker } from '../../hooks/useBadgeChecker';
 import InAppNudgeStack from '../common/InAppNudgeStack';
 import { PageSkeleton } from '../common/Skeleton';
+import { ROUTES } from '../../lib/routes';
 
-export default function Shell() {
+export default function Shell({ recoveryWarning }: { recoveryWarning?: string }) {
   const darkMode = useDarkMode();
   useFontSize();
   useNotificationScheduler();
@@ -46,6 +47,17 @@ export default function Shell() {
           </div>
         </header>
         <main className="px-4 py-4">
+          {recoveryWarning && (
+            <div className="mb-4 rounded-xl border border-amber-200/70 bg-amber-50 p-3 dark:border-amber-900/40 dark:bg-amber-950/40" role="status">
+              <p className="text-sm text-amber-900 dark:text-amber-200">{recoveryWarning}</p>
+              <Link
+                to={ROUTES.settings}
+                className="mt-1 inline-flex min-h-[44px] items-center text-sm font-medium text-indigo-600 underline focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 dark:text-indigo-400"
+              >
+                Open data settings
+              </Link>
+            </div>
+          )}
           <div className="page-enter">
             <Suspense fallback={<PageSkeleton />}>
               <Outlet />
