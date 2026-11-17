@@ -1,0 +1,7 @@
+.wrangler/
+.dev.vars
+.dev.vars.*
+.enrollment-secret.local
+.test-state/
+dist/
+node_modules/

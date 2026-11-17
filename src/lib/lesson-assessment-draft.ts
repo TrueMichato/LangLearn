@@ -1,4 +1,5 @@
 import type { Question } from './test-questions';
+import { notifyBackupSourceChanged } from './backup-source';
 
 const STORAGE_KEY = 'langlearn-assessment-drafts';
 const STORAGE_VERSION = 1;
@@ -69,7 +70,7 @@ function isQuestion(value: unknown): value is Question {
   );
 }
 
-function isDraft(value: unknown): value is AssessmentDraft {
+export function isAssessmentDraft(value: unknown): value is AssessmentDraft {
   if (!value || typeof value !== 'object') return false;
   const draft = value as Partial<AssessmentDraft>;
   if (
@@ -120,7 +121,7 @@ function parseDrafts(raw: string | null, now: number): AssessmentDraft[] {
       console.warn('Ignored unsupported assessment draft storage');
       return [];
     }
-    const valid = parsed.drafts.filter(isDraft);
+    const valid = parsed.drafts.filter(isAssessmentDraft);
     if (valid.length !== parsed.drafts.length) {
       console.warn('Removed malformed assessment draft data');
     }
@@ -140,6 +141,7 @@ function readAll(now = Date.now()): AssessmentDraft[] {
   const drafts = parseDrafts(target.getItem(STORAGE_KEY), now);
   if (drafts.length === 0 && target.getItem(STORAGE_KEY)) {
     target.removeItem(STORAGE_KEY);
+    notifyBackupSourceChanged();
   }
   return drafts;
 }
@@ -157,6 +159,7 @@ function writeAll(drafts: AssessmentDraft[]): boolean {
       };
       target.setItem(STORAGE_KEY, JSON.stringify(payload));
     }
+    notifyBackupSourceChanged();
     return true;
   } catch (error) {
     console.error('Could not save assessment draft', error);
@@ -197,7 +200,7 @@ export function saveAssessmentDraft(
     lessonIds: [...identity.lessonIds],
     savedAt: now,
   };
-  if (!isDraft(draft)) {
+  if (!isAssessmentDraft(draft)) {
     console.error('Refused to save invalid assessment draft');
     return false;
   }

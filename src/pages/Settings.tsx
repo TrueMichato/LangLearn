@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import DataSafetySection from '../components/settings/DataSafetySection';
+import EncryptedBackupSection from '../components/settings/EncryptedBackupSection';
 import { useDatabaseBootContext } from '../hooks/database-boot-context';
 import { useSettingsStore } from '../stores/settingsStore';
 import { useCurrentLanguage } from '../hooks/useCurrentLanguage';
@@ -290,6 +291,7 @@ export default function SettingsPage() {
           Data and privacy
         </h3>
         <DataSafetySection persistence={persistence} />
+        <EncryptedBackupSection />
         <section className={`${sectionCard} space-y-4`}>
           <SectionHeading icon="🌐" label="Share vocabulary decks" />
           <DeckExport />

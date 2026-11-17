@@ -34,3 +34,4 @@ infra/push-worker/vapid.json
 
 # Playwright MCP test artifacts
 .playwright-mcp/
+/.test-state/verify-data-durability-*/

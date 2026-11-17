@@ -1,0 +1,19 @@
+name = "langlearn-backup-test"
+main = "worker.ts"
+compatibility_date = "2026-04-01"
+
+[vars]
+ALLOWED_ORIGINS = '["http://localhost:5173","https://truemichato.github.io"]'
+ENROLLMENT_SECRET = "synthetic-local-enrollment-secret-not-for-production"
+TEST_SECRET = "synthetic-local-fixture-secret-not-for-production"
+
+[[durable_objects.bindings]]
+name = "VAULTS"
+class_name = "TestBackupVault"
+
+[[migrations]]
+tag = "v1"
+new_sqlite_classes = ["TestBackupVault"]
+
+[observability]
+enabled = false
