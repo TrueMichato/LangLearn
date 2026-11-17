@@ -11,6 +11,7 @@ import { downloadJson } from '../../db/backup';
 import type { Snapshot } from '../../db/schema';
 import { formatBytes } from '../../lib/storage-persistence';
 import { getRecoveryCapsuleInfo } from '../../db/recovery-capsule';
+import BackupRestorePanel from '../settings/BackupRestorePanel';
 
 /**
  * What the learner sees when the database will not open.
@@ -220,6 +221,9 @@ export default function DbRecoveryScreen({
             Continue without restoring
           </button>
         )}
+        <section className="rounded-2xl border border-slate-200/70 bg-white p-4 dark:border-white/10 dark:bg-slate-800">
+          <BackupRestorePanel />
+        </section>
       </div>
     </div>
   );

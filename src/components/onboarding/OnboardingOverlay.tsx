@@ -47,7 +47,7 @@ function StepIndicators({ current, total }: { current: number; total: number }) 
   );
 }
 
-export default function OnboardingOverlay() {
+export default function OnboardingOverlay({ onRestoreBackup }: { onRestoreBackup?: () => void } = {}) {
   const [step, setStep] = useState(0);
   const [customLang, setCustomLang] = useState('');
   const customInputRef = useRef<HTMLInputElement>(null);
@@ -115,6 +115,10 @@ export default function OnboardingOverlay() {
       <p className="text-lg text-slate-600 dark:text-slate-300 max-w-md">
         A kind way to learn a language, a few minutes at a time
       </p>
+      {onRestoreBackup && <button type="button" onClick={onRestoreBackup}
+        className="min-h-[44px] rounded-xl px-4 py-2 text-sm font-medium text-indigo-600 hover:bg-indigo-50 dark:text-indigo-400 dark:hover:bg-indigo-950">
+        Returning learner? Recover with a saved backup kit
+      </button>}
 
       <div className="w-full max-w-sm text-left">
         <p className="mb-1 font-medium text-slate-700 dark:text-slate-200">

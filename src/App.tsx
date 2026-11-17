@@ -1,4 +1,4 @@
-import { lazy } from 'react';
+import { lazy, useEffect, useState } from 'react';
 import { HashRouter, Routes, Route, Navigate } from 'react-router-dom';
 import Shell from './components/layout/Shell';
 import OnboardingOverlay from './components/onboarding/OnboardingOverlay';
@@ -9,6 +9,9 @@ import DbRecoveryScreen from './components/common/DbRecoveryScreen';
 import DatabaseBootProvider from './components/common/DatabaseBootProvider';
 import { useDatabaseBootContext } from './hooks/database-boot-context';
 import { ROUTES } from './lib/routes';
+import IndependentRestoreGate from './components/common/IndependentRestoreGate';
+import BackupRestorePanel from './components/settings/BackupRestorePanel';
+import { startIndependentBackupRuntime } from './lib/backup-runtime';
 
 const Dashboard = lazy(() => import('./pages/Dashboard'));
 const ReviewPage = lazy(() => import('./pages/Review'));
@@ -39,15 +42,24 @@ export default function App() {
   // The provider sits above the recovery branch so boot runs once, whichever
   // of the two outcomes below ends up rendering.
   return (
-    <DatabaseBootProvider>
-      <BootedApp />
-    </DatabaseBootProvider>
+    <IndependentRestoreGate>
+      <DatabaseBootProvider>
+        <BootedApp />
+      </DatabaseBootProvider>
+    </IndependentRestoreGate>
   );
 }
 
 function BootedApp() {
   const onboardingComplete = useSettingsStore((s) => s.onboardingComplete);
   const { status, dismissRecovery } = useDatabaseBootContext();
+  const [recoverBackup, setRecoverBackup] = useState(false);
+  const ready = status.kind === 'ready';
+  useEffect(() => {
+    if (!ready) return;
+    const runtime = startIndependentBackupRuntime();
+    return () => runtime.stop();
+  }, [ready]);
 
   // Rendering the app against a database that failed to open produces a blank
   // screen and a learner who reasonably concludes their data is gone. Show them
@@ -65,12 +77,19 @@ function BootedApp() {
   if (status.kind !== 'ready') {
     return <DbRecoveryScreen status={status} onDismiss={dismissRecovery} />;
   }
+  if (recoverBackup) {
+    return <main className="app-frame min-h-screen space-y-5 bg-slate-50 px-5 py-10 dark:bg-slate-900">
+      <BackupRestorePanel />
+      <button type="button" onClick={() => setRecoverBackup(false)}
+        className="min-h-[44px] rounded-xl border border-slate-300 px-4 py-2 text-sm text-slate-700 hover:bg-slate-100 dark:border-slate-600 dark:text-slate-200 dark:hover:bg-slate-800">Back to LangLearn</button>
+    </main>;
+  }
 
   return (
     <ErrorBoundary>
       <HashRouter>
-        {!onboardingComplete && <OnboardingOverlay />}
-        <Routes>
+        {/* Do not let hidden study routes create baseline/progress rows in a fresh recovery target. */}
+        {!onboardingComplete ? <OnboardingOverlay onRestoreBackup={() => setRecoverBackup(true)} /> : <Routes>
           <Route element={<Shell recoveryWarning={status.recoveryWarning} />}>
             <Route path={ROUTES.dashboard} element={<Dashboard />} />
             <Route path={ROUTES.review} element={<ReviewPage />} />
@@ -98,7 +117,7 @@ function BootedApp() {
             <Route path={ROUTES.translation} element={<TranslationPracticePage />} />
             <Route path="*" element={<Navigate to={ROUTES.dashboard} replace />} />
           </Route>
-        </Routes>
+        </Routes>}
       </HashRouter>
       <UpdateToast />
     </ErrorBoundary>

@@ -1,5 +1,6 @@
 import { markLessonComplete } from '../db/lessons';
 import { NEXT_GUIDED_GROUP } from './routes';
+import { notifyBackupSourceChanged } from './backup-source';
 
 const GROUP_ORDER = [
   'Vowels',
@@ -99,6 +100,7 @@ export async function saveCompletedGuidedGroups(
     storageKey(alphabetName, language),
     JSON.stringify([...completed]),
   );
+  notifyBackupSourceChanged();
 
   if (groups.length > 0 && groups.every((group) => completed.has(group))) {
     await markLessonComplete(language, guidedLessonId(alphabetName), 100);

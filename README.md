@@ -76,9 +76,15 @@ asks you to reload instead of showing an apparently empty, disconnected app.
 
 These are local safeguards, not cloud sync. Clearing all site data can remove
 both the database and recovery copy; persistence requests and visibility
-flushes are not guarantees. Regular **Export all data** files saved off-device
-are the safest complete backup. If no usable copy survived, XP/badges cannot
+flushes are not guarantees. Keep **Export all data** JSON files saved off-device:
+they preserve supported tables and stores, but omit unfinished assessment drafts
+and partial guided letter columns. If no usable copy survived, XP/badges cannot
 reconstruct missing words or lesson history.
+
+The optional encrypted checkpoint layer includes those two progress families,
+but requires a configured service, enrollment and a saved recovery kit; it is
+not deployed yet. See the [data durability design](./docs/data-durability.md)
+for its configuration requirements and full durability roadmap.
 
 ## Deployment
 
