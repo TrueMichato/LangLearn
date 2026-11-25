@@ -25,7 +25,7 @@ The most common question is **Cât e ceasul?** You will also hear **Ce oră este
 <!-- vocab-card: {"id":"vocab-cat-e-ceasul","priority":"essential","sourceSection":"Asking and Giving the Time","word":"Cât e ceasul?","meaning":"What time is it?"} -->
 <!-- vocab-card: {"id":"vocab-ce-ora-este","priority":"optional","sourceSection":"Asking and Giving the Time","word":"Ce oră este?","meaning":"What time is it?"} -->
 <!-- vocab-card: {"id":"vocab-fix","priority":"optional","sourceSection":"Asking and Giving the Time","word":"fix","meaning":"exactly; sharp (of a stated time)"} -->
-<!-- grammar-card: {"id":"hour-numeral-forms","priority":"optional","sourceSection":"Asking and Giving the Time","kind":"concept","format":"qa","rule":"Clock-time expressions use unu but două and douăsprezece","example":"Which forms are used for one and two o'clock in the examples?","answer":"Ora unu and ora două.","explanation":"Ora unu and ora două."} -->
+<!-- grammar-card: {"id":"hour-numeral-forms","priority":"optional","sourceSection":"Asking and Giving the Time","kind":"rule","format":"qa","rule":"Clock-time expressions use unu but două and douăsprezece","example":"Which forms are used for one and two o'clock in the examples?","answer":"Ora unu and ora două.","explanation":"Ora unu and ora două."} -->
 
 ## At a Time: la ora
 
@@ -73,6 +73,7 @@ For conversational time, Romanian often uses **și** for minutes after the hour 
 <!-- vocab-card: {"id":"vocab-sfert","priority":"optional","sourceSection":"Half, Quarter, Past, and To","word":"sfert","meaning":"quarter"} -->
 <!-- grammar-card: {"id":"half-past-three","priority":"essential","sourceSection":"Half, Quarter, Past, and To","kind":"rule","format":"cloze","rule":"Minutes after an hour use și","example":"E trei ___ jumătate.","answer":"și","explanation":"Trei și jumătate is 3:30."} -->
 <!-- grammar-card: {"id":"quarter-to-four","priority":"essential","sourceSection":"Half, Quarter, Past, and To","kind":"rule","format":"cloze","rule":"Fără subtracts minutes from the following hour","example":"3:45: patru ___ un sfert","answer":"fără","explanation":"A quarter before four is 3:45."} -->
+<!-- grammar-card: {"id":"rule-before-the-hour","kind":"concept","format":"qa","priority":"essential","sourceSection":"Half, Quarter, Past, and To","rule":"For minutes before the hour, conversational Romanian names the next hour and subtracts the minutes","example":"For a time shortly before the hour, such as 3:45, which hour does conversational Romanian count back from?","answer":"The next hour: the minutes are subtracted from it.","explanation":"Count it if you name the next hour and subtract the minutes. 3:45 = patru fără un sfert (four minus a quarter); 4:50 = cinci fără zece."} -->
 
 ## Days and Months
 
@@ -115,6 +116,7 @@ Common months include **ianuarie**, **februarie**, **martie**, **aprilie**, **ma
 <!-- vocab-card: {"id":"vocab-decembrie","priority":"optional","sourceSection":"Days and Months","word":"decembrie","meaning":"December"} -->
 <!-- grammar-card: {"id":"calendar-lowercase","priority":"essential","sourceSection":"Days and Months","kind":"concept","format":"qa","rule":"Day and month names are lowercase except at sentence starts","example":"Should the month in pe 3 martie be capitalized merely because it names a month?","answer":"No. Romanian day and month names are lowercase unless they begin a sentence.","explanation":"No. Romanian day and month names are lowercase unless they begin a sentence."} -->
 <!-- grammar-card: {"id":"month-in","priority":"optional","sourceSection":"Days and Months","kind":"rule","format":"cloze","rule":"Months take în while a weekday alone can mean on that day","example":"Mergem ___ iulie.","answer":"în","explanation":"În iulie means in July."} -->
+<!-- grammar-card: {"id":"rule-weekday-alone","kind":"concept","format":"qa","priority":"optional","sourceSection":"Days and Months","rule":"A weekday name alone means on that day, with no preposition","example":"English says on Monday. What does Romanian put before a weekday name to express on that day?","answer":"Nothing: the day name alone means on that day.","explanation":"Count it if you say no preposition is needed. Plec luni = I leave on Monday; Avem examen vineri = We have an exam on Friday."} -->
 
 ## Dates and Years
 
@@ -128,13 +130,13 @@ Use **pe** before a calendar date when you mean on that date. Use **în** for ye
 | **din 2020** | since / from 2020 |
 | **până în 2026** | until 2026 |
 
-- **M-am născut pe 3 martie.** (mahm nuhs-KOOT peh tray mar-TEE-eh) — I was born on March 3.
+- **M-am născut pe 3 martie.** (mahm nuhs-KOOT peh tray MAR-tee-eh) — I was born on March 3.
 - **Festivalul este în august.** — The festival is in August.
 - **Locuiesc aici din 2020.** — I have lived here since 2020.
 
 <!-- quiz: {"type":"multiple-choice","question":"Which phrase means on March 3?","options":["pe 3 martie","în 3 martie","la 2024","de martie 3"],"answer":0} -->
 
-<!-- grammar-card: {"id":"calendar-date-pe","priority":"essential","sourceSection":"Dates and Years","kind":"rule","format":"cloze","rule":"Use pe for calendar dates and în for years or months","example":"Ne vedem ___ 3 martie.","answer":"pe","explanation":"A specific calendar date takes pe."} -->
+<!-- grammar-card: {"id":"calendar-date-pe","priority":"essential","sourceSection":"Dates and Years","kind":"rule","format":"cloze","rule":"Use pe for calendar dates and în for years or months","example":"Ne vedem ___ 3 martie.","answer":"pe","explanation":"In everyday Romanian a specific calendar date takes pe; la or în before a date (la 1 decembrie) also occurs, especially in writing."} -->
 <!-- grammar-card: {"id":"year-in","priority":"optional","sourceSection":"Dates and Years","kind":"rule","format":"cloze","rule":"Years use în for in","example":"M-am născut ___ 2000.","answer":"în","explanation":"În 2000 means in the year 2000."} -->
 <!-- vocab-card: {"id":"vocab-din-time","priority":"optional","sourceSection":"Dates and Years","word":"din","meaning":"since; from (a starting time)"} -->
 <!-- vocab-card: {"id":"vocab-pana-in","priority":"optional","sourceSection":"Dates and Years","word":"până în","meaning":"until (a stated year or period)"} -->
