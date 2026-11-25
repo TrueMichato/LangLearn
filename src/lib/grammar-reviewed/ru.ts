@@ -42,5 +42,14 @@ export const reviewed: readonly string[] = [
   'passive-constructions',
   'aspect-pairs',
   // Rollout batch 4 (lessons 38–47)
-
+  'prepositions-advanced',
+  'register-formality',
+  'culture-context',
+  'resources',
+  'diminutives',
+  'numbers-with-cases',
+  'aspect-practical',
+  'common-mistakes',
+  'formal-writing',
+  'verbal-nouns',
 ];
