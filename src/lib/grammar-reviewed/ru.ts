@@ -32,7 +32,15 @@ export const reviewed: readonly string[] = [
   'conditional',
   'indirect-speech',
   // Rollout batch 3 (lessons 29–37)
-
+  'word-order',
+  'short-adjectives',
+  'verbs-of-motion-prefixed',
+  'negation',
+  'relative-pronouns',
+  'time-clauses',
+  'subjunctive',
+  'passive-constructions',
+  'aspect-pairs',
   // Rollout batch 4 (lessons 38–47)
 
 ];

@@ -1,5 +1,7 @@
 # Negation Patterns (не, ни, нет, никогда)
 
+<!-- vocab-inventory: {"mode":"explicit"} -->
+
 Russian negation is richer and more layered than English. Where English uses one negative word ("I don't know anything"), Russian uses **double** (or even triple) negation: «Я ничего не знаю» — literally "I nothing don't know." Understanding **не**, **ни**, **нет**, and the many **ни-** words is essential to sounding natural in Russian.
 
 ---
@@ -28,9 +30,9 @@ Russian negation is richer and more layered than English. Where English uses one
 
 > The position of **не** determines **what** is being negated — it always negates the word immediately following it.
 
-<!-- grammar-card: {"rule":"Moving не changes which part of the sentence is denied","hint":"не placed before the subject","example":"___ я это сделал.","answer":"Не","explanation":"Placed before я, не denies the subject rather than the verb: someone else did it."} -->
+<!-- grammar-card: {"id":"not-me-did-it","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Negating other words","rule":"Moving не changes which part of the sentence is denied","example":"Insist it wasn't you who did it, someone else did: ___ я это сделал.","answer":"Не","explanation":"Placed before я, the particle denies the subject rather than the action: the deed happened, but someone else did it.","legacyAliases":[{"rule":"Moving не changes which part of the sentence is denied","example":"___ я это сделал."}]} -->
 
-<!-- grammar-card: {"rule":"Не negates whatever word directly follows it","hint":"не / нет","example":"Она ___ работает сегодня.","answer":"не","explanation":"Standing before работает, не denies the action itself: she is not working."} -->
+<!-- grammar-card: {"id":"not-working-today","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Negating the verb","rule":"Не negates whatever word directly follows it","example":"Say she isn't working today: Она ___ работает сегодня.","answer":"не","explanation":"To deny the action itself, the particle goes straight before the verb работает. Нет cannot do this job: it is a standalone no or means there is not.","legacyAliases":[{"rule":"Не negates whatever word directly follows it","example":"Она ___ работает сегодня."}]} -->
 
 ---
 
@@ -54,6 +56,9 @@ Russian negation is richer and more layered than English. Where English uses one
 
 **У неё нет брата.** *(U neyó net brata.)* — She doesn't have a brother.
 
+<!-- grammar-card: {"id":"no-time-genitive","kind":"rule","format":"cloze","priority":"essential","sourceSection":"As \"there is not\" / \"does not exist\" (with genitive)","rule":"The thing that is absent after нет goes into the genitive","example":"Say you don't have time. Use время (time): У меня нет ___.","answer":"времени","explanation":"Нет replaces есть when something is absent, and the missing thing goes into the genitive: время becomes времени."} -->
+
+<!-- grammar-card: {"id":"rule-net-genitive","kind":"concept","format":"qa","priority":"essential","sourceSection":"As \"there is not\" / \"does not exist\" (with genitive)","rule":"Absence uses нет with the genitive","example":"To say something is absent (There is no metro in the city), which word replaces есть, and what case does the missing thing take?","answer":"Нет, with the genitive.","explanation":"Any answer naming нет and the genitive counts. В городе нет метро, У меня нет времени: the absent thing is never in the nominative."} -->
 ### Past and future of нет
 
 | Tense | Form | Example |
@@ -66,9 +71,11 @@ Russian negation is richer and more layered than English. Where English uses one
 
 **Завтра не будет занятий.** *(Zavtra ne budet zanyatiy.)* — There will be no classes tomorrow.
 
+<!-- grammar-card: {"id":"not-home-yesterday","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Past and future of нет","rule":"In the past, нет becomes не было","example":"Say he wasn't home yesterday: Вчера его ___ дома.","answer":"не было","explanation":"Нет has no past form of its own, so the past uses не было, always neuter, and the person stays in the genitive: его."} -->
+
 <!-- quiz:{"type":"multiple-choice","question":"'У меня нет времени' — what case is 'времени' in?","options":["Nominative","Accusative","Genitive","Dative"],"answer":2} -->
 
-<!-- grammar-card: {"rule":"Нет is the standalone no; не can never stand alone","hint":"не / нет","example":"— Ты хочешь кофе? — ___, спасибо.","answer":"Нет","explanation":"A one-word answer requires нет, because не only ever attaches to another word."} -->
+<!-- grammar-card: {"id":"decline-coffee","kind":"rule","format":"cloze","priority":"essential","sourceSection":"As \"no\" (opposite of \"да\")","rule":"Нет is the standalone no; не can never stand alone","example":"Politely turn down the coffee: — Ты хочешь кофе? — ___, спасибо.","answer":"Нет","explanation":"A one-word no is нет, because не only ever attaches to another word and cannot stand on its own.","legacyAliases":[{"rule":"Нет is the standalone no; не can never stand alone","example":"— Ты хочешь кофе? — ___, спасибо."}]} -->
 
 ---
 
@@ -85,7 +92,7 @@ Russian requires **double negation**: a negative pronoun/adverb (ни-word) **pl
 | никогда *(nikogdá)* | never | Она никогда не опаздывает. — She never is late. |
 | нигде *(nigdé)* | nowhere | Я нигде не могу найти ключи. — I can't find the keys anywhere. |
 | никуда *(nikudá)* | (to) nowhere | Он никуда не ходит. — He doesn't go anywhere. |
-| ниоткуда *(niotkúda)* | from nowhere | Помощь ниоткуда не пришла. — Help came from nowhere. |
+| ниоткуда *(niotkúda)* | from nowhere | Помощь ниоткуда не пришла. — No help came from anywhere. |
 | никак *(nikák)* | in no way | Никак не могу понять. — I just can't understand. |
 | никакой *(nikakóy)* | no (kind of) | Никакой разницы нет. — There's no difference. |
 | ничей *(nichéy)* | nobody's | Это ничья кошка. — It's nobody's cat. |
@@ -104,6 +111,9 @@ Russian requires **double negation**: a negative pronoun/adverb (ни-word) **pl
 
 > **Triple negation** is also possible: **Никто никогда ничего не говорил.** — Nobody ever said anything.
 
+<!-- grammar-card: {"id":"dont-know-anything","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Examples of double negation","rule":"A ни-word combines with не before the verb","example":"Say you don't know anything: Я ___ не знаю.","answer":"ничего","explanation":"Russian negates twice: the ни-word ничего (anything, nothing) plus не before the verb. This double negation is required, not a mistake."} -->
+
+<!-- grammar-card: {"id":"rule-double-negation","kind":"concept","format":"qa","priority":"essential","sourceSection":"3. Double Negation with Ни- Words","rule":"A ни-word still needs не before the verb","example":"When a sentence contains a ни-word like никто or никогда, what must still stand before the verb?","answer":"Не.","explanation":"Any answer naming не counts. Russian requires double negation, so Никто не пришёл is correct and Никто пришёл is not."} -->
 <!-- quiz:{"type":"multiple-choice","question":"How do you say 'Nobody came' in Russian?","options":["Никто пришёл.","Не никто пришёл.","Никто не пришёл.","Нет кто пришёл."],"answer":2} -->
 
 ---
@@ -124,6 +134,9 @@ When a **ни-** pronoun is used with a preposition, the preposition goes **betw
 
 **Мы ни о ком не забыли.** *(My ni o kóm ne zabýli.)* — We didn't forget about anyone.
 
+<!-- grammar-card: {"id":"talked-about-nothing","kind":"rule","format":"cloze","priority":"optional","sourceSection":"4. Ни- Words with Prepositions","rule":"A preposition splits a ни-word","example":"Say you two didn't talk about anything. Use ничто with о: Мы ___ не говорили.","answer":"ни о чём","explanation":"The preposition о goes between ни and the pronoun, which takes the prepositional case: ни о чём, not о ничём."} -->
+
+<!-- grammar-card: {"id":"rule-ni-preposition","kind":"concept","format":"qa","priority":"optional","sourceSection":"4. Ни- Words with Prepositions","rule":"A preposition goes inside a ни-word","example":"Where does a preposition go when it combines with a ни-word such as никто?","answer":"Between ни and the pronoun.","explanation":"Any answer saying it goes between the parts counts. The word splits around the preposition: ни у кого, ни с кем."} -->
 ---
 
 ## 5. Не vs. Ни — The Key Difference
@@ -176,6 +189,9 @@ These special forms express the **absence of possibility**. They are used in imp
 
 **Здесь некуда сесть.** *(Zdes nékuda sest.)* — There's nowhere to sit here.
 
+<!-- grammar-card: {"id":"nowhere-to-go","kind":"rule","format":"qa","priority":"essential","sourceSection":"6. Нечего / Некого — \"There Is Nothing/Nobody to...\"","rule":"Не- forms with a dative person express that something is not possible","example":"Ему некуда идти. What does this tell you about him?","answer":"He has nowhere to go.","explanation":"Некуда with the dative ему and an infinitive says there is no place available for him to go, not just that he isn't going anywhere."} -->
+
+<!-- grammar-card: {"id":"rule-nechego-absence","kind":"concept","format":"qa","priority":"optional","sourceSection":"6. Нечего / Некого — \"There Is Nothing/Nobody to...\"","rule":"Нечего, некого and некуда express the absence of anything to do","example":"What idea do forms like нечего and некуда express, as in Мне нечего делать?","answer":"There is nothing or nowhere available for the action.","explanation":"Any answer about having nothing, nobody or nowhere to do something counts. The person goes in the dative and the action in the infinitive: Ему некуда идти."} -->
 ---
 
 ## 7. Genitive Case After Negation
@@ -203,8 +219,8 @@ Compare: **Я не видел этот фильм.** *(Ya ne vídel étot film.)
 ❌ **Никто пришёл.** — Missing не before the verb.
 ✅ **Никто не пришёл.** — Nobody came.
 
-❌ **Я не видел ничего.** — Word order: ничего should come before не.
-✅ **Я ничего не видел.** — I didn't see anything.
+❌ **Я ничего видел.** — Missing не: a ни-word never replaces it.
+✅ **Я ничего не видел.** — I didn't see anything. (Я не видел ничего is also correct; ничего first is the more neutral order.)
 
 ❌ **У меня не есть время.** — Don't use не есть; use нет.
 ✅ **У меня нет времени.** — I don't have time.

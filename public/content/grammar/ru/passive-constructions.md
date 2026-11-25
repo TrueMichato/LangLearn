@@ -1,5 +1,7 @@
 # Passive Constructions & Impersonal Sentences
 
+<!-- vocab-inventory: {"mode":"explicit"} -->
+
 Russian has several ways to express passive meaning and impersonal (subjectless) sentences. Unlike English, which relies heavily on the passive voice ("The book was written by..."), Russian often prefers **active constructions**, **reflexive verbs**, or **impersonal sentences**. Understanding when and how to use each pattern is key to natural Russian.
 
 ---
@@ -38,7 +40,13 @@ Take the perfective past passive participle and use its **short form**:
 
 <!-- quiz:{"type":"multiple-choice","question":"'Книга написана Толстым' — what case is 'Толстым' in?","options":["Nominative","Genitive","Dative","Instrumental"],"answer":3} -->
 
-<!-- grammar-card: {"rule":"The written passive uses a short-form participle agreeing with the subject","hint":"написать → ?","example":"Книга ___ Толстым.","answer":"написана","explanation":"Книга is feminine singular, so the short participle is написана, and the agent stands in the instrumental Толстым."} -->
+<!-- grammar-card: {"id":"written-by-tolstoy","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Examples","rule":"The written passive uses a short-form participle agreeing with the subject","example":"Say the book was written by Tolstoy. Use написать: Книга ___ Толстым.","answer":"написана","explanation":"Книга is feminine singular, so the short passive participle of написать takes the feminine ending -а, and the agent stands in the instrumental: Толстым.","legacyAliases":[{"rule":"The written passive uses a short-form participle agreeing with the subject","example":"Книга ___ Толстым."}]} -->
+
+<!-- grammar-card: {"id":"doors-are-open","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Examples","rule":"The short passive participle agrees in number with its subject","example":"Say the doors have been opened. Use открыть: Двери ___.","answer":"открыты","explanation":"Двери is plural, so the short participle of открыть takes the plural ending -ы."} -->
+
+<!-- grammar-card: {"id":"painted-by-daughter","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Examples","rule":"The agent of a passive is in the instrumental","example":"Say this painting was done by your daughter. Use моя дочь: Эта картина нарисована ___.","answer":"моей дочерью","explanation":"The person who did the action is the agent, and a Russian passive puts the agent in the instrumental, with no preposition: моей дочерью."} -->
+
+<!-- grammar-card: {"id":"rule-agent-instrumental","kind":"concept","format":"qa","priority":"essential","sourceSection":"Examples","rule":"The agent of a passive takes the instrumental with no preposition","example":"In a Russian passive such as The book was written by Tolstoy, how is the by-phrase expressed?","answer":"With the instrumental case, no preposition.","explanation":"Any answer naming the instrumental counts. Russian has no word for by here: the case ending alone marks the agent, as in написана Толстым."} -->
 
 ---
 
@@ -58,7 +66,9 @@ The reflexive suffix **-ся/-сь** can give an imperfective verb a passive mea
 
 > The **-ся passive** is used mostly with **imperfective** verbs for ongoing or repeated actions. The agent is usually **not mentioned**.
 
-<!-- grammar-card: {"rule":"An ongoing passive is expressed with a -ся verb","hint":"строить + ся","example":"Дом ___ уже год.","answer":"строится","explanation":"Строится presents the building as happening to the house, with no need to name who is doing it."} -->
+<!-- grammar-card: {"id":"house-being-built","kind":"rule","format":"cloze","priority":"essential","sourceSection":"2. Passive with Reflexive Verbs (-ся)","rule":"An ongoing passive is expressed with a -ся verb","example":"Say the house has been under construction for a year now. Use строить: Дом ___ уже год.","answer":"строится","explanation":"The building is still going on, so the imperfective строить takes -ся for a passive meaning, with no need to name who is doing it.","legacyAliases":[{"rule":"An ongoing passive is expressed with a -ся verb","example":"Дом ___ уже год."}]} -->
+
+<!-- grammar-card: {"id":"rule-sya-passive","kind":"concept","format":"qa","priority":"optional","sourceSection":"2. Passive with Reflexive Verbs (-ся)","rule":"The -ся passive uses imperfective verbs for ongoing or repeated actions","example":"Which aspect does a -ся passive usually use, and for what kind of action?","answer":"Imperfective, for ongoing or repeated actions.","explanation":"Any answer pairing the imperfective with ongoing or habitual actions counts. Журнал издаётся в Москве describes a regular process; a finished result would use a short participle instead."} -->
 
 ---
 
@@ -76,6 +86,8 @@ Impersonal sentences have **no grammatical subject** in the nominative case. The
 | Necessity | Нужно работать. *(Núzhno rabótat.)* | It's necessary to work. |
 | Possibility | Можно войти? *(Mózhno voytí?)* | May I come in? |
 | Prohibition | Нельзя курить. *(Nelzyá kurít.)* | Smoking is not allowed. |
+
+<!-- vocab-card: {"id":"vocab-svetat","word":"света́ть","meaning":"to get light, to dawn","priority":"optional","sourceSection":"Types of impersonal sentences"} -->
 
 ---
 
@@ -107,9 +119,11 @@ The **dative case** identifies the person experiencing the state:
 
 **Мне всё равно.** *(Mne vsyo ravnó.)* — I don't care. (It's all the same to me.)
 
+<!-- vocab-card: {"id":"vocab-vsyo-ravno","word":"всё равно́","meaning":"all the same; it makes no difference","priority":"optional","sourceSection":"Emotional and mental states"} -->
+
 <!-- quiz:{"type":"multiple-choice","question":"'Мне холодно' — what case is 'мне' in?","options":["Nominative","Accusative","Genitive","Dative"],"answer":3} -->
 
-<!-- grammar-card: {"rule":"An impersonal state puts the person experiencing it in the dative","hint":"я → ?","example":"___ холодно.","answer":"Мне","explanation":"The sentence has no subject at all, so the one feeling cold appears in the dative: мне холодно."} -->
+<!-- grammar-card: {"id":"i-am-cold","kind":"rule","format":"cloze","priority":"essential","sourceSection":"4. Impersonal Sentences with Dative + Adverb/Short Adjective","rule":"An impersonal state puts the person experiencing it in the dative","example":"Say you are cold. Use я (I): ___ холодно.","answer":"Мне","explanation":"The sentence has no subject at all, so the person feeling cold appears in the dative: я becomes мне.","legacyAliases":[{"rule":"An impersonal state puts the person experiencing it in the dative","example":"___ холодно."}]} -->
 
 ---
 
@@ -124,6 +138,8 @@ The **dative case** identifies the person experiencing the state:
 **Здесь нельзя парковаться.** *(Zdes nelzyá parkovát'sya.)* — You can't park here.
 
 **Можно мне выйти?** *(Mózhno mne výyti?)* — May I go out?
+
+<!-- grammar-card: {"id":"no-parking","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Можно / нельзя — permission and prohibition","rule":"Нельзя plus an infinitive forbids an action","example":"Warn a driver that parking here is not allowed: Здесь ___ парковаться.","answer":"нельзя","explanation":"Prohibition is the impersonal нельзя plus an infinitive; можно would grant permission instead."} -->
 
 ### Нужно / надо / необходимо — necessity
 
@@ -198,6 +214,12 @@ Russian frequently uses the **third-person plural without они** to express an
 **В газете написали, что...** *(V gazéte napisáli, chto...)* — It was written in the newspaper that...
 
 > This is one of the **most natural** ways to express passive meaning in spoken Russian.
+
+<!-- grammar-card: {"id":"he-was-invited","kind":"rule","format":"cloze","priority":"essential","sourceSection":"8. The \"Third-Person Plural\" Passive (Indefinite Subject)","rule":"A third-person plural verb without они gives a passive meaning","example":"In natural spoken Russian, say he was invited to the party. Use пригласить: Его ___ на вечеринку.","answer":"пригласили","explanation":"Spoken Russian expresses he was invited with a third-person plural verb and no они: someone invited him. Он stays the object, in the accusative его."} -->
+
+<!-- grammar-card: {"id":"who-speaks-russian","kind":"rule","format":"qa","priority":"optional","sourceSection":"8. The \"Third-Person Plural\" Passive (Indefinite Subject)","rule":"The indefinite third-person plural refers to no particular people","example":"Здесь говорят по-русски. Who is it that speaks Russian here?","answer":"People in general; nobody in particular is meant.","explanation":"The third-person plural without они has an indefinite subject, so the sentence means Russian is spoken here."} -->
+
+<!-- grammar-card: {"id":"rule-third-plural","kind":"concept","format":"qa","priority":"essential","sourceSection":"8. The \"Third-Person Plural\" Passive (Indefinite Subject)","rule":"Spoken Russian expresses an unknown agent with a third-person plural verb","example":"How does spoken Russian usually express a passive like He was invited, without naming who did it?","answer":"With a third-person plural verb and no они.","explanation":"Any answer naming the third-person plural without a subject counts. Его пригласили literally says they invited him, which is how spoken Russian avoids a participle."} -->
 
 ---
 
