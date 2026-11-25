@@ -28,7 +28,7 @@ To identify: look at the kana before る. If it sits in the い-row or え-row o
 
 Conjugation only involves one step: drop る and add the new ending. Simple!
 
-<!-- grammar-card: {"id":"ichidan-polite","kind":"rule","format":"cloze","priority":"essential","sourceSection":"る-Verbs (Ichidan / One-Row Verbs)","rule":"Ichidan verbs simply drop る","hint":"食べる, polite","example":"毎日(まいにち)朝(あさ)ごはんを食(た)べ___。","answer":"ます","explanation":"食べる drops る and adds ます, with no sound change at all."} -->
+<!-- grammar-card: {"id":"ichidan-polite","kind":"rule","format":"cloze","priority":"essential","sourceSection":"る-Verbs (Ichidan / One-Row Verbs)","rule":"Ichidan verbs simply drop る","example":"Polite: \"I eat breakfast every day.\" 毎日(まいにち)朝(あさ)ごはんを食(た)べ___。","answer":"ます","explanation":"食べる drops る and adds ます, with no sound change at all.","legacyAliases":[{"rule":"Ichidan verbs simply drop る","example":"毎日(まいにち)朝(あさ)ごはんを食(た)べ___。"}]} -->
 
 ## う-Verbs (Godan / Five-Row Verbs)
 
@@ -54,7 +54,7 @@ Conjugation only involves one step: drop る and add the new ending. Simple!
 <!-- vocab-card: {"id":"vocab-oyogu","word":"泳ぐ","reading":"およぐ","meaning":"to swim","priority":"essential","sourceSection":"う-Verbs (Godan / Five-Row Verbs)"} -->
 <!-- vocab-card: {"id":"vocab-asobu","word":"遊ぶ","reading":"あそぶ","meaning":"to play","priority":"optional","sourceSection":"う-Verbs (Godan / Five-Row Verbs)"} -->
 
-<!-- grammar-card: {"id":"godan-polite","kind":"rule","format":"cloze","priority":"essential","sourceSection":"う-Verbs (Godan / Five-Row Verbs)","rule":"Godan verbs shift the final う sound to い before ます","hint":"読む, polite","example":"毎朝(まいあさ)新聞(しんぶん)を読(よ)___。","answer":"みます","explanation":"読む becomes 読みます: the む shifts to み."} -->
+<!-- grammar-card: {"id":"godan-polite","kind":"rule","format":"cloze","priority":"essential","sourceSection":"う-Verbs (Godan / Five-Row Verbs)","rule":"Godan verbs shift the final う sound to い before ます","example":"Polite: \"I read the newspaper every morning.\" 毎朝(まいあさ)新聞(しんぶん)を読(よ)___。","answer":"みます","explanation":"読む becomes 読みます: the む shifts to み.","legacyAliases":[{"rule":"Godan verbs shift the final う sound to い before ます","example":"毎朝(まいあさ)新聞(しんぶん)を読(よ)___。"}]} -->
 
 ## How to Tell Them Apart
 
@@ -72,7 +72,7 @@ First set aside the irregular verbs **する** and **来る**, including compoun
 
 > **The honest truth:** The /i/ and /e/ rule works most of the time, but some common verbs break it. The safest approach is to memorize verb types when you learn new vocabulary.
 
-<!-- grammar-card: {"id":"classification-heuristic","kind":"concept","format":"qa","priority":"essential","sourceSection":"How to Tell Them Apart","rule":"An /i/ or /e/ sound before る is a clue, not proof of ichidan membership","example":"After setting aside する and 来る, does an /i/ or /e/ sound before る guarantee an ichidan verb?","answer":"No. It suggests ichidan, but godan exceptions such as 帰る (かえる) and 走る (はしる) must be learned with their verb type.","explanation":"帰る really does have /e/ before る. It is an exception to the shortcut, not an /a/-vowel verb."} -->
+<!-- grammar-card: {"id":"classification-heuristic","kind":"concept","format":"qa","priority":"essential","sourceSection":"How to Tell Them Apart","rule":"An /i/ or /e/ sound before る is a clue, not proof of ichidan membership","example":"After setting aside する and 来る, what does an /i/ or /e/ sound before る tell you about a verb's class, and what is its limit?","answer":"It suggests ichidan but does not guarantee it; godan exceptions such as 帰る (かえる) and 走る (はしる) must be learned with their verb type.","explanation":"帰る really does have /e/ before る. It is an exception to the shortcut, not an /a/-vowel verb.","legacyAliases":[{"rule":"An /i/ or /e/ sound before る is a clue, not proof of ichidan membership","example":"After setting aside する and 来る, does an /i/ or /e/ sound before る guarantee an ichidan verb?"}]} -->
 <!-- grammar-card: {"id":"non-ru-classification","kind":"concept","format":"qa","priority":"optional","sourceSection":"How to Tell Them Apart","rule":"Ordinary dictionary verbs not ending in る are godan after irregulars are set aside","example":"After setting aside the irregular verbs, how do you classify a dictionary verb that does not end in る?","answer":"As a godan (う-) verb.","explanation":"This is the first branch of the decision guide; /i/ and /e/ matter only for verbs ending in る."} -->
 <!-- grammar-card: {"id":"a-u-o-ru-classification","kind":"concept","format":"qa","priority":"optional","sourceSection":"How to Tell Them Apart","rule":"An /a/, /u/, or /o/ sound before final る identifies a godan verb in this guide","example":"After irregulars are set aside, which class does a final る verb belong to if the preceding vowel is /a/, /u/, or /o/?","answer":"Godan (う-verb).","explanation":"The potentially ichidan branch requires /i/ or /e/, and even that branch has exceptions."} -->
 
@@ -98,7 +98,7 @@ These must be memorized, but the list of common exceptions is small and you will
 
 <!-- quiz:{"type":"multiple-choice","question":"The verb 飲む (nomu — to drink) is what type of verb?","options":["る-verb (ichidan)","う-verb (godan)","Irregular","な-adjective"],"answer":1} -->
 
-<!-- grammar-card: {"id":"kaeru-godan-polite","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Watch Out: Trick Verbs","rule":"Some verbs ending in る are godan despite appearances","hint":"帰る, polite","example":"毎日(まいにち)六時(ろくじ)に家(いえ)に___。","answer":"帰(かえ)ります","explanation":"帰る looks ichidan but conjugates as godan, giving 帰ります rather than 帰ます."} -->
+<!-- grammar-card: {"id":"kaeru-godan-polite","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Watch Out: Trick Verbs","rule":"Some verbs ending in る are godan despite appearances","example":"帰る (かえる, to return home), polite: \"I return home at six every day.\" 毎日(まいにち)六時(ろくじ)に家(いえ)に___。","answer":"帰(かえ)ります","explanation":"帰る looks ichidan but conjugates as godan, giving 帰ります rather than 帰ます.","legacyAliases":[{"rule":"Some verbs ending in る are godan despite appearances","example":"毎日(まいにち)六時(ろくじ)に家(いえ)に___。"}]} -->
 
 <!-- grammar-card: {"id":"hashiru-godan-classification","kind":"rule","format":"qa","priority":"optional","sourceSection":"Watch Out: Trick Verbs","rule":"走る is a godan exception to the /i/ + る shortcut","example":"Classify 走る (はしる, to run): ichidan, godan, or irregular?","answer":"Godan (う-verb).","explanation":"The /i/ sound before る does not make 走る ichidan. Learn its type with its meaning."} -->
 <!-- grammar-card: {"id":"kiru-godan-classification","kind":"rule","format":"qa","priority":"optional","sourceSection":"Watch Out: Trick Verbs","rule":"切る is godan despite its /i/ + る ending","example":"Which verb class does 切る (きる, to cut) belong to?","answer":"Godan (う-verb).","explanation":"The verb meaning to cut is one of the listed exceptions; its spelling and meaning matter."} -->
@@ -139,7 +139,7 @@ All する-compound verbs conjugate the same way — only the する part change
 
 <!-- quiz:{"type":"multiple-choice","question":"The verb 走る (hashiru — to run) looks like a る-verb but is actually a:","options":["る-verb","う-verb","Irregular verb","Not a verb"],"answer":1} -->
 
-<!-- grammar-card: {"id":"kuru-polite","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Irregular Verbs","rule":"来る is irregular and changes its reading when it conjugates","hint":"来る, polite","example":"明日(あした)、友達(ともだち)が___。","answer":"来(き)ます","explanation":"来る is read きます in the polite form, not こます or くます."} -->
+<!-- grammar-card: {"id":"kuru-polite","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Irregular Verbs","rule":"来る is irregular and changes its reading when it conjugates","example":"来る (くる, to come), polite: \"My friend is coming tomorrow.\" 明日(あした)、友達(ともだち)が___。","answer":"来(き)ます","explanation":"来る is read きます in the polite form, not こます or くます.","legacyAliases":[{"rule":"来る is irregular and changes its reading when it conjugates","example":"明日(あした)、友達(ともだち)が___。"}]} -->
 
 ## Quick Reference
 

@@ -53,9 +53,11 @@ The polite volitional replaces ます with **ましょう**:
 
 <!-- quiz:{"type":"multiple-choice","question":"What is the volitional form of 泳ぐ (to swim)?","options":["泳ごう","泳ぐよう","泳がよう","泳ぎよう"],"answer":0} -->
 
-<!-- grammar-card: {"id":"ichidan-volitional","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Group 2 (ru-verbs)","rule":"Ichidan verbs drop る and add よう","hint":"見る, plain volitional","example":"一緒(いっしょ)に映画(えいが)を見(み)___。","answer":"よう","explanation":"見る becomes 見よう (みよう), inviting someone to watch together."} -->
-<!-- grammar-card: {"id":"godan-volitional","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Group 1 (u-verbs)","rule":"Godan volitionals use the o-row sound followed by う","example":"Let's swim: 泳ぐ → ___。","answer":"泳ごう","explanation":"泳ごう (およごう) changes ぐ to ごう, not ぎよう."} -->
-<!-- grammar-card: {"id":"suru-volitional","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Group 3 (Irregular)","rule":"する has an irregular volitional","example":"Let's do it: する → ___。","answer":"しよう","explanation":"The irregular volitional is しよう, including in する compounds such as 勉強しよう."} -->
+<!-- grammar-card: {"id":"ichidan-volitional","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Group 2 (ru-verbs)","rule":"Ichidan verbs drop る and add よう","hint":"見る, plain volitional","example":"Let's watch a movie together (casual, plain volitional): 一緒(いっしょ)に映画(えいが)を見(み)___。","answer":"よう","explanation":"見る becomes 見よう (みよう), inviting someone to watch together.","legacyAliases":[{"rule":"Ichidan verbs drop る and add よう","example":"一緒(いっしょ)に映画(えいが)を見(み)___。"}]} -->
+<!-- grammar-card: {"id":"rule-ichidan-volitional-formation","kind":"concept","format":"qa","priority":"essential","sourceSection":"Group 2 (ru-verbs)","rule":"Ichidan verbs drop る and add よう","example":"How does an ichidan (ru-)verb form its plain volitional?","answer":"Drop the final る and add よう.","explanation":"食べる → 食べよう, 起きる → 起きよう."} -->
+<!-- grammar-card: {"id":"godan-volitional","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Group 1 (u-verbs)","rule":"Godan volitionals use the o-row sound followed by う","example":"Let's swim (casual, plain volitional): 泳ぐ → ___。","answer":"泳ごう","explanation":"泳ごう (およごう) changes ぐ to ごう, not ぎよう.","legacyAliases":[{"rule":"Godan volitionals use the o-row sound followed by う","example":"Let's swim: 泳ぐ → ___。"}]} -->
+<!-- grammar-card: {"id":"rule-godan-volitional-formation","kind":"concept","format":"qa","priority":"essential","sourceSection":"Group 1 (u-verbs)","rule":"Godan verbs change the final u-sound to the o-row and add う","example":"How does a godan (u-)verb form its plain volitional?","answer":"Change the final u-sound to its o-row sound and add う.","explanation":"Any wording of u → ō counts: 書く → 書こう, 待つ → 待とう, 買う → 買おう."} -->
+<!-- grammar-card: {"id":"suru-volitional","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Group 3 (Irregular)","rule":"する has an irregular volitional","example":"Let's do it (casual, plain volitional): する → ___。","answer":"しよう","explanation":"The irregular volitional is しよう, including in する compounds such as 勉強しよう.","legacyAliases":[{"rule":"する has an irregular volitional","example":"Let's do it: する → ___。"}]} -->
 <!-- grammar-card: {"id":"kuru-volitional","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Group 3 (Irregular)","rule":"来る has an irregular volitional with the reading こ","example":"Come here again together: 来る → ___。 (plain volitional)","answer":"来よう","explanation":"来よう is read こよう, not くよう or きよう."} -->
 
 ## Usage 1: "Let's ~" (Invitation / Suggestion)
@@ -78,7 +80,8 @@ The most common use — inviting someone to do something together:
 > *Kyou wa nani wo shiyou?*
 > What shall we do today?
 
-<!-- grammar-card: {"id":"polite-volitional","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Usage 1: \"Let's ~\" (Invitation / Suggestion)","rule":"ましょう is the polite volitional","hint":"帰る, polite volitional","example":"そろそろ帰(かえ)り___。","answer":"ましょう","explanation":"帰りましょう politely proposes going home; replace ます with ましょう."} -->
+<!-- grammar-card: {"id":"polite-volitional","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Usage 1: \"Let's ~\" (Invitation / Suggestion)","rule":"ましょう is the polite volitional","hint":"帰る, polite volitional","example":"Let's head home soon (polite volitional, 帰る): そろそろ帰(かえ)り___。","answer":"ましょう","explanation":"帰りましょう politely proposes going home; replace ます with ましょう.","legacyAliases":[{"rule":"ましょう is the polite volitional","example":"そろそろ帰(かえ)り___。"}]} -->
+<!-- grammar-card: {"id":"rule-polite-volitional-formation","kind":"concept","format":"qa","priority":"optional","sourceSection":"Polite form: 〜ましょう","rule":"The polite volitional replaces ます with ましょう","example":"How do you turn a polite ます form into the polite volitional?","answer":"Replace ます with ましょう.","explanation":"行きます → 行きましょう; します → しましょう."} -->
 
 ## Usage 2: Personal Intention ("I think I'll ~")
 
@@ -96,7 +99,7 @@ When speaking to yourself or expressing a personal decision:
 > *Mou sukoshi ganbarou.*
 > I'll try a bit harder.
 
-<!-- grammar-card: {"id":"volitional-intention-invitation","kind":"concept","format":"qa","priority":"essential","sourceSection":"Usage 2: Personal Intention (\"I think I'll ~\")","rule":"A bare volitional can express an individual decision or a joint invitation","example":"Does 今日は早く寝よう necessarily invite another person to sleep?","answer":"No. It can express the speaker's own decision to go to bed early.","explanation":"Context determines whether the volitional means I'll do it or let's do it."} -->
+<!-- grammar-card: {"id":"volitional-intention-invitation","kind":"concept","format":"qa","priority":"essential","sourceSection":"Usage 2: Personal Intention (\"I think I'll ~\")","rule":"A bare volitional can express an individual decision or a joint invitation","example":"Besides 'let's ~', what else can a bare volitional such as 今日は早く寝よう express, and what decides the reading?","answer":"The speaker's own decision (I think I'll ~); context decides whether it is that or an invitation.","explanation":"Context determines whether the volitional means I'll do it or let's do it.","legacyAliases":[{"rule":"A bare volitional can express an individual decision or a joint invitation","example":"Does 今日は早く寝よう necessarily invite another person to sleep?"}]} -->
 <!-- quiz:{"type":"multiple-choice","question":"'一緒に食べましょう' means:","options":["I will eat alone","Please eat","Let's eat together","You should eat"],"answer":2} -->
 
 ## Usage 3: 〜ようと思(おも)う (I'm thinking of ~)
@@ -115,7 +118,7 @@ Combining the volitional with **と思(おも)う** expresses a plan or intentio
 - **〜ようと思う** = I'm thinking (just now deciding)
 - **〜ようと思っている** = I've been thinking / I intend to (ongoing plan)
 
-<!-- grammar-card: {"id":"volitional-plan","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Usage 3: 〜ようと思(おも)う (I'm thinking of ~)","rule":"The volitional plus と思う states a plan","hint":"Express I think, politely.","example":"来年(らいねん)日本(にほん)へ行(い)こう___。","answer":"と思います","explanation":"行こうと思います states an intention to go; the volitional precedes the quotation particle と."} -->
+<!-- grammar-card: {"id":"volitional-plan","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Usage 3: 〜ようと思(おも)う (I'm thinking of ~)","rule":"The volitional plus と思う states a plan","hint":"Express I think, politely.","example":"Politely: 'I'm thinking of going to Japan next year': 来年(らいねん)日本(にほん)へ行(い)こう___。","answer":"と思います","explanation":"行こうと思います states an intention to go; the volitional precedes the quotation particle と. と思っています (an intention already held) also fits.","legacyAliases":[{"rule":"The volitional plus と思う states a plan","example":"来年(らいねん)日本(にほん)へ行(い)こう___。"}]} -->
 <!-- grammar-card: {"id":"plan-ongoing-contrast","kind":"concept","format":"qa","priority":"optional","sourceSection":"Usage 3: 〜ようと思(おも)う (I'm thinking of ~)","rule":"と思っている presents an intention as ongoing","example":"What does 行こうと思っている emphasize compared with 行こうと思う?","answer":"An intention or plan already being held, rather than just presenting a current thought or decision.","explanation":"The contrast is one of viewpoint and ongoing intention, not a rigid rule that 思う must always be a brand-new decision."} -->
 
 ## Usage 4: 〜ようとする (To try / be about to)
@@ -136,7 +139,8 @@ The volitional + **とする** means "to try to" or "to be about to":
 
 <!-- quiz:{"type":"multiple-choice","question":"'日本語を勉強しようと思っている' means:","options":["I studied Japanese","I'm thinking of studying Japanese","I tried to study Japanese","I should study Japanese"],"answer":1} -->
 
-<!-- grammar-card: {"id":"about-to-leave","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Usage 4: 〜ようとする (To try / be about to)","rule":"ようとする means being on the point of doing something","hint":"出かける, volitional + とする in the past","example":"出(で)かけ___時(とき)、電話(でんわ)が鳴(な)った。","answer":"ようとした","explanation":"出かけようとした時 describes being about to leave when the phone rang; the construction can also describe an attempt."} -->
+<!-- grammar-card: {"id":"about-to-leave","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Usage 4: 〜ようとする (To try / be about to)","rule":"ようとする means being on the point of doing something","hint":"出かける, volitional + とする in the past","example":"Just as I was about to leave, the phone rang (出かける): 出(で)かけ___時(とき)、電話(でんわ)が鳴(な)った。","answer":"ようとした","explanation":"出かけようとした時 describes being about to leave when the phone rang; the construction can also describe an attempt.","legacyAliases":[{"rule":"ようとする means being on the point of doing something","example":"出(で)かけ___時(とき)、電話(でんわ)が鳴(な)った。"}]} -->
+<!-- grammar-card: {"id":"rule-youtosuru-meaning","kind":"concept","format":"qa","priority":"optional","sourceSection":"Usage 4: 〜ようとする (To try / be about to)","rule":"Volitional + とする means trying to do something or being about to do it","example":"What two meanings can the volitional + とする express?","answer":"Trying to do something, or being just about to do it.","explanation":"Both are needed. 開けようとした = tried to open; 出かけようとした時 = just as I was about to leave."} -->
 
 ## Usage 5: 〜ようか (Offering help)
 

@@ -16,8 +16,8 @@ Japanese has many ways to connect sentences and clauses. This lesson covers the 
 
 > 💡 が can also be used as a soft introduction, not necessarily meaning "but": 山田ですが、田中さんはいらっしゃいますか。— This is Yamada; is Tanaka available?
 
-<!-- grammar-card: {"id":"ga-contrast","kind":"rule","format":"cloze","priority":"essential","sourceSection":"が — \"But\" (Polite Contrast)","rule":"が joins two clauses with a mild 'but'","hint":"Use the mild contrast connector","example":"日本語は難(むずか)しいです___、楽(たの)しいです。","answer":"が","explanation":"が can follow polite です and connect the contrasting descriptions difficult and fun."} -->
-<!-- grammar-card: {"id":"ga-soft-introduction","kind":"concept","format":"qa","priority":"optional","sourceSection":"が — \"But\" (Polite Contrast)","rule":"Clause-linking が can introduce a request or background without a literal contrast","example":"In 山田ですが、田中さんはいらっしゃいますか, does が require “but” as a contradictory meaning?","answer":"No. It softly introduces the caller before a request to speak to Tanaka.","explanation":"Not every が-linked clause is an opposition; here が supplies conversational background."} -->
+<!-- grammar-card: {"id":"ga-contrast","kind":"rule","format":"cloze","priority":"essential","sourceSection":"が — \"But\" (Polite Contrast)","rule":"が joins two clauses with a mild 'but'","hint":"Use the mild contrast connector","example":"Japanese is difficult, but fun (polite, mild “but”): 日本語は難(むずか)しいです___、楽(たの)しいです。","answer":"が","explanation":"が can follow polite です and connect the contrasting descriptions difficult and fun. けど also means but, but is more casual.","legacyAliases":[{"rule":"が joins two clauses with a mild 'but'","example":"日本語は難(むずか)しいです___、楽(たの)しいです。"}]} -->
+<!-- grammar-card: {"id":"ga-soft-introduction","kind":"rule","format":"qa","priority":"optional","sourceSection":"が — \"But\" (Polite Contrast)","rule":"Clause-linking が can introduce a request or background without a literal contrast","example":"In 山田ですが、田中さんはいらっしゃいますか, does が require “but” as a contradictory meaning?","answer":"No. It softly introduces the caller before a request to speak to Tanaka.","explanation":"Not every が-linked clause is an opposition; here が supplies conversational background."} -->
 
 ## けど / けれど / けれども — "But" (Casual to Formal)
 
@@ -50,7 +50,7 @@ These are variants of the same conjunction, ranging from casual to formal:
 - **暑(あつ)いから、窓(まど)を開(あ)けてもいいですか。** — Because it's hot, may I open the window?
 - **時間がないから、急(いそ)ぎましょう。** — We don't have time, so let's hurry.
 
-<!-- grammar-card: {"id":"kara-reason","kind":"rule","format":"cloze","priority":"essential","sourceSection":"から — \"Because\" (Subjective Reason)","rule":"から gives the speaker's own reason","hint":"Give a direct personal reason","example":"お腹(なか)が空(す)いた___、何か食(た)べたいです。","answer":"から","explanation":"から directly gives hunger as the reason. ので is not impossible; the lesson contrasts typical tone, not mutually exclusive facts."} -->
+<!-- grammar-card: {"id":"kara-reason","kind":"rule","format":"cloze","priority":"essential","sourceSection":"から — \"Because\" (Subjective Reason)","rule":"から gives the speaker's own reason","hint":"Give a direct personal reason","example":"I'm hungry, so I want to eat something (direct personal reason): お腹(なか)が空(す)いた___、何か食(た)べたいです。","answer":"から","explanation":"から directly gives hunger as the reason. ので is not impossible; the lesson contrasts typical tone, not mutually exclusive facts.","legacyAliases":[{"rule":"から gives the speaker's own reason","example":"お腹(なか)が空(す)いた___、何か食(た)べたいです。"}]} -->
 
 ## ので — "Because" (Objective/Polite Reason)
 
@@ -75,8 +75,9 @@ These are variants of the same conjunction, ranging from casual to formal:
 
 <!-- quiz:{"type":"multiple-choice","question":"Which reason-giving conjunction sounds more polite and objective?","options":["から","ので","けど","のに"],"answer":1} -->
 
-<!-- grammar-card: {"id":"node-reason","kind":"rule","format":"cloze","priority":"essential","sourceSection":"ので — \"Because\" (Objective/Polite Reason)","rule":"ので presents the reason as an objective circumstance","hint":"Present the cause as a softer circumstance","example":"電車が遅(おく)れた___、遅刻(ちこく)しました。","answer":"ので","explanation":"ので gives a softer circumstantial explanation. This is a presentation choice, not proof the cause is objectively true."} -->
+<!-- grammar-card: {"id":"node-reason","kind":"rule","format":"cloze","priority":"essential","sourceSection":"ので — \"Because\" (Objective/Polite Reason)","rule":"ので presents the reason as an objective circumstance","hint":"Present the cause as a softer circumstance","example":"The train was late, so I was late (softer, circumstantial reason): 電車が遅(おく)れた___、遅刻(ちこく)しました。","answer":"ので","explanation":"ので gives a softer circumstantial explanation. This is a presentation choice, not proof the cause is objectively true.","legacyAliases":[{"rule":"ので presents the reason as an objective circumstance","example":"電車が遅(おく)れた___、遅刻(ちこく)しました。"}]} -->
 <!-- grammar-card: {"id":"nominal-node","kind":"rule","format":"cloze","priority":"essential","sourceSection":"ので — \"Because\" (Objective/Polite Reason)","rule":"Nouns and な-adjectives use な before ので","example":"Because I am a student: 学生___ので、割引があります。","answer":"な","explanation":"Use 学生なので and 静かなので, not 学生だので."} -->
+<!-- grammar-card: {"id":"rule-nominal-node","kind":"concept","format":"qa","priority":"optional","sourceSection":"ので — \"Because\" (Objective/Polite Reason)","rule":"Nouns and な-adjectives take な before ので","example":"How does a noun such as 学生 connect to the softer “because” connector?","answer":"With な: 学生なので (not 学生だので); な-adjectives likewise: 静かなので.","explanation":"Saying な counts."} -->
 <!-- grammar-card: {"id":"kara-node-contrast","kind":"concept","format":"qa","priority":"essential","sourceSection":"から vs ので","rule":"から and ので differ in typical tone rather than cause versus non-cause","example":"How does 疲れたので、帰ります typically sound compared with 疲れたから、帰ります?","answer":"ので sounds softer and more circumstantial; から gives the speaker's reason more directly.","explanation":"Both express because and can be used politely. The contrast is a tendency, not a prohibition on subjective circumstances with ので."} -->
 
 ## のに — "Even Though / Despite"
@@ -92,6 +93,7 @@ These are variants of the same conjunction, ranging from casual to formal:
 > 💡 のに carries an emotional tone — the speaker feels dissatisfied or surprised.
 
 <!-- grammar-card: {"id":"noni-expectation","kind":"rule","format":"cloze","priority":"essential","sourceSection":"のに — \"Even Though / Despite\"","rule":"のに marks a result contrary to expectation","example":"Even though I studied a lot, I failed: たくさん勉強した___、テストに落ちました。","answer":"のに","explanation":"The speaker expected studying to help and expresses surprise or disappointment at the contrary result."} -->
+<!-- grammar-card: {"id":"rule-noni-tone","kind":"concept","format":"qa","priority":"essential","sourceSection":"のに — \"Even Though / Despite\"","rule":"のに expresses a result contrary to expectation, with dissatisfaction or surprise","example":"Which connector means “even though” and carries the speaker's dissatisfaction or surprise at an unexpected result?","answer":"のに (e.g. 勉強したのに、落ちました).","explanation":"Naming のに counts. ても is the neutral “even if”."} -->
 
 ## ても — "Even If / Even Though"
 
@@ -129,6 +131,7 @@ These are variants of the same conjunction, ranging from casual to formal:
 - **天気もいいし、暖(あたた)かいし、散歩(さんぽ)しましょう。** — The weather's nice and warm, so let's take a walk.
 
 <!-- grammar-card: {"id":"shi-reasons","kind":"rule","format":"cloze","priority":"essential","sourceSection":"し — \"And What's More / And Also\"","rule":"し lists supporting qualities or reasons","example":"This shop is cheap and delicious: この店は安い___、おいしいし、最高です。","answer":"し","explanation":"Repeated し accumulates reasons for the positive judgment rather than contrasting the qualities."} -->
+<!-- grammar-card: {"id":"rule-shi-function","kind":"concept","format":"qa","priority":"optional","sourceSection":"し — \"And What's More / And Also\"","rule":"Clause-final し accumulates supporting reasons or qualities","example":"What does clause-final し do when repeated, as in 安いし、おいしいし?","answer":"It lists accumulating reasons or qualities (“and what's more”), usually supporting a conclusion.","explanation":"Any answer about listing or piling up reasons counts; it does not contrast them."} -->
 
 ## それに / そのうえ — "Moreover / Furthermore"
 
@@ -150,7 +153,7 @@ Connects a reason to a conclusion:
 
 <!-- vocab-card: {"id":"vocab-dakara","word":"だから","reading":"だから","meaning":"so; therefore","priority":"optional","sourceSection":"だから / ですから — \"Therefore / So\""} -->
 <!-- vocab-card: {"id":"vocab-desukara","word":"ですから","reading":"ですから","meaning":"therefore; so (polite)","priority":"optional","sourceSection":"だから / ですから — \"Therefore / So\""} -->
-<!-- grammar-card: {"id":"sentence-conclusion","kind":"concept","format":"qa","priority":"essential","sourceSection":"だから / ですから — \"Therefore / So\"","rule":"だから introduces a conclusion from a preceding reason","example":"In 明日テストがあります。だから、今日は勉強します, which sentence is the reason and which is the consequence?","answer":"Tomorrow's test is the reason; studying today is the consequence introduced by だから.","explanation":"This connects complete sentences, unlike clause-final から in テストがあるから勉強します."} -->
+<!-- grammar-card: {"id":"sentence-conclusion","kind":"rule","format":"qa","priority":"essential","sourceSection":"だから / ですから — \"Therefore / So\"","rule":"だから introduces a conclusion from a preceding reason","example":"In 明日テストがあります。だから、今日は勉強します, which sentence is the reason and which is the consequence?","answer":"Tomorrow's test is the reason; studying today is the consequence introduced by だから.","explanation":"This connects complete sentences, unlike clause-final から in テストがあるから勉強します."} -->
 
 ## でも / しかし — "However / But"
 
@@ -161,7 +164,7 @@ Start a new sentence with a contrast:
 
 <!-- vocab-card: {"id":"vocab-demo","word":"でも","reading":"でも","meaning":"but; however (sentence-initial, conversational)","priority":"optional","sourceSection":"でも / しかし — \"However / But\""} -->
 <!-- vocab-card: {"id":"vocab-shikashi","word":"しかし","reading":"しかし","meaning":"however; but (more formal)","priority":"optional","sourceSection":"でも / しかし — \"However / But\""} -->
-<!-- grammar-card: {"id":"sentence-contrast-register","kind":"concept","format":"qa","priority":"optional","sourceSection":"でも / しかし — \"However / But\"","rule":"でも and しかし start contrasting sentences with different register tendencies","example":"Which sentence-initial “however” is more suited to formal writing, でも or しかし?","answer":"しかし; でも is more conversational.","explanation":"Both contrast complete sentences. This use of でも differs from noun + でも meaning even a noun."} -->
+<!-- grammar-card: {"id":"sentence-contrast-register","kind":"rule","format":"qa","priority":"optional","sourceSection":"でも / しかし — \"However / But\"","rule":"でも and しかし start contrasting sentences with different register tendencies","example":"Which sentence-initial “however” is more suited to formal writing, でも or しかし?","answer":"しかし; でも is more conversational.","explanation":"Both contrast complete sentences. This use of でも differs from noun + でも meaning even a noun."} -->
 <!-- quiz:{"type":"multiple-choice","question":"Which conjunction lists multiple reasons ('cheap AND delicious AND...')?","options":["ので","のに","し","ても"],"answer":2} -->
 
 ## Summary

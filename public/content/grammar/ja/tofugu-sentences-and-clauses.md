@@ -10,7 +10,7 @@ Understanding clauses is key to breaking down and constructing Japanese sentence
 
 <!-- vocab-card: {"id":"vocab-kuru","priority":"optional","sourceSection":"Simple Sentences","word":"来る","reading":"くる","meaning":"to come"} -->
 <!-- vocab-card: {"id":"vocab-akarui","priority":"optional","sourceSection":"Simple Sentences","word":"明るい","reading":"あかるい","meaning":"bright; light"} -->
-<!-- grammar-card: {"id":"subject-omission","kind":"concept","format":"qa","priority":"essential","sourceSection":"Simple Sentences","rule":"A recoverable subject can be left unspoken","example":"Does 来る fail as a Japanese clause just because no subject is explicitly written?","answer":"No. The predicate can form a clause when the subject is understood from context.","explanation":"The subject's referent can still be understood even though its noun phrase is omitted."} -->
+<!-- grammar-card: {"id":"subject-omission","kind":"concept","format":"qa","priority":"essential","sourceSection":"Simple Sentences","rule":"A recoverable subject can be left unspoken","example":"Why can 来る by itself form a complete Japanese clause even though no subject is written?","answer":"A subject that is understood from context can be left unspoken; the predicate alone forms the clause.","explanation":"The subject's referent can still be understood even though its noun phrase is omitted.","legacyAliases":[{"rule":"A recoverable subject can be left unspoken","example":"Does 来る fail as a Japanese clause just because no subject is explicitly written?"}]} -->
 
 A simple sentence contains one clause. Every clause has a "thing" and "info about that thing":
 
@@ -40,7 +40,7 @@ The predicate is the only **essential** element of a Japanese clause. It can be:
 These dress up the predicate with additional information:
 
 ### Object (を)
-<!-- grammar-card: {"id":"object-marker","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Object (を)","rule":"を marks the object of making","example":"お寿司___作る。","answer":"を","explanation":"お寿司 is the thing made, so it is the direct object."} -->
+<!-- grammar-card: {"id":"object-marker","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Object (を)","rule":"を marks the object of making","example":"(Someone) makes sushi: お寿司___作る。","answer":"を","explanation":"お寿司 is the thing made, so it is the direct object.","legacyAliases":[{"rule":"を marks the object of making","example":"お寿司___作る。"}]} -->
 - **お寿司を**作る。 — Make sushi.
 
 ### Subject (が)
@@ -48,21 +48,22 @@ These dress up the predicate with additional information:
 - **お父さんが**お寿司を作る。 — My father makes sushi.
 
 ### Topic (は)
-<!-- grammar-card: {"id":"topic-not-subject","kind":"concept","format":"qa","priority":"essential","sourceSection":"Topic (は)","rule":"The topic can frame the sentence without naming the actor","example":"In 毎週日曜日はお父さんがお寿司を作る, is 毎週日曜日 the person making sushi?","answer":"No. It sets every Sunday as the topic or time frame; お父さん is the subject who makes sushi.","explanation":"Topic and grammatical subject are different roles."} -->
+<!-- grammar-card: {"id":"topic-not-subject","kind":"rule","format":"qa","priority":"essential","sourceSection":"Topic (は)","rule":"The topic can frame the sentence without naming the actor","example":"In 毎週日曜日はお父さんがお寿司を作る, what roles do 毎週日曜日 and お父さん each play?","answer":"毎週日曜日 is the topic or time frame (every Sunday); お父さん is the subject who makes sushi.","explanation":"Topic and grammatical subject are different roles.","legacyAliases":[{"rule":"The topic can frame the sentence without naming the actor","example":"In 毎週日曜日はお父さんがお寿司を作る, is 毎週日曜日 the person making sushi?"}]} -->
 - **毎週日曜日は**お父さんがお寿司を作る。 — Every Sunday, my father makes sushi.
 
 ### Adverbials (に, で, etc.)
 <!-- vocab-card: {"id":"vocab-daidokoro","priority":"optional","sourceSection":"Adverbials (に, で, etc.)","word":"台所","reading":"だいどころ","meaning":"kitchen"} -->
-<!-- grammar-card: {"id":"adverbial-setting","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Adverbials (に, で, etc.)","rule":"で adds the location of an action","example":"お父さんが台所___お寿司を作る。","answer":"で","explanation":"The kitchen is the action's setting, an additional clause element rather than the predicate."} -->
+<!-- grammar-card: {"id":"adverbial-setting","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Adverbials (に, で, etc.)","rule":"で adds the location of an action","example":"Dad makes sushi in the kitchen: お父さんが台所___お寿司を作る。","answer":"で","explanation":"The kitchen is the action's setting, an additional clause element rather than the predicate.","legacyAliases":[{"rule":"で adds the location of an action","example":"お父さんが台所___お寿司を作る。"}]} -->
 - 毎週日曜日はお父さんが**台所で**お寿司を作る。 — Every Sunday, my father makes sushi **in the kitchen**.
 
 ### Sentence Final Particles
-<!-- grammar-card: {"id":"final-no","kind":"concept","format":"qa","priority":"optional","sourceSection":"Sentence Final Particles","rule":"Sentence-final の can add an explanatory tone","example":"What does the final の contribute in お父さんがお寿司を作るの?","answer":"An explanatory or informative nuance, rather than a new subject or object.","explanation":"This is sentence-final の, not the の that links two nouns."} -->
+<!-- grammar-card: {"id":"final-no","kind":"rule","format":"qa","priority":"optional","sourceSection":"Sentence Final Particles","rule":"Sentence-final の can add an explanatory tone","example":"What does the final の contribute in お父さんがお寿司を作るの?","answer":"An explanatory or informative nuance, rather than a new subject or object.","explanation":"This is sentence-final の, not the の that links two nouns."} -->
 - 毎週日曜日はお父さんが台所でお寿司を作る**の**。 — (adds explanatory nuance)
 
 ## Sentence Order
 
-<!-- grammar-card: {"id":"predicate-last","kind":"concept","format":"qa","priority":"essential","sourceSection":"Sentence Order","rule":"The basic order is subject-object-predicate, with particles allowing flexibility before the predicate","example":"If subject and object phrases are rearranged for emphasis, do their roles automatically swap?","answer":"No. Their particles still identify their roles; the basic neutral pattern puts the predicate last.","explanation":"Japanese word order is flexible, not arbitrary, and not an English subject-verb-object template."} -->
+<!-- grammar-card: {"id":"predicate-last","kind":"concept","format":"qa","priority":"essential","sourceSection":"Sentence Order","rule":"The basic order is subject-object-predicate, with particles allowing flexibility before the predicate","example":"When subject and object phrases are rearranged for emphasis, what keeps their roles clear, and where does the predicate stay?","answer":"Their particles still identify their roles; the predicate stays last, as in the basic neutral subject-object-predicate pattern.","explanation":"Japanese word order is flexible, not arbitrary, and not an English subject-verb-object template.","legacyAliases":[{"rule":"The basic order is subject-object-predicate, with particles allowing flexibility before the predicate","example":"If subject and object phrases are rearranged for emphasis, do their roles automatically swap?"}]} -->
+<!-- grammar-card: {"id":"rule-sov-order","kind":"concept","format":"qa","priority":"essential","sourceSection":"Sentence Order","rule":"The basic Japanese order is subject → object → predicate","example":"What is the basic neutral order of subject, object, and verb in a Japanese sentence?","answer":"Subject → object → verb (SOV): the predicate comes last.","explanation":"Particles allow other elements to move for emphasis, but the predicate stays at the end."} -->
 
 Japanese is SOV: Subject → Object → Verb
 
@@ -85,6 +86,7 @@ Clauses can be connected using conjunctive particles or conjugation:
 
 ### Embedded Clauses
 <!-- grammar-card: {"id":"noun-modifier-before","kind":"rule","format":"qa","priority":"essential","sourceSection":"Embedded Clauses","rule":"A noun-modifying clause precedes its head noun","example":"In スーパーの前で拾った猫, which word is modified by スーパーの前で拾った?","answer":"猫, the cat that was found in front of the supermarket.","explanation":"The entire modifying clause appears before 猫; Japanese does not require an English-style relative pronoun here."} -->
+<!-- grammar-card: {"id":"rule-modifier-before-noun","kind":"concept","format":"qa","priority":"essential","sourceSection":"Embedded Clauses","rule":"Noun-modifying clauses always come before the noun they modify","example":"Where does a clause describing a noun (like English 'that I found…') go relative to that noun in Japanese?","answer":"Before the noun, with no relative pronoun.","explanation":"スーパーの前で拾った猫 = the cat that I found in front of the supermarket."} -->
 
 **Quotation (と):**
 - 弟は「火星に住みたい」**と**言いました。 — My brother said he wants to live on Mars.
@@ -108,9 +110,10 @@ In Japanese, noun modifiers always come **before** the noun they modify.
 
 <!-- quiz: {"type":"multiple-choice","question":"In Japanese, where do noun modifiers go relative to the noun?","options":["After the noun","Before the noun","Either position","They replace the noun"],"answer":1} -->
 
-<!-- grammar-card: {"id":"indirect-plain","kind":"rule","format":"cloze","priority":"essential","sourceSection":"です and ます in Clauses","rule":"An indirectly reported clause reverts to the plain form","hint":"Use the basic plain-copula reporting pattern.","example":"桜が満開___と教えてもらった。","answer":"だ","explanation":"This neutral indirect report uses 満開だ. Quotation marks alone do not determine every possible reporting construction."} -->
+<!-- grammar-card: {"id":"indirect-plain","kind":"rule","format":"cloze","priority":"essential","sourceSection":"です and ます in Clauses","rule":"An indirectly reported clause reverts to the plain form","hint":"Use the basic plain-copula reporting pattern.","example":"I was told the cherry blossoms are in full bloom (indirect report, plain copula): 桜が満開___と教えてもらった。","answer":"だ","explanation":"This neutral indirect report uses 満開だ. Quotation marks alone do not determine every possible reporting construction.","legacyAliases":[{"rule":"An indirectly reported clause reverts to the plain form","example":"桜が満開___と教えてもらった。"}]} -->
 
-<!-- grammar-card: {"id":"direct-polite","kind":"rule","format":"cloze","priority":"optional","sourceSection":"です and ます in Clauses","rule":"A directly quoted clause keeps the original speaker's politeness","hint":"Preserve the original polite copula.","example":"「桜が満開___よ」と教えてもらいました。","answer":"です","explanation":"A direct quote can preserve the original speaker's です even inside a larger sentence."} -->
+<!-- grammar-card: {"id":"direct-polite","kind":"rule","format":"cloze","priority":"optional","sourceSection":"です and ます in Clauses","rule":"A directly quoted clause keeps the original speaker's politeness","hint":"Preserve the original polite copula.","example":"I was told, \"The cherry blossoms are in full bloom!\" (direct quote, keep the original politeness): 「桜が満開___よ」と教えてもらいました。","answer":"です","explanation":"A direct quote can preserve the original speaker's です even inside a larger sentence.","legacyAliases":[{"rule":"A directly quoted clause keeps the original speaker's politeness","example":"「桜が満開___よ」と教えてもらいました。"}]} -->
+<!-- grammar-card: {"id":"rule-plain-in-embedded","kind":"concept","format":"qa","priority":"optional","sourceSection":"です and ます in Clauses","rule":"Noun-modifying and indirectly reported clauses use plain forms in the basic pattern","example":"In the basic pattern, which form do noun-modifying and indirectly reported clauses use?","answer":"Plain forms.","explanation":"Politeness goes at the end of the whole sentence. A direct quote can keep the speaker's original polite form, so polite forms inside a clause do not by themselves break the pattern."} -->
 
 ## Sources
 

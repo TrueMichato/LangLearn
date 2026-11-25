@@ -32,6 +32,7 @@ This works for all い-adjectives, without exception🎉 Bear in mind that the s
 
 <!-- vocab-card: {"id":"vocab-muzukashii","priority":"essential","sourceSection":"Forming 〜くない","word":"難しい","reading":"むずかしい","meaning":"difficult"} -->
 <!-- vocab-card: {"id":"vocab-ii","priority":"optional","sourceSection":"Forming 〜くない","word":"いい","reading":"いい","meaning":"good"} -->
+<!-- grammar-card: {"id":"rule-kunai-formation","kind":"concept","format":"qa","priority":"essential","sourceSection":"Forming 〜くない","rule":"Negate an い-adjective by changing final い to く and adding ない","example":"How do you make the plain negative of an い-adjective?","answer":"Drop the final い, put the adjective in its く form, and add ない.","explanation":"E.g. 難しい → 難しくない; いい uses よ (よくない). \"Replace い with くない\" counts."} -->
 <!-- grammar-card: {"id":"ii-negative","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Forming 〜くない","rule":"Negating いい requires its よ stem","example":"いい → not good: ___.","answer":"よくない","explanation":"Use よくない rather than いくない."} -->
 
 ### 〜くない in the Past
@@ -42,7 +43,8 @@ This works for all い-adjectives, without exception🎉 Bear in mind that the s
 
 That 難しくなかった (**was not difficult**) either, was it?
 
-<!-- grammar-card: {"id":"past-negative","kind":"rule","format":"cloze","priority":"essential","sourceSection":"〜くない in the Past","rule":"The final い of ない changes to かった for past negation","example":"難しくない → was not difficult: 難しく___.","answer":"なかった","explanation":"難しくなかった combines the adjective's く form with past-negative なかった."} -->
+<!-- grammar-card: {"id":"past-negative","kind":"rule","format":"cloze","priority":"essential","sourceSection":"〜くない in the Past","rule":"The final い of ない changes to かった for past negation","example":"難しくない → was not difficult: 難しく___.","answer":"なかった","explanation":"難しくなかった combines the adjective's く form with past-negative なかった. Polite なかったです also counts."} -->
+<!-- grammar-card: {"id":"rule-negative-past","kind":"concept","format":"qa","priority":"optional","sourceSection":"〜くない in the Past","rule":"A negative い-adjective takes the past by changing the final い of ない to かった","example":"How does a negative い-adjective become past tense?","answer":"Change the final い of ない to かった, just as for a positive い-adjective.","explanation":"E.g. 寒くない → 寒くなかった. Any answer giving ない → なかった counts."} -->
 
 ### Politeness
 
@@ -77,7 +79,7 @@ When a negative い-adjective appears at the end of the sentence, it describes t
 In this case, the negative い-adjective 面白くない (is-not-funny) is describing the subject あの芸人 (that comedian).
 
 <!-- vocab-card: {"id":"vocab-omoshiroi","priority":"optional","sourceSection":"At the End of a Sentence","word":"面白い","reading":"おもしろい","meaning":"interesting; funny"} -->
-<!-- grammar-card: {"id":"negative-predicate","kind":"rule","format":"cloze","priority":"essential","sourceSection":"At the End of a Sentence","rule":"The final い drops to く before ない","hint":"面白い; make it negative","example":"あの芸人は___。","answer":"面白くない","explanation":"面白くない predicates that the comedian is not funny."} -->
+<!-- grammar-card: {"id":"negative-predicate","kind":"rule","format":"cloze","priority":"essential","sourceSection":"At the End of a Sentence","rule":"The final い drops to く before ない","hint":"Make the adjective negative","example":"That comedian is not funny (面白い; plain style): あの芸人は___。","answer":"面白くない","explanation":"面白くない (おもしろくない) predicates that the comedian is not funny. Polite 面白くないです also counts.","legacyAliases":[{"rule":"The final い drops to く before ない","example":"あの芸人は___。"}]} -->
 
 ### Immediately Before a Noun
 
@@ -120,7 +122,7 @@ By inserting particle は here, it creates the sense that whatever I say is goin
 
 You might use this when you want to say that something isn’t bad, but imply that it isn’t exactly good either, without stating it explicitly. In fact, after drinking that nasty healthy tea, this would be a great way for my friend to respond!
 
-<!-- grammar-card: {"id":"contrast-wa","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Splitting く Form and ない with Particle は for Contrast","rule":"Inserting は into くない adds a note of contrast","hint":"Add the contrast particle","example":"おいしく___ないけど、体にいいよ。","answer":"は","explanation":"おいしくはない concedes that it is not tasty while contrasting another quality; the contrast can also remain implicit."} -->
+<!-- grammar-card: {"id":"contrast-wa","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Splitting く Form and ない with Particle は for Contrast","rule":"Inserting は into くない adds a note of contrast","hint":"A particle can split く and ない","example":"Contrast the taste with the health benefit — it's not *tasty*, but it's good for you: おいしく___ないけど、体にいいよ。","answer":"は","explanation":"おいしくはない concedes that it is not tasty while contrasting another quality; the contrast can also remain implicit.","legacyAliases":[{"rule":"Inserting は into くない adds a note of contrast","example":"おいしく___ないけど、体にいいよ。"}]} -->
 
 ### Confirming Assumptions with 〜くない
 
@@ -134,7 +136,7 @@ It is common to use 〜くない to ask questions that you think you know the an
 
   - **Isn't it** expensive?
 
-<!-- grammar-card: {"id":"negative-question-assumption","kind":"concept","format":"qa","priority":"optional","sourceSection":"Confirming Assumptions with 〜くない","rule":"A negative question can invite agreement with a positive assumption","example":"With agreement-seeking intonation, what does 寒くない？ often imply?","answer":"Isn't it cold? The speaker expects agreement that it is cold.","explanation":"Context and intonation distinguish this use from a genuine question about whether it is not cold."} -->
+<!-- grammar-card: {"id":"negative-question-assumption","kind":"concept","format":"qa","priority":"optional","sourceSection":"Confirming Assumptions with 〜くない","rule":"A negative question can invite agreement with a positive assumption","example":"When someone asks a negative adjective question like \"Isn't it cold?\" with agreement-seeking intonation, what do they usually assume?","answer":"That the positive is true (it is cold); they expect agreement.","explanation":"E.g. 寒くない？ / 高くない？. Context and intonation distinguish this use from a genuine question about whether it is not cold.","legacyAliases":[{"rule":"A negative question can invite agreement with a positive assumption","example":"With agreement-seeking intonation, what does 寒くない？ often imply?"}]} -->
 
 ## Common Mistakes
 
@@ -155,7 +157,7 @@ However, じゃない does not form the ordinary descriptive negative of an い-
   - That fly **is not noisy**.
 
 <!-- vocab-card: {"id":"vocab-urusai","priority":"optional","sourceSection":"Treating い-Adjectives like な-Adjectives","word":"うるさい","reading":"うるさい","meaning":"noisy; annoying"} -->
-<!-- grammar-card: {"id":"i-negative-not-janai","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Treating い-Adjectives like な-Adjectives","rule":"An い-adjective's descriptive negative uses くない, not じゃない","hint":"うるさい; say not noisy","example":"そのハエはうるさ___。","answer":"くない","explanation":"うるさくない means not noisy. うるさいじゃない can instead be an affirmative confirmation or exclamation.","legacyAliases":[{"rule":"An い-adjective is negated with くない, never じゃない","example":"そのハエはうるさ___。"}]} -->
+<!-- grammar-card: {"id":"i-negative-not-janai","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Treating い-Adjectives like な-Adjectives","rule":"An い-adjective's descriptive negative uses くない, not じゃない","hint":"うるさい is an い-adjective","example":"That fly is not noisy (plain style): そのハエはうるさ___。","answer":"くない","explanation":"うるさくない means not noisy. うるさいじゃない can instead be an affirmative confirmation or exclamation.","legacyAliases":[{"rule":"An い-adjective is negated with くない, never じゃない","example":"そのハエはうるさ___。"},{"rule":"An い-adjective's descriptive negative uses くない, not じゃない","example":"そのハエはうるさ___。"}]} -->
 
 ### Treating な-Adjectives like い-Adjectives
 

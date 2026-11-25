@@ -39,7 +39,7 @@ The difference is that より is an older word than から, so it has a more for
 より isn't suitable for the spoken Japanese here because it sounds too formal and stiff. There are exceptions, of course. You sometimes hear より used in ceremonies or formal speech, and some fictional characters may employ it for effect. We'll look at this latter example in Beyond the Basics. For now, let's move on to the patterns of use.
 
 <!-- grammar-card: {"id":"yori-source-register","kind":"concept","format":"qa","priority":"essential","sourceSection":"The Basics","rule":"Source より usually sounds more formal than から","example":"For source-only meaning, how does より differ from everyday から?","answer":"It marks the same origin or starting point but usually sounds formal, stiff, or old-fashioned.","explanation":"Signs, documents, ceremonies, and formal greetings can suit より. This does not make all comparative より formal, and casual letter signoffs are a separate exception."} -->
-<!-- grammar-card: {"id":"kara-ordinary-source","kind":"rule","format":"cloze","priority":"optional","sourceSection":"The Basics","rule":"から marks a starting point in ordinary speech","hint":"Use the ordinary conversational source particle","example":"ここ___先は立入禁止ですよ。","answer":"から","explanation":"ここから先 is the everyday way to say beyond this point; より would be a marked formal choice."} -->
+<!-- grammar-card: {"id":"kara-ordinary-source","kind":"rule","format":"cloze","priority":"optional","sourceSection":"The Basics","rule":"から marks a starting point in ordinary speech","hint":"Use the ordinary conversational source particle","example":"(The property owner warns you in everyday speech.) ここ___先は立入禁止ですよ。","answer":"から","explanation":"ここから先 is the everyday way to say beyond this point; より would be a marked formal choice.","legacyAliases":[{"rule":"から marks a starting point in ordinary speech","example":"ここ___先は立入禁止ですよ。"}]} -->
 <!-- vocab-card: {"id":"vocab-tachiiri-kinshi","word":"立入禁止","reading":"たちいりきんし","meaning":"no entry; entry prohibited","priority":"optional","sourceSection":"The Basics"} -->
 ### Patterns of Use
 
@@ -72,6 +72,7 @@ Earlier you learned that より is sort of an antiquated word that might sound s
 It's worth noting that using a formal element like より entails making other parts of speech formal as well. In this sentence, for instance, the humble verb 参る is used instead of 来る (to come).
 
 <!-- grammar-card: {"id":"yori-business-origin","kind":"rule","format":"cloze","priority":"optional","sourceSection":"より for a Starting Point in Space","rule":"Source より fits a formal business greeting with a humble verb","example":"Use the formal source particle: 京都支店___参りました。","answer":"より","explanation":"The Kyoto branch is the origin. 参りました maintains the formal, humble style; から could convey the origin without that marked register."} -->
+<!-- grammar-card: {"id":"rule-formal-matching","kind":"concept","format":"qa","priority":"optional","sourceSection":"より for a Starting Point in Space","rule":"Using formal より entails making the rest of the sentence formal as well","example":"When you use the formal 'from' particle in a spoken business greeting, what else in the sentence should change?","answer":"The rest should be formal too, e.g. a humble verb such as 参る instead of 来る.","explanation":"Counts if it says the other parts must match the formal register. 京都支店より参りました。"} -->
 <!-- vocab-card: {"id":"vocab-mairu","word":"参る","reading":"まいる","meaning":"to go; to come (humble)","priority":"optional","sourceSection":"より for a Starting Point in Space"} -->
 ### より for a Starting Point in Time
 
@@ -132,6 +133,7 @@ From Mami
 I believe より here was originally used to formally identify the message's source and to appropriately close the letter. My guess is that the formality has waned over time and that the expression is now more informal, but I couldn't find a source for this.
 
 <!-- grammar-card: {"id":"yori-letter-sender","kind":"rule","format":"cloze","priority":"essential","sourceSection":"より in Casual Letters","rule":"より conventionally marks the sender in a casual letter signoff","example":"ジェニーへ / マミ___ (To Jenny / From Mami)","answer":"より","explanation":"This established signoff uses より even in casual letters, usually with recipient + へ. It is an exception to the usual formal tone of source より."} -->
+<!-- grammar-card: {"id":"rule-letter-signoff","kind":"concept","format":"qa","priority":"optional","sourceSection":"より in Casual Letters","rule":"Casual letters use recipient + へ and sender + より","example":"In a casual letter or message headed 'To X' and signed 'From Y', which particles follow X and Y?","answer":"へ after the recipient X; より after the sender Y.","explanation":"Both are needed. ジェニーへ … マミより. This casual signoff is an exception to the formal tone of source より."} -->
 
 ## Beyond the Basics
 
@@ -153,7 +155,7 @@ However, if this is a fictional story and the person who warns you happens to be
 
 から works fine here too, but by having this character use the more formal and rigid より, the author can imbue him with a kind of formal and ancient aura. Hence, it is a good characterization tool for aged, dignified characters like hermits.
 
-<!-- grammar-card: {"id":"yori-character-voice","kind":"rule","format":"cloze","priority":"optional","sourceSection":"より for Character Development","rule":"より can replace から in formal or archaic speech","hint":"Choose the stiff, old-fashioned source particle for the hermit","example":"ここ___先は立入禁止じゃぞ。","answer":"より","explanation":"The source meaning is unchanged, but より alongside じゃぞ helps characterize an old-fashioned, dignified fictional speaker."} -->
+<!-- grammar-card: {"id":"yori-character-voice","kind":"rule","format":"cloze","priority":"optional","sourceSection":"より for Character Development","rule":"より can replace から in formal or archaic speech","hint":"Choose the stiff, old-fashioned source particle for the hermit","example":"(An old hermit speaking in a stiff, archaic style.) ここ___先は立入禁止じゃぞ。","answer":"より","explanation":"The source meaning is unchanged, but より alongside じゃぞ helps characterize an old-fashioned, dignified fictional speaker. から would also be grammatical, without that flavor.","legacyAliases":[{"rule":"より can replace から in formal or archaic speech","example":"ここ___先は立入禁止じゃぞ。"}]} -->
 
 ### 日頃より and 平素より
 
@@ -167,7 +169,7 @@ That is a very formal expression, but if you reside in Japan and receive marketi
 
 <!-- vocab-card: {"id":"vocab-higoro","word":"日頃","reading":"ひごろ","meaning":"usually; in everyday life","priority":"optional","sourceSection":"日頃より and 平素より"} -->
 <!-- vocab-card: {"id":"vocab-heiso","word":"平素","reading":"へいそ","meaning":"ordinarily; in normal times (formal)","priority":"optional","sourceSection":"日頃より and 平素より"} -->
-<!-- grammar-card: {"id":"yori-ongoing-gratitude","kind":"rule","format":"cloze","priority":"optional","sourceSection":"日頃より and 平素より","rule":"平素より introduces gratitude for ongoing support in formal business writing","hint":"Use the 平素 opening for continued support","example":"___格別のご高配を賜り厚くお礼申し上げます。","answer":"平素より","explanation":"平素より means always or over the course of one's usual dealings here; 日頃より is another conventional opening. It is not a specific clock-time starting point.","legacyAliases":[{"rule":"より marks a starting time in formal writing","example":"___格別のご高配を賜り厚くお礼申し上げます。"}]} -->
+<!-- grammar-card: {"id":"yori-ongoing-gratitude","kind":"rule","format":"cloze","priority":"optional","sourceSection":"日頃より and 平素より","rule":"平素より introduces gratitude for ongoing support in formal business writing","hint":"A formal opening meaning 'ordinarily, always'","example":"___格別のご高配を賜り厚くお礼申し上げます。","answer":"平素より","explanation":"平素より means always or over the course of one's usual dealings here; 日頃より is another conventional opening and also counts. It is not a specific clock-time starting point.","legacyAliases":[{"rule":"より marks a starting time in formal writing","example":"___格別のご高配を賜り厚くお礼申し上げます。"}]} -->
 
 ---
 

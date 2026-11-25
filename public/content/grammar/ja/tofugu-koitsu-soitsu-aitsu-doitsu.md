@@ -71,7 +71,8 @@ If you'd like to read scenarios that illustrate these concepts and learn more ab
 
 To refer to someone politely, you'd use こちらの方, この方, or こちら.
 
-<!-- grammar-card: {"id":"social-risk","kind":"concept","format":"qa","priority":"essential","sourceSection":"Politeness","rule":"The いつ series is not socially neutral person-reference","example":"Is こいつ a safe neutral way to introduce a stranger or superior?","answer":"No. It can sound rude or insulting; こちらの方, この方, or こちら is a more courteous choice.","explanation":"An intimate friendship can license a friendly use, but closeness must not be assumed."} -->
+<!-- grammar-card: {"id":"social-risk","kind":"concept","format":"qa","priority":"essential","sourceSection":"Politeness","rule":"The いつ series is not socially neutral person-reference","example":"Instead of こいつ, what courteous expressions refer to \"this person\" when introducing a stranger or superior?","answer":"こちらの方, この方, or こちら (こいつ can sound rude or insulting).","explanation":"An intimate friendship can license a friendly use of こいつ, but closeness must not be assumed. Any one of the three counts.","legacyAliases":[{"rule":"The いつ series is not socially neutral person-reference","example":"Is こいつ a safe neutral way to introduce a stranger or superior?"}]} -->
+<!-- grammar-card: {"id":"rule-itsu-register","kind":"concept","format":"qa","priority":"essential","sourceSection":"Politeness","rule":"The koitsu/soitsu/aitsu/doitsu series is very informal and can sound rude; it is safe only in close casual relationships","example":"What register do koitsu, soitsu, aitsu and doitsu belong to, and when are they acceptable for people?","answer":"Very informal and potentially rude or insulting; acceptable only with an intimate, casual relationship (e.g. a close friend).","explanation":"\"Rude/gruff, only among close friends\" counts. Polite alternatives include こちらの方 and この方."} -->
 
 ### Patterns of Use
 
@@ -111,7 +112,7 @@ If you are complaining about someone, it sounds cruder.
 
 Since it can easily be taken as offensive, we don't recommend using these words unless you are very sure about the relationship between you and the person you are referring to.
 
-<!-- grammar-card: {"id":"near-friend","kind":"rule","format":"cloze","priority":"optional","sourceSection":"こいつ, そいつ, and あいつ for People","rule":"こいつ is a blunt 'this guy', near the speaker","hint":"A close friend beside the speaker; deliberately rough, intimate speech","example":"俺、___とは長い付き合いでさ。","answer":"こいつ","explanation":"The relationship makes this potentially affectionate, not generally polite. そいつ is listener-related and あいつ more distant."} -->
+<!-- grammar-card: {"id":"near-friend","kind":"rule","format":"cloze","priority":"optional","sourceSection":"こいつ, そいつ, and あいつ for People","rule":"こいつ is a blunt 'this guy', near the speaker","example":"Introducing a close buddy standing beside you, in deliberately rough, intimate speech: 俺、___とは長い付き合いでさ。","answer":"こいつ","explanation":"The relationship makes this potentially affectionate, not generally polite. そいつ is listener-related and あいつ more distant.","legacyAliases":[{"rule":"こいつ is a blunt 'this guy', near the speaker","example":"俺、___とは長い付き合いでさ。"}]} -->
 
 ### こいつら, そいつら, and あいつら for Multiple People
 
@@ -123,7 +124,7 @@ When there are multiple people you want to refer to, you can add 〜ら and say 
 
 〜ら can also be attached to the question word どいつ, as in どいつら, but it's not common and you'll rarely see it.
 
-<!-- grammar-card: {"id":"plural-ra","kind":"rule","format":"cloze","priority":"essential","sourceSection":"こいつら, そいつら, and あいつら for Multiple People","rule":"Adding ら makes these pronouns plural","hint":"Those guys near the listener; keep the blunt register","example":"すいません、___俺のダチなんです。","answer":"そいつら","explanation":"そいつら refers to several people, not a more polite person. どいつら exists but is uncommon."} -->
+<!-- grammar-card: {"id":"plural-ra","kind":"rule","format":"cloze","priority":"essential","sourceSection":"こいつら, そいつら, and あいつら for Multiple People","rule":"Adding ら makes these pronouns plural","example":"Apologizing for several rough-looking friends near the listener (blunt register, plural): すいません、___俺のダチなんです。","answer":"そいつら","explanation":"そいつら refers to several people, not a more polite person. どいつら exists but is uncommon.","legacyAliases":[{"rule":"Adding ら makes these pronouns plural","example":"すいません、___俺のダチなんです。"}]} -->
 
 ### こいつ, そいつ, and あいつ for Animals
 
@@ -137,7 +138,7 @@ For example, imagine you have a little puppy and are introducing him to your fri
 
 In this case, こいつ indicates you're talking about your puppy in a friendly way.
 
-<!-- grammar-card: {"id":"animal-reference","kind":"concept","format":"qa","priority":"optional","sourceSection":"こいつ, そいつ, and あいつ for Animals","rule":"こいつ can be affectionate but blunt when referring to an animal","example":"Does using こいつ for a puppy necessarily insult the animal?","answer":"No. It can be an affectionate this little guy, though it remains informal and blunt.","explanation":"Animal reference does not make the word a polite expression for people."} -->
+<!-- grammar-card: {"id":"animal-reference","kind":"rule","format":"qa","priority":"optional","sourceSection":"こいつ, そいつ, and あいつ for Animals","rule":"こいつ can be affectionate but blunt when referring to an animal","example":"What tone does こいつ have when an owner says こいつ、ミルクが好きなんだ about their puppy?","answer":"Affectionate (\"this little guy\"), though still informal and blunt — not an insult.","explanation":"Animal reference does not make the word a polite expression for people.","legacyAliases":[{"rule":"こいつ can be affectionate but blunt when referring to an animal","example":"Does using こいつ for a puppy necessarily insult the animal?"}]} -->
 
 ### こいつ, そいつ, and あいつ for Things
 
@@ -149,7 +150,7 @@ Sometimes, you can also use こいつ, そいつ, and あいつ to refer to thin
 
 Since the plate is an object, it's standard to use the word これ or このお皿. Using こいつ personifies the plate, so it can sound a little comical.
 
-<!-- grammar-card: {"id":"object-personification","kind":"concept","format":"qa","priority":"optional","sourceSection":"こいつ, そいつ, and あいつ for Things","rule":"Using a person demonstrative for an object can personify it","example":"What effect does calling a plate こいつ have instead of simply これ?","answer":"It personifies the plate and can sound comical or gruff.","explanation":"これ or このお皿 is the neutral choice for the object."} -->
+<!-- grammar-card: {"id":"object-personification","kind":"rule","format":"qa","priority":"optional","sourceSection":"こいつ, そいつ, and あいつ for Things","rule":"Using a person demonstrative for an object can personify it","example":"What effect does calling a plate こいつ have instead of simply これ?","answer":"It personifies the plate and can sound comical or gruff.","explanation":"これ or このお皿 is the neutral choice for the object."} -->
 
 ### こいつ and そいつ for Situations
 
@@ -169,7 +170,7 @@ On the other hand, if someone just told you that they've gone through some terri
 
 Note that it's more standard to say これ and それ. こいつ and そいつ will be chosen by some people who prefer a certain speech style that sounds gruffer, and perhaps more comical.
 
-<!-- grammar-card: {"id":"situation-reference","kind":"concept","format":"qa","priority":"optional","sourceSection":"こいつ and そいつ for Situations","rule":"こいつ and そいつ can refer to situations in a gruff style","example":"What does そいつ refer to in そいつは大変でしたね after hearing a difficult story?","answer":"The situation the listener just described, not necessarily a person.","explanation":"それ is more neutral; こいつ can refer to the speaker's own situation."} -->
+<!-- grammar-card: {"id":"situation-reference","kind":"rule","format":"qa","priority":"optional","sourceSection":"こいつ and そいつ for Situations","rule":"こいつ and そいつ can refer to situations in a gruff style","example":"What does そいつ refer to in そいつは大変でしたね after hearing a difficult story?","answer":"The situation the listener just described, not necessarily a person.","explanation":"それ is more neutral; こいつ can refer to the speaker's own situation."} -->
 
 ## Beyond the Basics
 
@@ -187,7 +188,7 @@ As you can see, you can use either こいつ, そいつ, or あいつ in this ex
 
 In short, こいつ can be emphatic or vivid. そいつ can refer back more neutrally within this already blunt register. あいつ often recalls someone known to both speakers, but shared acquaintance is not compulsory: it can also refer to an absent person identifiable from context.
 
-<!-- grammar-card: {"id":"absent-person-perspective","kind":"concept","format":"qa","priority":"essential","sourceSection":"こいつ, そいつ, and あいつ for People Who Are Out of Sight","rule":"Absent-person reference is not governed by literal physical distance alone","example":"Does あいつ require the person to be visible or necessarily a mutual friend?","answer":"No. It can recall an absent person identifiable from context; shared acquaintance is common but not required.","explanation":"こいつ can make the story vivid and そいつ can refer back more neutrally, but the whole series remains informal or rude."} -->
+<!-- grammar-card: {"id":"absent-person-perspective","kind":"concept","format":"qa","priority":"essential","sourceSection":"こいつ, そいつ, and あいつ for People Who Are Out of Sight","rule":"Absent-person reference is not governed by literal physical distance alone","example":"When telling a story about a friend who isn't present, what does choosing あいつ (rather than こいつ or そいつ) typically convey?","answer":"It often recalls someone known to both speakers, or identifiable from context; the person need not be visible, and shared acquaintance is common but not required.","explanation":"こいつ can make the story vivid and そいつ can refer back more neutrally, but the whole series remains informal or rude.","legacyAliases":[{"rule":"Absent-person reference is not governed by literal physical distance alone","example":"Does あいつ require the person to be visible or necessarily a mutual friend?"}]} -->
 
 ### こやつ, そやつ, あやつ, and どやつ
 
@@ -206,7 +207,7 @@ For multiple people, you would add ら and say こやつら, そやつら, and �
   - **All those bastards**, they are all completely useless.
 
 <!-- vocab-card: {"id":"vocab-doitsumokoitsumo","priority":"optional","sourceSection":"どいつもこいつも","word":"どいつもこいつも","reading":"どいつもこいつも","meaning":"every last one of them (contemptuous)"} -->
-<!-- grammar-card: {"id":"contemptuous-everyone","kind":"concept","format":"qa","priority":"optional","sourceSection":"どいつもこいつも","rule":"どいつもこいつも conveys contempt toward a group","example":"Is どいつもこいつも a neutral equivalent of everyone?","answer":"No. It disparages the group, roughly every last one of those troublemakers.","explanation":"Recognize its hostility rather than using it as a neutral plural-person expression."} -->
+<!-- grammar-card: {"id":"contemptuous-everyone","kind":"concept","format":"qa","priority":"optional","sourceSection":"どいつもこいつも","rule":"どいつもこいつも conveys contempt toward a group","example":"What attitude does どいつもこいつも express toward a group of people?","answer":"Contempt: it disparages the group, roughly \"every last one of those troublemakers\" — not a neutral \"everyone\".","explanation":"Recognize its hostility rather than using it as a neutral plural-person expression.","legacyAliases":[{"rule":"どいつもこいつも conveys contempt toward a group","example":"Is どいつもこいつも a neutral equivalent of everyone?"}]} -->
 
 ### 〜め！
 

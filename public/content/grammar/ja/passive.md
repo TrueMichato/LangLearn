@@ -23,6 +23,7 @@ Change the final **u-sound** to the **a-sound** and add **れる**. A final **�
 | 叱(しか)る | 叱られる |
 
 <!-- grammar-card: {"id":"godan-passive","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Group 1 (u-verbs)","rule":"Godan passive changes the final u-vowel to a and adds れる","example":"読む → passive: ___.","answer":"読まれる","explanation":"読む (よむ) changes む to ま and adds れる."} -->
+<!-- grammar-card: {"id":"rule-godan-passive","kind":"concept","format":"qa","priority":"optional","sourceSection":"Group 1 (u-verbs)","rule":"Group 1 verbs form the passive by changing the final -u sound to -a and adding れる","example":"How does a Group 1 (u-verb) form its passive?","answer":"Change the final -u sound to the matching -a sound and add れる (a final う becomes わ).","explanation":"Any wording that shifts -u to -a and adds れる counts; the う → わ detail is a bonus. 書く → 書かれる; 待つ → 待たれる."} -->
 <!-- grammar-card: {"id":"u-wa-passive","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Group 1 (u-verbs)","rule":"A final う becomes わ before passive れる","example":"歌う → passive: ___.","answer":"歌われる","explanation":"歌う (うたう) uses わ, not あ: 歌われる (うたわれる)."} -->
 <!-- vocab-card: {"id":"vocab-fumu","word":"踏む","reading":"ふむ","meaning":"to step on","priority":"optional","sourceSection":"Group 1 (u-verbs)"} -->
 <!-- vocab-card: {"id":"vocab-shikaru","word":"叱る","reading":"しかる","meaning":"to scold","priority":"optional","sourceSection":"Group 1 (u-verbs)"} -->
@@ -69,6 +70,7 @@ The direct passive describes an action performed on the subject by someone else.
 - **私は先生に褒められました。** — I was praised by the teacher.
 
 <!-- grammar-card: {"id":"direct-passive-agent","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Direct Passive","rule":"に marks the doer in a direct passive","example":"私は先生___褒められました。 (The teacher praised me.)","answer":"に","explanation":"私 is the person praised; 先生に names the doer of praising."} -->
+<!-- grammar-card: {"id":"rule-passive-agent","kind":"concept","format":"qa","priority":"optional","sourceSection":"Passive with に and によって","rule":"In most passive sentences, に marks the doer","example":"In most passive sentences, which particle marks the doer of the action?","answer":"に (によって in formal or creation contexts).","explanation":"Naming に counts. 犬に噛まれた: the dog is the doer; 私は先生に褒められました."} -->
 
 ### Common direct passive examples
 
@@ -93,7 +95,8 @@ This is unique to Japanese. The indirect passive expresses that someone is **neg
 - **子供(こども)に夜中(よなか)に起(お)きられました。** — The child woke up in the middle of the night (and it was a problem for me).
 
 > 💡 The suffering passive has no equivalent in English. The nuance is always that the subject was inconvenienced or troubled by the action.
-<!-- grammar-card: {"id":"suffering-passive","kind":"concept","format":"qa","priority":"essential","sourceSection":"Indirect Passive (Suffering Passive)","rule":"The suffering passive puts the negatively affected person in subject position","example":"What does 雨に降られました communicate beyond the fact that rain fell?","answer":"The speaker was affected or inconvenienced by the rain: “I got rained on.”","explanation":"The subject is not the direct object of 降る. This is the indirect/suffering use of passive."} -->
+<!-- grammar-card: {"id":"suffering-passive","kind":"rule","format":"qa","priority":"essential","sourceSection":"Indirect Passive (Suffering Passive)","rule":"The suffering passive puts the negatively affected person in subject position","example":"What does 雨に降られました communicate beyond the fact that rain fell?","answer":"The speaker was affected or inconvenienced by the rain: “I got rained on.”","explanation":"The subject is not the direct object of 降る. This is the indirect/suffering use of passive."} -->
+<!-- grammar-card: {"id":"rule-suffering-passive","kind":"concept","format":"qa","priority":"essential","sourceSection":"Indirect Passive (Suffering Passive)","rule":"The indirect (suffering) passive presents its subject as negatively affected by someone else's action","example":"What does the indirect (suffering) passive say about its subject?","answer":"The subject was negatively affected or inconvenienced by someone else's action, even if not directly acted on.","explanation":"Any answer about being troubled, bothered or inconvenienced counts. 友達に先に帰られました: my friend went home first, leaving me behind."} -->
 
 ### More suffering passive examples
 
@@ -114,7 +117,7 @@ This is unique to Japanese. The indirect passive expresses that someone is **neg
   - **この小説(しょうせつ)は夏目漱石(なつめそうせき)によって書かれました。** — This novel was written by Natsume Soseki.
   - **新しい法律(ほうりつ)は国会(こっかい)によって決(き)められました。** — The new law was decided by the parliament.
 
-<!-- grammar-card: {"id":"creation-agent","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Passive with に and によって","rule":"によって marks the agent when something was created","hint":"Use the formal creation-agent marker","example":"この小説(しょうせつ)は夏目漱石(なつめそうせき)___書かれました。","answer":"によって","explanation":"によって is natural for naming the creator of a work in formal or written Japanese; に remains common with personal passive experiences."} -->
+<!-- grammar-card: {"id":"creation-agent","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Passive with に and によって","rule":"によって marks the agent when something was created","hint":"Use the formal creation-agent marker","example":"Formal written style, naming the author of a work: この小説(しょうせつ)は夏目漱石(なつめそうせき)___書かれました。","answer":"によって","explanation":"によって is natural for naming the creator of a work in formal or written Japanese. 夏目漱石に書かれました is grammatical but less natural here; に remains common with personal passive experiences.","legacyAliases":[{"rule":"によって marks the agent when something was created","example":"この小説(しょうせつ)は夏目漱石(なつめそうせき)___書かれました。"}]} -->
 
 ## Passive in Formal Speech
 

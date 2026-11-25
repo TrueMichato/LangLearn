@@ -30,9 +30,10 @@ The origin of 〜やすい is the adjective  易い(やす　) (easy), and as yo
 〜やすい expresses the ease of doing something as a characteristic of whatever you're talking about, rather than a characteristic of the person who is doing the action. For example, being attached to a verb  話す(はな　) (to speak), ジェニーは話しやすい means "Jenny is easy to talk to." And this is because of her approachable personality or some other quality that Jenny or her environment has.
 
 <!-- vocab-card: {"id":"vocab-hanasu","word":"話す","reading":"はなす","meaning":"to speak; to talk","priority":"optional","sourceSection":"The Basics"} -->
-<!-- grammar-card: {"id":"ease-characteristic","kind":"concept","format":"qa","priority":"essential","sourceSection":"The Basics","rule":"やすい presents ease as a quality of the described person, thing, or circumstances","example":"Does ジェニーは話しやすい primarily mean that Jenny herself is a skilled speaker?","answer":"No. It means she is easy to talk to, because of her qualities or the circumstances.","explanation":"The adjective-like expression describes the ease of talking to Jenny, not her speaking ability."} -->
+<!-- grammar-card: {"id":"ease-characteristic","kind":"rule","format":"qa","priority":"essential","sourceSection":"The Basics","rule":"やすい presents ease as a quality of the described person, thing, or circumstances","example":"In ジェニーは話しやすい, what does 〜やすい present the ease as a quality of?","answer":"Jenny's own qualities (or the circumstances): she is easy to talk to. It does not say she is a skilled speaker.","explanation":"Any answer locating the ease in Jenny or the situation counts. The adjective-like expression describes the ease of talking to Jenny, not her speaking ability.","legacyAliases":[{"rule":"やすい presents ease as a quality of the described person, thing, or circumstances","example":"Does ジェニーは話しやすい primarily mean that Jenny herself is a skilled speaker?"}]} -->
 
 <!-- grammar-card: {"id":"ease-stem","kind":"rule","format":"cloze","priority":"essential","sourceSection":"The Basics","rule":"やすい attaches to the ます-stem and means 'easy to do'","hint":"Complete with the ease suffix.","example":"この本(ほん)は字(じ)が大(おお)きくて読(よ)み___。","answer":"やすい","explanation":"読みやすい says the book is easy to read."} -->
+<!-- grammar-card: {"id":"rule-yasui-stem","kind":"concept","format":"qa","priority":"essential","sourceSection":"The Basics","rule":"〜やすい attaches to the ます-stem of a verb","example":"Which verb form does the \"easy to do\" suffix (-yasui) attach to?","answer":"The ます-stem (the form before ます).","explanation":"Saying masu-stem or pre-ます form counts: 話す → 話します → 話し + yasui; 書く → 書き + yasui."} -->
 
 ### やすい for Physical and Psychological Ease
 
@@ -72,7 +73,7 @@ This would literally translate to "I am easy to fall in love," indicating that y
 
 <!-- vocab-card: {"id":"vocab-you","word":"酔う","reading":"よう","meaning":"to get drunk","priority":"optional","sourceSection":"やすい for Tendency and Intolerance"} -->
 <!-- vocab-card: {"id":"vocab-horeru","word":"惚れる","reading":"ほれる","meaning":"to fall in love","priority":"optional","sourceSection":"やすい for Tendency and Intolerance"} -->
-<!-- grammar-card: {"id":"susceptibility","kind":"concept","format":"qa","priority":"essential","sourceSection":"やすい for Tendency and Intolerance","rule":"やすい can express susceptibility rather than skill or desirability","example":"Does 酔いやすい praise someone's ability to drink a lot?","answer":"No. It says they get drunk easily and have a low tolerance for alcohol.","explanation":"With an involuntary event, ease can mean a tendency or vulnerability, not something the person wants."} -->
+<!-- grammar-card: {"id":"susceptibility","kind":"concept","format":"qa","priority":"essential","sourceSection":"やすい for Tendency and Intolerance","rule":"やすい can express susceptibility rather than skill or desirability","example":"When 〜やすい attaches to an involuntary event such as getting drunk (酔う), what does it say about the person?","answer":"They do it easily: a tendency or low tolerance.","explanation":"酔いやすい = gets drunk easily (low tolerance for alcohol), not praise for drinking a lot. With an involuntary event, ease means a tendency or vulnerability, not something the person wants.","legacyAliases":[{"rule":"やすい can express susceptibility rather than skill or desirability","example":"Does 酔いやすい praise someone's ability to drink a lot?"}]} -->
 
 ### やすい for Modifying Nouns
 
@@ -90,7 +91,8 @@ Again, the main mission of 〜やすい is to describe an attribute of whatever 
 
 ---
 
-<!-- grammar-card: {"id":"ease-ku-form","kind":"rule","format":"cloze","priority":"optional","sourceSection":"やすい for Modifying Nouns","rule":"やすい inflects exactly like an い-adjective","hint":"Use the ease expression before なる.","example":"この道(みち)は前(まえ)より歩(ある)き___なった。","answer":"やすく","explanation":"歩きやすくなった shows やすい taking the く-form before なる, just like any い-adjective."} -->
+<!-- grammar-card: {"id":"ease-ku-form","kind":"rule","format":"cloze","priority":"optional","sourceSection":"やすい for Modifying Nouns","rule":"やすい inflects exactly like an い-adjective","hint":"Use the ease expression before なる.","example":"This road has become easier to walk than before: この道(みち)は前(まえ)より歩(ある)き___なった。","answer":"やすく","explanation":"歩きやすくなった shows やすい taking the く-form before なる, just like any い-adjective. (にくく would mean it became harder.)","legacyAliases":[{"rule":"やすい inflects exactly like an い-adjective","example":"この道(みち)は前(まえ)より歩(ある)き___なった。"}]} -->
+<!-- grammar-card: {"id":"rule-yasui-i-adjective","kind":"concept","format":"qa","priority":"optional","sourceSection":"やすい for Modifying Nouns","rule":"A verb + やすい behaves like an い-adjective","example":"Which word class does a verb + -yasui behave like when it inflects or modifies a noun?","answer":"An い-adjective.","explanation":"Naming い-adjective counts: it changes final い to く before なる and sits directly before a noun with no な or の, as in 話しやすい人."} -->
 
 #### Sources and Additional Readings
 

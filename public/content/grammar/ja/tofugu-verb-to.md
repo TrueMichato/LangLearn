@@ -74,6 +74,7 @@ Let's try applying this to the "**When** X happens, the result is always Y" equa
 See how the と is sandwiched between a condition and a result? When you try to translate と sentences, breaking down the sentence into those two parts might make it easier for you. Now let me walk you through different usages.
 
 <!-- grammar-card: {"id":"condition-result-structure","kind":"concept","format":"qa","priority":"essential","sourceSection":"The Basics","rule":"Conditional と connects a condition to its characteristic or ensuing result","example":"In X と Y, which part is the condition and which is the result?","answer":"X is the condition or cause; Y is the result that characteristically or immediately follows.","explanation":"The construction presents the link as a regular consequence or a narrated sequence, not necessarily a universal logical law."} -->
+<!-- grammar-card: {"id":"rule-always-immediately","kind":"concept","format":"qa","priority":"essential","sourceSection":"The Basics","rule":"Conditional と signals a strong causal link: the result always follows, or follows immediately","example":"Which two nuances make the causal link of conditional と 'strong'?","answer":"Always (the result regularly or inevitably follows) and immediately (the result follows right away).","explanation":"Both ideas must be present in some wording: inevitability/regularity and immediacy. Compare 飲むと必ず… and 押すと、すぐに店員が来た."} -->
 
 ### と for Things that Always Happen
 
@@ -89,7 +90,7 @@ When と is used for things with inevitable results like this, it is commonly us
 
 <!-- vocab-card: {"id":"vocab-kanarazu","word":"必ず","reading":"かならず","meaning":"without fail; certainly","priority":"optional","sourceSection":"と for Things that Always Happen"} -->
 <!-- vocab-card: {"id":"vocab-yoku","word":"よく","reading":"よく","meaning":"often; frequently","priority":"optional","sourceSection":"と for Things that Always Happen"} -->
-<!-- grammar-card: {"id":"regular-result","kind":"rule","format":"cloze","priority":"essential","sourceSection":"と for Things that Always Happen","rule":"と states a result that follows every time","example":"お酒を飲む___、必ずスイーツが食べたくなる。","answer":"と","explanation":"必ず makes this example explicitly without exception. More generally, と can also describe a usual tendency."} -->
+<!-- grammar-card: {"id":"regular-result","kind":"rule","format":"cloze","priority":"essential","sourceSection":"と for Things that Always Happen","rule":"と states a result that follows every time","example":"お酒を飲む___、必ずスイーツが食べたくなる。","answer":"と","explanation":"必ず makes this example explicitly without exception. More generally, と can also describe a usual tendency. Connectives like とき can also attach to 飲む, but this card targets conditional と."} -->
 
 ### と for Habits
 
@@ -119,7 +120,7 @@ Here's another example for showing past habits, but in an old-fashioned way:
 
 <!-- vocab-card: {"id":"vocab-hareru","word":"晴れる","reading":"はれる","meaning":"to clear up; to be sunny","priority":"optional","sourceSection":"と for Habits"} -->
 <!-- grammar-card: {"id":"past-habit-tense","kind":"concept","format":"qa","priority":"optional","sourceSection":"と for Habits","rule":"A past habitual result can follow a nonpast condition with と","example":"Why is 晴れるとよくランニングをした compatible with a past habit although 晴れる is nonpast?","answer":"The past tense in the result した locates the repeated habit in the past; the condition before と stays nonpast.","explanation":"This differs from changing the condition itself into a past-form conditional."} -->
-<!-- grammar-card: {"id":"reminiscent-monoda","kind":"concept","format":"qa","priority":"optional","sourceSection":"と for Habits","rule":"Past + ものだ adds a reminiscent narrative tone to an old habit","example":"What tone does ものだ add to 晴れるとよくランニングをしたものだ?","answer":"A reflective recollection of an old habit, often with a nostalgic or narrative tone.","explanation":"The plain past can already describe the old habit; ものだ adds the recollective framing."} -->
+<!-- grammar-card: {"id":"reminiscent-monoda","kind":"rule","format":"qa","priority":"optional","sourceSection":"と for Habits","rule":"Past + ものだ adds a reminiscent narrative tone to an old habit","example":"What tone does ものだ add to 晴れるとよくランニングをしたものだ?","answer":"A reflective recollection of an old habit, often with a nostalgic or narrative tone.","explanation":"The plain past can already describe the old habit; ものだ adds the recollective framing."} -->
 
 ### と for General Conditions
 
@@ -157,7 +158,7 @@ Also, a word like すぐに (right away), which adds a stronger nuance of immedi
   - **Once** I pushed a button, staff came **right** **away**.
 
 <!-- vocab-card: {"id":"vocab-suguni","word":"すぐに","reading":"すぐに","meaning":"immediately; right away","priority":"optional","sourceSection":"と for Successive Actions"} -->
-<!-- grammar-card: {"id":"single-past-sequence","kind":"concept","format":"qa","priority":"essential","sourceSection":"と for Successive Actions","rule":"と can narrate an immediately ensuing result on a single past occasion","example":"Can ボタンを押すと、店員が来た describe one past occasion?","answer":"Yes. It narrates the staff's arrival immediately after the button was pressed.","explanation":"Past-result と is not limited to repeated habits; すぐに can further emphasize the immediacy."} -->
+<!-- grammar-card: {"id":"single-past-sequence","kind":"rule","format":"qa","priority":"essential","sourceSection":"と for Successive Actions","rule":"と can narrate an immediately ensuing result on a single past occasion","example":"Can ボタンを押すと、店員が来た describe one past occasion?","answer":"Yes. It narrates the staff's arrival immediately after the button was pressed.","explanation":"Past-result と is not limited to repeated habits; すぐに can further emphasize the immediacy."} -->
 
 ### と for "What Happens If…?" Questions
 
@@ -183,6 +184,7 @@ Since one of the basic concepts of と is inevitability, you can use と for war
 
 <!-- vocab-card: {"id":"vocab-chikoku-suru","word":"遅刻する","reading":"ちこくする","meaning":"to be late","priority":"optional","sourceSection":"と for Warnings"} -->
 <!-- grammar-card: {"id":"negative-warning","kind":"rule","format":"cloze","priority":"essential","sourceSection":"と for Warnings","rule":"A negative condition with と can warn of the consequence of not acting","example":"早く起きない___遅刻するよ。","answer":"と","explanation":"The warning is that not getting up soon will lead to being late."} -->
+<!-- grammar-card: {"id":"rule-negative-warning","kind":"concept","format":"qa","priority":"optional","sourceSection":"と for Warnings","rule":"Warnings with と often use a negative condition: not doing X inevitably leads to Y","example":"When conditional と is used to warn someone, what form does the condition often take, and what does the result state?","answer":"A negative condition (not doing something); the result is the inevitable bad consequence.","explanation":"Both parts should be present in some wording. Example: 早く起きないと遅刻するよ."} -->
 
 ## Beyond the Basics
 
@@ -212,7 +214,8 @@ In Japanese culture, people tend to try not to sound too direct or assertive. Th
   - Generally speaking…
 (*Literally*: If I look at it in a general way…)
 
-<!-- grammar-card: {"id":"perspective-framing","kind":"concept","format":"qa","priority":"optional","sourceSection":"と for Showing a Different Perspective","rule":"と can frame a statement under a specified way of saying or considering it","example":"What does はっきり言うと do before a statement?","answer":"It frames the statement as frankly speaking, literally if I say it clearly.","explanation":"The condition specifies a perspective rather than a physical trigger. It need not make the following statement less blunt."} -->
+<!-- grammar-card: {"id":"perspective-framing","kind":"rule","format":"qa","priority":"optional","sourceSection":"と for Showing a Different Perspective","rule":"と can frame a statement under a specified way of saying or considering it","example":"What does はっきり言うと do before a statement?","answer":"It frames the statement as frankly speaking, literally if I say it clearly.","explanation":"The condition specifies a perspective rather than a physical trigger. It need not make the following statement less blunt."} -->
+<!-- grammar-card: {"id":"rule-perspective-to","kind":"concept","format":"qa","priority":"optional","sourceSection":"と for Showing a Different Perspective","rule":"In introductory phrases with verbs like 言う, 考える, 比べる, or 見る, と sets up a viewpoint as the condition","example":"In introductory phrases built on verbs of saying, thinking, comparing, or looking, what does conditional と do for the statement that follows?","answer":"It frames the statement from a particular viewpoint ('if I say / look at it that way…'), so it isn't presented as a flat universal truth.","explanation":"Any answer about setting up a perspective or condition for the statement counts. Examples: 他と比べると…, 一般的に見ると…."} -->
 
 ### How is と Different From たら?
 

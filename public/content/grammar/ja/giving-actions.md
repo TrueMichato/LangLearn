@@ -52,7 +52,7 @@ These verbs attach to the **て-form** to describe doing favors — actions done
 
 <!-- quiz:{"type":"multiple-choice","question":"'友達に料理を作ってあげた' means:","options":["My friend cooked for me","I received cooking from my friend","I cooked for my friend (as a favor)","My friend and I cooked together"],"answer":2} -->
 
-<!-- grammar-card: {"id":"outward-favor","kind":"rule","format":"cloze","priority":"essential","sourceSection":"てあげる — \"Do something for someone\"","rule":"てあげる frames an action as a favour flowing away from the speaker","hint":"教える, describe doing a favor for the friend in the past.","example":"友達(ともだち)に日本語(にほんご)を教(おし)え___。","answer":"てあげた","explanation":"教えてあげた presents the teaching as a benefit given to the friend. It can also describe favors between third parties."} -->
+<!-- grammar-card: {"id":"outward-favor","kind":"rule","format":"cloze","priority":"essential","sourceSection":"てあげる — \"Do something for someone\"","rule":"てあげる frames an action as a favour flowing away from the speaker","hint":"教える, describe doing a favor for the friend in the past.","example":"Plain past, framed as my favor: 'I taught my friend Japanese (for them)': 友達(ともだち)に日本語(にほんご)を教(おし)え___。","answer":"てあげた","explanation":"教えてあげた presents the teaching as a benefit given to the friend. It can also describe favors between third parties.","legacyAliases":[{"rule":"てあげる frames an action as a favour flowing away from the speaker","example":"友達(ともだち)に日本語(にほんご)を教(おし)え___。"}]} -->
 <!-- grammar-card: {"id":"ageru-social-risk","kind":"concept","format":"qa","priority":"essential","sourceSection":"てあげる — \"Do something for someone\"","rule":"Explicitly framing one's own act as a favor can sound patronizing","example":"Why might 手伝ってあげます sound awkward when offered directly to a superior?","answer":"It can highlight the speaker's generosity or imply the other person needs a favor, sounding condescending.","explanation":"A neutral offer or appropriate humble action description is often safer; polite morphology does not remove this pragmatic risk."} -->
 
 ## てくれる — "Someone does something for me/us"
@@ -87,7 +87,7 @@ These verbs attach to the **て-form** to describe doing favors — actions done
 
 <!-- quiz:{"type":"multiple-choice","question":"'母が朝ごはんを作ってくれた' — who cooked?","options":["I cooked for my mother","My mother cooked (for me)","My mother received breakfast","We cooked together"],"answer":1} -->
 
-<!-- grammar-card: {"id":"inward-favor","kind":"rule","format":"cloze","priority":"essential","sourceSection":"てくれる — \"Someone does something for me/us\"","rule":"てくれる marks a favour done for the speaker","hint":"送る, appreciate a favor received from the friend in the past.","example":"友達が駅(えき)まで送(おく)っ___。","answer":"てくれた","explanation":"送ってくれた makes the friend the giver and subject; the benefit comes to the speaker or in-group."} -->
+<!-- grammar-card: {"id":"inward-favor","kind":"rule","format":"cloze","priority":"essential","sourceSection":"てくれる — \"Someone does something for me/us\"","rule":"てくれる marks a favour done for the speaker","hint":"送る, appreciate a favor received from the friend in the past.","example":"Plain past, grateful: 'My friend kindly took me to the station': 友達が駅(えき)まで送(おく)っ___。","answer":"てくれた","explanation":"送ってくれた makes the friend the giver and subject; the benefit comes to the speaker or in-group.","legacyAliases":[{"rule":"てくれる marks a favour done for the speaker","example":"友達が駅(えき)まで送(おく)っ___。"}]} -->
 
 ## てもらう — "Receive the favor of someone doing something"
 
@@ -123,7 +123,8 @@ The person who does the action is marked with **に**:
 
 <!-- quiz:{"type":"multiple-choice","question":"How do you say 'I had my friend teach me Japanese'?","options":["友達に日本語を教えてあげた","友達が日本語を教えてくれた","友達に日本語を教えてもらった","友達は日本語を教えてみた"],"answer":2} -->
 
-<!-- grammar-card: {"id":"received-favor","kind":"rule","format":"cloze","priority":"essential","sourceSection":"てもらう — \"Receive the favor of someone doing something\"","rule":"てもらう views the same favour from the receiver's side","hint":"直す, receive a correction as a favor in the past.","example":"先生(せんせい)に手紙(てがみ)を直(なお)し___。","answer":"てもらった","explanation":"直してもらった views the correction from the receiver's side. 先生に identifies the person doing the correcting."} -->
+<!-- grammar-card: {"id":"received-favor","kind":"rule","format":"cloze","priority":"essential","sourceSection":"てもらう — \"Receive the favor of someone doing something\"","rule":"てもらう views the same favour from the receiver's side","hint":"直す, receive a correction as a favor in the past.","example":"Plain past, from my side: 'I had the teacher correct my letter (for me)': 先生(せんせい)に手紙(てがみ)を直(なお)し___。","answer":"てもらった","explanation":"直してもらった views the correction from the receiver's side. 先生に identifies the person doing the correcting.","legacyAliases":[{"rule":"てもらう views the same favour from the receiver's side","example":"先生(せんせい)に手紙(てがみ)を直(なお)し___。"}]} -->
+<!-- grammar-card: {"id":"rule-favor-direction","kind":"concept","format":"qa","priority":"essential","sourceSection":"てくれる — \"Someone does something for me/us\"","rule":"あげる: favor flows away from the speaker; くれる: someone does it for me; もらう: I receive it","example":"After a て-form, which giving/receiving verb marks a favor done for me by someone else, and which a favor done by me for someone else?","answer":"くれる: someone does it for me (or my in-group). あげる: I do it for someone else.","explanation":"もらう also describes a favor received, but from the receiver's viewpoint: 友達に手伝ってもらった."} -->
 
 ## Direction of Favor — Summary Table
 
@@ -155,8 +156,9 @@ Both describe receiving a favor, but:
 > 田中(たなか)さんが手伝(てつだ)ってくれた。— Tanaka helped me. (He was kind enough to help.)
 > 田中(たなか)さんに手伝(てつだ)ってもらった。— I got Tanaka to help me. (I received the favor.)
 
-<!-- grammar-card: {"id":"favor-subject-particles","kind":"concept","format":"qa","priority":"essential","sourceSection":"てくれる vs てもらう — What's the difference?","rule":"The giver is subject with くれる; the receiver is subject with もらう","example":"Who is the subject in 田中さんが手伝ってくれた, and who is the understood subject in 田中さんに手伝ってもらった?","answer":"Tanaka in the first; the receiver, normally I, in the second.","explanation":"Both can describe the same help. が versus に identifies Tanaka's different grammatical role, not a different direction of benefit."} -->
-<!-- grammar-card: {"id":"morau-not-always-requested","kind":"concept","format":"qa","priority":"optional","sourceSection":"てくれる vs てもらう — What's the difference?","rule":"Receiving-viewpoint てもらう does not logically require a prior request","example":"Does てもらった prove that the receiver explicitly asked for the favor first?","answer":"No. It foregrounds receiving the benefit; arranging or requesting it is common but not required.","explanation":"Likewise てくれた can describe help that was requested, not only spontaneous kindness."} -->
+<!-- grammar-card: {"id":"favor-subject-particles","kind":"rule","format":"qa","priority":"essential","sourceSection":"てくれる vs てもらう — What's the difference?","rule":"The giver is subject with くれる; the receiver is subject with もらう","example":"Who is the subject in 田中さんが手伝ってくれた, and who is the understood subject in 田中さんに手伝ってもらった?","answer":"Tanaka in the first; the receiver, normally I, in the second.","explanation":"Both can describe the same help. が versus に identifies Tanaka's different grammatical role, not a different direction of benefit."} -->
+<!-- grammar-card: {"id":"rule-morau-doer-particle","kind":"concept","format":"qa","priority":"essential","sourceSection":"てもらう — \"Receive the favor of someone doing something\"","rule":"With もらう the person who performs the favor is marked with に and the receiver is the subject","example":"In a received-favor sentence with もらう, which particle marks the performer of the favor?","answer":"に (the receiver is the subject).","explanation":"先生に直してもらった = I had the teacher correct it. With くれる, the doer is instead marked with が."} -->
+<!-- grammar-card: {"id":"morau-not-always-requested","kind":"concept","format":"qa","priority":"optional","sourceSection":"てくれる vs てもらう — What's the difference?","rule":"Receiving-viewpoint てもらう does not logically require a prior request","example":"What does てもらった foreground about a favor, and what does it not require?","answer":"Receiving the benefit; it does not require that the receiver asked for it first.","explanation":"Likewise てくれた can describe help that was requested, not only spontaneous kindness.","legacyAliases":[{"rule":"Receiving-viewpoint てもらう does not logically require a prior request","example":"Does てもらった prove that the receiver explicitly asked for the favor first?"}]} -->
 ## Honorific Versions
 
 In formal situations, use the honorific equivalents:
@@ -173,13 +175,13 @@ In formal situations, use the honorific equivalents:
 > *Shachou ni shiryou wo okutte sashiagemashita.*
 > I sent the materials to the president (humbly, as a favor).
 
-> お客様(きゃくさま)のお荷物(にもつ)をお持(も)ちしてさしあげます。
-> *Okyakusama no onimotsu wo omochi shite sashiagemasu.*
+> お客様(きゃくさま)のお荷物(にもつ)を持(も)ってさしあげます。
+> *Okyakusama no onimotsu wo motte sashiagemasu.*
 > I will carry the guest's luggage (for them).
 
 > 💡 **てさしあげる** can sound overly self-congratulatory. In modern business Japanese, many people avoid it and use **お〜する** patterns instead.
 
-<!-- grammar-card: {"id":"humble-outward-favor","kind":"concept","format":"qa","priority":"optional","sourceSection":"てさしあげる — Humble: Doing for a superior","rule":"てさしあげる is humble but can still overemphasize one's generosity","example":"Does changing てあげる to てさしあげる always make an offer to a superior socially appropriate?","answer":"No. It is humble in form but can still sound self-congratulatory; an appropriate お〜する expression may be safer.","explanation":"Humility of form and appropriateness of claiming a favor are separate issues."} -->
+<!-- grammar-card: {"id":"humble-outward-favor","kind":"concept","format":"qa","priority":"optional","sourceSection":"てさしあげる — Humble: Doing for a superior","rule":"てさしあげる is humble but can still overemphasize one's generosity","example":"Why can てさしあげる still sound inappropriate when offering a favor to a superior, even though it is humble?","answer":"It still claims the act as a favor and can sound self-congratulatory; an お〜する expression may be safer.","explanation":"Humility of form and appropriateness of claiming a favor are separate issues.","legacyAliases":[{"rule":"てさしあげる is humble but can still overemphasize one's generosity","example":"Does changing てあげる to てさしあげる always make an offer to a superior socially appropriate?"}]} -->
 ### てくださる — Respectful: A superior does for me
 
 > 先生(せんせい)が推薦状(すいせんじょう)を書(か)いてくださいました。
@@ -212,6 +214,7 @@ In formal situations, use the honorific equivalents:
 > 💡 **〜ていただけませんか** is one of the most polite ways to make a request in Japanese. It literally means "Could I receive the favor of you doing ~?"
 
 <!-- grammar-card: {"id":"humble-received-favor","kind":"rule","format":"cloze","priority":"essential","sourceSection":"ていただく — Humble: Receiving a favor from a superior","rule":"ていただく humbly describes receiving a favor from a respected person","example":"I received the teacher's help: 先生に手伝って___。 (いただく, polite past)","answer":"いただきました","explanation":"いただきました makes the receiver the understood subject and the teacher the helper marked by に."} -->
+<!-- grammar-card: {"id":"rule-favor-keigo-pairs","kind":"concept","format":"qa","priority":"optional","sourceSection":"Honorific Versions","rule":"くれる → くださる (respectful); もらう → いただく (humble); あげる → さしあげる (humble)","example":"When the favor involves a superior, which polite verbs replace くれる and もらう?","answer":"くれる → くださる (respectful); もらう → いただく (humble).","explanation":"先生が書いてくださった / 先生に書いていただいた. あげる → さしあげる also exists but is often avoided."} -->
 <!-- grammar-card: {"id":"deferential-request","kind":"rule","format":"cloze","priority":"essential","sourceSection":"ていただく — Humble: Receiving a favor from a superior","rule":"ていただけませんか uses negative potential to make a deferential request","example":"Could you please help me? 手伝って___。 (いただく, negative potential politely + か)","answer":"いただけませんか","explanation":"いただけませんか asks whether the speaker could receive the help; it is not a report that help has already happened."} -->
 <!-- quiz:{"type":"multiple-choice","question":"Which is the most polite way to ask someone to help you?","options":["手伝ってくれる？","手伝ってもらえる？","手伝っていただけませんか？","手伝ってあげましょうか？"],"answer":2} -->
 
@@ -251,7 +254,7 @@ In formal situations, use the honorific equivalents:
 | 先生が教えてあげた (about yourself) | 先生に教えてもらった | Use もらう when you receive |
 | 手伝ってあげてください (when asking for help for yourself) | 手伝ってくれませんか | あげてください is grammatical when requesting help for a third party instead |
 
-<!-- grammar-card: {"id":"third-party-request","kind":"concept","format":"qa","priority":"optional","sourceSection":"Common Mistakes","rule":"てあげてください can request a favor for a third party","example":"Is 弟を手伝ってあげてください always wrong?","answer":"No. It can ask someone to help my younger brother; it does not ask them to help me.","explanation":"Use てくれませんか or an appropriate receiving-based request when asking for a favor for yourself."} -->
+<!-- grammar-card: {"id":"third-party-request","kind":"rule","format":"qa","priority":"optional","sourceSection":"Common Mistakes","rule":"てあげてください can request a favor for a third party","example":"What is the speaker asking for with 弟を手伝ってあげてください?","answer":"For the listener to help my younger brother (a third party), not me.","explanation":"Use てくれませんか or an appropriate receiving-based request when asking for a favor for yourself.","legacyAliases":[{"rule":"てあげてください can request a favor for a third party","example":"Is 弟を手伝ってあげてください always wrong?"}]} -->
 
 <!-- quiz:{"type":"multiple-choice","question":"Your boss kindly explained the project. Which is correct?","options":["部長がプロジェクトを説明してあげた","部長にプロジェクトを説明してもらった","部長がプロジェクトを説明してくださった","部長がプロジェクトを説明していただいた"],"answer":2} -->
 

@@ -35,7 +35,7 @@ To say something is **not** something, replace だ with **じゃない**. This i
 
 <!-- vocab-card: {"id":"vocab-shizuka","word":"静か","reading":"しずか","meaning":"quiet","priority":"optional","sourceSection":"Negative: じゃない"} -->
 <!-- grammar-card: {"id":"copula-negative","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Negative: じゃない","rule":"Replace だ with じゃない for casual negation","example":"学生___。 (I am not a student; use the contracted casual form.)","answer":"じゃない","explanation":"Nouns and な-adjectives negate through the copula rather than an い-adjective ending."} -->
-<!-- grammar-card: {"id":"dewanai-register","kind":"concept","format":"qa","priority":"optional","sourceSection":"Negative: じゃない","rule":"An uncontracted negative is not automatically polite","example":"Does using ではない instead of じゃない make a sentence polite?","answer":"No. Both are plain negatives; ではない is the uncontracted, less conversational form.","explanation":"A polite form needs a polite ending, such as ではありません or じゃないです."} -->
+<!-- grammar-card: {"id":"dewanai-register","kind":"rule","format":"qa","priority":"optional","sourceSection":"Negative: じゃない","rule":"An uncontracted negative is not automatically polite","example":"Does using ではない instead of じゃない make a sentence polite?","answer":"No. Both are plain negatives; ではない is the uncontracted, less conversational form.","explanation":"A polite form needs a polite ending, such as ではありません or じゃないです."} -->
 
 <!-- quiz:{"type":"multiple-choice","question":"How do you say 'is not a teacher' using 先生 (sensei)?","options":["先生だ","先生だった","先生じゃない","先生じゃなかった"],"answer":2} -->
 
@@ -63,7 +63,8 @@ To say something **was not** something, use **じゃなかった**.
 
 <!-- vocab-card: {"id":"vocab-hima","word":"暇","reading":"ひま","meaning":"free; available (having spare time)","priority":"optional","sourceSection":"Negative Past: じゃなかった"} -->
 <!-- vocab-card: {"id":"vocab-kantan","word":"簡単","reading":"かんたん","meaning":"simple; easy","priority":"optional","sourceSection":"Negative Past: じゃなかった"} -->
-<!-- grammar-card: {"id":"copula-past-negative","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Negative Past: じゃなかった","rule":"The plain past negative of だ is じゃなかった","hint":"I was not a student; use the contracted casual form.","example":"学生___。","answer":"じゃなかった","explanation":"だ becomes じゃない in the negative and then じゃなかった in the past."} -->
+<!-- grammar-card: {"id":"copula-past-negative","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Negative Past: じゃなかった","rule":"The plain past negative of だ is じゃなかった","example":"学生___。 (I was not a student; use the contracted casual form.)","answer":"じゃなかった","explanation":"だ becomes じゃない in the negative and then じゃなかった in the past.","legacyAliases":[{"rule":"The plain past negative of だ is じゃなかった","example":"学生___。"}]} -->
+<!-- grammar-card: {"id":"rule-copula-past-negative","kind":"concept","format":"qa","priority":"optional","sourceSection":"Negative Past: じゃなかった","rule":"The plain past negative conjugates the final ない of the negative like an い-adjective","example":"How is the plain past negative of a noun predicate built from its plain negative?","answer":"Change the final ない to なかった, as with an い-adjective.","explanation":"Any answer stating ない → なかった counts (e.g. じゃない → じゃなかった)."} -->
 
 ## Conjugation Summary
 

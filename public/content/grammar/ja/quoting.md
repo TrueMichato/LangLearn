@@ -19,7 +19,7 @@ Direct quotes repeat the speaker's **exact words**, enclosed in quotation marks 
 > 💡 Japanese quotation marks are 「 」 (single) and 『 』 (double, for quotes within quotes).
 
 <!-- grammar-card: {"id":"quote-particle","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Direct Quotes with と言(い)う","rule":"と marks the end of a quotation","hint":"quoting particle","example":"田中(たなか)さんは「おはよう」___言いました。","answer":"と","explanation":"と follows the quoted words and links them to 言いました."} -->
-<!-- grammar-card: {"id":"direct-quote-register","kind":"concept","format":"qa","priority":"essential","sourceSection":"Direct Quotes with と言(い)う","rule":"A direct quotation preserves the original words, including their politeness","example":"May the exact direct quote 「明日テストがあります」と言いました retain ます inside the quotation?","answer":"Yes. A direct quote repeats the original words; the plain-form reporting rule applies to indirect quotes.","explanation":"Japanese 「 」 delimit the quoted words; 『 』 can mark a quotation within a quotation."} -->
+<!-- grammar-card: {"id":"direct-quote-register","kind":"rule","format":"qa","priority":"essential","sourceSection":"Direct Quotes with と言(い)う","rule":"A direct quotation preserves the original words, including their politeness","example":"May the exact direct quote 「明日テストがあります」と言いました retain ます inside the quotation?","answer":"Yes. A direct quote repeats the original words; the plain-form reporting rule applies to indirect quotes.","explanation":"Japanese 「 」 delimit the quoted words; 『 』 can mark a quotation within a quotation."} -->
 
 ## Indirect Quotes with と言う
 
@@ -50,8 +50,9 @@ The clause before と must be in **plain form** (not です/ます), except insi
 - **彼は学生**だ**と言いました。** — He said he is a student.
 - **このレストランはおいしい**と**聞(き)きました。** — I heard this restaurant is delicious.
 
-<!-- grammar-card: {"id":"indirect-plain-adjective","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Plain form before と","rule":"An indirect quote uses the plain form before と","hint":"難しい, plain","example":"先生はテストが難(むずか)し___と言いました。","answer":"い","explanation":"難しい is already plain; do not insert です or だ after an い-adjective in this indirect report."} -->
+<!-- grammar-card: {"id":"indirect-plain-adjective","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Plain form before と","rule":"An indirect quote uses the plain form before と","hint":"難しい, plain","example":"The teacher said the test was difficult (indirect quote): 先生はテストが難(むずか)し___と言いました。","answer":"い","explanation":"難しい is already plain; do not insert です or だ after an い-adjective in this indirect report.","legacyAliases":[{"rule":"An indirect quote uses the plain form before と","example":"先生はテストが難(むずか)し___と言いました。"}]} -->
 <!-- grammar-card: {"id":"indirect-copula","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Plain form before と","rule":"An affirmative nonpast noun or な-adjective retains plain だ before quotative と","example":"He said he is a student: 彼は学生___と言いました。","answer":"だ","explanation":"学生です becomes 学生だ in the indirect quotation. 静かです similarly becomes 静かだ."} -->
+<!-- grammar-card: {"id":"rule-indirect-plain","kind":"concept","format":"qa","priority":"essential","sourceSection":"Plain form before と","rule":"Indirect quotes use the plain form before と","example":"What predicate form goes before と in an indirect (reported) quote, even in a polite sentence?","answer":"The plain form (e.g. 学生だ, 難しい, 買った); politeness goes on the final 言いました.","explanation":"Saying plain form counts. Direct quotes in 「 」 keep the original wording instead."} -->
 <!-- grammar-card: {"id":"indirect-verb-past","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Indirect Quotes with と言う","rule":"A reported completed action uses a plain past verb before と","example":"Mother said she bought fish: 母は魚を___と言いました。 (買う)","answer":"買った","explanation":"The reported action is plain 買った, while 言いました can stay polite."} -->
 
 ## と思(おも)う — "I Think"
@@ -81,7 +82,7 @@ Use the progressive form for ongoing or settled beliefs:
 
 <!-- quiz:{"type":"multiple-choice","question":"'日本語は難しいと思います' means:","options":["Japanese thinks it's difficult","I think Japanese is difficult","Japanese is said to be difficult","I heard Japanese is difficult"],"answer":1} -->
 
-<!-- grammar-card: {"id":"own-opinion","kind":"rule","format":"cloze","priority":"essential","sourceSection":"と思(おも)う — \"I Think\"","rule":"と思う states the speaker's own opinion","hint":"think, polite","example":"明日は雨(あめ)が降(ふ)る___。","answer":"と思います","explanation":"This reports the speaker's belief, rather than something attributed to another source."} -->
+<!-- grammar-card: {"id":"own-opinion","kind":"rule","format":"cloze","priority":"essential","sourceSection":"と思(おも)う — \"I Think\"","rule":"と思う states the speaker's own opinion","hint":"think, polite","example":"I think it will rain tomorrow (polite): 明日は雨(あめ)が降(ふ)る___。","answer":"と思います","explanation":"This reports the speaker's belief, rather than something attributed to another source.","legacyAliases":[{"rule":"と思う states the speaker's own opinion","example":"明日は雨(あめ)が降(ふ)る___。"}]} -->
 
 ## と聞(き)いた — "I Heard That"
 
@@ -152,8 +153,9 @@ To embed an indirect question, use **か** after the question clause; it can con
 
 > 💡 **かどうか** means "whether or not" — use it when reporting yes/no questions.
 
-<!-- grammar-card: {"id":"embedded-whether","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Quoting Questions with か","rule":"かどうか embeds a yes-no question inside a sentence","hint":"whether or not","example":"彼(かれ)が来(く)る___分(わ)かりません。","answer":"かどうか","explanation":"来るかどうか embeds whether he is coming. No と is required before 分かりません."} -->
+<!-- grammar-card: {"id":"embedded-whether","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Quoting Questions with か","rule":"かどうか embeds a yes-no question inside a sentence","hint":"whether or not","example":"I don't know whether or not he is coming: 彼(かれ)が来(く)る___分(わ)かりません。","answer":"かどうか","explanation":"来るかどうか embeds whether he is coming. No と is required before 分かりません.","legacyAliases":[{"rule":"かどうか embeds a yes-no question inside a sentence","example":"彼(かれ)が来(く)る___分(わ)かりません。"}]} -->
 <!-- grammar-card: {"id":"embedded-wh-question","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Quoting Questions with か","rule":"か embeds a question containing a question word","example":"Please ask what time they are coming: 何時に来る___聞いてください。","answer":"か","explanation":"何時 already asks for a time. か marks the embedded question and connects directly to 聞く."} -->
+<!-- grammar-card: {"id":"rule-embedded-question","kind":"concept","format":"qa","priority":"optional","sourceSection":"Quoting Questions with か","rule":"Embedded yes/no questions take かどうか; questions with a question word take か","example":"When embedding a question inside a sentence, when do you use か alone and when “whether or not”?","answer":"か alone with a question word (何時に来るか); かどうか for a yes/no question (来るかどうか).","explanation":"Any answer linking question words to か and yes/no to かどうか counts."} -->
 
 ## という — "Called" / "Named"
 

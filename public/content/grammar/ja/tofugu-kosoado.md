@@ -23,7 +23,7 @@
 <!-- vocab-card: {"id":"vocab-soitsu","priority":"optional","sourceSection":"Complete こそあど Chart","word":"そいつ","reading":"そいつ","meaning":"that guy/person (very casual; can be disrespectful)"} -->
 <!-- vocab-card: {"id":"vocab-aitsu","priority":"optional","sourceSection":"Complete こそあど Chart","word":"あいつ","reading":"あいつ","meaning":"that guy/person over there (very casual; can be disrespectful)"} -->
 <!-- vocab-card: {"id":"vocab-doitsu","priority":"optional","sourceSection":"Complete こそあど Chart","word":"どいつ","reading":"どいつ","meaning":"which guy/person (very casual; can be disrespectful)"} -->
-<!-- grammar-card: {"id":"people-register","kind":"concept","format":"qa","priority":"essential","sourceSection":"Complete こそあど Chart","rule":"The こいつ series is not socially neutral person reference","example":"Is こいつ a safe polite way to introduce an unfamiliar adult?","answer":"No. The こいつ series is very casual and can sound disrespectful; use a suitable name, title, or polite reference instead.","explanation":"Shared distance patterns do not give all series the same social register."} -->
+<!-- grammar-card: {"id":"people-register","kind":"concept","format":"qa","priority":"essential","sourceSection":"Complete こそあど Chart","rule":"The こいつ series is not socially neutral person reference","example":"How does the こいつ series sound when introducing an unfamiliar adult, and what should be used instead?","answer":"It is very casual and can sound disrespectful; use a suitable name, title, or polite reference instead.","explanation":"Shared distance patterns do not give all series the same social register.","legacyAliases":[{"rule":"The こいつ series is not socially neutral person reference","example":"Is こいつ a safe polite way to introduce an unfamiliar adult?"}]} -->
 
 | Category | こ (close) | そ (away) | あ (distant) | ど (question) |
 |---|---|---|---|---|
@@ -42,7 +42,7 @@ The こいつ/そいつ/あいつ/どいつ series is very casual and can be dis
 - **ここ**に座ってください。 — Please sit **here**.
 
 ### Noun Modifiers (attach to nouns)
-<!-- grammar-card: {"id":"noun-modifier-kono","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Noun Modifiers (attach to nouns)","rule":"The -の members of each set modify a noun","hint":"this, directly before a noun","example":"___本(ほん)は面白(おもしろ)いです。","answer":"この","explanation":"この attaches directly to 本; これ is a standalone pronoun, not the modifier in this frame."} -->
+<!-- grammar-card: {"id":"noun-modifier-kono","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Noun Modifiers (attach to nouns)","rule":"The -の members of each set modify a noun","hint":"this, directly before a noun","example":"This book is interesting: ___本(ほん)は面白(おもしろ)いです。","answer":"この","explanation":"この attaches directly to 本; これ is a standalone pronoun, not the modifier in this frame.","legacyAliases":[{"rule":"The -の members of each set modify a noun","example":"___本(ほん)は面白(おもしろ)いです。"}]} -->
 - **その**ネコは白い。 — **That** cat is white.
 - **どの**山？ — **Which** mountain?
 
@@ -65,10 +65,12 @@ The こいつ/そいつ/あいつ/どいつ series is very casual and can be dis
 <!-- vocab-card: {"id":"vocab-ano","priority":"optional","sourceSection":"この / その / あの / どの","word":"あの","reading":"あの","meaning":"that over there (directly before a noun)"} -->
 <!-- vocab-card: {"id":"vocab-dono","priority":"optional","sourceSection":"この / その / あの / どの","word":"どの","reading":"どの","meaning":"which (directly before a noun)"} -->
 <!-- grammar-card: {"id":"pronoun-modifier-contrast","kind":"concept","format":"qa","priority":"essential","sourceSection":"この / その / あの / どの","rule":"これ stands alone whereas この requires a following noun","example":"Why is これ本 not the ordinary way to say this book?","answer":"これ is a pronoun standing for the thing; この is the modifier that directly precedes 本.","explanation":"The same grammatical contrast holds for それ/その, あれ/あの, and どれ/どの."} -->
+<!-- grammar-card: {"id":"rule-no-set-needs-noun","kind":"concept","format":"qa","priority":"essential","sourceSection":"この / その / あの / どの","rule":"The -の kosoado set must be followed by a noun","example":"What must always follow a kosoado word ending in -no, such as kono or sono?","answer":"A noun.","explanation":"この本 is complete, but この cannot stand alone; the -re words (これ) are the ones that stand alone as pronouns."} -->
 Same distance system but used **before a noun**: この山 (this mountain), どの山? (which mountain?).
 
 ### ここ / そこ / あそこ / どこ
-<!-- grammar-card: {"id":"question-location","kind":"rule","format":"cloze","priority":"essential","sourceSection":"ここ / そこ / あそこ / どこ","rule":"ど- forms the question member of every set","hint":"where","example":"すみません、駅(えき)は___ですか。","answer":"どこ","explanation":"どこ asks for a location; どれ asks which thing and どの modifies a following noun."} -->
+<!-- grammar-card: {"id":"question-location","kind":"rule","format":"cloze","priority":"essential","sourceSection":"ここ / そこ / あそこ / どこ","rule":"ど- forms the question member of every set","hint":"where","example":"Excuse me, where is the station?: すみません、駅(えき)は___ですか。","answer":"どこ","explanation":"どこ asks for a location; どれ asks which thing and どの modifies a following noun.","legacyAliases":[{"rule":"ど- forms the question member of every set","example":"すみません、駅(えき)は___ですか。"}]} -->
+<!-- grammar-card: {"id":"rule-do-question","kind":"concept","format":"qa","priority":"optional","sourceSection":"ここ / そこ / あそこ / どこ","rule":"The ど- member is the question word in every こそあど set","example":"Of ko-, so-, a-, and do-, which prefix forms the question word (which/where/how) in every set?","answer":"ど- (do-).","explanation":"どれ, どの, どこ, どちら, どんな, どう."} -->
 <!-- vocab-card: {"id":"vocab-koko","priority":"optional","sourceSection":"ここ / そこ / あそこ / どこ","word":"ここ","reading":"ここ","meaning":"here"} -->
 <!-- vocab-card: {"id":"vocab-soko","priority":"optional","sourceSection":"ここ / そこ / あそこ / どこ","word":"そこ","reading":"そこ","meaning":"there (near the listener or at the indicated place)"} -->
 <!-- vocab-card: {"id":"vocab-asoko","priority":"optional","sourceSection":"ここ / そこ / あそこ / どこ","word":"あそこ","reading":"あそこ","meaning":"over there; that place away from both"} -->
@@ -104,7 +106,7 @@ Polite direction/place/person reference. こっち/そっち/あっち/どっち
 
 ## Distance Rules
 
-<!-- grammar-card: {"id":"shared-viewpoint","kind":"concept","format":"qa","priority":"optional","sourceSection":"Distance Rules","rule":"A shared side-by-side viewpoint changes the practical reference zones","example":"When speaker and listener stand side by side, must そ refer to something held by the listener?","answer":"No. It commonly marks a medium-distance area away from their shared position, with こ close to both and あ farther away.","explanation":"The facing-each-other diagram is not the only spatial arrangement."} -->
+<!-- grammar-card: {"id":"shared-viewpoint","kind":"concept","format":"qa","priority":"optional","sourceSection":"Distance Rules","rule":"A shared side-by-side viewpoint changes the practical reference zones","example":"When speaker and listener stand side by side, what areas do こ, そ, and あ cover?","answer":"こ is close to both; そ is a medium distance away from their shared position (not necessarily the listener's); あ is farther away.","explanation":"The facing-each-other diagram is not the only spatial arrangement.","legacyAliases":[{"rule":"A shared side-by-side viewpoint changes the practical reference zones","example":"When speaker and listener stand side by side, must そ refer to something held by the listener?"}]} -->
 
 **When speaker and listener are side by side:**
 - こ = close to both
@@ -122,7 +124,7 @@ Polite direction/place/person reference. こっち/そっち/あっち/どっち
 
 <!-- quiz: {"type":"multiple-choice","question":"Which set is used as a noun modifier before another noun?","options":["これ/それ/あれ","この/その/あの","ここ/そこ/あそこ","こう/そう/ああ"],"answer":1} -->
 
-<!-- grammar-card: {"id":"speaker-near","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Distance Rules","rule":"こ- refers to what is near the speaker","example":"(手(て)に持(も)ちながら) ___は私の鍵(かぎ)です。","answer":"これ","explanation":"The key is in the speaker's hand, so the standalone pronoun これ is appropriate."} -->
+<!-- grammar-card: {"id":"speaker-near","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Distance Rules","rule":"こ- refers to what is near the speaker","example":"(holding it in hand) This is my key: (手(て)に持(も)ちながら) ___は私の鍵(かぎ)です。","answer":"これ","explanation":"The key is in the speaker's hand, so the standalone pronoun これ is appropriate.","legacyAliases":[{"rule":"こ- refers to what is near the speaker","example":"(手(て)に持(も)ちながら) ___は私の鍵(かぎ)です。"}]} -->
 
 ## Sources
 

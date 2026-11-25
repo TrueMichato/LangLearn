@@ -34,6 +34,7 @@ As usual, though, bear in mind that when you’re conjugating いい (good), its
 
 <!-- vocab-card: {"id":"vocab-hayai","priority":"optional","sourceSection":"Forming 〜く","word":"速い","reading":"はやい","meaning":"fast"} -->
 <!-- vocab-card: {"id":"vocab-ii","priority":"optional","sourceSection":"Forming 〜く","word":"いい","reading":"いい","meaning":"good"} -->
+<!-- grammar-card: {"id":"rule-ku-formation","kind":"concept","format":"qa","priority":"essential","sourceSection":"Forming 〜く","rule":"Replace the final い of an い-adjective with く to make its く form","example":"How do you make the く form of a regular い-adjective?","answer":"Remove the final い and add く to the stem.","explanation":"E.g. 安い → 安く; いい is the exception and uses よ (よく). \"Swap い for く\" counts."} -->
 <!-- grammar-card: {"id":"regular-ku","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Forming 〜く","rule":"Replace final い with く to make the continuative form","example":"速い → continuative form: ___.","answer":"速く","explanation":"速く (はやく) keeps the stem and replaces only the final い."} -->
 <!-- grammar-card: {"id":"ii-ku","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Forming 〜く","rule":"いい uses よ as its inflecting stem","example":"いい → continuative form: ___.","answer":"よく","explanation":"The form is よく, not いく."} -->
 
@@ -50,7 +51,8 @@ The く form allows an い-adjective to be used as an adverb. While adjectives d
   - They lived **happily**.
 
 <!-- vocab-card: {"id":"vocab-tanoshii","priority":"optional","sourceSection":"As an Adverb","word":"楽しい","reading":"たのしい","meaning":"fun; enjoyable"} -->
-<!-- grammar-card: {"id":"ku-adverb","kind":"rule","format":"cloze","priority":"essential","sourceSection":"As an Adverb","rule":"The く-form is what lets an い-adjective attach to a verb","hint":"楽しい → ?","example":"彼らは___暮らしていました。","answer":"楽しく","explanation":"楽しく describes how they lived. Here the く form modifies 暮らす rather than a noun."} -->
+<!-- grammar-card: {"id":"rule-ku-adverb-role","kind":"concept","format":"qa","priority":"optional","sourceSection":"As an Adverb","rule":"In its く form, an い-adjective can describe a verb, like an English -ly adverb","example":"When an い-adjective in its く form is placed before a verb, what job does it do?","answer":"It works as an adverb, describing how the action is done.","explanation":"Like English happy → happily. \"Modifies the verb / adverb\" counts."} -->
+<!-- grammar-card: {"id":"ku-adverb","kind":"rule","format":"cloze","priority":"essential","sourceSection":"As an Adverb","rule":"The く-form is what lets an い-adjective attach to a verb","hint":"楽しい → ?","example":"They lived happily (楽しい): 彼らは___暮らしていました。","answer":"楽しく","explanation":"楽しく (たのしく) describes how they lived. Here the く form modifies 暮らす rather than a noun.","legacyAliases":[{"rule":"The く-form is what lets an い-adjective attach to a verb","example":"彼らは___暮らしていました。"}]} -->
 
 ### As a Linking Device
 
@@ -63,7 +65,7 @@ The く form can also be used to link い-adjectives together. This is nearly id
 The く form can be used to change い-adjectives into nouns. However, the number of adjectives that can be used in this way is very limited in Japanese. Apart from 多い, only い-adjectives that describe characteristics of time or place can turn into く nouns.
 
 <!-- vocab-card: {"id":"vocab-ooi","priority":"optional","sourceSection":"As Nouns of Time or Location","word":"多い","reading":"おおい","meaning":"many; numerous"} -->
-<!-- grammar-card: {"id":"noun-use-limits","kind":"concept","format":"qa","priority":"essential","sourceSection":"As Nouns of Time or Location","rule":"Noun-like く forms are lexically restricted","example":"Can any い-adjective become a noun merely by changing い to く?","answer":"No. Noun-like uses are limited, mainly to established time or place expressions and 多く.","explanation":"The existence of a continuative form does not guarantee every possible noun use."} -->
+<!-- grammar-card: {"id":"noun-use-limits","kind":"concept","format":"qa","priority":"essential","sourceSection":"As Nouns of Time or Location","rule":"Noun-like く forms are lexically restricted","example":"Which い-adjectives can become nouns just by changing い to く?","answer":"Only a limited set: mainly adjectives describing time or place, plus 多い (多く).","explanation":"The existence of a continuative form does not guarantee every possible noun use. \"Only a few, mostly time/place words\" counts.","legacyAliases":[{"rule":"Noun-like く forms are lexically restricted","example":"Can any い-adjective become a noun merely by changing い to く?"}]} -->
 
 ---
 

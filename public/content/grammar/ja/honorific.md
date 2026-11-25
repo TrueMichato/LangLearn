@@ -29,7 +29,7 @@ This is the most basic level of politeness:
 - **お水(みず)はありますか。** — Is there water? (polite)
 - **お水はございますか。** — Is there water? (very polite)
 
-<!-- grammar-card: {"id":"gozaimasu","kind":"rule","format":"cloze","priority":"optional","sourceSection":"丁寧語 (Polite Language) — Quick Review","rule":"ございます is the elevated equivalent of あります","hint":"あります → very polite","example":"お水は___か。","answer":"ございます","explanation":"ございます makes existence more polite without honoring water as an actor."} -->
+<!-- grammar-card: {"id":"gozaimasu","kind":"rule","format":"cloze","priority":"optional","sourceSection":"丁寧語 (Polite Language) — Quick Review","rule":"ございます is the elevated equivalent of あります","hint":"あります → very polite","example":"Is there water? (very polite equivalent of あります): お水は___か。","answer":"ございます","explanation":"ございます makes existence more polite without honoring water as an actor.","legacyAliases":[{"rule":"ございます is the elevated equivalent of あります","example":"お水は___か。"}]} -->
 
 ## 尊敬語 (Honorific Language)
 
@@ -54,6 +54,7 @@ For many verbs, use **お + verb stem + になる**:
 - **こちらのペンをお使いになりますか。** — Would you like to use this pen?
 
 <!-- grammar-card: {"id":"honorific-productive","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Pattern 1: お + stem + になる","rule":"お plus ます-stem plus になる honors another person's action","example":"The teacher has gone home (use お〜になる): 先生はもうお帰り___。","answer":"になりました","explanation":"帰る → 帰り → お帰りになる. Do not use this form to elevate your own leaving."} -->
+<!-- grammar-card: {"id":"rule-honorific-pattern","kind":"concept","format":"qa","priority":"essential","sourceSection":"Pattern 1: お + stem + になる","rule":"お plus the ます-stem plus になる forms a productive honorific","example":"What general pattern turns many verbs into honorific (尊敬語) forms for a respected person's action?","answer":"お + ます-stem + になる (e.g. 読む → お読みになる).","explanation":"Naming お〜になる counts. It describes someone else's action, never your own."} -->
 
 ### Pattern 2: Special honorific verbs
 
@@ -95,7 +96,8 @@ The passive form can also be used as a lighter honorific:
 
 This is less formal than the お〜になる pattern or special verbs.
 
-<!-- grammar-card: {"id":"passive-honorific","kind":"concept","format":"qa","priority":"essential","sourceSection":"Pattern 3: 〜れる / 〜られる (Passive as honorific)","rule":"Passive-shaped forms can honor the actor rather than express a passive event","example":"In 先生は何時に来られますか, must 来られる mean “is come to” or “can come”?","answer":"No. In this context it can honor the teacher's coming: “What time will the teacher come?”","explanation":"The form is shared with passive and potential; context and the respected actor select the honorific reading."} -->
+<!-- grammar-card: {"id":"passive-honorific","kind":"rule","format":"qa","priority":"essential","sourceSection":"Pattern 3: 〜れる / 〜られる (Passive as honorific)","rule":"Passive-shaped forms can honor the actor rather than express a passive event","example":"In 先生は何時に来られますか, must 来られる mean “is come to” or “can come”?","answer":"No. In this context it can honor the teacher's coming: “What time will the teacher come?”","explanation":"The form is shared with passive and potential; context and the respected actor select the honorific reading."} -->
+<!-- grammar-card: {"id":"rule-passive-honorific-level","kind":"concept","format":"qa","priority":"optional","sourceSection":"Pattern 3: 〜れる / 〜られる (Passive as honorific)","rule":"Passive-shaped honorifics are lighter than お〜になる or special honorific verbs","example":"How does the passive-shaped honorific (e.g. 行かれる) compare in formality with お〜になる and special honorific verbs?","answer":"It is lighter, less formal than お〜になる or special verbs such as いらっしゃる.","explanation":"Any answer saying it is a milder or less formal honorific counts."} -->
 
 ## 謙譲語 (Humble Language)
 
@@ -118,6 +120,7 @@ Used to describe **your own actions** when speaking to someone you respect. You 
 - **ご自宅(じたく)にお届けします。** — I'll deliver it to your home.
 
 <!-- grammar-card: {"id":"humble-productive","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Pattern 1: お + stem + する","rule":"お plus ます-stem plus する humbles one's action for another person","example":"I will carry your luggage (use お〜する): お荷物をお持ち___。","answer":"します","explanation":"持つ → 持ち → お持ちする. This describes the speaker's action in service of the listener."} -->
+<!-- grammar-card: {"id":"rule-humble-pattern","kind":"concept","format":"qa","priority":"essential","sourceSection":"Pattern 1: お + stem + する","rule":"お plus the ます-stem plus する forms a productive humble form","example":"What general pattern turns many verbs into humble (謙譲語) forms for your own action toward a respected person?","answer":"お + ます-stem + する (e.g. 送る → お送りする).","explanation":"Naming お〜する counts. Do not confuse it with honorific お〜になる, which elevates the other person."} -->
 
 ### Pattern 2: Special humble verbs
 
@@ -205,7 +208,7 @@ Used to describe **your own actions** when speaking to someone you respect. You 
 - ❌ 私がいらっしゃいます。 (using honorific for yourself)
 - ✅ 私が参ります。 (humble for yourself)
 
-<!-- grammar-card: {"id":"self-versus-other","kind":"concept","format":"qa","priority":"essential","sourceSection":"1. Using honorifics for yourself","rule":"Choose honorific or humble according to whose action is described","example":"When speaking respectfully, which fits “I will come,” 参ります or いらっしゃいます?","answer":"参ります. いらっしゃいます would elevate the speaker's own action.","explanation":"Conversely, honor a teacher's saying with おっしゃる, not the humble 申す."} -->
+<!-- grammar-card: {"id":"self-versus-other","kind":"rule","format":"qa","priority":"essential","sourceSection":"1. Using honorifics for yourself","rule":"Choose honorific or humble according to whose action is described","example":"When speaking respectfully, which fits “I will come,” 参ります or いらっしゃいます?","answer":"参ります. いらっしゃいます would elevate the speaker's own action.","explanation":"Conversely, honor a teacher's saying with おっしゃる, not the humble 申す."} -->
 
 ### 2. Using humble forms for others
 
@@ -217,7 +220,7 @@ Used to describe **your own actions** when speaking to someone you respect. You 
 - ❌ お召し上がりになる (double honor)
 - ✅ 召し上がる (one honorific is enough)
 
-<!-- grammar-card: {"id":"avoid-double-honorific","kind":"concept","format":"qa","priority":"optional","sourceSection":"3. Double honorifics","rule":"A dedicated honorific normally does not need another honorific wrapper","example":"Which form should a learner prefer here: 召し上がる or お召し上がりになる?","answer":"召し上がる, the single dedicated honorific.","explanation":"The lesson recommends avoiding stacked honorifics rather than adding お〜になる to an already honorific verb."} -->
+<!-- grammar-card: {"id":"avoid-double-honorific","kind":"rule","format":"qa","priority":"optional","sourceSection":"3. Double honorifics","rule":"A dedicated honorific normally does not need another honorific wrapper","example":"Which form should a learner prefer here: 召し上がる or お召し上がりになる?","answer":"召し上がる, the single dedicated honorific.","explanation":"The lesson recommends avoiding stacked honorifics rather than adding お〜になる to an already honorific verb."} -->
 
 ## When to Use 敬語
 
@@ -228,7 +231,7 @@ Used to describe **your own actions** when speaking to someone you respect. You 
 | Boss, teacher, elders | 尊敬語 + 謙譲語 |
 | Customers, formal business | Full 敬語 |
 
-<!-- grammar-card: {"id":"register-choice","kind":"concept","format":"qa","priority":"essential","sourceSection":"When to Use 敬語","rule":"The relationship and setting determine the appropriate politeness register","example":"Must a conversation with close friends use the same full 敬語 as formal customer service?","answer":"No. Plain or casual speech suits close friends, while customer service typically calls for polite, honorific, and humble forms.","explanation":"These are contextual choices, not a requirement to use the most elaborate form everywhere."} -->
+<!-- grammar-card: {"id":"register-choice","kind":"concept","format":"qa","priority":"essential","sourceSection":"When to Use 敬語","rule":"The relationship and setting determine the appropriate politeness register","example":"What speech level suits close friends, and what does formal customer service call for?","answer":"Plain or casual speech for close friends; polite speech plus honorific and humble forms (full 敬語) for customer service.","explanation":"These are contextual choices, not a requirement to use the most elaborate form everywhere.","legacyAliases":[{"rule":"The relationship and setting determine the appropriate politeness register","example":"Must a conversation with close friends use the same full 敬語 as formal customer service?"}]} -->
 <!-- quiz:{"type":"multiple-choice","question":"You want to say 'I looked at the documents' to your boss. Choose the humble form:","options":["資料を見ました","資料をご覧になりました","資料を拝見しました","資料を見られました"],"answer":2} -->
 
 ## Practice Tips

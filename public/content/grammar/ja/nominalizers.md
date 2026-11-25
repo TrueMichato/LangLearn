@@ -20,7 +20,7 @@ In Japanese, you attach **の** or **こと** after the plain form of a verb to 
 > *Hon wo yomu **no** ga suki desu.*
 > I like **reading** books.
 
-<!-- grammar-card: {"id":"activity-nominalization","kind":"rule","format":"cloze","priority":"essential","sourceSection":"What Is Nominalization?","rule":"こと turns a verb into a general activity","hint":"Use the more abstract nominalizer taught here.","example":"泳(およ)ぐ___が好(す)きです。","answer":"こと","explanation":"泳ぐこと (およぐこと) makes swimming a noun phrase marked by が. の is also grammatical here; this item practices the こと version."} -->
+<!-- grammar-card: {"id":"activity-nominalization","kind":"rule","format":"cloze","priority":"essential","sourceSection":"What Is Nominalization?","rule":"こと turns a verb into a general activity","hint":"Use the more abstract nominalizer taught here.","example":"I like swimming (use the more abstract nominalizer): 泳(およ)ぐ___が好(す)きです。","answer":"こと","explanation":"泳ぐこと (およぐこと) makes swimming a noun phrase marked by が. の is also grammatical here; this item practices the こと version.","legacyAliases":[{"rule":"こと turns a verb into a general activity","example":"泳(およ)ぐ___が好(す)きです。"}]} -->
 <!-- grammar-card: {"id":"nominalizer-function","kind":"concept","format":"qa","priority":"essential","sourceSection":"Basic Formation","rule":"の and こと make plain-form clauses usable as noun phrases","example":"What does adding の or こと let a verb clause do in a sentence?","answer":"Function as a noun phrase, for example as a subject or object.","explanation":"Attach it to a plain clause, including past or negative forms, rather than to a ます-stem."} -->
 
 ## Basic Formation
@@ -46,7 +46,7 @@ Past tense and negative forms also work:
 
 <!-- quiz:{"type":"multiple-choice","question":"How do you say 'I like singing' using こと?","options":["歌うのが好きです","歌うことが好きです","歌うことを好きです","歌ったことが好きです"],"answer":1} -->
 
-<!-- grammar-card: {"id":"specific-event-nominalization","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Basic Formation","rule":"の nominalises a concrete, specific event","hint":"Use the conversational nominalizer for this particular event.","example":"朝(あさ)ご飯(はん)を食(た)べなかった___はよくない。","answer":"の","explanation":"の presents this skipped breakfast as an event. こと can also be possible with a more abstract framing; this is a preference, not an absolute ban."} -->
+<!-- grammar-card: {"id":"specific-event-nominalization","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Basic Formation","rule":"の nominalises a concrete, specific event","hint":"Use the conversational nominalizer for this particular event.","example":"Skipping breakfast (that particular time) was not good — use the conversational nominalizer: 朝(あさ)ご飯(はん)を食(た)べなかった___はよくない。","answer":"の","explanation":"の presents this skipped breakfast as an event. こと can also be possible with a more abstract framing; this is a preference, not an absolute ban.","legacyAliases":[{"rule":"の nominalises a concrete, specific event","example":"朝(あさ)ご飯(はん)を食(た)べなかった___はよくない。"}]} -->
 
 ## When の and こと Are Interchangeable
 
@@ -62,7 +62,7 @@ In many cases, both work with little difference in meaning:
 
 General tendency: **の** sounds more casual and spoken; **こと** sounds slightly more formal and written.
 
-<!-- grammar-card: {"id":"nominalizer-interchangeability","kind":"concept","format":"qa","priority":"essential","sourceSection":"When の and こと Are Interchangeable","rule":"Many evaluations of activities allow either nominalizer","example":"In 料理するの／ことが楽しい, must one nominalizer be rejected?","answer":"No. Both are possible; の tends to sound more conversational and concrete, こと more abstract or formal.","explanation":"This tendency does not override fixed constructions such as たことがある."} -->
+<!-- grammar-card: {"id":"nominalizer-interchangeability","kind":"concept","format":"qa","priority":"essential","sourceSection":"When の and こと Are Interchangeable","rule":"Many evaluations of activities allow either nominalizer","example":"In a general evaluation such as 料理するの／ことが楽しい, which nominalizer is correct, and how do they differ in tone?","answer":"Both are possible; の tends to sound more conversational and concrete, こと more abstract or formal.","explanation":"This tendency does not override fixed constructions such as たことがある.","legacyAliases":[{"rule":"Many evaluations of activities allow either nominalizer","example":"In 料理するの／ことが楽しい, must one nominalizer be rejected?"}]} -->
 ## When こと Is Required or Preferred
 
 ### 1. こと in set expressions
@@ -91,6 +91,7 @@ Several fixed grammar patterns require **こと**:
 
 <!-- grammar-card: {"id":"experience-koto","kind":"rule","format":"cloze","priority":"essential","sourceSection":"1. こと in set expressions","rule":"Past plain verb + ことがある expresses prior experience","example":"I have climbed Mt. Fuji before: 富士山に登った___がある。","answer":"こと","explanation":"登ったことがある (のぼったことがある) requires こと in this experience construction, not の."} -->
 <!-- grammar-card: {"id":"ability-koto","kind":"rule","format":"cloze","priority":"essential","sourceSection":"1. こと in set expressions","rule":"Dictionary form + ことができる expresses ability","example":"I can speak Japanese: 日本語を話す___ができる。","answer":"こと","explanation":"話すことができる nominalizes the action before できる; の cannot replace こと in this fixed ability pattern."} -->
+<!-- grammar-card: {"id":"rule-fixed-patterns-koto","kind":"concept","format":"qa","priority":"essential","sourceSection":"1. こと in set expressions","rule":"Fixed patterns for experience, ability and decisions (〜がある, 〜ができる, 〜にする, 〜になる) require こと","example":"Which nominalizer do the fixed patterns for past experience, ability and decisions require?","answer":"こと (の cannot replace it there).","explanation":"Naming こと counts: 行ったことがある, 話すことができる, 留学することにした."} -->
 <!-- grammar-card: {"id":"decision-koto-contrast","kind":"concept","format":"qa","priority":"essential","sourceSection":"1. こと in set expressions","rule":"ことにする and ことになる frame decisions differently","example":"How does 留学することにした differ from 留学することになった?","answer":"ことにした presents a personal decision; ことになった presents it as an arrangement or outcome.","explanation":"Both use こと, but する foregrounds making the decision and なる foregrounds the resulting situation."} -->
 <!-- quiz:{"type":"multiple-choice","question":"Which is correct: 'I have eaten sushi before'?","options":["寿司を食べるのがある","寿司を食べたことがある","寿司を食べるのにある","寿司を食べたのがある"],"answer":1} -->
 
@@ -127,6 +128,7 @@ When you see, hear, or feel someone doing something, use **の**:
 > I heard someone singing.
 
 <!-- grammar-card: {"id":"perception-no","kind":"rule","format":"cloze","priority":"essential","sourceSection":"1. Perception verbs (見る、聞く、感じる)","rule":"Direct perception of an event takes の as nominalizer","example":"I saw the children playing: 子供たちが遊んでいる___を見た。","answer":"の","explanation":"の presents the event directly seen. This restriction concerns direct perception, not every use of 見る or 聞く."} -->
+<!-- grammar-card: {"id":"rule-perception-no","kind":"concept","format":"qa","priority":"essential","sourceSection":"1. Perception verbs (見る、聞く、感じる)","rule":"A clause describing an event you directly see, hear or feel is nominalized with の","example":"When a verb of direct perception (seeing, hearing, feeling) takes a whole clause as its object, which nominalizer does the clause take?","answer":"の (not こと).","explanation":"Naming の counts. 子供たちが遊んでいるのを見た — the children playing were directly seen."} -->
 ### 2. With 待つ、手伝う、止める (direct interaction verbs)
 
 > 友達(ともだち)が来(く)る**の**を待(ま)っている。
@@ -146,7 +148,7 @@ When you see, hear, or feel someone doing something, use **の**:
 
 (Here こと is also possible, but の sounds more natural and personal.)
 
-<!-- grammar-card: {"id":"emotional-no-not-exclusive","kind":"concept","format":"qa","priority":"optional","sourceSection":"3. Emotional or sensory descriptions","rule":"Emotional evaluations often favor の without excluding こと","example":"Is こと impossible in a personal statement such as traveling alone is lonely?","answer":"No. の often sounds more immediate and personal, but こと can also be used.","explanation":"Unlike direct event perception, this emotional-evaluation context expresses a preference rather than an absolute restriction."} -->
+<!-- grammar-card: {"id":"emotional-no-not-exclusive","kind":"concept","format":"qa","priority":"optional","sourceSection":"3. Emotional or sensory descriptions","rule":"Emotional evaluations often favor の without excluding こと","example":"How strong is the preference for の in a personal, emotional evaluation such as 'traveling alone is lonely'?","answer":"Only a preference: の often sounds more immediate and personal, but こと can also be used.","explanation":"Unlike direct event perception, this emotional-evaluation context expresses a preference rather than an absolute restriction.","legacyAliases":[{"rule":"Emotional evaluations often favor の without excluding こと","example":"Is こと impossible in a personal statement such as traveling alone is lonely?"}]} -->
 <!-- quiz:{"type":"multiple-choice","question":"'I saw him running' — which nominalizer fits?","options":["彼が走っていることを見た","彼が走っているのを見た","彼が走っているのに見た","彼が走っていることに見た"],"answer":1} -->
 
 ## の as Explanation (んです / のです)
@@ -163,7 +165,7 @@ A very common use of の is the **explanatory の** (often contracted to **ん**
 
 This の/ん adds a nuance of **explanation**, **emphasis**, or **emotional involvement**. It is NOT the same as the nominalizer — but it evolved from the same grammatical の.
 
-<!-- grammar-card: {"id":"explanatory-ndesu","kind":"rule","format":"cloze","priority":"essential","sourceSection":"の as Explanation (んです / のです)","rule":"んです presents a statement as an explanation","hint":"Use the contracted explanatory ending, politely.","example":"頭(あたま)が痛(いた)い___。","answer":"んです","explanation":"んです frames the headache as relevant background or a reason rather than merely stating a fact. It contracts のです."} -->
+<!-- grammar-card: {"id":"explanatory-ndesu","kind":"rule","format":"cloze","priority":"essential","sourceSection":"の as Explanation (んです / のです)","rule":"んです presents a statement as an explanation","hint":"Use the contracted explanatory ending, politely.","example":"Politely explaining why you look unwell — '(The thing is,) I have a headache', contracted spoken form: 頭(あたま)が痛(いた)い___。","answer":"んです","explanation":"んです frames the headache as relevant background or a reason rather than merely stating a fact. It contracts のです; のです is also correct but less conversational.","legacyAliases":[{"rule":"んです presents a statement as an explanation","example":"頭(あたま)が痛(いた)い___。"}]} -->
 
 ## Quick Reference: の vs こと
 

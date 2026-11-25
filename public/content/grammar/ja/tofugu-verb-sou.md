@@ -58,6 +58,7 @@ Once a verb is in the そう form, although it is still a verb in terms of meani
 <!-- grammar-card: {"id":"verb-stem-formation","kind":"rule","format":"cloze","priority":"essential","sourceSection":"What Is そう?","rule":"Verb appearance そう attaches to the ます-stem","example":"泣く → looks about to cry: ___.","answer":"泣きそう","explanation":"泣く becomes 泣きます; replace ます with そう. This lesson concerns verb stems, not adjective endings.","legacyAliases":[{"rule":"そう attaches to the adjective stem, dropping the final い","example":"このケーキ、おいし___ですね。"}]} -->
 <!-- grammar-card: {"id":"suru-appearance","kind":"rule","format":"cloze","priority":"optional","sourceSection":"What Is そう?","rule":"The ます-stem of する is し","example":"する → looks likely to do it: ___.","answer":"しそう","explanation":"Start with します and remove ます before adding そう."} -->
 <!-- grammar-card: {"id":"kuru-appearance-reading","kind":"rule","format":"qa","priority":"optional","sourceSection":"What Is そう?","rule":"来る uses its き stem before appearance そう","example":"Give the appearance form of 来る, including its kana reading.","answer":"来そう (きそう).","explanation":"来ます is きます, so its stem here is き, not く or こ."} -->
+<!-- grammar-card: {"id":"rule-masu-stem","kind":"concept","format":"qa","priority":"essential","sourceSection":"What Is そう?","rule":"Appearance そう attaches to the ます-stem of every verb, without exception","example":"Which verb form does the 'looks like it's about to …' ending attach to, and are there exceptions among verb classes?","answer":"The ます-stem (the ます form minus ます); no exceptions, even for irregular verbs.","explanation":"Any answer naming the ます-stem or pre-ます form counts. 泣きます → 泣きそう, します → しそう, 来ます → 来そう (きそう)."} -->
 
 ## そう for Interpreting Things We Can See
 
@@ -74,7 +75,7 @@ If it turns out to be a major storm and the tree outside our window looks like i
   - Looks like that tree is going to fall down!
 
 <!-- vocab-card: {"id":"vocab-taoreru","word":"倒れる","reading":"たおれる","meaning":"to fall over; to collapse","priority":"optional","sourceSection":"そう for Interpreting Things We Can See"} -->
-<!-- grammar-card: {"id":"visible-imminence","kind":"rule","format":"cloze","priority":"essential","sourceSection":"そう for Interpreting Things We Can See","rule":"そう on a verb stem means something is about to happen","example":"棚(たな)から本(ほん)が落(お)ち___。","answer":"そうです","explanation":"落ちそうです predicts a fall from the current appearance; it does not assert that the book actually falls."} -->
+<!-- grammar-card: {"id":"visible-imminence","kind":"rule","format":"cloze","priority":"essential","sourceSection":"そう for Interpreting Things We Can See","rule":"そう on a verb stem means something is about to happen","example":"棚(たな)から本(ほん)が落(お)ち___。","answer":"そうです","explanation":"落ちそうです predicts a fall from the current appearance; it does not assert that the book actually falls. Plain そう or そうだ also count; そうです is the polite version."} -->
 
 ## そう for Interpreting Things We Feel
 
@@ -98,7 +99,7 @@ B:  No. It's going to be very tiring.
 
 In this context, you are imagining yourself being tired from running the marathon.
 
-<!-- grammar-card: {"id":"felt-or-imagined-evidence","kind":"concept","format":"qa","priority":"essential","sourceSection":"そう for Interpreting Things We Feel","rule":"Appearance そう can draw on feelings and imagined experience as well as sight","example":"Must 泣きそう or 疲れそう be based on watching somebody else?","answer":"No. The speaker can predict crying from their own feelings or imagine becoming tired in a prospective situation.","explanation":"This is a judgment about what seems likely, not a report of someone else's words."} -->
+<!-- grammar-card: {"id":"felt-or-imagined-evidence","kind":"concept","format":"qa","priority":"essential","sourceSection":"そう for Interpreting Things We Feel","rule":"Appearance そう can draw on feelings and imagined experience as well as sight","example":"Besides what the speaker can see, what else can verb-stem appearance そう be based on?","answer":"The speaker's own feelings, or an experience they imagine (e.g. つらい。泣きそう。 or picturing a tiring marathon: すごい疲れそう).","explanation":"Any answer naming feelings or imagination counts. This is a judgment about what seems likely, not a report of someone else's words.","legacyAliases":[{"rule":"Appearance そう can draw on feelings and imagined experience as well as sight","example":"Must 泣きそう or 疲れそう be based on watching somebody else?"}]} -->
 
 ## When You Can't Use そう
 
@@ -110,7 +111,7 @@ You may have already seen the past form of the verb with 〜そう, but in this 
 
   - I heard that that tree fell down!
 
-<!-- grammar-card: {"id":"appearance-hearsay-contrast","kind":"concept","format":"qa","priority":"essential","sourceSection":"When You Can't Use そう","rule":"Stem + そう judges an appearance; a plain clause + そうだ reports hearsay","example":"How does 倒れそうだ differ from 倒れたそうだ?","answer":"The first means it looks about to fall; the second means I heard that it fell.","explanation":"The completed past clause 倒れた belongs to the hearsay construction, not the appearance construction.","legacyAliases":[{"rule":"Adjectives whose quality is directly visible cannot take そう","example":"あの花(はな)は___ですね。"}]} -->
+<!-- grammar-card: {"id":"appearance-hearsay-contrast","kind":"rule","format":"qa","priority":"essential","sourceSection":"When You Can't Use そう","rule":"Stem + そう judges an appearance; a plain clause + そうだ reports hearsay","example":"How does 倒れそうだ differ from 倒れたそうだ?","answer":"The first means it looks about to fall; the second means I heard that it fell.","explanation":"The completed past clause 倒れた belongs to the hearsay construction, not the appearance construction.","legacyAliases":[{"rule":"Adjectives whose quality is directly visible cannot take そう","example":"あの花(はな)は___ですね。"}]} -->
 
 ## Other Forms of そう
 
@@ -135,10 +136,11 @@ And, of course, we can attach it to the beginning of a noun by adding な betwee
   - A stormy sky 
  (*Literally*: a sky that looks like it's going to rain.)
 
-<!-- grammar-card: {"id":"past-appearance-not-outcome","kind":"concept","format":"qa","priority":"essential","sourceSection":"Other Forms of そう","rule":"そうだった locates the appearance in the past without guaranteeing the event","example":"Does 昨日は雨が降りそうだった mean that rain actually fell yesterday?","answer":"No. It looked likely to rain yesterday, but it may not have rained.","explanation":"The lesson explicitly follows this with 結局降らなかった: in the end it did not rain."} -->
+<!-- grammar-card: {"id":"past-appearance-not-outcome","kind":"concept","format":"qa","priority":"essential","sourceSection":"Other Forms of そう","rule":"そうだった locates the appearance in the past without guaranteeing the event","example":"When appearance そう is put in the past (stem + そうだった), what does it tell you about whether the predicted event happened?","answer":"Nothing definite: it only says the event looked likely at that past time; it may not have happened.","explanation":"The lesson follows 昨日は雨が降りそうだった with 結局降らなかった: in the end it did not rain. Any answer saying the outcome is left open counts.","legacyAliases":[{"rule":"そうだった locates the appearance in the past without guaranteeing the event","example":"Does 昨日は雨が降りそうだった mean that rain actually fell yesterday?"}]} -->
 <!-- grammar-card: {"id":"polite-appearance","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Other Forms of そう","rule":"Appearance そう can take the polite ending です","example":"Make 雨が降りそう polite: 雨が降りそう___。","answer":"です","explanation":"Like a な-adjective predicate, そう can end in だ or polite です."} -->
 <!-- grammar-card: {"id":"noun-link-na","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Other Forms of そう","rule":"Appearance そう uses な before a noun","example":"雨が降りそう___空。","answer":"な","explanation":"The stem + そう expression behaves like a な-adjective when modifying 空."} -->
 <!-- grammar-card: {"id":"noun-appearance-expression","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Other Forms of そう","rule":"そう behaves as a な-adjective","example":"雨(あめ)が降(ふ)り___な空(そら)だ。","answer":"そう","explanation":"降りそうな空 describes a sky that looks as though it will rain."} -->
+<!-- grammar-card: {"id":"rule-na-adjective-behavior","kind":"concept","format":"qa","priority":"optional","sourceSection":"Other Forms of そう","rule":"Once a verb takes appearance そう, it combines with other words like a な-adjective","example":"Once a verb takes the 'looks like it's about to …' ending, which word class does it behave like when linking to other words?","answer":"A な-adjective.","explanation":"Like a な-adjective it can end in だ or です and links to a following noun with な: 雨が降りそうな空."} -->
 ---
 
 #### Sources and Additional Readings

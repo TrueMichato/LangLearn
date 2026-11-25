@@ -57,8 +57,9 @@ Particle も is sometimes added to より, as in:
 
 This も clarifies the relationship between the two compared entities, so it's a little emphatic, but the meaning remains the same.
 
-<!-- grammar-card: {"id":"yori-standard","kind":"rule","format":"cloze","priority":"essential","sourceSection":"〜は〜より〜","rule":"より marks the standard something is compared against","hint":"than that strawberry","example":"このイチゴは、あのイチゴ___大きい。","answer":"より","explanation":"あのイチゴより means than that strawberry. The strawberry marked by は is the one described as bigger."} -->
-<!-- grammar-card: {"id":"yori-mo-emphasis","kind":"concept","format":"qa","priority":"optional","sourceSection":"〜は〜より〜","rule":"よりも adds mild emphasis without reversing the comparison","example":"Does adding も after より change which person is taller in トムはベンよりも背が高い?","answer":"No. Tom is still taller; も makes the comparison a little more emphatic.","explanation":"は marks the topic and より marks the comparison standard. The より phrase can also be inserted before 高い without changing those roles."} -->
+<!-- grammar-card: {"id":"yori-standard","kind":"rule","format":"cloze","priority":"essential","sourceSection":"〜は〜より〜","rule":"より marks the standard something is compared against","hint":"than that strawberry","example":"このイチゴは、あのイチゴ___大きい。","answer":"より","explanation":"あのイチゴより means than that strawberry. The strawberry marked by は is the one described as bigger. よりも also counts (slightly more emphatic)."} -->
+<!-- grammar-card: {"id":"rule-yori-standard-role","kind":"concept","format":"qa","priority":"essential","sourceSection":"〜は〜より〜","rule":"より marks the standard of comparison; the other item has more of the quality","example":"In a comparison, what role does the noun marked by the 'than' particle play?","answer":"It is the standard being compared against; the other item has more of the quality.","explanation":"Counts if it says the marked noun is the baseline/'than' side. トムはベンより背が高い: Ben is the standard, Tom is taller."} -->
+<!-- grammar-card: {"id":"yori-mo-emphasis","kind":"rule","format":"qa","priority":"optional","sourceSection":"〜は〜より〜","rule":"よりも adds mild emphasis without reversing the comparison","example":"Does adding も after より change which person is taller in トムはベンよりも背が高い?","answer":"No. Tom is still taller; も makes the comparison a little more emphatic.","explanation":"は marks the topic and より marks the comparison standard. The より phrase can also be inserted before 高い without changing those roles."} -->
 <!-- vocab-card: {"id":"vocab-se-ga-takai","word":"背が高い","reading":"せがたかい","meaning":"tall (of a person)","priority":"optional","sourceSection":"〜は〜より〜"} -->
 Note if the description part can be grammatically broken apart, 〜より can be put between the separated components.
 
@@ -132,7 +133,7 @@ Again, if it's obvious what you are comparing with, you can omit 〜より and s
 
   - It tastes better when I make it.
 
-<!-- grammar-card: {"id":"hou-clause-comparison","kind":"rule","format":"cloze","priority":"essential","sourceSection":"〜方が〜より〜","rule":"方が identifies the side being described in a comparison and can follow a plain clause","hint":"Compare how it tastes when I make it","example":"私が作る___おいしい。","answer":"方が","explanation":"The plain clause 私が作る modifies 方 directly. The omitted より side is understood; 方が need not always express a preference in every comparison.","legacyAliases":[{"rule":"方が marks the preferred side of a comparison","example":"私が作る___おいしい。"}]} -->
+<!-- grammar-card: {"id":"hou-clause-comparison","kind":"rule","format":"cloze","priority":"essential","sourceSection":"〜方が〜より〜","rule":"方が identifies the side being described in a comparison and can follow a plain clause","hint":"Compare how it tastes when I make it","example":"私が作る___おいしい。 (It tastes better when I make it.)","answer":"方が","explanation":"The plain clause 私が作る modifies 方 directly. The omitted より side is understood; 方が need not always express a preference in every comparison.","legacyAliases":[{"rule":"方が marks the preferred side of a comparison","example":"私が作る___おいしい。"},{"rule":"方が identifies the side being described in a comparison and can follow a plain clause","example":"私が作る___おいしい。"}]} -->
 
 #### Degrees of Difference with 〜より
 
@@ -148,7 +149,7 @@ Similarly, if you want to state that an apple pie costs $5 more than a pumpkin p
 
   - The apple pie is **five dollars** more expensive than the pumpkin pie.
 
-<!-- grammar-card: {"id":"yori-degree-difference","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Degrees of Difference with 〜より","rule":"A degree of difference normally follows より or よりも","example":"トムは、ベンよりも___年上だ。 (three years older)","answer":"３才","explanation":"３才 measures the difference in age, not Tom's absolute age. The quantity follows the comparison standard."} -->
+<!-- grammar-card: {"id":"yori-degree-difference","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Degrees of Difference with 〜より","rule":"A degree of difference normally follows より or よりも","example":"トムは、ベンよりも___年上だ。 (three years older)","answer":"３才","explanation":"３才 measures the difference in age, not Tom's absolute age. The quantity follows the comparison standard. 3才, 三才 or 3歳 all count."} -->
 
 ### Replace より with ほど in Negative Sentences
 
@@ -167,6 +168,7 @@ To make this sentence negative, you switch より to ほど and turn 大きい t
 This pattern is a common way to show comparisons of inferiority in Japanese. English has expressions such as “not as big as” and “less big than”; for the “not as big as” meaning here, use ほど〜ない.
 
 <!-- grammar-card: {"id":"hodo-negative-comparison","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Replace より with ほど in Negative Sentences","rule":"ほど with a negative predicate expresses not as much as the comparison standard","example":"このイチゴは、あのイチゴ___大きくない。 (not as big as)","answer":"ほど","explanation":"ほど marks the degree not reached by this strawberry. This teaches the not-as pattern, not a blanket prohibition on より with negative predicates."} -->
+<!-- grammar-card: {"id":"rule-not-as-hodo","kind":"concept","format":"qa","priority":"essential","sourceSection":"Replace より with ほど in Negative Sentences","rule":"'Not as … as B' uses B + ほど with a negative predicate","example":"To say 'A is not as big as B', which particle marks B, and what form does the adjective take?","answer":"ほど, with the adjective in the negative.","explanation":"Both parts are needed. このイチゴは、あのイチゴほど大きくない。"} -->
 
 ## Beyond the Basics
 
@@ -208,8 +210,8 @@ Assume you're planning to ride your bike to your friend's house. Just as you're 
 
   - There is **no other choice than** to walk.
 
-<!-- grammar-card: {"id":"yori-no-choice","kind":"rule","format":"cloze","priority":"optional","sourceSection":"〜より仕方がない・〜より仕様がない・〜より他ない","rule":"より仕方がない means there is no choice but this","hint":"Complete the formal expression with 仕方, not 仕様 or 他","example":"歩く___。","answer":"より仕方がない","explanation":"歩くより仕方がない says walking is the only option. The より versions are literary/formal; 歩くしかない is the ordinary conversational alternative."} -->
-<!-- grammar-card: {"id":"yori-no-choice-register","kind":"concept","format":"qa","priority":"optional","sourceSection":"〜より仕方がない・〜より仕様がない・〜より他ない","rule":"より仕方がない, より仕様がない, and より他ない are formal no-choice expressions","example":"What is the everyday alternative to the literary 歩くより他ない?","answer":"歩くしかない。","explanation":"All express no other choice than walking. The longer より constructions are not the usual casual default."} -->
+<!-- grammar-card: {"id":"yori-no-choice","kind":"rule","format":"cloze","priority":"optional","sourceSection":"〜より仕方がない・〜より仕様がない・〜より他ない","rule":"より仕方がない means there is no choice but this","hint":"A formal/literary 'no other way'","example":"歩く___。 (Formal/literary: there's no other choice than to walk.)","answer":"より仕方がない","explanation":"歩くより仕方がない says walking is the only option. より仕様がない and より他ない also count. The より versions are literary/formal; 歩くしかない is the ordinary conversational alternative.","legacyAliases":[{"rule":"より仕方がない means there is no choice but this","example":"歩く___。"}]} -->
+<!-- grammar-card: {"id":"yori-no-choice-register","kind":"rule","format":"qa","priority":"optional","sourceSection":"〜より仕方がない・〜より仕様がない・〜より他ない","rule":"より仕方がない, より仕様がない, and より他ない are formal no-choice expressions","example":"What is the everyday alternative to the literary 歩くより他ない?","answer":"歩くしかない。","explanation":"All express no other choice than walking. The longer より constructions are not the usual casual default."} -->
 
 Although the phrases 仕方がない and 仕様がない are commonly used in everyday life, the より versions are formal and most often seen in literature. For everyday use, you can instead use the simpler 〜しかない, as in:
 

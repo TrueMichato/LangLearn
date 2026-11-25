@@ -24,8 +24,8 @@ Sentence-ending particles are small words added at the end of sentences to conve
 
 <!-- quiz:{"type":"multiple-choice","question":"What nuance does ね add to a sentence?","options":["Strong assertion","Seeking agreement or confirmation","Expressing doubt","Giving a command"],"answer":1} -->
 
-<!-- grammar-card: {"id":"ne-shared-agreement","kind":"rule","format":"cloze","priority":"essential","sourceSection":"ね — Seeking Agreement / Confirmation","rule":"ね invites the listener to agree","hint":"Invite agreement about shared weather","example":"今日(きょう)はいい天気(てんき)です___。","answer":"ね","explanation":"ね frames the weather as shared experience and invites agreement."} -->
-<!-- grammar-card: {"id":"ne-empathy","kind":"concept","format":"qa","priority":"optional","sourceSection":"ね for empathy","rule":"ね can show sympathetic alignment rather than ask for new information","example":"What does ね add in それは大変でしたね?","answer":"Empathy or sympathetic agreement: “That must have been tough.”","explanation":"The speaker acknowledges the listener's experience, not merely checking an objective fact."} -->
+<!-- grammar-card: {"id":"ne-shared-agreement","kind":"rule","format":"cloze","priority":"essential","sourceSection":"ね — Seeking Agreement / Confirmation","rule":"ね invites the listener to agree","hint":"Invite agreement about shared weather","example":"Nice weather today, isn't it? (invite agreement): 今日(きょう)はいい天気(てんき)です___。","answer":"ね","explanation":"ね frames the weather as shared experience and invites agreement.","legacyAliases":[{"rule":"ね invites the listener to agree","example":"今日(きょう)はいい天気(てんき)です___。"}]} -->
+<!-- grammar-card: {"id":"ne-empathy","kind":"rule","format":"qa","priority":"optional","sourceSection":"ね for empathy","rule":"ね can show sympathetic alignment rather than ask for new information","example":"What does ね add in それは大変でしたね?","answer":"Empathy or sympathetic agreement: “That must have been tough.”","explanation":"The speaker acknowledges the listener's experience, not merely checking an objective fact."} -->
 
 ## よ — Asserting / Informing
 
@@ -45,8 +45,9 @@ Sentence-ending particles are small words added at the end of sentences to conve
 - **心配(しんぱい)しなくていいですよ。** — You don't need to worry.
 - **頑張(がんば)れますよ。** — You can hang in there!
 
-<!-- grammar-card: {"id":"yo-information","kind":"rule","format":"cloze","priority":"essential","sourceSection":"よ — Asserting / Informing","rule":"よ tells the listener something they did not already know","hint":"Inform the listener of the test","example":"明日テストがあります___。","answer":"よ","explanation":"よ presents the test as information the speaker is supplying or emphasizing."} -->
-<!-- grammar-card: {"id":"yo-reassurance-register","kind":"concept","format":"qa","priority":"essential","sourceSection":"よ for encouragement","rule":"よ can reassure but repeated assertions can sound pushy","example":"How can できますよ encourage someone, and why should you not attach よ to every sentence?","answer":"It confidently reassures them they can do it; overuse can sound pushy or condescending.","explanation":"The particle's effect depends on information status, tone, and the relationship, not just its dictionary gloss."} -->
+<!-- grammar-card: {"id":"yo-information","kind":"rule","format":"cloze","priority":"essential","sourceSection":"よ — Asserting / Informing","rule":"よ tells the listener something they did not already know","hint":"Inform the listener of the test","example":"Telling a friend who doesn't know yet: “There's a test tomorrow, you know!” 明日テストがあります___。","answer":"よ","explanation":"よ presents the test as information the speaker is supplying or emphasizing.","legacyAliases":[{"rule":"よ tells the listener something they did not already know","example":"明日テストがあります___。"}]} -->
+<!-- grammar-card: {"id":"rule-ne-vs-yo","kind":"concept","format":"qa","priority":"essential","sourceSection":"よ — Asserting / Informing","rule":"ね seeks agreement about shared information; よ informs the listener of something new","example":"How does sentence-final ね differ from sentence-final よ?","answer":"ね seeks agreement or empathy about something shared; よ tells the listener something they don't know or emphasizes it.","explanation":"Any answer contrasting shared/agreement with new information/assertion counts."} -->
+<!-- grammar-card: {"id":"yo-reassurance-register","kind":"rule","format":"qa","priority":"essential","sourceSection":"よ for encouragement","rule":"よ can reassure but repeated assertions can sound pushy","example":"How can できますよ encourage someone, and why should you not attach よ to every sentence?","answer":"It confidently reassures them they can do it; overuse can sound pushy or condescending.","explanation":"The particle's effect depends on information status, tone, and the relationship, not just its dictionary gloss."} -->
 
 ## よね — Combined Effect
 
@@ -60,7 +61,7 @@ Sentence-ending particles are small words added at the end of sentences to conve
 
 <!-- quiz:{"type":"multiple-choice","question":"'明日テストがありますよ' — what is the speaker doing?","options":["Asking if there's a test","Confirming shared knowledge about a test","Informing the listener about a test they may not know about","Expressing doubt about the test"],"answer":2} -->
 
-<!-- grammar-card: {"id":"yone-confirmation","kind":"rule","format":"cloze","priority":"essential","sourceSection":"よね — Combined Effect","rule":"よね asserts something while asking for confirmation","hint":"Fairly sure, but checking","example":"あの人、田中(たなか)さんです___。","answer":"よね","explanation":"The speaker expects the identification to be right but seeks confirmation."} -->
+<!-- grammar-card: {"id":"yone-confirmation","kind":"rule","format":"cloze","priority":"essential","sourceSection":"よね — Combined Effect","rule":"よね asserts something while asking for confirmation","hint":"Fairly sure, but checking","example":"That's Mr. Tanaka, right? (fairly sure, but checking): あの人、田中(たなか)さんです___。","answer":"よね","explanation":"The speaker expects the identification to be right but seeks confirmation.","legacyAliases":[{"rule":"よね asserts something while asking for confirmation","example":"あの人、田中(たなか)さんです___。"}]} -->
 
 ## な — Emotional Reflection (Male/Casual)
 
@@ -74,7 +75,7 @@ Sentence-ending particles are small words added at the end of sentences to conve
 
 > 💡 Women and younger speakers also use な, but it can sound more assertive or masculine depending on context.
 
-<!-- grammar-card: {"id":"na-reflection","kind":"concept","format":"qa","priority":"essential","sourceSection":"な — Emotional Reflection (Male/Casual)","rule":"Reflective な or なあ expresses a personal reaction in casual speech","example":"What does なあ express in 日本に行きたいなあ?","answer":"A reflective or wistful personal feeling: “I want to go to Japan…”","explanation":"This is casual reflection, not a prohibition. Gender associations are tendencies, not a ban on women using it."} -->
+<!-- grammar-card: {"id":"na-reflection","kind":"rule","format":"qa","priority":"essential","sourceSection":"な — Emotional Reflection (Male/Casual)","rule":"Reflective な or なあ expresses a personal reaction in casual speech","example":"What does なあ express in 日本に行きたいなあ?","answer":"A reflective or wistful personal feeling: “I want to go to Japan…”","explanation":"This is casual reflection, not a prohibition. Gender associations are tendencies, not a ban on women using it."} -->
 
 ### な for prohibition (different usage)
 
@@ -87,6 +88,7 @@ When attached to the **dictionary form** of a verb, な means "don't do":
 > ⚠️ This prohibitive な is blunt and rude. Only use it in very casual situations or emergencies.
 
 <!-- grammar-card: {"id":"na-prohibition","kind":"rule","format":"cloze","priority":"essential","sourceSection":"な for prohibition (different usage)","rule":"Dictionary verb plus な makes a blunt prohibition","example":"Do not touch! 触る___！","answer":"な","explanation":"触るな (さわるな) is a strong prohibition, not the reflective なあ. It is not a polite everyday request."} -->
+<!-- grammar-card: {"id":"rule-na-two-uses","kind":"concept","format":"qa","priority":"optional","sourceSection":"な for prohibition (different usage)","rule":"Sentence-final な can be casual reflection or, after a dictionary verb, a blunt prohibition","example":"What are the two different uses of sentence-final な taught in this lesson?","answer":"Casual emotional reflection (行きたいなあ), and a blunt prohibition after a dictionary-form verb (触るな).","explanation":"Naming both uses counts."} -->
 
 ## かな — "I Wonder"
 
@@ -115,6 +117,7 @@ When attached to the **dictionary form** of a verb, な means "don't do":
 - **鍵(かぎ)、どこに置(お)いたっけ。** — Where did I put my keys?
 
 <!-- grammar-card: {"id":"kke-recall","kind":"rule","format":"cloze","priority":"essential","sourceSection":"っけ — \"Was it...? / Remind me...\"","rule":"っけ marks an attempt to recall forgotten information","example":"What time was the meeting again? 会議は何時だ___。","answer":"っけ","explanation":"The speaker is trying to remember, not wondering about an entirely new fact."} -->
+<!-- grammar-card: {"id":"rule-kke-recall","kind":"concept","format":"qa","priority":"optional","sourceSection":"っけ — \"Was it...? / Remind me...\"","rule":"っけ signals trying to recall something one once knew","example":"Which sentence-ending particle signals you are trying to recall something you once knew (“…again?”)?","answer":"っけ (e.g. 何時だっけ).","explanation":"Naming っけ counts. かな wonders about something not yet known."} -->
 
 ## わ — Softening (Traditionally Female)
 
@@ -127,7 +130,7 @@ When attached to the **dictionary form** of a verb, な means "don't do":
 
 > 💡 In standard Japanese, わ is associated with female speech, but in Kansai (Osaka area), men commonly use it too.
 
-<!-- grammar-card: {"id":"wa-region","kind":"concept","format":"qa","priority":"essential","sourceSection":"わ — Softening (Traditionally Female)","rule":"Sentence-final わ has gender and regional associations rather than one universal speaker restriction","example":"Does hearing a man use sentence-final わ necessarily conflict with Japanese usage?","answer":"No. It is traditionally feminine in standard Japanese, but men also commonly use it in Kansai; tone and region matter.","explanation":"Do not turn the standard-language association into an absolute gender rule."} -->
+<!-- grammar-card: {"id":"wa-region","kind":"rule","format":"qa","priority":"essential","sourceSection":"わ — Softening (Traditionally Female)","rule":"Sentence-final わ has gender and regional associations rather than one universal speaker restriction","example":"Does hearing a man use sentence-final わ necessarily conflict with Japanese usage?","answer":"No. It is traditionally feminine in standard Japanese, but men also commonly use it in Kansai; tone and region matter.","explanation":"Do not turn the standard-language association into an absolute gender rule."} -->
 
 ## ぞ — Strong Assertion (Male/Casual)
 
@@ -137,7 +140,7 @@ When attached to the **dictionary form** of a verb, な means "don't do":
 - **やるぞ！** — I'm going to do it!
 - **負(ま)けないぞ。** — I won't lose!
 
-<!-- grammar-card: {"id":"zo-assertion","kind":"concept","format":"qa","priority":"optional","sourceSection":"ぞ — Strong Assertion (Male/Casual)","rule":"ぞ adds strong, casual assertion and is often masculine-associated","example":"What tone does ぞ add to やるぞ, and is it a neutral polite ending for customer service?","answer":"Strong determination or emphasis; no, it is casual and often masculine-associated, not neutral customer-service politeness.","explanation":"Understand the stance before imitating the ending in formal relationships."} -->
+<!-- grammar-card: {"id":"zo-assertion","kind":"rule","format":"qa","priority":"optional","sourceSection":"ぞ — Strong Assertion (Male/Casual)","rule":"ぞ adds strong, casual assertion and is often masculine-associated","example":"What tone does ぞ add to やるぞ, and is it a neutral polite ending for customer service?","answer":"Strong determination or emphasis; no, it is casual and often masculine-associated, not neutral customer-service politeness.","explanation":"Understand the stance before imitating the ending in formal relationships."} -->
 
 ## Particle Combinations & Nuance
 
@@ -164,7 +167,7 @@ While modern Japanese is becoming more gender-neutral, some particles still carr
 
 > 💡 Younger generations tend to use particles more neutrally. Don't worry too much about gender rules — focus on understanding the emotional nuance.
 
-<!-- grammar-card: {"id":"gender-associations","kind":"concept","format":"qa","priority":"optional","sourceSection":"Gender & Age Considerations","rule":"Gender and age labels describe usage associations rather than rigid grammatical permissions","example":"Should the lesson's male/female particle table be treated as a rule forbidding other speakers from using those particles?","answer":"No. It describes traditional associations; context, generation, region, and tone affect actual use.","explanation":"ね, よ, よね, かな, and っけ are broadly neutral starting points."} -->
+<!-- grammar-card: {"id":"gender-associations","kind":"rule","format":"qa","priority":"optional","sourceSection":"Gender & Age Considerations","rule":"Gender and age labels describe usage associations rather than rigid grammatical permissions","example":"Should the lesson's male/female particle table be treated as a rule forbidding other speakers from using those particles?","answer":"No. It describes traditional associations; context, generation, region, and tone affect actual use.","explanation":"ね, よ, よね, かな, and っけ are broadly neutral starting points."} -->
 <!-- quiz:{"type":"multiple-choice","question":"Which particle would you use when you've forgotten something and want to recall it?","options":["ね","よ","っけ","ぞ"],"answer":2} -->
 
 ## Practice Tips
