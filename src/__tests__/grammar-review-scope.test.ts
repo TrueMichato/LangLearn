@@ -27,15 +27,20 @@ describe('reviewed grammar scope is per language', () => {
     expect(reviewedGrammarLessonId(card({ tags: ['lesson:genitive', 'lesson:dative'] }))).toBeUndefined();
     expect(reviewedGrammarLessonId(card({ type: 'word' }))).toBeUndefined();
     // A recorded source wins over tags, even when it names an unreviewed lesson.
-    expect(reviewedGrammarLessonId(card({ lessonSource: { lessonId: 'imperative', itemId: 'x', provenance: 'authored' } }))).toBeUndefined();
+    expect(reviewedGrammarLessonId(card({ lessonSource: { lessonId: 'fixture-unreviewed', itemId: 'x', provenance: 'authored' } }))).toBeUndefined();
   });
 
-  it('treats only concept cards from reviewed lessons in that language as rule recall', () => {
-    expect(isRuleRecallCard(card({ grammarKind: 'concept' }))).toBe(true);
-    expect(isRuleRecallCard(card({ grammarKind: 'rule' }))).toBe(false);
-    expect(isRuleRecallCard(card({}))).toBe(false);
-    expect(isRuleRecallCard(card({ grammarKind: 'concept', language: 'ja' }))).toBe(false);
-    expect(isRuleRecallCard(card({ grammarKind: 'concept', tags: ['grammar', 'lesson:imperative'] }))).toBe(false);
-    expect(isRuleRecallCard(card({ grammarKind: 'concept', type: 'word' }))).toBe(false);
+  it('requires a saved concept and its current authored rule identity, not just a lesson tag or an ID prefix', () => {
+    const source = { lessonId: 'genitive', itemId: 'rule-net-genitive', provenance: 'authored' as const };
+    const saved = card({ grammarKind: 'concept', lessonSource: source });
+    expect(isRuleRecallCard(saved)).toBe(true);
+    expect(isRuleRecallCard({ ...saved, grammarKind: 'rule' })).toBe(false);
+    expect(isRuleRecallCard({ ...saved, grammarKind: undefined })).toBe(false);
+    expect(isRuleRecallCard({ ...saved, lessonSource: undefined })).toBe(false);
+    expect(isRuleRecallCard({ ...saved, language: 'ja' })).toBe(false);
+    expect(isRuleRecallCard({ ...saved, type: 'word' })).toBe(false);
+    expect(isRuleRecallCard({ ...saved, lessonSource: { ...source, provenance: 'custom' } })).toBe(false);
+    expect(isRuleRecallCard({ ...saved, lessonSource: { ...source, itemId: 'rule-retired' } })).toBe(false);
+    expect(isRuleRecallCard({ ...saved, lessonSource: { ...source, lessonId: 'fixture-unreviewed' } })).toBe(false);
   });
 });

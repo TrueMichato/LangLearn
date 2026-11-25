@@ -201,7 +201,7 @@ describe('optional grammar recall input', () => {
   });
 
   it.each([
-    { language: 'uk', lesson: 'stress' }, { language: 'ru', lesson: 'prepositional' },
+    { language: 'uk', lesson: 'stress' }, { language: 'ru', lesson: 'fixture-unreviewed' },
   ])('does not carry writing mode into $language/$lesson even if enabled for the previous card', ({ language, lesson }) => {
     const word = savedStress('lock-stress');
     const other = exercise({ ...word, language, lessonSource: { ...word.lessonSource!, lessonId: lesson } }, true);
@@ -280,7 +280,7 @@ describe('explicit lesson review selection', () => {
     expect(pilot).toContain('Essential · Rule to remember');
     expect(pilot).toContain(spacing);
     expect(await label('ru', 'spelling-rules', [rule, vocabulary])).not.toContain(spacing);
-    const other = await label('es', 'accent-rules');
+    const other = await label('es', 'fixture-unreviewed');
     expect(other).toContain('Essential · Concept to remember');
     expect(other).not.toContain('Rule to remember');
     expect(other).not.toContain(spacing);

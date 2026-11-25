@@ -1,4 +1,5 @@
 import type { Word } from '../db/schema';
+import ruleIds from 'virtual:grammar-rule-ids';
 import { REVIEWED_GRAMMAR_LESSONS } from './grammar-reviewed';
 
 export function isReviewedGrammarLesson(language: string, lessonId?: string | null): boolean {
@@ -23,9 +24,11 @@ export function reviewedGrammarLessonId(word: Word): string | undefined {
 }
 
 /**
- * A declarative "recall the rule" card. Only reviewed lessons guarantee that
- * concept cards are rule recall; elsewhere they still mix in application tasks.
+ * Lesson membership alone doesn't certify a saved kind: older comprehension
+ * tasks could also be saved as concepts. Verify the current authored identity.
  */
 export function isRuleRecallCard(word: Word): boolean {
-  return word.grammarKind === 'concept' && reviewedGrammarLessonId(word) !== undefined;
+  const source = word.lessonSource;
+  return word.type === 'grammar' && word.grammarKind === 'concept' && source?.provenance === 'authored' &&
+    (ruleIds[`${word.language}/${source.lessonId}`]?.includes(source.itemId) ?? false);
 }

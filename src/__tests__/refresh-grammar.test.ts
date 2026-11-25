@@ -1,4 +1,6 @@
 import 'fake-indexeddb/auto';
+import { createElement } from 'react';
+import { renderToStaticMarkup } from 'react-dom/server';
 import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest';
 import aspects from '../../public/content/grammar/ru/verb-aspects.md?raw';
 import spelling from '../../public/content/grammar/ru/spelling-rules.md?raw';
@@ -6,9 +8,11 @@ import { db } from '../db/schema';
 import { addWord } from '../db/words';
 import { saveLessonReviewItems } from '../db/lesson-cards';
 import { refreshSavedGrammarCards } from '../db/refresh-grammar';
+import { processReview, scheduledGapDays } from '../db/reviews';
 import { reviewedGrammarLessonId } from '../lib/grammar-review-scope';
 import { parseLessonReviewItems } from '../lib/lesson-capture';
 import type { GrammarReviewItem } from '../lib/lesson-review';
+import { ReviewCardDirection } from '../pages/Review';
 import { useXPStore } from '../stores/xpStore';
 
 const legacy = {
@@ -31,6 +35,43 @@ beforeEach(async () => {
 afterEach(() => vi.unstubAllGlobals());
 
 describe('explicit refresh of saved reviewed Russian grammar', () => {
+  it('keeps pre-rollout comprehension on normal spacing before and after refreshing its saved kind', async () => {
+    const current = read(aspects).find((item) => item.id === 'letter-completion')!;
+    const old = { ...current, kind: 'concept' as const };
+    await saveLessonReviewItems([old, { ...old, id: 'retired-question' }], 'ru', 'verb-aspects');
+    const before = await db.words.toArray();
+    const schedules = await db.reviews.toArray();
+    const fetcher = vi.fn().mockResolvedValue({ ok: true, text: async () => aspects });
+    vi.stubGlobal('fetch', fetcher);
+    const xp = useXPStore.getState().bonusXP;
+
+    for (const word of before) {
+      const review = schedules.find((r) => r.wordId === word.id)!;
+      const label = renderToStaticMarkup(createElement(ReviewCardDirection, {
+        current: { word, review, cardType: 'grammar' }, mode: null, disabled: false, onChange: () => {},
+      }));
+      expect.soft(label).not.toContain('Recall the rule');
+      const graded = await processReview(review.id!, 4);
+      expect.soft(scheduledGapDays(graded)).toBe(graded.interval);
+    }
+    expect(fetcher).not.toHaveBeenCalled();
+
+    const graded = await db.reviews.toArray();
+    const history = await db.reviewLog.toArray();
+    expect(await run()).toEqual({ updated: 1, unchanged: 0, skipped: 1, unavailable: 0 });
+    const [updated, retired] = await db.words.toArray();
+    expect(updated).toMatchObject({
+      id: before[0].id, createdAt: before[0].createdAt, lessonSource: before[0].lessonSource,
+      grammarKind: 'rule', lessonSourceSnapshot: { grammarKind: 'rule' },
+    });
+    expect(retired).toEqual(before[1]);
+    expect(await db.reviews.toArray()).toEqual(graded);
+    expect(await db.reviewLog.toArray()).toEqual(history);
+    expect(useXPStore.getState().bonusXP).toBe(xp);
+    const next = await processReview(graded[0].id!, 4);
+    expect(scheduledGapDays(next)).toBe(next.interval);
+  });
+
   it('repairs a baseline-backed exact alias without adding declined items or touching tags, dates, schedules, logs or XP', async () => {
     await saveLessonReviewItems(read(block(legacy)), 'ru', 'verb-aspects');
     const old = (await db.words.toArray())[0];
@@ -77,7 +118,7 @@ describe('explicit refresh of saved reviewed Russian grammar', () => {
     await addWord({ ...old, type: 'word', tags: ['grammar', 'lesson:verb-aspects'] });
     await addWord({ ...old, language: 'es', tags: ['grammar', 'lesson:verb-aspects'] });
     await addWord({ ...old, tags: ['lesson:verb-aspects', 'lesson:gender'] });
-    await addWord({ ...old, tags: ['lesson:instrumental'] });
+    await addWord({ ...old, tags: ['lesson:fixture-unreviewed'] });
     const before = await db.words.toArray();
     const fetcher = vi.fn().mockResolvedValue({ ok: true, text: async () => block(revised) });
     vi.stubGlobal('fetch', fetcher);
