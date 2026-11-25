@@ -8,6 +8,7 @@ Negation in Portuguese is surprisingly simple at its core — just put **não** 
 
 <!-- grammar-card: {"id":"basic-negation","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Basic Negation with \"Não\"","rule":"Ordinary não precedes the verb or clitic-plus-verb group","example":"Eu ___ falo português. (not)","answer":"não","explanation":"Ordinary sentence negation places não before the verb; an object pronoun can intervene."} -->
 <!-- grammar-card: {"id":"negative-clitic-order","kind":"rule","format":"qa","priority":"optional","sourceSection":"Basic Negation with \"Não\"","rule":"Não precedes a preverbal object clitic","example":"Negate Eu te vi without moving or omitting the object pronoun.","answer":"Eu não te vi.","explanation":"Negation precedes the clitic-plus-verb group: não te vi."} -->
+<!-- grammar-card: {"id":"rule-nao-position","kind":"concept","format":"qa","priority":"essential","sourceSection":"Basic Negation with \"Não\"","rule":"Não precedes the verb or clitic-plus-verb group","example":"In ordinary sentence negation, where does the basic negative word go?","answer":"Before the verb, or before the clitic-plus-verb group (Eu não te vi).","explanation":"Não goes before the verb (Eu não falo português) and before an object pronoun placed in front of the verb (Eu não te vi)."} -->
 <!-- vocab-card: {"id":"vocab-nao","word":"não","meaning":"not; no","priority":"essential","sourceSection":"Basic Negation with \"Não\""} -->
 
 The word **não** goes directly before the verb to negate a sentence:
@@ -54,6 +55,7 @@ Portuguese has several negative words that work with or without *não*:
 ## Double Negation — Perfectly Correct!
 
 <!-- grammar-card: {"id":"negative-concord","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Double Negation — Perfectly Correct!","rule":"Postverbal negative words normally need earlier clause negation","example":"Eu ___ vi ninguém. (I did not see anyone.)","answer":"não","explanation":"Portuguese negative concord combines a preverbal negator with a postverbal negative word; the negatives do not cancel out."} -->
+<!-- grammar-card: {"id":"rule-concord-reinforces","kind":"concept","format":"qa","priority":"optional","sourceSection":"Double Negation — Perfectly Correct!","rule":"Negative concord reinforces rather than cancels","example":"What is the effect of combining a preverbal negator with a postverbal negative word such as nada?","answer":"They reinforce a single negation; they do not cancel out.","explanation":"Não tenho nada means I have nothing: the two negative words reinforce each other rather than making a positive."} -->
 
 Unlike standard English, Portuguese normally uses **negative concord**. A negative word *after* the verb normally needs a preverbal negative licensor, most often **não**. An earlier negative word can also supply it, as in **Ninguém disse nada**:
 
@@ -104,11 +106,12 @@ Both forms mean the same thing. The "before verb" version is slightly more empha
 
 ### As "neither…nor" (nem…nem)
 
-<!-- grammar-card: {"id":"nem-pair","kind":"rule","format":"cloze","priority":"optional","sourceSection":"As \"neither…nor\" (nem…nem)","rule":"Repeated nem coordinates two negative alternatives","example":"Ele nem come ___ bebe. (neither eats nor drinks)","answer":"nem","explanation":"Nem can be repeated to coordinate two negative alternatives."} -->
+<!-- grammar-card: {"id":"nem-pair","kind":"rule","format":"cloze","priority":"optional","sourceSection":"As \"neither…nor\" (nem…nem)","rule":"Nem introduces a second negative alternative, after não or a first nem","example":"Ele não come ___ bebe. (He neither eats nor drinks.)","answer":"nem","explanation":"After não, nem introduces the second negative alternative (não come nem bebe); nem can also be repeated (nem come nem bebe).","legacyAliases":[{"rule":"Repeated nem coordinates two negative alternatives","example":"Ele nem come ___ bebe. (neither eats nor drinks)"}]} -->
 
 - **Não gosto nem de café nem de chá.** (now gosh-too neng jee kah-feh neng jee shah) — I like neither coffee nor tea.
 - **Nem eu nem ela fomos à festa.** (neng eh-oo neng eh-lah foh-moosh ah fesh-tah) — Neither I nor she went to the party.
 - **Ele nem come nem bebe.** (eh-lee neng koh-mee neng beh-bee) — He neither eats nor drinks.
+- **Ele não come nem bebe.** (eh-lee now koh-mee neng beh-bee) — He neither eats nor drinks. *(After **não**, a single **nem** introduces the second alternative.)*
 
 ## "Não é?" — Tag Questions
 
@@ -150,7 +153,7 @@ These idiomatic expressions are used frequently in everyday Brazilian Portuguese
 
 ## Contrasting with English
 
-<!-- grammar-card: {"id":"negative-additive","kind":"concept","format":"qa","priority":"optional","sourceSection":"Contrasting with English","rule":"Também não and tampouco can both express negative addition","example":"How can She does not speak either be expressed with também or tampouco?","answer":"Ela também não fala or Ela tampouco fala.","explanation":"Também não and tampouco can both express not either."} -->
+<!-- grammar-card: {"id":"negative-additive","kind":"rule","format":"qa","priority":"optional","sourceSection":"Contrasting with English","rule":"Também não and tampouco can both express negative addition","example":"How can She does not speak either be expressed with também or tampouco?","answer":"Ela também não fala or Ela tampouco fala.","explanation":"Também não and tampouco can both express not either."} -->
 
 | English | Portuguese | Notes |
 |---|---|---|

@@ -81,7 +81,7 @@ Numbers 21–29 use **vinte e + digit**. This pattern repeats for 30s, 40s, etc.
 | 90 | noventa |
 | 100 | cem / cento |
 
-> **Cem vs. Cento:** Use **cem** for exactly 100, and **cento** when combined with other numbers (cento e um, cento e vinte).
+> **Cem vs. Cento:** Use **cem** for exactly 100, including before **mil** and **milhões** (cem mil, cem milhões). Use **cento** when more follows (cento e um, cento e vinte).
 
 - **Eu tenho trinta e cinco anos** (eh-oo ten-yoo treen-tah ee seen-koo ah-nooz) — I'm thirty-five years old
 - **A conta é noventa e nove reais** (ah kon-tah eh noh-ven-tah ee noh-vee heh-ahyz) — The bill is ninety-nine reais
@@ -96,6 +96,7 @@ Numbers 21–29 use **vinte e + digit**. This pattern repeats for 30s, 40s, etc.
 <!-- vocab-card: {"id":"vocab-cem","word":"cem","meaning":"one hundred (exactly)","priority":"optional","sourceSection":"21–100"} -->
 <!-- grammar-card: {"id":"tens-e-units","kind":"rule","format":"cloze","priority":"essential","sourceSection":"21–100","rule":"Tens and units are joined with e","example":"trinta ___ cinco. (thirty-five)","answer":"e","explanation":"Use tens + e + unit, as in vinte e um and noventa e nove."} -->
 <!-- grammar-card: {"id":"cem-cento","kind":"rule","format":"cloze","priority":"essential","sourceSection":"21–100","rule":"Cem is exactly 100; cento introduces additional tens or units","example":"___ e um. (101)","answer":"cento","explanation":"Use cem for exactly 100, but cento e um for 101."} -->
+<!-- grammar-card: {"id":"rule-cem-exactly-hundred","kind":"concept","format":"qa","priority":"optional","sourceSection":"21–100","rule":"Cem is used for exactly 100; cento is used when more follows","example":"When is the form cem used for one hundred?","answer":"For exactly 100, including before mil (cem mil); from 101 to 199 the form is cento, as in cento e um.","explanation":"Any answer saying exactly 100 counts: cem pessoas, but cento e vinte."} -->
 
 ### 100–1000+
 
@@ -128,7 +129,7 @@ Numbers 21–29 use **vinte e + digit**. This pattern repeats for 30s, 40s, etc.
 <!-- vocab-card: {"id":"vocab-mil","word":"mil","meaning":"one thousand","priority":"optional","sourceSection":"100–1000+"} -->
 <!-- vocab-card: {"id":"vocab-milhao","word":"milhão","meaning":"million","priority":"optional","sourceSection":"100–1000+"} -->
 <!-- grammar-card: {"id":"hundreds-agreement","kind":"rule","format":"cloze","priority":"optional","sourceSection":"100–1000+","rule":"Hundreds from duzentos onward agree with the noun","example":"___ pessoas. (200 people; feminine)","answer":"Duzentas","explanation":"Use duzentos with masculine nouns and duzentas with feminine nouns; mil is invariable."} -->
-<!-- grammar-card: {"id":"brazil-number-separators","kind":"concept","format":"qa","priority":"optional","sourceSection":"100–1000+","rule":"Brazilian numeric notation uses a decimal comma","example":"How should Brazilian 1.500,50 be read in English numeric notation?","answer":"1,500.50.","explanation":"The period groups thousands; the comma marks decimals."} -->
+<!-- grammar-card: {"id":"brazil-number-separators","kind":"rule","format":"qa","priority":"optional","sourceSection":"100–1000+","rule":"Brazilian numeric notation uses a decimal comma","example":"How should Brazilian 1.500,50 be read in English numeric notation?","answer":"1,500.50.","explanation":"The period groups thousands; the comma marks decimals."} -->
 
 - **Duzentos e cinquenta gramas** (doo-zen-tooz ee seen-kwen-tah grah-mahz) — Two hundred and fifty grams
 - **Mil novecentos e noventa e nove** (meel noh-veh-sen-tooz ee noh-ven-tah ee noh-vee) — One thousand nine hundred and ninety-nine (1999)
@@ -169,7 +170,7 @@ Ordinal numbers agree in gender with the noun they describe:
 <!-- vocab-card: {"id":"vocab-nono","word":"nono","meaning":"ninth (masculine)","priority":"optional","sourceSection":"Ordinal Numbers (Números Ordinais)"} -->
 <!-- vocab-card: {"id":"vocab-decimo","word":"décimo","meaning":"tenth (masculine)","priority":"optional","sourceSection":"Ordinal Numbers (Números Ordinais)"} -->
 <!-- grammar-card: {"id":"ordinal-agreement","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Ordinal Numbers (Números Ordinais)","rule":"Ordinals agree with their nouns","example":"É a ___ vez. (first; feminine vez)","answer":"primeira","explanation":"The feminine of primeiro is primeira; the same -o/-a pattern appears in the other listed ordinals."} -->
-<!-- grammar-card: {"id":"large-ordinal-alternative","kind":"concept","format":"qa","priority":"optional","sourceSection":"Ordinal Numbers (Números Ordinais)","rule":"Cardinals can replace high ordinals in everyday labels","example":"What common floor label can replace décimo quinto andar in Brazil?","answer":"Andar quinze.","explanation":"The cardinal labels the floor; this is a usage alternative, not a ban on the ordinal."} -->
+<!-- grammar-card: {"id":"large-ordinal-alternative","kind":"rule","format":"qa","priority":"optional","sourceSection":"Ordinal Numbers (Números Ordinais)","rule":"Cardinals can replace high ordinals in everyday labels","example":"What common floor label can replace décimo quinto andar in Brazil?","answer":"Andar quinze.","explanation":"The cardinal labels the floor; this is a usage alternative, not a ban on the ordinal."} -->
 
 ## Days of the Week (Dias da Semana)
 
@@ -199,8 +200,8 @@ Portuguese is unique among Romance languages — its weekdays are numbered rathe
 <!-- vocab-card: {"id":"vocab-sexta-feira","word":"sexta-feira","meaning":"Friday","priority":"optional","sourceSection":"Days of the Week (Dias da Semana)"} -->
 <!-- vocab-card: {"id":"vocab-sabado","word":"sábado","meaning":"Saturday","priority":"optional","sourceSection":"Days of the Week (Dias da Semana)"} -->
 <!-- vocab-card: {"id":"vocab-domingo","word":"domingo","meaning":"Sunday","priority":"optional","sourceSection":"Days of the Week (Dias da Semana)"} -->
-<!-- grammar-card: {"id":"weekday-numbering","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Days of the Week (Dias da Semana)","rule":"Days of the week in Portuguese are numbered: segunda (2nd), terça (3rd), quarta (4th), quinta (5th), sexta (6th)","example":"Eu trabalho de ___ a sexta-feira (Monday to Friday)","answer":"segunda-feira","explanation":"Monday is segunda-feira, the second day in the traditional Sunday-based sequence; feira comes from liturgical feria."} -->
-<!-- grammar-card: {"id":"weekday-shortening","kind":"concept","format":"qa","priority":"optional","sourceSection":"Days of the Week (Dias da Semana)","rule":"Weekday -feira is often omitted in conversation","example":"What day is meant by na segunda in Vejo você na segunda?","answer":"Monday; segunda-feira is shortened to segunda.","explanation":"The conversational shortening also occurs with terça, quarta, quinta, and sexta."} -->
+<!-- grammar-card: {"id":"weekday-numbering","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Days of the Week (Dias da Semana)","rule":"Days of the week in Portuguese are numbered: segunda (2nd), terça (3rd), quarta (4th), quinta (5th), sexta (6th)","example":"Eu trabalho de ___ a sexta-feira. (Monday to Friday; full weekday name)","answer":"segunda-feira","explanation":"Monday is segunda-feira, the second day in the traditional Sunday-based sequence; feira comes from liturgical feria. In conversation, segunda alone is also common.","legacyAliases":[{"rule":"Days of the week in Portuguese are numbered: segunda (2nd), terça (3rd), quarta (4th), quinta (5th), sexta (6th)","example":"Eu trabalho de ___ a sexta-feira (Monday to Friday)"}]} -->
+<!-- grammar-card: {"id":"weekday-shortening","kind":"rule","format":"qa","priority":"optional","sourceSection":"Days of the Week (Dias da Semana)","rule":"Weekday -feira is often omitted in conversation","example":"What day is meant by na segunda in Vejo você na segunda?","answer":"Monday; segunda-feira is shortened to segunda.","explanation":"The conversational shortening also occurs with terça, quarta, quinta, and sexta."} -->
 
 <!-- quiz: {"type":"multiple-choice","question":"What is 'Wednesday' in Portuguese?","options":["terça-feira","quarta-feira","quinta-feira","terceira-feira"],"answer":1} -->
 
@@ -238,7 +239,7 @@ Portuguese is unique among Romance languages — its weekdays are numbered rathe
 <!-- vocab-card: {"id":"vocab-outubro","word":"outubro","meaning":"October","priority":"optional","sourceSection":"Months (Meses)"} -->
 <!-- vocab-card: {"id":"vocab-novembro","word":"novembro","meaning":"November","priority":"optional","sourceSection":"Months (Meses)"} -->
 <!-- vocab-card: {"id":"vocab-dezembro","word":"dezembro","meaning":"December","priority":"optional","sourceSection":"Months (Meses)"} -->
-<!-- grammar-card: {"id":"month-capitalization","kind":"concept","format":"qa","priority":"optional","sourceSection":"Months (Meses)","rule":"Portuguese month names normally use lowercase","example":"Should março have an initial capital simply because it names a month?","answer":"No. Month names are normally lowercase unless they begin a sentence.","explanation":"This differs from English March."} -->
+<!-- grammar-card: {"id":"month-capitalization","kind":"concept","format":"qa","priority":"optional","sourceSection":"Months (Meses)","rule":"Portuguese month names normally use lowercase","example":"When does a Portuguese month name such as março take an initial capital?","answer":"Normally only when it begins a sentence; month names are otherwise lowercase.","explanation":"This differs from English March.","legacyAliases":[{"rule":"Portuguese month names normally use lowercase","example":"Should março have an initial capital simply because it names a month?"}]} -->
 
 ## Telling Dates
 
@@ -255,7 +256,8 @@ To say the full date:
 - **Eu nasci no dia dez de outubro** (eh-oo nah-see noo jee-ah dehz jee ow-too-broo) — I was born on October 10th
 
 <!-- grammar-card: {"id":"date-first-day","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Telling Dates","rule":"Dates use cardinal numbers except for the 1st: 'primeiro de janeiro' but 'dois de fevereiro', 'três de março'","example":"___ de janeiro. (January 1st)","answer":"Primeiro","explanation":"The first day uses primeiro; subsequent days normally use cardinal numbers.","legacyAliases":[{"rule":"Dates use cardinal numbers except for the 1st: 'primeiro de janeiro' but 'dois de fevereiro', 'três de março'","example":"O Natal é no dia vinte e cinco de ___"}]} -->
-<!-- grammar-card: {"id":"full-date-order","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Telling Dates","rule":"A full date joins day, month, and year with de","example":"quinze ___ julho de dois mil e vinte e quatro. (July 15, 2024)","answer":"de","explanation":"Portuguese orders the date as day de month de year."} -->
+<!-- grammar-card: {"id":"full-date-order","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Telling Dates","rule":"A full date joins day, month, and year with de","example":"quinze ___ julho ___ dois mil e vinte e quatro. (July 15, 2024)","answer":"de … de","explanation":"Portuguese orders the date as day de month de year.","legacyAliases":[{"rule":"A full date joins day, month, and year with de","example":"quinze ___ julho de dois mil e vinte e quatro. (July 15, 2024)"}]} -->
+<!-- grammar-card: {"id":"rule-date-cardinals","kind":"concept","format":"qa","priority":"essential","sourceSection":"Telling Dates","rule":"Dates use cardinal numbers except for the first of the month","example":"In Brazilian Portuguese, how do dates name the day of the month?","answer":"With cardinal numbers (dois, quinze), except primeiro for the first.","explanation":"Any answer naming cardinal numbers with the exception for the first counts: primeiro de janeiro, but dois de fevereiro."} -->
 
 ## Telling Time (Horas)
 
@@ -279,6 +281,7 @@ To say the full date:
 <!-- vocab-card: {"id":"vocab-meio-dia","word":"meio-dia","meaning":"noon","priority":"optional","sourceSection":"Full hours:"} -->
 <!-- vocab-card: {"id":"vocab-meia-noite","word":"meia-noite","meaning":"midnight","priority":"optional","sourceSection":"Full hours:"} -->
 <!-- grammar-card: {"id":"clock-time-agreement","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Full hours:","rule":"Clock time uses é with uma hora, meio-dia, and meia-noite; other numbered hours use são","example":"___ três horas da tarde (It's 3 PM)","answer":"São","explanation":"Três horas is plural. Singular noon and midnight are exceptions to the old all-other-hours shortcut.","legacyAliases":[{"rule":"For telling time, use 'é' for 1:00 (singular) and 'são' for all other hours (plural)","example":"___ três horas da tarde (It's 3 PM)"}]} -->
+<!-- grammar-card: {"id":"rule-singular-clock-times","kind":"concept","format":"qa","priority":"essential","sourceSection":"Full hours:","rule":"Uma hora, meio-dia, and meia-noite take singular é","example":"When telling the time, which form of ser goes with one o'clock, noon, and midnight?","answer":"É (singular), as in é meio-dia.","explanation":"Other hours are plural and take são: são duas horas."} -->
 
 ### Minutes:
 
@@ -287,8 +290,8 @@ To say the full date:
 - **São cinco e quarenta e cinco** (sow seen-koo ee kwah-ren-tah ee seen-koo) — It's 5:45
 - **São dez para as seis** (sow dehz pah-rah ahz says) — It's 5:50 (lit. "ten to six")
 
-<!-- grammar-card: {"id":"half-past","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Minutes:","rule":"Meia means half an hour in clock expressions","example":"São quatro e ___. (4:30)","answer":"meia","explanation":"Meia agrees with understood meia hora; quatro e trinta is also a valid way to express 4:30."} -->
-<!-- grammar-card: {"id":"minutes-to-hour","kind":"concept","format":"qa","priority":"optional","sourceSection":"Minutes:","rule":"Para as can count minutes remaining until the next hour","example":"What clock time is São dez para as seis?","answer":"5:50: ten minutes before six.","explanation":"The named hour is the next one; dez counts the minutes remaining."} -->
+<!-- grammar-card: {"id":"half-past","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Minutes:","rule":"Meia means half an hour in clock expressions","example":"São quatro e ___. (4:30; use the word for half)","answer":"meia","explanation":"Meia agrees with understood meia hora; quatro e trinta is also a valid way to express 4:30.","legacyAliases":[{"rule":"Meia means half an hour in clock expressions","example":"São quatro e ___. (4:30)"}]} -->
+<!-- grammar-card: {"id":"minutes-to-hour","kind":"rule","format":"qa","priority":"optional","sourceSection":"Minutes:","rule":"Para as can count minutes remaining until the next hour","example":"What clock time is São dez para as seis?","answer":"5:50: ten minutes before six.","explanation":"The named hour is the next one; dez counts the minutes remaining."} -->
 ### Time of day:
 
 - **Da manhã** (dah mahn-yang) — In the morning (AM)

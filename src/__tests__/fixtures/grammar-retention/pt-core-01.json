@@ -11,8 +11,8 @@
           "priority": "optional",
           "sourceSection": "Oral Vowels",
           "objective": "Recognize open and closed oral e/o qualities rather than assuming a one-letter-one-vowel inventory.",
-          "prompt": "Do the letters e and o each represent only one oral vowel quality in Portuguese?",
-          "answer": "No. Both e and o can be open or closed; learn the pronunciation with the word."
+          "prompt": "Which two qualities can the oral vowels e and o each have in Portuguese?",
+          "answer": "Open or closed; learn which one with each word."
         },
         {
           "id": "final-r-regional",
@@ -21,8 +21,8 @@
           "priority": "optional",
           "sourceSection": "The Letters R and RR",
           "objective": "Allow regional and stylistic variation in Brazilian final r.",
-          "prompt": "Must the final r of falar sound identical in every Brazilian region and speaking style?",
-          "answer": "No. Its realization varies; in some speech it can be h-like or omitted."
+          "prompt": "How is word-final r, as in falar, pronounced in Brazilian Portuguese?",
+          "answer": "It varies by region and style; it can be h-like or dropped."
         },
         {
           "id": "final-vowel-reduction",
@@ -121,9 +121,19 @@
           "format": "qa",
           "priority": "essential",
           "sourceSection": "Nasal Vowels",
-          "prompt": "What distinguishes a nasal vowel from an oral vowel, and what spelling cues occur here?",
-          "answer": "Air flows through the nose as well as the mouth; a tilde or a following syllable-final m/n can signal nasalization.",
-          "objective": "Explain nasal airflow and identify tilde or syllable-final nasal-consonant spelling cues."
+          "prompt": "How is a nasal vowel produced, compared with an oral vowel?",
+          "answer": "Air flows through the nose as well as the mouth.",
+          "objective": "Recall that nasal vowels add nasal airflow to the oral airflow of ordinary vowels."
+        },
+        {
+          "id": "nasal-spelling-cues",
+          "kind": "concept",
+          "format": "qa",
+          "priority": "optional",
+          "sourceSection": "Nasal Vowels",
+          "objective": "Recall that a syllable-final m or n, besides the tilde, can mark a nasal vowel.",
+          "prompt": "Besides the tilde, what spelling can mark a nasal vowel?",
+          "answer": "An m or n after the vowel, closing the syllable, as in bem, sim, and bom."
         },
         {
           "id": "vocab-maca",
@@ -218,13 +228,23 @@
         },
         {
           "id": "circumflex-closed-vowels",
-          "kind": "concept",
+          "kind": "rule",
           "format": "qa",
           "priority": "essential",
           "sourceSection": "Circumflex (^)",
           "prompt": "How does the vowel in avô differ from the vowel in avó?",
           "answer": "Avô has stressed closed ô; avó has stressed open ó.",
           "objective": "Distinguish the closed ô of avô from the open ó of avó."
+        },
+        {
+          "id": "rule-circumflex-closed",
+          "kind": "concept",
+          "format": "qa",
+          "priority": "optional",
+          "sourceSection": "Circumflex (^)",
+          "objective": "Recall that the circumflex marks a stressed closed vowel.",
+          "prompt": "What two things does a circumflex (ê, ô) tell you about its vowel?",
+          "answer": "The vowel is closed, and its syllable is stressed."
         },
         {
           "id": "vocab-voce",
@@ -250,8 +270,8 @@
           "format": "qa",
           "priority": "optional",
           "sourceSection": "Til (~)",
-          "prompt": "Does a tilde by itself always mark the stressed syllable?",
-          "answer": "No. It marks nasalization; stress must be determined separately.",
+          "prompt": "What does the tilde (~) mark on a vowel?",
+          "answer": "Nasalization; it is not itself a stress mark.",
           "objective": "Separate a nasalization mark from a written stress accent."
         },
         {
@@ -288,7 +308,7 @@
           "format": "cloze",
           "priority": "essential",
           "sourceSection": "Cedilla (ç)",
-          "prompt": "cora___ão",
+          "prompt": "cora___ão (heart)",
           "answer": "ç",
           "objective": "Supply ç to preserve the s sound before a in coração."
         },
@@ -325,8 +345,8 @@
           "format": "qa",
           "priority": "essential",
           "sourceSection": "The Letter H",
-          "prompt": "Do you pronounce an h sound at the beginning of hoje or hora?",
-          "answer": "No. Initial h is silent.",
+          "prompt": "At the start of a word, as in hoje or hora, how is the letter h pronounced?",
+          "answer": "It is silent: initial h is not pronounced.",
           "objective": "Recall that initial written h contributes no h sound."
         },
         {
@@ -358,7 +378,7 @@
         },
         {
           "id": "r-rr-contrast",
-          "kind": "concept",
+          "kind": "rule",
           "format": "qa",
           "priority": "essential",
           "sourceSection": "The Letters R and RR",
@@ -404,7 +424,7 @@
         },
         {
           "id": "s-between-vowels",
-          "kind": "concept",
+          "kind": "rule",
           "format": "qa",
           "priority": "optional",
           "sourceSection": "The Letter S",
@@ -473,8 +493,8 @@
           "format": "qa",
           "priority": "optional",
           "sourceSection": "The Letter X",
-          "prompt": "Does Portuguese x have one predictable sound in every word?",
-          "answer": "No. The examples show sh, s, z, and ks; learn the sound with the word.",
+          "prompt": "Why must the sound of x be learned with each word?",
+          "answer": "X has several sounds (sh, s, z, ks), and the spelling does not show which one a word uses.",
           "objective": "Avoid assigning a single universal sound to written x."
         },
         {
@@ -557,8 +577,8 @@
           "format": "qa",
           "priority": "optional",
           "sourceSection": "Common Diphthongs",
-          "prompt": "Are the vowel sounds of ai in pai pronounced as one syllable or two?",
-          "answer": "One syllable: ai is a diphthong.",
+          "prompt": "What makes ai in pai a diphthong?",
+          "answer": "Its two vowel sounds are pronounced together in one syllable.",
           "objective": "Recognize a diphthong as a single-syllable vowel sequence."
         },
         {
@@ -617,7 +637,7 @@
         },
         {
           "id": "hiatus-contrast",
-          "kind": "concept",
+          "kind": "rule",
           "format": "qa",
           "priority": "optional",
           "sourceSection": "Vowel Combinations (Hiatus)",
@@ -640,8 +660,8 @@
           "format": "qa",
           "priority": "optional",
           "sourceSection": "Digraphs (Two Letters, One Sound)",
-          "prompt": "Is the u pronounced in que and guerra?",
-          "answer": "No. Qu and gu spell the hard k and g sounds in these words.",
+          "prompt": "Before e or i, what does the u in qu or gu usually do, as in que and guerra?",
+          "answer": "It is usually silent, so qu and gu spell the hard k and g sounds.",
           "objective": "Recall silent u in que and guerra without generalizing to frequente."
         },
         {
@@ -691,7 +711,7 @@
         },
         {
           "id": "default-penultimate-stress",
-          "kind": "concept",
+          "kind": "rule",
           "format": "qa",
           "priority": "essential",
           "sourceSection": "Stress Rules",
@@ -701,13 +721,33 @@
         },
         {
           "id": "default-final-stress",
-          "kind": "concept",
+          "kind": "rule",
           "format": "qa",
           "priority": "essential",
           "sourceSection": "Stress Rules",
           "prompt": "Where is the stress in unaccented falar and azul?",
           "answer": "On the last syllable: fa-LAR and a-ZUL.",
           "objective": "Locate normal final stress from endings such as r and l."
+        },
+        {
+          "id": "rule-penultimate-stress",
+          "kind": "concept",
+          "format": "qa",
+          "priority": "essential",
+          "sourceSection": "Stress Rules",
+          "objective": "Recall the default penultimate stress for unaccented words ending in -a, -e, -o, -am, or -em.",
+          "prompt": "Without a written accent, which syllable is stressed in words ending in -a, -e, -o, -am, or -em?",
+          "answer": "The second-to-last syllable."
+        },
+        {
+          "id": "rule-final-stress",
+          "kind": "concept",
+          "format": "qa",
+          "priority": "essential",
+          "sourceSection": "Stress Rules",
+          "objective": "Recall the default final stress for unaccented words ending in -i, -u, -r, -l, -z, -im, or -um.",
+          "prompt": "Without a written accent, which syllable is stressed in words ending in -i, -u, -r, -l, -z, -im, or -um?",
+          "answer": "The last syllable."
         },
         {
           "id": "vocab-azul",
@@ -761,14 +801,14 @@
       "lessonId": "articles",
       "teachingPoints": [
         {
-          "id": "definite-article-system",
-          "kind": "concept",
-          "format": "qa",
-          "priority": "essential",
+          "id": "definite-masculine-plural",
+          "kind": "rule",
+          "format": "cloze",
+          "priority": "optional",
           "sourceSection": "Definite Articles — \"The\"",
-          "prompt": "Which definite articles correspond to masculine singular, feminine singular, masculine plural, and feminine plural?",
-          "answer": "o, a, os, as.",
-          "objective": "Map the four definite articles to noun gender and number."
+          "objective": "Produce os before a masculine plural noun.",
+          "prompt": "___ livros são novos. (the books)",
+          "answer": "Os"
         },
         {
           "id": "vocab-livro",
@@ -814,8 +854,8 @@
           "format": "qa",
           "priority": "essential",
           "sourceSection": "Before Names",
-          "prompt": "Must every Brazilian speaker say A Maria rather than Maria?",
-          "answer": "No. Articles before personal names vary by region and usage.",
+          "prompt": "How do Brazilian speakers treat an article before a person's name, as in A Maria?",
+          "answer": "It varies by region: common in casual speech in some regions and omitted in others; Maria alone is also normal.",
           "objective": "Treat articles before personal names as regional usage rather than a universal obligation."
         },
         {
@@ -824,8 +864,8 @@
           "format": "qa",
           "priority": "optional",
           "sourceSection": "Before Possessives",
-          "prompt": "Are both Meu carro and O meu carro possible in Brazilian Portuguese?",
-          "answer": "Yes. Both are possible; preference varies by region and context.",
+          "prompt": "In Brazilian Portuguese, how is an article before a possessive, as in o meu carro, used?",
+          "answer": "It is optional: both meu carro and o meu carro occur, with preference varying by region and context.",
           "objective": "Allow both article-bearing and bare prenominal possessives in Brazilian usage."
         },
         {
@@ -834,8 +874,8 @@
           "format": "qa",
           "priority": "optional",
           "sourceSection": "With Countries and Continents",
-          "prompt": "Does Portugal normally take the same article as o Brasil?",
-          "answer": "No. Say Portugal without an article; Brasil normally takes o.",
+          "prompt": "Most country names take an article, as in o Brasil. What article does Portugal normally take?",
+          "answer": "None: Portugal normally has no article.",
           "objective": "Keep article-free Portugal distinct from article-bearing Brasil."
         },
         {
@@ -849,6 +889,16 @@
           "objective": "Use the masculine article with português as a generic subject."
         },
         {
+          "id": "rule-language-subject",
+          "kind": "concept",
+          "format": "qa",
+          "priority": "optional",
+          "sourceSection": "With Languages",
+          "objective": "Recall that a language name used as the subject of a sentence usually takes the definite article.",
+          "prompt": "When language names like português are the subject of the sentence, what usually comes before them?",
+          "answer": "The definite article: O português é bonito."
+        },
+        {
           "id": "bare-profession",
           "kind": "concept",
           "format": "qa",
@@ -860,12 +910,12 @@
         },
         {
           "id": "generic-no-article",
-          "kind": "concept",
+          "kind": "rule",
           "format": "qa",
           "priority": "optional",
           "sourceSection": "In General Statements with Indefinite Meaning",
-          "prompt": "In Eu gosto de café, does the lack of an article mean a particular cup of coffee?",
-          "answer": "No. Café refers to coffee in general.",
+          "prompt": "In Eu gosto de café, what does café refer to without an article?",
+          "answer": "Coffee in general, not a particular coffee.",
           "objective": "Recognize café without an article as a generic substance reference."
         },
         {
@@ -907,6 +957,16 @@
           "prompt": "___ casas são bonitas. (the houses)",
           "answer": "As",
           "objective": "Choose the feminine plural definite article for casas."
+        },
+        {
+          "id": "rule-article-agreement",
+          "kind": "concept",
+          "format": "qa",
+          "priority": "essential",
+          "sourceSection": "Definite Articles — \"The\"",
+          "objective": "Recall that a definite or indefinite article matches its noun in gender and number.",
+          "prompt": "Which two features of the noun decide which article you use?",
+          "answer": "Its gender and its number."
         }
       ],
       "exclusions": [
@@ -970,8 +1030,8 @@
           "priority": "optional",
           "sourceSection": "Adjectives ending in a consonant (usually no gender change)",
           "objective": "Keep difícil and feliz invariant for gender without generalizing to every consonant-final adjective.",
-          "prompt": "Do difícil and feliz take a different feminine singular form with mulher or prova?",
-          "answer": "No. They keep the same form for masculine and feminine singular nouns."
+          "prompt": "How do consonant-final adjectives such as difícil and feliz usually change for a feminine singular noun?",
+          "answer": "They usually do not change: o exame difícil, a prova difícil."
         },
         {
           "id": "gender-ending-tendency",
@@ -979,8 +1039,8 @@
           "format": "qa",
           "priority": "essential",
           "sourceSection": "The Basic Rule: -o and -a Endings",
-          "prompt": "Do final -o and -a determine the gender of every Portuguese noun?",
-          "answer": "No. They are useful tendencies; learn exceptions together with their articles.",
+          "prompt": "How reliable are final -o and -a as clues to a noun's gender?",
+          "answer": "They are useful tendencies, not guarantees; learn exceptions such as o dia and a foto with their articles.",
           "objective": "Use noun endings as clues while retaining lexical gender exceptions."
         },
         {
@@ -1021,7 +1081,7 @@
         },
         {
           "id": "feminine-ending-clues",
-          "kind": "concept",
+          "kind": "rule",
           "format": "qa",
           "priority": "optional",
           "sourceSection": "Common Endings by Gender",
@@ -1140,7 +1200,7 @@
         },
         {
           "id": "capital-gender-meaning",
-          "kind": "concept",
+          "kind": "rule",
           "format": "qa",
           "priority": "optional",
           "sourceSection": "Words with Different Meanings by Gender",
@@ -1150,7 +1210,7 @@
         },
         {
           "id": "radio-gender-meaning",
-          "kind": "concept",
+          "kind": "rule",
           "format": "qa",
           "priority": "optional",
           "sourceSection": "Words with Different Meanings by Gender",
@@ -1160,7 +1220,7 @@
         },
         {
           "id": "grama-gender-meaning",
-          "kind": "concept",
+          "kind": "rule",
           "format": "qa",
           "priority": "optional",
           "sourceSection": "Words with Different Meanings by Gender",
@@ -1184,8 +1244,8 @@
           "format": "qa",
           "priority": "optional",
           "sourceSection": "Adjectives ending in -e (no gender change)",
-          "prompt": "Must grande become granda with a feminine noun?",
-          "answer": "No. Both o carro grande and a casa grande use grande.",
+          "prompt": "How does an adjective ending in -e, such as grande, change for a feminine noun?",
+          "answer": "It does not change: o carro grande, a casa grande.",
           "objective": "Keep grande unchanged for gender but not necessarily for number."
         },
         {
@@ -1229,13 +1289,23 @@
           "objective": "Replace final m with ns in the plural of viagem."
         },
         {
+          "id": "rule-m-plural",
+          "kind": "concept",
+          "format": "qa",
+          "priority": "essential",
+          "sourceSection": "Rule 3: Words ending in -m change to -ns",
+          "objective": "Recall that nouns ending in -m form the plural with -ns.",
+          "prompt": "How does a noun ending in -m form its plural?",
+          "answer": "Change the final -m to -ns, as in homem → homens."
+        },
+        {
           "id": "plural-ao-options",
           "kind": "concept",
           "format": "qa",
           "priority": "essential",
           "sourceSection": "Rule 4: Words ending in -ão",
-          "prompt": "Can every noun ending in -ão take the plural -ões?",
-          "answer": "No. Learn each plural: coração → corações, pão → pães, mão → mãos.",
+          "prompt": "Why must the plural of a noun ending in -ão be learned with each word?",
+          "answer": "There are three patterns: -ões (corações), -ães (pães), and -ãos (mãos).",
           "objective": "Recall the three lexical plural patterns available to -ão nouns."
         },
         {
@@ -1269,8 +1339,18 @@
           "objective": "Form papéis with its required spelling and accent."
         },
         {
-          "id": "plural-il-stress",
+          "id": "rule-l-plural",
           "kind": "concept",
+          "format": "qa",
+          "priority": "optional",
+          "sourceSection": "Rule 5: Words ending in -l",
+          "objective": "Recall that -al, -el, -ol, and -ul words replace final -l with -is in the plural.",
+          "prompt": "How do nouns and adjectives ending in -al, -el, -ol, or -ul form the plural?",
+          "answer": "Replace the final -l with -is, adjusting the written accent where needed, as in animal → animais."
+        },
+        {
+          "id": "plural-il-stress",
+          "kind": "rule",
           "format": "qa",
           "priority": "optional",
           "sourceSection": "Rule 6: Words ending in -il",
@@ -1287,6 +1367,16 @@
           "prompt": "O menino e a menina são bonit___.",
           "answer": "os",
           "objective": "Supply the masculine plural adjective ending for a traditionally mixed-gender group."
+        },
+        {
+          "id": "rule-mixed-group",
+          "kind": "concept",
+          "format": "qa",
+          "priority": "essential",
+          "sourceSection": "Full Agreement in Sentences",
+          "objective": "Recall that a mixed-gender group takes masculine plural agreement.",
+          "prompt": "When an adjective describes a group of mixed gender, which form does it take?",
+          "answer": "The masculine plural."
         }
       ],
       "exclusions": [
@@ -1400,6 +1490,16 @@
           "objective": "Supply the required preposition before an expressed gostar complement."
         },
         {
+          "id": "rule-gostar-de",
+          "kind": "concept",
+          "format": "qa",
+          "priority": "optional",
+          "sourceSection": "Gostar (gosh-tahr) — to like",
+          "objective": "Recall that gostar takes de before the thing liked.",
+          "prompt": "When you name what you like with gostar, what must come before it?",
+          "answer": "The preposition de, as in Eu gosto de música."
+        },
+        {
           "id": "vocab-gostar",
           "kind": "vocabulary",
           "priority": "essential",
@@ -1450,8 +1550,8 @@
           "format": "qa",
           "priority": "optional",
           "sourceSection": "Asking Questions",
-          "prompt": "Must Você fala inglês? invert the subject and verb or add an equivalent of do?",
-          "answer": "No. Keep the same word order and use question intonation.",
+          "prompt": "In spoken Brazilian Portuguese, how is a yes/no question usually formed from a statement?",
+          "answer": "Keep the statement's word order and raise the intonation at the end.",
           "objective": "Form a spoken yes/no question without English do-support or obligatory inversion."
         },
         {
@@ -1463,6 +1563,16 @@
           "prompt": "Eu ___ falo japonês. (I don't speak Japanese)",
           "answer": "não",
           "objective": "Place não before a finite verb to negate a simple statement."
+        },
+        {
+          "id": "rule-negation-position",
+          "kind": "concept",
+          "format": "qa",
+          "priority": "essential",
+          "sourceSection": "Negative Sentences",
+          "objective": "Recall that a present-tense sentence is negated by placing não directly before the verb.",
+          "prompt": "How do you make a Portuguese sentence negative?",
+          "answer": "Put não directly before the verb."
         }
       ],
       "exclusions": [
@@ -1532,6 +1642,16 @@
           "objective": "Produce bebo while restricting the -o generalization to regular present forms."
         },
         {
+          "id": "rule-eu-o",
+          "kind": "concept",
+          "format": "qa",
+          "priority": "essential",
+          "sourceSection": "Comparing All Three Conjugation Families",
+          "objective": "Recall that regular present-tense eu forms end in -o in all three verb families.",
+          "prompt": "In the regular present tense, which ending does the eu form take in all three verb families?",
+          "answer": "-o, as in falo, como, and parto."
+        },
+        {
           "id": "vocab-viver",
           "kind": "vocabulary",
           "priority": "optional",
@@ -1546,8 +1666,8 @@
           "format": "qa",
           "priority": "optional",
           "sourceSection": "Viver (vee-vehr) — to live (to be alive)",
-          "prompt": "Does viver exclude the meaning reside, as in Eu vivo no Brasil?",
-          "answer": "No. Viver can also describe residence; morar specifically emphasizes living in a place.",
+          "prompt": "How does morar differ in meaning from viver?",
+          "answer": "Morar specifically means to reside somewhere; viver means to live more broadly, being alive or experiencing life, and can also describe residence.",
           "objective": "Distinguish morar's residence focus without denying viver a residence meaning."
         },
         {
@@ -1669,6 +1789,16 @@
           "prompt": "In the regular present-tense forms shown here, which ending distinguishes -er from -ir for nós?",
           "answer": "-er uses -emos; -ir uses -imos.",
           "objective": "Identify the nós ending difference between the regular -er and -ir patterns shown."
+        },
+        {
+          "id": "rule-er-ir-shared",
+          "kind": "concept",
+          "format": "qa",
+          "priority": "optional",
+          "sourceSection": "Comparing All Three Conjugation Families",
+          "objective": "Recall that regular -er and -ir present endings are identical except for nós.",
+          "prompt": "Apart from nós, how do the regular present endings of -er and -ir verbs compare?",
+          "answer": "They are identical: both use -o, -e, and -em."
         }
       ],
       "exclusions": [
@@ -1687,7 +1817,7 @@
       "teachingPoints": [
         {
           "id": "bonito-contrast",
-          "kind": "concept",
+          "kind": "rule",
           "format": "qa",
           "priority": "optional",
           "sourceSection": "The Famous Ser vs Estar Difference",
@@ -1697,7 +1827,7 @@
         },
         {
           "id": "magra-contrast",
-          "kind": "concept",
+          "kind": "rule",
           "format": "qa",
           "priority": "optional",
           "sourceSection": "The Famous Ser vs Estar Difference",
@@ -1707,7 +1837,7 @@
         },
         {
           "id": "nervosa-contrast",
-          "kind": "concept",
+          "kind": "rule",
           "format": "qa",
           "priority": "optional",
           "sourceSection": "The Famous Ser vs Estar Difference",
@@ -1717,7 +1847,7 @@
         },
         {
           "id": "quente-contrast",
-          "kind": "concept",
+          "kind": "rule",
           "format": "qa",
           "priority": "optional",
           "sourceSection": "The Famous Ser vs Estar Difference",
@@ -1789,9 +1919,19 @@
           "format": "qa",
           "priority": "essential",
           "sourceSection": "Time, Dates, and Events",
-          "prompt": "Does an event venue follow the same estar rule as a person's physical location?",
-          "answer": "No. An event venue normally uses ser, as in A festa é na escola.",
+          "prompt": "How does the verb for where an event takes place differ from the verb for where a person is?",
+          "answer": "An event's venue normally uses ser (A festa é na escola); a person's location uses estar (Ela está na escola).",
           "objective": "Keep event venues distinct from person/object physical locations."
+        },
+        {
+          "id": "rule-time-ser",
+          "kind": "concept",
+          "format": "qa",
+          "priority": "essential",
+          "sourceSection": "Time, Dates, and Events",
+          "objective": "Recall that clock time and dates are expressed with ser.",
+          "prompt": "Which verb expresses clock time and dates, as in It's three o'clock or Today is Monday?",
+          "answer": "Ser: são três horas, hoje é segunda-feira."
         },
         {
           "id": "nationality-ser",
@@ -1819,7 +1959,7 @@
           "format": "qa",
           "priority": "essential",
           "sourceSection": "Quick Decision Guide",
-          "prompt": "Why is can it change an unreliable test for choosing ser or estar?",
+          "prompt": "Why is \"Can it change?\" an unreliable test for choosing between ser and estar?",
           "answer": "Ser can describe changeable classifications such as professions, and estar states can last a long time.",
           "objective": "Reject permanent versus temporary as an exception-free decision rule."
         },
@@ -1829,13 +1969,13 @@
           "format": "qa",
           "priority": "optional",
           "sourceSection": "Quick Decision Guide",
-          "prompt": "What does the cue ser = essence, estar = state help you remember, and what is its limit?",
-          "answer": "Ser often identifies or characterizes; estar often presents a state or condition. It is not a permanent-versus-temporary law.",
+          "prompt": "In the memory cue ser = essence, estar = state, what do essence and state stand for?",
+          "answer": "Essence means identifying or characterizing something; state means how something is presented in context, not necessarily briefly.",
           "objective": "Use essence/state as a limited cue with its precise identity-versus-condition mapping."
         },
         {
           "id": "verde-contrast",
-          "kind": "concept",
+          "kind": "rule",
           "format": "qa",
           "priority": "optional",
           "sourceSection": "The Famous Ser vs Estar Difference",
@@ -1845,7 +1985,7 @@
         },
         {
           "id": "vivo-contrast",
-          "kind": "concept",
+          "kind": "rule",
           "format": "qa",
           "priority": "optional",
           "sourceSection": "The Famous Ser vs Estar Difference",
@@ -1855,7 +1995,7 @@
         },
         {
           "id": "character-trait-state",
-          "kind": "concept",
+          "kind": "rule",
           "format": "qa",
           "priority": "optional",
           "sourceSection": "The Famous Ser vs Estar Difference",
@@ -1892,6 +2032,16 @@
           "objective": "Use estar for a book's physical location without banning ser for events or geography."
         },
         {
+          "id": "rule-location-estar",
+          "kind": "concept",
+          "format": "qa",
+          "priority": "essential",
+          "sourceSection": "Location",
+          "objective": "Recall that the physical location of a person or object normally uses estar.",
+          "prompt": "Which verb normally says where a person or object is located?",
+          "answer": "Estar: Eu estou em casa, o livro está na mesa."
+        },
+        {
           "id": "weather-state",
           "kind": "rule",
           "format": "cloze",
@@ -1910,6 +2060,16 @@
           "prompt": "Eu ___ estudando. (I am studying.)",
           "answer": "estou",
           "objective": "Supply conjugated estar before a Brazilian progressive gerund."
+        },
+        {
+          "id": "rule-progressive-estar",
+          "kind": "concept",
+          "format": "qa",
+          "priority": "optional",
+          "sourceSection": "Progressive Actions (estar + gerund)",
+          "objective": "Recall that an action in progress is formed with estar plus a gerund.",
+          "prompt": "How does Brazilian Portuguese express an action in progress, like I am studying?",
+          "answer": "Conjugated estar plus a gerund: estou estudando."
         },
         {
           "id": "clock-time-ser",
@@ -1986,6 +2146,16 @@
           "objective": "Combine eu vou with an unchanged infinitive to express a planned future."
         },
         {
+          "id": "rule-ir-future",
+          "kind": "concept",
+          "format": "qa",
+          "priority": "essential",
+          "sourceSection": "Ir + Infinitive = Informal Future",
+          "objective": "Recall that the informal future is conjugated ir plus an infinitive.",
+          "prompt": "How is the common informal future, as in I'm going to study, formed in spoken Brazilian Portuguese?",
+          "answer": "Conjugated ir plus the infinitive: Eu vou estudar."
+        },
+        {
           "id": "vocab-ter",
           "kind": "vocabulary",
           "priority": "essential",
@@ -2023,6 +2193,16 @@
           "prompt": "Eu _____ vinte anos. (I am 20 years old)",
           "answer": "tenho",
           "objective": "Express age with tenho plus years rather than an English-style be construction."
+        },
+        {
+          "id": "rule-ter-expressions",
+          "kind": "concept",
+          "format": "qa",
+          "priority": "essential",
+          "sourceSection": "Ter + Noun = Common Expressions",
+          "objective": "Recall that ter expresses age, hunger, thirst, and similar states where English uses to be.",
+          "prompt": "Which verb does Portuguese use for age, hunger, and thirst, where English uses to be?",
+          "answer": "Ter (to have): Eu tenho fome, Ela tem vinte anos."
         },
         {
           "id": "vocab-ter-fome",
@@ -2251,13 +2431,23 @@
         },
         {
           "id": "saber-conhecer-contrast",
-          "kind": "concept",
+          "kind": "rule",
           "format": "qa",
           "priority": "essential",
           "sourceSection": "Saber (sah-behr) — To Know (facts/skills)",
           "prompt": "Which verb expresses knowing how to swim, and which expresses familiarity with Maria?",
           "answer": "Saber for the skill; conhecer for familiarity with Maria.",
           "objective": "Choose the knowledge verb from skill knowledge versus personal familiarity."
+        },
+        {
+          "id": "rule-saber-conhecer",
+          "kind": "concept",
+          "format": "qa",
+          "priority": "optional",
+          "sourceSection": "Saber (sah-behr) — To Know (facts/skills)",
+          "objective": "Recall that conhecer expresses familiarity with people and places, while saber covers facts and skills.",
+          "prompt": "What kind of knowing does conhecer express, as opposed to saber?",
+          "answer": "Familiarity with people and places; saber is for facts and skills."
         },
         {
           "id": "saber-eu",
@@ -2326,8 +2516,8 @@
           "format": "qa",
           "priority": "optional",
           "sourceSection": "Para (pah-rah) — To, For",
-          "prompt": "Does para always mean a long stay while a always means a short visit?",
-          "answer": "No. That is a possible tendency, not a strict rule; both can mark a destination.",
+          "prompt": "How reliable is the idea that para means a long stay and a means a short visit?",
+          "answer": "It is only a tendency, not a strict rule; both can mark a destination.",
           "objective": "Treat duration associations of a and para as tendencies rather than hard rules."
         },
         {
@@ -2367,6 +2557,16 @@
           "objective": "Recall topic and physical on-top-of senses of sobre."
         },
         {
+          "id": "rule-definite-contraction",
+          "kind": "concept",
+          "format": "qa",
+          "priority": "essential",
+          "sourceSection": "Contractions with Articles",
+          "objective": "Recall that de and em must contract with a following definite article within a noun phrase.",
+          "prompt": "When de or em comes directly before the definite article, what must happen to the two words?",
+          "answer": "They contract into one word, such as de + o = do and em + a = na."
+        },
+        {
           "id": "de-definite-contraction",
           "kind": "rule",
           "format": "cloze",
@@ -2402,8 +2602,8 @@
           "format": "qa",
           "priority": "optional",
           "sourceSection": "Contractions with Indefinite Articles",
-          "prompt": "Are both em uma casa and numa casa possible?",
-          "answer": "Yes. Numa is the contraction; the full form em uma is also possible, especially in formal writing.",
+          "prompt": "How do contractions with indefinite articles, such as numa, differ from those with definite articles?",
+          "answer": "They are optional: the full form em uma is also correct, especially in formal writing, while definite-article contractions are required.",
           "objective": "Allow full indefinite-article phrases alongside speech contractions."
         },
         {
@@ -2455,6 +2655,16 @@
           "prompt": "Você quer ir _____? (with me)",
           "answer": "comigo",
           "objective": "Use the fused first-person accompaniment form."
+        },
+        {
+          "id": "rule-com-fused-forms",
+          "kind": "concept",
+          "format": "qa",
+          "priority": "optional",
+          "sourceSection": "Special Preposition: Com + Pronouns",
+          "objective": "Recall which pronouns fuse with com into single words.",
+          "prompt": "Which two pronouns fuse with com into single words?",
+          "answer": "Mim and nós: comigo (with me) and conosco (with us)."
         },
         {
           "id": "vocab-comigo",
@@ -2572,8 +2782,8 @@
           "format": "qa",
           "priority": "essential",
           "sourceSection": "Você — The Brazilian \"You\"",
-          "prompt": "Does você use the verb form of tu or of ele/ela in standard agreement?",
-          "answer": "The third-person singular form of ele/ela.",
+          "prompt": "Você means you. Which verb form does it take in standard agreement?",
+          "answer": "The third-person singular, the same form as ele/ela.",
           "objective": "Separate addressee meaning from third-person singular grammatical agreement."
         },
         {
@@ -2582,8 +2792,8 @@
           "format": "qa",
           "priority": "optional",
           "sourceSection": "Tu — Regional Variation",
-          "prompt": "Does the informal regional Tu fala replace standard Tu falas in every context?",
-          "answer": "No. Tu fala occurs in some Brazilian speech; standard tu agreement is tu falas.",
+          "prompt": "In parts of Brazil that use tu, which verb form often goes with it in casual speech?",
+          "answer": "The você (third-person singular) form, as in Tu fala português?; standard grammar pairs tu with its own form, tu falas.",
           "objective": "Distinguish regional informal tu fala from standard tu falas."
         },
         {
@@ -2606,6 +2816,16 @@
           "objective": "Select vai rather than vamos after a gente."
         },
         {
+          "id": "rule-a-gente-agreement",
+          "kind": "concept",
+          "format": "qa",
+          "priority": "essential",
+          "sourceSection": "A Gente — The Informal \"We\"",
+          "objective": "Recall that a gente takes third-person singular agreement even though it means we.",
+          "prompt": "A gente means we in Brazilian Portuguese. Which verb form does it take?",
+          "answer": "The third-person singular, like você: a gente fala, not a gente falamos."
+        },
+        {
           "id": "plural-subject-agreement",
           "kind": "rule",
           "format": "cloze",
@@ -2621,8 +2841,8 @@
           "format": "qa",
           "priority": "essential",
           "sourceSection": "Dropping Pronouns",
-          "prompt": "Why can Falamos português omit nós more readily than Fala português can identify its subject alone?",
-          "answer": "Falamos identifies nós; fala is shared by você, ele, ela, and a gente.",
+          "prompt": "Why can Falamos português drop nós, while Ela fala português usually keeps its pronoun?",
+          "answer": "Falamos can only be nós; fala is shared by você, ele, ela, and a gente, so the pronoun shows who.",
           "objective": "Use distinctive verb forms and context to decide whether omitting the subject remains clear."
         },
         {
@@ -2662,6 +2882,16 @@
           "prompt": "Maria e João? ___ são amigos. (They)",
           "answer": "Eles",
           "objective": "Select eles for a traditional mixed-gender third-person plural reference."
+        },
+        {
+          "id": "rule-mixed-group-pronoun",
+          "kind": "concept",
+          "format": "qa",
+          "priority": "optional",
+          "sourceSection": "Mixed Gender Groups",
+          "objective": "Recall that a mixed-gender group is referred to with the masculine plural pronoun.",
+          "prompt": "Which word for they refers to a group of men and women together?",
+          "answer": "Eles, the masculine plural."
         }
       ],
       "exclusions": [
@@ -2714,6 +2944,16 @@
           "prompt": "___ quem é esse livro? (Whose book is this?)",
           "answer": "De",
           "objective": "Keep de with quem to ask about ownership."
+        },
+        {
+          "id": "rule-preposition-placement",
+          "kind": "concept",
+          "format": "qa",
+          "priority": "optional",
+          "sourceSection": "Quem (kayn) — Who",
+          "objective": "Recall that a preposition goes directly before the question word rather than at the end of the question.",
+          "prompt": "In a question like Who do you live with?, where does the preposition go in Portuguese?",
+          "answer": "Directly before the question word, at the start: Com quem você mora?"
         },
         {
           "id": "vocab-o-que",
@@ -2769,6 +3009,16 @@
           "word": "como",
           "meaning": "how; what ... like (in questions)",
           "objective": "Recall how and what-like questions."
+        },
+        {
+          "id": "rule-porque-spelling",
+          "kind": "concept",
+          "format": "qa",
+          "priority": "essential",
+          "sourceSection": "Por que / Porque / Por quê (pohr kee / pohr-kee / pohr keh) — Why / Because",
+          "objective": "Recall that why in a question is spelled as two words, por que, while because is one word, porque.",
+          "prompt": "In writing, how does the spelling of why at the start of a question differ from the spelling of because?",
+          "answer": "Why is two words, por que; because is one word, porque."
         },
         {
           "id": "por-que-question",
@@ -2830,6 +3080,16 @@
           "objective": "Use masculine plural quantos with anos."
         },
         {
+          "id": "rule-quanto-agreement",
+          "kind": "concept",
+          "format": "qa",
+          "priority": "optional",
+          "sourceSection": "Quanto / Quanta / Quantos / Quantas (kwahn-too) — How much / How many",
+          "objective": "Recall that quanto agrees in gender and number with the noun it asks about.",
+          "prompt": "What does quanto (how much, how many) agree with?",
+          "answer": "The noun it asks about, in gender and number: quantos anos, quantas pessoas."
+        },
+        {
           "id": "vocab-qual",
           "kind": "vocabulary",
           "priority": "optional",
@@ -2854,8 +3114,8 @@
           "format": "qa",
           "priority": "optional",
           "sourceSection": "Qual / Quais (kwaw / kwai-eez) — Which / What",
-          "prompt": "Why does Qual é o seu nome use qual rather than a literal English what template?",
-          "answer": "It asks to identify a specific name, rather than define what a name is.",
+          "prompt": "Why does Portuguese ask What is your name? with qual (Qual é o seu nome?) rather than o que?",
+          "answer": "Qual asks to identify a specific item, such as a name; o que asks for a definition or a general what.",
           "objective": "Distinguish asking for a specific identity from asking for a definition."
         }
       ],
@@ -2920,12 +3180,12 @@
         },
         {
           "id": "direct-object-function",
-          "kind": "concept",
+          "kind": "rule",
           "format": "qa",
           "priority": "essential",
           "sourceSection": "Direct Object Pronouns",
-          "prompt": "What does me replace in Ela me viu?",
-          "answer": "The person directly seen: me.",
+          "prompt": "In Ela me viu, what role does me play?",
+          "answer": "Direct object: me is the person she saw.",
           "objective": "Identify the person directly seen as the direct object."
         },
         {
@@ -2949,8 +3209,18 @@
           "objective": "Produce vi ele with its informal Brazilian register qualification."
         },
         {
-          "id": "object-omission",
+          "id": "rule-spoken-ele-object",
           "kind": "concept",
+          "format": "qa",
+          "priority": "essential",
+          "sourceSection": "Spoken Brazilian Portuguese: Replacing o/a/os/as",
+          "objective": "Recall that casual Brazilian speech commonly uses ele/ela after the verb as a third-person direct object.",
+          "prompt": "In casual Brazilian speech, which pronouns commonly serve after the verb instead of the formal third-person direct object forms?",
+          "answer": "Ele and ela (eles, elas): Eu vi ele ontem."
+        },
+        {
+          "id": "object-omission",
+          "kind": "rule",
           "format": "qa",
           "priority": "optional",
           "sourceSection": "3. Dropping the pronoun entirely (when context is clear)",
@@ -2978,7 +3248,7 @@
         },
         {
           "id": "indirect-object-function",
-          "kind": "concept",
+          "kind": "rule",
           "format": "qa",
           "priority": "essential",
           "sourceSection": "Examples with Indirect Objects",
@@ -2988,7 +3258,7 @@
         },
         {
           "id": "spoken-indirect-object",
-          "kind": "concept",
+          "kind": "rule",
           "format": "qa",
           "priority": "optional",
           "sourceSection": "In Spoken Brazilian: para + pronoun",
@@ -3007,18 +3277,38 @@
           "objective": "Attach me after an untriggered sentence-initial formal command with a hyphen."
         },
         {
+          "id": "rule-formal-enclisis",
+          "kind": "concept",
+          "format": "qa",
+          "priority": "optional",
+          "sourceSection": "Formal Writing: After the verb (enclisis)",
+          "objective": "Recall that traditional formal writing attaches the pronoun after a sentence-initial verb with a hyphen.",
+          "prompt": "In traditional formal writing, where does an object pronoun go when the verb begins the sentence?",
+          "answer": "After the verb, joined with a hyphen: Diga-me a verdade."
+        },
+        {
           "id": "negation-attracts-pronoun",
           "kind": "rule",
           "format": "cloze",
           "priority": "essential",
           "sourceSection": "Words that \"attract\" the pronoun before the verb",
-          "prompt": "Não ___ diga! (Do not tell me!)",
-          "answer": "me",
+          "prompt": "Não ___! (diga + me; formal writing)",
+          "answer": "me diga",
           "objective": "Place the object pronoun before the verb after não."
         },
         {
-          "id": "proclisis-triggers",
+          "id": "rule-negation-proclisis",
           "kind": "concept",
+          "format": "qa",
+          "priority": "optional",
+          "sourceSection": "Words that \"attract\" the pronoun before the verb",
+          "objective": "Recall that não pulls an object pronoun before the verb, even in formal writing.",
+          "prompt": "Where does an object pronoun go after não, even in formal writing?",
+          "answer": "Before the verb: Não me diga!"
+        },
+        {
+          "id": "proclisis-triggers",
+          "kind": "rule",
           "format": "qa",
           "priority": "optional",
           "sourceSection": "Words that \"attract\" the pronoun before the verb",
@@ -3032,13 +3322,23 @@
           "format": "cloze",
           "priority": "essential",
           "sourceSection": "Spoken Brazilian: Before the verb (proclisis)",
-          "prompt": "Ela _____ ligou ontem. (She called me)",
-          "answer": "me",
+          "prompt": "Ela ___ ontem. (ligou + me; spoken Brazilian)",
+          "answer": "me ligou",
           "objective": "Use natural Brazilian preverbal me without claiming all formal writing requires postverbal placement."
         },
         {
-          "id": "reflexive-preview",
+          "id": "rule-spoken-proclisis",
           "kind": "concept",
+          "format": "qa",
+          "priority": "essential",
+          "sourceSection": "Spoken Brazilian: Before the verb (proclisis)",
+          "objective": "Recall that everyday Brazilian speech places object pronouns before the verb.",
+          "prompt": "In everyday Brazilian speech, where does an object pronoun usually go relative to the verb?",
+          "answer": "Before the verb: Ela me ligou, Você me entende?"
+        },
+        {
+          "id": "reflexive-preview",
+          "kind": "rule",
           "format": "qa",
           "priority": "optional",
           "sourceSection": "Reflexive Pronouns (Preview)",
@@ -3052,7 +3352,7 @@
           "format": "cloze",
           "priority": "optional",
           "sourceSection": "Me and Te — The Most Common",
-          "prompt": "Eu _____ mandei uma mensagem. (I sent you a message)",
+          "prompt": "Eu _____ mandei uma mensagem. (I sent you a message; informal)",
           "answer": "te",
           "objective": "Select te as the recipient of an explicitly sent message."
         },
@@ -3099,6 +3399,16 @@
           "objective": "Recall my or mine with a feminine singular possessed noun."
         },
         {
+          "id": "rule-possessive-agreement",
+          "kind": "concept",
+          "format": "qa",
+          "priority": "essential",
+          "sourceSection": "Meu / Minha — My",
+          "objective": "Recall that possessives such as meu and nosso agree in gender and number with the thing possessed, not the owner.",
+          "prompt": "What do possessives such as meu and nosso agree with in gender and number?",
+          "answer": "The thing possessed, not the owner: a man says a minha mãe."
+        },
+        {
           "id": "possessed-noun-agreement",
           "kind": "rule",
           "format": "cloze",
@@ -3124,8 +3434,8 @@
           "format": "qa",
           "priority": "essential",
           "sourceSection": "Seu / Sua — Your (Ambiguous!)",
-          "prompt": "Can O seu livro mean only your book?",
-          "answer": "No. Depending on context, it can also mean his book or her book.",
+          "prompt": "Besides your, what can seu or sua mean in Brazilian Portuguese?",
+          "answer": "His or her, depending on context: O seu livro can be your, his, or her book.",
           "objective": "Retain multiple possible owner readings for seu rather than equating it only with your."
         },
         {
@@ -3162,9 +3472,19 @@
           "format": "qa",
           "priority": "essential",
           "sourceSection": "Dele / Dela — His / Hers (The Brazilian Solution)",
-          "prompt": "Does his house use casa dela because casa is feminine?",
-          "answer": "No. Say a casa dele; dele identifies the male owner.",
+          "prompt": "What decides whether you use dele or dela?",
+          "answer": "The owner's gender: dele for a male owner, dela for a female owner. The possessed noun doesn't matter: a casa dele.",
           "objective": "Keep dele fixed when a male owner's possessed noun is feminine."
+        },
+        {
+          "id": "rule-dele-position",
+          "kind": "concept",
+          "format": "qa",
+          "priority": "optional",
+          "sourceSection": "Dele / Dela — His / Hers (The Brazilian Solution)",
+          "objective": "Recall that dele and dela follow the noun they modify.",
+          "prompt": "Where do the his and her forms built from de + ele/ela go relative to the noun?",
+          "answer": "After the noun: o livro dele, a casa dela."
         },
         {
           "id": "vocab-dele",
@@ -3228,8 +3548,8 @@
           "format": "qa",
           "priority": "optional",
           "sourceSection": "With or Without Articles?",
-          "prompt": "Are both Meu nome é João and O meu nome é João possible?",
-          "answer": "Yes. Article preference varies by region and context.",
+          "prompt": "What is the status of the definite article before a possessive such as meu in Brazilian Portuguese?",
+          "answer": "It is optional: O meu nome é João and Meu nome é João are both correct; preference varies by region and context.",
           "objective": "Allow regional article variation before Brazilian prenominal possessives."
         },
         {
@@ -3332,18 +3652,8 @@
           "priority": "optional",
           "sourceSection": "Demonstratives in Everyday Speech",
           "objective": "Extend demonstrative reference to discourse and remembered periods rather than only physical distance.",
-          "prompt": "Must aquele always point to a physically distant object?",
-          "answer": "No. It can also refer back to something mentioned or to a remote period, as in naquela época."
-        },
-        {
-          "id": "distance-system",
-          "kind": "concept",
-          "format": "qa",
-          "priority": "essential",
-          "sourceSection": "The Three Levels of Distance",
-          "prompt": "In the three-way distinction, which series refers to something near the speaker, near the listener, and far from both?",
-          "answer": "Este/esta near the speaker; esse/essa near the listener; aquele/aquela far from both.",
-          "objective": "Map the careful three-way system to speaker, listener, and shared distance."
+          "prompt": "Besides physical distance, what else can aquele point to?",
+          "answer": "Something mentioned earlier, or a remote period, as in naquela época."
         },
         {
           "id": "vocab-este",
@@ -3374,6 +3684,16 @@
           "objective": "Apply este to a masculine noun located aqui."
         },
         {
+          "id": "rule-este-speaker",
+          "kind": "concept",
+          "format": "qa",
+          "priority": "essential",
+          "sourceSection": "Este/Esta — Near the Speaker",
+          "objective": "Recall that este/esta point to something near the speaker in the three-way system.",
+          "prompt": "In the careful three-way system, which demonstratives point to something near the speaker?",
+          "answer": "Este and esta."
+        },
+        {
           "id": "vocab-esse",
           "kind": "vocabulary",
           "priority": "optional",
@@ -3390,6 +3710,16 @@
           "word": "essa",
           "meaning": "that (feminine singular; near the listener in the three-way system)",
           "objective": "Recall feminine that near the listener in the careful system."
+        },
+        {
+          "id": "rule-esse-listener",
+          "kind": "concept",
+          "format": "qa",
+          "priority": "essential",
+          "sourceSection": "Esse/Essa — Near the Listener",
+          "objective": "Recall that esse/essa point to something near the listener in the three-way system.",
+          "prompt": "In the careful three-way system, which demonstratives point to something near the listener?",
+          "answer": "Esse and essa."
         },
         {
           "id": "vocab-aquele",
@@ -3418,6 +3748,16 @@
           "prompt": "___ montanha é linda. (That mountain far from both of us)",
           "answer": "Aquela",
           "objective": "Choose feminine aquela for a distant montanha."
+        },
+        {
+          "id": "rule-aquele-far",
+          "kind": "concept",
+          "format": "qa",
+          "priority": "optional",
+          "sourceSection": "Aquele/Aquela — Far from Both",
+          "objective": "Recall that aquele/aquela point to something far from both speaker and listener.",
+          "prompt": "In the careful three-way system, which demonstratives point to something far from both the speaker and the listener?",
+          "answer": "Aquele and aquela."
         },
         {
           "id": "demonstrative-plural",
@@ -3512,8 +3852,8 @@
           "format": "qa",
           "priority": "optional",
           "sourceSection": "Demonstratives in Everyday Speech",
-          "prompt": "Does everyday Brazilian speech always maintain a strict este-versus-esse distance distinction?",
-          "answer": "No. Esse/essa and isso often extend to contexts assigned to este/esta and isto in the three-way system.",
+          "prompt": "What often happens to the este-versus-esse distinction in everyday Brazilian speech?",
+          "answer": "It often blurs: esse/essa and isso are used where the three-way system has este/esta and isto.",
           "objective": "Allow the common Brazilian extension of esse and isso into este and isto contexts."
         },
         {
@@ -3573,12 +3913,22 @@
       "lessonId": "preterito-perfeito",
       "teachingPoints": [
         {
+          "id": "rule-perfeito-use",
+          "kind": "concept",
+          "format": "qa",
+          "priority": "essential",
+          "sourceSection": "Pretérito Perfeito (Simple Past)",
+          "prompt": "How does the pretérito perfeito present a past action?",
+          "answer": "As a completed action, viewed as a finished whole.",
+          "objective": "Recall that the perfeito presents a past action as completed."
+        },
+        {
           "id": "perfeito-ar-eu",
           "kind": "rule",
           "format": "cloze",
           "priority": "essential",
           "sourceSection": "Regular Verbs: -AR",
-          "prompt": "Eu ___ português ontem (falar)",
+          "prompt": "Eu ___ português ontem. (falar; perfeito)",
           "answer": "falei",
           "objective": "Apply the -ei ending to falar for a completed speaker action."
         },
@@ -3608,8 +3958,8 @@
           "format": "qa",
           "priority": "optional",
           "sourceSection": "Regular Verbs: -AR",
-          "prompt": "Can Brazilian falamos, comemos, and partimos identify present versus completed past without context?",
-          "answer": "No. The same spellings can express either tense; context resolves the time.",
+          "prompt": "In Brazilian spelling, which person's regular perfeito forms look identical to the present tense?",
+          "answer": "Nós: falamos, comemos, and partimos serve both tenses; context decides.",
           "objective": "Resolve Brazilian regular nós present-versus-past ambiguity from context and preserve the European -ámos qualification."
         },
         {
@@ -3618,7 +3968,7 @@
           "format": "cloze",
           "priority": "essential",
           "sourceSection": "Regular Verbs: -ER",
-          "prompt": "Eu ___ pizza ontem. (comer)",
+          "prompt": "Eu ___ pizza ontem. (comer; perfeito)",
           "answer": "comi",
           "objective": "Apply -i to a regular eu -er past."
         },
@@ -3673,6 +4023,16 @@
           "objective": "Apply -iram to a regular third-person plural -ir past."
         },
         {
+          "id": "rule-er-ir-eu-ending",
+          "kind": "concept",
+          "format": "qa",
+          "priority": "optional",
+          "sourceSection": "Regular Verbs: -IR",
+          "prompt": "Which ending do regular -er and -ir verbs share in the eu form of the perfeito?",
+          "answer": "-i, as in comi and abri.",
+          "objective": "Recall the shared -i ending of regular -er and -ir eu perfeito forms."
+        },
+        {
           "id": "ser-ir-shared-past",
           "kind": "concept",
           "format": "qa",
@@ -3688,7 +4048,7 @@
           "format": "cloze",
           "priority": "optional",
           "sourceSection": "Ser / Ir (to be / to go)",
-          "prompt": "Ela ___ professora por dez anos (ser)",
+          "prompt": "Ela ___ professora por dez anos. (ser; perfeito)",
           "answer": "foi",
           "objective": "Apply foi to a profession viewed as a bounded past period."
         },
@@ -3778,7 +4138,7 @@
           "format": "cloze",
           "priority": "optional",
           "sourceSection": "More Important Irregulars",
-          "prompt": "Nós ___ o filme ontem à noite (ver)",
+          "prompt": "Nós ___ o filme ontem à noite. (ver; perfeito)",
           "answer": "vimos",
           "objective": "Retrieve nós vimos for a completed viewing."
         },
@@ -3887,8 +4247,8 @@
           "format": "qa",
           "priority": "essential",
           "sourceSection": "Time Expressions with Pretérito Perfeito",
-          "prompt": "Does ontem force every verb in its sentence into the perfeito?",
-          "answer": "No. Use the perfeito for an event viewed as a completed whole; background descriptions may use the imperfeito even with ontem.",
+          "prompt": "What role does a time word such as ontem play in choosing the perfeito?",
+          "answer": "Only a supporting clue: the tense follows whether the event is viewed as completed, so background descriptions can still use the imperfeito with ontem.",
           "objective": "Choose the past viewpoint from completed-event meaning rather than treating ontem as a mechanical tense switch."
         }
       ],
@@ -3910,6 +4270,16 @@
     {
       "lessonId": "preterito-imperfeito",
       "teachingPoints": [
+        {
+          "id": "rule-imperfeito-viewpoint",
+          "kind": "concept",
+          "format": "qa",
+          "priority": "essential",
+          "sourceSection": "Pretérito Imperfeito (Imperfect Past)",
+          "prompt": "How does the imperfeito view a past action, unlike the perfeito's completed event?",
+          "answer": "As ongoing, habitual, or repeated, without focusing on its end.",
+          "objective": "Recall that the imperfeito frames past actions as ongoing, habitual, or repeated."
+        },
         {
           "id": "imperfeito-ar-plural",
           "kind": "rule",
@@ -3936,7 +4306,7 @@
           "format": "cloze",
           "priority": "essential",
           "sourceSection": "Regular Verbs: -AR",
-          "prompt": "Ela ___ em São Paulo antes (morar)",
+          "prompt": "Ela ___ em São Paulo antes. (morar; imperfeito)",
           "answer": "morava",
           "objective": "Apply -ava to a regular -ar past background situation."
         },
@@ -3949,6 +4319,16 @@
           "prompt": "Nós ___ juntos. (estudar; imperfeito)",
           "answer": "estudávamos",
           "objective": "Retain the stress accent in nós -ávamos."
+        },
+        {
+          "id": "rule-nos-imperfect-accent",
+          "kind": "concept",
+          "format": "qa",
+          "priority": "optional",
+          "sourceSection": "Regular Verbs: -AR",
+          "prompt": "In the imperfeito, which person's regular endings carry a written accent?",
+          "answer": "Nós: -ávamos and -íamos.",
+          "objective": "Recall that regular nós imperfeito endings carry a written accent."
         },
         {
           "id": "imperfeito-er",
@@ -3986,9 +4366,19 @@
           "format": "qa",
           "priority": "optional",
           "sourceSection": "Regular Verbs: -IR",
-          "prompt": "Can comia or partia alone distinguish eu from ele/ela/você?",
-          "answer": "No. The singular forms coincide; context or a subject pronoun identifies the person.",
+          "prompt": "In the imperfeito, which persons share the same form?",
+          "answer": "Eu and você/ele/ela, as in comia and partia; context or a subject pronoun identifies the person.",
           "objective": "Use context to resolve identical eu and third-person singular imperfect forms."
+        },
+        {
+          "id": "rule-ir-shares-er-endings",
+          "kind": "concept",
+          "format": "qa",
+          "priority": "optional",
+          "sourceSection": "Regular Verbs: -IR",
+          "prompt": "Which endings do regular -ir verbs use in the imperfeito?",
+          "answer": "The same endings as regular -er verbs.",
+          "objective": "Recall that regular -ir verbs share the -er imperfeito endings."
         },
         {
           "id": "imperfeito-ser",
@@ -3996,7 +4386,7 @@
           "format": "cloze",
           "priority": "essential",
           "sourceSection": "Ser (to be — permanent)",
-          "prompt": "Nós ___ vizinhos quando crianças (ser)",
+          "prompt": "Nós ___ vizinhos quando crianças. (ser; imperfeito)",
           "answer": "éramos",
           "objective": "Retrieve éramos with its nondefault stress."
         },
@@ -4006,8 +4396,8 @@
           "format": "qa",
           "priority": "optional",
           "sourceSection": "Irregular Verbs — Only Four!",
-          "prompt": "Does the four-irregular shortcut mean manter and compor must have regular imperfect stems?",
-          "answer": "No. They inherit irregular forms: mantinha and compunha.",
+          "prompt": "Why do manter and compor have irregular imperfect forms despite the four-irregular shortcut?",
+          "answer": "They are compounds of ter and pôr and inherit their forms: mantinha, compunha.",
           "objective": "Treat the four-basic-irregular shortcut as families rather than an exhaustive ban on irregular derivatives."
         },
         {
@@ -4093,7 +4483,7 @@
           "format": "cloze",
           "priority": "essential",
           "sourceSection": "3. Ongoing Actions — \"Was ...ing\"",
-          "prompt": "Eu ___ quando o telefone tocou (dormir)",
+          "prompt": "Eu ___ quando o telefone tocou. (dormir; already in progress)",
           "answer": "dormia",
           "objective": "Keep the ongoing sleeping background in the imperfect before an intervening event."
         },
@@ -4123,8 +4513,8 @@
           "format": "qa",
           "priority": "optional",
           "sourceSection": "5. Polite Requests (Softened Speech)",
-          "prompt": "Does Eu queria um café, por favor necessarily describe a wish that ended in the past?",
-          "answer": "No. It can politely mean I would like a coffee now.",
+          "prompt": "Why can Eu queria um café, por favor refer to a present wish?",
+          "answer": "The imperfect softens requests politely; it means I would like a coffee now.",
           "objective": "Interpret queria or podia as a softened present request when context supports it."
         },
         {
@@ -4200,8 +4590,8 @@
           "format": "qa",
           "priority": "essential",
           "sourceSection": "When to Use the Pretérito Perfeito",
-          "prompt": "Must a past sentence containing ontem always use perfeito?",
-          "answer": "No. An ongoing background description can use imperfeito even with ontem.",
+          "prompt": "What role do time markers such as ontem play in choosing between the past tenses?",
+          "answer": "They are clues to the context, not switches: an ongoing background description can use the imperfeito even with ontem.",
           "objective": "Allow an imperfect background despite the time word ontem."
         },
         {
@@ -4262,6 +4652,16 @@
           "objective": "Choose chegou for the completed arrival against an ongoing sleeping background."
         },
         {
+          "id": "rule-interruption-pattern",
+          "kind": "concept",
+          "format": "qa",
+          "priority": "essential",
+          "sourceSection": "Pattern 1: Background (imperfeito) + Interruption (perfeito)",
+          "prompt": "When an event interrupts an ongoing past action, which tense does each of them take?",
+          "answer": "The ongoing action takes the imperfeito; the interrupting event takes the perfeito.",
+          "objective": "Recall the tense split between an interrupted action and the interrupting event."
+        },
+        {
           "id": "simultaneous-background",
           "kind": "rule",
           "format": "cloze",
@@ -4270,6 +4670,16 @@
           "prompt": "Enquanto eu cozinhava, ela ___. (estudar; simultaneous ongoing action)",
           "answer": "estudava",
           "objective": "Use imperfect for a second simultaneous ongoing action."
+        },
+        {
+          "id": "rule-simultaneous-background",
+          "kind": "concept",
+          "format": "qa",
+          "priority": "optional",
+          "sourceSection": "Pattern 3: Two Simultaneous Background Actions (imperfeito + imperfeito)",
+          "prompt": "When two past actions were in progress at the same time, as with enquanto, how is each one framed?",
+          "answer": "Both as ongoing background, so both take the imperfeito.",
+          "objective": "Recall that simultaneous ongoing past actions both take the imperfeito."
         },
         {
           "id": "completed-sequence",
@@ -4283,7 +4693,7 @@
         },
         {
           "id": "soube-sabia-contrast",
-          "kind": "concept",
+          "kind": "rule",
           "format": "qa",
           "priority": "optional",
           "sourceSection": "Practice: Choosing the Right Tense",
@@ -4293,7 +4703,7 @@
         },
         {
           "id": "conheci-conhecia-contrast",
-          "kind": "concept",
+          "kind": "rule",
           "format": "qa",
           "priority": "optional",
           "sourceSection": "Practice: Choosing the Right Tense",
@@ -4303,7 +4713,7 @@
         },
         {
           "id": "bounded-state-contrast",
-          "kind": "concept",
+          "kind": "rule",
           "format": "qa",
           "priority": "optional",
           "sourceSection": "Practice: Choosing the Right Tense",
@@ -4313,7 +4723,7 @@
         },
         {
           "id": "pode-podia-contrast",
-          "kind": "concept",
+          "kind": "rule",
           "format": "qa",
           "priority": "optional",
           "sourceSection": "Practice: Choosing the Right Tense",
@@ -4357,13 +4767,23 @@
           "objective": "Choose me for a first-person singular self-directed action."
         },
         {
+          "id": "rule-pronoun-matches-subject",
+          "kind": "concept",
+          "format": "qa",
+          "priority": "essential",
+          "sourceSection": "Reflexive Pronouns",
+          "prompt": "How do you choose which reflexive pronoun goes with a verb?",
+          "answer": "Match it to the verb's subject.",
+          "objective": "Recall that the reflexive pronoun is chosen by the verb's subject."
+        },
+        {
           "id": "reflexive-versus-pronominal",
           "kind": "concept",
           "format": "qa",
           "priority": "essential",
           "sourceSection": "Reflexive Verbs (Verbos Reflexivos)",
-          "prompt": "Does se lembrar mean performing the act of remembering on oneself in the same literal way as se lavar?",
-          "answer": "No. Se lembrar is a pronominal construction meaning to remember; se lavar can literally mean washing oneself.",
+          "prompt": "Why is se lembrar not a literal reflexive action like se lavar?",
+          "answer": "Se lembrar is a pronominal verb meaning to remember; the pronoun does not mark acting on oneself, unlike se lavar (washing oneself).",
           "objective": "Distinguish literal self-directed washing from lexically pronominal remembering."
         },
         {
@@ -4539,7 +4959,7 @@
           "format": "cloze",
           "priority": "optional",
           "sourceSection": "More Useful Reflexive Verbs",
-          "prompt": "Eu me interesso ___ música.",
+          "prompt": "Eu me interesso ___ música. (preposition only, without an article)",
           "answer": "por",
           "objective": "Supply por before the interest complement."
         },
@@ -4559,8 +4979,8 @@
           "format": "qa",
           "priority": "optional",
           "sourceSection": "With infinitives — Common Brazilian preverbal placement:",
-          "prompt": "Where is me placed in Eu preciso me levantar?",
-          "answer": "Immediately before the infinitive levantar.",
+          "prompt": "In everyday Brazilian Portuguese, where does the reflexive pronoun usually go in preciso + infinitive?",
+          "answer": "Between them, immediately before the infinitive: preciso me levantar.",
           "objective": "Identify me before levantar rather than incorrectly calling it post-infinitival."
         },
         {
@@ -4569,13 +4989,13 @@
           "format": "qa",
           "priority": "optional",
           "sourceSection": "After the verb — In formal writing and with certain constructions:",
-          "prompt": "How is the reflexive pronoun attached in formal Levantei-me às seis?",
-          "answer": "After the verb with a hyphen: levantei-me.",
+          "prompt": "In formal writing, when a reflexive pronoun follows the verb, how is it joined to it?",
+          "answer": "With a hyphen, as in levantei-me.",
           "objective": "Recognize a formal postverbal reflexive attached with a hyphen."
         },
         {
           "id": "reflexive-transitive-contrast",
-          "kind": "concept",
+          "kind": "rule",
           "format": "qa",
           "priority": "essential",
           "sourceSection": "Reflexive vs. Non-Reflexive",
@@ -4584,12 +5004,22 @@
           "objective": "Distinguish dressing oneself from dressing a separate object person."
         },
         {
-          "id": "reciprocal-interpretation",
+          "id": "rule-reflexive-meaning-change",
           "kind": "concept",
+          "format": "qa",
+          "priority": "essential",
+          "sourceSection": "Reflexive vs. Non-Reflexive",
+          "prompt": "What does adding a reflexive pronoun to a verb such as lavar or vestir change?",
+          "answer": "Who receives the action: the subject acts on itself rather than on a separate object.",
+          "objective": "Recall that a reflexive pronoun makes the subject receive its own action."
+        },
+        {
+          "id": "reciprocal-interpretation",
+          "kind": "rule",
           "format": "qa",
           "priority": "optional",
           "sourceSection": "Reciprocal Usage",
-          "prompt": "In the reciprocal reading of Eles se abraçam, who hugs whom?",
+          "prompt": "What does Eles se abraçam most naturally mean?",
           "answer": "They hug each other.",
           "objective": "Use context to distinguish each-other reference from themselves."
         },
@@ -4599,9 +5029,19 @@
           "format": "cloze",
           "priority": "essential",
           "sourceSection": "Reciprocal Usage",
-          "prompt": "Nós ___ conhecemos na escola (We met each other at school)",
+          "prompt": "A Ana e eu ___ conhecemos na escola. (We met each other at school.)",
           "answer": "nos",
           "objective": "Apply nos to a first-person plural reciprocal meeting."
+        },
+        {
+          "id": "rule-reciprocal-meaning",
+          "kind": "concept",
+          "format": "qa",
+          "priority": "optional",
+          "sourceSection": "Reciprocal Usage",
+          "prompt": "With a plural subject, what other meaning can a reflexive pronoun express besides acting on oneself?",
+          "answer": "Reciprocal action: each other.",
+          "objective": "Recall the reciprocal each-other reading of plural reflexives."
         }
       ],
       "exclusions": [
@@ -4650,7 +5090,7 @@
           "format": "cloze",
           "priority": "essential",
           "sourceSection": "Affirmative Commands",
-          "prompt": "___ a janela, por favor! (abrir)",
+          "prompt": "___ a janela, por favor! (abrir; standard você command)",
           "answer": "Abra",
           "objective": "Apply the standard você -a command ending to regular abrir."
         },
@@ -4675,6 +5115,16 @@
           "objective": "Retrieve ouça with its irregular stem and cedilla."
         },
         {
+          "id": "rule-voce-command-source",
+          "kind": "concept",
+          "format": "qa",
+          "priority": "essential",
+          "sourceSection": "Affirmative Commands",
+          "prompt": "Which verb form is the standard affirmative você command based on?",
+          "answer": "The você form of the present subjunctive.",
+          "objective": "Recall that the standard você command comes from the present subjunctive."
+        },
+        {
           "id": "negative-command",
           "kind": "rule",
           "format": "cloze",
@@ -4683,6 +5133,16 @@
           "prompt": "___ fale alto no hospital (Don't speak loudly)",
           "answer": "Não",
           "objective": "Negate the standard você form with não without generalizing to every address form."
+        },
+        {
+          "id": "rule-negative-command-form",
+          "kind": "concept",
+          "format": "qa",
+          "priority": "essential",
+          "sourceSection": "Negative Commands",
+          "prompt": "How do you turn a standard você command into a negative one?",
+          "answer": "Put não before the same form, as in Não fale.",
+          "objective": "Recall that negative você commands add não before the same form."
         },
         {
           "id": "command-ser",
@@ -4780,7 +5240,7 @@
           "format": "cloze",
           "priority": "essential",
           "sourceSection": "Irregular Imperatives",
-          "prompt": "___ cá! Preciso falar com você. (Come here!)",
+          "prompt": "___ cá! Preciso falar com você. (vir; standard você command)",
           "answer": "Venha",
           "objective": "Retrieve venha to ask the listener to come."
         },
@@ -4795,6 +5255,16 @@
           "objective": "Change singular fale to plural falem when addressing several people."
         },
         {
+          "id": "rule-plural-command-form",
+          "kind": "concept",
+          "format": "qa",
+          "priority": "optional",
+          "sourceSection": "Plural Commands (Vocês)",
+          "prompt": "Which form gives a standard command addressed to several people (vocês)?",
+          "answer": "The vocês present-subjunctive form, as in fale → falem.",
+          "objective": "Recall that vocês commands use the vocês present-subjunctive form."
+        },
+        {
           "id": "vocab-por-favor",
           "kind": "vocabulary",
           "priority": "optional",
@@ -4805,7 +5275,7 @@
         },
         {
           "id": "softening-requests",
-          "kind": "concept",
+          "kind": "rule",
           "format": "qa",
           "priority": "optional",
           "sourceSection": "Polite Requests with \"Por Favor\"",
@@ -4819,8 +5289,8 @@
           "format": "qa",
           "priority": "optional",
           "sourceSection": "At home:",
-          "prompt": "Do spoken Fala! and Olha! mean that standard Fale! and Olhe! are wrong?",
-          "answer": "No. Both patterns occur; fala/olha are common informal commands, with regional variation.",
+          "prompt": "In very casual Brazilian speech, which verb form often serves as an informal command instead of the standard você command?",
+          "answer": "The você present-indicative form, as in Fala! for Fale! and Olha! for Olhe!; both are widely understood.",
           "objective": "Keep informal fala/olha alongside standard fale/olhe with regional and register labels."
         },
         {
@@ -5196,6 +5666,16 @@
           "objective": "Choose cento rather than cem when additional units follow."
         },
         {
+          "id": "rule-cem-exactly-hundred",
+          "kind": "concept",
+          "format": "qa",
+          "priority": "optional",
+          "sourceSection": "21–100",
+          "prompt": "When is the form cem used for one hundred?",
+          "answer": "For exactly 100, including before mil (cem mil); from 101 to 199 the form is cento, as in cento e um.",
+          "objective": "Recall that cem is used for exactly one hundred, including before mil."
+        },
+        {
           "id": "vocab-duzentos",
           "kind": "vocabulary",
           "priority": "optional",
@@ -5297,7 +5777,7 @@
         },
         {
           "id": "brazil-number-separators",
-          "kind": "concept",
+          "kind": "rule",
           "format": "qa",
           "priority": "optional",
           "sourceSection": "100–1000+",
@@ -5407,7 +5887,7 @@
         },
         {
           "id": "large-ordinal-alternative",
-          "kind": "concept",
+          "kind": "rule",
           "format": "qa",
           "priority": "optional",
           "sourceSection": "Ordinal Numbers (Números Ordinais)",
@@ -5484,13 +5964,13 @@
           "format": "cloze",
           "priority": "essential",
           "sourceSection": "Days of the Week (Dias da Semana)",
-          "prompt": "Eu trabalho de ___ a sexta-feira (Monday to Friday)",
+          "prompt": "Eu trabalho de ___ a sexta-feira. (Monday to Friday; full weekday name)",
           "answer": "segunda-feira",
           "objective": "Supply Monday in a Monday-to-Friday working interval."
         },
         {
           "id": "weekday-shortening",
-          "kind": "concept",
+          "kind": "rule",
           "format": "qa",
           "priority": "optional",
           "sourceSection": "Days of the Week (Dias da Semana)",
@@ -5612,8 +6092,8 @@
           "format": "qa",
           "priority": "optional",
           "sourceSection": "Months (Meses)",
-          "prompt": "Should março have an initial capital simply because it names a month?",
-          "answer": "No. Month names are normally lowercase unless they begin a sentence.",
+          "prompt": "When does a Portuguese month name such as março take an initial capital?",
+          "answer": "Normally only when it begins a sentence; month names are otherwise lowercase.",
           "objective": "Keep month names lowercase outside sentence-initial position."
         },
         {
@@ -5632,9 +6112,19 @@
           "format": "cloze",
           "priority": "optional",
           "sourceSection": "Telling Dates",
-          "prompt": "quinze ___ julho de dois mil e vinte e quatro. (July 15, 2024)",
-          "answer": "de",
+          "prompt": "quinze ___ julho ___ dois mil e vinte e quatro. (July 15, 2024)",
+          "answer": "de … de",
           "objective": "Join a day, month, and year in Portuguese date order with de."
+        },
+        {
+          "id": "rule-date-cardinals",
+          "kind": "concept",
+          "format": "qa",
+          "priority": "essential",
+          "sourceSection": "Telling Dates",
+          "prompt": "In Brazilian Portuguese, how do dates name the day of the month?",
+          "answer": "With cardinal numbers (dois, quinze), except primeiro for the first.",
+          "objective": "Recall that dates use cardinal numbers except primeiro for the first."
         },
         {
           "id": "vocab-que-horas",
@@ -5674,18 +6164,28 @@
           "objective": "Choose plural são for three o'clock while preserving singular one, noon, and midnight."
         },
         {
+          "id": "rule-singular-clock-times",
+          "kind": "concept",
+          "format": "qa",
+          "priority": "essential",
+          "sourceSection": "Full hours:",
+          "prompt": "When telling the time, which form of ser goes with one o'clock, noon, and midnight?",
+          "answer": "É (singular), as in é meio-dia.",
+          "objective": "Recall that uma hora, meio-dia, and meia-noite take singular é."
+        },
+        {
           "id": "half-past",
           "kind": "rule",
           "format": "cloze",
           "priority": "optional",
           "sourceSection": "Minutes:",
-          "prompt": "São quatro e ___. (4:30)",
+          "prompt": "São quatro e ___. (4:30; use the word for half)",
           "answer": "meia",
           "objective": "Use feminine meia for the understood half-hour."
         },
         {
           "id": "minutes-to-hour",
-          "kind": "concept",
+          "kind": "rule",
           "format": "qa",
           "priority": "optional",
           "sourceSection": "Minutes:",

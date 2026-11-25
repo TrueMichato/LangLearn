@@ -7,6 +7,7 @@ The pluperfect (mais-que-perfeito) expresses an action that happened **before** 
 ## Compound Pluperfect: tinha + Past Participle
 
 <!-- grammar-card: {"id":"pluperfect-compound","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Compound Pluperfect: tinha + Past Participle","rule":"Compound pluperfect: tinha + past participle","example":"Eu já ___ ___ o jantar quando ele chegou. (preparar)","answer":"tinha preparado","explanation":"The compound pluperfect combines imperfect ter with a past participle to locate an action before another past event."} -->
+<!-- grammar-card: {"id":"rule-compound-pluperfect-formation","kind":"concept","format":"qa","priority":"essential","sourceSection":"Compound Pluperfect: tinha + Past Participle","rule":"The compound pluperfect combines the imperfect of ter with the past participle","example":"How is the everyday compound pluperfect formed?","answer":"The imperfect of ter (tinha, tínhamos, tinham) plus the past participle.","explanation":"Eu tinha falado, nós tínhamos falado: ter carries person and number, and the participle stays the same."} -->
 
 The compound form is what you'll hear and use in everyday Brazilian Portuguese. It combines **tinha** (imperfect of *ter*) with the **past participle**:
 
@@ -28,7 +29,7 @@ The compound form is what you'll hear and use in everyday Brazilian Portuguese. 
 ### Examples with Irregular Participles
 
 <!-- grammar-card: {"id":"pluperfect-nos-irregular","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Examples with Irregular Participles","rule":"Imperfect ter combines with each verb's actual participle","example":"Nós nunca ___ ___ neve antes. (ver)","answer":"tínhamos visto","explanation":"Nós takes tínhamos, and ver has the irregular participle visto.","legacyAliases":[{"rule":"Pluperfect with irregular participles","example":"Nós nunca ___ ___ neve antes. (ver)"}]} -->
-<!-- grammar-card: {"id":"pluperfect-participle-choice","kind":"concept","format":"qa","priority":"essential","sourceSection":"Examples with Irregular Participles","rule":"Ter does not require inventing regular forms for verbs with irregular participles","example":"Does ter require an invented regular participle instead of feito, dito, or escrito?","answer":"No. Use each verb's actual participle; these verbs have feito, dito, and escrito.","explanation":"The regular-versus-short guide for verbs with two participles does not apply to inventing forms for verbs with only an irregular participle."} -->
+<!-- grammar-card: {"id":"pluperfect-participle-choice","kind":"rule","format":"qa","priority":"essential","sourceSection":"Examples with Irregular Participles","rule":"Ter does not require inventing regular forms for verbs with irregular participles","example":"Does ter require an invented regular participle instead of feito, dito, or escrito?","answer":"No. Use each verb's actual participle; these verbs have feito, dito, and escrito.","explanation":"The regular-versus-short guide for verbs with two participles does not apply to inventing forms for verbs with only an irregular participle."} -->
 <!-- grammar-card: {"id":"pluperfect-participle-invariable","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Examples with Irregular Participles","rule":"A participle with ter in a compound tense stays invariable","example":"Elas tinham ___ a carta. (escrever)","answer":"escrito","explanation":"With ter in compound tenses the participle is invariable; this differs from passive foram escritas."} -->
 
 Use the verb's actual participle with *ter*, including irregular **feito, dito, visto, escrito, aberto, posto**. Do not invent a regular form for these verbs. The participle in a compound tense with **ter** is invariable: **elas tinham escrito a carta**, unlike passive **as cartas foram escritas**.
@@ -42,7 +43,8 @@ Use the verb's actual participle with *ter*, including irregular **feito, dito, 
 
 ## Usage: The Past Before the Past
 
-<!-- grammar-card: {"id":"pluperfect-timeline","kind":"concept","format":"qa","priority":"essential","sourceSection":"Usage: The Past Before the Past","rule":"The pluperfect marks the event before a past reference point","example":"In Quando eu cheguei, a festa já tinha acabado, which event happened first?","answer":"The party ended before I arrived.","explanation":"Tinha acabado marks the earlier past event; cheguei marks the later reference event.","legacyAliases":[{"rule":"Past timeline with pluperfect","example":"Quando eu ___ (chegar, preterite), a festa já ___ (acabar, pluperfect)."}]} -->
+<!-- grammar-card: {"id":"pluperfect-timeline","kind":"rule","format":"qa","priority":"essential","sourceSection":"Usage: The Past Before the Past","rule":"The pluperfect marks the event before a past reference point","example":"In Quando eu cheguei, a festa já tinha acabado, which event happened first?","answer":"The party ended before I arrived.","explanation":"Tinha acabado marks the earlier past event; cheguei marks the later reference event.","legacyAliases":[{"rule":"Past timeline with pluperfect","example":"Quando eu ___ (chegar, preterite), a festa já ___ (acabar, pluperfect)."}]} -->
+<!-- grammar-card: {"id":"rule-pluperfect-function","kind":"concept","format":"qa","priority":"essential","sourceSection":"Usage: The Past Before the Past","rule":"The pluperfect marks an action before another past action","example":"What time relationship does the pluperfect express?","answer":"An action completed before another past action or moment.","explanation":"Ele não sabia que ela já tinha ido embora: her leaving came before his not knowing."} -->
 
 The pluperfect establishes a timeline — one action happened **before** another in the past:
 
@@ -55,6 +57,7 @@ The pluperfect establishes a timeline — one action happened **before** another
 ## Simple Pluperfect (Mais-que-Perfeito Simples)
 
 <!-- grammar-card: {"id":"pluperfect-simple-base","kind":"concept","format":"qa","priority":"optional","sourceSection":"Simple Pluperfect (Mais-que-Perfeito Simples)","rule":"Simple-pluperfect third-person plural can coincide with the preterite","example":"Why can falaram need context when reading the simple pluperfect table?","answer":"Its third-person plural form is spelled the same as the preterite; context establishes the earlier-past reading.","explanation":"The simple pluperfect is preterite-stem based: falara, faláramos, falaram."} -->
+<!-- grammar-card: {"id":"rule-simple-pluperfect-register","kind":"concept","format":"qa","priority":"optional","sourceSection":"Simple Pluperfect (Mais-que-Perfeito Simples)","rule":"The simple pluperfect is mainly literary or very formal","example":"In which registers is the simple pluperfect (the -ra form) mainly used?","answer":"Literary and very formal writing.","explanation":"Everyday speech normally prefers the compound form (tinha feito); the -ra form (fizera) is mainly literary or very formal."} -->
 
 The simple form is based on the preterite (pretérito perfeito) stem. It's used almost exclusively in **literary** and very **formal** writing — you rarely hear it in conversation:
 
@@ -95,7 +98,7 @@ The simple form is based on the preterite (pretérito perfeito) stem. It's used 
 
 ## Compound vs. Simple: When to Use Each
 
-<!-- grammar-card: {"id":"pluperfect-register","kind":"concept","format":"qa","priority":"essential","sourceSection":"Compound vs. Simple: When to Use Each","rule":"Compound pluperfect is the usual spoken Brazilian preference","example":"Which is the usual everyday Brazilian choice: tinha feito or fizera?","answer":"Tinha feito; fizera is mainly literary or very formal.","explanation":"This is a usage preference, not an absolute prohibition on speaking a simple-pluperfect form."} -->
+<!-- grammar-card: {"id":"pluperfect-register","kind":"rule","format":"qa","priority":"essential","sourceSection":"Compound vs. Simple: When to Use Each","rule":"Compound pluperfect is the usual spoken Brazilian preference","example":"Which is the usual everyday Brazilian choice: tinha feito or fizera?","answer":"Tinha feito; fizera is mainly literary or very formal.","explanation":"This is a usage preference, not an absolute prohibition on speaking a simple-pluperfect form."} -->
 
 | Form | Usage | Register |
 |------|-------|----------|

@@ -173,7 +173,7 @@ The present subjunctive is triggered by specific words and expressions. Here are
 
 ### 1. Wishes and Desires (Querer que, Esperar que, Desejar que)
 
-<!-- grammar-card: {"id":"wish-trigger","kind":"rule","format":"cloze","priority":"optional","sourceSection":"1. Wishes and Desires (Querer que, Esperar que, Desejar que)","rule":"Tomara que introduces a hope with the subjunctive","example":"___ que não chova. (I hope)","answer":"Tomara","explanation":"Tomara que introduces a hope and takes the subjunctive."} -->
+<!-- grammar-card: {"id":"wish-trigger","kind":"rule","format":"cloze","priority":"optional","sourceSection":"1. Wishes and Desires (Querer que, Esperar que, Desejar que)","rule":"Tomara que introduces a hope with the subjunctive","example":"___ que não chova. (I hope; invariable expression, not a form of esperar)","answer":"Tomara","explanation":"Tomara que introduces a hope and takes the subjunctive.","legacyAliases":[{"rule":"Tomara que introduces a hope with the subjunctive","example":"___ que não chova. (I hope)"}]} -->
 
 - **Eu quero que você venha** (eh-oo keh-roo kee voh-seh ven-yah) — I want you to come
 - **Espero que tudo dê certo** (esh-peh-roo kee too-doo deh ser-too) — I hope everything works out
@@ -182,7 +182,7 @@ The present subjunctive is triggered by specific words and expressions. Here are
 
 ### 2. Impersonal Expressions (É importante que, É preciso que)
 
-<!-- grammar-card: {"id":"impersonal-trigger","kind":"concept","format":"qa","priority":"optional","sourceSection":"2. Impersonal Expressions (É importante que, É preciso que)","rule":"These evaluative and possibility expressions take subjunctive clauses","example":"Which mood follows é importante que and é possível que in this lesson?","answer":"The subjunctive.","explanation":"Necessity, evaluation, and possibility expressions here introduce a subjunctive clause."} -->
+<!-- grammar-card: {"id":"impersonal-trigger","kind":"concept","format":"qa","priority":"optional","sourceSection":"2. Impersonal Expressions (É importante que, É preciso que)","rule":"These evaluative and possibility expressions take subjunctive clauses","example":"Why do é importante que and é possível que take the subjunctive?","answer":"They express evaluation, necessity, or possibility rather than stating a fact.","explanation":"Any answer naming evaluation, necessity, or possibility counts; a plain statement of fact, as in É certo que ela vem, takes the indicative.","legacyAliases":[{"rule":"These evaluative and possibility expressions take subjunctive clauses","example":"Which mood follows é importante que and é possível que in this lesson?"}]} -->
 
 - **É importante que você estude** (eh een-por-tan-chee kee voh-seh esh-too-jee) — It's important that you study
 - **É necessário que nós falemos** (eh neh-seh-sah-ree-oo kee nohs fah-leh-mooz) — It's necessary that we talk
@@ -209,8 +209,9 @@ Clause-initial **talvez** normally takes the subjunctive in standard usage. This
 
 ### 5. Conjunctions (Quando, Embora, Para que, Antes que)
 
-<!-- grammar-card: {"id":"conjunction-tense-contrast","kind":"concept","format":"qa","priority":"essential","sourceSection":"5. Conjunctions (Quando, Embora, Para que, Antes que)","rule":"Future quando and concessive embora select different subjunctive tenses here","example":"In Quando ele chegar and Embora seja difícil, are chegar and seja the same subjunctive tense?","answer":"No. Chegar is future subjunctive after future-oriented quando; seja is present subjunctive after embora.","explanation":"Conjunction and meaning select the mood and tense; future reference alone does not require the future subjunctive after every conjunction."} -->
+<!-- grammar-card: {"id":"conjunction-tense-contrast","kind":"rule","format":"qa","priority":"essential","sourceSection":"5. Conjunctions (Quando, Embora, Para que, Antes que)","rule":"Future quando and concessive embora select different subjunctive tenses here","example":"How do chegar in Quando ele chegar and seja in Embora seja difícil differ in tense?","answer":"Chegar is future subjunctive after future-oriented quando; seja is present subjunctive after embora.","explanation":"Conjunction and meaning select the mood and tense; future reference alone does not require the future subjunctive after every conjunction.","legacyAliases":[{"rule":"Future quando and concessive embora select different subjunctive tenses here","example":"In Quando ele chegar and Embora seja difícil, are chegar and seja the same subjunctive tense?"}]} -->
 <!-- grammar-card: {"id":"purpose-trigger","kind":"rule","format":"cloze","priority":"optional","sourceSection":"5. Conjunctions (Quando, Embora, Para que, Antes que)","rule":"Para que introduces a subjunctive purpose clause","example":"Falo devagar para que você ___. (entender)","answer":"entenda","explanation":"Para que introduces a purpose clause with the subjunctive."} -->
+<!-- grammar-card: {"id":"rule-quando-future","kind":"concept","format":"qa","priority":"optional","sourceSection":"5. Conjunctions (Quando, Embora, Para que, Antes que)","rule":"Quando referring to a future event takes the future subjunctive","example":"Which subjunctive follows quando when it refers to a future event?","answer":"The future subjunctive, as in quando ele chegar.","explanation":"Any answer naming the future subjunctive counts; embora, para que, and antes que take the present subjunctive here."} -->
 
 **Embora**, **para que**, and **antes que** introduce subjunctive clauses in the examples below. **Quando** referring to a future event instead uses the **future subjunctive**: **chegar** below is not present subjunctive. Present subjunctive can also refer to the future, as in **antes que chova**:
 
@@ -223,7 +224,8 @@ Clause-initial **talvez** normally takes the subjunctive in standard usage. This
 
 ## Subjunctive vs. Indicative
 
-<!-- grammar-card: {"id":"indicative-subjunctive-choice","kind":"concept","format":"qa","priority":"essential","sourceSection":"Subjunctive vs. Indicative","rule":"Sei que presents a fact; espero que introduces a wish","example":"Why do sei que ele está aqui and espero que ele esteja aqui use different moods?","answer":"Sei que presents a fact with the indicative; espero que expresses a wish with the subjunctive.","explanation":"The speaker's construction and attitude matter, not merely whether the event is objectively certain."} -->
+<!-- grammar-card: {"id":"indicative-subjunctive-choice","kind":"rule","format":"qa","priority":"essential","sourceSection":"Subjunctive vs. Indicative","rule":"Sei que presents a fact; espero que introduces a wish","example":"Why do sei que ele está aqui and espero que ele esteja aqui use different moods?","answer":"Sei que presents a fact with the indicative; espero que expresses a wish with the subjunctive.","explanation":"The speaker's construction and attitude matter, not merely whether the event is objectively certain."} -->
+<!-- grammar-card: {"id":"rule-subjunctive-meaning","kind":"concept","format":"qa","priority":"essential","sourceSection":"Subjunctive vs. Indicative","rule":"The subjunctive expresses uncertainty, wishes, or subjectivity","example":"What does the subjunctive express, as opposed to the indicative's statements of fact?","answer":"Uncertainty, wishes, or subjectivity.","explanation":"Any answer naming uncertainty, wishes, doubt, emotion, or subjectivity counts."} -->
 
 The key difference: the **indicative** states facts; the **subjunctive** expresses uncertainty, wishes, or subjectivity.
 

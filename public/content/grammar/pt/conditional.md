@@ -7,7 +7,8 @@ The conditional mood in Portuguese — called **futuro do pretérito** (literall
 ## Regular Conjugation
 
 <!-- grammar-card: {"id":"conditional-regular","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Regular Conjugation","rule":"The conditional (futuro do pretérito) adds -ia, -ia, -íamos, -iam to the full infinitive","example":"Nós ___ juntos se tivéssemos tempo (viajar)","answer":"viajaríamos","explanation":"Add -íamos to the full infinitive for nós in the conditional."} -->
-<!-- grammar-card: {"id":"conditional-singular-syncretism","kind":"concept","format":"qa","priority":"optional","sourceSection":"Regular Conjugation","rule":"Eu and você share the singular conditional ending","example":"Do eu and você use different conditional forms of falar?","answer":"No. Both use falaria; the subject or context identifies the person.","explanation":"The conditional singular forms taught here share -ia, while nós uses -íamos and eles uses -iam."} -->
+<!-- grammar-card: {"id":"conditional-singular-syncretism","kind":"concept","format":"qa","priority":"optional","sourceSection":"Regular Conjugation","rule":"Eu and você share the singular conditional ending","example":"In the conditional, which persons share the same form?","answer":"Eu and você/ele/ela (falaria); context or the subject identifies the person.","explanation":"The conditional singular forms taught here share -ia, while nós uses -íamos and eles uses -iam.","legacyAliases":[{"rule":"Eu and você share the singular conditional ending","example":"Do eu and você use different conditional forms of falar?"}]} -->
+<!-- grammar-card: {"id":"rule-conditional-base","kind":"concept","format":"qa","priority":"essential","sourceSection":"Regular Conjugation","rule":"Regular conditional endings attach to the full infinitive","example":"What do regular conditional endings attach to?","answer":"The full infinitive, with the same endings for all verb groups.","explanation":"Any answer naming the whole infinitive counts: falaria, comeria, abriria."} -->
 
 Like the futuro simples, the conditional adds endings to the **full infinitive**. The endings are the same for all verb groups (-ar, -er, -ir):
 
@@ -29,6 +30,7 @@ Like the futuro simples, the conditional adds endings to the **full infinitive**
 
 <!-- grammar-card: {"id":"polite-gostaria","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Polite Requests: Eu Gostaria","rule":"The conditional of 'gostar' (gostaria) is the standard polite form for 'I would like'","example":"Eu ___ de fazer uma pergunta (I would like to ask a question)","answer":"gostaria","explanation":"Gostaria de + noun or infinitive is a conventional polite request construction."} -->
 <!-- grammar-card: {"id":"polite-poderia","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Polite Requests: Eu Gostaria","rule":"Conditional poder softens a request","example":"Você ___ me ajudar? (Could you help me?)","answer":"poderia","explanation":"The conditional poderia makes the request more tentative."} -->
+<!-- grammar-card: {"id":"rule-conditional-polite","kind":"concept","format":"qa","priority":"optional","sourceSection":"Polite Requests: Eu Gostaria","rule":"The conditional makes a request more tentative and polite","example":"What effect does the conditional have on a request?","answer":"It makes it more tentative and polite.","explanation":"Any answer naming politeness or softening counts: Eu gostaria de... is softer than Eu quero..."} -->
 <!-- vocab-card: {"id":"vocab-gostar","word":"gostar de","meaning":"to like","priority":"optional","sourceSection":"Polite Requests: Eu Gostaria"} -->
 
 One of the most common uses of the conditional is making polite requests. **Gostaria** (would like) is essential for everyday politeness:
@@ -127,6 +129,7 @@ The same three basic shortened stems from the futuro simples occur in the condit
 ## Conditional in Reported Speech
 
 <!-- grammar-card: {"id":"conditional-reported-future","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Conditional in Reported Speech","rule":"The conditional can locate a future relative to a past reporting moment","example":"Ele disse que ___. (vir; would come)","answer":"viria","explanation":"The conditional can express a future event viewed from a past reporting time."} -->
+<!-- grammar-card: {"id":"rule-reported-future","kind":"concept","format":"qa","priority":"optional","sourceSection":"Conditional in Reported Speech","rule":"In reported speech, the conditional expresses a future seen from a past moment","example":"In reported speech after a past verb such as disse que, what does the conditional express?","answer":"What someone said would happen later: a future seen from a past moment.","explanation":"Any answer naming a future relative to the past report counts: Ele disse que viria (He said he would come)."} -->
 
 The conditional is also used to report what someone said they would do (indirect speech):
 

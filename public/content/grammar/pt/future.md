@@ -7,6 +7,7 @@ Portuguese has two main ways to express the future. The most common in everyday 
 ## Ir + Infinitive: The Everyday Future
 
 <!-- grammar-card: {"id":"everyday-future","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Ir + Infinitive: The Everyday Future","rule":"The everyday future in Brazilian Portuguese uses ir (present) + infinitive: vou falar, vai comer, vamos abrir","example":"Ela ___ estudar amanhã (She's going to study)","answer":"vai","explanation":"Conjugate present-tense ir for the subject and keep the following verb in the infinitive."} -->
+<!-- grammar-card: {"id":"rule-ir-future-formation","kind":"concept","format":"qa","priority":"essential","sourceSection":"Ir + Infinitive: The Everyday Future","rule":"The everyday future combines present-tense ir with an infinitive","example":"How is the everyday Brazilian future formed?","answer":"Present tense of ir plus the infinitive of the main verb.","explanation":"Any answer naming present-tense ir plus an infinitive counts: vou falar, vamos comer."} -->
 <!-- vocab-card: {"id":"vocab-ir","word":"ir","meaning":"to go","priority":"optional","sourceSection":"Ir + Infinitive: The Everyday Future"} -->
 
 This is the most usual future construction in everyday Brazilian speech. It's formed with the verb **ir** (to go) conjugated in the present tense, followed by the infinitive of the main verb.
@@ -62,7 +63,7 @@ The futuro simples is formed by adding endings directly to the infinitive. It's 
 ### Regular Conjugation
 
 <!-- grammar-card: {"id":"formal-future","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Regular Conjugation","rule":"The futuro simples adds endings (-ei, -á, -emos, -ão) to the full infinitive","example":"Nós ___ juntos amanhã (comer, formal)","answer":"comeremos","explanation":"Regular simple-future forms retain the full infinitive: comer + emos gives comeremos."} -->
-<!-- grammar-card: {"id":"future-infinitive-not-stem","kind":"concept","format":"qa","priority":"essential","sourceSection":"Regular Conjugation","rule":"Regular simple-future endings attach to the full infinitive","example":"Do regular simple-future endings attach to the stem or to the complete infinitive?","answer":"To the complete infinitive, with the same endings for -ar, -er, and -ir verbs.","explanation":"The forms falarei, comerei, and abrirei all preserve the infinitive before the ending."} -->
+<!-- grammar-card: {"id":"future-infinitive-not-stem","kind":"concept","format":"qa","priority":"essential","sourceSection":"Regular Conjugation","rule":"Regular simple-future endings attach to the full infinitive","example":"What do regular simple-future endings attach to?","answer":"The complete infinitive, with the same endings for -ar, -er, and -ir verbs.","explanation":"The forms falarei, comerei, and abrirei all preserve the infinitive before the ending.","legacyAliases":[{"rule":"Regular simple-future endings attach to the full infinitive","example":"Do regular simple-future endings attach to the stem or to the complete infinitive?"}]} -->
 
 The endings are the same for all three verb groups (-ar, -er, -ir):
 
@@ -81,6 +82,8 @@ The endings are the same for all three verb groups (-ar, -er, -ir):
 > **Tip:** The futuro simples adds endings to the **full infinitive**, not the stem. Think of it as: infinitive + ending.
 
 ### Irregular Verbs in the Futuro Simples
+
+<!-- grammar-card: {"id":"rule-future-short-stems","kind":"concept","format":"qa","priority":"optional","sourceSection":"Irregular Verbs in the Futuro Simples","rule":"Fazer, dizer, and trazer use shortened stems in the futuro simples","example":"What kind of stem do fazer, dizer, and trazer use in the futuro simples?","answer":"A shortened stem (far-, dir-, trar-) before the regular endings.","explanation":"Any answer saying the stems shorten counts: farei, direi, trarei."} -->
 
 Three basic verbs have shortened stems in the futuro simples: **fazer, dizer, trazer**. Related compounds can inherit these patterns, so this is not a claim that only three dictionary verbs can be irregular. Add the usual endings to these shortened stems:
 
@@ -133,7 +136,7 @@ Three basic verbs have shortened stems in the futuro simples: **fazer, dizer, tr
 
 ## Comparing the Two Futures
 
-<!-- grammar-card: {"id":"future-register-choice","kind":"concept","format":"qa","priority":"essential","sourceSection":"Comparing the Two Futures","rule":"Future choice reflects variety, register, and context","example":"How do vou falar and falarei typically differ in everyday Brazilian usage?","answer":"Vou falar is more usual in everyday speech; falarei is more associated with formal writing, predictions, promises, and fixed expressions.","explanation":"The distinction is a tendency, not a ban on the simple future in conversation."} -->
+<!-- grammar-card: {"id":"future-register-choice","kind":"concept","format":"qa","priority":"essential","sourceSection":"Comparing the Two Futures","rule":"Future choice reflects variety, register, and context","example":"In Brazilian Portuguese, which kind of context favors the futuro simples (falarei) over ir + infinitive?","answer":"Formal contexts—writing, news, speeches, laws—plus promises and fixed expressions such as será que; everyday speech prefers ir + infinitive.","explanation":"Any answer naming formal contexts counts. The distinction is a tendency, not a ban on the simple future in conversation.","legacyAliases":[{"rule":"Future choice reflects variety, register, and context","example":"How do vou falar and falarei typically differ in everyday Brazilian usage?"}]} -->
 
 | Ir + Infinitive | Futuro Simples |
 |-----------------|----------------|
@@ -156,7 +159,7 @@ Both mean essentially the same thing — the choice depends on context and forma
 
 ### Common expression with futuro simples:
 
-<!-- grammar-card: {"id":"sera-que-function","kind":"concept","format":"qa","priority":"optional","sourceSection":"Common expression with futuro simples:","rule":"Será que can express wondering about a possibility","example":"What does Será que ele vem? express?","answer":"I wonder if he is coming; uncertainty or a question about the possibility.","explanation":"Será que is a conventional way to ask or wonder about a possibility."} -->
+<!-- grammar-card: {"id":"sera-que-function","kind":"rule","format":"qa","priority":"optional","sourceSection":"Common expression with futuro simples:","rule":"Será que can express wondering about a possibility","example":"What does Será que ele vem? express?","answer":"I wonder if he is coming; uncertainty or a question about the possibility.","explanation":"Será que is a conventional way to ask or wonder about a possibility."} -->
 
 - **Será que vai chover?** (seh-rah kee vah-ee shoh-ver) — I wonder if it's going to rain?
 - **Será que ele vem?** (seh-rah kee eh-lee veng) — I wonder if he's coming?

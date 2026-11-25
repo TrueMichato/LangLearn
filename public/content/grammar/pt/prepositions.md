@@ -49,7 +49,7 @@ Prepositions in Portuguese work similarly to English, but there's a twist: some 
 
 > **A vs Para:** Both can mean "to" with direction. **Para** can suggest a final destination or a longer stay, and **a** can suggest a visit, but this is a tendency, not a fixed duration rule. Destination **para** is very common in everyday Brazilian Portuguese.
 
-<!-- grammar-card: {"id":"a-para-tendency","kind":"concept","format":"qa","priority":"optional","sourceSection":"Para (pah-rah) — To, For","rule":"A versus para is not an absolute duration rule","example":"Does para always mean a long stay while a always means a short visit?","answer":"No. That is a possible tendency, not a strict rule; both can mark a destination.","explanation":"Para also expresses purpose and recipient, as in para a prova and para você."} -->
+<!-- grammar-card: {"id":"a-para-tendency","kind":"concept","format":"qa","priority":"optional","sourceSection":"Para (pah-rah) — To, For","rule":"A versus para is not an absolute duration rule","example":"How reliable is the idea that para means a long stay and a means a short visit?","answer":"It is only a tendency, not a strict rule; both can mark a destination.","explanation":"Para also expresses purpose and recipient, as in para a prova and para você.","legacyAliases":[{"rule":"A versus para is not an absolute duration rule","example":"Does para always mean a long stay while a always means a short visit?"}]} -->
 
 ### Com (kohn) — With
 
@@ -79,7 +79,9 @@ Prepositions in Portuguese work similarly to English, but there's a twist: some 
 
 ## Contractions with Articles
 
-When prepositions meet articles, they **must** contract. You cannot say "de o" — it must be "do."
+When **de**, **em**, or **a** meets a definite article, they **must** contract. You cannot say "de o" — it must be "do."
+
+<!-- grammar-card: {"id":"rule-definite-contraction","kind":"concept","format":"qa","priority":"essential","sourceSection":"Contractions with Articles","rule":"De and em contract with a following definite article","example":"When de or em comes directly before the definite article, what must happen to the two words?","answer":"They contract into one word, such as de + o = do and em + a = na.","explanation":"Within a noun phrase these contractions are required: Eu moro no Brasil, not em o Brasil. Contractions with indefinite articles, such as numa, are optional."} -->
 
 ### De + Articles
 
@@ -96,7 +98,7 @@ When prepositions meet articles, they **must** contract. You cannot say "de o" �
 
 ### Em + Articles
 
-<!-- grammar-card: {"id":"em-definite-contraction","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Em + Articles","rule":"de+o=do, de+a=da, em+o=no, em+a=na, a+o=ao, a+a=à","example":"Eu moro ___ Brasil. (em + o)","answer":"no","explanation":"Within this noun phrase, em + o contracts to no; em + a/as/os gives na/nas/nos."} -->
+<!-- grammar-card: {"id":"em-definite-contraction","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Em + Articles","rule":"Em contracts with the definite article as no, na, nos, nas","example":"Eu moro ___ Brasil. (em + o)","answer":"no","explanation":"Within this noun phrase, em + o contracts to no; em + a/as/os gives na/nas/nos.","legacyAliases":[{"rule":"de+o=do, de+a=da, em+o=no, em+a=na, a+o=ao, a+a=à","example":"Eu moro ___ Brasil. (em + o)"}]} -->
 
 | | o | a | os | as |
 |--|---|---|----|----|
@@ -147,7 +149,7 @@ Prepositions also contract with **um**, **uma**, **uns**, **umas**:
 
 > **Note:** These contractions with indefinite articles are common in speech but sometimes written in full (em um, de um) in formal writing.
 
-<!-- grammar-card: {"id":"indefinite-contraction-register","kind":"concept","format":"qa","priority":"optional","sourceSection":"Contractions with Indefinite Articles","rule":"Indefinite-article contractions are not required in every register","example":"Are both em uma casa and numa casa possible?","answer":"Yes. Numa is the contraction; the full form em uma is also possible, especially in formal writing.","explanation":"The same distinction allows de um alongside dum; do not extend the mandatory definite-article rule to every indefinite."} -->
+<!-- grammar-card: {"id":"indefinite-contraction-register","kind":"concept","format":"qa","priority":"optional","sourceSection":"Contractions with Indefinite Articles","rule":"Indefinite-article contractions are not required in every register","example":"How do contractions with indefinite articles, such as numa, differ from those with definite articles?","answer":"They are optional: the full form em uma is also correct, especially in formal writing, while definite-article contractions are required.","explanation":"The same distinction allows de um alongside dum; do not extend the mandatory definite-article rule to every indefinite.","legacyAliases":[{"rule":"Indefinite-article contractions are not required in every register","example":"Are both em uma casa and numa casa possible?"}]} -->
 <!-- grammar-card: {"id":"em-indefinite-application","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Em + Indefinite Articles","rule":"Em can contract with uma as numa","example":"Eu moro ___ casa pequena. (contract em + uma)","answer":"numa","explanation":"Other forms are num, nuns, and numas."} -->
 ## Contractions with Demonstratives
 
@@ -189,6 +191,7 @@ Prepositions also contract with demonstrative pronouns (este, esse, aquele):
 - **Eles vão conosco** (eh-leez vow koh-nohs-koo) — They go with us
 
 <!-- grammar-card: {"id":"comigo-application","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Special Preposition: Com + Pronouns","rule":"'Com + mim' becomes 'comigo', 'com + nós' becomes 'conosco'","example":"Você quer ir _____? (with me)","answer":"comigo","explanation":"The first-person fused forms taught here are comigo and conosco."} -->
+<!-- grammar-card: {"id":"rule-com-fused-forms","kind":"concept","format":"qa","priority":"optional","sourceSection":"Special Preposition: Com + Pronouns","rule":"Com fuses with mim and nós as comigo and conosco","example":"Which two pronouns fuse with com into single words?","answer":"Mim and nós: comigo (with me) and conosco (with us).","explanation":"The other pronouns stay separate: com você, com ele, com vocês."} -->
 <!-- vocab-card: {"id":"vocab-comigo","word":"comigo","meaning":"with me","priority":"optional","sourceSection":"Special Preposition: Com + Pronouns"} -->
 <!-- vocab-card: {"id":"vocab-conosco","word":"conosco","meaning":"with us (Brazilian spelling; European connosco)","priority":"optional","sourceSection":"Special Preposition: Com + Pronouns"} -->
 

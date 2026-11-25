@@ -21,6 +21,7 @@ One of the best tricks for expanding your Portuguese vocabulary is learning how 
 ### -tion → -ção
 
 <!-- grammar-card: {"id":"cognate-cao","kind":"rule","format":"cloze","priority":"essential","sourceSection":"-tion → -ção","rule":"English -tion often corresponds to Portuguese -ção","example":"Write education in Portuguese: ___.","answer":"educação","explanation":"Many -tion words correspond to -ção, but the pattern is a clue rather than an exceptionless conversion algorithm."} -->
+<!-- grammar-card: {"id":"rule-tion-suffix","kind":"concept","format":"qa","priority":"essential","sourceSection":"-tion → -ção","rule":"English -tion often corresponds to Portuguese -ção","example":"Which Portuguese ending often corresponds to English -tion?","answer":"-ção (as in nação and informação).","explanation":"nation → nação, information → informação; the pattern still needs checking word by word."} -->
 <!-- vocab-card: {"id":"vocab-nacao","word":"nação","meaning":"nation","priority":"optional","sourceSection":"-tion → -ção"} -->
 <!-- vocab-card: {"id":"vocab-acao","word":"ação","meaning":"action","priority":"optional","sourceSection":"-tion → -ção"} -->
 <!-- vocab-card: {"id":"vocab-educacao","word":"educação","meaning":"education","priority":"optional","sourceSection":"-tion → -ção"} -->
@@ -36,6 +37,7 @@ One of the best tricks for expanding your Portuguese vocabulary is learning how 
 ### -ty → -dade
 
 <!-- grammar-card: {"id":"cognate-university","kind":"rule","format":"cloze","priority":"essential","sourceSection":"-ty → -dade","rule":"English suffix patterns: -tion→-ção, -ty→-dade, -ment→-mento, -ous→-oso, -al→-al","example":"The English word 'university' becomes ___ in Portuguese. (-ty → -dade)","answer":"universidade","explanation":"University corresponds to universidade; -ty often corresponds to -dade."} -->
+<!-- grammar-card: {"id":"rule-ty-suffix","kind":"concept","format":"qa","priority":"essential","sourceSection":"-ty → -dade","rule":"English -ty often corresponds to Portuguese -dade","example":"Which Portuguese ending often corresponds to English -ty?","answer":"-dade (as in cidade and qualidade).","explanation":"city → cidade, quality → qualidade; the pattern still needs checking word by word."} -->
 <!-- vocab-card: {"id":"vocab-universidade","word":"universidade","meaning":"university","priority":"optional","sourceSection":"-ty → -dade"} -->
 <!-- vocab-card: {"id":"vocab-cidade","word":"cidade","meaning":"city","priority":"optional","sourceSection":"-ty → -dade"} -->
 <!-- vocab-card: {"id":"vocab-sociedade","word":"sociedade","meaning":"society","priority":"optional","sourceSection":"-ty → -dade"} -->
@@ -51,6 +53,7 @@ One of the best tricks for expanding your Portuguese vocabulary is learning how 
 ### -ment → -mento
 
 <!-- grammar-card: {"id":"cognate-mento","kind":"rule","format":"cloze","priority":"optional","sourceSection":"-ment → -mento","rule":"English -ment often corresponds to Portuguese -mento","example":"Write movement in Portuguese: ___.","answer":"movimento","explanation":"Movement corresponds to movimento; the ending is useful but the whole spelling must be learned."} -->
+<!-- grammar-card: {"id":"rule-ment-suffix","kind":"concept","format":"qa","priority":"optional","sourceSection":"-ment → -mento","rule":"English -ment often corresponds to Portuguese -mento","example":"Which Portuguese ending often corresponds to English -ment?","answer":"-mento (as in momento and documento).","explanation":"moment → momento, document → documento; the pattern still needs checking word by word."} -->
 <!-- vocab-card: {"id":"vocab-momento","word":"momento","meaning":"moment","priority":"optional","sourceSection":"-ment → -mento"} -->
 <!-- vocab-card: {"id":"vocab-documento","word":"documento","meaning":"document","priority":"optional","sourceSection":"-ment → -mento"} -->
 <!-- vocab-card: {"id":"vocab-movimento","word":"movimento","meaning":"movement","priority":"optional","sourceSection":"-ment → -mento"} -->

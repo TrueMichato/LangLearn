@@ -24,7 +24,7 @@ Direct object pronouns replace the noun that **directly receives** the action:
 <!-- vocab-card: {"id":"vocab-o","word":"o","meaning":"him; it (masculine singular direct object pronoun)","priority":"optional","sourceSection":"Direct Object Pronouns"} -->
 <!-- vocab-card: {"id":"vocab-a","word":"a","meaning":"her; it (feminine singular direct object pronoun)","priority":"optional","sourceSection":"Direct Object Pronouns"} -->
 <!-- vocab-card: {"id":"vocab-nos","word":"nos","meaning":"us; to/for us (object pronoun)","priority":"optional","sourceSection":"Direct Object Pronouns"} -->
-<!-- grammar-card: {"id":"direct-object-function","kind":"concept","format":"qa","priority":"essential","sourceSection":"Direct Object Pronouns","rule":"A direct object receives the action directly","example":"What does me replace in Ela me viu?","answer":"The person directly seen: me.","explanation":"A direct object differs from the recipient in a construction such as gave me a gift."} -->
+<!-- grammar-card: {"id":"direct-object-function","kind":"rule","format":"qa","priority":"essential","sourceSection":"Direct Object Pronouns","rule":"A direct object receives the action directly","example":"In Ela me viu, what role does me play?","answer":"Direct object: me is the person she saw.","explanation":"A direct object differs from the recipient in a construction such as gave me a gift.","legacyAliases":[{"rule":"A direct object receives the action directly","example":"What does me replace in Ela me viu?"}]} -->
 
 ### Examples with Direct Objects
 
@@ -44,6 +44,7 @@ In everyday spoken Brazilian Portuguese, the 3rd person direct object pronouns *
 ### 1. The pronoun **ele/ela** as object
 
 <!-- grammar-card: {"id":"spoken-direct-object","kind":"rule","format":"cloze","priority":"essential","sourceSection":"1. The pronoun **ele/ela** as object","rule":"In spoken Brazilian Portuguese, 'ele/ela' often replaces 'o/a' as direct objects","example":"Eu _____ ontem. (I saw him — spoken Brazilian)","answer":"vi ele","explanation":"Eu vi ele is widespread in informal Brazilian speech. Formal writing normally uses a standard object form, such as Eu o vi."} -->
+<!-- grammar-card: {"id":"rule-spoken-ele-object","kind":"concept","format":"qa","priority":"essential","sourceSection":"Spoken Brazilian Portuguese: Replacing o/a/os/as","rule":"Casual Brazilian speech often uses ele/ela as third-person direct objects","example":"In casual Brazilian speech, which pronouns commonly serve after the verb instead of the formal third-person direct object forms?","answer":"Ele and ela (eles, elas): Eu vi ele ontem.","explanation":"Formal writing keeps o, a, os, and as; speakers also use the person's name or drop a clear object."} -->
 
 - **Eu vi ele ontem** (eh-oo vee eh-lee ohn-tayn) — I saw him yesterday (spoken)
 - **Eu conheço ela** (eh-oo koh-nyeh-soo eh-lah) — I know her (spoken)
@@ -60,7 +61,7 @@ In everyday spoken Brazilian Portuguese, the 3rd person direct object pronouns *
 
 <!-- quiz: {"type":"multiple-choice","question":"In spoken Brazilian Portuguese, how would you typically say 'I saw her'?","options":["Eu a vi","Eu vi ela","Vi-a","Eu vi-la"],"answer":1} -->
 
-<!-- grammar-card: {"id":"object-omission","kind":"concept","format":"qa","priority":"optional","sourceSection":"3. Dropping the pronoun entirely (when context is clear)","rule":"A clear object can remain unspoken in Brazilian conversation","example":"In Você viu o filme? Vi., what object is understood after Vi?","answer":"O filme: I saw it.","explanation":"The preceding question supplies the object; no new lexical meaning is inferred from silence."} -->
+<!-- grammar-card: {"id":"object-omission","kind":"rule","format":"qa","priority":"optional","sourceSection":"3. Dropping the pronoun entirely (when context is clear)","rule":"A clear object can remain unspoken in Brazilian conversation","example":"In Você viu o filme? Vi., what object is understood after Vi?","answer":"O filme: I saw it.","explanation":"The preceding question supplies the object; no new lexical meaning is inferred from silence."} -->
 
 ## Indirect Object Pronouns
 
@@ -79,7 +80,7 @@ Indirect object pronouns indicate **to whom** or **for whom** the action is done
 <!-- vocab-card: {"id":"vocab-lhes","word":"lhes","meaning":"to/for them or you (plural indirect object)","priority":"optional","sourceSection":"Indirect Object Pronouns"} -->
 ### Examples with Indirect Objects
 
-<!-- grammar-card: {"id":"indirect-object-function","kind":"concept","format":"qa","priority":"essential","sourceSection":"Examples with Indirect Objects","rule":"An indirect object can identify the recipient","example":"What role does me have in Ele me deu um presente?","answer":"The recipient: to me. Um presente is what was given.","explanation":"Me can also be direct, as in Ele me ajudou; its role depends on the construction."} -->
+<!-- grammar-card: {"id":"indirect-object-function","kind":"rule","format":"qa","priority":"essential","sourceSection":"Examples with Indirect Objects","rule":"An indirect object can identify the recipient","example":"What role does me have in Ele me deu um presente?","answer":"The recipient: to me. Um presente is what was given.","explanation":"Me can also be direct, as in Ele me ajudou; its role depends on the construction."} -->
 
 - **Ele me deu um presente** (eh-lee mee deh-oo oon preh-zehn-chee) — He gave me a gift
 - **Eu te disse a verdade** (eh-oo chee jee-see ah vehr-dah-jee) — I told you the truth
@@ -94,7 +95,7 @@ In casual Brazilian Portuguese, **lhe/lhes** is often replaced with **para + pro
 - **Ela falou para mim** (eh-lah fah-loh pah-rah meen) — She told me
 - **Eu comprei um presente para você** (eh-oo kohn-pray oon preh-zehn-chee pah-rah voh-say) — I bought a gift for you
 
-<!-- grammar-card: {"id":"spoken-indirect-object","kind":"concept","format":"qa","priority":"optional","sourceSection":"In Spoken Brazilian: para + pronoun","rule":"Para plus a pronoun commonly expresses a recipient in Brazilian speech","example":"What conversational phrase can express to him instead of lhe in Eu lhe dei o livro?","answer":"Para ele: Eu dei o livro para ele.","explanation":"The prepositional phrase is common in speech, not a ban on lhe in all Brazilian usage."} -->
+<!-- grammar-card: {"id":"spoken-indirect-object","kind":"rule","format":"qa","priority":"optional","sourceSection":"In Spoken Brazilian: para + pronoun","rule":"Para plus a pronoun commonly expresses a recipient in Brazilian speech","example":"What conversational phrase can express to him instead of lhe in Eu lhe dei o livro?","answer":"Para ele: Eu dei o livro para ele.","explanation":"The prepositional phrase is common in speech, not a ban on lhe in all Brazilian usage."} -->
 <!-- quiz: {"type":"multiple-choice","question":"How would you say 'She told us a story' using the indirect object pronoun?","options":["Ela contou nós uma história","Ela nos contou uma história","Ela contou para nós uma história","Ela lhes contou uma história"],"answer":1} -->
 
 ## Pronoun Placement in Brazilian Portuguese
@@ -103,7 +104,8 @@ This is where Brazilian Portuguese differs significantly from European Portugues
 
 ### Spoken Brazilian: Before the verb (proclisis)
 
-<!-- grammar-card: {"id":"spoken-proclisis","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Spoken Brazilian: Before the verb (proclisis)","rule":"In spoken Brazilian Portuguese, pronouns go BEFORE the verb","example":"Ela _____ ligou ontem. (She called me)","answer":"me","explanation":"Preverbal me is natural in Brazilian speech. Formal placement depends on the construction and triggers, not a universal after-the-verb rule."} -->
+<!-- grammar-card: {"id":"spoken-proclisis","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Spoken Brazilian: Before the verb (proclisis)","rule":"In spoken Brazilian Portuguese, pronouns go BEFORE the verb","example":"Ela ___ ontem. (ligou + me; spoken Brazilian)","answer":"me ligou","explanation":"Preverbal me is natural in Brazilian speech. Formal placement depends on the construction and triggers, not a universal after-the-verb rule.","legacyAliases":[{"rule":"In spoken Brazilian Portuguese, pronouns go BEFORE the verb","example":"Ela _____ ligou ontem. (She called me)"}]} -->
+<!-- grammar-card: {"id":"rule-spoken-proclisis","kind":"concept","format":"qa","priority":"essential","sourceSection":"Spoken Brazilian: Before the verb (proclisis)","rule":"In spoken Brazilian Portuguese, object pronouns go before the verb","example":"In everyday Brazilian speech, where does an object pronoun usually go relative to the verb?","answer":"Before the verb: Ela me ligou, Você me entende?","explanation":"Eu te amo and Ele nos ajudou follow the same pattern; traditional formal writing and European Portuguese often attach the pronoun after the verb instead."} -->
 
 In everyday Brazilian speech, pronouns almost always go **before** the verb:
 
@@ -119,7 +121,10 @@ In formal writing, pronouns go **after** the verb (attached with a hyphen) at th
 - **Diga-me a verdade** (jee-gah mee ah vehr-dah-jee) — Tell me the truth
 - **Chamo-me João** (shah-moo mee zhoo-ow) — My name is João (literally: I call myself João)
 
+European Portuguese also places the pronoun after the verb in ordinary affirmative sentences, even in speech: **Ela ligou-me** — She called me.
+
 <!-- grammar-card: {"id":"formal-initial-enclisis","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Formal Writing: After the verb (enclisis)","rule":"Traditional formal writing uses enclisis at an untriggered sentence beginning","example":"___ a verdade. (Diga + me; formal sentence beginning)","answer":"Diga-me","explanation":"Attach me after the verb with a hyphen; this does not mean all formal sentences require enclisis."} -->
+<!-- grammar-card: {"id":"rule-formal-enclisis","kind":"concept","format":"qa","priority":"optional","sourceSection":"Formal Writing: After the verb (enclisis)","rule":"Formal writing places the pronoun after a sentence-initial verb, with a hyphen","example":"In traditional formal writing, where does an object pronoun go when the verb begins the sentence?","answer":"After the verb, joined with a hyphen: Diga-me a verdade.","explanation":"European Portuguese uses this placement in ordinary speech too; attracting words such as não still pull the pronoun before the verb."} -->
 ### Words that "attract" the pronoun before the verb
 
 Even in formal writing, certain words force the pronoun to come before the verb:
@@ -130,12 +135,13 @@ Even in formal writing, certain words force the pronoun to come before the verb:
 - **Advérbios**: **Sempre te amei** — I always loved you
 - **Conjunctions**: **Quando me viu, sorriu** — When she saw me, she smiled
 
-<!-- grammar-card: {"id":"negation-attracts-pronoun","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Words that \"attract\" the pronoun before the verb","rule":"Negation attracts an object pronoun before the verb","example":"Não ___ diga! (Do not tell me!)","answer":"me","explanation":"Even in formal writing, não calls for Não me diga, not Não diga-me."} -->
-<!-- grammar-card: {"id":"proclisis-triggers","kind":"concept","format":"qa","priority":"optional","sourceSection":"Words that \"attract\" the pronoun before the verb","rule":"Several preceding words favor or require proclisis","example":"What do quem in Quem te disse? and que in O homem que me ajudou have in common for pronoun placement?","answer":"They place the object pronoun before the verb.","explanation":"The examples also illustrate proclisis with não, sempre, and subordinating quando."} -->
+<!-- grammar-card: {"id":"negation-attracts-pronoun","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Words that \"attract\" the pronoun before the verb","rule":"Negation attracts an object pronoun before the verb","example":"Não ___! (diga + me; formal writing)","answer":"me diga","explanation":"Even in formal writing, não calls for Não me diga, not Não diga-me.","legacyAliases":[{"rule":"Negation attracts an object pronoun before the verb","example":"Não ___ diga! (Do not tell me!)"}]} -->
+<!-- grammar-card: {"id":"rule-negation-proclisis","kind":"concept","format":"qa","priority":"optional","sourceSection":"Words that \"attract\" the pronoun before the verb","rule":"Não attracts an object pronoun before the verb","example":"Where does an object pronoun go after não, even in formal writing?","answer":"Before the verb: Não me diga!","explanation":"Question words, relative que, some adverbs such as sempre, and conjunctions such as quando also attract the pronoun."} -->
+<!-- grammar-card: {"id":"proclisis-triggers","kind":"rule","format":"qa","priority":"optional","sourceSection":"Words that \"attract\" the pronoun before the verb","rule":"Several preceding words favor or require proclisis","example":"What do quem in Quem te disse? and que in O homem que me ajudou have in common for pronoun placement?","answer":"They place the object pronoun before the verb.","explanation":"The examples also illustrate proclisis with não, sempre, and subordinating quando."} -->
 
 ## Me and Te — The Most Common
 
-<!-- grammar-card: {"id":"te-recipient","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Me and Te — The Most Common","rule":"Me/te work as both direct AND indirect object pronouns","example":"Eu _____ mandei uma mensagem. (I sent you a message)","answer":"te","explanation":"Te is the recipient here. It is a direct object in Eu te amo; me and te can fill either role."} -->
+<!-- grammar-card: {"id":"te-recipient","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Me and Te — The Most Common","rule":"Me/te work as both direct AND indirect object pronouns","example":"Eu _____ mandei uma mensagem. (I sent you a message; informal)","answer":"te","explanation":"Te is the recipient here. It is a direct object in Eu te amo; me and te can fill either role.","legacyAliases":[{"rule":"Me/te work as both direct AND indirect object pronouns","example":"Eu _____ mandei uma mensagem. (I sent you a message)"}]} -->
 <!-- vocab-card: {"id":"vocab-me-desculpe","word":"me desculpe","meaning":"excuse me; I am sorry","priority":"optional","sourceSection":"Me and Te — The Most Common"} -->
 
 **Me** and **te** are by far the most frequently used object pronouns because they cover both direct and indirect objects:
@@ -162,7 +168,7 @@ Reflexive pronouns are a special type of object pronoun where the subject and ob
 - **se** — yourself/himself/herself: **Ela se chama Maria** — Her name is Maria
 - **nos** — ourselves: **Nós nos divertimos** — We had fun
 
-<!-- grammar-card: {"id":"reflexive-preview","kind":"concept","format":"qa","priority":"optional","sourceSection":"Reflexive Pronouns (Preview)","rule":"Reflexive pronouns can refer back to the subject","example":"Who does me refer to in Eu me chamo João?","answer":"The subject eu: the speaker.","explanation":"The same-person reference distinguishes this use from me in Ela me viu."} -->
+<!-- grammar-card: {"id":"reflexive-preview","kind":"rule","format":"qa","priority":"optional","sourceSection":"Reflexive Pronouns (Preview)","rule":"Reflexive pronouns can refer back to the subject","example":"Who does me refer to in Eu me chamo João?","answer":"The subject eu: the speaker.","explanation":"The same-person reference distinguishes this use from me in Ela me viu."} -->
 <!-- quiz: {"type":"multiple-choice","question":"In formal written Portuguese, where does the pronoun go when starting a sentence?","options":["Before the verb","After the verb with a hyphen","Either position","It is dropped"],"answer":1} -->
 
 
