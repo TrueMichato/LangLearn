@@ -207,6 +207,16 @@ describe('Romanian reviewed grammar', () => {
     });
   });
 
+  it('reviews the whole catalog with a small, mostly optional set of rule-* cards per lesson', () => {
+    expect(listed).toEqual(published);
+    const perLesson = published.map((id) => {
+      const rules = grammar(lesson(id)).filter((card) => card.id.startsWith('rule-'));
+      return { id, total: rules.length, essential: rules.filter((card) => card.priority === 'essential').length };
+    });
+    expect(perLesson.filter(({ total, essential }) => total > 4 || essential > 2)).toEqual([]);
+    expect(perLesson.reduce((sum, { total }) => sum + total, 0)).toBe(105);
+  });
+
   describe('the checks fire on bad cards', () => {
     const cards = grammar(lesson('present-a-fi-avea'));
     const base = cards.find((card) => card.id === 'este-e-register')!;
