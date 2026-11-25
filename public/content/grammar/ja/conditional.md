@@ -44,7 +44,7 @@ Japanese has four main ways to express "if" or "when." Each has different nuance
 
 > 💡 たら can also express things that **actually happened** (discovery): 窓(まど)を開(あ)けたら、猫がいた。 — When I opened the window, there was a cat.
 
-<!-- grammar-card: {"id":"tara-discovery","kind":"concept","format":"qa","priority":"optional","sourceSection":"Usage & Examples","rule":"たら can introduce an actual discovery as well as a hypothetical condition","example":"In 窓を開けたら、猫がいた, is opening the window merely hypothetical?","answer":"No. The speaker opened it and discovered a cat; たら means “when” here.","explanation":"The narrative describes a real event followed by a discovery."} -->
+<!-- grammar-card: {"id":"tara-discovery","kind":"rule","format":"qa","priority":"optional","sourceSection":"Usage & Examples","rule":"たら can introduce an actual discovery as well as a hypothetical condition","example":"In 窓を開けたら、猫がいた, is opening the window merely hypothetical?","answer":"No. The speaker opened it and discovered a cat; たら means “when” here.","explanation":"The narrative describes a real event followed by a discovery."} -->
 <!-- vocab-card: {"id":"vocab-hima","word":"暇","reading":"ひま","meaning":"free time; free (not busy)","priority":"optional","sourceSection":"Usage & Examples"} -->
 
 <!-- quiz:{"type":"multiple-choice","question":"How do you form the たら conditional of 行く?","options":["行くたら","行けたら","行ったら","行きたら"],"answer":2} -->
@@ -66,11 +66,12 @@ Japanese has four main ways to express "if" or "when." Each has different nuance
 | Noun | + であれば | 学生 → 学生であれば |
 
 <!-- grammar-card: {"id":"ba-godan","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Formation","rule":"Godan ば changes final u-vowel to e and adds ば","example":"書く → ば conditional: ___.","answer":"書けば","explanation":"書く (かく) changes く to けば."} -->
+<!-- grammar-card: {"id":"rule-ba-godan","kind":"concept","format":"qa","priority":"optional","sourceSection":"Formation","rule":"Group 1 verbs form the ば conditional by changing the final -u sound to -e and adding ば","example":"How does a Group 1 (u-verb) form its ば conditional?","answer":"Change the final -u sound to the matching -e sound and add ば.","explanation":"Any wording that shifts -u to -e and adds ば counts. 飲む → 飲めば; 待つ → 待てば."} -->
 <!-- grammar-card: {"id":"ba-ichidan","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Formation","rule":"Ichidan ば replaces る with れば","example":"食べる → ば conditional: ___.","answer":"食べれば","explanation":"Remove る and add れば."} -->
 <!-- grammar-card: {"id":"ba-suru","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Formation","rule":"する has the conditional すれば","example":"する → ば conditional: ___.","answer":"すれば","explanation":"The irregular する becomes すれば."} -->
 <!-- grammar-card: {"id":"ba-kuru","kind":"rule","format":"qa","priority":"essential","sourceSection":"Formation","rule":"来る has the conditional 来れば, read くれば","example":"Give the ば conditional of 来る, including its kana reading.","answer":"来れば (くれば).","explanation":"This form uses く-, unlike the potential 来られる (こられる)."} -->
 <!-- grammar-card: {"id":"ba-adjective","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Formation","rule":"An い-adjective replaces final い with ければ","example":"高い → if expensive: ___.","answer":"高ければ","explanation":"高い becomes 高ければ (たかければ)."} -->
-<!-- grammar-card: {"id":"ba-ii-exception","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Usage & Examples","rule":"いい uses its よい stem in よければ","example":"If the weather is good: 天気が___、ピクニックに行きましょう。","answer":"よければ","explanation":"いい conjugates from よい, producing よければ, not いければ in this meaning."} -->
+<!-- grammar-card: {"id":"ba-ii-exception","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Usage & Examples","rule":"いい uses its よい stem in よければ","example":"If the weather is good (ば conditional): 天気が___、ピクニックに行きましょう。","answer":"よければ","explanation":"いい conjugates from よい, producing よければ, not いければ in this meaning. よかったら is also a natural “if” here, but the front asks for the ば form.","legacyAliases":[{"rule":"いい uses its よい stem in よければ","example":"If the weather is good: 天気が___、ピクニックに行きましょう。"}]} -->
 <!-- grammar-card: {"id":"ba-nominal","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Formation","rule":"Nouns can form a formal condition with であれば","example":"学生 → formal ば condition: 学生___.","answer":"であれば","explanation":"Nouns and な-adjectives use a copular conditional rather than the verbal e-row rule."} -->
 
 ### Usage & Examples
@@ -121,6 +122,7 @@ Person A: 明日東京(とうきょう)に行きます。 — I'm going to Tokyo
 Person B: 東京に行く**なら**、お土産(みやげ)を買ってきてください。 — If you're going to Tokyo, please buy me a souvenir.
 
 <!-- grammar-card: {"id":"nara-premise","kind":"rule","format":"cloze","priority":"essential","sourceSection":"なら — \"If (It's True That…)\"","rule":"なら picks up something already said and treats it as a premise","hint":"Respond to a stated plan","example":"日本に行く___、京都(きょうと)がおすすめです。","answer":"なら","explanation":"Given the listener's plan to go, the speaker offers advice."} -->
+<!-- grammar-card: {"id":"rule-nara-premise","kind":"concept","format":"qa","priority":"essential","sourceSection":"なら — \"If (It's True That…)\"","rule":"なら takes what someone said or a known situation as the premise for the speaker's statement","example":"Which conditional takes something the other person just said (or a known situation) as the premise for your statement?","answer":"なら (“if it's true that…”).","explanation":"Naming なら counts. A: 明日東京に行きます。 B: 東京に行くなら、お土産を買ってきてください。"} -->
 
 ## と — "When / If (Automatic Result)"
 
@@ -150,6 +152,7 @@ Add **と** after the **dictionary form** (plain present):
 <!-- quiz:{"type":"multiple-choice","question":"Which conditional is best for 'When spring comes, flowers bloom' (natural/automatic result)?","options":["たら","ば","なら","と"],"answer":3} -->
 
 <!-- grammar-card: {"id":"to-automatic","kind":"rule","format":"cloze","priority":"essential","sourceSection":"と — \"When / If (Automatic Result)\"","rule":"と states a result that always follows automatically","hint":"Use the natural-result pattern","example":"春になる___、桜(さくら)が咲(さ)きます。","answer":"と","explanation":"と presents blossoming as the regular natural result of spring arriving; the lesson also uses it for habits and machine behavior."} -->
+<!-- grammar-card: {"id":"rule-to-automatic","kind":"concept","format":"qa","priority":"essential","sourceSection":"と — \"When / If (Automatic Result)\"","rule":"と expresses a natural, automatic or habitual consequence","example":"What kind of result does the と conditional express?","answer":"A natural, automatic or habitual result that always follows the condition.","explanation":"Any of natural, automatic, habitual or always-follows counts. このボタンを押すと、ドアが開きます. For that reason と isn't used for requests in the result clause."} -->
 <!-- grammar-card: {"id":"to-not-command","kind":"concept","format":"qa","priority":"essential","sourceSection":"と — \"When / If (Automatic Result)\"","rule":"The automatic-result と pattern does not introduce a requested action","example":"For instructions meaning “after going straight, please turn right,” why use 行ったら rather than 行くと?","answer":"Turning is a request to the listener, not an automatic consequence of going straight.","explanation":"と can describe what a route leads to; たら can sequence an instruction."} -->
 
 ## Comparing the Four Forms
@@ -193,7 +196,7 @@ You can use negative forms with all four:
 
 <!-- quiz:{"type":"multiple-choice","question":"'もっと練習すれば、上手になります' uses which conditional?","options":["たら","ば","なら","と"],"answer":1} -->
 
-<!-- grammar-card: {"id":"negative-nara","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Negative Conditionals","rule":"A negative conditional negates the verb first, then adds なら","hint":"行く; if you are not going","example":"___、連絡(れんらく)してください。","answer":"行かないなら","explanation":"Negate 行く to 行かない, then attach なら to use that situation as a premise."} -->
+<!-- grammar-card: {"id":"negative-nara","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Negative Conditionals","rule":"A negative conditional negates the verb first, then adds なら","hint":"行く; if you are not going","example":"If you are not going (なら, from 行く), please let me know: ___、連絡(れんらく)してください。","answer":"行かないなら","explanation":"Negate 行く to 行かない, then attach なら to use that situation as a premise.","legacyAliases":[{"rule":"A negative conditional negates the verb first, then adds なら","example":"___、連絡(れんらく)してください。"}]} -->
 <!-- vocab-card: {"id":"vocab-renraku","word":"連絡","reading":"れんらく","meaning":"contact; communication","priority":"optional","sourceSection":"Negative Conditionals"} -->
 
 ## Summary

@@ -38,7 +38,7 @@ Use **あげる** when you (or someone) give something to another person. The gi
 
 <!-- quiz:{"type":"multiple-choice","question":"Which verb do you use when YOU give a gift to a friend?","options":["くれる","もらう","あげる","くださる"],"answer":2} -->
 
-<!-- grammar-card: {"id":"ageru-outward","kind":"rule","format":"cloze","priority":"essential","sourceSection":"あげる — To Give","rule":"あげる is giving that moves away from the speaker","hint":"give, polite past","example":"私は友達(ともだち)にプレゼントを___。","answer":"あげました","explanation":"The speaker gives to someone else; the recipient is marked に and the present を."} -->
+<!-- grammar-card: {"id":"ageru-outward","kind":"rule","format":"cloze","priority":"essential","sourceSection":"あげる — To Give","rule":"あげる is giving that moves away from the speaker","hint":"give, polite past","example":"I gave my friend a present (polite past): 私は友達(ともだち)にプレゼントを___。","answer":"あげました","explanation":"The speaker gives to someone else; the recipient is marked に and the present を.","legacyAliases":[{"rule":"あげる is giving that moves away from the speaker","example":"私は友達(ともだち)にプレゼントを___。"}]} -->
 
 ## くれる — To Give (to Me / My Group)
 
@@ -54,8 +54,9 @@ Use **くれる** when someone gives something **to you** or someone in your in-
 
 > 💡 くれる implies gratitude — the speaker feels thankful for the giving.
 
-<!-- grammar-card: {"id":"kureru-inward","kind":"rule","format":"cloze","priority":"essential","sourceSection":"くれる — To Give (to Me / My Group)","rule":"くれる is giving that moves towards the speaker","hint":"give to me, polite past","example":"友達が私にプレゼントを___。","answer":"くれました","explanation":"The friend is the giver and subject. The giving is toward 私, so use くれる."} -->
-<!-- grammar-card: {"id":"ingroup-recipient","kind":"rule","format":"cloze","priority":"optional","sourceSection":"あげる vs くれる","rule":"くれる can describe giving to the speaker's in-group","example":"Yamada gave my sister a souvenir (viewed as toward my family): 山田さんは妹にお土産を___。","answer":"くれました","explanation":"The recipient need not be 私 explicitly; the speaker can align with 妹 as a member of their group."} -->
+<!-- grammar-card: {"id":"kureru-inward","kind":"rule","format":"cloze","priority":"essential","sourceSection":"くれる — To Give (to Me / My Group)","rule":"くれる is giving that moves towards the speaker","hint":"give to me, polite past","example":"My friend gave me a present (polite past): 友達が私にプレゼントを___。","answer":"くれました","explanation":"The friend is the giver and subject. The giving is toward 私, so use くれる.","legacyAliases":[{"rule":"くれる is giving that moves towards the speaker","example":"友達が私にプレゼントを___。"}]} -->
+<!-- grammar-card: {"id":"rule-kureru-direction","kind":"concept","format":"qa","priority":"essential","sourceSection":"あげる vs くれる","rule":"くれる is used when the giving comes toward the speaker or the speaker's in-group; あげる when it goes away","example":"What does くれる imply about the direction of giving that あげる doesn't?","answer":"The giving comes toward the speaker (me or my in-group).","explanation":"Any answer saying the receiver is me or my group counts. 田中さんは私にペンをくれました vs 私は田中さんにペンをあげました."} -->
+<!-- grammar-card: {"id":"ingroup-recipient","kind":"rule","format":"cloze","priority":"optional","sourceSection":"あげる vs くれる","rule":"くれる can describe giving to the speaker's in-group","example":"Yamada gave my sister a souvenir (viewed as toward my family): 山田さんは妹にお土産を___。","answer":"くれました","explanation":"The recipient need not be 私 explicitly; the speaker can align with 妹 as a member of their group. Plain くれた also counts."} -->
 
 ## あげる vs くれる
 
@@ -87,8 +88,9 @@ Use **もらう** when you (or someone) receive something from another person. T
 
 > 💡 You can use either に or から to mark the giver. から emphasizes the source.
 
-<!-- grammar-card: {"id":"morau-receiver","kind":"rule","format":"cloze","priority":"essential","sourceSection":"もらう — To Receive","rule":"もらう describes the event from the receiver's point of view","hint":"receive, polite past","example":"私は先生(せんせい)に本(ほん)を___。","answer":"もらいました","explanation":"私 is the receiver; 先生に marks the person from whom the book is received."} -->
-<!-- grammar-card: {"id":"morau-source-markers","kind":"concept","format":"qa","priority":"essential","sourceSection":"もらう — To Receive","rule":"に or から can mark a personal giver with もらう","example":"In 私は友達にプレゼントをもらいました, what role does 友達に have, and what source-marking alternative is taught?","answer":"友達 is the giver/source, not the receiver; 友達から is also possible.","explanation":"With もらう the receiver is the subject. から highlights the source and also works for organizations."} -->
+<!-- grammar-card: {"id":"morau-receiver","kind":"rule","format":"cloze","priority":"essential","sourceSection":"もらう — To Receive","rule":"もらう describes the event from the receiver's point of view","hint":"receive, polite past","example":"I received a book from my teacher (polite past): 私は先生(せんせい)に本(ほん)を___。","answer":"もらいました","explanation":"私 is the receiver; 先生に marks the person from whom the book is received.","legacyAliases":[{"rule":"もらう describes the event from the receiver's point of view","example":"私は先生(せんせい)に本(ほん)を___。"}]} -->
+<!-- grammar-card: {"id":"rule-morau-subject","kind":"concept","format":"qa","priority":"optional","sourceSection":"もらう — To Receive","rule":"With もらう the receiver is the subject and the giver is marked with に or から","example":"With もらう, which participant is the subject of the sentence, and how is the other one marked?","answer":"The receiver is the subject; the giver is marked with に or から.","explanation":"Both parts should be present. 私は友達にプレゼントをもらいました: 私 receives, 友達 gives."} -->
+<!-- grammar-card: {"id":"morau-source-markers","kind":"rule","format":"qa","priority":"essential","sourceSection":"もらう — To Receive","rule":"に or から can mark a personal giver with もらう","example":"In 私は友達にプレゼントをもらいました, what role does 友達に have, and what source-marking alternative is taught?","answer":"友達 is the giver/source, not the receiver; 友達から is also possible.","explanation":"With もらう the receiver is the subject. から highlights the source and also works for organizations."} -->
 
 ## くれる vs もらう — Same Event, Different Focus
 
@@ -121,7 +123,7 @@ These verbs combine with the **て-form** of other verbs to express doing favors
 - **道(みち)を案内(あんない)してあげました。** — I showed them the way.
 - **写真(しゃしん)を撮(と)ってあげますよ。** — I'll take a photo for you.
 
-<!-- grammar-card: {"id":"favor-ageru","kind":"rule","format":"cloze","priority":"essential","sourceSection":"〜てあげる — Do something for someone","rule":"てあげる presents an action as a favor for someone else","example":"I taught my friend Japanese as a favor: 友達に日本語を教えて___。","answer":"あげました","explanation":"The て-form 教えて connects to あげる, extending outward giving to an action."} -->
+<!-- grammar-card: {"id":"favor-ageru","kind":"rule","format":"cloze","priority":"essential","sourceSection":"〜てあげる — Do something for someone","rule":"てあげる presents an action as a favor for someone else","example":"I taught my friend Japanese as a favor: 友達に日本語を教えて___。","answer":"あげました","explanation":"The て-form 教えて connects to あげる, extending outward giving to an action. Plain あげた also counts."} -->
 
 ### 〜てくれる — Someone does something for me
 
@@ -131,7 +133,7 @@ These verbs combine with the **て-form** of other verbs to express doing favors
 - **彼が駅(えき)まで送(おく)ってくれました。** — He drove me to the station.
 - **隣の人が道を教えてくれました。** — The neighbor told me the way.
 
-<!-- grammar-card: {"id":"favor-kureru","kind":"rule","format":"cloze","priority":"essential","sourceSection":"〜てくれる — Someone does something for me","rule":"てくれる presents someone else's action as a favor to me","example":"My friend kindly helped me: 友達が宿題を手伝って___。","answer":"くれました","explanation":"友達 is the actor and subject; the speaker benefits from the help."} -->
+<!-- grammar-card: {"id":"favor-kureru","kind":"rule","format":"cloze","priority":"essential","sourceSection":"〜てくれる — Someone does something for me","rule":"てくれる presents someone else's action as a favor to me","example":"My friend kindly helped me: 友達が宿題を手伝って___。","answer":"くれました","explanation":"友達 is the actor and subject; the speaker benefits from the help. Plain くれた also counts."} -->
 
 ### 〜てもらう — Have someone do something for me
 
@@ -141,7 +143,7 @@ These verbs combine with the **て-form** of other verbs to express doing favors
 - **日本語をチェックしてもらえますか。** — Could you check my Japanese?
 - **友達に空港(くうこう)まで送ってもらいました。** — I had my friend take me to the airport.
 
-<!-- grammar-card: {"id":"favor-morau","kind":"rule","format":"cloze","priority":"essential","sourceSection":"〜てもらう — Have someone do something for me","rule":"てもらう describes receiving the benefit of someone's action","example":"I had my teacher write a recommendation: 先生に推薦状を書いて___。","answer":"もらいました","explanation":"The receiver is understood as I; 先生に marks the person performing the favor."} -->
+<!-- grammar-card: {"id":"favor-morau","kind":"rule","format":"cloze","priority":"essential","sourceSection":"〜てもらう — Have someone do something for me","rule":"てもらう describes receiving the benefit of someone's action","example":"I had my teacher write a recommendation: 先生に推薦状を書いて___。","answer":"もらいました","explanation":"The receiver is understood as I; 先生に marks the person performing the favor. Plain もらった also counts."} -->
 <!-- vocab-card: {"id":"vocab-tetsudau","word":"手伝う","reading":"てつだう","meaning":"to help","priority":"optional","sourceSection":"〜てくれる — Someone does something for me"} -->
 <!-- vocab-card: {"id":"vocab-suisenjou","word":"推薦状","reading":"すいせんじょう","meaning":"recommendation letter","priority":"optional","sourceSection":"〜てもらう — Have someone do something for me"} -->
 
@@ -161,6 +163,7 @@ These verbs combine with the **て-form** of other verbs to express doing favors
 <!-- vocab-card: {"id":"vocab-kudasaru","word":"くださる","reading":"くださる","meaning":"to give to me or my group (honorific)","priority":"optional","sourceSection":"Polite / Honorific Versions"} -->
 <!-- vocab-card: {"id":"vocab-itadaku","word":"いただく","reading":"いただく","meaning":"to receive (humble)","priority":"optional","sourceSection":"Polite / Honorific Versions"} -->
 <!-- grammar-card: {"id":"honorific-giver","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Polite / Honorific Versions","rule":"くださる honors a respected giver and becomes くださいます","example":"The teacher kindly gave me advice (honorific): 先生がアドバイスを___。","answer":"くださいました","explanation":"The polite past is くださいました, not くださりました."} -->
+<!-- grammar-card: {"id":"rule-kudasaru-counterpart","kind":"concept","format":"qa","priority":"optional","sourceSection":"Polite / Honorific Versions","rule":"くださる is the honorific counterpart of くれる","example":"Which verb replaces くれる when a superior gives something to you?","answer":"くださる (honorific).","explanation":"Naming くださる counts; くださいます / くださいました are its polite forms. 先生がアドバイスをくださいました."} -->
 <!-- grammar-card: {"id":"humble-receiving","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Polite / Honorific Versions","rule":"いただく humbly describes receiving from a respected person","example":"I received the president's time (humble): 社長にお時間を___。","answer":"いただきました","explanation":"The receiver lowers their own action; the president is the source marked に."} -->
 <!-- grammar-card: {"id":"humble-giving","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Polite / Honorific Versions","rule":"さしあげる humbly describes giving to a respected recipient","example":"I gave the teacher a present (humble): 先生にプレゼントを___。","answer":"さしあげました","explanation":"The speaker is the giver; さしあげる is the humble counterpart of あげる."} -->
 <!-- quiz:{"type":"multiple-choice","question":"Which て-form pattern means 'someone did something for me (and I'm grateful)'?","options":["〜てあげる","〜てもらう","〜てくれる","〜ている"],"answer":2} -->
