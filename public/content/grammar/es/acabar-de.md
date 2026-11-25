@@ -18,6 +18,7 @@ Notice that English uses the perfect tense ("have just eaten"), but Spanish uses
 <!-- vocab-card: {"id":"vocab-acabar-de","word":"acabar de","meaning":"to have just done (with an infinitive; present or imperfect in these examples)","priority":"essential","sourceSection":"The Core Construction"} -->
 <!-- grammar-card: {"id":"recent-past-pattern","kind":"concept","format":"qa","priority":"essential","sourceSection":"The Core Construction","rule":"Conjugate acabar and leave the following action in the infinitive","example":"Which verb is conjugated in the Spanish construction for having just done something?","answer":"Acabar is conjugated, followed by de and an infinitive.","explanation":"English have just eaten does not require Spanish haber here: acabo de comer."} -->
 <!-- grammar-card: {"id":"present-recent-action","kind":"rule","format":"cloze","priority":"essential","sourceSection":"The Core Construction","rule":"Present acabar de expresses an action completed just now","example":"Mi hermano ___ de llamar. (My brother just called)","answer":"acaba","explanation":"Mi hermano takes third-person singular acaba; de llamar stays unchanged.","legacyAliases":[{"rule":"acabar de + infinitivo expresses a very recent action: 'to have just done something'. Use only in the present (just now) or imperfect (had just then) — never in the preterite.","example":"Mi hermano ___ de llamar. (My brother just called)"}]} -->
+<!-- grammar-card: {"id":"rule-acabar-de-meaning","kind":"concept","format":"qa","priority":"essential","sourceSection":"The Core Construction","rule":"Acabar de + infinitive means to have just done something","example":"What does acabar de + infinitive express?","answer":"Having just done something: a very recent past action.","explanation":"Acabo de comer — I have just eaten. Spanish uses present acabar here, not haber."} -->
 ## Present Conjugation of Acabar (Regular -ar)
 
 | Pronoun | Form | Pronunciation |
@@ -49,6 +50,7 @@ Using the preterite **breaks the idiom**:
 For this contrast, changing from present to simple preterite changes "just did" to literal "finished doing". This is not a claim that acabar has no other tense forms.
 
 <!-- grammar-card: {"id":"recent-versus-finished","kind":"concept","format":"qa","priority":"essential","sourceSection":"Recent-Past Reading: Present and Imperfect","rule":"Simple preterite acabar de expresses completion rather than this recent-past reading","example":"How does Acabé de comer differ from Acabo de comer?","answer":"Acabé de comer means I finished eating; Acabo de comer means I have just eaten.","explanation":"The present anchors recency now; the imperfect anchors it at a past reference point."} -->
+<!-- grammar-card: {"id":"rule-acabar-tenses","kind":"concept","format":"qa","priority":"optional","sourceSection":"Recent-Past Reading: Present and Imperfect","rule":"The just-did reading uses present or imperfect acabar","example":"Which two tenses of acabar give the just-did reading of acabar de + infinitive?","answer":"The present (have just done) and the imperfect (had just done).","explanation":"Acabo de comer; Acababa de comer cuando llegaste. The simple preterite reads as literal finishing."} -->
 
 ## Imperfect: "Had Just Done X When…"
 
@@ -101,6 +103,7 @@ Both placements are standard; neither is inherently more formal.
 
 <!-- grammar-card: {"id":"pronoun-before-auxiliary","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Pronoun Placement","rule":"Pronouns with acabar de + infinitivo can go before 'acabar' or attached to the infinitive — both correct","example":"___ acabo de comprar. (I just bought it [el libro])","answer":"Lo","explanation":"The masculine singular object precedes acabo; acabo de comprarlo is also standard."} -->
 <!-- grammar-card: {"id":"pronoun-on-infinitive","kind":"rule","format":"qa","priority":"optional","sourceSection":"Pronoun Placement","rule":"A pronoun may attach to the infinitive after acabar de","example":"Rewrite Te acabo de llamar with the object attached to the infinitive.","answer":"Acabo de llamarte.","explanation":"The pronoun moves as a unit; do not put it between de and the infinitive."} -->
+<!-- grammar-card: {"id":"rule-acabar-pronoun-positions","kind":"concept","format":"qa","priority":"optional","sourceSection":"Pronoun Placement","rule":"Object pronouns go before conjugated acabar or attach to the infinitive","example":"With acabar de + infinitive, where can an object pronoun go?","answer":"Before the conjugated acabar, or attached to the end of the infinitive.","explanation":"Lo acabo de ver = Acabo de verlo; never between de and the infinitive."} -->
 
 ## Sources
 

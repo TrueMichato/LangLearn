@@ -17,6 +17,7 @@ Use **más** (more) or **menos** (less/fewer) + adjective/adverb/noun + **que**:
 
 <!-- grammar-card: {"id":"unequal-comparison","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Comparatives of Inequality","rule":"Unequal adjective comparisons use más or menos plus que","example":"María es más alta ___ Ana.","answer":"que","explanation":"Que introduces the person compared with María."} -->
 <!-- grammar-card: {"id":"numeric-threshold","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Comparatives of Inequality","rule":"A numeric threshold after más uses de","example":"Hay más ___ cien personas. (over one hundred)","answer":"de","explanation":"This is a numerical threshold, not a comparison of two people's quantities."} -->
+<!-- grammar-card: {"id":"rule-number-de","kind":"concept","format":"qa","priority":"essential","sourceSection":"Comparatives of Inequality","rule":"Before a number, más and menos are followed by de","example":"In a más or menos comparison, which word introduces a number such as cien?","answer":"De.","explanation":"Count it if you say de. Hay más de cien personas; menos de diez minutos."} -->
 
 ## Comparatives of Equality
 
@@ -35,6 +36,7 @@ Use **tan + adjective/adverb + como** or **tanto/a/os/as + noun + como**:
 
 <!-- grammar-card: {"id":"equal-adjective","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Comparatives of Equality","rule":"Equality with an adjective or adverb uses tan plus como","example":"Es ___ alto como tú.","answer":"tan","explanation":"Tan modifies the adjective alto; tanto would be inappropriate here."} -->
 <!-- grammar-card: {"id":"equal-noun","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Comparatives of Equality","rule":"Tanto agrees with a noun in equality comparisons","example":"Tengo ___ libros como tú.","answer":"tantos","explanation":"Masculine plural libros requires tantos, followed by como."} -->
+<!-- grammar-card: {"id":"rule-equality-como","kind":"concept","format":"qa","priority":"essential","sourceSection":"Comparatives of Equality","rule":"Comparisons of equality are completed with como","example":"Which word completes every Spanish comparison of equality (as … as)?","answer":"Como.","explanation":"Count it if you say como. Tan alto como tú; tantos libros como tú."} -->
 <!-- grammar-card: {"id":"tan-tanto-contrast","kind":"concept","format":"qa","priority":"essential","sourceSection":"Comparatives of Equality","rule":"Tan modifies adjectives or adverbs; tanto modifies nouns","example":"What determines tan versus tanto in comparisons of equality?","answer":"Use tan with an adjective or adverb; use tanto/a/os/as with a noun, agreeing with that noun.","explanation":"Compare tan alto como with tantos libros como."} -->
 
 <!-- quiz: {"type":"multiple-choice","question":"How do you say 'She is as smart as her brother'?","options":["Ella es más inteligente que su hermano","Ella es tan inteligente como su hermano","Ella es tanto inteligente como su hermano","Ella es tan inteligente que su hermano"],"answer":1} -->
@@ -76,13 +78,15 @@ Add the **definite article** (el/la/los/las) before the comparative to form the 
 > 📌 Always use **de** (not *en*) after the superlative: *el mejor restaurante **de** la ciudad* — the best restaurant in the city.
 
 <!-- grammar-card: {"id":"relative-superlative","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Relative Superlatives","rule":"Relative superlatives identify the extreme member of a comparison set","example":"Es ___ alta de la clase. (the tallest; she)","answer":"la más","explanation":"The feminine singular article and más mark her as tallest within the class."} -->
+<!-- grammar-card: {"id":"rule-superlative-article","kind":"concept","format":"qa","priority":"essential","sourceSection":"Relative Superlatives","rule":"A relative superlative adds the definite article before the comparative","example":"How do you turn a comparative (taller, better) into a relative superlative (the tallest, the best)?","answer":"Put the definite article before it.","explanation":"Count it if you say the definite article. Más alta becomes la más alta; mejores becomes los mejores."} -->
 <!-- grammar-card: {"id":"superlative-set","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Relative Superlatives","rule":"De introduces the comparison set in the taught superlative pattern","example":"El mejor restaurante ___ la ciudad.","answer":"de","explanation":"The city supplies the set within which the restaurant is best."} -->
+<!-- grammar-card: {"id":"rule-superlative-de","kind":"concept","format":"qa","priority":"optional","sourceSection":"Relative Superlatives","rule":"After a superlative, the comparison group is introduced by de","example":"After a superlative, which preposition introduces the group (the best restaurant in the city)?","answer":"De, not en.","explanation":"Count it if you say de. El mejor restaurante de la ciudad; la más alta de la clase."} -->
 
 <!-- quiz: {"type":"multiple-choice","question":"How do you say 'He is the best student in the school'?","options":["Él es más buen estudiante de la escuela","Él es el mejor estudiante de la escuela","Él es el más bien estudiante en la escuela","Él es mejor estudiante que la escuela"],"answer":1} -->
 
 ## Absolute Superlatives (-ísimo)
 
-To say "extremely" or "super," add **-ísimo/-ísima/-ísimos/-ísimas** to the adjective stem (drop the final vowel first):
+To say "extremely" or "super," add **-ísimo/-ísima/-ísimos/-ísimas** to the adjective stem (drop a final vowel first, if there is one — *fácil* → *facilísimo*):
 
 | Adjective | -ísimo form | Meaning |
 |-----------|-------------|---------|

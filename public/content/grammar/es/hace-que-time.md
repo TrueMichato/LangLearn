@@ -15,6 +15,7 @@ The Spanish verb **hacer** is recycled for time expressions in three closely rel
 The action **started in the past and is still happening**. This construction uses the **present** for that ongoing situation; it is not a general ban on perfect tenses in time expressions.
 
 <!-- grammar-card: {"id":"ongoing-present","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Construction 1: Hace + Time + Que + Present (Ongoing)","rule":"Ongoing hace… que uses the present for an action continuing now","example":"Hace dos años que ___ español. (estudiar; I still study it.)","answer":"estudio","explanation":"Spanish present describes the ongoing situation where English uses have been studying."} -->
+<!-- grammar-card: {"id":"rule-ongoing-present-tense","kind":"concept","format":"qa","priority":"essential","sourceSection":"Construction 1: Hace + Time + Que + Present (Ongoing)","rule":"Ongoing duration with hace + time + que takes a present-tense verb","example":"To say I have been doing X for a time with the hacer + time + que pattern, which tense does the activity verb take?","answer":"The present.","explanation":"Hace dos años que estudio español — English uses have been studying; Spanish uses the present."} -->
 
 <!-- grammar-card: {"id":"ongoing-knowing","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Construction 1: Hace + Time + Que + Present (Ongoing)","rule":"Hace + time + que + present = 'for [time]' (still ongoing) — equivalent to 'desde hace + time'","example":"Hace dos años ___ a Andrés. (I've known Andrés for 2 years)","answer":"que conozco","explanation":"Use que and present conozco to connect the duration to knowing Andrés now."} -->
 
@@ -26,7 +27,7 @@ The action **started in the past and is still happening**. This construction use
 - **Vivo aquí desde hace mucho tiempo** — I've been living here for a long time.
 - **Trabaja en el banco desde hace seis meses** — She has been working at the bank for six months.
 
-This is the **mirror version** of Construction 1 — same meaning, different word order. Both are equally common.
+This is the **mirror version** of Construction 1 — same meaning, different word order. Both are common.
 
 | Construction 1 | Construction 2 |
 |---|---|
@@ -53,7 +54,8 @@ The action is **a one-time completed event** in the past. Spanish uses the **pre
 - *Hace dos años que estudié en España* ✓ (also fine, slightly emphatic)
 
 <!-- grammar-card: {"id":"ago-preterite","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Construction 3: Hace + Time + Preterite (\"Ago\")","rule":"Hace with a completed preterite event measures time ago","example":"Hace una hora ___. (llegar; I arrived an hour ago.)","answer":"llegué","explanation":"The completed arrival contrasts with an activity still ongoing now."} -->
-<!-- grammar-card: {"id":"que-not-sole-test","kind":"concept","format":"qa","priority":"optional","sourceSection":"Construction 3: Hace + Time + Preterite (\"Ago\")","rule":"Que alone does not distinguish duration from time ago","example":"Can hace… que occur with a preterite event meaning time ago?","answer":"Yes. Que may appear there too; inspect the verb tense and context, not just que.","explanation":"Hace dos años que estudié en España can still describe a completed past event."} -->
+<!-- grammar-card: {"id":"rule-ago-preterite-tense","kind":"concept","format":"qa","priority":"essential","sourceSection":"Construction 3: Hace + Time + Preterite (\"Ago\")","rule":"Hace + time with a preterite verb means time ago","example":"When the hacer + time pattern means time ago (a single completed event), which tense does the event verb take?","answer":"The preterite.","explanation":"Hace dos años estudié en España — two years ago, I studied in Spain."} -->
+<!-- grammar-card: {"id":"que-not-sole-test","kind":"concept","format":"qa","priority":"optional","sourceSection":"Construction 3: Hace + Time + Preterite (\"Ago\")","rule":"Que alone does not distinguish duration from time ago","example":"Hace… que can appear in both the for and the ago meanings. What shows which meaning is intended?","answer":"The verb tense and the context, not the presence of que.","explanation":"Hace dos años que estudié en España can still describe a completed past event.","legacyAliases":[{"rule":"Que alone does not distinguish duration from time ago","example":"Can hace… que occur with a preterite event meaning time ago?"}]} -->
 
 ## The Critical Distinction
 
@@ -79,7 +81,7 @@ To ask "for how long?" or "how long ago?":
 
 The verb tense in the question signals which meaning is intended.
 
-<!-- grammar-card: {"id":"question-tense","kind":"concept","format":"qa","priority":"optional","sourceSection":"Questions: How Long?","rule":"Present and preterite questions ask different kinds of how long","example":"Does ¿Cuánto tiempo hace que llegaste? ask about an ongoing arrival?","answer":"No. It asks how long ago you arrived; llegaste is preterite.","explanation":"A present activity such as estudias instead asks for duration continuing now; desde cuándo asks since when."} -->
+<!-- grammar-card: {"id":"question-tense","kind":"concept","format":"qa","priority":"optional","sourceSection":"Questions: How Long?","rule":"Present and preterite questions ask different kinds of how long","example":"What does ¿Cuánto tiempo hace que llegaste? ask?","answer":"How long ago you arrived; llegaste is preterite.","explanation":"A present activity such as estudias instead asks for duration continuing now; desde cuándo asks since when.","legacyAliases":[{"rule":"Present and preterite questions ask different kinds of how long","example":"Does ¿Cuánto tiempo hace que llegaste? ask about an ongoing arrival?"}]} -->
 
 ## Negative: Time Without an Action
 
@@ -106,7 +108,7 @@ This **competes** with *llevar + sin* — both are correct:
 >
 > Translation: "Have you been living in Barcelona for long?" — "Yes, I've been living here for six years." — "Wow! And when did you move?" — "Exactly six years ago; I arrived on a day like today." — "And your family, how long has it been since you've seen them?" — "Ugh, I haven't visited them for three months."
 
-Notice all three constructions appearing naturally: **hace + present** (ongoing), **desde hace** (mirror form), **hace + preterite** (ago), and the **negative** (haven't done X).
+Notice all four patterns appearing naturally: **hace + present** (ongoing), **desde hace** (mirror form), **hace + preterite** (ago), and the **negative** (haven't done X).
 
 ## Sources
 

@@ -49,6 +49,7 @@ When **a** or **de** precede the masculine singular article **el**, they **must*
 <!-- grammar-card: {"id":"del-contraction","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Mandatory Contractions: al and del","rule":"De plus the article el contracts to del","example":"El carro ___ vecino. (de + el)","answer":"del","explanation":"The article el contracts with de; feminine de la stays separate."} -->
 <!-- grammar-card: {"id":"no-pronoun-contraction","kind":"concept","format":"qa","priority":"essential","sourceSection":"Mandatory Contractions: al and del","rule":"Contractions apply to el the article, not él the pronoun","example":"Why do we write Hablo de él rather than Hablo del?","answer":"Él means him and is a pronoun, not the article el.","explanation":"Keep de él and a él separate; only the ordinary article contracts."} -->
 <!-- grammar-card: {"id":"feminine-no-contraction","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Mandatory Contractions: al and del","rule":"A plus la does not contract","example":"Voy ___ tienda. (to the; la tienda)","answer":"a la","explanation":"The feminine article la stays separate from a."} -->
+<!-- grammar-card: {"id":"rule-contraction-trigger","kind":"concept","format":"qa","priority":"essential","sourceSection":"Mandatory Contractions: al and del","rule":"A and de contract only with the masculine singular article el","example":"When must a or de merge with the following word into a single contraction?","answer":"Only before the masculine singular article el: a + el = al, de + el = del.","explanation":"La, los, las and the pronoun él never contract: a la tienda, de los niños, de él."} -->
 
 <!-- quiz: {"type":"multiple-choice","question":"How do you say 'I am going to the store' when tienda is feminine (la tienda)?","options":["Voy al tienda","Voy del tienda","Voy a la tienda","Voy en la tienda"],"answer":2} -->
 
@@ -56,26 +57,27 @@ When **a** or **de** precede the masculine singular article **el**, they **must*
 
 Spanish uses a special **a** before direct objects that are **specific people** (or beloved pets). English has no equivalent — it is never translated:
 
-- **Veo a María** (VEH-oh ah mah-REE-ah) — I see María
+- **Veo a María** (BEH-oh ah mah-REE-ah) — I see María
 - **Llamo a mi mamá** (YAH-moh ah mee mah-MAH) — I call my mom
 - **Visito a mi perro** — I visit my dog (personified pet)
 
 No personal a with things or non-specific people:
-- **Veo la casa** (VEH-oh lah KAH-sah) — I see the house
+- **Veo la casa** (BEH-oh lah KAH-sah) — I see the house
 - **Busco un médico** — I am looking for a doctor (non-specific)
 
 <!-- grammar-card: {"id":"personal-a","kind":"rule","format":"cloze","priority":"essential","sourceSection":"The Personal A","rule":"Personal 'a' is required before specific people (and pets) as direct objects","example":"Llamo ___ mi hermana todos los días.","answer":"a","explanation":"Mi hermana is an identified person receiving the action, so this sentence uses personal a."} -->
 <!-- grammar-card: {"id":"personal-a-scope","kind":"concept","format":"qa","priority":"essential","sourceSection":"The Personal A","rule":"Personal a distinguishes identified people from ordinary things or nonspecific searches","example":"Why does Veo a María use a, while Busco un médico can omit it?","answer":"María is identified; un médico can mean any doctor, not a particular person.","explanation":"The personal a has no English counterpart. The intended specificity matters."} -->
+<!-- grammar-card: {"id":"rule-personal-a","kind":"concept","format":"qa","priority":"essential","sourceSection":"The Personal A","rule":"A specific person as direct object takes the personal a","example":"What must Spanish add before a specific person who is the direct object, as in I see María?","answer":"The personal a: Veo a María.","explanation":"English has no equivalent. Things and nonspecific people do not take it: Veo la casa."} -->
 
 ## Prepositions in Use
 
 ### A — destination, time, purpose
 
-- **Voy a México** (VOH-ee ah MEH-hee-koh) — I go to Mexico
+- **Voy a México** (BOH-ee ah MEH-hee-koh) — I go to Mexico
 - **Llegamos a las ocho** (ah lahs OH-choh) — We arrive at eight o'clock
 - **Aprendí a manejar** — I learned to drive (+ infinitive)
 
-<!-- grammar-card: {"id":"destination-a","kind":"rule","format":"cloze","priority":"optional","sourceSection":"A — destination, time, purpose","rule":"A marks a destination after ir","example":"Voy ___ México.","answer":"a","explanation":"A introduces the destination; en would describe location instead."} -->
+<!-- grammar-card: {"id":"destination-a","kind":"rule","format":"cloze","priority":"optional","sourceSection":"A — destination, time, purpose","rule":"A marks a destination after ir","example":"Voy ___ México.","answer":"a","explanation":"A introduces the destination; en would describe location instead. Colloquial Voy para México also occurs, but a is the standard choice."} -->
 
 ### De — origin, material, possession
 
@@ -89,9 +91,10 @@ No personal a with things or non-specific people:
 
 - **Estoy en casa** (ehs-TOH-ee ehn KAH-sah) — I am at home
 - **Trabajo en una oficina** — I work in an office
-- **Viajo en avión** (VYAH-hoh ehn ah-VYOHN) — I travel by plane
+- **Viajo en avión** (BYAH-hoh ehn ah-BYOHN) — I travel by plane
 
 <!-- grammar-card: {"id":"transport-en","kind":"rule","format":"cloze","priority":"optional","sourceSection":"En — location and transport","rule":"En introduces the illustrated means of transport","example":"Viajo ___ avión.","answer":"en","explanation":"By plane is en avión, not a literal transfer of English by."} -->
+<!-- grammar-card: {"id":"rule-transport-en","kind":"concept","format":"qa","priority":"optional","sourceSection":"En — location and transport","rule":"Means of transport usually takes en","example":"Which preposition usually introduces a means of transport, such as by bus or by car?","answer":"En: en autobús, en coche.","explanation":"English by is not translated literally. On foot is the common exception: a pie."} -->
 
 ### Con / Sin — with / without
 
@@ -125,7 +128,7 @@ These two both translate as "for" in English but have distinct uses (covered in 
 
 <!-- grammar-card: {"id":"al-contraction","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Mandatory Contractions: al and del","rule":"a + el = al (mandatory contraction); a + la stays separate — never contracts","example":"Voy ___ supermercado. (a + el)","answer":"al","explanation":"A contracts with the masculine singular article el in this noun phrase."} -->
 
-<!-- quiz: {"type":"multiple-choice","question":"Complete: 'El auto ___ mi vecino está descompuesto.' (de + el)","options":["de el","del","de la","al"],"answer":1} -->
+<!-- quiz: {"type":"multiple-choice","question":"Complete: 'El auto ___ vecino está descompuesto.' (de + el)","options":["de el","del","de la","al"],"answer":1} -->
 
 ## Sources
 

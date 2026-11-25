@@ -77,6 +77,7 @@ Numbers in Spanish follow predictable rules with a handful of key irregularities
 <!-- quiz: {"type":"multiple-choice","question":"How do you say '101' in Spanish?","options":["cien uno","ciento un","ciento uno","cien y uno"],"answer":2} -->
 
 <!-- grammar-card: {"id":"cien-exact","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Tens and Hundreds","rule":"'Cien' before a noun or alone; 'ciento' when followed by more digits (101-199)","example":"Hay ___ estudiantes en la escuela. (exactly 100)","answer":"cien","explanation":"Exactly one hundred is cien; within 101–199 use ciento before the remaining number."} -->
+<!-- grammar-card: {"id":"rule-cien-ciento","kind":"concept","format":"qa","priority":"essential","sourceSection":"Tens and Hundreds","rule":"One hundred is ciento only when more digits follow it","example":"When does one hundred take the longer form ciento?","answer":"When more digits follow it (101–199).","explanation":"Count it if you say when more digits follow. Ciento uno, ciento cincuenta; but cien personas and plain cien."} -->
 <!-- grammar-card: {"id":"ciento-compound","kind":"rule","format":"qa","priority":"optional","sourceSection":"Tens and Hundreds","rule":"One hundred followed by tens or units uses ciento","example":"Write 150 in Spanish words.","answer":"ciento cincuenta","explanation":"There is no y between the hundred and the tens."} -->
 
 ## Thousands and Millions
@@ -88,6 +89,7 @@ Numbers in Spanish follow predictable rules with a handful of key irregularities
 <!-- vocab-card: {"id":"vocab-mil","word":"mil","meaning":"one thousand","priority":"optional","sourceSection":"Thousands and Millions"} -->
 <!-- vocab-card: {"id":"vocab-millon","word":"millón","meaning":"million","priority":"optional","sourceSection":"Thousands and Millions"} -->
 <!-- grammar-card: {"id":"mil-invariable","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Thousands and Millions","rule":"Mil stays singular in cardinal multiples","example":"Hay dos ___ personas. (2,000)","answer":"mil","explanation":"Cardinal two thousand is dos mil, not dos miles; miles has other uses such as miles de personas."} -->
+<!-- grammar-card: {"id":"rule-thousand-invariable","kind":"concept","format":"qa","priority":"optional","sourceSection":"Thousands and Millions","rule":"The cardinal word for a thousand never pluralizes","example":"Does the Spanish word for a thousand take a plural in multiples such as 2,000 or 5,000?","answer":"No. It stays invariable: dos mil, cinco mil.","explanation":"Count it if you say it stays singular. Millón, by contrast, pluralizes: dos millones."} -->
 <!-- grammar-card: {"id":"million-de","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Thousands and Millions","rule":"Millón and millones take de directly before a noun","example":"Tres millones ___ personas.","answer":"de","explanation":"Millones is a noun and takes de when the counted noun immediately follows."} -->
 
 ## Ordinal Numbers (1st–10th)
@@ -123,6 +125,7 @@ Days are **masculine** and written **lowercase** in Spanish:
 - **El lunes** = on Monday (specific) / **Los lunes** = on Mondays (habitual)
 
 <!-- grammar-card: {"id":"weekday-frequency","kind":"concept","format":"qa","priority":"essential","sourceSection":"Days of the Week","rule":"The article distinguishes a specific weekday from a weekly habit","example":"How do el lunes and los lunes differ?","answer":"El lunes means on a specific Monday; los lunes means on Mondays habitually.","explanation":"Weekday names are masculine and lowercase in ordinary Spanish writing."} -->
+<!-- grammar-card: {"id":"rule-lowercase-calendar","kind":"concept","format":"qa","priority":"essential","sourceSection":"Days of the Week","rule":"Days of the week and months are lowercase in Spanish","example":"Are Spanish days of the week and months capitalized in ordinary writing?","answer":"No. They are written lowercase.","explanation":"Count it if you say lowercase. Hoy es lunes; el 5 de marzo."} -->
 <!-- vocab-card: {"id":"vocab-lunes","word":"lunes","meaning":"Monday","priority":"optional","sourceSection":"Days of the Week"} -->
 <!-- vocab-card: {"id":"vocab-martes","word":"martes","meaning":"Tuesday","priority":"optional","sourceSection":"Days of the Week"} -->
 <!-- vocab-card: {"id":"vocab-miercoles","word":"miércoles","meaning":"Wednesday","priority":"optional","sourceSection":"Days of the Week"} -->
@@ -151,7 +154,7 @@ Months are also **lowercase**: enero, febrero, marzo, abril, mayo, junio, julio,
 ### Saying the Date
 
 - **Hoy es el 5 de marzo** — Today is March 5th
-- **Estamos a 5 de marzo** (ehs-TAH-mohs) — It is March 5th *(common in Latin America)*
+- **Estamos a 5 de marzo** (ehs-TAH-mohs) — It is March 5th *(especially common in Spain; also heard in Latin America)*
 - **El 1 de enero de 2024** — January 1st, 2024
 - Normally use cardinal numbers for dates: *el quince de julio*. For the first day, **el primero de enero** is common, especially in Latin America; **el uno de enero** is also used.
 
@@ -177,6 +180,7 @@ Months are also **lowercase**: enero, febrero, marzo, abril, mayo, junio, julio,
 - **A la una y media** — At one-thirty
 
 <!-- grammar-card: {"id":"time-one","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Telling Time","rule":"One o'clock takes singular es la","example":"___ una. (It is one o'clock.)","answer":"Es la","explanation":"The singular hour contrasts with son las for other hours."} -->
+<!-- grammar-card: {"id":"rule-one-oclock-singular","kind":"concept","format":"qa","priority":"essential","sourceSection":"Telling Time","rule":"Only the one o'clock hour takes a singular verb and article","example":"When telling time, which hour takes a singular verb and article instead of the plural?","answer":"One o'clock: es la una.","explanation":"Count it if you say one o'clock. Every other hour is plural: las dos, las tres y media."} -->
 <!-- grammar-card: {"id":"time-quarter-to","kind":"rule","format":"qa","priority":"optional","sourceSection":"Telling Time","rule":"Menos cuarto subtracts a quarter hour from the following hour","example":"What time is Son las cinco menos cuarto?","answer":"4:45.","explanation":"It is a quarter before five, not a quarter after five."} -->
 <!-- grammar-card: {"id":"time-at","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Telling Time","rule":"A la or a las introduces the time at which something happens","example":"Llegamos ___ cinco. (at five o'clock)","answer":"a las","explanation":"An event time uses a las, whereas the current clock time is son las cinco."} -->
 <!-- vocab-card: {"id":"vocab-y-media","word":"y media","meaning":"half past (in telling time)","priority":"optional","sourceSection":"Telling Time"} -->

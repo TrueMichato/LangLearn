@@ -17,8 +17,9 @@ The same pronoun forms also occur with **pronominal verbs** whose meanings are n
 | vosotros | **os** |
 | ellos / ustedes | **se** |
 
-<!-- grammar-card: {"id":"reflexive-meaning","kind":"concept","format":"qa","priority":"essential","sourceSection":"Reflexive Pronouns","rule":"A reflexive pronoun refers back to the subject","example":"Who is being washed in María se lava?","answer":"María herself.","explanation":"In a literal reflexive use, the subject and the person affected are the same."} -->
+<!-- grammar-card: {"id":"reflexive-meaning","kind":"rule","format":"qa","priority":"essential","sourceSection":"Reflexive Pronouns","rule":"A reflexive pronoun refers back to the subject","example":"Who is being washed in María se lava?","answer":"María herself.","explanation":"In a literal reflexive use, the subject and the person affected are the same."} -->
 <!-- grammar-card: {"id":"reflexive-nosotros","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Reflexive Pronouns","rule":"Nos is the reflexive pronoun for nosotros","example":"Nosotros ___ lavamos las manos.","answer":"nos","explanation":"The reflexive pronoun matches the subject nosotros, not the plural body part."} -->
+<!-- grammar-card: {"id":"rule-pronoun-matches-subject","kind":"concept","format":"qa","priority":"essential","sourceSection":"Reflexive Pronouns","rule":"The reflexive pronoun always matches the subject of the verb","example":"In a reflexive verb, what does the reflexive pronoun have to match?","answer":"The subject of the verb.","explanation":"Count it if you say the subject. Yo me lavo; ellos se lavan. A plural body part such as las manos does not change the pronoun."} -->
 
 ## Conjugating lavarse (to wash oneself)
 
@@ -46,7 +47,9 @@ Drop the **-se**, conjugate the stem verb, then place the matching pronoun **bef
 > ⚠️ When the pronoun attaches to the gerund, add an accent to keep the stress: *duchando* → **duchándome**; *levantando* → **levantándose**.
 
 <!-- grammar-card: {"id":"reflexive-infinitive","kind":"rule","format":"qa","priority":"essential","sourceSection":"Where to Place the Reflexive Pronoun","rule":"A reflexive pronoun can attach to an infinitive in a verbal phrase","example":"Rewrite Me quiero lavar with the pronoun attached to the infinitive.","answer":"Quiero lavarme.","explanation":"Both placements are possible; the pronoun is still me because the subject is yo."} -->
+<!-- grammar-card: {"id":"rule-infinitive-placement","kind":"concept","format":"qa","priority":"essential","sourceSection":"Where to Place the Reflexive Pronoun","rule":"With a conjugated verb plus an infinitive, the pronoun goes before the conjugated verb or attaches to the infinitive","example":"With a conjugated verb plus an infinitive, where can the reflexive pronoun go?","answer":"Before the conjugated verb, or attached to the end of the infinitive.","explanation":"Count it only if you give both positions. Me quiero lavar = Quiero lavarme."} -->
 <!-- grammar-card: {"id":"reflexive-gerund","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Where to Place the Reflexive Pronoun","rule":"Gerund attachment preserves the original stress with a tilde","example":"Estoy ___. (ducharse, yo; attach the pronoun to the gerund)","answer":"duchándome","explanation":"Duchando plus me becomes duchándome; stress stays on chan."} -->
+<!-- grammar-card: {"id":"rule-gerund-accent","kind":"concept","format":"qa","priority":"optional","sourceSection":"Where to Place the Reflexive Pronoun","rule":"Attaching a pronoun to a gerund requires a written accent to keep the stress","example":"What must you add in writing when a reflexive pronoun attaches to a gerund?","answer":"A written accent, to keep the original stress.","explanation":"Count it if you say a written accent or tilde. Duchando becomes duchándome; levantando becomes levantándose."} -->
 <!-- grammar-card: {"id":"reflexive-command-contrast","kind":"concept","format":"qa","priority":"essential","sourceSection":"Where to Place the Reflexive Pronoun","rule":"Affirmative and negative commands place reflexive pronouns differently","example":"How is te placed in the tú commands Wash yourself and Do not wash yourself?","answer":"Attached in Lávate; before the verb in No te laves.","explanation":"The negative also changes the verb form to the subjunctive."} -->
 
 <!-- quiz: {"type":"multiple-choice","question":"Where does the reflexive pronoun go with an affirmative command?","options":["Before the verb","After the verb as a separate word","Attached to the end of the verb","It is dropped"],"answer":2} -->
@@ -58,7 +61,7 @@ Drop the **-se**, conjugate the stem verb, then place the matching pronoun **bef
 | **levantarse** (leh-bahn-TAR-seh) | to get up |
 | **despertarse** (dehs-pehr-TAR-seh) | to wake up |
 | **ducharse** (doo-CHAR-seh) | to shower |
-| **peinarse** (peh-EE-nar-seh) | to comb one's hair |
+| **peinarse** (pay-NAR-seh) | to comb one's hair |
 | **vestirse** (behs-TEER-seh) | to get dressed |
 | **acostarse** (ah-kohs-TAR-seh) | to go to bed |
 | **llamarse** (yah-MAR-seh) | to be called / named |
@@ -80,7 +83,7 @@ Drop the **-se**, conjugate the stem verb, then place the matching pronoun **bef
 - **Me despierto a las siete** — I wake up at seven
 - **Los niños se divirtieron mucho** — The children had a lot of fun
 
-<!-- grammar-card: {"id":"lavarse-yo","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Conjugating lavarse (to wash oneself)","rule":"Reflexive infinitives end in -se; conjugate the stem verb and match the pronoun to the subject","example":"Yo ___ los dientes todas las mañanas. (lavarse)","answer":"me lavo","explanation":"Conjugate lavar as lavo and replace infinitive se with the yo pronoun me."} -->
+<!-- grammar-card: {"id":"lavarse-yo","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Conjugating lavarse (to wash oneself)","rule":"Reflexive infinitives end in -se; conjugate the stem verb and match the pronoun to the subject","example":"Yo ___ los dientes todas las mañanas. (lavarse; present)","answer":"me lavo","explanation":"Conjugate lavar as lavo and replace infinitive se with the yo pronoun me.","legacyAliases":[{"rule":"Reflexive infinitives end in -se; conjugate the stem verb and match the pronoun to the subject","example":"Yo ___ los dientes todas las mañanas. (lavarse)"}]} -->
 
 ## Verbs That Change Meaning Reflexively
 

@@ -24,7 +24,7 @@ The direct object answers *What?* or *Whom?* directly after the verb:
 - **Busco a María. La busco.** (lah BOOS-koh) — I look for María. I look for her.
 
 <!-- grammar-card: {"id":"direct-object","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Direct Object Pronouns (DO)","rule":"A feminine singular direct object is replaced by la","example":"Compré la pizza. ___ comemos ahora.","answer":"La","explanation":"La replaces feminine singular pizza, the thing being eaten."} -->
-<!-- grammar-card: {"id":"direct-indirect-contrast","kind":"concept","format":"qa","priority":"essential","sourceSection":"Indirect Object Pronouns (IO)","rule":"Direct and indirect objects have different roles","example":"In Le doy el libro a Ana, which expression is the thing given and which identifies the recipient?","answer":"El libro is the direct object; le and a Ana identify the indirect-object recipient.","explanation":"Do not select lo or le solely from the person's gender; first identify the grammatical role."} -->
+<!-- grammar-card: {"id":"direct-indirect-contrast","kind":"rule","format":"qa","priority":"essential","sourceSection":"Indirect Object Pronouns (IO)","rule":"Direct and indirect objects have different roles","example":"In Le doy el libro a Ana, which expression is the thing given and which identifies the recipient?","answer":"El libro is the direct object; le and a Ana identify the indirect-object recipient.","explanation":"Do not select lo or le solely from the person's gender; first identify the grammatical role."} -->
 
 <!-- quiz: {"type":"multiple-choice","question":"Replace 'el libro' (masculine) with a direct object pronoun: 'Tengo el libro.'","options":["Le tengo","Lo tengo","La tengo","Me tengo"],"answer":1} -->
 
@@ -46,25 +46,27 @@ The indirect object answers *To/For whom?* — it identifies the recipient:
 
 <!-- vocab-card: {"id":"vocab-que-te-parece","word":"¿Qué te parece?","meaning":"What do you think?; How does it seem to you?","priority":"optional","sourceSection":"Indirect Object Pronouns (IO)"} -->
 <!-- grammar-card: {"id":"io-plural","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Indirect Object Pronouns (IO)","rule":"Les refers to plural third-person recipients","example":"___ cuento una historia a los niños.","answer":"Les","explanation":"The recipients are plural; les, not singular le, resumes a los niños."} -->
+<!-- grammar-card: {"id":"rule-indirect-object-role","kind":"concept","format":"qa","priority":"optional","sourceSection":"Indirect Object Pronouns (IO)","rule":"The indirect object identifies the recipient","example":"Which question does an indirect object answer about the action?","answer":"To whom or for whom: it identifies the recipient.","explanation":"The direct object answers what or whom receives the action directly: in Le doy el regalo, the gift is direct and le is the recipient."} -->
 
 ## Pronoun Placement
 
 Object pronouns go **before** the conjugated verb in most sentences:
 
-- **Lo veo** (loh VEH-oh) — I see it / him
+- **Lo veo** (loh BEH-oh) — I see it / him
 - **Te llamo mañana** — I'll call you tomorrow
 - **No me gusta** (noh meh GOOS-tah) — I don't like it
 
 With **infinitives, gerunds, or affirmative imperatives**, the pronoun attaches to the end:
 
-- **Quiero verlo** (KYEH-roh VEHR-loh) — I want to see it *(or: Lo quiero ver)*
+- **Quiero verlo** (KYEH-roh BEHR-loh) — I want to see it *(or: Lo quiero ver)*
 - **Estoy llamándote** (ehs-TOH-ee yah-MAHN-doh-teh) — I am calling you *(or: Te estoy llamando)*
 - **¡Dámelo!** (DAH-meh-loh) — Give it to me! *(imperative — must attach)*
 
 <!-- grammar-card: {"id":"infinitive-attachment","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Pronoun Placement","rule":"Object pronouns may attach to an infinitive in a verbal phrase","legacyAliases":[{"rule":"Object pronouns attach to infinitives, gerunds, and affirmative imperatives — or go before the conjugated verb","example":"¿Puedes ___ el libro? (give it to me — IO me + DO lo, attached to the infinitive dar)"}],"example":"¿Puedes ___? (give it to me — IO me + DO lo, attached to dar)","answer":"dármelo","explanation":"Dármelo combines dar + me + lo and keeps its stress with a tilde. Alternatively: ¿Me lo puedes dar? The direct object is already lo."} -->
-<!-- grammar-card: {"id":"finite-placement","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Pronoun Placement","rule":"Object pronouns normally precede an ordinary finite verb","example":"___ veo. (I see him; general direct-object pattern)","answer":"Lo","explanation":"Lo precedes veo; it is not attached as with an infinitive or affirmative command."} -->
+<!-- grammar-card: {"id":"finite-placement","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Pronoun Placement","rule":"Object pronouns normally precede an ordinary finite verb","example":"___ veo. (I see him; general direct-object pattern)","answer":"Lo","explanation":"Lo precedes veo; it is not attached as with an infinitive or affirmative command. Le veo also occurs as accepted male-person leísmo, especially in Spain."} -->
+<!-- grammar-card: {"id":"rule-pronoun-before-finite-verb","kind":"concept","format":"qa","priority":"essential","sourceSection":"Pronoun Placement","rule":"Object pronouns go before a single conjugated verb","example":"With a single conjugated verb, as in I see him, where does the object pronoun go?","answer":"Before the conjugated verb: Lo veo.","explanation":"Attachment is for infinitives, gerunds and affirmative commands; negative words come before the pronoun, as in No me gusta."} -->
 <!-- grammar-card: {"id":"gerund-placement","kind":"rule","format":"qa","priority":"optional","sourceSection":"Pronoun Placement","rule":"A progressive permits pronouns before estar or attached to the gerund","example":"Rewrite Estoy llamándote with te before the conjugated verb.","answer":"Te estoy llamando.","explanation":"Both placements are possible; attachment to the gerund requires the accent in llamándote."} -->
-<!-- grammar-card: {"id":"command-attachment","kind":"concept","format":"qa","priority":"essential","sourceSection":"Pronoun Placement","rule":"Affirmative commands require attached object pronouns","example":"In an affirmative command meaning Give it to me, can me lo stand before the command verb?","answer":"No. Attach the pronouns: Dámelo.","explanation":"This obligatory attachment differs from the two placements allowed with a verbal phrase containing an infinitive."} -->
+<!-- grammar-card: {"id":"command-attachment","kind":"concept","format":"qa","priority":"essential","sourceSection":"Pronoun Placement","rule":"Affirmative commands require attached object pronouns","legacyAliases":[{"rule":"Affirmative commands require attached object pronouns","example":"In an affirmative command meaning Give it to me, can me lo stand before the command verb?"}],"example":"In an affirmative command such as Give it to me, where must the object pronouns go?","answer":"Attached to the end of the command verb: Dámelo.","explanation":"This obligatory attachment differs from the two placements allowed with a verbal phrase containing an infinitive."} -->
 
 ## When Two Pronouns Meet: IO Comes First
 
@@ -94,6 +96,7 @@ Because *se* is ambiguous (him/her/you/them), you can add a clarifier:
 <!-- quiz: {"type":"multiple-choice","question":"How do you say 'I give it to her' (el regalo = lo, ella = le)?","options":["Le lo doy a ella","Lo le doy a ella","Se lo doy a ella","Lo se doy a ella"],"answer":2} -->
 
 <!-- grammar-card: {"id":"le-to-se","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Le / Les → Se Before Lo / La / Los / Las","rule":"le/les become 'se' before lo/la/los/las — the sequence le+lo is forbidden","example":"¿Le diste las llaves a Juan? Sí, ___ ___ di. (IO + DO)","answer":"se las","explanation":"Le becomes se before las; las retains feminine plural agreement with llaves. The two adjacent blanks hold this single pronoun sequence."} -->
+<!-- grammar-card: {"id":"rule-le-becomes-se","kind":"concept","format":"qa","priority":"essential","sourceSection":"Le / Les → Se Before Lo / La / Los / Las","rule":"Le and its plural become se before lo, la, los and las","example":"What does an indirect-object le turn into right before lo, la, los or las?","answer":"Se: Se lo doy, never le lo.","explanation":"The plural indirect-object pronoun changes the same way. Add a ella or a ustedes when se is ambiguous."} -->
 <!-- grammar-card: {"id":"se-clarification","kind":"concept","format":"qa","priority":"optional","sourceSection":"Le / Les → Se Before Lo / La / Los / Las","rule":"The replacement se does not identify the recipient's number or gender","example":"How does a ella help in Se lo doy a ella?","answer":"It identifies her as the recipient, since se alone is ambiguous.","explanation":"Se can replace either le or les; lo refers to the object, not the recipient's gender."} -->
 
 <!-- quiz: {"type":"multiple-choice","question":"Where does the IO pronoun go relative to the DO pronoun?","options":["DO first: lo me das","IO first: me lo das","They must be on opposite sides of the verb","There is no fixed order"],"answer":1} -->
@@ -106,7 +109,7 @@ In parts of Spain, it is common to use **le** instead of **lo** for a singular m
 
 The RAE accepts this singular male-person *leísmo*; that acceptance does not extend to every animate object or every plural use. **Lo/la/los/las** are the general direct-object pattern taught here and widely used in Latin America, though regional leísmo also occurs there.
 
-<!-- grammar-card: {"id":"leismo-scope","kind":"concept","format":"qa","priority":"optional","sourceSection":"Leísmo (Spain)","rule":"Accepted male-person singular leísmo is a limited regional alternative","example":"Does accepted Le vi for I saw him license le for every direct object?","answer":"No. The accepted alternative concerns a singular male person; it is not a general replacement for lo/la/los/las.","explanation":"Leísmo occurs especially in parts of Spain and also in some Latin American varieties; do not universalize either pattern geographically."} -->
+<!-- grammar-card: {"id":"leismo-scope","kind":"concept","format":"qa","priority":"optional","sourceSection":"Leísmo (Spain)","rule":"Accepted male-person singular leísmo is a limited regional alternative","legacyAliases":[{"rule":"Accepted male-person singular leísmo is a limited regional alternative","example":"Does accepted Le vi for I saw him license le for every direct object?"}],"example":"The RAE accepts Le vi for I saw him. For which kind of direct object does it accept le in place of lo?","answer":"Only a singular male person; it is not a general replacement for lo/la/los/las.","explanation":"Leísmo occurs especially in parts of Spain and also in some Latin American varieties; do not universalize either pattern geographically."} -->
 
 ## Sources
 

@@ -6,6 +6,7 @@ import japaneseDesireLesson from '../../public/content/grammar/ja/taekim-desire-
 import japaneseConditionalLesson from '../../public/content/grammar/ja/conditional.md?raw';
 import arabicMasdarLesson from '../../public/content/grammar/ar/masdar.md?raw';
 import arabicNudbaLesson from '../../public/content/grammar/ar/istighatha-nudba.md?raw';
+import spanishPrepositionsLesson from '../../public/content/grammar/es/prepositions.md?raw';
 import baselineJson from './fixtures/grammar-retention-legacy.json';
 import {
   APPROVED_QUIZ_CORRECTIONS,
@@ -24,6 +25,7 @@ const SOURCES: Record<string, string> = {
   'ja/purpose': japanesePurposeLesson,
   'ja/taekim-desire-volition': japaneseDesireLesson,
   'ar/istighatha-nudba': arabicNudbaLesson,
+  'es/prepositions': spanishPrepositionsLesson,
 };
 
 /** Mutate one real comment; payload reading and validation use the shared parser. */
@@ -90,6 +92,17 @@ describe('approved real-source quiz corrections', () => {
     expect(quiz.question).toBe(correction.original.question);
     expect(quiz.options.slice(1)).toEqual(correction.original.options.slice(1));
     expect(quiz.answer).toBe(0);
+  });
+
+  it('drops the possessive mi so the keyed del contraction is grammatical', () => {
+    const quiz = lessonQuizPayloads(spanishPrepositionsLesson)[2] as AuthoredQuizPayload;
+    const correction = APPROVED_QUIZ_CORRECTIONS.find((entry) => entry.lessonKey === 'es/prepositions')!;
+    expect(correction.original.question).toContain('mi vecino');
+    expect(quiz).toEqual(correction.corrected);
+    expect(quiz.question).not.toContain('mi vecino');
+    expect(quiz.options).toEqual(correction.original.options);
+    expect(quiz.answer).toBe(correction.original.answer);
+    expect(quiz.options[quiz.answer]).toBe('del');
   });
 
   for (const correction of APPROVED_QUIZ_CORRECTIONS) {

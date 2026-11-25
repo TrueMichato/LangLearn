@@ -1,0 +1,67 @@
+{"lessons": {
+  "cheatsheet-verb-tenses": {
+    "answerChanged": {
+      "same-form-context": "Same target (-ar/-ir nosotros present and preterite coincide); the yes/no prompt became a which-tenses question, so the answer names the tenses instead of Yes.",
+      "participle-invariance": "Same target (participles after auxiliary haber stay invariable); the yes/no prompt about one sentence became a what-does-it-agree-with question, so the answer states the rule instead of No."
+    },
+    "split": {
+      "preterite-ir-ser": ["rule-ir-ser-shared-preterite", "preterite-ir-fui", "preterite-ser-fue"]
+    },
+    "listExempt": {
+      "preterite-ir-ser": "Optional six-form paradigm summary kept for saved-card identity; rule-ir-ser-shared-preterite carries the essential recall and two clozes practise single forms."
+    }
+  },
+  "cheatsheet-accent-rules": {
+    "answerChanged": {
+      "esdrujula-accent": "Same target (esdrújulas always take a tilde); the yes/no prompt became a direct when-question, so the answer states the rule instead of No.",
+      "interrogative-indirect": "Same target (interrogatives keep their tilde in indirect questions); the yes/no prompt became a why-question, so the answer gives the reason instead of No.",
+      "diphthong-general-rules": "Same target (diptongos follow the general rules, as in canción); the yes/no prompt became a why-question, so the leading No was dropped.",
+      "two-strong-vowels": "Same target (strong-vowel hiatus needs no extra tilde); the two-part yes/no prompt became one what-question, so the answer names the hiato first.",
+      "solo-ambiguity-qualification": "Same target (optional sólo only under risk of ambiguity); the yes/no prompt became a when-question, so the leading No was dropped.",
+      "demonstrative-ambiguity-qualification": "Narrowed to its este/ese/aquel half (same id and target); the esto/eso/aquello half moved to rule-neuter-demonstratives, so that sentence left the answer."
+    },
+    "split": {
+      "stress-default-mnemonic": ["rule-unmarked-vowel-ns-stress", "rule-unmarked-consonant-stress"],
+      "demonstrative-ambiguity-qualification": ["rule-neuter-demonstratives"]
+    },
+    "listExempt": {
+      "stress-default-mnemonic": "Optional mnemonic summary kept for saved-card identity; the two atomic rule-unmarked-* cards carry the recall."
+    },
+    "frontExempt": {
+      "sobreesdrujula-application": "Accent placement is the tested point of this accent cheatsheet; the front shows the unaccented digamelo, which matches only because the gate strips accents.",
+      "hiatus-pais-application": "Accent placement is the tested point; the front shows unaccented pais, which matches país only because the gate strips accents.",
+      "enye-uppercase": "Capitalizing with Ñ is the tested point; the front shows España, which matches ESPAÑA only because the gate strips case.",
+      "uppercase-accent-application": "Keeping the tilde on a capital is the tested point; the front shows África, which matches ÁFRICA only because the gate strips case."
+    }
+  },
+  "cheatsheet-ser-estar-haber": {
+    "answerChanged": {
+      "archaic-ha-time": "Same target (literary ha is from haber, everyday hace from hacer); the yes/no prompt became a which-verb question, so the leading No and the register note (now in the explanation) left the answer."
+    },
+    "split": {
+      "three-verb-cue": ["rule-ser-identity-estar-condition", "rule-event-location-ser", "rule-haber-auxiliary-job"]
+    },
+    "listExempt": {
+      "three-verb-cue": "Optional summary of the lesson's headline cue kept for saved-card identity; the three atomic rule-* cards carry the recall."
+    }
+  },
+  "cheatsheet-subjunctive-triggers": {
+    "reclassified": {
+      "command-versus-report": "Interprets two specific decir sentences (command versus report), an application task rather than declarative rule recall, so it is kind rule; format stays qa.",
+      "mientras-meanings": "Interprets two specific mientras sentences (temporal while versus conditional as long as), an application task rather than declarative rule recall, so it is kind rule; format stays qa."
+    },
+    "answerChanged": {
+      "factual-emotion": "Same target (emotion subjunctive does not imply doubt about a known fact); the yes/no prompt became a what-does-it-mark question, so the answer states the rule instead of No.",
+      "aunque-qualification": "Same target (aunque plus subjunctive can background a known fact); the yes/no prompt became a what-else question, so the answer names the conceded-fact use instead of No.",
+      "past-after-variation": "Same target (past después de que is usually indicative but varies); the yes/no prompt became a which-mood question, so the leading No was dropped.",
+      "sequence-qualification": "Same target (the past-trigger sequence is not absolute); the yes/no prompt became a what-can-allow question, so the answer lists the conditioning factors instead of No.",
+      "antecedent-memory-test": "Same mapping (specific X → indicative, unknown X → subjunctive); the el-versus-un note moved to the explanation to keep the answer atomic."
+    },
+    "split": {
+      "weirdo-mnemonic": ["rule-ojala-subjunctive", "rule-always-subjunctive-conjunctions", "rule-time-conjunction-future"]
+    },
+    "listExempt": {
+      "weirdo-mnemonic": "Optional mnemonic expansion kept for saved-card identity; atomic rule-* cards carry ojalá and the non-WEIRDO conjunction triggers its explanation names."
+    }
+  }
+}}
