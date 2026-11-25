@@ -1,8 +1,8 @@
 {"lessons": {
   "subjuntivo-presente": {
-    "listExempt": {
-      "irregular-mnemonic": "DIS HES mnemonic expansion kept for saved-card identity; each verb is practised atomically by irregular-dar/ir/saber/haber/estar/ser.",
-      "weirdo-mnemonic": "WEIRDO mnemonic expansion kept for saved-card identity; the trigger contexts are practised atomically by the cloze cards and rule-certainty-indicative / rule-same-subject-infinitive."
+    "retired": {
+      "irregular-mnemonic": {"successors": ["irregular-dar", "irregular-ir", "irregular-saber", "irregular-haber", "irregular-estar", "irregular-ser"], "reason": "DIS HES expansion duplicated its one-verb cells."},
+      "weirdo-mnemonic": {"successors": ["ar-subjunctive", "emotion-subjunctive", "impersonal-subjunctive", "recommendation-subjunctive", "irregular-ser", "ojala-subjunctive", "same-subject-wish", "rule-same-subject-infinitive", "rule-certainty-indicative"], "reason": "WEIRDO expansion duplicated its trigger cells: W ar-subjunctive, E emotion-subjunctive, I impersonal-subjunctive, R recommendation-subjunctive, D irregular-ser (dudar que), O ojala-subjunctive; the same-subject and certainty cards cover its caveats. emotion-subjunctive and recommendation-subjunctive were added for the two categories without a card."}
     }
   },
   "subjuntivo-imperfecto": {
@@ -11,8 +11,8 @@
     }
   },
   "por-vs-para": {
-    "listExempt": {
-      "arrow-mnemonic": "Memory-hook expansion kept for saved-card identity; each meaning is recalled atomically by rule-cause-por / rule-exchange-por / rule-purpose-para / rule-deadline-para and practised by the por-*/para-* clozes."
+    "retired": {
+      "arrow-mnemonic": {"successors": ["rule-purpose-para", "para-destination", "rule-deadline-para", "para-recipient", "rule-cause-por", "rule-exchange-por", "por-means", "por-route"], "reason": "Memory-hook expansion duplicated its one-meaning cells: para for purpose, destination, deadline and recipient; por for cause, exchange, means and movement through."}
     }
   },
   "gerund-progressive": {
