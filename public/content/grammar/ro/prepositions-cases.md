@@ -30,6 +30,7 @@ Many location phrases are built from a noun-like word with a definite article: *
 <!-- vocab-card: {"id":"vocab-dedesubtul","priority":"optional","sourceSection":"Genitive Prepositional Phrases","word":"dedesubtul","meaning":"under; underneath (with genitive)"} -->
 <!-- vocab-card: {"id":"vocab-inaintea","priority":"optional","sourceSection":"Genitive Prepositional Phrases","word":"înaintea","meaning":"before (with genitive)"} -->
 <!-- grammar-card: {"id":"genitive-school","priority":"essential","sourceSection":"Genitive Prepositional Phrases","kind":"rule","format":"cloze","rule":"Many phrases like în fața and din cauza take a genitive noun","example":"Stau în fața ___. (the school)","answer":"școlii","explanation":"Școala takes the genitive-dative form școlii after în fața."} -->
+<!-- grammar-card: {"id":"rule-genitive-prepositional-phrases","priority":"essential","sourceSection":"Genitive Prepositional Phrases","kind":"concept","format":"qa","rule":"Phrases such as în fața, în spatele and în jurul take a genitive noun","example":"Which case does a noun take after în fața, în spatele or în jurul?","answer":"The genitive.","explanation":"Stau în fața școlii: școala → școlii. Any answer naming the genitive counts."} -->
 
 ## Opposition and Cause
 
@@ -80,6 +81,7 @@ Some prepositions take the dative. These often express benefit, conformity, or t
 <!-- vocab-card: {"id":"vocab-conform","priority":"optional","sourceSection":"Dative Prepositions","word":"conform","meaning":"according to (with dative)"} -->
 <!-- vocab-card: {"id":"vocab-potrivit","priority":"optional","sourceSection":"Dative Prepositions","word":"potrivit","meaning":"according to (preposition with dative)"} -->
 <!-- grammar-card: {"id":"dative-conform","priority":"essential","sourceSection":"Dative Prepositions","kind":"rule","format":"cloze","rule":"Dative prepositions like datorită and conform require dative forms","example":"Conform ___, este permis. (legea)","answer":"legii","explanation":"Conform takes the dative; legii is the dative/genitive form of legea.","legacyAliases":[{"rule":"Dative prepositions like datorită and conform require dative forms","example":"___ legii, este permis."}]} -->
+<!-- grammar-card: {"id":"rule-dative-prepositions","priority":"essential","sourceSection":"Dative Prepositions","kind":"concept","format":"qa","rule":"Datorită, mulțumită, grație, conform and potrivit take a dative noun","example":"Which case does a noun take after datorită, mulțumită or conform?","answer":"The dative.","explanation":"Datorită profesorului, conform legii. Any answer naming the dative counts; the form often looks like the genitive."} -->
 
 ## Genitive-Dative Forms to Recognize
 

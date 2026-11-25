@@ -1504,6 +1504,17 @@
           "explanation": "Copiii is masculine plural, so the direct clitic is îi."
         },
         {
+          "id": "rule-object-relative-pe-clitic",
+          "kind": "concept",
+          "priority": "essential",
+          "sourceSection": "Direct Objects: pe care + clitic",
+          "objective": "Recall that definite direct-object relatives add pe and a resuming clitic.",
+          "format": "qa",
+          "prompt": "A relative pronoun is the definite direct object of its clause. What two extra elements does standard Romanian use with it?",
+          "answer": "Pe before the pronoun, and a matching object clitic before the verb.",
+          "explanation": "Cartea pe care o citesc: pe marks the object and o resumes cartea. Any answer naming pe plus a resuming (doubling) object clitic counts."
+        },
+        {
           "id": "vocab-ce",
           "kind": "vocabulary",
           "priority": "optional",
@@ -1617,6 +1628,17 @@
           "prompt": "Studentul ___ i-am scris a răspuns.",
           "answer": "căruia",
           "explanation": "Căruia expresses to whom, with the resuming dative i-."
+        },
+        {
+          "id": "rule-dative-relative-clitic",
+          "kind": "concept",
+          "priority": "optional",
+          "sourceSection": "Dative and Genitive Relative Forms",
+          "objective": "Recall that a dative relative is resumed by a dative clitic before the verb.",
+          "format": "qa",
+          "prompt": "In a relative clause meaning to whom, what appears before the verb besides the dative relative pronoun?",
+          "answer": "A matching dative clitic, such as i- or le-.",
+          "explanation": "Studentul căruia i-am scris; oamenii cărora le-am mulțumit. Any answer naming a resuming dative clitic counts."
         }
       ],
       "exclusions": [
@@ -1689,7 +1711,7 @@
           "format": "cloze",
           "prompt": "Podul ___ construit. (The bridge will be built.)",
           "answer": "va fi",
-          "explanation": "Va fi is the future of a fi; construit remains masculine/neuter singular."
+          "explanation": "Va fi is the future of a fi; construit remains masculine/neuter singular. Colloquial o să fie construit is also correct."
         },
         {
           "id": "vocab-a-trimite",
@@ -1864,7 +1886,7 @@
         },
         {
           "id": "have-task-meaning",
-          "kind": "concept",
+          "kind": "rule",
           "priority": "optional",
           "sourceSection": "After a avea: Obligation or Task",
           "objective": "Distinguish a task to do from an action already completed.",
@@ -1872,6 +1894,17 @@
           "prompt": "What does Am de citit trei pagini say about the three pages?",
           "answer": "They are pages I have to read or have left to read.",
           "explanation": "They are pages I have to read or have left to read."
+        },
+        {
+          "id": "rule-avea-supine-task",
+          "kind": "concept",
+          "priority": "essential",
+          "sourceSection": "After a avea: Obligation or Task",
+          "objective": "Recall that a avea plus a supine expresses something still to be done.",
+          "format": "qa",
+          "prompt": "After a avea, what kind of meaning does a supine add?",
+          "answer": "Something still to be done: a task or an obligation.",
+          "explanation": "Am de citit trei pagini means I have three pages to read. Any answer meaning a task, an obligation, or something left to do counts."
         },
         {
           "id": "vocab-a-tine-minte",
@@ -1961,6 +1994,17 @@
           "prompt": "Vreau ___ citesc.",
           "answer": "să",
           "explanation": "Vreau să citesc contrasts with Am ceva de citit."
+        },
+        {
+          "id": "rule-want-subjunctive",
+          "kind": "concept",
+          "priority": "optional",
+          "sourceSection": "Supine vs. Infinitive and Subjunctive",
+          "objective": "Recall that a wanted action after vreau uses să plus a finite verb.",
+          "format": "qa",
+          "prompt": "After vreau (I want), which construction expresses the action you want to do, where English uses to plus a verb?",
+          "answer": "Să plus a finite verb (the subjunctive).",
+          "explanation": "Vreau să citesc, not a supine. The supine belongs to fixed patterns such as am de citit or greu de citit. Any answer naming să + verb or the subjunctive counts."
         }
       ],
       "exclusions": [
@@ -2079,7 +2123,7 @@
         },
         {
           "id": "gerund-subject",
-          "kind": "concept",
+          "kind": "rule",
           "priority": "essential",
           "sourceSection": "Meaning: While or By",
           "objective": "Recover the gerund's understood actor from the main clause.",
@@ -2090,7 +2134,7 @@
         },
         {
           "id": "gerund-register",
-          "kind": "concept",
+          "kind": "rule",
           "priority": "optional",
           "sourceSection": "Meaning: While or By",
           "objective": "Retain a natural full-clause alternative to a writing-friendly form.",
@@ -2098,6 +2142,28 @@
           "prompt": "What conversational alternative is given for Mergând spre casă, am întâlnit un prieten?",
           "answer": "Când mergeam spre casă, am întâlnit un prieten.",
           "explanation": "Când mergeam spre casă, am întâlnit un prieten."
+        },
+        {
+          "id": "rule-gerund-invariable",
+          "kind": "concept",
+          "priority": "essential",
+          "sourceSection": "Meaning: While or By",
+          "objective": "Recall that the gerund has no person or number endings.",
+          "format": "qa",
+          "prompt": "Does a Romanian gerund change its ending for person or number?",
+          "answer": "No. It stays the same; the subject is understood from the main clause.",
+          "explanation": "Lucrând împreună, terminăm mai repede: lucrând does not change, and terminăm shows the subject we. Any “no” saying the form is invariable counts."
+        },
+        {
+          "id": "rule-gerund-while-by",
+          "kind": "concept",
+          "priority": "optional",
+          "sourceSection": "Meaning: While or By",
+          "objective": "Recall the while-doing and by-doing meanings of gerund clauses.",
+          "format": "qa",
+          "prompt": "Besides plain -ing, which two English meanings does a Romanian gerund clause often carry?",
+          "answer": "While doing, and by doing.",
+          "explanation": "Ascultând muzică, a adormit (while listening); Lucrând împreună, terminăm mai repede (by working). Any answer giving both while and by counts."
         },
         {
           "id": "gerund-sta",
@@ -2177,6 +2243,17 @@
           "explanation": "Say auzind-o, contrasting with văzându-l."
         },
         {
+          "id": "rule-gerund-clitic-position",
+          "kind": "concept",
+          "priority": "optional",
+          "sourceSection": "Gerund with Pronouns",
+          "objective": "Recall that object pronouns follow the gerund and are hyphenated.",
+          "format": "qa",
+          "prompt": "Where does an object pronoun go relative to a gerund, and how is it written?",
+          "answer": "After the gerund, joined to it with a hyphen.",
+          "explanation": "Văzându-l pe Mihai; auzind-o pe Maria. A linking -u- often appears before the pronoun. Any answer saying after the gerund and hyphenated counts."
+        },
+        {
           "id": "gerund-supine-contrast",
           "kind": "concept",
           "priority": "essential",
@@ -2218,7 +2295,7 @@
         },
         {
           "id": "past-perfect-sequence",
-          "kind": "concept",
+          "kind": "rule",
           "priority": "essential",
           "sourceSection": "Core Meaning",
           "objective": "Recover the earlier event rather than treating both tenses as simple past.",
@@ -2237,6 +2314,17 @@
           "prompt": "Când am ajuns, lecția ___. (had started)",
           "answer": "începuse",
           "explanation": "The lesson had already started before the speaker arrived."
+        },
+        {
+          "id": "rule-past-perfect-earlier",
+          "kind": "concept",
+          "priority": "essential",
+          "sourceSection": "Core Meaning",
+          "objective": "Recall that the past perfect places an action before another past action.",
+          "format": "qa",
+          "prompt": "What time relation does the mai-mult-ca-perfect express?",
+          "answer": "An action that happened before another past action.",
+          "explanation": "Când am ajuns, filmul începuse: the film started before the arrival. Any answer saying earlier than another past event or moment counts."
         },
         {
           "id": "past-perfect-first-singular",
@@ -2303,6 +2391,17 @@
           "prompt": "Ei ___ deja. (a lucra; had worked)",
           "answer": "lucraseră",
           "explanation": "The required form of a lucra is lucraseră."
+        },
+        {
+          "id": "rule-past-perfect-eu-ending",
+          "kind": "concept",
+          "priority": "optional",
+          "sourceSection": "Common Endings",
+          "objective": "Recall the first-person singular past-perfect ending.",
+          "format": "qa",
+          "prompt": "Which ending does the eu (I) form of the mai-mult-ca-perfect have?",
+          "answer": "-sem",
+          "explanation": "Lucrasem, mâncasem, făcusem: I had worked, eaten, done. Any answer giving -sem, or a correct eu form ending in -sem, counts."
         },
         {
           "id": "past-perfect-face",
@@ -2469,6 +2568,17 @@
           "explanation": "Școala takes the genitive-dative form școlii after în fața."
         },
         {
+          "id": "rule-genitive-prepositional-phrases",
+          "kind": "concept",
+          "priority": "essential",
+          "sourceSection": "Genitive Prepositional Phrases",
+          "objective": "Recall the case required after phrases like în fața and în spatele.",
+          "format": "qa",
+          "prompt": "Which case does a noun take after în fața, în spatele or în jurul?",
+          "answer": "The genitive.",
+          "explanation": "Stau în fața școlii: școala → școlii. Any answer naming the genitive counts."
+        },
+        {
           "id": "vocab-impotriva",
           "kind": "vocabulary",
           "priority": "optional",
@@ -2579,6 +2689,17 @@
           "prompt": "Conform ___, este permis. (legea)",
           "answer": "legii",
           "explanation": "Conform takes the dative; legii is the dative/genitive form of legea."
+        },
+        {
+          "id": "rule-dative-prepositions",
+          "kind": "concept",
+          "priority": "essential",
+          "sourceSection": "Dative Prepositions",
+          "objective": "Recall the case required after datorită, mulțumită and conform.",
+          "format": "qa",
+          "prompt": "Which case does a noun take after datorită, mulțumită or conform?",
+          "answer": "The dative.",
+          "explanation": "Datorită profesorului, conform legii. Any answer naming the dative counts; the form often looks like the genitive."
         },
         {
           "id": "case-shared-forms",
@@ -2767,6 +2888,28 @@
           "prompt": "Aceasta este a ___ întrebare. (the tenth question)",
           "answer": "zecea",
           "explanation": "Întrebare is feminine; a zecea contrasts with masculine al zecelea."
+        },
+        {
+          "id": "rule-ordinal-particles",
+          "kind": "concept",
+          "priority": "essential",
+          "sourceSection": "al treilea, a treia and Beyond",
+          "objective": "Recall which ordinal particle goes with each gender from third onward.",
+          "format": "qa",
+          "prompt": "From the third onward, which particle comes before masculine and neuter ordinals, and which comes before feminine ordinals?",
+          "answer": "Al for masculine and neuter; a for feminine.",
+          "explanation": "Capitolul al treilea, pagina a treia. Any answer pairing al with masculine/neuter and a with feminine counts."
+        },
+        {
+          "id": "rule-ordinal-gender-agreement",
+          "kind": "concept",
+          "priority": "optional",
+          "sourceSection": "al treilea, a treia and Beyond",
+          "objective": "Recall that the noun's gender selects the ordinal form.",
+          "format": "qa",
+          "prompt": "What decides whether an ordinal takes its masculine/neuter or its feminine form?",
+          "answer": "The gender of the noun it goes with.",
+          "explanation": "Întrebare is feminine, so a cincea întrebare; capitol is neuter, so al patrulea capitol. Any answer naming the noun's gender counts."
         },
         {
           "id": "ordinal-position",
@@ -3070,6 +3213,28 @@
           "explanation": "Scăunel is neuter: un scăunel, două scăunele."
         },
         {
+          "id": "rule-diminutive-agreement",
+          "kind": "concept",
+          "priority": "essential",
+          "sourceSection": "Gender and Agreement",
+          "objective": "Recall that adjectives agree with the diminutive's own gender.",
+          "format": "qa",
+          "prompt": "An adjective describes a diminutive noun. What determines the adjective's gender and ending?",
+          "answer": "The diminutive's own gender and number.",
+          "explanation": "Băiețel is masculine: băiețel curios; măsuță is feminine: măsuță rotundă. Any answer saying the adjective agrees with the diminutive form itself counts."
+        },
+        {
+          "id": "rule-neuter-diminutive-agreement",
+          "kind": "concept",
+          "priority": "optional",
+          "sourceSection": "Gender and Agreement",
+          "objective": "Recall the singular and plural agreement pattern of neuter diminutives.",
+          "format": "qa",
+          "prompt": "How does a neuter diminutive such as scăunel agree in the singular and in the plural?",
+          "answer": "Like a masculine noun in the singular; like a feminine noun in the plural.",
+          "explanation": "Un scăunel mic, două scăunele mici. Any answer giving masculine-pattern singular and feminine-pattern plural counts."
+        },
+        {
           "id": "vocab-cafeluta",
           "kind": "vocabulary",
           "priority": "optional",
@@ -3307,6 +3472,17 @@
           "meaning": "The wind is blowing."
         },
         {
+          "id": "rule-weather-e-este",
+          "kind": "concept",
+          "priority": "optional",
+          "sourceSection": "Weather with e / este",
+          "objective": "Recall that weather nouns and adjectives combine with e or este.",
+          "format": "qa",
+          "prompt": "To say it is cold, sunny, or foggy, which verb does Romanian use with the weather noun or adjective?",
+          "answer": "A fi: e or este.",
+          "explanation": "E frig, E soare, E ceață. Both e (everyday) and este (fuller form) are correct; naming a fi counts too."
+        },
+        {
           "id": "vocab-trebuie",
           "kind": "vocabulary",
           "priority": "optional",
@@ -3414,6 +3590,17 @@
           "explanation": "No. A plăcea agrees as place/plac, but present trebuie usually remains unchanged in the everyday need construction."
         },
         {
+          "id": "rule-dative-experiencer",
+          "kind": "concept",
+          "priority": "essential",
+          "sourceSection": "Dative Experiencers",
+          "objective": "Recall that experiencers of liking, needing and sensations take the dative.",
+          "format": "qa",
+          "prompt": "In expressions for liking, needing, or feeling hungry or cold, which case marks the person who has the experience?",
+          "answer": "The dative.",
+          "explanation": "Îmi place cafeaua; Mi-e foame: îmi and mi- are dative, where English makes that person the subject. Any answer naming the dative counts."
+        },
+        {
           "id": "vocab-a-durea",
           "kind": "vocabulary",
           "priority": "optional",
@@ -3432,6 +3619,17 @@
           "prompt": "Îl ___ ochii. (His eyes hurt.)",
           "answer": "dor",
           "explanation": "Ochii is plural, so use dor; the experiencer is îl, not dative îi."
+        },
+        {
+          "id": "rule-durea-agreement",
+          "kind": "concept",
+          "priority": "optional",
+          "sourceSection": "Body and Feeling Expressions",
+          "objective": "Recall that a durea agrees with the aching body part.",
+          "format": "qa",
+          "prompt": "With a durea (to hurt), what does the verb agree with?",
+          "answer": "The body part that hurts.",
+          "explanation": "Mă doare capul (singular capul); Îl dor ochii (plural ochii). Any answer naming the body part or the thing that hurts counts."
         }
       ],
       "exclusions": [
@@ -3498,6 +3696,17 @@
           "explanation": "Dacă va ninge is a standard future condition, not dacă să plouă."
         },
         {
+          "id": "rule-no-subjunctive-in-real-if",
+          "kind": "concept",
+          "priority": "optional",
+          "sourceSection": "Future Real Conditions",
+          "objective": "Recall that real if-clauses need no subjunctive marker.",
+          "format": "qa",
+          "prompt": "Does an ordinary if-clause about a real future event need a subjunctive marker before its verb?",
+          "answer": "No. Use the present or a future form directly.",
+          "explanation": "Dacă plouă, stăm acasă; Dacă va ninge mâine, vom pleca mai târziu. Never dacă să plouă. Any “no” counts."
+        },
+        {
           "id": "unreal-present-both",
           "kind": "rule",
           "priority": "essential",
@@ -3510,7 +3719,7 @@
         },
         {
           "id": "unreal-imperfect-register",
-          "kind": "concept",
+          "kind": "rule",
           "priority": "optional",
           "sourceSection": "Unreal Present or Future Conditions",
           "objective": "Recognize the spoken alternative without presenting it as the only or preferred formal pattern.",
@@ -3518,6 +3727,17 @@
           "prompt": "How should a learner interpret Dacă aveam bani, cumpăram o casă in the context of an imagined situation?",
           "answer": "As a colloquial imperfect-based unreal condition; the explicit conditional pattern is the clearer standard model to learn first.",
           "explanation": "As a colloquial imperfect-based unreal condition; the explicit conditional pattern is the clearer standard model to learn first."
+        },
+        {
+          "id": "rule-unreal-present-conditional",
+          "kind": "concept",
+          "priority": "essential",
+          "sourceSection": "Unreal Present or Future Conditions",
+          "objective": "Recall the mood used in both clauses of imagined present conditions.",
+          "format": "qa",
+          "prompt": "For an imagined or unlikely present situation, which mood does standard Romanian use in both the if-clause and the result clause?",
+          "answer": "The conditional.",
+          "explanation": "Dacă aș avea bani, aș cumpăra o casă. Any answer naming the (present) conditional counts."
         },
         {
           "id": "unreal-past-auxiliary",
@@ -3553,8 +3773,19 @@
           "explanation": "The first imagines knowing now; the second imagines having known in the past."
         },
         {
-          "id": "conditional-punctuation",
+          "id": "rule-unreal-past-conditional-perfect",
           "kind": "concept",
+          "priority": "essential",
+          "sourceSection": "Unreal Past Conditions",
+          "objective": "Recall the verb form used in both clauses of unreal past conditions.",
+          "format": "qa",
+          "prompt": "For an if-clause about something that did not happen in the past, which verb form appears in both clauses?",
+          "answer": "The conditional perfect.",
+          "explanation": "Dacă aș fi știut, ți-aș fi spus: conditional auxiliary + fi + participle. Any answer naming the conditional perfect, or describing that pattern, counts."
+        },
+        {
+          "id": "conditional-punctuation",
+          "kind": "rule",
           "priority": "optional",
           "sourceSection": "Punctuation and Word Order",
           "objective": "Retain the common punctuation pattern without mandating a comma before every dacă.",

@@ -46,7 +46,8 @@ A very common pattern is **a avea + de + supine**, meaning **to have to do somet
 - **Copiii nu au nimic de făcut.** — The children have nothing to do.
 
 <!-- grammar-card: {"id":"have-task-de","priority":"essential","sourceSection":"After a avea: Obligation or Task","kind":"rule","format":"cloze","rule":"a avea + de + supine expresses a task or obligation","example":"Eu am multe ___ făcut.","answer":"de","explanation":"Am multe de făcut means I have many things to do."} -->
-<!-- grammar-card: {"id":"have-task-meaning","priority":"optional","sourceSection":"After a avea: Obligation or Task","kind":"concept","format":"qa","rule":"A avea with de plus supine expresses an outstanding task","example":"What does Am de citit trei pagini say about the three pages?","answer":"They are pages I have to read or have left to read.","explanation":"They are pages I have to read or have left to read."} -->
+<!-- grammar-card: {"id":"have-task-meaning","priority":"optional","sourceSection":"After a avea: Obligation or Task","kind":"rule","format":"qa","rule":"A avea with de plus supine expresses an outstanding task","example":"What does Am de citit trei pagini say about the three pages?","answer":"They are pages I have to read or have left to read.","explanation":"They are pages I have to read or have left to read."} -->
+<!-- grammar-card: {"id":"rule-avea-supine-task","priority":"essential","sourceSection":"After a avea: Obligation or Task","kind":"concept","format":"qa","rule":"A avea plus a supine expresses a task or obligation","example":"After a avea, what kind of meaning does a supine add?","answer":"Something still to be done: a task or an obligation.","explanation":"Am de citit trei pagini means I have three pages to read. Any answer meaning a task, an obligation, or something left to do counts."} -->
 
 ## After Adjectives: Easy, Hard, Good
 
@@ -101,6 +102,7 @@ Do not replace every English **to** with the supine. Learn the fixed patterns: *
 <!-- quiz: {"type":"multiple-choice","question":"Which phrase naturally means drinking water?","options":["apă de băut","apă să beau","apă bând","apă de beau"],"answer":0} -->
 
 <!-- grammar-card: {"id":"want-reading-subjunctive","priority":"essential","sourceSection":"Supine vs. Infinitive and Subjunctive","kind":"rule","format":"cloze","rule":"A desire after vreau normally uses să plus a finite verb","example":"Vreau ___ citesc.","answer":"să","explanation":"Vreau să citesc contrasts with Am ceva de citit."} -->
+<!-- grammar-card: {"id":"rule-want-subjunctive","priority":"optional","sourceSection":"Supine vs. Infinitive and Subjunctive","kind":"concept","format":"qa","rule":"After vreau, the wanted action uses the subjunctive, not the supine","example":"After vreau (I want), which construction expresses the action you want to do, where English uses to plus a verb?","answer":"Să plus a finite verb (the subjunctive).","explanation":"Vreau să citesc, not a supine. The supine belongs to fixed patterns such as am de citit or greu de citit. Any answer naming să + verb or the subjunctive counts."} -->
 
 ## Sources
 
