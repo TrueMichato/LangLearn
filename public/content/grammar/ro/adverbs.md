@@ -49,7 +49,8 @@ The adverb does **not** agree with the subject.
 Do not change **frumos** to **frumoasă** when it describes the verb.
 
 <!-- grammar-card: {"id":"invariable-manner","priority":"essential","sourceSection":"Adjectives Used as Adverbs","kind":"rule","format":"cloze","rule":"Adverbs do not agree with gender or number","example":"Ea scrie ___. (She writes beautifully/neatly.)","answer":"frumos","explanation":"Frumos describes scrie, not the gender of ea."} -->
-<!-- grammar-card: {"id":"adverb-adjective-contrast","priority":"essential","sourceSection":"Adjectives Used as Adverbs","kind":"concept","format":"qa","rule":"An adverb modifies an action rather than agreeing with its subject","example":"Why does frumos stay unchanged in both El cântă frumos and Ele cântă frumos?","answer":"It describes how they sing, not the people singing.","explanation":"It describes how they sing, not the people singing."} -->
+<!-- grammar-card: {"id":"adverb-adjective-contrast","priority":"essential","sourceSection":"Adjectives Used as Adverbs","kind":"concept","format":"qa","rule":"An adverb modifies an action rather than agreeing with its subject","example":"Why does frumos stay unchanged in both El cântă frumos and Ele cântă frumos?","answer":"It describes how they sing, not the people singing.","explanation":"Frumos modifies cântă, so it keeps the same form for every subject; frumoasă or frumoase would describe a noun, not the action. Any answer saying it describes the verb (how) counts."} -->
+<!-- grammar-card: {"id":"rule-adverb-masculine-form","priority":"essential","sourceSection":"Adjectives Used as Adverbs","kind":"concept","format":"qa","rule":"Many manner adverbs look like the masculine singular adjective","example":"Many manner adverbs look identical to an adjective. Which gender and number of the adjective do they match?","answer":"Masculine singular (clar, corect, rapid).","explanation":"Vorbește clar and răspunde corect use the masculine singular shape whatever the subject, never clară or corectă. Answering masculine singular counts."} -->
 <!-- vocab-card: {"id":"vocab-corect","priority":"optional","sourceSection":"Adjectives Used as Adverbs","word":"corect","meaning":"correctly (adverb)"} -->
 <!-- vocab-card: {"id":"vocab-rapid","priority":"optional","sourceSection":"Adjectives Used as Adverbs","word":"rapid","meaning":"quickly (adverb)"} -->
 
@@ -84,6 +85,7 @@ Do not change **frumos** to **frumoasă** when it describes the verb.
 <!-- vocab-card: {"id":"vocab-deja","priority":"optional","sourceSection":"Time and Frequency Adverbs","word":"deja","meaning":"already"} -->
 <!-- vocab-card: {"id":"vocab-inca","priority":"optional","sourceSection":"Time and Frequency Adverbs","word":"încă","meaning":"still; yet"} -->
 <!-- grammar-card: {"id":"never-concord","priority":"optional","sourceSection":"Time and Frequency Adverbs","kind":"rule","format":"cloze","rule":"Niciodată normally accompanies nu in a finite negative clause","example":"___ beau cafea niciodată.","answer":"Nu","explanation":"Nu beau cafea niciodată means I never drink coffee."} -->
+<!-- grammar-card: {"id":"rule-never-needs-negation","priority":"optional","sourceSection":"Time and Frequency Adverbs","kind":"concept","format":"qa","rule":"Niciodată normally accompanies nu in a finite negative clause","example":"In a clause with a conjugated verb, what must accompany niciodată (never)?","answer":"Nu before the verb.","explanation":"Nu beau cafea niciodată = I never drink coffee; Beau cafea niciodată is wrong. Niciodată can stand alone only as a one-word reply. Any answer naming nu counts."} -->
 
 ## Place Adverbs
 
@@ -121,7 +123,7 @@ Romanian often uses **-ește** adverbs to mean **in a language** or **in a certa
 <!-- vocab-card: {"id":"vocab-englezeste","priority":"optional","sourceSection":"Language Adverbs in -ește","word":"englezește","meaning":"in English"} -->
 <!-- vocab-card: {"id":"vocab-frantuzeste","priority":"optional","sourceSection":"Language Adverbs in -ește","word":"franțuzește","meaning":"in French"} -->
 <!-- vocab-card: {"id":"vocab-prieteneste","priority":"optional","sourceSection":"Language Adverbs in -ește","word":"prietenește","meaning":"in a friendly way"} -->
-<!-- grammar-card: {"id":"este-suffix-scope","priority":"optional","sourceSection":"Language Adverbs in -ește","kind":"concept","format":"qa","rule":"Adverbs in -ește can express a language or another manner","example":"Do all adverbs ending in -ește name languages?","answer":"No. Românește means in Romanian, but prietenește means in a friendly way.","explanation":"No. Românește means in Romanian, but prietenește means in a friendly way."} -->
+<!-- grammar-card: {"id":"este-suffix-scope","priority":"optional","sourceSection":"Language Adverbs in -ește","kind":"concept","format":"qa","rule":"Adverbs in -ește can express a language or another manner","example":"Do all adverbs ending in -ește name languages?","answer":"No. Românește means in Romanian, but prietenește means in a friendly way.","explanation":"Românește and englezește name languages, while prietenește describes a manner (in a friendly way). Any answer saying no, some express a manner, counts."} -->
 
 ## Comparative Adverbs
 
@@ -139,6 +141,7 @@ Use **mai** with adverbs just as with adjectives. The adverbial superlative uses
 
 <!-- grammar-card: {"id":"comparative-slower","priority":"essential","sourceSection":"Comparative Adverbs","kind":"rule","format":"cloze","rule":"Mai forms comparative adverbs too","example":"Vorbește ___ încet, te rog. (more slowly)","answer":"mai","explanation":"Mai încet means more slowly or more quietly.","legacyAliases":[{"rule":"Mai forms comparative adverbs too","example":"Vorbește ___ încet, te rog."}]} -->
 <!-- grammar-card: {"id":"adverb-superlative","priority":"optional","sourceSection":"Comparative Adverbs","kind":"rule","format":"cloze","rule":"Adverbial superlatives use fixed cel mai","example":"Ea aleargă ___ mai repede. (She runs the fastest.)","answer":"cel","explanation":"Here cel mai modifies repede, not the feminine subject ea."} -->
+<!-- grammar-card: {"id":"rule-adverb-superlative-fixed","priority":"optional","sourceSection":"Comparative Adverbs","kind":"concept","format":"qa","rule":"Adverbial superlatives use fixed cel mai","example":"Does the superlative marker of an adverb change for a feminine or plural subject?","answer":"No. It stays cel mai for every subject.","explanation":"Ea aleargă cel mai repede keeps cel mai because it modifies repede, not ea; cea mai is for a feminine noun or adjective. Any answer saying it stays unchanged counts."} -->
 
 ## Sources
 

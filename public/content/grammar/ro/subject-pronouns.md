@@ -17,7 +17,7 @@ Subject pronouns tell us who does the action: **I**, **you**, **he**, **she**, *
 | **ei** | they | masculine or mixed group |
 | **ele** | they | feminine-only group |
 
-- **Eu sunt aici.** (yew soont ah-CH) — I am here.
+- **Eu sunt aici.** (yew soont ah-EECH) — I am here.
 - **Tu vorbești românește.** (too vor-BESH-tʲ roh-muh-NESH-teh) — You speak Romanian.
 - **Ele citesc.** (EH-leh chee-TESK) — They are reading. (all female)
 
@@ -49,6 +49,7 @@ Use the pronoun when you want clarity, contrast, or emphasis:
 
 <!-- grammar-card: {"id":"pro-drop-application","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Romanian Is a Pro-Drop Language","rule":"Romanian often drops subject pronouns because verb endings show the subject","example":"___ românește. (I speak Romanian; no pronoun needed)","answer":"Vorbesc","explanation":"Vorbesc can mean I speak in the supplied context, so eu can be omitted. The same form can also mean they speak; context is still needed."} -->
 <!-- grammar-card: {"id":"pronoun-emphasis-use","kind":"concept","format":"qa","priority":"essential","sourceSection":"Romanian Is a Pro-Drop Language","rule":"Overt subject pronouns can signal clarity, contrast, or emphasis","example":"Why retain Eu and el in Eu sunt profesor, dar el este medic?","answer":"To contrast the two subjects clearly.","explanation":"Pro-drop permits omission; it does not forbid pronouns or guarantee that every verb ending uniquely identifies a subject."} -->
+<!-- grammar-card: {"id":"rule-pro-drop-reason","kind":"concept","format":"qa","priority":"essential","sourceSection":"Romanian Is a Pro-Drop Language","rule":"Romanian often omits subject pronouns because verb endings show the subject","example":"Why can Romanian often leave out the subject pronoun?","answer":"The verb ending already shows the subject.","explanation":"Citești can only be tu, and mergem can only be noi. When a form is shared, as with sunt for eu and ei, context or an overt pronoun clarifies."} -->
 
 ## Formal You: dumneavoastră
 
@@ -61,7 +62,8 @@ In service situations, with strangers, older people, or professional settings, *
 
 <!-- vocab-card: {"id":"vocab-dumneavoastra","word":"dumneavoastră","meaning":"you (polite singular or plural subject)","priority":"essential","sourceSection":"Formal You: dumneavoastră"} -->
 <!-- grammar-card: {"id":"formal-you-scope","kind":"concept","format":"qa","priority":"essential","sourceSection":"Formal You: dumneavoastră","rule":"Dumneavoastră politely addresses either one person or several","example":"Does dumneavoastră require several people to be present?","answer":"No. It can address one person formally or several people politely.","explanation":"With strangers or in professional settings it is generally safer than informal tu."} -->
-<!-- grammar-card: {"id":"formal-you-agreement","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Formal You: dumneavoastră","rule":"Dumneavoastră uses the voi verb form","example":"Dumneavoastră ___ timp?","answer":"aveți","explanation":"Use the second-person plural verb form even when politely addressing one person."} -->
+<!-- grammar-card: {"id":"formal-you-agreement","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Formal You: dumneavoastră","rule":"Dumneavoastră uses the voi verb form","example":"Dumneavoastră ___ timp? (a avea)","answer":"aveți","explanation":"Use the second-person plural verb form even when politely addressing one person.","legacyAliases":[{"rule":"Dumneavoastră uses the voi verb form","example":"Dumneavoastră ___ timp?"}]} -->
+<!-- grammar-card: {"id":"rule-formal-you-verb","kind":"concept","format":"qa","priority":"essential","sourceSection":"Formal You: dumneavoastră","rule":"Dumneavoastră takes the voi verb form","example":"Dumneavoastră takes the same verb form as which informal pronoun?","answer":"Voi.","explanation":"Dumneavoastră aveți matches voi aveți, even when politely addressing one person. Saying the second-person plural counts."} -->
 
 ## Gender in the Third Person
 
@@ -78,6 +80,7 @@ Romanian distinguishes masculine and feminine third-person pronouns.
 
 <!-- grammar-card: {"id":"mixed-group-pronoun","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Gender in the Third Person","rule":"A mixed group takes ei rather than ele","example":"Maria și Andrei sunt aici. ___ așteaptă.","answer":"Ei","explanation":"Ele is for an all-feminine group; ei covers masculine and mixed groups."} -->
 <!-- grammar-card: {"id":"feminine-group-pronoun","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Gender in the Third Person","rule":"A feminine-only group takes ele","example":"Fetele sunt aici. ___ așteaptă.","answer":"Ele","explanation":"Fetele is feminine plural, so use ele."} -->
+<!-- grammar-card: {"id":"rule-mixed-group-pronoun","kind":"concept","format":"qa","priority":"optional","sourceSection":"Gender in the Third Person","rule":"Ei refers to masculine and mixed groups; ele only to all-feminine groups","example":"Which third-person plural pronoun refers to a mixed group of men and women?","answer":"Ei.","explanation":"Maria și Andrei → ei. Ele is only for an all-feminine group."} -->
 <!-- quiz: {"type":"multiple-choice","question":"Which pronoun is used for a feminine-only group?","options":["el","ea","ei","ele"],"answer":3} -->
 
 ## Pronouns and Verb Agreement

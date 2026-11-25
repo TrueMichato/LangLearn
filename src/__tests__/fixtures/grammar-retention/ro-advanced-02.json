@@ -83,9 +83,9 @@
           "sourceSection": "Direct Object Pronouns",
           "objective": "Separate the two clitic paradigms by grammatical role.",
           "format": "qa",
-          "prompt": "How do you distinguish a direct object from an indirect recipient here?",
-          "answer": "A direct object answers whom or what; an indirect recipient answers to whom or for whom.",
-          "explanation": "A direct object answers whom or what; an indirect recipient answers to whom or for whom."
+          "prompt": "What question does a direct object answer, and what question does an indirect object (recipient) answer?",
+          "answer": "Direct: whom? or what? Indirect: to whom? or for whom?",
+          "explanation": "Îl văd answers whom? (him), so îl is a direct object; Îi dau o carte answers to whom? (to him/her), so îi is indirect. Any wording that pairs whom/what with direct and to/for whom with indirect counts."
         },
         {
           "id": "human-object-maria",
@@ -107,7 +107,7 @@
           "format": "qa",
           "prompt": "Does an ordinary object such as cartea take pe in Citesc cartea?",
           "answer": "No. Say Citesc cartea or replace cartea with O citesc.",
-          "explanation": "No. Say Citesc cartea or replace cartea with O citesc."
+          "explanation": "Pe marks specific people, as in O cunosc pe profesoară; a thing such as cartea takes no pe, so Citesc pe cartea is wrong."
         },
         {
           "id": "vocab-imi",
@@ -199,6 +199,39 @@
           "prompt": "Ajută-___! (Help me!)",
           "answer": "mă",
           "explanation": "The affirmative command is Ajută-mă, with a hyphen."
+        },
+        {
+          "id": "rule-human-object-doubling",
+          "kind": "concept",
+          "priority": "essential",
+          "sourceSection": "Pe with Human Direct Objects",
+          "objective": "Recall clitic doubling plus pe for specific human direct objects.",
+          "format": "qa",
+          "prompt": "When the direct object is a specific person, what two elements does Romanian often use to mark it?",
+          "answer": "A matching object clitic plus pe before the person.",
+          "explanation": "Îl cunosc pe profesor and O cunosc pe profesoară pair the clitic with pe + the person; an ordinary thing such as cartea takes no pe (Citesc cartea). Any answer naming both the clitic and pe counts."
+        },
+        {
+          "id": "rule-clitic-negation-order",
+          "kind": "concept",
+          "priority": "essential",
+          "sourceSection": "Placement Before the Verb",
+          "objective": "Recall the nu + clitic + verb order.",
+          "format": "qa",
+          "prompt": "In a negative present-tense sentence, in what order do the negation word, an object clitic, and the verb come?",
+          "answer": "Negation, clitic, verb: Nu îl văd.",
+          "explanation": "Nu îți scriu azi follows the same order; the clitic never moves in front of nu. Any answer giving nu + clitic + verb counts."
+        },
+        {
+          "id": "rule-clitic-vowel-auxiliary",
+          "kind": "concept",
+          "priority": "optional",
+          "sourceSection": "Clitics with Past and Commands",
+          "objective": "Recall that clitics shorten and hyphenate before a vowel-initial auxiliary.",
+          "format": "qa",
+          "prompt": "What often happens to an object clitic right before a compound-past auxiliary that begins with a vowel?",
+          "answer": "It shortens and attaches with a hyphen (îmi + a → mi-a).",
+          "explanation": "Mi-a spus adevărul and L-am văzut pe Andrei show the shortened clitic joined to the auxiliary; feminine o instead follows the participle (Am văzut-o). Any answer saying it shortens and hyphenates counts."
         }
       ],
       "exclusions": [
@@ -294,7 +327,7 @@
           "format": "qa",
           "prompt": "Which marker should a learner prefer after mai in a standard comparison, even if ca is heard in speech?",
           "answer": "Prefer decât; ca is also heard in everyday speech.",
-          "explanation": "Prefer decât; ca is also heard in everyday speech."
+          "explanation": "Maria este mai înaltă decât Ana is the standard model; mai înaltă ca Ana is colloquial. Answering decât counts."
         },
         {
           "id": "vocab-mai-putin",
@@ -325,7 +358,7 @@
           "format": "cloze",
           "prompt": "El este ___ înalt ca fratele lui. (He is as tall as his brother.)",
           "answer": "la fel de",
-          "explanation": "La fel de introduces the adjective; ca introduces the comparison standard."
+          "explanation": "La fel de introduces the adjective; ca introduces the comparison standard. Tot atât de înalt ca, a less common equivalent, also counts."
         },
         {
           "id": "superlative-coffee",
@@ -348,17 +381,6 @@
           "prompt": "Acestea sunt ___ mai importante lucruri.",
           "answer": "cele",
           "explanation": "Lucruri is neuter plural and takes the feminine-plural agreement form."
-        },
-        {
-          "id": "superlative-agreement",
-          "kind": "concept",
-          "priority": "essential",
-          "sourceSection": "Superlative: cel mai, cea mai, cei mai, cele mai",
-          "objective": "Recall the agreement set while retaining neuter plural as feminine-pattern agreement.",
-          "format": "qa",
-          "prompt": "Which superlative article accompanies masculine singular, feminine singular, masculine plural, and feminine/neuter plural nouns?",
-          "answer": "Cel, cea, cei, and cele respectively.",
-          "explanation": "Cel, cea, cei, and cele respectively."
         },
         {
           "id": "vocab-foarte",
@@ -396,7 +418,40 @@
           "format": "qa",
           "prompt": "Does foarte bun identify the best member of a group?",
           "answer": "No. It means very good; cel mai bun makes a relative comparison.",
-          "explanation": "No. It means very good; cel mai bun makes a relative comparison."
+          "explanation": "Foarte, extrem de, and deosebit de only intensify (foarte bun = very good); ranking within a group needs cel mai (cel mai bun = the best)."
+        },
+        {
+          "id": "rule-comparative-formation",
+          "kind": "concept",
+          "priority": "essential",
+          "sourceSection": "Comparative: mai + adjective/adverb",
+          "objective": "Recall that mai before an adjective or adverb forms the comparative.",
+          "format": "qa",
+          "prompt": "How does Romanian form the comparative (more / -er) of an adjective or adverb?",
+          "answer": "Put mai before it: mai mare (bigger).",
+          "explanation": "Mai repede = faster and mai înaltă = taller; the adjective still agrees with its noun, and decât introduces what is compared. Any answer placing mai before the adjective or adverb counts."
+        },
+        {
+          "id": "rule-equality-pattern",
+          "kind": "concept",
+          "priority": "optional",
+          "sourceSection": "Equality: la fel de ... ca",
+          "objective": "Recall the la fel de + adjective + ca equality frame.",
+          "format": "qa",
+          "prompt": "What pattern expresses equality (as … as) with an adjective?",
+          "answer": "la fel de + adjective + ca",
+          "explanation": "El este la fel de înalt ca fratele lui = He is as tall as his brother; the adjective agrees with the subject (la fel de interesantă). Tot atât de … ca, a less common equivalent, also counts."
+        },
+        {
+          "id": "rule-superlative-pattern",
+          "kind": "concept",
+          "priority": "essential",
+          "sourceSection": "Superlative: cel mai, cea mai, cei mai, cele mai",
+          "objective": "Recall that an agreeing article before mai + adjective forms the superlative.",
+          "format": "qa",
+          "prompt": "How does Romanian form the superlative (the biggest, the best) of an adjective?",
+          "answer": "Put an article that agrees with the noun before mai + adjective: cel mai mare oraș (the biggest city).",
+          "explanation": "The article follows the noun's gender and number (cel, cea, cei, cele), as in cea mai bună cafea and cele mai importante lucruri. Any paraphrase naming an agreeing article + mai + adjective counts."
         }
       ],
       "exclusions": [
@@ -483,7 +538,7 @@
           "format": "qa",
           "prompt": "Why does frumos stay unchanged in both El cântă frumos and Ele cântă frumos?",
           "answer": "It describes how they sing, not the people singing.",
-          "explanation": "It describes how they sing, not the people singing."
+          "explanation": "Frumos modifies cântă, so it keeps the same form for every subject; frumoasă or frumoase would describe a noun, not the action. Any answer saying it describes the verb (how) counts."
         },
         {
           "id": "vocab-corect",
@@ -712,7 +767,7 @@
           "format": "qa",
           "prompt": "Do all adverbs ending in -ește name languages?",
           "answer": "No. Românește means in Romanian, but prietenește means in a friendly way.",
-          "explanation": "No. Românește means in Romanian, but prietenește means in a friendly way."
+          "explanation": "Românește and englezește name languages, while prietenește describes a manner (in a friendly way). Any answer saying no, some express a manner, counts."
         },
         {
           "id": "comparative-slower",
@@ -735,6 +790,39 @@
           "prompt": "Ea aleargă ___ mai repede. (She runs the fastest.)",
           "answer": "cel",
           "explanation": "Here cel mai modifies repede, not the feminine subject ea."
+        },
+        {
+          "id": "rule-adverb-masculine-form",
+          "kind": "concept",
+          "priority": "essential",
+          "sourceSection": "Adjectives Used as Adverbs",
+          "objective": "Recall that manner adverbs share the masculine singular adjective shape.",
+          "format": "qa",
+          "prompt": "Many manner adverbs look identical to an adjective. Which gender and number of the adjective do they match?",
+          "answer": "Masculine singular (clar, corect, rapid).",
+          "explanation": "Vorbește clar and răspunde corect use the masculine singular shape whatever the subject, never clară or corectă. Answering masculine singular counts."
+        },
+        {
+          "id": "rule-never-needs-negation",
+          "kind": "concept",
+          "priority": "optional",
+          "sourceSection": "Time and Frequency Adverbs",
+          "objective": "Recall that niciodată needs nu with a finite verb.",
+          "format": "qa",
+          "prompt": "In a clause with a conjugated verb, what must accompany niciodată (never)?",
+          "answer": "Nu before the verb.",
+          "explanation": "Nu beau cafea niciodată = I never drink coffee; Beau cafea niciodată is wrong. Niciodată can stand alone only as a one-word reply. Any answer naming nu counts."
+        },
+        {
+          "id": "rule-adverb-superlative-fixed",
+          "kind": "concept",
+          "priority": "optional",
+          "sourceSection": "Comparative Adverbs",
+          "objective": "Recall that the adverbial superlative cel mai never agrees.",
+          "format": "qa",
+          "prompt": "Does the superlative marker of an adverb change for a feminine or plural subject?",
+          "answer": "No. It stays cel mai for every subject.",
+          "explanation": "Ea aleargă cel mai repede keeps cel mai because it modifies repede, not ea; cea mai is for a feminine noun or adjective. Any answer saying it stays unchanged counts."
         }
       ],
       "exclusions": [
@@ -848,7 +936,7 @@
           "format": "qa",
           "prompt": "How does deoarece compare in style with the common pentru că and neutral fiindcă?",
           "answer": "Deoarece is often more formal.",
-          "explanation": "Deoarece is often more formal."
+          "explanation": "The lesson marks pentru că and fiindcă as common and deoarece as more formal (Plecăm devreme deoarece avem tren). Any answer saying deoarece is more formal counts."
         },
         {
           "id": "vocab-daca",
@@ -924,7 +1012,7 @@
           "format": "qa",
           "prompt": "How do deși and totuși differ in Deși este greu, încerc and Este greu. Totuși, încerc?",
           "answer": "Deși means although and introduces the concession; totuși means nevertheless and introduces the contrasting response.",
-          "explanation": "Deși means although and introduces the concession; totuși means nevertheless and introduces the contrasting response."
+          "explanation": "Deși opens the although-clause (Deși este frig, mergem afară); totuși starts the statement that follows a difficulty (Este greu. Totuși, încerc.). Any answer pairing deși with although and totuși with nevertheless or still counts."
         },
         {
           "id": "vocab-ca-sa",
@@ -975,7 +1063,7 @@
           "format": "qa",
           "prompt": "Which linker introduces a belief after cred, and which two-word linker expresses an intended goal?",
           "answer": "Că introduces the belief; ca să expresses purpose.",
-          "explanation": "Că introduces the belief; ca să expresses purpose."
+          "explanation": "Cred că vine mâine reports a belief; Învăț ca să vorbesc cu prietenii states a goal. Any answer pairing că with the belief and ca să with purpose counts."
         }
       ],
       "exclusions": [
@@ -1116,7 +1204,7 @@
           "format": "qa",
           "prompt": "What Romanian endings often correspond to English -tion, and does that guarantee a word's meaning?",
           "answer": "Often -ție or -țiune; no, the meaning and Romanian spelling still need checking.",
-          "explanation": "Often -ție or -țiune; no, the meaning and Romanian spelling still need checking."
+          "explanation": "Nation → națiune and information → informație show the pattern, but a false friend such as actual (current) proves a familiar shape can mislead. Any answer naming -ție or -țiune and saying no counts."
         },
         {
           "id": "vocab-actual",
@@ -1243,7 +1331,7 @@
           "sourceSection": "False Friends to Learn Early",
           "objective": "Retrieve the book-buying location without an answer-bearing hint.",
           "format": "cloze",
-          "prompt": "Cumpăr o carte la ___.",
+          "prompt": "Cumpăr o carte la ___. (at the bookstore)",
           "answer": "librărie",
           "explanation": "A librărie is a bookstore. A library where you borrow books is a bibliotecă."
         },
@@ -1256,29 +1344,29 @@
           "format": "qa",
           "prompt": "What is the difference between a librărie and a bibliotecă?",
           "answer": "A librărie is a bookstore where books are sold; a bibliotecă is a library where books can be borrowed.",
-          "explanation": "A librărie is a bookstore where books are sold; a bibliotecă is a library where books can be borrowed."
+          "explanation": "Cumpăr o carte la librărie, but you borrow books from a bibliotecă. Any answer contrasting buying with borrowing counts."
         },
         {
           "id": "magazin-revista-contrast",
-          "kind": "concept",
+          "kind": "rule",
           "priority": "optional",
           "sourceSection": "False Friends to Learn Early",
           "objective": "Distinguish the shopping place from the publication.",
           "format": "qa",
           "prompt": "Does Romanian magazin mean an English magazine? What word names that publication?",
           "answer": "No. Magazin means shop or store; revistă means magazine.",
-          "explanation": "No. Magazin means shop or store; revistă means magazine."
+          "explanation": "Revista este pe masă = The magazine is on the table; you go to a magazin to shop. Both parts are needed: magazin = store, revistă = magazine."
         },
         {
           "id": "eventual-time-contrast",
-          "kind": "concept",
+          "kind": "rule",
           "priority": "optional",
           "sourceSection": "False Friends to Learn Early",
           "objective": "Prevent transferring a false friend's temporal meaning into Romanian.",
           "format": "qa",
           "prompt": "Which expression conveys English eventually meaning in the end, rather than Romanian eventual?",
           "answer": "În cele din urmă.",
-          "explanation": "În cele din urmă."
+          "explanation": "Romanian eventual means possible or if necessary; for eventually meaning in the end, say în cele din urmă."
         },
         {
           "id": "vocab-real",
@@ -1307,7 +1395,7 @@
           "format": "qa",
           "prompt": "How does Romanian actual differ from English actual meaning real?",
           "answer": "Romanian actual means current or present-day; use real or adevărat for English actual meaning real.",
-          "explanation": "Romanian actual means current or present-day; use real or adevărat for English actual meaning real."
+          "explanation": "Președintele actual is the current president; Este o problemă reală means it is an actual (real) problem. Any answer contrasting current with real or adevărat counts."
         },
         {
           "id": "vocab-rezonabil",
@@ -1320,14 +1408,14 @@
         },
         {
           "id": "personality-false-friend-contrast",
-          "kind": "concept",
+          "kind": "rule",
           "priority": "essential",
           "sourceSection": "Simpatic and Sensibil",
           "objective": "Maintain the pilot's three-way personality contrast.",
           "format": "qa",
           "prompt": "Which Romanian words mean likeable, sensitive, and sensible respectively?",
           "answer": "simpatic = likeable; sensibil = sensitive; rezonabil = sensible or reasonable.",
-          "explanation": "simpatic = likeable; sensibil = sensitive; rezonabil = sensible or reasonable."
+          "explanation": "Profesorul este simpatic (nice), Copilul este sensibil (sensitive), Este o idee rezonabilă (sensible). Sensibil never means sensible."
         },
         {
           "id": "sensible-idea-application",
@@ -1349,7 +1437,7 @@
           "format": "qa",
           "prompt": "What should you check before trusting a familiar-looking Romanian cognate?",
           "answer": "Its meaning in context, gender and plural, pronunciation, and diacritics.",
-          "explanation": "Its meaning in context, gender and plural, pronunciation, and diacritics."
+          "explanation": "The lesson checklist: gender and plural (o informație, două informații), pronunciation and diacritics (națiune), and meaning in context for false friends. Any answer covering meaning plus these form checks counts."
         }
       ],
       "exclusions": [
@@ -1414,6 +1502,17 @@
           "prompt": "Copiii pe care ___ ajut sunt aici.",
           "answer": "îi",
           "explanation": "Copiii is masculine plural, so the direct clitic is îi."
+        },
+        {
+          "id": "rule-object-relative-pe-clitic",
+          "kind": "concept",
+          "priority": "essential",
+          "sourceSection": "Direct Objects: pe care + clitic",
+          "objective": "Recall that definite direct-object relatives add pe and a resuming clitic.",
+          "format": "qa",
+          "prompt": "A relative pronoun is the definite direct object of its clause. What two extra elements does standard Romanian use with it?",
+          "answer": "Pe before the pronoun, and a matching object clitic before the verb.",
+          "explanation": "Cartea pe care o citesc: pe marks the object and o resumes cartea. Any answer naming pe plus a resuming (doubling) object clitic counts."
         },
         {
           "id": "vocab-ce",
@@ -1529,6 +1628,17 @@
           "prompt": "Studentul ___ i-am scris a răspuns.",
           "answer": "căruia",
           "explanation": "Căruia expresses to whom, with the resuming dative i-."
+        },
+        {
+          "id": "rule-dative-relative-clitic",
+          "kind": "concept",
+          "priority": "optional",
+          "sourceSection": "Dative and Genitive Relative Forms",
+          "objective": "Recall that a dative relative is resumed by a dative clitic before the verb.",
+          "format": "qa",
+          "prompt": "In a relative clause meaning to whom, what appears before the verb besides the dative relative pronoun?",
+          "answer": "A matching dative clitic, such as i- or le-.",
+          "explanation": "Studentul căruia i-am scris; oamenii cărora le-am mulțumit. Any answer naming a resuming dative clitic counts."
         }
       ],
       "exclusions": [
@@ -1601,7 +1711,7 @@
           "format": "cloze",
           "prompt": "Podul ___ construit. (The bridge will be built.)",
           "answer": "va fi",
-          "explanation": "Va fi is the future of a fi; construit remains masculine/neuter singular."
+          "explanation": "Va fi is the future of a fi; construit remains masculine/neuter singular. Colloquial o să fie construit is also correct."
         },
         {
           "id": "vocab-a-trimite",
@@ -1776,7 +1886,7 @@
         },
         {
           "id": "have-task-meaning",
-          "kind": "concept",
+          "kind": "rule",
           "priority": "optional",
           "sourceSection": "After a avea: Obligation or Task",
           "objective": "Distinguish a task to do from an action already completed.",
@@ -1784,6 +1894,17 @@
           "prompt": "What does Am de citit trei pagini say about the three pages?",
           "answer": "They are pages I have to read or have left to read.",
           "explanation": "They are pages I have to read or have left to read."
+        },
+        {
+          "id": "rule-avea-supine-task",
+          "kind": "concept",
+          "priority": "essential",
+          "sourceSection": "After a avea: Obligation or Task",
+          "objective": "Recall that a avea plus a supine expresses something still to be done.",
+          "format": "qa",
+          "prompt": "After a avea, what kind of meaning does a supine add?",
+          "answer": "Something still to be done: a task or an obligation.",
+          "explanation": "Am de citit trei pagini means I have three pages to read. Any answer meaning a task, an obligation, or something left to do counts."
         },
         {
           "id": "vocab-a-tine-minte",
@@ -1873,6 +1994,17 @@
           "prompt": "Vreau ___ citesc.",
           "answer": "să",
           "explanation": "Vreau să citesc contrasts with Am ceva de citit."
+        },
+        {
+          "id": "rule-want-subjunctive",
+          "kind": "concept",
+          "priority": "optional",
+          "sourceSection": "Supine vs. Infinitive and Subjunctive",
+          "objective": "Recall that a wanted action after vreau uses să plus a finite verb.",
+          "format": "qa",
+          "prompt": "After vreau (I want), which construction expresses the action you want to do, where English uses to plus a verb?",
+          "answer": "Să plus a finite verb (the subjunctive).",
+          "explanation": "Vreau să citesc, not a supine. The supine belongs to fixed patterns such as am de citit or greu de citit. Any answer naming să + verb or the subjunctive counts."
         }
       ],
       "exclusions": [
@@ -1991,7 +2123,7 @@
         },
         {
           "id": "gerund-subject",
-          "kind": "concept",
+          "kind": "rule",
           "priority": "essential",
           "sourceSection": "Meaning: While or By",
           "objective": "Recover the gerund's understood actor from the main clause.",
@@ -2002,7 +2134,7 @@
         },
         {
           "id": "gerund-register",
-          "kind": "concept",
+          "kind": "rule",
           "priority": "optional",
           "sourceSection": "Meaning: While or By",
           "objective": "Retain a natural full-clause alternative to a writing-friendly form.",
@@ -2010,6 +2142,28 @@
           "prompt": "What conversational alternative is given for Mergând spre casă, am întâlnit un prieten?",
           "answer": "Când mergeam spre casă, am întâlnit un prieten.",
           "explanation": "Când mergeam spre casă, am întâlnit un prieten."
+        },
+        {
+          "id": "rule-gerund-invariable",
+          "kind": "concept",
+          "priority": "essential",
+          "sourceSection": "Meaning: While or By",
+          "objective": "Recall that the gerund has no person or number endings.",
+          "format": "qa",
+          "prompt": "Does a Romanian gerund change its ending for person or number?",
+          "answer": "No. It stays the same; the subject is understood from the main clause.",
+          "explanation": "Lucrând împreună, terminăm mai repede: lucrând does not change, and terminăm shows the subject we. Any “no” saying the form is invariable counts."
+        },
+        {
+          "id": "rule-gerund-while-by",
+          "kind": "concept",
+          "priority": "optional",
+          "sourceSection": "Meaning: While or By",
+          "objective": "Recall the while-doing and by-doing meanings of gerund clauses.",
+          "format": "qa",
+          "prompt": "Besides plain -ing, which two English meanings does a Romanian gerund clause often carry?",
+          "answer": "While doing, and by doing.",
+          "explanation": "Ascultând muzică, a adormit (while listening); Lucrând împreună, terminăm mai repede (by working). Any answer giving both while and by counts."
         },
         {
           "id": "gerund-sta",
@@ -2089,6 +2243,17 @@
           "explanation": "Say auzind-o, contrasting with văzându-l."
         },
         {
+          "id": "rule-gerund-clitic-position",
+          "kind": "concept",
+          "priority": "optional",
+          "sourceSection": "Gerund with Pronouns",
+          "objective": "Recall that object pronouns follow the gerund and are hyphenated.",
+          "format": "qa",
+          "prompt": "Where does an object pronoun go relative to a gerund, and how is it written?",
+          "answer": "After the gerund, joined to it with a hyphen.",
+          "explanation": "Văzându-l pe Mihai; auzind-o pe Maria. A linking -u- often appears before the pronoun. Any answer saying after the gerund and hyphenated counts."
+        },
+        {
           "id": "gerund-supine-contrast",
           "kind": "concept",
           "priority": "essential",
@@ -2130,7 +2295,7 @@
         },
         {
           "id": "past-perfect-sequence",
-          "kind": "concept",
+          "kind": "rule",
           "priority": "essential",
           "sourceSection": "Core Meaning",
           "objective": "Recover the earlier event rather than treating both tenses as simple past.",
@@ -2149,6 +2314,17 @@
           "prompt": "Când am ajuns, lecția ___. (had started)",
           "answer": "începuse",
           "explanation": "The lesson had already started before the speaker arrived."
+        },
+        {
+          "id": "rule-past-perfect-earlier",
+          "kind": "concept",
+          "priority": "essential",
+          "sourceSection": "Core Meaning",
+          "objective": "Recall that the past perfect places an action before another past action.",
+          "format": "qa",
+          "prompt": "What time relation does the mai-mult-ca-perfect express?",
+          "answer": "An action that happened before another past action.",
+          "explanation": "Când am ajuns, filmul începuse: the film started before the arrival. Any answer saying earlier than another past event or moment counts."
         },
         {
           "id": "past-perfect-first-singular",
@@ -2215,6 +2391,17 @@
           "prompt": "Ei ___ deja. (a lucra; had worked)",
           "answer": "lucraseră",
           "explanation": "The required form of a lucra is lucraseră."
+        },
+        {
+          "id": "rule-past-perfect-eu-ending",
+          "kind": "concept",
+          "priority": "optional",
+          "sourceSection": "Common Endings",
+          "objective": "Recall the first-person singular past-perfect ending.",
+          "format": "qa",
+          "prompt": "Which ending does the eu (I) form of the mai-mult-ca-perfect have?",
+          "answer": "-sem",
+          "explanation": "Lucrasem, mâncasem, făcusem: I had worked, eaten, done. Any answer giving -sem, or a correct eu form ending in -sem, counts."
         },
         {
           "id": "past-perfect-face",
@@ -2381,6 +2568,17 @@
           "explanation": "Școala takes the genitive-dative form școlii after în fața."
         },
         {
+          "id": "rule-genitive-prepositional-phrases",
+          "kind": "concept",
+          "priority": "essential",
+          "sourceSection": "Genitive Prepositional Phrases",
+          "objective": "Recall the case required after phrases like în fața and în spatele.",
+          "format": "qa",
+          "prompt": "Which case does a noun take after în fața, în spatele or în jurul?",
+          "answer": "The genitive.",
+          "explanation": "Stau în fața școlii: școala → școlii. Any answer naming the genitive counts."
+        },
+        {
           "id": "vocab-impotriva",
           "kind": "vocabulary",
           "priority": "optional",
@@ -2491,6 +2689,17 @@
           "prompt": "Conform ___, este permis. (legea)",
           "answer": "legii",
           "explanation": "Conform takes the dative; legii is the dative/genitive form of legea."
+        },
+        {
+          "id": "rule-dative-prepositions",
+          "kind": "concept",
+          "priority": "essential",
+          "sourceSection": "Dative Prepositions",
+          "objective": "Recall the case required after datorită, mulțumită and conform.",
+          "format": "qa",
+          "prompt": "Which case does a noun take after datorită, mulțumită or conform?",
+          "answer": "The dative.",
+          "explanation": "Datorită profesorului, conform legii. Any answer naming the dative counts; the form often looks like the genitive."
         },
         {
           "id": "case-shared-forms",
@@ -2679,6 +2888,28 @@
           "prompt": "Aceasta este a ___ întrebare. (the tenth question)",
           "answer": "zecea",
           "explanation": "Întrebare is feminine; a zecea contrasts with masculine al zecelea."
+        },
+        {
+          "id": "rule-ordinal-particles",
+          "kind": "concept",
+          "priority": "essential",
+          "sourceSection": "al treilea, a treia and Beyond",
+          "objective": "Recall which ordinal particle goes with each gender from third onward.",
+          "format": "qa",
+          "prompt": "From the third onward, which particle comes before masculine and neuter ordinals, and which comes before feminine ordinals?",
+          "answer": "Al for masculine and neuter; a for feminine.",
+          "explanation": "Capitolul al treilea, pagina a treia. Any answer pairing al with masculine/neuter and a with feminine counts."
+        },
+        {
+          "id": "rule-ordinal-gender-agreement",
+          "kind": "concept",
+          "priority": "optional",
+          "sourceSection": "al treilea, a treia and Beyond",
+          "objective": "Recall that the noun's gender selects the ordinal form.",
+          "format": "qa",
+          "prompt": "What decides whether an ordinal takes its masculine/neuter or its feminine form?",
+          "answer": "The gender of the noun it goes with.",
+          "explanation": "Întrebare is feminine, so a cincea întrebare; capitol is neuter, so al patrulea capitol. Any answer naming the noun's gender counts."
         },
         {
           "id": "ordinal-position",
@@ -2982,6 +3213,28 @@
           "explanation": "Scăunel is neuter: un scăunel, două scăunele."
         },
         {
+          "id": "rule-diminutive-agreement",
+          "kind": "concept",
+          "priority": "essential",
+          "sourceSection": "Gender and Agreement",
+          "objective": "Recall that adjectives agree with the diminutive's own gender.",
+          "format": "qa",
+          "prompt": "An adjective describes a diminutive noun. What determines the adjective's gender and ending?",
+          "answer": "The diminutive's own gender and number.",
+          "explanation": "Băiețel is masculine: băiețel curios; măsuță is feminine: măsuță rotundă. Any answer saying the adjective agrees with the diminutive form itself counts."
+        },
+        {
+          "id": "rule-neuter-diminutive-agreement",
+          "kind": "concept",
+          "priority": "optional",
+          "sourceSection": "Gender and Agreement",
+          "objective": "Recall the singular and plural agreement pattern of neuter diminutives.",
+          "format": "qa",
+          "prompt": "How does a neuter diminutive such as scăunel agree in the singular and in the plural?",
+          "answer": "Like a masculine noun in the singular; like a feminine noun in the plural.",
+          "explanation": "Un scăunel mic, două scăunele mici. Any answer giving masculine-pattern singular and feminine-pattern plural counts."
+        },
+        {
           "id": "vocab-cafeluta",
           "kind": "vocabulary",
           "priority": "optional",
@@ -3219,6 +3472,17 @@
           "meaning": "The wind is blowing."
         },
         {
+          "id": "rule-weather-e-este",
+          "kind": "concept",
+          "priority": "optional",
+          "sourceSection": "Weather with e / este",
+          "objective": "Recall that weather nouns and adjectives combine with e or este.",
+          "format": "qa",
+          "prompt": "To say it is cold, sunny, or foggy, which verb does Romanian use with the weather noun or adjective?",
+          "answer": "A fi: e or este.",
+          "explanation": "E frig, E soare, E ceață. Both e (everyday) and este (fuller form) are correct; naming a fi counts too."
+        },
+        {
           "id": "vocab-trebuie",
           "kind": "vocabulary",
           "priority": "optional",
@@ -3326,6 +3590,17 @@
           "explanation": "No. A plăcea agrees as place/plac, but present trebuie usually remains unchanged in the everyday need construction."
         },
         {
+          "id": "rule-dative-experiencer",
+          "kind": "concept",
+          "priority": "essential",
+          "sourceSection": "Dative Experiencers",
+          "objective": "Recall that experiencers of liking, needing and sensations take the dative.",
+          "format": "qa",
+          "prompt": "In expressions for liking, needing, or feeling hungry or cold, which case marks the person who has the experience?",
+          "answer": "The dative.",
+          "explanation": "Îmi place cafeaua; Mi-e foame: îmi and mi- are dative, where English makes that person the subject. Any answer naming the dative counts."
+        },
+        {
           "id": "vocab-a-durea",
           "kind": "vocabulary",
           "priority": "optional",
@@ -3344,6 +3619,17 @@
           "prompt": "Îl ___ ochii. (His eyes hurt.)",
           "answer": "dor",
           "explanation": "Ochii is plural, so use dor; the experiencer is îl, not dative îi."
+        },
+        {
+          "id": "rule-durea-agreement",
+          "kind": "concept",
+          "priority": "optional",
+          "sourceSection": "Body and Feeling Expressions",
+          "objective": "Recall that a durea agrees with the aching body part.",
+          "format": "qa",
+          "prompt": "With a durea (to hurt), what does the verb agree with?",
+          "answer": "The body part that hurts.",
+          "explanation": "Mă doare capul (singular capul); Îl dor ochii (plural ochii). Any answer naming the body part or the thing that hurts counts."
         }
       ],
       "exclusions": [
@@ -3410,6 +3696,17 @@
           "explanation": "Dacă va ninge is a standard future condition, not dacă să plouă."
         },
         {
+          "id": "rule-no-subjunctive-in-real-if",
+          "kind": "concept",
+          "priority": "optional",
+          "sourceSection": "Future Real Conditions",
+          "objective": "Recall that real if-clauses need no subjunctive marker.",
+          "format": "qa",
+          "prompt": "Does an ordinary if-clause about a real future event need a subjunctive marker before its verb?",
+          "answer": "No. Use the present or a future form directly.",
+          "explanation": "Dacă plouă, stăm acasă; Dacă va ninge mâine, vom pleca mai târziu. Never dacă să plouă. Any “no” counts."
+        },
+        {
           "id": "unreal-present-both",
           "kind": "rule",
           "priority": "essential",
@@ -3422,7 +3719,7 @@
         },
         {
           "id": "unreal-imperfect-register",
-          "kind": "concept",
+          "kind": "rule",
           "priority": "optional",
           "sourceSection": "Unreal Present or Future Conditions",
           "objective": "Recognize the spoken alternative without presenting it as the only or preferred formal pattern.",
@@ -3430,6 +3727,17 @@
           "prompt": "How should a learner interpret Dacă aveam bani, cumpăram o casă in the context of an imagined situation?",
           "answer": "As a colloquial imperfect-based unreal condition; the explicit conditional pattern is the clearer standard model to learn first.",
           "explanation": "As a colloquial imperfect-based unreal condition; the explicit conditional pattern is the clearer standard model to learn first."
+        },
+        {
+          "id": "rule-unreal-present-conditional",
+          "kind": "concept",
+          "priority": "essential",
+          "sourceSection": "Unreal Present or Future Conditions",
+          "objective": "Recall the mood used in both clauses of imagined present conditions.",
+          "format": "qa",
+          "prompt": "For an imagined or unlikely present situation, which mood does standard Romanian use in both the if-clause and the result clause?",
+          "answer": "The conditional.",
+          "explanation": "Dacă aș avea bani, aș cumpăra o casă. Any answer naming the (present) conditional counts."
         },
         {
           "id": "unreal-past-auxiliary",
@@ -3465,8 +3773,19 @@
           "explanation": "The first imagines knowing now; the second imagines having known in the past."
         },
         {
-          "id": "conditional-punctuation",
+          "id": "rule-unreal-past-conditional-perfect",
           "kind": "concept",
+          "priority": "essential",
+          "sourceSection": "Unreal Past Conditions",
+          "objective": "Recall the verb form used in both clauses of unreal past conditions.",
+          "format": "qa",
+          "prompt": "For an if-clause about something that did not happen in the past, which verb form appears in both clauses?",
+          "answer": "The conditional perfect.",
+          "explanation": "Dacă aș fi știut, ți-aș fi spus: conditional auxiliary + fi + participle. Any answer naming the conditional perfect, or describing that pattern, counts."
+        },
+        {
+          "id": "conditional-punctuation",
+          "kind": "rule",
           "priority": "optional",
           "sourceSection": "Punctuation and Word Order",
           "objective": "Retain the common punctuation pattern without mandating a comma before every dacă.",
@@ -3549,13 +3868,24 @@
           "explanation": "Say Am citit-o rather than placing o before am."
         },
         {
+          "id": "rule-feminine-past-clitic",
+          "kind": "concept",
+          "priority": "optional",
+          "sourceSection": "With perfectul compus",
+          "objective": "Recall that feminine o follows the compound-past participle while other clitics precede the auxiliary.",
+          "format": "qa",
+          "prompt": "In the compound past, most object clitics attach in front of the auxiliary. Where does the feminine singular direct-object clitic go instead?",
+          "answer": "After the participle, joined with a hyphen.",
+          "explanation": "Count it if you place it after the participle. Am văzut-o (I saw her), but L-am văzut (I saw him)."
+        },
+        {
           "id": "double-clitic-present",
           "kind": "rule",
           "priority": "essential",
           "sourceSection": "Double Clitics: Indirect Before Direct",
           "objective": "Order recipient before masculine direct object.",
           "format": "cloze",
-          "prompt": "El ___ dă. (He gives it to me.)",
+          "prompt": "El ___ dă. (He gives it to me; masculine object.)",
           "answer": "mi-l",
           "explanation": "Mi is the indirect clitic and l the direct clitic."
         },
@@ -3580,6 +3910,17 @@
           "prompt": "Maria ___ trimite. (She sends them to us; feminine objects.)",
           "answer": "ni le",
           "explanation": "Ni precedes direct-object le."
+        },
+        {
+          "id": "rule-clitic-cluster-order",
+          "kind": "concept",
+          "priority": "essential",
+          "sourceSection": "Double Clitics: Indirect Before Direct",
+          "objective": "Recall the indirect-before-direct order of a two-clitic cluster.",
+          "format": "qa",
+          "prompt": "When two object clitics appear together, as in He gives it to me, what order do they follow?",
+          "answer": "Indirect object first, then direct object.",
+          "explanation": "Count it if you say indirect before direct (recipient before thing). Mi-l dă: mi = to me, then l = it."
         },
         {
           "id": "negative-cluster",
@@ -3626,6 +3967,17 @@
           "explanation": "The cluster goes before da in Nu mi-l da."
         },
         {
+          "id": "rule-imperative-clitics",
+          "kind": "concept",
+          "priority": "essential",
+          "sourceSection": "Commands: After Affirmative Imperatives",
+          "objective": "Recall that clitics follow an affirmative imperative but precede the verb in a negative command.",
+          "format": "qa",
+          "prompt": "Where do object clitics go with an affirmative command, and where do they go once the command is negative?",
+          "answer": "After the verb, joined with hyphens; before the verb in a negative command.",
+          "explanation": "Count it only if both positions are right. Dă-mi-l! (Give it to me!) vs Nu mi-l da! (Don't give it to me!)."
+        },
+        {
           "id": "infinitive-clitic",
           "kind": "rule",
           "priority": "optional",
@@ -3634,7 +3986,7 @@
           "format": "cloze",
           "prompt": "Pentru ___ vedea, am venit devreme. (in order to see him)",
           "answer": "a-l",
-          "explanation": "The clitic attaches to a, not after the lexical infinitive."
+          "explanation": "The clitic attaches to a, not after the lexical infinitive; the uncontracted a îl vedea also occurs."
         },
         {
           "id": "gerund-clitic",
@@ -3694,7 +4046,7 @@
           "sourceSection": "Verb Agreement",
           "objective": "Use plural verb morphology for one respected addressee.",
           "format": "cloze",
-          "prompt": "Dumneavoastră ___ gata?",
+          "prompt": "Dumneavoastră ___ gata? (a fi, present: Are you ready?)",
           "answer": "sunteți",
           "explanation": "Dumneavoastră uses sunteți even when addressing one person."
         },
@@ -3708,6 +4060,17 @@
           "prompt": "Does Aveți timp? without a pronoun always prove that one person is being addressed formally?",
           "answer": "No. It can address one person politely or more than one person; context resolves the addressee.",
           "explanation": "No. It can address one person politely or more than one person; context resolves the addressee."
+        },
+        {
+          "id": "rule-polite-verb-person",
+          "kind": "concept",
+          "priority": "essential",
+          "sourceSection": "Verb Agreement",
+          "objective": "Recall that polite dumneavoastră takes second-person plural verbs even for one addressee.",
+          "format": "qa",
+          "prompt": "Which person and number does the verb take with polite dumneavoastră, even when you are speaking to just one person?",
+          "answer": "Second-person plural.",
+          "explanation": "Count it if you say second-person plural (the voi form). Dumneavoastră aveți timp? uses aveți, not singular ai."
         },
         {
           "id": "vocab-dvs",
@@ -3815,13 +4178,13 @@
           "sourceSection": "Adjective Agreement with a Formal You",
           "objective": "Separate plural polite verb agreement from feminine singular adjective agreement.",
           "format": "cloze",
-          "prompt": "Dumneavoastră sunteți foarte ___. (kind; speaking to one woman)",
+          "prompt": "Dumneavoastră sunteți foarte ___. (amabil = kind; speaking to one woman)",
           "answer": "amabilă",
           "explanation": "One woman takes amabilă although the polite verb is sunteți."
         },
         {
           "id": "formal-adjective-group",
-          "kind": "concept",
+          "kind": "rule",
           "priority": "optional",
           "sourceSection": "Adjective Agreement with a Formal You",
           "objective": "Retain actual-group adjective agreement instead of forcing masculine plural everywhere.",
@@ -3829,6 +4192,17 @@
           "prompt": "How does amabil change when politely addressing a group of women?",
           "answer": "Use amabile while retaining the verb sunteți.",
           "explanation": "Use amabile while retaining the verb sunteți."
+        },
+        {
+          "id": "rule-adjective-real-addressee",
+          "kind": "concept",
+          "priority": "optional",
+          "sourceSection": "Adjective Agreement with a Formal You",
+          "objective": "Recall that an adjective follows the real addressee while the polite verb stays plural.",
+          "format": "qa",
+          "prompt": "With polite dumneavoastră the verb is always plural. What decides the gender and number of an adjective describing the addressee?",
+          "answer": "The real addressee: the actual gender and number of the person or people spoken to.",
+          "explanation": "Count it if you name the actual person or group addressed. To one man: Dumneavoastră sunteți foarte amabil; to a group of women: amabile."
         },
         {
           "id": "vocab-va-rog",
@@ -3926,7 +4300,7 @@
           "format": "cloze",
           "prompt": "___, vino aici! (boy!)",
           "answer": "Băiete",
-          "explanation": "The direct-address form of băiat is băiete."
+          "explanation": "The usual direct-address form of băiat is băiete; colloquial băiatule also occurs."
         },
         {
           "id": "vocab-prietene",
@@ -3962,9 +4336,20 @@
           "sourceSection": "Masculine Singular: -e and -ule",
           "objective": "Retain the conventional name vocative rather than appending an ending blindly.",
           "format": "cloze",
-          "prompt": "___, unde ești? (address Ion)",
+          "prompt": "___, unde ești? (address Ion with the traditional vocative)",
           "answer": "Ioane",
           "explanation": "Ion has the traditional vocative Ioane."
+        },
+        {
+          "id": "rule-masculine-vocative-endings",
+          "kind": "concept",
+          "priority": "essential",
+          "sourceSection": "Masculine Singular: -e and -ule",
+          "objective": "Recall the two common masculine singular vocative endings.",
+          "format": "qa",
+          "prompt": "Which two endings do many masculine singular nouns and names take when you address someone directly?",
+          "answer": "-e and -ule.",
+          "explanation": "Count it if you name both endings. Prieten → Prietene!, domn → Domnule!"
         },
         {
           "id": "vocab-doamna",
@@ -4018,6 +4403,17 @@
           "explanation": "No. Doamnă itself is the normal polite direct-address form."
         },
         {
+          "id": "rule-familiar-feminine-o",
+          "kind": "concept",
+          "priority": "optional",
+          "sourceSection": "Feminine Singular: Often Same Form or -o",
+          "objective": "Recall the -o ending of familiar feminine direct address, contrasted with the plain polite form.",
+          "format": "qa",
+          "prompt": "Polite feminine address often keeps the plain form. Which ending often marks familiar or emotional feminine address instead?",
+          "answer": "-o.",
+          "explanation": "Count it if you say -o in place of the final vowel. Fetiță → Fetițo!, Ana → Ano!"
+        },
+        {
           "id": "ladies-vocative",
           "kind": "rule",
           "priority": "essential",
@@ -4050,7 +4446,7 @@
         },
         {
           "id": "vocative-comma",
-          "kind": "concept",
+          "kind": "rule",
           "priority": "optional",
           "sourceSection": "Commas and Tone",
           "objective": "Separate an internal vocative with two commas.",
@@ -4058,6 +4454,17 @@
           "prompt": "How should Maria be punctuated in Vino Maria la masă?",
           "answer": "Vino, Maria, la masă!",
           "explanation": "Vino, Maria, la masă!"
+        },
+        {
+          "id": "rule-address-commas",
+          "kind": "concept",
+          "priority": "optional",
+          "sourceSection": "Commas and Tone",
+          "objective": "Recall that written direct address is set off with commas.",
+          "format": "qa",
+          "prompt": "In writing, what sets off a name or title of direct address from the rest of the sentence?",
+          "answer": "Commas.",
+          "explanation": "Count it if you say a comma before and/or after the address term. Maria, vino la masă! / Vino, Maria, la masă!"
         },
         {
           "id": "vocative-tone",
@@ -4110,7 +4517,7 @@
         },
         {
           "id": "hour-numeral-forms",
-          "kind": "concept",
+          "kind": "rule",
           "priority": "optional",
           "sourceSection": "Asking and Giving the Time",
           "objective": "Retain the conventional clock numeral forms instead of forcing uniform gender agreement.",
@@ -4223,6 +4630,17 @@
           "prompt": "3:45: patru ___ un sfert",
           "answer": "fără",
           "explanation": "A quarter before four is 3:45."
+        },
+        {
+          "id": "rule-before-the-hour",
+          "kind": "concept",
+          "priority": "essential",
+          "sourceSection": "Half, Quarter, Past, and To",
+          "objective": "Recall that times just before the hour count back from the next hour.",
+          "format": "qa",
+          "prompt": "For a time shortly before the hour, such as 3:45, which hour does conversational Romanian count back from?",
+          "answer": "The next hour: the minutes are subtracted from it.",
+          "explanation": "Count it if you name the next hour and subtract the minutes. 3:45 = patru fără un sfert (four minus a quarter); 4:50 = cinci fără zece."
         },
         {
           "id": "vocab-luni",
@@ -4418,6 +4836,17 @@
           "explanation": "În iulie means in July."
         },
         {
+          "id": "rule-weekday-alone",
+          "kind": "concept",
+          "priority": "optional",
+          "sourceSection": "Days and Months",
+          "objective": "Recall that a bare weekday name expresses on that day without a preposition.",
+          "format": "qa",
+          "prompt": "English says on Monday. What does Romanian put before a weekday name to express on that day?",
+          "answer": "Nothing: the day name alone means on that day.",
+          "explanation": "Count it if you say no preposition is needed. Plec luni = I leave on Monday; Avem examen vineri = We have an exam on Friday."
+        },
+        {
           "id": "calendar-date-pe",
           "kind": "rule",
           "priority": "essential",
@@ -4426,7 +4855,7 @@
           "format": "cloze",
           "prompt": "Ne vedem ___ 3 martie.",
           "answer": "pe",
-          "explanation": "A specific calendar date takes pe."
+          "explanation": "In everyday Romanian a specific calendar date takes pe; la or în before a date (la 1 decembrie) also occurs, especially in writing."
         },
         {
           "id": "year-in",
@@ -4524,6 +4953,17 @@
           "explanation": "Neuter scaun has feminine-pattern plural agreement."
         },
         {
+          "id": "rule-two-gender",
+          "kind": "concept",
+          "priority": "essential",
+          "sourceSection": "Two: doi and două",
+          "objective": "Recall which plural nouns take doi and which take două.",
+          "format": "qa",
+          "prompt": "Romanian has two forms for two. Which nouns take doi?",
+          "answer": "Masculine plural nouns; feminine and neuter plurals take două.",
+          "explanation": "Count it if you say masculine plurals. Doi băieți, doi câini, but două fete, două scaune."
+        },
+        {
           "id": "compound-thirty-two",
           "kind": "rule",
           "priority": "essential",
@@ -4557,6 +4997,17 @@
           "explanation": "Use douăsprezece for feminine fete, versus doisprezece băieți."
         },
         {
+          "id": "rule-compound-final-gender",
+          "kind": "concept",
+          "priority": "optional",
+          "sourceSection": "Compounds Ending in One or Two",
+          "objective": "Recall that the final one or two of a compound number carries the noun's gender.",
+          "format": "qa",
+          "prompt": "In compound numbers such as 21 or 32, which part of the number shows the gender of the counted noun?",
+          "answer": "The final part: the one or two at the end.",
+          "explanation": "Count it if you say the last part. Treizeci și doi de elevi but treizeci și două de eleve; douăzeci și unu de băieți but douăzeci și una de fete."
+        },
+        {
           "id": "forty-de",
           "kind": "rule",
           "priority": "essential",
@@ -4566,6 +5017,17 @@
           "prompt": "Sunt patruzeci ___ studenți.",
           "answer": "de",
           "explanation": "Patruzeci de studenți uses de before the counted plural noun."
+        },
+        {
+          "id": "rule-twenty-plus-de",
+          "kind": "concept",
+          "priority": "essential",
+          "sourceSection": "The de Rule After 20",
+          "objective": "Recall that numbers from twenty upward link to the counted noun with de.",
+          "format": "qa",
+          "prompt": "From twenty upward, which small Romanian word normally links the number to the counted noun?",
+          "answer": "De.",
+          "explanation": "Count it if you say de. Douăzeci de mașini, cincizeci de oameni; compare nouăsprezece mașini, with no link word."
         },
         {
           "id": "larger-number-de-exception",
@@ -4726,6 +5188,17 @@
           "explanation": "The activity să citesc takes singular place."
         },
         {
+          "id": "rule-liked-thing-agreement",
+          "kind": "concept",
+          "priority": "essential",
+          "sourceSection": "îmi place / îmi plac",
+          "objective": "Recall that the thing liked, not the person, controls the number of a plăcea.",
+          "format": "qa",
+          "prompt": "With a plăcea (to like), what decides whether the verb is singular or plural?",
+          "answer": "The thing liked, not the person who likes it.",
+          "explanation": "Count it if you say the thing liked. Îmi place cartea, but Îmi plac cărțile."
+        },
+        {
           "id": "need-invariant",
           "kind": "rule",
           "priority": "essential",
@@ -4735,6 +5208,17 @@
           "prompt": "Ne ___ trei scaune. (We need three chairs; use the common invariable present.)",
           "answer": "trebuie",
           "explanation": "The everyday standard pattern here is Ne trebuie trei scaune."
+        },
+        {
+          "id": "rule-need-verb-invariable",
+          "kind": "concept",
+          "priority": "optional",
+          "sourceSection": "îmi trebuie",
+          "objective": "Recall that the everyday present need verb usually stays unchanged with plural needed things.",
+          "format": "qa",
+          "prompt": "In the everyday standard construction for I need, what usually happens to the present verb when the thing needed is plural?",
+          "answer": "Nothing: it usually stays the same.",
+          "explanation": "Count it if you say it stays unchanged. Îmi trebuie un bilet; Îmi trebuie două bilete."
         },
         {
           "id": "vocab-imi-trebuie",
@@ -4812,7 +5296,7 @@
         },
         {
           "id": "feeling-contraction",
-          "kind": "concept",
+          "kind": "rule",
           "priority": "optional",
           "sourceSection": "mi-e frig, foame, somn",
           "objective": "Recover the underlying experiencer and copula from the contraction.",
@@ -4980,6 +5464,17 @@
           "explanation": "Pe nimeni means nobody as a direct object."
         },
         {
+          "id": "rule-negative-concord",
+          "kind": "concept",
+          "priority": "essential",
+          "sourceSection": "Negative Pronouns: nimeni, nimic, niciunul",
+          "objective": "Recall that Romanian negative pronouns keep nu before the verb.",
+          "format": "qa",
+          "prompt": "When a clause contains nimeni or another negative pronoun, what else does Romanian normally keep before the verb?",
+          "answer": "The negator nu.",
+          "explanation": "Count it if you say nu. Nu văd pe nimeni; Nimeni nu știe — nu stays even when the negative word comes first."
+        },
+        {
           "id": "vocab-tot",
           "kind": "vocabulary",
           "priority": "optional",
@@ -5036,6 +5531,17 @@
           "prompt": "___ cărțile sunt aici. (All the books are here.)",
           "answer": "Toate",
           "explanation": "Cărțile is feminine plural."
+        },
+        {
+          "id": "rule-tot-agreement",
+          "kind": "concept",
+          "priority": "optional",
+          "sourceSection": "Tot, toată, toți, toate",
+          "objective": "Recall that tot agrees in gender and number with its noun.",
+          "format": "qa",
+          "prompt": "What does tot (all, the whole) agree with?",
+          "answer": "The noun it modifies, in gender and number.",
+          "explanation": "Count it if you say the noun, by gender and number. Tot orașul, toată ziua, toți prietenii, toate cărțile."
         },
         {
           "id": "vocab-fiecare",
@@ -5239,7 +5745,7 @@
           "format": "cloze",
           "prompt": "Ei ___ plecat deja. (They have probably left.)",
           "answer": "or fi",
-          "explanation": "The plural pattern here is or fi plus participle."
+          "explanation": "The everyday plural pattern is or fi plus participle; the full form vor fi plecat is also correct, especially in formal or literary usage."
         },
         {
           "id": "first-person-presumptive",
@@ -5272,7 +5778,7 @@
           "format": "cloze",
           "prompt": "___ fi ajuns prea devreme. (Maybe we arrived too early.)",
           "answer": "Om",
-          "explanation": "The person form in this example is om fi."
+          "explanation": "The colloquial person form in this example is om fi; the full form vom fi is also correct in formal or literary usage."
         },
         {
           "id": "second-plural-presumptive",
@@ -5283,7 +5789,7 @@
           "format": "cloze",
           "prompt": "___ fi obosiți. (You all are probably tired.)",
           "answer": "Oți",
-          "explanation": "The person form in this example is oți fi."
+          "explanation": "The colloquial person form in this example is oți fi; the full form veți fi is also correct in formal or literary usage."
         },
         {
           "id": "presumptive-register",
@@ -5508,6 +6014,17 @@
           "explanation": "No. The whole sentence is a statement reporting a question."
         },
         {
+          "id": "rule-indirect-yes-no",
+          "kind": "concept",
+          "priority": "optional",
+          "sourceSection": "Indirect Questions",
+          "objective": "Recall that dacă introduces reported yes/no questions.",
+          "format": "qa",
+          "prompt": "Reported information questions keep their question word. What introduces a reported yes/no question instead?",
+          "answer": "Dacă (if / whether).",
+          "explanation": "Count it if you say dacă. „Vii azi?” → M-a întrebat dacă vin azi."
+        },
+        {
           "id": "reported-negative-command",
           "kind": "rule",
           "priority": "essential",
@@ -5528,6 +6045,17 @@
           "prompt": "Ne-a spus să ___ acolo. (a veni)",
           "answer": "venim",
           "explanation": "Ne-a spus să venim reports an instruction addressed to us."
+        },
+        {
+          "id": "rule-reported-command-clause",
+          "kind": "concept",
+          "priority": "essential",
+          "sourceSection": "Reporting Commands",
+          "objective": "Recall that reported commands become să clauses.",
+          "format": "qa",
+          "prompt": "When Romanian reports a command or request, what kind of clause does the command usually become?",
+          "answer": "A să clause (the subjunctive).",
+          "explanation": "Count it if you say a să clause or the subjunctive. „Pleacă!” → Mi-a spus să plec; „Nu pleca!” → Mi-a spus să nu plec."
         }
       ],
       "exclusions": [
@@ -5711,6 +6239,17 @@
           "explanation": "The whole derived verb is a îmbogăți."
         },
         {
+          "id": "rule-prefix-m-before-labials",
+          "kind": "concept",
+          "priority": "essential",
+          "sourceSection": "în-, îm-, des-, dez-",
+          "objective": "Recall that the prefix în- is spelled îm- before b and p.",
+          "format": "qa",
+          "prompt": "Before which consonants is the prefix în- written with m instead of n?",
+          "answer": "Before b and p.",
+          "explanation": "Count it if you name b and p. Bogat → a îmbogăți, piatră → a împietri, but roșu → a înroși."
+        },
+        {
           "id": "reversing-prefixes",
           "kind": "concept",
           "priority": "optional",
@@ -5731,6 +6270,17 @@
           "prompt": "a conduce → ___ (masculine agent noun)",
           "answer": "conducător",
           "explanation": "Conducător can mean leader or driver."
+        },
+        {
+          "id": "rule-agent-tor",
+          "kind": "concept",
+          "priority": "optional",
+          "sourceSection": "Agent Suffix -tor",
+          "objective": "Recall that -tor forms agent nouns from verbs.",
+          "format": "qa",
+          "prompt": "Added to a verb, what kind of noun does the suffix -tor often form?",
+          "answer": "An agent noun: the person or thing that does the action.",
+          "explanation": "Count it if you say the doer of the action. A învăța → învățător (teacher), a vâna → vânător (hunter)."
         },
         {
           "id": "vocab-invatator",

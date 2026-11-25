@@ -44,7 +44,7 @@ The verb **a fi** carries the tense. The participle still agrees with the subjec
 - **Regulile au fost explicate clar.** — The rules were explained clearly.
 
 <!-- grammar-card: {"id":"passive-sent-letter","priority":"essential","sourceSection":"Passive in Different Tenses","kind":"rule","format":"cloze","rule":"In the a fi passive, the participle agrees with the subject","example":"Scrisoarea a fost ___. (sent)","answer":"trimisă","explanation":"Scrisoarea is feminine singular, so the participle is trimisă."} -->
-<!-- grammar-card: {"id":"future-passive-bridge","priority":"essential","sourceSection":"Passive in Different Tenses","kind":"rule","format":"cloze","rule":"A fi carries the tense in a passive","example":"Podul ___ construit. (The bridge will be built.)","answer":"va fi","explanation":"Va fi is the future of a fi; construit remains masculine/neuter singular."} -->
+<!-- grammar-card: {"id":"future-passive-bridge","priority":"essential","sourceSection":"Passive in Different Tenses","kind":"rule","format":"cloze","rule":"A fi carries the tense in a passive","example":"Podul ___ construit. (The bridge will be built.)","answer":"va fi","explanation":"Va fi is the future of a fi; construit remains masculine/neuter singular. Colloquial o să fie construit is also correct."} -->
 <!-- vocab-card: {"id":"vocab-a-trimite","priority":"optional","sourceSection":"Passive in Different Tenses","word":"a trimite","meaning":"to send"} -->
 
 ## Expressing the Agent

@@ -20,6 +20,7 @@ Put **nu** directly before the conjugated verb.
 
 <!-- vocab-card: {"id":"vocab-nu","word":"nu","meaning":"not; no","priority":"essential","sourceSection":"Basic Negation with nu"} -->
 <!-- grammar-card: {"id":"basic-negative-order","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Basic Negation with nu","rule":"Nu precedes the conjugated verb in a basic negative","example":"Ea ___ este acasă. (is not)","answer":"nu","explanation":"No English-style do auxiliary is required."} -->
+<!-- grammar-card: {"id":"rule-negator-position","kind":"concept","format":"qa","priority":"essential","sourceSection":"Basic Negation with nu","rule":"Nu goes directly before the conjugated verb","example":"In a basic negative sentence, where does the Romanian word for not go?","answer":"Directly before the conjugated verb.","explanation":"Count it if you say nu goes right before the verb. Ea nu este acasă; Nu vorbesc românește. No helper like English do is added."} -->
 <!-- quiz: {"type":"multiple-choice","question":"Where does 'nu' usually go?","options":["After the noun","Before the conjugated verb","At the end of the sentence","Only before adjectives"],"answer":1} -->
 
 ## Negative Words
@@ -35,7 +36,7 @@ Put **nu** directly before the conjugated verb.
 Romanian standard grammar uses a kind of **negative concord**: the negative word appears with **nu**.
 
 - **Nu știu nimic.** (noo shtyoo nee-MEEK) — I don't know anything.
-- **Nu cunosc pe nimeni aici.** (noo koo-NOSK peh nee-MENʲ ah-CH) — I don't know anyone here.
+- **Nu cunosc pe nimeni aici.** (noo koo-NOSK peh nee-MENʲ ah-EECH) — I don't know anyone here.
 
 <!-- vocab-card: {"id":"vocab-nimic","word":"nimic","meaning":"nothing; anything in a negative sentence","priority":"essential","sourceSection":"Negative Words"} -->
 <!-- vocab-card: {"id":"vocab-nimeni","word":"nimeni","meaning":"nobody; anybody in a negative sentence","priority":"essential","sourceSection":"Negative Words"} -->
@@ -86,6 +87,7 @@ When object or reflexive pronouns appear before the verb, **nu** comes before th
 In fast speech, forms may contract, but the written beginner pattern is clear: **nu + pronoun + verb**.
 
 <!-- grammar-card: {"id":"negative-clitic-order","kind":"rule","format":"qa","priority":"essential","sourceSection":"Negation with Pronouns","rule":"Nu precedes a preverbal object or reflexive pronoun","example":"Negate Mă duc without changing the verb tense.","answer":"Nu mă duc.","explanation":"Use nu + pronoun + verb, not mă nu duc. Nu îl văd follows the same ordering with an object pronoun."} -->
+<!-- grammar-card: {"id":"rule-negator-before-pronoun","kind":"concept","format":"qa","priority":"optional","sourceSection":"Negation with Pronouns","rule":"Nu comes before a preverbal pronoun, never between the pronoun and the verb","example":"When an object or reflexive pronoun comes before the verb, where does the Romanian word for not go?","answer":"Before the pronoun.","explanation":"Count it if you say nu comes before the pronoun, not between it and the verb. Nu mă duc, Nu îl văd: the order is nu + pronoun + verb, never mă nu duc."} -->
 <!-- quiz: {"type":"multiple-choice","question":"Which sentence correctly means 'I am not going'?","options":["Mă nu duc.","Nu mă duc.","Duc nu mă.","Nu duc mă."],"answer":1} -->
 
 <!-- grammar-card: {"id":"no-longer-application","kind":"rule","format":"cloze","priority":"essential","sourceSection":"No Longer and Not Yet","rule":"Nu mai means no longer; încă nu means not yet","example":"___ am timp. (I no longer have time.)","answer":"Nu mai","explanation":"Nu mai means a previous state has stopped; încă nu means it has not happened yet."} -->

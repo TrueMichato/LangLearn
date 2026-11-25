@@ -52,6 +52,7 @@ With **a plăcea**, the thing liked controls the verb. Use **place** for one thi
 <!-- vocab-card: {"id":"vocab-a-placea","priority":"optional","sourceSection":"îmi place / îmi plac","word":"a plăcea","meaning":"to please; to be liked"} -->
 <!-- grammar-card: {"id":"liked-apples","priority":"essential","sourceSection":"îmi place / îmi plac","kind":"rule","format":"cloze","rule":"With îmi place, the liked thing controls place or plac","example":"Îmi ___ merele. (I like the apples.)","answer":"plac","explanation":"Merele is plural, so the finite form is plac.","legacyAliases":[{"rule":"With îmi place, the liked thing controls place or plac","example":"Îmi ___ merele."}]} -->
 <!-- grammar-card: {"id":"liked-activity","priority":"optional","sourceSection":"îmi place / îmi plac","kind":"rule","format":"cloze","rule":"An activity expressed by a să clause takes singular place","example":"Îmi ___ să citesc.","answer":"place","explanation":"The activity să citesc takes singular place."} -->
+<!-- grammar-card: {"id":"rule-liked-thing-agreement","kind":"concept","format":"qa","priority":"essential","sourceSection":"îmi place / îmi plac","rule":"With a plăcea, the thing liked controls the number of the verb","example":"With a plăcea (to like), what decides whether the verb is singular or plural?","answer":"The thing liked, not the person who likes it.","explanation":"Count it if you say the thing liked. Îmi place cartea, but Îmi plac cărțile."} -->
 
 ## îmi trebuie
 
@@ -72,6 +73,7 @@ With **a plăcea**, the thing liked controls the verb. Use **place** for one thi
 <!-- quiz: {"type":"multiple-choice","question":"How do you say We need three chairs?","options":["Ne trebuie trei scaune.","Noi trebuie trei scaune.","Ne trebuiesc trei scaune.","Ne place trei scaune."],"answer":0} -->
 
 <!-- grammar-card: {"id":"need-invariant","priority":"essential","sourceSection":"îmi trebuie","kind":"rule","format":"cloze","rule":"Present trebuie usually stays unchanged in the everyday need construction","example":"Ne ___ trei scaune. (We need three chairs; use the common invariable present.)","answer":"trebuie","explanation":"The everyday standard pattern here is Ne trebuie trei scaune."} -->
+<!-- grammar-card: {"id":"rule-need-verb-invariable","kind":"concept","format":"qa","priority":"optional","sourceSection":"îmi trebuie","rule":"In the everyday need construction, the present verb usually stays the same with plural needed things","example":"In the everyday standard construction for I need, what usually happens to the present verb when the thing needed is plural?","answer":"Nothing: it usually stays the same.","explanation":"Count it if you say it stays unchanged. Îmi trebuie un bilet; Îmi trebuie două bilete."} -->
 <!-- vocab-card: {"id":"vocab-imi-trebuie","priority":"essential","sourceSection":"îmi trebuie","word":"îmi trebuie","meaning":"I need"} -->
 
 ## mi-e frig, foame, somn
@@ -98,7 +100,7 @@ Many physical states use **mi-e** plus a noun or adjective. **Mi-e** is a contra
 <!-- vocab-card: {"id":"vocab-mi-e-somn","priority":"optional","sourceSection":"mi-e frig, foame, somn","word":"Mi-e somn.","meaning":"I am sleepy."} -->
 <!-- vocab-card: {"id":"vocab-mi-e-dor","priority":"optional","sourceSection":"mi-e frig, foame, somn","word":"Mi-e dor de tine.","meaning":"I miss you."} -->
 <!-- grammar-card: {"id":"hungry-mi-e","priority":"essential","sourceSection":"mi-e frig, foame, somn","kind":"rule","format":"cloze","rule":"Mi-e is a common contraction of îmi este in feeling expressions","example":"___ foame. (I am hungry.)","answer":"Mi-e","explanation":"The first-person feeling construction uses mi-e."} -->
-<!-- grammar-card: {"id":"feeling-contraction","priority":"optional","sourceSection":"mi-e frig, foame, somn","kind":"concept","format":"qa","rule":"Mi-e includes both a dative clitic and a short form of a fi","example":"What longer expression does mi-e correspond to in Mi-e frig?","answer":"Îmi este frig.","explanation":"The contraction combines the dative experiencer with the copula; English instead uses I as the subject."} -->
+<!-- grammar-card: {"id":"feeling-contraction","priority":"optional","sourceSection":"mi-e frig, foame, somn","kind":"rule","format":"qa","rule":"Mi-e includes both a dative clitic and a short form of a fi","example":"What longer expression does mi-e correspond to in Mi-e frig?","answer":"Îmi este frig.","explanation":"The contraction combines the dative experiencer with the copula; English instead uses I as the subject."} -->
 
 ## mi se pare and îmi vine să
 

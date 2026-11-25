@@ -51,6 +51,7 @@ The **a plăcea** row gives phrases for the person who likes something, not subj
 - **Bem apă rece.** (bem AH-puh REH-cheh) — We drink cold water.
 
 <!-- grammar-card: {"id":"putea-sa-application","kind":"rule","format":"cloze","priority":"essential","sourceSection":"More Group 2 Verbs","rule":"A putea commonly uses pot să + verb","example":"Eu ___ vin mâine. (I can come tomorrow.)","answer":"pot să","explanation":"Pot să vin is a beginner-safe pattern; să is common here, not a claim that every construction with putea requires it."} -->
+<!-- grammar-card: {"id":"rule-putea-sa","kind":"concept","format":"qa","priority":"optional","sourceSection":"More Group 2 Verbs","rule":"A putea is commonly followed by să and a verb","example":"Which particle commonly links a putea to the following verb?","answer":"Să.","explanation":"Pot să vin, poți să ajuți. Some fixed contexts use an infinitive-style construction instead, so să is the common, beginner-safe link rather than the only one."} -->
 
 ## Group 3: a merge — to go
 
@@ -69,7 +70,8 @@ The **a plăcea** row gives phrases for the person who likes something, not subj
 
 <!-- vocab-card: {"id":"vocab-a-merge","word":"a merge","meaning":"to go (Group 3, -e)","priority":"optional","sourceSection":"Group 3: a merge — to go"} -->
 <!-- grammar-card: {"id":"merge-eu-form","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Group 3: a merge — to go","rule":"A merge has eu merg","example":"Eu ___ la școală. (a merge)","answer":"merg","explanation":"Eu and ei/ele share merg; el/ea use merge."} -->
-<!-- grammar-card: {"id":"merge-noi-form","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Group 3: a merge — to go","rule":"A merge present: merg, mergi, merge, mergem, mergeți, merg","example":"Noi ___ la gară.","answer":"mergem","explanation":"Noi agrees with mergem."} -->
+<!-- grammar-card: {"id":"merge-noi-form","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Group 3: a merge — to go","rule":"A merge present: merg, mergi, merge, mergem, mergeți, merg","example":"Noi ___ la gară. (a merge)","answer":"mergem","explanation":"Noi agrees with mergem.","legacyAliases":[{"rule":"A merge present: merg, mergi, merge, mergem, mergeți, merg","example":"Noi ___ la gară."}]} -->
+<!-- grammar-card: {"id":"rule-eu-ei-shared","kind":"concept","format":"qa","priority":"essential","sourceSection":"Group 3: a merge — to go","rule":"In a vedea and a merge, eu and ei/ele share one present form","example":"In a vedea and a merge, which two persons share one present form?","answer":"Eu and ei/ele.","explanation":"Eu văd and ei văd; eu merg and ei merg. Context or the pronoun tells I from they."} -->
 
 ## More Group 3 Verbs
 

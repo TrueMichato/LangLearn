@@ -23,7 +23,7 @@ Neuter nouns use **două** in the plural, just like feminine nouns.
 
 <!-- quiz: {"type":"multiple-choice","question":"Which number phrase fits the neuter plural 'scaune'?","options":["doi scaune","două scaune","un scaune","o scaune"],"answer":1} -->
 
-<!-- grammar-card: {"id":"neuter-plural-count","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Plural and Gender","rule":"Neuter plurals often end in -e or -uri and count with două","example":"Am ___ telefoane noi.","answer":"două","explanation":"Telefon is neuter; its plural takes feminine două, not masculine doi."} -->
+<!-- grammar-card: {"id":"neuter-plural-count","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Plural and Gender","rule":"Neuter plurals often end in -e or -uri and count with două","example":"Am ___ telefoane noi. (two)","answer":"două","explanation":"Telefon is neuter; its plural takes feminine două, not masculine doi.","legacyAliases":[{"rule":"Neuter plurals often end in -e or -uri and count with două","example":"Am ___ telefoane noi."}]} -->
 
 ## Common Masculine Plurals
 
@@ -37,11 +37,12 @@ Many masculine nouns form the plural with **-i**, often with spelling or sound c
 | **frate** | **frați** | brother / brothers |
 | **câine** | **câini** | dog / dogs |
 
-- **Studenții sunt aici.** (stoo-DEN-tsee soont ah-CH) — The students are here.
+- **Studenții sunt aici.** (stoo-DEN-tsee soont ah-EECH) — The students are here.
 - **Frații mei locuiesc la Cluj.** (FRAH-tsee may loh-koo-YESK lah kloozh) — My brothers live in Cluj.
 
 <!-- grammar-card: {"id":"masculine-plural-student","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Common Masculine Plurals","rule":"Masculine plurals commonly use i with consonant changes","example":"Doi ___. (students; student)","answer":"studenți","explanation":"Student becomes studenți; plural formation is not just appending a full syllable."} -->
 <!-- grammar-card: {"id":"brother-plural","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Common Masculine Plurals","rule":"Frate has plural frați","example":"Doi ___. (brothers; frate)","answer":"frați","explanation":"Learn frate → frați as the complete noun pair."} -->
+<!-- grammar-card: {"id":"rule-masculine-plural-i","kind":"concept","format":"qa","priority":"essential","sourceSection":"Common Masculine Plurals","rule":"Many masculine nouns form the plural with -i","example":"Which ending do many masculine nouns take in the plural?","answer":"-i, often with a consonant change.","explanation":"Student → studenți, frate → frați, român → români. The i often changes the consonant before it, so learn each plural."} -->
 <!-- vocab-card: {"id":"vocab-caine","word":"câine","meaning":"dog (masculine; plural câini)","priority":"optional","sourceSection":"Common Masculine Plurals"} -->
 <!-- vocab-card: {"id":"vocab-roman","word":"român","meaning":"Romanian man (plural români)","priority":"optional","sourceSection":"Common Masculine Plurals"} -->
 ## Common Feminine Plurals
@@ -61,6 +62,7 @@ The ending **-ă → -e** is common, but many nouns ending in **-e** form plural
 <!-- grammar-card: {"id":"feminine-e-plural","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Common Feminine Plurals","rule":"Many feminine nouns ending in -ă form the plural in -e","example":"Am două ___ mari. (houses)","answer":"case","explanation":"Casă has plural case; the pattern is common, not universal."} -->
 <!-- grammar-card: {"id":"feminine-i-plural","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Common Feminine Plurals","rule":"Some feminine nouns in e form i plurals with stem changes","example":"Două ___. (books; carte)","answer":"cărți","explanation":"Carte becomes cărți, not an invented carte or carturi plural."} -->
 <!-- grammar-card: {"id":"flower-plural","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Common Feminine Plurals","rule":"Floare has plural flori","example":"Două ___. (flowers; floare)","answer":"flori","explanation":"Both the vowel and ending change in floare → flori."} -->
+<!-- grammar-card: {"id":"rule-feminine-a-plural","kind":"concept","format":"qa","priority":"essential","sourceSection":"Common Feminine Plurals","rule":"Many feminine nouns ending in -ă form the plural in -e","example":"A feminine noun ending in -ă often forms its plural with which ending?","answer":"-e.","explanation":"Casă → case, fată → fete. The pattern is common, not universal: feminine nouns ending in -e often take -i instead, as in carte → cărți."} -->
 <!-- vocab-card: {"id":"vocab-lectie","word":"lecție","meaning":"lesson (feminine; plural lecții)","priority":"optional","sourceSection":"Common Feminine Plurals"} -->
 
 ## Common Neuter Plurals
@@ -79,6 +81,7 @@ Neuter nouns are masculine-like in singular and feminine-like in plural. Their p
 - **Lucrurile sunt simple.** (LOO-kroo-ree-leh soont SEEM-pleh) — The things are simple.
 
 <!-- grammar-card: {"id":"neuter-uri-plural","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Common Neuter Plurals","rule":"Neuter plural endings include uri","example":"Două ___. (things; lucru)","answer":"lucruri","explanation":"Learn un lucru / două lucruri; other neuters have e plurals, so uri is not universal."} -->
+<!-- grammar-card: {"id":"rule-neuter-plural-endings","kind":"concept","format":"qa","priority":"optional","sourceSection":"Common Neuter Plurals","rule":"Neuter plurals often end in -e or -uri","example":"Which two plural endings are most common for neuter nouns?","answer":"-e and -uri.","explanation":"Scaun → scaune, telefon → telefoane; lucru → lucruri, hotel → hoteluri. Learn which one each noun takes."} -->
 <!-- vocab-card: {"id":"vocab-telefon","word":"telefon","meaning":"phone (neuter; plural telefoane)","priority":"optional","sourceSection":"Common Neuter Plurals"} -->
 <!-- vocab-card: {"id":"vocab-oras","word":"oraș","meaning":"city (neuter; plural orașe)","priority":"optional","sourceSection":"Common Neuter Plurals"} -->
 <!-- vocab-card: {"id":"vocab-hotel","word":"hotel","meaning":"hotel (neuter; plural hoteluri)","priority":"optional","sourceSection":"Common Neuter Plurals"} -->
@@ -92,7 +95,7 @@ Some plural forms change the stem vowel or consonant. These are normal Romanian 
 |----------|--------|------|
 | **masă** | **mese** | a → e |
 | **seară** | **seri** | ea → e |
-| **țară** | **țări** | final consonant softens |
+| **țară** | **țări** | a → ă |
 | **băiat** | **băieți** | stem changes and -i plural |
 
 Do not try to invent every plural from rules alone. Use rules to recognize patterns, then memorize common nouns.
@@ -110,7 +113,7 @@ When the plural noun is definite, add the plural definite article:
 - **scaune → scaunele** — chairs → the chairs
 - **lucruri → lucrurile** — things → the things
 
-<!-- grammar-card: {"id":"definite-plural-construction","kind":"concept","format":"qa","priority":"essential","sourceSection":"Definite Plurals","rule":"Definiteness is added to the plural noun form","example":"How do the indefinite plurals băieți and fete become definite?","answer":"Băieți becomes băieții; fete becomes fetele.","explanation":"Masculine plurals take the extra i, while feminine and neuter plurals commonly take le."} -->
+<!-- grammar-card: {"id":"definite-plural-construction","kind":"rule","format":"qa","priority":"essential","sourceSection":"Definite Plurals","rule":"Definiteness is added to the plural noun form","example":"How do the indefinite plurals băieți and fete become definite?","answer":"Băieți becomes băieții; fete becomes fetele.","explanation":"Masculine plurals take the extra i, while feminine and neuter plurals commonly take le."} -->
 <!-- quiz: {"type":"multiple-choice","question":"Which plural is correct for 'carte' (book)?","options":["carte","cărți","carturi","cartele"],"answer":1} -->
 
 ## Sources

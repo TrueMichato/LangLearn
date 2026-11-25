@@ -18,8 +18,9 @@ The later past event is often in **perfectul compus**: **am ajuns**, **m-ai suna
 
 <!-- vocab-card: {"id":"vocab-deja","priority":"optional","sourceSection":"Core Meaning","word":"deja","meaning":"already"} -->
 <!-- vocab-card: {"id":"vocab-inainte-sa","priority":"optional","sourceSection":"Core Meaning","word":"înainte să","meaning":"before (with a clause)"} -->
-<!-- grammar-card: {"id":"past-perfect-sequence","priority":"essential","sourceSection":"Core Meaning","kind":"concept","format":"qa","rule":"The past perfect places an event before another past event","example":"In Când am ajuns, filmul începuse, which event happened first?","answer":"The film started before the speaker arrived.","explanation":"The film started before the speaker arrived."} -->
+<!-- grammar-card: {"id":"past-perfect-sequence","priority":"essential","sourceSection":"Core Meaning","kind":"rule","format":"qa","rule":"The past perfect places an event before another past event","example":"In Când am ajuns, filmul începuse, which event happened first?","answer":"The film started before the speaker arrived.","explanation":"The film started before the speaker arrived."} -->
 <!-- grammar-card: {"id":"past-perfect-start","priority":"essential","sourceSection":"Core Meaning","kind":"rule","format":"cloze","rule":"Mai-mult-ca-perfectul marks an action earlier than another past action","example":"Când am ajuns, lecția ___. (had started)","answer":"începuse","explanation":"The lesson had already started before the speaker arrived."} -->
+<!-- grammar-card: {"id":"rule-past-perfect-earlier","priority":"essential","sourceSection":"Core Meaning","kind":"concept","format":"qa","rule":"The mai-mult-ca-perfect marks an action earlier than another past action","example":"What time relation does the mai-mult-ca-perfect express?","answer":"An action that happened before another past action.","explanation":"Când am ajuns, filmul începuse: the film started before the arrival. Any answer saying earlier than another past event or moment counts."} -->
 
 ## Common Endings
 
@@ -44,6 +45,7 @@ The endings of mai-mult-ca-perfectul are recognizable. Here is **a lucra**.
 <!-- grammar-card: {"id":"past-perfect-first-plural","priority":"optional","sourceSection":"Common Endings","kind":"rule","format":"cloze","rule":"Past-perfect person endings distinguish the subject","example":"Noi ___ deja. (a lucra; had worked)","answer":"lucraserăm","explanation":"The required form of a lucra is lucraserăm."} -->
 <!-- grammar-card: {"id":"past-perfect-second-plural","priority":"optional","sourceSection":"Common Endings","kind":"rule","format":"cloze","rule":"Past-perfect person endings distinguish the subject","example":"Voi ___ deja. (a lucra; had worked)","answer":"lucraserăți","explanation":"The required form of a lucra is lucraserăți."} -->
 <!-- grammar-card: {"id":"past-perfect-third-plural","priority":"optional","sourceSection":"Common Endings","kind":"rule","format":"cloze","rule":"Past-perfect person endings distinguish the subject","example":"Ei ___ deja. (a lucra; had worked)","answer":"lucraseră","explanation":"The required form of a lucra is lucraseră."} -->
+<!-- grammar-card: {"id":"rule-past-perfect-eu-ending","priority":"optional","sourceSection":"Common Endings","kind":"concept","format":"qa","rule":"The eu form of the mai-mult-ca-perfect ends in -sem","example":"Which ending does the eu (I) form of the mai-mult-ca-perfect have?","answer":"-sem","explanation":"Lucrasem, mâncasem, făcusem: I had worked, eaten, done. Any answer giving -sem, or a correct eu form ending in -sem, counts."} -->
 
 ## Frequent Verbs
 

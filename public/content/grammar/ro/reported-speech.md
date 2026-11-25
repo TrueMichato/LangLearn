@@ -92,6 +92,7 @@ Indirect questions do not need a question mark when they are part of a statement
 <!-- grammar-card: {"id":"indirect-whether","priority":"essential","sourceSection":"Indirect Questions","kind":"rule","format":"cloze","rule":"Yes/no indirect questions use dacă","example":"M-a întrebat ___ am timp. (if I have time)","answer":"dacă","explanation":"Dacă introduces an indirect yes/no question."} -->
 <!-- grammar-card: {"id":"indirect-where","priority":"optional","sourceSection":"Indirect Questions","kind":"rule","format":"cloze","rule":"An information question retains its question word","example":"M-a întrebat ___ sunt. (where I am)","answer":"unde","explanation":"Where becomes unde in the indirect question."} -->
 <!-- grammar-card: {"id":"indirect-question-punctuation","priority":"optional","sourceSection":"Indirect Questions","kind":"concept","format":"qa","rule":"An indirect question inside a statement need not end in a question mark","example":"Does M-a întrebat unde sunt require a question mark merely because it reports a question?","answer":"No. The whole sentence is a statement reporting a question.","explanation":"No. The whole sentence is a statement reporting a question."} -->
+<!-- grammar-card: {"id":"rule-indirect-yes-no","kind":"concept","format":"qa","priority":"optional","sourceSection":"Indirect Questions","rule":"Reported yes/no questions are introduced by dacă","example":"Reported information questions keep their question word. What introduces a reported yes/no question instead?","answer":"Dacă (if / whether).","explanation":"Count it if you say dacă. „Vii azi?” → M-a întrebat dacă vin azi."} -->
 
 ## Reporting Commands
 
@@ -110,6 +111,7 @@ Use the right person after **să**:
 
 <!-- grammar-card: {"id":"reported-negative-command","priority":"essential","sourceSection":"Reporting Commands","kind":"rule","format":"cloze","rule":"Reported commands use să plus the appropriate verb form","example":"Mi-a spus ___ nu plec. (He told me not to leave.)","answer":"să","explanation":"The negative follows să: să nu plec."} -->
 <!-- grammar-card: {"id":"reported-command-person","priority":"optional","sourceSection":"Reporting Commands","kind":"rule","format":"cloze","rule":"The să-clause verb agrees with the person receiving the command","example":"Ne-a spus să ___ acolo. (a veni)","answer":"venim","explanation":"Ne-a spus să venim reports an instruction addressed to us."} -->
+<!-- grammar-card: {"id":"rule-reported-command-clause","kind":"concept","format":"qa","priority":"essential","sourceSection":"Reporting Commands","rule":"Reported commands and requests usually become să (subjunctive) clauses","example":"When Romanian reports a command or request, what kind of clause does the command usually become?","answer":"A să clause (the subjunctive).","explanation":"Count it if you say a să clause or the subjunctive. „Pleacă!” → Mi-a spus să plec; „Nu pleca!” → Mi-a spus să nu plec."} -->
 
 ## Sources
 
