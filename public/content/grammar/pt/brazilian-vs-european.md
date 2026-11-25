@@ -111,7 +111,7 @@ These are usual preferences, not exclusive national word lists: **fila**, **meni
 
 ### "Você" vs. "Tu"
 
-<!-- grammar-card: {"id":"variety-tu-agreement","kind":"concept","format":"qa","priority":"essential","sourceSection":"\"Você\" vs. \"Tu\"","rule":"Tu agreement varies in regional speech; standard writing uses queres","example":"How should a learner interpret informal Tu quer ir alongside standard Tu queres ir?","answer":"Tu quer ir is common regional informal usage; standard written tu agreement is queres, while você uses quer.","explanation":"Tu is used in parts of Brazil as well as Portugal; agreement and social context vary."} -->
+<!-- grammar-card: {"id":"variety-tu-agreement","kind":"rule","format":"qa","priority":"essential","sourceSection":"\"Você\" vs. \"Tu\"","rule":"Tu agreement varies in regional speech; standard writing uses queres","example":"How should a learner interpret informal Tu quer ir alongside standard Tu queres ir?","answer":"Tu quer ir is common regional informal usage; standard written tu agreement is queres, while você uses quer.","explanation":"Tu is used in parts of Brazil as well as Portugal; agreement and social context vary."} -->
 
 In Brazil, **você** is the standard "you" in most regions. In Portugal, **tu** is the standard informal "you":
 
@@ -123,6 +123,7 @@ Note: Some regions of Brazil use **tu**, with agreement patterns that vary local
 ### "A gente" vs. "Nós"
 
 <!-- grammar-card: {"id":"variety-a-gente","kind":"rule","format":"cloze","priority":"essential","sourceSection":"\"A gente\" vs. \"Nós\"","rule":"'A gente' as informal 'we'","example":"___ ___ vai ao cinema hoje. (We, informal BR)","answer":"A gente","explanation":"A gente often means we in informal Brazilian usage and takes third-person singular agreement; it is not absent from Portugal."} -->
+<!-- grammar-card: {"id":"rule-a-gente-agreement","kind":"concept","format":"qa","priority":"essential","sourceSection":"\"A gente\" vs. \"Nós\"","rule":"A gente takes third-person singular agreement","example":"In informal Brazilian Portuguese, which verb person and number does the common colloquial replacement for nós take?","answer":"Third-person singular (a gente vai), not the nós form.","explanation":"A gente means we but conjugates like ele/ela: A gente vai ao parque amanhã."} -->
 
 In informal Brazil, **a gente** (lit. "the people") is a frequent replacement for **nós** (we). It takes third person singular conjugation. It also occurs in Portugal; the contrast is a preference, not exclusivity:
 
@@ -133,6 +134,7 @@ In informal Brazil, **a gente** (lit. "the people") is a frequent replacement fo
 ### Gerund vs. "a + infinitive"
 
 <!-- grammar-card: {"id":"variety-progressive","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Gerund vs. \"a + infinitive\"","rule":"Brazilian gerund vs. European 'a + infinitive'","example":"(BR) Eu ___ ___ português. (I am studying)","answer":"estou estudando","explanation":"Brazilian Portuguese commonly prefers estar + gerund; European Portuguese commonly prefers estar a + infinitive, with regional exceptions."} -->
+<!-- grammar-card: {"id":"rule-ep-progressive","kind":"concept","format":"qa","priority":"essential","sourceSection":"Gerund vs. \"a + infinitive\"","rule":"European Portuguese commonly uses estar a + infinitive for the progressive","example":"How does European Portuguese commonly form the progressive?","answer":"Estar a + infinitive (estou a falar).","explanation":"PT Estou a falar contigo corresponds to BR Estou falando com você; this is a preference, not a ban on European gerunds."} -->
 
 This is one of the most immediately recognizable differences:
 
@@ -149,8 +151,9 @@ These are common preferences, not a ban on European gerunds; regional and constr
 
 ### Object Pronoun Placement
 
-<!-- grammar-card: {"id":"variety-clitic","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Object Pronoun Placement","rule":"Brazilian speech commonly uses proclisis where European affirmative clauses use enclisis","example":"(BR) Ele ___ ligou ontem. (He called me)","answer":"me","explanation":"Preverbal me is usual here in Brazil; European affirmative main clauses commonly use ligou-me.","legacyAliases":[{"rule":"Pronoun placement: BR before vs. PT after","example":"(BR) Ele ___ ligou ontem. (He called me)"}]} -->
+<!-- grammar-card: {"id":"variety-clitic","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Object Pronoun Placement","rule":"Brazilian speech commonly uses proclisis where European affirmative clauses use enclisis","example":"(BR) Ele ___ ligou ontem. (object pronoun for eu)","answer":"me","explanation":"Preverbal me is usual here in Brazil; European affirmative main clauses commonly use ligou-me.","legacyAliases":[{"rule":"Pronoun placement: BR before vs. PT after","example":"(BR) Ele ___ ligou ontem. (He called me)"},{"rule":"Brazilian speech commonly uses proclisis where European affirmative clauses use enclisis","example":"(BR) Ele ___ ligou ontem. (He called me)"}]} -->
 <!-- grammar-card: {"id":"variety-clitic-limit","kind":"concept","format":"qa","priority":"essential","sourceSection":"Object Pronoun Placement","rule":"European Portuguese uses proclisis with triggers such as negation","example":"Does European Portuguese require a postverbal object pronoun even after não?","answer":"No. Negation attracts the pronoun before the verb, as in Não me ligou.","explanation":"European enclisis is common in affirmative main clauses, but triggers such as negation require proclisis."} -->
+<!-- grammar-card: {"id":"rule-ep-enclisis","kind":"concept","format":"qa","priority":"optional","sourceSection":"Object Pronoun Placement","rule":"European affirmative main clauses commonly use enclisis","example":"In European Portuguese, where does an object pronoun usually go in an affirmative main clause with no trigger word?","answer":"After the verb, attached with a hyphen (ligou-me).","explanation":"PT Ele ligou-me ontem and Dá-me um copo de água; triggers such as negation put the pronoun before the verb (Não me ligou)."} -->
 
 Brazilian Portuguese commonly places object pronouns **before** the verb (proclisis). European Portuguese commonly places them **after** in affirmative main clauses (enclisis), but triggers such as negation put them before: **Não me ligou**. These are not unconditional before/after rules:
 
@@ -165,7 +168,7 @@ Brazilian Portuguese commonly places object pronouns **before** the verb (procli
 
 ### "Ter" vs. "Haver" for Existence
 
-<!-- grammar-card: {"id":"variety-existence","kind":"concept","format":"qa","priority":"optional","sourceSection":"\"Ter\" vs. \"Haver\" for Existence","rule":"Informal Brazilian existential ter contrasts with standard haver","example":"What do Brazilian Tem muita gente aqui and European Há muita gente aqui both express?","answer":"There are a lot of people here; informal Brazilian speech often uses existential ter, while haver is standard in both varieties.","explanation":"These are usage preferences; haver is not forbidden in Brazil."} -->
+<!-- grammar-card: {"id":"variety-existence","kind":"rule","format":"qa","priority":"optional","sourceSection":"\"Ter\" vs. \"Haver\" for Existence","rule":"Informal Brazilian existential ter contrasts with standard haver","example":"What do Brazilian Tem muita gente aqui and European Há muita gente aqui both express?","answer":"There are a lot of people here; informal Brazilian speech often uses existential ter, while haver is standard in both varieties.","explanation":"These are usage preferences; haver is not forbidden in Brazil."} -->
 
 Informal Brazilian speech often uses existential **ter** (to have) where European usage prefers **haver** (there is/are). **Haver** is standard in both varieties:
 
@@ -177,7 +180,7 @@ Informal Brazilian speech often uses existential **ter** (to have) where Europea
 
 ### "É que" Construction
 
-<!-- grammar-card: {"id":"variety-e-que","kind":"concept","format":"qa","priority":"optional","sourceSection":"\"É que\" Construction","rule":"É que can frame or emphasize a question in both varieties","example":"What role does é que play in O que é que tu queres?","answer":"It emphasizes or frames the question; it is especially frequent in Portugal but also occurs in Brazil.","explanation":"É que is a question construction, not a different tense or a European-only expression."} -->
+<!-- grammar-card: {"id":"variety-e-que","kind":"rule","format":"qa","priority":"optional","sourceSection":"\"É que\" Construction","rule":"É que can frame or emphasize a question in both varieties","example":"What role does é que play in O que é que tu queres?","answer":"It emphasizes or frames the question; it is especially frequent in Portugal but also occurs in Brazil.","explanation":"É que is a question construction, not a different tense or a European-only expression."} -->
 
 European Portuguese frequently uses **é que** for emphasis, especially in questions. This construction also occurs in Brazil:
 

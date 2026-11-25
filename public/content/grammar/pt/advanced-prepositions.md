@@ -84,6 +84,7 @@ As you progress in Portuguese, you'll need more sophisticated ways to connect id
 ### Embora (although)
 
 <!-- grammar-card: {"id":"embora-mood","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Embora (although)","rule":"Embora + subjunctive","example":"Embora ele ___ rico, é humilde. (ser)","answer":"seja","explanation":"Embora takes a subjunctive clause in the standard construction taught here.","legacyAliases":[{"rule":"Embora + subjunctive","example":"___ ele ___ (ser) rico, é humilde."}]} -->
+<!-- grammar-card: {"id":"rule-embora-subjunctive","kind":"concept","format":"qa","priority":"essential","sourceSection":"Embora (although)","rule":"Embora takes the subjunctive","example":"Which mood follows embora (although)?","answer":"The subjunctive (embora esteja chovendo).","explanation":"Embora introduces a concession with a subjunctive verb: Embora esteja chovendo, vou sair."} -->
 <!-- vocab-card: {"id":"vocab-embora","word":"embora","meaning":"although (conjunction)","priority":"essential","sourceSection":"Embora (although)"} -->
 
 Takes the **subjunctive**:
@@ -103,7 +104,7 @@ Takes the **subjunctive**:
 
 ### Assim que (as soon as)
 
-<!-- grammar-card: {"id":"assim-que-time","kind":"concept","format":"qa","priority":"optional","sourceSection":"Assim que (as soon as)","rule":"Assim que distinguishes prospective events from past facts by its verb form","example":"What time contrast is shown by Assim que eu chegar and Assim que soubemos?","answer":"Chegar anticipates a future event; soubemos reports a completed past event.","explanation":"Assim que takes future subjunctive for prospective events and indicative for the past fact illustrated here."} -->
+<!-- grammar-card: {"id":"assim-que-time","kind":"rule","format":"qa","priority":"optional","sourceSection":"Assim que (as soon as)","rule":"Assim que distinguishes prospective events from past facts by its verb form","example":"What time contrast is shown by Assim que eu chegar and Assim que soubemos?","answer":"Chegar anticipates a future event; soubemos reports a completed past event.","explanation":"Assim que takes future subjunctive for prospective events and indicative for the past fact illustrated here."} -->
 <!-- vocab-card: {"id":"vocab-assim","word":"assim que","meaning":"as soon as","priority":"optional","sourceSection":"Assim que (as soon as)"} -->
 
 - **Assim que eu chegar, te ligo.** (ah-SEEN kee eu sheh-GAR) — As soon as I arrive, I'll call you.
@@ -113,7 +114,7 @@ Takes the **subjunctive**:
 ### Desde que (since / provided that)
 
 <!-- grammar-card: {"id":"desde-connector","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Desde que (since / provided that)","rule":"Conditional desde que means provided that and takes the subjunctive","example":"Você pode ir, ___ ___ volte cedo. (provided that)","answer":"desde que","explanation":"Conditional desde que means provided that and takes the subjunctive.","legacyAliases":[{"rule":"Desde que — two meanings","example":"Você pode ir, ___ ___ volte cedo. (provided that)"}]} -->
-<!-- grammar-card: {"id":"desde-meaning-mood","kind":"concept","format":"qa","priority":"essential","sourceSection":"Desde que (since / provided that)","rule":"Desde que has temporal indicative and conditional subjunctive uses","example":"How do the meaning and mood differ in Desde que cheguei and Desde que volte cedo?","answer":"Cheguei gives factual temporal since with the indicative; volte gives a condition, provided that, with the subjunctive.","explanation":"The same connector has different temporal and conditional uses."} -->
+<!-- grammar-card: {"id":"desde-meaning-mood","kind":"rule","format":"qa","priority":"essential","sourceSection":"Desde que (since / provided that)","rule":"Desde que has temporal indicative and conditional subjunctive uses","example":"How do the meaning and mood differ in Desde que cheguei and Desde que volte cedo?","answer":"Cheguei gives factual temporal since with the indicative; volte gives a condition, provided that, with the subjunctive.","explanation":"The same connector has different temporal and conditional uses."} -->
 <!-- vocab-card: {"id":"vocab-desde","word":"desde que","meaning":"since (time); provided that (condition)","priority":"essential","sourceSection":"Desde que (since / provided that)"} -->
 
 Has two meanings depending on context:
@@ -147,6 +148,7 @@ Takes the **subjunctive**:
 ### Para que (so that / in order that)
 
 <!-- grammar-card: {"id":"purpose-mood","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Para que (so that / in order that)","rule":"Para que takes a subjunctive purpose clause","example":"Fale mais alto para que todos ___. (ouvir)","answer":"ouçam","explanation":"Para que introduces a subjunctive purpose clause; ouvir has ouçam in the plural."} -->
+<!-- grammar-card: {"id":"rule-para-que-subjunctive","kind":"concept","format":"qa","priority":"optional","sourceSection":"Para que (so that / in order that)","rule":"Para que takes the subjunctive","example":"Which mood follows para que (so that)?","answer":"The subjunctive (para que eu possa passar na prova).","explanation":"Para que introduces a purpose, so its verb is subjunctive: Estudo para que eu possa passar na prova."} -->
 <!-- vocab-card: {"id":"vocab-para-que","word":"para que","meaning":"so that; in order that","priority":"optional","sourceSection":"Para que (so that / in order that)"} -->
 
 Takes the **subjunctive**:

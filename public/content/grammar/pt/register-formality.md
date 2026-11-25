@@ -64,7 +64,7 @@ The default "you" in most Brazilian contexts:
 
 ### Tu (Regional — South, Northeast, some cities)
 
-<!-- grammar-card: {"id":"regional-tu-standard","kind":"concept","format":"qa","priority":"optional","sourceSection":"Tu (Regional — South, Northeast, some cities)","rule":"Standard written tu agreement differs from some regional informal usage","example":"Which is standard written tu agreement: tu queres or tu quer?","answer":"Tu queres; tu quer also occurs in regional informal Brazilian speech.","explanation":"Regional usage varies; standard written agreement is a register target, not a judgment about speakers."} -->
+<!-- grammar-card: {"id":"regional-tu-standard","kind":"rule","format":"qa","priority":"optional","sourceSection":"Tu (Regional — South, Northeast, some cities)","rule":"Standard written tu agreement differs from some regional informal usage","example":"Which is standard written tu agreement: tu queres or tu quer?","answer":"Tu queres; tu quer also occurs in regional informal Brazilian speech.","explanation":"Regional usage varies; standard written agreement is a register target, not a judgment about speakers."} -->
 
 Used in Rio Grande do Sul, Santa Catarina, Pará, Maranhão, and parts of Rio. Often mixed with "você" verb forms:
 
@@ -75,6 +75,7 @@ Used in Rio Grande do Sul, Santa Catarina, Pará, Maranhão, and parts of Rio. O
 ### O Senhor / A Senhora (Formal)
 
 <!-- grammar-card: {"id":"formal-address","kind":"rule","format":"cloze","priority":"essential","sourceSection":"O Senhor / A Senhora (Formal)","rule":"O senhor / A senhora for formal 'you'","example":"___ ___ gostaria de um café? (formal, to a woman)","answer":"A senhora","explanation":"A senhora is a formal feminine form of you and takes third-person singular agreement."} -->
+<!-- grammar-card: {"id":"rule-senhor-agreement","kind":"concept","format":"qa","priority":"essential","sourceSection":"O Senhor / A Senhora (Formal)","rule":"O senhor and a senhora take third-person singular verbs","example":"Which verb person and number do the formal forms of address meaning sir and ma'am take?","answer":"Third-person singular, as with você (o senhor deseja, a senhora pode).","explanation":"Like você, o senhor and a senhora take third-person singular verbs: O senhor deseja mais alguma coisa?"} -->
 <!-- vocab-card: {"id":"vocab-senhor","word":"o senhor","meaning":"you (formal masculine address); sir","priority":"essential","sourceSection":"O Senhor / A Senhora (Formal)"} -->
 <!-- vocab-card: {"id":"vocab-senhora","word":"a senhora","meaning":"you (formal feminine address); ma'am","priority":"essential","sourceSection":"O Senhor / A Senhora (Formal)"} -->
 
@@ -83,6 +84,8 @@ Used with older people, authority figures, customers, or in professional setting
 - **O senhor deseja mais alguma coisa?** (oo seh-NYOR deh-ZEH-jah) — Would you (sir) like anything else?
 - **A senhora pode assinar aqui, por favor?** (ah seh-NYOH-rah POH-jee) — Could you (ma'am) sign here, please?
 - **Como o senhor se chama?** (KOH-moo oo seh-NYOR see SHAH-mah) — What is your name, sir?
+
+Both take **third-person singular** verb forms, like *você*: **O senhor deseja**, **A senhora pode**.
 
 ### When to Use Each
 
@@ -103,6 +106,7 @@ Brazilian spoken language differs significantly from the written form:
 
 <!-- grammar-card: {"id":"speech-contraction","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Common Simplifications in Speech","rule":"Spoken contractions: você está → cê tá","example":"___ ___ com fome? (informal: Are you hungry?)","answer":"Cê tá","explanation":"Cê tá is common in informal Brazilian speech; full você está is the safer choice in formal writing."} -->
 <!-- grammar-card: {"id":"para-contraction","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Common Simplifications in Speech","rule":"Para → pra/pro in speech","example":"Vamos ___ restaurante. (informal: to the)","answer":"pro","explanation":"Informal para o contracts to pro; para a commonly becomes pra."} -->
+<!-- grammar-card: {"id":"rule-para-a-contraction","kind":"concept","format":"qa","priority":"optional","sourceSection":"Common Simplifications in Speech","rule":"Informal speech contracts para a to pra","example":"In informal Brazilian speech, what does para a usually contract to?","answer":"Pra (Tô indo pra casa dela).","explanation":"Written Eu estou indo para a casa dela becomes spoken Tô indo pra casa dela."} -->
 <!-- vocab-card: {"id":"vocab-ne","word":"né","meaning":"right?; isn't it? (informal não é)","priority":"optional","sourceSection":"Common Simplifications in Speech"} -->
 <!-- vocab-card: {"id":"vocab-bora","word":"bora","meaning":"let's go (informal)","priority":"optional","sourceSection":"Common Simplifications in Speech"} -->
 
@@ -141,7 +145,7 @@ Brazilian spoken language differs significantly from the written form:
 
 ### Email/Letter Closings
 
-<!-- grammar-card: {"id":"formal-closing-choice","kind":"rule","format":"qa","priority":"essential","sourceSection":"Email/Letter Closings","rule":"Atenciosamente is a conventional professional closing","example":"Which full closing taught here is a safe neutral choice for a formal business email?","answer":"Atenciosamente.","explanation":"Atenciosamente is a conventional professional closing; beijos and falou are personal or informal."} -->
+<!-- grammar-card: {"id":"formal-closing-choice","kind":"rule","format":"qa","priority":"essential","sourceSection":"Email/Letter Closings","rule":"Atenciosamente is a conventional professional closing","example":"Which full closing taught here is a safe neutral choice for a formal business email?","answer":"Atenciosamente (Cordialmente also works).","explanation":"Atenciosamente is the conventional professional closing and Cordialmente is also formal; beijos and falou are personal or informal."} -->
 <!-- vocab-card: {"id":"vocab-atenciosamente","word":"atenciosamente","meaning":"sincerely; yours sincerely (letter closing)","priority":"essential","sourceSection":"Email/Letter Closings"} -->
 <!-- vocab-card: {"id":"vocab-respeitosamente","word":"respeitosamente","meaning":"respectfully (formal closing)","priority":"optional","sourceSection":"Email/Letter Closings"} -->
 <!-- vocab-card: {"id":"vocab-cordialmente","word":"cordialmente","meaning":"cordially (letter closing)","priority":"optional","sourceSection":"Email/Letter Closings"} -->

@@ -29,6 +29,9 @@ const clozeFrontExempt: ReadonlyMap<string, string> = new Map([
   ['articles/a-article-contraction', 'The cue (a + a) is needed to show which contraction is asked; the target is the grave accent of à, which the accent fold hides.'],
   ['prepositions/a-definite-contraction', 'The cue (a + a) is needed to show which contraction is asked; the target is the grave accent of à, which the accent fold hides.'],
   ['demonstratives/a-demonstrative', 'The cue (a + aquela) names the parts to contract; the target is the fused, grave-accented àquela, which the accent fold reduces to the cue\'s aquela.'],
+  // The "(a + a)" cue names the preposition and article whose crasis is the target;
+  // accent folding equates à with a, but the grave accent is the tested skill.
+  ['advanced-prepositions/devido-crase', 'cue names the contracted parts; the target is the crasis spelling à'],
 ]);
 
 // Justified overlaps where a rule card's front shows another card's one-word

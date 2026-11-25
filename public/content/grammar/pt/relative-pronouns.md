@@ -7,6 +7,7 @@ Relative pronouns connect clauses and refer back to a noun mentioned earlier (th
 ## Que — The Universal Relative Pronoun
 
 <!-- grammar-card: {"id":"relative-que","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Que — The Universal Relative Pronoun","rule":"Que can refer to people or things as subject or object","example":"O livro ___ eu comprei é ótimo.","answer":"que","explanation":"Que can refer to people or things and serve as subject or object in a relative clause.","legacyAliases":[{"rule":"'Que' as universal relative pronoun","example":"O filme ___ eu assisti é bom."}]} -->
+<!-- grammar-card: {"id":"rule-que-antecedents","kind":"concept","format":"qa","priority":"essential","sourceSection":"Que — The Universal Relative Pronoun","rule":"Que can refer to people or things, as subject or object","example":"What kinds of antecedent can the universal relative pronoun in Portuguese refer to?","answer":"Both people and things, as subject or object.","explanation":"Que works for people and things, as subject (a mulher que mora aqui) or object (o livro que eu comprei)."} -->
 <!-- vocab-card: {"id":"vocab-que","word":"que","meaning":"that; which; who (relative pronoun)","priority":"optional","sourceSection":"Que — The Universal Relative Pronoun"} -->
 
 **Que** is by far the most used relative pronoun in Portuguese. It works for people, things, subjects, and objects:
@@ -20,7 +21,7 @@ Relative pronouns connect clauses and refer back to a noun mentioned earlier (th
 ## Quem — For People (After Prepositions)
 
 <!-- grammar-card: {"id":"relative-quem","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Quem — For People (After Prepositions)","rule":"'Quem' after prepositions for people","example":"A pessoa com ___ eu trabalho é legal.","answer":"quem","explanation":"Quem refers to people after prepositions and does not change for gender or number."} -->
-<!-- grammar-card: {"id":"relative-free-quem","kind":"concept","format":"qa","priority":"optional","sourceSection":"Quem — For People (After Prepositions)","rule":"Quem can introduce a free relative without an explicit antecedent","example":"What does Quem estuda, aprende mean, and does quem refer to an earlier noun here?","answer":"Whoever studies learns; quem does not need an earlier noun in this construction.","explanation":"Quem can introduce a free relative meaning whoever or the one who."} -->
+<!-- grammar-card: {"id":"relative-free-quem","kind":"rule","format":"qa","priority":"optional","sourceSection":"Quem — For People (After Prepositions)","rule":"Quem can introduce a free relative without an explicit antecedent","example":"What does Quem estuda, aprende mean, and does quem refer to an earlier noun here?","answer":"Whoever studies learns; quem does not need an earlier noun in this construction.","explanation":"Quem can introduce a free relative meaning whoever or the one who."} -->
 <!-- vocab-card: {"id":"vocab-quem","word":"quem","meaning":"who; whom; whoever (depending on construction)","priority":"optional","sourceSection":"Quem — For People (After Prepositions)"} -->
 
 **Quem** is used for people, especially after prepositions. It does not change for gender or number:
@@ -38,6 +39,7 @@ Relative pronouns connect clauses and refer back to a noun mentioned earlier (th
 ## O qual / A qual / Os quais / As quais — Formal Usage
 
 <!-- grammar-card: {"id":"relative-qual-agreement","kind":"rule","format":"cloze","priority":"optional","sourceSection":"O qual / A qual / Os quais / As quais — Formal Usage","rule":"O qual and its variants agree with the antecedent","example":"As cidades nas ___ moramos eram pequenas.","answer":"quais","explanation":"O qual and its variants agree with the antecedent; em + as quais gives nas quais."} -->
+<!-- grammar-card: {"id":"rule-qual-agreement","kind":"concept","format":"qa","priority":"optional","sourceSection":"O qual / A qual / Os quais / As quais — Formal Usage","rule":"The formal qual relatives agree with their antecedent","example":"What do the formal relatives built on qual agree with in gender and number?","answer":"The antecedent they refer back to.","explanation":"The article and qual agree with the antecedent: a empresa na qual, os livros sobre os quais."} -->
 <!-- vocab-card: {"id":"vocab-o-qual","word":"o qual","meaning":"which; who (formal masculine singular relative)","priority":"optional","sourceSection":"O qual / A qual / Os quais / As quais — Formal Usage"} -->
 
 These forms agree in gender and number with the antecedent. They are more formal and used especially after compound prepositions:
@@ -68,7 +70,8 @@ These forms agree in gender and number with the antecedent. They are more formal
 ## Cujo / Cuja / Cujos / Cujas — Whose
 
 <!-- grammar-card: {"id":"relative-cujo","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Cujo / Cuja / Cujos / Cujas — Whose","rule":"'Cujo' agrees with the possessed noun","example":"A mulher ___ filho é médico mora aqui.","answer":"cujo","explanation":"Cujo agrees with filho, not mulher, and no article is inserted after it."} -->
-<!-- grammar-card: {"id":"relative-cujo-no-article","kind":"concept","format":"qa","priority":"optional","sourceSection":"Cujo / Cuja / Cujos / Cujas — Whose","rule":"No article follows possessive relative cujo","example":"Is the sequence cuja a filha correct in this relative construction?","answer":"No. Use cuja filha, without an article after the relative.","explanation":"Cujo and its agreeing forms precede the possessed noun directly."} -->
+<!-- grammar-card: {"id":"relative-cujo-no-article","kind":"rule","format":"qa","priority":"optional","sourceSection":"Cujo / Cuja / Cujos / Cujas — Whose","rule":"No article follows possessive relative cujo","example":"Is the sequence cuja a filha correct in this relative construction?","answer":"No. Use cuja filha, without an article after the relative.","explanation":"Cujo and its agreeing forms precede the possessed noun directly."} -->
+<!-- grammar-card: {"id":"rule-cujo-agreement","kind":"concept","format":"qa","priority":"essential","sourceSection":"Cujo / Cuja / Cujos / Cujas — Whose","rule":"Cujo agrees with the possessed noun, not the possessor","example":"When a relative pronoun means whose, which noun does it agree with in gender and number?","answer":"The possessed noun that follows it, not the possessor.","explanation":"Cujo agrees with what is possessed: a mulher cuja filha, os alunos cujos pais."} -->
 <!-- vocab-card: {"id":"vocab-cujo","word":"cujo","meaning":"whose (masculine singular possessed noun)","priority":"optional","sourceSection":"Cujo / Cuja / Cujos / Cujas — Whose"} -->
 
 **Cujo** means "whose" and agrees with the **possessed noun** (not the possessor). It never takes an article after it:
