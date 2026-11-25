@@ -8,22 +8,12 @@
     },
     "modal-verbs": {},
     "stressed-possessives": {
-      "split": {
-        "suyo-ambiguity": [
-          "suyo-why-ambiguous",
-          "rule-suyo-de-ella"
-        ]
-      },
-      "listExempt": {
-        "suyo-ambiguity": "The owner list is one fact (suyo's full referential range: third person plus usted/ustedes). It is kept as an optional overview after the atomic split into suyo-why-ambiguous and rule-suyo-de-ella."
+      "retired": {
+        "suyo-ambiguity": {"successors": ["suyo-why-ambiguous", "rule-suyo-de-ella"], "reason": "Two-part overview duplicated its split cells."}
       }
     },
     "apocopation": {
       "split": {
-        "saint-exception-cue": [
-          "santo-do-exception",
-          "santo-to-exceptions"
-        ],
         "cualesquiera-register": [
           "cualquiera-de-one-member"
         ]
@@ -31,8 +21,8 @@
       "answerChanged": {
         "cualesquiera-register": "The two-part question (register plus how to say 'any one of the books') was narrowed to register only; the production half moved to cualquiera-de-one-member."
       },
-      "listExempt": {
-        "saint-exception-cue": "Kept as an optional overview of the four conventional Santo names behind one memory cue; the atomic recall now lives in santo-do-exception and santo-to-exceptions."
+      "retired": {
+        "saint-exception-cue": {"successors": ["santo-do-exception", "santo-to-exceptions"], "reason": "Four-name overview duplicated its split cells."}
       }
     },
     "refranes-as-grammar": {

@@ -140,7 +140,6 @@ Duration **por** is especially common in some American varieties. Depending on t
 - **Para →** a forward arrow **→** (purpose, destination, deadline, recipient)
 - **Por →** a cycle or exchange **⇄** (cause, exchange, means, movement through/along)
 
-<!-- grammar-card: {"id":"arrow-mnemonic","kind":"concept","format":"qa","priority":"optional","sourceSection":"Memory Hooks","rule":"The arrow and cycle are memory cues, not exhaustive definitions","example":"What do the forward-arrow and exchange-cycle memory hooks suggest for the two Spanish for-prepositions?","answer":"Para points toward a purpose, destination, deadline or recipient; por evokes cause, exchange, means or movement through.","explanation":"The images organize common meanings; they do not replace lexical usage or account for every use such as para mí."} -->
 ## Sources
 
 - [Real Academia Española — Por y Para](https://www.rae.es/gram%C3%A1tica/sint%C3%A1xis/preposiciones-por-y-para) — Official distinction
