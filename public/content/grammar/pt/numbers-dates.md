@@ -81,7 +81,7 @@ Numbers 21–29 use **vinte e + digit**. This pattern repeats for 30s, 40s, etc.
 | 90 | noventa |
 | 100 | cem / cento |
 
-> **Cem vs. Cento:** Use **cem** for exactly 100, and **cento** when combined with other numbers (cento e um, cento e vinte).
+> **Cem vs. Cento:** Use **cem** for exactly 100, including before **mil** and **milhões** (cem mil, cem milhões). Use **cento** when more follows (cento e um, cento e vinte).
 
 - **Eu tenho trinta e cinco anos** (eh-oo ten-yoo treen-tah ee seen-koo ah-nooz) — I'm thirty-five years old
 - **A conta é noventa e nove reais** (ah kon-tah eh noh-ven-tah ee noh-vee heh-ahyz) — The bill is ninety-nine reais
@@ -96,7 +96,7 @@ Numbers 21–29 use **vinte e + digit**. This pattern repeats for 30s, 40s, etc.
 <!-- vocab-card: {"id":"vocab-cem","word":"cem","meaning":"one hundred (exactly)","priority":"optional","sourceSection":"21–100"} -->
 <!-- grammar-card: {"id":"tens-e-units","kind":"rule","format":"cloze","priority":"essential","sourceSection":"21–100","rule":"Tens and units are joined with e","example":"trinta ___ cinco. (thirty-five)","answer":"e","explanation":"Use tens + e + unit, as in vinte e um and noventa e nove."} -->
 <!-- grammar-card: {"id":"cem-cento","kind":"rule","format":"cloze","priority":"essential","sourceSection":"21–100","rule":"Cem is exactly 100; cento introduces additional tens or units","example":"___ e um. (101)","answer":"cento","explanation":"Use cem for exactly 100, but cento e um for 101."} -->
-<!-- grammar-card: {"id":"rule-cem-exactly-hundred","kind":"concept","format":"qa","priority":"optional","sourceSection":"21–100","rule":"Cem is used for exactly 100; combined numbers use cento","example":"When is the form cem used for one hundred?","answer":"For exactly 100; from 101 to 199 the form is cento (cento e um).","explanation":"Any answer saying exactly 100 counts: cem pessoas, but cento e vinte."} -->
+<!-- grammar-card: {"id":"rule-cem-exactly-hundred","kind":"concept","format":"qa","priority":"optional","sourceSection":"21–100","rule":"Cem is used for exactly 100; cento is used when more follows","example":"When is the form cem used for one hundred?","answer":"For exactly 100, including before mil (cem mil); from 101 to 199 the form is cento, as in cento e um.","explanation":"Any answer saying exactly 100 counts: cem pessoas, but cento e vinte."} -->
 
 ### 100–1000+
 
@@ -257,7 +257,7 @@ To say the full date:
 
 <!-- grammar-card: {"id":"date-first-day","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Telling Dates","rule":"Dates use cardinal numbers except for the 1st: 'primeiro de janeiro' but 'dois de fevereiro', 'três de março'","example":"___ de janeiro. (January 1st)","answer":"Primeiro","explanation":"The first day uses primeiro; subsequent days normally use cardinal numbers.","legacyAliases":[{"rule":"Dates use cardinal numbers except for the 1st: 'primeiro de janeiro' but 'dois de fevereiro', 'três de março'","example":"O Natal é no dia vinte e cinco de ___"}]} -->
 <!-- grammar-card: {"id":"full-date-order","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Telling Dates","rule":"A full date joins day, month, and year with de","example":"quinze ___ julho ___ dois mil e vinte e quatro. (July 15, 2024)","answer":"de … de","explanation":"Portuguese orders the date as day de month de year.","legacyAliases":[{"rule":"A full date joins day, month, and year with de","example":"quinze ___ julho de dois mil e vinte e quatro. (July 15, 2024)"}]} -->
-<!-- grammar-card: {"id":"rule-date-cardinals","kind":"concept","format":"qa","priority":"essential","sourceSection":"Telling Dates","rule":"Dates use cardinal numbers except for the first of the month","example":"How do Portuguese dates name the day of the month?","answer":"With cardinal numbers (dois, quinze), except primeiro for the first.","explanation":"Any answer naming cardinal numbers with the exception for the first counts: primeiro de janeiro, but dois de fevereiro."} -->
+<!-- grammar-card: {"id":"rule-date-cardinals","kind":"concept","format":"qa","priority":"essential","sourceSection":"Telling Dates","rule":"Dates use cardinal numbers except for the first of the month","example":"In Brazilian Portuguese, how do dates name the day of the month?","answer":"With cardinal numbers (dois, quinze), except primeiro for the first.","explanation":"Any answer naming cardinal numbers with the exception for the first counts: primeiro de janeiro, but dois de fevereiro."} -->
 
 ## Telling Time (Horas)
 
@@ -281,7 +281,7 @@ To say the full date:
 <!-- vocab-card: {"id":"vocab-meio-dia","word":"meio-dia","meaning":"noon","priority":"optional","sourceSection":"Full hours:"} -->
 <!-- vocab-card: {"id":"vocab-meia-noite","word":"meia-noite","meaning":"midnight","priority":"optional","sourceSection":"Full hours:"} -->
 <!-- grammar-card: {"id":"clock-time-agreement","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Full hours:","rule":"Clock time uses é with uma hora, meio-dia, and meia-noite; other numbered hours use são","example":"___ três horas da tarde (It's 3 PM)","answer":"São","explanation":"Três horas is plural. Singular noon and midnight are exceptions to the old all-other-hours shortcut.","legacyAliases":[{"rule":"For telling time, use 'é' for 1:00 (singular) and 'são' for all other hours (plural)","example":"___ três horas da tarde (It's 3 PM)"}]} -->
-<!-- grammar-card: {"id":"rule-singular-clock-times","kind":"concept","format":"qa","priority":"essential","sourceSection":"Full hours:","rule":"One o'clock, noon, and midnight take singular é","example":"Which clock times take a singular verb?","answer":"One o'clock, noon, and midnight: é uma hora, é meio-dia, é meia-noite.","explanation":"Any answer naming one o'clock, noon, and midnight counts; the other numbered hours take são."} -->
+<!-- grammar-card: {"id":"rule-singular-clock-times","kind":"concept","format":"qa","priority":"essential","sourceSection":"Full hours:","rule":"Uma hora, meio-dia, and meia-noite take singular é","example":"When telling the time, which form of ser goes with one o'clock, noon, and midnight?","answer":"É (singular), as in é meio-dia.","explanation":"Other hours are plural and take são: são duas horas."} -->
 
 ### Minutes:
 

@@ -5672,8 +5672,8 @@
           "priority": "optional",
           "sourceSection": "21–100",
           "prompt": "When is the form cem used for one hundred?",
-          "answer": "For exactly 100; from 101 to 199 the form is cento (cento e um).",
-          "objective": "Recall that cem is used for exactly one hundred."
+          "answer": "For exactly 100, including before mil (cem mil); from 101 to 199 the form is cento, as in cento e um.",
+          "objective": "Recall that cem is used for exactly one hundred, including before mil."
         },
         {
           "id": "vocab-duzentos",
@@ -6122,7 +6122,7 @@
           "format": "qa",
           "priority": "essential",
           "sourceSection": "Telling Dates",
-          "prompt": "How do Portuguese dates name the day of the month?",
+          "prompt": "In Brazilian Portuguese, how do dates name the day of the month?",
           "answer": "With cardinal numbers (dois, quinze), except primeiro for the first.",
           "objective": "Recall that dates use cardinal numbers except primeiro for the first."
         },
@@ -6169,9 +6169,9 @@
           "format": "qa",
           "priority": "essential",
           "sourceSection": "Full hours:",
-          "prompt": "Which clock times take a singular verb?",
-          "answer": "One o'clock, noon, and midnight: é uma hora, é meio-dia, é meia-noite.",
-          "objective": "Recall which clock times take singular é."
+          "prompt": "When telling the time, which form of ser goes with one o'clock, noon, and midnight?",
+          "answer": "É (singular), as in é meio-dia.",
+          "objective": "Recall that uma hora, meio-dia, and meia-noite take singular é."
         },
         {
           "id": "half-past",

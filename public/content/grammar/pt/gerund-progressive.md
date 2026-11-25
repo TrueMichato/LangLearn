@@ -6,7 +6,7 @@ In Brazilian Portuguese, the gerund is commonly used to express ongoing actions,
 
 ## Gerund Formation
 
-The gerund is formed by replacing the infinitive ending with the appropriate gerund ending:
+The gerund is formed by replacing the infinitive ending with the appropriate gerund ending. Put simply, drop the infinitive's final **-r** and add **-ndo**:
 
 | Conjugation | Infinitive | Gerund | Example |
 |-------------|-----------|--------|---------|
@@ -44,7 +44,7 @@ Even verbs that are irregular elsewhere can follow the usual replacement rule he
 <!-- vocab-card: {"id":"vocab-por","word":"pôr","meaning":"to put","priority":"optional","sourceSection":"Common Forms to Notice"} -->
 <!-- vocab-card: {"id":"vocab-vir","word":"vir","meaning":"to come","priority":"optional","sourceSection":"Common Forms to Notice"} -->
 
-<!-- grammar-card: {"id":"gerund-endings","kind":"concept","format":"qa","priority":"essential","sourceSection":"Gerund Formation","rule":"Regular gerunds replace the infinitive ending","example":"How do regular Portuguese -ar, -er, and -ir infinitives form their gerunds?","answer":"Replace -ar with -ando, -er with -endo, and -ir with -indo.","explanation":"The endings attach to the remaining stem: falar → falando, comer → comendo, partir → partindo. Endings are grammar patterns, not vocabulary words."} -->
+<!-- grammar-card: {"id":"gerund-endings","kind":"concept","format":"qa","priority":"essential","sourceSection":"Gerund Formation","rule":"A Portuguese gerund replaces the infinitive's final -r with -ndo","example":"What single change turns a Portuguese infinitive into its gerund?","answer":"Replace the final -r with -ndo.","explanation":"cantar → cantando, beber → bebendo, abrir → abrindo.","legacyAliases":[{"rule":"Regular gerunds replace the infinitive ending","example":"How do regular Portuguese -ar, -er, and -ir infinitives form their gerunds?"}]} -->
 
 <!-- grammar-card: {"id":"gerund-ar-application","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Gerund Formation","rule":"An -ar infinitive forms its gerund with -ando","example":"falar → ___. (gerund)","answer":"falando","explanation":"Remove -ar from falar and add -ando. This forms a gerund, not a complete present-progressive tense by itself."} -->
 
@@ -131,7 +131,7 @@ To express what was happening at a specific moment in the past:
 <!-- grammar-card: {"id":"gerund-versus-progressive","kind":"rule","format":"qa","priority":"essential","sourceSection":"Present Progressive: estar + gerund","rule":"A gerund and a progressive tense are different units","example":"What is the difference between estudando and estou estudando?","answer":"Estudando is the gerund; estou estudando combines present-tense estar with that gerund to mean I am studying.","explanation":"The gerund itself does not identify a subject or tense. Conjugated estar supplies that information in the progressive construction."} -->
 
 <!-- grammar-card: {"id":"progressive-variety-contrast","kind":"rule","format":"qa","priority":"essential","sourceSection":"Brazilian vs European Portuguese","rule":"Progressive preferences differ between Brazilian and European Portuguese","example":"What common progressive constructions correspond to I am speaking in Brazilian and European Portuguese?","answer":"Brazilian Portuguese commonly uses estou falando; European Portuguese commonly uses estou a falar.","explanation":"These are variety preferences, not absolute restrictions. Keep the variety label when practicing the lesson's estar + gerund prompts."} -->
-<!-- grammar-card: {"id":"rule-european-progressive","kind":"concept","format":"qa","priority":"optional","sourceSection":"Brazilian vs European Portuguese","rule":"European Portuguese commonly forms the progressive with estar a + infinitive","example":"Which progressive construction does European Portuguese commonly use instead of estar + gerund?","answer":"Estar a + infinitive, as in estou a falar.","explanation":"Any answer naming estar a plus the infinitive counts; Brazilian Portuguese prefers estou falando."} -->
+<!-- grammar-card: {"id":"rule-european-progressive","kind":"concept","format":"qa","priority":"optional","sourceSection":"Brazilian vs European Portuguese","rule":"European Portuguese commonly forms the progressive with estar a + infinitive","example":"In European Portuguese, which construction commonly expresses an action in progress?","answer":"Estar a + infinitive, as in estou a falar.","explanation":"Any answer naming estar a plus the infinitive counts; Brazilian Portuguese prefers estou falando."} -->
 
 <!-- grammar-card: {"id":"continuar-meaning","kind":"rule","format":"qa","priority":"optional","sourceSection":"continuar + gerund (to keep doing)","rule":"Continuar plus gerund expresses continuation","example":"What does continua estudando add beyond está estudando?","answer":"It means keeps studying or continues studying, emphasizing that the action continues.","explanation":"Continuar contributes continuation, whereas estar presents an action in progress without that extra meaning."} -->
 
