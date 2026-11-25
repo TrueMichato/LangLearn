@@ -1,5 +1,7 @@
 # Russian Culture & Context for Language Learners
 
+<!-- vocab-inventory: {"mode":"explicit"} -->
+
 Learning Russian isn't just about grammar and vocabulary — it's about understanding the culture that shapes how the language is used. This lesson covers the cultural context that directly affects everyday communication: naming conventions, formality registers, social etiquette, and traditions that every learner needs to know.
 
 ---
@@ -7,6 +9,12 @@ Learning Russian isn't just about grammar and vocabulary — it's about understa
 ## Patronymics (Отчество)
 
 Every Russian person has three names: a first name *(имя)*, a patronymic *(отчество)*, and a surname *(фамилия)*. The patronymic is derived from the father's first name and is a core part of Russian identity — not a middle name you can skip.
+
+<!-- vocab-card: {"id":"vocab-otchestvo","word":"о́тчество","meaning":"patronymic","priority":"optional","sourceSection":"Patronymics (Отчество)"} -->
+
+<!-- vocab-card: {"id":"vocab-familiya","word":"фами́лия","meaning":"surname, family name","priority":"optional","sourceSection":"Patronymics (Отчество)"} -->
+
+<!-- vocab-card: {"id":"vocab-imya","word":"и́мя","meaning":"first name","priority":"optional","sourceSection":"Patronymics (Отчество)"} -->
 
 ### How Patronymics Are Formed
 
@@ -44,9 +52,17 @@ Use name + patronymic with: teachers, doctors, professors, older people, bosses,
 
 <!-- quiz:{"type":"multiple-choice","question":"If a woman's father is named Сергей, what is her patronymic?","options":["Сергеевич","Сергеевна","Сергеева","Сергейовна"],"answer":1} -->
 
-<!-- grammar-card: {"rule":"A woman's patronymic ends in -овна or -евна","hint":"her father is Иван","example":"Мария ___, можно вопрос?","answer":"Ивановна","explanation":"A daughter of Иван is Ивановна, the feminine counterpart of the masculine Иванович."} -->
+<!-- grammar-card: {"id":"patronymic-ivanovna","kind":"rule","format":"cloze","priority":"essential","sourceSection":"How Patronymics Are Formed","rule":"A woman's patronymic ends in -овна or -евна","example":"Your teacher Maria's father is named Иван. Address her formally, with her patronymic: Мария ___, можно вопрос?","answer":"Ивановна","explanation":"A daughter of Иван is Ивановна, the feminine counterpart of the masculine Иванович. Иван ends in a hard consonant, so it takes -овна rather than -евна.","legacyAliases":[{"rule":"A woman's patronymic ends in -овна or -евна","example":"Мария ___, можно вопрос?"}]} -->
 
-<!-- grammar-card: {"rule":"Respectful address is first name plus patronymic, with no title","hint":"his father is Пётр","example":"Здравствуйте, Иван ___!","answer":"Петрович","explanation":"A son of Пётр is Петрович; Russian uses this instead of Mr and a surname."} -->
+<!-- grammar-card: {"id":"father-of-anna","kind":"rule","format":"qa","priority":"essential","sourceSection":"How Patronymics Are Formed","rule":"The patronymic names the father","example":"You are introduced to Анна Сергеевна Орлова. What is her father's first name?","answer":"Сергей (Sergey).","explanation":"The middle name Сергеевна is her patronymic: -евна on Сергей means daughter of Sergey. Орлова is the family surname."} -->
+
+<!-- grammar-card: {"id":"patronymic-petrovich","kind":"rule","format":"cloze","priority":"optional","sourceSection":"How Patronymics Are Formed","rule":"Respectful address is first name plus patronymic, with no title","example":"Greet Ivan, whose father is named Пётр, formally with his patronymic: Здравствуйте, Иван ___!","answer":"Петрович","explanation":"A son of Пётр is Петрович: -ович is added and the ё becomes е. Russian uses name plus patronymic instead of Mr and a surname.","legacyAliases":[{"rule":"Respectful address is first name plus patronymic, with no title","example":"Здравствуйте, Иван ___!"}]} -->
+
+<!-- grammar-card: {"id":"rule-formal-address","kind":"concept","format":"qa","priority":"essential","sourceSection":"When to Use Patronymics","rule":"The standard formal address is first name plus patronymic","example":"How do you address a Russian teacher, doctor or boss by name, formally?","answer":"First name plus patronymic.","explanation":"Здравствуйте, Иван Петрович! Russian has no Mr or Mrs plus surname for this; name and patronymic carry the respect."} -->
+
+<!-- grammar-card: {"id":"rule-patronymic-source","kind":"concept","format":"qa","priority":"essential","sourceSection":"How Patronymics Are Formed","rule":"A patronymic is formed from the father's first name","example":"A Russian patronymic is formed from whose name?","answer":"The father's first name.","explanation":"Every Russian has one: Мария Ивановна is Maria, daughter of Ivan."} -->
+
+<!-- grammar-card: {"id":"rule-female-patronymic-ending","kind":"concept","format":"qa","priority":"optional","sourceSection":"How Patronymics Are Formed","rule":"Female patronymics end in -овна or -евна","example":"Which endings turn a father's name into a woman's patronymic?","answer":"-овна or -евна.","explanation":"Иван → Ивановна, Сергей → Сергеевна. The male counterparts are -ович and -евич."} -->
 
 ---
 
@@ -56,7 +72,7 @@ The distinction between **ты** *(ty)* and **Вы** *(Vy)* is not just grammar 
 
 ### Вы — The Formal "You"
 
-**Вы** (always capitalized when addressing one person formally) expresses respect, distance, or professional relationships:
+**Вы** (often capitalized in writing when addressing one person formally) expresses respect, distance, or professional relationships:
 
 - **Вы не подскажете, где метро?** *(Vy ne podskazhete, gde metro?)* — Could you tell me where the metro is? (to a stranger)
 - **Как Вас зовут?** *(Kak Vas zovut?)* — What is your name? (formal)
@@ -86,7 +102,7 @@ Switching from **Вы** to **ты** is often explicitly negotiated — this is a
 
 <!-- quiz:{"type":"multiple-choice","question":"Who traditionally initiates the switch from Вы to ты?","options":["The younger person","The person of lower status","The older person, woman, or person of higher status","Anyone can switch at any time"],"answer":2} -->
 
-<!-- grammar-card: {"rule":"A stranger is always addressed with Вы","hint":"ты (informal) / Вы (polite)","example":"___ не подскажете, где метро?","answer":"Вы","explanation":"Asking directions of someone you do not know calls for the polite Вы; ты would be rude."} -->
+<!-- grammar-card: {"id":"stranger-metro","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Вы — The Formal \"You\"","rule":"A stranger is always addressed with Вы","example":"Ask a stranger the way to the metro. Supply the pronoun: ___ не подскажете, где метро?","answer":"Вы","explanation":"Asking directions of someone you do not know calls for the polite Вы, and подскажете already carries its plural ending; ты would be rude.","legacyAliases":[{"rule":"A stranger is always addressed with Вы","example":"___ не подскажете, где метро?"}]} -->
 
 ---
 
@@ -102,6 +118,8 @@ The Russian full name follows this order: **Имя Отчество Фамили
 Note that Russian surnames change by gender:
 - Male: **Иванов, Петров, Сидоров** *(Ivanov, Petrov, Sidorov)*
 - Female: **Иванова, Петрова, Сидорова** *(Ivanova, Petrova, Sidorova)*
+
+<!-- grammar-card: {"id":"surname-ivanova","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Full Name Structure","rule":"Surnames like Иванов add -а for a woman","example":"Anna's father is Пётр Иванов. Give her surname, in the form for a woman: Анна Петровна ___.","answer":"Иванова","explanation":"Surnames in -ов, -ев and -ин take a feminine form in -а: Иванов → Иванова."} -->
 
 ### Diminutive Names (Уменьшительные имена)
 
@@ -148,6 +166,8 @@ Understanding these cultural touchstones helps you understand conversations, jok
 - **Поехали на дачу!** *(Poyekhali na dachu!)* — Let's go to the dacha!
 - Growing your own vegetables at the dacha is a point of pride, not just a hobby
 
+<!-- vocab-card: {"id":"vocab-dacha","word":"да́ча","meaning":"dacha, country house","priority":"optional","sourceSection":"Дача (Dacha) Culture"} -->
+
 ### Tea Culture
 
 - **Чай** *(chay)* — tea is the default drink offered to every guest
@@ -160,7 +180,7 @@ Understanding these cultural touchstones helps you understand conversations, jok
 Russians take many superstitions seriously in daily life:
 
 - **Не свисти в доме — денег не будет.** *(Ne svisti v dome — deneg ne budet.)* — Don't whistle indoors — you'll have no money.
-- **Не здоровайся через порог.** *(Ne zdorovavsya cherez porog.)* — Don't shake hands or greet across a threshold — it brings bad luck.
+- **Не здоровайся через порог.** *(Ne zdoróvaysya cherez porog.)* — Don't shake hands or greet across a threshold — it brings bad luck.
 - **Присядем на дорожку.** *(Prisyadem na dorozhku.)* — Let's sit before the journey. (Everyone sits in silence for a moment before someone leaves on a trip.)
 - If you return home for something you forgot, look in the mirror before leaving again
 - Even numbers of flowers are for funerals — **always give an odd number** at celebrations
@@ -192,9 +212,15 @@ Toasting is an art form in Russia. Simply raising your glass and saying "cheers"
 
 > **Common misconception:** Many foreigners think **"На здоровье!"** *(Na zdorov'ye!)* means "Cheers!" It actually means "You're welcome" (in response to thanks for food/drink). The correct toast is **"За здоровье!"**
 
+<!-- grammar-card: {"id":"toast-za","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Toast Culture","rule":"Toasts use за + accusative: to (something)","example":"Raise your glass and propose a toast to health. Supply the preposition: ___ здоровье!","answer":"За","explanation":"A toast is за + accusative (за дружбу, за любовь). На здоровье is not a toast: it answers thanks for food."} -->
+
+<!-- grammar-card: {"id":"na-zdorovye-meaning","kind":"rule","format":"qa","priority":"optional","sourceSection":"Toast Culture","rule":"На здоровье answers thanks for food or drink","example":"You thank your host for dinner and she replies «На здоровье!» What does she mean?","answer":"You're welcome.","explanation":"На здоровье (literally, for your health) is the reply to thanks for food or drink, not a toast."} -->
+
 ### Mealtime Etiquette
 
 - **Приятного аппетита!** *(Priyatnogo appetita!)* — Bon appétit! (said before every meal — it's rude not to say it)
+
+<!-- vocab-card: {"id":"vocab-priyatnogo-appetita","word":"прия́тного аппети́та","meaning":"enjoy your meal","priority":"optional","sourceSection":"Mealtime Etiquette"} -->
 - **Спасибо, очень вкусно!** *(Spasibo, ochen' vkusno!)* — Thank you, very delicious! (essential compliment to the cook)
 - **Добавки?** *(Dobavki?)* — More? / Seconds? (hosts will insist you eat more — refusing once is expected, accept on the second or third offer)
 
@@ -202,6 +228,8 @@ Toasting is an art form in Russia. Simply raising your glass and saying "cheers"
 
 - **С днём рождения!** *(S dnyom rozhdeniya!)* — Happy birthday!
 - **Всего самого лучшего!** *(Vsego samogo luchshego!)* — All the very best!
+
+<!-- vocab-card: {"id":"vocab-s-dnyom-rozhdeniya","word":"с днём рожде́ния","meaning":"happy birthday","priority":"optional","sourceSection":"Birthday Wishes"} -->
 
 > **Superstition:** Never wish someone happy birthday *before* the actual date — it's considered very bad luck!
 

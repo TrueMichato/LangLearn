@@ -1,5 +1,7 @@
 # Choosing Verb Aspect: A Practical Guide (Выбор вида глагола)
 
+<!-- vocab-inventory: {"mode":"explicit"} -->
+
 Earlier lessons introduced perfective and imperfective aspects and explored aspect pairs in detail. This lesson takes a **practical, decision-based approach** — when you're composing a sentence, how do you choose? We'll work through real situations with clear rules of thumb, common patterns, and the tricky edge cases that trip up learners.
 
 ---
@@ -38,7 +40,9 @@ The imperfective aspect focuses on the **process**, **duration**, **repetition**
 
 <!-- quiz:{"type":"multiple-choice","question":"'Он каждый день бегал' uses imperfective because the action is:","options":["Completed once","A repeated habit","A future plan","An urgent command"],"answer":1} -->
 
-<!-- grammar-card: {"rule":"A background action interrupted by another takes the imperfective","hint":"читать / прочитать","example":"Я ___, когда ты позвонил.","answer":"читал","explanation":"The reading was still under way when the call came, so the imperfective sets the scene."} -->
+<!-- grammar-card: {"id":"interrupted-reading","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Ongoing actions (process in progress)","rule":"A background action interrupted by another takes the imperfective","example":"Anton was in the middle of reading when you called. Use читать or прочитать: Антон ___, когда ты позвонил.","answer":"читал","explanation":"The reading was still under way when the call came, so the imperfective sets the scene; the call itself, a single completed event, is perfective позвонил.","legacyAliases":[{"rule":"A background action interrupted by another takes the imperfective","example":"Я ___, когда ты позвонил."}]} -->
+
+<!-- grammar-card: {"id":"rule-habitual-imperfective","kind":"concept","format":"qa","priority":"essential","sourceSection":"Repeated or habitual actions","rule":"Repeated or habitual actions take the imperfective","example":"Which aspect do you use for a repeated or habitual action, such as something done every day?","answer":"Imperfective.","explanation":"Он каждый день бегал: каждый день, часто and всегда signal repetition, so the verb is imperfective even though each run was finished."} -->
 
 ---
 
@@ -68,13 +72,15 @@ The perfective aspect focuses on the **result**, **completion**, **single event*
 
 **Она встала, оделась и вышла.** *(Oná vstála, odélas i výshla.)* — She got up, got dressed, and went out.
 
+<!-- grammar-card: {"id":"rule-sequence-perfective","kind":"concept","format":"qa","priority":"optional","sourceSection":"Sequence of completed events","rule":"A sequence of completed events takes the perfective","example":"For a chain of completed actions, one after another — I came home, had dinner and went to bed — which aspect do the verbs take?","answer":"Perfective.","explanation":"Each action finishes before the next begins: пришёл, поужинал и лёг спать."} -->
+
 ### Achieving a result in the future
 
 **Я прочитаю эту книгу завтра.** *(Ya prochitáyu étu knígu závtra.)* — I'll read (finish) this book tomorrow.
 
-**Мы решим эту проблему.** *(My reshím étu problémy.)* — We'll solve this problem.
+**Мы решим эту проблему.** *(My reshím étu problému.)* — We'll solve this problem.
 
-<!-- grammar-card: {"rule":"An action with a reached result takes the perfective","hint":"готовить / приготовить","example":"Она ___ ужин и села за стол.","answer":"приготовила","explanation":"Dinner was finished before she sat down, so the perfective приготовила reports the completed result."} -->
+<!-- grammar-card: {"id":"dinner-ready","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Completed action with a result","rule":"An action with a reached result takes the perfective","example":"She finished cooking dinner and then sat down at the table. Use готовить or приготовить: Она ___ ужин и села за стол.","answer":"приготовила","explanation":"Dinner was ready before she sat down, so the perfective reports the completed result; the imperfective готовила would describe the cooking as a process.","legacyAliases":[{"rule":"An action with a reached result takes the perfective","example":"Она ___ ужин и села за стол."}]} -->
 
 ---
 
@@ -132,7 +138,11 @@ Negation interacts with aspect in important ways:
 
 <!-- quiz:{"type":"multiple-choice","question":"'Она не звонила' (imperfective negative) means:","options":["She didn't finish the call","She hasn't called at all","She will not call","She was calling"],"answer":1} -->
 
-<!-- grammar-card: {"rule":"Denying that something ever happened uses the imperfective","hint":"читать / прочитать","example":"Я никогда не ___ эту книгу.","answer":"читал","explanation":"Никогда denies the activity as such rather than one particular completed act, so читал is imperfective."} -->
+<!-- grammar-card: {"id":"never-read","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Past tense negation: \"didn't do\" vs. \"wasn't doing\"","rule":"Denying that something ever happened uses the imperfective","example":"Anton has never read this book. Use читать or прочитать: Антон никогда не ___ эту книгу.","answer":"читал","explanation":"Никогда denies the activity as such rather than one particular completed act, so the imperfective fits. Не прочитал would mean he started but didn't finish.","legacyAliases":[{"rule":"Denying that something ever happened uses the imperfective","example":"Я никогда не ___ эту книгу."}]} -->
+
+<!-- grammar-card: {"id":"dont-open-window","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Negative commands: almost always imperfective","rule":"Negative commands normally take the imperfective","example":"Tell a friend not to open the window. Use открывать or открыть, informal imperative: Не ___ окно!","answer":"открывай","explanation":"A ban on an action uses the imperfective imperative. The perfective is kept for warnings against an accident, like не урони!"} -->
+
+<!-- grammar-card: {"id":"rule-negative-command-imperfective","kind":"concept","format":"qa","priority":"essential","sourceSection":"Negative commands: almost always imperfective","rule":"Negative commands normally take the imperfective","example":"When you tell someone not to do something, which aspect does the command usually take?","answer":"Imperfective.","explanation":"Не трогай! Не говори ему. A negative perfective (не урони!) is a warning against an accident, not a ban."} -->
 
 ---
 
@@ -148,11 +158,13 @@ Negation interacts with aspect in important ways:
 
 ### Perfective imperative — specific task, concrete result expected
 
-**Прочитайте эту статью к завтра.** *(Prochitáyte étu statyu k závtra.)* — Read this article by tomorrow.
+**Прочитайте эту статью к завтрашнему дню.** *(Prochitáyte étu statyú k závtrashnemu dnyu.)* — Read this article by tomorrow.
 
-**Откройте учебник на странице пять.** *(Otkróyte uchébnik na straníitse pyat.)* — Open the textbook to page five.
+**Откройте учебник на странице пять.** *(Otkróyte uchébnik na stranítse pyat.)* — Open the textbook to page five.
 
 **Дайте мне, пожалуйста, чек.** *(Dáyte mne, pozháluysta, chek.)* — Give me the receipt, please.
+
+<!-- grammar-card: {"id":"assign-article","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Perfective imperative — specific task, concrete result expected","rule":"A specific task with a result expected takes the perfective imperative","example":"As a teacher, set your class this article to finish by tomorrow. Use читать or прочитать, polite imperative: ___ эту статью к завтрашнему дню.","answer":"Прочитайте","explanation":"A concrete task with a deadline expects a finished result, so the perfective imperative fits; читайте would be a general invitation to read."} -->
 
 ### The давай/давайте distinction
 
@@ -195,11 +207,13 @@ Negation interacts with aspect in important ways:
 
 **Imperfective — the result no longer stands:**
 
-**Кто открывал окно? Тут холодно!** *(Kto otkryvál oknó? Tut khólodno!)* — Who opened the window? It's cold! (someone opened and maybe closed it, but the effect remains)
+**Кто открывал окно? Тут холодно!** *(Kto otkryvál oknó? Tut khólodno!)* — Who opened the window? It's cold! (someone opened it and has since closed it — the result is gone, though the room is still cold)
 
 **Perfective — the result still stands:**
 
 **Кто открыл окно?** *(Kto otkrýl oknó?)* — Who opened the window? (it's still open)
+
+<!-- grammar-card: {"id":"who-opened-window","kind":"rule","format":"qa","priority":"essential","sourceSection":"Annulled result (action happened but was reversed)","rule":"The perfective past implies the result still stands","example":"You walk in and the window is still wide open. You ask «Кто открыл окно?» Why the perfective открыл rather than the imperfective открывал?","answer":"Because the result — an open window — still stands.","explanation":"The perfective past points to a result that is still in place; открывал would suggest someone opened it and it has since been closed."} -->
 
 ### Simultaneous vs. sequential actions
 

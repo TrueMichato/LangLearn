@@ -1,5 +1,7 @@
 # Common Mistakes by English Speakers (Типичные ошибки англоговорящих)
 
+<!-- vocab-inventory: {"mode":"explicit"} -->
+
 Every language has traps for foreign speakers, and Russian is no exception. English speakers bring assumptions from their native language — about word order, verb usage, and vocabulary — that lead to predictable mistakes. This lesson covers the most common pitfalls so you can recognize and avoid them.
 
 ---
@@ -24,6 +26,16 @@ Every language has traps for foreign speakers, and Russian is no exception. Engl
 **Она очень симпатичная.** *(Oná óchen simpatíchnaya.)* — She's very attractive. (NOT "sympathetic")
 
 **Это актуальная тема.** *(Éto aktuálnaya téma.)* — This is a current/relevant topic. (NOT "actual")
+
+<!-- vocab-card: {"id":"vocab-magazin","word":"магази́н","meaning":"shop, store","priority":"optional","sourceSection":"1. False Friends (Ложные друзья переводчика)"} -->
+
+<!-- vocab-card: {"id":"vocab-fabrika","word":"фа́брика","meaning":"factory","priority":"optional","sourceSection":"1. False Friends (Ложные друзья переводчика)"} -->
+
+<!-- vocab-card: {"id":"vocab-simpatichnyy","word":"симпати́чный","meaning":"attractive, nice-looking","priority":"optional","sourceSection":"1. False Friends (Ложные друзья переводчика)"} -->
+
+<!-- vocab-card: {"id":"vocab-akkuratnyy","word":"аккура́тный","meaning":"neat, tidy","priority":"optional","sourceSection":"1. False Friends (Ложные друзья переводчика)"} -->
+
+<!-- vocab-card: {"id":"vocab-aktualnyy","word":"актуа́льный","meaning":"current, topical","priority":"optional","sourceSection":"1. False Friends (Ложные друзья переводчика)"} -->
 
 <!-- quiz:{"type":"multiple-choice","question":"What does 'магазин' mean in Russian?","options":["Magazine","Store/shop","Warehouse","Library"],"answer":1} -->
 
@@ -54,6 +66,8 @@ In English, "to be" is essential: "I am a student," "She is a doctor." In Russia
 > **Exception:** «Есть» IS used in the construction **У меня есть...** *(U menyá yest...)* — "I have..." to emphasize existence: **У меня есть машина.** — I have a car.
 
 > In past and future tenses, быть reappears: **Я был студентом.** *(Ya byl studéntom.)* — I was a student. **Она будет врачом.** *(Oná búdet vrachóm.)* — She will be a doctor. (Note the instrumental case!)
+
+<!-- grammar-card: {"id":"rule-no-byt-present","kind":"concept","format":"qa","priority":"essential","sourceSection":"2. The Missing \"To Be\" in Present Tense","rule":"Быть (to be) is left out in the present tense","example":"In a present-tense sentence like 'I am a student', what happens to the Russian verb быть (to be)?","answer":"It's left out.","explanation":"Я студент, Она врач: adding есть sounds unnatural. Быть returns in the past and future (был, будет)."} -->
 
 ---
 
@@ -86,7 +100,9 @@ English speakers often forget that negation in Russian changes the case of the o
 
 **Здесь нет интернета.** *(Zdes net internéta.)* — There's no internet here.
 
-<!-- grammar-card: {"rule":"After a negated verb the object commonly shifts to the genitive","hint":"проблема (problem)","example":"Я не вижу ___.","answer":"проблемы","explanation":"Не вижу denies that the object is there at all, so проблема appears in the genitive проблемы."} -->
+<!-- grammar-card: {"id":"no-time-net","kind":"rule","format":"cloze","priority":"essential","sourceSection":"3. Genitive After Negation","rule":"After нет the missing thing goes into the genitive","example":"You're too busy to help. Say you have no time, using время (time): У меня нет ___.","answer":"времени","explanation":"Нет denies that something exists, so the missing thing goes into the genitive: время → времени. Neuter nouns change too — нет время is the classic mistake."} -->
+
+<!-- grammar-card: {"id":"rule-net-genitive","kind":"concept","format":"qa","priority":"essential","sourceSection":"3. Genitive After Negation","rule":"Нет takes the genitive","example":"After нет (there is no, I don't have), which case does the noun take?","answer":"Genitive.","explanation":"У меня есть книга, but у меня нет книги: denying that something exists puts it in the genitive."} -->
 
 ---
 
@@ -97,7 +113,7 @@ English has one word "go," but Russian distinguishes between **unidirectional** 
 | Unidirectional (one way, right now) | Multidirectional (round trip, habitual) | Meaning |
 |---|---|---|
 | идти *(idtí)* | ходить *(khodít)* | to go (on foot) |
-| ехать *(yékhat)* | ездить *(yézdít)* | to go (by vehicle) |
+| ехать *(yékhat)* | ездить *(yézdit)* | to go (by vehicle) |
 | бежать *(bezhát)* | бегать *(bégat)* | to run |
 | лететь *(letét)* | летать *(letát)* | to fly |
 
@@ -125,7 +141,9 @@ English has one word "go," but Russian distinguishes between **unidirectional** 
 
 <!-- quiz:{"type":"multiple-choice","question":"'I go to the gym every day' — which verb is correct?","options":["Я иду в спортзал каждый день.","Я хожу в спортзал каждый день.","Я пойду в спортзал каждый день.","Я шёл в спортзал каждый день."],"answer":1} -->
 
-<!-- grammar-card: {"rule":"Repeated there-and-back trips use the multidirectional verb","hint":"идти / ходить","example":"Каждый день я ___ в университет.","answer":"хожу","explanation":"Каждый день describes a routine round trip, which is ходить's job; идти would mean one journey happening now."} -->
+<!-- grammar-card: {"id":"daily-trips-khozhu","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Multidirectional — habitual, round trips, general ability","rule":"Repeated there-and-back trips use the multidirectional verb","example":"You walk to university and back every day. Use ходить or идти (to go on foot): Каждый день я ___ в университет.","answer":"хожу","explanation":"Каждый день describes a routine round trip, which is ходить's job; идти (иду) would mean one journey happening now.","legacyAliases":[{"rule":"Repeated there-and-back trips use the multidirectional verb","example":"Каждый день я ___ в университет."}]} -->
+
+<!-- grammar-card: {"id":"rule-multidirectional-habit","kind":"concept","format":"qa","priority":"optional","sourceSection":"4. Motion Verbs: идти vs. ходить, ехать vs. ездить","rule":"Habitual round trips take the multidirectional motion verb","example":"For a habitual round trip — going somewhere and back regularly — which kind of motion verb do you use?","answer":"Multidirectional.","explanation":"Ходить and ездить cover routines and round trips; идти and ехать are for one journey in one direction, often right now."} -->
 
 ---
 
@@ -148,6 +166,8 @@ Russian word order is "free" compared to English, but it's not random. Russian u
 **В парке гуляли дети.** *(V párke gulyáli déti.)* — Children were walking in the park. (natural Russian — location first)
 
 **English instinct:** "Дети гуляли в парке." — This is also correct but emphasizes the children, not the scene.
+
+<!-- grammar-card: {"id":"word-order-mama","kind":"rule","format":"qa","priority":"optional","sourceSection":"Emphasis on who","rule":"New information goes last in Russian word order","example":"Someone says «Ужин приготовила мама» (Mom made dinner) instead of the neutral order. What are they stressing?","answer":"That it was Mom, not someone else, who made dinner.","explanation":"Russian puts the new, focused information last; moving мама to the end singles her out as the answer to who made it."} -->
 
 > **Rule of thumb:** Known/old information first, new information last. Questions answer "what about X?" — X goes first.
 
@@ -174,6 +194,10 @@ Borrowed words don't always follow standard gender rules, and English speakers o
 
 > **Indeclinable nouns** (mostly foreign borrowings ending in -о, -е, -и, -у) don't change form in any case. They're usually neuter, with some notable exceptions like кофе.
 
+<!-- grammar-card: {"id":"coffee-gone-cold","kind":"rule","format":"cloze","priority":"optional","sourceSection":"6. Gender of Borrowed Words","rule":"Кофе is masculine, so past-tense verbs agree in the masculine","example":"Your coffee has gone cold. Use остыть (to go cold) in the past tense, agreeing with the standard gender of кофе: Кофе уже ___.","answer":"остыл","explanation":"Standard Russian treats кофе as masculine, so the past tense takes the masculine form; остыло treats it as neuter, which is only colloquial."} -->
+
+<!-- grammar-card: {"id":"rule-kofe-masculine","kind":"concept","format":"qa","priority":"optional","sourceSection":"6. Gender of Borrowed Words","rule":"Кофе is masculine in standard Russian","example":"What grammatical gender is кофе in standard Russian?","answer":"Masculine.","explanation":"Чёрный кофе: it ends in -е like neuter кафе, but is traditionally masculine."} -->
+
 ---
 
 ## 7. Forgetting Reflexive Verbs
@@ -195,8 +219,12 @@ Russian: "Coffee appeals to me." → Subject = coffee, "to me" = dative.
 
 **Мне нравится кофе.** *(Mne nrávitsya kófe.)* — I like coffee. (literally: "Coffee pleases to-me")
 
-❌ **Я нравлю кофе.** — This means "Coffee likes me"!
+❌ **Я нравлю кофе.** — Not Russian: нравиться only has reflexive forms, and the thing you like is its subject. (**Я нравлюсь кофе** would mean "Coffee likes me"!)
 ✅ **Мне нравится кофе.** — I like coffee.
+
+<!-- grammar-card: {"id":"like-coffee-mne","kind":"rule","format":"cloze","priority":"optional","sourceSection":"The нравиться trap","rule":"With нравиться, the person who likes is in the dative","example":"Say that you like coffee. Use я (I) in the form нравиться needs: ___ нравится кофе.","answer":"Мне","explanation":"With нравиться the liked thing is the subject and the person who likes is in the dative, so я becomes мне."} -->
+
+<!-- grammar-card: {"id":"anton-likes-masha","kind":"rule","format":"qa","priority":"essential","sourceSection":"The нравиться trap","rule":"With нравиться, the person who likes is in the dative","example":"«Антону нравится Маша.» Who likes whom?","answer":"Anton likes Masha.","explanation":"Антону is dative, so Anton is the one who likes; Маша is the nominative subject, the one who appeals to him."} -->
 
 **Ей нравятся эти песни.** *(Yey nrávyatsya éti pésni.)* — She likes these songs.
 
@@ -225,6 +253,8 @@ Russian: "Coffee appeals to me." → Subject = coffee, "to me" = dative.
 **Я умею плавать.** *(Ya uméyu plávat.)* — I know how to swim.
 
 ❌ **Я знаю плавать.** — Wrong verb for skills.
+
+<!-- grammar-card: {"id":"can-swim-umeyu","kind":"rule","format":"cloze","priority":"optional","sourceSection":"\"To know\": знать vs. уметь","rule":"Уметь is 'know how to' for skills; знать is for facts","example":"Say you know how to swim. Use уметь or знать: Я ___ плавать.","answer":"умею","explanation":"Swimming is a skill, so уметь is the verb; знать is for facts, like knowing someone's name."} -->
 
 ---
 

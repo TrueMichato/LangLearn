@@ -1,5 +1,7 @@
 # Word Order & Emphasis
 
+<!-- vocab-inventory: {"mode":"explicit"} -->
+
 Russian word order is often described as "free," but this is misleading. While Russian is more flexible than English because case endings clarify grammatical roles, word order is **not random** — it follows the principle of **communicative organization**, where the placement of words signals what is known (old information) versus what is new or emphasized.
 
 ---
@@ -50,6 +52,8 @@ Here, "это письмо" (this letter) is known (theme), so it goes first. "�
 
 <!-- quiz:{"type":"multiple-choice","question":"In Russian, new or emphasized information typically appears:","options":["At the beginning of the sentence","In the middle of the sentence","At the end of the sentence","It doesn't matter"],"answer":2} -->
 
+<!-- grammar-card: {"id":"rule-new-info-end","kind":"concept","format":"qa","priority":"essential","sourceSection":"2. Theme and Rheme (Given and New Information)","rule":"New or most important information usually comes at the end of a Russian sentence","example":"In a neutral Russian sentence, where does the new or most important information usually go?","answer":"At the end.","explanation":"Any answer saying the end counts. Asked Кто написал это письмо?, you answer Это письмо написал Иван: the known letter comes first and the new name, Иван, comes last."} -->
+
 ---
 
 ## 3. Rearranging Word Order for Emphasis
@@ -75,6 +79,8 @@ The most natural rearrangements in everyday speech are SVO, OVS, and VOS. The ot
 
 **Это сделал Петя.** *(Eto sdelal Petya.)* — *Petya* did this. (emphasis on who)
 
+<!-- grammar-card: {"id":"cook-is-new","kind":"rule","format":"qa","priority":"essential","sourceSection":"3. Rearranging Word Order for Emphasis","rule":"In object–verb–subject order the subject at the end is the new information","example":"Ужин готовит мама. Is the new information who is cooking, or what is being cooked?","answer":"Who is cooking (мама).","explanation":"Ужин stands first as the known topic and мама comes last, so the sentence answers Кто готовит ужин? — it's Mom who is cooking. Case endings, not position, show who does what; position shows what is new."} -->
+
 ---
 
 ## 4. Inversion for Emphasis and Style
@@ -92,6 +98,12 @@ Placing the verb **before** the subject often indicates that the **subject** is 
 **Начался дождь.** *(Nachalsya dozhd.)* — It started raining.
 
 This pattern is extremely common in narratives and descriptions, especially with verbs of existence, appearance, and motion.
+
+<!-- vocab-card: {"id":"vocab-neznakomets","word":"незнако́мец","meaning":"stranger","priority":"optional","sourceSection":"Subject-Verb inversion"} -->
+
+<!-- grammar-card: {"id":"book-is-new","kind":"rule","format":"qa","priority":"optional","sourceSection":"Subject-Verb inversion","rule":"A subject placed after its verb is new to the listener","example":"На столе лежит книга. Is the book something the listener already knows about, or new information?","answer":"New information.","explanation":"The verb comes before the subject, which presents the book as new: there's a book on the table. For a book already under discussion you'd say Книга лежит на столе, where the location is the news."} -->
+
+<!-- grammar-card: {"id":"rule-inversion-new-subject","kind":"concept","format":"qa","priority":"optional","sourceSection":"Subject-Verb inversion","rule":"Verb-before-subject order presents the subject as new information","example":"When the verb comes before its subject, as in Пришла весна, what does that order signal about the subject?","answer":"It is new information.","explanation":"Any answer saying the subject is new counts. В комнату вошёл незнакомец introduces a stranger the listener didn't know about, so the stranger comes last."} -->
 
 ### Adjective after noun (literary/emphatic)
 
@@ -157,7 +169,13 @@ This demonstrates how moving **не** changes the meaning significantly — it n
 
 <!-- quiz:{"type":"multiple-choice","question":"In 'Не я это сделал', what is being negated?","options":["The action (сделал)","The object (это)","The subject (я)","The whole sentence"],"answer":2} -->
 
-<!-- grammar-card: {"rule":"Не stands immediately before the word it denies","hint":"не","example":"Я ___ читал эту книгу.","answer":"не","explanation":"Placed before читал, не denies the action itself rather than the subject or the object."} -->
+<!-- grammar-card: {"id":"deny-action","kind":"rule","format":"qa","priority":"essential","sourceSection":"6. Не (Negation) Placement","rule":"Не stands immediately before the word it denies","example":"Say you never read this book at all, denying the reading itself. Where does не go in Я читал эту книгу?","answer":"Before читал: Я не читал эту книгу.","explanation":"Не negates the word right after it, so to deny the action it must stand in front of the verb. Не я читал… would deny who read it; Я читал не эту книгу would deny which book.","legacyAliases":[{"rule":"Не stands immediately before the word it denies","example":"Я ___ читал эту книгу."}]} -->
+
+<!-- grammar-card: {"id":"not-me-reader","kind":"rule","format":"cloze","priority":"essential","sourceSection":"6. Не (Negation) Placement","rule":"Не placed before the subject denies who did the action","example":"Deny that you were the one who read it — someone else did: ___ читал эту книгу.","answer":"Не я","explanation":"Не negates the word right after it, so putting it before я denies the reader, not the reading: it wasn't me who read this book."} -->
+
+<!-- grammar-card: {"id":"wrong-book","kind":"rule","format":"qa","priority":"optional","sourceSection":"6. Не (Negation) Placement","rule":"Не placed before the object denies which thing was involved","example":"Я читал не эту книгу. What is being denied: that the reading happened, or which book was read?","answer":"Which book was read.","explanation":"Не stands before эту книгу, so it denies the object: the speaker did read, but a different book."} -->
+
+<!-- grammar-card: {"id":"rule-ne-position","kind":"concept","format":"qa","priority":"essential","sourceSection":"6. Не (Negation) Placement","rule":"Не negates the word that directly follows it","example":"How do you tell which part of a Russian sentence не denies?","answer":"It denies the word directly after it.","explanation":"Any answer saying the word right after не counts. Я не читал denies the reading; Не я читал denies the reader; Я читал не эту книгу denies the book."} -->
 
 ---
 
@@ -183,7 +201,9 @@ When the **existence** is not the focus (the item is already known), **есть*
 
 **У меня красивая машина.** *(U menya krasivaya mashyna.)* — I have a beautiful car. (focus on "beautiful," not on having a car)
 
-<!-- grammar-card: {"rule":"Есть is kept when the existence of the thing is the new information","hint":"есть","example":"В городе ___ хороший музей.","answer":"есть","explanation":"The point of the sentence is that a museum exists at all, so есть cannot be dropped."} -->
+<!-- grammar-card: {"id":"existence-est","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Есть (existence) and У меня есть (possession)","rule":"Есть is kept when the existence of the thing is the new information","example":"A visitor asks whether the city has any museum at all. Tell them it has a good one: В городе ___ хороший музей.","answer":"есть","explanation":"The news is that a museum exists at all, so есть stays in. When the thing is already known and you only describe it, есть is dropped, as in У меня красивая машина.","legacyAliases":[{"rule":"Есть is kept when the existence of the thing is the new information","example":"В городе ___ хороший музей."}]} -->
+
+<!-- grammar-card: {"id":"car-description","kind":"rule","format":"qa","priority":"optional","sourceSection":"Есть (existence) and У меня есть (possession)","rule":"Leaving out есть shifts the focus from having the thing to describing it","example":"У меня красивая машина. Is the speaker announcing that they own a car, or describing the car?","answer":"Describing the car: it is beautiful.","explanation":"Есть is left out, which shows that owning a car isn't the news; the focus is on красивая. To announce ownership you'd say У меня есть машина."} -->
 
 ---
 
@@ -232,9 +252,9 @@ Some constructions have **fixed** or strongly preferred word orders:
 
 ### Literary / poetic inversion
 
-**Тиха украинская ночь.** *(Tikha ukrainskaya noch.)* — Quiet is the Ukrainian night. (Gogol)
+**Тиха украинская ночь.** *(Tikha ukrainskaya noch.)* — Quiet is the Ukrainian night. (Pushkin, «Полтава»)
 
-**Скучна мне оттепель.** *(Skuchna mne ottepel.)* — Tiresome to me is the thaw. (Pushkin-era style)
+**Скучна мне оттепель.** *(Skuchna mne ottepel.)* — Tiresome to me is the thaw. (Pushkin, «Осень»)
 
 ### Colloquial fronting
 

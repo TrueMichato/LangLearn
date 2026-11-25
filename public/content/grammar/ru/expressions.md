@@ -1,5 +1,7 @@
 # Common Expressions & Idioms
 
+<!-- vocab-inventory: {"mode":"explicit"} -->
+
 Knowing grammar rules is one thing — sounding natural is another. This lesson covers the expressions, phrases, and idioms that Russians use every day. From polite greetings to colorful idioms, these will help you communicate naturally and understand native speakers.
 
 ---
@@ -13,6 +15,8 @@ Knowing grammar rules is one thing — sounding natural is another. This lesson 
 - **Добрый день!** *(Dobryy den'!)* — Good afternoon!
 - **Добрый вечер!** *(Dobryy vecher!)* — Good evening!
 - **Рад вас видеть.** *(Rad vas videt'.)* — Glad to see you. (said by a male speaker)
+
+<!-- vocab-card: {"id": "vocab-zdravstvuyte", "word": "здра́вствуйте", "meaning": "hello (formal)", "priority": "optional", "sourceSection": "Formal Greetings"} -->
 
 ### Informal Greetings
 
@@ -53,6 +57,8 @@ Politeness is highly valued in Russian culture. These expressions are essential 
 - **Большое спасибо!** *(Bol'shoye spasibo!)* — Thank you very much!
 - **Благодарю вас.** *(Blagodaryu vas.)* — I thank you. (very formal)
 - **Не за что.** *(Ne za chto.)* — Don't mention it. / You're welcome.
+
+<!-- vocab-card: {"id": "vocab-ne-za-chto", "word": "не́ за что", "meaning": "don't mention it; you're welcome", "priority": "optional", "sourceSection": "Saying Please and Thank You"} -->
 
 ### Apologizing and Excusing
 
@@ -112,12 +118,16 @@ Literally: "Neither down nor feather!" This is said to wish someone good luck, e
 
 - **— Завтра у меня экзамен. — Ни пуха ни пера! — К чёрту!** *(— Zavtra u menya ekzamen. — Ni pukha ni pera! — K chyortu!)* — "I have an exam tomorrow." — "Break a leg!" — "Thanks!" (lit. "To the devil!")
 
+<!-- vocab-card: {"id": "vocab-ni-pukha-ni-pera", "word": "ни пу́ха ни пера́", "meaning": "good luck! (said before an exam or test)", "priority": "optional", "sourceSection": "Ни пуха ни пера! (Break a leg!)"} -->
+
 ### Как рыба в воде (Like a fish in water)
 
 Means feeling completely comfortable and at ease in a situation.
 
 - **Он чувствует себя в Москве как рыба в воде.** *(On chuvstvuyet sebya v Moskve kak ryba v vode.)* — He feels completely at home in Moscow.
 - **На сцене она как рыба в воде.** *(Na stsene ona kak ryba v vode.)* — She is in her element on stage.
+
+<!-- vocab-card: {"id": "vocab-kak-ryba-v-vode", "word": "как ры́ба в воде́", "meaning": "completely at ease, in one's element", "priority": "optional", "sourceSection": "Как рыба в воде (Like a fish in water)"} -->
 
 ### Бить баклуши (To beat wooden blocks)
 
@@ -126,6 +136,8 @@ Means to idle, to waste time doing nothing productive.
 - **Хватит бить баклуши, иди делать уроки!** *(Khvatit bit' baklushi, idi delat' uroki!)* — Stop wasting time, go do your homework!
 - **Он целый день бьёт баклуши.** *(On tselyy den' b'yot baklushi.)* — He wastes the whole day doing nothing.
 
+<!-- vocab-card: {"id": "vocab-bit-baklushi", "word": "бить баклу́ши", "meaning": "to idle, to waste time doing nothing", "priority": "optional", "sourceSection": "Бить баклуши (To beat wooden blocks)"} -->
+
 ### Вешать лапшу на уши (To hang noodles on one's ears)
 
 Means to deceive someone, to tell lies.
@@ -133,12 +145,16 @@ Means to deceive someone, to tell lies.
 - **Не вешай мне лапшу на уши!** *(Ne veshay mne lapshu na ushi!)* — Don't try to fool me!
 - **Он вечно вешает лапшу на уши начальнику.** *(On vechno veshayet lapshu na ushi nachal'niku.)* — He's always pulling the wool over the boss's eyes.
 
+<!-- vocab-card: {"id": "vocab-veshat-lapshu-na-ushi", "word": "ве́шать лапшу́ на́ уши", "meaning": "to fool someone, to tell someone lies", "priority": "optional", "sourceSection": "Вешать лапшу на уши (To hang noodles on one's ears)"} -->
+
 ### Делать из мухи слона (To make an elephant out of a fly)
 
 Means to make a mountain out of a molehill — to exaggerate a problem.
 
 - **Не делай из мухи слона, всё будет хорошо.** *(Ne delay iz mukhi slona, vsyo budet khorosho.)* — Don't make a mountain out of a molehill, everything will be fine.
 - **Она всегда делает из мухи слона.** *(Ona vsegda delayet iz mukhi slona.)* — She always blows things out of proportion.
+
+<!-- vocab-card: {"id": "vocab-delat-iz-mukhi-slona", "word": "де́лать из му́хи слона́", "meaning": "to make a mountain out of a molehill", "priority": "optional", "sourceSection": "Делать из мухи слона (To make an elephant out of a fly)"} -->
 
 <!-- quiz:{"type":"multiple-choice","question":"What does 'бить баклуши' mean?","options":["To work hard","To cook food","To waste time doing nothing","To beat someone"],"answer":2} -->
 
@@ -157,6 +173,14 @@ Many common Russian expressions rely on specific case constructions. Understandi
 - **Нам пора идти.** *(Nam pora idti.)* — It's time for us to go.
 - **Тебе не кажется, что...?** *(Tebe ne kazhetsya, chto...?)* — Don't you think that...?
 
+<!-- vocab-card: {"id": "vocab-mne-vsyo-ravno", "word": "мне всё равно́", "meaning": "I don't care; it's all the same to me", "priority": "optional", "sourceSection": "Dative Case Expressions"} -->
+
+<!-- grammar-card: {"id": "she-is-cold", "kind": "rule", "format": "qa", "priority": "essential", "sourceSection": "Dative Case Expressions", "rule": "The person who feels a state goes in the dative", "example": "Ей холодно. Холодно means cold. Who feels cold?", "answer": "She does.", "explanation": "Ей is the dative of она. With an impersonal state word like холодно, Russian puts the person who feels it in the dative instead of making them the subject."} -->
+
+<!-- grammar-card: {"id": "he-was-lucky", "kind": "rule", "format": "cloze", "priority": "optional", "sourceSection": "Dative Case Expressions", "rule": "Impersonal повезло takes the lucky person in the dative", "example": "He was lucky. Use он (he): ___ повезло.", "answer": "Ему", "explanation": "Повезло is impersonal, so the lucky person is not its subject but a dative experiencer, and the dative of он is ему."} -->
+
+<!-- grammar-card: {"id": "rule-dative-experiencer", "kind": "concept", "format": "qa", "priority": "essential", "sourceSection": "Dative Case Expressions", "rule": "Impersonal expressions of feeling put the experiencer in the dative", "example": "In impersonal expressions such as \"she is cold\" or \"I don't care\", what case does the person who feels it take?", "answer": "The dative.", "explanation": "Any answer naming the dative counts. Мне всё равно, Ей холодно: the person is not the grammatical subject but the one to whom the state applies."} -->
+
 ### Genitive Case Expressions
 
 - **У меня нет слов.** *(U menya net slov.)* — I have no words. (I'm speechless.)
@@ -164,6 +188,8 @@ Many common Russian expressions rely on specific case constructions. Understandi
 - **Без проблем!** *(Bez problem!)* — No problem!
 - **С Новым годом!** *(S Novym godom!)* — Happy New Year! (lit. With the New Year!)
 - **Ни слова больше!** *(Ni slova bol'she!)* — Not another word!
+
+<!-- grammar-card: {"id": "no-time", "kind": "rule", "format": "cloze", "priority": "optional", "sourceSection": "Genitive Case Expressions", "rule": "Нет puts what is missing in the genitive", "example": "He has no time. Use время (time): У него нет ___.", "answer": "времени", "explanation": "Нет (there is no) always takes the genitive of the missing thing, and время has the irregular genitive времени."} -->
 
 ### Instrumental Case Expressions
 
@@ -186,6 +212,8 @@ These expressions are used in everyday informal speech. They'll help you underst
 - **Да ладно!** *(Da ladno!)* — No way! / Come on! (disbelief)
 - **Блин!** *(Blin!)* — Darn! (mild expletive, lit. "pancake")
 - **Короче...** *(Koroche...)* — In short... / Basically... (filler word)
+
+<!-- vocab-card: {"id": "vocab-nichego-sebe", "word": "ничего́ себе́", "meaning": "wow! no way! (surprise)", "priority": "optional", "sourceSection": "Common Colloquialisms"} -->
 
 ### Everyday Reactions
 
@@ -219,6 +247,14 @@ Understanding when to use **ты** (informal) vs. **вы** (formal) is crucial:
 - **Давай на "ты"!** *(Davay na "ty"!)* — Let's use "ты"!
 - **Вы очень добры.** *(Vy ochen' dobry.)* — You are very kind. (formal)
 
+<!-- grammar-card: {"id": "vy-very-kind", "kind": "rule", "format": "cloze", "priority": "essential", "sourceSection": "The Russian \"You\" — Ты vs. Вы", "rule": "Вы takes plural agreement even when it refers to one person", "example": "Politely tell one stranger \"You are very kind\": ___ очень добры.", "answer": "Вы", "explanation": "A stranger is addressed with the polite Вы, and вы takes plural agreement even for one person, which is why the short adjective is plural добры; ты would need singular добр or добра.", "legacyAliases": [{"rule": "Вы takes plural agreement even when it refers to one person", "example": "___ очень добры."}]} -->
+
+<!-- grammar-card: {"id": "switch-to-ty", "kind": "rule", "format": "cloze", "priority": "optional", "sourceSection": "The Russian \"You\" — Ты vs. Вы", "rule": "Moving to informal address is asked for, not assumed", "example": "Ask a new acquaintance whether the two of you may switch to informal address: Можно на \"___\"?", "answer": "ты", "explanation": "The set phrase names the informal pronoun ты: switching from the polite form is something you ask permission for rather than simply start doing.", "legacyAliases": [{"rule": "Moving to informal address is asked for, not assumed", "example": "Можно на \"___\"?"}]} -->
+
+<!-- grammar-card: {"id": "rule-polite-you-plural", "kind": "concept", "format": "qa", "priority": "essential", "sourceSection": "The Russian \"You\" — Ты vs. Вы", "rule": "Polite address to one person takes plural agreement", "example": "When Russians politely address a single person with the formal you, what number do the verb and any short adjective take?", "answer": "Plural.", "explanation": "Any answer saying plural counts. Вы очень добры: one listener, yet the short adjective is plural."} -->
+
+<!-- grammar-card: {"id": "rule-ask-before-informal", "kind": "concept", "format": "qa", "priority": "optional", "sourceSection": "The Russian \"You\" — Ты vs. Вы", "rule": "Switching to informal address happens by mutual agreement", "example": "How does a Russian speaker normally move from the formal to the informal you with someone new?", "answer": "By asking permission or agreeing on it first.", "explanation": "Any answer saying you ask or agree first counts. Можно на \"ты\"? and Давай на \"ты\"! propose the switch rather than assume it."} -->
+
 ### Toasting Traditions
 
 Russians have rich toasting traditions. Simply saying "cheers" is considered lazy.
@@ -241,10 +277,6 @@ Russian has many expressions rooted in superstition:
 
 <!-- quiz:{"type":"multiple-choice","question":"What is the traditional response to 'Ни пуха ни пера!'?","options":["Спасибо!","К чёрту!","Пожалуйста!","Удачи!"],"answer":1} -->
 
-<!-- grammar-card: {"rule":"Вы takes plural agreement even when it refers to one person","hint":"добр / добры","example":"___ очень добры.","answer":"Вы","explanation":"The short adjective добры is plural, so it must pair with the polite Вы rather than ты."} -->
-
-<!-- grammar-card: {"rule":"Moving to informal address is asked for, not assumed","hint":"ты / Вы","example":"Можно на \"___\"?","answer":"ты","explanation":"The set phrase asks permission to switch from Вы to the informal ты."} -->
-
 ---
 
 ## Useful Expression Patterns
@@ -260,6 +292,8 @@ Here are versatile patterns you can use in many situations:
 
 - **Дело в том, что я не могу прийти.** *(Delo v tom, chto ya ne mogu priyti.)* — The thing is, I can't come.
 - **Дело в том, что это очень сложно.** *(Delo v tom, chto eto ochen' slozhno.)* — The thing is, it's very complicated.
+
+<!-- vocab-card: {"id": "vocab-delo-v-tom-chto", "word": "де́ло в том, что", "meaning": "the thing is that", "priority": "optional", "sourceSection": "Дело в том, что... (The thing is that...)"} -->
 
 ### Не стоит + infinitive (It's not worth...)
 

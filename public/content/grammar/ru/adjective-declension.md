@@ -1,5 +1,7 @@
 # Adjective Declension
 
+<!-- vocab-inventory: {"mode":"explicit"} -->
+
 Russian adjectives **agree** with the noun they modify in **gender**, **number**, and **case**. This means adjective endings change depending on the noun. While this system has many forms, the patterns are predictable once you learn the stem types.
 
 ---
@@ -20,7 +22,7 @@ Hard-stem adjectives are the most common type. Their stem ends in a **hard conso
 | Instrumental | нов**ым** | нов**ой** | нов**ым** | нов**ыми** |
 | Prepositional | нов**ом** | нов**ой** | нов**ом** | нов**ых** |
 
-> **Note:** The masculine and neuter accusative depends on **animacy**. For animate nouns, accusative = genitive. For inanimate nouns, accusative = nominative.
+> **Note:** The masculine singular and plural accusative depend on **animacy**. For animate nouns, accusative = genitive. For inanimate nouns, accusative = nominative.
 
 **Я купил новый телефон.** *(Ya kupil novyy telefon.)* — I bought a new phone.
 
@@ -38,7 +40,9 @@ Other hard-stem adjectives that follow this pattern: **красный** (red), *
 
 <!-- quiz:{"type":"multiple-choice","question":"What is the genitive singular masculine form of 'новый'?","options":["нового","новому","новым","новой"],"answer":0} -->
 
-<!-- grammar-card: {"rule":"An adjective copies the case, gender and number of the noun it modifies","hint":"новый (new) — hard stem","example":"Она живёт в ___ квартире.","answer":"новой","explanation":"After в the noun is prepositional, and квартира is feminine, so новый takes the feminine prepositional ending -ой."} -->
+<!-- grammar-card: {"id":"lives-new-apartment","kind":"rule","format":"cloze","priority":"essential","sourceSection":"1. Hard-Stem Adjectives (новый — new)","rule":"An adjective copies the case, gender and number of the noun it modifies","example":"Say she lives in a new apartment. Use новый (new): Она живёт в ___ квартире.","answer":"новой","explanation":"After в the noun is prepositional, and квартира is feminine, so новый takes the feminine prepositional ending -ой.","legacyAliases":[{"rule":"An adjective copies the case, gender and number of the noun it modifies","example":"Она живёт в ___ квартире."}]} -->
+
+<!-- grammar-card: {"id":"rule-agreement","kind":"concept","format":"qa","priority":"essential","sourceSection":"1. Hard-Stem Adjectives (новый — new)","rule":"An adjective agrees with its noun in gender, number and case","example":"Name the three things an adjective must match with the noun it describes.","answer":"Gender, number and case.","explanation":"Она живёт в новой квартире: квартира is feminine, singular and prepositional, so новый takes those three features too."} -->
 
 ---
 
@@ -74,7 +78,7 @@ Other soft-stem adjectives: **зимний** (winter), **летний** (summer)
 
 <!-- quiz:{"type":"multiple-choice","question":"What is the instrumental singular masculine form of 'синий'?","options":["синем","синего","синим","синей"],"answer":2} -->
 
-<!-- grammar-card: {"rule":"Soft-stem adjectives use и/е where hard stems use ы/о","hint":"синий (blue) — soft stem","example":"У неё ___ глаза.","answer":"синие","explanation":"Глаза is plural, and the soft stem синий takes -ие in the plural rather than the hard-stem -ые."} -->
+<!-- grammar-card: {"id":"has-blue-eyes","kind":"rule","format":"cloze","priority":"optional","sourceSection":"2. Soft-Stem Adjectives (синий — blue)","rule":"Soft-stem adjectives use и/е where hard stems use ы/о","example":"Say she has blue eyes. Use синий (blue): У неё ___ глаза.","answer":"синие","explanation":"Глаза is plural, and the soft stem синий takes -ие in the plural rather than the hard-stem -ые.","legacyAliases":[{"rule":"Soft-stem adjectives use и/е where hard stems use ы/о","example":"У неё ___ глаза."}]} -->
 
 ---
 
@@ -125,6 +129,12 @@ Mixed-stem adjectives have stems ending in **г, к, х** (for adjectives like �
 
 <!-- quiz:{"type":"multiple-choice","question":"Why does 'русский' use -ий instead of -ый in the nominative?","options":["It is a soft-stem adjective.","After к, you must write и instead of ы (spelling rule).","It is an irregular adjective.","The stress falls on the ending."],"answer":1} -->
 
+<!-- grammar-card: {"id":"reads-russian-literature","kind":"rule","format":"cloze","priority":"optional","sourceSection":"русский (Russian) — stem ends in -к","rule":"Mixed-stem adjectives take the hard endings wherever no spelling rule applies","example":"Say you read Russian literature. Use русский (Russian): Я читаю ___ литературу.","answer":"русскую","explanation":"Литературу is feminine accusative, so the adjective takes -ую, just like новую; the spelling rule only changes ы to и."} -->
+
+<!-- grammar-card: {"id":"about-good-friend","kind":"rule","format":"cloze","priority":"optional","sourceSection":"хороший (good) — stem ends in -ш","rule":"After ш, щ, ж, ч an unstressed о in the ending is written е","example":"Say we are talking about a good friend. Use хороший (good): Мы говорим о ___ друге.","answer":"хорошем","explanation":"After о the noun is prepositional, which takes -ом in a hard stem; after ш the unstressed о is written е, so хорошем."} -->
+
+<!-- grammar-card: {"id":"rule-spelling-after-gkh","kind":"concept","format":"qa","priority":"essential","sourceSection":"3. Mixed-Stem Adjectives (русский, хороший)","rule":"After г, к, х, ш, щ, ж, ч the letter ы is replaced in adjective endings","example":"After г, к or х, which vowel replaces ы in an adjective ending?","answer":"И","explanation":"Spelling rule: русский, русские, not русскый. The same applies after ш, щ, ж and ч: хороший."} -->
+
 ---
 
 ## 4. Short-Form Adjectives
@@ -148,11 +158,11 @@ Remove the long-form ending and add:
 |---|---|---|
 | рад (only short) | рад / рада / радо / рады | glad |
 | готовый | готов / готова / готово / готовы | ready |
-| должный | должен / должна / должно / должны | must, ought to |
+| должен (only short) | должен / должна / должно / должны | must, ought to |
 | нужный | нужен / нужна / нужно / нужны | needed, necessary |
 | свободный | свободен / свободна / свободно / свободны | free |
 | больной | болен / больна / больно / больны | ill, sick |
-| занятой | занят / занята / занято / заняты | busy |
+| занятый | занят / занята / занято / заняты | busy |
 
 **Я рад вас видеть!** *(Ya rad vas videt!)* — I am glad to see you!
 
@@ -167,6 +177,10 @@ Remove the long-form ending and add:
 **Они заняты сейчас.** *(Oni zanyaty seychas.)* — They are busy right now.
 
 **Он болен и не может прийти.** *(On bolen i ne mozhet priyti.)* — He is sick and cannot come.
+
+<!-- grammar-card: {"id":"lunch-is-ready","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Common Short-Form Adjectives","rule":"A short-form adjective in the predicate agrees in gender and number","example":"Say lunch is ready. Use the short form of готовый (ready): Обед ___.","answer":"готов","explanation":"Обед is masculine singular, and the masculine short form has a zero ending, so готов."} -->
+
+<!-- grammar-card: {"id":"rule-rad-only-short","kind":"concept","format":"qa","priority":"optional","sourceSection":"Common Short-Form Adjectives","rule":"Рад exists only as a short form","example":"Where can рад (glad) appear, given it has no long form?","answer":"Only in the predicate, as a short form.","explanation":"Рад, рада, рады are only used in the predicate: Я рад вас видеть."} -->
 
 ### Short form vs long form
 
@@ -190,6 +204,10 @@ The **long form** is used when:
 **Этот вопрос важный.** *(Etot vopros vazhnyy.)* — This question is important. (characteristic)
 
 **Это важно.** *(Eto vazhno.)* — This is important. (situational)
+
+<!-- grammar-card: {"id":"he-is-ill-now","kind":"rule","format":"qa","priority":"essential","sourceSection":"Short form vs long form","rule":"A short-form adjective often describes a temporary state","example":"Он болен. Болен is the short form of больной (ill). What does choosing the short form say about his illness?","answer":"How he is right now: he is ill at the moment.","explanation":"The short form болен marks a temporary state; the long form in Он больной describes a lasting characteristic."} -->
+
+<!-- grammar-card: {"id":"rule-short-predicate","kind":"concept","format":"qa","priority":"optional","sourceSection":"4. Short-Form Adjectives","rule":"Short-form adjectives are used only in the predicate","example":"Where in a sentence can a short-form adjective stand?","answer":"Only in the predicate, describing the subject.","explanation":"The answer counts if it says the predicate. Обед готов is correct, but a short form cannot stand before a noun as an attribute."} -->
 
 <!-- quiz:{"type":"multiple-choice","question":"Which adjective ONLY exists in short form?","options":["готовый","больной","рад","нужный"],"answer":2} -->
 
@@ -275,7 +293,7 @@ To determine which declension pattern an adjective follows, look at the **last c
 
 **Тихий вечер наступил.** *(Tikhiy vecher nastupil.)* — A quiet evening came.
 
-**Мы наслаждаемся последним днём лета.** *(My naslazdayemsya poslednim dnyom leta.)* — We are enjoying the last day of summer.
+**Мы наслаждаемся последним днём лета.** *(My naslazhdayemsya poslednim dnyom leta.)* — We are enjoying the last day of summer.
 
 **Большой город никогда не спит.** *(Bolshoy gorod nikogda ne spit.)* — A big city never sleeps.
 

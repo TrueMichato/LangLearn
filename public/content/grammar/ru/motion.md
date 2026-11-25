@@ -1,5 +1,7 @@
 # Motion Verbs (идти/ходить)
 
+<!-- vocab-inventory: {"mode":"explicit"} -->
+
 Russian has a unique system of **motion verbs** that distinguishes between movement in one direction and movement in general. This is one of the trickiest topics for learners, but mastering it will dramatically improve your fluency.
 
 ---
@@ -27,7 +29,9 @@ Think of it this way:
 
 **Мы летаем в Москву каждый год.** *(My letayem v Moskvu kazhdyy god.)* — We fly to Moscow every year.
 
-<!-- grammar-card: {"rule":"One trip under way in one direction uses the unidirectional verb","hint":"идти / ходить","example":"Сейчас я ___ в школу.","answer":"иду","explanation":"Сейчас fixes a single journey in progress, which is exactly what идти expresses."} -->
+<!-- grammar-card: {"id":"going-to-school-now","kind":"rule","format":"cloze","priority":"essential","sourceSection":"1. Unidirectional vs Multidirectional","rule":"One trip under way in one direction uses the unidirectional verb","example":"You are on your way to school right now. Choose идти or ходить (to go on foot): Сейчас я ___ в школу.","answer":"иду","explanation":"Сейчас fixes a single journey in progress, which is exactly what идти expresses.","legacyAliases":[{"rule":"One trip under way in one direction uses the unidirectional verb","example":"Сейчас я ___ в школу."}]} -->
+
+<!-- grammar-card: {"id":"rule-unidirectional","kind":"concept","format":"qa","priority":"essential","sourceSection":"1. Unidirectional vs Multidirectional","rule":"A single trip in one direction, under way now, takes the unidirectional verb","example":"Which kind of motion verb describes one trip in one direction that is happening right now?","answer":"The unidirectional verb.","explanation":"The answer counts if it names the unidirectional verb, such as идти or ехать: Я иду в школу means I am on my way to school now."} -->
 
 ---
 
@@ -76,6 +80,8 @@ Below are the most important motion verb pairs. The first verb in each pair is *
 **Он часто ездит в командировки.** *(On chasto yezdit v komandirovki.)* — He often goes on business trips.
 
 **Такси едет быстро.** *(Taksi yedet bystro.)* — The taxi is going fast.
+
+<!-- grammar-card: {"id":"drives-to-work-daily","kind":"rule","format":"cloze","priority":"optional","sourceSection":"ехать / ездить — to go (by vehicle)","rule":"Regular trips by vehicle use the multidirectional ездить","example":"Say he drives to work every day. Choose ехать or ездить (to go by vehicle): Он ___ на работу каждый день.","answer":"ездит","explanation":"Каждый день makes the trip habitual, so the multidirectional ездить is used rather than the one-way ехать."} -->
 
 ### бежать / бегать — to run
 
@@ -160,7 +166,11 @@ Below are the most important motion verb pairs. The first verb in each pair is *
 
 <!-- quiz:{"type":"multiple-choice","question":"Which sentence correctly describes a habitual action?","options":["Я иду в школу.","Я хожу в школу каждый день.","Я шёл в школу.","Я пойду в школу."],"answer":1} -->
 
-<!-- grammar-card: {"rule":"Habitual round trips use the multidirectional verb","hint":"идти / ходить","example":"Я ___ в школу каждый день.","answer":"хожу","explanation":"Каждый день describes a repeated there-and-back trip, so ходить replaces the one-way идти."} -->
+<!-- grammar-card: {"id":"go-to-school-daily","kind":"rule","format":"cloze","priority":"essential","sourceSection":"3. When to Use Each Type","rule":"Habitual round trips use the multidirectional verb","example":"Say you go to school every day. Choose идти or ходить (to go on foot): Я ___ в школу каждый день.","answer":"хожу","explanation":"Каждый день describes a repeated there-and-back trip, so ходить replaces the one-way идти.","legacyAliases":[{"rule":"Habitual round trips use the multidirectional verb","example":"Я ___ в школу каждый день."}]} -->
+
+<!-- grammar-card: {"id":"went-to-theatre","kind":"rule","format":"qa","priority":"essential","sourceSection":"3. When to Use Each Type","rule":"A multidirectional verb in the past tense implies a round trip","example":"Мы ходили в театр на прошлой неделе. Театр means theatre. Are they still at the theatre?","answer":"No. They went there and came back.","explanation":"Ходили is the multidirectional verb in the past, which reports a completed round trip; Мы пошли в театр would only say they set off, and Мы шли в театр that they were on their way."} -->
+
+<!-- grammar-card: {"id":"rule-multidirectional","kind":"concept","format":"qa","priority":"optional","sourceSection":"3. When to Use Each Type","rule":"Habitual, repeated and round trips take the multidirectional verb","example":"Which kind of motion verb do you use for habitual trips and round trips?","answer":"The multidirectional verb.","explanation":"The answer counts if it names the multidirectional verb, such as ходить or ездить: Я хожу в школу means I go to school regularly."} -->
 
 ---
 
@@ -178,6 +188,8 @@ For example, with вы- (out):
 - вы- + идти → **выйти** (perfective: to go out, to exit — one time)
 - вы- + ходить → **выходить** (imperfective: to go out, to exit — repeated/in progress)
 
+<!-- grammar-card: {"id":"rule-prefix-perfective","kind":"concept","format":"qa","priority":"essential","sourceSection":"4. Prefixed Motion Verbs","rule":"A prefix on a unidirectional stem makes a perfective verb","example":"What aspect does a motion verb get when a prefix is added to a unidirectional stem such as идти (to go)?","answer":"Perfective.","explanation":"Вы- + идти gives выйти, a perfective verb; the same prefix on the multidirectional ходить gives the imperfective выходить."} -->
+
 ### Common Prefixes and Their Meanings
 
 #### вы- (out, exit)
@@ -192,9 +204,11 @@ For example, with вы- (out):
 
 **Рыба выплыла на поверхность.** *(Ryba vyplyla na poverkhnost.)* — The fish swam up to the surface.
 
+<!-- grammar-card: {"id":"went-out-of-room","kind":"rule","format":"cloze","priority":"optional","sourceSection":"вы- (out, exit)","rule":"The prefix вы- means going out","example":"Say he went out of the room. Use выйти (to go out): Он ___ из комнаты.","answer":"вышел","explanation":"Выйти is вы- plus идти, so its past is built on the irregular past of идти (шёл): вышел."} -->
+
 #### при- (arrival)
 
-**Поезд прибыл на станцию.** *(Poyezd pribyl na stantsiyu.)* — The train arrived at the station.
+**Поезд пришёл на станцию.** *(Poyezd prishyol na stantsiyu.)* — The train arrived at the station.
 
 **Она пришла домой поздно.** *(Ona prishla domoy pozdno.)* — She came home late.
 
@@ -203,6 +217,8 @@ For example, with вы- (out):
 **Птицы прилетают весной.** *(Ptitsy priletayut vesnoy.)* — Birds arrive in spring.
 
 **Он приходит на работу вовремя.** *(On prikhodit na rabotu vovremya.)* — He comes to work on time (regularly).
+
+<!-- grammar-card: {"id":"came-home-late","kind":"rule","format":"cloze","priority":"optional","sourceSection":"при- (arrival)","rule":"The prefix при- marks arrival","example":"Say she came home late. Use прийти (to arrive on foot): Она ___ домой поздно.","answer":"пришла","explanation":"Прийти is при- plus идти, so its feminine past is built on the irregular stem: пришла."} -->
 
 #### у- (departure, away)
 
@@ -256,8 +272,6 @@ For example, with вы- (out):
 
 <!-- quiz:{"type":"multiple-choice","question":"'Мы перешли через мост' means:","options":["We walked past the bridge.","We ran to the bridge.","We crossed the bridge.","We left the bridge."],"answer":2} -->
 
-<!-- grammar-card: {"rule":"The prefix по- marks the moment motion begins","hint":"идти → ?","example":"Он ___ на работу в восемь.","answer":"пошёл","explanation":"Пошёл reports that he set off at eight, rather than describing the journey itself."} -->
-
 ---
 
 ## 5. Summary Table of Prefixed Pairs
@@ -275,7 +289,7 @@ For example, with вы- (out):
 
 **Вчера я вышел из дома рано.** *(Vchera ya vyshel iz doma rano.)* — Yesterday I left the house early.
 
-**Она приходит на урок без опозданий.** *(Ona prikhodit na urok bez opazdaniy.)* — She comes to class without being late.
+**Она приходит на урок без опозданий.** *(Ona prikhodit na urok bez opozdaniy.)* — She comes to class without being late.
 
 **Он ушёл и больше не вернулся.** *(On ushyol i bolshe ne vernulsya.)* — He left and never came back.
 

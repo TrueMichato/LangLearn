@@ -1,12 +1,14 @@
 # Short-Form Adjectives (Краткие прилагательные)
 
+<!-- vocab-inventory: {"mode":"explicit"} -->
+
 Russian adjectives have two forms: the **long form** (полная форма), which you already know from declension tables, and the **short form** (краткая форма). Short-form adjectives are used only as **predicates** (after the subject, like English "The book is interesting") and cannot be declined — they only change for **gender** and **number**.
 
 ---
 
 ## 1. Formation of Short-Form Adjectives
 
-Short-form adjectives are created by removing the long-form ending and adding short endings:
+Short-form adjectives are created by removing the long-form ending and adding short endings. There are only four forms — they change for gender and number, never for case:
 
 | Gender/Number | Long form ending | Short form ending | Example (красивый) |
 |---|---|---|---|
@@ -33,7 +35,9 @@ Short-form adjectives are created by removing the long-form ending and adding sh
 
 **Мы готовы.** *(My gotovy.)* — We are ready.
 
-<!-- grammar-card: {"rule":"Short-form adjectives agree with the subject in gender and number","hint":"готов / готова / готовы","example":"Она ___.","answer":"готова","explanation":"Она is feminine singular, so the short form takes the ending -а: готова."} -->
+<!-- grammar-card: {"id":"she-is-ready","kind":"rule","format":"cloze","priority":"essential","sourceSection":"1. Formation of Short-Form Adjectives","rule":"Short-form adjectives agree with the subject in gender and number","example":"Say she is ready. Use the short form of готовый (ready): Она ___.","answer":"готова","explanation":"Она is feminine singular, so the short form takes the feminine ending -а. A man would say Я готов; a group, Мы готовы.","legacyAliases":[{"rule":"Short-form adjectives agree with the subject in gender and number","example":"Она ___."}]} -->
+
+<!-- grammar-card: {"id":"rule-no-case","kind":"concept","format":"qa","priority":"optional","sourceSection":"1. Formation of Short-Form Adjectives","rule":"Short forms change for gender and number but never for case","example":"Short-form adjectives change for gender and number. Which grammatical category do they never change for?","answer":"Case.","explanation":"Any answer naming case counts. A short form only stands after the subject as a predicate, so it has just four forms (красив, красива, красиво, красивы) and no case endings."} -->
 
 ---
 
@@ -59,6 +63,11 @@ This only affects the **masculine** form. The feminine, neuter, and plural do no
 
 **Они больны.** *(Oni bolny.)* — They are sick.
 
+<!-- grammar-card: {"id":"he-is-sick","kind":"rule","format":"cloze","priority":"essential","sourceSection":"2. Fleeting Vowels","rule":"Some masculine short forms insert a fleeting vowel","example":"Say he is sick right now, using the short form of больной (sick): Он ___.","answer":"болен","explanation":"A short form describes his state at the moment, and its masculine needs a fleeting е to split -льн-, giving болен. The feminine has no extra vowel: Она больна."} -->
+
+<!-- grammar-card: {"id":"need-dictionary","kind":"rule","format":"cloze","priority":"optional","sourceSection":"2. Fleeting Vowels","rule":"Нужен agrees with the thing that is needed","example":"Say you need a dictionary. Use нужный (needed): Мне ___ словарь.","answer":"нужен","explanation":"The thing needed, словарь, is the masculine subject, so the short form is masculine and gets a fleeting е. The person who needs it stays in the dative: мне."} -->
+
+<!-- grammar-card: {"id":"rule-fleeting-vowel-masc","kind":"concept","format":"qa","priority":"optional","sourceSection":"2. Fleeting Vowels","rule":"Fleeting vowels appear only in the masculine short form","example":"Adjectives like полный or умный insert a fleeting vowel in one short form. Which one?","answer":"The masculine.","explanation":"Any answer naming the masculine counts. The zero ending would leave two consonants together, so полный gives полон; the feminine полна, neuter полно and plural полны need no extra vowel."} -->
 <!-- quiz:{"type":"multiple-choice","question":"What is the masculine short form of 'нужный' (needed)?","options":["нужн","нужный","нужен","нужна"],"answer":2} -->
 
 ---
@@ -76,6 +85,8 @@ This is the key question. Both forms can appear as predicates, but they carry di
 **Я рад вас видеть.** *(Ya rad vas videt.)* — I'm glad to see you.
 
 **Этот вопрос очень важен.** *(Etot vopros ochen vazhen.)* — This question is very important (in this context).
+
+<!-- grammar-card: {"id":"rule-short-temporary","kind":"concept","format":"qa","priority":"essential","sourceSection":"Short form — temporary state, specific situation, or formal tone","rule":"As a predicate the short form tends to express a temporary state, the long form a permanent quality","example":"As a predicate, what does the short form (Она занята) usually suggest that the long form (Она занятая) does not?","answer":"A temporary state, here and now.","explanation":"Any answer about a current or temporary state counts. Она занята means she is busy at the moment; Она занятая describes a busy person in general."} -->
 
 ### Long form — permanent quality or general characteristic
 
@@ -95,9 +106,10 @@ This is the key question. Both forms can appear as predicates, but they carry di
 
 > These short forms imply excess and cannot be replaced by long forms with the same meaning.
 
-<!-- quiz:{"type":"multiple-choice","question":"'Она занята' (short form) most likely means:","options":["She is a busy person in general","She is busy right now","She used to be busy","She will be busy"],"answer":1} -->
+<!-- grammar-card: {"id":"shoes-too-small","kind":"rule","format":"qa","priority":"optional","sourceSection":"Short form — \"too much\" with слишком or excess","rule":"Short forms with a dative person can express excess","example":"Эти туфли мне малы. What is the problem with the shoes?","answer":"They are too small for me.","explanation":"Малы with the dative мне means too small for me, not simply small. Short forms like мал, велик and короток carry that sense of excess."} -->
 
-<!-- grammar-card: {"rule":"Only the short form works as a predicate before an infinitive","hint":"готов / готова / готовы","example":"Мы ___ идти.","answer":"готовы","explanation":"Мы is plural, so the predicate short form is готовы; the long готовые could not take the infinitive идти."} -->
+<!-- grammar-card: {"id":"suit-too-big","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Short form — \"too much\" with слишком or excess","rule":"Велик with a dative person means too big for someone","example":"Complain that this suit is too big for you. Use the short form of великий: Этот костюм мне ___.","answer":"велик","explanation":"Костюм is masculine, and the short form велик with мне means too big for me. The plain adjective большой would only say the suit is big, not too big."} -->
+<!-- quiz:{"type":"multiple-choice","question":"'Она занята' (short form) most likely means:","options":["She is a busy person in general","She is busy right now","She used to be busy","She will be busy"],"answer":1} -->
 
 ---
 
@@ -121,6 +133,13 @@ Some adjectives are **only** used in short form when serving as predicates:
 
 **Кто виноват?** *(Kto vinovat?)* — Who is to blame?
 
+> **Рад** has no long form at all. The others do have long forms (должный, обязанный, склонный, намеренный, виноватый, живой), but these either mean something different or mostly stand before a noun; as predicates with the meanings above, the short form is the standard choice.
+
+<!-- vocab-card: {"id":"vocab-rad","word":"рад","meaning":"glad","priority":"optional","sourceSection":"4. Adjectives Used Only in Short Form (as Predicates)"} -->
+
+<!-- vocab-card: {"id":"vocab-dolzhen","word":"до́лжен","meaning":"must, obliged to","priority":"optional","sourceSection":"4. Adjectives Used Only in Short Form (as Predicates)"} -->
+
+<!-- grammar-card: {"id":"glad-woman","kind":"rule","format":"cloze","priority":"essential","sourceSection":"4. Adjectives Used Only in Short Form (as Predicates)","rule":"Рад exists only in the short form and agrees with the speaker","example":"A woman tells you she is glad to see you. Use рад (glad): Я ___ вас видеть.","answer":"рада","explanation":"Рад has no long form, so its short form changes for the speaker: a woman says рада, a man рад, several people рады."} -->
 <!-- quiz:{"type":"multiple-choice","question":"Which adjective is used ONLY in short form as a predicate?","options":["красивый (beautiful)","новый (new)","рад (glad)","большой (big)"],"answer":2} -->
 
 ---
@@ -141,6 +160,8 @@ Short-form adjectives often combine with infinitives to express ability, readine
 
 **Я вынужден отказаться.** *(Ya vynuzhden otkazatsya.)* — I am forced to refuse.
 
+<!-- grammar-card: {"id":"ready-to-go","kind":"rule","format":"cloze","priority":"optional","sourceSection":"5. Short-Form Adjectives with Infinitives","rule":"Only the short form works as a predicate before an infinitive","example":"Say you and your friends are ready to go. Use готовый (ready): Мы ___ идти.","answer":"готовы","explanation":"Мы is plural, so the short form takes -ы. Only the short form can be followed by an infinitive like идти; the long готовые could not.","legacyAliases":[{"rule":"Only the short form works as a predicate before an infinitive","example":"Мы ___ идти."}]} -->
+
 ---
 
 ## 6. Short-Form Adjectives in Impersonal Constructions
@@ -159,7 +180,9 @@ Neuter short forms are widely used in **impersonal** (subjectless) sentences:
 
 **Странно, что никто не пришёл.** *(Stranno, chto nikto ne prishyol.)* — It's strange that nobody came.
 
-<!-- grammar-card: {"rule":"An impersonal construction pairs a dative experiencer with a neuter short form","hint":"грустный → ?","example":"Мне ___ это слышать.","answer":"грустно","explanation":"With no subject to agree with, the neuter short form грустно is used and the person stands in the dative."} -->
+<!-- grammar-card: {"id":"sad-to-hear","kind":"rule","format":"cloze","priority":"optional","sourceSection":"6. Short-Form Adjectives in Impersonal Constructions","rule":"An impersonal construction pairs a dative experiencer with a neuter short form","example":"Say it makes you sad to hear this. Use грустный (sad): Мне ___ это слышать.","answer":"грустно","explanation":"The sentence has no subject to agree with, so the neuter short form in -о is used, and the person who feels sad stands in the dative: мне.","legacyAliases":[{"rule":"An impersonal construction pairs a dative experiencer with a neuter short form","example":"Мне ___ это слышать."}]} -->
+
+<!-- grammar-card: {"id":"rule-impersonal-neuter","kind":"concept","format":"qa","priority":"essential","sourceSection":"6. Short-Form Adjectives in Impersonal Constructions","rule":"Subjectless sentences use the neuter short form","example":"In a subjectless sentence such as It's hard to understand, which form of the short adjective is used?","answer":"The neuter (-о).","explanation":"Any answer naming the neuter counts. There is no subject to agree with, so the default neuter form appears: Трудно понять, Важно знать правду."} -->
 
 ---
 
@@ -169,12 +192,12 @@ Short-form adjectives often have **different stress** from their long forms. The
 
 | Long form (stress) | Masc. | Fem. | Neut. | Pl. |
 |---|---|---|---|---|
-| до́рогой (dorogóy) | до́рог | дорога́ | до́рого | до́роги |
+| дорого́й (dorogóy) | до́рог | дорога́ | до́рого | до́роги |
 | молодо́й (molodóy) | мо́лод | молода́ | мо́лодо | мо́лоды |
-| хороши́й (khoróshiy) | хоро́ш | хороша́ | хорошо́ | хороши́ |
+| хоро́ший (khoróshiy) | хоро́ш | хороша́ | хорошо́ | хороши́ |
 | у́мный (úmnyy) | умён | умна́ | умно́ | умны́ |
 
-**Она молода́ и красива́.** *(Ona molodá i krasivá.)* — She is young and beautiful.
+**Она молода́ и краси́ва.** *(Ona molodá i krasíva.)* — She is young and beautiful.
 
 **Погода хороша́.** *(Pogoda khoroshá.)* — The weather is good.
 
@@ -191,7 +214,7 @@ Short-form adjectives often have **different stress** from their long forms. The
 ❌ **Она должная работать.** — Incorrect: должен is only short form.
 ✅ **Она должна работать.** — She must work.
 
-❌ **Он рад.** / **Он радый.** — "Радый" does not exist.
+❌ **Он радый.** — "Радый" does not exist.
 ✅ **Он рад.** — He is glad. (Only short form exists.)
 
 ---
