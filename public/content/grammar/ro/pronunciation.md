@@ -52,7 +52,8 @@ Use **ș** and **ț** with comma below, not the older cedilla forms. In modern R
 
 <!-- quiz: {"type":"multiple-choice","question":"Which Romanian letter sounds like English 'sh'?","options":["ă","â","ș","ț"],"answer":2} -->
 
-<!-- grammar-card: {"id":"country-diacritic","kind":"rule","format":"cloze","priority":"optional","sourceSection":"The Five Diacritics","rule":"Romanian diacritics change meaning and pronunciation","example":"___ară means country, but tara is not standard Romanian spelling.","answer":"ț","explanation":"Only ț is missing. Together with ară it spells țară, with the ts sound and comma below."} -->
+<!-- grammar-card: {"id":"country-diacritic","kind":"rule","format":"cloze","priority":"optional","sourceSection":"The Five Diacritics","rule":"Romanian diacritics change meaning and pronunciation","example":"___ară means country; tara, without a diacritic, does not.","answer":"ț","explanation":"Only ț is missing: țară, with the ts sound and comma below. Plain t would spell a different word.","legacyAliases":[{"rule":"Romanian diacritics change meaning and pronunciation","example":"___ară means country, but tara is not standard Romanian spelling."}]} -->
+<!-- grammar-card: {"id":"rule-diacritics-meaning","kind":"concept","format":"qa","priority":"optional","sourceSection":"The Five Diacritics","rule":"Romanian diacritic letters are distinct letters, not optional accents","example":"Why must Romanian diacritic letters be typed rather than treated as optional accents?","answer":"They mark distinct sounds and distinguish words.","explanation":"They are not optional decoration: casă has a final uh sound, and țară needs ts. Dropping the mark changes the sound and can spell a different word."} -->
 
 ## C and G Before E or I
 
@@ -64,7 +65,7 @@ The letters **c** and **g** change sound before **e** and **i**:
 | **ce, ci** | ch | **ceai** (chai) — tea, **cinci** (cheench) — five |
 | **che, chi** | k | **cheie** (KEH-yeh) — key, **chitară** (kee-TAH-ruh) — guitar |
 | **ga, go, gu** | g as in go | **gară** (GAH-ruh) — station |
-| **ge, gi** | j as in judge | **genunchi** (jeh-NOONK) — knee, **gingie** (JEEN-jee-eh) — gum |
+| **ge, gi** | j as in judge | **genunchi** (jeh-NOONK) — knee, **gingie** (jeen-JEE-eh) — gum |
 | **ghe, ghi** | hard g | **gheață** (GYAH-tsuh) — ice, **ghid** (geed) — guide |
 
 - **Citesc o carte.** (chee-TESK oh KAR-teh) — I read a book.
@@ -73,6 +74,7 @@ The letters **c** and **g** change sound before **e** and **i**:
 <!-- grammar-card: {"id":"hard-c-key","kind":"rule","format":"cloze","priority":"essential","sourceSection":"C and G Before E or I","rule":"Use che/chi to keep a hard K sound before e or i","example":"Am o ___. (I have a key.)","answer":"cheie","explanation":"Cheie uses che to preserve k before e. The blank takes the whole word, not cheie followed by a second ie.","legacyAliases":[{"rule":"Use che/chi to keep a hard K sound before e or i","example":"Am o ___ie. (I have a key.)"}]} -->
 <!-- grammar-card: {"id":"soft-c-g","kind":"concept","format":"qa","priority":"essential","sourceSection":"C and G Before E or I","rule":"Plain c and g soften before e or i","example":"How are c and g pronounced before e or i without an intervening h?","answer":"C sounds like ch; g sounds like j in judge.","explanation":"Compare ceai and genunchi with hard c in casă and hard g in gară."} -->
 <!-- grammar-card: {"id":"hard-g-guide","kind":"rule","format":"cloze","priority":"optional","sourceSection":"C and G Before E or I","rule":"Ghe and ghi preserve hard g before e and i","example":"Write guide with hard g: ___ (Romanian).","answer":"ghid","explanation":"Ghi keeps the g sound of go; gi alone normally has the sound of j in judge."} -->
+<!-- grammar-card: {"id":"rule-h-keeps-c-g-hard","kind":"concept","format":"qa","priority":"essential","sourceSection":"C and G Before E or I","rule":"An h after c or g keeps the consonant hard before e or i","example":"What does an h written between c or g and a following e or i do to the consonant's sound?","answer":"It keeps it hard: k, or g as in go.","explanation":"Compare chitară and gheață, with hard k and g, to ceai and genunchi, where plain c and g soften to ch and j. Saying that che, chi, ghe and ghi stay hard counts."} -->
 <!-- vocab-card: {"id":"vocab-ceai","word":"ceai","meaning":"tea","priority":"optional","sourceSection":"C and G Before E or I"} -->
 <!-- vocab-card: {"id":"vocab-cheie","word":"cheie","meaning":"key","priority":"optional","sourceSection":"C and G Before E or I"} -->
 <!-- vocab-card: {"id":"vocab-chitara","word":"chitară","meaning":"guitar","priority":"optional","sourceSection":"C and G Before E or I"} -->

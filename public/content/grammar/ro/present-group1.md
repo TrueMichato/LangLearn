@@ -42,6 +42,7 @@ The third-person singular and plural are the same: **el cântă**, **ei cântă*
 <!-- quiz: {"type":"multiple-choice","question":"What is the 'noi' form of 'a cânta'?","options":["cânt","cânți","cântăm","cântă"],"answer":2} -->
 
 <!-- grammar-card: {"id":"canta-noi-form","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Pattern 1: a cânta — no -ez-","rule":"Regular -a endings without -ez include -ăm for noi and -ați for voi","example":"Noi ___ la petrecere. (We sing at the party.)","answer":"cântăm","explanation":"The noi form is cântăm in this no-ez pattern."} -->
+<!-- grammar-card: {"id":"rule-no-ez-noi-ending","kind":"concept","format":"qa","priority":"essential","sourceSection":"Pattern 1: a cânta — no -ez-","rule":"Group 1 verbs like a cânta end in -ăm in the noi form","example":"Which ending marks the noi form of a verb like a cânta?","answer":"-ăm.","explanation":"Noi cântăm, ascultăm, plecăm. Naming ăm counts."} -->
 
 ## More Verbs Like a cânta
 
@@ -57,8 +58,9 @@ Some stems change slightly: **întreba → întreabă**, **pleca → pleacă**. 
 - **Întreb profesorul.** (uhn-TREB proh-feh-SOH-rool) — I ask the teacher.
 - **Ei pleacă mâine.** (yay PLEH-ah-kuh MUH-ee-neh) — They leave tomorrow.
 
-<!-- grammar-card: {"id":"pleca-stem-alternation","kind":"rule","format":"cloze","priority":"optional","sourceSection":"More Verbs Like a cânta","rule":"A pleca has third-person pleacă with ea","example":"Ei ___ mâine. (a pleca)","answer":"pleacă","explanation":"The stem vowel changes in plec → pleacă; endings alone are insufficient."} -->
+<!-- grammar-card: {"id":"pleca-stem-alternation","kind":"rule","format":"cloze","priority":"optional","sourceSection":"More Verbs Like a cânta","rule":"A pleca has third-person pleacă","example":"Ei ___ mâine. (a pleca)","answer":"pleacă","explanation":"The stem vowel changes in plec → pleacă; endings alone are insufficient.","legacyAliases":[{"rule":"A pleca has third-person pleacă with ea","example":"Ei ___ mâine. (a pleca)"}]} -->
 <!-- grammar-card: {"id":"intreba-stem-alternation","kind":"rule","format":"cloze","priority":"optional","sourceSection":"More Verbs Like a cânta","rule":"A întreba has third-person întreabă","example":"Ea ___ profesorul. (a întreba)","answer":"întreabă","explanation":"Compare eu întreb with ea întreabă."} -->
+<!-- grammar-card: {"id":"rule-third-person-stem-change","kind":"concept","format":"qa","priority":"optional","sourceSection":"More Verbs Like a cânta","rule":"A pleca and a întreba change their stem vowel in the third person","example":"In verbs such as a pleca and a întreba, which person shows a stem vowel change in the present?","answer":"The third person (el/ea and ei/ele).","explanation":"Eu plec, noi plecăm, but el and ei pleacă; eu întreb, but ea întreabă. The other persons keep the plain stem."} -->
 <!-- vocab-card: {"id":"vocab-a-intreba","word":"a întreba","meaning":"to ask","priority":"optional","sourceSection":"More Verbs Like a cânta"} -->
 <!-- vocab-card: {"id":"vocab-a-ajuta","word":"a ajuta","meaning":"to help","priority":"optional","sourceSection":"More Verbs Like a cânta"} -->
 <!-- vocab-card: {"id":"vocab-a-pleca","word":"a pleca","meaning":"to leave","priority":"optional","sourceSection":"More Verbs Like a cânta"} -->
