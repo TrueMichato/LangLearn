@@ -58,6 +58,7 @@ The present perfect is available for **life experiences** with no finished time 
 - **¿Alguna vez has visto una aurora boreal?** — Have you ever seen the northern lights?
 
 <!-- grammar-card: {"id":"perfect-formation","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Formation","rule":"Present perfect = he/has/ha/hemos/habéis/han + invariable past participle","example":"¿Alguna vez ___ comido ceviche? (tú)","answer":"has","explanation":"Present haber takes has for tú; comido stays invariable.","legacyAliases":[{"rule":"Present perfect = he/has/ha/hemos/habéis/han + invariable past participle","example":"¿Alguna vez ___ comido ceviche?"}]} -->
+<!-- grammar-card: {"id":"rule-perfect-auxiliary","kind":"concept","format":"qa","priority":"essential","sourceSection":"Formation","rule":"The present perfect is the present of haber plus a past participle","example":"Which auxiliary verb, conjugated in the present, combines with a past participle to form the present perfect (English I have eaten)?","answer":"Haber, not tener (he comido, has comido…).","explanation":"Any answer naming haber counts. He comido = I have eaten; English have is not tener here."} -->
 <!-- grammar-card: {"id":"life-experience","kind":"concept","format":"qa","priority":"essential","sourceSection":"Key Usage — Life Experiences","rule":"The perfect can ask about experience up to now without a finished past date","example":"What time frame does ¿Alguna vez has estado en Perú? ask about?","answer":"Experience at any time up to now, without naming a finished past occasion.","explanation":"This use is available in many varieties, but the choice against preterite is not identical everywhere."} -->
 
 ## Regional Difference — Spain vs. Latin America
@@ -122,6 +123,7 @@ In the present perfect, the past participle **never agrees** with anything. This
 | Formal passive (ser + participle) | ✅ Yes | *La carta fue **escrita** por ella.* |
 
 <!-- grammar-card: {"id":"haber-invariability","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Participle Invariability — A Common Mistake","rule":"In haber + participle, the participle is invariable — never add gender/number endings","example":"Ella ha ___ la carta. (escribir)","answer":"escrito","explanation":"Haber keeps escrito invariable. Compare the agreeing ser passive La carta fue escrita."} -->
+<!-- grammar-card: {"id":"rule-perfect-participle-invariable","kind":"concept","format":"qa","priority":"optional","sourceSection":"Participle Invariability — A Common Mistake","rule":"After haber the past participle never agrees; only the ser passive makes it agree","example":"After haber, does the past participle ever agree in gender or number with the subject or object?","answer":"No. It stays invariable; only the ser passive makes it agree.","explanation":"Ella ha escrito la carta, but La carta fue escrita por ella."} -->
 
 ## Sources
 

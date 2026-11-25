@@ -1,1 +1,61 @@
-{"lessons": {}}
+{"lessons": {
+  "pronunciation": {
+    "split": {"vowel-sound-map": ["vowel-e-sound", "vowel-i-sound", "vowel-u-sound"]},
+    "listExempt": {"vowel-sound-map": "Kept for saved-card identity; the atomic split cards carry the recall for the vowels English speakers misread by letter name (e, i, u)."},
+    "answerChanged": {
+      "pure-vowels": "Yes/no front replaced by an open recall question; the answer no longer enumerates the five vowels.",
+      "j-sound": "Yes/no front replaced by an open question about the sound of j; the answer drops the leading No.",
+      "hard-g": "Yes/no comparison replaced by recall of what decides hard versus h-like g; the answer states the vowel condition.",
+      "written-accent": "The old front showed the accented syllable it asked for; the new front asks why the tilde overrides the default, so the answer gives the reason."
+    }
+  },
+  "articles": {
+    "answerChanged": {
+      "agua-gender": "Yes/no front replaced by open recall of agua's gender and agreement; the answer drops the leading No.",
+      "country-articles": "Compound yes/no front replaced by one question with three options; the answer leads with both being acceptable."
+    }
+  },
+  "gender-number": {
+    "split": {"feminine-endings": ["cion-sion-feminine", "dad-tad-feminine"]},
+    "listExempt": {"feminine-endings": "Kept for saved-card identity; the atomic split cards carry the recall for each feminine ending pair."},
+    "answerChanged": {
+      "gender-tendencies": "Yes/no front replaced by open recall of how reliable endings are; the answer drops the leading No."
+    }
+  },
+  "present-ar": {
+    "answerChanged": {
+      "ar-question": "Yes/no front about ¿Hablas inglés? replaced by open recall of what Spanish adds to form a question; the answer drops the leading No."
+    }
+  },
+  "present-er-ir": {},
+  "ser-estar": {
+    "answerChanged": {
+      "permanence-shortcut": "Yes/no front replaced by open recall of which verb locates a permanent building; the answer now leads with estar."
+    }
+  },
+  "irregular-verbs": {},
+  "prepositions": {},
+  "pronouns": {
+    "answerChanged": {
+      "usted-regional-register": "Yes/no front replaced by open recall of what Colombian usted expresses with intimates; the answer is now that content.",
+      "ambiguous-subject": "Yes/no front replaced by open recall of what disambiguates a shared third-person form; the answer drops the No."
+    }
+  },
+  "questions": {
+    "frontExempt": {
+      "question-punctuation": "The front supplies the words Dónde vives as material; the skill tested is adding the opening ¿ and closing ?, which the gate's normalization strips before comparing."
+    }
+  },
+  "object-pronouns": {
+    "reclassified": {
+      "direct-indirect-contrast": "Identifying which phrase is the thing given and which the recipient in Le doy el libro a Ana parses a specific sentence (application), not declarative recall; concept → rule, format stays qa with the same wording. rule-indirect-object-role carries the declarative recall."
+    },
+    "answerChanged": {
+      "command-attachment": "Yes/no front replaced by open recall of where pronouns go in an affirmative command; the answer drops the No and states the position.",
+      "leismo-scope": "Yes/no front replaced by open recall of which direct object accepted leísmo covers; the answer drops the No."
+    },
+    "frontExempt": {
+      "direct-object": "The la on the front is the article of the antecedent la pizza, which supplies the feminine-singular cue the learner must use; it is not the answer pronoun printed in the blank."
+    }
+  }
+}}

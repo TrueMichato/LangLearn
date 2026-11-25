@@ -18,6 +18,7 @@ For the requested thing in these examples, English *ask for* corresponds to a **
 <!-- vocab-card: {"id":"vocab-pedir-favor","word":"pedir un favor","meaning":"to ask a favor","priority":"optional","sourceSection":"Pedir — To Request Something"} -->
 <!-- vocab-card: {"id":"vocab-pedir-ayuda","word":"pedir ayuda","meaning":"to ask for help","priority":"essential","sourceSection":"Pedir — To Request Something"} -->
 <!-- grammar-card: {"id":"request-direct-object","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Pedir — To Request Something","rule":"The requested thing is a direct object of pedir in the taught request construction","example":"Voy a ___ ayuda. (ask for help)","answer":"pedir","explanation":"Do not insert English for as por before ayuda in this construction."} -->
+<!-- grammar-card: {"id":"rule-pedir-request","kind":"concept","format":"qa","priority":"essential","sourceSection":"Pedir — To Request Something","rule":"Pedir is to ask for (request) a thing, favor or action","example":"Which Spanish verb for to ask means requesting a thing, a favor or an action?","answer":"Pedir.","explanation":"Pido un café; Te pido un favor; Pidió ayuda."} -->
 
 ### Conjugation: Pedir (Stem-changing e → i)
 
@@ -36,6 +37,8 @@ The stem change in **pidió / pidieron** is easy to forget — many learners say
 
 <!-- grammar-card: {"id":"present-pido","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Conjugation: Pedir (Stem-changing e → i)","rule":"Pedir changes e to i in present forms except nosotros/vosotros","example":"Yo ___ un café. (pedir, present)","answer":"pido","explanation":"Use pid- for yo, tú, él and ellos in the present."} -->
 <!-- grammar-card: {"id":"present-pedimos","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Conjugation: Pedir (Stem-changing e → i)","rule":"Present nosotros keeps ped-","example":"Nosotros ___ ayuda. (pedir, present)","answer":"pedimos","explanation":"Nosotros and vosotros do not take the present e→i stem change."} -->
+<!-- grammar-card: {"id":"rule-pedir-present-keeps-e","kind":"concept","format":"qa","priority":"optional","sourceSection":"Conjugation: Pedir (Stem-changing e → i)","rule":"In the present, only nosotros and vosotros keep the e of pedir","example":"Pides and pide show the present e → i change. Which two persons keep the e?","answer":"Nosotros and vosotros.","explanation":"Pedimos and pedís keep ped-; pido, pides, pide and piden change to pid-."} -->
+<!-- grammar-card: {"id":"rule-pedir-preterite-third","kind":"concept","format":"qa","priority":"optional","sourceSection":"Conjugation: Pedir (Stem-changing e → i)","rule":"In the preterite, only the third-person forms of pedir change e to i","example":"Pedí and pediste keep e in the preterite. Which persons change it to i?","answer":"The third persons: él/ella/usted and ellos/ustedes.","explanation":"Pidió and pidieron; pedí, pediste, pedimos and pedisteis keep e. Pedió is a common learner slip."} -->
 <!-- quiz: {"type":"multiple-choice","question":"How do you say 'She asked for a glass of water' in Spanish?","options":["Ella preguntó un vaso de agua","Ella pidió un vaso de agua","Ella preguntó por un vaso de agua","Ella pidió por un vaso de agua"],"answer":1} -->
 
 ## Preguntar — To Ask a Question
@@ -50,6 +53,7 @@ Use **preguntar** (preh-goon-TAHR) when you ask **for information** — a questi
 
 <!-- vocab-card: {"id":"vocab-preguntar","word":"preguntar","meaning":"to ask a question; to ask for information","priority":"essential","sourceSection":"Preguntar — To Ask a Question"} -->
 <!-- grammar-card: {"id":"question-information","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Preguntar — To Ask a Question","rule":"Preguntar asks for information and conjugates regularly as an -ar verb","example":"Ella ___ dónde está el baño. (preguntar, present)","answer":"pregunta","explanation":"The requested response is information, not an object or favor."} -->
+<!-- grammar-card: {"id":"rule-preguntar-information","kind":"concept","format":"qa","priority":"essential","sourceSection":"Preguntar — To Ask a Question","rule":"Preguntar is to ask a question seeking information","example":"Which Spanish verb for to ask means asking a question to get information?","answer":"Preguntar.","explanation":"Te pregunto algo; Preguntó dónde estaba el baño. It is a regular -ar verb."} -->
 ### Preguntar por vs Preguntar
 
 - **preguntar algo** = to ask something (the question itself).
@@ -60,7 +64,7 @@ Examples:
 - **Me preguntó la hora** — She asked me the time.
 - **Me preguntó por ti** (meh preh-goon-TOH pohr tee) — She asked about you / asked how you were.
 
-<!-- grammar-card: {"id":"request-bill","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Pedir — To Request Something","rule":"pedir = request a thing/action; preguntar = ask a question (request information)","example":"Voy a ___ al camarero la cuenta. (I'm going to ask the waiter for the check)","answer":"pedirle","explanation":"You request the bill, not information about it. Pedirle includes the indirect-object le referring to the waiter."} -->
+<!-- grammar-card: {"id":"request-bill","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Pedir — To Request Something","rule":"pedir = request a thing/action; preguntar = ask a question (request information)","example":"Voy a ___ al camarero la cuenta. (I'm going to ask the waiter for the check)","answer":"pedirle","explanation":"You request the bill, not information about it. Pedirle includes the indirect-object le referring to the waiter; pedir without le also counts."} -->
 <!-- grammar-card: {"id":"preguntar-por","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Preguntar por vs Preguntar","rule":"Preguntar por asks about or after someone","example":"Me preguntó ___ ti. (asked how you were)","answer":"por","explanation":"Preguntar por someone is not the same as requesting that person or an object."} -->
 
 ## Side-by-Side Comparison
@@ -95,7 +99,7 @@ Notice how the speaker uses **preguntar** to ask a question, then **pedir** to r
 
 <!-- quiz: {"type":"multiple-choice","question":"Choose the correct verb: 'Mi madre me _____ por mi salud.' (My mother asked about my health)","options":["pidió","preguntó","pedía","pide"],"answer":1} -->
 
-<!-- grammar-card: {"id":"preterite-pidio","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Conjugation: Pedir (Stem-changing e → i)","rule":"Pedir is e→i stem-changing: pido, pides, pide… and pidió/pidieron in the preterite","example":"Ayer Juan ___ una pizza. (yesterday Juan ordered a pizza)","answer":"pidió","explanation":"Only third-person preterite forms take the e→i change: pidió and pidieron; pedí, pediste, pedimos and pedisteis keep e."} -->
+<!-- grammar-card: {"id":"preterite-pidio","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Conjugation: Pedir (Stem-changing e → i)","rule":"Pedir is e→i stem-changing: pido, pides, pide… and pidió/pidieron in the preterite","example":"Ayer Juan ___ una pizza. (pedir; yesterday Juan ordered a pizza)","answer":"pidió","explanation":"Only third-person preterite forms take the e→i change: pidió and pidieron; pedí, pediste, pedimos and pedisteis keep e.","legacyAliases":[{"rule":"Pedir is e→i stem-changing: pido, pides, pide… and pidió/pidieron in the preterite","example":"Ayer Juan ___ una pizza. (yesterday Juan ordered a pizza)"}]} -->
 <!-- grammar-card: {"id":"preterite-pidieron","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Conjugation: Pedir (Stem-changing e → i)","rule":"Third-person plural preterite of pedir has pid-","example":"Ayer ellos ___ ayuda. (pedir)","answer":"pidieron","explanation":"The plural third person shares the preterite e→i change with pidió."} -->
 
 ## Sources

@@ -1,1 +1,65 @@
-{"lessons": {}}
+{
+  "lessons": {
+    "possessives": {
+      "answerChanged": {
+        "su-ambiguity": "Same target (su alone does not identify the owner); the four-owner list was trimmed to one de + pronoun example so the answer is a single idea rather than a set."
+      }
+    },
+    "demonstratives": {},
+    "preterito-indefinido": {},
+    "preterito-imperfecto": {
+      "reclassified": {
+        "polite-imperfect": "Interpreting Quería un café as a polite present request is an inference about a sentence, not declarative recall; it is now rule+qa with the same wording."
+      }
+    },
+    "past-comparison": {
+      "reclassified": {
+        "aspect-definition": "Interpreting the Leí/Leía el libro pair is an inference about example sentences, not declarative recall; now rule+qa with the same wording. rule-perfective-view and rule-imperfective-view carry the declarative aspect definitions.",
+        "saber-aspect": "Contrasting Supe la verdad ayer with Sabía la verdad todo el tiempo is sentence interpretation; now rule+qa with the same wording. rule-saber-found-out carries the declarative recall.",
+        "conocer-aspect": "Contrasting conocí a Ana with conocía a Ana is sentence interpretation; now rule+qa with the same wording. rule-conocer-met carries the declarative recall.",
+        "poder-aspect": "Contrasting pude with podía in a success versus a background ability is contextual interpretation; now rule+qa with the same wording.",
+        "querer-aspect": "How quise can differ from quería is a contextual reading (attempt versus wish), an interpretation task rather than declarative recall; now rule+qa with the same wording."
+      }
+    },
+    "reflexive-verbs": {
+      "reclassified": {
+        "reflexive-meaning": "Deciding who is washed in María se lava interprets a specific sentence rather than recalling a declarative fact; it is now rule+qa with the same wording. rule-pronoun-matches-subject carries the declarative recall."
+      }
+    },
+    "imperative": {
+      "split": {
+        "irregular-command-mnemonic": [
+          "hacer-command",
+          "ir-command",
+          "venir-command",
+          "tener-command",
+          "poner-command",
+          "salir-command",
+          "ser-command"
+        ]
+      },
+      "listExempt": {
+        "irregular-command-mnemonic": "Kept for saved-card identity; the atomic split cards (one per irregular tú command, plus the existing decir-command) carry the recall."
+      }
+    },
+    "numbers-dates": {},
+    "comparatives": {},
+    "future": {},
+    "conditional": {
+      "reclassified": {
+        "past-conjecture": "Deciding what Serían las diez means in a past scene interprets a specific sentence rather than recalling a declarative fact; it is now rule+qa with the same wording. rule-conditional-past-probability carries the declarative recall."
+      },
+      "split": {
+        "conditional-endings": [
+          "conditional-yo",
+          "conditional-tu",
+          "conditional-ellos",
+          "conditional-vosotros"
+        ]
+      },
+      "listExempt": {
+        "conditional-endings": "Kept for saved-card identity; the atomic split cards (one person each, with conditional-regular covering nosotros) carry the recall."
+      }
+    }
+  }
+}

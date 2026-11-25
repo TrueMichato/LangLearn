@@ -16,7 +16,7 @@ Take **comer** (koh-MEHR) — *to eat*. Remove **-er** → stem **com-**, then a
 | nosotros | **-emos** | **comemos** | koh-MEH-mohs |
 | ellos / ellas / ustedes | **-en** | **comen** | KOH-mehn |
 
-> 🌍 **Spain note**: vosotros form is **coméis** (koh-MÉHS).
+> 🌍 **Spain note**: vosotros form is **coméis** (koh-MAYS).
 
 <!-- vocab-card: {"id":"vocab-comer","word":"comer","meaning":"to eat","priority":"optional","sourceSection":"Conjugating -er Verbs: Comer (to eat)"} -->
 <!-- grammar-card: {"id":"er-yo","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Conjugating -er Verbs: Comer (to eat)","rule":"Regular -er verbs take -o with yo","example":"Yo ___ una manzana. (comer)","answer":"como","explanation":"Remove er from comer and add o: como."} -->
@@ -52,7 +52,9 @@ The two families are nearly identical — only **nosotros** and **vosotros** dif
 | vosotros (Spain) | **-éis** | **-ís** ← different |
 
 <!-- grammar-card: {"id":"er-ir-differences","kind":"concept","format":"qa","priority":"essential","sourceSection":"Comparing -er and -ir Endings","rule":"Regular -er and -ir present endings differ only for nosotros and vosotros","example":"Which subjects have different regular present endings in the -er and -ir families?","answer":"Nosotros: -emos versus -imos; vosotros: -éis versus -ís.","explanation":"Yo, tú, él/ella/usted and ellos/ustedes share the other endings."} -->
-<!-- grammar-card: {"id":"er-vosotros","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Comparing -er and -ir Endings","rule":"Vosotros uses -éis for regular -er verbs","example":"Vosotros ___ aquí. (comer; Spain, informal plural)","answer":"coméis","explanation":"Com- takes éis; the corresponding -ir ending is ís, as in vivís."} -->
+<!-- grammar-card: {"id":"er-vosotros","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Comparing -er and -ir Endings","rule":"Vosotros uses -éis for regular -er verbs","example":"Vosotros ___ aquí. (comer; Spain, informal plural)","answer":"coméis","explanation":"Com- takes éis; the corresponding -ir ending is ís, as in vivís. Latin American ustedes instead uses comen."} -->
+<!-- grammar-card: {"id":"rule-er-ir-tu-ending","kind":"concept","format":"qa","priority":"essential","sourceSection":"Comparing -er and -ir Endings","rule":"Regular -er and -ir verbs add -es for tú","example":"Regular -ar verbs add -as for tú. Which ending do regular -er and -ir verbs add for tú?","answer":"-es, as in comes and escribes.","explanation":"Any answer giving -es counts; both families share it."} -->
+<!-- grammar-card: {"id":"rule-er-ir-ellos-ending","kind":"concept","format":"qa","priority":"optional","sourceSection":"Comparing -er and -ir Endings","rule":"Regular -er and -ir verbs both add -en for ellos and ustedes","example":"Which ending do regular -er and -ir verbs both add for ellos, ellas and ustedes?","answer":"-en, as in comen and viven.","explanation":"Any answer giving -en counts. Regular -ar verbs use -an instead: hablan."} -->
 
 <!-- quiz: {"type":"multiple-choice","question":"What is the 'nosotros' form of 'vivir' (to live)?","options":["vivemos","vivaban","vivimos","vivémos"],"answer":2} -->
 

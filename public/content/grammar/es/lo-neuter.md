@@ -22,6 +22,7 @@ In this abstract **lo + adjective** pattern, the adjective has the **masculine s
 <!-- vocab-card: {"id":"vocab-lo-malo","word":"lo malo","meaning":"the bad part","priority":"optional","sourceSection":"The Core Construction"} -->
 <!-- vocab-card: {"id":"vocab-lo-interesante","word":"lo interesante","meaning":"the interesting thing","priority":"optional","sourceSection":"The Core Construction"} -->
 <!-- grammar-card: {"id":"abstract-adjective","kind":"rule","format":"cloze","priority":"essential","sourceSection":"The Core Construction","rule":"Lo + masculine singular adjective creates an abstract noun: 'the [adjective] thing'","example":"___ ___ es que estamos juntos. (The important thing is that we're together)","answer":"Lo importante","explanation":"This abstract pattern uses the masculine singular adjective form rather than agreeing with a feminine or plural noun."} -->
+<!-- grammar-card: {"id":"rule-lo-adjective-form","kind":"concept","format":"qa","priority":"essential","sourceSection":"The Core Construction","rule":"Abstract lo takes a masculine singular adjective","example":"In abstract lo + adjective ('the good thing'), which gender and number does the adjective take?","answer":"Masculine singular.","explanation":"Any answer saying masculine singular counts: lo bueno, never lo buena or lo buenos. Emphatic lo + adjective + que (lo buenas que son) is a different construction that agrees."} -->
 
 ## Typical Sentence Patterns
 
@@ -80,7 +81,7 @@ The pronoun **lo** refers to a specific masculine noun or whole idea ("it"). The
 This is a common conversational shortcut to refer to a topic, event, or situation without spelling it out.
 
 <!-- vocab-card: {"id":"vocab-lo-de","word":"lo de","meaning":"the matter of; the thing about (a topic or situation)","priority":"optional","sourceSection":"Lo de + Noun (\"The Thing About / The Matter of\")"} -->
-<!-- grammar-card: {"id":"topic-contraction","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Lo de + Noun (\"The Thing About / The Matter of\")","rule":"De plus el still contracts inside lo del","example":"No me hables de lo ___ trabajo. (the work matter; de + el)","answer":"del","explanation":"Lo de can introduce a topic; de el trabajo contracts to del trabajo."} -->
+<!-- grammar-card: {"id":"topic-contraction","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Lo de + Noun (\"The Thing About / The Matter of\")","rule":"De plus el still contracts inside lo del","example":"No me hables de lo ___ trabajo. (Don't talk to me about the work thing.)","answer":"del","explanation":"Lo de introduces the topic, and de + el trabajo must contract to del trabajo.","legacyAliases":[{"rule":"De plus el still contracts inside lo del","example":"No me hables de lo ___ trabajo. (the work matter; de + el)"}]} -->
 
 ## Lo de + Infinitive ("The Whole Thing of")
 
@@ -89,7 +90,8 @@ This is a common conversational shortcut to refer to a topic, event, or situatio
 
 The infinitive turns into a kind of noun phrase, and **lo de** introduces it as a topic.
 
-<!-- grammar-card: {"id":"activity-topic","kind":"concept","format":"qa","priority":"optional","sourceSection":"Lo de + Infinitive (\"The Whole Thing of\")","rule":"Lo de can introduce an infinitival activity as a conversational topic","example":"What does lo de introduce in No me gusta lo de levantarme temprano?","answer":"The activity or whole business of getting up early, treated as a topic.","explanation":"Lo de is not restricted to an ordinary noun or a person's name."} -->
+<!-- grammar-card: {"id":"activity-topic","kind":"rule","format":"qa","priority":"optional","sourceSection":"Lo de + Infinitive (\"The Whole Thing of\")","rule":"Lo de can introduce an infinitival activity as a conversational topic","example":"What does lo de introduce in No me gusta lo de levantarme temprano?","answer":"The activity or whole business of getting up early, treated as a topic.","explanation":"Lo de is not restricted to an ordinary noun or a person's name."} -->
+<!-- grammar-card: {"id":"rule-lo-de-infinitive","kind":"concept","format":"qa","priority":"optional","sourceSection":"Lo de + Infinitive (\"The Whole Thing of\")","rule":"Lo de can also take an infinitive","example":"Besides a noun or a name, what verb form can follow lo de to name a topic?","answer":"An infinitive, naming an activity as the topic.","explanation":"Naming the infinitive counts. Lo de estudiar todas las noches me cansa."} -->
 
 <!-- quiz: {"type":"multiple-choice","question":"What does '¿Sabes lo de Marta?' mean?","options":["Do you know Marta?","Do you know what Marta said?","Did you hear about (the thing with) Marta?","Do you know where Marta is?"],"answer":2} -->
 

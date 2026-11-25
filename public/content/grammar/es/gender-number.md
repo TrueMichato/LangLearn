@@ -16,8 +16,10 @@ Most nouns follow predictable patterns based on their ending:
 | **-dad / -tad** | Feminine | **la ciudad** (syoo-DAHD) — city; **la libertad** — freedom |
 | **-or** | Masculine | **el color** — color; **el calor** — heat |
 
-<!-- grammar-card: {"id":"gender-tendencies","kind":"concept","format":"qa","priority":"essential","sourceSection":"Noun Gender: The Basics","rule":"Noun endings are gender clues, not guarantees","example":"Does an -a ending guarantee that a Spanish noun is feminine?","answer":"No. It is a useful tendency, but exceptions such as el día and el mapa must be learned.","explanation":"Learn a noun with its article rather than treating an ending as an absolute rule."} -->
+<!-- grammar-card: {"id":"gender-tendencies","kind":"concept","format":"qa","priority":"essential","sourceSection":"Noun Gender: The Basics","rule":"Noun endings are gender clues, not guarantees","legacyAliases":[{"rule":"Noun endings are gender clues, not guarantees","example":"Does an -a ending guarantee that a Spanish noun is feminine?"}],"example":"How reliable is a noun's ending, such as -o or -a, as a guide to its gender?","answer":"A useful tendency but not a guarantee; exceptions such as el día and el mapa must be learned.","explanation":"Any answer calling endings a tendency with exceptions counts. Learn a noun with its article rather than treating an ending as an absolute rule."} -->
 <!-- grammar-card: {"id":"feminine-endings","kind":"concept","format":"qa","priority":"optional","sourceSection":"Noun Gender: The Basics","rule":"The taught -ción, -sión, -dad and -tad nouns are feminine","example":"What gender do nación, televisión, ciudad and libertad have?","answer":"Feminine: la nación, la televisión, la ciudad, la libertad.","explanation":"These endings provide useful gender patterns in the examples taught here."} -->
+<!-- grammar-card: {"id":"cion-sion-feminine","kind":"concept","format":"qa","priority":"optional","sourceSection":"Noun Gender: The Basics","rule":"Nouns ending in -ción and -sión are feminine","example":"Which definite article do nouns ending in -ción or -sión take?","answer":"La: they are feminine (la nación, la televisión).","explanation":"Any answer saying la or feminine counts; the plural is las naciones."} -->
+<!-- grammar-card: {"id":"dad-tad-feminine","kind":"concept","format":"qa","priority":"optional","sourceSection":"Noun Gender: The Basics","rule":"Nouns ending in -dad and -tad are feminine","example":"Which definite article do nouns ending in -dad or -tad take?","answer":"La: they are feminine (la ciudad, la libertad).","explanation":"Any answer saying la or feminine counts; the plural is las ciudades."} -->
 
 ## Important Exceptions
 
@@ -35,6 +37,7 @@ Words borrowed from Greek ending in **-ma / -ema / -ama / -oma** are masculine:
 - **el poema** (ehl poh-EH-mah) — the poem
 
 <!-- grammar-card: {"id":"greek-ma","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Masculine Nouns Ending in -a (Greek-origin -ma words)","rule":"Problema belongs to the masculine Greek-origin -ma group","example":"___ problema es difícil. (the problem)","answer":"El","explanation":"Problema is masculine despite its final a; the rule does not make every word ending in ma masculine."} -->
+<!-- grammar-card: {"id":"rule-greek-ma-masculine","kind":"concept","format":"qa","priority":"essential","sourceSection":"Masculine Nouns Ending in -a (Greek-origin -ma words)","rule":"Greek-origin nouns ending in -ma are masculine","example":"Tema, sistema and idioma end in -a but come from Greek -ma words. What gender are they?","answer":"Masculine: el tema, el sistema, el idioma.","explanation":"Any answer saying masculine counts. This covers the Greek-origin group only; la cama, for example, is feminine."} -->
 <!-- vocab-card: {"id":"vocab-problema","word":"problema","meaning":"problem (masculine)","priority":"optional","sourceSection":"Masculine Nouns Ending in -a (Greek-origin -ma words)"} -->
 <!-- vocab-card: {"id":"vocab-tema","word":"tema","meaning":"topic; theme (masculine)","priority":"optional","sourceSection":"Masculine Nouns Ending in -a (Greek-origin -ma words)"} -->
 <!-- vocab-card: {"id":"vocab-idioma","word":"idioma","meaning":"language (masculine)","priority":"optional","sourceSection":"Masculine Nouns Ending in -a (Greek-origin -ma words)"} -->
@@ -86,6 +89,8 @@ Nouns ending in **-z** change the z to c before adding -es:
 
 <!-- quiz: {"type":"multiple-choice","question":"What is the plural of 'lápiz' (pencil)?","options":["lápizs","lápizes","lápices","lápizas"],"answer":2} -->
 
+<!-- grammar-card: {"id":"rule-z-to-c-plural","kind":"concept","format":"qa","priority":"essential","sourceSection":"Special Rule: Z → C before -es","rule":"A final z changes to c before the plural ending -es","example":"A noun ends in -z, like vez. What happens to the z when it forms its plural?","answer":"It changes to c before -es: vez becomes veces.","explanation":"Any answer saying z becomes c before es counts. The same change gives peces and narices."} -->
+
 ## Adjective Agreement
 
 Adjectives in Spanish must agree in **gender AND number** with the noun they modify.
@@ -130,6 +135,7 @@ When a group contains both masculine and feminine nouns, the **masculine plural*
 - **El libro y la pluma son azules** — The book and the pen are blue (invariable, plural)
 
 <!-- grammar-card: {"id":"mixed-group","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Mixed-Gender Groups","rule":"Conventional agreement uses masculine plural for a mixed-gender group","example":"Pedro y María son ___. (simpático)","answer":"simpáticos","explanation":"The mixed group takes the masculine plural in the agreement pattern taught here."} -->
+<!-- grammar-card: {"id":"rule-mixed-group-masculine","kind":"concept","format":"qa","priority":"optional","sourceSection":"Mixed-Gender Groups","rule":"Agreement with a mixed-gender group uses the masculine plural","example":"An adjective describes a group of masculine and feminine nouns together. Which form does it take?","answer":"The masculine plural.","explanation":"Any answer naming the masculine plural counts: Pedro y María son altos. Gender-invariant adjectives just take the plural: azules."} -->
 
 ## Summary: Plural Formation
 

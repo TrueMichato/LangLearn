@@ -15,6 +15,7 @@ Both **por** and **para** can translate as "for" in English, but they cover very
 - **Lucharon por la libertad** — They fought for (the sake of) freedom
 
 <!-- grammar-card: {"id":"por-cause","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Cause or Reason (\"because of / on behalf of\")","rule":"Por introduces a reason for thanks","example":"Gracias ___ tu ayuda.","answer":"por","explanation":"The help is the reason for the thanks, not their destination."} -->
+<!-- grammar-card: {"id":"rule-cause-por","kind":"concept","format":"qa","priority":"essential","sourceSection":"Cause or Reason (\"because of / on behalf of\")","rule":"Por introduces a cause, motive or reason","example":"Which of the two Spanish prepositions for English 'for' introduces a cause or motive (because of, for the sake of)?","answer":"Por.","explanation":"Any answer naming por counts. Lucharon por la libertad: freedom is the motive for the fight, not its recipient."} -->
 
 ### Exchange or Substitution
 
@@ -23,6 +24,7 @@ Both **por** and **para** can translate as "for" in English, but they cover very
 - **Vendieron la casa por poco dinero** — They sold the house for little money
 
 <!-- grammar-card: {"id":"por-exchange","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Exchange or Substitution","rule":"Por marks what is exchanged or paid for","example":"Pagué veinte dólares ___ el libro.","answer":"por","explanation":"Money is exchanged for the book."} -->
+<!-- grammar-card: {"id":"rule-exchange-por","kind":"concept","format":"qa","priority":"optional","sourceSection":"Exchange or Substitution","rule":"Por marks what is given or received in an exchange","example":"Which of the two Spanish prepositions for English 'for' marks an exchange or price (paying, trading or selling for something)?","answer":"Por.","explanation":"Any answer naming por counts. Te cambio esto por aquello: this is traded for that."} -->
 
 ### Duration of Time
 
@@ -59,7 +61,7 @@ Duration **por** is especially common in some American varieties. Depending on t
 - **Tres veces por semana** (por seh-MAH-nah) — Three times per week
 - **Gana diez dólares por hora** — She earns ten dollars per hour
 
-<!-- grammar-card: {"id":"por-rate","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Per / Rate","rule":"Por expresses a rate or frequency per unit","example":"Tres veces ___ semana.","answer":"por","explanation":"The frequency is three times per week."} -->
+<!-- grammar-card: {"id":"por-rate","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Per / Rate","rule":"Por expresses a rate or frequency per unit","example":"Tres veces ___ semana. (per week; one word)","answer":"por","explanation":"The frequency is three times per week. A la semana is also natural, but it is two words.","legacyAliases":[{"rule":"Por expresses a rate or frequency per unit","example":"Tres veces ___ semana."}]} -->
 
 ## Para — The Core Idea: Purpose, Destination, Deadline
 
@@ -72,6 +74,7 @@ Duration **por** is especially common in some American varieties. Depending on t
 - **Este botón es para pausar** — This button is for pausing
 
 <!-- grammar-card: {"id":"para-purpose","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Purpose or Goal (\"in order to\")","rule":"Para + infinitive expresses a purpose","example":"Estudio ___ aprender.","answer":"para","explanation":"Learning is the goal of studying."} -->
+<!-- grammar-card: {"id":"rule-purpose-para","kind":"concept","format":"qa","priority":"essential","sourceSection":"Purpose or Goal (\"in order to\")","rule":"Para expresses purpose, including before an infinitive","example":"Which of the two Spanish prepositions for English 'for' expresses purpose (in order to), for example before an infinitive?","answer":"Para.","explanation":"Any answer naming para counts. Ahorré dinero para el viaje: the trip is the goal of the saving."} -->
 <!-- vocab-card: {"id":"vocab-ahorrar","word":"ahorrar","meaning":"to save money","priority":"optional","sourceSection":"Purpose or Goal (\"in order to\")"} -->
 
 ### Recipient ("for someone")
@@ -88,6 +91,7 @@ Duration **por** is especially common in some American varieties. Depending on t
 - **Termina esto para mañana** — Finish this by tomorrow
 
 <!-- grammar-card: {"id":"para-deadline","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Deadline","rule":"Para marks a deadline","example":"Necesito el informe ___ el lunes. (by Monday)","answer":"para","explanation":"Monday is the due date, not the duration."} -->
+<!-- grammar-card: {"id":"rule-deadline-para","kind":"concept","format":"qa","priority":"optional","sourceSection":"Deadline","rule":"Para marks a deadline (by a certain time)","example":"Which of the two Spanish prepositions for English 'for' marks a deadline (by a certain time)?","answer":"Para.","explanation":"Any answer naming para counts. Termina esto para mañana: tomorrow is when it is due, not how long the work lasts."} -->
 
 <!-- quiz: {"type":"multiple-choice","question":"'Estudio español ___ trabajar en México.' Which fits?","options":["por","para","de","con"],"answer":1} -->
 
@@ -96,7 +100,7 @@ Duration **por** is especially common in some American varieties. Depending on t
 - **Salgo para Madrid mañana** (PA-rah mah-DRID) — I'm leaving for Madrid tomorrow
 - **Este vuelo va para Buenos Aires** — This flight goes to Buenos Aires
 
-<!-- grammar-card: {"id":"para-destination","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Direction Toward a Destination","rule":"Para can mark a destination","example":"Salgo ___ Madrid mañana. (heading for Madrid)","answer":"para","explanation":"Madrid is the destination; por Madrid would describe a route through it."} -->
+<!-- grammar-card: {"id":"para-destination","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Direction Toward a Destination","rule":"Para can mark a destination","example":"Salgo ___ Madrid mañana. (heading for Madrid)","answer":"para","explanation":"Madrid is the destination; por Madrid would describe a route through it. Hacia (toward) is also possible here."} -->
 
 ### Opinion or Point of View
 
@@ -110,7 +114,7 @@ Duration **por** is especially common in some American varieties. Depending on t
 - **Trabajo para Google** (PA-rah) — I work for Google
 - **Ella diseña para una marca española** — She designs for a Spanish brand
 
-<!-- grammar-card: {"id":"para-employer","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Employment","rule":"Para can identify an employer or client","example":"Trabajo ___ una marca española.","answer":"para","explanation":"The brand is the employer or client receiving the work."} -->
+<!-- grammar-card: {"id":"para-employer","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Employment","rule":"Para can identify an employer or client","example":"Trabajo ___ una marca española. (I work for it: it is my employer or client)","answer":"para","explanation":"The brand is the employer or client receiving the work. Trabajo en una marca (I work at) is also grammatical but says where, not for whom.","legacyAliases":[{"rule":"Para can identify an employer or client","example":"Trabajo ___ una marca española."}]} -->
 
 ### Comparison / Unexpected Standard
 

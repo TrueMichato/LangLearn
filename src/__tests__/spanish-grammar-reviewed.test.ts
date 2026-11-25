@@ -3,7 +3,7 @@
  *
  *   npx vitest run src/__tests__/spanish-grammar-reviewed.test.ts -t "<lessonId>"
  *
- * Each batch owns one review record, fixtures/spanish-grammar-reviewed/batch-N.json:
+ * Each batch owns one review record, fixtures/spanish-grammar-reviewed/batch-N.json (N = 1–6):
  *
  *   {"lessons": {
  *     "<lessonId>": {
@@ -328,7 +328,7 @@ describe('Spanish reviewed grammar — records and registry', () => {
   it('review records are {"lessons": {...}} files using only the documented fields', () => {
     const errors: string[] = [];
     for (const [file, value] of Object.entries(BATCH_FILES)) {
-      if (!/\/batch-[1-5]\.json$/.test(file)) errors.push(`${file}: unexpected review record file`);
+      if (!/\/batch-[1-6]\.json$/.test(file)) errors.push(`${file}: unexpected review record file`);
       if (!isMetadataObject(value) || Object.keys(value).join() !== 'lessons' || !isMetadataObject(value.lessons)) {
         errors.push(`${file}: must be exactly {"lessons": {...}}`);
         continue;

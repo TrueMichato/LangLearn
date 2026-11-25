@@ -15,7 +15,8 @@ The location of a **thing** uses **estar**, but the location of an **event** use
 
 Think of **ser** here as "takes place" — events happen; they don't sit somewhere.
 
-<!-- grammar-card: {"id":"event-location","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Events Use Ser — Even Temporary Ones","rule":"Location of a thing → estar; location of an event → ser","example":"El examen ___ en el aula 3. (The exam is in room 3)","answer":"es","explanation":"An exam is an event taking place there; a physical exam paper could instead estar there."} -->
+<!-- grammar-card: {"id":"event-location","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Events Use Ser — Even Temporary Ones","rule":"Location of a thing → estar; location of an event → ser","example":"El examen ___ en el aula 3. (The exam is held in room 3.)","answer":"es","explanation":"An exam is an event taking place there; a physical exam paper could instead estar there.","legacyAliases":[{"rule":"Location of a thing → estar; location of an event → ser","example":"El examen ___ en el aula 3. (The exam is in room 3)"}]} -->
+<!-- grammar-card: {"id":"rule-event-location-ser","kind":"concept","format":"qa","priority":"essential","sourceSection":"Events Use Ser — Even Temporary Ones","rule":"The location of an event uses ser, even when the event is temporary","example":"Which verb gives the location of an event, such as a party or a meeting?","answer":"Ser.","explanation":"La fiesta es en mi casa; compare El libro está en la mesa for a thing."} -->
 <!-- grammar-card: {"id":"takes-place-cue","kind":"concept","format":"qa","priority":"optional","sourceSection":"Events Use Ser — Even Temporary Ones","rule":"Takes place is a cue for event-location ser","example":"How does the English cue takes place help choose the verb for La fiesta… en mi casa?","answer":"If is means takes place, the subject is an event: use ser, not the estar used to locate things.","explanation":"The cue identifies event location, not permanence or the duration of a party."} -->
 
 <!-- quiz: {"type":"multiple-choice","question":"Which is correct: 'The wedding is at the cathedral'?","options":["La boda está en la catedral","La boda es en la catedral","La boda está a la catedral","La boda hay en la catedral"],"answer":1} -->
@@ -85,6 +86,7 @@ Examples to feel the contrast:
 The **estar de** construction signals a **temporary role** — often a stand-in job or summer gig.
 
 <!-- grammar-card: {"id":"temporary-role","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Professions: Ser vs Estar de","rule":"Estar de introduces a temporary working role","example":"Este verano está ___ camarero. (working as a waiter)","answer":"de","explanation":"Es camarero states a profession; está de camarero presents the role being performed."} -->
+<!-- grammar-card: {"id":"rule-estar-de-role","kind":"concept","format":"qa","priority":"optional","sourceSection":"Professions: Ser vs Estar de","rule":"Estar de + job presents a temporary role; ser + job states a profession","example":"What does estar de + a job present, compared with ser + the same job?","answer":"A temporary role being performed, rather than the person's profession.","explanation":"Es médico — he is a doctor; Está de médico en un hospital rural — he is working as a doctor there."} -->
 
 ## Weather Idioms
 
@@ -102,16 +104,19 @@ Use **estar**, not ser, for the current weather condition *Está nublado*. This 
 
 ## Feelings and Emotions Use Estar
 
-Even strong emotional states are with **estar** because they can change:
+Emotional states normally take **estar**, because they describe how someone is feeling (a state), not who they are — the same identity-versus-state test, not a question of how long the feeling lasts:
 
 - **Estoy feliz / triste / enfadado** — I am happy / sad / angry.
 - **Está enamorada de él** — She's in love with him. *(yes, still estar!)*
+
+*Feliz* is a common exception: **es feliz** is normal for someone's general happiness in life.
 
 <!-- vocab-card: {"id":"vocab-feliz","word":"feliz","meaning":"happy","priority":"optional","sourceSection":"Feelings and Emotions Use Estar"} -->
 <!-- vocab-card: {"id":"vocab-triste","word":"triste","meaning":"sad","priority":"optional","sourceSection":"Feelings and Emotions Use Estar"} -->
 <!-- vocab-card: {"id":"vocab-enfadado","word":"enfadado","meaning":"angry","priority":"optional","sourceSection":"Feelings and Emotions Use Estar"} -->
 <!-- vocab-card: {"id":"vocab-enamorado-de","word":"enamorado de","meaning":"in love with","priority":"optional","sourceSection":"Feelings and Emotions Use Estar"} -->
 <!-- grammar-card: {"id":"emotional-state","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Feelings and Emotions Use Estar","rule":"Estar presents an emotional state","example":"Hoy ___ triste. (I feel sad today.)","answer":"estoy","explanation":"This describes how I feel now; it does not claim that every possible use of feliz requires estar."} -->
+<!-- grammar-card: {"id":"rule-emotions-estar","kind":"concept","format":"qa","priority":"optional","sourceSection":"Feelings and Emotions Use Estar","rule":"Emotional states normally take estar","example":"Which verb normally presents a current feeling such as sad, angry or in love?","answer":"Estar.","explanation":"Estoy triste; Está enamorada de él. Feliz also appears with ser for general happiness: es feliz."} -->
 
 ## Mini-Dialogue
 

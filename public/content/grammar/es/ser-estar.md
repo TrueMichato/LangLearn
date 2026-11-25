@@ -39,7 +39,8 @@ One of the most important distinctions in Spanish is that English's single verb 
 - **Soy de México** (SOH-ee deh MEH-hee-koh) — I am from Mexico
 - **Ella es colombiana** (EH-yah ehs koh-lohm-BYAH-nah) — She is Colombian
 
-<!-- grammar-card: {"id":"ser-origin","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Identity, Origin, and Nationality","rule":"Origin uses ser de","example":"Ella ___ de Colombia.","answer":"es","explanation":"The sentence identifies her origin, not her current location."} -->
+<!-- grammar-card: {"id":"ser-origin","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Identity, Origin, and Nationality","rule":"Origin uses ser de","legacyAliases":[{"rule":"Origin uses ser de","example":"Ella ___ de Colombia."}],"example":"Ella ___ de Colombia. (She is from Colombia.)","answer":"es","explanation":"The sentence identifies her origin, not her current location."} -->
+<!-- grammar-card: {"id":"rule-origin-ser","kind":"concept","format":"qa","priority":"essential","sourceSection":"Identity, Origin, and Nationality","rule":"Origin and nationality use ser","example":"Which verb, followed by de, says where someone is from?","answer":"Ser: Soy de México.","explanation":"Any answer naming ser (ser de) counts. Origin stays ser even when the person is somewhere else right now."} -->
 
 ### Profession and Characteristics
 
@@ -48,7 +49,7 @@ One of the most important distinctions in Spanish is that English's single verb 
 - **La mesa es de madera** (lah MEH-sah ehs deh mah-DEH-rah) — The table is (made) of wood
 
 <!-- grammar-card: {"id":"ser-profession","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Profession and Characteristics","rule":"A profession identifies what someone is and uses ser","example":"Yo ___ médico. (I am a doctor.)","answer":"soy","explanation":"A profession uses ser; the bare profession normally omits an indefinite article."} -->
-<!-- grammar-card: {"id":"ser-material","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Profession and Characteristics","rule":"Material composition uses ser de","example":"La mesa ___ de madera.","answer":"es","explanation":"This describes what the table is made of, not its present location or condition."} -->
+<!-- grammar-card: {"id":"ser-material","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Profession and Characteristics","rule":"Material composition uses ser de","legacyAliases":[{"rule":"Material composition uses ser de","example":"La mesa ___ de madera."}],"example":"La mesa ___ de madera. (The table is made of wood.)","answer":"es","explanation":"This describes what the table is made of, not its present location or condition."} -->
 
 ### Time, Dates, and Scheduled Events
 
@@ -61,6 +62,7 @@ One of the most important distinctions in Spanish is that English's single verb 
 > 📌 Events use **ser** for location — even though location usually uses *estar* — because the event's location is a scheduled, defining characteristic.
 
 <!-- grammar-card: {"id":"ser-time","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Time, Dates, and Scheduled Events","rule":"Clock time uses ser with singular or plural agreement","example":"___ las tres. (It is three o'clock.)","answer":"Son","explanation":"Clock time above one uses plural son las; one o'clock uses es la una."} -->
+<!-- grammar-card: {"id":"rule-time-ser","kind":"concept","format":"qa","priority":"optional","sourceSection":"Time, Dates, and Scheduled Events","rule":"Clock time and dates use ser","example":"Which verb tells the time of day and the date?","answer":"Ser: Es la una; hoy es lunes.","explanation":"Any answer naming ser counts. Hours after one take the plural: Son las tres."} -->
 
 <!-- quiz: {"type":"multiple-choice","question":"How do you say 'It is three o'clock' in Spanish?","options":["Están las tres","Estoy las tres","Son las tres","Ser las tres"],"answer":2} -->
 
@@ -74,7 +76,7 @@ One of the most important distinctions in Spanish is that English's single verb 
 - **El libro está en la mesa** (ehl LEE-broh ehs-TAH ehn lah MEH-sah) — The book is on the table
 - **¿Dónde estás?** — Where are you?
 
-<!-- grammar-card: {"id":"estar-location","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Physical Location","rule":"The physical location of a thing uses estar","example":"El libro ___ en la mesa.","answer":"está","explanation":"This is a thing's location, unlike the venue where an event takes place."} -->
+<!-- grammar-card: {"id":"estar-location","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Physical Location","rule":"The physical location of a thing uses estar","legacyAliases":[{"rule":"The physical location of a thing uses estar","example":"El libro ___ en la mesa."}],"example":"El libro ___ en la mesa. (The book is on the table.)","answer":"está","explanation":"This is a thing's location, unlike the venue where an event takes place."} -->
 
 ### Condition, Mood, and Temporary States
 
@@ -83,7 +85,8 @@ One of the most important distinctions in Spanish is that English's single verb 
 - **Estamos contentos** (ehs-TAH-mohs kohn-TEHN-tohs) — We are happy
 
 <!-- vocab-card: {"id":"vocab-cansado","word":"cansado","meaning":"tired","priority":"optional","sourceSection":"Condition, Mood, and Temporary States"} -->
-<!-- grammar-card: {"id":"estar-state","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Condition, Mood, and Temporary States","rule":"A current feeling takes estar","example":"Yo ___ cansado. (I feel tired.)","answer":"estoy","explanation":"Estar expresses the current state; its yo form is estoy."} -->
+<!-- grammar-card: {"id":"estar-state","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Condition, Mood, and Temporary States","rule":"A current feeling takes estar","legacyAliases":[{"rule":"A current feeling takes estar","example":"Yo ___ cansado. (I feel tired.)"}],"example":"Yo ___ cansado. (I am tired.)","answer":"estoy","explanation":"Estar expresses the current state; its yo form is estoy."} -->
+<!-- grammar-card: {"id":"rule-condition-estar","kind":"concept","format":"qa","priority":"essential","sourceSection":"Condition, Mood, and Temporary States","rule":"Current conditions and moods use estar","example":"Which verb describes how someone is right now, such as tired or sick?","answer":"Estar: Está enferma.","explanation":"Any answer naming estar counts. It describes a current condition or mood rather than what someone fundamentally is."} -->
 
 ### Ongoing Action (estar + -ando/-iendo)
 
@@ -131,7 +134,7 @@ Some adjectives change meaning depending on which verb is used:
 <!-- quiz: {"type":"multiple-choice","question":"'Está aburrido' means:","options":["He is a boring person","He is bored right now","He is boring always","He is a bad person"],"answer":1} -->
 
 <!-- grammar-card: {"id":"aburrido-trait","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Meaning-Shifting Adjectives","rule":"'Estar aburrido' = bored (state); 'Ser aburrido' = boring (personality)","example":"Esa película ___ muy aburrida. (The movie itself is boring as a trait)","answer":"es","explanation":"Ser describes the film's characteristic quality. With a person, estar aburrido normally means bored; context-dependent descriptions of a film with estar need not personify it as bored."} -->
-<!-- grammar-card: {"id":"permanence-shortcut","kind":"concept","format":"qa","priority":"optional","sourceSection":"Quick Decision Chart","rule":"Permanence is not a reliable ser-versus-estar test","example":"Does a building's permanent physical location require ser rather than estar?","answer":"No. Physical location still uses estar.","explanation":"Identity versus state/location is a better starting point than duration alone."} -->
+<!-- grammar-card: {"id":"permanence-shortcut","kind":"concept","format":"qa","priority":"optional","sourceSection":"Quick Decision Chart","rule":"Permanence is not a reliable ser-versus-estar test","legacyAliases":[{"rule":"Permanence is not a reliable ser-versus-estar test","example":"Does a building's permanent physical location require ser rather than estar?"}],"example":"Permanence might suggest ser. Which verb still gives the physical location of a building that never moves?","answer":"Estar: physical location uses estar, however permanent.","explanation":"Any answer choosing estar counts: El museo está en el centro. Identity versus state or location is a better starting point than duration alone."} -->
 
 ## Quick Decision Chart
 
@@ -140,7 +143,7 @@ Some adjectives change meaning depending on which verb is used:
 | Is it identity / what something IS? | **ser** |
 | Is it origin, nationality, profession? | **ser** |
 | Is it time, a date, or scheduled event? | **ser** |
-| Is it a permanent characteristic? | **ser** |
+| Is it an inherent trait or characteristic? | **ser** |
 | Is it physical location of a thing/person? | **estar** |
 | Is it a temporary condition or mood? | **estar** |
 | Is it an ongoing action right now? | **estar** |

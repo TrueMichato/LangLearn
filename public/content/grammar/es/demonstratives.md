@@ -31,6 +31,7 @@ Demonstratives must agree in **gender and number** with the noun they modify:
 - **aquella montaña** (ah-KEH-yah mohn-TAH-nyah) — that mountain over there *(fem. sg.)*
 
 <!-- grammar-card: {"id":"distant-feminine","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Agreeing with the Noun","rule":"Distant feminine plural nouns take aquellas","example":"___ montañas están lejos de los dos. (those mountains over there)","answer":"Aquellas","explanation":"Montañas is feminine plural; far from both selects the aquel tier."} -->
+<!-- grammar-card: {"id":"rule-demonstrative-agreement","kind":"concept","format":"qa","priority":"essential","sourceSection":"Agreeing with the Noun","rule":"Gendered demonstratives agree in gender and number with the noun they modify","example":"What does a demonstrative such as este or aquel agree with, and in which two features?","answer":"The noun it modifies, in gender and number.","explanation":"Count it if you name the noun plus both features. Esta silla is feminine singular; aquellos árboles is masculine plural."} -->
 
 ## Neuter Forms: Esto, Eso, Aquello
 
@@ -41,8 +42,9 @@ When you refer to an **unidentified thing** or a **whole situation**, use the ne
 - **¿Viste aquello?** (BYEHS-teh ah-KEH-yoh) — Did you see that? *(vague, far away)*
 - **Eso no es justo** — That is not fair *(commenting on a general situation)*
 
-<!-- grammar-card: {"id":"neuter-situation","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Neuter Forms: Esto, Eso, Aquello","rule":"Neuter forms (esto/eso/aquello) refer to unidentified things or whole situations — they never modify a specific noun","example":"No entiendo ___. (referring to the whole situation — near-neutral distance)","answer":"eso","explanation":"Eso refers to that situation without modifying a noun; ese problema would need the gendered form."} -->
+<!-- grammar-card: {"id":"neuter-situation","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Neuter Forms: Esto, Eso, Aquello","rule":"Neuter forms (esto/eso/aquello) refer to unidentified things or whole situations — they never modify a specific noun","example":"No entiendo ___. (that — the situation you just described)","answer":"eso","legacyAliases":[{"rule":"Neuter forms (esto/eso/aquello) refer to unidentified things or whole situations — they never modify a specific noun","example":"No entiendo ___. (referring to the whole situation — near-neutral distance)"}],"explanation":"Eso refers to that situation without modifying a noun; ese problema would need the gendered form."} -->
 <!-- grammar-card: {"id":"neuter-limits","kind":"concept","format":"qa","priority":"essential","sourceSection":"Neuter Forms: Esto, Eso, Aquello","rule":"Neuter demonstratives have no plural and cannot modify nouns","example":"Can esto be pluralized or placed before libro as its determiner?","answer":"No. Neuter demonstratives stand alone and have no plural; use este libro or estos libros.","explanation":"Do not confuse neuter esto with masculine singular este."} -->
+<!-- grammar-card: {"id":"rule-neuter-reference","kind":"concept","format":"qa","priority":"essential","sourceSection":"Neuter Forms: Esto, Eso, Aquello","rule":"Neuter demonstratives refer to unidentified things or whole situations","example":"Neuter demonstratives never modify a noun. What do they refer to instead?","answer":"An unidentified thing, or a whole situation or idea.","explanation":"Count it if you name either an unidentified thing or a whole situation. ¿Qué es esto? points at something unnamed; Eso no es justo comments on a situation."} -->
 
 ## Demonstratives with Time
 

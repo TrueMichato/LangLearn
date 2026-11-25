@@ -48,7 +48,7 @@ Use **ir + a + infinitive** to express future plans (equivalent to English "goin
 | nosotros | **tenemos** | teh-NEH-mohs |
 | ellos / ellas / ustedes | **tienen** | TYEH-nehn |
 
-> 🌍 Spain: vosotros **tenéis** (teh-NÉHS)
+> 🌍 Spain: vosotros **tenéis** (teh-NAYS)
 
 - **Tengo dos hermanos** (TEHN-goh dohs ehr-MAH-nohs) — I have two siblings
 - **¿Tienes hambre?** (TYEH-nehs AHM-breh) — Are you hungry? *(lit. Do you have hunger?)*
@@ -90,6 +90,7 @@ Use **tener + que + infinitive** to express obligation:
 <!-- vocab-card: {"id":"vocab-hacer","word":"hacer","meaning":"to do; to make","priority":"optional","sourceSection":"Hacer — to do / to make"} -->
 <!-- vocab-card: {"id":"vocab-hacer-frio","word":"hacer frío","meaning":"to be cold (weather)","priority":"optional","sourceSection":"Hacer — to do / to make"} -->
 <!-- grammar-card: {"id":"hacer-yo","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Hacer — to do / to make","rule":"Hacer has the irregular yo form hago","example":"Yo ___ ejercicio cada mañana. (hacer)","answer":"hago","explanation":"Only the yo form is irregular in this present-tense paradigm."} -->
+<!-- grammar-card: {"id":"rule-hace-weather","kind":"concept","format":"qa","priority":"optional","sourceSection":"Hacer — to do / to make","rule":"Weather expressions use hacer","example":"Which verb do Spanish weather expressions like it is cold use?","answer":"Hacer: Hace frío.","explanation":"Any answer naming hacer counts. Spanish says the weather makes cold, using the él form hace."} -->
 
 ## The Yo-Form Irregular Pattern
 
@@ -114,8 +115,9 @@ Many Spanish verbs are irregular **only in the yo (first person singular)** form
 <!-- grammar-card: {"id":"poner-yo","kind":"rule","format":"cloze","priority":"optional","sourceSection":"The Yo-Form Irregular Pattern","rule":"Poner has the present yo form pongo","example":"Yo ___ la música. (poner)","answer":"pongo","explanation":"Poner belongs to the present-indicative yo forms in go."} -->
 <!-- grammar-card: {"id":"saber-yo","kind":"rule","format":"cloze","priority":"optional","sourceSection":"The Yo-Form Irregular Pattern","rule":"Saber has the accented present yo form sé","example":"No ___ la respuesta. (saber, yo)","answer":"sé","explanation":"Sé means I know; the accent distinguishes it from the pronoun se."} -->
 <!-- grammar-card: {"id":"traer-yo","kind":"rule","format":"cloze","priority":"optional","sourceSection":"The Yo-Form Irregular Pattern","rule":"Traer has the irregular present yo form traigo","example":"Yo ___ el vino. (traer)","answer":"traigo","explanation":"The yo form adds ig in traigo; the other present indicative forms retain tra-."} -->
-<!-- grammar-card: {"id":"conocer-yo","kind":"rule","format":"cloze","priority":"optional","sourceSection":"The Yo-Form Irregular Pattern","rule":"Conocer has the present yo form conozco","example":"Yo ___ a Ana. (conocer)","answer":"conozco","explanation":"The irregular yo form is conozco rather than a regular conozo or conoco."} -->
+<!-- grammar-card: {"id":"conocer-yo","kind":"rule","format":"cloze","priority":"optional","sourceSection":"The Yo-Form Irregular Pattern","rule":"Conocer has the present yo form conozco","example":"Yo ___ a Ana. (conocer)","answer":"conozco","explanation":"The yo form adds a z sound: conozco, where a regular pattern would give conoco."} -->
 <!-- grammar-card: {"id":"dar-yo","kind":"rule","format":"cloze","priority":"optional","sourceSection":"The Yo-Form Irregular Pattern","rule":"Dar has the present yo form doy","example":"Yo ___ el libro a Ana. (dar)","answer":"doy","explanation":"The yo form is doy; this irregular is not a go-ending verb."} -->
+<!-- grammar-card: {"id":"rule-yo-only-irregular","kind":"concept","format":"qa","priority":"essential","sourceSection":"The Yo-Form Irregular Pattern","rule":"Some verbs are irregular only in the present yo form","example":"Salir, poner and traer are irregular in only one present-tense person. Which one?","answer":"Yo; the other persons are regular.","explanation":"Salgo is irregular, but sales, sale, salimos and salen follow the regular endings."} -->
 <!-- vocab-card: {"id":"vocab-salir","word":"salir","meaning":"to leave; to go out","priority":"optional","sourceSection":"The Yo-Form Irregular Pattern"} -->
 <!-- vocab-card: {"id":"vocab-poner","word":"poner","meaning":"to put","priority":"optional","sourceSection":"The Yo-Form Irregular Pattern"} -->
 <!-- vocab-card: {"id":"vocab-traer","word":"traer","meaning":"to bring","priority":"optional","sourceSection":"The Yo-Form Irregular Pattern"} -->
@@ -123,7 +125,7 @@ Many Spanish verbs are irregular **only in the yo (first person singular)** form
 <!-- vocab-card: {"id":"vocab-dar","word":"dar","meaning":"to give","priority":"optional","sourceSection":"The Yo-Form Irregular Pattern"} -->
 <!-- vocab-card: {"id":"vocab-saber","word":"saber","meaning":"to know a fact","priority":"optional","sourceSection":"The Yo-Form Irregular Pattern"} -->
 
-## Brief Tables: Decir, Venir, Salir
+## Brief Tables: Decir, Venir, Poner
 
 ### Decir — to say / to tell
 

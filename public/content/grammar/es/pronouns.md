@@ -12,7 +12,7 @@ Spanish subject pronouns tell us who is performing the action. Unlike English, S
 | 2nd singular | **tú** | too | you (informal) |
 | 3rd singular | **él / ella / usted** | ehl / EH-yah / oos-TEHD | he / she / you (formal) |
 | 1st plural | **nosotros / nosotras** | noh-SOH-trohs | we (masc. or mixed / all-fem.) |
-| 2nd plural (Spain) | **vosotros / vosotras** | voh-SOH-trohs | you all — Spain only* |
+| 2nd plural (Spain) | **vosotros / vosotras** | boh-SOH-trohs | you all — Spain only* |
 | 3rd plural | **ellos / ellas / ustedes** | EH-yohs / EH-yahs / oos-TEH-dehs | they (m.) / they (f.) / you all |
 
 > *🇪🇸 **Vosotros** is used in much of Spain for informal "you all." In Latin America, **ustedes** covers both formal and informal plural; *vosotros* is not used in ordinary local conversation, though it may appear in historical, religious, or literary texts.
@@ -59,13 +59,13 @@ The choice between **tú** and **usted** varies by country and even city:
 
 > 📌 In Colombia, using **usted** with close friends and family is very common and carries warmth, not distance.
 
-<!-- grammar-card: {"id":"usted-regional-register","kind":"concept","format":"qa","priority":"essential","sourceSection":"Usted vs Tú — Formality and Geography","rule":"Usted does not express social distance in every community","example":"Does usted always mean the speaker is being distant or formal?","answer":"No. In some communities, including many Colombian contexts, it is also used warmly with intimates.","explanation":"Country, locality and relationship matter; the formal/informal labels are a starting point."} -->
+<!-- grammar-card: {"id":"usted-regional-register","kind":"concept","format":"qa","priority":"essential","sourceSection":"Usted vs Tú — Formality and Geography","rule":"Usted does not express social distance in every community","legacyAliases":[{"rule":"Usted does not express social distance in every community","example":"Does usted always mean the speaker is being distant or formal?"}],"example":"In many Colombian communities, people say usted to close friends and family. What does it express there instead of distance?","answer":"Warmth and closeness.","explanation":"Country, locality and relationship matter; the formal/informal labels are a starting point."} -->
 
 ### Vos — Argentina and the River Plate Region
 
 **Vos** replaces *tú* in Argentina, Uruguay, and parts of Central America, with its own verb forms:
 
-- **Vos tenés razón** (vohs teh-NEHS rah-SOHN) — You're right *(vs tú tienes)*
+- **Vos tenés razón** (bohs teh-NEHS rah-SOHN) — You're right *(vs tú tienes)*
 - **¿Vos querés café?** — Do you want coffee? *(vs ¿tú quieres?)*
 
 <!-- grammar-card: {"id":"voseo","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Vos — Argentina and the River Plate Region","rule":"The River Plate vos form of tener is tenés","example":"Vos ___ razón. (tener; River Plate voseo)","answer":"tenés","explanation":"This variety uses vos tenés rather than tú tienes; voseo forms vary by region."} -->
@@ -73,6 +73,7 @@ The choice between **tú** and **usted** varies by country and even city:
 
 <!-- grammar-card: {"id":"ustedes-latin-america","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Usted vs Tú — Formality and Geography","rule":"In Latin America, 'ustedes' covers ALL plural 'you' — formal and informal","example":"¿Cómo están ___? (asking a group of friends in Mexico City)","answer":"ustedes","explanation":"Ustedes is the ordinary plural address form in Mexico, with friends as well as in formal settings; vosotros is not its everyday local counterpart."} -->
 <!-- grammar-card: {"id":"vosotros-spain","kind":"concept","format":"qa","priority":"optional","sourceSection":"The Subject Pronoun Table","rule":"Much of Spain distinguishes informal vosotros from formal ustedes","example":"Which plural address form is commonly informal in much of Spain, unlike everyday Latin American usage?","answer":"Vosotros or vosotras.","explanation":"It has its own verb agreement; ustedes uses third-person plural forms."} -->
+<!-- grammar-card: {"id":"rule-ustedes-verb-form","kind":"concept","format":"qa","priority":"optional","sourceSection":"The Subject Pronoun Table","rule":"Plural you in Latin America takes third-person plural verbs","example":"Latin American plural you (you all) shares its verb form with which pronouns?","answer":"Ellos and ellas: the third-person plural (ustedes trabajan).","explanation":"Even though it addresses the listeners, it never takes the vosotros endings."} -->
 
 ## Él / Ella / Usted — Third Person Verb Agreement
 
@@ -87,7 +88,8 @@ Because they share a form, the pronoun is often kept for clarity:
 - **Está cansado** — He / it / you (usted, masculine) is/are tired *(a pronoun or context helps avoid ambiguity; feminine agreement would be cansada)*
 
 <!-- grammar-card: {"id":"usted-agreement","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Él / Ella / Usted — Third Person Verb Agreement","rule":"Usted takes third-person singular verb agreement","example":"Usted ___ mucho. (trabajar)","answer":"trabaja","explanation":"Usted addresses the listener but shares its verb form with él and ella, not tú."} -->
-<!-- grammar-card: {"id":"ambiguous-subject","kind":"concept","format":"qa","priority":"optional","sourceSection":"Él / Ella / Usted — Third Person Verb Agreement","rule":"Shared verb forms may need an explicit subject for clarity","example":"Can trabaja alone distinguish él, ella and usted without context?","answer":"No. They share the same verb form; context or an explicit pronoun clarifies the subject.","explanation":"Pro-drop depends on recoverable meaning, not just an ending in isolation."} -->
+<!-- grammar-card: {"id":"rule-usted-third-person","kind":"concept","format":"qa","priority":"essential","sourceSection":"Él / Ella / Usted — Third Person Verb Agreement","rule":"Usted takes third-person singular verbs","example":"Usted means you, but which verb form does it take?","answer":"The third-person singular, the same form as él and ella.","explanation":"Usted habla, like él habla; it never takes the tú form hablas."} -->
+<!-- grammar-card: {"id":"ambiguous-subject","kind":"concept","format":"qa","priority":"optional","sourceSection":"Él / Ella / Usted — Third Person Verb Agreement","rule":"Shared verb forms may need an explicit subject for clarity","legacyAliases":[{"rule":"Shared verb forms may need an explicit subject for clarity","example":"Can trabaja alone distinguish él, ella and usted without context?"}],"example":"Trabaja mucho could mean he, she or you (usted) works a lot. What makes clear which subject is meant?","answer":"Context or an explicit subject pronoun such as él, ella or usted.","explanation":"The three share one verb form. Pro-drop depends on recoverable meaning, not just an ending in isolation."} -->
 
 ## Nosotros / Nosotras
 
@@ -97,6 +99,7 @@ Use *nosotros* for all-male or mixed groups; *nosotras* for all-female groups:
 - **Nosotras comemos pizza** — We (all-female group) eat pizza
 
 <!-- grammar-card: {"id":"nosotras","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Nosotros / Nosotras","rule":"An all-female group uses nosotras in the traditional pronoun system","example":"___ comemos pizza. (we, all women)","answer":"Nosotras","explanation":"Nosotras marks the all-female group; nosotros is the conventional masculine or mixed form."} -->
+<!-- grammar-card: {"id":"rule-nosotros-mixed","kind":"concept","format":"qa","priority":"optional","sourceSection":"Nosotros / Nosotras","rule":"Mixed groups use the masculine nosotros","example":"Which form of we does a mixed group of men and women use?","answer":"Nosotros.","explanation":"Nosotros covers all-male and mixed groups; only an all-female group uses the feminine form."} -->
 
 <!-- quiz: {"type":"multiple-choice","question":"In Mexico, how do you say 'you all are welcome' to a group of friends?","options":["Vosotros sois bienvenidos","Ustedes son bienvenidos","Ellos son bienvenidos","Vos son bienvenidos"],"answer":1} -->
 
