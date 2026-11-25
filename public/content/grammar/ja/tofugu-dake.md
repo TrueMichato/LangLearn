@@ -16,7 +16,7 @@ Particle
 
 ## The Basics
 
-<!-- grammar-card: {"id":"noun-limit","kind":"rule","format":"cloze","priority":"essential","sourceSection":"The Basics","rule":"だけ follows the noun it limits","hint":"only kanji","example":"最近は、___勉強している。","answer":"漢字だけ","explanation":"漢字だけ means kanji and nothing else is being studied."} -->
+<!-- grammar-card: {"id":"noun-limit","kind":"rule","format":"cloze","priority":"essential","sourceSection":"The Basics","rule":"だけ follows the noun it limits","hint":"only kanji","example":"Lately I've been studying only kanji: 最近は、___勉強している。","answer":"漢字だけ","explanation":"漢字だけ means kanji and nothing else is being studied; かんじだけ in kana also counts.","legacyAliases":[{"rule":"だけ follows the noun it limits","example":"最近は、___勉強している。"}]} -->
 
 だけ is a particle that means "just" or "only." It follows another word or phrase and indicates the limit or extent of something.
 
@@ -64,11 +64,12 @@ In case you were not sure, 〜杯 is a counter for liquids in cups, glasses, or 
 
 #### Adjective + だけ
 
-<!-- grammar-card: {"id":"i-adjective-limit","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Adjective + だけ","rule":"だけ after an adjective means 'nothing but'","hint":"just hot, with no other benefit","example":"サウナなんて、___じゃん。","answer":"暑いだけ","explanation":"暑いだけ dismisses saunas as merely hot and nothing more. 暑い (あつい) attaches directly to だけ."} -->
+<!-- grammar-card: {"id":"i-adjective-limit","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Adjective + だけ","rule":"だけ after an adjective means 'nothing but'","hint":"just hot, with no other benefit","example":"Saunas are just hot and nothing more: サウナなんて、___じゃん。","answer":"暑いだけ","explanation":"暑いだけ dismisses saunas as merely hot and nothing more. 暑い (あつい) attaches directly to だけ; あついだけ in kana also counts.","legacyAliases":[{"rule":"だけ after an adjective means 'nothing but'","example":"サウナなんて、___じゃん。"}]} -->
 
 <!-- vocab-card: {"id":"vocab-atsui","priority":"optional","sourceSection":"Adjective + だけ","word":"暑い","reading":"あつい","meaning":"hot (weather or surroundings)"} -->
 <!-- vocab-card: {"id":"vocab-yuumei","priority":"optional","sourceSection":"Adjective + だけ","word":"有名","reading":"ゆうめい","meaning":"famous"} -->
 <!-- grammar-card: {"id":"na-adjective-link","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Adjective + だけ","rule":"A な-adjective needs な before だけ","example":"They're just famous: 有名___だけでしょ？","answer":"な","explanation":"有名なだけ limits the description to fame; an い-adjective attaches directly, as in 暑いだけ."} -->
+<!-- grammar-card: {"id":"rule-na-before-dake","kind":"concept","format":"qa","priority":"optional","sourceSection":"Adjective + だけ","rule":"A な-adjective stem takes な before だけ; an い-adjective attaches directly","example":"When a na-adjective stem is limited with dake ('just ~'), what must come between the stem and dake?","answer":"な","explanation":"Answering な (na) counts. 有名なだけ 'just famous'; compare 暑いだけ, where the い-adjective attaches directly."} -->
 
 だけ can also follow adjectives to express that something is "just" as the chosen adjective describes, and nothing else. Let's take a look at how this works.
 
@@ -125,7 +126,8 @@ The friend you're talking to doesn't seem to agree, and tries to convince you th
 
 Look at the brackets. See how だけ follows a whole clause and adds the meaning of "just" to it? In this basic construction, use a plain-form clause before だけ, rather than adding です or ます there. Politeness normally goes at the end of the whole sentence.
 
-<!-- grammar-card: {"id":"clause-plain-form","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Clause + だけ","rule":"Use the plain form inside the clause before だけ","example":"Use the plain nonpast of to drink: 朝はジュースを___だけで十分です。","answer":"飲む","explanation":"The embedded action is plain 飲む; final です makes the whole sentence polite."} -->
+<!-- grammar-card: {"id":"clause-plain-form","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Clause + だけ","rule":"Use the plain form inside the clause before だけ","example":"Use the plain nonpast of to drink: 朝はジュースを___だけで十分です。","answer":"飲む","explanation":"The embedded action is plain 飲む (のむ in kana also counts); final です makes the whole sentence polite."} -->
+<!-- grammar-card: {"id":"rule-plain-before-dake","kind":"concept","format":"qa","priority":"essential","sourceSection":"Clause + だけ","rule":"A clause before だけ uses the plain form; politeness goes at the end of the whole sentence","example":"In a clause followed by dake, which form does the verb take, even in a polite sentence?","answer":"The plain form; politeness (です/ます) goes only at the end of the sentence.","explanation":"Naming the plain (dictionary) form counts. 飲むだけで十分です, not 飲みますだけで."} -->
 
 So how can you make a relative clause sound polite then? You simply add the polite form to the end of the whole sentence. Take again, for instance, the example of describing what you had for breakfast:
 
@@ -173,7 +175,7 @@ Sounds good? The difference can be subtle depending on the context, but there is
 
 <!-- vocab-card: {"id":"vocab-koredake","priority":"optional","sourceSection":"これだけ and それだけ for \"Only This\" or \"That Much\"","word":"これだけ","reading":"これだけ","meaning":"only this; this much"} -->
 <!-- vocab-card: {"id":"vocab-soredake","priority":"optional","sourceSection":"これだけ and それだけ for \"Only This\" or \"That Much\"","word":"それだけ","reading":"それだけ","meaning":"only that; that much; that is all"} -->
-<!-- grammar-card: {"id":"soredake-context","kind":"concept","format":"qa","priority":"optional","sourceSection":"これだけ and それだけ for \"Only This\" or \"That Much\"","rule":"Context determines whether それだけ minimizes or emphasizes an amount","example":"Does それだけがんばってれば necessarily dismiss someone's effort as insignificant?","answer":"No. Here it means working that much and can encourage them; それだけ？ can instead dismiss something as all there is.","explanation":"The demonstrative refers back to the context; だけ does not force a belittling attitude."} -->
+<!-- grammar-card: {"id":"soredake-context","kind":"rule","format":"qa","priority":"optional","sourceSection":"これだけ and それだけ for \"Only This\" or \"That Much\"","rule":"Context determines whether それだけ minimizes or emphasizes an amount","example":"Does それだけがんばってれば necessarily dismiss someone's effort as insignificant?","answer":"No. Here it means working that much and can encourage them; それだけ？ can instead dismiss something as all there is.","explanation":"The demonstrative refers back to the context; だけ does not force a belittling attitude."} -->
 
 だけ is often used with こそあど words, such as これ (this one), それ (that one), あれ (that one over there), or どれ (which one). In this section, we'll focus on the more common これだけ and それだけ and see how they work.
 
@@ -240,9 +242,10 @@ Note でなく or ではなく is a little formal. In more casual speech, it com
 
 <!-- grammar-card: {"id":"counter-limit","kind":"rule","format":"cloze","priority":"optional","sourceSection":"だけ vs しか","rule":"だけ can follow a counter to mean 'only that many'","hint":"Use the limiter compatible with positive ある.","example":"チョコレートが一つ___ある。","answer":"だけ","explanation":"一つだけ restricts the amount to a single chocolate; しか would instead require ない."} -->
 
-<!-- grammar-card: {"id":"shika-negative","kind":"rule","format":"cloze","priority":"essential","sourceSection":"だけ vs しか","rule":"Restrictive しか requires a negative predicate","example":"Only one chocolate remains: チョコレートが一つしか___。","answer":"ない","explanation":"しかない uses a negative predicate to exclude anything beyond one; だけ can accompany either polarity."} -->
-<!-- grammar-card: {"id":"shika-pragmatics","kind":"concept","format":"qa","priority":"optional","sourceSection":"だけ vs しか","rule":"しか emphasizes limitation without necessarily complaining","example":"Why can 駅まで歩いて５分しかかからない express a positive assessment?","answer":"It emphasizes that the walk takes no more than five minutes, which is convenient rather than disappointing.","explanation":"だけ is relatively neutral; しか highlights what is excluded or how little is involved. Neither fixes the speaker's emotion in every context."} -->
-<!-- grammar-card: {"id":"dakeshika-emphasis","kind":"concept","format":"qa","priority":"optional","sourceSection":"だけ vs しか","rule":"だけしか retains negative syntax and reinforces limitation","example":"What does adding だけ to これとこれしか買わない change?","answer":"It reinforces the limitation to these items without changing the basic meaning or removing the negative predicate.","explanation":"これとこれだけしか買わない stresses the refusal to buy anything else."} -->
+<!-- grammar-card: {"id":"shika-negative","kind":"rule","format":"cloze","priority":"essential","sourceSection":"だけ vs しか","rule":"Restrictive しか requires a negative predicate","example":"Only one chocolate remains: チョコレートが一つしか___。","answer":"ない","explanation":"しかない uses a negative predicate to exclude anything beyond one; polite ありません also counts. だけ can accompany either polarity."} -->
+<!-- grammar-card: {"id":"rule-shika-negative","kind":"concept","format":"qa","priority":"essential","sourceSection":"だけ vs しか","rule":"Restrictive しか always takes a negative predicate","example":"Both mean 'only', but what kind of predicate must restrictive しか always be used with?","answer":"A negative predicate.","explanation":"Any answer saying the verb/ending must be negative counts: 一つしかない, never 一つしかある."} -->
+<!-- grammar-card: {"id":"shika-pragmatics","kind":"concept","format":"qa","priority":"optional","sourceSection":"だけ vs しか","rule":"しか emphasizes limitation without necessarily complaining","example":"Besides disappointment, what else can 〜しか…ない convey about a small amount, as when the station is only a short walk away?","answer":"A positive assessment: it stresses that no more than that is involved, which can be convenient rather than disappointing.","explanation":"だけ is relatively neutral; しか highlights what is excluded or how little is involved. Neither fixes the speaker's emotion in every context.","legacyAliases":[{"rule":"しか emphasizes limitation without necessarily complaining","example":"Why can 駅まで歩いて５分しかかからない express a positive assessment?"}]} -->
+<!-- grammar-card: {"id":"dakeshika-emphasis","kind":"concept","format":"qa","priority":"optional","sourceSection":"だけ vs しか","rule":"だけしか retains negative syntax and reinforces limitation","example":"What does だけしか add compared with しか alone?","answer":"It reinforces the limitation without changing the basic meaning; the predicate stays negative.","explanation":"これとこれだけしか買わない stresses the refusal to buy anything else.","legacyAliases":[{"rule":"だけしか retains negative syntax and reinforces limitation","example":"What does adding だけ to これとこれしか買わない change?"}]} -->
 
 In Japanese, だけ isn't the only term that means "only." しか is another one, and it's used differently than だけ. So how are they different?
 
@@ -287,7 +290,7 @@ The meaning is the same, with or without だけ. What だけ does here is add an
 ### だけ vs たったの
 
 <!-- vocab-card: {"id":"vocab-tattano","priority":"optional","sourceSection":"だけ vs たったの","word":"たったの","reading":"たったの","meaning":"only; a mere (before a quantity, emphasizing smallness)"} -->
-<!-- grammar-card: {"id":"tattano-quantity","kind":"concept","format":"qa","priority":"optional","sourceSection":"だけ vs たったの","rule":"たったの highlights a quantity as smaller than expected","example":"To express surprise that a bag cost a mere hundred yen, why choose たったの百円 rather than plain 百円だけだった?","answer":"たったの goes before the quantity and emphasizes how little it is; だけ alone primarily restricts the amount rather than conveying surprise at cheapness.","explanation":"百円だけ can be natural in other limiting contexts; this is a pragmatic preference, not a ban on that string."} -->
+<!-- grammar-card: {"id":"tattano-quantity","kind":"concept","format":"qa","priority":"optional","sourceSection":"だけ vs たったの","rule":"たったの highlights a quantity as smaller than expected","example":"To express surprise at how small a quantity is, why choose たったの + quantity rather than quantity + だけ?","answer":"たったの goes before the quantity and emphasizes how little it is; だけ alone primarily restricts the amount rather than conveying surprise.","explanation":"百円だけ can be natural in other limiting contexts; this is a pragmatic preference, not a ban on that string.","legacyAliases":[{"rule":"たったの highlights a quantity as smaller than expected","example":"To express surprise that a bag cost a mere hundred yen, why choose たったの百円 rather than plain 百円だけだった?"}]} -->
 
 たったの is another word for "only," but it's always followed by the word indicating quantity to emphasize how small the quantity is compared to the usual or expected amount. For example, if you bought a bag that cost only 100 yen, you can use たったの and say:
 

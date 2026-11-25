@@ -9,7 +9,7 @@ In Japanese, whether a noun is plural or singular often doesn't matter. Pluralit
 ## Nouns Don't Change for Plural
 
 <!-- vocab-card: {"id":"vocab-ringo","priority":"optional","sourceSection":"Nouns Don't Change for Plural","word":"リンゴ","reading":"リンゴ","meaning":"apple"} -->
-<!-- grammar-card: {"id":"number-from-context","kind":"concept","format":"qa","priority":"essential","sourceSection":"Nouns Don't Change for Plural","rule":"A bare noun can have singular or plural reference","example":"Does リンゴがある by itself establish that exactly one apple exists?","answer":"No. It can refer to an apple or apples; context or a quantifier supplies the number.","explanation":"Japanese does not require an English-style plural ending whenever more than one item is meant."} -->
+<!-- grammar-card: {"id":"number-from-context","kind":"concept","format":"qa","priority":"essential","sourceSection":"Nouns Don't Change for Plural","rule":"A bare noun can have singular or plural reference","example":"What does リンゴがある by itself tell you about how many apples there are?","answer":"Nothing exact: it can refer to an apple or apples; context or a quantifier supplies the number.","explanation":"Japanese does not require an English-style plural ending whenever more than one item is meant.","legacyAliases":[{"rule":"A bare noun can have singular or plural reference","example":"Does リンゴがある by itself establish that exactly one apple exists?"}]} -->
 
 Unlike English, Japanese nouns don't have distinct plural forms:
 
@@ -19,10 +19,11 @@ Unlike English, Japanese nouns don't have distinct plural forms:
 
 ## Quantifiers
 
-<!-- grammar-card: {"id":"many-people","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Quantifiers","rule":"たくさん takes の when it modifies a noun directly","hint":"many; use the quantity word compatible with の","example":"___の人(ひと)が集(あつ)まった。","answer":"たくさん","explanation":"たくさんの人 means a lot of people; this の pattern is not shared by every word meaning many.","legacyAliases":[{"rule":"Quantifiers take の when they modify a noun directly","example":"___の人(ひと)が集(あつ)まった。"}]} -->
+<!-- grammar-card: {"id":"many-people","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Quantifiers","rule":"たくさん takes の when it modifies a noun directly","hint":"many; use the quantity word compatible with の","example":"A lot of people gathered (use the 'many' word that takes の): ___の人(ひと)が集(あつ)まった。","answer":"たくさん","explanation":"たくさんの人 means a lot of people; this の pattern is not shared by every word meaning many (not 多いの人). 大勢の人 is also natural but not taught here.","legacyAliases":[{"rule":"Quantifiers take の when they modify a noun directly","example":"___の人(ひと)が集(あつ)まった。"},{"rule":"たくさん takes の when it modifies a noun directly","example":"___の人(ひと)が集(あつ)まった。"}]} -->
 
 <!-- vocab-card: {"id":"vocab-kami","priority":"optional","sourceSection":"Quantifiers","word":"紙","reading":"かみ","meaning":"paper"} -->
 <!-- grammar-card: {"id":"count-before-noun","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Quantifiers","rule":"A counted quantity can modify a following noun through の","example":"Three sheets of paper: ３枚___紙。","answer":"の","explanation":"３枚の紙 puts the quantity before the noun; 紙が３枚ある puts it in an adverbial position."} -->
+<!-- grammar-card: {"id":"rule-quantifier-no","kind":"concept","format":"qa","priority":"essential","sourceSection":"Quantifiers","rule":"A quantifier placed before its noun links to it with の","example":"When a quantity expression such as 'three sheets' or 'many' comes directly before the noun it counts, which particle links them?","answer":"の.","explanation":"３枚の紙 and たくさんのリンゴ link the amount with の; placed after the noun's particle, before the verb, the quantity works like an adverb instead (紙が３枚ある)."} -->
 
 Quantifiers express quantity. They can modify nouns with の or appear before the verb like adverbs:
 
@@ -36,9 +37,10 @@ Quantifiers express quantity. They can modify nouns with の or appear before th
 
 ### Counters
 
-<!-- grammar-card: {"id":"count-books","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Counters","rule":"Japanese nouns have no plural form, so a counter carries the number","hint":"3 books","example":"机(つくえ)の上(うえ)に本(ほん)が___あります。","answer":"三冊","explanation":"三冊 (さんさつ) supplies the count while 本 stays unchanged. Ordinary count nouns do not inflect for number, though restricted plural expressions also exist."} -->
+<!-- grammar-card: {"id":"count-books","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Counters","rule":"Japanese nouns have no plural form, so a counter carries the number","hint":"3 books","example":"There are three books on the desk: 机(つくえ)の上(うえ)に本(ほん)が___あります。","answer":"三冊","explanation":"三冊 (さんさつ) supplies the count while 本 stays unchanged. Ordinary count nouns do not inflect for number, though restricted plural expressions also exist. 3冊 or kana さんさつ also count.","legacyAliases":[{"rule":"Japanese nouns have no plural form, so a counter carries the number","example":"机(つくえ)の上(うえ)に本(ほん)が___あります。"}]} -->
 
 <!-- grammar-card: {"id":"flat-counter","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Counters","rule":"枚 counts flat items such as sheets of paper","example":"Five sheets of paper: 紙が５___ある。","answer":"枚","explanation":"５枚 is read ごまい; a counter classifies what is counted rather than pluralizing 紙."} -->
+<!-- grammar-card: {"id":"rule-counter-carries-number","kind":"concept","format":"qa","priority":"essential","sourceSection":"Counters","rule":"Nouns don't change for plural; a number plus a counter carries an exact count","example":"Japanese nouns don't change for plural, so what supplies an exact count of items?","answer":"A number plus a counter suited to the kind of item.","explanation":"The noun stays unchanged: 紙が５枚ある."} -->
 
 Counters indicate specific quantities and vary by what you're counting:
 
@@ -54,7 +56,7 @@ Counters indicate specific quantities and vary by what you're counting:
 <!-- vocab-card: {"id":"vocab-ichibu","priority":"optional","sourceSection":"Words for Unspecified Quantity","word":"一部","reading":"いちぶ","meaning":"a part; a portion; some"} -->
 <!-- vocab-card: {"id":"vocab-zenbu","priority":"essential","sourceSection":"Words for Unspecified Quantity","word":"全部","reading":"ぜんぶ","meaning":"all; the whole"} -->
 <!-- vocab-card: {"id":"vocab-ikutsuka","priority":"optional","sourceSection":"Words for Unspecified Quantity","word":"いくつか","reading":"いくつか","meaning":"a few; several"} -->
-<!-- grammar-card: {"id":"quantifier-syntax-limits","kind":"concept","format":"qa","priority":"optional","sourceSection":"Words for Unspecified Quantity","rule":"Quantity words do not all share the same attributive syntax","example":"Can you freely replace たくさん with 多い in たくさんのリンゴ?","answer":"No. 多い is an い-adjective; use a construction such as リンゴが多い rather than 多いのリンゴ.","explanation":"The list gives related meanings, not a single interchangeable grammatical paradigm."} -->
+<!-- grammar-card: {"id":"quantifier-syntax-limits","kind":"concept","format":"qa","priority":"optional","sourceSection":"Words for Unspecified Quantity","rule":"Quantity words do not all share the same attributive syntax","example":"Why can't 多い simply replace たくさん in たくさんのリンゴ?","answer":"多い is an い-adjective and does not take の; use a construction such as リンゴが多い rather than 多いのリンゴ.","explanation":"The list gives related meanings, not a single interchangeable grammatical paradigm.","legacyAliases":[{"rule":"Quantity words do not all share the same attributive syntax","example":"Can you freely replace たくさん with 多い in たくさんのリンゴ?"}]} -->
 
 Common words:
 - たくさん / 多い — many, much
@@ -82,7 +84,7 @@ Examples:
 Plural suffixes are also used with personal pronouns:
 - 私 + 達 = 私達 (we)
 
-<!-- grammar-card: {"id":"suffix-scope","kind":"concept","format":"qa","priority":"essential","sourceSection":"Plural Suffixes","rule":"Personal plural suffixes often include associates rather than identical instances","example":"What group does ジェニー達 normally identify?","answer":"Jenny and the people associated with her, such as her companions.","explanation":"It need not mean several people named Jenny, nor is the suffix required whenever a noun is plural."} -->
+<!-- grammar-card: {"id":"suffix-scope","kind":"rule","format":"qa","priority":"essential","sourceSection":"Plural Suffixes","rule":"Personal plural suffixes often include associates rather than identical instances","example":"What group does ジェニー達 normally identify?","answer":"Jenny and the people associated with her, such as her companions.","explanation":"It need not mean several people named Jenny, nor is the suffix required whenever a noun is plural."} -->
 <!-- grammar-card: {"id":"suffix-social-limits","kind":"concept","format":"qa","priority":"optional","sourceSection":"Plural Suffixes","rule":"Plural suffixes differ in social perspective","example":"Why are ら, がた, and ども not freely interchangeable polite plurals?","answer":"がた honors others; ら can be casual or disrespectful; ども humbles one's own group but can disparage outsiders.","explanation":"たち is broadly useful but still mainly human-centered; choose an established combination appropriate to the relationship."} -->
 
 ## Repetition Words (畳語/じょうご)
@@ -95,8 +97,8 @@ Plural suffixes are also used with personal pronouns:
 <!-- vocab-card: {"id":"vocab-kigi","priority":"optional","sourceSection":"Repetition Words (畳語/じょうご)","word":"木々","reading":"きぎ","meaning":"trees"} -->
 <!-- vocab-card: {"id":"vocab-hanabana","priority":"optional","sourceSection":"Repetition Words (畳語/じょうご)","word":"花々","reading":"はなばな","meaning":"flowers"} -->
 <!-- vocab-card: {"id":"vocab-kamigami","priority":"optional","sourceSection":"Repetition Words (畳語/じょうご)","word":"神々","reading":"かみがみ","meaning":"gods; deities"} -->
-<!-- grammar-card: {"id":"reduplication-not-productive","kind":"concept","format":"qa","priority":"essential","sourceSection":"Repetition Words (畳語/じょうご)","rule":"Plural repetition words are established lexical forms, not a freely productive operation","example":"Can 人々 be used as a model for doubling any noun or proper name to make a plural?","answer":"No. Learn established repetition words individually; the plural patterns here are mainly native words, not freely doubled names or arbitrary nouns.","explanation":"々 repeats a preceding kanji, often with a sound change. A specific count normally uses 三人の人, not 三人の人々."} -->
-<!-- grammar-card: {"id":"hibi-distributive","kind":"concept","format":"qa","priority":"optional","sourceSection":"Repetition Words (畳語/じょうご)","rule":"Repeated time words can have an each-day sense","example":"What does 日々 contribute in 日々の暮らし beyond a count of separate days?","answer":"A day-to-day or everyday sense, viewing life across each day.","explanation":"This is a lexical distributive use, not a rule that every repeated noun means each."} -->
+<!-- grammar-card: {"id":"reduplication-not-productive","kind":"concept","format":"qa","priority":"essential","sourceSection":"Repetition Words (畳語/じょうご)","rule":"Plural repetition words are established lexical forms, not a freely productive operation","example":"Why can't 人々 serve as a model for doubling any noun or name to make a plural?","answer":"Repetition plurals are established words, mainly native ones, learned individually; doubling is not a freely productive operation on arbitrary nouns or names.","explanation":"々 repeats a preceding kanji, often with a sound change. A specific count normally uses 三人の人, not 三人の人々.","legacyAliases":[{"rule":"Plural repetition words are established lexical forms, not a freely productive operation","example":"Can 人々 be used as a model for doubling any noun or proper name to make a plural?"}]} -->
+<!-- grammar-card: {"id":"hibi-distributive","kind":"rule","format":"qa","priority":"optional","sourceSection":"Repetition Words (畳語/じょうご)","rule":"Repeated time words can have an each-day sense","example":"What does 日々 contribute in 日々の暮らし beyond a count of separate days?","answer":"A day-to-day or everyday sense, viewing life across each day.","explanation":"This is a lexical distributive use, not a rule that every repeated noun means each."} -->
 Formed by repeating a singular noun, often with the marker 々:
 
 | Word | Reading | Meaning |
@@ -122,7 +124,7 @@ Key rules:
 
 <!-- quiz: {"type":"multiple-choice","question":"Which is correct for 'many people'?","options":["三人の人々","たくさんの人々","人の人々","多人々"],"answer":1} -->
 
-<!-- grammar-card: {"id":"people-repetition","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Repetition Words (畳語/じょうご)","rule":"Repeating a noun can make it plural","hint":"people; use the established repetition word","example":"___が公園(こうえん)で遊(あそ)んでいる。","answer":"人々","explanation":"人々 (ひとびと) repeats 人 with voicing in the second part. This is an established word, not permission to double every noun."} -->
+<!-- grammar-card: {"id":"people-repetition","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Repetition Words (畳語/じょうご)","rule":"Repeating a noun can make it plural","hint":"people; use the established repetition word","example":"People are playing in the park (use the established repetition word): ___が公園(こうえん)で遊(あそ)んでいる。","answer":"人々","explanation":"人々 (ひとびと) repeats 人 with voicing in the second part. This is an established word, not permission to double every noun.","legacyAliases":[{"rule":"Repeating a noun can make it plural","example":"___が公園(こうえん)で遊(あそ)んでいる。"}]} -->
 
 ## Sources
 

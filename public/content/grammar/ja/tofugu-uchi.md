@@ -16,7 +16,7 @@ Vocabulary
 
 ## The Basics
 
-<!-- grammar-card: {"id":"home-reference","kind":"rule","format":"cloze","priority":"optional","sourceSection":"The Basics","rule":"うち can also mean one's own home or in-group","hint":"Use the familiar home/in-group expression, not 私.","example":"___の犬(いぬ)はとても大(おお)きい。","answer":"うち","explanation":"うちの犬 means the dog of my household; this is a home/in-group reference, not a temporal window."} -->
+<!-- grammar-card: {"id":"home-reference","kind":"rule","format":"cloze","priority":"optional","sourceSection":"The Basics","rule":"うち can also mean one's own home or in-group","hint":"Use the familiar home/in-group expression, not 私.","example":"Our family's dog (use the casual 'my household' word, not 私): ___の犬(いぬ)はとても大(おお)きい。","answer":"うち","explanation":"うちの犬 means the dog of my household; this is a home/in-group reference, not a temporal window. Kana うち is the usual spelling here.","legacyAliases":[{"rule":"うち can also mean one's own home or in-group","example":"___の犬(いぬ)はとても大(おお)きい。"}]} -->
 
 <!-- vocab-card: {"id":"vocab-uchi","priority":"essential","sourceSection":"The Basics","word":"内","reading":"うち","meaning":"inside; within"} -->
 <!-- vocab-card: {"id":"vocab-kotoshi","priority":"optional","sourceSection":"The Basics","word":"今年","reading":"ことし","meaning":"this year"} -->
@@ -46,6 +46,7 @@ In this section, we'll list the basic patterns used with うち.
 #### Noun + の + うち
 
 <!-- grammar-card: {"id":"noun-link","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Noun + の + うち","rule":"A noun connects to うち with の","example":"Finish before summer vacation ends: 夏休み___うちに宿題を終わらせる。","answer":"の","explanation":"夏休みのうちに sets the vacation as the period before whose end the task is done."} -->
+<!-- grammar-card: {"id":"rule-noun-no-uchi","kind":"concept","format":"qa","priority":"optional","sourceSection":"Noun + の + うち","rule":"A noun needs の before うち; adjectives and verbs attach without it","example":"Which particle must come between a noun and uchi ('within / while'), though adjectives and verbs don't need it?","answer":"の","explanation":"Answering の (no) counts: 夏休みのうちに, 二つのうち一つ. い-adjectives attach directly (小さいうち); な-adjectives take な."} -->
 
 うち can follow a noun, but in this case, you'll need to add the particle の between the noun and うち.
 
@@ -80,7 +81,7 @@ When うち follows a な-adjective, you'll need to add な between them.
 #### Verb + うち
 
 <!-- vocab-card: {"id":"vocab-iru","priority":"optional","sourceSection":"Verb + うち","word":"いる","reading":"いる","meaning":"to be; to stay (for a living being)"} -->
-<!-- grammar-card: {"id":"negative-before-change","kind":"concept","format":"qa","priority":"essential","sourceSection":"Verb + うち","rule":"A negative state before うちに can mean before the opposite change occurs","example":"Why does 暗くならないうちに帰ろう mean go home before it gets dark?","answer":"It means act while the state of not yet becoming dark still holds, before that state ends.","explanation":"The negative clause describes the still-available window, not a command never to go home."} -->
+<!-- grammar-card: {"id":"negative-before-change","kind":"concept","format":"qa","priority":"essential","sourceSection":"Verb + うち","rule":"A negative state before うちに can mean before the opposite change occurs","example":"What does a negative verb before うちに (〜ないうちに) express?","answer":"Doing something while the not-yet state still holds, i.e. before the change happens (e.g. before it gets dark).","explanation":"The negative clause describes the still-available window, not a command never to go home.","legacyAliases":[{"rule":"A negative state before うちに can mean before the opposite change occurs","example":"Why does 暗くならないうちに帰ろう mean go home before it gets dark?"}]} -->
 
 うち can also follow verbs. When it indicates a time period, it's common to attach to いる, the 〜ている form, 〜れる form, and 〜ない form of a verb.
 
@@ -92,14 +93,14 @@ When うち follows a な-adjective, you'll need to add な between them.
 
   - Let's go home before it gets dark.
 
-<!-- grammar-card: {"id":"while-still-light","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Verb + うち","rule":"うちに means 'while the condition still holds'","hint":"before it gets dark","example":"明(あか)るい___に帰(かえ)りましょう。","answer":"うち","explanation":"明るいうちに urges going home while it is still light, before that condition ends."} -->
+<!-- grammar-card: {"id":"while-still-light","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Verb + うち","rule":"うちに means 'while the condition still holds'","hint":"before it gets dark","example":"Let's go home while it's still light, before it gets dark: 明(あか)るい___に帰(かえ)りましょう。","answer":"うち","explanation":"明るいうちに urges going home while it is still light, before that condition ends.","legacyAliases":[{"rule":"うちに means 'while the condition still holds'","example":"明(あか)るい___に帰(かえ)りましょう。"}]} -->
 
 ## Uses of うち
 
 ### うち For Narrowing Down Items
 
 <!-- grammar-card: {"id":"subset-range","kind":"rule","format":"cloze","priority":"essential","sourceSection":"うち For Narrowing Down Items","rule":"のうち identifies the total range from which a subset is selected","example":"Two of three are pianists: 三人___二人はピアニストです。","answer":"のうち","explanation":"三人のうち establishes the total of three; 二人 is the subset."} -->
-<!-- grammar-card: {"id":"comparison-range","kind":"concept","format":"qa","priority":"optional","sourceSection":"うち For Narrowing Down Items","rule":"のうちで can set the range for a comparison","example":"What does 五人のうちで specify in 彼は五人のうちで一番背が高い?","answer":"The five people form the comparison group within which he is tallest.","explanation":"で can make the comparison range explicit; の中で can also set this comparison group."} -->
+<!-- grammar-card: {"id":"comparison-range","kind":"rule","format":"qa","priority":"optional","sourceSection":"うち For Narrowing Down Items","rule":"のうちで can set the range for a comparison","example":"What does 五人のうちで specify in 彼は五人のうちで一番背が高い?","answer":"The five people form the comparison group within which he is tallest.","explanation":"で can make the comparison range explicit; の中で can also set this comparison group."} -->
 
 When the particle の and the word うち follow a specific number of something, it's used like "between," "among," or "out of (a specific number)" in English. It indicates a range of items in which you make a differentiation between them.
 
@@ -139,8 +140,8 @@ To see the difference between うち and 中, check out this article!
 
 <!-- vocab-card: {"id":"vocab-soto","priority":"optional","sourceSection":"うち For A Period In Time","word":"外","reading":"そと","meaning":"outside"} -->
 <!-- vocab-card: {"id":"vocab-wasureru","priority":"optional","sourceSection":"うち For A Period In Time","word":"忘れる","reading":"わすれる","meaning":"to forget"} -->
-<!-- grammar-card: {"id":"inside-outside-cue","kind":"concept","format":"qa","priority":"optional","sourceSection":"うち For A Period In Time","rule":"The inside/outside image cues the end of a temporal opportunity","example":"How does the image of an inside and an outside help with 忘れないうちにメモしておこう?","answer":"The inside is the time when the memory still remains; the outside is the later state after forgetting, so make the note before crossing that boundary.","explanation":"This is a memory aid for the closing window, not a requirement to know exact clock times."} -->
-<!-- grammar-card: {"id":"uchi-other-particles","kind":"concept","format":"qa","priority":"optional","sourceSection":"うち For A Period In Time","rule":"Temporal うち is not restricted to the particle に","example":"In 若いうちは苦労しておいた方がいい, what does は do after うち?","answer":"It makes the period of still being young the topic of the advice.","explanation":"が can also follow うち, as in 叱られるうちが華だ, where the period is the subject."} -->
+<!-- grammar-card: {"id":"inside-outside-cue","kind":"concept","format":"qa","priority":"optional","sourceSection":"うち For A Period In Time","rule":"The inside/outside image cues the end of a temporal opportunity","example":"How does the inside/outside image of うち help with 〜ないうちに expressions, such as noting something down before forgetting it?","answer":"The inside is the time while the state still holds (the memory remains); the outside is after the change, so act before crossing that boundary.","explanation":"This is a memory aid for the closing window, not a requirement to know exact clock times.","legacyAliases":[{"rule":"The inside/outside image cues the end of a temporal opportunity","example":"How does the image of an inside and an outside help with 忘れないうちにメモしておこう?"}]} -->
+<!-- grammar-card: {"id":"uchi-other-particles","kind":"concept","format":"qa","priority":"optional","sourceSection":"うち For A Period In Time","rule":"Temporal うち is not restricted to the particle に","example":"When temporal うち is followed by は (〜うちは) instead of に, what does は do?","answer":"It makes the period itself (e.g. while still young) the topic, often of advice or a general statement.","explanation":"が can also follow うち, as in 叱られるうちが華だ, where the period is the subject.","legacyAliases":[{"rule":"Temporal うち is not restricted to the particle に","example":"In 若いうちは苦労しておいた方がいい, what does は do after うち?"}]} -->
 
 When うち gets used for a scope of time, it works like "while it's (still)〜,"  as in:
 
@@ -181,7 +182,7 @@ You may also see this use of うち with other particles, such as the subject ma
 ### 〜うちに VS 〜間に
 
 <!-- vocab-card: {"id":"vocab-tsumetai","priority":"optional","sourceSection":"〜うちに VS 〜間に","word":"冷たい","reading":"つめたい","meaning":"cold to the touch; cold (a drink, for example)"} -->
-<!-- grammar-card: {"id":"uchi-aida-contrast","kind":"concept","format":"qa","priority":"essential","sourceSection":"〜うちに VS 〜間に","rule":"うちに emphasizes the continuing condition while 間に identifies an interval","example":"Why is 冷たいうちに飲んでね more natural than 冷たい間に飲んでね in the juice example?","answer":"It urges drinking before the cold condition changes, rather than treating coldness as a clearly delimited time interval.","explanation":"Both can work for a bounded nap, but うち highlights the opportunity before it ends; 間 focuses on the interval."} -->
+<!-- grammar-card: {"id":"uchi-aida-contrast","kind":"concept","format":"qa","priority":"essential","sourceSection":"〜うちに VS 〜間に","rule":"うちに emphasizes the continuing condition while 間に identifies an interval","example":"For 'drink it while it's still cold', why is うちに more natural than 間に?","answer":"うちに urges acting before the cold condition changes, rather than treating coldness as a clearly delimited time interval.","explanation":"Both can work for a bounded nap, but うち highlights the opportunity before it ends; 間 focuses on the interval.","legacyAliases":[{"rule":"うちに emphasizes the continuing condition while 間に identifies an interval","example":"Why is 冷たいうちに飲んでね more natural than 冷たい間に飲んでね in the juice example?"}]} -->
 
 You've learned how 〜うちに expresses the time before a given action or state ends. When what comes before 〜うちに is something that indicates an interval of time, 〜うちに can be replaced with 〜間に.
 
@@ -214,6 +215,7 @@ In the same way, if you want to do some weeding outside before it gets hot, う�
 #### Tense of the Clause Before うち
 
 <!-- grammar-card: {"id":"nonpast-before-uchi","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Tense of the Clause Before うち","rule":"The ongoing clause before temporal うち normally uses nonpast even with a past main event","example":"My phone was stolen while I was sleeping: 寝て___うちに、iPhoneを盗まれた。","answer":"いる","explanation":"寝ている views sleeping as ongoing at the time of the theft. This is the ordinary pattern, not a claim that no exceptional past contexts exist."} -->
+<!-- grammar-card: {"id":"rule-uchi-nonpast","kind":"concept","format":"qa","priority":"essential","sourceSection":"Tense of the Clause Before うち","rule":"The clause before temporal うち is normally nonpast even if the main clause is past","example":"If the main clause is in the past tense, which tense does the clause before temporal uchi normally take?","answer":"Nonpast (present) tense.","explanation":"Nonpast or present counts. 寝ているうちに盗まれた, not 寝ていたうちに."} -->
 
 As you've seen, うち can be preceded by different types of words. One last note is that the clause that comes before うち usually has to be non-past tense, even if the main clause is in the past tense.
 
