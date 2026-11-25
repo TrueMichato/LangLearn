@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import SearchBar from '../components/common/SearchBar';
 import { searchWords, updateWord, deleteWord, type WordFilter } from '../db/words';
 import { db, type Word, type Review } from '../db/schema';
+import { scheduledGapDays } from '../db/reviews';
 import AddWordModal from '../components/srs/AddWordModal';
 import CSVImport from '../components/common/CSVImport';
 import { getLanguageFlag, getLanguageLabel } from '../lib/languages';
@@ -379,7 +380,7 @@ export default function WordsPage() {
                           </div>
                           <div>
                             <div className="font-medium">Review interval</div>
-                            <div>{review.interval} days</div>
+                            <div>{scheduledGapDays(review)} days</div>
                           </div>
                           <div>
                             <div className="font-medium">Added</div>

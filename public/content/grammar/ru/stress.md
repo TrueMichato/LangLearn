@@ -1,5 +1,7 @@
 # Stress in Russian
 
+<!-- vocab-inventory: {"mode":"explicit"} -->
+
 Word stress (ударение) is one of the trickiest aspects of Russian. Unlike languages with predictable stress patterns (like French or Polish), **Russian stress can fall on any syllable** and must be memorized for each word. Getting stress wrong doesn't just sound odd — it can change pronunciation (due to vowel reduction) and sometimes change a word's meaning entirely.
 
 ---
@@ -18,24 +20,32 @@ Stress in Russian has two major effects:
 |------|---------|
 | **за́мок** *(zámok)* | castle |
 | **замо́к** *(zamók)* | lock |
-| **му́ка** *(múka)* | flour |
-| **мука́** *(muká)* | torment, suffering |
+| **му́ка** *(múka)* | torment, suffering |
+| **мука́** *(muká)* | flour |
 | **бе́лки** *(bélki)* | squirrels |
 | **белки́** *(belkí)* | proteins |
 | **а́тлас** *(átlas)* | atlas (book of maps) |
 | **атла́с** *(atlás)* | satin (fabric) |
 | **о́рган** *(órgan)* | organ (body part) |
 | **орга́н** *(orgán)* | organ (musical instrument) |
-| **пи́ли** *(píli)* | they sawed |
-| **пили́** *(pilí)* | drink! (imperative) |
+| **пи́ли** *(píli)* | they drank |
+| **пили́** *(pilí)* | saw! (imperative of “to saw”) |
 
 **Он купил замо́к для двери за́мка.** *(On kupil zamók dlya dveri zámka.)* — He bought a lock for the castle door.
 
-**В магазине есть му́ка, а на экзамене — мука́.** *(V magazine yest' múka, a na ekzamene — muká.)* — In the store there's flour, and at the exam — torment.
+**В магазине есть мука́, а на экзамене — му́ка.** *(V magazine yest' muká, a na ekzamene — múka.)* — In the store there's flour, and at the exam — torment.
+
+<!-- vocab-card: {"id":"vocab-castle","word":"за́мок","meaning":"castle","priority":"optional","sourceSection":"1. Why Stress Matters"} -->
+<!-- vocab-card: {"id":"vocab-lock","word":"замо́к","meaning":"lock","priority":"optional","sourceSection":"1. Why Stress Matters"} -->
+<!-- vocab-card: {"id":"vocab-milk","word":"молоко́","meaning":"milk","priority":"optional","sourceSection":"1. Why Stress Matters"} -->
 
 <!-- quiz:{"type":"multiple-choice","question":"What does за́мок (stress on first syllable) mean?","options":["Lock","Castle","Bridge","Key"],"answer":1} -->
 
-<!-- grammar-card: {"rule":"Stress alone can separate two entirely different words","hint":"за́мок / замо́к","example":"Он купил ___ для двери за́мка.","answer":"замо́к","explanation":"За́мок with initial stress is a castle; the lock for its door is замо́к, stressed on the ending."} -->
+<!-- grammar-card: {"id":"rule-stress-reduces-vowels","kind":"concept","format":"qa","priority":"optional","sourceSection":"1. Why Stress Matters","rule":"Because unstressed vowels are reduced, the stressed syllable decides how the vowels of a word sound","example":"Why does stressing the wrong syllable change how the vowels of a whole word sound?","answer":"Unstressed vowels are reduced, so only the stressed vowel is pronounced clearly.","explanation":"Count it if you link stress to vowel reduction. молоко́ is said [malakó]: only the stressed о sounds like o."} -->
+
+<!-- grammar-card: {"id":"lock-stress","kind":"rule","format":"qa","priority":"essential","sourceSection":"1. Why Stress Matters","rule":"Stress distinguishes the words for a lock and a castle","example":"You're buying a lock for your door: Мне нужен замок. Which syllable of замок do you stress?","hint":"Try saying the word both ways before you choose.","answer":"замо́к","explanation":"Stress the second syllable for a lock. Moving the stress to the first syllable gives за́мок, a castle.","legacyAliases":[{"rule":"Stress alone can separate two entirely different words","example":"Он купил ___ для двери за́мка."}]} -->
+
+<!-- grammar-card: {"id":"castle-meaning","kind":"rule","format":"qa","priority":"optional","sourceSection":"1. Why Stress Matters","rule":"The marked syllable can tell you which meaning to read","example":"A guide says «Вот за́мок». What is the guide pointing out?","answer":"A castle.","explanation":"The accent is on за́-. A lock has the same letters, but its stressed syllable is -мо́к."} -->
 
 ---
 
@@ -55,6 +65,8 @@ And these three-syllable words:
 - **молоко́** *(malakó)* — milk (stress on 3rd syllable)
 
 There is no way to predict the stress just from looking at the spelling. Dictionaries mark stress with an accent mark (´) over the stressed vowel, and learners should always note it when learning new words.
+
+<!-- grammar-card: {"id":"rule-stress-unpredictable","kind":"concept","format":"qa","priority":"essential","sourceSection":"2. Stress Is Unpredictable","rule":"Russian stress cannot be predicted from spelling and must be learned with each word","example":"Can you work out which syllable of a new Russian word is stressed just from its spelling?","answer":"No. Learn the stress together with each word.","explanation":"Any answer that says stress must be memorized or checked in a dictionary counts. ма́ма and вода́ both have two syllables, but the stress falls differently."} -->
 
 ---
 
@@ -137,7 +149,9 @@ Many masculine nouns shift stress to the ending in the plural:
 - **до́м** *(dom)* — house → **дома́** *(domá)* — houses
 - **глаз** *(glaz)* — eye → **глаза́** *(glazá)* — eyes
 
-<!-- grammar-card: {"rule":"Some nouns move their stress when they change case","hint":"голова́ → accusative","example":"Она повернула ___.","answer":"го́лову","explanation":"Голова́ is end-stressed, but its accusative pulls the stress forward to го́лову."} -->
+<!-- grammar-card: {"id":"rule-stress-shifts","kind":"concept","format":"qa","priority":"optional","sourceSection":"Shifts Within Singular Cases","rule":"A noun's stress can move to another syllable when it changes case or number","example":"Does a noun always keep the stress of its dictionary form when it changes case or number?","answer":"No. The stress can move to another syllable.","explanation":"Any “no” that says stress can shift counts. голова́ → го́лову (accusative); рука́ → ру́ки (plural)."} -->
+
+<!-- grammar-card: {"id":"head-accusative-stress","kind":"rule","format":"qa","priority":"optional","sourceSection":"Shifts Within Singular Cases","rule":"The accusative of голова shifts stress to the first syllable","example":"She turned her head: Она повернула голову. Which syllable of голову do you stress?","answer":"го́лову","explanation":"Stress the first syllable in this form, not the last as in the dictionary form голова́.","legacyAliases":[{"rule":"Some nouns move their stress when they change case","example":"Она повернула ___."}]} -->
 
 ---
 
@@ -178,7 +192,7 @@ Some verbs shift stress in the feminine past tense:
 
 <!-- quiz:{"type":"multiple-choice","question":"How does stress change in рука́ → ру́ки (hand → hands)?","options":["It stays on the same syllable","It moves forward (toward the end)","It moves backward (toward the beginning)","There is no stress change"],"answer":2} -->
 
-<!-- grammar-card: {"rule":"The feminine past of быть is stressed on its ending","hint":"был / была́","example":"Она́ ___ до́ма.","answer":"была́","explanation":"Была́ is the odd form out — masculine был and neuter бы́ло both keep the stress on the stem."} -->
+<!-- grammar-card: {"id":"feminine-past-stress","kind":"rule","format":"qa","priority":"essential","sourceSection":"Past Tense Shifts","rule":"The feminine past of быть is stressed on its ending","example":"She was at home: Она была дома. Which syllable of была do you stress?","answer":"была́","explanation":"Stress the second syllable: была́. Compare neuter бы́ло, where the stress stays on the stem.","legacyAliases":[{"rule":"The feminine past of быть is stressed on its ending","example":"Она́ ___ до́ма."}]} -->
 
 ---
 
@@ -203,7 +217,7 @@ Practicing words like **за́мок/замо́к** helps train your ear to hear
 
 **Ударение в русском языке нужно запоминать.** *(Udareniye v russkom yazyke nuzhno zapominat'.)* — Stress in Russian must be memorized.
 
-<!-- quiz:{"type":"multiple-choice","question":"Which pair shows the same word with different stress changing its meaning?","options":["кот / кит (cat / whale)","мука́ / му́ка (torment / flour)","дом / том (house / volume)","мир / мор (peace / plague)"],"answer":1} -->
+<!-- quiz:{"type":"multiple-choice","question":"Which pair shows the same word with different stress changing its meaning?","options":["кот / кит (cat / whale)","мука́ / му́ка (flour / torment)","дом / том (house / volume)","мир / мор (peace / plague)"],"answer":1} -->
 
 ---
 

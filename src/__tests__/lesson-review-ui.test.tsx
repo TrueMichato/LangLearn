@@ -3,6 +3,7 @@ import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest';
 import ReactMarkdown from 'react-markdown';
 import portuguesePronunciation from '../../public/content/grammar/pt/pronunciation.md?raw';
 import romanianPronunciation from '../../public/content/grammar/ro/pronunciation.md?raw';
+import russianStress from '../../public/content/grammar/ru/stress.md?raw';
 
 const hooks = vi.hoisted(() => {
   let slots: unknown[] = [];
@@ -66,11 +67,16 @@ vi.mock('../stores/xpStore', () => ({ useXPStore: { getState: () => ({ addXP: mo
 import LessonView from '../components/grammar/LessonView';
 import LessonCaptureModal from '../components/grammar/LessonCaptureModal';
 import LessonReviewEditor from '../components/grammar/LessonReviewEditor';
+import GrammarCard from '../components/srs/GrammarCard';
+import GrammarFace from '../components/grammar/GrammarFace';
 import GrammarQuiz from '../components/grammar/GrammarQuiz';
 import WordLookupSheet from '../components/reader/WordLookupSheet';
 import PracticeWordCapture from '../components/common/PracticeWordCapture';
-import { parseListCandidates, parseTableCandidates } from '../lib/lesson-capture';
+import { parseLessonReviewItems, parseListCandidates, parseTableCandidates } from '../lib/lesson-capture';
 import type { GrammarReviewItem, LessonReviewItem } from '../lib/lesson-review';
+import type { Word } from '../db/schema';
+import { lessonSourceSnapshot } from '../lib/card-identity';
+import { useKeyboardShortcuts } from '../hooks/useKeyboardShortcuts';
 
 type Props = { children?: ReactNode; onClick?: () => unknown; [key: string]: unknown };
 function elements(node: ReactNode): ReactElement<Props>[] {
@@ -123,6 +129,120 @@ beforeEach(() => {
 });
 afterEach(() => { hooks.dispose(); vi.unstubAllGlobals(); });
 
+describe('optional grammar recall input', () => {
+  function savedStress(id: string): Word {
+    const item = parseLessonReviewItems(russianStress).items.find((entry) => entry.id === id);
+    if (!item || item.kind === 'vocabulary') throw new Error(`Missing grammar rule ${id}`);
+    const word: Word = {
+      type: 'grammar', language: 'ru', word: item.answer, reading: item.hint, contextSentence: item.prompt,
+      meaning: item.explanation, grammarKind: item.kind, grammarRule: item.rule, grammarFormat: item.format,
+      lessonSource: { lessonId: 'stress', itemId: id, provenance: item.provenance },
+      tags: [], sourceTextId: null, createdAt: '2026-01-01',
+    };
+    return { ...word, lessonSourceSnapshot: lessonSourceSnapshot(word) };
+  }
+
+  function exercise(word: Word, writing = false) {
+    let flipped = false;
+    const reveal = vi.fn(() => { flipped = true; });
+    const render = () => hooks.render(() => GrammarCard({
+      word, isFlipped: flipped, onFlip: reveal, writing, onWritingChange: (value) => { writing = value; },
+    }));
+    const face = () => GrammarFace(child(render(), GrammarFace).props as Parameters<typeof GrammarFace>[0]);
+    const chooseMode = (label: string) => {
+      const option = elements(render()).find((el) => el.type === 'label' && text(el) === label);
+      if (!option) throw new Error(`Missing mode: ${label}`);
+      (child(option, 'input').props.onChange as () => void)();
+    };
+    return { render, reveal, face, chooseMode };
+  }
+
+  it('compares a personally selected syllable with the stress model without requiring Cyrillic typing or scoring the choice', () => {
+    const word = savedStress('lock-stress');
+    const { render, face, reveal, chooseMode } = exercise(word);
+    expect(elements(render()).some((el) => el.type === 'textarea')).toBe(false);
+    chooseMode('Type an answer');
+    const front = render();
+    expect(text(face())).toContain(word.contextSentence);
+    expect(text(front) + text(face())).not.toContain(word.word);
+    const choice = elements(front).find((el) => el.props['aria-label'] === 'Stress syllable 1 (а)')!;
+    choice.props.onClick!();
+    expect(child(render(), 'textarea').props.value).toBe('за́мок');
+    expect(reveal).not.toHaveBeenCalled();
+    click(render(), 'Reveal answer');
+    expect(text(face())).toContain('Your attemptза́мок');
+    expect(text(face())).toContain('замо́к');
+    expect(text(render())).toContain('Grade where you placed the stress');
+    expect(elements(render()).some((el) => el.type === 'textarea')).toBe(false);
+    expect(mocks.save).not.toHaveBeenCalled();
+  });
+
+  it('can discard a draft, reveal without one, or compare an arbitrary answer verbatim without selection controls on a meaning task', () => {
+    const word = savedStress('castle-meaning');
+    const { render, face, reveal, chooseMode } = exercise(word, true);
+    const draft = 'my answer 1 2';
+    const type = () => (child(render(), 'textarea').props.onChange as (event: unknown) => void)({ target: { value: draft } });
+    expect(text(render())).not.toContain('choose the stressed syllable');
+    type();
+    chooseMode('Say or think');
+    chooseMode('Type an answer');
+    expect(child(render(), 'textarea').props.value).toBe('');
+    type();
+    expect(reveal).not.toHaveBeenCalled();
+    click(render(), 'Reveal answer');
+    expect(text(face())).toContain(`Your attempt${draft}`);
+    expect(text(face())).toContain(word.word);
+    hooks.reset();
+    const next = exercise(word, true);
+    click(next.render(), 'Reveal answer');
+    expect(next.reveal).toHaveBeenCalledOnce();
+    expect(text(next.face())).not.toContain(draft);
+    expect(text(next.face())).not.toContain('Your attempt');
+  });
+
+  it.each([
+    { language: 'uk', lesson: 'stress' }, { language: 'ru', lesson: 'prepositional' },
+  ])('does not carry writing mode into $language/$lesson even if enabled for the previous card', ({ language, lesson }) => {
+    const word = savedStress('lock-stress');
+    const other = exercise({ ...word, language, lessonSource: { ...word.lessonSource!, lessonId: lesson } }, true);
+    const tree = other.render();
+    expect(text(tree)).not.toContain('Type an answer');
+    expect(elements(tree).some((el) => el.type === 'textarea')).toBe(false);
+    click(tree, 'Reveal answer');
+    expect(text(other.face())).toContain(word.word);
+  });
+
+  it('leaves typing, IME commits and native control activation alone, while Space on the prompt and grade shortcuts still work', () => {
+    class Target {
+      tag: string;
+      constructor(tag: string) { this.tag = tag; }
+      closest(selectors: string) { return selectors.split(', ').includes(this.tag) ? this : null; }
+    }
+    const add = vi.fn(), flip = vi.fn(), grade = vi.fn();
+    vi.stubGlobal('HTMLElement', Target);
+    vi.stubGlobal('window', { addEventListener: add, removeEventListener: vi.fn() });
+    hooks.render(() => useKeyboardShortcuts({ Space: flip, '1': grade }));
+    hooks.flush();
+    const handle = add.mock.calls[0][1] as (event: unknown) => void;
+    const key = (key: string, tag: string, init: object = {}) => {
+      const preventDefault = vi.fn();
+      handle({ key, target: new Target(tag), preventDefault, ...init });
+      return preventDefault;
+    };
+    for (const [value, tag] of [[' ', 'textarea'], ['1', 'textarea'], [' ', 'input'], [' ', 'button'], [' ', 'summary']]) {
+      expect(key(value, tag)).not.toHaveBeenCalled();
+    }
+    expect(key('1', 'p', { isComposing: true })).not.toHaveBeenCalled();
+    expect(key(' ', 'p', { keyCode: 229 })).not.toHaveBeenCalled();
+    expect(flip).not.toHaveBeenCalled();
+    expect(grade).not.toHaveBeenCalled();
+    expect(key(' ', 'p')).toHaveBeenCalledOnce();
+    expect(key('1', 'p')).toHaveBeenCalledOnce();
+    expect(flip).toHaveBeenCalledOnce();
+    expect(grade).toHaveBeenCalledOnce();
+  });
+});
+
 describe('explicit lesson review selection', () => {
   it('preselects only unsaved essential items, keeps legacy extras optional, and reports actual save counts/XP', async () => {
     const items = [vocabulary, rule, optional];
@@ -144,6 +264,26 @@ describe('explicit lesson review selection', () => {
     expect(text(tree)).toContain('Added 1 item; 1 already saved.');
     expect(text(tree)).toContain('Go to Review');
     expect(control(tree, 'Save 0 items for review').props.disabled).toBe(true);
+  });
+
+  it('labels rules to remember apart from rule practice, notes their spacing only when listed, and keeps non-pilot concepts as concepts', async () => {
+    const recall: GrammarReviewItem = { ...rule, id: 'recall', kind: 'concept', prompt: 'Which letters trigger the rule?' };
+    const label = async (language: string, lessonId: string, items: LessonReviewItem[] = [rule, recall]) => {
+      hooks.dispose(); hooks.reset();
+      const render = () => hooks.render(() => LessonCaptureModal({ items, language, lessonId, onClose: vi.fn(), onSaved: vi.fn() }));
+      render(); await settle();
+      return text(render());
+    };
+    const spacing = 'Rules to remember come back about half as often as other cards.';
+    const pilot = await label('ru', 'spelling-rules');
+    expect(pilot).toContain('Essential · Practice using a rule');
+    expect(pilot).toContain('Essential · Rule to remember');
+    expect(pilot).toContain(spacing);
+    expect(await label('ru', 'spelling-rules', [rule, vocabulary])).not.toContain(spacing);
+    const other = await label('es', 'accent-rules');
+    expect(other).toContain('Essential · Concept to remember');
+    expect(other).not.toContain('Rule to remember');
+    expect(other).not.toContain(spacing);
   });
 
   it('disables already-saved authored items and recovers from a saved-state check failure without pretending the lesson is empty', async () => {

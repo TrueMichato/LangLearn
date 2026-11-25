@@ -1,5 +1,7 @@
 # Pronunciation Rules
 
+<!-- vocab-inventory: {"mode":"explicit"} -->
+
 Russian pronunciation follows consistent rules, but they differ significantly from how words are spelled. The three most important phenomena are **vowel reduction** (unstressed vowels change sound), **consonant devoicing** (voiced consonants lose their voice in certain positions), and **palatalization** (consonants become "soft" before certain vowels). Mastering these rules will make your Russian sound natural and help you understand native speakers.
 
 ---
@@ -19,6 +21,8 @@ When О is not stressed, it sounds like a short "a" sound. This is called **ак
 - **собака** *(sabáka)* — dog (the first О is reduced)
 
 This is why **молоко** is pronounced "malakó" and not "molokó" — only the stressed О keeps its true "o" sound.
+
+<!-- grammar-card: {"id":"rule-unstressed-o","kind":"concept","format":"qa","priority":"essential","sourceSection":"Unstressed О → sounds like А","rule":"Only a stressed о keeps its o sound; an unstressed о is reduced","example":"How does the letter о sound when it is not stressed?","answer":"Like a short а.","explanation":"Any answer that says unstressed о sounds like а counts. Хорошо́ is said [kharashó]: only the stressed о keeps its o sound."} -->
 
 ### Unstressed Е → sounds like И
 
@@ -65,7 +69,7 @@ Russian consonants come in **voiced/voiceless pairs**. A voiced consonant uses t
 
 ### Devoicing at the End of a Word
 
-When a voiced consonant appears at the **end of a word**, it is pronounced as its voiceless partner. This is called **final devoicing**.
+When a **paired voiced consonant** ends a word said on its own, it is pronounced as its voiceless partner. This is called **final devoicing**.
 
 - **хлеб** *(khlep)* — bread (Б → П at the end)
 - **город** *(górat)* — city (Д → Т at the end)
@@ -73,6 +77,9 @@ When a voiced consonant appears at the **end of a word**, it is pronounced as it
 - **нож** *(nosh)* — knife (Ж → Ш at the end)
 - **глаз** *(glas)* — eye (З → С at the end)
 - **кров** *(krof)* — shelter (В → Ф at the end)
+
+<!-- vocab-card: {"id":"vocab-khleb","word":"хлеб","meaning":"bread","priority":"optional","sourceSection":"Devoicing at the End of a Word"} -->
+<!-- vocab-card: {"id":"vocab-drug","word":"друг","meaning":"friend","priority":"optional","sourceSection":"Devoicing at the End of a Word"} -->
 
 The spelling stays the same — only the pronunciation changes!
 
@@ -90,9 +97,15 @@ And when a voiced consonant appears **before a voiceless consonant**, it becomes
 - **водка** *(votka)* — vodka (Д before voiceless К → pronounced as Т)
 - **завтра** *(zaftra)* — tomorrow (В before voiceless Т → pronounced as Ф)
 
+<!-- grammar-card: {"id":"rule-voicing-assimilation","kind":"concept","format":"qa","priority":"optional","sourceSection":"Voicing Assimilation","rule":"A consonant takes on the voicing of the consonant that follows it","example":"Why is the в in завтра (tomorrow) pronounced [f]?","answer":"It comes before voiceless т, so it becomes voiceless too.","explanation":"Count it if you name the following voiceless consonant as the cause. It works the other way too: in сделать, с before voiced д sounds like [z]."} -->
+
 <!-- quiz:{"type":"multiple-choice","question":"How is the final consonant in хлеб (bread) pronounced?","options":["As Б (b) — voiced","As П (p) — voiceless","As В (v) — voiced","As Ф (f) — voiceless"],"answer":1} -->
 
-<!-- grammar-card: {"rule":"A voiced consonant at the end of a word is pronounced voiceless but still written as voiced","hint":"bread","example":"На столе лежит хле___.","answer":"б","explanation":"Хлеб sounds like [khlep], yet the spelling keeps б — the genitive хлеба shows the consonant is voiced underneath."} -->
+<!-- grammar-card: {"id":"rule-final-devoicing","kind":"concept","format":"qa","priority":"essential","sourceSection":"Devoicing at the End of a Word","rule":"At the end of a word said on its own, a paired voiced consonant is pronounced as its voiceless partner","example":"What happens to a paired voiced consonant such as б, д or г at the end of a word said on its own?","answer":"It sounds like its voiceless partner; the spelling stays the same.","explanation":"Count it if you say the consonant becomes voiceless (б → [p], д → [t], г → [k]). Друг is said [druk] but still written with г."} -->
+
+<!-- grammar-card: {"id":"bread-final-sound","kind":"rule","format":"qa","priority":"essential","sourceSection":"Devoicing at the End of a Word","rule":"At the end of a word said on its own, a paired voiced consonant loses its voicing","example":"Read хлеб (bread) on its own. What sound do you expect at the very end?","answer":"[p]","explanation":"The lips close as for б, but without voicing. The letter stays б even though the word ends in the sound [p]."} -->
+
+<!-- grammar-card: {"id":"bread-final-spelling","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Devoicing at the End of a Word","rule":"Final devoicing changes the sound, not the spelling","example":"The word for bread ends in the sound [p]. Supply its written final letter: На столе лежит хле___.","answer":"б","explanation":"Compare хлеба: before a vowel you can hear the [b] that the spelling хлеб preserves.","legacyAliases":[{"rule":"A voiced consonant at the end of a word is pronounced voiceless but still written as voiced","example":"На столе лежит хле___."}]} -->
 
 ---
 
@@ -127,6 +140,8 @@ Three consonants are **always hard** and never become soft, even before soft vow
 - **Ц** — always hard: **цирк** *(tsirk)* — circus (Ц stays hard despite И)
 
 This is why **жи** and **ши** are pronounced with a hard "zh" and "sh" even though they are written with И.
+
+<!-- grammar-card: {"id":"rule-always-hard","kind":"concept","format":"qa","priority":"optional","sourceSection":"Always Hard Consonants","rule":"Ж, ш and ц are always hard, even before soft vowels","example":"Which three consonants stay hard even before и or another soft vowel?","answer":"ж, ш, ц.","explanation":"All three are needed to count. That is why жить and шить keep a hard [zh] and [sh] despite the и."} -->
 
 ### Always Soft Consonants
 

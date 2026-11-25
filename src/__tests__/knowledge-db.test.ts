@@ -1,10 +1,10 @@
 import 'fake-indexeddb/auto';
 import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest';
-import { db } from '../db/schema';
+import { db, type Review, type Word } from '../db/schema';
 import { loadKnowledgeSnapshot, observeKnowledgeSnapshot } from '../db/knowledge';
 import { markLessonComplete, markLessonsComplete } from '../db/lessons';
 import { saveWordsToVocabulary } from '../db/words';
-import { processReview } from '../db/reviews';
+import { processReview, scheduledGapDays } from '../db/reviews';
 import { buildWordStatusMap } from '../lib/word-status';
 import { analyzeText, getKnownWordSet } from '../lib/text-analysis';
 import type { KnowledgeSnapshot } from '../lib/knowledge';
@@ -91,5 +91,61 @@ describe('knowledge database APIs', () => {
     const spy = vi.spyOn(db.words, 'where').mockImplementationOnce(() => { throw new Error('read failed'); });
     await expect(loadKnowledgeSnapshot('es')).rejects.toThrow('read failed');
     spy.mockRestore();
+  });
+});
+
+async function grammarCard(overrides: Partial<Word> = {}) {
+  const lessonId = overrides.language === 'ja' ? 'particles' : 'nominative-accusative';
+  const wordId = await db.words.add({
+    language: 'ru', word: '-у', reading: '', meaning: '', contextSentence: 'Which ending marks a feminine direct object?',
+    sourceTextId: null, tags: ['grammar', `lesson:${lessonId}`], type: 'grammar', createdAt: '',
+    grammarKind: 'concept', grammarFormat: 'qa', lessonSource: { lessonId, itemId: 'x', provenance: 'authored' },
+    ...overrides,
+  }) as number;
+  const now = new Date().toISOString();
+  return await db.reviews.add({ wordId, ease: 2.5, interval: 0, repetitions: 0, nextReviewDate: now, lastReviewDate: now }) as number;
+}
+const gap = (review: Review) => Math.round((Date.parse(review.nextReviewDate) - Date.parse(review.lastReviewDate)) / 86_400_000);
+
+describe('rule-recall card spacing', () => {
+  it('doubles only the SM-2 due date and keeps the stored interval on the plain SM-2 sequence', async () => {
+    const ruleId = await grammarCard();
+    const practiceId = await grammarCard({ grammarKind: 'rule' });
+    for (const plain of [1, 6, 15, 38]) {
+      const rule = await processReview(ruleId, 4);
+      const practice = await processReview(practiceId, 4);
+      expect(practice.interval).toBe(plain);
+      expect(gap(practice)).toBe(plain);
+      expect(rule.interval).toBe(plain);
+      expect(gap(rule)).toBe(2 * plain);
+      expect(scheduledGapDays(rule)).toBe(2 * plain);
+    }
+    // Words' "Reset progress" keeps the old lastReviewDate; the shown interval must still be 0.
+    const reset = { ...(await db.reviews.get(ruleId))!, interval: 0, lastReviewDate: new Date(Date.now() - 3 * 86_400_000).toISOString(), nextReviewDate: new Date().toISOString() };
+    expect(scheduledGapDays(reset)).toBe(0);
+  });
+
+  it('stretches FSRS passes without scaling stored state, and never stretches a failure', async () => {
+    const ruleId = await grammarCard();
+    const practiceId = await grammarCard({ grammarKind: 'rule' });
+    const rule = await processReview(ruleId, 4, { scheduler: 'fsrs' });
+    const practice = await processReview(practiceId, 4, { scheduler: 'fsrs' });
+    expect(rule.interval).toBe(practice.interval);
+    expect(rule.stability).toBe(practice.stability);
+    expect(rule.difficulty).toBe(practice.difficulty);
+    expect(gap(rule)).toBe(2 * practice.interval);
+
+    const failed = await processReview(await grammarCard(), 0, { scheduler: 'fsrs' });
+    expect(failed.interval).toBeGreaterThan(0);
+    expect(gap(failed)).toBe(failed.interval);
+  });
+
+  it('keeps normal spacing for concept cards from lessons not yet reviewed', async () => {
+    const japanese = await processReview(await grammarCard({ language: 'ja' }), 4);
+    expect(gap(japanese)).toBe(japanese.interval);
+    const unreviewed = await processReview(await grammarCard({
+      tags: ['grammar', 'lesson:imperative'], lessonSource: { lessonId: 'imperative', itemId: 'x', provenance: 'authored' },
+    }), 4);
+    expect(gap(unreviewed)).toBe(unreviewed.interval);
   });
 });

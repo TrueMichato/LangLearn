@@ -1,38 +1,33 @@
 import { useId, useState } from 'react';
-import { fillBlank, hasBlank } from '../../lib/grammar-cards';
+import { hasBlank } from '../../lib/grammar-cards';
 import type { GrammarReviewItem, LessonReviewItem } from '../../lib/lesson-review';
 import { rtlProps } from '../../lib/rtl';
+import GrammarFace from './GrammarFace';
 
-export function LessonReviewPreview({ item, language }: { item: LessonReviewItem; language: string }) {
+export function LessonReviewPreview({ item, language, lessonId }: { item: LessonReviewItem; language: string; lessonId?: string }) {
   return (
     <dl className="space-y-3 rounded-xl bg-slate-50 p-3 text-sm dark:bg-slate-900/50">
       <div>
         <dt className="mb-1 font-medium text-slate-600 dark:text-slate-300">Front</dt>
         <dd className="break-words text-slate-800 dark:text-slate-100">
           {item.kind === 'vocabulary' ? (
-            <span {...rtlProps(language)} className="block">{item.word || 'Your word or phrase'}</span>
+            <>
+              <span {...rtlProps(language)} className="block">{item.word || 'Your word or phrase'}</span>
+              {item.reading && <span dir="auto" className="mt-1 block text-slate-600 dark:text-slate-300">{item.reading}</span>}
+            </>
           ) : (
-            <span dir="auto" className="block">{item.prompt || 'Your question or blank-completion example'}</span>
-          )}
-          {(item.kind === 'vocabulary' ? item.reading : item.hint) && (
-            <span dir="auto" className="mt-1 block text-slate-600 dark:text-slate-300">
-              {item.kind === 'vocabulary' ? item.reading : item.hint}
-            </span>
+            <GrammarFace card={item} side="front" language={language} lessonId={lessonId} />
           )}
         </dd>
       </div>
       <div className="border-t border-slate-200/70 pt-3 dark:border-white/10">
         <dt className="mb-1 font-medium text-slate-600 dark:text-slate-300">Back</dt>
         <dd className="space-y-2 break-words text-slate-800 dark:text-slate-100">
-          <p dir="auto">{item.kind === 'vocabulary' ? item.meaning || 'Your meaning' : item.answer || 'Your answer'}</p>
-          {item.kind === 'vocabulary' && item.contextSentence && (
-            <p {...rtlProps(language)}>{item.contextSentence}</p>
-          )}
-          {item.kind !== 'vocabulary' && item.format === 'cloze' && hasBlank(item.prompt) && item.answer && (
-            <p dir="auto">{fillBlank(item.prompt, item.answer)}</p>
-          )}
-          {item.kind !== 'vocabulary' && item.explanation && (
-            <p dir="auto" className="text-slate-600 dark:text-slate-300">{item.explanation}</p>
+          {item.kind === 'vocabulary' ? <>
+            <p dir="auto">{item.meaning || 'Your meaning'}</p>
+            {item.contextSentence && <p {...rtlProps(language)}>{item.contextSentence}</p>}
+          </> : (
+            <GrammarFace card={item} side="back" language={language} />
           )}
         </dd>
       </div>
@@ -43,17 +38,18 @@ export function LessonReviewPreview({ item, language }: { item: LessonReviewItem
 interface LessonReviewEditorProps {
   item: GrammarReviewItem;
   language: string;
+  lessonId?: string;
   onCommit: (item: GrammarReviewItem) => void;
   onCancel: () => void;
 }
 
-export default function LessonReviewEditor({ item, language, onCommit, onCancel }: LessonReviewEditorProps) {
+export default function LessonReviewEditor({ item, language, lessonId, onCommit, onCancel }: LessonReviewEditorProps) {
   const [draft, setDraft] = useState(item);
   const [error, setError] = useState('');
   const id = useId();
   const fieldClass = 'mt-1 w-full min-h-[44px] rounded-lg border border-slate-300 bg-white px-3 py-2 text-slate-800 dark:border-slate-600 dark:bg-slate-800 dark:text-slate-100';
   const change = (patch: Partial<GrammarReviewItem>) => {
-    setDraft((previous) => ({ ...previous, ...patch }));
+    setDraft((previous) => ({ ...previous, ...patch, learnerEdited: true }));
     setError('');
   };
 
@@ -113,7 +109,7 @@ export default function LessonReviewEditor({ item, language, onCommit, onCancel 
           value={draft.explanation} onChange={(event) => change({ explanation: event.target.value })} />
       </label>
       {error && <p id={`${id}-error`} role="alert" className="text-sm text-amber-800 dark:text-amber-300">{error}</p>}
-      <LessonReviewPreview item={draft} language={language} />
+      <LessonReviewPreview item={draft} language={language} lessonId={lessonId} />
       <p className="text-xs text-slate-500 dark:text-slate-400">This preview is local. Nothing is saved until you confirm Save in the picker.</p>
       <button type="submit"
         className="w-full min-h-[44px] rounded-xl bg-indigo-600 px-4 py-2 font-medium text-white hover:bg-indigo-700">

@@ -1,5 +1,7 @@
 # Genitive Case (Родительный падеж)
 
+<!-- vocab-inventory: {"mode":"explicit"} -->
+
 The **genitive case** (родительный падеж) is one of the most frequently used cases in Russian. It answers the questions **Кого?** (Of whom?) and **Чего?** (Of what?). The genitive expresses possession, absence, quantity, and is required after many prepositions. Once you master the genitive, a huge portion of Russian grammar falls into place.
 
 ---
@@ -96,7 +98,13 @@ The genitive is used with **нет** (there is no / there isn't) to express abse
 
 <!-- quiz:{"type":"multiple-choice","question":"«У меня нет ___» (I don't have a dictionary). Choose the genitive of «словарь».","options":["словарь","словаря","словарю","словарём"],"answer":1} -->
 
-<!-- grammar-card: {"rule":"Absence is expressed by нет plus the genitive","hint":"есть / нет","example":"У меня ___ машины.","answer":"нет","explanation":"Нет replaces есть to deny existence, and машина shifts into the genitive машины."} -->
+<!-- vocab-card: {"id":"vocab-mashina","word":"машина","meaning":"car","priority":"optional","sourceSection":"3. Absence with Нет"} -->
+
+<!-- grammar-card: {"id":"absent-car","kind":"rule","format":"cloze","priority":"essential","sourceSection":"3. Absence with Нет","rule":"Нет puts the absent noun in the genitive","example":"Say you don't have a car. Use машина (car): У меня нет ___.","answer":"машины","explanation":"Машина becomes машины because it is missing. Compare У меня есть машина when you do have one."} -->
+
+<!-- grammar-card: {"id":"rule-net-genitive","kind":"concept","format":"qa","priority":"essential","sourceSection":"3. Absence with Нет","rule":"After нет, the absent thing takes the genitive","example":"After нет (there is no), which case does the missing thing take?","answer":"Genitive.","explanation":"Any answer naming the genitive counts. Стол → В комнате нет стола."} -->
+
+<!-- grammar-card: {"id":"rule-why-net-vody","kind":"concept","format":"qa","priority":"optional","sourceSection":"3. Absence with Нет","rule":"Нет puts the absent noun in the genitive; feminine -а becomes -ы","example":"Здесь нет воды means there is no water here. Why is it воды, not вода?","answer":"Нет takes the genitive; feminine -а becomes -ы.","explanation":"The answer counts if it links нет to the genitive. Вода → нет воды; after г, к, х, ж, ш, щ, ч the ending is -и instead: книга → нет книги."} -->
 
 ---
 
@@ -128,6 +136,10 @@ Russian numbers interact with the genitive case in a specific pattern:
 > **Key insight:** After 2, 3, 4 — use genitive **singular**. After 5 and above — use genitive **plural**. This is one of the most common mistakes for learners.
 
 <!-- quiz:{"type":"multiple-choice","question":"«Пять ___» (five students). What form does «студент» take?","options":["студент","студента","студентов","студенту"],"answer":2} -->
+
+<!-- grammar-card: {"id":"rule-numbers-two-to-four","kind":"concept","format":"qa","priority":"optional","sourceSection":"4. Numbers and the Genitive","rule":"After 2, 3, and 4 a noun takes the genitive singular","example":"After the numbers 2, 3, and 4, which case and number does the noun take?","answer":"Genitive singular.","explanation":"Both genitive and singular must be present. Стол → три стола; книга → две книги."} -->
+
+<!-- grammar-card: {"id":"rule-numbers-five-plus","kind":"concept","format":"qa","priority":"optional","sourceSection":"4. Numbers and the Genitive","rule":"After 5 through 20 a noun takes the genitive plural","example":"After the numbers 5 through 20, which case and number does the noun take?","answer":"Genitive plural.","explanation":"Both genitive and plural must be present. Стол → пять столов; книга → десять книг."} -->
 
 ---
 
@@ -197,7 +209,7 @@ Many common prepositions require the genitive case.
 
 **У окна стоит стул.** *(U okna stoit stul.)* — A chair stands by the window.
 
-<!-- grammar-card: {"rule":"Possession is built with у plus the genitive","hint":"the preposition before меня","example":"___ меня есть собака.","answer":"У","explanation":"У governs the genitive меня; the sentence literally says at me there is a dog."} -->
+<!-- grammar-card: {"id":"possession-frame","kind":"rule","format":"cloze","priority":"optional","sourceSection":"У (at, by / possession)","rule":"The possessor follows у in the genitive","example":"Tell a friend you have a dog. Supply the preposition: ___ меня есть собака.","answer":"У","explanation":"У меня means roughly “at my place.” With есть it tells what I have.","legacyAliases":[{"rule":"Possession is built with у plus the genitive","example":"___ меня есть собака."}]} -->
 
 ---
 
@@ -275,7 +287,7 @@ When a noun is in the genitive, its adjective must also be in the genitive.
 
 **Цена нового телефона высокая.** *(Tsena novogo telefona vysokaya.)* — The price of the new phone is high.
 
-<!-- grammar-card: {"rule":"An adjective follows its noun into the genitive","hint":"новый (new)","example":"Книга нов___ студента на столе.","answer":"ого","explanation":"Студента is masculine genitive, so новый must take the matching genitive ending -ого."} -->
+<!-- grammar-card: {"id":"possessor-adjective","kind":"rule","format":"cloze","priority":"optional","sourceSection":"8. Genitive of Adjectives","rule":"An adjective follows its noun into the genitive","example":"The new student's book is on the table. Give новый (new) its ending: Книга нов___ студента на столе.","answer":"ого","explanation":"The student owns the book. Both words in нового студента are genitive, so новый takes -ого.","legacyAliases":[{"rule":"An adjective follows its noun into the genitive","example":"Книга нов___ студента на столе."}]} -->
 
 ---
 

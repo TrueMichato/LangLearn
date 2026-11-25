@@ -1,5 +1,7 @@
 # Nominative & Accusative Cases
 
+<!-- vocab-inventory: {"mode":"explicit"} -->
+
 The **nominative** (именительный) and **accusative** (винительный) cases are the two most frequently used cases in Russian. The nominative marks the subject — who does the action. The accusative marks the direct object — who or what receives the action. Mastering these two cases is essential before moving to other cases.
 
 ---
@@ -62,6 +64,8 @@ The key to the accusative case is that its form depends on both **gender** and w
 | Neuter | — | окн**о** (window) | окн**о** | Я вижу **окно**. |
 | Neuter | — | мор**е** (sea) | мор**е** | Я вижу **море**. |
 
+<!-- grammar-card: {"id":"rule-accusative-unchanged-set","kind":"concept","format":"qa","priority":"optional","sourceSection":"Endings Table: Nominative → Accusative (Singular)","rule":"Inanimate masculine, feminine -ь, and neuter nouns keep their nominative form in the accusative singular","example":"Which of these keep their dictionary form as a direct object: стол, брат, окно, дверь?","answer":"стол, окно, дверь","explanation":"All three must be named and брат left out. Брат is animate masculine, so it changes: Я вижу брата. The others stay as they are: Я вижу стол / окно / дверь."} -->
+
 ### Summary Rules
 
 - **Masculine inanimate** → accusative = nominative (no change)
@@ -71,7 +75,9 @@ The key to the accusative case is that its form depends on both **gender** and w
 
 <!-- quiz:{"type":"multiple-choice","question":"What is the accusative form of «газета» (newspaper)?","options":["газета","газету","газеты","газете"],"answer":1} -->
 
-<!-- grammar-card: {"rule":"Masculine inanimate nouns look identical in the accusative","hint":"стол (table), inanimate","example":"Я вижу ___.","answer":"стол","explanation":"Стол is not alive, so its accusative simply matches the nominative — no ending is added."} -->
+<!-- vocab-card: {"id":"vocab-brat","word":"брат","meaning":"brother","priority":"optional","sourceSection":"4. The Animate vs. Inanimate Distinction"} -->
+
+<!-- grammar-card: {"id":"animate-object-contrast","kind":"rule","format":"qa","priority":"essential","sourceSection":"4. The Animate vs. Inanimate Distinction","rule":"Animacy affects masculine singular direct objects","example":"Я вижу стол (I see the table). Я вижу брата (I see my brother). Why does брат change form while стол stays the same?","answer":"Брат names a person; стол names an inanimate object.","explanation":"Both are direct objects. The animate masculine accusative takes the genitive form брата; the inanimate one looks just like the nominative стол."} -->
 
 ---
 
@@ -108,6 +114,8 @@ Objects, places, abstract concepts are inanimate.
 > **Remember:** For masculine nouns — animate accusative looks like genitive; inanimate accusative looks like nominative.
 
 <!-- quiz:{"type":"multiple-choice","question":"«Я вижу ___» (I see the brother). What is the correct accusative of «брат»?","options":["брат","брата","брату","братом"],"answer":1} -->
+
+<!-- grammar-card: {"id":"rule-accusative-masculine-animate","kind":"concept","format":"qa","priority":"essential","sourceSection":"4. The Animate vs. Inanimate Distinction","rule":"Only animate masculine singular nouns change in the accusative, taking the genitive ending -а/-я","example":"As a direct object, which masculine singular nouns change from their dictionary form: animate or inanimate ones?","answer":"Animate ones (people and animals).","explanation":"The answer counts if it says animate. They take -а/-я, like the genitive: студент → Я вижу студента. Inanimate стол stays стол."} -->
 
 ---
 
@@ -202,7 +210,9 @@ Many common Russian verbs require their object in the accusative case:
 
 <!-- quiz:{"type":"multiple-choice","question":"Complete the sentence: «Мы смотрим ___» (We are watching a movie).","options":["фильм","фильма","фильму","фильмом"],"answer":0} -->
 
-<!-- grammar-card: {"rule":"A transitive verb puts its object in the accusative","hint":"книга (book)","example":"Она читает ___.","answer":"книгу","explanation":"Книга is what is being read, and feminine nouns in -а take -у in the accusative."} -->
+<!-- grammar-card: {"id":"book-accusative","kind":"rule","format":"cloze","priority":"optional","sourceSection":"7. Verbs That Take the Accusative","rule":"The book being read is the direct object","example":"She's reading a book. Use книга (book): Она читает ___.","answer":"книгу","explanation":"Книга ends in -а as a subject, but takes -у when it's the thing being read.","legacyAliases":[{"rule":"A transitive verb puts its object in the accusative","example":"Она читает ___."}]} -->
+
+<!-- grammar-card: {"id":"rule-accusative-feminine-endings","kind":"concept","format":"qa","priority":"essential","sourceSection":"7. Verbs That Take the Accusative","rule":"In the accusative singular, feminine -а becomes -у and -я becomes -ю","example":"A feminine noun is the direct object. What replaces its ending -а? What replaces -я?","answer":"-а → -у; -я → -ю","explanation":"Both changes must be given. Газета → Она читает газету; песня → Я слышу песню. Feminine -ь nouns don't change: дверь."} -->
 
 ---
 
@@ -249,7 +259,11 @@ The accusative is also used to express **direction** (movement toward a place) w
 
 <!-- quiz:{"type":"multiple-choice","question":"«Я иду в ___» (I am going to the library). Choose the correct accusative form of «библиотека».","options":["библиотека","библиотеку","библиотеке","библиотеки"],"answer":1} -->
 
-<!-- grammar-card: {"rule":"Motion towards a place uses в or на plus the accusative","hint":"в / на","example":"Я иду ___ школу.","answer":"в","explanation":"В with the accusative школу expresses movement into the school, not being there."} -->
+<!-- vocab-card: {"id":"vocab-shkola","word":"школа","meaning":"school","priority":"optional","sourceSection":"В + Accusative (into, to)"} -->
+
+<!-- grammar-card: {"id":"school-destination","kind":"rule","format":"cloze","priority":"essential","sourceSection":"В + Accusative (into, to)","rule":"В takes the accusative when it marks a destination","example":"You're on your way to school, not there yet. Use школа (school): Я иду в ___.","answer":"школу","explanation":"В школу tells where you're going. В школе would say where you already are."} -->
+
+<!-- grammar-card: {"id":"rule-direction-accusative","kind":"concept","format":"qa","priority":"optional","sourceSection":"В + Accusative (into, to)","rule":"В and на take the accusative when they mark a destination","example":"After в or на, which case shows the place someone is going to?","answer":"Accusative.","explanation":"Any answer naming the accusative counts. Я иду в школу is direction; Я в школе (prepositional) is location."} -->
 
 ---
 

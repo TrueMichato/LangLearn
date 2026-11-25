@@ -1,5 +1,7 @@
 # Dative Case (Дательный падеж)
 
+<!-- vocab-inventory: {"mode":"explicit"} -->
+
 The **dative case** (дательный падеж) answers the questions **Кому?** (To whom?) and **Чему?** (To what?). It marks the **indirect object** — the person who receives something or benefits from an action. The dative is also essential for expressing age, feelings, and many impersonal constructions that are unique to Russian.
 
 ---
@@ -69,7 +71,13 @@ The most basic use of the dative is to mark the **indirect object** — the pers
 
 <!-- quiz:{"type":"multiple-choice","question":"«Я дал книгу ___» (I gave the book to my brother). Choose the dative of «брат».","options":["брат","брата","брату","братом"],"answer":2} -->
 
-<!-- grammar-card: {"rule":"The dative marks the indirect object — the recipient","hint":"друг (friend)","example":"Я дал книгу ___.","answer":"другу","explanation":"The book goes to the friend, so masculine друг takes the dative ending -у."} -->
+<!-- vocab-card: {"id":"vocab-drug","word":"друг","meaning":"friend","priority":"optional","sourceSection":"2. Indirect Objects"} -->
+
+<!-- grammar-card: {"id":"friend-as-recipient","kind":"rule","format":"cloze","priority":"optional","sourceSection":"2. Indirect Objects","rule":"The dative marks the recipient of a gift","example":"I gave the book to a friend. Use друг (friend): Я дал книгу ___.","answer":"другу","explanation":"Другу tells you who received the book, not who gave it.","legacyAliases":[{"rule":"The dative marks the indirect object — the recipient","example":"Я дал книгу ___."}]} -->
+
+<!-- grammar-card: {"id":"identify-recipient","kind":"rule","format":"qa","priority":"essential","sourceSection":"2. Indirect Objects","rule":"The recipient stays in the dative even when mentioned first","example":"Оле Анна дала книгу. Дала means gave; книгу means a book. Who received the book?","hint":"Look at the endings of the names, not just their order.","answer":"Olya.","explanation":"Оле is the dative of Оля: to Olya. Анна is nominative, so Anna is the one who gave it."} -->
+
+<!-- grammar-card: {"id":"rule-dative-recipient","kind":"concept","format":"qa","priority":"essential","sourceSection":"2. Indirect Objects","rule":"The dative marks the recipient — the person something is given, told, or shown to","example":"After verbs like дать (to give) or показать (to show), which case marks the person who receives?","answer":"Dative.","explanation":"Any answer naming the dative counts. Я дал книгу другу: другу (dative) is the recipient; книгу (accusative) is the thing given."} -->
 
 ---
 
@@ -97,7 +105,9 @@ The dative forms of personal pronouns are used constantly in Russian:
 
 **Преподаватель объяснил нам тему.** *(Prepodavatel' ob"yasnil nam temu.)* — The professor explained the topic to us.
 
-<!-- grammar-card: {"rule":"Personal pronouns have their own dative forms to memorise","hint":"они → ?","example":"Дайте ___ время.","answer":"им","explanation":"Они becomes им in the dative, because they are the ones being given time."} -->
+<!-- vocab-card: {"id":"vocab-vremya","word":"время","meaning":"time","priority":"optional","sourceSection":"3. Dative Personal Pronouns"} -->
+
+<!-- grammar-card: {"id":"give-them-time","kind":"rule","format":"cloze","priority":"essential","sourceSection":"3. Dative Personal Pronouns","rule":"The dative of они names them as recipients","example":"Ask someone to give them time. Use the pronoun они (they): Дайте ___ время.","answer":"им","explanation":"They are receiving the time, so use им (to them), not the subject form они.","legacyAliases":[{"rule":"Personal pronouns have their own dative forms to memorise","example":"Дайте ___ время."}]} -->
 
 ---
 
@@ -132,6 +142,8 @@ Russian expresses age using the **dative case** — a structure quite different 
 
 <!-- quiz:{"type":"multiple-choice","question":"How do you say 'She is 30 years old' in Russian?","options":["Она тридцать лет.","Ей тридцать лет.","Её тридцать лет.","У неё тридцать лет."],"answer":1} -->
 
+<!-- grammar-card: {"id":"rule-dative-age","kind":"concept","format":"qa","priority":"optional","sourceSection":"4. Age Expressions","rule":"Age is expressed with the person in the dative","example":"When you say how old someone is, which case does that person take?","answer":"Dative.","explanation":"Any answer naming the dative counts. Мне двадцать пять лет (literally to me 25 years), not Я двадцать пять лет."} -->
+
 ---
 
 ## 5. Мне нравится (I Like)
@@ -142,6 +154,12 @@ The construction **мне нравится** (I like) is one of the most importa
 
 - **нравится** — with singular subjects
 - **нравятся** — with plural subjects
+
+<!-- grammar-card: {"id":"liking-plural","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Structure: Dative + нравится/нравятся + Nominative","rule":"Нравиться agrees with the thing or things liked","example":"Say you like these songs. Use нравиться (to be pleasing): Мне ___ эти песни.","answer":"нравятся","explanation":"Песни is plural, so use нравятся. With just one song you'd say Мне нравится эта песня."} -->
+
+<!-- grammar-card: {"id":"rule-nravitsya-liker-dative","kind":"concept","format":"qa","priority":"essential","sourceSection":"Structure: Dative + нравится/нравятся + Nominative","rule":"With нравиться the person who likes is in the dative and the thing liked is the nominative subject","example":"With нравиться (to be pleasing), which case does the person who likes something take?","answer":"Dative.","explanation":"Any answer naming the dative counts. Мне нравится эта песня: мне is the dative of я; the song is the nominative subject."} -->
+
+<!-- grammar-card: {"id":"rule-nravitsya-agreement","kind":"concept","format":"qa","priority":"optional","sourceSection":"Structure: Dative + нравится/нравятся + Nominative","rule":"Нравиться agrees with the thing liked, not with the person","example":"With нравиться, what does the verb agree with?","answer":"The thing that is liked.","explanation":"The answer counts if it says the verb agrees with what is liked, not with the person. Ей нравятся цветы: цветы is plural, so the verb is plural. One thing liked: Ей нравится эта книга."} -->
 
 **Мне нравится эта песня.** *(Mne nravitsya eta pesnya.)* — I like this song.
 
@@ -358,7 +376,7 @@ Here are everyday phrases that use the dative case:
 | Toward | к + dative | к **врачу** |
 | Along | по + dative | по **улице** |
 
-<!-- grammar-card: {"rule":"Permission and prohibition put the person in the dative","hint":"я → ?","example":"___ можно?","answer":"мне","explanation":"Можно has no subject, so the person being permitted appears in the dative: я becomes мне."} -->
+<!-- grammar-card: {"id":"asking-permission","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Мне можно / Мне нельзя (I May / I Must Not)","rule":"The person asking permission with можно can be named in the dative","example":"Ask whether you personally may come in. Use я (I): ___ можно войти?","answer":"Мне","explanation":"Мне identifies the person who wants permission. Можно войти? alone asks more generally whether coming in is allowed.","legacyAliases":[{"rule":"Permission and prohibition put the person in the dative","example":"___ можно?"}]} -->
 
 ---
 

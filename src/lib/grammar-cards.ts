@@ -424,22 +424,18 @@ function distributeMirrored(
   );
 }
 
-/**
- * Replace the blank placeholder in the prompt with the answer for the reveal side.
- * Callers pass the parsed token, never the raw answer field.
- */
+/** Keep the inserted spans separate so a reveal can highlight just the answers. */
+export function filledBlankParts(sentence: string, answer: string): { text: string; target: boolean }[] {
+  const frame = sentence.split(BLANK_REGEX);
+  if (!answer || frame.length === 1) return [{ text: sentence, target: false }];
+  const targets = frame.length > 2 ? distributeAnswer(sentence, answer) : null;
+  return frame.flatMap((text, i) => i === 0 ? [{ text, target: false }] : [
+    { text: targets?.[i - 1] ?? answer, target: true }, { text, target: false },
+  ]);
+}
+
 export function fillBlank(sentence: string, answer: string): string {
-  if (!sentence || !answer) return sentence;
-  const global = new RegExp(BLANK_REGEX.source, 'g');
-  const blanks = countBlanks(sentence);
-  if (blanks === 0) return sentence;
-  if (blanks === 1) return sentence.replace(global, answer);
-
-  const parts = distributeAnswer(sentence, answer);
-  if (!parts) return sentence.replace(global, answer);
-
-  let index = 0;
-  return sentence.replace(global, () => parts[index++] ?? answer);
+  return filledBlankParts(sentence, answer).map((part) => part.text).join('');
 }
 
 /** Join an explanation and a gloss without repeating one inside the other. */

@@ -2,6 +2,7 @@ import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 import tailwindcss from '@tailwindcss/vite'
 import { VitePWA } from 'vite-plugin-pwa'
+import { REVIEWED_GRAMMAR_LESSONS } from './src/lib/grammar-reviewed'
 
 export default defineConfig({
   base: '/LangLearn/',
@@ -30,7 +31,11 @@ export default defineConfig({
         ],
       },
       injectManifest: {
-        globPatterns: ['**/*.{js,css,html,ico,png,svg,woff2}'],
+        globPatterns: [
+          '**/*.{js,css,html,ico,png,svg,woff2}',
+          ...Object.entries(REVIEWED_GRAMMAR_LESSONS).flatMap(([lang, ids]) =>
+            ids.map((id) => `content/grammar/${lang}/${id}.md`)),
+        ],
         // The app bundles static learning data for every language, so the main
         // chunk exceeds workbox's 2 MiB default. Raise the precache limit.
         maximumFileSizeToCacheInBytes: 4 * 1024 * 1024,
