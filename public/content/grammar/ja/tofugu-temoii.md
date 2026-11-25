@@ -44,7 +44,8 @@ As you can see, the answer is accompanied with the よ ending. This よ is calle
 Now, let's move on and check the patterns of use!
 
 <!-- grammar-card: {"id":"permission-question","kind":"rule","format":"cloze","priority":"essential","sourceSection":"The Basics","rule":"てもいい asks for or grants permission","example":"テレビ見___？","answer":"てもいい","explanation":"With rising intonation, this asks whether watching TV is allowed."} -->
-<!-- grammar-card: {"id":"permission-reply","kind":"concept","format":"qa","priority":"optional","sourceSection":"The Basics","rule":"よ commonly marks a permission reply as information for the listener","example":"How can you answer テレビ見てもいい？ affirmatively without repeating the whole question?","answer":"見てもいいよ or simply いいよ.","explanation":"The shared context supplies the activity; よ commonly accompanies the go-ahead but is not mandatory."} -->
+<!-- grammar-card: {"id":"permission-reply","kind":"rule","format":"qa","priority":"optional","sourceSection":"The Basics","rule":"よ commonly marks a permission reply as information for the listener","example":"How can you answer テレビ見てもいい？ affirmatively without repeating the whole question?","answer":"見てもいいよ or simply いいよ.","explanation":"The shared context supplies the activity; よ commonly accompanies the go-ahead but is not mandatory."} -->
+<!-- grammar-card: {"id":"rule-formation-by-word","kind":"concept","format":"qa","priority":"essential","sourceSection":"Patterns of Use","rule":"Verbs use て form + もいい; い-adjectives use くて + もいい; な-adjectives and nouns take で + もいい","example":"How does the \"it's okay if…\" pattern attach to verbs, い-adjectives, な-adjectives, and nouns?","answer":"Verb て form + もいい; い-adjective stem + くて + もいい; な-adjective or noun + でもいい.","explanation":"Voiced verbs give でもいい (飲んでもいい)."} -->
 
 ### Patterns of Use
 
@@ -208,7 +209,7 @@ Your companion then requests coffee to accompany the cake. However, when you go 
 Again, in this case, 〜なくてもいい shows that it's still fine if it's not coffee.
 
 <!-- grammar-card: {"id":"no-obligation","kind":"rule","format":"cloze","priority":"essential","sourceSection":"〜なくてもいい for \"No Need To Do/Be…\"","rule":"なくてもいい permits not doing something","example":"洗わ___よ。 (You don't need to wash them.)","answer":"なくてもいい","explanation":"The negative ない takes くてもいい, giving permission not to wash rather than forbidding washing."} -->
-<!-- grammar-card: {"id":"no-obligation-not-prohibition","kind":"concept","format":"qa","priority":"essential","sourceSection":"〜なくてもいい for \"No Need To Do/Be…\"","rule":"No need is different from must not","example":"Does 洗わなくてもいい prohibit washing?","answer":"No. Washing is not necessary; the listener may still choose to wash.","explanation":"The construction approves the negative option instead of ordering against the positive action."} -->
+<!-- grammar-card: {"id":"no-obligation-not-prohibition","kind":"concept","format":"qa","priority":"essential","sourceSection":"〜なくてもいい for \"No Need To Do/Be…\"","rule":"No need is different from must not","example":"How does 洗わなくてもいい differ from telling someone they must not wash?","answer":"It says washing isn't necessary; the listener may still choose to wash. It doesn't forbid washing.","explanation":"The construction approves the negative option instead of ordering against the positive action.","legacyAliases":[{"rule":"No need is different from must not","example":"Does 洗わなくてもいい prohibit washing?"}]} -->
 <!-- grammar-card: {"id":"negative-noun-option","kind":"rule","format":"cloze","priority":"optional","sourceSection":"〜なくてもいい for \"No Need To Do/Be…\"","rule":"A noun can use じゃなくてもいい to allow a different option","example":"コーヒーじゃ___よ。 (It doesn't need to be coffee.)","answer":"なくてもいい","explanation":"The negative copula is treated like an い-adjective before てもいい. 甘くなくてもいい and 上手じゃなくてもいい follow the corresponding adjective negatives."} -->
 
 ## Beyond the Basics
@@ -255,7 +256,7 @@ Without も, it's slightly more casual.
 
 #### The Nuance of も When Giving Permission
 
-<!-- grammar-card: {"id":"casual-mo-omission","kind":"rule","format":"cloze","priority":"optional","sourceSection":"The Nuance of も When Giving Permission","rule":"も can be dropped in casual speech","example":"ママのケーキ、食べ___よ。","answer":"ていい","explanation":"This is a casual go-ahead for the child to eat the cake, rather than a concession about the speaker's own action."} -->
+<!-- grammar-card: {"id":"casual-mo-omission","kind":"rule","format":"cloze","priority":"optional","sourceSection":"The Nuance of も When Giving Permission","rule":"も can be dropped in casual speech","example":"ママのケーキ、食べ___よ。 (You can eat my cake; casual, with も dropped.)","answer":"ていい","explanation":"This is a casual go-ahead for the child to eat the cake, rather than a concession about the speaker's own action.","legacyAliases":[{"rule":"も can be dropped in casual speech","example":"ママのケーキ、食べ___よ。"}]} -->
 
 Now, what kind of nuance does も add if you're the one who is giving the go-ahead? You might have noticed already, but in this case, you might want to use a bit more caution in this situation – も can come across as a bit snobby. It's because も can also imply that you have the authority to give permission.
 
@@ -290,6 +291,7 @@ Let's take a look at another example. Imagine you are asked out on a date, and y
 Again, in this case, 〜てもいい displays your authority over the decision and expresses that it's not something you really want to do, but that you could do it for the person you're addressing. As a result, it can sound like you're speaking with an air of importance. And if you said this while blushing, for example, it might make you look like a *tsundere* — someone so shy they can't help acting icily toward people they actually feel affection for.
 
 <!-- grammar-card: {"id":"own-action-concession","kind":"concept","format":"qa","priority":"essential","sourceSection":"The Nuance of も When Giving Permission","rule":"A concession about one's own action can sound patronizing and does not permit the same も omission","example":"Why is デートしてもいいよ risky as a warm acceptance of a date?","answer":"It can sound like I am willing to do you the favor despite reservations, placing the speaker above the other person.","explanation":"In that concession reading も cannot simply be dropped as in a casual permission for someone else to act; context and the understood doer matter."} -->
+<!-- grammar-card: {"id":"rule-mo-reluctance","kind":"concept","format":"qa","priority":"optional","sourceSection":"The Nuance of も When Giving Permission","rule":"When giving permission, も adds an \"even if\" concession that can sound reluctant","example":"What nuance can the \"mo\" in \"te mo ii\" add when you agree to do something yourself?","answer":"An \"even if\" concession: it's acceptable despite reservations, so it can sound reluctant or condescending.","explanation":"Dropping も (ていい) or using a positive phrase sounds warmer in such cases."} -->
 
   
 

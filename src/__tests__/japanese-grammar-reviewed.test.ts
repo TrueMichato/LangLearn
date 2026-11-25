@@ -178,9 +178,11 @@ describe('Japanese review gate rejects planted violations', () => {
     })), 'particles/rule-new-subject: [rule-card] ends in an "X or Y?" choice');
     expectPlanted('particles', addCardAfter(particles, 'topic-marker', ruleCard('rule-summary', { sourceSection: 'Summary' })),
       'particles/rule-summary: [rule-card] sourceSection "Summary" is a summary/reference heading');
+    const existingRuleCards = particles.match(/"id"\s*:\s*"rule-/g)?.length ?? 0;
+    const extraRuleCards = Array.from({ length: Math.max(1, 5 - existingRuleCards) }, (_, i) => `rule-extra-${i}`);
     expectPlanted('particles', addCardAfter(particles, 'topic-marker',
-      ...['a', 'b', 'c', 'd', 'e'].map((suffix) => ruleCard(`rule-extra-${suffix}`, { priority: 'essential' }))),
-    'particles: [rule-card] 5 rule-* cards; at most 4 per lesson');
+      ...extraRuleCards.map((id) => ruleCard(id, { priority: 'optional' }))),
+    `particles: [rule-card] ${existingRuleCards + extraRuleCards.length} rule-* cards; at most 4 per lesson`);
 
     const purpose = lesson('purpose');
     const [stem] = japaneseAnswerAlternatives(cardJson(purpose, 'motion-purpose-stem').answer as string);

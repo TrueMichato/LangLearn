@@ -47,6 +47,7 @@ However, から is not always used together with まで. For example, you may sa
 In this case, perhaps you are at home and are implying you walk from there to school. It's also possible you could be talking about walking from a different place to school, but in that case, the context of the conversation to this point would need to fill the information gap. Even in situations when から is not used, まで implies there is a start point somewhere that accompanies it.
 
 <!-- grammar-card: {"id":"made-spatial-endpoint","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Terminal Point まで","rule":"まで marks the endpoint of movement, even without an explicit starting point","example":"学校___歩く。 (I'll walk as far as school.)","answer":"まで","explanation":"The walk ends at school. A から phrase can be omitted when its starting point is understood or irrelevant."} -->
+<!-- grammar-card: {"id":"rule-endpoint-core","kind":"concept","format":"qa","priority":"essential","sourceSection":"Terminal Point まで","rule":"まで marks an end point in space, time, order or quantity","example":"What does this lesson's particle mark, whether it follows a place, a time, an item in a series, or a number?","answer":"The end point (terminal point or limit).","explanation":"Any answer meaning end point/limit/up to counts. 学校まで (place), 日曜日まで (time), Zまで (order), ４人まで (limit)."} -->
 <!-- vocab-card: {"id":"vocab-kyori","word":"距離","reading":"きょり","meaning":"distance","priority":"optional","sourceSection":"Terminal Point まで"} -->
 ### Pattern of Use
 
@@ -141,7 +142,7 @@ Again, まで can be used alone when the context is clear, or if the part marked
 
   - I slept **until** midday. .
 
-<!-- grammar-card: {"id":"made-continuous-span","kind":"rule","format":"cloze","priority":"essential","sourceSection":"まで for End Point in Time","rule":"まで marks the end point of a continuous span","hint":"まで / までに","example":"イベントは今週の日曜日___です。","answer":"まで","explanation":"The event runs right up to Sunday, which is what まで expresses."} -->
+<!-- grammar-card: {"id":"made-continuous-span","kind":"rule","format":"cloze","priority":"essential","sourceSection":"まで for End Point in Time","rule":"まで marks the end point of a continuous span","hint":"まで / までに","example":"イベントは今週の日曜日___です。 (The event runs until this Sunday.)","answer":"まで","explanation":"The event runs right up to Sunday, which is what まで expresses.","legacyAliases":[{"rule":"まで marks the end point of a continuous span","example":"イベントは今週の日曜日___です。"}]} -->
 
 ### まで for End Point in Order
 
@@ -155,7 +156,7 @@ When some things are aligned in a standard order, and each item has a number or 
 
   - The alphabet is **from** A and **to** Z.
 
-<!-- grammar-card: {"id":"made-ordered-range","kind":"concept","format":"qa","priority":"optional","sourceSection":"まで for End Point in Order","rule":"から and まで can delimit a conventionally ordered series","example":"In アルファベットはAからZまでです, what does Z mark?","answer":"The final item in the ordered range.","explanation":"The endpoint need not be a location or time: verses, letters, and numbered items can also form a range."} -->
+<!-- grammar-card: {"id":"made-ordered-range","kind":"rule","format":"qa","priority":"optional","sourceSection":"まで for End Point in Order","rule":"から and まで can delimit a conventionally ordered series","example":"In アルファベットはAからZまでです, what does Z mark?","answer":"The final item in the ordered range.","explanation":"The endpoint need not be a location or time: verses, letters, and numbered items can also form a range."} -->
 ### まで for a Limit
 
 まで can also mark a limit of something. For example, if the maximum number of people your car can accommodate is four, you can use まで and say:
@@ -216,7 +217,8 @@ To clarify the end point, まで can be used with the verbs that indicate ending
 
 In this case, まで marks the action 始まる (begin) has been completed. In other words, 始まるまで means "*until* the drama has begun."
 
-<!-- grammar-card: {"id":"made-verb-boundary","kind":"rule","format":"cloze","priority":"essential","sourceSection":"まで for \"Until 〜\"","rule":"Plain-form verb plus まで marks the event that ends the preceding activity","example":"ドラマが始まる___勉強する。","answer":"まで","explanation":"Studying continues until the drama starts. The boundary can be a beginning such as 始まる or a completion such as 終わる; まで itself does not mean every verb is an ending verb."} -->
+<!-- grammar-card: {"id":"made-verb-boundary","kind":"rule","format":"cloze","priority":"essential","sourceSection":"まで for \"Until 〜\"","rule":"Plain-form verb plus まで marks the event that ends the preceding activity","example":"ドラマが始まる___勉強する。 (I'll study until the drama starts.)","answer":"まで","explanation":"Studying continues until the drama starts. The boundary can be a beginning such as 始まる or a completion such as 終わる; まで itself does not mean every verb is an ending verb. 始まる前に would mean 'before it starts', a different frame.","legacyAliases":[{"rule":"Plain-form verb plus まで marks the event that ends the preceding activity","example":"ドラマが始まる___勉強する。"}]} -->
+<!-- grammar-card: {"id":"rule-until-plain-verb","kind":"concept","format":"qa","priority":"optional","sourceSection":"まで for \"Until 〜\"","rule":"The 'until' pattern attaches まで to the plain form of a verb","example":"To say 'until (some event happens)', which form of the verb comes before the endpoint particle?","answer":"The plain (dictionary) form.","explanation":"Plain/dictionary form counts. 私が行くまで, 宿題が終わるまで, not the ます form."} -->
 <!-- vocab-card: {"id":"vocab-owaru","word":"終わる","reading":"おわる","meaning":"to finish; to end","priority":"optional","sourceSection":"まで for \"Until 〜\""} -->
 <!-- vocab-card: {"id":"vocab-hajimaru","word":"始まる","reading":"はじまる","meaning":"to begin; to start","priority":"optional","sourceSection":"まで for \"Until 〜\""} -->
 ### Emphatic まで
@@ -283,7 +285,7 @@ It's because the particle も emphasizes the amount when it marks a quantified a
  So far, I've eaten up to ten packs of natto.
 
 <!-- grammar-card: {"id":"made-versus-mo","kind":"concept","format":"qa","priority":"optional","sourceSection":"Difference Between Emphatic まで and the Particle も","rule":"まで marks extent, whereas も adds an item or emphasizes a quantity","example":"Does replacing まで with も preserve the meaning of そこまでビックリする?","answer":"No. まで asks about surprise to that extent; も would ask about surprise at that point too.","explanation":"Both can sometimes translate as even, but only まで sets the furthest extent. With a quantity, も can instead emphasize how large the amount is."} -->
-<!-- grammar-card: {"id":"mo-surprising-quantity","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Difference Between Emphatic まで and the Particle も","rule":"も after a quantity expresses surprise at how much","hint":"quantity + も","example":"納豆１０パック___食べた。","answer":"も","explanation":"１０パックも stresses that ten packs is a surprising amount; まで would frame ten packs as a reached endpoint or an additional extreme item."} -->
+<!-- grammar-card: {"id":"mo-surprising-quantity","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Difference Between Emphatic まで and the Particle も","rule":"も after a quantity expresses surprise at how much","hint":"Stress the amount","example":"納豆１０パック___食べた。 (I ate a whopping ten packs of natto!)","answer":"も","explanation":"１０パックも stresses that ten packs is a surprising amount; まで would frame ten packs as a reached endpoint or an additional extreme item.","legacyAliases":[{"rule":"も after a quantity expresses surprise at how much","example":"納豆１０パック___食べた。"}]} -->
 
 ### まで and Other Particles
 
@@ -299,7 +301,8 @@ When まで is used with the particle に, it can specify the time by which some
 
 In this example, まで indicates the end point of your action, and に makes it clear it's completed by a particular time point.
 
-<!-- grammar-card: {"id":"made-deadline","kind":"rule","format":"cloze","priority":"essential","sourceSection":"まで + に","rule":"までに marks a deadline something must happen by","hint":"Return by ten, not remain until ten","example":"１０時___帰る。","answer":"までに","explanation":"The intended reading is a return completed no later than ten. までに marks that deadline, rather than a continuous activity lasting until ten."} -->
+<!-- grammar-card: {"id":"made-deadline","kind":"rule","format":"cloze","priority":"essential","sourceSection":"まで + に","rule":"までに marks a deadline something must happen by","hint":"Return by ten, not remain until ten","example":"１０時___帰る。 (I'll be home by ten o'clock.)","answer":"までに","explanation":"The intended reading is a return completed no later than ten. までに marks that deadline, rather than a continuous activity lasting until ten.","legacyAliases":[{"rule":"までに marks a deadline something must happen by","example":"１０時___帰る。"}]} -->
+<!-- grammar-card: {"id":"rule-deadline-ni","kind":"concept","format":"qa","priority":"essential","sourceSection":"まで + に","rule":"まで marks how long something continues; までに marks a deadline by which it happens","example":"What does adding に after the endpoint particle change about a time expression?","answer":"It turns 'until then' into a deadline: the action happens by (no later than) that time.","explanation":"The answer counts if it contrasts continuing until with completing by. ７時までに起きる = wake by 7; 昼間まで寝ていた = slept until midday."} -->
 
 #### まで + の
 

@@ -44,8 +44,9 @@ Now, let's imagine you are very curious about the "Keep Out" area, so you decide
 
 In this sentence, から marks ここ (this place) again, but this time it indicates a place from which the bear came out. Just like that, から can also express where something comes or even appears from. This is because its fundamental meaning is the "source" of something.
 
-<!-- grammar-card: {"id":"kara-starting-span","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Source から","rule":"から marks the starting point of a span","hint":"from","example":"授業(じゅぎょう)は九時(くじ)___始(はじ)まります。","answer":"から","explanation":"九時から says the class begins at nine and carries on from there."} -->
+<!-- grammar-card: {"id":"kara-starting-span","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Source から","rule":"から marks the starting point of a span","hint":"from","example":"授業(じゅぎょう)は九時(くじ)___始(はじ)まります。 (Class goes on from nine o'clock onward.)","answer":"から","explanation":"九時から says the class begins at nine and carries on from there. 九時に would only locate the start time, without the 'from … onward' span.","legacyAliases":[{"rule":"から marks the starting point of a span","example":"授業(じゅぎょう)は九時(くじ)___始(はじ)まります。"}]} -->
 <!-- grammar-card: {"id":"kara-source-core","kind":"concept","format":"qa","priority":"essential","sourceSection":"Source から","rule":"から marks a source, and does not require an explicit まで endpoint","example":"Does ここから先 need a matching まで phrase to mark where a restricted area begins?","answer":"No. から can mark the source or starting point on its own.","explanation":"Spatial origins, time spans, materials, and reasons share the source idea. The water-source image helps connect these uses without making まで obligatory."} -->
+<!-- grammar-card: {"id":"rule-source-core","kind":"concept","format":"qa","priority":"essential","sourceSection":"The Basics","rule":"The particle's uses all share the meaning 'source'","example":"What single core meaning links this particle's uses for starting points, origins, raw materials, givers and reasons?","answer":"Source: where something comes from or begins.","explanation":"Any answer meaning source/origin/starting point counts. ここから (place), 九時から (time), ブドウから (material), 友達から (giver), 予定があるから (reason)."} -->
 <!-- vocab-card: {"id":"vocab-tachiiri-kinshi","word":"立入禁止","reading":"たちいりきんし","meaning":"no entry; entry prohibited","priority":"optional","sourceSection":"Source から"} -->
 <!-- vocab-card: {"id":"vocab-saki","word":"先","reading":"さき","meaning":"ahead; beyond (a point)","priority":"optional","sourceSection":"Source から"} -->
 
@@ -73,7 +74,7 @@ In this section, we'll list the basic structure used with the particle から. A
 
   - It's hot so I can't sleep.
 
-<!-- grammar-card: {"id":"kara-reason-request","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Action/State + から","rule":"から can give the reason behind a request","hint":"because","example":"寒(さむ)い___、窓(まど)を閉(し)めてください。","answer":"から","explanation":"寒いから presents the cold as the reason for closing the window."} -->
+<!-- grammar-card: {"id":"kara-reason-request","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Action/State + から","rule":"から can give the reason behind a request","hint":"because","example":"寒(さむ)い___、窓(まど)を閉(し)めてください。","answer":"から","explanation":"寒いから presents the cold as the reason for closing the window. ので would also give a reason; this card practises から."} -->
 
 ### て form + から
 
@@ -122,7 +123,7 @@ Similarly, から can also mark where something comes out of. So if you witness 
 
   - The teacher came out of McDonald's.
 
-<!-- grammar-card: {"id":"kara-spatial-origin","kind":"rule","format":"cloze","priority":"optional","sourceSection":"から for a Beginning Point in Space","rule":"から marks the place from which someone emerges","example":"先生がマクドナルド___出てきた。","answer":"から","explanation":"McDonald's is the source of the teacher's movement, not the destination."} -->
+<!-- grammar-card: {"id":"kara-spatial-origin","kind":"rule","format":"cloze","priority":"optional","sourceSection":"から for a Beginning Point in Space","rule":"から marks the place from which someone emerges","example":"先生がマクドナルド___出てきた。","answer":"から","explanation":"McDonald's is the source of the teacher's movement, not the destination. マクドナルドを出てきた (leaving a place, with を) is also possible; this card practises the source から."} -->
 
 ### から for a Beginning Point in Time
 
@@ -170,6 +171,7 @@ Let's take a look at one more example. Imagine you are going to graduate from a 
 In this example, から marks 学生 as your original state before the change happens, while に marks the end point of your status change.
 
 <!-- grammar-card: {"id":"kara-transition","kind":"rule","format":"cloze","priority":"optional","sourceSection":"から for the Original State in a Transition","rule":"から marks the original state before a transition","example":"学生___社会人になる。","answer":"から","explanation":"学生 is the starting status; に marks 社会人 as the resulting status."} -->
+<!-- grammar-card: {"id":"rule-transition-result","kind":"concept","format":"qa","priority":"optional","sourceSection":"から for the Original State in a Transition","rule":"In a change 'from A to B', the original state takes the source particle and the resulting state takes に (sometimes へ)","example":"In a change of state 'from A to B', which particle normally marks the resulting state B?","answer":"に (sometimes へ).","explanation":"Naming に counts; へ is also accepted. くもりから雨に変わる; 学生から社会人になる."} -->
 <!-- vocab-card: {"id":"vocab-shakaijin","word":"社会人","reading":"しゃかいじん","meaning":"working adult; adult member of society","priority":"optional","sourceSection":"から for the Original State in a Transition"} -->
 ### から for Raw Materials
 
@@ -236,7 +238,7 @@ You can also mark yourself as a source of an action towards someone else. Imagin
 Here, から marks 私 ("I") as the source of the action, indicating you are the one who gave the love confession to your partner.
 
 <!-- grammar-card: {"id":"kara-receiver-source","kind":"concept","format":"qa","priority":"optional","sourceSection":"から for Sources","rule":"から can mark the giver or source of help, while に marks the person giving it","example":"Can 友達から助けてもらった replace から with either に or で?","answer":"に is possible; で is not a substitute for the person giving help here.","explanation":"から views the help as coming from the friend. In トーフグから/で学んだ, by contrast, a source of information can also be viewed as a means of learning."} -->
-<!-- grammar-card: {"id":"kara-initiator","kind":"concept","format":"qa","priority":"optional","sourceSection":"から for Sources","rule":"から can identify who initiated an action","example":"What does 私から emphasize in 私から告白した?","answer":"That I was the one who initiated the confession.","explanation":"から marks the source of the action rather than merely labeling its grammatical subject."} -->
+<!-- grammar-card: {"id":"kara-initiator","kind":"rule","format":"qa","priority":"optional","sourceSection":"から for Sources","rule":"から can identify who initiated an action","example":"What does 私から emphasize in 私から告白した?","answer":"That I was the one who initiated the confession.","explanation":"から marks the source of the action rather than merely labeling its grammatical subject."} -->
 ### から in Passive Sentence
 
 In a passive sentence, someone or something is receiving an action from a person or thing that causes an event to occur. Those who cause the event to occur can be considered the "sources" of the event, so you can use から to mark them, as in:
@@ -328,7 +330,7 @@ In this case, the first part, 大学を卒業して (I graduated from university
 
 Here, the meaning of the two sentences is the same and whether to add から or not comes down to one's style preference. から just makes it more obvious that it's about a period from the past until the time under consideration.
 
-<!-- grammar-card: {"id":"kara-elapsed-since","kind":"concept","format":"qa","priority":"optional","sourceSection":"から for Since","rule":"てから plus an elapsed duration means since the first event","example":"What does 大学を卒業してから1年が過ぎた measure?","answer":"One year elapsed since graduating from university.","explanation":"The graduation is the starting event, not the cause of the year passing. Here から clarifies a temporal reading that て alone can already convey."} -->
+<!-- grammar-card: {"id":"kara-elapsed-since","kind":"rule","format":"qa","priority":"optional","sourceSection":"から for Since","rule":"てから plus an elapsed duration means since the first event","example":"What does 大学を卒業してから1年が過ぎた measure?","answer":"One year elapsed since graduating from university.","explanation":"The graduation is the starting event, not the cause of the year passing. Here から clarifies a temporal reading that て alone can already convey."} -->
 
 ---
 
