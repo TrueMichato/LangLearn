@@ -1,14 +1,17 @@
 import 'fake-indexeddb/auto';
 import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest';
-import { db, type Review, type Word } from '../db/schema';
+import { db, type Review } from '../db/schema';
 import { loadKnowledgeSnapshot, observeKnowledgeSnapshot } from '../db/knowledge';
 import { markLessonComplete, markLessonsComplete } from '../db/lessons';
 import { saveWordsToVocabulary } from '../db/words';
 import { processReview, scheduledGapDays } from '../db/reviews';
+import { saveLessonReviewItems } from '../db/lesson-cards';
+import { parseLessonReviewItems } from '../lib/lesson-capture';
 import { buildWordStatusMap } from '../lib/word-status';
 import { analyzeText, getKnownWordSet } from '../lib/text-analysis';
 import type { KnowledgeSnapshot } from '../lib/knowledge';
 import targets from '../data/lesson-targets.json';
+import spelling from '../../public/content/grammar/ru/spelling-rules.md?raw';
 
 let unsubscribe: (() => void) | undefined;
 beforeEach(async () => {
@@ -94,23 +97,19 @@ describe('knowledge database APIs', () => {
   });
 });
 
-async function grammarCard(overrides: Partial<Word> = {}) {
-  const lessonId = overrides.language === 'ja' ? 'particles' : 'nominative-accusative';
-  const wordId = await db.words.add({
-    language: 'ru', word: '-у', reading: '', meaning: '', contextSentence: 'Which ending marks a feminine direct object?',
-    sourceTextId: null, tags: ['grammar', `lesson:${lessonId}`], type: 'grammar', createdAt: '',
-    grammarKind: 'concept', grammarFormat: 'qa', lessonSource: { lessonId, itemId: 'x', provenance: 'authored' },
-    ...overrides,
-  }) as number;
-  const now = new Date().toISOString();
-  return await db.reviews.add({ wordId, ease: 2.5, interval: 0, repetitions: 0, nextReviewDate: now, lastReviewDate: now }) as number;
+async function grammarCard({ itemId = 'seven-letter-scope', language = 'ru', lessonId = 'spelling-rules' } = {}) {
+  const item = parseLessonReviewItems(spelling).items.find((item) => item.id === itemId)!;
+  await saveLessonReviewItems([item], language, lessonId);
+  const word = await db.words.where('language').equals(language)
+    .filter((w) => w.lessonSource?.lessonId === lessonId && w.lessonSource.itemId === itemId).first();
+  return (await db.reviews.where('wordId').equals(word!.id!).first())!.id!;
 }
 const gap = (review: Review) => Math.round((Date.parse(review.nextReviewDate) - Date.parse(review.lastReviewDate)) / 86_400_000);
 
 describe('rule-recall card spacing', () => {
   it('doubles only the SM-2 due date and keeps the stored interval on the plain SM-2 sequence', async () => {
     const ruleId = await grammarCard();
-    const practiceId = await grammarCard({ grammarKind: 'rule' });
+    const practiceId = await grammarCard({ itemId: 'seven-letter-plural' });
     for (const plain of [1, 6, 15, 38]) {
       const rule = await processReview(ruleId, 4);
       const practice = await processReview(practiceId, 4);
@@ -127,7 +126,7 @@ describe('rule-recall card spacing', () => {
 
   it('stretches FSRS passes without scaling stored state, and never stretches a failure', async () => {
     const ruleId = await grammarCard();
-    const practiceId = await grammarCard({ grammarKind: 'rule' });
+    const practiceId = await grammarCard({ itemId: 'seven-letter-plural' });
     const rule = await processReview(ruleId, 4, { scheduler: 'fsrs' });
     const practice = await processReview(practiceId, 4, { scheduler: 'fsrs' });
     expect(rule.interval).toBe(practice.interval);
@@ -135,17 +134,15 @@ describe('rule-recall card spacing', () => {
     expect(rule.difficulty).toBe(practice.difficulty);
     expect(gap(rule)).toBe(2 * practice.interval);
 
-    const failed = await processReview(await grammarCard(), 0, { scheduler: 'fsrs' });
+    const failed = await processReview(ruleId, 0, { scheduler: 'fsrs' });
     expect(failed.interval).toBeGreaterThan(0);
     expect(gap(failed)).toBe(failed.interval);
   });
 
   it('keeps normal spacing for concept cards from lessons not yet reviewed', async () => {
-    const japanese = await processReview(await grammarCard({ language: 'ja' }), 4);
+    const japanese = await processReview(await grammarCard({ language: 'ja', lessonId: 'fixture-unreviewed' }), 4);
     expect(gap(japanese)).toBe(japanese.interval);
-    const unreviewed = await processReview(await grammarCard({
-      tags: ['grammar', 'lesson:imperative'], lessonSource: { lessonId: 'imperative', itemId: 'x', provenance: 'authored' },
-    }), 4);
+    const unreviewed = await processReview(await grammarCard({ lessonId: 'fixture-unreviewed' }), 4);
     expect(gap(unreviewed)).toBe(unreviewed.interval);
   });
 });

@@ -23,7 +23,7 @@ const concept: GrammarReviewItem = {
 const word: Word = {
   language: 'ar', word: concept.answer, reading: '', meaning: concept.explanation,
   contextSentence: concept.prompt, grammarRule: concept.rule, type: 'grammar',
-  grammarKind: 'concept', grammarFormat: 'qa', tags: ['grammar', 'lesson:masdar'],
+  grammarKind: 'concept', grammarFormat: 'qa', tags: ['grammar', 'lesson:fixture-unreviewed'],
   createdAt: '2026-11-15T10:00:00.000Z', sourceTextId: null,
 };
 
@@ -112,10 +112,15 @@ describe('lesson review previews and normal grammar review', () => {
         mode="meaning-to-word" disabled={false} onChange={() => {}} />,
     );
     expect(plain(render('grammar', word))).toBe('Recall the concept');
-    const pilotConcept = { ...word, language: 'ru', tags: ['grammar', 'lesson:spelling-rules'] };
+    const pilotConcept = { ...word, language: 'ru', tags: ['grammar', 'lesson:spelling-rules'],
+      lessonSource: { lessonId: 'spelling-rules', itemId: 'seven-letter-scope', provenance: 'authored' as const } };
     expect(plain(render('grammar', pilotConcept))).toBe('Recall the rule');
     expect(plain(render('grammar', { ...pilotConcept, grammarKind: 'rule' }))).toBe('Answer the question');
-    expect(plain(render('grammar', { ...pilotConcept, tags: ['grammar', 'lesson:imperative'] }))).toBe('Recall the concept');
+    expect(plain(render('grammar', { ...pilotConcept, lessonSource: undefined }))).toBe('Recall the concept');
+    expect(plain(render('grammar', {
+      ...pilotConcept, tags: ['grammar', 'lesson:fixture-unreviewed'],
+      lessonSource: { ...pilotConcept.lessonSource, lessonId: 'fixture-unreviewed' },
+    }))).toBe('Recall the concept');
     expect(plain(render('grammar', { ...word, grammarFormat: undefined, contextSentence: 'Eu ___ aqui.' }))).toBe('Complete the blank');
     expect(plain(render('reverse', { ...word, type: 'word' }))).toContain('Meaning → Word · Change direction');
   });
