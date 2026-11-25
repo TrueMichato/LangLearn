@@ -13,7 +13,6 @@ The predicate tells us something about the topic. In **الْبَيْتُ كَب
 
 ## Forms and examples
 
-<!-- grammar-card: {"id":"predicate-inventory","kind":"concept","format":"qa","priority":"essential","sourceSection":"Forms and examples","rule":"A predicate can be non-clausal, a clause, or a semi-sentence.","example":"Which four predicate types does this lesson distinguish?","answer":"Single-word/non-clausal; nominal sentence; verbal sentence; semi-sentence such as a prepositional or adverbial phrase.","explanation":"Khabar mufrad contrasts with sentence and semi-sentence predicates; it does not mean every predicate must be an adjective."} -->
 
 | Predicate type | Arabic name | Link to topic | Example |
 |---|---|---|---|

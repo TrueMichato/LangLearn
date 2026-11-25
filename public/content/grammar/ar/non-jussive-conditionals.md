@@ -8,12 +8,15 @@ Not every Arabic conditional particle makes the verb jussive. Particles such as 
 
 Compare **إِنْ تَدْرُسْ تَنْجَحْ** (in tadrus tanjaḥ) — “if you study, you succeed,” where the verbs are jussive, with **كُلَّمَا دَرَسْتَ نَجَحْتَ** (kullamā darasta najaḥta) — “whenever you studied, you succeeded,” where the verbs are past. The meaning is conditional, but the grammar is not jussive.
 
+<!-- grammar-card: {"id":"rule-kullama-past","kind":"concept","format":"qa","priority":"essential","sourceSection":"Core idea","rule":"The “whenever” particle kullamā is followed by past verbs, not jussives.","example":"Which verb form normally fills both clauses after the “whenever” particle (kullamā)?","answer":"Past (perfect) verbs, not jussives.","explanation":"كُلَّمَا دَرَسْتَ نَجَحْتَ (kullamā darasta najaḥta): whenever you studied, you succeeded."} -->
+
 ## Forms and examples
 
 <!-- vocab-card: {"id":"vocab-temporal-lamma","word":"لَمَّا","reading":"lammā","meaning":"when; as soon as; temporal use with past verbs","priority":"optional","sourceSection":"Forms and examples"} -->
 <!-- vocab-card: {"id":"vocab-kullama","word":"كُلَّمَا","reading":"kullamā","meaning":"whenever; every time","priority":"optional","sourceSection":"Forms and examples"} -->
 <!-- vocab-card: {"id":"vocab-lawla","word":"لَوْلَا","reading":"lawlā","meaning":"if not for; in the prevention construction here","priority":"optional","sourceSection":"Forms and examples"} -->
-<!-- grammar-card: {"id":"connected-jussive-vowel","kind":"concept","format":"qa","priority":"optional","sourceSection":"Forms and examples","rule":"A connecting kasra can mask the underlying jussive sukūn.","example":"Does the connecting kasra in لَمَّا يَحْضُرِ الطَّبِيبُ make the verb non-jussive?","answer":"No. The verb is jussive; kasra eases the connection before the article.","explanation":"In pause the form is yaḥḍur; connected pronunciation avoids adjacent vowelless consonants."} -->
+<!-- grammar-card: {"id":"connected-jussive-vowel","kind":"rule","format":"qa","priority":"optional","sourceSection":"Forms and examples","rule":"A connecting kasra can mask the underlying jussive sukūn.","example":"Does the connecting kasra in لَمَّا يَحْضُرِ الطَّبِيبُ make the verb non-jussive?","answer":"No. The verb is jussive; kasra eases the connection before the article.","explanation":"In pause the form is yaḥḍur; connected pronunciation avoids adjacent vowelless consonants."} -->
+<!-- grammar-card: {"id":"rule-lawla-meaning","kind":"concept","format":"qa","priority":"optional","sourceSection":"Forms and examples","rule":"لَوْلَا means “if not for” and names the factor that prevented a result.","example":"What does the particle لَوْلَا mean?","answer":"“If not for” (were it not for).","explanation":"لَوْلَا الْمَطَرُ لَخَرَجْنَا (lawlā al-maṭaru lakharajnā): if not for the rain, we would have gone out."} -->
 
 | Particle | Meaning | Common verb form | Example | Note |
 |---|---|---|---|---|
@@ -26,13 +29,15 @@ Compare **إِنْ تَدْرُسْ تَنْجَحْ** (in tadrus tanjaḥ) — 
 
 ## Usage notes
 
-<!-- grammar-card: {"id":"lamma-two-uses","kind":"concept","format":"qa","priority":"essential","sourceSection":"Usage notes","rule":"Temporal لَمَّا differs from negative jussive لَمَّا.","example":"How does لَمَّا دَخَلْتُ differ grammatically and semantically from لَمَّا أَفْهَمْ?","answer":"The first is temporal when I entered with a past verb; the second is negative I have not yet understood with a jussive imperfect.","explanation":"The same particle spelling does not imply the same government."} -->
+<!-- grammar-card: {"id":"lamma-two-uses","kind":"rule","format":"qa","priority":"essential","sourceSection":"Usage notes","rule":"Temporal لَمَّا differs from negative jussive لَمَّا.","example":"How does لَمَّا دَخَلْتُ differ grammatically and semantically from لَمَّا أَفْهَمْ?","answer":"The first is temporal when I entered with a past verb; the second is negative I have not yet understood with a jussive imperfect.","explanation":"The same particle spelling does not imply the same government."} -->
 
 The same written particle can have different grammar. **لَمَّا** (lammā) with past verbs is temporal: **لَمَّا دَخَلْتُ رَأَيْتُهُ** (lammā dakhaltu raʾaytuhu) — “when I entered, I saw him.” **لَمَّا** (lammā) meaning “not yet” behaves like **لَمْ** (lam) and jussivizes the imperfect: **لَمَّا أَفْهَمْ** (lammā afham) — “I have not yet understood.”
 
 In connected **لَمَّا يَحْضُرِ الطَّبِيبُ**, the kasra eases pronunciation before the article; the underlying verb remains jussive, **يَحْضُرْ** in pause.
 
 <!-- grammar-card: {"id":"repeated-past","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Usage notes","rule":"Temporal لَمَّا and كُلَّمَا do not themselves make the following past verbs jussive.","example":"“Whenever I traveled, I learned something”: ___ سَافَرْتُ تَعَلَّمْتُ شَيْئًا.","answer":"كُلَّمَا","explanation":"The repeated condition uses past verbs, not the two jussives of an إِنْ construction.","legacyAliases":[{"rule":"Temporal لَمَّا and كُلَّمَا do not themselves make the following past verbs jussive.","example":"كُلَّمَا سَافَرْتُ تَعَلَّمْتُ شَيْئًا (kullamā sāfartu taʿallamtu shayʾan)"}]} -->
+<!-- grammar-card: {"id":"rule-lamma-not-yet","kind":"concept","format":"qa","priority":"essential","sourceSection":"Usage notes","rule":"لَمَّا before a jussive imperfect means “not yet”, behaving like لَمْ.","example":"What does لَمَّا mean when it is followed by a jussive imperfect verb?","answer":"“Not yet.”","explanation":"لَمَّا أَفْهَمْ (lammā afham): I have not yet understood. It jussivizes the verb like لَمْ."} -->
+<!-- grammar-card: {"id":"rule-temporal-lamma","kind":"concept","format":"qa","priority":"optional","sourceSection":"Usage notes","rule":"لَمَّا followed by a past verb is temporal: when, as soon as.","example":"What does لَمَّا mean when it is followed by a past verb?","answer":"“When” or “as soon as” (temporal).","explanation":"لَمَّا دَخَلْتُ رَأَيْتُهُ (lammā dakhaltu raʾaytuhu): when I entered, I saw him."} -->
 
 ## Practice patterns
 

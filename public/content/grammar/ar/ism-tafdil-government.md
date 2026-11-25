@@ -20,10 +20,14 @@ For a direct comparison, use **مِنْ** (min): **زَيْدٌ أَطْوَلُ
 | Specifying the quality | Accusative tamyīz | **هُوَ أَكْثَرُ عِلْمًا مِنِّي** (huwa aktharu ʿilman minnī) — He has more knowledge than I do. |
 | Definite adjective | Agreement with the noun | **الْمَدِينَةُ الْكُبْرَى جَمِيلَةٌ** (al-madīnatu al-kubrā jamīlatun) — The largest city is beautiful. |
 
+With **مِنْ** or before an indefinite noun, the elative stays masculine singular whatever it describes: **هِيَ أَطْوَلُ مِنْ أُخْتِهَا** (hiya aṭwalu min ukhtihā) — She is taller than her sister. With **الـ** it agrees fully, and its feminine pattern is **فُعْلَى** (fuʿlā), as in **الصُّغْرَى** (aṣ-ṣughrā) from **أَصْغَرُ** (aṣgharu). Before a definite noun in iḍāfa, agreement is optional.
+
 <!-- vocab-card: {"id":"vocab-ashal","word":"أَسْهَلُ","reading":"ashalu","meaning":"easier","priority":"optional","sourceSection":"Complement patterns"} -->
 <!-- vocab-card: {"id":"vocab-akthar","word":"أَكْثَرُ","reading":"aktharu","meaning":"more; most","priority":"optional","sourceSection":"Complement patterns"} -->
 <!-- vocab-card: {"id":"vocab-kubra","word":"الْكُبْرَى","reading":"al-kubrā","meaning":"the largest; the greatest (feminine)","priority":"optional","sourceSection":"Complement patterns"} -->
 <!-- grammar-card: {"id":"definite-feminine-elative","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Complement patterns","rule":"An elative with al- agrees with its noun, including feminine form.","example":"Complete “The largest city is beautiful”: الْمَدِينَةُ ___ جَمِيلَةٌ.","answer":"الْكُبْرَى","explanation":"الْكُبْرَى (al-kubrā) is definite feminine to match الْمَدِينَةُ. Do not apply this agreement pattern mechanically to every bare comparative or iḍāfa."} -->
+<!-- grammar-card: {"id":"rule-indefinite-elative-invariable","kind":"concept","format":"qa","priority":"essential","sourceSection":"Complement patterns","rule":"An elative used with min (or before an indefinite noun) stays masculine singular.","example":"When an elative is followed by min, does it change for a feminine or plural subject?","answer":"No. It stays in the masculine singular afʿalu form.","explanation":"هِيَ أَطْوَلُ مِنْ أُخْتِهَا — She is taller than her sister."} -->
+<!-- grammar-card: {"id":"rule-feminine-fula","kind":"concept","format":"qa","priority":"optional","sourceSection":"Complement patterns","rule":"The feminine of an agreeing elative uses the pattern fuʿlā.","example":"What pattern does the feminine of a definite elative take?","answer":"fuʿlā (فُعْلَى).","explanation":"أَصْغَرُ → الصُّغْرَى (aṣ-ṣughrā), the smallest (feminine)."} -->
 
 <!-- quiz: {"type": "multiple-choice", "question": "What usually follows اِسْمُ التَّفْضِيلِ (ismu at-tafḍīli) in a direct comparison?", "options": ["مِنْ (min) plus a genitive complement", "A jussive verb", "Two direct objects", "Only a vocative noun"], "answer": 0} -->
 
@@ -38,7 +42,7 @@ When the comparison needs a quality noun, Arabic often uses an accusative specif
 
 The same form can shift meaning by construction. **هُوَ أَكْرَمُ مِنْ أَخِيهِ** (huwa akramu min akhīhi) — He is more generous than his brother. **هُوَ أَكْرَمُ الْإِخْوَةِ** (huwa akramu al-ikhwati) — He is the most generous of the brothers.
 
-<!-- grammar-card: {"id":"construction-shifts-degree","kind":"concept","format":"qa","priority":"optional","sourceSection":"Practice patterns","rule":"The complement construction can distinguish comparative from group-superlative meaning.","example":"How does أَكْرَمُ مِنْ أَخِيهِ differ from أَكْرَمُ الْإِخْوَةِ?","answer":"More generous than his brother versus the most generous of the brothers.","explanation":"The first uses a min comparison; the second names a group through iḍāfa. The elative itself need not change shape."} -->
+<!-- grammar-card: {"id":"construction-shifts-degree","kind":"rule","format":"qa","priority":"optional","sourceSection":"Practice patterns","rule":"The complement construction can distinguish comparative from group-superlative meaning.","example":"How does أَكْرَمُ مِنْ أَخِيهِ differ from أَكْرَمُ الْإِخْوَةِ?","answer":"More generous than his brother versus the most generous of the brothers.","explanation":"The first uses a min comparison; the second names a group through iḍāfa. The elative itself need not change shape."} -->
 
 <!-- quiz: {"type": "multiple-choice", "question": "In هِيَ أَسْرَعُ الْعَدَّائِينَ (hiya asraʿu al-ʿaddāʾīna), what is الْعَدَّائِينَ?", "options": ["A genitive iḍāfa complement naming the group", "A direct object", "A vocative", "A passive participle"], "answer": 0} -->
 

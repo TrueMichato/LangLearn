@@ -43,4 +43,23 @@ describe('reviewed grammar scope is per language', () => {
     expect(isRuleRecallCard({ ...saved, lessonSource: { ...source, itemId: 'rule-retired' } })).toBe(false);
     expect(isRuleRecallCard({ ...saved, lessonSource: { ...source, lessonId: 'fixture-unreviewed' } })).toBe(false);
   });
+
+  it('uses current Arabic virtual identities rather than stale saved concept kinds', () => {
+    const saved = card({
+      language: 'ar', grammarKind: 'concept', tags: ['grammar', 'lesson:adjectives'],
+      lessonSource: { lessonId: 'adjectives', itemId: 'rule-adjective-position', provenance: 'authored' },
+    });
+    expect(isReviewedGrammarLesson('ar', 'adjectives')).toBe(true);
+    expect(isRuleRecallCard(saved)).toBe(true);
+    const contextual = {
+      ...saved, lessonSource: { ...saved.lessonSource!, itemId: 'predicate-not-modifier' },
+    };
+    expect(isRuleRecallCard({ ...contextual, grammarKind: 'rule' })).toBe(false);
+    expect(isRuleRecallCard(contextual), 'a stale saved concept must not regain lower-frequency rule spacing').toBe(false);
+    expect(isReviewedGrammarLesson('ar', 'predicate-types')).toBe(true);
+    expect(isRuleRecallCard({
+      ...saved,
+      lessonSource: { lessonId: 'predicate-types', itemId: 'predicate-inventory', provenance: 'authored' },
+    })).toBe(false);
+  });
 });

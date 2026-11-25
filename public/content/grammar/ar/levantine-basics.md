@@ -17,7 +17,7 @@ A common progressive marker is **عَمْ** (ʿam) — currently / progressive, 
 
 | Levantine pattern | Example |
 |---|---|
-| progressive | **أَنَا عَمْ بَاكْتُبْ** (anā ʿam baktub) — I am writing |
+| progressive | **أَنَا عَمْ بَكْتُبْ** (anā ʿam baktub) — I am writing |
 | want | **بَدِّي أَرُوحْ** (baddī arūḥ) — I want to go |
 | question | **وَيْنَ الْبَيْتْ؟** (wēn il-bēt?) — where is the house? |
 | negation | **مَا بَعْرِفْ** (mā baʿrif) — I do not know |
@@ -31,7 +31,7 @@ A common progressive marker is **عَمْ** (ʿam) — currently / progressive, 
 
 Compared with MSA **أُرِيدُ أَنْ أَذْهَبَ** (urīdu an adh-haba) — I want to go, Levantine **بَدِّي أَرُوحْ** (baddī arūḥ) — I want to go is shorter and very common.
 
-<!-- grammar-card: {"id":"levantine-progressive","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Usage notes","rule":"Levantine often uses عَمْ (ʿam) with a present verb for ongoing action.","example":"Complete Levantine “I am writing”: أَنَا ___ بَاكْتُبْ (anā ___ baktub).","answer":"عَمْ","explanation":"ʿAm marks ongoing action in this Levantine pattern; use of b- varies regionally.","legacyAliases":[{"rule":"Levantine often uses عَمْ (ʿam) with a present verb for ongoing action.","example":"Complete “I am writing”: أَنَا ___ بَاكْتُبْ (anā ___ baktub)."}]} -->
+<!-- grammar-card: {"id":"levantine-progressive","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Usage notes","rule":"Levantine often uses عَمْ (ʿam) with a present verb for ongoing action.","example":"Complete Levantine “I am writing”: أَنَا ___ بَكْتُبْ (anā ___ baktub).","answer":"عَمْ","explanation":"ʿAm marks ongoing action in this Levantine pattern; use of b- varies regionally.","legacyAliases":[{"rule":"Levantine often uses عَمْ (ʿam) with a present verb for ongoing action.","example":"Complete “I am writing”: أَنَا ___ بَاكْتُبْ (anā ___ baktub)."}]} -->
 <!-- grammar-card: {"id":"rule-levantine-progressive-contrast","kind":"concept","format":"qa","priority":"essential","sourceSection":"Core idea","rule":"In Levantine Arabic, ʿam before a b-present verb marks action in progress; the plain b-present is general or habitual.","example":"In Levantine Arabic, how does adding the progressive marker change the meaning of a b-present verb such as baktub?","answer":"It makes the action ongoing: ʿam baktub is “I am writing (now)”, while plain baktub is “I write” in general.","explanation":"ʿAm (عَمْ) is the common Levantine progressive marker; usage varies by region, and plain b-forms can also describe ongoing action."} -->
 <!-- grammar-card: {"id":"levantine-regional-scope","kind":"concept","format":"qa","priority":"essential","sourceSection":"Usage notes","rule":"Levantine covers multiple regional systems.","example":"Must every speaker in Lebanon, Syria, Jordan and Palestine use these forms identically?","answer":"No. City and regional varieties differ; these are broad recognition patterns.","explanation":"MSA remains appropriate for formal contexts."} -->
 

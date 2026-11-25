@@ -11,9 +11,14 @@ import GrammarFace from '../components/grammar/GrammarFace';
 import { hasBlank } from '../lib/grammar-cards';
 import { reviewed } from '../lib/grammar-reviewed/ar';
 import { parseLessonReviewItems } from '../lib/lesson-capture';
-import { readLessonReviewBlocks, type GrammarReviewItem } from '../lib/lesson-review';
+import { readLessonReviewBlocks, type GrammarReviewItem, type LessonReviewItem } from '../lib/lesson-review';
 import legacyJson from './fixtures/grammar-retention-legacy.json';
 import baselineJson from './fixtures/arabic-grammar-reviewed-baseline.json';
+import {
+  lessonRetirements,
+  validateGrammarRetirements,
+  validateRetirementRecords,
+} from './helpers/grammar-retirements';
 import {
   lessonHeadings,
   parseRetentionInventory,
@@ -78,10 +83,24 @@ const isRuleCard = (card: GrammarReviewItem) => card.id.startsWith('rule-');
 const NON_TEACHING_SECTION = /sources|summary|reference|recap|further reading|cheat ?sheet/i;
 // "choose" only as an instruction; "the order used to choose a hamza seat" is still recall.
 const INTERPRETATION_PROMPT = /\b(why might|unclear|translate|rewrite|in (this|the|that) sentence|which (of these|sentence|option))\b|(^|[.!?:;]\s*)choose\b/i;
+// Reviewed example-analysis targets that generic English heuristics cannot
+// distinguish from declarative recall. Their prompts must stay applications.
+const APPLICATION_TARGETS: Record<string, readonly string[]> = {
+  adjectives: ['predicate-not-modifier'],
+  'conditional-answers': ['bare-result-no-fa'],
+  'conditional-particles-deep': ['linking-kasra-jussive'],
+  'energetic-nun': ['feminine-nun-contrast'],
+  'root-system': ['root-pattern-division'],
+  nisba: ['nisba-stem-change'],
+  diptotes: ['diptote-case-not-ending'],
+  'form-ix-verbs': ['quality-not-only-colors'],
+};
 
-function identityErrors(id: string, cards: GrammarReviewItem[]): string[] {
+function identityErrors(id: string, items: LessonReviewItem[]): string[] {
+  const cards = items.filter((item): item is GrammarReviewItem => item.kind !== 'vocabulary');
   const previous = BASELINE.lessons[id]?.items ?? {};
-  const errors: string[] = [];
+  const errors = validateGrammarRetirements(`ar/${id}`, items);
+  const retired = new Map(lessonRetirements(`ar/${id}`));
   const owners = new Map<string, Set<string>>();
   for (const card of cards) {
     for (const [rule, example] of ownPairs(card)) {
@@ -90,6 +109,7 @@ function identityErrors(id: string, cards: GrammarReviewItem[]): string[] {
     }
   }
   for (const [itemId, item] of Object.entries(previous)) {
+    if (retired.has(itemId)) continue;
     if (!cards.some((card) => card.id === itemId)) errors.push(`${itemId}: baseline item is missing`);
     for (const [rule, example] of item.identities) {
       const found = [...owners.get(pairKey(rule, example)) ?? []];
@@ -155,11 +175,14 @@ function ruleFrontLeakErrors(id: string, cards: GrammarReviewItem[]): string[] {
 }
 
 function conceptRecallErrors(id: string, cards: GrammarReviewItem[]): string[] {
-  return cards.filter((card) => card.kind === 'concept' && !CONCEPT_RECALL_EXEMPT[`${id}/${card.id}`]).flatMap((card) => [
+  const applications = cards.filter((card) => APPLICATION_TARGETS[id]?.includes(card.id) &&
+    (card.kind !== 'rule' || card.format !== 'qa'))
+    .map((card) => `${card.id}: reviewed example analysis must be kind "rule" + format "qa"`);
+  return [...applications, ...cards.filter((card) => card.kind === 'concept' && !CONCEPT_RECALL_EXEMPT[`${id}/${card.id}`]).flatMap((card) => [
     ...(card.format !== 'qa' ? [`${card.id}: concept card must be format "qa", not "${card.format}"`] : []),
     ...(hasBlank(card.prompt) ? [`${card.id}: concept prompt has a blank: "${card.prompt}"`] : []),
     ...(INTERPRETATION_PROMPT.test(card.prompt) ? [`${card.id}: interpretation/application wording in concept prompt: "${card.prompt}"`] : []),
-  ]);
+  ])];
 }
 
 const REGRESSIONS: Record<string, [title: string, check: (cards: GrammarReviewItem[]) => void]> = {
@@ -179,6 +202,11 @@ const REGRESSIONS: Record<string, [title: string, check: (cards: GrammarReviewIt
 };
 
 describe('Arabic reviewed grammar registry', () => {
+  it('covers the complete published Arabic catalog, never an empty or partial registry', () => {
+    expect(indexIds).not.toHaveLength(0);
+    expect(reviewed).toEqual(indexIds);
+  });
+
   it('lists indexed lessons once, in published order', () => {
     expect(reviewed.filter((id) => !indexIds.includes(id)), 'ar.ts lists ids missing from the Arabic index').toEqual([]);
     expect(reviewed.filter((id, i) => reviewed.indexOf(id) !== i), 'ar.ts lists duplicate ids').toEqual([]);
@@ -203,6 +231,10 @@ describe('Arabic reviewed grammar registry', () => {
 
   it('pins the identity baseline to its source commit', () => {
     expect(BASELINE.sourceCommit).toBe('ab35670cc1b6a4bdf9425a22d457b14f326562b7');
+  });
+
+  it('allows only reasoned retirements of exact frozen shipped identities', () => {
+    expect(validateRetirementRecords()).toEqual([]);
   });
 });
 
@@ -229,11 +261,11 @@ if (!lessons.length) {
       if (legacy) expect(validateLegacyLesson(markdown, legacy, `ar/${id}`), 'validateLegacyLesson').toEqual([]);
       const inventory = inventories.get(id);
       expect(inventory, `no ar-*.json inventory lists ${id}`).toBeDefined();
-      expect(validateRetentionLesson(markdown, inventory!, legacy), 'validateRetentionLesson').toEqual([]);
+      expect(validateRetentionLesson(markdown, inventory!, legacy, `ar/${id}`), 'validateRetentionLesson').toEqual([]);
     });
 
     it('3. preserves baseline identities without inventing or sharing aliases', () => {
-      expect(identityErrors(id, cards())).toEqual([]);
+      expect(identityErrors(id, parseLessonReviewItems(markdown).items)).toEqual([]);
     });
 
     it('4. adds at most four new rule-recall cards in real teaching sections', () => {
@@ -272,6 +304,90 @@ describe('answer visibility matching', () => {
     ['multi-word English answer', 'Name the mood (the subjunctive mood) after لَنْ.', 'subjunctive mood', true],
   ])('%s', (_title, front, answer, shown) => {
     expect(showsWords(tokens(front), tokens(answer))).toBe(shown);
+  });
+});
+
+describe('Arabic guard wiring through parsed lesson mutations', () => {
+  const mutate = (id: string, itemId: string, patch: Record<string, unknown> | null) => {
+    const markdown = lesson(id)!;
+    let changed = false;
+    const modified = markdown.replace(/<!-- grammar-card: (.*?) -->/g, (block, raw: string) => {
+      const value = JSON.parse(raw) as Record<string, unknown>;
+      if (value.id !== itemId) return block;
+      changed = true;
+      return patch === null ? '' : `<!-- grammar-card: ${JSON.stringify({ ...value, ...patch })} -->`;
+    });
+    expect(changed).toBe(true);
+    const parsed = parseLessonReviewItems(modified);
+    expect(parsed.diagnostics).toEqual([]);
+    return grammar(modified);
+  };
+
+  it('rejects missing baseline aliases, invented aliases, and alias transfers', () => {
+    expect(identityErrors('definite-article', mutate('definite-article', 'article-spelling-sound', {
+      legacyAliases: [],
+    })).join('\n')).toContain('baseline identity');
+    expect(identityErrors('definite-article', mutate('definite-article', 'article-spelling-sound', {
+      legacyAliases: [{ rule: 'Unshipped intermediate rule', example: 'Unshipped intermediate prompt' }],
+    })).join('\n')).toContain('is not one of its baseline identities');
+    const [rule, example] = BASELINE.lessons['definite-article'].items['article-spelling-sound'].identities[0];
+    expect(identityErrors('definite-article', mutate('definite-article', 'sun-letter-application', {
+      legacyAliases: [{ rule, example }],
+    })).join('\n')).toContain('share identity');
+  });
+
+  it('rejects an unexpected deletion but accepts only the approved source retirements', () => {
+    expect(identityErrors('predicate-types', grammar(lesson('predicate-types')!))).toEqual([]);
+    expect(identityErrors('predicate-types', mutate('predicate-types', 'phrase-predicate', null)).join('\n'))
+      .toContain('baseline item is missing');
+  });
+
+  it('rejects retired identity transfer and reappearance in the Arabic identity gate', () => {
+    const id = 'predicate-types';
+    const [rule, example] = BASELINE.lessons[id].items['predicate-inventory'].identities[0];
+    expect(identityErrors(id, mutate(id, 'phrase-predicate', {
+      legacyAliases: [{ rule, example }],
+    })).join('\n')).toContain('retired identity transferred');
+    expect(identityErrors(id, mutate(id, 'rule-semi-sentence', {
+      id: 'predicate-inventory', rule, example,
+    })).join('\n')).toContain('retired source reappeared');
+    expect(identityErrors(id, mutate(id, 'rule-semi-sentence', null)).join('\n'))
+      .toContain('missing retirement replacement');
+  });
+
+  it.each(Object.entries(APPLICATION_TARGETS).flatMap(([id, ids]) => ids.map((itemId) => [id, itemId])))(
+    'does not relabel %s/%s analysis as declarative recall', (id, itemId) => {
+      expect(conceptRecallErrors(id, grammar(lesson(id)!))).toEqual([]);
+      expect(conceptRecallErrors(id, mutate(id, itemId, { kind: 'concept' })).join('\n'))
+        .toContain('reviewed example analysis must be kind "rule" + format "qa"');
+    },
+  );
+
+  it('rejects application wording in a generic concept front', () => {
+    const id = 'definite-article';
+    expect(conceptRecallErrors(id, mutate(id, 'article-spelling-sound', {
+      example: 'Translate this phrase into Arabic.',
+    })).join('\n')).toContain('interpretation/application wording');
+  });
+
+  it.each(['example', 'hint'])('catches own-answer leakage in the actual %s field', (field) => {
+    const id = 'definite-article';
+    const card = grammar(lesson(id)!).find((item) => item.id === 'sun-letter-application')!;
+    expect(answerOnFrontErrors(id, grammar(lesson(id)!))).toEqual([]);
+    expect(answerOnFrontErrors(id, mutate(id, card.id, {
+      [field]: field === 'example' ? `${card.prompt} ${card.answer}` : card.answer,
+    })).join('\n')).toContain(`${card.id}: answer`);
+  });
+
+  it('checks new rule fronts for another card’s answer without banning application cues', () => {
+    const id = 'definite-article';
+    const cards = grammar(lesson(id)!);
+    const rule = cards.find(isRuleCard)!;
+    const answer = cards.find((card) => card.id === 'sun-letter-application')!.answer;
+    expect(ruleFrontLeakErrors(id, cards)).toEqual([]);
+    expect(ruleFrontLeakErrors(id, mutate(id, rule.id, { hint: `For example: ${answer}` })).join('\n'))
+      .toContain(`${rule.id}: front shows`);
+    expect(ruleFrontLeakErrors(id, mutate(id, 'moon-letter-application', { hint: `Compare ${answer}` }))).toEqual([]);
   });
 });
 

@@ -8,6 +8,10 @@ Conditionals help you connect cause and result: if this happens, that happens. A
 
 Use **إِذَا** (idhā) — if / when for real or likely conditions, **لَوْ** (law) — if for contrary-to-fact or hypothetical past situations, and **إِنْ** (in) — if for formal open conditions, often with jussive verbs.
 
+<!-- grammar-card: {"id":"rule-idha-real","kind":"concept","format":"qa","priority":"essential","sourceSection":"Core idea","rule":"إِذَا is the usual particle for real or likely conditions.","example":"Which conditional particle is the usual everyday MSA choice for real or likely conditions?","answer":"إِذَا (idhā).","explanation":"It often means if or when about real future situations, and is commonly followed by a past-form verb."} -->
+<!-- grammar-card: {"id":"rule-law-unreal","kind":"concept","format":"qa","priority":"essential","sourceSection":"Core idea","rule":"لَوْ introduces unreal or contrary-to-fact conditions.","example":"Which conditional particle introduces unreal or contrary-to-fact conditions?","answer":"لَوْ (law).","explanation":"It imagines something unreal or missed; its result often begins with la-."} -->
+<!-- grammar-card: {"id":"rule-in-jussive","kind":"concept","format":"qa","priority":"optional","sourceSection":"Core idea","rule":"Formal conditional إِنْ takes jussive verbs.","example":"In formal MSA, which mood do present-form verbs take after conditional إِنْ?","answer":"The jussive, in both the condition and the result.","explanation":"إِنْ تَدْرُسْ، تَنْجَحْ (in tadrus, tanjaḥ): both verbs end in sukūn."} -->
+
 ## Forms and examples
 
 | Conditional | Example |
@@ -44,7 +48,7 @@ Soft practice:
 <!-- quiz: {"type": "multiple-choice", "question": "Which sentence is contrary-to-fact past?", "options": ["لَوْ دَرَسْتَ، لَنَجَحْتَ (law darasta, la-najaḥta) — if you had studied, you would have succeeded", "إِذَا دَرَسْتَ، نَجَحْتَ (idhā darasta, najaḥta) — if you study, you succeed", "أَيْنَ الدَّرْسُ؟ (ayna ad-darsu?) — where is the lesson?", "سَأَدْرُسُ غَدًا (sa-adrusu ghadan) — I will study tomorrow"], "answer": 0} -->
 
 <!-- grammar-card: {"id":"unreal-condition","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Practice patterns","rule":"لَوْ (law) — if often introduces unreal or contrary-to-fact conditions.","example":"Complete “If you had studied, you would have succeeded”: ___ دَرَسْتَ، لَنَجَحْتَ.","answer":"لَوْ","explanation":"Law introduces the unreal past condition; the result uses affirmative la- plus the past verb.","legacyAliases":[{"rule":"لَوْ (law) — if often introduces unreal or contrary-to-fact conditions.","example":"Complete “If you had studied, you would have succeeded”: ___ دَرَسْتَ، لَنَجَحْتَ (___ darasta, la-najaḥta)."}]} -->
-<!-- grammar-card: {"id":"result-la-not-lan","kind":"concept","format":"qa","priority":"essential","sourceSection":"Practice patterns","rule":"Affirmative result لَـ is distinct from the negative particle لَنْ","example":"Does لَنَجَحْتَ in the law conditional mean “you will not succeed”?","answer":"No. It is لَـ plus نَجَحْتَ: you would have succeeded.","explanation":"The n belongs to the past verb najaḥta. Negative lan is a separate particle with sukūn on ن and takes a subjunctive present-form verb."} -->
+<!-- grammar-card: {"id":"result-la-not-lan","kind":"rule","format":"qa","priority":"essential","sourceSection":"Practice patterns","rule":"Affirmative result لَـ is distinct from the negative particle لَنْ","example":"Does لَنَجَحْتَ in the law conditional mean “you will not succeed”?","answer":"No. It is لَـ plus نَجَحْتَ: you would have succeeded.","explanation":"The n belongs to the past verb najaḥta. Negative lan is a separate particle with sukūn on ن and takes a subjunctive present-form verb."} -->
 
 ## Sources
 

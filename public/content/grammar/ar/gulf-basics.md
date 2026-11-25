@@ -33,7 +33,7 @@ Common Gulf learner-notice points include **شْلُونَكْ؟** (shlōnak?) �
 
 MSA **أُرِيدُ** (urīdu) — I want corresponds to Gulf **أَبِي** (abī) — I want in many everyday contexts.
 
-<!-- grammar-card: {"id":"gulf-want","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Usage notes","rule":"Gulf أَبِي (abī) — I want can introduce a desired action.","example":"Complete Gulf “I want to go”: ___ أَرُوحْ (___ arūḥ).","answer":"أَبِي","explanation":"Abī arūḥ occurs in many Gulf contexts, not every local variety.","legacyAliases":[{"rule":"Gulf أَبِي (abī) — I want can introduce a desired action.","example":"Complete “I want to go”: ___ أَرُوحْ (___ arūḥ)."}]} -->
+<!-- grammar-card: {"id":"gulf-want","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Usage notes","rule":"Gulf أَبِي (abī) — I want can introduce a desired action.","example":"Complete Gulf “I want to go”: ___ أَرُوحْ (___ arūḥ).","answer":"أَبِي","explanation":"Abī arūḥ occurs in many Gulf contexts, not every local variety. Many Gulf and Arabian speakers say أَبْغَى أَرُوحْ (abghā arūḥ) instead; either is a correct Gulf answer.","legacyAliases":[{"rule":"Gulf أَبِي (abī) — I want can introduce a desired action.","example":"Complete “I want to go”: ___ أَرُوحْ (___ arūḥ)."}]} -->
 
 ## Practice patterns
 

@@ -18,7 +18,7 @@ A common Egyptian present marker is **بَـ** (ba-) / **بِـ** (bi-) — pres
 
 | Egyptian pattern | Example |
 |---|---|
-| present marker | **أَنَا بَاكْتِبْ** (anā baktib) — I write / I am writing |
+| present marker | **أَنَا بَكْتِبْ** (anā baktib) — I write / I am writing |
 | negation | **أَنَا مِشْ فَاهِمْ** (anā mish fāhim) — I do not understand, masculine |
 | want | **أَنَا عَايِزْ أَرُوحْ** (anā ʿāyiz arūḥ) — I want to go, masculine |
 | greeting | **إِزَّايَكْ؟** (izzayak?) — how are you, to a male? |
@@ -30,9 +30,9 @@ A common Egyptian present marker is **بَـ** (ba-) / **بِـ** (bi-) — pres
 
 > 📌 Dialect note: Egyptian has regional variation. Cairo patterns are very visible in media, but not every Egyptian speaker pronounces every word the same way.
 
-Compared with MSA **أَكْتُبُ** (aktubu) — I write, Egyptian **بَاكْتِبْ** (baktib) — I write shows the **بَـ** (ba-) present marker and no final case-style vowel.
+Compared with MSA **أَكْتُبُ** (aktubu) — I write, Egyptian **بَكْتِبْ** (baktib) — I write shows the **بَـ** (ba-) present marker and no final case-style vowel.
 
-<!-- grammar-card: {"id":"egyptian-present","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Usage notes","rule":"Egyptian present verbs often use بَـ (ba-) / بِـ (bi-) before the verb.","example":"Complete Egyptian “I write”: أَنَا ___.","answer":"بَاكْتِبْ","explanation":"Baktib has the Egyptian b-present marker and the Egyptian stem vowel i, without the MSA final mood vowel.","legacyAliases":[{"rule":"Egyptian present verbs often use بَـ (ba-) / بِـ (bi-) before the verb.","example":"Complete “I write” in Egyptian: أَنَا ___اكْتُبْ (anā ___aktub)."}]} -->
+<!-- grammar-card: {"id":"egyptian-present","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Usage notes","rule":"Egyptian present verbs often use بَـ (ba-) / بِـ (bi-) before the verb.","example":"Complete Egyptian “I write”: أَنَا ___.","answer":"بَكْتِبْ","explanation":"Baktib has the Egyptian b-present marker and the Egyptian stem vowel i, without the MSA final mood vowel. Informal writing also spells it with alif: بَاكْتِبْ.","legacyAliases":[{"rule":"Egyptian present verbs often use بَـ (ba-) / بِـ (bi-) before the verb.","example":"Complete “I write” in Egyptian: أَنَا ___اكْتُبْ (anā ___aktub)."}]} -->
 <!-- grammar-card: {"id":"rule-egyptian-bi-present","kind":"concept","format":"qa","priority":"essential","sourceSection":"Core idea","rule":"Egyptian Arabic marks present or habitual action with the prefix بِـ (bi-) on the imperfect verb; with “I” it is بَـ (ba-).","example":"In Egyptian Arabic, what prefix on an imperfect verb marks present or habitual action?","answer":"بِـ (bi-); with “I” it is بَـ (ba-).","explanation":"Egyptian baktib means I write / I am writing; MSA aktubu has no such prefix."} -->
 <!-- grammar-card: {"id":"rule-egyptian-no-final-vowel","kind":"concept","format":"qa","priority":"optional","sourceSection":"Usage notes","rule":"Egyptian present verbs have no MSA-style final mood vowel.","example":"Compared with MSA aktubu (I write), which ending does the Egyptian present verb lack?","answer":"The final vowel -u.","explanation":"Egyptian baktib ends in a consonant: everyday dialect has no MSA mood or case-style final vowels."} -->
 

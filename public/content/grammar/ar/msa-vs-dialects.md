@@ -19,7 +19,7 @@ The biggest changes are usually pronunciation, everyday vocabulary, verb prefixe
 |---|---|---|
 | case endings | **الْبَيْتُ كَبِيرٌ** (al-baytu kabīrun) — the house is big | **الْبَيْتْ كِبِيرْ** (il-bēt kibīr) — the house is big, dialect-style pronunciation |
 | want | **أُرِيدُ** (urīdu) — I want | **عَايِزْ** (ʿāyiz) — I want, Egyptian masculine; **بَدِّي** (baddī) — I want, Levantine |
-| present action | **أَكْتُبُ** (aktubu) — I write | **بَاكْتِبْ** (baktib) — I write, Egyptian; **عَمْ بَاكْتُبْ** (ʿam baktub) — I am writing, Levantine |
+| present action | **أَكْتُبُ** (aktubu) — I write | **بَكْتِبْ** (baktib) — I write, Egyptian; **عَمْ بَكْتُبْ** (ʿam baktub) — I am writing, Levantine |
 
 <!-- quiz: {"type": "multiple-choice", "question": "What is MSA mainly used for?", "options": ["Formal writing, news, education, and cross-regional communication", "Only one neighborhood", "Only jokes", "Only ancient poetry and never modern media"], "answer": 0} -->
 

@@ -8,6 +8,8 @@ Arabic has a special form for exactly two. This is the dual, and it is one of th
 
 The nominative dual often ends in **ـَانِ** (-āni), while the accusative and genitive dual end in **ـَيْنِ** (-ayni). Feminine nouns with tāʾ marbūṭa use **ـتَانِ** (-atāni) or **ـتَيْنِ** (-atayni).
 
+<!-- grammar-card: {"id":"rule-ta-marbuta-dual","kind":"concept","format":"qa","priority":"essential","sourceSection":"Core idea","rule":"Tāʾ marbūṭa is written as an ordinary tāʾ before a dual ending.","example":"What happens to a final tāʾ marbūṭa (ة) when a dual ending is added?","answer":"It is written as an ordinary ت before the ending.","explanation":"طَالِبَةٌ (ṭālibatun) gives طَالِبَتَانِ (ṭālibatāni) and طَالِبَتَيْنِ (ṭālibatayni)."} -->
+
 ## Forms and examples
 
 | Singular | Dual |

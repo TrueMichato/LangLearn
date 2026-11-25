@@ -11,6 +11,7 @@ Use **سَـ** (sa-) — will / going to for near or simple future, and **سَو
 These are tendencies, not a fixed near-versus-distant deadline. Both markers can refer to future events; context supplies the timing.
 
 <!-- grammar-card: {"id":"future-marker-scope","kind":"concept","format":"qa","priority":"essential","sourceSection":"Core idea","rule":"Both future markers precede a present-form verb, without a rigid timing division","example":"Does سَوْفَ always require a distant future while سَـ can only mean a near future?","answer":"No. Both mark future events; the timing distinction is a tendency, not a fixed rule.","explanation":"Sa- is compact and attached; sawfa is separate and can feel more deliberate."} -->
+<!-- grammar-card: {"id":"rule-future-present-verb","kind":"concept","format":"qa","priority":"essential","sourceSection":"Core idea","rule":"Both future markers come before a present-tense verb.","example":"In MSA, which verb form follows a future marker?","answer":"The present (imperfect) form, normally indicative.","explanation":"سَأَدْرُسُ (sa-adrusu), I will study; سَوْفَ نُسَافِرُ (sawfa nusāfiru), we will travel. There is no separate future conjugation."} -->
 <!-- vocab-card: {"id":"vocab-sawfa","word":"سَوْفَ","reading":"sawfa","meaning":"will; future marker","priority":"optional","sourceSection":"Core idea"} -->
 
 ## Forms and examples
@@ -29,6 +30,7 @@ These are tendencies, not a fixed near-versus-distant deadline. Both markers can
 In everyday MSA, **سَـ** (sa-) — will is very common and compact. **سَوْفَ** (sawfa) — will is a separate word, so it can feel a little more deliberate.
 
 <!-- grammar-card: {"id":"attached-future","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Usage notes","rule":"The prefix سَـ (sa-) — will attaches directly to a present-tense verb.","example":"Complete “we will go” using the attached future marker: ___نَذْهَبُ.","answer":"سَ","explanation":"Sa-nadhhabu is written as one word, سَنَذْهَبُ. The verb remains indicative here.","legacyAliases":[{"rule":"The prefix سَـ (sa-) — will attaches directly to a present-tense verb.","example":"Complete “we will go”: ___ نَذْهَبُ (nadhhabu) — we go."}]} -->
+<!-- grammar-card: {"id":"rule-sa-attached","kind":"concept","format":"qa","priority":"optional","sourceSection":"Usage notes","rule":"The future prefix sa- is written attached to the verb.","example":"Is the future prefix sa- written as a separate word or attached to the verb?","answer":"Attached: the prefix and verb form one written word.","explanation":"سَنَذْهَبُ (sa-nadhhabu), we will go. Sawfa, by contrast, is written as a separate word."} -->
 
 ## Practice patterns
 
@@ -43,7 +45,7 @@ Future with time words:
 
 <!-- quiz: {"type": "multiple-choice", "question": "What follows سَوْفَ (sawfa) — will?", "options": ["A past-tense verb", "A present-tense verb", "Only a noun", "A genitive preposition"], "answer": 1} -->
 
-<!-- grammar-card: {"id":"separate-future","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Practice patterns","rule":"سَوْفَ (sawfa) — will is a separate future marker before the present verb.","example":"Complete “he will read”: ___ يَقْرَأُ (yaqraʾu) — he reads.","answer":"سَوْفَ","explanation":"Sawfa is written separately before the present indicative yaqraʾu."} -->
+<!-- grammar-card: {"id":"separate-future","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Practice patterns","rule":"سَوْفَ (sawfa) — will is a separate future marker before the present verb.","example":"Complete “he will read” with the separate future word: ___ يَقْرَأُ (yaqraʾu) — he reads.","answer":"سَوْفَ","explanation":"Sawfa is written separately before the present indicative yaqraʾu. The attached prefix gives the equally correct one-word سَيَقْرَأُ.","legacyAliases":[{"rule":"سَوْفَ (sawfa) — will is a separate future marker before the present verb.","example":"Complete “he will read”: ___ يَقْرَأُ (yaqraʾu) — he reads."}]} -->
 
 ## Sources
 

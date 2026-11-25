@@ -16,10 +16,12 @@ Interrogative **كَمْ** (kam) asks for a number: **كَمْ كِتَابًا 
 | Type | Meaning | Typical tamyīz | Example |
 |---|---|---|---|
 | **كَمْ الِاسْتِفْهَامِيَّةُ** (kam al-istifhāmiyyatu) | A real question | Singular accusative | **كَمْ دَرْسًا حَفِظْتَ؟** (kam darsan ḥafiẓta?) — How many lessons did you memorize? |
-| **كَمْ الْخَبَرِيَّةُ** (kam al-khabariyyatu) | Many, so many | Usually genitive | **كَمْ دَرْسٍ حَفِظْتُ!** (kam darsin ḥafiẓtu!) — So many lessons I memorized! |
+| **كَمْ الْخَبَرِيَّةُ** (kam al-khabariyyatu) | Many, so many | Genitive, singular or plural | **كَمْ دَرْسٍ حَفِظْتُ!** (kam darsin ḥafiẓtu!) — So many lessons I memorized! |
 | **كَمْ مِنْ** (kam min) | Emphatic many | Genitive after **مِنْ** | **كَمْ مِنْ طَالِبٍ نَجَحَ!** (kam min ṭālibin najaḥa!) — So many students succeeded! |
 
 <!-- grammar-card: {"id":"kam-min-genitive","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Two types of kam","rule":"The noun after مِنْ in an exclamatory kam-min phrase is genitive.","example":"Complete the abundance expression: كَمْ مِنْ ___ نَجَحَ! (student)","answer":"طَالِبٍ","explanation":"طَالِبٍ (ṭālibin) is genitive directly after مِنْ. The exclamatory context supplies the abundance reading."} -->
+<!-- grammar-card: {"id":"rule-interrogative-tamyiz","kind":"concept","format":"qa","priority":"essential","sourceSection":"Two types of kam","rule":"The tamyīz after interrogative kam is singular and accusative.","example":"What number and case does the noun after interrogative kam take?","answer":"Singular, accusative (kam kitāban?), even when English uses a plural.","explanation":"كَمْ دَرْسًا حَفِظْتَ؟ — How many lessons did you memorize?"} -->
+<!-- grammar-card: {"id":"rule-khabariyya-tamyiz","kind":"concept","format":"qa","priority":"essential","sourceSection":"Two types of kam","rule":"The tamyīz after khabariyya kam is genitive and may be singular or plural.","example":"What case does the noun after exclamatory (khabariyya) kam take, and may it be plural?","answer":"Genitive; it may be singular or plural (kam kitābin! or kam kutubin!).","explanation":"كَمْ دَرْسٍ حَفِظْتُ! — So many lessons I memorized!"} -->
 
 <!-- quiz: {"type": "multiple-choice", "question": "What is the usual case of the specification after interrogative كَمْ (kam) in كَمْ كِتَابًا قَرَأْتَ؟ (kam kitāban qaraʾta?)", "options": ["Accusative singular", "Nominative dual", "Genitive plural only", "Jussive verb"], "answer": 0} -->
 
@@ -38,7 +40,7 @@ Declarative **كَمْ** (kam) praises abundance or intensity: **كَمْ عَا
 
 <!-- quiz: {"type": "multiple-choice", "question": "Which sentence uses كَمْ الْخَبَرِيَّةُ (kam al-khabariyyatu) to mean many?", "options": ["كَمْ كِتَابٍ قَرَأْتُ! (kam kitābin qaraʾtu!) — So many books I read", "كَمْ كِتَابًا قَرَأْتَ؟ (kam kitāban qaraʾta?) — How many books did you read?", "أَيْنَ الْكِتَابُ؟ (ayna al-kitābu?) — Where is the book?", "مَتَى قَرَأْتَ الْكِتَابَ؟ (matā qaraʾta al-kitāba?) — When did you read the book?"], "answer": 0} -->
 
-<!-- grammar-card: {"id":"exclamatory-door-specification","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Practice patterns","rule":"Khabariyya كَمْ means many or how many in an exclamatory sense, and its specification is commonly genitive.","example":"Use the illustrated genitive specification for “So many doors I opened!”: كَمْ ___ فَتَحْتُ!","answer":"بَابٍ","explanation":"بَابٍ (bābin) is genitive here. The sentence reports abundance instead of requesting the number of doors.","legacyAliases":[{"rule":"Khabariyya كَمْ means many or how many in an exclamatory sense, and its specification is commonly genitive.","example":"كَمْ بَابٍ فَتَحْتُ! (kam bābin fataḥtu!)"}]} -->
+<!-- grammar-card: {"id":"exclamatory-door-specification","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Practice patterns","rule":"Khabariyya كَمْ means many or how many in an exclamatory sense, and its specification is commonly genitive.","example":"Use the illustrated genitive specification for “So many doors I opened!”: كَمْ ___ فَتَحْتُ!","answer":"بَابٍ","explanation":"بَابٍ (bābin) is genitive here. The plural genitive أَبْوَابٍ (abwābin) is also correct. The sentence reports abundance instead of requesting the number of doors.","legacyAliases":[{"rule":"Khabariyya كَمْ means many or how many in an exclamatory sense, and its specification is commonly genitive.","example":"كَمْ بَابٍ فَتَحْتُ! (kam bābin fataḥtu!)"}]} -->
 
 ## Sources
 

@@ -8,6 +8,9 @@ Arabic often uses the pattern afʿal for comparatives and superlatives. One comp
 
 The comparative pattern is **أَفْعَلُ** (afʿalu) — more / most pattern. Use **مِنْ** (min) — than for comparison: **أَكْبَرُ مِنْ** (akbaru min) — bigger than.
 
+<!-- grammar-card: {"id":"rule-afal-pattern","kind":"concept","format":"qa","priority":"essential","sourceSection":"Core idea","rule":"Most comparatives and superlatives use the pattern afʿalu.","example":"Which pattern forms most Arabic comparatives and superlatives?","answer":"أَفْعَلُ (afʿalu).","explanation":"كَبِيرٌ → أَكْبَرُ (akbaru), bigger / biggest. Some pairs, like جَيِّدٌ / أَفْضَلُ, must be learned."} -->
+<!-- grammar-card: {"id":"rule-min-than","kind":"concept","format":"qa","priority":"optional","sourceSection":"Core idea","rule":"مِنْ (min) means than after a comparative.","example":"Which word introduces the thing compared against (“than”) after a comparative?","answer":"مِنْ (min).","explanation":"أَكْبَرُ مِنْ (akbaru min), bigger than; the noun after it is genitive."} -->
+
 ## Forms and examples
 
 | Adjective idea | Comparative |

@@ -26,6 +26,13 @@ import {
 } from '../../lib/lesson-review';
 import { LESSON_REMARK_PLUGINS } from '../../lib/markdown-plugins';
 import quizCorrections from '../fixtures/grammar-retention-quiz-corrections.json';
+import {
+  GRAMMAR_RETIREMENTS,
+  lessonRetirements,
+  validateGrammarRetirements,
+  validateRetirementRecords,
+  type GrammarRetirements,
+} from './grammar-retirements';
 
 export const RETENTION_LANGUAGES = ['ja', 'ar', 'es', 'pt', 'ro'] as const;
 export type RetentionLanguage = typeof RETENTION_LANGUAGES[number];
@@ -207,14 +214,18 @@ export function validateLegacyLesson(
   markdown: string,
   baseline: LegacyLesson,
   lessonKey?: string,
+  retirements: GrammarRetirements = GRAMMAR_RETIREMENTS,
 ): string[] {
   const parsed = parseLessonReviewItems(markdown);
   const errors = parsed.diagnostics.map((diagnostic) =>
     `${diagnostic.code} at line ${diagnostic.line}: ${diagnostic.message}`);
+  const retired = new Map(lessonKey ? lessonRetirements(lessonKey, retirements)
+    .filter(([id, entry]) => !validateRetirementRecords({ [`${lessonKey}/${id}`]: entry }).length) : []);
+  if (lessonKey) errors.push(...validateGrammarRetirements(lessonKey, parsed.items, retirements));
   const authoredIds = new Set(parsed.items
     .filter((item) => item.provenance === 'authored').map((item) => item.id));
   for (const id of baseline.authoredIds) {
-    if (!authoredIds.has(id)) errors.push(`lost existing authored ID "${id}"`);
+    if (!authoredIds.has(id) && !retired.has(id)) errors.push(`lost existing authored ID "${id}"`);
   }
 
   const owners = new Map<string, Set<string>>();
@@ -240,6 +251,7 @@ export function validateLegacyLesson(
     if (ids.size > 1) errors.push(`ambiguous legacy identity ${pair} belongs to ${[...ids].join(', ')}`);
   }
   for (const pair of baseline.grammarPairs) {
+    if (pair.authoredId && retired.get(pair.authoredId)?.identities.some((old) => pairKey(old) === pairKey(pair))) continue;
     const ids = owners.get(pairKey(pair));
     if (!ids?.size || (pair.authoredId && !ids.has(pair.authoredId))) {
       errors.push(`lost legacy identity${pair.authoredId ? ` for "${pair.authoredId}"` : ''}: ${pairKey(pair)}`);
@@ -451,6 +463,7 @@ export function validateRetentionLesson(
   markdown: string,
   inventory: LessonInventory,
   baseline?: LegacyLesson,
+  lessonKey?: string,
 ): string[] {
   const parsed = parseLessonReviewItems(markdown);
   const vocabularyInventory = readLessonReviewBlocks(markdown, 'vocab-inventory');
@@ -458,6 +471,7 @@ export function validateRetentionLesson(
     vocabularyInventory.diagnostics.length === 0;
   const errors = parsed.diagnostics.map((diagnostic) =>
     `${diagnostic.code} at line ${diagnostic.line}: ${diagnostic.message}`);
+  if (lessonKey) errors.push(...validateGrammarRetirements(lessonKey, parsed.items));
   if (!explicitInventory) {
     errors.push('reviewed lesson must declare exactly one valid <!-- vocab-inventory: {"mode":"explicit"} -->');
   }
@@ -558,7 +572,7 @@ export function validateRetentionCatalog(
   catalog: RetentionCatalog,
   languages: readonly RetentionLanguage[] = RETENTION_LANGUAGES,
 ): string[] {
-  const errors: string[] = [];
+  const errors = validateRetirementRecords();
   if (catalog.baseline.baselineCommit !== quizCorrections.baselineCommit) {
     errors.push('approved quiz corrections target a different immutable baseline commit');
   }
@@ -604,7 +618,7 @@ export function validateRetentionCatalog(
       errors.push(`${key}: missing reviewed lesson inventory`);
       continue;
     }
-    errors.push(...validateRetentionLesson(markdown, inventory, baseline).map((error) => `${key}: ${error}`));
+    errors.push(...validateRetentionLesson(markdown, inventory, baseline, key).map((error) => `${key}: ${error}`));
   }
   return errors;
 }

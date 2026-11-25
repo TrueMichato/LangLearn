@@ -8,6 +8,8 @@ Arabic has several negation tools. Each one has a job, and learning the job is e
 
 Use **لَا** (lā) — not / no for present-tense verbs and general negation, **مَا** (mā) — not for past in many simple MSA sentences, **لَمْ** (lam) — did not before jussive present, **لَنْ** (lan) — will not before subjunctive present, and **لَيْسَ** (laysa) — is not for nominal sentences.
 
+<!-- grammar-card: {"id":"rule-laysa-nominal","kind":"concept","format":"qa","priority":"optional","sourceSection":"Core idea","rule":"لَيْسَ negates nominal (verbless) sentences.","example":"Which MSA negator is used to negate a nominal (verbless) sentence?","answer":"لَيْسَ (laysa).","explanation":"لَيْسَ الْبَيْتُ بَعِيدًا (laysa al-baytu baʿīdan), the house is not far. Its predicate is accusative."} -->
+
 ## Forms and examples
 
 | Negator | Example |
@@ -24,7 +26,7 @@ Use **لَا** (lā) — not / no for present-tense verbs and general negation, 
 <!-- vocab-card: {"id":"vocab-lan","word":"لَنْ","reading":"lan","meaning":"will not; followed by a subjunctive present-form verb","priority":"optional","sourceSection":"Forms and examples"} -->
 <!-- vocab-card: {"id":"vocab-laysa","word":"لَيْسَ","reading":"laysa","meaning":"is not; third masculine singular","priority":"optional","sourceSection":"Forms and examples"} -->
 <!-- grammar-card: {"id":"present-negation","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Forms and examples","rule":"Declarative لَا negates the ordinary present verb without making it jussive","example":"Complete “I do not understand”, using the ordinary present negator: ___ أَفْهَمُ.","answer":"لَا","explanation":"Lā afhamu retains indicative -u. Prohibitive do not is a different construction."} -->
-<!-- grammar-card: {"id":"past-ma-construction","kind":"concept","format":"qa","priority":"essential","sourceSection":"Forms and examples","rule":"مَا can negate a past verb in simple MSA sentences","example":"What verb tense follows مَا in مَا ذَهَبْتُ, and what does the sentence mean?","answer":"A past verb: I did not go.","explanation":"This is an alternative to lam plus a jussive present-form verb; the constructions use different verb forms."} -->
+<!-- grammar-card: {"id":"past-ma-construction","kind":"rule","format":"qa","priority":"essential","sourceSection":"Forms and examples","rule":"مَا can negate a past verb in simple MSA sentences","example":"What verb tense follows مَا in مَا ذَهَبْتُ, and what does the sentence mean?","answer":"A past verb: I did not go.","explanation":"This is an alternative to lam plus a jussive present-form verb; the constructions use different verb forms."} -->
 <!-- grammar-card: {"id":"future-subjunctive","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Usage notes","rule":"لَنْ gives future negative meaning and takes the subjunctive","example":"Complete “I will not go”: لَنْ ___. (أَذْهَبُ)","answer":"أَذْهَبَ","explanation":"Lan changes this sound verb's final indicative -u to subjunctive -a, unlike lam's jussive sukūn."} -->
 
 <!-- quiz: {"type": "multiple-choice", "question": "Which negator means “will not” and takes the subjunctive?", "options": ["لَا (lā) — not", "مَا (mā) — not", "لَمْ (lam) — did not", "لَنْ (lan) — will not"], "answer": 3} -->
@@ -34,6 +36,8 @@ Use **لَا** (lā) — not / no for present-tense verbs and general negation, 
 After **لَمْ** (lam) — did not, the verb is jussive: **أَذْهَبْ** (adhhab) — I go, jussive. After **لَنْ** (lan) — will not, the verb is subjunctive: **أَذْهَبَ** (adh-haba) — I go, subjunctive.
 
 <!-- grammar-card: {"id":"past-jussive","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Usage notes","rule":"لَمْ (lam) — did not gives past negative meaning but uses a jussive present-form verb.","example":"Complete “I did not write”: لَمْ ___.","answer":"أَكْتُبْ","explanation":"Aktub has jussive sukūn after lam. Its form is present-like, but the phrase has past negative meaning.","legacyAliases":[{"rule":"لَمْ (lam) — did not gives past negative meaning but uses a jussive present-form verb.","example":"Complete “I did not write”: لَمْ ___ (lam ___)."}]} -->
+<!-- grammar-card: {"id":"rule-lam-jussive","kind":"concept","format":"qa","priority":"essential","sourceSection":"Usage notes","rule":"لَمْ is followed by a jussive present-form verb with past meaning.","example":"In MSA, which mood does the present-form verb take after لَمْ (did not)?","answer":"The jussive (majzūm).","explanation":"لَمْ أَذْهَبْ (lam adhhab): the indicative -u is replaced by sukūn, and the meaning is past: I did not go."} -->
+<!-- grammar-card: {"id":"rule-lan-subjunctive","kind":"concept","format":"qa","priority":"essential","sourceSection":"Usage notes","rule":"لَنْ is followed by a subjunctive present-form verb with future meaning.","example":"In MSA, which mood does the present-form verb take after لَنْ (will not)?","answer":"The subjunctive (manṣūb).","explanation":"لَنْ أَذْهَبَ (lan adhhaba): the indicative -u becomes -a, and the meaning is future: I will not go."} -->
 
 ## Practice patterns
 

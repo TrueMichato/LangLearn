@@ -7,6 +7,9 @@ The word **إِذَا** (idhā) often means “when” or “if.” In narrative
 ## Core idea
 
 <!-- grammar-card: {"id":"sudden-no-answer","kind":"concept","format":"qa","priority":"essential","sourceSection":"Core idea","rule":"Sudden إِذَا is not a condition requiring an answer clause.","example":"Does sudden إِذَا require a later conditional result clause?","answer":"No. It introduces a suddenly discovered scene, not a condition awaiting a result.","explanation":"It commonly follows a prior action and introduces a nominal sentence."} -->
+<!-- grammar-card: {"id":"rule-sudden-meaning","kind":"concept","format":"qa","priority":"essential","sourceSection":"Core idea","rule":"Sudden idhā (idhā al-fujāʾiyya) presents a sudden or unexpected scene.","example":"What does sudden idhā (idhā al-fujāʾiyya) convey in narrative?","answer":"A sudden, unexpected scene or discovery: “and suddenly,” “and behold.”","explanation":"خَرَجْتُ فَإِذَا الْمَطَرُ نَازِلٌ: I went out, and suddenly the rain was falling."} -->
+<!-- grammar-card: {"id":"rule-sudden-nominal","kind":"concept","format":"qa","priority":"essential","sourceSection":"Core idea","rule":"Sudden idhā is normally followed by a nominal sentence.","example":"Which kind of sentence normally follows sudden idhā?","answer":"A nominal sentence.","explanation":"Conditional idhā is followed by a verb clause; sudden idhā by a topic and predicate, as in الْمَطَرُ نَازِلٌ."} -->
+<!-- grammar-card: {"id":"rule-fa-before-idha","kind":"concept","format":"qa","priority":"optional","sourceSection":"Core idea","rule":"Sudden idhā often comes after a prior clause, joined with fa-.","example":"Which particle often comes right before sudden idhā?","answer":"فَـ (fa-), giving fa-idhā.","explanation":"It joins the sudden scene to a completed action: فَتَحْتُ الْبَابَ فَإِذَا صَدِيقِي وَاقِفٌ."} -->
 
 Sudden **إِذَا** (idhā) usually comes after another clause, often with **فَـ** (fa-), and is followed by a nominal sentence. It does not introduce a normal condition and does not need a conditional answer.
 
@@ -35,7 +38,7 @@ Do not confuse sudden **إِذَا** (idhā) with conditional **إِذَا** (id
 Look for a completed action followed by a surprising nominal sentence:
 
 - **دَخَلْتُ الْقَاعَةَ فَإِذَا الْمَقَاعِدُ مُمْتَلِئَةٌ** (dakhaltu al-qāʿata fa-idhā al-maqāʿidu mumtaliʾatun) — I entered the hall, and suddenly the seats were full.
-- **رَفَعْتُ رَأْسِي فَإِذَا الْهِلالُ ظَاهِرٌ** (rafaʿtu raʾsī fa-idhā al-hilālu ẓāhirun) — I raised my head, and there was the crescent visible.
+- **رَفَعْتُ رَأْسِي فَإِذَا الْهِلَالُ ظَاهِرٌ** (rafaʿtu raʾsī fa-idhā al-hilālu ẓāhirun) — I raised my head, and there was the crescent visible.
 - **بَحَثْتُ عَنِ الْمِفْتَاحِ فَإِذَا هُوَ فِي جَيْبِي** (baḥathtu ʿani al-miftāḥi fa-idhā huwa fī jaybī) — I looked for the key, and suddenly it was in my pocket.
 
 <!-- quiz: {"type": "multiple-choice", "question": "Which sentence uses sudden إِذَا (idhā)?", "options": ["دَخَلْتُ فَإِذَا الْقَاعَةُ مُمْتَلِئَةٌ (dakhaltu fa-idhā al-qāʿatu mumtaliʾatun)", "إِذَا تَدْرُسُ تَفْهَمُ (idhā tadrusu tafhamu)", "إِذَا جَاءَ الصَّيْفُ سَافَرْنَا (idhā jāʾa aṣ-ṣayfu sāfarnā)", "مَتَى تَذْهَبُ؟ (matā tadhhabu?)"], "answer": 0} -->
