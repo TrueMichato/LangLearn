@@ -24,7 +24,7 @@ Just remember that it's あそこ not あこ, though some dialects, such as Kans
 <!-- vocab-card: {"id":"vocab-soko","priority":"essential","sourceSection":"The Basics","word":"そこ","reading":"そこ","meaning":"there; that place (near the listener or a little away)"} -->
 <!-- vocab-card: {"id":"vocab-asoko","priority":"essential","sourceSection":"The Basics","word":"あそこ","reading":"あそこ","meaning":"over there; that place away from both people"} -->
 <!-- vocab-card: {"id":"vocab-doko","priority":"essential","sourceSection":"The Basics","word":"どこ","reading":"どこ","meaning":"where"} -->
-<!-- grammar-card: {"id":"standard-asoko","kind":"concept","format":"qa","priority":"optional","sourceSection":"The Basics","rule":"The standard distant-place demonstrative is あそこ","example":"Is あこ the standard distant-place member of the ここ series?","answer":"No. Standard Japanese uses あそこ; あこ or あっこ occurs in some dialects, including Kansai speech.","explanation":"Recognize a regional variant without replacing the standard lexical form."} -->
+<!-- grammar-card: {"id":"standard-asoko","kind":"concept","format":"qa","priority":"optional","sourceSection":"The Basics","rule":"The standard distant-place demonstrative is あそこ","example":"In standard Japanese, what is the \"over there\" (far from both people) member of the ここ series, and what variants do some dialects such as Kansai use?","answer":"あそこ (not あこ); あこ or あっこ occurs in some dialects, including Kansai speech.","explanation":"Recognize a regional variant without replacing the standard lexical form.","legacyAliases":[{"rule":"The standard distant-place demonstrative is あそこ","example":"Is あこ the standard distant-place member of the ここ series?"}]} -->
 
 ### Conceptualizing こそあど
 
@@ -106,7 +106,7 @@ To say the same thing, you can also use こっち, そっち, and あっち.
 
   - **This one** or **that one**, which one should we go to?
 
-<!-- grammar-card: {"id":"side-by-side-distance","kind":"concept","format":"qa","priority":"essential","sourceSection":"ここ, そこ, and あそこ for Physical Places","rule":"When speaker and listener share a viewpoint, そこ can indicate intermediate distance","example":"Can two people standing together call a restaurant across the street そこ?","answer":"Yes. そこ can indicate a place felt to be a little away; あそこ presents it as farther from both.","explanation":"The choice is relative and perspective-dependent, not a fixed number of meters or an absolute listener-only rule."} -->
+<!-- grammar-card: {"id":"side-by-side-distance","kind":"concept","format":"qa","priority":"essential","sourceSection":"ここ, そこ, and あそこ for Physical Places","rule":"When speaker and listener share a viewpoint, そこ can indicate intermediate distance","example":"Two people standing side by side look at a restaurant across the street. What does calling it そこ rather than あそこ convey?","answer":"That the speaker feels the place is only a little away; あそこ presents it as farther from both.","explanation":"The choice is relative and perspective-dependent, not a fixed number of meters or an absolute listener-only rule.","legacyAliases":[{"rule":"When speaker and listener share a viewpoint, そこ can indicate intermediate distance","example":"Can two people standing together call a restaurant across the street そこ?"}]} -->
 
 ### どこ for "Where?"
 
@@ -136,7 +136,7 @@ For example, let's say you are discussing a project with your coworker. You agre
 
   - Why are you so unconfident? **That**'s a part of you that you should try to fix.
 
-<!-- grammar-card: {"id":"abstract-point","kind":"rule","format":"cloze","priority":"optional","sourceSection":"ここ, そこ, あそこ, and どこ for Parts of a Whole","rule":"そこ can point at something the listener has just said","hint":"Refer back neutrally to that lack of confidence","example":"なんでそんなに自信ないの？___はあなたの直すべきところだよ。","answer":"そこ","explanation":"そこ refers to the just-discussed trait or point rather than a physical location; the example's admonishing tone is not a polite template."} -->
+<!-- grammar-card: {"id":"abstract-point","kind":"rule","format":"cloze","priority":"optional","sourceSection":"ここ, そこ, あそこ, and どこ for Parts of a Whole","rule":"そこ can point at something the listener has just said","example":"Referring back neutrally to the friend's lack of confidence just mentioned: なんでそんなに自信ないの？___はあなたの直すべきところだよ。","answer":"そこ","explanation":"そこ refers to the just-discussed trait or point rather than a physical location; the example's admonishing tone is not a polite template.","legacyAliases":[{"rule":"そこ can point at something the listener has just said","example":"なんでそんなに自信ないの？___はあなたの直すべきところだよ。"}]} -->
 
 ## Beyond the Basics
 
@@ -156,7 +156,7 @@ This expression is usually used when a certain part of a place is different comp
 
   - **Just between you and me**, I won the lottery!
 
-<!-- grammar-card: {"id":"only-place","kind":"rule","format":"cloze","priority":"optional","sourceSection":"ここ, そこ, あそこ with 〜だけ for a Limit on Places","rule":"だけ can attach directly to a place word","hint":"only this spot","example":"なんで___雪がないんだろう。","answer":"ここだけ","explanation":"ここだけ singles out this place, in contrast with the surrounding snow."} -->
+<!-- grammar-card: {"id":"only-place","kind":"rule","format":"cloze","priority":"optional","sourceSection":"ここ, そこ, あそこ with 〜だけ for a Limit on Places","rule":"だけ can attach directly to a place word","example":"The backyard is all snow except the one spot where you stand — \"only here\": なんで___雪がないんだろう。","answer":"ここだけ","explanation":"ここだけ singles out this place, in contrast with the surrounding snow.","legacyAliases":[{"rule":"だけ can attach directly to a place word","example":"なんで___雪がないんだろう。"}]} -->
 <!-- vocab-card: {"id":"vocab-kokodakenohanashi","priority":"optional","sourceSection":"ここ, そこ, あそこ with 〜だけ for a Limit on Places","word":"ここだけの話","reading":"ここだけのはなし","meaning":"just between us; confidentially"} -->
 
 ### ここ, そこ, あそこ, どこ with 〜ら辺 for an Approximate of Places
@@ -205,7 +205,7 @@ And since そこ is objective, it can be combined with the particle で and form
   - When I opened the refrigerator, I found that we were out of eggs and milk. **So** then I gave up on making pancakes.
 
 <!-- vocab-card: {"id":"vocab-sokode","priority":"optional","sourceSection":"ここ, そこ, and あそこ for Points in Time","word":"そこで","reading":"そこで","meaning":"so; thereupon (conjunction)"} -->
-<!-- grammar-card: {"id":"time-not-only-place","kind":"concept","format":"qa","priority":"optional","sourceSection":"ここ, そこ, and あそこ for Points in Time","rule":"Place demonstratives can refer to stages or moments","example":"Does あそこで in a reflection on a past decision have to mean a physical place?","answer":"No. It can mean at that point or time, recalled from memory.","explanation":"ここ can make a moment vivid or signal now; そこ can refer back to the established stage more neutrally."} -->
+<!-- grammar-card: {"id":"time-not-only-place","kind":"concept","format":"qa","priority":"optional","sourceSection":"ここ, そこ, and あそこ for Points in Time","rule":"Place demonstratives can refer to stages or moments","example":"Looking back on a past decision, what does あそこ refer to in あそこで違う行動に出ていたら…?","answer":"That point or moment in time, recalled from memory — not necessarily a physical place.","explanation":"ここ can make a moment vivid or signal now; そこ can refer back to the established stage more neutrally.","legacyAliases":[{"rule":"Place demonstratives can refer to stages or moments","example":"Does あそこで in a reflection on a past decision have to mean a physical place?"}]} -->
 
 ### ここ for Duration
 
