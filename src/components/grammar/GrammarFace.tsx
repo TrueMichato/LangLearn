@@ -7,11 +7,22 @@ import { isRTL, rtlProps } from '../../lib/rtl';
 type FaceFields = Pick<GrammarReviewItem, 'prompt' | 'hint' | 'answer' | 'explanation' | 'rule'> &
   Partial<Pick<GrammarReviewItem, 'format' | 'provenance' | 'learnerEdited'>>;
 
-// An English question can quote Arabic (and an Arabic example can quote English).
+// First letter picks the script, but an Arabic lesson's mostly-Latin text (outside parentheses) that opens with Arabic stays LTR.
 function direction(text: string, language: string) {
   const firstLetter = text.match(/\p{Letter}/u)?.[0];
   if (!firstLetter) return rtlProps(language);
-  return { dir: /\p{Script=Arabic}/u.test(firstLetter) ? 'rtl' : 'ltr' };
+  if (!/\p{Script=Arabic}/u.test(firstLetter)) return { dir: 'ltr' };
+  if (language === 'ar') {
+    let outside = text, previous;
+    do {
+      previous = outside;
+      outside = outside.replace(/\([^()]*\)/g, ' ');
+    } while (outside !== previous);
+    const letters = outside.match(/\p{Letter}/gu) ?? [];
+    const latin = letters.filter((letter) => /\p{Script=Latin}/u.test(letter)).length;
+    if (latin > letters.filter((letter) => /\p{Script=Arabic}/u.test(letter)).length) return { dir: 'ltr' };
+  }
+  return { dir: 'rtl' };
 }
 
 const mainText = 'whitespace-pre-line break-words text-[length:var(--app-font-size)] leading-relaxed text-slate-800 dark:text-slate-100';
