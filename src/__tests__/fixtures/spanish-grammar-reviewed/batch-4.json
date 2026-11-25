@@ -1,0 +1,53 @@
+{"lessons": {
+  "latin-vs-european": {
+    "answerChanged": {
+      "regional-pronunciation-status": "Telegraphed yes/no front reworded as an open question; same target (seseo and distinción are equally standard regional systems), answer restated without the leading No.",
+      "yeismo-sound-variation": "Telegraphed yes/no front reworded as an open question; same target (yeísmo names the ll/y merger, whose sound varies by region), answer restated as the definition."
+    }
+  },
+  "register-formality": {
+    "reclassified": {
+      "vosotros-endings": "Production task (give three conjugated forms), not declarative rule recall: concept → rule, kept qa and optional for saved-card identity.",
+      "switch-register": "Interpreting what a set phrase proposes is comprehension, not rule recall: concept → rule."
+    },
+    "split": {
+      "vosotros-endings": ["vosotros-comer", "vosotros-vivir"]
+    },
+    "answerChanged": {
+      "address-context": "Telegraphed yes/no front reworded as an open question; same target (relationship, setting, age and local usage decide address, not country alone), answer restated without the leading No.",
+      "colombian-usted": "Telegraphed yes/no front reworded as an open question; same target (Colombian usted can convey warmth and closeness), answer restated without the leading No."
+    }
+  },
+  "adverbs": {},
+  "negation": {
+    "answerChanged": {
+      "negative-concord-meaning": "Telegraphed yes/no front reworded as an open question; same target (no + nada reinforce one negation), answer restated without the leading No."
+    }
+  },
+  "cognates": {},
+  "saber-vs-conocer": {
+    "answerChanged": {
+      "como-qualification": "Telegraphed yes/no front reworded as an open when-question; same target (saber cómo is grammatical for manner/procedure), answer restated without the leading No."
+    }
+  },
+  "pedir-vs-preguntar": {},
+  "ser-estar-advanced": {},
+  "acabar-de": {},
+  "llevar-gerundio": {
+    "answerChanged": {
+      "perfect-not-banned": "Telegraphed yes/no front reworded as an open status question; same target (the perfect progressive can be grammatical), answer restated without the leading No.",
+      "duration-word-order": "Telegraphed yes/no front reworded as an open where-question; same target (duration before or after the gerund), answer restated without the leading No."
+    }
+  },
+  "hace-que-time": {
+    "answerChanged": {
+      "que-not-sole-test": "Telegraphed yes/no front reworded as an open question; same target (tense and context, not que, decide the meaning), answer restated without the leading Yes.",
+      "question-tense": "Telegraphed yes/no front reworded as an open question; same target (the preterite question asks how long ago), answer restated without the leading No."
+    }
+  },
+  "soler-habits": {
+    "answerChanged": {
+      "restricted-not-absent": "Telegraphed yes/no front reworded as an open question; same target (suela and ha solido are real forms), answer restated without the leading No."
+    }
+  }
+}}

@@ -1,5 +1,7 @@
 # Subjunctive Mood (бы in Complex Sentences)
 
+<!-- vocab-inventory: {"mode":"explicit"} -->
+
 While the basic conditional with **бы** covers "would" sentences (see Lesson 23), the subjunctive mood in Russian extends far beyond simple conditionals. The particle **бы** appears in a wide range of complex sentence structures — purpose clauses, wishes, concessions, and more. This lesson explores the full scope of **бы** in multi-clause sentences.
 
 ---
@@ -36,7 +38,13 @@ The conjunction **чтобы** (что + бы) is one of the most important uses
 
 <!-- quiz:{"type":"multiple-choice","question":"'Мама хочет, чтобы я учился хорошо' — why is 'учился' in past tense?","options":["Because it happened in the past","Because чтобы with different subjects requires past tense","Because мама is the subject","It's actually present tense"],"answer":1} -->
 
-<!-- grammar-card: {"rule":"When the two clauses have different subjects, use чтобы plus a past-tense verb","hint":"что / чтобы","example":"Я хочу, ___ ты пришёл.","answer":"чтобы","explanation":"The wanting and the coming belong to different people, so чтобы with пришёл is required."} -->
+<!-- grammar-card: {"id":"want-you-to-come","kind":"rule","format":"cloze","priority":"essential","sourceSection":"2. Чтобы — Purpose Clauses (Different Subjects)","rule":"When the two clauses have different subjects, use чтобы plus a past-tense verb","example":"Tell a friend you want them to come: Я хочу, ___ ты пришёл.","answer":"чтобы","explanation":"The wanting and the coming belong to different people, so the clause needs чтобы with a past-tense verb. Plain что does not work after хотеть when someone else is to act.","legacyAliases":[{"rule":"When the two clauses have different subjects, use чтобы plus a past-tense verb","example":"Я хочу, ___ ты пришёл."}]} -->
+
+<!-- grammar-card: {"id":"rule-chtoby-past","kind":"concept","format":"qa","priority":"essential","sourceSection":"2. Чтобы — Purpose Clauses (Different Subjects)","rule":"A wish or purpose about someone else takes the past tense after чтобы","example":"In the Russian for I want you to come, the second clause has a different subject. Which verb form goes in it?","answer":"The past tense, after чтобы.","explanation":"Any answer naming the past tense counts. Чтобы contains бы, which always pairs with past-tense forms, so Я хочу, чтобы ты пришёл, even though the coming is in the future."} -->
+
+<!-- grammar-card: {"id":"to-become-doctor","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Same subject → чтобы + infinitive (no бы visible)","rule":"With the same subject in both clauses, чтобы takes an infinitive","example":"Say she studies in order to become a doctor: Она учится, чтобы ___ врачом.","answer":"стать","explanation":"She is the one studying and the one becoming a doctor, so чтобы takes the infinitive стать rather than a past-tense form."} -->
+
+<!-- grammar-card: {"id":"rule-chtoby-infinitive","kind":"concept","format":"qa","priority":"optional","sourceSection":"Same subject → чтобы + infinitive (no бы visible)","rule":"Same subject: the purpose clause uses an infinitive","example":"When both clauses have the same subject, as in I came to help, what verb form follows the purpose conjunction?","answer":"An infinitive.","explanation":"Any answer naming the infinitive counts. With one subject there is nobody new to name, so Я пришёл, чтобы помочь needs no past-tense verb."} -->
 
 ---
 
@@ -54,11 +62,13 @@ The conjunction **чтобы** (что + бы) is one of the most important uses
 
 ### Verbs of request and command
 
-**Я попросил, чтобы он перезвонил.** *(Ya poprosíl, chtóby on perezvonfl.)* — I asked him to call back.
+**Я попросил, чтобы он перезвонил.** *(Ya poprosíl, chtóby on perezvoníl.)* — I asked him to call back.
 
 **Начальник приказал, чтобы все пришли вовремя.** *(Nachálnik prikazál, chtóby vse prishlí vóvremya.)* — The boss ordered everyone to come on time.
 
-**Скажи ему, чтобы он подождал.** *(Skazhí yemú, chtóby on podozhddál.)* — Tell him to wait.
+**Скажи ему, чтобы он подождал.** *(Skazhí yemú, chtóby on podozhdál.)* — Tell him to wait.
+
+<!-- grammar-card: {"id":"asked-to-call-back","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Verbs of request and command","rule":"After a request with чтобы, the other person's action is in the past tense","example":"Say you asked him to call back. Use перезвонить: Я попросил, чтобы он ___.","answer":"перезвонил","explanation":"A request about someone else takes чтобы with the past tense, so the infinitive перезвонить becomes перезвонил even though the call has not happened yet."} -->
 
 ### Verbs of necessity and recommendation
 
@@ -100,7 +110,9 @@ The conjunction **чтобы** (что + бы) is one of the most important uses
 
 **Если бы он позвонил вчера, мы бы сейчас знали.** *(Yésli by on pozvoníl vchera, my by seychás ználi.)* — If he had called yesterday, we would know now.
 
-**Если бы я учил русский с детства, я бы сейчас говорил свободно.** *(Yésli by ya uchíl rússkiy s détstva, ya by seychás govorfl svobódno.)* — If I had studied Russian since childhood, I would speak fluently now.
+**Если бы я учил русский с детства, я бы сейчас говорил свободно.** *(Yésli by ya uchíl rússkiy s détstva, ya by seychás govoríl svobódno.)* — If I had studied Russian since childhood, I would speak fluently now.
+
+<!-- grammar-card: {"id":"did-he-call","kind":"rule","format":"qa","priority":"optional","sourceSection":"Mixed real and unreal conditions","rule":"Если бы describes a condition that did not happen","example":"Если бы он позвонил вчера, мы бы сейчас знали. Did he call yesterday?","answer":"No, he didn't.","explanation":"Если бы makes the condition unreal: we would know now if he had called, so in fact he didn't call."} -->
 
 ---
 
@@ -132,9 +144,9 @@ The conjunction **чтобы** (что + бы) is one of the most important uses
 
 These constructions use **бы... ни** to express "no matter who/what/where/when":
 
-**Что бы ни случилось, мы справимся.** *(Chto by ni sluchílos, my správímsya.)* — Whatever happens, we'll manage.
+**Что бы ни случилось, мы справимся.** *(Chto by ni sluchílos, my správimsya.)* — Whatever happens, we'll manage.
 
-**Кто бы ни пришёл, встречайте вежливо.** *(Kto by ni prishyól, vstrecháyte vézhlivо.)* — Whoever comes, greet them politely.
+**Кто бы ни пришёл, встречайте вежливо.** *(Kto by ni prishyól, vstrecháyte vézhlivo.)* — Whoever comes, greet them politely.
 
 **Где бы он ни был, он всегда звонит маме.** *(Gde by on ni býl, on vsegdá zvonít máme.)* — Wherever he is, he always calls his mom.
 
@@ -142,15 +154,19 @@ These constructions use **бы... ни** to express "no matter who/what/where/wh
 
 **Сколько бы я ни объяснял, он не понимает.** *(Skólko by ya ni obyasnyál, on ne ponimáyet.)* — No matter how much I explain, he doesn't understand.
 
+<!-- grammar-card: {"id":"whatever-happens","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Кто бы ни / что бы ни — \"whoever / whatever\"","rule":"Whatever, whoever and wherever use бы ни, not бы не","example":"Reassure a friend that you'll manage whatever happens: Что бы ___ случилось, мы справимся.","answer":"ни","explanation":"The concessive whatever is что бы ни; не would wrongly negate the verb. Ни here adds no matter, not a denial."} -->
+
+<!-- grammar-card: {"id":"rule-by-ni-concessive","kind":"concept","format":"qa","priority":"optional","sourceSection":"7. Бы in Concessive Clauses","rule":"Question word + бы + ни means no matter who, what or where","example":"Which two particles join a question word such as что or кто to mean whatever or whoever?","answer":"Бы and ни.","explanation":"Any answer naming бы and ни counts. Что бы ни, кто бы ни and где бы ни all mean no matter what, who or where."} -->
+
 <!-- quiz:{"type":"multiple-choice","question":"'Что бы ни случилось, мы справимся' means:","options":["Something bad happened and we won't manage","Nothing happened, so we'll be fine","Whatever happens, we'll manage","We managed because nothing happened"],"answer":2} -->
 
 ---
 
-## 8. Бы with Чуть не / Едва не — "Almost"
+## 8. Чуть (было) не / Едва не — "Almost"
 
-**Чуть бы не** and **едва бы не** express something that almost happened:
+**Чуть (было) не** and **едва не** express something that almost happened — but didn't:
 
-**Я чуть было не опоздал!** *(Ya chut bylo ne opozdál!)* — I almost was late!
+**Я чуть было не опоздал!** *(Ya chut bylo ne opozdál!)* — I was almost late!
 
 **Она чуть было не забыла паспорт.** *(Oná chut bylo ne zabýla pásport.)* — She almost forgot her passport.
 
@@ -158,7 +174,9 @@ These constructions use **бы... ни** to express "no matter who/what/where/wh
 
 > Note: **было** (not бы) is used here as an emphatic particle.
 
-<!-- grammar-card: {"rule":"Чуть было не describes something that very nearly happened","hint":"чуть ___ не","example":"Я чуть ___ не опоздал!","answer":"было","explanation":"The fixed phrase inserts было before не to mean almost — nothing was actually late."} -->
+<!-- grammar-card: {"id":"nearly-late","kind":"rule","format":"cloze","priority":"optional","sourceSection":"8. Чуть (было) не / Едва не — \"Almost\"","rule":"Чуть было не describes something that very nearly happened","example":"Say you very nearly were late. Use the full almost phrase, with the neuter past-tense form of быть between чуть and не: Я чуть ___ не опоздал!","answer":"было","explanation":"The full phrase чуть было не puts было, the neuter past of быть (not бы), before не. Here не does not deny anything: it marks what almost happened.","legacyAliases":[{"rule":"Чуть было не describes something that very nearly happened","example":"Я чуть ___ не опоздал!"}]} -->
+
+<!-- grammar-card: {"id":"was-i-late","kind":"rule","format":"qa","priority":"essential","sourceSection":"8. Чуть (было) не / Едва не — \"Almost\"","rule":"Чуть не means the event almost happened but did not","example":"Я чуть было не упал! Did the speaker fall?","answer":"No, but very nearly.","explanation":"Чуть было не means almost: falling nearly happened but in the end didn't, despite the не before the verb."} -->
 
 ---
 

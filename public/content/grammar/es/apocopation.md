@@ -38,6 +38,8 @@ There is a feminine exception for **uno, alguno** and **ninguno** before a noun 
 <!-- vocab-card: {"id":"vocab-alguno","word":"alguno","meaning":"some; any (indefinite)","priority":"optional","sourceSection":"What Apocopates Before a Masculine Singular Noun"} -->
 <!-- vocab-card: {"id":"vocab-ninguno","word":"ninguno","meaning":"no; none; not any","priority":"optional","sourceSection":"What Apocopates Before a Masculine Singular Noun"} -->
 <!-- vocab-card: {"id":"vocab-postrero","word":"postrero","meaning":"last; final (literary)","priority":"optional","sourceSection":"What Apocopates Before a Masculine Singular Noun"} -->
+<!-- grammar-card: {"id":"rule-masculine-singular-trigger","kind":"concept","format":"qa","priority":"essential","sourceSection":"What Apocopates Before a Masculine Singular Noun","rule":"Bueno, malo, primero and similar adjectives shorten only before a masculine singular noun","example":"Before what kind of noun do malo and primero drop their final -o?","answer":"A masculine singular noun (un mal día, el primer capítulo).","explanation":"Any answer naming masculine singular counts. Before feminine or plural nouns, or after the noun, the full form returns: una mala idea, los primeros días."} -->
+<!-- grammar-card: {"id":"rule-algun-accent","kind":"concept","format":"qa","priority":"optional","sourceSection":"What Apocopates Before a Masculine Singular Noun","rule":"Shortened alguno and ninguno take a written accent","example":"Why do the shortened forms of alguno and ninguno need a written accent?","answer":"They now end in n and are stressed on that final syllable, which needs a written accent (algún, ningún).","explanation":"Any answer linking the accent to final stress in a word ending in n counts. The full forms alguno and ninguno need no accent."} -->
 <!-- grammar-card: {"id":"masculine-apocope","kind":"rule","format":"cloze","priority":"essential","sourceSection":"What Apocopates Before a Masculine Singular Noun","rule":"bueno/malo/primero/tercero/alguno/ninguno/uno drop final -o before a masculine singular noun","example":"No tengo ___ problema con eso. (I have no problem with that)","answer":"ningún","explanation":"Problema is masculine singular. The shortened form needs a written accent to preserve its stress."} -->
 <!-- grammar-card: {"id":"full-form-after","kind":"rule","format":"cloze","priority":"essential","sourceSection":"What Apocopates Before a Masculine Singular Noun","rule":"Bueno keeps its full inflected form after a noun","example":"Es un amigo ___. (good; put the adjective after the noun)","answer":"bueno","explanation":"Compare un buen amigo, una buena amiga and unos buenos amigos."} -->
 <!-- grammar-card: {"id":"ordinal-third","kind":"rule","format":"cloze","priority":"optional","sourceSection":"What Apocopates Before a Masculine Singular Noun","rule":"Tercero shortens before a masculine singular noun","example":"Vivo en el ___ piso. (third)","answer":"tercer","explanation":"Before a feminine noun use tercera; before plural nouns use the matching plural form."} -->
@@ -48,12 +50,14 @@ There is a feminine exception for **uno, alguno** and **ninguno** before a noun 
 
 The apocope still applies even when **another word** sits between the adjective and the noun:
 
-- **El primer y único intento** — the first and only attempt.
+- **Mi primer gran amor** — my first great love.
 - **Un buen, aunque pequeño, regalo** — a good, though small, gift.
 
 The trigger is being **before** a masculine singular noun in the phrase — not literal adjacency.
 
-<!-- grammar-card: {"id":"intervening-modifier","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Apocopation Survives a Modifier","rule":"A modifier does not necessarily block apocopation in the noun phrase","example":"Fue el ___ y único intento. (primero)","answer":"primer","explanation":"The adjective still precedes masculine singular intento despite y único."} -->
+When the adjective is **coordinated** with another one, the full form is also correct: **el primer y único intento** and **el primero y único intento** are both standard.
+
+<!-- grammar-card: {"id":"intervening-modifier","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Apocopation Survives a Modifier","rule":"An adjective between primero and a masculine singular noun does not block apocopation","example":"Fue mi ___ gran amor. (primero; my first great love)","answer":"primer","explanation":"Primer still precedes masculine singular amor; gran in between does not block the shortening. With coordination (primer y único) the full form primero is also accepted.","legacyAliases":[{"rule":"A modifier does not necessarily block apocopation in the noun phrase","example":"Fue el ___ y único intento. (primero)"}]} -->
 
 ## Grande → Gran (Before ANY Singular Noun)
 
@@ -99,6 +103,9 @@ Learn the conventional saint-name forms rather than trying to derive every name 
 <!-- vocab-card: {"id":"vocab-santo","word":"santo","meaning":"saint; holy","priority":"optional","sourceSection":"Santo → San (Before Most Male Saints' Names)"} -->
 <!-- grammar-card: {"id":"saint-name","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Santo → San (Before Most Male Saints' Names)","rule":"Most male saint names take san","example":"___ Pedro. (Saint Peter)","answer":"San","explanation":"The feminine remains Santa, as in Santa María; conventional exceptions retain Santo."} -->
 <!-- grammar-card: {"id":"saint-exception-cue","kind":"concept","format":"qa","priority":"optional","sourceSection":"Santo → San (Before Most Male Saints' Names)","rule":"Do-/To- recalls conventional Santo exceptions, not an unrestricted prefix rule","example":"Which Santo exceptions does the Do-/To- memory cue recall, and what is its limit?","answer":"Santo Domingo, Santo Tomás, Santo Tomé and Santo Toribio; the cue recalls these names rather than predicting every Do-/To- name.","explanation":"Do maps to Domingo; To maps to Tomás, Tomé and Toribio. Female saint names retain Santa."} -->
+<!-- grammar-card: {"id":"santo-do-exception","kind":"concept","format":"qa","priority":"optional","sourceSection":"Santo → San (Before Most Male Saints' Names)","rule":"Domingo keeps the full form Santo","example":"Which male saint's name beginning with Do- keeps the full form Santo?","answer":"Domingo (Santo Domingo).","explanation":"It is a learned convention, not a rule for every name beginning with Do-."} -->
+<!-- grammar-card: {"id":"santo-to-exceptions","kind":"concept","format":"qa","priority":"optional","sourceSection":"Santo → San (Before Most Male Saints' Names)","rule":"Tomás, Tomé and Toribio keep the full form Santo","example":"Which male saints' names beginning with To- keep the full form Santo?","answer":"Tomás, Tomé and Toribio (as in Santo Tomás).","explanation":"These are learned conventions, not a rule for every name beginning with To-."} -->
+<!-- grammar-card: {"id":"rule-santa-never","kind":"concept","format":"qa","priority":"optional","sourceSection":"Santo → San (Before Most Male Saints' Names)","rule":"Feminine Santa never shortens","example":"What form does the feminine of santo take before a female saint's name?","answer":"Always the full form Santa; it never shortens (Santa María).","explanation":"Any answer saying Santa does not shorten counts."} -->
 
 <!-- quiz: {"type":"multiple-choice","question":"Which is correct?","options":["San Tomás","Santo Tomás","Santo Pedro","San Bárbara"],"answer":1} -->
 
@@ -118,10 +125,11 @@ It stays **ciento** in compound numbers:
 | **cien** | Before noun, mil, millones | **cien libros**, **cien mil euros** |
 | **ciento** | Compound numbers above 100 | **ciento veinte (120)** |
 
-Exactly 100 on its own is **cien**, not *ciento*.
+Exactly 100 on its own is **cien**, not *ciento*. One exception: percentages normally use **por ciento** (*el diez por ciento*), and for 100% *ciento por ciento*, *cien por ciento* and *cien por cien* all occur.
 
 <!-- grammar-card: {"id":"hundred-noun","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Ciento → Cien (Before a Noun or Mil/Millones)","rule":"One hundred is cien before a noun, mil or millones, and on its own","example":"Hay ___ personas. (100)","answer":"cien","explanation":"Use cien personas, cien mil and cien millones; standalone 100 is also cien."} -->
 <!-- grammar-card: {"id":"compound-hundred","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Ciento → Cien (Before a Noun or Mil/Millones)","rule":"Numbers from 101 to 199 retain ciento","example":"Hay ___ veinte libros. (120)","answer":"ciento","explanation":"Ciento veinte contrasts with exactly cien."} -->
+<!-- grammar-card: {"id":"rule-cien-before","kind":"concept","format":"qa","priority":"optional","sourceSection":"Ciento → Cien (Before a Noun or Mil/Millones)","rule":"One hundred shortens before a noun and before mil or millones","example":"Before which words does the number 100 take its short form?","answer":"Before a noun, or before mil or millones (cien libros, cien mil).","explanation":"Any answer naming nouns and mil/millones counts. Compound numbers such as ciento veinte keep the full form."} -->
 
 ## Cualquiera → Cualquier (Before Any Singular Noun)
 
@@ -135,7 +143,8 @@ The plural **cualesquiera** is rare and literary. A common alternative selects o
 
 <!-- vocab-card: {"id":"vocab-cualquiera","word":"cualquiera","meaning":"any; any one; either (of two)","priority":"optional","sourceSection":"Cualquiera → Cualquier (Before Any Singular Noun)"} -->
 <!-- grammar-card: {"id":"any-feminine","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Cualquiera → Cualquier (Before Any Singular Noun)","rule":"Cualquiera shortens before a singular noun of either gender","example":"___ mujer puede participar. (Any woman)","answer":"Cualquier","explanation":"Gender does not block this apocope; standalone cualquiera retains its final a."} -->
-<!-- grammar-card: {"id":"cualesquiera-register","kind":"concept","format":"qa","priority":"optional","sourceSection":"Cualquiera → Cualquier (Before Any Singular Noun)","rule":"Cualesquiera is a literary plural; cualquiera de selects one member","example":"What register does cualesquiera have, and how would you commonly say any one of the books?","answer":"It is rare or literary; cualquiera de los libros selects any one of the books.","explanation":"The alternative contains de plus a definite plural set, not just de plus a bare plural noun."} -->
+<!-- grammar-card: {"id":"cualesquiera-register","kind":"concept","format":"qa","priority":"optional","sourceSection":"Cualquiera → Cualquier (Before Any Singular Noun)","rule":"The plural cualesquiera is rare and literary","example":"What register does the plural cualesquiera have?","answer":"It is rare and literary.","explanation":"Everyday Spanish avoids it; see cualquiera de los libros for picking any one member of a set.","legacyAliases":[{"rule":"Cualesquiera is a literary plural; cualquiera de selects one member","example":"What register does cualesquiera have, and how would you commonly say any one of the books?"}]} -->
+<!-- grammar-card: {"id":"cualquiera-de-one-member","kind":"rule","format":"qa","priority":"optional","sourceSection":"Cualquiera → Cualquier (Before Any Singular Noun)","rule":"Cualquiera de + a definite plural picks any one member","example":"Using cualquiera, how would you commonly say any one of the books?","answer":"Cualquiera de los libros.","explanation":"The phrase needs de plus a definite plural set (los libros), not de plus a bare plural noun."} -->
 
 ## Mini-Dialogue
 

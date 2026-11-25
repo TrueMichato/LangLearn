@@ -1,5 +1,7 @@
 # Verbal Adverbs / Gerunds (Деепричастия)
 
+<!-- vocab-inventory: {"mode":"explicit"} -->
+
 Russian verbal adverbs (деепричастия) describe an **additional action** performed by the same subject as the main verb. They function like adverbs — they are invariable (do not change form) and modify the verb. English equivalents include "while doing," "having done," or "by doing."
 
 ---
@@ -16,7 +18,7 @@ There are two types:
 1. **Imperfective verbal adverbs** — simultaneous action (while doing)
 2. **Perfective verbal adverbs** — prior/completed action (having done)
 
-<!-- grammar-card: {"rule":"A verbal adverb must share its subject with the main verb","hint":"пить (to drink), past tense","example":"Читая книгу, она ___ чай.","answer":"пила","explanation":"Она does both the reading and the drinking, and being feminine takes the past form пила."} -->
+<!-- grammar-card: {"id": "reading-drank-tea", "kind": "rule", "format": "cloze", "priority": "optional", "sourceSection": "1. What Are Verbal Adverbs?", "rule": "A verbal adverb must share its subject with the main verb", "example": "While reading a book, she drank tea. Use пить (to drink), past tense: Читая книгу, она ___ чай.", "answer": "пила", "explanation": "Читая has no subject of its own, so она is the subject of both actions; the main verb therefore agrees with она and takes the feminine past пила.", "legacyAliases": [{"rule": "A verbal adverb must share its subject with the main verb", "example": "Читая книгу, она ___ чай."}]} -->
 
 ---
 
@@ -26,18 +28,18 @@ Imperfective verbal adverbs express an action happening **at the same time** as 
 
 ### Formation
 
-From the **они** (3rd person plural) present tense, replace **-т** with **-я** (or **-а** after hissing consonants ж, ш, ч, щ):
+From the **они** (3rd person plural) present tense, drop the ending (**-ют/-ут/-ят/-ат**) and add **-я** (or **-а** after hissing consonants ж, ш, ч, щ); reflexive verbs then add **-сь**:
 
 | Verb | Они form | Verbal adverb | Meaning |
 |---|---|---|---|
-| читать | читаю**т** | чита**я** | while reading |
-| говорить | говоря**т** | говор**я** | while speaking |
-| думать | думаю**т** | дума**я** | while thinking |
-| улыбаться | улыбаю**т**ся | улыба**я**сь | while smiling |
-| сидеть | сидя**т** | сид**я** | while sitting |
-| держать | держа**т** | держ**а** | while holding |
-| молчать | молча**т** | молч**а** | while being silent |
-| слышать | слыша**т** | слыш**а** | while hearing |
+| читать | чита**ют** | чита**я** | while reading |
+| говорить | говор**ят** | говор**я** | while speaking |
+| думать | дума**ют** | дума**я** | while thinking |
+| улыбаться | улыба**ют**ся | улыба**я**сь | while smiling |
+| сидеть | сид**ят** | сид**я** | while sitting |
+| держать | держ**ат** | держ**а** | while holding |
+| молчать | молч**ат** | молч**а** | while being silent |
+| слышать | слыш**ат** | слыш**а** | while hearing |
 
 ### Examples
 
@@ -45,15 +47,17 @@ From the **они** (3rd person plural) present tense, replace **-т** with **-�
 
 **Она шла по улице, думая о работе.** *(Ona shla po ulitse, dumaya o rabote.)* — She walked along the street, thinking about work.
 
-**Улыбаясь, девушка ответила на вопрос.** *(Ulybays, devushka otvetila na vopros.)* — Smiling, the girl answered the question.
+**Улыбаясь, девушка ответила на вопрос.** *(Ulybayas, devushka otvetila na vopros.)* — Smiling, the girl answered the question.
 
 **Сидя у окна, я наблюдал за птицами.** *(Sidya u okna, ya nablyudal za ptitsami.)* — Sitting by the window, I watched the birds.
 
 **Слушая музыку, она рисовала.** *(Slushaya muzyku, ona risovala.)* — While listening to music, she was drawing.
 
-**Молча, он вышел из комнаты.** *(Molcha, on vyshel iz komnaty.)* — Silently (while being silent), he left the room.
+**Молча он вышел из комнаты.** *(Molcha on vyshel iz komnaty.)* — Silently (while being silent), he left the room.
 
 <!-- quiz:{"type":"multiple-choice","question":"Imperfective verbal adverbs express an action that is:","options":["Completed before the main action","Simultaneous with the main action","Happening after the main action","Unrelated to the main action"],"answer":1} -->
+
+<!-- grammar-card: {"id": "smiling-girl-answered", "kind": "rule", "format": "cloze", "priority": "essential", "sourceSection": "2. Imperfective Verbal Adverbs (Несовершенный вид)", "rule": "An imperfective verbal adverb drops the они-form ending (-ют/-ут/-ят/-ат) and adds -я (-а after ж, ш, ч, щ)", "example": "Smiling, the girl answered the question. Use улыбаться (to smile; они улыбаются): ___, девушка ответила на вопрос.", "answer": "Улыбаясь", "explanation": "The smiling happens at the same time as the answering, so the imperfective verbal adverb is needed: улыбаются drops the ending -ют, adds -я, and keeps the reflexive as -сь."} -->
 
 ---
 
@@ -84,17 +88,21 @@ Some verbs with stems ending in a consonant (no -л) use **-ши**: принёс
 
 **Написав сочинение, он сдал тетрадь.** *(Napisav sochineniye, on sdal tetrad.)* — Having written the essay, he handed in the notebook.
 
-**Вернувшись домой, мы поужинали.** *(Vernuvshis domoy, my pouzhynali.)* — Having returned home, we had dinner.
+**Вернувшись домой, мы поужинали.** *(Vernuvshis domoy, my pouzhinali.)* — Having returned home, we had dinner.
 
 **Проснувшись рано, я пошёл на пробежку.** *(Prosnuvshis rano, ya poshyol na probezhku.)* — Having woken up early, I went for a run.
 
-**Узнав правду, он был очень удивлён.** *(Uznav pravdu, on byl ochen udivlyyon.)* — Having learned the truth, he was very surprised.
+**Узнав правду, он был очень удивлён.** *(Uznav pravdu, on byl ochen udivlyon.)* — Having learned the truth, he was very surprised.
 
 **Закрыв дверь, она ушла.** *(Zakryv dver, ona ushla.)* — Having closed the door, she left.
 
 <!-- quiz:{"type":"multiple-choice","question":"How is a perfective verbal adverb typically formed?","options":["From они form, replace -т with -я","From past masculine, replace -л with -в","From infinitive, add -вши","From мы form, add -в"],"answer":1} -->
 
-<!-- grammar-card: {"rule":"Perfective verbal adverbs end in -в or -вши, keeping -сь if reflexive","hint":"вернуться → вернув-?","example":"Вернув___ домой, мы поужинали.","answer":"шись","explanation":"Вернуться is reflexive, so its verbal adverb keeps the reflexive ending: вернувшись."} -->
+<!-- grammar-card: {"id": "returned-home-had-dinner", "kind": "rule", "format": "cloze", "priority": "optional", "sourceSection": "3. Perfective Verbal Adverbs (Совершенный вид)", "rule": "Perfective verbal adverbs end in -в or -вши, keeping -сь if reflexive", "example": "Having returned home, we had dinner. Use вернуться (to return; он вернулся): Вернув___ домой, мы поужинали.", "answer": "шись", "explanation": "Вернуться is reflexive, so the perfective verbal adverb takes -вши and keeps the reflexive -сь: вернувшись.", "legacyAliases": [{"rule": "Perfective verbal adverbs end in -в or -вши, keeping -сь if reflexive", "example": "Вернув___ домой, мы поужинали."}]} -->
+
+<!-- grammar-card: {"id": "read-letter-then-cried", "kind": "rule", "format": "qa", "priority": "essential", "sourceSection": "3. Perfective Verbal Adverbs (Совершенный вид)", "rule": "A perfective verbal adverb names an action completed before the main one", "example": "Прочитав письмо, она заплакала. Прочитав comes from прочитать (to read through); заплакала means she started to cry. When did she start to cry?", "answer": "After she finished reading the letter.", "explanation": "Прочитав is a perfective verbal adverb, so the reading was completed first and the crying followed."} -->
+
+<!-- grammar-card: {"id": "rule-perfective-adverb-timing", "kind": "concept", "format": "qa", "priority": "essential", "sourceSection": "3. Perfective Verbal Adverbs (Совершенный вид)", "rule": "Perfective verbal adverbs express an action completed before the main verb", "example": "A verbal adverb such as прочитав or сделав places its action at what time, relative to the main verb?", "answer": "Before it.", "explanation": "Any answer saying the action is completed earlier counts. Сделав уроки, дети пошли гулять: the homework was finished first."} -->
 
 ---
 
@@ -110,6 +118,8 @@ The verbal adverb and the main verb **must** have the same subject. This is the 
 
 ✅ **Когда я читал книгу, мне стало скучно.** — Correct with a subordinate clause instead.
 
+<!-- grammar-card: {"id": "rule-same-subject", "kind": "concept", "format": "qa", "priority": "essential", "sourceSection": "Rule 1: Same subject", "rule": "A verbal adverb and the main verb must have the same subject", "example": "What must a verbal adverb always share with the main verb of its sentence?", "answer": "The subject.", "explanation": "Any answer naming the subject counts. Читая книгу, я заснул works because я both reads and falls asleep; with dative мне a когда clause is needed instead."} -->
+
 ### Rule 2: Not all verbs form verbal adverbs
 
 Some verbs **cannot** form imperfective verbal adverbs:
@@ -124,6 +134,8 @@ Verbal adverbs and verbal adverb phrases are **always set off by commas**:
 **Увидев друга, я остановился.** — Having seen a friend, I stopped.
 
 **Она работала, слушая радио.** — She worked, listening to the radio.
+
+<!-- grammar-card: {"id": "rule-commas", "kind": "concept", "format": "qa", "priority": "optional", "sourceSection": "Rule 3: Punctuation", "rule": "Verbal adverb phrases are set off by commas", "example": "In writing, how is a verbal adverb phrase separated from the rest of the sentence?", "answer": "With commas.", "explanation": "Any answer naming commas counts. Увидев друга, я остановился. Fixed adverbs such as молча are the exception."} -->
 
 ---
 
@@ -146,7 +158,13 @@ Some verbal adverbs have become **fixed adverbs** through frequent use. They are
 
 **Она не спеша пила чай.** *(Ona ne spesha pila chay.)* — She drank tea unhurriedly.
 
-**Он нехотя согласился.** *(On nekhotya soglassilsya.)* — He reluctantly agreed.
+**Он нехотя согласился.** *(On nekhotya soglasilsya.)* — He reluctantly agreed.
+
+<!-- vocab-card: {"id": "vocab-molcha", "word": "мо́лча", "meaning": "silently", "priority": "optional", "sourceSection": "5. Verbal Adverbs That Became True Adverbs"} -->
+
+<!-- vocab-card: {"id": "vocab-ne-spesha", "word": "не спеша́", "meaning": "unhurriedly", "priority": "optional", "sourceSection": "5. Verbal Adverbs That Became True Adverbs"} -->
+
+<!-- vocab-card: {"id": "vocab-nekhotya", "word": "не́хотя", "meaning": "reluctantly", "priority": "optional", "sourceSection": "5. Verbal Adverbs That Became True Adverbs"} -->
 
 <!-- quiz:{"type":"multiple-choice","question":"Which word was originally a verbal adverb but is now used as a regular adverb?","options":["быстро","хорошо","молча","красиво"],"answer":2} -->
 
@@ -179,7 +197,7 @@ Both participles and verbal adverbs come from verbs, but they function different
 
 ### Manner
 
-**Она говорила, улыбаясь.** *(Ona govorila, ulybays.)* — She spoke, smiling.
+**Она говорила, улыбаясь.** *(Ona govorila, ulybayas.)* — She spoke, smiling.
 
 ### Sequence
 

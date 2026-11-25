@@ -71,6 +71,7 @@ Many vivid idioms are built around body parts:
 <!-- quiz: {"type":"multiple-choice","question":"'Vale la pena estudiar español' means:","options":["It's painful to study Spanish","It costs a lot to study Spanish","It's worth studying Spanish","It's easy to study Spanish"],"answer":2} -->
 
 <!-- grammar-card: {"id":"feel-like-pattern","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Feelings & State of Mind","rule":"'Tener ganas de' + infinitive expresses feeling like doing something","example":"Tengo ___ de salir a caminar.","answer":"ganas","explanation":"Tener ganas de takes an infinitive to name the desired activity."} -->
+<!-- grammar-card: {"id":"rule-feel-like-infinitive","kind":"concept","format":"qa","priority":"essential","sourceSection":"Feelings & State of Mind","rule":"The feel-like idiom tener ganas de is followed by an infinitive","example":"In the idiom for to feel like doing something (tener + noun + de), which verb form names the activity?","answer":"The infinitive (Tengo ganas de comer pizza).","explanation":"Any answer naming the infinitive counts; never a gerund. With a different subject, de que + subjunctive follows instead."} -->
 
 ## Quick Pronunciation Tips
 

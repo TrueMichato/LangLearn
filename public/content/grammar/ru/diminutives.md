@@ -1,5 +1,7 @@
 # Diminutives & Augmentatives (Уменьшительные и увеличительные)
 
+<!-- vocab-inventory: {"mode":"explicit"} -->
+
 Russian is famous for its rich system of **diminutive** and **augmentative** suffixes. Diminutives don't just make things "small" — they express affection, tenderness, familiarity, and warmth. Russians use them constantly in everyday speech, far more than English speakers use words like "doggy" or "kitty." Mastering diminutives will make your Russian sound natural and heartfelt.
 
 ---
@@ -14,6 +16,8 @@ Diminutives (уменьшительно-ласкательные формы) are
 - **Softening a request:** Дай водички. *(Day vodíchki.)* — Give me some water (softer than "Дай воды").
 
 > Russians use diminutives so frequently that their absence can sound cold or overly formal in casual conversation.
+
+<!-- grammar-card: {"id":"rule-diminutive-affection","kind":"concept","format":"qa","priority":"essential","sourceSection":"1. What Are Diminutives?","rule":"Diminutives express affection and warmth, not just smallness","example":"Besides smallness, what do Russian diminutives most often express?","answer":"Affection and warmth.","explanation":"Мамочка isn't a small mother and чаёк isn't a small tea: the suffix adds tenderness and familiarity."} -->
 
 ---
 
@@ -51,9 +55,13 @@ Diminutives (уменьшительно-ласкательные формы) are
 | слово *(slóvo)* | словечко *(slovéchko)* | -ечко | a little word |
 | сердце *(sérdtse)* | сердечко *(serdéchko)* | -ечко | little heart |
 
+<!-- vocab-card: {"id":"vocab-solnyshko","word":"со́лнышко","meaning":"sunshine; dear (term of endearment)","priority":"optional","sourceSection":"Neuter nouns: -це, -ко, -ечко/-ышко"} -->
+
 <!-- quiz:{"type":"multiple-choice","question":"What is the diminutive of 'кот' (cat)?","options":["коток","котик","котушка","котёнок"],"answer":1} -->
 
-<!-- grammar-card: {"rule":"A diminutive softens an offer and makes it sound friendly","hint":"чай → ?","example":"Хочешь ___?","answer":"чайку","explanation":"Чаёк is the diminutive of чай, and after хочешь it takes the partitive form чайку — 'a spot of tea'."} -->
+<!-- grammar-card: {"id":"offer-tea-chayku","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Masculine nouns: -ик, -ок/-ёк, -чик","rule":"A diminutive softens an offer and makes it sound friendly","example":"Offer a friend some tea in a warm, friendly way. Use the diminutive of чай (tea), in its partitive 'some tea' form: Хочешь ___?","answer":"чайку","explanation":"Чаёк is the diminutive of чай, and after хочешь it takes the partitive form чайку — 'a spot of tea'. Plain чаю would sound more neutral.","legacyAliases":[{"rule":"A diminutive softens an offer and makes it sound friendly","example":"Хочешь ___?"}]} -->
+
+<!-- grammar-card: {"id":"little-house-domik","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Masculine nouns: -ик, -ок/-ёк, -чик","rule":"Masculine nouns often form diminutives with -ик","example":"Point out a cute little house. Use the -ик diminutive of дом (house): Смотри, какой ___!","answer":"домик","explanation":"Дом + -ик gives домик, a little house. It stays masculine, so the adjective is какой."} -->
 
 ---
 
@@ -66,6 +74,10 @@ These suffixes add a strongly **affectionate** or **tender** tone:
 **Бабушка** *(bábushka)* — grandmother (from баба)
 
 **Дедушка** *(dédushka)* — grandfather (from дед)
+
+<!-- vocab-card: {"id":"vocab-babushka","word":"ба́бушка","meaning":"grandmother","priority":"optional","sourceSection":"-ушк-/-юшк- (warmth and tenderness)"} -->
+
+<!-- vocab-card: {"id":"vocab-dedushka","word":"де́душка","meaning":"grandfather","priority":"optional","sourceSection":"-ушк-/-юшк- (warmth and tenderness)"} -->
 
 **Матушка** *(mátushka)* — mother (old-fashioned, tender)
 
@@ -87,7 +99,7 @@ These suffixes add a strongly **affectionate** or **tender** tone:
 
 **Берёзонька** *(beryózonka)* — dear birch tree (folk)
 
-<!-- grammar-card: {"rule":"The -ушк- suffix adds warmth rather than smallness","hint":"хлеб → ?","example":"Дай мне ___.","answer":"хлебушек","explanation":"Хлебушек is not smaller bread; the suffix simply makes the request sound affectionate."} -->
+<!-- grammar-card: {"id":"warm-bread-khlebushek","kind":"rule","format":"cloze","priority":"optional","sourceSection":"-ушк-/-юшк- (warmth and tenderness)","rule":"The -ушк- suffix adds warmth rather than smallness","example":"What tasty bread! Say it warmly, using the affectionate -ушек form of хлеб (bread): Какой вкусный ___!","answer":"хлебушек","explanation":"Хлебушек is not smaller bread; the -ушк- suffix simply makes the remark sound affectionate. Colloquial хлебушко is also heard.","legacyAliases":[{"rule":"The -ушк- suffix adds warmth rather than smallness","example":"Дай мне ___."}]} -->
 
 ---
 
@@ -107,7 +119,7 @@ Russians use diminutives casually in ways that might surprise English speakers. 
 
 ### Money and things
 
-**У тебя есть денежки?** *(U tebyá yest dénеzhki?)* — Do you have some money? (casual, softened)
+**У тебя есть денежки?** *(U tebyá yest dénezhki?)* — Do you have some money? (casual, softened)
 
 **Положи ключики на столик.** *(Polozhí klyúchiki na stólik.)* — Put the keys on the table. (cozy, domestic)
 
@@ -142,6 +154,8 @@ Russian names have a rich system of short forms and diminutives:
 
 > Using diminutive names signals closeness. With strangers or in formal settings, use the full name + patronymic: Александр Иванович.
 
+<!-- grammar-card: {"id":"mashenka-call","kind":"rule","format":"cloze","priority":"optional","sourceSection":"5. Diminutive Names","rule":"Names take affectionate diminutives such as -еньк-","example":"Call Маша to you affectionately, using the -еньк- form of her name: ___, иди сюда!","answer":"Машенька","explanation":"Маша → Машенька signals closeness; with a stranger you would use the full name and patronymic instead."} -->
+
 ---
 
 ## 6. Augmentative Suffixes: -ище, -ина
@@ -157,7 +171,7 @@ While diminutives make things smaller and cuter, **augmentatives** make things b
 | кот *(kot)* | котище *(kotíshche)* | huge cat |
 | голос *(gólos)* | голосище *(golosíshche)* | powerful voice |
 
-> Note: nouns with -ище become **neuter** regardless of the original gender: домище (neuter, from masculine дом).
+> Note: -ище nouns keep the **gender of the base word**, even though they end in -е: домище stays masculine, like дом (огромный домище).
 
 ### -ина (large, impressive)
 
@@ -175,6 +189,10 @@ While diminutives make things smaller and cuter, **augmentatives** make things b
 
 **Какой котище!** *(Kakóy kotíshche!)* — What a huge cat!
 
+<!-- grammar-card: {"id":"domishche-size","kind":"rule","format":"qa","priority":"essential","sourceSection":"-ище (big, huge)","rule":"The -ище suffix makes a noun augmentative: big or impressive","example":"A friend points at a house and says «Вот это домище!» What is she saying about the house?","answer":"That it's huge.","explanation":"-ище is augmentative: домище is a huge house, the opposite of домик."} -->
+
+<!-- grammar-card: {"id":"rule-augmentative-meaning","kind":"concept","format":"qa","priority":"optional","sourceSection":"6. Augmentative Suffixes: -ище, -ина","rule":"Augmentatives express bigness or intensity","example":"What do augmentative suffixes like -ище and -ина add to a noun?","answer":"Bigness or intensity.","explanation":"Котище is a huge cat and голосище a powerful voice. Augmentatives can also sound coarse, as in скотина."} -->
+
 ---
 
 ## 7. When to Use (and Not Use) Diminutives
@@ -183,6 +201,8 @@ While diminutives make things smaller and cuter, **augmentatives** make things b
 
 - Speaking to children, loved ones, or close friends
 - Making requests softer and more polite: **Подождите минуточку.** *(Podozhdíte minútochku.)* — Wait just a moment.
+
+<!-- vocab-card: {"id":"vocab-minutochka","word":"мину́точка","meaning":"just a moment, a minute (diminutive)","priority":"optional","sourceSection":"Use diminutives when:"} -->
 - Talking about food casually: **Съешь кашку.** *(Syesh káshku.)* — Eat your porridge.
 - Expressing warmth about nature or weather
 
@@ -192,6 +212,8 @@ While diminutives make things smaller and cuter, **augmentatives** make things b
 - Speaking in professional meetings
 - The context requires seriousness (legal, medical)
 - You don't know someone well (can sound patronizing)
+
+<!-- grammar-card: {"id":"rule-diminutive-formal-avoid","kind":"concept","format":"qa","priority":"essential","sourceSection":"Avoid diminutives when:","rule":"Avoid diminutives in formal or serious settings and with people you don't know well","example":"In which kinds of situations should you avoid diminutives?","answer":"Formal or serious ones, and with people you don't know well.","explanation":"Business emails, professional meetings and legal or medical contexts call for plain forms; with strangers, diminutives can sound patronizing."} -->
 
 ### Cultural note
 

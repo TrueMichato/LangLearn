@@ -1,5 +1,7 @@
 # Time Clauses (когда, пока, после того как)
 
+<!-- vocab-inventory: {"mode":"explicit"} -->
+
 Time clauses tell **when** something happens in relation to another event. Russian uses a variety of conjunctions to express simultaneity, sequence, and duration — each with specific nuances regarding verb aspect. Mastering these conjunctions is essential for building complex, natural-sounding sentences.
 
 ---
@@ -26,13 +28,17 @@ Time clauses tell **when** something happens in relation to another event. Russi
 
 **Когда я закончил работу, я пошёл домой.** *(Kogdá ya zakónchil rabótu, ya poshyól domóy.)* — When I finished work, I went home.
 
+<!-- grammar-card: {"id":"arrived-then-ate","kind":"rule","format":"qa","priority":"essential","sourceSection":"Sequential events (perfective + perfective)","rule":"Two perfective verbs with когда describe one event after another","example":"Когда он пришёл, мы сели обедать. Which happened first?","answer":"He arrived; then we sat down to eat.","explanation":"Both verbs are perfective, so they report two completed events in sequence: first the arrival, then sitting down to eat."} -->
+
+<!-- grammar-card: {"id":"rule-sequence-perfective","kind":"concept","format":"qa","priority":"essential","sourceSection":"Sequential events (perfective + perfective)","rule":"Completed events in sequence take the perfective in both clauses","example":"When two completed actions follow one another, as in When he arrived, we sat down to eat, which aspect do both verbs take?","answer":"Both take the perfective.","explanation":"Any answer naming the perfective for both counts. Each action is finished before the next begins, and the perfective is the aspect of a single completed event."} -->
+
 ### Habitual events (present tense)
 
-**Когда я прихожу домой, я всегда мою руки.** *(Kogdá ya prikhózhú domóy, ya vsegdá móyu rúki.)* — When I come home, I always wash my hands.
+**Когда я прихожу домой, я всегда мою руки.** *(Kogdá ya prikhozhú domóy, ya vsegdá móyu rúki.)* — When I come home, I always wash my hands.
 
 <!-- quiz:{"type":"multiple-choice","question":"'Когда я читал, зазвонил телефон' — why are different aspects used?","options":["Both should be perfective","The reading was ongoing when the phone interrupted","'Когда' always requires imperfective","It's a grammar mistake"],"answer":1} -->
 
-<!-- grammar-card: {"rule":"Когда simply fixes the time at which something happens","hint":"когда / пока","example":"___ я читал, она смотрела телевизор.","answer":"Когда","explanation":"The clause locates one action in time relative to another, which is когда's job."} -->
+<!-- grammar-card: {"id":"when-i-was-reading","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Simultaneous events (imperfective + imperfective)","rule":"Когда simply fixes the time at which something happens","example":"Say When I was reading, she was watching TV, using the plain word for when that only fixes the time (not a word for while): ___ я читал, она смотрела телевизор.","answer":"Когда","explanation":"Когда is the general time conjunction: it simply places one action in time relative to another, and unlike пока it also introduces one-off completed events, as in Когда он пришёл, мы сели обедать.","legacyAliases":[{"rule":"Когда simply fixes the time at which something happens","example":"___ я читал, она смотрела телевизор."}]} -->
 
 ---
 
@@ -62,9 +68,11 @@ Time clauses tell **when** something happens in relation to another event. Russi
 
 <!-- quiz:{"type":"multiple-choice","question":"'Подожди, пока я не приду' — does 'не' make this negative?","options":["Yes, it means 'don't come'","No, 'пока не' means 'until' — the sentence is affirmative","Yes, it means 'wait, but I won't come'","It depends on intonation"],"answer":1} -->
 
-<!-- grammar-card: {"rule":"Пока не plus a perfective verb means until","hint":"пока ___ приду","example":"Подожди, пока я ___ приду.","answer":"не","explanation":"This не is not a negation: пока не marks the moment at which the waiting stops."} -->
+<!-- grammar-card: {"id":"wait-until-i-come","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Пока не + perfective = \"until\"","rule":"Пока не plus a perfective verb means until","example":"Tell someone to wait until you come: Подожди, пока я ___ приду.","answer":"не","explanation":"Until is пока не with a perfective verb. This не is not a negation: it marks the moment at which the waiting stops.","legacyAliases":[{"rule":"Пока не plus a perfective verb means until","example":"Подожди, пока я ___ приду."}]} -->
 
-<!-- grammar-card: {"rule":"Пока stresses that two actions run side by side","hint":"когда / пока","example":"___ я готовил ужин, дети делали уроки.","answer":"Пока","explanation":"Both activities are ongoing at the same time, and that simultaneity is what пока expresses."} -->
+<!-- grammar-card: {"id":"rule-poka-ne-until","kind":"concept","format":"qa","priority":"essential","sourceSection":"Пока не + perfective = \"until\"","rule":"Until is пока не with a perfective verb","example":"How do you say until in a Russian time clause, and which aspect does its verb take?","answer":"Пока не, with a perfective verb.","explanation":"Any answer naming пока не and the perfective counts. The perfective marks the single moment the first action stops, as in Он работал, пока не закончил."} -->
+
+<!-- grammar-card: {"id":"while-making-dinner","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Пока + imperfective = \"while\" (simultaneous duration)","rule":"Пока stresses that two actions run side by side","example":"Say While I was making dinner, the children were doing homework. Use the one-word conjunction that stresses the whole duration and that, followed by не, means until: ___ я готовил ужин, дети делали уроки.","answer":"Пока","explanation":"While is пока with an imperfective verb: both activities were in progress at the same time, and пока stresses that they ran side by side. Followed by не and a perfective verb, the same word means until.","legacyAliases":[{"rule":"Пока stresses that two actions run side by side","example":"___ я готовил ужин, дети делали уроки."}]} -->
 
 ---
 
@@ -78,7 +86,9 @@ Time clauses tell **when** something happens in relation to another event. Russi
 
 **После того как закончится урок, мы пойдём гулять.** *(Pósle togó kak zakónchitsya urók, my poydyóm gulyát.)* — After the lesson ends, we'll go for a walk.
 
-> In colloquial speech, **после того как** is often shortened to just **после**: После работы я пойду домой — After work I'll go home. But this is a preposition + noun, not a conjunction.
+> Before a noun, use the preposition **после** + genitive instead: После работы я пойду домой — After work I'll go home. **После** on its own cannot introduce a clause with a verb.
+
+<!-- grammar-card: {"id":"after-breakfast","kind":"rule","format":"cloze","priority":"optional","sourceSection":"3. После того как — \"After\"","rule":"После того как introduces the earlier, completed event","example":"Say that after he had breakfast, he went to work. Use позавтракать: После того как он ___, он пошёл на работу.","answer":"позавтракал","explanation":"The breakfast was finished before he left, so the after clause takes the perfective past позавтракал."} -->
 
 ---
 
@@ -94,7 +104,7 @@ Time clauses tell **when** something happens in relation to another event. Russi
 
 ### До того как — "before (an event happened)"
 
-**До того как мы встретились, я ничего о ней не знал.** *(Do togó kak my vstrétilist, ya nichevó o ney ne znál.)* — Before we met, I didn't know anything about her.
+**До того как мы встретились, я ничего о ней не знал.** *(Do togó kak my vstrétilis', ya nichevó o ney ne znál.)* — Before we met, I didn't know anything about her.
 
 **До того как он стал учителем, он работал инженером.** *(Do togó kak on stal uchítelem, on rabótal inzhenérom.)* — Before he became a teacher, he worked as an engineer.
 
@@ -110,6 +120,8 @@ Time clauses tell **when** something happens in relation to another event. Russi
 
 **С тех пор как она приехала, прошло два года.** *(S tekh por kak oná priyékhala, proshló dva góda.)* — Two years have passed since she arrived.
 
+<!-- grammar-card: {"id":"rule-since-start","kind":"concept","format":"qa","priority":"optional","sourceSection":"5. С тех пор как — \"Since (a point in time)\"","rule":"С тех пор как marks the start of a situation that still continues","example":"In С тех пор как я начал заниматься спортом, я чувствую себя лучше, what does the time clause mark?","answer":"The point when a still-continuing situation began.","explanation":"Any answer about the starting point of an ongoing situation counts. Taking up sport is when feeling better began, and that is still true now, so the main verb is in the present."} -->
+
 ---
 
 ## 6. Как только — "As soon as"
@@ -123,6 +135,8 @@ Time clauses tell **when** something happens in relation to another event. Russi
 **Как только закончится дождь, мы пойдём гулять.** *(Kak tólko zakónchitsya dozhd, my poydyóm gulyát.)* — As soon as the rain stops, we'll go for a walk.
 
 **Позвони мне, как только приедешь.** *(Pozvoní mne, kak tólko priyédesh.)* — Call me as soon as you arrive.
+
+<!-- grammar-card: {"id":"call-as-soon-as","kind":"rule","format":"cloze","priority":"essential","sourceSection":"6. Как только — \"As soon as\"","rule":"Как только introduces an event immediately followed by another","example":"Promise to call the moment you find out: ___ я узнаю, я тебе позвоню.","answer":"Как только","explanation":"The call follows immediately after finding out, which is what как только (as soon as) expresses; когда would only say when."} -->
 
 <!-- quiz:{"type":"multiple-choice","question":"Which conjunction means 'as soon as'?","options":["пока","после того как","как только","перед тем как"],"answer":2} -->
 
@@ -140,7 +154,7 @@ These conjunctions express **contrast** or **simultaneity**:
 
 ### Тогда как — "whereas" (stronger contrast)
 
-**Он говорит по-русски свободно, тогда как она только начинает учить.** *(On govorít po-rússki svobódno, togdá kak oná tólko nachinàyet uchít.)* — He speaks Russian fluently, whereas she is just starting to learn.
+**Он говорит по-русски свободно, тогда как она только начинает учить.** *(On govorít po-rússki svobódno, togdá kak oná tólko nachináyet uchít.)* — He speaks Russian fluently, whereas she is just starting to learn.
 
 ---
 
@@ -168,8 +182,8 @@ These conjunctions express **contrast** or **simultaneity**:
 ❌ **После того как он придёт, мы начинали.** — Tense mismatch.
 ✅ **После того как он пришёл, мы начали.** (past) / **После того как он придёт, мы начнём.** (future)
 
-❌ **Пока я не приду, подожди.** — Inverted clause order sounds unnatural.
-✅ **Подожди, пока я не приду.** — Wait until I come.
+❌ **Пока я не готовил ужин, дети делали уроки.** — With не, пока means "until," which needs a perfective verb and makes no sense here.
+✅ **Пока я готовил ужин, дети делали уроки.** — While I was making dinner, the children were doing homework.
 
 ❌ **Когда я буду читать книгу, я буду прочитать её.** — Don't use буду + perfective infinitive.
 ✅ **Когда я прочитаю книгу, я верну её.** — When I finish reading the book, I'll return it.

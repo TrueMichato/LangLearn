@@ -1,5 +1,7 @@
 # Register & Formality (ты/Вы, formal vs informal)
 
+<!-- vocab-inventory: {"mode":"explicit"} -->
+
 Russian has a rich system of **register** — the way language changes depending on the social context, relationship between speakers, and level of formality. The most visible marker is the **ты/Вы** distinction, but formality in Russian extends to vocabulary, grammar, greetings, and even names. Understanding register is essential for communicating appropriately.
 
 ---
@@ -48,9 +50,17 @@ Russian uses two pronouns for "you":
 
 <!-- quiz:{"type":"multiple-choice","question":"When speaking to your boss for the first time, you should use:","options":["ты — it shows friendliness","Вы — it shows respect","Either one — it doesn't matter","ты for male bosses, Вы for female"],"answer":1} -->
 
-<!-- grammar-card: {"rule":"Вы always takes plural verb agreement","hint":"ты / Вы","example":"___ говорите по-русски?","answer":"Вы","explanation":"Говорите is the plural ending, which pairs with the polite Вы rather than ты."} -->
+<!-- grammar-card: {"id":"polite-speak-russian","kind":"rule","format":"cloze","priority":"optional","sourceSection":"When to use Вы (formal)","rule":"Вы always takes plural verb agreement","example":"Ask a stranger whether they speak Russian. Supply the pronoun the verb ending calls for: ___ говорите по-русски?","answer":"Вы","explanation":"Говорите is the second person plural ending, which pairs with the polite Вы rather than ты.","legacyAliases":[{"rule":"Вы always takes plural verb agreement","example":"___ говорите по-русски?"}]} -->
 
-<!-- grammar-card: {"rule":"The pronoun must match the ending the verb already carries","hint":"ты / Вы","example":"Как ___ себя чувствуешь?","answer":"ты","explanation":"Чувствуешь is the ты-form, so the sentence can only take ты."} -->
+<!-- grammar-card: {"id":"friend-feeling","kind":"rule","format":"cloze","priority":"optional","sourceSection":"When to use ты (informal)","rule":"The pronoun must match the ending the verb already carries","example":"Ask a close friend how they are feeling. Supply the pronoun the verb ending calls for: Как ___ себя чувствуешь?","answer":"ты","explanation":"Чувствуешь is the second person singular form, so the sentence can only take ты.","legacyAliases":[{"rule":"The pronoun must match the ending the verb already carries","example":"Как ___ себя чувствуешь?"}]} -->
+
+<!-- grammar-card: {"id":"want-coffee-formal","kind":"rule","format":"cloze","priority":"essential","sourceSection":"1. Ты vs. Вы — The Core Distinction","rule":"Polite Вы takes the second person plural verb, even for one person","example":"Ask your boss whether he wants coffee. Use хотеть (to want): Вы ___ кофе?","answer":"хотите","explanation":"Your boss is one person, but polite Вы always takes the plural verb form: Вы хотите. Вы хочешь mixes the polite pronoun with the ты-form."} -->
+
+<!-- grammar-card: {"id":"capital-vy-letter","kind":"rule","format":"qa","priority":"essential","sourceSection":"When to use Вы (formal)","rule":"In letters, a capital Вы addresses one person formally","example":"A letter says «Благодарю Вас за помощь» (thank you for your help), with Вас capitalised. Is the writer thanking one person or several?","answer":"One person, addressed formally.","explanation":"In letters, capital Вы/Вас/Вам marks polite address to one person; lowercase вы is used for a group."} -->
+
+<!-- grammar-card: {"id":"rule-polite-plural-verb","kind":"concept","format":"qa","priority":"essential","sourceSection":"1. Ты vs. Вы — The Core Distinction","rule":"Polite address to one person takes the second person plural verb form","example":"When you address one person politely, which person and number does the verb take?","answer":"Second person plural.","explanation":"Polite address uses the plural pronoun, so the verb is plural too: Вы говорите, even to one person."} -->
+
+<!-- grammar-card: {"id":"rule-default-formal","kind":"concept","format":"qa","priority":"essential","sourceSection":"When to use Вы (formal)","rule":"Strangers, older people and professional contacts get the formal Вы until they invite you to switch","example":"Which form of 'you' do you use with strangers, older people and in professional settings, until you are invited to switch?","answer":"The formal Вы.","explanation":"Start formal and wait to be invited: being too formal is always safer than being too familiar."} -->
 
 ---
 
@@ -68,12 +78,16 @@ The **older** or **higher-status** person typically initiates:
 
 **Давай перейдём на «ты».** *(Davay pereydyóm na «ty».)* — Let's switch to «ты».
 
+<!-- grammar-card: {"id":"rule-who-initiates","kind":"concept","format":"qa","priority":"optional","sourceSection":"How it happens","rule":"The older or higher-status person proposes switching to ты","example":"Who usually proposes switching from the formal to the informal 'you'?","answer":"The older or higher-status person.","explanation":"A younger person who suggests it first, especially to an older person or a boss, comes across as rude."} -->
+
 ### Cultural notes
 
 - It's considered **rude** for a younger person to initiate ты with an older person
 - In some workplaces, everyone uses ты (especially tech companies, creative industries)
 - In traditional workplaces, Вы is maintained even between long-time colleagues
 - Switching back from ты to Вы can signal anger, distance, or a breakup
+
+<!-- grammar-card: {"id":"switch-back-to-vy","kind":"rule","format":"qa","priority":"optional","sourceSection":"Cultural notes","rule":"Switching back from ты to Вы signals a cooling relationship","example":"Two friends who have used ты for years suddenly start addressing each other as Вы. What can that signal?","answer":"Anger or distance — even a breakup.","explanation":"Returning to the formal pronoun deliberately withdraws the closeness that ты marked."} -->
 
 **Мы с тобой уже давно знакомы. Давай на «ты»!** *(My s toboy uzhé davnó znakómy. Davay na «ty»!)* — We've known each other for a long time. Let's use «ты»!
 
@@ -130,13 +144,21 @@ This is used with **Вы** in professional, educational, and formal settings:
 | Простите *(Prostíte)* | Прости *(Prostí)* | Excuse me / Sorry |
 | Пожалуйста *(Pozháluysta)* | Пожалуйста | Please / You're welcome |
 | Извините *(Izviníte)* | Извини *(Izviní)* | Excuse me |
-| Будьте добры *(Búdte dobry)* | — | Be so kind (very polite) |
+| Будьте добры *(Búdte dobrý)* | — | Be so kind (very polite) |
 
 **Здравствуйте, Анна Сергеевна!** *(Zdrávstvuyte, Ánna Sergéyevna!)* — Hello, Anna Sergeevna! (formal)
 
 **Привет, Аня!** *(Privét, Ánya!)* — Hi, Anya! (informal)
 
 **Извините, Вы не подскажете, где метро?** *(Izviníte, Vy ne podskazhéte, gde metró?)* — Excuse me, could you tell me where the metro is? (polite to stranger)
+
+<!-- vocab-card: {"id":"vocab-zdravstvuyte","word":"здра́вствуйте","meaning":"hello (formal)","priority":"optional","sourceSection":"4. Formal vs. Informal Greetings"} -->
+
+<!-- vocab-card: {"id":"vocab-privet","word":"приве́т","meaning":"hi (informal)","priority":"optional","sourceSection":"4. Formal vs. Informal Greetings"} -->
+
+<!-- vocab-card: {"id":"vocab-poka","word":"пока́","meaning":"bye (informal)","priority":"optional","sourceSection":"4. Formal vs. Informal Greetings"} -->
+
+<!-- vocab-card: {"id":"vocab-izvinite","word":"извини́те","meaning":"excuse me (formal)","priority":"optional","sourceSection":"4. Formal vs. Informal Greetings"} -->
 
 ---
 
@@ -146,7 +168,7 @@ This is used with **Вы** in professional, educational, and formal settings:
 
 **Не могли бы Вы мне помочь?** *(Ne moglí by Vy mne pomóch?)* — Could you help me?
 
-**Будьте добры, передайте соль.** *(Búdte dóbry, peredáyte sol.)* — Be so kind, pass the salt.
+**Будьте добры, передайте соль.** *(Búdte dobrý, peredáyte sol.)* — Be so kind, pass the salt.
 
 **Вы не подскажете, который час?** *(Vy ne podskazhéte, kotóryy chas?)* — Could you tell me what time it is?
 
@@ -179,11 +201,15 @@ Russian has many word pairs where one is formal/literary and the other is colloq
 | деньги *(déngi)* | бабки *(bábki)* | money (slang) |
 | лицо *(litsó)* | физиономия *(fizionómiya)* | face (jocular) |
 | отлично *(otlíchno)* | класс! / круто! *(klass / krúto)* | excellent / cool |
-| этот человек *(étot chelovék)* | этот чувак *(étot chuváK)* | this person / this dude |
+| этот человек *(étot chelovék)* | этот чувак *(étot chuvák)* | this person / this dude |
 
-**Formal letter:** Уважаемый Иван Петрович, сообщаю Вам, что... *(Uvazhàyemyy Iván Petróvich, soobshcháyu Vam, chto...)* — Dear Ivan Petrovich, I inform you that...
+**Formal letter:** Уважаемый Иван Петрович, сообщаю Вам, что... *(Uvazháyemyy Iván Petróvich, soobshcháyu Vam, chto...)* — Dear Ivan Petrovich, I inform you that...
 
 **Text to friend:** Вань, слушай, щас расскажу... *(Van, slúshay, shchas rasskazhú...)* — Vanya, listen, I'll tell you now...
+
+<!-- vocab-card: {"id":"vocab-ladno","word":"ла́дно","meaning":"okay, fine (colloquial)","priority":"optional","sourceSection":"6. Register in Vocabulary"} -->
+
+<!-- vocab-card: {"id":"vocab-boltat","word":"болта́ть","meaning":"to chat, to chatter (colloquial)","priority":"optional","sourceSection":"6. Register in Vocabulary"} -->
 
 <!-- quiz:{"type":"multiple-choice","question":"Which word is INFORMAL/colloquial for 'now'?","options":["сейчас","теперь","щас","ныне"],"answer":2} -->
 
@@ -193,7 +219,7 @@ Russian has many word pairs where one is formal/literary and the other is colloq
 
 ### Formal letters and emails
 
-**Уважаемый/ая...** *(Uvazhàyemyy/aya...)* — Dear... (formal opening)
+**Уважаемый/ая...** *(Uvazháyemyy/aya...)* — Dear... (formal opening)
 
 **С уважением, ...** *(S uvazhéniyem, ...)* — Sincerely, ... (formal closing)
 

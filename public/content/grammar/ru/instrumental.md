@@ -1,5 +1,7 @@
 # Instrumental Case (Творительный падеж)
 
+<!-- vocab-inventory: {"mode":"explicit"} -->
+
 The **instrumental case** (творительный падеж) answers the questions **Кем? Чем?** (By whom? By what?). It is used to express the **instrument or means** of an action, **professions** with linking verbs, **accompaniment**, and with several important prepositions.
 
 ---
@@ -8,7 +10,7 @@ The **instrumental case** (творительный падеж) answers the ques
 
 ### Masculine Nouns
 
-Masculine nouns take **-ом** after hard consonants and **-ем** (or **-ём**) after soft consonants, -ж, -ш, -ч, -щ, -ц.
+Masculine nouns take **-ом** after hard consonants and **-ем** (or stressed **-ём**) after soft consonants. After ж, ш, ч, щ, ц the ending is **-ом** when stressed (нож → ножом) and **-ем** when unstressed (месяц → месяцем).
 
 | Nominative | Instrumental | Rule |
 |---|---|---|
@@ -45,11 +47,13 @@ Feminine nouns take **-ой** after hard consonants and **-ей** (or **-ёй**)
 
 **Я мою руки водой.** *(Ya moyu ruki vodoy.)* — I wash my hands with water.
 
-**Мы занимаемся каждой неделей.** *(My zanimayemsya kazhdoy nedelyey.)* — We study every week.
+**Я доволен этой неделей.** *(Ya dovolen etoy nedeley.)* — I'm pleased with this week.
 
 **Я любуюсь землёй.** *(Ya lyubuyus' zemlyoy.)* — I admire the earth.
 
 **Птицы летают ночью.** *(Ptitsy letayut noch'yu.)* — Birds fly at night.
+
+<!-- grammar-card: {"id":"rule-feminine-soft-sign","kind":"concept","format":"qa","priority":"optional","sourceSection":"Feminine Nouns","rule":"Feminine nouns ending in -ь take -ью in the instrumental singular","example":"Which instrumental singular ending do feminine nouns ending in -ь, like ночь (night), take?","answer":"-ью","explanation":"The -ь is kept and -ю is added: ночь → ночью, тетрадь → тетрадью. Feminine nouns in -а/-я take -ой/-ей instead."} -->
 
 ### Neuter Nouns
 
@@ -108,6 +112,12 @@ The most basic meaning of the instrumental case is to express the **tool or mean
 
 <!-- quiz:{"type":"multiple-choice","question":"How do you say 'I write with a pencil'?","options":["Я пишу карандаш.","Я пишу карандашом.","Я пишу карандашу.","Я пишу карандаше."],"answer":1} -->
 
+<!-- grammar-card: {"id":"spoon-tool","kind":"rule","format":"cloze","priority":"essential","sourceSection":"2. Usage: Instrument or Means","rule":"The tool used for an action goes in the instrumental with no preposition","example":"Say you eat soup with a spoon. Use ложка (spoon): Я ем суп ___.","answer":"ложкой","explanation":"The spoon is the tool, so ложка takes the instrumental -ой on its own; Russian adds no word for with here."} -->
+
+<!-- grammar-card: {"id":"knife-role","kind":"rule","format":"qa","priority":"essential","sourceSection":"2. Usage: Instrument or Means","rule":"A bare instrumental noun names the means of the action","example":"Она режет хлеб ножом. Режет means cuts; хлеб means bread; нож means knife. What does ножом tell you about the knife?","answer":"It is the tool she cuts the bread with.","explanation":"Ножом is the instrumental of нож with no preposition, which marks the instrument. Хлеб is the accusative object: the thing being cut."} -->
+
+<!-- grammar-card: {"id":"rule-instrument-no-preposition","kind":"concept","format":"qa","priority":"essential","sourceSection":"2. Usage: Instrument or Means","rule":"The instrument of an action is expressed by the instrumental ending alone","example":"In Я пишу ручкой (I write with a pen), which part of the Russian expresses 'with'?","answer":"The instrumental ending alone; no preposition is used.","explanation":"The answer counts if it says the case ending does the work without a preposition. Ручкой is ручка in the instrumental; Russian adds no separate word for the tool."} -->
+
 ---
 
 ## 3. Usage: Professions with быть and стать
@@ -142,7 +152,11 @@ When describing **what someone is, was, or will be** (professions, roles), Russi
 
 <!-- quiz:{"type":"multiple-choice","question":"Which sentence correctly uses the instrumental for a profession?","options":["Он был врач.","Он был врачом.","Он был врачу.","Он был врача."],"answer":1} -->
 
-<!-- grammar-card: {"rule":"Быть and стать put the resulting role in the instrumental","hint":"to become","example":"Он хочет ___ врачом.","answer":"стать","explanation":"Стать governs the instrumental, which is why the profession is врачом and not врач."} -->
+<!-- grammar-card: {"id":"become-doctor","kind":"rule","format":"cloze","priority":"essential","sourceSection":"3. Usage: Professions with быть and стать","rule":"After стать the new role or profession goes in the instrumental","example":"He wants to become a doctor. Use врач (doctor): Он хочет стать ___.","answer":"врачом","explanation":"Стать (to become) takes the instrumental for the role, so врач becomes врачом. The nominative Он врач is only for the present, where no verb is used."} -->
+
+<!-- grammar-card: {"id":"rule-byt-stat-instrumental","kind":"concept","format":"qa","priority":"essential","sourceSection":"3. Usage: Professions with быть and стать","rule":"Стать, and быть in the past or future, put a role or profession in the instrumental","example":"After стать (to become), or быть (to be) in the past or future, which case does the role or profession take?","answer":"Instrumental.","explanation":"Any answer naming the instrumental counts. Он был врачом, Она стала учительницей, Я буду студентом."} -->
+
+<!-- grammar-card: {"id":"rule-present-nominative","kind":"concept","format":"qa","priority":"optional","sourceSection":"3. Usage: Professions with быть and стать","rule":"In the present tense, with быть omitted, the profession stays in the nominative","example":"In the present tense, where быть (to be) is left out, which case names someone's profession?","answer":"Nominative.","explanation":"Any answer naming the nominative counts. Он врач (He is a doctor), but in the past Он был врачом."} -->
 
 ---
 
@@ -156,7 +170,7 @@ The preposition **с** (with) followed by the instrumental case expresses **acco
 
 **Мы живём с родителями.** *(My zhivyom s roditelyami.)* — We live with our parents.
 
-**Он танцует с девушкой.** *(On tantsuyut s devushkoy.)* — He is dancing with a girl.
+**Он танцует с девушкой.** *(On tantsuyet s devushkoy.)* — He is dancing with a girl.
 
 **Я ем хлеб с маслом.** *(Ya yem khleb s maslom.)* — I eat bread with butter.
 
@@ -188,9 +202,9 @@ The preposition **с** (with) followed by the instrumental case expresses **acco
 
 <!-- quiz:{"type":"multiple-choice","question":"How do you say 'with me' in Russian?","options":["с мной","с меня","со мной","с мне"],"answer":2} -->
 
-<!-- grammar-card: {"rule":"С is extended to со before an awkward consonant cluster","hint":"с / со","example":"Пойдём ___ мной!","answer":"со","explanation":"Мной opens with мн-, so с becomes со to keep the phrase pronounceable."} -->
+<!-- grammar-card: {"id":"so-mnoy","kind":"rule","format":"cloze","priority":"optional","sourceSection":"4. Usage: Accompaniment with с (with)","rule":"С is extended to со before an awkward consonant cluster","example":"Invite someone to come with you. Use с (with) before мной: Пойдём ___ мной!","answer":"со","explanation":"Мной opens with мн-, so с becomes со to keep the phrase pronounceable.","legacyAliases":[{"rule":"С is extended to со before an awkward consonant cluster","example":"Пойдём ___ мной!"}]} -->
 
-<!-- grammar-card: {"rule":"Accompaniment is с plus the instrumental","hint":"a preposition","example":"Я иду в кино ___ другом.","answer":"с","explanation":"С requires the instrumental, so друг appears as другом."} -->
+<!-- grammar-card: {"id":"with-friend","kind":"rule","format":"cloze","priority":"optional","sourceSection":"4. Usage: Accompaniment with с (with)","rule":"Accompaniment is с plus the instrumental","example":"You're going to the cinema together with a friend. Supply the preposition: Я иду в кино ___ другом.","answer":"с","explanation":"Going together with someone is accompaniment, which needs с; другом is already in the instrumental that с requires.","legacyAliases":[{"rule":"Accompaniment is с plus the instrumental","example":"Я иду в кино ___ другом."}]} -->
 
 ---
 
@@ -213,6 +227,8 @@ Already covered above — expresses accompaniment.
 
 **За домом есть сад.** *(Za domom yest' sad.)* — Behind the house there is a garden.
 
+<!-- grammar-card: {"id":"went-for-bread","kind":"rule","format":"qa","priority":"optional","sourceSection":"за (behind, for, beyond)","rule":"After a verb of going, за plus the instrumental names what you go to fetch","example":"Он пошёл за хлебом. Пошёл means went; хлеб means bread. What does за хлебом mean here?","answer":"To get bread (to fetch it).","explanation":"With a verb of going, за plus the instrumental gives the purpose of the trip, so this is not about being behind the bread."} -->
+
 ### перед (in front of, before)
 
 **Перед домом растёт дерево.** *(Pered domom rastyot derevo.)* — A tree grows in front of the house.
@@ -224,6 +240,8 @@ Already covered above — expresses accompaniment.
 **Машина стоит перед школой.** *(Mashina stoit pered shkoloy.)* — The car is parked in front of the school.
 
 **Перед сном я читаю книгу.** *(Pered snom ya chitayu knigu.)* — Before sleep I read a book.
+
+<!-- vocab-card: {"id":"vocab-pered","word":"перед","meaning":"in front of; before","priority":"optional","sourceSection":"перед (in front of, before)"} -->
 
 ### между (between)
 
@@ -237,6 +255,8 @@ Already covered above — expresses accompaniment.
 
 **Между уроками мы отдыхаем.** *(Mezhdu urokami my otdykhayem.)* — Between lessons we rest.
 
+<!-- vocab-card: {"id":"vocab-mezhdu","word":"между","meaning":"between","priority":"optional","sourceSection":"между (between)"} -->
+
 ### над (above, over)
 
 **Лампа висит над столом.** *(Lampa visit nad stolom.)* — A lamp hangs above the table.
@@ -249,6 +269,8 @@ Already covered above — expresses accompaniment.
 
 **Не смейся надо мной!** *(Ne smeys' nado mnoy!)* — Don't laugh at me!
 
+<!-- vocab-card: {"id":"vocab-nad","word":"над","meaning":"above, over","priority":"optional","sourceSection":"над (above, over)"} -->
+
 ### под (under, below)
 
 **Кошка спит под кроватью.** *(Koshka spit pod krovat'yu.)* — The cat sleeps under the bed.
@@ -260,6 +282,10 @@ Already covered above — expresses accompaniment.
 **Город расположен под горой.** *(Gorod raspolozhen pod goroy.)* — The city is located below the mountain.
 
 **Под деревом сидит мальчик.** *(Pod derevom sidit mal'chik.)* — A boy is sitting under the tree.
+
+<!-- vocab-card: {"id":"vocab-pod","word":"под","meaning":"under, below","priority":"optional","sourceSection":"под (under, below)"} -->
+
+<!-- grammar-card: {"id":"under-bed","kind":"rule","format":"cloze","priority":"optional","sourceSection":"под (under, below)","rule":"Под for location takes the instrumental","example":"The cat sleeps under the bed. Use кровать (bed): Кошка спит под ___.","answer":"кроватью","explanation":"Под meaning under (location) takes the instrumental, and feminine кровать ends in -ь, so it takes -ью."} -->
 
 <!-- quiz:{"type":"multiple-choice","question":"Which preposition means 'in front of' and takes the instrumental case?","options":["за","над","перед","под"],"answer":2} -->
 
@@ -285,6 +311,8 @@ In the plural, all genders share the same instrumental endings:
 **Перед экзаменами студенты волнуются.** *(Pered ekzamenami studenty volnuyutsya.)* — Before exams students worry.
 
 > **Irregular plural:** Some nouns have special instrumental plural forms: **дети → детьми**, **люди → людьми**, **дочери → дочерьми**.
+
+<!-- grammar-card: {"id":"play-with-children","kind":"rule","format":"cloze","priority":"optional","sourceSection":"6. Plural Instrumental Endings","rule":"Дети has the irregular instrumental plural детьми","example":"She plays with the children. Use дети (children): Она играет с ___.","answer":"детьми","explanation":"С (with) needs the instrumental, and дети is one of the few nouns that takes -ьми instead of -ами/-ями."} -->
 
 ---
 

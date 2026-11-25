@@ -85,7 +85,7 @@ The most common augmentative. Can indicate large size or a habitual/notable qual
 <!-- vocab-card: {"id":"vocab-solteron","word":"solterón","meaning":"confirmed bachelor (often pejorative)","priority":"optional","sourceSection":"-ón / -ona"} -->
 <!-- vocab-card: {"id":"vocab-pregunton","word":"preguntón","meaning":"inquisitive; always asking questions (sometimes disapproving)","priority":"optional","sourceSection":"-ón / -ona"} -->
 <!-- vocab-card: {"id":"vocab-casona","word":"casona","meaning":"large house","priority":"optional","sourceSection":"-ón / -ona"} -->
-<!-- grammar-card: {"id":"augmentative-tone","kind":"concept","format":"qa","priority":"essential","sourceSection":"Augmentatives — Big, Intense, or Negative","rule":"Augmentatives can convey admiration or disapproval as well as size","example":"Does an augmentative necessarily praise its referent?","answer":"No. It can express admiration, intensity, large size or a negative attitude, depending on the word and context.","explanation":"Cochazo can admire a car; solterón often has a pejorative tinge."} -->
+<!-- grammar-card: {"id":"augmentative-tone","kind":"concept","format":"qa","priority":"essential","sourceSection":"Augmentatives — Big, Intense, or Negative","rule":"Augmentatives can convey admiration or disapproval as well as size","example":"Does an augmentative necessarily praise its referent?","answer":"No. Depending on the word and context it can also just mark size or carry a negative attitude.","explanation":"Cochazo can admire a car; solterón often has a pejorative tinge."} -->
 ### -azo / -aza
 
 Indicates large size or a strong impact:
@@ -96,6 +96,7 @@ Indicates large size or a strong impact:
 
 <!-- vocab-card: {"id":"vocab-golpazo","word":"golpazo","meaning":"powerful blow","priority":"optional","sourceSection":"-azo / -aza"} -->
 <!-- vocab-card: {"id":"vocab-cochazo","word":"cochazo","meaning":"great or impressive car (admiring)","priority":"optional","sourceSection":"-azo / -aza"} -->
+<!-- grammar-card: {"id":"rule-azo-impact","kind":"concept","format":"qa","priority":"optional","sourceSection":"-azo / -aza","rule":"The augmentative -azo/-aza indicates large size or a strong impact","example":"Besides large size, what else can the augmentative suffix -azo/-aza indicate?","answer":"A strong impact, such as a powerful blow (golpazo).","explanation":"Any answer naming impact or a blow counts. It can also be admiring, as in cochazo."} -->
 ### -ote / -ota
 
 Often implies overly large or somewhat clumsy:
@@ -118,6 +119,7 @@ Diminutives aren't limited to nouns:
 > 🌍 **Cultural note:** Diminutives can add warmth and politeness in many Latin American contexts, but their frequency and effect vary by region and relationship. *¿Me da un café, por favor?* is also a perfectly polite request.
 
 <!-- grammar-card: {"id":"adjective-diminutive","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Diminutives on Adjectives and Adverbs","rule":"Diminutives (-ito) can be added to adjectives and adverbs, not just nouns","example":"Es pequeñ___. (pequeño, affectionate diminutive)","answer":"ito","explanation":"Pequeño becomes pequeñito; only ito belongs in the blank. Rapidito and ahorita illustrate other non-noun uses.","legacyAliases":[{"rule":"Diminutives (-ito) can be added to adjectives and adverbs, not just nouns","example":"Espera un moment___."}]} -->
+<!-- grammar-card: {"id":"rule-diminutive-word-classes","kind":"concept","format":"qa","priority":"optional","sourceSection":"Diminutives on Adjectives and Adverbs","rule":"Diminutives attach to adjectives and adverbs as well as nouns","example":"Are Spanish diminutive suffixes limited to nouns?","answer":"No. Adjectives and adverbs take them too (pequeñito, ahorita).","explanation":"Any answer saying adjectives and adverbs also take them counts. Rapidito is another example; ahorita's timing varies by region."} -->
 <!-- vocab-card: {"id":"vocab-ahorita","word":"ahorita","meaning":"now; very soon, or later depending on region and context","priority":"essential","sourceSection":"Diminutives on Adjectives and Adverbs"} -->
 
 ## Sources

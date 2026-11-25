@@ -16,11 +16,12 @@ Take **hablar** (ah-BLAR) — *to speak*. Remove **-ar** → stem **habl-**, the
 | nosotros/as (we) | **-amos** | **hablamos** | ah-BLAH-mohs |
 | ellos / ellas / ustedes (they/you all) | **-an** | **hablan** | AH-blahn |
 
-> 🌍 **Spain note**: A sixth form — **vosotros habláis** (ah-BLÁHS) — is used in Spain for informal "you all." In Latin America, **ustedes hablan** covers both formal and informal plural.
+> 🌍 **Spain note**: A sixth form — **vosotros habláis** (ah-BLAH-ees) — is used in Spain for informal "you all." In Latin America, **ustedes hablan** covers both formal and informal plural.
 
 <!-- grammar-card: {"id":"ar-stem-method","kind":"concept","format":"qa","priority":"essential","sourceSection":"How to Conjugate -ar Verbs: Hablar","rule":"Regular present -ar forms replace the infinitive ending with a person ending","example":"How do you build a regular present-tense form from hablar?","answer":"Remove -ar to get habl-, then add the ending for the subject.","explanation":"The stem stays habl-; the ending supplies person and number."} -->
 <!-- grammar-card: {"id":"ar-tu","kind":"rule","format":"cloze","priority":"essential","sourceSection":"How to Conjugate -ar Verbs: Hablar","rule":"Regular -ar verbs take -as with tú","example":"Tú ___ español. (hablar)","answer":"hablas","explanation":"Habl- plus as gives hablas, the informal singular form."} -->
 <!-- grammar-card: {"id":"ar-vosotros","kind":"rule","format":"cloze","priority":"optional","sourceSection":"How to Conjugate -ar Verbs: Hablar","rule":"Vosotros takes -áis with regular -ar verbs","example":"Vosotros ___ español. (hablar; Spain, informal plural)","answer":"habláis","explanation":"The vosotros ending is áis; Latin American ustedes instead uses hablan."} -->
+<!-- grammar-card: {"id":"rule-ar-tu-ending","kind":"concept","format":"qa","priority":"essential","sourceSection":"How to Conjugate -ar Verbs: Hablar","rule":"Regular -ar verbs add -as for tú in the present","example":"In the present tense, which ending does a regular -ar verb add to its stem for tú?","answer":"-as, as in cantas.","explanation":"Any answer giving -as counts. Compare -o for yo and -a for él, ella and usted."} -->
 <!-- vocab-card: {"id":"vocab-hablar","word":"hablar","meaning":"to speak","priority":"optional","sourceSection":"How to Conjugate -ar Verbs: Hablar"} -->
 
 ## What Does the Present Tense Express?
@@ -105,7 +106,7 @@ Context clarifies meaning:
 - **¿Trabaja usted aquí?** — Do you work here?
 - **¿Escuchan música?** — Do they listen to music?
 
-<!-- grammar-card: {"id":"ar-question","kind":"concept","format":"qa","priority":"optional","sourceSection":"Questions: Simply add ¿...? around the sentence","rule":"A yes/no question needs no English-style do auxiliary","example":"Does ¿Hablas inglés? require a Spanish equivalent of do?","answer":"No. The conjugated verb and question intonation form the question.","explanation":"Written questions also need the opening and closing question marks."} -->
+<!-- grammar-card: {"id":"ar-question","kind":"concept","format":"qa","priority":"optional","sourceSection":"Questions: Simply add ¿...? around the sentence","rule":"A yes/no question needs no English-style do auxiliary","legacyAliases":[{"rule":"A yes/no question needs no English-style do auxiliary","example":"Does ¿Hablas inglés? require a Spanish equivalent of do?"}],"example":"English adds do to ask Do they listen to music? What does Spanish add to Escuchan música to make it a question?","answer":"Only the question marks ¿...? and rising intonation; there is no helper like do.","explanation":"Any answer saying no helper verb is needed counts: ¿Escuchan música? The subject can also move after the verb, as in ¿Trabaja usted aquí?"} -->
 
 ### Negatives: Place **no** directly before the verb
 
@@ -114,6 +115,7 @@ Context clarifies meaning:
 - **Ella no mira televisión** — She doesn't watch TV
 
 <!-- grammar-card: {"id":"ar-negation","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Negatives: Place **no** directly before the verb","rule":"No precedes the conjugated verb for ordinary negation","example":"Ella ___ mira televisión. (does not watch)","answer":"no","explanation":"Spanish uses no mira, without an auxiliary equivalent of does."} -->
+<!-- grammar-card: {"id":"rule-no-before-verb","kind":"concept","format":"qa","priority":"optional","sourceSection":"Negatives: Place **no** directly before the verb","rule":"Ordinary negation places no directly before the conjugated verb","example":"Where does no go to make an ordinary Spanish sentence negative?","answer":"Directly before the conjugated verb, with no helper like don't.","explanation":"Any answer placing no right before the verb counts: No trabajamos los domingos."} -->
 
 ## The -ar Pattern at a Glance
 
@@ -127,7 +129,8 @@ Context clarifies meaning:
 
 <!-- grammar-card: {"id":"ar-nosotros","kind":"rule","format":"cloze","priority":"essential","sourceSection":"The -ar Pattern at a Glance","rule":"-ar verbs in present tense: stem + -o, -as, -a, -amos, -an","example":"Nosotros ___ (estudiar) español cada día.","answer":"estudiamos","explanation":"Estudi- takes amos with nosotros; the subject is we."} -->
 
-<!-- grammar-card: {"id":"ar-present-ongoing","kind":"rule","format":"cloze","priority":"essential","sourceSection":"What Does the Present Tense Express?","rule":"Spanish present tense covers 'I speak', 'I am speaking', and 'I do speak'","example":"Ahora ___ (hablar, yo) con mi profesora.","answer":"hablo","explanation":"Context allows hablo to describe an ongoing action here; yo takes the o ending."} -->
+<!-- grammar-card: {"id":"ar-present-ongoing","kind":"rule","format":"cloze","priority":"essential","sourceSection":"What Does the Present Tense Express?","rule":"Spanish present tense covers 'I speak', 'I am speaking', and 'I do speak'","legacyAliases":[{"rule":"Spanish present tense covers 'I speak', 'I am speaking', and 'I do speak'","example":"Ahora ___ (hablar, yo) con mi profesora."}],"example":"Ahora ___ (hablar, yo; simple present) con mi profesora.","answer":"hablo","explanation":"Context lets simple-present hablo describe an ongoing action; yo takes the o ending. Estoy hablando is also correct Spanish, but it is not the simple present."} -->
+<!-- grammar-card: {"id":"rule-present-ongoing","kind":"concept","format":"qa","priority":"essential","sourceSection":"What Does the Present Tense Express?","rule":"The Spanish simple present also covers actions happening now","example":"Besides the progressive (estar + -ando), which Spanish tense can describe an action happening right now, like I am speaking?","answer":"The simple present, with context such as ahora.","explanation":"Any answer naming the ordinary present tense counts: Ahora hablo con mi amigo. The same form also covers habitual I speak and emphatic I do speak."} -->
 
 ## Sources
 

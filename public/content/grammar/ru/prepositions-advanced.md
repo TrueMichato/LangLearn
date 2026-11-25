@@ -1,5 +1,7 @@
 # Advanced Prepositions (благодаря, несмотря на, в течение)
 
+<!-- vocab-inventory: {"mode":"explicit"} -->
+
 Beyond the basic prepositions (в, на, с, к, из), Russian has a rich set of **compound and derived prepositions** that are essential for intermediate and advanced learners. These prepositions express cause, concession, time duration, and other nuanced relationships. Many of them govern specific cases and have precise usage rules.
 
 ---
@@ -24,7 +26,7 @@ Beyond the basic prepositions (в, на, с, к, из), Russian has a rich set o
 
 **Он опоздал из-за пробок.** *(On opozdál iz-za próbok.)* — He was late because of traffic jams.
 
-**Из-за болезни она не пришла на работу.** *(Iz-za boléznii oná ne prishlá na rabótu.)* — Because of illness, she didn't come to work.
+**Из-за болезни она не пришла на работу.** *(Iz-za bolézni oná ne prishlá na rabótu.)* — Because of illness, she didn't come to work.
 
 ### Вследствие + genitive — "as a result of" (formal)
 
@@ -34,13 +36,17 @@ Beyond the basic prepositions (в, на, с, к, из), Russian has a rich set o
 
 ### Ввиду + genitive — "in view of" (formal/official)
 
-**Ввиду сложившейся ситуации мероприятие отменено.** *(Vvidú slozhívsheysa situátsii meropriyátiye otmenená.)* — In view of the current situation, the event is cancelled.
+**Ввиду сложившейся ситуации мероприятие отменено.** *(Vvidú slozhívsheysya situátsii meropriyátiye otmenenó.)* — In view of the current situation, the event is cancelled.
 
 <!-- quiz:{"type":"multiple-choice","question":"'Благодаря помощи друзей я справился' — 'благодаря' implies:","options":["A negative outcome","A positive outcome","A neutral statement","An uncertain result"],"answer":1} -->
 
-<!-- grammar-card: {"rule":"Из-за marks an unwelcome cause and takes the genitive","hint":"a cause you regret","example":"___ дождя мы остались дома.","answer":"Из-за","explanation":"The rain spoiled the plan, so из-за is used with the genitive дождя."} -->
+<!-- grammar-card: {"id":"rain-iz-za","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Из-за + genitive — \"because of\" (negative cause)","rule":"Из-за marks an unwelcome cause and takes the genitive","example":"The rain spoiled our plans, so we stayed home. Use the everyday preposition for an unwelcome cause: ___ дождя мы остались дома.","answer":"Из-за","explanation":"The rain is a cause you regret, and дождя is genitive, so из-за fits. Благодаря would need a welcome cause and the dative дождю; вследствие also takes the genitive but belongs to formal writing.","legacyAliases":[{"rule":"Из-за marks an unwelcome cause and takes the genitive","example":"___ дождя мы остались дома."}]} -->
 
-<!-- grammar-card: {"rule":"Благодаря marks a welcome cause and takes the dative","hint":"a cause you are glad of","example":"___ помощи друзей я справился.","answer":"Благодаря","explanation":"The help was beneficial, so благодаря is chosen and помощь appears in the dative помощи."} -->
+<!-- grammar-card: {"id":"unwelcome-anton","kind":"rule","format":"qa","priority":"essential","sourceSection":"Из-за + genitive — \"because of\" (negative cause)","rule":"Из-за presents its cause as unwelcome","example":"Из-за Антона мы пошли в другой ресторан. Пошли в другой ресторан means went to a different restaurant. Does the speaker present Anton's part in the change of plan as welcome or unwelcome?","answer":"Unwelcome — из-за blames Anton for the change.","explanation":"Из-за frames Anton as the cause of something the speaker didn't want. A speaker who was pleased with the new restaurant would say благодаря Антону."} -->
+
+<!-- grammar-card: {"id":"rule-unwelcome-cause","kind":"concept","format":"qa","priority":"essential","sourceSection":"Из-за + genitive — \"because of\" (negative cause)","rule":"Из-за introduces an unwelcome cause; благодаря introduces a welcome one","example":"In everyday speech, which preposition introduces a cause with an unwelcome result, as in 'I was late because of the traffic'?","answer":"Из-за.","explanation":"Из-за (+ genitive) blames the cause: Он опоздал из-за пробок. For a cause you are glad of, use благодаря (+ dative)."} -->
+
+<!-- grammar-card: {"id":"friends-help-blagodarya","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Благодаря + dative — \"thanks to\" (positive cause)","rule":"Благодаря marks a welcome cause and takes the dative","example":"My friends helped me, and I managed. Use the preposition for a cause you are glad of: ___ помощи друзей я справился.","answer":"Благодаря","explanation":"The help was welcome, so благодаря (thanks to) fits, and it puts помощь in the dative помощи. Из-за would blame the friends for the outcome.","legacyAliases":[{"rule":"Благодаря marks a welcome cause and takes the dative","example":"___ помощи друзей я справился."}]} -->
 
 ---
 
@@ -64,11 +70,17 @@ Beyond the basic prepositions (в, на, с, к, из), Russian has a rich set o
 
 **Вопреки ожиданиям, он победил.** *(Voprekí ozhidániyam, on pobedíl.)* — Contrary to expectations, he won.
 
-**Вопреки совету врача, она продолжала работать.** *(Voprekí sovétu vrachá, oná prodolzhálla rabótat.)* — Against the doctor's advice, she continued working.
+**Вопреки совету врача, она продолжала работать.** *(Voprekí sovétu vrachá, oná prodolzhála rabótat.)* — Against the doctor's advice, she continued working.
 
 **Он поступил вопреки здравому смыслу.** *(On postupíl voprekí zdrávomu smýslu.)* — He acted against common sense.
 
 <!-- quiz:{"type":"multiple-choice","question":"'Несмотря на дождь, мы пошли гулять' — what case does 'несмотря на' take?","options":["Genitive","Dative","Accusative","Instrumental"],"answer":2} -->
+
+<!-- grammar-card: {"id":"despite-weather","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Несмотря на + accusative — \"despite, in spite of\"","rule":"Несмотря на takes the accusative","example":"Despite the weather, we went for a walk. Use погода (weather): Несмотря на ___, мы пошли гулять.","answer":"погоду","explanation":"Несмотря на governs the accusative, so погода becomes погоду. The genitive погоды is the common mistake here, because so many of these prepositions take the genitive."} -->
+
+<!-- grammar-card: {"id":"against-advice","kind":"rule","format":"qa","priority":"optional","sourceSection":"Вопреки + dative — \"contrary to, despite\" (stronger)","rule":"Вопреки means acting contrary to something","example":"Вопреки совету врача, она продолжала работать. Совету врача means the doctor's advice; продолжала работать means kept working. Did she follow the doctor's advice?","answer":"No — she kept working against it.","explanation":"Вопреки (+ dative) means contrary to: she did the opposite of what the doctor advised."} -->
+
+<!-- grammar-card: {"id":"rule-nesmotrya-accusative","kind":"concept","format":"qa","priority":"essential","sourceSection":"Несмотря на + accusative — \"despite, in spite of\"","rule":"Несмотря на takes the accusative","example":"Which case follows несмотря на (despite)?","answer":"Accusative.","explanation":"Несмотря на дождь, not дождя: unlike most of the prepositions in this lesson, it takes the accusative."} -->
 
 ---
 
@@ -84,6 +96,10 @@ Beyond the basic prepositions (в, на, с, к, из), Russian has a rich set o
 
 **Ответ придёт в течение двух недель.** *(Otvét pridyót v techéniye dvukh nedél.)* — The response will come within two weeks.
 
+<!-- grammar-card: {"id":"year-v-techenie","kind":"rule","format":"cloze","priority":"optional","sourceSection":"В течение + genitive — \"during, in the course of\"","rule":"В течение takes the genitive","example":"Over the course of a year, he studied Russian. Use год (year): В течение ___ он изучал русский язык.","answer":"года","explanation":"В течение governs the genitive, so год becomes года. Note the spelling: в течение ends in -е."} -->
+
+<!-- grammar-card: {"id":"rule-v-techenie-genitive","kind":"concept","format":"qa","priority":"optional","sourceSection":"В течение + genitive — \"during, in the course of\"","rule":"В течение takes the genitive","example":"Which case follows в течение (during, within)?","answer":"Genitive.","explanation":"В течение дня, в течение двух недель: the time period is in the genitive."} -->
+
 ### В продолжение + genitive — "for the duration of"
 
 **В продолжение лекции студенты делали записи.** *(V prodolzhéniye léktsii studénty délali zapísi.)* — For the duration of the lecture, students took notes.
@@ -96,7 +112,7 @@ Beyond the basic prepositions (в, на, с, к, из), Russian has a rich set o
 
 ### По мере + genitive — "as (something progresses)"
 
-**По мере приближения экзамена студенты волнуются больше.** *(Po mére priblizzhéniya ekzámena studénty volnúyutsya bólshe.)* — As the exam approaches, students worry more.
+**По мере приближения экзамена студенты волнуются больше.** *(Po mére priblizhéniya ekzámena studénty volnúyutsya bólshe.)* — As the exam approaches, students worry more.
 
 ---
 
@@ -110,15 +126,17 @@ Beyond the basic prepositions (в, на, с, к, из), Russian has a rich set o
 
 **Ради интереса я попробовал.** *(Rádi interésa ya popróboval.)* — For the sake of interest (out of curiosity), I tried.
 
+<!-- vocab-card: {"id":"vocab-radi","word":"ра́ди","meaning":"for the sake of","priority":"optional","sourceSection":"Ради + genitive — \"for the sake of\""} -->
+
 ### Насчёт + genitive — "regarding, about"
 
 **Я хотел спросить насчёт работы.** *(Ya khotél sprosít naschyót rabóty.)* — I wanted to ask about the job.
 
-**Насчёт завтрашнего собрания — оно отменено.** *(Naschyót závtrashnego sobrrániya — onó otmenená.)* — Regarding tomorrow's meeting — it's cancelled.
+**Насчёт завтрашнего собрания — оно отменено.** *(Naschyót závtrashnego sobrániya — onó otmenenó.)* — Regarding tomorrow's meeting — it's cancelled.
 
 ### По поводу + genitive — "concerning, regarding" (more formal)
 
-**Мы встретились по поводу нового проекта.** *(My vstrétilist po póvodu nóvogo proyékta.)* — We met concerning the new project.
+**Мы встретились по поводу нового проекта.** *(My vstrétilis po póvodu nóvogo proyékta.)* — We met concerning the new project.
 
 **По поводу вашего заявления...** *(Po póvodu váshego zayavléniya...)* — Regarding your application...
 
@@ -134,21 +152,29 @@ Beyond the basic prepositions (в, на, с, к, из), Russian has a rich set o
 
 **Вдоль дороги растут деревья.** *(Vdol dorógi rastút derévya.)* — Trees grow along the road.
 
+<!-- vocab-card: {"id":"vocab-vdol","word":"вдоль","meaning":"along","priority":"optional","sourceSection":"Вдоль + genitive — \"along\""} -->
+
 ### Вокруг + genitive — "around"
 
 **Вокруг дома стоит забор.** *(Vokrúg dóma stoít zabór.)* — A fence stands around the house.
 
 **Дети бегали вокруг стола.** *(Déti bégali vokrúg stolá.)* — The children ran around the table.
 
+<!-- vocab-card: {"id":"vocab-vokrug","word":"вокру́г","meaning":"around","priority":"optional","sourceSection":"Вокруг + genitive — \"around\""} -->
+
 ### Напротив + genitive — "opposite, across from"
 
 **Аптека находится напротив банка.** *(Aptéka nakhóditsya naprótiv bánka.)* — The pharmacy is across from the bank.
+
+<!-- vocab-card: {"id":"vocab-naprotiv","word":"напро́тив","meaning":"opposite, across from","priority":"optional","sourceSection":"Напротив + genitive — \"opposite, across from\""} -->
 
 ### Среди + genitive — "among"
 
 **Среди студентов были иностранцы.** *(Sredí studéntov byli inostrantsy.)* — Among the students were foreigners.
 
-**Он чувствовал себя среди друзей.** *(On chúvstvoval sebyá sredí druzéy.)* — He felt at home among friends.
+**Он чувствовал себя как дома среди друзей.** *(On chúvstvoval sebyá kak dóma sredí druzéy.)* — He felt at home among friends.
+
+<!-- vocab-card: {"id":"vocab-sredi","word":"среди́","meaning":"among","priority":"optional","sourceSection":"Среди + genitive — \"among\""} -->
 
 ---
 
@@ -156,7 +182,7 @@ Beyond the basic prepositions (в, на, с, к, из), Russian has a rich set o
 
 ### По сравнению с + instrumental — "compared to/with"
 
-**По сравнению с прошлым годом, цены выросли.** *(Po sravnéniyu s próshylym gódom, tsény výrosli.)* — Compared to last year, prices have risen.
+**По сравнению с прошлым годом, цены выросли.** *(Po sravnéniyu s próshlym gódom, tsény výrosli.)* — Compared to last year, prices have risen.
 
 **По сравнению с братом, она высокая.** *(Po sravnéniyu s brátom, oná vysókaya.)* — Compared to her brother, she is tall.
 

@@ -1,5 +1,7 @@
 # Aspect Pairs in Detail (покупать/купить patterns)
 
+<!-- vocab-inventory: {"mode":"explicit"} -->
+
 Verbal aspect is the backbone of the Russian verb system. While Lesson 2 introduced the concept of perfective vs. imperfective, this lesson dives deeper into **how aspect pairs are formed**, the patterns behind them, and the subtle differences in meaning that aspect choice creates in real sentences.
 
 ---
@@ -52,9 +54,13 @@ Some common verbs use completely different roots:
 | садиться *(sadítsya)* | сесть *(sest)* | to sit down |
 | ложиться *(lozhítsya)* | лечь *(lech)* | to lie down |
 
-<!-- quiz:{"type":"multiple-choice","question":"What is the imperfective partner of 'купить' (to buy)?","options":["покупить","покупать","купать","купивать"],"answer":1} -->
+<!-- vocab-card: {"id":"vocab-vzyat","word":"взять","meaning":"to take (perfective)","priority":"optional","sourceSection":"Pattern 3: Different roots (suppletive pairs)"} -->
 
-<!-- grammar-card: {"rule":"A single finished action takes the perfective member of the pair","hint":"открывать / открыть","example":"Он ___ окно и вышел.","answer":"открыл","explanation":"The window was opened once and the act was over, so the perfective открыл is used rather than открывал."} -->
+<!-- vocab-card: {"id":"vocab-polozhit","word":"положи́ть","meaning":"to put, lay down (perfective)","priority":"optional","sourceSection":"Pattern 3: Different roots (suppletive pairs)"} -->
+
+<!-- grammar-card: {"id":"take-this-book","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Pattern 3: Different roots (suppletive pairs)","rule":"Брать and its perfective partner взять use different roots","example":"Tell a friend to take this book, one specific action. Use the perfective partner of брать: ___ эту книгу!","answer":"Возьми","explanation":"Брать has no prefixed perfective: its partner is the different root взять, whose imperative for one specific action is возьми."} -->
+
+<!-- quiz:{"type":"multiple-choice","question":"What is the imperfective partner of 'купить' (to buy)?","options":["покупить","покупать","купать","купивать"],"answer":1} -->
 
 ---
 
@@ -78,7 +84,7 @@ This is one of the most productive patterns for creating imperfective partners f
 
 **Она часто рассказывает интересные истории.** *(Oná chásto rasskazývayet interésnyye istórii.)* — She often tells interesting stories. (imperfective — habitual)
 
-<!-- grammar-card: {"rule":"The suffix -ыва-/-ива- builds an imperfective partner from a perfective verb","hint":"рассказать → ?","example":"Она часто ___ интересные истории.","answer":"рассказывает","explanation":"Часто marks a habit, so the suffixed imperfective рассказывать is needed instead of the perfective рассказать."} -->
+<!-- grammar-card: {"id":"tells-stories","kind":"rule","format":"cloze","priority":"essential","sourceSection":"2. The -ыва-/-ива- Suffix Pattern","rule":"The suffix -ыва-/-ива- builds an imperfective partner from a perfective verb","example":"Say she often tells interesting stories. Start from рассказать: Она часто ___ интересные истории.","answer":"рассказывает","explanation":"Часто marks a habit, which needs the imperfective, so the perfective рассказать takes the suffix -ыва- and becomes рассказывать.","legacyAliases":[{"rule":"The suffix -ыва-/-ива- builds an imperfective partner from a perfective verb","example":"Она часто ___ интересные истории."}]} -->
 
 ---
 
@@ -92,6 +98,8 @@ This is one of the most productive patterns for creating imperfective partners f
 **Imperfective — process/activity:**
 **Я читал книгу весь вечер.** *(Ya chitál knígu ves vécher.)* — I was reading the book all evening.
 
+<!-- grammar-card: {"id":"read-all-evening","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Completed action vs. process","rule":"A stated stretch of time forces the imperfective","example":"Say you spent the whole evening reading the book, whether or not you finished. Use читать or прочитать: Я ___ книгу весь вечер.","answer":"читал","explanation":"Весь вечер measures the process itself rather than a result, so the imperfective is required; the perfective would claim the book was finished.","legacyAliases":[{"rule":"A stated stretch of time forces the imperfective","example":"Я ___ книгу весь вечер."}]} -->
+
 ### Single event vs. repeated action
 
 **Perfective — one time:**
@@ -99,6 +107,8 @@ This is one of the most productive patterns for creating imperfective partners f
 
 **Imperfective — multiple times:**
 **Он открывал окно каждое утро.** *(On otkryvál oknó kázhdoye útro.)* — He opened the window every morning.
+
+<!-- grammar-card: {"id":"opened-and-left","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Single event vs. repeated action","rule":"A single finished action takes the perfective member of the pair","example":"Say he opened the window once and then went out. Use открывать or открыть: Он ___ окно и вышел.","answer":"открыл","explanation":"The window was opened once and the act was over before he went out, so the perfective is used; the imperfective открывал would suggest a habit or an unfinished process.","legacyAliases":[{"rule":"A single finished action takes the perfective member of the pair","example":"Он ___ окно и вышел."}]} -->
 
 ### Statement of fact vs. result
 
@@ -108,9 +118,9 @@ This is one of the most productive patterns for creating imperfective partners f
 **Perfective — "did you finish doing X?":**
 **Ты прочитал эту книгу?** *(Ty prochitál étu knígu?)* — Have you finished reading this book?
 
-<!-- quiz:{"type":"multiple-choice","question":"'Ты читал эту книгу?' (imperfective) asks about:","options":["Whether you finished the book","The experience — whether you ever read it","When you will read it","How fast you read"],"answer":1} -->
+<!-- grammar-card: {"id":"finished-article","kind":"rule","format":"qa","priority":"optional","sourceSection":"Statement of fact vs. result","rule":"A perfective question asks about a completed result","example":"Ты прочитал статью? What does the speaker want to know?","answer":"Whether you have finished reading the article.","explanation":"The perfective прочитал focuses on the result, so the question is about finishing; the imperfective читал would ask whether you have ever read it."} -->
 
-<!-- grammar-card: {"rule":"A stated stretch of time forces the imperfective","hint":"читать / прочитать","example":"Я ___ книгу весь вечер.","answer":"читал","explanation":"Весь вечер measures the process itself rather than a result, so the imperfective читал is required."} -->
+<!-- quiz:{"type":"multiple-choice","question":"'Ты читал эту книгу?' (imperfective) asks about:","options":["Whether you finished the book","The experience — whether you ever read it","When you will read it","How fast you read"],"answer":1} -->
 
 ---
 
@@ -126,6 +136,10 @@ The future tense works differently for each aspect:
 **Завтра я напишу письмо.** *(Závtra ya napishú pismó.)* — Tomorrow I will write (complete) a letter.
 
 **Завтра я буду писать письмо.** *(Závtra ya búdu pisát pismó.)* — Tomorrow I will be writing a letter.
+
+<!-- grammar-card: {"id":"will-write-letter","kind":"rule","format":"cloze","priority":"optional","sourceSection":"4. Aspect in the Future Tense","rule":"The perfective future is the conjugated verb alone","example":"Promise you will write the letter tomorrow and get it done. Use написать: Завтра я ___ письмо.","answer":"напишу","explanation":"A finished future result needs the perfective, and the perfective future is just the conjugated form; буду never goes with a perfective infinitive."} -->
+
+<!-- grammar-card: {"id":"rule-perfective-future","kind":"concept","format":"qa","priority":"essential","sourceSection":"4. Aspect in the Future Tense","rule":"A perfective verb forms its future by conjugation alone","example":"How do you form the future of a perfective verb such as прочитать?","answer":"Conjugate it, with no буду: я прочитаю.","explanation":"Any answer saying the perfective is simply conjugated, without буду, counts. Its present-tense endings already give a future meaning, so Я буду прочитать is wrong."} -->
 
 **Мы купим подарок.** *(My kúpim podárok.)* — We will buy a present (and get it done).
 
@@ -155,11 +169,15 @@ Aspect choice in commands conveys different tones:
 
 ### Negative imperative — aspect matters!
 
-**Не открывайте окно!** *(Ne otkryvdyte oknó!)* — Don't open the window! (general prohibition — **imperfective**)
+**Не открывайте окно!** *(Ne otkryváyte oknó!)* — Don't open the window! (general prohibition — **imperfective**)
 
 **Не откройте случайно окно!** *(Ne otkróyte slucháyno oknó!)* — Don't accidentally open the window! (warning — **perfective**, less common)
 
 > In negative commands, the **imperfective** is standard. The perfective in negation suggests warning against an accidental action.
+
+<!-- grammar-card: {"id":"dont-open-window","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Negative imperative — aspect matters!","rule":"A negative command normally uses the imperfective","example":"Ask a group of people not to open the window. Use открыть or its partner: Не ___ окно!","answer":"открывайте","explanation":"Prohibitions are normally imperfective, so the command uses the imperfective partner открывать; a negated perfective sounds like a warning against doing it by accident."} -->
+
+<!-- grammar-card: {"id":"rule-negative-imperative","kind":"concept","format":"qa","priority":"essential","sourceSection":"Negative imperative — aspect matters!","rule":"Prohibitions use the imperfective imperative","example":"Which aspect does a plain prohibition such as Don't read this book! normally use in Russian?","answer":"The imperfective.","explanation":"Any answer naming the imperfective counts. A prohibition rules out the activity as a whole, so Не читайте!; a negated perfective sounds like a warning about an accident."} -->
 
 <!-- quiz:{"type":"multiple-choice","question":"A negative command ('Don't do X!') typically uses which aspect?","options":["Perfective","Imperfective","Either one — no difference","Neither — use infinitive"],"answer":1} -->
 
@@ -171,13 +189,19 @@ Aspect choice in commands conveys different tones:
 
 **Он начал читать.** *(On náchal chitát.)* — He began reading. (**imperfective**)
 
-**Она продолжала говорить.** *(Oná prodolzhálla govorít.)* — She continued talking. (**imperfective**)
+**Она продолжала говорить.** *(Oná prodolzhála govorít.)* — She continued talking. (**imperfective**)
 
 **Мы закончили работать.** *(My zakónchili rabótat.)* — We finished working. (**imperfective**)
+
+<!-- grammar-card: {"id":"started-reading","kind":"rule","format":"cloze","priority":"optional","sourceSection":"After начать/продолжать/кончить — process verbs take imperfective","rule":"Verbs of starting, continuing and stopping take an imperfective infinitive","example":"Say you started reading the book: Я начал ___ книгу.","answer":"читать","explanation":"Начать describes the start of a process, so the infinitive after it must be imperfective: читать, never прочитать."} -->
+
+<!-- grammar-card: {"id":"rule-phase-verbs","kind":"concept","format":"qa","priority":"optional","sourceSection":"After начать/продолжать/кончить — process verbs take imperfective","rule":"Начать, продолжать and кончить combine with imperfective infinitives","example":"After начать, продолжать or кончить, which aspect must the infinitive be?","answer":"Imperfective.","explanation":"Any answer naming the imperfective counts. These verbs mark a phase of an ongoing process, and only the imperfective presents an action as a process."} -->
 
 ### After забыть/успеть — result verbs take perfective
 
 **Я забыл закрыть дверь.** *(Ya zabýl zakrýt dver.)* — I forgot to close the door. (**perfective**)
+
+<!-- grammar-card: {"id":"forgot-to-close","kind":"rule","format":"cloze","priority":"optional","sourceSection":"After забыть/успеть — result verbs take perfective","rule":"After забыть, the infinitive is usually perfective","example":"Say you forgot to shut the door, one action you never got done: Я забыл ___ дверь.","answer":"закрыть","explanation":"Forgetting concerns one specific action and its result, so the perfective infinitive закрыть is used rather than закрывать."} -->
 
 **Мы успели купить билеты.** *(My uspéli kupít biléty.)* — We managed to buy tickets. (**perfective**)
 
@@ -197,7 +221,7 @@ Aspect choice in commands conveys different tones:
 |---|---|---|---|
 | писать / написать | to write | записать / записывать | to write down |
 | говорить / сказать | to say | рассказать / рассказывать | to tell (narrate) |
-| ходить / пойти | to go | уходить / уйти | to leave |
+| идти / пойти | to go | уходить / уйти | to leave |
 
 ### "False pairs" — verbs that look like pairs but aren't
 

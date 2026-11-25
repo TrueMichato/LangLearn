@@ -1,0 +1,35 @@
+{"lessons": {
+  "subjuntivo-presente": {
+    "listExempt": {
+      "irregular-mnemonic": "DIS HES mnemonic expansion kept for saved-card identity; each verb is practised atomically by irregular-dar/ir/saber/haber/estar/ser.",
+      "weirdo-mnemonic": "WEIRDO mnemonic expansion kept for saved-card identity; the trigger contexts are practised atomically by the cloze cards and rule-certainty-indicative / rule-same-subject-infinitive."
+    }
+  },
+  "subjuntivo-imperfecto": {
+    "reclassified": {
+      "real-condition": "Asks the learner to interpret how two example sentences differ (comprehension), not to recall a rule; concept → rule (qa). The declarative rule is now rule-open-condition-indicative / rule-hypothetical-si."
+    }
+  },
+  "por-vs-para": {
+    "listExempt": {
+      "arrow-mnemonic": "Memory-hook expansion kept for saved-card identity; each meaning is recalled atomically by rule-cause-por / rule-exchange-por / rule-purpose-para / rule-deadline-para and practised by the por-*/para-* clozes."
+    }
+  },
+  "gerund-progressive": {
+    "reclassified": {
+      "habitual-present": "Asks the learner to produce a Spanish sentence (\"Give a natural Spanish sentence…\"), an application task, not declarative recall; concept → rule (qa). The rule itself is now rule-habitual-simple-present.",
+      "future-plan-choice": "Asks the learner to translate an English plan into Spanish (\"How would you naturally announce…\"), an application task; concept → rule (qa). The rule itself is now rule-future-plan-not-progressive."
+    }
+  },
+  "relative-pronouns": {},
+  "passive-voice": {},
+  "diminutives": {
+    "answerChanged": {
+      "augmentative-tone": "Tightened to the single contrast the yes/no front asks about; removed a four-item list of senses. The target (No: not necessarily praise) is unchanged."
+    }
+  },
+  "expressions": {},
+  "pluscuamperfecto": {},
+  "presente-perfecto": {},
+  "advanced-prepositions": {}
+}}

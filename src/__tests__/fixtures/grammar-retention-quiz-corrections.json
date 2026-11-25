@@ -85,6 +85,23 @@
         "options": ["وَا قَلْبَاهْ (wā qalbāh)", "كَتَبَ الطَّالِبُ (kataba aṭ-ṭālibu)", "فِي الْبَيْتِ (fī al-bayti)", "لَيْسَ صَعْبًا (laysa ṣaʿban)"],
         "answer": 0
       }
+    },
+    {
+      "lessonKey": "es/prepositions",
+      "position": 3,
+      "rationale": "Possessive mi replaces the article, so 'del mi vecino' is ungrammatical. Dropping mi makes the keyed del correct while preserving every option and the answer index.",
+      "original": {
+        "type": "multiple-choice",
+        "question": "Complete: 'El auto ___ mi vecino está descompuesto.' (de + el)",
+        "options": ["de el", "del", "de la", "al"],
+        "answer": 1
+      },
+      "corrected": {
+        "type": "multiple-choice",
+        "question": "Complete: 'El auto ___ vecino está descompuesto.' (de + el)",
+        "options": ["de el", "del", "de la", "al"],
+        "answer": 1
+      }
     }
   ]
 }

@@ -1,5 +1,7 @@
 # Comparatives & Superlatives
 
+<!-- vocab-inventory: {"mode":"explicit"} -->
+
 When you want to say something is bigger, better, more interesting, or the most beautiful, you need comparatives and superlatives. Russian has both **simple** (synthetic) and **compound** (analytic) forms for each. This lesson covers all the patterns, irregular forms, and practical usage.
 
 ---
@@ -28,6 +30,10 @@ Take the adjective stem and add **-ее**:
 - **Жизнь в деревне спокойнее.** *(Zhizn' v derevne spokoyneye.)* — Life in the countryside is calmer.
 
 > **Colloquial note:** In everyday speech, Russians often use **-ей** instead of **-ее**: интересней, сильней, быстрей. Both forms are correct, but **-ее** is more formal.
+
+<!-- grammar-card: {"id":"warmer-today","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Simple Comparative with -ее / -ей","rule":"A regular adjective adds -ее to its stem to form the simple comparative","example":"Today is warmer than yesterday. Use тёплый (warm), one word in the standard written form: Сегодня ___, чем вчера.","answer":"теплее","explanation":"Тёплый drops -ый and adds -ее; the stress moves onto the ending, so the ё of the stem is written е. Теплей is the colloquial variant of the same form."} -->
+
+<!-- grammar-card: {"id":"rule-simple-comparative-indeclinable","kind":"concept","format":"qa","priority":"optional","sourceSection":"Simple Comparative with -ее / -ей","rule":"The simple comparative is indeclinable","example":"What happens to a simple comparative such as интереснее when the noun it describes is feminine, neuter, or plural?","answer":"Nothing; it keeps the same form.","explanation":"Any answer saying the form never changes counts. The simple comparative is indeclinable: эта книга интереснее, этот фильм интереснее, эти книги интереснее."} -->
 
 ---
 
@@ -58,6 +64,8 @@ Many common adjectives have **consonant changes** in the comparative form. Inste
 - **Наш дом ближе к центру.** *(Nash dom blizhe k tsentru.)* — Our house is closer to the center.
 
 <!-- quiz:{"type":"multiple-choice","question":"What is the comparative form of 'тихий' (quiet)?","options":["тихее","тишее","тише","тихейший"],"answer":2} -->
+
+<!-- grammar-card: {"id":"coffee-pricier","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Consonant-Stem Changes","rule":"Adjectives in -г- form the comparative with г → ж plus -е","example":"Coffee is more expensive than tea. Use дорогой (expensive), one word: Кофе ___ чая.","answer":"дороже","explanation":"The г of дорогой alternates with ж, and stems with this change take -е instead of -ее. With no чем, the thing compared against is in the genitive: чая."} -->
 
 ---
 
@@ -91,7 +99,13 @@ Some of the most frequently used adjectives have **completely irregular** compar
 
 <!-- quiz:{"type":"multiple-choice","question":"What is the comparative of 'плохой' (bad)?","options":["плохее","хуже","плоше","худее"],"answer":1} -->
 
-<!-- grammar-card: {"rule":"A handful of everyday comparatives are irregular and must be learned whole","hint":"большой → ?","example":"Москва ___ Петербурга.","answer":"больше","explanation":"Большой has the irregular comparative больше, and the thing compared against then takes the genitive Петербурга."} -->
+<!-- vocab-card: {"id":"vocab-luchshe","word":"лу́чше","meaning":"better","priority":"optional","sourceSection":"Irregular Comparatives"} -->
+
+<!-- vocab-card: {"id":"vocab-khuzhe","word":"ху́же","meaning":"worse","priority":"optional","sourceSection":"Irregular Comparatives"} -->
+
+<!-- grammar-card: {"id":"moscow-bigger","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Irregular Comparatives","rule":"Большой has the irregular comparative больше","example":"Moscow is bigger than St. Petersburg. Use большой (big): Москва ___ Петербурга.","answer":"больше","explanation":"Большой has no regular -ее comparative; its form is the irregular больше. With no чем, the city compared against takes the genitive Петербурга.","legacyAliases":[{"rule":"A handful of everyday comparatives are irregular and must be learned whole","example":"Москва ___ Петербурга."}]} -->
+
+<!-- grammar-card: {"id":"whose-room-bigger","kind":"rule","format":"qa","priority":"essential","sourceSection":"Irregular Comparatives","rule":"The genitive after a comparative names the standard of comparison","example":"Моя комната меньше твоей. Меньше is the comparative of маленький (small); комната means room. Whose room is bigger?","answer":"Yours.","explanation":"Меньше means smaller, and the genitive твоей means than yours: my room is the smaller one, so yours is bigger."} -->
 
 ---
 
@@ -118,7 +132,9 @@ The compound comparative uses **более** (more) or **менее** (less) + t
 
 <!-- quiz:{"type":"multiple-choice","question":"Which of the following is INCORRECT?","options":["более интересный","интереснее","более интереснее","менее интересный"],"answer":2} -->
 
-<!-- grammar-card: {"rule":"Более plus an unchanged adjective builds a compound comparative","hint":"более / менее","example":"Она ___ ответственная студентка.","answer":"более","explanation":"Более carries the comparison itself, so the adjective stays ответственная and simply agrees with студентка."} -->
+<!-- vocab-card: {"id":"vocab-menee","word":"ме́нее","meaning":"less (before adjectives and adverbs)","priority":"optional","sourceSection":"Compound Comparative with более / менее"} -->
+
+<!-- grammar-card: {"id":"more-responsible-student","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Compound Comparative with более / менее","rule":"Более before a full adjective builds the compound comparative","example":"She is a more responsible student. Complete the compound comparative: Она ___ ответственная студентка.","answer":"более","explanation":"The adjective keeps its full form ответственная and agrees with студентка, so the word meaning more has to carry the comparison; менее would mean less.","legacyAliases":[{"rule":"Более plus an unchanged adjective builds a compound comparative","example":"Она ___ ответственная студентка."}]} -->
 
 ---
 
@@ -145,7 +161,7 @@ The simple (synthetic) superlative is formed by adding **-ейший** to the ad
 
 > **Usage note:** The -ейший/-айший superlative often expresses an **emphatic/absolute** meaning ("extremely") rather than a strict comparison. For clear comparison ("the biggest of all"), use the compound superlative.
 
-<!-- grammar-card: {"rule":"The suffix -ейший turns an adjective into a one-word superlative","hint":"красивый → красив-?","example":"Это красив___ город в мире.","answer":"ейший","explanation":"Красивый drops its -ый and takes -ейший to mean the most beautiful of all."} -->
+<!-- grammar-card: {"id":"most-beautiful-city","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Simple Superlative with -ейший / -айший","rule":"The suffix -ейший turns an adjective into a one-word superlative","example":"This is the most beautiful city in the world. Complete the one-word superlative of красивый (beautiful): Это красив___ город в мире.","answer":"ейший","explanation":"Красивый drops -ый and takes -ейший, here in the masculine nominative to agree with город. Only stems in г, к, х (with mutation) take -айший instead.","legacyAliases":[{"rule":"The suffix -ейший turns an adjective into a one-word superlative","example":"Это красив___ город в мире."}]} -->
 
 ---
 
@@ -169,6 +185,10 @@ The compound superlative is formed with **самый** + adjective. This is the 
 - **Это были самые счастливые дни моей жизни.** *(Eto byli samyye schastlivyye dni moyey zhizni.)* — Those were the happiest days of my life.
 
 > **Alternative:** You can also form the superlative with **наиболее** (most) and **наименее** (least) — these are bookish/formal: наиболее эффективный метод *(the most effective method)*.
+
+<!-- vocab-card: {"id":"vocab-samyy","word":"са́мый","meaning":"the most (forms superlatives)","priority":"optional","sourceSection":"Compound Superlative with самый"} -->
+
+<!-- grammar-card: {"id":"most-beautiful-house","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Compound Superlative with самый","rule":"Самый declines together with the adjective it accompanies","example":"He lives in the most beautiful house on the street. Use самый (most): Он живёт в ___ красивом доме на улице.","answer":"самом","explanation":"В for location puts the phrase in the prepositional, and самый takes the same case ending as красивом and доме: в самом красивом доме."} -->
 
 ---
 
@@ -203,6 +223,12 @@ The second noun goes into the **genitive case**:
 > **Tip:** The genitive construction is shorter and more natural in speech. The чем construction is clearer when the sentence is complex or when the compared items are in oblique cases.
 
 <!-- quiz:{"type":"multiple-choice","question":"Which means 'Moscow is bigger than Paris'?","options":["Москва больше, чем Париж","Москва большая Парижа","Москва более большой Парижа","Москва самая большая Парижа"],"answer":0} -->
+
+<!-- grammar-card: {"id":"older-than-me","kind":"rule","format":"cloze","priority":"optional","sourceSection":"2. Using the Genitive (without чем)","rule":"Without чем, the item compared against takes the genitive","example":"My brother is older than me. Compare without чем; use я (I): Мой брат старше ___.","answer":"меня","explanation":"With no чем, the person compared against goes into the genitive, and the genitive of я is меня."} -->
+
+<!-- grammar-card: {"id":"rule-chem-same-case","kind":"concept","format":"qa","priority":"optional","sourceSection":"1. Using чем (than)","rule":"After чем, the compared items stay in the same case","example":"In a comparison with чем (than), what case does the second item take?","answer":"The same case as the first item.","explanation":"Any answer saying it matches the case of the item it is compared with counts; usually that is the nominative, as in Москва больше, чем Париж."} -->
+
+<!-- grammar-card: {"id":"rule-genitive-without-chem","kind":"concept","format":"qa","priority":"essential","sourceSection":"2. Using the Genitive (without чем)","rule":"Without чем, the standard of comparison takes the genitive","example":"When a comparison is made without чем (than), what case does the thing compared against take?","answer":"Genitive.","explanation":"Any answer naming the genitive counts: Москва больше Парижа, он бегает быстрее меня."} -->
 
 ---
 

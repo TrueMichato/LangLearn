@@ -1,5 +1,7 @@
 # Learning Resources: A Curated Study Guide
 
+<!-- vocab-inventory: {"mode":"explicit"} -->
+
 Learning Russian is a marathon, not a sprint. This guide compiles the best free resources recommended by the Russian-learning community — organized by skill level and type — so you can build an effective study routine without wasting time on low-quality materials.
 
 ---

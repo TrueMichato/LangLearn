@@ -1,0 +1,49 @@
+{
+  "lessons": {
+    "volver-a": {},
+    "lo-neuter": {
+      "reclassified": {
+        "activity-topic": "It asks the learner to interpret what lo de introduces in one sentence (comprehension), not to recall a rule; the declarative fact now lives in rule-lo-de-infinitive."
+      }
+    },
+    "modal-verbs": {},
+    "stressed-possessives": {
+      "split": {
+        "suyo-ambiguity": [
+          "suyo-why-ambiguous",
+          "rule-suyo-de-ella"
+        ]
+      },
+      "listExempt": {
+        "suyo-ambiguity": "The owner list is one fact (suyo's full referential range: third person plus usted/ustedes). It is kept as an optional overview after the atomic split into suyo-why-ambiguous and rule-suyo-de-ella."
+      }
+    },
+    "apocopation": {
+      "split": {
+        "saint-exception-cue": [
+          "santo-do-exception",
+          "santo-to-exceptions"
+        ],
+        "cualesquiera-register": [
+          "cualquiera-de-one-member"
+        ]
+      },
+      "answerChanged": {
+        "cualesquiera-register": "The two-part question (register plus how to say 'any one of the books') was narrowed to register only; the production half moved to cualquiera-de-one-member."
+      },
+      "listExempt": {
+        "saint-exception-cue": "Kept as an optional overview of the four conventional Santo names behind one memory cue; the atomic recall now lives in santo-do-exception and santo-to-exceptions."
+      }
+    },
+    "refranes-as-grammar": {
+      "split": {
+        "future-subjunctive-fossil": [
+          "fueres-modern-equivalents"
+        ]
+      },
+      "answerChanged": {
+        "future-subjunctive-fossil": "The two-part question (identify the tense and give the modern forms) was narrowed to identification only; producing vayas/veas moved to fueres-modern-equivalents."
+      }
+    }
+  }
+}

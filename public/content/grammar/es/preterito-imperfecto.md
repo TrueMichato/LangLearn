@@ -18,6 +18,7 @@ The *pretérito imperfecto* describes past actions that were **ongoing, repeated
 > 📌 The **yo** and **él/ella** forms are identical: context or an explicit subject can clarify the meaning.
 
 <!-- grammar-card: {"id":"ar-imperfect-nosotros","kind":"rule","format":"cloze","priority":"essential","sourceSection":"-AR Verb Endings: hablar (to speak)","rule":"The -ar imperfect nosotros ending is -ábamos","example":"Nosotros ___ español cada día. (hablar; past habit)","answer":"hablábamos","explanation":"The nosotros form keeps its written accent: hablábamos."} -->
+<!-- grammar-card: {"id":"rule-ar-nosotros-accent","kind":"concept","format":"qa","priority":"optional","sourceSection":"-AR Verb Endings: hablar (to speak)","rule":"In the -ar imperfect, only the nosotros form carries a written accent","example":"Which person is the only one with a written accent in the regular -ar imperfect?","answer":"Nosotros (-ábamos).","explanation":"Count it if you name nosotros. Hablábamos has a tilde; hablaba, hablabas and hablaban do not."} -->
 
 ## -ER / -IR Verb Endings: comer / vivir
 
@@ -34,6 +35,7 @@ The *pretérito imperfecto* describes past actions that were **ongoing, repeated
 - **Vivían cerca del río** (bee-BEE-ahn) — They used to live near the river
 
 <!-- grammar-card: {"id":"er-ir-imperfect","kind":"rule","format":"cloze","priority":"essential","sourceSection":"-ER / -IR Verb Endings: comer / vivir","rule":"Regular -er and -ir imperfects share accented -ía endings","example":"Ellos ___ cerca del río. (vivir; background)","answer":"vivían","explanation":"Viv- takes ían for ellos; the accent preserves the stressed í and hiatus."} -->
+<!-- grammar-card: {"id":"rule-er-ir-ending","kind":"concept","format":"qa","priority":"optional","sourceSection":"-ER / -IR Verb Endings: comer / vivir","rule":"Regular -er and -ir imperfects use endings built on accented -ía","example":"Regular -ar imperfects are built on -aba. What are regular -er and -ir imperfects built on?","answer":"Accented -ía, shared by both groups.","explanation":"Count it if you give -ía with its accent. Comía and vivía; the tilde on í keeps it a separate syllable."} -->
 <!-- grammar-card: {"id":"shared-imperfect-form","kind":"concept","format":"qa","priority":"optional","sourceSection":"-AR Verb Endings: hablar (to speak)","rule":"Yo and él/ella/usted share imperfect forms","example":"Does hablaba alone distinguish I used to speak from she used to speak?","answer":"No. Context or an explicit subject is needed.","explanation":"The ending aba is shared by yo and third-person singular."} -->
 
 <!-- quiz: {"type":"multiple-choice","question":"What is the yo-form imperfect of 'hablar'?","options":["hablé","hablo","hablaba","hablará"],"answer":2} -->
@@ -49,6 +51,7 @@ The imperfect is remarkably regular — only **three** verbs are irregular:
 | era | eras | era | éramos | erais | eran |
 
 <!-- grammar-card: {"id":"ser-imperfect","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Ser (to be)","rule":"Ser has the irregular imperfect era","example":"Cuando yo ___ niño, vivía aquí. (ser)","answer":"era","explanation":"Ser uses era rather than a regular aba or ía form."} -->
+<!-- grammar-card: {"id":"rule-three-irregulars","kind":"concept","format":"qa","priority":"essential","sourceSection":"Only Three Irregular Verbs","rule":"Only ser, ir and ver are irregular in the imperfect","example":"Which three Spanish verbs are irregular in the imperfect?","answer":"Ser, ir and ver.","explanation":"Count it only if you name all three. Every other verb, including tener and hacer, has a regular imperfect."} -->
 
 ### Ir (to go)
 
@@ -62,7 +65,7 @@ The imperfect is remarkably regular — only **three** verbs are irregular:
 |----|----|-----------|----------|----------|-------|
 | veía | veías | veía | veíamos | veíais | veían |
 
-<!-- grammar-card: {"id":"ver-imperfect","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Ver (to see)","rule":"Ver retains ve- before its imperfect ending","example":"Nosotros ___ la tele cada noche. (ver)","answer":"veíamos","explanation":"The imperfect is veíamos, retaining e and the accented ía sequence."} -->
+<!-- grammar-card: {"id":"ver-imperfect","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Ver (to see)","rule":"Ver retains ve- before its imperfect ending","example":"Nosotros ___ la tele cada noche. (ver; past habit)","answer":"veíamos","explanation":"The imperfect is veíamos, retaining e and the accented ía sequence.","legacyAliases":[{"rule":"Ver retains ve- before its imperfect ending","example":"Nosotros ___ la tele cada noche. (ver)"}]} -->
 
 - **Cuando era niño, iba al parque todos los días** (EH-rah NEE-nyoh) — When I was a child, I used to go to the park every day
 - **Veíamos la tele cada noche** (beh-EE-ah-mohs) — We used to watch TV every night
@@ -82,7 +85,8 @@ The imperfect is remarkably regular — only **three** verbs are irregular:
 
 <!-- grammar-card: {"id":"past-age","kind":"rule","format":"cloze","priority":"essential","sourceSection":"When to Use the Imperfecto","rule":"Background age in the past uses imperfect tener","example":"Yo ___ doce años cuando llegamos. (tener)","answer":"tenía","explanation":"Age is presented as an ongoing background state when the arrival occurred."} -->
 <!-- grammar-card: {"id":"past-clock-time","kind":"rule","format":"cloze","priority":"optional","sourceSection":"When to Use the Imperfecto","rule":"Background clock time uses imperfect ser","example":"___ las tres cuando llamó. (It was three.)","answer":"Eran","explanation":"Eran describes the background time; the call is the completed event."} -->
-<!-- grammar-card: {"id":"polite-imperfect","kind":"concept","format":"qa","priority":"optional","sourceSection":"When to Use the Imperfecto","rule":"The imperfect can soften a present request","example":"Must Quería un café, por favor mean that the speaker no longer wants coffee?","answer":"No. It can be a polite present request: I would like a coffee, please.","explanation":"The imperfect has pragmatic uses beyond narrating past events."} -->
+<!-- grammar-card: {"id":"rule-imperfect-uses","kind":"concept","format":"qa","priority":"essential","sourceSection":"When to Use the Imperfecto","rule":"The imperfecto presents ongoing or habitual past actions and background description","example":"Rather than a completed event, what does the imperfecto present in the past?","answer":"Ongoing or habitual actions and background description (age, time, weather).","explanation":"Count it if you name ongoing or habitual action and background. Siempre desayunaba huevos; Hacía frío; Tenía doce años."} -->
+<!-- grammar-card: {"id":"polite-imperfect","kind":"rule","format":"qa","priority":"optional","sourceSection":"When to Use the Imperfecto","rule":"The imperfect can soften a present request","example":"Must Quería un café, por favor mean that the speaker no longer wants coffee?","answer":"No. It can be a polite present request: I would like a coffee, please.","explanation":"The imperfect has pragmatic uses beyond narrating past events."} -->
 
 ## Trigger Words for the Imperfecto
 

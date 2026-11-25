@@ -1,5 +1,7 @@
 # Conjunctions & Complex Sentences
 
+<!-- vocab-inventory: {"mode":"explicit"} -->
+
 Conjunctions are the glue that holds complex thoughts together. In Russian, they connect words, phrases, and clauses — and come with strict **comma rules** that differ significantly from English. This lesson covers coordinating and subordinating conjunctions, the tricky difference between **а** and **но**, and Russian punctuation conventions.
 
 ---
@@ -20,6 +22,8 @@ The most basic conjunction. Connects similar or additive ideas.
 
 > **Comma rule:** When **и** connects two **independent clauses** (each with its own subject), place a comma before it. When it connects two words or phrases, no comma is needed.
 
+<!-- grammar-card: {"id":"tea-and-coffee","kind":"rule","format":"cloze","priority":"optional","sourceSection":"И (and)","rule":"И joins items of equal weight","example":"I like tea and coffee, simply adding the two: Я люблю чай ___ кофе.","answer":"и","explanation":"Tea and coffee are added side by side with no contrast or choice, which is what и expresses; а would contrast them and или would offer a choice. Two single words need no comma.","legacyAliases":[{"rule":"И joins items of equal weight","example":"Я люблю чай ___ кофе."}]} -->
+
 ### А (and/but — contrast)
 
 Expresses **contrast or distinction** between two things, without contradiction. Often translated as "and" or "while."
@@ -39,8 +43,6 @@ Expresses **contradiction or opposition** — the second clause goes against wha
 - **Я хотел помочь, но не смог.** *(Ya khotel pomoch', no ne smog.)* — I wanted to help but couldn't.
 - **Погода плохая, но мы всё равно пойдём.** *(Pogoda plokhaya, no my vsyo ravno poydyom.)* — The weather is bad, but we'll go anyway.
 - **Он богатый, но несчастный.** *(On bogatyy, no neschastnyy.)* — He is rich but unhappy.
-
-<!-- grammar-card: {"rule":"И joins items of equal weight","hint":"и = and","example":"Я люблю чай ___ кофе.","answer":"и","explanation":"Tea and coffee are simply added together with no contrast, which is what и expresses."} -->
 
 ---
 
@@ -64,9 +66,11 @@ This is one of the most common sources of confusion for learners. Here is the ke
 
 <!-- quiz:{"type":"multiple-choice","question":"Which conjunction fits: 'Он хотел прийти, ___ не смог.'?","options":["и","а","но","что"],"answer":2} -->
 
-<!-- grammar-card: {"rule":"Но marks a genuine contradiction between the clauses","hint":"а = whereas, но = but","example":"Я устал, ___ не сплю.","answer":"но","explanation":"Being tired yet not sleeping is a real opposition, so но is required instead of а."} -->
+<!-- grammar-card: {"id":"tired-not-sleeping","kind":"rule","format":"cloze","priority":"essential","sourceSection":"The Difference Between А and Но","rule":"Но marks a genuine contradiction between the clauses","example":"I'm tired, yet, against what you would expect, I'm not sleeping. Use one short word: Я устал, ___ не сплю.","answer":"но","explanation":"Tiredness leads you to expect sleep, and the second clause goes against that expectation, so the adversative но is needed rather than а.","legacyAliases":[{"rule":"Но marks a genuine contradiction between the clauses","example":"Я устал, ___ не сплю."}]} -->
 
-<!-- grammar-card: {"rule":"А contrasts two facts without setting them against each other","hint":"а = whereas, но = but","example":"Я читаю, ___ он спит.","answer":"а","explanation":"Reading and sleeping merely differ, so Russian uses а rather than the adversative но."} -->
+<!-- grammar-card: {"id":"reading-while-sleeping","kind":"rule","format":"cloze","priority":"optional","sourceSection":"The Difference Between А and Но","rule":"А contrasts two facts without setting them against each other","example":"I'm reading, whereas he is asleep: just two different facts side by side. Я читаю, ___ он спит.","answer":"а","explanation":"Reading and sleeping merely differ; neither fact goes against what the other leads you to expect, so Russian uses а rather than но, and и would lose the contrast.","legacyAliases":[{"rule":"А contrasts two facts without setting them against each other","example":"Я читаю, ___ он спит."}]} -->
+
+<!-- grammar-card: {"id":"rule-a-no-conflict","kind":"concept","format":"qa","priority":"essential","sourceSection":"The Difference Between А and Но","rule":"А sets two different facts side by side without contradiction","example":"Which Russian conjunction joins two clauses whose facts simply differ, with no clash of expectations, like English whereas or while?","answer":"А.","explanation":"Any answer giving а counts. In Я читаю, а он спит the two facts just differ; но would claim that the second goes against what the first leads you to expect."} -->
 
 ---
 
@@ -90,15 +94,19 @@ Used in **negative sentences** to deny both options. The verb must also be negat
 - **У меня нет ни времени, ни денег.** *(U menya net ni vremeni, ni deneg.)* — I have neither time nor money.
 - **Она не ест ни мясо, ни рыбу.** *(Ona ne yest ni myaso, ni rybu.)* — She eats neither meat nor fish.
 - **Мне не нравится ни жара, ни холод.** *(Mne ne nravitsya ni zhara, ni kholod.)* — I like neither heat nor cold.
-- **Он ни читает, ни пишет.** *(On ni chitayet, ni pishet.)* — He neither reads nor writes.
+- **Он не умеет ни читать, ни писать.** *(On ne umeyet ni chitat', ni pisat'.)* — He can neither read nor write.
 
 <!-- quiz:{"type":"multiple-choice","question":"How do you say 'neither...nor' in Russian?","options":["или...или","и...и","ни...ни","не...не"],"answer":2} -->
+
+<!-- grammar-card: {"id":"ni-ni-negated-verb","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Ни...ни (neither...nor)","rule":"With ни...ни the verb itself is also negated","example":"He speaks neither Russian nor English: Он ___ говорит ни по-русски, ни по-английски.","answer":"не","explanation":"Ни...ни denies both options, but Russian still negates the verb with не, unlike English neither...nor."} -->
 
 ---
 
 ## Subordinating Conjunctions
 
-Subordinating conjunctions connect a **main clause** with a **dependent (subordinate) clause**. In Russian, a comma is **always** placed before the subordinating conjunction.
+Subordinating conjunctions connect a **main clause** with a **dependent (subordinate) clause**. In Russian, a subordinate clause is **always** set off by a comma: the comma comes before the subordinating conjunction whenever the subordinate clause follows the main clause, and after the subordinate clause when it opens the sentence.
+
+<!-- grammar-card: {"id":"rule-comma-subordinate","kind":"concept","format":"qa","priority":"optional","sourceSection":"Subordinating Conjunctions","rule":"A subordinate clause is always set off by a comma","example":"When does Russian put a comma before a subordinating conjunction such as если (if) or когда (when)?","answer":"Whenever its clause follows the main clause, even with no pause in speech.","explanation":"Any answer saying whenever the subordinate clause comes after the main clause counts. The comma is a fixed rule, not a matter of pauses: Я знаю, что он дома. A clause that opens the sentence takes its comma after it instead: Когда я был маленьким, я боялся темноты."} -->
 
 ### Что (that)
 
@@ -119,6 +127,10 @@ Expresses **purpose**. When the subjects are the same, use чтобы + infiniti
 - **Мама позвонила, чтобы я пришёл домой.** *(Mama pozvonila, chtoby ya prishol domoy.)* — Mom called so that I would come home.
 - **Я закрыл окно, чтобы не было холодно.** *(Ya zakryl okno, chtoby ne bylo kholodno.)* — I closed the window so it wouldn't be cold.
 - **Нужно много работать, чтобы добиться успеха.** *(Nuzhno mnogo rabotat', chtoby dobit'sya uspekha.)* — One must work hard to achieve success.
+
+<!-- grammar-card: {"id":"chtoby-different-subject","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Чтобы (in order to / so that)","rule":"Чтобы takes a past-tense verb when its clause has a different subject","example":"Mom called so that Ivan would come home. Use прийти (to come): Мама позвонила, чтобы Иван ___ домой.","answer":"пришёл","explanation":"Mom calls but Ivan comes, so the subjects differ and чтобы needs the past tense, masculine to agree with Иван; an infinitive would mean Mom herself was coming."} -->
+
+<!-- grammar-card: {"id":"rule-chtoby-past","kind":"concept","format":"qa","priority":"essential","sourceSection":"Чтобы (in order to / so that)","rule":"Чтобы takes the past tense when the subjects differ","example":"After чтобы (so that), which verb form follows when its clause has a different subject from the main clause?","answer":"The past tense.","explanation":"Any answer naming the past tense counts. Мама позвонила, чтобы я пришёл домой: different subjects, so past tense; with the same subject чтобы takes the infinitive."} -->
 
 ### Если (if)
 
@@ -150,6 +162,8 @@ Introduces **temporal clauses**.
 
 The most common way to express cause. Always preceded by a comma.
 
+<!-- vocab-card: {"id":"vocab-potomu-chto","word":"потому́ что","meaning":"because","priority":"optional","sourceSection":"Потому что (because)"} -->
+
 - **Я не пришёл, потому что был болен.** *(Ya ne prishol, potomu chto byl bolen.)* — I didn't come because I was sick.
 - **Она плачет, потому что ей грустно.** *(Ona plachet, potomu chto yey grustno.)* — She is crying because she is sad.
 - **Мы опоздали, потому что была пробка.** *(My opozdali, potomu chto byla probka.)* — We were late because there was a traffic jam.
@@ -159,6 +173,8 @@ The most common way to express cause. Always preceded by a comma.
 ### Так как (since/as)
 
 More formal synonym of потому что. Usually placed at the **beginning** of the sentence.
+
+<!-- vocab-card: {"id":"vocab-tak-kak","word":"так как","meaning":"since, as (giving a reason)","priority":"optional","sourceSection":"Так как (since/as)"} -->
 
 - **Так как шёл дождь, мы остались дома.** *(Tak kak shol dozhd', my ostalis' doma.)* — Since it was raining, we stayed home.
 - **Так как он опоздал, ему не разрешили войти.** *(Tak kak on opozdal, yemu ne razreshili voyti.)* — Since he was late, he wasn't allowed in.
@@ -176,11 +192,17 @@ Introduces a **result or consequence**. Note: поэтому is technically an a
 - **Она много занималась, поэтому сдала экзамен.** *(Ona mnogo zanimalas', poetomu sdala ekzamen.)* — She studied a lot, so she passed the exam.
 - **Автобус не пришёл, поэтому я взял такси.** *(Avtobus ne prishol, poetomu ya vzyal taksi.)* — The bus didn't come, so I took a taxi.
 
+<!-- vocab-card: {"id":"vocab-poetomu","word":"поэ́тому","meaning":"so, that's why","priority":"optional","sourceSection":"Поэтому (therefore/so)"} -->
+
+<!-- grammar-card: {"id":"rain-stayed-home","kind":"rule","format":"qa","priority":"essential","sourceSection":"Поэтому (therefore/so)","rule":"Поэтому introduces the result of what comes before it","example":"Шёл дождь, поэтому мы остались дома. Шёл дождь means it was raining; мы остались дома means we stayed home. Which event was the result of the other?","answer":"Staying home.","explanation":"Поэтому (so, that's why) introduces a consequence, so the clause after it, staying home, follows from the rain."} -->
+
 ---
 
 ## Concessive Conjunctions
 
 ### Хотя (although)
+
+<!-- vocab-card: {"id":"vocab-khotya","word":"хотя́","meaning":"although","priority":"optional","sourceSection":"Хотя (although)"} -->
 
 - **Хотя он устал, он продолжал работать.** *(Khotya on ustal, on prodolzhal rabotat'.)* — Although he was tired, he kept working.
 - **Я пойду гулять, хотя на улице холодно.** *(Ya poydu gulyat', khotya na ulitse kholodno.)* — I'll go for a walk, although it's cold outside.
@@ -191,6 +213,8 @@ Introduces a **result or consequence**. Note: поэтому is technically an a
 ### Несмотря на то что (despite the fact that)
 
 A more emphatic and formal version of хотя.
+
+<!-- vocab-card: {"id":"vocab-nesmotrya-na-to-chto","word":"несмотря́ на то что","meaning":"despite the fact that","priority":"optional","sourceSection":"Несмотря на то что (despite the fact that)"} -->
 
 - **Несмотря на то что было поздно, он позвонил.** *(Nesmotrya na to chto bylo pozdno, on pozvonil.)* — Despite the fact that it was late, he called.
 - **Несмотря на то что он молод, он очень опытный.** *(Nesmotrya na to chto on molod, on ochen' opytnyy.)* — Despite the fact that he is young, he is very experienced.
@@ -216,7 +240,7 @@ Russian word order is flexible, but there are patterns:
 - **Я помогу, если хочешь.** *(Ya pomogu, yesli khochesh'.)* — I'll help if you want.
 - **Хотя было трудно, мы закончили проект.** *(Khotya bylo trudno, my zakonchili proyekt.)* — Although it was hard, we finished the project.
 
-> **Key difference from English:** In Russian, you **always** put a comma before a subordinate clause, even when there's no pause in speech. This is a strict grammar rule, not a stylistic choice.
+> **Key difference from English:** In Russian, you **always** separate a subordinate clause from the main clause with a comma, even when there's no pause in speech. This is a strict grammar rule, not a stylistic choice.
 
 ---
 
@@ -226,7 +250,7 @@ Russian punctuation follows strict, rule-based conventions:
 
 ### Always Use a Comma Before:
 
-- **Subordinating conjunctions:** что, чтобы, если, когда, потому что, хотя, пока, где, который...
+- **Subordinating conjunctions** (when the subordinate clause follows the main clause; a clause that opens the sentence takes its comma after it): что, чтобы, если, когда, потому что, хотя, пока, где, который...
 - **А, но** (coordinating conjunctions of contrast/contradiction)
 - **Repeated conjunctions:** и...и, ни...ни, или...или
 

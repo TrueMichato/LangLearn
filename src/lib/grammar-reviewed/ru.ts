@@ -1,5 +1,6 @@
 // Lessons are added once they pass the review contract in docs/knowledge-practice.md.
 export const reviewed: readonly string[] = [
+  // Pilot (lessons 1–10)
   'alphabet-sounds',
   'pronunciation-rules',
   'stress',
@@ -10,4 +11,45 @@ export const reviewed: readonly string[] = [
   'nominative-accusative',
   'genitive',
   'dative',
+  // Rollout batch 1 (lessons 11–19)
+  'instrumental',
+  'prepositional',
+  'conjugation',
+  'past-future',
+  'motion',
+  'reflexive',
+  'adjective-declension',
+  'pronouns',
+  'numbers',
+  // Rollout batch 2 (lessons 20–28)
+  'comparatives',
+  'conjunctions',
+  'expressions',
+  'imperative',
+  'prefixes',
+  'participles',
+  'gerunds',
+  'conditional',
+  'indirect-speech',
+  // Rollout batch 3 (lessons 29–37)
+  'word-order',
+  'short-adjectives',
+  'verbs-of-motion-prefixed',
+  'negation',
+  'relative-pronouns',
+  'time-clauses',
+  'subjunctive',
+  'passive-constructions',
+  'aspect-pairs',
+  // Rollout batch 4 (lessons 38–47)
+  'prepositions-advanced',
+  'register-formality',
+  'culture-context',
+  'resources',
+  'diminutives',
+  'numbers-with-cases',
+  'aspect-practical',
+  'common-mistakes',
+  'formal-writing',
+  'verbal-nouns',
 ];

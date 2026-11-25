@@ -1,5 +1,7 @@
 # Imperative Mood (Повелительное наклонение)
 
+<!-- vocab-inventory: {"mode":"explicit"} -->
+
 The imperative mood is used in Russian to give commands, make requests, offer invitations, and give instructions. Russian has distinct imperative forms for **ты** (informal singular) and **вы** (formal or plural), and there are also ways to express "let's" suggestions.
 
 ---
@@ -11,6 +13,10 @@ The imperative for **ты** is formed from the **third person plural** (они) 
 1. If the stem ends in a **vowel** → add **-й**
 2. If the stem ends in a **consonant** and the stress is on the **ending** → add **-и**
 3. If the stem ends in a **consonant** and the stress is on the **stem** → add **-ь**
+
+> **Stress check:** judge the stress by the **я** form. **Пишу́** is stressed on the ending, so the imperative is **пиши**, even though **пи́шут** is stressed on the stem; **отве́чу** is stressed on the stem, so the imperative is **ответь**.
+
+<!-- grammar-card: {"id": "rule-vowel-stem-imperative", "kind": "concept", "format": "qa", "priority": "optional", "sourceSection": "1. Formation of the Imperative (ты form)", "rule": "A vowel-final они stem adds -й for the ты imperative", "example": "When the они-form stem of a verb ends in a vowel, what is added to make the ты imperative?", "answer": "-й.", "explanation": "Any answer giving -й counts. Чита-ют leaves the vowel stem чита-, so the imperative is читай."} -->
 
 ### Examples with vowel stems
 
@@ -42,6 +48,8 @@ The imperative for **ты** is formed from the **third person plural** (они) 
 
 **Пиши аккуратно!** *(Pishi akkuratno!)* — Write neatly!
 
+<!-- grammar-card: {"id": "write-neatly", "kind": "rule", "format": "cloze", "priority": "essential", "sourceSection": "Examples with consonant stems (stress on ending)", "rule": "A consonant stem with end stress adds -и", "example": "Tell a friend to write neatly. Use писать (to write; я пишу́, stressed on the ending): ___ аккуратно!", "answer": "Пиши", "explanation": "Писать has the consonant stem пиш- (они пишут), and the я form пишу́ is stressed on the ending, so the ты imperative adds -и rather than -ь."} -->
+
 ### Examples with consonant stems (stress on stem)
 
 | Infinitive | Они form | Stem | Imperative (ты) |
@@ -50,11 +58,13 @@ The imperative for **ты** is formed from the **third person plural** (они) 
 | поставить | постав**ят** | постав- | поставь |
 | ответить | ответ**ят** | ответ- | ответь |
 
-**Готовь ужин!** *(Gotov uzhyn!)* — Prepare dinner!
+**Готовь ужин!** *(Gotov uzhin!)* — Prepare dinner!
 
 **Поставь чайник!** *(Postav chaynik!)* — Put the kettle on!
 
 **Ответь на вопрос!** *(Otvet na vopros!)* — Answer the question!
+
+<!-- grammar-card: {"id": "answer-the-question", "kind": "rule", "format": "cloze", "priority": "optional", "sourceSection": "Examples with consonant stems (stress on stem)", "rule": "A consonant stem with stem stress adds -ь", "example": "Tell a friend to answer the question. Use ответить (to answer; они отве́тят, я отве́чу, stressed on the stem): ___ на вопрос!", "answer": "Ответь", "explanation": "Ответить has the consonant stem ответ-, and its stress stays on the stem, so the ты imperative takes a soft sign instead of -и."} -->
 
 <!-- quiz:{"type":"multiple-choice","question":"What is the imperative (ты) form of 'читать' (to read)?","options":["читаи","читай","чить","чити"],"answer":1} -->
 
@@ -87,7 +97,7 @@ To form the **вы** imperative (formal or plural), simply add **-те** to the 
 
 <!-- quiz:{"type":"multiple-choice","question":"How do you form the вы imperative from the ты imperative?","options":["Add -те","Add -ите","Add -сь","Replace the last letter with -те"],"answer":0} -->
 
-<!-- grammar-card: {"rule":"Adding -те makes an imperative polite or plural","hint":"читай → ?","example":"Читай___ текст на странице пять.","answer":"те","explanation":"The bare читай addresses one familiar person; -те addresses Вы or a group."} -->
+<!-- grammar-card: {"id": "read-page-five-polite", "kind": "rule", "format": "cloze", "priority": "essential", "sourceSection": "2. The Вы Imperative", "rule": "Adding -те makes an imperative polite or plural", "example": "Tell a whole class to read the text on page five. Use читать (to read): Читай___ текст на странице пять.", "answer": "те", "explanation": "A class is a group, so the command needs the вы imperative, which is the ты form читай plus -те; bare читай would address one familiar person.", "legacyAliases": [{"rule": "Adding -те makes an imperative polite or plural", "example": "Читай___ текст на странице пять."}]} -->
 
 ---
 
@@ -118,6 +128,8 @@ To suggest doing something together ("let's…"), Russian uses **давай** (i
 
 **Давай попробуем!** *(Davay poprobuem!)* — Let's try!
 
+<!-- grammar-card: {"id": "lets-watch-a-movie", "kind": "rule", "format": "cloze", "priority": "optional", "sourceSection": "With perfective мы form", "rule": "Давай takes the perfective мы form for a single completed action", "example": "Suggest to a friend that you watch one particular movie together. Use посмотреть (to watch): Давай ___ фильм.", "answer": "посмотрим", "explanation": "Watching one movie is a single completed action, so давай is followed by the perfective мы form of посмотреть rather than an infinitive."} -->
+
 ---
 
 ## 4. Negative Commands
@@ -128,7 +140,7 @@ Negative imperatives are formed by adding **не** before the imperative verb. A
 
 **Не открывай окно!** *(Ne otkryvay okno!)* — Don't open the window!
 
-**Не забывайте ключи!** *(Ne zabyvyte klyuchi!)* — Don't forget the keys!
+**Не забывайте ключи!** *(Ne zabyvayte klyuchi!)* — Don't forget the keys!
 
 **Не трогай!** *(Ne trogay!)* — Don't touch!
 
@@ -144,6 +156,10 @@ Negative imperatives are formed by adding **не** before the imperative verb. A
 | Не забывай зонт! (Don't forget the umbrella!) | Не забудь зонт! (Don't forget the umbrella! — specific reminder) |
 
 The imperfective is far more common in negative commands. The perfective negative imperative often carries a sense of **warning** ("be careful not to…").
+
+<!-- grammar-card: {"id": "dont-open-the-window", "kind": "rule", "format": "cloze", "priority": "essential", "sourceSection": "Imperfective vs Perfective in negative commands", "rule": "A general prohibition uses the imperfective imperative", "example": "Tell a friend, as a general prohibition, not to open the window. Choose from открывать / открыть (to open): Не ___ окно!", "answer": "открывай", "explanation": "Negative commands default to the imperfective; the perfective не открой would instead warn against opening it by accident."} -->
+
+<!-- grammar-card: {"id": "rule-negative-imperfective", "kind": "concept", "format": "qa", "priority": "essential", "sourceSection": "4. Negative Commands", "rule": "Negative commands generally use the imperfective", "example": "Which aspect does Russian generally use in a negative command such as \"don't touch!\"?", "answer": "The imperfective.", "explanation": "Any answer naming the imperfective counts. Не трогай! and Не говори так! are imperfective; a perfective negative command sounds like a warning against an accident."} -->
 
 <!-- quiz:{"type":"multiple-choice","question":"Which aspect is generally preferred in negative commands?","options":["Perfective","Imperfective","Both are equally common","Neither — use infinitive"],"answer":1} -->
 
@@ -164,6 +180,10 @@ To give a command or express a wish about a **third person** (he, she, they), Ru
 **Пусть будет так!** *(Pust budet tak!)* — Let it be so! / So be it!
 
 **Пусть все знают правду.** *(Pust vse znayut pravdu.)* — Let everyone know the truth.
+
+<!-- grammar-card: {"id": "let-her-call", "kind": "rule", "format": "qa", "priority": "essential", "sourceSection": "5. Third-Person Imperatives (Пусть / Пускай)", "rule": "Пусть with a third-person verb directs an action at someone other than the listener", "example": "Пусть она позвонит мне. Позвонит is the она form of позвонить (to call). Who is supposed to make the call?", "answer": "She is.", "explanation": "Пусть + a third-person verb expresses a command or wish about a third person, so the call is expected from her, not from the listener."} -->
+
+<!-- grammar-card: {"id": "rule-pust-third-person", "kind": "concept", "format": "qa", "priority": "optional", "sourceSection": "5. Third-Person Imperatives (Пусть / Пускай)", "rule": "Пусть introduces a command or wish about a third person", "example": "Which Russian word introduces a command or wish about someone else, as in \"let him come tomorrow\"?", "answer": "Пусть (colloquially пускай).", "explanation": "Any answer giving пусть or пускай counts. Пусть он придёт завтра: пусть plus the third-person verb form."} -->
 
 ---
 
@@ -219,6 +239,8 @@ Some common verbs have irregular imperative forms that must be memorized:
 **Будь осторожен!** *(Bud ostrozhen!)* — Be careful!
 
 **Будьте здоровы!** *(Budte zdorovy!)* — Bless you! (Be healthy!)
+
+<!-- grammar-card: {"id": "eat-your-porridge", "kind": "rule", "format": "cloze", "priority": "optional", "sourceSection": "7. Irregular Imperatives", "rule": "Есть has the irregular imperative ешь", "example": "Tell a child to eat the porridge. Use есть (to eat): ___ кашу!", "answer": "Ешь", "explanation": "Есть is irregular: its imperative ешь cannot be built from the они form едят, so it has to be memorized."} -->
 
 ---
 

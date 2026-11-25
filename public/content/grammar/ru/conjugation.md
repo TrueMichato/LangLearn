@@ -1,5 +1,7 @@
 # Verb Conjugation — Present Tense (Спряжение глаголов)
 
+<!-- vocab-inventory: {"mode":"explicit"} -->
+
 Russian verbs in the present tense change their endings depending on the **person** (I, you, he/she, etc.) and **number** (singular or plural). There are two main conjugation patterns: **first conjugation** (I спряжение) and **second conjugation** (II спряжение). Learning to identify which pattern a verb follows is essential for correct speech.
 
 ---
@@ -80,7 +82,7 @@ First conjugation verbs typically have infinitives ending in **-ать**, **-я�
 
 <!-- quiz:{"type":"multiple-choice","question":"What is the correct 'ты' form of читать (to read)?","options":["читаю","читаешь","читает","читают"],"answer":1} -->
 
-<!-- grammar-card: {"rule":"First-conjugation verbs take -ешь in the ты-form","hint":"читать","example":"Ты ___ газету?","answer":"читаешь","explanation":"Читать is first conjugation, so its ты-form ends in -ешь rather than the second-conjugation -ишь."} -->
+<!-- grammar-card: {"id":"you-read-newspaper","kind":"rule","format":"cloze","priority":"essential","sourceSection":"1. First Conjugation (I спряжение)","rule":"First-conjugation verbs take -ешь in the ты-form","example":"Ask a friend if they are reading the newspaper. Use читать (to read): Ты ___ газету?","answer":"читаешь","explanation":"Читать is first conjugation, so its ты-form ends in -ешь rather than the second-conjugation -ишь.","legacyAliases":[{"rule":"First-conjugation verbs take -ешь in the ты-form","example":"Ты ___ газету?"}]} -->
 
 ---
 
@@ -149,7 +151,11 @@ Second conjugation verbs typically have infinitives ending in **-ить**. Their
 
 <!-- quiz:{"type":"multiple-choice","question":"Which verb belongs to the second conjugation?","options":["читать (to read)","работать (to work)","говорить (to speak)","рисовать (to draw)"],"answer":2} -->
 
-<!-- grammar-card: {"rule":"Second-conjugation verbs take -ит in the он-form","hint":"говорить","example":"Он ___ по-русски.","answer":"говорит","explanation":"Говорить is second conjugation, so the он-form ends in -ит and not in the first-conjugation -ет."} -->
+<!-- grammar-card: {"id":"he-speaks-russian","kind":"rule","format":"cloze","priority":"optional","sourceSection":"2. Second Conjugation (II спряжение)","rule":"Second-conjugation verbs take -ит in the он-form","example":"Say he speaks Russian. Use говорить (to speak): Он ___ по-русски.","answer":"говорит","explanation":"Говорить is second conjugation, so the он-form ends in -ит and not in the first-conjugation -ет.","legacyAliases":[{"rule":"Second-conjugation verbs take -ит in the он-form","example":"Он ___ по-русски."}]} -->
+
+<!-- grammar-card: {"id":"who-is-watching","kind":"rule","format":"qa","priority":"essential","sourceSection":"2. Second Conjugation (II спряжение)","rule":"The verb ending identifies the subject even without a pronoun","example":"Смотришь телевизор? The pronoun is left out. Смотреть means to watch; телевизор means TV. Who is being asked?","answer":"You: one person addressed as ты.","explanation":"The ending -ишь belongs only to the ты-form of a second-conjugation verb, so the ending alone tells you the subject."} -->
+
+<!-- grammar-card: {"id":"rule-second-conj-vowel","kind":"concept","format":"qa","priority":"essential","sourceSection":"2. Second Conjugation (II спряжение)","rule":"Second-conjugation verbs have и in the ты, он, мы and вы endings","example":"Which vowel appears in the ты, он, мы and вы endings of second-conjugation verbs?","answer":"И","explanation":"Говоришь, говорит, говорим, говорите carry и, where the first conjugation has е (ё): читаешь, читает. The я and они endings, говорю and говорят, have no и."} -->
 
 ---
 
@@ -190,6 +196,10 @@ Here is a practical guide to determining whether a verb is first or second conju
 **Ты умеешь плавать?** *(Ty umeyesh' plavat'?)* — Can you swim? *(уметь — 1st conj.)*
 
 <!-- quiz:{"type":"multiple-choice","question":"Which of these -еть verbs is second conjugation (an exception)?","options":["уметь (to be able)","иметь (to have)","видеть (to see)","краснеть (to blush)"],"answer":2} -->
+
+<!-- grammar-card: {"id":"we-hear-music","kind":"rule","format":"cloze","priority":"optional","sourceSection":"3. How to Determine Conjugation Type","rule":"Слышать is one of the four -ать verbs in the second conjugation","example":"Say we hear music. Use слышать (to hear): Мы ___ музыку.","answer":"слышим","explanation":"Слышать ends in -ать but is one of the four exceptions (гнать, держать, дышать, слышать) that follow the second conjugation, so мы takes -им."} -->
+
+<!-- grammar-card: {"id":"rule-it-verbs","kind":"concept","format":"qa","priority":"optional","sourceSection":"3. How to Determine Conjugation Type","rule":"Most verbs ending in -ить belong to the second conjugation","example":"Name the infinitive ending that most second-conjugation verbs have.","answer":"-ить","explanation":"Говорить, учить, любить, ходить. The other second-conjugation verbs are the memorised exceptions: seven in -еть and four in -ать."} -->
 
 ---
 
@@ -248,13 +258,17 @@ Many second conjugation verbs undergo a **consonant change** in the **first pers
 
 **Я прошу тебя помочь мне.** *(Ya proshu tebya pomoch' mne.)* — I ask you to help me.
 
-**Он просит совет.** *(On prosit sovet.)* — He asks for advice.
+**Он просит совета.** *(On prosit soveta.)* — He asks for advice.
 
-**Они просят помощь.** *(Oni prosyat pomoshch'.)* — They are asking for help.
+**Они просят помощи.** *(Oni prosyat pomoshchi.)* — They are asking for help.
 
 > **Key rule:** The consonant mutation happens **only in the я form**. All other persons keep the original stem consonant.
 
-<!-- grammar-card: {"rule":"Many first-conjugation verbs change their stem consonant in the я-form","hint":"писать → ?","example":"Я ___ письмо.","answer":"пишу","explanation":"Писать mutates с to ш before the ending, giving пишу; the mutation appears only in the я-form."} -->
+<!-- grammar-card: {"id":"i-walk-to-school","kind":"rule","format":"cloze","priority":"essential","sourceSection":"4. Consonant Mutations in the First Person Singular","rule":"Second-conjugation verbs can change their stem consonant in the я-form","example":"Say you go to school every day. Use ходить (to walk/go): Я ___ в школу каждый день.","answer":"хожу","explanation":"Ходить changes д to ж in the я-form only, so я хожу, but ты ходишь and он ходит."} -->
+
+<!-- grammar-card: {"id":"she-loves-chocolate","kind":"rule","format":"cloze","priority":"optional","sourceSection":"4. Consonant Mutations in the First Person Singular","rule":"The я-form consonant change does not spread to other persons","example":"Say she loves chocolate. Use любить (to love): Она ___ шоколад.","answer":"любит","explanation":"Only я люблю adds л; every other person keeps the plain stem consonant б, so она любит."} -->
+
+<!-- grammar-card: {"id":"rule-mutation-ya-only","kind":"concept","format":"qa","priority":"essential","sourceSection":"4. Consonant Mutations in the First Person Singular","rule":"In second-conjugation verbs the stem consonant changes only in the я-form","example":"In a second-conjugation verb like платить (to pay), which present-tense forms show the consonant change?","answer":"Only the я-form (I).","explanation":"The answer counts if it names only the first person singular. Я плачу, but ты платишь, он платит."} -->
 
 ---
 
@@ -281,6 +295,10 @@ This verb uses **1st conjugation endings** in the singular and **2nd conjugation
 
 **Она хочет стать врачом.** *(Ona khochet stat' vrachom.)* — She wants to become a doctor.
 
+<!-- grammar-card: {"id":"they-want","kind":"rule","format":"cloze","priority":"optional","sourceSection":"хотеть (to want) — mixed conjugation","rule":"Хотеть takes second-conjugation endings in the plural","example":"Say they want to study Russian. Use хотеть (to want): Они ___ учить русский.","answer":"хотят","explanation":"Хотеть switches to second-conjugation endings in the plural, so они takes -ят on the stem хот-, without the ч of the singular."} -->
+
+<!-- grammar-card: {"id":"rule-khotet-mixed","kind":"concept","format":"qa","priority":"optional","sourceSection":"хотеть (to want) — mixed conjugation","rule":"Хотеть mixes first-conjugation singular endings with second-conjugation plural endings","example":"How does хотеть (to want) mix the two conjugation patterns?","answer":"First-conjugation endings in the singular, second-conjugation endings in the plural.","explanation":"Я хочу, ты хочешь, он хочет use first-conjugation endings; мы хотим, вы хотите, они хотят use second-conjugation ones."} -->
+
 ### есть (to eat) — fully irregular
 
 | я ем | мы едим |
@@ -297,6 +315,8 @@ This verb uses **1st conjugation endings** in the singular and **2nd conjugation
 **Они едят суп.** *(Oni yedyat sup.)* — They are eating soup.
 
 **Она ест фрукты каждый день.** *(Ona yest frukty kazhdyy den'.)* — She eats fruit every day.
+
+<!-- grammar-card: {"id":"what-do-you-eat","kind":"rule","format":"cloze","priority":"optional","sourceSection":"есть (to eat) — fully irregular","rule":"Есть is fully irregular and must be memorised","example":"Ask a friend what they are eating. Use есть (to eat): Что ты ___?","answer":"ешь","explanation":"Есть follows neither pattern; its ты-form is the short ешь, with no -ешь or -ишь ending added to a stem."} -->
 
 ### дать (to give) — irregular (perfective, but important pattern)
 

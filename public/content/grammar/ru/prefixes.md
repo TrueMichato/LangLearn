@@ -1,5 +1,7 @@
 # Verbal Prefixes (в-, вы-, при-, у-)
 
+<!-- vocab-inventory: {"mode":"explicit"} -->
+
 Russian verbal prefixes are one of the most powerful features of the language. Adding a prefix to a verb changes its meaning — sometimes subtly, sometimes dramatically — and almost always makes the verb **perfective**. This lesson focuses on four of the most common directional prefixes: **в-**, **вы-**, **при-**, and **у-**.
 
 ---
@@ -10,12 +12,14 @@ When you add a prefix to an **imperfective** verb, the result is usually a **per
 
 | Base verb | + Prefix | Perfective result | Secondary imperfective |
 |---|---|---|---|
-| ходить (to walk) | вы- | выходить → выйти (pf.) | выходить (impf.) |
+| идти (to go on foot) | вы- | выйти (pf.) | выходить (impf.) |
 | ехать (to drive) | при- | приехать (pf.) | приезжать (impf.) |
 | бежать (to run) | у- | убежать (pf.) | убегать (impf.) |
 | нести (to carry) | в- | внести (pf.) | вносить (impf.) |
 
 The prefix determines the **direction** or **type** of the action. Learning these patterns will dramatically expand your vocabulary.
+
+<!-- grammar-card: {"id": "rule-prefix-makes-perfective", "kind": "concept", "format": "qa", "priority": "essential", "sourceSection": "1. Overview: How Prefixes Work", "rule": "A prefix usually makes a verb perfective", "example": "What aspect does a verb such as ехать (to drive) usually become once a prefix like у- is added?", "answer": "Perfective.", "explanation": "Any answer naming the perfective counts. Ехать becomes уехать (pf.); a new imperfective needs a secondary form such as уезжать."} -->
 
 ---
 
@@ -48,13 +52,15 @@ The prefix **в-** (or **во-** before certain consonant clusters) indicates mo
 
 ### Abstract uses of в-
 
+<!-- vocab-card: {"id": "vocab-vklyuchit", "word": "включи́ть", "meaning": "to switch on, to turn on", "priority": "optional", "sourceSection": "Abstract uses of в-"} -->
+
 **Я включил телевизор.** *(Ya vklyuchil televizor.)* — I turned on the TV. (lit. switched in)
 
 **Она вмешалась в разговор.** *(Ona vmeshalas v razgovor.)* — She interfered in the conversation.
 
 <!-- quiz:{"type":"multiple-choice","question":"What does the prefix 'в-' indicate?","options":["Movement out of","Movement into","Movement away","Movement around"],"answer":1} -->
 
-<!-- grammar-card: {"rule":"The prefix в- adds the sense of movement into something","hint":"идти → ?","example":"Он ___ в комнату.","answer":"вошёл","explanation":"В- joined to шёл gives вошёл, and the place entered follows with в plus the accusative."} -->
+<!-- grammar-card: {"id": "entered-the-room", "kind": "rule", "format": "cloze", "priority": "essential", "sourceSection": "2. The Prefix в- (во-): Movement Into", "rule": "The prefix в- adds the sense of movement into something", "example": "He entered the room. Put on шёл (went) the prefix of movement into, so that it means went in: Он ___ в комнату.", "answer": "вошёл", "explanation": "Movement into calls for в-, which takes the form во- before шёл; the place entered then follows with в plus the accusative.", "legacyAliases": [{"rule": "The prefix в- adds the sense of movement into something", "example": "Он ___ в комнату."}]} -->
 
 ---
 
@@ -82,6 +88,8 @@ The prefix **вы-** is the opposite of **в-** — it indicates movement **out 
 
 **Вынеси мусор, пожалуйста.** *(Vynesi musor, pozhaluysta.)* — Take the trash out, please.
 
+<!-- grammar-card: {"id": "take-out-the-trash", "kind": "rule", "format": "qa", "priority": "essential", "sourceSection": "Common verbs with вы-", "rule": "Вы- on a verb of carrying means carrying something out", "example": "Вынеси мусор, пожалуйста. Нести means to carry and мусор means trash. Where does the speaker want the trash taken?", "answer": "Out (of the room or home).", "explanation": "Вы- marks movement out of a place, so вынести means to carry something out rather than in (внести) or away (унести)."} -->
+
 **Самолёт вылетает в шесть.** *(Samolyot vyletayet v shest.)* — The plane departs (flies out) at six.
 
 **Он выпил весь чай.** *(On vypil ves chay.)* — He drank all the tea.
@@ -90,13 +98,17 @@ The prefix **вы-** is the opposite of **в-** — it indicates movement **out 
 
 **Она выбрала красное платье.** *(Ona vybrala krasnoye platye.)* — She chose a red dress. (selected out)
 
+<!-- vocab-card: {"id": "vocab-vyigrat", "word": "вы́играть", "meaning": "to win", "priority": "optional", "sourceSection": "Abstract uses of вы-"} -->
+
 **Мы выиграли матч!** *(My vyigrali match!)* — We won the match!
 
 **Он выучил все слова.** *(On vyuchil vse slova.)* — He learned all the words. (studied to completion)
 
 <!-- quiz:{"type":"multiple-choice","question":"In perfective verbs with вы-, where does the stress usually fall?","options":["On the root","On the ending","On the prefix вы-","On the last syllable"],"answer":2} -->
 
-<!-- grammar-card: {"rule":"The prefix вы- means movement out of somewhere","hint":"идти → ?","example":"Она ___ из дома.","answer":"вышла","explanation":"Вы- marks the exit, and из plus the genitive дома names what was left."} -->
+<!-- grammar-card: {"id": "went-out-of-the-house", "kind": "rule", "format": "cloze", "priority": "optional", "sourceSection": "3. The Prefix вы-: Movement Out Of", "rule": "The prefix вы- means movement out of somewhere", "example": "She went out of the house. Put a prefix on шла (went) so that it means went out: Она ___ из дома.", "answer": "вышла", "explanation": "Movement out of a place calls for вы-, and из plus the genitive дома names the place she left.", "legacyAliases": [{"rule": "The prefix вы- means movement out of somewhere", "example": "Она ___ из дома."}]} -->
+
+<!-- grammar-card: {"id": "rule-vy-stress", "kind": "concept", "format": "qa", "priority": "optional", "sourceSection": "3. The Prefix вы-: Movement Out Of", "rule": "Perfective verbs with вы- are stressed on the prefix", "example": "In perfective verbs formed with вы-, where does the stress almost always fall?", "answer": "On the prefix.", "explanation": "Any answer saying the prefix counts. Вы́шел, вы́ехал: the perfective puts the stress on вы́-, while the imperfective выходи́ть does not."} -->
 
 ---
 
@@ -123,11 +135,13 @@ The prefix **при-** has two main meanings:
 
 **Когда ты приехал в Москву?** *(Kogda ty priyekhal v Moskvu?)* — When did you arrive in Moscow?
 
-**Дети прибежали из школы.** *(Deti pribezali iz shkoly.)* — The children came running from school.
+**Дети прибежали из школы.** *(Deti pribezhali iz shkoly.)* — The children came running from school.
 
 **Самолёт прилетел вовремя.** *(Samolyot priletel vovremya.)* — The plane arrived on time.
 
 **Принеси мне воды, пожалуйста.** *(Prinesi mne vody, pozhaluysta.)* — Bring me some water, please.
+
+<!-- vocab-card: {"id": "vocab-prinesti", "word": "принести́", "meaning": "to bring", "priority": "optional", "sourceSection": "Arrival meaning"} -->
 
 **Она привела подругу на вечеринку.** *(Ona privela podrugu na vecherinku.)* — She brought a friend to the party.
 
@@ -141,7 +155,9 @@ The prefix **при-** has two main meanings:
 
 <!-- quiz:{"type":"multiple-choice","question":"'Она принесла подарок' means:","options":["She took a gift away.","She brought a gift.","She made a gift.","She found a gift."],"answer":1} -->
 
-<!-- grammar-card: {"rule":"The prefix при- marks arrival at the destination","hint":"идти → ?","example":"Гости ___ вовремя.","answer":"пришли","explanation":"При- focuses on reaching the place, so пришли says the guests got there on time."} -->
+<!-- grammar-card: {"id": "guests-arrived", "kind": "rule", "format": "cloze", "priority": "optional", "sourceSection": "Arrival meaning", "rule": "The prefix при- marks arrival at the destination", "example": "The guests arrived on time. Put a prefix on шли (went) so that it means arrived: Гости ___ вовремя.", "answer": "пришли", "explanation": "Arrival at a destination calls for при-, so the guests are described as reaching the place, not entering or leaving it.", "legacyAliases": [{"rule": "The prefix при- marks arrival at the destination", "example": "Гости ___ вовремя."}]} -->
+
+<!-- grammar-card: {"id": "rule-pri-arrival", "kind": "concept", "format": "qa", "priority": "essential", "sourceSection": "Arrival meaning", "rule": "При- turns a verb of motion into one of arrival", "example": "Which prefix turns a verb of motion into one of arriving at a destination, as in to come or to bring?", "answer": "При-.", "explanation": "Any answer giving при- counts. Прийти, приехать, принести: each reaches the destination, the opposite of у- (departure)."} -->
 
 ---
 
@@ -172,9 +188,13 @@ The prefix **у-** indicates **departure from** a place (moving away) or **remov
 
 **Ребёнок упал с велосипеда.** *(Rebyonok upal s velosipeda.)* — The child fell off the bicycle.
 
+<!-- grammar-card: {"id": "left-an-hour-ago", "kind": "rule", "format": "cloze", "priority": "essential", "sourceSection": "Common verbs with у-", "rule": "The prefix у- marks departure from a place", "example": "He left an hour ago. Put a prefix on шёл (went) so that it means went away: Он ___ час назад.", "answer": "ушёл", "explanation": "Leaving a place calls for у- (departure), not при-, which would mean he arrived."} -->
+
 ### Abstract uses of у-
 
 **Она убрала комнату.** *(Ona ubrala komnatu.)* — She cleaned (tidied up) the room.
+
+<!-- vocab-card: {"id": "vocab-uznat", "word": "узна́ть", "meaning": "to find out, to learn (news)", "priority": "optional", "sourceSection": "Abstract uses of у-"} -->
 
 **Я уже узнал новость.** *(Ya uzhe uznal novost.)* — I already found out the news.
 
