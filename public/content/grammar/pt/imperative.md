@@ -27,9 +27,10 @@ The irregular stem changes in **dormir → durma** and **ouvir → ouça** must 
 
 <!-- grammar-card: {"id":"imperative-ar","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Affirmative Commands","rule":"Regular você commands use -e for -ar verbs","example":"___ mais devagar. (falar; standard você command)","answer":"Fale","explanation":"Fal- + -e gives fale. Informal Fala! is discussed separately."} -->
 <!-- grammar-card: {"id":"imperative-er","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Affirmative Commands","rule":"Regular você commands use -a for -er verbs","example":"___ água. (beber; standard você command)","answer":"Beba","explanation":"Beb- + -a gives beba."} -->
-<!-- grammar-card: {"id":"imperative-ir","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Affirmative Commands","rule":"In Brazilian Portuguese, the imperative for 'você' uses: -ar → -e, -er → -a, -ir → -a","example":"___ a janela, por favor! (abrir)","answer":"Abra","explanation":"For regular -ir abrir, the standard você command is abra; irregular stems need separate attention."} -->
+<!-- grammar-card: {"id":"imperative-ir","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Affirmative Commands","rule":"In Brazilian Portuguese, the imperative for 'você' uses: -ar → -e, -er → -a, -ir → -a","example":"___ a janela, por favor! (abrir; standard você command)","answer":"Abra","explanation":"For regular -ir abrir, the standard você command is abra; irregular stems need separate attention.","legacyAliases":[{"rule":"In Brazilian Portuguese, the imperative for 'você' uses: -ar → -e, -er → -a, -ir → -a","example":"___ a janela, por favor! (abrir)"}]} -->
 <!-- grammar-card: {"id":"imperative-dormir","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Affirmative Commands","rule":"Dormir changes its stem in the você command","example":"___ bem. (dormir; standard você command)","answer":"Durma","explanation":"Learn durma rather than mechanically forming dorma."} -->
 <!-- grammar-card: {"id":"imperative-ouvir","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Affirmative Commands","rule":"Ouvir has irregular você command ouça","example":"___! (ouvir; standard você command)","answer":"Ouça","explanation":"The stem changes; retain the cedilla."} -->
+<!-- grammar-card: {"id":"rule-voce-command-source","kind":"concept","format":"qa","priority":"essential","sourceSection":"Affirmative Commands","rule":"The standard affirmative você command comes from the present subjunctive","example":"Which verb form is the standard affirmative você command based on?","answer":"The você form of the present subjunctive.","explanation":"Any answer naming the present subjunctive counts: -ar verbs take -e (fale), -er and -ir verbs take -a (coma, abra)."} -->
 ### Common -AR verb commands:
 
 - **Fale mais devagar** (fah-lee mahyz deh-vah-gar) — Speak more slowly
@@ -71,6 +72,7 @@ To make a negative command, simply add **não** before the same form:
 > **Simple rule for standard você/vocês commands:** Affirmative and negative commands use the same subjunctive-based verb form. Add **não** for negation. This is not a rule for every address form, such as **tu**, or every informal spoken pattern.
 
 <!-- grammar-card: {"id":"negative-command","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Negative Commands","rule":"Negative commands use 'não' + the same imperative form","example":"___ fale alto no hospital (Don't speak loudly)","answer":"Não","explanation":"For the standard você form taught here, fale stays the same after não; do not generalize this to every address form."} -->
+<!-- grammar-card: {"id":"rule-negative-command-form","kind":"concept","format":"qa","priority":"essential","sourceSection":"Negative Commands","rule":"A negative você command puts não before the same command form","example":"How do you turn a standard você command into a negative one?","answer":"Put não before the same form, as in Não fale.","explanation":"Any answer adding não before the unchanged form counts. This holds for standard você and vocês commands, not for every address form."} -->
 
 ## Irregular Imperatives
 
@@ -107,7 +109,7 @@ Some very common verbs have irregular imperative forms:
 <!-- grammar-card: {"id":"command-fazer","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Irregular Imperatives","rule":"Fazer has você command faça","example":"___ a lição de casa. (fazer; standard você command)","answer":"Faça","explanation":"Retain ç in faça."} -->
 <!-- grammar-card: {"id":"command-dizer","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Irregular Imperatives","rule":"Dizer has você command diga","example":"___ a verdade. (dizer; standard você command)","answer":"Diga","explanation":"Dizer changes to diga in the standard você command."} -->
 <!-- grammar-card: {"id":"command-trazer","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Irregular Imperatives","rule":"Trazer has você command traga","example":"___ seu passaporte. (trazer; standard você command)","answer":"Traga","explanation":"The irregular stem is trag-."} -->
-<!-- grammar-card: {"id":"command-vir","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Irregular Imperatives","rule":"Common irregular imperatives: vá (go), venha (come), faça (do/make), diga (say), traga (bring)","example":"___ cá! Preciso falar com você. (Come here!)","answer":"Venha","explanation":"Vir has standard você command venha, not vem in this pattern."} -->
+<!-- grammar-card: {"id":"command-vir","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Irregular Imperatives","rule":"Common irregular imperatives: vá (go), venha (come), faça (do/make), diga (say), traga (bring)","example":"___ cá! Preciso falar com você. (vir; standard você command)","answer":"Venha","explanation":"Vir has standard você command venha, not vem in this pattern.","legacyAliases":[{"rule":"Common irregular imperatives: vá (go), venha (come), faça (do/make), diga (say), traga (bring)","example":"___ cá! Preciso falar com você. (Come here!)"}]} -->
 <!-- quiz: {"type":"multiple-choice","question":"What is the irregular imperative of 'ir' (to go)?","options":["Vou!","Vai!","Vá!","Ia!"],"answer":2} -->
 
 ## Plural Commands (Vocês)
@@ -115,6 +117,7 @@ Some very common verbs have irregular imperative forms:
 For commands directed at multiple people, use the **vocês** present-subjunctive form: **fale → falem**, **coma → comam**, **venha → venham**. The verb changes to agree with the plural addressees:
 
 <!-- grammar-card: {"id":"plural-command","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Plural Commands (Vocês)","rule":"Vocês commands use plural forms, not the singular você form","example":"___ mais baixo. (falar; standard vocês command)","answer":"Falem","explanation":"Singular fale becomes plural falem; likewise coma → comam and venha → venham."} -->
+<!-- grammar-card: {"id":"rule-plural-command-form","kind":"concept","format":"qa","priority":"optional","sourceSection":"Plural Commands (Vocês)","rule":"A standard vocês command uses the vocês present-subjunctive form","example":"Which form gives a standard command addressed to several people (vocês)?","answer":"The vocês present-subjunctive form, as in fale → falem.","explanation":"Any answer naming the vocês present subjunctive counts: coma → comam, venha → venham."} -->
 
 - **Falem mais baixo** (fah-leng mahyz bah-ee-shoo) — Speak more quietly (you all)
 - **Comam tudo** (koh-mang too-doo) — Eat everything (you all)
@@ -138,7 +141,7 @@ You can also soften commands with other expressions:
 - **Será que você pode...** (seh-rah kee voh-seh poh-jee) — Would you be able to...
 
 <!-- vocab-card: {"id":"vocab-por-favor","word":"por favor","meaning":"please","priority":"optional","sourceSection":"Polite Requests with \"Por Favor\""} -->
-<!-- grammar-card: {"id":"softening-requests","kind":"concept","format":"qa","priority":"optional","sourceSection":"Polite Requests with \"Por Favor\"","rule":"Por favor and ability questions can soften a request","example":"How can you soften Feche a porta without changing the action requested?","answer":"Add por favor, or use a question such as Você pode fechar a porta?","explanation":"Poderia can soften it further. Tone and context still affect politeness."} -->
+<!-- grammar-card: {"id":"softening-requests","kind":"rule","format":"qa","priority":"optional","sourceSection":"Polite Requests with \"Por Favor\"","rule":"Por favor and ability questions can soften a request","example":"How can you soften Feche a porta without changing the action requested?","answer":"Add por favor, or use a question such as Você pode fechar a porta?","explanation":"Poderia can soften it further. Tone and context still affect politeness."} -->
 ## Common Imperatives in Daily Life
 
 ### At home:
@@ -151,7 +154,7 @@ You can also soften commands with other expressions:
 
 > **Note:** In very casual speech, Brazilians often use the present tense form (você present indicative) as an informal imperative: "Fala!" instead of "Fale!", "Olha!" instead of "Olhe!". Both are widely understood.
 
-<!-- grammar-card: {"id":"casual-command-register","kind":"concept","format":"qa","priority":"optional","sourceSection":"At home:","rule":"Informal Brazilian commands can differ from the standard você subjunctive pattern","example":"Do spoken Fala! and Olha! mean that standard Fale! and Olhe! are wrong?","answer":"No. Both patterns occur; fala/olha are common informal commands, with regional variation.","explanation":"The lesson's regular formation rule targets standard você commands, not every conversational imperative."} -->
+<!-- grammar-card: {"id":"casual-command-register","kind":"concept","format":"qa","priority":"optional","sourceSection":"At home:","rule":"Informal Brazilian commands can differ from the standard você subjunctive pattern","example":"In very casual Brazilian speech, which verb form often serves as an informal command instead of the standard você command?","answer":"The você present-indicative form, as in Fala! for Fale! and Olha! for Olhe!; both are widely understood.","explanation":"The lesson's regular formation rule targets standard você commands, not every conversational imperative.","legacyAliases":[{"rule":"Informal Brazilian commands can differ from the standard você subjunctive pattern","example":"Do spoken Fala! and Olha! mean that standard Fale! and Olhe! are wrong?"}]} -->
 ### On the street:
 
 - **Vire à direita** (vee-ree ah jee-ray-tah) — Turn right
