@@ -36,6 +36,7 @@ A simple preposition can come before a locative noun. Then the first preposition
 - سَمِعْتُ الصَّوْتَ مِنْ فَوْقِ السَّطْحِ (samiʿtu aṣ-ṣawta min fawqi as-saṭḥi) — I heard the sound from above the roof.
 
 <!-- grammar-card: {"id":"compound-government","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Compound prepositional phrases","rule":"A preceding simple preposition governs the locative noun without removing its own complement.","example":"Complete “from under the chair” with the full locative noun: مِنْ ___ الْكُرْسِيِّ.","answer":"تَحْتِ","explanation":"Min taḥti al-kursiyyi has two genitives for different reasons: taḥti after min and the chair as its iḍāfa complement.","legacyAliases":[{"rule":"When a preposition comes before a locative noun, the locative noun can become genitive too.","example":"Complete: مِنْ تَحْت___ الْكُرْسِيِّ (min taḥt___ al-kursiyyi) — from under the chair."}]} -->
+<!-- grammar-card: {"id":"rule-preposition-before-locative","kind":"concept","format":"qa","priority":"essential","sourceSection":"Compound prepositional phrases","rule":"When a simple preposition such as min precedes a locative noun, the locative noun becomes genitive and still governs its own genitive complement.","example":"When a simple preposition such as min comes before a locative noun such as taḥta, what case does the locative noun take?","answer":"Genitive, ending in kasra.","explanation":"مِنْ أَمَامِ الْمَسْجِدِ (from in front of the mosque): amāmi is genitive after min, and al-masjidi is genitive as its own complement."} -->
 
 ## Attached pronouns
 
@@ -45,6 +46,7 @@ These locative nouns also take attached pronouns: فَوْقَهُ (fawqahu) —
 - وَقَفَ الْمُدَرِّسُ أَمَامَنَا (waqafa al-mudarrisu amāmanā) — the teacher stood in front of us.
 
 <!-- grammar-card: {"id":"locative-pronoun","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Attached pronouns","rule":"Attached pronouns can serve as complements of locative words.","example":"Complete “the key is under it/her”: اَلْمِفْتَاحُ ___.","answer":"تَحْتَهَا","explanation":"Taḥtahā uses the attached pronoun as the genitive complement; it can refer to a feminine thing or person.","legacyAliases":[{"rule":"Attached pronouns can serve as complements of locative words.","example":"Complete: the key is under it/her — اَلْمِفْتَاحُ ___ (al-miftāḥu ___)."}]} -->
+<!-- grammar-card: {"id":"rule-locative-pronoun-role","kind":"concept","format":"qa","priority":"optional","sourceSection":"Attached pronouns","rule":"An attached pronoun after a locative noun is its genitive complement.","example":"What grammatical role does an attached pronoun have when it is joined to a locative noun such as fawqa?","answer":"It is the locative noun's genitive complement.","explanation":"فَوْقَهُ (above it/him) and أَمَامَكَ (in front of you) attach the pronoun in the slot where a genitive noun would stand."} -->
 
 <!-- quiz: {"type": "multiple-choice", "question": "In مِنْ أَمَامِ الْبَيْتِ (min amāmi al-bayti), why does أَمَامِ end in kasra?", "options": ["It is the subject", "It follows the preposition مِنْ (min) — from", "It is a past-tense verb", "It is feminine plural"], "answer": 1} -->
 
@@ -59,7 +61,7 @@ Use these words to make precise spatial descriptions:
 
 <!-- vocab-card: {"id":"vocab-qurba","word":"قُرْبَ","reading":"qurba","meaning":"near","priority":"optional","sourceSection":"Practice patterns"} -->
 <!-- vocab-card: {"id":"vocab-dakhila","word":"دَاخِلَ","reading":"dākhila","meaning":"inside","priority":"optional","sourceSection":"Practice patterns"} -->
-<!-- grammar-card: {"id":"between-two-complements","kind":"concept","format":"qa","priority":"optional","sourceSection":"Practice patterns","rule":"Between can relate a pair expressed by a dual or by coordinated nouns.","example":"How are the two landmarks expressed in بَيْنَ الْمَدْرَسَةِ وَالْمَكْتَبَةِ?","answer":"As two coordinated genitive nouns: the school and the library.","explanation":"The lesson also shows بَيْنَ الْمَكْتَبَيْنِ with the dual genitive ending -ayni."} -->
+<!-- grammar-card: {"id":"between-two-complements","kind":"rule","format":"qa","priority":"optional","sourceSection":"Practice patterns","rule":"Between can relate a pair expressed by a dual or by coordinated nouns.","example":"How are the two landmarks expressed in بَيْنَ الْمَدْرَسَةِ وَالْمَكْتَبَةِ?","answer":"As two coordinated genitive nouns: the school and the library.","explanation":"The lesson also shows بَيْنَ الْمَكْتَبَيْنِ with the dual genitive ending -ayni."} -->
 
 <!-- quiz: {"type": "multiple-choice", "question": "Which word means between?", "options": ["بَيْنَ (bayna)", "خَلْفَ (khalfa)", "قُرْبَ (qurba)", "دَاخِلَ (dākhila)"], "answer": 0} -->
 

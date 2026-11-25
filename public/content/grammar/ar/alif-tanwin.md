@@ -8,6 +8,8 @@ The accusative tanwīn **ـً** (fatḥatān) often needs a support alif in spel
 
 When an indefinite noun ends in a regular consonant and is accusative, Arabic usually writes an extra alif after the final consonant: **قَرَأْتُ كِتَابًا** (qaraʾtu kitāban) — “I read a book.” The sound is -an; the alif is mainly spelling support.
 
+<!-- grammar-card: {"id":"rule-support-alif-regular","kind":"concept","format":"qa","priority":"essential","sourceSection":"Core idea","rule":"An indefinite accusative noun ending in a regular consonant adds a support alif after fatḥatān.","example":"Which letter is written after the fatḥatān of an indefinite accusative noun that ends in an ordinary consonant?","answer":"An alif, giving ـًا.","explanation":"كِتَابٌ becomes كِتَابًا (kitāban); the alif is spelling support, and the sound is -an."} -->
+
 ## Forms and examples
 
 <!-- vocab-card: {"id":"vocab-kitab","word":"كِتَابٌ","reading":"kitābun","meaning":"book","priority":"optional","sourceSection":"Forms and examples"} -->
@@ -28,10 +30,12 @@ When an indefinite noun ends in a regular consonant and is accusative, Arabic us
 
 ## Usage notes
 
-Do not add a second alif after endings that already block it. **مَدْرَسَةً** (madrasatan) ends with tāʾ marbūṭa, so it does not become **مَدْرَسَةًا**. **سَمَاءً** (samāʾan) already has a final hamza after alif, so no extra support alif is added. Proper names and diptotes may be accusative without tanwīn, such as **رَأَيْتُ أَحْمَدَ** (raʾaytu aḥmada).
+Do not add a second alif after endings that already block it. **مَدْرَسَةً** (madrasatan) ends with tāʾ marbūṭa, so it does not become **مَدْرَسَةًا**. **سَمَاءً** (samāʾan) already has a final hamza after alif, so no extra support alif is added. Diptotes, including many proper names, are accusative without tanwīn, so they get no support alif: **رَأَيْتُ أَحْمَدَ** (raʾaytu aḥmada). Ordinary triptote names do take it, as in **رَأَيْتُ زَيْدًا** (raʾaytu zaydan).
 
 <!-- grammar-card: {"id":"regular-support-alif","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Usage notes","rule":"Most regular nouns add an alif when they take accusative tanwīn, producing the spelling ـًا.","example":"أَكَلْتُ ___. (خُبْزٌ; I ate bread)","answer":"خُبْزًا","explanation":"The ordinary consonant ending takes fatḥatān with a support alif, unlike مَاءً.","legacyAliases":[{"rule":"Most regular nouns add an alif when they take accusative tanwīn, producing the spelling ـًا.","example":"شَرِبْتُ مَاءً وَأَكَلْتُ خُبْزًا (sharibtu māʾan wa-akaltu khubzan)"}]} -->
-<!-- grammar-card: {"id":"diptote-no-tanwin","kind":"concept","format":"qa","priority":"essential","sourceSection":"Usage notes","rule":"Accusative case does not always involve tanwīn.","example":"Why is there no support alif on أَحْمَدَ in رَأَيْتُ أَحْمَدَ?","answer":"أَحْمَدَ is a diptote and does not take tanwīn here.","explanation":"Support-alif rules apply to the relevant tanwīn spelling, not to every accusative noun."} -->
+<!-- grammar-card: {"id":"diptote-no-tanwin","kind":"rule","format":"qa","priority":"essential","sourceSection":"Usage notes","rule":"Accusative case does not always involve tanwīn.","example":"Why is there no support alif on أَحْمَدَ in رَأَيْتُ أَحْمَدَ?","answer":"أَحْمَدَ is a diptote and does not take tanwīn here.","explanation":"Support-alif rules apply to the relevant tanwīn spelling, not to every accusative noun."} -->
+<!-- grammar-card: {"id":"rule-ta-marbuta-no-alif","kind":"concept","format":"qa","priority":"essential","sourceSection":"Usage notes","rule":"A noun ending in tāʾ marbūṭa takes fatḥatān with no support alif.","example":"Does a noun ending in tāʾ marbūṭa get a support alif with accusative tanwīn?","answer":"No. The fatḥatān sits directly on the ة.","explanation":"مَدْرَسَةً (madrasatan) never becomes مَدْرَسَةًا."} -->
+<!-- grammar-card: {"id":"rule-diptote-no-alif","kind":"concept","format":"qa","priority":"optional","sourceSection":"Usage notes","rule":"Diptotes take no tanwīn, so their accusative has no support alif.","example":"Why does an accusative diptote never get a support alif?","answer":"Diptotes take no tanwīn, and the support alif belongs to the tanwīn spelling.","explanation":"Their accusative ends in a single fatḥa, as in رَأَيْتُ أَحْمَدَ."} -->
 
 ## Practice patterns
 

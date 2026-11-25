@@ -8,6 +8,8 @@ The subjunctive mood, **النَّصْبُ** (an-naṣbu), appears after particl
 
 A regular imperfect verb takes fatḥa in the subjunctive: **يَدْرُسُ** (yadrusu) — he studies becomes **أَنْ يَدْرُسَ** (an yadrusa) — to study. The five verbs drop final nūn: **يَكْتُبُونَ** (yaktubūna) — they write becomes **لَنْ يَكْتُبُوا** (lan yaktubū) — they will not write.
 
+<!-- grammar-card: {"id":"rule-sound-subjunctive-fatha","kind":"concept","format":"qa","priority":"essential","sourceSection":"Core idea","rule":"A regular singular imperfect shows the subjunctive with final fatḥa.","example":"How is the subjunctive marked on a regular singular imperfect verb?","answer":"With final fatḥa in place of ḍamma.","explanation":"يَدْرُسُ (yadrusu) becomes أَنْ يَدْرُسَ (an yadrusa) — to study."} -->
+
 ## Forms and examples
 
 <!-- grammar-card: {"id":"kay-purpose","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Forms and examples","rule":"لِكَيْ introduces a purpose with a subjunctive imperfect.","example":"جِئْتُ لِكَيْ ___. (أَتَعَلَّمُ; I came to learn)","answer":"أَتَعَلَّمَ","explanation":"The purpose clause takes final fatḥa in this sound singular form."} -->
@@ -28,6 +30,8 @@ A regular imperfect verb takes fatḥa in the subjunctive: **يَدْرُسُ** 
 
 <!-- quiz: {"type": "multiple-choice", "question": "Which sentence contains a subjunctive verb after لَنْ?", "options": ["لَنْ نَتَأَخَّرَ", "لَمْ نَتَأَخَّرْ", "نَتَأَخَّرُ كَثِيرًا", "لَا تَتَأَخَّرْ"], "answer": 0} -->
 
+<!-- grammar-card: {"id":"rule-kay-meaning","kind":"concept","format":"qa","priority":"optional","sourceSection":"Forms and examples","rule":"The particle كَيْ (or لِكَيْ) introduces a purpose clause with a subjunctive verb.","example":"What meaning does كَيْ or لِكَيْ introduce?","answer":"Purpose: “so that”.","explanation":"لِكَيْ تَفْهَمُوا الدَّرْسَ (likay tafhamū ad-darsa) — so that you all understand the lesson."} -->
+
 ## Usage notes
 
 **أَنْ** can turn a whole verb phrase into a noun-like idea: **يَسُرُّنِي أَنْ تَحْضُرَ** (yasurrunī an taḥḍura) — it pleases me that you attend. **لَنْ** negates future expectation strongly. **حَتَّى** triggers the subjunctive when it points forward to a goal or result, as in **سِرْ حَتَّى تَصِلَ** (sir ḥattā taṣila) — walk until you arrive.
@@ -38,6 +42,7 @@ The subjunctive after إِذَنْ requires a response/result use, normally at t
 <!-- grammar-card: {"id":"hatta-forward-goal","kind":"concept","format":"qa","priority":"essential","sourceSection":"Usage notes","rule":"Goal-oriented حَتَّى introduces a prospective subjunctive action.","example":"Why is تَصِلَ subjunctive in سِرْ حَتَّى تَصِلَ?","answer":"Arrival is a forward-looking limit or goal of walking.","explanation":"The mood depends on this prospective meaning, not merely on the presence of the written particle."} -->
 <!-- grammar-card: {"id":"idhan-conditions","kind":"concept","format":"qa","priority":"optional","sourceSection":"Usage notes","rule":"Subjunctive إِذَنْ has response, futurity and adjacency conditions.","example":"What conditions license subjunctive after response إِذَنْ in the pattern taught here?","answer":"It starts the response, refers to a future result, and directly precedes the verb, allowing an intervening oath or negative لَا.","explanation":"Elsewhere an indicative can occur; the particle is not an unconditional subjunctive trigger."} -->
 <!-- grammar-card: {"id":"lan-not-eternal","kind":"concept","format":"qa","priority":"optional","sourceSection":"Usage notes","rule":"لَنْ negates a future event without inherently making the negation eternal.","example":"Does لَنْ أُسَافِرَ necessarily mean I will never travel for all time?","answer":"No. It negates future travel in the relevant context, not necessarily forever.","explanation":"Strong future negation does not itself encode eternal impossibility."} -->
+<!-- grammar-card: {"id":"rule-lan-future","kind":"concept","format":"qa","priority":"essential","sourceSection":"Usage notes","rule":"The particle لَنْ plus a subjunctive imperfect negates the future.","example":"What time reference does لَنْ negate?","answer":"The future: “will not”.","explanation":"لَنْ نَتَأَخَّرَ (lan nataʾakhkhara) — we will not be late. It is strong future negation, not automatically “never”."} -->
 
 ## Practice patterns
 

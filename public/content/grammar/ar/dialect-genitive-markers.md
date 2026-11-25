@@ -8,6 +8,9 @@ MSA possession is often expressed through the iḍāfa construct, as in كِتَ
 
 The marker changes by region: Egyptian بِتَاع (bitāʿ), Levantine تَبَع (tabaʿ), Gulf and Iraqi مَال (māl), and Maghrebi دْيَال (dyāl). These are especially useful when the possessed noun is definite, long, or needs a pronoun ending.
 
+<!-- grammar-card: {"id":"rule-egyptian-marker","kind":"concept","format":"qa","priority":"essential","sourceSection":"Core idea","rule":"Egyptian Arabic uses بِتَاع (bitāʿ) as its genitive marker “of, belonging to”.","example":"Which genitive marker meaning “of, belonging to” does Egyptian Arabic use with a masculine possessed noun?","answer":"بِتَاع (bitāʿ)","explanation":"الْكِتَاب بِتَاعِي (il-kitāb bitāʿī) — my book. With a feminine possessed noun the marker changes form."} -->
+<!-- grammar-card: {"id":"rule-levantine-marker","kind":"concept","format":"qa","priority":"optional","sourceSection":"Core idea","rule":"Levantine Arabic uses تَبَع (tabaʿ) as its genitive marker “of, belonging to”.","example":"Which genitive marker does Levantine Arabic use for “of, belonging to”?","answer":"تَبَع (tabaʿ)","explanation":"الْكْتَاب تَبَعِي (il-ktāb tabaʿī) — my book. Pronoun endings attach to the marker."} -->
+
 ## Forms and examples
 
 These are regional examples, not universal choices: مَال is used in Iraqi and some Gulf varieties, while دْيَال is Moroccan-style. Other local markers exist; spellings and vowel marks are approximate.
@@ -45,6 +48,7 @@ Build possession by placing the marker between the thing owned and the owner:
 
 <!-- grammar-card: {"id":"marker-word-order","kind":"rule","format":"qa","priority":"essential","sourceSection":"Practice patterns","rule":"The genitive marker usually follows the possessed item and comes before the owner or possessive suffix.","example":"Using مَال, arrange السَّيَّارَة and الْمُعَلِّم to mean “the teacher's car” in the illustrated Iraqi pattern.","answer":"السَّيَّارَة مَال الْمُعَلِّم","explanation":"The owned item comes first, then the marker, then the owner.","legacyAliases":[{"rule":"The genitive marker usually follows the possessed item and comes before the owner or possessive suffix.","example":"السَّيَّارَة مَال الْمُعَلِّم (is-sayyāra māl il-muʿallim)"}]} -->
 <!-- grammar-card: {"id":"levantine-your-house","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Practice patterns","rule":"A possessive pronoun can attach to the genitive marker.","example":"Levantine “your house” to a male addressee, using تَبَع: الْبَيْت ___.","answer":"تَبَعَك","explanation":"The -ak suffix marks the owner on the marker rather than directly on the noun."} -->
+<!-- grammar-card: {"id":"rule-marker-order","kind":"concept","format":"qa","priority":"essential","sourceSection":"Practice patterns","rule":"In dialect possession, the genitive marker stands between the possessed item and the owner.","example":"In dialect possession with a genitive marker, in what order do the owner, the marker and the possessed item come?","answer":"Possessed item, then marker, then owner.","explanation":"Levantine السَّيَّارَة تَبَع الْمُعَلِّم (is-sayyāra tabaʿ il-mʿallim) — the teacher’s car. A pronoun owner attaches to the marker instead."} -->
 
 ## Sources
 

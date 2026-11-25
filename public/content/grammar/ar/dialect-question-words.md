@@ -8,7 +8,7 @@ MSA question words are stable in writing, while spoken dialects use shorter regi
 
 Dialect question words vary by country and city. Still, several forms are widespread: إِيهْ (ēh) in Egyptian for what, شُو (shū) in Levantine for what, وَيْنْ (wēn) for where, and لَيْشْ (lēsh or laysh) for why.
 
-<!-- grammar-card: {"id":"regional-variation","kind":"concept","format":"qa","priority":"optional","sourceSection":"Core idea","rule":"Correspondence tables present common regional forms rather than a single spoken standard.","example":"Do the listed dialect question words prescribe one form for every country and city?","answer":"No. They are widespread examples, with variation by region and locality.","explanation":"Keep the dialect label with each word and do not replace formal MSA automatically."} -->
+<!-- grammar-card: {"id":"regional-variation","kind":"concept","format":"qa","priority":"optional","sourceSection":"Core idea","rule":"Correspondence tables present common regional forms rather than a single spoken standard.","example":"How should the dialect question words in this lesson be treated across Arabic-speaking countries and cities?","answer":"As widespread regional examples that vary by region and locality, not one form for everyone.","explanation":"Keep the dialect label with each word (Egyptian, Levantine, …) and do not replace formal MSA automatically.","legacyAliases":[{"rule":"Correspondence tables present common regional forms rather than a single spoken standard.","example":"Do the listed dialect question words prescribe one form for every country and city?"}]} -->
 
 ## Common correspondences
 
@@ -47,6 +47,7 @@ MSA places مَاذَا (mādhā) or مَا (mā) according to the style and sen
 - شُو بَدَّكْ؟ (shū baddak) — What do you want? Levantine.
 
 <!-- grammar-card: {"id":"egyptian-what-position","kind":"rule","format":"cloze","priority":"optional","sourceSection":"What questions","rule":"The Egyptian what-word can remain in the position of the requested information.","example":"Complete the Egyptian “what do you want?”: إِنْتَ عَايِزْ ___؟","answer":"إِيهْ","explanation":"Inta ʿāyiz ēh places the question word last. Levantine شُو بَدَّكْ puts it first, so the example is not a universal dialect word-order rule.","legacyAliases":[{"rule":"Egyptian إِيهْ (ēh) and Levantine شُو (shū) often correspond to MSA مَاذَا (mādhā).","example":"Match the dialect form for what in Egyptian: إِنْتَ عَايِزْ ___؟ (inta ʿāyiz ___)."}]} -->
+<!-- grammar-card: {"id":"rule-question-word-position","kind":"concept","format":"qa","priority":"essential","sourceSection":"What questions","rule":"In Egyptian Arabic, a question word often stays where the requested information would appear.","example":"In Egyptian Arabic, where does a question word such as âwhatâ usually go within a question?","answer":"In the position of the missing information, often at the end.","explanation":"Egyptian إِنْتَ عَايِزْ إِيهْ؟ (what do you want?) ends with the question word, where the object would stand. MSA مَاذَا تُرِيدُ؟ and Levantine شُو بَدَّكْ؟ put it first."} -->
 
 ## Where, why, and how
 

@@ -13,6 +13,7 @@ The basic pattern is اِسْتَفْعَلَ (istafʿala) — he sought / consi
 <!-- vocab-card: {"id":"vocab-istakhraja","word":"اِسْتَخْرَجَ","reading":"istakhraja","meaning":"he extracted","priority":"optional","sourceSection":"Core idea"} -->
 <!-- vocab-card: {"id":"vocab-istahsana","word":"اِسْتَحْسَنَ","reading":"istaḥsana","meaning":"he considered good","priority":"essential","sourceSection":"Core idea"} -->
 <!-- grammar-card: {"id":"x-present","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Core idea","rule":"The sound Form X present follows yastafʿilu.","example":"اِسْتَعْمَلَ → he uses: ___.","answer":"يَسْتَعْمِلُ","explanation":"The present retains st and has i before the last radical."} -->
+<!-- grammar-card: {"id":"rule-form-x-prefix","kind":"concept","format":"qa","priority":"essential","sourceSection":"Core idea","rule":"Form X past verbs begin with اِسْتَـ (ista-).","example":"Which prefix makes a Form X past verb easy to spot?","answer":"اِسْتَـ (ista-).","explanation":"اِسْتَقْبَلَ (istaqbala), he received; the present keeps -sta- as yasta-."} -->
 
 | Verb | Meaning | Meaning clue |
 |---|---|---|
@@ -44,11 +45,11 @@ Form X can also mean “to regard as” or “to bring out.” اِسْتَحْ�
 <!-- vocab-card: {"id":"vocab-istaqbala","word":"اِسْتَقْبَلَ","reading":"istaqbala","meaning":"he received; he faced","priority":"optional","sourceSection":"Considering and extracting"} -->
 <!-- vocab-card: {"id":"vocab-istaadda","word":"اِسْتَعَدَّ","reading":"istaʿadda","meaning":"he prepared","priority":"optional","sourceSection":"Considering and extracting"} -->
 <!-- vocab-card: {"id":"vocab-istamarra","word":"اِسْتَمَرَّ","reading":"istamarra","meaning":"he continued","priority":"optional","sourceSection":"Considering and extracting"} -->
-<!-- grammar-card: {"id":"x-meaning-range","kind":"concept","format":"qa","priority":"essential","sourceSection":"Considering and extracting","rule":"Seeking is only one common Form X meaning.","example":"Beyond requesting something, what other meaning types are illustrated by Form X here?","answer":"Considering something good, extracting, using, receiving, preparing and continuing.","explanation":"Recognize the family but learn each verb; weak and doubled roots can alter its visible shape."} -->
 
 <!-- quiz: {"type":"multiple-choice","question":"Which Form X verb means he considered good?","options":["اِسْتَحْسَنَ (istaḥsana) — he considered good","حَسُنَ (ḥasuna) — it was good","أَحْسَنَ (aḥsana) — he did well","تَحَسَّنَ (taḥassana) — it improved"],"answer":0} -->
 
 <!-- grammar-card: {"id":"x-masdar","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Core idea","rule":"The Form X verbal noun is often اِسْتِفْعَالٌ (istifʿālun).","example":"اِسْتَعْمَلَ → its maṣdar, using: ___.","answer":"اِسْتِعْمَالٌ","explanation":"This sound-root example follows istifʿālun.","legacyAliases":[{"rule":"The Form X verbal noun is often اِسْتِفْعَالٌ (istifʿālun).","example":"Complete “using”: ___ (istiʿmālun) — using."}]} -->
+<!-- grammar-card: {"id":"x-considering","kind":"rule","format":"qa","priority":"essential","sourceSection":"Considering and extracting","rule":"Form X can mean regarding something as having the root quality.","example":"Form X can mean “regard as.” From صَغِيرٌ (small), what does اِسْتَصْغَرَ (istaṣghara) mean?","answer":"He considered it small; he belittled it.","explanation":"Like اِسْتَحْسَنَ (istaḥsana), he considered good, the verb treats its object as having the root quality."} -->
 
 ## Sources
 

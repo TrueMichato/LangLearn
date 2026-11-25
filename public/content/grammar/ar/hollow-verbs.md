@@ -9,6 +9,7 @@ Some very common Arabic verbs have a weak middle root sound. Their long vowel is
 The **الْفِعْلُ الْأَجْوَفُ** (al-fiʿl al-ajwaf) — hollow verb has a weak middle root sound, often **وَاوٌ** (wāwun) — wāw or **يَاءٌ** (yāʾun) — yāʾ. In the past, the middle often appears as a long **ā**.
 
 <!-- grammar-card: {"id":"hollow-root-position","kind":"concept","format":"qa","priority":"essential","sourceSection":"Core idea","rule":"Hollow verbs have a weak middle radical.","example":"Where is the weak root letter in a hollow verb, and is its vowel identical throughout conjugation?","answer":"In the middle; no, its surface vowel changes across forms.","explanation":"The examples include qāla/yaqūlu but bāʿa/yabīʿu: do not impose one vowel on every hollow verb."} -->
+<!-- grammar-card: {"id":"rule-hollow-past-long-a","kind":"concept","format":"qa","priority":"optional","sourceSection":"Core idea","rule":"In the basic past form, a hollow verb's weak middle root usually appears as long ā.","example":"In the basic “he did” past form, what long vowel usually stands for a hollow verb's weak root letter?","answer":"Long ā.","explanation":"قَالَ (qāla), كَانَ (kāna) and بَاعَ (bāʿa) all show ā, whether the weak root letter is wāw or yāʾ."} -->
 <!-- vocab-card: {"id":"vocab-qala","word":"قَالَ","reading":"qāla","meaning":"he said; to say (dictionary form)","priority":"essential","sourceSection":"Forms and examples"} -->
 <!-- vocab-card: {"id":"vocab-kana","word":"كَانَ","reading":"kāna","meaning":"he was; to be (dictionary form)","priority":"essential","sourceSection":"Forms and examples"} -->
 <!-- vocab-card: {"id":"vocab-baa","word":"بَاعَ","reading":"bāʿa","meaning":"he sold; to sell (dictionary form)","priority":"optional","sourceSection":"Forms and examples"} -->
@@ -30,7 +31,7 @@ The **الْفِعْلُ الْأَجْوَفُ** (al-fiʿl al-ajwaf) — hollow
 
 When a suffix begins with a consonant, the long middle vowel often shortens or disappears: **قَالَ** (qāla) — he said, but **قُلْتُ** (qultu) — I said. The same pattern appears in **كَانَ** (kāna) — he was and **كُنْتُ** (kuntu) — I was.
 
-<!-- grammar-card: {"id":"qala-suffix","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Usage notes","rule":"Hollow verbs have a weak middle root sound and often show a long vowel in the past singular.","example":"قَالَ → I said: ___.","answer":"قُلْتُ","explanation":"Before -tu the middle becomes short u.","legacyAliases":[{"rule":"Hollow verbs have a weak middle root sound and often show a long vowel in the past singular.","example":"Complete “I said”: ___ (qultu)."}]} -->
+<!-- grammar-card: {"id":"qala-suffix","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Usage notes","rule":"Hollow verbs have a weak middle root sound; the long ā of qāla shortens to u before a consonant-initial suffix such as -tu.","example":"قَالَ → I said: ___.","answer":"قُلْتُ","explanation":"Before -tu the middle becomes short u.","legacyAliases":[{"rule":"Hollow verbs have a weak middle root sound and often show a long vowel in the past singular.","example":"Complete “I said”: ___ (qultu)."},{"rule":"Hollow verbs have a weak middle root sound and often show a long vowel in the past singular.","example":"قَالَ → I said: ___."}]} -->
 <!-- grammar-card: {"id":"baa-suffix","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Forms and examples","rule":"Not every hollow past suffix form uses u.","example":"بَاعَ → I sold: ___.","answer":"بِعْتُ","explanation":"The short vowel is i here, unlike qultu and kuntu."} -->
 
 ## Practice patterns
@@ -51,6 +52,7 @@ Imperatives can be short too:
 <!-- quiz: {"type":"multiple-choice","question":"What is the imperative of قَالَ (qāla) — he said?","options":["قُلْ (qul) — say!","قَالَ (qāla) — he said","يَقُولُ (yaqūlu) — he says","قَائِلٌ (qāʾilun) — speaker"],"answer":0} -->
 
 <!-- grammar-card: {"id":"kana-suffix","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Usage notes","rule":"The long vowel in a hollow verb may shorten before suffixes or in the imperative.","example":"كَانَ → I was: ___.","answer":"كُنْتُ","explanation":"The long ā changes to short u before -tu.","legacyAliases":[{"rule":"The long vowel in a hollow verb may shorten before suffixes or in the imperative.","example":"Complete “I was”: ___ (kuntu)."}]} -->
+<!-- grammar-card: {"id":"rule-hollow-suffix-shortening","kind":"concept","format":"qa","priority":"essential","sourceSection":"Usage notes","rule":"Before a consonant-initial suffix, a hollow verb's long middle vowel shortens.","example":"In a hollow verb, what happens to the long middle vowel of the past (as in qāla) before a consonant-initial suffix such as -tu?","answer":"It shortens to a short vowel: u or i, depending on the verb.","explanation":"قَالَ (qāla) gives قُلْتُ (qultu) and كَانَ gives كُنْتُ, but بَاعَ gives بِعْتُ (biʿtu)."} -->
 
 ## Sources
 

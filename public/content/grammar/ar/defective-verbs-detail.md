@@ -27,6 +27,7 @@ The long final ā in مَشَى (mashā) — he walked and دَعَا (daʿā) �
 
 <!-- grammar-card: {"id":"daa-suffix","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Past tense before suffixes","rule":"In defective verbs, the final weak sound changes before suffixes.","example":"دَعَا → I called: ___.","answer":"دَعَوْتُ","explanation":"The final root surfaces as w before -tu, unlike mashaytu.","legacyAliases":[{"rule":"In defective verbs, the final weak sound changes before suffixes.","example":"Complete “I called”: ___ (daʿawtu) — I called."}]} -->
 <!-- grammar-card: {"id":"nasiya-suffix","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Past tense before suffixes","rule":"Nasiya has long ī before the first-person past suffix.","example":"نَسِيَ → I forgot: ___.","answer":"نَسِيتُ","explanation":"Read nasītu, without inserting a y-glide."} -->
+<!-- grammar-card: {"id":"rule-defective-past-root","kind":"concept","format":"qa","priority":"essential","sourceSection":"Past tense before suffixes","rule":"Before a consonant-initial suffix, the final ā of daʿā- and mashā-type verbs reveals its root letter.","example":"In defective verbs such as daʿā and mashā, what does the final long ā become before a suffix like -tu (I)?","answer":"Its original root letter: w in the daʿā type, y in the mashā type.","explanation":"دَعَوْتُ (daʿawtu), I called; مَشَيْتُ (mashaytu), I walked."} -->
 
 ## Jussive and imperative forms
 
@@ -44,6 +45,7 @@ After لَمْ (lam) — did not, the present becomes jussive and the final long
 <!-- quiz: {"type":"multiple-choice","question":"Which form means he did not walk?","options":["لَمْ يَمْشِ (lam yamshi) — he did not walk","لَمْ يَدْعُ (lam yadʿu) — he did not call","لَمْ يَنْسَ (lam yansa) — he did not forget","مَشَيْتُ (mashaytu) — I walked"],"answer":0} -->
 
 <!-- grammar-card: {"id":"daa-jussive","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Jussive and imperative forms","rule":"The jussive of many defective verbs drops or shortens the final weak vowel after لَمْ (lam).","example":"He did not call: لَمْ ___. (يَدْعُو)","answer":"يَدْعُ","explanation":"Delete final wāw but retain short u.","legacyAliases":[{"rule":"The jussive of many defective verbs drops or shortens the final weak vowel after لَمْ (lam).","example":"Complete “he did not call”: لَمْ ___ (yadʿu)."}]} -->
+<!-- grammar-card: {"id":"rule-defective-jussive-short","kind":"concept","format":"qa","priority":"optional","sourceSection":"Jussive and imperative forms","rule":"In the jussive, a defective verb’s final long vowel shortens.","example":"In the jussive after لَمْ (lam), what happens to the final long vowel of a defective present verb?","answer":"It shortens to the matching short vowel: ī → i, ū → u, ā → a.","explanation":"لَمْ يَمْشِ (lam yamshi), he did not walk; the imperative is short in the same way."} -->
 
 ## Sources
 

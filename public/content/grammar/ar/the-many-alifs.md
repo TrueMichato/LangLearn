@@ -6,7 +6,7 @@ Arabic uses several alif-like signs. **أَلِفٌ** (ʾalifun) — alif can ca
 
 ## Core idea
 
-Do not treat every alif shape as the same letter in reading. **آ** usually combines hamza plus long ā, **ى** sounds like final ā, **ٱ** begins only when no vowel comes before it, and dagger alif marks a long ā written above the line.
+Do not treat every alif shape as the same letter in reading. **آ** usually combines hamza plus long ā, **ى** sounds like final ā, **ٱ** begins only when no vowel comes before it, and dagger alif marks a long ā written above the line. Alif maqṣūra appears only at the end of a word; when a suffix follows, it is written as a full alif or yāʾ: **هُدَى** (hudā) — guidance → **هُدَاهُ** (hudāhu) — his guidance, **عَلَى** (ʿalā) → **عَلَيْهِ** (ʿalayhi) — on him.
 
 ## Forms and examples
 
@@ -18,6 +18,7 @@ Do not treat every alif shape as the same letter in reading. **آ** usually comb
 | **ٰ** | **أَلِفٌ خَنْجَرِيَّةٌ** (ʾalifun khanjariyyatun) — dagger alif | **هٰذَا** (hādhā) — this; **ذٰلِكَ** (dhālika) — that |
 
 <!-- grammar-card: {"id":"madda-sound","kind":"concept","format":"qa","priority":"essential","sourceSection":"Core idea","rule":"Madda combines hamza with a long ā.","example":"What two sound elements does آ represent in آدَمُ?","answer":"A glottal stop followed by long ā: ʾā.","explanation":"It is not a plain short a or a y sound; the same combination occurs inside قُرْآنٌ."} -->
+<!-- grammar-card: {"id":"rule-maqsura-position","kind":"concept","format":"qa","priority":"optional","sourceSection":"Core idea","rule":"Alif maqṣūra ى occurs only word-finally, where it is read as long ā.","example":"Where in a word can alif maqṣūra appear, and what happens to it when a suffix is added?","answer":"Only at the end of a word; before a suffix it is written as a full alif or yāʾ.","explanation":"هُدَى → هُدَاهُ (hudāhu) — his guidance; عَلَى → عَلَيْهِ (ʿalayhi) — on him."} -->
 <!-- vocab-card: {"id":"vocab-ism","word":"ٱسْمٌ","reading":"ismun","meaning":"name","priority":"optional","sourceSection":"Forms and examples"} -->
 <!-- vocab-card: {"id":"vocab-ibn","word":"ٱبْنٌ","reading":"ibnun","meaning":"son","priority":"optional","sourceSection":"Forms and examples"} -->
 <!-- vocab-card: {"id":"vocab-hadha","word":"هٰذَا","reading":"hādhā","meaning":"this; masculine singular","priority":"optional","sourceSection":"Forms and examples"} -->
@@ -30,6 +31,7 @@ Do not treat every alif shape as the same letter in reading. **آ** usually comb
 
 <!-- grammar-card: {"id":"maqsura-reading","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Usage notes","rule":"Alif maqṣūra ى is read as final ā, not as y, in words like عَلَى and مُوسَى.","hint":"The shape looks like yāʾ without dots, but the sound is ā.","example":"Read عَلَى as ___ .","answer":"ʿalā","explanation":"The final dotless shape is alif maqṣūra: it marks long ā rather than y in this word."} -->
 <!-- grammar-card: {"id":"wasl-connected-reading","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Usage notes","rule":"Hamzat al-waṣl is pronounced when starting but not restarted after a preceding vowel.","example":"Transliterate the connected phrase وَٱسْمُهُ عَلِيٌّ: ___.","answer":"wa-smuhu ʿaliyyun","explanation":"The starting form is ismuhu, but after wa- the initial helping vowel drops; no fresh glottal stop is inserted."} -->
+<!-- grammar-card: {"id":"rule-wasl-pronounced","kind":"concept","format":"qa","priority":"essential","sourceSection":"Usage notes","rule":"Hamzat al-waṣl is pronounced only when the word begins speech from silence.","example":"When is hamzat al-waṣl actually pronounced?","answer":"Only when you begin speaking with that word after silence; after a preceding vowel it is skipped.","explanation":"Hamzat al-qaṭʿ, written with a hamza sign, is pronounced in every position."} -->
 <!-- vocab-card: {"id":"vocab-ala","word":"عَلَى","reading":"ʿalā","meaning":"on","priority":"optional","sourceSection":"Forms and examples"} -->
 
 ## Practice patterns

@@ -8,11 +8,14 @@ Arabic often leaves out a nominal-sentence part when context makes it obvious. T
 
 A full nominal sentence has a topic and a predicate, as in **الْمُعَلِّمُ فِي الصَّفِّ** (al-muʿallimu fī aṣ-ṣaffi) — the teacher is in the classroom. In answers, signs, and concise style, one side can be understood rather than spoken.
 
+<!-- grammar-card: {"id":"rule-omission-contexts","kind":"concept","format":"qa","priority":"optional","sourceSection":"Core idea","rule":"Answers, signs and concise style often leave one side of a nominal sentence unspoken.","example":"In which kinds of language is one side of a nominal sentence often left unspoken?","answer":"Answers, signs and concise style.","explanation":"A full nominal sentence has a topic and a predicate; in these settings, one side is understood rather than spoken."} -->
+
 ## Forms and examples
 
 <!-- vocab-card: {"id":"vocab-hadir","word":"حَاضِرٌ","reading":"ḥāḍirun","meaning":"present; in attendance","priority":"optional","sourceSection":"Forms and examples"} -->
 <!-- vocab-card: {"id":"vocab-saff","word":"فِي الصَّفِّ","reading":"fī aṣ-ṣaffi","meaning":"in the classroom","priority":"optional","sourceSection":"Forms and examples"} -->
 <!-- grammar-card: {"id":"omitted-predicate","kind":"rule","format":"qa","priority":"essential","sourceSection":"Forms and examples","rule":"A short answer may omit a predicate already supplied by the question.","example":"After مَنْ حَاضِرٌ؟ the answer is زَيْدٌ. Which sentence part is omitted?","answer":"The predicate حَاضِرٌ is understood.","explanation":"The full answer is زَيْدٌ حَاضِرٌ; the new information is the person's identity."} -->
+<!-- grammar-card: {"id":"rule-location-answer-topic","kind":"concept","format":"qa","priority":"essential","sourceSection":"Forms and examples","rule":"A short answer to a “where is X?” question omits the mubtadaʾ.","example":"When a reply to a “where is …?” question gives only a location phrase, which part of the nominal sentence is omitted?","answer":"The mubtadaʾ (topic).","explanation":"أَيْنَ الْمُعَلِّمُ؟ فِي الصَّفِّ — understood as الْمُعَلِّمُ فِي الصَّفِّ; the location phrase is the khabar."} -->
 
 | Context | Short answer | Full understanding | Hidden part |
 |---|---|---|---|
@@ -27,7 +30,8 @@ A full nominal sentence has a topic and a predicate, as in **الْمُعَلّ�
 Omission works only when the listener can restore the missing piece. A bare phrase like **فِي الْمَكْتَبِ** (fī al-maktabi) — in the office — is clear after a question about location, but it may be confusing without context. In careful prose, learners can write the full sentence first and then notice when native texts shorten it.
 
 <!-- grammar-card: {"id":"omitted-topic","kind":"rule","format":"qa","priority":"essential","sourceSection":"Usage notes","rule":"A mubtadaʾ or khabar may be omitted when context makes it obvious.","example":"After أَيْنَ الْمُدِيرُ؟ the answer is فِي الْمَكْتَبِ. Is the omitted part the topic or the predicate?","answer":"The topic is omitted; the location phrase is the retained predicate.","explanation":"The question supplies the director as the understood topic of the answer.","legacyAliases":[{"rule":"A mubtadaʾ or khabar may be omitted when context makes it obvious.","example":"أَيْنَ الْمُدِيرُ؟ فِي الْمَكْتَبِ"}]} -->
-<!-- grammar-card: {"id":"recoverability-condition","kind":"concept","format":"qa","priority":"essential","sourceSection":"Usage notes","rule":"Omission requires a recoverable meaning in context.","example":"Why might the isolated phrase فِي الْمَكْتَبِ be unclear without a preceding question or shared context?","answer":"The listener may not know which topic is being located there.","explanation":"Omission is licensed by recoverability, not a general permission to delete either sentence part at random."} -->
+<!-- grammar-card: {"id":"recoverability-condition","kind":"rule","format":"qa","priority":"essential","sourceSection":"Usage notes","rule":"Omission requires a recoverable meaning in context.","example":"Why might the isolated phrase فِي الْمَكْتَبِ be unclear without a preceding question or shared context?","answer":"The listener may not know which topic is being located there.","explanation":"Omission is licensed by recoverability, not a general permission to delete either sentence part at random."} -->
+<!-- grammar-card: {"id":"rule-omission-condition","kind":"concept","format":"qa","priority":"essential","sourceSection":"Usage notes","rule":"A mubtadaʾ or khabar may be omitted only when the listener can recover it.","example":"What condition must hold before a mubtadaʾ or khabar may be omitted?","answer":"The listener must be able to restore it from context, such as a preceding question.","explanation":"فِي الْمَكْتَبِ is clear after a question about location but may be confusing on its own."} -->
 
 ## Practice patterns
 

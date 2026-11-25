@@ -44,7 +44,7 @@ Practice pairing the answer with the question type:
 
 <!-- quiz: {"type": "multiple-choice", "question": "Which answer fits أَلَمْ تَقْرَأِ الْكِتَابَ؟ if you did read it?", "options": ["بَلَى، قَرَأْتُهُ", "نَعَمْ، لَمْ أَقْرَأْهُ", "كَلَّا، قَرَأْتُهُ", "لَا، قَرَأْتُهُ"], "answer": 0} -->
 
-<!-- grammar-card: {"id":"positive-question-confirm","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Practice patterns","rule":"نَعَمْ is the ordinary yes for positive questions.","example":"Confirm that Ali attended: هَلْ حَضَرَ عَلِيٌّ؟ ___، حَضَرَ.","answer":"نَعَمْ","explanation":"نَعَمْ (naʿam) directly confirms the positive question. No negation needs to be overturned.","legacyAliases":[{"rule":"نَعَمْ is the ordinary yes for positive questions.","example":"هَلْ حَضَرَ عَلِيٌّ؟ نَعَمْ، حَضَرَ"}]} -->
+<!-- grammar-card: {"id":"positive-question-confirm","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Practice patterns","rule":"نَعَمْ is the ordinary yes for positive questions.","example":"Confirm that Ali attended: هَلْ حَضَرَ عَلِيٌّ؟ ___، حَضَرَ.","answer":"نَعَمْ","explanation":"نَعَمْ (naʿam) directly confirms the positive question; no negation needs to be overturned. The formal أَجَلْ (ajal), more typical after statements, is also acceptable. بَلَى is wrong here because there is no negation to cancel.","legacyAliases":[{"rule":"نَعَمْ is the ordinary yes for positive questions.","example":"هَلْ حَضَرَ عَلِيٌّ؟ نَعَمْ، حَضَرَ"}]} -->
 
 ## Sources
 

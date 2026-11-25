@@ -21,6 +21,8 @@ Traditional Form I through Form X patterns are often shown with the model root *
 | X | **اِسْتَفْعَلَ** (istafʿala) — he sought / considered | seeking / requesting |
 
 <!-- quiz: {"type": "multiple-choice", "question": "Which pattern is Form II?", "options": ["فَعَلَ (faʿala) — Form I", "فَعَّلَ (faʿʿala) — Form II", "فَاعَلَ (fāʿala) — Form III", "اِسْتَفْعَلَ (istafʿala) — Form X"], "answer": 1} -->
+<!-- grammar-card: {"id":"rule-form-two-doubling","kind":"concept","format":"qa","priority":"essential","sourceSection":"Forms and examples","rule":"Form II فَعَّلَ doubles the middle root consonant of the Form I pattern.","example":"What change to the Form I pattern marks the Form II past pattern?","answer":"The middle root consonant is doubled (shadda).","explanation":"فَعَلَ (faʿala) becomes فَعَّلَ (faʿʿala); compare دَرَسَ (darasa), he studied, with دَرَّسَ (darrasa), he taught."} -->
+<!-- grammar-card: {"id":"rule-form-ten-prefix","kind":"concept","format":"qa","priority":"optional","sourceSection":"Forms and examples","rule":"Form X اِسْتَفْعَلَ adds the prefix ista- before the root consonants.","example":"Which prefix begins the Form X past pattern, before the three root consonants?","answer":"اِسْتَـ (ista-).","explanation":"The model is اِسْتَفْعَلَ (istafʿala), as in istaʿmala, he used. The prefix is a pattern clue, not a guaranteed meaning of seeking."} -->
 
 ## Usage notes
 

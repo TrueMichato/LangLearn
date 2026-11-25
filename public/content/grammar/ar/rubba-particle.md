@@ -8,11 +8,14 @@
 
 After **رُبَّ** (rubba), the noun is usually indefinite and genitive: **رُبَّ صَدِيقٍ** (rubba ṣadīqin) — many a friend. The phrase often introduces a reflection or proverb-like statement.
 
+<!-- grammar-card: {"id":"rule-rubba-noun","kind":"concept","format":"qa","priority":"essential","sourceSection":"Core idea","rule":"رُبَّ is followed by an indefinite genitive noun.","example":"In definiteness and case, what kind of noun follows رُبَّ?","answer":"An indefinite noun in the genitive.","explanation":"رُبَّ صَدِيقٍ (rubba ṣadīqin): many a friend."} -->
+
 ## Forms and examples
 
 <!-- vocab-card: {"id":"vocab-rubba","word":"رُبَّ","reading":"rubba","meaning":"many a; sometimes; formal particle with context-dependent quantity","priority":"optional","sourceSection":"Forms and examples"} -->
 <!-- vocab-card: {"id":"vocab-rubbama","word":"رُبَّمَا","reading":"rubbamā","meaning":"perhaps; sometimes; often in context","priority":"optional","sourceSection":"Forms and examples"} -->
 <!-- grammar-card: {"id":"rubba-adjective-agreement","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Forms and examples","rule":"The adjective of the noun after رُبَّ agrees in genitive case and indefiniteness.","example":"رُبَّ كَلِمَةٍ ___ فَتَحَتْ قَلْبًا. (kind; طَيِّبَةٌ)","answer":"طَيِّبَةٍ","explanation":"Both the noun and its adjective are indefinite genitives in this formal noun phrase."} -->
+<!-- grammar-card: {"id":"rule-rubbama-perhaps","kind":"concept","format":"qa","priority":"essential","sourceSection":"Forms and examples","rule":"رُبَّمَا usually introduces a verb clause meaning “perhaps”.","example":"What does رُبَّمَا usually mean before a verb clause?","answer":"“Perhaps” (also sometimes or often).","explanation":"رُبَّمَا يَنْجَحُ الْمُجْتَهِدُ (rubbamā yanjaḥu al-mujtahidu): perhaps the diligent person succeeds."} -->
 
 | Pattern | Example | Meaning |
 |---|---|---|
@@ -28,20 +31,21 @@ The literal number is not fixed. **رُبَّ طَالِبٍ صَارَ عَال
 
 <!-- grammar-card: {"id":"rubba-genitive","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Usage notes","rule":"رُبَّ introduces an indefinite genitive noun and often gives the sense many a or sometimes.","example":"“Many a student became a scholar”: رُبَّ ___ صَارَ عَالِمًا.","answer":"طَالِبٍ","explanation":"The student noun is indefinite and genitive after the formal particle.","legacyAliases":[{"rule":"رُبَّ introduces an indefinite genitive noun and often gives the sense many a or sometimes.","example":"رُبَّ طَالِبٍ صَارَ عَالِمًا"}]} -->
 <!-- grammar-card: {"id":"quantity-and-register","kind":"concept","format":"qa","priority":"essential","sourceSection":"Usage notes","rule":"رُبَّ does not encode a fixed number.","example":"Does رُبَّ guarantee a fixed large number of instances?","answer":"No. It may suggest many or few instances according to context.","explanation":"The particle introduces a noteworthy observation rather than a fixed numerical threshold."} -->
-<!-- grammar-card: {"id":"rubba-register","kind":"concept","format":"qa","priority":"optional","sourceSection":"Usage notes","rule":"رُبَّ is characteristic of classical and formal reflection.","example":"What register does رُبَّ characteristically belong to in these examples?","answer":"Classical or formal, often reflective or proverb-like.","explanation":"Everyday prose can prefer a clearer expression such as كَثِيرًا مَا for often; this is not an ordinary colloquial existential."} -->
+<!-- grammar-card: {"id":"rubba-register","kind":"concept","format":"qa","priority":"optional","sourceSection":"Usage notes","rule":"رُبَّ is characteristic of classical and formal reflection.","example":"In which register is رُبَّ characteristically used?","answer":"Classical or formal, often reflective or proverb-like.","explanation":"Everyday prose can prefer a clearer expression such as كَثِيرًا مَا for often; this is not an ordinary colloquial existential.","legacyAliases":[{"rule":"رُبَّ is characteristic of classical and formal reflection.","example":"What register does رُبَّ characteristically belong to in these examples?"}]} -->
+<!-- grammar-card: {"id":"rule-modern-often","kind":"concept","format":"qa","priority":"optional","sourceSection":"Usage notes","rule":"Modern everyday prose often prefers كَثِيرًا مَا to رُبَّ for “often”.","example":"Which clearer expression does modern everyday prose often use instead of رُبَّ for “often”?","answer":"كَثِيرًا مَا (kathīran mā).","explanation":"رُبَّ remains useful for reading formal and classical Arabic."} -->
 <!-- vocab-card: {"id":"vocab-kathiran-ma","word":"كَثِيرًا مَا","reading":"kathīran mā","meaning":"often","priority":"optional","sourceSection":"Usage notes"} -->
 
 ## Practice patterns
 
 Translate **رُبَّ** (rubba) naturally rather than mechanically:
 
-- **رُبَّ سُكُوتٍ أَبْلَغُ مِنْ كَلامٍ** (rubba sukūtin ablaghu min kalāmin) — sometimes silence is more eloquent than speech.
+- **رُبَّ سُكُوتٍ أَبْلَغُ مِنْ كَلَامٍ** (rubba sukūtin ablaghu min kalāmin) — sometimes silence is more eloquent than speech.
 - **رُبَّ خَطَأٍ عَلَّمَ صَاحِبَهُ** (rubba khaṭaʾin ʿallama ṣāḥibahu) — many a mistake taught its owner.
 - **رُبَّمَا يَتَغَيَّرُ الرَّأْيُ بَعْدَ النِّقَاشِ** (rubbamā yataghayyaru ar-raʾyu baʿda an-niqāshi) — perhaps the opinion changes after discussion.
 
 <!-- quiz: {"type": "multiple-choice", "question": "Which phrase best matches رُبَّ خَطَأٍ (rubba khaṭaʾin)?", "options": ["Many a mistake", "The mistake as a direct object", "Do not make a mistake", "Two mistakes exactly"], "answer": 0} -->
 
-<!-- grammar-card: {"id":"rubbama-verb-clause","kind":"concept","format":"qa","priority":"essential","sourceSection":"Practice patterns","rule":"رُبَّمَا is related to رُبَّ but usually introduces a verb clause with the meaning perhaps, sometimes, or often.","example":"Why is يَتَغَيَّرُ possible after رُبَّمَا rather than a genitive noun?","answer":"The added مَا suspends the noun-governing construction, allowing a verbal clause meaning perhaps or sometimes.","explanation":"The example retains an indicative imperfect; it is not governed as a noun or automatically made subjunctive.","legacyAliases":[{"rule":"رُبَّمَا is related to رُبَّ but usually introduces a verb clause with the meaning perhaps, sometimes, or often.","example":"رُبَّمَا يَتَغَيَّرُ الرَّأْيُ"}]} -->
+<!-- grammar-card: {"id":"rubbama-verb-clause","kind":"rule","format":"qa","priority":"essential","sourceSection":"Practice patterns","rule":"رُبَّمَا is related to رُبَّ but usually introduces a verb clause with the meaning perhaps, sometimes, or often.","example":"Why is يَتَغَيَّرُ possible after رُبَّمَا rather than a genitive noun?","answer":"The added مَا suspends the noun-governing construction, allowing a verbal clause meaning perhaps or sometimes.","explanation":"The example retains an indicative imperfect; it is not governed as a noun or automatically made subjunctive.","legacyAliases":[{"rule":"رُبَّمَا is related to رُبَّ but usually introduces a verb clause with the meaning perhaps, sometimes, or often.","example":"رُبَّمَا يَتَغَيَّرُ الرَّأْيُ"}]} -->
 
 ## Sources
 

@@ -23,6 +23,8 @@ Think of a verb plus preposition as one vocabulary unit. رَغِبَ فِي (ra
 | آمَنَ بِـ (āmana bi-) — he believed in | attachment / trust | آمَنَ بِالْخَبَرِ (āmana bil-khabari) — he believed the report |
 
 <!-- quiz: {"type":"multiple-choice","question":"Which preposition normally follows بَحَثَ (baḥatha) — he searched?","options":["عَنْ (ʿan) — for / about","فِي (fī) — in","إِلَى (ilā) — to","مَعَ (maʿa) — with"],"answer":0} -->
+<!-- grammar-card: {"id":"rule-preposition-meaning","kind":"concept","format":"qa","priority":"essential","sourceSection":"Core idea","rule":"A verb’s preposition is part of its meaning; changing it can change the meaning.","example":"What can change when the same Arabic verb takes a different preposition?","answer":"Its meaning, sometimes even reversing it.","explanation":"رَغِبَ فِي (raghiba fī) means desired; رَغِبَ عَنْ (raghiba ʿan) means turned away from."} -->
+<!-- grammar-card: {"id":"rule-bahatha-an","kind":"concept","format":"qa","priority":"essential","sourceSection":"Core idea","rule":"بَحَثَ (baḥatha) takes عَنْ (ʿan) when it means search for.","example":"Which preposition does بَحَثَ (baḥatha) take when it means search for?","answer":"عَنْ (ʿan).","explanation":"بَحَثْتُ عَنْ كِتَابٍ (baḥathtu ʿan kitābin): I searched for a book."} -->
 
 ## Meaning changes
 
@@ -46,7 +48,8 @@ Some verbs have more than one preposition pattern. رَغِبَ فِي السّ�
 
 <!-- quiz: {"type":"multiple-choice","question":"Which pair means he listened to?","options":["اِسْتَمَعَ إِلَى (istamaʿa ilā) — he listened to","نَظَرَ عَنْ (naẓara ʿan) — he looked away from","آمَنَ إِلَى (āmana ilā) — he believed to","بَحَثَ فِي (baḥatha fī) — he searched in"],"answer":0} -->
 
-<!-- grammar-card: {"id":"listen-preposition","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Common pairs to memorize","rule":"اِسْتَمَعَ (istamaʿa) normally takes إِلَى (ilā) when it means listen to.","example":"I listened to the lesson: اِسْتَمَعْتُ ___ الدَّرْسِ.","answer":"إِلَى","explanation":"The noun after the preposition is genitive.","legacyAliases":[{"rule":"اِسْتَمَعَ (istamaʿa) normally takes إِلَى (ilā) when it means listen to.","example":"Complete “I listened to the lesson”: اِسْتَمَعْتُ ___ الدَّرْسِ (ilā ad-darsi)."}]} -->
+<!-- grammar-card: {"id":"listen-preposition","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Common pairs to memorize","rule":"اِسْتَمَعَ (istamaʿa) normally takes إِلَى (ilā) when it means listen to.","example":"I listened to the lesson: اِسْتَمَعْتُ ___ الدَّرْسِ.","answer":"إِلَى","explanation":"The noun after the preposition is genitive. اِسْتَمَعَ لِـ (istamaʿa li-) is also used in MSA.","legacyAliases":[{"rule":"اِسْتَمَعَ (istamaʿa) normally takes إِلَى (ilā) when it means listen to.","example":"Complete “I listened to the lesson”: اِسْتَمَعْتُ ___ الدَّرْسِ (ilā ad-darsi)."}]} -->
+<!-- grammar-card: {"id":"rule-ihtamma-bi","kind":"concept","format":"qa","priority":"optional","sourceSection":"Common pairs to memorize","rule":"اِهْتَمَّ (ihtamma) takes بِـ (bi-) when it means care about.","example":"Which preposition follows اِهْتَمَّ (ihtamma) when it means care about or be interested in?","answer":"بِـ (bi-).","explanation":"اِهْتَمَّ بِالدَّرْسِ (ihtamma bi-d-darsi): he cared about the lesson."} -->
 
 ## Sources
 
