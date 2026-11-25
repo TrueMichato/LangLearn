@@ -17,7 +17,7 @@ Most masculine nouns end in **-o** and most feminine nouns end in **-a**:
 - **O amigo** (oo ah-mee-goo) — The friend (male)
 - **A amiga** (ah ah-mee-gah) — The friend (female)
 
-<!-- grammar-card: {"id":"gender-ending-tendency","kind":"concept","format":"qa","priority":"essential","sourceSection":"The Basic Rule: -o and -a Endings","rule":"Noun endings are gender clues, not guarantees","example":"Do final -o and -a determine the gender of every Portuguese noun?","answer":"No. They are useful tendencies; learn exceptions together with their articles.","explanation":"O dia and a foto show why gender cannot always be inferred from the last letter."} -->
+<!-- grammar-card: {"id":"gender-ending-tendency","kind":"concept","format":"qa","priority":"essential","sourceSection":"The Basic Rule: -o and -a Endings","rule":"Noun endings are gender clues, not guarantees","example":"How reliable are final -o and -a as clues to a noun's gender?","answer":"They are useful tendencies, not guarantees; learn exceptions such as o dia and a foto with their articles.","explanation":"O dia and a foto show why gender cannot always be inferred from the last letter.","legacyAliases":[{"rule":"Noun endings are gender clues, not guarantees","example":"Do final -o and -a determine the gender of every Portuguese noun?"}]} -->
 <!-- vocab-card: {"id":"vocab-menino","word":"menino","meaning":"boy","priority":"optional","sourceSection":"The Basic Rule: -o and -a Endings"} -->
 <!-- vocab-card: {"id":"vocab-menina","word":"menina","meaning":"girl","priority":"optional","sourceSection":"The Basic Rule: -o and -a Endings"} -->
 <!-- vocab-card: {"id":"vocab-amigo","word":"amigo","meaning":"male friend","priority":"optional","sourceSection":"The Basic Rule: -o and -a Endings"} -->
@@ -42,7 +42,7 @@ Most masculine nouns end in **-o** and most feminine nouns end in **-a**:
 - **-ção**: a canção (song), a ação (action), a nação (nation)
 - **-gem**: a viagem (trip), a mensagem (message), a garagem (garage)
 
-<!-- grammar-card: {"id":"feminine-ending-clues","kind":"concept","format":"qa","priority":"optional","sourceSection":"Common Endings by Gender","rule":"-ade, -ção, and -gem are useful feminine noun clues","example":"What gender do cidade, canção, and viagem illustrate?","answer":"Feminine: a cidade, a canção, a viagem.","explanation":"These endings are useful clues, not dictionary entries or exception-free formulas."} -->
+<!-- grammar-card: {"id":"feminine-ending-clues","kind":"rule","format":"qa","priority":"optional","sourceSection":"Common Endings by Gender","rule":"-ade, -ção, and -gem are useful feminine noun clues","example":"What gender do cidade, canção, and viagem illustrate?","answer":"Feminine: a cidade, a canção, a viagem.","explanation":"These endings are useful clues, not dictionary entries or exception-free formulas."} -->
 <!-- vocab-card: {"id":"vocab-liberdade","word":"liberdade","meaning":"freedom","priority":"optional","sourceSection":"Common Endings by Gender"} -->
 <!-- vocab-card: {"id":"vocab-cancao","word":"canção","meaning":"song","priority":"optional","sourceSection":"Common Endings by Gender"} -->
 <!-- vocab-card: {"id":"vocab-viagem","word":"viagem","meaning":"trip","priority":"optional","sourceSection":"Common Endings by Gender"} -->
@@ -90,9 +90,9 @@ Some words change meaning depending on their article:
 - **O rádio** (the radio device) vs **A rádio** (the radio station)
 - **O grama** (the gram) vs **A grama** (the grass)
 
-<!-- grammar-card: {"id":"capital-gender-meaning","kind":"concept","format":"qa","priority":"optional","sourceSection":"Words with Different Meanings by Gender","rule":"Changing capital's gender changes its meaning","example":"What is the difference between o capital and a capital?","answer":"O capital means capital or money; a capital means a capital city.","explanation":"The article distinguishes two lexical meanings."} -->
-<!-- grammar-card: {"id":"radio-gender-meaning","kind":"concept","format":"qa","priority":"optional","sourceSection":"Words with Different Meanings by Gender","rule":"Rádio's gender distinguishes device and station","example":"What is the difference between o rádio and a rádio?","answer":"O rádio is the radio device; a rádio is the radio station.","explanation":"Both readings are genuine words, not freely interchangeable genders."} -->
-<!-- grammar-card: {"id":"grama-gender-meaning","kind":"concept","format":"qa","priority":"optional","sourceSection":"Words with Different Meanings by Gender","rule":"Grama's gender distinguishes weight and grass","example":"What is the difference between o grama and a grama?","answer":"O grama is a gram; a grama is grass.","explanation":"Keep the article with the intended meaning."} -->
+<!-- grammar-card: {"id":"capital-gender-meaning","kind":"rule","format":"qa","priority":"optional","sourceSection":"Words with Different Meanings by Gender","rule":"Changing capital's gender changes its meaning","example":"What is the difference between o capital and a capital?","answer":"O capital means capital or money; a capital means a capital city.","explanation":"The article distinguishes two lexical meanings."} -->
+<!-- grammar-card: {"id":"radio-gender-meaning","kind":"rule","format":"qa","priority":"optional","sourceSection":"Words with Different Meanings by Gender","rule":"Rádio's gender distinguishes device and station","example":"What is the difference between o rádio and a rádio?","answer":"O rádio is the radio device; a rádio is the radio station.","explanation":"Both readings are genuine words, not freely interchangeable genders."} -->
+<!-- grammar-card: {"id":"grama-gender-meaning","kind":"rule","format":"qa","priority":"optional","sourceSection":"Words with Different Meanings by Gender","rule":"Grama's gender distinguishes weight and grass","example":"What is the difference between o grama and a grama?","answer":"O grama is a gram; a grama is grass.","explanation":"Keep the article with the intended meaning."} -->
 ## Adjective Agreement
 
 Adjectives must match the noun in both gender and number:
@@ -112,7 +112,7 @@ Adjectives must match the noun in both gender and number:
 - **Um carro grande** (oon kah-hoo grahn-jee) — A big car
 - **Uma casa grande** (oo-mah kah-zah grahn-jee) — A big house
 
-<!-- grammar-card: {"id":"invariable-gender-adjective","kind":"concept","format":"qa","priority":"optional","sourceSection":"Adjectives ending in -e (no gender change)","rule":"Adjectives such as grande and inteligente do not change for gender","example":"Must grande become granda with a feminine noun?","answer":"No. Both o carro grande and a casa grande use grande.","explanation":"Gender-invariable does not mean number-invariable: plural grandes adds s."} -->
+<!-- grammar-card: {"id":"invariable-gender-adjective","kind":"concept","format":"qa","priority":"optional","sourceSection":"Adjectives ending in -e (no gender change)","rule":"Adjectives such as grande and inteligente do not change for gender","example":"How does an adjective ending in -e, such as grande, change for a feminine noun?","answer":"It does not change: o carro grande, a casa grande.","explanation":"Gender-invariable does not mean number-invariable: plural grandes adds s.","legacyAliases":[{"rule":"Adjectives such as grande and inteligente do not change for gender","example":"Must grande become granda with a feminine noun?"}]} -->
 ### Adjectives ending in a consonant (usually no gender change)
 
 - **O exame difícil** (oo eh-zah-mee jee-fee-see-oo) — The difficult exam
@@ -120,7 +120,7 @@ Adjectives must match the noun in both gender and number:
 - **O homem feliz** (oo oh-mayn feh-leez) — The happy man
 - **A mulher feliz** (ah moo-lyehr feh-leez) — The happy woman
 
-<!-- grammar-card: {"id":"consonant-adjective-gender","kind":"concept","format":"qa","priority":"optional","sourceSection":"Adjectives ending in a consonant (usually no gender change)","rule":"The illustrated difícil and feliz do not change for gender","example":"Do difícil and feliz take a different feminine singular form with mulher or prova?","answer":"No. They keep the same form for masculine and feminine singular nouns.","explanation":"This is a common pattern among consonant-final adjectives, not a guarantee for every adjective ending in a consonant."} -->
+<!-- grammar-card: {"id":"consonant-adjective-gender","kind":"concept","format":"qa","priority":"optional","sourceSection":"Adjectives ending in a consonant (usually no gender change)","rule":"The illustrated difícil and feliz do not change for gender","example":"How do consonant-final adjectives such as difícil and feliz usually change for a feminine singular noun?","answer":"They usually do not change: o exame difícil, a prova difícil.","explanation":"This is a common pattern among consonant-final adjectives, not a guarantee for every adjective ending in a consonant.","legacyAliases":[{"rule":"The illustrated difícil and feliz do not change for gender","example":"Do difícil and feliz take a different feminine singular form with mulher or prova?"}]} -->
 
 <!-- quiz: {"type":"multiple-choice","question":"How do you say 'the big houses' in Portuguese?","options":["As casas grande","Os casas grandes","As casas grandes","A casas grande"],"answer":2} -->
 
@@ -151,6 +151,7 @@ For **-s**, this applies to stressed final syllables, as in **país → países*
 ### Rule 3: Words ending in -m change to -ns
 
 <!-- grammar-card: {"id":"plural-m","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Rule 3: Words ending in -m change to -ns","rule":"Words ending in -m form the plural by changing -m to -ns","example":"As ___ foram boas. (viagem; plural)","answer":"viagens","explanation":"Replace final m with ns: viagem → viagens.","legacyAliases":[{"rule":"Words ending in -m form the plural by changing -m to -ns","example":"A ___ foi boa. → As ___ foram boas."}]} -->
+<!-- grammar-card: {"id":"rule-m-plural","kind":"concept","format":"qa","priority":"essential","sourceSection":"Rule 3: Words ending in -m change to -ns","rule":"Words ending in -m change -m to -ns in the plural","example":"How does a noun ending in -m form its plural?","answer":"Change the final -m to -ns, as in homem → homens.","explanation":"The same pattern gives jardim → jardins and bom → bons."} -->
 
 - **homem → homens** (men)
 - **viagem → viagens** (trips)
@@ -181,7 +182,7 @@ This is the trickiest pattern. There are three possible plural forms:
 
 <!-- quiz: {"type":"multiple-choice","question":"What is the plural of 'coração' (heart)?","options":["coraçãos","coraçães","corações","coraçãoes"],"answer":2} -->
 
-<!-- grammar-card: {"id":"plural-ao-options","kind":"concept","format":"qa","priority":"essential","sourceSection":"Rule 4: Words ending in -ão","rule":"Nouns in -ão have three plural patterns","example":"Can every noun ending in -ão take the plural -ões?","answer":"No. Learn each plural: coração → corações, pão → pães, mão → mãos.","explanation":"-ões is the most common pattern, but -ães and -ãos must also be learned."} -->
+<!-- grammar-card: {"id":"plural-ao-options","kind":"concept","format":"qa","priority":"essential","sourceSection":"Rule 4: Words ending in -ão","rule":"Nouns in -ão have three plural patterns","example":"Why must the plural of a noun ending in -ão be learned with each word?","answer":"There are three patterns: -ões (corações), -ães (pães), and -ãos (mãos).","explanation":"-ões is the most common pattern, but -ães and -ãos must also be learned.","legacyAliases":[{"rule":"Nouns in -ão have three plural patterns","example":"Can every noun ending in -ão take the plural -ões?"}]} -->
 <!-- grammar-card: {"id":"plural-ao-aes","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Rule 4: Words ending in -ão","rule":"Pão forms the plural pães","example":"pão → ___. (plural)","answer":"pães","explanation":"Keep the tilde: this word follows the -ães pattern."} -->
 <!-- grammar-card: {"id":"plural-ao-aos","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Rule 4: Words ending in -ão","rule":"Mão forms the plural mãos","example":"mão → ___. (plural)","answer":"mãos","explanation":"Mão keeps ão and adds s; it does not become mões."} -->
 
@@ -193,15 +194,15 @@ For the **-al, -el, -ol, -ul** patterns, replace final **-l** with **-is**, adju
 - **jornal → jornais** (newspapers)
 - **papel → papéis** (papers)
 - **azul → azuis** (blue, plural)
-- **fácil → fáceis** (easy, plural)
 
 <!-- grammar-card: {"id":"plural-l","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Rule 5: Words ending in -l","rule":"Papel changes final l to is and preserves stress with an accent","example":"papel → ___. (plural)","answer":"papéis","explanation":"The plural is papéis, not papels; the accent preserves final stress."} -->
+<!-- grammar-card: {"id":"rule-l-plural","kind":"concept","format":"qa","priority":"optional","sourceSection":"Rule 5: Words ending in -l","rule":"-al, -el, -ol, and -ul words replace final -l with -is in the plural","example":"How do nouns and adjectives ending in -al, -el, -ol, or -ul form the plural?","answer":"Replace the final -l with -is, adjusting the written accent where needed, as in animal → animais.","explanation":"Papel → papéis and azul → azuis follow the same pattern; -il endings are treated separately."} -->
 ### Rule 6: Words ending in -il
 
 - **Stressed -il → -is**: **civil → civis** (civil, plural)
-- **Unstressed -il → -eis**: **fóssil → fósseis** (fossils)
+- **Unstressed -il → -eis**: **fóssil → fósseis** (fossils), **fácil → fáceis** (easy, plural)
 
-<!-- grammar-card: {"id":"plural-il-stress","kind":"concept","format":"qa","priority":"optional","sourceSection":"Rule 6: Words ending in -il","rule":"Stressed and unstressed -il have different plurals","example":"How do the plurals of civil and fóssil differ?","answer":"Civil becomes civis; fóssil becomes fósseis.","explanation":"Stressed -il becomes -is; unstressed -il becomes -eis, as also in fácil → fáceis."} -->
+<!-- grammar-card: {"id":"plural-il-stress","kind":"rule","format":"qa","priority":"optional","sourceSection":"Rule 6: Words ending in -il","rule":"Stressed and unstressed -il have different plurals","example":"How do the plurals of civil and fóssil differ?","answer":"Civil becomes civis; fóssil becomes fósseis.","explanation":"Stressed -il becomes -is; unstressed -il becomes -eis, as also in fácil → fáceis."} -->
 ## Full Agreement in Sentences
 
 Everything must agree — articles, adjectives, and nouns:
@@ -218,6 +219,7 @@ When a group has mixed gender, use the **masculine plural**:
 <!-- quiz: {"type":"multiple-choice","question":"How do you make 'papel' (paper) plural?","options":["papels","papeles","papéis","papéles"],"answer":2} -->
 
 <!-- grammar-card: {"id":"mixed-group-agreement","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Full Agreement in Sentences","rule":"Mixed-gender groups use masculine plural","example":"O menino e a menina são bonit___.","answer":"os","explanation":"The traditional agreement form for this mixed group is bonitos; only os fills the printed stem."} -->
+<!-- grammar-card: {"id":"rule-mixed-group","kind":"concept","format":"qa","priority":"essential","sourceSection":"Full Agreement in Sentences","rule":"Mixed-gender groups take masculine plural agreement","example":"When an adjective describes a group of mixed gender, which form does it take?","answer":"The masculine plural.","explanation":"Os meninos e as meninas são bonitos: the group includes both genders, so bonito takes its masculine plural form."} -->
 
 ## Sources
 

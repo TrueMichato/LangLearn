@@ -25,7 +25,11 @@ const retired: Readonly<Record<string, Readonly<Record<string, string>>>> = {};
 
 // Justified overlaps where a cloze's one-word answer is also a token on its
 // front: 'lessonId/cardId' → reason.
-const clozeFrontExempt: ReadonlyMap<string, string> = new Map();
+const clozeFrontExempt: ReadonlyMap<string, string> = new Map([
+  ['articles/a-article-contraction', 'The cue (a + a) is needed to show which contraction is asked; the target is the grave accent of à, which the accent fold hides.'],
+  ['prepositions/a-definite-contraction', 'The cue (a + a) is needed to show which contraction is asked; the target is the grave accent of à, which the accent fold hides.'],
+  ['demonstratives/a-demonstrative', 'The cue (a + aquela) names the parts to contract; the target is the fused, grave-accented àquela, which the accent fold reduces to the cue\'s aquela.'],
+]);
 
 // Justified overlaps where a rule card's front shows another card's one-word
 // answer: 'lessonId/rule-id/other-id' → reason.

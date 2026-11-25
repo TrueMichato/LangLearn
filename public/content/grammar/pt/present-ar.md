@@ -71,6 +71,7 @@ When you name what you like, **gostar** requires **de** (of) before that complem
 - **Eles gostam de futebol** (eh-leez gosh-town jee foo-chee-bow) — They like soccer
 
 <!-- grammar-card: {"id":"gostar-de","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Gostar (gosh-tahr) — to like","rule":"Gostar takes de before an expressed complement","example":"Eu gosto ___ música.","answer":"de","explanation":"Portuguese uses gosto de música, unlike English like music. A short answer such as Gosto can leave the complement understood.","legacyAliases":[{"rule":"Gostar always requires 'de' after it","example":"Eu gost___ ___ música."}]} -->
+<!-- grammar-card: {"id":"rule-gostar-de","kind":"concept","format":"qa","priority":"optional","sourceSection":"Gostar (gosh-tahr) — to like","rule":"Gostar takes de before the thing liked","example":"When you name what you like with gostar, what must come before it?","answer":"The preposition de, as in Eu gosto de música.","explanation":"English says like music; Portuguese says gosto de música. A short answer such as Gosto can leave the complement understood."} -->
 <!-- vocab-card: {"id":"vocab-gostar","word":"gostar","meaning":"to like (with de before a complement)","priority":"essential","sourceSection":"Gostar (gosh-tahr) — to like"} -->
 
 ### Comprar (kohn-prahr) — to buy
@@ -113,7 +114,7 @@ In spoken Brazilian Portuguese, questions are formed simply by **changing your i
 - **Ela mora aqui.** (statement) — She lives here.
 - **Ela mora aqui?** (question) — Does she live here?
 
-<!-- grammar-card: {"id":"yes-no-intonation","kind":"concept","format":"qa","priority":"optional","sourceSection":"Asking Questions","rule":"Spoken yes/no questions can keep statement word order","example":"Must Você fala inglês? invert the subject and verb or add an equivalent of do?","answer":"No. Keep the same word order and use question intonation.","explanation":"The written question mark corresponds to questioning intonation in speech."} -->
+<!-- grammar-card: {"id":"yes-no-intonation","kind":"concept","format":"qa","priority":"optional","sourceSection":"Asking Questions","rule":"Spoken yes/no questions can keep statement word order","example":"In spoken Brazilian Portuguese, how is a yes/no question usually formed from a statement?","answer":"Keep the statement's word order and raise the intonation at the end.","explanation":"The written question mark corresponds to questioning intonation in speech.","legacyAliases":[{"rule":"Spoken yes/no questions can keep statement word order","example":"Must Você fala inglês? invert the subject and verb or add an equivalent of do?"}]} -->
 
 ## Negative Sentences
 
@@ -124,6 +125,7 @@ To make a sentence negative, simply add **não** before the verb:
 - **Nós não moramos aqui** (nohz now moh-rah-mooz ah-kee) — We don't live here
 
 <!-- grammar-card: {"id":"present-negation","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Negative Sentences","rule":"To negate, put 'não' directly before the verb","example":"Eu ___ falo japonês. (I don't speak Japanese)","answer":"não","explanation":"Put não before falo; Portuguese needs no auxiliary equivalent to don't."} -->
+<!-- grammar-card: {"id":"rule-negation-position","kind":"concept","format":"qa","priority":"essential","sourceSection":"Negative Sentences","rule":"Negate a sentence by putting não directly before the verb","example":"How do you make a Portuguese sentence negative?","answer":"Put não directly before the verb.","explanation":"Eu não falo japonês: Portuguese needs no helper verb like English don't."} -->
 
 ## Practice: Complete Conjugation
 

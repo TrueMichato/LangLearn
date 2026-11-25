@@ -7,6 +7,7 @@ Articles are small words that come before nouns. Portuguese uses them much more 
 ## Definite Articles — "The"
 
 <!-- grammar-card: {"id":"article-agreement","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Definite Articles — \"The\"","rule":"Articles must agree in gender AND number with the noun","example":"___ casas são bonitas. (the houses)","answer":"As","explanation":"Casas is feminine plural, so its definite article is as."} -->
+<!-- grammar-card: {"id":"rule-article-agreement","kind":"concept","format":"qa","priority":"essential","sourceSection":"Definite Articles — \"The\"","rule":"An article matches its noun in gender and number","example":"Which two features of the noun decide which article you use?","answer":"Its gender and its number.","explanation":"Masculine singular livro takes o, feminine plural casas takes as; indefinite um/uma/uns/umas follow the same agreement."} -->
 
 Portuguese has **four** definite articles, depending on the gender and number of the noun:
 
@@ -20,7 +21,8 @@ Portuguese has **four** definite articles, depending on the gender and number of
 - **Os livros** (ooz lee-vrooz) — The books
 - **As casas** (ahz kah-zahz) — The houses
 
-<!-- grammar-card: {"id":"definite-article-system","kind":"concept","format":"qa","priority":"essential","sourceSection":"Definite Articles — \"The\"","rule":"Definite articles distinguish masculine/feminine and singular/plural","example":"Which definite articles correspond to masculine singular, feminine singular, masculine plural, and feminine plural?","answer":"o, a, os, as.","explanation":"All four mean the; choose according to the noun's gender and number."} -->
+<!-- grammar-card: {"id":"definite-article-system","kind":"concept","format":"qa","priority":"optional","sourceSection":"Definite Articles — \"The\"","rule":"Definite articles distinguish masculine/feminine and singular/plural","example":"Which definite articles correspond to masculine singular, feminine singular, masculine plural, and feminine plural?","answer":"o, a, os, as.","explanation":"All four mean the; choose according to the noun's gender and number."} -->
+<!-- grammar-card: {"id":"definite-masculine-plural","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Definite Articles — \"The\"","rule":"Os accompanies a masculine plural noun","example":"___ livros são novos. (the books)","answer":"Os","explanation":"Livros is masculine plural, so its definite article is os; feminine plural casas takes as."} -->
 <!-- vocab-card: {"id":"vocab-livro","word":"livro","meaning":"book","priority":"optional","sourceSection":"Definite Articles — \"The\""} -->
 <!-- vocab-card: {"id":"vocab-casa","word":"casa","meaning":"house","priority":"optional","sourceSection":"Definite Articles — \"The\""} -->
 
@@ -54,7 +56,7 @@ In casual Brazilian Portuguese, articles before people's names are common in som
 - **A Maria é minha amiga** (ah mah-ree-ah eh mee-nyah ah-mee-gah) — Maria is my friend
 - **O João trabalha aqui** (oo zhoo-ow trah-bah-lyah ah-kee) — João works here
 
-<!-- grammar-card: {"id":"names-and-possessives","kind":"concept","format":"qa","priority":"essential","sourceSection":"Before Names","rule":"Articles before personal names vary regionally in Brazil","example":"Must every Brazilian speaker say A Maria rather than Maria?","answer":"No. Articles before personal names vary by region and usage.","explanation":"A Maria is natural in many regions, but Maria without an article is also normal.","legacyAliases":[{"rule":"Portuguese uses definite articles before names, possessives, and most countries","example":"___ Maria é ___ minha amiga."}]} -->
+<!-- grammar-card: {"id":"names-and-possessives","kind":"concept","format":"qa","priority":"essential","sourceSection":"Before Names","rule":"Articles before personal names vary regionally in Brazil","example":"How do Brazilian speakers treat an article before a person's name, as in A Maria?","answer":"It varies by region: common in casual speech in some regions and omitted in others; Maria alone is also normal.","explanation":"A Maria is natural in many regions, but Maria without an article is also normal.","legacyAliases":[{"rule":"Portuguese uses definite articles before names, possessives, and most countries","example":"___ Maria é ___ minha amiga."},{"rule":"Articles before personal names vary regionally in Brazil","example":"Must every Brazilian speaker say A Maria rather than Maria?"}]} -->
 
 ### Before Possessives
 
@@ -63,7 +65,7 @@ Articles often appear before possessive pronouns:
 - **O meu carro é vermelho** (oo meh-oo kah-hoo eh vehr-meh-lyoo) — My car is red
 - **A sua mãe é simpática** (ah soo-ah mayn eh seen-pah-chee-kah) — Your mother is nice
 
-<!-- grammar-card: {"id":"possessive-article-choice","kind":"concept","format":"qa","priority":"optional","sourceSection":"Before Possessives","rule":"Articles before possessives are often optional in Brazilian Portuguese","example":"Are both Meu carro and O meu carro possible in Brazilian Portuguese?","answer":"Yes. Both are possible; preference varies by region and context.","explanation":"The article is common, not required before every possessive."} -->
+<!-- grammar-card: {"id":"possessive-article-choice","kind":"concept","format":"qa","priority":"optional","sourceSection":"Before Possessives","rule":"Articles before possessives are often optional in Brazilian Portuguese","example":"In Brazilian Portuguese, how is an article before a possessive, as in o meu carro, used?","answer":"It is optional: both meu carro and o meu carro occur, with preference varying by region and context.","explanation":"The article is common, not required before every possessive.","legacyAliases":[{"rule":"Articles before possessives are often optional in Brazilian Portuguese","example":"Are both Meu carro and O meu carro possible in Brazilian Portuguese?"}]} -->
 
 ### With Countries and Continents
 
@@ -75,7 +77,7 @@ Most country names take an article:
 
 Exceptions (no article): **Portugal**, **Cuba**, **Israel**, **Moçambique**
 
-<!-- grammar-card: {"id":"country-article-exceptions","kind":"concept","format":"qa","priority":"optional","sourceSection":"With Countries and Continents","rule":"Country names have lexical article preferences","example":"Does Portugal normally take the same article as o Brasil?","answer":"No. Say Portugal without an article; Brasil normally takes o.","explanation":"Cuba, Israel, and Moçambique are other article-free names listed here."} -->
+<!-- grammar-card: {"id":"country-article-exceptions","kind":"concept","format":"qa","priority":"optional","sourceSection":"With Countries and Continents","rule":"Country names have lexical article preferences","example":"Most country names take an article, as in o Brasil. What article does Portugal normally take?","answer":"None: Portugal normally has no article.","explanation":"Cuba, Israel, and Moçambique are other article-free names listed here.","legacyAliases":[{"rule":"Country names have lexical article preferences","example":"Does Portugal normally take the same article as o Brasil?"}]} -->
 
 ### With Languages
 
@@ -83,6 +85,7 @@ Exceptions (no article): **Portugal**, **Cuba**, **Israel**, **Moçambique**
 - **Eu estudo o inglês** (eh-oo esh-too-doo oo een-glesh) — I study English
 
 <!-- grammar-card: {"id":"language-article","kind":"rule","format":"cloze","priority":"optional","sourceSection":"With Languages","rule":"A language used as a general subject commonly takes an article","example":"___ português é bonito. (Portuguese is beautiful.)","answer":"O","explanation":"Português is masculine. After a verb such as estudar, article use can vary."} -->
+<!-- grammar-card: {"id":"rule-language-subject","kind":"concept","format":"qa","priority":"optional","sourceSection":"With Languages","rule":"A language name used as the subject usually takes the definite article","example":"When language names like português are the subject of the sentence, what usually comes before them?","answer":"The definite article: O português é bonito.","explanation":"After a verb such as estudar or falar, article use varies: Eu estudo o inglês, Eu falo português."} -->
 
 ## When to Omit Articles
 
@@ -102,7 +105,7 @@ An unmodified profession used to classify someone normally has no article. An ar
 - **Eu gosto de café** (eh-oo gosh-too jee kah-feh) — I like coffee (in general)
 - **Ela come carne** (eh-lah koh-mee kahr-nee) — She eats meat (in general)
 
-<!-- grammar-card: {"id":"generic-no-article","kind":"concept","format":"qa","priority":"optional","sourceSection":"In General Statements with Indefinite Meaning","rule":"Generic indefinite substances can occur without an article","example":"In Eu gosto de café, does the lack of an article mean a particular cup of coffee?","answer":"No. Café refers to coffee in general.","explanation":"Compare Ela come carne, with a similarly general indefinite meaning."} -->
+<!-- grammar-card: {"id":"generic-no-article","kind":"rule","format":"qa","priority":"optional","sourceSection":"In General Statements with Indefinite Meaning","rule":"Generic indefinite substances can occur without an article","example":"In Eu gosto de café, what does café refer to without an article?","answer":"Coffee in general, not a particular coffee.","explanation":"Compare Ela come carne, with a similarly general indefinite meaning.","legacyAliases":[{"rule":"Generic indefinite substances can occur without an article","example":"In Eu gosto de café, does the lack of an article mean a particular cup of coffee?"}]} -->
 
 ### With Some Prepositions
 
