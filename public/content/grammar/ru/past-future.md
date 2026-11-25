@@ -1,5 +1,7 @@
 # Past Tense & Future Tense (Прошедшее и будущее время)
 
+<!-- vocab-inventory: {"mode":"explicit"} -->
+
 Russian past tense and future tense work very differently from English. The past tense agrees with the **gender** of the subject (not the person!), while the future tense has two distinct forms depending on whether the verb is **perfective** or **imperfective**. This lesson covers both tenses in detail.
 
 ---
@@ -46,6 +48,10 @@ The Russian past tense is formed by removing the **-ть** from the infinitive a
 
 <!-- quiz:{"type":"multiple-choice","question":"A female speaker says 'I worked'. Which form is correct?","options":["Я работал.","Я работала.","Я работало.","Я работали."],"answer":1} -->
 
+<!-- grammar-card: {"id":"children-played","kind":"rule","format":"cloze","priority":"optional","sourceSection":"1. Past Tense Formation","rule":"A plural subject takes the past-tense ending -ли","example":"Say the children played in the park. Use играть (to play): Дети ___ в парке.","answer":"играли","explanation":"Дети is plural, so the past tense takes -ли; the plural form is the same for every gender."} -->
+
+<!-- grammar-card: {"id":"rule-past-agreement","kind":"concept","format":"qa","priority":"essential","sourceSection":"1. Past Tense Formation","rule":"In the singular the past tense agrees with the subject's gender, not its person","example":"Besides number, what does a singular Russian past-tense verb agree with?","answer":"The gender of the subject.","explanation":"The answer counts if it names gender. Я читал, ты читал and он читал are the same form for a man; a woman says я читала."} -->
+
 ---
 
 ## 2. Past Tense of быть (to be)
@@ -87,7 +93,7 @@ When negating быть in the past, the form **не было** is often used for
 
 **В комнате не было света.** *(V komnate ne bylo sveta.)* — There was no light in the room.
 
-<!-- grammar-card: {"rule":"The past tense agrees with the subject in gender and number","hint":"быть, feminine subject","example":"Она ___ в магазине.","answer":"была","explanation":"Она is feminine singular, so быть takes the feminine past была rather than был."} -->
+<!-- grammar-card: {"id":"she-was-at-store","kind":"rule","format":"cloze","priority":"essential","sourceSection":"2. Past Tense of быть (to be)","rule":"The past tense agrees with the subject in gender and number","example":"Say she was at the store. Use быть (to be): Она ___ в магазине.","answer":"была","explanation":"Она is feminine singular, so быть takes the feminine past была rather than был.","legacyAliases":[{"rule":"The past tense agrees with the subject in gender and number","example":"Она ___ в магазине."}]} -->
 
 ---
 
@@ -97,7 +103,7 @@ Some common verbs have **irregular past tense forms** where the stem changes or 
 
 ### Verbs that drop -л in the masculine
 
-Several verbs whose stems end in a consonant drop the **-л** in the masculine form but keep it in feminine, neuter, and plural:
+Several common verbs have irregular past forms. Those whose stems end in a consonant — мочь, нести, печь, лечь, умереть — drop the **-л** in the masculine form but keep it in feminine, neuter, and plural. Идти and вести keep the **-л** but change their stem (шёл, вёл):
 
 | Infinitive | Masculine | Feminine | Neuter | Plural |
 |---|---|---|---|---|
@@ -108,6 +114,8 @@ Several verbs whose stems end in a consonant drop the **-л** in the masculine f
 | печь (to bake) | пёк | пекла | пекло | пекли |
 | лечь (to lie down) | лёг | легла | легло | легли |
 | умереть (to die) | умер | умерла | умерло | умерли |
+
+<!-- grammar-card: {"id":"rule-drop-l-masculine","kind":"concept","format":"qa","priority":"optional","sourceSection":"Verbs that drop -л in the masculine","rule":"Verbs like мочь and нести drop the past-tense -л in the masculine","example":"In the masculine past tense, what do verbs like мочь (to be able) and нести (to carry) leave out?","answer":"The -л suffix.","explanation":"The answer counts if it names the -л. Он мог, он нёс, but она могла, она несла keep it."} -->
 
 ### идти → шёл/шла/шло/шли
 
@@ -123,6 +131,8 @@ The verb **идти** (to go on foot) has a completely different stem in the pas
 
 **Дети шли и пели песню.** *(Deti shli i peli pesnyu.)* — The children walked and sang a song.
 
+<!-- grammar-card: {"id":"he-was-walking","kind":"rule","format":"cloze","priority":"optional","sourceSection":"идти → шёл/шла/шло/шли","rule":"Идти has the irregular masculine past шёл","example":"Say he was walking along the street. Use идти (to go on foot): Он ___ по улице.","answer":"шёл","explanation":"Идти builds its past on a different stem; for a masculine subject the form is шёл, not a form of идти plus -л."} -->
+
 ### мочь → мог/могла/могло/могли
 
 **Я не мог уснуть.** *(Ya ne mog usnut'.)* — I couldn't fall asleep. *(male speaker)*
@@ -134,6 +144,8 @@ The verb **идти** (to go on foot) has a completely different stem in the pas
 **Он мог говорить на трёх языках.** *(On mog govorit' na tryokh yazykakh.)* — He could speak three languages.
 
 **Они не могли прийти вчера.** *(Oni ne mogli priyti vchera.)* — They couldn't come yesterday.
+
+<!-- grammar-card: {"id":"she-couldnt-sleep","kind":"rule","format":"cloze","priority":"optional","sourceSection":"мочь → мог/могла/могло/могли","rule":"Мочь keeps -л in the feminine past","example":"A woman says she couldn't fall asleep. Use мочь (to be able): Я не ___ уснуть.","answer":"могла","explanation":"The speaker is a woman, so the past takes the feminine -ла; only the masculine мог drops the -л."} -->
 
 ### Other irregular examples
 
@@ -190,6 +202,10 @@ Take the perfective verb → conjugate it like a present tense verb → it means
 
 > **Remember:** You cannot use perfective verbs for present tense! If you conjugate a perfective verb, it always means the future.
 
+<!-- grammar-card: {"id":"will-finish-book","kind":"rule","format":"qa","priority":"essential","sourceSection":"4. Simple Future (Perfective Verbs)","rule":"A conjugated perfective verb means a completed future action","example":"Я прочитаю книгу. Прочитать is the perfective partner of читать (to read). When does this happen, and does the book get finished?","answer":"In the future, and yes, the book gets finished.","explanation":"Прочитаю has present-tense endings, but a perfective verb has no present, so it means a future action carried through to the end."} -->
+
+<!-- grammar-card: {"id":"rule-perfective-future","kind":"concept","format":"qa","priority":"essential","sourceSection":"4. Simple Future (Perfective Verbs)","rule":"A perfective verb forms its future by taking present-tense endings","example":"How do you form the future tense of a perfective verb such as прочитать (to finish reading)?","answer":"Conjugate it with present-tense endings; no helper verb is added.","explanation":"The answer counts if it says the perfective is simply conjugated. Я прочитаю, ты прочитаешь: these are future, never present."} -->
+
 ---
 
 ## 5. Compound Future (Imperfective Verbs)
@@ -232,7 +248,9 @@ Imperfective verbs form the future using the auxiliary verb **буду** (I will
 
 <!-- quiz:{"type":"multiple-choice","question":"How do you say 'We will be reading' (compound future)?","options":["Мы прочитаем.","Мы будем читать.","Мы читаем.","Мы читали."],"answer":1} -->
 
-<!-- grammar-card: {"rule":"The compound future is буду plus an imperfective infinitive","hint":"быть, я-form","example":"Я ___ читать весь вечер.","answer":"буду","explanation":"Читать is imperfective, so the future is built with буду plus the infinitive."} -->
+<!-- grammar-card: {"id":"will-be-reading","kind":"rule","format":"cloze","priority":"essential","sourceSection":"5. Compound Future (Imperfective Verbs)","rule":"The compound future is буду plus an imperfective infinitive","example":"Say you will be reading all evening: Я ___ читать весь вечер.","answer":"буду","explanation":"Читать is imperfective, so the future is built with the я-form of the future of быть plus the infinitive.","legacyAliases":[{"rule":"The compound future is буду plus an imperfective infinitive","example":"Я ___ читать весь вечер."}]} -->
+
+<!-- grammar-card: {"id":"rule-compound-future","kind":"concept","format":"qa","priority":"optional","sourceSection":"5. Compound Future (Imperfective Verbs)","rule":"The future of an imperfective verb is the future of быть plus the infinitive","example":"How do you form the future tense of an imperfective verb such as читать (to read)?","answer":"The future form of быть (to be) plus the infinitive.","explanation":"The answer counts if it names the future of быть plus the infinitive: я буду читать, они будут читать."} -->
 
 ---
 
@@ -291,7 +309,7 @@ Emphasizes the **process**, **duration**, or **repetition** of a future action.
 
 **Она сделает уроки и будет смотреть телевизор.** *(Ona sdelayet uroki i budet smotret' televizor.)* — She will finish homework and will watch TV.
 
-<!-- grammar-card: {"rule":"A perfective verb in present endings carries future meaning","hint":"написать","example":"Он ___ письмо.","answer":"напишет","explanation":"Perfective verbs have no present tense, so напишет means he will write the letter and finish it."} -->
+<!-- grammar-card: {"id":"will-write-letter","kind":"rule","format":"cloze","priority":"optional","sourceSection":"6. Simple Future vs Compound Future","rule":"A perfective verb in present endings carries future meaning","example":"Say he will write the letter and finish it. Use написать (to write, finish writing): Он ___ письмо.","answer":"напишет","explanation":"Perfective verbs have no present tense, so напишет means he will write the letter and finish it.","legacyAliases":[{"rule":"A perfective verb in present endings carries future meaning","example":"Он ___ письмо."}]} -->
 
 ---
 

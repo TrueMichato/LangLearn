@@ -1,5 +1,7 @@
 # Prepositional Case (Предложный падеж)
 
+<!-- vocab-inventory: {"mode":"explicit"} -->
+
 The **prepositional case** (предложный падеж) answers the questions **О ком? О чём? Где?** (About whom? About what? Where?). It is unique among Russian cases because it is **always** used with a preposition — hence the name. The most common prepositions are **в** (in), **на** (on/at), and **о/об** (about).
 
 ---
@@ -28,6 +30,8 @@ Masculine nouns typically take **-е** in the prepositional case. Nouns ending i
 
 **Он отдыхает в санатории.** *(On otdykhayet v sanatorii.)* — He is resting at a sanatorium.
 
+<!-- grammar-card: {"id":"book-on-table","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Masculine Nouns","rule":"A masculine noun ending in a consonant takes -е in the prepositional","example":"The book is lying on the table. Use стол (table): Книга лежит на ___.","answer":"столе","explanation":"На for location on a surface takes the prepositional, and стол ends in a consonant, so it adds -е."} -->
+
 ### Feminine Nouns
 
 Feminine nouns ending in **-а** take **-е**. Nouns ending in **-я** take **-е**. Nouns ending in **-ь** or **-ия** take **-и**.
@@ -51,6 +55,8 @@ Feminine nouns ending in **-а** take **-е**. Nouns ending in **-я** take **-�
 
 **Я живу в России.** *(Ya zhivu v Rossii.)* — I live in Russia.
 
+<!-- grammar-card: {"id":"on-square","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Feminine Nouns","rule":"Feminine nouns in -ь take -и in the prepositional","example":"There are many people on the square. Use площадь (square): На ___ много людей.","answer":"площади","explanation":"Площадь is feminine and ends in -ь, so it takes -и rather than the -е that most nouns take."} -->
+
 ### Neuter Nouns
 
 Neuter nouns ending in **-о** take **-е**. Nouns ending in **-е** take **-е** (no change in spelling for some). Nouns ending in **-ие** take **-ии**.
@@ -72,6 +78,8 @@ Neuter nouns ending in **-о** take **-е**. Nouns ending in **-е** take **-е*
 **Коровы пасутся в поле.** *(Korovy pasutsya v pole.)* — Cows graze in the field.
 
 **Мы встретились в здании.** *(My vstretilis' v zdanii.)* — We met in the building.
+
+<!-- grammar-card: {"id":"rule-prep-default-e","kind":"concept","format":"qa","priority":"essential","sourceSection":"1. Prepositional Case Endings","rule":"Most nouns take -е in the prepositional singular","example":"Which ending do most nouns take in the prepositional singular?","answer":"-е","explanation":"Стол → столе, школа → школе, окно → окне. The exceptions take -и: feminine nouns in -ь and nouns in -ий, -ия or -ие."} -->
 
 ---
 
@@ -123,7 +131,7 @@ Use **на** for surfaces, open areas, events, and certain fixed expressions.
 
 **Картина висит на стене.** *(Kartina visit na stene.)* — A painting hangs on the wall.
 
-<!-- grammar-card: {"rule":"Being inside somewhere uses в plus the prepositional","hint":"в / на","example":"Я живу ___ Москве.","answer":"в","explanation":"Cities take в, and Москва changes to the prepositional form Москве."} -->
+<!-- grammar-card: {"id":"live-in-moscow","kind":"rule","format":"cloze","priority":"optional","sourceSection":"в (in, inside)","rule":"Being inside somewhere uses в plus the prepositional","example":"Say you live in Moscow: Я живу ___ Москве.","answer":"в","explanation":"Cities take в, and Москва changes to the prepositional form Москве.","legacyAliases":[{"rule":"Being inside somewhere uses в plus the prepositional","example":"Я живу ___ Москве."}]} -->
 
 ---
 
@@ -170,7 +178,9 @@ Choosing between **в** and **на** is one of the trickiest parts of the prepos
 
 <!-- quiz:{"type":"multiple-choice","question":"Which is correct: 'She is at work'?","options":["Она в работе.","Она на работу.","Она на работе.","Она в работу."],"answer":2} -->
 
-<!-- grammar-card: {"rule":"Certain workplaces and open spaces take на rather than в","hint":"в / на","example":"Он работает ___ заводе.","answer":"на","explanation":"Завод belongs to the group of nouns conventionally used with на, not в."} -->
+<!-- grammar-card: {"id":"works-at-factory","kind":"rule","format":"cloze","priority":"essential","sourceSection":"3. The в vs на Distinction","rule":"Certain workplaces and open spaces take на rather than в","example":"Say he works at a factory: Он работает ___ заводе.","answer":"на","explanation":"Завод belongs to the group of nouns conventionally used with на, not в, like на работе and на почте.","legacyAliases":[{"rule":"Certain workplaces and open spaces take на rather than в","example":"Он работает ___ заводе."}]} -->
+
+<!-- grammar-card: {"id":"rule-na-events","kind":"concept","format":"qa","priority":"optional","sourceSection":"3. The в vs на Distinction","rule":"Events such as a concert or a lesson take на","example":"Which preposition do you use for being at an event, such as a concert or a lesson?","answer":"На","explanation":"Events take на even when they happen indoors: на концерте, на уроке, на собрании."} -->
 
 ---
 
@@ -220,7 +230,11 @@ The prepositions **о** and **об** (about, concerning) always take the preposi
 
 <!-- quiz:{"type":"multiple-choice","question":"Which preposition is correct: 'a book about art' — книга ___ искусстве?","options":["о","об","обо","в"],"answer":1} -->
 
-<!-- grammar-card: {"rule":"О plus the prepositional means about something","hint":"о / об","example":"Мы говорим ___ музыке.","answer":"о","explanation":"Музыка begins with a consonant, so the plain form о is used rather than об."} -->
+<!-- grammar-card: {"id":"talk-about-music","kind":"rule","format":"cloze","priority":"optional","sourceSection":"4. Usage: About/Concerning with о and об","rule":"О plus the prepositional means about something","example":"Say we're talking about music: Мы говорим ___ музыке.","answer":"о","explanation":"Музыка begins with a consonant, so the plain form о is used rather than об.","legacyAliases":[{"rule":"О plus the prepositional means about something","example":"Мы говорим ___ музыке."}]} -->
+
+<!-- grammar-card: {"id":"dream-about-vacation","kind":"rule","format":"cloze","priority":"optional","sourceSection":"When to use о vs об","rule":"About becomes об before a vowel sound","example":"Say she dreams about a vacation: Она мечтает ___ отпуске.","answer":"об","explanation":"Отпуске begins with the vowel о, so the preposition meaning about takes the form об."} -->
+
+<!-- grammar-card: {"id":"rule-ob-vowel","kind":"concept","format":"qa","priority":"essential","sourceSection":"When to use о vs об","rule":"The preposition about takes the form об before a vowel sound","example":"The preposition meaning 'about' adds a б before some nouns, as in a book about art. What must such a noun begin with?","answer":"A vowel sound (а, о, у, э, и).","explanation":"Об искусстве, об отпуске, but о музыке. Я, ю, е, ё begin with a [j] sound, so the plain form stays before them. Обо мне and обо всём are separate fixed forms."} -->
 
 ---
 
@@ -228,7 +242,7 @@ The prepositions **о** and **об** (about, concerning) always take the preposi
 
 Some masculine nouns have a special **locative** form ending in stressed **-у/-ю** when used with **в** or **на** to indicate location. This is sometimes called the "second prepositional" or "locative prepositional."
 
-> **Important:** These forms are used **only** for location (with в/на). When used with о/об (about), the regular **-е** ending is used.
+> **Important:** These forms are used **only** after в/на, for location (and in a few fixed time phrases such as **в году**). When used with о/об (about), the regular **-е** ending is used.
 
 | Nominative | Locative (в/на) | Regular Prep. (о) |
 |---|---|---|
@@ -271,6 +285,12 @@ Some masculine nouns have a special **locative** form ending in stressed **-у/-
 
 <!-- quiz:{"type":"multiple-choice","question":"How do you say 'in the forest' (location)?","options":["в лесе","в лесу","о лесе","на лесе"],"answer":1} -->
 
+<!-- grammar-card: {"id":"walk-in-forest","kind":"rule","format":"cloze","priority":"optional","sourceSection":"5. Irregular Nouns in the Prepositional Case","rule":"Лес takes its stressed locative in -у for location","example":"The children are walking in the forest. Use лес (forest): Дети гуляют в ___.","answer":"лесу","explanation":"For location with в, лес uses its special locative form instead of the regular -е ending."} -->
+
+<!-- grammar-card: {"id":"about-forest","kind":"rule","format":"qa","priority":"essential","sourceSection":"5. Irregular Nouns in the Prepositional Case","rule":"With о the regular -е ending marks the topic, not a location","example":"Мы говорим о лесе. Говорим means we're talking; лес means forest. What does о лесе mean here?","answer":"About the forest: it is the topic, not where we are.","explanation":"О plus the regular -е ending marks what is being talked about. Being in the forest would use the locative: в лесу."} -->
+
+<!-- grammar-card: {"id":"rule-locative-only-location","kind":"concept","format":"qa","priority":"optional","sourceSection":"5. Irregular Nouns in the Prepositional Case","rule":"The stressed locative in -у/-ю is used for location and a few fixed time phrases","example":"When a noun like лес (forest) has a special stressed locative form, which use is that form reserved for?","answer":"Location (and fixed time phrases such as в году), after в or на.","explanation":"The answer counts if it says location. Talking about the noun uses the regular -е ending: в лесу, but о лесе."} -->
+
 ---
 
 ## 6. Plural Prepositional Endings
@@ -294,6 +314,8 @@ In the plural, all genders take **-ах** or **-ях** in the prepositional case
 
 <!-- quiz:{"type":"multiple-choice","question":"What is the prepositional plural of 'город' (city)?","options":["в городов","в городах","в городям","в городей"],"answer":1} -->
 
+<!-- grammar-card: {"id":"in-parks","kind":"rule","format":"cloze","priority":"optional","sourceSection":"6. Plural Prepositional Endings","rule":"The prepositional plural ends in -ах or -ях","example":"Children play in parks. Use парк (park) in the plural: Дети играют в ___.","answer":"парках","explanation":"Every gender takes -ах/-ях in the prepositional plural; парки has a hard stem, so it is -ах."} -->
+
 ---
 
 ## 7. Personal Pronouns in the Prepositional Case
@@ -311,7 +333,7 @@ In the plural, all genders take **-ах** or **-ях** in the prepositional case
 
 > **Note:** After prepositions, third-person pronouns add **н-**: **о нём**, **о ней**, **о них**.
 
-**Она думает обо мне.** *(Ona dumayut obo mne.)* — She thinks about me.
+**Она думает обо мне.** *(Ona dumayet obo mne.)* — She thinks about me.
 
 **Я помню о тебе.** *(Ya pomnyu o tebe.)* — I remember about you.
 
@@ -320,6 +342,8 @@ In the plural, all genders take **-ах** or **-ях** in the prepositional case
 **Расскажи мне о ней.** *(Rasskazhi mne o ney.)* — Tell me about her.
 
 **Все знают о нас.** *(Vse znayut o nas.)* — Everyone knows about us.
+
+<!-- grammar-card: {"id":"thinks-about-me","kind":"rule","format":"cloze","priority":"optional","sourceSection":"7. Personal Pronouns in the Prepositional Case","rule":"About me is обо мне","example":"Say she thinks about me: Она думает ___ мне.","answer":"обо","explanation":"Мне begins with the cluster мн-, so the preposition expands to обо; with other pronouns it stays short: о тебе, о нас."} -->
 
 ---
 

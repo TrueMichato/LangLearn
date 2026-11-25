@@ -1,5 +1,7 @@
 # Reflexive Verbs (-ся/-сь)
 
+<!-- vocab-inventory: {"mode":"explicit"} -->
+
 Reflexive verbs are extremely common in Russian. They are formed by adding the particle **-ся** (after consonants and the soft sign ь) or **-сь** (after vowels) to the end of a verb. This particle originally comes from the pronoun **себя** (oneself), but reflexive verbs have developed many meanings beyond the literal "oneself."
 
 ---
@@ -10,9 +12,10 @@ A reflexive verb is any verb ending in **-ся** or **-сь**. The suffix follow
 
 | After consonant/ь → **-ся** | After vowel → **-сь** |
 |---|---|
-| он моет**ся** | она мое**тся** → (same: -тся) |
-| мыть**ся** (infinitive) | я мою**сь** |
-| мой**ся**! (imperative) | мы моем**ся** |
+| он моет**ся** | я мою**сь** |
+| мы моем**ся** | вы моете**сь** |
+| мыть**ся** (infinitive) | она мыла**сь** (past) |
+| мой**ся**! (imperative) | мойте**сь**! (imperative, plural) |
 
 The rule is simple:
 - If the ending before the particle is a **consonant** → add **-ся**
@@ -24,13 +27,15 @@ The rule is simple:
 
 **Дети купаются в море.** *(Deti kupayutsya v more.)* — The children are bathing in the sea.
 
-**Мы готовимся к экзамену.** *(My gotovimsa k ekzamenu.)* — We are preparing for the exam.
+**Мы готовимся к экзамену.** *(My gotovimsya k ekzamenu.)* — We are preparing for the exam.
 
 **Она улыбается.** *(Ona ulybayetsya.)* — She is smiling.
 
-<!-- grammar-card: {"rule":"The он-form of a reflexive verb is written -тся","hint":"одевает + ся","example":"Он одевае___ быстро.","answer":"тся","explanation":"The third-person ending -т joins -ся and is written одевается, even though it sounds like -тца."} -->
+<!-- grammar-card: {"id":"dresses-quickly","kind":"rule","format":"cloze","priority":"optional","sourceSection":"1. What Are Reflexive Verbs?","rule":"The он-form of a reflexive verb is written -тся","example":"He gets dressed quickly. Complete одеваться (to get dressed): Он одевае___ быстро.","answer":"тся","explanation":"The third-person ending -т joins -ся and is written одевается, even though it sounds like -тца.","legacyAliases":[{"rule":"The он-form of a reflexive verb is written -тся","example":"Он одевае___ быстро."}]} -->
 
-<!-- grammar-card: {"rule":"The reflexive ending is -сь after a vowel and -ся after a consonant","hint":"умываю + ?","example":"Я умываю___ каждое утро.","answer":"сь","explanation":"Умываю ends in the vowel ю, so the reflexive ending contracts to -сь."} -->
+<!-- grammar-card: {"id":"washes-face","kind":"rule","format":"cloze","priority":"essential","sourceSection":"1. What Are Reflexive Verbs?","rule":"The reflexive ending is -сь after a vowel and -ся after a consonant","example":"I wash my face every morning. Complete умываться (to wash one's face): Я умываю___ каждое утро.","answer":"сь","explanation":"Умываю ends in the vowel ю, so the reflexive ending contracts to -сь.","legacyAliases":[{"rule":"The reflexive ending is -сь after a vowel and -ся after a consonant","example":"Я умываю___ каждое утро."}]} -->
+
+<!-- grammar-card: {"id":"rule-particle-after-vowel","kind":"concept","format":"qa","priority":"essential","sourceSection":"1. What Are Reflexive Verbs?","rule":"After a vowel the reflexive particle takes its short form","example":"Which form does the reflexive particle take after a vowel, as in я мою (I wash)?","answer":"-сь","explanation":"After a vowel the particle is shortened: я моюсь, вы моетесь. After a consonant or ь it stays full: он моется, ты моешься."} -->
 
 ---
 
@@ -64,6 +69,8 @@ In the most literal sense, reflexive verbs describe an action directed **back at
 
 **Он бреется каждое утро.** *(On breyetsya kazhdoye utro.)* — He shaves every morning. (shaves himself)
 
+<!-- grammar-card: {"id":"child-washes-himself","kind":"rule","format":"qa","priority":"essential","sourceSection":"2. True Reflexive Meaning","rule":"A reflexive verb turns the action back on the subject","example":"Ребёнок моется сам. Ребёнок means child; сам means by himself. Who is washing, and who gets washed?","answer":"The child washes, and the child gets washed.","explanation":"Моется is the reflexive form of мыть (to wash), so the action falls back on the subject; compare Мама моет ребёнка, where Mom washes the child."} -->
+
 <!-- quiz:{"type":"multiple-choice","question":"What does 'мыться' mean?","options":["to wash something","to wash oneself","to clean the house","to do laundry"],"answer":1} -->
 
 ---
@@ -85,6 +92,8 @@ Reflexive verbs can express a **reciprocal** action — something people do **to
 **Мы давно не виделись!** *(My davno ne videlis!)* — We haven't seen each other in a long time!
 
 **Они познакомились на вечеринке.** *(Oni poznakomilis na vecherinke.)* — They met (got acquainted with each other) at a party.
+
+<!-- grammar-card: {"id":"rule-reciprocal","kind":"concept","format":"qa","priority":"optional","sourceSection":"3. Reciprocal Meaning","rule":"A reflexive verb can express a reciprocal action","example":"In Мы встречаемся каждую пятницу (we meet every Friday), what kind of action does the reflexive verb describe?","answer":"A reciprocal action: people do it to each other.","explanation":"The answer counts if it says the people act on each other. Они целуются means they kiss each other, not themselves."} -->
 
 <!-- quiz:{"type":"multiple-choice","question":"'Они целуются' means:","options":["They kiss themselves.","They are being kissed.","They kiss each other.","They want to kiss."],"answer":2} -->
 
@@ -119,6 +128,14 @@ Some Russian verbs **only** appear in the reflexive form. They have no non-refle
 
 **Почему ты улыбаешься?** *(Pochemu ty ulybayeshsya?)* — Why are you smiling?
 
+<!-- grammar-card: {"id":"afraid-of-dark","kind":"rule","format":"cloze","priority":"optional","sourceSection":"4. Verbs That Only Exist as Reflexive","rule":"Бояться exists only in the reflexive form","example":"Say you are afraid of the dark. Use бояться (to be afraid): Я ___ темноты.","answer":"боюсь","explanation":"Бояться has no non-reflexive partner; its я-form ends in the vowel ю, so the particle is -сь: боюсь."} -->
+
+<!-- grammar-card: {"id":"rule-only-reflexive","kind":"concept","format":"qa","priority":"optional","sourceSection":"4. Verbs That Only Exist as Reflexive","rule":"Some verbs exist only in the reflexive form","example":"What happens if you remove the reflexive particle from смеяться (to laugh)?","answer":"There is no such verb; смеяться exists only with -ся.","explanation":"Смеяться, бояться, нравиться and надеяться have no form without the particle, so they have to be memorised as reflexive."} -->
+
+<!-- vocab-card: {"id":"vocab-boyatsya","word":"бояться","meaning":"to be afraid","priority":"optional","sourceSection":"4. Verbs That Only Exist as Reflexive"} -->
+
+<!-- vocab-card: {"id":"vocab-smeyatsya","word":"смеяться","meaning":"to laugh","priority":"optional","sourceSection":"4. Verbs That Only Exist as Reflexive"} -->
+
 ---
 
 ## 5. Reflexive vs Non-Reflexive Pairs (Change in Meaning)
@@ -129,7 +146,7 @@ Many verbs change their meaning significantly when **-ся** is added. The refle
 |---|---|---|---|
 | учить | to teach / to study (memorize) | учиться | to study, to be a student |
 | находить | to find | находиться | to be located |
-| заниматься | — | заниматься | to study, to be engaged in |
+| занимать | to occupy, to take up (space, time) | заниматься | to study, to be engaged in |
 | готовить | to cook, to prepare (something) | готовиться | to prepare oneself (for) |
 | возвращать | to return (something) | возвращаться | to return, come back |
 | начинать | to begin (something) | начинаться | to begin (intransitive) |
@@ -155,6 +172,10 @@ Many verbs change their meaning significantly when **-ся** is added. The refle
 **Урок начинается в девять часов.** *(Urok nachinayetsya v devyat chasov.)* — The lesson begins at nine o'clock.
 
 **Фильм кончается через час.** *(Film konchayetsya cherez chas.)* — The movie ends in an hour.
+
+<!-- grammar-card: {"id":"students-preparing","kind":"rule","format":"cloze","priority":"optional","sourceSection":"5. Reflexive vs Non-Reflexive Pairs (Change in Meaning)","rule":"Готовиться means to prepare oneself, unlike готовить","example":"Say the students are preparing for the exam. Use готовиться (to prepare oneself): Студенты ___ к экзамену.","answer":"готовятся","explanation":"The students are getting themselves ready, so the reflexive готовиться is used; готовить would need an object, such as обед."} -->
+
+<!-- vocab-card: {"id":"vocab-nakhoditsya","word":"находиться","meaning":"to be located","priority":"optional","sourceSection":"5. Reflexive vs Non-Reflexive Pairs (Change in Meaning)"} -->
 
 <!-- quiz:{"type":"multiple-choice","question":"'Музей находится в центре' means:","options":["The museum finds the center.","The museum is located in the center.","Someone found a museum in the center.","The museum was built in the center."],"answer":1} -->
 
@@ -204,7 +225,7 @@ In the past tense, **-ся** is added after consonants and **-сь** after vowel
 |---|---|---|
 | он (masc.) | мыл**ся** | учил**ся** |
 | она (fem.) | мыла**сь** | учила**сь** |
-| оно (neut.) | мыло**сь** | училo**сь** |
+| оно (neut.) | мыло**сь** | учило**сь** |
 | они (pl.) | мыли**сь** | учили**сь** |
 
 **Он мылся в душе.** *(On mylsya v dushe.)* — He was washing in the shower.
@@ -217,9 +238,11 @@ In the past tense, **-ся** is added after consonants and **-сь** after vowel
 
 **Всё случилось очень быстро.** *(Vsyo sluchilos ochen bystro.)* — Everything happened very fast.
 
+<!-- grammar-card: {"id":"she-studied-in-moscow","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Past Tense","rule":"A feminine past reflexive verb ends in a vowel, so it takes -сь","example":"Say she studied in Moscow. Use учиться (to study): Она ___ в Москве.","answer":"училась","explanation":"The feminine past ends in the vowel а (учила), so the particle is shortened to -сь."} -->
+
 <!-- quiz: {"type":"multiple-choice","question":"Which is the correct past tense form of 'она — учиться'?","options":["она училась","она учился","она училися","она учились"],"answer":0} -->
 
-<!-- grammar-card: {"rule":"After a consonant the reflexive ending stays -ся","hint":"моешь + ?","example":"Ты моешь___ слишком долго!","answer":"ся","explanation":"Моешь ends in ь rather than a vowel, so the full ending -ся is kept."} -->
+<!-- grammar-card: {"id":"wash-too-long","kind":"rule","format":"cloze","priority":"optional","sourceSection":"6. Conjugation of Reflexive Verbs","rule":"After a consonant the reflexive ending stays -ся","example":"You take too long washing. Complete мыться (to wash oneself): Ты моешь___ слишком долго!","answer":"ся","explanation":"Моешь ends in ь rather than a vowel, so the full ending -ся is kept.","legacyAliases":[{"rule":"After a consonant the reflexive ending stays -ся","example":"Ты моешь___ слишком долго!"}]} -->
 
 ---
 
@@ -255,7 +278,7 @@ Reflexive verbs are also used to form **passive** constructions and **impersonal
 
 ## 8. Common Mistakes to Avoid
 
-❌ **Я боюся.** — Incorrect: after vowel у, use -сь.
+❌ **Я боюся.** — Incorrect: after the vowel ю, use -сь.
 ✅ **Я боюсь.** *(Ya boyus.)* — I am afraid.
 
 ❌ **Она учитьсь.** — Incorrect spelling.

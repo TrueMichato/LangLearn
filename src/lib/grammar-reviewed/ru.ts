@@ -12,7 +12,15 @@ export const reviewed: readonly string[] = [
   'genitive',
   'dative',
   // Rollout batch 1 (lessons 11–19)
-
+  'instrumental',
+  'prepositional',
+  'conjugation',
+  'past-future',
+  'motion',
+  'reflexive',
+  'adjective-declension',
+  'pronouns',
+  'numbers',
   // Rollout batch 2 (lessons 20–28)
 
   // Rollout batch 3 (lessons 29–37)
