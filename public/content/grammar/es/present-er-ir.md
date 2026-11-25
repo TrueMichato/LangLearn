@@ -116,7 +116,7 @@ Same pattern as -ar verbs — **no** before the verb for negation:
 - **¿Lees libros en español?** — Do you read books in Spanish?
 - **No vivimos lejos** — We don't live far
 
-<!-- grammar-card: {"id":"er-ir-negation","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Negation and Questions","rule":"Negative sentences: place 'no' directly before the conjugated verb","example":"Ella ___ (not write) en su diario. (escribir)","answer":"no escribe","explanation":"Use no before escribe, the third-person singular; no English-style does auxiliary is needed."} -->
+<!-- grammar-card: {"id":"er-ir-negation","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Negation and Questions","rule":"Negative sentences: place 'no' before the conjugated verb","example":"Ella ___ (not write) en su diario. (escribir)","answer":"no escribe","explanation":"Use no before escribe, the third-person singular; no English-style does auxiliary is needed.","legacyAliases":[{"rule":"Negative sentences: place 'no' directly before the conjugated verb","example":"Ella ___ (not write) en su diario. (escribir)"}]} -->
 
 ## Side-by-Side: All Three Verb Families
 

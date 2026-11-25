@@ -9,12 +9,21 @@
  *     "<lessonId>": {
  *       "reclassified": {"<cardId>": "why (e.g. interpretation task, not rule recall)"},
  *       "split": {"<oldCardId>": ["<newId>", "..."]},
+ *       "retired": {"<oldCardId>": {"successors": ["<cardId>", "..."], "reason": "why the card was removed"}},
+ *       "postBaselineAliases": {"<cardId>": {"rule": "...", "example": "...", "reason": "where this pair shipped"}},
  *       "answerChanged": {"<cardId>": "why the target is unchanged (e.g. added accepted alternative)"},
  *       "frontExempt": {"<cardId>": "why a token overlap on the front is acceptable"},
  *       "listExempt": {"<cardId>": "why a multi-item answer is still one atomic target"},
  *       "noRuleRecall": "why the lesson has no concept card (optional; only if it has zero)"
  *     }
  *   }}
+ *
+ * `split` keeps the old card and adds atomic siblings. `retired` deletes a shipped
+ * card whose content its successors now cover: the id must never be reused and its
+ * shipped pair must not reappear as any card's pair or alias, so saved rows keep
+ * their history but no longer refresh or get rule-recall spacing. A card first
+ * shipped after the snapshot may list an exact pair it later dropped in
+ * `postBaselineAliases`; nothing else may add an alias the snapshot doesn't know.
  *
  * All sub-keys are optional; `{}` means "reviewed, nothing special". A recorded
  * lesson is checked against the contract in docs/knowledge-practice.md and
@@ -25,7 +34,9 @@
  */
 import { describe, expect, it } from 'vitest';
 import index from '../../public/content/grammar/es/index.json';
+import type { Word } from '../db/schema';
 import { hasBlank } from '../lib/grammar-cards';
+import { isRuleRecallCard } from '../lib/grammar-review-scope';
 import { reviewed } from '../lib/grammar-reviewed/es';
 import { parseLessonReviewItems } from '../lib/lesson-capture';
 import {
@@ -61,11 +72,13 @@ interface ReviewRecord {
   answerChanged?: Record<string, string>;
   frontExempt?: Record<string, string>;
   listExempt?: Record<string, string>;
+  retired?: Record<string, { successors: string[]; reason: string }>;
+  postBaselineAliases?: Record<string, LegacyGrammarAlias & { reason: string }>;
   noRuleRecall?: string;
 }
 
 const RECORD_MAPS = ['reclassified', 'answerChanged', 'frontExempt', 'listExempt'] as const;
-const RECORD_KEYS = [...RECORD_MAPS, 'split', 'noRuleRecall'];
+const RECORD_KEYS = [...RECORD_MAPS, 'split', 'retired', 'postBaselineAliases', 'noRuleRecall'];
 
 const LESSONS = import.meta.glob('../../public/content/grammar/es/*.md', {
   query: '?raw', import: 'default', eager: true,
@@ -141,6 +154,26 @@ function recordShapeErrors(record: unknown): string[] {
       }
     }
   }
+  const nonempty = (value: unknown) => typeof value === 'string' && !!value.trim();
+  if (record.retired !== undefined) {
+    if (!isMetadataObject(record.retired)) errors.push('review record: retired must be an object');
+    else {
+      for (const [id, entry] of Object.entries(record.retired)) {
+        const ok = isMetadataObject(entry) && nonempty(entry.reason) && Array.isArray(entry.successors) &&
+          entry.successors.length > 0 && entry.successors.every((value) => typeof value === 'string');
+        if (!ok) errors.push(`review record: retired.${id} needs a nonempty successors array and reason`);
+      }
+    }
+  }
+  if (record.postBaselineAliases !== undefined) {
+    if (!isMetadataObject(record.postBaselineAliases)) errors.push('review record: postBaselineAliases must be an object');
+    else {
+      for (const [id, entry] of Object.entries(record.postBaselineAliases)) {
+        const ok = isMetadataObject(entry) && nonempty(entry.rule) && nonempty(entry.example) && nonempty(entry.reason);
+        if (!ok) errors.push(`review record: postBaselineAliases.${id} needs rule, example and reason`);
+      }
+    }
+  }
   if (record.noRuleRecall !== undefined && (typeof record.noRuleRecall !== 'string' || !record.noRuleRecall.trim())) {
     errors.push('review record: noRuleRecall must be a nonempty reason');
   }
@@ -165,10 +198,13 @@ function identityErrors(id: string, markdown: string, record: ReviewRecord): str
   }
   const reclassified = record.reclassified ?? {};
   const answerChanged = record.answerChanged ?? {};
+  const retired = record.retired ?? {};
   for (const [cardId, old] of Object.entries(snapshot)) {
     const card = raw.get(cardId);
     if (!card) {
-      errors.push(`${cardId}: shipped card was removed (keep the id; split by adding new cards)`);
+      if (!(cardId in retired)) {
+        errors.push(`${cardId}: shipped card was removed without a retired record (keep the id and split, or record it in retired)`);
+      }
       continue;
     }
     const aliases = aliasesOf(card);
@@ -196,9 +232,23 @@ function identityErrors(id: string, markdown: string, record: ReviewRecord): str
       errors.push(`${cardId}: listed in reclassified but kind/format are unchanged`);
     }
   }
+  const postBaseline = record.postBaselineAliases ?? {};
+  const shippedPairs = Object.values(snapshot).flatMap((old) => [{ rule: old.rule, example: old.example }, ...old.legacyAliases]);
+  for (const [cardId, entry] of Object.entries(postBaseline)) {
+    const card = raw.get(cardId);
+    const pair = { rule: entry.rule, example: entry.example };
+    if (!card) errors.push(`review record: postBaselineAliases.${cardId} is not a grammar card in this lesson`);
+    else if (snapshot[cardId]) errors.push(`review record: postBaselineAliases.${cardId} already shipped in the snapshot; its aliases come from there`);
+    else if (!aliasesOf(card).some(samePair(pair))) errors.push(`review record: postBaselineAliases.${cardId} is not one of the card's legacyAliases`);
+    if (shippedPairs.some(samePair(pair))) {
+      errors.push(`review record: postBaselineAliases.${cardId} names a pair a snapshot card shipped with (no mastery transfer)`);
+    }
+  }
   for (const [cardId, card] of raw) {
     const old = snapshot[cardId];
-    const allowed = old ? [{ rule: old.rule, example: old.example }, ...old.legacyAliases] : [];
+    const recorded = postBaseline[cardId];
+    const allowed = old ? [{ rule: old.rule, example: old.example }, ...old.legacyAliases]
+      : recorded ? [{ rule: recorded.rule, example: recorded.example }] : [];
     for (const alias of aliasesOf(card)) {
       if (!allowed.some(samePair(alias))) {
         errors.push(`${cardId}: unauthorized legacy alias ${JSON.stringify(alias)}${old ? '' : ' (new cards must not inherit mastery)'}`);
@@ -210,9 +260,29 @@ function identityErrors(id: string, markdown: string, record: ReviewRecord): str
       if (!raw.has(cardId)) errors.push(`review record: ${key}.${cardId} is not a grammar card in this lesson`);
     }
   }
+  for (const [oldId, entry] of Object.entries(retired)) {
+    const old = snapshot[oldId];
+    if (!old) {
+      errors.push(`review record: retired.${oldId} is not a shipped card`);
+      continue;
+    }
+    if (raw.has(oldId)) errors.push(`review record: retired.${oldId} is still a card in this lesson (never reuse a retired id)`);
+    for (const pair of [{ rule: old.rule, example: old.example }, ...old.legacyAliases]) {
+      for (const [cardId, card] of raw) {
+        const own = { rule: card.rule as string, example: card.example as string };
+        if (samePair(pair)(own) || aliasesOf(card).some(samePair(pair))) {
+          errors.push(`${cardId}: carries retired ${oldId}'s shipped pair ${JSON.stringify(pair)} (no mastery transfer)`);
+        }
+      }
+    }
+    for (const successor of Array.isArray(entry?.successors) ? entry.successors : []) {
+      if (!raw.has(successor)) errors.push(`review record: retired.${oldId} lists ${successor}, which is not a grammar card in this lesson`);
+    }
+  }
   for (const [oldId, newIds] of Object.entries(record.split ?? {})) {
     if (!snapshot[oldId]) errors.push(`review record: split.${oldId} is not a shipped card`);
-    else if (!raw.has(oldId)) errors.push(`review record: split.${oldId} must still exist`);
+    else if (oldId in retired) errors.push(`review record: split.${oldId} was retired; record its successors in retired`);
+    else if (!raw.has(oldId)) errors.push(`review record: split.${oldId} must still exist (or record it in retired)`);
     for (const newId of Array.isArray(newIds) ? newIds : []) {
       const card = raw.get(newId);
       if (!card) errors.push(`review record: split.${oldId} lists ${newId}, which is not a grammar card in this lesson`);
@@ -399,6 +469,26 @@ describe('Spanish reviewed grammar — regressions', () => {
   });
 });
 
+describe('Spanish reviewed grammar — retired cards', () => {
+  const retired = [...RECORDS].flatMap(([lessonId, record]) =>
+    Object.entries(record.retired ?? {}).map(([id, { successors }]) => ({ lessonId, id, successors })));
+  const saved = (lessonId: string, itemId: string): Word => ({
+    language: 'es', word: 'x', reading: '', meaning: '', contextSentence: 'x', type: 'grammar', grammarKind: 'concept',
+    tags: ['grammar', `lesson:${lessonId}`], createdAt: '2026-11-25T10:00:00.000Z', sourceTextId: null,
+    lessonSource: { lessonId, itemId, provenance: 'authored' },
+  });
+
+  it('saved rows of a retired card grade with normal spacing; concept successors keep rule recall', () => {
+    expect(retired.length).toBeGreaterThan(0);
+    for (const { lessonId, id, successors } of retired) {
+      expect(isRuleRecallCard(saved(lessonId, id)), `${lessonId}/${id}`).toBe(false);
+      const items = parseLessonReviewItems(lesson(lessonId)).items;
+      const concept = successors.find((successor) => items.find((item) => item.id === successor)?.kind === 'concept');
+      if (concept) expect(isRuleRecallCard(saved(lessonId, concept)), `${lessonId}/${concept}`).toBe(true);
+    }
+  });
+});
+
 describe('Spanish reviewed grammar — the checks fire', () => {
   const base = lesson('present-ar');
   // Edit one card through its parsed JSON, so later rewording doesn't break the mutation.
@@ -431,6 +521,59 @@ describe('Spanish reviewed grammar — the checks fire', () => {
     expect(lessonErrors('present-ar', changed, {})).toEqual(expect.arrayContaining([
       expect.stringContaining('ar-tu: unauthorized legacy alias'),
     ]));
+  });
+
+  describe('retired cards', () => {
+    const conditional = lesson('conditional');
+    const record = RECORDS.get('conditional')!;
+    const shipped = SNAPSHOT.lessons.conditional['conditional-endings'];
+
+    it('flags a shipped card removed without a retired record', () => {
+      expect(lessonErrors('conditional', conditional, { ...record, retired: {} })).toEqual(expect.arrayContaining([
+        expect.stringContaining('conditional-endings: shipped card was removed without a retired record'),
+      ]));
+    });
+
+    it('flags a retired id that is reused', () => {
+      const reused = `${conditional}\n<!-- grammar-card: ${JSON.stringify({
+        id: 'conditional-endings', kind: 'rule', format: 'cloze', priority: 'optional', sourceSection: 'Formation',
+        rule: 'Reused id', example: 'Yo ___ más. (comer, conditional)', answer: 'comería',
+      })} -->\n`;
+      expect(lessonErrors('conditional', reused, record)).toEqual(expect.arrayContaining([
+        expect.stringContaining('retired.conditional-endings is still a card in this lesson'),
+      ]));
+    });
+
+    it('flags a retired pair transferred through legacyAliases', () => {
+      const changed = mutateCard(conditional, 'conditional-yo', (card) => {
+        card.legacyAliases = [{ rule: shipped.rule, example: shipped.example }];
+      });
+      expect(lessonErrors('conditional', changed, record)).toEqual(expect.arrayContaining([
+        expect.stringContaining("conditional-yo: carries retired conditional-endings's shipped pair"),
+      ]));
+    });
+
+    it('flags a missing successor', () => {
+      const missing = { ...record, retired: { 'conditional-endings': { successors: ['conditional-nope'], reason: 'test' } } };
+      expect(lessonErrors('conditional', conditional, missing)).toEqual(expect.arrayContaining([
+        'review record: retired.conditional-endings lists conditional-nope, which is not a grammar card in this lesson',
+      ]));
+    });
+  });
+
+  it('accepts a post-baseline alias only when it is recorded, on a post-baseline card, and on the card', () => {
+    const record = RECORDS.get('present-ar')!;
+    expect(lessonErrors('present-ar', base, { ...record, postBaselineAliases: {} })).toEqual(expect.arrayContaining([
+      expect.stringContaining('rule-no-before-verb: unauthorized legacy alias'),
+    ]));
+    const pair = { rule: 'Invented rule', example: 'Invented prompt?', reason: 'test' };
+    expect(lessonErrors('present-ar', base, { ...record, postBaselineAliases: { 'ar-tu': pair } })).toEqual(expect.arrayContaining([
+      'review record: postBaselineAliases.ar-tu already shipped in the snapshot; its aliases come from there',
+    ]));
+    expect(lessonErrors('present-ar', base, { ...record, postBaselineAliases: { 'rule-no-before-verb': pair } }))
+      .toEqual(expect.arrayContaining([
+        "review record: postBaselineAliases.rule-no-before-verb is not one of the card's legacyAliases",
+      ]));
   });
 
   it('flags a changed answer unless answerChanged explains it', () => {

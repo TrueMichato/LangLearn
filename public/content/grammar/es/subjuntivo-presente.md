@@ -56,7 +56,6 @@ Ver is worth learning alongside these, but **veo → vea** does follow the yo-dr
 <!-- grammar-card: {"id":"irregular-haber","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Fully Irregular Subjunctives (Memorize These)","rule":"Existential haber uses haya in present subjunctive","example":"Espero que ___ tiempo. (haber: there be)","answer":"haya","explanation":"Existential haya is singular."} -->
 <!-- grammar-card: {"id":"irregular-dar","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Fully Irregular Subjunctives (Memorize These)","rule":"Dar has accented dé in yo/él present subjunctive","example":"Espero que ella me ___ permiso. (dar)","answer":"dé","explanation":"Dé takes a diacritic accent, unlike the preposition de."} -->
 <!-- grammar-card: {"id":"irregular-saber","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Fully Irregular Subjunctives (Memorize These)","rule":"Saber uses sep- in present subjunctive","example":"Espero que tú ___ la respuesta. (saber)","answer":"sepas","explanation":"The tú form uses sep- plus -as."} -->
-<!-- grammar-card: {"id":"irregular-mnemonic","kind":"concept","format":"qa","priority":"optional","sourceSection":"Fully Irregular Subjunctives (Memorize These)","rule":"DIS HES recalls six irregular present-subjunctive verbs","example":"Expand the DIS HES mnemonic into its six infinitives.","answer":"Dar, Ir, Saber, Haber, Estar, Ser.","explanation":"Each initial maps to one verb. Ver is separate: veo → vea follows the yo-drop procedure."} -->
 
 ## WEIRDO — Trigger Categories
 
@@ -71,9 +70,9 @@ WEIRDO is a guide to common subjunctive contexts, not a rule that every emotiona
 | **D** | Doubt / Denial | dudar que, no creer que, no pensar que, negar que |
 | **O** | Ojalá | ojalá (+ any subjunctive) |
 
-<!-- grammar-card: {"id":"weirdo-mnemonic","kind":"concept","format":"qa","priority":"optional","sourceSection":"WEIRDO — Trigger Categories","rule":"WEIRDO groups common subjunctive contexts rather than replacing construction-specific rules","example":"What do the six WEIRDO letters stand for in this lesson?","answer":"Wishes, Emotion, Impersonal expressions, Recommendations, Doubt/Denial, Ojalá.","explanation":"These are common contexts, not a guarantee for every expression in a category; factual certainty can take indicative, and same-subject wishes often use an infinitive."} -->
 <!-- grammar-card: {"id":"same-subject-wish","kind":"rule","format":"cloze","priority":"essential","sourceSection":"WEIRDO — Trigger Categories","rule":"A simple same-subject wish normally takes an infinitive","example":"Quiero ___. (I want to study.)","answer":"estudiar","explanation":"Compare Quiero que estudies, where the desired action has a different subject."} -->
 <!-- grammar-card: {"id":"rule-same-subject-infinitive","kind":"concept","format":"qa","priority":"optional","sourceSection":"WEIRDO — Trigger Categories","rule":"A wish about the wisher's own action takes an infinitive, not que + subjunctive","example":"After querer, which verb form follows when the person wishing and the person acting are the same?","answer":"An infinitive (Quiero salir).","explanation":"Any answer naming the infinitive counts. When someone else is to act, use que + subjunctive: Quiero que salgas."} -->
+<!-- grammar-card: {"id":"recommendation-subjunctive","kind":"rule","format":"cloze","priority":"optional","sourceSection":"WEIRDO — Trigger Categories","rule":"A recommendation about another person's action takes subjunctive in the que-clause","example":"Te recomiendo que ___ más. (estudiar; tú, present)","answer":"estudies","explanation":"Recomendar que about someone else's action takes present subjunctive, not indicative estudias: estudiar → estudies, with the opposite vowel e."} -->
 
 ## Examples in Context
 
@@ -99,6 +98,7 @@ WEIRDO is a guide to common subjunctive contexts, not a rule that every emotiona
 
 <!-- vocab-card: {"id":"vocab-ojala","word":"ojalá","meaning":"hopefully; I hope that","priority":"essential","sourceSection":"Examples in Context"} -->
 <!-- grammar-card: {"id":"impersonal-subjunctive","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Examples in Context","rule":"Es importante que takes subjunctive in the taught recommendation","example":"Es importante que tú ___ a tiempo. (llegar)","answer":"llegues","explanation":"Llegar changes g to gu before e, preserving the hard g sound."} -->
+<!-- grammar-card: {"id":"emotion-subjunctive","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Examples in Context","rule":"An emotion about another subject's action takes subjunctive in the que-clause","example":"Me alegra que tú ___ ir. (poder; present)","answer":"puedas","explanation":"The speaker reacts to someone else's action, so the que-clause takes present subjunctive, not indicative puedes: Me alegra que puedas ir."} -->
 
 <!-- quiz: {"type":"multiple-choice","question":"Which sentence correctly uses the subjunctive?","options":["Quiero que vienes conmigo.","Quiero que vengas conmigo.","Quiero que viene conmigo.","Quiero que vendrás conmigo."],"answer":1} -->
 

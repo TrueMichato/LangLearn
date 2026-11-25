@@ -114,8 +114,10 @@ Context clarifies meaning:
 - **No trabajamos los domingos** — We don't work on Sundays
 - **Ella no mira televisión** — She doesn't watch TV
 
+If an object or reflexive pronoun comes before the verb, **no** goes before the pronoun: **No lo hablo** — I don't speak it; **No me llamo Ana** — My name isn't Ana.
+
 <!-- grammar-card: {"id":"ar-negation","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Negatives: Place **no** directly before the verb","rule":"No precedes the conjugated verb for ordinary negation","example":"Ella ___ mira televisión. (does not watch)","answer":"no","explanation":"Spanish uses no mira, without an auxiliary equivalent of does."} -->
-<!-- grammar-card: {"id":"rule-no-before-verb","kind":"concept","format":"qa","priority":"optional","sourceSection":"Negatives: Place **no** directly before the verb","rule":"Ordinary negation places no directly before the conjugated verb","example":"Where does no go to make an ordinary Spanish sentence negative?","answer":"Directly before the conjugated verb, with no helper like don't.","explanation":"Any answer placing no right before the verb counts: No trabajamos los domingos."} -->
+<!-- grammar-card: {"id":"rule-no-before-verb","kind":"concept","format":"qa","priority":"optional","sourceSection":"Negatives: Place **no** directly before the verb","rule":"Ordinary negation places no before the conjugated verb, and before any object or reflexive pronoun in front of it","example":"In a simple sentence with no object or reflexive pronoun before the verb, where does no go to make it negative?","answer":"Directly before the conjugated verb, with no helper like don't.","explanation":"Any answer placing no right before the verb counts: No trabajamos los domingos. If an object or reflexive pronoun precedes the verb, no goes before the pronoun: No lo hablo; No me llamo Ana.","legacyAliases":[{"rule":"Ordinary negation places no directly before the conjugated verb","example":"Where does no go to make an ordinary Spanish sentence negative?"}]} -->
 
 ## The -ar Pattern at a Glance
 

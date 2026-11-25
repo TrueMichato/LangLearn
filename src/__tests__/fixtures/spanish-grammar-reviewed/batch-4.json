@@ -7,11 +7,10 @@
   },
   "register-formality": {
     "reclassified": {
-      "vosotros-endings": "Production task (give three conjugated forms), not declarative rule recall: concept → rule, kept qa and optional for saved-card identity.",
       "switch-register": "Interpreting what a set phrase proposes is comprehension, not rule recall: concept → rule."
     },
-    "split": {
-      "vosotros-endings": ["vosotros-comer", "vosotros-vivir"]
+    "retired": {
+      "vosotros-endings": {"successors": ["vosotros-hablar", "vosotros-comer", "vosotros-vivir"], "reason": "Three-form paradigm card duplicated its one-form cells; vosotros-hablar was added for habláis."}
     },
     "answerChanged": {
       "address-context": "Telegraphed yes/no front reworded as an open question; same target (relationship, setting, age and local usage decide address, not country alone), answer restated without the leading No.",

@@ -37,7 +37,10 @@ Use a question word at the beginning of the sentence:
 - **De quem é esse livro?** (jee kayn eh eh-see lee-vroo) — Whose book is this?
 - **Para quem é o presente?** (pah-rah kayn eh oo preh-zehn-chee) — Who is the gift for?
 
+The preposition goes directly before the question word. Portuguese doesn't leave it at the end of the question as English does (*Who do you live with?*).
+
 <!-- grammar-card: {"id":"preposition-question","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Quem (kayn) — Who","rule":"A preposition stays with the question word","example":"___ quem é esse livro? (Whose book is this?)","answer":"De","explanation":"De quem means whose; com quem means with whom and para quem means for whom."} -->
+<!-- grammar-card: {"id":"rule-preposition-placement","kind":"concept","format":"qa","priority":"optional","sourceSection":"Quem (kayn) — Who","rule":"A preposition goes directly before the question word","example":"In a question like Who do you live with?, where does the preposition go in Portuguese?","answer":"Directly before the question word, at the start: Com quem você mora?","explanation":"Portuguese doesn't leave the preposition at the end as English does: para quem, de quem, com quem."} -->
 ### O que / Que (oo kee / kee) — What
 
 <!-- vocab-card: {"id":"vocab-o-que","word":"o que","meaning":"what","priority":"essential","sourceSection":"O que / Que (oo kee / kee) — What"} -->
@@ -107,6 +110,7 @@ This is one of the trickiest aspects of Portuguese spelling. There are **four** 
 
 <!-- quiz: {"type":"multiple-choice","question":"Which form means 'because' (in an answer)?","options":["Por que","Por quê","Porque","Porquê"],"answer":2} -->
 
+<!-- grammar-card: {"id":"rule-porque-spelling","kind":"concept","format":"qa","priority":"essential","sourceSection":"Por que / Porque / Por quê (pohr kee / pohr-kee / pohr keh) — Why / Because","rule":"Why in a question is two words (por que); because is one word (porque)","example":"In writing, how does the spelling of why at the start of a question differ from the spelling of because?","answer":"Why is two words, por que; because is one word, porque.","explanation":"At the very end of a question, why takes an accent: Por quê?"} -->
 <!-- grammar-card: {"id":"por-que-question","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Por que / Porque / Por quê (pohr kee / pohr-kee / pohr keh) — Why / Because","rule":"Por que (question) vs Porque (answer/because)","example":"___ você estuda? (Why do you study?)","answer":"Por que","explanation":"Use separate unaccented por que here; the answer because is porque.","legacyAliases":[{"rule":"Por que (question) vs Porque (answer/because)","example":"_____ você estuda? _____ eu gosto."}]} -->
 <!-- grammar-card: {"id":"porque-answer","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Por que / Porque / Por quê (pohr kee / pohr-kee / pohr keh) — Why / Because","rule":"Porque introduces a reason","example":"___ eu gosto. (Because I like it.)","answer":"Porque","explanation":"One unaccented word expresses because."} -->
 <!-- grammar-card: {"id":"por-que-final","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Por que / Porque / Por quê (pohr kee / pohr-kee / pohr keh) — Why / Because","rule":"Question-final por quê has an accent","example":"Você não vai? ___? (Why?)","answer":"Por quê","explanation":"Before the final punctuation, quê is stressed and takes the circumflex."} -->
@@ -116,6 +120,7 @@ This is one of the trickiest aspects of Portuguese spelling. There are **four** 
 
 <!-- vocab-card: {"id":"vocab-quanto","word":"quanto","meaning":"how much; how many (inflects with the noun)","priority":"optional","sourceSection":"Quanto / Quanta / Quantos / Quantas (kwahn-too) — How much / How many"} -->
 <!-- grammar-card: {"id":"quanto-agreement","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Quanto / Quanta / Quantos / Quantas (kwahn-too) — How much / How many","rule":"Quanto/quanta/quantos/quantas must agree in gender and number","example":"_____ anos você tem? (How old are you?)","answer":"Quantos","explanation":"Anos is masculine plural. Compare feminine plural quantas pessoas."} -->
+<!-- grammar-card: {"id":"rule-quanto-agreement","kind":"concept","format":"qa","priority":"optional","sourceSection":"Quanto / Quanta / Quantos / Quantas (kwahn-too) — How much / How many","rule":"Quanto agrees in gender and number with the noun it asks about","example":"What does quanto (how much, how many) agree with?","answer":"The noun it asks about, in gender and number: quantos anos, quantas pessoas.","explanation":"Used without a noun, as in Quanto custa?, it stays quanto."} -->
 
 This question word agrees in gender and number with the noun:
 
@@ -142,7 +147,7 @@ This question word agrees in gender and number with the noun:
 - **O que é isso?** — What is this? (asking for a definition)
 - **Qual é o problema?** — What is the problem? (asking to identify)
 
-<!-- grammar-card: {"id":"qual-o-que-contrast","kind":"concept","format":"qa","priority":"optional","sourceSection":"Qual / Quais (kwaw / kwai-eez) — Which / What","rule":"Qual identifies or selects; o que can ask for a definition","example":"Why does Qual é o seu nome use qual rather than a literal English what template?","answer":"It asks to identify a specific name, rather than define what a name is.","explanation":"Compare O que é isso?, which asks what something is."} -->
+<!-- grammar-card: {"id":"qual-o-que-contrast","kind":"concept","format":"qa","priority":"optional","sourceSection":"Qual / Quais (kwaw / kwai-eez) — Which / What","rule":"Qual identifies or selects; o que can ask for a definition","example":"Why does Portuguese ask What is your name? with qual (Qual é o seu nome?) rather than o que?","answer":"Qual asks to identify a specific item, such as a name; o que asks for a definition or a general what.","explanation":"Compare O que é isso?, which asks what something is.","legacyAliases":[{"rule":"Qual identifies or selects; o que can ask for a definition","example":"Why does Qual é o seu nome use qual rather than a literal English what template?"}]} -->
 <!-- quiz: {"type":"multiple-choice","question":"How do you ask 'What is your name?'","options":["O que é seu nome?","Como é seu nome?","Qual é o seu nome?","Quem é seu nome?"],"answer":2} -->
 
 ## Practice Conversations

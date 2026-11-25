@@ -27,19 +27,8 @@
       }
     },
     "imperative": {
-      "split": {
-        "irregular-command-mnemonic": [
-          "hacer-command",
-          "ir-command",
-          "venir-command",
-          "tener-command",
-          "poner-command",
-          "salir-command",
-          "ser-command"
-        ]
-      },
-      "listExempt": {
-        "irregular-command-mnemonic": "Kept for saved-card identity; the atomic split cards (one per irregular tú command, plus the existing decir-command) carry the recall."
+      "retired": {
+        "irregular-command-mnemonic": {"successors": ["decir-command", "hacer-command", "ir-command", "venir-command", "tener-command", "poner-command", "salir-command", "ser-command"], "reason": "Eight-command mnemonic duplicated its one-command cells (decir-command covers Di)."}
       }
     },
     "numbers-dates": {},
@@ -49,16 +38,8 @@
       "reclassified": {
         "past-conjecture": "Deciding what Serían las diez means in a past scene interprets a specific sentence rather than recalling a declarative fact; it is now rule+qa with the same wording. rule-conditional-past-probability carries the declarative recall."
       },
-      "split": {
-        "conditional-endings": [
-          "conditional-yo",
-          "conditional-tu",
-          "conditional-ellos",
-          "conditional-vosotros"
-        ]
-      },
-      "listExempt": {
-        "conditional-endings": "Kept for saved-card identity; the atomic split cards (one person each, with conditional-regular covering nosotros) carry the recall."
+      "retired": {
+        "conditional-endings": {"successors": ["conditional-yo", "conditional-tu", "conditional-ellos", "conditional-vosotros", "conditional-regular"], "reason": "Essential six-ending paradigm card duplicated its one-person cells; conditional-regular covers nosotros (-íamos)."}
       }
     }
   }

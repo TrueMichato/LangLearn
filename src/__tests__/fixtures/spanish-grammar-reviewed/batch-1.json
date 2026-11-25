@@ -1,7 +1,6 @@
 {"lessons": {
   "pronunciation": {
-    "split": {"vowel-sound-map": ["vowel-e-sound", "vowel-i-sound", "vowel-u-sound"]},
-    "listExempt": {"vowel-sound-map": "Kept for saved-card identity; the atomic split cards carry the recall for the vowels English speakers misread by letter name (e, i, u)."},
+    "retired": {"vowel-sound-map": {"successors": ["vowel-a-sound", "vowel-e-sound", "vowel-i-sound", "vowel-o-sound", "vowel-u-sound"], "reason": "Five-vowel map duplicated its one-vowel cells; vowel-a-sound and vowel-o-sound were added so every vowel keeps a card."}},
     "answerChanged": {
       "pure-vowels": "Yes/no front replaced by an open recall question; the answer no longer enumerates the five vowels.",
       "j-sound": "Yes/no front replaced by an open question about the sound of j; the answer drops the leading No.",
@@ -16,13 +15,15 @@
     }
   },
   "gender-number": {
-    "split": {"feminine-endings": ["cion-sion-feminine", "dad-tad-feminine"]},
-    "listExempt": {"feminine-endings": "Kept for saved-card identity; the atomic split cards carry the recall for each feminine ending pair."},
+    "retired": {"feminine-endings": {"successors": ["cion-sion-feminine", "dad-tad-feminine"], "reason": "Aggregate set card whose cells are carded separately in this lesson; retired so learners don't get the whole set and its cells."}},
     "answerChanged": {
       "gender-tendencies": "Yes/no front replaced by open recall of how reliable endings are; the answer drops the leading No."
     }
   },
   "present-ar": {
+    "postBaselineAliases": {
+      "rule-no-before-verb": {"rule": "Ordinary negation places no directly before the conjugated verb", "example": "Where does no go to make an ordinary Spanish sentence negative?", "reason": "Shipped in #53 (after the snapshot); the front was scoped to clauses without a preverbal pronoun because no precedes the pronoun in No lo hablo."}
+    },
     "answerChanged": {
       "ar-question": "Yes/no front about ¿Hablas inglés? replaced by open recall of what Spanish adds to form a question; the answer drops the leading No."
     }

@@ -4,11 +4,8 @@
       "same-form-context": "Same target (-ar/-ir nosotros present and preterite coincide); the yes/no prompt became a which-tenses question, so the answer names the tenses instead of Yes.",
       "participle-invariance": "Same target (participles after auxiliary haber stay invariable); the yes/no prompt about one sentence became a what-does-it-agree-with question, so the answer states the rule instead of No."
     },
-    "split": {
-      "preterite-ir-ser": ["rule-ir-ser-shared-preterite", "preterite-ir-fui", "preterite-ser-fue"]
-    },
-    "listExempt": {
-      "preterite-ir-ser": "Optional six-form paradigm summary kept for saved-card identity; rule-ir-ser-shared-preterite carries the essential recall and two clozes practise single forms."
+    "retired": {
+      "preterite-ir-ser": {"successors": ["rule-ir-ser-shared-preterite", "preterite-ir-fui", "preterite-ser-fue"], "reason": "Six-form paradigm summary duplicated its split cells."}
     }
   },
   "cheatsheet-accent-rules": {
@@ -21,11 +18,10 @@
       "demonstrative-ambiguity-qualification": "Narrowed to its este/ese/aquel half (same id and target); the esto/eso/aquello half moved to rule-neuter-demonstratives, so that sentence left the answer."
     },
     "split": {
-      "stress-default-mnemonic": ["rule-unmarked-vowel-ns-stress", "rule-unmarked-consonant-stress"],
       "demonstrative-ambiguity-qualification": ["rule-neuter-demonstratives"]
     },
-    "listExempt": {
-      "stress-default-mnemonic": "Optional mnemonic summary kept for saved-card identity; the two atomic rule-unmarked-* cards carry the recall."
+    "retired": {
+      "stress-default-mnemonic": {"successors": ["rule-unmarked-vowel-ns-stress", "rule-unmarked-consonant-stress"], "reason": "Whole-shortcut mnemonic duplicated its split cells."}
     },
     "frontExempt": {
       "sobreesdrujula-application": "Accent placement is the tested point of this accent cheatsheet; the front shows the unaccented digamelo, which matches only because the gate strips accents.",
@@ -38,11 +34,8 @@
     "answerChanged": {
       "archaic-ha-time": "Same target (literary ha is from haber, everyday hace from hacer); the yes/no prompt became a which-verb question, so the leading No and the register note (now in the explanation) left the answer."
     },
-    "split": {
-      "three-verb-cue": ["rule-ser-identity-estar-condition", "rule-event-location-ser", "rule-haber-auxiliary-job"]
-    },
-    "listExempt": {
-      "three-verb-cue": "Optional summary of the lesson's headline cue kept for saved-card identity; the three atomic rule-* cards carry the recall."
+    "retired": {
+      "three-verb-cue": {"successors": ["rule-ser-identity-estar-condition", "rule-event-location-ser", "rule-haber-auxiliary-job"], "reason": "Three-part cue summary duplicated its split cells."}
     }
   },
   "cheatsheet-subjunctive-triggers": {
@@ -57,11 +50,8 @@
       "sequence-qualification": "Same target (the past-trigger sequence is not absolute); the yes/no prompt became a what-can-allow question, so the answer lists the conditioning factors instead of No.",
       "antecedent-memory-test": "Same mapping (specific X → indicative, unknown X → subjunctive); the el-versus-un note moved to the explanation to keep the answer atomic."
     },
-    "split": {
-      "weirdo-mnemonic": ["rule-ojala-subjunctive", "rule-always-subjunctive-conjunctions", "rule-time-conjunction-future"]
-    },
-    "listExempt": {
-      "weirdo-mnemonic": "Optional mnemonic expansion kept for saved-card identity; atomic rule-* cards carry ojalá and the non-WEIRDO conjunction triggers its explanation names."
+    "retired": {
+      "weirdo-mnemonic": {"successors": ["wish-application", "command-versus-report", "emotion-application", "factual-emotion", "impersonal-fact-exception", "negated-belief", "ojala-application", "rule-ojala-subjunctive", "rule-always-subjunctive-conjunctions", "rule-time-conjunction-future"], "reason": "Mnemonic expansion duplicated its category cells: W and R (taught together under Volition / Influence) wish-application and command-versus-report, E emotion-application, I impersonal-fact-exception, D negated-belief, O ojala-application; the conjunction cards cover its not-exhaustive caveat."}
     }
   }
 }}

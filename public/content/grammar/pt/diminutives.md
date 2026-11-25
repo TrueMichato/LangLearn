@@ -7,6 +7,7 @@ Diminutives and augmentatives are a beloved feature of Brazilian Portuguese. Bra
 ## Diminutive Formation: -inho / -inha
 
 <!-- grammar-card: {"id":"diminutive-gato","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Diminutive Formation: -inho / -inha","rule":"Gato drops its final vowel before the diminutive -inho","example":"O ___ (gato, diminutive) é muito fofo.","answer":"gatinho","explanation":"Drop final -o from gato and add -inho; the result can express affection as well as size.","legacyAliases":[{"rule":"Diminutive with -inho/-inha","example":"O ___ (gato, diminutive) é muito fofo."}]} -->
+<!-- grammar-card: {"id":"rule-diminutive-formation","kind":"concept","format":"qa","priority":"essential","sourceSection":"Diminutive Formation: -inho / -inha","rule":"The common diminutive pattern drops the final unstressed vowel before -inho/-inha","example":"In the common -inho/-inha pattern, what happens to a word's final unstressed vowel?","answer":"It is dropped before the suffix is added.","explanation":"casa → casinha and livro → livrinho drop the final unstressed vowel before -inha/-inho."} -->
 <!-- vocab-card: {"id":"vocab-casinha","word":"casinha","meaning":"little house","priority":"optional","sourceSection":"Diminutive Formation: -inho / -inha"} -->
 <!-- vocab-card: {"id":"vocab-bonitinho","word":"bonitinho","meaning":"cute; pretty (affectionate)","priority":"optional","sourceSection":"Diminutive Formation: -inho / -inha"} -->
 <!-- vocab-card: {"id":"vocab-livrinho","word":"livrinho","meaning":"little book","priority":"optional","sourceSection":"Diminutive Formation: -inho / -inha"} -->
@@ -25,9 +26,11 @@ The most common diminutive suffix is **-inho** (masculine) / **-inha** (feminine
 ### Spelling Changes
 
 <!-- grammar-card: {"id":"diminutive-c-spelling","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Spelling Changes","rule":"Spelling change: c → qu before -inho","example":"Só um ___ (pouco, diminutive), por favor.","answer":"pouquinho","explanation":"Pouco changes c to qu before -inho to preserve /k/."} -->
+<!-- grammar-card: {"id":"rule-c-qu-spelling","kind":"concept","format":"qa","priority":"optional","sourceSection":"Spelling Changes","rule":"Before -inho, c becomes qu to keep the k sound","example":"Before -inho, what spelling replaces the c of a word ending in -co?","answer":"qu, which keeps the hard k sound.","explanation":"Spelling changes preserve pronunciation: pouco → pouquinho."} -->
 <!-- grammar-card: {"id":"diminutive-g-spelling","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Spelling Changes","rule":"Hard g is preserved with gu before -inho","example":"amigo → ___ (diminutive)","answer":"amiguinho","explanation":"Amigo changes g to gu before -inho to preserve its consonant sound."} -->
 <!-- grammar-card: {"id":"diminutive-cafe-accent","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Spelling Changes","rule":"Cafezinho shifts stress and loses the base's acute accent","example":"café → ___ (diminutive)","answer":"cafezinho","explanation":"Café becomes cafezinho: stress shifts to zi, and the original acute accent is not retained."} -->
 <!-- grammar-card: {"id":"diminutive-nasal-vowel","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Spelling Changes","rule":"Pãozinho preserves the base's nasal diphthong","example":"pão → ___ (diminutive)","answer":"pãozinho","explanation":"Pãozinho retains the nasal diphthong and adds -zinho."} -->
+<!-- grammar-card: {"id":"rule-zinho-stressed-vowel","kind":"concept","format":"qa","priority":"optional","sourceSection":"Spelling Changes","rule":"Words ending in a stressed vowel often take -zinho","example":"Which diminutive suffix do words ending in a stressed vowel often take?","answer":"-zinho/-zinha.","explanation":"The spelling table lists stressed-vowel endings with -zinho, as in café → cafezinho."} -->
 <!-- vocab-card: {"id":"vocab-amiguinho","word":"amiguinho","meaning":"little friend; buddy","priority":"optional","sourceSection":"Spelling Changes"} -->
 <!-- vocab-card: {"id":"vocab-paozinho","word":"pãozinho","meaning":"bread roll; little bread","priority":"optional","sourceSection":"Spelling Changes"} -->
 <!-- vocab-card: {"id":"vocab-florzinha","word":"florzinha","meaning":"little flower","priority":"optional","sourceSection":"Spelling Changes"} -->
@@ -56,7 +59,7 @@ More examples:
 
 ## Cultural Significance of Diminutives
 
-<!-- grammar-card: {"id":"diminutive-pragmatics","kind":"concept","format":"qa","priority":"essential","sourceSection":"Cultural Significance of Diminutives","rule":"Diminutives can soften requests rather than describe physical size","example":"Does Só um momentinho necessarily refer to a physically smaller object?","answer":"No. The diminutive softens the request and can convey politeness or warmth.","explanation":"Brazilian diminutives can express affection, softening, or downplaying as well as small size."} -->
+<!-- grammar-card: {"id":"diminutive-pragmatics","kind":"rule","format":"qa","priority":"essential","sourceSection":"Cultural Significance of Diminutives","rule":"Diminutives can soften requests rather than describe physical size","example":"Does Só um momentinho necessarily refer to a physically smaller object?","answer":"No. The diminutive softens the request and can convey politeness or warmth.","explanation":"Brazilian diminutives can express affection, softening, or downplaying as well as small size."} -->
 
 In Brazilian Portuguese, diminutives go far beyond indicating small size. They express:
 
@@ -81,7 +84,7 @@ In Brazilian Portuguese, diminutives go far beyond indicating small size. They e
 - **Ele é magrinho.** (mah-GREEN-yoo) — He's quite thin.
 
 ### The Famous "Cafezinho"
-<!-- grammar-card: {"id":"cafezinho-hospitality","kind":"concept","format":"qa","priority":"optional","sourceSection":"The Famous \"Cafezinho\"","rule":"A cafezinho invitation can express hospitality","example":"What social meaning can Vamos tomar um cafezinho? carry beyond the size of the drink?","answer":"An invitation expressing hospitality and social bonding.","explanation":"A cafezinho can be a social gesture, not only a small portion."} -->
+<!-- grammar-card: {"id":"cafezinho-hospitality","kind":"rule","format":"qa","priority":"optional","sourceSection":"The Famous \"Cafezinho\"","rule":"A cafezinho invitation can express hospitality","example":"What social meaning can Vamos tomar um cafezinho? carry beyond the size of the drink?","answer":"An invitation expressing hospitality and social bonding.","explanation":"A cafezinho can be a social gesture, not only a small portion."} -->
 <!-- vocab-card: {"id":"vocab-cafezinho","word":"cafezinho","meaning":"small coffee; a coffee offered socially","priority":"essential","sourceSection":"The Famous \"Cafezinho\""} -->
 
 - **Vamos tomar um cafezinho?** (vah-mohs toh-MAR oon kah-feh-ZEEN-yoo) — Shall we have a little coffee?
@@ -91,7 +94,7 @@ The *cafezinho* is a cultural institution in Brazil — it's not just a small co
 ## Augmentative Formation: -ão / -ona
 
 <!-- grammar-card: {"id":"augmentative-carro","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Augmentative Formation: -ão / -ona","rule":"Carro forms the augmentative carrão for size or impressiveness","example":"Ele comprou um ___ (carro, augmentative) novo.","answer":"carrão","explanation":"Carro becomes carrão; an augmentative can convey impressiveness or intensity as well as size.","legacyAliases":[{"rule":"Augmentative with -ão/-ona","example":"Ele comprou um ___ (carro, augmentative) novo."}]} -->
-<!-- grammar-card: {"id":"augmentative-gender","kind":"concept","format":"qa","priority":"optional","sourceSection":"Augmentative Formation: -ão / -ona","rule":"Lexicalized augmentatives need not retain the base noun's gender","example":"Does the feminine gender of casa make its augmentative casarão feminine too?","answer":"No. Casarão is masculine: um casarão.","explanation":"Augmentative formation is lexical; -ão and -ona are not an exceptionless gender-conversion formula."} -->
+<!-- grammar-card: {"id":"augmentative-gender","kind":"rule","format":"qa","priority":"optional","sourceSection":"Augmentative Formation: -ão / -ona","rule":"Lexicalized augmentatives need not retain the base noun's gender","example":"Does the feminine gender of casa make its augmentative casarão feminine too?","answer":"No. Casarão is masculine: um casarão.","explanation":"Augmentative formation is lexical; -ão and -ona are not an exceptionless gender-conversion formula."} -->
 <!-- vocab-card: {"id":"vocab-casarao","word":"casarão","meaning":"mansion; large house (masculine)","priority":"essential","sourceSection":"Augmentative Formation: -ão / -ona"} -->
 <!-- vocab-card: {"id":"vocab-mulherona","word":"mulherona","meaning":"big; strong woman","priority":"optional","sourceSection":"Augmentative Formation: -ão / -ona"} -->
 <!-- vocab-card: {"id":"vocab-gatao","word":"gatão","meaning":"big cat; handsome man (slang)","priority":"optional","sourceSection":"Augmentative Formation: -ão / -ona"} -->
@@ -151,7 +154,7 @@ Some suffixes carry a negative connotation:
 
 ## Diminutives with Adverbs and Other Words
 
-<!-- grammar-card: {"id":"diminutive-word-classes","kind":"concept","format":"qa","priority":"optional","sourceSection":"Diminutives with Adverbs and Other Words","rule":"Diminutive suffixes also appear with adjectives and adverbs","example":"Do devagarinho and cedinho show that diminutive suffixes are limited to nouns?","answer":"No. They also occur with adverbs, and forms such as bonitinho occur with adjectives.","explanation":"Diminutives can modify different word classes; the examples here do not establish a productive verb-conjugation rule."} -->
+<!-- grammar-card: {"id":"diminutive-word-classes","kind":"rule","format":"qa","priority":"optional","sourceSection":"Diminutives with Adverbs and Other Words","rule":"Diminutive suffixes also appear with adjectives and adverbs","example":"Do devagarinho and cedinho show that diminutive suffixes are limited to nouns?","answer":"No. They also occur with adverbs, and forms such as bonitinho occur with adjectives.","explanation":"Diminutives can modify different word classes; the examples here do not establish a productive verb-conjugation rule."} -->
 <!-- vocab-card: {"id":"vocab-agorinha","word":"agorinha","meaning":"right now; just now (context-dependent)","priority":"optional","sourceSection":"Diminutives with Adverbs and Other Words"} -->
 <!-- vocab-card: {"id":"vocab-cedinho","word":"cedinho","meaning":"nice and early","priority":"optional","sourceSection":"Diminutives with Adverbs and Other Words"} -->
 <!-- vocab-card: {"id":"vocab-pertinho","word":"pertinho","meaning":"very close; nearby","priority":"optional","sourceSection":"Diminutives with Adverbs and Other Words"} -->

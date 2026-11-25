@@ -7,7 +7,7 @@ Brazilian Portuguese is rich with idiomatic expressions, slang, and informal phr
 ## Greetings and Responses
 
 ### Tudo bem? / Tudo bom?
-<!-- grammar-card: {"id":"greeting-question-response","kind":"concept","format":"qa","priority":"essential","sourceSection":"Tudo bem? / Tudo bom?","rule":"Tudo bem can be a wellbeing question or a positive response","example":"How can the same everyday Brazilian phrase ask how someone is and also answer that question?","answer":"Tudo bem? asks How are you?; Tudo bem! answers All good!","explanation":"Intonation and conversational role distinguish the question from its response.","legacyAliases":[{"rule":"'Tudo bem' as greeting and response","example":"— ___ ? — Tudo bem, e você?"}]} -->
+<!-- grammar-card: {"id":"greeting-question-response","kind":"rule","format":"qa","priority":"essential","sourceSection":"Tudo bem? / Tudo bom?","rule":"Tudo bem can be a wellbeing question or a positive response","example":"How can the same everyday Brazilian phrase ask how someone is and also answer that question?","answer":"Tudo bem? asks How are you?; Tudo bem! answers All good!","explanation":"Intonation and conversational role distinguish the question from its response.","legacyAliases":[{"rule":"'Tudo bem' as greeting and response","example":"— ___ ? — Tudo bem, e você?"}]} -->
 <!-- vocab-card: {"id":"vocab-tudo-bem","word":"tudo bem","meaning":"how are you?; all good (question or response)","priority":"essential","sourceSection":"Tudo bem? / Tudo bom?"} -->
 <!-- vocab-card: {"id":"vocab-tudo-bom","word":"tudo bom","meaning":"how are you?; all good (casual greeting or response)","priority":"optional","sourceSection":"Tudo bem? / Tudo bom?"} -->
 <!-- vocab-card: {"id":"vocab-tudo-otimo","word":"tudo ótimo","meaning":"everything is great","priority":"optional","sourceSection":"Tudo bem? / Tudo bom?"} -->
@@ -90,11 +90,15 @@ Informal "OK" — extremely common:
 ## Time Expressions
 
 ### Faz tempo
-<!-- grammar-card: {"id":"elapsed-faz-tempo","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Faz tempo","rule":"Elapsed-time fazer stays in the third-person singular","example":"___ ___ que não te vejo!","answer":"Faz tempo","explanation":"Elapsed-time fazer is impersonal and stays singular: faz tempo, not fazem tempo.","legacyAliases":[{"rule":"'Faz tempo' for elapsed time","example":"___ ___ que não te vejo!"}]} -->
+<!-- grammar-card: {"id":"elapsed-faz-tempo","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Faz tempo","rule":"Elapsed-time fazer stays in the third-person singular","example":"___ ___ que não te vejo! (fazer; it's been a while)","answer":"Faz tempo","explanation":"Elapsed-time fazer is impersonal and stays singular: faz tempo, not fazem tempo.","legacyAliases":[{"rule":"'Faz tempo' for elapsed time","example":"___ ___ que não te vejo!"},{"rule":"Elapsed-time fazer stays in the third-person singular","example":"___ ___ que não te vejo!"}]} -->
+<!-- grammar-card: {"id":"rule-faz-tempo-singular","kind":"concept","format":"qa","priority":"essential","sourceSection":"Faz tempo","rule":"Elapsed-time fazer is impersonal and stays singular","example":"When fazer expresses elapsed time (it's been a while), which person and number does it stay in?","answer":"Third-person singular (faz tempo, not fazem tempo).","explanation":"Elapsed-time fazer has no subject, so it stays singular even with a plural duration: Faz dois anos que moro aqui."} -->
+<!-- grammar-card: {"id":"rule-faz-tempo-present","kind":"concept","format":"qa","priority":"optional","sourceSection":"Faz tempo","rule":"An ongoing situation after an elapsed-time expression uses the present","example":"In an elapsed-time sentence with fazer, which tense does the verb after que take for a situation that is still going on (I've been living here for a long time)?","answer":"The simple present (Faz tempo que moro aqui).","explanation":"Portuguese uses the present for a situation that continues up to now, where English says I have been living: Faz tempo que moro aqui."} -->
 <!-- vocab-card: {"id":"vocab-faz-tempo","word":"faz tempo","meaning":"it has been a long time; for a long time","priority":"optional","sourceSection":"Faz tempo"} -->
 
 - **Faz tempo que não te vejo!** (fahz TEN-poo kee nown chee VEH-joo) — It's been a while since I've seen you!
 - **Faz tempo que moro aqui.** (fahz TEN-poo kee MOH-roo ah-KEE) — I've been living here for a long time.
+
+> **Note:** In elapsed-time expressions *fazer* is impersonal and stays in the third-person singular: **Faz dois anos que moro aqui** (not *fazem*). For a situation that is still going on, the verb after *que* is in the present: *moro aqui* = I've been living here.
 
 ### Daqui a pouco
 <!-- vocab-card: {"id":"vocab-daqui-pouco","word":"daqui a pouco","meaning":"in a little while","priority":"optional","sourceSection":"Daqui a pouco"} -->

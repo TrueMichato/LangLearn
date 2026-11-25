@@ -2,6 +2,8 @@
 
 <!-- vocab-inventory: {"mode":"explicit"} -->
 
+<!-- grammar-card: {"id":"rule-imperfeito-viewpoint","kind":"concept","format":"qa","priority":"essential","sourceSection":"Pretérito Imperfeito (Imperfect Past)","rule":"The imperfeito views a past action as ongoing, habitual, or repeated","example":"How does the imperfeito view a past action, unlike the perfeito's completed event?","answer":"As ongoing, habitual, or repeated, without focusing on its end.","explanation":"Any answer naming ongoing, habitual or repeated action, or background description, counts: Eu morava no Rio (I used to live in Rio)."} -->
+
 The pretérito imperfeito describes actions that were ongoing, habitual, or repeated in the past. Unlike the pretérito perfeito (which tells you *what happened*), the imperfeito tells you *what was happening*, *what used to happen*, or *how things were*. It's your go-to tense for painting pictures of the past — describing scenes, routines, and background actions.
 
 ## Regular Verbs: -AR
@@ -25,8 +27,9 @@ For **-ar** verbs, remove the ending and add **-ava** endings:
 
 <!-- grammar-card: {"id":"imperfeito-ar-plural","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Regular Verbs: -AR","rule":"Regular -ar imperfect forms use -avam with eles/elas/vocês","example":"Eles ___ no parque todo dia. (brincar; imperfeito)","answer":"brincavam","explanation":"Brinc- + -avam gives brincavam; nós instead takes accented -ávamos."} -->
 
-<!-- grammar-card: {"id":"imperfeito-ar","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Regular Verbs: -AR","rule":"Regular -ar verbs in the imperfeito use -ava endings: -ava, -ava, -ávamos, -avam","example":"Ela ___ em São Paulo antes (morar)","answer":"morava","explanation":"Remove -ar and add -ava; eu and você/ele/ela share the form."} -->
+<!-- grammar-card: {"id":"imperfeito-ar","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Regular Verbs: -AR","rule":"Regular -ar verbs in the imperfeito use -ava endings: -ava, -ava, -ávamos, -avam","example":"Ela ___ em São Paulo antes. (morar; imperfeito)","answer":"morava","explanation":"Remove -ar and add -ava; eu and você/ele/ela share the form.","legacyAliases":[{"rule":"Regular -ar verbs in the imperfeito use -ava endings: -ava, -ava, -ávamos, -avam","example":"Ela ___ em São Paulo antes (morar)"}]} -->
 <!-- grammar-card: {"id":"imperfeito-ar-nos","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Regular Verbs: -AR","rule":"Nós uses accented -ávamos in the regular -ar imperfect","example":"Nós ___ juntos. (estudar; imperfeito)","answer":"estudávamos","explanation":"Keep the acute accent in estudávamos; plural eles instead uses estudavam."} -->
+<!-- grammar-card: {"id":"rule-nos-imperfect-accent","kind":"concept","format":"qa","priority":"optional","sourceSection":"Regular Verbs: -AR","rule":"Regular nós imperfeito endings carry a written accent","example":"In the imperfeito, which person's regular endings carry a written accent?","answer":"Nós: -ávamos and -íamos.","explanation":"Any answer naming nós counts, as in falávamos and comíamos."} -->
 ## Regular Verbs: -ER
 
 For **-er** verbs, remove the ending and add **-ia** endings:
@@ -65,7 +68,8 @@ For **-ir** verbs, the endings are the same as **-er** verbs:
 - **Nós assistíamos novela toda noite** (nohs ah-sees-chee-ah-mooz noh-veh-lah toh-dah noy-chee) — We used to watch soap operas every night
 
 <!-- grammar-card: {"id":"imperfeito-ir","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Regular Verbs: -IR","rule":"Regular -ir verbs share the -er imperfect endings","example":"Nós ___ novela toda noite. (assistir; imperfeito)","answer":"assistíamos","explanation":"Use -ia, -ia, -íamos, -iam, not a new -ir-specific set."} -->
-<!-- grammar-card: {"id":"imperfeito-singular-sharing","kind":"concept","format":"qa","priority":"optional","sourceSection":"Regular Verbs: -IR","rule":"Imperfect eu and third-person singular forms coincide","example":"Can comia or partia alone distinguish eu from ele/ela/você?","answer":"No. The singular forms coincide; context or a subject pronoun identifies the person.","explanation":"The same sharing occurs with -ar falava."} -->
+<!-- grammar-card: {"id":"imperfeito-singular-sharing","kind":"concept","format":"qa","priority":"optional","sourceSection":"Regular Verbs: -IR","rule":"Imperfect eu and third-person singular forms coincide","example":"In the imperfeito, which persons share the same form?","answer":"Eu and você/ele/ela, as in comia and partia; context or a subject pronoun identifies the person.","explanation":"The same sharing occurs with -ar falava.","legacyAliases":[{"rule":"Imperfect eu and third-person singular forms coincide","example":"Can comia or partia alone distinguish eu from ele/ela/você?"}]} -->
+<!-- grammar-card: {"id":"rule-ir-shares-er-endings","kind":"concept","format":"qa","priority":"optional","sourceSection":"Regular Verbs: -IR","rule":"Regular -ir verbs take the same imperfeito endings as -er verbs","example":"Which endings do regular -ir verbs use in the imperfeito?","answer":"The same endings as regular -er verbs.","explanation":"Any answer naming the -er endings counts: -ia, -ia, -íamos, -iam, as in partia and partíamos."} -->
 <!-- quiz: {"type":"multiple-choice","question":"How do you conjugate 'morar' (to live) for 'eu' in the pretérito imperfeito?","options":["morei","morava","moro","moraria"],"answer":1} -->
 
 ## Irregular Verbs — Only Four!
@@ -86,8 +90,8 @@ Four basic irregular verbs to learn here are **ser, ter, ir, pôr**. Their compo
 - **Nós éramos vizinhos** (nohs eh-rah-mooz vee-zeen-yooz) — We were neighbors
 - **Eles eram felizes** (eh-leez eh-rang feh-lee-zeez) — They were happy
 
-<!-- grammar-card: {"id":"imperfeito-ser","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Ser (to be — permanent)","rule":"Four basic imperfect irregulars are ser, ter, ir, and pôr; compounds can inherit their forms","example":"Nós ___ vizinhos quando crianças (ser)","answer":"éramos","explanation":"Ser gives era, era, éramos, eram; retain the acute accent in éramos.","legacyAliases":[{"rule":"The pretérito imperfeito has only 4 irregular verbs: ser (era), ter (tinha), ir (ia), pôr (punha)","example":"Nós ___ vizinhos quando crianças (ser)"}]} -->
-<!-- grammar-card: {"id":"irregular-family-scope","kind":"concept","format":"qa","priority":"optional","sourceSection":"Irregular Verbs — Only Four!","rule":"The four-irregular shortcut names basic verbs, not every compound","example":"Does the four-irregular shortcut mean manter and compor must have regular imperfect stems?","answer":"No. They inherit irregular forms: mantinha and compunha.","explanation":"Learn ser, ter, ir, pôr as basic families; do not make only four an absolute claim about all verbs."} -->
+<!-- grammar-card: {"id":"imperfeito-ser","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Ser (to be — permanent)","rule":"Four basic imperfect irregulars are ser, ter, ir, and pôr; compounds can inherit their forms","example":"Nós ___ vizinhos quando crianças. (ser; imperfeito)","answer":"éramos","explanation":"Ser gives era, era, éramos, eram; retain the acute accent in éramos.","legacyAliases":[{"rule":"The pretérito imperfeito has only 4 irregular verbs: ser (era), ter (tinha), ir (ia), pôr (punha)","example":"Nós ___ vizinhos quando crianças (ser)"},{"rule":"Four basic imperfect irregulars are ser, ter, ir, and pôr; compounds can inherit their forms","example":"Nós ___ vizinhos quando crianças (ser)"}]} -->
+<!-- grammar-card: {"id":"irregular-family-scope","kind":"concept","format":"qa","priority":"optional","sourceSection":"Irregular Verbs — Only Four!","rule":"The four-irregular shortcut names basic verbs, not every compound","example":"Why do manter and compor have irregular imperfect forms despite the four-irregular shortcut?","answer":"They are compounds of ter and pôr and inherit their forms: mantinha, compunha.","explanation":"Learn ser, ter, ir, pôr as basic families; do not make only four an absolute claim about all verbs.","legacyAliases":[{"rule":"The four-irregular shortcut names basic verbs, not every compound","example":"Does the four-irregular shortcut mean manter and compor must have regular imperfect stems?"}]} -->
 ### Ter (to have)
 
 | Pronoun | Conjugation |
@@ -159,7 +163,7 @@ Actions that were in progress at a certain point:
 - **Eu dormia quando o telefone tocou** (eh-oo dor-mee-ah kwan-doo oo teh-leh-foh-nee toh-koh) — I was sleeping when the phone rang
 - **Eles estudavam quando eu cheguei** (eh-leez esh-too-dah-vang kwan-doo eh-oo sheh-gay) — They were studying when I arrived
 
-<!-- grammar-card: {"id":"ongoing-background","kind":"rule","format":"cloze","priority":"essential","sourceSection":"3. Ongoing Actions — \"Was ...ing\"","rule":"Use the imperfeito for ongoing background actions, descriptions, and habitual past actions","example":"Eu ___ quando o telefone tocou (dormir)","answer":"dormia","explanation":"Dormia is the ongoing background; tocou is the completed intervening event."} -->
+<!-- grammar-card: {"id":"ongoing-background","kind":"rule","format":"cloze","priority":"essential","sourceSection":"3. Ongoing Actions — \"Was ...ing\"","rule":"Use the imperfeito for ongoing background actions, descriptions, and habitual past actions","example":"Eu ___ quando o telefone tocou. (dormir; already in progress)","answer":"dormia","explanation":"Dormia is the ongoing background; tocou is the completed intervening event. With two blanks, the progressive estava dormindo (Brazilian) or estava a dormir (European) would express the same idea.","legacyAliases":[{"rule":"Use the imperfeito for ongoing background actions, descriptions, and habitual past actions","example":"Eu ___ quando o telefone tocou (dormir)"}]} -->
 ### 4. Age and Time in the Past
 
 - **Eu tinha dez anos** (eh-oo cheen-yah dez ah-nooz) — I was ten years old
@@ -172,7 +176,7 @@ Actions that were in progress at a certain point:
 - **Eu queria um café, por favor** (eh-oo keh-ree-ah ung kah-feh por fah-vor) — I'd like a coffee, please
 - **Você podia me ajudar?** (voh-seh poh-jee-ah mee ah-zhoo-dar) — Could you help me?
 
-<!-- grammar-card: {"id":"polite-imperfect","kind":"concept","format":"qa","priority":"optional","sourceSection":"5. Polite Requests (Softened Speech)","rule":"The imperfect can soften a present request","example":"Does Eu queria um café, por favor necessarily describe a wish that ended in the past?","answer":"No. It can politely mean I would like a coffee now.","explanation":"Podia in Você podia me ajudar? similarly softens a request."} -->
+<!-- grammar-card: {"id":"polite-imperfect","kind":"concept","format":"qa","priority":"optional","sourceSection":"5. Polite Requests (Softened Speech)","rule":"The imperfect can soften a present request","example":"Why can Eu queria um café, por favor refer to a present wish?","answer":"The imperfect softens requests politely; it means I would like a coffee now.","explanation":"Podia in Você podia me ajudar? similarly softens a request.","legacyAliases":[{"rule":"The imperfect can soften a present request","example":"Does Eu queria um café, por favor necessarily describe a wish that ended in the past?"}]} -->
 <!-- vocab-card: {"id":"vocab-queria-cafe","word":"Eu queria um café, por favor.","meaning":"I would like a coffee, please.","priority":"optional","sourceSection":"5. Polite Requests (Softened Speech)"} -->
 <!-- quiz: {"type":"multiple-choice","question":"'Quando eu era criança, eu ___ sorvete todo dia.' — Which form completes this sentence?","options":["comi","como","comia","comerei"],"answer":2} -->
 

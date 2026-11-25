@@ -12,8 +12,6 @@ Portuguese demonstratives are organized into three groups based on proximity:
 2. **Esse/Essa** — that (near the listener)
 3. **Aquele/Aquela** — that (far from both speaker and listener)
 
-<!-- grammar-card: {"id":"distance-system","kind":"concept","format":"qa","priority":"essential","sourceSection":"The Three Levels of Distance","rule":"The formal three-way system relates distance to speaker and listener","example":"In the three-way distinction, which series refers to something near the speaker, near the listener, and far from both?","answer":"Este/esta near the speaker; esse/essa near the listener; aquele/aquela far from both.","explanation":"This is the distinction taught for careful usage; casual Brazilian speech often merges este and esse."} -->
-
 ### Este/Esta — Near the Speaker
 
 Use **este** (masculine) and **esta** (feminine) when referring to something close to you:
@@ -26,6 +24,7 @@ Use **este** (masculine) and **esta** (feminine) when referring to something clo
 <!-- vocab-card: {"id":"vocab-este","word":"este","meaning":"this (masculine singular; near the speaker in the three-way system)","priority":"optional","sourceSection":"Este/Esta — Near the Speaker"} -->
 <!-- vocab-card: {"id":"vocab-esta","word":"esta","meaning":"this (feminine singular; near the speaker in the three-way system)","priority":"optional","sourceSection":"Este/Esta — Near the Speaker"} -->
 <!-- grammar-card: {"id":"speaker-demonstrative","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Este/Esta — Near the Speaker","rule":"Portuguese has three levels of demonstratives: este (near me), esse (near you), aquele (far from both)","example":"___ livro aqui é meu (this book here is mine)","answer":"Este","explanation":"In the three-way distinction, aqui places the masculine singular livro near the speaker."} -->
+<!-- grammar-card: {"id":"rule-este-speaker","kind":"concept","format":"qa","priority":"essential","sourceSection":"Este/Esta — Near the Speaker","rule":"Este/esta point to something near the speaker","example":"In the careful three-way system, which demonstratives point to something near the speaker?","answer":"Este and esta.","explanation":"Este livro é meu: the book is with me. The neuter form for near the speaker is isto."} -->
 
 ### Esse/Essa — Near the Listener
 
@@ -38,6 +37,7 @@ Use **esse** (masculine) and **essa** (feminine) when referring to something clo
 
 <!-- vocab-card: {"id":"vocab-esse","word":"esse","meaning":"that (masculine singular; near the listener in the three-way system)","priority":"optional","sourceSection":"Esse/Essa — Near the Listener"} -->
 <!-- vocab-card: {"id":"vocab-essa","word":"essa","meaning":"that (feminine singular; near the listener in the three-way system)","priority":"optional","sourceSection":"Esse/Essa — Near the Listener"} -->
+<!-- grammar-card: {"id":"rule-esse-listener","kind":"concept","format":"qa","priority":"essential","sourceSection":"Esse/Essa — Near the Listener","rule":"Esse/essa point to something near the listener","example":"In the careful three-way system, which demonstratives point to something near the listener?","answer":"Esse and essa.","explanation":"Essa bolsa é sua?: the bag is near you. Casual Brazilian speech also uses esse for things near the speaker."} -->
 
 ### Aquele/Aquela — Far from Both
 
@@ -51,6 +51,7 @@ Use **aquele** (masculine) and **aquela** (feminine) when referring to something
 <!-- vocab-card: {"id":"vocab-aquele","word":"aquele","meaning":"that over there (masculine singular)","priority":"optional","sourceSection":"Aquele/Aquela — Far from Both"} -->
 <!-- vocab-card: {"id":"vocab-aquela","word":"aquela","meaning":"that over there (feminine singular)","priority":"optional","sourceSection":"Aquele/Aquela — Far from Both"} -->
 <!-- grammar-card: {"id":"distant-agreement","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Aquele/Aquela — Far from Both","rule":"A distant demonstrative agrees with its noun","example":"___ montanha é linda. (That mountain far from both of us)","answer":"Aquela","explanation":"Montanha is feminine singular; use aquela rather than aquele."} -->
+<!-- grammar-card: {"id":"rule-aquele-far","kind":"concept","format":"qa","priority":"optional","sourceSection":"Aquele/Aquela — Far from Both","rule":"Aquele/aquela point to something far from both speaker and listener","example":"In the careful three-way system, which demonstratives point to something far from both the speaker and the listener?","answer":"Aquele and aquela.","explanation":"Aquele prédio é muito alto: the building is over there. The neuter form is aquilo."} -->
 
 ## Plural Forms
 
@@ -133,7 +134,7 @@ Demonstratives contract with the prepositions **de** (of/from), **em** (in/on), 
 - **Eu penso nisso todo dia** (eh-oo pen-soo nee-soo toh-doo jee-ah) — I think about that every day
 - **Naquela época, eu era jovem** (nah-keh-lah eh-poh-kah eh-oo eh-rah zhoh-veng) — At that time, I was young
 
-<!-- grammar-card: {"id":"em-demonstrative","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Contractions with \"em\"","rule":"Demonstratives contract with prepositions de, em, and a","example":"Eu penso ___ todo dia (I think about that every day)","answer":"nisso","explanation":"Pensar em + isso gives pensar nisso. Only the aquele series contracts with a."} -->
+<!-- grammar-card: {"id":"em-demonstrative","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Contractions with \"em\"","rule":"Demonstratives contract with prepositions de, em, and a","example":"Eu penso ___ todo dia (I think about that every day)","answer":"nisso","explanation":"Pensar em + isso gives pensar nisso. Only the aquele series contracts with a.","hint":"pensar em + isso"} -->
 
 ### Contractions with "a"
 
@@ -162,7 +163,7 @@ In casual Brazilian Portuguese, you'll notice some practical patterns:
 - **Isso** is extremely common as an interjection meaning "exactly!" or "that's it!"
 - **Aquele** is often used to refer to something previously mentioned
 
-<!-- grammar-card: {"id":"demonstrative-discourse","kind":"concept","format":"qa","priority":"optional","sourceSection":"Demonstratives in Everyday Speech","rule":"Demonstratives can point back to discourse or a past period","example":"Must aquele always point to a physically distant object?","answer":"No. It can also refer back to something mentioned or to a remote period, as in naquela época.","explanation":"Demonstratives organize ideas and remembered contexts as well as physical distance."} -->
+<!-- grammar-card: {"id":"demonstrative-discourse","kind":"concept","format":"qa","priority":"optional","sourceSection":"Demonstratives in Everyday Speech","rule":"Demonstratives can point back to discourse or a past period","example":"Besides physical distance, what else can aquele point to?","answer":"Something mentioned earlier, or a remote period, as in naquela época.","explanation":"Demonstratives organize ideas and remembered contexts as well as physical distance.","legacyAliases":[{"rule":"Demonstratives can point back to discourse or a past period","example":"Must aquele always point to a physically distant object?"}]} -->
 
 Common expressions:
 
@@ -172,7 +173,7 @@ Common expressions:
 - **Por isso** (por ee-soo) — Because of that / That's why
 - **Apesar disso** (ah-peh-zar dee-soo) — Despite that
 
-<!-- grammar-card: {"id":"spoken-esse-merge","kind":"concept","format":"qa","priority":"optional","sourceSection":"Demonstratives in Everyday Speech","rule":"Casual Brazilian speech often uses esse for este","example":"Does everyday Brazilian speech always maintain a strict este-versus-esse distance distinction?","answer":"No. Esse/essa and isso often extend to contexts assigned to este/esta and isto in the three-way system.","explanation":"Keep the careful three-way distinction available without calling ordinary Brazilian usage universally wrong."} -->
+<!-- grammar-card: {"id":"spoken-esse-merge","kind":"concept","format":"qa","priority":"optional","sourceSection":"Demonstratives in Everyday Speech","rule":"Casual Brazilian speech often uses esse for este","example":"What often happens to the este-versus-esse distinction in everyday Brazilian speech?","answer":"It often blurs: esse/essa and isso are used where the three-way system has este/esta and isto.","explanation":"Keep the careful three-way distinction available without calling ordinary Brazilian usage universally wrong.","legacyAliases":[{"rule":"Casual Brazilian speech often uses esse for este","example":"Does everyday Brazilian speech always maintain a strict este-versus-esse distance distinction?"}]} -->
 <!-- vocab-card: {"id":"vocab-isso-ai","word":"É isso aí!","meaning":"That is it!; Exactly!","priority":"optional","sourceSection":"Demonstratives in Everyday Speech"} -->
 <!-- vocab-card: {"id":"vocab-nada-disso","word":"nada disso","meaning":"none of that; not at all","priority":"optional","sourceSection":"Demonstratives in Everyday Speech"} -->
 <!-- vocab-card: {"id":"vocab-alem-disso","word":"além disso","meaning":"besides that; moreover","priority":"optional","sourceSection":"Demonstratives in Everyday Speech"} -->

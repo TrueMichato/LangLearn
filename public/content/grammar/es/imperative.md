@@ -62,7 +62,6 @@ Eight high-frequency verbs have irregular short forms for the affirmative **tú*
 
 > 💡 Mnemonic: **Di-Haz-Ve-Ven / Ten-Pon-Sal-Sé** — eight two- or three-letter forms, all shorter than their infinitives.
 
-<!-- grammar-card: {"id":"irregular-command-mnemonic","kind":"concept","format":"qa","priority":"optional","sourceSection":"Irregular Affirmative Tú Commands","rule":"The eight-beat command mnemonic maps short forms to their infinitives","example":"Recall Di-Haz-Ve-Ven / Ten-Pon-Sal-Sé and map each beat to its infinitive.","answer":"Di → decir; haz → hacer; ve → ir; ven → venir; ten → tener; pon → poner; sal → salir; sé → ser.","explanation":"Di = tell; haz = do/make; ve = go; ven = come; ten = have; pon = put; sal = leave; sé = be. Every beat is a command form, with no skipped connective words. These are affirmative tú forms, not negative commands or formal address."} -->
 
 - **¡Ven aquí!** (behn ah-KEE) — Come here!
 - **Haz la tarea** (ahs lah tah-REH-ah) — Do your homework

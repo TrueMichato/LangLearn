@@ -55,6 +55,8 @@ To form the imperfect subjunctive:
 
 ## Irregular Verbs — Still Regular!
 
+<!-- grammar-card: {"id":"rule-imperfect-irregular-source","kind":"concept","format":"qa","priority":"essential","sourceSection":"Irregular Verbs — Still Regular!","rule":"Imperfect-subjunctive irregularity comes from the preterite stem","example":"Where does the irregularity of forms like tivesse come from?","answer":"The irregular preterite stem (tiveram → tive-); the -sse endings stay regular.","explanation":"Any answer naming the eles preterite stem counts: fizeram → fizesse, foram → fosse."} -->
+
 The beauty of the imperfect subjunctive is that even "irregular" verbs follow the same rule. Since they're based on the pretérito perfeito stem, the irregularity comes from the preterite, not the subjunctive endings.
 
 ### Ser/Ir (foram → fo- → fosse)
@@ -133,7 +135,7 @@ The beauty of the imperfect subjunctive is that even "irregular" verbs follow th
 
 ## Usage 1: Hypothetical / Unreal Conditions
 
-<!-- grammar-card: {"id":"imperfect-hypothetical-pairing","kind":"concept","format":"qa","priority":"essential","sourceSection":"Usage 1: Hypothetical / Unreal Conditions","rule":"An unreal present condition can use the imperfect subjunctive","example":"Which forms usually pair in the hypothetical pattern Se eu morasse na praia, seria feliz?","answer":"Imperfect subjunctive in the se clause and conditional in the result clause.","explanation":"The imperfect subjunctive can describe an unreal present situation, not only a past event."} -->
+<!-- grammar-card: {"id":"imperfect-hypothetical-pairing","kind":"concept","format":"qa","priority":"essential","sourceSection":"Usage 1: Hypothetical / Unreal Conditions","rule":"An unreal present condition can use the imperfect subjunctive","example":"In an unreal present condition, which tense goes in the se clause, and which in the result clause?","answer":"Imperfect subjunctive in the se clause and conditional in the result clause.","explanation":"The imperfect subjunctive can describe an unreal present situation, not only a past event.","legacyAliases":[{"rule":"An unreal present condition can use the imperfect subjunctive","example":"Which forms usually pair in the hypothetical pattern Se eu morasse na praia, seria feliz?"}]} -->
 
 The most common use — expressing what would happen if something (that isn't true) were the case:
 
@@ -158,7 +160,7 @@ Expressing what you wish were true right now:
 
 ## Usage 3: Polite Forms
 
-<!-- grammar-card: {"id":"imperfect-politeness","kind":"concept","format":"qa","priority":"optional","sourceSection":"Usage 3: Polite Forms","rule":"A hypothetical condition can soften a request","example":"What does Se você pudesse me ajudar add to a request for help?","answer":"Tentativeness and politeness: if you could help me.","explanation":"A hypothetical condition can soften a request."} -->
+<!-- grammar-card: {"id":"imperfect-politeness","kind":"rule","format":"qa","priority":"optional","sourceSection":"Usage 3: Polite Forms","rule":"A hypothetical condition can soften a request","example":"What does Se você pudesse me ajudar add to a request for help?","answer":"Tentativeness and politeness: if you could help me.","explanation":"A hypothetical condition can soften a request."} -->
 <!-- vocab-card: {"id":"vocab-incomodo","word":"incômodo","meaning":"inconvenience; trouble (Brazilian spelling)","priority":"optional","sourceSection":"Usage 3: Polite Forms"} -->
 
 The imperfect subjunctive makes expressions more polite and tentative:
@@ -170,6 +172,7 @@ The imperfect subjunctive makes expressions more polite and tentative:
 ## Usage 4: After "Como se" (As if)
 
 <!-- grammar-card: {"id":"como-se-application","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Usage 4: After \"Como se\" (As if)","rule":"Como se introduces an imagined comparison with the subjunctive","example":"Ele fala como se ___ brasileiro. (ser)","answer":"fosse","explanation":"Como se introduces an imagined comparison and takes the imperfect subjunctive here."} -->
+<!-- grammar-card: {"id":"rule-como-se-meaning","kind":"concept","format":"qa","priority":"optional","sourceSection":"Usage 4: After \"Como se\" (As if)","rule":"Como se introduces an imagined comparison in the imperfect subjunctive","example":"After como se (as if), what kind of situation does the following verb describe?","answer":"An imagined, unreal comparison; the verb goes in the imperfect subjunctive.","explanation":"Any answer naming an imagined or unreal comparison counts: Ele fala como se fosse brasileiro."} -->
 <!-- vocab-card: {"id":"vocab-como-se","word":"como se","meaning":"as if","priority":"optional","sourceSection":"Usage 4: After \"Como se\" (As if)"} -->
 
 - **Ele fala como se fosse brasileiro** (eh-lee fah-lah koh-moo see foh-see brah-zee-lay-roo) — He speaks as if he were Brazilian
