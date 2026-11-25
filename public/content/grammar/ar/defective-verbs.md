@@ -29,6 +29,7 @@ The **الْفِعْلُ النَّاقِصُ** (al-fiʿl an-nāqiṣ) — defec
 When endings are added, the final weak sound may change: **مَشَى** (mashā) — he walked, but **مَشَيْتُ** (mashaytu) — I walked. In the jussive, the final long vowel often disappears: **لَمْ يَمْشِ** (lam yamshi) — he did not walk.
 
 <!-- grammar-card: {"id":"masha-suffix","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Usage notes","rule":"Defective verbs have a weak final root sound, so final vowels and letters can change with endings.","example":"مَشَى → I walked: ___.","answer":"مَشَيْتُ","explanation":"The weak final part surfaces as -ay- before -tu.","legacyAliases":[{"rule":"Defective verbs have a weak final root sound, so final vowels and letters can change with endings.","example":"Complete “I walked”: ___ (mashaytu)."}]} -->
+<!-- grammar-card: {"id":"rule-defective-jussive-drop","kind":"concept","format":"qa","priority":"essential","sourceSection":"Usage notes","rule":"In the jussive, a defective verb drops its final long vowel, leaving the matching short vowel.","example":"In the jussive (for example after lam), what happens to the final long vowel of a defective verb?","answer":"It drops, leaving only the short vowel (ī → i, ū → u).","explanation":"يَمْشِي (yamshī) becomes لَمْ يَمْشِ (lam yamshi), and يَدْعُو (yadʿū) becomes لَمْ يَدْعُ (lam yadʿu)."} -->
 
 ## Practice patterns
 
@@ -41,12 +42,13 @@ The mood endings are especially important:
 <!-- grammar-card: {"id":"walking-jussive","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Practice patterns","rule":"Final ī loses its yāʾ in the jussive.","example":"He did not walk: لَمْ ___. (يَمْشِي)","answer":"يَمْشِ","explanation":"Short i remains; contrast subjunctive yamshiya."} -->
 
 <!-- grammar-card: {"id":"defective-subjunctive","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Practice patterns","rule":"A final ī verb retains y and adds a in the subjunctive.","example":"He will not walk: لَنْ ___. (يَمْشِي)","answer":"يَمْشِيَ","explanation":"Subjunctive yamshiya differs from jussive yamshi; not all weak-final classes behave identically."} -->
+<!-- grammar-card: {"id":"rule-defective-subjunctive-ya","kind":"concept","format":"qa","priority":"optional","sourceSection":"Practice patterns","rule":"In the subjunctive, a defective verb ending in long ī keeps its yāʾ and adds -a.","example":"In the subjunctive (for example after lan), how does a defective verb ending in long ī, like yamshī, change?","answer":"It keeps the yāʾ and adds -a: yamshiya.","explanation":"لَنْ يَمْشِيَ (lan yamshiya) means he will not walk; contrast the jussive lam yamshi."} -->
 
 These changes are predictable once you know that the final root sound is weak.
 
 <!-- quiz: {"type":"multiple-choice","question":"Which sentence means “he did not walk”?","options":["لَمْ يَمْشِ (lam yamshi)","لَنْ يَمْشِيَ (lan yamshiya)","يَمْشِي (yamshī)","مَشَى (mashā)"],"answer":0} -->
 
-<!-- grammar-card: {"id":"defective-jussive","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Practice patterns","rule":"In the jussive, a defective verb often loses the final long vowel.","example":"Complete “he did not call”: لَمْ ___ (lam ___).","answer":"يَدْعُ","explanation":"Final wāw is deleted from yadʿū; short u remains, not sukūn on the final consonant."} -->
+<!-- grammar-card: {"id":"defective-jussive","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Practice patterns","rule":"In the jussive, a defective verb often loses the final long vowel.","example":"He did not call: لَمْ ___. (يَدْعُو)","answer":"يَدْعُ","explanation":"Final wāw is deleted from yadʿū; short u remains, not sukūn on the final consonant.","legacyAliases":[{"rule":"In the jussive, a defective verb often loses the final long vowel.","example":"Complete “he did not call”: لَمْ ___ (lam ___)."}]} -->
 
 ## Sources
 

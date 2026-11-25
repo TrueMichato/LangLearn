@@ -102,6 +102,23 @@
         "options": ["de el", "del", "de la", "al"],
         "answer": 1
       }
+    },
+    {
+      "lessonKey": "ar/dialect-negation",
+      "position": 1,
+      "rationale": "The question asks for the Egyptian form, but the keyed option used the Levantine u-stem baktub. Egyptian “I write” is بَكْتِبْ (baktib) with an i-stem, so its negation is مَا بَكْتِبْشْ (mā baktibsh), matching the lesson prose and its egyptian-negative-frame card. Only the keyed option's vowel and transliteration change; the question, distractors, and answer key are unchanged.",
+      "original": {
+        "type": "multiple-choice",
+        "question": "Which Egyptian-style phrase means I do not write?",
+        "options": ["مَا بَكْتُبْشْ (mā baktubsh) — I do not write", "لَنْ أَكْتُبَ (lan aktuba) — I will not write", "أَنَا بَكْتُبْ (ʾana baktub) — I write", "عَمْ بَكْتُبْ (ʿam baktub) — I am writing"],
+        "answer": 0
+      },
+      "corrected": {
+        "type": "multiple-choice",
+        "question": "Which Egyptian-style phrase means I do not write?",
+        "options": ["مَا بَكْتِبْشْ (mā baktibsh) — I do not write", "لَنْ أَكْتُبَ (lan aktuba) — I will not write", "أَنَا بَكْتُبْ (ʾana baktub) — I write", "عَمْ بَكْتُبْ (ʿam baktub) — I am writing"],
+        "answer": 0
+      }
     }
   ]
 }

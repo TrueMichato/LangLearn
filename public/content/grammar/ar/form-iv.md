@@ -6,7 +6,7 @@ Form IV is one of the most common ways Arabic turns a basic action into causing,
 
 ## Core idea
 
-The pattern أَفْعَلَ (afʿala) — he caused / made happen begins with أَـ (a-) — causative prefix. Its present is often يُفْعِلُ (yufʿilu) — he causes, and its verbal noun is often إِفْعَالٌ (ifʿālun) — causing / making happen.
+The pattern أَفْعَلَ (afʿala) — he caused / made happen begins with أَـ (a-) — causative prefix. Its present is often يُفْعِلُ (yufʿilu) — he causes, and its verbal noun is often إِفْعَالٌ (ifʿālun) — causing / making happen. Its initial أَ is a hamzat qaṭʿ (cutting hamza): it is always pronounced and written with hamza, unlike the elidable اِ (i-) that begins Forms VII–X.
 
 <!-- vocab-card: {"id":"vocab-akhraja","word":"أَخْرَجَ","reading":"akhraja","meaning":"he brought out","priority":"essential","sourceSection":"Core idea"} -->
 <!-- vocab-card: {"id":"vocab-adkhala","word":"أَدْخَلَ","reading":"adkhala","meaning":"he put in; he made enter","priority":"essential","sourceSection":"Core idea"} -->
@@ -21,6 +21,8 @@ The pattern أَفْعَلَ (afʿala) — he caused / made happen begins with �
 | فَهِمَ (fahima) — he understood | أَفْهَمَ (afhama) — he made understand | cause to understand |
 
 <!-- quiz: {"type":"multiple-choice","question":"What is the usual clue for Form IV?","options":["أَـ (a-) at the beginning, as in أَخْرَجَ (akhraja) — he brought out","تَـ (ta-) at the beginning, as in تَعَلَّمَ (taʿallama) — he learned","اِنْـ (in-) at the beginning, as in اِنْكَسَرَ (inkasara) — it broke","A final weak letter, as in مَشَى (mashā) — he walked"],"answer":0} -->
+<!-- grammar-card: {"id":"rule-form-iv-causative","kind":"concept","format":"qa","priority":"essential","sourceSection":"Core idea","rule":"Form IV most commonly makes a Form I verb causative.","example":"What meaning does Form IV (afʿala) most commonly add to a Form I verb?","answer":"Causative: making someone or something do the Form I action.","explanation":"دَخَلَ (dakhala), he entered → أَدْخَلَ (adkhala), he put in (made enter)."} -->
+<!-- grammar-card: {"id":"rule-form-iv-hamza","kind":"concept","format":"qa","priority":"optional","sourceSection":"Core idea","rule":"The initial hamza of Form IV is a cutting hamza (hamzat qaṭʿ).","example":"Is the initial hamza of a Form IV past verb a joining hamza (waṣl) or a cutting hamza (qaṭʿ)?","answer":"A cutting hamza (hamzat qaṭʿ): it is always pronounced.","explanation":"وَأَرْسَلَ (wa-arsala) keeps its a-, while Form VIII’s اِ elides: وَاقْتَرَبَ (wa-qtaraba)."} -->
 
 ## Why it matters
 

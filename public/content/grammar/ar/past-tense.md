@@ -9,6 +9,7 @@ The Arabic past tense, al-māḍī, is built mostly with suffixes. It often feel
 The base past form **كَتَبَ** (kataba) — he wrote is the dictionary-style third masculine singular. Other subjects attach endings to that base.
 
 <!-- grammar-card: {"id":"past-dictionary-form","kind":"concept","format":"qa","priority":"essential","sourceSection":"Core idea","rule":"The dictionary-style Arabic verb form is third masculine singular past","example":"What person and tense does the dictionary form كَتَبَ represent?","answer":"Third-person masculine singular past: he wrote.","explanation":"It is not an infinitive. The past normally describes completed events."} -->
+<!-- grammar-card: {"id":"rule-past-suffixes","kind":"concept","format":"qa","priority":"essential","sourceSection":"Core idea","rule":"The past tense shows its subject mainly with suffixes","example":"How does the Arabic past tense mainly show who did the action?","answer":"With suffixes added to the base form.","explanation":"قَرَأَ (qaraʾa, he read) becomes قَرَأَتْ (qaraʾat, she read) by adding a suffix."} -->
 
 ## Forms and examples
 
@@ -27,6 +28,7 @@ The base past form **كَتَبَ** (kataba) — he wrote is the dictionary-styl
 <!-- grammar-card: {"id":"past-second-feminine","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Forms and examples","rule":"The past suffix ـتِ addresses one female","example":"Complete “you wrote” to one female: كَتَبْ___.","answer":"تِ","explanation":"Katabti uses -ti. The short vowel carries the addressee contrast."} -->
 <!-- grammar-card: {"id":"past-third-feminine","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Forms and examples","rule":"Third feminine singular past adds ـتْ to this base","example":"Complete “she wrote”: كَتَبَ___.","answer":"تْ","explanation":"Katabat has a final consonantal t, unlike katabti, you wrote to one female."} -->
 <!-- grammar-card: {"id":"past-third-plural","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Forms and examples","rule":"The illustrated third masculine plural past ends in ـُوا","example":"Complete “they wrote” for a masculine or mixed group: كَتَبُ___.","answer":"وا","explanation":"كَتَبُوا is pronounced katabū; the final alif is not separately pronounced."} -->
+<!-- grammar-card: {"id":"rule-past-t-vowels","kind":"concept","format":"qa","priority":"essential","sourceSection":"Forms and examples","rule":"The past endings for I, you (m.) and you (f.) differ only in their final vowel","example":"In the past tense, what distinguishes the endings for “I”, “you” to one male and “you” to one female?","answer":"Only the final vowel: -tu (I), -ta (you, m.), -ti (you, f.).","explanation":"All three add t to the base; the short vowel after it tells you who acted."} -->
 
 <!-- quiz: {"type": "multiple-choice", "question": "Which suffix marks “I” in كَتَبْتُ (katabtu) — I wrote?", "options": ["ـتُ (-tu)", "ـتَ (-ta)", "ـتِ (-ti)", "ـنَا (-nā)"], "answer": 0} -->
 
@@ -35,6 +37,7 @@ The base past form **كَتَبَ** (kataba) — he wrote is the dictionary-styl
 The past tense normally describes completed events. **ذَهَبْتُ إِلَى الْمَدْرَسَةِ** (dhahabtu ilā al-madrasati) — I went to the school. The suffix **ـتُ** (-tu) — I did is your friend.
 
 <!-- grammar-card: {"id":"past-base-application","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Usage notes","rule":"The basic past form فَعَلَ (faʿala) often represents “he did.”","example":"Return كَتَبْتُ to the third masculine singular past, “he wrote”: ___.","answer":"كَتَبَ","explanation":"Kataba is the base form of this verb, without the first-person suffix.","legacyAliases":[{"rule":"The basic past form فَعَلَ (faʿala) often represents “he did.”","example":"Complete “he wrote”: ___ (kataba)."}]} -->
+<!-- grammar-card: {"id":"rule-past-completed","kind":"concept","format":"qa","priority":"optional","sourceSection":"Usage notes","rule":"The Arabic past tense normally describes completed events","example":"What kind of event does the Arabic past tense normally describe?","answer":"A completed event.","explanation":"ذَهَبْتُ إِلَى الْمَدْرَسَةِ (dhahabtu ilā al-madrasati) is I went to the school: the going is finished."} -->
 
 ## Practice patterns
 

@@ -1,18 +1,12 @@
 import type { ReactNode, Ref } from 'react';
 import { filledBlankParts, hasBlank } from '../../lib/grammar-cards';
+import { grammarDirection } from '../../lib/grammar-direction';
 import { isReviewedGrammarLesson } from '../../lib/grammar-review-scope';
 import type { GrammarReviewItem } from '../../lib/lesson-review';
-import { isRTL, rtlProps } from '../../lib/rtl';
+import { isRTL } from '../../lib/rtl';
 
 type FaceFields = Pick<GrammarReviewItem, 'prompt' | 'hint' | 'answer' | 'explanation' | 'rule'> &
   Partial<Pick<GrammarReviewItem, 'format' | 'provenance' | 'learnerEdited'>>;
-
-// An English question can quote Arabic (and an Arabic example can quote English).
-function direction(text: string, language: string) {
-  const firstLetter = text.match(/\p{Letter}/u)?.[0];
-  if (!firstLetter) return rtlProps(language);
-  return { dir: /\p{Script=Arabic}/u.test(firstLetter) ? 'rtl' : 'ltr' };
-}
 
 const mainText = 'whitespace-pre-line break-words text-[length:var(--app-font-size)] leading-relaxed text-slate-800 dark:text-slate-100';
 const supportingText = 'whitespace-pre-line break-words text-[length:var(--app-font-size)] leading-relaxed text-slate-600 dark:text-slate-300';
@@ -38,11 +32,11 @@ export default function GrammarFace({ card, side, language, lessonId, focusRef, 
     const optional = hint && isReviewedGrammarLesson(language, lessonId) &&
       card.provenance === 'authored' && !card.learnerEdited && !oldPrimer;
     return <div className="space-y-2">
-      <p {...focus} className={`${mainText} focus-ring font-medium`} {...direction(question, language)}>{question}</p>
+      <p {...focus} className={`${mainText} focus-ring font-medium`} {...grammarDirection(question, language)}>{question}</p>
       {optional ? <details>
         <summary className={disclosure}>Show a hint</summary>
-        <p className={supportingText} {...direction(hint, language)}>{hint}</p>
-      </details> : hint && <p className={supportingText} {...direction(hint, language)}>{hint}</p>}
+        <p className={supportingText} {...grammarDirection(hint, language)}>{hint}</p>
+      </details> : hint && <p className={supportingText} {...grammarDirection(hint, language)}>{hint}</p>}
     </div>;
   }
 
@@ -52,20 +46,20 @@ export default function GrammarFace({ card, side, language, lessonId, focusRef, 
   const parts = cloze && answer ? filledBlankParts(prompt, answer) : null;
   return <div className="space-y-3">
     {parts ? (
-      <p {...focus} className={`${mainText} focus-ring`} {...direction(parts.map((part) => part.text).join(''), language)}>
+      <p {...focus} className={`${mainText} focus-ring`} {...grammarDirection(parts.map((part) => part.text).join(''), language)}>
         {parts.map((part, i) => part.target
           ? <strong key={i} className={`text-indigo-700 dark:text-indigo-300 ${isRTL(language) ? 'font-normal underline underline-offset-4' : 'font-bold'}`}>{part.text}</strong>
           : part.text)}
       </p>
     ) : <>
-      <p className={supportingText} {...direction(question, language)}>{question}</p>
-      <p {...focus} className={`${mainText} focus-ring font-semibold`} {...direction(answer, language)}>{answer || 'Your answer'}</p>
+      <p className={supportingText} {...grammarDirection(question, language)}>{question}</p>
+      <p {...focus} className={`${mainText} focus-ring font-semibold`} {...grammarDirection(answer, language)}>{answer || 'Your answer'}</p>
     </>}
     {comparison}
-    {reason && <p className={supportingText} {...direction(reason, language)}>{reason}</p>}
+    {reason && <p className={supportingText} {...grammarDirection(reason, language)}>{reason}</p>}
     {additionalRule && <details>
       <summary className={disclosure}>More about the rule</summary>
-      <p className={supportingText} {...direction(rule, language)}>{rule}</p>
+      <p className={supportingText} {...grammarDirection(rule, language)}>{rule}</p>
     </details>}
   </div>;
 }

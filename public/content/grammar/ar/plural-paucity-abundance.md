@@ -8,6 +8,9 @@ Some Arabic nouns have more than one broken plural. Traditional grammar may clas
 
 The distinction is useful for reading older and formal texts, but modern usage often treats the common plural as neutral. Learn the pair when a noun has one, and let context decide how strongly “few” or “many” is meant.
 
+<!-- grammar-card: {"id":"rule-paucity-meaning","kind":"concept","format":"qa","priority":"essential","sourceSection":"Core idea","rule":"A plural of paucity (jamʿ al-qilla) is traditionally associated with a small number.","example":"What number does a plural of paucity (jamʿ al-qilla) traditionally suggest?","answer":"A small number; classical grammar puts it at about three to ten.","explanation":"أَشْهُرٌ (ashhurun) traditionally means a few months; modern usage often treats the common plural as neutral."} -->
+<!-- grammar-card: {"id":"rule-abundance-meaning","kind":"concept","format":"qa","priority":"optional","sourceSection":"Core idea","rule":"A plural of abundance (jamʿ al-kathra) is traditionally associated with a larger or general number.","example":"What number does a plural of abundance (jamʿ al-kathra) traditionally suggest?","answer":"A larger number, or the plural in general; classically more than ten.","explanation":"شُهُورٌ (shuhūrun) is months or many months; context decides how strongly “many” is meant."} -->
+
 ## Forms and examples
 
 The “few” and “many” glosses below indicate traditional pattern classifications, not obligatory meanings in every sentence. Forms such as أَكْتُبٌ are uncommon in ordinary modern usage; كُتُبٌ is the normal neutral plural.
@@ -30,7 +33,6 @@ The “few” and “many” glosses below indicate traditional pattern classifi
 ## Usage notes
 
 <!-- grammar-card: {"id":"paucity-pattern-set","kind":"concept","format":"qa","priority":"optional","sourceSection":"Usage notes","rule":"Four traditional patterns commonly express paucity.","example":"Which four paucity patterns are listed in the usage notes?","answer":"أَفْعُلٌ، أَفْعَالٌ، أَفْعِلَةٌ، فِعْلَةٌ.","explanation":"These are pattern labels, not dictionary vocabulary or a guarantee that every noun has a current few/many pair."} -->
-<!-- grammar-card: {"id":"abundance-pattern-set","kind":"concept","format":"qa","priority":"optional","sourceSection":"Usage notes","rule":"Abundance has more patterns than the four common paucity patterns.","example":"Which three abundance-pattern examples are listed here?","answer":"فُعُولٌ، فِعَالٌ، فَوَاعِلُ.","explanation":"They help identify traditional classifications; actual noun plurals must still be checked in real usage."} -->
 
 Common paucity patterns include **أَفْعُلٌ** (afʿulun), **أَفْعَالٌ** (afʿālun), **أَفْعِلَةٌ** (afʿilatun), and **فِعْلَةٌ** (fiʿlatun). Abundance patterns are more numerous, such as **فُعُولٌ** (fuʿūlun), **فِعَالٌ** (fiʿālun), and **فَوَاعِلُ** (fawāʿilu). Not every noun has a living contrast, so check real usage.
 
@@ -39,6 +41,8 @@ Common paucity patterns include **أَفْعُلٌ** (afʿulun), **أَفْعَ�
 ## Practice patterns
 
 Use the contrast as a reading clue, not as a rigid translation rule:
+
+<!-- grammar-card: {"id":"abundance-months-pattern","kind":"rule","format":"qa","priority":"optional","sourceSection":"Practice patterns","rule":"The plural شُهُورٌ follows the abundance pattern فُعُولٌ.","example":"In مَرَّتْ شُهُورٌ كَثِيرَةٌ (many months passed), which broken-plural pattern does the noun follow?","answer":"فُعُولٌ","explanation":"Match the consonants of شُهُورٌ to the pattern's placeholders: sh-h-r occupy f-ʿ-l. The adjective supplies the explicit quantity; the pattern alone does not require a fixed count."} -->
 
 - **عِنْدِي أَشْهُرٌ قَلِيلَةٌ** (ʿindī ashhurun qalīlatun) — I have a few months.
 - **مَرَّتْ شُهُورٌ كَثِيرَةٌ** (marrat shuhūrun kathīratun) — many months passed.

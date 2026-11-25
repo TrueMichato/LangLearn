@@ -9,6 +9,7 @@ Gulf Arabic, often called Khaleeji, covers related varieties around the Arabian 
 Common Gulf learner-notice points include **شْلُونَكْ؟** (shlōnak?) — how are you, to a male, **وَيْنْ؟** (wēn?) — where?, and **أَبِي** (abī) — I want. In many Gulf varieties, **ق** (qāf) — q may be pronounced g in some words, though usage varies.
 
 <!-- grammar-card: {"id":"gulf-qaf-scope","kind":"concept","format":"qa","priority":"essential","sourceSection":"Core idea","rule":"Gulf qāf may be g, depending on variety and word.","example":"Is pronouncing ق as g obligatory in every Gulf variety and every word?","answer":"No. It is common in many Gulf varieties but varies by community, word and context.","explanation":"Khaleeji is a regional grouping, not one uniform accent."} -->
+<!-- grammar-card: {"id":"rule-gulf-qaf-g","kind":"concept","format":"qa","priority":"essential","sourceSection":"Core idea","rule":"In many Gulf varieties, ق (qāf) is often pronounced g in everyday words.","example":"In many Gulf Arabic varieties, how is the MSA letter ق (qāf) often pronounced in everyday words?","answer":"As g.","explanation":"This is common but not universal: it varies by community, word and context."} -->
 <!-- vocab-card: {"id":"vocab-abi","word":"أَبِي","reading":"abī","meaning":"I want (in many Gulf varieties)","priority":"essential","sourceSection":"Core idea"} -->
 <!-- vocab-card: {"id":"vocab-wen","word":"وَيْنْ","reading":"wēn","meaning":"where (Gulf)","priority":"optional","sourceSection":"Forms and examples"} -->
 <!-- vocab-card: {"id":"vocab-ilhin","word":"الْحِينْ","reading":"il-ḥīn","meaning":"now (Gulf)","priority":"essential","sourceSection":"Forms and examples"} -->
@@ -32,7 +33,7 @@ Common Gulf learner-notice points include **شْلُونَكْ؟** (shlōnak?) �
 
 MSA **أُرِيدُ** (urīdu) — I want corresponds to Gulf **أَبِي** (abī) — I want in many everyday contexts.
 
-<!-- grammar-card: {"id":"gulf-want","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Usage notes","rule":"Gulf أَبِي (abī) — I want can introduce a desired action.","example":"Complete “I want to go”: ___ أَرُوحْ (___ arūḥ).","answer":"أَبِي","explanation":"Abī arūḥ occurs in many Gulf contexts, not every local variety."} -->
+<!-- grammar-card: {"id":"gulf-want","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Usage notes","rule":"Gulf أَبِي (abī) — I want can introduce a desired action.","example":"Complete Gulf “I want to go”: ___ أَرُوحْ (___ arūḥ).","answer":"أَبِي","explanation":"Abī arūḥ occurs in many Gulf contexts, not every local variety. Many Gulf and Arabian speakers say أَبْغَى أَرُوحْ (abghā arūḥ) instead; either is a correct Gulf answer.","legacyAliases":[{"rule":"Gulf أَبِي (abī) — I want can introduce a desired action.","example":"Complete “I want to go”: ___ أَرُوحْ (___ arūḥ)."}]} -->
 
 ## Practice patterns
 

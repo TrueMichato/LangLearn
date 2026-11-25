@@ -6,9 +6,12 @@ MSA often says أَسْتَطِيعُ (astaṭīʿu), "I am able," followed by �
 
 ## Core idea
 
-<!-- grammar-card: {"id":"ability-not-literal-container","kind":"concept","format":"qa","priority":"optional","sourceSection":"Core idea","rule":"Levantine فِينِي has an idiomatic ability use.","example":"Why is a literal “in me” translation misleading for فِينِي رُوح?","answer":"The expression means I can go, not that something is located inside me.","explanation":"The construction uses fī plus a pronoun to express ability."} -->
+<!-- grammar-card: {"id":"ability-not-literal-container","kind":"rule","format":"qa","priority":"optional","sourceSection":"Core idea","rule":"Levantine فِينِي has an idiomatic ability use.","example":"Why is a literal “in me” translation misleading for فِينِي رُوح?","answer":"The expression means I can go, not that something is located inside me.","explanation":"The construction uses fī plus a pronoun to express ability."} -->
 
 Most dialects use a form like "I can" directly before the main verb. Egyptian, Gulf, Iraqi, and Maghrebi commonly use q-d-r forms; Levantine often uses فِينِي (fīnī), literally "in me," as a practical way to say "I can."
+
+<!-- grammar-card: {"id":"rule-qdr-root","kind":"concept","format":"qa","priority":"essential","sourceSection":"Core idea","rule":"Egyptian, Gulf, Iraqi and Moroccan-style ability verbs commonly use the root ق-د-ر (q-d-r).","example":"Which root do the Egyptian, Gulf, Iraqi and Moroccan-style ability verbs commonly use?","answer":"ق-د-ر (q-d-r)","explanation":"Egyptian أَقْدَر (aʾdar), Gulf أَقْدَر (agdar), Iraqi أَگْدَر (agdar) and Moroccan-style نَقْدَر (nqdar) all mean “I can”; Egyptian pronounces the q as ʾ and Gulf/Iraqi as g."} -->
+<!-- grammar-card: {"id":"rule-levantine-fi-ability","kind":"concept","format":"qa","priority":"optional","sourceSection":"Core idea","rule":"Levantine Arabic expresses “can” with فِي (fī) plus pronoun endings.","example":"In Levantine Arabic, which word takes pronoun endings to express “can”?","answer":"فِي (fī)","explanation":"فِينِي (fīnī) — I can, literally “in me”; فِيك؟ (fīk?) — can you?"} -->
 
 ## Forms and examples
 
@@ -36,6 +39,7 @@ These are illustrative local forms, not universal regional standards. Spellings 
 After the ability expression, dialects normally use the plain main verb without MSA أَنْ (an). Egyptian negation wraps the q-d-r form with مَا...ش (ma...sh), while Levantine negates فِينِي (fīnī) with مَا (mā).
 
 <!-- grammar-card: {"id":"direct-main-verb","kind":"rule","format":"qa","priority":"essential","sourceSection":"Usage notes","rule":"Dialect ability expressions are usually followed directly by the main verb, without MSA أَنْ.","example":"Using أَقْدَر and أَسَاعْدَك, build Egyptian “I can help you.”","answer":"أَقْدَر أَسَاعْدَك","explanation":"The main verb follows directly; do not insert the MSA complementizer أَنْ into this dialect pattern.","legacyAliases":[{"rule":"Dialect ability expressions are usually followed directly by the main verb, without MSA أَنْ.","example":"أَقْدَر أَسَاعْدَك (aʾdar asāʿdak)"}]} -->
+<!-- grammar-card: {"id":"rule-no-an-after-ability","kind":"concept","format":"qa","priority":"essential","sourceSection":"Usage notes","rule":"Dialect ability expressions are followed directly by the main verb, without MSA أَنْ.","example":"In dialect ability expressions, which MSA particle is normally left out before the main verb?","answer":"أَنْ (an)","explanation":"Egyptian أَقْدَر أَرُوح (aʾdar arūḥ) — I can go, versus MSA أَسْتَطِيعُ أَنْ أَذْهَبَ (astaṭīʿu an adhhaba)."} -->
 
 ## Practice patterns
 

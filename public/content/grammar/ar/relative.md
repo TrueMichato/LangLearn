@@ -13,6 +13,7 @@ The main singular forms are **الَّذِي** (alladhī) — who / which, mascu
 <!-- vocab-card: {"id":"vocab-alladhina","word":"الَّذِينَ","reading":"alladhīna","meaning":"who; masculine or mixed human plural relative pronoun","priority":"optional","sourceSection":"Core idea"} -->
 <!-- vocab-card: {"id":"vocab-allati-plural","word":"اللَّاتِي","reading":"allātī","meaning":"who; feminine human plural relative pronoun","priority":"optional","sourceSection":"Core idea"} -->
 <!-- grammar-card: {"id":"relative-human-plurals","kind":"concept","format":"qa","priority":"essential","sourceSection":"Core idea","rule":"Human plural relative pronouns distinguish masculine/mixed from feminine","example":"Which forms taught here refer to masculine/mixed and feminine human plurals, respectively?","answer":"الَّذِينَ and اللَّاتِي.","explanation":"Keep the human-plural restriction; do not extend these forms indiscriminately to non-human plurals."} -->
+<!-- grammar-card: {"id":"rule-relative-agreement","kind":"concept","format":"qa","priority":"optional","sourceSection":"Core idea","rule":"A singular relative pronoun agrees in gender with its definite antecedent.","example":"What does the choice between the masculine and feminine singular relative pronouns depend on?","answer":"The gender of the definite antecedent.","explanation":"الرَّجُلُ الَّذِي (ar-rajulu alladhī) but الْمَرْأَةُ الَّتِي (al-marʾatu allatī)."} -->
 
 ## Forms and examples
 
@@ -40,11 +41,12 @@ Arabic often keeps a pronoun inside the relative clause when English would not:
 - **الْكِتَابُ الَّذِي قَرَأْتُهُ** (al-kitābu alladhī qaraʾtuhu) — the book that I read.
 - The suffix **ـهُ** (-hu) — it refers back to **الْكِتَابُ** (al-kitābu) — the book.
 
-<!-- grammar-card: {"id":"resumptive-object","kind":"concept","format":"qa","priority":"essential","sourceSection":"Practice patterns","rule":"A resumptive object pronoun can refer back to the antecedent inside the relative clause","example":"What does ـهُ refer to in الْكِتَابُ الَّذِي قَرَأْتُهُ?","answer":"The book: literally the book that I read it.","explanation":"English normally omits this object pronoun. Arabic retains it in the construction illustrated here."} -->
+<!-- grammar-card: {"id":"resumptive-object","kind":"rule","format":"qa","priority":"essential","sourceSection":"Practice patterns","rule":"A resumptive object pronoun can refer back to the antecedent inside the relative clause","example":"What does ـهُ refer to in الْكِتَابُ الَّذِي قَرَأْتُهُ?","answer":"The book: literally the book that I read it.","explanation":"English normally omits this object pronoun. Arabic retains it in the construction illustrated here."} -->
 
 <!-- quiz: {"type": "multiple-choice", "question": "What often happens with indefinite nouns in Arabic relative clauses?", "options": ["No relative pronoun is used", "They must use الَّذِي (alladhī)", "They become dual", "They require future tense"], "answer": 0} -->
 
 <!-- grammar-card: {"id":"relative-feminine","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Practice patterns","rule":"Use الَّتِي (allatī) — who/which for a definite feminine singular antecedent.","example":"Complete “the car that I saw”: السَّيَّارَةُ ___ رَأَيْتُهَا.","answer":"الَّتِي","explanation":"Allatī agrees with the feminine singular car. The suffix -hā also refers back to it.","legacyAliases":[{"rule":"Use الَّتِي (allatī) — who/which for a definite feminine singular antecedent.","example":"Complete “the car that I saw”: السَّيَّارَةُ ___ رَأَيْتُهَا (as-sayyāratu ___ raʾaytuhā)."}]} -->
+<!-- grammar-card: {"id":"rule-resumptive-pronoun","kind":"concept","format":"qa","priority":"essential","sourceSection":"Practice patterns","rule":"A relative clause usually repeats an object antecedent with a resumptive pronoun.","example":"When the antecedent is the object inside an Arabic relative clause, what does the clause usually contain that English omits?","answer":"A resumptive pronoun suffix referring back to the antecedent.","explanation":"الْكِتَابُ الَّذِي قَرَأْتُهُ (al-kitābu alladhī qaraʾtuhu): literally the book that I read it."} -->
 
 ## Sources
 

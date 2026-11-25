@@ -8,6 +8,8 @@ A noun of instrument, **اِسْمُ الْآلَةِ** (ismu al-ālati), names 
 
 Instrument nouns connect vocabulary to roots. From **فَتَحَ** (fataḥa) — he opened, Arabic forms **مِفْتَاحٌ** (miftāḥun) — key, the tool used for opening. Not every modern tool is perfectly predictable, but the patterns are very useful.
 
+<!-- grammar-card: {"id":"rule-instrument-meaning","kind":"concept","format":"qa","priority":"essential","sourceSection":"Core idea","rule":"اِسْمُ الْآلَةِ names the tool or device used to perform an action.","example":"What does a noun of instrument (ism al-āla) name?","answer":"The tool or device used to perform an action.","explanation":"مِفْتَاحٌ (miftāḥun), key, is the tool for opening, from فَتَحَ (fataḥa), he opened."} -->
+
 ## Forms and examples
 
 | Pattern | Root verb | Instrument noun | Example |
@@ -27,6 +29,7 @@ Instrument nouns connect vocabulary to roots. From **فَتَحَ** (fataḥa) �
 <!-- vocab-card: {"id":"vocab-ghasala","word":"غَسَلَ","reading":"ghasala","meaning":"he washed; to wash","priority":"optional","sourceSection":"Forms and examples"} -->
 <!-- grammar-card: {"id":"broom-pattern","kind":"rule","format":"qa","priority":"optional","sourceSection":"Forms and examples","rule":"Common instrument nouns use several patterns, not one universal shape.","example":"Which instrument pattern fits مِكْنَسَةٌ?","answer":"مِفْعَلَةٌ","explanation":"The broom noun has mi-, a closed first root syllable, and final -a(tun); غَسَّالَةٌ instead illustrates فَعَّالَةٌ."} -->
 <!-- grammar-card: {"id":"washing-machine-pattern","kind":"rule","format":"qa","priority":"optional","sourceSection":"Forms and examples","rule":"The modern device غَسَّالَةٌ illustrates a tool pattern without initial mi-.","example":"Which pattern does غَسَّالَةٌ follow?","answer":"فَعَّالَةٌ","explanation":"The doubled س and long ā give faʿʿāla. Instrument vocabulary is not restricted to the two mi- patterns."} -->
+<!-- grammar-card: {"id":"rule-mi-prefix","kind":"concept","format":"qa","priority":"optional","sourceSection":"Forms and examples","rule":"The common instrument patterns مِفْعَالٌ and مِفْعَلَةٌ both begin with mi-.","example":"Which prefix begins both common instrument patterns, seen in the words for key and broom?","answer":"مِـ (mi-).","explanation":"مِفْتَاحٌ (miftāḥun) and مِكْنَسَةٌ (miknasatun) both begin with mi-; غَسَّالَةٌ (ghassālatun) shows that not every tool pattern does."} -->
 
 <!-- quiz: {"type": "multiple-choice", "question": "Which noun is the instrument noun from فَتَحَ (fataḥa), to open?", "options": ["مِفْتَاحٌ (miftāḥun)", "فَاتِحٌ (fātiḥun)", "مَفْتُوحٌ (maftūḥun)", "فَتْحٌ (fatḥun)"], "answer": 0} -->
 
@@ -37,6 +40,7 @@ Instrument nouns often appear after **بِـ** when you say what tool was used: 
 <!-- vocab-card: {"id":"vocab-qalam","word":"قَلَمٌ","reading":"qalamun","meaning":"pen","priority":"optional","sourceSection":"Usage notes"} -->
 <!-- grammar-card: {"id":"opening-instrument","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Usage notes","rule":"اِسْمُ الْآلَةِ names the tool used to perform an action, often on patterns like مِفْعَالٌ and مِفْعَلَةٌ.","example":"From فَتَحَ, give the instrument noun meaning key, in indefinite nominative form: ___.","answer":"مِفْتَاحٌ","explanation":"مِفْتَاحٌ (miftāḥun) follows مِفْعَالٌ and names the tool for opening, not the opener or the opened thing.","legacyAliases":[{"rule":"اِسْمُ الْآلَةِ names the tool used to perform an action, often on patterns like مِفْعَالٌ and مِفْعَلَةٌ.","example":"فَتَحَ becomes مِفْتَاحٌ"}]} -->
 <!-- grammar-card: {"id":"instrument-not-all-predictable","kind":"concept","format":"qa","priority":"essential","sourceSection":"Usage notes","rule":"Instrument patterns help recognition but do not predict every tool name.","example":"Must every tool name, including قَلَمٌ, transparently follow a common derived instrument pattern?","answer":"No. Some tool names must be learned lexically and checked in a dictionary.","explanation":"A word can name an instrument semantically without being a predictable derivation on مِفْعَالٌ or مِفْعَلَةٌ."} -->
+<!-- grammar-card: {"id":"rule-bi-instrument","kind":"concept","format":"qa","priority":"optional","sourceSection":"Usage notes","rule":"بِـ commonly introduces the instrument used for an action.","example":"Which preposition commonly introduces the tool used for an action, as in “with the pen”?","answer":"بِـ (bi-), meaning with.","explanation":"كَتَبْتُ بِالْقَلَمِ (katabtu bi-l-qalami): I wrote with the pen. The tool noun after bi- is genitive."} -->
 
 ## Practice patterns
 

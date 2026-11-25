@@ -7,6 +7,7 @@ import japaneseConditionalLesson from '../../public/content/grammar/ja/condition
 import arabicMasdarLesson from '../../public/content/grammar/ar/masdar.md?raw';
 import arabicNudbaLesson from '../../public/content/grammar/ar/istighatha-nudba.md?raw';
 import spanishPrepositionsLesson from '../../public/content/grammar/es/prepositions.md?raw';
+import arabicNegationLesson from '../../public/content/grammar/ar/dialect-negation.md?raw';
 import baselineJson from './fixtures/grammar-retention-legacy.json';
 import {
   APPROVED_QUIZ_CORRECTIONS,
@@ -26,6 +27,7 @@ const SOURCES: Record<string, string> = {
   'ja/taekim-desire-volition': japaneseDesireLesson,
   'ar/istighatha-nudba': arabicNudbaLesson,
   'es/prepositions': spanishPrepositionsLesson,
+  'ar/dialect-negation': arabicNegationLesson,
 };
 
 /** Mutate one real comment; payload reading and validation use the shared parser. */
@@ -105,6 +107,17 @@ describe('approved real-source quiz corrections', () => {
     expect(quiz.options[quiz.answer]).toBe('del');
   });
 
+  it('keys the Egyptian i-stem negation مَا بَكْتِبْشْ, not Levantine-stem baktubsh', () => {
+    const quiz = lessonQuizPayloads(arabicNegationLesson)[0] as AuthoredQuizPayload;
+    const correction = APPROVED_QUIZ_CORRECTIONS.find((entry) => entry.lessonKey === 'ar/dialect-negation')!;
+    expect(correction.original.options[0]).toBe('مَا بَكْتُبْشْ (mā baktubsh) — I do not write');
+    expect(quiz).toEqual(correction.corrected);
+    expect(quiz.options[quiz.answer]).toBe('مَا بَكْتِبْشْ (mā baktibsh) — I do not write');
+    expect(quiz.question).toBe(correction.original.question);
+    expect(quiz.options.slice(1)).toEqual(correction.original.options.slice(1));
+    expect(quiz.answer).toBe(0);
+  });
+
   for (const correction of APPROVED_QUIZ_CORRECTIONS) {
     describe(`${correction.lessonKey} quiz ${correction.position}`, () => {
       const source = SOURCES[correction.lessonKey];
@@ -158,8 +171,9 @@ describe('approved real-source quiz corrections', () => {
       });
 
       it('keeps every unrelated quiz field frozen', () => {
-        const first = lessonQuizPayloads(corrected)[0] as AuthoredQuizPayload;
-        const changed = replaceQuizPayload(corrected, 1, {
+        const unrelated = correction.position === 1 ? 2 : 1;
+        const first = lessonQuizPayloads(corrected)[unrelated - 1] as AuthoredQuizPayload;
+        const changed = replaceQuizPayload(corrected, unrelated, {
           ...first, answer: (first.answer + 1) % first.options.length,
         });
         expect(validateLegacyLesson(changed, baseline, correction.lessonKey).join('\n'))
@@ -168,9 +182,10 @@ describe('approved real-source quiz corrections', () => {
 
       it('still rejects reordered, added, or removed quizzes', () => {
         const quizzes = lessonQuizPayloads(corrected);
+        const other = correction.position === 1 ? 2 : 1;
         const reordered = replaceQuizPayload(
-          replaceQuizPayload(corrected, 1, quizzes[correction.position - 1]),
-          correction.position, quizzes[0],
+          replaceQuizPayload(corrected, other, quizzes[correction.position - 1]),
+          correction.position, quizzes[other - 1],
         );
         const added = `${corrected}\n<!-- quiz: ${JSON.stringify(quizzes[0])} -->`;
         const removed = replaceQuizPayload(corrected, 1);

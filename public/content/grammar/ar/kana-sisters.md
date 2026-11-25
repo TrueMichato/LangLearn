@@ -8,6 +8,8 @@ Kāna and her sisters enter nominal sentences and add time, change, or state. Th
 
 The basic sentence **الْبَيْتُ كَبِيرٌ** (al-baytu kabīrun) — the house is big becomes **كَانَ الْبَيْتُ كَبِيرًا** (kāna al-baytu kabīran) — the house was big. The subject stays nominative, while the predicate becomes accusative.
 
+<!-- grammar-card: {"id":"rule-kana-past-time","kind":"concept","format":"qa","priority":"essential","sourceSection":"Core idea","rule":"كَانَ adds past time to a nominal sentence.","example":"What does adding كَانَ contribute to the meaning of a nominal sentence?","answer":"Past time: was / were.","explanation":"الْبَيْتُ كَبِيرٌ, the house is big, becomes كَانَ الْبَيْتُ كَبِيرًا, the house was big."} -->
+
 ## Forms and examples
 
 | Sister | Example |
@@ -31,6 +33,7 @@ The basic sentence **الْبَيْتُ كَبِيرٌ** (al-baytu kabīrun) —
 The predicate after these verbs is often called the “khabar of kāna,” and it is in the accusative: **كَبِيرًا** (kabīran) — big, accusative rather than **كَبِيرٌ** (kabīrun) — big, nominative.
 
 <!-- grammar-card: {"id":"kana-predicate","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Usage notes","rule":"كَانَ (kāna) — was turns a nominal sentence into a past-time sentence and makes the predicate accusative.","example":"Complete “The house was big”: كَانَ الْبَيْتُ ___.","answer":"كَبِيرًا","explanation":"Kabīran is the accusative khabar of kāna; al-baytu remains nominative.","legacyAliases":[{"rule":"كَانَ (kāna) — was turns a nominal sentence into a past-time sentence and makes the predicate accusative.","example":"Complete “The house was big”: كَانَ الْبَيْتُ ___ (kāna al-baytu ___)."}]} -->
+<!-- grammar-card: {"id":"rule-khabar-kana-term","kind":"concept","format":"qa","priority":"optional","sourceSection":"Usage notes","rule":"The accusative predicate after kāna is called the khabar of kāna.","example":"What is the accusative predicate after كَانَ and its sisters traditionally called?","answer":"The khabar of kāna (خَبَرُ كَانَ).","explanation":"It is the sentence’s predicate, put in the accusative by kāna: kabīran rather than kabīrun."} -->
 
 ## Practice patterns
 

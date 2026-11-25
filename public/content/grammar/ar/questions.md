@@ -28,6 +28,8 @@ Common question words include **مَا** (mā) — what, **مَنْ** (man) — 
 | **لِمَاذَا تَدْرُسُ؟** (limādhā tadrusu?) — why do you study? | reason |
 
 <!-- quiz: {"type": "multiple-choice", "question": "Which question word means “where”?", "options": ["مَا (mā) — what", "أَيْنَ (ayna) — where", "مَتَى (matā) — when", "كَيْفَ (kayfa) — how"], "answer": 1} -->
+<!-- grammar-card: {"id":"rule-mata-time","kind":"concept","format":"qa","priority":"optional","sourceSection":"Forms and examples","rule":"مَتَى asks about time.","example":"Which Arabic question word asks about time (“when?”)?","answer":"مَتَى (matā).","explanation":"مَتَى الدَّرْسُ؟ (matā ad-darsu?), when is the lesson?"} -->
+<!-- grammar-card: {"id":"rule-limadha-reason","kind":"concept","format":"qa","priority":"optional","sourceSection":"Forms and examples","rule":"لِمَاذَا asks for a reason.","example":"Which Arabic question word asks for a reason (“why?”)?","answer":"لِمَاذَا (limādhā).","explanation":"لِمَاذَا تَدْرُسُ؟ (limādhā tadrusu?), why do you study?"} -->
 
 ## Usage notes
 
@@ -35,6 +37,7 @@ For yes/no questions, place **أَ** (a-) — question marker before the sentenc
 
 <!-- grammar-card: {"id":"place-question","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Usage notes","rule":"أَيْنَ (ayna) — where asks about place.","example":"Complete “Where is the school?”: ___ الْمَدْرَسَةُ؟","answer":"أَيْنَ","explanation":"Ayna requests a location rather than a time, person or reason.","legacyAliases":[{"rule":"أَيْنَ (ayna) — where asks about place.","example":"Complete “Where is the school?”: ___ الْمَدْرَسَةُ؟ (___ al-madrasatu?)"}]} -->
 <!-- grammar-card: {"id":"yes-no-particle","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Usage notes","rule":"The question particle أَ attaches before a sentence to ask yes/no","example":"Turn هٰذَا بَيْتٌ into a yes/no question using the attached particle: ___هٰذَا بَيْتٌ؟","answer":"أَ","explanation":"أَهٰذَا بَيْتٌ؟ means Is this a house? The particle is not a subject or a tense prefix."} -->
+<!-- grammar-card: {"id":"rule-yes-no-particle","kind":"concept","format":"qa","priority":"essential","sourceSection":"Usage notes","rule":"The particle أَ placed before a statement makes it a yes/no question.","example":"What does the particle أَ do when it is placed before a statement?","answer":"It turns the statement into a yes/no question.","explanation":"أَهٰذَا بَيْتٌ؟ (a-hādhā baytun?), is this a house? The word order stays the same."} -->
 
 ## Practice patterns
 
@@ -48,6 +51,7 @@ With **كَمْ** (kam) — how many, the counted noun is often singular accusat
 <!-- quiz: {"type": "multiple-choice", "question": "What does the particle أَ (a-) do?", "options": ["Marks a yes/no question", "Makes a plural", "Adds possession", "Marks feminine gender"], "answer": 0} -->
 
 <!-- grammar-card: {"id":"condition-question","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Practice patterns","rule":"كَيْفَ (kayfa) — how asks about condition or manner.","example":"Complete “How are you?” to a male: ___ حَالُكَ؟","answer":"كَيْفَ","explanation":"Kayfa asks about condition here; the suffix -ka addresses one male.","legacyAliases":[{"rule":"كَيْفَ (kayfa) — how asks about condition or manner.","example":"Complete “How are you?” to a male: ___ حَالُكَ؟ (___ ḥāluka?)"}]} -->
+<!-- grammar-card: {"id":"rule-kam-singular-accusative","kind":"concept","format":"qa","priority":"essential","sourceSection":"Practice patterns","rule":"In formal MSA the noun counted by كَمْ is singular accusative.","example":"In formal MSA, what number and case does the noun counted by كَمْ (how many) take?","answer":"Singular accusative.","explanation":"كَمْ كِتَابًا عِنْدَكَ؟ (kam kitāban ʿindaka?), how many books do you have? English uses a plural; Arabic does not."} -->
 
 ## Sources
 

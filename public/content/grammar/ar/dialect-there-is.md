@@ -13,6 +13,8 @@ In dialects, the existential word normally comes before the thing that exists. E
 The regional labels below illustrate common forms, not every local variety. Dialect spelling and vowel marks are approximate; Moroccan-style كَايْن is not a universal Maghrebi form.
 
 <!-- grammar-card: {"id":"existential-order","kind":"concept","format":"qa","priority":"essential","sourceSection":"Core idea","rule":"Dialect existential expressions normally precede the thing that exists.","example":"Where does the noun normally go relative to the existential expression in these dialect examples?","answer":"After the existential expression.","explanation":"Choose the regional positive or negative expression first, then name the thing that exists or is absent."} -->
+<!-- grammar-card: {"id":"rule-iraqi-positive","kind":"concept","format":"qa","priority":"optional","sourceSection":"Core idea","rule":"Iraqi Arabic expresses “there is” with أَكُو (aku).","example":"Which existential particle does Iraqi Arabic use for “there is”?","answer":"أَكُو (aku)","explanation":"أَكُو كِتَاب (aku kitāb) — there is a book. Egyptian and many Levantine/Gulf varieties use فِيه (fīh/fī) instead."} -->
+<!-- grammar-card: {"id":"rule-moroccan-existential","kind":"concept","format":"qa","priority":"optional","sourceSection":"Core idea","rule":"Moroccan-style Arabic expresses “there is” with كَايْن (kāyn).","example":"In Moroccan-style Arabic, which existential word means “there is”?","answer":"كَايْن (kāyn)","explanation":"كَايْن كْتَاب (kāyn ktāb) — there is a book. It behaves like an adjective-like existential word and is not a universal Maghrebi form."} -->
 
 ## Forms and examples
 

@@ -28,6 +28,7 @@ Arabic often expresses manner with an accusative word or phrase rather than with
 The ḥāl is often indefinite and accusative: وَقَفَ الطَّالِبُ هَادِئًا (waqafa aṭ-ṭālibu hādiʾan) — the student stood calmly. The word هَادِئًا (hādiʾan) — calmly / calm describes the subject’s state during the action.
 
 <!-- grammar-card: {"id":"haal-application","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Adverbs of manner through ḥāl","rule":"A ḥāl often appears as an indefinite accusative word describing the state or manner of an action.","example":"He came quickly, using مُسْرِعٌ as a ḥāl: جَاءَ ___.","answer":"مُسْرِعًا","explanation":"The indefinite participle is accusative, describing the subject during his arrival.","legacyAliases":[{"rule":"A ḥāl often appears as an indefinite accusative word describing the state or manner of an action.","example":"Complete “he came quickly”: جَاءَ ___ (musriʿan)."}]} -->
+<!-- grammar-card: {"id":"rule-haal-form","kind":"concept","format":"qa","priority":"essential","sourceSection":"Adverbs of manner through ḥāl","rule":"A single-word ḥāl is usually indefinite and accusative.","example":"What definiteness and case does a single-word ḥāl usually have?","answer":"Indefinite and accusative.","explanation":"وَقَفَ الطَّالِبُ هَادِئًا (waqafa aṭ-ṭālibu hādiʾan): the student stood calmly."} -->
 <!-- vocab-card: {"id":"vocab-hadian","word":"هَادِئًا","reading":"hādiʾan","meaning":"calmly; calm (accusative)","priority":"optional","sourceSection":"Adverbs of manner through ḥāl"} -->
 
 ## The cognate accusative

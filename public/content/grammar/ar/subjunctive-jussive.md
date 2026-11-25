@@ -30,9 +30,11 @@ For unsuffixed sound forms such as **يَكْتُبُ**, the **الْمُضَا�
 
 For many sound verbs, the contrast is visible in the final vowel: **يَكْتُبُ** (yaktubu) — he writes, **أَنْ يَكْتُبَ** (an yaktuba) — that he write, **لَمْ يَكْتُبْ** (lam yaktub) — he did not write.
 
-<!-- grammar-card: {"id":"an-subjunctive","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Usage notes","rule":"أَنْ (an) and لَنْ (lan) usually put a present verb into the subjunctive ending ـَ (-a).","example":"Complete “I want to write”: أُرِيدُ أَنْ ___ (urīdu an ___).","answer":"أَكْتُبَ","explanation":"This sound unsuffixed verb takes final -a after an."} -->
+<!-- grammar-card: {"id":"an-subjunctive","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Usage notes","rule":"أَنْ (an) and لَنْ (lan) usually put a present verb into the subjunctive ending ـَ (-a).","example":"I want to write: أُرِيدُ أَنْ ___. (أَكْتُبُ)","answer":"أَكْتُبَ","explanation":"This sound unsuffixed verb takes final -a after an.","legacyAliases":[{"rule":"أَنْ (an) and لَنْ (lan) usually put a present verb into the subjunctive ending ـَ (-a).","example":"Complete “I want to write”: أُرِيدُ أَنْ ___ (urīdu an ___)."}]} -->
 <!-- grammar-card: {"id":"lan-future-negative","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Forms and examples","rule":"Lan gives future negation with the subjunctive.","example":"I will not go: لَنْ ___. (أَذْهَبُ)","answer":"أَذْهَبَ","explanation":"Contrast future-negative lan with past-negative lam."} -->
 <!-- grammar-card: {"id":"prohibitive-la","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Forms and examples","rule":"Prohibitive lā takes the jussive, unlike ordinary present negation.","example":"Do not write: لَا ___. (تَكْتُبُ)","answer":"تَكْتُبْ","explanation":"The command not to act is jussive; ordinary lā taktubu means you do not write."} -->
+<!-- grammar-card: {"id":"rule-an-lan-subjunctive","kind":"concept","format":"qa","priority":"essential","sourceSection":"Forms and examples","rule":"After أَنْ (an) and لَنْ (lan), a present verb takes the subjunctive (final -a in sound unsuffixed forms).","example":"In MSA, which mood does a present verb take after أَنْ (an) or لَنْ (lan)?","answer":"The subjunctive (final -a in sound unsuffixed forms).","explanation":"أُرِيدُ أَنْ أَكْتُبَ (I want to write) and لَنْ أَذْهَبَ (I will not go) both end in -a."} -->
+<!-- grammar-card: {"id":"rule-prohibitive-la-jussive","kind":"concept","format":"qa","priority":"optional","sourceSection":"Forms and examples","rule":"Prohibitive لَا (lā, “do not”) takes the jussive.","example":"When لَا (lā) forbids an action (“do not …”), which mood does the verb take?","answer":"The jussive.","explanation":"لَا تَكْتُبْ (lā taktub) means do not write; plain lā taktubu means you do not write."} -->
 
 ## Practice patterns
 
@@ -43,13 +45,14 @@ Purpose clauses often use **لِكَيْ** (likay) — so that, followed by the 
 - **أَدْرُسُ لِكَيْ أَنْجَحَ** (adrusu likay anjaḥa) — I study so that I succeed.
 - **نَقْرَأُ لِكَيْ نَفْهَمَ** (naqraʾu likay naf-hama) — we read so that we understand.
 
-<!-- grammar-card: {"id":"purpose-subjunctive","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Practice patterns","rule":"Likay introduces purpose with a subjunctive verb.","example":"We read so that we understand: نَقْرَأُ لِكَيْ ___.","answer":"نَفْهَمَ","explanation":"The purpose clause takes final -a in this sound form."} -->
+<!-- grammar-card: {"id":"purpose-subjunctive","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Practice patterns","rule":"Likay introduces purpose with a subjunctive verb.","example":"We read so that we understand: نَقْرَأُ لِكَيْ ___. (نَفْهَمُ)","answer":"نَفْهَمَ","explanation":"The purpose clause takes final -a in this sound form.","legacyAliases":[{"rule":"Likay introduces purpose with a subjunctive verb.","example":"We read so that we understand: نَقْرَأُ لِكَيْ ___."}]} -->
 
 The jussive also appears in many conditional patterns, so **الْجَزْمُ** (al-jazm) — jussive mood becomes more useful as your reading grows.
 
 <!-- quiz: {"type":"multiple-choice","question":"What ending is typical for a sound verb in the subjunctive?","options":["ـَ (-a)","ـُ (-u)","ـِ (-i)","ـُونَ (-ūna) only"],"answer":0} -->
 
-<!-- grammar-card: {"id":"lam-past-negative","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Practice patterns","rule":"لَمْ (lam) usually puts a present verb into the jussive and gives past negative meaning.","example":"Complete “he did not go”: لَمْ ___ (lam ___).","answer":"يَذْهَبْ","explanation":"The imperfect is jussive but the negative meaning refers to the past."} -->
+<!-- grammar-card: {"id":"lam-past-negative","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Practice patterns","rule":"لَمْ (lam) usually puts a present verb into the jussive and gives past negative meaning.","example":"He did not go: لَمْ ___. (يَذْهَبُ)","answer":"يَذْهَبْ","explanation":"The imperfect is jussive but the negative meaning refers to the past.","legacyAliases":[{"rule":"لَمْ (lam) usually puts a present verb into the jussive and gives past negative meaning.","example":"Complete “he did not go”: لَمْ ___ (lam ___)."}]} -->
+<!-- grammar-card: {"id":"rule-lam-jussive","kind":"concept","format":"qa","priority":"essential","sourceSection":"Forms and examples","rule":"After لَمْ (lam), a present verb takes the jussive, giving a past negative meaning.","example":"In MSA, which mood does a present verb take after لَمْ (lam)?","answer":"The jussive.","explanation":"لَمْ يَكْتُبْ (lam yaktub) means he did not write: jussive form, past meaning."} -->
 
 ## Sources
 

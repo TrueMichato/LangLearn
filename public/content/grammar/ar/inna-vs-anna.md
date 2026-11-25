@@ -7,6 +7,8 @@ Arabic has two closely related particles, **إِنَّ** (inna) and **أَنَّ
 ## Core idea
 
 <!-- grammar-card: {"id":"shared-case-government","kind":"concept","format":"qa","priority":"essential","sourceSection":"Core idea","rule":"إِنَّ and أَنَّ have the same noun/predicate case government.","example":"Does changing إِنَّ to أَنَّ reverse the cases of its noun and nominal predicate?","answer":"No. Both take an accusative noun and a nominative nominal predicate.","explanation":"Their main contrast here is clause environment, not reversed case government."} -->
+<!-- grammar-card: {"id":"rule-inna-independent","kind":"concept","format":"qa","priority":"essential","sourceSection":"Core idea","rule":"إِنَّ opens or emphasizes an independent statement, including a direct quotation.","example":"Which particle opens or emphasizes an independent statement, including a direct quotation after a verb of saying?","answer":"إِنَّ (inna).","explanation":"إِنَّ الطَّالِبَ مُجْتَهِدٌ (inna aṭ-ṭāliba mujtahidun): indeed, the student is diligent."} -->
+<!-- grammar-card: {"id":"rule-anna-complement","kind":"concept","format":"qa","priority":"essential","sourceSection":"Core idea","rule":"أَنَّ makes its clause a noun-like “that…” complement.","example":"Which particle turns its clause into a noun-like “that…” complement after a verb of knowing, believing or hearing?","answer":"أَنَّ (anna).","explanation":"عَلِمْتُ أَنَّ الطَّالِبَ مُجْتَهِدٌ (ʿalimtu anna aṭ-ṭāliba mujtahidun): I knew that the student is diligent."} -->
 
 Use **إِنَّ** (inna) to open or emphasize an independent statement. Use **أَنَّ** (anna) when the whole clause means “that...” after a verb, noun, or preposition.
 
@@ -23,6 +25,7 @@ Use **إِنَّ** (inna) to open or emphasize an independent statement. Use **�
 | **لِأَنَّ** (li-anna) — because | Follows the preposition **لِـ** (li-) | **بَقِيتُ لِأَنَّ الْبَابَ مُغْلَقٌ** (baqītu li-anna al-bāba mughlaqun) — I stayed because the door is closed |
 
 <!-- quiz: {"type": "multiple-choice", "question": "Which particle usually begins a direct statement like إِنَّ الْبَابَ مَفْتُوحٌ (inna al-bāba maftūḥun)?", "options": ["إِنَّ (inna)", "أَنَّ (anna)", "مِنْ (min)", "لَمْ (lam)"], "answer": 0} -->
+<!-- grammar-card: {"id":"rule-preposition-anna","kind":"concept","format":"qa","priority":"optional","sourceSection":"Forms and examples","rule":"A preposition before the “that” particle combines with أَنَّ, not إِنَّ.","example":"After a preposition such as li- or bi-, which of the two particles introduces the following clause?","answer":"أَنَّ (anna), as in li-anna (because) and bi-anna.","explanation":"بَقِيتُ لِأَنَّ الْبَابَ مُغْلَقٌ (baqītu li-anna al-bāba mughlaqun): I stayed because the door is closed."} -->
 
 ## Usage notes
 

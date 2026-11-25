@@ -6,7 +6,7 @@ A **صَدِيقٌ زَائِفٌ** (ṣadīqun zāʾifun) — false friend is a
 
 ## Core idea
 
-Do not translate a familiar-looking word automatically. Check context, register, and the usual collocations. **فِعْلِيًّا** (fiʿliyyan) — actually / in practice is not the same as **حَالِيًّا** (ḥāliyyan) — currently, and **أَخِيرًا** (ʾakhīran) — finally is not the same as recently.
+Do not translate a familiar-looking word automatically. Check context, register, and the usual collocations. **فِعْلِيًّا** (fiʿliyyan) — actually / in practice is not the same as **حَالِيًّا** (ḥāliyyan) — currently, and **أَخِيرًا** (ʾakhīran) usually means finally; for recently, MSA prefers **مُؤَخَّرًا** (muʾakhkharan) — recently.
 
 ## Common traps
 
@@ -33,7 +33,8 @@ Do not translate a familiar-looking word automatically. Check context, register,
 
 Arabic often distinguishes meanings that English compresses. **جَامِعَةٌ** (jāmiʿatun) — university and **جَامِعٌ** (jāmiʿun) — mosque share a root sense of gathering, but the tāʾ marbūṭa changes the common noun. Likewise, **مُنَاسَبَةٌ** (munāsabatun) — occasion / event may fit context better than a literal suitable-ness.
 
-<!-- grammar-card: {"id":"currently-not-finally","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Usage notes","rule":"أَخِيرًا means finally; use حَالِيًّا for currently and فِعْلِيًّا for actually.","hint":"Match the time word to the intended English adverb.","example":"Translate currently: ___ .","answer":"حَالِيًّا","explanation":"حَالِيًّا (ḥāliyyan) means at the present time. أَخِيرًا means finally, not recently, and فِعْلِيًّا means actually or in practice."} -->
+<!-- grammar-card: {"id":"currently-not-finally","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Usage notes","rule":"أَخِيرًا means finally; use حَالِيًّا for currently and فِعْلِيًّا for actually.","hint":"Match the time word to the intended English adverb.","example":"Translate currently: ___ .","answer":"حَالِيًّا","explanation":"حَالِيًّا (ḥāliyyan) means at the present time; الآنَ or فِي الْوَقْتِ الْحَالِيِّ also work. أَخِيرًا usually means finally (for recently prefer مُؤَخَّرًا), and فِعْلِيًّا means actually or in practice."} -->
+<!-- grammar-card: {"id":"rule-akhiran-meaning","kind":"concept","format":"qa","priority":"essential","sourceSection":"Common traps","rule":"أَخِيرًا usually means finally; MSA prefers مُؤَخَّرًا for recently.","example":"What does أَخِيرًا (ʾakhīran) usually mean, and which word is safer for “recently”?","answer":"Usually “finally”; for “recently” MSA prefers مُؤَخَّرًا (muʾakhkharan).","explanation":"وَصَلَ أَخِيرًا (waṣala ʾakhīran) — he finally arrived. Some writers also use أَخِيرًا for lately, so read the context."} -->
 <!-- grammar-card: {"id":"university-mosque-contrast","kind":"concept","format":"qa","priority":"essential","sourceSection":"Usage notes","rule":"The related gathering-root nouns name different institutions.","example":"What distinction must you preserve between جَامِعَةٌ and جَامِعٌ?","answer":"جَامِعَةٌ is a university; جَامِعٌ is a mosque.","explanation":"The common root does not make the words interchangeable. The tāʾ marbūṭa distinguishes these lexical nouns."} -->
 <!-- vocab-card: {"id":"vocab-munasabah","word":"مُنَاسَبَةٌ","reading":"munāsabatun","meaning":"occasion; event","priority":"optional","sourceSection":"Usage notes"} -->
 
@@ -49,6 +50,7 @@ Look for nearby words:
 <!-- quiz: {"type":"multiple-choice","question":"Which pair is the safest distinction?","options":["جَامِعَةٌ (jāmiʿatun) — university; جَامِعٌ (jāmiʿun) — mosque","جَامِعَةٌ (jāmiʿatun) — mosque; جَامِعٌ (jāmiʿun) — university","كُلِّيَّةٌ (kulliyyatun) — quality only; جَوْدَةٌ (jawdatun) — college","أَخِيرًا (ʾakhīran) — currently; حَالِيًّا (ḥāliyyan) — finally"],"answer":0} -->
 
 <!-- grammar-card: {"id":"faculty-collocation","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Checking collocations","rule":"Use collocations to disambiguate false friends.","hint":"A following genitive noun often reveals the field or institution.","example":"كُلِّيَّةُ الطِّبِّ (kulliyyatu ṭ-ṭibbi) means ___ .","answer":"faculty of medicine","explanation":"The medicine collocation identifies كُلِّيَّةٌ as an academic faculty, not quality; nearby nouns constrain a translation."} -->
+<!-- grammar-card: {"id":"rule-check-context","kind":"concept","format":"qa","priority":"optional","sourceSection":"Core idea","rule":"Check context, register and collocations before trusting a familiar-looking meaning.","example":"Before trusting a familiar-looking meaning for an Arabic word, what should you check?","answer":"Its context, its register and the words it usually combines with (collocations).","explanation":"كُلِّيَّةُ الطِّبِّ shows كُلِّيَّةٌ means faculty, not quality; the neighbouring noun settles the sense."} -->
 
 ## Sources
 

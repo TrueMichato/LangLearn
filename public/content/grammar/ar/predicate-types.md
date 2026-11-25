@@ -13,7 +13,6 @@ The predicate tells us something about the topic. In **الْبَيْتُ كَب
 
 ## Forms and examples
 
-<!-- grammar-card: {"id":"predicate-inventory","kind":"concept","format":"qa","priority":"essential","sourceSection":"Forms and examples","rule":"A predicate can be non-clausal, a clause, or a semi-sentence.","example":"Which four predicate types does this lesson distinguish?","answer":"Single-word/non-clausal; nominal sentence; verbal sentence; semi-sentence such as a prepositional or adverbial phrase.","explanation":"Khabar mufrad contrasts with sentence and semi-sentence predicates; it does not mean every predicate must be an adjective."} -->
 
 | Predicate type | Arabic name | Link to topic | Example |
 |---|---|---|---|
@@ -24,11 +23,14 @@ The predicate tells us something about the topic. In **الْبَيْتُ كَب
 
 <!-- quiz: {"type": "multiple-choice", "question": "In الْقَلَمُ فَوْقَ الْمَكْتَبِ (al-qalamu fawqa al-maktabi), what type of predicate is فَوْقَ الْمَكْتَبِ?", "options": ["A semi-sentence adverbial phrase", "A direct object", "A sound masculine plural", "A jussive verb"], "answer": 0} -->
 
+<!-- grammar-card: {"id":"rule-semi-sentence","kind":"concept","format":"qa","priority":"optional","sourceSection":"Forms and examples","rule":"A semi-sentence (shibh jumla) predicate is a prepositional or adverbial phrase.","example":"What kind of phrase counts as a semi-sentence (shibh jumla) predicate?","answer":"A prepositional phrase or an adverbial phrase.","explanation":"الْكِتَابُ عَلَى الطَّاوِلَةِ — the book is on the table; الْقَلَمُ فَوْقَ الْمَكْتَبِ — the pen is above the desk."} -->
+
 ## Usage notes
 
 When the predicate is a whole sentence, Arabic usually needs a link back to the topic. In **الطَّالِبُ أَبُوهُ مُهَنْدِسٌ** (aṭ-ṭālibu abūhu muhandisun) — the student's father is an engineer, the attached pronoun **ـهُ** (hu) — his links the inner sentence to **الطَّالِبُ** (aṭ-ṭālibu) — the student.
 
 <!-- grammar-card: {"id":"phrase-predicate","kind":"rule","format":"qa","priority":"essential","sourceSection":"Usage notes","rule":"A khabar may be a single word, a nominal sentence, a verbal sentence, or a semi-sentence such as a prepositional phrase.","example":"What type of predicate is used in الْمِصْبَاحُ فِي الْغُرْفَةِ?","answer":"A semi-sentence prepositional-phrase predicate.","explanation":"The location phrase supplies the information about the lamp.","legacyAliases":[{"rule":"A khabar may be a single word, a nominal sentence, a verbal sentence, or a semi-sentence such as a prepositional phrase.","example":"الْمِصْبَاحُ فِي الْغُرْفَةِ (al-miṣbāḥu fī al-ghurfati)"}]} -->
+<!-- grammar-card: {"id":"rule-sentence-predicate-link","kind":"concept","format":"qa","priority":"essential","sourceSection":"Usage notes","rule":"A sentence predicate usually needs a link, often a pronoun, back to the mubtadaʾ.","example":"What does a sentence predicate usually need so that it connects back to the mubtadaʾ?","answer":"A linking pronoun (or verb form) that refers to the mubtadaʾ.","explanation":"الطَّالِبُ أَبُوهُ مُهَنْدِسٌ — the student’s father is an engineer: ـهُ (hu) in أَبُوهُ points back to الطَّالِبُ."} -->
 
 ## Practice patterns
 
