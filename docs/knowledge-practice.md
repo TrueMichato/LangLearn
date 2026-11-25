@@ -62,9 +62,10 @@ to explain the material in the lesson itself.
 - Every maintained item needs an `id`, `priority` (`essential` or `optional`),
   and nonempty `sourceSection`. IDs use lowercase letters/digits separated by
   `-`, `_`, or `.` and must be unique **across both block types in one lesson**.
-  Keep an ID stable when wording changes; do not generate it from the answer,
-  position, or current prompt. `sourceSection` names a real instructional section,
-  not a new identity.
+  Keep an ID stable while its target (the one thing asked) is unchanged, even if
+  wording changes; never repurpose it for a different target. Do not generate it
+  from the answer, position, or current prompt. `sourceSection` names a real
+  instructional section, not a new identity.
 - `vocab-card` requires `word` and `meaning`; `reading` and `contextSentence`
   are optional. Supply a genuine target-language context, not a gloss that gives
   away the meaning on the front. Keep dictionary vocabulary separate from
@@ -101,7 +102,8 @@ to explain the material in the lesson itself.
   `example` strings whenever possible. If either must change, retain the exact
   previous pair in `legacyAliases`, for example
   `"legacyAliases":[{"rule":"old rule","example":"old prompt"}]`.
-  This permits in-place adoption without resetting the existing review.
+  This permits in-place adoption without resetting the existing review, but
+  only for an unchanged target; a changed target gets a new ID.
   Do not fuzzy-match unrelated questions that happen to share an answer.
 
 For a **fully reviewed lexical inventory**, add exactly this single-line public
@@ -133,7 +135,8 @@ controls, including malformed ones, while preserving fenced authoring examples.
 `items` and `diagnostics`. Malformed JSON, incomplete explicit metadata, and
 duplicate IDs are errors, not an empty lesson. Consumers must surface failures
 honestly rather than silently dropping material. Rule/concept cards use the
-existing grammar card type and normal scheduled Review; words use lexical cards.
+existing grammar card type and scheduled Review (reviewed rule-recall cards are
+spaced further apart; see Rule-recall cards); words use lexical cards.
 Authored identity is language + lesson + stable item ID, not answer text. Personal
 cards have a separate local identity and are not source-owned content.
 
@@ -169,27 +172,42 @@ instructional and included; no entire lesson is excluded.
 
 #### Catalog scope and focused gates
 
-The expansion has reviewed all **508 indexed lessons** in the Japanese, Arabic,
-Spanish, Portuguese, and Romanian grammar catalogs across **25 completed
-batches**. Shared capture tools support all six languages, but the rest of the
-Russian catalog is outside this expansion; `ru/spelling-rules` remains the
-original reference.
-This coverage applies to those five indexed catalogs, not non-indexed assets or
-the wider Russian catalog.
+**Coverage is not eligibility.** This section describes **authored inventory
+coverage**: reviewed `vocab-card`/`grammar-card` metadata, recorded in
+`src/__tests__/fixtures/grammar-retention/*.json` and protected by the gate
+tests below. It does not make a lesson eligible for the reviewed card UI or the
+rule scheduler. **Eligibility** is separate: a lesson qualifies only when its ID
+is listed in `src/lib/grammar-reviewed/{lang}.ts` (see *Rollout decision and
+recommended checks*), which also requires re-authoring it to the contract and
+passing that language's tests. Every indexed lesson in all six languages is now
+listed, but inventory coverage alone never made any of them eligible. The
+numbers and tables in this section measure coverage only.
 
-| Catalog | Reviewed / indexed lessons | Named points | Inventory files |
-| --- | ---: | ---: | --- |
-| Japanese (`ja`) | 179 / 179 | 3,715 | 12 |
-| Arabic (`ar`) | 186 / 186 | 1,926 | 6 |
-| Spanish (`es`) | 55 / 55 | 1,204 | 3 |
-| Portuguese (`pt`) | 38 / 38 | 1,194 | 2 |
-| Romanian (`ro`) | 50 / 50 | 1,092 | 2 |
+The inventory expansion (#48) reviewed all **508 indexed lessons** in the
+Japanese, Arabic, Spanish, Portuguese, and Romanian grammar catalogs across
+**25 completed batches**. Shared capture tools support all six languages, but
+Russian was outside this expansion: `ru/spelling-rules` remains the original
+reference, and the Russian catalog was made eligible separately (#51, #54; see
+*Rollout status*). This coverage applies to those five indexed catalogs, not
+non-indexed assets or the wider Russian catalog.
 
-All five catalogs are fully reviewed and canonical-validated. The independent
-full-508 catalog guard and focused retention gates pass. The inventories name
-**9,131 points**: 4,071 vocabulary targets, 3,173 rule applications, and 1,887
-concepts; 3,163 are essential and 5,968 optional. Counts describe the reviewed
-inventory, not semantic proof.
+| Catalog | Reviewed / indexed lessons | Named points at #48 (`6d495a0`) | Named points at `64c1a32` | Inventory files |
+| --- | ---: | ---: | ---: | --- |
+| Japanese (`ja`) | 179 / 179 | 3,715 | 4,141 | 12 |
+| Arabic (`ar`) | 186 / 186 | 1,926 | 2,319 | 6 |
+| Spanish (`es`) | 55 / 55 | 1,204 | 1,387 | 3 |
+| Portuguese (`pt`) | 38 / 38 | 1,194 | 1,292 | 2 |
+| Romanian (`ro`) | 50 / 50 | 1,092 | 1,196 | 2 |
+
+At #48 (`6d495a0`) all five catalogs were fully reviewed and canonical-validated,
+and the independent full-508 catalog guard and focused retention gates passed.
+That snapshot named **9,131 points**: 4,071 vocabulary targets, 3,173 rule
+applications, and 1,887 concepts; 3,163 essential and 5,968 optional. The
+rollout PRs have since edited the inventories: at `64c1a32` the same 25 files
+name **10,335 points** (4,071 vocabulary, 3,797 rule applications, 2,467
+concepts; 3,853 essential, 6,482 optional). Counts describe the reviewed
+inventory, not semantic proof. Inventory points exclude Russian and are not the
+parser item counts in *Rollout status*.
 
 The original six-lesson fixtures in
 `src/__tests__/lesson-retention-content.test.ts` remain focused semantic and
@@ -278,9 +296,10 @@ gh cfs -- npm test -- \
 ```
 
 Changing grammar metadata alone does **not** require regenerating vocabulary
-lesson targets. The catalog expansion changes no UI, database schema, scheduler,
-XP, or lexical-familiarity rules. Saving grammar material, completing a grammar
-lesson, or selecting an essential item does not add familiar-vocabulary evidence.
+lesson targets. The inventory expansion itself changes no UI, database schema,
+scheduler, XP, or lexical-familiarity rules. Saving grammar material, completing
+a grammar lesson, or selecting an essential item does not add familiar-vocabulary
+evidence.
 A lexical save becomes available for review but still needs the existing evidence
 rules above. Counts and passing gates are not semantic-completeness proof or a
 guarantee that future prose is captured automatically. Human/model linguistic
@@ -326,10 +345,12 @@ Rule cards add a compact explanation the learner can recall and then use to
 check and repair their own output. They supplement application cards; they
 don't replace them.
 
-**What.** A rule card is a `grammar-card` with an `id` prefixed `rule-`,
-`"kind":"concept"` and `"format":"qa"`. It uses the existing schema; there's
-no parser or DB change (spacing differs; see below). The front (`example`) asks one atomic
-question in one of three directions: trigger → rule (“After нет, which case?”
+**What.** A rule card is a `grammar-card` with `"kind":"concept"` and
+`"format":"qa"`; newly authored ones use an `id` prefixed `rule-` as a
+convention. It uses the existing schema; there's no parser or DB change. Neither
+Review nor the scheduler checks the prefix (see *How reviewed rule cards
+behave*). The front (`example`) asks one atomic question in one of three
+directions: trigger → rule (“After нет, which case?”
 → genitive), example → reason (“Why is it воды in Здесь нет воды?”), or
 contrast (“Which past aspect leaves completion open?”). The answer is short
 and self-graded; `explanation` ties it to a real form and says what paraphrase
@@ -338,13 +359,25 @@ that practises the same rule; that pairing is advisory, but `sourceSection` must
 be a real heading in the section that teaches the rule, not a summary or
 reference section. Aim for 2–4 per lesson, 1–2 `essential`. In reviewed
 lessons Review labels these cards “Recall the rule”, and the lesson picker
-separates *Rule to remember* from *Practice using a rule*. After this change,
-Russian lessons 1–10 offer 38 lexical suggestions and 75 grammar items
-(40 application, 35 rule recall), all authored and parsed with no diagnostics.
-`russian-grammar-pilot.test.ts` checks that every rule card is concept + qa,
+separates *Rule to remember* from *Practice using a rule*. At the #51 pilot,
+Russian lessons 1–10 offered 38 lexical suggestions and 75 grammar items, all
+authored and parsed with no diagnostics: 36 application items (`"kind":"rule"`)
+and 39 declarative items (`"kind":"concept"`). Of the 39, 35 were new `rule-*`
+cards and 4 were earlier concepts in `ru/spelling-rules`
+(`seven-letter-scope`, `five-letter-stress-condition`, `ts-rule-exceptions`,
+`seven-letter-mnemonic`). For current counts, see *Rollout status*.
+`russian-grammar-pilot.test.ts` checks that every `rule-` card is concept + qa,
 hides its own answer, sits under a real heading, and doesn't show on its front
 a one-word Russian answer of another card in the same lesson. Only
 `rule-hard-sign-position` (ъ) and `rule-final-devoicing` (б) are exempt.
+Each language now has its own reviewed-grammar test in `src/__tests__/`
+(`russian-grammar-reviewed.test.ts`, `japanese-grammar-reviewed.test.ts`,
+`arabic-grammar-reviewed.test.tsx`, `spanish-grammar-reviewed.test.ts`,
+`portuguese-grammar-reviewed.test.ts`, `romanian-grammar-reviewed.test.ts`)
+that applies that language's checks and records its exemptions and
+retirements; the shared retirement helper
+`src/__tests__/helpers/grammar-retirements.ts` is checked by
+`grammar-retirements.test.ts`.
 
 **Don't** put the answer, or a stress mark that gives it away, in the prompt
 or `hint`. Don't offer a two-way choice whose answer is one of the options
@@ -353,8 +386,17 @@ to produce: ask trigger → rule instead (“Which aspect presents a past action
 completed?”), or pick an example form no card targets. Don't ask for a recited paragraph, a whole table or an open set:
 split paradigms into cells. Don't test terminology the lesson doesn't treat as
 the point, or require the lesson's exact wording. Don't teach anything the
-lesson doesn't. Never reuse or edit an existing card's ID, wording or
-`legacyAliases`.
+lesson doesn't. Reuse an ID only for the **same target** (the one thing asked):
+keep the stable ID and the exact old `rule`/`example` pair, as the current
+strings or, if either must change, as an exact `legacyAliases` entry; that is
+how a saved card is adopted in place. Never repurpose an ID for a different
+target. A changed target gets a new ID, and the old ID is retired and never
+recycled; a saved card for a retired ID is left alone and keeps normal
+spacing. When an aggregate card (a whole table, set or multi-target question)
+is split into atomic cards, the aggregate's ID is retired: no successor takes
+its old `rule`/`example` pair as an alias, so none inherits its saved schedule,
+and learners' saved rows and history are left intact (as #57 and #58 did).
+Never fuzzy-match.
 
 **Evidence: empirical.** Meta-analyses find explicit instruction effective:
 [Norris & Ortega 2000](https://doi.org/10.1111/0023-8333.00136) (49 studies)
@@ -381,22 +423,57 @@ Learner's Handbook* warns “Do not rely on memorising grammar rules” and trea
 rules as a stepping-stone to meaning in context. Its own grammar flashcards
 are application cards, which is why rule cards stay few and paired.
 
-**Spacing.** Rule-recall cards (`isRuleRecallCard`: concept cards from lessons
-that have passed the review contract) come back about half as often as other
-review cards. After a successful recall, the time until the next review is
-doubled (`RULE_CARD_INTERVAL_MULTIPLIER` in `src/db/reviews.ts`). The rationale
-is the weak link above between knowing a rule and using it: review time is
-better spent on application and comprehension. The factor of 2 is a design
-choice, not a value taken from a study. Failed recalls aren't stretched, so
+##### How reviewed rule cards behave
+
+**Which cards.** Only lessons listed in `src/lib/grammar-reviewed/{lang}.ts`
+are eligible. A saved card is a rule-recall card (`isRuleRecallCard` in
+`src/lib/grammar-review-scope.ts`) only when its saved kind is `concept`, its
+saved source is an authored lesson item, and its language, lesson and item ID
+match a `concept` item in a listed lesson as currently shipped. Vite generates
+that ID list at build time (`virtual:grammar-rule-ids`), so Review needn't load
+a lesson. Every concept item in a listed lesson qualifies, not only `rule-` ones.
+Tags, an ID prefix or lesson membership alone are not proof. These cards read
+“Recall the rule”; any other concept card reads “Recall the concept”.
+
+**Spacing.** Rule-recall cards come back about half as often as other review
+cards. After a successful grade (3 or higher), the time until the next review is
+doubled and rounded (`RULE_CARD_INTERVAL_MULTIPLIER` in `src/db/reviews.ts`). The
+rationale is the weak link above between knowing a rule and using it: review
+time is better spent on application and comprehension. The factor of 2 is a
+design choice, not a value taken from a study. Failed grades aren't stretched, so
 relearning runs at normal speed. Only the due date changes; the scheduler's
 stored interval, stability and difficulty stay unscaled, so spacing doesn't
 compound and the 21-day maturity thresholds count passes as before. Existing
-due dates aren't migrated: the new spacing applies from each card's next grade.
-Concept cards in lessons that haven't been reviewed keep normal spacing, because
-some of them are application questions. Schedule-free practice is unaffected.
+due dates aren't migrated: the new spacing applies from each card's next
+successful grade. Schedule-free practice is unaffected.
 
-**Limitation.** Recalling a rule is not using it. There is no learner evidence
-yet that these cards help comprehension or production in this app.
+**Normal spacing.** The following do not inherit the slower spacing and are never
+labelled “Recall the rule”: old application cards, even in a listed lesson
+(including an older comprehension question saved as a concept, whose ID is not a
+current concept ID); cards whose ID was retired or removed; custom or personal
+cards; and any card whose authored identity can't be verified. Lesson membership
+isn't enough because some saved concept cards were application questions.
+
+**Refreshing saved wording.** Revised lessons can leave a saved card with old
+wording. When the current scope has saved cards from listed lessons, Review offers
+**Refresh saved lesson cards**. It runs only when the learner chooses it and
+requests only a language code and lesson ID, so learner wording stays local. A
+card is updated to the lesson's current wording and question type only when its
+stored wording is still the unmodified source wording and it isn't custom or
+personal. Learner edits, review dates, schedules, history, tags and XP are left
+alone, and no card is added or removed. The result reports updated, unchanged,
+skipped (personal, edited, retired or unverifiable) and unavailable cards. A
+lesson that can't be loaded or validated is left unchanged and can be retried;
+the lessons that did load commit together, or none do if the write fails.
+
+**Answer mode.** Say or think is the default. Typing is an optional field in
+reviewed lessons: offline, never graded or stored, with the learner
+self-grading. No evidence supports changing the default.
+
+**Limitation.** Recalling a rule is not using it, and rule memorization is
+distinct from comprehension and production: report rule recall separately from
+both. There is no learner evidence yet that these cards help comprehension or
+production in this app, and nothing here claims they do.
 
 #### Facilitator sheet: does offering typing help on new sentences?
 
@@ -488,46 +565,92 @@ balanced groups and orders, no meaningful loss on the other skill, and
 acceptable friction. If sparse, mixed, tied, or driven by who returned, report
 that rather than changing the default.
 
-#### Gates before extending the pilot
+#### Rollout decision and recommended checks
 
-A lesson gets the reviewed treatment (optional hints, rule-recall labels, the
-typed-attempt option, explicit wording refresh and offline precache) only once
-its ID is listed in `src/lib/grammar-reviewed/{lang}.ts`, checked by
-`isReviewedGrammarLesson` / `reviewedGrammarLessonId` in
-`src/lib/grammar-review-scope.ts`. Each language has its own list so rollouts
-don't conflict. Add a lesson only after it passes the authoring contract and
-the content checks below.
+A lesson gets the reviewed treatment (optional hints, “Recall the rule” labels
+and slower rule spacing, the typed-attempt option, explicit wording refresh and
+offline precache) only once its ID is listed in
+`src/lib/grammar-reviewed/{lang}.ts`, checked by `isReviewedGrammarLesson` /
+`reviewedGrammarLessonId` in `src/lib/grammar-review-scope.ts`. Each language has
+its own list so rollouts don't conflict. Listing also adds the lesson's concept
+IDs to the generated rule-ID module; a listed lesson whose grammar blocks produce
+diagnostics fails the build. Add a lesson only after it is re-authored to the
+authoring contract and passes its tests. The 508 inventories above do not
+certify the reviewed treatment. (This section was formerly titled *Gates before
+extending the pilot*.)
 
 **Rollout decision.** The maintainer chose to extend the reviewed treatment
 across all six languages without first running the learner comparison or
-getting qualified native-speaker sign-off. Gates 1–3 are therefore
-recommended checks, not completed ones. Listing a lesson means it was
-re-authored and checked against the contract and its tests; it doesn't mean a
-native speaker approved it or that learners did better. Say/think stays the
-default answer mode, with typing optional, because no evidence supports
-changing it.
+getting qualified native-speaker sign-off. The checks below are therefore
+**recommended follow-ups and evidence limits, not satisfied preconditions**.
+Listing a lesson means it was re-authored and checked against the contract and
+its tests; it doesn't mean a native speaker approved it or that learners did
+better. Say/think stays the default answer mode, with typing optional, because
+no evidence supports changing it.
 
-1. **Russian 1–10 first.** Have a qualified Russian reviewer assess the fronts,
-   valid alternatives and reveals against the audit above, including whether
-   each rule card is accurate, atomic and not given away. Report any learner
-   result for rule recall separately from comprehension and production.
-   Independently check
-   lexical inventories (including deliberate zero), stable IDs and exact old
-   aliases for unchanged targets. A new target must not inherit mastery. Verify
-   on clean and edited decks: explicit save, preview/Review agreement, offline
-   revisit, backup/restore, intact personal wording and schedules. Check touch,
-   keyboard, screen-reader access and non-Russian legacy cards. Passing tests
-   is not a learner result or a native-speaker certification.
-2. **Remaining 37 Russian lessons next**, in reviewed batches, only after the
-   content, deck-safety and learner-experience gates. Record which lessons and
-   objectives actually passed and what remains untested. Never delete old
+##### Rollout status
+
+*Application* is `"kind":"rule"` and *declarative* is `"kind":"concept"`. The
+counts are at merged `64c1a32`, from the canonical parser
+(`parseLessonReviewItems` in `src/lib/lesson-capture.ts`) over every indexed
+lesson. Every lesson is listed, none produces diagnostics, and all 6,700
+grammar items are authored; every lesson except `ru/resources` has both
+application and declarative items. They count authored items, not saved cards,
+learners or outcomes.
+
+| Language | Indexed lessons | Eligible (listed) lessons | Lexical | Application | Declarative | Notes |
+| --- | ---: | ---: | ---: | ---: | ---: | --- |
+| Russian (`ru`) | 47 | 47 | 131 | 278 | 158 | Lessons 1–10 by index order in #51, 11–47 in #54. `resources` is a reference page, intentionally without application or declarative items. |
+| Japanese (`ja`) | 179 | 179 | 1,399 | 1,748 | 994 | #56 |
+| Arabic (`ar`) | 186 | 186 | 919 | 716 | 684 | #59 |
+| Spanish (`es`) | 55 | 55 | 551 | 501 | 335 | #53, #57; #57 retired 14 aggregate paradigm/set cards superseded by atomic splits; #61 clarified tense cues without changing counts. |
+| Portuguese (`pt`) | 38 | 38 | 676 | 421 | 195 | #58 |
+| Romanian (`ro`) | 50 | 50 | 526 | 411 | 259 | #55; #60 retired one redundant aggregate card. |
+| **Total** | **555** | **555** | **4,202** | **4,075** | **2,625** | |
+
+Unfinished exceptions: none. All six catalogs are merged and every indexed
+lesson is listed; the only listed lesson without either grammar type is
+`ru/resources`, an intentional reference page.
+
+**Release spot checks** (reported by the release coordinator; not learner
+evidence or native-speaker review): historical Japanese and Portuguese
+comprehension (application) rows kept their ID, schedule and review log through
+an explicit refresh, and a second Good grade scheduled them 6 days out, not 12;
+a Spanish six-ending aggregate card saved from the #53 build was skipped
+non-destructively by refresh after #57 retired it, and was likewise graded at 6
+days. On the live Pages build, an English-primary prompt that begins with
+Arabic rendered left-to-right in the lesson picker and preview, while an
+Arabic-primary prompt with an English gloss stayed right-to-left
+(`grammarDirection` in `src/lib/grammar-direction.ts`); with the server
+stopped, all 555 offline grammar lesson responses from the #59 production
+build matched source. Spot checks, counts and passing tests are not semantic
+proof, human review or learning benefit; any benefit of the slower rule spacing
+remains a hypothesis.
+
+##### Recommended checks
+
+1. **Each language.** Have a qualified reviewer for each language assess the
+   fronts, valid alternatives and reveals, using the audit method above,
+   including whether each rule card is accurate, atomic and not given away.
+   Report any learner result for rule recall separately from comprehension and
+   production. Independently check lexical inventories (including deliberate
+   zero), stable IDs and exact old aliases for unchanged targets. A new target
+   must not inherit mastery. Verify on clean and edited decks: explicit save,
+   preview/Review agreement, offline revisit, backup/restore, intact personal
+   wording and schedules. Check touch, keyboard, screen-reader access and
+   legacy cards. Passing tests is not a learner result or a native-speaker
+   certification.
+2. **Record what was actually reviewed.** For each language, record which
+   lessons and objectives a qualified reviewer actually checked and what
+   remains untested; listing alone is not that record. Never delete old
    learner-owned cards as catalog cleanup.
-3. **Sample beginners' lessons in each other language before expanding.** The
-   508 inventories above protect existing material; they do not certify this
-   pilot or justify a rewrite. Retain sound items. Start with the regression
-   samples below. Each batch needs language-qualified review, script/input and
-   legacy checks, and its own learner evidence for any change of default.
-   These are samples and rollout gates, not approval or completed rollout.
+3. **Start from the regression samples.** Every language is now listed. The
+   samples below remain the starting point for language-qualified review and
+   script/input and legacy checks. The inventories above protect existing
+   material; they do not certify the reviewed treatment or justify a rewrite.
+   Retain sound items. Any change of default needs its own learner evidence.
+   These are samples and recommended checks, not approval or evidence of
+   completed review.
 
 | Source lesson / item ID | What must survive; what to try |
 | --- | --- |
